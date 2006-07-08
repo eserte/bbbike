@@ -258,11 +258,14 @@ if ($terminal_encoding && $] >= 5.008) {
 use Tk::DropSite;
 
 $tmpdir = $ENV{TMPDIR} || $ENV{TEMP} || "/tmp";
-if (! -d $tmpdir) {
+if (! -d $tmpdir || ! -w $tmpdir) {
     $tmpdir = "/temp";
-    if (! -d $tmpdir) {
+    if (! -d $tmpdir || ! -w $tmpdir) {
 	$tmpdir = catfile($FindBin::RealBin, "tmp");
 	warn Mfmt("Verwende Unterverzeichnis 'tmp' des Programmverzeichnisses (%s) als temporäres Verzeichnis", $tmpdir);
+	if (!-d $tmpdir || !-w $tmpdir) {
+	    warn Mfmt("Achtung: das Verzeichnis %s ist nicht schreibbar!", $tmpdir);
+	}
     }
 }
 
@@ -498,7 +501,7 @@ $nr = -1; # number of points in route (XXX correct???)
 {
     my $cachedir = catfile($FindBin::RealBin, "cache");
     $cache_root = (-d $cachedir && -w $cachedir
-		   ? catfile($FindBin::RealBin, "cache")
+		   ? $cachedir
 		   : $tmpdir);
     $Karte::cache_root = $cache_root;
 }
@@ -6319,7 +6322,15 @@ sub set_bindings {
 		   search_anything();
 	       })
 	for ('<Control-Key-f>', '<Key-slash>');
-    $top->bind('<Key-colon>' => sub { enter_scale() });
+    $top->bind('<Key-colon>' => sub {  my $e = $c->XEvent;
+				       my(%args);
+				       if ($e) {
+					   my ($x, $y) = ($c->canvasx($e->x),
+							  $c->canvasy($e->y));
+					   $args{-preserveposition} = [$x,$y];
+				       }
+				       enter_scale(%args);
+				   });
 
     $top->bind("<Escape>" => sub { $escape = 1 });
     $top->bind('Busy', '<Escape>' => sub { $escape = 1; });
@@ -7304,6 +7315,9 @@ sub enter_wind {
 # Dialog zum Eingeben des Mapscales
 ### AutoLoad Sub
 sub enter_scale {
+    my(%args) = @_;
+    my($x,$y) = @{ $args{-preserveposition} || [] };
+require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$x,$y,\%args],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
     return unless $mapscale =~ /:\s*(\d+)/;
     my($old_mapscale, $new_mapscale, $new_mapscale_scale);
     $old_mapscale = $new_mapscale = $new_mapscale_scale = $1;
@@ -7351,7 +7365,7 @@ sub enter_scale {
 	IncBusy($t);
 	eval {
 	    if ($old_mapscale != $new_mapscale and $new_mapscale != 0) {
-		scalecanvas($c, $old_mapscale/$new_mapscale);
+		scalecanvas($c, $old_mapscale/$new_mapscale, $x, $y);
 		if ($mapscale =~ /:\s*(\d+)/) {
 		    $old_mapscale = $new_mapscale = $1;
 		    if (Tk::Exists($scale)) {
@@ -8266,7 +8280,7 @@ sub load_save_route {
 sub save_route_as_bbd {
     my $file = $top->getSaveFile(-defaultextension => '.bbd');
     return unless defined $file;
-    my $tmpfile = "$tmpdir/bbbike-$$.bbr";
+    my $tmpfile = "$tmpdir/bbbike-$<-$$.bbr";
     load_save_route(1, $tmpfile);
     system("$FindBin::RealBin/miscsrc/bbr2bbd", $tmpfile, $file);
     unlink $tmpfile;
@@ -8277,8 +8291,8 @@ sub save_route_as_esri {
     my $file = $top->getSaveFile(-defaultextension => '.shp');
     return unless defined $file;
     $file =~ s/\.shp$//;
-    my $tmpfile1 = "$tmpdir/bbbike-$$.bbr";
-    my $tmpfile2 = "$tmpdir/bbbike-$$.bbd";
+    my $tmpfile1 = "$tmpdir/bbbike-$<-$$.bbr";
+    my $tmpfile2 = "$tmpdir/bbbike-$<-$$.bbd";
     load_save_route(1, $tmpfile1);
     eval {
 	# XXX Better diagnostics. bbr2bbd and bbd2esri should be
@@ -8300,8 +8314,8 @@ sub save_route_as_gpx {
     } else {
 	my $file = $top->getSaveFile(-defaultextension => '.gpx');
 	return unless defined $file;
-	my $tmpfile = "$tmpdir/bbbike-$$.bbr";
-	my $tmp2file = "$tmpdir/bbbike-$$.bbd";
+	my $tmpfile = "$tmpdir/bbbike-$<-$$.bbr";
+	my $tmp2file = "$tmpdir/bbbike-$<-$$.bbd";
 	load_save_route(1, $tmpfile);
 	system("$FindBin::RealBin/miscsrc/bbr2bbd", $tmpfile, $tmp2file);
 	my $s = Strassen->new($tmp2file);
@@ -16066,7 +16080,7 @@ sub set_cursor {
 ### AutoLoad Sub
 sub set_cursor_data {
     my $data = shift;
-    my $tmpfile = "$tmpdir/cursor.$$.xbm";
+    my $tmpfile = "$tmpdir/cursor.$<-$$.xbm";
     if (open(C, ">$tmpfile")) {
         print C $data;
 	close C;

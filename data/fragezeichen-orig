@@ -106,6 +106,8 @@ B5: Radweg, RW, Fertig bis 2006-06-30	? -31230,23101 -32007,22836 -34302,23434 -
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 #
+#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20060515.1310.40101.html
+Treptower Str.: nach Ende der Bauarbeiten (2006-12-31) asphaltiert	?::inwork 14140,8977 14015,8798 13982,8764 13857,8601
 #: by: Andreas Wenzel (aber Lage unklar)
 An der Aussicht/Zur Sonnenhöhe: mäßiger Asphalt Q2 für "An der Aussicht", Lage der Straße unklar	? -1859,24219 -1768,24075 -1515,23807 -1492,23822 -1739,24095
 Wasserstadt Rummelsburg, fehlende Straßen: An der Bucht, An den Knabehäusern, Clara-Grunwald-Str., Lina-Morgenstern-Str., Alice-und-Hella-Hirsch-Ring, Paula-Fürst-Str., Medaillonplatz	? 15310,10542 15377,10624 15699,10396 15551,10266 15310,10542
@@ -148,7 +150,6 @@ Bremer Weg (Tiergarten): genaue Wegführung, Qualität (wassergebundene Strecke)?	
 (Bremer Weg - Fasanerieallee): genaue Wegführung, Qualität?	? 6342,11878 6379,11843 6406,11784 6540,11754
 Bremer Weg (Tiergarten): genaue Koordinaten, Qualität (Asphalt)?	? 8089,12186 8095,12142 8215,12156 8490,12192 8515,12242
 (Weg im Tiergarten von Großer Weg über Bellevuealle zum Bremer Weg/Große Querallee): genaue Wegführung, Qualität ist überwiegend gut (Asphalt)	? 7591,11639 7642,11717 7723,11717 7771,11804 7811,11868 7846,11989 7827,12105 7816,12150
-Laut eines bln.verkehr-Artikels wird es hier eine Straßenverbindung geben	? 7959,7609 7934,7621 7854,7572
 Alle Straßen hier (Wendenschloß) scheinen Kopfsteinpflaster (mäßiges bis schlechtes) zu haben. Für die GPS-Tracks bestätigt.	? 23126,2034 23506,2101 23670,1231 23326,1143
 Ortsumfahrung Seelow (B1/B167): möglicherweise eine Kraftfahrzeugstraße?	? 79625,16206 77831,16850 76687,16583 76012,16425 75300,15087 75350,14743 76343,14181 76475,13318 78194,11798
 #: by Robert vvv
@@ -173,6 +174,9 @@ Zum langen Jammer: Verlängerung bis Eldenaer Str.?	? 14674,12839 14750,12812
 Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 8934,5095 9025,4871
 #: note: laut Marko Preuss kann man hier höchstens Slalom fahren:
 Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 9080,4371 9100,4192
+Tempelhofer Veloroutenpläne: Albulaweg - Hochspannungsweg: genaue Lage, Qualität etc.	? 10123,1996 10473,1900 10585,1879 11203,1743
+Tempelhofer Veloroutenpläne: Albulaweg - Hochspannungsweg: genaue Lage, Qualität etc.	? 11181,1884 11185,1946 11321,1936
+Tempelhofer Veloroutenpläne: Muschelkalkweg: genaue Lage, Qualität?	? 11193,1684 11112,1428 10699,1256 10759,1112
 #: by: ^^^
 #: XXX Eintrag von Torsten Fleischmann:
 Radweg in Zepernick, beidseitig, auf der südöstlichen Seite: genauer Beginn- und Endpunkt?	? 18292,26726 19364,27415 19475,27877 20017,28297 20472,28570
@@ -326,8 +330,6 @@ Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
 Fähre Liepnitzsee zum Großen Werder: wo genau?	? 16050,38181 16455,37790
 Sputendorfer Str.: laut http://home.arcor.de/hoge-online/std_tlw/std_tlw00.htm sieht die Straße gut aus, wie sieht es weiter südlich Richtung Sputendorf aus?	? -2049,-2165 -1853,-2412 -1834,-3968 -1809,-4235
 Spandau: Kurstr. - Galenstr. - Am Bahnhof Spandau - etc.: sieht als Umfahrung für Altstädter Ring etc. gut aus. Qualität, etc?	? -2836,15685 -2956,15575 -3195,15134 -3231,15096 -3243,15068 -3354,14971 -3453,14815 -3637,14628 -3723,14512 -3805,14138 -3884,13980 -3904,13944 -3971,13755 -4006,13478 -3996,13414
-Tempelhofer Veloroutenpläne: Albulaweg - Hochspannungsweg: genaue Lage, Qualität etc.	? 10123,1996 10473,1900 11099,1758 11321,1936
-Tempelhofer Veloroutenpläne: Muschelkalkweg: genaue Lage, Qualität?	? 11099,1758 11112,1428 10699,1256 10759,1112
 Fortsetzung der Wolziger Zeile bis zur B101: Qualität? Kann die B101 gequert werden?	? 9608,-2642 9522,-2640 9117,-2636 8073,-2475 6651,-1299
 #: XXX von anima43 folgende Einträge (aber nicht sicher für diesen Abschnitt): fester Sandweg, Q2, viele Fußgänger, viele Hunde q4 (aber ich würde wahrscheinlich eher q2 nehmen):
 Mauerweg zwischen Drusenheimer Weg und Buckower Damm: existiert eine Strecke, wie ist die Qualität? Vielleicht geht es auch weiter Richtung Rudow? (laut "Berliner Umland" witterungsabhängige Strecke)	? 11794,550 11924,594 12519,794 12984,1011
@@ -638,7 +640,7 @@ Neuglobsow - Rheinsberg: laut http://www.ruppin.de/rheinsberg/freizeit/sport/rad
 Hasselwerderstr.: Einbahnstraße, auch für Radfahrer?	? 18268,5739 18023,5623
 #: XXX ein anonymer Eintrag hat einen (diesen?) Mittelweg mit "loser Sandweg" attributiert:
 Mittelweg (Altglienicke, Bohnsdorf): Qualität (laut ADFC-Karte mäßig geeignet)?	? 20265,858 20187,662 20040,309
-Terrassenstr.: Qualität?	? -1379,3897 -1554,3889 -1754,3907 -1909,3854 -1913,3672
+Terrassenstr.: Qualität?	? -1379,3897 -1554,3889 -1754,3907 -1909,3854 -1901,3692
 #: XXX anonymer Eintrag?
 Pirolstr.: loser Sandweg (Q2): auf Biesdorfer oder Karlshorster Seite?	? 20716,10007 20140,10053
 Neubrandenburg: Hinterste Mühle - Stadt (Waldweg), wie geht es weiter?	? -78,126443 -112,126528 -62,126684 -96,126768 -231,126900 -428,127368 -493,127450 -671,127478
@@ -751,7 +753,7 @@ Freischützstr.: Qualität?	? 13268,22002 13340,21948 13612,21806
 Dachsteinweg: verkehrsberuhigt?	? 10481,2549 10446,2373 10493,2318
 Kiepertplatz: Qualität?	? 8528,1846 8606,1875
 #: XXX Martin Barghoorn hat KS angegeben, aber gleichzeitig "nur Fußweg" eingetragen
-Lückhoffstr.: Qualität (Kopfsteinpflaster?)?	? -2847,2893 -3022,2696 -3162,2564 -3190,2467 -3210,2375
+Lückhoffstr.: Qualität (Kopfsteinpflaster?)?	? -2847,2893 -3022,2696 -3162,2564 -3190,2467 -3211,2405
 Nauener Str. zur Altonaer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? -4759,13992 -4776,13869
 Staakener Str.: Qualität zwischen Seegefelder Str. und Nauener Str.? Einbahnstraße auch für Radfahrer gültig?	? -4112,14242 -4704,14174 -4741,14233
 Krumme Gärten: Qualität	? -4007,13187 -3996,13414
@@ -769,7 +771,7 @@ Am Finowkanal: Qualität?	? 37162,48462 36969,48599 36816,48645 36367,48561 35986
 Am Finowkanal: Qualität?	? 35659,48744 35575,48942 35377,49117 35270,49300 34966,49422 34745,49323 34630,49178 34547,49193 34478,49056 34349,48972 33937,48866 33701,49041 33526,49025 33221,48820 32696,48706 32391,48706 32162,48797 32002,48904 31820,48919 31455,49067
 Am Finowkanal: Qualität?	? 31507,49193 31317,49216 31043,49307 30654,49330 30426,49216 30296,49224 29999,49300 29375,49269 29176,49323 28895,49277 28712,49399 28658,49391 28643,49498 27508,49376 27341,49383 26945,49262 26670,49231 26450,49284 26442,49414 26594,49734 26587,49894 26693,50084 26000,50214 24583,49825 24461,49041 24393,48972
 Ützdorf - Bogensee - Prenden: Qualität?	? 18337,39131 18345,39215 18535,39443 18558,39580 18733,39862 19053,40144 19213,40479 19053,40540 18809,40555 18665,40616 18535,40784 18124,40730 18048,40906 17979,40982 18033,41066 17903,41233 18132,41492 18215,41637 18360,41728 18238,41972 18231,42239 18170,42574 18807,43129
-Prinz-Friedrich-Leopold-Str.: zunächst Kopfsteinpflaster (50m), dann anscheinend Asphalt, wie weiter?	? -3692,2549 -3568,2382 -3532,2189 -3503,1988 -3501,1826 -3559,1760
+Prinz-Friedrich-Leopold-Str.: zunächst Kopfsteinpflaster (50m), dann anscheinend Asphalt, wie weiter? (laut ADFC-Karte gut geeignet)	? -3692,2549 -3568,2382 -3532,2189 -3503,1988 -3501,1826 -3559,1760
 Weddigenweg: Qualität?	? 2701,3064 3036,3050 3180,3035 3640,3023 3943,3015
 Kopernikusstr. (Potsdam-Babelsberg): Qualität?	? -9753,-2474 -9771,-2394 -10121,-2093 -10292,-1995
 Am Neuen Kanal/Trappenallee: Qualität?	? -4000,22989 -3994,23162 -3503,23811
@@ -895,10 +897,6 @@ Lotte-Lenya-Bogen: Qualität, Fußgänger?	? 5242,10918 5264,10921 5348,10960 5373,
 #: next_check: 2005-11-01
 Caputh - Michendorf: Asphaltierter Zweiwegeradweg im Bau, fertig vorausichtlich Nov. 2005	?::inwork -14279,-9832 -14518,-9621 -14790,-9271 -15120,-8806 -15805,-7964 -15951,-7768
 Spanische Allee: hier ist noch eine weitere Ampel. Wo?	? -2026,2742 -2249,2818
-#next check 2006-05-01
-Gesundbrunnen: Wird am 28.05.2006 in Nordkreuz umbenannt (laut MoPo 15.10.05)	? 9299,15930
-#next check 2006-05-01
-Gesundbrunnen: Wird am 28.05.2006 vorausichtlich in Nordkreuz umbenannt (laut MoPo 15.10.05)	? 9226,15911
 hier entsteht ein neues Wohngebiet	F:? 897,9056 957,8982 1677,9588 1551,9722
 Erschließungsstr. geplant (laut MoPo 15.10.05)	? 1714,9572 1677,9588
 Erschließungsstr. geplant (laut MoPo 15.10.05)	? 1312,9220 1267,9267 1264,9270
@@ -1374,3 +1372,18 @@ Paracelsusstr.: Qualität?	? 11671,19204 11613,19312 11575,19296
 Kirchstr.: Asphalt oder Kopfsteinpflaster?	? 22312,4593 22263,4671 22243,4710 22234,4789 22196,4847
 Luisenhain: werden Radfahrer nach den Bauarbeiten weiterhin durch den Park fahren dürfen?	? 22196,4847 22147,4831 22043,4562 22071,4501
 Bellevuepark: ist ein Weg für Radfahrer offiziell freigegeben?	? 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340
+Idsteiner Str.: Qualität (laut ADFC-Karte zwischen Königsweg und Hegauer Weg mäsig, danach bis Ludwigsfelder Str. gut geeignet)?	? -157,1548 -284,2009 -319,2212 -383,2519
+Hegauer Weg: Qualität (laut ADFC-Karte ist der westliche Abschnitt gut, der östliche Abschnitt mäßig geeignet)?	? -371,2187 -319,2212 -165,2303 -6,2434
+Fürstenstr.: Qualität?	? -385,2896 -426,2978 -495,3113 -526,3229 -502,3429 -459,3509
+Bülowstr. (Zehlendorf): Qualität (laut ADFC-Karte bis auf einen kleinen Abschnitt am Mexikoplatz gut geeignet)?	? -426,2978 -662,2998 -872,3133 -1052,3276 -1054,3328
+Am Rehwechsel: Qualität (laut ADFC-Karte gut geeignet)?	? 1304,537 1527,574 1616,589 1643,633
+Heinrich-Laehr-Park: Weg am östlichen Rand des Parks befahrbar? Qualität? (lauf ADFC-Karte gut geeignet)	? 1527,574 1273,1672
+Kirchweg: Qualität? (laut ADFC-Karte zwischen B1 und Beskidenstr. gut geeignet, westlicher Abschnitt ungeeignet, wahrscheinlich wegen Kopfsteinpflaster)	? -2903,1818 -2981,1925 -3019,1998 -3031,2184 -3030,2266 -3109,2306 -3211,2405 -3244,2436 -3235,2496 -3280,2507
+Beskidenstr.: Qualität? (laut ADFC-Karte gut geeignet)	? -3030,2266 -3022,2400 -2842,2506 -2749,2548 -2440,2760
+Jochen-Klepper-Weg: Qualität (laut ADFC-Karte teilweise gut geeignet)? Ist das ein Parkweg, der nur Radfahrern/Fußgängern vorbehalten ist?	? -3030,2266 -2784,2358 -2363,2482
+Gerkrathstr.: Qualität (laut ADFC-Karte ungeeignet)?	? -3280,2507 -3246,2606 -3260,2675 -3207,2898
+Rehsprung: Qualität? Für den Autoverkehr gesperrt (Teile davon?)? Existiert eine Treppe an der Autobahnunterführung?	? -3280,2507 -3309,2400 -3284,2306 -3156,2134 -3107,2068 -3098,1922 -3133,1802 -3234,1751 -3264,1645 -3502,1581 -3557,1652 -3609,1602 -3654,1539 -3764,1446
+An der Rehwiese: Qualität?	? -3559,1760 -3557,1652 -3511,1686 -3389,1703 -3299,1753 -3299,1838 -3223,2020 -3284,2041 -3420,2224 -3395,2403 -3372,2704 -3360,2917
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20060412.1640.38345.html
+Bietzkestr.: Qualität? (wahrscheinlich Kopfsteinpflaster, das zwischen Marie-Curie-Allee und Archenholdstr. bis zum 2006-07-31 durch Asphalt ersetzt wird)	? 16967,11162 17062,11130 17263,11068
+Sophienstr. zwischen Marie-Curie-Allee und Heinrichstr.: Kopfsteinpflaster wird bis zum 2006-07-31 durch Asphalt ersetzt werden	? 16869,11190 16967,11162

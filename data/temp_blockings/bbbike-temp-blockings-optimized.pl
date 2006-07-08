@@ -819,6 +819,11 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'text' => 'Der große Stern wird zu den Finalspielen am 8.7.2006 von 03.00 Uhr bis zum 10.7.2006 06.00 Uhr gesperrt. ',
          'from' => 1152234000,
          'data' => 'userdel	2 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6799,12083 6754,12108 6725,12113 6690,12104
+userdel	2 6540,11754 6685,11954
+userdel	2 6825,11486 6809,11570 6778,11742 6744,11936
+userdel	2 6653,12067 6178,12387
+userdel	2 5901,11902 6642,12010
+userdel	2 7039,12314 6799,12083
 ',
          'type' => 'gesperrt'
        },
@@ -927,6 +932,22 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'data' => 'userdel	2 22196,4847 22147,4831 22043,4562 22071,4501
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1158357599,
+         'text' => 'Simon-Dach-Str.: Bauarbeiten an der Wühlischstr. Richtung Revaler Str., nur Bürgersteigbenutzung möglich, bis 2006-09-15 ',
+         'from' => 1152363677,
+         'data' => 'userdel	q4 13890,11411 13954,11647
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1167605999,
+         'text' => 'Neubau der Treptower Straße in Neukölln, Sperrung zwischen Kiefholzstraße und Heidelberger Straße (Anliegerverkehr ist frei) (bis Ende 2006) ',
+         'from' => 1152363870,
+         'data' => 'userdel	q4 13857,8601 13982,8764 14015,8798 14140,8977
+',
+         'type' => 'handicap'
        }
      
 );

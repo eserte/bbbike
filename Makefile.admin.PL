@@ -696,6 +696,11 @@ data:
 BBBikeVar.tpl: BBBikeVar.pm
 	./miscsrc/ttdump --package BBBike --prefix BBBike BBBikeVar.pm > BBBikeVar.tpl
 
+clean-cache:
+	-rm -f tmp/b_de_*
+	-rm -f tmp/m_de_*
+	-rm -f tmp/*.cache
+
 ######################################################################
 # Tests
 

@@ -301,16 +301,16 @@ Optional eins oder beides zusammen.
 
 =item * (H5)
 
-Update-Prozess: data/.modified um eine weitere Spalte für einen
-MD5-Hash oder so erweitern. Die Prozedur sieht dann so aus: .modified
-wird bei jedem Update/Rsync geändert. Zuerst wird downgeloaded, dann
-mit Digest::MD5 überprüft (falls nicht installiert, gibt es eine
-Fehlermeldung) und die alte Datei ersetzt. Man könnte noch einen
-Sanity-Check auf das Format von .modified machen. Leider handelt es
-sich bei data/* um ein Sammelsurium von Dateien, nicht nur .bbd (auch
-.gif oder .coords.data oder ...)
+Implementiert, aber nicht getestet: Update-Prozess: data/.modified um
+eine weitere Spalte für einen MD5-Hash oder so erweitern. Die Prozedur
+sieht dann so aus: .modified wird bei jedem Update/Rsync geändert.
+Zuerst wird downgeloaded, dann mit Digest::MD5 überprüft (falls nicht
+installiert, gibt es eine Fehlermeldung) und die alte Datei ersetzt.
+Man könnte noch einen Sanity-Check auf das Format von .modified
+machen. Leider handelt es sich bei data/* um ein Sammelsurium von
+Dateien, nicht nur .bbd (auch .gif oder .coords.data oder ...)
 
-=item * (H4)
+=item * (H5)
 
 Update-Prozess: falls unter /usr/* installiert, hat der normale User
 normalerweise keine Rechte auf das Installieren. Erkennen und
@@ -1424,6 +1424,32 @@ GPS-Tracks zusammenfassen.
 Pressearchiv sichten:
 L<http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv.shtml?arch=arch_0509>
 (zwischen September 2003 und Juni 2006 schon durchgearbeitet)
+
+Weitere Bezirkspressearchive:
+
+=over
+
+=item Neukölln: L<http://www.berlin.de/ba-neukoelln/presse/index.html>
+(von Oktober 2001 (Anfang) bis 6. Juli 2006 abgearbeitet)
+
+=item Charlottenburg-Wilmersdorf:
+L<http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/index.html>
+(2006 bis 6. Juli abgearbeitet)
+
+=item Lichtenberg:
+L<http://www.berlin.de/ba-lichtenberg/presse/index.html>
+(2006 bis 6. Juli abgearbeitet)
+
+=back
+
+=item * (M1)
+
+Fahrradkarte Charlottenburg-Wilmersdorf besorgen:
+
+Die Fahrradkarte ist zum Preis von einem Euro bei den Bürgerämtern
+(Otto-Suhr-Allee 100, Hohenzollerndamm 174-177, Heerstr. 12-14)
+sowie beim Fachbereich Vermessung (Rathaus Wilmersdorf, Zi. 4090)
+während der Sprechzeiten erhältlich.
 
 =item * (H2)
 

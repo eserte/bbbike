@@ -4953,6 +4953,11 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6799,12083 6754,12108 6725,12113 6690,12104
+userdel	2 6540,11754 6685,11954
+userdel	2 6825,11486 6809,11570 6778,11742 6744,11936
+userdel	2 6653,12067 6178,12387
+userdel	2 5901,11902 6642,12010
+userdel	2 7039,12314 6799,12083
 EOF
      },
      { from  => 1151965861, # 2006-07-04 00:31
@@ -5059,6 +5064,22 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 22196,4847 22147,4831 22043,4562 22071,4501
+EOF
+     },
+     { from  => 1152363677, # 2006-07-08 15:01
+       until => 1158357599, # 2006-09-15 23:59
+       text  => 'Simon-Dach-Str.: Bauarbeiten an der Wühlischstr. Richtung Revaler Str., nur Bürgersteigbenutzung möglich, bis 2006-09-15 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 13890,11411 13954,11647
+EOF
+     },
+     { from  => 1152363870, # 2006-07-08 15:04
+       until => 1167605999, # 2006-12-31 23:59
+       text  => 'Neubau der Treptower Straße in Neukölln, Sperrung zwischen Kiefholzstraße und Heidelberger Straße (Anliegerverkehr ist frei) (bis Ende 2006) ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 13857,8601 13982,8764 14015,8798 14140,8977
 EOF
      },
     );
