@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SVG.pm,v 1.15 2005/12/23 22:59:39 eserte Exp $
+# $Id: SVG.pm,v 1.15 2005/12/23 22:59:39 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ use Carp qw(confess);
 use vars qw($VERSION @colors %color %style %width %outline_color $sansserif);
 BEGIN { @colors =
          qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
-	    $darkblue $lightblue $rose $black);
+	    $darkblue $lightblue $rose $black $darkgrey);
 }
 use vars @colors;
 

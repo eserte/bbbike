@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.47 2005/12/23 23:00:00 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.47 2005/12/23 23:00:00 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -398,11 +398,11 @@ sub get_color_values {
 
     if ($self->can('imagetype') && $self->imagetype eq 'wbmp') {
 	# black-white image for WAP
-	$c{black} = $c{grey_bg} = [0, 0, 0];
+	$c{black} = $c{grey_bg} = $c{darkgrey} = [0, 0, 0];
 	$c{white} = $c{yellow} = $c{red} = $c{green} = $c{darkgreen} =
 	    $c{darkblue} = $c{lightblue} = $c{middlegreen} = $c{rose} = [255,255,255];
 	@c = qw(black grey_bg white yellow red green darkgreen
-		darkblue lightblue middlegreen rose);
+		darkblue lightblue middlegreen rose darkgrey);
 	return (\%c, \@c);
     }
 
@@ -443,7 +443,8 @@ sub get_color_values {
     $c{middlegreen} = [0, 200, 0];
     $c{rose}        = [215, 184, 200];
     $c{black}       = [0, 0, 0];
-    push @c, qw(red green darkgreen darkblue lightblue middlegreen rose black);
+    $c{darkgrey}    = [0x63,0x63,0x63];
+    push @c, qw(red green darkgreen darkblue lightblue middlegreen rose black darkgrey);
 
     (\%c, \@c);
 }
@@ -525,8 +526,8 @@ sub set_category_outline_colors {
     %outline_color = (B  => $black,
 		      H  => $black,
 		      HH => $black,
-		      N  => $black,
-		      NN => $black,
+		      N  => $darkgrey,
+		      NN => $darkgrey,
 		      W  => $darkblue,
 		      W0 => $darkblue,
 		      W1 => $darkblue,

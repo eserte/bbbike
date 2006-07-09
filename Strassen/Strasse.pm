@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.26 2006/06/02 23:05:12 eserte Exp $
+# $Id: Strasse.pm,v 1.27 2006/07/09 12:20:58 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.26 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
 
 package Strasse;
 use strict;
@@ -247,7 +247,7 @@ sub split_street_citypart {
     if ($str =~ /^(.*)\s+\(([^\(]+)\)$/) {
 	$str = $1;
 	@cityparts = split /\s*,\s*/, $2;
-    } elsif ($str =~ /^([^(),]+\S),\s+(.*)/) {
+    } elsif ($str =~ /^([^(),]+\S),\s+(.{3,})/) { # with some sanity check: street needs at least three characters
 	$str = $2;
 	@cityparts = $1;
     }

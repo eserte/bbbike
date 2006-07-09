@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ImageMagick.pm,v 1.14 2006/03/12 13:56:19 eserte Exp $
+# $Id: ImageMagick.pm,v 1.14 2006/03/12 13:56:19 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -32,7 +32,7 @@ use vars qw($gd_version $VERSION @colors %color %outline_color %width
 	    $TTF_STREET);
 BEGIN { @colors =
          qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
-	    $darkblue $lightblue $rose $black);
+	    $darkblue $lightblue $rose $black $darkgrey);
 }
 use vars @colors;
 

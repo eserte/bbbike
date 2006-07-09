@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strasse.t,v 1.14 2006/07/02 00:43:21 eserte Exp $
+# $Id: strasse.t,v 1.15 2006/07/09 12:20:51 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -31,6 +31,8 @@ my @split_street_citypart =
       ["Heerstr."]],
      ["Potsdam, Schopenhauerstr." =>
       ["Schopenhauerstr.", "Potsdam"]],
+     ["Gustav-müller-str, 16" =>
+      ["Gustav-müller-str, 16"]],
     );
 
 my @beautify_landstrasse =
@@ -137,7 +139,7 @@ plan tests => (scalar(@split_street_citypart) +
 for my $s (@split_street_citypart) {
     my($str, @expected) = ($s->[0], @{ $s->[1] });
     my(@res) = Strasse::split_street_citypart($str);
-    is(join("#", @res), join("#", @expected), "Split $str");
+    is(join("#", @res), join("#", @expected), "Split $str -> $expected[0] ...");
 }
 
 for my $s (@beautify_landstrasse) {

@@ -119,14 +119,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1152396000,
-         'text' => 'B 115 Forster Str. OD Döbern grundhafter Straßenausbau Vollsperrung 18.05.2005-08.07.2006 ',
-         'from' => 1116280800,
-         'data' => 'userdel	q4 93524,-86350 93217,-85769
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,

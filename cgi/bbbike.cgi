@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.15 2006/06/16 06:26:16 eserte Exp $
+# $Id: bbbike.cgi,v 8.16 2006/07/09 12:21:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -694,7 +694,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.16 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1377,13 +1377,16 @@ sub choose_form {
 	    }
 	    next if $$oneref =~ /^\s*$/;
 	    $$oneref = PLZ::norm_street($$oneref);
-	    my($retref, $matcherr) =
-		$plz->look_loop(PLZ::split_street($$oneref),
-				@extra,
-				Max => $max_plz_streets,
-				MultiZIP => 1, # introduced because of Hauptstr./Friedenau vs. Hauptstr./Schöneberg problem
-				MultiCitypart => 1, # works good with the new combine method
-				Agrep => 'default');
+	    my @look_loop_args = (PLZ::split_street($$oneref),
+				  @extra,
+				  Max => $max_plz_streets,
+				  MultiZIP => 1, # introduced because of Hauptstr./Friedenau vs. Hauptstr./Schöneberg problem
+				  MultiCitypart => 1, # works good with the new combine method
+				  Agrep => 'default');
+	    #warn "\$plz->look_loop(@look_loop_args)\n";
+	    my($retref, $matcherr) = $plz->look_loop(@look_loop_args);
+	    #require Data::Dumper; warn Data::Dumper->new([$retref, $matcherr],[qw()])->Indent(1)->Useqq(1)->Dump;
+
 	    @$matchref = grep { defined $_->[PLZ::LOOK_COORD()] && $_->[PLZ::LOOK_COORD()] ne "" } @$retref;
 	    # XXX needs more checks, but seems to work good
 	    # except in the cases, where the same street has different coordinates
@@ -6052,7 +6055,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/06/16 06:26:16 $';
+    my $cgi_date = '$Date: 2006/07/09 12:21:32 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {
