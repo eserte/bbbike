@@ -16,6 +16,11 @@ Legend:
 
 =item * (M5)
 
+Bug: beginning orientation in routelist is wrong (east instead of
+west).
+
+=item * (M5)
+
 Bug: drawing city streets only -> choosing "Aktive Sperrungen zeichnen und
 beachten" -> drawing also region streets -> now the "Aktive Sperrungen" are
 lost! They have to re-build if the checkbox is set to on and make_net is

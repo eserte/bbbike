@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVia.pm,v 1.16 2005/11/14 22:04:43 eserte Exp $
+# $Id: BBBikeVia.pm,v 1.16 2005/11/14 22:04:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -308,7 +308,7 @@ sub BBBikeVia::mark_neighbours {
     my $mark_point = sub {
 	my($index) = @_;
 	my($x, $y) = transpose(split /,/, $search_route_points[$index]->[0]);
-	$c->createLine($x,$y,
+	$c->createLine($x,$y,$x,$y,
 		       -capstyle => $capstyle_round,
 		       -width => 10,
 		       -fill => "red",
@@ -329,7 +329,7 @@ sub BBBikeVia::mark_neighbours {
 
 sub BBBikeVia::mark_new_via_point {
     my($x, $y) = transpose(split /,/, $BBBikeVia::add_point);
-    $c->createLine($x,$y,
+    $c->createLine($x,$y,$x,$y,
 		   -capstyle => $capstyle_round,
 		   -width => 10,
 		   -fill => "green",

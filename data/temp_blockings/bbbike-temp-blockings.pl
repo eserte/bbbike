@@ -4680,9 +4680,9 @@ EOF
 userdel	2 -46651,12935 -45980,13284
 EOF
      },
-     { from  => 1149976800, # 2006-06-11 00:00
-       until => 1154124000, # 2006-07-29 00:00
-       text  => 'L 601 OL Finsterwlalde, Schützenstr. zw. Einm. Leipziger und Tuchmacherstr.: Vollsperrung 12.06.2006-28.07.2006 ',
+     { from  => 1152568800, # 2006-07-11 00:00
+       until => 1154815200, # 2006-08-06 00:00
+       text  => 'L 601 Leipziger Str. OD Finsterwalde, Kno. Hain-/ Schützenstr. Kanalarbeiten Vollsperrung 12.07.2006-05.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 32963,-85912 32865,-86269 32870,-86323 32478,-86374
@@ -5080,6 +5080,33 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 13857,8601 13982,8764 14015,8798 14140,8977
+EOF
+     },
+     { from  => 1152566159, # 2006-07-10 23:15
+       until => 1154383200, # 2006-08-01 00:00
+       text  => 'Buschallee (Weißensee) in Richtung Hansastr., zwischen Berliner Allee und Hansastr. Baustelle, Straße vollständig gesperrt (bis 31.07.06)',
+       type  => 'gesperrt',
+       source_id => 'INKO_84063',
+       data  => <<EOF,
+userdel	1 14621,16563 15121,16503 15388,16502
+userdel	1 49835,170038 49737,169837
+EOF
+     },
+     { from  => 1152566231, # 2006-07-10 23:17
+       until => 1154383199, # 2006-07-31 23:59
+       text  => 'Wilhelminenhofstr. (Treptow) Richtung Rathenaustr. zwischen Edisonstr. und Schillerpromenade Baustelle, Fahrtrichtung gesperrt (bis Ende 07.2006)',
+       type  => 'handicap',
+       source_id => 'INKO_84075',
+       data  => <<EOF,
+userdel	q4; 18175,6376 18445,6287 18853,6009
+EOF
+     },
+     { from  => 1154642400, # 2006-08-04 00:00
+       until => 1154901600, # 2006-08-07 00:00
+       text  => 'L 023 Storkow-Grünheide Brücke über die Müggelspree bei Neuhartmannsdorf Asphaltarbeiten Vollsperrung 05.08.2006-06.08.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 40333,-4484 40503,-4571 40652,-4743
 EOF
      },
     );

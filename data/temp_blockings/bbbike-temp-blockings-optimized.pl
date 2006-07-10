@@ -174,14 +174,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1152482400,
-         'text' => 'B 112 OL Guben, Bahnübergang OL Guben, Bahnübergang zw. OT Gr. Breesen u. Bresinchen Arbeiten Deutsche Bahn Vollsperrung 09.07.2006-09.07.2006 ',
-         'from' => 1152309600,
-         'data' => 'userdel	2 99277,-43921 99228,-44346
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -662,35 +655,14 @@ userdel	2 8032,12817 8017,12826
        undef,
        undef,
        {
-         'until' => 1154124000,
-         'text' => 'L 601 OL Finsterwlalde, Schützenstr. zw. Einm. Leipziger und Tuchmacherstr.: Vollsperrung 12.06.2006-28.07.2006 ',
-         'from' => 1149976800,
+         'until' => 1154815200,
+         'text' => 'L 601 Leipziger Str. OD Finsterwalde, Kno. Hain-/ Schützenstr. Kanalarbeiten Vollsperrung 12.07.2006-05.08.2006 ',
+         'from' => 1152568800,
          'data' => 'userdel	q4 32963,-85912 32865,-86269 32870,-86323 32478,-86374
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1152482399,
-         'text' => 'Fan-Fest der FIFA im Tiergarten, 7. Juni 2006 - 9. Juli 2006 ',
-         'from' => 1149544800,
-         'data' => 'userdel	2 8021,11636 8006,11766 8172,11679 8129,11735 8056,12061
-userdel	2 7816,12150 7875,12363
-userdel	2 7504,11504 7382,11588 7163,11738 7287,11763 7535,11677 7591,11639 7669,11586 7706,11612 7742,11639 7852,11721 8006,11766
-userdel	2 7669,11586 7711,11558
-userdel	2 8022,12016 8006,11766 7811,11868 7663,11946 7570,11855 7223,11897 7073,11798 7163,11738 6980,11583 6809,11570
-userdel	2 7039,12314 7383,12095
-userdel	2 7073,11798 6778,11742
-userdel	2 8374,12416 8539,12286
-userdel	2 7382,11588 7354,11513
-userdel	2 6809,11979 7073,11798
-userdel	2 8223,11700 8220,11844 8215,12156 8214,12205
-userdel	2 8119,12414 8063,12182 8056,12061
-userdel	2 8063,12182 8034,12093 8006,12074 7999,12049 8022,12016
-userdel	2 8540,12420 8560,12326 8539,12286 8515,12242 8600,12165 8595,12066
-userdel	2 8595,12066 8581,11896 8571,11846
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -807,19 +779,7 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1152504000,
-         'text' => 'Der große Stern wird zu den Finalspielen am 8.7.2006 von 03.00 Uhr bis zum 10.7.2006 06.00 Uhr gesperrt. ',
-         'from' => 1152234000,
-         'data' => 'userdel	2 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6799,12083 6754,12108 6725,12113 6690,12104
-userdel	2 6540,11754 6685,11954
-userdel	2 6825,11486 6809,11570 6778,11742 6744,11936
-userdel	2 6653,12067 6178,12387
-userdel	2 5901,11902 6642,12010
-userdel	2 7039,12314 6799,12083
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_003018',
          'until' => 1153346400,
@@ -941,6 +901,33 @@ userdel	2 7039,12314 6799,12083
          'data' => 'userdel	q4 13857,8601 13982,8764 14015,8798 14140,8977
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_84063',
+         'until' => 1154383200,
+         'text' => 'Buschallee (Weißensee) in Richtung Hansastr., zwischen Berliner Allee und Hansastr. Baustelle, Straße vollständig gesperrt (bis 31.07.06)',
+         'from' => 1152566159,
+         'data' => 'userdel	1 14621,16563 15121,16503 15388,16502
+userdel	1 49835,170038 49737,169837
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_84075',
+         'until' => 1154383199,
+         'text' => 'Wilhelminenhofstr. (Treptow) Richtung Rathenaustr. zwischen Edisonstr. und Schillerpromenade Baustelle, Fahrtrichtung gesperrt (bis Ende 07.2006)',
+         'from' => 1152566231,
+         'data' => 'userdel	q4; 18175,6376 18445,6287 18853,6009
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1154901600,
+         'text' => 'L 023 Storkow-Grünheide Brücke über die Müggelspree bei Neuhartmannsdorf Asphaltarbeiten Vollsperrung 05.08.2006-06.08.2006 ',
+         'from' => 1154642400,
+         'data' => 'userdel	2 40333,-4484 40503,-4571 40652,-4743
+',
+         'type' => 'gesperrt'
        }
      
 );

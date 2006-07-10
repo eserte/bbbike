@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.42 2006/01/28 15:17:47 eserte Exp eserte $
+# $Id: Makefile.admin.PL,v 1.43 2006/07/10 20:16:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -679,8 +679,13 @@ permission:
 # Copy the current BBBike source first to CVS, and then to a USB
 # stick. The USB stick will be automatically mounter on FreeBSD, if
 # necessary, and optionally unmounted after copying.
+# The camcontrol commands were not necessary for 4.9, but are for 4.11
 copy-cvs-to-stick:	copy-to-cvs
-	(mount | grep -q /mnt/stick) || sudo mount_msdos -u eserte /dev/da0s1 /mnt/stick
+	-(mount | grep -q /mnt/stick) || ( \
+	    sudo camcontrol reset all; \
+	    sudo camcontrol rescan all; \
+	    sudo mount_msdos -u eserte /dev/da0s1 /mnt/stick \
+	)
 	mount | grep -q /mnt/stick
 	-mv /mnt/stick/BBBike-CVS /mnt/stick/BBBike-CVS.old
 	rsync -v -rlptoD $(CVS_DIR)/ /mnt/stick/BBBike-CVS/
