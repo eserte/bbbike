@@ -1,7 +1,7 @@
-Zweirichtungsradweg	RW 26669,163333 26848,164249 27848,165204
-Zweirichtungsradweg	RW 32011,167028 32741,167080 33116,166807 33267,166229
-Radweg durch Wald, Laub, unnötig hügelig und kurvig	RW 33267,166229 33494,165278 33427,164996
-Zweirichtungsradweg	RW 33427,164996 35654,162897 35953,162870 36080,162883 36480,162910 36737,162995
+Asphaltierter Zweirichtungsradweg, südöstliche Straßenseite	RW 26645,163217 26848,164249 27717,165103 27848,165204
+Überwiegend asphaltierter Zweirichtungsradweg, südliche Straßenseite	RW 32023,167053 32741,167080 33153,166785 33267,166229
+Asphaltierter Zweirichtungsradweg durch Wald, Laub, unnötig hügelig und kurvig, westliche Straßenseite	RW 33267,166229 33494,165278 33577,164823
+Zweirichtungsradweg	RW 33577,164823 35654,162897 35953,162870 36080,162883 36480,162910 36737,162995
 Petzow - Werder: Fahrradstraße	RW -20281,-6915 -20293,-6728 -20157,-6373 -20290,-5475
 Radweg	RW -19456,-5987 -20290,-5475 -20696,-5198
 Caputh: Radweg	RW -15811,-6533 -16280,-6747 -16553,-6765 -16562,-6825 -16812,-7010
@@ -46,8 +46,8 @@ B198, Prenzlau: gemeinsamer Rad- und Gehweg, mäßige Gehwegplatten	RW 39867,10110
 B109, Prenzlau: benutzungspflichtige Radwege, Verbundsteinpflaster, "Berg-und-Tal"	RW 39022,101334 38848,101208 38653,101065 37577,100778
 B109, Prenzlau: Radweg	RW 39931,102456 39806,102075 39715,101866
 B109, Prenzlau: gemeinsamer Rad- und Radweg, mäßige Gehwegplatten	RW 39715,101866 39682,101543
-B109, Prenzlau: Radweg	RW 39682,101543 39253,101458 39022,101334
-Gramzow: Radweg	RW 49779,90206 49587,90258 48894,90485
+B109, Prenzlau: Radweg	RW 39682,101543 39536,101514 39253,101458 39022,101334
+Gramzow: Radweg	RW 49779,90206 49640,90243 48894,90485
 Eiche: Zweirichtungsradweg	RW 22784,16184 22889,16350
 Landsberger Chaussee: Radwege (Betonplatten)	RW 22631,16215 22711,16199 22784,16184 23155,16075 23893,15893
 B1: Zweirichtungsradweg auf der nördlichen Seite	RW 25674,11141 26596,10921
@@ -77,8 +77,9 @@ Feinsplit-Radweg	RW 41806,-40762 42075,-40337 42143,-39468 41675,-38268 41687,-3
 asphaltierter Radweg auf der nördlichen Seite, enge Stelle an der Bahnüberführung	RW 8303,28478 7546,28255 7365,28253 7125,28106 5939,27781
 Gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW -150,-1457 61,-2956
 Gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW -1853,-2412 -2049,-2165
-Bansin: Zweirichtungsradweg (Verbundsteinpflaster) auf der südöstlichen Seite	RW 56175,173875 56327,173853 56493,173943 56584,174146 56592,174173
-Bansin - Ückeritz: asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW 55741,174692 55541,175016 55388,175169 55012,175498 54704,175615 54331,175874 52866,176160 52713,176237 52093,178063 51723,178269 51569,178497 51251,179173
+Bansin: Zweirichtungsradweg (Verbundsteinpflaster) auf der südöstlichen Seite	RW 56175,173875 56327,173853 56493,173943 56546,174049
+Ückeritz: teils Verbundsteinpflasterradweg, teils separate Straße, nörliche Seite	RW 50843,179488 51288,179162
+Bansin - Ückeritz: asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW 56029,174482 55741,174692 55541,175016 55388,175169 55063,175432 54841,175487 54576,175560 54162,175850 52866,176160 52713,176237 52093,178063 51899,178200 51627,178336 51599,178430 51538,178665 51288,179162
 Ladeburg - Lobetal: Fahrradstraße	RW 22414,33559 22606,33958 22931,35451
 Lobetal: verkehrsberuhigte Straße	RW 22931,35451 23232,36004
 Schönerlinder Str.: Radweg auf Gehweg	RW 17368,27859 17689,27853 18053,27875 18337,27854 18410,27890 18817,27979 19196,27963
@@ -145,12 +146,13 @@ Badeweg Prenzlau: Zweirichtungsradweg	RW 38939,101112 39106,101231
 Uckerpromenade: gemeinsamer Geh- und Radweg, überwiegend fester Sand	RW 39106,101231 39275,101193 39474,100982 39668,100787 40056,99762
 asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW 77909,209 77325,303 76840,600 75743,878 74740,378
 Mölschow - Trassenheide: Radweg	RW 37100,186740 37881,187596
-Trassenheide - Ostsee: Radweg	RW 38056,187615 38762,188150
+Trassenheide - Ostsee: Radweg	RW 38056,187615 38443,187905 38762,188150
 Lessingstr.: optionaler Radweg	RW -13749,105474 -12659,104581 -12122,104267 -12062,104131
 B 198: benutzungspflichtige Radwege auf beiden Seiten	RW -12062,104131 -11793,104246 -11208,104538
 B 198: benutzungspflichtiger Zweirichtungsradweg, überwiegend Asphalt, nur kurze Verbundsteinpflaster-Abschnitte, einige sehr enge Kurven, schmutzig	RW -11208,104538 -8925,105645 -7570,105900 -7335,106120
 Gemeinsamer Rad- und Gehweg auf der nördlichen Seite	RW 5394,-3053 4283,-2370
-Straßenbegleitender Radweg	RW 47168,119257 47554,120007 47549,121619 47524,122315
+Zweirichtungsradweg auf östlicher Seite, teils asphaltiert	RW 47432,119730 47554,120007 47547,120819 47501,121206 47549,121619
+Radweg auf Gehweg, Verbundsteinpflaster	RW 46859,118757 47008,118886 47187,119302 47432,119730
 Straßenbegleitender Radweg	RW 22378,30943 22306,31150 22512,31754 22527,32200 22528,32937
 Straßenbegleitender Radweg	RW 23759,49971 23387,49893
 B158: Zweirichtungsradweg auf der nordöstlichen Seite, Verbundsteinpflaster	RW 24203,22171 23930,21873
@@ -170,6 +172,8 @@ Benutzungspflichtiger Radweg	RW 18481,-995 18423,-843 18177,-449 18127,-367
 Zweirichtungsradweg auf dem nördlichen Gehweg	RW 26220,-17796 26639,-17861 26752,-17872 26832,-17882 27605,-17999
 Asphaltierter Radweg	RW 27605,-17999 28018,-18051
 Rudower Str.: Radweg auf Gehweg	RW 15289,-2873 14977,-3505 14878,-3602
+Anklam: Verbundsteinpflasterradwege auf Gehweg	RW 27439,161578 27356,161619 26959,161572 26892,161556 26697,161590
+Anklam, Peenedamm: Radwege	RW 26697,161590 26700,161925
 Marienwerder - B167: Radweg	RW 22897,48799 22862,49031 23597,49573 23748,49682 23759,49971
 Schleusenweg: Radweg	RW -2760,-740 -3003,432
 zwischen B2 und mindestens Autobahnbrücke: auf der nördlichen Seite verlaufender gemeinsamer Rad/Fußweg (in beiden Richtungen benutzungspflichtig), der stellenweise nur ca. 2,5m breit ist	RW 22178,30343 21872,30139 21561,30131 21172,29984 21085,29942
@@ -182,3 +186,9 @@ Wildenbruch - Fresdorf: asphaltierter Radweg	RW -12027,-13872 -11877,-14343 -117
 Lehnin - Namitz: sehr guter Zweirichtungsradweg	RW -34553,-10321 -34810,-10045 -34985,-9383 -35324,-8427
 Radweg, wahrscheinlich für beide Richtungen	RW 41409,-5222 41836,-5523 42349,-5620 42486,-5743
 Wusterhausener Str. (Eichwalde)	RW 25678,-3957 25752,-4178 25763,-4283
+Asphaltierter Zweirichtungsradweg, westliche Seite, im Dorf Verbundsteinpflaster	RW 55271,172339 55459,172528 55640,172618 55704,172720 55991,173100 56072,173403 56139,173567 56175,173875
+Pudagla - Schmollensee: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 52407,174744 52468,174931 52614,175530 52837,176075 52866,176160
+Neppermin - Balm: Zweirichtungsradweg auf der nördlichen Seite, Verbundsteinpflaster	RW 49978,171395 49668,171500 49515,171716 49028,171817
+Verbundsteinpflasterradwege	RW 47751,123738 47836,123659 47955,123488
+Haußmannstr.. Verbundsteinpflasterradwege	RW 48180,123455 48269,123357
+Radspuren	RW 48263,122915 47982,122958

@@ -1057,7 +1057,7 @@ userdel	2 375,28109 524,28171 938,28349
 EOF
      },
      { from  => 1137804913, # 2006-01-21 01:55
-       until => 1157061599, # 2006-08-31 23:59
+       until => 1153739499, # 2006-08-31 23:59 1157061599
        text  => 'Blankenburger Weg (Pankow) von Bahnhofstr. bis Pasewalker Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2006)',
        type  => 'gesperrt',
        source_id => 'INKO_82',
@@ -1256,7 +1256,7 @@ EOF
        text  => 'L 75; (Karl-Marx-Straße); OD Großziethen, von Dorfstraße bis Friedhofsweg Straßenbauarbeiten Vollsperrung 24.05.2004-20.12.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 13225,-681 13309,-1268
+userdel	q4 13225,-681 13090,205 13225,-681 13309,-1268
 EOF
      },
      { from  => 1102654800, # 2004-12-10 06:00
@@ -3447,8 +3447,8 @@ userdel	2 -13941,20658 -13887,20543 -13743,20218
 EOF
      },
      { from  => 1131231600, # 2005-11-06 00:00
-       until => 1152568800, # 2006-07-11 00:00
-       text  => 'L 202 Wustermark-Brieselang Brücke über Havelkanal bei Zeestow Brückenneubau Vollsperrung; Umleitung 07.11.2005-10.07.2006 ',
+       until => 1157061600, # 2006-09-01 00:00
+       text  => 'L 202 Wustermark-Brieselang Brücke über Havelkanal bei Zeestow Brückenneubau Vollsperrung 07.11.2005-31.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -19904,17964 -18793,18169
@@ -3990,12 +3990,13 @@ EOF
 userdel	2 -15961,38892 -16173,38465
 EOF
      },
-     { from  => 1148853600, # 2006-05-29 00:00
-       until => 1151877600, # 2006-07-03 00:00
-       text  => 'L 075 Mahlow-Berlin Karl-Marx-Str., OD Großziethen zw.Erlenweg u.Nibelungenstr. Straßenbauarbeiten Vollsperrung 30.05.2006-02.07.2006 ',
+     { from  => 1153737956, # 2006-07-24 12:45
+       until => 1155679199, # 2006-08-15 23:59
+       text  => 'L05 Karl-Marx-Str. (Großziethen) in beiden Richtungen zwischen Nibelungenstraße und Erlenweg Baustelle, Straße vollständig gesperrt, eine Umleitung ist eingerichtet (bis Mitte 08.2006)',
        type  => 'handicap',
+       source_id => 'IM_002624',
        data  => <<EOF,
-userdel	q4 13225,-681 13090,205
+userdel	q4 13225,-681 13090,205 12984,1011
 EOF
      },
      { from  => 1143928800, # 2006-04-02 00:00
@@ -4681,7 +4682,7 @@ userdel	2 -46651,12935 -45980,13284
 EOF
      },
      { from  => 1152568800, # 2006-07-11 00:00
-       until => 1154815200, # 2006-08-06 00:00
+       until => 1153740313, # 2006-08-06 00:00 1154815200
        text  => 'L 601 Leipziger Str. OD Finsterwalde, Kno. Hain-/ Schützenstr. Kanalarbeiten Vollsperrung 12.07.2006-05.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -4970,7 +4971,7 @@ userdel	2 4409,3173 4582,3076 4643,3046 4825,2958
 EOF
      },
      { from  => 1152396000, # 2006-07-09 00:00
-       until => 1156024800, # 2006-08-20 00:00
+       until => 1153740281, # 2006-08-20 00:00 1156024800
        text  => 'L 362 Bergmannstr. OD Müncheberg, zw. Seelower Str. u. Marienfeld Instandsetzung Durchlass Vollsperrung 10.07.2006-19.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -5089,7 +5090,6 @@ EOF
        source_id => 'INKO_84063',
        data  => <<EOF,
 userdel	1 14621,16563 15121,16503 15388,16502
-userdel	1 49835,170038 49737,169837
 EOF
      },
      { from  => 1152566231, # 2006-07-10 23:17
@@ -5107,6 +5107,90 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 40333,-4484 40503,-4571 40652,-4743
+EOF
+     },
+     { from  => 1153738184, # 2006-07-24 12:49
+       until => 1159653599, # 2006-09-30 23:59
+       text  => 'Bergstr. (Steglitz) Richtung Bismarckstr. zwischen Menckenstr. und Körnerstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Ende 09.2006)',
+       type  => 'gesperrt',
+       source_id => 'INKO_84234_COPY_14',
+       data  => <<EOF,
+userdel	1 5481,5721 5601,5732
+EOF
+     },
+     { from  => 1153738269, # 2006-07-24 12:51
+       until => 1156197600, # 2006-08-22 00:00
+       text  => 'Gartenstr. (Wedding) in Richtung Invalidenstr., zwischen Bernauer Str. und Invalidenstr. Baustelle, Straße vollständig gesperrt (bis 21.08.06)',
+       type  => 'gesperrt',
+       source_id => 'INKO_83906_COPY_1',
+       data  => <<EOF,
+userdel	1 9224,14169 9383,13978
+EOF
+     },
+     { from  => 1153739381, # 2006-07-24 13:09
+       until => 1157061599, # 2006-08-31 23:59
+       text  => 'Lützowplatz (Mitte) in beiden Richtunen zwischen Einemstr. und Lützowufer Baustelle, Straße vollständig gesperrt (bis Ende 08.2006)',
+       type  => 'gesperrt',
+       source_id => 'INKO_84233_COPY_14',
+       data  => <<EOF,
+userdel	2 7002,11034 7010,11002 6918,10854
+EOF
+     },
+     { from  => 1153739453, # 2006-07-24 13:10
+       until => 1154383199, # 2006-07-31 23:59
+       text  => 'Rosestr., Germanenstr. (Treptow) An der Kreuzung Baustelle, Rosestraße vollständig gesperrt, Germaenstr. teilweise gesperrt (bis Ende 07.2006)',
+       type  => 'gesperrt',
+       source_id => 'INKO_84204',
+       data  => <<EOF,
+userdel	2 21317,772 21103,600
+EOF
+     },
+     { from  => 1153346400, # 2006-07-20 00:00
+       until => 1159653600, # 2006-10-01 00:00
+       text  => 'B 096 Gransee-Fürstenberg OD Dannenwalde grundhafter Straßenbau Vollsperrung 21.07.2006-30.09.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -5962,74421 -5737,74650
+EOF
+     },
+     { from  => 1153000800, # 2006-07-16 00:00
+       until => 1155333600, # 2006-08-12 00:00
+       text  => 'B 167 Eisenbahnstr./ Wilhelmstr. OL Eberswalde, Wilhelmbrücke Fahrbahnsanierung 17.07.2006-11.08.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 37875,48253 37532,48149
+EOF
+     },
+     { from  => 1153000800, # 2006-07-16 00:00
+       until => 1164927600, # 2006-12-01 00:00
+       text  => 'K 6425 Rudolf-Breitscheid-Allee OD Neuenhagen, zw. Am Friedhof u. Krz. Hönower Chaussee Straßen- uned Gehwegbau halbseitig gesperrt; Einbahnstraße 17.07.2006-30.11.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 29743,14143 29093,13456
+EOF
+     },
+     { from  => 1152482400, # 2006-07-10 00:00
+       until => 1160172000, # 2006-10-07 00:00
+       text  => 'L 098 Marzahne-Rathenow Brandenburger Str. in OL Mützlitz Kanal- und Straßenbau Vollsperrung 11.07.2006-06.10.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -50268,15901 -50493,15837 -50578,15920
+EOF
+     },
+     { from  => 1153173600, # 2006-07-18 00:00
+       until => 1154296800, # 2006-07-31 00:00
+       text  => 'L 362 Müncheberg-Wulkow OD Obersdorf Kanal- u. Straßenbau Vollsperrung 19.07.2006-30.07.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 62444,15991 62380,16226 62104,16631
+EOF
+     },
+     { from  => 1156370400, # 2006-08-24 00:00
+       until => 1156802400, # 2006-08-29 00:00
+       text  => 'L 601 Berliner Str. OL Finsterwalde Sängerfest Vollsperrung 25.08.2006-28.08.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 33060,-85292 33103,-85731
 EOF
      },
     );

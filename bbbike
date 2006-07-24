@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.243 2006/07/10 21:43:59 eserte Exp $
+# $Id: bbbike,v 3.244 2006/07/24 23:03:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.243 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.244 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -10724,7 +10724,15 @@ sub get_orte_label_font {
     }
     my $font;
     # This should handle the range MIN_ORT_CAT .. MAX_ORT_CAT:
-    if      ($category <= 2) {
+    if      ($category == 0) {
+	my $index = $base_index + $orte_label_size - 2;
+	if ($index < 0) { $index = 0 }
+	$font = $font{$font[$index] . "-italic"};
+    } elsif ($category == 1) {
+	my $index = $base_index + $orte_label_size - 1;
+	if ($index < 0) { $index = 0 }
+	$font = $font{$font[$index]};
+    } elsif ($category <= 2) {
 	$font = $font{$font[$base_index + $orte_label_size]};
     } elsif ($category == 3) {
 	$font = $font{$font[$base_index + $orte_label_size+1]};
@@ -10737,6 +10745,7 @@ sub get_orte_label_font {
     } else {
 	die "Unknown category $category";
     }
+
     if (!defined $font) {
 	$font = $font{'veryhuge'};
     }
@@ -13513,6 +13522,7 @@ sub scale_width {
 
     for my $o_cat (MIN_ORT_CAT .. MAX_ORT_CAT) {
 	my $font = get_orte_label_font($o_cat);
+	#warn "$o_cat -> " . Dumper($top->fontActual($font)) . "\n";
 	$c->itemconfigure("O$o_cat", -font => $font);
     }
 
@@ -17806,6 +17816,16 @@ sub set_fonts {
     @font = ();
     foreach (qw(tiny small reduced normal large verylarge huge veryhuge)) {
 	push @font, $_;
+    }
+
+    for my $font (@font) {
+	eval {
+	    $font{$font."-italic"} = $top->fontCreate($top->fontActual($font{$font}), -slant => "italic");
+	};
+	if ($@ || !$font{$font."-italic"}) {
+	    # fallback to non-italic variant
+	    $font{$font."-italic"} = $font{$font};
+	}
     }
 }
 

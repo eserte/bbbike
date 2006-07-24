@@ -1,5 +1,5 @@
 #: title.de: Orte im weiteren Umland
-#: version: $Id: orte2-orig,v 4.23 2006/06/29 22:03:17 eserte Exp eserte $
+#: version: $Id: orte2-orig,v 4.24 2006/07/24 12:53:31 eserte Exp eserte $
 #: title.en: Places far away
 #:
 Hannover	6 -238396,-7589
@@ -23,7 +23,7 @@ Görlitz	5 121442,-138202
 Dessau	5 -66987,-65347
 Szczecin	5 86292,115232
 Bad Doberan	4 -95364,186923
-Anklam	4 26981,161601
+Anklam	4 26959,161572
 Prenzlau	4 39682,101543
 Neustrelitz	4 -14770,105941
 Ludwigslust	4 -120795,100343
@@ -108,7 +108,7 @@ Neustadt-Glewe	3 -115372,106534
 Mirow	3 -31370,95842
 Garz|(Rügen)	3 2384,212247
 Putbus	3 10574,216684
-Pasewalk	3 47819,122867
+Pasewalk	3 47982,122958
 Lychen	3 2788,89447
 Penzlin	3 -13583,121711
 Boizenburg|/Elbe	3 -173946,104334
@@ -276,7 +276,7 @@ Grünow	2 45189,101514
 Dedelow	2 35175,106764
 Schönermark|(bei Prenzlau)	2 29110,103270
 Ducherow	2 33001,151572
-Ückeritz	2 50798,179470
+Ückeritz	2 50843,179488
 Zinnowitz	2 41450,186687
 Passow	2 57256,82768
 Burow	2 -1737,151716
@@ -514,6 +514,7 @@ Wollin|(Penkun)	1 64241,102111
 Krackow	1 67229,105204
 Glasow|(Randowbruch)	1 67637,109062
 Wollschow	1 61885,112074
+Rossow|(bei Löcknitz)	1 57539,119532
 Betzin	1 -33911,38631
 Brunne	1 -36131,39797
 Blumenholz	1 -10837,111699
@@ -625,13 +626,13 @@ Niebel	1 -21565,-30889
 Weichensdorf	1 76179,-34273
 Möbiskruge	1 92006,-32229
 Schernsdorf	1 83338,-22806
-Fahrenwalde	1 53340,115664
-Damerow	1 47144,115705
+Fahrenwalde	1 53293,115731
+Damerow	1 47087,115725
 Schönfeld|(Uckermark)	1 47894,112908
 Schenkenberg|(bei Prenzlau)	1 45406,107350
 Ludwigsburg	1 47587,106693
 Milow|(bei Pasewalk)	1 36949,119322
-Züsedom	1 50148,115972
+Züsedom	1 49981,116048
 Nieden	1 43275,115703
 Nechlin	1 41224,116194
 Torgelow-Holländerei	1 50935,142656
@@ -729,14 +730,15 @@ Quadenschönfeld	0 4846,113002
 Warbende	0 1978,111942
 Rattey	0 22303,130287
 Klein Daberkow	0 25109,125933
-Pinnow|bei Anklam	0 33116,166807
+Pinnow|bei Anklam	0 33153,166785
 Relzow	0 27848,165204
 Karnin	0 38537,160709
 Westklüne	0 42418,161106
 Ostklüne	0 42587,161025
 Zecherin	0 36892,162044
 Selenthin	0 38508,162341
-Krienke	0 44232,169486
+Krienke	0 44247,169475
+Rankwitz Hafen	0 43017,171074
 Quilitz	0 42067,173223
 Liepe|(Rankwitz)	0 43381,174089
 Warthe|(Rankwitz)	0 41532,176095
@@ -792,7 +794,7 @@ Grenz	0 51138,104355
 Cremzow	0 51391,106540
 Kleptow	0 49112,107575
 Hedwigshof|(bei Carmzow)	0 54450,109425
-Trampe|bei Grünberg	0 57498,107476
+Trampe|bei Grünberg	0 57431,107358
 Schwaneberg	0 57125,102912
 Battin	0 59774,105301
 Wollin|(Eickstedt)	0 53952,97760
@@ -812,7 +814,7 @@ Melzow	0 41910,85359
 Dreesch	0 46093,99430
 Mattheshöhe|(bei Falkenwalde)	0 48318,97450
 Kleinow|(Falkenwalde)	0 50846,97187
-Neu-Kleinow	0 49872,95222
+Neu-Kleinow	0 49890,95231
 Weselitz	0 47542,95568
 Bertikow Ausbau	0 43295,94461
 Neumeichow	0 47090,88237
@@ -878,6 +880,8 @@ Plaue	0 -56732,-1070
 Kirchmöser Dorf	0 -55628,-4672
 Blumenberg	0 -120964,-43699
 Gottsdorf	0 -11218,-31357
+Karlsruh|(bei Fahrenwalde)	0 54121,113714
+Caselow	0 57586,117220
 Tornow|(bei Schönfeld, Uckermark)	0 45810,110576
 Neuenfeld|(bei Schönfeld, Uckermark)	0 49887,113837
 Wittenhof	0 43199,105408
@@ -895,9 +899,13 @@ Sauzin	0 32808,181821
 Ziemitz	0 32639,180129
 Netzelkow	0 40874,180778
 Grüssow	0 44766,175673
+Reestow	0 43711,175435
 Bannemin	0 37278,185225
 Neuendorf	0 39755,181509
 Kölpinsee	0 49060,182334
+Stubbenfelde	0 49675,181384
+Stoben	0 52203,172708
+Labömitz	0 52937,169481
 Welzin|bei Stolpe	0 45028,161679
 Gummlin	0 49188,164029
 Görke	0 54147,165600

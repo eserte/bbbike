@@ -2,7 +2,7 @@
 #: encoding: utf-8
 #: title.de: Orte im weiteren Umland
 #: title.en: Places far away
-#: version: $Id: orte2-orig,v 4.23 2006/06/29 22:03:17 eserte Exp eserte $
+#: version: $Id: orte2-orig,v 4.24 2006/07/24 12:53:31 eserte Exp eserte $
 #:
 # Mecklenburg-Vorpommern, Brandenburg
 Rostock	5 -79160,185302
@@ -33,8 +33,8 @@ Groß Miltzow	2 21339,125641
 Mildenitz	1 24153,118737
 Schönbeck	1 19430,131043
 Friedland|(Vorpommern)	3 17403,140308
-Anklam	4 26981,161601
-Pinnow|bei Anklam	0 33116,166807
+Anklam	4 26959,161572
+Pinnow|bei Anklam	0 33153,166785
 Relzow	0 27848,165204
 Karnin	0 38537,160709
 Westklüne	0 42418,161106
@@ -42,8 +42,9 @@ Ostklüne	0 42587,161025
 Zecherin	0 36892,162044
 Selenthin	0 38508,162341
 Morgenitz	1 45725,169643
-Krienke	0 44232,169486
+Krienke	0 44247,169475
 Rankwitz	1 42692,171761
+Rankwitz Hafen	0 43017,171074
 Quilitz	0 42067,173223
 Liepe|(Rankwitz)	0 43381,174089
 Warthe|(Rankwitz)	0 41532,176095
@@ -165,7 +166,7 @@ Kleptow	0 49112,107575
 Carmzow	2 52173,109779
 Hedwigshof|(bei Carmzow)	0 54450,109425
 Grünberg	2 59136,106775
-Trampe|bei Grünberg	0 57498,107476
+Trampe|bei Grünberg	0 57431,107358
 Schwaneberg	0 57125,102912
 Battin	0 59774,105301
 Wollin|(Eickstedt)	0 53952,97760
@@ -191,7 +192,7 @@ Dreesch	0 46093,99430
 Falkenwalde|(Uckermark)	1 49834,96903
 Mattheshöhe|(bei Falkenwalde)	0 48318,97450
 Kleinow|(Falkenwalde)	0 50846,97187
-Neu-Kleinow	0 49872,95222
+Neu-Kleinow	0 49890,95231
 Weselitz	0 47542,95568
 Bertikow	1 45239,93930
 Bertikow Ausbau	0 43295,94461
@@ -218,7 +219,7 @@ Neustrelitz	4 -14770,105941
 Wesenberg	3 -21335,96890
 Ducherow	2 33001,151572
 Jarmen	3 3419,168376
-Ückeritz	2 50798,179470
+Ückeritz	2 50843,179488
 Ludwigslust	4 -120795,100343
 Grabow|(Mecklenburg)	3 -116692,94946
 Schwedt	5 69238,73315
@@ -254,7 +255,7 @@ Garz|(Rügen)	3 2384,212247
 Poseritz	2 -2524,210079
 Losentitz	0 2110,204705
 Putbus	3 10574,216684
-Pasewalk	3 47819,122867
+Pasewalk	3 47982,122958
 Ostseebad Binz	2 19789,222004
 Bergen|auf Rügen	4 7796,223783
 Prohn	2 -19939,217939
@@ -331,6 +332,7 @@ Sonnenberg|(bei Retzin)	0 70127,111146
 Retzin	0 66800,112881
 Ramin	0 68603,113156
 Löcknitz|(Vorpommern)	2 63107,117496
+Rossow|(bei Löcknitz)	1 57539,119532
 Betzin	1 -33911,38631
 Brunne	1 -36131,39797
 Blumenholz	1 -10837,111699
@@ -752,8 +754,10 @@ Weichensdorf	1 76179,-34273
 Möbiskruge	1 92006,-32229
 Schernsdorf	1 83338,-22806
 Viereck	2 51322,127931
-Fahrenwalde	1 53340,115664
-Damerow	1 47144,115705
+Fahrenwalde	1 53293,115731
+Karlsruh|(bei Fahrenwalde)	0 54121,113714
+Caselow	0 57586,117220
+Damerow	1 47087,115725
 Schönfeld|(Uckermark)	1 47894,112908
 Tornow|(bei Schönfeld, Uckermark)	0 45810,110576
 Neuenfeld|(bei Schönfeld, Uckermark)	0 49887,113837
@@ -767,7 +771,7 @@ Trebenow	0 38662,115923
 Bandelow	0 38762,112839
 Klockow	0 49578,110877
 Bröllin	0 51891,118057
-Züsedom	1 50148,115972
+Züsedom	1 49981,116048
 Nieden	1 43275,115703
 Schmarsow	0 44142,117823
 Nechlin	1 41224,116194
@@ -791,6 +795,7 @@ Sauzin	0 32808,181821
 Ziemitz	0 32639,180129
 Netzelkow	0 40874,180778
 Grüssow	0 44766,175673
+Reestow	0 43711,175435
 Mölschow	1 36112,186478
 Trassenheide	2 37881,187596
 Bannemin	0 37278,185225
@@ -800,7 +805,10 @@ Zemnin	2 44291,185477
 Koserow	2 47391,183243
 Loddin	2 47869,180496
 Kölpinsee	0 49060,182334
+Stubbenfelde	0 49675,181384
 Pudagla	1 52328,174629
+Stoben	0 52203,172708
+Labömitz	0 52937,169481
 Stolpe|(Usedom)	1 47071,163315
 Welzin|bei Stolpe	0 45028,161679
 Dargen	1 52228,165503

@@ -1,6 +1,6 @@
 #: title.de: Abbiegevorschriften usw.
 #: title.en: Path instructions etc.
-#: version: $Id: comments_path-orig,v 4.59 2006/07/08 00:43:03 eserte Exp $
+#: version: $Id: comments_path-orig,v 4.59 2006/07/08 00:43:03 eserte Exp eserte $
 #:
 # Verwendete Kategorien:
 # CP;  : Kommentar an Punkt B bei Fahrt von A nach C; Bei entweder A oder C kann statt einer Koordinate 
@@ -93,8 +93,8 @@ Frankfurter Allee - Kreutzigerstr.: Einfahrt in Hausdurchgang	CP; 14208,12235 14
 Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8172,11679 8202,11691 8223,11700 8326,11732 8436,11766 8489,11782 8571,11846
 Jüdenstr.: unbequemes Passieren der Grunerstr.	CS 10778,12493 10800,12461 10831,12371
 Ausgeschildert: Panorama-Hotel Oberuckersee	CP; * 42509,91443 42546,91203
-Ausgeschildert: zum Golfplatz	CP; * 48923,171834 48858,172027
-Ausgeschildert: zum Golfplatz	CP; * 50181,171331 49996,171392 49668,171500
+Ausgeschildert: zum Golfplatz	CP; * 48923,171834 48686,172035
+Ausgeschildert: zum Golfplatz	CP; * 50181,171331 49978,171395 49668,171500
 Ausschilderung nach Luisenthal (?) folgen	CS; 41134,76881 41143,76365
 dem Schotterweg folgen	CP; 24225,37587 24193,37725 24218,37900
 Ausgeschildert: Campingplatz Warnitz	CP; 40653,83900 40756,84209 40768,84393
@@ -106,7 +106,7 @@ Ausgeschildert: Grünow	CS; 45050,101273 45189,101514
 Ausgeschildert: nach Charlottenhof	CS; -14500,-2012 -14612,-1809
 Rollbergstr. - Karl-Marx-Str.: beim Linksabbiegen Ampel vor Hertie benutzen	PI; 12407,8177 12528,8205 12714,8249 12689,8289
 zunächst auf dem linken Gehweg des Weißenseer Wegs bleiben, nächste Möglichkeit zur Querung benutzen	CP; 15363,13531 15426,13757 15342,13994
-Route nach Prenzlau ausgeschildert	CS; 50420,96012 50331,95646
+Route nach Prenzlau ausgeschildert	CS; 50420,96012 50188,95514
 Ausgeschildert mit Tafel "Windfeld Randowhöhe" und "Wolliner Weg"	CS; 52527,98581 52471,98189
 zur Müggelstr. Hausdurchfahrt benutzen	CS; 14854,11735 14837,11706
 zur Müggelstr. Hausdurchfahrt benutzen	CS; 14994,12121 14990,12075
@@ -236,3 +236,6 @@ Zum Naturpark Schöneberg: Weg zwischen den Parkhäusern nehmen	CP; 7762,7734 7757
 Hochspannungsweg - Buckower Damm: zunächst zur Fußgängerampel links vorfahren	CP; 12648,2494 12694,2514 12694,2544
 Hochspannungsweg: zur Überquerung des Buckower Damms Fußgängerampel links nehmen	CP; 12648,2494 12694,2514 12825,2573
 Hochspannungsweg: zur Überquerung des Buckower Damms Fußgängerampel rechts nehmen	CP; 12825,2573 12694,2514 12648,2494
+Grenz - Wallmow: links abzweigender Feldweg ist unscheinbar	CP; 51751,104213 51852,104256 52017,104460
+Ausschilderung nach Trampe fehlt	CP2; 54790,104980 54861,105010
+Ausschilderung: nach Wallmow und zum Badesee	CP2; 51751,104213 51852,104256
