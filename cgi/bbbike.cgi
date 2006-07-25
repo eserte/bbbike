@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.16 2006/07/09 12:21:32 eserte Exp $
+# $Id: bbbike.cgi,v 8.16 2006/07/09 12:21:32 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -1592,8 +1592,7 @@ EOF
 This is a route planner for cyclists in Berlin.
 Of the $all_bln_str streets in Berlin more than $bln_str are available for searching, also
 $pdm_str streets in Potsdam. If a street is not available, then the
-nearest crossing will be used automatically. There is no support
-for street numbers.
+nearest crossing will be used automatically. <b>Please do not enter street numbers or postal codes.</b>
 EOF
 	} else {
 	    print <<EOF;
@@ -1601,7 +1600,7 @@ Dieses Programm sucht (Fahrrad-)Routen in Berlin.
 Es sind ca. $bln_str von $all_bln_str Berliner Stra&szlig;en
 sowie ca. $pdm_str Potsdamer Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
 Nebenstra&szlig;en). Bei nicht erfassten Straﬂen wird automatisch die
-n‰chste bekannte verwendet. Hausnummern k&ouml;nnen nicht angegeben werden.<br><br>
+n‰chste bekannte verwendet. <b>Straﬂen bitte ohne Hausnummern oder Postleitzahlen eingeben.</b><br><br>
 EOF
 	}
 	print <<EOF if ($bi->{'can_table'});

@@ -1,5 +1,5 @@
 #: title: Qualit‰t von Straﬂen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.132 2006/07/24 12:53:57 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.132 2006/07/24 12:53:57 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Br¸cken, Straﬂen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -26,7 +26,7 @@ Hauptstr. (Blankenfelde): Asphalt	Q0 9774,23936 9812,23983 9828,24149
 Berliner Str. (Blankenfelde): schlechtes Kopfsteinpflaster	Q3 9425,23693 9490,23531
 Berliner Str. (Blankenfelde): m‰ﬂiges Kopfsteinpflaster	Q2 9490,23531 9528,23240
 B96a: Radweg Richtung N, OK	Q0 9228,23643 9146,23843 8984,24078 8891,24330 8710,24821 8659,24959 8493,25378
-Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15586,27150 15231,26587 14859,26029 14465,25442 14219,25013
+Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15586,27150 15231,26587 14859,26029 14465,25442 14314,25193 14219,25013
 Hobrechtsfelder Chaussee (ab Kurve): schlechtes Kopfsteinpflaster, 13 km/h	Q3 15586,27150 15709,27984 15757,28054
 Wisbyer Str.: m‰ﬂiges Kopfsteinpflaster	Q2 11033,16464 11289,16423 11397,16405 11632,16373 11688,16365 11727,16358
 Weserstr.: Kopfsteinpflaster, schmale Radwege	Q1 11888,9203 11993,9211 12074,9217 12148,9209 12180,9193 12322,9124 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13029,8632 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
@@ -618,7 +618,7 @@ Wernsdorfer Str.: teilweise Kopfsteinpflaster	Q2 30533,-3124 30390,-3443
 Wassersportallee: schlechtes Kopfsteinpflaster	Q3 22663,1441 22766,1511
 Kleine Lindenstr.: holpriger Fahrweg	Q2 21531,-1140 21306,-975
 Hundsfelder Str.: Kopfsteinpflaster, OK	Q1 21306,-975 21393,-871
-Hundsfelder Str.: enger Pfad	Q3 21393,-871 21889,-310
+Hundsfelder Str.: enger Pfad	Q3 21393,-871 21681,-589 21889,-310
 Parchwitzer Str.: teilweise Kopfsteinpflaster auf der Fahrbahn	Q2 21497,-955 21393,-871 21281,-762
 Wulkower Str.: holpriger Fahrweg	Q2 21012,10146 21015,10284 21017,10423 21026,10833 21031,11042
 Dornacher Str.: holpriger Fahrweg	Q2 20949,10145 20947,9999 20948,9847
@@ -1385,6 +1385,7 @@ Pflugstr.: Asphalt	Q0 8781,14357 8662,14567
 Wˆhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 Eulerstr.: Asphalt	Q0 9268,16228 9498,16480
+Gembitzer Str.: guter Asphalt	Q0 16815,16214 16889,16378 16948,16482 17059,16560
 Wedellstr.: Asphalt	Q0 7520,2564 7489,2787 7498,2845 7528,2964 7500,3081 7463,3182 7472,3308 7481,3334 7501,3432
 Schˆningstr.: guter Asphalt	Q0 6110,16630 6157,16684 6281,16841
 Klaustaler Str.: m‰ﬂiger Asphalt	Q1 11309,19267 11351,19169 11384,19067 11439,18890 11465,18811 11488,18743 11464,18732 11501,18648
@@ -2032,7 +2033,7 @@ Krumme Str. (Bohnsdorf): Beton	Q0 21945,-431 22004,-489 22201,-503 22275,-461
 Prinz-Eugen-Str.: m‰ﬂiges Kopfsteinpflaster	Q2 7542,15839 7649,15726 7796,15590
 Antonstr.: Asphalt	Q0 7414,15463 7527,15589 7649,15726 7744,15831
 Paradiesstr.: sehr guter Asphalt	Q0 21265,334 21168,212 21265,93 21319,-178 21343,-309
-Paradiesstr: schlechtes Kopfsteinpflaster	Q3 21343,-309 21281,-762
+Paradiesstr: schlechtes Kopfsteinpflaster	Q3 21343,-309 21343,-549 21281,-762
 (Englische Str. - Spreeufer): Asphalt	Q0 5535,12206 5579,12231
 Reisstr.: guter Asphalt	Q0 1314,14207 1360,14375
 Hoher Steinweg: Kopfsteinpflaster	Q2 -3132,14607 -3115,14642 -3029,14656
@@ -2076,7 +2077,7 @@ Alte Spandauer Poststr.: Waldweg (fester Sandweg)	Q1 -1415,9144 -1482,9276 -1512
 Teltower Weg: fester Waldweg, gut befahrbar	Q1 -903,6923 -1008,7427 -1112,7891 -1317,8836 -1336,9001 -1415,9144
 Alemannenallee: Asphalt	Q0 968,11283 1065,11216 1181,11136
 Kuckhoffstr.: guter Asphalt	Q0 10200,19807 9906,19718 9677,19651 9482,19594 9064,19456 8821,19331 8789,19278
-Lemkestr.: schlechtes Kopfsteinpflaster	Q3 26615,14054 26455,13925 25984,13328 25525,12750 25143,12284 25021,12090
+Lemkestr.: schlechtes Kopfsteinpflaster	Q3 26615,14054 26455,13925 25984,13328 25525,12750 25149,12266 25109,12196 25068,12099
 Stirnerstr.: guter Asphalt	Q0 5909,5072 6068,5028
 Hammersteinstr.: schlechtes grobes Kopfsteinpflaster	Q3 2750,7416 2654,7324 2555,7238 2458,7156 2376,7089
 Hackerstr.: guter Asphalt	Q0 5017,6387 5034,6425 5075,6509 5101,6579 5137,6651 5184,6723
@@ -2501,7 +2502,7 @@ Waldkraiburger Str.: Asphalt	Q0 12608,5046 12492,4995 12283,4971
 Illerzeile: m‰ﬂiger Asphalt	Q1 2704,20031 2659,20080 2567,20239 2541,20313 2530,20345 2515,20399
 Herkomerstr.: guter Asphalt	Q0 14563,9106 14446,8983
 Beckumer Str.: m‰ﬂiges Kopfsteinpflaster	Q2 2460,19083 2358,19209 2294,19328 2268,19402
-Donizettistr.: guter Asphalt	Q0 24727,12027 24936,12071 25021,12090 25167,12119 25290,12088 25455,12047 25524,12062 25863,11965
+Donizettistr.: guter Asphalt	Q0 24727,12027 24936,12071 25068,12099 25167,12119 25290,12088 25455,12047 25524,12062 25863,11965
 An der Schule: m‰ﬂiges Kopfsteinpflaster	Q2 24716,12081 24727,12027 24739,11968 24747,11929
 An der Schule: guter Beton	Q0 24747,11929 24769,11819 24759,11666
 An der Schule: schlechter holpriger Sandweg	Q3 24759,11666 24760,11503 24815,11329 24822,11275
@@ -2675,6 +2676,7 @@ Am Steinbergpark: guter Asphalt	Q0 4130,20765 3912,21090
 Galenstr.: Asphalt	Q0 -3837,14169 -3807,14300 -3721,14495 -3637,14628 -3499,14806
 Neue Heimat (Lichtenrade): gute Betonstraﬂe	Q0 10737,-807 10699,-612 10556,-659
 Dˆbelner Str.: guter Asphalt	Q0 24667,14088 25025,13974
+Siebweg: guter Asphalt	Q0 21151,-520 21241,-533 21343,-549 21451,-561 21600,-578 21681,-589 21789,-602 21868,-611 21934,-617 21987,-624 22034,-631 22143,-645 22162,-648 22268,-663
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934

@@ -164,7 +164,7 @@ Forstallee, Miersdorf: Qualität?	? 24528,-7126 24743,-6606 25624,-6363
 Waltersdorf - Karlshof: laut "Berliner Umland" witterungsabhängige Strecke; Schlenker um See notwendig? Möglicherweise wegen der neuen A113 unterbrochen?	? 21084,-4728 20532,-4674 20580,-4985 20075,-5417 19866,-5382 19809,-5557 19945,-5661 19915,-6315 19907,-6772 19951,-6902 19817,-7484
 Kiekebusch - Karlshof: laut "Berliner Umland" geeignete Strecke auf Straßen	? 20892,-6636 20577,-6982 20255,-7591
 Karlshof - Brusendorf: laut "Berliner Umland" geeigneter Radweg (möglicherweise asphaltiert)	? 19092,-9677 18847,-9629 18205,-10432
-Eichwalde - Zeuthen: laut "Berliner Umland" witterungsabhängige Strecke	? 25269,-4041 25550,-5174
+Eichwalde - Zeuthen: laut "Berliner Umland" witterungsabhängige Strecke	? 25185,-3955 25550,-5174
 Friesenstr. - Bahnstr. - Rheinstr. - Birkenstr. (Eichwalde, Zeuthen, Wildau): laut "Berliner Umland" geeignete Strecke auf Straßen	? 25550,-5174 25595,-5527 25835,-5983 25907,-6063 26001,-6257 26089,-6584 26048,-6587 26244,-7147 26359,-7450 26568,-8593
 Günterberg - Biesenbrow: laut "Regio-Cart" gut geeignet	? 47124,77624 48203,79315 49700,79603 50088,79574 50477,80139 50593,80084
 Biesenbrow - Polßen: laut "Regio-Cart" gut geeignet	? 50477,80139 50700,81437 50287,82637 48700,84137 48600,84500 48177,84989
@@ -518,8 +518,8 @@ Spreeradweg: Qualität? ausgeschildert?	? 35912,-1171 35978,-1196 36008,-1254 361
 Steinfurth - Spreeradweg: Qualität?	? 35828,-2672 35879,-2595 36001,-2511 36267,-2143 36290,-2080 36257,-1948 36308,-1922 36387,-1760
 Spreeradweg - Straße nach Hangelsberg: Qualität?	? 37316,-2196 37458,-2229 37613,-2204 37644,-1788 37560,-1526 37565,-1455 37661,-1285 37532,-1145 37527,-1102 37598,-1021 37684,-950 37892,-866 38002,-856 38294,-896 38563,-873 38697,-909 39142,-1089 39333,-1072
 Hangelsberg - A10: Qualität, für Radfahrer überhaupt benutzbar?	? 37527,-1102 37397,-1192 36991,-1329 36678,-1432
-Gosener Str. (Eichwalde): Qualität?	? 26256,-2815 26162,-2796 25650,-2637
-Bahnhofstr. (Eichwalde): Qualität?	? 26162,-2796 25153,-3423
+Gosener Str. (Eichwalde): Qualität?	? 26186,-2832 26102,-2822 25580,-2673
+Bahnhofstr. (Eichwalde): Qualität?	? 26102,-2822 25153,-3423
 August-Bebel-Allee (Eichwalde): Qualität?	? 24987,-3015 25153,-3423 25372,-4019
 Färberstr.: Kopfsteinpflaster?	? 21494,4605 21607,4850
 (Mörchinger Str. - Berliner Str.): Qualität, Abbiegesituation an Berliner Str.? 	? 1360,3253 1334,3305
@@ -802,7 +802,7 @@ Kol. Friedrichsfelde Nord: möglicherweise asphaltierter Weg? Ohne KfZ? Laut Luft
 Landsberger Allee - Große-Leege-Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? 16008,14340 16007,14367 15920,14357 15882,14564 15883,14606
 Gärtnerstr. (Hohenschönhausen): Radwege? Vorfahrtsstraße?	? 17489,15781 17379,15781 17080,15779 16889,15840 16807,15909
 Marzahner Str. (Hohenschönhausen): Radwege? Vorfahrtsstraße?	? 17489,15781 17646,15777 17935,15781 18178,15787 18573,15803 18626,15604 18180,15594 18178,15787
-Niehofer Str.: Qualität? (laut ADFC-Karte/neu gut geeignet)	? 16546,16308 16692,16253 16942,16174 16975,16160
+Niehofer Str.: Qualität? (laut ADFC-Karte/neu gut geeignet)	? 16546,16308 16692,16253 16815,16214 16942,16174 16975,16160
 Papendickstr.: Qualität? (laut ADFC-Karte/neu gut geeignet)	? 17071,16166 17094,16287 17170,16365
 Seefelder Str.: Qualität? (laut ADFC-Karte/neu mäßig geeignet)? Letztes Stück Richtung Wartenberger Str. nur für Radfahrer/Fußgänger befahrbar?	? 16946,16053 16975,16160 17071,16166 17157,16170 17239,16174 17294,16179 17383,16197
 Biesterfelder Str.: Qualität?	? 16942,16174 17010,16349 17088,16470
@@ -928,6 +928,9 @@ Sophienstr. zwischen Marie-Curie-Allee und Heinrichstr.: Kopfsteinpflaster wird 
 Roßweiner Ring: Qualität?	? 25007,13951 25146,13901 25120,13803 24975,13848
 Herrenweg: Qualität? Von der nördlichen Seite aus ein Feldweg, von der südlichen Seite aus ein Plattenweg	? 52614,175530 51994,175744 51796,176068 51837,176409 51334,176779 51310,177121 51524,177739 51627,178336
 Brüssow - Caselow: Qualität (wahrscheinlich schlechtes Kopfsteinpflaster, von der südlichen Seite aus gesehen)?	? 55605,112935 55723,114036 56123,116226 55986,116675 56317,117060 56355,117304 56496,117228 57586,117220
+Bahnübergang	? 19302,-734
+Bohnsdorfer Chaussee/Gartenstr.: Qualität?	? 19704,-490 19302,-734 18773,-1095 18892,-1273
+Waldstr.: Qualität?	? 24539,-3298 24872,-3095 24987,-3015 25182,-2915 25580,-2673 25958,-2455
 # added from ampeln-orig
 wirklich? (?)	? 9215,3599
 Wirklich? (?)	? -3775,17087

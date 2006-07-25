@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.29 2006/06/01 23:05:36 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.30 2006/07/25 19:15:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -1030,16 +1030,36 @@ sub BBBikeHeavy::perlmod_install_advice {
 	}
     } else {
 	my $shell = ($os eq 'win' ? M"Eingabeaufforderung" : M"Shell");
+	my $command = "";
+	if ($os eq 'win') {
+	    $command =
+		"    ppm\n" .
+		"    " . join("\n    ", map { "install $_" } @mod) . "\n" .
+		"    quit\n";
+	} else {
+	    if (-f '/etc/apt/sources.list') {
+		my @deb;
+		foreach my $perlname (@mod) {
+		    # code taken from debian's /usr/bin/dh-make-perl:
+		    my $pkgname = lc $perlname;
+		    $pkgname =~ s/::/-/;
+		    $pkgname = 'lib'.$pkgname unless $pkgname =~ /^lib/;
+		    $pkgname .= '-perl' unless ($pkgname =~ /-perl$/);
+		    # ensure policy compliant names and versions (from Joeyh)...
+		    $pkgname =~ s/[^-.+a-zA-Z0-9]+/-/g;
+		    push (@deb, $pkgname);
+		}
+		$command = "    apt-get install @deb\n";
+		$command .= M("oder")."\n";
+	    }
+	    $command .= "    perl -MCPAN -e \"install " . join(", ", @mod) . "\"\n";
+	}
 	status_message
 	    (
 	     Mfmt((@mod > 1
 		   ? "Die fehlenden Perl-Module können aus der %s mit dem Kommando\n"
 		   : "Das fehlende Perl-Modul kann aus der %s mit dem Kommando\n"), $shell) .
-	     ($os eq 'win' ?
-	      "    ppm\n" .
-	      "    " . join("\n    ", map { "install $_" } @mod) . "\n" .
-	      "    quit\n" :
-	      "    perl -MCPAN -e \"install " . join(", ", @mod) . "\"\n") .
+	     $command .
 	     M"aus dem Internet geholt und installiert werden.\n",
 
 	     "err");

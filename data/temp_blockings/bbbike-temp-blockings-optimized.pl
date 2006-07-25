@@ -288,14 +288,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1154728800,
-         'text' => 'B 246 Trebbin-Beelitz OD Löwendorf, zw. Ahrensdorfer Str. u. Schillerstr. Straßen- und Kanalbau Vollsperrung 20.02.2006-04.08.2006 ',
-         'from' => 1140303600,
-         'data' => 'userdel	q4 -2643,-21212 -2815,-20920
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1156716000,
@@ -717,15 +710,7 @@ userdel	q4 7070,34665 7435,34963 7443,36175
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'INKO_84075',
-         'until' => 1154383199,
-         'text' => 'Wilhelminenhofstr. (Treptow) Richtung Rathenaustr. zwischen Edisonstr. und Schillerpromenade Baustelle, Fahrtrichtung gesperrt (bis Ende 07.2006)',
-         'from' => 1152566231,
-         'data' => 'userdel	q4; 18175,6376 18445,6287 18853,6009
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1154901600,
          'text' => 'L 023 Storkow-Grünheide Brücke über die Müggelspree bei Neuhartmannsdorf Asphaltarbeiten Vollsperrung 05.08.2006-06.08.2006 ',
@@ -815,6 +800,33 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'text' => 'L 601 Berliner Str. OL Finsterwalde Sängerfest Vollsperrung 25.08.2006-28.08.2006 ',
          'from' => 1156370400,
          'data' => 'userdel	2 33060,-85292 33103,-85731
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_82304',
+         'until' => 1162335599,
+         'text' => 'Quitzowstr. (Tiergarten) Richtung Putlitzstr. zwischen Rathenower Str. und Havelberger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2006)',
+         'from' => 1153805975,
+         'data' => 'userdel	q4; 6670,14302 6482,14264
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_003129',
+         'until' => 1157061599,
+         'text' => 'Ringstr. (Lichterfelde) Richtung Carstennstr. zwischen Lotzestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2006)',
+         'from' => 1153860291,
+         'data' => 'userdel	1 2639,2989 2638,2843
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003134',
+         'until' => 1159653600,
+         'text' => 'Ruschestr. (Lichtenberg) in Richtung Frankfurter Allee, zwischen Normannenstr. und Frankfurter Allee Baustelle, Straße vollständig gesperrt (bis 30.09.06)',
+         'from' => 1153860349,
+         'data' => 'userdel	1 15904,12340 15863,11992
 ',
          'type' => 'gesperrt'
        }

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.244 2006/07/24 23:03:01 eserte Exp $
+# $Id: bbbike,v 3.245 2006/07/25 19:45:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.244 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.245 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -16565,12 +16565,13 @@ sub menuarrow_unmanaged {
 # error categories:
 #  info: never pops up a dialog: either writes to stderr or to the
 #        status bar if available
+#  infodlg: info with a dialog
 #  warn: warn with a dialog
 #  err:  error with a dialog
 #  die:  error with a dialog and die afterwards
 sub status_message {
     my($msg, $err) = @_;
-    if (!defined $err || $err =~ /^info/ || !$use_dialog) {
+    if (!defined $err || ($err =~ /^info/ && $err ne "infodlg") || !$use_dialog) {
 	if (!defined $progress) {
 	    if (defined $err && $err eq 'info-stack-trace') {
 		require Carp;
@@ -16596,9 +16597,9 @@ sub status_message {
 	if (!$top) {
 	    warn "$msg\n";
 	} else {
-	    my %args = (-title  => ($err eq 'warn' ? 'Warnung' : 'Fehler'),
+	    my %args = (-title  => ($err eq 'warn' ? 'Warnung' : $err eq 'infodlg' ? 'Info' : 'Fehler'),
 			-text   => $msg,
-			-bitmap => ($err eq 'warn' ? 'warning' : 'error'),
+			-bitmap => ($err eq 'warn' ? 'warning' : $err eq 'infodlg' ? 'info' : 'error'),
 			-background => Tk::NORMAL_BG,
 			-highlightbackground => Tk::NORMAL_BG,
 		       );

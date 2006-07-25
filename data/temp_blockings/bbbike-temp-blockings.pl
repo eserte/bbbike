@@ -3666,7 +3666,7 @@ userdel	2 9241,1073 9024,906
 EOF
      },
      { from  => 1140303600, # 2006-02-19 00:00
-       until => 1154728800, # 2006-08-05 00:00
+       until => 1153807245, # 2006-08-05 00:00 1154728800
        text  => 'B 246 Trebbin-Beelitz OD Löwendorf, zw. Ahrensdorfer Str. u. Schillerstr. Straßen- und Kanalbau Vollsperrung 20.02.2006-04.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -4504,8 +4504,6 @@ userdel	2 8515,12242 8214,12205 8089,12186
 userdel	2 8063,12182 7816,12150 7383,12095 6828,12031
 userdel auto	3 7460,12054 7383,12095 7039,12314
 userdel auto	3 7039,12314 7383,12095 7460,12054
-userdel	3 8119,12414 8063,12182 8056,12061
-userdel	3 8056,12061 8063,12182 8119,12414
 userdel	3 8119,12414 8063,12182 8034,12093
 userdel	3 8034,12093 8063,12182 8119,12414
 EOF
@@ -4694,7 +4692,7 @@ EOF
        text  => 'Fan-Fest der FIFA im Tiergarten, 7. Juni 2006 - 9. Juli 2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 8021,11636 8006,11766 8172,11679 8129,11735 8056,12061
+userdel	2 8021,11636 8006,11766 8172,11679
 userdel	2 7816,12150 7875,12363
 userdel	2 7504,11504 7382,11588 7163,11738 7287,11763 7535,11677 7591,11639 7669,11586 7706,11612 7742,11639 7852,11721 8006,11766
 userdel	2 7669,11586 7711,11558
@@ -4705,7 +4703,7 @@ userdel	2 8374,12416 8539,12286
 userdel	2 7382,11588 7354,11513
 userdel	2 6809,11979 7073,11798
 userdel	2 8223,11700 8220,11844 8215,12156 8214,12205
-userdel	2 8119,12414 8063,12182 8056,12061
+userdel	2 8119,12414 8063,12182
 userdel	2 8063,12182 8034,12093 8006,12074 7999,12049 8022,12016
 userdel	2 8540,12420 8560,12326 8539,12286 8515,12242 8600,12165 8595,12066
 userdel	2 8595,12066 8581,11896 8571,11846
@@ -5093,7 +5091,7 @@ userdel	1 14621,16563 15121,16503 15388,16502
 EOF
      },
      { from  => 1152566231, # 2006-07-10 23:17
-       until => 1154383199, # 2006-07-31 23:59
+       until => 1153860384, # 2006-07-31 23:59 1154383199
        text  => 'Wilhelminenhofstr. (Treptow) Richtung Rathenaustr. zwischen Edisonstr. und Schillerpromenade Baustelle, Fahrtrichtung gesperrt (bis Ende 07.2006)',
        type  => 'handicap',
        source_id => 'INKO_84075',
@@ -5191,6 +5189,33 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 33060,-85292 33103,-85731
+EOF
+     },
+     { from  => 1153805975, # 2006-07-25 07:39
+       until => 1162335599, # 2006-10-31 23:59
+       text  => 'Quitzowstr. (Tiergarten) Richtung Putlitzstr. zwischen Rathenower Str. und Havelberger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2006)',
+       type  => 'handicap',
+       source_id => 'INKO_82304',
+       data  => <<EOF,
+userdel	q4; 6670,14302 6482,14264
+EOF
+     },
+     { from  => 1153860291, # 2006-07-25 22:44
+       until => 1157061599, # 2006-08-31 23:59
+       text  => 'Ringstr. (Lichterfelde) Richtung Carstennstr. zwischen Lotzestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_003129',
+       data  => <<EOF,
+userdel	1 2639,2989 2638,2843
+EOF
+     },
+     { from  => 1153860349, # 2006-07-25 22:45
+       until => 1159653600, # 2006-10-01 00:00
+       text  => 'Ruschestr. (Lichtenberg) in Richtung Frankfurter Allee, zwischen Normannenstr. und Frankfurter Allee Baustelle, Straße vollständig gesperrt (bis 30.09.06)',
+       type  => 'gesperrt',
+       source_id => 'IM_003134',
+       data  => <<EOF,
+userdel	1 15904,12340 15863,11992
 EOF
      },
     );

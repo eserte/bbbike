@@ -1,5 +1,5 @@
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.63 2006/07/24 12:06:50 eserte Exp eserte $
+#: version: $Id: ampeln-orig,v 4.64 2006/07/25 19:51:30 eserte Exp eserte $
 #:
 	X 9222,8787
 	X 8982,8781
@@ -1201,7 +1201,7 @@ geplante Ampel in der Johannisthaler	? 14196,2876
 	X -8796,7577
 	X 4501,1900
 	X 18271,-1506
-	X 18898,-1314
+	X 18892,-1273
 	X 19540,-1106
 	X 17518,1561
 	X 16960,1282
@@ -1678,7 +1678,6 @@ nur Richtung Westen	X 5831,10978
 	F 2702,10006
 	X 12042,21886
 	X 10423,15698
-	X 10713,15746
 	B 34466,2570
 	X 1053,13790
 	B 12817,-12643
@@ -1858,3 +1857,7 @@ nur Museumsbetrieb der Heidekrautbahn	B 8626,23432
 	F 20277,2463
 	F 20201,2392
 	F 6721,6343
+	B 25109,12196
+	B 25269,-4041
+	B 24872,-3095
+	B 14314,25193

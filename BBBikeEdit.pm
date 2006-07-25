@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.101 2006/05/23 23:33:57 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.103 2006/07/25 19:45:34 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2019,6 +2019,8 @@ sub click_info {
     undef;
 }
 
+use vars qw(%click_readonly_warning_seen);
+
 sub click {
     my $o = shift;
     my $click_info = $o->click_info;
@@ -2037,38 +2039,56 @@ sub click {
     if (!-r $file) {
 	main::status_message("Can't read file $file", "die");
     }
+    my $readonly = 0;
+    my @input_w_args = ();
     if (!-w $file) {
-	main::status_message("Can't write file $file. Please do a checkout, if necessary", "die");
+	if (!$click_readonly_warning_seen{$file}) {
+	    main::status_message(Mfmt("Kann die Datei %s nicht öffnen. Wenn notwendig, ein RCS-Checkout durchführen. Dialog wird nun im Nur-Lese-Modus geöffnet.", $file), "warn");
+	    $click_readonly_warning_seen{$file}++;
+	}
+	$readonly = 1;
+	@input_w_args = (-state => "disabled");
     }
 
     require DB_File;
     my @rec;
-    if (!tie @rec, 'DB_File', $file, O_RDWR, 0644, $DB_File::DB_RECNO) {
+    if (!tie @rec, 'DB_File', $file, ($readonly ? O_RDONLY : O_RDWR), 0644, $DB_File::DB_RECNO) {
 	main::status_message("Can't tie to $file: $!", "die");
     }
 
-    my $t = $o->top->Toplevel(-title => M("BBBike-Editor: ") . $click_info->basefile);
-    $t->transient($t) unless defined $main::transient && !$main::transient;
+    require Tk::Ruler;
+
+    my $top = $o->top;
+    my $t = $top->Toplevel(-title => M("BBBike-Editor") . ": " . $click_info->basefile);
+    $t->transient($top) unless defined $main::transient && !$main::transient;
     my($name, $cat, $coords);
 
     my $e1 = $t->LabEntry(-label => M("Name"),
 			  -labelPack => [-side => "left"],
-			  -textvariable => \$name)->pack(-fill=>"x");
+			  -textvariable => \$name,
+			  @input_w_args,
+			 )->pack(-fill=>"x");
     $e1->focus;
     $t->LabEntry(-label => M("Kategorie"),
 		 -labelPack => [-side => "left"],
-		 -textvariable => \$cat)->pack(-fill=>"x");
+		 -textvariable => \$cat,
+		 @input_w_args,
+		)->pack(-fill=>"x");
     {
 	my $f = $t->Frame->pack(-fill=>"x");
 	$f->LabEntry(-label => M("Koordinaten"),
 		     -labelPack => [-side => "left"],
-		     -textvariable => \$coords)->pack(-side => "left", -fill=>"x");
+		     -textvariable => \$coords,
+		     @input_w_args,
+		    )->pack(-side => "left", -fill=>"x");
 	$f->Button(-text => M"Umdrehen",
 		   -command => sub {
 		       my(@coords) = split /\s+/, $coords;
 		       @coords = reverse @coords;
 		       $coords = join(" ", @coords);
-		   })->pack(-side => "left");
+		   },
+		   @input_w_args,
+		  )->pack(-side => "left");
 	$f->Button(-text => "Emacs",
 		   -command => sub {
 		       # XXX don't duplicate code, see below
@@ -2092,10 +2112,31 @@ sub click {
 		       main::status_message("Cannot find line " . $click_info->line, "die");
 		   })->pack(-side => "left");
     }
-    my $f = $t->Frame->pack;
-    $f->Button(Name => 'cancel',
-	       -command => sub { $t->destroy })->pack(-side => "left");
-    my $okb = $f->Button(Name => 'ok')->pack(-side => "left");
+
+    {
+	$t->Ruler->rulerPack(-pady => 2, -padx => 2);
+	my $f = $t->Frame->pack(-anchor => "w", -fill => "x");
+	$f->Button(-text => M("Kommentar senden"),
+		   -command => sub {
+		       send_comment(-w => $t,
+				    -file => $file,
+				    -name => $name,
+				    -cat => $cat,
+				    -coords => $coords,
+				   );
+		   })->pack(-anchor => "w");
+    }
+
+    my $okb;
+    {
+	$t->Ruler->rulerPack(-pady => 2, -padx => 2);
+	my $f = $t->Frame->pack;
+	if (!$readonly) {
+	    $okb = $f->Button(Name => 'ok')->pack(-side => "left");
+	}
+	$f->Button(Name => 'cancel',
+		   -command => sub { $t->destroy })->pack(-side => "left");
+    }
 
     my $count = 0;
     my $rec_count = 0;
@@ -2144,30 +2185,85 @@ use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n"
 
     my $modtime_file = (stat($file))[9];
 
-    $okb->configure(-command => sub {
-			if ($modtime_file != (stat($file))[9]) {
-			    die "File modified in the meantime!";
-			} else {
-			    my @l;
-			    $l[Strassen::NAME] = $name;
-			    $l[Strassen::CAT]  = $cat;
-			    $l[Strassen::COORDS] = $coords;
-			    my $l = Strassen::_arr2line(\@l);
-			    $rec[$rec_count] = $l;
-			}
-			untie @rec;
-			if (eval { require "$FindBin::RealBin/miscsrc/insert_points" }) {
-			    $BBBikeModify::datadir = $main::datadir;
-			    BBBikeModify::do_log($t, "changerec", "$rec_count $name\t$cat $coords", $file);
-			} else {
-			    warn $@ if $@;
-			}
-			if ($auto_reload) {
-			    main::reload_all();
-			}
-			$t->destroy;
-		    });
+    if ($okb) {
+	$okb->configure(-command => sub {
+			    if ($modtime_file != (stat($file))[9]) {
+				die "File modified in the meantime!";
+			    } else {
+				my @l;
+				$l[Strassen::NAME] = $name;
+				$l[Strassen::CAT]  = $cat;
+				$l[Strassen::COORDS] = $coords;
+				my $l = Strassen::_arr2line(\@l);
+				$rec[$rec_count] = $l;
+			    }
+			    untie @rec;
+			    if (eval { require "$FindBin::RealBin/miscsrc/insert_points" }) {
+				$BBBikeModify::datadir = $main::datadir;
+				BBBikeModify::do_log($t, "changerec", "$rec_count $name\t$cat $coords", $file);
+			    } else {
+				warn $@ if $@;
+			    }
+			    if ($auto_reload) {
+				main::reload_all();
+			    }
+			    $t->destroy;
+			});
+    }
 
+}
+
+sub send_comment {
+    my(%args) = @_;
+    my($top, $file, $name, $cat, $coords) = @args{qw(-w -file -name -cat -coords)};
+    my $t = $top->Toplevel(-title => M("Kommentar senden"));
+    $t->transient($top) unless defined $main::transient && !$main::transient;
+    $t->Label(-text => M("Kartenobjekt").":")->pack(-anchor => "w");
+    my $fixed_text = "File: $file\nName: $name\nCategory: $cat\nCoords: $coords\n";
+    my $fixed_w = $t->Scrolled("ROText",
+			       -scrollbars => "os",
+			       -wrap => "none",
+			       -bg => $t->cget('-bg'),
+			       -borderwidth => 0,
+			       -height => 5, -width => 50)->pack(-fill => "both", -expand => 1);
+    $fixed_w->insert("end", $fixed_text);
+    $t->Label(-text => M("Kommentar").":")->pack(-anchor => "w");
+    my $var_w = $t->Scrolled("Text",
+			     -scrollbars => "eos",
+			     -height => 5, -width => 50)->pack(-fill => "both", -expand => 1);
+    $var_w->focus;
+    
+    {
+	$t->Ruler->rulerPack(-pady => 2, -padx => 2);
+	my $f = $t->Frame->pack;
+	$f->Button(Name => 'ok',
+		   -text => M"Mail senden",
+		   -command => sub {
+		       my $var_text = $var_w->Contents;
+		       if ($var_text =~ m{\A\s*\z}) {
+			   main::status_message(M("Leere Nachricht. Es wird keine Mail versandt."), "error");
+		       } else {
+			   require BBBikeMail;
+			   require BBBikeVar;
+			   my $full_msg = $fixed_text . "\nComment:\n" . $var_text . "\n";
+			   my $backup_file = "$main::tmpdir/bbbike_send_comments_backup.txt";
+			   if (open(BACKUP, ">> $backup_file")) {
+			       print BACKUP $full_msg . "-------------------------------------------\n";
+			       close BACKUP;
+			       warn "Written mail contents to backup file $backup_file.\n";
+			   } else {
+			       warn "Cannot write to $backup_file: $!\n";
+			   }
+			   BBBikeMail::send_mail($BBBike::EMAIL, "BBBike comment (Perl/Tk $main::VERSION)",
+						 $full_msg,
+						);
+			   main::status_message(M("Mail wurde eventuell versandt."), "infodlg");
+		       }
+		       $t->destroy;
+		   })->pack(-side => "left");
+	$f->Button(Name => 'cancel',
+		   -command => sub { $t->destroy })->pack(-side => "left");
+    }
 }
 
 sub editmenu {

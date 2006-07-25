@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.154 2006/06/06 18:44:08 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.154 2006/06/06 18:44:08 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -131,6 +131,7 @@ sub advanced_option_menu {
 			   define_item_attribs();
 			   generate_plot_functions();
 			   set_bindings();
+			   Msg::setup_file(); # reload message catalog
 			   if (@errors) {
 			       die "@errors";
 			   }
