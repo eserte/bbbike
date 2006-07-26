@@ -703,9 +703,9 @@ userdel	q4 7070,34665 7435,34963 7443,36175
        },
        {
          'source_id' => 'INKO_84063',
-         'until' => 1154383200,
-         'text' => 'Buschallee (Weißensee) in Richtung Hansastr., zwischen Berliner Allee und Hansastr. Baustelle, Straße vollständig gesperrt (bis 31.07.06)',
-         'from' => 1152566159,
+         'until' => 1154124000,
+         'text' => 'Buschallee (Weißensee) in Richtung Hansastr., zwischen Berliner Allee und Hansastr. Baustelle, Straße vollständig gesperrt (bis 28.07.06)',
+         'from' => 1153955394,
          'data' => 'userdel	1 14621,16563 15121,16503 15388,16502
 ',
          'type' => 'gesperrt'

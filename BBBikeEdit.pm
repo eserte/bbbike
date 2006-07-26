@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.103 2006/07/25 19:45:34 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.104 2006/07/26 23:37:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2026,28 +2026,46 @@ sub click {
     my $click_info = $o->click_info;
     die "No (str or p) line recognised" if !$click_info;
 
+    my $ev = $o->canvas->XEvent;
+    my($cx,$cy) = ($o->canvas->canvasx($ev->x),
+		   $o->canvas->canvasy($ev->y));
+    my($tx,$ty) = map { int } main::anti_transpose($cx,$cy);
+
+    # Get file name
     my $file;
     if ($click_info->basefile =~ m|^/|) { # XXX better use file_name_is_absolute
 	$file = $click_info->basefile . "-orig";
-	if (!-e $file) {
-	    warn "Fallback to non-orig file";
-	    $file = $click_info->basefile;
-	}
     } else {
 	$file = $o->datadir . "/" . $click_info->basefile . "-orig";
+    }
+    if (!$main::edit_mode_flag || !-e $file) {
+	warn "Fallback to non-orig file";
+	$file =~ s{-orig$}{};
     }
     if (!-r $file) {
 	main::status_message("Can't read file $file", "die");
     }
+
+    # Read-only vs. read-write
     my $readonly = 0;
-    my @input_w_args = ();
-    if (!-w $file) {
+    my @entry_args = ();
+    my @button_args = ();
+    if (!$main::edit_mode_flag) {
+	$readonly = 1;
+    } elsif (!-w $file) {
 	if (!$click_readonly_warning_seen{$file}) {
 	    main::status_message(Mfmt("Kann die Datei %s nicht öffnen. Wenn notwendig, ein RCS-Checkout durchführen. Dialog wird nun im Nur-Lese-Modus geöffnet.", $file), "warn");
 	    $click_readonly_warning_seen{$file}++;
 	}
 	$readonly = 1;
-	@input_w_args = (-state => "disabled");
+    }
+    if ($readonly) {
+	if ($Tk::VERSION >= 804) {
+	    @entry_args = (-state => "readonly");
+	} else {
+	    @entry_args = (-state => "disabled");
+	}
+	@button_args = (-state => "disabled");
     }
 
     require DB_File;
@@ -2066,20 +2084,20 @@ sub click {
     my $e1 = $t->LabEntry(-label => M("Name"),
 			  -labelPack => [-side => "left"],
 			  -textvariable => \$name,
-			  @input_w_args,
+			  @entry_args,
 			 )->pack(-fill=>"x");
     $e1->focus;
     $t->LabEntry(-label => M("Kategorie"),
 		 -labelPack => [-side => "left"],
 		 -textvariable => \$cat,
-		 @input_w_args,
+		 @entry_args,
 		)->pack(-fill=>"x");
     {
 	my $f = $t->Frame->pack(-fill=>"x");
 	$f->LabEntry(-label => M("Koordinaten"),
 		     -labelPack => [-side => "left"],
 		     -textvariable => \$coords,
-		     @input_w_args,
+		     @entry_args,
 		    )->pack(-side => "left", -fill=>"x");
 	$f->Button(-text => M"Umdrehen",
 		   -command => sub {
@@ -2087,7 +2105,7 @@ sub click {
 		       @coords = reverse @coords;
 		       $coords = join(" ", @coords);
 		   },
-		   @input_w_args,
+		   @button_args,
 		  )->pack(-side => "left");
 	$f->Button(-text => "Emacs",
 		   -command => sub {
@@ -2123,6 +2141,7 @@ sub click {
 				    -name => $name,
 				    -cat => $cat,
 				    -coords => $coords,
+				    -clickcoords => [$tx,$ty],
 				   );
 		   })->pack(-anchor => "w");
     }
@@ -2153,7 +2172,8 @@ use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n"
 
 		    my $coordsys = $o->coord_system->coordsys;
 		    my $base = $o->file2base->{basename $file};
-		    main::status_message("Can't get base from $file", "error") if !defined $base;
+		    ## XXX $base is not really used today, so do not warn...
+		    #main::status_message("Can't get base from $file", "error") if !defined $base;
 
 		    # use only coordinates in coordsys and strip coordsys
 		    my @coords;
@@ -2215,11 +2235,11 @@ use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n"
 
 sub send_comment {
     my(%args) = @_;
-    my($top, $file, $name, $cat, $coords) = @args{qw(-w -file -name -cat -coords)};
+    my($top, $file, $name, $cat, $coords, $clickcoords) = @args{qw(-w -file -name -cat -coords -clickcoords)};
     my $t = $top->Toplevel(-title => M("Kommentar senden"));
     $t->transient($top) unless defined $main::transient && !$main::transient;
     $t->Label(-text => M("Kartenobjekt").":")->pack(-anchor => "w");
-    my $fixed_text = "File: $file\nName: $name\nCategory: $cat\nCoords: $coords\n";
+    my $fixed_text = "File: $file\nName: $name\nCategory: $cat\nCoords: $coords\nCoords at mouse: " . join(",", @$clickcoords) . "\n\n";
     my $fixed_w = $t->Scrolled("ROText",
 			       -scrollbars => "os",
 			       -wrap => "none",
@@ -2229,7 +2249,7 @@ sub send_comment {
     $fixed_w->insert("end", $fixed_text);
     $t->Label(-text => M("Kommentar").":")->pack(-anchor => "w");
     my $var_w = $t->Scrolled("Text",
-			     -scrollbars => "eos",
+			     -scrollbars => "ose",
 			     -height => 5, -width => 50)->pack(-fill => "both", -expand => 1);
     $var_w->focus;
     

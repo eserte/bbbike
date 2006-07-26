@@ -730,7 +730,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1 9383,13978 9224,14169
-userdel	1 9400,14400 9628,14215 9737,14126 9810,14066
+userdel	1 9400,14400 9439,14368 9628,14215 9737,14126 9810,14066
 EOF
      },
      { from  => 1093928400, # 2004-08-31 07:00
@@ -5081,9 +5081,9 @@ EOF
 userdel	q4 13857,8601 13982,8764 14015,8798 14140,8977
 EOF
      },
-     { from  => 1152566159, # 2006-07-10 23:15
-       until => 1154383200, # 2006-08-01 00:00
-       text  => 'Buschallee (Weißensee) in Richtung Hansastr., zwischen Berliner Allee und Hansastr. Baustelle, Straße vollständig gesperrt (bis 31.07.06)',
+     { from  => 1153955394, # 2006-07-27 01:09
+       until => 1154124000, # 2006-07-29 00:00
+       text  => 'Buschallee (Weißensee) in Richtung Hansastr., zwischen Berliner Allee und Hansastr. Baustelle, Straße vollständig gesperrt (bis 28.07.06)',
        type  => 'gesperrt',
        source_id => 'INKO_84063',
        data  => <<EOF,
