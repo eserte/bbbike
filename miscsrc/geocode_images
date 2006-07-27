@@ -4,7 +4,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
 
 use File::Spec;
 use File::Basename;
@@ -152,7 +152,11 @@ sub get_image_location {
 	}
     }
 
-    return if (!defined $y);
+    if (!defined $y) {
+	warn "Cannot get date from image <$file>, skipping...\n"
+	    if $v;
+	return;
+    }
 
     my $epoch = timelocal($S,$M,$H,$d,$m-1,$y-1900);
     $epoch -= $cam_delta;
