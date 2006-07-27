@@ -27,7 +27,9 @@ use POSIX qw(strftime);
 use GPS::GpsmanData;
 
 my $tmpdir = "$FindBin::RealBin/../tmp";
+# mapping: filename -> filename id
 my $filename_index_file = "$tmpdir/track_filenames.db";
+# mapping: iso date -> list of [filename ids, longitude, latitude], space separated
 my $date_index_file = "$tmpdir/track_dates.db";
 
 my $v = 0;
