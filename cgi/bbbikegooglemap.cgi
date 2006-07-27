@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.30 2006/04/04 21:29:15 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.31 2006/07/27 21:39:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -452,7 +452,7 @@ EOF
   <label><input type="radio" name="coordsystem" value="standard" @{[ $coordsystem eq 'standard' ? 'checked' : '' ]} /> BBBike</label><br />
   <label><input type="radio" name="coordsystem" value="polar" @{[ $coordsystem eq 'polar' ? 'checked' : '' ]} /> WGS84-Koordinaten (DDD)</label><br />
   <br />
-  <label>Koordinate (x,y bzw. lon,lat): <input name="wpt_or_trk" size="15" /></label><br />
+  <label>Koordinate(n) (x,y bzw. lon,lat): <input name="wpt_or_trk" size="15" /></label><br />
   <br />
   <button>Zeigen</button>
 </form>

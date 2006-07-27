@@ -291,12 +291,12 @@ EOF
        text  => 'Turmstr. (Mitte) in beiden Richtungen zwischen Gotzkowskystr. und Stromstr. Veranstaltung, Straße vollständig gesperrt (bis 10.04.2005 ca. 24 Uhr)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 6113,13313 6247,13304
-userdel	q4 5723,13346 5844,13334
-userdel	q4 5723,13346 5565,13370
-userdel	q4 5964,13324 5844,13334
-userdel	q4 5388,13398 5565,13370
-userdel	q4 6113,13313 6019,13320 5964,13324
+userdel	q4 6112,13327 6249,13322
+userdel	q4 5705,13359 5857,13342
+userdel	q4 5705,13359 5560,13382
+userdel	q4 5956,13330 5857,13342
+userdel	q4 5368,13406 5560,13382
+userdel	q4 6112,13327 6011,13330 5956,13330
 EOF
      },
      { from  => Time::Local::timelocal(reverse(2004-1900,4-1,30,12,0,0)),
@@ -746,8 +746,8 @@ EOF
        text  => 'Turmstraße zwischen Kreuzung Beusselstraße und Kreuzung Stromstraße sowie Thusneldaallee: Straße gesperrt (Turmstraßenfest), Dauer: 03.09.2004 02:00 Uhr bis 06.09.2004 02:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 5256,13420 5388,13398 5565,13370 5723,13346 5844,13334 5964,13324 6019,13320 6113,13313 6247,13304
-userdel	2 5975,13256 5964,13324
+userdel	2 5256,13420 5368,13406 5560,13382 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6249,13322
+userdel	2 5975,13256 5956,13330
 EOF
      },
      { from  => 1094097600, # 2004-09-02 06:00
@@ -4609,8 +4609,8 @@ userdel	2 30221,7373 30118,8128
 EOF
      },
      { from  => 1150581600, # 2006-06-18 00:00
-       until => 1154124000, # 2006-07-29 00:00
-       text  => 'L 074 Chausseestraße OL Wünsdorf, zw. Cottbusser/Berliner Str. u. Seestr. Kanalverlegung Vollsperrung 19.06.2006-28.07.2006 ',
+       until => 1155333600, # 2006-08-12 00:00
+       text  => 'L 074 Chausseestraße OL Wünsdorf, zw. Cottbusser/Berliner Str. u. Seestr. Kanalverlegung Vollsperrung 19.06.2006-11.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 15960,-26906 15682,-26971 15229,-27157
@@ -4853,7 +4853,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002950',
        data  => <<EOF,
-userdel	2 6247,13304 6113,13313 6019,13320 5964,13324 5844,13334 5723,13346 5565,13370 5388,13398
+userdel	2 6249,13322 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359 5560,13382 5368,13406
 EOF
      },
      { from  => 1151099435, # 2006-06-23 23:50
@@ -5216,6 +5216,23 @@ EOF
        source_id => 'IM_003134',
        data  => <<EOF,
 userdel	1 15904,12340 15863,11992
+EOF
+     },
+     { from  => 1154210400, # 2006-07-30 00:00
+       until => 1155074400, # 2006-08-09 00:00
+       text  => 'L 015 B109 südl. Prenzlau-Boitzenburg OD Gollmitz Einbau Deckschicht Vollsperrung 31.07.2006-08.08.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 30743,99403 30504,99595
+EOF
+     },
+     { from  => 1154038125, # 2006-07-28 00:08
+       until => 1167605999, # 2006-12-31 23:59
+       text  => 'Josef-Orlopp-Str. (Lichtenberg) Richtung Vulkanstr. zwischen Siegfriedstr. und Vulkanstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2006)',
+       type  => 'gesperrt',
+       source_id => 'INKO_81874_COPY_4',
+       data  => <<EOF,
+userdel	1 16863,13138 15912,13153
 EOF
      },
     );

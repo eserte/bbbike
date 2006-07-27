@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.8 2006/07/03 22:36:46 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.9 2006/07/27 22:41:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -13,8 +13,8 @@ use BBBikePlugin;
 push @ISA, "BBBikePlugin";
 
 use strict;
-use vars qw($VERSION $viewer_cursor $image_viewer_toplevel $viewer $geometry);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+use vars qw($VERSION $viewer_cursor $viewer $geometry);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 my $iso_date_rx = qr{(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})};
 
@@ -138,14 +138,16 @@ sub deactivate {
 
 sub button {
     my($c, $e) = @_;
-    my $current_inx = $c->find(withtag => "current");
+    my($current_inx) = $c->find(withtag => "current");
     my($img_x, $img_y) = $c->coords($current_inx);
-    my @all_image_inx = sort {
-	my(@tags_a) = $c->gettags($a);
-	my(@tags_b) = $c->gettags($b);
-	my($date_a) = $tags_a[1] =~ $iso_date_rx;
-	my($date_b) = $tags_b[1] =~ $iso_date_rx;
-	$date_a cmp $date_b;
+    my @all_image_inx = map {
+	$_->[1];
+    } sort {
+	$a cmp $b;
+    } map {
+	my(@tags) = $c->gettags($_);
+	my($date) = "@tags" =~ $iso_date_rx;
+	[$date, $_];
     } grep {
 	my(@tags) = $c->gettags($_);
 	# Could be tag inx 1 or 2
@@ -171,7 +173,7 @@ sub show_image_viewer {
 
     my(@tags) = $c->gettags($current_inx);
     for my $tag_index (1, 2) {
-	$name = $tags[1];
+	$name = $tags[$tag_index];
 	if ($name =~ /^Image:\s*\"([^\"]+)\"/) {
 	    $abs_file = $1;
 	}
@@ -186,8 +188,15 @@ sub show_image_viewer {
 	    main::IncBusy($main::top);
 	    eval {
 		my($date) = $name =~ $iso_date_rx;
-		if (!defined $image_viewer_toplevel || !Tk::Exists($image_viewer_toplevel)) {
-		    $image_viewer_toplevel = $main::top->Toplevel(-title => "Image viewer");
+		my $image_viewer_toplevel = main::redisplay_top($main::top,
+								"BBBikeViewImages_Viewer",
+								-raise => 1,
+								-transient => 0,
+								-title => "Image viewer",
+							       );
+		if (!defined $image_viewer_toplevel) {
+		    $image_viewer_toplevel = $main::toplevel{"BBBikeViewImages_Viewer"};
+		} else {
 		    my $f = $image_viewer_toplevel->Frame->pack(-fill => "x", -side => "bottom");
 		    my $prev_button = $f->Button(-text => "<<")->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(PrevButton => $prev_button);
@@ -319,7 +328,8 @@ sub show_image_viewer {
 	    system("$cmd&");
 	}
     } else {
-	main::status_message("Kann kein Bild in <@tags> finden", "warn");
+	require Data::Dumper;
+	main::status_message("Kann kein Bild in <" . Data::Dumper::Dumper(\@tags) . "> finden", "warn");
     }
 }
 

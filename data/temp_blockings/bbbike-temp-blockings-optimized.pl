@@ -503,8 +503,8 @@ userdel	q4 43584,20871 44596,21287
          'type' => 'gesperrt'
        },
        {
-         'until' => 1154124000,
-         'text' => 'L 074 Chausseestraße OL Wünsdorf, zw. Cottbusser/Berliner Str. u. Seestr. Kanalverlegung Vollsperrung 19.06.2006-28.07.2006 ',
+         'until' => 1155333600,
+         'text' => 'L 074 Chausseestraße OL Wünsdorf, zw. Cottbusser/Berliner Str. u. Seestr. Kanalverlegung Vollsperrung 19.06.2006-11.08.2006 ',
          'from' => 1150581600,
          'data' => 'userdel	2 15960,-26906 15682,-26971 15229,-27157
 ',
@@ -827,6 +827,23 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'text' => 'Ruschestr. (Lichtenberg) in Richtung Frankfurter Allee, zwischen Normannenstr. und Frankfurter Allee Baustelle, Straße vollständig gesperrt (bis 30.09.06)',
          'from' => 1153860349,
          'data' => 'userdel	1 15904,12340 15863,11992
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1155074400,
+         'text' => 'L 015 B109 südl. Prenzlau-Boitzenburg OD Gollmitz Einbau Deckschicht Vollsperrung 31.07.2006-08.08.2006 ',
+         'from' => 1154210400,
+         'data' => 'userdel	2 30743,99403 30504,99595
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_81874_COPY_4',
+         'until' => 1167605999,
+         'text' => 'Josef-Orlopp-Str. (Lichtenberg) Richtung Vulkanstr. zwischen Siegfriedstr. und Vulkanstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2006)',
+         'from' => 1154038125,
+         'data' => 'userdel	1 16863,13138 15912,13153
 ',
          'type' => 'gesperrt'
        }

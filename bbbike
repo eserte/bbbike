@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.245 2006/07/25 19:45:12 eserte Exp $
+# $Id: bbbike,v 3.245 2006/07/25 19:45:12 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -17402,6 +17402,7 @@ sub redisplay_top {
     my $force = delete $args{-force};
     my $deiconify = (exists $args{-deiconify} ? delete $args{-deiconify} : 1);
     my $raise     = (exists $args{-raise}     ? delete $args{-raise}     : 1);
+    my $transient = (exists $args{-transient} ? delete $args{-transient} : 1);
     my $geometry  = delete $args{-geometry};
     if (!exists $args{-class}) {
 	$args{-class} = "Bbbike Window";
@@ -17424,7 +17425,7 @@ sub redisplay_top {
     } else {
 	$toplevel{$name} = $top->Toplevel(%args);
 	$toplevel{$name}->geometry($geometry) if $geometry;
-	set_as_toolwindow($toplevel{$name});
+	set_as_toolwindow($toplevel{$name}) if $transient;
 	$toplevel{$name}->OnDestroy(sub { delete $toplevel{$name} });
 	$toplevel{$name};
     }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.104 2006/07/26 23:37:43 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.104 2006/07/26 23:37:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2334,7 +2334,7 @@ EOF
     my $insert_point_mode = 0;
     my $old_mode;
     my $cb = $t->Checkbutton
-	(-text => "Insert point",
+	(-text => "Insert point (Split street)",
 	 -indicatoron => 0,
 	 -variable => \$insert_point_mode,
 	 -command => sub {

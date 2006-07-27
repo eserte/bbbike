@@ -1259,9 +1259,16 @@ the chained power values, which seems wrong.
 
 =item * (H1)
 
-Umluts get lost in fvwm2 titlebars (Debian, fvwm2.4.x and fvwm2.5.x,
+Umlauts get lost in fvwm2 titlebars (Debian, fvwm2.4.x and fvwm2.5.x,
 Tk800.024). No problem on FreeBSD with fvwm2.4.15. On Mac and
 Tk804.027, umlauts are shown as unicode escape sequences \x{....}
+
+Maybe some utf-8 problem? Maybe newer fvwm2 respect the locale?
+
+=item * (M1)
+
+Support for the imview image viewer (imview.sf.net). Unfortunately
+every download seems to be corrupted?!
 
 =back
 
