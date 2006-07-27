@@ -4,13 +4,13 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 use File::Spec;
 use File::Basename;
 use Getopt::Long;
 eval 'use Image::Info qw(image_info);';
-eval 'use Image::ExifTool qw(ImageInfo);';
+use Image::ExifTool qw(ImageInfo);
 eval 'use Digest::MD5 qw(md5_hex);';
 use Time::Local qw(timelocal);
 use GD;
