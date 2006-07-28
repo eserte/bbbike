@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.28 2006/04/11 19:16:20 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.29 2006/07/28 18:55:10 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -300,6 +300,8 @@ sub show_vmz_diff {
 
 sub show_lbvs_diff {
     my($version) = @_;
+    main::plot("str",'l', -draw => 1);
+    main::make_net();
     if (defined $version) { $version = ".$version" }
     show_any_diff("$ENV{HOME}/cache/misc/difflbvs.bbd$version", "lbvs");
 }

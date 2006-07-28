@@ -1710,9 +1710,9 @@ Marchwitzastr.: gute Qualität	Q0 20143,13082 20059,13068 19940,13128 19934,13318
 Marchwitzastr.: Asphalt	Q0 19934,13318 19918,13459
 #: by: ^^^
 #: by: Elke Ortloff: vvv
-Sterckmannweg: Beton	Q0 20240,15004 20434,15293 20593,15515
+Sterckmannweg: Beton	Q0 20240,15004 20434,15293 20467,15339 20593,15515
 Kiebitzgrund: Beton	Q0 20434,15293 20287,15397
-Rebhuhnweg: Beton	Q0 20551,15582 20593,15515 20755,15450 20890,15365 20893,15178
+Rebhuhnweg: Beton	Q0 20551,15582 20593,15515 20755,15450 20890,15365 20907,15313 20904,15178
 #: by: ^^^
 #: by: Jörg Felgentreu:
 Paul-Heyse-Str.: Asphalt	Q0 13100,13803 13202,13873 13292,13931 13375,13986 13446,14030
@@ -2644,6 +2644,8 @@ Wolzogenstr.: akzeptables Kopfsteinpflaster	Q2 -867,2722 -928,2900 -990,3160
 Anhaltinerstr.: schlechtes Kopfsteinpflaster	Q3 -141,2648 34,2550 259,2528 646,2628 725,2702
 Urselweg: mäßiges Kopfsteinpflaster	Q2 -1155,3255 -1077,3206 -990,3160
 Urselweg: sehr guter Asphalt	Q0 -990,3160 -887,3081 -812,2915
+#: XXX was ist mit dem Abschnitt bis zur B1?
+Isoldestr.: mäßiges Kopfsteinpflaster	Q2 -4038,1430 -4049,1535
 #: by: ^^^
 #: by: Andrea Büchner:
 Achenseeweg: Asphalt	Q0 5913,1176 5878,787 5916,499 5993,243
@@ -2729,11 +2731,11 @@ Liebenwalder Str.: Kopfsteinpflaster	Q2 7162,16163 7471,16185 7690,16199 7808,16
 #: by: Tobias (iow...):
 Starnberger Str.: Asphalt	Q0 6553,9600 6621,9657 6664,9701
 #: by: Michael Stoeter: vvv
-Torweg: Kopfsteinpflaster	Q2 -7931,14606 -7413,14561
+Torweg: Kopfsteinpflaster	Q2 -7952,14632 -7413,14561
 #: add_fragezeichen: wird demnächst asphaltiert:
-Torweg: unbefestigter Weg	Q2 -8606,14696 -8264,14642
-Torweg: asphaltiert	Q0 -8264,14642 -8085,14618 -7931,14606
-Torweg: asphaltiert	Q0 -7413,14561 -7154,14532 -6990,14530 -6876,14529 -6442,14535
+Torweg: unbefestigter Weg	Q2 -8606,14696 -8289,14664
+Torweg: asphaltiert	Q0 -8289,14664 -8118,14649 -7952,14632
+Torweg: asphaltiert	Q0 -7413,14561 -7114,14579 -6913,14576 -6442,14535
 #: by: ^^^
 #: by: Snoopsoul: vvv
 #: XXX etwas widersprüchlich: Snoopsoul schreibt "schlechtes Kopfsteinpflaster", die ADFC-Karte vergibt für den nördlichen Abschnitt "gut befahrbar", außerdem werden Teilstücke vom Bus befahren
@@ -3068,7 +3070,7 @@ Rohrdommelweg: Beton	Q0 15336,3769 15220,3840 15179,3932
 #: by: bibo:
 Alsterweg: Asphalt	Q0 1955,618 1884,596 1826,648 1782,701 1829,1043 1895,1214 2114,1343
 #: by: michalk:
-Dreilindenstr.: Kopfsteinpflaster	Q2 -4559,1337 -4401,1357 -4025,1410 -3764,1446
+Dreilindenstr.: Kopfsteinpflaster	Q2 -4559,1337 -4401,1357 -4038,1430 -3764,1446
 #: by: Anja Helling:
 Kameradenweg: Kopfsteinpflaster	Q2 6660,3049 6725,3051 6850,2964
 #: by: gabi (hillen):
@@ -3196,7 +3198,7 @@ Naturlehrpfad: fester Sandweg und enger Holzbohlenweg	Q2 5692,23948 5645,23968 5
 Steinhellenweg: Beton	Q0 9992,4595 9998,4837 9998,4876
 Steinhellenweg: Kolonieweg/Rasengittersteine	Q2 9998,4876 9998,5210 9997,5229
 #: by: Carsten Steglich:
-Bruno-Wille-Str.: Kopfsteinpflaster	Q2 26086,4861 26069,5280 26019,5851
+Bruno-Wille-Str.: Kopfsteinpflaster	Q2 26086,4861 26069,5280 26057,5553 26019,5851
 #: by: Jürgen Müller: vvv
 Sondershauser Str.: Asphalt	Q0 6403,569 6358,795 6377,1041 6441,1444
 Sondershauser Str.: teilweise Asphalt	Q0 6441,1444 6491,1658
@@ -3275,9 +3277,9 @@ Wichernstr. (Spandau): Asphalt	Q0 -3409,17940 -3260,17789 -3174,17710 -3060,1759
 #: by: Daniel (dan.berlin):
 Poschingerstr.: Asphalt	Q0 5697,6276 5754,6238 5824,6240 5875,6262 5925,6311 5971,6343 6106,6361 6261,6391
 #: by: Jürgen Beckmann: vvv
-Olbendorfer Weg: Asphalt	Q0 4508,19523 4705,19425 4742,19407 5001,19832
+Olbendorfer Weg: Asphalt	Q0 4508,19523 4705,19425 4742,19407 4904,19690 5001,19832
 #: note: auch laut ADFC-Karte gut geeignet
-Hermann-Piper-Str.; Asphalt	Q0 4768,20070 5001,19832
+Hermann-Piper-Str.; Asphalt	Q0 4760,20071 4920,19928 5001,19832
 #: by: ^^^
 #: by: Samer Aburous
 Hanielweg: Asphalt	Q0 8070,1245 7795,1331 7656,1601 7576,1774
@@ -3726,6 +3728,28 @@ Döbelner Str.: guter Asphalt	Q0 24667,14088 25025,13974
 Siebweg: guter Asphalt	Q0 21151,-520 21241,-533 21343,-549 21451,-561 21600,-578 21681,-589 21789,-602 21868,-611 21934,-617 21987,-624 22034,-631 22143,-645 22162,-648 22268,-663
 #: by: Marco Kühne:
 Achillesstr.: Asphalt	Q0 15344,24315 15490,24198 15667,24088 15793,23762 15838,23729 15950,23671 16708,23246
+#: by: Peter Schweighöfer: vvv
+Nietheweg: guter Beton	Q0 4750,19881 4873,19879 4920,19928
+Rotbuchenweg: guter Beton	Q0 4611,19769 4753,19728 4858,19707 4904,19690
+Feuerweg: guter Beton	Q0 4873,19879 4858,19707
+#: by: ^^^
+#: by: Bernhard Eggert:
+Isenburger Weg: guter Beton	Q0 -7978,14419 -7952,14632 -7940,14690 -7908,14955 -7867,15185 -7819,15342
+#: by: Felix (Hartung):
+#: XXX aber was genau?
+Güntherstr.: mäßiger Belag	Q2 17976,8106 17913,8243 17774,8342
+#: by: Jörg (studi):
+Merler Weg: schlechtes Kopfsteinpflaster	Q3 19180,13219 18852,13269
+#: by: Andrea (techlin):
+Hugo-Heimann-Str.: guter Asphalt	Q0 14120,1991 14165,2106 14229,2177 14453,2087 14587,2032
+#: by: horst (printer):
+Klutstr.: mäßiges Kopfsteinpflaster	Q2 26057,5553 25757,5536
+#: by: Claudia (schuelke):
+Blenheimstr.: guter Beton	Q0 20467,15339 20565,15271 20617,15239 20687,15193 20904,15178 20970,15175 20976,15129
+#: by: knut B. (flanter):
+Mittenwalder Str. (Hellersdorf): guter Beton	Q0 23411,15632 23441,15780 23462,15886 23558,15888
+#: by: stefan ruedel:
+Hackbuschstr.: guter Asphalt	Q0 -6933,14328 -6922,14437 -6921,14459 -6913,14576 -6898,14715 -6890,14840 -6881,14975 -6861,15129
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827

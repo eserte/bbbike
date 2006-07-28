@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.110 2006/07/25 19:53:09 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.110 2006/07/25 19:53:09 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -316,6 +316,7 @@ Paracelsusstr.	1 11599,19171 11549,19258 11543,19279 11575,19296 11613,19312 116
 Wormbacher Weg	1 3791,338 3782,397 3648,531
 Schwelmer Str.	1 3688,292 3569,469 3497,574
 Schöppinger Str.	1 3691,566 3648,531 3569,469
+Hugo-Heimann-Str.	1 14120,1991 14165,2106 14229,2177 14453,2087 14587,2032
 Mauerstr.	1 -13425,-852 -13500,-640
 Wilhelm-Staab-Str.	1 -13003,-1343 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12685,-870 -12712,-734 -12730,-627
@@ -364,7 +365,6 @@ Czeminskistr.	1s 7615,8927 7570,8863
 Stallschreiberstr.	1s 10489,11405 10620,11244 10678,11172
 Jahnstr.	1s 11493,9128 11509,9392
 Bayernring	1s 8616,8595 8437,8557 8371,8543
-Sredzkistr. (Kulturbrauerei)	1s 11101,14768 10909,14710
 Waldweg	1s 25496,2429 24972,2583
 Schulenburgring	1s 9019,8434 9013,8594
 Neue Schönhauser Str.	1s 10528,13243 10441,13195 10305,13211
@@ -680,6 +680,8 @@ Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3 11228,12951 11295,12915 11362,
 Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3 11362,12964 11295,12915 11540,12795
 Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3 11573,12860 11540,12795 11635,12745
 Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3 11295,12915 11540,12795 11573,12860
+Mittenwalder Str. -> Zossener Str.: Straßenbahntrasse	3 23441,15780 23411,15632 23600,15626
+Zossener Str. -> Mittenwalder Str.: Straßenbahntrasse	3 23053,15727 23411,15632 23441,15780
 Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9008,12485 9112,12499 9323,12528
 Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9323,12528 9112,12499 9008,12485
 Mittelstr. -> Mittelstr.: An der US-Botschaft	3 9335,12442 9126,12413 9018,12400

@@ -846,6 +846,30 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'data' => 'userdel	1 16863,13138 15912,13153
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1155938400,
+         'text' => 'L 035 Eisenbahnstr.-August-Bebel-Str. Brücke über die Spree in Fürstenwalde Deckenerneuerung halbseitig gesperrt; Einbahnstraße 31.07.2006-18.08.2006 ',
+         'from' => 1154210400,
+         'data' => 'userdel	q4; 55549,-4992 55562,-4726
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1156629600,
+         'text' => 'L 063 Berliner Str. OL Lauchhammer, Höhe Bahnübergang Neugestaltung SGÜ Vollsperrung 05.08.2006-26.08.2006 ',
+         'from' => 1154642400,
+         'data' => 'userdel	2 35482,-103562 35379,-103141 35072,-102150
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1157839200,
+         'text' => 'L 074 Kehrigk-Märkisch Buchholz OD Märkisch Buchholz, Friedrichstr. Straßenbau Vollsperrung 01.08.2006-09.09.2006 ',
+         'from' => 1154296800,
+         'data' => 'userdel	2 36004,-32198 35916,-32601
+',
+         'type' => 'gesperrt'
        }
      
 );
