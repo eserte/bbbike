@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.37 2006/06/21 21:05:17 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.38 2006/07/28 21:54:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.37 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -109,7 +109,7 @@ use vars qw(@speed @power $speed_power_reference_string
 	    $do_route_strnames $do_route_strnames_km
 	    $do_route_strnames_compact $do_route_strnames_orte
 	    $do_route_strnames_comments $comments_net $comments_pos_net
-	    @comments_types);
+	    @comments_types %comment_cat_labels);
 
 # Scale of the map (1:$mapscale)
 use vars qw($mapscale $default_mapscale);

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.245 2006/07/25 19:45:12 eserte Exp eserte $
+# $Id: bbbike,v 3.247 2006/07/29 12:12:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.245 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.247 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -1817,40 +1817,42 @@ sub do_iconframe {
 			   );
 	$fragezeichen_check_index = $strcm->index('last');
     }
-    if ($advanced) {
-#XXXXXXXXXXXXXXXXX del?
-	if (0) {
-	    $strcm->checkbutton(-label => M"Kommentare",
-				-variable => \$str_draw{'comm'},
-				-command => sub { plot('str','comm') },
-			       );
-	}
-#XXXXXXXXXXXXXXXXX do it nicer, maybe using an "all" category?
-	$strcm->cascade(-label => M"Kommentarkategorien");
-	{
-	    my $c_bpcm = $strcm->Menu(-title => M"Kommentarkategorien");
-	    $strcm->entryconfigure("last", -menu => $c_bpcm);
-	    foreach my $_type (@comments_types) {
-		next if $_type =~ /^(cyclepath|mount)$/; # handled elsewhere
-		my $type = my $label = $_type;
-		my $def = 'comm-' . $type;
-		$c_bpcm->checkbutton
-		    (-label => $label,
-		     -variable => \$str_draw{$def},
-		     -command => sub {
-			 my $file  = get_strassen_file("comments_" . $type);
-			 plot('str', $def, Filename => $file);
-		     },
-		    );
-	    }
-	}
-    }
 
+    my $create_comment_layers_cb = sub {
+	my($menu, $type) = @_;
+	my $label = $comment_cat_labels{$type} || $type;
+	my $def = 'comm-' . $type;
+	$menu->checkbutton
+	    (-label => $label,
+	     -variable => \$str_draw{$def},
+	     -command => sub {
+		 my $file  = get_strassen_file("comments_" . $type);
+		 plot('str', $def, Filename => $file);
+	     },
+	    );
+    };
+
+    $create_comment_layers_cb->($strcm, "route");
     $strcm->command(-label => M"Radroute auswählen",
 		    -command => sub {
 			choose_ort(qw(s comm-route),
 				   -markstartifactive => 1);
 		    });
+
+    $strcm->cascade(-label => M"Sonstige");
+    {
+	my $c_bpcm = $strcm->Menu(-title => M"Sonstige");
+	$strcm->entryconfigure("last", -menu => $c_bpcm);
+	foreach my $type (@comments_types) {
+	    next if $type =~ /^(cyclepath|mount|route)$/; # handled elsewhere
+	    if (!$advanced) {
+		# kfzverkehr: poor presentation
+		# scenic: almost no data
+		next if $type =~ /^(kfzverkehr|scenic)$/;
+	    }
+	    $create_comment_layers_cb->($c_bpcm, $type);
+	}
+    }
 
     if ($advanced) {
 	$strcm->checkbutton
@@ -5405,6 +5407,15 @@ sub define_item_attribs {
 	    gpsanimrect zoomrect),
 	);
     # XXX remove these? (was between rest-fg and personal-fg) L pp-L L-img L-fg 
+    %comment_cat_labels =
+	(ferry => M"Informationen zu Fähren",
+	 misc => M"Sonstige Kommentare",
+	 path => M"Wegführung",
+	 route => M"Radrouten",
+	 tram => M"Tram auf Fahrbahn",
+	 kfzverkehr => M"Kommentare zum Kfz-Verkehr",
+	 scenic => M"Schöne Strecken",
+	);
 }
 
 sub generate_plot_functions {
@@ -10321,7 +10332,9 @@ sub mark_point {
 	($tx, $ty) = ($args{'-coords'}->[0][0][0], $args{'-coords'}->[0][0][1]);
     }
     my $width = $args{'-width'} || 9;
-    $c->delete('show') unless $args{'-dont_delete_old'};
+    if (!$args{'-dont_mark'} && !$args{'-dont_delete_old'}) {
+	$c->delete('show');
+    }
     my @show_mark_args;
     if ($args{-endlessmark}) {
 	push @show_mark_args, -endlessmark => 1;

@@ -5259,4 +5259,22 @@ EOF
 userdel	2 36004,-32198 35916,-32601
 EOF
      },
+     { from  => 1154165181, # 2006-07-29 11:26
+       until => 1154296800, # 2006-07-31 00:00
+       text  => 'Rheinstr. (Schöneberg) in beiden Richtungen zwischen Saarstr. und Walter-Schreiber-Platz Veranstaltung, Straße vollständig gesperrt (bis 30.07.2006 nachts) ',
+       type  => 'gesperrt',
+       source_id => 'IM_003088',
+       data  => <<EOF,
+userdel	2 5370,6500 5424,6584 5533,6753 5654,6941
+EOF
+     },
+     { from  => 1154203576, # 2006-07-29 22:06
+       until => 1183240800, # 2007-07-01 00:00
+       text  => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt (bis Juni 2007) ',
+       type  => 'gesperrt',
+       source_id => 'IM_003157',
+       data  => <<EOF,
+userdel	1 10920,13139 10781,13002
+EOF
+     },
     );

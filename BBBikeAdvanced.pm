@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.154 2006/06/06 18:44:08 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.156 2006/07/29 12:12:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1242,6 +1242,7 @@ sub coord_to_markers_dialog {
     my $marker_points_no = 0;
     my $orig_steady_mark = $steady_mark;
     $steady_mark = 1;
+    my $cur_index = 0;
 
     my $update_marker_points = sub {
 	$marker_points_no = scalar @marker_points;
@@ -1258,6 +1259,14 @@ sub coord_to_markers_dialog {
 			#-clever_center => 1,
 		       );
 	}
+    };
+
+    my $center_to_point = sub {
+	my($index) = @_;
+	my($tx,$ty) = transpose($marker_points[$index]->[0][0],
+				$marker_points[$index]->[0][1]);
+	mark_point(-point => "$tx,$ty",
+		   -dont_mark => 1);
     };
 
     my $repeater;
@@ -1289,7 +1298,7 @@ sub coord_to_markers_dialog {
 
     Tk::grid($t->Label(-text => M("Punkte erkannt").":"),
 	     $t->Label(-textvariable => \$marker_points_no),
-	     -sticky => "w");
+	     -sticky => "ew");
     Tk::grid($t->Button(-text => M"Letzten Punkt löschen",
 			-command => sub {
 			    pop @marker_points if @marker_points;
@@ -1297,7 +1306,7 @@ sub coord_to_markers_dialog {
 			},
 		       ),
 	     -columnspan => 2,
-	     -sticky => "w");
+	     -sticky => "ew");
     Tk::grid($t->Button(-text => M"Reset",
 			-command => sub {
 			    @marker_points = ();
@@ -1305,21 +1314,49 @@ sub coord_to_markers_dialog {
 			},
 		       ),
 	     -columnspan => 2,
-	     -sticky => "w");
+	     -sticky => "ew");
+    {
+	my $f;
+	Tk::grid($f = $t->Frame,
+		 -columnspan => 2,
+		 -sticky => "ew");
+	$f->Button(-text => "<<",
+		   -command => sub {
+		       return if !@marker_points;
+		       $cur_index--;
+		       if ($cur_index < 0) {
+			   $cur_index = $#marker_points;
+		       }
+		       $center_to_point->($cur_index);
+		   },
+		  )->pack(-side => "left", -fill => "x");
+	$f->Button(-text => ">>",
+		   -command => sub {
+		       return if !@marker_points;
+		       $cur_index++;
+		       if ($cur_index > $#marker_points) {
+			   $cur_index = 0;
+		       }
+		       $center_to_point->($cur_index);
+		   },
+		  )->pack(-side => "left", -fill => "x");
+	$f->Label(-text => "Index:")->pack(-side => "left");
+	$f->Label(-textvariable => \$cur_index)->pack(-side => "left");
+    }
     Tk::grid($t->Button(-text => M"Dump to STDERR",
 			-command => sub {
 			    print STDERR join("\n", map { join(" ", map { join(",", map { int } @$_) } @$_) } @marker_points), "\n";
 			},
 		       ),
 	     -columnspan => 2,
-	     -sticky => "w");
+	     -sticky => "ew");
     Tk::grid($t->Button(Name => "close",
 			-command => sub {
 			    $t->destroy;
 			},
 		       ),
 	     -columnspan => 2,
-	     -sticky => "w");
+	     -sticky => "ew");
     $t->OnDestroy(sub { $steady_mark = $orig_steady_mark; });
 }
 

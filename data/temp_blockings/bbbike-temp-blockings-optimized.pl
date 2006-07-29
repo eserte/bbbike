@@ -701,15 +701,7 @@ userdel	q4 7070,34665 7435,34963 7443,36175
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'INKO_84063',
-         'until' => 1154124000,
-         'text' => 'Buschallee (Weißensee) in Richtung Hansastr., zwischen Berliner Allee und Hansastr. Baustelle, Straße vollständig gesperrt (bis 28.07.06)',
-         'from' => 1153955394,
-         'data' => 'userdel	1 14621,16563 15121,16503 15388,16502
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1154901600,
@@ -868,6 +860,24 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'text' => 'L 074 Kehrigk-Märkisch Buchholz OD Märkisch Buchholz, Friedrichstr. Straßenbau Vollsperrung 01.08.2006-09.09.2006 ',
          'from' => 1154296800,
          'data' => 'userdel	2 36004,-32198 35916,-32601
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003088',
+         'until' => 1154296800,
+         'text' => 'Rheinstr. (Schöneberg) in beiden Richtungen zwischen Saarstr. und Walter-Schreiber-Platz Veranstaltung, Straße vollständig gesperrt (bis 30.07.2006 nachts) ',
+         'from' => 1154165181,
+         'data' => 'userdel	2 5370,6500 5424,6584 5533,6753 5654,6941
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003157',
+         'until' => 1183240800,
+         'text' => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt (bis Juni 2007) ',
+         'from' => 1154203576,
+         'data' => 'userdel	1 10920,13139 10781,13002
 ',
          'type' => 'gesperrt'
        }
