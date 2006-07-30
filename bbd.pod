@@ -647,8 +647,9 @@ The category will not be used in this case.
 =item ampeln
 
 File with point records for traffic lights (Ampeln). The category is
-set to B<B> for railroad crossings, B<F> for pedestrian-only traffic
-lights and B<Zbr> for drawbridges, otherwise not used.
+set to B<B> for railroad crossings, B<B0> for railroad crossing
+without frequent traffic, B<F> for pedestrian-only traffic lights and
+B<Zbr> for drawbridges, otherwise not used.
 
 =item hoehe
 

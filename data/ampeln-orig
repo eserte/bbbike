@@ -1812,8 +1812,8 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	X 6399,-1793
 #: section ^^^
 #: note: Fährt nur am Wochenende tagsüber während des Sommers im 15-30-Minutentakt: vvv
-Parkeisenbahn Wuhlheide	B 20619,6133
-Parkeisenbahn Wuhlheide	B 20561,7229
+Parkeisenbahn Wuhlheide	B0 20619,6133
+Parkeisenbahn Wuhlheide	B0 20561,7229
 #: note: ^^^
 	F 6276,10401
 	F 9001,13039
@@ -1835,7 +1835,7 @@ Parkeisenbahn Wuhlheide	B 20561,7229
  	X -1752,-1823
 	F 8858,4498
 	X 14179,9515
-Industriebahn	B -2223,13690
+Industriebahn	B0 -2223,13690
 #: by: http://www.th-billik.de/NME/20051030/
 	X 16779,2993
 #: note: Fußgängerampel nur in West-Ost-Richtung:
@@ -1879,7 +1879,7 @@ Industriebahn	B -2223,13690
 	F 9294,12765
 	X 9224,14169
 	Zbr 1721,20603
-nur Museumsbetrieb der Heidekrautbahn	B 8626,23432
+nur Museumsbetrieb der Heidekrautbahn	B0 8626,23432
 	F 5039,7627
 #: note: laut Luftbild:
 	X 3805,2196
@@ -1914,3 +1914,5 @@ nur Museumsbetrieb der Heidekrautbahn	B 8626,23432
 	X 21163,15289
 #: note: laut Luftbild:
 	X 23561,15975
+	B0 20722,6971
+	B0 17954,15216

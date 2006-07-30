@@ -1783,8 +1783,8 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	F 968,11283
 	X 13161,13360
 	X 6399,-1793
-Parkeisenbahn Wuhlheide	B 20619,6133
-Parkeisenbahn Wuhlheide	B 20561,7229
+Parkeisenbahn Wuhlheide	B0 20619,6133
+Parkeisenbahn Wuhlheide	B0 20561,7229
 	F 6276,10401
 	F 9001,13039
 	F -6492,12574
@@ -1804,7 +1804,7 @@ Parkeisenbahn Wuhlheide	B 20561,7229
  	X -1752,-1823
 	F 8858,4498
 	X 14179,9515
-Industriebahn	B -2223,13690
+Industriebahn	B0 -2223,13690
 	X 16779,2993
 	F 6931,10391
 	F 12509,11025
@@ -1842,7 +1842,7 @@ Industriebahn	B -2223,13690
 	F 9294,12765
 	X 9224,14169
 	Zbr 1721,20603
-nur Museumsbetrieb der Heidekrautbahn	B 8626,23432
+nur Museumsbetrieb der Heidekrautbahn	B0 8626,23432
 	F 5039,7627
 	X 3805,2196
 	F 14739,2714
@@ -1871,3 +1871,5 @@ nur Museumsbetrieb der Heidekrautbahn	B 8626,23432
 	B 35379,-103141
 	X 21163,15289
 	X 23561,15975
+	B0 20722,6971
+	B0 17954,15216

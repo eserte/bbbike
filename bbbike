@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.247 2006/07/29 12:12:22 eserte Exp $
+# $Id: bbbike,v 3.247 2006/07/29 12:12:22 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -426,6 +426,7 @@ $abbiege_penalty = { 'H'   => 70, # entspricht ca. 10s bei 25km/h
 $lost_strecke_per_ampel = 50; # verlorene Strecke pro Ampel in m # XXX F ...?
 %lost_time_per_ampel = ('X' => 15,
 			'F' => 5,
+			# B?
 		       ); # verlorene Zeit pro Ampel in s
 $average_v = 0;
 
@@ -5957,7 +5958,7 @@ EOF
 		# keine Verwendung von _coord_as_string
 		$c->createImage
 		  ($x, $y,
-		   -image => ($category eq 'B'
+		   -image => ($category =~ m{^(B|B0)$}
 			      ? $andreaskr_photo
 			      : $category eq 'Zbr'
 				? $zugbruecke_photo
