@@ -1384,7 +1384,7 @@ Altvaterstr.: Asphalt	Q0 -2917,3222 -3112,3095
 Altvaterstr.: Beton	Q0 -3200,3030 -3207,2898
 (Am Britzer Verbindungskanal): feiner Schotter, OK	Q1 15358,6022 15166,6019
 (Am Britzer Verbindungskanal): Asphalt	Q0 15143,5936 15099,5978 14319,5993
-#: XXX wird hier noch nachgebessert?
+#: add_fragezeichen: wahrscheinlich wird das noch nicht asphaltierte Teilstück bis 2006-09-01 fertiggestellt:
 (Am Britzer Verbindungskanal): holpriger Feldweg	Q3 14319,5993 14212,6000
 (Am Britzer Verbindungskanal): Asphalt	Q0 14212,6000 14112,6009
 #: note: zumindest die westliche Seite sah gut aus, im Gegensatz zum ADFC-Karteneintrag: "mäßig geeignet"
@@ -1410,7 +1410,7 @@ Hadubrandweg: Asphalt	Q0 20677,8446 20821,8438 20918,8383
 Hadubrandstr.: Beton	Q0 20918,8383 21018,8378 21055,8374 21178,8367 21262,8354 21348,8254
 Biesdorfer Str.: Verbundsteinpflaster	Q1 21164,8243 21169,8112
 Semliner Str.: Waldweg, möglicherweise sandig	Q2 22303,7361 22356,7574
-#: note: Andreas Mühlhausen korrigiert (Q2 -> Q3) 
+#: note: Andreas Mühlhausen korrigiert (Q2 -> Q3)
 Gelnitzstr.: schlechtes Kopfsteinpflaster	Q3 22897,5740 22882,5834
 Mayschweg: gut geeignet	Q0 23368,3894 23316,3778 23243,3702
 #: note: Johannes (behrens) korrigiert (Q1 -> Q0)
@@ -1518,7 +1518,7 @@ Wiesenstr. (Rahnsdorf): Asphalt	Q0 29593,4057 29632,3968 29917,3697
 Ruthnerweg: Asphalt	Q0 3640,1959 3577,2000 3430,1998 3290,2007 3240,2007
 Lüderitzstr.: Asphalt	Q0 6003,16521 6231,16328
 Tollensestr.: guter Asphalt	Q0 22554,13011 22519,13139 22527,13232 22563,13340 22594,13408
-#: note: war mit "Q1" und "q2" gekennzeichnet --- ich benutze das schlechtere für die Qualität
+#: note: zwei anonyme Einträge mit "Q1"; einer hat "q0", der andere "q2" gekennzeichnet; insgesamt trotzdem Q2, vielleicht Q2+?
 Freienwalder Str. (Wedding): Kopfsteinpflaster	Q2 9331,16624 9435,16832 9503,16988
 Heidenauer Str.: guter Asphalt	Q0 24418,14678 24328,14702 24230,14638 24146,14594
 Ferdinandstr. (Lichterfelde): guter Asphalt	Q0 5656,1882 5592,2021 5533,2143 5420,2379 5398,2422
@@ -1812,7 +1812,7 @@ Winterthurstr.: Beton	Q0 6243,17603 6268,17709 6279,17753 6297,17821
 #: by: Carsten
 Am Iderfenngraben: schlechtes Kopfsteinpflaster	Q3 8623,19353 8653,19431 8739,19475 9015,19606 9408,19707 9565,19751
 #: by: franky
-Brehmstr.: Beton	Q1 19391,9838 19411,10079 19688,10086
+Brehmstr.: Beton	Q1 19391,9838 19413,10056 19540,10044 19683,10031
 #: by: Andre Gebel
 Zinzendorfstr.: schlechtes Kopfsteinpflaster	Q3 5442,12852 5472,13056
 #: by: Chris Hellwig
@@ -1869,7 +1869,7 @@ Nimrodstr.: schlechtes Kopfsteinpflaster	Q3 4612,22070 4393,21934 4139,21782 371
 #: by: Christel Klapötke: vvv
 Neuchateller Str.: schlechter Sandweg	Q3 3898,4477 3998,4539
 Neuchateller Str.: Kopfsteinpflaster	Q2 3998,4539 4517,4853
-Schieferweg: Betonstr.	Q0 10817,2370 10631,1975 10585,1879
+Schieferweg: Betonstr.	Q0 10817,2370 10672,2062 10631,1975 10585,1879
 #: by: ^^^
 #: by: Paul Vomend: vvv
 Nordlichtstr.: guter Asphalt	Q0 4335,17642 4953,17412 4918,17308 4904,17262 4893,17217
@@ -1911,7 +1911,7 @@ Ortlerweg: schlechtes Kopfsteinpflaster	Q3 3500,1587 3740,1918 3700,2045
 #: by: W.Oertel:
 Kögelstr.: mäßiges Kopfsteinpflaster	Q2 5211,17920 5367,17876
 #: by: Christian: vvv
-Wielandstr. (Friedenau): sehr guter Asphalt	Q0 6083,7582 6081,7215 6082,6965
+Wielandstr. (Friedenau): sehr guter Asphalt	Q0 6083,7582 6081,7215 6082,7066 6082,6965
 Fregestr.: guter Asphalt	Q0 5897,6799 5957,6889 5957,6970 5958,7220 5955,7406
 #: by: ^^^
 #: by: Thomas (dobr@...) vvv
@@ -2097,7 +2097,7 @@ Arnold-Zweig-Str.: Asphalt	Q0 11870,17522 11492,17460 11243,17421 11100,17396
 Binzstr.: holprige Pflasterstraße	Q2 11845,17656 11468,17586 11088,17511 10892,17491
 #: by: ^^^
 #: by: stephanie (k.):
-Sponholzstr.: Asphalt	Q0 6157,7685 6155,7216 6159,7068
+Sponholzstr.: Asphalt	Q0 6157,7685 6155,7216 6157,7117
 #: by: Mandy (k.):
 Puccinistr.: Asphalt und Kopfsteinpflaster	Q2 13723,15505 13973,15660
 #: by: Felix Schröder:
@@ -2372,7 +2372,7 @@ Mudrackzeile: asphaltiert	Q0 6895,17625 7043,17667 7009,17778
 Mariabrunner Weg: asphaltiert	Q0 7009,17778 6859,17753
 #: note: ^^^
 #: note: die ADFC-Karte sagt hier: "mäßig geeignet":
-Walderseestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7333,17149 7631,17239
+Walderseestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7333,17149 7614,17245
 Fräsersteig: Betonplatten	Q1 5770,20407 5959,20524 6034,20551 6134,20585 6184,20550 6298,20599
 #: note: die ADFC-Karte sagt hier für den östlichen Teil: "mäßig geeignet":
 Alter Bernauer Heerweg: Kopfsteinpflaster	Q2 6668,22746 7072,22905 7782,23172 7923,23225 8203,23321 8584,23421
@@ -3149,7 +3149,7 @@ Phloxstr.: loser Sandweg	Q3 23659,10074 23775,10047 23881,10024 23988,10001 2409
 Suttnerstr.: Asphalt	Q0 7659,5735 7667,5813 7728,5866 7730,5921 7730,5958
 #: by: ^^^
 #: by: Isa:
-Wunsiedeler Weg: Asphalt	Q0 7589,4008 7576,3774 7501,3432
+Wunsiedeler Weg: Asphalt	Q0 7589,4008 7576,3774 7573,3698 7501,3432
 #: by: Ulf Sawallisch:
 Charlottenstr.: Asphalt	Q0 5763,2795 5929,2982 6218,3302 6538,3491
 #: by: Sandra (sspp):
@@ -3751,6 +3751,34 @@ Blenheimstr.: guter Beton	Q0 20467,15339 20565,15271 20617,15239 20687,15193 209
 Mittenwalder Str. (Hellersdorf): guter Beton	Q0 23411,15632 23441,15780 23462,15886 23558,15888
 #: by: stefan ruedel:
 Hackbuschstr.: guter Asphalt	Q0 -6933,14328 -6922,14437 -6921,14459 -6913,14576 -6898,14715 -6890,14840 -6881,14975 -6861,15129
+#: by: Tanja Bieligk:
+Haßlingerweg: Asphalt	Q0 7644,17054 7893,17064 7924,17039
+#: by: (x)qusor:
+(Michelangelostr. - Straße 106): mäßiger Beton	Q1 13838,15113 14314,14841
+#: note: qusor hat "part" für den restlichen Abschnitt angegeben, und wahrscheinlich mir mit "Feldweg" recht gegeben:
+(Michelangelostr. - Straße 106): Feldweg	Q2 14314,14841 14592,14682
+#: by: Annika Weidler:
+Willi-Sänger-Str.: guter Beton	Q0 16003,8119 15904,8049 15798,8182
+#: by: Andreas Mattern:
+Schneebergstr.: Asphalt	Q0 7573,3698 7710,3677 7768,3650 7778,3644 7827,3595 7879,3455 7916,3348
+#: by: Stefan Rönisch:
+Straße 231: Asphalt	Q0 15337,889 15316,888 15269,930 15187,1171 15120,1381 15117,1456
+#: by: Detlef (ddmpbox): vvv
+Idunastr.: Asphalt	Q0 12918,18558 12794,18656 12623,18756 12522,18813 12190,19009
+Kötztinger Str.: Asphalt	Q0 19531,9859 19540,10044 19553,10208 19695,10196
+#: by: ^^^
+#: by: Kathrin (jackelkathrin):
+#: add_fragezeichen: Belag: asphaltiert oder betoniert?
+Bahnhofstr. (Friedenau): guter Belag	Q0 6082,7066 6139,7070 6157,7117
+#: by: Vera Kästner:
+Spreestr. (Köpenick): gutes Kopfsteinpflaster	Q1 21974,5208 21901,5117
+#: by: Petra Lohs: vvv
+Tropfsteinweg: Asphalt	Q0 10672,2062 10763,2035 10859,2033 10932,2033 11106,1983 11265,1968 11323,1986
+#: note: laut ADFC-Karte nur mäßig geeignet:
+Kleinmachnower Weg: Asphalt	Q0 292,-36 665,85 1345,184
+#: by: ^^^
+#: by: Alex (hesse):
+Körnerstr. (Spandau): mäßiger Asphalt	Q1 -3043,15207 -2915,15152 -2853,15127
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827

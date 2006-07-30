@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.27 2006/03/25 13:55:44 eserte Exp eserte $
+# $Id: mapserver_comment.cgi,v 1.28 2006/07/30 19:37:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -132,7 +132,9 @@ eval {
 	print BACKUP scalar localtime;
 	print BACKUP "\n";
 	for my $param (param) {
-	    my $dump = Data::Dumper->new([param($param)],[$param])->Indent(1)->Useqq(1)->Dump;
+	    my $val = param($param);
+	    next if $val eq '' && $param !~ /^supplied/;
+	    my $dump = Data::Dumper->new([$val],[$param])->Indent(1)->Useqq(1)->Dump;
 	    print BACKUP $dump;
 	    print $fh $dump;
 	}

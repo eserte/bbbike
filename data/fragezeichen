@@ -4,7 +4,6 @@ Clémentweg/Dr.-Dorsch-Allee: Qualität (laut ADFC-Karte gut geeignet)?	? 11740,22
 Kalvinistenweg: Qualität (laut ADFC-Karte gut geeignet)?	? 11693,22482 11807,22395 11718,21978 11659,21611
 Werdauer Weg: Qualität? (ebenfalls: Werdauer Brücke eintragen!)	? 7087,8066 6990,8040 6481,7345
 Ludwig-Renn-Str.: Einbahnstraße auch für Radfahrer?	? 20843,16829 21017,16737
-Verbindung zwischen Michelangelostr. und Hohenschönhausener Str. vorhanden? im Süden: ja, Feldweg	? 13838,15113 14125,14905 14574,14646
 Stolper Weg: Qualität?	? -2743,-934 -4003,-684 -4153,-621 -4459,-157
 Stolper Weg: Qualität? Bis wo (vom Europarc aus) ist Autoverkehr vorhanden? Radwege? Genaue Straßennamen?	? -4153,-621 -4884,-907 -5335,-1090 -6147,-1125 -6395,-887
 Albrechts Teerofen - Stopler Weg (ehem. Autobahnbrücke): offen für Radfahrer? Qualität?	? -5359,-1298 -5335,-1090
@@ -56,10 +55,10 @@ Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
 Fähre Liepnitzsee zum Großen Werder: wo genau?	? 16050,38181 16455,37790
 Sputendorfer Str.: laut http://home.arcor.de/hoge-online/std_tlw/std_tlw00.htm sieht die Straße gut aus, wie sieht es weiter südlich Richtung Sputendorf aus?	? -2049,-2165 -1853,-2412 -1834,-3968 -1809,-4235
 Elsflether Weg: Qualität?	? -3996,13414 -4006,13478 -3971,13755 -3904,13944 -3884,13980
-Groenerstr. - Kurstr.: Qualität?	? -3470,14836 -3354,14971 -3243,15068 -3231,15096 -3195,15134 -2956,15575 -2836,15685
+Groenerstr. - Kurstr.: Qualität?	? -3470,14836 -3354,14971 -3243,15068 -3231,15096 -3195,15134 -2956,15575 -2856,15687
 Fortsetzung der Wolziger Zeile bis zur B101: Qualität? Kann die B101 gequert werden?	? 9608,-2642 9522,-2640 9117,-2636 8073,-2475 6651,-1299
 Mauerweg zwischen Drusenheimer Weg und Buckower Damm: existiert eine Strecke, wie ist die Qualität? Vielleicht geht es auch weiter Richtung Rudow? (laut "Berliner Umland" witterungsabhängige Strecke)	? 11794,550 11924,594 12519,794 12984,1011
-Mauerweg Rudow: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 14996,1564 15252,790 15403,416 15621,-193 15118,-970
+Mauerweg Rudow: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 14996,1564 15272,778 15403,416 15621,-193 15118,-970
 Mauerweg Rudow: Qualität (laut "Berliner Umland" gut geeigneter Radweg)?	? 18127,-367 18609,375 18668,1021 18610,1077
 Mauerweg Rudow: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 18677,1249 18614,1453 18584,1575 18484,1750 18365,1914 18378,2246
 Existieren Treppen zwischen Kolonnenweg und Bornholmer Str.?	? 9961,16576 9998,16547 9967,16514
@@ -930,9 +929,10 @@ Bohnsdorfer Chaussee/Gartenstr.: Qualität?	? 19704,-490 19302,-734 18773,-1095 1
 Waldstr.: Qualität?	? 24539,-3298 24872,-3095 24987,-3015 25182,-2915 25580,-2673 25958,-2455
 Schillerring: Qualität (möglicherweise mäßiger Beton)? Fußgängerzone/Spielstraße?	? 6922,18024 6793,18115 6671,18132 6579,18136 6560,18135
 Albert-Hößler-Str.: Qualität (möglicherweise mäßiger Belag)	? 16023,11459 16134,11774
-Staakener Str. - Klosterbuschweg: Qualität der Verbindung? Befinden sich hier zu überwindende Stufen? Ist das (legale) Linksabbiegen in den Klosterbuschweg möglich?	? -6398,14276 -6465,14291
 Eichholzbahn (westlicher Teil): Qualität? Geht es weiter Richtung Westen?	? -7559,14379 -7730,14396 -7978,14419 -8316,14460 -8682,14489
 Eichholzbahn (östlicher Teil): Qualität (laut ADFC-Karte gut geeignet)? Teile der Straße für Kfz gesperrt? Ist das Linksabbiegen in den Klosterbuschweg möglich?	? -6461,14323 -6576,14303 -6611,14302 -6933,14328 -6963,14331 -7180,14351 -7445,14392
+Plauener Str.: gibt es hier einen beschrankten Bahnübergang? (B0)	? 17954,15216
+Jägerstr.: Abschnitt Friedrichswerder bereits fertiggestellt? Was ist mit den anderen Straßen dort?	? 9907,12055 10006,12065
 # added from ampeln-orig
 wirklich? (?)	? 9215,3599
 Wirklich? (?)	? -3775,17087
@@ -992,6 +992,7 @@ Nalepastr.: Betonstr., Eisenbahnschienen (stimmt das?)	? 17043,7512 17211,7265
 Braunschweiger Ufer: asphaltiert (zumindest Richtung Osten von der Rungiusstr. aus:)	? 13077,5893 13483,5973
 Braunschweiger Ufer: Parkweg (zumindest Richtung Westen von der Rungiusstr. aus:)	? 13077,5893 12718,5845
 Busseallee: Kopfsteinpflaster (ist der Abschnitt zwischen Fischerhüttenstr. und Beerenstr. auch Kopfsteinpflaster?)	? 166,3040 82,3166 -266,3648
+(Am Britzer Verbindungskanal): holpriger Feldweg (wahrscheinlich wird das noch nicht asphaltierte Teilstück bis 2006-09-01 fertiggestellt:)	? 14319,5993 14212,6000
 Achenbachstr.: Kopfsteinpflaster (Kopfsteinpflaster eher gut oder normal-mäßig?)	? -3354,14971 -3322,14814
 Gundelfinger Str.: Kopfsteinpflaster (Kopfsteinpflaster eher gut oder normal-mäßig?)	? 18735,9421 18697,9153 18653,8922 18609,8717
 Haßfurter Weg: mäßiger Asphalt (Kopfsteinpflaster oder Asphalt?)	? 11847,18338 11812,18484
@@ -1001,6 +1002,7 @@ Heegermühler Weg: schlechtes Kopfsteinpflaster (Hier wurde als Range "5-15" ange
 Miethepfad: Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9518,-668 9547,-754 9585,-859
 Torweg: unbefestigter Weg (wird demnächst asphaltiert:)	? -8606,14696 -8289,14664
 Salzachstr.: unbefestigt, fester Erdboden (wo genau sind die Kopfsteinpflaster-/Asphaltabschnitte?)	? -2146,3531 -1989,3569
+Bahnhofstr. (Friedenau): guter Belag (Belag: asphaltiert oder betoniert?)	? 6082,7066 6139,7070 6157,7117
 Ortsdurchfahrt Buckow: schlechtes Kopfsteinpflaster (nach den Bauarbeiten vielleicht asphaltiert?)	? 55920,18769 55988,18385 55623,17923 55217,17672
 Jühnsdorf - Mahlow: mäßiges Kopfsteinpflaster, Richtung Süden besser (Richtung Süden sah es teilweise besser aus, wo genau?)	? 9772,-12194 9345,-11425 9472,-11297 9578,-10891 9598,-10356 9854,-9480 10023,-8859
 Sputendorf: teil Kopfsteinpflaster, OK (Stimmt das? Oder ist das Stück in Sputendorf auch asphaltiert?)	? -1316,-7721 -1734,-7716 -2500,-7557

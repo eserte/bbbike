@@ -2090,6 +2090,12 @@ U/S-Bahnstationen ... Kommentare sind schon drinnen.
 cgi-Version: Linux+Netscape: Probleme mit Cookies (Einstellungen)
 =E<gt> noch immer? -> ein Problem habe ich gelöst, war es das?
 
+=item * (M1)
+
+Nice: falls BBBike nur mit Start XOR Ziel angegeben wurde, wird der
+Titel geändert auf E<quot>BBBike: <startname> (als Start)E<quot> bzw.
+das Gleiche mit E<quot>zielE<quot>. Hintergrund: wenn dieses auftritt,
+handelt es sich höchstwahrscheinlich um eine Bookmark-URL.
 
 =back
 

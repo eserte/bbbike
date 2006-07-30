@@ -532,7 +532,6 @@ Otto-Braun-Str.: Mittelstreifen	3nocross 11368,13170 11298,13063 11275,13026 112
 Otto-Braun-Str.: Mittelstreifen	3nocross 11446,13294 11464,13321 11535,13411 11550,13427 11646,13546 11723,13630
 #: by: ^^^
 Karl-Marx-Allee: Mittelstreifen	3nocross 11228,12951 11295,12915 11540,12795 11635,12745
-Zossener Str.: Straﬂenbahntrasse	3nocross 23053,15727 23411,15632 23600,15626
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Neust‰dtische Kirchstr.: An der US-Botschaft	3nocross 9100,12627 9112,12499 9126,12413 9141,12320
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -551,6 +550,7 @@ Am Tierpark: Straﬂenbahntrasse	3nocross 18628,10177 18561,10341 18446,10620
 # Stellen, an denen getragen werden muﬂ:
 # die Zahl hinter dem ":" entspricht ungef‰hr den verlorenen Sekunden
 #
+tragen (ca. 10 Stufen)	0:20 -6442,14286
 tragen (Treppe)	0:30 7621,7105
 tragen (Treppe)	0:30 7655,7096
 tragen (Treppe)	0:30 15571,4168
@@ -638,6 +638,8 @@ tragen (Treppe)	0:30 -7418,181
 ###################################################################
 # Dr‰ngelgitter (BLOCKED_NARROWPASSAGE)
 #
+#: by: (x)qusor
+Dr‰ngelgitter	BNP:5 14314,14841
 Dr‰ngelgitter	BNP:5 20586,10935
 Dr‰ngelgitter, relativ breite Durchfahrt	BNP:3 12363,2367
 Dr‰ngelgitter	BNP:5 15516,6357

@@ -5270,11 +5270,13 @@ EOF
      },
      { from  => 1154203576, # 2006-07-29 22:06
        until => 1183240800, # 2007-07-01 00:00
-       text  => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt (bis Juni 2007) ',
+       text  => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt. Ebenfalls Einbahnstraßen: Teile der Memhardstr. und Dircksenstr. (bis Juni 2007) ',
        type  => 'gesperrt',
        source_id => 'IM_003157',
        data  => <<EOF,
 userdel	1 10920,13139 10781,13002
+userdel	1 10755,13152 10920,13139
+userdel	1 10781,13002 10706,13043
 EOF
      },
     );

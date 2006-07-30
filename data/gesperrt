@@ -681,8 +681,6 @@ Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3 11228,12951 11295,12915 11362,
 Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3 11362,12964 11295,12915 11540,12795
 Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3 11573,12860 11540,12795 11635,12745
 Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3 11295,12915 11540,12795 11573,12860
-Mittenwalder Str. -> Zossener Str.: Straßenbahntrasse	3 23441,15780 23411,15632 23600,15626
-Zossener Str. -> Mittenwalder Str.: Straßenbahntrasse	3 23053,15727 23411,15632 23441,15780
 Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9008,12485 9112,12499 9323,12528
 Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9323,12528 9112,12499 9008,12485
 Mittelstr. -> Mittelstr.: An der US-Botschaft	3 9335,12442 9126,12413 9018,12400
@@ -696,6 +694,7 @@ Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3 6815,8691 6912,8617 
 Hauptstr. -> Parkweg Heinrich-Lassen-Park: Mittelstreifen	3 6765,8480 6912,8617 6815,8691
 Am Tierpark -> Otto-Schmirgal-Str.: Straßenbahntrasse	3 18628,10177 18561,10341 18482,10306
 Otto-Schmirgal-Str. -> Am Tierpark: Straßenbahntrasse	3 18482,10306 18561,10341 18446,10620
+tragen (ca. 10 Stufen)	0:20:-257 -6442,14286
 tragen (Treppe)	0:30:-75 7621,7105
 tragen (Treppe)	0:30:-75 7655,7096
 tragen (Treppe)	0:30:-53 15571,4168
@@ -769,6 +768,7 @@ tragen (Treppe)	0:30:62 3025,13568
 tragen (Treppe, ca. 10 Stufen)	0:30:-12 20933,2390
 tragen (Treppe)	0:30:-43 -633,12739
 tragen (Treppe)	0:30:-118 -7418,181
+Drängelgitter	BNP:5:-60 14314,14841
 Drängelgitter	BNP:5:-210 20586,10935
 Drängelgitter, relativ breite Durchfahrt	BNP:3:66 12363,2367
 Drängelgitter	BNP:5:28 15516,6357

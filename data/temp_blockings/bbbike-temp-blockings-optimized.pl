@@ -875,9 +875,11 @@ userdel	q4 7070,34665 7435,34963 7443,36175
        {
          'source_id' => 'IM_003157',
          'until' => 1183240800,
-         'text' => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt (bis Juni 2007) ',
+         'text' => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt. Ebenfalls Einbahnstraßen: Teile der Memhardstr. und Dircksenstr. (bis Juni 2007) ',
          'from' => 1154203576,
          'data' => 'userdel	1 10920,13139 10781,13002
+userdel	1 10755,13152 10920,13139
+userdel	1 10781,13002 10706,13043
 ',
          'type' => 'gesperrt'
        }

@@ -295,6 +295,7 @@ for (qw(s l r b u w f v e z fz)) { $p_draw{"pp-$_"} = 1} # this list should cove
 $p_draw{'lsa'} = 1;
 $p_far_away{'o'} = 0;
 $str_restrict{'s'}  = {qw(BAB 0 B 1 HH 1 H 1 N 1 NN 1 Pl 0 Br 0)}; # Pl = places, Br = bridges
+# NOTE: This is misused for getting all valid RBahn categories:
 $str_restrict{'r'}  = {qw(RA 1 RB 1 RC 1 R 1 R0 0 RBau 0 RG 1)};
 $str_restrict{'b'}  = {qw(S 1 SA 1 SB 1 SC 1 S0 0 SBau 0)};
 $str_restrict{'u'}  = {qw(U 1 UA 1 UB 1 U0 0 UBau 0)};
@@ -5949,9 +5950,9 @@ EOF
 
 	    if ($abk =~ /^[r]$/) {
 		$c->createLine($x-$rbahn_length, $y, $x+$rbahn_length, $y,
-			       -tags => ["$abk-bg", "$xx,$yy", $pointname]);
+			       -tags => ["$abk-bg", "$xx,$yy", $pointname, "$abk-" . $category . "-bg"]);
 		$c->createText($x, $y,
-			       -tags => ["$abk-fg", "$xx,$yy", $pointname]);
+			       -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $category . "-fg"]);
 	    } elsif ($abk =~ /^[ub]$/) {
 		$c->createImage($x, $y, -tags => ["$abk-fg", "$xx,$yy", $pointname]);
 	    } elsif ($abk eq 'lsa') {
@@ -9546,17 +9547,22 @@ sub plot_symbol {
     my $tag_fg = $args{'-tag_fg'} || "$abk-fg";
     if ($abk eq 'b') {
 	$c->itemconfigure($tag_fg, -image => get_symbol_scale($abk));
-    } elsif ($abk eq 'r') { # XXX contains also old code for S-Bahn
+    } elsif ($abk eq 'r') {
 	my %arg = get_symbol_scale('r');
+	while(my($cat,$v) = each %{ $str_restrict{'r'} }) {
+	    $c->itemconfigure
+		("$abk-$cat-bg",
+		 -fill => ($cat =~ m{^R[ABC]$} ? $category_color{'R'} : $category_color{$cat}),
+		 -capstyle => $capstyle_round,
+		 -width => $arg{-width},
+		);
+	}
 	$c->itemconfigure
-	  ($tag_bg, -fill => ($abk eq 'b' ? $category_color{"SC"} : $category_color{"R"}), -capstyle => $capstyle_round,
-	   -width => $arg{-width});
-	$c->itemconfigure
-	  ($tag_fg, -anchor => 'c', -fill => 'white',
-	   -text => (defined $arg{-font}
-		     ? ($abk eq 'b' ? 'S' : 'R') : ''),
-	   (defined $arg{-font} ? (-font => $arg{-font}) : ()),
-	  );
+	    ($tag_fg, -anchor => 'c', -fill => 'white',
+	     -text => (defined $arg{-font}
+		       ? ($abk eq 'b' ? 'S' : 'R') : ''),
+	     (defined $arg{-font} ? (-font => $arg{-font}) : ()),
+	    );
     } elsif ($abk eq 'u') {
 	if (1) {
 	    $c->itemconfigure($tag_fg, -image => get_symbol_scale($abk));
@@ -15173,12 +15179,12 @@ sub show_route_strname {
 	    } elsif (@coords > 1) {
 		my $compass = uc(BBBikeCalc::canvas_translation(BBBikeCalc::line_to_canvas_direction
 								(@{ $coords[0] }, @{ $coords[1] })));
-		if (defined $Msg::lang && $Msg::lang =~ /^en/) {
-		    $compass =~ s/([NESW])/{N => 'north',
-					    E => 'east',
-					    S => 'south',
-					    W => 'west'}->{$1}/gei;
-		    $richtung = $compass . "ward";
+		if (defined $Msg::lang && $Msg::lang !~ /^de/) {
+		    $compass =~ s/([NESW])/{N => M("nord"),
+					    E => M("ost"),
+					    S => M("süd"),
+					    W => M("west")}->{$1}/gei;
+		    $richtung = $compass . M("wärts");
 		} else {
 		    $richtung = M("nach")." ".$compass;
 		}

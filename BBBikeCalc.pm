@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeCalc.pm,v 1.12 2005/03/19 11:11:58 eserte Exp $
+# $Id: BBBikeCalc.pm,v 1.13 2006/07/30 20:37:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2005 Slaven Rezic. All rights reserved.
@@ -56,13 +56,13 @@ sub opposite_direction { $opposite{$_[0]} }
 # to translate between y-up and y-down coordinate systems
 %canvas_translation =
     ('n' => 's',
-     'e' => 'w',
-     'w' => 'e',
+     'e' => 'e',
+     'w' => 'w',
      's' => 'n',
-     'ne' => 'sw',
-     'sw' => 'ne',
-     'nw' => 'se',
-     'se' => 'nw');
+     'ne' => 'se',
+     'sw' => 'nw',
+     'nw' => 'sw',
+     'se' => 'ne');
 sub canvas_translation { $canvas_translation{$_[0]} }
 
 sub init_wind {
