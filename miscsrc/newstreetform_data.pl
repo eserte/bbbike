@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: newstreetform_data.pl,v 1.22 2005/12/05 22:07:49 eserte Exp $
+# $Id: newstreetform_data.pl,v 1.25 2006/07/31 20:48:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -36,17 +36,48 @@ my $destdir = "/var/tmp/newstreetformdata";
 my $bbd = "/tmp/newstreetform.bbd";
 my $ignore_empty;
 my $ignore_replied;
+my $mail_dir;
+my $start_mail_id;
 my $v;
 GetOptions("usebackupfile=s" => \$backup_file,
 	   "destdir=s" => \$destdir,
 	   "bbd=s" => \$bbd,
 	   "ignoreempty!" => \$ignore_empty,
 	   "ignorereplied!" => \$ignore_replied,
+	   "maildir=s" => \$mail_dir,
+	   "startmailid=i" => \$start_mail_id,
 	   "v!" => \$v,
 	  ) or die <<EOF;
 usage: $0 [-usebackupfile file] [-destdir dir] [-bbd file]
+	  [-maildir directory -startmailid number]
 	  [-ignoreempty] [-ignorereplied] [-v]
 EOF
+
+# REPO BEGIN
+# REPO NAME save_pwd /home/e/eserte/work/srezic-repository 
+# REPO MD5 0f7791cf8e3b62744d7d5cfbd9ddcb07
+
+=head2 save_pwd(sub { ... })
+
+=for category File
+
+Save the current directory and assure that outside the block the old
+directory will still be valid.
+
+=cut
+
+sub save_pwd (&) {
+    my $code = shift;
+    require Cwd;
+    my $pwd = Cwd::cwd();
+    eval {
+	$code->();
+    };
+    my $err = $@;
+    chdir $pwd or die "Can't chdir back to $pwd: $!";
+    die $err if $err;
+}
+# REPO END
 
 mkpath $destdir if !-d $destdir;
 # This symlink is for my webaccess (/~eserte/tmp/newstreetformdata)
@@ -67,7 +98,7 @@ my %file2status;
 
 my $c = Safe->new;
 
-if (!@ARGV && !$backup_file) {
+if (!@ARGV && !$backup_file && !$mail_dir) {
     my($header, $data) = parse_fh(\*STDIN);
     if (!keys %$data) {
 	die "Keine Daten gefunden";
@@ -76,6 +107,25 @@ if (!@ARGV && !$backup_file) {
 } else {
     if ($backup_file) {
 	@ARGV = split_backupfile($backup_file);
+    }
+
+    if ($mail_dir) {
+	if (!$start_mail_id) {
+	    die "-startmailid is missing, mandatory with -maildir!";
+	}
+	my @files;
+	save_pwd {
+	    chdir $mail_dir or die "Cannot change to $mail_dir: $!";
+	    for my $f (glob("*")) {
+		next if $f !~ /^\d+$/;
+		next if $f < $start_mail_id;
+		push @files, "$mail_dir/$f";
+	    }
+	};
+	if (!@files) {
+	    die "No files found";
+	}
+	@ARGV = @files;
     }
 
     require Gnus::Newsrc;
@@ -131,7 +181,7 @@ if (!@ARGV && !$backup_file) {
 	    next;
 	}
 	my $output_file = $destdir . "/" . $base;
-	output($data, $output_file, prev => $prev_link);
+	output($data, $output_file, prev => $prev_link, header => $header);
 	$prev_link = basename $output_file;
 	push @output_files, $output_file;
 	$file2data{$output_file} = $data;
@@ -216,8 +266,9 @@ sub output {
     my $extra_html = "";
 
     my $bbd_suggestion;
+    my $name;
     {
-	my $name = $data->{author};
+	$name = $data->{author};
 	if (!$name) {
 	    ($name = $data->{email}) =~ s{\@.*}{...};
 	}
@@ -233,6 +284,39 @@ $strname: $cat_text\t$cat
 EOF
     }
     $extra_html .= "<textarea rows='4' cols='80'>" . encode_entities($bbd_suggestion) . "</textarea><br>";
+
+    my $header = $args{header};
+    if (1 && $header) {
+	my $reply_to = $header->{"reply-to"};
+	my $body =<<EOF;
+Hallo $name,
+
+danke für deinen Eintrag. Die Straße wird demnächst bei BBBike verfügbar
+sein.
+
+Gruß,
+    das BBBike-Team
+EOF
+	if (!$reply_to) {
+	    $reply_to = 'info@bbbike.de';
+	    $body = 'Hallo Slaven';
+	}
+	$extra_html .= <<EOF;
+<hr>Mail:<br>
+<form action="http://bbbike.radzeit.de/newstreetformdata/sendmail.cgi">
+<textarea rows="4" cols="80" name="emailheader">
+To: $reply_to
+Subject: Re: $header->{"subject"}
+References: $header->{"message-id"}
+</textarea><br>
+<textarea rows="4" cols="80" name="emailbody">
+$body
+</textarea><br>
+<input type="submit" value="Mail senden">
+</form>
+<hr>
+EOF
+    }
 
     local $Data::Dumper::Sortkeys = 1;
     $extra_html .= "\n<pre>" . encode_entities(Dumper($data)) . "</pre>";
@@ -353,6 +437,11 @@ EOF
 
 sub my_html_footer {
     <<EOF;
+<h2>Legende der Farben</h2>
+<div class="recdone">Mail bereits bearbeitet</div>
+<div class="recmaybedone">Mail höchstwahrscheinlich bearbeitet</div>
+<div class="recundone">Mail unbearbeitet</div>
+<div class="rectick">Um Rückfrage gebeten</div>
 </body>
 </html>
 EOF
@@ -363,4 +452,22 @@ __END__
 
 Best called as:
 
-~/src/bbbike/miscsrc/newstreetform_data.pl ~/Mail/bbbike/[56789]??? -ignoreempty -ignorereplied
+   ~/src/bbbike/miscsrc/newstreetform_data.pl -maildir ~/Mail/bbbike -startmailid 5763 -ignoreempty -ignorereplied
+
+Then direct your browser to:
+
+    file:/tmp/newstreetformdata/newstreetindex.html
+
+Or deploy to radzeit server:
+
+    rsync -avz -e "ssh -2 -p 5022" /var/tmp/newstreetformdata/ root@bbbike.radzeit.de:/var/www/domains/radzeit.de/www/public/newstreetformdata/
+
+And direct your browser to:
+
+    http://bbbike.radzeit.de/newstreetformdata/newstreetindex.html
+
+----------------------------------------------------------------------
+
+Formerly I recommended to use
+
+    ~/src/bbbike/miscsrc/newstreetform_data.pl ~/Mail/bbbike/[56789]??? -ignoreempty -ignorereplied

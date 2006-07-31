@@ -1488,6 +1488,7 @@ Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068
 #: by: Paul (no email):
 Eulerstr.: Asphalt	Q0 9268,16228 9498,16480
 #: by: anonymous vvv
+Arberstr.: m‰ﬂiger Beton	Q1 19400,9110 19407,9232 19423,9500 19437,9653 19450,9728
 Zweibr¸cker Str.: guter Asphalt	Q0 -4492,15010 -4352,15063 -4338,15137 -4332,15179 -4317,15298 -4308,15411 -4294,15525 -4283,15639 -4254,15813
 Ulricistr.: schlechtes Kopfsteinpflaster	Q3 -7714,529 -7556,542 -7437,603 -7330,641
 B¸chsenweg: Asphalt	Q0 8066,18754 8045,18804 7917,18834 7693,18781 7690,18716 7758,18535
@@ -2408,7 +2409,7 @@ Rotkopfweg: Asphalt	Q0 10966,3712 10917,3367
 #: by: Sven Dreiﬂig:
 Hallandstr.: Kopfsteinpflaster	Q2 11598,16878 11285,16879 10999,16830
 #: by: Jan (Smile...)
-Kornburger Weg: schlechter Asphalt	Q1 -3280,17120 -3326,16553
+Kornburger Weg: schlechter Asphalt	Q1 -3309,17153 -3326,16553
 #: by: Martin Dittmar: vvv
 Am Berl: Asphalt	Q0 16923,18650 16817,18809
 Am Berl: Asphalt	Q0 16799,18556 16746,18632 16793,18668 16740,18751
@@ -3749,12 +3750,15 @@ Klutstr.: m‰ﬂiges Kopfsteinpflaster	Q2 26057,5553 25757,5536
 Blenheimstr.: guter Beton	Q0 20467,15339 20565,15271 20617,15239 20687,15193 20904,15178 20970,15175 20976,15129
 #: by: knut B. (flanter):
 Mittenwalder Str. (Hellersdorf): guter Beton	Q0 23411,15632 23441,15780 23462,15886 23558,15888
-#: by: stefan ruedel:
+#: by: stefan ruedel: vvv
 Hackbuschstr.: guter Asphalt	Q0 -6933,14328 -6922,14437 -6921,14459 -6913,14576 -6898,14715 -6890,14840 -6881,14975 -6861,15129
+Eichholzbahn: asphaltiert	Q0 -6461,14323 -6576,14303
+Eichholzbahn: asphaltiert	Q0 -6576,14303 -6611,14302 -6933,14328 -6963,14331 -7180,14351 -7445,14392
+#: by: ^^^
 #: by: Tanja Bieligk:
 Haﬂlingerweg: Asphalt	Q0 7644,17054 7893,17064 7924,17039
 #: by: (x)qusor:
-(Michelangelostr. - Straﬂe 106): m‰ﬂiger Beton	Q1 13838,15113 14314,14841
+(Michelangelostr. - Straﬂe 106): m‰ﬂiger Beton	Q1 13838,15113 14060,14986 14314,14841
 #: note: qusor hat "part" f¸r den restlichen Abschnitt angegeben, und wahrscheinlich mir mit "Feldweg" recht gegeben:
 (Michelangelostr. - Straﬂe 106): Feldweg	Q2 14314,14841 14592,14682
 #: by: Annika Weidler:
@@ -3779,6 +3783,12 @@ Kleinmachnower Weg: Asphalt	Q0 292,-36 665,85 1345,184
 #: by: ^^^
 #: by: Alex (hesse):
 Kˆrnerstr. (Spandau): m‰ﬂiger Asphalt	Q1 -3043,15207 -2915,15152 -2853,15127
+#: by: Hendrike Hellmann:
+Am Brandpfuhl: m‰ﬂiger Asphalt	Q1 11937,4353 12015,4038
+#: by: W.Peters:
+Michelstadter Weg: Asphalt	Q0 -3085,17504 -3092,17420 -3117,17137 -3129,16931 -3151,16657
+#: by: Meike Hempel:
+Zelterstr.: guter Asphalt	Q0 11967,15700 11849,15760 11784,15800
 #: by: Andreas M¸hlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827

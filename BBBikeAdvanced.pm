@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.156 2006/07/29 12:12:04 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.157 2006/07/31 19:12:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1199,6 +1199,8 @@ sub set_line_coord_interactive {
 			 );
     return if !defined $t;
 
+    my $map = "standard";
+
     my $set_sub = sub {
 	my(@mark_args) = @_;
 	my @coords = ();
@@ -1206,7 +1208,11 @@ sub set_line_coord_interactive {
 						  ? "CLIPBOARD"
 						  : "PRIMARY"));
 	while ($s =~ /([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
-	    push @coords, [$1,$2];
+	    my($x,$y) = ($1,$2);
+	    if ($map eq 'polar') {
+		($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+	    }
+	    push @coords, [$x,$y];
 	}
 	my @line_coords;
 	foreach (@coords) {
@@ -1228,6 +1234,14 @@ sub set_line_coord_interactive {
     $b->bind("<3>" => sub {
 		 $set_sub->(-dont_center => 1);
 	     });
+
+    $t->Label(-text => "Koordinatensystem:")->pack(-anchor => "w");
+    $t->Radiobutton(-variable => \$map,
+		    -value => "standard",
+		    -text => "Standard (BBBike)")->pack(-anchor => "w");
+    $t->Radiobutton(-variable => \$map,
+		    -value => "polar",
+		    -text => "WGS 84")->pack(-anchor => "w");
 }
 
 sub coord_to_markers_dialog {

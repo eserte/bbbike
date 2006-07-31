@@ -2097,6 +2097,12 @@ Titel geändert auf E<quot>BBBike: <startname> (als Start)E<quot> bzw.
 das Gleiche mit E<quot>zielE<quot>. Hintergrund: wenn dieses auftritt,
 handelt es sich höchstwahrscheinlich um eine Bookmark-URL.
 
+=item * (H1)
+
+Idea by Andreas Mühlhausen: beim Anzeigen der Ausweichroute auch die
+Basisdaten (Länge, Fahrzeit, Ampeln) der ursprünglichen Route
+anzeigen, sowie ein Diff zwischen den beiden Routen anzeigen.
+
 =back
 
 =head1 BBBike and Googlemaps/similar

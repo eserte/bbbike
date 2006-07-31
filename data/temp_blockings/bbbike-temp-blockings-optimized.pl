@@ -779,14 +779,7 @@ userdel	q4 7070,34665 7435,34963 7443,36175
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1154296800,
-         'text' => 'L 362 Müncheberg-Wulkow OD Obersdorf Kanal- u. Straßenbau Vollsperrung 19.07.2006-30.07.2006 ',
-         'from' => 1153173600,
-         'data' => 'userdel	q4 62444,15991 62380,16226 62104,16631
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1156802400,
          'text' => 'L 601 Berliner Str. OL Finsterwalde Sängerfest Vollsperrung 25.08.2006-28.08.2006 ',
@@ -863,15 +856,7 @@ userdel	q4 7070,34665 7435,34963 7443,36175
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_003088',
-         'until' => 1154296800,
-         'text' => 'Rheinstr. (Schöneberg) in beiden Richtungen zwischen Saarstr. und Walter-Schreiber-Platz Veranstaltung, Straße vollständig gesperrt (bis 30.07.2006 nachts) ',
-         'from' => 1154165181,
-         'data' => 'userdel	2 5370,6500 5424,6584 5533,6753 5654,6941
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_003157',
          'until' => 1183240800,

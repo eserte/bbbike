@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.247 2006/07/29 12:12:22 eserte Exp eserte $
+# $Id: bbbike,v 3.248 2006/07/31 19:14:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.247 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.248 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4195,7 +4195,7 @@ if (defined $set_mode && $set_mode eq 'edit') {
     if ($init_with_edittools) {
 	require BBBikeAdvanced;
 	set_line_coord_interactive(-geometry => "-0+0");
-	coord_to_markers_dialog(-geometry => "-0+40");
+	coord_to_markers_dialog(-geometry => "-0+120");
 	require BBBikeEdit;
 	BBBikeEdit::editmenu($top, -geometry => "-0-0");
     }
