@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: newstreetform_data.pl,v 1.25 2006/07/31 20:48:27 eserte Exp $
+# $Id: newstreetform_data.pl,v 1.27 2006/08/01 19:40:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -181,7 +181,7 @@ if (!@ARGV && !$backup_file && !$mail_dir) {
 	    next;
 	}
 	my $output_file = $destdir . "/" . $base;
-	output($data, $output_file, prev => $prev_link, header => $header);
+	output($data, $output_file, prev => $prev_link, header => $header, thisid => $base);
 	$prev_link = basename $output_file;
 	push @output_files, $output_file;
 	$file2data{$output_file} = $data;
@@ -267,6 +267,7 @@ sub output {
 
     my $bbd_suggestion;
     my $name;
+    my $strname = $data->{supplied_strname} || "";
     {
 	$name = $data->{author};
 	if (!$name) {
@@ -275,7 +276,6 @@ sub output {
 	if (!$name) {
 	    $name = "anonymous";
 	}
-	my $strname = $data->{supplied_strname} || "";
 	my $cat_text = $data->{Qdesc_1} || "";
 	my $cat = $data->{Qcat_1} || "";
 	$bbd_suggestion = <<EOF;
@@ -288,26 +288,32 @@ EOF
     my $header = $args{header};
     if (1 && $header) {
 	my $reply_to = $header->{"reply-to"};
+	my $cc = 'info@bbbike.de';
 	my $body =<<EOF;
 Hallo $name,
 
-danke für deinen Eintrag. Die Straße wird demnächst bei BBBike verfügbar
-sein.
+danke für deinen Eintrag. Die Straße "$strname" wird demnächst bei
+BBBike verfügbar sein.
 
 Gruß,
     das BBBike-Team
+
+[Eintrag #$args{thisid}]
 EOF
 	if (!$reply_to) {
 	    $reply_to = 'info@bbbike.de';
+	    undef $cc;
 	    $body = 'Hallo Slaven';
 	}
+	my $subject = "Re: $header->{subject}";
+	my $references = qq{$header->{"message-id"}};
 	$extra_html .= <<EOF;
 <hr>Mail:<br>
 <form action="http://bbbike.radzeit.de/newstreetformdata/sendmail.cgi">
 <textarea rows="4" cols="80" name="emailheader">
 To: $reply_to
-Subject: Re: $header->{"subject"}
-References: $header->{"message-id"}
+Subject: $subject
+References: $references
 </textarea><br>
 <textarea rows="4" cols="80" name="emailbody">
 $body
@@ -315,6 +321,19 @@ $body
 <input type="submit" value="Mail senden">
 </form>
 <hr>
+EOF
+	my $mailto_link = "mailto:$reply_to?";
+	require CGI;
+	CGI->import('-oldstyle_urls');
+	$body =~ s{\n}{ \r\n}g; # really?
+	my $q = CGI->new({subject => $subject,
+			  references => $references,
+			  ($cc ? (cc => $cc) : ()),
+			  body => $body,
+			 });
+	$mailto_link .= $q->query_string;
+	$extra_html .= <<EOF;
+<div><a href="$mailto_link">Mail per Browser-Mailprogramm eingeben und senden</a> (aber möglichst das Formular verwenden!)</div>
 EOF
     }
 
