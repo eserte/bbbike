@@ -16,11 +16,6 @@ Legend:
 
 =item * (M5)
 
-Bug: beginning orientation in routelist is wrong (east instead of
-west).
-
-=item * (M5)
-
 Bug: drawing city streets only -> choosing "Aktive Sperrungen zeichnen und
 beachten" -> drawing also region streets -> now the "Aktive Sperrungen" are
 lost! They have to re-build if the checkbox is set to on and make_net is
@@ -1435,7 +1430,7 @@ GPS-Tracks zusammenfassen.
 
 Pressearchiv sichten:
 L<http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv.shtml?arch=arch_0509>
-(zwischen September 2003 und Juni 2006 schon durchgearbeitet)
+(vor September 2003 fehlt noch)
 
 Weitere Bezirkspressearchive:
 

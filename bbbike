@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.248 2006/07/31 19:14:36 eserte Exp $
+# $Id: bbbike,v 3.248 2006/07/31 19:14:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -6523,7 +6523,8 @@ sub std_transparent_binding {
 		     && $use_c_balloon > 1) {
 		     # XXX before each $c_ballon->Popup should be this line (maybe move into sub?):
 		     if ($leave_after) { $leave_after->cancel; undef $leave_after }
-		     $c_balloon->Popup($str);
+		     if ($devel_host) { $str = balloon_info_from_all_tags($c) }#XXX
+		     if (defined $str) { $c_balloon->Popup($str); } # XXX if defined
 		 }
 	     });
     if ($_[0] =~ /^(show$|lsa-)/) { # XXX this special handling should go away
@@ -11488,7 +11489,12 @@ sub enterstr {
     if (defined $c_balloon) {
 	if (@l && $use_c_balloon > 1) {
 	    if ($leave_after) {	$leave_after->cancel; undef $leave_after }
-	    $c_balloon->Popup(join(" / ", @l));
+	    my $str;
+	    if ($devel_host) { $str = balloon_info_from_all_tags($c) }#XXX
+	    if (!defined $str) {
+		$str = join(" / ", @l);
+	    }
+	    $c_balloon->Popup($str);
 	} else {
 	    $c_balloon->Deactivate;
 	}
