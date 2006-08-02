@@ -559,6 +559,20 @@ sub _get_converter {
     $converter;
 }
 
+sub convert_DMM_to_DDD {
+    my($in) = @_;
+    if ($in =~ /^([NESW]?)(\d+)\s(\d+\.?\d*)$/) {
+	my($dir,$deg,$min) = ($1,$2,$3);
+	if (defined $dir && $dir =~ /[SW]/) {
+	    $deg *= -1;
+	}
+	$deg += $min/60;
+	return $deg;
+    } else {
+	warn "Can't parse <$in>, should be in `N52 30.8' (DMM) format";
+    }
+}
+
 sub convert_DMS_to_DDD {
     my($in) = @_;
     if ($in =~ /^([NESW]?)(\d+)\s(\d+)\s(\d+\.?\d*)$/) {
@@ -569,7 +583,7 @@ sub convert_DMS_to_DDD {
 	$deg += $min/60 + $sec/3600;
 	return $deg;
     } else {
-	warn "Can't parse <$in>, should be in `N52 30 23.8' format";
+	warn "Can't parse <$in>, should be in `N52 30 23.8' (DMS) format";
     }
 }
 
@@ -583,7 +597,7 @@ sub convert_DDD_to_DDD {
 	}
 	return $ddd;
     } else {
-	warn "Can't parse <$in>, should be in `N52.49857' format";
+	warn "Can't parse <$in>, should be in `N52.49857' (DDD) format";
     }
 }
 
