@@ -2510,11 +2510,11 @@ EOF
      },
      { from  => 1149119975, # 2006-06-01 01:59
        until => 1159653599, # 2006-09-30 23:59
-       text  => 'Swinemünder Brücke: Baustelle Straße vollständig gesperrt (bis Ende 09.2006) ',
+       text  => 'Swinemünder Brücke: Baustelle Straße für Autos vollständig gesperrt, Radfahrer und Fußgänger können passieren (bis Ende 09.2006) ',
        type  => 'handicap',
        source_id => 'IM_002360',
        data  => <<EOF,
-userdel	q4 9494,15998 9583,15851
+userdel	q2 9494,15998 9583,15851
 EOF
      },
      { from  => 1124137069, # 2005-08-15 22:17

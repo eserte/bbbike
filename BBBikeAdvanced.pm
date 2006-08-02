@@ -3923,7 +3923,7 @@ sub balloon_info_from_all_tags {
 	my(@tags) = $c->gettags($item);
 require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@tags],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 
-	if ($tags[0] =~ m{^(s|l|comm-route|qs|ql|hs|hl|fz|u|b|r|f|w|rw)$}) {
+	if ($tags[0] =~ m{^(s|l|comm-route|qs|ql|hs|hl|fz|u|b|r|f|w|rw|temp_sperre_s)$}) {
 	    my $label = $tags[1];
 	    if ($tags[0] eq 'rw') { # Special handling for cyclepaths
 		(my $rw_code) = $tags[2] =~ /^rw-(RW\d+)/;

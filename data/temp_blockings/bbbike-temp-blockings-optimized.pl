@@ -5,9 +5,9 @@ push @temp_blocking,
        {
          'source_id' => 'IM_002360',
          'until' => 1159653599,
-         'text' => 'Swinemünder Brücke: Baustelle Straße vollständig gesperrt (bis Ende 09.2006) ',
+         'text' => 'Swinemünder Brücke: Baustelle Straße für Autos vollständig gesperrt, Radfahrer und Fußgänger können passieren (bis Ende 09.2006) ',
          'from' => 1149119975,
-         'data' => 'userdel	q4 9494,15998 9583,15851
+         'data' => 'userdel	q2 9494,15998 9583,15851
 ',
          'type' => 'handicap'
        },

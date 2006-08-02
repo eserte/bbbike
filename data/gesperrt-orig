@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.111 2006/08/02 21:20:34 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.112 2006/08/02 21:55:00 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -551,6 +551,7 @@ Am Tierpark: Straßenbahntrasse	3nocross 18628,10177 18561,10341 18446,10620
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 #
+tragen (7 Stufen)	0:20 9762,16119
 tragen (ca. 10 Stufen)	0:20 -6442,14286
 tragen (Treppe)	0:30 7621,7105
 tragen (Treppe)	0:30 7655,7096
