@@ -1000,9 +1000,9 @@ EOF
        text  => 'Ruppiner Chaussee (Hennigsdorf) Kreuzung Hennigsdorfer Straße wegen Bauarbeiten gesperrt (bis 17.10.2004)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -1809,24343 -1591,24124 -1214,23742
-userdel	q4 -1809,24343 -1859,24219 -1879,24174
-userdel	q4 -1809,24343 -1912,24442
+userdel	q4 -1854,24385 -1591,24124 -1214,23742
+userdel	q4 -1854,24385 -1896,24275 -1935,24187
+userdel	q4 -1854,24385 -1912,24442
 EOF
      },
      { from  => undef, # 
@@ -3118,7 +3118,7 @@ userdel	2 -12262,-612 -12190,-775
 userdel	2 -12262,-612 -12545,-698
 userdel	2 -12575,-1031 -12768,-1069
 userdel	2 -12575,-1031 -12553,-1025
-userdel	2 -12553,-1025 -12552,-1233 -12553,-1278
+userdel	2 -12553,-1025 -12552,-1233 -12549,-1277
 userdel	2 -12078,-1068 -12070,-1153
 userdel	2 -12078,-1068 -12020,-1062
 userdel	2 -12078,-1068 -12231,-1078

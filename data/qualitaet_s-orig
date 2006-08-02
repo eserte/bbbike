@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.132 2006/07/24 12:53:57 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.133 2006/08/02 21:20:40 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -681,7 +681,7 @@ Hegemeisterweg: Kopfsteinpflaster	Q2 17217,8377 17520,8219
 Hegemeisterweg: Waldweg, teilweise mit Kopfsteinen	Q2 17803,8079 17987,7973 18387,7742
 (Am Walde - Hegemeisterweg): Waldweg	Q2 17775,7874 17987,7973
 Am Fichtenberg: Kopfsteinpflaster, OK	Q1 4337,5108 4262,5168 4165,5243 4134,5284
-Tietzenweg: mäßiges Kopfsteinpflaster	Q2 3643,4232 3768,4045 3867,3925 4132,3552 4354,3359 4479,3311
+Tietzenweg: mäßiges Kopfsteinpflaster	Q2 3643,4232 3768,4045 3867,3925 4004,3729 4132,3552 4354,3359 4479,3311
 Viktoriastr.: schlechtes Kopfsteinpflaster	Q3 3768,4045 3926,4001
 Augustastr.: Kopfsteinpflaster, OK	Q1 4235,3999 4548,4025
 Maxstr.: mäßiges Kopfsteinpflaster	Q2 7786,15785 7744,15831
@@ -1333,11 +1333,11 @@ Uferweg am Tegeler Hafen: Gehwegplatten	Q0 1523,20412 1572,20412 1617,20393 1675
 (Karolinenstr. - Waidmannsluster Damm): Waldweg, hügelig und holprig	Q3 1716,20915 1819,21116 1851,21328 1800,21368
 (Tegeler Fließ - Hermsdorfer Damm): Waldweg	Q2 2336,21546 2166,21468 2004,21502 1942,21564
 (Weg am Tegeler Fließ): Waldweg, OK	Q2 3142,22170 2771,21957 2734,21890 2743,21803 2678,21669 2577,21595 2445,21573 2361,21512
-(Egidysteg - Mühlenfeldstr.): Waldweg, OK	Q2 3138,22314 3094,22233 3124,22198
+(Egidysteg - Mühlenfeldstr.): Waldweg, OK	Q2 3134,22292 3094,22233 3124,22198
 #: note: Eintrag von Nils Fiedler, einige Abschnitte verifiziert
-Mühlenfeldstr.: Betonstraße	Q0 3727,22868 3743,22642 3747,22582 3243,22311 3138,22314 2587,22332
+Mühlenfeldstr.: Betonstraße	Q0 3727,22868 3743,22642 3753,22534 3728,22507 3601,22484 3531,22440 3353,22348 3243,22311 3134,22292 3046,22292 2757,22310 2587,22332
 (Weg am Tegeler Fließ): Waldweg, OK	Q2 3767,22466 3734,22402 3670,22396 3631,22417 3528,22405 3347,22282 3243,22311
-(Tegeler Fließ - Mühlenfeldstr.): Waldweg, OK	Q2 3747,22582 3767,22466
+(Tegeler Fließ - Mühlenfeldstr.): Waldweg, OK	Q2 3753,22534 3767,22466
 Götzestr.: gutes Kopfsteinpflaster	Q1 3908,22709 3743,22642
 (Weg am Tegeler Fließ): Waldweg, OK	Q2 4251,22829 4166,22725 4114,22690 4087,22714 4044,22690
 (Weg am Tegeler Fließ): Waldweg, viele matschige Stellen	Q3 5645,23968 5409,23816 5297,23633 5214,23420 5242,23156 5205,23094 5127,23042 5054,23025 4801,22897 4718,22891 4626,22914
@@ -1620,7 +1620,7 @@ Carl-Scheele-Str.: Asphalt	Q0 19198,2844 19009,2857 18904,2865 18712,2756
 #: note: In der ADFC-Karte auch als "gut geeignet" ausgewiesen:
 Cottbusser Str.: guter Asphalt	Q0 23097,14855 23279,14785 23736,14844
 Andersenstr.: Kopfsteinpflaster	Q2 10300,16521 10315,16651
-Schönbaumer Weg: Verbundsteinpflaster	Q1 -2364,22996 -2123,22937
+Schönbaumer Weg: Verbundsteinpflaster	Q1 -2412,22996 -2123,22937
 #: add_fragezeichen: Hier widerspricht die ADFC-Karte und meint "gut geeignet"
 Margueritenring: Kopfsteinpflaster	Q2 16491,2239 16807,2245 16898,2239 17009,2095 17060,2087 17382,2064 17421,2090
 #: note: der anonyme Mensch hat auch Radwege eingetragen
@@ -2313,7 +2313,7 @@ Paulsenstr.: Asphalt	Q0 4423,6477 4500,6612 4528,6711
 #: note: laut ADFC-Karte "mäßig geeignet":
 (Spreeufer): wassergebundene Decke	Q1 -288,13279 -193,13318 303,13287 700,13371 984,13475 1162,13484
 #: note: laut ADFC-Karte "mäßig geeignet" fuer die gesamte Moltkestr.:
-Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4596,3738 4487,3802 4235,3999
+Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4596,3738 4487,3802 4293,3951 4235,3999
 Moltkestr.: eher schlechtes Kopfsteinpflaster	Q3 4235,3999 4092,4217 3926,4438
 Zionskirchstr.: Kopfsteinpflaster	Q1 10101,14455 10277,14350
 #: XXX Teil von Maikäferweg bis Radelandstr. laut "Berliner Umland" "witterungsabhängiger Weg"
@@ -2434,7 +2434,7 @@ Straßburger Str.: Kopfsteinpflaster	Q2 10902,13604 11060,13865 11160,14002 11262
 #: by: ^^^
 #: by: betti (grafik@...):
 #: XXX Eintrag war "gutes" Kopfsteinpflaster. Wie gut?
-Potsdamer Str. (Lichterfelde): Kopfsteinpflaster	Q2 3193,3793 3375,3544 3646,3154 3640,3023 3639,2816
+Potsdamer Str. (Lichterfelde): Kopfsteinpflaster	Q2 3193,3793 3375,3544 3492,3371 3646,3154 3640,3023 3639,2816
 #: by: harald kuendgen:
 Dessauerstr.: mäßiges Kopfsteinpflaster	Q2 6725,2494 6651,2479 6465,2356 6232,2201 6190,2200 6021,2071 5865,1975
 #: by: funda: vvv
@@ -4591,5 +4591,33 @@ Kehler Weg: asphaltiert	Q0 2005,4772 2025,4935
 Bitscher Str.: asphaltiert	Q0 1934,4788 1939,4949 1969,4978
 Darßer Str.: mäßiger Beton	Q1 15281,18025 15661,17966 16292,17832 16492,17787 16671,17672 16837,17440
 Gehrenseestr.: Beton	Q0 18313,16643 18730,16973
-#: by: Jens Velten:
+#: by: Jens Velten [AM]
 Heubergerweg: Beton	Q1 17387,4446 17278,4534 17225,4568 17171,4575 17125,4565 17075,4525 17025,4462 16909,4309 16878,4268
+#: by: Katte: [AM] vvv
+Winterstr.: Asphalt	Q0 8124,18105 8296,18145
+Winterstr.: Asphalt	Q0 8361,18160 8504,18194 8605,18216
+Hausotterplatz: mäßiger Asphalt	Q2 8320,18185 8299,18172 8296,18145 8310,18127 8334,18127 8355,18142 8361,18160 8345,18182 8320,18185
+Kamekestr.: Kopfsteinpflaster	Q2 8286,18331 8307,18242 8320,18185
+#: by: ^^^
+#: by: Petra Friedrich [AM]
+Elsenbruchstr.: Asphalt	Q1 3142,23004 3168,22959 3198,22720 3214,22578 3243,22311
+#: by: Andreas Wenzel [AM] vvv
+An der Aussicht: Asphalt	Q2 -1515,23807 -1492,23822 -1739,24095 -1768,24075
+Zur Sonnenhöhe: Asphalt	Q2 -1896,24275 -1768,24075 -1639,23915 -1515,23807
+#: by: ^^^
+#: by: Kahless [AM]
+Schillerring: Kopfsteinpflaster	Q2 6922,18024 6793,18115 6671,18132 6579,18136 6560,18135
+#: by: Freddy [AM]
+Bootshausweg: fester Sandweg	Q1 -1036,16593 -1073,16610 -1067,16635 -1092,16659 -1156,16689 -1190,16714 -1214,16745 -1229,16773 -1406,16907 -1465,16957 -1520,16989 -1564,17001 -1610,17007 -1664,17009 -1743,16990 -1723,16973 -1690,16971 -1676,16957 -1673,16939 -1725,16878 -1704,16870 -1684,16853 -1655,16813
+#: by Heiner Roettger [AM]
+Holbeinstr. (Lichterfelde): Asphalt	Q1 3348,3278 3492,3371 3626,3465 3789,3576 4004,3729 4134,3825 4293,3951
+#: by: Michael [AM]
+Coswiger Str.: Asphalt	Q1 19187,13850 19067,13818 19000,13801 18871,13796
+#: by: Karin Millonig [AM]
+Rufacher Weg: mäßiger Asphalt	Q2 12207,1704 12179,1758 12160,1817 12255,2058 12582,2129 12738,2162
+#: by: Anicó [AM] vvv
+Weitbrucher Str.: Verbundsteinpflaster	Q2 10845,1026 11045,1028 11257,995 11573,825
+Weitbrucher Str.: Verbundsteinpflaster	Q2 11596,864 11573,825 11517,715 11490,664
+#: by: ^^^
+#: by: Nikolaus [AM]
+Kornmesserstr.: Kopfsteinpflaster	Q3 4065,2576 3932,2660 3737,2671

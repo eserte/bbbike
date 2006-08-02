@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Brandenburg und weiterer Umgebung
-#: version: $Id: qualitaet_l-orig,v 4.59 2006/07/25 19:53:24 eserte Exp eserte $
+#: version: $Id: qualitaet_l-orig,v 4.60 2006/08/02 21:20:39 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen; schlechte Straße; 01.11.96-unbekannt	Q3 -50149,24689 -50048,24475 -49883,24097 -50010,23562 -50201,23411 -50255,22794 -50938,21256
@@ -1131,7 +1131,7 @@ Alte Potsdamer Landstr.: Feldweg	Q2 -3284,-1659 -3684,-1820 -3968,-1823
 Alte Potsdamer Landstr.: Asphalt	Q0 -3968,-1823 -4075,-1837
 Alte Potsdamer Landstr.: teilweise grobes Kopfsteinpflaster, teilweise Sandweg	Q2 -4075,-1837 -5984,-2062
 Bahnhofstr.: Asphalt	Q0 -4075,-1837 -4032,-1937
-Bahnhofstr.: Kopfsteinpflaster	Q2 -4032,-1937 -3906,-2167 -3650,-2609
+Bahnhofstr.: Kopfsteinpflaster	Q2 -4032,-1937 -3917,-2146 -3895,-2189 -3650,-2609
 An der Parforceheide: gutes Verbundsteinpflaster	Q0 -7421,-2487 -7421,-2428 -7510,-2276 -7610,-2245 -7651,-2262 -7708,-2437
 Postenweg Parforceheide: Asphalt mit groben Fugen	Q1 -7610,-2245 -7798,-1990 -7800,-1956
 Postenweg Parforceheide: feiner Schotter	Q2 -7800,-1956 -7821,-1890
@@ -1176,7 +1176,10 @@ bei Zechow: Asphalt	Q0 -26350,70262 -24687,71412 -24162,71612
 dt. Alleenstraße: Asphalt	Q0 -24335,65501 -22567,67134 -21150,67860
 An der Alten Fahrt: Parkweg	Q1 -12600,-1706 -12437,-1506 -12265,-1434 -12114,-1409 -12110,-1379
 Burgstr.: Kopfsteinpflaster	Q2 -12110,-1379 -12062,-1378
-Am Alten Markt: Asphalt	Q0 -12666,-1311 -12617,-1457 -12589,-1556
+Burgstr.: Beton 	Q1 -12500,-1437 -12422,-1416 -12281,-1378 -12265,-1434
+Burgstr.: Beton 	Q1 -12526,-1356 -12446,-1334 -12403,-1323
+Burgstr.: Beton 	Q1 -12422,-1416 -12446,-1334
+Am Alten Markt: Asphalt	Q0 -12666,-1311 -12657,-1338 -12614,-1471 -12589,-1556
 Ebräerstr.: Kopfsteinpflaster, evtl. OK	Q2 -12992,-1222 -12854,-1243
 Wilhelm-Staab-Str.: Kopfsteinpflaster	Q2 -13003,-1343 -12992,-1222 -12984,-1110
 Eltesterstr.: Kopfsteinpflaster	Q2 -12062,-1378 -11981,-1390
@@ -1476,3 +1479,4 @@ Neuenfeld - Züsedom: schlechtes Kopfsteinpflaster	Q3 49887,113837 50187,114312 5
 Züsedom - Fahrenwalde: sehr schlechtes Kopfsteinpflaster, kaum Sandbanketten	Q3 50240,116023 50417,115935 50917,115807 51429,115904 51730,116017 52760,115828
 Goethestr. (Neu-Buch): fester Sandweg	Q2 17190,24695 17929,25068
 Dreilindenerweg: Asphalt	Q0 -3600,-146 -3746,-268 -3793,-340 -3834,-459 -3993,-700
+Bahnhofstr (Stahnsdorf): Asphalt	Q1 -2918,-3010 -3004,-3000 -3159,-2968 -3235,-2953 -3356,-2926 -3451,-2906 -3475,-2884 -3528,-2810 -3650,-2609

@@ -7,48 +7,52 @@
 # Zweiter Punkt: Blickrichtung
 #
 #: section Berlin vvv
-#: section VMZ-Berlin vvv
-# Bei den VMZ-Bildern ist der Mimetype falsch gesetzt, deshalb Verlinkung auf die Seite
-# http://www.vmzberlin.de/vmz/showimage.do?image=imageSmall18
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=18&mode=small	WC 10915,13164 10871,13117
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=20&mode=small	WC 10918,13161 10958,13139
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=4&mode=small	WC 19312,11808 19229,11809
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=50&mode=small	WC 13488,5994 13452,6080
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=16&mode=small	WC 8280,11017 8292,10967
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=2&mode=small	WC 4731,11788 4814,11799
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=8&mode=small	WC 4742,11808 4677,11854
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=10&mode=small	WC 4733,11779 4664,11773
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=22&mode=small	WC 15871,11968 15927,11962
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=24&mode=small	WC 15869,11971 15810,11980
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=78&mode=small	WC 6837,10863 6864,10929
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=80&mode=small	WC 6782,10778 6719,10709
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=103&mode=small	WC 2071,10959 2123,11017
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=83&mode=small	WC 21937,5217 21977,5278
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=84&mode=small	WC 21937,5217 21977,5278
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=12&mode=small	WC 2058,13813 2094,13761
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=94&mode=small	WC 8674,7081 8746,7085
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=6&mode=small	WC 2851,19244 2896,19184
-#: section VMZ-Berlin ^^^
-#: section Mobil in Potsdam vvv
-# Startseite ist http://www.mobil-potsdam.de/webcams.htm
-# Das Flash dort funktioniert bei mir nicht. Die Bilder sind sehr klein (120x100)
-http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=39	WC -10041,-5449 -10016,-5493
-http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=33	WC -12060,-780 -12032,-742
-http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=32	WC -12062,-780 -12019,-816
-http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=35	WC -12072,-803 -12090,-838
-#: note: wie camid=35, nur kleinerer Ausschnitt
-http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=34	WC -12072,-803 -12090,-838
-http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=38	WC -12260,-422 -12225,-458
-http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=28	WC -12877,-666 -12872,-602
-http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=29	WC -13870,-1445 -13824,-1400
-http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=30	WC -13868,-1448 -13817,-1463
-http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=31	WC -13878,-1448 -13916,-1488
-http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=36	WC -12263,-422 -12319,-397
-http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=37	WC -12067,-785 -12131,-783
-#: section Mobil in Potsdam ^^^
+### VMZ hat die Verkehrskameras vorerst außer Betrieb genommen (gesehen: 2006-08-02)
+# #: section VMZ-Berlin vvv
+# # Bei den VMZ-Bildern ist der Mimetype falsch gesetzt, deshalb Verlinkung auf die Seite
+# # http://www.vmzberlin.de/vmz/showimage.do?image=imageSmall18
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=18&mode=small	WC 10915,13164 10871,13117
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=20&mode=small	WC 10918,13161 10958,13139
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=4&mode=small	WC 19312,11808 19229,11809
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=50&mode=small	WC 13488,5994 13452,6080
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=16&mode=small	WC 8280,11017 8292,10967
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=2&mode=small	WC 4731,11788 4814,11799
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=8&mode=small	WC 4742,11808 4677,11854
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=10&mode=small	WC 4733,11779 4664,11773
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=22&mode=small	WC 15871,11968 15927,11962
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=24&mode=small	WC 15869,11971 15810,11980
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=78&mode=small	WC 6837,10863 6864,10929
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=80&mode=small	WC 6782,10778 6719,10709
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=103&mode=small	WC 2071,10959 2123,11017
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=83&mode=small	WC 21937,5217 21977,5278
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=84&mode=small	WC 21937,5217 21977,5278
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=12&mode=small	WC 2058,13813 2094,13761
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=94&mode=small	WC 8674,7081 8746,7085
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=6&mode=small	WC 2851,19244 2896,19184
+# #: section VMZ-Berlin ^^^
+#
+### Die Seite existiert noch, aber kein einziges Bild ist zu sehen (2006-08-02):
+# #: section Mobil in Potsdam vvv
+# # Startseite ist http://www.mobil-potsdam.de/webcams.htm
+# # Das Flash dort funktioniert bei mir nicht. Die Bilder sind sehr klein (120x100)
+# http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=39	WC -10041,-5449 -10016,-5493
+# http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=33	WC -12060,-780 -12032,-742
+# http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=32	WC -12062,-780 -12019,-816
+# http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=35	WC -12072,-803 -12090,-838
+# #: note: wie camid=35, nur kleinerer Ausschnitt
+# http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=34	WC -12072,-803 -12090,-838
+# http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=38	WC -12260,-422 -12225,-458
+# http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=28	WC -12877,-666 -12872,-602
+# http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=29	WC -13870,-1445 -13824,-1400
+# http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=30	WC -13868,-1448 -13817,-1463
+# http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=31	WC -13878,-1448 -13916,-1488
+# http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=36	WC -12263,-422 -12319,-397
+# http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=37	WC -12067,-785 -12131,-783
+# #: section Mobil in Potsdam ^^^
 http://www.dhm.de/webcams/WEB3.html	WC 9861,12489 9850,12522
 http://www.dhm.de/zcam/index.html	WC 9954,12437 10009,12443
 http://www.dhm.de/lindencam/index.html	WC 9875,12425 9814,12416
+#: note: Index aller cityscope-Kameras: http://www.cityscope.de/citypanorama/index.html
 #: note: Panorama, sehr selten Aktualisierung
 http://www.cityscope.de/sb/	WC 8330,12393 8330,12478
 #: note: Panorama, stündliche Aktualisierung: vvv
@@ -56,12 +60,13 @@ http://www.cityscope.de/pp/index.html	WC 8604,11401 8535,11424
 http://www.cityscope.de/pp3n/index.html	WC 8441,11460 8433,11558
 http://www.cityscope.de/pp3s/index.html	WC 8443,11457 8443,11384
 http://www.cityscope.de/alex/index.html	WC 11205,12998 11165,12932
+# Lehrter Bahnhof/Hauptbahnhof, keine aktuellen Bilder mehr: http://www.cityscope.de/lbhf/index.html
 #: note: ^^^
 #: note: Kein Blick auf die Straße:
 http://www.tapu.de/webcam/	WC 9955,11649 9887,11712
-http://www.berlin.de/webcams/.html/alex.html	WC 10929,13174 10958,13156
-http://www.berlin.de/webcams/rathaus/.bin/index.php	WC 10671,12530
-http://www.berlin.de/webcams/.html/dahlem.html	WC 10907,13248 10880,13322
+http://www.berlin.de/webcams/index.php/alex	WC 10929,13174 10958,13156
+# existiert nicht mehr: http://www.berlin.de/webcams/rathaus/.bin/index.php	WC 10671,12530
+http://www.berlin.de/webcams/index.php/dahlem	WC 10907,13248 10880,13322
 http://www.kurfuerstendamm.de/cms/webcam/f_webcam.html	WC 5857,10871 5801,10894
 #: note: größer als http://www.berlin.de/webcams/.html/wannsee.html
 http://wind.met.fu-berlin.de/loops/webcam/Wannsee_prod.jpg	WC -4416,2664 -4497,2595
@@ -69,18 +74,35 @@ http://wind.met.fu-berlin.de/loops/webcam/Wannsee_prod.jpg	WC -4416,2664 -4497,2
 http://www.bilder-netz.de/webcam.php	WC 13095,15591
 http://www.soost-berlin.de/web/livecam.html	WC 14663,1860 14747,1869
 #: XXX: Blickrichtung unklar
-http://www.marzahn-hellersdorf.net/index.php?/webcam.php	WC 22829,13324
+http://www.marzahn-hellersdorf.net/webcam.php	WC 22829,13324
 http://rudi-02.dyndns.org:8080/	WC 17163,17631 17207,17659
 http://www.rbb-online.de/_/wetter/webcam/index_jsp.html	WC   1674,11250 1712,11133
+#: note: gleicher Link: http://www.btm.de/deutsch/spiel-spass/d_sp_webcam.php
 http://www.berlin-tourist-information.de/deutsch/spiel-spass/d_sp_webcam.php	WC 8226,10917 8284,10981
 http://www.berlin-webcam.illustriertestadt.de/index.php	WC 6692,11096 6787,11112
-http://home.versanet.de/~bajinsky/alternativ.htm	WC 11975,9187 12010,9235
+# Leider zeigt dieser Link nur noch eine Kaffeekanne: http://home.versanet.de/~bajinsky/alternativ.htm	WC 11975,9187 12010,9235
 http://www.rbb-online.de/webcam/rathaus/fullsize_logo.jpg	WC 10687,12493 10531,12475
 #: note: direkt mit: http://www.rbb-online.de/webcam/fsz/fullsize_logo.jpg
 #: XXX: Standort noch einmal prüfen
 http://www.inforadio.de/webcam1.do	WC 1687,11306 1775,11337
 #: note: ebenso als Loop: http://www.met.fu-berlin.de/cgi-bin/webcam/Cam00_loop
+#: note: auch verlinkt von: http://wind.met.fu-berlin.de/wind_work/main.php?lId=500#
 http://www.met.fu-berlin.de/de/wetter/webcam/	WC 4149,5755 4140,5796
+#: note: Bauarbeiten Alexa vvv
+http://www.omnicon-ffm.de/content/zoomcam1.php	WC 11208,12777 11220,12699
+http://www.omnicon-ffm.de/content/zoomcam2.php	WC 11200,12775 11166,12746
+#: note: ^^^
+#: note: Bauarbeiten U55:
+http://www.u55.info/webcam.htm	WC 8765,12306 8791,12289
+http://linpop.zdf.de/Berlin/webcam/	WC 8822,12326 8747,12300
+http://www.oldpetrus.de/webcam/	WC 13158,15126 13062,15121
+http://www.oldpetrus.de/webcam/	WC 13159,15121 13043,15006
+http://www.oldpetrus.de/webcam/	WC 13159,15118 13180,15060
+http://www.das-schloss-steglitz.de/index.php?id=webcam	WC 4865,5521 4853,5621
+#: note: Indexseite: http://www.olympiastadion-berlin.de/index.php?id=80
+# http://www.olympiastadion-berlin.de/webcam.php: wegen Bauarbeiten am Glockenturm ausgeschaltet	WC -1264,11791 -1118,11828
+http://www.olympiastadion-berlin.de/webcam2.php	WC -642,11931 -752,11907
+http://www.olympiastadion-berlin.de/webcam3.php	WC -517,11940 -627,11928
 #: section Berlin ^^^
 #: section Potsdam vvv
 #: note: steuerbar!
@@ -93,6 +115,9 @@ http://www.grosser-spreewaldhafen.de/livecam.html	WC 50962,-59025
 http://www.prenzlau-online.de/inhalt108.html	WC 39689,101825 39756,101886
 http://www.prenzlau-online.de/inhalt110.html	WC 40073,101499
 #: section Prenzlau ^^^
+#: section Frankfurt/Oder vvv
+http://ffoer.de/ffoercam/webcams/de/brb/ffotrade/webcamffotrade.htm	WC 88717,-5767 88753,-5703
+#: section ^^^
 #: section Usedom vvv
 #: XXX: alle Positionen und Richtungen prüfen! vvv
 http://www.usedom.de/typo3/index.php?id=381&no_cache=1&sword_list[]=webcam#544	WC 36078,191462 36170,191542
@@ -110,6 +135,7 @@ http://www.usedom.de/typo3/index.php?id=387&no_cache=1&sword_list[]=webcam#562	W
 # http://www.sfb.de/webcam/sfbdach1.jpg --- Dunkelheit?
 # http://www.wetter24.de/webcam.html --- Tempelhof, nur Blick auf den Himmel
 # http://www.wetterspiegel.de/de/europa/deutschland/berlin/13342c27x6.html --- ebenfalls Tempelhof, gleiche Kamera?
+# http://www.dwd.de/de/WundK/W_aktuell/Webcams/index.htm?ID=10384 --- auch Tempelhof, auch die gleiche Kamera? (Horizontale Blickrichtung 270.0 °)
 # http://www.peterguensel.de/index1.htm --- Tegel, nur Blick auf Dach und Himmel
 # http://www.igb-berlin.de/abt2/ms/ms_dat.shtml --- Müggelsee, unklare Position
 # http://www.deutschland-webcam.de/webcams/view-647.html --- Dunkelheit? Griebnitzsee
@@ -119,12 +145,13 @@ http://www.usedom.de/typo3/index.php?id=387&no_cache=1&sword_list[]=webcam#562	W
 # http://www.stune.de/webcam/indexcam.htm --- Steglitz (S-Bahn/Autobahn)?
 # http://www.berlinerzimmer.de/bezicam.htm --- Rosenthaler Platz, wird nur sporadisch erneuert (2003???)
 # http://www.daniel-moeller.de/html/index_frameset.html?http://www.daniel-moeller.de/html/livecam.html --- Nähe Flughafen Tempelhof?, seit Juni 2005 nicht aktualisiert
-# http://linpop.zdf.de/Berlin/webcam/index2.html --- kaputt
-# http://www.olympiastadion-berlin.de/webcam.php --- Olympiastadion, wegen Umbauarbeiten abgeschaltet
 # http://www.club-pix.de/kam3/live/ --- Java, Clausewitzstr.
 # http://www.adlershof.de/index.php?webcam --- Adlershof, seit 2005-10-24 nicht aktualisiert
 # http://berlinadmin.dlr.de/webcam/index.shtml --- Adlershof (es ist dunkel, ich kann es nicht überprüfen)
 # http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=91&mode=smallImage	WC 11785,9035 11707,9078 --- Hasenheide, inaktiv seit 2004-xx-xx
+# http://www.tv1.de/cms/_vm300/rebroadcast/tv/panterratv?referer= --- Potsdamer Platz, benötigt Mediaplayer, dazugehörige HTML-Seite ist http://www.spots-berlin.de/de/galerie/webcam.php?col=2
+# http://www.adebar24.de/live_webcam_stoerche_von_hohenstein.htm
+# http://www.bundestag.de/bau_kunst/kunstwerke/haacke/derbevoelkerung/bilder/index.html --- Im Reichstag "Der Bevölkerung"
 ## Alle Snafu-Kameras funktionieren nicht!
 ##: section: Snafu vvv
 ##: note: Alle Snafu-Kameras: http://www.snafu.de/content/snafu_extra/video/snafu_live/b_152263_artikel.shtml
@@ -143,6 +170,9 @@ http://www.usedom.de/typo3/index.php?id=387&no_cache=1&sword_list[]=webcam#562	W
 # http://www.usedom.de/typo3/index.php?id=388&no_cache=1&sword_list[]=webcam#565 --- Wolgast Schlossinsel, seltene Aktualisierung
 # http://www.usedom.de/typo3/index.php?id=776&no_cache=1&sword_list[]=webcam#1840 --- Trassenheide, dunkel oder ausgefallen?
 # http://www.rangsdorf.org/ --- Rangsdorf, Clara-Zetkin-Str., Geokodierung fehlt!
+# http://www.cafebar-kanu.de/webcam.php --- Brandenburg (Stadt), Geokodierung fehlt! (an der Havel?)
+# http://www.gcn.telekom.de/webcam_berlin/image.jpg --- nur die Kugel des Fernsehturms zu sehen (noch immer mit dem magentafarbenen Fußball)
+# http://www.naturkundemuseum-berlin.de/aktuell/mauersegler/webcam.asp --- benötigt irgendeinen Player
 #
 # Linklisten:
 # http://www.camradar.de/webcams/europa/deutschland/berlin.php (ungefähr 40)

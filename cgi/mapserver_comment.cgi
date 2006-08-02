@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.28 2006/07/30 19:37:48 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.28 2006/07/30 19:37:48 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -58,7 +58,8 @@ eval {
     }
 
     $to = $BBBike::EMAIL;
-    $cc = 'eserte@web.de'; # a fallback address to prevent mail problems
+    #$cc = 'eserte@web.de'; # a fallback address to prevent mail problems
+    $cc = 'newstreet@bbbike.de';
     my $mscgi_remote = $BBBike::BBBIKE_MAPSERVER_URL;
     my $mscgi_local  = "http://www/~eserte/cgi/mapserv.cgi";
     my $msadrcgi_remote = dirname($BBBike::BBBIKE_MAPSERVER_URL) . "/mapserver_address.cgi";
