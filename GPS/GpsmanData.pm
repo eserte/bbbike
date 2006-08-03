@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.44 2006/07/08 00:42:42 eserte Exp $
+# $Id: GpsmanData.pm,v 1.46 2006/08/03 21:43:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005 Slaven Rezic. All rights reserved.
@@ -30,7 +30,7 @@ BEGIN {
 	    Type Name
 	    Waypoints WaypointsHash
 	    Track CurrentConverter
-	    VersionXXX
+	    Version
 	   )) {
 	my $acc = $_;
 	*{$acc} = sub {
@@ -44,7 +44,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.44 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.46 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -94,9 +94,9 @@ sub check {
 	next if /^%/ || /^\s*$/;
 	if (/!Format: (DMS|DDD) ([12]) (WGS 84)/) {
 	    if (ref $self) {
-		my($pos_format, $versionxxx, $datum_format) = ($1, $2, $3);
+		my($pos_format, $version, $datum_format) = ($1, $2, $3);
 		$self->change_position_format($pos_format);
-		$self->VersionXXX($versionxxx);
+		$self->Version($version);
 		$self->DatumFormat($datum_format);
 	    }
 	    $check = 1;
@@ -312,7 +312,7 @@ sub new {
     # some defaults:
     #$self->PositionFormat("DMS");
     $self->change_position_format("DMS");
-    $self->VersionXXX(1);
+    $self->Version(1);
     $self->DatumFormat("WGS 84");
 
     $self;
@@ -367,14 +367,18 @@ sub parse_waypoint {
     my $self = shift;
     my @f = split /\t/;
     my $wpt = GPS::Gpsman::Waypoint->new;
-    $wpt->Ident($f[0]);
-    $wpt->Comment($f[1]);
+    my $f_i = 0;
+    $wpt->Ident($f[$f_i++]);
+    $wpt->Comment($f[$f_i++]);
 
-    my $f_i = 2;
-    if ($f[$f_i] =~ /^(\d{2}-[a-zA-Z]{3}-\d{4} .*)/) {
-	$wpt->DateTime($f[$f_i]);
-	$f_i++;
+    if ($self->Version >= 2) {
+	$wpt->DateTime($f[$f_i++]);
     }
+
+#     if ($f[$f_i] =~ /^(\d{2}-[a-zA-Z]{3}-\d{4} .*)/) {
+# 	$wpt->DateTime($f[$f_i]);
+# 	$f_i++;
+#     }
     $self->parse_and_set_coordinate($wpt, \@f, \$f_i);
 
     if ($#f >= $f_i) {
@@ -465,9 +469,9 @@ sub parse {
 	if (defined $parse_method && !/^!/) {
 	    push @data, $self->$parse_method();
 	} elsif (/^!Format:\s+(\S+)\s+(\S+)\s+(.*)$/) {
-	    my($pos_format, $versionxxx, $datum_format) = ($1, $2, $3);
+	    my($pos_format, $version, $datum_format) = ($1, $2, $3);
 	    $self->change_position_format($pos_format);
-	    $self->VersionXXX($versionxxx);
+	    $self->Version($version);
 	    $self->DatumFormat($datum_format);
 	} elsif (/^!Position:\s+(\S+)$/) {
 	    my $pos_format = $1;
@@ -699,7 +703,7 @@ sub as_string {
     # XXX:
     $s .= "!Format: " . join(" ",
 			     $self->PositionFormat, 
-			     $self->VersionXXX,
+			     $self->Version,
 			     $self->DatumFormat) . "
 !Creation: no
 
@@ -859,7 +863,7 @@ sub parse {
 	my $gps_o = GPS::GpsmanData->new;
 	if ($old_gps_o) {
 	    # "sticky" attributes
-	    for my $member (qw(DatumFormat VersionXXX PositionFormat Creation CurrentConverter)) {
+	    for my $member (qw(DatumFormat Version PositionFormat Creation CurrentConverter)) {
 		$gps_o->$member($old_gps_o->$member());
 	    }
 	}
