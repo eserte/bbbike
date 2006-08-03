@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.134 2006/08/02 21:55:05 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.135 2006/08/03 19:29:00 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -427,7 +427,7 @@ Nogatstr.: Kopfsteinpflaster	Q2 12296,7057 12451,7100 12632,7137 12740,7162 1286
 Märkischer Platz: gutes Kopfsteinpflaster	Q1 10687,11853 10869,11949
 Bänschstr: Kopfsteinpflaster	Q2 14067,12698 14188,12664 14326,12627 14595,12557 14798,12502
 Paul-Junius-Str.: Kopfsteinpflaster	Q2 15086,12849 15084,12975
-Gärtnerstr.: Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14311,11884
+Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14311,11884
 Seumestr.: Kopfsteinpflaster	Q2 14395,11753 14358,11656 14305,11514 14252,11368
 Mainzer Str.: Kopfsteinpflaster	Q2 14311,11884 14357,12011 14434,12196
 Colbestr.: mäßiger Asphalt mit Schlaglöchern	Q1 14416,11815 14468,11992
@@ -2270,7 +2270,7 @@ Lützenstr.: Kopfsteinpflaster	Q2 2539,10235 2708,10245
 (Waidmannsluster Damm - Karolinenstr.): Waldweg	Q2 1942,21564 1928,21595 1869,21570 1835,21427 1800,21368 1656,21145
 Dalandweg: Kopfsteinpflaster	Q1 5557,4294 5396,4229 5266,4302 5233,4249 5128,4310
 Klopstockstr.: Kopfsteinpflaster	Q1 -1670,3716 -1609,3741 -1479,3723 -1414,3759 -1277,3854 -1157,4008 -1077,4236
-Lüdenscheider Weg: Beton	Q1 -1020,15484 -1383,15271
+Lüdenscheider Weg: Beton	Q1 -1037,15482 -1389,15285
 Zinsgutstr.: Asphalt	Q0 20692,3951 20875,3762 21048,3628 21136,3482
 Flinsberger Platz: Kopfsteinpflaster	Q2 2926,8527 2678,8571
 Markobrunner Str.: Asphalt	Q0 4374,7016 4462,7137 4621,7159
@@ -3522,6 +3522,7 @@ Winterstr.: Asphalt	Q0 8124,18105 8296,18145
 Winterstr.: Asphalt	Q0 8361,18160 8504,18194 8605,18216
 Hausotterplatz: mäßiger Asphalt	Q2 8320,18185 8299,18172 8296,18145 8310,18127 8334,18127 8355,18142 8361,18160 8345,18182 8320,18185
 Kamekestr.: Kopfsteinpflaster	Q2 8286,18331 8307,18242 8320,18185
+Kamekestr.: Kopfsteinpflaster	Q2 8334,18127 8348,18071 8367,17984
 Elsenbruchstr.: Asphalt	Q1 3142,23004 3168,22959 3198,22720 3214,22578 3243,22311
 An der Aussicht: Asphalt	Q2 -1515,23807 -1492,23822 -1739,24095 -1768,24075
 Zur Sonnenhöhe: Asphalt	Q2 -1896,24275 -1768,24075 -1639,23915 -1515,23807
@@ -3533,3 +3534,10 @@ Rufacher Weg: mäßiger Asphalt	Q2 12207,1704 12179,1758 12160,1817 12255,2058 125
 Weitbrucher Str.: Verbundsteinpflaster	Q2 10845,1026 11045,1028 11257,995 11573,825
 Weitbrucher Str.: Verbundsteinpflaster	Q2 11596,864 11573,825 11517,715 11490,664
 Kornmesserstr.: Kopfsteinpflaster	Q3 4065,2576 3932,2660 3737,2671
+Gärtnerstr. (Hohenschönhausen): sehr guter Asphalt	Q0 16807,15909 16889,15840 17080,15779 17379,15781 17489,15781
+Schöneicher Str. (Hohenschönhausen): Kopfsteinpflaster	Q2 16412,15559 16665,15446
+An den Haselbüschen: Verbundsteinpflaster	Q2 -1273,15539 -1291,15580 -1402,15592
+Raduhner Str.: Asphalt	Q1 17558,126 17351,451 17215,667
+Hentigstr.: schlechter Asphalt	Q3 18514,8773 18548,8942 18586,9172 18621,9404
+Buttenstedtweg: Kopfsteinpflaster	Q2 25171,4757 25164,4706
+Dürerstr.: Asphalt	Q1 4573,3862 4487,3802 4132,3552 3943,3420 3757,3284

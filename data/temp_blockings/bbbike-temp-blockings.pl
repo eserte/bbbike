@@ -5279,4 +5279,20 @@ userdel	1 10755,13152 10920,13139
 userdel	1 10781,13002 10706,13043
 EOF
      },
+     { from  => 1152568800, # 2006-07-11 00:00
+       until => 1156024800, # 2006-08-20 00:00
+       text  => ' L 601 Leipziger Str. OD Finsterwalde, Kno. Hain-/ Schützenstr. Kanalarbeiten Vollsperrung 12.07.2006-19.08.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 32963,-85912 32865,-86269 32870,-86323 32478,-86374
+EOF
+     },
+     { from  => 1154556000, # 2006-08-03 00:00
+       until => 1154815200, # 2006-08-06 00:00
+       text  => 'B 107 zw. Tüchen und Mesendorf Vollsperrung 04.08.2006-05.08.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -79120,73107 -78454,74544
+EOF
+     },
     );
