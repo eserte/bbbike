@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.136 2006/08/03 19:49:04 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.136 2006/08/03 19:49:04 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -367,7 +367,7 @@ Ratiborstr.: Kopfsteinpflaster	Q2 12712,9523 12724,9545 12837,9748
 Kirchhofstr: schlechtes Kopfsteinpflaster	Q3 13177,7644 13188,7590 13117,7471 13032,7334
 Kirchhofstr: relativ glattes Kopfsteinpflaster	Q2 13013,7329 12909,7181 12872,7134
 Berliner Allee: Kopfsteinpflaster	Q2 14828,17856 14739,17625 14673,17454 14584,17224 14533,17084 14559,16912
-Lessingstr.: Kopfsteinpflaster	Q2 10410,58 10300,34 10161,3 9848,-59
+Lessingstr.: Kopfsteinpflaster	Q2 10410,58 10300,34 10161,3 9971,-34 9848,-59
 Monbijoustr.: Kopfsteinpflaster, OK	Q1 9734,13057 9707,12974
 Lüneburger Str.: Kopfsteinpflaster	Q2 7610,12977 7395,12774 7367,12747 7331,12713 7195,12620
 Lüneburger Str.: Asphalt	Q0 7195,12620 7156,12604 7097,12590
@@ -3352,7 +3352,7 @@ Am Priesterberg: mäßiges Kopfsteinpflaster	Q2 830,25278 917,25324 1056,25332
 #: by: Martin Lohner:
 Culemeyerstr.: asphaltiert	Q0 9847,1274 9808,1264 9734,1235
 #: by: Jan Dinter:
-Raabestr.: Kopfsteinpflaster	Q2 9762,155 9789,150 10063,251 10506,405 10602,438
+Raabestr.: Kopfsteinpflaster	Q2 9762,155 9789,150 9892,188 10063,251 10506,405 10602,438
 #: by: Ingrid Beese:
 Teltower Weg: Waldweg	Q1 -739,6838 -813,6755 -439,6255 -359,6181 -288,6101 -174,5941 -107,5880
 #: by: Helm Dirk:
@@ -3790,6 +3790,20 @@ Am Brandpfuhl: mäßiger Asphalt	Q1 11937,4353 12015,4038
 Michelstadter Weg: Asphalt	Q0 -3085,17504 -3092,17420 -3117,17137 -3129,16931 -3151,16657
 #: by: Meike Hempel:
 Zelterstr.: guter Asphalt	Q0 11967,15700 11849,15760 11784,15800
+#: by: Andreas Hirschbrich:
+Coppistr.: Beton	Q1 15665,11291 15786,11549 15848,11528 16023,11459 16119,11435
+#: by: Marc Gorter:
+Otto-Grüneberg-Weg: Kopfsteinpflaster	Q2 3278,12021 3177,12100 3091,12071
+#: by: Frank Ottens:
+Hanne Nüte: guter Asphalt	Q0 13717,5175 13761,4992 13758,4926 13695,4859 13675,4855
+#: by: Alexander (matschos):
+Rotenkruger Weg: schlechtes Kopfsteinpflaster	Q3 9838,327 9892,188 9971,-34 10084,-338 10182,-601 10239,-752 10242,-806 10258,-982 10228,-1099
+#: by: Lars Lange:
+Reulestr.: sehr guter Beton	Q0 8849,4578 8561,4535
+#: by: Patrik (lange): vvv
+Ernst-Lemmer-Ring: guter Asphalt	Q0 -163,1564 -131,1579 7,1617 -50,1851
+Ernst-Lemmer-Ring: guter Asphalt	Q0 -131,1579 -185,1812
+#: by: ^^^
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
