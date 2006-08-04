@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-gpsman.t,v 1.6 2006/05/15 21:58:16 eserte Exp $
+# $Id: strassen-gpsman.t,v 1.7 2006/08/04 06:21:28 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -34,8 +34,8 @@ BEGIN {
     }
 }
 
-my $tests_with_data = 4;
-my $tests = $tests_with_data + 3;
+my $tests_with_data = 4; # in my private directory
+my $tests = $tests_with_data + 9;
 plan tests => $tests + $have_nowarnings;
 
 my $gpsman_dir = "$FindBin::RealBin/../misc/gps_data";
@@ -96,6 +96,47 @@ EOF
     isa_ok($s, "Strassen");
     isa_ok($s, "Strassen::Gpsman");
     cmp_ok(scalar(@{$s->data}), "==", 2, "Track sample has two lines");
+}
+
+{
+    require Strassen::Gpsman; # because maybe nobody did it before!
+
+    my $wpt_sample = <<'EOF';
+% Written by GPSManager 17-Jan-2002 22:35:45 (CET)
+% Edit at your own risk!
+
+!Format: DMS 1 WGS 84
+!Creation: no
+
+!W:
+007		N52 30 46.0	E13 24 42.9	alt=32.3298339844	GD108:class=|c!	GD108:colour=~|Z	GD108:attrs=`	GD108:depth=QY|c%|_i	GD108:state=|cAA	GD108:country=|cAA
+008		N52 30 42.6	E13 24 30.6	alt=33.05078125	GD108:class=|c!	GD108:colour=~|Z	GD108:attrs=`	GD108:depth=QY|c%|_i	GD108:state=|cAA	GD108:country=|cAA
+
+EOF
+    my $s = Strassen::Gpsman->new_from_string($wpt_sample);
+    isa_ok($s, "Strassen");
+    isa_ok($s, "Strassen::Gpsman");
+    cmp_ok(scalar(@{$s->data}), "==", 2, "Waypoint sample version one has two objects");
+}
+
+{
+    require Strassen::Gpsman; # because maybe nobody did it before!
+
+    my $wpt_sample = <<'EOF';
+% Written by GPSManager 2006-07-31 00:21:07 (CET)
+% Edit at your own risk!
+
+!Format: DMM 2 WGS 84
+!Creation: yes
+
+!W:
+019	30-JUL-06 13:01:35	2006-07-30 23:57:21	N52 31.152	E13 04.405	symbol=crossing	alt=42.7	GD109:dtyp=|c"	GD109:class=|c!	GD109:colour=|c@	GD109:attrs=p	GD109:depth=1I|c3%	GD109:state=|cAA	GD109:country=|cAA	GD109:ete=~|R$|Z
+020	30-JUL-06 13:05:13	2006-07-30 23:57:21	N52 31.591	E13 04.648	symbol=crossing	alt=47.0	GD109:dtyp=|c"	GD109:class=|c!	GD109:colour=|c@	GD109:attrs=p	GD109:depth=1I|c3%	GD109:state=|cAA	GD109:country=|cAA	GD109:ete=~|R$|Z
+EOF
+    my $s = Strassen::Gpsman->new_from_string($wpt_sample);
+    isa_ok($s, "Strassen");
+    isa_ok($s, "Strassen::Gpsman");
+    cmp_ok(scalar(@{$s->data}), "==", 2, "Waypoint sample version two has two objects");
 }
 
 __END__

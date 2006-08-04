@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.46 2006/08/03 21:43:24 eserte Exp $
+# $Id: GpsmanData.pm,v 1.47 2006/08/04 06:18:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005 Slaven Rezic. All rights reserved.
@@ -44,7 +44,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.46 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.47 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -67,11 +67,15 @@ struct('GPS::Gpsman::Waypoint' =>
 
     sub Comment_to_unixtime {
 	my $wpt = shift;
-	if ($wpt->Comment =~ /^(\d{4})-(\d{2})-(\d{2})\s+(\d{1,2}):(\d{2}):(\d{2})/) {
+	my $datetime = $wpt->DateTime;
+	if (!defined $datetime || $datetime eq '') {
+	    $datetime = $wpt->Comment;
+	}
+	if ($datetime =~ /^(\d{4})-(\d{2})-(\d{2})\s+(\d{1,2}):(\d{2}):(\d{2})/) {
 	    my($y,$m,$d, $H,$M,$S) = ($1,$2,$3,$4,$5,$6);
 	    require Time::Local;
 	    Time::Local::timelocal($S,$M,$H,$d,$m-1,$y-1900);
-	} elsif ($wpt->Comment =~ /^(\d{1,2})-([^-]{3})-(\d{4})\s+(\d{1,2}):(\d{2}):(\d{2})/) {
+	} elsif ($datetime =~ /^(\d{1,2})-([^-]{3})-(\d{4})\s+(\d{1,2}):(\d{2}):(\d{2})/) {
 	    my($d,$m_name,$y, $H,$M,$S) = ($1,$2,$3,$4,$5,$6);
 	    my $m = GPS::GpsmanData::monthabbrev_number($m_name);
 	    return undef if !defined $m;
@@ -393,6 +397,8 @@ sub parse_waypoint {
 		if ($^W) {
 		    if (/^GD108:(class|colour|attrs|depth|state|country)=/) {
 			# no warning
+		    } elsif (/^GD109:(dtyp|class|colour|attrs|depth|state|country|ete)=/) {
+			# also no warning
 		    } else {
 			warn "Ignore $_";
 		    }
