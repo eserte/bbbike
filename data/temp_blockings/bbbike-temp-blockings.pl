@@ -5295,4 +5295,20 @@ EOF
 userdel	2 -79120,73107 -78454,74544
 EOF
      },
+     { from  => 1152396000, # 2006-07-09 00:00
+       until => 1167606000, # 2007-01-01 00:00
+       text  => 'K 6308 KG nördl. Bagow-L 91 westl.Nauen zw. OL Klein Behnitz und Groß Behnitz Straßenbauarbeiten Vollsperrung 10.07.2006-31.12.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -37075,16831 -37025,17462 -36787,18125
+EOF
+     },
+     { from  => 1155420000, # 2006-08-13 00:00
+       until => 1155938400, # 2006-08-19 00:00
+       text  => 'L 059 Bormannstr. OL Bad Liebenwerda, zw. F.-Engels-Str. u. Stangengärtenstr. Kanalarbeiten Vollsperrung 14.08.2006-18.08.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 12571,-99519 12383,-99327 12173,-99115
+EOF
+     },
     );

@@ -756,6 +756,22 @@ userdel	1 10781,13002 10706,13043
          'data' => 'userdel	2 -79120,73107 -78454,74544
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1167606000,
+         'text' => 'K 6308 KG nördl. Bagow-L 91 westl.Nauen zw. OL Klein Behnitz und Groß Behnitz Straßenbauarbeiten Vollsperrung 10.07.2006-31.12.2006 ',
+         'from' => 1152396000,
+         'data' => 'userdel	2 -37075,16831 -37025,17462 -36787,18125
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1155938400,
+         'text' => 'L 059 Bormannstr. OL Bad Liebenwerda, zw. F.-Engels-Str. u. Stangengärtenstr. Kanalarbeiten Vollsperrung 14.08.2006-18.08.2006 ',
+         'from' => 1155420000,
+         'data' => 'userdel	q4 12571,-99519 12383,-99327 12173,-99115
+',
+         'type' => 'handicap'
        }
      
 );
