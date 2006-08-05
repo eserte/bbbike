@@ -628,7 +628,7 @@ EOF
        text  => 'L 142; (Kyritzer Straße); Klempnitzbrücke in Wusterhausen Brückensanierung Vollsperrung 01.11.2004-03.11.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -54776,53333 -55166,53457
+userdel	2 -54776,53333 -55124,53446
 EOF
      },
      { from  => 1093384800, # 2004-08-25 00:00
@@ -1207,7 +1207,7 @@ EOF
        text  => 'L 201; (Nauener Chaussee); OD Falkensee, Bahnübergang am Finkenkrug Gleisbauarbeiten Vollsperrung 23.11.2004-27.11.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -13743,20218 -13887,20543 -13941,20658
+userdel	2 -13756,20176 -13875,20548 -13897,20621
 EOF
      },
      { from  => 1100559600, # 2004-11-16 00:00
@@ -1400,7 +1400,7 @@ EOF
        text  => 'K 6304; (Priorter Chaussee); OD Priort, Bahnübergang Gleisbauarbeiten Vollsperrung 11.01.2005-15.01.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -19149,11495 -18916,11666
+userdel	2 -19149,11495 -19058,11636
 EOF
      },
      { from  => 1106434800, # 2005-01-23 00:00
@@ -2800,7 +2800,7 @@ EOF
        text  => 'L 201; (Nauener Chaussee); OD Falkensee, zw. F.-Ludwig-Jahn-Str. u. Innstr. Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 14.09.2005-30.09.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -12601,19517 -12139,18985
+userdel	q4 -12601,19517 -12074,19052
 EOF
      },
      { from  => 1126994400, # 2005-09-18 00:00
@@ -2928,7 +2928,7 @@ EOF
        text  => 'L 201; (Nauener Chaussee); OD Falkensee, zw. F.-Ludwig-Jahn-Str. u. Innstr. Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 14.09.2005-30.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -12601,19517 -12139,18985
+userdel	q4 -12601,19517 -12074,19052
 EOF
      },
      { from  => 1128549600, # 2005-10-06 00:00
@@ -3435,7 +3435,7 @@ EOF
        text  => 'L 201 Nauener Chaussee Bahnübegang bei Falkensee Gleisbauarbeiten Vollsperrung 11.12.2005-14.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -13941,20658 -13887,20543 -13743,20218
+userdel	2 -13897,20621 -13875,20548 -13756,20176
 EOF
      },
      { from  => 1133996400, # 2005-12-08 00:00
@@ -3443,7 +3443,7 @@ EOF
        text  => 'L 201 Nauener Chaussee Bahnübergang bei Falkensee Gleisbauarbeiten Vollsperrung 09.12.2005-10.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -13941,20658 -13887,20543 -13743,20218
+userdel	2 -13897,20621 -13875,20548 -13756,20176
 EOF
      },
      { from  => 1131231600, # 2005-11-06 00:00
@@ -3451,7 +3451,7 @@ EOF
        text  => 'L 202 Wustermark-Brieselang Brücke über Havelkanal bei Zeestow Brückenneubau Vollsperrung 07.11.2005-31.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -19904,17964 -18793,18169
+userdel	2 -19908,17940 -18793,18169
 EOF
      },
      { from  => 1134104400, # 2005-12-09 06:00
@@ -5309,6 +5309,25 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 12571,-99519 12383,-99327 12173,-99115
+EOF
+     },
+     { from  => 1154785716, # 2006-08-05 15:48
+       until => 1159739999, # 2006-10-01 23:59
+       text  => 'Grunerstr. (Mitte) stadtauswärts neben Tunnel Alexanderplatz Baustelle, Fahrtrichtung gesperrt (bis Anfang 10.2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_003144',
+       data  => <<EOF,
+userdel	1 11323,12484 11209,12430 11092,12375 11056,12461 10954,12635
+userdel	1 10954,12635 11057,12715 11134,12793
+EOF
+     },
+     { from  => 1154786970, # 2006-08-05 16:09
+       until => 1154988000, # 2006-08-08 00:00
+       text  => 'Rixdorfer Str. (Treptow) in beiden Richtungen zwischen Südostallee und Schnellerstr. Baustelle, Straße vollständig gesperrt (bis 07.08.2006 5 Uhr)',
+       type  => 'handicap',
+       source_id => 'INKO_84352',
+       data  => <<EOF,
+userdel	q4 16861,5935 17156,6235 17239,6182 17290,6228
 EOF
      },
     );

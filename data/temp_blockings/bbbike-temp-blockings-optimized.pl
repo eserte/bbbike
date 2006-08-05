@@ -140,7 +140,7 @@ push @temp_blocking,
          'until' => 1157061600,
          'text' => 'L 202 Wustermark-Brieselang Brücke über Havelkanal bei Zeestow Brückenneubau Vollsperrung 07.11.2005-31.08.2006 ',
          'from' => 1131231600,
-         'data' => 'userdel	2 -19904,17964 -18793,18169
+         'data' => 'userdel	2 -19908,17940 -18793,18169
 ',
          'type' => 'gesperrt'
        },
@@ -770,6 +770,25 @@ userdel	1 10781,13002 10706,13043
          'text' => 'L 059 Bormannstr. OL Bad Liebenwerda, zw. F.-Engels-Str. u. Stangengärtenstr. Kanalarbeiten Vollsperrung 14.08.2006-18.08.2006 ',
          'from' => 1155420000,
          'data' => 'userdel	q4 12571,-99519 12383,-99327 12173,-99115
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_003144',
+         'until' => 1159739999,
+         'text' => 'Grunerstr. (Mitte) stadtauswärts neben Tunnel Alexanderplatz Baustelle, Fahrtrichtung gesperrt (bis Anfang 10.2006)',
+         'from' => 1154785716,
+         'data' => 'userdel	1 11323,12484 11209,12430 11092,12375 11056,12461 10954,12635
+userdel	1 10954,12635 11057,12715 11134,12793
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_84352',
+         'until' => 1154988000,
+         'text' => 'Rixdorfer Str. (Treptow) in beiden Richtungen zwischen Südostallee und Schnellerstr. Baustelle, Straße vollständig gesperrt (bis 07.08.2006 5 Uhr)',
+         'from' => 1154786970,
+         'data' => 'userdel	q4 16861,5935 17156,6235 17239,6182 17290,6228
 ',
          'type' => 'handicap'
        }

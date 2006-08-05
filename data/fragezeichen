@@ -1,4 +1,4 @@
-B5: Radweg, RW, Fertig bis 2006-06-30	? -31230,23101 -32007,22836 -34302,23434 -36410,24249 -36901,24268 -38168,24672 -39039,25020 -40033,25453
+B5: Radweg, RW, Fertig bis 2006-06-30	? -31230,23101 -32007,22836 -34213,23540 -36413,24363 -36882,24414 -38092,24817 -38964,25106 -40033,25453
 Günter-Litfin-Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 13361,17172 13115,17410
 Clémentweg/Dr.-Dorsch-Allee: Qualität (laut ADFC-Karte gut geeignet)?	? 11740,22770 10889,23381
 Kalvinistenweg: Qualität (laut ADFC-Karte gut geeignet)?	? 11693,22482 11807,22395 11718,21978 11659,21611
@@ -85,7 +85,7 @@ Verlängerung der Atzpodienstr.: Qualität? Offen für Radfahrer?	? 16468,12386 164
 Gotlindestr.: Qualität (laut ADFC-Karte im westlichen Abschnitt mäßig geeignet, im östlichen Abschnitt gut geeignet)?	? 15947,12626 16409,12612 16563,12613 16848,12614 17073,12620 17357,12566
 Weg zwischen Tierpark und Bahntrasse: Qualität des Weges (Am westlichen Ende Beton, dann Feldweg Q2?), geht es weiter in Richtung Norden/Osten, vielleicht bis zur B1? Schranke am westlichen Ende	? 18690,10016 19641,10476 19734,10690 19713,10880
 Freystadter Weg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 20949,4775 21100,4192
-Aßmannstr.: Qualität für den abknickenden Teil (möglicherweise asphaltiert?); können Radfahrer gegen die Einbahnstr. fahren?	? 25030,5307 25039,5766
+Aßmannstr.: dürfen Radfahrer gegen die Einbahnstr. fahren?	? 25030,5307 25039,5766
 Charlotte-E-Pauly-Str.: Qualität?	? 25030,5307 25010,4807
 B101 bis Großbeeren: hier auch ein Radweg?	? 5394,-3053 5068,-3719 4842,-4182 4547,-4951 4227,-5721
 Teltow: größtenteils auch Radweg, genauer erfassen	? -2477,-1717 -2276,-1621 -2073,-1525 -1668,-1709 -1453,-1715 -1303,-1758 -1143,-1759 -705,-1564 -282,-1184 465,-662 741,-584 925,-684 1346,-762
@@ -150,7 +150,6 @@ Neue Trasse der B167: für Radfahrer benutzbar? Alte Trasse nicht mehr Bundesstra
 Wendisch-Rietz - Radlow: Qualität?	? 54370,-20977 55509,-18644
 Lianenweg: Qualität? Durchfahrt möglich?	? 19686,1542 19955,1509
 Cimbernstr.: Qualität?	? 19843,1375 19907,1404 19981,1397 20196,1325 20517,1209
-Ewaldstr.: Qualität? (laut ADFC-Karte mäßig geeignet)	? 21303,621 21159,450 20906,200 20690,175 20671,87 20689,-68 20495,-331 20146,-541
 Böcklinstr. (Potsdam): Qualität? (wahrscheinlich Kopfsteinpflaster)	? -11231,696 -11308,636 -11403,562 -11483,499 -11609,400
 Freiheitstr., Wildau: Qualität?	? 25187,-8934 25875,-8746 26568,-8593 26755,-8553
 Str. der Freiheit, Zeuthen: Qualität?	? 25281,-6921 25981,-7196
@@ -403,7 +402,6 @@ Bei Liebenwalde an der Havel: Qualität?	? 7037,51950 7107,52868 7817,53807 7918,
 Bei Mildenberg: Qualität?	? 2656,68100 1625,68308 1352,68079 1090,67347
 Am Hügel: mäßiger Belag?	? 4265,20799 4107,21059
 Theodor-Loos-Weg: Qualität?	? 15304,1724 15450,1768 15620,1764 15671,1923 15781,1928 15818,1834 15849,1807
-Brauerstr.: Einbahnstraße auch für Radfahrer?	?; 5167,2160 5317,2345
 Görke - Bossin: Qualität?	? 54147,165600 54696,164496
 Stolpe - Bundesstraße: Qualität? Im Süden Fortsetzung des sandigen Feldweges	? 46756,164815 47022,165745 47304,167015 48544,167874
 Welzin - Stolpe: Qualität?	? 45265,161990 46068,163106
@@ -525,6 +523,9 @@ Ist hier noch das DRK-Krankenhaus? Name?	? 1053,3142
 (Waldweg Grunewald): Wegführung, Qualität (fester Waldweg)?	? 1512,6553 1364,6691
 Kernhofer Str.: Wird der Abschnitt nach den Bauarbeiten für Kfz gesperrt?	?::inwork 15369,10921 15351,10866
 Schriftsetzerweg: Einbahnstraße?	? 15849,1807 16194,1509
+Quellenweg: Qualität? Existiert tatsächlich eine Verbindung für Radfahrer zwischen Ruhwaldweg und Fürstenbrunner Weg?	? 1551,13377 1506,13376 1301,13338 1219,13310 1171,13320 1070,13309 919,13281 755,13281
+Heinrich-Zille-Weg: Qualität?	? 815,12653 1070,13309
+(Spandauer Damm - Fürstenbrunnerweg): Qualität?	? 1459,12475 1601,12908 1551,13377 1545,13418
 Marinesteig - Schlachtensee: Zugang zum See, wo genau? Evtl. offiziell für Radfahrer verboten	? -2699,3529 -2716,3566
 Freiheit: dauerhaft Einbahnstraße, Richtung Lüdersstr. gesperrt?	?; 22196,4847 22377,4836
 (Sömmeringstr. - Bonhoefferufer): vorhanden?	? 3735,12705 3588,12754 3511,12763 3528,12849 3517,12874 3487,12876 3422,12770
@@ -532,7 +533,6 @@ Tharauer Allee: Bauarbeiten erledigt?	? -1483,11283 -1634,11346 -1731,11425 -182
 wohin führt hier der Parkweg, derzeit im Bau?	? 4449,12985 4490,12990 4533,12990
 prüfen: hier ist doch eine enge Fußgängerwendel?	? 3670,14122 3619,14183
 Hier ist doch ein Uferweg parallel zur Kaiserin-Augusta-Allee, wo genau?	? 5185,13078 5166,13034 4947,13130 4717,13118 4608,13218
-Plantagenstr. (Wedding): Qualität?	? 7540,15566 7796,15590 7881,15577 7979,15569
 Pasewalker Str. (Wedding): Qualität, Einbahn für Radler?	? 7891,15417 7881,15577
 Treppe zw. Uferweg und Altonaer vorh.?	? 5962,12553 5967,12525
 Verbindung Stülpnagelstr. - Knobelsdorffstr. vorh.?	? 2185,11701 2154,11762
@@ -616,7 +616,6 @@ Mönchmühler Str. - Mauerweg: Qualität (laut ADFC-Karte gut geeignet)? Existiert 
 Bahnhofstr. - Schildower Weg: Qualität (laut ADFC-Karte gut geeignet)?	? 8584,23421 8539,23671 8503,23701 8544,23762 8521,23876 8491,24023 8338,24092 8198,24225
 Schildower Weg - Schildower Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? 8423,24358 8547,24437 8891,24330
 Lug - Altdöbern: Qualität? Kategorie (H)?	? 48113,-85526 48562,-85550 49162,-85300 50237,-84450 50962,-84350 52312,-83050 52625,-83050 54112,-83500 54487,-83612 55037,-83500 55162,-83362 55212,-83137 55362,-83125
-Pannwitzstr.: Qualität (laut ADFC-Karte der südliche Teil bis Olbendorfer Str. gut geeignet)?	? 4276,19086 4478,19116 4619,19267 4705,19425 4753,19728 4750,19881 4728,20003
 Rathsdorf - Neureetz: Qualität?	? 57262,39111 58536,40073 59006,40251 60616,41952
 Neureetz - Neuküstrinchen: Qualität?	? 60616,41952 61228,42853 61004,43892 60555,45228 60733,46675
 Bad Freienwalde - Altranft: Qualität?	? 53317,43391 53966,43437 54614,43666 55947,42866 55820,42396 56219,41473
@@ -867,7 +866,6 @@ Johannisthaler Chaussee - Gutschmidtstr.: Qualität (laut ADFC-Karte gut geeignet
 Weg entlang der U-Bahn-Betriebswerkstatt: Qualität (laut ADFC-Karte gut geeignet)?	? 13162,3576 13356,3467 13624,3355 13740,3252
 Britzer Park - Weg entlang der U-Bahn-Betriebswerkstatt: Qualität (laut ADFC-Karte gut geeignet)?	? 13350,3518 13356,3467
 Johannisthaler Chaussee - Lipschitzallee: Qualität (laut ADFC-Karte gut geeignet)?	? 13931,2579 13988,2614 14087,2494 14224,2368 14324,2298 14621,2147
-Straße 270: Qualität? Nur für Radfahrer offen?	? -5870,10847 -4832,11047
 Hier führt die Route Sanssouci entlang: wie geht es weiter, Qualität, Straßennamen?	? -15557,809 -15440,1121 -15251,1200
 Wublitzbrücke - Töplitz: Qualität (wahrscheinlich Feld- oder Waldweg)?	? -21681,702 -22045,765 -22525,1230 -22911,1634 -23105,2016 -23207,2284
 Nattwerder - Golm: Qualität (wahrscheinlich Feldweg)?	? -21043,1586 -20807,1383 -20955,978 -21221,764
@@ -928,6 +926,9 @@ Bahnhofstr.: Qualität in diesem Abschnitt (ostl. d. Bergstr.)?	? -2657,-2907 -27
 Bootshausweg: beleuchtet?	? -1023,16173 -963,16538 -1036,16593
 Bootshausweg: beleuchtet?	? -1036,16593 -1073,16610 -1067,16635 -1092,16659 -1156,16689 -1190,16714 -1214,16745 -1229,16773 -1406,16907 -1465,16957 -1520,16989 -1564,17001 -1610,17007 -1664,17009 -1743,16990 -1723,16973 -1690,16971 -1676,16957 -1673,16939 -1725,16878 -1704,16870 -1684,16853 -1655,16813
 Spandauer Hauptpromenade: beleuchtet?	? -1725,16878 -1750,16879 -1778,16873 -1840,16890 -1882,16850 -1876,16790 -1906,16620 -1939,16427
+Plantagenstr. (Wedding): existiert für Radfahrer eine Verbindung zur Anton- bzw.Ruheplatzstr. Qualität / Behinderungen?	? 7595,15596 7528,15589
+Plantagenstr. (Wedding): Qualität?	? 7796,15590 7595,15596
+Scharnweberstr. (Friedrichshagen): Qualität?	? 25706,4723 25720,4832
 # added from ampeln-orig
 wirklich? (?)	? 9215,3599
 Wirklich? (?)	? -3775,17087

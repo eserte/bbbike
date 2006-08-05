@@ -1,5 +1,5 @@
 #: title: Regional- und Fernbahnstrecken
-#: version: $Id: rbahn-orig,v 5.22 2006/08/02 21:20:43 eserte Exp $
+#: version: $Id: rbahn-orig,v 5.22 2006/08/02 21:20:43 eserte Exp eserte $
 #:
 # "stillgelegt" meint hier: kein Personenverkehr auf diesen Gleisen
 # Werder - Brandenburg
@@ -169,7 +169,7 @@ RB20	RC -18796,14887 -18757,15396 -18674,15799 -18525,16118 -18270,16500 -16411,
 # Brieselang (Kreuz): Nauen - Hennigsdorf
 	R0 -16453,18880 -16153,18839 -15662,18969 -15342,19183
 # Brieselang (Kreuz) - Hennigsdorf (Kreuz)
-RE6,RB20	RC -15342,19183 -14917,19569 -14556,19911 -13887,20543 -12733,21643 -11285,22826 -8931,24667 -5030,27644 -4257,27924
+RE6,RB20	RC -15342,19183 -14917,19569 -14556,19911 -13875,20548 -12733,21643 -11285,22826 -8931,24667 -5030,27644 -4257,27924
 # Hennigsdorf, Einfahrt West
 RE6,RB20	RC -4257,27924 -3954,27904 -3673,27671 -3576,27376
 # Fürstenwalde - Bad Saarow

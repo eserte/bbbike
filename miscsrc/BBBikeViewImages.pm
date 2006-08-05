@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.9 2006/07/27 22:41:47 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.10 2006/08/05 22:43:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -14,12 +14,12 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $geometry);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
 my $iso_date_rx = qr{(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})};
 
 $viewer = "_internal" if !defined $viewer;
-$geometry = "max" if !defined $geometry;
+$geometry = "third" if !defined $geometry;
 
 sub register {
     my $pkg = __PACKAGE__;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.47 2006/08/04 06:18:53 eserte Exp $
+# $Id: GpsmanData.pm,v 1.48 2006/08/05 20:08:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005 Slaven Rezic. All rights reserved.
@@ -44,7 +44,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.47 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.48 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -365,6 +365,13 @@ sub parse_and_set_coordinate {
     $obj->Longitude($long);
 }
 
+sub _is_datetime {
+    my($self, $datetime) = @_;
+    return 1 if $datetime =~ /^(\d{4})-(\d{2})-(\d{2})\s+(\d{1,2}):(\d{2}):(\d{2})/;
+    return 1 if $datetime =~ /^(\d{1,2})-([^-]{3})-(\d{4})\s+(\d{1,2}):(\d{2}):(\d{2})/;
+    return 0;
+}
+
 # argument: line in $_
 # return value: Waypoint object
 sub parse_waypoint {
@@ -375,14 +382,11 @@ sub parse_waypoint {
     $wpt->Ident($f[$f_i++]);
     $wpt->Comment($f[$f_i++]);
 
-    if ($self->Version >= 2) {
+    # Here used to be a Version 1/2 check, but did not work?!
+    if ($self->_is_datetime($f[$f_i])) {
 	$wpt->DateTime($f[$f_i++]);
     }
 
-#     if ($f[$f_i] =~ /^(\d{2}-[a-zA-Z]{3}-\d{4} .*)/) {
-# 	$wpt->DateTime($f[$f_i]);
-# 	$f_i++;
-#     }
     $self->parse_and_set_coordinate($wpt, \@f, \$f_i);
 
     if ($#f >= $f_i) {

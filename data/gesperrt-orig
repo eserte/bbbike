@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.113 2006/08/03 19:28:56 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.114 2006/08/05 21:59:28 eserte Exp $
 #:
 ###################################################################
 #
@@ -150,7 +150,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369
 #: by: Rolf Schröder <001301c0fe12$f9c9eb00$fe78a8c0@pc166>
 Marksburgstr.	1 18319,9218 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18005,6681 18046,6687 18146,6703 18353,6658 18494,6588
-Griechische Allee	1 18494,6588 18262,6606 18080,6670 18049,6671 18008,6672 17962,6674
+Griechische Allee	1 18494,6588 18262,6606 18159,6642 18080,6670 18049,6671 18008,6672 17962,6674
 Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5590,11118 5542,11075
 (Waterlooufer - Zossener Str.)	1 9849,10202 9812,10211
 Greinerstr.	1 8340,3365 8327,2975
@@ -629,8 +629,8 @@ tragen (Treppe)	0:30 1715,3257
 #: by: Jessica Mai:
 tragen (Treppe)	0:30 6187,12851
 #: by: Andreas Mühlhausen: vvv
-tragen (Treppe)	0:30 2943,13550
-tragen (Treppe)	0:30 3025,13568
+tragen (Treppe)	0:30 2906,13616
+tragen (Treppe)	0:30 3001,13628
 #: by: ^^^
 #: by: Sirko:
 tragen (Treppe, ca. 10 Stufen)	0:30 20933,2390
@@ -744,7 +744,8 @@ Monbijoubrücke: die behelfsmäßige Brücke wurde abgerissen, der Neubar ist voraus
 Spreeufer vor dem Monbijoupark: gesperrt wegen Bauarbeiten	2:inwork 10100,12876 9977,12912
 #: by: joern (js):
 Uferweg: wegen Bauarbeiten gesperrt	2:inwork 14903,10403 15059,10289
-Voltairestr. (Arbeiten an "Alexa", voraussichtlich bis 2006-05-31)	2:inwork 11323,12484 11209,12430
+#: note: nach den Bauarbeiten asphaltiert:
+Dircksenstr. (Arbeiten an "Alexa", voraussichtlich bis 2006-12-31)	2:inwork 11283,12278 11209,12430 11156,12581 11057,12715
 #XXX del Elsenstr.	1:inwork 13760,9188 13657,9063 13504,8882
 #XXX del für Radfahrer nicht relevant: Malchower Chaussee (Pankow) Richtung stadteinwärts zwischen Ortnitstr. und Nachtalbenweg Baustelle, veränderte Verkehrsführung. Für die Arbeiten im Abschnitt von Darßer str. bis Nachtalbenweg wird der Verkehr über Darßer Str. - Nachtalbenw. umgeleitet (bis 30.04.2005)	1:inwork 15181,18137 14828,17856
 Schloßplatz (Bauarbeiten am Palast der Republik)	2:inwork 10267,12305 10173,12492
@@ -949,3 +950,13 @@ tragen	0:60 -9377,-625
 tragen (ca. 60 Stufen)	0:120 -8120,-1500
 tragen	0:60 -8467,-1417
 Hausotterpl.	1 8320,18185 8345,18182 8361,18160 8355,18142 8334,18127 8310,18127 8296,18145 8299,18172 8320,18185
+#: by: Holger Buechner [AM]
+Brauerstr.	1 5167,2160 5317,2345
+#: by: Annett Nisch-Kabelka [AM]
+Hentigstr.	1 18514,8773 18548,8942 18586,9172 18621,9404
+#: by: rene carmosin [AM]
+Grußdorfstr.	1 2323,20214 2109,20188
+#: by: rene carmosin [AM]
+Am Buddeplatz	1 2323,20214 2336,20117
+Karl-Pokern-Str.	1 25860,5067 25860,5159 25857,5184 26026,5179 26028,5153 26034,5056
+Karl-Pokern-Str.	1 25860,5159 26028,5153

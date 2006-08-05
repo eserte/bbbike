@@ -2,7 +2,7 @@
 #: encoding: utf-8
 #: title.de: Orte im weiteren Umland
 #: title.en: Places far away
-#: version: $Id: orte2-orig,v 4.25 2006/07/25 19:53:20 eserte Exp $
+#: version: $Id: orte2-orig,v 4.26 2006/08/05 22:00:07 eserte Exp $
 #:
 # Mecklenburg-Vorpommern, Brandenburg
 Rostock	5 -79160,185302
@@ -135,7 +135,7 @@ Wittenhagen	0 13185,104051
 Fürstenhagen	1 15430,103770
 Gützkow	3 7587,170583
 Möllenbeck	2 4003,109246
-Karstädt	2 -103780,81363
+Karstädt	2 -103601,81383
 Prenzlau	4 39682,101543
 Bündigershof	0 42981,101756
 Wollenthin	0 43200,102737
@@ -220,7 +220,7 @@ Wesenberg	3 -21335,96890
 Ducherow	2 33001,151572
 Jarmen	3 3419,168376
 Ückeritz	2 50843,179488
-Ludwigslust	4 -120795,100343
+Ludwigslust	4 -120780,100414
 Grabow|(Mecklenburg)	3 -116692,94946
 Schwedt	5 69238,73315
 Strasburg	3 31214,122842
@@ -425,6 +425,8 @@ Großenbrode	3 -149473,215268
 Oldenburg|i. Holstein	3 -164504,205797
 Heiligenhafen	4 -158722,214977
 Lütjenburg	3 -185716,205664
+Mustin	1 -163452,139247
+Ratzeburg	2 -171209,140734
 Kiel	5 -215604,208878
 Eckernförde	4 -236318,224563
 Damp	2 -228311,236666

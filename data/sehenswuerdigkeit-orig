@@ -1,6 +1,6 @@
 #: title.de: Sehenswürdigkeiten und andere wichtige Gebäude
 #: title.en: Sights and points of interest
-#: version: $Id: sehenswuerdigkeit-orig,v 4.54 2006/07/25 19:53:35 eserte Exp $
+#: version: $Id: sehenswuerdigkeit-orig,v 4.55 2006/08/05 21:59:38 eserte Exp eserte $
 #:
 ######################################################################
 #
@@ -35,6 +35,7 @@ Fernsehturm	IMG:sehenswuerdigkeit_img/fernsehturm.gif|ANCHOR:s 10749,12785
 Rotes Rathaus	F:SW 10609,12517 10703,12581 10764,12495 10679,12432
 Stadthaus	F:SW 10841,12356 10836,12280 10939,12254 10945,12378
 Klosterkirche (Ruine)	SW|IMG:church.gif 10950,12533
+Parochialkirche	SW|IMG:church.gif 10999,12378
 Ermelerhaus	SW 10774,11889
 Märkisches Museum	F:SW 11152,12028 11147,12006 11159,12000 11154,11969 11115,11976 11096,11950 11089,11955 11101,11975 11092,11977 11083,11967 11076,11972 11085,11985 11095,11983 11115,12009 11126,12010 11132,12032
 Bärenzwinger im Köllnischen Park	SW 11096,11914
@@ -67,6 +68,7 @@ Schloß Bellevue	F:SW 6976,12317 6953,12342 6907,12299 6930,12275 6917,12263 6883
 Gedenkstätte Deutscher Widerstand	F:SW 7492,11306 7566,11276 7545,11228 7471,11256
 Friedrichstadtpalast	F:SW 9275,13134 9282,13072 9381,13080 9368,13141
 Kalkscheune	SW 9424,13140
+Tacheles	SW 9332,13319
 Kanzleramt	F:SW 8094,12632 7826,12632 7933,12727 8093,12727
 #: XXX: Problem: das Dach überdeckt die Straße!
 #Paul-Löbe-Haus	F:SW 8295,12727 8467,12728 8467,12611 8295,12611
@@ -434,6 +436,7 @@ Schloss Kossenblatt	SW 57796,-30982
 Eisenbahnmuseum Gramzow	SW 50691,90514
 Cargolifter-Halle Brand (Tropical Island)	SW 34937,-40443
 Schloss Paretz	SW -25365,6328
+Obelisk Döberitzer Heide	SW -11654,12720
 ######################################################################
 #
 #  AUSSERHALB BRANDENBURGS
