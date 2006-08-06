@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.32 2006/08/06 18:00:18 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.33 2006/08/06 19:23:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -158,6 +158,8 @@ eval {
 		       };
 	    $need_bbbike_css = 1;
 	    my $htmltpl = "$FindBin::RealBin/../html/newstreetform.tpl.html";
+	    #warn $htmltpl;
+	    die "Can't read <$htmltpl>" if !-r $htmltpl;
 	    $t->process($htmltpl, $vars, \$add_html_body)
 		or die $t->error;
 	};
