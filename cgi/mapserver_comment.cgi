@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.29 2006/08/03 19:43:11 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.32 2006/08/06 18:00:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -29,11 +29,11 @@ use lib (#"/home/e/eserte/src/bbbike",
 use BBBikeVar;
 use BBBikeCGIUtil qw();
 use Data::Dumper;
-use Mail::Send;
+use MIME::Lite;
 use File::Basename;
 use CGI qw(:standard -no_xhtml);
 use vars qw($debug $bbbike_url $bbbike_root $bbbike_html $use_cgi_bin_layout
-	    @Mail_Send_open);
+	    @MIME_Lite_send);
 
 eval {
     local $SIG{'__DIE__'};
@@ -43,6 +43,8 @@ eval {
 warn $@ if $@;
 
 use vars qw($to $cc $comment);
+
+sub newstreetform_extra_html ($$);
 
 eval {
     undef $to;
@@ -77,16 +79,10 @@ eval {
     my $author = param('author');
     my $by     = $author || $email;
 
-    my $subject = param("subject") || "BBBike/Mapserver comment";
+    my $subject = param("subject") || "BBBike/Mapserver-Kommentar";
     if ($by) {
-	$subject .= " by $by";
+	$subject .= " von $by";
     }
-    $subject = substr($subject, 0, 70) . "..." if length $subject > 70;
-    my $msg = Mail::Send->new(Subject => $subject,
-			      To      => $to,
-			      (defined $cc ? (Cc => $cc) : ()),
-			     );
-    die "Kann kein Mail::Send-Objekt erstellen" if !$msg;
 
     my $mapx = param("mapx");
     my $mapy = param("mapy");
@@ -115,16 +111,9 @@ eval {
 	}
     }
 
-    if ($email) {
-	$msg->add("Reply-To", $email);
-    }
-
-    my $fh = $msg->open(@Mail_Send_open);
-    my $die_later;
-    if (!$fh) {
-	$die_later = 1;
-	$fh = \*STDERR;
-    }
+    my $plain_body = "";
+    my $add_html_body;
+    my $need_bbbike_css = 0;
 
     if (param("formtype") && param("formtype") =~ /^(newstreetform|fragezeichenform)$/) {
 	open(BACKUP, ">>/tmp/newstreetform-backup")
@@ -132,30 +121,63 @@ eval {
 	print BACKUP "-" x 70, "\n";
 	print BACKUP scalar localtime;
 	print BACKUP "\n";
+	my $data = {};
 	for my $param (param) {
 	    my $val = param($param);
+	    $data->{$param} = $val;
 	    next if $val eq '' && $param !~ /^supplied/;
 	    my $dump = Data::Dumper->new([$val],[$param])->Indent(1)->Useqq(1)->Dump;
 	    print BACKUP $dump;
-	    print $fh $dump;
+	    $plain_body .= $dump;
 	}
 	my $dump = Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
 	print BACKUP $dump;
-	print $fh $dump;
+	$plain_body .= $dump;
 	close BACKUP;
+
+	if ($data->{strname} !~ m{^\s*$}) {
+	    $subject .= ": $data->{strname}";
+	}
+	$subject = substr($subject, 0, 70) . "..." if length $subject > 70;
+
+	eval {
+
+	    my $extra_html = newstreetform_extra_html
+		($data, {Subject => $subject,
+			 To => $email,
+			});
+
+	    require Template;
+	    my $t = Template->new({ RELATIVE => 1,
+				    ABSOLUTE => 1,
+				  });
+	    my $vars = { data => $data,
+			 extra_html => $extra_html,
+			 bbbikecss => "http://bbbike.radzeit.de/BBBike/html/bbbike.css",
+			 # bbbikecss => "cid:bbbike.css", # XXX see below
+		       };
+	    $need_bbbike_css = 1;
+	    my $htmltpl = "$FindBin::RealBin/../html/newstreetform.tpl.html";
+	    $t->process($htmltpl, $vars, \$add_html_body)
+		or die $t->error;
+	};
+	if ($@) {
+	    $plain_body .= "\nERROR processing template: $@";
+	}
+
     } elsif (param("formtype") && param("formtype") eq 'bbbikeroute') {
 	$comment =
 	    "Von: " . ($by || "anonymous\@bbbike.de") . "\n" .
 	    "An:  $to\n\n" .
 	    "Kommentar:\n" .
 	    param("comment") . "\n" .
-	    "Query: " . param("query") . "\n",
-	print $fh $comment . "\n";
+	    "Query: " . param("query") . "\n";
+	$plain_body .= $comment . "\n";
 	$link1 = $bbbike_url . "?" . param("query");
 	$link2 = "http://www/bbbike/cgi/bbbike.cgi?" . param("query");
-	print $fh "Remote: ", $link1, "\n";
-	print $fh "Lokal:  ", $link2, "\n";
-	print $fh "\n" . Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
+	$plain_body .= "Remote: " . $link1 . "\n";
+	$plain_body .= "Lokal:  " . $link2 . "\n";
+	$plain_body .= "\n" . Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
     } else {
 	$comment =
 	    "Von: " . ($by || "anonymous\@bbbike.de") . "\n" .
@@ -163,14 +185,54 @@ eval {
 	    (defined $mapx ? "Kartenkoordinaten: " . int($mapx) . "," . int($mapy) . "\n\n" : "") .
 	    "Kommentar:\n" .
 	    param("comment") . "\n";
-	print $fh $comment . "\n";
-	print $fh "Remote: ", $link1, "\n" if defined $link1;
-	print $fh "Lokal:  ", $link2, "\n" if defined $link2;
-	print $fh "\n" . Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
+	$plain_body .= $comment . "\n";
+	$plain_body .= "Remote: " . $link1 . "\n" if defined $link1;
+	$plain_body .= "Lokal:  " . $link2 . "\n" if defined $link2;
+	$plain_body .= "\n" . Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
     }
 
-    die "Kann open mit Mail::Send->open(@Mail_Send_open) nicht durchführen" if $die_later;
-    $fh->close or die "Can't close mail filehandle";
+    my $is_multipart = defined $add_html_body && $add_html_body ne "";
+    $subject = substr($subject, 0, 70) . "..." if length $subject > 70;
+    my $msg = MIME::Lite->new(Subject => $subject,
+			      To      => $to,
+			      (defined $cc ? (Cc => $cc) : ()),
+			      ($email ? ("Reply-To" => $email) : ()),
+			      ($is_multipart
+			       ? (Type => "multipart/mixed")
+			       : (Type => "text/plain; charset=iso-8859-1",
+				  Data => $plain_body,
+				 )
+			      ),
+			     );
+    if (!$msg) {
+	die "Kann kein MIME::Lite-Objekt erzeugen. Body war:\n$plain_body\n";
+    }
+
+    if ($is_multipart) {
+	$msg->attach(Type => "text/html; charset=iso-8859-1",
+		     Data => $add_html_body,
+		     Filename => "newstreetform.html",
+		    );
+	$msg->attach(Type => "text/plain; charset=iso-8859-1",
+		     Data => $plain_body,
+		    );
+## Unfortunately, this does not work with Mozilla Mail:
+# 	if ($need_bbbike_css) {
+# 	    $msg->attach(Type => "text/css",
+# 			 Path => "$FindBin::RealBin/../html/bbbike.css",
+# 			 Id => "bbbike.css",
+# 			);
+# 	}
+    }
+
+    my @send_args = @MIME_Lite_send;
+    if (!@send_args) {
+	# This is a default, but I don't like the global usage of
+	# MIME::Lite->send, so reset it always:
+	#@send_args = ("sendmail");
+    }
+    $msg->send(@send_args)
+	or die "Can't send mail with args <@send_args>. Body was:\n$plain_body\n";
 
     my $cookie = cookie(-name => 'mapserver_comment',
 			-value => { email => $email,
@@ -206,11 +268,66 @@ sub error_msg {
     print header,
 	  start_html(-title=>"Fehler beim Versenden",
 		     -style=>{'src'=>"$bbbike_html/bbbike.css"}),
-	  "Der Kommentar konnte wegen eines internen Fehlers ($_[0]) nicht abgesandt werden. Bitte stattdessen eine Mail an ", a({-href=>"mailto:$to"},$to),
+	  "Der Kommentar konnte wegen eines internen Fehlers ($_[0]) nicht abgesandt werden. Bitte stattdessen eine Mail an ", a({-href=>"mailto:$to?" . CGI->new(body=>$comment)->query_string},$to),
 	  " mit dem folgenden Inhalt versenden:",br(),br(),
-	  pre($comment),
+	      pre($comment),
 	  end_html;
     exit;
+}
+
+sub newstreetform_extra_html ($$) {
+    my($data, $header) = @_;
+    my $extra_html = "";
+
+    my $strname = $data->{supplied_strname} || "";
+    my $name = $data->{author};
+    if (!$name) {
+	($name = $data->{email}) =~ s{\@.*}{...};
+    }
+    if (!$name) {
+	$name = "anonymous";
+    }
+    my $cat_text = $data->{Qdesc_1} || "";
+    my $cat = $data->{Qcat_1} || "";
+    my $bbd_suggestion = <<EOF;
+#: by: $name:
+$strname: $cat_text\t$cat 
+EOF
+
+    $extra_html .= "<textarea rows='4' cols='80'>" . CGI::escapeHTML($bbd_suggestion) . "</textarea><br>";
+
+    my $reply_to = $header->{To};
+    my $cc = 'newstreet@bbbike.de, ' . $BBBike::EMAIL;
+    my $body =<<EOF;
+Hallo $name,
+
+danke für deinen Eintrag. Die Straße "$strname" wird demnächst bei
+BBBike verfügbar sein.
+
+Gruß,
+    das BBBike-Team
+
+EOF
+    my $subject = "Re: $header->{Subject}";
+    $extra_html .= <<EOF;
+<hr>Antwort-Mail:<br>
+EOF
+    my $mailto_link = "mailto:$reply_to?";
+    CGI->import('-oldstyle_urls');
+    $body =~ s{\n}{ \r\n}g; # really?
+    # This hack is needed for Mozilla Mail
+    require Encode;
+    Encode::from_to($body, "iso-8859-1", "utf-8");
+    my $q = CGI->new({subject => $subject,
+		      ($cc ? (cc => $cc) : ()),
+		      body => $body,
+		     });
+    $mailto_link .= $q->query_string;
+
+    $extra_html .= <<EOF;
+<div><a href="$mailto_link">Mail per Browser-Mailprogramm eingeben und senden</a></div>
+EOF
+    $extra_html;
 }
 
 =head1 NAME

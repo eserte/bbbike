@@ -568,11 +568,11 @@ userdel	q4 7070,34665 7435,34963 7443,36175
        },
        {
          'until' => 1158357599,
-         'text' => 'Simon-Dach-Str.: Bauarbeiten an der Wühlischstr. Richtung Revaler Str., nur Bürgersteigbenutzung möglich, bis 2006-09-15 ',
+         'text' => 'Simon-Dach-Str.: Bauarbeiten an der Wühlischstr., Einbahnstraße, bis 2006-09-15 ',
          'from' => 1152363677,
-         'data' => 'userdel	q4 13890,11411 13954,11647
+         'data' => 'userdel	1 13890,11411 13954,11647
 ',
-         'type' => 'handicap'
+         'type' => 'gesperrt'
        },
        {
          'until' => 1167605999,
@@ -749,14 +749,7 @@ userdel	1 10781,13002 10706,13043
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1154815200,
-         'text' => 'B 107 zw. Tüchen und Mesendorf Vollsperrung 04.08.2006-05.08.2006 ',
-         'from' => 1154556000,
-         'data' => 'userdel	2 -79120,73107 -78454,74544
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1167606000,
          'text' => 'K 6308 KG nördl. Bagow-L 91 westl.Nauen zw. OL Klein Behnitz und Groß Behnitz Straßenbauarbeiten Vollsperrung 10.07.2006-31.12.2006 ',
@@ -791,6 +784,15 @@ userdel	1 10954,12635 11057,12715 11134,12793
          'data' => 'userdel	q4 16861,5935 17156,6235 17239,6182 17290,6228
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_70880',
+         'until' => 1157061599,
+         'text' => 'Invalidenstr. in Richtung Tiergartentunnel, zwischen Ackerstr. und Bergstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2006)',
+         'from' => 1154876732,
+         'data' => 'userdel	1 9810,14066 9663,14036
+',
+         'type' => 'gesperrt'
        }
      
 );

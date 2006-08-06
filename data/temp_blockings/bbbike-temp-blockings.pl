@@ -5067,10 +5067,10 @@ EOF
      },
      { from  => 1152363677, # 2006-07-08 15:01
        until => 1158357599, # 2006-09-15 23:59
-       text  => 'Simon-Dach-Str.: Bauarbeiten an der Wühlischstr. Richtung Revaler Str., nur Bürgersteigbenutzung möglich, bis 2006-09-15 ',
-       type  => 'handicap',
+       text  => 'Simon-Dach-Str.: Bauarbeiten an der Wühlischstr., Einbahnstraße, bis 2006-09-15 ',
+       type  => 'gesperrt',
        data  => <<EOF,
-userdel	q4 13890,11411 13954,11647
+userdel	1 13890,11411 13954,11647
 EOF
      },
      { from  => 1152363870, # 2006-07-08 15:04
@@ -5328,6 +5328,15 @@ EOF
        source_id => 'INKO_84352',
        data  => <<EOF,
 userdel	q4 16861,5935 17156,6235 17239,6182 17290,6228
+EOF
+     },
+     { from  => 1154876732, # 2006-08-06 17:05
+       until => 1157061599, # 2006-08-31 23:59
+       text  => 'Invalidenstr. in Richtung Tiergartentunnel, zwischen Ackerstr. und Bergstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2006)',
+       type  => 'gesperrt',
+       source_id => 'INKO_70880',
+       data  => <<EOF,
+userdel	1 9810,14066 9663,14036
 EOF
      },
     );

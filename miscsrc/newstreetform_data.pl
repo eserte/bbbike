@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: newstreetform_data.pl,v 1.27 2006/08/01 19:40:16 eserte Exp $
+# $Id: newstreetform_data.pl,v 1.28 2006/08/05 22:47:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -460,7 +460,13 @@ sub my_html_footer {
 <div class="recdone">Mail bereits bearbeitet</div>
 <div class="recmaybedone">Mail höchstwahrscheinlich bearbeitet</div>
 <div class="recundone">Mail unbearbeitet</div>
-<div class="rectick">Um Rückfrage gebeten</div>
+<div class="rectick">Genauere Betrachtung erforderlich</div>
+<h2>newstreetform_data-Optionen</h2>
+<ul>
+<li>ignore_empty=$ignore_empty
+<li>ignore_replied=$ignore_replied
+<li>start_mail_id=$start_mail_id
+</ul>
 </body>
 </html>
 EOF

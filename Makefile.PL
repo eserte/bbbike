@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.126 2006/06/27 21:14:32 eserte Exp $
+# $Id: Makefile.PL,v 1.126 2006/06/27 21:14:32 eserte Exp eserte $
 
 use 5.005;
 
@@ -85,8 +85,10 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
   [qw/YAML	0	all	2	cgi/,
    'optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings'],
 
-  [qw/Mail::Mailer	1.53	unix	2	mail/,
+  [qw/Mail::Mailer	1.53	unix	0	mail/,
    'falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will'],
+  [qw/MIME::Lite	0	unix	2	mail/,
+   'Versenden von Benutzer-Kommentare im Webinterface'],
 
   [qw/String::Approx	2.7	all	2	base/,
    'oder man verwendet agrep (mindestens Version 3.0)'],
