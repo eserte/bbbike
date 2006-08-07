@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.16 2006/07/09 12:21:32 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.18 2006/08/07 20:41:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -694,7 +694,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.16 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.18 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -5230,6 +5230,16 @@ sub header {
     # XXX check the standards:
     push @$head, $q->meta({-name => 'revisit-after',
 			   -content => "7 days"});
+    # For http://geourl.org/: vvv
+    my($my_lat, $my_long) = (52.507377, 13.460589);
+    push @$head, $q->meta({-name => 'ICBM',
+			   -content => "$my_lat, $my_long"});
+    push @$head, $q->meta({-name => 'DC.title',
+			   -content => "BBBike - Routenplaner für Radfahrer in Berlin und Brandenburg"});
+    # ^^^
+    # Another one: http://geotags.com/geobot/add-tags.html
+    push @$head, $q->meta({-name => "geo.position",
+			   -content => "$my_lat;$my_long"});
     push @$head, "<base target='_top'>"; # Can't use -target option here
     push @$head, cgilink({-rel  => "shortcut icon",
 #  			  -href => "$bbbike_images/favicon.ico",
@@ -6054,7 +6064,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/07/09 12:21:32 $';
+    my $cgi_date = '$Date: 2006/08/07 20:41:04 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {
