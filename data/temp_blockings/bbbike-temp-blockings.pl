@@ -5219,8 +5219,8 @@ userdel	1 15904,12340 15863,11992
 EOF
      },
      { from  => 1154210400, # 2006-07-30 00:00
-       until => 1155074400, # 2006-08-09 00:00
-       text  => 'L 015 B109 südl. Prenzlau-Boitzenburg OD Gollmitz Einbau Deckschicht Vollsperrung 31.07.2006-08.08.2006 ',
+       until => 1155333600, # 2006-08-12 00:00
+       text  => 'L 015 B109 südl. Prenzlau-Boitzenburg OD Gollmitz Einbau Deckschicht Vollsperrung 31.07.2006-11.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 30743,99403 30504,99595
@@ -5337,6 +5337,22 @@ EOF
        source_id => 'INKO_70880',
        data  => <<EOF,
 userdel	1 9810,14066 9663,14036
+EOF
+     },
+     { from  => 1154815200, # 2006-08-06 00:00
+       until => 1164927600, # 2006-12-01 00:00
+       text  => 'B 109 B167-Zehdenick OD Falkenthal grundhafter Straßenbau Vollsperrung 07.08.2006-30.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 2775,56089 2034,55227
+EOF
+     },
+     { from  => 1155420000, # 2006-08-13 00:00
+       until => 1170284400, # 2007-02-01 00:00
+       text  => 'B 167 Friedrich-Engels-Str. OD Alt Ruppin, zw. Rhinbrücke u. Brückenstr. Straßenbauarbeiten Vollsperrung 14.08.2006-31.01.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -28866,59954 -28692,59635
 EOF
      },
     );
