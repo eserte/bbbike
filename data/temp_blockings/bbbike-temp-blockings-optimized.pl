@@ -584,14 +584,7 @@ userdel	q4 7070,34665 7435,34963 7443,36175
        },
        undef,
        undef,
-       {
-         'until' => 1154901600,
-         'text' => 'L 023 Storkow-Grünheide Brücke über die Müggelspree bei Neuhartmannsdorf Asphaltarbeiten Vollsperrung 05.08.2006-06.08.2006 ',
-         'from' => 1154642400,
-         'data' => 'userdel	2 40333,-4484 40503,-4571 40652,-4743
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'INKO_84234_COPY_14',
          'until' => 1159653599,
@@ -776,15 +769,7 @@ userdel	1 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'INKO_84352',
-         'until' => 1154988000,
-         'text' => 'Rixdorfer Str. (Treptow) in beiden Richtungen zwischen Südostallee und Schnellerstr. Baustelle, Straße vollständig gesperrt (bis 07.08.2006 5 Uhr)',
-         'from' => 1154786970,
-         'data' => 'userdel	q4 16861,5935 17156,6235 17239,6182 17290,6228
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_70880',
          'until' => 1157061599,

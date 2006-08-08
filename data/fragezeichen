@@ -570,7 +570,7 @@ Naturpark Schöneberger Südgelände: Gibt es eine Verbindung zum Prellerweg?	? 733
 Petersallee: Qualität (möglicherweise Kopfsteinpflaster)?	? 5444,16528 5602,16718 5791,16910
 Kirchsteig (Altglienicke, Bohnsdorf): Qualität?	? 21319,-178 21364,-168 21409,-109 21529,70
 Vergissmeinnichtweg: Qualität?	? 21608,85 21594,167
-Lindenufer/Lindensteg: existiert eine Verbindung zum Altstädter Ring? zum S-Bahnhof? Qualität anscheinend Verbundsteinpflaster. green1/2?	? -3583,14020 -3366,13938 -3251,14050 -3049,14236 -2896,14524
+Lindenufer/Lindensteg: existiert eine Verbindung zum Altstädter Ring? zum S-Bahnhof? Qualität Verbundsteinpflaster oder Asphalt? Ist das Lindenufer eine Einbahnstraße? Auch für Radfahrer?	? -3438,13992 -3366,13938 -3251,14050 -3116,14141 -3049,14236 -2896,14524
 Wünsdorf: steht hier mittlerweile eine Eisenbahnbrücke?	? 15229,-27157 15682,-26971 15960,-26906
 Sandgrasweg: Qualität?	? 2843,21120 2861,21089 2896,21031
 Sandgrasweg - Havelmüllerweg: Qualität?	? 2896,21031 2914,20944 2916,20870
@@ -954,6 +954,7 @@ Dillgesstr.: gut geeignet (laut ADFC-Karte)	? 6218,3302 6308,3204 6411,3092 6451
 Hohenschönhausener Weg: asphaltiert (laut Radzeit 3/2006)	? 15611,18547 16317,18020
 (Uferpromenade Spreebogenpark) (hat dieser Weg einen Namen (Ludwig-Erhard-Ufer?))	? 7670,12576 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871
 (Südkreuz) (Ist es weiterhin möglich, vom Werner-Voß-Damm/Papestr. zur Suadicanistr. zu gelangen?)	? 7959,7609 7934,7621 7854,7572
+Czarnikauer Str. (Ist die Czarnikauer eine Einbahnstraße? Auch für Radfahrer?)	? 10225,16436 10449,16415 10613,16403
 (Am Stichkanal - Uferweg am Teltowkanal) (Qualität des Verbindungsweges)	? 2736,645 2784,589
 (Weg zur Krampenburg) (ist das ein offizieller Name mit Ausschilderung?)	? 27609,305 27571,262 27171,155 27273,-106 27407,-401 27552,-741 27559,-1365 27357,-1545 27323,-1671
 Knollstr. (letztes Stück Privatstr.?)	? 17609,164 17721,239
@@ -989,6 +990,7 @@ Braunschweiger Ufer: asphaltiert (zumindest Richtung Osten von der Rungiusstr. a
 Braunschweiger Ufer: Parkweg (zumindest Richtung Westen von der Rungiusstr. aus:)	? 13077,5893 12718,5845
 Busseallee: Kopfsteinpflaster (ist der Abschnitt zwischen Fischerhüttenstr. und Beerenstr. auch Kopfsteinpflaster?)	? 166,3040 82,3166 -266,3648
 (Am Britzer Verbindungskanal): holpriger Feldweg (wahrscheinlich wird das noch nicht asphaltierte Teilstück bis 2006-09-01 fertiggestellt:)	? 14319,5993 14212,6000
+Mannheimer Str. (Mahlsdorf): gute Qualität (was für einen Belag hat die Straße? Asphalt oder Beton?)	? 24149,9387 23895,9462 23717,9509 23513,9567 23411,9578 23246,9596 23188,9593
 Achenbachstr.: Kopfsteinpflaster (Kopfsteinpflaster eher gut oder normal-mäßig?)	? -3354,14971 -3322,14814
 Gundelfinger Str.: Kopfsteinpflaster (Kopfsteinpflaster eher gut oder normal-mäßig?)	? 18735,9421 18697,9153 18653,8922 18609,8717
 Haßfurter Weg: mäßiger Asphalt (Kopfsteinpflaster oder Asphalt?)	? 11847,18338 11812,18484
@@ -1037,7 +1039,6 @@ Reichenberg: grobes Kopfsteinpflaster (genauer Abschnitt fehlt)	? 58453,24209 58
 Dianastr.: gute Qualität (asphaltiert oder betoniert?)	? -8458,-2461 -8302,-2469 -8244,-2373 -8191,-2259 -8173,-2151
 Rollwitz - Damerow: Kopfsteinpflaster/Feldweg (genauere Qualitätsbeschreibung fehlt)	? 46872,118656 46914,117945 47156,116507 47087,115725
 Breitscheidplatz/Budapester Str.: Fußgängerverkehr, Veranstaltungen (wurde hier ein Radweg oder eine Radspur gebaut?)	? 5652,11004 5716,10978 5831,10978 6135,10982
-(S-Bahnbrücke Wartenberg): Fußgänger? (Stimmt das?)	? 16923,18650 16990,18694 17114,18775
 Marzahner Promenade - Mühlenbecker Weg: Fußgänger (Stimmt das?)	? 20222,15519 20150,15678
 Barsekowstr. (unbeleuchtet?)	? 5344,4672 5417,4647 5476,4626 5589,4617
 Stadtpark Steglitz (unbeleuchtet?)	? 5589,4617 5747,4697 5765,4693 5931,4659 6114,4709
