@@ -27,7 +27,7 @@ alink="#0000FF">
 
 <p class="COPYRIGHT">Copyright &copy; 2005 by Slaven Rezic</p>
 
-<p class="PUBDATE">$Date: 2005/08/30 23:18:16 $<br />
+<p class="PUBDATE">$Date: 2006/08/09 21:05:03 $<br />
 </p>
 
 <hr />
@@ -43,21 +43,21 @@ alink="#0000FF">
 
 <dt>3. <a href="#AEN35">Editiermodus</a></dt>
 
-<dt>4. <a href="#AEN38">Straßen-Editor</a></dt>
+<dt>4. <a href="#AEN41">Straßen-Editor</a></dt>
 
-<dt>5. <a href="#AEN125">Veröffentlichen der Ergänzungen</a></dt>
+<dt>5. <a href="#AEN128">Veröffentlichen der Ergänzungen</a></dt>
 
-<dt>6. <a href="#AEN132">Nach dem Veröffentlichen</a></dt>
+<dt>6. <a href="#AEN135">Nach dem Veröffentlichen</a></dt>
 
-<dt>7. <a href="#AEN137">Erfassen anhand eines GPS-Tracks</a></dt>
+<dt>7. <a href="#AEN140">Erfassen anhand eines GPS-Tracks</a></dt>
 
-<dt>8. <a href="#AEN149">Ein Exkurs über die verwendeten Attribute</a></dt>
+<dt>8. <a href="#AEN152">Ein Exkurs über die verwendeten Layer und Attribute</a></dt>
 
-<dt>9. <a href="#AEN386">Alternative Editiermöglichkeiten</a></dt>
+<dt>9. <a href="#AEN389">Alternative Editiermöglichkeiten</a></dt>
 
-<dt>10. <a href="#AEN398">Neue Layer auf Basis der Berliner BBBike-Daten</a></dt>
+<dt>10. <a href="#AEN401">Neue Layer auf Basis der Berliner BBBike-Daten</a></dt>
 
-<dt>11. <a href="#AEN401">Eine komplett neue Datenbank aufbauen</a></dt>
+<dt>11. <a href="#AEN404">Eine komplett neue Datenbank aufbauen</a></dt>
 </dl>
 </div>
 
@@ -108,11 +108,16 @@ Datenerfassung helfen.</p>
 <p>Einschalten des EDIT-Modus durch Klick auf den EDIT-Button unten rechts. Die Layer
 werden neu geladen und es werden zusätzlich die Kreuzungs- und Kurvenpunkte
 angezeigt.</p>
+
+<p>Alternativ kann der EDIT-Modus beim Starten von BBBike mit der Option <tt
+class="COMMAND">-edit</tt> eingeschaltet werden. Nützlich ist auch die Option <tt
+class="COMMAND">-edittools</tt>, womit einige Editierhilfen automatisch geöffnet
+werden.&#13;</p>
 </div>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN38" name="AEN38">4. Straßen-Editor</a></h1>
+<h1 class="SECT1"><a id="AEN41" name="AEN41">4. Straßen-Editor</a></h1>
 
 <p>Mit Klick auf das Menü <span class="GUIMENU">Bearbeiten</span> &#62; <span
 class="GUIMENUITEM">Straßen-Editor</span> wird ein Fenster mit einigen Editieroption
@@ -142,7 +147,7 @@ Kategorie eingetragen, die Koordinaten des Straßenzugs sind bereits eingetragen.
 
 <div class="SECT3">
 <hr />
-<h3 class="SECT3"><a id="AEN52" name="AEN52">4.1.1. Regeln bei Straßennamen</a></h3>
+<h3 class="SECT3"><a id="AEN55" name="AEN55">4.1.1. Regeln bei Straßennamen</a></h3>
 
 <p>In Berlin (<tt class="FILENAME">strassen</tt>) werden nur "offizielle" Straßennamen
 verwendet. Offizielle Straßennamen sind in der Datei <tt
@@ -245,15 +250,15 @@ Speicherzuwachs in BBBike führt.</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN75" name="AEN75">4.2. Attribute zu einer Straße
+<h2 class="SECT2"><a id="AEN78" name="AEN78">4.2. Attribute zu einer Straße
 hinzufügen</a></h2>
 
 <p>Nach dem Reload ist die neue Straße sichtbar. Man kann sich wieder den Straßenzug
 zusammenklicken (den ganzen Teil oder nur einen Teil davon) und diesen Straßenzug mit
 "Add to new" zu einer Attributdatei hinzufügen. Hier muss darauf geachtet werden, dass
 alle Punkte auf bestehenden Kurvenpunkten liegen (Shift-Maustaste ist hier verboten) und
-dass kein Punkt vergessen oder doppelte angeklickt wurden.<a id="AEN78" name="AEN78"
-href="#FTN.AEN78">[1]</a>&#13;</p>
+dass kein Punkt vergessen oder doppelte angeklickt wurden.<a id="AEN81" name="AEN81"
+href="#FTN.AEN81">[1]</a>&#13;</p>
 
 <p>Mögliche Attribute sind Fahrbahnqualität (<tt class="FILENAME">qualitaet_s</tt> für
 Berliner, <tt class="FILENAME">qualitaet_l</tt> für Nicht-Berliner Straßen), sonstige
@@ -267,7 +272,7 @@ verwendeten Kategorien beschrieben. &#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN88" name="AEN88">4.3. Die orig-Dateien konvertieren</a></h2>
+<h2 class="SECT2"><a id="AEN91" name="AEN91">4.3. Die orig-Dateien konvertieren</a></h2>
 
 <p>Die im Edit-Modus bearbeiteten Dateien sind die Dateien im Verzeichnis <tt
 class="FILENAME">data</tt> mit der Endung <tt class="FILENAME">-orig</tt>. BBBike im
@@ -313,7 +318,7 @@ erwähnte Bug tritt hier nicht auf.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN107" name="AEN107">4.5. Punkt verschieben</a></h2>
+<h2 class="SECT2"><a id="AEN110" name="AEN110">4.5. Punkt verschieben</a></h2>
 
 <p>Mit "Move points" kann ein Punkt verschoben werden. Das wird man z.B. machen, wenn man
 anhand eines GPS-Tracks feststellt, dass eine Straße verschoben ist. Zum Verschieben
@@ -327,7 +332,7 @@ u.ä.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN110" name="AEN110">4.6. Linie verschieben</a></h2>
+<h2 class="SECT2"><a id="AEN113" name="AEN113">4.6. Linie verschieben</a></h2>
 
 <p>Eine bestehende Linie zwischen zwei Punkten kann verschoben werden. Man benutzt diese
 Funktion anstelle von "Move point", wenn einer der Punkte bereits für eine andere Straße
@@ -339,7 +344,7 @@ verschiebende ist. Dann wird der Zielpunkt mit Klick ausgewählt (meistens mit Sh
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN113" name="AEN113">4.7. Punkt suchen</a></h2>
+<h2 class="SECT2"><a id="AEN116" name="AEN116">4.7. Punkt suchen</a></h2>
 
 <p>Mit "Grep point" kann nachgeschaut werden, in welchen Layern ein Punkt vorkommt. Die
 Vorgehensweise ist: Punkt per Klick markieren und dann auf "Grep point" klicken.&#13;</p>
@@ -347,7 +352,7 @@ Vorgehensweise ist: Punkt per Klick markieren und dann auf "Grep point" klicken.
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN116" name="AEN116">4.8. Linie suchen</a></h2>
+<h2 class="SECT2"><a id="AEN119" name="AEN119">4.8. Linie suchen</a></h2>
 
 <p>Mit "Grep line" kann nachgeschaut werden, in welchen Layern eine Linie mit zwei
 benachbarten Punkten vorkommt. Die Vorgehensweise ist: zwei Punkte per Klick markieren
@@ -356,7 +361,7 @@ und dann auf "Grep line" klicken.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN119" name="AEN119">4.9. Punkt löschen</a></h2>
+<h2 class="SECT2"><a id="AEN122" name="AEN122">4.9. Punkt löschen</a></h2>
 
 <p>Dieser Punkt muss noch mehr als "Einen Punkt bewegen" mit Vorsicht behandelt werden.
 Auch hier gilt, dass Höhenpunkte und Ampeln normalerweise nicht gelöscht werden sollen.
@@ -366,7 +371,7 @@ Bei Strecken muss darauf geachtet werden, dass mindestens zwei Punkte in der Str
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN122" name="AEN122">4.10. Koordinatenliste anzeigen</a></h2>
+<h2 class="SECT2"><a id="AEN125" name="AEN125">4.10. Koordinatenliste anzeigen</a></h2>
 
 <p>Eine Koordinatenliste (kann auch aus einem einzelnen Punkt bestehen) markieren und mit
 "Copy" im jeweiligen Programm auswählen (Unix-Benutzer müssen in der Regel nur
@@ -379,7 +384,7 @@ Markierung ständig bestehen, ansonsten verschwindet sie nach wenigen Sekunden.&#
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN125" name="AEN125">5. Veröffentlichen der
+<h1 class="SECT1"><a id="AEN128" name="AEN128">5. Veröffentlichen der
 Ergänzungen</a></h1>
 
 <p>Bei der Verwendung des Straßen-Editors wird eine Logdatei in <tt
@@ -395,7 +400,7 @@ geschickt werden.&#13;</p>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN132" name="AEN132">6. Nach dem Veröffentlichen</a></h1>
+<h1 class="SECT1"><a id="AEN135" name="AEN135">6. Nach dem Veröffentlichen</a></h1>
 
 <p>Es ist empfehlenswert, das Verzeichnis <tt class="FILENAME">data</tt> nach dem
 Veröffentlichen umzubenennen (oder zu löschen) und das alte Verzeichnis mit <tt
@@ -406,7 +411,7 @@ eingepflegt hat.&#13;</p>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN137" name="AEN137">7. Erfassen anhand eines
+<h1 class="SECT1"><a id="AEN140" name="AEN140">7. Erfassen anhand eines
 GPS-Tracks</a></h1>
 
 <p>GPS-Tracks können entweder als zusätzlicher Straßen-Layer oder (bevorzugt für Tracks
@@ -438,15 +443,15 @@ die Datei <tt class="FILENAME">comments_mount</tt> eintragen.</p>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN149" name="AEN149">8. Ein Exkurs über die verwendeten
-Attribute</a></h1>
+<h1 class="SECT1"><a id="AEN152" name="AEN152">8. Ein Exkurs über die verwendeten Layer
+und Attribute</a></h1>
 
 <p>Grundsätzlich ist die Lektüre der <a href="bbd.html" target="_top">Dokumentation des
 bbd-Formats</a> (leider nur englisch) empfehlenswert.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN153" name="AEN153">8.1. Plätze</a></h2>
+<h2 class="SECT2"><a id="AEN156" name="AEN156">8.1. Plätze</a></h2>
 
 <p>Plätze, die einen eigenständigen Straßenzug beschreiben, sollten in <tt
 class="FILENAME">strassen</tt> eingetragen werden. Plätze, die nur mit einem Punkt
@@ -459,7 +464,7 @@ befinden.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN160" name="AEN160">8.2. Qualität</a></h2>
+<h2 class="SECT2"><a id="AEN163" name="AEN163">8.2. Qualität</a></h2>
 
 <p>Fahrbahnbeschaffenheit wie Asphalt, Kopfsteinpflaster, Waldweg usw. Kombinationen sind
 im Beschreibungsteil möglich, z.B. "schlechtes Kopfsteinpflaster mit Sandbanketten" oder
@@ -472,7 +477,7 @@ class="FILENAME">qualitaet_l</tt>&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN166" name="AEN166">8.3. sonstige Beeinträchtigungen</a></h2>
+<h2 class="SECT2"><a id="AEN169" name="AEN169">8.3. sonstige Beeinträchtigungen</a></h2>
 
 <p>Manchmal auch als "sonstige Behinderungen" oder "handicap" bezeichnet. Hier kommt
 alles herein, was, salopp gesprochen, nicht rüttelt, aber dennoch zu einer langsameren
@@ -493,7 +498,7 @@ class="FILENAME">handicap_l</tt>&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN176" name="AEN176">8.4. Radwege</a></h2>
+<h2 class="SECT2"><a id="AEN179" name="AEN179">8.4. Radwege</a></h2>
 
 <p>In Berlin wird versucht, genau zu kategorisieren, siehe auch <a
 href="bbd.html#CYCLE_PATHS_RADWEGE_" target="_top">die entsprechende Dokumentation in der
@@ -517,7 +522,7 @@ class="FILENAME">comments_cyclepath</tt>&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN189" name="AEN189">8.5. Grüne Wege</a></h2>
+<h2 class="SECT2"><a id="AEN192" name="AEN192">8.5. Grüne Wege</a></h2>
 
 <p>Wege, die durch Parks und Wälder oder an Gewässern entlang führen. Es gibt zwei
 Stufen, <tt class="CONSTANT">green1</tt> und <tt class="CONSTANT">green2</tt>. <tt
@@ -539,7 +544,7 @@ Stadt beschrieben werden können.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN201" name="AEN201">8.6. Unbeleuchtete Straßen</a></h2>
+<h2 class="SECT2"><a id="AEN204" name="AEN204">8.6. Unbeleuchtete Straßen</a></h2>
 
 <p>Hier werden nachts unbeleuchtete Straßen eingetragen. Bei Grenzfällen, z.B.
 Ausschalten der Beleuchtung zu einer bestimmten Uhrzeit, kann diese im Beschreibungsfeld
@@ -550,7 +555,7 @@ aufgeführt werden.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN206" name="AEN206">8.7. Ampeln</a></h2>
+<h2 class="SECT2"><a id="AEN209" name="AEN209">8.7. Ampeln</a></h2>
 
 <p>Neben Ampeln (hochdeutsch: LSA) kann man auch Bahnübergänge und Zugbrücken
 unterbringen. Bei Bahnübergängen (Kategorie <tt class="CONSTANT">B</tt>) kann man im
@@ -572,7 +577,7 @@ Beschreibungsfeld mit einer Erklärung ergänzen.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN218" name="AEN218">8.8. Steigungen</a></h2>
+<h2 class="SECT2"><a id="AEN221" name="AEN221">8.8. Steigungen</a></h2>
 
 <p>Drei Möglichkeiten gibt es zur Erfassung von Steigungen:</p>
 
@@ -606,7 +611,7 @@ Steigung.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN235" name="AEN235">8.9. Straßenbahnen</a></h2>
+<h2 class="SECT2"><a id="AEN238" name="AEN238">8.9. Straßenbahnen</a></h2>
 
 <p>Wenn zwischen Straßenbahngleisen und parkenden Autos oder Bordsteinkante wenig Platz
 ist, sollte ein Eintrag in dieser Datei geschaffen werden. Faustregel wäre: ein Fahrrad
@@ -618,7 +623,7 @@ einer Straßenbahn überholt werden. Nur in Berlin erfasst.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN240" name="AEN240">8.10. Ausgeschilderte Radrouten</a></h2>
+<h2 class="SECT2"><a id="AEN243" name="AEN243">8.10. Ausgeschilderte Radrouten</a></h2>
 
 <p>Beispiele für ausgeschilderte Radrouten sind der europäische Radfernweg R1, die neuen
 Radialrouten in Berlin (z.B. RR10), Berlin-Usedom, Mauerradweg. Oft sind Abschnitte zwar
@@ -634,7 +639,7 @@ Programmdatei <tt class="FILENAME">Geography/Berlin_DE.pm</tt> fest verdrahtet.&
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN246" name="AEN246">8.11. Kommentare für
+<h2 class="SECT2"><a id="AEN249" name="AEN249">8.11. Kommentare für
 Streckenführungen</a></h2>
 
 <p>Manchmal sind Streckenführungen in der Realität nicht einfach zu finden. Dazu werden
@@ -649,7 +654,7 @@ fährt; wahlweise auch in der Form, die nur für eine Richtung gültig ist).&#13;</
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN251" name="AEN251">8.12. Kommentare zu
+<h2 class="SECT2"><a id="AEN254" name="AEN254">8.12. Kommentare zu
 Fährverbindungen</a></h2>
 
 <p>Fährzeiten und Preise der Fähren, möglichst mit dem Stand der letzten
@@ -660,7 +665,7 @@ Aktualisierung.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN256" name="AEN256">8.13. Sonstige Kommentare</a></h2>
+<h2 class="SECT2"><a id="AEN259" name="AEN259">8.13. Sonstige Kommentare</a></h2>
 
 <p>Alle Kommentare, die nicht in eine der anderen Dateien passen, kommen hier
 herein.&#13;</p>
@@ -670,7 +675,7 @@ herein.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN261" name="AEN261">8.14. Gesperrte Straßen</a></h2>
+<h2 class="SECT2"><a id="AEN264" name="AEN264">8.14. Gesperrte Straßen</a></h2>
 
 <p>Darunter fallen folgende Typen:</p>
 
@@ -687,7 +692,7 @@ class="CONSTANT">1s</tt>&#13;</p>
 
 <li>
 <p>Für Radfahrer vollkommen gesperrte Straßen (z.B. Kfz-Straßen wie die B96a in
-Altglienicke, aber siehe auch <a href="#AEN325">hier</a>; Kategorie <tt
+Altglienicke, aber siehe auch <a href="#AEN328">hier</a>; Kategorie <tt
 class="CONSTANT">2</tt>)&#13;</p>
 </li>
 
@@ -746,7 +751,7 @@ class="FILENAME">gesperrt_car</tt>&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN304" name="AEN304">8.15. Brunnels</a></h2>
+<h2 class="SECT2"><a id="AEN307" name="AEN307">8.15. Brunnels</a></h2>
 
 <p>Brunnels ist die Zusammenfassung von Brücken und Tunnels. In Zukunft werden auf
 BBBike-gezeichneten Karten brunnels auch als solche gemalt. Zurzeit können die
@@ -758,7 +763,7 @@ beizutragen (Programm <tt class="FILENAME">miscsrc/check_crossings</tt>).&#13;</
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN310" name="AEN310">8.16. Vorfahrtstraßen</a></h2>
+<h2 class="SECT2"><a id="AEN313" name="AEN313">8.16. Vorfahrtstraßen</a></h2>
 
 <p>Diese Datensätze bestehen aus Koordinaten für einen Straßenzug, der Vorfahrt am
 mittleren Punkt besitzt. Dieser Layer kann in BBBike gezeichnet werden, wird aber (noch)
@@ -797,7 +802,7 @@ Nicht-Spielstraßen.</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN325" name="AEN325">8.17. Autobahnen</a></h2>
+<h2 class="SECT2"><a id="AEN328" name="AEN328">8.17. Autobahnen</a></h2>
 
 <p>Autobahnen und Kraftfahrzeugstraßen können zu Informationszwecken in diesem Layer
 aufgeführt werden. Strikt gesehen müssen die Strecken nicht so gezeichnet sein, dass sie
@@ -808,7 +813,7 @@ routingfähig sind.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN330" name="AEN330">8.18. Sehenswürdigkeiten und wichtige
+<h2 class="SECT2"><a id="AEN333" name="AEN333">8.18. Sehenswürdigkeiten und wichtige
 Gebäude</a></h2>
 
 <p>Die Datensätze in dieser Datei bekommen die Kategorie <tt class="CONSTANT">SW</tt>,
@@ -858,7 +863,7 @@ werden.&#13;<br />
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN349" name="AEN349">8.19. Fragezeichen</a></h2>
+<h2 class="SECT2"><a id="AEN352" name="AEN352">8.19. Fragezeichen</a></h2>
 
 <p>Bei der Erfassung der Kartendaten kommt es häufiger vor, dass ein bestimmter Aspekt
 (z.B. die Strassenqualität oder eine Abbiegesituation) unklar bleibt. Der Autor kann dies
@@ -960,11 +965,11 @@ angegeben werden.&#13;</p>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN386" name="AEN386">9. Alternative
+<h1 class="SECT1"><a id="AEN389" name="AEN389">9. Alternative
 Editiermöglichkeiten</a></h1>
 
 <div class="SECT2">
-<h2 class="SECT2"><a id="AEN388" name="AEN388">9.1. Schnelles Erfassen von Daten</a></h2>
+<h2 class="SECT2"><a id="AEN391" name="AEN391">9.1. Schnelles Erfassen von Daten</a></h2>
 
 <p>Es ist auch möglich, mit der Standardinstallation von BBBike (ohne CVS) Daten zu
 erfassen, die an der Daten-Maintainer geschickt werden können. Dazu muss einfach ein
@@ -985,7 +990,7 @@ BBBike-Datenformat verwendet wird, also</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN393" name="AEN393">9.2. Direktes Editieren der Daten</a></h2>
+<h2 class="SECT2"><a id="AEN396" name="AEN396">9.2. Direktes Editieren der Daten</a></h2>
 
 <p>BBBike-Daten sind reine Textdateien und können mit einem normalen Texteditor
 bearbeitet werden. Allerdings wird dabei kein <tt class="FILENAME">datachange.log</tt>
@@ -998,7 +1003,7 @@ BBBike-Datenformats siehe <a href="bbd.html" target="_top">hier</a>.&#13;</p>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN398" name="AEN398">10. Neue Layer auf Basis der Berliner
+<h1 class="SECT1"><a id="AEN401" name="AEN401">10. Neue Layer auf Basis der Berliner
 BBBike-Daten</a></h1>
 
 <p>TBD &#13;</p>
@@ -1006,7 +1011,7 @@ BBBike-Daten</a></h1>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN401" name="AEN401">11. Eine komplett neue Datenbank
+<h1 class="SECT1"><a id="AEN404" name="AEN404">11. Eine komplett neue Datenbank
 aufbauen</a></h1>
 
 <p>Dazu sollte ein neues Datenverzeichnis parallel zu <tt
@@ -1038,8 +1043,8 @@ class="FILENAME">data</tt> nennen, aber ein CVS-Update würde zu Konflikten führe
 
 <table border="0" class="FOOTNOTES" width="100%">
 <tr>
-<td align="LEFT" valign="TOP" width="5%"><a id="FTN.AEN78" name="FTN.AEN78"
-href="#AEN78">[1]</a></td>
+<td align="LEFT" valign="TOP" width="5%"><a id="FTN.AEN81" name="FTN.AEN81"
+href="#AEN81">[1]</a></td>
 <td align="LEFT" valign="TOP" width="95%">
 <p>Eine weitere Möglichkeit der Punktauswahl wäre eine normale Suche (dazu in den
 Suchmodus gehen). Nach der Suche müssen die Punkte per Bearbeiten &#62; Path to Selection

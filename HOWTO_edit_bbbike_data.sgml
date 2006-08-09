@@ -9,7 +9,7 @@
 
 ]>
 
-<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.8 2005/08/30 23:18:16 eserte Exp eserte $ -->
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.9 2006/08/09 21:05:03 eserte Exp eserte $ -->
 
 <article>
  <artheader>
@@ -28,7 +28,7 @@
    </author>
   </authorgroup>
 
-  <pubdate>$Date: 2005/08/30 23:18:16 $</pubdate>
+  <pubdate>$Date: 2006/08/09 21:05:03 $</pubdate>
 
   <copyright>
    <year>2005</year>
@@ -98,6 +98,12 @@ erhält man u.a. neue Menüs, die bei der Datenerfassung helfen.
 Einschalten des EDIT-Modus durch Klick auf den EDIT-Button unten
 rechts. Die Layer werden neu geladen und es werden zusätzlich die
 Kreuzungs- und Kurvenpunkte angezeigt. </para>
+
+<para>
+Alternativ kann der EDIT-Modus beim Starten von BBBike mit der Option
+<command>-edit</> eingeschaltet werden. Nützlich ist auch die Option
+<command>-edittools</>, womit einige Editierhilfen automatisch
+geöffnet werden.
 
 <sect1>
 <title>Straßen-Editor</>
@@ -430,7 +436,7 @@ Datei <filename>comments_mount</> eintragen.
 </para>
 
 <sect1>
-<title>Ein Exkurs über die verwendeten Attribute</>
+<title>Ein Exkurs über die verwendeten Layer und Attribute</>
 <para>
 Grundsätzlich ist die Lektüre der <ulink url="bbd.html">Dokumentation
 des bbd-Formats</> (leider nur englisch) empfehlenswert.
