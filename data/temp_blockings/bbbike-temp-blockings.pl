@@ -5355,4 +5355,28 @@ EOF
 userdel	2 -28866,59954 -28692,59635
 EOF
      },
+     { from  => 1156975200, # 2006-08-31 00:00
+       until => 1157320800, # 2006-09-04 00:00
+       text  => 'B 167 Frankfurter Str. OL Seelow, zw. breite Str. u. Küstriner Str. Stadtfest Vollsperrung 01.09.2006-03.09.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 76771,15413 77081,14637
+EOF
+     },
+     { from  => 1155765600, # 2006-08-17 00:00
+       until => 1156197600, # 2006-08-22 00:00
+       text  => 'B 005 Abzw. Groß Gottschow-OU Perleberg Bahnübergang bei Perleberg Gleissanierung Vollsperrung 18.08.2006-21.08.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -94722,72190 -94274,71791 -93406,71227
+EOF
+     },
+     { from  => 1156111200, # 2006-08-21 00:00
+       until => 1156370400, # 2006-08-24 00:00
+       text  => 'B 005 Abzw. Groß Gottschow-OU Perleberg Bahnübergang bei Perleberg Gleissanierung Vollsperrung 22.08.2006-23.08.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -94722,72190 -94274,71791 -93406,71227
+EOF
+     },
     );
