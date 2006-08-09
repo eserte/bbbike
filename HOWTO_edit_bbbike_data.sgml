@@ -9,7 +9,7 @@
 
 ]>
 
-<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.8 2005/08/30 23:18:16 eserte Exp $ -->
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.8 2005/08/30 23:18:16 eserte Exp eserte $ -->
 
 <article>
  <artheader>
@@ -752,7 +752,26 @@ Dateiname: <filename>brunnels</>
 <para>
 Diese Datensätze bestehen aus Koordinaten für einen Straßenzug, der
 Vorfahrt am mittleren Punkt besitzt. Dieser Layer kann in BBBike
-gezeichnet werden, wird aber nicht weiter verwendet.
+gezeichnet werden, wird aber (noch) nicht weiter verwendet. Deshalb
+können Einträge in diesem Layer auch weggelassen werden. Geplant ist
+es, diese Information in BBBike bei der Routensuche zu verwenden
+(zusätzliche Penalties) oder zusätzlich Hinweise in der Routenliste
+anzuzeigen, zum Beispiel bei abknickenden Vorfahrtsstraßen.
+
+<para>
+Es gibt implizite Regeln für die Vorfahrt. Wenn eine dieser Regeln
+erfüllt ist, braucht man keinen Datensatz für die Vorfahrt anlegen:
+
+<itemizedlist>
+ <listitem><para>Bei Ampeln braucht man keine Vorfahrtsregelung zu
+ markieren.
+ <listitem><para>Höhergeordnete Straßen haben Vorfahrt vor niedrigeren
+ Straßen, also H hat Vorfahrt vor N und HH vor H etc.
+ <listitem><para>Spielstraßen (verkehrsberuhigte Straßen) haben nie
+ Vorfahrt vor Nicht-Spielstraßen.
+ <listitem><para>Alle anderen Kreuzungen werden als
+ Rechts-vor-Links-Kreuzungen angenommen.
+</itemizedlist>
 
 <para>
 Dateiname: <filename>vorfahrt</>

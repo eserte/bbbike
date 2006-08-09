@@ -53,11 +53,11 @@ alink="#0000FF">
 
 <dt>8. <a href="#AEN149">Ein Exkurs über die verwendeten Attribute</a></dt>
 
-<dt>9. <a href="#AEN376">Alternative Editiermöglichkeiten</a></dt>
+<dt>9. <a href="#AEN386">Alternative Editiermöglichkeiten</a></dt>
 
-<dt>10. <a href="#AEN388">Neue Layer auf Basis der Berliner BBBike-Daten</a></dt>
+<dt>10. <a href="#AEN398">Neue Layer auf Basis der Berliner BBBike-Daten</a></dt>
 
-<dt>11. <a href="#AEN391">Eine komplett neue Datenbank aufbauen</a></dt>
+<dt>11. <a href="#AEN401">Eine komplett neue Datenbank aufbauen</a></dt>
 </dl>
 </div>
 
@@ -687,7 +687,7 @@ class="CONSTANT">1s</tt>&#13;</p>
 
 <li>
 <p>Für Radfahrer vollkommen gesperrte Straßen (z.B. Kfz-Straßen wie die B96a in
-Altglienicke, aber siehe auch <a href="#AEN315">hier</a>; Kategorie <tt
+Altglienicke, aber siehe auch <a href="#AEN325">hier</a>; Kategorie <tt
 class="CONSTANT">2</tt>)&#13;</p>
 </li>
 
@@ -761,15 +761,43 @@ beizutragen (Programm <tt class="FILENAME">miscsrc/check_crossings</tt>).&#13;</
 <h2 class="SECT2"><a id="AEN310" name="AEN310">8.16. Vorfahrtstraßen</a></h2>
 
 <p>Diese Datensätze bestehen aus Koordinaten für einen Straßenzug, der Vorfahrt am
-mittleren Punkt besitzt. Dieser Layer kann in BBBike gezeichnet werden, wird aber nicht
-weiter verwendet.&#13;</p>
+mittleren Punkt besitzt. Dieser Layer kann in BBBike gezeichnet werden, wird aber (noch)
+nicht weiter verwendet. Deshalb können Einträge in diesem Layer auch weggelassen werden.
+Geplant ist es, diese Information in BBBike bei der Routensuche zu verwenden (zusätzliche
+Penalties) oder zusätzlich Hinweise in der Routenliste anzuzeigen, zum Beispiel bei
+abknickenden Vorfahrtsstraßen.&#13;</p>
 
+<p>Es gibt implizite Regeln für die Vorfahrt. Wenn eine dieser Regeln erfüllt ist,
+braucht man keinen Datensatz für die Vorfahrt anlegen:</p>
+
+<ul>
+<li>
+<p>Bei Ampeln braucht man keine Vorfahrtsregelung zu markieren.</p>
+</li>
+
+<li>
+<p>Höhergeordnete Straßen haben Vorfahrt vor niedrigeren Straßen, also H hat Vorfahrt vor
+N und HH vor H etc.</p>
+</li>
+
+<li>
+<p>Spielstraßen (verkehrsberuhigte Straßen) haben nie Vorfahrt vor
+Nicht-Spielstraßen.</p>
+</li>
+
+<li>
+<p>Alle anderen Kreuzungen werden als Rechts-vor-Links-Kreuzungen angenommen.</p>
+</li>
+</ul>
+
+&#13;<br />
+<br />
 <p>Dateiname: <tt class="FILENAME">vorfahrt</tt>&#13;</p>
 </div>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN315" name="AEN315">8.17. Autobahnen</a></h2>
+<h2 class="SECT2"><a id="AEN325" name="AEN325">8.17. Autobahnen</a></h2>
 
 <p>Autobahnen und Kraftfahrzeugstraßen können zu Informationszwecken in diesem Layer
 aufgeführt werden. Strikt gesehen müssen die Strecken nicht so gezeichnet sein, dass sie
@@ -780,7 +808,7 @@ routingfähig sind.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN320" name="AEN320">8.18. Sehenswürdigkeiten und wichtige
+<h2 class="SECT2"><a id="AEN330" name="AEN330">8.18. Sehenswürdigkeiten und wichtige
 Gebäude</a></h2>
 
 <p>Die Datensätze in dieser Datei bekommen die Kategorie <tt class="CONSTANT">SW</tt>,
@@ -830,7 +858,7 @@ werden.&#13;<br />
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN339" name="AEN339">8.19. Fragezeichen</a></h2>
+<h2 class="SECT2"><a id="AEN349" name="AEN349">8.19. Fragezeichen</a></h2>
 
 <p>Bei der Erfassung der Kartendaten kommt es häufiger vor, dass ein bestimmter Aspekt
 (z.B. die Strassenqualität oder eine Abbiegesituation) unklar bleibt. Der Autor kann dies
@@ -932,11 +960,11 @@ angegeben werden.&#13;</p>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN376" name="AEN376">9. Alternative
+<h1 class="SECT1"><a id="AEN386" name="AEN386">9. Alternative
 Editiermöglichkeiten</a></h1>
 
 <div class="SECT2">
-<h2 class="SECT2"><a id="AEN378" name="AEN378">9.1. Schnelles Erfassen von Daten</a></h2>
+<h2 class="SECT2"><a id="AEN388" name="AEN388">9.1. Schnelles Erfassen von Daten</a></h2>
 
 <p>Es ist auch möglich, mit der Standardinstallation von BBBike (ohne CVS) Daten zu
 erfassen, die an der Daten-Maintainer geschickt werden können. Dazu muss einfach ein
@@ -957,7 +985,7 @@ BBBike-Datenformat verwendet wird, also</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN383" name="AEN383">9.2. Direktes Editieren der Daten</a></h2>
+<h2 class="SECT2"><a id="AEN393" name="AEN393">9.2. Direktes Editieren der Daten</a></h2>
 
 <p>BBBike-Daten sind reine Textdateien und können mit einem normalen Texteditor
 bearbeitet werden. Allerdings wird dabei kein <tt class="FILENAME">datachange.log</tt>
@@ -970,7 +998,7 @@ BBBike-Datenformats siehe <a href="bbd.html" target="_top">hier</a>.&#13;</p>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN388" name="AEN388">10. Neue Layer auf Basis der Berliner
+<h1 class="SECT1"><a id="AEN398" name="AEN398">10. Neue Layer auf Basis der Berliner
 BBBike-Daten</a></h1>
 
 <p>TBD &#13;</p>
@@ -978,7 +1006,7 @@ BBBike-Daten</a></h1>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN391" name="AEN391">11. Eine komplett neue Datenbank
+<h1 class="SECT1"><a id="AEN401" name="AEN401">11. Eine komplett neue Datenbank
 aufbauen</a></h1>
 
 <p>Dazu sollte ein neues Datenverzeichnis parallel zu <tt
