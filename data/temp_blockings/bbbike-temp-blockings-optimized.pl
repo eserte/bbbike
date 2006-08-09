@@ -682,8 +682,8 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'type' => 'gesperrt'
        },
        {
-         'until' => 1155074400,
-         'text' => 'L 015 B109 südl. Prenzlau-Boitzenburg OD Gollmitz Einbau Deckschicht Vollsperrung 31.07.2006-08.08.2006 ',
+         'until' => 1155333600,
+         'text' => 'L 015 B109 südl. Prenzlau-Boitzenburg OD Gollmitz Einbau Deckschicht Vollsperrung 31.07.2006-11.08.2006 ',
          'from' => 1154210400,
          'data' => 'userdel	2 30743,99403 30504,99595
 ',
@@ -776,6 +776,22 @@ userdel	1 10954,12635 11057,12715 11134,12793
          'text' => 'Invalidenstr. in Richtung Tiergartentunnel, zwischen Ackerstr. und Bergstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2006)',
          'from' => 1154876732,
          'data' => 'userdel	1 9810,14066 9663,14036
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1164927600,
+         'text' => 'B 109 B167-Zehdenick OD Falkenthal grundhafter Straßenbau Vollsperrung 07.08.2006-30.11.2006 ',
+         'from' => 1154815200,
+         'data' => 'userdel	2 2775,56089 2034,55227
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1170284400,
+         'text' => 'B 167 Friedrich-Engels-Str. OD Alt Ruppin, zw. Rhinbrücke u. Brückenstr. Straßenbauarbeiten Vollsperrung 14.08.2006-31.01.2007 ',
+         'from' => 1155420000,
+         'data' => 'userdel	2 -28866,59954 -28692,59635
 ',
          'type' => 'gesperrt'
        }
