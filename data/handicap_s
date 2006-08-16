@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.100 2006/08/06 18:21:19 eserte Exp eserte $
+#: version: $Id: handicap_s-orig,v 4.101 2006/08/16 19:44:44 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Stadthausstr., Bahnbr¸cke: Bauarbeiten	q4::inwork 15628,10915 15657,10846
@@ -108,10 +108,10 @@ Krumme Lanke - Parkplatz am Fischerh¸ttenweg: Fuﬂg‰nger	q2 -1287,4486 -1304,4450
 Pankeweg, B¸rgerpark: Fuﬂg‰nger	q2 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9414,18278 9304,18165 9310,18108
 B¸rgerpark: Fuﬂg‰nger	q2 9460,18053 9479,18217 9701,18256 9716,18290
 Breite Str.: Fuﬂg‰ngerzone	q3 -3012,14546 -3037,14509 -3155,14340 -3227,14260
-Markt: Fuﬂg‰ngerzone	q3 -3155,14340 -3271,14400
-Carl-Schurz-Str.: Fuﬂg‰ngerzone	q3 -3495,14190 -3445,14226 -3407,14255 -3340,14315 -3271,14400 -3151,14577 -3132,14607
-Charlottenstr.: Fuﬂg‰ngerzone	q3 -3227,14260 -3340,14315 -3371,14340
-Moritzstr.: Fuﬂg‰ngerzone	q3 -3271,14400 -3372,14457 -3417,14483 -3456,14506
+Markt: Fuﬂg‰ngerzone	q3 -3155,14340 -3275,14407
+Carl-Schurz-Str.: Fuﬂg‰ngerzone	q3 -3513,14238 -3445,14226 -3407,14255 -3338,14333 -3275,14407 -3228,14468 -3201,14506 -3151,14577 -3132,14607
+Charlottenstr.: Fuﬂg‰ngerzone	q3 -3227,14260 -3338,14333 -3397,14370
+Moritzstr.: Fuﬂg‰ngerzone	q3 -3275,14407 -3350,14446 -3417,14483 -3481,14523
 Wuhlheide/R1: Fuﬂg‰nger	q2 20440,6221 20293,6278
 (am Schloﬂ Schˆnhausen): Fuﬂg‰nger	q2 10308,19297 10350,19182 10390,19069
 Blockdammweg (Br¸cke): eng, Fuﬂg‰nger	q2 17976,8964 18087,9035 18124,9056
@@ -330,7 +330,7 @@ Borgsdorfer Str.: enge Straﬂe mit parkenden Autos	q1 6496,20869 6962,20895
 Germendorfer Str.: enge Straﬂe mit parkenden Autos	q1 6383,20975 6523,20987 6982,21013 7036,21017
 Wentowsteig: enge Straﬂe mit parkenden Autos	q1 6924,20695 6945,20805 6962,20895 6982,21013
 (Spreeuferweg): Fuﬂg‰nger	q1 4543,12516 4501,12544 4331,12538
-Havelstr.: Fuﬂg‰ngerzone	q4 -3151,14577 -3037,14509
+Havelstr.: Fuﬂg‰ngerzone	q4 -3132,14607 -3122,14557 -3037,14509
 (Schˆnholzer Heide, parallel zur Friesenstr.): Fuﬂg‰nger	q1 8789,19278 8784,19253 9446,18855 9475,18862
 Nordufer: teilweise sehr schmaler Radweg	q1 7231,14749 7467,14633
 (Weg am Nordgraben): schmaler Weg, m‰ﬂiger Fuﬂg‰ngerverkehr	q2 3563,20589 3475,20656 3327,20758 3062,20898 2916,20870 2580,20805
@@ -587,5 +587,20 @@ Bootshausweg: Fuﬂg‰nger	q2 -1036,16593 -1073,16610 -1067,16635 -1092,16659 -1156
 Rufacher Weg: enge Straﬂe	q2 12207,1704 12179,1758 12160,1817 12255,2058 12582,2129 12738,2162
 Nelly-Sachs-Str.: Verkehrsberuhigter Bereich	q4 23993,14797 24253,14888 24349,14922
 Karl-Pokern-Str.: spielende Kinder	q1 26079,5057 26034,5056 25984,5070 25860,5067 25732,5065
-(Plantagenstr. - Ruheplatzstr.): Gehweg, Fuﬂg‰nger	q4 7595,15596 7540,15565
+(Plantagenstr. - Ruheplatzstr.): Gehweg, Fuﬂg‰nger	q4 7595,15596 7540,15566
 Goerdelersteg: steile Fuﬂg‰ngerwendel zur Autobahnbr¸cke	q3 3619,14183 3600,14278
+Bruno-Apitz-Str.: viele Fuﬂg‰nger	q1 16423,24935 16359,24795 16304,24825 16264,24764 16131,24850
+Bruno-Apitz-Str.: viele Fuﬂg‰nger	q1 16359,24795 16334,24728
+Bruno-Apitz-Str.: viele Fuﬂg‰nger	q1 16329,24865 16304,24825
+Scherenbergstr.: enge Straﬂe	q2 11307,15995 11358,16067 11404,16140 11464,16232 11542,16384
+Lupsteiner Weg: eng durch parkende KfZ	q1 275,228 489,296 521,332 521,360 501,501 489,587 428,656 393,704 400,765 460,812 739,885
+Gertraudstr.: enge Straﬂe	q2 196,1657 79,1992
+Wittenberger Str. (Einkaufzentrum): Fuﬂg‰nger	q3 21614,17823 21647,17889 21719,18017 21751,18079
+Wittenberger Str. (Einkaufzentrum): Fuﬂg‰nger	q3 21654,18048 21719,18017
+Wittenberger Str. (Einkaufzentrum): Fuﬂg‰nger	q3 21590,17918 21647,17889
+(Parkweg an der Neuen Wuhle): wenig Fuﬂg‰nger	Q1 20878,17843 20983,17846 21057,17785 21093,17765 21353,17635 21535,17550 21555,17546
+(Parkweg an der neuen Wuhle): wenig Fuﬂg‰nger	q1 21555,17546 21751,17511 21875,17533 21925,17542 22022,17519 22121,17495 22364,17323
+(Radweg an der Straﬂenbahn): wenig Fuﬂg‰nger	q1 21836,18214 21804,18125 21698,17920 21639,17803 21576,17678 21559,17617 21555,17546 21539,17442 21510,17329 21484,17205 21484,17189 21470,17117 21453,17041 21441,16973 21417,16896 21377,16822 21323,16716 21321,16696 21283,16619 21254,16567 21235,16531 21210,16481 21179,16455 21067,16327 21043,16299 21035,16280 20995,16237 20931,16164 20916,16144 20851,16037 20834,15999
+Erich-Kurz-Str.: viele Fuﬂg‰nger	q2 18354,10600 18285,10550 18232,10532 18150,10543 18120,10532 18104,10482
+Erich-Kurz-Str.: viele Fuﬂg‰nger	q2 18285,10550 18332,10434 18342,10384 18326,10362 18264,10343
+Widderstr.: enge Straﬂe	q2 14853,7451 14997,7240

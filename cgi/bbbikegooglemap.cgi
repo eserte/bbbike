@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.31 2006/07/27 21:39:35 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.32 2006/08/16 20:53:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -48,13 +48,14 @@ sub run {
     }
 
     if (param("wpt_or_trk")) {
-	if (param("wpt_or_trk") =~ / /) {
+	my $wpt_or_trk = trim(param("wpt_or_trk"));
+	if ($wpt_or_trk =~ / /) {
 	    param("coords", join("!",
 				 param("coords"),
-				 split(/ /, param("wpt_or_trk")))
+				 split(/ /, $wpt_or_trk))
 		 );
 	} else {
-	    param("wpt", param("wpt_or_trk"));
+	    param("wpt", $wpt_or_trk);
 	}
     }
 
@@ -509,6 +510,29 @@ sub hrefify {
 	$ret .= $enc->(substr($text, $lastpos));
     }
     $ret;
+}
+# REPO END
+
+# REPO BEGIN
+# REPO NAME trim /home/e/eserte/work/srezic-repository 
+# REPO MD5 ab2f7dfb13418299d79662fba10590a1
+
+=head2 trim($string)
+
+=for category Text
+
+Trim starting and leading white space and squeezes white space to a
+single space.
+
+=cut
+
+sub trim ($) {
+    my $s = shift;
+    return $s if !defined $s;
+    $s =~ s/^\s+//;
+    $s =~ s/\s+$//;
+    $s =~ s/\s+/ /;
+    $s;
 }
 # REPO END
 

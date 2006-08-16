@@ -2968,7 +2968,7 @@ EOF
        text  => 'Ehrlichstr. (Lichtenberg) zwischen Wildensteiner Str. und Treskowallee Baustelle, gesperrt (bis 23.10.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 18147,8583 18467,8375 18615,8269 18683,8232
+userdel	q4 18147,8583 18225,8532 18467,8375 18615,8269 18683,8232
 EOF
      },
      { from  => undef, # 
@@ -5236,8 +5236,8 @@ userdel	1 16863,13138 15912,13153
 EOF
      },
      { from  => 1154210400, # 2006-07-30 00:00
-       until => 1155938400, # 2006-08-19 00:00
-       text  => 'L 035 Eisenbahnstr.-August-Bebel-Str. Brücke über die Spree in Fürstenwalde Deckenerneuerung halbseitig gesperrt; Einbahnstraße 31.07.2006-18.08.2006 ',
+       until => 1157234400, # 2006-09-03 00:00
+       text  => 'L 035 Eisenbahnstr.-August-Bebel-Str. Brücke über die Spree in Fürstenwalde Deckenerneuerung halbseitig gesperrt; Einbahnstraße 31.07.2006-02.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4; 55549,-4992 55562,-4726
@@ -5377,6 +5377,90 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -94722,72190 -94274,71791 -93406,71227
+EOF
+     },
+     { from  => 1155664127, # 2006-08-15 19:48
+       until => 1159653599, # 2006-09-30 23:59
+       text  => 'Grünbergallee (Treptow) in beiden Richtungen zwischen Am Seegraben und Rosenweg Baustelle, Verkehr wird wechselseitig vorbeigeführt (bis Ende 09.2006)',
+       type  => 'handicap',
+       source_id => 'IM_003258',
+       data  => <<EOF,
+userdel	q4 20161,-651 20315,-653 20386,-555
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Havemannstr. (Marzahn) in beiden Richtungen zwischen Märkische Allee und Borkheider Str. Baustelle, Straße vollständig gesperrt',
+       type  => 'handicap',
+       source_id => 'IM_003255',
+       data  => <<EOF,
+userdel	q4 21218,18536 21451,18415 21524,18376 21679,18296 21836,18214
+EOF
+     },
+     { from  => 1155664247, # 2006-08-15 19:50
+       until => 1155938400, # 2006-08-19 00:00
+       text  => 'Schönerlinder Str. (Buchholz) stadteinwärts zwischen Triftstr. und Bucher Str. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 18.08.2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_003250',
+       data  => <<EOF,
+userdel	1 12067,23241 12129,23117 12178,23034
+EOF
+     },
+     { from  => 1155592800, # 2006-08-15 00:00
+       until => 1159653600, # 2006-10-01 00:00
+       text  => 'B 005 Berliner Str. OD Petershagen, zw. Betonstr. und Ortsausgang Kanal- und Straßenbauarbeiten Vollsperrung 16.08.2006-30.09.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 73775,831 74246,584
+EOF
+     },
+     { from  => 1155506400, # 2006-08-14 00:00
+       until => 1159653600, # 2006-10-01 00:00
+       text  => 'K 6411 Neulewin- L 33 Wriezen OL Neulewin, zw. KAP-Straße und Dorfstr. Straßenbau Vollsperrung 15.08.2006-30.09.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 69208,37364 69249,37090
+EOF
+     },
+     { from  => 1155420000, # 2006-08-13 00:00
+       until => 1167606000, # 2007-01-01 00:00
+       text  => 'K 6418 Garzau-Hohenstein zw. Garzau und Gladowshöhe Straßenbau Vollsperrung 14.08.2006-31.12.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 46389,15079 46564,15609 46717,15970 46852,16883
+EOF
+     },
+     { from  => 1155506400, # 2006-08-14 00:00
+       until => 1158098400, # 2006-09-13 00:00
+       text  => 'K 7239 Diedersdorf-Birkholz OD Diedersdorf, Kno. Birkholzer Str./ Chausseestr. Bau Kreisverkehrsplatz Vollsperrung 15.08.2006-12.09.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 7547,-5739 7399,-7001
+EOF
+     },
+     { from  => 1156024800, # 2006-08-20 00:00
+       until => 1159653600, # 2006-10-01 00:00
+       text  => 'L 038 zw. Briesen und Petersdorf grundhafter Straßenbau Vollsperrung 21.08.2006-30.09.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 70549,-5215 71331,-5118 73292,-4598 74238,-3970 74606,-3837
+EOF
+     },
+     { from  => 1155420000, # 2006-08-13 00:00
+       until => 1180648800, # 2007-06-01 00:00
+       text  => 'L 141 Neustadt-Bahnhof Zernitz Dossebrücke in der OL Neustadt Brückenneubau Vollsperrung 14.08.2006-31.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -56556,49662 -56487,49318 -56325,49162
+EOF
+     },
+     { from  => 1155756590, # 2006-08-16 21:29
+       until => 1162335599, # 2006-10-31 23:59
+       text  => 'Rixdorfer Str. (Treptow-Köpenick) in Richtung Südostallee zwischen Schnellerstr. und Südostallee Baustelle, Straße vollständig gesperrt (bis Ende Oktober 2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_003268',
+       data  => <<EOF,
+userdel	1 17290,6228 17239,6182 17156,6235 16861,5935
 EOF
      },
     );
