@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_points,v 1.14 2006/04/13 21:03:25 eserte Exp $
+# $Id: check_points,v 1.16 2006/08/16 22:30:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2004 Slaven Rezic. All rights reserved.
@@ -40,6 +40,8 @@ sub doit {
     my $usememcache = 1;
     my $q;
     my $do_report = 0;
+    my @namerx;
+    my @catrx;
 
     GetOptions("ampelschaltung!" => \$ampelschaltung_source,
 	       "ampelschaltung2!" => \$ampelschaltung2_source,
@@ -48,15 +50,31 @@ sub doit {
 	       "memcache!" => \$usememcache,
 	       "q|quiet!" => \$q,
 	       "report!" => \$do_report,
+	       "namerx=s\@" => \@namerx,
+	       "catrx=s\@" => \@catrx,
 	      ) or die <<EOF;
 usage: $0 [-ampelschaltung] [-ampelschaltung2] [-[no]warn] [-[no]cache]
-          [-[no]keepnet] [-[no]quiet | -q] [-report] checkfile againstfile ...
+          [-[no]keepnet] [-[no]quiet | -q] [-report]
+	  [-namerx regexp [-namerx ...]] [-catrx regexp [-catrx ...]]
+          checkfile againstfile ...
 EOF
 
     my $file = shift @ARGV || die "file to check missing";
     my(@check) = @ARGV;
     if (!@ARGV) {
 	die "files to check against missing!";
+    }
+
+    if (@namerx) {
+	for (@namerx) {
+	    $_ = qr{$_};
+	}
+    }
+
+    if (@catrx) {
+	for (@catrx) {
+	    $_ = qr{$_};
+	}
     }
 
     my $s1;
@@ -129,6 +147,8 @@ EOF
     while(1) {
 	my $ret = $s1->next;
 	last if !@{$ret->[1]};
+	my $name = $ret->[Strassen::NAME()];
+	my $cat = $ret->[Strassen::CAT()];
 	my @error;
 	foreach (@{$ret->[1]}) {
 	    if (!exists $s2->{$_} && $_ ne '*') {
@@ -136,9 +156,37 @@ EOF
 	    }
 	}
 	if (@error) {
-	    print STDERR "Error in $ret->[0]: " . join(" ", @error) . "\n" unless $q;
+	    print STDERR "Error in $name: " . join(" ", @error) . "\n" unless $q;
 	    $fail++ unless $warn;
 	    push @error_points, @error if $do_report;
+	}
+
+	if (@namerx) {
+	    my $match = 0;
+	    for my $namerx (@namerx) {
+		if ($name =~ $namerx) {
+		    $match++;
+		    last;
+		}
+	    }
+	    if (!$match) {
+		print STDERR "Error in $name: name is not expected\n" unless $q;
+		$fail++ unless $warn;
+	    }
+	}
+
+	if (@catrx) {
+	    my $match = 0;
+	    for my $catrx (@catrx) {
+		if ($cat =~ $catrx) {
+		    $match++;
+		    last;
+		}
+	    }
+	    if (!$match) {
+		print STDERR "Error in $name: category <$cat> is not expected\n" unless $q;
+		$fail++ unless $warn;
+	    }
 	}
     }
 

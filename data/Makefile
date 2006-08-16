@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.103 2006/08/01 19:45:48 eserte Exp $
+# $Id: Makefile,v 2.108 2006/08/16 23:04:42 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -428,9 +428,10 @@ gesperrt_$(i):	gesperrt_$(i)-orig $(i)bahn
 	-@$(READONLY) $@
 .endfor
 
-gesperrt_car:	gesperrt_car-orig
+gesperrt_car:	gesperrt_car-orig strassen landstrassen landstrassen2
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) gesperrt_car-orig > gesperrt_car~
+	$(CONVERT2HAFAS) -specsperre=strassen,landstrassen,landstrassen2 \
+	    gesperrt_car-orig > gesperrt_car~
 	mv gesperrt_car~ gesperrt_car
 	-@$(READONLY) $@
 
@@ -841,7 +842,7 @@ check-disabled:	.check_label
 	@touch $@
 
 .check_plaetze1: plaetze .strassen.tmp landstrassen
-	$(CHECK_POINTS) plaetze .strassen.tmp landstrassen
+	$(CHECK_POINTS) -catrx '^Pl$$' plaetze .strassen.tmp landstrassen
 	@touch $@
 
 .check_plaetze2: plaetze add_plaetze
@@ -860,19 +861,21 @@ check-disabled:	.check_label
 	@touch $@
 
 .check_hoehe:	hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen
-	$(CHECK_POINTS) hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) -catrx '^(X|\?|\?\?\?)$$' -namerx '^\d+(\.\d+)?$$' hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen
 	@touch $@
 
 .check_ampeln:	ampeln .strassen.tmp landstrassen landstrassen2 fragezeichen
-	$(CHECK_POINTS) ampeln .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) -catrx '^(X|F|B|B0|Zbr|\?)(::inwork)?$$' ampeln .strassen.tmp landstrassen landstrassen2 fragezeichen
 	@touch $@
 
 .check_ampelschaltung:	ampelschaltung-orig ampeln-orig
 	$(CHECK_POINTS) -ampelschaltung ampelschaltung-orig ampeln-orig
 	@touch $@
 
+GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s|2|3|BNP:\d+(:-?\d+)?)(:inwork)?$$'
+
 .check_gesperrt1:	gesperrt .strassen.tmp landstrassen landstrassen2
-	$(CHECK_POINTS) gesperrt .strassen.tmp landstrassen landstrassen2
+	$(CHECK_POINTS) -catrx $(GESPERRT_CATRX) gesperrt .strassen.tmp landstrassen landstrassen2
 	@touch $@
 
 # Second check is necessary because of the 3nocross entries!
@@ -892,7 +895,7 @@ check-disabled:	.check_label
 .endfor
 
 .check_gesperrt_car1:	gesperrt_car .strassen.tmp landstrassen landstrassen2
-	$(CHECK_POINTS) gesperrt_car .strassen.tmp landstrassen landstrassen2
+	$(CHECK_POINTS) -catrx $(GESPERRT_CATRX) gesperrt_car .strassen.tmp landstrassen landstrassen2
 	@touch $@
 
 .check_gesperrt_car2:	gesperrt_car strassen landstrassen landstrassen2
@@ -991,7 +994,7 @@ check-disabled:	.check_label
 
 .check_housenumbers:	housenumbers-orig housenumbers .strassen.tmp
 	$(CHECK_HOUSENUMBERS) housenumbers-orig
-	$(CHECK_POINTS) housenumbers .strassen.tmp
+	$(CHECK_POINTS) -catrx '^HNR$$' -namerx '^(ALT|SINGLE|CONT) (\d+[a-z]?)?/(\d+[a-z]?)? (\d+[a-z]?)?/(\d+[a-z]?)?$$' housenumbers .strassen.tmp
 	@touch $@
 
 .check_sehenswuerdigkeit:	sehenswuerdigkeit
@@ -1113,7 +1116,7 @@ ${PERSISTENTTMPDIR}/crossings_bahn.bbd:	strassen sbahn rbahn brunnels
 ${PERSISTENTTMPDIR}/crossings_gewaesser.bbd:	\
 					strassen wasserstrassen brunnels
 	${MISCSRCDIR}/check_crossings -v \
-	    -ignore "Fasaneriegraben,Packereigraben,Tr‰nkegraben,Teufelsseekanal,(See im Tiergarten),,Luiseninsel,Fennpfuhl,Heidekampgraben,Karpfenteich,Panke,Nordgraben,Tegeler Flieﬂ,Hermsdorfer See,Wuhle,Flutgraben,Kreuzgraben,Zingergraben,Iderfenngraben" \
+	    -ignore "Fasaneriegraben,Packereigraben,Tr‰nkegraben,Teufelsseekanal,(See im Tiergarten),,Luiseninsel,Fennpfuhl,Heidekampgraben,Karpfenteich,Panke,Nordgraben,Tegeler Flieﬂ,Hermsdorfer See,Wuhle,Neue Wuhle,Flutgraben,Kreuzgraben,Zingergraben,Iderfenngraben" \
 	    -o $@~ -against brunnels \
 	    strassen wasserstrassen
 	mv $@~ $@
