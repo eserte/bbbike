@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: newstreetform_data.pl,v 1.28 2006/08/05 22:47:44 eserte Exp $
+# $Id: newstreetform_data.pl,v 1.28 2006/08/05 22:47:44 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -477,7 +477,7 @@ __END__
 
 Best called as:
 
-   ~/src/bbbike/miscsrc/newstreetform_data.pl -maildir ~/Mail/bbbike -startmailid 5763 -ignoreempty -ignorereplied
+   ~/src/bbbike/miscsrc/newstreetform_data.pl -maildir ~/Mail/bbbike -startmailid 5829 -ignoreempty -ignorereplied
 
 Then direct your browser to:
 

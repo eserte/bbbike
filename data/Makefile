@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.109 2006/08/17 18:07:16 eserte Exp $
+# $Id: Makefile,v 2.109 2006/08/17 18:07:16 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1079,7 +1079,7 @@ check-crossings-important:	${PERSISTENTTMPDIR}/crossings.bbd
 
 check-crossings-less-important:	${PERSISTENTTMPDIR}/crossings_gewaesser.bbd \
 				${PERSISTENTTMPDIR}/crossings_bahn.bbd \
-				${PERSISTENTTMPDIR}/crossings_gewaesser_noignore.bbd
+				${PERSISTENTTMPDIR}/crossings_gewaesser_ignore.bbd
 
 check-categories:	.check_categories
 
@@ -1121,7 +1121,7 @@ ${PERSISTENTTMPDIR}/crossings_gewaesser.bbd:	\
 	    strassen wasserstrassen
 	mv $@~ $@
 
-${PERSISTENTTMPDIR}/crossings_gewaesser_noignore.bbd:	\
+${PERSISTENTTMPDIR}/crossings_gewaesser_ignore.bbd:	\
 					strassen wasserstrassen brunnels
 	${MISCSRCDIR}/check_crossings -v \
 	    -o $@~ -against brunnels \
@@ -1209,7 +1209,7 @@ do-check-nearest:	.check-do-check-nearest
 	perl -I${BBBIKEDIR} -I${BBBIKEDIR}/lib \
 	    -MStrassen -MObject::Iterate=iterate -e \
 	    '$$s = Strassen->new($$ARGV[0]);\
-	     iterate { ($$dist) = $$_->[Strassen::NAME] =~ /^\S+\s+(\d+)/; die "Distance $$dist m found" if $$dist < 14 } $$s' ${PERSISTENTTMPDIR}/check_nearest.bbd
+	     iterate { ($$dist) = $$_->[Strassen::NAME] =~ /^\S+\s+(\d+)/; die "Distance $$dist m found" if $$dist < 20 } $$s' ${PERSISTENTTMPDIR}/check_nearest.bbd
 
 .if 0
 GNUmakefile: Makefile $(MISCRSRCDIR)/b2gmake

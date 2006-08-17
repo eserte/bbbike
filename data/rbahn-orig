@@ -1,5 +1,5 @@
 #: title: Regional- und Fernbahnstrecken
-#: version: $Id: rbahn-orig,v 5.24 2006/08/17 17:54:49 eserte Exp $
+#: version: $Id: rbahn-orig,v 5.24 2006/08/17 17:54:49 eserte Exp eserte $
 #:
 # "stillgelegt" meint hier: kein Personenverkehr auf diesen Gleisen
 # Werder - Brandenburg
@@ -215,7 +215,7 @@ RE3,RE4,RE5	RC 3620,-2183 2735,-6109 2613,-6544
 # Teltow - Birkengrund (ab Verbindungskurve)
 RE4,RE5	RC 2613,-6544 2459,-7518 2162,-8565
 # Teltow - Lichterfelde Ost
-RE3,RE4,RE5	RC 3620,-2183 3983,-212 4018,-79 4146,385 4188,579 4397,1104 4502,1316 4563,1440 4698,1651 4855,1876 4993,2045 5168,2214 5259,2317 5378,2507
+RE3,RE4,RE5	RC 3620,-2183 4021,-237 4085,51 4149,362 4188,579 4397,1104 4502,1316 4563,1440 4698,1651 4855,1876 4993,2045 5168,2214 5259,2317 5378,2507
 # Lichterfelde Ost - Südkreuz
 RE3,RE4,RE5	RB 5378,2507 5485,2645 5730,2880 5912,3062 6041,3205 6153,3326 6371,3590 6426,3643 6803,4073 6877,4178 7031,4416 7153,4673 7214,4793 7412,5275 7450,5675 7869,7674
 # Südkreuz - Fernbahntunnel

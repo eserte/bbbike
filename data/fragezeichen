@@ -5,7 +5,7 @@ Clémentweg/Dr.-Dorsch-Allee: Qualität (laut ADFC-Karte gut geeignet)?	? 11740,22
 Werdauer Weg: Qualität? (ebenfalls: Werdauer Brücke eintragen!)	? 7087,8066 6990,8040 6481,7345
 Ludwig-Renn-Str.: Einbahnstraße auch für Radfahrer?	? 20843,16829 21017,16737
 Stolper Weg: Qualität? Bis wo (vom Europarc aus) ist Autoverkehr vorhanden? Radwege? Genaue Straßennamen?	? -4153,-621 -4884,-907 -5335,-1090 -6147,-1125 -6395,-887
-Albrechts Teerofen - Stopler Weg (ehem. Autobahnbrücke): offen für Radfahrer? Qualität?	? -5359,-1298 -5335,-1090
+Albrechts Teerofen - Stopler Weg (ehem. Autobahnbrücke): Qualität?	? -5359,-1298 -5335,-1090
 Arkenberge: wo genau ist die Durchfahrt für Autos gesperrt	? 10402,26369 10318,26399 10203,26387 10120,26363
 Neuendorf (Nl) wird ab 2002-08-18 geschlossen; neu: 'Cottbus-Willmersdorf Nord' und 'Teichland'. Grund: Umverlegung der Trasse (betr. RE1 und RE18)	?? 80691,-66664 80603,-64961 81213,-63504 82460,-63229
 Hindenburgdamm - Teltowkanal: existiert eine Verbindung durch den Schloßpark Lichterfelde? Qualität?	? 4596,3738 4970,3684
@@ -25,7 +25,7 @@ Kleinziethen - Pechsteinstr. (Lichtenrade): befahrbare Verbindung, Qualität?	? 1
 Mauerweg Lichtenrade - Lichterfelde: befahrbar, Qualität? laut "Berliner Umland" gut geeigneter Radweg	? 10298,-3193 9560,-3155 9471,-2138 8334,-2101 8384,-1581 7110,-596 6634,-137 6172,306 6011,195 5831,71 4400,-913
 Mauerweg Lichtenrade: Qualität? laut "Berliner Umland" gut geeigneter Radweg	? 10609,-3098 10631,-3215 11646,-3251
 Mauerweg, existiert ein Zugang von der Prinzessinenstr.?	? 9471,-2138 9560,-2153
-Mauerweg Lichterfelde: Qualität? Knick am Bahndamm? laut "Berliner Umland" gut geeigneter Radweg	?? 4400,-913 3941,-279 3659,159 3594,248 3400,515
+Mauerweg Lichterfelde: Qualität? laut "Berliner Umland" gut geeigneter Radweg	?? 4400,-913 4088,-440 4066,-304 4034,-255 3982,-181 3918,-92 3848,-79 3659,159 3594,248 3400,515
 Mauerweg, existiert ein Zugang zur Schütte-Lanz-Str.?	? 5831,71 5795,126
 Mauerweg, existiert ein Zugang zur Waldsassener Str.?	? 6634,-137 6725,-89
 Lichterfelder Allee - Mauerweg Teltow: befahrbar, Qualität? laut "Berliner Umland" gut geeigneter Radweg	? 3400,515 3268,828
@@ -424,7 +424,6 @@ Lückhoffstr.: Qualität (Kopfsteinpflaster?)?	? -2847,2893 -3022,2696 -3162,2564 
 Nauener Str. zur Altonaer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? -4759,13992 -4776,13869
 Staakener Str.: Qualität zwischen Seegefelder Str. und Nauener Str.? Einbahnstraße auch für Radfahrer gültig?	? -4112,14242 -4704,14174 -4741,14233
 Krumme Gärten: Qualität	? -4007,13187 -3996,13414
-Ringbahnstr. (Neukölln): Kopfsteinpflaster! mäßig oder schlecht? Einbahnstraße im östlichen Abschnitt auch für Radfahrer? Überqueren der Karl-Marx-Str. möglich?	? 13081,7014 12934,6967 12689,6905
 Hertzbergplatz: genauer Name der Straße zwischen Treptower und Hertzbergstr.?	? 13478,8095 13474,8060
 Wolletz - Kerkow: Qualität?	? 44693,70057 45614,70316 45652,70216 46917,69881 47191,70529 47450,70590 47465,70674 47420,70696 47564,70795 48021,70856 48125,71018
 Britz - Chorin: Qualität?	? 37225,54056 38412,55353 38528,55402 38516,55481 38774,55675 38987,55637 39726,55645 40450,55770
@@ -529,7 +528,7 @@ Treppe zw. Uferweg und Altonaer vorh.?	? 5962,12553 5967,12525
 Verbindung Stülpnagelstr. - Knobelsdorffstr. vorh.?	? 2185,11701 2154,11762
 (Machandelweg - Rossiter Weg): Qualität korrekt?	? 77,12260 -125,12173
 Koloniestr.: Qualität (zumindestens in Höhe Soldiner Str. Kopfsteinpflaster)	? 8503,16716 8677,17154 8983,17748
-Malmöstr.: ist auch der Abschnitt zwischen Bornholmer und Finnländische Str. Kopfsteinpflaster?	? 10198,16528 10225,16436
+Malmöer Str.: ist auch der Abschnitt zwischen Bornholmer und Finnländische Str. Kopfsteinpflaster?	? 10198,16528 10225,16436
 Greifswalder Str./Lilli-Henoch-Str.: gibt es hier eine Überquerungsmöglichkeit über die Straßenbahntrasse?	? 12614,14941
 Trendelenburgstr.: Qualität (vermutlich Asphalt), Behinderungen?	? 2740,11076 2845,10840
 Lotte-Lenya-Bogen: Qualität, Fußgänger?	? 5242,10918 5264,10921 5348,10960 5373,10981
@@ -912,6 +911,8 @@ Feldweg an der Wuhle	? 22364,17323 22452,17274 22595,17202 22648,17164 22678,171
 Feldweg an der Wuhle	? 22730,16287 22828,16257
 Pankeweg: Qualität?	? 16635,26118 16712,26192 16890,26334 16937,26354 16979,26401 17104,26478 17279,26582 17101,26701
 Janusz-Korczak-Str.: Qualität, Radwege?	? 24303,15070 24232,15060 24139,15046 23960,15021 23778,14995 23798,14826 23815,14721
+Marwitzer Str.: Radwege, aber von wo bis wo genau?	? -3700,26625 -4048,26914 -4293,27146 -4750,27667
+Im Amseltal: Qualität zwischen Ortwinstraße und Neubrücker Str.?	? 1837,25467 1726,25712 1679,25970
 # added from ampeln-orig
 wirklich? (?)	? 9215,3599
 Wirklich? (?)	? -3775,17087
@@ -1046,6 +1047,7 @@ B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 Haßfurter Weg (eine Einbahnstraße auch für Radfahrer?)	? 11812,18484 11847,18338
 Klaustaler Str. (Wo genau sind die Einbahnstraßenabschnitte in der Klaustaler Str.?)	? 11439,18890 11384,19067
 Zweibrücker Str. (Einbahnstraße zwischen Pionierstr. und Falkenseer Chaussee auch für Radfahrer gültig?)	? -4254,15813 -4283,15639 -4294,15525 -4308,15411
+Ringbahnstr. (Einbahnstraße zwischen Walterstr. und Karl-Marx-Str. auch für Radfahrer gültig? Überqueren der Karl-Marx-Str. möglich?)	? 12934,6967 13081,7014
 tragen (zwei kurze Treppen) (wo sind die Treppen genau?)	? 9453,6415
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position ist vielleicht nicht ganz genau)	? -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9060,22342
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position des südlichen Endes ist vielleicht nicht ganz genau)	? -10377,20973 -10581,19871 -10000,18629
