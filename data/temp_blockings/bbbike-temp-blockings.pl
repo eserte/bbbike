@@ -4680,8 +4680,8 @@ userdel	2 -46651,12935 -45980,13284
 EOF
      },
      { from  => 1152568800, # 2006-07-11 00:00
-       until => 1153740313, # 2006-08-06 00:00 1154815200
-       text  => 'L 601 Leipziger Str. OD Finsterwalde, Kno. Hain-/ Schützenstr. Kanalarbeiten Vollsperrung 12.07.2006-05.08.2006 ',
+       until => 1164927600, # 2006-12-01 00:00
+       text  => 'L 601 Leipziger Str. OD Finsterwalde, Kno. Hain-/ Schützenstr. Kanalarbeiten Vollsperrung 12.07.2006-30.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 32963,-85912 32865,-86269 32870,-86323 32478,-86374
@@ -5461,6 +5461,23 @@ EOF
        source_id => 'IM_003268',
        data  => <<EOF,
 userdel	1 17290,6228 17239,6182 17156,6235 16861,5935
+EOF
+     },
+     { from  => 1155836502, # 2006-08-17 19:41
+       until => 1156129200, # 2006-08-21 05:00
+       text  => 'Kurfürstendamm/ Tauentzienstr. (Charlottenburg) in beiden Richtungen zwischen Uhlandstr. und Passauer Str. Straßenfest (Global City), Straße gesperrt (bis 21.08.2006, 5:00 Uhr) (18:00) ',
+       type  => 'gesperrt',
+       source_id => 'IM_003267',
+       data  => <<EOF,
+userdel	2 6137,10689 6040,10751 5942,10803 5797,10881 5725,10892 5657,10868 5484,10810 5351,10760 5229,10716 5076,10658
+EOF
+     },
+     { from  => 1156888800, # 2006-08-30 00:00
+       until => 1157148000, # 2006-09-02 00:00
+       text  => 'L 401 Königs Wusterhausen-Wildau OL Königs Wusterhausen, Höhe Neue Ziegelei Deckeneinbau Vollsperrung 31.08.2006-01.09.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 26437,-10393 26407,-10986
 EOF
      },
     );

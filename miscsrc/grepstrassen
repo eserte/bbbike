@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: grepstrassen,v 1.14 2006/06/23 22:03:57 eserte Exp $
+# $Id: grepstrassen,v 1.15 2006/08/17 18:03:53 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -81,10 +81,12 @@ my $datafile = shift || "-";
 my $s = Strassen->new($datafile, UseLocalDirectives => 1, PreserveLineInfo => 1);
 my $new_s = Strassen->new;
 $s->init;
+my @errors;
 LOOP_STREETS: while(1) {
     my $r = $s->next;
     if (!$r->[1]) {
-	die "Empty coords array found in line " . $s->line . ", file " . $datafile;
+	push @errors, "Empty coords array found in file " . $datafile . ", line " . $s->line . " (please check format of line!)";
+	next;
     }
     last if !@{ $r->[1] };
     # Match NAME
@@ -118,6 +120,10 @@ LOOP_STREETS: while(1) {
 	next if !$v->($r, $dir);
     }
     $new_s->push_ext($r, $dir);
+}
+
+if (@errors) {
+    die "*** Following errors were found:\n" . join("\n", @errors) . "\n";
 }
 
 while(my($k,$v) = each %special_end) {

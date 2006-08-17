@@ -319,6 +319,14 @@ A blocked route (gesperrte Wegführung). This means that the whole path
 specified by the coordinates of this record are blocked, but parts of
 the path are not.
 
+=item * C<3nocross>:
+
+Mark a street or street section which cannot be crossed. This category
+is currently only used by the F<miscsrc/convert2hafas> conversion
+script (the preprocessor of the F<*-orig> files to the real bbd
+files). The conversion script generates a couple of blocked routes
+with the category C<3>.
+
 =item * C<BNP>:
 
 A narrow passage (E<quot>DrE<auml>ngelgitterE<quot> etc.). An optional

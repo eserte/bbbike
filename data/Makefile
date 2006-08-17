@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.108 2006/08/16 23:04:42 eserte Exp $
+# $Id: Makefile,v 2.109 2006/08/17 18:07:16 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -810,7 +810,7 @@ report-checks:
 	@echo Now doing checks...
 
 do-checks:	.check_empty_lines \
-	.check_strassen1 .check_strassen2 \
+	.check_strassen1 .check_strassen_cont \
 	.check_plaetze1 .check_plaetze2 .check_strassen_plaetze_unique \
 	.check_hoehe \
 	.check_ampeln .check_gesperrt1 .check_gesperrt2 \
@@ -837,7 +837,7 @@ check-disabled:	.check_label
 	$(CHECK_STR_PLZ) -data .strassen.tmp
 	@touch $@
 
-.check_strassen2:	.strassen.tmp str_cont_ausnahme
+.check_strassen_cont:	.strassen.tmp str_cont_ausnahme
 	$(CHECK_CONT) -data .strassen.tmp
 	@touch $@
 

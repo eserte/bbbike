@@ -373,7 +373,14 @@ userdel	q4 39715,101866 39574,101863
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1164927600,
+         'text' => 'L 601 Leipziger Str. OD Finsterwalde, Kno. Hain-/ Schützenstr. Kanalarbeiten Vollsperrung 12.07.2006-30.11.2006 ',
+         'from' => 1152568800,
+         'data' => 'userdel	q4 32963,-85912 32865,-86269 32870,-86323 32478,-86374
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -853,6 +860,23 @@ userdel	1 10954,12635 11057,12715 11134,12793
          'text' => 'Rixdorfer Str. (Treptow-Köpenick) in Richtung Südostallee zwischen Schnellerstr. und Südostallee Baustelle, Straße vollständig gesperrt (bis Ende Oktober 2006)',
          'from' => 1155756590,
          'data' => 'userdel	1 17290,6228 17239,6182 17156,6235 16861,5935
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003267',
+         'until' => 1156129200,
+         'text' => 'Kurfürstendamm/ Tauentzienstr. (Charlottenburg) in beiden Richtungen zwischen Uhlandstr. und Passauer Str. Straßenfest (Global City), Straße gesperrt (bis 21.08.2006, 5:00 Uhr) (18:00) ',
+         'from' => 1155836502,
+         'data' => 'userdel	2 6137,10689 6040,10751 5942,10803 5797,10881 5725,10892 5657,10868 5484,10810 5351,10760 5229,10716 5076,10658
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1157148000,
+         'text' => 'L 401 Königs Wusterhausen-Wildau OL Königs Wusterhausen, Höhe Neue Ziegelei Deckeneinbau Vollsperrung 31.08.2006-01.09.2006 ',
+         'from' => 1156888800,
+         'data' => 'userdel	2 26437,-10393 26407,-10986
 ',
          'type' => 'gesperrt'
        }
