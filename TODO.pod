@@ -1324,6 +1324,16 @@ Drawing custom category images seems to not work in lazy mode (try:
 turn on lazy mode, draw E<quot>misc/zebrastreifenE<quot> as a point
 layer).
 
+=item * (H2)
+
+New editor functions: moving whole polygons or regions. Some
+implementation suggestions: mark all points to move. Mark another
+point which the last marked point would move to and use this delta for
+all other points. Or just draw a region boundary, and all points
+inside the region would move.
+
+More ideas: copy polygons, rotate polygons.
+
 =back
 
 =head1 Daten allgemein
