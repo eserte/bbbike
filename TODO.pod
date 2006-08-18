@@ -1440,14 +1440,11 @@ GPS-Tracks zusammenfassen.
 
 Pressearchiv sichten:
 L<http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv.shtml?arch=arch_0509>
-(vor August 2001 fehlt noch)
+(vor Januar 2001 fehlt noch)
 
-Weitere Bezirkspressearchive:
+Bezirkspressearchive (weitere in doc/watchsites.pod):
 
 =over
-
-=item Neukölln: L<http://www.berlin.de/ba-neukoelln/presse/index.html>
-(von Oktober 2001 (Anfang) bis 6. Juli 2006 abgearbeitet)
 
 =item Charlottenburg-Wilmersdorf:
 L<http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/index.html>
@@ -1456,6 +1453,31 @@ L<http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/index.html>
 =item Lichtenberg:
 L<http://www.berlin.de/ba-lichtenberg/presse/index.html>
 (2006 bis 6. Juli abgearbeitet)
+
+=item Mitte:
+L<http://www.berlin.de/ba-mitte/index_23_hr.html>
+
+=item Tempelhof-Schöneberg:
+L<http://www.berlin.de/ba-tempelhof-schoeneberg/presse/index.html>
+
+=item Steglitz-Zehlendorf:
+L<http://www.berlin.de/ba-steglitz-zehlendorf/presse/index.html>
+
+=item Spandau:
+L<http://www.berlin.de/ba-spandau/presse/index.html>
+
+=item Pankow:
+L<http://www.berlin.de/ba-pankow/presse/index.html>
+
+=item Marzahn-Hellersdorf:
+L<http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/index.html>
+
+=item Reinickendorf: ?
+
+=item Friedrichshain-Kreuzberg: ?
+
+=item Treptow-Köpenick:
+L<http://www.berlin.de/ba-treptow-koepenick/presse/index.html>
 
 =back
 
@@ -1630,9 +1652,15 @@ L<http://www.adfc-frankfurt-oder.de/radtour/>
 
 =item * (M4)
 
-comments_route should probably be combined, just like sbahn/rbahn.
-Interesting question: what icon should be shown in a combined section?
-both? the first? alternated?
+comments_route should probably be combined (e.g.
+RR6+Pankeweg+Berlin-Usedom), just like sbahn/rbahn. Interesting
+question: what icon should be shown in a combined section? both? the
+first? alternated?
+
+Vielleicht ist das Kombinieren nicht so dringend, wenn die
+mehrzeiligen Tooltipps poliert und für alle verfügbar sind. Aber für
+das leichtere Editieren könnte es trotzdem sinnvoll sein (Vermeidung
+der Doppelung).
 
 =item * (M3)
 
