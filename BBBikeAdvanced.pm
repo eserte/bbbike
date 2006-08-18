@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.158 2006/08/05 20:56:57 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.159 2006/08/18 20:41:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -3040,16 +3040,18 @@ sub search_anything {
 	eval {
 	    my %found_in;
 	    my %title;
+	    my $has_grep = is_in_path("grep");
 	    foreach my $search_file (@search_files) {
 		my @matches;
 		my $pid;
-		if (0 && !defined $s_munged && is_in_path("grep")) { # XXX do not fork
+		if ($devel_host && !defined $s_munged && $has_grep) { # XXX because of fork problems only on my host
 		    $pid = open(GREP, "-|");
 		    if (!$pid) {
 			# No String::Similarity support
 			# No encoding support
 			exec("grep", "-i", $s_rx, $search_file) || warn "Can't exec program grep with $search_file: $!";
-			CORE::exit();
+			require POSIX;
+			POSIX::_exit();
 		    }
 		} else {
 		    # non-Unix compatibility

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.17 2006/06/06 14:30:18 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.18 2006/08/18 20:38:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -186,10 +186,10 @@ sub tidy_check {
 }
 
 sub _any_fail {
-    my($got, $expected, $testname) = @_;
+    my($got, $expected, $testname, $suffix) = @_;
     require File::Temp;
     require Data::Dumper;
-    my($fh, $filename) = File::Temp::tempfile(SUFFIX => ".bbbike_test");
+    my($fh, $filename) = File::Temp::tempfile(SUFFIX => ".bbbike_test" . ($suffix ? $suffix : ""));
     my $dump = Data::Dumper->new([$got, $expected],[qw(got expected)])->Indent(1)->Useqq(0)->Dump;
     print $fh $dump;
     close $fh;
@@ -197,7 +197,7 @@ sub _any_fail {
 }
 
 sub is_long_data {
-    my($got, $expected, $testname) = @_;
+    my($got, $expected, $testname, $suffix) = @_;
     if (!defined $got || !defined $expected) {
 	Test::More::is($got, $expected, $testname);
     } else {
@@ -205,13 +205,13 @@ sub is_long_data {
 	if ($eq) {
 	    Test::More::pass($testname);
 	} else {
-	    _any_fail($got, $expected, $testname);
+	    _any_fail($got, $expected, $testname, $suffix);
 	}
     }
 }
 
 sub like_long_data {
-    my($got, $expected, $testname) = @_;
+    my($got, $expected, $testname, $suffix) = @_;
     if (!defined $got || !defined $expected) {
 	Test::More::like($got, $expected, $testname);
     } else {
@@ -219,13 +219,13 @@ sub like_long_data {
 	if ($matches) {
 	    Test::More::pass($testname);
 	} else {
-	    _any_fail($got, $expected, $testname);
+	    _any_fail($got, $expected, $testname, $suffix);
 	}
     }
 }
 
 sub unlike_long_data {
-    my($got, $expected, $testname) = @_;
+    my($got, $expected, $testname, $suffix) = @_;
     if (!defined $got || !defined $expected) {
 	Test::More::unlike($got, $expected, $testname);
     } else {
@@ -233,7 +233,7 @@ sub unlike_long_data {
 	if ($matches) {
 	    Test::More::pass($testname);
 	} else {
-	    _any_fail($got, $expected, $testname);
+	    _any_fail($got, $expected, $testname, $suffix);
 	}
     }
 }

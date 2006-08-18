@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.31 2006/06/06 14:30:29 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.32 2006/08/18 20:40:12 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -33,10 +33,12 @@ use BBBikeTest;
 use Getopt::Long;
 
 my @browsers;
+my $v;
 		
 if (!GetOptions(get_std_opts("cgiurl", "xxx"),
+		"v" => \$v,
 		'browser=s@' => \@browsers)) {
-    die "usage: $0 [-cgiurl url] [-xxx] [-browser ...]";
+    die "usage: $0 [-cgiurl url] [-xxx] [-v] [-browser ...]";
 }
 
 if (!@browsers) {
@@ -48,7 +50,7 @@ if (!@browsers) {
 }
 @browsers = map { "$_ BBBikeTest/1.0" } @browsers;
 
-my $tests = 78;
+my $tests = 87;
 plan tests => $tests * @browsers;
 
 ######################################################################
@@ -334,29 +336,66 @@ for my $browser (@browsers) {
     ######################################################################
     # Test custom blockings
 
-    # XXX:
-    # {
+ XXX: {
 
-    # $get_agent->();
+	# Hier wird eine temporäre baustellenbedingte Einbahnstraße in
+	# der Rixdorfer Str. getestet.
 
-    # $agent->get($cgiurl);
-    # $agent->form_name("BBBikeForm");
-    # { local $^W; $agent->current_form->value('start', 'gitschiner str'); };
-    # { local $^W; $agent->current_form->value('ziel', 'warschauer str'); };
-    # $agent->submit();
+	$get_agent->();
 
-    # $agent->submit;
+	$agent->get($cgiurl);
+	$agent->form_name("BBBikeForm");
+	{
+	    local $^W; $agent->current_form->value('start', 'Rixdorfer Str. (Niederschöneweide)/schnellerstr');
+	}
+	;
+	{
+	    local $^W; $agent->current_form->value('ziel', 'Rixdorfer Str. (Niederschöneweide)/südostallee');
+	}
+	;
+	$agent->submit;
 
-    # like_long_data(get_ct($agent), qr{Oberbaumbr.*cke}, "Route contains Oberbaumbrücke");
+	$agent->submit;
 
-    # $agent->back;
-    # $agent->current_form->value(
-    # }
+	if (get_ct($agent) =~ /L.*?nge:.*([\d\.]+)\s*km/) {
+	    my $length = $1;
+	    cmp_ok($length, "<=", 1, "Short path ($length km)");
+	} else {
+	    fail("Cannot get length from content");
+	}
+
+	{
+	    my $url = $agent->uri;
+	    $url .= ";test=custom";
+	    $agent->get($url);
+	}
+
+	my_tidy_check($agent);
+	like_long_data(get_ct($agent), qr{Ereignisse, die die Route betreffen}, "Found temp blocking hit");
+	like_long_data(get_ct($agent), qr{Ausweichroute suchen}, "Found Ausweichroute button");
+	$agent->form_name("Ausweichroute");
+	$agent->submit;
+
+	my_tidy_check($agent);
+	like_long_data(get_ct($agent), qr{M.*gliche Ausweichroute}, "Using Ausweichroute", ".html");
+	if (get_ct($agent) =~ /L.*?nge:.*([\d\.]+)\s*km/) {
+	    my $length = $1;
+	    cmp_ok($length, ">=", 1, "Longer path ($length km)");
+	} else {
+	    fail("Cannot get length from content");
+	}
+	like_long_data(get_ct($agent), qr{Sterndamm}, "Expected street in Ausweichroute", ".html");
+
+	$agent->form_name('search');
+	$agent->click_button(value => "Rückweg");
+
+	unlike_long_data(get_ct($agent), qr{Ausweichroute}, "Keine Ausweichroute mehr", ".html");
+    }
 
     ######################################################################
     # test for a street in Berlin.coords.data but not in strassen
 
- XXX: {
+    {
 
 	$get_agent->();
 
@@ -532,9 +571,11 @@ sub get_ct {
 sub my_tidy_check {
     my($agent) = @_;
     my $uri = $agent->uri;
-    $uri =~ s/^.*?\?/...?/;
-    my $maxlen = 55;
-    $uri = substr($uri, 0, $maxlen) . "..." if length($uri) > $maxlen;
+    if (!$v) {
+	$uri =~ s/^.*?\?/...?/;
+	my $maxlen = 55;
+	$uri = substr($uri, 0, $maxlen) . "..." if length($uri) > $maxlen;
+    }
 
     my $charset;
     require HTTP::Headers::Util;

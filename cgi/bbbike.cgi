@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.18 2006/08/07 20:41:04 eserte Exp $
+# $Id: bbbike.cgi,v 8.19 2006/08/18 20:39:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -694,7 +694,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.19 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -3021,7 +3021,7 @@ sub search_coord {
 		    }
 		} else {
 		    $tb->{net} = StrassenNetz->new($strobj);
-		    $tb->{net}->make_net_cat;
+		    $tb->{net}->make_net_cat(-onewayhack => 1);
 		}
 	    }
 
@@ -3572,7 +3572,8 @@ sub search_coord {
 		    $hidden .= $q->hidden(-name => $key,
 					  -default => [$q->param($key)]);
 		}
-		print qq{<center><form name="Ausweichroute" action="} . BBBikeCGIUtil::my_self_url($q) . qq{" } . (@affecting_blockings > 1 ? qq{onSubmit="return test_temp_blockings_set()"} : "") . qq{>};
+		print qq{<center><form name="Ausweichroute" action="} . #XXX del BBBikeCGIUtil::my_self_url($q)
+		    BBBikeCGIUtil::my_url($q) . qq{" } . (@affecting_blockings > 1 ? qq{onSubmit="return test_temp_blockings_set()"} : "") . qq{>};
 		print $hidden;
 		print M("Ereignisse, die die Route betreffen k&ouml;nnen") . ":<br>";
 		for my $tb (@affecting_blockings) {
@@ -3582,7 +3583,6 @@ sub search_coord {
 		    print "$tb->{text}<br>";
 		}
 		print <<EOF;
-$hidden
 <input type=submit value="@{[ M("Ausweichroute suchen") ]}"><hr>
 </form></center><p>
 EOF
@@ -6064,7 +6064,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/08/07 20:41:04 $';
+    my $cgi_date = '$Date: 2006/08/18 20:39:42 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

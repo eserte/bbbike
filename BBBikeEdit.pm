@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.105 2006/08/16 21:17:41 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.106 2006/08/18 21:07:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3406,26 +3406,29 @@ sub temp_blockings_editor {
     my $initialdir = $BBBike::check_bbbike_temp_blockings::temp_blockings_dir . "/";
     my $pl_file = $BBBike::check_bbbike_temp_blockings::temp_blockings_pl;
     my $file = $initialdir;
-    my $as_data;
+    my $as_data; # default set below with "invoke"
     my $prewarn_days = 1;
     my $blocking_type = "gesperrt";
     my $edit_after = 0;
     my $do_delete_blockings = 1;
     my $auto_cross_road_blockings = 0;
+    my $is_in_work = 1;
     my $meta_data_handling = "append";
     my $pe;
+    my $as_data_cb;
     Tk::grid($t->Label(-text => M("bbd-Datei").":"),
 	     $pe = $t->PathEntry(-textvariable => \$file),
-	     $t->Checkbutton(-text => "as data",
-			     -variable => \$as_data,
-			     -command => sub {
-				 $pe->configure(-state => $as_data ? "disabled" : "normal"),
-			     },
-			    ),
+	     $as_data_cb = $t->Checkbutton(-text => "as data",
+					   -variable => \$as_data,
+					   -command => sub {
+					       $pe->configure(-state => $as_data ? "disabled" : "normal"),
+					   },
+					  ),
 	     -sticky => "w",
 	    );
     $pe->focus;
     $pe->icursor("end");
+    $as_data_cb->invoke; # default to "as data"
 
     my $txt;
     Tk::grid($txt = $t->Scrolled("Text", -scrollbars => "e",
@@ -3505,6 +3508,13 @@ sub temp_blockings_editor {
 
     Tk::grid($t->Checkbutton(-text => M"Überqueren der gesperrten Straßen nicht möglich",
 			     -variable => \$auto_cross_road_blockings,
+			    ),
+	     -sticky => "w",
+	     -columnspan => $cs,
+	    );
+
+    Tk::grid($t->Checkbutton(-text => M"Baustelle",
+			     -variable => \$is_in_work,
 			    ),
 	     -sticky => "w",
 	     -columnspan => $cs,
@@ -3649,7 +3659,10 @@ sub temp_blockings_editor {
 							      UNLINK => 1);
 		  }
 
-		  main::save_user_dels($file, -type => $blocking_type);
+		  main::save_user_dels($file,
+				       -type => $blocking_type,
+				       ($is_in_work ? (-addinfo => "inwork") : ()),
+				      );
 		  if ($auto_cross_road_blockings) {
 		      my $add_userdels = add_cross_road_blockings();
 		      if ($add_userdels) {

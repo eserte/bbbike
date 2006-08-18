@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.144 2006/08/18 17:24:43 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.145 2006/08/18 17:43:31 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -132,6 +132,7 @@ Stellingdamm: schlechtes Kopfsteinpflaster	Q3 22475,6151 22603,6141 22777,6157 2
 Planufer: Kopfsteinpflaster, OK	Q1 11543,10015 11507,10004 11479,10026
 Planufer: Kopfsteinpflaster, OK	Q1 11177,9935 10914,9887
 Admiralstr.: mäßiges Kopfsteinpflaster	Q2 11177,9935 11193,9995 11237,10114
+Admiralstr.: Verbundsteinpflaster	Q1 11237,10114 11269,10204
 Fränkelufer: Kopfsteinpflaster	Q2 11512,10105 11193,9995 10979,10017 10955,10105
 Mittenwalder Str.: Kopfsteinpflaster	Q2 9915,9480 9944,9691 9968,9847 10002,9948
 Tiergartenufer: mäßiges Kopfsteinpflaster	Q2 6478,11338 6292,11427
@@ -532,7 +533,8 @@ Zum Hundsteinweg: fester Sandweg	Q1 10661,2790 10775,2765
 Tauernallee - Wildspitzweg: fester Sandweg	Q1 10705,2598 10775,2765 10864,3157
 Sangerhauser Weg: Verbundsteine	Q1 10748,2412 10933,2606 10934,2670 11025,2766 11190,2930
 Alt-Britz: schlechtes Kopfsteinpflaster	Q3 12560,4290 12596,4320 12678,4389 12836,4649 12905,4761 13015,5062
-Bendastr.: Kopfsteinpflaster	Q2 12689,6905 12702,6846
+#: by: Sascha (hurdler)
+Bendastr.: asphaltiert	Q0 12689,6905 12702,6846
 #: by: Gabi Sieber:
 Bendastr.: asphaltiert	Q0 12702,6846 12715,6783 12743,6645
 #: note: laut radzeit 3/2006 sind Teile der Bendastr. asphaltiert worden
@@ -3842,7 +3844,7 @@ Ernst-Lemmer-Ring: guter Asphalt	Q0 -131,1579 -185,1812
 #: note: Q0-
 Schwarzer Weg (Tegel): Beton, stellenweise Querrillen	Q0 6,19817 23,19677 -38,19605 -116,19576 -244,19494 -487,19210 -570,19070 -566,18984 -570,18865 -593,18795 -707,18630 -792,18564 -820,18524 -884,18325 -994,18204 -1070,18094
 #: by: Sascha (hurdler):
-Ringbahnstr. (Neukölln): schlechtes Kopfsteinpflaster	Q3 13081,7014 12934,6967 12689,6905
+Ringbahnstr. (Neukölln): Kopfsteinpflaster	Q2 13081,7014 12934,6967 12689,6905
 #: by: Konrad Eschenbach:
 Bohnstedtstr.: betoniert	Q0 11249,-1628 11509,-1602
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)

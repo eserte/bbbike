@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetzHeavy.pm,v 1.22 2006/05/10 19:45:46 eserte Exp $
+# $Id: StrassenNetzHeavy.pm,v 1.24 2006/08/18 21:08:06 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -173,12 +173,15 @@ if ($node eq $last_node) {warn "$node == $last_node\n";}
 #   In this case values are always array references.
 # Turn caching on/off with -usecache. If -usecache is not specified, the
 #   global value from $Strassen::Util::cacheable is used.
+# If -onewayhack is true, then handle some directed categories (1, 1s, 3)
+# specifically.
 ### AutoLoad Sub
 sub make_net_cat {
     my($self, %args) = @_;
     my $obey_dir    = $args{-obeydir} || 0;
     my $do_net2name = $args{-net2name} || 0;
     my $multiple    = $args{-multiple} || 0;
+    my $onewayhack  = $args{-onewayhack} || 0;
     my $cacheable   = defined $args{-usecache} ? $args{-usecache} : $Strassen::Util::cacheable;
     my $args2filename = join("_", $obey_dir, $do_net2name, $multiple);
 
@@ -213,10 +216,14 @@ sub make_net_cat {
 	my @kreuzungen = @{$ret->[Strassen::COORDS()]};
 	last if @kreuzungen == 0;
 	my($cat_hin, $cat_rueck);
-	if ($ret->[Strassen::CAT()] =~ /^(.*?)(?:::.*)?;(.*?)(?:::.*)?$/) {
+	# seperate forw/back direction and strip addinfo part (new/old style)
+	if ($ret->[Strassen::CAT()] =~ /^(.*?)(?:::?.*)?;(.*?)(?:::?.*)?$/) {
 	    ($cat_hin, $cat_rueck) = ($1, $2);
 	} else {
-	    ($cat_hin) = ($cat_rueck) = $ret->[Strassen::CAT()] =~ /^(.*?)(?:::.*)?$/;
+	    ($cat_hin) = ($cat_rueck) = $ret->[Strassen::CAT()] =~ /^(.*?)(?:::?.*)?$/;
+	    if ($onewayhack && $cat_hin =~ m{^(1|1s|3)$}) { # this are the directed categories
+		$cat_rueck = "";
+	    }
 	}
 	my $strassen_pos = $strassen->pos;
 	my $i;
@@ -690,6 +697,10 @@ sub load_user_deletions {
     }
 }
 
+# Args:
+# -del_token?
+# -type: handicap or oneway or gesperrt (check!)
+# -addinfo: add addinfo bit to category
 ### AutoLoad Sub
 sub create_user_deletions_object {
     my $net = shift;
@@ -702,6 +713,9 @@ sub create_user_deletions_object {
 	} elsif ($args{-type} eq 'oneway') {
 	    $cat = "1"; # XXX but what about the direction?
 	}
+    }
+    if (defined $args{-addinfo}) {
+	$cat .= "::" . $args{-addinfo}; # XXX maybe this will change some day to ":"
     }
 
     my $s = Strassen->new;

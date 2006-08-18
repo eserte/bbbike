@@ -204,7 +204,7 @@ Aufteilen des Strassen-Menues. Vorschlag:
   Strassenbahnen (comments_tram)
   Routing-Hilfen (comments_path)
   Sonstige Kommentare (comments_misc)
- 
+
  Andere Wege-Layer
   Radrouten (comments_route)
   Radrouten auswaehlen
@@ -497,7 +497,7 @@ Dann könnte man bbbike mit -datadir aufrufen und testen, oder ein diff
 StraE<szlig>ennamen: Labels wie in richtigen StadtplE<auml>nen
 anordnen, also z.B. "Yorckstr.": am Anfang der StraE<szlig>e "Yorck-",
 am Ende der StraE<szlig>e "str.". Dadurch werden die Namen hoffentlich
-lesbarer sein. 
+lesbarer sein.
 
 Der Code dazu existiert schon, ist aber langsam und buggy und wird nur
 bei bbbike.cgi verwendet.
@@ -855,9 +855,9 @@ display the bbbike icon (avoid transparency problem!) (Windows only).
  - besseres cdrom.pl schreiben. Sowas wie cons, nur fuer das kopieren. Oder mkisofs beibringen, das er die richtigen sachen ohne kopieren erzeugt
 
 =item BBBike - Externalization, towards to v4.0
- 
+
  Allgemein: Aenderungen nur durchfuehren, wenn sie entweder trivial und unaufwendig sind oder zwingend fuer die anstehenden Portierungen sind.
- 
+
  - data: neue Verzeichnishierarchie
  Vorschlag: city "_" iso-country-abbrev. Beispiel: berlin_de, muenchen_de, san_francisco_us
  - oder: derzeitige datadir-praxis beibehalten: z.b. data_berlin_de
@@ -897,11 +897,11 @@ Bookmarks in choose_ort und möglichkeit, per dnd neue bookmarks zu definieren, u
  - BBBike: "Window intelligent positionieren" implementieren
 
  - BrowserInfo.pm: von Roxen's SUPPORT lernen:
- SUPPORTS: font tables cookies javascript backgrounds backgrounds autogunzip netscape_javascript tablecolor ssl frames mailto forms images pull push java imagealign gifinline pjpeginline fontcolor some_html3 jpeginline 
- 
+ SUPPORTS: font tables cookies javascript backgrounds backgrounds autogunzip netscape_javascript tablecolor ssl frames mailto forms images pull push java imagealign gifinline pjpeginline fontcolor some_html3 jpeginline
+
  - bbbike/c: neues pmake funktioniert unter Suse nicht =>
  gmake benutzen? grrr...
- 
+
  - Verwendung von Tk::App::Reloader. Scheint allgemein zu funktionieren.
 
 =item Fahrbahnbeschaffenheit
@@ -939,19 +939,19 @@ Bookmarks in choose_ort und möglichkeit, per dnd neue bookmarks zu definieren, u
 =item weiter
 
  - Farbeditor: background setzen sollte vielleicht Canvas-bg ignorieren bzw. eigener Auswahlpunkt für Canvas-bg. Vielleicht *alle* Farben änderbar machen --- aber dann muss man die Änderungen auch abspeichern können (schwer, unwichtig)
- 
+
  - Straßennamen: zeichnen on demand? besserer Algorithmus? TIP mit -angle ausprobieren? (schwer)
- 
+
  - intelligenterer Markieralgorithmus: nicht Zentrieren, sondern nur verschieben, falls: durch andere Fenster verdeckt (nur eigene Toplevels beachten) oder weniger als 10% (5%) oder .... Pixel vom Rand oder einem anderen Toplevel entfernt. In diesem Fall den Ausschnitt auch nur minimal verschieben, bis sichtbar (schwer)
- 
+
  - Idee von effizienten Loop/Callback-Mechanismus: ein callback kann entweder alleine aufgerufen werden (mit nötiger Initialisation + Cleanup) oder in eine beliebige Loop eingebettet werden (Inline, Initialisation + Cleanup außerhalb der Loop). Beliebig viele Callbacks können kombiniert werden (Stacking). Verwendung von B::Deparse? (sehr schwer, API und Ausführung erst einmal ausdenken)
- 
+
  - Bug: beim Umschalten von einem anderen Mode in den Suchmode muss zuerst einmal ein Reset ausgeführt werden, bevor Start gesetzt werden kann (mittel)
- 
+
  - Start/Ziel löschbar machen (mittel)
- 
+
  - Optimierung bei vias löschen/verschieben/einfügen: nur geändertes Stück berechnen (delete=strecke vor-nach; move=beide strecken vor/nach; insert: neue zwei strecken) (mittel-schwer, nur, wenn ich das via-feature häufiger nutze)
- 
+
  - bbbike.cgi: kommentar-spalte: bei münchen schiebestrecken ausweisen, evtl. auch radwege. in berlin vielleicht alles mögliche ausgeben --- ausprobieren
 
 =item StraE<szlig>ennetz, Suche
@@ -1145,25 +1145,25 @@ geht ein import?
 =back
 
   * E5 make test unter Windows/cygwin ausführen
-  
+
   * E5 bbbike -public unter Windows/cygwin ausführen
-  
+
   * M3 make ext unter cygwin machen => habe ich Inline installiert?
-  
+
   * evtl. overview-fenster so positionieren, dass die canvas-scrollbars nicht
     verdeckt sind
-  
+
   * alle skripte/module, die zum abspeichern als ESRI notwendig sind,
     einbinden
-  
+
   * es ist nur ein Upload auf den Garmin unter Win moeglich. Wird ein
     FH evtl. nicht geschlossen? perl-gps-Problem oder bbbike-Problem?
     -> Lösung ist in Sicht, ich muss nur auf Win testen!
-  
+
   * Tk::Getopt-Optimierung: withdraw before showing (long)help window
-  
+
   CHECK AGAIN:
-  
+
   * M5: GPS::DirectGarnim fehlt in der dist?
     => Kann ich nicht reproduzieren (MANIFEST ist OK). Nochmal testen
     => Jetzt kann ich es reproduzieren --- perl-GPS hat in SiePerl gefehlt.
@@ -1171,13 +1171,13 @@ geht ein import?
        => Bessere (weniger irreführende) Fehlermeldung erzeugen
     => Garnim anschliessen und mit sieperl testen (brauche ich
        Win32::Serial dazu?)
-  
+
   * M1 ->postscript is slow (sieperl). Warn before calling any export
     and print function? COMBINED WITH:
   * M1 PNG-Export: first check for all dependencies, then try to export
     (change in GfxConvert needed). Das ist jetzt haesslioch: ps-export braucht
     jahre und dann merkt man, dass es doch nicht geht
-  
+
   * E3 Print OK? (ps vs. pdf backend and automatic recognition)
 
   low prio: Research Tk::Balloon: kann ich Tk::CanvasBalloon durch
@@ -1221,7 +1221,7 @@ Edit-Modus funktioniert.
 =item * (M2)
 
 Drucken: optional auch die Routenansicht/PDF drucken, mit/ohne
-Routenbeschreibung. 
+Routenbeschreibung.
 
 =item * (M3)
 
@@ -1364,26 +1364,26 @@ Radrouten im Raum Potsdam:
 
   Route F1
   Potsdam - Caputh - Ferch - Geltow - Pirschheide- Wildpark - Potsdam
-  
+
   Route F2/2
   Werder - Golm - Nattwerder - Grube - Bornim - Eiche - Wildpark - Werder
-  
+
   Route F3
   Werder - Phöben - Ketzin - Paretz - Uetz - Marquardt - Grube - Nattwerder - Werder
-  
+
   Route F3/1
   Die Insel Töplitz
-  
+
   Route F3/2 und F3/3
   Glindow - Plötzin - Bochow - Groß-Kreutz - Deetz - Schmergow - Krielow - Derwitz - Glindow
   Werder - Kemnitz - Krielow - Schmergow - Phöben - Werder
-  
+
   Route F3/4
   Glindow - Petzow - Plötzhorn - Glindow
-  
+
   Route F3/5
   Glindow - Kammerode - Klaistow - Kanin - Busendorf - Glindow
-  
+
   Route F3/6
   Werder - Werder Inselstadt - Glindow - Plessow - Werder
 
@@ -1691,7 +1691,7 @@ XXX comments. ? on devel-host would also draw xxx.
 
 =item * (M4)
 
-Siehe miscsrc/merge_overlapping_streets.pl 
+Siehe miscsrc/merge_overlapping_streets.pl
 
 =item * (M1)
 
@@ -2196,7 +2196,7 @@ for older GPS devices
 
 =item gpxversion: default 1.1, maybe support for 1.0 (for gpsbabel)
 
-=item gpxwptlen: length of waypoint ids, by default 10 
+=item gpxwptlen: length of waypoint ids, by default 10
 
 =item gpxwptsuffix: fixed waypoint id suffix
 
@@ -2406,6 +2406,16 @@ Only needed if my functions would be too slow one day.
 Maybe write an BBBikeAreaPlugin for displaying the current route's
 area (in a balloon or additional label/toplevel).
 
+=item * (M1)
+
+New BBBike Plugin for Wikimapia:
+
+Die URLs sehen so aus:
+
+L<http://wikimapia.org/s/#y=52521235&x=13362122&z=15&l=5&m=a>
+
+z ist die Zoomstufe, wahrscheinlich wie bei googlemaps
+
 =back
 
 =head1 MapServer
@@ -2580,7 +2590,7 @@ will run my mapfile again...
 
 =head1 Documentation
 
-=over 
+=over
 
 =item * (M4)
 
