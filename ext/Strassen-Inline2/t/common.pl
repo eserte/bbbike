@@ -18,7 +18,8 @@
 	     : \&Strassen::Inline::search_c
 	    );
 
-# Yitzhak-Rabin/Entlastungsstr => UdL/Glinkastr.
+# Yitzhak-Rabin/Bellevueallee => UdL/Glinkastr.
+# This used to be "Entlastungsstraße", but this street does not exist anymore
 # check for handicap_s feature
 TEST5:
 {
@@ -97,7 +98,7 @@ TEST7:
     my $path = $arr[0];
     my @route = $net->route_to_name($path);
     like($route[0]->[0], qr/Ben-Gurion/, "Expected street");
-    like($route[1]->[0], qr/Entlastungsstr/, "Expected street");
+    like($route[1]->[0], qr/Bellevueallee/, "Expected street");
 }
 
 # check for einbahn (Burgherrenstr.)
