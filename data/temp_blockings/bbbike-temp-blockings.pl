@@ -4463,8 +4463,8 @@ userdel	2 9076,13915 9006,14005
 EOF
      },
      { from  => 1148162400, # 2006-05-21 00:00
-       until => 1155938400, # 2006-08-19 00:00
-       text  => 'L 011 Perleberger Chaussee zw. Weisen, Walhausstr. u. Wittenberge, Kyritzer Str. Straßenausbau Vollsperrung 22.05.2006-18.08.2006 ',
+       until => 1159653600, # 2006-10-01 00:00
+       text  => 'L 011 Perleberger Chaussee zw. Weisen, Walhausstr. u. Wittenberge, Kyritzer Str. Straßenausbau Vollsperrung 22.05.2006-30.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -102390,65175 -102434,66177
@@ -5140,7 +5140,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_84204',
        data  => <<EOF,
-userdel	2 21317,772 21103,600
+userdel	2 21350,852 21202,727 21164,697 21089,639
 EOF
      },
      { from  => 1153346400, # 2006-07-20 00:00
@@ -5478,6 +5478,22 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 26437,-10393 26407,-10986
+EOF
+     },
+     { from  => 1156024800, # 2006-08-20 00:00
+       until => 1161986400, # 2006-10-28 00:00
+       text  => 'B 096 Strelitzer Str. OD Gransee, vom KVK in Ri Altlüdersdorf grundhafter Straßenbau Vollsperrung 21.08.2006-27.10.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -6382,67186 -7071,66471
+EOF
+     },
+     { from  => 1156024800, # 2006-08-20 00:00
+       until => 1160258400, # 2006-10-08 00:00
+       text  => 'L 017 Königshorst-Warsow zw. Lobeofsund und KG bei Wiesenaue Straßenbauarbeiten Vollsperrung 21.08.2006-07.10.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -36125,34218 -34868,34062
 EOF
      },
     );

@@ -1,5 +1,5 @@
 #: title: Einbahnstraﬂen und gesperrte Straﬂen
-#: version: $Id: gesperrt-orig,v 4.119 2006/08/17 18:20:19 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.120 2006/08/18 17:24:41 eserte Exp $
 #:
 Kanalstraﬂen S¸dufer, von Osten bis Kˆthener Br¸cke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraﬂen S¸dufer, von Osten bis Kˆthener Br¸cke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -317,7 +317,7 @@ Schwelmer Str.	1 3688,292 3569,469 3497,574
 Schˆppinger Str.	1 3691,566 3648,531 3569,469
 Hugo-Heimann-Str.	1 14120,1991 14165,2106 14229,2177 14453,2087 14587,2032
 Zweibr¸cker Str.	1 -4254,15813 -4283,15639 -4294,15525 -4308,15411
-Arberstr.	1 19423,9500 19407,9232
+Arberstr.	1 19424,9502 19407,9232
 Hanne N¸te	1 13675,4855 13695,4859 13758,4926 13761,4992 13717,5175
 Parchimer Str.	1 22292,12198 22228,12274 22212,12349 22212,12422 22256,12489 22253,12570 22271,12623 22310,12637
 Ringbahnstr.	1 12934,6967 13081,7014
@@ -727,7 +727,7 @@ tragen (Spreetunnel)	0:60 25565,4549
 tragen (Br¸cke Tegeler Hafen)	0:60:-256 1227,20281
 tragen (Br¸cke Tegeler Hafen)	0:60:-231 1166,20330
 tragen (S-Bahn-Zugang, insgesamt drei Treppen · 12 Stufen)	0:120:-183 7854,7572
-tragen? (Fuﬂg‰ngerbr¸cke)	0:120:-70 20445,536
+tragen? (Fuﬂg‰ngerbr¸cke)	0:120:-63 20442,564
 tragen? (Fuﬂg‰ngerbr¸cke)	0:120:-192 19770,-213
 tragen (Stufen), mit MTB befahrbar	0:30:-69 5725,11644
 tragen (Stufen)	0:60:-231 13145,9920
@@ -1134,3 +1134,5 @@ Walter-Friedrich-Str.	1 16428,25107 16333,25147 16292,25164 16261,25178 16172,25
 Groscurthstr.	1 16369,25230 16458,25193 16428,25107
 Krebsgang -> Sonnenallee: Sonnenallee	3 14792,7192 14693,7168 14803,7056
 Sonnenallee -> Krebsgang: Sonnenallee	3 14617,7243 14693,7168 14792,7192
+Treskowallee -> Rheinpfalzallee: Straﬂenbahn	3 18816,9705 18857,9606 18931,9629
+Rheinpfalzallee -> Treskowallee: Straﬂenbahn	3 18931,9629 18857,9606 18872,9568

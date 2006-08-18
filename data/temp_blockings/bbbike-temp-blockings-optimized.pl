@@ -336,8 +336,8 @@ userdel	q4 39715,101866 39574,101863
        undef,
        undef,
        {
-         'until' => 1155938400,
-         'text' => 'L 011 Perleberger Chaussee zw. Weisen, Walhausstr. u. Wittenberge, Kyritzer Str. Straßenausbau Vollsperrung 22.05.2006-18.08.2006 ',
+         'until' => 1159653600,
+         'text' => 'L 011 Perleberger Chaussee zw. Weisen, Walhausstr. u. Wittenberge, Kyritzer Str. Straßenausbau Vollsperrung 22.05.2006-30.09.2006 ',
          'from' => 1148162400,
          'data' => 'userdel	2 -102390,65175 -102434,66177
 ',
@@ -877,6 +877,22 @@ userdel	1 10954,12635 11057,12715 11134,12793
          'text' => 'L 401 Königs Wusterhausen-Wildau OL Königs Wusterhausen, Höhe Neue Ziegelei Deckeneinbau Vollsperrung 31.08.2006-01.09.2006 ',
          'from' => 1156888800,
          'data' => 'userdel	2 26437,-10393 26407,-10986
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1161986400,
+         'text' => 'B 096 Strelitzer Str. OD Gransee, vom KVK in Ri Altlüdersdorf grundhafter Straßenbau Vollsperrung 21.08.2006-27.10.2006 ',
+         'from' => 1156024800,
+         'data' => 'userdel	q4 -6382,67186 -7071,66471
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1160258400,
+         'text' => 'L 017 Königshorst-Warsow zw. Lobeofsund und KG bei Wiesenaue Straßenbauarbeiten Vollsperrung 21.08.2006-07.10.2006 ',
+         'from' => 1156024800,
+         'data' => 'userdel	2 -36125,34218 -34868,34062
 ',
          'type' => 'gesperrt'
        }
