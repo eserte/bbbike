@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.121 2006/08/18 17:43:30 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.121 2006/08/18 17:43:30 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -688,6 +688,7 @@ Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9008,12485 9112,12499 9323
 Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9323,12528 9112,12499 9008,12485
 Mittelstr. -> Mittelstr.: An der US-Botschaft	3 9335,12442 9126,12413 9018,12400
 Mittelstr. -> Mittelstr.: An der US-Botschaft	3 9018,12400 9126,12413 9335,12442
+Sperrung vor der amerikanischen Botschaft	2 9141,12320 9126,12413 9112,12499 9100,12627
 Am Rixdorfer Teich -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3 10957,8573 10911,8457 11271,8325
 Columbiadamm -> Am Rixdorfer Teich: unbequem zu überqueren (Bordsteine)	3 10796,8498 10911,8457 10957,8573
 Birkbuschstr.: unbequem zu passieren	3 4839,5167 4807,5131 4789,5079
@@ -696,7 +697,7 @@ Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	
 Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3 6815,8691 6912,8617 6990,8685
 Hauptstr. -> Parkweg Heinrich-Lassen-Park: Mittelstreifen	3 6765,8480 6912,8617 6815,8691
 Am Tierpark -> Otto-Schmirgal-Str.: Straßenbahntrasse	3 18628,10177 18561,10341 18482,10306
-Otto-Schmirgal-Str. -> Am Tierpark: Straßenbahntrasse	3 18482,10306 18561,10341 18446,10620
+Otto-Schmirgal-Str. -> Am Tierpark: Straßenbahntrasse	3 18482,10306 18561,10341 18532,10410
 tragen (7 Stufen)	0:20:-7 9762,16119
 tragen (ca. 10 Stufen)	0:20:-257 -6442,14286
 tragen (Treppe)	0:30:-75 7621,7105
@@ -838,14 +839,13 @@ Schranke	BNP:5:12 25558,997
 Drängelgitter	BNP:5:-118 8810,14373
 Pankeweg: Bauarbeiten noch nicht abgeschlossen	2:inwork 8904,17059 8836,16867
 Brücke über Panke fehlt noch	2:inwork 8321,15386 8290,15406
-Köbisdreieck: Bauarbeiten	2 7160,11225 6853,11336
+Köbisdreieck: Bauarbeiten	2:inwork 7160,11225 6853,11336
 Hedwigskirchgasse: Bauarbeiten	2:inwork 9743,12239 9756,12139
 Monbijoubrücke: die behelfsmäßige Brücke wurde abgerissen, der Neubar ist voraussichtlich im Herbst 2006 (2006-10-01) fertig	2:inwork 9680,12916 9707,12974
 Spreeufer vor dem Monbijoupark: gesperrt wegen Bauarbeiten	2:inwork 10100,12876 9977,12912
 Uferweg: wegen Bauarbeiten gesperrt	2:inwork 14903,10403 15059,10289
 Dircksenstr. (Arbeiten an "Alexa", voraussichtlich bis 2006-12-31)	2:inwork 11283,12278 11209,12430 11156,12581 11057,12715
 Schloßplatz (Bauarbeiten am Palast der Republik)	2:inwork 10267,12305 10173,12492
-Sperrung vor der amerikanischen Botschaft	2 9141,12320 9126,12413 9112,12499 9100,12627
 Markgrafenstraße Richtung Französische Straße zwischen Behrenstraße und Französische Straße, Bauarbeiten als Einbahnstraße eingerichtet, Dauer:  bis 01.07.2006	1:inwork 9636,12126 9626,12227
 Brücke über den Torfgraben/Phöben gesperrt, Neubau voraussichtlich bis 2006-12-31	2:inwork -25539,2641 -25453,2418
 Behlertstr.	1 -12362,-370 -12607,-434 -12813,-480 -12868,-493

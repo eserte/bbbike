@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.250 2006/08/18 20:54:17 eserte Exp eserte $
+# $Id: bbbike,v 3.251 2006/08/19 20:07:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.250 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.251 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -3621,6 +3621,41 @@ sub do_iconframe {
 	   require WWWBrowser;
 	   WWWBrowser::start_browser($url);
        });
+    if ($advanced) {
+	$hpbm->cascade
+	    (-label => M("Mehr Dokumentation")." ...");
+	my $m2 = $hpbm->Menu(-title => M("Mehr Dokumentation")." ...");
+	$hpbm->entryconfigure("last", -menu => $m2);
+	for my $doc_def (["TODO.pod", M"To-Do-Liste"],
+			 ["doc/links.pod", M"Linkliste"],
+			 ["doc/watchsites.pod", M"Watchsites"],
+			 ["doc/qualitaetskategorien.html", M"Qualitätskategorien"],
+			 ["HOWTO_edit_bbbike_data.html", M"Daten in BBBike editieren"],
+			 ["bbd.pod", M"Beschreibung des bbd-Formats"],
+			) {
+	    my($file, $label) = @$doc_def;
+	    my $full_path = $FindBin::RealBin . "/" . $file;
+	    $m2->command
+		(-label => $label,
+		 -command => sub {
+		     if ($file =~ m{\.pod$}) {
+			 eval {
+			     require Tk::Pod;
+			     $top->Pod(-file => $full_path,
+				       -title => $label);
+			 };
+			 if ($@) {
+			     perlmod_install_advice('Tk::Pod');
+			 }
+		     } else {
+			 require WWWBrowser;
+			 my $url = "file:$full_path";
+			 WWWBrowser::start_browser($url);
+		     }
+		 },
+		);
+	}
+    }
     $hpbm->command(-label => M('Über').' ...',
 		   -command => sub { show_logo('as_about') });
     $hpbm->command(-label => M"Copyright",
@@ -4785,6 +4820,7 @@ sub load_photos {
     $steigung_photo      = load_photo($top, 'steigung.' . $default_img_fmt);
     $gefaelle_photo      = load_photo($top, 'gefaelle.' . $default_img_fmt);
     $inwork_photo        = load_photo($top, 'inwork.' . $default_img_fmt);
+    $cal_photo           = load_photo($top, 'cal.' . $default_img_fmt);
     $ferry_photo         = load_photo($top, 'ferry.' . $default_img_fmt);
     $ferry_klein_photo   = load_photo($top, 'ferry_klein.' . $default_img_fmt);
     $zugbruecke_photo    = load_photo($top, 'zugbruecke.' . $default_img_fmt);
@@ -9048,7 +9084,7 @@ sub plot_sperre {
 	    my($icon_x, $icon_y, $icon_anchor);
 	    my $sub_cat;
 	    my($cat,$addinfo) = $ret->[Strassen::CAT] =~ m{^(.*?)(?:::?(.*))?$};
-	    my @addinfo = split ':', $addinfo;
+	    my @addinfo = $addinfo ? split(':', $addinfo): ();
 	    if ($cat eq StrassenNetz::BLOCKED_CARRY) {
 		if ($width0) { # größer 0
 		    $sub_cat = 'sperre0';
@@ -9149,6 +9185,8 @@ sub plot_sperre {
 		    # ein bisschen schummeln ...
 		    push @kreuzungen, $kreuzungen[0];
 		}
+		my $tags = [$abk, $sub_cat,
+			    $ret->[Strassen::NAME], $abk.'-'.$pos];
 		for my $i (0 .. $#kreuzungen - 1) {
 		    my($x1,$y1) =
 			transpose(@{Strassen::to_koord1($kreuzungen[$i])});
@@ -9166,39 +9204,44 @@ sub plot_sperre {
 				       -width => $width1,
 				       -arrow => 'last',
 				       -arrowshape => [4,6,3],
-				       -tags => [$abk, $sub_cat,
-						 $ret->[Strassen::NAME], $abk.'-'.$pos],
+				       -tags => $tags,
 				      );
 		    } elsif ($cat eq StrassenNetz::BLOCKED_COMPLETE) {
-			# 		    $c->createImage($xm,$ym,
-			# 				    -image => $blocked_photo,
-			# 				    -tags => [$abk, 'sperre2',
-			# 					      $ret->[Strassen::NAME], $abk.'-'.$pos]);
+			# $c->createImage($xm,$ym,
+			# 	    -image => $blocked_photo,
+			# 	    -tags => $tags);
 			$c->createLine($xm-$length2, $ym-$length2,
 				       $xm+$length2, $ym+$length2,
 				       -fill => $fill2,
 				       -width => $width2,
-				       -tags => [$abk, $sub_cat,
-						 $ret->[Strassen::NAME], $abk.'-'.$pos]);
+				       -tags => $tags);
 			$c->createLine($xm-$length2, $ym+$length2,
 				       $xm+$length2, $ym-$length2,
 				       -fill => $fill2,
 				       -width => $width2,
-				       -tags => [$abk, $sub_cat,
-						 $ret->[Strassen::NAME], $abk.'-'.$pos]);
+				       -tags => $tags);
 		    }
 
-		    if (defined $addinfo[0] && $addinfo[0] =~ /\binwork\b/ && $inwork_photo) {
-			$c->createImage($xm,$ym,
-					-anchor => "nw",
-					-image => $inwork_photo,
-					-tags => [$abk,$sub_cat,$ret->[Strassen::NAME], $abk.'-'.$pos]);
+		    my @anchors = qw(nw sw ne se);
+
+		    for my $addinfo (@addinfo) {
+			if ($addinfo =~ /\binwork\b/ && $inwork_photo) {
+			    $c->createImage($xm,$ym,
+					    -anchor => shift(@anchors),
+					    -image => $inwork_photo,
+					    -tags => $tags);
+			} elsif ($addinfo =~ /\btemp\b/ && $cal_photo) {
+			    $c->createImage($xm,$ym,
+					    -anchor => shift(@anchors),
+					    -image => $cal_photo,
+					    -tags => $tags);
+			}
 		    }
 
 		    if ($is_car && $car_photo) {
 			$c->createImage($xm, $ym,
 					-image => $car_photo,
-					-anchor => "sw",
+					-anchor => shift(@anchors),
 					-tags => [$abk, $sub_cat,$ret->[Strassen::NAME], $abk.'-'.$pos]);
 		    }
 		}
@@ -9249,10 +9292,17 @@ sub activate_temp_blockings {
     # XXX these should come from a file as constants
     my $temp_blockings_dir = "$FindBin::RealBin/data/temp_blockings"; # XXX was misc
     my $file = "$temp_blockings_dir/bbbike-temp-blockings.pl";
+    my $optimized_file = "$temp_blockings_dir/bbbike-temp-blockings-optimized.pl";
     if (!-r $file) {
 	status_message(M("Kein Support fuer temporaere Sperrungen, das Verzeichnis $temp_blockings_dir fehlt. Dieses Verzeichnis ist aus dem CVS erhältlich, siehe README."), "warn");
 	return;
     }
+
+    if (-r $optimized_file && -s $optimized_file &&
+	-M $optimized_file <= -M $file) {
+	$file = $optimized_file;
+    }
+
     if (!$do_show_active_temp_blockings) {
 	$show_active_temp_blockings = 0;
 	plot("p", "temp_sperre", -draw => 0);

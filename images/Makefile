@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.29 2006/01/14 00:45:31 eserte Exp $
+# $Id: Makefile,v 1.30 2006/08/19 20:08:44 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -92,6 +92,7 @@ png-to-gif:	\
 		andreaskr_klein.gif \
 		apfel.gif \
 		birne.gif \
+		cal.gif \
 		church.gif \
 		ferry.gif \
 		ferry_klein.gif \
@@ -149,6 +150,7 @@ png-to-xpm:	\
 		andreaskr.xpm \
 		apfel.xpm \
 		birne.xpm \
+		cal.xpm \
 		church.xpm \
 		ferry.xpm \
 		ferry_klein.xpm \

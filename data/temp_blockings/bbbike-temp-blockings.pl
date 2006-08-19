@@ -2514,7 +2514,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002360',
        data  => <<EOF,
-userdel	q2 9494,15998 9583,15851
+userdel	q2::inwork 9494,15998 9583,15851
 EOF
      },
      { from  => 1124137069, # 2005-08-15 22:17
@@ -2538,7 +2538,7 @@ EOF
        text  => 'B 96; (Gransee-Fürstenberg); zw. Gransee und Altlüdersdorf grundh. Ausbau Vollsperrung 01.08.2005-31.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -5575,69050 -5703,68140
+userdel	2::inwork -5575,69050 -5703,68140
 EOF
      },
      { from  => 1128290400, # 2005-10-03 00:00
@@ -2663,7 +2663,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002176',
        data  => <<EOF,
-userdel	q4; 10459,17754 10722,17940 10846,17992
+userdel	q4::inwork; 10459,17754 10722,17940 10846,17992
 EOF
      },
      { from  => 1127508095, # 2005-09-23 22:41
@@ -3443,7 +3443,7 @@ EOF
        text  => 'L 201 Nauener Chaussee Bahnübergang bei Falkensee Gleisbauarbeiten Vollsperrung 09.12.2005-10.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -13897,20621 -13875,20548 -13756,20176
+userdel	2::inwork -13897,20621 -13875,20548 -13756,20176
 EOF
      },
      { from  => 1131231600, # 2005-11-06 00:00
@@ -3451,7 +3451,7 @@ EOF
        text  => 'L 202 Wustermark-Brieselang Brücke über Havelkanal bei Zeestow Brückenneubau Vollsperrung 07.11.2005-31.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -19908,17940 -18793,18169
+userdel	2::inwork -19908,17940 -18793,18169
 EOF
      },
      { from  => 1134104400, # 2005-12-09 06:00
@@ -3459,9 +3459,9 @@ EOF
        text  => 'Bahnhofstraße zwischen Goltzstraße und Steinstraße, Weihnachtsmarkt, Straße gesperrt. Dauer: 10.12.2005 06:00 Uhr bis 12.12.2005 01:00 Uhr. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 10945,-2124 10747,-2129
-userdel	2 10310,-2136 10453,-2133
-userdel	2 10453,-2133 10747,-2129
+userdel	2::temp 10945,-2124 10747,-2129
+userdel	2::temp 10310,-2136 10453,-2133
+userdel	2::temp 10453,-2133 10747,-2129
 EOF
      },
      { from  => 1134255600, # 2005-12-11 00:00
@@ -3686,7 +3686,7 @@ EOF
        text  => 'L 029 Eberswalder Chaussee OD Oderberg, von Berliner Str. in Ri. Eberswalde Beseit. Tragfähigkeitsschäden Vollsperrung 27.02.2006-27.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 52671,51846 51496,51542
+userdel	q4::inwork 52671,51846 51496,51542
 EOF
      },
      { from  => 1141499777, # 1141426800 2006-03-04 00:00
@@ -3726,8 +3726,8 @@ EOF
        text  => 'Die Kaulsdorfer Brücke ist ab Montag 06.03.2006, 6.00 Uhr bis voraussichtlich Herbst 2007 gesperrt.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 22691,12044 22668,12080
-userdel	2 22668,12080 22701,12115
+userdel	2::inwork 22691,12044 22668,12080
+userdel	2::inwork 22668,12080 22701,12115
 EOF
      },
      { from  => 1141765672, # 2006-03-07 22:07
@@ -3765,8 +3765,8 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002513',
        data  => <<EOF,
-userdel	q4; 4391,7258 4618,7231 4743,7212
-userdel	q4; 4534,7015 4462,7137 4391,7258
+userdel	q4::inwork; 4391,7258 4618,7231 4743,7212
+userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
 EOF
      },
      { from  => 1143068400, # 2006-03-23 00:00
@@ -3918,8 +3918,8 @@ EOF
        text  => 'B 198 Dr. Wilhelm Külz Str. Straßenbau Vollsperrung 03.04.2006-01.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 39322,101924 39574,101863
-userdel	q4 39715,101866 39574,101863
+userdel	q4::inwork 39322,101924 39574,101863
+userdel	q4::inwork 39715,101866 39574,101863
 EOF
      },
      { from  => 1142377200, # 2006-03-15 00:00
@@ -3935,7 +3935,7 @@ EOF
        text  => 'K 6422 Ernst-Thälmann-Str. OL Fredersdorf, Kno.. Bollensdorfer Allee u. Kno. Fließstr. Errichtung Lichtsignalanlage Vollsperrung 28.11.2005-30.06.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 34139,13113 33644,12458
+userdel	q4::inwork 34139,13113 33644,12458
 EOF
      },
      { from  => 1143410400, # 2006-03-27 00:00
@@ -3943,7 +3943,7 @@ EOF
        text  => 'L 220 OD Joachimsthal Bau Kreisverkehr Vollsperrung 28.03.2006-30.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 33787,63026 33254,63446
+userdel	q4::inwork 33787,63026 33254,63446
 EOF
      },
      { from  => 1144792800, # 2006-04-12 00:00
@@ -3951,8 +3951,8 @@ EOF
        text  => 'L 745 Motzen- Gallun zw. OA Motzen und OE Gallun Straßenbau Vollsperrung 13.04.2006-10.05.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 22476,-19219 22338,-19081
-userdel	2 22476,-19219 22599,-19785
+userdel	2::inwork 22476,-19219 22338,-19081
+userdel	2::inwork 22476,-19219 22599,-19785
 EOF
      },
      { from  => 1144015200, # 2006-04-03 00:00
@@ -3960,7 +3960,7 @@ EOF
        text  => 'B 112 Steinsdorf, Einmündung L45/B112 Herstellung Anbindung L45 Vollsperrung 04.04.2006-20.05.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 98052,-40791 98091,-41089
+userdel	q4::inwork 98052,-40791 98091,-41089
 EOF
      },
      { from  => 1144176662, # 2006-04-04 20:51
@@ -3977,9 +3977,9 @@ EOF
        text  => 'K 6419 zw. Rehfelde, R.-Luxemburg-Str. u. OE Strausberg Straßen-,Geh- u. Radwegbau Vollsperrung 04.04.2006-30.06.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 42996,14793 42578,15750
-userdel	2 42578,15750 42300,15756
-userdel	2 41681,15915 42300,15756
+userdel	2::inwork 42996,14793 42578,15750
+userdel	2::inwork 42578,15750 42300,15756
+userdel	2::inwork 41681,15915 42300,15756
 EOF
      },
      { from  => 1143324000, # 2006-03-25 23:00
@@ -4597,7 +4597,7 @@ EOF
        text  => 'B 246 Fünfeichen-Grunow OL Bremsdorf, Str. der Jugend Einbau Deckschicht Vollsperrung 08.06.2006-11.06.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 84903,-28417 83882,-28424
+userdel	2::inwork 84903,-28417 83882,-28424
 EOF
      },
      { from  => 1149544800, # 2006-06-06 00:00
@@ -4605,7 +4605,7 @@ EOF
        text  => 'L 338 Rahnsdorfer Str. OD Schöneiche, Brücke über Jägergraben Brückenneubau Vollsperrung 07.06.2006-30.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 30221,7373 30118,8128
+userdel	2::inwork 30221,7373 30118,8128
 EOF
      },
      { from  => 1150581600, # 2006-06-18 00:00
@@ -4613,7 +4613,7 @@ EOF
        text  => 'L 074 Chausseestraße OL Wünsdorf, zw. Cottbusser/Berliner Str. u. Seestr. Kanalverlegung Vollsperrung 19.06.2006-11.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 15960,-26906 15682,-26971 15229,-27157
+userdel	2::inwork 15960,-26906 15682,-26971 15229,-27157
 EOF
      },
      { from  => 1149623437, # 2006-06-06 21:50
@@ -4622,7 +4622,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_83663',
        data  => <<EOF,
-userdel	2 5791,16910 6042,17189 6118,17327 6154,17438
+userdel	2::inwork 5791,16910 6042,17189 6118,17327 6154,17438
 EOF
      },
      { from  => 1149976800, # 2006-06-11 00:00
@@ -4630,7 +4630,7 @@ EOF
        text  => 'B 156 OL Spremberg, Muskauer Straße OL Spremberg, Muskauer Str., Bahnübergang Sanierung BÜ u. Tiefbau Vollsperrung 12.06.2006-24.06.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 80783,-91972 80236,-92007
+userdel	2::inwork 80783,-91972 80236,-92007
 EOF
      },
      { from  => 1146898800, # 2006-05-06 09:00
@@ -4638,7 +4638,7 @@ EOF
        text  => 'Reinhardtstraße - Otto-von-Bismarck-Allee: zwischen Kreuzung Kapelleufer und Kreuzung Willy-Brandt-Straße in beiden Richtungen Veranstaltung, gesperrt, Dauer: 07.05.2006 09:00 Uhr bis 14.07.2006 23:45 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 8124,12742 8218,12742 8275,12742 8308,12742 8417,12846 8503,12895
+userdel	2::temp 8124,12742 8218,12742 8275,12742 8308,12742 8417,12846 8503,12895
 EOF
      },
      { from  => 1149703449, # 2006-06-07 20:04
@@ -4647,11 +4647,11 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002870',
        data  => <<EOF,
-userdel	2 8168,12848 8209,12816 8218,12742 8218,12601
-userdel	2 8775,12457 8540,12420 8400,12417 8374,12416 8119,12414
-userdel	2 8032,12817 8124,12840
-userdel	2 8307,12601 8308,12742
-userdel	2 8032,12817 8017,12826
+userdel	2::temp 8168,12848 8209,12816 8218,12742 8218,12601
+userdel	2::temp 8775,12457 8540,12420 8400,12417 8374,12416 8119,12414
+userdel	2::temp 8032,12817 8124,12840
+userdel	2::temp 8307,12601 8308,12742
+userdel	2::temp 8032,12817 8017,12826
 EOF
      },
      { from  => 1149703543, # 2006-06-07 20:05
@@ -4660,7 +4660,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002839',
        data  => <<EOF,
-userdel	2 8119,12414 8017,12359 7875,12363 7437,12368 7215,12295 7039,12314
+userdel	2::temp 8119,12414 8017,12359 7875,12363 7437,12368 7215,12295 7039,12314
 EOF
      },
      { from  => 1149976800, # 2006-06-11 00:00
@@ -4668,7 +4668,7 @@ EOF
        text  => 'B 101 OL Luckenwalde, Zinnaer Straße OL Luckenwalde, Zinnaer Str. zw. Mühlenweg u. Am Nuth: Vollsperrung 12.06.2006-23.06.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -4630,-36012 -4603,-35730
+userdel	q4::inwork -4630,-36012 -4603,-35730
 EOF
      },
      { from  => 1150581600, # 2006-06-18 00:00
@@ -4676,7 +4676,7 @@ EOF
        text  => 'L 099 Barnewitz - Marzahne zw. Abzw. Gortz (L911) in OL Barnewitz u. L98 in OL Marzahne Straßenbau Vollsperrung 19.06.2006-01.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -46651,12935 -45980,13284
+userdel	2::inwork -46651,12935 -45980,13284
 EOF
      },
      { from  => 1152568800, # 2006-07-11 00:00
@@ -4684,7 +4684,7 @@ EOF
        text  => 'L 601 Leipziger Str. OD Finsterwalde, Kno. Hain-/ Schützenstr. Kanalarbeiten Vollsperrung 12.07.2006-30.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 32963,-85912 32865,-86269 32870,-86323 32478,-86374
+userdel	q4::inwork 32963,-85912 32865,-86269 32870,-86323 32478,-86374
 EOF
      },
      { from  => 1149544800, # 2006-06-06 00:00
@@ -4692,21 +4692,21 @@ EOF
        text  => 'Fan-Fest der FIFA im Tiergarten, 7. Juni 2006 - 9. Juli 2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 8021,11636 8006,11766 8172,11679
-userdel	2 7816,12150 7875,12363
-userdel	2 7504,11504 7382,11588 7163,11738 7287,11763 7535,11677 7591,11639 7669,11586 7706,11612 7742,11639 7852,11721 8006,11766
-userdel	2 7669,11586 7711,11558
-userdel	2 8022,12016 8006,11766 7811,11868 7663,11946 7570,11855 7223,11897 7073,11798 7163,11738 6980,11583 6809,11570
-userdel	2 7039,12314 7383,12095
-userdel	2 7073,11798 6778,11742
-userdel	2 8374,12416 8539,12286
-userdel	2 7382,11588 7354,11513
-userdel	2 6809,11979 7073,11798
-userdel	2 8223,11700 8220,11844 8215,12156 8214,12205
-userdel	2 8119,12414 8063,12182
-userdel	2 8063,12182 8034,12093 8006,12074 7999,12049 8022,12016
-userdel	2 8540,12420 8560,12326 8539,12286 8515,12242 8600,12165 8595,12066
-userdel	2 8595,12066 8581,11896 8571,11846
+userdel	2::temp 8021,11636 8006,11766 8172,11679
+userdel	2::temp 7816,12150 7875,12363
+userdel	2::temp 7504,11504 7382,11588 7163,11738 7287,11763 7535,11677 7591,11639 7669,11586 7706,11612 7742,11639 7852,11721 8006,11766
+userdel	2::temp 7669,11586 7711,11558
+userdel	2::temp 8022,12016 8006,11766 7811,11868 7663,11946 7570,11855 7223,11897 7073,11798 7163,11738 6980,11583 6809,11570
+userdel	2::temp 7039,12314 7383,12095
+userdel	2::temp 7073,11798 6778,11742
+userdel	2::temp 8374,12416 8539,12286
+userdel	2::temp 7382,11588 7354,11513
+userdel	2::temp 6809,11979 7073,11798
+userdel	2::temp 8223,11700 8220,11844 8215,12156 8214,12205
+userdel	2::temp 8119,12414 8063,12182
+userdel	2::temp 8063,12182 8034,12093 8006,12074 7999,12049 8022,12016
+userdel	2::temp 8540,12420 8560,12326 8539,12286 8515,12242 8600,12165 8595,12066
+userdel	2::temp 8595,12066 8581,11896 8571,11846
 EOF
      },
      { from  => undef, # 
@@ -4753,7 +4753,7 @@ EOF
        text  => 'B 246 OL Bestensee, Hauptstraße OL Bestensee, Hauptstraße, Bahnübergang Bauarbeiten am Gleiskörper Vollsperrung 30.06.2006-04.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 26639,-17861 26752,-17872 26832,-17882
+userdel	2::inwork 26639,-17861 26752,-17872 26832,-17882
 EOF
      },
      { from  => 1150840800, # 2006-06-21 00:00
@@ -4761,7 +4761,7 @@ EOF
        text  => 'K 6828 L 164 Altfriesack-Wuthenow OT Seehof, Dorfstr. Kanalarbeiten Vollsperrung 22.06.2006-15.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -28368,51517 -28736,52387
+userdel	2::inwork -28368,51517 -28736,52387
 EOF
      },
      { from  => 1151618400, # 2006-06-30 00:00
@@ -4769,7 +4769,7 @@ EOF
        text  => 'K 7221 Woltersdorf-Liebätz Einmündung zur K7220 (Ruhldorf-Liebätz) Straßen- u. Radwegebau Vollsperrung 01.07.2006-02.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -3584,-29888 -3733,-29501
+userdel	2::inwork -3584,-29888 -3733,-29501
 EOF
      },
      { from  => 1151609302, # 2006-06-29 21:28
@@ -4777,7 +4777,7 @@ EOF
        text  => 'Bis 31.08.2006 Vollsperrung der L 862 zwischen Falkenrehde und Ketzin. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -22215,9500 -22510,9372 -23467,9217 -23807,9279 -24319,9296 -24594,9168 -25265,9000 -25456,8850 -25658,8777 -26243,8485 -26774,7951 -27468,7711
+userdel	2::inwork -22215,9500 -22510,9372 -23467,9217 -23807,9279 -24319,9296 -24594,9168 -25265,9000 -25456,8850 -25658,8777 -26243,8485 -26774,7951 -27468,7711
 EOF
      },
      { from  => 1150916248, # 2006-06-21 20:57
@@ -4786,7 +4786,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_82301_COPY_1',
        data  => <<EOF,
-userdel	2 -862,22946 -596,23009
+userdel	2::inwork -862,22946 -596,23009
 EOF
      },
      { from  => 1149976800, # 2006-06-11 00:00
@@ -4794,7 +4794,7 @@ EOF
        text  => 'B 156 Muskauer Straße Bahnübergang in der OL Spremberg Sanierung BÜ u. Tiefbau Vollsperrung 12.06.2006-29.06.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 80783,-91972 80236,-92007
+userdel	2::inwork 80783,-91972 80236,-92007
 EOF
      },
      { from  => 1150840800, # 2006-06-21 00:00
@@ -4802,7 +4802,7 @@ EOF
        text  => 'B 158 bei Schiffmühle, Brücke über Alte Oder Rückbauarb., Herstell. M.insel Vollsperrung * 22.06.2006-22.06.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 53350,45087 53293,45400
+userdel	2::inwork 53350,45087 53293,45400
 EOF
      },
      { from  => 1152050400, # 2006-07-05 00:00
@@ -4810,8 +4810,8 @@ EOF
        text  => 'K 6503 B273-Zühlsdorf-L211 (Summt-Lehnitz) Kreuzung. Summter Chaussee bei Zühlslake Neubau Kreisverkehr Vollsperrung 06.07.2006-19.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 7346,32257 7435,34963 8115,35387
-userdel	q4 7070,34665 7435,34963 7443,36175
+userdel	q4::inwork 7346,32257 7435,34963 8115,35387
+userdel	q4::inwork 7070,34665 7435,34963 7443,36175
 EOF
      },
      { from  => 1149026400, # 2006-05-31 00:00
@@ -4819,7 +4819,7 @@ EOF
        text  => 'L 010 Havelberger Str. OD Bad Wilsnack, vom OE bis An der Trift Kanal- und Straßenbau Vollsperrung 01.06.2006-31.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -89549,58784 -89647,59213
+userdel	q4::inwork -89549,58784 -89647,59213
 EOF
      },
      { from  => 1150754400, # 2006-06-20 00:00
@@ -4827,7 +4827,7 @@ EOF
        text  => 'L 011 Große Str. OD Bad Wilsnack, Einmünd. zur Havelberger Str. Kanal- und Straßenbau Vollsperrung 21.06.2006-31.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -89647,59213 -89606,59341
+userdel	q4::inwork -89647,59213 -89606,59341
 EOF
      },
      { from  => 1151013248, # 2006-06-22 23:54
@@ -4836,7 +4836,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_82715',
        data  => <<EOF,
-userdel	1 -3972,15639 -3985,15770 -3735,16205 -3631,16224
+userdel	1::inwork -3972,15639 -3985,15770 -3735,16205 -3631,16224
 EOF
      },
      { from  => 1150840800, # 2006-06-21 00:00
@@ -4844,7 +4844,7 @@ EOF
        text  => 'L 211 Lehnitzer Str. OD Oanienburg, zw. Lindenring u. Dr.-H.-Byk-Str. Munitionssuche u.-bergung halbseitig gesperrt; Einbahnstraße 22.06.2006-30.06.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -954,38397 -591,37970
+userdel	q4::inwork -954,38397 -591,37970
 EOF
      },
      { from  => 1151042079, # 2006-06-23 07:54
@@ -4871,7 +4871,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_77040_COPY_1',
        data  => <<EOF,
-userdel	q4 14439,10496 14608,10409
+userdel	q4::inwork 14439,10496 14608,10409
 EOF
      },
      { from  => 1150754400, # 2006-06-20 00:00
@@ -4879,7 +4879,7 @@ EOF
        text  => 'B 002 Eberswalder Str. Bahnübergang in OL Melchow Umbau Bahnübergang Vollsperrung 21.06.2006-26.06.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 30143,41500 29468,41438
+userdel	2::inwork 30143,41500 29468,41438
 EOF
      },
      { from  => 1152050400, # 2006-07-05 00:00
@@ -4887,7 +4887,7 @@ EOF
        text  => 'L 235 Gielsdorf-Werneuchen Schulstr. in der OL Wegendorf Straßen- u. Durchlassbau Vollsperrung; 06.07.2006-19.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 34492,22176 34321,22151 34125,22128
+userdel	q4::inwork 34492,22176 34321,22151 34125,22128
 EOF
      },
      { from  => 1151791200, # 2006-07-02 00:00
@@ -4895,7 +4895,7 @@ EOF
        text  => 'B 183 Dresdner Str. OL Bad Liebenwerda, zw. Querspange u. Hainsche Str. Untersuchung Lubwartturm Vollsperrung 03.07.2006-03.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 12194,-98944 12593,-99029
+userdel	2::inwork 12194,-98944 12593,-99029
 EOF
      },
      { from  => 1152050400, # 2006-07-05 00:00
@@ -4919,7 +4919,7 @@ EOF
        text  => 'L 220 B167 Finowfurt-Joachimsthal zw. Eichhorst und Elsenau Baumfällungen Vollsperrung 04.07.2006-04.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 29884,58862 30384,59443
+userdel	2::inwork 29884,58862 30384,59443
 EOF
      },
      { from  => 1151618400, # 2006-06-30 00:00
@@ -4927,7 +4927,7 @@ EOF
        text  => 'K 7220 Luckenwalde-Liebätz zw. Ruhlsdorf und Liebätz Deckeneinbau Vollsperrung 01.07.2006-02.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -3607,-29164 -3733,-29501
+userdel	2::inwork -3607,-29164 -3733,-29501
 EOF
      },
      { from  => 1152050400, # 2006-07-05 00:00
@@ -4935,7 +4935,7 @@ EOF
        text  => 'L 079 Ludwigsfelde-Potsdam Höhe Ahrensdorf bis Kreisverk. Nudow Straßenbauarbeiten Vollsperrung 06.07.2006-19.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -3618,-9791 -4050,-9464 -4422,-9151 -4649,-8996
+userdel	2::inwork -3618,-9791 -4050,-9464 -4422,-9151 -4649,-8996
 EOF
      },
      { from  => 1151917200, # 2006-07-03 11:00
@@ -4943,7 +4943,7 @@ EOF
        text  => 'Der große Stern wird zu den Halbfinalspielen am 4.7.2006 von 11.00 Uhr bis zum 5.7.2006 03.00 Uhr gesperrt. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6799,12083 6754,12108 6725,12113 6690,12104
+userdel	2::temp 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6799,12083 6754,12108 6725,12113 6690,12104
 EOF
      },
      { from  => 1152234000, # 2006-07-07 03:00
@@ -4951,12 +4951,12 @@ EOF
        text  => 'Der große Stern wird zu den Finalspielen am 8.7.2006 von 03.00 Uhr bis zum 10.7.2006 06.00 Uhr gesperrt. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6799,12083 6754,12108 6725,12113 6690,12104
-userdel	2 6540,11754 6685,11954
-userdel	2 6825,11486 6809,11570 6778,11742 6744,11936
-userdel	2 6653,12067 6178,12387
-userdel	2 5901,11902 6642,12010
-userdel	2 7039,12314 6799,12083
+userdel	2::temp 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6799,12083 6754,12108 6725,12113 6690,12104
+userdel	2::temp 6540,11754 6685,11954
+userdel	2::temp 6825,11486 6809,11570 6778,11742 6744,11936
+userdel	2::temp 6653,12067 6178,12387
+userdel	2::temp 5901,11902 6642,12010
+userdel	2::temp 7039,12314 6799,12083
 EOF
      },
      { from  => 1151965861, # 2006-07-04 00:31
@@ -4965,7 +4965,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003018',
        data  => <<EOF,
-userdel	2 4409,3173 4582,3076 4643,3046 4825,2958
+userdel	2::inwork 4409,3173 4582,3076 4643,3046 4825,2958
 EOF
      },
      { from  => 1152396000, # 2006-07-09 00:00
@@ -4973,7 +4973,7 @@ EOF
        text  => 'L 362 Bergmannstr. OD Müncheberg, zw. Seelower Str. u. Marienfeld Instandsetzung Durchlass Vollsperrung 10.07.2006-19.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 61069,13387 61181,12075
+userdel	q4::inwork 61069,13387 61181,12075
 EOF
      },
      { from  => 1152221102, # 2006-07-06 23:25
@@ -4982,7 +4982,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_77721_COPY_1',
        data  => <<EOF,
-userdel	q4; 13131,16525 13386,16408
+userdel	q4::inwork; 13131,16525 13386,16408
 EOF
      },
      { from  => 1153000800, # 2006-07-16 00:00
@@ -4990,7 +4990,7 @@ EOF
        text  => 'K 6413 Berliner Str. OL Buckow, zw. Hauptstr. und OA grundhafter Straßenbau Vollsperrung 17.07.2006-31.12.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 55988,18385 55623,17923 55217,17672
+userdel	q4::inwork 55988,18385 55623,17923 55217,17672
 EOF
      },
      { from  => 1152568800, # 2006-07-11 00:00
@@ -4998,7 +4998,7 @@ EOF
        text  => 'K 6413 Berliner Str. OL Buckow, zw. Nr. 60 und Waldweg grundhafter Straßenbau Vollsperrung; Umleitung 12.07.2006-14.07.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 55988,18385 55623,17923 55217,17672
+userdel	q4::inwork 55988,18385 55623,17923 55217,17672
 EOF
      },
      { from  => 1152568800, # 2006-07-11 00:00
@@ -5006,7 +5006,7 @@ EOF
        text  => 'L 029 Bahnhofstr. Bahnübergang in Biesenthal Umbau Bahnübergang Vollsperrung 12.07.2006-30.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 28993,38709 28262,39100 26237,40190
+userdel	2::inwork 28993,38709 28262,39100 26237,40190
 EOF
      },
      { from  => 1152223200, # 2006-07-07 00:00
@@ -5014,7 +5014,7 @@ EOF
        text  => 'L 171 Karl-Marx-Str. OD Hohen Neuendorf, Kno.K.-Tucholsky-Str. Straßensanierung halbseitig gesperrt; Einbahnstraße 08.07.2006-11.07.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 1379,29410 1611,29359
+userdel	q4::inwork; 1379,29410 1611,29359
 EOF
      },
      { from  => 1152828000, # 2006-07-14 00:00
@@ -5022,7 +5022,7 @@ EOF
        text  => 'B 102 Große Milower Str. OD Rathenow, zw. Eigendorfstr. u. Grünauer Weg Neub. B188n, Mont. Stahlträger Vollsperrung 15.07.2006-15.07.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -62333,20390 -62269,19881 -62153,19281
+userdel	q4::inwork -62333,20390 -62269,19881 -62153,19281
 EOF
      },
      { from  => 1152396000, # 2006-07-09 00:00
@@ -5030,7 +5030,7 @@ EOF
        text  => 'L 019 Ruppiner Chaussee OD Kremmen grundhafter Straßenbau Vollsperrung 10.07.2006-15.10.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -15770,39361 -15556,39597 -15170,39685 -14871,40028
+userdel	q4::inwork -15770,39361 -15556,39597 -15170,39685 -14871,40028
 EOF
      },
      { from  => 1152396000, # 2006-07-09 00:00
@@ -5038,7 +5038,7 @@ EOF
        text  => 'L 099 zw. Abzw. Gortz (L911) in OL Barnewitz u. Marzahne Straßenbau Vollsperrung 10.07.2006-15.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -48510,11216 -48001,11540 -47603,12203 -47031,12527 -46651,12935 -45980,13284 -45617,13395 -44599,14084 -44292,14733 -44020,15116 -43321,16508
+userdel	2::inwork -48510,11216 -48001,11540 -47603,12203 -47031,12527 -46651,12935 -45980,13284 -45617,13395 -44599,14084 -44292,14733 -44020,15116 -43321,16508
 EOF
      },
      { from  => 1152396000, # 2006-07-09 00:00
@@ -5046,7 +5046,7 @@ EOF
        text  => 'L 743 Motzener Str. OD Bestensee, Durchlass Ersatzneubau Durchlass Vollsperrung 10.07.2006-18.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 26639,-17861 26650,-18150 26437,-18650 26343,-18775 25475,-19231
+userdel	q4::inwork 26639,-17861 26650,-18150 26437,-18650 26343,-18775 25475,-19231
 EOF
      },
      { from  => 1152312770, # 2006-07-08 00:52
@@ -5054,7 +5054,7 @@ EOF
        text  => 'Neue Bahnhofstr. Richtung Süden ab Oderstr. gesperrt, voraussichtlich bis Oktober 2006',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 15091,11596 15043,11511 15008,11436 14912,11252
+userdel	q4::inwork; 15091,11596 15043,11511 15008,11436 14912,11252
 EOF
      },
      { from  => 1152228595, # 2006-07-07 01:29
@@ -5062,7 +5062,7 @@ EOF
        text  => 'Luisenhain ist gesperrt, Umgestaltung bis 2007',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 22196,4847 22147,4831 22043,4562 22071,4501
+userdel	2::inwork 22196,4847 22147,4831 22043,4562 22071,4501
 EOF
      },
      { from  => 1152363677, # 2006-07-08 15:01
@@ -5078,7 +5078,7 @@ EOF
        text  => 'Neubau der Treptower Straße in Neukölln, Sperrung zwischen Kiefholzstraße und Heidelberger Straße (Anliegerverkehr ist frei) (bis Ende 2006) ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 13857,8601 13982,8764 14015,8798 14140,8977
+userdel	q4::inwork 13857,8601 13982,8764 14015,8798 14140,8977
 EOF
      },
      { from  => 1153955394, # 2006-07-27 01:09
@@ -5087,7 +5087,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_84063',
        data  => <<EOF,
-userdel	1 14621,16563 15121,16503 15388,16502
+userdel	1::inwork 14621,16563 15121,16503 15388,16502
 EOF
      },
      { from  => 1152566231, # 2006-07-10 23:17
@@ -5096,7 +5096,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_84075',
        data  => <<EOF,
-userdel	q4; 18175,6376 18445,6287 18853,6009
+userdel	q4::inwork; 18175,6376 18445,6287 18853,6009
 EOF
      },
      { from  => 1154642400, # 2006-08-04 00:00
@@ -5104,7 +5104,7 @@ EOF
        text  => 'L 023 Storkow-Grünheide Brücke über die Müggelspree bei Neuhartmannsdorf Asphaltarbeiten Vollsperrung 05.08.2006-06.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 40333,-4484 40503,-4571 40652,-4743
+userdel	2::inwork 40333,-4484 40503,-4571 40652,-4743
 EOF
      },
      { from  => 1153738184, # 2006-07-24 12:49
@@ -5113,7 +5113,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_84234_COPY_14',
        data  => <<EOF,
-userdel	1 5481,5721 5601,5732
+userdel	1::inwork 5481,5721 5601,5732
 EOF
      },
      { from  => 1153738269, # 2006-07-24 12:51
@@ -5122,7 +5122,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_83906_COPY_1',
        data  => <<EOF,
-userdel	1 9224,14169 9383,13978
+userdel	1::inwork 9224,14169 9383,13978
 EOF
      },
      { from  => 1153739381, # 2006-07-24 13:09
@@ -5131,7 +5131,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_84233_COPY_14',
        data  => <<EOF,
-userdel	2 7002,11034 7010,11002 6918,10854
+userdel	2::inwork 7002,11034 7010,11002 6918,10854
 EOF
      },
      { from  => 1153739453, # 2006-07-24 13:10
@@ -5140,7 +5140,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_84204',
        data  => <<EOF,
-userdel	2 21350,852 21202,727 21164,697 21089,639
+userdel	2::inwork 21350,852 21202,727 21164,697 21089,639
 EOF
      },
      { from  => 1153346400, # 2006-07-20 00:00
@@ -5148,7 +5148,7 @@ EOF
        text  => 'B 096 Gransee-Fürstenberg OD Dannenwalde grundhafter Straßenbau Vollsperrung 21.07.2006-30.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -5962,74421 -5737,74650
+userdel	q4::inwork -5962,74421 -5737,74650
 EOF
      },
      { from  => 1153000800, # 2006-07-16 00:00
@@ -5156,7 +5156,7 @@ EOF
        text  => 'B 167 Eisenbahnstr./ Wilhelmstr. OL Eberswalde, Wilhelmbrücke Fahrbahnsanierung 17.07.2006-11.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 37875,48253 37532,48149
+userdel	2::inwork 37875,48253 37532,48149
 EOF
      },
      { from  => 1153000800, # 2006-07-16 00:00
@@ -5164,7 +5164,7 @@ EOF
        text  => 'K 6425 Rudolf-Breitscheid-Allee OD Neuenhagen, zw. Am Friedhof u. Krz. Hönower Chaussee Straßen- uned Gehwegbau halbseitig gesperrt; Einbahnstraße 17.07.2006-30.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 29743,14143 29093,13456
+userdel	q4::inwork 29743,14143 29093,13456
 EOF
      },
      { from  => 1152482400, # 2006-07-10 00:00
@@ -5172,7 +5172,7 @@ EOF
        text  => 'L 098 Marzahne-Rathenow Brandenburger Str. in OL Mützlitz Kanal- und Straßenbau Vollsperrung 11.07.2006-06.10.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -50268,15901 -50493,15837 -50578,15920
+userdel	q4::inwork -50268,15901 -50493,15837 -50578,15920
 EOF
      },
      { from  => 1153173600, # 2006-07-18 00:00
@@ -5180,7 +5180,7 @@ EOF
        text  => 'L 362 Müncheberg-Wulkow OD Obersdorf Kanal- u. Straßenbau Vollsperrung 19.07.2006-30.07.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 62444,15991 62380,16226 62104,16631
+userdel	q4::inwork 62444,15991 62380,16226 62104,16631
 EOF
      },
      { from  => 1156370400, # 2006-08-24 00:00
@@ -5188,7 +5188,7 @@ EOF
        text  => 'L 601 Berliner Str. OL Finsterwalde Sängerfest Vollsperrung 25.08.2006-28.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 33060,-85292 33103,-85731
+userdel	2::temp 33060,-85292 33103,-85731
 EOF
      },
      { from  => 1153805975, # 2006-07-25 07:39
@@ -5197,7 +5197,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_82304',
        data  => <<EOF,
-userdel	q4; 6670,14302 6482,14264
+userdel	q4::inwork; 6670,14302 6482,14264
 EOF
      },
      { from  => 1153860291, # 2006-07-25 22:44
@@ -5206,7 +5206,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003129',
        data  => <<EOF,
-userdel	1 2639,2989 2638,2843
+userdel	1::inwork 2639,2989 2638,2843
 EOF
      },
      { from  => 1153860349, # 2006-07-25 22:45
@@ -5215,7 +5215,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003134',
        data  => <<EOF,
-userdel	1 15904,12340 15863,11992
+userdel	1::inwork 15904,12340 15863,11992
 EOF
      },
      { from  => 1154210400, # 2006-07-30 00:00
@@ -5223,7 +5223,7 @@ EOF
        text  => 'L 015 B109 südl. Prenzlau-Boitzenburg OD Gollmitz Einbau Deckschicht Vollsperrung 31.07.2006-11.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 30743,99403 30504,99595
+userdel	2::inwork 30743,99403 30504,99595
 EOF
      },
      { from  => 1154038125, # 2006-07-28 00:08
@@ -5232,7 +5232,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_81874_COPY_4',
        data  => <<EOF,
-userdel	1 16863,13138 15912,13153
+userdel	1::inwork 16863,13138 15912,13153
 EOF
      },
      { from  => 1154210400, # 2006-07-30 00:00
@@ -5240,7 +5240,7 @@ EOF
        text  => 'L 035 Eisenbahnstr.-August-Bebel-Str. Brücke über die Spree in Fürstenwalde Deckenerneuerung halbseitig gesperrt; Einbahnstraße 31.07.2006-02.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 55549,-4992 55562,-4726
+userdel	q4::temp; 55549,-4992 55562,-4726
 EOF
      },
      { from  => 1154642400, # 2006-08-04 00:00
@@ -5248,7 +5248,7 @@ EOF
        text  => 'L 063 Berliner Str. OL Lauchhammer, Höhe Bahnübergang Neugestaltung SGÜ Vollsperrung 05.08.2006-26.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 35482,-103562 35379,-103141 35072,-102150
+userdel	2::temp 35482,-103562 35379,-103141 35072,-102150
 EOF
      },
      { from  => 1154296800, # 2006-07-31 00:00
@@ -5265,7 +5265,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003088',
        data  => <<EOF,
-userdel	2 5370,6500 5424,6584 5533,6753 5654,6941
+userdel	2::temp 5370,6500 5424,6584 5533,6753 5654,6941
 EOF
      },
      { from  => 1154203576, # 2006-07-29 22:06
@@ -5360,7 +5360,7 @@ EOF
        text  => 'B 167 Frankfurter Str. OL Seelow, zw. breite Str. u. Küstriner Str. Stadtfest Vollsperrung 01.09.2006-03.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 76771,15413 77081,14637
+userdel	q4::temp 76771,15413 77081,14637
 EOF
      },
      { from  => 1155765600, # 2006-08-17 00:00
@@ -5469,7 +5469,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003267',
        data  => <<EOF,
-userdel	2 6137,10689 6040,10751 5942,10803 5797,10881 5725,10892 5657,10868 5484,10810 5351,10760 5229,10716 5076,10658
+userdel	2::temp 6137,10689 6040,10751 5942,10803 5797,10881 5725,10892 5657,10868 5484,10810 5351,10760 5229,10716 5076,10658
 EOF
      },
      { from  => 1156888800, # 2006-08-30 00:00

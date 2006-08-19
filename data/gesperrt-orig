@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.121 2006/08/18 17:43:30 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.121 2006/08/18 17:43:30 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -538,9 +538,8 @@ Otto-Braun-Str.: Mittelstreifen	3nocross 11368,13170 11298,13063 11275,13026 112
 Otto-Braun-Str.: Mittelstreifen	3nocross 11446,13294 11464,13321 11535,13411 11550,13427 11646,13546 11723,13630
 #: by: ^^^
 Karl-Marx-Allee: Mittelstreifen	3nocross 11228,12951 11295,12915 11540,12795 11635,12745
-#: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Neustädtische Kirchstr.: An der US-Botschaft	3nocross 9100,12627 9112,12499 9126,12413 9141,12320
-#: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sperrung vor der amerikanischen Botschaft	2 9141,12320 9126,12413 9112,12499 9100,12627
 Columbiadamm: unbequem zu überqueren (Bordsteine)	3nocross 10796,8498 10911,8457 11271,8325
 #: by: Wolfgang Schmidt: vvv
 Birkbuschstr.: unbequem zu passieren	3 4839,5167 4807,5131 4789,5079
@@ -549,7 +548,7 @@ Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	
 #: by: ^^^
 Hauptstr.: Mittelstreifen	3nocross 6687,8385 6765,8480 6912,8617 6990,8685
 #: by: Jirka Klaue:
-Am Tierpark: Straßenbahntrasse	3nocross 18628,10177 18561,10341 18446,10620
+Am Tierpark: Straßenbahntrasse	3nocross 18628,10177 18561,10341 18532,10410 18446,10620
 #
 ####################################################################
 #
@@ -739,7 +738,7 @@ Pankeweg: Bauarbeiten noch nicht abgeschlossen	2:inwork 8904,17059 8836,16867
 Brücke über Panke fehlt noch	2:inwork 8321,15386 8290,15406
 #: last_checked: 2005-12-23
 #: XXX: Ist das Passieren nach den Bauarbeiten weiterhin möglich?
-Köbisdreieck: Bauarbeiten	2 7160,11225 6853,11336
+Köbisdreieck: Bauarbeiten	2:inwork 7160,11225 6853,11336
 #XXX del: # last_checked: 2005-11-19: Budapester Str.: Bauarbeiten, Fußgängerüberweg gesperrt	3nocross:inwork 5716,10978 5831,10978 6135,10982
 Hedwigskirchgasse: Bauarbeiten	2:inwork 9743,12239 9756,12139
 #: last_checked: 2006-07-09
@@ -752,7 +751,6 @@ Dircksenstr. (Arbeiten an "Alexa", voraussichtlich bis 2006-12-31)	2:inwork 1128
 #XXX del Elsenstr.	1:inwork 13760,9188 13657,9063 13504,8882
 #XXX del für Radfahrer nicht relevant: Malchower Chaussee (Pankow) Richtung stadteinwärts zwischen Ortnitstr. und Nachtalbenweg Baustelle, veränderte Verkehrsführung. Für die Arbeiten im Abschnitt von Darßer str. bis Nachtalbenweg wird der Verkehr über Darßer Str. - Nachtalbenw. umgeleitet (bis 30.04.2005)	1:inwork 15181,18137 14828,17856
 Schloßplatz (Bauarbeiten am Palast der Republik)	2:inwork 10267,12305 10173,12492
-Sperrung vor der amerikanischen Botschaft	2 9141,12320 9126,12413 9112,12499 9100,12627
 # XXX del: Alte Naumannstr.: komplett gesperrt, Bauarbeiten am neuen Vorplatz vom Bahnhof Südkreuz	2 7717,7759 7762,7734 7718,7641 7717,7564
 # XXX del??? Goethestr. (Bauarbeiten)	1:inwork 4896,11345 5053,11343
 # als "Mitte 2006" gekennzeichnet

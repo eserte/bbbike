@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.106 2006/08/18 21:07:10 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.107 2006/08/19 20:08:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3661,7 +3661,7 @@ sub temp_blockings_editor {
 
 		  main::save_user_dels($file,
 				       -type => $blocking_type,
-				       ($is_in_work ? (-addinfo => "inwork") : ()),
+				       ($is_in_work ? (-addinfo => "inwork") : (-addinfo => "temp")),
 				      );
 		  if ($auto_cross_road_blockings) {
 		      my $add_userdels = add_cross_road_blockings();
