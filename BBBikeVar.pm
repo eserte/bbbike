@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.50 2006/06/11 21:50:59 eserte Exp $
+# $Id: BBBikeVar.pm,v 1.51 2006/08/20 20:51:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000-2006 Slaven Rezic. All rights reserved.
@@ -24,6 +24,7 @@ $FREEBSD_VERSION   = '3.15';
 
 $EMAIL_OLD	   = 'eserte@cs.tu-berlin.de';
 $EMAIL		   = 'slaven@rezic.de';
+$EMAIL_NEWSTREET   = 'newstreet@bbbike.de';
 # personal homepage
 $HOMEPAGE	   = 'http://www.rezic.de/eserte/';
 # pointer to WWW version

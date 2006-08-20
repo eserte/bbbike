@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.251 2006/08/19 20:07:31 eserte Exp $
+# $Id: bbbike,v 3.251 2006/08/19 20:07:31 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -17258,6 +17258,7 @@ sub show_logo { # und About
 		 )->pack(-anchor => 'w', -expand => 1,
 			 -fill => 'x');
     }
+    # Send mail to software maintainer
     my $mail_b =
 	$f->$Button_or_Label
 	    (-text => $BBBike::EMAIL,

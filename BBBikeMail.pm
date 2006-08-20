@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMail.pm,v 1.13 2005/04/05 22:28:38 eserte Exp $
+# $Id: BBBikeMail.pm,v 1.14 2006/08/20 18:56:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -142,7 +142,9 @@ sub enter_send_anything {
 }
 
 sub send_mail {
-    my($to, $subject, $data) = @_;
+    my($to, $subject, $data, %args) = @_;
+    my $cc = delete $args{CC};
+    warn "Extra arguments: " . join(" ", %args) if %args;
     eval {
 	require Mail::Send;
 	require Mail::Mailer;
@@ -151,6 +153,7 @@ sub send_mail {
 	$msg->add("MIME-Version", "1.0");
 	$msg->add("Content-Type", "text/plain; charset=ISO-8859-1");
 	$msg->add("Content-Transfer-Enconding", "8bit");
+	$msg->add("CC", $cc) if $cc;
 	my $fh = $msg->open;
 	print $fh $data;
 	$fh->close;

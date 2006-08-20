@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.17 2006/04/16 19:26:12 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.18 2006/08/20 21:56:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -508,7 +508,12 @@ sub BBBikeLazy::plotstr_on_demand {
  	    my $restrict = undef; #XXX
  	    my $coordsys = $coord_system_obj->coordsys;
 	    my $name_draw = $p_name_draw{$abk};
-	    my($name_draw_tag, $name_draw_other);
+	    # XXX Duplikate in plot_point: vvv
+	    my $name_draw_tag = "$abk-label";
+	    my $name_draw_other = ($name_draw_tag =~ /^[ubr]-label$/
+				   ? [qw(u-label b-label r-label)]
+				   : $name_draw_tag);
+	    # XXX ^^^
 	    my %no_overlap_label;
 	    my $no_overlap_label;
 

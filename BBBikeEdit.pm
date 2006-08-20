@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.107 2006/08/19 20:08:31 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.108 2006/08/20 18:56:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2274,8 +2274,11 @@ sub send_comment {
 			   } else {
 			       warn "Cannot write to $backup_file: $!\n";
 			   }
+			   # Send mail to software maintainer
+			   # and CC to data maintainers
 			   BBBikeMail::send_mail($BBBike::EMAIL, "BBBike comment (Perl/Tk $main::VERSION)",
 						 $full_msg,
+						 CC => $BBBike::EMAIL_NEWSTREET,
 						);
 			   main::status_message(M("Mail wurde eventuell versandt."), "infodlg");
 		       }

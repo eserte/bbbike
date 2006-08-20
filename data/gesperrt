@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.121 2006/08/18 17:43:30 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.122 2006/08/20 21:26:02 eserte Exp $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -36,7 +36,6 @@ Rasthof Avus	1 1894,10390 1904,10353 1866,10315 1736,10293 1716,10324 1842,10413
 Breitenbachplatz (Westseite)	1 4292,6558 4208,6566 4096,6632 4026,6688 3947,6814
 Breitenbachplatz (Ostseite)	1 4000,6852 4098,6751 4153,6703 4265,6636 4292,6558
 Inselstr. Schwanenwerder	1 -5310,4216 -5393,4211 -5453,4274 -5471,4412 -5442,4526 -5386,4539 -5341,4511 -5358,4404 -5356,4296 -5310,4216
-Kaiser-Wilhelm-Platz	1 7320,8939 7201,8870
 Bayerischer Platz	1 6063,9106 6053,9224 6084,9242 6131,9241 6161,9128 6152,9091 6118,9078 6083,9082 6063,9106
 orthodoxe Kirche (unsicher)	1 3952,8980 3932,8989 3835,9044
 U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2750,5532 2532,5105 2472,5037 2313,4901 2190,4823 2074,4750 2005,4772
@@ -54,7 +53,7 @@ Knoten Märkische Allee	1 20014,11651 20018,11698 19985,11739
 Gensinger Str./Alt-Friedrichsfelde	1 19005,11796 19144,11859 19283,11785
 Altstadt Köpenick	1 22383,4703 22381,4752 22377,4836
 Alt-Köpenick	1 22138,4661 22196,4847
-Wuhletalstr.	1 20691,17463 20675,17515 20754,17672 20832,17824 20896,17881
+Wuhletalstr.	1 20691,17463 20675,17515 20754,17672 20832,17824 20912,17872
 Knoten Märkische/Landsberger Allee	1 19175,14968 19280,15014 19496,15113 19567,15134 19694,15149 19735,15155
 Knoten Märkische/Landsberger Allee	1 19735,15155 19605,15073 19408,15007 19175,14968
 Knoten Märkische/Landsberger Allee	1 19466,14910 19408,15007
@@ -219,7 +218,6 @@ Menzelstr.	1 6185,6469 6154,6734
 Cranachstr.	1 6301,6748 6324,6480 6338,6312
 Boddinstr.	1 12582,8408 12368,8356 12217,8320 12096,8300 11920,8252
 Schlangenbader Str.	1 3969,7888 3964,7742
-Geisenheimer Str.	1 4391,7258 4462,7137 4534,7015
 Tannenweg	1 -2993,17856 -3003,17990
 Erlenweg	1 -3187,18077 -3301,17976
 Pintschstr.	1 13342,13185 13438,12965
@@ -321,6 +319,7 @@ Arberstr.	1 19424,9502 19407,9232
 Hanne Nüte	1 13675,4855 13695,4859 13758,4926 13761,4992 13717,5175
 Parchimer Str.	1 22292,12198 22228,12274 22212,12349 22212,12422 22256,12489 22253,12570 22271,12623 22310,12637
 Ringbahnstr.	1 12934,6967 13081,7014
+Stiftsweg/Bleicheroder Str.	1 11025,18531 11268,18851 11439,18890 11620,18971 11725,19007 11805,19071
 Mauerstr.	1 -13425,-852 -13500,-640
 Wilhelm-Staab-Str.	1 -13003,-1343 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12685,-870 -12712,-734 -12730,-627
@@ -619,12 +618,12 @@ Bundesratufer -> Stromstr.: unpassierbarer Mittelstreifen	3 6131,12978 6185,1296
 Bundesratufer -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3 6131,12978 6185,12968 6218,12975
 zur Märkischen Allee -> Märkische Allee: Linksabbiegen verboten	3 20675,17515 20691,17463 20717,17516
 Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3 20853,17528 20717,17516 20691,17463
-Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3 20834,17752 20717,17516 20853,17528
-Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3 20912,17678 20834,17752 20717,17516
-Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3 20878,17843 20834,17752 20912,17678
-Parkweg an der Neuen Wuhle -> Märkische Allee: Linksabbiegen verboten	3 20983,17846 20878,17843 20834,17752
-Märkische Allee -> Parkweg an der Neuen Wuhle: Linksabbiegen verboten	3 20896,17881 20878,17843 20983,17846
-Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3 20878,17843 20896,17881 20832,17824
+Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3 20843,17745 20717,17516 20853,17528
+Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3 20889,17838 20843,17745 20912,17678
+Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3 20912,17678 20843,17745 20717,17516
+Märkische Allee -> Parkweg an der Neuen Wuhle: Linksabbiegen verboten	3 20912,17872 20889,17838 20983,17846
+Parkweg an der Neuen Wuhle -> Märkische Allee: Linksabbiegen verboten	3 20983,17846 20889,17838 20843,17745
+Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3 20889,17838 20912,17872 20832,17824
 Grünanlage Egon-Erwin-Kisch-Str. -> Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3 17678,18171 17703,17990 17843,18078
 Falkenberger Chaussee -> Grünanlage Egon-Erwin-Kisch-Str.: Linksabbiegen wegen Straßenbahn nicht möglich	3 17400,17790 17703,17990 17678,18171
 Warschauer Pl. -> Stralauer Allee: unbequemes Abbiegen	3 13471,10983 13389,10808 13483,10769

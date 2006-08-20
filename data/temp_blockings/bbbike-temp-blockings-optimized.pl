@@ -408,15 +408,7 @@ userdel	q4::inwork 39715,101866 39574,101863
        },
        undef,
        undef,
-       {
-         'until' => 1156024800,
-         'text' => 'K 6503 B273-Zühlsdorf-L211 (Summt-Lehnitz) Kreuzung. Summter Chaussee bei Zühlslake Neubau Kreisverkehr Vollsperrung 06.07.2006-19.08.2006 ',
-         'from' => 1152050400,
-         'data' => 'userdel	q4::inwork 7346,32257 7435,34963 8115,35387
-userdel	q4::inwork 7070,34665 7435,34963 7443,36175
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1157061600,
          'text' => 'L 010 Havelberger Str. OD Bad Wilsnack, vom OE bis An der Trift Kanal- und Straßenbau Vollsperrung 01.06.2006-31.08.2006 ',
@@ -447,27 +439,13 @@ userdel	q4::inwork 7070,34665 7435,34963 7443,36175
        undef,
        undef,
        undef,
-       {
-         'until' => 1156024800,
-         'text' => 'L 235 Gielsdorf-Werneuchen Schulstr. in der OL Wegendorf Straßen- u. Durchlassbau Vollsperrung; 06.07.2006-19.08.2006 ',
-         'from' => 1152050400,
-         'data' => 'userdel	q4::inwork 34492,22176 34321,22151 34125,22128
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
        undef,
        undef,
        undef,
-       {
-         'until' => 1156024800,
-         'text' => 'L 079 Ludwigsfelde-Potsdam Höhe Ahrensdorf bis Kreisverk. Nudow Straßenbauarbeiten Vollsperrung 06.07.2006-19.08.2006 ',
-         'from' => 1152050400,
-         'data' => 'userdel	2::inwork -3618,-9791 -4050,-9464 -4422,-9151 -4649,-8996
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -680,14 +658,7 @@ userdel	1::inwork 10781,13002 10706,13043
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1156024800,
-         'text' => ' L 601 Leipziger Str. OD Finsterwalde, Kno. Hain-/ Schützenstr. Kanalarbeiten Vollsperrung 12.07.2006-19.08.2006 ',
-         'from' => 1152568800,
-         'data' => 'userdel	q4::inwork 32963,-85912 32865,-86269 32870,-86323 32478,-86374
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1167606000,
@@ -772,7 +743,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'until' => undef,
          'text' => 'Havemannstr. (Marzahn) in beiden Richtungen zwischen Märkische Allee und Borkheider Str. Baustelle, Straße vollständig gesperrt',
          'from' => undef,
-         'data' => 'userdel	q4::inwork 21218,18536 21451,18415 21524,18376 21679,18296 21836,18214
+         'data' => 'userdel	q4::inwork 21251,18508 21446,18405 21520,18367 21684,18283 21843,18198
 ',
          'type' => 'handicap'
        },

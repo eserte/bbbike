@@ -31,9 +31,11 @@ Vulkanstraße	? 15912,13153 15892,13534
 #: last_checked: 2006-06-16 (von Corinna):
 Gorkistr.	? 2995,20487 2615,20421
 Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 17750,11771 17436,11791 17249,11802
+#: last_checked: 2006-08-20
 Löhleinstraße	? 2717,5578 2499,5144 2454,5067 2288,4932
+#: last_checked: 2006-08-20
 Saargemünder Straße	? 2005,4772 1934,4788 1744,4812 1479,4853
-#: last_checked: 2006-06-10
+#: last_checked: 2006-08-20
 Pacelliallee	? 2585,5696 2594,5923 2607,6285 2609,6348 2659,6499 2711,6698 2714,6857 2723,7029
 #: by ^^^
 #: by Tagesspiegel 2004-07-25 (obige waren auch dabei) vvv
@@ -193,7 +195,10 @@ Viktoriapark: 40m Höhe	? 9007,9264
 #: by: Message-ID: <2re0fqF1987v6U1@uni-berlin.de>
 Dann gibt es am Kuhfortdamm den tollen BÜ unter der Eisenbahnbrücke.	? -18148,-1381
 Raddusch: entfällt der Regionalbahnhof?	? 54813,-65044
-Eichhorster Str.: Radweg? Laut Eintrag von housemeister ja, laut Luftbild fraglich	? 21451,18415 21543,18571 21662,18621 21853,18700
+Eichhorster Str.: Radweg? Laut Eintrag von housemeister ja, laut Luftbild fraglich	? 21446,18405 21481,18474 21526,18558 21545,18595 21552,18607 21678,18648 21825,18689 21853,18700
+(Eichhorstr. -Schorfheidestr.): Qualität?	? 21825,18689 21828,18701 21860,18718 21875,18717
+(Eichhorstr. -Klandorfer Str.): Qualität?	? 21828,18701 21826,18727 21785,18812 21782,18828 21785,18861
+(Eichhorstr. -Klandorfer Str.): Qualität?	? 21782,18828 21764,18854
 ######################################################################
 #
 #  AUFNAHME IN DB FRAGLICH
@@ -304,7 +309,6 @@ Röntgental, Buchenallee: Qualität?	?? 17689,27853 18418,29246
 Gamengrund: genauere Wegführung, Qualität, teilweise war es sehr sandig!. Geht es von der B 158 aus noch weiter in Richtung Norden?	?? 39337,22638 39383,22801 39165,23131 39033,23202 39114,23766 39180,23776 39266,23984 39241,24116 39089,24279 39063,24400 38997,24431 38880,24568 38824,24812 39002,25304 39221,25518 39205,25655 39124,25812 39089,26036 39241,26229 39282,26391 39378,26508 39561,27382 39602,27382 39678,27600 39535,27808 39561,27996 39657,28154 39988,28352 40231,28753 40135,28824 40267,28951 40282,29022 40236,29621 40206,30002 40302,30617 40331,30763 40546,30881 40750,31012 41300,31862 41200,31900 41003,31612 40820,31236 40562,31025 39783,31398
 Brunow - Gamengrund: Qualität?	? 41624,36648 43362,37337 43825,37262 43922,36623 43637,36362 42975,36212 42748,35962
 # Normannenstr.: gar keine Einbahnstraße	? -3692,2549 -3579,2532 -3395,2403
-Wasgenstr.: Qualität zwischen Spanische Allee und Matterhornstr. (wahrscheinlich Kopfsteinpflaster?)?	? -2481,2900 -2614,3124
 Kleinziethen - Pechsteinstr. (Lichtenrade): befahrbare Verbindung, Qualität?	? 13506,-2809 12232,-2281
 Mauerweg Lichtenrade - Lichterfelde: befahrbar, Qualität? laut "Berliner Umland" gut geeigneter Radweg	? 10298,-3193 9560,-3155 9471,-2138 8334,-2101 8384,-1581 7110,-596 6634,-137 6172,306 6011,195 5831,71 4400,-913
 Mauerweg Lichtenrade: Qualität? laut "Berliner Umland" gut geeigneter Radweg	? 10609,-3098 10631,-3215 11646,-3251
@@ -331,7 +335,6 @@ Spektelake - Finkenkruger Weg: genaue Wegführung? Qualität?	? -7360,15447
 Niederheideweg - Hubertusstr.: Alternative zur Radelandstr? befahrbar, Qualität?	? -6445,17503 -5935,17290 -5597,17327 -5136,17227 -4841,17172 -4722,17029 -4240,16941 -3937,16881 -3827,16900 -3747,16916
 Schenkenberg - Tornow: Qualität?	? 45406,107350 44745,108948 45265,108797 46428,109624 46174,110110 45810,110576 46075,110850 46272,110976 46317,111103 46685,111038 47335,110888
 Lichterfelde - Teltow über Kantstr.: befahrbar, Qualität?	? 3659,159 3471,87 3137,-67 2507,-446 2545,-501
-Wuhlewanderweg: in Bau, bereits fertig?	? 22611,17126 22314,17916
 Wuhletalstr: laut Radzeit Radstreifen (wo genau?)	? 21906,17419 21799,17456 21539,17442 21133,17510 20901,17603
 Skandinavische Str.: auf der westlichen Seite Suggestivstreifen (laut Radzeit)?	? 17363,11972 17082,11909 16958,11778
 Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
@@ -514,8 +517,6 @@ Am Bötzsee: Genaue Wegführung, besonders zum Fängersee hin? Alternative Strecke 
 Badstr. am Straussee: Qualität?	? 42753,20225 42818,20290 42778,20387 42825,20490 42943,20578 43040,20818 43268,20903 43387,20971 43446,21007 43498,21028
 Alternative Strecke zum Roten Hof: Qualität?	? 43498,21028 43601,21073 43681,21175 44037,21303 44246,21496 44312,21556 44290,21668 44158,21724
 Krummensee - Wegendorf: laut "Berliner Umland" unterschiedliche Qualität (gut - schlecht)	? 29537,21850 30444,22044 31272,22232 33562,22062 33822,22066
-#: XXX Die Existenz wurde von Andre K. bestaetigt:
-Radweg entlang der Straßenbahntrasse zwischen Lea-Grundig-Str. und Ahrensfelde: genaue Wegführung? Qualität? Wo kommt man in Ahrensfelde heraus?	? 21836,18214 21928,18403 21853,18700 21830,19016
 Hegemühlenstr. - Herrensee: genaue Wegführung? Qualität?	? 42850,17643 42806,17462 42218,17200 42175,16962 41993,16706 41900,16100 41725,16000 41675,15906 41681,15915
 Liepe - Bralitz: Qualität (vermutlich gut?)?	? 47975,51325 48237,50875 48787,50775 49300,50212 49925,49887 50325,49362 49918,48858 50505,48348 50572,48457
 Hohensaaten - Hohenwutzen: Qualität (vermutlich gut?)?	? 57730,52297 57962,51650 57875,50625 58012,50325 57900,50150 57813,49341
@@ -568,7 +569,7 @@ Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23279,14785 23379,14514
 Beilsteiner Str.: laut ADFC-Karte im südlichen Abschnitt gut geeignet, Einbahnstraße!	? 18749,12413 18852,13269 18875,13473 18859,14048 18998,14089 19025,14037
 Neukirchstr.: laut ADFC-Karte gut geeignet, Zugang zur Prenzlauer Promenade vorhanden?	? 12562,18483 12002,18768
-Bleicheroder Str./Stiftsweg: Qualität laut ADFC-Karte gut, Tram auf Fahrbahn? Einbahnstraße beachten	? 11937,19175 11805,19071 11725,19007 11620,18971 11439,18890 11268,18851 11025,18531
+Bleicheroder Str. - Pasewalker Str.: existiert eine Verbindung für Radfahrer entlang der Tram-Trasse?	? 11805,19071 11937,19175
 Birkenallee (Pankow): Qualität?	? 9750,20492 9655,20703
 #: XXX: ein anonymer Eintrag: eng schlechter straßenbelag, Q2
 Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11147,23778 10889,23381 10775,23253 10396,23128 9890,22932
@@ -756,7 +757,7 @@ Am Finowkanal: Qualität?	? 37162,48462 36969,48599 36816,48645 36367,48561 35986
 Am Finowkanal: Qualität?	? 35659,48744 35575,48942 35377,49117 35270,49300 34966,49422 34745,49323 34630,49178 34547,49193 34478,49056 34349,48972 33937,48866 33701,49041 33526,49025 33221,48820 32696,48706 32391,48706 32162,48797 32002,48904 31820,48919 31455,49067
 Am Finowkanal: Qualität?	? 31507,49193 31317,49216 31043,49307 30654,49330 30426,49216 30296,49224 29999,49300 29375,49269 29176,49323 28895,49277 28712,49399 28658,49391 28643,49498 27508,49376 27341,49383 26945,49262 26670,49231 26450,49284 26442,49414 26594,49734 26587,49894 26693,50084 26000,50214 24583,49825 24461,49041 24393,48972
 Ützdorf - Bogensee - Prenden: Qualität?	? 18337,39131 18345,39215 18535,39443 18558,39580 18733,39862 19053,40144 19213,40479 19053,40540 18809,40555 18665,40616 18535,40784 18124,40730 18048,40906 17979,40982 18033,41066 17903,41233 18132,41492 18215,41637 18360,41728 18238,41972 18231,42239 18170,42574 18807,43129
-Prinz-Friedrich-Leopold-Str.: zunächst Kopfsteinpflaster (50m), dann anscheinend Asphalt, wie weiter? (laut ADFC-Karte gut geeignet)	? -3692,2549 -3568,2382 -3532,2189 -3503,1988 -3501,1826 -3559,1760
+Prinz-Friedrich-Leopold-Str.: zunächst Kopfsteinpflaster (50m), dann Asphalt, wie weiter? (laut ADFC-Karte gut geeignet)	? -3692,2549 -3568,2382 -3532,2189 -3503,1988 -3501,1826 -3559,1760
 Kopernikusstr. (Potsdam-Babelsberg): Qualität?	? -9753,-2474 -9771,-2394 -10121,-2093 -10292,-1995
 Am Neuen Kanal/Trappenallee: Qualität?	? -4000,22989 -3994,23162 -3503,23811
 Dorfstr. Stolpe-Dorf: Qualität?	? -25,27812 237,28184 524,28171
@@ -937,7 +938,6 @@ Möllersdorfer Weg - Schillingweg: Qualität (möglicherweise guter Feldweg)? Teil 
 Lübarser Weg: Qualität?	? 8423,24358 8710,24821
 Goethestr. (Weißensee): Qualität (laut ADFC-Karte teilweise gut, teilweise mäßig geeignet)? Einbahnstraße im südlichen Teil nur für Autofahrer?	? 12384,16029 12466,16198 12512,16291 12564,16399 12642,16555
 Max-Lingner-Str. - Maximilianstr.: laut ADFC-Karte Durchfahrt vorhanden, Qualität mäßig	? 11110,17301 10911,17275
-Vesaliusstr.: Qualität (laut ADFC-Karte gut geeignet)?	? 11805,19071 11748,19235 11726,19482
 Leonhard-Frank-Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? 9229,18178 9496,18545
 Leonhard-Frank-Str.: Qualität (laut ADFC-Karte nordöstlich des Heinrich-Mann-Platzes schlecht geeignet)?	? 9556,18630 9586,18670 9658,18768
 Stille Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10184,18875 10128,19110
@@ -1332,9 +1332,6 @@ Postenweg: Qualität zwischen Rudower Chaussee und B179 (wahrscheinlich guter Bet
 #: XXX: laut anonymen Eintrag Schlaglöcher, Q2, laut ADFC-Karte ist der nördliche Abschnitt "gut geeignet"
 Luchsweg: Qualität?	? -7841,15503 -7747,15842 -7743,15963
 Gerlinger Str. - Mauerweg: Qualität (wahrscheinlich guter fester Sandweg)?	? 12007,877 12017,777 11924,594
-Paracelsusstr.: Qualität?	? 11523,19393 11575,19296 11543,19279 11549,19258 11599,19171
-Paracelsusstr.: Qualität?	? 11634,19187 11725,19007
-Paracelsusstr.: Qualität?	? 11671,19204 11613,19312 11575,19296
 #: by: http://berlinforen.de/viewtopic.php?t=511
 Kirchstr.: Asphalt oder Kopfsteinpflaster?	? 22312,4593 22263,4671 22243,4710 22234,4789 22196,4847
 Luisenhain: werden Radfahrer nach den Bauarbeiten weiterhin durch den Park fahren dürfen?	? 22196,4847 22147,4831 22043,4562 22071,4501
@@ -1384,3 +1381,4 @@ Max-Steinke-Str.: Qualität?	? 13540,15928 13455,16192 13386,16408
 Dathepromenade: Qualität? Viele Fußgänger? Kann die Straße "Am Tierpark" überquert werden? Wie sieht die Verbindung zur Sewanstr. aus?	? 18532,10410 17905,10122
 #: note: siehe auch http://www.berlin.de/ba-lichtenberg/presse/archiv/20030924.15288.html
 Margaretenstr. (Lichtenberg): Qualität (wahrscheinlich Asphalt)?	? 17070,11375 16936,11409 16848,11421 16723,11470 16639,11496
+Feldstr. (Ahrensfelde): Qualität, Radweg?	? 21871,18887 21830,19016
