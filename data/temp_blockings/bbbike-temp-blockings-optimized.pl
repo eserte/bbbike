@@ -805,15 +805,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_003267',
-         'until' => 1156129200,
-         'text' => 'Kurfürstendamm/ Tauentzienstr. (Charlottenburg) in beiden Richtungen zwischen Uhlandstr. und Passauer Str. Straßenfest (Global City), Straße gesperrt (bis 21.08.2006, 5:00 Uhr) (18:00) ',
-         'from' => 1155836502,
-         'data' => 'userdel	2::temp 6137,10689 6040,10751 5942,10803 5797,10881 5725,10892 5657,10868 5484,10810 5351,10760 5229,10716 5076,10658
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1157148000,
          'text' => 'L 401 Königs Wusterhausen-Wildau OL Königs Wusterhausen, Höhe Neue Ziegelei Deckeneinbau Vollsperrung 31.08.2006-01.09.2006 ',

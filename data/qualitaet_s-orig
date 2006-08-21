@@ -1,5 +1,5 @@
 #: title: Qualit‰t von Straﬂen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.147 2006/08/20 21:57:05 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.148 2006/08/21 21:47:02 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Br¸cken, Straﬂen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -113,6 +113,7 @@ Belziger Str.: m‰ﬂiges, teilweise holpriges Kopfsteinpflaster	Q2 7315,9156 7110,
 Suadicanistr.: Asphalt	Q0 7859,7486 7854,7572
 Lilienthalstr.: teilweise keine befestigte Straﬂe	Q2 10675,8940 10598,8563
 Weichselstr.: m‰ﬂiges Kopfsteinpflaster, 15-17 km/h	Q2 12330,8636 12394,8729 12483,8834 12590,8977 12681,9083 12769,9186 12849,9319 12841,9368
+#: XXX: zumindest der Asphalt 14015,8798 14140,8977 wird 2007 asphaltiert sein
 Treptower Str.: m‰ﬂiges Kopfsteinpflaster mit vereinzelten Asphaltflicken, 17 km/h	Q2 13857,8601 13982,8764 14015,8798 14140,8977
 Pfarrstr.: m‰ﬂiges Kopfsteinpflaster	Q2 15267,10865 15339,11123 15438,11305
 Pfarrstr.: sehr guter Asphalt	Q0 15438,11305 15452,11330
@@ -690,6 +691,15 @@ Am Fichtenberg: Kopfsteinpflaster, OK	Q1 4337,5108 4262,5168 4165,5243 4134,5284
 Tietzenweg: m‰ﬂiges Kopfsteinpflaster	Q2 3643,4232 3768,4045 3870,3914 4004,3729 4132,3552 4354,3359 4479,3311
 Viktoriastr.: schlechtes Kopfsteinpflaster	Q3 3768,4045 3936,4014
 Augustastr.: Kopfsteinpflaster, OK	Q1 4234,4020 4385,4032 4551,4042
+#: by: Adrian Fiedler vvv
+Augustastr.: Kopfsteinpflaster	Q2 3507,3635 3592,3683 3629,3715 3724,3799
+Augustastr.: Asphalt	Q0 3724,3799 3870,3914 3946,3967
+Augustastr.: Asphalt	Q0 4045,4005 4234,4020
+Manteuffelstr.: Asphalt	Q0 4015,4053 4092,4217
+Augustaplatz: Asphalt	Q0 4015,4053 3986,4051 3955,4039 3936,4014 3937,3993 3946,3967 3971,3950 4000,3950 4025,3958 4042,3982 4045,4005 4034,4033 4015,4053
+Kyllmannstr. (Lichterfelde): Asphalt	Q0 3500,4146 3467,4247
+Kyllmannstr. (Lichterfelde): Asphalt	Q0 3518,4106 3583,4011 3632,3943 3724,3799
+#: by: ^^^
 Maxstr.: m‰ﬂiges Kopfsteinpflaster	Q2 7786,15785 7744,15831
 Maxstr.: gutes Kopfsteinpflaster	Q1 7744,15831 7673,15897
 Maxstr.: Asphalt	Q0 7673,15897 7631,15937
@@ -759,7 +769,7 @@ Riemenschneiderweg: m‰ﬂiger Asphalt	Q1 6826,6523 6811,6737 6802,6816 6773,7116
 Wuhlewanderweg (Ahrensfelder Berg): glatter Parkweg	Q1 22631,16215 22657,16287 22662,16306 22690,16383 22699,16501 22735,16630 22722,16906
 Wuhlewanderweg (Ahrensfelder Berg): Betonweg, OK	Q1 22722,16906 22611,17126 22432,17245
 #:by christel lehmann
-Wuhlewanderweg (Ahrensfelder Berg): Feldweg	Q2 22432,17245 22240,17379 22103,17475 22002,17492
+Wuhlewanderweg (Ahrensfelder Berg): Feldweg	Q2 22432,17245 22349,17302 22240,17379 22103,17475 22002,17492
 (Feldweg nach Eiche): Feldweg	Q2 22314,17916 22353,17920 22474,17858 22537,17878
 Merseburger Str.: Kopfsteinpflaster	Q2 6975,8944 6962,9035 6945,9142
 Kopenhagener Str.: Kopfsteinpflaster	Q2 10080,15858 10374,15894
@@ -1433,7 +1443,7 @@ Straﬂe 270: Feldweg, im westlichen Teil nur zweispurig	Q2 -5035,11007 -4832,1104
 #: by: ^^^
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
-Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
+Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Sch¸tzallee: m‰ﬂiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfl‰che	Q2 2230,3823 2151,3834 1952,3864 1918,3868 1815,3876
 #: note: Radwege hinzugef¸gt, eine Qualit‰tsstufe hoch
 Riemeisterstr.: m‰ﬂiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 364,4829 319,4906 168,5092 103,5123
@@ -1445,6 +1455,7 @@ Bennigsenstr.: guter Asphalt	Q0 5807,7771 5957,7765 6225,7776
 Lauterstr.: guter Asphalt	Q0 5810,7662 5810,7684 5807,7771 5810,7796
 Friedrich-Wilhelm-Platz: guter Asphalt	Q0 5324,7205 5310,7325 5318,7424 5361,7423
 #: by ^^^
+Viktoriaplatz: Asphalt	Q0 3489,4115 3518,4106 3528,4118 3523,4139 3500,4146 3485,4137 3489,4115
 #: by: Robert J. vvv
 Waldstr.: Kopfsteinpflaster, "Moabiter Kissen"	Q2 5384,13555 5390,13616 5417,13817 5443,14028
 #: note: laut ADFC-Karte "gut geeignet":
@@ -4929,7 +4940,8 @@ Germaniapromenade: Asphalt	Q1 12053,6042 12154,6063 12263,6086 12388,6114 12503,
 Friedrichsbrunner Str.: Kopfsteinpflaster	Q3 12246,6227 12263,6086 12270,6025 12284,5929 12301,5783
 Braunlager Str.: Kopfsteinpflaster	Q3 12062,5779 12168,5855 12284,5929
 Walkenrieder Str: Kopfsteinpflaster	Q3 12370,6196 12388,6114 12420,5984 12437,5946
-Suderoder Str. (Britz): Kopfsteinpflaster	Q3 12437,5946 12481,5935 12523,5945 12537,5964 12537,5992 12503,6139 12487,6221
+Suderoder Str. (Britz): Kopfsteinpflaster	Q3 12503,6139 12487,6221
+Suderoder Str. (Britz): Kopfsteinpflaster	Q2 12437,5946 12481,5935 12523,5945 12537,5964 12537,5992 12503,6139
 #: by: ^^^
 #: by: anonymous [AM]
 Ahrenshooper Zeile: Kopfsteinpflaster	Q3 -1882,3643 -1784,3317 -1706,3071 -1654,2909 -1612,2785
