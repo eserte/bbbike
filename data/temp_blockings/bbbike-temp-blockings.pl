@@ -5496,4 +5496,20 @@ EOF
 userdel	2::inwork -36125,34218 -34868,34062
 EOF
      },
+     { from  => 1156456800, # 2006-08-25 00:00
+       until => 1156716000, # 2006-08-28 00:00
+       text  => 'L 023 Joachimsthal-Britz Brücke über A 11, AS Chorin,westliche Seite Brückenabbruch Vollsperrung 26.08.2006-27.08.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 35962,59463 35405,59832
+EOF
+     },
+     { from  => 1152050400, # 2006-07-05 00:00
+       until => 1159653600, # 2006-10-01 00:00
+       text  => 'L 235 Gielsdorf-Werneuchen Schulstr. in der OL Wegendorf Straßen- u. Durchlassbau Vollsperrung 06.07.2006-30.09.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 34492,22176 34321,22151 34125,22128
+EOF
+     },
     );

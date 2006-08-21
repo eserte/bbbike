@@ -1,5 +1,5 @@
 #: title: Strassen-Koordinaten (standard coords)
-#: version: $Id: strassen-orig,v 4.166 2006/08/20 21:57:07 eserte Exp $
+#: version: $Id: strassen-orig,v 4.167 2006/08/21 22:01:46 eserte Exp eserte $
 #: title.de: Straßen und Plätze in Berlin
 #: title.en: Streets and places in Berlin
 #:
@@ -398,8 +398,8 @@ Tempelhofer Weg (Schöneberg)	H 7268,8008 7499,7880 7717,7759
 (zum Tempelhofer Weg)	H 7193,7950 7268,8008
 Hattenheimer Str. (Tempelhof)	N 11590,6026 11655,6189 11625,6248
 Langenscheidtstr.	N 7735,9121 7655,9188 7603,9234 7495,9325 7478,9340
-Goebenstr.	HH 7941,9686 7829,9723
-Goebenstr.	H 7829,9723 7721,9744 7624,9763 7526,9782
+Goebenstr. (Schöneberg)	HH 7941,9686 7829,9723
+Goebenstr. (Schöneberg)	H 7829,9723 7721,9744 7624,9763 7526,9782
 Pallasstr.	H 7526,9782 7185,9819 7126,9825 7049,9833
 Hohenstaufenstr.	H 7049,9833 6922,9825 6758,9815 6645,9794 6514,9775 6227,9773 6108,9772 6004,9771 5913,9771
 Hauptstr. (Schöneberg, Friedenau)	HH 7478,9340 7381,9165 7315,9038 7275,8960 7201,8870 7105,8788 7009,8705 6990,8685 6912,8617 6765,8480 6687,8385 6608,8277 6560,8219 6468,8109 6409,8026 6371,7976 6307,7893 6275,7847 6225,7776 6157,7685 6083,7582 5955,7406 5902,7334
@@ -6262,9 +6262,9 @@ Mittelstr. (Steglitz)	NN 5119,5332 5203,5278
 Mittelstr. (Steglitz)	N 5203,5278 5327,5198 5543,5056
 Leydenallee	N 4930,5286 5031,5220 5245,5082 5433,4961 5481,4931 5573,4851
 Dijonstr.	N 5776,4761 5687,4809
-Goebenstr.	N 5747,4697 5655,4747
-Goebenstr.	NN 5655,4747 5613,4769 5561,4795 5511,4825
-Goebenstr.	N 5511,4825 5445,4861
+Goebenstr. (Steglitz)	N 5747,4697 5655,4747
+Goebenstr. (Steglitz)	NN 5655,4747 5613,4769 5561,4795 5511,4825
+Goebenstr. (Steglitz)	N 5511,4825 5445,4861
 Johanna-Stegen-Str.	NN 5325,4633 5371,4609 5397,4611 5471,4571 5546,4534
 Johanna-Stegen-Str.	N 5546,4534 5645,4479 5723,4441 5742,4353
 Vionvillestr.	NN 5546,4534 5589,4617
@@ -7098,7 +7098,7 @@ Suderoder Str. (Britz)	N 12437,5946 12481,5935 12523,5945 12537,5964 12537,5992 
 Memlingstr.	N 4025,3958 4134,3825 4275,3652
 Rettigweg	N 9828,17659 9760,17612 9706,17570
 #: title: Plätze in Berlin
-#: version: $Id: plaetze-orig,v 4.63 2006/08/20 21:57:04 eserte Exp $
+#: version: $Id: plaetze-orig,v 4.64 2006/08/21 22:01:45 eserte Exp $
 #:
 Hackescher Markt	Pl 10264,13097
 Rosenthaler Platz	Pl 10177,13766

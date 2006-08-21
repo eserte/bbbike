@@ -532,15 +532,7 @@ userdel	q4::inwork 39715,101866 39574,101863
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'INKO_83906_COPY_1',
-         'until' => 1156197600,
-         'text' => 'Gartenstr. (Wedding) in Richtung Invalidenstr., zwischen Bernauer Str. und Invalidenstr. Baustelle, Straße vollständig gesperrt (bis 21.08.06)',
-         'from' => 1153738269,
-         'data' => 'userdel	1::inwork 9224,14169 9383,13978
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'INKO_84233_COPY_14',
          'until' => 1157061599,
@@ -713,14 +705,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1156197600,
-         'text' => 'B 005 Abzw. Groß Gottschow-OU Perleberg Bahnübergang bei Perleberg Gleissanierung Vollsperrung 18.08.2006-21.08.2006 ',
-         'from' => 1155765600,
-         'data' => 'userdel	2::inwork -94722,72190 -94274,71791 -93406,71227
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1156370400,
          'text' => 'B 005 Abzw. Groß Gottschow-OU Perleberg Bahnübergang bei Perleberg Gleissanierung Vollsperrung 22.08.2006-23.08.2006 ',
@@ -827,6 +812,22 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'text' => 'L 017 Königshorst-Warsow zw. Lobeofsund und KG bei Wiesenaue Straßenbauarbeiten Vollsperrung 21.08.2006-07.10.2006 ',
          'from' => 1156024800,
          'data' => 'userdel	2::inwork -36125,34218 -34868,34062
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1156716000,
+         'text' => 'L 023 Joachimsthal-Britz Brücke über A 11, AS Chorin,westliche Seite Brückenabbruch Vollsperrung 26.08.2006-27.08.2006 ',
+         'from' => 1156456800,
+         'data' => 'userdel	2::inwork 35962,59463 35405,59832
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1159653600,
+         'text' => 'L 235 Gielsdorf-Werneuchen Schulstr. in der OL Wegendorf Straßen- u. Durchlassbau Vollsperrung 06.07.2006-30.09.2006 ',
+         'from' => 1152050400,
+         'data' => 'userdel	2::inwork 34492,22176 34321,22151 34125,22128
 ',
          'type' => 'gesperrt'
        }
