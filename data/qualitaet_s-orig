@@ -1,5 +1,5 @@
 #: title: Qualit‰t von Straﬂen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.150 2006/08/22 19:18:45 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.150 2006/08/22 19:18:45 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Br¸cken, Straﬂen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -28,6 +28,7 @@ Berliner Str. (Blankenfelde): m‰ﬂiges Kopfsteinpflaster	Q2 9490,23531 9528,23240
 B96a: Radweg Richtung N, OK	Q0 9228,23643 9146,23843 8984,24078 8891,24330 8710,24821 8659,24959 8493,25378
 Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15586,27150 15231,26587 14859,26029 14465,25442 14314,25193 14219,25013
 Hobrechtsfelder Chaussee (ab Kurve): schlechtes Kopfsteinpflaster, 13 km/h	Q3 15586,27150 15709,27984 15757,28054
+#: XXX Bauarbeiten ab August 2006 bis Stahlheimer Str., danach asphaltiert (http://www.berlin.de/ba-pankow/presse/archiv/20060717.1325.44287.html)
 Wisbyer Str.: m‰ﬂiges Kopfsteinpflaster	Q2 11033,16464 11289,16423 11397,16405 11542,16384 11632,16373 11688,16365 11727,16358
 Weserstr.: Kopfsteinpflaster, schmale Radwege	Q1 11888,9203 11993,9211 12074,9217 12148,9209 12180,9193 12322,9124 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13029,8632 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Stuttgarter Str.: m‰ﬂiger Asphalt	Q1 13663,8011 13510,8138 13331,8283
@@ -1139,7 +1140,7 @@ Reuchlinstr.: m‰ﬂiges Kopfsteinpflaster	Q2 4989,13462 4964,13319 4940,13188
 T¸rkenstr.: Kopfsteinpflaster	Q2 6459,16318 6645,16523
 Am Luchgraben: Asphalt	Q0 17078,21321 17064,21350 16675,22168
 Rhumeweg: Kopfsteinpflaster	Q2 -1530,3323 -1453,3166 -1339,2889
-Dubrowstr.: schlechtes Kopfsteinpflaster	Q3 -2249,2818 -2221,2886 -2096,2929 -1453,3166
+Dubrowstr.: schlechtes Kopfsteinpflaster	Q3 -2249,2818 -2221,2886 -2096,2929 -1706,3071 -1453,3166
 Dubrowstr.: Kopfsteinpflaster	Q2 -1453,3166 -1187,3264
 Gabelsbergerstr.: Kopfsteinpflaster	Q2 14381,12205 14451,12396
 #: XXX simon hahn hat hier "schlechtes" Kopfsteinpflaster geschrieben
@@ -1399,7 +1400,7 @@ Im Dol: Asphalt	Q0 1757,5976 1810,5959 1864,5996 1897,6019 2193,6214 2219,6231 2
 Elvirasteig: Asphalt	Q0 -1530,3323 -1495,3444 -1468,3537 -1414,3759 -1379,3897 -1354,4005 -1278,4239 -1234,4341
 #: XXX was von beiden?
 Quermatenweg: Asphalt oder Beton	Q0 -1077,4236 -917,4619 -655,4886 -464,4982 103,5123
-Matterhornstr: ¸berwiegend guter Asphalt	Q0 -1155,3255 -1187,3264 -1360,3314 -1530,3323 -1873,3315 -1981,3353 -2137,3408 -2243,3371 -2359,3300 -2535,3194 -2614,3124 -2904,3033 -3064,2946 -3129,2922 -3131,2888
+Matterhornstr: ¸berwiegend guter Asphalt	Q0 -1155,3255 -1187,3264 -1360,3314 -1530,3323 -1784,3317 -1873,3315 -1981,3353 -2137,3408 -2243,3371 -2359,3300 -2535,3194 -2614,3124 -2904,3033 -3064,2946 -3129,2922 -3131,2888
 Altvaterstr.: schlechtes Kopfsteinpflaster	Q3 -2283,3491 -2437,3435 -2500,3415 -2554,3426 -2917,3222
 Altvaterstr.: Asphalt	Q0 -2917,3222 -3112,3095
 Altvaterstr.: Beton	Q0 -3200,3030 -3207,2898
@@ -1699,7 +1700,7 @@ Neuf‰hrer Steig: Beton	Q0 -1959,23302 -2103,23365
 Kleine Andreasstr.: m‰ﬂiger Beton	Q1 12064,12171 12223,12137
 #: by: Ulrike Orlowski vvv
 Niklasstr.: Asphalt	Q0 -1908,2677 -1735,2742
-Niklasstr.: m‰ﬂiges Kopfsteinpflaster	Q2 -1735,2742 -1339,2889 -1269,2892
+Niklasstr.: m‰ﬂiges Kopfsteinpflaster	Q2 -1735,2742 -1612,2785 -1339,2889 -1269,2892
 Eberbacher Str.: sehr gute Qualit‰t	Q0 4397,7375 4330,7375 4162,7375 4059,7375 3961,7375
 Spessartstr.: Asphalt	Q0 4403,7498 4497,7595 4575,7675 4670,7732 4787,7788
 Offenbacher Str.: Asphalt	Q0 5039,7627 4785,7609 4575,7675 4515,7743
