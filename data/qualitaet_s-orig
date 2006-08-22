@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.149 2006/08/21 22:01:45 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.150 2006/08/22 19:18:45 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -370,7 +370,7 @@ Alt-Marienfelde: schlechtes Kopfsteinpflaster	Q3 8026,711 8208,626 8258,662
 Ratiborstr.: Kopfsteinpflaster	Q2 12712,9523 12724,9545 12837,9748
 Kirchhofstr: schlechtes Kopfsteinpflaster	Q3 13177,7644 13188,7590 13117,7471 13032,7334
 Kirchhofstr: relativ glattes Kopfsteinpflaster	Q2 13013,7329 12909,7181 12872,7134
-Berliner Allee: Kopfsteinpflaster	Q2 14828,17856 14739,17625 14673,17454 14584,17224 14533,17084 14559,16912
+Berliner Allee: Kopfsteinpflaster	Q2 14828,17856 14739,17625 14673,17454 14584,17224 14533,17084 14535,17003 14559,16912
 Lessingstr.: Kopfsteinpflaster	Q2 10410,58 10300,34 10161,3 9971,-34 9848,-59
 Monbijoustr.: Kopfsteinpflaster, OK	Q1 9734,13057 9707,12974
 Lüneburger Str.: Kopfsteinpflaster	Q2 7610,12977 7395,12774 7367,12747 7331,12713 7195,12620
@@ -3516,6 +3516,8 @@ Straße 246: Asphalt	Q0 13597,17363 13818,17201
 Zitadellenweg: guter Asphalt	Q0 -2336,14460 -2254,14598 -1971,14610 -1987,14814
 Graacher Str.: gute Betonstraße	Q0 14533,17084 14672,17085
 #: by: ^^^
+#: by: Katja [AM]
+Wehlener Str.: Asphalt	Q0 14673,17003 14535,17003
 #: by: Karin Hoffmann: vvv
 Amalienpark: mäßiges Kopfsteinpflaster	Q2 10860,18650 10950,18499
 Amalienpark: mäßiges Kopfsteinpflaster	Q2 10950,18499 10905,18671
@@ -4708,12 +4710,19 @@ Weitbrucher Str.: Verbundsteinpflaster	Q2 11596,864 11573,825 11517,715 11490,66
 #: by: ^^^
 #: by: Nikolaus [AM]
 Kornmesserstr.: Kopfsteinpflaster	Q3 4065,2576 3932,2660 3737,2671
-#: by: Kay Ludwig [AM] vvv
+#: by: Kay-Uwe Ludwig [AM] vvv
 Gärtnerstr. (Hohenschönhausen): sehr guter Asphalt	Q0 16819,15912 16890,15828 17061,15773 17115,15769 17238,15764 17378,15760 17488,15766
 Leuenberger Str.: sehr guter Asphalt/Beton 	Q0 16914,15923 17125,15908 17247,15899
 Leuenberger Str.: sehr guter Asphalt/Beton 	Q0 17125,15908 17122,15866 17115,15769
 Heckelberger Ring: sehr guter Asphalt/Beton 	Q0 17238,15764 17245,15856 17247,15899 17251,15965 17350,15958 17396,15913 17400,15892 17390,15855 17378,15760
 Heckelberger Ring: sehr guter Asphalt/Beton 	Q0 17122,15866 17245,15856
+Biesterfelder Str.: schlechtes Kopfsteinpflaster mit Löchern	Q3 16942,16174 17010,16349 17102,16464
+Papendickstr.: sehr guter Asphalt	Q0 17071,16166 17073,16222 17135,16334 17170,16365
+Meusebachstr.: sehr guter Asphalt	Q0 17220,16320 17188,16287 17159,16229 17157,16170
+Döhrendahlstr.: fester Sandweg mit Löchern	Q2 17235,16173 17239,16174 17236,16212 17248,16246 17271,16280
+Niehofer Str.: Asphalt	Q1 16546,16308 16692,16253 16815,16214 16942,16174 16975,16164
+Seefelder Str.: fester Schotter	Q1 16961,16042 16966,16127 16975,16164 17071,16166 17157,16170 17184,16171 17235,16173 17274,16177
+Seefelder Str.: Betonplattenweg	Q1 16966,16127 17000,16141 17184,16149 17290,16154 17293,16134 17341,16136 17344,16081 17419,16080
 #: by: ^^^
 #: by: Daniel Hornig [AM]
 Schöneicher Str. (Hohenschönhausen): Kopfsteinpflaster	Q2 16412,15559 16665,15446
@@ -4949,4 +4958,11 @@ Ahrenshooper Zeile: Kopfsteinpflaster	Q3 -1882,3643 -1784,3317 -1706,3071 -1654,
 Memlingstr.: sehr schlechtes Kopfsteinpflaster; schmaler, mäßiger Asphaltstreifen	Q2;Q3 4025,3958 4134,3825
 Memlingstr.: sehr schlechtes Kopfsteinpflaster	Q3 4134,3825 4275,3652
 #: by: ^^^
+#: by: Chantal [AM] vvv
 Rettigweg: schlechtes Kopfsteinpflaster	Q2 9828,17659 9760,17612 9706,17570
+Friedrich-List-Ufer: sehr guter Asphalt	Q0 8110,13042 8098,13419
+#: by: ^^^
+#: by: anonymous [AM]
+Reinbeckstr.: Kopfsteinpflaster	Q2 18343,6318 18310,6223
+#: by: Daniel Weber:
+Marchandstr.: Asphalt	Q0 7437,1859 7332,1718 7193,1492

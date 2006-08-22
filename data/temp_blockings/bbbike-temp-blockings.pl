@@ -5096,7 +5096,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_84075',
        data  => <<EOF,
-userdel	q4::inwork; 18175,6376 18445,6287 18853,6009
+userdel	q4::inwork; 18175,6376 18343,6318 18445,6287 18853,6009
 EOF
      },
      { from  => 1154642400, # 2006-08-04 00:00
