@@ -3433,6 +3433,9 @@ sub temp_blockings_editor {
     $pe->icursor("end");
     $as_data_cb->invoke; # default to "as data"
 
+    Tk::grid($t->Label(-text => M("Beschreibung").":"),
+	     -sticky => "w",
+	    );
     my $txt;
     Tk::grid($txt = $t->Scrolled("Text", -scrollbars => "e",
 				 -width => 40, -height => 3,

@@ -9,9 +9,9 @@
 
 ]>
 
-<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.9 2006/08/09 21:05:03 eserte Exp eserte $ -->
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.10 2006/08/23 20:18:14 eserte Exp eserte $ -->
 
-<article>
+<article lang="de">
  <artheader>
   <title>HOWTO - Daten in BBBike editieren</title>
 
@@ -28,7 +28,7 @@
    </author>
   </authorgroup>
 
-  <pubdate>$Date: 2006/08/09 21:05:03 $</pubdate>
+  <pubdate>$Date: 2006/08/23 20:18:14 $</pubdate>
 
   <copyright>
    <year>2005</year>
@@ -932,8 +932,77 @@ Routenbeschreibung wird nicht ersichtlich, um welche Teilstrecke es
 geht. In diesem Fall sollten die von-nach-Kreuzungen möglichst mit
 angegeben werden.
 
+<sect2>
+<title id="tempblockings">Temporäre Sperrungen</>
+
+<para>
+Für Baustellen und Veranstaltungen, die Sperrungen oder
+Beeinträchtigungen zur Folge haben und nur kurz- oder mittelfristig
+(typischerweise höchstens ein Jahr) dauern, können Einträge in der
+Datei <filename>temp_blockings/bbbike-temp-blockings.pl</> vorgenommen
+werden. Entweder manuell, oder (empfohlen) über das Interface für
+"Temporäre Sperrungen".
+
+Die Vorgehensweise sieht so aus:
+<itemizedlist>
+<listitem><para>Es ist nicht unbedingt notwendig, in den EDIT-Modus zu
+wechseln.
+<listitem><para>Den Menüpunkt Sucheinstellungen > Benutzerdefinierte
+Sperrungen > Definieren aktivieren.
+<listitem><para>Die Straßenabschnitte, in denen Sperrungen
+vorkommen, mit einem Mausklick markieren. Es können nur ganze
+Straßenabschnitte von Kreuzung zu Kreuzung (oder Kurvenpunkt) markiert
+werden. Mit einem nochmaligen Klick auf das Sperr-Symbol wird dieses
+wieder entfernt
+<listitem><para>Den Menüpunkt Sucheinstellungen > Benutzerdefinierte
+Sperrungen > Speichern für temp_blockings auswählen. Ein Dialogfenster
+erscheint.
+<listitem><para>Eine natürlich-sprachliche Beschreibung für die
+Sperrung eintragen (z.B. betroffene Straßenzüge, Grund der Sperrung,
+Anfangs- und Enddatum der Sperrung etc.).
+<listitem><para>Nach Klick auf den "Date"-Knopf versucht das Programm,
+Anfangs- und Enddatum aus der Beschreibung zu extrahieren und in die
+Felder "Start" und "Ende" einzutragen. Es werden einige
+Datumsschreibweisen erkannt, wie "Tag.Monat.Jahr" oder "Ende Monat
+Jahr". Funktioniert das nicht, müssen Anfangs- und Enddatum manuell
+eingetragen werden oder auf "undef" (undefiniert, offener Anfang und
+offenes Ende) gesetzt werden.
+<listitem><para>Bei der Vorwarnzeit kann typischerweise die
+Voreinstellung von einem Tag beibehalten werden.
+<listitem><para>Typ der Sperrung/Beeinträchtigung wählen. Wenn die
+Straße tatsächlich komplett gesperrt ist (z.B. wenn eine neue Brücke
+eingesetzt wird oder es sich um ein überlaufenes Straßenfest handelt),
+dann sollte "gesperrt" gewählt werden. Wenn die
+Sperrung nur eine Richtung betrifft, dann sollte "Einbahnstraße"
+gewählt werden. Die manuelle Korrektur der Richtung wird später
+erläutert. Falls es sich um eine Beeinträchtigung handelt, die man als
+Radfahrer mit Schrittgeschwindigkeit passieren kann, wird "handicap"
+gewählt.
+<listitem><para>Falls auch das Überqueren der betroffenen Straßen
+nicht möglich ist (Beispiel: Berlin-Marathon), dann sollte der
+entsprechende Checkbutton ausgewählt werden.
+<listitem><para>Falls es sich nicht um eine Baustelle handelt, sollte
+der entsprechende Checkbutton deselektiert werden.
+<listitem><para>Die restlichen Einstellungen können meistens ignoriert
+werden. Man kann nun auf "Ok" klicken.
+<listitem><para>Der Dialog wird geschlossen und auch die Markierungen
+sollten verschwinden. Wenn man jetzt auf Sucheinstellungen > Benutzerdefinierte
+Sperrungen > Aktive und zukünftige Sperrungen zeichnen klickt, sollten
+die neuen Eintragungen wieder erscheinen, diesmal mit Baustellen- oder
+Kalendarsymbol.
+</itemizedlist>
+
+Wenn manuell Änderungen (z.B. Einbahnstraßen umdrehen) notwendig sind,
+muss das in der Datei
+<filename>data/temp_blockings/bbbike-temp-blockings.pl</> passieren.
+Bei der Datei handelt es sich um eine Perl-Datenstruktur, in der
+kleine bbd-Schnipsel vorkommen. Der zuletzt editierte Eintrag befindet
+sich typischerweise ganz hinten. Hier können die bbd-Daten, wie im
+Abschnitt <link linkend="directedit">Direktes Editieren</>
+beschrieben, geändert werden.
+
 <sect1>
-<title>Alternative Editiermöglichkeiten</>
+<title id="altedit">Alternative Editiermöglichkeiten</>
 
 <sect2>
 <title>Schnelles Erfassen von Daten</>
@@ -954,7 +1023,7 @@ verwendet wird, also
 </programlisting>
 
 <sect2>
-<title>Direktes Editieren der Daten</>
+<title id="directedit">Direktes Editieren der Daten</>
 
 <para>
 BBBike-Daten sind reine Textdateien und können mit einem normalen

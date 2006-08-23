@@ -25,9 +25,9 @@ alink="#0000FF">
 </div>
 </div>
 
-<p class="COPYRIGHT">Copyright &copy; 2005, 2006 by Slaven Rezic</p>
+<p class="COPYRIGHT">Copyright &copy; 2005, 2006 von Slaven Rezic</p>
 
-<p class="PUBDATE">$Date: 2006/08/09 21:05:03 $<br />
+<p class="PUBDATE">$Date: 2006/08/23 20:18:14 $<br />
 </p>
 
 <hr />
@@ -35,7 +35,7 @@ alink="#0000FF">
 
 <div class="TOC">
 <dl>
-<dt><b>Table of Contents</b></dt>
+<dt><b>Inhaltsverzeichnis</b></dt>
 
 <dt>1. <a href="#AEN16">Voraussetzungen</a></dt>
 
@@ -53,11 +53,11 @@ alink="#0000FF">
 
 <dt>8. <a href="#AEN153">Ein Exkurs über die verwendeten Layer und Attribute</a></dt>
 
-<dt>9. <a href="#AEN390">Alternative Editiermöglichkeiten</a></dt>
+<dt>9. <a href="#AEN421">Alternative Editiermöglichkeiten</a></dt>
 
-<dt>10. <a href="#AEN402">Neue Layer auf Basis der Berliner BBBike-Daten</a></dt>
+<dt>10. <a href="#AEN433">Neue Layer auf Basis der Berliner BBBike-Daten</a></dt>
 
-<dt>11. <a href="#AEN405">Eine komplett neue Datenbank aufbauen</a></dt>
+<dt>11. <a href="#AEN436">Eine komplett neue Datenbank aufbauen</a></dt>
 </dl>
 </div>
 
@@ -224,21 +224,21 @@ mit "Reload" neu geladen werden.</p>
 
 <div class="WARNING">
 <blockquote class="WARNING">
-<p><b>Warning</b>Manchmal funktioniert "Reload" nicht, dann muss der Layer aus- und
+<p><b>Warnung:</b> Manchmal funktioniert "Reload" nicht, dann muss der Layer aus- und
 wieder eingeschaltet werden.</p>
 </blockquote>
 </div>
 
 <div class="TIP">
 <blockquote class="TIP">
-<p><b>Tip:</b> Um das Laden zu beschleunigen kann im Layermenu "Lazy drawing" verwendet
+<p><b>Tipp:</b> Um das Laden zu beschleunigen kann im Layermenu "Lazy drawing" verwendet
 werden.</p>
 </blockquote>
 </div>
 
 <div class="WARNING">
 <blockquote class="WARNING">
-<p><b>Warning</b>"Lazy drawing" führt zu einem Speicherleck, der zu einem stetigen
+<p><b>Warnung:</b> "Lazy drawing" führt zu einem Speicherleck, der zu einem stetigen
 Speicherzuwachs in BBBike führt.</p>
 </blockquote>
 </div>
@@ -961,15 +961,106 @@ Kontexts verloren: in der Routenbeschreibung wird nicht ersichtlich, um welche
 Teilstrecke es geht. In diesem Fall sollten die von-nach-Kreuzungen möglichst mit
 angegeben werden.&#13;</p>
 </div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN390" name="AEN390">8.20. Temporäre Sperrungen</a></h2>
+
+<p>Für Baustellen und Veranstaltungen, die Sperrungen oder Beeinträchtigungen zur Folge
+haben und nur kurz- oder mittelfristig (typischerweise höchstens ein Jahr) dauern, können
+Einträge in der Datei <tt class="FILENAME">temp_blockings/bbbike-temp-blockings.pl</tt>
+vorgenommen werden. Entweder manuell, oder (empfohlen) über das Interface für "Temporäre
+Sperrungen". Die Vorgehensweise sieht so aus:</p>
+
+<ul>
+<li>
+<p>Es ist nicht unbedingt notwendig, in den EDIT-Modus zu wechseln.</p>
+</li>
+
+<li>
+<p>Den Menüpunkt Sucheinstellungen &#62; Benutzerdefinierte Sperrungen &#62; Definieren
+aktivieren.</p>
+</li>
+
+<li>
+<p>Die Straßenabschnitte, in denen Sperrungen vorkommen, mit einem Mausklick markieren.
+Es können nur ganze Straßenabschnitte von Kreuzung zu Kreuzung (oder Kurvenpunkt)
+markiert werden. Mit einem nochmaligen Klick auf das Sperr-Symbol wird dieses wieder
+entfernt</p>
+</li>
+
+<li>
+<p>Den Menüpunkt Sucheinstellungen &#62; Benutzerdefinierte Sperrungen &#62; Speichern
+für temp_blockings auswählen. Ein Dialogfenster erscheint.</p>
+</li>
+
+<li>
+<p>Eine natürlich-sprachliche Beschreibung für die Sperrung eintragen (z.B. betroffene
+Straßenzüge, Grund der Sperrung, Anfangs- und Enddatum der Sperrung etc.).</p>
+</li>
+
+<li>
+<p>Nach Klick auf den "Date"-Knopf versucht das Programm, Anfangs- und Enddatum aus der
+Beschreibung zu extrahieren und in die Felder "Start" und "Ende" einzutragen. Es werden
+einige Datumsschreibweisen erkannt, wie "Tag.Monat.Jahr" oder "Ende Monat Jahr".
+Funktioniert das nicht, müssen Anfangs- und Enddatum manuell eingetragen werden oder auf
+"undef" (undefiniert, offener Anfang und offenes Ende) gesetzt werden.</p>
+</li>
+
+<li>
+<p>Bei der Vorwarnzeit kann typischerweise die Voreinstellung von einem Tag beibehalten
+werden.</p>
+</li>
+
+<li>
+<p>Typ der Sperrung/Beeinträchtigung wählen. Wenn die Straße tatsächlich komplett
+gesperrt ist (z.B. wenn eine neue Brücke eingesetzt wird oder es sich um ein überlaufenes
+Straßenfest handelt), dann sollte "gesperrt" gewählt werden. Wenn die Sperrung nur eine
+Richtung betrifft, dann sollte "Einbahnstraße" gewählt werden. Die manuelle Korrektur der
+Richtung wird später erläutert. Falls es sich um eine Beeinträchtigung handelt, die man
+als Radfahrer mit Schrittgeschwindigkeit passieren kann, wird "handicap" gewählt.</p>
+</li>
+
+<li>
+<p>Falls auch das Überqueren der betroffenen Straßen nicht möglich ist (Beispiel:
+Berlin-Marathon), dann sollte der entsprechende Checkbutton ausgewählt werden.</p>
+</li>
+
+<li>
+<p>Falls es sich nicht um eine Baustelle handelt, sollte der entsprechende Checkbutton
+deselektiert werden.</p>
+</li>
+
+<li>
+<p>Die restlichen Einstellungen können meistens ignoriert werden. Man kann nun auf "Ok"
+klicken.</p>
+</li>
+
+<li>
+<p>Der Dialog wird geschlossen und auch die Markierungen sollten verschwinden. Wenn man
+jetzt auf Sucheinstellungen &#62; Benutzerdefinierte Sperrungen &#62; Aktive und
+zukünftige Sperrungen zeichnen klickt, sollten die neuen Eintragungen wieder erscheinen,
+diesmal mit Baustellen- oder Kalendarsymbol.</p>
+</li>
+</ul>
+
+Wenn manuell Änderungen (z.B. Einbahnstraßen umdrehen) notwendig sind, muss das in der
+Datei <tt class="FILENAME">data/temp_blockings/bbbike-temp-blockings.pl</tt> passieren.
+Bei der Datei handelt es sich um eine Perl-Datenstruktur, in der kleine bbd-Schnipsel
+vorkommen. Der zuletzt editierte Eintrag befindet sich typischerweise ganz hinten. Hier
+können die bbd-Daten, wie im Abschnitt <a href="#AEN428">Direktes Editieren</a>
+beschrieben, geändert werden.&#13;<br />
+<br />
+</div>
 </div>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN390" name="AEN390">9. Alternative
+<h1 class="SECT1"><a id="AEN421" name="AEN421">9. Alternative
 Editiermöglichkeiten</a></h1>
 
 <div class="SECT2">
-<h2 class="SECT2"><a id="AEN392" name="AEN392">9.1. Schnelles Erfassen von Daten</a></h2>
+<h2 class="SECT2"><a id="AEN423" name="AEN423">9.1. Schnelles Erfassen von Daten</a></h2>
 
 <p>Es ist auch möglich, mit der Standardinstallation von BBBike (ohne CVS) Daten zu
 erfassen, die an der Daten-Maintainer geschickt werden können. Dazu muss einfach ein
@@ -990,7 +1081,7 @@ BBBike-Datenformat verwendet wird, also</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN397" name="AEN397">9.2. Direktes Editieren der Daten</a></h2>
+<h2 class="SECT2"><a id="AEN428" name="AEN428">9.2. Direktes Editieren der Daten</a></h2>
 
 <p>BBBike-Daten sind reine Textdateien und können mit einem normalen Texteditor
 bearbeitet werden. Allerdings wird dabei kein <tt class="FILENAME">datachange.log</tt>
@@ -1003,7 +1094,7 @@ BBBike-Datenformats siehe <a href="bbd.html" target="_top">hier</a>.&#13;</p>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN402" name="AEN402">10. Neue Layer auf Basis der Berliner
+<h1 class="SECT1"><a id="AEN433" name="AEN433">10. Neue Layer auf Basis der Berliner
 BBBike-Daten</a></h1>
 
 <p>TBD &#13;</p>
@@ -1011,7 +1102,7 @@ BBBike-Daten</a></h1>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN405" name="AEN405">11. Eine komplett neue Datenbank
+<h1 class="SECT1"><a id="AEN436" name="AEN436">11. Eine komplett neue Datenbank
 aufbauen</a></h1>
 
 <p>Dazu sollte ein neues Datenverzeichnis parallel zu <tt
@@ -1039,7 +1130,7 @@ class="FILENAME">data</tt> nennen, aber ein CVS-Update würde zu Konflikten führe
 </div>
 </div>
 
-<h3 class="FOOTNOTES">Notes</h3>
+<h3 class="FOOTNOTES">Fußnoten</h3>
 
 <table border="0" class="FOOTNOTES" width="100%">
 <tr>

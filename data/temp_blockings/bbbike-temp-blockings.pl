@@ -2464,7 +2464,7 @@ EOF
        text  => 'L 338; (Neuenhagener Chaussee); Zuf. Flora-Gelände bei Schöneiche Umbau Knotenpunkt Vollsperrung 29.07.2005-29.07.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 30455,10061 30500,10571
+userdel	2 30415,10023 30557,10626
 EOF
      },
      { from  => 1125180000, # 2005-08-28 00:00
