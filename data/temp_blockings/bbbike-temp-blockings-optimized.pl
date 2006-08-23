@@ -588,9 +588,9 @@ userdel	q4::inwork 39715,101866 39574,101863
        },
        {
          'source_id' => 'IM_003129',
-         'until' => 1157061599,
-         'text' => 'Ringstr. (Lichterfelde) Richtung Carstennstr. zwischen Lotzestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2006)',
-         'from' => 1153860291,
+         'until' => 1158357600,
+         'text' => 'Ringstr. (Lichterfelde) Richtung Carstennstr. zwischen Lotzestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 15.09.2006)',
+         'from' => 1156360549,
          'data' => 'userdel	1::inwork 2639,2989 2638,2843
 ',
          'type' => 'gesperrt'
@@ -672,15 +672,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'INKO_70880',
-         'until' => 1157061599,
-         'text' => 'Invalidenstr. in Richtung Tiergartentunnel, zwischen Ackerstr. und Bergstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2006)',
-         'from' => 1154876732,
-         'data' => 'userdel	1::inwork 9810,14066 9663,14036
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1164927600,
          'text' => 'B 109 B167-Zehdenick OD Falkenthal grundhafter Straßenbau Vollsperrung 07.08.2006-30.11.2006 ',
@@ -828,6 +820,23 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'text' => 'L 235 Gielsdorf-Werneuchen Schulstr. in der OL Wegendorf Straßen- u. Durchlassbau Vollsperrung 06.07.2006-30.09.2006 ',
          'from' => 1152050400,
          'data' => 'userdel	2::inwork 34492,22176 34321,22151 34125,22128
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003321',
+         'until' => 1156820400,
+         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (bis 29.08.2006 05:00 Uhr)',
+         'from' => 1156315720,
+         'data' => 'userdel	2::temp 8515,12242 8214,12205 8089,12186
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1158336000,
+         'text' => 'Berlin Weißensee, Buschallee, Weißensee Richtung Ahrensfelde Zwischen Einmündung Berliner Allee und Kreuzung Hansastraße Baustelle, gesperrt bis 15.09.2006 18:00 Uhr ',
+         'from' => 1156358040,
+         'data' => 'userdel	1::inwork 14621,16563 15121,16503 15388,16502 15432,16500
 ',
          'type' => 'gesperrt'
        }

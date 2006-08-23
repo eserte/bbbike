@@ -15931,8 +15931,17 @@ sub restore_user_dels {
     }
 }
 
+# -force => 1: be quiet and do not ask or warn
 sub delete_user_dels {
     my(%args) = @_;
+
+    my($any_delnet_tag) = $c->find("withtag", "delnet");
+    if (!defined $any_delnet_tag) {
+	if (!$args{-force}) {
+	    $top->messageBox(-message => M"Keine benutzerdefinierten Sperrungen vorhanden.");
+	}
+	return;
+    }
 
     if ($args{-force} ||
 	$top->messageBox(-message => M"Alle benutzerdefinierten Sperrungen löschen?",

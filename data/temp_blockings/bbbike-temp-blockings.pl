@@ -5200,9 +5200,9 @@ EOF
 userdel	q4::inwork; 6670,14302 6482,14264
 EOF
      },
-     { from  => 1153860291, # 2006-07-25 22:44
-       until => 1157061599, # 2006-08-31 23:59
-       text  => 'Ringstr. (Lichterfelde) Richtung Carstennstr. zwischen Lotzestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2006)',
+     { from  => 1156360549, # 2006-08-23 21:15
+       until => 1158357600, # 2006-09-16 00:00
+       text  => 'Ringstr. (Lichterfelde) Richtung Carstennstr. zwischen Lotzestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 15.09.2006)',
        type  => 'gesperrt',
        source_id => 'IM_003129',
        data  => <<EOF,
@@ -5331,7 +5331,7 @@ userdel	q4::inwork 16861,5935 17156,6235 17239,6182 17290,6228
 EOF
      },
      { from  => 1154876732, # 2006-08-06 17:05
-       until => 1157061599, # 2006-08-31 23:59
+       until => 1156360698, # 1157061599 2006-08-31 23:59
        text  => 'Invalidenstr. in Richtung Tiergartentunnel, zwischen Ackerstr. und Bergstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2006)',
        type  => 'gesperrt',
        source_id => 'INKO_70880',
@@ -5519,6 +5519,14 @@ EOF
        source_id => 'IM_003321',
        data  => <<EOF,
 userdel	2::temp 8515,12242 8214,12205 8089,12186
+EOF
+     },
+     { from  => 1156358040, # 2006-08-23 20:34
+       until => 1158336000, # 2006-09-15 18:00
+       text  => 'Berlin Weißensee, Buschallee, Weißensee Richtung Ahrensfelde Zwischen Einmündung Berliner Allee und Kreuzung Hansastraße Baustelle, gesperrt bis 15.09.2006 18:00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 14621,16563 15121,16503 15388,16502 15432,16500
 EOF
      },
     );
