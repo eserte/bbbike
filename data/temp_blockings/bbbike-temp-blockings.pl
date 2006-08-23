@@ -5512,4 +5512,13 @@ EOF
 userdel	2::inwork 34492,22176 34321,22151 34125,22128
 EOF
      },
+     { from  => 1156315720, # 2006-08-23 08:48
+       until => 1156820400, # 2006-08-29 05:00
+       text  => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (bis 29.08.2006 05:00 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_003321',
+       data  => <<EOF,
+userdel	2::temp 8515,12242 8214,12205 8089,12186
+EOF
+     },
     );
