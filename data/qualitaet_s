@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.151 2006/08/23 20:20:24 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.152 2006/08/23 21:01:13 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -229,7 +229,7 @@ Gelieustr.: Kopfsteinpflaster	Q2 4802,4921 4568,4789 4507,4755
 Appenzeller Str.: Kopfsteinpflaster	Q2 3425,1647 3293,1839
 Thuner Platz: Kopfsteinpflaster	Q2 3293,1839 3254,1848 3233,1885
 Luzerner Str.: Kopfsteinpflaster	Q2 3233,1885 3148,1888 3044,1890
-Carstennstr.: Kopfsteinpflaster	Q2 3044,1890 2791,2484 2638,2843
+Carstennstr.: Kopfsteinpflaster	Q2 3044,1890 2992,2018 2791,2484 2638,2843
 Ringstr.: Kopfsteinpflaster	Q2 2638,2843 2639,2989 2701,3064
 Alt-Reinickendorf: Kopfsteinpflaster	Q2 7217,18681 7003,18715 6766,18794 6567,18812 6456,18844
 Alt-Reinickendorf: Kopfsteinpflaster	Q2 6567,18812 6734,18728 7003,18715
@@ -574,8 +574,8 @@ Bahnhofstr.: Richtung Osten Kopfsteinpflaster	Q2; 16756,15555 16819,15495 16888,
 Pankeweg: enger Feldweg, teilweise Schotter	Q2 14869,24391 14625,24215 14356,23862 14265,23759 13953,23497
 Pankeweg: mäßiger Asphalt	Q1 13205,22299 13078,21754
 Pankeweg: Parkweg, OK	Q1 13078,21754 12807,20944 12563,20753
-Pankeweg: holpriger Weg	Q2 12563,20753 12377,20636
-Pankeweg: Parkweg, OK	Q1 12377,20636 12207,20351 12122,20307 11995,19759
+Pankeweg: asphaltiert 	Q0 12563,20753 12377,20636
+Pankeweg: asphaltiert	Q0 12377,20636 12207,20351 12122,20307 11995,19759
 Schloßallee: Asphalt	Q0 11883,19739 11730,19684 11312,19537 11221,19505
 Schloßallee: Parkweg, OK	Q1 11221,19505 10883,19389 10661,19307 10525,19255
 Pankeweg, Schloßpark Schönhausen: Parkweg, meist OK	Q1 10661,19307 10592,19249 10509,18981 10496,18704
@@ -853,7 +853,7 @@ Parforceweg: Waldweg?	Q2 -643,7252 -728,7310 -1008,7427 -1142,7493 -1308,7558 -1
 Wanderweg Erkner - Hessenwinkel: guter Parkweg	Q1 33533,2761 33293,2768 33086,2790 32972,2832
 (Zu den Müggelheimer Wiesen): asphaltiert	Q0 29899,2399 29549,2267 29414,2373
 Südendstr.: Kopfsteinpflaster	Q2 5687,5486 5840,5456 6002,5424
-Am Teltowkanal: Parkweg, teilweise mit schmalem Verbundsteinradweg	Q1 7990,4420 8242,4648 8590,4976 8772,5081 8881,5143 9185,5271
+Am Teltowkanal: Parkweg, teilweise mit schmalem Verbundsteinradweg	Q1 7990,4420 8242,4648 8590,4976 8772,5081 8881,5143 9171,5264 9185,5271
 Teltowkanal: Parkweg, OK	Q1 4224,2659 4193,2616 4053,2300 3690,1436
 (Weg am Friedhof): Parkweg	Q1 11606,7260 12180,7387
 Spreetalallee: uneben, leichter Schotter	Q2 657,12697 753,12972 715,13126
@@ -3716,6 +3716,7 @@ Gielower Str.: Beton mit asphaltierten Ausbesserungen	Q2 13394,4373 13626,4304 1
 (Parkweg Fritz-Reuter-Alle - Bruno-Taut-Ring): Verbundsteine, wassergebundene Decke	Q1 13476,3857 13487,3862 13601,3895
 (Parkweg Fritz-Reuter-Allee - Britzer-Park): wassergebundene Decke	Q1 13476,3857 13292,3837
 (Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): wassergebundene Decke	Q1 13487,3862 13531,3768 13545,3692 13629,3511
+(Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Verbundsteine, wassergebundene Decke	Q1 13944,2708 13904,2787 13807,2863 13778,2987 13740,3252 13748,3301 13629,3511
 Üderseestr.: Kopfsteinpflaster	Q3 18135,8404 18225,8532 18320,8662
 Traberweg.: fester Sandweg	Q2 18570,8025 18490,8104 18340,8223 18135,8404 18072,8470 17935,8581
 Brahmsstr.: Kopfsteinpflaster	Q2 4785,4557 4933,4140 4967,4067
@@ -3760,8 +3761,8 @@ Memlingstr.: sehr schlechtes Kopfsteinpflaster	Q3 4134,3825 4275,3652
 Rettigweg: schlechtes Kopfsteinpflaster	Q2 9828,17659 9760,17612 9706,17570
 Friedrich-List-Ufer: sehr guter Asphalt	Q0 8110,13042 8098,13419
 Reinbeckstr.: Kopfsteinpflaster	Q2 18343,6318 18310,6223
-Marchandstr.: Asphalt	Q0 7437,1859 7332,1718 7193,1492
-Tambacher Str.: Kopfsteinpflaster / Asphalt	Q0;Q2 7035,1814 7134,1612 7193,1492
+Marchandstr.: Asphalt	Q0 7437,1859 7425,1843 7332,1718 7193,1492
+Tambacher Str.: Kopfsteinpflaster / Asphalt	Q0;Q2 7035,1814 7134,1612 7144,1591 7193,1492
 Tambacher Str.: Asphalt	Q0 7193,1492 7226,1428 7264,1350
 Blankenhainer Str.: Asphalt	Q0 7035,1814 6881,1743 6718,1664 6578,1595
 Brotteroder Str.: Kopfsteinpflaster	Q2 7134,1612 6984,1540
@@ -3775,4 +3776,12 @@ Tennstedter Str.: Asphalt	Q0 6921,1259 7000,1100 7062,1045
 Orlamünder Weg: Asphalt	Q0 7035,1814 7119,1829 7174,1718 7195,1703 7214,1710 7242,1754 7258,1757 7332,1718
 Orlamünder Weg: Asphalt	Q0 7258,1757 7274,1810
 Orlamünder Weg: Asphalt	Q0 7195,1703 7172,1630
+(An der Kol. Königsgraben, nördl. Parkweg): Asphalt	Q0 6848,1809 7189,1942 7390,2021
+(An der Kol. Königsgraben, südl. Parkweg): fester Parkweg	Q1 7425,1843 7275,1843 7226,1842
+(An der Kol. Königsgraben, südl. Parkweg): Asphalt	Q0 7226,1842 7119,1829
+(Kol. Königsgraben, Privatstr.): Asphalt	Q0 7409,1953 7210,1888 7189,1942
+(Kol. Königsgraben, Nord-Süd-Verbindung): Asphalt	Q0 7226,1842 7210,1888
+(Verbindung zum Orlamünder Weg): Asphalt	Q0 7274,1810 7275,1843
+(Orlamünder Weg - Tambacher Str.): Asphalt	Q0 7172,1630 7144,1591
 Falkenhausenweg: Asphalt	Q0 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
+Berner Str.: Kopfsteinpflaster	Q3 3025,2847 3015,2606 3012,2473 3009,2429 3006,2384 3003,2339 3000,2232 2995,2123

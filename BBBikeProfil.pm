@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeProfil.pm,v 1.16 2006/02/16 21:53:49 eserte Exp eserte $
+# $Id: BBBikeProfil.pm,v 1.17 2006/08/24 20:17:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2002,2006 Slaven Rezic. All rights reserved.
@@ -141,7 +141,7 @@ sub Redraw {
 
     my($lastx, $lasty, $last_hoehe);
     my @etappe_coords;
-    my @poly_coords = ($x_sub->(0), $y_sub->(0));
+    my @poly_coords;
     for(my $i=0; $i<=$#dist; $i++) {
 	my($d) = $dist[$i];
 	my($x,$y) = @{ $coords[$i] };
@@ -150,6 +150,9 @@ sub Redraw {
 	    my($thisx, $thisy);
 	    $thisx = $x_sub->($d);
 	    $thisy = $y_sub->($hoehe->{"$x,$y"});
+	    if (!@poly_coords) {
+		push @poly_coords, ($thisx, $y_sub->(0));
+	    }
 	    push @poly_coords, $thisx, $thisy;
 	    if (defined $lastx) {
 		$c->createLine
@@ -168,7 +171,9 @@ sub Redraw {
 	    $last_hoehe = $hoehe->{"$x,$y"};
 	}
     }
-    push @poly_coords, ($x_sub->($dist[-1]), $y_sub->(0));
+    if (defined $lastx) {
+	push @poly_coords, ($lastx, $y_sub->(0));
+    }
 
     for(my $i=0; $i<=10; $i++) {
 	my $thisx = $x_sub->($i*$dist[-1]/10);

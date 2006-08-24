@@ -698,14 +698,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1156370400,
-         'text' => 'B 005 Abzw. Groß Gottschow-OU Perleberg Bahnübergang bei Perleberg Gleissanierung Vollsperrung 22.08.2006-23.08.2006 ',
-         'from' => 1156111200,
-         'data' => 'userdel	2::inwork -94722,72190 -94274,71791 -93406,71227
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_003258',
          'until' => 1159653599,
@@ -837,6 +830,30 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'text' => 'Berlin Weißensee, Buschallee, Weißensee Richtung Ahrensfelde Zwischen Einmündung Berliner Allee und Kreuzung Hansastraße Baustelle, gesperrt bis 15.09.2006 18:00 Uhr ',
          'from' => 1156358040,
          'data' => 'userdel	1::inwork 14621,16563 15121,16503 15388,16502 15432,16500
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1156716000,
+         'text' => 'Straßenfest am Kaiserdamm. Die Fahrbahn Richtung Theodor-Heuss-Platz ist vom 26.08.2006, 6.00 Uhr, von der Sophie-Charlotten- bis zur Königin-Elisabeth-Straße bis zum 28.08.2006, 0.00 Uhr gesperrt.',
+         'from' => 1156478400,
+         'data' => 'userdel	1::temp 2612,11491 2417,11465 2234,11440 2193,11434 2110,11426
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1156802399,
+         'text' => 'Vom 26. August 2006, 13 Uhr bis zum 28. August 2006, 4 Uhr ist der Verkehr in der Möllendorffstraße im Abschnitt zwischen der Straße Am Containerbahnhof und der Frankfurter Allee gesperrt.',
+         'from' => 1156454823,
+         'data' => 'userdel	q4::inwork; 15392,12135 15349,12073
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1164927599,
+         'text' => 'Hegemeisterweg ist vom 7. August 2006 bis zum 30. November 2006 nicht benutzbar. ',
+         'from' => 1154815200,
+         'data' => 'userdel	2::inwork 17775,7874 17987,7973 18387,7742
 ',
          'type' => 'gesperrt'
        }

@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.125 2006/08/23 20:20:22 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.126 2006/08/23 21:01:10 eserte Exp $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -493,7 +493,7 @@ Bundesallee -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreifen	3 5444,8
 Bundesallee -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreifen	3 5513,8588 5481,8506 5533,8478
 Am Volkspark -> Bundesallee: Absperrung auf dem Mittelstreifen	3 5320,8456 5444,8406 5481,8506
 Bundesallee -> Am Volkspark: Absperrung auf dem Mittelstreifen	3 5481,8506 5444,8406 5669,8207
-Am Teltowkanal, südl. Ufer -> Mariendorfer Damm: unbequem passierbarer Mittelstreifen	3 8881,5143 9185,5271 9182,5332
+Am Teltowkanal, südl. Ufer -> Mariendorfer Damm: unbequem passierbarer Mittelstreifen	3 9171,5264 9185,5271 9182,5332
 Wulfila-Ufer -> Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3 9145,5323 9182,5332 9171,5397
 Mariendorfer Damm -> Wulfila-Ufer: unbequem passierbarer Mittelstreifen	3 9185,5271 9182,5332 9145,5323
 Viktoriastr. -> Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3 8943,5428 9171,5397 9147,5534
@@ -1146,3 +1146,4 @@ Niehofer Str.	1 16942,16174 16815,16214 16692,16253
 Drängelgitter	BNP:10:-99 17371,16194
 Orlamünder Weg	1 7035,1814 7119,1829 7174,1718 7195,1703 7214,1710 7242,1754 7258,1757 7332,1718
 Müncheberger Weg: Privatgelände	2 29978,8975 29868,9084
+Drängelgitter	BNP:10:63 9171,5264

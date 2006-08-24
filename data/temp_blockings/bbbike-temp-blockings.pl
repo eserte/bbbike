@@ -5529,4 +5529,28 @@ EOF
 userdel	1::inwork 14621,16563 15121,16503 15388,16502 15432,16500
 EOF
      },
+     { from  => 1156478400, # 2006-08-25 06:00
+       until => 1156716000, # 2006-08-28 00:00
+       text  => 'Straßenfest am Kaiserdamm. Die Fahrbahn Richtung Theodor-Heuss-Platz ist vom 26.08.2006, 6.00 Uhr, von der Sophie-Charlotten- bis zur Königin-Elisabeth-Straße bis zum 28.08.2006, 0.00 Uhr gesperrt.',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::temp 2612,11491 2417,11465 2234,11440 2193,11434 2110,11426
+EOF
+     },
+     { from  => 1156454823, # 2006-08-24 23:27
+       until => 1156802399, # 2006-08-28 23:59
+       text  => 'Vom 26. August 2006, 13 Uhr bis zum 28. August 2006, 4 Uhr ist der Verkehr in der Möllendorffstraße im Abschnitt zwischen der Straße Am Containerbahnhof und der Frankfurter Allee gesperrt.',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 15392,12135 15349,12073
+EOF
+     },
+     { from  => 1154815200, # 2006-08-06 00:00
+       until => 1164927599, # 2006-11-30 23:59
+       text  => 'Hegemeisterweg ist vom 7. August 2006 bis zum 30. November 2006 nicht benutzbar. ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 17775,7874 17987,7973 18387,7742
+EOF
+     },
     );

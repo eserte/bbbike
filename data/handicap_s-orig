@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.108 2006/08/22 19:18:44 eserte Exp $
+#: version: $Id: handicap_s-orig,v 4.109 2006/08/23 21:01:11 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # XXX hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -183,6 +183,7 @@ Fürther Str.: Gehweg	q2 5773,10318 5808,10284
 (Richard-Wagner-Platz - Schustehrusstr.): Gehweg	q3 3763,12279 3700,12265
 Goerdelersteg: enge scheckenförmige Rampen	q3 3619,14183 3600,14278
 Goerdelerdamm: enger Zweirichtungsradweg	q1 3600,14278 4676,14534
+Schneckenbrücke: Rampe	q3 2012,3356 1977,3414
 Radweg eng und bewachsen	q1 5071,14614 5264,14671 5440,14840
 Tunnel S-Bhf. Grunewald: Fußgänger	q2 698,9124 731,9103 884,8954
 enge Kurven	q2 33533,2761 33293,2768
@@ -744,7 +745,22 @@ Steinbockstr.: enge Straße	q2 14840,7307 14861,7316 14868,7297 14848,7288
 #: by: ^^^
 #: by: Kay-Uwe Ludwig [AM]
 Seefelder Str. (Fußweg): Fußgänger, schmal	q2 17274,16177 17371,16194 17383,16197
-#: by: Daniel Weber [AM]
+#: by: Daniel Weber [AM] vvv
 (Malteser Str. - Hanielweg): Fußgänger	q1 7451,1818 7534,1818 7562,1796
+(An der Kol. Königsgraben, nördl. Parkweg): Fußgänger	q1 7189,1942 7390,2021
+(An der Kol. Königsgraben, südl. Parkweg): Fußgänger	q1 7425,1843 7275,1843 7226,1842 7119,1829
+(Kol. Königsgraben, Privatstr.): Fußgänger	q1 7409,1953 7210,1888 7189,1942
+(Kol. Königsgraben, Nord-Süd-Verbindung): Fußgänger	q1 7226,1842 7210,1888
+(Verbindung zum Orlamünder Weg): Fußgänger	q1 7274,1810 7275,1843
+(Orlamünder Weg - Tambacher Str.): Fußgänger	q1 7172,1630 7144,1591
+#: by: ^^^
 #: by: Josch [AM]
 Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
+#: by: Karin Toedtloff vvv
+(Gielower Str - Buschkrugallee): Fußgänger	q1 14012,4184 14053,4173 14100,4166
+(Parkweg Buschkrugallee - Bruno-Taut-Ring): Fußgänger	q1 14053,4173 14045,4164 14009,4148 13923,4101 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895 13626,3867
+(Parkweg Fritz-Reuter-Alle - Bruno-Taut-Ring): Fußgänger	q1 13476,3857 13487,3862 13601,3895
+(Parkweg Fritz-Reuter-Allee - Britzer-Park):Fußgänger	q1 13476,3857 13292,3837
+(Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): Fußgänger	q1 13487,3862 13531,3768 13545,3692 13629,3511
+(Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Fußgänger	q1 13944,2708 13904,2787 13807,2863 13778,2987 13740,3252 13748,3301 13629,3511
+#: by: ^^^
