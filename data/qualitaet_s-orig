@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.152 2006/08/23 21:01:13 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.153 2006/08/24 21:59:53 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -238,7 +238,7 @@ Thuner Platz: Kopfsteinpflaster	Q2 3293,1839 3254,1848 3233,1885
 Luzerner Str.: Kopfsteinpflaster	Q2 3233,1885 3148,1888 3044,1890
 Carstennstr.: Kopfsteinpflaster	Q2 3044,1890 2992,2018 2791,2484 2638,2843
 Ringstr.: Kopfsteinpflaster	Q2 2638,2843 2639,2989 2701,3064
-Alt-Reinickendorf: Kopfsteinpflaster	Q2 7217,18681 7003,18715 6766,18794 6567,18812 6456,18844
+Alt-Reinickendorf: Kopfsteinpflaster	Q2 7217,18681 7003,18715 6766,18794 6567,18812 6442,18839
 Alt-Reinickendorf: Kopfsteinpflaster	Q2 6567,18812 6734,18728 7003,18715
 Edelhofdamm: Kopfsteinpflaster (?)	Q2 3473,25618 3273,25516 3211,25484
 Zepernicker Str: Kopfsteinpflaster, OK (?)	Q1 17218,26121 17013,25874
@@ -570,6 +570,7 @@ Hämmerlingstr.: mäßiger Asphalt	Q1 22084,5774 22095,5585
 Dorfstr.: Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2 30370,3571 30183,3377 30158,3275 29902,3104 29955,3046
 Rialtoring: teilweise Kopfsteinpflaster, sonst Asphalt	Q1 31078,3372 31012,3146
 Biberpelzstr.: teilweise Kopfsteinpflaster	Q1 31441,2744 31546,2768
+#: add_fragezeichen: Ist dieser Weg nach den jüngsten Bauarbeiten (siehe http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html) asphaltiert?
 (Pelzlake): Waldweg, teilweise matschig oder sandig	Q2 31865,1794 31115,2105
 Am Kleinen Müggelsee: asphaltierter Waldweg	Q0 29964,2422 29899,2399 29738,2467 29532,2556 28862,2916 28783,2916 28748,2963 28723,3098
 #: anonymer Kommentar, aber bestätigt: "die Straße hat in der Mitte Asphalt" (Mitte der Fahrbahn!)
@@ -585,6 +586,7 @@ Möllhausenufer: Kopfsteinpflaster	Q2 23305,1147 23520,1194 23617,1212
 Möllhausenufer: asphaltiert	Q0 23617,1212 23747,1243
 Am Langen See: Waldweg, meist OK, teilweise Wurzeln	Q1 23747,1243 23968,1352 24343,1155 24462,988 24652,915 24949,806 25333,834 25559,890 25881,817 26052,520 26041,228 26385,-195 26423,-140 26628,-313 26687,-316 26751,-460 26944,-639 26952,-744 27141,-785 27329,-1183 27365,-1357 27357,-1545
 Zur Fähre: Waldweg	Q2 28973,3296 29067,3369 29064,3401
+#: add_fragezeichen: Ist dieser Weg nach den jüngsten Bauarbeiten (siehe http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html) asphaltiert?
 Radweg am Müggelsee: Waldweg OK, trotz Schotter	Q1 28829,3295 28723,3283 28695,3245 28485,3206 27984,2995 27732,2671 27528,2469 27314,2282 27218,2300 26802,2374 26460,2428 26026,2532 25948,2474
 Rheinsteinstr.: Kopfsteinpflaster	Q2 18998,8784 19173,8857 19316,8933 19510,9035
 Zwieseler Str.: Kopfsteinpflaster	Q2 19510,9035 19629,9094
@@ -657,7 +659,7 @@ Wulkower Str.: holpriger Fahrweg	Q2 21012,10146 21015,10284 21017,10423 21026,10
 Dornacher Str.: holpriger Fahrweg	Q2 20949,10145 20947,9999 20948,9847
 Buchenhainer Str.: holpriger Fahrweg	Q2 21164,8243 21329,8222
 Nitzwalder Str.: holpriger Fahrweg	Q2 21329,8222 21529,8019 21598,7922
-Kaulsdorfer Str.: mäßiger Asphalt	Q1 22059,7081 22076,6956 22186,6672 22279,6470 22324,6397
+Kaulsdorfer Str.: mäßiger Asphalt	Q1 22049,7085 22076,6956 22186,6672 22279,6470 22324,6397
 Marksburgstr.: mäßiger Asphalt	Q1 18809,9133 18697,9153 18586,9172 18319,9218
 Walkürenstr.: Kopfsteinpflaster	Q2 18069,9289 18006,9335 17735,9533
 Tannhäuserstr.: Kopfsteinpflaster	Q2 18095,9665 17898,9593 17735,9533 17549,9529
@@ -2148,7 +2150,7 @@ Sponholzstr.: Asphalt	Q0 6157,7685 6155,7216 6157,7117
 #: by: Mandy (k.):
 Puccinistr.: Asphalt und Kopfsteinpflaster	Q2 13723,15505 13973,15660
 #: by: Felix Schröder:
-Argenauer Str.: Kopfsteinpflaster	Q2 22044,7156 21838,7114 21569,7273
+Argenauer Str.: Kopfsteinpflaster	Q2 22035,7146 21838,7114 21569,7273
 #: by: stefan (b...q, yeti): vvv
 Jacobsohnstr.: mäßiger Asphalt	Q1 12200,16579 12353,16687 12486,16791 12521,16817 12699,16945
 Iranische Str.: Kopfsteinpflaster	Q2 8092,16485 7875,16509 7728,16538 7707,16543 7456,16620
@@ -3155,7 +3157,7 @@ Cyanenstr.: schlechter Asphalt	Q2 14159,14495 14124,14227
 #: by: Klaus (ohne email):
 Seelower Str.: Kopfsteinpflaster	Q2 10765,16486 10754,16305 10753,16144 10749,16013
 #: by: by: Stephan Fleischer:
-Semliner Str.: Beton	Q0 22196,6957 22303,7361
+Semliner Str.: Beton	Q0 22196,6957 22240,7122 22303,7361
 #: by: Susanne Zöller:
 Gärtnereiring: Asphalt	Q0 -6675,12632 -6692,12669 -7141,12821 -7237,12848 -7195,13216 -7183,13324
 #: by: Thilo Czerwonka:
@@ -3409,7 +3411,7 @@ Teltower Weg: Waldweg	Q1 -739,6838 -813,6755 -439,6255 -359,6181 -288,6101 -174,
 #: by: Helm Dirk:
 Holzmannstr.: Kopfsteinpflaster	Q2 11436,6588 11479,6319 11502,6194 11522,6160
 #: by: Bernd (webworld):
-Filehner Str.: Asphalt	Q0 22398,6829 22439,6892 22526,7329 22551,7428
+Filehner Str.: Asphalt	Q0 22398,6829 22439,6892 22474,7065 22526,7329 22551,7428
 #: by: Olaf (hoehne):
 Rapstedter Weg: Beton	Q0 9578,-92 9573,-3 9626,185 9832,658 9870,677
 #: by: Oliver Hauf:

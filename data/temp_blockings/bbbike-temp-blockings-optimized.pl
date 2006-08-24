@@ -856,6 +856,14 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'data' => 'userdel	2::inwork 17775,7874 17987,7973 18387,7742
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1157320799,
+         'text' => 'Turmstraßenfest vom 01.09. bis 03.09.2006 (zwischen Strom- und Waldstraße) ',
+         'from' => 1156975200,
+         'data' => 'userdel	2::temp 5368,13406 5560,13382 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6249,13322
+',
+         'type' => 'gesperrt'
        }
      
 );

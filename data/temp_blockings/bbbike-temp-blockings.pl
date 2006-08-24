@@ -5553,4 +5553,12 @@ EOF
 userdel	2::inwork 17775,7874 17987,7973 18387,7742
 EOF
      },
+     { from  => 1156975200, # 2006-08-31 00:00
+       until => 1157320799, # 2006-09-03 23:59
+       text  => 'Turmstraßenfest vom 01.09. bis 03.09.2006 (zwischen Strom- und Waldstraße) ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 5368,13406 5560,13382 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6249,13322
+EOF
+     },
     );
