@@ -817,11 +817,12 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'type' => 'gesperrt'
        },
        {
-         'source_id' => 'IM_003321',
+         'source_id' => 'IM_003324',
          'until' => 1156820400,
-         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (bis 29.08.2006 05:00 Uhr)',
-         'from' => 1156315720,
-         'data' => 'userdel	2::temp 8515,12242 8214,12205 8089,12186
+         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Großer Stern und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (einschließlich Ebertstr. und Yitzhak-Rabin-Str. (bis 29.08.2006 05:00 Uhr)',
+         'from' => 1156541009,
+         'data' => 'userdel	2::temp 8595,12066 8600,12165 8515,12242
+userdel	2::temp 8119,12414 8063,12182
 ',
          'type' => 'gesperrt'
        },
@@ -862,6 +863,38 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'text' => 'Turmstraßenfest vom 01.09. bis 03.09.2006 (zwischen Strom- und Waldstraße) ',
          'from' => 1156975200,
          'data' => 'userdel	2::temp 5368,13406 5560,13382 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6249,13322
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1156716000,
+         'text' => 'B 112 Guben, OT Bresinchen Guben, OT Bresinchen, Bahnübergang Gleisbauarbeiten Vollsperrung 26.08.2006-27.08.2006 ',
+         'from' => 1156456800,
+         'data' => 'userdel	2::inwork 99176,-43536 99277,-43921 99228,-44346
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1164927600,
+         'text' => 'L 030 OD Woltersdorf OD Woltersdorf, Rüdersdorfer Srtaße Straßenbau, Entwässerung Vollsperrung 28.09.2006-30.11.2006 ',
+         'from' => 1159308000,
+         'data' => 'userdel	q4::inwork 34511,4787 34535,5319
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1156975200,
+         'text' => 'L 073 OD Luckenwalde OD Luckenwalde, Beelitzer Str., Gewerbehof Aufstellung Autodrehkran Halbseitige Sperrung 28.08.2006-30.08.2006 ',
+         'from' => 1156629600,
+         'data' => 'userdel	1::inwork -4725,-34957 -4299,-35198
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1164927600,
+         'text' => 'L 811 OA Oehna - Landesgrenze Sachsen-A. OA Oehna - Landesgrenze Sachsen-A. Straßenausbau Vollsperrung 28.08.2006-30.11.2006 ',
+         'from' => 1156629600,
+         'data' => 'userdel	2::inwork -13946,-56116 -13817,-54938 -13601,-53865
 ',
          'type' => 'gesperrt'
        }

@@ -1,4 +1,8 @@
 B5: Radweg, RW, Fertig bis 2006-06-30	? -31230,23101 -32007,22836 -34213,23540 -36413,24363 -36882,24414 -38092,24817 -38964,25106 -40033,25453
+Hahnebergweg: Qualität? für Autofahrer gesperrt?	? -6861,12478 -7294,12560 -7710,12621
+Uferweg: noch immer wegen Bauarbeiten gesperrt?	? 14903,10403 15059,10289
+Goltzstr.: zwischen Rauchstr. und Werderstr. Kopfsteinpflaster wird durch Asphalt ersetzt, bis ca. 2006-11-15	? -2728,17038 -2666,17168 -2517,17431 -2449,17635
+Askanierring: gibt es eine Verbindung zwischen Fehrbelliner Tor und Streitstr.?	? -3631,16224 -3040,16246
 Ludwigsluster Str.: Qualität (wahrscheinlich Beton oder Asphalt)?	? 22883,13013 22835,12999 22859,12912 22897,12830 22906,12766 22902,12688 22780,12567 22684,12484 22567,12407 22471,12343 22385,12268 22292,12198
 Günter-Litfin-Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 13361,17172 13115,17410
 Clémentweg/Dr.-Dorsch-Allee: Qualität (laut ADFC-Karte gut geeignet)?	? 11740,22770 10889,23381
@@ -744,7 +748,6 @@ Am Möllenberg (Zernsdorf): Qualität?	? 27949,-10283 28016,-10429 28241,-10904 28
 Wildau - Zernsdorf/Niederlehme: anscheinend ist hier ein Gehweg/Radweg mit Brücke vorhanden, Qualität (wahrscheinlich asphaltiert)?	? 26437,-10393 27205,-10338 27469,-10314
 Hempelsteig: Qualität?	? -1011,13170 -872,13170 -787,13147 -525,13034 -472,12961
 Krumpuhler Weg: Qualität? Einbahnstraße, auch für Radfahrer?	? 1405,18749 1392,18662
-Rutnikstr.: Qualität? Einbahnstraße, auch für Radfahrer?	? 15546,12690 15648,12687 15731,12687 15857,12682 15952,12679
 Bäckerstr. (Potsdam): Qualität?	? -13323,-1226 -13219,-1242
 Spornstr. (Potsdam): Qualität?	? -13372,-1473 -13259,-1480
 Weinbergstr. (Potsdam): Qualität? Einbahnstraße auch für Radfahrer relevant?	? -13815,-749 -13750,-725 -13500,-640 -13312,-578
@@ -797,7 +800,7 @@ Turmstr. (Potsdam): Qualität?	? -8081,-4396 -8111,-4396 -8259,-4119
 Turmstr. (Potsdam): Qualität?	? -8294,-4022 -8404,-3824 -8510,-3616
 Thomas-Mann-Str.: Qualität?	? 12886,15346 13106,15202 13240,15408
 Kronprinzessinenweg/Havelchaussee - Schlachtensse: existiert ein für Radfahrer befahrbarer Weg? Qualität?	? -3296,3686 -3324,3382
-Kaiserstr. (Spandau): Qualität?	? -3840,16968 -3827,16900 -3788,16657 -3762,16502 -3733,16337
+Kaiserstr. (Spandau): Qualität?	? -3840,16968 -3827,16900 -3788,16657 -3762,16502 -3760,16381
 Neue Straße (Phöben): Qualität?	? -26488,2783 -26183,2902 -26070,2911 -25847,2835 -25664,2840
 Baumgartenbrück - B1: Rampe oder Treppe?	? -19189,-5754 -19181,-5732 -19201,-5714
 Fähre Ketzin - Paretz: Qualität des Radwegs? Nur für Radfahrer oder auch für Autofahrer befahrbar? Führt hier die Route F3 entlang?	? -26794,5867 -26526,5882 -26360,5950 -26214,5988 -26121,6011 -26141,6106 -26010,6122 -25973,6078 -25933,6081 -25921,6058 -25629,5996 -25569,6220 -25516,6282 -25444,6326
@@ -857,7 +860,7 @@ Prieroser Str.: Qualität?	? 28540,-19744 29524,-19715
 Neubrücker Str.: Qualität?	? 28231,-19792 28336,-19948 28363,-19964 28514,-20071
 Klein-Ziether Weg: Qualität?	? 15928,71 15621,-193
 Postenweg: Qualität zwischen Rudower Chaussee und B179 (wahrscheinlich guter Beton)?	? 17234,-685 17806,-561 18177,-449
-Luchsweg: Qualität?	? -7841,15503 -7747,15842 -7743,15963
+Luchweg: Qualität?	? -7841,15503 -7747,15842 -7743,15963
 Gerlinger Str. - Mauerweg: Qualität (wahrscheinlich guter fester Sandweg)?	? 12007,877 12017,777 11924,594
 Kirchstr.: Asphalt oder Kopfsteinpflaster?	? 22312,4593 22263,4671 22243,4710 22234,4789 22196,4847
 Luisenhain: werden Radfahrer nach den Bauarbeiten weiterhin durch den Park fahren dürfen?	? 22196,4847 22147,4831 22043,4562 22071,4501
@@ -983,6 +986,7 @@ Braunschweiger Ufer: asphaltiert (zumindest Richtung Osten von der Rungiusstr. a
 Braunschweiger Ufer: Parkweg (zumindest Richtung Westen von der Rungiusstr. aus:)	? 13077,5893 12718,5845
 Busseallee: Kopfsteinpflaster (ist der Abschnitt zwischen Fischerhüttenstr. und Beerenstr. auch Kopfsteinpflaster?)	? 166,3040 82,3166 -266,3648
 (Am Britzer Verbindungskanal): holpriger Feldweg (wahrscheinlich wird das noch nicht asphaltierte Teilstück bis 2006-09-01 fertiggestellt:)	? 14319,5993 14212,6000
+Möthlower Str.: Sand (oder ist die gesamte Möthlower Str. asphaltiert?)	? -7664,15601 -7457,15704
 Achenbachstr.: Kopfsteinpflaster (Kopfsteinpflaster eher gut oder normal-mäßig?)	? -3354,14971 -3322,14814
 Gundelfinger Str.: Kopfsteinpflaster (Kopfsteinpflaster eher gut oder normal-mäßig?)	? 18735,9421 18697,9153 18653,8922 18609,8717
 Haßfurter Weg: mäßiger Asphalt (Kopfsteinpflaster oder Asphalt?)	? 11847,18338 11812,18484
@@ -990,7 +994,6 @@ Margueritenring: Kopfsteinpflaster (Hier widerspricht die ADFC-Karte und meint "
 Heegermühler Weg: schlechtes Kopfsteinpflaster (Hier wurde als Range "5-15" angegegeben. Hausnummern?)	? 7966,19968 8043,19725 8231,19806 8415,19910
 (Unter dem S-Bhf. Schichauweg): Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9693,-621 9518,-668
 Miethepfad: Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9518,-668 9547,-754 9585,-859
-Torweg: unbefestigter Weg (wird demnächst asphaltiert:)	? -8606,14696 -8289,14664
 Salzachstr.: unbefestigt, fester Erdboden (wo genau sind die Kopfsteinpflaster-/Asphaltabschnitte?)	? -2146,3531 -1989,3569
 Ortsdurchfahrt Buckow: schlechtes Kopfsteinpflaster (nach den Bauarbeiten vielleicht asphaltiert?)	? 55920,18769 55988,18385 55623,17923 55217,17672
 Jühnsdorf - Mahlow: mäßiges Kopfsteinpflaster, Richtung Süden besser (Richtung Süden sah es teilweise besser aus, wo genau?)	? 9772,-12194 9345,-11425 9472,-11297 9578,-10891 9598,-10356 9854,-9480 10023,-8859

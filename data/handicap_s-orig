@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.110 2006/08/24 21:59:51 eserte Exp $
+#: version: $Id: handicap_s-orig,v 4.111 2006/08/25 20:50:47 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # XXX hier br‰uchte man keine zus‰tzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -129,9 +129,10 @@ Pankeweg, B¸rgerpark: Fuﬂg‰nger	q2 9909,18333 9882,18318 9855,18322 9716,18290 9
 B¸rgerpark: Fuﬂg‰nger	q2 9460,18053 9479,18217 9701,18256 9716,18290
 Breite Str.: Fuﬂg‰ngerzone	q3 -3012,14546 -3037,14509 -3155,14340 -3227,14260
 Markt: Fuﬂg‰ngerzone	q3 -3155,14340 -3275,14407
-Carl-Schurz-Str.: Fuﬂg‰ngerzone	q3 -3513,14238 -3445,14226 -3407,14255 -3338,14333 -3275,14407 -3228,14468 -3201,14506 -3151,14577 -3132,14607
+Carl-Schurz-Str.: Fuﬂg‰ngerzone	q3 -3513,14238 -3445,14226 -3409,14241 -3338,14333 -3275,14407 -3228,14468 -3201,14506 -3151,14577 -3132,14607
 Charlottenstr.: Fuﬂg‰ngerzone	q3 -3227,14260 -3338,14333 -3397,14370
 Moritzstr.: Fuﬂg‰ngerzone	q3 -3275,14407 -3350,14446 -3417,14483 -3481,14523
+Mauerstr. (Spandau): Fuﬂg‰ngerzone	q3 -3316,14169 -3409,14241
 Wuhlheide/R1: Fuﬂg‰nger	q2 20440,6221 20293,6278
 (am Schloﬂ Schˆnhausen): Fuﬂg‰nger	q2 10308,19297 10350,19182 10390,19069
 Blockdammweg (Br¸cke): eng, Fuﬂg‰nger	q2 17976,8964 18087,9035 18124,9056
@@ -417,7 +418,7 @@ Neustrelitzer Str.: kurvenreich	q1 16739,14733 16668,14765 16534,14740 16443,148
 (Esplanade - Gr¸ntaler Str.): Zickzack-Kurs	q2 9984,16968 9846,16981 9757,16912
 #: by: anonymous, korrigiert [AM] vvv
 L¸nette: Fuﬂg‰nger	q1 -1342,15510 -1496,15463
-Maselakeweg: Fuﬂg‰nger	q3 -2441,16996 -2391,16607 -2340,16590
+Maselakeweg: Fuﬂg‰nger	q3 -2450,16981 -2391,16607 -2340,16590
 #: by: ^^^
 #: by: Micha Bustian
 Gritznerstr.: enge Straﬂe	q1 4306,5865 4385,6045 4435,6154 4472,6242 4507,6320 4555,6403 4630,6534 4679,6620 4734,6716
@@ -485,7 +486,7 @@ Robert-von-Ostertag-Str.: Pferde und Reiter	q1 -613,1949 -745,2320
 #: by: Jens Wesendrup:
 Hackerstr.: schmale Straﬂe, schlecht einzusehen	q1 5017,6387 5034,6425 5075,6509 5101,6579 5137,6651 5184,6723
 #: by: Jochen LIedtke:
-Grafenwalder Weg: schmale Fahrbahn	q1 -3295,16392 -3326,16553
+Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3326,16553
 #: by: Katrin Kroschk:
 (Wuhlewanderweg - Teterower Ring): Fuﬂg‰nger	q1 22168,12931 22444,12990
 #: by: Timo (fetteMa):
