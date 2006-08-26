@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.18 2006/08/20 21:56:55 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.19 2006/08/26 22:24:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -646,8 +646,8 @@ sub BBBikeLazy::plotstr_on_demand {
 			$c->itemconfigure('pp',
 					  -capstyle => 'round',
 					  -width => 5,
-					  -fill => $pp_color,
 					 );
+			pp_color();
 			if(0) {
 			# die nächsten beiden sind Duplikate
 			# auf plotorte()

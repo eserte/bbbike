@@ -989,6 +989,18 @@ data/temp_blockings/bbbike-temp-blockings.pl
 data/exits-orig
 data/exits
 data/multi_bez_str-orig
+data/berlin_ortsteile
+data/comments_route_img/README
+data/comments_route_img/BK-orig.gif
+data/comments_route_img/BK.gif
+data/comments_route_img/HVL-orig.gif
+data/comments_route_img/HVL.gif
+data/comments_route_img/ON-orig.gif
+data/comments_route_img/ON.gif
+data/comments_route_img/TB-orig.gif
+data/comments_route_img/TB.gif
+data/comments_route_img/UMR-orig.gif
+data/comments_route_img/UMR.gif
 ext/Strassen-Inline/.cvsignore
 ext/Strassen-Inline2/.cvsignore
 ext/StrassenNetz-CNetFile/.cvsignore
@@ -1154,6 +1166,7 @@ t/strassen-dbfile-btree.t
 t/strassen-dbfile.t
 t/strassen-edit.t
 t/strassen-gpsman.t
+t/strassen-gpx.t
 t/strassen-grepstreets.t
 t/strassen-grid.t
 t/strassen-iterate.t

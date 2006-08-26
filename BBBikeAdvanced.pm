@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.160 2006/08/20 20:50:49 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.161 2006/08/26 19:41:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1490,22 +1490,30 @@ sub advanced_coord_menu {
 	$bpcm->checkbutton(-label => M"pp für alle zukünftigen Layer",
 			   -variable => \$p_draw{'pp-all'});
     }
-    $bpcm->cascade(-label => M('Kurvenpunkte'));
+    $bpcm->cascade(-label => M('Kurvenpunkte/Kreuzungen'));
     {
-	my $csm = $bpcm->Menu(-title => M('Kurvenpunkte'));
+	my $csm = $bpcm->Menu(-title => M('Kurvenpunkte/Kreuzungen'));
 	$bpcm->entryconfigure('last', -menu => $csm);
-	my $coldef;
-	foreach $coldef ([M"rot", '#800000'],
-			 [M"grün", '#008000'],
-			) {
+	foreach my $coldef ([M"Kurvenpunkte rot", '#800000'],
+			    [M"Kurvenpunkte grün", '#008000'],
+			   ) {
 	    $csm->radiobutton(-label    => $coldef->[0],
-			      -variable => \$pp_color,
+			      -variable => \$pp_color->[0],
 			      -value    => $coldef->[1],
-			      -command  => sub {
-				  $c->itemconfigure('pp',
-						    -fill => $pp_color);
-			      },
+			      -command  => sub { pp_color() },
 			     );
+	}
+	if (0) { # not yet used
+	    $csm->separator;
+	    foreach my $coldef ([M"Kreuzungen blau", 'blue'],
+				[M"Kreuzungen schwarz", 'black'],
+			       ) {
+		$csm->radiobutton(-label    => $coldef->[0],
+				  -variable => \$pp_color->[1],
+				  -value    => $coldef->[1],
+				  -command  => sub { pp_color() },
+				 );
+	    }
 	}
     }
     $bpcm->checkbutton(-label => M"Präfix-Ausgabe",

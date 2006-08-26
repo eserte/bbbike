@@ -1,11 +1,14 @@
+#! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.126 2006/06/27 21:14:32 eserte Exp eserte $
+# $Id: Makefile.PL,v 1.127 2006/08/26 15:20:29 eserte Exp $
 
 use 5.005;
 
 BEGIN {
     $^W = 0;
 }
+
+use strict;
 
 use ExtUtils::MakeMaker;
 use ExtUtils::Manifest;
@@ -36,12 +39,13 @@ use constant REQTABLE_LONGDESC=> 5;
 
 use constant REQ_BBBIKE_TK      => 1; # mandatory for the Perl/Tk version
 use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
+use constant REQ_BBBIKE_WINDIST => 4; # for windows distribution (not yet!)
 # ... 4, 8, 16 ...
 
 # Table of prerequisites:
-# Name, Version, OS, Req/CoReq, description token, long description
-@req_table =
- ([qw/Tk		800.000	all	1	gui/,
+# Name, Version, OS, Req/CoReq (may contain "|"), description token, long description
+my @req_table =
+ ([qw/Tk		800.000	all	1|4	gui/,
    { de => 'das absolute Muss!',
      en => 'this one is really necessary!'
    }], # für Tk 402 sollte man bbbike 2.xx verwenden
@@ -65,7 +69,7 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
    'Für Icons mit besserer Alpha-Unterstützung'],
   [qw/Tk::NumEntry	2.06	all	0	gui/],
 
-  [qw/LWP::UserAgent	0	all	2	www/,
+  [qw/LWP::UserAgent	0	all	2|4	www/,
    'für die WWW-Verbindungen (z.B. Wetterbericht)'],
   [qw/Image::Magick	0	all	0	www/,
    'für Bildmanipulationen beim Radar-Bild der FU'],
@@ -82,28 +86,30 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
    'optional für UAProf parsing (alternative wäre XML::SAX::PurePerl)'],
   [qw/XML::LibXML	0	all	0	base/,
    'optional für das Parsen von GPX-Dateien'],
+  [qw/XML::Twig	0	all	4	base/,
+   'alternativ für das Parsen von GPX-Dateien'],
   [qw/YAML	0	all	2	cgi/,
    'optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings'],
 
   [qw/Mail::Mailer	1.53	unix	0	mail/,
    'falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will'],
   [qw/MIME::Lite	0	unix	2	mail/,
-   'Versenden von Benutzer-Kommentare im Webinterface'],
+   'Versenden von Benutzer-Kommentaren im Webinterface'],
 
-  [qw/String::Approx	2.7	all	2	base/,
+  [qw/String::Approx	2.7	all	2|4	base/,
    'oder man verwendet agrep (mindestens Version 3.0)'],
   [qw/String::Similarity 0	all	0	base/,
    'optional für den temp_blockings-Editor und ungenaue Suche in der Perl/Tk-Applikation'],
-  [qw/Storable		0	all	0	base/,
+  [qw/Storable		0	all	0|4	base/,
    'für das Caching beim CGI-Programm'],
-  [qw/MLDBM		0	all	0	base/],
+  [qw/MLDBM		0	all	0|4	base/],
   [qw/GD		1.18	all	2	base/,
    'zum On-the-fly-Erzeugen von Grafiken beim CGI-Programm'],
   [qw/Chart::ThreeD::Pie	0	all	0	base/,
    'Tortendiagramme in der Statistik'],
-  [qw/List::Permutor	0	all	0	base/,
+  [qw/List::Permutor	0	all	0|4	base/,
    'Für das Problem des Handlungsreisenden'],
-  [qw/PDF::Create	0.06	all	2	base/,
+  [qw/PDF::Create	0.06	all	2|4	base/,
    'Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)'],
   [qw/Font::Metrics::Helvetica	0	all	0	base/,
    'Für die Reparatur der Zeichenbreitentabellen in PDF::Create'],
@@ -111,15 +117,15 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
 
   [qw/BSD::Resource	0	unix	0	base/], # really only BSD
 
-  [qw/Win32::API	0	win	0	base/],
-  [qw/Win32::Registry	0	win	0	base/],
+  [qw/Win32::API	0	win	0|4	base/],
+  [qw/Win32::Registry	0	win	0|4	base/],
   [qw/Win32::DDE::Client 0	win	0	base/],
-  [qw/Win32::Shortcut	0	win	0	base/],
+  [qw/Win32::Shortcut	0	win	0|4	base/],
 
   [qw/Devel::Peek	0	all	0	devel/],
   [qw/Statistics::Descriptive	0	all	0	devel/],
   [qw/Math::MatrixReal	0	all	0	devel/],
-  [qw/Class::Accessor	0	all	2	base/,
+  [qw/Class::Accessor	0	all	2|4	base/,
    'für GPS::GpsmanData, die ESRI-Module etc.'],
   [qw/Template	0	all	2	devel/,
    'für BBBikeDraw::MapServer'],
@@ -141,7 +147,7 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
    'LogTracker plugin (mögliche Alternative ist Date::Calc)'],
   [qw/XBase		0	all	2	devel/,
    'Erzeugen der Mapserver- oder anderer ESRI-Dateien, notwendig für radzeit.de'],
-  [qw/IPC::Run		0	all	0	base/,
+  [qw/IPC::Run		0	all	0|4	base/,
    'hilft bei der sicheren Ausführung von externen Kommandos (insbesondere für Win32)'],
   [qw/Imager	0	all	0	devel/,
    'additional optional BBBikeDraw backend for PNG graphics'],
@@ -150,7 +156,7 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
   [qw/SVG	0	all	2	cgi/,
    'additional optional BBBikeDraw backend for SVG graphics'],
   # also: GD::SVG, but this module currently doesn't even pass tests!
-  [qw/Object::Iterate	0	all	2	base/,
+  [qw/Object::Iterate	0	all	2|4	base/,
    'Notwendig für die radzeit.de-Version (bbd2esri)'],
   [qw/Object::Realize::Later	0	all	0	base/,
    'Notwendig für Strassen::Lazy, selten benötigt'],
@@ -166,12 +172,14 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
    'Ebenfalls für das Parsen des ESRI-Shapefile-Formats'],
   [qw/DBD::mysql	0	all	0	base/,
    'Für den Zugriff auf die Hausnummerdatenbank'],
-  [qw/Tie::IxHash	0	all	0	base/,
+  [qw/Tie::IxHash	0	all	0|4	base/,
    'Damit Direktiven in Straßen-Daten geordnet bleiben'],
   [qw/CDB_File		0	all	0	base/,
    'Für die alternative A*-Optimierung in XS/C'],
   [qw/DB_File::Lock	0	all	0	base/,
    'Same DB_File operations, used in Strassen::Index'],
+  [qw/GPS::Garmin	0	all	4	base/,
+   'für GPS-Upload'],
 
   [qw/Image::Info	0	all	0	test/],
   [qw/Test::More	0	all	0	test/],
@@ -211,10 +219,13 @@ my(%prereq, @prereq);
     @prereq = @{$res[1]};
 }
 
-# call before maniread!
-exit make_bundle()       if $0 =~ /make_bundle/;
-exit make_small_bundle() if $0 =~ /make_small_bundle/;
+# Call before maniread:
+# Various bundles:
+exit make_bundle()         if $0 =~ /make_bundle/;
+exit make_small_bundle()   if $0 =~ /make_small_bundle/;
 exit make_radzeit_bundle() if $0 =~ /make_radzeit_bundle/;
+exit make_windist_bundle() if $0 =~ /make_windist_bundle/;
+# OSD descriptions (not really used):
 exit make_pi_osd('win')
     if $0 =~ /make_pi_osd/ && defined $ARGV[0] && $ARGV[0] eq 'win';
 exit make_pi_osd()       if $0 =~ /make_pi_osd/;
@@ -222,17 +233,20 @@ exit make_small_pi_osd('win')
     if $0 =~ /make_small_pi_osd/ && defined $ARGV[0] && $ARGV[0] eq 'win';
 exit make_small_pi_osd()      if $0 =~ /make_small_pi_osd/;
 
-$fileref = ExtUtils::Manifest::maniread();
-$exe_files = ['bbbike',
-	      'bbbikeapplet',
-	      'bbbikeclient',
-	      'cgi/bbbike.cgi',
-	      'cgi/runbbbikecgi',
-	      'cgi/httpi',
-	      'cgi/wapbbbike.cgi',
-	      'cmdbbbike',
-	      'smsbbbike',
-	      'cbbbike'];
+my $fileref = ExtUtils::Manifest::maniread();
+my $exe_files =
+    ['bbbike',
+     'bbbikeapplet',
+     'bbbikeclient',
+     'cgi/bbbike.cgi',
+     'cgi/runbbbikecgi',
+     'cgi/httpi',
+     'cgi/wapbbbike.cgi',
+     'cmdbbbike',
+     'smsbbbike',
+     'cbbbike',
+    ];
+my(%exe_files, %pm);
 foreach (@$exe_files) { $exe_files{$_}++ }
 while(my($k,$v) = each %$fileref) {
     next if $k =~ /\.bat$/;
@@ -245,6 +259,7 @@ sub build_prereq {
     my($os, $type) = @_;
     my(%prereq, @prereq);
     foreach (@req_table) {
+	$_->[REQTABLE_REQ] = eval $_->[REQTABLE_REQ]; # to resolve binary or: "|"
 	my(%for_os) = map { ($_, 1) } split ",", $_->[REQTABLE_OS];
 	if ($for_os{$os} || $for_os{"all"}) {
 	    if ($type != 0) {
@@ -267,6 +282,10 @@ sub make_small_bundle {
 
 sub make_radzeit_bundle {
     make_general_bundle(REQ_BBBIKE_RADZEIT, "BBBike_radzeit.pm");
+}
+
+sub make_windist_bundle {
+    make_general_bundle(REQ_BBBIKE_WINDIST, "BBBike_windist.pm");
 }
 
 sub make_general_bundle {
@@ -305,6 +324,7 @@ sub make_general_bundle {
 				   type => {0,                  "full",
 					    REQ_BBBIKE_TK,      "small",
 					    REQ_BBBIKE_RADZEIT, "radzeit",
+					    REQ_BBBIKE_WINDIST, "windist",
 					   }->{$type},
 				   file => $file,
 				   bundle_module => $bundle_module,
@@ -551,6 +571,7 @@ EOF
 
 
 sub MY::postamble {
+    use vars qw($bbbike_makefile_admin);
     $bbbike_makefile_admin = "";
     if (-e $admin_makefile) {
 	if (!do $admin_makefile) {

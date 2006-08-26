@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.39 2006/08/19 20:08:38 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.40 2006/08/26 21:58:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.39 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.40 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -34,7 +34,7 @@ use vars
      $dataset %str_obj %str_cache_attr %p_obj $net $no_make_net
      %str_file %p_file $koord %ampeln %hoehe %custom_net_str
      %sperre %sperre_tragen %sperre_narrowpassage $sperre_file $use_faehre
-     $do_activate_temp_blockings $show_active_temp_blockings
+     $do_activate_temp_blockings $show_active_temp_blockings $current_temp_blockings_ms
      $coord_system $coord_system_obj $scale_coeff $scale %scalecommand
      $default_img_fmt $register_window_adjust
      $ampel_count $kopfstein_count $ampel_count_button $kopfstein_count_button

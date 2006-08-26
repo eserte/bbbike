@@ -21,4 +21,5 @@ GetOptions("as=s" => \$as) or usage();
 
 my $file = shift || usage();
 my $s = Strassen->new($file);
-print $s->Strassen::GPX::bbd2gpx(-as => $as);
+my $s_gpx = Strassen::GPX->new($s);
+print $s_gpx->bbd2gpx(-as => $as);

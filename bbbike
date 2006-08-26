@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.251 2006/08/19 20:07:31 eserte Exp eserte $
+# $Id: bbbike,v 3.254 2006/08/26 21:57:16 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,12 +204,12 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.251 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.254 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
 $progname = basename($0);
-$devel_host = ($ENV{HOST} && $ENV{HOST} =~ /^(vran|cabulja|cvrsnica|spiff|devpc01)/i);
+$devel_host = ($ENV{HOST} && $ENV{HOST} =~ /^(vran|cabulja|cvrsnica|spiff|mom|devpc01)(\.|$)/i);
 $os =   $^O eq 'MSWin32' || $^O eq 'os2' || $^O eq 'dos' ? 'win'
       : $^O eq 'MacOS'				    	 ? 'mac'
       : 						   'unix';
@@ -558,7 +558,7 @@ handle_options();
 #mymstat("after getopt processing");
 ## DEBUG_END
 
-my $city_obj;
+use vars qw($city_obj);
 if (!defined $city && !defined $datadir) {
     $city = "Berlin";
     $country = "DE";
@@ -764,6 +764,10 @@ if (!defined $top) {
 	    $top->optionAdd("*$_.troughcolor", "grey95", "startupFile");
 	}
     }
+    # This is the list of widgets with some "action" area (editable or
+    # selectable). It seems that the consensus in the GUI world is to
+    # have this widgets in a brighter color (like Tix, Gtk, Windows...).
+    # Do it so.
     # Browse is for Tk::HistEntry::Browse
     for (qw(Browse Entry NumEntry Date*NumEntryPlain PathEntry
 	    Listbox KListbox K2Listbox
@@ -776,6 +780,7 @@ if (!defined $top) {
 	    $top->optionAdd("*$_.background", "grey95", "startupFile");
 	}
     }
+    # Introduce a www browser-like cursor feeling:
     for (qw(Button Checkbutton Radiobutton Menubutton
 	    FlatCheckbox FlatRadiobutton FireButton)) {
 	$top->optionAdd("*$_.cursor", "hand2", "startupFile");
@@ -1122,11 +1127,12 @@ $splash_screen->Update(0.1) if $splash_screen;
 $menuarrow_photo = load_photo($top, 'menupfeil.' . $default_img_fmt);
 
 my $col = 0;
-my $top_frame = $ctrl_frame->Frame->pack(-side => 'top', -anchor => 'w',
-					 -fill => 'x');
+use vars qw($top_frame);
+$top_frame = $ctrl_frame->Frame->pack(-side => 'top', -anchor => 'w',
+				      -fill => 'x');
 
-my($hslabel_frame, $km_frame, @speed_frame, $wind_frame,
-   @power_frame, $percent_frame, $temp_frame);
+use vars qw($hslabel_frame $km_frame @speed_frame $wind_frame
+            @power_frame $percent_frame $temp_frame);
 
 $top_frame->gridColumnconfigure(0, -weight => 1, -minsize => 50);
 for(1..10) {
@@ -3133,23 +3139,23 @@ sub do_iconframe {
 		  -state => "disabled",
 		  -font => $font{"bold"});
     foreach my $fmt (
-		     # vector oriented
-		     'PDF',
-		     'XFig',
-		     ($advanced ? ('SVG') : ()),
+		     # GPS
+		     ['GPX (Track)', 'GPX/track'],
+		     #['GPX (Route)', 'GPX/route'], # not yet, support not ready
+		     ['GPSMAN (Track)', 'GpsmanData'],
+		     ['G7toWin (ASCII)', 'G7toWin_ASCII'],
+		     ['Waypoint+ (Track)', 'WaypointPlus'],
+
 		     # map/gis
 		     'bbd (BBBike data)',
 		     ($advanced ? ('ESRI') : ()),
 		     # XXX not yet ready: ($devel_host ? ('OVL (TOP50)') : ()),
-		     # GPS
-		     ($advanced ?
-		      (
-		       # XXX not yet --- bbd2gpx only supports wpt based routes: 'GPX-Route',
-		       'GPX-Track',
-		      ) : ()),
-		     ['G7toWin (ASCII)', 'G7toWin_ASCII'],
-		     ['GPSMAN (Tracklog)', 'GpsmanData'],
-		     ['Waypoint+ (Track)', 'WaypointPlus'],
+
+		     # vector oriented
+		     'PDF',
+		     'XFig',
+		     ($advanced ? ('SVG') : ()),
+
 		     '-',
 		     'GPS direkt',
 		     [M('Route zu einem Garmin senden'), 'DirectGarmin'],
@@ -3201,12 +3207,10 @@ sub do_iconframe {
 		 }
 		);
 	} elsif ($fmt =~ /^bbd/) {
-	    if (-x "$FindBin::RealBin/miscsrc/bbr2bbd") {
-		$svm->command
-		    (-label => $fmt,
-		     -command => \&save_route_as_bbd
-		    );
-	    }
+	    $svm->command
+		(-label => $fmt,
+		 -command => \&save_route_as_bbd
+		);
 	} elsif ($fmt =~ /^esri/i) {
 	    if (-x "$FindBin::RealBin/miscsrc/bbd2esri" &&
 		-x "$FindBin::RealBin/miscsrc/bbr2bbd"
@@ -3216,21 +3220,19 @@ sub do_iconframe {
 		     -command => \&save_route_as_esri
 		    );
 	    }
-	} elsif ($fmt eq 'GPX-Route') {
+	} elsif ($fmt =~ m{^GPX/(.*)$}) {
+	    my $as = $1;
 	    $svm->command
 		(-label => $fmt,
-		 -command => sub { save_route_as_gpx(-as => "route") },
-		);
-	} elsif ($fmt eq 'GPX-Track') {
-	    $svm->command
-		(-label => $fmt,
-		 -command => sub { save_route_as_gpx(-as => "track") },
+		 -command => sub { save_route_as_gpx(-as => $as) },
 		);
 	} elsif (ref $fmt eq 'ARRAY') {
 	    $svm->command
 		(-label => "$fmt->[0]",
 		 -command => sub { gps_interface(@$fmt) },
 		);
+	} else {
+	    warn "XXX SHOULD NOT HAPPEN XXX";
 	}
     }
 
@@ -3511,21 +3513,7 @@ sub do_iconframe {
 
     $opbm->command
 	(-label => M"Daten-Update über das Internet",
-	 -command => sub {
-	     if ($devel_host && $ENV{HOST} !~ /^devpc01/) {
-		 status_message("Kein Update auf cabulja/vran/cvrsnica/spiff möglich!", "die");
-		 die;
-	     }
-	     require Tk::Dialog;
-	     if ($top->Dialog
-		 (-title => M"Update",
-		  -text => M("Soll das Update gestartet werden?\nJe nach Internet-Verbindung und Stand der Daten kann das Update 5 bis 10 Minuten dauern. Alternativ können die Dateien als ZIP-Datei von\n$BBBike::BBBIKE_UPDATE_DATA_CGI\ngeholt und in das Verzeichnis\n$FindBin::RealBin/data\nausgepackt werden.\n"),
-		  -bitmap => 'question',
-		  -buttons => [M"Ja", M"Nein"])->Show eq M"Ja") {
-		 require Update;
-		 Update::bbbike_data_update();
-	     }
-	 },
+	 -command => \&update_via_internet,
 	);
 
     $opbm->command(-label => M"Alarmliste",
@@ -3777,124 +3765,6 @@ sub do_iconframe {
     }
 
 } # do_iconframe
-
-sub telefonbuch_dialog {
-    my $type = shift;
-    require Telefonbuch;
-    my $get_coord = sub {
-	my($x, $y) = @_;
-	transpose($x, $y);
-    };
-    my $mark = sub {
-	my($x, $y, %args) = @_;
-	my $tcoords = [[]];
-	$tcoords->[0][0] = [ transpose($x, $y) ];
-	mark_point(-coords => $tcoords, %args,
-		   -clever_center => 1);
-    };
-    if ($type eq 'str') {
-	Telefonbuch::tk_str_dialog($top, $mark, $get_coord);
-    } else {
-	Telefonbuch::tk_tel_dialog($top, $mark, $get_coord);
-    }
-}
-
-# Berechnet das Layout des obersten Frames neu (z.B. bei einem Resize)
-sub arrange_topframe {
-    my(@order) = ($hslabel_frame, $km_frame, $speed_frame[0],
-		  $power_frame[0], $wind_frame, $percent_frame, $temp_frame,
-		  @speed_frame[1..$#speed_frame],
-		  @power_frame[1..$#power_frame],
-		 );
-    my(@col)   = (0, 1, 3, 4+$#speed_frame, 5+$#speed_frame+$#power_frame,
-		  2, 6+$#speed_frame+$#power_frame,
-		  4..3+$#speed_frame,
-		  5+$#speed_frame..4+$#speed_frame+$#power_frame);
-    $top->idletasks;
-    my $width = 0;
-    my(%gridslaves) = map {($_, 1)} $top_frame->gridSlaves;
-    for(my $i = 0; $i <= $#order; $i++) {
-	my $w = $order[$i];
-	next unless Tk::Exists($w);
-	my $col = $col[$i] || 0;
-	$width += $w->reqwidth;
-	if ($gridslaves{$w}) {
-	    $w->gridForget;
-	}
-	if ($width <= $top->width) {
-	    $w->grid(-row => 0,
-		     -column => $col,
-		     -sticky => 'nsew'); # XXX
-	}
-    }
-}
-
-# Berechnet das Layout des Symbol-Frames (das die Icons enthält) neu
-sub arrange_symframe {
-    my($old_row, $new_row);
-    return unless $misc_frame2 || $DockFrame eq 'DockFrame';
-    my $p = $misc_frame2->parent;
-    if (grep($_ eq $misc_frame2, $p->gridSlaves)) {
-	# already gridded
-	my %a = $misc_frame2->gridInfo;
-	$old_row = $a{-row};
-    } else {
-	# force computation of reqwidth
-	$misc_frame2->idletasks;
-    }
-    my $new_col;
-    my $is_two_row;
-    if ($misc_frame->reqwidth + $misc_frame2->reqwidth + 10
-	> $top->width) {
-	$new_row = 1;
-	$new_col = 0;
-	$is_two_row = 1;
-    } else {
-	$new_row = 0;
-	$new_col = 1;
-	$is_two_row = 0;
-    }
-    if (!defined $old_row || $old_row != $new_row) {
-	if (defined $old_row) {
-	    $misc_frame2->gridForget;
-	}
-	$misc_frame2->grid(-row => $new_row,
-			   -column => $new_col,
-			   -sticky => 'nsw');
-    }
-
-    # Maybe remove borders between two frames
-    if ($os eq 'unix' && $devel_host) { # not tested yet on Windows XXX
-	my $lf = $p->Subwidget("HideLeftBorder");
-	my $lc = $p->Subwidget("HideLeftCorner");
-	my $rf = $p->Subwidget("HideRightBorder");
-	if (!$is_two_row) {
-	    if (!Tk::Exists($rf)) {
-		$rf = $misc_frame->Frame(-bg => $misc_frame->cget(-bg));
-		$p->Advertise("HideRightBorder" => $rf);
-	    }
-	    if (!Tk::Exists($lf)) {
-		$lf = $misc_frame2->Frame(-bg => $misc_frame->cget(-bg));
-		$p->Advertise("HideLeftBorder" => $lf);
-	    }
-	    if (!Tk::Exists($lc)) {
-		$lc = $misc_frame2->Frame
-		    (-bd => 0, -bg => $misc_frame->Darken($misc_frame->cget(-bg), 60));
-		$p->Advertise("HideLeftCorner" => $lc);
-	    }
-	    $lf->place(-rely => 0, -relx => 0, -x => -1,
-		       -width => 1, -relheight => 1);
-	    $lc->place(-rely => 1, -relx => 0, -x => -1,
-		       -width => 1, -height => 1);
-	    $rf->place(-rely => 0, -relx => 1,
-		       -width => 1, -relheight => 1);
-	} else {
-	    for my $w ($rf, $lf, $lc) {
-		$w->placeForget if Tk::Exists($w) && $w->manager eq 'place';
-	    }
-	}
-    }
-}
 
 $splash_screen->Update(0.3) if $splash_screen;
 
@@ -4243,6 +4113,146 @@ MainLoop unless $ENV{BBBIKE_TEST_PERFORMANCE};
 
 ##### Subs ### RELOADER_START ############################################
 
+sub update_via_internet {
+    if ($devel_host && $ENV{HOST} !~ /^devpc01/) {
+	status_message("Kein Update auf cabulja/vran/cvrsnica/spiff möglich!", "die");
+	die;
+    }
+    my $Dialog = LongOrNormalDialog();
+    my $d = $top->$Dialog
+	(-title => M"Update",
+	 -text => M("Soll das Update gestartet werden?\nJe nach Internet-Verbindung und Stand der Daten kann das Update 5 bis 10 Minuten dauern. Alternativ können die Dateien als ZIP-Datei von\n$BBBike::BBBIKE_UPDATE_DATA_CGI\ngeholt und in das Verzeichnis\n$FindBin::RealBin/data\nausgepackt werden.\n"),
+	 -bitmap => 'question',
+	 -background => Tk::NORMAL_BG,
+	 -highlightbackground => Tk::NORMAL_BG,
+	 -buttons => [M"Ja", M"Nein"]);
+    if ($Dialog eq 'LongDialog') {
+	$d->configure(-height => 10);
+    }
+    if ($d->Show eq M"Ja") {
+	require Update;
+	Update::bbbike_data_update();
+    }
+}
+
+sub telefonbuch_dialog {
+    my $type = shift;
+    require Telefonbuch;
+    my $get_coord = sub {
+	my($x, $y) = @_;
+	transpose($x, $y);
+    };
+    my $mark = sub {
+	my($x, $y, %args) = @_;
+	my $tcoords = [[]];
+	$tcoords->[0][0] = [ transpose($x, $y) ];
+	mark_point(-coords => $tcoords, %args,
+		   -clever_center => 1);
+    };
+    if ($type eq 'str') {
+	Telefonbuch::tk_str_dialog($top, $mark, $get_coord);
+    } else {
+	Telefonbuch::tk_tel_dialog($top, $mark, $get_coord);
+    }
+}
+
+# Berechnet das Layout des obersten Frames neu (z.B. bei einem Resize)
+sub arrange_topframe {
+    my(@order) = ($hslabel_frame, $km_frame, $speed_frame[0],
+		  $power_frame[0], $wind_frame, $percent_frame, $temp_frame,
+		  @speed_frame[1..$#speed_frame],
+		  @power_frame[1..$#power_frame],
+		 );
+    my(@col)   = (0, 1, 3, 4+$#speed_frame, 5+$#speed_frame+$#power_frame,
+		  2, 6+$#speed_frame+$#power_frame,
+		  4..3+$#speed_frame,
+		  5+$#speed_frame..4+$#speed_frame+$#power_frame);
+    $top->idletasks;
+    my $width = 0;
+    my(%gridslaves) = map {($_, 1)} $top_frame->gridSlaves;
+    for(my $i = 0; $i <= $#order; $i++) {
+	my $w = $order[$i];
+	next unless Tk::Exists($w);
+	my $col = $col[$i] || 0;
+	$width += $w->reqwidth;
+	if ($gridslaves{$w}) {
+	    $w->gridForget;
+	}
+	if ($width <= $top->width) {
+	    $w->grid(-row => 0,
+		     -column => $col,
+		     -sticky => 'nsew'); # XXX
+	}
+    }
+}
+
+# Berechnet das Layout des Symbol-Frames (das die Icons enthält) neu
+sub arrange_symframe {
+    my($old_row, $new_row);
+    return unless $misc_frame2 || $DockFrame eq 'DockFrame';
+    my $p = $misc_frame2->parent;
+    if (grep($_ eq $misc_frame2, $p->gridSlaves)) {
+	# already gridded
+	my %a = $misc_frame2->gridInfo;
+	$old_row = $a{-row};
+    } else {
+	# force computation of reqwidth
+	$misc_frame2->idletasks;
+    }
+    my $new_col;
+    my $is_two_row;
+    if ($misc_frame->reqwidth + $misc_frame2->reqwidth + 10
+	> $top->width) {
+	$new_row = 1;
+	$new_col = 0;
+	$is_two_row = 1;
+    } else {
+	$new_row = 0;
+	$new_col = 1;
+	$is_two_row = 0;
+    }
+    if (!defined $old_row || $old_row != $new_row) {
+	if (defined $old_row) {
+	    $misc_frame2->gridForget;
+	}
+	$misc_frame2->grid(-row => $new_row,
+			   -column => $new_col,
+			   -sticky => 'nsw');
+    }
+
+    # Maybe remove borders between two frames
+    if ($os eq 'unix' && $devel_host) { # not tested yet on Windows XXX
+	my $lf = $p->Subwidget("HideLeftBorder");
+	my $lc = $p->Subwidget("HideLeftCorner");
+	my $rf = $p->Subwidget("HideRightBorder");
+	if (!$is_two_row) {
+	    if (!Tk::Exists($rf)) {
+		$rf = $misc_frame->Frame(-bg => $misc_frame->cget(-bg));
+		$p->Advertise("HideRightBorder" => $rf);
+	    }
+	    if (!Tk::Exists($lf)) {
+		$lf = $misc_frame2->Frame(-bg => $misc_frame->cget(-bg));
+		$p->Advertise("HideLeftBorder" => $lf);
+	    }
+	    if (!Tk::Exists($lc)) {
+		$lc = $misc_frame2->Frame
+		    (-bd => 0, -bg => $misc_frame->Darken($misc_frame->cget(-bg), 60));
+		$p->Advertise("HideLeftCorner" => $lc);
+	    }
+	    $lf->place(-rely => 0, -relx => 0, -x => -1,
+		       -width => 1, -relheight => 1);
+	    $lc->place(-rely => 1, -relx => 0, -x => -1,
+		       -width => 1, -height => 1);
+	    $rf->place(-rely => 0, -relx => 1,
+		       -width => 1, -relheight => 1);
+	} else {
+	    for my $w ($rf, $lf, $lc) {
+		$w->placeForget if Tk::Exists($w) && $w->manager eq 'place';
+	    }
+	}
+    }
+}
+
 sub handle_options {
     @opttable =
 	(M"Strecken/Punkte",
@@ -4531,7 +4541,7 @@ sub handle_options {
 	 ],
 	 ['nichttragen','!',0,
 	  label => M"Tragen strikt vermeiden", var => \$sperre{'tragen'}],
-	 ['tempblockings','!',0,
+	 ['tempblockings','!',1,
 	  label => M"Temporäre Sperrungen verwenden", var => \$do_activate_temp_blockings],
 	 ['ampeloptimierung','!',0,
 	  label => M"Ampeloptimierung verwenden", var => \$ampel_optimierung],
@@ -4976,7 +4986,7 @@ sub define_item_attribs {
 
 	 'RW1' => 'SlateBlue',	# siehe Radwege.pm
 	 'RW2' => '#00008b',   	# DarkBlue ist in der Win-Version undefiniert
-	 'RW3' => 'LightBlue',
+	 'RW3' => '#80e599',	# früher LightBlue, jetzt fast green, da fast kein Unterschied zwischen Suggestiv-/Radstreifen
 	 'RW4' => 'green',
 	 'RW5' => 'orange',
 	 'RW6' => 'yellow3',
@@ -5050,8 +5060,9 @@ sub define_item_attribs {
 	$category_font{$_} = $category_font{'P'};
     }
 
-    #$pp_color = '#008000';
-    $pp_color = '#800000'; # better constrast with rbahn, enough contrast with Bundesstraße, but worse with fragezeichen
+    #$pp_color = '#008000'; # worse contrast with rbahn, not good with Bundesstraße, but better with fragezeichen
+    # second element is color for real crossing
+    $pp_color = ['#800000', 'blue'];
 
     for my $nr (0, 1, 2) {
 	$category_color{'W' . $nr}      = $category_color{'W'};
@@ -5528,10 +5539,21 @@ sub generate_plot_functions {
 		    push @coordlist, $transpose->($xx, $yy);
 		    if ($p_draw{'pp'} && ($p_draw{"pp-$abk"}||$p_draw{"pp-all"})) {
 			my($x, $y) = @coordlist[$#coordlist-1 .. $#coordlist];
+			my $pp_cross_or_kurve_tag;
+## This is not correct and therefore not used.
+## The net should be plain without "gesperrt"/"oneway" bits.
+# 			if ($net && $net->{Net}) {
+# 			    if (scalar(keys(%{$net->{Net}{"$xx,$yy"}})) < 3) {
+# 				$pp_cross_or_kurve_tag = "ppkvp";
+# 			    } else {
+# 				$pp_cross_or_kurve_tag = "ppcrs";
+# 			    }
+# 			}
 			# keine Verwendung von _coord_as_string
 			$c->createLine
 			  ($x, $y, $x, $y,
-			   -tags => ['pp', "$xx,$yy", undef, "pp-$abk"],
+			   -tags => ['pp', "$xx,$yy", undef, "pp-$abk",
+				     ($pp_cross_or_kurve_tag ? $pp_cross_or_kurve_tag : ())],
 			  );
 		    }
 		}
@@ -6186,11 +6208,14 @@ sub set_bindings {
     # XXX Some bindings are here and in std_p_binding, which cause
     # problems as both function set the <Leave> binding
     # XXX route: no!
+    # XXX more missing, typically everything with a label is transparent
     foreach (qw(lsa-bg lsa-fg vf-bg vf-fg
 		s-label-bg s-label sBAB-label-bg sBAB-label
 		w-label-bg w-label f-label-bg f-label gBO-label-bg gBO-label
 		l-label-bg l-label
-		u-label b-label r-label show O)) {
+		u-label b-label r-label show O),
+	     (map { ("comm-$_-label", "comm-$_-label-bg") } @comments_types),
+	    ) {
 	std_transparent_binding($_);
     }
     # spezielle Bindings für Routen
@@ -6729,12 +6754,13 @@ sub draw_street_numbers {
     # the coloring is german specific
     my($c,$strname,$abk,$coordlist_ref) = @_;
     my $do_round = 0;
+    my $image;
     use constant SMALLER_TABLES => 0.7;
     # XXX handling of multiple street numbers? e.g. "F1, R1" or "B2/B5"?
     my($type,$nr) = Strasse::parse_street_type_nr($strname);
     # Extra routes in and outer Berlin:
     if (!defined $type && $city_obj && $city_obj->can("parse_street_type_nr")) {
-	($type, $nr, $do_round) = $city_obj->parse_street_type_nr($strname);
+	($type, $nr, $do_round, $image) = $city_obj->parse_street_type_nr($strname);
     }
     if (defined $type) {
 	my $dist = 0;
@@ -6742,70 +6768,76 @@ sub draw_street_numbers {
 	my $draw_sub = sub {
 	    my $coord_i = shift;
 	    my($midx,$midy) = Strassen::Util::middle(@{$coordlist_ref}[$coord_i..$coord_i+3]);
-	    my $item = $c->createText
-		($midx,$midy,
-		 -text => ($type =~ /^(B|BAB)$/ ? "" : $type) . $nr,
-		 -font => $scale < SMALLER_TABLES ? $font{'tiny'} : $font{'normal'},
-		 -fill => ($do_round          ? 'white'  :
-			   $type eq 'BAB'     ? 'white'  :
-			   $type =~ /^(F|R)$/ ? 'green4' :
-			                        'black'),
-		 -tags => "$abk-label");
-	    my(@bbox) = $c->bbox($item);
-	    my $r_item;
-	    if ($do_round) {
-		$r_item = $c->createOval
-		    ($bbox[0]-2,$bbox[1]-2,$bbox[2]+2,$bbox[3]+2,
-		     -fill => '#90d090',
-		     -outline => 'black',
-		     -width => 1,
-		     -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
-		    );
-	    } elsif ($devel_host && $type eq 'B') {
-		# XXX make public if it works well (size ok for non-X11-Fonts?)
-		my $size = $scale < SMALLER_TABLES ? 16 : 32;
-		my $p = get_image("strnr_B$size", "bundesstrasse_table_$size.png"); # prefer png because of alpha
-		if ($p) {
-		    # Manually corrected (-1/-1) to look with my standard font
-		    # (lucida sans ...)
-		    $r_item = $c->createImage(int(($bbox[2]+$bbox[0])/2) - ($size > 16 ? 1 : 0),
-					      int(($bbox[3]+$bbox[1])/2) - ($size > 16 ? 1 : 0),
-					      -image => $p,
-					      -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
-					     );
-		} else {
-		    # XXX fallback to createRectangle below
-		    warn "Cannot get image for strnr_B32";
-		}
-	    } elsif ($devel_host && $type eq 'BAB') {
-		# XXX make public if it works well (size ok for non-X11-Fonts?)
-		my $size = $scale < SMALLER_TABLES ? 16 : 32;
-		my $p = get_image("strnr_BAB$size", "bab_table_$size.png"); # prefer png because of alpha
-		if ($p) {
-		    # Manually corrected (-1/-1) to look with my standard font
-		    # (lucida sans ...)
-		    $r_item = $c->createImage(int(($bbox[2]+$bbox[0])/2) - ($size > 16 ? 1 : 0),
-					      int(($bbox[3]+$bbox[1])/2) - ($size > 16 ? 1 : 0),
-					      -image => $p,
-					      -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
-					     );
-		} else {
-		    # XXX fallback to createRectangle below
-		    warn "Cannot get image for strnr_BAB32";
-		}
+	    if ($devel_host && defined $image && (my $p = get_image("strnr_$type", $datadir."/comments_route_img/$image"))) {
+		$c->createImage
+		    ($midx,$midy,-image => $p,
+		     -tags => "$abk-label"); # no strnr (only for images) and strnr-$item here
 	    } else {
-		$r_item = $c->createRectangle
-		    ($bbox[0]-2,$bbox[1]-2,$bbox[2]+2,$bbox[3]+2,
-		     -fill => ($type eq 'B' ? 'yellow' :
-			       ($type eq 'BAB' ? 'blue' :
-				'white')),
-		     -outline => ($type eq 'BAB' ? 'white' :
-				  ($type =~ /^(F|R)$/ ? 'green4' : 'black')),
-		     -width => 2,
-		     -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
-		    );
+		my($item, $r_item);
+		$item = $c->createText
+		    ($midx,$midy,
+		     -text => ($type =~ /^(B|BAB)$/ ? "" : $type) . $nr,
+		     -font => $scale < SMALLER_TABLES ? $font{'tiny'} : $font{'normal'},
+		     -fill => ($do_round          ? 'white'  :
+			       $type eq 'BAB'     ? 'white'  :
+			       $type =~ /^(F|R)$/ ? 'green4' :
+			       'black'),
+		     -tags => "$abk-label"); # no strnr (only for images) and strnr-$item here
+		my(@bbox) = $c->bbox($item);
+		if ($do_round) {
+		    $r_item = $c->createOval
+			($bbox[0]-2,$bbox[1]-2,$bbox[2]+2,$bbox[3]+2,
+			 -fill => '#90d090',
+			 -outline => 'black',
+			 -width => 1,
+			 -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
+			);
+		} elsif ($devel_host && $type eq 'B') {
+		    # XXX make public if it works well (size ok for non-X11-Fonts?)
+		    my $size = $scale < SMALLER_TABLES ? 16 : 32;
+		    my $p = get_image("strnr_B$size", "bundesstrasse_table_$size.png");	# prefer png because of alpha
+		    if ($p) {
+			# Manually corrected (-1/-1) to look with my standard font
+			# (lucida sans ...)
+			$r_item = $c->createImage(int(($bbox[2]+$bbox[0])/2) - ($size > 16 ? 1 : 0),
+						  int(($bbox[3]+$bbox[1])/2) - ($size > 16 ? 1 : 0),
+						  -image => $p,
+						  -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
+						 );
+		    } else {
+			# XXX fallback to createRectangle below
+			warn "Cannot get image for strnr_B32";
+		    }
+		} elsif ($devel_host && $type eq 'BAB') {
+		    # XXX make public if it works well (size ok for non-X11-Fonts?)
+		    my $size = $scale < SMALLER_TABLES ? 16 : 32;
+		    my $p = get_image("strnr_BAB$size", "bab_table_$size.png");	# prefer png because of alpha
+		    if ($p) {
+			# Manually corrected (-1/-1) to look with my standard font
+			# (lucida sans ...)
+			$r_item = $c->createImage(int(($bbox[2]+$bbox[0])/2) - ($size > 16 ? 1 : 0),
+						  int(($bbox[3]+$bbox[1])/2) - ($size > 16 ? 1 : 0),
+						  -image => $p,
+						  -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
+						 );
+		    } else {
+			# XXX fallback to createRectangle below
+			warn "Cannot get image for strnr_BAB32";
+		    }
+		} else {
+		    $r_item = $c->createRectangle
+			($bbox[0]-2,$bbox[1]-2,$bbox[2]+2,$bbox[3]+2,
+			 -fill => ($type eq 'B' ? 'yellow' :
+				   ($type eq 'BAB' ? 'blue' :
+				    'white')),
+			 -outline => ($type eq 'BAB' ? 'white' :
+				      ($type =~ /^(F|R)$/ ? 'green4' : 'black')),
+			 -width => 2,
+			 -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
+			);
+		}
+		$c->raise($item,$r_item);
 	    }
-	    $c->raise($item,$r_item);
 	    $dist = 0;
 	    $drawn++;
 	};
@@ -8329,11 +8361,23 @@ sub load_save_route {
 
 ### AutoLoad Sub
 sub save_route_as_bbd {
+    require Route;
+    require Route::Heavy;
     my $file = $top->getSaveFile(-defaultextension => '.bbd');
     return unless defined $file;
     my $tmpfile = "$tmpdir/bbbike-$<-$$.bbr";
     load_save_route(1, $tmpfile);
-    system("$FindBin::RealBin/miscsrc/bbr2bbd", $tmpfile, $file);
+    my $s = Route::as_strassen($tmpfile,
+			       name => "Route",
+			       cat => "X",
+			       fuzzy => 0,
+			      );
+    if (!$s) {
+	status_message("Fataler Fehler: $tmpfile lässt sich nicht konvertieren", "die");
+    }
+    
+    $s->write($file);
+
     unlink $tmpfile;
 }
 
@@ -8363,14 +8407,22 @@ sub save_route_as_gpx {
     if (!eval { require Strassen::GPX; 1 }) {
 	guess_perlmod_install_advice($@);
     } else {
+	require Route;
+	require Route::Heavy;
 	my $file = $top->getSaveFile(-defaultextension => '.gpx');
 	return unless defined $file;
 	my $tmpfile = "$tmpdir/bbbike-$<-$$.bbr";
-	my $tmp2file = "$tmpdir/bbbike-$<-$$.bbd";
 	load_save_route(1, $tmpfile);
-	system("$FindBin::RealBin/miscsrc/bbr2bbd", $tmpfile, $tmp2file);
-	my $s = Strassen->new($tmp2file);
-	my $out = $s->Strassen::GPX::bbd2gpx(%args);
+	my $s = Route::as_strassen($tmpfile,
+				   name => "Route",
+				   cat => "X",
+				   fuzzy => 0,
+				  );
+	if (!$s) {
+	    status_message("Fataler Fehler: $tmpfile lässt sich nicht konvertieren", "die");
+	}
+	my $s_gpx = Strassen::GPX->new($s);
+	my $out = $s_gpx->bbd2gpx(%args);
 
 	open(FH, "> $file") or status_message("Can't write to $file: $!", "die");
 	binmode FH;
@@ -8378,7 +8430,6 @@ sub save_route_as_gpx {
 	close FH;
 
 	unlink $tmpfile;
-	unlink $tmp2file;
     }
 }
 
@@ -8897,8 +8948,8 @@ if ($str->pos != scalar @{$str->{Data}}) { status_message("warning: " . $str->po
 	$c->itemconfigure('pp',
 			  -capstyle => $capstyle_round,
 			  -width => 5,
-			  -fill => $pp_color,
 			 );
+	pp_color();
 	if ($layer_active_color{$abk}) {
 	    $c->itemconfigure($abk, -activefill => $layer_active_color{$abk});
 	}
@@ -9369,15 +9420,10 @@ sub activate_temp_blockings {
 	    return;
 	}
 	my $ms = MultiStrassen->new(@s);
+	$current_temp_blockings_ms = $ms;
 	warn "Aktive temporäre Sperrungen: " . join(", ", $ms->dependent_files) . "\n" if $verbose;
 	make_net() if !$net;
-	$net->make_sperre($ms, Type => "all");
-	$temporary_handicap_s = Strassen->new_copy_restricted($ms, -callback => sub { $_[0]->[Strassen::CAT] =~ /^q\d/ });
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$temporary_handicap_s],[])->Indent(1)->Useqq(1)->Dump; # XXX
-	if ($handicap_s_net) {
-	    undef $handicap_s_net;
-	    make_handicap_net();
-	}
+	add_temp_blockings_to_net($ms);
 	plot("p", "temp_sperre", -object => $ms, -draw => 1);
 	plot("str", "temp_sperre_s", -object => $ms, -draw => 1);
     };
@@ -9386,6 +9432,19 @@ require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . 
 	status_message($@, "warn"); # do not die, may be called before mainloop
     } else {
 	$show_active_temp_blockings = 1;
+    }
+}
+
+sub add_temp_blockings_to_net {
+    my($ms) = @_;
+    $net->make_sperre($ms, Type => "all");
+    $temporary_handicap_s = Strassen->new_copy_restricted($ms, -callback => sub { $_[0]->[Strassen::CAT] =~ /^q\d/ });
+    if ($devel_host) {
+	require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$temporary_handicap_s],[])->Indent(1)->Useqq(1)->Dump; # XXX some debugging code left...
+    }
+    if ($handicap_s_net) {
+	undef $handicap_s_net;
+	make_handicap_net();
     }
 }
 
@@ -11679,9 +11738,12 @@ sub find_below_rx {
 }
 
 # Doc pending XXX
+# tag list imcomplete, should be roughly the same like in set_bindings XXX
 sub show_below_str {
     my($c) = @_;
-    my($item, @tags) = find_below($c, qw/s l u b r f w/);
+    my($item, @tags) = find_below($c,
+				  (qw/s sBAB l u b r f w/, (map { "comm-$_" } @comments_types)),
+				 );
     return if !defined $item;
     $act_value{Strasse} = $tags[1];
     $str_label->configure(-fg => 'black');
@@ -15619,6 +15681,7 @@ sub make_net {
     undef $steigung_net;
 
     eval {
+	my $add_temp_blockings;
 	my(@net_source, @net_source_abk);
 	if ($net_type eq "r") {
 	    if (!$str_obj{'r'}) {
@@ -15703,6 +15766,10 @@ sub make_net {
 		    push @net_source,     $str;
 		    push @net_source_abk, $str_type;
 		}
+	    }
+
+	    if ($show_active_temp_blockings && $current_temp_blockings_ms) {
+		$add_temp_blockings = 1;
 	    }
 	}
 
@@ -15795,6 +15862,10 @@ sub make_net {
 	    }
 	} else {
 	    $make_net_all->();
+	}
+
+	if ($add_temp_blockings) {
+	    add_temp_blockings_to_net($current_temp_blockings_ms);
 	}
 
 	if ($verbose) {
@@ -16697,15 +16768,10 @@ sub status_message {
 		## (still!) two-seconds hang
 		#$status_message_dialog->configure(%args);
 		$status_message_dialog->destroy;
-	    }# else {
-		my $Dialog = "Dialog";
-		if (eval { require Tk::LongDialog; 1 }) {
-		    $Dialog = "LongDialog";
-		} else {
-		    require Tk::Dialog;
-		}
-		$status_message_dialog = $top->$Dialog(%args);
-	    #}
+	    }
+
+	    my $Dialog = LongOrNormalDialog();
+	    $status_message_dialog = $top->$Dialog(%args);
 	    $status_message_dialog->Show;
 	}
     }
@@ -16713,6 +16779,16 @@ sub status_message {
 	require Carp;
 	Carp::confess($msg);
     }
+}
+
+sub LongOrNormalDialog {
+    my $Dialog = "Dialog";
+    if (eval { require Tk::LongDialog; 1 }) {
+	$Dialog = "LongDialog";
+    } else {
+	require Tk::Dialog;
+    }
+    $Dialog;
 }
 
 sub set_status_button {
@@ -18232,8 +18308,18 @@ sub optedit {
 	}
 	return;
     }
+
+    # Hack for small screens. Should be a better solution in
+    # Tk::Getopt. Unfortunately there's even no -font option
+    # in Tk::Getopt, so try to use a option db hack.
+    if ($top->screenwidth <= 11024) {
+	my $font = $top->screenwidth <= 800 ? $font{small} : $font{reduced};
+	$top->optionAdd("*bbbikeOptionEditor*font" => $font);
+    }
+
     $opt_edit =	$opt->option_editor
 	($top,
+	 Name => "bbbikeOptionEditor", # lowercase beginning!
 	 ($transient ? (-transient => $top) : ()),
 	 (!defined $ENV{LANG} || $ENV{LANG} =~ /^de/ ?
 	  (-string => {optedit => "Optionseditor",
@@ -18583,6 +18669,21 @@ sub get_image_for_p {
 	};
     }
     $p;
+}
+
+sub pp_color {
+    if (ref $pp_color eq 'ARRAY') {
+	$c->itemconfigure('ppkvp',
+			  -fill => $pp_color->[0]);
+## 2nd not yet used:
+# 	$c->itemconfigure('ppcrs',
+# 			  -fill => $pp_color->[1]);
+	$c->itemconfigure('ppcrs',
+			  -fill => $pp_color->[0]);
+    } else {
+	$c->itemconfigure('pp',
+			  -fill => $pp_color);
+    }
 }
 
 ## DEBUG_BEGIN

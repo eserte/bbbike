@@ -31,13 +31,13 @@ XML::Parser	- optional für UAProf parsing (alternative wäre XML::SAX::PurePerl)
 
 YAML	- optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings
 
-Mail::Send	- falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will
+MIME::Lite	- Versenden von Benutzer-Kommentaren im Webinterface
 
 String::Approx 2.7	- oder man verwendet agrep (mindestens Version 3.0)
 
 GD 1.18	- zum On-the-fly-Erzeugen von Grafiken beim CGI-Programm
 
-PDF::Create 0.06	- Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download)
+PDF::Create 0.06	- Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)
 
 Class::Accessor	- für GPS::GpsmanData, die ESRI-Module etc.
 
@@ -50,6 +50,8 @@ XBase	- Erzeugen der Mapserver- oder anderer ESRI-Dateien, notwendig für radzeit
 SVG	- additional optional BBBikeDraw backend for SVG graphics
 
 Object::Iterate	- Notwendig für die radzeit.de-Version (bbd2esri)
+
+Archive::Zip	- Zum Zippen der BBBike-Daten in bbbike-data.cgi
 
 WWW::Mechanize	- Für Testen des CGI-Interfaces
 

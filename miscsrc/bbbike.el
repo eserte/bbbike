@@ -46,6 +46,24 @@
       )
     ))
 
+(defun bbbike-join-street ()
+  (interactive)
+  (error "NYI")
+  ;; are we on the last coord of the line?
+  ;;   is there a next line, and non-comment? no -> error message
+  ;;   is the first coord of the next line the same? no -> error message
+  ;;   is the category of the next line the same? no -> ask user which to use
+  ;;   is the name of the next line the same? no -> ask user which to use
+  ;;   delete name, cat and first coord of next line, join lines, maybe replace name and/or cat
+  ;;   ready!
+  ;; are we on the first coord of the line? no -> error message
+  ;;   is there a prev line, and non-comment? no -> error message
+  ;;   is the last coord of the prev line the same? no -> error message
+  ;;   is the category/name of the prev line the same? see above
+  ;;   delete name, cat and first coord of this line, join lines, maybe replace name and/or cat
+  ;;   ready!
+)
+
 (defun bbbike-search-x-selection ()
   (interactive)
   (let* ((sel (x-selection))
@@ -124,6 +142,8 @@
     (define-key map "\C-c\C-t" 'bbbike-toggle-tabular-view)
     (define-key map "\C-c\C-c" 'comment-region)
     (define-key map "\C-c|"    'bbbike-split-street)
+    (define-key map "\C-c\C-j" 'bbbike-join-street)
+    (define-key map "\C-cj"    'bbbike-join-street)
     (setq bbbike-mode-map map)))
 
 (defvar bbbike-syntax-table nil "Syntax table for BBBike bbd mode.")
@@ -151,7 +171,7 @@
 	  ("^\\(#.*\\)" (1 font-lock-comment-face))                 ;; comments
 	  ("^\\([^\t\n]+\\)" (1 font-lock-constant-face))           ;; name
 	  ("^[^#][^\t\n:]+: \\([^\t\n]+\\)" (1 font-lock-string-face t)) ;; colon separated part of name
-	  ("\t\\([^ \n]+\\)" (1 font-lock-keyword-face))            ;; category
+	  ("\t\\([^ \n]+ \\)" (1 font-lock-keyword-face))            ;; category
 	  ("\\([-+]?[0-9]+,[-+]?[0-9]+\\)" (1 font-lock-type-face)) ;; coords
 	  ))
   (make-local-variable 'comment-use-syntax)

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Update.pm,v 1.23 2006/06/21 19:30:43 eserte Exp $
+# $Id: Update.pm,v 1.24 2006/08/26 21:59:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2003,2005,2006 Slaven Rezic. All rights reserved.
@@ -306,6 +306,13 @@ sub bbbike_data_update {
 	if ($rootdir =~ m|/home/e/eserte/src/bbbike|);
     $my_die->("FATAL: RCS in datadir detected")
 	if (-e "$rootdir/data/RCS");
+
+    if (!-w "$rootdir/data") {
+	main::status_message("Auf das Datenverzeichnis <$rootdir/data> darf nicht geschrieben werden.\n" .
+			     "Versuchen Sie die Update-Funktion als root oder System-Administrator.",
+			     "error");
+	return;
+    }
 
  TRY_CVS: {
 	if (-e "$rootdir/data/CVS") {

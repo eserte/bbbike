@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.108 2006/08/20 18:56:11 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.109 2006/08/26 21:58:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -4246,8 +4246,8 @@ sub add_cross_road_blockings {
 	$c->itemconfigure('pp',
 			  -capstyle => $main::capstyle_round,
 			  -width => 5,
-			  -fill => $main::pp_color,
 			 );
+	main::pp_color();
     }
 }
 

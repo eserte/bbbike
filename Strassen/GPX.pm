@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GPX.pm,v 1.4 2005/12/31 17:03:14 eserte Exp $
+# $Id: GPX.pm,v 1.7 2006/08/26 15:34:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,11 +16,32 @@ package Strassen::GPX;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Core;
 
-use XML::LibXML;
+use vars qw($use_xml_module);
+
+BEGIN {
+    my @errs;
+    if (!eval {
+	require XML::LibXML;
+	$use_xml_module = "XML::LibXML";
+	1;
+    }) {
+	push @errs, $@;
+	if (!eval {
+	    require XML::Twig;
+	    $use_xml_module = "XML::Twig";
+	    1;
+	}) {
+	    push @errs, $@;
+	    die "No XML::LibXML or XML::Twig installed: @errs";
+	} else {
+	    die "XML::Twig fallback not yet programmed, you need XML::LibXML";
+	}
+    }
+}
 
 use Karte::Polar;
 use Karte::Standard;
@@ -28,34 +49,53 @@ use Karte::Standard;
 @ISA = 'Strassen';
 
 sub new {
-    my($class, $filename, %args) = @_;
-    my $self = {};
-    bless $self, $class;
+    my($class, $filename_or_object, %args) = @_;
+    if (UNIVERSAL::isa($filename_or_object, "Strassen")) {
+	bless $filename_or_object, $class;
+    } else {
+	my $self = {};
+	bless $self, $class;
 
-    if ($filename) {
-	$self->gpx2bbd($filename);
+	if ($filename_or_object) {
+	    $self->gpx2bbd($filename_or_object);
+	}
+
+	$self;
     }
-
-    $self;
 }
 
+######################################################################
+# GPX to BBD
+#
 sub gpx2bbd {
     my($self, $file) = @_;
     
-    my $p = XML::LibXML->new;
-    my $doc = $p->parse_file($file);
-    $self->_gpx2bbd($doc);
+    if ($use_xml_module eq 'XML::LibXML') {
+	my $p = XML::LibXML->new;
+	my $doc = $p->parse_file($file);
+	$self->_gpx2bbd_libxml($doc);
+    } else {
+	my $twig = XML::Twig->new;
+	$twig->parsefile($file);
+	$self->_gpx2bbd_twig($twig);
+    }
 }
 
 sub gpxdata2bbd {
     my($self, $data) = @_;
 
-    my $p = XML::LibXML->new;
-    my $doc = $p->parse_string($data);
-    $self->_gpx2bbd($doc);
+    if ($use_xml_module eq 'XML::LibXML') {
+	my $p = XML::LibXML->new;
+	my $doc = $p->parse_string($data);
+	$self->_gpx2bbd_libxml($doc);
+    } else {
+	my $twig = XML::Twig->new;
+	$twig->parse($data);
+	$self->_gpx2bbd_twig($twig);
+    }
 }
 
-sub _gpx2bbd {
+sub _gpx2bbd_libxml {
     my($self, $doc) = @_;
 
     my $root = $doc->documentElement;
@@ -93,24 +133,59 @@ sub _gpx2bbd {
     }
 }
 
-sub latlong2xy {
-    my($node) = @_;
-    my $lat = $node->findvalue(q{./@lat});
-    my $lon = $node->findvalue(q{./@lon});
-    my($x, $y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon, $lat));
-    ($x, $y);
+sub _gpx2bbd_twig {
+    my($self, $twig) = @_;
+
+    my($root) = $twig->children;
+    for my $wpt_or_trk ($root->children) {
+	if ($wpt_or_trk->name eq 'wpt') {
+	    my $wpt = $wpt_or_trk;
+	    my($x, $y) = latlong2xy_twig($wpt);
+	    my $name = "";
+	    for my $name_node ($wpt->children) {
+		next if $name_node->name ne "name";
+		$name = $name_node->children_text;
+		last;
+	    }
+	    $self->push([$name, ["$x,$y"], "X"]);
+	} elsif ($wpt_or_trk->name eq 'trk') {
+	    my $trk = $wpt_or_trk;
+	    my $name;
+	    for my $trk_child ($trk->children) {
+		if ($trk_child->name eq 'name') {
+		    $name = $trk_child->children_text;
+		} elsif ($trk_child->name eq 'trkseg') {
+		    my @c;
+		    for my $trkpt ($trk_child->children) {
+			next if $trkpt->name ne 'trkpt';
+			my($x, $y) = latlong2xy_twig($trkpt);
+			push @c, "$x,$y";
+		    }
+		    $self->push([$name, [@c], "X"]);
+		}
+	    }
+	}
+    }
 }
 
-sub xy2longlat {
-    my($c) = @_;
-    my($lon, $lat) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $c));
-    ($lon, $lat);
-}
-
+######################################################################
+# BBD to GPX
+#
 sub bbd2gpx {
     my($self, %args) = @_;
-    require XML::LibXML;
-    require Encode;
+    if ($use_xml_module eq 'XML::LibXML') {
+	$self->_bbd2gpx_libxml(%args);
+    } else {
+	$self->_bbd2gpx_twig(%args);
+    }
+}
+
+sub _bbd2gpx_libxml {
+    my($self, %args) = @_;
+    my $has_encode = eval { require Encode; 1 };
+    if (!$has_encode) {
+	warn "WARN: No Encode.pm module available, non-ascii characters could be broken...";
+    }
     $self->init;
     my @wpt;
     my @trkseg;
@@ -118,13 +193,13 @@ sub bbd2gpx {
 	my $r = $self->next;
 	last if !@{ $r->[Strassen::COORDS] };
 	if (@{ $r->[Strassen::COORDS] } == 1) {
-	    push @wpt, { name => Encode::decode("iso-8859-1", $r->[Strassen::NAME]),
+	    push @wpt, { name => $has_encode ? Encode::decode("iso-8859-1", $r->[Strassen::NAME]) : $r->[Strassen::NAME],
 			 coords => [ xy2longlat($r->[Strassen::COORDS][0]) ],
 		       };
 	} else {
 	    push @trkseg,
 		{
-		 name => Encode::decode("iso-8859-1", $r->[Strassen::NAME]),
+		 name => $has_encode ? Encode::decode("iso-8859-1", $r->[Strassen::NAME]) : $r->[Strassen::NAME],
 		 coords => [ map { [ xy2longlat($_) ] } @{ $r->[Strassen::COORDS] } ],
 		};
 	}
@@ -134,7 +209,7 @@ sub bbd2gpx {
     my $gpx = $dom->createElement("gpx");
     $dom->setDocumentElement($gpx);
     $gpx->setAttribute("version", "1.1");
-    $gpx->setAttribute("creator", "Strassen::GPX $VERSION - http://www.bbbike.de");
+    $gpx->setAttribute("creator", "Strassen::GPX $VERSION (XML::LibXML $XML::LibXML::VERSION) - http://www.bbbike.de");
     $gpx->setNamespace("http://www.w3.org/2001/XMLSchema-instance","xsi");
     $gpx->setNamespace("http://www.topografix.com/GPX/1/1");
     $gpx->setAttribute("xsi:schemaLocation", "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd");
@@ -156,12 +231,7 @@ sub bbd2gpx {
 	}
 	if (@trkseg) {
 	    my $trkxml = $gpx->addNewChild(undef, "trk");
-	    my $name_from = $trkseg[0]->{name};
-	    my $name_to   = $trkseg[-1]->{name};
-	    my $name = $name_from;
-	    if ($name_from ne $name_to) {
-		$name .= " - $name_to";
-	    }
+	    my $name = make_name_from_trkseg(\@trkseg);
 	    $trkxml->appendTextChild("name", $name);
 	    for my $trkseg (@trkseg) {
 		my $trksegxml = $trkxml->addNewChild(undef, "trkseg");
@@ -173,7 +243,122 @@ sub bbd2gpx {
 	    }
 	}
     }
-    Encode::encode("utf-8", $dom->toString);
+    if ($has_encode) {
+	Encode::encode("utf-8", $dom->toString);
+    } else {
+	$dom->toString;
+    }
+}
+
+sub _bbd2gpx_twig {
+    my($self, %args) = @_;
+    $self->init;
+    my @wpt;
+    my @trkseg;
+    while(1) {
+	my $r = $self->next;
+	last if !@{ $r->[Strassen::COORDS] };
+	if (@{ $r->[Strassen::COORDS] } == 1) {
+	    push @wpt, { name => $r->[Strassen::NAME],
+			 coords => [ xy2longlat($r->[Strassen::COORDS][0]) ],
+		       };
+	} else {
+	    push @trkseg,
+		{
+		 name => $r->[Strassen::NAME],
+		 coords => [ map { [ xy2longlat($_) ] } @{ $r->[Strassen::COORDS] } ],
+		};
+	}
+    }
+
+    my $twig = XML::Twig->new;
+    my $gpx = XML::Twig::Elt->new(gpx => { version => "1.1",
+					   creator => "Strassen::GPX $VERSION (XML::Twig $XML::Twig::VERSION) - http://www.bbbike.de",
+					   "xsi:schemaLocation" => "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd",
+					 },
+				  #$gpx->setNamespace("http://www.w3.org/2001/XMLSchema-instance","xsi");
+				  #$gpx->setNamespace("http://www.topografix.com/GPX/1/1");
+				 );
+    $twig->set_root($gpx);
+
+    if ($args{-as} && $args{-as} eq 'route') {
+	my $rtexml = XML::Twig::Elt->new("rte");
+	$rtexml->paste(last_child => $gpx);
+	for my $wpt (@wpt) {
+	    my $rteptxml = XML::Twig::Elt->new("rtept", {lat => $wpt->{coords}[1],
+							 lon => $wpt->{coords}[0],
+							},
+					      );
+	    $rteptxml->paste(last_child => $rtexml);
+	    my $namexml = XML::Twig::Elt->new("name", undef, $wpt->{name});
+	    $namexml->paste(last_child => $rteptxml);
+	}
+    } else {
+	for my $wpt (@wpt) {
+	    my $wptxml = XML::Twig::Elt->new("wpt", {lat => $wpt->{coords}[1],
+						     lon => $wpt->{coords}[0],
+						    },
+					    );
+	    $wptxml->paste(last_child => $gpx);
+	    my $namexml = XML::Twig::Elt->new("name", {}, $wpt->{name});
+	    $namexml->paste(last_child => $wptxml);
+	}
+	if (@trkseg) {
+	    my $trkxml = XML::Twig::Elt->new("trk");
+	    $trkxml->paste(last_child => $gpx);
+	    my $name = make_name_from_trkseg(\@trkseg);
+	    my $namexml = XML::Twig::Elt->new("name", {}, $name);
+	    $namexml->paste(last_child => $trkxml);
+	    for my $trkseg (@trkseg) {
+		my $trksegxml = XML::Twig::Elt->new("trkseg");
+		$trksegxml->paste(last_child => $trkxml);
+		for my $wpt (@{ $trkseg->{coords} }) {
+		    my $trkptxml = XML::Twig::Elt->new("trkpt", { lat => $wpt->[1],
+								  lon => $wpt->[0],
+								});
+		    $trkptxml->paste(last_child => $trksegxml);
+		}
+	    }
+	}
+    }
+    $twig->sprint;
+}
+
+######################################################################
+# Helpers
+
+sub latlong2xy {
+    my($node) = @_;
+    my $lat = $node->findvalue(q{./@lat});
+    my $lon = $node->findvalue(q{./@lon});
+    my($x, $y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon, $lat));
+    ($x, $y);
+}
+
+sub latlong2xy_twig {
+    my($node) = @_;
+    my $lat = $node->att("lat");
+    my $lon = $node->att("lon");
+    my($x, $y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon, $lat));
+    ($x, $y);
+}
+
+sub xy2longlat {
+    my($c) = @_;
+    my($lon, $lat) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $c));
+    ($lon, $lat);
+}
+
+sub make_name_from_trkseg {
+    my($trkseg_ref) = @_;
+
+    my $name_from = $trkseg_ref->[0]->{name};
+    my $name_to   = $trkseg_ref->[-1]->{name};
+    my $name = $name_from;
+    if ($name_from ne $name_to) {
+	$name .= " - $name_to";
+    }
+    $name;
 }
 
 1;

@@ -2,15 +2,30 @@
 
 package [% bundle_module %];
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 1;
 
 __END__
-
+[%
+    SWITCH type;
+        CASE "full";
+            SET shortname = "all";
+        CASE "small";
+	    SET shortname = "only mandatory";
+	CASE "radzeit";
+	    SET shortname = "radzeit";
+	CASE "windist";
+	    SET shortname = "windows distribution";
+	CASE "";
+	    SET shortname = "! missing setting type in Template call in Makefile.PL !";
+	CASE;
+	    SET shortname = "! missing shortname !";
+    END;
+%]
 =head1 NAME
 
-Bundle::BBBike - A bundle to install [% IF type == "full" %]all[% ELSIF type == "small" %]only mandatory[% ELSE %]radzeit[% END %] dependencies of BBBike
+Bundle::BBBike - A bundle to install [% shortname %] dependencies of BBBike
 
 =head1 SYNOPSIS
 
@@ -35,8 +50,10 @@ fE<uuml>r BBBike auf.
 This bundle lists only mandatory perl modules for BBBike.
 [% ELSIF type == "radzeit" -%]
 Module für die Installation auf radzeit.de.
+[% ELSIF type == "windist" -%]
+Module für die binäre Windows-Distribution.
 [% ELSE -%]
-!!! Description missing for bundle type [% type %] !!!
+!!! Description missing for bundle type [% type %]. Please edit Bundle/BBBike.tpl.pm !!!
 [% END -%]
 
 =head1 AUTHOR

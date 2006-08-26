@@ -10,16 +10,17 @@ Legend:
 
   Priority from 1 (unimportant) to 5 (very important).
 
+  * (star): showstopper for next release
+
 =head1 Perl/Tk version of bbbike
 
 =over
 
-=item * (M5)
+=item * (H5)
 
-Bug: drawing city streets only -> choosing "Aktive Sperrungen zeichnen und
-beachten" -> drawing also region streets -> now the "Aktive Sperrungen" are
-lost! They have to re-build if the checkbox is set to on and make_net is
-called on something street-like
+Stacked tooltips: letzte Probleme (zu spätes Aktualisieren der Anzeige
+beim <Motion>, cyclepath im Edit-Mode wird falsch angezeigt) beheben
+und dann veröffentlichen.
 
 =item * (H2)
 
@@ -30,7 +31,8 @@ category_* directives in bbd files have side effects: the global
 
 There's no (easy) way to draw only outlined polygons from custom bbd
 files. (Maybe it can be done with category_stipple.cat:
-Tk/trans_cur.xbm and some outline directive?)
+Tk/trans_cur.xbm and some outline directive?) (Frage: wo wird so etwas
+benötigt?)
 
 =item * (H2)
 
@@ -46,8 +48,8 @@ Straßennummerierungsschilder (+ Font) werden nicht korrekt gezoomt.
 
 =item * (H5)
 
-Die Optimierungsparameter des CGIs (textuell) in die Tk-Version
-sollten verwendet werden können. Plan: Geschwindigkeitsbasierte
+Die Optimierungsparameter des CGIs (textuell) sollten in der
+Tk-Version verwendet werden können. Plan: Geschwindigkeitsbasierte
 Parameter und die E<quot>textuellenE<quot> Parameter werden getrennt
 (entweder eins oder das andere); die Faktoren werden vom CGI
 übernommen. Vor dem Aufrufen der Suche muss entweder das eine oder
@@ -62,27 +64,10 @@ Tests machen, ob bei beiden das gleiche herauskommt.
 Konverter vom E<quot>TouratechE<quot>-Format nach bbd schreiben. Beispieldatei:
 http://www.arur.de/fileadmin/reisenotizen/reisenotizen_roland/images/berlin-ffo/bl-ffo.xml
 
-=item * (H2)
-
-Daten direkt von einer Postgres/Mysql-Datenbank auslesen und
-darstellen (Strassen::Pg weiterschreiben, Strassen::Mysql neu
-schreiben, oder sogar Strassen::DBI?).
-
-=item * (M2)
-
-Replace all dialogs with longdialog (maybe) through a common
-subroutine. Either re-use dialogs or destroy them after usage.
-
 =item * (M2)
 
 Create nice anti-aliased and alpha-using PNG images and use it if
 possible for icons/symbols etc.
-
-=item * (H2)
-
-Logos für Radfernwege verwenden, z.B.
-L<http://www.bike-berlin-copenhagen.com/images_menu/logo_priser.gif>
-oder L<http://www.bike-berlin-copenhagen.com/images_menu/logo.gif>.
 
 =item * (H5)
 
@@ -101,7 +86,7 @@ zusätzlich angezeigt werden.
 
 insert/delete etc. functionality: add an easy way to use custom layers
 
-=item * (M3)
+=item * (M4)
 
 Show more fields in route list (just like in web interface)
 
@@ -111,10 +96,11 @@ Edit mode, coloring of pp points: use different coloring for
 E<quot>KurvenpunkteE<quot> and crossings, to easier detect errors in
 the street net.
 
-=item * (M4)
-
-Edit mode: automatically put path into selection after drawing, so
-E<quot>Path to selectionE<quot> does not need to be clicked every time
+The beginnings are made (see pp_color, tags ppkvp and ppcrs etc.), but
+one thing is missing: I need a net like $net->{Net}, but without
+gesperrt/oneway modifications... It would also be good to have that
+net for *all* layers. A simple solution would bei not too hard to
+implement, but time- and memory-consuming.
 
 =item * (M4)
 
@@ -123,15 +109,13 @@ Edit mode: if route searching is active and E<quot>insert pointE<quot>
 middle point is broken (off by pixels, and in float). So warn the user
 in this situation to switch route searching off.
 
+(NB: Is this really the case? It does not seem to be the search mode,
+but another problem...)
+
 =item * (M3)
 
 Bugreport von Andreas Mühlhausen: BS/Del funktioniert nicht zum
 Löschen von Punkten aus der Selection im Edit-Modus unter Windows.
-
-=item * (M3)
-
-Bugreport von Andreas Mühlhausen: Sehenswürdigkeiten werden auch im
-Normalmodus mit einem grünen Punkt gezeichnet (unter Windows).
 
 =item * (M3)
 
@@ -149,13 +133,6 @@ effect. Maybe it would be nice to support at least some of them
 
 Overview-Map: always segfaults under Win98
 
-=item * (H4)
-
-Option editor does not fit into 800x600 screen --- using scrollable
-pane? (it even does not fit into a 1024x768 screen on windows). Maybe
-for a first workaround use a smaller font for smaller screens/on
-windows?
-
 =item * (H1)
 
 Unterstützung für E<quot>Persönliche WegeE<quot> (oder
@@ -169,12 +146,7 @@ eigene Layer, add custom und custom existiert für das Suchnetz
 
 =item * (H3)
 
-Ich sollte GPX als Ein/Ausgabeformat unterstützen:
-L<http://www.topografix.com/gpx_resources.asp>. Eingabe geht bereits.
-
-=item * (H3)
-
-Neue Symbole für Steigungen verwenden:
+Neue Symbole (basierend auf E<quot>>E<quot>) für Steigungen verwenden:
 
  > (gepunktet): 1-3%
  > (solid): 3-7%
@@ -247,9 +219,10 @@ Research for alternative SRTProgress implementation: pre-forked
 stand-alone MainWindow, or submit a TIP with a per-widget update (in
 Perl/Tk: updateWidget) method.
 
-=item * (H5)
+=item * (H3)
 
-The -lazy option seems to cause a big memory leak.
+The -lazy option seems to cause a big memory leak. Unless this is
+solved for sure there should be no standard-user-visible -lazy option.
 
 =item * (H2)
 
@@ -314,9 +287,10 @@ Dateien, nicht nur .bbd (auch .gif oder .coords.data oder ...)
 
 Update-Prozess: falls unter /usr/* installiert, hat der normale User
 normalerweise keine Rechte auf das Installieren. Erkennen und
-hinweisen, z.B. BBBike als root starten (sudo/super). Oder
-su/sudo/super für die Dauer der Installation verwenden. Oder in ein
-privates Verzeichnis installieren und dieses bevorzugt verwenden.
+hinweisen, z.B. BBBike als root starten (sudo/super) -> getan, aber
+noch nicht getestet. Nice to have: su/sudo/super für die Dauer der
+Installation verwenden. Oder in ein privates Verzeichnis installieren
+und dieses bevorzugt verwenden.
 
 =item * (H1)
 
@@ -389,11 +363,11 @@ wird z.Zt. nicht gedreht (evtl. auf @coords verzichten und nur
 
 VernE<uuml>nftige Options-Eingabe in der GUI. Zwischen
 Startup-Optionen (Zeichnen der StraE<szlig>en/Punkte) und aktuellen
-Optionen unterscheiden. Damit zusammen hängt eine Neubearbeitung von
-Tk::Getopt (Tk::NoNotebook, Klick auf
-Checkboxen etc. resultieren *NICHT* in einer sofortigen Aenderungen
---- erst nach E<quot>OkE<quot>, besseren Msgcat-Support (eigene Module
-dafür?)).
+Optionen unterscheiden (teilweise wird das schon gemacht, siehe
+E<quot>Layers at StarttimeE<quot>). Damit zusammen hängt eine
+Neubearbeitung von Tk::Getopt (Tk::NoNotebook, Klick auf Checkboxen
+etc. resultieren *NICHT* in einer sofortigen Aenderungen --- erst nach
+E<quot>OkE<quot>, besseren Msgcat-Support (eigene Module dafür?)).
 
 =item * (M1)
 
@@ -408,22 +382,20 @@ in den set-coord-mode geht, cursor aendert, das tk-getopt-fenster
 withdraw-t, und darauf wartet, dass der benutzer auf die karte klickt
 oder E<quot>cancelE<quot> drückt.
 
-=item * (M1)
-
-Bei Tix sind Eingabe-Widgets und Listboxen in einem helleren Farbton.
-Auch bei BBBike konsequent umsetzen (systematisch alle Fenster
-durchgehen).
-
 =item * (M2)
 
 Evtl für BBBike-Canvas und E<Uuml>bersichtskarte: Maus ziehen zum
 Einstellen eines Ausschnitts. Das Rechteck, das beim Ziehen erzeugt
 wird, muss natuerlich den Aspect des Hauptfensters beibehalten.
 
+<Motion> ist bei der Übersichtskarte schon belegt. Trotzdem
+umdefinieren? Oder nur die Ecken des Rechtecks zum Ziehen verwenden?
+
 =item * (M2)
 
-Edit-Modus: Cursor aendern. Die Checkbox E<quot>Vias einblendenE<quot>
-ausschalten (und spaeter wieder restaurieren).
+Beim Canvas: <B1-Motion> statt <B2-Motion> zum Pannen der Karte
+verwenden? Gibt es Nachteile, weil <B1> belegt ist und Fehler
+passieren können? Soll man es konfigurierbar machen?
 
 =item * (H4)
 
@@ -1449,7 +1421,7 @@ Bezirkspressearchive (weitere in doc/watchsites.pod):
 =item Mitte:
 L<http://www.berlin.de/ba-mitte/index_23_hr.html>
 
-Von September 2005 bis 2006-08-24 bearbeitet (aber zwei Wochen im Juni 2006
+Von Oktober 2004 bis 2006-08-24 bearbeitet (aber zwei Wochen im Juni 2006
 fehlen komplett).
 
 =item Pankow:
@@ -2392,6 +2364,12 @@ opposite to PDF::Create).
 =head2 Strassen and Strassen-related
 
 =over
+
+=item * (H2)
+
+Daten direkt von einer Postgres/Mysql-Datenbank auslesen und
+darstellen (Strassen::Pg weiterschreiben, Strassen::Mysql neu
+schreiben, oder sogar Strassen::DBI?).
 
 =item * (M3)
 

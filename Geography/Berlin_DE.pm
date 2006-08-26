@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlin_DE.pm,v 1.23 2006/01/28 21:43:49 eserte Exp $
+# $Id: Berlin_DE.pm,v 1.24 2006/08/26 21:54:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2006 Slaven Rezic. All rights reserved.
@@ -186,23 +186,35 @@ sub parse_street_type_nr {
     my($self, $strname) = @_;
     my $type;
     my $do_round;
+    my $image;
     if ($strname =~ /berlin\s*-\s*usedom/i) {
 	$type = 'BU';
     } elsif ($strname =~ /berlin\s*-\s*kopenhagen/i) {
 	$type = 'BK';
+	$image = "BK.gif";
     } elsif ($strname =~ /mauer.*weg/i) {
 	$type = 'M';
     } elsif ($strname =~ /havellandradweg/i) {
 	$type = 'HVL';
+	$image = 'HVL.gif';
     } elsif ($strname =~ /spreeradweg/i) {
 	$type = 'S';
     } elsif ($strname =~ /hofjagdweg/i) {
 	$type = 'H';
+    } elsif ($strname =~ /uckerm.*rkischer\s+.*rundweg/i) {
+	$type = 'UMR';
+	$image = 'UMR.gif';
+    } elsif ($strname =~ /tour.*brandenburg/i) {
+	$type = 'TB';
+	$image = 'TB.gif';
+    } elsif ($strname =~ /oder.*nei(?:ss|ß)e/i) {
+	$type = 'ON';
+	$image = 'ON.gif';
     }
     if (defined $type) {
 	$do_round = 1;
     }
-    ($type, undef, $do_round);
+    ($type, undef, $do_round, $image);
 }
 
 1;
