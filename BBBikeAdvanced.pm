@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.162 2006/08/27 20:11:00 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.162 2006/08/27 20:11:00 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -3921,6 +3921,7 @@ sub module_exists {
 
 # Very nice. Only the ->Track behaviour is somewhat problematic...
 # maybe teach track to look at overlapping items, too?
+#XX bug, see: otto-ostrowski-str over working image
 sub balloon_info_from_all_tags {
     my($c) = @_;
     my $e = $c->XEvent;

@@ -622,14 +622,7 @@ userdel	q4::inwork 39715,101866 39574,101863
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1156629600,
-         'text' => 'L 063 Berliner Str. OL Lauchhammer, Hˆhe Bahn¸bergang Neugestaltung SG‹ Vollsperrung 05.08.2006-26.08.2006 ',
-         'from' => 1154642400,
-         'data' => 'userdel	2::temp 35482,-103562 35379,-103141 35072,-102150
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1157839200,
          'text' => 'L 074 Kehrigk-M‰rkisch Buchholz OD M‰rkisch Buchholz, Friedrichstr. Straﬂenbau Vollsperrung 01.08.2006-09.09.2006 ',
