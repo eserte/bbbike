@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: old_comments.t,v 1.9 2005/10/11 07:29:05 eserte Exp $
+# $Id: old_comments.t,v 1.10 2006/08/27 21:14:01 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -49,7 +49,7 @@ if (!GetOptions("cgiurl=s" => sub {
 		"firstindex=i" => \$firstindex,
 		"v+" => \$v,
 	       )) {
-    die "usage!";
+    die "usage: $0 [-cgiurl url] [-firstindex index] [-v]";
 }
 
 if (!@urls) {
@@ -91,13 +91,14 @@ EOF
 - ~
 EOF
 
-	     # Belziger Str.
-	     # XXX Reordered first hash, because otherwise YAML 0.39 would fail!
-	     ["7315,9156", "6977,8934", <<EOF, "CS (Route)"],
-- mäßiges Kopfsteinpflaster (Teilstrecke): 1
-  'RR1 (Schloßplatz - Wannsee)': 1
-- ~
-EOF
+## cannot use because of YAML bug in 0.62, rt bug number will follow...
+# 	     # Belziger Str.
+# 	     # XXX Reordered first hash, because otherwise YAML 0.39 would fail!
+# 	     ["7315,9156", "6977,8934", <<EOF, "CS (Route)"],
+# - 'RR1 (Schloßplatz - Wannsee)': 1
+#   'mäßiges, teilweise holpriges Kopfsteinpflaster (Teilstrecke)': 1
+# - ~
+# EOF
 
 	     # Rathenauplatz
 	     [qw(2392,9715 2379,9665), <<EOF, "CP2; am Startpunkt"],
@@ -170,11 +171,10 @@ for my $cgiurl (@urls) {
 	    }
 	} @{$got->{Route}} ];
 	is_deeply($comments, YAML::Load("--- #YAML:1.0\n$expected"), $desc) or do {
-	    if ($v >= 2) {
+	    if ($v) {
 		diag Dumper $got;
-	    } elsif ($v) {
-		diag YAML::Dump($comments);
 	    }
+	    diag YAML::Dump($comments);
 	};
     }
 }

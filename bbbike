@@ -5061,8 +5061,9 @@ sub define_item_attribs {
     }
 
     #$pp_color = '#008000'; # worse contrast with rbahn, not good with Bundesstraﬂe, but better with fragezeichen
-    # second element is color for real crossing
-    $pp_color = ['#800000', 'blue'];
+    # second element is color for real crossing, but not yet activated
+    #$pp_color = ['#800000', 'blue'];
+    $pp_color = '#800000';
 
     for my $nr (0, 1, 2) {
 	$category_color{'W' . $nr}      = $category_color{'W'};

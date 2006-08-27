@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.28 2006/06/17 08:01:55 eserte Exp $
+# $Id: bbbikerouting.t,v 1.29 2006/08/27 21:16:14 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -243,26 +243,31 @@ sub do_tests {
 	ok($routing->RouteInfo->[-1]->{Whole} > $routing->RouteInfo->[-2]->{Whole}, "Distance Ok");
     }
 
+ XXX:
+
     {
+	my $crossing1 = "tempelhofer ufer/großbeeren";
+	my $crossing2 = "tempelhofer ufer/möckern";
+
 	my $routing2 = BBBikeRouting->new;
 	$routing2->init_context;
 	_my_init_context($routing2->Context);
-	$routing2->Start->Street("Kolonnenstr/Naumannstr");
-	$routing2->Goal->Street("Hauptstr/Eisenacher");
+	$routing2->Start->Street($crossing1);
+	$routing2->Goal->Street($crossing2);
 	$routing2->search;
-	ok(scalar @{ $routing2->RouteInfo } > 1, "Non-empty route info");
-	is((grep { $_->{Street} =~ /kaiser.*wilhelm/i } @{$routing2->RouteInfo}),
-	   0, "Obeying one-way streets");
+	ok(scalar @{ $routing2->RouteInfo } > 0, "Non-empty route info");
+	is((grep { $_->{Street} =~ /hallesches.*ufer/i } @{$routing2->RouteInfo}),
+	   1, "Obeying one-way streets");
 
 	# Swapping start and goal:
 	$routing2->Start->reset;
 	$routing2->Goal->reset;
-	$routing2->Start->Street("Hauptstr/Eisenacher");
-	$routing2->Goal->Street("Kolonnenstr/Naumannstr");
+	$routing2->Start->Street($crossing2);
+	$routing2->Goal->Street($crossing1);
 	$routing2->search;
-	ok(scalar @{ $routing2->RouteInfo } > 1, "Non-empty route info");
-	is((grep { $_->{Street} =~ /kaiser.*wilhelm/i } @{$routing2->RouteInfo}),
-	   1, "One-way in the right direction");
+	ok(scalar @{ $routing2->RouteInfo } > 0, "Non-empty route info");
+	is((grep { $_->{Street} =~ /hallesches.*ufer/i } @{$routing2->RouteInfo}),
+	   0, "One-way in the right direction");
 
 	# completely blocked streets
 	$routing2->Start->reset;
@@ -428,8 +433,6 @@ sub do_tests {
 	ok($routing2->Path && scalar @{ $routing2->Path } > 0,
 	   "Non-empty path");
     }
-
- XXX:
 
     {
 	my $routing2 = BBBikeRouting->new;

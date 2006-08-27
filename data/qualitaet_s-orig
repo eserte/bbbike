@@ -1,5 +1,5 @@
 #: title: Qualit‰t von Straﬂen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.155 2006/08/25 21:31:32 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.157 2006/08/27 20:13:32 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Br¸cken, Straﬂen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -269,7 +269,7 @@ Mannheimer Str. (Wilmersdorf): Kopfsteinpflaster, (enge) Gehwege sind f¸r Radfah
 Mannheimer Str. (Wilmersdorf): Kopfsteinpflaster	Q2 4456,8703 4456,8584
 Thulestr.: Kopfsteinpflaster	Q2 11645,16616 11278,16609 11042,16605
 #: note: ADFC-Karte sagt hier: m‰ﬂig geeignet
-Granitzstr.: Asphalt	Q0 10859,17854 10907,17884 11264,18154 11500,18335 11606,18416 11812,18484 11950,18529
+Granitzstr.: Asphalt	Q0 10859,17854 10907,17884 11264,18154 11500,18335 11581,18398 11606,18416 11698,18446 11796,18482 11950,18529
 #: note: ADFC-Karte, Joern (js) widerspricht nicht:
 Stargardtstr.: gut geeignet	Q0 7043,17667 7237,17729 7487,17836
 Windscheidstr.: Kopfsteinpflaster, OK	Q1 3283,11097 3344,10878
@@ -1456,6 +1456,11 @@ Mˆthlower Str.: Sand	Q2 -7664,15601 -7457,15704
 Straﬂe 270: Kopfsteinpflaster mit Sandbanketten	Q2 -5870,10847 -5035,11007
 Straﬂe 270: Feldweg, im westlichen Teil nur zweispurig	Q2 -5035,11007 -4832,11047
 #: by: ^^^
+#: XXX zumindest der s¸dliche Teil, laut ADFC-Karte die gesamte Straﬂe:
+Bergstr.: Kopfsteinpflaster	Q2 -7344,12854 -7303,13248 -7263,13347
+Hahnebergweg: asphaltiert/betoniert	Q0 -6861,12478 -7294,12560
+Hahnebergweg: Schotter	Q2 -7294,12560 -7375,12577 -7606,12624
+(Heerstr. - Fort Hahneberg): Schotter	Q2 -7344,12795 -7375,12577
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -1607,7 +1612,7 @@ Sellinstr.: m‰ﬂiger Asphalt	Q1 11192,17920 11217,17783
 Riedemannweg: Asphalt	Q0 4248,15647 4389,15336
 #: add_fragezeichen: Kopfsteinpflaster oder Asphalt?
 #: note: widerspr¸chliche Angaben!
-Haﬂfurter Weg: m‰ﬂiger Asphalt	Q1 11847,18338 11812,18484
+Haﬂfurter Weg: m‰ﬂiger Asphalt	Q1 11835,18301 11796,18482
 Erlenweg: m‰ﬂiger Asphalt	Q1 -3327,18007 -3228,18103
 #: by: Ingmar Camphausen [AM]
 Aspenweg: Asphalt	Q0 -3288,17831 -3244,17883 -3224,17943 -3203,18014 -3168,18051 -3111,18105 -3050,18164 -3020,18188 -3000,18192 -2956,18203 -2900,18214
@@ -1707,7 +1712,7 @@ Wriezener Str.: Kopfsteinpflaster	Q2 9210,16638 9317,16882 9384,17028
 Habsburgerstr.: Asphalt	Q0 6922,9825 6914,9916 6905,10049
 Kyffh‰userstr.: Asphalt	Q0 6862,9542 6891,9678 6922,9825
 #: by: Holger
-Defreggerstr.: Asphalt	Q0 14795,8737 14681,8859 14580,8972
+Defreggerstr.: Asphalt	Q0 14795,8737 14676,8852 14567,8966
 #: by: Gertraud Stuhlmacher
 Thomasiusstr.: Asphalt	Q0 6678,12770 6757,13112
 #: by: J¸rgen Voigt
@@ -3110,7 +3115,7 @@ Ludwig-Renn-Str.: Asphalt	Q0 20479,16155 20504,16204 20567,16320 20750,16226 208
 Weverstr.: m‰ﬂiger Asphalt	Q1 -4154,12379 -4065,12382 -3978,12385 -3867,12388 -3760,12392 -3617,12396 -3441,12402 -3257,12407
 #: by: Jenny Pospieszny: vvv
 Buggenhagenstr.: m‰ﬂiger Beton	Q2 14425,13780 14378,13599
-Karlstadter Str.: m‰ﬂiger Asphalt	Q1 11500,18335 11598,18169 11656,18013
+Karlstadter Str.: m‰ﬂiger Asphalt	Q1 11500,18335 11579,18184 11656,18013
 #: by: ^^^
 #: by: christoph (stauden):
 Utrechter Str.: Kopfsteinpflaster	Q2 7043,15793 7196,15964 7279,16057 7491,16072
@@ -3280,7 +3285,7 @@ Ahrenshooper Str.: Beton	Q0 16764,18529 17082,18068
 Ahrenshooper Str.: Beton	Q0 16905,17949 17082,18068 17215,18153
 #: by: ^^^
 #: by: Tobias Kant:
-Wollankstr.: Kopfsteinpflaster	Q2 9624,17693 9727,17804 9832,17925 9870,17971 10004,18133 10089,18180
+Wollankstr.: Kopfsteinpflaster	Q2 9624,17693 9663,17734 9727,17804 9832,17925 9870,17971 10004,18133 10089,18180
 #: by: Kleinke (honda):
 Havelstr.: Asphalt	Q0 -3132,14607 -3122,14557 -3037,14509
 #: by: Karl Schlicke:
@@ -3719,7 +3724,7 @@ Waldpark Steinberg: gut befahrbar, eigene Radspur, fester Sand	Q1 3979,21211 371
 Rosentreterpromenade: sehr grobes Kopfsteinpflaster, der Fuﬂweg ist etwas besser befahrbar	Q2 4423,20848 4208,21159
 #: by: ^^^
 #: by: Nicole Knaup:
-Rethelstr.: guter Asphalt	Q0 14739,8919 14681,8859 14619,8794
+Rethelstr.: guter Asphalt	Q0 14739,8919 14676,8852 14619,8794
 #: by: Karin Ziebell:
 Holzmindener Str.: guter Asphalt	Q0 12205,5545 12256,5591 12490,5680 12632,5684 12702,5553 12773,5248
 #: by: Siegfried Heiber
@@ -4987,6 +4992,7 @@ Memlingstr.: sehr schlechtes Kopfsteinpflaster	Q3 4134,3825 4275,3652
 #: by: ^^^
 #: by: Chantal [AM] vvv
 Rettigweg: schlechtes Kopfsteinpflaster	Q2 9828,17659 9760,17612 9706,17570
+Pradelstr.: m‰ﬂiger Asphalt	Q2 9760,17612 9663,17734
 Friedrich-List-Ufer: sehr guter Asphalt	Q0 8110,13042 8098,13419
 #: by: ^^^
 #: by: anonymous [AM]
@@ -5021,3 +5027,10 @@ Falkenhausenweg: Asphalt	Q0 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 79
 Berner Str.: Kopfsteinpflaster	Q3 3025,2847 3015,2606 3012,2473 3009,2429 3006,2384 3003,2339 3000,2232 2995,2123
 #: by: Christian:
 Benfelder Str.: Asphalt	Q1 14484,16035 14520,15937
+#: by: Michael Braun [AM] vvv
+Retzbacher Weg: Kopfsteinpflaster	Q2 11581,18398 11665,18237 11729,18026 11785,17729
+Dettelbacher Weg: Kopfsteinpflaster	Q2 11698,18446 11750,18273 11820,18043
+Zeiler Weg: Kopfsteinpflaster	Q2 11495,18129 11579,18184 11665,18237 11750,18273 11835,18301 11914,18303
+#: by: ^^^
+#: by: axel bindrich [AM]
+Stuckstr.: Asphalt	Q2 14446,8983 14525,8894 14619,8794

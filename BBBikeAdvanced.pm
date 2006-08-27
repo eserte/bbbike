@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.161 2006/08/26 19:41:54 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.162 2006/08/27 20:11:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1498,12 +1498,12 @@ sub advanced_coord_menu {
 			    [M"Kurvenpunkte grün", '#008000'],
 			   ) {
 	    $csm->radiobutton(-label    => $coldef->[0],
-			      -variable => \$pp_color->[0],
+			      -variable => ref $pp_color ? \$pp_color->[0] : \$pp_color,
 			      -value    => $coldef->[1],
 			      -command  => sub { pp_color() },
 			     );
 	}
-	if (0) { # not yet used
+	if (0 && ref $pp_color) { # not yet used
 	    $csm->separator;
 	    foreach my $coldef ([M"Kreuzungen blau", 'blue'],
 				[M"Kreuzungen schwarz", 'black'],
@@ -2135,6 +2135,14 @@ sub change_poly_points {
     # XXX NYI
 }
 
+sub change_points_maybe_reload {
+    change_points(@_);
+    $BBBikeEdit::auto_reload = $BBBikeEdit::auto_reload if 0; # peacify -w
+    if ($BBBikeEdit::auto_reload) {
+	reload_all();
+    }
+}
+
 sub find_canvas_item_file {
     my $ev = $_[0]->XEvent;
     my($X,$Y) = ($ev->X, $ev->Y);
@@ -2192,7 +2200,7 @@ sub find_canvas_item_file {
 
 sub advanced_bindings {
     $top->bind("<F2>" => \&insert_points);
-    $top->bind("<F3>" => \&change_points);
+    $top->bind("<F3>" => \&change_points_maybe_reload);
     $top->bind("<F8>" => sub {
 		   my $ev = $_[0]->XEvent;
 		   my($X,$Y) = ($ev->X, $ev->Y);

@@ -16,6 +16,15 @@ Legend:
 
 =over
 
+=item * (M5)
+
+Check: ist die Reihenfolge der Nachbarpunktselektion beim
+nachträglichen Via-Einfügen egal oder gibt es hier einen Bug?
+
+=item * (*E5)
+
+Temp blockings im non-advanced-Menü sichtbar machen!
+
 =item * (H5)
 
 Stacked tooltips: letzte Probleme (zu spätes Aktualisieren der Anzeige
@@ -1247,6 +1256,21 @@ Einfärben der Route nach Steigungen.
 
 =over
 
+=item * (*E5)
+
+Tie::File in die Windows-(SiePerl)-Distribution reinnehmen. Dann kann
+ich Sachen wie F8 propagieren und DB_File/RECNO langsam auslaufen
+lassen.
+
+=item * (*M5)
+
+Add XML::Twig and XML::Parser to standard sieperl+bbbike-distribution.
+
+=item * (H2)
+
+Make some research about alternative perl distribution on windows.
+Unfortunately I seem to be unable to compile Tk with Strawberry Perl.
+
 =item * (M5)
 
 Add Tk::Clipboard to @Tk::HList::ISA on Windows (or so). Then it would
@@ -1995,6 +2019,19 @@ points if delta exceeds 128/128 meters.
 
 Mit www.bbbike.de umziehen.
 
+=item * (M4)
+
+Alternative Startseite a la
+L<http://wolfram.schneider.org/tmp/bbbike/>
+erzeugen. Aber zunächst müssten die Layer-Probleme gelöst werden (Via-
+und Ziel-Layer sind nach dem Aufklappen verschoben).
+
+=item * (M4)
+
+GPX-Export: Dateinamen anhand von Start- und Ziel erstellen, z.B.
+C<route_alexanderplatz_breitscheidplatz.gpx>. Evtl. die üblichen
+Abkürzungen verwenden. Sichere Buchstaben beachten.
+
 =item * (H4)
 
 Crop (or use?) the E<quot>ortE<quot> part of a street, i.e.
@@ -2554,6 +2591,11 @@ AbhE<auml>ngigkeit von HAVE_KDE angeben.
 =head1 Tests
 
 =over
+
+=item * (E4)
+
+xmllint-checks in strassen-gpx.t. Eventuell allgemeinen xmllint-check
+in BBBikeTest.pm unterbringen.
 
 =item * (M2)
 

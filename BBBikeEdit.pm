@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.109 2006/08/26 21:58:15 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.110 2006/08/27 18:21:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2019,6 +2019,7 @@ sub click_info {
     undef;
 }
 
+# this is a per file-hash:
 use vars qw(%click_readonly_warning_seen);
 
 sub click {
@@ -2068,10 +2069,18 @@ sub click {
 	@button_args = (-state => "disabled");
     }
 
-    require DB_File;
     my @rec;
-    if (!tie @rec, 'DB_File', $file, ($readonly ? O_RDONLY : O_RDWR), 0644, $DB_File::DB_RECNO) {
-	main::status_message("Can't tie to $file: $!", "die");
+    if (eval { require DB_File; 1 }) {
+	if (!tie @rec, 'DB_File', $file, ($readonly ? O_RDONLY : O_RDWR), 0644, $DB_File::DB_RECNO) {
+	    main::status_message(Mfmt("Die Datei %s kann mit DB_File nicht geöffnet werden: %s", $file, $!), "die");
+	}
+    } elsif (eval { require Tie::File; 1 }) {
+	if (!tie @rec, "Tie::File", $file, mode => ($readonly ? O_RDONLY : O_RDWR)) {
+	    main::status_message(Mfmt("Die Datei %s kann mit Tie::File nicht geöffnet werden: %s", $file, $!), "die");
+	}
+    } else {
+	# XXX vielleicht sollte es einen fallback mit open und read geben
+	main::status_message("Kann die Funktion nicht durchführen: entweder Tie::File oder DB_File fehlt", "die");
     }
 
     require Tk::Ruler;

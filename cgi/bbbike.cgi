@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.19 2006/08/18 20:39:42 eserte Exp $
+# $Id: bbbike.cgi,v 8.19 2006/08/18 20:39:42 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -3051,9 +3051,10 @@ sub search_coord {
 
     if (defined $output_as && $output_as eq 'palmdoc') {
 	require BBBikePalm;
+	my $filename = filename_from_route($startname, $zielname) . ".pdb";
 	http_header
 	    (-type => "application/x-palm-database",
-	     -Content_Disposition => "attachment; filename=route.pdb",
+	     -Content_Disposition => "attachment; filename=$filename",
 	    );
 	print BBBikePalm::route2palm(-net => $net, -route => $r,
 				     -startname => $startname,
@@ -3063,14 +3064,16 @@ sub search_coord {
 
     if (defined $output_as && $output_as eq 'gpx-track') {
 	require Strassen::GPX;
+	my $filename = filename_from_route($startname, $zielname, "track") . ".gpx";
 	http_header
 	    (-type => "application/xml",
-	     -Content_Disposition => "attachment; filename=track.gpx",
+	     -Content_Disposition => "attachment; filename=$filename",
 	    );
 	my $s = Strassen->new_from_data("$startname - $zielname\tX " .
 					join(" ", map { "$_->[0],$_->[1]" }
 					     @{ $r->path }) . "\n");
-	print $s->Strassen::GPX::bbd2gpx(-as => "track");
+	my $s_gpx = Strassen::GPX->new($s);
+	print $s_gpx->bbd2gpx(-as => "track");
 	return;
     }
 
@@ -3459,19 +3462,21 @@ sub search_coord {
 		  };
 	if ($output_as eq 'perldump') {
 	    require Data::Dumper;
+	    my $filename = filename_from_route($startname, $zielname) . ".txt";
 	    http_header
 		(-type => "text/plain",
 		 @no_cache,
-		 -Content_Disposition => "attachment; filename=route.txt",
+		 -Content_Disposition => "attachment; filename=$filename",
 		);
 	    print Data::Dumper->new([$res], ['route'])->Dump;
 	} elsif ($output_as =~ /^yaml(.*)/) {
 	    my $is_short = $1 eq "-short";
 	    require YAML;
+	    my $filename = filename_from_route($startname, $zielname) . ".yml";
 	    http_header
 		(-type => "text/plain", # XXX text/yaml ?
 		 @no_cache,
-		 -Content_Disposition => "attachment; filename=route.yml",
+		 -Content_Disposition => "attachment; filename=$filename",
 		);
 	    if ($is_short) {
 		my $short_res = {LongLatPath => $res->{LongLatPath}};
@@ -3481,22 +3486,25 @@ sub search_coord {
 	    }
 	} elsif ($output_as eq 'gpx-route') {
 	    require Strassen::GPX;
+	    my $filename = filename_from_route($startname, $zielname) . ".gpx";
 	    http_header
 		(-type => "application/xml",
-		 -Content_Disposition => "attachment; filename=route.gpx",
+		 -Content_Disposition => "attachment; filename=$filename",
 		);
 	    my @data;
 	    for my $pt (@out_route) {
 		push @data, $pt->{Strname} . "\tX " . $pt->{Coord} . "\n";
 	    }
 	    my $s = Strassen->new_from_data(@data);
-	    print $s->Strassen::GPX::bbd2gpx(-as => "route");
+	    my $s_gpx = Strassen::GPX->new($s);
+	    print $s_gpx->bbd2gpx(-as => "route");
 	} else { # xml
 	    require XML::Simple;
+	    my $filename = filename_from_route($startname, $zielname) . ".xml";
 	    http_header
 		(-type => "text/xml",
 		 @no_cache,
-		 -Content_Disposition => "attachment; filename=route.xml",
+		 -Content_Disposition => "attachment; filename=$filename",
 		);
 	    my $new_res = {};
 	    while(my($k,$v) = each %$res) {
@@ -5860,6 +5868,20 @@ sub load_teaser {
 	       $BBBikeCGI::teaser_file_modtime = (stat($teaser_file))[9];
 	   }
        }; warn $@ if $@;
+}
+
+sub filename_from_route {
+    my($startname, $zielname, $type) = @_;
+    for ($startname, $zielname) {
+	$_ = lc $_;
+	s{[^a-z0-9_]}{}g;
+    }
+    $type = "route" if !$type;
+    if (!$startname || !$zielname) {
+	$type; # fallback
+    } else {
+	$type . "_" . $startname . "_" . $zielname;
+    }
 }
 
 ######################################################################
