@@ -1,5 +1,5 @@
 #: title: Radwege in Berlin
-#: version: $Id: radwege-orig,v 4.118 2006/08/28 19:11:13 eserte Exp $
+#: version: $Id: radwege-orig,v 4.118 2006/08/28 19:11:13 eserte Exp eserte $
 #:
 # (für Radwege in Brandenburg siehe comments_cyclepath)
 	RW1;RW1 9227,8890 9235,9051
@@ -3794,6 +3794,7 @@ Utrechter Str.	RW6;RW6 7279,16057 7491,16072
 #: note: durchgehend markiert, aber einige Schilder fehlen (noch?)
 	RW4;RW4 13579,10146 13540,10190 13493,10234 13440,10284 13375,10344 13250,10452 13135,10551 13035,10635 12995,10669
 #: by: Heike Siewert:
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20041222.1025.23051.html:
 Nüßlerstr.	RW1;RW1 14739,17625 14178,17690
 #: by: Tino Knauth:
 Watzmannweg	RW6;RW6 10336,2182 10294,2234 10365,2572
@@ -3904,3 +3905,5 @@ Schorfheidestr.	RW1;RW1 21843,18198 21864,18230 21938,18370 21946,18415 21933,18
 	RW1; 10240,18193 10327,18177 10669,18336 10680,18380
 #: by: daniel weber [AM]
 	RW;RW 7189,1942 6848,1809
+#: by: http://www.berlin.de/ba-mitte/index_4015_hr.html:
+	RW6;RW6 8601,16960 8583,16914

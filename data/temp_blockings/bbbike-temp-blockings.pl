@@ -5603,4 +5603,13 @@ EOF
 userdel	1::inwork 4359,11979 4345,11710
 EOF
      },
+     { from  => 1156793020, # 2006-08-28 21:23
+       until => 1158012000, # 2006-09-12 00:00
+       text  => 'Wilhelminenhofstr. (Oberschöneweide) Richtung Edisonstr. zwischen Rathenaustr. und Edisonstr. Baustelle, Fahrtrichtung gesperrt (bis 11.09.2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_003370',
+       data  => <<EOF,
+userdel	1::inwork 18853,6009 18445,6287 18343,6318 18175,6376 17992,6436
+EOF
+     },
     );

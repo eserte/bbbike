@@ -178,14 +178,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1156716000,
-         'text' => 'L 029 Eberswalder Chaussee OD Oderberg, von Berliner Str. in Ri. Eberswalde Beseit. Tragfähigkeitsschäden Vollsperrung 27.02.2006-27.08.2006 ',
-         'from' => 1140908400,
-         'data' => 'userdel	q4::inwork 52671,51846 51496,51542
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -793,14 +786,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1156716000,
-         'text' => 'L 023 Joachimsthal-Britz Brücke über A 11, AS Chorin,westliche Seite Brückenabbruch Vollsperrung 26.08.2006-27.08.2006 ',
-         'from' => 1156456800,
-         'data' => 'userdel	2::inwork 35962,59463 35405,59832
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1159653600,
          'text' => 'L 235 Gielsdorf-Werneuchen Schulstr. in der OL Wegendorf Straßen- u. Durchlassbau Vollsperrung 06.07.2006-30.09.2006 ',
@@ -827,14 +813,7 @@ userdel	2::temp 8119,12414 8063,12182
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1156716000,
-         'text' => 'Straßenfest am Kaiserdamm. Die Fahrbahn Richtung Theodor-Heuss-Platz ist vom 26.08.2006, 6.00 Uhr, von der Sophie-Charlotten- bis zur Königin-Elisabeth-Straße bis zum 28.08.2006, 0.00 Uhr gesperrt.',
-         'from' => 1156478400,
-         'data' => 'userdel	1::temp 2612,11491 2417,11465 2234,11440 2193,11434 2110,11426
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1156802399,
          'text' => 'Vom 26. August 2006, 13 Uhr bis zum 28. August 2006, 4 Uhr ist der Verkehr in der Möllendorffstraße im Abschnitt zwischen der Straße Am Containerbahnhof und der Frankfurter Allee gesperrt.',
@@ -859,14 +838,7 @@ userdel	2::temp 8119,12414 8063,12182
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1156716000,
-         'text' => 'B 112 Guben, OT Bresinchen Guben, OT Bresinchen, Bahnübergang Gleisbauarbeiten Vollsperrung 26.08.2006-27.08.2006 ',
-         'from' => 1156456800,
-         'data' => 'userdel	2::inwork 99176,-43536 99277,-43921 99228,-44346
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1164927600,
          'text' => 'L 030 OD Woltersdorf OD Woltersdorf, Rüdersdorfer Srtaße Straßenbau, Entwässerung Vollsperrung 28.09.2006-30.11.2006 ',
@@ -888,6 +860,24 @@ userdel	2::temp 8119,12414 8063,12182
          'text' => 'L 811 OA Oehna - Landesgrenze Sachsen-A. OA Oehna - Landesgrenze Sachsen-A. Straßenausbau Vollsperrung 28.08.2006-30.11.2006 ',
          'from' => 1156629600,
          'data' => 'userdel	2::inwork -13946,-56116 -13817,-54938 -13601,-53865
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003108',
+         'until' => 1159653599,
+         'text' => 'Leibnizstr. (Charlottenburg) Richtung Kantstr. zwischen Otto-Suhr-Allee und Bismarckstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 09/2006)',
+         'from' => 1156792939,
+         'data' => 'userdel	1::inwork 4359,11979 4345,11710
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003370',
+         'until' => 1158012000,
+         'text' => 'Wilhelminenhofstr. (Oberschöneweide) Richtung Edisonstr. zwischen Rathenaustr. und Edisonstr. Baustelle, Fahrtrichtung gesperrt (bis 11.09.2006)',
+         'from' => 1156793020,
+         'data' => 'userdel	1::inwork 18853,6009 18445,6287 18343,6318 18175,6376 17992,6436
 ',
          'type' => 'gesperrt'
        }
