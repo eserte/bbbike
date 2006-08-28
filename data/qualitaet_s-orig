@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.157 2006/08/27 20:13:32 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.159 2006/08/28 19:11:12 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -2490,7 +2490,7 @@ Am Spreebord: Kopfsteinpflaster	Q2 4135,12715 4314,12659
 Oberhofer Platz: Asphalt	Q0 5469,1949 5495,1964 5443,2109 5411,2098
 Oberhofer Weg: Asphalt	Q0 5740,1227 5751,1289 5673,1473 5642,1545 5519,1831 5469,1949
 #: XXX wo genau?
-Zerbster Str. (Lichterfelde): Hälfte der Strecke ist "leichtes" Kopfsteinpflaster	Q1 6283,1068 6133,1386 6023,1634 5952,1800
+Zerbster Str. (Lichterfelde): Hälfte der Strecke ist "leichtes" Kopfsteinpflaster	Q1 6283,1068 6132,1395 6023,1634 5952,1800
 Kiesstr.: OK	Q0 6176,1876 6025,1788 5952,1800 5805,1841
 #: XXX Kopfsteinpflaster?
 Kiesstr.: ungeeignet	Q3 5805,1841 5656,1882 5495,1964
@@ -2718,7 +2718,7 @@ Urselweg: sehr guter Asphalt	Q0 -990,3160 -887,3081 -812,2915
 Isoldestr.: mäßiges Kopfsteinpflaster	Q2 -4038,1430 -4049,1535
 #: by: ^^^
 #: by: Andrea Büchner:
-Achenseeweg: Asphalt	Q0 5913,1176 5878,787 5916,499 5993,243
+Achenseeweg: Asphalt	Q0 5913,1176 5867,807 5916,499 5993,243
 #: by: Daniel (cined...):
 Mercatorweg: mäßiger Beton	Q1 4873,645 4703,534
 #: by: geburzi:
@@ -3277,7 +3277,7 @@ Steinhellenweg: Kolonieweg/Rasengittersteine	Q2 9998,4876 9998,5210 9997,5229
 #: by: Carsten Steglich:
 Bruno-Wille-Str.: Kopfsteinpflaster	Q2 26086,4861 26079,5057 26069,5280 26057,5553 26019,5851
 #: by: Jürgen Müller: vvv
-Sondershauser Str.: Asphalt	Q0 6403,569 6358,795 6377,1041 6441,1444
+Sondershauser Str.: Asphalt	Q0 6403,569 6358,795 6377,1041 6392,1135 6406,1218 6441,1444
 Sondershauser Str.: teilweise Asphalt	Q0 6441,1444 6491,1658
 #: note: ADFC-Karte meint auch "mäßig geeignet":
 (Am Bahndamm): Feldweg	Q2 8173,3299 8103,3354 7784,4221 7757,4294 7662,4529
@@ -5022,6 +5022,22 @@ Orlamünder Weg: Asphalt	Q0 7195,1703 7172,1630
 (Kol. Königsgraben, Nord-Süd-Verbindung): Asphalt	Q0 7226,1842 7210,1888
 (Verbindung zum Orlamünder Weg): Asphalt	Q0 7274,1810 7275,1843
 (Orlamünder Weg - Tambacher Str.): Asphalt	Q0 7172,1630 7144,1591
+(Tennstetter Str. - Waltershauser Str.): Asphalt	Q0 6695,1706 6679,1734
+Apoldaer Str.: Asphalt	Q0 6662,1423 6621,1407 6553,1409 6515,1418 6441,1444
+Apoldaer Str.: Kopfsteinpflaster	Q2 6441,1444 6350,1465 6318,1484 6271,1684
+Langensalzaer Str.: Asphalt	Q0 6169,1696 6181,1543
+Langensalzaer Str.: Asphalt	Q0 6231,1442 6270,1365 6254,1357 6295,1275 6346,1167 6392,1135
+Rodacher Weg: Asphalt	Q0 6270,1365 6323,1390 6362,1309 6295,1275
+Gräfentaler Str.: Asphalt / fester Sand	Q2;Q0 6318,1484 6231,1442 6189,1423
+(Gräfentaler Str. - Georgenstr.): Asphalt	Q0 6189,1423 6132,1395
+Georgenstr.: Kopfsteinpflaster	Q2 6132,1395 6032,1348
+Arnstädter Str.: Asphalt	Q0 6553,1409 6528,1207 6514,1100 6523,1076 6514,1003
+Wernshauser Str.: Asphalt	Q0 6621,1407 6596,1198 6581,1068
+Altenburger Str.: Asphalt	Q0 6715,1318 6681,1300 6667,1189 6650,1059
+Wasunger Weg: Asphalt	Q0 6523,1076 6581,1068 6650,1059 6751,1085 6700,1184
+Kindelbergweg: Asphalt	Q0 6632,1482 6601,1471 6560,1473
+(Parkweg Trippsteinstr. - Sondershauser Str.): Asphalt	Q0 6762,1226 6700,1184 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6406,1218
+(Parkweg Blankenhainer Str. - Hildburghauser Str.): Asphalt	Q0 6578,1595 6528,1573 6517,1479 6515,1418 6479,1312 6481,1210 6462,1017
 #: by: ^^^
 #: by: Josch [AM]
 Falkenhausenweg: Asphalt	Q0 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248

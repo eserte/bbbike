@@ -5594,4 +5594,13 @@ EOF
 userdel	2::inwork -13946,-56116 -13817,-54938 -13601,-53865
 EOF
      },
+     { from  => 1156792939, # 2006-08-28 21:22
+       until => 1159653599, # 2006-09-30 23:59
+       text  => 'Leibnizstr. (Charlottenburg) Richtung Kantstr. zwischen Otto-Suhr-Allee und Bismarckstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 09/2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_003108',
+       data  => <<EOF,
+userdel	1::inwork 4359,11979 4345,11710
+EOF
+     },
     );

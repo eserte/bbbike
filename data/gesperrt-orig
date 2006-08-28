@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.130 2006/08/27 20:13:31 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.132 2006/08/28 19:11:11 eserte Exp $
 #:
 ###################################################################
 #
@@ -981,8 +981,11 @@ Treskowalle: Straßenbahn	3nocross 18872,9568 18857,9606 18816,9705
 Niehofer Str.	1 16942,16174 16815,16214 16692,16253
 Drängelgitter	BNP:10 17371,16194
 #: by: ^^^
-#: by: Daniel Weber [AM]
+#: by: Daniel Weber [AM] vvv
 Orlamünder Weg	1 7035,1814 7119,1829 7174,1718 7195,1703 7214,1710 7242,1754 7258,1757 7332,1718
+Arnstädter Str.	1 6553,1409 6528,1207 6514,1100 6523,1076 6514,1003
+tragen (Treppe)	0:30 6501,1207
+#: by: ^^^
 #: by: J.F. Jab [AM]
 Müncheberger Weg: Privatgelände	2 29978,8975 29868,9084
 #: by: Karin Tödtloff [AM]
