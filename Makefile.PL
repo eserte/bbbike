@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.127 2006/08/26 15:20:29 eserte Exp $
+# $Id: Makefile.PL,v 1.127 2006/08/26 15:20:29 eserte Exp eserte $
 
 use 5.005;
 
@@ -82,7 +82,7 @@ my @req_table =
    'CPAN.pm kann XML::SAX nicht über XML::Simple automatisch installieren'],
   [qw/XML::Simple	0	all	2	cgi/,
    'optional für XML-Dumps der BBBike-Route'],
-  [qw/XML::Parser	0	all	2	cgi/,
+  [qw/XML::Parser	0	all	2|4	cgi/,
    'optional für UAProf parsing (alternative wäre XML::SAX::PurePerl)'],
   [qw/XML::LibXML	0	all	0	base/,
    'optional für das Parsen von GPX-Dateien'],

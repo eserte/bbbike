@@ -5108,7 +5108,7 @@ userdel	2::inwork 40333,-4484 40503,-4571 40652,-4743
 EOF
      },
      { from  => 1153738184, # 2006-07-24 12:49
-       until => 1159653599, # 2006-09-30 23:59
+       until => 1156893323, # 1159653599 2006-09-30 23:59
        text  => 'Bergstr. (Steglitz) Richtung Bismarckstr. zwischen Menckenstr. und Körnerstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Ende 09.2006)',
        type  => 'gesperrt',
        source_id => 'INKO_84234_COPY_14',
@@ -5125,11 +5125,11 @@ EOF
 userdel	1::inwork 9224,14169 9383,13978
 EOF
      },
-     { from  => 1153739381, # 2006-07-24 13:09
-       until => 1157061599, # 2006-08-31 23:59
-       text  => 'Lützowplatz (Mitte) in beiden Richtunen zwischen Einemstr. und Lützowufer Baustelle, Straße vollständig gesperrt (bis Ende 08.2006)',
+     { from  => 1156893254, # 2006-08-30 01:14
+       until => 1159653599, # 2006-09-30 23:59
+       text  => 'Lützowplatz (Mitte) in beiden Richtungen zwischen Einemstr. und Lützowufer Baustelle, Straße vollständig gesperrt (bis Ende 09.2006)',
        type  => 'gesperrt',
-       source_id => 'INKO_84233_COPY_14',
+       source_id => 'IM_003395',
        data  => <<EOF,
 userdel	2::inwork 7002,11034 7010,11002 6918,10854
 EOF
@@ -5240,7 +5240,7 @@ EOF
        text  => 'L 035 Eisenbahnstr.-August-Bebel-Str. Brücke über die Spree in Fürstenwalde Deckenerneuerung halbseitig gesperrt; Einbahnstraße 31.07.2006-02.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::temp; 55549,-4992 55562,-4726
+userdel	q4::inwork; 55549,-4992 55562,-4726
 EOF
      },
      { from  => 1154642400, # 2006-08-04 00:00
@@ -5570,12 +5570,12 @@ EOF
 userdel	2::inwork 99176,-43536 99277,-43921 99228,-44346
 EOF
      },
-     { from  => 1159308000, # 2006-09-27 00:00
+     { from  => 1156629600, # 2006-08-27 00:00
        until => 1164927600, # 2006-12-01 00:00
-       text  => 'L 030 OD Woltersdorf OD Woltersdorf, Rüdersdorfer Srtaße Straßenbau, Entwässerung Vollsperrung 28.09.2006-30.11.2006 ',
+       text  => 'L 030 Rüdersdorfer Str. OD Woltersdorf Straßenbau, Entwässerung Vollsperrung 28.08.2006-30.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 34511,4787 34535,5319
+userdel	q4::inwork 34535,5319 34579,5745
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -5610,6 +5610,38 @@ EOF
        source_id => 'IM_003370',
        data  => <<EOF,
 userdel	1::inwork 18853,6009 18445,6287 18343,6318 18175,6376 17992,6436
+EOF
+     },
+     { from  => 1152396000, # 2006-07-09 00:00
+       until => 1162335600, # 2006-11-01 00:00
+       text  => 'B 097 Dresdener Str. Brücke ober DB im OT Schwarze Pumpe Brückensicherung Vollsperrung 10.07.2006-31.10.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 75459,-98456 75933,-97371
+EOF
+     },
+     { from  => 1156975200, # 2006-08-31 00:00
+       until => 1157234400, # 2006-09-03 00:00
+       text  => 'L 071 B179-Krausnick zw. Hauptstr., OL Leibsch u. Groß Wasserburg Deckenerneuerung Vollsperrung 01.09.2006-02.09.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 42175,-37437 42793,-36256 43200,-36012
+EOF
+     },
+     { from  => 1156629600, # 2006-08-27 00:00
+       until => 1166569200, # 2006-12-20 00:00
+       text  => 'L 075 OD Großziehten OD Großziehten, KP K.-Marx-/Attilastraße Straßenbauarbeiten Vollsperrung 28.08.2006-19.12.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 12984,1011 13090,205 13225,-681
+EOF
+     },
+     { from  => 1156629600, # 2006-08-27 00:00
+       until => 1185919200, # 2007-08-01 00:00
+       text  => 'L 201 OD Falkensee OD Falkensee, Falkenhagener Str. Straßenbau Vollsperrung 28.08.2006-31.07.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -10661,17873 -10926,17992
 EOF
      },
     );
