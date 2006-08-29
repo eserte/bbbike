@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GPX.pm,v 1.7 2006/08/26 15:34:02 eserte Exp $
+# $Id: GPX.pm,v 1.8 2006/08/29 22:37:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::GPX;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Core;
 
@@ -32,13 +32,12 @@ BEGIN {
 	push @errs, $@;
 	if (!eval {
 	    require XML::Twig;
+	    XML::Twig->VERSION("3.26"); # set_root
 	    $use_xml_module = "XML::Twig";
 	    1;
 	}) {
 	    push @errs, $@;
-	    die "No XML::LibXML or XML::Twig installed: @errs";
-	} else {
-	    die "XML::Twig fallback not yet programmed, you need XML::LibXML";
+	    die "No XML::LibXML or XML::Twig 3.26 installed: @errs";
 	}
     }
 }
@@ -274,10 +273,10 @@ sub _bbd2gpx_twig {
     my $twig = XML::Twig->new;
     my $gpx = XML::Twig::Elt->new(gpx => { version => "1.1",
 					   creator => "Strassen::GPX $VERSION (XML::Twig $XML::Twig::VERSION) - http://www.bbbike.de",
-					   "xsi:schemaLocation" => "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd",
+					   #$gpx->setNamespace("http://www.w3.org/2001/XMLSchema-instance","xsi");
+					   #$gpx->setNamespace("http://www.topografix.com/GPX/1/1");
+					   #"xsi:schemaLocation" => "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd",
 					 },
-				  #$gpx->setNamespace("http://www.w3.org/2001/XMLSchema-instance","xsi");
-				  #$gpx->setNamespace("http://www.topografix.com/GPX/1/1");
 				 );
     $twig->set_root($gpx);
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Gpsbabel.pm,v 1.4 2005/06/16 22:30:00 eserte Exp $
+# $Id: Gpsbabel.pm,v 1.5 2006/08/29 21:43:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ push @ISA, 'GPS';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(is_in_path);
 
@@ -90,7 +90,7 @@ sub run_gpsbabel {
     # XXX need a patched gpsbabel (gpsbabel by default only outputs waypoint files, not tracks)
     system("gpsbabel", "-t",
 	   "-i", $input_format, "-f", $file,
-	   "-o", "gpsman", -F, $ofilename);
+	   "-o", "gpsman", "-F", $ofilename);
     # Hack: set track name
     my($o2fh,$o2filename) = File::Temp::tempfile(UNLINK => 1);
     open(F, $ofilename) or die $!;

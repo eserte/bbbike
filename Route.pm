@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Route.pm,v 1.23 2005/05/03 21:44:18 eserte Exp $
+# $Id: Route.pm,v 1.24 2006/08/29 22:37:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2001 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ use strict;
 use vars qw($coords_ref $realcoords_ref $search_route_points_ref
 	    @EXPORT @ISA $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
 
 require Exporter;
 @ISA    = qw(Exporter);
@@ -356,6 +356,7 @@ sub load {
 	foreach my $gps (GPS->all()) {
 	    my $check = 0;
 	    eval {
+		warn "Magic check for $gps...\n" if ($main::verbose && $main::verbose >= 2);
 		my $mod = GPS->preload($gps);
 		if ($mod->check($file, %gps_args)) {
 		    warn "Trying $mod...\n" if ($main::verbose);

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.255 2006/08/27 22:26:25 eserte Exp $
+# $Id: bbbike,v 3.256 2006/08/29 22:39:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.255 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.256 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -2785,14 +2785,14 @@ sub do_iconframe {
 			      save_user_dels($file);
 			  }
 		      });
+	$bdm->checkbutton
+	    (-label => M"Aktive Sperrungen zeichnen und beachten",
+	     -variable => \$show_active_temp_blockings,
+	     -command => sub {
+		 activate_temp_blockings($show_active_temp_blockings);
+	     },
+	    );
 	if ($advanced) {
-	    $bdm->checkbutton
-		(-label => M"Aktive Sperrungen zeichnen und beachten",
-		 -variable => \$show_active_temp_blockings,
-		 -command => sub {
-		     activate_temp_blockings($show_active_temp_blockings);
-		 },
-		);
 	    $bdm->command
 		(-label => M"Aktive Sperrungen zeichnen für Datum",
 		 -command => \&active_temp_blockings_for_date_dialog,
@@ -3220,17 +3220,20 @@ sub do_iconframe {
 		     -command => \&save_route_as_esri
 		    );
 	    }
-	} elsif ($fmt =~ m{^GPX/(.*)$}) {
-	    my $as = $1;
-	    $svm->command
-		(-label => $fmt,
-		 -command => sub { save_route_as_gpx(-as => $as) },
-		);
 	} elsif (ref $fmt eq 'ARRAY') {
-	    $svm->command
-		(-label => "$fmt->[0]",
-		 -command => sub { gps_interface(@$fmt) },
-		);
+	    my($label, $module) = @$fmt;
+	    if ($module =~ m{^GPX/(.*)$}) {
+		my $as = $1;
+		$svm->command
+		    (-label => $label,
+		     -command => sub { save_route_as_gpx(-as => $as) },
+		    );
+	    } else {
+		$svm->command
+		    (-label => $label,
+		     -command => sub { gps_interface(@$fmt) },
+		    );
+	    }
 	} else {
 	    warn "XXX SHOULD NOT HAPPEN XXX";
 	}
@@ -8406,7 +8409,7 @@ sub save_route_as_esri {
 sub save_route_as_gpx {
     my(%args) = @_;
     if (!eval { require Strassen::GPX; 1 }) {
-	guess_perlmod_install_advice($@);
+	perlmod_install_advice("XML::Parser", "XML::Twig");
     } else {
 	require Route;
 	require Route::Heavy;
@@ -9341,18 +9344,24 @@ sub activate_temp_blockings {
     my(%args) = @_;
     my $now = $args{-now} || time;
     my $from = $args{-from};
+
     # XXX these should come from a file as constants
     my $temp_blockings_dir = "$FindBin::RealBin/data/temp_blockings"; # XXX was misc
     my $file = "$temp_blockings_dir/bbbike-temp-blockings.pl";
     my $optimized_file = "$temp_blockings_dir/bbbike-temp-blockings-optimized.pl";
-    if (!-r $file) {
+    if (!-r $file && !-r $optimized_file) {
 	status_message(M("Kein Support fuer temporaere Sperrungen, das Verzeichnis $temp_blockings_dir fehlt. Dieses Verzeichnis ist aus dem CVS erhältlich, siehe README."), "warn");
 	return;
     }
 
-    if (-r $optimized_file && -s $optimized_file &&
-	-M $optimized_file <= -M $file) {
+    # Use the optimized file?
+    if (!-r $file) {
 	$file = $optimized_file;
+    } else {
+	if (-r $optimized_file && -s $optimized_file &&
+	    -M $optimized_file <= -M $file) {
+	    $file = $optimized_file;
+	}
     }
 
     if (!$do_show_active_temp_blockings) {

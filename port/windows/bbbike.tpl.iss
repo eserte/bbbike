@@ -1,13 +1,17 @@
 ; -- bbbike.iss --
 ; To get the inno setup software visit http://www.jrsoftware.org
+[% IF VERSION == "";
+   SET VERSION = BBBike.WINDOWS_VERSION;
+   END;
+-%]
 [% PROCESS "../../BBBikeVar.tpl" -%]
 [% PROCESS "BBBikeWinDistFiles.tpl" -%]
 [% SET wperl_exe = "{app}\\windows\\5.6.1\\bin\\MSWin32-x86\\wperl.exe" -%]
 
 [Setup]
 AppName=BBBike
-AppVerName=BBBike version [% BBBike.WINDOWS_VERSION %]
-AppVersion=[% BBBike.WINDOWS_VERSION %]
+AppVerName=BBBike version [% VERSION %]
+AppVersion=[% VERSION %]
 AppPublisherURL=http://bbbike.sourceforge.net
 DefaultDirName={pf}\BBBike
 DefaultGroupName=BBBike
@@ -15,7 +19,7 @@ UninstallDisplayIcon={app}\bbbike\images\srtbike.ico
 Compression=lzma
 SolidCompression=yes
 OutputDir=..\BBBike-Setup-Files
-OutputBaseFilename=BBBike-[% BBBike.WINDOWS_VERSION %]-Windows
+OutputBaseFilename=BBBike-[% VERSION %]-Windows
 OutputManifestFile=SETUP-MANIFEST
 
 [Files]

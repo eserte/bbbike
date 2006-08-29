@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-gpx.t,v 1.4 2006/08/26 15:33:45 eserte Exp $
+# $Id: strassen-gpx.t,v 1.5 2006/08/29 22:38:31 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -26,11 +26,15 @@ BEGIN {
     }
 }
 
+use Route;
+
+my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
 my $tests_per_variant = 13;
 my $bbdfile = "obst";
 
-GetOptions("libxml!" => sub {
+GetOptions("v" => \$v,
+	   "libxml!" => sub {
 	       if (!$_[1]) {
 		   @variants = grep {!/XML::LibXML/} @variants;
 	       }
@@ -46,7 +50,7 @@ GetOptions("libxml!" => sub {
 	  )
     or die "usage!";
 
-plan tests => 3 + scalar(@variants) * $tests_per_variant;
+plan tests => 5 + scalar(@variants) * $tests_per_variant;
 
 use_ok("Strassen::GPX");
 my $s = Strassen::GPX->new;
@@ -127,6 +131,19 @@ for my $use_xml_module (@variants) {
 	    like($xml_res, qr{^<(\?xml|gpx)}, "Looks like XML");
 	}
     }
+}
+
+{
+    my($fh,$file) = tempfile(SUFFIX => ".gpx", UNLINK => 1);
+    print {$fh} gpx_sample_trk();
+    close $fh;
+
+    if ($v) {
+	$main::verbose = $main::verbose = 2;
+    }
+    my $route = Route::load($file, {}, -fuzzy => 1);
+    is($route->{Type}, "GPX", "Route recognized as GPX");
+    is(scalar(@{$route->{RealCoords}}), 2, "Two coordinates found");
 }
 
 sub deep_strassen_check {

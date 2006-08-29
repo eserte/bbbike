@@ -77,6 +77,7 @@ GPS/SerialStty.pm
 GPS/Unknown1.pm
 GPS/Util.pm
 GPS/WaypointPlus.pm
+GPS/GPX.pm
 GPS/t/gpsmandata.t
 Geography.pm
 Geography/Berlin_DE.pm
@@ -294,6 +295,7 @@ data/vorfahrt
 data/wasserstrassen
 data/wasserumland
 data/wasserumland2
+data/temp_blockings/bbbike-temp-blockings-optimized.pl
 ext/BBBikeXS/BBBikeXS.pm
 ext/BBBikeXS/BBBikeXS.xs
 ext/BBBikeXS/MANIFEST
@@ -829,3 +831,4 @@ podindex.html
 smsbbbike
 tkbikepwr
 tmp/.keep_me
+cache/.keep_me

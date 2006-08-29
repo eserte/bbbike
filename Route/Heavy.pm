@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Heavy.pm,v 1.7 2005/12/30 22:55:41 eserte Exp $
+# $Id: Heavy.pm,v 1.8 2006/08/29 22:36:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ package Route;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 # XXX Msg.pm
 
@@ -52,6 +52,21 @@ sub as_strassen {
 	);
 	 
     $s;
+}
+
+sub new_from_strassen {
+    my($class, $s) = @_;
+    my @realcoords;
+    $s->init;
+    while(1) {
+	my $r = $s->next;
+	last if !@{ $r->[Strassen::COORDS()] };
+	if (@realcoords && $realcoords[-1] eq $r->[Strassen::COORDS()][0].",".$r->[Strassen::COORDS()][1]) {
+	    shift @{ $r->[Strassen::COORDS()] };
+	}
+	push @realcoords, map { [ split /,/ ] } @{ $r->[Strassen::COORDS()] };
+    }
+    Route->new_from_realcoords(\@realcoords);
 }
 
 # XXX make more sophisticated

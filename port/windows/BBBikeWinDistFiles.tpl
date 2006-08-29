@@ -1,5 +1,5 @@
 [%
-	SET dirpath = "/tmp/BBBike-" _ BBBike.WINDOWS_VERSION _ "-Windows";
+	SET dirpath = "/tmp/BBBike-" _ VERSION _ "-Windows";
 	SET dirpath_length = dirpath.length;
 	SET dot = ".";
 	SET regexp = "^" _ dot.repeat(dirpath_length) _ "/?";
