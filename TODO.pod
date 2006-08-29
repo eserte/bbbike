@@ -21,10 +21,6 @@ Legend:
 Check: ist die Reihenfolge der Nachbarpunktselektion beim
 nachträglichen Via-Einfügen egal oder gibt es hier einen Bug?
 
-=item * (*E5)
-
-Temp blockings im non-advanced-Menü sichtbar machen!
-
 =item * (H5)
 
 Stacked tooltips: letzte Probleme (zu spätes Aktualisieren der Anzeige
@@ -1261,10 +1257,6 @@ Einfärben der Route nach Steigungen.
 Tie::File in die Windows-(SiePerl)-Distribution reinnehmen. Dann kann
 ich Sachen wie F8 propagieren und DB_File/RECNO langsam auslaufen
 lassen.
-
-=item * (*M5)
-
-Add XML::Twig and XML::Parser to standard sieperl+bbbike-distribution.
 
 =item * (H2)
 
