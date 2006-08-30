@@ -4773,7 +4773,7 @@ userdel	2::inwork -3584,-29888 -3733,-29501
 EOF
      },
      { from  => 1151609302, # 2006-06-29 21:28
-       until => 1157061600, # 2006-09-01 00:00
+       until => 1156977391, # 1157061600 2006-09-01 00:00
        text  => 'Bis 31.08.2006 Vollsperrung der L 862 zwischen Falkenrehde und Ketzin. ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -5454,11 +5454,11 @@ EOF
 userdel	2::inwork -56556,49662 -56487,49318 -56325,49162
 EOF
      },
-     { from  => 1155756590, # 2006-08-16 21:29
-       until => 1162335599, # 2006-10-31 23:59
-       text  => 'Rixdorfer Str. (Treptow-Köpenick) in Richtung Südostallee zwischen Schnellerstr. und Südostallee Baustelle, Straße vollständig gesperrt (bis Ende Oktober 2006)',
+     { from  => 1156976280, # 2006-08-31 00:18
+       until => 1159653599, # 2006-09-30 23:59
+       text  => 'Rixdorfer Str. (Treptow ) in Richtung Südostallee, von Schnellerstr. bis Kiefholzstr., Baustelle, Fahrtrichtung gesperrt (bis Ende 09/2006)',
        type  => 'gesperrt',
-       source_id => 'IM_003268',
+       source_id => 'IM_003422',
        data  => <<EOF,
 userdel	1::inwork 17290,6228 17239,6182 17156,6235 16861,5935
 EOF
@@ -5642,6 +5642,57 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -10661,17873 -10926,17992
+EOF
+     },
+     { from  => 1156976097, # 2006-08-31 00:14
+       until => 1167605999, # 2006-12-31 23:59
+       text  => 'Hauptstr. (Pankow) in beiden Richtungen, in Höhe Edelweißstr., zwischen Goethestr. und Garibaldistr. Baustelle, Verkehr wird wechselseitig vorbeigeführt (bis Ende 2006)',
+       type  => 'handicap',
+       source_id => 'INKO_84070',
+       data  => <<EOF,
+userdel	q4::inwork 7852,20231 7772,20050 7726,19952
+EOF
+     },
+     { from  => undef, # 
+       until => 1185833757, # 2007-07-31 00:15
+       text  => 'Pistoriusstr. (Pankow) Richtung Berliner Allee zwischen Hamburger Platz und Roelckstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Mitte 2007) (10:34) ',
+       type  => 'gesperrt',
+       source_id => 'INKO_77722',
+       data  => <<EOF,
+userdel	1::inwork 12708,16699 12874,16631 13131,16525
+EOF
+     },
+     { from  => 1156976256, # 2006-08-31 00:17
+       until => 1157580000, # 2006-09-07 00:00
+       text  => 'Regattastr. (Köpenick) in beiden Richtungen zwischen Rabindranath-Tagore-Str. und Steinbindeweg Baustelle, Straße vollständig gesperrt (bis 06.09.2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_003411',
+       data  => <<EOF,
+userdel	2::inwork 23277,776 23085,898
+EOF
+     },
+     { from  => 1157493600, # 2006-09-06 00:00
+       until => 1157752800, # 2006-09-09 00:00
+       text  => 'B 096 Bahnübergang Neuhof Gleisbauarbeiten Vollsperrung 07.09.2006-08.09.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 16407,-29400 16379,-29446 16336,-29511
+EOF
+     },
+     { from  => 1156975200, # 2006-08-31 00:00
+       until => 1157320800, # 2006-09-04 00:00
+       text  => 'B 112 Spremberger Str. OD Forst Brandenburgtag Vollsperrung 01.09.2006-03.09.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 96181,-72790 95496,-73572
+EOF
+     },
+     { from  => 1156888800, # 2006-08-30 00:00
+       until => 1157320800, # 2006-09-04 00:00
+       text  => 'L 049 Triebeler Str. OD Forst Brandenburgtag Vollsperrung 31.08.2006-03.09.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 96181,-72790 96424,-73412
 EOF
      },
     );

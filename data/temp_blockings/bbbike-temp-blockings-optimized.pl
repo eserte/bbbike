@@ -382,14 +382,7 @@ userdel	q4::inwork 39715,101866 39574,101863
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1157061600,
-         'text' => 'Bis 31.08.2006 Vollsperrung der L 862 zwischen Falkenrehde und Ketzin. ',
-         'from' => 1151609302,
-         'data' => 'userdel	2::inwork -22215,9500 -22510,9372 -23467,9217 -23807,9279 -24319,9296 -24594,9168 -25265,9000 -25456,8850 -25658,8777 -26243,8485 -26774,7951 -27468,7711
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'INKO_82301_COPY_1',
          'until' => 1159653599,
@@ -443,15 +436,7 @@ userdel	q4::inwork 39715,101866 39574,101863
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_77721_COPY_1',
-         'until' => 1156975200,
-         'text' => 'Pistoriusstr. (Pankow) in Richtung Berliner Allee, zwischen Roelckstr. und Mirbachplatz Baustelle, Straße vollständig gesperrt (bis 30.08.06)',
-         'from' => 1152221102,
-         'data' => 'userdel	q4::inwork; 13131,16525 13386,16408
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1167606000,
          'text' => 'K 6413 Berliner Str. OL Buckow, zw. Hauptstr. und OA grundhafter Straßenbau Vollsperrung 17.07.2006-31.12.2006 ',
@@ -461,14 +446,7 @@ userdel	q4::inwork 39715,101866 39574,101863
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1156975200,
-         'text' => 'L 029 Bahnhofstr. Bahnübergang in Biesenthal Umbau Bahnübergang Vollsperrung 12.07.2006-30.08.2006 ',
-         'from' => 1152568800,
-         'data' => 'userdel	2::inwork 28993,38709 28262,39100 26237,40190
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -516,21 +494,13 @@ userdel	q4::inwork 39715,101866 39574,101863
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_84234_COPY_14',
-         'until' => 1159653599,
-         'text' => 'Bergstr. (Steglitz) Richtung Bismarckstr. zwischen Menckenstr. und Körnerstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Ende 09.2006)',
-         'from' => 1153738184,
-         'data' => 'userdel	1::inwork 5481,5721 5601,5732
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
-         'source_id' => 'INKO_84233_COPY_14',
-         'until' => 1157061599,
-         'text' => 'Lützowplatz (Mitte) in beiden Richtunen zwischen Einemstr. und Lützowufer Baustelle, Straße vollständig gesperrt (bis Ende 08.2006)',
-         'from' => 1153739381,
+         'source_id' => 'IM_003395',
+         'until' => 1159653599,
+         'text' => 'Lützowplatz (Mitte) in beiden Richtungen zwischen Einemstr. und Lützowufer Baustelle, Straße vollständig gesperrt (bis Ende 09.2006)',
+         'from' => 1156893254,
          'data' => 'userdel	2::inwork 7002,11034 7010,11002 6918,10854
 ',
          'type' => 'gesperrt'
@@ -562,14 +532,7 @@ userdel	q4::inwork 39715,101866 39574,101863
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1156802400,
-         'text' => 'L 601 Berliner Str. OL Finsterwalde Sängerfest Vollsperrung 25.08.2006-28.08.2006 ',
-         'from' => 1156370400,
-         'data' => 'userdel	2::temp 33060,-85292 33103,-85731
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'INKO_82304',
          'until' => 1162335599,
@@ -611,7 +574,7 @@ userdel	q4::inwork 39715,101866 39574,101863
          'until' => 1157234400,
          'text' => 'L 035 Eisenbahnstr.-August-Bebel-Str. Brücke über die Spree in Fürstenwalde Deckenerneuerung halbseitig gesperrt; Einbahnstraße 31.07.2006-02.09.2006 ',
          'from' => 1154210400,
-         'data' => 'userdel	q4::temp; 55549,-4992 55562,-4726
+         'data' => 'userdel	q4::inwork; 55549,-4992 55562,-4726
 ',
          'type' => 'handicap'
        },
@@ -753,10 +716,10 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'type' => 'gesperrt'
        },
        {
-         'source_id' => 'IM_003268',
-         'until' => 1162335599,
-         'text' => 'Rixdorfer Str. (Treptow-Köpenick) in Richtung Südostallee zwischen Schnellerstr. und Südostallee Baustelle, Straße vollständig gesperrt (bis Ende Oktober 2006)',
-         'from' => 1155756590,
+         'source_id' => 'IM_003422',
+         'until' => 1159653599,
+         'text' => 'Rixdorfer Str. (Treptow ) in Richtung Südostallee, von Schnellerstr. bis Kiefholzstr., Baustelle, Fahrtrichtung gesperrt (bis Ende 09/2006)',
+         'from' => 1156976280,
          'data' => 'userdel	1::inwork 17290,6228 17239,6182 17156,6235 16861,5935
 ',
          'type' => 'gesperrt'
@@ -795,16 +758,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_003324',
-         'until' => 1156820400,
-         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Großer Stern und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (einschließlich Ebertstr. und Yitzhak-Rabin-Str. (bis 29.08.2006 05:00 Uhr)',
-         'from' => 1156541009,
-         'data' => 'userdel	2::temp 8595,12066 8600,12165 8515,12242
-userdel	2::temp 8119,12414 8063,12182
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1158336000,
          'text' => 'Berlin Weißensee, Buschallee, Weißensee Richtung Ahrensfelde Zwischen Einmündung Berliner Allee und Kreuzung Hansastraße Baustelle, gesperrt bis 15.09.2006 18:00 Uhr ',
@@ -814,14 +768,7 @@ userdel	2::temp 8119,12414 8063,12182
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1156802399,
-         'text' => 'Vom 26. August 2006, 13 Uhr bis zum 28. August 2006, 4 Uhr ist der Verkehr in der Möllendorffstraße im Abschnitt zwischen der Straße Am Containerbahnhof und der Frankfurter Allee gesperrt.',
-         'from' => 1156454823,
-         'data' => 'userdel	q4::inwork; 15392,12135 15349,12073
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1164927599,
          'text' => 'Hegemeisterweg ist vom 7. August 2006 bis zum 30. November 2006 nicht benutzbar. ',
@@ -841,20 +788,13 @@ userdel	2::temp 8119,12414 8063,12182
        undef,
        {
          'until' => 1164927600,
-         'text' => 'L 030 OD Woltersdorf OD Woltersdorf, Rüdersdorfer Srtaße Straßenbau, Entwässerung Vollsperrung 28.09.2006-30.11.2006 ',
-         'from' => 1159308000,
-         'data' => 'userdel	q4::inwork 34511,4787 34535,5319
+         'text' => 'L 030 Rüdersdorfer Str. OD Woltersdorf Straßenbau, Entwässerung Vollsperrung 28.08.2006-30.11.2006 ',
+         'from' => 1156629600,
+         'data' => 'userdel	q4::inwork 34535,5319 34579,5745
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1156975200,
-         'text' => 'L 073 OD Luckenwalde OD Luckenwalde, Beelitzer Str., Gewerbehof Aufstellung Autodrehkran Halbseitige Sperrung 28.08.2006-30.08.2006 ',
-         'from' => 1156629600,
-         'data' => 'userdel	1::inwork -4725,-34957 -4299,-35198
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1164927600,
          'text' => 'L 811 OA Oehna - Landesgrenze Sachsen-A. OA Oehna - Landesgrenze Sachsen-A. Straßenausbau Vollsperrung 28.08.2006-30.11.2006 ',
@@ -880,6 +820,89 @@ userdel	2::temp 8119,12414 8063,12182
          'data' => 'userdel	1::inwork 18853,6009 18445,6287 18343,6318 18175,6376 17992,6436
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1162335600,
+         'text' => 'B 097 Dresdener Str. Brücke ober DB im OT Schwarze Pumpe Brückensicherung Vollsperrung 10.07.2006-31.10.2006 ',
+         'from' => 1152396000,
+         'data' => 'userdel	2::inwork 75459,-98456 75933,-97371
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1157234400,
+         'text' => 'L 071 B179-Krausnick zw. Hauptstr., OL Leibsch u. Groß Wasserburg Deckenerneuerung Vollsperrung 01.09.2006-02.09.2006 ',
+         'from' => 1156975200,
+         'data' => 'userdel	2::inwork 42175,-37437 42793,-36256 43200,-36012
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1166569200,
+         'text' => 'L 075 OD Großziehten OD Großziehten, KP K.-Marx-/Attilastraße Straßenbauarbeiten Vollsperrung 28.08.2006-19.12.2006 ',
+         'from' => 1156629600,
+         'data' => 'userdel	2::inwork 12984,1011 13090,205 13225,-681
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1185919200,
+         'text' => 'L 201 OD Falkensee OD Falkensee, Falkenhagener Str. Straßenbau Vollsperrung 28.08.2006-31.07.2007 ',
+         'from' => 1156629600,
+         'data' => 'userdel	q4::inwork -10661,17873 -10926,17992
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_84070',
+         'until' => 1167605999,
+         'text' => 'Hauptstr. (Pankow) in beiden Richtungen, in Höhe Edelweißstr., zwischen Goethestr. und Garibaldistr. Baustelle, Verkehr wird wechselseitig vorbeigeführt (bis Ende 2006)',
+         'from' => 1156976097,
+         'data' => 'userdel	q4::inwork 7852,20231 7772,20050 7726,19952
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_77722',
+         'until' => 1185833757,
+         'text' => 'Pistoriusstr. (Pankow) Richtung Berliner Allee zwischen Hamburger Platz und Roelckstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Mitte 2007) (10:34) ',
+         'from' => undef,
+         'data' => 'userdel	1::inwork 12708,16699 12874,16631 13131,16525
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003411',
+         'until' => 1157580000,
+         'text' => 'Regattastr. (Köpenick) in beiden Richtungen zwischen Rabindranath-Tagore-Str. und Steinbindeweg Baustelle, Straße vollständig gesperrt (bis 06.09.2006)',
+         'from' => 1156976256,
+         'data' => 'userdel	2::inwork 23277,776 23085,898
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1157752800,
+         'text' => 'B 096 Bahnübergang Neuhof Gleisbauarbeiten Vollsperrung 07.09.2006-08.09.2006 ',
+         'from' => 1157493600,
+         'data' => 'userdel	2::inwork 16407,-29400 16379,-29446 16336,-29511
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1157320800,
+         'text' => 'B 112 Spremberger Str. OD Forst Brandenburgtag Vollsperrung 01.09.2006-03.09.2006 ',
+         'from' => 1156975200,
+         'data' => 'userdel	q4::temp 96181,-72790 95496,-73572
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1157320800,
+         'text' => 'L 049 Triebeler Str. OD Forst Brandenburgtag Vollsperrung 31.08.2006-03.09.2006 ',
+         'from' => 1156888800,
+         'data' => 'userdel	q4::temp 96181,-72790 96424,-73412
+',
+         'type' => 'handicap'
        }
      
 );
