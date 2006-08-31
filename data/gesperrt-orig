@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.132 2006/08/28 19:11:11 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.134 2006/08/31 18:08:44 eserte Exp $
 #:
 ###################################################################
 #
@@ -984,7 +984,7 @@ Drängelgitter	BNP:10 17371,16194
 #: by: Daniel Weber [AM] vvv
 Orlamünder Weg	1 7035,1814 7119,1829 7174,1718 7195,1703 7214,1710 7242,1754 7258,1757 7332,1718
 Arnstädter Str.	1 6553,1409 6528,1207 6514,1100 6523,1076 6514,1003
-tragen (Treppe)	0:30 6501,1207
+tragen (5 Stufen)	0:20 6501,1207
 #: by: ^^^
 #: by: J.F. Jab [AM]
 Müncheberger Weg: Privatgelände	2 29978,8975 29868,9084
@@ -995,3 +995,5 @@ Zeiler Weg	1 11495,18129 11579,18184
 Zeiler Weg	1s 11835,18301 11914,18303
 Dettelbacher Weg	1 11698,18446 11750,18273
 Dettelbacher Weg	1 11820,18043 11750,18273
+Neuenhagener Str. (Mahlsdorf)	1s 24362,11954 24317,11754
+Prenzlauer Promenade: nicht passierbarer Mittelstreifen	3nocross 11950,18529 11984,18771 12003,18896

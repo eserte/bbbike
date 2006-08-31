@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.159 2006/08/28 19:11:12 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.161 2006/08/31 18:08:45 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -718,7 +718,7 @@ Am Walde: Richtung Westen schlechtes Kopfsteinpflaster	Q3; 17775,7874 17678,7850
 Oskarstr.: Richtung Süden schlechtes Kopfsteinpflaster	Q3; 17762,7931 17775,7874
 Prager Platz: gutes Kopfsteinpflaster	Q1 5661,9630 5657,9600 5630,9592 5602,9606 5595,9626
 Normannenstr.: Kopfsteinpflaster	Q2 16156,12286 16270,12261
-Rüdigerstr. (Lichtenberg): Kopfsteinpflaster	Q2 17466,12241 17163,12291 17041,12308 17010,12313 16810,12342
+Rüdigerstr. (Lichtenberg): Kopfsteinpflaster	Q2 17466,12241 17314,12265 17163,12291 17041,12308 17010,12313 16810,12342
 Barbarossastr.: Kopfsteinpflaster	Q2 7128,9512 7010,9535
 Prühßstr.: Kopfsteinpflaster	Q2 8766,4038 8967,4082 9107,4103 9338,4129 9468,4162 9848,4254
 Marienburger Str.: Kopfsteinpflaster	Q2 11582,14448 11835,14309 12091,14179
@@ -1284,8 +1284,8 @@ Unterführung S-Bahnhof Poelchaustr.: asphaltiert	Q0 19235,14483 19307,14480 1939
 (Kolonie Friedrichsfelde Nord, entlang der Fernwärmeleitung): feiner Kies, relativ glatt	Q1 17774,12244 18129,12245 18180,12262 18216,12262
 (Am Städtischen Zentralfriedhof): asphaltiert	Q0 17774,12244 17640,12222 17533,12222
 (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Kopfsteinpflaster	Q2 17533,12222 17466,12241
-Gudrunstr.: Asphalt mit erheblichen Schäden	Q2 17466,12241 17337,12185
-Gudrunstr.: Asphalt	Q0 17337,12185 17139,12100 17088,12069 16975,12000 16870,11920
+Gudrunstr.: Asphalt mit erheblichen Schäden	Q2 17466,12241 17300,12173
+Gudrunstr.: Asphalt	Q0 17300,12173 17139,12100 17088,12069 16975,12000 16870,11920
 Marzahner Chaussee (bis zur Kurve): mäßiger Asphalt	Q1; 19173,13487 19194,13258
 (Eichhörnchensteig - Wildpfad): enger Waldpfad	Q2 1449,7519 1485,7651 1539,7677
 #: note: vom Zug aus gesehen:
@@ -3544,8 +3544,10 @@ Straße 246: Asphalt	Q0 13597,17363 13818,17201
 Zitadellenweg: guter Asphalt	Q0 -2336,14460 -2254,14598 -1971,14610 -1987,14814
 Graacher Str.: gute Betonstraße	Q0 14533,17084 14672,17085
 #: by: ^^^
-#: by: Katja [AM]
+#: by: Katja [AM] vvv
 Wehlener Str.: Asphalt	Q0 14673,17003 14535,17003
+Trarbacher Str.: Beton	Q1 14671,17214 14672,17085 14673,17003 14673,16895
+#: by: ^^^
 #: by: Karin Hoffmann: vvv
 Amalienpark: mäßiges Kopfsteinpflaster	Q2 10860,18650 10950,18499
 Amalienpark: mäßiges Kopfsteinpflaster	Q2 10950,18499 10905,18671
@@ -3899,7 +3901,7 @@ Ernst-Lemmer-Ring: guter Asphalt	Q0 -131,1579 -185,1812
 #: by: ^^^
 #: by: Marek Bänsch:
 #: note: Q0-
-Schwarzer Weg (Tegel): Beton, stellenweise Querrillen	Q0 6,19817 23,19677 -38,19605 -116,19576 -244,19494 -487,19210 -570,19070 -566,18984 -570,18865 -593,18795 -707,18630 -792,18564 -820,18524 -884,18325 -994,18204 -1070,18094
+Schwarzer Weg (Tegel): Beton, stellenweise Querrillen	Q0 6,19817 23,19677 -38,19605 -116,19576 -244,19494 -487,19210 -570,19070 -566,18984 -570,18865 -593,18795 -707,18630 -792,18564 -820,18524 -884,18325 -994,18204 -1106,18117
 #: by: Sascha (hurdler):
 Ringbahnstr. (Neukölln): Kopfsteinpflaster	Q2 13081,7014 12934,6967 12689,6905
 #: by: Konrad Eschenbach:
@@ -5035,10 +5037,17 @@ Georgenstr.: Kopfsteinpflaster	Q2 6132,1395 6032,1348
 Arnstädter Str.: Asphalt	Q0 6553,1409 6528,1207 6514,1100 6523,1076 6514,1003
 Wernshauser Str.: Asphalt	Q0 6621,1407 6596,1198 6581,1068
 Altenburger Str.: Asphalt	Q0 6715,1318 6681,1300 6667,1189 6650,1059
+Altenburger Str.: Asphalt	Q0 6650,1059 6631,968
 Wasunger Weg: Asphalt	Q0 6523,1076 6581,1068 6650,1059 6751,1085 6700,1184
 Kindelbergweg: Asphalt	Q0 6632,1482 6601,1471 6560,1473
 (Parkweg Trippsteinstr. - Sondershauser Str.): Asphalt	Q0 6762,1226 6700,1184 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6406,1218
 (Parkweg Blankenhainer Str. - Hildburghauser Str.): Asphalt	Q0 6578,1595 6528,1573 6517,1479 6515,1418 6479,1312 6481,1210 6462,1017
+(Lilienthalpark): wassergebundene Decke	Q1 5503,575 5571,614 5671,637 5615,735 5576,800 5584,808 5571,864 5540,919
+(Lilienthalpark): wassergebundene Decke	Q1 5578,936 5540,919 5345,816
+(Lilienthalpark): wassergebundene Decke	Q1 5533,663 5485,751 5499,771 5539,773 5590,719 5593,679 5575,660 5533,663
+(Lilienthalpark): wassergebundene Decke	Q1 5571,614 5533,663
+(Lilienthalpark): wassergebundene Decke	Q1 5539,773 5576,800
+(Hildburghauser Str. - Lilienthalpark): wassergebundene Decke	Q1 6462,1017 6436,921 6421,892 6414,833 6360,825 6259,835 6163,822 6066,821 5964,821 5867,807 5742,798 5615,735 5590,719
 #: by: ^^^
 #: by: Josch [AM]
 Falkenhausenweg: Asphalt	Q0 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
@@ -5053,3 +5062,25 @@ Zeiler Weg: Kopfsteinpflaster	Q2 11495,18129 11579,18184 11665,18237 11750,18273
 #: by: ^^^
 #: by: axel bindrich [AM]
 Stuckstr.: Asphalt	Q2 14446,8983 14525,8894 14619,8794
+#: by: Detlef Neubauer [AM] vvv
+Gotlindestr.: Asphalt	Q0 16848,12614 17073,12620 17357,12566
+Gotlindestr.: Beton	Q1 15947,12626 16409,12612 16563,12613 16848,12614
+Dietlindestr.: Asphalt	Q0 17041,12308 17068,12503 17073,12620
+Ortliebstr.: Asphalt	Q0 17068,12503 17197,12488 17230,12481
+Kriemhildstr.: Kopfsteinpflaster	Q2 17300,12173 17314,12265
+Kriemhildstr.: Asphalt	Q0 17314,12265 17357,12566
+#: by: ^^^
+#: by: Jochen Timm vvv
+Thorner Str.: Beton	Q1 24089,11665 24229,11639 24278,11629 24421,11601
+Neuenhagener Str. (Mahlsdorf): Beton	Q1 24173,11279 24173,11328 24223,11470 24278,11629 24317,11754 24362,11954
+#: by: ^^^
+#: by: Andreas Mühlhausen vvv
+Romain-Rolland-Str.: Kopfsteinpflaster	Q2 12575,18275 12570,18351 12562,18483
+Romain-Rolland-Str.: Asphalt	Q1 12562,18483 12522,18813 12510,18954 12498,19069 12457,19248 12387,19454
+Heimdallstr.: Asphalt	Q1 11984,18771 12002,18768 12014,18771 12028,18810 12190,19009 12261,19099
+Heimdallstr.: Verbundsteine	Q1 12190,19009 12261,19099
+Sleipnerstr.: Asphalt	Q1 12261,19099 12510,18954
+Neukirchstr.: Asphalt	Q1 12562,18483 12014,18771
+#: by:^^^
+#: by: Geske, Anselm [AM]
+Aalemannufer: Asphalt	Q0 -1989,18378 -2053,18375 -2535,18391 -2678,18396 -2759,18400
