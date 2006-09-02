@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMail.pm,v 1.14 2006/08/20 18:56:27 eserte Exp $
+# $Id: BBBikeMail.pm,v 1.17 2006/09/02 21:59:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeMail;
 use strict;
 use vars qw($top @popup_style
-	    $can_send_mail $can_send_fax
+	    $can_send_mail $can_send_mail_via_Mail_Mailer $can_send_fax
 	    $cannot_send_mail_reason $cannot_send_fax_reason);
 
 $top = $main::top;
@@ -49,6 +49,13 @@ sub enter_send_anything {
 	      ". Grund: $reason" : ""),
 	    );
 	return;
+    }
+
+    if ($type eq 'mail') {
+	if ($^O eq 'MSWin32' || !$can_send_mail_via_Mail_Mailer) {
+	    send_mail_via_browser($args{-to}, $subject, $args{-data});
+	    return;
+	}
     }
 
     my $t = redisplay_top($top, $type, -title => $typename);
@@ -142,6 +149,15 @@ sub enter_send_anything {
 }
 
 sub send_mail {
+    my(@args) = @_;
+    if ($^O eq 'MSWin32' || !$can_send_mail_via_Mail_Mailer) {
+	send_mail_via_browser(@args);
+    } else {
+	send_mail_via_Mail_Mailer(@args);
+    }
+}
+
+sub send_mail_via_Mail_Mailer {
     my($to, $subject, $data, %args) = @_;
     my $cc = delete $args{CC};
     warn "Extra arguments: " . join(" ", %args) if %args;
@@ -164,6 +180,25 @@ sub send_mail {
     }
 }
 
+sub send_mail_via_browser {
+    # Tested with linux-mozilla 1.7
+    my($to, $subject, $data, %args) = @_;
+    require WWWBrowser;
+    require CGI;
+    CGI->import('-oldstyle_urls');
+    my $url = "mailto:";
+    $url .= $to if defined $to && $to !~ m{^\s*$};
+    $url .= "?" . CGI->new({subject=>$subject,
+			    body=>$data,
+			    ($args{CC} ? (cc=>$args{CC}) : ()),
+			   })->query_string;
+    $main::devel_host = $main::devel_host if 0; # cease -w
+    if ($main::devel_host) {
+	warn "Sende URL <$url> zum Browser...\n";
+    }
+    WWWBrowser::start_browser($url);
+}
+
 sub send_fax {
     my($to, $subject, $data) = @_;
     eval {
@@ -180,11 +215,12 @@ sub send_fax {
 }
 
 sub capabilities {
+    $can_send_mail = 1; # via browser
     eval {
 	require Mail::Send;
 	require Mail::Mailer;
 	Mail::Mailer->VERSION(1.53); # previous versions were unreliable
-	$can_send_mail = 1;
+	$can_send_mail_via_Mail_Mailer = 1;
     };
     if (!$can_send_mail) {
 	$cannot_send_mail_reason = $@;

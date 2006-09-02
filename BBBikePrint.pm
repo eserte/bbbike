@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.35 2005/12/31 19:22:33 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.36 2006/09/02 21:55:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -857,6 +857,33 @@ sub BBBikePrint::toggle_legend {
     } else {
 	show_legend(@_);
     }
+}
+
+### AutoLoad Sub
+sub BBBikePrint::print_text_windows {
+    my(%args) = @_;
+    my $header = $args{-header};
+    my $text   = $args{-text};
+    my $base   = $args{-basename};
+    my $temp;
+    if (eval { require File::Temp; 1 }) {
+	my $tempdir = File::Temp::tempdir(CLEANUP => 1);
+	$temp = $tempdir . "\\" . $base;
+    } else {
+	require POSIX;
+	my $temp = POSIX::tmpnam(); # XXX it never gets deleted
+	$temp =~ tr{/}{\\};
+	$temp =~ s/\.$//;
+    }
+    $verbose and warn "Using $temp as the temp file for hardcopying\n";
+    open(TMP, ">$temp") or status_message("Can't write to $temp: $!", "die");
+    if (defined $header) {
+	print TMP $header, "\n";
+    }
+    print TMP $test;
+    close TMP;
+    Win32Util::start_txt_print($temp);
+    $tmpfiles{$temp}++;
 }
 
 1;

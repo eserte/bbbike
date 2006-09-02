@@ -128,11 +128,11 @@ Tk::Getopt addition: for some changes a post dialog should be shown,
 e.g. "Please restart the app to make this/the option change/s
 visible". Or is it already possible? Use it in bbbike.
 
-=item * (H3)
+=item * (H5)
 
 Drucken: if the PDF backend is chosen, then Druckeinstellungen have no
-effect. Maybe it would be nice to support at least some of them
-(legend, maybe b/w)
+effect -> Remove them in this case! Maybe it would be nice to support
+at least some of them (legend, maybe b/w)
 
 =item * (H4)
 
@@ -1200,6 +1200,19 @@ Edit-Modus funktioniert.
 Drucken: optional auch die Routenansicht/PDF drucken, mit/ohne
 Routenbeschreibung.
 
+=item * (M2)
+
+PDF-Routenbeschreibung: zusichern, dass die Spaltenbreite nicht zu
+groß wird. Beispielsweise bei langen Dateinamen wie E<quot>Str. des
+17. Juni - Tiergarten, Philharmonie ...E<quot> kann es passieren, dass
+die Entfernungsspalte rechts herausrutscht.
+
+=item * (*M5)
+
+Drucken unter Windows: die selben Einstellungen könnte als Fallback
+für den PDF-Export verwendet werden, falls ghostview/ps2pdf etc. nicht
+verfügbar sind.
+
 =item * (M3)
 
 SehenswE<uuml>rdigkeiten: eine neue Kategorie für
@@ -1257,6 +1270,12 @@ Tk-SREZIC/examples/k2listbox.pl?
 =head2 Windows specific
 
 =over
+
+=item * (H4)
+
+Nach dem Auswählen einer Aktion im Popup-Menü ist der Fokus nicht mehr
+auf dem Fenster. Womöglich geht der Fokus auch bei anderen Aktionen
+verloren.
 
 =item * (*E5)
 

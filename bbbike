@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.257 2006/09/01 23:55:40 eserte Exp $
+# $Id: bbbike,v 3.259 2006/09/02 21:59:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -99,7 +99,7 @@ BEGIN {
 	 'BBBikePrint'
 	 => [qw(create_postscript print_postscript toggle_legend
 		print_text_postscript print_text_pdflatex print_route_pdf
-		view_pdf)],
+		view_pdf print_text_windows)],
 	);
     while(my($k,$v) = each %autouse_func) {
 	eval "use autouse $k => qw(" . join(" ", @$v) . ");";
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.257 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.259 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -1652,20 +1652,26 @@ sub do_iconframe {
 	     $strcm->cascade(-label => M('Erweiterte Auswahl').' ...');
 	     my $ausm = $strcm->Menu(-title => M("Erweiterte Auswahl").' ...');
 	     $strcm->entryconfigure('last', -menu => $ausm);
+	     $ausm->command(-label => M"Volltextsuche",
+			    -accelerator => "Ctrl-F",
+			    -command => sub {
+				require BBBikeAdvanced;
+				search_anything();
+			    });
 	     $plzmcmd = $ausm->command
 		 (-label => M"Komplette Straßenliste",
 		  -command => sub { choose_from_plz(-interactive => 1) });
-	     $ausm->command
-		 (-label => M"Telefonbuch-Datenbank (Straße)",
-		  -command => sub {
-		      telefonbuch_dialog("str");
-		  });
-	     $ausm->command
-		 (-label => M"Telefonbuch-Datenbank (Name)",
-		  -command => sub {
-		      telefonbuch_dialog("tel");
-		  });
 	     if ($advanced) {
+		 $ausm->command
+		     (-label => M"Telefonbuch-Datenbank (Straße)",
+		      -command => sub {
+			  telefonbuch_dialog("str");
+		      });
+		 $ausm->command
+		     (-label => M"Telefonbuch-Datenbank (Name)",
+		      -command => sub {
+			  telefonbuch_dialog("tel");
+		      });
 		 $ausm->command(-label => M"MySQL-DB",
 				-command => sub {
 				    push @INC, "$FindBin::RealBin/miscsrc";
@@ -1678,12 +1684,6 @@ sub do_iconframe {
 				    }
 				});
 	     }
-	     $ausm->command(-label => M"Volltextsuche",
-			    -accelerator => "Ctrl-F",
-			    -command => sub {
-				require BBBikeAdvanced;
-				search_anything();
-			    });
 	 },
 	);
     $strcm->separator;
@@ -3107,12 +3107,12 @@ sub do_iconframe {
 		  -state => "disabled",
 		  -font => $font{"bold"});
 
-    foreach my $fmt (['Postscript', 'ps'],
-		     ['PDF',        'pdf'],
+    foreach my $fmt (['PDF',        'pdf'],
 		     ['PNG',        'png'],
 		     ['GIF',        'gif'],
 		     ['JPEG',       'jpeg'],
 		     ['PPM',        'ppm'],
+		     ['Postscript', 'ps'],
 		    ) {
 	$svm->command(-label => "$fmt->[0]",
 		      -command => sub {
@@ -3623,6 +3623,7 @@ sub do_iconframe {
 			 ["doc/qualitaetskategorien.html", M"Qualitätskategorien"],
 			 ["HOWTO_edit_bbbike_data.html", M"Daten in BBBike editieren"],
 			 ["bbd.pod", M"Beschreibung des bbd-Formats"],
+			 ["doc/tests.pod", M"Manuelle Testanweisung"],
 			) {
 	    my($file, $label) = @$doc_def;
 	    my $full_path = $FindBin::RealBin . "/" . $file;
@@ -10134,6 +10135,7 @@ sub choose_ort {
 	    if ($Listbox =~ /K.*Listbox/ && $Tk::VERSION >= 800) {
 	        my $c = $t->Canvas(-takefocus => 0)->pack;
 		my $x = 1;
+		if ($os eq 'win') { $x++ } # otherwise A is cropped
 		for ('A'..'Z') {
 		    $c->createText($x, 1,
 				   -text => $_,
@@ -10144,6 +10146,7 @@ sub choose_ort {
 				  );
 		    $x += $t->fontMeasure($font{'small'}, $_);
 		}
+		if ($os eq 'win') { $x++ } # otherwise Z is cropped
 		my $asc = $t->fontMetrics($font{'small'}, '-ascent');
 		my $des = $t->fontMetrics($font{'small'}, '-descent');
 		$c->GeometryRequest($x, $asc+$des+2);
@@ -15478,20 +15481,25 @@ sub show_route_strname {
 	my $font = shift;
 	if (!$show_route_start) { $show_route_start = "???" }
 	if (!$show_route_ziel)  { $show_route_ziel = "???" }
+	my $header = Mfmt("Route von %s bis %s",
+			  $show_route_start, $show_route_ziel);
 	if ($^O eq 'MSWin32' && defined &Win32Util::start_txt_print) {
-	    require POSIX;
-	    my $temp = POSIX::tmpnam(); # XXX it never gets deleted
-	    $temp =~ tr{/}{\\};
-	    $temp =~ s/\.$//;
-	    $verbose and warn "Using $temp as the temp file for hardcopying\n";
-	    open(TMP, ">$temp") or status_message("Can't write to $temp: $!", "die");
-	    print TMP Mfmt("Route von %s bis %s",
-			   $show_route_start, $show_route_ziel), "\n";
-	    print TMP route_info_to_text();
-	    close TMP;
-	    Win32Util::start_txt_print($temp);
-	    $tmpfiles{$temp}++;
-        } else { # try pdflatex, then postscript, on Windows first Route::PDF
+	    # Make a nice filename as it's visible on the hardcopy:
+	    my $start = $show_route_start;
+	    my $ziel  = $show_route_ziel;
+	    for ($start, $ziel) {
+		s{[^A-Za-z0-9_-]}{_}g;
+	    }
+	    my $base = "Route_" . $start . "_" . $ziel;
+	    $base = substr($base, 0, 28) if length($base) > 28;
+	    $base .= ".txt";
+
+	    print_text_windows
+		(-header   => $header,
+		 -text     => route_info_to_text(),
+		 -basename => $base,
+		);
+	} else { # try pdflatex, then postscript, on Windows first Route::PDF
 	    my @try_order = qw(pdflatex postscript routepdf);
 	    if ($os eq 'win') {
 		@try_order = qw(routepdf pdflatex postscript);
@@ -15504,8 +15512,7 @@ sub show_route_strname {
 			print_text_postscript
 			    (route_info_to_text(),
 			     -columns => 1,
-			     -header => Mfmt("Route von %s bis %s",
-					     $show_route_start, $show_route_ziel),
+			     -header => $header,
 			     -font => $font,
 			    );
 		    } elsif ($try eq 'routepdf') {
@@ -18464,7 +18471,7 @@ sub export_visible_map {
 
 sub slow_postscript_generation {
     # XXX Hmmm, seems to be OK on Win98 with Tk800 and Tk804, with quite a number of layers turned on
-    # Where and how did I encounter the problem?
+    # XXX But it is really slow on a Windows2000 system with Tk800 (SiePerl 5.6.1)
     return $os eq 'win' &&
 	$top->messageBox(-icon => "question",
 			 -message => M"Die PostScript-Erzeugung könnte unter Windows langsam sein. Soll trotzdem fortgesetzt werden?",

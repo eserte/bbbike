@@ -4,46 +4,54 @@
 
 =head3 BBBike mit C<bbbike -public> starten
 
+(bzw. unter Windows mit C<bbbike.bat -public> starten)
+
 Splashscreen erscheint mit der richtigen E-Mail-Adresse.
 
-Progressbar wächst in vernüntigen Schritten.
+Progressbar wächst in vernünftigen Schritten.
 
 Hauptfenster öffnet sich. Das Fenster sollte möglichst groß sein,
 eventuelle Taskleisten aber nicht verdecken.
 
-Zumindestens das Straßennetz erscheint, je nach Defaults auch weitere
-Layer wie U-Bahn, Ampeln, Flächen... Zentriert wird auf das
-Brandenburger Tor.
+Das Straßennetz erscheint und weitere Layer: U- und S-Bahn (sowohl
+Linien als auch Bahnhöfe mit Benamung) und Ampeln. Zentriert wird auf
+das Brandenburger Tor. Falls die Datenbasis nicht zu alt ist, ist es
+sehr wahrscheinlich, dass temporäre Sperrungen erscheinen (mit
+Baustellen- oder Kalendarsymbol).
 
-Straßenauswahlliste erscheint.
+Straßenauswahlliste erscheint. Die A-Z-Leiste sollte vollständig sein.
 
 Splashscreen verschwindet. Das aufrufende Terminal sollte nun nicht im
 Vordergrund erscheinen.
 
-Im Terminalfenster sollte nichts Kryptisches stehen.
+I<X11>: Im Terminalfenster sollte nichts Kryptisches stehen.
+
+I<Windows>: Das Programm wird mit C<wperl> gestartet und hinterlässt
+damit nichts im Terminalfenster.
 
 =head3 Im Auswahlfenster einen weiter hinten stehenden Buchstaben
 wählen
 
 In vernünftiger Zeit sollte die erste Straße mit dem gewählten
-Buchstaben als Anfangsbuchstaben sichtbar sein.
+Buchstaben als Anfangsbuchstaben sichtbar sein. B<KNOWN ISSUE>: Leider
+dauert es beim Z drei-vier Sekunden auf nicht so schnellen Rechnern.
 
 =head3 Eintippen eines Straßennamens
 
 Beim Eintippen sollte sich die Selektion in der Listbox entsprechend
 des Namens ändern.
 
-E<quot>DudenstrE<quot> eintippen.
+E<quot>dudenstrE<quot> eintippen.
 
 =head3 Auf E<quot>StartE<quot> klicken
 
 Die Dudenstraße wird sichtbar, die Markierung blinkt einige Sekunden
-und die Startfahne wird auf einer Stelle in der Dudenstraße
-positioniert, bevorzugt die Mitte.
+rot und blau und die Startfahne wird auf die Mitte der Dudenstraße
+positioniert.
 
-=head3 Eingabefelder löschen und weitere Straße eintippen
+=head3 Eingabefeld löschen und weitere Straße eintippen
 
-E<quot>SeumestrE<quot> eintippen. Der Straßenname wird in der Listbox
+E<quot>seumestrE<quot> eintippen. Der Straßenname wird in der Listbox
 angezeigt.
 
 =head3 Return drücken
@@ -53,18 +61,18 @@ Markierung blink für einige Sekunden.
 
 =head3 Auf E<quot>ZielE<quot> klicken
 
-Die Zielfahne wird auf die Seumestraße positioniert (NYI; wird erst
-zum Schluss dieser Aktion durchgeführt).
+Die Zielfahne wird auf die Mitte der Seumestraße positioniert (B<NYI>:
+wird erst zum Schluss dieser Aktion durchgeführt).
 
 Der Mauszeiger geht in den E<quot>SchlafE<quot>-Modus (Uhr oder
 Z-Z-Z).
 
 Die Route (rot gezeichnet) zwischen Dudenstraße und Seumestraße
-erscheint. Die Karte wird so gezoomt, dass die berechnete Route passt.
-Es sind Steigungssymbole sichtbar. Das Fenster mit der Routenliste
-erscheint, ist komplett sichtbar und enthält eine Routenbeschreibung.
-Die Anzahl der Ampeln an der Route mit Zeitverlust wird in diesem
-Fenster angezeigt.
+erscheint. Die Karte wird so gezoomt, dass die berechnete Route genau
+passt. Es sind Steigungssymbole sichtbar. Das Fenster mit der
+Routenliste erscheint, ist komplett sichtbar und enthält eine
+Routenbeschreibung. Die Anzahl der Ampeln an der Route mit Zeitverlust
+wird in diesem Fenster angezeigt.
 
 =head3 Auf E<quot>SichernE<quot> klicken
 
@@ -77,15 +85,25 @@ enthalten.
 
 =head3 Auf E<quot>PalmE<quot> klicken
 
+B<NOTE>: Dieser Knopf ist nur verfügbar, wenn ein Palm-Doc-erzeugendes
+Programm wie iSilo, txt2pdbdoc o.ä. zur Verfügung steht. In der
+Standard-Windows-Distribution ist so ein Programm nicht verfügbar.
+
 Ein Dialog E<quot>Hotsync-Button drückenE<quot> erscheint. Dialog
 wegklicken.
 
 =head3 Auf E<quot>DruckenE<quot> klicken
 
-Ein Vorschaufenster (z.B. per PDF-Viewer) mit der formatierten
+I<X11>: Ein Vorschaufenster (z.B. per PDF-Viewer) mit der formatierten
 Routenliste erscheint. Fenster wegklicken.
 
+I<Windows>: Ein Editor-Fenster mit der Routenliste erscheint kurz;
+danach wird die Datei direkt zum Drucker geschickt.
+
 =head3 Auf E<quot>MailE<quot> klicken
+
+B<KNOWN ISSUE>: Zu alte Version von Mail::Mailer bei Windows.
+B<NOTE>: 
 
 Ein Fenster mit den Eingabefeldern E<quot>Mail anE<quot>,
 E<quot>SubjectE<quot>, E<quot>zusätzlicher TextE<quot> erscheint.
@@ -116,7 +134,7 @@ werden (dort, wo nicht abgebogen werden muss). Auch auf der Karte
 werden die zusammengefassten Straßen nur noch mit der ersten Straße
 markiert.
 
-NOTE: Eventuelle Kommentare verschwinden in der Kommentarspalte.
+B<NOTE>: Eventuelle Kommentare verschwinden in der Kommentarspalte.
 
 =head3 Den Checkbutton E<quot>KompaktE<quot> deselektieren
 
@@ -132,8 +150,8 @@ Die Spalte mit den Kommentaren erscheint wieder.
 
 =head3 Mit der rechten Maustaste auf der Karte klicken
 
-Ein Popup-Menü erscheint. NOTE: bei einigen GUI-Systemen (X11) kann es
-notwendig sein, die Maustaste gedrückt zu halten.
+Ein Popup-Menü erscheint. B<NOTE>: bei einigen GUI-Systemen (X11) kann
+es notwendig sein, die Maustaste gedrückt zu halten.
 
 =head3 Im Menü E<quot>Suche wiederholenE<quot> auswählen
 
@@ -158,9 +176,9 @@ E<quot>Keine RouteE<quot>
 
 =head3 Den Mauszeiger auf eine Straße bewegen
 
-Nach einiger Zeit erscheint ein Balloon mit dem Namen der Straße. NYI:
-Weitere Eigenschaften (Straßenqualität etc.) werden ebenfalls im
-Balloon angezeigt.
+Nach einiger Zeit erscheint ein Balloon mit dem Namen der Straße.
+B<NYI>: Weitere Eigenschaften (Straßenqualität etc.) werden ebenfalls
+im Balloon angezeigt.
 
 =head3 Mit dem linken Mauszeiger auf eine Straße klicken
 
@@ -169,7 +187,9 @@ Die Startflagge wird gesetzt.
 =head3 Mit dem linken Mauszeiger auf eine weiter entfernte Straße
 klicken
 
-Es wird wieder eine Routensuche aktiviert, siehe oben.
+Es wird wieder eine Routensuche aktiviert, siehe oben. Einziger
+Unterschied: es wird keine Anpassung des Kartenausschnitts
+durchgeführt.
 
 =head3 Mittlere Maustaste auf der Karte gedrückt halten und langsam
 bewegen
@@ -188,6 +208,9 @@ Die Karte wird in der angeklickten Richtung gescrollt.
 
 Die Karte wird nach oben/unten gescrollt.
 
+B<NOTE>: Mangels funktionierender Wheelmouse ist diese Funktion unter
+Windows noch nicht getestet worden.
+
 =head3 Shift drücken und dabei das Scrollrad betätigen
 
 Die Karte wird nach links/rechts gescrollt.
@@ -203,9 +226,10 @@ Die Karte wird auf das Brandenburger Tor zentriert.
 Der Button wird mit einem roten Indikator markiert.
 
 Es wird ein kleineres Fenster in der rechten unteren Ecke geöffnet.
-Das Fenster zeigt die Umrisse von Berlin, einige Orte im Umland,
-stilisierte Gewässer, ein Rechteck für den sichtbaren Kartenbereich
-und die aktuelle Route als rote Linie.
+Das Fenster zeigt die Umrisse von Berlin, einige Berliner Bezirke und
+Ortsteile, einige Orte im Umland, stilisierte Gewässer, ein Rechteck
+für den sichtbaren Kartenbereich und die aktuelle Route als rote
+Linie.
 
 =head3 Auf E<quot>BrandenburgE<quot> klicken
 
@@ -244,7 +268,8 @@ Man wählt nun einen Namen aus, z.B. F<test> und bestätigt.
 
 Ein Dateiselektor öffnet sich im Verzeichnis F<.../.bbbike/route>. Der
 vorher verwendete Name sollte als F<test.bbr> (X11) oder F<test>
-(Windows) sichtbar sein. Diese Datei anklicken und laden.
+(Windows) sichtbar sein. Unter Windows sollte diese Datei mit einem
+BBBike-Icon versehen sein. Diese Datei anklicken und laden.
 
 Der Kartenausschnitt passt sich an die geladene Route an. In der
 Statuszeile wird angezeigt, um welchen Typ Routendatei es sich handelt
@@ -258,6 +283,9 @@ Nicht-Menü-Fläche schließen.
 
 =head3 Datei > Exportieren > Postscript
 
+Nur I<Windows>: ein Dialog zeigt an, dass die Postscript-Erzeugung
+langsam ist.
+
 Ein Dateiselektor öffnet sich, z.B. mit dem Heimatverzeichnis des
 Nutzers. Ein (temporäres) Verzeichnis auswählen und dort F<test>
 eingeben und bestätigen.
@@ -265,15 +293,15 @@ eingeben und bestätigen.
 Die geschriebene Datei sollte F<test.ps> heißen und kann mit einem
 Postscript-Viewer (z.B. ghostview) angesehen werden.
 
-=head3 Datei > Exportieren > 36 dpi
-
-=head3 Datei > Exportieren > Postscript
-
-Wieder F<test> speichern.
-
-NOTE: Unterscheidet sich diese Datei von der alten überhaupt?
+I<Windows>: es ist kein Postscript-Viewer in der Distribution
+vorhanden.
 
 =head3 Datei > Exportieren > PDF
+
+I<Windows>: Diese Funktion benötigt C<ps2pdf> aus der
+Ghostscript-Distribution. Dieses Programm wird nicht mit der
+BBBike-Distribution mitgeliefert; die Funktion ist also nicht
+verwendbar.
 
 Wieder F<test> schreiben.
 
@@ -282,7 +310,129 @@ PDF-Viewer (z.B. Acrobat Viewer oder xpdf) angesehen werden. Die Datei
 sollte fast den gleichen Ausschnitt wie die aktuell angezeigte Karte
 haben.
 
-...
+=head3 Datei > Exportieren > PNG
+
+I<Windows>: Wegen fehlender externer Programme (aus der
+netpbm-Sammlung) nicht verwendbar.
+
+Wieder F<test> schreiben.
+
+Die geschriebene Datei sollte F<test.png> heißen und kann mit einem
+Image-Viewer angesehen werden.
+
+=head3 Datei > Exportieren > GIF
+
+=head3 Datei > Exportieren > JPEG
+
+=head3 Datei > Exportieren > PPM
+
+I<Windows>: Diese drei Funktionen sind ebenfalls nicht verwendbar.
+
+Ansonten: jeweils F<test> schreiben und sich die erzeugten Dateien
+(F<test.gif>, F<test.jpeg>, F<test.ppm>) mit einem Image-Viewer
+ansehen.
+
+=head3 Datei > Exportieren > GPX (Track)
+
+I<Unix>: Diese Funktion benötigt Nicht-Standard-Perl-Module, die
+möglicherweise nicht verfügbar sind.
+
+Beim Speichern den Dateinamen F<test> verwenden. Die erzeugte Datei
+sollte F<test.gpx> heißen, der Inhalt nach XML ausschauen.
+
+=head3 Datei > Exportieren > GPSMAN (Track)
+
+=head3 Datei > Exportieren > G7toWin (ASCII)
+
+=head3 Datei > Exportieren > Waypoint+ (Track)
+
+Beim Speichern den Dateinamen F<test> verwenden. Als Extension wird
+jeweils F<.txt> verwendet.
+
+=head3 Datei > Exportieren > BBD (BBBike data)
+
+Beim Speichern den Dateinamen F<test> verwenden. Die erzeugte Datei
+sollte F<test.bbd> heißen.
+
+=head3 Kartenebenen > Zusätzliche Layer > Straßen-Layer
+zeichnen
+
+Auf den Dateiselektor-Button klicken und die Datei F<test.bbd>
+auswählen. 
+
+=head3 Im Straßen-Layer-Dialog OK anklicken
+
+Ein neuer Layer wird gezeichnet, der genau der aktuellen Route
+entspricht und deshalb nicht sichtbar ist.
+
+=head3 Route > Route löschen
+
+Der Layer ist nun sichtbar, erkennbar an den fehlenden Flaggen.
+
+=head3 Route > Route wiederherstellen
+
+Nun sind die Flaggen wieder sichtbar.
+
+=head3 Kartenebenen > Zusätzliche Layer > Layer löschen
+
+In der Liste erscheint ein Button mit dem Namen C<test.bbd>.
+
+=head3 Auf diesen Button klicken
+
+Der Button verschwindet, nun erscheint der Test E<quot>Keine Layer
+vorhandenE<quot>
+
+=head3 Fenster schließen.
+
+=head3 Datei > Exportieren > PDF (und zwar im
+E<quot>RoutenE<quot>-Abschnitt unten)
+
+Beim Speichern den Dateinamen F<test> verwenden.
+
+B<NOTE>: Erzeugung dauert etwas länger.
+
+Die erzeugte Datei sollte F<test.pdf> heißen. Sie kann mit
+beispielsweise mit dem Actobat Reader oder xpdf angesehen werden. Die
+erzeugte PDF-Datei sollte aus zwei Seiten bestehen: die erste Seite
+mit der Straßenkarte und einer roten Route; die zweite Seite mit der
+tabellarischen Routenbeschreibung.
+
+=head3 Datei > Exportieren > Xfig
+
+B<NOTE>: Erzeugung dauert etwas länger.
+
+Die erzeugte Datei sollte F<test.fig> heißen. Sie kann beispielsweise
+mit xfig angesehen werden oder mit einem Programm aus der
+fig2*-Sammlung konvertiert werden.
+
+C<Windows>: In der BBBike-Distribution ist kein fig-Viewer dabei.
+
+=head3 Kartenebenen > Straßen > Erweitere Auswahl > Volltextsuche
+
+Ein Fenster mit einem Eingabefeld für E<quot>NachE<quot> und weiteren
+Elementen erscheint.
+
+=head3 In das Nach:-Eingabefeld E<quot>dudenstrE<quot> eintippen und
+auf den E<quot>SuchenE<quot>-Knopf drücken
+
+In der Ergebnisliste erscheinen einige Einträge, zumindest
+E<quot>Dudenstr.E<quot>, etwas eingerückt unter der Überschrift
+E<quot>Straßen und Plätze in Berlin (strassen)E<quot>.
+
+=head3 Doppelklick auf E<quot>Dudenstr.E<quot>
+
+Der Kartenausschnitt wird so bewegt, dass die Dudenstraße sichtbar
+wird. Eine Markierung blinkt einige Sekunden lang.
+
+=head2 Nicht so wichtige Tests
+
+=head3 Datei > Exportieren > 36 dpi
+
+=head3 Datei > Exportieren > Postscript
+
+Wieder F<test> speichern.
+
+B<NOTE>: Unterscheidet sich diese Datei von der alten überhaupt?
 
 =head1 AUTOR
 
