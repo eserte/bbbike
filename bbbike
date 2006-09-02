@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.256 2006/08/29 22:39:42 eserte Exp $
+# $Id: bbbike,v 3.257 2006/09/01 23:55:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.256 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.257 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4177,7 +4177,12 @@ sub arrange_topframe {
 	my $w = $order[$i];
 	next unless Tk::Exists($w);
 	my $col = $col[$i] || 0;
-	$width += $w->reqwidth;
+	my $reqwidth = $w->reqwidth;
+	# Special handling for Place/Street label: it shrinks as necessary.
+	if ($w == $hslabel_frame && $reqwidth > $top->width/3) {
+	    $reqwidth = $top->width/3;
+	}
+	$width += $reqwidth;
 	if ($gridslaves{$w}) {
 	    $w->gridForget;
 	}
@@ -4185,6 +4190,11 @@ sub arrange_topframe {
 	    $w->grid(-row => 0,
 		     -column => $col,
 		     -sticky => 'nsew'); # XXX
+	} elsif ($devel_host) { # XXX only for debugging, remove one day
+	    require Data::Dumper; 
+	    warn "No space for widget\n" .
+		Data::Dumper->new([$w->class, $w->PathName],[qw(class pathname)])->Indent(1)->Useqq(1)->Dump .
+			" with i=$i, $width <= " . $top->width;
 	}
     }
 }
@@ -10327,6 +10337,9 @@ sub choose_ort {
 		    if ($linetype =~ /^p/) {
 			$args{'-width'} = 20;
 			$args{'-type'} = "$type-bg";
+		    } else {
+			# Use middle point of first segment:
+			$args{'-scrollto'} = $tcoords->[0][$#{$tcoords->[0]}/2];
 		    }
 		}
 		$action->(-coords        => $tcoords,
@@ -10346,7 +10359,8 @@ sub choose_ort {
 		    my $index = $orte{$lb->get($lb_index)};
 		    my @i = split(/,/, $index);
 		    my $r = $object->get($i[0]);
-		    my $coord = $r->[Strassen::COORDS][0];
+		    my $coords = $r->[Strassen::COORDS];
+		    my $coord = $coords->[$#$coords/2]; # choose middle one
 		    if ($type eq 'start') {
 			set_route_start($coord);
 		    } else {
@@ -10531,6 +10545,7 @@ sub clever_center {
 #   -coords => [[[x,y],[x2,y2]], # first line
 #               [[x3,y3],[x4,y4]], # second line
 #              ]
+#   -scrollto => [x,y]
 ### AutoLoad Sub
 sub mark_street {
     my(%args) = @_;
@@ -10587,10 +10602,15 @@ sub mark_street {
     if ($args{'-zoom_view'} && defined $minx) {
 	zoom_view($minx, $miny, $maxx, $maxy);
     } else {
-	# Prefer an already visible point to scroll to
-	my($vx,$vy) = find_visible_point(\@all_coords);
-	if (!defined $vx) {
-	    ($vx,$vy) = @all_coords[0,1];
+	my($vx,$vy);
+	if ($args{'-scrollto'}) {
+	    ($vx,$vy) = @{ $args{'-scrollto'} };
+	} else {
+	    # Prefer an already visible point to scroll to
+	    ($vx,$vy) = find_visible_point(\@all_coords);
+	    if (!defined $vx) {
+		($vx,$vy) = @all_coords[0,1];
+	    }
 	}
 	if (!$args{'-dont_center'}) {
 	    if ($args{'-clever_center'} && clever_center($vx,$vy,@all_coords[$#all_coords-1,$#all_coords])) {
@@ -14203,7 +14223,8 @@ sub overview_draw_route {
 	if (@coords == 2) {
 	    push @coords, @coords;
 	}
-	$overview_canvas->createLine(@coords, -tags => "route");
+	$overview_canvas->createLine(@coords,
+				     -fill => "red", -tags => "route");
     }
 }
 
@@ -15321,40 +15342,12 @@ sub show_route_strname {
 		}
 	    }
 
-##XXX del:
-# 	    if ($do_route_strnames_compact) {
-# #		$aggr_dist += $entf if defined $entf;
-# 		if (!defined $aggr_dir) {
-# 		    $aggr_dir = $richtung;
-# 		}
-# 		if (!defined $aggr_begin_dist) {
-# 		    $aggr_begin_dist = $entf;
-# 		    $out_dist_add = 0;
-# 		} else {
-# 		    $out_dist_add += $entf;
-# 		}
-# 		if ($aggr_streets ne '') {
-# 		    $aggr_streets .= ", ";
-# 		}
-# 		$aggr_streets .= $str;
-# 		if (!defined $next_winkel ||
-# 		    $next_winkel < ROUTE_STRAIGHT_ANGLE) {
-# 		    next;
-# 		}
-# 		($out_dist, $out_dir, $out_str)
-# 		    = ($aggr_begin_dist > 0 ? M("nach")." ".m2km($aggr_begin_dist, 3, 2) : "",
-# 		       $aggr_dir,
-# 		       $aggr_streets);
-# 		($aggr_begin_dist, $aggr_streets) = (undef,"");
-# 		undef $aggr_dir;
-# 	    } else {
-		($out_dist, $out_dir, $out_str)
-		    = ($entf_s, $richtung, $str);
-		if (defined $out_dist_add) {
-		    $out_dist += $out_dist_add;
-		    undef $out_dist_add;
-		}
-#XXX del:	    }
+	    ($out_dist, $out_dir, $out_str)
+		= ($entf_s, $richtung, $str);
+	    if (defined $out_dist_add) {
+		$out_dist += $out_dist_add;
+		undef $out_dist_add;
+	    }
 	    $out_total_dist = $ges_entf_s;
 
 	    $route_strname_lbox->add($i, -text => $out_dist);
@@ -15367,8 +15360,15 @@ sub show_route_strname {
 		!$do_route_strnames_compact) {
 		my @comments;
 		for my $i ($index_arr->[0] .. $index_arr->[1]) {
-		    my($etappe_comment) = $comments_net->get_point_comment([@realcoords], $i, \%seen_comments);
-		    push @comments, $etappe_comment if defined $etappe_comment;
+		    my($etappe_comment_obj) = $comments_net->get_point_comment([@realcoords], $i, \%seen_comments, AsObj => 1);
+		    if (defined $etappe_comment_obj &&
+			# Ignore data from comments_kfzverkehr:
+			$etappe_comment_obj->[Strassen::CAT()] !~ m{^[+-][12]$}
+		       ) {
+			my $name = $etappe_comment_obj->[Strassen::NAME()];
+			$name =~ s{.*:\s+}{}; # strip street part
+			push @comments, $name;
+		    }
 		}
 		$etappe_comment = join("; ", @comments) if @comments;
 	    }
@@ -15931,7 +15931,6 @@ sub make_handicap_net {
 sub make_comments_net {
     if (!$str_obj{"comm"}) {
 	$str_obj{'comm'} = _get_comments_obj();
-#XXX del:	$str_obj{"comm"} = Strassen->new("comments");
     }
     if ($str_obj{"comm"}) {
 	$comments_net = new StrassenNetz $str_obj{"comm"};

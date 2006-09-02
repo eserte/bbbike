@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.87 2006/05/23 23:51:20 eserte Exp $
+# $Id: Makefile,v 1.88 2006/09/01 23:59:48 eserte Exp $
 #
 
 # Targets:
@@ -428,11 +428,12 @@ prepare-bbbike-dist-data-datadir-additional:
 	cp -pf ${BBBIKE_ROOT_DIR}/data/*-cooked \
 	    ${CURDIR}/BBBike/data/
 
-# temp_blockings is not yet in MANIFEST, so copy is necessary
+# Most of temp_blockings is not yet in MANIFEST, so copy is necessary
+# Exception: bbbike-temp-blockings-optimized.pl, maybe others to follow
 prepare-bbbike-dist-data-temp-blockings-dir:
 	[ -d ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR} ] || \
 	    mkdir -p ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR}
-	find ${BBBIKE_ROOT_DIR}/${TEMP_BLOCKINGS_DIR}/ -maxdepth 1 -type f ! -name "*~" -a ! -name "*.st" -a ! -name "*.core" -a ! -name "#*#" | ${XARGS_REPL} cp -pf % ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR}/
+	find ${BBBIKE_ROOT_DIR}/${TEMP_BLOCKINGS_DIR}/ -maxdepth 1 -type f ! -name "*~" -a ! -name "*.st" -a ! -name "*.core" -a ! -name "#*#" -a ! -name bbbike-temp-blockings-optimized.pl | ${XARGS_REPL} cp -pf % ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR}/
 	-cp -pf ${BBBIKE_ROOT_DIR}/${TEMP_BLOCKINGS_DIR}/* \
 	    ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR}/
 

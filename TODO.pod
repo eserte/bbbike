@@ -1246,6 +1246,12 @@ every download seems to be corrupted?!
 
 Einfärben der Route nach Steigungen.
 
+=item * (H1)
+
+Why is selecting one of the last characters in the streets chooser
+significantly slower (approx. 4s vs 1s) than a similar test with
+Tk-SREZIC/examples/k2listbox.pl?
+
 =back
 
 =head2 Windows specific
@@ -1256,7 +1262,7 @@ Einfärben der Route nach Steigungen.
 
 Tie::File in die Windows-(SiePerl)-Distribution reinnehmen. Dann kann
 ich Sachen wie F8 propagieren und DB_File/RECNO langsam auslaufen
-lassen.
+lassen. -> DONE, check missing!
 
 =item * (H2)
 

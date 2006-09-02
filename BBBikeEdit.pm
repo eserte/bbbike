@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.110 2006/08/27 18:21:14 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.111 2006/09/01 23:57:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2087,6 +2087,11 @@ sub click {
 
     my $top = $o->top;
     my $t = $top->Toplevel(-title => M("BBBike-Editor") . ": " . $click_info->basefile);
+
+    if (tied @rec) {
+	$t->OnDestroy(sub { untie @rec });
+    }
+
     $t->transient($top) unless defined $main::transient && !$main::transient;
     my($name, $cat, $coords);
 
@@ -2163,7 +2168,9 @@ sub click {
 	    $okb = $f->Button(Name => 'ok')->pack(-side => "left");
 	}
 	$f->Button(Name => 'cancel',
-		   -command => sub { $t->destroy })->pack(-side => "left");
+		   -command => sub {
+		       $t->destroy;
+		   })->pack(-side => "left");
     }
 
     my $count = 0;
@@ -2226,7 +2233,6 @@ use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n"
 				my $l = Strassen::_arr2line(\@l);
 				$rec[$rec_count] = $l;
 			    }
-			    untie @rec;
 			    if (eval { require "$FindBin::RealBin/miscsrc/insert_points" }) {
 				$BBBikeModify::datadir = $main::datadir;
 				BBBikeModify::do_log($t, "changerec", "$rec_count $name\t$cat $coords", $file);

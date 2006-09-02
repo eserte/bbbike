@@ -1504,7 +1504,7 @@ Siehe L<TODO>.
 =head1 KOMPATIBILITE<Auml>T
 
 BBBike wird zur Zeit unter FreeBSD 4.9 mit perl 5.8.0
-und den neuesten Perl/Tk-Versionen (z.Zt. 800.025 und 804.025) entwickelt.
+und den neuesten Perl/Tk-Versionen (z.Zt. 800.025 und 804.027) entwickelt.
 
 TestlE<auml>ufe wurden und werden von Zeit zu Zeit auf Windows
 95/98/NT/2000/XP, Mac OS X und Linux (Debian 3.0, RedHat 8.0)
@@ -1534,7 +1534,9 @@ L<Tk|Tk>.
 =head1 COREQUISITES
 
 L<Tk::FireButton|Tk::FireButton>, L<Tk::Pod|Tk::Pod>,
-L<LWP::UserAgent|LWP::UserAgent>, L<Mail::Send|Mail::Send> and others.
+L<LWP::UserAgent|LWP::UserAgent>, L<Mail::Send|Mail::Send> and many
+others. See Makefile.PL or Bundle/BBBike.pm in the distribution for a
+full list.
 
 =head1 SEE ALSO
 

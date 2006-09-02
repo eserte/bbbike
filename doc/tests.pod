@@ -1,0 +1,290 @@
+=head1 BBBike testen
+
+=head2 Allgemeine Benutzung der Perl/Tk-GUI
+
+=head3 BBBike mit C<bbbike -public> starten
+
+Splashscreen erscheint mit der richtigen E-Mail-Adresse.
+
+Progressbar wächst in vernüntigen Schritten.
+
+Hauptfenster öffnet sich. Das Fenster sollte möglichst groß sein,
+eventuelle Taskleisten aber nicht verdecken.
+
+Zumindestens das Straßennetz erscheint, je nach Defaults auch weitere
+Layer wie U-Bahn, Ampeln, Flächen... Zentriert wird auf das
+Brandenburger Tor.
+
+Straßenauswahlliste erscheint.
+
+Splashscreen verschwindet. Das aufrufende Terminal sollte nun nicht im
+Vordergrund erscheinen.
+
+Im Terminalfenster sollte nichts Kryptisches stehen.
+
+=head3 Im Auswahlfenster einen weiter hinten stehenden Buchstaben
+wählen
+
+In vernünftiger Zeit sollte die erste Straße mit dem gewählten
+Buchstaben als Anfangsbuchstaben sichtbar sein.
+
+=head3 Eintippen eines Straßennamens
+
+Beim Eintippen sollte sich die Selektion in der Listbox entsprechend
+des Namens ändern.
+
+E<quot>DudenstrE<quot> eintippen.
+
+=head3 Auf E<quot>StartE<quot> klicken
+
+Die Dudenstraße wird sichtbar, die Markierung blinkt einige Sekunden
+und die Startfahne wird auf einer Stelle in der Dudenstraße
+positioniert, bevorzugt die Mitte.
+
+=head3 Eingabefelder löschen und weitere Straße eintippen
+
+E<quot>SeumestrE<quot> eintippen. Der Straßenname wird in der Listbox
+angezeigt.
+
+=head3 Return drücken
+
+Die Karte wird so gescrollt, dass die Seumestraße sichtbar wird. Die
+Markierung blink für einige Sekunden.
+
+=head3 Auf E<quot>ZielE<quot> klicken
+
+Die Zielfahne wird auf die Seumestraße positioniert (NYI; wird erst
+zum Schluss dieser Aktion durchgeführt).
+
+Der Mauszeiger geht in den E<quot>SchlafE<quot>-Modus (Uhr oder
+Z-Z-Z).
+
+Die Route (rot gezeichnet) zwischen Dudenstraße und Seumestraße
+erscheint. Die Karte wird so gezoomt, dass die berechnete Route passt.
+Es sind Steigungssymbole sichtbar. Das Fenster mit der Routenliste
+erscheint, ist komplett sichtbar und enthält eine Routenbeschreibung.
+Die Anzahl der Ampeln an der Route mit Zeitverlust wird in diesem
+Fenster angezeigt.
+
+=head3 Auf E<quot>SichernE<quot> klicken
+
+Ein Dateiselektor erscheint. Beliebigen Dateinamen ohne Extension in
+einem temporären Verzeichnis eingeben und mit E<quot>OpenE<quot> oder
+E<quot>OkE<quot> bestätigen. Die erzeugte Datei sollte eine
+E<quot>.txtE<quot> besitzen und mit einem üblichen Texteditor/-viewer
+zu öffnen und zu lesen sein. Die Datei sollte die Routenliste
+enthalten.
+
+=head3 Auf E<quot>PalmE<quot> klicken
+
+Ein Dialog E<quot>Hotsync-Button drückenE<quot> erscheint. Dialog
+wegklicken.
+
+=head3 Auf E<quot>DruckenE<quot> klicken
+
+Ein Vorschaufenster (z.B. per PDF-Viewer) mit der formatierten
+Routenliste erscheint. Fenster wegklicken.
+
+=head3 Auf E<quot>MailE<quot> klicken
+
+Ein Fenster mit den Eingabefeldern E<quot>Mail anE<quot>,
+E<quot>SubjectE<quot>, E<quot>zusätzlicher TextE<quot> erscheint.
+E<quot>Mail anE<quot> mit der eigenen Adresse füllen.
+E<quot>SubjectE<quot> sollte mit der kurzen Routenbeschreibung
+(E<quot>BBBike-Route Von - BisE<quot>) initialisiert sein. Beliebigen
+zusätzlichen Text eingeben. Mit E<quot>OKE<quot> bestätigen.
+
+Die Mail sollte als Text-E-Mail ankommen. Vor dem zusätzlichen Text
+sollte sich die Routenliste befinden.
+
+=head3 Auf den Checkbutton E<quot>Straßennamen an der RouteE<quot>
+klicken
+
+In der Karte erscheint an jeder Kreuzung mit wechselndem Namen der
+Straßenname. Straßennamen sollten sich nicht überlagern. Die
+Straßennamen sollten oberhalb der Route erscheinen.
+
+=head3 Auf den Checkbutton E<quot>km-AngabenE<quot> klicken
+
+Zusätzlich zu den Straßennamen erscheinen Kilometerangaben in
+Klammern. Die oben genannten Bedingungen sollten auch hier gelten.
+
+=head3 Auf den Checkbutton E<quot>KompaktE<quot> klicken
+
+Die Routenliste wird kleiner, indem einige Straßen zusammengefasst
+werden (dort, wo nicht abgebogen werden muss). Auch auf der Karte
+werden die zusammengefassten Straßen nur noch mit der ersten Straße
+markiert.
+
+NOTE: Eventuelle Kommentare verschwinden in der Kommentarspalte.
+
+=head3 Den Checkbutton E<quot>KompaktE<quot> deselektieren
+
+=head3 Den Checkbutton E<quot>KommentareE<quot> deselektieren
+
+Die Spalte mit den Kommentaren verschwindet.
+
+=head3 Auf den Checkbutton E<quot>KommentareE<quot> klicken
+
+Die Spalte mit den Kommentaren erscheint wieder.
+
+=head3 Das Fenster mit der E<quot>Aktuellen RouteE<quot> schließen
+
+=head3 Mit der rechten Maustaste auf der Karte klicken
+
+Ein Popup-Menü erscheint. NOTE: bei einigen GUI-Systemen (X11) kann es
+notwendig sein, die Maustaste gedrückt zu halten.
+
+=head3 Im Menü E<quot>Suche wiederholenE<quot> auswählen
+
+Das Fenster mit der E<quot>Aktuellen RouteE<quot> erscheint wieder,
+sonst passiert scheinbar nichts.
+
+=head3 Popup-Menü wieder aktivieren, E<quot>RückwegE<quot> auswählen
+
+Der Mauszeiger geht wieder in den Schlafmodus.
+
+Start- und Zielflagge werden auf Karte vertauscht.
+
+Möglicherweise ändert sich die Route.
+
+=head3 Popup-Menü wieder aktivieren, E<quot>Gesamte Route
+löschenE<quot> auswählen
+
+Die Route verschwindet auf der Karte.
+
+Im Fenster der E<quot>Aktuellen RouteE<quot> steht jetzt nur noch
+E<quot>Keine RouteE<quot>
+
+=head3 Den Mauszeiger auf eine Straße bewegen
+
+Nach einiger Zeit erscheint ein Balloon mit dem Namen der Straße. NYI:
+Weitere Eigenschaften (Straßenqualität etc.) werden ebenfalls im
+Balloon angezeigt.
+
+=head3 Mit dem linken Mauszeiger auf eine Straße klicken
+
+Die Startflagge wird gesetzt.
+
+=head3 Mit dem linken Mauszeiger auf eine weiter entfernte Straße
+klicken
+
+Es wird wieder eine Routensuche aktiviert, siehe oben.
+
+=head3 Mittlere Maustaste auf der Karte gedrückt halten und langsam
+bewegen
+
+Die Karte wird in der gleichen Richtung gescrollt.
+
+=head3 Auf die Pfeile der Windrose klicken
+
+Die Karte wird in der angeklickten Richtung gescrollt.
+
+=head3 Scrollbalken-Pfeile (vertikal und horizontal) anklicken
+
+Die Karte wird in der angeklickten Richtung gescrollt.
+
+=head3 Scrollrad nach oben und unten betätigen
+
+Die Karte wird nach oben/unten gescrollt.
+
+=head3 Shift drücken und dabei das Scrollrad betätigen
+
+Die Karte wird nach links/rechts gescrollt.
+
+=head3 Die Windrose mit der rechten Maustaste anklicken
+
+Die Karte wird auf das Brandenburger Tor zentriert.
+
+=head3 Die beiden zusätzlichen Fenster schließen
+
+=head3 Den Button mit der kleinen Berlin-Karte anklicken
+
+Der Button wird mit einem roten Indikator markiert.
+
+Es wird ein kleineres Fenster in der rechten unteren Ecke geöffnet.
+Das Fenster zeigt die Umrisse von Berlin, einige Orte im Umland,
+stilisierte Gewässer, ein Rechteck für den sichtbaren Kartenbereich
+und die aktuelle Route als rote Linie.
+
+=head3 Auf E<quot>BrandenburgE<quot> klicken
+
+Die Karte wird neu gezeichnet (Progressbar in Aktion). Die Grenzen von
+Berlin erscheinen nun kleiner, ebenso das Rechteck, dafür erscheinen
+mehr Orte im Umland. Der Button E<quot>BrandenburgE<quot> ist jetzt zu
+E<quot>BerlinE<quot> geworden.
+
+=head3 Auf E<quot>BerlinE<quot> klicken
+
+Der vorherige Zustand ist wieder erreicht.
+
+=head3 In der Übersichtskarte auf E<quot>TegelE<quot> klicken
+
+Das Rechteck in der Übersichtskarte wurde nun auch nach Tegel
+verschoben; in der großen Karte ist nun Tegel sichtbar.
+
+=head3 Mit gedrückter linker Maustaste von Tegel nach Köpenick ziehen
+
+Das Rechteck in der Übersichskarte wird entsprechend der Bewegung
+verschoben; die große Karte ebenso. Eine Verzögerung ist zu erwarten,
+sollte sich aber im Rahmen halten.
+
+=head2 Menüfunktionen
+
+Voraussetzung: eine Routesuche wurde durchgeführt und die Route ist
+noch markiert.
+
+=head3 Datei > Speichern
+
+Ein Dateiselektor öffnet sich im Verzeichnis F<.../.bbbike/route>.
+
+Man wählt nun einen Namen aus, z.B. F<test> und bestätigt.
+
+=head3 Datei > Öffnen
+
+Ein Dateiselektor öffnet sich im Verzeichnis F<.../.bbbike/route>. Der
+vorher verwendete Name sollte als F<test.bbr> (X11) oder F<test>
+(Windows) sichtbar sein. Diese Datei anklicken und laden.
+
+Der Kartenausschnitt passt sich an die geladene Route an. In der
+Statuszeile wird angezeigt, um welchen Typ Routendatei es sich handelt
+und wieviele Punkte die Datei besitzt.
+
+=head3 Datei > zuletzt geöffnete Dateien
+
+Die Datei F<.../.bbbike/route/test.bbr> sollte am Anfang des
+kaskadierenden Menüs erscheinen. Das Menü durch Klicken auf eine
+Nicht-Menü-Fläche schließen.
+
+=head3 Datei > Exportieren > Postscript
+
+Ein Dateiselektor öffnet sich, z.B. mit dem Heimatverzeichnis des
+Nutzers. Ein (temporäres) Verzeichnis auswählen und dort F<test>
+eingeben und bestätigen.
+
+Die geschriebene Datei sollte F<test.ps> heißen und kann mit einem
+Postscript-Viewer (z.B. ghostview) angesehen werden.
+
+=head3 Datei > Exportieren > 36 dpi
+
+=head3 Datei > Exportieren > Postscript
+
+Wieder F<test> speichern.
+
+NOTE: Unterscheidet sich diese Datei von der alten überhaupt?
+
+=head3 Datei > Exportieren > PDF
+
+Wieder F<test> schreiben.
+
+Die geschriebene Datei sollte F<test.pdf> heißen und kann mit einem
+PDF-Viewer (z.B. Acrobat Viewer oder xpdf) angesehen werden. Die Datei
+sollte fast den gleichen Ausschnitt wie die aktuell angezeigte Karte
+haben.
+
+...
+
+=head1 AUTOR
+
+Slaven Rezic <srezic@cpan.org>
+

@@ -136,14 +136,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1157061600,
-         'text' => 'L 202 Wustermark-Brieselang Brücke über Havelkanal bei Zeestow Brückenneubau Vollsperrung 07.11.2005-31.08.2006 ',
-         'from' => 1131231600,
-         'data' => 'userdel	2::inwork -19908,17940 -18793,18169
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -359,14 +352,7 @@ userdel	q4::inwork 39715,101866 39574,101863
        undef,
        undef,
        undef,
-       {
-         'until' => 1164927600,
-         'text' => 'L 601 Leipziger Str. OD Finsterwalde, Kno. Hain-/ Schützenstr. Kanalarbeiten Vollsperrung 12.07.2006-30.11.2006 ',
-         'from' => 1152568800,
-         'data' => 'userdel	q4::inwork 32963,-85912 32865,-86269 32870,-86323 32478,-86374
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -395,22 +381,8 @@ userdel	q4::inwork 39715,101866 39574,101863
        undef,
        undef,
        undef,
-       {
-         'until' => 1157061600,
-         'text' => 'L 010 Havelberger Str. OD Bad Wilsnack, vom OE bis An der Trift Kanal- und Straßenbau Vollsperrung 01.06.2006-31.08.2006 ',
-         'from' => 1149026400,
-         'data' => 'userdel	q4::inwork -89549,58784 -89647,59213
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1157061600,
-         'text' => 'L 011 Große Str. OD Bad Wilsnack, Einmünd. zur Havelberger Str. Kanal- und Straßenbau Vollsperrung 21.06.2006-31.08.2006 ',
-         'from' => 1150754400,
-         'data' => 'userdel	q4::inwork -89647,59213 -89606,59341
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'INKO_82715',
          'until' => 1188597599,
@@ -901,6 +873,31 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'text' => 'L 049 Triebeler Str. OD Forst Brandenburgtag Vollsperrung 31.08.2006-03.09.2006 ',
          'from' => 1156888800,
          'data' => 'userdel	q4::temp 96181,-72790 96424,-73412
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1157234400,
+         'text' => 'B 102 Große Milower Str. OD Rathenow, zw. Eigendorfstr. u. Grünauer Weg Neub. B188n, Mont. Stahlträger Vollsperrung 02.09.2006-02.09.2006 ',
+         'from' => 1157061600,
+         'data' => 'userdel	2::inwork -62153,19281 -62269,19881 -62333,20390
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1157320800,
+         'text' => 'L 015 B109 südl. Prenzlau-Boitzenburg OD Gollmitz Einbau Deckschicht Vollsperrung 01.09.2006-03.09.2006 ',
+         'from' => 1156975200,
+         'data' => 'userdel	2::inwork 30743,99403 30504,99595
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_83350',
+         'until' => 1157335200,
+         'text' => 'Landsberger Allee (Friedrichshain - Kreuzberg) in Richtung stadteinwärts zwischen Virchowstr. und Friedensstr. Baustelle, Straße vollständig gesperrt (bis 04.09.2006 4.00 Uhr)',
+         'from' => 1157138648,
+         'data' => 'userdel	q4::inwork; 12975,13266 12909,13231 12808,13181 12727,13159 12582,13128 12386,13085
 ',
          'type' => 'handicap'
        }

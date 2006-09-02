@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeServer.pm,v 1.14 2005/05/11 23:34:34 eserte Exp $
+# $Id: BBBikeServer.pm,v 1.15 2006/09/01 23:57:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001 Slaven Rezic. All rights reserved.
@@ -183,7 +183,8 @@ sub create_socket_server {
 	    print PARENT_WTR $str;
 	    close $client;
 	}
-	CORE::exit(0); # never reached
+	require POSIX;
+	POSIX::_exit(0); # never reached
     } else {
 	close PARENT_RDR;
 	close PARENT_WTR;

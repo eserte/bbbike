@@ -4680,7 +4680,7 @@ userdel	2::inwork -46651,12935 -45980,13284
 EOF
      },
      { from  => 1152568800, # 2006-07-11 00:00
-       until => 1164927600, # 2006-12-01 00:00
+       until => 1157138787, # 1164927600 2006-12-01 00:00
        text  => 'L 601 Leipziger Str. OD Finsterwalde, Kno. Hain-/ Schützenstr. Kanalarbeiten Vollsperrung 12.07.2006-30.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -5693,6 +5693,31 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::temp 96181,-72790 96424,-73412
+EOF
+     },
+     { from  => 1157061600, # 2006-09-01 00:00
+       until => 1157234400, # 2006-09-03 00:00
+       text  => 'B 102 Große Milower Str. OD Rathenow, zw. Eigendorfstr. u. Grünauer Weg Neub. B188n, Mont. Stahlträger Vollsperrung 02.09.2006-02.09.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -62153,19281 -62269,19881 -62333,20390
+EOF
+     },
+     { from  => 1156975200, # 2006-08-31 00:00
+       until => 1157320800, # 2006-09-04 00:00
+       text  => 'L 015 B109 südl. Prenzlau-Boitzenburg OD Gollmitz Einbau Deckschicht Vollsperrung 01.09.2006-03.09.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 30743,99403 30504,99595
+EOF
+     },
+     { from  => 1157138648, # 2006-09-01 21:24
+       until => 1157335200, # 2006-09-04 04:00
+       text  => 'Landsberger Allee (Friedrichshain - Kreuzberg) in Richtung stadteinwärts zwischen Virchowstr. und Friedensstr. Baustelle, Straße vollständig gesperrt (bis 04.09.2006 4.00 Uhr)',
+       type  => 'handicap',
+       source_id => 'INKO_83350',
+       data  => <<EOF,
+userdel	q4::inwork; 12975,13266 12909,13231 12808,13181 12727,13159 12582,13128 12386,13085
 EOF
      },
     );
