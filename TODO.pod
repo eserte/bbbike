@@ -16,6 +16,34 @@ Legend:
 
 =over
 
+=item * (M4)
+
+Beim Ändern des Zeichensatzes mit E<quot>Schriftart ändernE<quot> wird
+anscheinend der font E<quot>boldE<quot> nicht berücksichtigt. Gesehen:
+im Infor-Fenster. Vielleicht betrifft das auch andere Schriftarten.
+Möglicher Grund: vielleicht darf ich nicht fontCreate sagen, wenn ich
+einen bestehenden Font ändern möchte? Oder vielleicht sollte
+RefontTree auch Text-Tags ändern? Und Canvas-Items auch? 
+
+Die A..Z-Leiste im Auswahlfenster verwendet anscheinend keinen Font
+aus %font (und wird auch bei E<quot>Schriftart ändernE<quot> nicht
+geändert. Siehe vorherigen Absatz.
+
+=item * (M5)
+
+Bei der Verwendung von -public sollte ein andere Konfigurationsdatei
+zum Speichern verwendet werden, um versehentliches Speichern einer
+Konfiguration beim Testen zu vermeiden. Ebenso sollte es bei -public
+eine Möglichkeit geben, eine Konfiguration wissentlich zum Testen zu
+laden. (-> doc/tests.pod)
+
+=item * (H5)
+
+Besserer Plugin-Dialog. Plugins sollten aus der Plugin-Liste permanent
+ein/ausgeschaltet werden können. Ebenso sollten die Plugin-Argumente
+in diesem Dialog angezeigt und editiert werden können. Plugin-Dialoge
+von anderen Anwendungen (gimp, gaim, mozilla, firefox) anschauen.
+
 =item * (M5)
 
 Check: ist die Reihenfolge der Nachbarpunktselektion beim
@@ -1264,6 +1292,22 @@ Tk-SREZIC/examples/k2listbox.pl?
 =head2 Windows specific
 
 =over
+
+=item * (*M3)
+
+Prüfen, ob Font::Metrics::Helvetica in der winbindist dabei ist und
+tatsächlich bei der PDF-Erzeugung benötigt wird.
+
+=item * (*M3)
+
+Prüfen, ob String::Approx/String::Similarity in der winbindist dabei
+ist und ob das Modul irgendwo verwendet wird (approximative
+Volltextsuche?). Auch: in doc/tests.pod aufnehmen!
+
+=item * (*M3)
+
+Prüfen, ob das Problem des Handlungsreisenden mit der winbindist
+funktioniert. Auch: in doc/tests.pod aufnehmen!
 
 =item * (H4)
 

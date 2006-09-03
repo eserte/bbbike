@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.128 2006/09/02 00:00:11 eserte Exp $
+# $Id: Makefile.PL,v 1.129 2006/09/03 21:04:00 eserte Exp $
 
 use 5.005;
 
@@ -43,7 +43,7 @@ use constant REQ_BBBIKE_WINDIST => 4; # for windows distribution (not yet!)
 # ... 4, 8, 16 ...
 
 # Table of prerequisites:
-# Name, Version, OS, Req/CoReq (may contain "|"), description token, long description
+# Name, Version, OS, Req/CoReq (may contain "|"), description token (comma separated), long description
 my @req_table =
  ([qw/Tk		800.000	all	1|4	gui/,
    { de => 'das absolute Muss!',
@@ -69,8 +69,8 @@ my @req_table =
    'Für Icons mit besserer Alpha-Unterstützung'],
   [qw/Tk::NumEntry	2.06	all	0	gui/],
 
-  [qw/LWP::UserAgent	0	all	2|4	www/,
-   'für die WWW-Verbindungen (z.B. Wetterbericht)'],
+  [qw/LWP::UserAgent	0	all	2|4	www,gui/,
+   'für die WWW-Verbindungen (z.B. Wetterbericht); in der Perl/Tk-GUI empfohlen für Daten-Updates über das Internet (ansonsten wird Http.pm verwendet)'],
   [qw/Image::Magick	0	all	0	www/,
    'für Bildmanipulationen beim Radar-Bild der FU'],
 
@@ -85,9 +85,9 @@ my @req_table =
   [qw/XML::Parser	0	all	2|4	cgi/,
    'optional für UAProf parsing (alternative wäre XML::SAX::PurePerl)'],
   [qw/XML::LibXML	0	all	0	base/,
-   'optional für das Parsen von GPX-Dateien'],
+   'optional für das Parsen und Erzeugen von GPX-Dateien'],
   [qw/XML::Twig	0	all	4	base/,
-   'alternativ für das Parsen von GPX-Dateien'],
+   'alternativ für das Parsen und Erzeugen von GPX-Dateien, benötigt XML::Parser'],
   [qw/YAML	0	all	2	cgi/,
    'optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings'],
 

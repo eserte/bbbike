@@ -200,6 +200,11 @@ Die Karte wird in der gleichen Richtung gescrollt.
 
 Die Karte wird in der angeklickten Richtung gescrollt.
 
+=head3 Linke Maustaste über den Pfeilen der Windrose etwas länger
+gedrückt halten
+
+Die Karte scrollt, solange die Maustaste gedrückt bleibt.
+
 =head3 Scrollbalken-Pfeile (vertikal und horizontal) anklicken
 
 Die Karte wird in der angeklickten Richtung gescrollt.
@@ -424,7 +429,87 @@ E<quot>Straßen und Plätze in Berlin (strassen)E<quot>.
 Der Kartenausschnitt wird so bewegt, dass die Dudenstraße sichtbar
 wird. Eine Markierung blinkt einige Sekunden lang.
 
-=head2 Nicht so wichtige Tests
+=head3 Mauszeiger über eine Straße positionieren und auf
+E<quot>IE<quot> drücken
+
+Es erscheint ein Fenster mit dem Titel E<quot>InformationE<quot>.
+
+Der Straßenname, die Länge der Straße und verschiedene Koordinatenformen
+des Punktes erscheinen im Fenster.
+
+Weiterhin sind einige Links (blau unterstrichen) sichtbar.
+
+Je nach installierten Perl-Modulen kann weitere Information zur
+Verfügung stehen (z.B. Zeiten für Sonnenaufgang/-untergang).
+
+=head3 Den E<quot>MapserverE<quot>-Link anklicken
+
+Es wird ein Browser geöffnet und die Mapserver-Seite mit dem
+aktuellen BBBike-Kartenausschnitt (ungefähr) geladen.
+
+=head3 Browser-Fenster schließen oder symbolisieren
+
+=head3 In das Eingabefeld E<quot>ZielnameE<quot> einen Text schreiben
+und den nebenstehenden Link E<quot>BBBike im WWWE<quot> anklicken
+
+Es wird ein Browser geöffnet und die BBBike-WWW-Startseite wird
+geladen. Der selbst geschriebene Zielnamentext wurde für den Zielpunkt
+übernommen.
+
+=head3 Browser-Fenster schließen oder symbolisieren
+
+=head3 Die weiteren Links ausprobieren
+
+=head3 Den Knopf E<quot>SchließenE<quot> im Informations-Fenster
+auswählen
+
+Das Fenster wird geschlossen.
+
+=head3 Einstellungen > Schriftart ändern
+
+Ein Zeichensatzdialog erscheint. Die aktuelle Schriftfamilie und
+-größe sollte selektiert sein (unter X11 typischerweise
+E<quot>HelveticaE<quot> und E<quot>10E<quot>, kann aber differieren).
+
+=head3 Eine andere Schriftgröße, z.B. E<quot>8E<quot> wählen
+
+Alle Texte im Menü, im Auswahlfenster sollten sich entsprechend
+ändern.
+
+Texte, die sich auf der Karte befinden, bleiben unverändert.
+
+=head3 Klick auf das Hilfe-Symbol (mit dem Fragezeichen)
+
+Es öffnet sich ein Fenster mit der BBBike-Dokumentation, bevorzugt als
+internes BBBike-Fenster (Tk-Pod-Viewer), aber zumindest erscheint die
+Dokumentation im WWW-Browser.
+
+=head3 Einstellungen > Daten-Update über das Internet
+
+B<NOTE>: Achtung: dieser Menüpunkt darf nicht genutzt werden, wenn die
+Dateien im F<data>-Verzeichnis über CVS up-to-date gehalten werden,
+oder wenn Kartendaten selbst geändert wurden und nicht verloren gehen
+dürfen.
+
+B<NOTE>: Dieser Test sollte zuletzt durchgeführt werden.
+
+Ein Dialog erscheint, der den Benutzer über das Update informiert.
+
+Der Dialog-Text, insbesondere die URL kann mit Copy-und-Paste kopiert
+werden.
+
+=head3 Klick auf E<quot>NeinE<quot>
+
+Der Dialog wird geschlossen, nichts passiert weiter.
+
+=head3 Nochmals aufrufen, diesmal mit Klick auf E<quot>JaE<quot>
+
+Das Update wird gestartet. Der Benutzer wird nicht alleine gelassen,
+d.h. es existiert ein Progressbar. Nach Beenden des Updates kann das
+Straßennetz aktualisiert werden, wenn auf dem Server neuere Daten
+existieren.
+
+=head2 Unwichtige Tests
 
 =head3 Datei > Exportieren > 36 dpi
 
