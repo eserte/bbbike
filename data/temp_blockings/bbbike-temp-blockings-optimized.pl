@@ -214,15 +214,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        undef,
-       {
-         'until' => 1157148000,
-         'text' => 'B 198 Dr. Wilhelm Külz Str. Straßenbau Vollsperrung 03.04.2006-01.09.2006 ',
-         'from' => 1143928800,
-         'data' => 'userdel	q4::inwork 39322,101924 39574,101863
-userdel	q4::inwork 39715,101866 39574,101863
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -542,14 +534,7 @@ userdel	q4::inwork 39715,101866 39574,101863
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1157234400,
-         'text' => 'L 035 Eisenbahnstr.-August-Bebel-Str. Brücke über die Spree in Fürstenwalde Deckenerneuerung halbseitig gesperrt; Einbahnstraße 31.07.2006-02.09.2006 ',
-         'from' => 1154210400,
-         'data' => 'userdel	q4::inwork; 55549,-4992 55562,-4726
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1157839200,
@@ -697,14 +682,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1157148000,
-         'text' => 'L 401 Königs Wusterhausen-Wildau OL Königs Wusterhausen, Höhe Neue Ziegelei Deckeneinbau Vollsperrung 31.08.2006-01.09.2006 ',
-         'from' => 1156888800,
-         'data' => 'userdel	2::inwork 26437,-10393 26407,-10986
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1161986400,
          'text' => 'B 096 Strelitzer Str. OD Gransee, vom KVK in Ri Altlüdersdorf grundhafter Straßenbau Vollsperrung 21.08.2006-27.10.2006 ',
@@ -801,14 +779,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1157234400,
-         'text' => 'L 071 B179-Krausnick zw. Hauptstr., OL Leibsch u. Groß Wasserburg Deckenerneuerung Vollsperrung 01.09.2006-02.09.2006 ',
-         'from' => 1156975200,
-         'data' => 'userdel	2::inwork 42175,-37437 42793,-36256 43200,-36012
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1166569200,
          'text' => 'L 075 OD Großziehten OD Großziehten, KP K.-Marx-/Attilastraße Straßenbauarbeiten Vollsperrung 28.08.2006-19.12.2006 ',
@@ -876,14 +847,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1157234400,
-         'text' => 'B 102 Große Milower Str. OD Rathenow, zw. Eigendorfstr. u. Grünauer Weg Neub. B188n, Mont. Stahlträger Vollsperrung 02.09.2006-02.09.2006 ',
-         'from' => 1157061600,
-         'data' => 'userdel	2::inwork -62153,19281 -62269,19881 -62333,20390
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1157320800,
          'text' => 'L 015 B109 südl. Prenzlau-Boitzenburg OD Gollmitz Einbau Deckschicht Vollsperrung 01.09.2006-03.09.2006 ',
