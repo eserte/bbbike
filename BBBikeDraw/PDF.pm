@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.32 2005/12/23 22:59:38 eserte Exp eserte $
+# $Id: PDF.pm,v 2.33 2006/09/03 18:00:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.32 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.33 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -257,10 +257,12 @@ if(1||$self->{Width} < $self->{Height}){#XXX scheint sonst undefinierbare Proble
 
 	my($kl_ampel);
 	my($kl_andreas);
+	my($kl_zugbruecke);
 
 	eval {
 	    $kl_ampel = $self->{PDF}->image("$images_dir/ampel_klein$suf.jpg");
 	    $kl_andreas = $self->{PDF}->image("$images_dir/andreaskr_klein$suf.jpg");
+	    $kl_zugbruecke = $self->{PDF}->image("$images_dir/zugbruecke_klein.jpg"); # smaller version available here
 	}; warn $@ if $@;
 	if ($kl_andreas && $kl_ampel) {
 	    $lsa->init;
@@ -273,11 +275,16 @@ if(1||$self->{Width} < $self->{Height}){#XXX scheint sonst undefinierbare Proble
 		    $y < $bbox->[1] || $y > $bbox->[3]) {
 		    next;
 		}
-		if ($cat eq 'B') {
-		    $im->image(image => $kl_andreas, xpos => $x, ypos => $y,
-			       xalign => 1, yalign => 1);
-		} else {
-		    $im->image(image => $kl_ampel, xpos => $x, ypos => $y,
+		my $image;
+		if ($cat =~ m{^(B|B0)$}) {
+		    $image = $kl_andreas;
+		} elsif ($cat =~ m{^(X|F)$}) {
+		    $image = $kl_ampel;
+		} elsif ($cat =~ m{^Zbr$}) {
+		    $image = $kl_zugbruecke;
+		}
+		if ($image) {
+		    $im->image(image => $image, xpos => $x, ypos => $y,
 			       xalign => 1, yalign => 1);
 		}
 	    }

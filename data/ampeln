@@ -1,5 +1,5 @@
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.82 2006/08/31 18:00:43 eserte Exp $
+#: version: $Id: ampeln-orig,v 4.84 2006/09/03 17:28:18 eserte Exp $
 #:
 	X 9222,8787
 	X 8982,8781
@@ -1786,8 +1786,12 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	F 968,11283
 	X 13161,13360
 	X 6399,-1793
-Parkeisenbahn Wuhlheide	B0 20619,6133
-Parkeisenbahn Wuhlheide	B0 20561,7229
+	B0 20619,6133
+	B0 20561,7229
+	B0 19607,6582
+	B0 20300,6837
+	B0 19970,5988
+	B0 19996,6410
 	F 6276,10401
 	F 9001,13039
 	F -6492,12574

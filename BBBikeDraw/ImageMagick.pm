@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ImageMagick.pm,v 1.14 2006/03/12 13:56:19 eserte Exp eserte $
+# $Id: ImageMagick.pm,v 1.15 2006/09/03 18:03:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -36,7 +36,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 

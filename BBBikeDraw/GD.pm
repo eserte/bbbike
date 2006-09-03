@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.49 2005/12/23 22:59:36 eserte Exp eserte $
+# $Id: GD.pm,v 1.50 2006/09/03 18:00:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -40,7 +40,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.49 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.50 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush, %thickness, %outline_thickness);
 
@@ -445,7 +445,7 @@ sub draw_map {
 		last if $s->is_empty;
 		my $cat = $s->category;
 		my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
-		if ($cat eq 'B') {
+		if ($cat =~ m{^(B|B0)$}) {
 		    if ($kl_andreas) {
 			$im->copy($kl_andreas, $x-$w_and/2, $y-$h_and/2, 0, 0,
 				  $w_and, $h_and);
@@ -464,7 +464,7 @@ sub draw_map {
 			$im->copy($kl_ampelf, $x-$w_lsa/2, $y-$h_lsa/2, 0, 0,
 				  $w_lsa, $h_lsa);
 		    }
-		} else {
+		} elsif ($cat =~ m{^(F|X)$}) { # F: only fallback here
 		    if ($kl_ampel) {
 			$im->copy($kl_ampel, $x-$w_lsa/2, $y-$h_lsa/2, 0, 0,
 				  $w_lsa, $h_lsa);

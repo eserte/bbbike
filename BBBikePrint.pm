@@ -1,15 +1,15 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.36 2006/09/02 21:55:56 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.39 2006/09/03 18:05:37 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2003,2006 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
 
 package BBBikePrint;
@@ -18,6 +18,14 @@ package main;
 use strict;
 use BBBikeGlobalVars;
 use vars qw(@gv_old_args $gv_pid);
+
+BEGIN {
+    if (!defined &M) {
+	eval 'sub M ($) { @_ }'; warn $@ if $@;
+    }
+}
+
+@Radwege::bbbike_category_order = @Radwege::bbbike_category_order if 0; # cease -w
 
 sub BBBikePrint::create_postscript {
     my($c, %args) = @_;
@@ -880,7 +888,7 @@ sub BBBikePrint::print_text_windows {
     if (defined $header) {
 	print TMP $header, "\n";
     }
-    print TMP $test;
+    print TMP $text;
     close TMP;
     Win32Util::start_txt_print($temp);
     $tmpfiles{$temp}++;

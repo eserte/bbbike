@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.259 2006/09/02 21:59:37 eserte Exp $
+# $Id: bbbike,v 3.261 2006/09/03 18:04:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.259 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.261 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -296,7 +296,7 @@ $p_draw{'lsa'} = 1;
 $p_far_away{'o'} = 0;
 $str_restrict{'s'}  = {qw(BAB 0 B 1 HH 1 H 1 N 1 NN 1 Pl 0 Br 0)}; # Pl = places, Br = bridges
 # NOTE: This is misused for getting all valid RBahn categories:
-$str_restrict{'r'}  = {qw(RA 1 RB 1 RC 1 R 1 R0 0 RBau 0 RG 1)};
+$str_restrict{'r'}  = {qw(RA 1 RB 1 RC 1 R 1 R0 0 RBau 0 RG 1 RP 0)};
 $str_restrict{'b'}  = {qw(S 1 SA 1 SB 1 SC 1 S0 0 SBau 0)};
 $str_restrict{'u'}  = {qw(U 1 UA 1 UB 1 U0 0 UBau 0)};
 $str_restrict{'qs'} = {qw(Q0 0 Q1 1 Q2 1 Q3 1)};
@@ -2168,6 +2168,7 @@ sub do_iconframe {
 	     [M"stillgelegt", 'R0'],
 	     [M"in Bau", 'RBau'],
 	     [M"G¸terbahnen/Verbindungsstrecken", 'RG'],
+	     [M"Parkbahnen/Kleinbahnen", 'RP'],
 	    ) {
 	my($label,$cat) = @$_;
 	$rbcm->checkbutton(-label => $label,
@@ -4975,6 +4976,7 @@ sub define_item_attribs {
 	 'R0' => '#a0b0a0', 	# stillgelegte R-Bahn
 	 'RBau' => '#a0b0a0', 	# in Bau
 	 'RG' => '#a0c8a0',	# G¸terbahnen
+	 'RP' => '#49c043',	# Parkbahnen...
 	 'U'  => '#000080', 	# U-Bahn
 	 'UA' => '#000080', 	# U-Bahn, Zone A
 	 'UB' => '#000080', 	# U-Bahn, Zone B
@@ -5063,7 +5065,7 @@ sub define_item_attribs {
 	);
     for (qw(UA UB U0)) { $category_font_color{$_} = $category_font_color{"U"} }
     for (qw(SA SB SC S0)) { $category_font_color{$_} = $category_font_color{"S"} }
-    for (qw(RA RB RC R0 RBau RG)) { $category_font_color{$_} = $category_font_color{"R"} }
+    for (qw(RA RB RC R0 RBau RG RP)) { $category_font_color{$_} = $category_font_color{"R"} }
     %category_font =
 	(
 	 'W'  => 'helvetica %d italic',
@@ -5338,6 +5340,7 @@ sub define_item_attribs {
 	 'R0' => [M"stillgelegte Bahnstrecke", M"stillgelegte Bahnstrecken", undef],
 	 'RBau' => [M"Bahnstrecke in Bau", M"Bahnstrecken in Bau", undef],
 	 'RG' => [M"G¸terbahn/Verbindungsstrecke", M"G¸terbahnen/Verbindungsstrecken", undef],
+	 'RP' => [M"Park-/Kleinbahn", M"Park-/Kleinbahnen", undef],
 	 'HH' => [M"wichtige Hauptstraﬂe", M"wichtige Hauptstraﬂen", undef],
 	 'B'  => [M"Bundesstraﬂe", M"Bundesstraﬂen", undef],
 	 'H'  => [M"Hauptstraﬂe", M"Hauptstraﬂen", undef],
@@ -6024,10 +6027,13 @@ EOF
 	    }
 
 	    if ($abk =~ /^[r]$/) {
-		$c->createLine($x-$rbahn_length, $y, $x+$rbahn_length, $y,
+		my $length = $category =~ m{^(RP)$} ? $rbahn_length/2 : $rbahn_length;
+		$c->createLine($x-$length, $y, $x+$length, $y,
 			       -tags => ["$abk-bg", "$xx,$yy", $pointname, "$abk-" . $category . "-bg"]);
-		$c->createText($x, $y,
-			       -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $category . "-fg"]);
+		if ($category !~ m{^(RP)$}) {
+		    $c->createText($x, $y,
+			           -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $category . "-fg"]);
+		}
 	    } elsif ($abk =~ /^[ub]$/) {
 		$c->createImage($x, $y, -tags => ["$abk-fg", "$xx,$yy", $pointname]);
 	    } elsif ($abk eq 'lsa') {
@@ -18422,6 +18428,14 @@ sub export_visible_map {
 	    $_->() for (@$deiconify_subs);
 	    $top->bell;
 
+	} elsif ($fmt eq 'pdf' && 
+		 !eval {
+		     require GfxConvert;
+		     GfxConvert::check($in_fmt, $fmt, $tmpfile, $outfile, %args);
+		     1;
+		 }) {
+	    pdf_export(-visiblemap => 1, -file => $outfile);
+	    $post_processing_needed = 0;
 	} else {
 
 	    $args{-rotate} = -90 if $orientation eq 'landscape';
@@ -18448,7 +18462,9 @@ sub export_visible_map {
 	}
 
 	if (!$post_processing_needed) {
-	    mv($tmpfile, $outfile);
+	    if (defined $tmpfile) {
+		mv($tmpfile, $outfile);
+	    }
 	} else {
 	    require GfxConvert;
 	    # -mapcolor wandelt die Farbe der Nebenstraﬂen

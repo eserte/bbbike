@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: basic.t,v 1.13 2006/08/26 14:53:46 eserte Exp $
+# $Id: basic.t,v 1.14 2006/09/03 18:03:05 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -36,7 +36,7 @@ plan tests => $tests_per_file * scalar @files;
 for my $f (@files) {
  SKIP: {
 	skip "$f not ready for stand-alone test", $tests_per_file
-	    if $f =~ m{^ (BBBikeWeather.pm | BBBikePrint.pm) $}x;
+	    if $f =~ m{^ (BBBikeWeather.pm) $}x;
 
 	skip "$f works only with installed StrassenNetz/CNetFilePerl.pm", $tests_per_file
 	    if $f =~ m{StrassenNetz-CNetFile/CNetFile(Dist)?.pm$} && !eval { require StrassenNetz::CNetFilePerl };

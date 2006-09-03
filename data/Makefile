@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.110 2006/08/18 17:24:37 eserte Exp $
+# $Id: Makefile,v 2.111 2006/09/03 17:27:49 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -302,9 +302,9 @@ sbahnhof:	sbahnhof-orig
 # perl -Ilib -MObject::Iterate=iterate -MStrassen::Core -MTie::File -e '$s = Strassen->new("sbahnhof"); iterate { $p{$_->[Strassen::NAME]} = $_->[Strassen::COORDS][0] } $s; tie @f, "Tie::File", "/tmp/Berlin.coords.data" or die ; for (@f) { if (/^S-Bhf (.*?)\|.*\|$/ && $p{$1}) { $_ .= $p{$1}; warn "$1 $p{$1}" } }'
 
 # See SBAHN_CATEGORIES comment
-RBAHN_CATEGORIES=	RA RB RC R R0 RBau RG
+RBAHN_CATEGORIES=	RA RB RC R R0 RBau RG RP
 
-rbahn: rbahn-orig
+rbahn: rbahn-orig Makefile
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) rbahn-orig > /tmp/rbahn
 .for cat in $(RBAHN_CATEGORIES)

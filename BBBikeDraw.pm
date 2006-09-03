@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.47 2005/12/23 23:00:00 eserte Exp eserte $
+# $Id: BBBikeDraw.pm,v 3.48 2006/09/03 18:01:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION $bahn_bau_rx);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.47 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.48 $ =~ /(\d+)\.(\d+)/);
 
 $bahn_bau_rx = qr{^[SRU](0|Bau|G)$};
 
@@ -480,6 +480,7 @@ sub set_category_colors {
 	      RG => $darkgreen,
 	      RBau => $green,
 	      R0 => $green,
+	      RP => $darkgreen,
 	      U  => $darkblue,
 	      UA => $darkblue,
 	      UB => $darkblue,
@@ -583,6 +584,10 @@ sub set_category_widths {
 	      RA => 2*$m,
 	      RB => 2*$m,
 	      RC => 2*$m,
+	      RG => 1*$m,
+	      RBau => 1*$m,
+	      R0 => 1*$m,
+	      RP => 1*$m,
 	      U  => 2*$m,
 	      UA => 2*$m,
 	      UB => 2*$m,
