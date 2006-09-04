@@ -5729,4 +5729,28 @@ EOF
 userdel	1::inwork 11351,12221 11347,12181 11328,12040 11283,11876 11242,11720
 EOF
      },
+     { from  => 1159826400, # 2006-10-03 00:00
+       until => 1167519600, # 2006-12-31 00:00
+       text  => 'B 096 a zw. OL Schildow, Hauptstr. u. Schönfließ, Dorfstr. Deckenerneuerung Vollsperrung 04.10.2006-30.12.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 8021,26285 7395,26862
+EOF
+     },
+     { from  => 1157234400, # 2006-09-03 00:00
+       until => 1159567200, # 2006-09-30 00:00
+       text  => 'L 010 Havelberger Str. OD Bad Wilsnack Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 04.09.2006-29.09.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork -89549,58784 -89647,59213
+EOF
+     },
+     { from  => 1157234400, # 2006-09-03 00:00
+       until => 1157580000, # 2006-09-07 00:00
+       text  => 'L 401 R.-Sorge-Str./ Bergstr. Bahnübergang Bergstr. in OL Wildau Arbeiten am BÜ Vollsperrung; Umleitung 04.09.2006-06.09.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 26381,-9962 25700,-9502
+EOF
+     },
     );

@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.134 2006/08/31 18:08:44 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.135 2006/09/04 20:05:40 eserte Exp $
 #:
 ###################################################################
 #
@@ -471,7 +471,8 @@ Bornhomer Str.: Straßenbahntrasse	3nocross 10445,16511 10370,16516 10300,16521 1
 Karl-Liebknecht-Str./Rosenstr.: Straßenbahntrasse	3nocross 10440,12696 10519,12768 10699,12929
 Martin-Luther-Str.: Mittelstreifen	3nocross 6514,9775 6520,9867 6522,9948
 Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 11013,16278 11003,16196 10994,16120
-Oberspreestr.: Straßenbahn auf Mittelstreifen	3nocross 21579,4579 21726,4537 21796,4517
+Oberspreestr.: Straßenbahntrasse	3nocross 21579,4579 21726,4537 21796,4517
+Oberspreestr.: Straßenbahntrasse	3nocross 21332,4655 21389,4635 21494,4605
 Hermannstr.: Gitter auf Mittelstreifen	3nocross 11892,8372 11920,8252 11933,8198
 Bundesplatztunnel	3nocross 5360,7554 5359,7619 5358,7681 5358,7746 5356,7862
 Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061 6873,11011 6824,10904
@@ -997,3 +998,6 @@ Dettelbacher Weg	1 11698,18446 11750,18273
 Dettelbacher Weg	1 11820,18043 11750,18273
 Neuenhagener Str. (Mahlsdorf)	1s 24362,11954 24317,11754
 Prenzlauer Promenade: nicht passierbarer Mittelstreifen	3nocross 11950,18529 11984,18771 12003,18896
+Hindenburgdamm	1 4454,3260 4467,3332 4523,3482 4546,3527 4585,3575
+Hindenburgdamm	1 4585,3575 4580,3514 4564,3457 4514,3329 4454,3260
+tragen (Treppe)	0:60 14549,16538

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.261 2006/09/03 18:04:15 eserte Exp $
+# $Id: bbbike,v 3.261 2006/09/03 18:04:15 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -10347,8 +10347,16 @@ sub choose_ort {
 			$args{'-width'} = 20;
 			$args{'-type'} = "$type-bg";
 		    } else {
-			# Use middle point of first segment:
-			$args{'-scrollto'} = $tcoords->[0][$#{$tcoords->[0]}/2];
+			# Is it an area or rectangle?
+			if (@{$tcoords->[0]} >= 2 &&
+			    "$tcoords->[0][0][0],$tcoords->[0][0][1]" eq
+			    "$tcoords->[0][-1][0],$tcoords->[0][-1][1]") {
+			    # Use first point (usually upper left?)
+			    $args{'-scrollto'} = $tcoords->[0][0];
+			} else {
+			    # Use middle point of first segment:
+			    $args{'-scrollto'} = $tcoords->[0][$#{$tcoords->[0]}/2];
+			}
 		    }
 		}
 		$action->(-coords        => $tcoords,
@@ -17851,7 +17859,7 @@ sub set_fonts {
 		    # scalable.
 		    my(%std_font) = $l->fontActual($std_font);
 		    $std_font = $top->fontCreate(-family => 'Arial',
-						 -size => $std_font{-size});
+						 -size => size2pt($std_font{-size}));
 		}
 		$l->destroy;
 	    }

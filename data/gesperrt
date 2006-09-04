@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.134 2006/08/31 18:08:44 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.135 2006/09/04 20:05:40 eserte Exp $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -433,8 +433,10 @@ Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen	3 6611,9879 6520,9867 6514,97
 Luitpoldstr. -> Luitpoldstr.: Mittelstreifen	3 6611,9879 6520,9867 6463,9862
 Rodenbergstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3 11268,16113 11003,16196 10994,16120
 Schönhauser Allee -> Rodenbergstr.: U-Bahnviadukt und Straßenbahn	3 11013,16278 11003,16196 11268,16113
-Flemmingstr. -> Oberspreestr.: Straßenbahn auf Mittelstreifen	3 21845,4875 21726,4537 21796,4517
-Oberspreestr. -> Flemmingstr.: Straßenbahn auf Mittelstreifen	3 21579,4579 21726,4537 21845,4875
+Flemmingstr. -> Oberspreestr.: Straßenbahntrasse	3 21845,4875 21726,4537 21796,4517
+Oberspreestr. -> Flemmingstr.: Straßenbahntrasse	3 21579,4579 21726,4537 21845,4875
+Westendstr. -> Oberspreestr.: Straßenbahntrasse	3 21371,4437 21389,4635 21332,4655
+Oberspreestr. -> Westendstr.: Straßenbahntrasse	3 21494,4605 21389,4635 21371,4437
 Hermannstr. -> Mahlower Str.: Gitter auf Mittelstreifen	3 11933,8198 11920,8252 11773,8231
 Mahlower Str. -> Boddinstr.: Gitter auf Mittelstreifen	3 11773,8231 11920,8252 12096,8300
 Mahlower Str. -> Hermannstr.: Gitter auf Mittelstreifen	3 11773,8231 11920,8252 11892,8372
@@ -1152,3 +1154,6 @@ Zeiler Weg	1s 11835,18301 11914,18303
 Dettelbacher Weg	1 11698,18446 11750,18273
 Dettelbacher Weg	1 11820,18043 11750,18273
 Neuenhagener Str. (Mahlsdorf)	1s 24362,11954 24317,11754
+Hindenburgdamm	1 4454,3260 4467,3332 4523,3482 4546,3527 4585,3575
+Hindenburgdamm	1 4585,3575 4580,3514 4564,3457 4514,3329 4454,3260
+tragen (Treppe)	0:60:-255 14549,16538
