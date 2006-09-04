@@ -6,7 +6,18 @@ use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
+use Getopt::Long;
 use Strassen::GPX;
+
+my $use_module = "";
+GetOptions("module=s" => \$use_module)
+    or die "usage: $0 [-module module] [file]";
+
+if ($use_module =~ m{twig}i) {
+    $Strassen::GPX::use_xml_module = "XML::Twig";
+    require XML::Twig;
+    XML::Twig->VERSION("3.26");
+}
 
 my $file = shift || die;
 Strassen::GPX->new($file)->write("-");

@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.131 2006/09/04 21:58:56 eserte Exp $
+# $Id: Makefile.PL,v 1.131 2006/09/04 21:58:56 eserte Exp eserte $
 
 use 5.005;
 
@@ -147,7 +147,7 @@ my @req_table =
   [qw/Date::Pcalc	0	all	0	devel/,
    'LogTracker plugin (mögliche Alternative ist Date::Calc)'],
   [qw/XBase		0	all	2	devel/,
-   'Erzeugen der Mapserver- oder anderer ESRI-Dateien, notwendig für radzeit.de'],
+   'Erzeugen der Mapserver- oder anderer ESRI-Dateien'],
   [qw/IPC::Run		0	all	0|4	base/,
    'hilft bei der sicheren Ausführung von externen Kommandos (insbesondere für Win32)'],
   [qw/Imager	0	all	0	devel/,
@@ -158,7 +158,7 @@ my @req_table =
    'additional optional BBBikeDraw backend for SVG graphics'],
   # also: GD::SVG, but this module currently doesn't even pass tests!
   [qw/Object::Iterate	0	all	2|4	base/,
-   'Notwendig für die radzeit.de-Version (bbd2esri)'],
+   'Notwendig für die bbd2-esri-Konvertierung'],
   [qw/Object::Realize::Later	0	all	0	base/,
    'Notwendig für Strassen::Lazy, selten benötigt'],
   [qw/Archive::Zip	0	all	2	cgi/,

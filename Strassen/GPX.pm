@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GPX.pm,v 1.8 2006/08/29 22:37:44 eserte Exp $
+# $Id: GPX.pm,v 1.9 2006/09/04 22:34:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::GPX;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Core;
 
@@ -130,6 +130,23 @@ sub _gpx2bbd_libxml {
 	    }
 	}
     }
+
+    for my $rte ($root->childNodes) {
+	next if $rte->nodeName ne "rte";
+	my $name;
+	my @c;
+	for my $rte_child ($rte->childNodes) {
+	    if ($rte_child->nodeName eq 'name') {
+		$name = $rte_child->textContent;
+	    } elsif ($rte_child->nodeName eq 'rtept') {
+		my($x, $y) = latlong2xy($rte_child);
+		push @c, "$x,$y";
+	    }
+	}
+	if (@c) {
+	    $self->push([$name, [@c], "X"]);
+	}
+    }
 }
 
 sub _gpx2bbd_twig {
@@ -162,6 +179,21 @@ sub _gpx2bbd_twig {
 		    }
 		    $self->push([$name, [@c], "X"]);
 		}
+	    }
+	} elsif ($wpt_or_trk->name eq 'rte') {
+	    my $rte = $wpt_or_trk;
+	    my $name;
+	    my @c;
+	    for my $rte_child ($rte->children) {
+		if ($rte_child->name eq 'name') {
+		    $name = $rte_child->children_text;
+		} elsif ($rte_child->name eq 'rtept') {
+		    my($x, $y) = latlong2xy_twig($rte_child);
+		    push @c, "$x,$y";
+		}
+	    }
+	    if (@c) {
+		$self->push([$name, [@c], "X"]);
 	    }
 	}
     }
