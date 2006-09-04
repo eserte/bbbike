@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Ovl.pm,v 1.15 2005/12/31 11:17:36 eserte Exp $
+# $Id: Ovl.pm,v 1.16 2006/09/04 23:02:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GPS::Ovl;
 
 use strict;
 use vars qw($VERSION @ISA $OVL_MAGIC $OVL_MAGIC_3_0 $OVL_MAGIC_4_0);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 require File::Basename;
 
@@ -37,6 +37,18 @@ use Msg qw(frommain);
 	eval 'sub Mfmt { sprintf(shift, @_) }';
     }
 }
+
+use vars qw($color_mapping);
+$color_mapping = 
+    {1 => 'red',
+     2 => 'green',
+     3 => 'blue',
+     4 => 'yellow',
+     5 => 'black',
+     6 => 'white',
+     8 => 'pink',
+     9 => 'lightblue',
+    };
 
 sub check {
     my($self_or_class, $file, %args) = @_;
@@ -186,6 +198,9 @@ sub read_ascii {
 		undef $xkoord;
 	    } elsif (/^Text=(.*)$/) {
 		$sym->{Text} = $1;
+	    } elsif (/^Col=(\d+)$/) {
+		my $color = $color_mapping->{$1};
+		$sym->{Color} = $color if defined $color;
 	    }
 	}
     }
@@ -330,15 +345,6 @@ sub as_string_ascii {
 #  schwarz, dünne Zick-Zack Linie: unbefahrbarer Weg
 #  weiß: Bundesstraße, keine Bewertung, nur zum Abdecken des Kartenuntergrundes 
 #  verwendet
-    my $color_mapping = 
-	{1 => 'red', # rot/gut befahrbar?',
-	 6 => 'white', #weiß/Bundesstraße?',
-	 4 => 'yellow', #gelb/verkehrsreich?',
-	 5 => 'black', # schwarz/unbefahrbar?
-	 2 => 'green', # Feld/Waldwege
-	 3 => 'blue', # Kopfsteinpflaster
-	};
-
     sub read_binary {
 	my($self, %args) = @_;
 	my $d = $args{debug};
