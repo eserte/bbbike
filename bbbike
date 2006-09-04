@@ -17854,12 +17854,19 @@ sub set_fonts {
 		my $l = $top->Label;
 		$std_font = $l->cget(-font);
 		if ($^O eq 'MSWin32') {
-		    # XXX Force usage of Arial, otherwise "MS Sans
-		    # Serif" is used on my system which is not nicely
-		    # scalable.
+		    # Using MS Sans Serif is probably not correct
+		    # See also: http://www.tcl.tk/cgi-bin/tct/tip/64.html
 		    my(%std_font) = $l->fontActual($std_font);
-		    $std_font = $top->fontCreate(-family => 'Arial',
-						 -size => size2pt($std_font{-size}));
+		    if ($std_font{-family} =~ m{ms sans serif}i) {
+			my %font_families = map{(lc($_),1)} $top->fontFamilies;
+			my $new_family = (  exists $font_families{tahoma} ? "tahoma"
+					  : exists $font_families{arial} ? "arial" : undef
+					 );
+			if (defined $new_family) {
+			    $std_font = $top->fontCreate(-family => $new_family,
+							 -size => size2pt($std_font{-size}));
+			}
+		    }
 		}
 		$l->destroy;
 	    }
@@ -17873,14 +17880,16 @@ sub set_fonts {
 	    if (defined $font_family && $font_family ne "" && !$kde) {
 		if (!defined $font_size) {
 		    my $std_font = $get_std_font->();
-		    $font_size = $top->fontActual($std_font, '-size');
+		    $font_size = size2pt($top->fontActual($std_font, '-size'));
 		} else {
 		    $font_size_from_user = 1;
 		}
 		$font_from_user = 1;
 		my(%a) = (-family => $font_family);
-		if (defined $font_size && $font_size =~ /^-?\d+$/) {
+		if (defined $font_size && $font_size =~ /^\d+$/) {
 		    $a{-size} = $font_size;
+		} elsif (defined $font_size) {
+		    warn "Font size defined as <$font_size>, but does not match pattern, so ignoring...";
 		}
 		if (defined $font_weight && $font_weight ne '') {
 		    $a{-weight} = $font_weight;

@@ -2,7 +2,7 @@
 
 package Bundle::BBBike_small;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 1;
 
@@ -10,7 +10,7 @@ __END__
 
 =head1 NAME
 
-Bundle::BBBike - A bundle to install only mandatory dependencies of BBBike
+Bundle::BBBike_small - A bundle to install only mandatory dependencies of BBBike
 
 =head1 SYNOPSIS
 

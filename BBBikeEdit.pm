@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.111 2006/09/01 23:57:50 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.111 2006/09/01 23:57:50 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2434,6 +2434,7 @@ EOF
 		       addnew($t, $file)
 		   },
 		  )->pack(-side => "left");
+	require Tk::BrowseEntry;
 	my $be = $f->BrowseEntry(#-state => "readonly",
 				 -textvariable => \$sel_file,
 				 ($Tk::VERSION >= 804

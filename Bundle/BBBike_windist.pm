@@ -1,0 +1,85 @@
+# -*- perl -*-
+
+package Bundle::BBBike_windist;
+
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+
+1;
+
+__END__
+
+=head1 NAME
+
+Bundle::BBBike_windist - A bundle to install windows distribution dependencies of BBBike
+
+=head1 SYNOPSIS
+
+ perl -I`pwd` -MCPAN -e 'install Bundle::BBBike_windist'
+
+=head1 CONTENTS
+
+
+Tk 800.000	- das absolute Muss!
+
+Tk::FireButton	- "Firebutton"-Funktionalität für die Windrose
+
+Tk::Pod 2.8	- Online-Hilfe
+
+Tk::FontDialog	- zum Ändern des Zeichensatzes aus dem Programm heraus
+
+Tk::JPEG
+
+Tie::Watch
+
+Tk::HistEntry
+
+Tk::Stderr	- optionales Redirect von Fehlermeldungen in ein Tk-Fenster
+
+Tk::Date
+
+Tk::PNG	- Für Icons mit besserer Alpha-Unterstützung
+
+Tk::NumEntry 2.06
+
+LWP::UserAgent	- für die WWW-Verbindungen (z.B. Wetterbericht); in der Perl/Tk-GUI empfohlen für Daten-Updates über das Internet (ansonsten wird Http.pm verwendet)
+
+XML::Parser	- optional für UAProf parsing (alternative wäre XML::SAX::PurePerl)
+
+XML::Twig	- alternativ für das Parsen und Erzeugen von GPX-Dateien, benötigt XML::Parser
+
+String::Approx 2.7	- oder man verwendet agrep (mindestens Version 3.0)
+
+Storable	- für das Caching beim CGI-Programm
+
+MLDBM
+
+List::Permutor	- Für das Problem des Handlungsreisenden
+
+PDF::Create 0.06	- Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)
+
+Win32::API	- Für das Ermitteln der verfügbaren Desktop-Größe
+
+Win32::Registry
+
+Win32::Shortcut
+
+Class::Accessor	- für GPS::GpsmanData, die ESRI-Module etc.
+
+IPC::Run	- hilft bei der sicheren Ausführung von externen Kommandos (insbesondere für Win32)
+
+Object::Iterate	- Notwendig für die radzeit.de-Version (bbd2esri)
+
+Tie::IxHash	- Damit Direktiven in Straßen-Daten geordnet bleiben
+
+GPS::Garmin	- für GPS-Upload
+
+
+=head1 DESCRIPTION
+
+Module für die binäre Windows-Distribution.
+
+=head1 AUTHOR
+
+Slaven Rezic <slaven@rezic.de>
+
+=cut

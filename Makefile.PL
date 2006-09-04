@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.129 2006/09/03 21:04:00 eserte Exp $
+# $Id: Makefile.PL,v 1.131 2006/09/04 21:58:56 eserte Exp $
 
 use 5.005;
 
@@ -20,7 +20,7 @@ use lib ".."; # falls als make_bundle gestartet
 use BBBikeVar;
 
 my %opt;
-GetOptions(\%opt, "radzeit!") or die "usage?";
+GetOptions(\%opt) or die "usage?";
 
 my $author = 'Slaven Rezic (' . $BBBike::EMAIL . ')',
 my $abstract = "BBBike - ein Routenplaner für Radfahrer in Berlin und Brandenburg";
@@ -51,23 +51,23 @@ my @req_table =
    }], # für Tk 402 sollte man bbbike 2.xx verwenden
   #in dist: [qw/Tk::Getopt	0.40	all	0	gui/],
   #in dist: [qw/Tk::ContextHelp	0	unix	0	gui/],
-  [qw/Tk::FireButton	0	all	0	gui/,
+  [qw/Tk::FireButton	0	all	0|4	gui/,
    '"Firebutton"-Funktionalität für die Windrose'],
-  [qw/Tk::Pod		2.8	all	0	gui/,
+  [qw/Tk::Pod		2.8	all	0|4	gui/,
    { de => 'Online-Hilfe', en => 'online help' }],
-  [qw/Tk::FontDialog	0	all	0	gui/,
+  [qw/Tk::FontDialog	0	all	0|4	gui/,
    'zum Ändern des Zeichensatzes aus dem Programm heraus'],
-  [qw/Tk::JPEG		0	all	0	gui/],
+  [qw/Tk::JPEG		0	all	0|4	gui/],
 #  [qw/X11::Protocol	0.04	unix	0	gui/], # not used anymore
-  [qw/Tie::Watch	0	all	0	gui/],
-  [qw/Tk::HistEntry	0	all	0	gui/],
-  [qw/Tk::Stderr	0	all	0	gui/,
+  [qw/Tie::Watch	0	all	0|4	gui/],
+  [qw/Tk::HistEntry	0	all	0|4	gui/],
+  [qw/Tk::Stderr	0	all	0|4	gui/,
    'optionales Redirect von Fehlermeldungen in ein Tk-Fenster'],
   [qw/Tk::DateEntry	1.38	all	0	gui/],
-  [qw/Tk::Date		0	all	0	gui/],
-  [qw/Tk::PNG		0	all	0	gui/,
+  [qw/Tk::Date		0	all	0|4	gui/],
+  [qw/Tk::PNG		0	all	0|4	gui/,
    'Für Icons mit besserer Alpha-Unterstützung'],
-  [qw/Tk::NumEntry	2.06	all	0	gui/],
+  [qw/Tk::NumEntry	2.06	all	0|4	gui/],
 
   [qw/LWP::UserAgent	0	all	2|4	www,gui/,
    'für die WWW-Verbindungen (z.B. Wetterbericht); in der Perl/Tk-GUI empfohlen für Daten-Updates über das Internet (ansonsten wird Http.pm verwendet)'],
@@ -117,7 +117,8 @@ my @req_table =
 
   [qw/BSD::Resource	0	unix	0	base/], # really only BSD
 
-  [qw/Win32::API	0	win	0|4	base/],
+  [qw/Win32::API	0	win	0|4	base/,
+   'Für das Ermitteln der verfügbaren Desktop-Größe'],
   [qw/Win32::Registry	0	win	0|4	base/],
   [qw/Win32::DDE::Client 0	win	0	base/],
   [qw/Win32::Shortcut	0	win	0|4	base/],
@@ -212,19 +213,38 @@ if ($^O eq 'MSWin32') {
 
 my $admin_makefile = "./Makefile.admin.PL";
 
+my $make_bundle;
+my $type_bundle = 0;
+if ($0 =~ /make_bundle/) {
+    $make_bundle = "normal";
+    $type_bundle = 0;
+} elsif ($0 =~ /make_small_bundle/) {
+    $make_bundle = "small";
+    $type_bundle = 0;
+} elsif ($0 =~ /make_radzeit_bundle/) {
+    $make_bundle = "radzeit";
+    $type_bundle = REQ_BBBIKE_RADZEIT;
+} elsif ($0 =~ /make_windist_bundle/) {
+    $make_bundle = "windist";
+    $type_bundle = REQ_BBBIKE_WINDIST;
+}
+
 my(%prereq, @prereq);
 {
-    my(@res) = build_prereq($os, $opt{radzeit} ? REQ_BBBIKE_RADZEIT : 0);
+    my(@res) = build_prereq($os, $type_bundle);
     %prereq = %{$res[0]};
     @prereq = @{$res[1]};
 }
 
 # Call before maniread:
 # Various bundles:
-exit make_bundle()         if $0 =~ /make_bundle/;
-exit make_small_bundle()   if $0 =~ /make_small_bundle/;
-exit make_radzeit_bundle() if $0 =~ /make_radzeit_bundle/;
-exit make_windist_bundle() if $0 =~ /make_windist_bundle/;
+if ($make_bundle) {
+    exit make_bundle()         if $make_bundle eq 'normal';
+    exit make_small_bundle()   if $make_bundle eq 'small';
+    exit make_radzeit_bundle() if $make_bundle eq 'radzeit';
+    exit make_windist_bundle() if $make_bundle eq 'windist';
+    die "Should not happen: unhandled value <$make_bundle>";
+}
 # OSD descriptions (not really used):
 exit make_pi_osd('win')
     if $0 =~ /make_pi_osd/ && defined $ARGV[0] && $ARGV[0] eq 'win';
@@ -261,7 +281,7 @@ sub build_prereq {
     foreach (@req_table) {
 	$_->[REQTABLE_REQ] = eval $_->[REQTABLE_REQ]; # to resolve binary or: "|"
 	my(%for_os) = map { ($_, 1) } split ",", $_->[REQTABLE_OS];
-	if ($for_os{$os} || $for_os{"all"}) {
+	if ($for_os{$os} || $for_os{"all"} || ($type == REQ_BBBIKE_WINDIST && $for_os{win})) {
 	    if ($type != 0) {
 		next if ($_->[REQTABLE_REQ] & $type) == 0;
 	    }

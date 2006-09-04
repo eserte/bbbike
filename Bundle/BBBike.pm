@@ -2,7 +2,7 @@
 
 package Bundle::BBBike;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 1;
 
@@ -37,7 +37,13 @@ Tk::Stderr	- optionales Redirect von Fehlermeldungen in ein Tk-Fenster
 
 Tk::DateEntry 1.38
 
-LWP::UserAgent	- für die WWW-Verbindungen (z.B. Wetterbericht)
+Tk::Date
+
+Tk::PNG	- Für Icons mit besserer Alpha-Unterstützung
+
+Tk::NumEntry 2.06
+
+LWP::UserAgent	- für die WWW-Verbindungen (z.B. Wetterbericht); in der Perl/Tk-GUI empfohlen für Daten-Updates über das Internet (ansonsten wird Http.pm verwendet)
 
 Image::Magick	- für Bildmanipulationen beim Radar-Bild der FU
 
@@ -51,15 +57,19 @@ XML::Simple	- optional für XML-Dumps der BBBike-Route
 
 XML::Parser	- optional für UAProf parsing (alternative wäre XML::SAX::PurePerl)
 
-XML::LibXML	- optional für das Parsen von GPX-Dateien
+XML::LibXML	- optional für das Parsen und Erzeugen von GPX-Dateien
+
+XML::Twig	- alternativ für das Parsen und Erzeugen von GPX-Dateien, benötigt XML::Parser
 
 YAML	- optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings
 
-Mail::Send	- falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will
+Mail::Mailer 1.53	- falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will
+
+MIME::Lite	- Versenden von Benutzer-Kommentaren im Webinterface
 
 String::Approx 2.7	- oder man verwendet agrep (mindestens Version 3.0)
 
-String::Similarity	- optional für den temp_blockings-Editor
+String::Similarity	- optional für den temp_blockings-Editor und ungenaue Suche in der Perl/Tk-Applikation
 
 Storable	- für das Caching beim CGI-Programm
 
@@ -71,7 +81,7 @@ Chart::ThreeD::Pie	- Tortendiagramme in der Statistik
 
 List::Permutor	- Für das Problem des Handlungsreisenden
 
-PDF::Create 0.06	- Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download)
+PDF::Create 0.06	- Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)
 
 Font::Metrics::Helvetica	- Für die Reparatur der Zeichenbreitentabellen in PDF::Create
 
@@ -95,9 +105,11 @@ Palm::PalmDoc	- für das Erzeugen von palmdoc-Dateien mit der Routenbeschreibung
 
 Astro::Sunrise	- Anzeige des Sonnenuntergangs/-aufgangs im Info-Fenster
 
+WWW::Shorten	- Kürzen der langen Mapserver-Links im Info-Fenster
+
 File::ReadBackwards	- LogTracker plugin, Edititeren
 
-Date::Pcalc	- LogTracker plugin (Alternative wäre Date::Calc)
+Date::Pcalc	- LogTracker plugin (mögliche Alternative ist Date::Calc)
 
 XBase	- Erzeugen der Mapserver- oder anderer ESRI-Dateien, notwendig für radzeit.de
 
@@ -111,6 +123,28 @@ SVG	- additional optional BBBikeDraw backend for SVG graphics
 
 Object::Iterate	- Notwendig für die radzeit.de-Version (bbd2esri)
 
+Object::Realize::Later	- Notwendig für Strassen::Lazy, selten benötigt
+
+Archive::Zip	- Zum Zippen der BBBike-Daten in bbbike-data.cgi
+
+Text::CSV_XS	- Für das Parsen des MapInfo-Formats
+
+DBI	- Für XBase/MySQL, siehe unten
+
+DBD::XBase	- Für das Parsen des ESRI-Shapefile-Formats
+
+XBase	- Ebenfalls für das Parsen des ESRI-Shapefile-Formats
+
+DBD::mysql	- Für den Zugriff auf die Hausnummerdatenbank
+
+Tie::IxHash	- Damit Direktiven in Straßen-Daten geordnet bleiben
+
+CDB_File	- Für die alternative A*-Optimierung in XS/C
+
+DB_File::Lock	- Same DB_File operations, used in Strassen::Index
+
+GPS::Garmin	- für GPS-Upload
+
 Image::Info
 
 Test::More
@@ -120,6 +154,8 @@ Test::Differences
 Test::NoWarnings
 
 WWW::Mechanize	- Für Testen des CGI-Interfaces
+
+Devel::Leak	- Für Memory-Leak-Tests
 
 
 =head1 DESCRIPTION

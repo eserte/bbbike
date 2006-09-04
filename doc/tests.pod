@@ -24,6 +24,14 @@ Straßenauswahlliste erscheint. Die A-Z-Leiste sollte vollständig sein.
 Splashscreen verschwindet. Das aufrufende Terminal sollte nun nicht im
 Vordergrund erscheinen.
 
+Texte in der Anwendung: die Schriftgröße sollte der Schriftgröße der
+normalen Desktopumgebung entsprechen (zumindest unter KDE, Windows und
+Standard-X11).
+
+Farben in der Anwendung: die Schriftfarbe und Hintergrundfarbe sollte
+der normalen Desktopumgebung entsprechen (zumindest unter KDE, Windows
+und Standard-X11).
+
 I<X11>: Im Terminalfenster sollte nichts Kryptisches stehen.
 
 I<Windows>: Das Programm wird mit C<wperl> gestartet und hinterlässt

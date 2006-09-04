@@ -2,7 +2,7 @@
 
 package [% bundle_module %];
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 1;
 
@@ -25,7 +25,7 @@ __END__
 %]
 =head1 NAME
 
-Bundle::BBBike - A bundle to install [% shortname %] dependencies of BBBike
+[% bundle_module %] - A bundle to install [% shortname %] dependencies of BBBike
 
 =head1 SYNOPSIS
 

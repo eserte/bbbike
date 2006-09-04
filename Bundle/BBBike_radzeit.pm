@@ -2,7 +2,7 @@
 
 package Bundle::BBBike_radzeit;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 1;
 
@@ -10,7 +10,7 @@ __END__
 
 =head1 NAME
 
-Bundle::BBBike - A bundle to install radzeit dependencies of BBBike
+Bundle::BBBike_radzeit - A bundle to install radzeit dependencies of BBBike
 
 =head1 SYNOPSIS
 
@@ -19,7 +19,7 @@ Bundle::BBBike - A bundle to install radzeit dependencies of BBBike
 =head1 CONTENTS
 
 
-LWP::UserAgent	- für die WWW-Verbindungen (z.B. Wetterbericht)
+LWP::UserAgent	- für die WWW-Verbindungen (z.B. Wetterbericht); in der Perl/Tk-GUI empfohlen für Daten-Updates über das Internet (ansonsten wird Http.pm verwendet)
 
 Apache::Session::DB_File	- optionale Session-Verwaltung für das CGI-Programm, notwendig für wapbbbike
 
