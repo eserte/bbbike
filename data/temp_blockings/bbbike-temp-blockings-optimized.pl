@@ -595,14 +595,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1157320800,
-         'text' => 'B 167 Frankfurter Str. OL Seelow, zw. breite Str. u. Küstriner Str. Stadtfest Vollsperrung 01.09.2006-03.09.2006 ',
-         'from' => 1156975200,
-         'data' => 'userdel	q4::temp 76771,15413 77081,14637
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -727,14 +720,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1157320799,
-         'text' => 'Turmstraßenfest vom 01.09. bis 03.09.2006 (zwischen Strom- und Waldstraße) ',
-         'from' => 1156975200,
-         'data' => 'userdel	2::temp 5368,13406 5560,13382 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6249,13322
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1164927600,
@@ -831,39 +817,19 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1157320800,
-         'text' => 'B 112 Spremberger Str. OD Forst Brandenburgtag Vollsperrung 01.09.2006-03.09.2006 ',
-         'from' => 1156975200,
-         'data' => 'userdel	q4::temp 96181,-72790 95496,-73572
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1157320800,
-         'text' => 'L 049 Triebeler Str. OD Forst Brandenburgtag Vollsperrung 31.08.2006-03.09.2006 ',
-         'from' => 1156888800,
-         'data' => 'userdel	q4::temp 96181,-72790 96424,-73412
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
+       undef,
+       undef,
        undef,
        {
-         'until' => 1157320800,
-         'text' => 'L 015 B109 südl. Prenzlau-Boitzenburg OD Gollmitz Einbau Deckschicht Vollsperrung 01.09.2006-03.09.2006 ',
-         'from' => 1156975200,
-         'data' => 'userdel	2::inwork 30743,99403 30504,99595
+         'source_id' => 'IM_003436',
+         'until' => 1162249200,
+         'text' => 'Brückenstr. (Mitte) Richtung Heinrich-Heine-Str. zwischen Holzmarktstr. und Köpenicker Str. Baustelle Fahrtrichtung gesperrt (bis 30.10.2006)',
+         'from' => 1157352536,
+         'data' => 'userdel	1::inwork 11351,12221 11347,12181 11328,12040 11283,11876 11242,11720
 ',
          'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'INKO_83350',
-         'until' => 1157335200,
-         'text' => 'Landsberger Allee (Friedrichshain - Kreuzberg) in Richtung stadteinwärts zwischen Virchowstr. und Friedensstr. Baustelle, Straße vollständig gesperrt (bis 04.09.2006 4.00 Uhr)',
-         'from' => 1157138648,
-         'data' => 'userdel	q4::inwork; 12975,13266 12909,13231 12808,13181 12727,13159 12582,13128 12386,13085
-',
-         'type' => 'handicap'
        }
      
 );

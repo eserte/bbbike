@@ -5720,4 +5720,13 @@ EOF
 userdel	q4::inwork; 12975,13266 12909,13231 12808,13181 12727,13159 12582,13128 12386,13085
 EOF
      },
+     { from  => 1157352536, # 2006-09-04 08:48
+       until => 1162249200, # 2006-10-31 00:00
+       text  => 'Brückenstr. (Mitte) Richtung Heinrich-Heine-Str. zwischen Holzmarktstr. und Köpenicker Str. Baustelle Fahrtrichtung gesperrt (bis 30.10.2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_003436',
+       data  => <<EOF,
+userdel	1::inwork 11351,12221 11347,12181 11328,12040 11283,11876 11242,11720
+EOF
+     },
     );
