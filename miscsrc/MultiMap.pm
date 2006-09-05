@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiMap.pm,v 1.2 2006/02/17 22:51:37 eserte Exp $
+# $Id: MultiMap.pm,v 1.4 2006/09/05 21:40:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -12,14 +12,16 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-package MultiMap; # and other maps: GoYellow
+# Description (en): Link to GoYellow, WikiMapia and MultiMap
+# Description (de): Links zu GoYellow, WikiMapia und MultiMap
+package MultiMap;
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 sub register {
     $main::info_plugins{__PACKAGE__ . "_MultiMap"} =
@@ -31,6 +33,11 @@ sub register {
 	{ name => "GoYellow",
 	  callback => sub { showmap_goyellow(@_) },
 	  callback_3_std => sub { showmap_url_goyellow(@_) },
+	};
+    $main::info_plugins{__PACKAGE__ . "_WikiMapia"} =
+	{ name => "WikiMapia",
+	  callback => sub { showmap_wikimapia(@_) },
+	  callback_3_std => sub { showmap_url_wikimapia(@_) },
 	};
 }
 
@@ -75,6 +82,31 @@ sub showmap_url_goyellow {
 sub showmap_goyellow {
     my(%args) = @_;
     my $url = showmap_url_goyellow(%args);
+    start_browser($url);
+}
+
+sub showmap_url_wikimapia {
+    my(%args) = @_;
+
+    my $px = $args{px};
+    my $py = $args{py};
+
+    for ($px, $py) {
+	s{\.}{};
+	$_ = substr($_, 0, 8); # XXX what about <10° and >100°?
+	if (length($_) < 8) {
+	    $_ .= " "x(8-length($_));
+	}
+    }
+
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "http://wikimapia.org/s/#y=%s&x=%s&z=%d&l=5&m=a",
+	$py, $px, $scale;
+}
+
+sub showmap_wikimapia {
+    my(%args) = @_;
+    my $url = showmap_url_wikimapia(%args);
     start_browser($url);
 }
 

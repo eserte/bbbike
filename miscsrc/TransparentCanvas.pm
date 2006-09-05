@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: TransparentCanvas.pm,v 1.6 2006/06/11 18:41:02 eserte Exp $
+# $Id: TransparentCanvas.pm,v 1.7 2006/09/05 21:32:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -12,6 +12,8 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
+# Description (en): Experimental: make BBBike canvas transparent
+# Description (de): Experimentell: transparente BBBike-Karte erzeugen
 package TransparentCanvas;
 
 use BBBikePlugin;
@@ -19,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 use X11::Protocol;
 

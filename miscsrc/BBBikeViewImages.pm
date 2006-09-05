@@ -1,12 +1,14 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.10 2006/08/05 22:43:30 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.11 2006/09/05 21:44:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
 #
 
+# Description (en): View images in bbd files
+# Description (de): Bilder in bbd-Dateien anschauen
 package BBBikeViewImages;
 
 use BBBikePlugin;
@@ -14,7 +16,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $geometry);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 
 my $iso_date_rx = qr{(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})};
 

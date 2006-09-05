@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: AltBerlin.pm,v 1.2 2006/01/11 22:22:55 eserte Exp $
+# $Id: AltBerlin.pm,v 1.4 2006/09/05 21:32:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -12,6 +12,8 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
+# Description (en): Link to maps from Alt-Berlin (alt-berlin.info)
+# Description (de): Link zu Alt-Berliner Stadtplänen (alt-berlin.info)
 package AltBerlin;
 
 use BBBikePlugin;
@@ -19,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%nr_to_year);
 %nr_to_year = qw(
@@ -50,7 +52,6 @@ use vars qw(%nr_to_year);
 9 1960
 22 1961
 7 1989
-10 1936
 );
 
 sub register {

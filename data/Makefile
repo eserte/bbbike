@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.111 2006/09/03 17:27:49 eserte Exp $
+# $Id: Makefile,v 2.112 2006/09/05 05:31:18 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1074,6 +1074,11 @@ check-dates:	.check_dates
 
 check-crossings:	check-crossings-important \
 			check-crossings-less-important
+
+.PRECIOUS:	${PERSISTENTTMPDIR}/crossings.bbd \
+		${PERSISTENTTMPDIR}/crossings_gewaesser.bbd \
+		${PERSISTENTTMPDIR}/crossings_bahn.bbd \
+		${PERSISTENTTMPDIR}/crossings_gewaesser_ignore.bbd
 
 check-crossings-important:	${PERSISTENTTMPDIR}/crossings.bbd
 

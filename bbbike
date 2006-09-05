@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.262 2006/09/04 22:46:43 eserte Exp $
+# $Id: bbbike,v 3.265 2006/09/05 21:30:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.262 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.265 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -3399,24 +3399,7 @@ sub do_iconframe {
       );
     $opbm->command
       (-label => M"Schriftart ändern",
-       -command => sub {
-	   eval {
-	       require Tk::FontDialog;
-	       Tk::FontDialog->VERSION(0.05);
-	   };
-	   if ($@) {
-	       return if !perlmod_install_advice('Tk::FontDialog');
-	   }
-	   my $fedit = $top->FontDialog;
-	   my $f = $fedit->Show;
-	   if (defined $f) {
-	       $font{'normal'} = $f;
-	       $top->optionAdd("*font" => $font{'normal'}, 'userDefault');
-	       # XXX RefontTree ändert auch $font{'standard'}
-	       $top->RefontTree(-font => $font{'normal'}); # -canvas nicht
-	       set_fonts($font{'normal'});
-	   }
-       },
+       -command => \&change_font,
       );
     $opbm->checkbutton(-label => M"gedrehte Zeichensätze",
 		       -variable => \$use_font_rot);
@@ -3903,6 +3886,7 @@ $sx->grid(-row => 1, -column => 0, -sticky => 'ew');
 	 -borderwidth => 2,
 	 -visible => 0,
 	 -width => $top->width/10,
+	 -labelfont => $font{'reduced'},
 	)->grid(-row => 0,
 		-column => $gridx++,
 		-sticky => 'ew');
@@ -4686,16 +4670,9 @@ speicherplatzsparender.",
 	 ['advanced','!',undef, var => \$advanced,
 	  label => M"Advanced mode"],
 	 ['public','!',undef, nogui => 1,
-	  var => sub { $public_test = 1;
-		       $advanced = 0;
-		       $devel_host = 0;
-		       $do_www = 0;
-		       $no_map = 1;
-		       $public = 1;
-		       $autosave_opts = 0;
-		       $lazy_plot = 0;
-		       undef $proxy;
-		   }],
+	  var => \&_set_public],
+	 ['publicconfig','!',undef, nogui => 1,
+	  var => \&_set_public],
 	 ['v','!',0,	alias => [qw(verbose)],
 	  label => M"Verbose", var => \$verbose],
 	 ['version','!',undef,
@@ -4748,12 +4725,13 @@ speicherplatzsparender.",
 	#XXX    if (!GetOptions(@getopt_list)) { usage('', \@getopt_list) }
     } else {
 	$Tk::Getopt::x11_pass_through = 1;
-	$opt = new Tk::Getopt(-opttable => \@opttable,
-			      -filename => catfile($bbbike_configdir, "config"),
-			     );
+	pre_check_arguments(); # sets $public
+	$opt = new Tk::Getopt
+	    (-opttable => \@opttable,
+	     -filename => catfile($bbbike_configdir, ($public ? "config_publictest" : "config")),
+	    );
 	$opt->set_defaults;
-	pre_check_arguments();
-	$opt->load_options unless $public; # force defaults
+	$opt->load_options if !$public || $public_config; # force defaults
 	if (!$opt->get_options) {
 	    print $opt->usage;
 	    exit 1;
@@ -4768,12 +4746,27 @@ speicherplatzsparender.",
     }
 }
 
-# Check for -public option --- in this case do not load the config file.
+sub _set_public {
+    $public_test = 1;
+    $advanced = 0;
+    $devel_host = 0;
+    $do_www = 0;
+    $no_map = 1;
+    $public = 1;
+    $autosave_opts = 0;
+    $lazy_plot = 0;
+    undef $proxy;
+}
+
+# Check for -public and -publicconfig options --- in this case do not
+# load the config file.
 sub pre_check_arguments {
     foreach my $arg (@ARGV) {
 	if ($arg eq '-public') {
 	    $public = 1;
-	    last;
+	} elsif ($arg eq '-publicconfig') {
+	    $public = 1;
+	    $public_config = 1;
 	}
     }
 }
@@ -12144,7 +12137,7 @@ sub show_info {
 				if (exists $long_url_to_short_url{$url}) {
 				    return $long_url_to_short_url{$url};
 				}
-				if (!eval { require WWW::Shorten; WWW:Shorten->import(); 1 }) {
+				if (!eval { require WWW::Shorten; WWW::Shorten->import(); 1 }) {
 				    status_message("Das Modul WWW::Shorten ist nicht vorhanden.", "die");
 				}
 				my $short_url = makeashorterlink($url);
@@ -16555,6 +16548,13 @@ sub plugin_menu {
 		       require BBBikePlugin;
 		       BBBikePlugin::find_all_plugins($FindBin::RealBin, $top);
 		   });
+    if ($devel_host) {
+	$opbm->command(-label => M"Alle Plugins zeigen (neu)",
+		       -command => sub {
+			   require "$FindBin::RealBin/miscsrc/BBBikePluginLister.pm"; # XXX to real!
+			   BBBikePluginLister::plugin_lister($top, $FindBin::RealBin);
+		       });
+    }
 }
 
 sub menu_entry_up_down {
@@ -17827,6 +17827,23 @@ sub set_mouse_desc {
     }
 }
 
+sub change_font {
+    eval {
+	require Tk::FontDialog;
+	Tk::FontDialog->VERSION(0.05);
+    };
+    if ($@) {
+	return if !perlmod_install_advice('Tk::FontDialog');
+    }
+    my $fedit = $top->FontDialog;
+    my $f = $fedit->Show;
+    if (defined $f) {
+	my $normal_font = $f;
+	set_fonts($normal_font);
+	$top->optionAdd("*font" => $font{normal}, 'userDefault');
+    }
+}
+
 sub size2px {
     my $size = shift;
     $size <  0 ? -$size : int(0.5 + $size*($top_dpi/72));
@@ -17875,7 +17892,7 @@ sub set_fonts {
 
 	my $font_from_user = 0; # true, if from options or set interactively
 	my $font_size_from_user = 0;
-	if (!defined $std_font || $std_font eq '') {
+	if (!$std_font) {
 	    # $font_family, $font_size, $font_weight from cmdline
 	    if (defined $font_family && $font_family ne "" && !$kde) {
 		if (!defined $font_size) {
@@ -17917,8 +17934,10 @@ sub set_fonts {
 	    $font_from_user = $font_size_from_user = 1;
 	}
 
-	if ($std_font) {
-	    $font{'normal'} = $top->fontCreate($top->fontActual($std_font));
+	if (exists $font{'normal'} && $std_font) {
+	    $top->fontConfigure($font{normal}, $top->fontActual($std_font));
+	} elsif ($std_font) {
+	    $font{'normal'} = $std_font;
 	} else {
 	    $font{'normal'} = $top->fontCreate;
 	}
@@ -17950,7 +17969,11 @@ sub set_fonts {
 
 	foreach (qw(veryhuge huge verylarge large bold
 		    reduced small tiny fixed standard fix15)) {
-	    $font{$_} = $top->fontCreate($top->fontActual($font{'normal'}));
+	    if (exists $font{$_}) {
+		$top->fontConfigure($font{$_}, $top->fontActual($font{'normal'}));
+	    } else {
+		$font{$_} = $top->fontCreate($top->fontActual($font{'normal'}));
+	    }
 	}
 
 	my $minfs = sub {
@@ -18025,12 +18048,19 @@ sub set_fonts {
     }
 
     for my $font (@font) {
+	my $font_key = $font."-italic";
 	eval {
-	    $font{$font."-italic"} = $top->fontCreate($top->fontActual($font{$font}), -slant => "italic");
+	    if (exists $font{$font_key}) {
+		$top->fontConfigure($font{$font_key},
+				    $top->fontActual($font{$font}, -slant => "italic"),
+				   );
+	    } else {
+		$font{$font_key} = $top->fontCreate($top->fontActual($font{$font}), -slant => "italic");
+	    }
 	};
-	if ($@ || !$font{$font."-italic"}) {
+	if ($@ || !$font{$font_key}) {
 	    # fallback to non-italic variant
-	    $font{$font."-italic"} = $font{$font};
+	    $font{$font_key} = $font{$font};
 	}
     }
 }

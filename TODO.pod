@@ -16,38 +16,12 @@ Legend:
 
 =over
 
-=item * (M4)
-
-Beim Ändern des Zeichensatzes mit E<quot>Schriftart ändernE<quot> wird
-anscheinend der font E<quot>boldE<quot> nicht berücksichtigt. Gesehen:
-im Infor-Fenster. Vielleicht betrifft das auch andere Schriftarten.
-Möglicher Grund: vielleicht darf ich nicht fontCreate sagen, wenn ich
-einen bestehenden Font ändern möchte? Oder vielleicht sollte
-RefontTree auch Text-Tags ändern? Und Canvas-Items auch? 
-
-Die A..Z-Leiste im Auswahlfenster verwendet anscheinend keinen Font
-aus %font (und wird auch bei E<quot>Schriftart ändernE<quot> nicht
-geändert. Siehe vorherigen Absatz.
-
-=item * (M5)
-
-Bei der Verwendung von -public sollte ein andere Konfigurationsdatei
-zum Speichern verwendet werden, um versehentliches Speichern einer
-Konfiguration beim Testen zu vermeiden. Ebenso sollte es bei -public
-eine Möglichkeit geben, eine Konfiguration wissentlich zum Testen zu
-laden. (-> doc/tests.pod)
-
 =item * (H5)
 
-Besserer Plugin-Dialog. Plugins sollten aus der Plugin-Liste permanent
-ein/ausgeschaltet werden können. Ebenso sollten die Plugin-Argumente
-in diesem Dialog angezeigt und editiert werden können. Plugin-Dialoge
-von anderen Anwendungen (gimp, gaim, mozilla, firefox) anschauen.
-
-=item * (M5)
-
-Check: ist die Reihenfolge der Nachbarpunktselektion beim
-nachträglichen Via-Einfügen egal oder gibt es hier einen Bug?
+Besserer Plugin-Dialog: offiziell machen, wenn er sich bewährt.
+Plugin-Argumente sollten angezeigt und editiert werden können.
+Vielleicht auch mehr Informationen (Icon, längere Beschreibung etc.)
+hereinnehmen.
 
 =item * (H5)
 
@@ -2458,16 +2432,6 @@ Only needed if my functions would be too slow one day.
 
 Maybe write an BBBikeAreaPlugin for displaying the current route's
 area (in a balloon or additional label/toplevel).
-
-=item * (M1)
-
-New BBBike Plugin for Wikimapia:
-
-Die URLs sehen so aus:
-
-L<http://wikimapia.org/s/#y=52521235&x=13362122&z=15&l=5&m=a>
-
-z ist die Zoomstufe, wahrscheinlich wie bei googlemaps
 
 =back
 

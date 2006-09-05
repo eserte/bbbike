@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.11 2006/02/19 20:55:52 eserte Exp eserte $
+# $Id: LuiseBerlin.pm,v 1.12 2006/09/05 21:32:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -12,11 +12,12 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
+# Description (de): Straﬂen- und Bezirkslexikon des Luisenst‰dtischen Bildungsvereins (Luise-Berlin.de)
 package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!caller(2)) {

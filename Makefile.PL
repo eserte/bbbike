@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.131 2006/09/04 21:58:56 eserte Exp eserte $
+# $Id: Makefile.PL,v 1.132 2006/09/05 21:43:06 eserte Exp $
 
 use 5.005;
 

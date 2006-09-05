@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.40 2006/08/26 21:58:20 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.41 2006/09/05 20:01:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.40 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.41 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -76,7 +76,7 @@ use vars qw(
      %str_name_draw %str_nr_draw %p_name_draw %str_far_away %p_far_away
      %p_regions %str_regions
      $init_from $init_to $coloring $route_dashed $route_arrowed
-     $public $want_wind $winddir $wind
+     $public $public_config $want_wind $winddir $wind
      $wind_v $wind_v_max $winddate
      $bp_obj $ua $proxy
      $orientation $wasserstadt $wasserumland $init_scope %act_value

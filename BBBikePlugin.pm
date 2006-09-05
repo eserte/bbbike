@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePlugin.pm,v 1.10 2005/11/19 00:42:57 eserte Exp $
+# $Id: BBBikePlugin.pm,v 1.11 2006/09/05 21:31:39 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2006 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@ use vars qw($VERSION %plugins);
 $VERSION = 0.02;
 
 use Class::Struct;
-struct('BBBikePlugin::Plugin' => [Name => "\$", File => "\$", Description => "\$"]);
+struct('BBBikePlugin::Plugin' => [Name => "\$", File => "\$", Description => "\$", Active => "\$"]);
 
 sub register {
     die "This package does not define the register method";
@@ -67,7 +67,7 @@ sub find_all_plugins {
 	$lb->bind("<Double-1>" => $doit);
 	if ($main::balloon) {
 	    $main::balloon->attach($lb->Subwidget("scrolled"),
-				   -msg => [map { $_->Description } @p]);
+				   -msg => [map { $_->Description || $_->File } @p]);
 	}
 	$t->Button(-text => "Laden", # XXX Msg.pm
 		   -command => $doit)->pack(-fill => "x");
@@ -82,7 +82,13 @@ sub _find_all_plugins_perl {
     require File::Find;
     my @p;
     my $wanted = sub {
-	if (/^.*\.pm$/ && $_ ne "BBBikePlugin.pm" && $File::Find::name !~ m{/CVS/} && open(PM, $_)) {
+	if (/^.*\.pm$/
+	    && $_ ne "BBBikePlugin.pm" # meta modules
+	    && $_ ne "BBBikePluginLister.pm"
+	    && $File::Find::name !~ m{/bbbike/projects/} # the www.radzeit.de directories
+	    && $File::Find::name !~ m{/bbbike/BBBike-\d+\.\d+(-DEVEL)?/} # distdir
+	    && $File::Find::name !~ m{/(CVS|RCS|\.svn)/}
+	    && open(PM, $_)) {
 	    my $curr_file = $_;
 	    my $descr;
 	    my $is_plugin;
@@ -105,13 +111,15 @@ sub _find_all_plugins_perl {
 		$curr_file =~ s/\..*$//;
 		$p->Name($curr_file);
 		$p->File($File::Find::name);
-		$p->Description($descr || $File::Find::name);
+		$p->Description($descr);
 		push @p, $p;
 	    }
 	}
     };
 
     File::Find::find($wanted, $topdir);
+
+    _plugin_active_check(\@p);
 
     @p;
 }
@@ -135,7 +143,18 @@ sub _find_all_plugins_unix {
     }
     close F;
 
+    _plugin_active_check(\@p);
+
     @p;
+}
+
+sub _plugin_active_check {
+    my($p_ref) = @_;
+    for my $p (@$p_ref) {
+	if ($INC{$p->File}) {
+	    $p->Active(1);
+	}
+    }
 }
 
 sub place_menu_button {
