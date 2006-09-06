@@ -854,6 +854,15 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'data' => 'userdel	2::inwork 26381,-9962 25700,-9502
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003491',
+         'until' => undef,
+         'text' => 'Uhlandstr. (Charlottenburg) in Richtung Süden, zwischen Steinplatz und Kantstr. Straße vollständig gesperrt',
+         'from' => undef,
+         'data' => 'userdel	1::inwork 5122,11300 5102,11006
+',
+         'type' => 'gesperrt'
        }
      
 );

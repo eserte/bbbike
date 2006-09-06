@@ -5753,4 +5753,13 @@ EOF
 userdel	2::inwork 26381,-9962 25700,-9502
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Uhlandstr. (Charlottenburg) in Richtung Süden, zwischen Steinplatz und Kantstr. Straße vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_003491',
+       data  => <<EOF,
+userdel	1::inwork 5122,11300 5102,11006
+EOF
+     },
     );
