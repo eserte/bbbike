@@ -16,6 +16,13 @@ Legend:
 
 =over
 
+=item * (M4)
+
+If FontDialog is available, then use this instead of the *font entries
+in the option editor. Make FontDialog also usable for fixed font
+selection. Otherwise, if FontDialog is not available, the chosen fonts
+should be made immediately visible using set_fonts().
+
 =item * (M1)
 
 BBBikeScribble: tell user where the scribble was saved (at least in
@@ -1274,6 +1281,11 @@ Tk-SREZIC/examples/k2listbox.pl?
 
 =over
 
+=item * (*M4)
+
+Make sure that Tahoma 8 is used as default font on windows. Do I need
+to use a larger fonts if user's font settings are different?
+
 =item * (*M3)
 
 Prüfen, ob Font::Metrics::Helvetica in der winbindist dabei ist und
@@ -1642,6 +1654,15 @@ L<http://www.adfc-frankfurt-oder.de/radtour/>
 =head2 Datenhandling (make, conversion ...)
 
 =over
+
+=item * (H4)
+
+Routes vs. Layers: some data formats may be interpreted as routes and
+as map layers. If interpreted as routes, then normally information is
+lost (colors, route is always connected...). If interpreted as map
+layer, then information about length and time and maybe a route list
+is not available. How to solve this problem? Have a clever route/layer
+loader which decides what to use?
 
 =item * (M4)
 

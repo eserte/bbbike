@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePlugin.pm,v 1.11 2006/09/05 21:31:39 eserte Exp $
+# $Id: BBBikePlugin.pm,v 1.12 2006/09/06 20:59:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2006 Slaven Rezic. All rights reserved.
@@ -151,7 +151,9 @@ sub _find_all_plugins_unix {
 sub _plugin_active_check {
     my($p_ref) = @_;
     for my $p (@$p_ref) {
-	if ($INC{$p->File}) {
+	my $short_file = $p->File;
+	$short_file =~ s{^\Q$FindBin::RealBin\E/*}{};
+	if ($INC{$p->File} || $INC{$short_file}) {
 	    $p->Active(1);
 	}
     }

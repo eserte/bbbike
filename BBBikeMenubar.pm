@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMenubar.pm,v 1.16 2004/07/04 22:16:55 eserte Exp $
+# $Id: BBBikeMenubar.pm,v 1.17 2006/09/06 21:32:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2002,2003 Slaven Rezic. All rights reserved.
@@ -67,8 +67,7 @@ sub bbbike_context {
       OpenCommand  => sub { main::load_save_route(0) },
       SaveCommand  => sub { main::load_save_route(1) },
       PrintCommand => \&main::print_function,
-      OptionsCommand => sub { $main::opt->option_editor($main::top, -transient => $top) # XXX make configurable like in bbbike main
-			  },
+      OptionsCommand => sub { main::optedit() },
       ExitCommand  => \&main::exit_app,
      };
 }

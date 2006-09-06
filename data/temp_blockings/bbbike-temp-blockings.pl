@@ -5252,8 +5252,8 @@ userdel	2::temp 35482,-103562 35379,-103141 35072,-102150
 EOF
      },
      { from  => 1154296800, # 2006-07-31 00:00
-       until => 1157839200, # 2006-09-10 00:00
-       text  => 'L 074 Kehrigk-Märkisch Buchholz OD Märkisch Buchholz, Friedrichstr. Straßenbau Vollsperrung 01.08.2006-09.09.2006 ',
+       until => 1160258400, # 2006-10-08 00:00
+       text  => 'L 074 Kehrigk-Märkisch Buchholz OD Märkisch Buchholz, Friedrichstr. Straßenbau Vollsperrung 01.08.2006-07.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 36004,-32198 35916,-32601
@@ -5431,8 +5431,8 @@ userdel	2::inwork 46389,15079 46564,15609 46717,15970 46852,16883
 EOF
      },
      { from  => 1155506400, # 2006-08-14 00:00
-       until => 1158098400, # 2006-09-13 00:00
-       text  => 'K 7239 Diedersdorf-Birkholz OD Diedersdorf, Kno. Birkholzer Str./ Chausseestr. Bau Kreisverkehrsplatz Vollsperrung 15.08.2006-12.09.2006 ',
+       until => 1159221600, # 2006-09-26 00:00
+       text  => ' K 7239 Diedersdorf-Birkholz OD Diedersdorf, Kno. Birkholzer Str./ Chausseestr. Bau Kreisverkehrsplatz Vollsperrung 15.08.2006-25.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 7547,-5739 7399,-7001
@@ -5753,13 +5753,21 @@ EOF
 userdel	2::inwork 26381,-9962 25700,-9502
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Uhlandstr. (Charlottenburg) in Richtung Süden, zwischen Steinplatz und Kantstr. Straße vollständig gesperrt',
+     { from  => 1157576473, # 2006-09-06 23:01
+       until => 1167605999, # 2006-12-31 23:59
+       text  => 'Uhlandstr. (Charlottenburg) in Richtung Süden, zwischen Steinplatz und Kantstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2006)',
        type  => 'gesperrt',
        source_id => 'IM_003491',
        data  => <<EOF,
 userdel	1::inwork 5122,11300 5102,11006
+EOF
+     },
+     { from  => 1157666400, # 2006-09-08 00:00
+       until => 1164927600, # 2006-12-01 00:00
+       text  => 'L 861 Damsdorf-B 1 Plessow OD Göhlsdorf, Hauptstr., Plötziner Str. Kanal- und Straßenbau Vollsperrung 09.09.2006-30.11.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -29624,-5855 -29900,-5879 -30199,-5774
 EOF
      },
     );

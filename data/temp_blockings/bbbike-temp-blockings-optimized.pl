@@ -537,8 +537,8 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        {
-         'until' => 1157839200,
-         'text' => 'L 074 Kehrigk-Märkisch Buchholz OD Märkisch Buchholz, Friedrichstr. Straßenbau Vollsperrung 01.08.2006-09.09.2006 ',
+         'until' => 1160258400,
+         'text' => 'L 074 Kehrigk-Märkisch Buchholz OD Märkisch Buchholz, Friedrichstr. Straßenbau Vollsperrung 01.08.2006-07.10.2006 ',
          'from' => 1154296800,
          'data' => 'userdel	2::inwork 36004,-32198 35916,-32601
 ',
@@ -642,8 +642,8 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'type' => 'gesperrt'
        },
        {
-         'until' => 1158098400,
-         'text' => 'K 7239 Diedersdorf-Birkholz OD Diedersdorf, Kno. Birkholzer Str./ Chausseestr. Bau Kreisverkehrsplatz Vollsperrung 15.08.2006-12.09.2006 ',
+         'until' => 1159221600,
+         'text' => ' K 7239 Diedersdorf-Birkholz OD Diedersdorf, Kno. Birkholzer Str./ Chausseestr. Bau Kreisverkehrsplatz Vollsperrung 15.08.2006-25.09.2006 ',
          'from' => 1155506400,
          'data' => 'userdel	q4::inwork 7547,-5739 7399,-7001
 ',
@@ -857,12 +857,20 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
        },
        {
          'source_id' => 'IM_003491',
-         'until' => undef,
-         'text' => 'Uhlandstr. (Charlottenburg) in Richtung Süden, zwischen Steinplatz und Kantstr. Straße vollständig gesperrt',
-         'from' => undef,
+         'until' => 1167605999,
+         'text' => 'Uhlandstr. (Charlottenburg) in Richtung Süden, zwischen Steinplatz und Kantstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2006)',
+         'from' => 1157576473,
          'data' => 'userdel	1::inwork 5122,11300 5102,11006
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1164927600,
+         'text' => 'L 861 Damsdorf-B 1 Plessow OD Göhlsdorf, Hauptstr., Plötziner Str. Kanal- und Straßenbau Vollsperrung 09.09.2006-30.11.2006 ',
+         'from' => 1157666400,
+         'data' => 'userdel	q4::inwork -29624,-5855 -29900,-5879 -30199,-5774
+',
+         'type' => 'handicap'
        }
      
 );
