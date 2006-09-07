@@ -5770,4 +5770,36 @@ EOF
 userdel	q4::inwork -29624,-5855 -29900,-5879 -30199,-5774
 EOF
      },
+     { from  => 1158876000, # 2006-09-22 00:00
+       until => 1159308000, # 2006-09-27 00:00
+       text  => 'B 246 Nächst Neuendorfer Chaussee Bahnübergang in der OL Zossen Gleisbauarbeiten Vollsperrung 23.09.2006-26.09.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 13623,-20519 13414,-20498 13326,-20518
+EOF
+     },
+     { from  => 1159308000, # 2006-09-27 00:00
+       until => 1159740000, # 2006-10-02 00:00
+       text  => 'L 030 Spreebordstraße OL Neu Zittau Deckeneinbau Vollsperrung 28.09.2006-01.10.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 33839,-1057 33773,-1116 33628,-1509
+EOF
+     },
+     { from  => 1140303600, # 2006-02-19 00:00
+       until => 1164927600, # 2006-12-01 00:00
+       text  => 'B 096 Gransee-Fürstenberg Brücke über Wentowkanal bei Dannenwalde Brückenabriß- u. -neubau Vollsperrung 20.02.2006-30.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -5962,74421 -6037,73865
+EOF
+     },
+     { from  => 1152482400, # 2006-07-10 00:00
+       until => 1166742000, # 2006-12-22 00:00
+       text  => 'L 014 Großderschau-Kyritz Brücke über den Graben bei Babe Brückenneubau Vollsperrung 11.07.2006-21.12.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -64545,43296 -63700,42146
+EOF
+     },
     );

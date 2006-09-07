@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.44 2006/09/04 21:18:52 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.44 2006/09/04 21:18:52 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -226,9 +226,14 @@ full-cvs-dist:	MANIFEST.withcvs
 
 # XXX change to use rsync
 nightly-tarball-from-sourceforge:
-	@echo "No tarballs anymore, change to rsync"
+	@echo "No tarballs anymore, use make rsync-cvs-repository-from-sourceforge"
 	false
 #	DATE=`date +%Y%m%d`; wget -O $(HOME)/trash/bbbike-cvsroot.$$DATE.tar.bz2 http://cvs.sourceforge.net/cvstarballs/bbbike-cvsroot.tar.bz2
+
+rsync-cvs-repository-from-sourceforge:
+	mkdir -p $(HOME)/trash/bbbike-cvsroot
+	cd $(HOME)/trash/bbbike-cvsroot && \
+	    rsync -av rsync://bbbike.cvs.sourceforge.net/cvsroot/bbbike/ ./
 
 # DISTRIBUTIONS ##########################################################
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.265 2006/09/05 21:30:43 eserte Exp $
+# $Id: bbbike,v 3.265 2006/09/05 21:30:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -799,6 +799,10 @@ if (!defined $top) {
     }
 }
 
+## DEBUG_BEGIN
+#BEGIN{mymstat("after basic MainWindow setup BEGIN");} mymstat("after basic MainWindow setup");
+## DEBUG_END
+
 # KDE initialisation
 if ($run_under_kde) {
     eval {
@@ -815,6 +819,10 @@ if ($run_under_kde) {
     };
     warn __LINE__ . ": $@" if $@; # XXX and $verbose
 }
+
+## DEBUG_BEGIN
+#BEGIN{mymstat("after KDE initialisation");} mymstat("after KDE initialisation");
+## DEBUG_END
 
 # Are we running exceed?
 $exceed = ($top->server =~ /Hummingbird/);
@@ -858,6 +866,10 @@ geometry_dependent_settings();
 $top_dpmm = $top->screenwidth/$top->screenmmwidth;
 $top_dpi  = $top_dpmm*25.4;
 $ps_image_res = int($top_dpi) . "x" . int($top_dpi);
+
+## DEBUG_BEGIN
+#BEGIN{mymstat("before setfonts BEGIN");} mymstat("before setfonts");
+## DEBUG_END
 
 # Zeichensätze
 set_fonts();
@@ -1560,7 +1572,7 @@ $splash_screen->Update(0.2) if $splash_screen;
 do_iconframe() if $do_iconframe;
 if ($standard_menubar) {
 ## DEBUG_BEGIN
-#mymstat("set menubar");
+#mymstat("before set menubar");
 ## DEBUG_END
     BBBike::Menubar::Set();
 }
@@ -3679,7 +3691,7 @@ sub do_iconframe {
     }
 
 ## DEBUG_BEGIN
-#mymstat("iconframe: underline all");
+#mymstat("before iconframe: underline all");
 ## DEBUG_END
     if ($misc_frame->can('UnderlineAll'))  { $misc_frame->UnderlineAll }
     if ($misc_frame2->can('UnderlineAll')) { $misc_frame2->UnderlineAll }
@@ -3691,7 +3703,7 @@ sub do_iconframe {
 #      (-row => 0, -column => 2, -sticky => 'n');
 
 ## DEBUG_BEGIN
-#mymstat("iconframe: bindings");
+#mymstat("before iconframe: bindings");
 ## DEBUG_END
     bind_nomod($top, "<s>" => sub { $strasse_check->invoke });
     bind_nomod($top, "<l>" => sub { $landstrasse_check->invoke });
@@ -3758,7 +3770,7 @@ $splash_screen->Update(0.3) if $splash_screen;
 
 ##### sonstige Bilder #####
 ## DEBUG_BEGIN
-#mymstat("load photos");
+#mymstat("before load photos");
 ## DEBUG_END
 load_photos();
 
@@ -4001,7 +4013,11 @@ $last_loaded_obj =
 load_last_loaded($last_loaded_obj);
 
 hide_logo();
-$top->deiconify unless $top->{initial_iconic};
+if ($top->{initial_iconic}) {
+    $top->iconify; # may be necessary to undo ->withdraw
+} else {
+    $top->deiconify;
+}
 
 # XXX should be after deiconify, otherwise center does not work (?)
 choose_from_plz(-str   => $center_on_str)   if defined $center_on_str;

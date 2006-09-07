@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDebug.pm,v 1.4 2005/05/22 21:18:02 eserte Exp $
+# $Id: BBBikeDebug.pm,v 1.4 2005/05/22 21:18:02 eserte Exp eserte $
 #
 # This is the Debug example from perlfilter.pod
 # Modified by Slaven Rezic
@@ -77,20 +77,23 @@ if ($Config{'optimize'} =~ /PERL_DEBUGGING_MSTATS/ &&
     eval { require Devel::Peek; 1 }) {
     *mymstat = sub {
 	my $time = defined &Tk::timeofday ? Tk::timeofday() : time;
-	printf STDERR "%-30s: %.2f\n", "@_", $time-$BBBikeDebug::start;
+	printf STDERR "%-30s: %.2f  %.2f\n", "@_", $time-$BBBikeDebug::start, (defined $BBBikeDebug::last ? $time-$BBBikeDebug::last : 0);
 	Devel::Peek::mstat();
+	$BBBikeDebug::last = $time;
     }
 } elsif ($ENV{BBBIKE_DEBUG} =~ /devel::size/i &&
 	 eval { require Devel::Size; 1 }) {
     *mymstat = sub {
 	my $time = defined &Tk::timeofday ? Tk::timeofday() : time;
-	printf STDERR "%-30s: %.2f\n", "@_", $time-$BBBikeDebug::start;
+	printf STDERR "%-30s: %.2f  %.2f\n", "@_", $time-$BBBikeDebug::start, (defined $BBBikeDebug::last ? $time-$BBBikeDebug::last : 0);
 	print "size=".Devel::Size::total_size(\%main::) . " (@_)\n";
+	$BBBikeDebug::last = $time;
     }
 } else { 
     *mymstat = sub {
 	my $time = defined &Tk::timeofday ? Tk::timeofday() : time;
-	printf STDERR "%-30s: %.2f\n", "@_", $time-$BBBikeDebug::start;
+	printf STDERR "%-30s: %.2f  %.2f\n", "@_", $time-$BBBikeDebug::start, (defined $BBBikeDebug::last ? $time-$BBBikeDebug::last : 0);
+	$BBBikeDebug::last = $time;
     }
 }
 mymstat("Begin");

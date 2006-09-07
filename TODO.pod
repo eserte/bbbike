@@ -1664,6 +1664,13 @@ layer, then information about length and time and maybe a route list
 is not available. How to solve this problem? Have a clever route/layer
 loader which decides what to use?
 
+=item * (H5)
+
+Introduce interrupted routes. E.g. by introducing E<quot>interruption
+elementsE<quot> in realcoords_ref; or another variable. Rendering:
+interrupt the route at these points. bbr2bbd: should look nicely.
+bbd2bbr also.
+
 =item * (M4)
 
 comments_route should probably be combined (e.g.

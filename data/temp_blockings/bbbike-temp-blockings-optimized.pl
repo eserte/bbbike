@@ -800,15 +800,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_003411',
-         'until' => 1157580000,
-         'text' => 'Regattastr. (Köpenick) in beiden Richtungen zwischen Rabindranath-Tagore-Str. und Steinbindeweg Baustelle, Straße vollständig gesperrt (bis 06.09.2006)',
-         'from' => 1156976256,
-         'data' => 'userdel	2::inwork 23277,776 23085,898
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1157752800,
          'text' => 'B 096 Bahnübergang Neuhof Gleisbauarbeiten Vollsperrung 07.09.2006-08.09.2006 ',
@@ -847,14 +839,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1157580000,
-         'text' => 'L 401 R.-Sorge-Str./ Bergstr. Bahnübergang Bergstr. in OL Wildau Arbeiten am BÜ Vollsperrung; Umleitung 04.09.2006-06.09.2006 ',
-         'from' => 1157234400,
-         'data' => 'userdel	2::inwork 26381,-9962 25700,-9502
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_003491',
          'until' => 1167605999,
@@ -871,6 +856,38 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'data' => 'userdel	q4::inwork -29624,-5855 -29900,-5879 -30199,-5774
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1159308000,
+         'text' => 'B 246 Nächst Neuendorfer Chaussee Bahnübergang in der OL Zossen Gleisbauarbeiten Vollsperrung 23.09.2006-26.09.2006 ',
+         'from' => 1158876000,
+         'data' => 'userdel	2::inwork 13623,-20519 13414,-20498 13326,-20518
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1159740000,
+         'text' => 'L 030 Spreebordstraße OL Neu Zittau Deckeneinbau Vollsperrung 28.09.2006-01.10.2006 ',
+         'from' => 1159308000,
+         'data' => 'userdel	q4::inwork 33839,-1057 33773,-1116 33628,-1509
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1164927600,
+         'text' => 'B 096 Gransee-Fürstenberg Brücke über Wentowkanal bei Dannenwalde Brückenabriß- u. -neubau Vollsperrung 20.02.2006-30.11.2006 ',
+         'from' => 1140303600,
+         'data' => 'userdel	2::inwork -5962,74421 -6037,73865
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1166742000,
+         'text' => 'L 014 Großderschau-Kyritz Brücke über den Graben bei Babe Brückenneubau Vollsperrung 11.07.2006-21.12.2006 ',
+         'from' => 1152482400,
+         'data' => 'userdel	2::inwork -64545,43296 -63700,42146
+',
+         'type' => 'gesperrt'
        }
      
 );
