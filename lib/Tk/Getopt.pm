@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Getopt.pm,v 1.53 2005/12/07 22:22:33 eserte Exp $
+# $Id: Getopt.pm,v 1.54 2006/08/26 20:31:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1997,1998,1999,2000,2003 Slaven Rezic. All rights reserved.
@@ -1902,6 +1902,15 @@ This manual is confusing. In fact, the whole module is confusing.
 
 Setting variables in the editor should not set immediately the real variables.
 This should be done only by Apply and Ok buttons.
+
+There's no -font option (you have to use tricks with the option db and
+a special Name for the option editor):
+
+    $top->optionAdd("*somename*font" => $font);
+    $opt->option_editor(Name => "somename", ...);
+
+There's no (easy) way to get a large option editor fit on small
+screens. Try -font, if it would exist, but see above.
 
 =head1 AUTHOR
 

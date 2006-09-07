@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ProgressSplash.pm,v 1.8 2005/07/19 23:22:26 eserte Exp $
+# $Id: ProgressSplash.pm,v 1.9 2005/12/21 22:24:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -93,7 +93,7 @@ Tk::ProgressSplash - create a starting splash screen with a progress bar
 
     BEGIN {
         require Tk::ProgressSplash;
-        $splash = Tk::ProgressSplash->Show(-splashtype => 'fast',
+        $splash = Tk::ProgressSplash->Show(-splashtype => 'normal',
                                            $image, $width, $height, $title,
                                            $overrideredirect);
     }
@@ -126,7 +126,9 @@ L<Tk::Splash>. Additionally you can specify:
 
 Set to "fast" if you want to use L<Tk::FastSplash> instead of
 L<Tk::Splash> as the underlying splash widget. "normal", "safe" or
-"slow" may be used for L<Tk::Splash>. Default is "normal".
+"slow" may be used for L<Tk::Splash>. Default is "normal". Please look
+at L<Tk::FastSplash/CAVEAT> for problems with the "fast" approach (and
+why you don't want it at all).
 
 =back
 

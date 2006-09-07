@@ -1,8 +1,7 @@
-#!/usr/local/bin/perl -w
 # -*- perl -*-
 
 #
-# $Id: SRTScrollbar.pm,v 1.3 2004/10/02 18:17:34 eserte Exp $
+# $Id: SRTScrollbar.pm,v 1.4 2005/12/13 22:44:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.

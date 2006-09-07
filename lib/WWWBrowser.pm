@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: WWWBrowser.pm,v 2.30 2006/02/25 20:03:06 eserte Exp eserte $
+# $Id: WWWBrowser.pm,v 2.33 2006/09/07 23:43:16 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2000,2001,2003,2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2000,2001,2003,2005,2006 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,19 +16,27 @@
 package WWWBrowser;
 
 use strict;
-use vars qw(@unix_browsers $VERSION $VERBOSE $initialized $os $fork
+use vars qw(@unix_browsers @available_browsers
+	    @terminals @available_terminals
+	    $VERSION $VERBOSE $initialized $os $fork
 	    $got_from_config $ignore_config);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.33 $ =~ /(\d+)\.(\d+)/);
 
-@unix_browsers = qw(_internal_htmlview
-		    _default_gnome _default_kde
-		    htmlview
-		    mozilla galeon konqueror netscape Netscape kfmclient
-		    dillo w3m lynx
-		    mosaic Mosaic
-		    chimera arena tkweb
-		    explorer) if !@unix_browsers;
+@available_browsers = qw(_debian_browser _internal_htmlview
+			 _default_gnome _default_kde
+			 htmlview
+			 mozilla firefox galeon konqueror netscape Netscape kfmclient
+			 dillo w3m lynx
+			 mosaic Mosaic
+			 chimera arena tkweb
+			 explorer);
+
+@unix_browsers = @available_browsers if !@unix_browsers;
+
+@available_terminals = qw(xterm konsole gnome-terminal rxvt Eterm kvt);
+
+@terminals = @available_terminals if !@terminals;
 
 init();
 
@@ -90,22 +98,13 @@ sub start_browser {
     }
 
     foreach my $browser (@browsers) {
+	if ($VERBOSE >= 2) {
+	    warn "Try $browser ...\n";
+	}
+
 	next if ($browser !~ /^_/ && !is_in_path($browser));
 	if ($browser =~ /^(lynx|w3m)$/) { # text-orientierte Browser
-	    if (defined $ENV{DISPLAY} && $ENV{DISPLAY} ne "") {
-		foreach my $term (qw(xterm kvt gnome-terminal)) {
-		    if (is_in_path($term)) {
-			exec_bg($term,
-				($term eq 'gnome_terminal' ? '-x' : '-e'),
-				$browser, $url);
-			return 1;
-		    }
-		}
-	    } else {
-		# without X11: not in background!
-		system($browser, $url);
-		return 1;
-	    }
+	    return 1 if open_in_terminal($browser, $url, %args);
 	    next;
 	}
 
@@ -170,6 +169,20 @@ sub start_browser {
 		next;
 	    } else {
 		return 1;
+	    }
+	} elsif ($browser eq '_debian_browser') {
+	    if ($ENV{DISPLAY}) {
+		if (-x "/etc/alternatives/gnome-www-browser") { # usually firefox or mozilla
+		    exec_bg($browser, $url); # use additional args if mozilla, learn args for firefox
+		    return 1;
+		} elsif (-x "/etc/alternatives/x-www-browser") { # usually dillo
+		    exec_bg($browser, $url);
+		    return 1;
+		}
+	    } else {
+		if (-x "/etc/alternatives/www-browser") {
+		    return 1 if open_in_terminal("/etc/alternatives/www-browser", $url, %args);
+		}
 	    }
 	} else {
 	    exec_bg($browser, $url);
@@ -319,6 +332,7 @@ sub get_from_config {
 	my @browser;
 	while(<CFG>) {
 	    chomp;
+	    next if /^\s*\#/;
 	    push @browser, $_;
 	}
 	close CFG;
@@ -340,7 +354,9 @@ sub _guess_and_expand_url {
     }
 }
 
-# A port of htmlview to perl
+# A port of htmlview to perl.
+#
+# This may work on linux, but not on *BSD because of different paths.
 sub htmlview {
     #!/bin/bash
     #
@@ -369,6 +385,8 @@ sub htmlview {
     #XXXunset BROWSER CONSOLE TERMS_KDE TERMS_GNOME TERMS_GENERIC
     #XXX[ -e /etc/htmlview.conf ] && source /etc/htmlview.conf
     #XXX[ -e ~/.htmlviewrc ] && source ~/.htmlviewrc
+
+    return 0 if $^O ne "linux";
 
     my(@args) = @_;
 
@@ -464,6 +482,26 @@ sub htmlview {
 	die "No valid browser found.\n";
     }
 
+}
+
+sub open_in_terminal {
+    my($browser, $url, %args) = @_;
+
+    if (defined $ENV{DISPLAY} && $ENV{DISPLAY} ne "") {
+	foreach my $term (@terminals) {
+	    if (is_in_path($term)) {
+		exec_bg($term,
+			($term eq 'gnome_terminal' ? '-x' : '-e'),
+			$browser, $url);
+		return 1;
+	    }
+	}
+    } else {
+	# without X11: not in background!
+	system($browser, $url);
+	return 1;
+    }
+    0;
 }
 
 # REPO BEGIN

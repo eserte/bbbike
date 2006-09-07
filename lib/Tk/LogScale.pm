@@ -1,15 +1,15 @@
 # -*- perl -*-
 
 #
-# $Id: LogScale.pm,v 1.7 2002/07/27 20:04:35 eserte Exp eserte $
+# $Id: LogScale.pm,v 1.8 2005/12/17 01:43:19 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2005 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: srezic@cpan.org
+# WWW:  http://www.rezic.de/eserte/
 #
 
 package Tk::LogScale;
@@ -20,6 +20,17 @@ use Tk;
 Construct Tk::Widget 'LogScale';
 
 $VERSION = '0.08';
+
+sub ClassInit {
+    my($class,$mw) = @_;
+    $class->SUPER::ClassInit($mw);
+    $mw->bind($class, "<Configure>" => sub {
+		  # Make sure the showvalue number is on the
+		  # right place after resizing.
+		  my $w = shift;
+		  $w->afterIdle(sub{$w->update_showvalue});
+	      });
+}
 
 sub Populate {
     my($w, $args) = @_;
@@ -115,7 +126,9 @@ sub set {
     my($w, $realval) = @_;
     $w->{RealVal} = $realval;
     my $scaleval = $w->Callback(-func, $realval);
-    $w->Subwidget("scale")->set($scaleval);
+    if (defined $scaleval && $scaleval ne "") {
+	$w->Subwidget("scale")->set($scaleval);
+    }
     $w->update_showvalue;
 }
 
