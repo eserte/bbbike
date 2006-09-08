@@ -5802,4 +5802,13 @@ EOF
 userdel	2::inwork -64545,43296 -63700,42146
 EOF
      },
+     { from  => 1157695483, # 2006-09-08 08:04
+       until => 1158012000, # 2006-09-12 00:00
+       text  => 'Pablo-Neruda-Str. (Köpenick) in beiden Richtungen, zwischen Müggelheimer Damm und Salvador-Allende-Str. Baustelle, Straße vollständig gesperrt (bis 11.09.06)',
+       type  => 'gesperrt',
+       source_id => 'IM_003518',
+       data  => <<EOF,
+userdel	2::inwork 22967,4144 23435,4179
+EOF
+     },
     );

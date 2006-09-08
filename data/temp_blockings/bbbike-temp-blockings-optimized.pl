@@ -888,6 +888,15 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'data' => 'userdel	2::inwork -64545,43296 -63700,42146
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003518',
+         'until' => 1158012000,
+         'text' => 'Pablo-Neruda-Str. (Köpenick) in beiden Richtungen, zwischen Müggelheimer Damm und Salvador-Allende-Str. Baustelle, Straße vollständig gesperrt (bis 11.09.06)',
+         'from' => 1157695483,
+         'data' => 'userdel	2::inwork 22967,4144 23435,4179
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.266 2006/09/08 00:00:48 eserte Exp $
+# $Id: bbbike,v 3.266 2006/09/08 00:00:48 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -18360,7 +18360,8 @@ sub fix_geometry {
         $extends[GEOMETRY_HEIGHT] += 20; # get titlebar height (?) by API functions XXX
     }
     "$extends[GEOMETRY_WIDTH]x$extends[GEOMETRY_HEIGHT]" .
-	"+$extends[GEOMETRY_X]+$extends[GEOMETRY_Y]"
+	($extends[GEOMETRY_X] =~ m{^[+-]} ? '' : '+') . $extends[GEOMETRY_X] .
+	    ($extends[GEOMETRY_Y] =~ m{^[+-]} ? '' : '+') . $extends[GEOMETRY_Y];
 }
 
 # check if the toplevel is too large and resize, if appropriate
