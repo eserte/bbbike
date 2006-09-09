@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver.t,v 1.4 2006/05/15 20:52:30 eserte Exp $
+# $Id: mapserver.t,v 1.5 2006/09/09 10:52:18 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -21,8 +21,8 @@ BEGIN {
     }
 }
 
-if (hostname ne "vran.herceg.de" && hostname !~ /radzeit/i) {
-    print "1..0 # skip: works only on vran\n";
+if (hostname !~ m{^(biokovo|vran)\.herceg\.de} && hostname !~ /radzeit/i) {
+    print "1..0 # skip: works only on vran/biokovo\n";
     exit;
 }
 

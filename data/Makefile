@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.112 2006/09/05 05:31:18 eserte Exp eserte $
+# $Id: Makefile,v 2.114 2006/09/09 21:46:03 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -831,7 +831,7 @@ do-checks:	.check_empty_lines \
 	.check_temp_blockings \
 
 .check_empty_lines:	*-orig
-	perl -nle '$$_ eq q{} and die $$ARGV' *-orig 
+	for i in *-orig; do perl -nle '$$_ eq q{} and die $$ARGV' $$i; done
 
 check-disabled:	.check_label
 

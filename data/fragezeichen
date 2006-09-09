@@ -255,13 +255,12 @@ Ludwigsburg: Qualität (von Süden aus gesehen: Feldweg; von Norden aus gesehen: B
 Schönfeld - Neuenfeld: im Ort Schönfeld noch Betonplatten mit Spur (Q1), danach den Anschein nach Asphalt (Q0)	? 48060,112975 48800,113000 49137,113325 49537,113375 49887,113837
 Klockow - Neuenfeld: ab Klockow Asphalt, danach ungewiss	? 49412,111409 49887,113837
 Klockow - Kleptow (Feldweg): auf der Nordseite sandiger Feldweg (Q2?)	? 49487,110056 49381,107993
-Rüdickenstr. und Verlängerung: Qualität? Existiert eine Verbindung für Radfahrer?	? 17486,17266 17891,17097
-Arnimstr.: Qualität? Wo ist die Verbindung zur Gehrenseestr.?	? 17891,17097 18500,16831 18313,16643
+Rüdickenstr. und Verlängerung: Qualität? Existiert eine Verbindung für Radfahrer?	? 17486,17266 17790,17126 17891,17097
+Arnimstr.: Qualität? Wo ist die Verbindung zur Gehrenseestr.?	? 17891,17097 17910,17075 18028,17035 18033,17021 18473,16843 18500,16788 18313,16643
 Wuhlewanderweg - Alte/Hellerdorfer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? 22827,14356 23181,14371
 Bäkepromenade: Qualität? Existiert eine Verbindung?	? -2618,-1473 -2800,-1484 -2802,-1636
 Krausnick - Brand: Durchfahrt möglich? (Laut lbvs Vollsperrung)	? 35178,-41015 33108,-41767
 Falkenthal - Bergsdorf: Kopfsteinpflaster, mindestens von Falkenthal her	? 2034,55227 -285,58256
-Kramerstr.: Qualität (laut ADFC-Karte gut geeignet)? Ab Kramersteg Richtung SO nur für Radfahrer offen? Wie ist die Anbindung Kramersteg/Uferpromenade?	? 4564,3457 4779,3376 5015,3292
 Kühleweinstr.: Qualität etc.?	? 8037,17167 7975,17563 7940,17878
 Jan-Petersen-Str.: Radwege (unklare Eintragung existiert)? Zugang zur Landsberger Allee vorhanden?	? 21022,16244 21195,16148 21107,15982 21079,15913 21037,15793 20943,15787 20800,15692
 von Raoul-Wallenberg-Str. bis Mehrower Allee über Felsensteinstr.: laut ADFC-Karte geeignet für Radfahrer, Einbahnstraße auch für Radfahrer gültig?	? 20401,16189 20543,16488 20775,16977
@@ -284,7 +283,6 @@ Laut <41b75ea5$0$23129$9b622d9e@news.freenet.de> wird hier (Berliner Str./Floras
 Parkstr. (Potsdam): Fortsetzung zur Schopenhauerstr.?	? -13803,-462 -13965,-590 -14034,-571
 Voltaireweg in diese Fahrtrichtung gesperrt?	?; -14034,-571 -13795,-407 -13636,-331
 Rübelandstr.: Qualität?	? 12787,7546 12818,7403
-Krahmerstr.: laut ADFC-Karte gute Qualität; am Hindenburgdamm Linksabbiegen möglich; wie sieht die Verbindung zur Uferpromenade aus?	? 4564,3457 4779,3376 4862,3345 5015,3292
 Schillerstr. (Lichtenrade): Qualität? (Als bessere Alternative zur Halker Zeile geeignet?)	? 9993,686 10051,642 10300,34 10403,-266 10556,-659 10609,-801
 Fürstenwalder Damm/Müggelseedamm: Vorfahrtsregelung?	? 28195,5141
 Dahlwitzer Landstraße/Schöneicher Str.: Vorfahrtsregelung?	? 25585,6050
@@ -772,7 +770,6 @@ Unterführung Allee der Kosmonauten - Biesdorfer Promenade: Qualität (laut ADFC-K
 Kol. Friedrichsfelde Nord: möglicherweise asphaltierter Weg? Ohne KfZ? Laut Luftbild scheint der Zugang zur Rhinstr. ebenerdig zu sein und eine Überquerung der Straßenbahntrasse ist dort möglich.	? 17774,12244 18176,12393 18220,12450
 Landsberger Allee - Große-Leege-Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? 16008,14340 16007,14367 15920,14357 15882,14564 15883,14606
 Marzahner Str. (Hohenschönhausen): Radwege? Vorfahrtsstraße?	? 17488,15766 17646,15777 17935,15781 18178,15787 18573,15803 18626,15604 18180,15594 18178,15787
-Straße 142: Qualität? (laut ADFC-Karte/neu gut geeignet)?	? 17102,16464 17152,16605 17237,16825 17317,17027 17420,17282
 Crivitzer Str.: Qualität? (laut ADFC-Karte/neu gut geeigntet)?	? 17807,18267 17670,18435 17580,18548
 Am Gutshof: Qualität? (laut ADFC-Karte/neu gut geeigntet)?	? 17797,18673 17835,18791 17889,18994
 Demminer Str.: Qualität? (laut ADFC-Karte/neu gut geeigntet)?	? 17502,18286 17670,18435 17772,18523 17797,18673
@@ -903,7 +900,6 @@ Preußenstr.: Qualität?	? 21297,651 21202,727
 Max-Steinke-Str.: Qualität?	? 13540,15928 13455,16192 13386,16408
 Dathepromenade: Qualität? Viele Fußgänger? Kann die Straße "Am Tierpark" überquert werden? Wie sieht die Verbindung zur Sewanstr. aus?	? 18532,10410 17905,10122
 Margaretenstr. (Lichtenberg): Qualität (wahrscheinlich Asphalt)?	? 17070,11375 16936,11409 16848,11421 16723,11470 16639,11496
-Hohenwalder Str.: Qualität (vermutlich guter Beton)?	? 21880,18866 21945,18832 21993,18800 22023,18743 22039,18693 22071,18593 22125,18418
 Pankeweg: Bauarbeiten an der Soldiener Str. mittlerweile abgeschlossen?	? 8904,17059 8836,16867
 Pankeweg: Brücke über Panke (Nähe S-Bahnunterführung) fertiggestellt?	? 8321,15386 8290,15406
 Wongrowitzer Steig: Qualität (laut ADFC-Karte gut geeignet)?	? 22785,6984 22659,7015 22474,7065 22240,7122 22132,7148 22035,7146
@@ -953,7 +949,7 @@ Czarnikauer Str. (Ist die Czarnikauer eine Einbahnstraße? Auch für Radfahrer?)	?
 Straße am Wald (Ist der Straßenname offiziell und die Straße entsprechend ausgeschildert?)	? 21475,7500 21341,7487 21025,7349
 Knollstr. (letztes Stück Privatstr.?)	? 17609,164 17721,239
 Roßlauer Str. (das letzte Stück zum Blumberger Damm nicht passierbar?)	? 20656,12415 21148,12365
-Grabenstr. (Lichterfelde) (Qualität der Straße, möglicherweise mäßiges Kopfsteinpflaster?)	? 5145,1982 5200,1842 5250,1725 5332,1596 5410,1537 5498,1521 5642,1545 5737,1614
+Grabenstr. (Lichterfelde) (Qualität der Straße, möglicherweise mäßiges Kopfsteinpflaster?)	? 5145,1982 5200,1842 5250,1725 5332,1596 5410,1537 5485,1521 5642,1545 5737,1614
 Nelly-Sachs-Str. ((teilweise) Kategorie N oder sogar NN?)	? 23993,14797 24253,14888 24349,14922
 Engadiner Weg (Qualität, Fahrbahnbelag?)	? 3700,2045 3814,2056 3840,2138 3805,2196
 Tivoliplatz (Qualität? Zur Zeit Zugang nur über Treppe.)	? 8949,8989 8950,8954
@@ -975,7 +971,7 @@ Sachsenstr. (Altglienicke) (Qualität (vermutlich Kopfsteinpflster)?)	? 20685,817
 Matenzeile (Qualität (Beton o. Asphalt)?)	? 17365,17632 17474,17478 17582,17335 17714,17285
 Seeweg (Weißensee) (Qualität?)	? 14499,16341 14480,16449 14510,16549 14521,16599
 Seeweg (Weißensee) (Qualität?)	? 14601,16525 14549,16538 14510,16549
-Theodor-Francke-Str. (Existiert eine Verbindung zum Franckepark? )	? 9221,6179 9328,6164
+Theodor-Francke-Str. (Existiert eine Verbindung zum Franckepark?)	? 9221,6179 9328,6164
 Borkheide - Neuendorf (ungenaue Koordinaten!)	? -26338,-21122 -27908,-22935 -28547,-22981 -29244,-23127
 Waldesruher Str. (Waldesruh) (Qualität, wahrscheinlich fester Sandweg?)	? 25047,8086 24923,7903 24910,7896 24842,7811 24800,7746 24718,7633 24648,7542 24593,7455
 Am Kanal (Qualität, Einbahnstrasse?)	? -12657,-1338 -12542,-1305 -12311,-1238

@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Salesman.pm,v 1.16 2006/01/08 20:17:48 eserte Exp $
+# $Id: Salesman.pm,v 1.18 2006/09/09 16:08:47 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2003,2006 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,15 +17,18 @@
 # if "die"ing in the permute { } loop. This seems only to happen within
 # Tk callbacks.
 #
-# So we do not use Algorithm::Permute, just List::Permutor.
+# This seems to happen randomly, see the test reports at
+#  http://cpantesters.perl.org/show/Algorithm-Permute.html#Algorithm-Permute-0.06
+#
+# So prefer List::Permutor over Algorithm::Permute.
 #
 
 package Salesman;
 BEGIN {
-    eval 'use Algorithm::Permute 0.06;'; # die "Problems with A::P!"; 1';
+    eval 'use List::Permutor;';
     if ($@) {
-	warn "$@, fallback to List::Permutor";
-	eval 'use List::Permutor;';
+	warn "$@, fallback to Algorithm::Permute";
+	eval 'use Algorithm::Permute 0.06;';
 	if ($@) {
 	    die $@;
 	}

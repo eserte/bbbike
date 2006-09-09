@@ -112,6 +112,8 @@ B5: Radweg, RW, Fertig bis 2006-06-30	? -31230,23101 -32007,22836 -34213,23540 -
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 #
+#: by: Message-ID: <4mfe1bF5vae4U1@uni-berlin.de>
+Warschauer Str.: Radwegbenutzungspflicht wird aufgehoben	?; 13546,11352 13476,11174 13454,11119 13409,11004 13332,10832
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html
 R1: geänderte Ausschilderung steht noch aus	? 22967,4144 23435,4179 24181,4270 25396,4417 25347,4320 25373,4266 25318,4204 25238,3842 25251,3590 25261,3253 25275,3181 25346,2956 25474,2848 25819,2658 26006,2615 25948,2474
 #: by: http://www.berlin.de/ba-mitte/index_6454_hr.html
@@ -567,13 +569,12 @@ Ludwigsburg: Qualität (von Süden aus gesehen: Feldweg; von Norden aus gesehen: B
 Schönfeld - Neuenfeld: im Ort Schönfeld noch Betonplatten mit Spur (Q1), danach den Anschein nach Asphalt (Q0)	? 48060,112975 48800,113000 49137,113325 49537,113375 49887,113837
 Klockow - Neuenfeld: ab Klockow Asphalt, danach ungewiss	? 49412,111409 49887,113837
 Klockow - Kleptow (Feldweg): auf der Nordseite sandiger Feldweg (Q2?)	? 49487,110056 49381,107993
-Rüdickenstr. und Verlängerung: Qualität? Existiert eine Verbindung für Radfahrer?	? 17486,17266 17891,17097
-Arnimstr.: Qualität? Wo ist die Verbindung zur Gehrenseestr.?	? 17891,17097 18500,16831 18313,16643
+Rüdickenstr. und Verlängerung: Qualität? Existiert eine Verbindung für Radfahrer?	? 17486,17266 17790,17126 17891,17097
+Arnimstr.: Qualität? Wo ist die Verbindung zur Gehrenseestr.?	? 17891,17097 17910,17075 18028,17035 18033,17021 18473,16843 18500,16788 18313,16643
 Wuhlewanderweg - Alte/Hellerdorfer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? 22827,14356 23181,14371
 Bäkepromenade: Qualität? Existiert eine Verbindung?	? -2618,-1473 -2800,-1484 -2802,-1636
 Krausnick - Brand: Durchfahrt möglich? (Laut lbvs Vollsperrung)	? 35178,-41015 33108,-41767
 Falkenthal - Bergsdorf: Kopfsteinpflaster, mindestens von Falkenthal her	? 2034,55227 -285,58256
-Kramerstr.: Qualität (laut ADFC-Karte gut geeignet)? Ab Kramersteg Richtung SO nur für Radfahrer offen? Wie ist die Anbindung Kramersteg/Uferpromenade?	? 4564,3457 4779,3376 5015,3292
 Kühleweinstr.: Qualität etc.?	? 8037,17167 7975,17563 7940,17878
 Jan-Petersen-Str.: Radwege (unklare Eintragung existiert)? Zugang zur Landsberger Allee vorhanden?	? 21022,16244 21195,16148 21107,15982 21079,15913 21037,15793 20943,15787 20800,15692
 von Raoul-Wallenberg-Str. bis Mehrower Allee über Felsensteinstr.: laut ADFC-Karte geeignet für Radfahrer, Einbahnstraße auch für Radfahrer gültig?	? 20401,16189 20543,16488 20775,16977
@@ -598,7 +599,6 @@ Laut <41b75ea5$0$23129$9b622d9e@news.freenet.de> wird hier (Berliner Str./Floras
 Parkstr. (Potsdam): Fortsetzung zur Schopenhauerstr.?	? -13803,-462 -13965,-590 -14034,-571
 Voltaireweg in diese Fahrtrichtung gesperrt?	?; -14034,-571 -13795,-407 -13636,-331
 Rübelandstr.: Qualität?	? 12787,7546 12818,7403
-Krahmerstr.: laut ADFC-Karte gute Qualität; am Hindenburgdamm Linksabbiegen möglich; wie sieht die Verbindung zur Uferpromenade aus?	? 4564,3457 4779,3376 4862,3345 5015,3292
 Schillerstr. (Lichtenrade): Qualität? (Als bessere Alternative zur Halker Zeile geeignet?)	? 9993,686 10051,642 10300,34 10403,-266 10556,-659 10609,-801
 Fürstenwalder Damm/Müggelseedamm: Vorfahrtsregelung?	? 28195,5141
 Dahlwitzer Landstraße/Schöneicher Str.: Vorfahrtsregelung?	? 25585,6050
@@ -1238,7 +1238,6 @@ Landsberger Allee - Große-Leege-Str.: Qualität (laut ADFC-Karte mäßig geeignet)?
 #: note: laut Luftbild sieht es so aus! vvv
 Marzahner Str. (Hohenschönhausen): Radwege? Vorfahrtsstraße?	? 17488,15766 17646,15777 17935,15781 18178,15787 18573,15803 18626,15604 18180,15594 18178,15787
 #: note: ^^^
-Straße 142: Qualität? (laut ADFC-Karte/neu gut geeignet)?	? 17102,16464 17152,16605 17237,16825 17317,17027 17420,17282
 Crivitzer Str.: Qualität? (laut ADFC-Karte/neu gut geeigntet)?	? 17807,18267 17670,18435 17580,18548
 Am Gutshof: Qualität? (laut ADFC-Karte/neu gut geeigntet)?	? 17797,18673 17835,18791 17889,18994
 Demminer Str.: Qualität? (laut ADFC-Karte/neu gut geeigntet)?	? 17502,18286 17670,18435 17772,18523 17797,18673
@@ -1386,7 +1385,6 @@ Max-Steinke-Str.: Qualität?	? 13540,15928 13455,16192 13386,16408
 Dathepromenade: Qualität? Viele Fußgänger? Kann die Straße "Am Tierpark" überquert werden? Wie sieht die Verbindung zur Sewanstr. aus?	? 18532,10410 17905,10122
 #: note: siehe auch http://www.berlin.de/ba-lichtenberg/presse/archiv/20030924.15288.html
 Margaretenstr. (Lichtenberg): Qualität (wahrscheinlich Asphalt)?	? 17070,11375 16936,11409 16848,11421 16723,11470 16639,11496
-Hohenwalder Str.: Qualität (vermutlich guter Beton)?	? 21880,18866 21945,18832 21993,18800 22023,18743 22039,18693 22071,18593 22125,18418
 #: by: http://www.berlin.de/ba-mitte/index_9634_hr.html: fertig?
 #: last_checked: 2006-05-21
 Pankeweg: Bauarbeiten an der Soldiener Str. mittlerweile abgeschlossen?	? 8904,17059 8836,16867

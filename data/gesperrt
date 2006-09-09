@@ -1,5 +1,5 @@
 #: title: Einbahnstraﬂen und gesperrte Straﬂen
-#: version: $Id: gesperrt-orig,v 4.136 2006/09/06 21:03:07 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.137 2006/09/09 21:46:06 eserte Exp $
 #:
 Kanalstraﬂen S¸dufer, von Osten bis Kˆthener Br¸cke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraﬂen S¸dufer, von Osten bis Kˆthener Br¸cke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -693,7 +693,13 @@ Am Rixdorfer Teich -> Columbiadamm: unbequem zu ¸berqueren (Bordsteine)	3 10957,
 Columbiadamm -> Am Rixdorfer Teich: unbequem zu ¸berqueren (Bordsteine)	3 10796,8498 10911,8457 10957,8573
 Birkbuschstr.: unbequem zu passieren	3 4839,5167 4807,5131 4789,5079
 Birkbuschstr.: unbequem zu passieren	3 4789,5079 4807,5131 4839,5167
-Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg mˆglich	3 4839,5167 4807,5131 4879,5017
+Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg mˆglich	3 4839,5167 4807,5131 4846,5069 4879,5017
+Oberlinstr. -> Birkbuschstr.: Metallgitter auf dem Mittelstreifen	3 4732,4939 4846,5069 4807,5131
+Birkbuschstr. -> Oberlinstr.: Metallgitter auf dem Mittelstreifen	3 4879,5017 4846,5069 4732,4939
+Oberlinstr. -> Wolfensteindamm: Linksabbiegen in den Wolfensteindamm gef‰hrlich / unbequem	3 4732,4939 4692,4997 4675,4983
+Wolfensteindamm -> Oberlinstr.: Linksabbiegen in den Wolfensteindamm gef‰hrlich / unbequem	3 4789,5079 4692,4997 4732,4939
+Gehweg Gelieustr. -> Wolfensteindamm: Linksabbiegen in den Wolfensteindamm gef‰hrlich / unbequem	3 4725,4876 4675,4983 4517,4853
+Wolfensteindamm -> Gehweg Gelieustr.: Linksabbiegen in den Wolfensteindamm gef‰hrlich / unbequem	3 4692,4997 4675,4983 4725,4876
 Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3 6815,8691 6912,8617 6990,8685
 Hauptstr. -> Parkweg Heinrich-Lassen-Park: Mittelstreifen	3 6765,8480 6912,8617 6815,8691
 Am Tierpark -> Otto-Schmirgal-Str.: Straﬂenbahntrasse	3 18628,10177 18561,10341 18482,10306
@@ -1158,3 +1164,5 @@ Hindenburgdamm	1 4454,3260 4467,3332 4523,3482 4546,3527 4585,3575
 Hindenburgdamm	1 4585,3575 4580,3514 4564,3457 4514,3329 4454,3260
 tragen (Treppe)	0:60:-255 14549,16538
 Blumenweg	1 -9445,-2389 -9353,-2089
+Golliner Str.	1 22217,17989 22276,18107 22191,18150
+Schorfheidestr.	1s 21900,18215 21864,18230

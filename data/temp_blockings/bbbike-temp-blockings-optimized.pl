@@ -801,14 +801,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1157752800,
-         'text' => 'B 096 Bahnübergang Neuhof Gleisbauarbeiten Vollsperrung 07.09.2006-08.09.2006 ',
-         'from' => 1157493600,
-         'data' => 'userdel	2::inwork 16407,-29400 16379,-29446 16336,-29511
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

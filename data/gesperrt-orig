@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.136 2006/09/06 21:03:07 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.137 2006/09/09 21:46:06 eserte Exp $
 #:
 ###################################################################
 #
@@ -551,8 +551,12 @@ Columbiadamm: unbequem zu überqueren (Bordsteine)	3nocross 10796,8498 10911,8457
 #: by: Wolfgang Schmidt: vvv
 Birkbuschstr.: unbequem zu passieren	3 4839,5167 4807,5131 4789,5079
 Birkbuschstr.: unbequem zu passieren	3 4789,5079 4807,5131 4839,5167
-Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	3 4839,5167 4807,5131 4879,5017
+Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	3 4839,5167 4807,5131 4846,5069 4879,5017
 #: by: ^^^
+#: by: Kai Brueggemann [AM] vvv
+Birkbuschstr.: Metallgitter auf dem Mittelstreifen	3nocross 4807,5131 4846,5069 4879,5017
+Linksabbiegen in den Wolfensteindamm gefährlich / unbequem	3nocross 4789,5079 4692,4997 4675,4983 4517,4853
+#: by ^^^
 Hauptstr.: Mittelstreifen	3nocross 6687,8385 6765,8480 6912,8617 6990,8685
 #: by: Jirka Klaue:
 Am Tierpark: Straßenbahntrasse	3nocross 18628,10177 18561,10341 18532,10410 18446,10620
@@ -1002,3 +1006,5 @@ Hindenburgdamm	1 4454,3260 4467,3332 4523,3482 4546,3527 4585,3575
 Hindenburgdamm	1 4585,3575 4580,3514 4564,3457 4514,3329 4454,3260
 tragen (Treppe)	0:60 14549,16538
 Blumenweg	1 -9445,-2389 -9353,-2089
+Golliner Str.	1 22217,17989 22276,18107 22191,18150
+Schorfheidestr.	1s 21900,18215 21864,18230
