@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.47 2006/09/10 22:02:44 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.48 2006/09/10 22:47:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -424,7 +424,7 @@ EOF
 . $bbbike_html_rule . <<'EOF'
 
 doc/HOWTO_edit_bbbike_data.html: doc/HOWTO_edit_bbbike_data.sgml doc/Makefile.doc
-	cd doc && $(MAKE) -f Makefile.doc HOWTO_edit_bbbike_data.html
+	cd doc && env LANG=C LC_ALL=C $(MAKE) -f Makefile.doc HOWTO_edit_bbbike_data.html
 
 clean_pod2html:
 
