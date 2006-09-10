@@ -1,5 +1,5 @@
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.85 2006/09/04 20:05:36 eserte Exp $
+#: version: $Id: ampeln-orig,v 4.85 2006/09/04 20:05:36 eserte Exp eserte $
 #:
 	X 9222,8787
 	X 8982,8781
@@ -1792,6 +1792,7 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B0 20300,6837
 	B0 19970,5988
 	B0 19996,6410
+	B0 16684,3325
 	F 6276,10401
 	F 9001,13039
 	F -6492,12574

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-index.pl,v 1.9 2006/07/08 00:38:02 eserte Exp $
+# $Id: strassen-index.pl,v 1.9 2006/07/08 00:38:02 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -25,8 +25,17 @@ if (!caller) {
 }
 
 package Strassen::Index;
+
+use vars qw($DB_File);
+$DB_File = "DB_File::Lock" if !defined $DB_File;
+$DB_File = "DB_File" if do { require Sys::Hostname; Sys::Hostname::hostname() =~ /^biokovo/ }; # XXX hack for NFS
+
 require Strassen;
-require DB_File::Lock;
+if ($DB_File eq 'DB_File') {
+    require DB_File;
+} else {
+    require DB_File::Lock;
+}
 require Fcntl;
 
 sub new {
@@ -65,8 +74,8 @@ sub open_index {
     my($self) = @_;
     my $index_file = $self->{index_file};
 
-    tie my %db, 'DB_File::Lock', $index_file, Fcntl::O_RDWR(),
-	0644, $DB_File::DB_HASH, "write"
+    tie my %db, $DB_File, $index_file, Fcntl::O_RDWR(),
+	0644, $DB_File::DB_HASH, ($DB_File =~ /Lock/ ? "write" : ())
 	    or die "Can't open $index_file: $!";
 
     $self->{db} = \%db;
@@ -91,8 +100,8 @@ sub create_index {
     my $index_file = $self->{index_file};
 
     rename $index_file, "$index_file~";
-    tie my %db, 'DB_File::Lock', $index_file, Fcntl::O_RDWR()|Fcntl::O_CREAT(),
-	0644, $DB_File::DB_HASH, "write"
+    tie my %db, $DB_File, $index_file, Fcntl::O_RDWR()|Fcntl::O_CREAT(),
+	0644, $DB_File::DB_HASH, ($DB_File =~ /Lock/ ? "write" : ())
 	    or die "Can't create $index_file: $!";
 
     if ($self->{verbose}) {

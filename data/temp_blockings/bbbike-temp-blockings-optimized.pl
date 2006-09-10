@@ -607,15 +607,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_003255',
-         'until' => undef,
-         'text' => 'Havemannstr. (Marzahn) in beiden Richtungen zwischen Märkische Allee und Borkheider Str. Baustelle, Straße vollständig gesperrt',
-         'from' => undef,
-         'data' => 'userdel	q4::inwork 21251,18508 21446,18405 21520,18367 21684,18283 21843,18198
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1159653600,

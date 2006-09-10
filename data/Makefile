@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.114 2006/09/09 21:46:03 eserte Exp $
+# $Id: Makefile,v 2.114 2006/09/09 21:46:03 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -83,7 +83,9 @@ WRITEABLE=	chmod u+w,ugo+r
 READONLY=	chmod ugo+r,ugo-w
 READABLE=	chmod ugo+r
 
-SORT_NO_LOCALE=	env LC_ALL=de_DE.ISO_8859-1 sort
+# The locale was named de_DE.ISO_8859-1 in FreeBSD 4.x, but now with
+# an underline less.
+SORT_NO_LOCALE=	env LC_ALL=de_DE.ISO8859-1 sort
 
 ## XXX what is write, what is wrong?
 #COORDS_DATA_SORT_OPTS=	-f -t "|" -k 1,3
