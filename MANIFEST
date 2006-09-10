@@ -173,7 +173,7 @@ Strassen/StrassenNetzHeavy.pm
 Strassen/Tie.pm
 Strassen/Util.pm
 Strassen/WaypointPlus.pm
-TODO.pod
+doc/TODO.pod
 Telefonbuch.pm
 Telefonbuch2001.pm
 Telefonbuch98.pm
@@ -188,12 +188,12 @@ bbbike-fast.bat
 bbbike.bat
 bbbike.html
 bbbike.pod
-bbbike_internals.html
-bbbike_internals.pod
+doc/bbbike_internals.html
+doc/bbbike_internals.pod
 bbbikeapplet
 bbbikeclient
-bbd.html
-bbd.pod
+doc/bbd.html
+doc/bbd.pod
 cbbbike
 cbbbike.bat
 cgi/README

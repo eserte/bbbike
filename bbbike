@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.267 2006/09/09 10:52:27 eserte Exp $
+# $Id: bbbike,v 3.267 2006/09/09 10:52:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -3613,12 +3613,12 @@ sub do_iconframe {
 	    (-label => M("Mehr Dokumentation")." ...");
 	my $m2 = $hpbm->Menu(-title => M("Mehr Dokumentation")." ...");
 	$hpbm->entryconfigure("last", -menu => $m2);
-	for my $doc_def (["TODO.pod", M"To-Do-Liste"],
+	for my $doc_def (["doc/TODO.pod", M"To-Do-Liste"],
 			 ["doc/links.pod", M"Linkliste"],
 			 ["doc/watchsites.pod", M"Watchsites"],
 			 ["doc/qualitaetskategorien.html", M"Qualitätskategorien"],
-			 ["HOWTO_edit_bbbike_data.html", M"Daten in BBBike editieren"],
-			 ["bbd.pod", M"Beschreibung des bbd-Formats"],
+			 ["doc/HOWTO_edit_bbbike_data.html", M"Daten in BBBike editieren"],
+			 ["doc/bbd.pod", M"Beschreibung des bbd-Formats"],
 			 ["doc/tests.pod", M"Manuelle Testanweisung"],
 			) {
 	    my($file, $label) = @$doc_def;

@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.45 2006/09/09 17:20:00 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.47 2006/09/10 22:02:44 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003,2004,2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,13 +17,7 @@
 #
 # grab a good pod2html XXX this is somewhat hacky
 my $bbbike_html_rule;
-#XXX del: $ENV{PATH} .= ":/usr/local/src/CPAN/new.build/new.MarekPodHtml-0.43/scripts";
 my $pod2html = is_in_path("mpod2html");
-#if (defined $pod2html) {
-#    $pod2html = "$^X -Mblib=/usr/local/src/CPAN/new.build/new.MarekPodHtml-0.43/ $pod2html";
-#}
-#XXX check new pod2html: undef $pod2html;
-#XXX $pod2html = 'perl -Mblib=/usr/local/src/CPAN/new.build/new.MarekPodHtml-0.43 /usr/local/src/CPAN/new.build/new.MarekPodHtml-0.43/blib/script/mpod2html -css html/bbbikepod.css';
 my $htmlroot = "--htmlroot http://www.perldoc.com/cpan";
 
 use constant POD_POD   => 0;
@@ -35,8 +29,8 @@ my @pods =
      [qw(bbbike.pod      bbbike.html),        "Dokumentation für BBBike"],
      [qw(README          README.html),        "README für BBBike"],
      [qw(README.english  README.english.html),"README for BBBike"],
-     [qw(bbd.pod         bbd.html),           "BBD file format"],
-     [qw(bbbike_internals.pod      bbbike_internals.html),        "BBBike Internals"],
+     [qw(doc/bbd.pod     doc/bbd.html),           "BBD file format"],
+     [qw(doc/bbbike_internals.pod  doc/bbbike_internals.html),        "BBBike Internals"],
      );
 my $all_pods = join " ", map { $_->[POD_POD] } @pods;
 my $all_html = join " ", map { $_->[POD_HTML] } @pods;
@@ -46,9 +40,21 @@ if (defined $pod2html) {
 $all_html:	$all_pods Makefile
 	$pod2html -stylesheet html/bbbikepod.css -tocname http://bbbike.sourceforge.net/index -notoc -nowarnings $all_pods
 	\$(CLEAN_AFTER_POD2HTML)
+	mv bbd.html doc/bbd.html
+	mv bbbike_internals.html doc/bbbike_internals.html
+	for f in $all_html; do \\
+		perl -i~ -nle 'if (!/^Cannot find page.*on line/) { print }' \$\$f; \\
+	done
+	for f in bbd bbbike_internals; do \\
+		perl -i~ -pe 's{(podindex.html|bbbike.html|README.html|README.english.html|html/bbbikepod.css)}{../\$\$1}g' doc/\$\$f.html; \\
+	done
+	for f in bbbike README README.english podindex; do \\
+		perl -i~ -pe 's{((?:bbbike_internals|bbd)\.html)}{doc/\$\$1}g' \$\$f.html; \\
+	done
 	chmod ugo+r $all_html podindex.html
 EOF
 } else {
+    # Warning: this is not really supported, please get Marek::Pod::HTML!
     my $pod2html;
     if (-e "/usr/perl5.8.1/bin/pod2html") {
 	$pod2html = "perl5.8.1 /usr/perl5.8.1/bin/pod2html";
@@ -417,13 +423,13 @@ README README.english:	README.spp BBBikeVar.pm
 EOF
 . $bbbike_html_rule . <<'EOF'
 
-HOWTO_edit_bbbike_data.html: HOWTO_edit_bbbike_data.sgml Makefile.doc
-	$(MAKE) -f Makefile.doc HOWTO_edit_bbbike_data.html
+doc/HOWTO_edit_bbbike_data.html: doc/HOWTO_edit_bbbike_data.sgml doc/Makefile.doc
+	cd doc && $(MAKE) -f Makefile.doc HOWTO_edit_bbbike_data.html
 
 clean_pod2html:
 
 EOF
-. "bbbikedoc:	README README.english $all_html HOWTO_edit_bbbike_data.html\n" . <<'EOF'
+. "bbbikedoc:	README README.english $all_html doc/HOWTO_edit_bbbike_data.html\n" . <<'EOF'
 
 # XXX this will fail if there is no symlink to the original libexec position
 ChangeLog:

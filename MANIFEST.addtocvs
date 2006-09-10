@@ -349,11 +349,6 @@ miscsrc/geocode_images
 miscsrc/BBBikeViewImages.pm
 misc/gps_data/Makefile
 Strassen/StrassenNetzNew.pm
-Makefile.doc
-HOWTO_edit_bbbike_data.sgml
-HOWTO_edit_bbbike_data.html
-docbook.css
-Makefile.doc
 miscsrc/check_station_category
 miscsrc/bbd2polish
 miscsrc/gpx2bbd
@@ -414,5 +409,9 @@ miscsrc/BBBikeGeoURLPlugin.pm
 misc/zebrastreifen
 doc/watchsites.pod
 doc/tests.pod
+doc/Makefile.doc
+doc/HOWTO_edit_bbbike_data.sgml
+doc/HOWTO_edit_bbbike_data.html
+doc/docbook.css
 miscsrc/BBBikePluginLister.pm
 cgi/bbbike-cs-umzug.html

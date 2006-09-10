@@ -1,0 +1,722 @@
+=head1 NAME
+
+bbd - bbbike data format description
+
+=for category bbbike
+
+=head1 DESCRIPTION
+
+Sorry - parts of this documentation are still in German...
+
+C<bbd> is a simple format for describing points and polylines for
+geographic information systems.
+
+Bbd files consist of newline-terminated records in the format:
+
+    Name TAB Category SPACE x,y SPACE x,y ...
+
+=head2 Coordinate lines (data lines)
+
+=over
+
+=item Name
+
+A descriptive name, for example the street name, or (for attribute
+layers) a description of the attribute category. This field must not
+contain any TAB characters.
+
+If there is a main name and a descriptive part, then the latter should
+be separated by a C<|> character. This helps for intelligent
+labelling, i.e. leaving out unimportant parts if necessary. Example:
+B<Ringenwalde|(Uckermark)> could be labelled as B<Ringenwalde> or
+B<Ringenwalde (Uckermark)>.
+
+=item Category
+
+The category of this point or polyline. If the category matches
+C<#rrggbb> (where C<rr>, C<gg> and C<bb> are hexadecimal values), then
+this denotes a color for the representation in the Perl/Tk interface.
+A prefix of C<F:> denotes that the polyline should be treated as a
+polygon and filled with a solid color. Note that the polygon is always
+closed, but it is optional to make the first and last the same.
+
+If the category matches I<forwardcat>C<;>I<backwardcat>, then
+I<forwardcat> applies to the street in forward direction and
+I<backwardcat> applies to the street in backward direction. Either
+I<forwardcat> or I<backwardcat> may be empty; in this case the
+category applies only to the other direction.
+
+The B<X> category should be used if there is no category.
+
+Other predefined categories are listed below. The category should not
+contain any spaces.
+
+   DRAFT (not yet in use!): Change the category format to:
+
+       <cat> = <onewaycat> ; <onewaycat> |
+               <onewaycat>
+
+       <onewaycat> = F=? <basiccat> (: <attrkey> (= <attrval>)?)*
+
+       <basiccat>  = [^:;]+
+       <attrkey>   = [^:;=]+
+       <attrval>   = [^:;=]+
+
+   Changes for data files:
+     F:cat becomes F=cat
+     ?::inwork becomes ?:inwork
+     F:SW|IMG:church.gif|ANCHOR:s becomes F=SW:IMG=church.gif:ANCHOR=s
+   Maybe (no, too much typing):
+     #rrggbb becomes X:COLOR=#rrggbb
+
+   cat is now really attr. Reflect in description, maybe also in
+   variable names.
+
+=item x,y
+
+A coordinate. x and y should be integer or float values. The datum and
+grid of the coordinates should be handled by the software. It is
+recommended that x and y should denote the easting and northing in
+meters (as in GKK or UTM). A record may contain an unlimited number of
+coordinates, though there may be limitations in the interpreting
+software (currently the maximum number of points is hardcoded in
+L<BBBikeXS> and checked in the rule C<check-line-lengths> of
+F<data/Makefile>). See also below for the B<map> directive in
+L</Directive lines>.
+
+=back
+
+=head2 Directive lines
+
+If a line begines with a hash sign followed by a color (C<#:>), then
+the line is treated as a directive. There are global directives, line
+directives and block directives. Global directives should be specified
+at top of the file before the first data line and should be separated
+by the data lines with an empty directive line. Line directives are
+valid for the next line only. Block directives are valid for the
+specified block. Block directives are markes as such:
+
+ #: directive_name directive_arguments ... vvv
+ ... data lines
+ #: directive_name ^^^
+
+XXX make directive_name before ^^^ optional? XXX
+
+The C<v> and C<^> markers could be repeated an indefinite number of
+times, but at least three times.
+
+An colon (:) after the directive_name is always optional.
+
+=head3 Global directives
+
+=over
+
+=item C<type: I<bbd_type>>
+
+This global directive sets the type of the bbd file. If given then it
+should be put into the first line to serve as a kind of
+E<quot>magicE<quot>. A possible type would be C<bbr> or C<bbbike
+route>, once I get rid of the .bbr format.
+
+=item C<map: I<maptype>>
+
+This global directive sets the coordinate system of the bbd file. If
+no C<map> directive is specified, then the proprietary bbbike
+coordinate system is used. For WGS84 coordinates specified as DDD use
+the maptype B<polar>.
+
+=item C<title: I<title string>>
+
+This global directive sets the title or some descriptive text for the
+file.
+
+=item C<version: I<RCS or CVS identifier string>>
+
+This global directive introduces an RCS/CVS Id string.
+
+=item C<encoding: I<encoding name>>
+
+Treat this file as encoded in the given encoding (all names accepted
+by Perl/Encode may be used). If not set, then iso-8859-1 is assumed.
+
+=back
+
+=head3 Line/block directives
+
+=over
+
+=item C<by: I<source>>
+
+=item C<according_to: I<source>>
+
+Denotes that the information in the next block or line was provided by
+I<source>. This may be an email address or full name of an author, an
+URL providing more information, a Message-Id of a mail or posting, a
+date, or a combination of all. C<according_to:> is an alias for
+C<by:>.
+
+=item C<unverified_by: I<source>>
+
+Same as E<quot>by:E<quot> for unverified data.
+E<quot>UnverifiedE<quot> means that there's no communication channel
+back to the information provider.
+
+=item C<temporary:>
+
+The next block or line is just temporary. Typically the date
+information is included in the Name field of the data line, preferred
+in a ISO-date similar notation (e.g. YYYY-MM-DD - YYYY-MM-DD for a
+starting and an end date).
+
+=item C<unsure: I<why>>
+
+=item C<XXX: I<why>>
+
+The next block or line is unsure or unclear information. The I<why>
+text specifies an additional comment. This note should not appear in
+the processed data. C<XXX> is an alias for C<unsure:>.
+
+=item C<alias: I<name>>
+
+Define another known name for the next line.
+
+=item C<oldname: I<when>: I<name>>
+
+An old name for the next line. I<when> is a time specification (best:
+some kind of ISO dates, but this is not yet specified). Unknown dates
+in I<when> should be marked with a question mark. Multiple oldname
+directives are allowed for one record.
+
+Examples:
+
+    #: oldname: ?-20001001: Oldname street
+    #: oldname: 20001001-2005: Not-so-old-name street
+
+=item C<section: I<section name>>
+
+The next block is part of a named section. Sections may be nested.
+
+=item C<append_comment: I<comment>>
+
+Useful for preprocessing bbd data files to add a comment to each
+record in the block.
+
+=item C<attributes: I<attribute>, ...>
+
+=item C<attrs: I<attribute>, ...>
+
+Define additional attributes for the following line or block. The
+attributes may be used in a preprocessing script to generate
+additional layers. C<attrs> is an alias for C<attributes>.
+
+=item C<note: I<string>>
+
+A free text note, which shouldn't (but may) appear in the processed
+data.
+
+=item C<internal_note: I<string>>
+
+A free text note, which must not appear in the processed data. It is
+just a note for editors.
+
+=item C<see_also: I<string>>
+
+A free text note, which refers to more information. This should be
+typically a URL.
+
+=item C<add_fragezeichen: I<string>>
+
+Some postprocessing code may add the following line with the
+descriptive text I<string> to the F<fragezeichen> file.
+
+=back
+
+=head2 Comment lines
+
+If a line begins with a hash sign (C<#>), then it is treated as a
+comment. Empty lines are ignored.
+
+=head1 CATEGORIES
+
+Here's a list of special categories:
+
+=head2 STREETS
+
+Used in files: F<strassen>, F<landstrassen>, F<landstrassen2>.
+Usually F<strassen> is used for city streets, F<landstrassen> for
+streets in the region around the city, and F<landstrassen2> for
+streets in the wider region. But it is also possible to work only with
+one file F<strassen>.
+
+=over
+
+=item BAB
+
+Freeways (Bundesautobahn)
+
+=item B
+
+Bundesstraßen
+
+=item HH
+
+Important main streets (wichtige Hauptstraßen). Entspricht von der
+Kfz-Dichte meist Bundesstraßen.
+
+=item H
+
+Main streets (Hauptstraßen)
+
+=item N
+
+Nebenstraßen
+
+=item NN
+
+Für Kfz gesperrte Straßen.
+
+=item Pl
+
+Places (Plätze).
+
+=item Br
+
+Bridges.
+
+=back
+
+=head2 BLOCKINGS
+
+Used in files: F<gesperrt>, F<gesperrt_car>. F<gesperrt> is usually
+used for blocked streets relevant for cyclists, while F<gesperrt_car>
+is for blocked streets for motorized vehicles.
+
+=over
+
+=item * C<1>:
+
+One way street. The blocking is in the direction of the polyline.
+
+=item * C<1s>:
+
+One way street, but not strictly for cyclists (means: it is
+non-legally possible to pass the street in the wrong direction).
+
+=item * C<2>:
+
+Blocked street (in both directions).
+
+=item * C<0>:
+
+The bicycle has to be carried. An optional penalty parameter expressed
+in seconds of lost time may be added after the category, with a C<:>
+as separator. Example: C<0:30> for a penalty of 30 seconds. This is
+only for point records.
+
+=item * C<3>:
+
+A blocked route (gesperrte Wegführung). This means that the whole path
+specified by the coordinates of this record are blocked, but parts of
+the path are not.
+
+=item * C<3nocross>:
+
+Mark a street or street section which cannot be crossed. This category
+is currently only used by the F<miscsrc/convert2hafas> conversion
+script (the preprocessor of the F<*-orig> files to the real bbd
+files). The conversion script generates a couple of blocked routes
+with the category C<3>.
+
+=item * C<BNP>:
+
+A narrow passage (E<quot>DrE<auml>ngelgitterE<quot> etc.). An optional
+penalty parameter may be added, like for the C<0> category.
+
+=back
+
+=head2 CYCLE PATHS (RADWEGE)
+
+Used in files: F<radwege_exact>.
+
+=over
+
+=item C<RW0>
+
+Kein Radweg.
+
+=item C<RW1>
+
+Normaler nicht benutzungspflichtiger Radweg.
+
+=item C<RW2>
+
+Benutzungspflichtiger Radweg.
+
+=item C<RW3>
+
+Suggestivstreifen für Radfahrer.
+
+=item C<RW4>
+
+Radstreifen.
+
+=item C<RW5>
+
+Busspur (eventuell nur temporär), auch für Radfahrer frei.
+
+=item C<RW6>
+
+Verkehrsberuhigte Straße.
+
+=item C<RW7>
+
+Fahrradstraße.
+
+=item C<RW8>
+
+Benutzungspflichtiger Zweirichtungsradweg, Gegenrichtung.
+
+=item C<RW9>
+
+Nicht benutzungspflichtiger Zweirichtungsradweg, Gegenrichtung.
+
+=item C<RW10>
+
+Hauptstraße mit zusätzlichem Nebenstreifen, aber auch von Kfz nutzbar
+(Beispiele in Berlin: Heerstr., Unter den Eichen am Botanischen
+Garten).
+
+=item C<RW>
+
+Radweg vorhanden, aber nicht weiter kategorisiert.
+
+=back
+
+=head2 RAILROADS
+
+Used in files: F<ubahn>, F<sbahn>, F<rbahn>, F<ubahnhof>, F<sbahnhof>,
+F<rbahnhof>.
+
+=over
+
+=item C<R>
+
+Regionalbahnen außerhalb des Stadtgebiets.
+
+=item C<RA>
+
+Regionalbahnen Zone A.
+
+=item C<RB>
+
+Regionalbahnen Zone B.
+
+=item C<RC>
+
+Regionalbahnen Zone C.
+
+=item C<R0>
+
+Regionalbahnen außer Betrieb oder ohne regelmäßigen Betrieb.
+
+=item C<RBau>
+
+Regionalbahnen in Bau.
+
+=item C<RG>
+
+Güterbahnen, Verbindungskurven.
+
+=item C<RP>
+
+Parkbahnen, Kleinbahnen.
+
+=item C<S>
+
+S-Bahnen außerhalb des Stadtgebiets.
+
+=item C<SA>
+
+S-Bahnen Zone A.
+
+=item C<SB>
+
+S-Bahnen Zone B.
+
+=item C<SC>
+
+S-Bahnen Zone C.
+
+=item C<S0>
+
+S-Bahnen außer Betrieb.
+
+=item C<SBau>
+
+S-Bahnlinien in Bau.
+
+=item C<U>
+
+U-Bahnen außerhalb des Stadtgebiets.
+
+=item C<UA>
+
+U-Bahnen Zone A.
+
+=item C<UB>
+
+U-Bahnen Zone B.
+
+=item C<UC>
+
+U-Bahnen Zone C.
+
+=item C<U0>
+
+U-Bahnen außer Betrieb.
+
+=item C<UBau>
+
+U-Bahnlinien in Bau.
+
+=back
+
+=head2 QUALITY
+
+Qualität der Wege (Fahrbahnbeschaffenheit).
+
+Used in files: F<quality_s>, F<quality_l>. F<quality_s> is usually
+used for city streets, while F<quality_l> is for streets in the region
+around the city.
+
+=over
+
+=item C<Q0>
+
+Beste Qualität, keine Einschränkungen.
+
+=item C<Q1>
+
+Gute Kopfsteinpflasterstrecken, mäßiger Asphalt, etwa 25 km/h
+Höchstgeschwindigkeit.
+
+=item C<Q2>
+
+Gewöhnliche Kopfsteinpflasterstrecken, schlechter Asphalt, Waldwege,
+etwa 18 km/h Höchstgeschwindigkeit.
+
+=item C<Q3>
+
+Schlechte Kopfsteinpflasterstrecken, sandige Strecken, etwa 13 km/h
+Höchstgeschwindigkeit.
+
+=back
+
+Andere, nicht fahrbahnbezogene Handicaps, zum Beispiel Beeinträchtigungen
+durch Fußgänger oder enge Kurven. Used in files: F<handicap_s> (used
+for city streets), F<handicap_l> (used for streets in the region
+around the city).
+
+=over
+
+=item C<q0>
+
+Keine.
+
+=item C<q1>
+
+Auf 25 km/h.
+
+=item C<q2>
+
+Auf 18 km/h.
+
+=item C<q3>
+
+Auf 13 km/h.
+
+=item C<q4>
+
+Auf Schrittgeschwidigkeit (z.B. in FuE<szlig>gE<auml>ngerzonen).
+
+=back
+
+=head2 COMMENTS
+
+Used in files: F<comments_cyclepath> (alternative way to attribute
+cyclepaths), F<comments_ferry> (e.g. time-tables or fares of ferries),
+F<comments_kfzverkehr> (categorized amount of motorized traffic -
+Abschätzung des Kfz-Verkehrs), F<comments_misc> (other comments),
+F<comments_mount> (mounts with grades - Steigungen), F<comments_path>
+(path instructions), F<comments_route> (numbered cycle routes -
+ausgeschilderte Fahrradrouten), F<comments_tram> (tramway on street).
+
+=over
+
+=item C<CP;>
+
+Only for records with three points. Comment is valid for point B if
+driving from A to C.
+
+=item C<CP>
+
+Same as C<CP;>, but valid for both directions.
+
+=item C<CS;>
+
+Comment is valid for the whole route in this direction.
+
+=item C<CS>
+
+Comment is valid for the whole route in both directions.
+
+=item C<PI>
+
+Path instruction (genauere Wegbeschreibung).
+
+=item C<P0>
+
+Dieser Weg ist gesperrt (z.B. Abbiegen nicht möglich), aber eine
+Umfahrung ist möglich ... siehe auch Kategorie C<3> in L</BLOCKINGS>.
+
+=item C<-2> relativ ruhiger Kfz-Verkehr
+
+=item C<-1>
+
+=item C<+1>
+
+=item C<+2> relativ starker Kfz-Verkehr
+
+Relativ zu der Kategorie einer Straße (von Nebenstraße C<NN> bis zur
+Bundesstraße C<B>) kann das subjektive Empfinden der Kfz-Dichte mit
+C<-2> bis C<+2> angepasst werden.
+
+=back
+
+=head2 AREAS
+
+Used in files: F<flaechen>. Mostly prefixed with C<F:>, see above.
+
+=over
+
+=item C<P>
+
+Parks.
+
+=item C<Forest>
+
+Forests.
+
+=item C<Cemetery>
+
+Cemeteries.
+
+=item C<Ae>
+
+Airports.
+
+=item C<Orchard>
+
+Orchards; especially allotments (Kleingärten).
+
+=item C<Sport>
+
+Sports fields.
+
+=item C<Industrial>
+
+Industrial area.
+
+=back
+
+=head2 CITIES AND PLACES
+
+The category interval span from C<0> to C<6> where C<0> denotes city
+parts, C<1> villages and C<6> metropolises.
+
+=head2 MISC
+
+=over
+
+=item C<radroute>
+
+Haupt- oder Freizeitrouten.
+
+=item C<Q>
+
+Fähren.
+
+=item C<X>
+
+The category will not be used in this case.
+
+=back
+
+=head2 OTHER STANDARD FILES
+
+=over
+
+=item ampeln
+
+File with point records for traffic lights (Ampeln). The category is
+set to B<B> for railroad crossings, B<B0> for railroad crossing
+without frequent traffic, B<F> for pedestrian-only traffic lights and
+B<Zbr> for drawbridges, otherwise not used.
+
+=item hoehe
+
+File with elevation points. The C<Name> fields denotes the elevation
+in meters, the category is not used.
+
+=back
+
+XXX To be continued
+
+=head1 EXAMPLES
+
+    #: map: polar
+    # a comment
+    Dudenstr.	H 13.3857982559056,52.4850047136888 13.3822671967909,52.4849893166144 13.3765591649622,52.4849797043717 13.3721313913775,52.4849830887141 13.3708964575072,52.4850055627098
+    Viktoriapark	F:P 13.3770529147335,52.4891642850551 13.376956820767,52.4876188211697 13.3778829456197,52.4875997186591
+
+And a detailed explanation...
+
+    Start of a directive
+    v
+    #: map: polar
+       ^
+       Coordinate system of this file is defined as WGS84, DDD
+
+    Start of a comment
+    v
+    # a comment
+
+(Note that spaces are insignificant in the following examples, but
+C<< <TAB> >> and C<< <SPACE> >> should be inserted)
+    
+                              List of coordinates (x,y pairs)
+                              v
+    Dudenstr. <TAB> H <SPACE> 13.3857982559056,52.4850047136888 13.3822671967909,52.4849893166144 13.3765591649622,52.4849797043717 13.3721313913775,52.4849830887141 13.3708964575072,52.4850055627098
+    ^               ^
+    Street name     Category (H = main street)
+
+                                   List of coordinates for a polygon
+                                   v
+    Viktoriapark <TAB> F:P <SPACE> 13.3770529147335,52.4891642850551 13.376956820767,52.4876188211697 13.3778829456197,52.4875997186591
+    ^                  ^
+    Name of a park     Category (F = area (polygon, Fläche),
+                                 P = park)
+
+=head1 CAVEATS
+
+Some category values may change. It is likely that either the blocking
+and/or city category values will change, as both use digits.
+
+=head1 AUTHOR
+
+Slaven Rezic <slaven@rezic.de>
+
+=head1 SEE ALSO
+
+L<bbbike>, L<Strassen>.
+

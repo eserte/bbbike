@@ -1,0 +1,22 @@
+# $Id: Makefile.doc,v 1.6 2006/09/10 21:27:21 eserte Exp $
+
+# The following FreeBSD packages are necessary:
+#    openjade docbook-310 dsssl-docbook-modular docbook-xsl jadetex
+# (This list might be incomplete)
+
+MAINTAINER=	slaven@rezic.de
+DOC=		HOWTO_edit_bbbike_data
+
+SRCS=		${DOC}.sgml
+FORMATS?=	html
+
+## This makes no difference, why?
+#HAS_INDEX=	true
+WITH_ARTICLE_TOC?= YES
+
+DOC_PREFIX?=	/usr/doc
+DSLHTML?=       ${DOC_PREFIX}/share/sgml/freebsd.dsl
+DSLPRINT?=      ${DOC_PREFIX}/share/sgml/freebsd.dsl
+LANGCODE=       de_DE.ISO8859-1
+
+.include "${DOC_PREFIX}/share/mk/doc.project.mk"

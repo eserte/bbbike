@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.163 2006/09/01 23:57:57 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.163 2006/09/01 23:57:57 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -382,7 +382,7 @@ sub custom_draw {
 }
 
 sub read_desc_file {
-    warn "Using .desc files is obsolete, please consider to switch to global in-file directives. See bbd.pod for some information";
+    warn "Using .desc files is obsolete, please consider to switch to global in-file directives. See doc/bbd.pod for some information";
     my $desc_file = shift;
     my $abk = shift;
     @BBBike::ExtFile::scrollregion = ();
