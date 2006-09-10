@@ -9,7 +9,7 @@
 
 ]>
 
-<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.12 2006/09/10 21:28:03 eserte Exp $ -->
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.13 2006/09/10 22:32:15 eserte Exp $ -->
 
 <article lang="de">
  <artheader>
@@ -27,7 +27,7 @@
    </author>
   </authorgroup>
 
-  <pubdate>$Date: 2006/09/10 21:28:03 $</pubdate>
+  <pubdate>$Date: 2006/09/10 22:32:15 $</pubdate>
 
   <copyright>
    <year>2005</year>
@@ -91,9 +91,9 @@ erhält man u.a. neue Menüs, die bei der Datenerfassung helfen.
 <title>Editiermodus</>
 
 <para>
-Einschalten des EDIT-Modus durch Klick auf den EDIT-Button unten
-rechts. Die Layer werden neu geladen und es werden zusätzlich die
-Kreuzungs- und Kurvenpunkte angezeigt. </para>
+Einschalten des EDIT-Modus durch Klick auf den
+<guibutton>EDIT</>-Button unten rechts. Die Layer werden neu geladen
+und es werden zusätzlich die Kreuzungs- und Kurvenpunkte angezeigt.
 
 <para>
 Alternativ kann der EDIT-Modus beim Starten von BBBike mit der Option
@@ -115,8 +115,8 @@ wird ein Fenster mit einigen Editieroption geöffnet.
 <para>
 Durch Klicken auf die Karte kann ein Straßenzug zusammengestellt
 werden. Für nicht bestehende Punkte muss man gleichzeitig die
-Shift-Taste gedrückt halten. Bei bereits bestehenden Punkten (also
-Kreuzungspunkten) darf die Shift-Taste nicht verwendet werden. Kreuzt
+<keycap>Shift</>-Taste gedrückt halten. Bei bereits bestehenden Punkten (also
+Kreuzungspunkten) darf die <keycap>Shift</>-Taste nicht verwendet werden. Kreuzt
 eine neue Straße eine bestehende Straße, ohne dass bereits ein
 Kreuzungspunkt existiert, muss zuerst ein neuer Kurvenpunkt im
 bestehenden Straßenzug erzeugt werden (siehe <link
@@ -126,8 +126,8 @@ werden. Stattdessen sollte ein informeller Eintrag in der Datei
 <filename>brunnels</> erzeugt werden.
 
 <para>
-Nachdem die neue Straße zusammengestellt wurde, muss sie per "Add new
-to:" zu einer Datei, normalerweise <filename>strassen</> (in Berlin),
+Nachdem die neue Straße zusammengestellt wurde, muss sie per <guibutton>Add new
+to:</> zu einer Datei, normalerweise <filename>strassen</> (in Berlin),
 <filename>landstrassen</> (im näheren Umland von Berlin) oder
 <filename>landstrassen2</> (im entfernteren Umland von Berlin und
 außerhalb von Brandenburg) hinzugefügt werden. Im nachfolgenden Dialog
@@ -148,7 +148,7 @@ diesem Fall muss die Straße mit Bezirks-/Ortsteilsname (nicht die
 neuen Superbezirksnamen verwenden!), Postleitzahl und einem
 exemplarischen Punkt eingetragen werden. "...straße" wird
 immer als "...str." abgekürzt. Straßen, die durch mehrere
-Ortsteile und/oder Postleitzahlgebiete führen, müssen dementsprechende
+Ortsteile und/oder Postleitzahlgebiete führen, müssen dementsprechend
 viele Einträge erhalten.
 
 <para>
@@ -192,7 +192,8 @@ Ob die richtige Reihenfolge gewählt wurde, kann später beim Routing
 erscheinen.
 
 <para>
-In den Landstraßendateien sollten die Straßennamen möglichst so
+In den Landstraßendateien (<filename>landstrassen</> und
+<filename>landstrassen2</>) sollten die Straßennamen möglichst so
 gewählt werden, dass sie in der Realität bestehenden Wegweisern
 entsprechen. Ist das nicht bekannt, nimmt man die benachbarten Orte.
 Eine Straßennummerierung wird vorangestellt oder in Klammern angefügt.
@@ -211,11 +212,13 @@ verwendet. Beispiele:
 
 <para>
 Nach dem Einfügen der Straße ist diese nicht sofort sichtbar, sondern
-die Straße muss mit "Reload" neu geladen werden. <warning><para>
-Manchmal funktioniert "Reload" nicht, dann muss der Layer aus- und
+die Straße muss mit <guibutton>Reload</> neu geladen werden. <warning><para>
+Manchmal funktioniert <guibutton>Reload</> nicht, dann muss der Layer aus- und
 wieder eingeschaltet werden.</warning> <tip><para>Um das Laden zu
-beschleunigen kann im Layermenu "Lazy drawing" verwendet werden.</tip>
-<warning><para>"Lazy drawing" führt zu einem Speicherleck, der zu
+beschleunigen kann im Menü
+<menuchoice><guimenu>Bearbeiten</><guimenuitem>Lazy
+drawing</></menuchoice> verwendet werden.</tip>
+<warning><para><guimenuitem>Lazy drawing</> führt zu einem Speicherleck, der zu
 einem stetigen Speicherzuwachs in BBBike führt.</warning>
 
 <sect2>
@@ -224,10 +227,10 @@ einem stetigen Speicherzuwachs in BBBike führt.</warning>
 <para>
 Nach dem Reload ist die neue Straße sichtbar. Man kann sich wieder
 den Straßenzug zusammenklicken (den ganzen Teil oder nur einen Teil
-davon) und diesen Straßenzug mit "Add to new" zu einer
+davon) und diesen Straßenzug mit <guibutton>Add to new</> zu einer
 Attributdatei hinzufügen. Hier muss darauf geachtet werden, dass
-<!-- b -->alle<!-- /b --> Punkte auf bestehenden Kurvenpunkten liegen
-(Shift-Maustaste ist hier verboten) und dass kein Punkt vergessen oder
+<emphasis>alle</> Punkte auf bestehenden Kurvenpunkten liegen
+(<keycap>Shift</>-Maustaste ist hier verboten) und dass kein Punkt vergessen oder
 doppelte angeklickt wurden.<footnote> <para> Eine weitere
 Möglichkeit der Punktauswahl wäre eine normale Suche (dazu in
 den Suchmodus gehen). Nach der Suche müssen die Punkte per
@@ -255,11 +258,12 @@ Kategorien beschrieben. <!-- TODO: --> <!-- bbd.pod übersetzen? -->
 Die im Edit-Modus bearbeiteten Dateien sind die Dateien im Verzeichnis
 <filename>data</> mit der Endung <filename>-orig</>. BBBike im
 Normalmodus verwendet die Dateien ohne die Endung <filename>-orig</>.
-Die Konvertierung wird vom Makefile im Verzeichnis data vorgenommen.
-Das Makefile funktioniert nur mit einem modernen BSD-make. Alle
+Die Konvertierung wird vom <filename>Makefile</> im Verzeichnis
+<filename class="directory">data</> vorgenommen.
+Das <filename>Makefile</> funktioniert nur mit einem modernen BSD-make. Alle
 Nicht-BSD-Systeme (auch Linux) benötigen dieses make, dass bei <ulink
 url="http://www.sourceforge.net/projects/srezic">Sourceforge</> als
-"pmake" <!-- oder BSD make, check! --> im Quellcode erhältlich ist.
+<command>pmake</> im Quellcode erhältlich ist.
 Eine Windows-Binary existiert noch nicht.
 <!-- check, ob "make install" bei pmake existiert und das -->
 <!-- original-make überschreiben würde, böse, böse -->
@@ -283,23 +287,23 @@ Im Straßen-Editor gibt es zwei Möglichkeiten zum Einfügen eines
 Punktes in eine bestehende Seite.
 
 <para>
-Mit "Insert point" kann mit einem einfachen Mausklick auf eine Straße
+Mit <guibutton>Insert point</> kann mit einem einfachen Mausklick auf eine Straße
 an dieser Stelle ein Punkt ausgewählt werden. Danach erscheint ein
 Dialog, wo man das Einfügen bestätigt, unter Umständen per Checkbox
-nur für bestimmte Layer. Nach dem Bestätigen kann per "Reload" der
+nur für bestimmte Layer. Nach dem Bestätigen kann per <guibutton>Reload</> der
 neue Punkt sichtbar gemacht werden. Achtung! Beim Bestätigen sollte
 man den angezeigten Straßennamen überprüfen. Stimmt dieser nicht
 überein, so muss das Hinzufügen des Punktes abgebrochen werden, und
 der Straßen-Layer aus- und wieder eingeschaltet werden (bekannter Bug
-in BBBike). "Insert point" ist ein Modus, der ein- und ausgeschaltet
+in BBBike). <guibutton>Insert point</> ist ein Modus, der ein- und ausgeschaltet
 werden muss.
 
 <para>
-Mit "Insert multiple points" können mehrere Punkte zwischen zwei
+Mit <guibutton>Insert multiple points</> können mehrere Punkte zwischen zwei
 benachbarten Kurvenpunkten eingefügt werden. Dazu klickt man zuerst
-den ersten Kurvenpunkt an (ohne Shift), dann die einzufügenden Punkte
-(mit Shift) und schließlich den zweiten Kurvenpunkt an. Jetzt wählt
-man "Insert multiple points" aus. Ein Dialog erscheint, wo man das
+den ersten Kurvenpunkt an (ohne <keycap>Shift</>), dann die einzufügenden Punkte
+(mit <keycap>Shift</>) und schließlich den zweiten Kurvenpunkt an. Jetzt wählt
+man <guibutton>Insert multiple points</> aus. Ein Dialog erscheint, wo man das
 Einfügen bestätigen muss und kann dann auf Reload drücken. Der bei der
 ersten Methode erwähnte Bug tritt hier nicht auf.
 
@@ -307,12 +311,12 @@ ersten Methode erwähnte Bug tritt hier nicht auf.
 <title>Punkt verschieben</>
 
 <para>
-Mit "Move points" kann ein Punkt verschoben werden. Das wird man z.B.
+Mit <guibutton>Move points</> kann ein Punkt verschoben werden. Das wird man z.B.
 machen, wenn man anhand eines GPS-Tracks feststellt, dass eine Straße
 verschoben ist. Zum Verschieben klickt man zuerst den zu
-verschiebenden Punkt an (ohne Shift) und dann das Ziel (mit oder ohne
-Shift, je nachdem, ob das Ziel ein existierender Kurvenpunkt ist), und
-schließlich "Move points". Der Dialog mit den betreffenden Layern wird
+verschiebenden Punkt an (ohne <keycap>Shift</>) und dann das Ziel (mit oder ohne
+<keycap>Shift</>, je nachdem, ob das Ziel ein existierender Kurvenpunkt ist), und
+schließlich <guibutton>Move points</>. Der Dialog mit den betreffenden Layern wird
 angezeigt und kann bestätigt werden. Achtung: einige Punkte sollten
 nur bei genauer vorheriger Überprüfung verschoben werden. Dazu zählen
 Endpunkte (im Dialog mit "endpoint" markiert), Höhenpunkte, Ampeln u.ä.
@@ -322,27 +326,27 @@ Endpunkte (im Dialog mit "endpoint" markiert), Höhenpunkte, Ampeln u.ä.
 
 <para>
 Eine bestehende Linie zwischen zwei Punkten kann verschoben werden.
-Man benutzt diese Funktion anstelle von "Move point", wenn einer der
+Man benutzt diese Funktion anstelle von <guibutton>Move point</>, wenn einer der
 Punkte bereits für eine andere Straße an der richtigen Stelle steht.
 Arbeitsweise: die beiden benachbarten Punkte der zu verschiebenden
-Strecke mit Klick markieren (ohne Shift), wobei der zweite Punkt der
+Strecke mit Klick markieren (ohne <keycap>Shift</>), wobei der zweite Punkt der
 zu verschiebende ist. Dann wird der Zielpunkt mit Klick ausgewählt
-(meistens mit Shift). "Move line" auswählen, Dialog bestätigen und
+(meistens mit <keycap>Shift</>). <guibutton>Move line</> auswählen, Dialog bestätigen und
 evtl. ein Reload durchführen.
 
 <sect2>
 <title>Punkt suchen</>
 <para>
-Mit "Grep point" kann nachgeschaut werden, in welchen Layern ein Punkt
+Mit <guibutton>Grep point</> kann nachgeschaut werden, in welchen Layern ein Punkt
 vorkommt. Die Vorgehensweise ist: Punkt per Klick markieren und dann
-auf "Grep point" klicken.
+auf <guibutton>Grep point</> klicken.
 
 <sect2>
 <title>Linie suchen</>
 <para>
-Mit "Grep line" kann nachgeschaut werden, in welchen Layern eine Linie
+Mit <guibutton>Grep line</> kann nachgeschaut werden, in welchen Layern eine Linie
 mit zwei benachbarten Punkten vorkommt. Die Vorgehensweise ist: zwei
-Punkte per Klick markieren und dann auf "Grep line" klicken.
+Punkte per Klick markieren und dann auf <guibutton>Grep line</> klicken.
 
 <sect2>
 <title>Punkt löschen</>
@@ -359,11 +363,13 @@ geachtet werden, dass mindestens zwei Punkte in der Strecke übrig bleiben.
 Eine Koordinatenliste (kann auch aus einem einzelnen Punkt bestehen)
 markieren und mit "Copy" im jeweiligen Programm auswählen
 (Unix-Benutzer müssen in der Regel nur markieren). In BBBike den
-Menüpunkt Bearbeiten > Linienkoordinaten anzeigen auswählen. Nach Klick
-auf dem Button wird der Kartenausschnitt verschoben und die Punkte der
-Koordinatenliste blinken auf. Mit der Option "Ständige Markierungen"
-bleibt die Markierung ständig bestehen, ansonsten verschwindet sie
-nach wenigen Sekunden.
+Menüpunkt
+<menuchoice><guimenu>Bearbeiten</><guimenuitem>Linienkoordinaten
+anzeigen</></menuchoice> auswählen. Nach Klick auf dem Button wird der
+Kartenausschnitt verschoben und die Punkte der 
+Koordinatenliste blinken auf. Mit der Option <guimenuitem>Ständige
+Markierungen</> bleibt die Markierung ständig bestehen, ansonsten
+verschwindet sie nach wenigen Sekunden.
 
 <sect1>
 <title>Veröffentlichen der Ergänzungen</>
@@ -376,8 +382,8 @@ BBBike-Stammdaten</> geschickt werden. In der Datei ist auch jeweils
 ein Zeitstempel pro Tag enthalten; es reicht aus, wenn nur die
 neuesten Änderungen abgeschickt werden. Zugleich sollte ein diff
 geschickt werden. Dieses wird mit <command>cvs diff -u data >
-data.diff</> aus dem ausgecheckten BBBike-Verzeichnis heraus gemacht.
-Die diff-Datei namens <filename>data.diff</> sollte dann ebenfalls an
+data.patch</> aus dem ausgecheckten BBBike-Verzeichnis heraus gemacht.
+Die diff-Datei namens <filename>data.patch</> sollte dann ebenfalls an
 den Maintainer geschickt werden.
 
 <sect1>
@@ -397,7 +403,9 @@ Maintainer die editierten Daten ins CVS eingepflegt hat.
 GPS-Tracks können entweder als zusätzlicher Straßen-Layer oder
 (bevorzugt für Tracks im <ulink
 url="http://www.ncc.up.pt/gpsman/">gpsman</>-Format) über den
-Menüpunkt Layer zeichnen > Gpsman-Daten zeichnen dargestellt werden.
+Menüpunkt <menuchoice><guimenu>Kartenebenen</><guisubmenu>Zusätzliche
+Kartenebenen</><guimenuitem>Gpsman-Daten zeichnen</></menuchoice>
+dargestellt werden.
 Im letzteren Fall sollten sich die GPS-Tracks im Verzeichnis
 <filename>bbbike/misc/gps_data/</> im Dateinamenformat
 <filename>YYYYMMDD.trk</> für Tracks und <filename>YYYYMMDD.wpt</> für
@@ -1025,10 +1033,10 @@ Menüpunktes Bearbeiten > Path to Selection (dazu muss die <link
 linkend="bbbikeadvanced">Option Advanced</> aktiviert sein) steht die
 Koordinatenliste als Selection zur Verfügung und kann mit "Paste" in
 einen Editor oder ein Mailprogramm eingefügt werden. Es ist für den
-Maintainer hilfreiche, wenn dabei das normale BBBike-Datenformat
+Maintainer hilfreich, wenn dabei das normale BBBike-Datenformat
 verwendet wird, also
 <programlisting>
-    Bechreibung    TAB    Kategorie oder X   Space    Koordinatenliste
+    Beschreibung (z.B. Straßenname)    TAB    Kategorie oder X    Space    Koordinatenliste
 </programlisting>
 
 <sect2>
