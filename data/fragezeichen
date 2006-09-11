@@ -338,7 +338,6 @@ Erxlebenstr.: Qualität?	? 19726,-32 19626,367
 Mohnweg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 19471,448 19626,367 19728,364 19823,357 20035,348 20098,359 20214,375 20267,375
 Porzer Str.: Qualität? Laut ADFC-Karte Radwege, stimmt das? Sind die Radwege benutzungspflichtig?	? 19774,-231 20010,-35 20323,243 20606,300
 Bohnsdorfer Weg: Qualität? (laut ADFC-Karte mäßig geeignet)	? 20671,87 20606,300 20543,478 20510,530
-Schillingstr. (Reinickendorf): Qualität?	? 4687,18175 4581,17689
 Herzberg - Vielitz - Lindow: Qualität?	? -19761,54883 -18575,56837 -17019,58171 -16762,58037 -16350,58125 -15987,58387 -15950,58625 -16100,58837 -16583,58871 -16887,58862 -17800,61125 -18200,61425 -18762,61537 -19118,62087
 Calau - Werchow: Qualität?	? 48838,-72837 49300,-73237 49437,-74112 49425,-74550 49618,-75018
 Werchow - Cabel: Qualität?	? 49618,-75018 49412,-75175 49075,-75387 48818,-75806 48437,-75600 47821,-75451
@@ -526,7 +525,7 @@ Treppe zw. Uferweg und Altonaer vorh.?	? 5962,12553 5967,12525
 Verbindung Stülpnagelstr. - Knobelsdorffstr. vorh.?	? 2185,11701 2154,11762
 (Machandelweg - Rossiter Weg): Qualität korrekt?	? 77,12260 -125,12173
 Koloniestr.: Qualität (zumindestens in Höhe Soldiner Str. Kopfsteinpflaster)	? 8503,16716 8583,16914 8601,16960 8677,17154 8983,17748
-Malmöer Str.: ist auch der Abschnitt zwischen Bornholmer und Finnländische Str. Kopfsteinpflaster?	? 10198,16528 10225,16436
+Malmöer Str.: ist auch der Abschnitt zwischen Bornholmer und Finnländische Str. Kopfsteinpflaster?	? 10197,16528 10225,16436
 Greifswalder Str./Lilli-Henoch-Str.: gibt es hier eine Überquerungsmöglichkeit über die Straßenbahntrasse?	? 12614,14941
 Trendelenburgstr.: Qualität (vermutlich Asphalt), Behinderungen?	? 2740,11076 2845,10840
 Caputh - Michendorf: Asphaltierter Zweiwegeradweg im Bau, fertig vorausichtlich Nov. 2005	?::inwork -14279,-9832 -14518,-9621 -14790,-9271 -15120,-8806 -15805,-7964 -15951,-7768
@@ -912,6 +911,7 @@ Hauptstr./Mühlenstr.: ist hier eine Ampel?	? 12187,22486
 Sleipnerstr.: Qualität? (vermutlich Asphalt wie zw. Heimdall- u. Romain-Rolland-Str.)?	? 12510,18954 12684,18859 12829,18775
 östl. Radweg der Prenzlauer Prom. in Gegenrichtung, also Stadtmitte freigegeben?	? 12002,18768 11984,18650 11969,18552 11950,18529
 Heinrich-von-Kleist-Str. (Potsdam): Qualität (vermutlich Kopfsteinpflaster)?	? -10078,-2339 -10109,-2437 -10142,-2540
+Theodor-Francke-Str.: Existiert eine Verbindung zum Franckepark?	? 9328,6164 9337,6162
 # added from ampeln-orig
 wirklich? (?)	? 9215,3599
 Wirklich? (?)	? -3775,17087
@@ -968,7 +968,6 @@ Sachsenstr. (Altglienicke) (Qualität (vermutlich Kopfsteinpflster)?)	? 20685,817
 Matenzeile (Qualität (Beton o. Asphalt)?)	? 17365,17632 17474,17478 17582,17335 17714,17285
 Seeweg (Weißensee) (Qualität?)	? 14499,16341 14480,16449 14510,16549 14521,16599
 Seeweg (Weißensee) (Qualität?)	? 14601,16525 14549,16538 14510,16549
-Theodor-Francke-Str. (Existiert eine Verbindung zum Franckepark?)	? 9221,6179 9328,6164
 Borkheide - Neuendorf (ungenaue Koordinaten!)	? -26338,-21122 -27908,-22935 -28547,-22981 -29244,-23127
 Waldesruher Str. (Waldesruh) (Qualität, wahrscheinlich fester Sandweg?)	? 25047,8086 24923,7903 24910,7896 24842,7811 24800,7746 24718,7633 24648,7542 24593,7455
 Am Kanal (Qualität, Einbahnstrasse?)	? -12657,-1338 -12542,-1305 -12311,-1238
@@ -986,7 +985,6 @@ Eastgate (genaue Position?)	? 19788,15452
 Müncheberg, Turm (genaue Bezeichnung?)	? 60803,11559
 Müncheberg, Turm (genaue Bezeichnung?)	? 60306,11906
 Gemeinsamer Rad- und Gehweg parallel zur Straße (Ist der Radweg ein Zweirichtungsradweg? Auf welcher Seite führt der Radweg?)	? 30390,-3443 29780,-3563 28499,-3409 28073,-3255 27906,-3136
-(Pelzlake): Waldweg, teilweise matschig oder sandig (Ist dieser Weg nach den jüngsten Bauarbeiten (siehe http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html) asphaltiert?)	? 31865,1794 31115,2105
 Radweg am Müggelsee: Waldweg OK, trotz Schotter (Ist dieser Weg nach den jüngsten Bauarbeiten (siehe http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html) asphaltiert?)	? 28829,3295 28723,3283 28695,3245 28485,3206 27984,2995 27732,2671 27528,2469 27314,2282 27218,2300 26802,2374 26460,2428 26026,2532 25948,2474
 Artemisstr.: kleinteiliges Kopfsteinpflaster (mindestens im Süden:)	? 4371,22234 4293,22365 4140,22623
 Marienhöher Weg: Kopfsteinpflaster (mäßiges oder schlechtes Kopfsteinpflaster?)	? 8353,5188 8185,5209 8009,5000 7913,4996 7861,5029 7851,5125 7929,5250

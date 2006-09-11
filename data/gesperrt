@@ -1,5 +1,5 @@
 #: title: Einbahnstraﬂen und gesperrte Straﬂen
-#: version: $Id: gesperrt-orig,v 4.138 2006/09/10 19:46:30 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.139 2006/09/11 20:52:17 eserte Exp $
 #:
 Kanalstraﬂen S¸dufer, von Osten bis Kˆthener Br¸cke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraﬂen S¸dufer, von Osten bis Kˆthener Br¸cke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -192,7 +192,7 @@ Darﬂer Str.	1 15000,18056 15031,18106 15181,18137
 Schottstr.	1 16270,12261 16389,12394
 R¸digerstr.	1 16389,12394 16468,12386
 Alfredstr.	1 16211,11951 16261,12224 16270,12261
-Fanningerstr.	1 17139,12100 16983,12124 16782,12154
+Fanningerstr.	1 17139,12100 17092,12107 16983,12124 16890,12135 16782,12154
 Gierkeplatz	1 3450,12240 3460,12270 3484,12280 3516,12273 3531,12252 3524,12222 3495,12209 3463,12216 3450,12240
 Knaackstr.	1 11056,15009 11030,14979 11101,14768
 (Br¸ckenstr. - Holzmarktstr.)	1 11388,12202 11347,12181
@@ -361,7 +361,7 @@ Bansin	1 57181,174881 57341,175031 57406,175093
 Bansin	1 57665,174803 57448,174956
 Bansin	1 57256,175084 57140,174971
 Bansin	1 57406,175093 57506,175000 57665,174803
-Seelbuschring	1s 8467,4590 8432,4712 8242,4648
+Seelbuschring	1s 8473,4614 8432,4712 8242,4648
 Zionskirchstr.	1s 10389,14274 10426,14262
 Walsroder Str.	1s 6396,5125 6295,5132 6203,5138 6089,5145
 H¸nensteig	1s 6415,5028 6393,5028 6396,5125
@@ -377,7 +377,7 @@ Neue Schˆnhauser Str.	1s 10528,13243 10441,13195 10305,13211
 Alte Schˆnhauser Str.	1s 10718,13625 10746,13673
 Kirchhofstr.	1s 13188,7590 13117,7471 13032,7334
 Niemannstr.	1s 14252,11368 14211,11229
-Bjˆrnsonstr	1s 10208,16659 10198,16528
+Bjˆrnsonstr	1s 10209,16674 10197,16528
 Eichhornstr.	1s 8232,11414 8258,11254
 Paul-Junius-Str.	1s 15084,12975 15085,13105
 Ahornallee	1s 1589,11483 1574,11379
@@ -395,7 +395,7 @@ Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg mˆglich)	1s -12064,-284 -
 Stephanstr.	1s 6526,4475 6377,4490
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Ringbahnstr.	1s 8717,6965 8447,6964
-Bjˆrnsonstr.	1s 10208,16659 10198,16528
+Bjˆrnsonstr.	1s 10209,16674 10197,16528
 Schillingstr. -> Alexanderstr.: umbequemes ‹berqueren wegen Bordsteinen	3 11462,12384 11333,12437 11343,12300
 Alexanderstr. -> Schillingstr.: umbequemes ‹berqueren wegen Bordsteinen	3 11323,12484 11333,12437 11462,12384
 Karl-Liebknecht-Str. -> Alexanderpl. [Dircksenstr./zur Karl-Liebknecht-Str.]: Straﬂenbahntrasse in Bau	3 10920,13139 10781,13002 10844,12935
@@ -420,10 +420,10 @@ Rhinstr. -> Kolonie Friedrichsfelde Nord: Straﬂenbahntrasse	3 18215,12132 18216,
 Kolonie Friedrichsfelde Nord -> Rhinstr.: Straﬂenbahntrasse	3 18180,12262 18216,12262 18220,12450
 Langhoffstr. -> Allee der Kosmonauten: Straﬂenbahntrasse	3 19821,13604 19807,13529 20182,13554
 Allee der Kosmonauten -> Langhoffstr.: Straﬂenbahntrasse	3 19628,13517 19807,13529 19821,13604
-Aalesunder Str. -> Bornholmer Str.: Straﬂenbahntrasse	3 10549,16654 10533,16505 10620,16497
-Bornholmer Str. -> Aalesunder Str.: Straﬂenbahntrasse	3 10445,16511 10533,16505 10549,16654
-Andersenstr. -> Bornholmer Str.: Straﬂenbahntrasse	3 10315,16651 10300,16521 10370,16516
-Bornholmer Str. -> Andersenstr.: Straﬂenbahntrasse	3 10198,16528 10300,16521 10315,16651
+Aalesunder Str. -> Bornholmer Str.: Straﬂenbahntrasse	3 10549,16650 10533,16505 10620,16497
+Bornholmer Str. -> Aalesunder Str.: Straﬂenbahntrasse	3 10445,16511 10533,16505 10549,16650
+Andersenstr. -> Bornholmer Str.: Straﬂenbahntrasse	3 10295,16667 10282,16522 10370,16516
+Bornholmer Str. -> Andersenstr.: Straﬂenbahntrasse	3 10197,16528 10282,16522 10295,16667
 Karl-Liebknecht-Str. -> Rosenstr.: Straﬂenbahntrasse	3 10440,12696 10519,12768 10489,12803
 Rosenstr. -> Karl-Liebknecht-Str.: Straﬂenbahntrasse	3 10489,12803 10519,12768 10699,12929
 Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen	3 6514,9775 6520,9867 6463,9862
@@ -551,8 +551,8 @@ Lewishamstr. -> Waitzstr.: Straﬂentunnelrampe	3 3813,10435 3771,10511 3739,10495
 Waitzstr. -> Lewishamstr.: Straﬂentunnelrampe	3 3739,10495 3771,10511 3739,10576
 Rauchstr. -> Klingelhˆferstr.: unbequem passierbarer Mittelstreifen	3 6683,11367 6853,11336 6825,11486
 Klingelhˆferstr. -> Rauchstr.: unbequem passierbarer Mittelstreifen	3 6880,11110 6853,11336 6683,11367
-Bornholmer Str. -> Treppe zum Kolonnenweg: Straﬂenbahn auf Mittelstreifen	3 10198,16528 9998,16547 9982,16527
-Treppe zum Kolonnenweg -> Bornholmer Str.: Straﬂenbahn auf Mittelstreifen	3 9983,16561 9998,16547 10198,16528
+Bornholmer Str. -> Treppe zum Kolonnenweg: Straﬂenbahn auf Mittelstreifen	3 10197,16528 9998,16547 9982,16527
+Treppe zum Kolonnenweg -> Bornholmer Str.: Straﬂenbahn auf Mittelstreifen	3 9983,16561 9998,16547 10197,16528
 Treppe zum Kolonnenweg -> Treppe zum Kolonnenweg: Straﬂenbahn auf Mittelstreifen	3 9983,16561 9998,16547 9982,16527
 Treppe zum Kolonnenweg -> Treppe zum Kolonnenweg: Straﬂenbahn auf Mittelstreifen	3 9982,16527 9998,16547 9983,16561
 Treppe zum Kolonnenweg -> Bornholmer Str.: Straﬂenbahn auf Mittelstreifen	3 9982,16527 9998,16547 9883,16557
@@ -1167,3 +1167,4 @@ Blumenweg	1 -9445,-2389 -9353,-2089
 Golliner Str.	1 22217,17989 22276,18107 22191,18150
 Schorfheidestr.	1s 21900,18215 21864,18230
 Jagowstr. (Hermsdorf)	1 3046,22292 3043,22407 3050,22554 3056,22693
+Hagenstr. (Lichtenberg)	1 16950,12617 16918,12325

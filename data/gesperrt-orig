@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.138 2006/09/10 19:46:30 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.139 2006/09/11 20:52:17 eserte Exp $
 #:
 ###################################################################
 #
@@ -216,7 +216,7 @@ Darßer Str.	1 15000,18056 15031,18106 15181,18137
 Schottstr.	1 16270,12261 16389,12394
 Rüdigerstr.	1 16389,12394 16468,12386
 Alfredstr.	1 16211,11951 16261,12224 16270,12261
-Fanningerstr.	1 17139,12100 16983,12124 16782,12154
+Fanningerstr.	1 17139,12100 17092,12107 16983,12124 16890,12135 16782,12154
 Gierkeplatz	1 3450,12240 3460,12270 3484,12280 3516,12273 3531,12252 3524,12222 3495,12209 3463,12216 3450,12240
 Knaackstr.	1 11056,15009 11030,14979 11101,14768
 (Brückenstr. - Holzmarktstr.)	1 11388,12202 11347,12181
@@ -407,7 +407,7 @@ Bansin	1 57406,175093 57506,175000 57665,174803
 #
 # Einbahnstraßen, die man als Radfahrer halbwegs ignorieren kann:
 # 
-Seelbuschring	1s 8467,4590 8432,4712 8242,4648
+Seelbuschring	1s 8473,4614 8432,4712 8242,4648
 Zionskirchstr.	1s 10389,14274 10426,14262
 Walsroder Str.	1s 6396,5125 6295,5132 6203,5138 6089,5145
 Hünensteig	1s 6415,5028 6393,5028 6396,5125
@@ -424,7 +424,7 @@ Neue Schönhauser Str.	1s 10528,13243 10441,13195 10305,13211
 Alte Schönhauser Str.	1s 10718,13625 10746,13673
 Kirchhofstr.	1s 13188,7590 13117,7471 13032,7334
 Niemannstr.	1s 14252,11368 14211,11229
-Björnsonstr	1s 10208,16659 10198,16528
+Björnsonstr	1s 10209,16674 10197,16528
 #Eichhornstr.	1s 8226,11458 8258,11254
 Eichhornstr.	1s 8232,11414 8258,11254
 Paul-Junius-Str.	1s 15084,12975 15085,13105
@@ -444,7 +444,7 @@ Stephanstr.	1s 6526,4475 6377,4490
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 #: by: David Greve:
 Ringbahnstr.	1s 8717,6965 8447,6964
-Björnsonstr.	1s 10208,16659 10198,16528
+Björnsonstr.	1s 10209,16674 10197,16528
 #
 ####################################################################
 #
@@ -467,7 +467,7 @@ Rhinstr.: Straßenbahntrasse	3nocross 18215,12132 18216,12262 18220,12450
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 19628,13517 19807,13529 20182,13554
 Bornhomer Str.: Straßenbahntrasse	3nocross 10765,16486 10699,16492 10620,16497
 Bornhomer Str.: Straßenbahntrasse	3nocross 10620,16497 10533,16505 10445,16511
-Bornhomer Str.: Straßenbahntrasse	3nocross 10445,16511 10370,16516 10300,16521 10198,16528
+Bornhomer Str.: Straßenbahntrasse	3nocross 10445,16511 10370,16516 10282,16522 10197,16528
 Karl-Liebknecht-Str./Rosenstr.: Straßenbahntrasse	3nocross 10440,12696 10519,12768 10699,12929
 Martin-Luther-Str.: Mittelstreifen	3nocross 6514,9775 6520,9867 6522,9948
 Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 11013,16278 11003,16196 10994,16120
@@ -499,7 +499,7 @@ Alt-Friedrichsfelde: Straßentunnelrampe	3nocross 18220,11710 18555,11724 18853,1
 Lewishamstr.: abgesperrter Mittelstreifen	3nocross 3592,10869 3631,10784 3644,10759
 Lewishamstr: Straßentunnelrampe	3nocross 3644,10759 3739,10576 3771,10511 3813,10435
 Klingelhöferstr: unbequem passierbarer Mittelstreifen	3nocross 6825,11486 6853,11336 6880,11110
-Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 10198,16528 9998,16547 9883,16557 9816,16565
+Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 10197,16528 9998,16547 9883,16557 9816,16565
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14208,12235 14291,12220 14381,12205 14434,12196 14488,12189
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 13792,12292 13885,12279 14208,12235
 Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11649 9899,11670 9982,11680
@@ -1009,3 +1009,4 @@ Blumenweg	1 -9445,-2389 -9353,-2089
 Golliner Str.	1 22217,17989 22276,18107 22191,18150
 Schorfheidestr.	1s 21900,18215 21864,18230
 Jagowstr. (Hermsdorf)	1 3046,22292 3043,22407 3050,22554 3056,22693
+Hagenstr. (Lichtenberg)	1 16950,12617 16918,12325
