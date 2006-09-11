@@ -5505,7 +5505,7 @@ userdel	2::inwork 35962,59463 35405,59832
 EOF
      },
      { from  => 1152050400, # 2006-07-05 00:00
-       until => 1159653600, # 2006-10-01 00:00
+       until => 1158013313, # 1159653600 2006-10-01 00:00
        text  => 'L 235 Gielsdorf-Werneuchen Schulstr. in der OL Wegendorf Straßen- u. Durchlassbau Vollsperrung 06.07.2006-30.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,

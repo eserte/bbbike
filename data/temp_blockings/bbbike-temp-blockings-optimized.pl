@@ -685,14 +685,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1159653600,
-         'text' => 'L 235 Gielsdorf-Werneuchen Schulstr. in der OL Wegendorf Straßen- u. Durchlassbau Vollsperrung 06.07.2006-30.09.2006 ',
-         'from' => 1152050400,
-         'data' => 'userdel	2::inwork 34492,22176 34321,22151 34125,22128
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1158336000,
@@ -740,15 +733,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_003370',
-         'until' => 1158012000,
-         'text' => 'Wilhelminenhofstr. (Oberschöneweide) Richtung Edisonstr. zwischen Rathenaustr. und Edisonstr. Baustelle, Fahrtrichtung gesperrt (bis 11.09.2006)',
-         'from' => 1156793020,
-         'data' => 'userdel	1::inwork 18853,6009 18445,6287 18343,6318 18175,6376 17992,6436
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1162335600,
          'text' => 'B 097 Dresdener Str. Brücke ober DB im OT Schwarze Pumpe Brückensicherung Vollsperrung 10.07.2006-31.10.2006 ',
@@ -871,15 +856,6 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'text' => 'L 014 Großderschau-Kyritz Brücke über den Graben bei Babe Brückenneubau Vollsperrung 11.07.2006-21.12.2006 ',
          'from' => 1152482400,
          'data' => 'userdel	2::inwork -64545,43296 -63700,42146
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_003518',
-         'until' => 1158012000,
-         'text' => 'Pablo-Neruda-Str. (Köpenick) in beiden Richtungen, zwischen Müggelheimer Damm und Salvador-Allende-Str. Baustelle, Straße vollständig gesperrt (bis 11.09.06)',
-         'from' => 1157695483,
-         'data' => 'userdel	2::inwork 22967,4144 23435,4179
 ',
          'type' => 'gesperrt'
        }
