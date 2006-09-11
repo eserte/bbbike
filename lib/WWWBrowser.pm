@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: WWWBrowser.pm,v 2.33 2006/09/07 23:43:16 eserte Exp $
+# $Id: WWWBrowser.pm,v 2.34 2006/09/11 21:17:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2000,2001,2003,2005,2006 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use vars qw(@unix_browsers @available_browsers
 	    $VERSION $VERBOSE $initialized $os $fork
 	    $got_from_config $ignore_config);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.33 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.34 $ =~ /(\d+)\.(\d+)/);
 
 @available_browsers = qw(_debian_browser _internal_htmlview
 			 _default_gnome _default_kde
@@ -173,10 +173,10 @@ sub start_browser {
 	} elsif ($browser eq '_debian_browser') {
 	    if ($ENV{DISPLAY}) {
 		if (-x "/etc/alternatives/gnome-www-browser") { # usually firefox or mozilla
-		    exec_bg($browser, $url); # use additional args if mozilla, learn args for firefox
+		    exec_bg("/etc/alternatives/gnome-www-browser", $url); # use additional args if mozilla, learn args for firefox
 		    return 1;
 		} elsif (-x "/etc/alternatives/x-www-browser") { # usually dillo
-		    exec_bg($browser, $url);
+		    exec_bg("/etc/alternatives/x-www-browser", $url);
 		    return 1;
 		}
 	    } else {
@@ -286,7 +286,12 @@ sub exec_bg {
 	eval {
 	    if (!$fork || fork == 0) {
 		exec @cmd;
-		die "Can't exec @cmd: $!";
+		warn "Can't exec @cmd: $!";
+		if (eval { require POSIX; 1 }) {
+		    POSIX::_exit(1);
+		} else {
+		    CORE::exit(1);
+		}
 	    }
 	};
     } else {
