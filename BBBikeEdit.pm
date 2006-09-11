@@ -536,47 +536,6 @@ sub ampel_edit_mouse1 {
 
 sub ampel_edit_mouse3 { }
 
-# Sort HList by index $inx. Only toplevel children are sorted, and only
-# hlists with text items will work at all. Styles get lost.
-sub sort_hlist {
-    my($hl, $inx) = @_;
-    my(@paths) = $hl->info("children");
-    my(@newpaths) = sort { $hl->itemCget($a, $inx, -text) cmp
-			     $hl->itemCget($b, $inx, -text) } @paths;
-    my(@newnewpaths);
-    my $cols = $hl->cget(-columns);
-    for(my $i=0; $i<=$#newpaths; $i++) {
-	my $p = {};
-	$p->{Newpath} = $i;
-	$p->{Data}    = $hl->entrycget($newpaths[$i], -data);
-	for(my $j=0; $j < $cols; $j++) {
-	    $p->{Text}[$j]  = $hl->itemCget($newpaths[$i], $j, -text);
-	    $p->{Style}[$j] = $hl->itemCget($newpaths[$i], $j, -style);
-	    # XXX is this a bug in ItemStyle?
-	    eval {
-		local $SIG{__DIE__};
-		undef $p->{Style}[$j]
-		    unless $p->{Style}[$j]->isa('Tk::ItemStyle');
-	    };
-	    if ($@) {
-		undef $p->{Style}[$j];
-	    }
-	}
-	push @newnewpaths, $p;
-    }
-    $hl->delete('all');
-    foreach my $p (@newnewpaths) {
-	$hl->add($p->{Newpath}, -text => $p->{Text}[0], -data => $p->{Data});
-	for(my $j=1; $j < $cols; $j++) {
-	    $hl->itemCreate
-	      ($p->{Newpath}, $j,
-	       -text => $p->{Text}[$j],
-	       ($p->{Style}[$j] ? (-style => $p->{Style}[$j]) : ()),
-	      );
-	}
-    }
-}
-
 # XXX Statt Indices Konstanten verwenden!
 sub ampel_display {
     my($p1) = @_;
@@ -632,6 +591,7 @@ sub ampel_display {
 	eval {
 	    require Tk::ItemStyle;
 	    require Tk::resizeButton;
+	    require BBBikeTkUtil;
 	    my $headerstyle = $ampel_hlist->ItemStyle('window', -padx => 0,
 						      -pady => 0);
 	    my(@header, @header2);
@@ -644,7 +604,7 @@ sub ampel_display {
 		  (-text => $_,
 		   -relief => 'flat', -pady => 0,
 		   -widget => \$scr_hlist,
-		   -command => sub { sort_hlist($scr_hlist, $ii) },
+		   -command => sub { BBBikeTkUtil::sort_hlist($scr_hlist, $ii) },
 		   -column => $i,
 		   -padx => 0, -pady => 0,
 		  );
@@ -652,7 +612,7 @@ sub ampel_display {
 		  (-text => $_,
 		   -relief => 'flat', -pady => 0,
 		   -widget => \$scr2_hlist,
-		   -command => sub { sort_hlist($scr2_hlist, $ii) },
+		   -command => sub { BBBikeTkUtil::sort_hlist($scr2_hlist, $ii) },
 		   -column => $i,
 		   -padx => 0, -pady => 0,
 		  );

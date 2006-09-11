@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePluginLister.pm,v 1.2 2006/09/05 21:30:13 eserte Exp $
+# $Id: BBBikePluginLister.pm,v 1.3 2006/09/11 22:18:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikePluginLister;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 require BBBikePlugin;
 
@@ -34,6 +34,7 @@ sub plugin_lister {
     }
     my @p;
     eval {
+	local $SIG{__DIE__};
 	if (1||$^O eq 'MSWin32') {
 	    @p = BBBikePlugin::_find_all_plugins_perl($topdir);
 	} else {
@@ -50,6 +51,8 @@ sub plugin_lister {
     }
 
     my $tl = $w->Toplevel(-title => "Plugins");
+    main::set_as_toolwindow($tl);
+    $main::toplevel{BBBikePluginLister} = $tl;
     $tl->geometry(int($w->screenwidth*0.7)."x400");
 
     my $outer = $tl->Frame(-border => 2, -relief => "sunken")->pack(-fill => "both", -expand => 1);
@@ -61,10 +64,41 @@ sub plugin_lister {
     my $hl = $outer->Scrolled("HList",
 			      -scrollbars => 'se',
 			      -header => 1,-columns => 4)->pack(-fill => "both", -expand => 1);
-    $hl->headerCreate(0, -text => "Laden");
-    $hl->headerCreate(1, -text => "Name");
-    $hl->headerCreate(2, -text => "Zusammenfassung");
-    $hl->headerCreate(3, -text => "Dateipfad");
+
+    if (eval {
+	local $SIG{__DIE__};
+	require Tk::resizeButton;
+	require BBBikeTkUtil;
+	1;
+    }) {
+	my $headerstyle = $hl->ItemStyle('window', -padx => 0, -pady => 0);
+	my $real_hl  = $hl->Subwidget('scrolled');
+	my $i = 0;
+	for my $title (qw(Laden Name Zusammenfassung Dateipfad)) {
+	    my $ii = $i;
+	    my $header = $hl->resizeButton(-text => $title,
+					   -relief => "flat",
+					   -padx => 0, -pady => 0,
+					   -widget => \$real_hl,
+					   ## XXX Sorting does not work reliable, checkbuttons vanish
+					   #($title ne "Laden" ? (-command => sub { BBBikeTkUtil::sort_hlist($real_hl, $ii) }) : ()),
+					   -column => $i,
+					   -anchor => 'w',
+					  );
+	    $hl->headerCreate($i,
+			      -itemtype => 'window',
+			      -widget => $header,
+			      -style => $headerstyle,
+			     );
+	    $i++;
+	}
+    } else {
+	warn $@;
+	$hl->headerCreate(0, -text => "Laden");
+	$hl->headerCreate(1, -text => "Name");
+	$hl->headerCreate(2, -text => "Zusammenfassung");
+	$hl->headerCreate(3, -text => "Dateipfad");
+    }
 
     $hl->columnWidth(0, 50);
     $hl->columnWidth(1, 230);
@@ -82,6 +116,8 @@ sub plugin_lister {
 					     -onvalue => 1,
 					     -offvalue => 0,
 					     -command => sub { toggle_plugin($tl, $plugin_def, $plugin_def->[3]) },
+					     -background => $hl->cget('-background'),
+					     -highlightthickness => 0,
 					    ),
 		);
 	$hl->itemCreate($path_i, 1, -text => $plugin_def->Name);
@@ -96,6 +132,7 @@ sub plugin_lister {
     $footer->Button(-text => "Plugins permanent machen",
 		    -command => sub {
 			eval {
+			    local $SIG{__DIE__};
 			    my @plugins = split /,/, $main::initial_plugins;
 			    my %plugins_args;
 			    for my $plugin_def (@plugins) {
