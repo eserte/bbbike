@@ -16,6 +16,41 @@ Legend:
 
 =over
 
+=item * (M4)
+
+Mehrere Eingabemodi anbieten, z.B. E<quot>BBBike ClassicE<quot>,
+Google, GoYellow.
+
+ BBBike Classic: <1> setzen von routenpunkten
+                 <Motion-2> scanning
+                 <3> popup-menu
+		 <cursor>: scrolling mit einer geschwindigkeit
+		 <pg up/down, pos1/end>: seitenweise scrollen
+		 <+>/<->: zooming
+
+ Google:         <1> original: zusatzinformationen anzeigen (?), bei
+		     bbbike weiterhin routenpunkte setzen
+                 <Motion-1> scanning
+		 <2> unbelegt (Browser)
+		 <3> unbelegt
+		 <Cursor>: scrolling mit zwei geschwindigkeiten
+		 <pg up/down, pos1/end>: seitenweise scrollen
+		 <+>/<->: zooming
+		 <wheel up>: zoom in and keep pos under mouse
+		 <wheel down>: zoom out and keep pos under mouse
+		 <double-1>: zoom in and center
+		 <double-3>: zoom out
+
+ GoYellow:	 <1> zoom in and center
+		 <3> zoom out and center
+	 	 <Shift-1> dito
+		 <motion-1> scanning
+		 <enter> zusatzinformationen
+		 <pg up>: zoom out, center kept
+		 <pg down>: zoom in, center kept
+		 <cursor>: scrolling mit einer geschwindigkeit
+
+
 =item * (H5)
 
 Aufräumen des Options-Editors.
@@ -1278,6 +1313,21 @@ Einfärben der Route nach Steigungen.
 Why is selecting one of the last characters in the streets chooser
 significantly slower (approx. 4s vs 1s) than a similar test with
 Tk-SREZIC/examples/k2listbox.pl?
+
+=back
+
+=head2 MacOSX specific
+
+=over
+
+=item * (H2)
+
+Maybe create a Mac distribution using .dmg disk images? See for
+example:
+
+ http://www.stepwise.com/Articles/Technical/2001-03-29.01.html
+ http://el-tramo.be/guides/fancy-dmg/
+ http://el-tramo.be/files/fancy-dmg/Makefile
 
 =back
 

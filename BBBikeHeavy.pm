@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.30 2006/07/25 19:15:06 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.31 2006/09/12 23:15:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.31 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -1037,7 +1037,16 @@ sub BBBikeHeavy::perlmod_install_advice {
 		"    " . join("\n    ", map { "install $_" } @mod) . "\n" .
 		"    quit\n";
 	} else {
-	    if (-f '/etc/apt/sources.list') {
+	    if ($^O eq 'freebsd') {
+		my @pkg;
+		foreach my $perlname (@mod) {
+		    my $pkgname = "p5-" . $perlname;
+		    $pkgname =~ s/::/-/g;
+		    push @pkg, $pkgname;
+		}
+		$command = "    pkg_add -r @pkg\n";
+		$command .= M("oder")."\n";
+	    } elsif (-f '/etc/apt/sources.list') {
 		my @deb;
 		foreach my $perlname (@mod) {
 		    # code taken from debian's /usr/bin/dh-make-perl:
