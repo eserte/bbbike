@@ -1,0 +1,180 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: any2bbd,v 1.13 2006/09/12 21:59:37 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+use Hash::Util qw(lock_keys);
+
+use Archive::Zip qw(:ERROR_CODES);
+use File::Temp qw(tempfile);
+use File::Basename qw(basename);
+use Getopt::Long;
+
+use Strassen::Gpsman;
+use Strassen::Core;
+use Strassen::MultiStrassen;
+
+# XXX problematisch: die .g7t-Waypoints-Dateien, die Zeilen ohne Koordinaten erzeugen!
+
+my %opt;
+
+GetOptions(\%opt, "dir=s", "o=s", "append|a!", "inputformat|i=s")
+    or die "usage: $0 [-i inputformat] [-o outfile] [-a|-append] [-dir download-dir | files ...]";
+
+my $download_dir = $opt{dir} if defined $opt{dir};
+my $outfile = $opt{o} || "/tmp/all.bbd";
+
+my @files = @ARGV;
+if (!@files) {
+    if (defined $download_dir) {
+	@files = glob("$download_dir/*");
+    }
+}
+
+my @s;
+for my $file (@files) {
+    print STDERR "$file... ";
+    my %info = (handled_by => "?");
+    my $s;
+    lock_keys %info;
+
+    my $check_s = sub {
+	if ($s && $s->data && @{ $s->data }) {
+	    print STDERR "OK ($info{handled_by})\n";
+	    1;
+	} else {
+	    print STDERR "no GPS data\n";
+	    0;
+	}
+    };
+
+    eval {
+	if ($file =~ /\.zip$/i) {
+	    my $zip = Archive::Zip->new;
+	    $zip->read($file) == AZ_OK or die;
+	    print STDERR "\n";
+	    for my $member ($zip->members) {
+		print STDERR "  " . $member->fileName . "... ";
+		my($suffix) = $member->fileName =~ /(\.[^\.]+)$/;
+		my($tmpfh,$tmpfile) = tempfile(UNLINK => 1,
+					       SUFFIX => $suffix,
+					      );
+		print $tmpfh $member->contents;
+		close $tmpfh;
+		$s = run_gpsbabel($tmpfile,
+				     title => basename($member->fileName),
+				     info => \%info);
+		if ($check_s->()) {
+		    push @s, $s;
+		}
+	    }
+	} else {
+	    $s = run_gpsbabel($file, title => basename($file),
+			      info => \%info);
+	    if ($check_s->()) {
+		push @s, $s;
+	    }
+	}
+    };
+    warn $@ if $@;
+}
+
+if (!@s) {
+    warn "No usable input files (tried @files), do not write anything...\n";
+    exit 0;
+}
+
+my $ms = MultiStrassen->new(@s);
+if ($opt{append}) {
+    $ms->append($outfile);
+} else {
+    $ms->write($outfile);
+}
+
+# XXX use GPS::Gpsbabel::run_gpsbabel instead!
+sub run_gpsbabel {
+    my($file, %args) = @_;
+    my $title = $args{title} || $file;
+    my $info = $args{info} || {};
+    if ($opt{inputformat}) {
+	my $s = eval {
+	    require Strassen::FromRoute;
+	    Strassen::FromRoute->new($file, name => $title);
+	};
+	if ($s) {
+	    $info->{handled_by} = "Strassen::FromRoute";
+	    return $s;
+	}
+    }
+    if ($file =~ m{( \.(dbf|sbn|sbx|shp|shx)$
+		   | \.(mif|mid)$
+		   | \.e00$
+		   | \.mps$
+		   | \.g7t$
+		   | \.gpx$
+		   | \.ovl$
+		   )
+	          }xi) {
+	my $s = eval { Strassen->new($file, name => $title, cat => "#000080") };
+	if ($s) {
+	    $info->{handled_by} = "Strassen::Core";
+	    return $s;
+	}
+    }
+
+    if (open(my $fh, $file)) {
+	my $first_line = <$fh>;
+	if ($first_line =~ /^%.*(gpsmanager|gps::gpsmanconn)/i) {
+	    close $fh;
+	    my $s = Strassen::Gpsman->new($file,
+					  cat => "#000080",
+					  fallbackname => $title);
+	    if ($s) {
+		$info->{handled_by} = "Strassen::Gpsman";
+		return $s;
+	    }
+	}
+    }
+
+    my($ofh,$ofilename) = tempfile(UNLINK => 1);
+    # XXX need a patched gpsbabel (gpsbabel by default only outputs waypoint files, not tracks)
+    my $in_fmt = "pcx";
+    if ($file =~ /\.gpx$/) {
+	$in_fmt = "gpx";
+    }
+    system("gpsbabel", "-t",
+	   "-i", $in_fmt, "-f", $file,
+	   "-o", "gpsman", -F, $ofilename);
+    # Hack: set track name
+    my($o2fh,$o2filename) = tempfile(UNLINK => 1);
+    open(F, $ofilename) or die $!;
+    while(<F>) {
+	s/(^!T:)/$1\t$title/;
+	print $o2fh $_;
+    }
+    close F;
+    close $o2fh;
+
+    $info->{handled_by} = "gpsbabel";
+    my $s = Strassen::Gpsman->new($o2filename,
+				  cat => "#000080",
+				  fallbackname => $title);
+    $s;
+}
+
+__END__

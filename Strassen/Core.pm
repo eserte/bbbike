@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.71 2006/06/15 22:31:06 eserte Exp $
+# $Id: Core.pm,v 1.72 2006/09/12 21:42:05 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.71 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.72 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -704,33 +704,33 @@ sub delete_current { # funktioniert in init/next-Schleifen
 # einen String zum Abspeichern um
 # Achtung: das Koordinaten-Argument ist hier anders als beim Rückgabewert von
 # parse()! Siehe arr2line2().
-# Tabs werden aus dem Namen entfernt
+# Tabs und Newlines werden aus dem Namen entfernt
 # Achtung: ein "\n" wird angehängt
 ### AutoLoad Sub
 sub arr2line {
     my $arg = shift;
-    (my $name = $arg->[NAME]) =~ s/\t/ /;
+    (my $name = $arg->[NAME]) =~ s/[\t\n]/ /;
     "$name\t$arg->[CAT] $arg->[COORDS]\n"
 }
 
 # wie arr2line, aber ohne Newline
-# Tabs werden aus dem Namen entfernt
+# Tabs und Newlines werden aus dem Namen entfernt
 ### AutoLoad Sub
 sub _arr2line {
     my $arg = shift;
-    (my $name = $arg->[NAME]) =~ s/\t/ /;
+    (my $name = $arg->[NAME]) =~ s/[\t\n]/ /;
     "$name\t$arg->[CAT] $arg->[COORDS]"
 }
 
 # Wie _arr2line, aber das COORDS-Argument ist eine Array-Referenz wie
 # beim Rückgabewert von parse().
-# Tabs werden aus dem Namen entfernt.
+# Tabs und Newlines werden aus dem Namen entfernt.
 # Ein Newline fehlt hier und muss manuell angefügt werden, falls der Datensatz
 # in $self->{Data} geschrieben werden soll.
 ### AutoLoad Sub
 sub arr2line2 {
     my $arg = shift;
-    (my $name = $arg->[NAME]) =~ s/\t/ /;
+    (my $name = $arg->[NAME]) =~ s/[\t\n]/ /;
     "$name\t$arg->[CAT] " . join(" ", @{ $arg->[COORDS] });
 }
 

@@ -48,9 +48,9 @@ Martin-Luther-Str. (Falkensee) - Radelandstr.: durchgängige Verbindung vorhanden
 Am Oder-Spree-Kanal, Schwarzer Weg nach Schmöckwitz: Qualtität?	? 30546,-3072 29348,-2798 28923,-2859 28623,-3061 28110,-3047 27906,-3136
 Straßenführung und Straßennamen im Wohnpark an der Buga?	? -13820,1095 -13907,1223 -13801,1414 -14016,1563
 westlich des Sacrower Sees - Försterei Zedlitz - zur Straße nach Krampnitz: Qualität? (wahrscheinlich Waldweg, Q2)	? -9353,5012 -9430,4935 -9678,4913 -10147,4870 -10616,4399 -10912,3738 -11571,3187
-Spekteweg, Spektewiesen: Qualität?	? -4061,15164 -4481,14808 -4631,14811 -5146,15059 -5651,15103 -5679,14999 -5969,15040 -6176,15176 -6252,15228 -6498,15301 -6824,15274 -6821,15374
-Am Spektesee, nördlicher Weg: Qualität?	? -5651,15103 -5709,15109 -5749,15149 -5697,15246 -5728,15307 -5895,15313 -6116,15254
-An der Felgenlake, Spektelake: Qualität?	? -6116,15254 -6550,15383 -6821,15374 -7035,15432 -7147,15551 -7360,15447
+Am Spektesee, nördlicher Weg: Qualität?	? -5680,15112 -5709,15109 -5749,15149 -5697,15246 -5728,15307 -5895,15313 -6116,15254
+An der Felgenlake, Spektelake: Qualität?	? -6116,15254 -6550,15383 -6821,15374
+An der Felgenlake, Spektelake: Qualität?	? -7160,15534 -7360,15447
 Spektelake - Finkenkruger Weg: genaue Wegführung? Qualität?	? -7360,15447
 Niederheideweg - Hubertusstr.: Alternative zur Radelandstr? befahrbar, Qualität?	? -6445,17503 -5935,17290 -5597,17327 -5136,17227 -4841,17172 -4722,17029 -4240,16941 -3937,16881 -3827,16900 -3747,16916
 Schenkenberg - Tornow: Qualität?	? 45406,107350 44745,108948 45265,108797 46428,109624 46174,110110 45810,110576 46075,110850 46272,110976 46317,111103 46685,111038 47335,110888
@@ -125,7 +125,7 @@ Am Trebelsee: Deich, Qualität?	? -32200,5825 -31812,6387 -31525,6962 -31087,7275
 Am Havelufer: teilweise sehr sandige Stellen, Q3	? -4072,5227 -3956,4875 -4062,4487 -4693,4431 -4881,4093 -4964,4100
 Waldbühne - Havelchaussee: Qualität (wahrscheinlich Waldwege, Q2 bis Q3)? noch immer durchgängig befahrbar?	? -1356,12093 -1531,12043 -2050,12675 -1950,12925 -2220,13014
 Fährweg - Niederneuendorfer Allee: Kleingartenanlage, Qualität?	? -1864,17785 -1854,17805 -1871,17842 -1914,17899 -2011,17986 -2039,18049 -2066,18097 -2105,18119 -2143,18153 -2166,18199 -2177,18279 -2197,18307 -2229,18312 -2750,18333
-Mauerweg Spandau: Qualität?	? -2742,19975 -2821,19740 -3497,20003
+Mauerweg Spandau: Qualität?	? -2871,19750 -3497,20003
 Steinhöfel - Poratz - Ringenwalde: Qualität?	? 37482,74476 37025,74400 36800,74137 36612,74162 35775,73750 35469,73594 35125,73487 33687,73037 33075,72750 32750,72787 32600,73062 31862,73112 30712,72625 30244,72598
 Glambeck - Templin: ist das hier die in Glambeck ausgeschilderte Strecke? Qualität?	? 37273,68606 36000,69075 35962,70325 35600,70962 35112,70912 35080,71176
 Am Neuen Garten: Qualität, anscheinend (zumindest im südlichen Abschnitt) Kopfsteinpflaster (Q2)? Einbahnstraße im nördlichen Abschnitt für Radfahrer?	? -12576,107 -12341,594 -12323,635 -12302,718 -12276,831 -12212,1201
@@ -182,11 +182,9 @@ Westklüne - Ostklüne: Fährt hier eine Fähre? Wie oft?	? 42400,161212 42700,16102
 Dargen - Katschow: Fahrradroute laut Kompass-Karte	? 51162,165171 50715,166093 50337,166737 51034,167286 51565,167859
 Gellenthin: Fahrradroute laut Kompass-Karte; Qualität: scheint nur ein Feldweg zu sein	? 38459,162337 39037,162387 40018,160865
 Stücken - Tremsdorf: Qualität?	? -10978,-17764 -10562,-16912 -10175,-16537 -9675,-16375 -9200,-15550 -9035,-15135 -8680,-14704
-Am Havelkanal: laut "Berliner Umland" gut geeigneter Radweg, nur der westliche Teil ist witterungsabhängige Strecke	? -3379,23141 -3462,23100 -4000,22989 -7081,22356 -9012,22250 -9060,22342
 An der Havel (Mauerweg und Berlin-Kopenhagen): laut "Berliner Umland" gut geeigneter Radweg, laut ADFC-Karte "mäßig geeignet"; Durchfahrt unter der S-Bahn möglich?	? -3379,23141 -3025,23393 -2775,23981 -2675,24500 -2818,24631 -2946,25212
-An der Havel (Mauerweg und Berlin-Kopenhagen): laut "Berliner Umland" gut geeigneter Radweg, laut ADFC-Karte "mäßig geeignet"	? -3379,23141 -3396,22893 -3421,22495 -3674,22172 -3714,21828 -3546,21328 -3534,21240 -2967,20755 -2775,20533 -2742,19975
 Oberjägerweg: laut "Berliner Umland" gut geeigneter Radweg, im Mittelteil ohne Kfz-Verkehr, laut anderen Quellen schlechte Qualität	? -5160,19649 -4971,19825 -4881,19871 -4662,20131 -4472,20411 -4018,20537 -3900,21059 -3818,21716
-Mauerweg Spandau: laut "Berliner Umland" witterungsabhängige Strecke	? -7094,16217 -7178,16066 -7211,15865 -7147,15551
+Mauerweg Spandau: laut "Berliner Umland" witterungsabhängige Strecke	? -7094,16217 -7178,16066 -7221,15921
 Am Park - Gutsstr. - Privatstr.: Durchfahrt möglich? Qualität?	? -9364,7189 -9128,7275 -8968,7328 -8768,7338 -8367,7717
 Mauerweg am Groß-Glienicker See: laut "Berliner Umland" witterungsabhängige Strecke	? -9128,7275 -9178,7165 -9175,7037 -9437,6887 -9490,6650 -9668,6171 -9665,5840 -9725,5559 -9797,5374
 Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsabhängige Strecke	? -9430,4935 -9543,4625
@@ -356,7 +354,6 @@ Hermsdorfer Str. (Hohen Neuendorf): Qualität?	? 621,29356 625,29868
 (Dorfstr. (Tiefwerder) - Heerstr.): Qualität?	? -2878,12193 -2953,12015 -2918,11678 -2835,11467
 Försterweg: Qualität (wahrscheinlich ein holpriger Waldweg)?	? -823,20184 -571,19834 -475,19746 -384,19740 -250,19815 -146,19806 6,19817
 Um den Laßzinssee: Qualität?	? -6459,20769 -6465,21060 -6099,21157 -6044,20971 -5795,20965
-Uferweg an der Havel: Qualität (laut ADFC-Karte "mäßig geeignet")?	? -2053,18375 -2291,18628 -2349,18744 -2434,18832 -2474,18921 -2516,19186 -2644,19213 -2733,19454 -2854,19552 -2897,19637 -2821,19740
 Berlin - Kopenhagen zwischen Hennigsdorf und Birkenwerder: Qualität? Nur für Radfahrer?	? -2118,26060 -2126,26133 -2029,26221 -1931,26602 -1925,26785 -2346,27455 -2327,27687 -2193,27684 -2080,27830 -2126,27912 -2123,28101 -1937,28217 -1532,28723 -1233,28982 -1547,29405 -1450,29500 -1173,29043 -1017,29606 -959,30066 -1011,30234 -904,30505 -524,30749 164,30849 362,31115 685,31008 728,31188 1045,31014 1112,31032 1322,31297 1365,31450 1429,31501
 Berlin - Kopenhagen zwischen Lehnitzsee und Liebenwalde: Qualität? Nur für Radfahrer?	? 1281,39850 1343,41897 1636,42677 1867,42860 2209,42373 4000,44274 4564,44474 5073,45310 5207,45420 5475,45590 5987,46492 7047,47102 8254,47126 9204,48003 9825,48275
 Berlin - Kopenhagen zwischen Liebenwalde und Zehdenick: Qualität? Nur für Radfahrer?	? 8509,51740 8510,52025 8083,52074 8081,53068 7981,54068 7918,54093 7925,54743 8083,55925 7827,56669 7962,57318 7937,57706 7581,58350 7568,58668 7681,59556 7587,60006 7481,60368 7475,60393 7075,60862 6362,61350 5993,61743 5437,63156 5318,63337 5112,63250 4880,63531
@@ -437,7 +434,7 @@ Am Finowkanal: Qualität?	? 35659,48744 35575,48942 35377,49117 35270,49300 34966
 Am Finowkanal: Qualität?	? 31507,49193 31317,49216 31043,49307 30654,49330 30426,49216 30296,49224 29999,49300 29375,49269 29176,49323 28895,49277 28712,49399 28658,49391 28643,49498 27508,49376 27341,49383 26945,49262 26670,49231 26450,49284 26442,49414 26594,49734 26587,49894 26693,50084 26000,50214 24583,49825 24461,49041 24393,48972
 Ützdorf - Bogensee - Prenden: Qualität?	? 18337,39131 18345,39215 18535,39443 18558,39580 18733,39862 19053,40144 19213,40479 19053,40540 18809,40555 18665,40616 18535,40784 18124,40730 18048,40906 17979,40982 18033,41066 17903,41233 18132,41492 18215,41637 18360,41728 18238,41972 18231,42239 18170,42574 18807,43129
 Prinz-Friedrich-Leopold-Str.: zunächst Kopfsteinpflaster (50m), dann Asphalt, wie weiter? (laut ADFC-Karte gut geeignet)	? -3692,2549 -3568,2382 -3532,2189 -3503,1988 -3501,1826 -3559,1760
-Am Neuen Kanal/Trappenallee: Qualität?	? -4000,22989 -3994,23162 -3503,23811
+Am Neuen Kanal/Trappenallee: Qualität?	? -3996,22969 -3994,23162 -3503,23811
 Dorfstr. Stolpe-Dorf: Qualität?	? -25,27812 237,28184 524,28171
 Weg am Flakensee: Qualität (Waldweg?)?	? 35021,2212 35000,2269 35045,2422 35024,2900 35088,3016 35167,3074 35353,3476 35347,3555 35252,3653 35143,3698 35103,3769 35134,3866 35103,3973 35170,4058 35207,4305 35134,4500
 Bodelschwinghstr./Grenzstr. (Mahlow): Qualität?	? 11291,-4485 11651,-4515 11706,-4579 11779,-4549 11974,-4579
@@ -451,7 +448,6 @@ Rösnerstr.: Qualität?	? 4165,5243 4204,5285
 Rudolf-Breitscheid-Str. (Babelsberg): sind zwischen Karl-Liebknecht-Str. und Plantagenstr. (vielleicht auch weiter?) ebenfalls Suggestivstreifen?	? -10446,-1947 -10360,-1934 -9986,-1882 -9735,-1845
 Claire-Waldoff-Str.: Verbindung zur Albrechtsstr./Reinhardstr.?	? 9114,13217 9001,13039
 Weg ist neu asphaltiert	? -14277,18001 -14603,18132
-nördlich des Havellandkanals: Feldweg	? -12182,22042 -10425,22139
 Radweg B-K: Asphalt sieht nicht so gut aus	? -1532,28723 -1233,28982
 zu beiden Seiten Fahrbahnen asphaltiert + Verbundsteinpflasterradwege	? -6342,54585 -5037,54561 -3748,54542
 asphaltiert	? -6547,61759 -6763,61808
@@ -808,7 +804,6 @@ Barnimer Dörferweg im Bereich Falkenberg: Qualität (laut ADFC-Karte teilweise gu
 Am Gehrensee, Teil des Barnimer Dörferwegs: Qualität (laut ADFC-Karte überwiegend gut geeignet)?	? 20855,19299 21322,19049 21278,18786
 B102, Ortsumfahrung Belzig: wo liegt diese Umfahrung genau? Kann sie von Radfahrern benutzt werden?	? -42655,-30968 -42908,-28770
 B96, Ortsumfahrung Greifswald: Kann sie von Radfahrern benutzt werden oder ist es eine Kraftfahrzeugstraße?	? 5170,183994 2903,185164 2659,185700 2830,187236 2733,187723 2245,188942 2635,189917 3398,190528
-Am Hohenzollernkanal: Durchfahrt für Radfahrer möglich? Qualität? Existieren Zugänge an den unterquerten Brücken (Kurt-Schumacher-Damm, Flugh. Tegel, Mäckeritzbrücke, Tegeler Brücke)?	? 4971,15263 4469,15711 3424,15758 1254,15825 223,15850 -251,16090 -867,16594
 Klosterwalde - Herzfelde: Qualität?	? 19706,85931 20429,86157 21477,87145 21691,87730 22154,87985 22550,88053 22562,87961
 Herzfelde - Sternthal: Qualität?	? 22562,87961 22647,87918 23043,88022 23324,89314 23263,89990 23683,90984
 Sternthal - Lichtenhain: Qualität?	? 23683,90984 22318,91825 22276,91916
@@ -912,6 +907,9 @@ Sleipnerstr.: Qualität? (vermutlich Asphalt wie zw. Heimdall- u. Romain-Rolland-
 östl. Radweg der Prenzlauer Prom. in Gegenrichtung, also Stadtmitte freigegeben?	? 12002,18768 11984,18650 11969,18552 11950,18529
 Heinrich-von-Kleist-Str. (Potsdam): Qualität (vermutlich Kopfsteinpflaster)?	? -10078,-2339 -10109,-2437 -10142,-2540
 Theodor-Francke-Str.: Existiert eine Verbindung zum Franckepark?	? 9328,6164 9337,6162
+Pestalozzistr. - Falkenseer Chaussee: Qualität?	? -7255,16749 -7184,16582 -7183,16250
+Havellandkanal Richtung Norden: Qualität (wahrscheinlich Asphalt), wohin führt die Strecke?	? -8730,22254 -8734,22586
+Am Hohenzollernkanal: existieren Verbindungen zum Kurt-Schumacher-Damm und zum Flughafen Tegel?	? 3424,15758 2597,15775
 # added from ampeln-orig
 wirklich? (?)	? 9215,3599
 Wirklich? (?)	? -3775,17087
@@ -1056,8 +1054,7 @@ Haßfurter Weg (eine Einbahnstraße auch für Radfahrer?)	? 11796,18482 11835,18301
 Klaustaler Str. (Wo genau sind die Einbahnstraßenabschnitte in der Klaustaler Str.?)	? 11439,18890 11384,19067
 Zweibrücker Str. (Einbahnstraße zwischen Pionierstr. und Falkenseer Chaussee auch für Radfahrer gültig?)	? -4254,15813 -4283,15639 -4294,15525 -4308,15411
 tragen (zwei kurze Treppen) (wo sind die Treppen genau?)	? 9453,6415
-Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position ist vielleicht nicht ganz genau)	? -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9060,22342
-Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position des südlichen Endes ist vielleicht nicht ganz genau)	? -10377,20973 -10581,19871 -10000,18629
+Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position ist vielleicht nicht ganz genau)	? -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9046,22376
 Radwege unterschiedlicher Form und Qualtität (genauer spezifizieren:)	? -9723,-2451 -9700,-2459 -9534,-2515 -9462,-2540 -9075,-2664 -8865,-2732 -8500,-2856 -8428,-2886 -8278,-2928 -7873,-3094 -7060,-3124 -6810,-3151
 Radweg, nördliche Seite (nicht ganz sicher)	? 7981,-7165 9170,-7708 9828,-8106
 Zweirichtungsradweg auf der östlichen Seite (am Gutsgartenweg sicher, nördl. und südl. davon aus "Berliner Umland" entnommen:)	? -18340,4742 -18233,4501 -18025,4018 -17956,3840 -17588,2815 -17309,2517 -16686,1900

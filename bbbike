@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.267 2006/09/09 10:52:27 eserte Exp eserte $
+# $Id: bbbike,v 3.269 2006/09/12 21:35:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.267 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.269 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -1072,14 +1072,17 @@ if ($use_balloon) {
     };
 }
 if (!defined $balloon) {
-    eval '
-	package Tk::Balloon; # AUTOLOAD: ignore
+    eval q{
+	package Tk::FakeBalloon; # AUTOLOAD: ignore
+	@Tk::FakeBalloon::ISA = qw(Tk::Label);
+	Construct Tk::Widget "FakeBalloon";
 	sub attach {}
 	sub configure {}
 	sub IsWidget { 0 } # for Tk::Exists
 	package main;
-	$balloon = bless {}, "Tk::Balloon";
-    '; # '
+	$balloon = $top->FakeBalloon;
+    };
+    warn $@ if $@;
 }
 
 ## DEBUG_BEGIN
@@ -3394,9 +3397,7 @@ sub do_iconframe {
 		$cbm->radiobutton(-label => $d->[0],
 				  -variable => \$use_c_balloon,
 				  -value => $val,
-				  -command => sub { $c_balloon->configure
-						      (-show => $val);
-						},
+				  -command => \&c_balloon_update,
 				 );
 	    }
 	}
@@ -4448,7 +4449,13 @@ sub handle_options {
 	  label => M"Standard-Menü", var => \$standard_menubar],
 	 ['balloon','!',1,
 	  label => M"Balloons", var => \$use_balloon],
-	 ['cballoon','!',2,    # 0 = nie, 1 = auf der Route, 2 = immer
+	 ['cballoon','=i',2,    # 0 = nie, 1 = auf der Route, 2 = immer
+	  strict => 1,
+	  choices => [[M"nie" => 0],
+		      [M"nur auf der Route" => 1],
+		      [M"überall" => 2],
+		     ],
+	  callback => \&c_balloon_update,
 	  label => M"Canvas balloons", var => \$use_c_balloon],
 	 ['cballoonwait','=i',350,
 	  label => M"Wartezeit für Canvas balloons", var => \$c_balloon_wait],
@@ -4773,6 +4780,12 @@ sub _set_public {
     $autosave_opts = 0;
     $lazy_plot = 0;
     undef $proxy;
+}
+
+sub c_balloon_update {
+    if ($c_balloon && Tk::Exists($c_balloon)) {
+	$c_balloon->configure(-show => $use_c_balloon);
+    }
 }
 
 # Check for -public and -publicconfig options --- in this case do not
@@ -6614,7 +6627,7 @@ sub std_transparent_binding {
 		 my $str = show_below_route_str($_[0]);
 		 if (defined $str && $str ne ''
 		     && defined $c_balloon
-		     && $use_c_balloon > 1) {
+		     && $use_c_balloon >= 2) {
 		     # XXX before each $c_ballon->Popup should be this line (maybe move into sub?):
 		     if ($leave_after) { $leave_after->cancel; undef $leave_after }
 		     if ($devel_host) { $str = balloon_info_from_all_tags($c) }#XXX
@@ -11611,7 +11624,7 @@ sub enterpoint {
 	push @l, $str;
     }
     if (defined $c_balloon) {
-	if (@l && $use_c_balloon > 1) {
+	if (@l && $use_c_balloon >= 2) {
 	    if ($leave_after) {	$leave_after->cancel; undef $leave_after }
 	    $c_balloon->Popup(join(" / ", @l));
 	} else {
@@ -11656,7 +11669,7 @@ sub enterstr {
     }
 
     if (defined $c_balloon) {
-	if (@l && $use_c_balloon > 1) {
+	if (@l && $use_c_balloon >= 2) {
 	    if ($leave_after) {	$leave_after->cancel; undef $leave_after }
 	    my $str;
 	    if ($devel_host) { $str = balloon_info_from_all_tags($c) }#XXX

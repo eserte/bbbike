@@ -2661,10 +2661,12 @@ will run my mapfile again...
 =item * (*M5)
 
 mpod2html scheint Warnungen (nicht existente Links) ins generierte
-HTML zu schreiben.
+HTML zu schreiben. -> workarounded
 
 Durch das Verschieben von einigen Dokumenten in doc/ funktionieren die
-Links im Header nicht. Ich muss mir auch überlegen, ob ich die selbe
+Links im Header nicht. -> workarounded
+
+Ich muss mir auch überlegen, ob ich die selbe
 Verzeichnisstruktur auch unter Sourceforge haben möchte. Oder ich
 bewege alles, vielleicht bis auf README* nach doc. Dann gibt es keine
 Verlinkung zwischen den READMEs und dem Rest der Doku (Dann muss ich

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GPX.pm,v 1.9 2006/09/04 22:34:21 eserte Exp $
+# $Id: GPX.pm,v 1.10 2006/09/12 21:41:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::GPX;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Core;
 
@@ -126,7 +126,9 @@ sub _gpx2bbd_libxml {
 		    #my $time = $wpt->findvalue(q{./time});
 		    push @c, "$x,$y";
 		}
-		$self->push([$name, [@c], "X"]);
+		if (@c) {
+		    $self->push([$name, [@c], "X"]);
+		}
 	    }
 	}
     }
@@ -177,7 +179,9 @@ sub _gpx2bbd_twig {
 			my($x, $y) = latlong2xy_twig($trkpt);
 			push @c, "$x,$y";
 		    }
-		    $self->push([$name, [@c], "X"]);
+		    if (@c) {
+			$self->push([$name, [@c], "X"]);
+		    }
 		}
 	    }
 	} elsif ($wpt_or_trk->name eq 'rte') {
