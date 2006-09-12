@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMail.pm,v 1.17 2006/09/02 21:59:24 eserte Exp $
+# $Id: BBBikeMail.pm,v 1.18 2006/09/12 18:48:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -150,6 +150,7 @@ sub enter_send_anything {
 
 sub send_mail {
     my(@args) = @_;
+    capabilities();
     if ($^O eq 'MSWin32' || !$can_send_mail_via_Mail_Mailer) {
 	send_mail_via_browser(@args);
     } else {

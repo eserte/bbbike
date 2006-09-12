@@ -4690,7 +4690,8 @@ speicherplatzsparender.",
 	 ['publicconfig','!',undef, nogui => 1,
 	  var => \&_set_public],
 	 ['v','!',0,	alias => [qw(verbose)],
-	  label => M"Verbose", var => \$verbose],
+	  label => M"Verbose", var => \$verbose,
+	  longhelp => M"Die Variable \$verbose kann manuell auf 2 oder höher gesetzt werden, um die Anwendung wortreicher zu machen"],
 	 ['version','!',undef,
 	  nogui => 1, var => sub {
 	      print
@@ -4700,7 +4701,7 @@ speicherplatzsparender.",
 	  }],
 	 ['plugins','=s',undef,
 	  label => M"Plugins beim Starten laden", var => \$initial_plugins,
-	  longhelp => M"Kommaseparierte Liste von Plugins, z.B. BBBikeThunder,BBBikeSalesman,BBBikeRuler"],
+	  longhelp => M"Kommaseparierte Liste von Plugins, z.B. BBBikeThunder,BBBikeSalesman,BBBikeRuler"], # XXX Auf den PluginLister verweisen, wenn er fertig ist.
 	 ['layers','=s',undef,
 	  label => M"Zusätzliche Layer zeichnen", var => \$initial_layers],
 	 ['algorithm','=s','A*', var => \$global_search_args{Algorithm},

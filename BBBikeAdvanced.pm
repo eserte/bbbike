@@ -1305,7 +1305,9 @@ sub coord_to_markers_dialog {
 		     push @marker_points, [[$ret->{x_s}, $ret->{y_s}]];
 		     $update_marker_points->();
 		 } else {
-		     warn "Can't parse coords in url <$s>\n";
+		     if ($verbose && $verbose >= 2) {
+			 warn "Can't parse coords in url <$s>\n";
+		     }
 		 }
 	     }
 	 });
@@ -3940,7 +3942,10 @@ sub balloon_info_from_all_tags {
     my $major_item_seen = 0;
     for my $item (@items) {
 	my(@tags) = $c->gettags($item);
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@tags],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+	if ($verbose && $verbose >= 2) {
+	    require Data::Dumper;
+	    print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@tags],[qw()])->Indent(1)->Useqq(1)->Dump;
+	}
 
 	if ($tags[0] =~ m{^(s|l|comm-route|comm-misc|qs|ql|hs|hl|fz|u|b|r|f|w|rw|temp_sperre_s|L\d+)$}) {
 	    my $label = $tags[1];
@@ -3971,7 +3976,11 @@ require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . 
 	    }
 	}
     }
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@balloon_info],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+
+    if ($verbose && $verbose >= 2) {
+	require Data::Dumper;
+	print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@balloon_info],[qw()])->Indent(1)->Useqq(1)->Dump;
+    }
 
     !@balloon_info ? undef : join("\n", @balloon_info);
 }
