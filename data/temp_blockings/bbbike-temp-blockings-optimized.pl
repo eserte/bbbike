@@ -858,6 +858,15 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'data' => 'userdel	2::inwork -64545,43296 -63700,42146
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'until' => 1167606000,
+         'text' => 'K 6722 B246 Bornow-Groß Rietz OD Birkholz Straßenneubau Vollsperrung 11.09.2006-31.12.2006 ',
+         'from' => 1157839200,
+         'data' => 'userdel	q4::inwork 64924,-23029 65076,-22519
+',
+         'type' => 'handicap'
        }
      
 );

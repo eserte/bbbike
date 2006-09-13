@@ -5811,4 +5811,12 @@ EOF
 userdel	2::inwork 22967,4144 23435,4179
 EOF
      },
+     { from  => 1157839200, # 2006-09-10 00:00
+       until => 1167606000, # 2007-01-01 00:00
+       text  => 'K 6722 B246 Bornow-Groß Rietz OD Birkholz Straßenneubau Vollsperrung 11.09.2006-31.12.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 64924,-23029 65076,-22519
+EOF
+     },
     );
