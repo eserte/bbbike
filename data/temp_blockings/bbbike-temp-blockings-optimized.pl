@@ -508,9 +508,9 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        },
        {
          'source_id' => 'IM_003129',
-         'until' => 1158357600,
-         'text' => 'Ringstr. (Lichterfelde) Richtung Carstennstr. zwischen Lotzestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 15.09.2006)',
-         'from' => 1156360549,
+         'until' => 1159394400,
+         'text' => 'Ringstr. (Lichterfelde) Richtung Carstennstr. zwischen Lotzestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 27.09.2006)',
+         'from' => 1158185618,
          'data' => 'userdel	1::inwork 2639,2989 2638,2843
 ',
          'type' => 'gesperrt'
@@ -865,6 +865,14 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'text' => 'K 6722 B246 Bornow-Groß Rietz OD Birkholz Straßenneubau Vollsperrung 11.09.2006-31.12.2006 ',
          'from' => 1157839200,
          'data' => 'userdel	q4::inwork 64924,-23029 65076,-22519
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1164927600,
+         'text' => 'K 6801 Berliner Str. OL Fehrbellin, zw. Brunner Str. u. Ruppiner Str. Straßensanierung Vollsperrung 18.09.2006-30.11.2006 ',
+         'from' => 1158444000,
+         'data' => 'userdel	q4::inwork -33790,44573 -33927,44655
 ',
          'type' => 'handicap'
        }

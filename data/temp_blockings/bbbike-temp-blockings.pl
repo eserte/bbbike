@@ -5200,9 +5200,9 @@ EOF
 userdel	q4::inwork; 6670,14302 6482,14264
 EOF
      },
-     { from  => 1156360549, # 2006-08-23 21:15
-       until => 1158357600, # 2006-09-16 00:00
-       text  => 'Ringstr. (Lichterfelde) Richtung Carstennstr. zwischen Lotzestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 15.09.2006)',
+     { from  => 1158185618, # 2006-09-14 00:13
+       until => 1159394400, # 2006-09-28 00:00
+       text  => 'Ringstr. (Lichterfelde) Richtung Carstennstr. zwischen Lotzestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 27.09.2006)',
        type  => 'gesperrt',
        source_id => 'IM_003129',
        data  => <<EOF,
@@ -5817,6 +5817,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 64924,-23029 65076,-22519
+EOF
+     },
+     { from  => 1158444000, # 2006-09-17 00:00
+       until => 1164927600, # 2006-12-01 00:00
+       text  => 'K 6801 Berliner Str. OL Fehrbellin, zw. Brunner Str. u. Ruppiner Str. Straßensanierung Vollsperrung 18.09.2006-30.11.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -33790,44573 -33927,44655
 EOF
      },
     );

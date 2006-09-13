@@ -177,11 +177,12 @@ but another problem...)
 Bugreport von Andreas Mühlhausen: BS/Del funktioniert nicht zum
 Löschen von Punkten aus der Selection im Edit-Modus unter Windows.
 
-=item * (M3)
+=item * (M5)
 
 Tk::Getopt addition: for some changes a post dialog should be shown,
 e.g. "Please restart the app to make this/the option change/s
-visible". Or is it already possible? Use it in bbbike.
+visible". E.g. for normal balloons. Or is it already possible? Use it
+in bbbike. 
 
 =item * (H5)
 
