@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.17 2006/01/28 16:25:50 eserte Exp $
+# $Id: bbbikedraw.t,v 1.19 2006/09/14 22:11:35 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -73,8 +73,11 @@ if (!GetOptions(get_std_opts("display"),
 		'only=s@' => sub {
 		    push @only_modules, $_[1]; # Tests will fail with -only.
 		},
+		'drawtypes=s' => sub {
+		    @drawtypes = split /,/, $_[1];
+		},
 	       )) {
-    die "usage $0: [-display] [-v|-verbose] [-debug] [-slow] [-only module] ...";
+    die "usage $0: [-display] [-v|-verbose] [-debug] [-slow] [-only module] [-drawtypes type,type,...] ...";
 }
 
 @modules = @only_modules if @only_modules;
@@ -181,7 +184,14 @@ sub draw_map {
 	if ($imagetype =~ /^(png|gif|jpeg)$/) {
 	    is($image_info->{file_media_type}, "image/$imagetype", "Correct mime type for $imagetype");
 	} elsif ($imagetype eq 'svg') {
-	    is($image_info->{file_media_type}, "image/svg-xml", "Correct mime type for $imagetype");
+	    like($image_info->{file_media_type}, qr{^image/svg[+-]xml$}, "Correct mime type for $imagetype");
+	    if ($image_info->{file_media_type} eq 'image/svg-xml') {
+		diag <<EOF;
+The recommended mime type for SVG is image/svg+xml, not image svg-xml.
+See also http://www.svgfaq.com/ServerGen.asp or 
+http://support.adobe.com/devsup/devsup.nsf/docs/50809.htm.
+EOF
+	    }
 	} else {
 	    skip "image_info does not work for $imagetype", 3;
 	}

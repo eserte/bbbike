@@ -2338,6 +2338,10 @@ list with generated shorter waypoint names
 
 =item * (M3)
 
+TitleDraw: sollte nach Möglichkeit auch mit einem TTF-Font passieren.
+
+=item * (M3)
+
 unclosedPolygon anstelle von mehreren line-Aufrufen verwenden
 (benötigt gd 2.0.33!), aber nur, wenn es sich als effizienter erweist.
 

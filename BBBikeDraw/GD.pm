@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.50 2006/09/03 18:00:06 eserte Exp $
+# $Id: GD.pm,v 1.51 2006/09/14 22:17:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -40,7 +40,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.50 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.51 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush, %thickness, %outline_thickness);
 
@@ -55,11 +55,37 @@ sub init {
 
     $self->SUPER::init();
 
-    # XXX provide fallbacks (by using an array?)!
-    $TTF_STREET = '/usr/X11R6/lib/X11/fonts/ttf/LucidaSansRegular.ttf'
-	if !defined $TTF_STREET;
-    $TTF_CITY   = '/usr/X11R6/lib/X11/fonts/Type1/lcdxsr.pfa'
-	if !defined $TTF_CITY;
+ SEARCH_TTF_STREET: {
+	if (!defined $TTF_STREET) {
+	    for my $font (
+			  '/usr/X11R6/lib/X11/fonts/ttf/LucidaSansRegular.ttf',
+			  '/usr/X11R6/lib/X11/fonts/bitstream-vera/Vera.ttf',
+			  '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
+			 ) {
+		if (-r $font) {
+		    $TTF_STREET = $font;
+		    last SEARCH_TTF_STREET;
+		}
+	    }
+	    warn "Cannot find street font TTF_FONT" if $^W;
+	}
+    }
+
+ SEARCH_TTF_CITY: {
+	if (!defined $TTF_CITY) {
+	    for my $font (
+			  '/usr/X11R6/lib/X11/fonts/Type1/lcdxsr.pfa',
+			  '/usr/X11R6/lib/X11/fonts/bitstream-vera/Vera.ttf',
+			  '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
+			 ) {
+		if (-r $font) {
+		    $TTF_CITY = $font;
+		    last SEARCH_TTF_CITY;
+		}
+	    }
+	    warn "Cannot find city font TTF_CITY" if $^W;
+	}
+    }
 
     local $^W = 0;
 

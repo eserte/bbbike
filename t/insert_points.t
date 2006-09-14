@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points.t,v 1.11 2006/06/03 07:59:49 eserte Exp $
+# $Id: insert_points.t,v 1.12 2006/09/14 22:23:15 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -67,15 +67,17 @@ for my $use_indexer (0, 1) {
 					    $dudenstr_orig)->getlines;
 	    chomp @res;
 	    is(join(" ", sort @res),
-	       join(" ", qw(../misc/ampelschaltung-orig.txt
-			    /home/e/eserte/src/bbbike/t/../data/temp_blockings/bbbike-temp-blockings.pl
-			    ampeln-orig
-			    ampelschaltung-orig
-			    hoehe-orig
-			    housenumbers-orig
-			    radwege-orig
-			    strassen-orig
-			   )),
+	       join(" ",
+		    qw(../misc/ampelschaltung-orig.txt),
+		    "$FindBin::RealBin/../data/temp_blockings/bbbike-temp-blockings.pl",
+		    qw(
+		       ampeln-orig
+		       ampelschaltung-orig
+		       hoehe-orig
+		       housenumbers-orig
+		       radwege-orig
+		       strassen-orig
+		      )),
 	       "orig and grep $indexer_label");
 	}
 
@@ -87,15 +89,17 @@ for my $use_indexer (0, 1) {
 					    $dudenstr)->getlines;
 	    chomp @res;
 	    is(join(" ", sort @res),
-	       join(" ", qw(../misc/ampelschaltung.txt
-			    /home/e/eserte/src/bbbike/t/../data/temp_blockings/bbbike-temp-blockings.pl
-			    ampeln
-			    ampelschaltung
-			    hoehe
-			    housenumbers
-			    radwege_exact
-			    strassen
-			   )),
+	       join(" ",
+		    qw(../misc/ampelschaltung.txt),
+		    "$FindBin::RealBin/../data/temp_blockings/bbbike-temp-blockings.pl",
+		    qw(
+		       ampeln
+		       ampelschaltung
+		       hoehe
+		       housenumbers
+		       radwege_exact
+		       strassen
+		      )),
 	       "generated and grep $indexer_label");
 	}
 
@@ -106,15 +110,17 @@ for my $use_indexer (0, 1) {
 					    $dudenstr_orig, "0,0")->getlines;
 	    chomp @res;
 	    is(join(" ", sort @res),
-	       join(" ", qw(../misc/ampelschaltung-orig.txt
-			    /home/e/eserte/src/bbbike/t/../data/temp_blockings/bbbike-temp-blockings.pl
-			    ampeln-orig
-			    ampelschaltung-orig
-			    hoehe-orig
-			    housenumbers-orig
-			    radwege-orig
-			    strassen-orig
-			   )),
+	       join(" ",
+		    qw(../misc/ampelschaltung-orig.txt),
+		    "$FindBin::RealBin/../data/temp_blockings/bbbike-temp-blockings.pl",
+		    qw(
+		       ampeln-orig
+		       ampelschaltung-orig
+		       hoehe-orig
+		       housenumbers-orig
+		       radwege-orig
+		       strassen-orig
+		      )),
 	       "orig and change $indexer_label");
 	}
 
@@ -126,15 +132,17 @@ for my $use_indexer (0, 1) {
 					    $dudenstr, "0,0")->getlines;
 	    chomp @res;
 	    is(join(" ", sort @res),
-	       join(" ", qw(../misc/ampelschaltung.txt
-			    /home/e/eserte/src/bbbike/t/../data/temp_blockings/bbbike-temp-blockings.pl
-			    ampeln
-			    ampelschaltung
-			    hoehe
-			    housenumbers
-			    radwege_exact
-			    strassen
-			   )),
+	       join(" ",
+		    qw(../misc/ampelschaltung.txt),
+		    "$FindBin::RealBin/../data/temp_blockings/bbbike-temp-blockings.pl",
+		    qw(
+		       ampeln
+		       ampelschaltung
+		       hoehe
+		       housenumbers
+		       radwege_exact
+		       strassen
+		      )),
 	       "generated and change $indexer_label");
 	}
 
