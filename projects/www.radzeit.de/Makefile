@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.88 2006/09/01 23:59:48 eserte Exp $
+# $Id: Makefile,v 1.88 2006/09/01 23:59:48 eserte Exp eserte $
 #
 
 # Targets:
@@ -52,7 +52,6 @@ TESTS_FROM_LOCAL=	cgihead.t \
 TESTS=			$(TESTS_ON_REMOTE) $(TESTS_FROM_LOCAL)
 TESTS_ADD=		BBBikeTest.pm
 HTDOCS=			public
-
 
 # XXX maybe use test-on-remote-and-send-mail (after tests)
 DEPLOY_TARGETS=			prepare-bbbike-data \
@@ -178,6 +177,12 @@ RADZEIT_OLD_URL=	http://www.radzeit.de
 SSH_PROG_AND_ARGS=	ssh
 HTDOCS=			htdocs
 LOCAL_URL=		http://radzeit-old.herceg.de
+.endif
+
+.if ${HOST} == "vran.herceg.de"
+LOCAL_MAPSERVER_URL=	http://localhost/~eserte/cgi/mapserv.cgi
+.else
+LOCAL_MAPSERVER_URL=	http://www/cgi-bin/mapserv
 .endif
 
 # The bbbike.cgi to test (stable or beta)
@@ -475,8 +480,13 @@ prepare-mapserver-dist-post:
 	@echo "XXX Check permissions of $(HTDOCS)/mapserver/brb and maybe WWWUSER in bbbike/mapserver/brb/Makefile"
 	[ -d ${CURDIR}/$(HTDOCS)/mapserver/brb/fonts ] || \
 	    mkdir ${CURDIR}/$(HTDOCS)/mapserver/brb/fonts
+.if ${HOST} == "vran.herceg.de"
 	cp -pf /usr/X11R6/lib/X11/fonts/ttf/LucidaSansRegular.ttf \
 	    ${CURDIR}/$(HTDOCS)/mapserver/brb/fonts
+.else
+	cp -pf /usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf \
+	    ${CURDIR}/$(HTDOCS)/mapserver/brb/fonts
+.endif
 
 prepare-touren-dist:
 	[ -d ${CURDIR}/$(HTDOCS)/mapserver/touren ] || \
@@ -577,7 +587,7 @@ test-local-serial:
 	BBBIKE_TEST_CGIDIR=${LOCAL_CGI_URL} \
 	BBBIKE_TEST_CGIURL=${LOCAL_CGI_URL}/${BBBIKECGI} \
 	BBBIKE_TEST_WAPURL=${LOCAL_CGI_URL}/wapbbbike.cgi \
-	BBBIKE_TEST_MAPSERVERURL=http://localhost/~eserte/cgi/mapserv.cgi \
+	BBBIKE_TEST_MAPSERVERURL=${LOCAL_MAPSERVER_URL} \
 	BBBIKE_TEST_HTMLDIR=${LOCAL_HTML_URL} \
 	    perl -MTest::Harness -e 'runtests(@ARGV)' \
 		${TESTS}
@@ -589,7 +599,7 @@ test-local-parallel:
 	BBBIKE_TEST_CGIDIR=${LOCAL_CGI_URL} \
 	BBBIKE_TEST_CGIURL=${LOCAL_CGI_URL}/${BBBIKECGI} \
 	BBBIKE_TEST_WAPURL=${LOCAL_CGI_URL}/wapbbbike.cgi \
-	BBBIKE_TEST_MAPSERVERURL=http://localhost/~eserte/cgi/mapserv.cgi \
+	BBBIKE_TEST_MAPSERVERURL=${LOCAL_MAPSERVER_URL} \
 	BBBIKE_TEST_HTMLDIR=${LOCAL_HTML_URL} \
 	    perl $(HOME)/work/Test-Harness-Parallel/Test-Harness-Parallel.pm \
 		${TESTS}

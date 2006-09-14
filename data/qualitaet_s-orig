@@ -1,7 +1,7 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.172 2006/09/13 21:36:17 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.173 2006/09/14 21:19:34 eserte Exp $
 #:
-Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
+Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20051011.1220.31015.html
 Eiswerderstr.: Asphalt	Q0 -2883,15571 -2672,15521
@@ -1425,8 +1425,8 @@ Haewererweg: Verbundsteinpflaster	Q1 12125,1282 12097,1243
 Wiesbadener Str. (Lichtenrade): Asphalt	Q0 11124,-598 11460,-553 11755,-519
 Taunusstr. (Lichtenrade): Asphalt	Q0 11614,-1215 11537,-952 11460,-553 11456,-498
 Goltzstr.: schlechtes Kopfsteinpflaster	Q3 10639,-2364 10447,-2518 10379,-2571 10382,-2598
-(Beethovenstr. - Mozartstr., Mauerweg): Asphalt, kurze Stücke unbefestigt	Q1 10298,-3193 10448,-3214
-Beethovenstr.: kleinteiliges Kopfsteinpflaster, uneben	Q2 10145,-2729 10298,-3193
+(Beethovenstr. - Mozartstr., Mauerweg): Asphalt, kurze Stücke unbefestigt	Q1 10323,-3150 10475,-3174
+Beethovenstr.: kleinteiliges Kopfsteinpflaster, uneben	Q2 10155,-2739 10219,-2895 10272,-3027 10323,-3150
 Marie-Curie-Str.: Asphalt	Q0 16735,10668 16864,10932 16967,11162 17070,11375 17208,11658
 Debenzer Str.: Asphalt	Q0 20143,10731 20426,10854 20578,10949
 Wilhelmsbrücker Str.: Asphalt	Q0 20519,11152 20370,11168
@@ -1642,7 +1642,7 @@ Blesener Zeile: Asphalt	Q0 3241,20613 3426,20642
 Moorweg: Asphalt	Q0 3190,22049 3114,22010 2903,21918 2717,21616 2652,21511 2429,21415
 Kaunstr.: Kopfsteinpflaster	Q2 -1077,3206 -1070,2924 -999,2726
 Moselstr. (Friedenau): Asphalt	Q0 5684,6942 5824,6974
-Grenzweg (Lichtenrade): mäßiger Asphalt	Q1 9780,-1285 9603,-1293 9456,-1303
+Grenzweg (Lichtenrade): mäßiger Asphalt	Q1 9798,-1288 9738,-1290 9721,-1290 9603,-1293 9456,-1303
 Mechthildstr.: mäßiger Asphalt/Kopfsteinpflaster	Q2 23385,8217 23420,8265 23542,8429 23627,8543 23797,8814
 Am Faulen See: guter Asphalt	Q0 16515,16207 16546,16308 16623,16554 16639,16671 16617,16796 16559,16903 16487,17023
 Badeweg: guter Belag	Q0 -4171,2659 -4292,2762
@@ -3034,8 +3034,8 @@ Im Mühlenfelde: Asphalt	Q0 1268,2886 1320,2731 1324,2603
 #: by: Peter Thom:
 Schwarzmeerstr.: Beton	Q1 17565,10782 17882,10708
 #: by: Alexander Quickert: vvv
-Prinz-Heinrich-Str.: Asphalt	Q0 9973,-1831 9959,-1918 9962,-2142
-Blohmstr.: Asphalt	Q0 10004,-1919 9959,-1918 9853,-1921 9750,-1925 9648,-1928 9531,-1931 9426,-1878 9093,-1670
+Prinz-Heinrich-Str.: Asphalt	Q0 9982,-1818 9959,-1918 9961,-2136
+Blohmstr.: Asphalt	Q0 10021,-1918 9959,-1918 9853,-1921 9750,-1925 9648,-1928 9531,-1931 9428,-1892 9312,-1832 9206,-1771 9093,-1670
 #: by: ^^^
 #: by: René (rkarlo) vvv
 Kunzeweg: Kopfsteinpflaster	Q3 15832,12518 15733,12528
@@ -3082,7 +3082,7 @@ Max-Dohrn-Str.: Asphalt	Q0 2993,13726 3320,13796 3702,13865
 #: by: Till (bufti):
 Altheider Str.: schlechtes Kopfsteinpflaster	Q3 19800,3552 20073,3734
 #: by: Ingo Klinkhammer:
-Rohrbachstr.: Kopfsteinpflaster	Q2 9633,-2641 9635,-2415 9637,-2150
+Rohrbachstr.: Kopfsteinpflaster	Q2 9658,-2640 9658,-2419 9650,-2135
 #: by: Ogi: vvv
 Bundschuhweg: Verbundsteinpflaster	Q1 3209,25871 3337,25931
 Bundschuhweg: Asphalt mit diversen notdürftig geflickten Frostaufbrüchen	Q1 3337,25931 3428,25979
@@ -3115,7 +3115,7 @@ Wilhelm-Wolff-Str.: schlechtes Kopfsteinpflaster	Q3 9809,19529 9729,19426 9265,1
 #: by: ^^^
 #: by: Hans-Peter Thurau:
 #: note: "die meisten Radfahrer weichen auf den Fußweg aus, der aber auch nicht wesentlich besser zu befahren ist"
-Hohenzollernstr. (Lichtenrade): schlechtes Kopfsteinpflaster	Q3 9559,-2417 9635,-2415 9756,-2415 10173,-2416
+Hohenzollernstr. (Lichtenrade): schlechtes Kopfsteinpflaster	Q3 9559,-2417 9658,-2419 9756,-2415 9864,-2411 9967,-2408 10069,-2405 10173,-2402
 #: by: Jirka Klaue:
 Otto-Schmirgal-Str.: Asphalt	Q0 18561,10341 18482,10306 18410,10275 18425,10231 18332,10185
 #: by: Marko Preuss: vvv
@@ -3607,7 +3607,7 @@ Joachimstr. (Bohnsdorf): mäßiges Kopfsteinpflaster	Q2 22029,-178 22177,-137
 Joachimstr. (Bohnsdorf): schlechtes Kopfsteinpflaster, Straßenränder teilweise unbefestigt	Q3 22177,-137 22382,-87 22628,44 22710,98
 #: by: ^^^
 #: by: Cordelia Will:
-Illigstr.: guter Asphalt	Q0 9426,-1878 9431,-1800 9443,-1626 9445,-1460 9456,-1303 9461,-1268 9379,-935
+Illigstr.: guter Asphalt	Q0 9428,-1892 9431,-1800 9443,-1626 9445,-1460 9456,-1303 9461,-1268 9379,-935
 #: by: anja (anka1702):
 Sigmund-Bergmann-Str.: gutes Verbundsteinpflaster	Q0 -2312,16770 -2173,16741 -2157,16838 -2119,17015
 #: by: Thunig, Christina: vvv
@@ -3770,7 +3770,7 @@ Maurerweg: guter Asphalt	Q0 12864,2191 12835,2470 12825,2573 12810,2751 12807,29
 Schalkauer Str.: guter Asphalt	Q0 17343,14906 17377,14678 17389,14599 17398,14490
 #: by: peter (ph2607):
 Frobenstr. (Spandau): guter Asphalt	Q0 -3826,15542 -3867,15469 -3861,15333
-#: by: lydiaweitmann:
+#: by: Lydia Weitmann:
 Strelitzstr.: guter Asphalt	Q0 9259,4815 9032,4791
 #: by: Paul (APMarcuse):
 Bergholzstr.: schlechtes Kopfsteinpflaster	Q3 11322,5989 11765,5795
@@ -4885,7 +4885,7 @@ Groscurthstr.: Beton	Q1 16369,25230 16458,25193 16428,25107
 (entlang der S-Bahn): Asphalt	Q0 15648,25084 16093,25748 16087,25779 16114,25827
 #: by: ^^^
 #: by: anonymous [AM] vvv
-Dinnendahlstr.: Kopfsteinpflaster	Q2 9123,-1321 9257,-1412 9445,-1460
+Dinnendahlstr.: Kopfsteinpflaster	Q2 9123,-1321 9282,-1442 9445,-1460
 Karl-Stieler-Str.: Asphalt	Q1 6034,4893 6097,4858 6185,4839 6267,4825 6331,4794 6414,4723
 Michael-Bohnen-Ring: Asphalt	Q0 15229,6602 15251,6635 15251,6745 15284,6783 15453,6784 15453,6434 15426,6398
 Otzenstr.: Asphalt	Q1 6410,7722 6429,7532 6352,7523
@@ -5109,7 +5109,7 @@ Kindelbergweg: Asphalt	Q0 6632,1482 6601,1471 6560,1473
 (Lilienthalpark): wassergebundene Decke	Q1 5533,663 5485,751 5499,771 5539,773 5590,719 5593,679 5575,660 5533,663
 (Lilienthalpark): wassergebundene Decke	Q1 5571,614 5533,663
 (Lilienthalpark): wassergebundene Decke	Q1 5539,773 5576,800
-(Hildburghauser Str. - Lilienthalpark): wassergebundene Decke	Q1 6462,1017 6436,921 6421,892 6414,833 6360,825 6259,835 6163,822 6066,821 5964,821 5867,807 5742,798 5615,735 5590,719
+(Hildburghauser Str. - Lilienthalpark): wassergebundene Decke	Q1 6462,1017 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5742,798 5682,767 5675,764 5615,735 5590,719
 #: by: ^^^
 #: by: Josch [AM]
 Falkenhausenweg: Asphalt	Q0 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
@@ -5180,14 +5180,34 @@ Goltzstr. (Spandau): Asphalt	Q0 -2728,17038 -2666,17168 -2517,17431 -2434,17638
 #: by: Lars [AM]
 Schillingstr. (Reinickendorf): Asphalt	Q1 4687,18175 4644,17978 4581,17689
 #: by: Lydia Weitmann [AM] vvv
-Elisabethstr. (Lichtenrade): Beton	Q1 9956,-1787 9854,-1790 9746,-1792 9612,-1796 9431,-1800
-Franziusweg: Asphalt	Q0 9498,-890 9603,-1293 9609,-1625 9609,-1709 9612,-1796
-Cecilienstr.: Beton	Q0 9612,-1796 9648,-1928 9637,-2150
-Rangsdorfer Str.: Beton	Q0 9746,-1792 9750,-1925 9751,-2145
-Rangsdorfer Str.: Kopfsteinpflaster	Q3 9751,-2145 9756,-2415
+Elisabethstr. (Lichtenrade): Beton	Q1 9970,-1787 9854,-1790 9746,-1792 9612,-1796 9431,-1800
+Franziusweg: Asphalt	Q0 9498,-890 9603,-1293 9606,-1507 9609,-1625 9609,-1709 9612,-1796
+Cecilienstr.: Beton	Q0 9612,-1796 9648,-1928 9650,-2135
+Rangsdorfer Str.: Beton	Q0 9746,-1792 9750,-1925 9757,-2135
+Rangsdorfer Str.: Kopfsteinpflaster	Q3 9757,-2135 9756,-2415
 Rangsdorfer Str.: Beton	Q0 9756,-2415 9762,-2642
 Wildauer Str.: Beton	Q0 9609,-1709 9853,-1701 9854,-1790
-Charlottenstr.: Beton	Q0 9854,-1790 9853,-1921 9856,-2143
+Charlottenstr.: Beton	Q0 9854,-1790 9853,-1921 9856,-2135
+Paetschstr.: Kopfsteinpflaster	Q2 9856,-2135 9864,-2411 9872,-2642
+Krügerstr. (Lichtenrade): Kopfsteinpflaster	Q2 9961,-2136 9967,-2408 9969,-2643
+Karlstr. (Lichtenrade): Asphalt	Q0 10069,-2405 10085,-2643
+Goldschmidtweg: Beton	Q0 9271,-1609 9282,-1442 9296,-1228 9276,-973
+Maffeistr.: Beton	Q0 9228,-1609 9271,-1609 9329,-1618 9443,-1626 9609,-1625 9757,-1621 9908,-1614
+Abendrotweg: Beton	Q0 9606,-1507 9746,-1501 9860,-1475
+Gätzschmannpfad: Beton	Q0 9228,-1609 9206,-1771
+Hoeschweg: Beton	Q0 9312,-1832 9329,-1618
+Friedensweg: schlechtes Kopfsteinpflaster	Q3 9756,-1221 9738,-1290
+Friedensweg: schlechtes Kopfsteinpflaster	Q3 9721,-1290 9725,-1359 9746,-1501 9757,-1621
+Straußstr. (Lichtenrade): Beton	Q0 9872,-2642 9887,-2773 9904,-2908
+Egsdorfer Weg: Beton	Q0 9887,-2773 10020,-2744 10050,-2808
+Lortzingplatz: Beton	Q0 10050,-2808 10007,-2836 10028,-2888
+Flotowstr. (Lichtenrade): Beton	Q0 9904,-2908 10028,-2888
+Brahmsstr. (Lichtenrade): Beton	Q0 10077,-2789 10130,-2932
+Weberstr. (Lichtenrade):Asphalt	Q0 10080,-2948 10130,-2932 10219,-2895
+Löwenbrucher Weg: Asphalt	Q0 10475,-2944 10392,-2980 10272,-3027 10149,-3054 10047,-3071 9925,-3075 9878,-3075
+(Blohmstr. - Diedersdorfer Str.): unbefestigter Waldweg	Q1 9093,-1670 8968,-1576 8845,-1521 8776,-1487 8492,-1376
+(Blohmstr. - Diedersdorfer Str.): Asphalt mit Löchern	Q1 8492,-1376 8073,-1137
+(Dinnendahlstr. - Schichauweg): unbefestigter Waldweg	Q1 9123,-1321 8953,-1184 8882,-1142 8873,-1118
 #: by:^^^
 #: by: Ben [AM] vvv
 Im Dohl: Verbundsteinpflaster	Q1 -9063,5946 -8903,5930

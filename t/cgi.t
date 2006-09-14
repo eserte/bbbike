@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.34 2006/06/08 22:44:37 eserte Exp $
+# $Id: cgi.t,v 1.35 2006/09/14 21:23:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -22,6 +22,13 @@ use URI::Escape qw(uri_escape);
 use Getopt::Long;
 use Data::Dumper;
 use Safe;
+
+use FindBin;
+use lib ($FindBin::RealBin,
+	 "$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+use BBBikeTest qw();
 
 eval { require Compress::Zlib };
 
@@ -391,8 +398,9 @@ for my $cgiurl (@urls) {
     my $map_qr2 = qr|(http://.*/bbbike.*\?tmp=/berlin_map_04-05.png)|i;
     if ($content !~ $map_qr1 &&
 	$content !~ $map_qr2) {
-	ok(0) for 1..4; # really skip
 	diag("Cannot get tile image reference, expected something like $map_qr1 or $map_qr2");
+	BBBikeTest::failed_long_data($content, $map_qr1, "Tile image check", ".html");
+	ok(0) for 1..3; # really skip
     } else {
 	my $image_url = $1;
 	pass("Found map image source");

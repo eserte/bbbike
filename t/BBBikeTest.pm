@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.18 2006/08/18 20:38:48 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.19 2006/09/14 20:58:58 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2006 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -185,7 +185,7 @@ sub tidy_check {
     }
 }
 
-sub _any_fail {
+sub failed_long_data {
     my($got, $expected, $testname, $suffix) = @_;
     require File::Temp;
     require Data::Dumper;
@@ -205,7 +205,7 @@ sub is_long_data {
 	if ($eq) {
 	    Test::More::pass($testname);
 	} else {
-	    _any_fail($got, $expected, $testname, $suffix);
+	    failed_long_data($got, $expected, $testname, $suffix);
 	}
     }
 }
@@ -219,7 +219,7 @@ sub like_long_data {
 	if ($matches) {
 	    Test::More::pass($testname);
 	} else {
-	    _any_fail($got, $expected, $testname, $suffix);
+	    failed_long_data($got, $expected, $testname, $suffix);
 	}
     }
 }
@@ -233,7 +233,7 @@ sub unlike_long_data {
 	if ($matches) {
 	    Test::More::pass($testname);
 	} else {
-	    _any_fail($got, $expected, $testname, $suffix);
+	    failed_long_data($got, $expected, $testname, $suffix);
 	}
     }
 }

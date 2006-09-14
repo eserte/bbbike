@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.28 2005/11/19 21:05:01 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.29 2006/09/14 21:08:44 eserte Exp $
 #
 
 .ifndef COMMENTS_PARTIAL
@@ -19,7 +19,11 @@ SORTBYCAT=		${MISCSRCDIR}/sortbycat
 BBD2ESRI=		${MISCSRCDIR}/bbd2esri
 CONVERT_RADWEGE=	${MISCSRCDIR}/convert_radwege
 
+.if ${HOST} == "biokovo.herceg.de"
+MAPSERVER_BIN_DIR?=	/usr/local/bin
+.else
 MAPSERVER_BIN_DIR?=	/usr/local/src/work/mapserver
+.endif
 SHPTREE=		${MAPSERVER_BIN_DIR}/shptree
 
 mapfiles:	mapfiles-without-reference-maps mapfiles-reference-maps

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.48 2006/06/06 20:39:25 eserte Exp $
+# $Id: Makefile,v 1.49 2006/09/14 21:23:40 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -118,7 +118,8 @@ BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
 # Which kind of images should be generated:
 IMAGE_SUFFIX=		png # was: gif					# ***
 # File with the font mapping for this host:
-FONTS_LIST?=		fonts-vran.list					# ***
+#FONTS_LIST?=		fonts-vran.list					# ***
+FONTS_LIST?=		fonts-biokovo.list					# ***
 # The unix user of the webserver process:
 WWW_USER=		eserte						# ***
 TARGET_DIR=		${.CURDIR}
@@ -183,7 +184,8 @@ FONTS_LIST=		fonts-radzeit-old.list
 .elif ${TARGET} == "radzeit"
 FONTS_LIST=		fonts-radzeit.list
 .elif ${TARGET} == "radzeit.herceg.de"
-FONTS_LIST=		fonts-vran.list
+#FONTS_LIST=		fonts-vran.list
+FONTS_LIST=		fonts-biokovo.list
 .endif
 
 .endif
@@ -329,7 +331,7 @@ maps:	${MAPFILES} ${MAPFILES_EXTRA} ${IPAQ_MAPFILES} ${IPAQ_MAPFILES_EXTRA}
 
 html:	${HTMLFILES}
 
-misc:	crontab httpd.conf
+misc:	crontab check-crontab httpd.conf
 
 Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile \
 			${ABS_LOCAL_BBBIKE_DIR}/BBBikeVar.pm \
@@ -551,6 +553,11 @@ httpd.conf:	httpd.conf-tpl Makefile Makefile.${TARGET}.inc
 	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
 
+check-crontab:
+	@(crontab -l | grep -q mapserver/brb/cleanup) && \
+		echo "Crontab entry already installed" || \
+		echo "*** You want probably to install the crontab"
+
 ######################################################################
 # dists
 
@@ -590,7 +597,8 @@ dist-radzeit.herceg.de:	# build-all
 	[ ${TARGET} = "radzeit.herceg.de" ]
 	[ ! -d $(RADZEIT_DIST_DIR) ] && mkdir $(RADZEIT_DIST_DIR) || true
 	chmod ugo+rx $(RADZEIT_DIST_DIR)
-	cp -pf $(DISTFILES) fonts-vran.list $(RADZEIT_DIST_DIR)
+#	cp -pf $(DISTFILES) fonts-vran.list $(RADZEIT_DIST_DIR)
+	cp -pf $(DISTFILES) fonts-biokovo.list $(RADZEIT_DIST_DIR)
 	cp -pR data $(RADZEIT_DIST_DIR)
 	cp -pR graphics $(RADZEIT_DIST_DIR)
 	-mkdir $(RADZEIT_DIST_DIR)/tmp
