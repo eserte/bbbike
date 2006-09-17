@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.116 2006/09/10 21:11:04 eserte Exp $
+# $Id: Makefile,v 2.117 2006/09/17 20:48:01 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -625,8 +625,6 @@ fragezeichen:	.create_fragezeichen
 		Makefile
 	-@$(WRITEABLE) $@
 	cat fragezeichen-orig |\
-	        ${GREPSTRASSEN} -v -sectionrx "projektierte Radstreifen" |\
-	        ${GREPSTRASSEN} -v -sectionrx "Straßen in Planung" |\
 	        ${GREPSTRASSEN} -v -sectionrx "ignorieren" |\
 	    ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@~
 	@echo "# added from ampeln-orig" >> $@~
