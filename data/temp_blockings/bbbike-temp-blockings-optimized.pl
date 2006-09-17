@@ -439,14 +439,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1158357599,
-         'text' => 'Simon-Dach-Str.: Bauarbeiten an der Wühlischstr., Einbahnstraße, bis 2006-09-15 ',
-         'from' => 1152363677,
-         'data' => 'userdel	1::inwork 13890,11411 13954,11647
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1167605999,
          'text' => 'Neubau der Treptower Straße in Neukölln, Sperrung zwischen Kiefholzstraße und Heidelberger Straße (Anliegerverkehr ist frei) (bis Ende 2006) ',
@@ -520,7 +513,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
          'until' => 1159653600,
          'text' => 'Ruschestr. (Lichtenberg) in Richtung Frankfurter Allee, zwischen Normannenstr. und Frankfurter Allee Baustelle, Straße vollständig gesperrt (bis 30.09.06)',
          'from' => 1153860349,
-         'data' => 'userdel	1::inwork 15904,12340 15863,11992
+         'data' => 'userdel	1::inwork 15904,12340 15879,12131 15863,11992
 ',
          'type' => 'gesperrt'
        },
@@ -687,14 +680,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
        undef,
        undef,
        undef,
-       {
-         'until' => 1158336000,
-         'text' => 'Berlin Weißensee, Buschallee, Weißensee Richtung Ahrensfelde Zwischen Einmündung Berliner Allee und Kreuzung Hansastraße Baustelle, gesperrt bis 15.09.2006 18:00 Uhr ',
-         'from' => 1156358040,
-         'data' => 'userdel	1::inwork 14621,16563 15121,16503 15388,16502 15432,16500
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {

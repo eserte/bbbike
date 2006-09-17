@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.143 2006/09/14 21:19:30 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.144 2006/09/17 18:11:44 eserte Exp $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -314,7 +314,7 @@ Prießnitzstr.	1 11549,19258 11407,19186 11351,19169
 Klaustaler Str.	1 11439,18890 11384,19067
 Paracelsusstr.	1 11599,19171 11549,19258 11543,19279 11575,19296 11613,19312 11671,19204
 Wormbacher Weg	1 3791,338 3782,397 3648,531
-Schwelmer Str.	1 3688,292 3569,469 3497,574
+Schwelmer Str.	1 3676,311 3569,469 3497,574
 Schöppinger Str.	1 3691,566 3648,531 3569,469
 Hugo-Heimann-Str.	1 14120,1991 14165,2106 14229,2177 14453,2087 14587,2032
 Zweibrücker Str.	1 -4254,15813 -4283,15639 -4294,15525 -4308,15411
@@ -642,7 +642,10 @@ Rolandufer -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3 10583,12206
 Mühlendamm -> Rolandufer: unbequemes Passieren des Mittelstreifens	3 10567,12135 10621,12207 10583,12206
 Kurfürstendamm -> Meinekestr.: unbequemes Passieren des Mittelstreifens (Bordsteine)	3 5484,10810 5351,10760 5329,10422
 Meinekestr. -> Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3 5329,10422 5351,10760 5229,10716
-Deutschmeisterstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3 15350,12270 15437,12225 15502,12367
+Deutschmeisterstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3 15350,12270 15437,12225 15475,12307
+Möllendorffstr. -> Deutschmeisterstr.: Mittelstreifen mit Straßenbahn	3 15415,12179 15437,12225 15350,12270
+Rathausstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3 15531,12300 15475,12307 15437,12225
+Möllendorffstr. -> Rathausstr.: Mittelstreifen mit Straßenbahn	3 15502,12367 15475,12307 15531,12300
 Müllerstr. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3 6957,15869 6914,15908 6809,15798
 Müllerstr. -> Amsterdamer Str.: Zaun auf dem Mittelstreifen	3 6790,16018 6914,15908 7077,16078
 Amsterdamer Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3 7077,16078 6914,15908 6957,15869
@@ -1184,3 +1187,4 @@ Drängelgitter	BNP:5:78 5954,819
 Drängelgitter	BNP:5:81 5875,807
 Drängelgitter	BNP:5:74 5860,805
 Drängelgitter	BNP:5:62 5682,767
+Rudolf-Reusch-Str. [Wohngebiet]	1 15732,12562 15657,12562 15657,12648 15732,12650

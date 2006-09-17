@@ -4241,7 +4241,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002668',
        data  => <<EOF,
-userdel	q4; 15904,12340 15863,11992
+userdel	q4; 15904,12340 15879,12131 15863,11992
 EOF
      },
      { from  => 1146175200, # 2006-04-28 00:00
@@ -5215,7 +5215,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003134',
        data  => <<EOF,
-userdel	1::inwork 15904,12340 15863,11992
+userdel	1::inwork 15904,12340 15879,12131 15863,11992
 EOF
      },
      { from  => 1154210400, # 2006-07-30 00:00
