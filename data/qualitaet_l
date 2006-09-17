@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Brandenburg und weiterer Umgebung
-#: version: $Id: qualitaet_l-orig,v 4.77 2006/09/17 18:11:47 eserte Exp $
+#: version: $Id: qualitaet_l-orig,v 4.77 2006/09/17 18:11:47 eserte Exp eserte $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen; schlechte Straße; 01.11.96-unbekannt	Q3 -50149,24689 -50048,24475 -49883,24097 -50010,23562 -50201,23411 -50255,22794 -50938,21256
@@ -361,6 +361,8 @@ Helmholtzstr. (Potsdam): Kopfsteinpflaster	Q2 -11831,-70 -11978,-348
 Griebnitzstr. (Potsdam): asphaltiert	Q0 -9698,-19 -9627,-27
 Griebnitzstr. (Potsdam): Kopfsteinpflaster	Q2 -9627,-27 -9432,-57
 Griebnitzstr. (Potsdam): Waldweg	Q1 -9432,-57 -9399,-139
+Albert-Einstein-Str. (Potsdam): Kopfsteinpflaster	Q2 -12362,-2280 -12327,-2277
+Albert-Einstein-Str. (Potsdam): asphaltiert, im Wohngebiet teils mäßige Stellen, im Wald sehr gut	Q0 -12327,-2277 -12335,-2571 -12317,-2637 -12219,-2760 -12222,-2932
 Betonplatten	Q2 -27127,5270 -26196,4769 -25787,3228 -25669,2939 -25664,2840 -25662,2746
 Feldweg	Q2 -25662,2746 -25539,2641 -25453,2418 -25110,2303
 am Havellandkanal: Feldweg, Wurzeln	Q3 -24240,6075 -24325,6138 -23186,7432
@@ -1181,6 +1183,7 @@ Burgstr.: Beton 	Q1 -12500,-1437 -12422,-1416 -12281,-1378 -12265,-1434
 Burgstr.: Beton 	Q1 -12526,-1356 -12446,-1334 -12403,-1323
 Burgstr.: Beton 	Q1 -12422,-1416 -12446,-1334
 Am Alten Markt: Asphalt	Q0 -12666,-1311 -12657,-1338 -12614,-1471 -12589,-1556
+Am Alten Markt: Asphalt	Q0 -12719,-1661 -12589,-1556
 Ebräerstr.: Kopfsteinpflaster, evtl. OK	Q2 -12992,-1222 -12854,-1243
 Wilhelm-Staab-Str.: Kopfsteinpflaster	Q2 -13003,-1343 -12992,-1222 -12984,-1110
 Eltesterstr.: Kopfsteinpflaster	Q2 -12062,-1378 -11981,-1390
@@ -1533,7 +1536,7 @@ Brahmsallee: Sand	Q3 -8780,18633 -8420,18532 -7890,18273
 (Kuhlake): Waldweg	Q2 -7769,18068 -7457,18414 -7346,18260 -7044,18133 -6919,17841
 Schleuse Schönwalde - Schönwalde: Waldweg	Q2 -11476,22085 -11448,22017 -11450,21930 -11467,21846 -11400,21710 -11173,21524 -10842,21398 -10313,21144
 nördlich des Havellandkanals: Schotter	Q2 -12182,22042 -11476,22085 -11456,22120 -11380,22120 -11351,22090 -10425,22139
-Am Havelkanal: Asphalt	Q0 -3379,23141 -3395,23278 -3491,23179 -3479,23141 -3996,22969 -4635,22801 -7161,22297 -8730,22254
+Am Havelkanal: Asphalt	Q0 -3395,23278 -3491,23179 -3479,23141 -3996,22969 -4635,22801 -7161,22297 -8730,22254
 Am Havelkanal: Schotter	Q2 -8730,22254 -9012,22250
 Am Havelkanal: Sand	Q3 -9012,22250 -9046,22376
 An der Havel: Asphalt	Q0 -3379,23141 -3368,22890 -3347,22647 -3411,22586 -3421,22495 -3674,22172 -3714,21828 -3718,21758 -3633,21453 -3583,21403 -3569,21267 -3427,21104 -2972,20798 -2801,20575 -2742,19975 -2760,19847 -2871,19750

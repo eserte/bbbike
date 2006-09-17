@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.12 2006/09/05 21:32:04 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.13 2006/09/17 20:20:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!caller(2)) {
@@ -47,17 +47,53 @@ my $api_key = "pqCq16BQFHJ5jvhg6osutPlLWeSkd9ke";
 use vars qw($DEBUG);
 $DEBUG = 1;
 
+use vars qw($icon);
+
 sub register {
+    _create_image();
     $main::info_plugins{__PACKAGE__ . ""} =
 	{ name => "Luise-Berlin, Straßenlexikon",
 	  callback => sub { launch_street_url(@_) },
+	  icon => $icon,
 	};
     $main::info_plugins{__PACKAGE__ . "_bezlex"} =
 	{ name => "Luise-Berlin, Bexirkslexikon",
 	  callback => sub { launch_bezlex_url(@_) },
+	  icon => $icon,
 	};
     main::status_message("Das Luise-Berlin-Plugin wurde registriert. Der Link erscheint im Info-Fenster.", "info")
 	    if !$main::booting;
+}
+
+sub _create_image {
+    if (!defined $icon) {
+	# Got from: http://www.luise-berlin.de/petschaft.gif
+	# and used white background and scaled to 16x16
+	$icon = $main::top->Photo
+	    (-format => 'gif',
+	     -data => <<EOF);
+R0lGODlhEAAQAOe2AEREgkxMeU1NdkxMhVFReVJShFJSiFRUf1dXeldXillZeltbfFtbiltb
+i1tbjVxci1tblF5efWBgbmBggl9flGFhkGFhlWJilWJilmNjkmNjlGNjlmZmf2Vll2ZmkmZm
+lGZmmmZmnGhojWdnmWpqhmlplmtriGtriWpqlWpqlmpql2trm2xslW1tmm9vkm9vmm9vnG9v
+nnBwl3BwmHBwmXJyl3NzmXNzn3NzoHR0n3V1n3V1oXd3kXZ2mnV1o3d3oXh4m3l5oXt7knp6
+nnt7nHt7pXt7qXx8qn19pX19qH5+oX9/oH9/qH9/qYKCoIGBqYGBqoGBroKCqoODpIODrYSE
+p4SEqYSEq4WFpoaGqIiInYeHqoeHr4eHsYiIsImJs4yMtIyMto6OrY+Pt5GRtJOTspOTs5OT
+tZOTtpSUtJSUtZaWtpeXsZeXtpiYuZmZuJmZupqaspubt5ubvJubvpycup2dsp+fvKCgvqOj
+xaWlv6enwaioxaqqxqurx6uryK2txq2tx66uxq+vxa+vya+vzLCwxrCwx7CwybCwyrOzyLa2
+zra20L6+0r+/08DA0cPD18TE1snJ2MvL3M3N2M3N3M7O5c/P4tLS4tPT3dPT39PT4djY6dnZ
+49/f5uDg5uPj7uXl7unp8Onp8+zs8+3t8+3t9e/v9fDw9fHx9fLy9fPz+PT09vT0+PT0+fb2
++vf3+vf3+/r6/Pz8/f39/v///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEKAP8ALAAAAAAQABAAAAj+AGsJrIXpy4os
+V6DQCTVwYKsuRxyIQfEiRgkQf2YNhBWCSw8DMN6kYdLigRRFA8PcKJBh0qpVrmp1qmKliaZa
+lyAYQKFnyhoSg2S9YsWGgRpVY5B8qGRKkCUhtQ5xoPRJho5IUc6oqNX06SgnErTUynEATqNN
+arg6PeGCgIAttdpsgiSJ0x21lkwAUSACUy0ytBg9CSCHKyBLPGDFKRQhVocfYBylWOLJlB/E
+AusgSBQoD59SWLzY2YMEzQRDSmwssFCGgqhamWiw+LGI1KlToOYMILKjz8BHGABc2FDER4IK
+NUbgaVjLkZEZOIYEaeBBAyLmAlMBomLGTRJCqBoCBgQAOw==
+EOF
+    }
 }
 
 sub find_street {

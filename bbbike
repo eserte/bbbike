@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.269 2006/09/12 21:35:21 eserte Exp eserte $
+# $Id: bbbike,v 3.270 2006/09/17 20:21:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.269 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.270 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -11992,6 +11992,7 @@ sub show_info {
 
 	    $info_text->tagConfigure("bold", -font => $font{'bold'});
 	    $info_text->tagConfigure("fixed", -font => $font{'fixed'});
+	    $info_text->tagConfigure("iconindent", -lmargin1 => 16 + 2);
 	    $info_top->Button(Name => 'close',
 			      -command => sub { $info_top->destroy },
 			     )->pack(-fill => "x");
@@ -12156,13 +12157,14 @@ sub show_info {
 	    if (@layers) {
 		$url .= "/" . join("/", map { "layer=$_" } @layers);
 	    }
-	    $info_text->insert("end", $mapserver_label, "link$linkcount");
+	    $info_text->insert("end", $mapserver_label, ["link$linkcount", "iconindent"]);
 	    $show_url->($linkcount, $url);
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
 
 	    if ($advanced && !$is_local) {
-		$info_text->insert("end", $mapserver_label . " (kurzer Link)", "link$linkcount");
+		$info_text->insert("end", $mapserver_label . " (kurzer Link)",
+				   ["link$linkcount", "iconindent"]);
 		$show_url->($linkcount, sub {
 				if (exists $long_url_to_short_url{$url}) {
 				    return $long_url_to_short_url{$url};
@@ -12190,7 +12192,7 @@ sub show_info {
 	    my $is_first = 1;
 	    for my $def (@bbbike_cgi_def) {
 		my $bbbike_cgi_url = $def->[0];
-		$info_text->insert("end", $def->[1], "link$linkcount");
+		$info_text->insert("end", $def->[1], ["link$linkcount", "iconindent"]);
 		$info_text->insert("end", " ");
 		if ($is_first) {
 		    my $zielname_e = $info_text->Entry(-textvariable => \$zielname,
@@ -12238,7 +12240,7 @@ sub show_info {
 # 	    }
 
 	    $info_text->insert("end", "Google Maps (BBBike)", # . ($good_quality ? " (hohe Auflösung)" : " (niedrige/unbekannte Auflösung)"),
-			       "link$linkcount");
+			       ["link$linkcount", "iconindent"]);
 	    $show_url->($linkcount, sub {
 			    require CGI;
 			    my $wpt = "$zielname!$sx,$sy";
@@ -12263,7 +12265,8 @@ sub show_info {
 	}
 
 	{
-	    $info_text->insert("end", "Google Maps (Original)", "link$linkcount");
+	    $info_text->insert("end", "Google Maps (Original)",
+			       ["link$linkcount", "iconindent"]);
 	    $show_url->($linkcount, sub {
 			    require CGI;
 			    my $q2 = CGI->new({ ll => "$py,$px" });
@@ -12294,7 +12297,7 @@ sub show_info {
 	    ## But this works. Be nice and tell the Pharus guys where this request came from:
 	    my $url = "http://www.berliner-stadtplan.com/topic/bln/str/x_wgs/${x_wgs}/y_wgs/${y_wgs}/from/bbbike.html";
 	    $info_text->insert("end", "www.berliner-stadtplan.com",
-			       "link$linkcount");
+			       ["link$linkcount", "iconindent"]);
 	    $show_url->($linkcount, $url);
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
@@ -12307,7 +12310,7 @@ sub show_info {
 	    push @y, $y[0] < 0 ? "S" : "N";
 	    my $url = "http://kvaleberg.com/extensions/mapsources/?params=" . join("_", @y, @x) . "_type:landmark_region:DE-BE";
 	    $info_text->insert("end", "Wikipedia Mapsources",
-			       "link$linkcount");
+			       ["link$linkcount", "iconindent"]);
 	    $show_url->($linkcount, $url);
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
@@ -12327,8 +12330,19 @@ sub show_info {
 		next;
 	    }
 
+	    my $need_indentation;
+	    if ($plugin->{icon}) {
+		eval {
+		    $info_text->imageCreate("end", -image => $plugin->{icon},
+					    -align => "bottom", -padx => 2);
+		};
+		warn $@ if $@;
+	    } else {
+		$need_indentation = 1;
+	    }
+
 	    $info_text->insert("end", $plugin->{name} . "\n",
-			       "link$linkcount");
+			       ["link$linkcount", $need_indentation ? 'iconindent' : ()]);
 	    $info_text->tagBind
 		("link$linkcount", "<ButtonRelease-1>" => sub {
 		     $plugin->{callback}->(@args);
