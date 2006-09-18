@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.270 2006/09/17 20:21:08 eserte Exp $
+# $Id: bbbike,v 3.271 2006/09/18 23:03:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.270 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.271 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -938,6 +938,7 @@ $srtbike_photo = load_photo($top, 'srtbike_solid.' . $default_img_fmt);
 if ($os eq 'win' || $^O eq 'cygwin') {
     # XXX srtbike32.* looks broken on Win98, so use srtbike16.*
     #$srtbike_icon = load_photo($top, 'srtbike32.' . $default_img_fmt);
+    # $srtbike_icon is also used in info window, so stick to 16x16 in every case.
     $srtbike_icon = load_photo($top, 'srtbike16.' . $default_img_fmt);
     if ($srtbike_icon) {
 #XXX Produces funny colors --- Tk problem?!
@@ -946,6 +947,7 @@ if ($os eq 'win' || $^O eq 'cygwin') {
 } else {
     # 16x16 is the preferred size for mini-icons in KDE
     # works also for twm (however, a little bit tiny)
+    # $srtbike_icon is also used in info window, so stick to 16x16 in every case.
     $srtbike_icon = load_photo($top, 'srtbike16.' . $default_img_fmt);
     if ($srtbike_icon) {
 	$top->iconmask('@' . $FindBin::RealBin . '/images/srtbike16_mask.xbm');
@@ -12192,7 +12194,17 @@ sub show_info {
 	    my $is_first = 1;
 	    for my $def (@bbbike_cgi_def) {
 		my $bbbike_cgi_url = $def->[0];
-		$info_text->insert("end", $def->[1], ["link$linkcount", "iconindent"]);
+
+		my $need_indentation;
+		if ($srtbike_icon) {
+		    $info_text->imageCreate("end", -image => $srtbike_icon,
+					    -align => "bottom", -padx => 2, -pady => 1);
+		} else {
+		    $need_indentation = 1;
+		}
+
+		$info_text->insert("end", $def->[1],
+				   ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
 		$info_text->insert("end", " ");
 		if ($is_first) {
 		    my $zielname_e = $info_text->Entry(-textvariable => \$zielname,
@@ -12218,29 +12230,21 @@ sub show_info {
 
 	my($mapscale_scale) = $mapscale =~ /:\s*(\d+)/;
 
+	if (!$google_photo) {
+	    $google_photo = load_photo($top, 'google.gif');
+	}
+
 	{
-## With api2 everything is high density
-# 	    # These are the areas with high density photos:
-# 	    my @good_quality =
-# 		(['1354,13328', '19812,14959', '20024,71', '32343,477', '31687,23342', '31238,45180', '48878,45679', '49252,22913', '49631,-52', '50188,-18068', '32921,-18563', '32877,-16412', '20280,-16918', '20305,-18134', '2221,-19767'],
-# 		 ['-8942,-8189', '-25841,-8397', '-26312,14506', '-26310,23512', '-9321,23908'],
-# 		 ['-29283,-13596', '-41607,-13723', '-41701,-13724', '-41757,-11016', '-59583,-11521', '-59428,-28173', '-46261,-28125', '-46201,-31030', '-29015,-31192'],
-# 		 ['-21638,-31154', '-3619,-30926', '-3526,-49060', '-3619,-49062', '-21261,-49471'],
-# 		 ['45955,56144', '63315,56639', '63317,56546', '63132,70071', '79553,70823', '79242,85955', '93525,86210', '93527,86118', '93530,108689', '93218,119338', '93126,119245', '75755,119299', '75629,107276', '61065,107015', '61063,107106', '60935,104277', '45067,103902'],
-# 		 ['-47007,58168', '-64464,57857', '-64463,57765', '-64270,39316', '-46622,39446'],
-# 		 ['-77898,188936', '-60161,189253', '-59987,167173', '-59959,156724', '-77517,156772'],
-# 		);
-# 	    my $good_quality;
-# 	    for my $polygon_def (@good_quality) {
-# 		my $polygon = [ map { [split/,/,$_] } @$polygon_def ];
-# 		if (point_in_polygon([$sx,$sy], $polygon)) {
-# 		    $good_quality = 1;
-# 		    last;
-# 		}
-# 	    }
+	    my $need_indentation;
+	    if ($google_photo) {
+		$info_text->imageCreate("end", -image => $google_photo,
+					-align => "bottom", -padx => 2, -pady => 1);
+	    } else {
+		$need_indentation = 1;
+	    }
 
 	    $info_text->insert("end", "Google Maps (BBBike)", # . ($good_quality ? " (hohe Auflösung)" : " (niedrige/unbekannte Auflösung)"),
-			       ["link$linkcount", "iconindent"]);
+			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
 	    $show_url->($linkcount, sub {
 			    require CGI;
 			    my $wpt = "$zielname!$sx,$sy";
@@ -12265,8 +12269,16 @@ sub show_info {
 	}
 
 	{
+	    my $need_indentation;
+	    if ($google_photo) {
+		$info_text->imageCreate("end", -image => $google_photo,
+					-align => "bottom", -padx => 2, -pady => 1);
+	    } else {
+		$need_indentation = 1;
+	    }
+
 	    $info_text->insert("end", "Google Maps (Original)",
-			       ["link$linkcount", "iconindent"]);
+			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
 	    $show_url->($linkcount, sub {
 			    require CGI;
 			    my $q2 = CGI->new({ ll => "$py,$px" });
@@ -12304,13 +12316,27 @@ sub show_info {
 	}
 
 	{
+
+	    if (!$wikipedia_photo) {
+		$wikipedia_photo = load_photo($top, 'wikipedia.gif');
+	    }
+
 	    my(@x) = Karte::Polar::ddd2dms($px);
 	    my(@y) = Karte::Polar::ddd2dms($py);
 	    push @x, $x[0] < 0 ? "W" : "E";
 	    push @y, $y[0] < 0 ? "S" : "N";
 	    my $url = "http://kvaleberg.com/extensions/mapsources/?params=" . join("_", @y, @x) . "_type:landmark_region:DE-BE";
+
+	    my $need_indentation;
+	    if ($wikipedia_photo) {
+		$info_text->imageCreate("end", -image => $wikipedia_photo,
+					-align => "bottom", -padx => 2, -pady => 1);
+	    } else {
+		$need_indentation = 1;
+	    }
+
 	    $info_text->insert("end", "Wikipedia Mapsources",
-			       ["link$linkcount", "iconindent"]);
+			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
 	    $show_url->($linkcount, $url);
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
@@ -12334,7 +12360,7 @@ sub show_info {
 	    if ($plugin->{icon}) {
 		eval {
 		    $info_text->imageCreate("end", -image => $plugin->{icon},
-					    -align => "bottom", -padx => 2);
+					    -align => "bottom", -padx => 2, -pady => 1);
 		};
 		warn $@ if $@;
 	    } else {
@@ -18158,7 +18184,7 @@ sub image_from_file {
 }
 
 # Load the image from file $file. Do nothing if $lowmem mode
-# is set. If the -persistent is set, the store the image into the
+# is set. If the -persistent is set, then store the image into the
 # persistent %photo hash for caching. -name can be set
 # for a Tcl-styled image name. In $small_icons mode every
 # image is shrinked to half width/height.
