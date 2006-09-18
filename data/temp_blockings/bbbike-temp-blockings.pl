@@ -2215,7 +2215,7 @@ EOF
        text  => 'L 70; (Karl-Fiedler-Str.); OD Sperenberg, zw. Goethestr. u. Am Niederfließ Kompletter Straßenausbau Vollsperrung 25.04.2005-05.09.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 8576,-29378 8721,-29879
+	q4 8576,-29378 8662,-29911
 EOF
      },
      { from  => 1120088649, # 2005-06-30 01:44
@@ -2960,7 +2960,7 @@ EOF
        text  => 'K 7228; (Zossener Allee); OL Sperenberg Straßenbau Vollsperrung 10.10.2005-16.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 8576,-29378 8725,-26812
+userdel	q4 8576,-29378 8647,-26861
 EOF
      },
      { from  => 1128754834, # 2005-10-08 09:00 (by polizeifax und Tagesspiegel)

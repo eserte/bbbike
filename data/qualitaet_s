@@ -324,7 +324,7 @@ Neuer Schildhornweg (durch Kolonie Grunewald): Verbundsteine, einige Bodenwellen
 Neuer Schildhornweg (durch Kolonie Grunewald): fester Sandweg	Q1 -252,9466 71,9429
 Neuer Schildhornweg: Waldweg, OK, 22 km/h möglich	Q1 71,9429 316,9338 383,9305 682,9101
 Verbindungschaussee: Waldweg, OK, 22 km/h möglich	Q1 -404,9456 -346,9173 -310,8989 -345,8899 -1112,7891
-Verbindungschaussee: asphaltiert	Q0 -404,9456 -445,9627
+Verbindungschaussee: asphaltiert	Q0 -404,9456 -471,9647
 Lenbachstr.: Kopfsteinpflaster	Q2 14793,11323 14669,11152 14597,11069
 Henriette-Herz-Platz: Straßenbahn	Q3 10132,12941 10255,12959 10371,13006
 Garnisonkirchplatz: Kopfsteinpflaster, OK	Q1 10309,12854 10255,12959
@@ -554,7 +554,7 @@ Limastr.: Kopfsteinpflaster	Q2 -1096,3339 -1118,3356 -1195,3503 -1211,3638 -1277
 Richtung Grunewaldturm: Waldweg, meist OK, einige sandige Abschnitte	Q1 -1638,9152 -1857,8964 -2368,8457 -2386,8282 -2561,8110 -2890,7994 -3212,8024 -3536,7856
 Uferweg am Schlachtensee: Waldweg OK, manchmal etwas sandig	Q1 -3348,3055 -3384,3212 -3324,3382 -3087,3646 -2937,3740 -2813,3775 -2494,3758 -2347,3884 -2080,4228 -1935,4303 -1831,4300 -1663,4218 -1503,4133 -1391,4135 -1353,4205 -1278,4239
 südlicher Uferweg am Schlachtensee: Waldweg OK	Q1 -3384,3212 -3341,3122 -3273,3096 -3200,3145 -3136,3294 -3081,3377 -2947,3486 -2802,3570 -2599,3637 -2521,3637 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108 -1391,4135
-Weg am Teufelssee: Waldweg	Q1 -898,9375 -942,9251 -1047,9123
+Weg am Teufelssee: Waldweg	Q1 -886,9447 -942,9251 -1047,9123
 Schwarzer Weg (Oberschöneweide): unbefestigter Weg, holprig	Q2 17298,8147 17297,7752 17301,7619
 Möllhausenufer: Kopfsteinpflaster	Q2 23305,1147 23520,1194 23617,1212
 Möllhausenufer: asphaltiert	Q0 23617,1212 23747,1243
@@ -1499,7 +1499,7 @@ Badeweg: guter Belag	Q0 -4292,2762 -4471,2917
 Bröndbystr.: Asphalt	Q0 3500,1587 3273,1302 3312,1241 3384,1297
 Petkusser Str.: mäßiges Kopfsteinpflaster	Q2 10484,-2637 10609,-3098
 Kurpromenade: mäßiger Asphalt	Q1 -8917,5986 -8864,6289 -8859,6540 -8868,6798 -8804,6818 -8732,6840 -8656,6864 -8567,6893
-Schriftsetzerweg: Asphalt	Q0 15849,1807 16194,1509
+Schriftsetzerweg: Asphalt	Q0 15868,1790 16194,1509
 Wodanstr.: Kopfsteinpflaster	Q2 8821,19331 8739,19475 8704,19534 8621,19683 8494,19899 8415,19910
 Tödiweg: Asphalt	Q0 9418,2038 9450,1846 9486,1662
 Ledebourstr.: mäßiger Asphalt	Q1 24448,10098 24827,9968 25262,9740 25312,9704 25413,9613 25476,9561
@@ -1856,7 +1856,7 @@ Wangerooger Steig: Asphalt	Q1 3094,7111 3060,7198
 Norderneyer Str.: Kopfsteinpflaster	Q3 3582,6964 3585,7028 3591,7128 3593,7176
 Doberaner Str. (Schmargendorf): Kopfsteinpflaster	Q2 2732,7235 2803,7227
 (Verlängerter Dauerwaldweg): befestigter Waldweg	Q1 480,9460 461,9556 437,9738
-(Verlängerte Alte Allee): befestigter Waldweg	Q1 596,9613 437,9738 348,9809 267,9873 115,9993 -14,10096
+(Verlängerte Alte Allee): befestigter Waldweg	Q1 596,9613 437,9738 346,9806 262,9867 108,9984 -20,10076
 Maikäferpfad: Asphalt mit Löchern	Q2 828,9924 917,9860 968,9825 1020,9786 1121,9712
 Maikäferpfad: Verbundsteinpflaster	Q1 828,9924 573,10109
 Friedrichshaller Str.: Kopfsteinpflaster	Q2 2774,7655 2784,7711 3083,7587
@@ -3015,7 +3015,7 @@ Umgehungschaussee: fester breiter Waldweg	Q1 1149,7205 1251,7429 1263,7450 1252,
 (Grunewaldsee - Krumme Lanke): Waldweg	Q2 218,6571 204,6441 115,6292 48,6202 -44,6114 -71,6021 -63,5955 58,5794 70,5722 63,5600 -225,5332 -579,5320
 (Auerbachstr. - Koenigsallee): Kopfsteinpflaster	Q2 490,8716 445,8429
 (Auerbachstr. - Koenigsallee): fester Waldweg	Q1 445,8429 614,8006 761,7922
-(Verlängerte Harbigstr.): fester Waldweg, teilweise Schlaglöcher	Q1 573,10109 348,9809
+(Verlängerte Harbigstr.): fester Waldweg, teilweise Schlaglöcher	Q1 573,10109 346,9806
 Am Vogelherd: Asphalt	Q1 968,9825 1083,9984 1186,10118
 Rottannenweg: Gehwegplatten	Q1 657,9567 590,9478 560,9439 495,9409
 Gustav-Freytag-Str. (Grunewald): Verbundsteine	Q1 742,8567 787,8627
@@ -3261,8 +3261,10 @@ Hardyweg: Beton	Q1 -1028,10960 -910,10975 -901,10901
 Shawweg: Beton	Q1 -831,11060 -826,11021
 Byronweg: Beton	Q1 -731,11073 -726,11031
 Teufelsseestr.: Kopfsteinpflaster	Q2 442,11215 454,11159
-(Teufelsseechaussee - Waldschulallee): fester Waldweg	Q2 207,10845 355,10740
-(Teufelsseechaussee - Maikäferpfad): fester Waldweg	Q1 573,10109 460,10193 332,10286 67,10485
+Teufelsseechaussee: Asphalt	Q0 -977,9425 -938,9394 -886,9447 -817,9533 -697,9598 -471,9647 -324,9701 -232,9768 -153,9854 -103,9934 -75,10017 -57,10103 41,10501 96,10701 194,10846
+Teufelsseechaussee [Auffahrt zum ehem. Horchposten]: Asphalt	Q1 -817,9533 -883,9664 -910,9717 -923,9757 -943,9826 -935,9846 -865,9920 -850,9940 -839,9968 -826,9977 -817,9968 -818,9894 -809,9867 -791,9854 -769,9856
+(Teufelsseechaussee - Waldschulallee): fester Waldweg	Q2 194,10846 355,10740
+(Teufelsseechaussee - Maikäferpfad): fester Waldweg	Q1 573,10109 460,10193 332,10286 41,10501
 Angerburger Allee: Beton	Q0 -1524,11108 -1608,11133 -1829,11337 -1895,11400 -1966,11466 -2109,11598 -2130,11761
 Scottweg: Asphalt mit Fugen	Q1 -668,11464 -966,11382 -1315,11300 -1403,11279 -1414,11171
 Dickensweg: Asphalt	Q0 -1518,11177 -1414,11171 -1386,11172 -1297,11184 -1062,11214 -1067,11243 -948,11270 -634,11337
@@ -3980,3 +3982,8 @@ Waldallee: Asphalt	Q0 -8559,6107 -8465,6204 -8290,6307 -8213,6349
 Dänenstr.: Kopfsteinpflaster	Q1 10343,16015 10405,16017 10593,16037 10750,16040 10987,16008
 Elmshorner Str.: Beton	Q1 2271,2285 2254,2214 2276,2131 2428,1789 2315,1739
 Wohlgemuthstr.: Kopfsteinpflaster	Q2 15685,6507 15765,6512 15904,6410
+Gernsheimer Str.: Asphalt	Q0 6819,4051 6859,4085 6917,4070 7017,4035 7053,4012
+Rotenfelser Weg: Asphalt	Q0 6917,4070 6904,4018 6996,3945
+Fuchsienweg: Beton	Q1 16090,3079 16376,2862 16573,2715
+Heideläuferweg: Asphalt	Q1 13020,2092 13043,1984 13070,1642 13073,1559 13089,1351 13092,1265 13093,1171 13109,1071
+Dröpkeweg: Asphalt	Q0 13070,1642 13487,1651

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.48 2006/09/10 22:47:01 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.48 2006/09/10 22:47:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -18,7 +18,10 @@
 # grab a good pod2html XXX this is somewhat hacky
 my $bbbike_html_rule;
 my $pod2html = is_in_path("mpod2html");
-my $htmlroot = "--htmlroot http://www.perldoc.com/cpan";
+## perldoc.com seems to be dead.
+#my $htmlroot = "--htmlroot http://www.perldoc.com/cpan";
+## This unfortunately has only the core documentation
+my $htmlroot = "--htmlroot http://perldoc.perl.org/";
 
 use constant POD_POD   => 0;
 use constant POD_HTML  => 1;
