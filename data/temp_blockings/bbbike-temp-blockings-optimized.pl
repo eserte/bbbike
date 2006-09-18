@@ -772,9 +772,9 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
        undef,
        {
          'source_id' => 'IM_003436',
-         'until' => 1162249200,
-         'text' => 'Brückenstr. (Mitte) Richtung Heinrich-Heine-Str. zwischen Holzmarktstr. und Köpenicker Str. Baustelle Fahrtrichtung gesperrt (bis 30.10.2006)',
-         'from' => 1157352536,
+         'until' => 1175378399,
+         'text' => 'Brückenstr. (Mitte) Richtung Heinrich-Heine-Str. zwischen Holzmarktstr. und Köpenicker Str. Baustelle Fahrtrichtung gesperrt: Holzmarktstr. - Michaelkirchstr. - Köpenicker Str. (bis 03.2007)',
+         'from' => 1158618023,
          'data' => 'userdel	1::inwork 11351,12221 11347,12181 11328,12040 11283,11876 11242,11720
 ',
          'type' => 'gesperrt'
@@ -861,6 +861,23 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'data' => 'userdel	q4::inwork -33790,44573 -33927,44655
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_003182',
+         'until' => 1164927599,
+         'text' => 'Lindenberger Str. (Hohenschönhausen) in beiden Richtungen zwischen Fennpfuhlweg und Birkholzer Weg Für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Ende 11.2006)',
+         'from' => 1158618096,
+         'data' => 'userdel	q4::inwork 18061,19097 18073,19216 18109,19352
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1165100400,
+         'text' => 'B 002 Eberswalde-Angermünde zw. Abzw. Britz und BÜ Chorin Deckenerneuerung Vollsperrung 18.09.2006-02.12.2006 ',
+         'from' => 1158444000,
+         'data' => 'userdel	2::inwork 38845,51258 41075,53327 41587,53787 41654,53939 41847,54619 42231,54671 42595,54932 42742,54938 42749,55043 42452,55538 42981,57104 43462,57600 43581,57725
+',
+         'type' => 'gesperrt'
        }
      
 );

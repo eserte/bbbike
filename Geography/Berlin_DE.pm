@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlin_DE.pm,v 1.24 2006/08/26 21:54:55 eserte Exp $
+# $Id: Berlin_DE.pm,v 1.25 2006/09/18 22:13:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2006 Slaven Rezic. All rights reserved.
@@ -210,6 +210,9 @@ sub parse_street_type_nr {
     } elsif ($strname =~ /oder.*nei(?:ss|ß)e/i) {
 	$type = 'ON';
 	$image = 'ON.gif';
+    } elsif ($strname =~ /flaeming.*skate/i) {
+	$type = 'FS';
+	$image = 'FS.gif';
     }
     if (defined $type) {
 	$do_round = 1;

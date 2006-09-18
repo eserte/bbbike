@@ -1684,7 +1684,7 @@ EOF
        text  => 'L 622; (Rückersdorf-Doberlug Kirchhain); südl. Doberlug-Kirchhain, Höhe Hammerteich Baumfällarbeiten Vollsperrung 11.04.2005-15.04.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 22495,-89358 22558,-89699
+userdel	2 22507,-89430 22558,-89699
 EOF
      },
      { from  => 1112072400, # 2005-03-29 07:00
@@ -2448,7 +2448,7 @@ EOF
        text  => 'B 169; von OD Kahla bis OE Elsterwerda Deckschichteinbau Vollsperrung 05.08.2005-07.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 23758,-103850 22424,-103934
+userdel	2 23805,-103848 22428,-103909
 EOF
      },
      { from  => 1122501600, # 2005-07-28 00:00
@@ -5720,9 +5720,9 @@ EOF
 userdel	q4::inwork; 12975,13266 12909,13231 12808,13181 12727,13159 12582,13128 12386,13085
 EOF
      },
-     { from  => 1157352536, # 2006-09-04 08:48
-       until => 1162249200, # 2006-10-31 00:00
-       text  => 'Brückenstr. (Mitte) Richtung Heinrich-Heine-Str. zwischen Holzmarktstr. und Köpenicker Str. Baustelle Fahrtrichtung gesperrt (bis 30.10.2006)',
+     { from  => 1158618023, # 2006-09-19 00:20
+       until => 1175378399, # 2007-03-31 23:59
+       text  => 'Brückenstr. (Mitte) Richtung Heinrich-Heine-Str. zwischen Holzmarktstr. und Köpenicker Str. Baustelle Fahrtrichtung gesperrt: Holzmarktstr. - Michaelkirchstr. - Köpenicker Str. (bis 03.2007)',
        type  => 'gesperrt',
        source_id => 'IM_003436',
        data  => <<EOF,
@@ -5825,6 +5825,23 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -33790,44573 -33927,44655
+EOF
+     },
+     { from  => 1158618096, # 2006-09-19 00:21
+       until => 1164927599, # 2006-11-30 23:59
+       text  => 'Lindenberger Str. (Hohenschönhausen) in beiden Richtungen zwischen Fennpfuhlweg und Birkholzer Weg Für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Ende 11.2006)',
+       type  => 'handicap',
+       source_id => 'IM_003182',
+       data  => <<EOF,
+userdel	q4::inwork 18061,19097 18073,19216 18109,19352
+EOF
+     },
+     { from  => 1158444000, # 2006-09-17 00:00
+       until => 1165100400, # 2006-12-03 00:00
+       text  => 'B 002 Eberswalde-Angermünde zw. Abzw. Britz und BÜ Chorin Deckenerneuerung Vollsperrung 18.09.2006-02.12.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 38845,51258 41075,53327 41587,53787 41654,53939 41847,54619 42231,54671 42595,54932 42742,54938 42749,55043 42452,55538 42981,57104 43462,57600 43581,57725
 EOF
      },
     );

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-index.pl,v 1.9 2006/07/08 00:38:02 eserte Exp eserte $
+# $Id: strassen-index.pl,v 1.10 2006/09/18 22:16:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
