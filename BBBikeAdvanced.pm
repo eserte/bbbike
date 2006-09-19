@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.165 2006/09/18 22:15:46 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.165 2006/09/18 22:15:46 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2779,6 +2779,13 @@ sub switch_edit_standard_mode {
     my $err = $@;
     DecBusy($top) unless $init;
     status_message($err, "die") if $err;
+
+    # Better when editing:
+    $str_restrict{qs}->{Q0} = 1;
+    $str_restrict{ql}->{Q0} = 1;
+    $str_restrict{hs}->{q0} = 1;
+    $str_restrict{hl}->{q0} = 1;
+    # This is not switched back when changing to normal mode.
 }
 
 # Schaltet in den Edit-Mode für Berlin um.

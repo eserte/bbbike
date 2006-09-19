@@ -400,7 +400,15 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'INKO_77721_COPY_1',
+         'until' => 1185833757,
+         'text' => 'Pistoriusstr. (Pankow) in Richtung Berliner Allee, zwischen Roelckstr. und Mirbachplatz Baustelle, Straße vollständig gesperrt (bis Mitte 2007)',
+         'from' => 1152221102,
+         'data' => 'userdel	q4::inwork; 13131,16525 13386,16408
+',
+         'type' => 'handicap'
+       },
        {
          'until' => 1167606000,
          'text' => 'K 6413 Berliner Str. OL Buckow, zw. Hauptstr. und OA grundhafter Straßenbau Vollsperrung 17.07.2006-31.12.2006 ',
@@ -627,8 +635,8 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'type' => 'gesperrt'
        },
        {
-         'until' => 1159221600,
-         'text' => ' K 7239 Diedersdorf-Birkholz OD Diedersdorf, Kno. Birkholzer Str./ Chausseestr. Bau Kreisverkehrsplatz Vollsperrung 15.08.2006-25.09.2006 ',
+         'until' => 1159480800,
+         'text' => 'K 7239 Diedersdorf-Birkholz OD Diedersdorf, Kno. Birkholzer Str./ Chausseestr. Bau Kreisverkehrsplatz Vollsperrung 15.08.2006-28.09.2006 ',
          'from' => 1155506400,
          'data' => 'userdel	q4::inwork 7547,-5739 7399,-7001
 ',
@@ -873,8 +881,8 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
        },
        {
          'until' => 1165100400,
-         'text' => 'B 002 Eberswalde-Angermünde zw. Abzw. Britz und BÜ Chorin Deckenerneuerung Vollsperrung 18.09.2006-02.12.2006 ',
-         'from' => 1158444000,
+         'text' => 'B 002 Eberswalde-Angermünde zw. Abzw. Britz und BÜ Chorin Deckenerneuerung Vollsperrung 04.10.2006-02.12.2006 ',
+         'from' => 1159826400,
          'data' => 'userdel	2::inwork 38845,51258 41075,53327 41587,53787 41654,53939 41847,54619 42231,54671 42595,54932 42742,54938 42749,55043 42452,55538 42981,57104 43462,57600 43581,57725
 ',
          'type' => 'gesperrt'

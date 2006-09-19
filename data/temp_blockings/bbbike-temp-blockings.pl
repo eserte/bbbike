@@ -4977,8 +4977,8 @@ userdel	q4::inwork 61069,13387 61181,12075
 EOF
      },
      { from  => 1152221102, # 2006-07-06 23:25
-       until => 1156975200, # 2006-08-31 00:00
-       text  => 'Pistoriusstr. (Pankow) in Richtung Berliner Allee, zwischen Roelckstr. und Mirbachplatz Baustelle, Straße vollständig gesperrt (bis 30.08.06)',
+       until => 1185833757, # 2007-07-31 00:15
+       text  => 'Pistoriusstr. (Pankow) in Richtung Berliner Allee, zwischen Roelckstr. und Mirbachplatz Baustelle, Straße vollständig gesperrt (bis Mitte 2007)',
        type  => 'handicap',
        source_id => 'INKO_77721_COPY_1',
        data  => <<EOF,
@@ -5431,8 +5431,8 @@ userdel	2::inwork 46389,15079 46564,15609 46717,15970 46852,16883
 EOF
      },
      { from  => 1155506400, # 2006-08-14 00:00
-       until => 1159221600, # 2006-09-26 00:00
-       text  => ' K 7239 Diedersdorf-Birkholz OD Diedersdorf, Kno. Birkholzer Str./ Chausseestr. Bau Kreisverkehrsplatz Vollsperrung 15.08.2006-25.09.2006 ',
+       until => 1159480800, # 2006-09-29 00:00
+       text  => 'K 7239 Diedersdorf-Birkholz OD Diedersdorf, Kno. Birkholzer Str./ Chausseestr. Bau Kreisverkehrsplatz Vollsperrung 15.08.2006-28.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 7547,-5739 7399,-7001
@@ -5836,9 +5836,9 @@ EOF
 userdel	q4::inwork 18061,19097 18073,19216 18109,19352
 EOF
      },
-     { from  => 1158444000, # 2006-09-17 00:00
+     { from  => 1159826400, # 2006-10-03 00:00
        until => 1165100400, # 2006-12-03 00:00
-       text  => 'B 002 Eberswalde-Angermünde zw. Abzw. Britz und BÜ Chorin Deckenerneuerung Vollsperrung 18.09.2006-02.12.2006 ',
+       text  => 'B 002 Eberswalde-Angermünde zw. Abzw. Britz und BÜ Chorin Deckenerneuerung Vollsperrung 04.10.2006-02.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 38845,51258 41075,53327 41587,53787 41654,53939 41847,54619 42231,54671 42595,54932 42742,54938 42749,55043 42452,55538 42981,57104 43462,57600 43581,57725
