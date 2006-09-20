@@ -52,7 +52,6 @@ sub geourl_tags {
 	$txt = $t->Subwidget("Text");
 	$b = $t->Subwidget("Link");
     }
-    $txt;
 
     my $geourl = <<EOF;
 HTML:
