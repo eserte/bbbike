@@ -886,6 +886,22 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'data' => 'userdel	2::inwork 38845,51258 41075,53327 41587,53787 41654,53939 41847,54619 42231,54671 42595,54932 42742,54938 42749,55043 42452,55538 42981,57104 43462,57600 43581,57725
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1167519600,
+         'text' => 'B 096 Hauptstr., Zossener Str. OD Baruth Kanal- und Straßenbau Vollsperrung 09.01.2006-30.12.2006 ',
+         'from' => 1136674800,
+         'data' => 'userdel	q4::inwork -4562,37787 -3506,38431
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1159135200,
+         'text' => 'L 238 Eberswalde-Joachimsthal Brücke der A 11 zw. Lichterfelde u. Altenhof Brückenabbruch Vollsperrung 23.09.2006-24.09.2006 ',
+         'from' => 1158876000,
+         'data' => 'userdel	2::inwork 30773,54731 31076,54246
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: TelbuchDBApprox.pm,v 1.25 2004/05/08 09:33:18 eserte Exp eserte $
+# $Id: TelbuchDBApprox.pm,v 1.26 2006/09/19 21:48:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -586,6 +586,7 @@ sub match_against_all_streets {
     ();
 }
 
+# grant all on telbuch.* to 'bbbike'@'localhost' identified by 'bbbike';
 sub dsn {
     ("dbi:mysql:telbuch", "bbbike", "bbbike");
 }
