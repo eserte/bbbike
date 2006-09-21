@@ -17,19 +17,21 @@ package BBBikeRouting::SMS;
 use FindBin;
 use lib $FindBin::RealBin;
 use BBBikeRouting;
-@ISA = 'BBBikeRouting';
+@ISA = 'BBBikeRouting::Cmdline';
 use strict;
 require 'cmdbbbike'; # for BBBikeRouting::Cmdline
 
 sub sms_input {
-    shift->BBBikeRouting::Cmdline::cmdline_input(@_);
+    shift->SUPER::cmdline_input(@_);
 }
 
 sub sms_output {
     my $self = shift;
 
+    my $r = $self->{R};
+
     my $first = 1;
-    foreach (@{ $self->RouteInfo }) {
+    foreach (@{ $r->RouteInfo }) {
 	if ($_->{Street}) {
 	    if (defined $_->{Way} && $_->{Way} ne '') {
 		print "*" . substr($_->{Way}, -1) . "*";
@@ -52,13 +54,13 @@ sub sms_output {
 
 return 1 if caller() or keys %Devel::Trace::; # XXX Tracer bug
 
-package main;
-
-my $routing = BBBikeRouting->new->init_context;
-bless $routing, 'BBBikeRouting::SMS'; # 5.005 compat
-
-$routing->sms_input();
-$routing->search();
-$routing->sms_output();
+{
+    my $o = {}; # BBBikeRouting::SMS->parse_options;
+    my $routing = BBBikeRouting->factory("bike")->init_context;
+    my $cmd = BBBikeRouting::SMS->new($routing);
+    $cmd->sms_input($o);
+    $cmd->search;
+    $cmd->sms_output;
+}
 
 __END__
