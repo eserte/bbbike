@@ -58,7 +58,7 @@ sub cmdline_input {
     my($self, $o) = @_;
 
     my $r = $self->{R};
-    my %o = %$o;
+    my %o = $o ? %$o : ();
 
     if (defined $o{vehicle}) { $r->Context->Vehicle($o{vehicle}) }
     if (defined $o{algorithm}) { $r->Context->Algorithm($o{algorithm}) }
