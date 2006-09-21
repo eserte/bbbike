@@ -30,21 +30,32 @@ sub sms_output {
 
     my $r = $self->{R};
 
-    my $first = 1;
-    foreach (@{ $r->RouteInfo }) {
-	if ($_->{Street}) {
-	    if (defined $_->{Way} && $_->{Way} ne '') {
-		print "*" . substr($_->{Way}, -1) . "*";
-	    } elsif ($first) {
-		$first = 0;
+    my $max_length = 160;
+    my $message;
+
+    # XXX Define more abbreviation levels and implement it
+    for my $abbrev_level (0) {
+	$message = "";
+	my $first = 1;
+	foreach (@{ $r->RouteInfo }) {
+	    if ($_->{Street}) {
+		if (defined $_->{Way} && $_->{Way} ne '') {
+		    $message .= "*" . substr($_->{Way}, -1) . "*";
+		} elsif ($first) {
+		    $first = 0;
+		} else {
+		    $message .= ",";
+		}
+		$message .= Strasse::short($_->{Street}, 3);
 	    } else {
-		print ",";
+		$message .= ":" . $_->{Whole} . ".\n";
 	    }
-	    print Strasse::short($_->{Street}, 3);
-	} else {
-	    print ":" . $_->{Whole} . ".\n";
 	}
+
+	last if (length($message) <= 160);
     }
+
+    print $message;
     # ja, nein?
 #XXX
 #      if (0 && ($multi_from || $multi_to)) {
