@@ -28,7 +28,7 @@ package Strassen::Index;
 
 use vars qw($DB_File);
 $DB_File = "DB_File::Lock" if !defined $DB_File;
-$DB_File = "DB_File" if do { require Sys::Hostname; Sys::Hostname::hostname() =~ /^biokovo/ }; # XXX hack for NFS
+#$DB_File = "DB_File" if do { require Sys::Hostname; Sys::Hostname::hostname() =~ /^biokovo/ }; # XXX hack for NFS
 
 require Strassen;
 if ($DB_File eq 'DB_File') {

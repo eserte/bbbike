@@ -5270,13 +5270,21 @@ EOF
      },
      { from  => 1154203576, # 2006-07-29 22:06
        until => 1183240800, # 2007-07-01 00:00
-       text  => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt. Ebenfalls Einbahnstraßen: Teile der Memhardstr. und Dircksenstr. (bis Juni 2007) ',
+       text  => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt. Ebenfalls Einbahnstraße: Teile der Dircksenstr. (bis Juni 2007) ',
        type  => 'gesperrt',
        source_id => 'IM_003157',
        data  => <<EOF,
 userdel	1::inwork 10920,13139 10781,13002
-userdel	1::inwork 10755,13152 10920,13139
 userdel	1::inwork 10781,13002 10706,13043
+EOF
+     },
+     { from  => 1154203576, # 2006-07-29 22:06
+       until => Time::Local::timelocal(reverse(2006-1900,9-1,23,23,59,59)),
+       text  => 'Memhardstr. ist Einbahnstraße Richtung Westen (bis 23. September 2006) ',
+       type  => 'gesperrt',
+       source_id => 'IM_003157',
+       data  => <<EOF,
+userdel	1::inwork 10755,13152 10920,13139
 EOF
      },
      { from  => 1152568800, # 2006-07-11 00:00
@@ -5721,8 +5729,8 @@ userdel	q4::inwork; 12975,13266 12909,13231 12808,13181 12727,13159 12582,13128 
 EOF
      },
      { from  => 1158618023, # 2006-09-19 00:20
-       until => 1175378399, # 2007-03-31 23:59
-       text  => 'Brückenstr. (Mitte) Richtung Heinrich-Heine-Str. zwischen Holzmarktstr. und Köpenicker Str. Baustelle Fahrtrichtung gesperrt: Holzmarktstr. - Michaelkirchstr. - Köpenicker Str. (bis 03.2007)',
+       until => 1158870956, # 1175378399 2007-03-31 23:59
+       text  => 'Brückenstr. (Mitte) Richtung Heinrich-Heine-Str. zwischen Holzmarktstr. und Köpenicker Str. Baustelle Fahrtrichtung gesperrt: Holzmarktstr. - Michaelkirchstr. - Köpenicker Str. (bis 03.2007) (Radfahrer haben eine separate Spur laut http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0608/nachricht2411.html)',
        type  => 'gesperrt',
        source_id => 'IM_003436',
        data  => <<EOF,
@@ -5858,6 +5866,24 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 30773,54731 31076,54246
+EOF
+     },
+     { from  => 1158865257, # 2006-09-21 21:00
+       until => 1159156800, # 2006-09-25 06:00
+       text  => 'Straße des 17. Juni und Yitzak-Rabin-Str. wegen Marathonvorbereitungen gesperrt (bis 25.09.06, 06.00 Uhr)',
+       type  => 'handicap',
+       source_id => 'IM_003565',
+       data  => <<EOF,
+userdel	q4::temp 8515,12242 8214,12205 8089,12186
+userdel	q4::temp 8119,12414 8063,12182 7816,12150 7383,12095 6828,12031
+EOF
+     },
+     { from  => 1157234400, # 2006-09-03 00:00
+       until => 1166828400, # 2006-12-23 00:00
+       text  => 'K 6947 Dorfstraße OT Grüningen Straßenbau Vollsperrung 04.09.2006-22.12.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -53945,-12911 -54243,-12956
 EOF
      },
     );

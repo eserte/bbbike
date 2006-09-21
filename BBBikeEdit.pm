@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.112 2006/09/12 21:48:51 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.112 2006/09/12 21:48:51 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2090,12 +2090,20 @@ sub click {
 		       foreach (@rec) {
 			   if (!/^\#/) {
 			       if ($count == $click_info->line) {
-				   system(qw(gnuclient -q), '+'.($rec_count+1),
-					  $file);
-				   if ($?/256 != 0) {
-				       main::status_message("Error while starting gnuclient", "die");
+				   require BBBikeUtil;
+				   if (BBBikeUtil::is_in_path("gnuclient")) {
+				       system(qw(gnuclient -q), '+'.($rec_count+1), $file);
+				       if ($?/256 != 0) {
+					   main::status_message("Error while starting gnuclient", "die");
+				       }
+				       return;
+				   } else {
+				       system(qw(emacsclient -n), '+'.($rec_count+1), $file);
+				       if ($?/256 != 0) {
+					   main::status_message("Error while starting emacsclient", "die");
+				       }
+				       return;
 				   }
-				   return;
 			       }
 			       $count++;
 			   }

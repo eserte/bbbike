@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.29 2006/08/27 21:16:14 eserte Exp $
+# $Id: bbbikerouting.t,v 1.30 2006/09/21 21:32:25 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -208,9 +208,9 @@ sub do_tests {
     }
     is($routing->RouteInfo->[-1]->{Street}, $goal_street, "Goal street is really goal street");
     my $new_goal = BBBikeRouting::Position->new;
-    $new_goal->Street("Alexanderplatz");
+    $new_goal->Street("Alexanderstr");
     $routing->continue($new_goal);
-    is($routing->Goal->Street, "Alexanderplatz", "Continued to new goal");
+    is($routing->Goal->Street, "Alexanderstr", "Continued to new goal");
     is(scalar @{$routing->Via}, 1, "With a new via");
     is($routing->Via->[0]->Street, "Sonntagstr./Böcklinstr.", "Correct via");
     $routing->search;

@@ -67,7 +67,8 @@ Aroser Allee, Fertigstellung bis 2007-10-01	? 6741,18613 6671,18132 6676,18030 6
 #: section Straßen in Planung vvv
 #: by: http://www.berliner-stadtplan.com/topic/bln/str/x_wgs/22.04/y_wgs/28.92/from/form.html
 #: by: http://www.morgenpost.de/content/2006/09/20/bezirke/855150.html
-Wilhelm-Kabur-Str.: Bauarbeiten beginnen 2007, die Naumannstr. wird später verkehrsberuhigt	? 7717,7759 7949,8385 8077,8768
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20060915.1800.47562.html
+Wilhelm-Kabur-Str.: Bauarbeiten beginnen 2007, die Naumannstr. wird später verkehrsberuhigt	? 7716,8048 7826,8049 7949,8385 8077,8768
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
 Blanckertzweg: Radwege in Planung (ebenso östlicher Teil der Hildburghauser Str.)	? 4793,1344 4532,1178
 Aalemannkanal: laut ADFC-Karte/neu Brücke geplant	? -2053,18375 -2156,18310
@@ -87,7 +88,6 @@ Mauerweg am Nordbahnhof: wo genau?	?::inwork 9221,13992 8907,14398
 #: next_check: 2009-01-01
 Grenzweg: Brücke über die Spree bzw. Straßenverbindung zwischen Rummelsburger Landstraße und Schnellerstr. soll 2009 fertig werden	?::inwork 17082,7189 16954,7096
 Wiederaufbau des Kaiserstegs (ca. 2007-08-01)	?::inwork 18384,5914 18462,6087
-Verlängerung der Paul-Löbe-Str. Richtung Kongreßhalle/Spree noch in Bau	?::inwork 7851,12590 7670,12576
 #: next_check: 2006-08-01
 Uferweg an der Kongreßhalle: laut Tsp im Frühjahr 2005 fertig (aber noch nicht fertig geworden)	?::inwork 7753,12578
 Schulzendorfer Str.: laut Tagesspiegel wird in Zukunft hier das Kopfsteinpflaster durch Asphalt ersetzt	? -596,23009 -862,22946 -1254,22853 -1484,22799
@@ -125,9 +125,6 @@ Daimlerstr.: Fußgängerampel einfügen (Luftbild!)	? 9034,1953
 Warschauer Str.: Radwegbenutzungspflicht wird aufgehoben	?; 13546,11352 13476,11174 13454,11119 13409,11004 13332,10832
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html
 R1: geänderte Ausschilderung steht noch aus	? 22967,4144 23435,4179 24181,4270 25396,4417 25347,4320 25373,4266 25318,4204 25238,3842 25251,3590 25261,3253 25275,3181 25346,2956 25474,2848 25819,2658 26006,2615 25948,2474
-#: by: http://www.berlin.de/ba-mitte/index_6454_hr.html
-#: by: Message-ID: <edf6al$a0o$03$1@news.t-online.com>
-Alexanderplatz oder Alexanderstr.?	? 11134,12793 11228,12951 11139,13008 10920,13139
 Bernauer Str.: Ampeln genauer erfassen	? 9400,14400 9621,14624 9805,14717 10176,14896
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20060515.1310.40101.html
 Treptower Str.: nach Ende der Bauarbeiten (2006-12-31) asphaltiert	?::inwork 14140,8977 14015,8798 13982,8764 13857,8601
@@ -299,6 +296,8 @@ Im Heidewinkel: Kopfsteinpflaster Q3, Einbahnstr.	? 1065,15229 981,15490
 #
 #  ÖFFENTLICHE FRAGEZEICHEN
 #
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0608/nachricht2401.html
+Verlängerung der Paul-Löbe-Str. Richtung Kongreßhalle/Spree/Hafenplatz mittlerweile fertiggestellt?	?::inwork 7851,12590 7670,12576
 KW - Wildau: existiert hier ein Radweg (wahrscheinlich ab 2006-09-30)?	? 26381,-9962 26450,-10134 26437,-10393
 Neuenhagen, Richtung Schöneiche: existiert hier ein Radweg (wahrscheinlich ab 2006-12-31)?	? 31146,12747 31059,12471 31037,12174
 Buch - Schwanebeck: existiert hier ein Radweg (wahrscheinlich ab 2006-09-30)?	? 18562,24975 19395,24634
@@ -329,6 +328,7 @@ Waldpark Steinberg: laut ADFC-Karte befahrbar, Qualität?	? 3553,21665 3406,21911
 Weg am Tegeler Fließ: Durchfahrt möglich? Qualität, wahrscheinlich Waldweg Q2?	?? 7687,24407 6966,24090 6259,23947
 #: XXX Das ist ein nicht behindertengerechter Abschnitt des BD. Möglicherweise auch nicht fahrradgerecht.
 Weg am Tegeler Fließ: Qualität?	? 3767,22466 4044,22690
+# laut http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20060921.1145.47773.html ist in der Georg-Knorr-Str. ein Radweg
 Landsberger Allee/Wiesenburger Weg: Sind die Zugänge vorhanden (möglicherweise zwischen den beiden Richtungsfahrbahnen), Einbahnstraßen?	? 19280,15014 19472,15184
 Dorfstr./Seenpromenade Groß Glienicke: Durchfahrt möglich? Kopfsteinpflaster?	? -9449,7005 -9741,6106 -9797,5374 -9686,5268 -9678,4913
 Templerzeile - Götzstr.: existiert eine Verbindung? Qualität?	? 9665,6029 9708,6493

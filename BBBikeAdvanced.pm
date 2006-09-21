@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.165 2006/09/18 22:15:46 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.166 2006/09/21 20:08:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2781,10 +2781,15 @@ sub switch_edit_standard_mode {
     status_message($err, "die") if $err;
 
     # Better when editing:
-    $str_restrict{qs}->{Q0} = 1;
-    $str_restrict{ql}->{Q0} = 1;
-    $str_restrict{hs}->{q0} = 1;
-    $str_restrict{hl}->{q0} = 1;
+    while(my($type, $cats) = each %str_restrict) {
+	while(my($cat, $v) = each %$cats) {
+	    $cats->{$cat} = 1 if !$cats->{$cat};
+	}
+    }
+#     $str_restrict{qs}->{Q0} = 1;
+#     $str_restrict{ql}->{Q0} = 1;
+#     $str_restrict{hs}->{q0} = 1;
+#     $str_restrict{hl}->{q0} = 1;
     # This is not switched back when changing to normal mode.
 }
 
