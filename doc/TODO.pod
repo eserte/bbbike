@@ -2397,6 +2397,17 @@ E<quot>(A -) BE<quot> zu E<quot>-> BE<quot> optimieren
 
 =over
 
+=item * (M4)
+
+Use pdftk or some other tool to compress the PDF output:
+
+    pdftk bbbike.pdf output c.pdf compress
+
+Saves a lot:
+
+    -rw-------  1 eserte  wheel  293319 21 Sep 00:56 bbbike.pdf
+    -rw-rw----  1 eserte  wheel   64763 21 Sep 01:11 c.pdf
+
 =item * (M3)
 
 Show more fields in route list (just like in web interface)
@@ -2452,11 +2463,23 @@ But: it seems that PDF does not know anything about Unicode
 characters; and the PDF::Create documentation states that the ZingBats
 and Symbol fonts are not useable.
 
-=item * (H4)
+=item * (H5)
 
 Acrobat Reader often shows an error message for
 BBBikeDraw/PDF.pm-created files. No problems with xpdf and other
-viewers. (Not reproducible anymore)
+viewers.
+
+Reproducible with:
+
+    perl t/bbbikedraw.t -only PDF -save -bbox 8985,9344,14677,11721 -drawtypes title,ampel,berlin,wasser,faehren,flaechen,ubahn,sbahn,str,ort,wind,rbahn
+
+Error vanishes if E<quot>rbahnE<quot> is left from the drawtypes.
+
+Maybe it has something to do with drawing stuff outside of the page
+area. Use devel/pdftotk.pl to see what's really drawn.
+
+-> Believed to be fixed! Maybe do some mass testing with a lot of
+auto-generated PDFs.
 
 =item * (H3)
 

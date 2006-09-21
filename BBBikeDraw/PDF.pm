@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.33 2006/09/03 18:00:14 eserte Exp $
+# $Id: PDF.pm,v 2.35 2006/09/21 00:51:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.33 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.35 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -214,6 +214,7 @@ sub draw_map {
 
 	    my($ss, $bbox) = transpose_all($s->[Strassen::COORDS], $transpose);
 	    next if (!bbox_in_region($bbox, $self->{PageBBox}));
+	    next if ($cat =~ $BBBikeDraw::bahn_bau_rx); # Ausnahmen: in Bau
 
 	    # move to first point
 	    $im->moveto(@{ $ss->[0] });
@@ -231,7 +232,7 @@ sub draw_map {
 		    $im->lineto(@$xy);
 		}
 		$im->fill;
-	    } elsif ($cat !~ $BBBikeDraw::bahn_bau_rx) { # Ausnahmen: in Bau
+	    } else {
 		next if $restrict && !$restrict->{$cat};
 		$im->set_line_width(($width{$cat} || 1) * 1);
 		$im->set_stroke_color(@{ $color{$cat} || [0,0,0] });
@@ -338,14 +339,54 @@ if(1||$self->{Width} < $self->{Height}){#XXX scheint sonst undefinierbare Proble
 	    } else {
 		$suffix = "";
 	    }
-	    eval {
-		die "Acroread has problems with these images...";
-		if ($points eq 'ubahnhof') {
-		    $image = $self->{PDF}->image("$images_dir/ubahn$suffix.jpg");
-		} elsif ($points eq 'sbahnhof') {
-		    $image = $self->{PDF}->image("$images_dir/sbahn$suffix.jpg");
+
+	    # This function forces the gif to have a LZW minimum code
+	    # size of 8, because PDF::Create does not support other
+	    # sizes. This is done by extending the palette to 256
+	    # colors. The image is cached in /tmp. There is a last
+	    # fallback to .jpg (which are ugly and have no
+	    # transparency).
+	    my $get_8bit_gif = sub {
+		my($file) = @_;
+		eval {
+		    require File::Basename;
+		    require GD;
+		    my $file_8bit = "/tmp/bbbikedraw_pdf_8bit_" . File::Basename::basename($file);
+		    if (-r $file_8bit) {
+			$file = $file_8bit;
+		    } else {
+			my $img = GD::Image->newFromGif($file)
+			    or die "Can't read $file as image: $!";
+			for my $i ($img->colorsTotal .. 256) {
+			    $img->colorAllocate(0,0,0);
+			}
+			open(OFH, ">$file_8bit")
+			    or die "Can't write to $file_8bit: $!";
+			binmode OFH;
+			print OFH $img->gif
+			    or die $!;
+			close OFH
+			    or die $!;
+			$file = $file_8bit;
+		    }
+		};
+		if ($@) {
+		    warn $@;
+		    $file =~ s{\.gif$}{.jpg};
 		}
-	    }; #warn $@ if $@; # XXX remove comment if die is meaningful here
+		$file;
+	    };
+	    
+	    eval {
+		if ($points eq 'ubahnhof') {
+		    my $file = $get_8bit_gif->("$images_dir/ubahn$suffix.gif");
+		    $image = $self->{PDF}->image($file);
+		} elsif ($points eq 'sbahnhof') {
+		    my $file = $get_8bit_gif->("$images_dir/sbahn$suffix.gif");
+		    $image = $self->{PDF}->image($file);
+		}
+	    };
+	    warn $@ if $@;
 
   	    $p->init;
   	    while(1) {

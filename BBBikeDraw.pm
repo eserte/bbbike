@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.48 2006/09/03 18:01:01 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.49 2006/09/21 00:00:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,9 +21,9 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION $bahn_bau_rx);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.48 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.49 $ =~ /(\d+)\.(\d+)/);
 
-$bahn_bau_rx = qr{^[SRU](0|Bau|G)$};
+$bahn_bau_rx = qr{^[SRU](0|Bau|G|P)$}; # auch ignorieren: Güterbahnen, Parkbahnen
 
 sub new {
     my($pkg, %args) = @_;

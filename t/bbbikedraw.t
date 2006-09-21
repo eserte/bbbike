@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.19 2006/09/14 22:11:35 eserte Exp $
+# $Id: bbbikedraw.t,v 1.20 2006/09/21 00:50:47 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -17,6 +17,7 @@ use lib ("$FindBin::RealBin/..",
 	);
 use Strassen::Core;
 use BBBikeDraw;
+use BBBikeUtil qw(is_in_path);
 use File::Temp qw(tempfile);
 use Getopt::Long;
 
@@ -63,10 +64,15 @@ my $geometry = $width."x".$height;
 my $verbose = 0;
 my $debug   = 0;
 my $do_slow = 0;
+my $do_save = 0;
+my @bbox;
+my $do_display_all;
 
 my @only_modules;
 
 if (!GetOptions(get_std_opts("display"),
+		"displayall!" => \$do_display_all,
+		"save!" => \$do_save,
 		"v|verbose!" => \$verbose,
 		"debug!" => \$debug,
 		"slow!" => \$do_slow,
@@ -76,11 +82,19 @@ if (!GetOptions(get_std_opts("display"),
 		'drawtypes=s' => sub {
 		    @drawtypes = split /,/, $_[1];
 		},
+		'bbox=s' => sub {
+		    @bbox = split /,/, $_[1];
+		},
 	       )) {
-    die "usage $0: [-display] [-v|-verbose] [-debug] [-slow] [-only module] [-drawtypes type,type,...] ...";
+    die "usage $0: [-display|-displayall] [-save] [-v|-verbose] [-debug] [-slow] [-only module]
+		   [-drawtypes type,type,...] [-bbox x0,y0,x1,y1] ...";
 }
 
 @modules = @only_modules if @only_modules;
+
+if ($do_display_all) {
+    $do_display = 1;
+}
 
 my $tests_per_module = 4;
 
@@ -157,6 +171,9 @@ sub draw_map {
     ;
     if ($do_slow) {
 	$draw->set_bbox_max(Strassen->new("strassen"));
+    } elsif (@bbox) {
+	die "Bbox needs 4 coordinates" if @bbox != 4;
+	$draw->set_bbox(@bbox);
     } else {
 	$draw->set_bbox(8134,8581,9450,9718);
     }
@@ -176,7 +193,22 @@ sub draw_map {
     }
 
     if ($do_display) {
-	do_display($filename, $imagetype);
+	if ($do_display_all && $imagetype eq 'pdf') {
+	    for my $pdf_viewer (get_all_viewers("pdf")) {
+		$pdf_prog = $pdf_viewer; # change for do_display
+		do_display($filename, $imagetype);
+	    }
+	} else {
+	    do_display($filename, $imagetype);
+	}
+    }
+    if ($do_save) {
+	require File::Copy;
+	require File::Basename;
+	my $dest_filename = "/tmp/bbbikedraw." . $imagetype; 
+	File::Copy::cp($filename, $dest_filename)
+		or die "Can't copy $filename to $dest_filename: $!";
+	warn "Saved to $dest_filename\n";
     }
 
  SKIP: {
@@ -200,5 +232,19 @@ EOF
     }
 }
 
+sub get_all_viewers {
+    my($imagetype) = @_;
+    if ($imagetype eq 'pdf') {
+	my @pdf_viewers;
+	# There's also kpdf, but kde programms does not run in a
+	# non-KDE environment anymore...
+	for my $pdf_viewer ("acroread", "xpdf", "gv") {
+	    push @pdf_viewers, $pdf_viewer if is_in_path($pdf_viewer);
+	}
+	@pdf_viewers;
+    } else {
+	die "get_all_viewers not supported for $imagetype";
+    }
+}
 
 __END__
