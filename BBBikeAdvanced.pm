@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.166 2006/09/21 20:08:30 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.166 2006/09/21 20:08:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1326,6 +1326,7 @@ sub coord_to_markers_dialog {
     Tk::grid($t->Button(-text => M"Reset",
 			-command => sub {
 			    @marker_points = ();
+			    $cur_index = 0;
 			    $update_marker_points->();
 			},
 		       ),

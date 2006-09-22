@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.18 2006/09/14 21:29:29 eserte Exp $
+# $Id: Makefile,v 1.18 2006/09/14 21:29:29 eserte Exp eserte $
 #
 
 BBBIKEDIR?=		..
@@ -37,7 +37,7 @@ tkbabybike-screenshot:
 	cd screenshots && $(MAKE) tkbabybike-screenshot
 
 update-from-andreasm:
-	rm -rf /tmp/xxx /tmp/data.patch /tmp/datachange.log /tmp/data
+#	rm -rf /tmp/xxx /tmp/data.patch /tmp/datachange.log /tmp/data
 	@echo "Please save mail containing patch as /tmp/xxx <RETURN>"
 	@read yn
 	cd /tmp/ && metamail -w xxx

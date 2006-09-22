@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.175 2006/09/18 20:51:48 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.177 2006/09/22 19:13:01 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -611,7 +611,7 @@ Pankeweg: asphaltiert 	Q0 12563,20753 12377,20636
 Pankeweg: asphaltiert	Q0 12377,20636 12207,20351 12122,20307 11995,19759
 #: note: laut http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0511/nachricht2116.html mit neuem Belag versehen:
 Schloßallee: Asphalt	Q0 11883,19739 11730,19684 11312,19537 11221,19505
-Schloßallee: Parkweg, OK	Q1 11221,19505 10883,19389 10661,19307 10525,19255
+Schloßallee: Parkweg, OK	Q1 11221,19505 10857,19379 10661,19307 10525,19255
 Pankeweg, Schloßpark Schönhausen: Parkweg, meist OK	Q1 10661,19307 10592,19249 10509,18981 10496,18704
 Pankeweg, Bürgerpark: Parkweg, OK	Q1 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9414,18278 9304,18165 9310,18108
 #: XXX geraten:
@@ -725,7 +725,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11582,14448 11835,14309 12091,14179
 Hufelandstr.: Kopfsteinpflaster	Q2 12091,14179 12199,14102 12380,13975 12478,13903 12567,13839 12573,13792
 Limonenstr.: Kopfsteinpflaster	Q2 3725,4737 3597,4941 3418,5088 3357,5178 3321,5212
 Willdenowstr.: Kopfsteinpflaster	Q2 3826,4800 3684,4998 3426,5292
-Manteuffelstr.: Kopfsteinpflaster	Q2 4092,4217 4521,4484
+Manteuffelstr.: Kopfsteinpflaster	Q2 4092,4217 4317,4378 4521,4484
 Haydnstr.: Kopfsteinpflaster	Q2 4521,4484 4681,4537 4785,4557 4870,4609 5004,4709 5076,4762
 Breite Str.: Kopfsteinpflaster	Q2 5048,4798 5087,4853 5169,4969 5201,5018 5245,5082 5327,5198 5397,5302
 Schwedter Str.: Kopfsteinpflaster	Q2 10830,14183 10947,14114
@@ -908,7 +908,7 @@ Parforceweg: Waldweg?	Q2 -643,7252 -728,7310 -1008,7427 -1142,7493 -1308,7558 -1
 (Pappelplatz): Asphalt	Q0 425,8766 297,8894 197,8973 30,9105
 (Weg am Müggelsee): Waldweg, teilweise sandig, teilweise OK	Q2 27427,5188 27470,5093 27852,5017 28286,4943 28361,5068
 (Waldweg): OK, 22 km/h möglich	Q1 29075,4753 29092,4761 29704,5009
-(Waldweg parallel zur Straßenbahn): Waldweg, Schotter, teilweise sandig	Q2 30400,5409 32065,5873 32192,5915
+(Waldweg parallel zur Straßenbahn): Waldweg, Schotter, teilweise sandig	Q2 30410,5450 32065,5873 32192,5915
 Wanderweg Erkner - Hessenwinkel: guter Parkweg	Q1 33533,2761 33293,2768 33086,2790 32972,2832
 (Zu den Müggelheimer Wiesen): asphaltiert	Q0 29899,2399 29549,2267 29414,2373
 Südendstr.: Kopfsteinpflaster	Q2 5687,5486 5840,5456 6002,5424
@@ -1649,7 +1649,7 @@ Badeweg: guter Belag	Q0 -4171,2659 -4292,2762
 Badeweg: guter Belag	Q0 -4292,2762 -4471,2917
 Bröndbystr.: Asphalt	Q0 3500,1587 3273,1302 3312,1241 3384,1297
 Petkusser Str.: mäßiges Kopfsteinpflaster	Q2 10484,-2637 10609,-3098
-Kurpromenade: mäßiger Asphalt	Q1 -8917,5986 -8864,6289 -8859,6540 -8868,6798 -8804,6818 -8732,6840 -8656,6864 -8567,6893
+Kurpromenade: mäßiger Asphalt	Q1 -8917,5986 -8864,6289 -8862,6375 -8860,6439 -8859,6540 -8868,6798 -8804,6818 -8732,6840 -8656,6864 -8567,6893
 #: note: ein weiteres Mal von anonymous bestätigt:
 Schriftsetzerweg: Asphalt	Q0 15868,1790 16194,1509
 Wodanstr.: Kopfsteinpflaster	Q2 8821,19331 8739,19475 8704,19534 8621,19683 8494,19899 8415,19910
@@ -1872,7 +1872,7 @@ Haderslebener Str.: mäßiges Kopfsteinpflaster	Q2 3899,6411 3893,6333 3878,6110
 Brentanostr.: schlechtes Kopfsteinpflaster	Q3 4096,6632 4058,6602 4054,6565 4050,6506 4045,6402 4039,6321 4028,6099 4006,5876
 #: by: ^^^
 #: by: Thomas Schulz:
-Am Schonungsberg: Asphalt	Q0 30500,3760 30718,4341
+Am Schonungsberg: Asphalt	Q0 30518,3753 30775,4318
 #: by: Gunnar Heuschkel:
 Körnerstr.: schlechtes Kopfsteinpflaster	Q3 10653,20200 10547,20644 10521,20750
 #: by: Michael Bartnik:
@@ -1953,7 +1953,7 @@ Strelitzer Str.: Kopfsteinpflaster	Q2 9864,14181 9801,14288 9685,14495 9621,1462
 Nimrodstr.: schlechtes Kopfsteinpflaster	Q3 4612,22070 4393,21934 4139,21782 3718,21489
 #: by: Christel Klapötke: vvv
 Neuchateller Str.: schlechter Sandweg	Q3 3898,4477 3998,4539
-Neuchateller Str.: Kopfsteinpflaster	Q2 3998,4539 4517,4853
+Neuchateller Str.: Kopfsteinpflaster	Q2 3998,4539 4184,4651 4517,4853
 Schieferweg: Betonstr.	Q0 10817,2370 10672,2062 10631,1975 10585,1879
 #: by: ^^^
 #: by: Paul Vomend: vvv
@@ -3335,7 +3335,7 @@ Wentowsteig: Asphalt/Beton	Q0 6924,20695 6945,20805 6962,20895 6982,21013
 #: by: Kai (1on1me):
 Erholungsweg: Asphalt	Q0 2763,21000 2861,21089 2961,21119 3042,21141 3117,21154 3206,21179 3304,21205 3450,21244
 #: by: Hartmut (eastgate):
-Buriger Weg: Beton	Q1 30088,4292 30216,4724
+Buriger Weg: Beton	Q1 30132,4281 30192,4487 30254,4692
 #: by: Peter Held:
 #: note: ADFC-Karte meint "mäßig geeignet"
 (Spreeuferweg): Parkweg	Q2 4543,12516 4501,12544 4331,12538
@@ -5238,6 +5238,20 @@ Waldallee: Asphalt	Q1 -8917,5986 -8773,5998 -8646,6043 -8559,6107
 Waldallee: Asphalt	Q0 -8559,6107 -8465,6204 -8290,6307 -8213,6349
 (Verlängerte Waldallee)	Q0 -8917,5986 -8929,5984 -9031,5984 -9054,5984
 (Waldweg an der Schilfdachkirche): Waldweg	Q2 -9075,5893 -8929,5876 -8825,5875 -8675,5907 -8582,5970 -8495,6059 -8385,6148 -8251,6214
+Birkenallee: mäßiger Asphalt	Q2 -8859,6540 -8782,6554 -8757,6560 -8703,6571 -8656,6585 -8623,6595 -8553,6626
+Ahornallee: mäßiger Asphalt	Q2 -8656,6864 -8553,6626 -8534,6617 -8470,6515 -8459,6495 -8392,6373
+Bardelebenweg: mäßiger Asphalt	Q2 -8732,6840 -8656,6585
+Bardelebenweg: mäßiger Asphalt	Q2 -8623,6595 -8578,6462 -8571,6443 -8523,6323
+Seekorso: guter Asphalt	Q0 -8860,6439 -8829,6435 -8828,6418 -8776,6425 -8682,6435 -8578,6462 -8470,6515 -8376,6579
+Seekorso: guter Asphalt	Q0 -8364,6562 -8459,6495 -8571,6443 -8678,6414 -8775,6403 -8825,6400 -8826,6376 -8862,6375
+Seekorso: guter Asphalt	Q0 -8828,6418 -8825,6400
+Seebadstr.: mäßiger Asphalt	Q2 -8864,6289 -8773,6284 -8670,6290 -8651,6293 -8570,6310 -8523,6323 -8392,6373 -8337,6398 -8290,6307
+Jägerallee: mäßiger Asphalt	Q2 -8703,6571 -8682,6435 -8678,6414 -8651,6293
+Jägerallee: mäßiger Asphalt	Q2 -8670,6290 -8637,6190 -8559,6107
+Otto-von-Wollankstr.: mäßiger Asphalt	Q2 -8804,6818 -8757,6560
+Otto-von-Wollankstr.: mäßiger Asphalt	Q2 -8773,5998 -8790,6103 -8773,6284 -8775,6403 -8776,6425 -8782,6554
+Elsa-Brändström-Weg: mäßiger Asphalt	Q2 -8790,6103 -8693,6131 -8637,6190
+Staudenweg: mäßiger Asphalt	Q2 -8570,6310 -8559,6275
 #: by: ^^^
 #: by: Hannes Oud [AM]
 Dänenstr.: Kopfsteinpflaster	Q1 10343,16015 10405,16017 10593,16037 10750,16040 10987,16008
@@ -5254,4 +5268,16 @@ Rotenfelser Weg: Asphalt	Q0 6917,4070 6904,4018 6996,3945
 Fuchsienweg: Beton	Q1 16090,3079 16376,2862 16573,2715
 Heideläuferweg: Asphalt	Q1 13020,2092 13043,1984 13070,1642 13073,1559 13089,1351 13092,1265 13093,1171 13109,1071
 Dröpkeweg: Asphalt	Q0 13070,1642 13487,1651
+#: by: ^^^
+#: by: Stephan Lohse [AM]
+Siegfriedstr. (Niederschönhausen): Asphalt	Q2 10614,19907 10742,19632 10806,19490 10857,19379
+#: by: Isabel [AM]
+Lipaer Str.: Kopfsteinpflaster (auf Fußweg ausweichen)	Q3 4184,4651 4214,4595 4265,4484 4317,4378 4346,4317 4385,4032
+#: by: juergen schulze [AM]
+Petershagener Weg: mäßiger Asphalt	Q2 30665,4312 30729,4510 30810,4765
+#: by: Martin [AM]
+Letteallee: Asphalt	Q0 8503,17518 8226,17479 8110,17470 8014,17475 7845,17460 7684,17435
+#: by: Oliver Brass [AM] vvv
+Kühleweinstr.: Asphalt	Q1 8085,17225 8043,17282 8014,17475 7998,17564 7973,17732 7948,17895
+Katzwanger Steig: Asphalt	Q1 -8204,6068 -8084,5932 -7987,5831 -7954,5798 -7851,5692
 #: by:^^^
