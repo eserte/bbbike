@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.50 2006/09/20 20:49:30 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.50 2006/09/20 20:49:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -21,7 +21,17 @@ my $pod2html = is_in_path("mpod2html");
 ## perldoc.com seems to be dead.
 #my $htmlroot = "--htmlroot http://www.perldoc.com/cpan";
 ## This unfortunately has only the core documentation
-my $htmlroot = "--htmlroot http://perldoc.perl.org/";
+#my $htmlroot = "--htmlroot http://perldoc.perl.org/";
+my $htmlroot = "--htmlroot http://search.cpan.org/perldoc?";
+
+if ($pod2html) {
+    my $patched_marek_pod_html = "/usr/local/src/CPAN/new.build/MarekPodHtml-0.49";
+    if (-d $patched_marek_pod_html) {
+	$pod2html = "$^X -M$patched_marek_pod_html $patched_marek_pod_html/blib/scripts/mpod2html";
+    } else {
+	warn "With the patched Marek::Pod::HTML one would get links to search.cpan.org/perldoc";
+    }
+}
 
 use constant POD_POD   => 0;
 use constant POD_HTML  => 1;
