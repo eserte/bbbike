@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.146 2006/09/22 19:13:00 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.146 2006/09/22 19:13:00 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -396,6 +396,8 @@ Stephanstr.	1s 6526,4475 6377,4490
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Ringbahnstr.	1s 8717,6965 8447,6964
 Björnsonstr.	1s 10209,16674 10197,16528
+Hauptstr. -> Hildegard-Marcusson-Str.: Hauptstr. Straßenbahntrasse	3 16138,10105 16004,10204 15952,10134
+Hildegard-Marcusson-Str. -> Hauptstr.: Hauptstr. Straßenbahntrasse	3 15952,10134 16004,10204 15629,10481
 Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3 11462,12384 11333,12437 11343,12300
 Alexanderstr. -> Schillingstr.: umbequemes Überqueren wegen Bordsteinen	3 11323,12484 11333,12437 11462,12384
 Karl-Liebknecht-Str. -> Alexanderpl. [Dircksenstr./zur Karl-Liebknecht-Str.]: Straßenbahntrasse in Bau	3 10920,13139 10781,13002 10844,12935
@@ -854,6 +856,8 @@ Schwingtor an der Luiseninsel	BNP:10:-125 7706,11612
 Schwingtor an der Luiseninsel	BNP:10:-126 7742,11639
 Schranke	BNP:5:12 25558,997
 Drängelgitter	BNP:5:-118 8810,14373
+Uferweg: wegen Bauarbeiten gesperrt	2:inwork 14864,10451 14906,10587
+Untere Kynaststr.: wegen Bauarbeiten gesperrt	2:inwork 14843,10621 14890,10824
 Köbisdreieck: Bauarbeiten	2:inwork 7160,11225 6853,11336
 Hedwigskirchgasse: Bauarbeiten	2:inwork 9743,12239 9756,12139
 Monbijoubrücke: die behelfsmäßige Brücke wurde abgerissen, der Neubar ist voraussichtlich im Herbst 2006 (2006-10-01) fertig	2:inwork 9680,12916 9707,12974

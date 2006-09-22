@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.177 2006/09/22 19:13:01 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.177 2006/09/22 19:13:01 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -960,6 +960,7 @@ Kaiserin-Augusta-Str.: Kopfsteinpflaster	Q2 8990,5950 9192,5921
 (Teltowkanal, Nordufer): Parkweg	Q2 8750,5173 9118,5328 9145,5323 9182,5332
 Selkestr.: Kopfsteinpflaster	Q2 12685,7497 12703,7370
 (Kynaststr. - Uferwanderweg): Parkweg	Q1 14828,10628 14843,10621 14906,10587
+(Kynaststr. - Paul-und-Paula-Ufer): Parkweg	Q1 14795,10473 14864,10451
 Paul-und-Paula-Ufer: Kleinteiliges Kopfsteinpflaster	Q1 15314,10121 15261,10167
 Paul-und-Paula-Ufer: Parkweg, teilweise auch Asphalt/Beton	Q1 15261,10167 15204,10201 15059,10289 14903,10403 14864,10451 14906,10587 14937,10598 14990,10581 15100,10637 15209,10581
 Uferweg: Parkweg	Q1 15314,10121 15260,10048 15295,10022 15347,9922
@@ -968,7 +969,7 @@ Uferweg: Parkweg	Q1 15545,9818 15583,9779 15626,9710
 (Kynaststr. - Hauptstr.): Parkweg	Q1 14843,10621 14890,10824
 Tunnelstr. - Bartholomäusufer: Parkweg	Q1 15502,9693 15583,9779
 Am Rummelsburger See: glatt gepflastert	Q0 15209,10581 15453,10415
-Am Rummelsburger See: Parkweg	Q2 15453,10415 15456,10356 15518,10234 15625,10187 15828,9875 15931,9846
+Am Rummelsburger See: Parkweg	Q2 15453,10415 15469,10329 15496,10277 15518,10234 15625,10187 15713,10035 15786,9957 15790,9920 15828,9875 15931,9846
 Am Rummelsburger See: Betonweg	Q0 15931,9846 16046,9746 16262,9925
 Tauchersteig: guter Asphalt	Q0 22074,2666 21770,2535
 Am Kanal: guter Asphalt	Q0 21750,2593 21131,2454
@@ -985,8 +986,8 @@ Vorfahrt Reichstagsgebäude: Kopfsteinpflaster, OK	Q1 8400,12417 8399,12601
 Hagenauer Str.: Kopfsteinpflaster	Q2 11154,14985 11187,14763
 Kolmarer Str.: Kopfsteinpflaster	Q2 11299,14112 11354,14187 11418,14290
 südliches Spreeufer: wechselnder Belag (Verbundsteinpflaster und fester glatter Sandweg)	Q1 7670,12576 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8554,12593
-Glasbläserallee: Verbundsteinpflaster	Q0 14759,10096 14850,10265 14893,10359
-Fischzug: Asphalt	Q0 14850,10265 14929,10221 15005,10183 15090,10140
+Glasbläserallee: Verbundsteinpflaster	Q0 14747,10108 14839,10271 14893,10359
+Fischzug: Asphalt	Q0 14839,10271 14929,10221 15005,10183 15090,10140
 Fischzug: Kopfsteinpflaster, teilweise auch Verbundsteinpflaster	Q2 15090,10140 15153,10112 15209,10087
 Am Speicher: Kopfsteinpflaster	Q2 15209,10087 15261,10167
 Palmkernzeile: Verbundsteinpflaster	Q0 15100,9831 15142,9931 15209,10087
@@ -1376,6 +1377,15 @@ Hahnebergweg: asphaltiert/betoniert	Q0 -6861,12478 -7294,12560
 Hahnebergweg: Schotter	Q2 -7294,12560 -7375,12577 -7606,12624
 (Heerstr. - Fort Hahneberg): Schotter	Q2 -7344,12795 -7375,12577
 Kurze Str.: asphaltiert/betoniert	Q0 11534,16614 11536,16477 11542,16384
+An der Bucht: Asphalt	Q0 15358,10562 15430,10508 15493,10460 15572,10406 15652,10348 15716,10303 15788,10252 15858,10202 15952,10134
+An den Knabenhäusern: Verbundsteinpflaster	Q1 15513,10298 15578,10250 15648,10191 15706,10142
+Lina-Morgenstern-Str.: Asphalt	Q0 15648,10191 15716,10303
+Alice-und-Hella-Hirsch-Ring: Asphalt	Q0 15818,10296 15788,10252 15706,10142 15749,10112 15773,10091 15858,10202 15888,10244
+Charlotte-Salomon-Hain: Kopfsteinpflaster	Q2 15749,10112 15716,10065
+Paula-Fürst-Str.: Asphalt	Q0 15773,10091 15874,10025
+Clara-Grunwald-Str.: Asphalt	Q0 15652,10348 15578,10250 15567,10235
+Hildegard-Marcusson-Straße: Asphalt	Q0 16004,10204 15952,10134 15874,10025 15831,9968
+(Hildegard-Marcusson-Straße - Uferweg): Parkweg	Q1 15831,9968 15811,9957 15786,9957
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Schützallee: mäßiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfläche	Q2 2230,3823 2151,3834 1952,3864 1918,3868 1815,3876
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 364,4829 319,4906 168,5092 103,5123
@@ -2711,7 +2721,7 @@ Otto-Nagel-Str.: guter Asphalt	Q0 20364,12216 20387,12445 20414,12663 20435,1286
 Blesener Zeile - Am Nordgraben: fester Sandweg	Q1 3426,20642 3475,20656
 Dammsmühler Str.: mäßiger fester Sandweg	Q2 9613,20968 9379,20903
 Dammsmühler Str.: asphaltiert, Frostschäden	Q1 10140,21107 9613,20968
-Emma-Ihrer-Str.: asphaltiert	Q0 15456,10356 15629,10481
+Emma-Ihrer-Str.: asphaltiert	Q0 15496,10277 15513,10298 15550,10361 15572,10406 15629,10481
 Maurerweg: guter Asphalt	Q0 12864,2191 12835,2470 12825,2573 12810,2751 12807,2958
 Schalkauer Str.: guter Asphalt	Q0 17343,14906 17377,14678 17389,14599 17398,14490
 Frobenstr. (Spandau): guter Asphalt	Q0 -3826,15542 -3867,15469 -3861,15333

@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.146 2006/09/22 19:13:00 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.147 2006/09/22 20:12:35 eserte Exp $
 #:
 ###################################################################
 #
@@ -457,6 +457,8 @@ Björnsonstr.	1s 10209,16674 10197,16528
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
+#: XXX es sieht aber so aus, als ob hier ein Übergang entstehen könnte, auch für Autos:
+Hauptstr. Straßenbahntrasse	3nocross 16138,10105 16004,10204 15629,10481
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11323,12484 11333,12437 11343,12300
 Karl-Liebknecht-Str./Dircksenstr: Straßenbahntrasse in Bau	3nocross 10740,12960 10781,13002 10920,13139
 Badstr.: Gitter auf Mittelstreifen	3nocross 8659,16327 8543,16364 8486,16425
@@ -748,6 +750,10 @@ Drängelgitter	BNP:5 8810,14373
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #
+#: last_checked: 2006-09-22
+Uferweg: wegen Bauarbeiten gesperrt	2:inwork 14864,10451 14906,10587
+#: last_checked: 2006-09-22
+Untere Kynaststr.: wegen Bauarbeiten gesperrt	2:inwork 14843,10621 14890,10824
 #: last_checked: 2005-12-23
 #: XXX: Ist das Passieren nach den Bauarbeiten weiterhin möglich?
 Köbisdreieck: Bauarbeiten	2:inwork 7160,11225 6853,11336
