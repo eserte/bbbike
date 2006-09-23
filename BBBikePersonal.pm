@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePersonal.pm,v 1.5 2005/04/05 22:29:16 eserte Exp $
+# $Id: BBBikePersonal.pm,v 1.7 2006/09/23 20:32:28 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2006 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -29,6 +29,8 @@ use Msg qw(frommain);
     }
 }
 
+use vars qw($show_places);
+
 sub filename {
     "$main::bbbike_configdir/personal.bbd";
 }
@@ -40,6 +42,7 @@ sub str_object {
     my $personal = filename();
     $p = eval { Strassen->new($personal) };
     if (!$p) {
+	# Expected for first time. And we never know if it's the first time.
 	main::status_message(Mfmt("Die Datei <%s> konnte nicht geladen werden: $@", $personal), "info");
 	$p = Strassen->new();
     }
@@ -47,6 +50,8 @@ sub str_object {
 }
 
 sub dialog {
+    my(%args) = @_;
+    my $see = delete $args{-see};
     str_object(1);
     my $linetype = "p";
     my $type = "personal";
@@ -65,6 +70,7 @@ sub dialog {
 		     -rebuild => 1,
 		     -container => $container,
 		     -popup => $container ? 0 : 1,
+		     ($see ? (-see => $see) : ()),
 		    );
     if ($container) {
 	$main::toplevel{"chooseort-$type-$linetype"} = $container; # XXX hacky...
@@ -73,8 +79,6 @@ sub dialog {
     # XXX why $p gets deleted in choose_ort???
     $p = str_object();
 }
-
-my($show_places);
 
 sub buttonframe {
     my($toplevel, $container) = @_;
@@ -159,7 +163,7 @@ sub set_map_mode_customchoose {
 	unless $main::map_mode eq main::MM_CUSTOMCHOOSE();
     $main::map_mode = main::MM_CUSTOMCHOOSE();
     $main::c->configure(-cursor => "hand2");
-    main::status_message("Punkt auswählen", "info");
+    main::status_message("Punkt auswählen", "infoauto");
 }
 
 sub choose {
@@ -168,7 +172,8 @@ sub choose {
     my($tx,$ty) = main::anti_transpose($x,$y);
     main::set_map_mode($oldmode) if defined $oldmode;
     undef $oldmode;
-    main::status_message("", "info");
+    #main::status_message("", "info");
+    main::info_auto_popdown();
     ($tx,$ty);
 }
 
@@ -224,7 +229,7 @@ sub add_file {
     my($name, $cat, $coords) = @_;
     $p->push([$name, [$coords], $cat]);
     $p->write(filename());
-    dialog();
+    dialog(-see => $name);
 }
 
 sub change_file_point {
@@ -259,7 +264,7 @@ sub change_file {
 		$p->set_current([$newname,$newpoint,$r->[Strassen::CAT]]);
 	    }
 	    $p->write(filename());
-	    dialog();
+	    dialog(-see => $newname);
 	    return 1;
 	}
     }

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.271 2006/09/18 23:03:46 eserte Exp $
+# $Id: bbbike,v 3.273 2006/09/23 20:32:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.271 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.273 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -10036,6 +10036,7 @@ sub choose_ort {
     my $columnwidths = $args{-columnwidths};
     my $container = $args{-container};
     my $do_popup = exists $args{-popup} ? $args{-popup} : 1;
+    my $see = $args{-see};
 
     unless ($nodraw) {
 	if ($linetype =~ /^s/) {
@@ -10332,6 +10333,31 @@ sub choose_ort {
 				sort { $a->[0] cmp $b->[0] }
 				map { [ do { /^\(?(.*)/; $tf_sub->($1) }, $_] }
 				keys %orte);
+		}
+	    }
+
+	    if (defined $see) {
+		my $found_index;
+	    TRY: {
+		    # first: exact match
+		    for my $inx (0 .. $lb->index("end")-1) {
+			if ($lb->get($inx) eq $see) {
+			    $found_index = $inx;
+			    last TRY;
+			}
+		    }
+		    # then: substring match
+		    for my $inx (0 .. $lb->index("end")-1) {
+			if (index($lb->get($inx), $see) >= 0) {
+			    $found_index = $inx;
+			    last TRY;
+			}
+		    }
+		    warn "Cannot find <$see> in listbox content";
+		}
+		if (defined $found_index) {
+		    $lb->see($found_index);
+		    $lb->selectionSet($found_index);
 		}
 	    }
 
@@ -16825,12 +16851,13 @@ sub menuarrow_unmanaged {
 #  info: never pops up a dialog: either writes to stderr or to the
 #        status bar if available
 #  infodlg: info with a dialog
+#  infoauto: info with auto-popped down toplevel
 #  warn: warn with a dialog
 #  err:  error with a dialog
 #  die:  error with a dialog and die afterwards
 sub status_message {
     my($msg, $err) = @_;
-    if (!defined $err || ($err =~ /^info/ && $err ne "infodlg") || !$use_dialog) {
+    if (!defined $err || ($err =~ /^info/ && $err ne "infodlg" && $err ne "infoauto") || !$use_dialog) {
 	if (!defined $progress) {
 	    if (defined $err && $err eq 'info-stack-trace') {
 		require Carp;
@@ -16851,6 +16878,23 @@ sub status_message {
 		remove_status_button();
 	    }
 	}
+    } elsif ($err eq 'infoauto') {
+	my $l;
+	if ($status_message_toplevel && Tk::Exists($status_message_toplevel)) {
+	    $status_message_toplevel->deiconify;
+	    $status_message_toplevel->raise;
+	    $l = $status_message_toplevel->Subwidget("Text");
+	} else {
+	    $status_message_toplevel = $top->Toplevel;
+	    set_as_toolwindow($status_message_toplevel);
+	    $status_message_toplevel->geometry('+30+30'); # XXX better geometry
+	}
+	if (!$l || !Tk::Exists($l)) {
+	    $l = $status_message_toplevel->Component("Label" => "Text",
+						     -background => Tk::NORMAL_BG,
+						    )->pack(qw(-fill both -expand 1));
+	}
+	$l->configure(-text => $msg);
     } else {
 	# warn or error
 	if (!$top) {
@@ -16878,6 +16922,12 @@ sub status_message {
     if (defined $err && $err eq 'die') { # also die
 	require Carp;
 	Carp::confess($msg);
+    }
+}
+
+sub info_auto_popdown {
+    if ($status_message_toplevel && Tk::Exists($status_message_toplevel)) {
+	$status_message_toplevel->withdraw;
     }
 }
 

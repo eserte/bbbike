@@ -5388,7 +5388,7 @@ userdel	2::inwork -94722,72190 -94274,71791 -93406,71227
 EOF
      },
      { from  => 1155664127, # 2006-08-15 19:48
-       until => 1159653599, # 2006-09-30 23:59
+       until => 1159035253, # 2006-09-30 23:59 1159653599
        text  => 'Grünbergallee (Treptow) in beiden Richtungen zwischen Am Seegraben und Rosenweg Baustelle, Verkehr wird wechselseitig vorbeigeführt (bis Ende 09.2006)',
        type  => 'handicap',
        source_id => 'IM_003258',

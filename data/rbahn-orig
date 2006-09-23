@@ -1,5 +1,5 @@
 #: title: Regional- und Fernbahnstrecken
-#: version: $Id: rbahn-orig,v 5.29 2006/09/22 19:13:01 eserte Exp $
+#: version: $Id: rbahn-orig,v 5.29 2006/09/22 19:13:01 eserte Exp eserte $
 #:
 # "stillgelegt" meint hier: kein Personenverkehr auf diesen Gleisen
 # Werder - Brandenburg
@@ -487,6 +487,7 @@ zum Güterbahnhof Berlin-Hohenschönhausen	RG 18518,16904 18537,16481 18764,15533 
 Grunewald - Halensee	RG 628,8887 962,9136 1820,9777 2116,10030 2303,10123 2423,10106 2628,10014
 Grunewald - Westend	RG 2116,10030 2154,10102 2134,10674 2142,10790
 # Fernbahntunnel
+#: XXX wird zu RA::Tu werden
 RE3,RE4,RE5	RA 8327,9526 8328,9925 8286,10243 8276,10403 8324,10726 8403,11005 8502,11345 8522,11503 8308,12451 8278,12626 8144,12958 7996,13271 7854,13554
 # Hauptbahnhof - Jungfernheide/Gesundbrunnen
 RE3,RE4,RE5	RA 7854,13554 7637,13898 7408,14229 7286,14372
@@ -529,3 +530,4 @@ Parkeisenbahn Wuhlheide	RP 20319,6937 20383,7059 20420,7132 20561,7229 20628,720
 Parkeisenbahn Wuhlheide	RP 20051,7102 19972,7035 19911,6858 19942,6812 20054,6593
 # Freilichtbühne - Betriebswerk
 Parkeisenbahn Wuhlheide	RP 19887,6106 19847,6081 19783,6081
+Gleisanschluss Messegelände	RG 795,11039 1025,10898 1206,10665 1369,10556

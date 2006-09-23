@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.31 2006/09/12 23:15:05 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.32 2006/09/23 20:10:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.31 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -376,6 +376,15 @@ sub BBBikeHeavy::layer_editor {
 		    };
 	    }
 	}
+	push @elem,
+	    {Image => undef,
+	     Text => "Personal",
+	     Visible => \$BBBikePersonal::show_places,
+	     Data => {Tags => ["personal-label", "personal-fg"],
+		      Type => 'p',
+		      Subtype => 'personal',
+		     }
+	    };
 
 	my $score = 0;
 	my %score;
@@ -436,6 +445,9 @@ require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . 
 		 } else {
 		     reset_button_command();
 		 }
+	     } elsif ($data->{Subtype} eq 'personal') {
+		 $BBBikePersonal::show_places = $vis;
+		 BBBikePersonal::toggle_show();
 	     } else {
 		 eval "\$" . ($data->{Type} eq 's' ? 'str' : 'p') .
 		     '_draw{"' . $data->{Subtype} . '"} = ' .

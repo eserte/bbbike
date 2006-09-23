@@ -607,15 +607,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_003258',
-         'until' => 1159653599,
-         'text' => 'Grünbergallee (Treptow) in beiden Richtungen zwischen Am Seegraben und Rosenweg Baustelle, Verkehr wird wechselseitig vorbeigeführt (bis Ende 09.2006)',
-         'from' => 1155664127,
-         'data' => 'userdel	q4::inwork 20161,-651 20315,-653 20386,-555
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
