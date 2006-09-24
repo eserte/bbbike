@@ -301,7 +301,7 @@ SYMBOL
   FILLED true
   GAP 20
   ANTIALIAS true
-  CHARACTER "&#8592;" # left arrow, unicode codepoint
+  CHARACTER "[% LEFTARROW %]"
 END
 
 ## Experiment for the wrong drawing...
@@ -321,7 +321,7 @@ SYMBOL
   FILLED true
   GAP 20
   ANTIALIAS true
-  CHARACTER "&#8594;" # right arrow, unicode codepoint
+  CHARACTER "[% RIGHTARROW %]"
 END
 
 SYMBOL
@@ -331,7 +331,7 @@ SYMBOL
   FILLED true
   GAP 10
   ANTIALIAS true
-  CHARACTER "&#8592;" # left arrow, unicode codepoint
+  CHARACTER "[% LEFTARROW %]"
 END
 
 ## XXX geht nicht in mapserver-3.6.6!
@@ -342,7 +342,7 @@ SYMBOL
   FILLED true
   GAP 10
   ANTIALIAS true
-  CHARACTER "&#8594;" # right arrow, unicode codepoint
+  CHARACTER "[% RIGHTARROW %]"
 END
 
 #

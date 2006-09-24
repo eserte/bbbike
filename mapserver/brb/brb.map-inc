@@ -5,6 +5,13 @@
    UNLESS REFMAPOUTLINE.defined;REFMAPOUTLINE = "0 0 0";		END;
    UNLESS REFMAPCOLOR.defined;	REFMAPCOLOR = "-1 -1 -1";		END;
 
+   # Use "<" if the font does not support left arrow. Be conservative.
+   #UNLESS LEFTARROW.defined;	LEFTARROW = "&#8592;";			END;
+   UNLESS LEFTARROW.defined;	LEFTARROW = "<";			END;
+   # Use ">" if the font does not support right arrow. Be conservative.
+   #UNLESS RIGHTARROW.defined;	RIGHTARROW = "&#8594;";			END;
+   UNLESS RIGHTARROW.defined;	RIGHTARROW = ">";			END;
+
    UNLESS ON_FLAECHEN.defined;	ON_FLAECHEN = "ON";			END;
    UNLESS ON_GEWAESSER.defined;	ON_GEWAESSER = "ON";			END;
    UNLESS ON_FAEHREN.defined;	ON_FAEHREN = "ON";			END;

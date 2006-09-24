@@ -556,15 +556,7 @@ userdel	1::inwork 10781,13002 10706,13043
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_003157',
-         'until' => 1159048799,
-         'text' => 'Memhardstr. ist Einbahnstraße Richtung Westen (bis 23. September 2006) ',
-         'from' => 1154203576,
-         'data' => 'userdel	1::inwork 10755,13152 10920,13139
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {

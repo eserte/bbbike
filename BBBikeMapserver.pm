@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.30 2006/05/18 22:37:29 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.31 2006/09/24 21:07:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2005 Slaven Rezic. All rights reserved.
@@ -272,8 +272,10 @@ sub create_mapfile {
 	    );
 	$orig_map_path;
     };
-    my $orig_map_path = $path_for_scope->($scope);
-    my $map_path = $orig_map_path;
+#    my $orig_map_path = $path_for_scope->($scope);
+#    my $map_path = $orig_map_path;
+
+    my $preferred_map_path;
 
     if ($do_route) {
 	require Strassen::Util;
@@ -347,7 +349,12 @@ sub create_mapfile {
 	}
 
 	foreach my $scope (@scopes) {
-	    $map_path = $path_for_scope->($scope, "$prefix-");
+	    my $orig_map_path = $path_for_scope->($scope);
+	    my $map_path = $path_for_scope->($scope, "$prefix-");
+
+	    if (!$preferred_map_path) {
+		$preferred_map_path = $map_path;
+	    }
 
 	    my $tmpfile2;
 	    if ($externshape && -s $tmpfile1) {
@@ -385,7 +392,7 @@ sub create_mapfile {
 	unlink $tmpfile1;
     }
 
-    $map_path;
+    $preferred_map_path;
 }
 
 sub get_extents {

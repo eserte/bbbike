@@ -1,6 +1,6 @@
 #: title.de: S-Bahnhöfe
 #: title.en: Railway stations (S-Bahn)
-#: version: $Id: sbahnhof-orig,v 4.27 2006/09/22 19:13:01 eserte Exp $
+#: version: $Id: sbahnhof-orig,v 4.27 2006/09/22 19:13:01 eserte Exp eserte $
 #:
 Yorckstr.	SA 8280,9528
 Yorckstr. (Großgörschenstr.)	SA 7985,9576
@@ -84,6 +84,7 @@ Zehlendorf	SB 715,2618
 Mexikoplatz	SB -1079,3232
 #: attrs bg
 Schlachtensee	SB -2287,3573
+#: note Rampe und Aufzug nur zur Wannseebahn und nur von der Borussenstr. (Richtung Strandbad Wannsee)
 #: attrs bg
 Nikolassee (Wannseebahn)	SB -3684,2606
 Nikolassee	SB -3736,2625

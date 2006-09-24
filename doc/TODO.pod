@@ -12,11 +12,16 @@ Legend:
 
   * (star): showstopper for next release
 
-=head1 Perl/Tk version of bbbike
+  Classification:
+
+    bug
+    feature
+
+=head1 Perl/Tk version of BBBike
 
 =over
 
-=item * (M4)
+=item * (M4) (feature)
 
 Mehrere Eingabemodi anbieten, z.B. E<quot>BBBike ClassicE<quot>,
 Google, GoYellow.
@@ -55,7 +60,7 @@ Google, GoYellow.
 
 Aufräumen des Options-Editors.
 
-=item * (M3)
+=item * (M3) (feature)
 
 Routenliste: gewünschte Attribute für die Kommentare sollten über den
 Options-Editor einstellbar sein.
@@ -66,20 +71,6 @@ If FontDialog is available, then use this instead of the *font entries
 in the option editor. Make FontDialog also usable for fixed font
 selection. Otherwise, if FontDialog is not available, the chosen fonts
 should be made immediately visible using set_fonts().
-
-=item * (M1)
-
-BBBikeScribble: tell user where the scribble was saved (at least in
-status bar). Connect lines in bbd if possible. New feature: mail
-scribble to maintainer (newstreet). Dabei aber beachten, dass
-tkbabybike noch immer damit umgehen sollte...
-
-=item * (H5)
-
-Besserer Plugin-Dialog: offiziell machen, wenn er sich bewährt.
-Plugin-Argumente sollten angezeigt und editiert werden können.
-Vielleicht auch mehr Informationen (Icon, längere Beschreibung etc.)
-hereinnehmen.
 
 =item * (H5)
 
@@ -293,7 +284,7 @@ solved for sure there should be no standard-user-visible -lazy option.
 =item * (H2)
 
 Dynamisches Zeichnen (weniger/mehr) von Kartenelementen anhand der
-VergrE<ouml>E<szlig>erung (wird teilweise schon gemacht, z.B. bei
+Vergrößerung (wird teilweise schon gemacht, z.B. bei
 get_symbol oder Orte/Kategorien=Auto, was fehlt noch?).
 
 Beim Zeichnen von Orten muss das Problem des Abstand zwischen Punkt
@@ -306,17 +297,17 @@ Modus E<quot>überlappendE<quot>.
 
 =item * (M3)
 
-In Routenbeschreibungen Zeilen wie "StraE<szlig>e A", "StraE<szlig>e
-A", "StraE<szlig>e A" zu einer Zeile zusammenfassen. Das kann
+In Routenbeschreibungen Zeilen wie "Straße A", "Straße
+A", "Straße A" zu einer Zeile zusammenfassen. Das kann
 vorkommen, wenn bei der Route ein Zwischenpunkt verwendet wird.
 
 =item * (M2)
 
-Bessere Routenbeschreibung fE<uuml>r LandstraE<szlig>en (wie? was ist
+Bessere Routenbeschreibung für Landstraßen (wie? was ist
 an der derzeitigen nicht gut genug?). In der Datenbank "X - Y" nach
-"(A) - X - V - Y - (B)" E<auml>ndern, wobei X und Y Start- und Zielort
+"(A) - X - V - Y - (B)" ändern, wobei X und Y Start- und Zielort
 der Strecke ist, (A) und (B) die globale Richtung
-(grE<ouml>E<szlig>ere StE<auml>dte vor und nachher) und V ein Via-Ort
+(größere Städte vor und nachher) und V ein Via-Ort
 ist. Die geklammerten Orte und V sind optional. Auch alle Straßen, die
 bislang nur mit der Straßennummer bezeichnet sind, auch mit
 Start/Zielort in der Form E<quot>X9: Start - ZielE<quot> oder
@@ -324,7 +315,7 @@ E<quot>Start - Ziel (X9)E<quot> bezeichnen.
 
 =item * (H2)
 
-ME<ouml>glichst Orte (optional) in die Routenbeschreibung aufnehmen.
+Möglichst Orte (optional) in die Routenbeschreibung aufnehmen.
 Vielleicht mit nearest_... arbeiten. Eine erste Implementation mit
 $do_route_strnames_orte, aber was macht diese? Nähe zur Ortschaft
 sollte evtl. einstellbar sein. Problem: ich habe keine Ortsgrenzen zur
@@ -335,7 +326,7 @@ gesetzt habe, und interpolierten Punkten unterscheiden)
 =item * (H2)
 
 Im Umland ist es vielleicht sinnvoller, eine Routenbeschreibung anhand
-von Punkten (Ortschaften) anstatt Strecken (StraE<szlig>en) zu machen.
+von Punkten (Ortschaften) anstatt Strecken (Straßen) zu machen.
 Optional eins oder beides zusammen.
 
 =item * (H5)
@@ -362,7 +353,7 @@ und dieses bevorzugt verwenden.
 
 (Rsync und CVS hat Zeit...)
 
-Update E<uuml>ber das Internet: rsync-UnterstE<uuml>tzung und die
+Update über das Internet: rsync-Unterstützung und die
 Alternative CVS testen. rsync ist vielleicht nicht so gut, weil ein
 rsyncd irgendwo benötigt wird und rsyncd nicht das Sicherste der Welt
 ist. CVS wäre besser, noch besser, wenn es eine abgespeckte
@@ -378,7 +369,7 @@ Programm kann diese auslesen (tbb?).
 =item * (M1)
 
 Telefonbuch-Datenbank (Name): Die Suche ist suboptimal. Bei der
-Suche von hE<auml>ufigen Nachnamen (ME<uuml>ller, Schulze)
+Suche von häufigen Nachnamen (Müller, Schulze)
 wird das Ergebnis begrenzt (200 Namen) und kann mit "Weiter"
 fortgesetzt werden.
 
@@ -410,13 +401,13 @@ unklar.
 
 =item * (M3)
 
-Mehr einfache Optionen (E<quot>ShortcutsE<quot>) fE<uuml>r die Suche:
-kE<uuml>rzeste Strecke, schnellste Strecke (in AbhE<auml>ngigkeit von
-Wind, Steigung/GefE<auml>lle, StraE<szlig>enoberflE<auml>che etc.),
+Mehr einfache Optionen (E<quot>ShortcutsE<quot>) für die Suche:
+kürzeste Strecke, schnellste Strecke (in Abhängigkeit von
+Wind, Steigung/Gefälle, Straßenoberfläche etc.),
 
 =item * (M1)
 
-Einheitliche Schalter fE<uuml>r das interne Caching von Daten (z.B. ob
+Einheitliche Schalter für das interne Caching von Daten (z.B. ob
 beim Anklicken von "Ort" die Datei immer neu eingelesen werden soll).
 
 =item * (H1)
@@ -427,8 +418,8 @@ wird z.Zt. nicht gedreht (evtl. auf @coords verzichten und nur
 
 =item * (M4)
 
-VernE<uuml>nftige Options-Eingabe in der GUI. Zwischen
-Startup-Optionen (Zeichnen der StraE<szlig>en/Punkte) und aktuellen
+Vernünftige Options-Eingabe in der GUI. Zwischen
+Startup-Optionen (Zeichnen der Straßen/Punkte) und aktuellen
 Optionen unterscheiden (teilweise wird das schon gemacht, siehe
 E<quot>Layers at StarttimeE<quot>). Damit zusammen hängt eine
 Neubearbeitung von Tk::Getopt (Tk::NoNotebook, Klick auf Checkboxen
@@ -437,12 +428,12 @@ E<quot>OkE<quot>, besseren Msgcat-Support (eigene Module dafür?)).
 
 =item * (M1)
 
-choose_ort, S- und U-Bahnen: neben dem Bahnhof die zugehE<ouml>rige(n)
+choose_ort, S- und U-Bahnen: neben dem Bahnhof die zugehörige(n)
 Linien anzeigen
 
 =item * (M2)
 
-Option -centerc auch schöner zugE<auml>nglich machen. Eine Möglichkeit
+Option -centerc auch schöner zugänglich machen. Eine Möglichkeit
 wäre, im Optionseditor einen Button neben der Option anzubieten, der
 in den set-coord-mode geht, cursor aendert, das tk-getopt-fenster
 withdraw-t, und darauf wartet, dass der benutzer auf die karte klickt
@@ -450,7 +441,7 @@ oder E<quot>cancelE<quot> drückt.
 
 =item * (M2)
 
-Evtl für BBBike-Canvas und E<Uuml>bersichtskarte: Maus ziehen zum
+Evtl für BBBike-Canvas und Übersichtskarte: Maus ziehen zum
 Einstellen eines Ausschnitts. Das Rechteck, das beim Ziehen erzeugt
 wird, muss natuerlich den Aspect des Hauptfensters beibehalten.
 
@@ -532,9 +523,9 @@ Dann könnte man bbbike mit -datadir aufrufen und testen, oder ein diff
 
 =item * (H3)
 
-StraE<szlig>ennamen: Labels wie in richtigen StadtplE<auml>nen
-anordnen, also z.B. "Yorckstr.": am Anfang der StraE<szlig>e "Yorck-",
-am Ende der StraE<szlig>e "str.". Dadurch werden die Namen hoffentlich
+Straßennamen: Labels wie in richtigen Stadtplänen
+anordnen, also z.B. "Yorckstr.": am Anfang der Straße "Yorck-",
+am Ende der Straße "str.". Dadurch werden die Namen hoffentlich
 lesbarer sein.
 
 Der Code dazu existiert schon, ist aber langsam und buggy und wird nur
@@ -542,31 +533,31 @@ bei bbbike.cgi verwendet.
 
 =item * (H3)
 
-Da das Zeichnen von StraE<szlig>ennamen so lange dauert: mit Hints
-arbeiten (z.B. fE<uuml>r einige oft verwendete Zoomstufen Koordinaten
+Da das Zeichnen von Straßennamen so lange dauert: mit Hints
+arbeiten (z.B. für einige oft verwendete Zoomstufen Koordinaten
 und Transformationsmatrizen vorberechnen).
 
 =item * (H2)
 
-Beim VergrE<ouml>E<szlig>ern kE<ouml>nnte man ab einer bestimmten
-Stufe auch die GrE<ouml>E<szlig>e der StraE<szlig>en/Ortslabel auch
-mitvergrE<ouml>E<szlig>ern.
+Beim Vergrößern könnte man ab einer bestimmten
+Stufe auch die Größe der Straßen/Ortslabel auch
+mitvergrößern.
 
 =item * (H1)
 
 Server-Mode und Client-Programm: austesten, insbesondere mit KDE, und
 dann alle Starts auf bbbikeclient umschreiben. Gucken, wie man sowas
-mit Win32 machen kE<ouml>nnte. Server-Beispielcode aus
+mit Win32 machen könnte. Server-Beispielcode aus
 E<quot>Mastering Perl/TkE<quot> verwenden.
 
 =item * (H3)
 
-Rotierte Fonts: vielleicht ein Freetype-Modul schreiben, dafE<uuml>r
+Rotierte Fonts: vielleicht ein Freetype-Modul schreiben, dafür
 eine Tk::Canvas-Erweiterung und diese in BBBike verwenden?
 
 =item * (M1)
 
-VergrE<ouml>E<szlig>erung der Schrift beim Zoomen
+Vergrößerung der Schrift beim Zoomen
 
 =item * (M1)
 
@@ -579,17 +570,10 @@ Kurzhilfe: kann man feststellen, ob man eine 2/3-Tastenmaus hat? Und
 wenn es nur eine 2-Tasten-Maus ist, dann existiert vielleicht eine
 Emulation fuer die mittlere Taste?
 
-=item * (M1)
-
-Vielleicht Windchill-Temperatur zusE<auml>tzlich anzeigen. See
-windchill program in bin/sh or devel. Frage: wie und wo soll die
-Temperatur angezeigt werden? Im CGI? In der Perl/Tk-Version als Plugin
-oder Standard?
-
 =item * (H1)
 
-Optimierung: Beim Ausschalten von Outline oder StraE<szlig>ennamen
-muE<szlig> nicht alles neu gezeichnet werden.
+Optimierung: Beim Ausschalten von Outline oder Straßennamen
+muß nicht alles neu gezeichnet werden.
 
 =item * (H2)
 
@@ -607,11 +591,11 @@ verwendet.
 
 =item * (M4)
 
-Wenn wE<auml>hrend eines WWW-Fetches die Verbindung gekappt wird,
-hE<auml>ngt BBBike vollkommen. Gesehen bei Win32. Vielleicht mit
-Timeouts arbeiten (kann das LWP?) und hE<auml>ppchenweise holen. Oder
+Wenn während eines WWW-Fetches die Verbindung gekappt wird,
+hängt BBBike vollkommen. Gesehen bei Win32. Vielleicht mit
+Timeouts arbeiten (kann das LWP?) und häppchenweise holen. Oder
 noch besser: fileevent verwenden! ... LWPng kann Event-Handling.
-Leider ist das Event-Handling noch inkompatibel mit Tk. Auch fE<uuml>r
+Leider ist das Event-Handling noch inkompatibel mit Tk. Auch für
 wettermeldung2 mit LWPng arbeiten. =E<gt> Vielleicht das hochgelobte
 POE verwenden.
 
@@ -620,12 +604,12 @@ zu laufen.
 
 =item * (M2)
 
-FE<uuml>r das Drucken von Text: evtl. auch Netscape und print-Methode
-verwenden (?). FE<uuml>r Unix kE<ouml>nnte man eine start netscape,
+Für das Drucken von Text: evtl. auch Netscape und print-Methode
+verwenden (?). Für Unix könnte man eine start netscape,
 netscape remote openFile/print-Kombination verwenden. Bei Windows?
-Netscape kE<ouml>nnte man auch zum Mailabschicken verwenden,
-E<uuml>ber mailto. Evtl. ein Modul fE<uuml>r Netscape schreiben,
-daE<szlig> die ganzen remote-Kommandos verwendet. Hier eine Liste:
+Netscape könnte man auch zum Mailabschicken verwenden,
+über mailto. Evtl. ein Modul für Netscape schreiben,
+daß die ganzen remote-Kommandos verwendet. Hier eine Liste:
 
  %s: usage: OpenURL(url [ , new-window|window-name ] )
  %s: usage: OpenFile(file)
@@ -637,7 +621,7 @@ daE<szlig> die ganzen remote-Kommandos verwendet. Hier eine Liste:
  %s: usage: addBookmark(url, title)
  %s: usage: htmlHelp(map-file, id, search-text)
 
-Mit Xprt fE<uuml>r X11 experimentieren (doc lesen).
+Mit Xprt für X11 experimentieren (doc lesen).
 
 =item * (H1)
 
@@ -646,8 +630,8 @@ alles auf dieses Modul umschreiben.
 
 =item * (H1)
 
-PerlPlusPlugin ausprobieren und BBBike dafE<uuml>r portieren. Sachen,
-die mir dafE<uuml>r einfallen: Ich brauche ein open(), das E<uuml>ber
+PerlPlusPlugin ausprobieren und BBBike dafür portieren. Sachen,
+die mir dafür einfallen: Ich brauche ein open(), das über
 LWP funktioniert (vielleicht mit LWPng?). Ich brauche ein hyperuse und
 hyperrequire. Z.B.
 
@@ -660,14 +644,14 @@ Irgendwo habe ich so etwas schon implementiert gesehen ... suchen!
 
 =item * (M2)
 
-Bei einem Resize muE<szlig> auch das Progress-Canvas angepasst werden.
+Bei einem Resize muß auch das Progress-Canvas angepasst werden.
 
 =item * (H1)
 
 BBBikeContext.pm schreiben: gibt alles aus, was ich so brauche: $os,
 Strassen-Objekte, Crossings, Netze etc. Caching bei Belieben
 einstellen, evtl. mit Ties arbeiten, die sich selbst umwandeln oder
-durchgE<auml>ngig mit Methoden. AutoLoading verwenden.
+durchgängig mit Methoden. AutoLoading verwenden.
 
 Z<>=E<gt> Teilweise erledigt BBBikeRouting.pm einige dieser Sachen...
 
@@ -676,7 +660,7 @@ Z<>=E<gt> Teilweise erledigt BBBikeRouting.pm einige dieser Sachen...
 Speicheroptimierung.
 
 Folgende Symbole kommen im Dump von Devel::Symdump vor und
-bedE<uuml>rfen KlE<auml>rung (warum, woher, benE<ouml>tigt?):
+bedürfen Klärung (warum, woher, benötigt?):
 
     * English::* => in irgendeinem Tk-Modul
     * DB::args
@@ -710,7 +694,7 @@ Evtl. auch:
 
 =item * (H1)
 
-3D-Darstellung von Berlin (z.B. vier versetzte FlE<auml>chen, die
+3D-Darstellung von Berlin (z.B. vier versetzte Flächen, die
 oberste in der Hintergrundfarbe und die anderen in der Schattenfarbe).
 
 Z<>=> Wo verwenden: overview-Fenster, overview-Button oder im CanvasMap
@@ -718,11 +702,11 @@ anstelle der normalen Grenzen?
 
 =item * (H2)
 
-Bike+Ride integrieren. Das wE<uuml>rde in eine unterbrochene Route
-resultieren, deren Fahrzeiten addiert wE<uuml>rden. ZusE<auml>tzlich
-kE<auml>me noch eine abgeschE<auml>tzte Zeit fE<uuml>r die Benutzung
+Bike+Ride integrieren. Das würde in eine unterbrochene Route
+resultieren, deren Fahrzeiten addiert würden. Zusätzlich
+käme noch eine abgeschätzte Zeit für die Benutzung
 des Verkehrsmittels (Fahrzeit + Zusteigzeit + Umsteigezeiten). Eine
-Verbindung zu Fahrinfo wE<auml>re genial.
+Verbindung zu Fahrinfo wäre genial.
 
 Vorgehensweise:
 
@@ -753,20 +737,20 @@ Liniengruppe), um Umsteigen zu erkennen.
 =item *
 
 GfxConvert evtl. mit Tk::WinPhoto/Tk::Photo-Funktionen implementieren,
-wenn die externen Programme nicht verfE<uuml>gbar sind. Am besten
-wE<auml>re natE<uuml>rlich noch immer ein NetPBM-Modul.
+wenn die externen Programme nicht verfügbar sind. Am besten
+wäre natürlich noch immer ein NetPBM-Modul.
 
 Photo-Zooming: -zoom x -subsample y == -zoom x/y oder umgekehrt
 
 =item *
 
 Radwegekategorien erweitern: RW(kategorie)(qualitaetskategorie). Also
-heiE<szlig>t dann z.B. RW00: Radweg mit sehr guter QualitE<auml>t und
+heißt dann z.B. RW00: Radweg mit sehr guter Qualität und
 RW13: benutzungspflichtiger Radweg mit sehr schlechter
-QualitE<auml>t. Bei den restlichen Kategorien kann man sich die
-Erweiterung sparen, da dort die QualitE<auml>tskategorie der
-StraE<szlig>e gilt. Default-QualitE<auml>tskategorie fE<uuml>r Radwege
-sei 1 (gute QualitE<auml>t).
+Qualität. Bei den restlichen Kategorien kann man sich die
+Erweiterung sparen, da dort die Qualitätskategorie der
+Straße gilt. Default-Qualitätskategorie für Radwege
+sei 1 (gute Qualität).
 
 Problem => ich bin schon bei RW10 angelangt, also brauche ich eine
 andere Kodierung.
@@ -778,7 +762,7 @@ ShAddRecentDoc geht unter Win98 nicht?
 =item *
 
 Drag'n'drop und open's sollten vielleicht etwas mit .lnk-Dateien unter
-Win* anfangen kE<ouml>nnen...
+Win* anfangen können...
 
 =item *
 
@@ -802,26 +786,26 @@ werden soll (Multipass? Langsam!)
 
 =item *
 
-Bei der Ausgabe der StraE<szlig>ennamen an der Route sollte ein aehnlich
+Bei der Ausgabe der Straßennamen an der Route sollte ein aehnlich
 intelligentes Verfahren angewendet werden. Vielleicht kann bei Routen,
 die von W nach O verlaufen, die Strassennamen erstmal links vom Punkt
 eingezeichnet werden und umgekehrt.
 
 =item *
 
-Bei -usbahnnetz sollte folgendes gehen: Routenbeschreibung mit BahnhE<ouml>fen
+Bei -usbahnnetz sollte folgendes gehen: Routenbeschreibung mit Bahnhöfen
 statt Strecken (davon kann auch die Routenbeschreibung auf dem flachen
-Land profitieren!) ... Und noch schE<ouml>ner: eine Kombination von U/S-Bahn
-und StraE<szlig>ennetz (fE<uuml>r FuE<szlig>wege bzw. Bike+Ride).
+Land profitieren!) ... Und noch schöner: eine Kombination von U/S-Bahn
+und Straßennetz (für Fußwege bzw. Bike+Ride).
 
 =item *
 
-Optional eine kE<uuml>rzere Beschreibung. Diese wE<uuml>rde nur
-folgendes enthalten: StraE<szlig>en und AbbiegevorgE<auml>nge. Wenn
-man auf einer StraE<szlig>e nicht abbiegen muss, dann werden
-verschiedene StraE<szlig>ennamen in einer Liste zusammengefasst.
+Optional eine kürzere Beschreibung. Diese würde nur
+folgendes enthalten: Straßen und Abbiegevorgänge. Wenn
+man auf einer Straße nicht abbiegen muss, dann werden
+verschiedene Straßennamen in einer Liste zusammengefasst.
 
-ZusE<auml>tzlich noch eine Druckausgabe. Auch beim CGI. Wann wird die
+Zusätzlich noch eine Druckausgabe. Auch beim CGI. Wann wird die
 Ausgabe endlich vereinheitlicht?
 
 =item *
@@ -833,11 +817,11 @@ also verfahren?
 
 =item *
 
-Pilot.pm installieren, BBBikePalm dafE<uuml>r erweitern
+Pilot.pm installieren, BBBikePalm dafür erweitern
 
 =item *
 
-user editing: negative/positive prE<auml>ferenzen mit b2/b3 lange druecken
+user editing: negative/positive präferenzen mit b2/b3 lange druecken
 setzen
 
 =item *
@@ -847,7 +831,7 @@ Tk Widget)
 
 =item *
 
-lange hE<auml>nger bei vielen Canvas-Elementen ueberpruefen
+lange hänger bei vielen Canvas-Elementen ueberpruefen
 
 =item *
 
@@ -857,7 +841,7 @@ MDI-Interface entwickeln mit:
  * einfaches opt-einstellungs-fenster
  * routenbeschreibung
 Siehe Tk::WindowManager =E<gt> entwickle ich nicht mehr weiter,
-dafE<uuml>r gibt es aber ein neues Tk::MDI-Widget. Aber: MDI is evil!
+dafür gibt es aber ein neues Tk::MDI-Widget. Aber: MDI is evil!
 
 =item *
 
@@ -903,25 +887,25 @@ display the bbbike icon (avoid transparency problem!) (Windows only).
  - Iconleiste wird stadtspezifisch erzeugt (e.g. Gibt es U-/S-Bahnen?)
  - Iconbilder werden stadt/landtpezifisch benannt. Beispiel: ubahn.gif => ubahn_de.gif
  - Umland ja/nein. 3-stufig (mit jwd?), "Haltestelle" oder "Haltestelle/Ort"?
- - Aufgeben des manuellen LandstraE<szlig>enzeichnens (und jwd etc.)
- - generell: vielleicht ein gesondertes sub symbolframe fE<uuml>r jeden Ort?
- - oder: XML-Beschreibungsdatei fE<uuml>r die Properties?
+ - Aufgeben des manuellen Landstraßenzeichnens (und jwd etc.)
+ - generell: vielleicht ein gesondertes sub symbolframe für jeden Ort?
+ - oder: XML-Beschreibungsdatei für die Properties?
  - automatisches Erstellen der Properties in Geography.pm anhand der existierenden data-Dateien
- - Ampeln sind vielleicht nicht E<uuml>berall erfasst
- - winddaten kE<ouml>nnen vielleicht nicht E<uuml>berall E<uuml>ber das web geholt werden
- - StraE<szlig>en: nicht alle Daten sind E<uuml>berall erfasst (Kategorien, Radwege, QualitE<auml>t, ...)
- - StraE<szlig>enauswahl: PLZ-Liste, CDROM?
- - etc. So gut wie alle daten kE<ouml>nnen vorhanden sein oder nicht
- - transpose-Funktion ist ortabhE<auml>ngig, BBBikeTranspose als Verteiler
- - map-button sollte berlin-spezialitE<auml>t bleiben
- - check-skript: sind alle benE<ouml>tigten Variablen definiert (in den Geography-Modulen)
- - einige devel-skripte sind auch ortabhE<auml>ngig
- - vielleicht Erstellung eines devel-Verzeichnisses mit nE<ouml>tigen skripten aus miscsrc und vielleicht misc. Insbesondere kritische Sachen wie den eplus-Roboter herausnehmen
- - verkleinerung fE<uuml>r overview-mode sollte einstellbar sein
- - anhand von $0 erkennen, welcher Ort verwendet eerden soll. Gut fE<uuml>r CDROM-Installationen
- - edit vs. normal mode: bei anderen stE<auml>dten keinen unterschied machen (transpose entsprechend setzen) oder gps-koordinaten im edit-mode verwenden
- - CGI: imagedir ortsunabhE<auml>ngig machen
- - caches ortsunabhE<auml>ngig machen
+ - Ampeln sind vielleicht nicht überall erfasst
+ - winddaten können vielleicht nicht überall über das web geholt werden
+ - Straßen: nicht alle Daten sind überall erfasst (Kategorien, Radwege, Qualität, ...)
+ - Straßenauswahl: PLZ-Liste, CDROM?
+ - etc. So gut wie alle daten können vorhanden sein oder nicht
+ - transpose-Funktion ist ortabhängig, BBBikeTranspose als Verteiler
+ - map-button sollte berlin-spezialität bleiben
+ - check-skript: sind alle benötigten Variablen definiert (in den Geography-Modulen)
+ - einige devel-skripte sind auch ortabhängig
+ - vielleicht Erstellung eines devel-Verzeichnisses mit nötigen skripten aus miscsrc und vielleicht misc. Insbesondere kritische Sachen wie den eplus-Roboter herausnehmen
+ - verkleinerung für overview-mode sollte einstellbar sein
+ - anhand von $0 erkennen, welcher Ort verwendet eerden soll. Gut für CDROM-Installationen
+ - edit vs. normal mode: bei anderen städten keinen unterschied machen (transpose entsprechend setzen) oder gps-koordinaten im edit-mode verwenden
+ - CGI: imagedir ortsunabhängig machen
+ - caches ortsunabhängig machen
 
 =item Bookmarks
 
@@ -948,17 +932,17 @@ Bookmarks in choose_ort und möglichkeit, per dnd neue bookmarks zu definieren, u
   Radwege: Verbundsteine kontra Asphalt
   [...]
   Der Energieverbrauch beim Rad fahren (durchschnittliche
-  Geschwindigkeit 15 km/h) auf Asphalt in StraE<szlig>enqualitE<auml>t
-  betrE<auml>gt ca. 1000 Joule und auf Kopfsteinpflaster ca. 2200
+  Geschwindigkeit 15 km/h) auf Asphalt in Straßenqualität
+  beträgt ca. 1000 Joule und auf Kopfsteinpflaster ca. 2200
   Joule jeweils pro 100 Meter. Bei asphaltierten Radwegen mit
-  schlechter LE<auml>ngsebenheit liegt dieser Wert zwischen 1200 bis
+  schlechter Längsebenheit liegt dieser Wert zwischen 1200 bis
   1400 Joule, bei neu gebauten Radwegen mit gefasten Verbundsteinen
   bei ca. 1400 Joule und bei wassergebundenen Decken zwischen 1600 und
   2000 Joule pro 100 Meter. Da der Einsatzbereich des Fahhrades als
   Verkehrsmittel umgekehrt proportional zum Quadrat des
   Energieverbrauchs ist, ist dieser bei Radverkehrsanlagen in guter
-  StraE<szlig>enqualitE<auml>t rund doppelt so groE<szlig> wie bei
-  Radwegen mit Betonverbundsteinen und etwa viermal so groE<szlig> wie
+  Straßenqualität rund doppelt so groß wie bei
+  Radwegen mit Betonverbundsteinen und etwa viermal so groß wie
   bei wassergebundenen Radwegen. Quelle: UPI-bericht Nr. 41, 3. erw.
   Auflage August 1999 E<quot>Entwicklung und potentiale des
   Fahrrad-VerkehrsE<quot> Seiten 18 bis 20
@@ -968,11 +952,11 @@ Bookmarks in choose_ort und möglichkeit, per dnd neue bookmarks zu definieren, u
 =item Verkehrsverwaltung
 
   Verkehrs-/Umweltverwaltung wegen Emissionen:
-  ReulenbE<auml>cker
+  Reulenbäcker
   IX D2
   Tel: 9025 2391
   Raum 8.020
-  BrE<uuml>ckenstr. Mitte
+  Brückenstr. Mitte
 
 =item weiter
 
@@ -992,10 +976,10 @@ Bookmarks in choose_ort und möglichkeit, per dnd neue bookmarks zu definieren, u
 
  - bbbike.cgi: kommentar-spalte: bei münchen schiebestrecken ausweisen, evtl. auch radwege. in berlin vielleicht alles mögliche ausgeben --- ausprobieren
 
-=item StraE<szlig>ennetz, Suche
+=item Straßennetz, Suche
 
-Die build-Funktion kE<ouml>nnte viel einfacher gestaltet werden, da if
-(const) { } von perl optimiert wird. Die Vorgehensweise wE<auml>re
+Die build-Funktion könnte viel einfacher gestaltet werden, da if
+(const) { } von perl optimiert wird. Die Vorgehensweise wäre
 also:
 
     eval q{
@@ -1005,11 +989,11 @@ also:
     }
 
 Leider gibt es mandatory redefine warnings, die vielleicht mit einer
-STDERR-Umleitung unsichtbar gemacht werden kE<ouml>nnen. Allerdings
+STDERR-Umleitung unsichtbar gemacht werden können. Allerdings
 --- eine Analyse mit B::Terse zeigt, dass nach der Optimierung
-zusE<auml>tzliche enter/leave opcodes im Tree geblieben sind. (Das
-wE<auml>re eine Idee fE<uuml>r optimize::...: E<uuml>berflE<uuml>ssige
-enter/leave E<uuml>berspringen, wenn in einem Block keine padsv (my)
+zusätzliche enter/leave opcodes im Tree geblieben sind. (Das
+wäre eine Idee für optimize::...: überflüssige
+enter/leave überspringen, wenn in einem Block keine padsv (my)
 oder LVINTRO (local) vorkommen sowie der Block in einem void-Kontext
 steht.)
 
@@ -1017,53 +1001,53 @@ steht.)
 
 Teile nach BBBikeGPS etc. auslagern => schon gemacht, noch mehr?
 
-=item VernE<uuml>nftige Koordinaten verwenden
+=item Vernünftige Koordinaten verwenden
 
-Wahrscheinlich ist GKK (fE<uuml>r Deutschland) die beste Wahl.
+Wahrscheinlich ist GKK (für Deutschland) die beste Wahl.
 
 Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
 
-  * 1km entspricht wieviel LE<auml>ngengrad in Usedom, Prenzlau,
+  * 1km entspricht wieviel Längengrad in Usedom, Prenzlau,
     Berlin, Dessau, Dresden?
 
   * Das gleiche mit Karte::Polar ausrechnen
 
-  * Zur Sicherheit auch BreitengradabstE<auml>nde berechnen.
+  * Zur Sicherheit auch Breitengradabstände berechnen.
 
   * Range von GKK feststellen (in Mapsource einstellen, falls
-    mE<ouml>glich, ansonsten mit dem eTrex). Wo gelten die Zonen, was
-    fE<uuml>r EinschrE<auml>nkungen hE<auml>tte ich?
+    möglich, ansonsten mit dem eTrex). Wo gelten die Zonen, was
+    für Einschränkungen hätte ich?
 
   * Umrechnung GKK - Karte::Standard - Karte::Berlinmap1966 - Karte::GISmap.
 
   * -orig-Dateien =E<gt> GKK, konvertierte Dateien =E<gt> einfach auf
-    0/0 subtrahiert (E<auml>hnlich wie in ME<uuml>nchen)?
+    0/0 subtrahiert (ähnlich wie in München)?
     Hmmm. Wahrscheinlich ist es sogar besser, wenn die -orig-Dateien
     auf polare Koordinaten basieren --- wegen der verschiedenen Zonen.
     Beim Konvertieren wird eine Zone als E<quot>HauptzoneE<quot>
     angenommen und die gesamte Karte dagegen konvertiert (die
-    RE<auml>nder sind dann verzerrt). Da mitten durch Berlin eine
-    GKK-Zone verlE<auml>uft, sollte ich vielleicht eine Pseudo-Zone
+    Ränder sind dann verzerrt). Da mitten durch Berlin eine
+    GKK-Zone verläuft, sollte ich vielleicht eine Pseudo-Zone
     4.5 verwenden (Aufruf von Karte::UTM::ConvToTm mit dem Berliner
-    LE<auml>ngengrad als lat0 z.B.). Wie sieht es mit der
+    Längengrad als lat0 z.B.). Wie sieht es mit der
     Konvertierungsfunktion DegreesToGKK aus?
 
-  * Liste aller von den derzeitigen Koordinaten abhE<auml>ngigen
+  * Liste aller von den derzeitigen Koordinaten abhängigen
     Dateien erstellen
 
-  * Wenn die GKK-Konvertierung in Perl zu langsam lE<auml>uft:
+  * Wenn die GKK-Konvertierung in Perl zu langsam läuft:
     XS-Modul schreiben. Tests sind einfach (Perl-Ausgabe gegen
     XS-Ausgabe checken)
 
   * Welches Datum verwenden: Potsdam oder WGS84?
 
   * Alle abgespeicherten Dateien sollten besser Degrees sein! Also
-    .bbr und evtl. esri und so. Auch wenn mE<ouml>glich: die
+    .bbr und evtl. esri und so. Auch wenn möglich: die
     sichtbaren Koordinaten im cgi sollten auch Degrees sein.
 
   * Evtl. alle data/*-Dateien nach .bbd umbenennen und am Anfang einen
-    Header einfE<uuml>gen (Datum, Koordinatenformat etc.)
-    Entsprechende orig-Dateien heiE<szlig>en .orig.bbd oder .bbd.orig.
+    Header einfügen (Datum, Koordinatenformat etc.)
+    Entsprechende orig-Dateien heißen .orig.bbd oder .bbd.orig.
     In der Zwischenzeit mit beiden Systemen gleichzeitig arbeiten
     (Konvertierung im Makefile)
 
@@ -1082,7 +1066,7 @@ Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
 
 =item Volltextsuchfunktion in bbbike erweitern: agrep mit fester
   Fehleranzahl, automatische Operation mit schrittweiser
-  ErhE<ouml>hung der Fehleranzahl
+  Erhöhung der Fehleranzahl
 
 =item Volltextsuchfunktion: itemconfigure und normal/bold oder
 black/grey verwenden, um Kategorisierung darzustellen (größere Orte,
@@ -1095,49 +1079,57 @@ wichtigere Straßen)
 
   Verzögerung durch Richtungsänderungen: geradeaus, rechts/links
 
-=item Splines verwenden? Z.B. in den Daten so markieren: x,y S x,y ...
-  Falls ein Spline auftritt, wird der gesamte Linienzug mitsamt
-  Outline als -smooth => 1 markiert und für nicht spline-Abschnitte
-  werden die Koordinaten gemaess der Tk::Canvas-Doku dupliziert.
-  Kreuzungen müssen exakt sein (also darf ein Kreuzungspunkt nicht
-  zwei S-Nachbarn haben! => Konsistenzcheck möglich).
-  Mögliches Problem: können alle Tools mit Extra-Daten zwischen den
-  Koordinaten umgehen? Und: wie sieht die API dazu aus (z.B.
-  $street->getattr($data_pos, $coord_pos) und
-  $street->getallattr($data_pos)). Splines auch bei der Routensuche
-  (strecke()) beachten?
+=item Splines verwenden?
 
-=item H1: Ausblenden von Strassentypen/Radwegtypen: sollte besser -state
-  => "hidden"
-  verwenden, wenn moeglich (d.h. recent Tk). Waere aber eine Semantikaenderung,
-  da zurzeit nicht eingeblendete strassen auch nicht in der routensuche
-  verwendet werden. Was eigentlich Quatsch ist.
+Z.B. in den Daten so markieren: x,y S x,y ... Falls ein Spline
+auftritt, wird der gesamte Linienzug mitsamt Outline als -smooth => 1
+markiert und für nicht spline-Abschnitte werden die Koordinaten
+gemaess der Tk::Canvas-Doku dupliziert. Kreuzungen müssen exakt sein
+(also darf ein Kreuzungspunkt nicht zwei S-Nachbarn haben! =>
+Konsistenzcheck möglich). Mögliches Problem: können alle Tools mit
+Extra-Daten zwischen den Koordinaten umgehen? Und: wie sieht die API
+dazu aus (z.B. $street->getattr($data_pos, $coord_pos) und
+$street->getallattr($data_pos)). Splines auch bei der Routensuche
+(strecke()) beachten?
 
-=item ??? make some data controlled persistent:
+=item H1: Ausblenden von Strassentypen/Radwegtypen
+
+sollte besser -state => "hidden" verwenden, wenn moeglich (d.h. recent
+Tk). Waere aber eine Semantikaenderung, da zurzeit nicht eingeblendete
+strassen auch nicht in der routensuche verwendet werden. Was
+eigentlich Quatsch ist.
+
+=item ??? make some data controlled persistent
+
   * mapping full path => data structure
   * check modtime
   list: strassen, landstrassen, Berlin.coords.data,
         Potsdam.coords.data ???
 
-=item Ampelschaltung.pm und BBBikeEdit.pm so erweitern, dass die alte Form
-  (misc/ampelschaltung-orig.txt) auch per GUI editierbar ist. Alternativ
-  herauskriegen, wie ich mir die Punkt-Kreuzung-Liste zusammenklicken
-  kann (wahrscheinlich einfacher).
+=item Ampelschaltung.pm und BBBikeEdit.pm erweitern
+
+So, dass die alte Form (misc/ampelschaltung-orig.txt) auch per GUI
+editierbar ist. Alternativ herauskriegen, wie ich mir die
+Punkt-Kreuzung-Liste zusammenklicken kann (wahrscheinlich einfacher).
 
 =item secure deployment to radzeit.de:
+
   * cp on server: bbbike => bbbike~ etc.
   * rsync to ~ version
   * test ~ version (maybe name the test scripts bbbike~.cgi etc.)
   * exch ~ and "" version
   * test "" version
 
-=item dillo 0.7.x ist schon richtig gut --- kann imagemaps und tabellen
-  für ipaq besorgen und dann endlich die alternative zu bbbike impl.!
-  => auf skiffcluster compilieren
+=item dillo 0.7.x ist schon richtig gut
+
+--- kann imagemaps und tabellen, für ipaq besorgen und dann endlich
+die alternative zu bbbike impl.! => auf skiffcluster compilieren
 
 =item gpsman2bbd Parameteruebergabe ueberarbeiten
 
-=item Tk::LayerEditor in einer nicht-DND-Version (für Windows,
+=item Tk::LayerEditor
+
+in einer nicht-DND-Version (für Windows,
 optional auch für X11, notwendig fuer Tk804) -> fix for TK804 ist leicht, einfach
 
      my($x, $y) = ($_[3], $_[4]);#XXXchanged for Tk804
@@ -1270,7 +1262,7 @@ die Entfernungsspalte rechts herausrutscht.
 
 =item * (M3)
 
-SehenswE<uuml>rdigkeiten: eine neue Kategorie für
+Sehenswürdigkeiten: eine neue Kategorie für
 E<quot>flächigeE<quot> Sehenswürdigkeiten (z.B. Holländisches Viertel)
 einführen, um besseres Stacking zu machen (unterhalb von Straßen).
 
@@ -1334,6 +1326,33 @@ example:
  http://www.stepwise.com/Articles/Technical/2001-03-29.01.html
  http://el-tramo.be/guides/fancy-dmg/
  http://el-tramo.be/files/fancy-dmg/Makefile
+
+=back
+
+=head2 Plugins
+
+=over
+
+=item * (H5)
+
+Besserer Plugin-Dialog: offiziell machen, wenn er sich bewährt.
+Plugin-Argumente sollten angezeigt und editiert werden können.
+Vielleicht auch mehr Informationen (Icon, längere Beschreibung etc.)
+hereinnehmen.
+
+=item * (M1) (feature)
+
+BBBikeScribble: tell user where the scribble was saved (at least in
+status bar). Connect lines in bbd if possible. New feature: mail
+scribble to maintainer (newstreet). Dabei aber beachten, dass
+tkbabybike noch immer damit umgehen sollte...
+
+=item * (M1)
+
+Vielleicht Windchill-Temperatur zusätzlich anzeigen. See
+windchill program in bin/sh or devel. Frage: wie und wo soll die
+Temperatur angezeigt werden? Im CGI? In der Perl/Tk-Version als Plugin
+oder Standard?
 
 =back
 
@@ -1702,7 +1721,7 @@ Polzow-Radweg
 =item * Funktionieren die Aufzüge bei der S-Bahn? Das erfährt man
 E<quot>... am Besten bei der Kundenbetreuung 297-4 33 33E<quot>.
 
-=item * SpielplE<auml>ze aufnehmen? Z.B.
+=item * Spielpläze aufnehmen? Z.B.
   L<http://www.stadtentwicklung.berlin.de/umwelt/stadtgruen/kinderspielplaetze/de/spielplaetze/>
 
 =item * Radtouren um FF herum
@@ -1954,13 +1973,13 @@ Fr-Jahn-Sportpark zur Topsstr ist so ein fall.
 
 =item * (H4)
 
-Alle in "strassen" vorkommende StraE<szlig>en sollten auch in
-"Berlin.coords.data" stehen. Ansonsten gibt es derart PE<Uuml>robleme,
-daE<szlig> zwar beim CGI in der Liste "Alle StraE<szlig>en anzeigen"
-z.B. "Hallesches Tor" angezeigt wird, diese StraE<szlig>e als Eingabe
+Alle in "strassen" vorkommende Straßen sollten auch in
+"Berlin.coords.data" stehen. Ansonsten gibt es derart Probleme,
+daß zwar beim CGI in der Liste "Alle Straßen anzeigen"
+z.B. "Hallesches Tor" angezeigt wird, diese Straße als Eingabe
 aber nicht akzeptiert wird. Sprich: die Datei data/add_str sollte auf
-AktualitE<auml>t E<uuml>berprE<uuml>ft werden und dann mE<ouml>glichst
-alle fehlende StraE<szlig>en nach Berlin.coords.data E<uuml>bertragen
+Aktualität überprüft werden und dann möglichst
+alle fehlende Straßen nach Berlin.coords.data übertragen
 werden.
 
 Hatte ich schonmal:
@@ -1975,7 +1994,7 @@ haben.
 
 =item * (M2)
 
-LandstraE<szlig>en: Gibt es Untersuchungen zur Verkehrsdichte?
+Landstraßen: Gibt es Untersuchungen zur Verkehrsdichte?
 Recherchieren! => Jan hat etwas gefunden (Aldi-Karten...) -> Die habe
 ich jetzt auch...
 
@@ -2021,7 +2040,7 @@ ja, dann auch im Postprocessing (Winkelberechnung) berücksichtigen]?)
 
 =item * (H2)
 
-Optimierung: bei LandstraE<szlig>en reine Kurvenpunkte bei der
+Optimierung: bei Landstraßen reine Kurvenpunkte bei der
 Netzberechnung ignorieren. Das ist mit B<make_wide_net> bereits
 implementiert, wird aber nicht verwendet. Benchmarks? Probleme?
 
@@ -2029,42 +2048,42 @@ implementiert, wird aber nicht verwendet. Benchmarks? Probleme?
 
 Suchen nach Alternativen. Es ist schwierig zu entscheiden, wann eine
 Alternative wirklich eine Alternative darstellt (z.B. ist es kein
-groE<szlig>er Unterschied, ob man nur rechts oder links um einen Block
-herum fE<auml>hrt).
+großer Unterschied, ob man nur rechts oder links um einen Block
+herum fährt).
 
 =item * (H1)
 
 Neuimplementation der Streckensuche. Dabei soll zwischen
-StreckenaufwE<auml>nden und KnotenpunktaufwE<auml>nden unterschieden
-werden. AufwE<auml>nde werden entweder in LE<auml>ngen, in Zeit oder
+Streckenaufwänden und Knotenpunktaufwänden unterschieden
+werden. Aufwände werden entweder in Längen, in Zeit oder
 in einem Punktesystem (Kombination aus Zeit, Komfort, Sicherheit etc.)
-angegeben. StreckenaufwE<auml>nde berechnen sich aus: LE<auml>nge der
+angegeben. Streckenaufwände berechnen sich aus: Länge der
 Strecke, Gegenwind, Steigungen, Dynamowiderstand,
-StraE<szlig>enqualite<auml>t der Strecke, sonstige Hindernisse auf der
+Straßenqualite<auml>t der Strecke, sonstige Hindernisse auf der
 Strecke, Verkehrsdichte (Staus, Berufsverkehr), Radwege,
-Maximalgeschwindigkeiten. KnotenpunktaufwE<auml>nden berechnen sich
-aus: durchschnittliche oder wahre Ampelwartezeit mit Zeit fE<uuml>r
+Maximalgeschwindigkeiten. Knotenpunktaufwänden berechnen sich
+aus: durchschnittliche oder wahre Ampelwartezeit mit Zeit für
 die Beschleunigung, durchschnittlicher Zeitverlust an
-Rechts-vor-links-Kreuzungen und an vorfahrtsgewE<auml>hrenden
-Kreuzungen (abknickende VorfahrtsstraE<szlig>en beachten), Zeitverlust
-fE<uuml>r AbbiegevorgE<auml>nge (rechts, links), erschwertes Abbiegen
-(Bordsteinkanten E<uuml>berwinden). QualitE<auml>tsbewertungen:
-StraE<szlig>enqualitE<auml>t, niedrige LeistungsaufwE<auml>nde (Wind,
-Steigungen), NebenstraE<szlig>en, Parks. Sicherheitsbewertungen:
-NebenstraE<szlig>en vor HauptstraE<szlig>en bevorzugen, Radwege
+Rechts-vor-links-Kreuzungen und an vorfahrtsgewährenden
+Kreuzungen (abknickende Vorfahrtsstraßen beachten), Zeitverlust
+für Abbiegevorgänge (rechts, links), erschwertes Abbiegen
+(Bordsteinkanten überwinden). Qualitätsbewertungen:
+Straßenqualität, niedrige Leistungsaufwände (Wind,
+Steigungen), Nebenstraßen, Parks. Sicherheitsbewertungen:
+Nebenstraßen vor Hauptstraßen bevorzugen, Radwege
 ja/nein. In (C) und Perl implementieren.
 
 Analyse eines Streckenabschnitts:
 
 =over
 
-=item * Feststellen der LE<auml>nge
+=item * Feststellen der Länge
 
 =item * Feststellen der Windrichtung und -geschwindigkeit
 
 =item  * Feststellen der Steigung
 
-=item  * Verluste durch StraE<szlig>enqualitE<auml>t
+=item  * Verluste durch Straßenqualität
 
 =item  * Korrigieren auf Maximalgeschwindigkeit (max. Trittfrequenz)
 
@@ -2077,16 +2096,16 @@ Analyse einer Kreuzung:
 =over
 
 =item  * Feststellen, ob es um einen Abbiegevorgang handelt und ggfs. Zeit
-   fE<uuml>r den Abbiegevorgang abziegen
+   für den Abbiegevorgang abziegen
 
 =item  * Feststellen, ob eine Ampel vorhanden ist, und eine
    durchschnittliche Zeit abziehen.
 
-=item  * Feststellen, ob die Vorfahrt beachtet werden muE<szlig>
+=item  * Feststellen, ob die Vorfahrt beachtet werden muß
 
 =back
 
-Z<>=E<gt> nicht unbedingt notwendig, die jetzige LE<ouml>sung reicht erst
+Z<>=E<gt> nicht unbedingt notwendig, die jetzige Lösung reicht erst
 einmal aus...
 
 =item * (H3)
@@ -2097,7 +2116,7 @@ points if delta exceeds 128/128 meters.
 
 =back
 
-=head1 bbbike.cgi
+=head1 CGI version of BBBike (bbbike.cgi)
 
 =over
 
@@ -2208,7 +2227,7 @@ Dokumentieren (in ?info=1): Beschreibung der Sucheinstellungen
 =item * (H2)
 
 Optional mehr Informationen in der Routenbeschreibung aufnehmen, z.B.
-Steigungen, SehenswE<uuml>rdigkeiten in der NE<auml>he,
+Steigungen, Sehenswürdigkeiten in der Nähe,
 U/S-Bahnstationen ... Kommentare sind schon drinnen.
 
 =item * (E3)
@@ -2249,7 +2268,7 @@ Support for kml/kmz files, see misc/Nordosteuropa\ 2006.kmz.
 
 =back
 
-=head1 WAP version of bbbike
+=head1 WAP version of BBBike (wapbbbike)
 
 =over
 
@@ -2557,9 +2576,42 @@ area (in a balloon or additional label/toplevel).
 
 =back
 
+=head2 BikePower
+
+=over
+
+=item *
+
+BikePower: Profile laden/speichern, evtl. auch direkt aus bbbike
+sichtbar. Erst einmal das Problem mit dem Komma (Linux, Solaris mit
+LANG gesetzt) lösen.
+
+=back
+
 =head1 MapServer
 
 =over
+
+=item * (H5)
+
+Verbleibende Issues mit mapserver 4.4.1:
+
+ * Detailanzeige geht sehr oft nicht (Keine Details für diesen Punkt
+   vorhanden.)
+ * Segfault (?) bei einige Zoomstufen+Layerkombinationen (!!!)
+   Problematisch scheint zu sein: U/S-Bahnhof-Symbole als Bild. Wenn
+   ein Quadrat/Kreis stattdessen gezeichnet wird, funktioniert es
+   nicht. Vielleicht hat das Problem auch was mit den fehlenden
+   Bild-Symbolen, s.o., zu tun? Problematische PNGs? Nein, es scheint
+   das Label zu sein. Die Bilder werden nicht angezeigt, aber das
+   scheint keinen Segfault auszulösen...
+ * falls dieser Fehler mit meiner Testsuite nicht getriggert wird:
+   nachholen!
+ * fast alle Bild-Symbole werden nicht angezeigt (Ausnahme: Fähre,
+   Start, Ziel)
+ * Einbahnstraßen sind durch E<quot>>E<quot> markiert (das ist aber
+   OK).
+
 
 =item * (E4)
 
@@ -2618,18 +2670,6 @@ Sehenswürdigkeiten verwendet werden.
 
 =back
 
-=head1 BikePower
-
-=over
-
-=item *
-
-BikePower: Profile laden/speichern, evtl. auch direkt aus bbbike
-sichtbar. Erst einmal das Problem mit dem Komma (Linux, Solaris mit
-LANG gesetzt) lösen.
-
-=back
-
 =head1 Distribution/Installation/other development
 
 =over
@@ -2670,10 +2710,10 @@ und in
 
 =item * (M1)
 
-Das Erzeugen von GIF-Bildern benE<ouml>tigt netpbm, von JPEG-Bildern
+Das Erzeugen von GIF-Bildern benötigt netpbm, von JPEG-Bildern
 die JPEG-Distribution und alle brauchen ghostscript. Eine bessere
-Methode wE<auml>re WinPhoto (wenn es korrekt und unter Win32 überhaupt
-funktionieren wE<uuml>rde). Kann ich in die win32-dist einige weitere
+Methode wäre WinPhoto (wenn es korrekt und unter Win32 überhaupt
+funktionieren würde). Kann ich in die win32-dist einige weitere
 Binaries unterbringen (ppmtogif o.ae.).
 
 =item * (M1)
@@ -2684,9 +2724,9 @@ nachinstallieren (siehe Bundle::BBBike).
 
 =item * (M1)
 
-FreeBSD-Port anpassen, so daE<szlig> install.pl verwendet wird. PLIST
-von install.pl abhE<auml>ngig machen. -kdeinstall in
-AbhE<auml>ngigkeit von HAVE_KDE angeben.
+FreeBSD-Port anpassen, so daß install.pl verwendet wird. PLIST
+von install.pl abhängig machen. -kdeinstall in
+Abhängigkeit von HAVE_KDE angeben.
 
 =back
 
@@ -2702,9 +2742,9 @@ in BBBikeTest.pm unterbringen.
 =item * (M2)
 
 Cgiinfo in cgi2.t funktioniert leider nicht, weil openURL als zweiten
-Parameter nur true oder false zulE<auml>E<szlig>t. Workaround:
+Parameter nur true oder false zuläßt. Workaround:
 Schreiben eines Multiplexers, der per Javascript neue Fenster
-E<ouml>ffnet.
+öffnet.
 
 =item *
 
