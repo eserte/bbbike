@@ -2596,6 +2596,8 @@ LANG gesetzt) lösen.
 
 Verbleibende Issues mit mapserver 4.4.1:
 
+ * Siehe MIGRATION_GUIDE.TXT im mapserver-CVS bzgl. Segfaults und
+   einem GD-Patch. Könnte das bei meinen Problemen helfen?
  * Detailanzeige geht sehr oft nicht (Keine Details für diesen Punkt
    vorhanden.)
  * Segfault (?) bei einige Zoomstufen+Layerkombinationen (!!!)

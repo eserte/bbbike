@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.26 2006/09/14 22:12:28 eserte Exp $
+# $Id: MapServer.pm,v 1.27 2006/09/25 20:38:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.26 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -54,7 +54,9 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.26 $ =~ /(\d+)\.(\d+)/);
 
     sub biokovo_default {
 	my $self = shift->vran_default;
-	$self->MapserverBinDir("/usr/local/bin");
+	#$self->MapserverBinDir("/usr/local/bin");
+	warn "Use latest CVS version...";
+	$self->MapserverBinDir("/usr/local/src/work/mapserver");
 	$self->FontsList("fonts-biokovo.list");
 	$self;
     }

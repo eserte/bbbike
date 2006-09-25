@@ -4295,12 +4295,11 @@ EOF
 userdel	1 9248,9350 9235,9111 9235,9051 9227,8890 9222,8787
 EOF
      },
-     { from  => 1146701340, # 2006-05-04 02:09
-       until => 1150916294, # 2006-09-25 15:00 1159189200 (moved)
-       text  => 'Schulzendorfer Straße zwischen Ruppiner Chaussee und Blisenkrautstr. in beiden Richtungen Baustelle, gesperrt bis 25.09.2006 15:00 Uhr ',
+     { from  => 1159207665, # 2006-09-25 20:07
+       until => 1162303200, # 2006-10-31 15:00
+       text  => 'Schulzendorfer Straße - Am Dachsbau (zwischen Ruppiner Chaussee und Blisenkrautstr.) in beiden Richtungen gesperrt, Baustelle bis 31.10.2006 15:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -862,22946 -596,23009
 userdel	2::inwork -862,22946 -1254,22853
 EOF
      },
@@ -4781,7 +4780,7 @@ userdel	2::inwork -22215,9500 -22510,9372 -23467,9217 -23807,9279 -24319,9296 -2
 EOF
      },
      { from  => 1150916248, # 2006-06-21 20:57
-       until => 1159653599, # 2006-09-30 23:59
+       until => 1159207739, # 1159653599 2006-09-30 23:59, superseded
        text  => 'Schulzendorfer Str. (Reinickendorf) in beiden Richtungen zwischen Damkitzstr. und Ruppiner Chaussee Baustelle, Straße vollständig gesperrt (bis Ende 09.2006)',
        type  => 'gesperrt',
        source_id => 'INKO_82301_COPY_1',
@@ -5884,6 +5883,33 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -53945,-12911 -54243,-12956
+EOF
+     },
+     { from  => 1159207426, # 2006-09-25 20:03
+       until => 1165014000, # 2006-12-02 00:00
+       text  => 'Hohenschönhauser Str. (Hohenschönhausen), zwischen Nordring und Bitterfelder Str. Baustelle, Fahrtrichtung gesperrt (bis 01.12.06)',
+       type  => 'gesperrt',
+       source_id => 'IM_003679',
+       data  => <<EOF,
+userdel	1::inwork 19532,17911 19139,17416 18730,16973
+EOF
+     },
+     { from  => 1159207506, # 2006-09-25 20:05
+       until => 1160949599, # 2006-10-15 23:59
+       text  => 'Maybachufer (Neukölln) in beiden Richtungen zwischen Pannierstr. und Harzer Str. Baustelle, Straße vollständig gesperrt (bis Mitte 10.2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_003672',
+       data  => <<EOF,
+userdel	2::inwork 12841,9368 12785,9443 12569,9547
+EOF
+     },
+     { from  => 1159207537, # 2006-09-25 20:05
+       until => 1159653600, # 2006-10-01 00:00
+       text  => 'Stargarder Str. (Prenzlauer Berg) Richtung Schönhauser Allee zwischen Pappelallee und Greifenhagener Str. Baustelle, Fahrtrichtung gesperrt (bis 30.09.2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_003670',
+       data  => <<EOF,
+userdel	1::inwork 11301,15668 11192,15721 11093,15771
 EOF
      },
     );

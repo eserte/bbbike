@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.31 2006/09/24 21:07:56 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.33 2006/09/25 20:17:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2005 Slaven Rezic. All rights reserved.
@@ -390,6 +390,10 @@ sub create_mapfile {
 	}
 
 	unlink $tmpfile1;
+    }
+
+    if (!$preferred_map_path) {
+	$preferred_map_path = $path_for_scope->($scope);
     }
 
     $preferred_map_path;

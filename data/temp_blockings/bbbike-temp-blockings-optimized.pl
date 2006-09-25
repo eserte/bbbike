@@ -264,7 +264,14 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1162303200,
+         'text' => 'Schulzendorfer Straße - Am Dachsbau (zwischen Ruppiner Chaussee und Blisenkrautstr.) in beiden Richtungen gesperrt, Baustelle bis 31.10.2006 15:00 Uhr',
+         'from' => 1159207665,
+         'data' => 'userdel	2::inwork -862,22946 -1254,22853
+',
+         'type' => 'gesperrt'
+       },
        undef,
        {
          'source_id' => 'IM_002733',
@@ -361,15 +368,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        },
        undef,
        undef,
-       {
-         'source_id' => 'INKO_82301_COPY_1',
-         'until' => 1159653599,
-         'text' => 'Schulzendorfer Str. (Reinickendorf) in beiden Richtungen zwischen Damkitzstr. und Ruppiner Chaussee Baustelle, Straße vollständig gesperrt (bis Ende 09.2006)',
-         'from' => 1150916248,
-         'data' => 'userdel	2::inwork -862,22946 -596,23009
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -879,24 +878,8 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1159135200,
-         'text' => 'L 238 Eberswalde-Joachimsthal Brücke der A 11 zw. Lichterfelde u. Altenhof Brückenabbruch Vollsperrung 23.09.2006-24.09.2006 ',
-         'from' => 1158876000,
-         'data' => 'userdel	2::inwork 30773,54731 31076,54246
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_003565',
-         'until' => 1159156800,
-         'text' => 'Straße des 17. Juni und Yitzak-Rabin-Str. wegen Marathonvorbereitungen gesperrt (bis 25.09.06, 06.00 Uhr)',
-         'from' => 1158865257,
-         'data' => 'userdel	q4::temp 8515,12242 8214,12205 8089,12186
-userdel	q4::temp 8119,12414 8063,12182 7816,12150 7383,12095 6828,12031
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => 1166828400,
          'text' => 'K 6947 Dorfstraße OT Grüningen Straßenbau Vollsperrung 04.09.2006-22.12.2006 ',
@@ -904,6 +887,33 @@ userdel	q4::temp 8119,12414 8063,12182 7816,12150 7383,12095 6828,12031
          'data' => 'userdel	q4::inwork -53945,-12911 -54243,-12956
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_003679',
+         'until' => 1165014000,
+         'text' => 'Hohenschönhauser Str. (Hohenschönhausen), zwischen Nordring und Bitterfelder Str. Baustelle, Fahrtrichtung gesperrt (bis 01.12.06)',
+         'from' => 1159207426,
+         'data' => 'userdel	1::inwork 19532,17911 19139,17416 18730,16973
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003672',
+         'until' => 1160949599,
+         'text' => 'Maybachufer (Neukölln) in beiden Richtungen zwischen Pannierstr. und Harzer Str. Baustelle, Straße vollständig gesperrt (bis Mitte 10.2006)',
+         'from' => 1159207506,
+         'data' => 'userdel	2::inwork 12841,9368 12785,9443 12569,9547
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003670',
+         'until' => 1159653600,
+         'text' => 'Stargarder Str. (Prenzlauer Berg) Richtung Schönhauser Allee zwischen Pappelallee und Greifenhagener Str. Baustelle, Fahrtrichtung gesperrt (bis 30.09.2006)',
+         'from' => 1159207537,
+         'data' => 'userdel	1::inwork 11301,15668 11192,15721 11093,15771
+',
+         'type' => 'gesperrt'
        }
      
 );
