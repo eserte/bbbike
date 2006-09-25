@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.30 2006/08/19 20:08:44 eserte Exp $
+# $Id: Makefile,v 1.31 2006/09/25 21:49:06 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -213,3 +213,12 @@ png-to-jpg:	\
 
 # start.png, via.png, ziel.png should NOT be used to create corresponding gifs
 # dest.png was used to create dest.gif (by GIMP), but looks ugly
+
+# Creation of ampelf*noalpha.png
+#
+#   pngtopnm -alpha ampelf_klein_noalpha.png > /tmp/a.ppm
+#   pngtopnm ampelf_klein_noalpha.png > /tmp/b.ppm
+#   pnmtopng -alpha /tmp/a.ppm /tmp/b.ppm > ampelf_klein_noalpha.png
+#
+# This is the only way I found to make sure that the alpha mask
+# is not preserved. What I want is just transparency.

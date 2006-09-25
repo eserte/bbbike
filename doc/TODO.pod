@@ -2614,6 +2614,12 @@ Verbleibende Issues mit mapserver 4.4.1:
  * Einbahnstraﬂen sind durch E<quot>>E<quot> markiert (das ist aber
    OK).
 
+ * CVS-Version (2006-09-25) scheint viel besser zu funktionieren! Noch
+   kein einziger Segfault! Ich habe allerdings auch den GD-Patch oben
+   angewandt (der aber mit mapserver 4.4.1 nicht geholfen hat).
+ * alpha in Symbolen scheint nicht zu funktionieren, und es gibt wohl
+   Bugreports auf Bugzilla. Aber die *noalpha*png-Bilder funktionieren
+   nun.
 
 =item * (E4)
 

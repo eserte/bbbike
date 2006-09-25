@@ -12,11 +12,26 @@ SHAPEPATH "[% MAPSERVER_DIR %]/data"
 IMAGECOLOR [% IMAGECOLOR %]
 FONTSET "[% MAPSERVER_DIR %]/[% FONTS_LIST %]"
 
+[% IF 1 %]
 # you may need to change this to match your MapServer build
 [% UNLESS IMAGE_TYPE.defined; IMAGE_TYPE = "png"; END -%]
 [%# some (all?) GD versions cannot handle alpha channels well ... -%]
 [% IF IMAGE_TYPE == "png"; SET NOALPHA = "_noalpha"; ELSE; SET NOALPHA = ""; END -%]
 IMAGETYPE [% IMAGE_TYPE %]
+
+[% ELSE %]
+# I thought this could be a good fix for the alpha problem.
+# But it did not work...
+OUTPUTFORMAT
+  NAME pnga
+  DRIVER "GD/PNG"
+  MIMETYPE "image/gif"
+  IMAGEMODE RGBA
+  TRANSPARENT ON
+  EXTENSION "png"
+END
+IMAGETYPE pnga
+[% END %]
 
 #
 # Projection definition, consult the PROJ.4 documentation for parameter discussion
