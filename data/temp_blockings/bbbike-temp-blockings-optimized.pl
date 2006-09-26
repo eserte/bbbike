@@ -635,7 +635,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
        },
        {
          'until' => 1159653600,
-         'text' => 'L 038 zw. Briesen und Petersdorf grundhafter Straßenbau Vollsperrung 21.08.2006-30.09.2006 ',
+         'text' => 'L 038 zw. Briesen und Petersdorf grundhafter Straßenbau Vollsperrung 26.09.2006-31.12.2006 ',
          'from' => 1156024800,
          'data' => 'userdel	2::inwork 70549,-5215 71331,-5118 73292,-4598 74238,-3970 74606,-3837
 ',
@@ -912,6 +912,14 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'text' => 'Stargarder Str. (Prenzlauer Berg) Richtung Schönhauser Allee zwischen Pappelallee und Greifenhagener Str. Baustelle, Fahrtrichtung gesperrt (bis 30.09.2006)',
          'from' => 1159207537,
          'data' => 'userdel	1::inwork 11301,15668 11192,15721 11093,15771
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1160690400,
+         'text' => 'B 096 Baruth-Wünsdorf Bahnübegang in der OD Neuhof Gleisbauarbeiten Vollsperrung 11.10.2006-12.10.2006 ',
+         'from' => 1160431200,
+         'data' => 'userdel	2::inwork 16407,-29400 16379,-29446 16336,-29511
 ',
          'type' => 'gesperrt'
        }

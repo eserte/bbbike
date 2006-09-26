@@ -5447,7 +5447,7 @@ EOF
      },
      { from  => 1156024800, # 2006-08-20 00:00
        until => 1159653600, # 2006-10-01 00:00
-       text  => 'L 038 zw. Briesen und Petersdorf grundhafter Straßenbau Vollsperrung 21.08.2006-30.09.2006 ',
+       text  => 'L 038 zw. Briesen und Petersdorf grundhafter Straßenbau Vollsperrung 26.09.2006-31.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 70549,-5215 71331,-5118 73292,-4598 74238,-3970 74606,-3837
@@ -5910,6 +5910,14 @@ EOF
        source_id => 'IM_003670',
        data  => <<EOF,
 userdel	1::inwork 11301,15668 11192,15721 11093,15771
+EOF
+     },
+     { from  => 1160431200, # 2006-10-10 00:00
+       until => 1160690400, # 2006-10-13 00:00
+       text  => 'B 096 Baruth-Wünsdorf Bahnübegang in der OD Neuhof Gleisbauarbeiten Vollsperrung 11.10.2006-12.10.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 16407,-29400 16379,-29446 16336,-29511
 EOF
      },
     );

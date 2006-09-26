@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.35 2006/09/21 00:51:54 eserte Exp $
+# $Id: PDF.pm,v 2.36 2006/09/25 22:55:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.35 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.36 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -351,7 +351,7 @@ if(1||$self->{Width} < $self->{Height}){#XXX scheint sonst undefinierbare Proble
 		eval {
 		    require File::Basename;
 		    require GD;
-		    my $file_8bit = "/tmp/bbbikedraw_pdf_8bit_" . File::Basename::basename($file);
+		    my $file_8bit = "/tmp/bbbikedraw_" . $< . "_pdf_8bit_" . File::Basename::basename($file);
 		    if (-r $file_8bit) {
 			$file = $file_8bit;
 		    } else {

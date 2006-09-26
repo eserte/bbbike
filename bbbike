@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.273 2006/09/23 20:32:55 eserte Exp $
+# $Id: bbbike,v 3.273 2006/09/23 20:32:55 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -5774,7 +5774,15 @@ sub generate_plot_functions {
 		} elsif ($cat_hin =~ /^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/) { # Bild, no $cat_rueck handling here
 		    my $img = $1;
 		    my $anchor = ($2 ? $2 : "c");
-		    $img = file_name_is_absolute($img) ? $img : Tk::findINC("data/$img");
+		    if (!file_name_is_absolute($img)) {
+		        my $abs_img = Tk::findINC("data/$img");
+			if ($abs_img) {
+		    	    $img = $abs_img;
+			} else {
+			    # relative to this file
+			    $img = dirname($str_file{$abk}) . "/" . $img;
+			}
+		    }
 		    my $p = image_from_file($top, $img);
 		    # XXX this is leaking (photo never deleted...)
 		    # XXX $abk-XXX => $abk-fg or $abk-img ?

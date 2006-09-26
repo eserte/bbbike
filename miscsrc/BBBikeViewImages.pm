@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.11 2006/09/05 21:44:12 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.12 2006/09/26 20:16:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -15,8 +15,11 @@ use BBBikePlugin;
 push @ISA, "BBBikePlugin";
 
 use strict;
-use vars qw($VERSION $viewer_cursor $viewer $geometry);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+use vars qw($VERSION $viewer_cursor $viewer $geometry $viewer_menu);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+
+use BBBikeUtil qw(file_name_is_absolute);
+use File::Basename qw(dirname);
 
 my $iso_date_rx = qr{(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})};
 
@@ -93,14 +96,22 @@ sub add_button {
 	     [[Radiobutton => "Internen Viewer verwenden",
 	       -variable => \$viewer,
 	       -value => "_internal",
+	       -command => sub { viewer_change() },
 	      ],
 	      [Radiobutton => "xv",
 	       -variable => \$viewer,
 	       -value => "xv",
+	       -command => sub { viewer_change() },
 	      ],
 	      [Radiobutton => "ImageMagick (display)",
 	       -variable => \$viewer,
 	       -value => "display",
+	       -command => sub { viewer_change() },
+	      ],
+	      [Radiobutton => "WWW-Browser",
+	       -variable => \$viewer,
+	       -value => "_wwwbrowser",
+	       -command => sub { viewer_change() },
 	      ],
 	      "-",
 	      [Radiobutton => "Maximale Größe",
@@ -127,6 +138,22 @@ sub add_button {
 	     __PACKAGE__."_menu",
 	    );
 
+    $viewer_menu = $mmf->Subwidget(__PACKAGE__."_menu")->menu;
+}
+
+sub viewer_change {
+    my $enable;
+    if ($viewer eq '_wwwbrowser') {
+	$enable = 0;
+    } else {
+	$enable = 1;
+    }
+    for my $inx (0 .. $viewer_menu->index("end")) {
+	my $varref = eval { $viewer_menu->entrycget($inx, -variable) };
+	if ($varref && $varref == \$geometry) {
+	    $viewer_menu->entryconfigure($inx, -state => $enable ? "normal" : "disabled");
+	}
+    }
 }
 
 sub activate {
@@ -178,6 +205,21 @@ sub show_image_viewer {
 	$name = $tags[$tag_index];
 	if ($name =~ /^Image:\s*\"([^\"]+)\"/) {
 	    $abs_file = $1;
+	    if (!file_name_is_absolute($abs_file)) {
+	    SEARCH_FOR_ABS_FILE: {
+		    for my $hash (\%main::str_file, \%main::p_file) {
+			for my $tag (@tags) {
+			    if (exists $hash->{$tag}) {
+				my $try_file = dirname($hash->{$tag}) . "/" . $abs_file;
+				if (-r $try_file) {
+				    $abs_file = $try_file;
+				    last SEARCH_FOR_ABS_FILE;
+				}
+			    }
+			}
+		    }
+		}
+	    }
 	}
 	last if (defined $abs_file)
     }
@@ -204,7 +246,9 @@ sub show_image_viewer {
 		    $image_viewer_toplevel->Advertise(PrevButton => $prev_button);
 		    my $next_button = $f->Button(-text => ">>")->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(NextButton => $next_button);
-		    my $date_label = $f->Label->pack(-side => "left");
+		    my $n_of_m_label = $f->Label->pack(-side => "left");
+		    $image_viewer_toplevel->Advertise(NOfMLabel => $n_of_m_label);
+		    my $date_label = $f->Label->pack(-side => "left", -padx => 4);
 		    $image_viewer_toplevel->Advertise(DateLabel => $date_label);
 		    $f->Button(Name => "close",
 			       -command => sub { $image_viewer_toplevel->destroy },
@@ -260,6 +304,18 @@ sub show_image_viewer {
 		    $new_inx;
 		};
 
+		# Returns 1 .. @$all_image_inx
+		my $this_index_in_array = sub {
+		    my $i = 0;
+		    for my $inx (@$all_image_inx) {
+			$i++;
+			if ($inx == $current_inx) {
+			    return $i;
+			}
+		    }
+		    undef;
+		};
+
 		my $prev_inx = $next_image_index->(-1);
 		my $next_inx = $next_image_index->(+1);
 
@@ -276,6 +332,8 @@ sub show_image_viewer {
 		} else {
 		    $image_viewer_toplevel->Subwidget("NextButton")->configure(-state => "disabled");
 		}
+
+		$image_viewer_toplevel->Subwidget("NOfMLabel")->configure(-text => $this_index_in_array->() . "/" . @$all_image_inx);
 
 		$image_viewer_toplevel->Subwidget("DateLabel")->configure(-text => $date);
 
@@ -324,6 +382,9 @@ sub show_image_viewer {
 		warn $!;
 		CORE::exit(1);
 	    }
+	} elsif ($viewer eq '_wwwbrowser') {
+	    require WWWBrowser;
+	    WWWBrowser::start_browser("file://$abs_file", -oldwindow => 1);
 	} else {
 	    my $cmd = "$viewer $abs_file";
 	    warn "Try $cmd...\n";
