@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen.t,v 1.10 2006/05/16 06:13:07 eserte Exp $
+# $Id: strassen.t,v 1.11 2006/09/27 23:44:59 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -38,8 +38,10 @@ GetOptions(get_std_opts("xxx"),
 	  ) or die "usage";
 
 my $doit_tests = 6;
+my $strassen_orig_tests = 5;
+my $zebrastreifen_tests = 3;
 
-plan tests => 31 + $doit_tests;
+plan tests => 26 + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests;
 
 goto XXX if $do_xxx;
 
@@ -226,7 +228,7 @@ EOF
 
 SKIP: {
     my $f = "strassen-orig";
-    skip("$f not available", 5)
+    skip("$f not available", $strassen_orig_tests)
 	if (!-r "$FindBin::RealBin/../data/$f");
 
     my $s = Strassen->new($f, NoRead => 1);
@@ -250,4 +252,19 @@ SKIP: {
     is($size1*2, $size2, "write and append");
 }
 
+SKIP: {
+    my $f = "$FindBin::RealBin/../misc/zebrastreifen";
+    skip("$f not available", $zebrastreifen_tests)
+	if !-r $f;
+
+    my $s = Strassen->new($f, NoRead => 1);
+    $s->read_data(ReadOnlyGlobalDirectives => 1);
+    my $glob_dir = Strassen->get_global_directives($f);
+    is($glob_dir->{"category_image.Zs"}->[0], "verkehrszeichen/42_350.gif");
+    is($glob_dir->{"title"}->[0], "Zebrastreifen in Berlin");
+    is($glob_dir->{"emacs-mode"}->[0], "-*- bbbike -*-", "Test the emacs-mode hack");
+}
+
+
+    
 __END__

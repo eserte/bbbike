@@ -462,9 +462,9 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        {
          'source_id' => 'IM_003395',
-         'until' => 1159653599,
-         'text' => 'Lützowplatz (Mitte) in beiden Richtungen zwischen Einemstr. und Lützowufer Baustelle, Straße vollständig gesperrt (bis Ende 09.2006)',
-         'from' => 1156893254,
+         'until' => 1159739999,
+         'text' => 'Lützowplatz (Mitte) in beiden Richtungen zwischen Einemstr. und Lützowufer Baustelle, Straße vollständig gesperrt (bis Anfang 10.2006)',
+         'from' => 1159397648,
          'data' => 'userdel	2::inwork 7002,11034 7010,11002 6918,10854
 ',
          'type' => 'gesperrt'
@@ -506,15 +506,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_003129',
-         'until' => 1159394400,
-         'text' => 'Ringstr. (Lichterfelde) Richtung Carstennstr. zwischen Lotzestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 27.09.2006)',
-         'from' => 1158185618,
-         'data' => 'userdel	1::inwork 2639,2989 2638,2843
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_003134',
          'until' => 1159653600,
@@ -649,15 +641,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_003422',
-         'until' => 1159653599,
-         'text' => 'Rixdorfer Str. (Treptow ) in Richtung Südostallee, von Schnellerstr. bis Kiefholzstr., Baustelle, Fahrtrichtung gesperrt (bis Ende 09/2006)',
-         'from' => 1156976280,
-         'data' => 'userdel	1::inwork 17290,6228 17239,6182 17156,6235 16861,5935
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -804,14 +788,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1159308000,
-         'text' => 'B 246 Nächst Neuendorfer Chaussee Bahnübergang in der OL Zossen Gleisbauarbeiten Vollsperrung 23.09.2006-26.09.2006 ',
-         'from' => 1158876000,
-         'data' => 'userdel	2::inwork 13623,-20519 13414,-20498 13326,-20518
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1159740000,
          'text' => 'L 030 Spreebordstraße OL Neu Zittau Deckeneinbau Vollsperrung 28.09.2006-01.10.2006 ',
@@ -920,6 +897,23 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'text' => 'B 096 Baruth-Wünsdorf Bahnübegang in der OD Neuhof Gleisbauarbeiten Vollsperrung 11.10.2006-12.10.2006 ',
          'from' => 1160431200,
          'data' => 'userdel	2::inwork 16407,-29400 16379,-29446 16336,-29511
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003692',
+         'until' => 1159999200,
+         'text' => 'Rixdorfer Str. (Treptow ) in beiden Richtungen, zwischen Schnellerstr. und Kiefholzstr. Baustelle, Straße vollständig gesperrt (bis 04.10.06)',
+         'from' => 1159397688,
+         'data' => 'userdel	2::inwork 16861,5935 17156,6235
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1162594800,
+         'text' => 'B 168 Trampe - Eberswalde Trampe, Dorfstraße-Eberswalde Deckenerneuerung Vollsperrung 27.09.2006-03.11.2006 ',
+         'from' => 1159221600,
+         'data' => 'userdel	2::inwork 38554,47567 39446,42585
 ',
          'type' => 'gesperrt'
        }

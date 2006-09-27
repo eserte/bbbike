@@ -97,9 +97,9 @@ Uferweg - Friedrich-Ebert-Str. an der Nikolaikirche: zurzeit wegen Bauarbeiten k
 Gramzow: nach Abschluss der Bauarbeiten kein Kopfsteinpflaster mehr?	? 50109,89725 49930,89857
 #: next_check: 2005-11-30
 Großziethen: Kopfsteinpflaster nur Richtung Süden, nach den Arbeiten kein Kopfsteinpflaster mehr	?; 12984,1011 13090,205 13225,-681 13309,-1268
-#: last_checked: 2005-11-28
+#: last_checked: 2006-09-28
 # siehe auch: Message-ID: <Xns97C2C17E2F1484usenet@krickstadt.de>
-Südkreuz: Durchbruch zwischen Reichartstr. und Werner-Voß-Damm in Bau (Verlängerte General-Pape-Str. bzw. Verlängerte Reichartstr., wahrscheinlicher Name: Ballonfahrerweg, L 487, Fertigstellung bis Herbst 2006 (2006-10-01))	? 7924,7431 7959,7609
+Südkreuz: Durchbruch zwischen Reichartstr. und Werner-Voß-Damm in Bau (Verlängerte General-Pape-Str. bzw. Verlängerte Reichartstr., wahrscheinlicher Name: Ballonfahrerweg, L 487, Fertigstellung bis Herbst 2006 (2006-10-01))	?::inwork 7924,7431 7959,7609
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1370
 Werder - Phöben: Radweg in Planung, Realisierung bis 2007-12-31	? -22206,-1693 -22683,-1521 -23133,-1244 -23199,-903 -23175,-350 -23411,15 -23896,653 -24509,1607 -24680,1670 -24894,1733
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1370
@@ -899,7 +899,6 @@ Bugewitz - Kamp: Qualität, Wegführung?	? 36594,153973 35737,156666
 Bugewitz - Anklam: Qualität, Wegführung?	? 36267,156917 36058,158621 35205,158824 35154,160023 34504,161039 33346,161130 31823,160043 31193,160063 31122,160277 30502,160673 27589,161496
 Kutzow - Garz: Qualität, Wegführung?	? 56715,165482 59363,164986
 Grenzweg: Kopfsteinpflaster: schlecht oder mäßig?	? 17686,7589 17295,7336 17211,7265
-Matthäifriedhofsweg: Qualität?	? 7230,7264 7477,7122 7605,7109
 #: by: berliner-stadtplan
 Naturpark Schöneberger Südgelände: Gibt es eine Verbindung zum Prellerweg?	? 7335,5807 7326,5680
 #: XXX unklarer Eintrag von einem Benutzer
@@ -1399,3 +1398,13 @@ Dahme: Qualität?	? 13491,-59794 13153,-59795 13484,-59914 13618,-59923
 Dahme: Qualität?	? 13491,-59794 13484,-59914
 Flaeming-Skate: genaue Wegführung? Qualität (sehr wahrscheinlich asphaltierte Radwege)?	? -9213,-54963 -9344,-53208 -11886,-53092 -12971,-53519 -13435,-53458 -13541,-53416 -15097,-53836 -16023,-53738 -16450,-51252 -15670,-50350 -15180,-49026 -15541,-48942 -16052,-48454 -16774,-47944 -15524,-46864 -15024,-47035 -13364,-45979 -13208,-45719 -12928,-45767 -11758,-44987 -11587,-45243 -10490,-44926 -10563,-44402 -9588,-43951 -9186,-43415 -8972,-43459 -8808,-43586 -8906,-44085 -8502,-44589
 Flaeming-Skate: genaue Wegführung? Qualität (sehr wahrscheinlich asphaltierte Radwege)?	? -5347,-38826 -2517,-38996
+Str. 17: Qualität?	? 7314,7451 7305,7221
+Begasstr.: Qualität? Abschnitte nicht für Autofahrer passierbar? Ampel an der Kreuzung Rubensstr.? Hausdurchfahrten?	? 6275,7004 6414,7009 6505,7010 6662,7018 6781,7030
+Pöppelmannstr.: Qualität?	? 6505,7010 6530,6786
+Grazer Platz: Überquerung des Platzes in Höhe Pöppelmannstr. möglich? Qualität?	? 6530,6786 6546,6720
+Kauschstr.: Qualität?	? 6517,6717 6538,6499
+Altmarkstr.: Qualität? Fußgängerampel an der Kreuzung Bergstr.?	? 6338,6312 6323,6270 6310,6121 6318,6002 6326,5912 6333,5819
+Friedrichsruher Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 6637,5952 6522,5933 6326,5912 6134,5894 6018,5884 5851,5863 5694,5845 5679,5853
+Jeverstr.: Qualität (laut ADFC-Karte gut geeignet)? Ist der südliche Abschnitt für Autofahrer gesperrt?	? 5681,5743 5679,5853 5670,5889 5699,5949 5748,6051 5776,6118 5834,6142
+Schönhauser Str.: Qualität (laut ADFC-Karte zumindest der nördliche Abschnitt gut geeignet)?	? 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5838,5761
+Sachsenwaldstr.: Qualität?	? 5834,6142 5996,6238 6116,6261

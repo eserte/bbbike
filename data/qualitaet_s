@@ -1,5 +1,5 @@
 #: title: Qualit‰t von Straﬂen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.178 2006/09/22 20:12:35 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.179 2006/09/27 23:38:14 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Br¸cken, Straﬂen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -723,8 +723,8 @@ Seeuferstr.: m‰ﬂiges Kopfsteinpflaster	Q2 -4071,1739 -4044,1841
 Nymphenufer: m‰ﬂig geeignet	Q2 -4044,1841 -3981,1764 -3806,1644 -3761,1576 -3654,1539
 Dolomitenstr.: m‰ﬂig geeignet	Q2 10596,17554 10473,17446 10305,17299
 (Orankestr. - Orankesee): gut geeignet	Q0 15598,15793 15581,15846
-Peter-Vischer-Str.: Asphalt	Q0 6185,6469 6324,6480 6473,6493 6706,6513 6826,6523
-Riemenschneiderweg: m‰ﬂiger Asphalt	Q1 6826,6523 6811,6737 6802,6816 6773,7116
+Peter-Vischer-Str.: Asphalt	Q0 6185,6469 6324,6480 6473,6493 6538,6499 6706,6513 6826,6523
+Riemenschneiderweg: m‰ﬂiger Asphalt	Q1 6826,6523 6811,6737 6802,6816 6781,7030 6773,7116
 Wuhlewanderweg (Ahrensfelder Berg): glatter Parkweg	Q1 22631,16215 22657,16287 22662,16306 22690,16383 22699,16501 22735,16630 22722,16906
 Wuhlewanderweg (Ahrensfelder Berg): Betonweg, OK	Q1 22722,16906 22611,17126 22432,17245
 Wuhlewanderweg (Ahrensfelder Berg): Feldweg	Q2 22432,17245 22349,17302 22240,17379 22103,17475 22002,17492
@@ -1391,6 +1391,13 @@ Sven-Hedin-Str.: asphaltierte Fahrbahn, Verbundsteinpflasterradweg	Q0 270,3757 -
 Sch¸tzallee: kleinteiliges Kopfsteinpflaster auf der Fahrbahn, Radweg mit unebenen Pflaster	Q1 2230,3823 2151,3834 1952,3864 1918,3868
 Sch¸tzallee: asphaltierte Fahrbahn, Radweg mit unebenen Pflaster	Q0 1918,3868 1815,3876 1783,3879 1738,3881 1677,3885 1572,3883 1524,3882 1476,3881 1389,3879 1273,3877 1130,3868 897,3799 463,3671
 (Robert-W.-Kempner-Str. - Colmarer Weg): Verbundsteinpflasterradweg	Q1 2012,3356 2065,3286
+Eisackstr.: m‰ﬂiger Asphalt	Q1 6429,7876 6464,7739 6499,7690
+Traegerstr.: Asphalt	Q0 6464,7739 6410,7722 6332,7721 6274,7751 6225,7776
+Cecilieng‰rten: ¸berwiegend guter Asphalt, kurze Stellen mit m‰ﬂigem Asphalt	Q0 6274,7751 6258,7669 6255,7469 6249,7219
+Hedwigstr. (Friedenau): Asphalt	Q0 5817,7223 5958,7220 6081,7215
+Semperstr.: Asphalt	Q0 6081,7215 6155,7216 6249,7219 6277,7220
+Matth‰ifriedhofsweg: m‰ﬂiges Kopfsteinpflaster, teilweise welliger Asphalt	Q2 7230,7264 7305,7221 7477,7122 7563,7113
+Matth‰ifriedhofsweg: kleinteiliges Kopfsteinpflaster	Q1 7563,7113 7605,7109
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: m‰ﬂiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 364,4829 319,4906 168,5092 103,5123
 P¸cklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2240,6904 2116,6861 2054,6840 1975,6818
@@ -1570,7 +1577,7 @@ Maisweg: Asphalt	Q0 20682,12646 20818,12628 20843,12677 20953,12866 20996,13162 
 Ingw‰onenweg: Asphalt	Q0 16500,22465 16593,22903 16708,23246 16831,23615
 Wulfila-Ufer: Asphalt	Q0 8249,4769 8494,5001 8750,5173
 Schluchseestr.: Asphalt	Q0 5006,22507 5056,22389 5098,22326 5209,22229 5335,22196 5443,22210 5515,22250 5735,22564 5801,22618
-Niedstr.: Asphalt	Q0 5364,7330 5653,7333 5810,7337 5902,7334
+Niedstr.: Asphalt	Q0 5364,7330 5641,7332 5810,7337 5902,7334
 J‰gerstr. (Kaulsdorf): fester Sandweg	Q2 22631,8531 22506,8828 22009,9118 21831,9134
 Kˆnigswinterstr.: m‰ﬂiger Asphalt	Q1 19148,8406 18998,8784 18962,8879 18992,9000
 Schliemannstr.: Kopfsteinpflaster	Q2 11154,14985 11334,15248
@@ -1606,6 +1613,7 @@ Babelsberger Str.: Asphalt	Q0 5805,8352 5800,8592 5801,8815 5785,9043
 Hansastr. (Wedding): Kopfsteinpflaster	Q2 8079,16953 7884,16940 7852,16963
 Hattinger Weg: guter Asphalt	Q0 1536,18423 1566,18532 1595,18528 1623,18523 1625,18416
 Canovastr.: Asphalt	Q0 6338,6312 6495,6301
+Canovastr.: Asphalt	Q0 6116,6261 6198,6270 6305,6287 6323,6270
 Wiclefstr.: Kopfsteinpflaster	Q2 5239,13824 5417,13817 5609,13790 5743,13772 5907,13746 6005,13734 6095,13724
 Buchstr.: Asphalt	Q0 6599,14735 6445,14893
 Stephanstr. (Tiergarten): Kopfsteinpflaster	Q2 6242,13953 6388,14045 6496,14118 6696,14197 7037,14274
@@ -2316,7 +2324,7 @@ Kloster-Zinna-Str.: Asphalt	Q0 11218,-350 11704,-303
 Mauerweg Lichtenrade - Buckow: unbefestigte Strecke	Q2 11646,-3251 11803,-3250 12232,-2281 12265,-2147 11980,-1197 11736,-293 11581,281 11618,506 11794,550
 Campestr.: Asphalt	Q0 1127,20434 1128,20525 1080,20617
 Willdenowstr. (Wedding): Kopfsteinpflaster	Q2 7356,15350 7525,15186 7629,15078
-Lothar-Bucher-Str.: Asphalt	Q0 5598,6136 5748,6067 5845,6062 6024,6080
+Lothar-Bucher-Str.: Asphalt	Q0 5598,6136 5748,6051 5845,6049 6024,6080
 Buchhorster Str.: Asphalt	Q0 7992,20515 7637,20614
 Albestr.: Asphalt	Q0 5422,7461 5448,7436 5640,7435 5811,7433
 Flotowstr.: Asphalt	Q0 5804,12362 5815,12331 5874,12165

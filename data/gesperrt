@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.147 2006/09/22 20:12:35 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.148 2006/09/27 23:38:14 eserte Exp $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -168,8 +168,8 @@ Atzpodienstr.	1 16468,12386 16445,12193 16415,11926
 Alt-Lietzow	1 4221,12306 4108,12326 4073,12355 4092,12385 4134,12391 4257,12357
 Martin-Wagner-Ring	1 12796,3821 12895,3991 12941,4015 12995,4003 13007,3949 12913,3743
 Wilskistr.	1 -402,4012 -234,4136 21,4434 207,4575 301,4643 418,4696 639,4754 798,4766
-Grazer Platz	1 6445,6769 6679,6816 6802,6816
-Grazer Platz	1 6811,6737 6686,6735 6451,6710
+Grazer Platz	1 6445,6769 6530,6786 6679,6816 6802,6816
+Grazer Platz	1 6811,6737 6686,6735 6546,6720 6517,6717 6451,6710
 Goltzstr. (Spandau)	1 -2843,16947 -3031,16807
 Putlitzstr.	1 6210,13939 6214,14208
 Putlitzstr.	1 6289,14225 6286,14183 6264,13995 6242,13953
@@ -324,6 +324,7 @@ Parchimer Str.	1 22292,12198 22228,12274 22212,12349 22212,12422 22256,12489 222
 Ringbahnstr.	1 12934,6967 13081,7014
 Stiftsweg/Bleicheroder Str.	1 11025,18531 11268,18851 11439,18890 11620,18971 11725,19007 11805,19071
 Glasbläserallee: Tore versperren die Durchfahrt	2 14893,10359 14839,10271
+Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
 Mauerstr.	1 -13425,-852 -13500,-640
 Wilhelm-Staab-Str.	1 -13003,-1343 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12685,-870 -12712,-734 -12730,-627
@@ -745,7 +746,7 @@ tragen (Spreetunnel)	0:60:24 25658,4619
 tragen (Spreetunnel)	0:60 25565,4549
 tragen (Brücke Tegeler Hafen)	0:60:-256 1227,20281
 tragen (Brücke Tegeler Hafen)	0:60:-231 1166,20330
-tragen (S-Bahn-Zugang, insgesamt drei Treppen á 12 Stufen)	0:120:-183 7854,7572
+tragen (Zugang zum Bahnhof, ca. 20 Stufen)	0:30:-244 7934,7621
 tragen? (Fußgängerbrücke)	0:120:-63 20442,564
 tragen? (Fußgängerbrücke)	0:120:-192 19770,-213
 tragen (Stufen), mit MTB befahrbar	0:30:-69 5725,11644

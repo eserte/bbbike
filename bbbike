@@ -3414,7 +3414,7 @@ sub do_iconframe {
       );
     $opbm->command
       (-label => M"Schriftart ändern",
-       -command => \&change_font,
+       -command => sub { change_font() },
       );
     $opbm->checkbutton(-label => M"gedrehte Zeichensätze",
 		       -variable => \$use_font_rot);
@@ -5625,7 +5625,7 @@ sub generate_plot_functions {
 		    }
 		    if ($image) {
 			if (!$photo{$image}) {
-			    my $f = file_name_is_absolute($image) ? $image : Tk::findINC("images/$image");
+			    my $f = maybe_expand_image_file($image, $str_file{$abk});
 			    if ($f) {
 				$photo{$image} = image_from_file($top, $f);
 			    } else {
@@ -5772,17 +5772,8 @@ sub generate_plot_functions {
 		    }
 
 		} elsif ($cat_hin =~ /^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/) { # Bild, no $cat_rueck handling here
-		    my $img = $1;
+		    my $img = maybe_expand_image_file($1, $str_file{$abk});
 		    my $anchor = ($2 ? $2 : "c");
-		    if (!file_name_is_absolute($img)) {
-		        my $abs_img = Tk::findINC("data/$img");
-			if ($abs_img) {
-		    	    $img = $abs_img;
-			} else {
-			    # relative to this file
-			    $img = dirname($str_file{$abk}) . "/" . $img;
-			}
-		    }
 		    my $p = image_from_file($top, $img);
 		    # XXX this is leaking (photo never deleted...)
 		    # XXX $abk-XXX => $abk-fg or $abk-img ?
@@ -6048,7 +6039,7 @@ EOF
 		my $anchor = ($2 ? $2 : "c");
 		my($base) = ($photo =~ m|/| ? $photo =~ /([^\/]+)$/ : $photo);
 		$base = "p_$base";
-		my $p = get_image_for_p($base, $photo);
+		my $p = get_image_for_p($base, $photo, $abk);
 		if ($p) {
 		    $c->createImage($x, $y, -image => $p,
 				    -anchor => $anchor,
@@ -6242,6 +6233,19 @@ EOF
 	    }
 	};
 EOF
+}
+
+sub maybe_expand_image_file {
+    my($imgfile, $datafile) = @_;
+    if (file_name_is_absolute($imgfile)) {
+	return $imgfile;
+    }
+    my $abs_img = Tk::findINC("data/$imgfile");
+    if ($abs_img) {
+	return $abs_img;
+    }
+    # relative to this file
+    return dirname($datafile) . "/" . $imgfile;
 }
 
 sub set_bindings {
@@ -17956,19 +17960,34 @@ sub set_mouse_desc {
 }
 
 sub change_font {
+    my($font_type) = @_;
+    $font_type = "normal" if !$font_type;
     eval {
 	require Tk::FontDialog;
-	Tk::FontDialog->VERSION(0.05);
+	Tk::FontDialog->VERSION(0.06); # -fixedfont...
     };
     if ($@) {
 	return if !perlmod_install_advice('Tk::FontDialog');
     }
-    my $fedit = $top->FontDialog;
+
+    my %fd_args;
+    if ($font_type eq 'fixed') {
+	$fd_args{'-fixedfont'} = 1;
+	$fd_args{'-fixedfontsbutton'} = 0;
+	$fd_args{'-initfont'} = $font{'fixed'};
+    }
+    my $fedit = $top->FontDialog(%fd_args);
     my $f = $fedit->Show;
     if (defined $f) {
-	my $normal_font = $f;
-	set_fonts($normal_font);
-	$top->optionAdd("*font" => $font{normal}, 'userDefault');
+	if ($font_type eq 'fixed') {
+	    $font{'fixed'} = $f; # XXX probably this does not re-set existing labels
+	    $fixed_font_family = $top->fontActual($font{'fixed'}, '-family');
+	    # XXX note that there's no way to set the point size
+	} else {
+	    my $normal_font = $f;
+	    set_fonts($normal_font);
+	    $top->optionAdd("*font" => $font{normal}, 'userDefault');
+	}
     }
 }
 
@@ -18878,7 +18897,7 @@ sub get_image_for_p {
     if (!$p) {
 	eval {
 	    my $dir = dirname($p_file{$abk});
-	    #warn "Try $dir/$file...\n";
+	    warn "Try $dir/$file...\n";
 	    $p = $c->Photo(-file => "$dir/$file");
 	};
     }

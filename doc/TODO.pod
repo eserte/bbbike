@@ -60,6 +60,9 @@ Google, GoYellow.
 
 Aufräumen des Options-Editors.
 
+Wenn Tk::Getopt es unterstützt, dann vertikalen Listenview statt Tabs
+verwenden.
+
 =item * (M3) (feature)
 
 Routenliste: gewünschte Attribute für die Kommentare sollten über den
@@ -69,8 +72,9 @@ Options-Editor einstellbar sein.
 
 If FontDialog is available, then use this instead of the *font entries
 in the option editor. Make FontDialog also usable for fixed font
-selection. Otherwise, if FontDialog is not available, the chosen fonts
-should be made immediately visible using set_fonts().
+selection (this needs the slow -fixedfont option of FontDialog).
+Otherwise, if FontDialog is not available, the chosen fonts should be
+made immediately visible using set_fonts().
 
 =item * (H5)
 

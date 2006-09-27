@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.130 2006/09/22 20:12:35 eserte Exp eserte $
+#: version: $Id: handicap_s-orig,v 4.131 2006/09/27 23:38:14 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # XXX hier br‰uchte man keine zus‰tzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -105,7 +105,7 @@ Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10333,14983 10238,15316 10186,154
 (Fuﬂg‰ngerbr¸cke Ostkreuz): Fuﬂg‰nger	q3 14798,10985 14761,10982 14739,10892 14794,10844
 Marheinekeplatz: Fuﬂg‰nger, Brunnen	q3 9882,9287 9881,9238
 (Uferweg am Urbanhafen): Fuﬂg‰nger	q1 11177,9935 11052,9935 10923,9925 10522,10056 10490,10080
-S-Bahn-Unterf¸hrung	q3 7854,7572 7934,7621 7959,7609
+Bahnhof	q3 7854,7572 7934,7621 7959,7609
 Marx-Engels-Forum: Fuﬂg‰nger, eigentlich Schiebestrecke	q2 10300,12587 10355,12551 10411,12471 10422,12395
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12325,13148 12344,13157 12372,13198 12382,13262 12474,13311 12438,13387 12483,13418 12446,13570 12336,13646 12403,13755
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12336,13646 12128,13604 12115,13540 12005,13481 11982,13471
@@ -322,6 +322,7 @@ Haewererweg: enge Durchfahrt, Bordstein	q1 12125,1282 12097,1243
 #: XXX nach den Bauarbeiten entscheiden, ob es sich hier f¸r Radfahrer lohnt, hier entlang zu fahren
 Kaiser-Wilhelm-Platz: Fuﬂg‰nger, Bauarbeiten	q4 7201,8870 7320,8939
 Kernhofer Str.: Fuﬂg‰nger, Supermarkt	q2 15369,10921 15351,10866
+Cecilieng‰rten: schmale Rampe oder Treppe	q3 6356,7479 6255,7469
 ######################### User Contributions #################################
 #: by: rjoop: vvv
 Koloniewege: Bodenschwellen, Schranken	q1 -2434,17638 -2408,17716 -2114,17878 -2154,17917 -2419,17955 -2539,18109 -2728,18149
@@ -500,7 +501,7 @@ Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3326,16553
 #: by: Sini Bodemer:
 Retzdorffpromenade: Fuﬂg‰nger	q2 4893,6812 4993,6812
 #: by: Michael Meixner:
-Lothar-Bucher-Str.: enge Straﬂe	q1 5598,6136 5748,6067 5845,6062 6024,6080
+Lothar-Bucher-Str.: enge Straﬂe	q1 5598,6136 5748,6051 5845,6049 6024,6080
 #: by: Julie:
 #: XXX hier hat sie "Schrittgeschwindigkeit" angegeben?!
 Albestr.: enge Straﬂe	q1 5422,7461 5448,7436 5640,7435 5811,7433
@@ -552,7 +553,7 @@ Alice-Salomon-Park: Fuﬂg‰nger, Bordsteine	q2 6851,9365 6743,9523
 (zum Bayernring): Fuﬂg‰nger	q1 8437,8557 8525,8396
 Bautzener Platz: Fuﬂg‰nger, Bordsteine	q2 8182,9197 8098,9198
 Bautzener Platz: Fufg‰nger, Bordsteine	q2 8100,9228 8182,9227
-#: last_checked: 2005-08-10
+#: last_checked: 2006-09-28
 General-Pape-Str.: schieben; wg. Bauarbeiten nur enger Fuﬂweg	q4::inwork 7959,7609 7931,7746 7945,7789
 (Danziger Str. - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 12128,14640 12201,14770 12258,14779 12298,14846 12277,14859 12381,15034
 (Prenzlauer Allee - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 11882,15384 11952,15374 12107,15229 12215,15115 12381,15034

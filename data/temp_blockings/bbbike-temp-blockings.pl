@@ -3736,7 +3736,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002505',
        data  => <<EOF,
-userdel	2 5810,7337 5653,7333
+userdel	2 5810,7337 5641,7332
 EOF
      },
      { from  => 1141765814, # 2006-03-07 22:10
@@ -3745,7 +3745,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002505',
        data  => <<EOF,
-userdel	1 5364,7330 5653,7333
+userdel	1 5364,7330 5641,7332
 EOF
      },
      { from  => 1142118000, # 2006-03-12 00:00
@@ -4391,7 +4391,7 @@ EOF
        text  => 'Riemenschneiderweg zwischen Vorarlberger Damm und Grazer Platz, Baustelle, in beiden Richtungen gesperrt.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 6802,6816 6773,7116
+userdel	2 6802,6816 6781,7030 6773,7116
 EOF
      },
      { from  => 1147816800, # 2006-05-17 00:00
@@ -5124,9 +5124,9 @@ EOF
 userdel	1::inwork 9224,14169 9383,13978
 EOF
      },
-     { from  => 1156893254, # 2006-08-30 01:14
-       until => 1159653599, # 2006-09-30 23:59
-       text  => 'Lützowplatz (Mitte) in beiden Richtungen zwischen Einemstr. und Lützowufer Baustelle, Straße vollständig gesperrt (bis Ende 09.2006)',
+     { from  => 1159397648, # 2006-09-28 00:54
+       until => 1159739999, # 2006-10-01 23:59
+       text  => 'Lützowplatz (Mitte) in beiden Richtungen zwischen Einemstr. und Lützowufer Baustelle, Straße vollständig gesperrt (bis Anfang 10.2006)',
        type  => 'gesperrt',
        source_id => 'IM_003395',
        data  => <<EOF,
@@ -5462,7 +5462,7 @@ userdel	2::inwork -56556,49662 -56487,49318 -56325,49162
 EOF
      },
      { from  => 1156976280, # 2006-08-31 00:18
-       until => 1159653599, # 2006-09-30 23:59
+       until => 1159397745, # 1159653599 2006-09-30 23:59
        text  => 'Rixdorfer Str. (Treptow ) in Richtung Südostallee, von Schnellerstr. bis Kiefholzstr., Baustelle, Fahrtrichtung gesperrt (bis Ende 09/2006)',
        type  => 'gesperrt',
        source_id => 'IM_003422',
@@ -5918,6 +5918,23 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 16407,-29400 16379,-29446 16336,-29511
+EOF
+     },
+     { from  => 1159397688, # 2006-09-28 00:54
+       until => 1159999200, # 2006-10-05 00:00
+       text  => 'Rixdorfer Str. (Treptow ) in beiden Richtungen, zwischen Schnellerstr. und Kiefholzstr. Baustelle, Straße vollständig gesperrt (bis 04.10.06)',
+       type  => 'gesperrt',
+       source_id => 'IM_003692',
+       data  => <<EOF,
+userdel	2::inwork 16861,5935 17156,6235
+EOF
+     },
+     { from  => 1159221600, # 2006-09-26 00:00
+       until => 1162594800, # 2006-11-04 00:00
+       text  => 'B 168 Trampe - Eberswalde Trampe, Dorfstraße-Eberswalde Deckenerneuerung Vollsperrung 27.09.2006-03.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 38554,47567 39446,42585
 EOF
      },
     );
