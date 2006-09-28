@@ -579,14 +579,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1170284400,
-         'text' => 'B 167 Friedrich-Engels-Str. OD Alt Ruppin, zw. Rhinbrücke u. Brückenstr. Straßenbauarbeiten Vollsperrung 14.08.2006-31.01.2007 ',
-         'from' => 1155420000,
-         'data' => 'userdel	2::inwork -28866,59954 -28692,59635
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -790,9 +783,9 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
        },
        undef,
        {
-         'until' => 1159740000,
-         'text' => 'L 030 Spreebordstraße OL Neu Zittau Deckeneinbau Vollsperrung 28.09.2006-01.10.2006 ',
-         'from' => 1159308000,
+         'until' => 1160344800,
+         'text' => 'L 030 Spreebordstraße OL Neu Zittau Deckeneinbau Vollsperrung 06.10.2006-08.10.2006 ',
+         'from' => 1159999200,
          'data' => 'userdel	q4::inwork 33839,-1057 33773,-1116 33628,-1509
 ',
          'type' => 'handicap'
@@ -916,6 +909,55 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
          'data' => 'userdel	2::inwork 38554,47567 39446,42585
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1159934400,
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str.(ausschl.) und Ebertstr.(einschl.), Platz des 18. März und Pariser Platz, Ebertstr. zwischen Behrenstr. und Scheidemannstr. sowie Scheidemannstr./Dorotheenstr. zwischen Yitzhak-Rabin-Str. und Wilhelmstr. gesperrt für das Deutschlandfest. Dauer: 29.09.2006 09:00 Uhr bis 04.10.2006 06:00 Uhr. ',
+         'from' => 1159426800,
+         'data' => 'userdel	2::temp 8063,12182 8089,12186 8214,12205 8515,12242 8539,12286 8560,12326 8540,12420
+userdel	2::temp 8610,12254 8515,12242 8600,12165 8595,12066
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1167606000,
+         'text' => 'B 109 C.-Zetkin-Straße OL Zehdenick, zw. Liebknechtstr. u. Falkenthaler Ch. Kanal-/Straßenbau halbseitig gesperrt; Einbahnstraße 02.10.2006-31.12.2006 ',
+         'from' => 1159653600,
+         'data' => 'userdel	q4::inwork 4475,63431 4880,63531
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1160431200,
+         'text' => 'K 6425 Rudolf-Breitscheid-Allee OD Neuenhagen, zw. Hohe Allee u. Virchowstraße Straßenbauarbeiten Vollsperrung 06.10.2006-09.10.2006 ',
+         'from' => 1159999200,
+         'data' => 'userdel	2::inwork 29093,13456 28575,12975
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1163804400,
+         'text' => 'L 040 Zossener Damm OD Blankenfelde Straßenausbau Vollsperrung 05.10.2006-17.11.2006 ',
+         'from' => 1159912800,
+         'data' => 'userdel	q4::inwork 11019,-8435 11555,-8625
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1166828400,
+         'text' => 'L 304 AS Bernau Nord - B273 AS Bernau Nord - B273 Straßenbau Vollsperrung 28.09.2006-22.12.2006 ',
+         'from' => 1159308000,
+         'data' => 'userdel	2::inwork 18242,34708 18742,34289 19275,33344
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1160258400,
+         'text' => 'L 362 Müncheberg-Wulkow OD Obersdorf Kanal- u. Str.bau,Deckeneibau Vollsperrung 02.10.2006-07.10.2006 ',
+         'from' => 1159653600,
+         'data' => 'userdel	q4::inwork 62104,16631 62380,16226
+',
+         'type' => 'handicap'
        }
      
 );

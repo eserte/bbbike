@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: polizei-faxabruf-diff.pl,v 1.9 2006/04/21 18:33:23 eserte Exp $
+# $Id: polizei-faxabruf-diff.pl,v 1.10 2006/09/28 20:48:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004, 2005 Slaven Rezic. All rights reserved.
@@ -71,13 +71,15 @@ sub parse_table {
 
 #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@events_old, \@events_new],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 
-use String::Similarity;
-my @similarity;
 my @flat;
-for my $i (0 .. $#events_old) {
-    for my $j (0 .. $#events_new) {
-	$similarity[$i][$j] = similarity $events_old[$i]->{Description}, $events_new[$j]->{Description}, SIMILARITY_THRESHOLD;
-	push @flat, [$similarity[$i][$j], $i, $j];
+{
+    use String::Similarity;
+    my @similarity;
+    for my $i (0 .. $#events_old) {
+	for my $j (0 .. $#events_new) {
+	    $similarity[$i][$j] = similarity $events_old[$i]->{Description}, $events_new[$j]->{Description}, SIMILARITY_THRESHOLD;
+	    push @flat, [$similarity[$i][$j], $i, $j];
+	}
     }
 }
 
@@ -95,6 +97,9 @@ if ($html_file) {
 <head>
 <style type="text/css">
 table, td { border:1px solid black; }
+.hunkheader { visibility:hidden; }
+del { color:red; }
+ins { color:green; }
 </style>
 <body>
 EOF
@@ -139,9 +144,16 @@ for (@flat) {
 	print "-"x70, "\n";
 
 	if ($html_fh) {
+	    my $html_diff = "No HTML diff possible";
+	    eval {
+		require Text::Diff;
+		my @new_words = split /\s+/, join(" ", @lines_new);
+		my @old_words = split /\s+/, join(" ", @lines_old);
+		$html_diff = Text::Diff::diff(\@old_words, \@new_words, { STYLE => 'Text::Diff::HTML' });
+	    };
 	    print $html_fh <<EOF;
 <tr>
- <td>@lines_new<br>$similarity_info</td>
+ <td>@lines_new<br>$similarity_info<br>$html_diff</td>
  <td>@lines_old</td>
 </tr>
 EOF
@@ -217,3 +229,11 @@ sub as_string {
 }
 
 __END__
+
+=pod
+
+Typical usage:
+
+    ~/src/bbbike/miscsrc/polizei-faxabruf-diff.pl -htmlfile /tmp/diff.html ~/cache/misc/polizei-faxabruf.php~ ~/cache/misc/polizei-faxabruf.php
+
+=cut

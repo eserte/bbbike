@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.273 2006/09/23 20:32:55 eserte Exp eserte $
+# $Id: bbbike,v 3.274 2006/09/28 22:34:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.273 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.274 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -2412,7 +2412,7 @@ sub do_iconframe {
 	{
 	    my $m = $cusm->Menu(-title => M("Letzte geöffnete Layer")."...");
 	    $cusm->entryconfigure("last", -menu => $m);
-	    $main::last_loaded_layers_obj =
+	    $last_loaded_layers_obj =
 		{
 		 List => [],
 		 File => "$main::bbbike_configdir/last_layers",
@@ -2469,6 +2469,35 @@ sub do_iconframe {
 		       -command => sub {
 			   draw_gpsman_data($top);
 		       });
+	$cusm->cascade(-label => M("Letzte geöffnete Tracks/Waypoints")."...");
+	{
+	    my $m = $cusm->Menu(-title => M("Letzte geöffnete Tracks/Waypoints")."...");
+	    $cusm->entryconfigure("last", -menu => $m);
+	    $last_loaded_tracks_obj =
+		{
+		 List => [],
+		 File => "$main::bbbike_configdir/last_tracks",
+		 Menu => $m,
+		 Title => M("Letzte Tracks").":",
+		 Cb => sub {
+		     my($file, %args) = @_;
+		     my %draw_args;
+		     if ($args{-serialized}) {
+			 eval {
+			     require Storable;
+			     require MIME::Base64;
+			     %draw_args = %{ Storable::thaw(MIME::Base64::decode_base64($args{-serialized})) };
+			 };
+			 warn $@ if $@;
+		     }
+
+		     require BBBikeGPS;
+		     BBBikeGPS::do_draw_gpsman_data($top, $file, %draw_args);
+		 },
+		 Max => ($devel_host ? 20 : 12),
+		};
+	    load_last_loaded($last_loaded_tracks_obj);
+	}
 	$cusm->command(-label => M"GPS-Track-Animation",
 		       -command => sub {
 			   require BBBikeAdvanced;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.32 2006/09/23 20:10:50 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.33 2006/09/28 22:33:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.33 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -447,7 +447,9 @@ require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . 
 		 }
 	     } elsif ($data->{Subtype} eq 'personal') {
 		 $BBBikePersonal::show_places = $vis;
-		 BBBikePersonal::toggle_show();
+		 if (defined &BBBikePersonal::toggle_show) {
+		     BBBikePersonal::toggle_show();
+		 }
 	     } else {
 		 eval "\$" . ($data->{Type} eq 's' ? 'str' : 'p') .
 		     '_draw{"' . $data->{Subtype} . '"} = ' .

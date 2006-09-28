@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.42 2006/09/18 23:04:29 eserte Exp eserte $
+# $Id: BBBikeGlobalVars.pm,v 1.43 2006/09/28 22:33:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.42 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.43 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -140,7 +140,7 @@ use vars qw(@popup_style $focus_policy
 	    $map_surround $dont_delete_map
 	    @special_lower %special_lower @special_raise %special_raise
 	    %obst_file);
-use vars qw($last_loaded_menu $last_loaded_obj $last_loaded_layers_obj
+use vars qw($last_loaded_menu $last_loaded_obj $last_loaded_layers_obj $last_loaded_tracks_obj
 	    $coord_output $coord_output_sub);
 use vars qw($coordlist_lbox $coordlist_lbox_nl);
 # $hs_check: checkbutton für Haltestellen

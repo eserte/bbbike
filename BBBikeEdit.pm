@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.112 2006/09/12 21:48:51 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.113 2006/09/28 21:22:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3916,11 +3916,9 @@ sub temp_blockings_editor_replace {
 	$d->add("Label", -text => "Replace the following record:")->pack(-fill => "x");
 	my $t1 = $d->add("Scrolled", "ROText", -width => 50, -height => 10,
 			 -scrollbars => "osoe")->pack(-fill => "x");
-	$t1->insert("end", $s{"inner"});
 	$d->add("Label", -text => "with:")->pack(-fill => "x");
 	my $t2 = $d->add("Scrolled", "ROText", -width => 50, -height => 10,
 			 -scrollbars => "osoe")->pack(-fill => "x");
-	$t2->insert("end", $new_string);
 	my $info_label = "? (index = $max_index, ";
 	if ($found_through_source_id) {
 	    $info_label .= "Found through same source id)";
@@ -3928,6 +3926,42 @@ sub temp_blockings_editor_replace {
 	    $info_label .= "similarity factor = $max_similarity)";
 	}
 	$d->add("Label", -text => $info_label)->pack(-fill => "x");
+
+	if (eval { require Algorithm::Diff; 1 }) {
+	    my @old = split /(\s+)/, $s{"inner"};
+	    my @new = split /(\s+)/, $new_string;
+	    for ($t1, $t2) {
+		$_->tagConfigure("delchunk",    -foreground => "red");
+		$_->tagConfigure("inschunk",    -foreground => "green");
+		$_->tagConfigure("changechunk", -foreground => "orange");
+	    }
+	    Algorithm::Diff::traverse_balanced
+		    (\@old, \@new,
+		     { MATCH => sub {
+			   my($old,$new) = @_;
+			   $t1->insert("end", $old[$old]);
+			   $t2->insert("end", $new[$new]);
+		       },
+		       DISCARD_A => sub {
+			   my($old,undef) = @_;
+			   $t1->insert("end", $old[$old], "delchunk");
+		       },
+		       DISCARD_B => sub {
+			   my(undef,$new) = @_;
+			   $t2->insert("end", $new[$new], "inschunk");
+		       },
+		       CHANGE => sub {
+			   my($old,$new) = @_;
+			   $t1->insert("end", $old[$old], "changechunk");
+			   $t2->insert("end", $new[$new], "changechunk");
+		       },
+		     }
+		    );
+	} else {
+	    $t1->insert("end", $s{"inner"});
+	    $t2->insert("end", $new_string);
+	}
+
 	$yesno = $d->Show;
     }
 
@@ -3977,15 +4011,16 @@ sub temp_blockings_editor_replace {
 
 	{
 	    my $search_term = "";
-	    my $search_e = $t->LabEntry(-labelPack => ['-side' => 'left'],
-					-textvariable => \$search_term,
-					-label => M"Suchen",
-				       )->pack(-fill => 'x');
-	    $search_e->bind("<Return>" => sub {
-				search_in_hlist($hl, $search_term,
-						-nocase => 1,
-						-match => 'substr');
-			    });
+	    my $search_sub = sub {
+		search_in_hlist($hl, $search_term,
+				-nocase => 1,
+				-match => 'substr');
+	    };
+	    my $search_f = $t->Frame->pack(-fill => 'x');
+	    $search_f->Button(-text => M"Suchen",
+			      -command => $search_sub)->pack(-side => "left");
+	    my $search_e = $search_f->Entry(-textvariable => \$search_term)->pack(-side => "left", -fill => 'x');
+	    $search_e->bind("<Return>" => $search_sub);
 	}
 
 	my $weiter;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.17 2006/06/01 23:06:25 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.18 2006/09/28 22:32:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -130,6 +130,9 @@ sub BBBikeGPS::gps_interface {
 use vars qw($gpsman_last_dir $gpsman_data_dir);
 $gpsman_data_dir = "$FindBin::RealBin/misc/gps_data"
     if !defined $gpsman_data_dir;
+
+use vars qw($cfc_mapping $cfc_file);
+$cfc_file = "$main::bbbike_configdir/speed_color_mapping.cfc";
 
 use Class::Struct;
 struct('PathGraphElem' => [map { ($_ => "\$") }
@@ -375,12 +378,7 @@ EOF
     $cfc_top->Checkbutton(-text => M("Einheitliche Farbe"),
 			  -variable => \$solid_coloring)->pack;
 
-    my $cfc_file = "$main::bbbike_configdir/speed_color_mapping.cfc";
-    my $safe = Safe->new;
-    use vars qw($cfc_mapping);
-    undef $cfc_mapping;
-    $safe->share(qw($cfc_mapping));
-    $safe->rdo($cfc_file);
+    BBBikeGPS::load_cfc_mapping();
     if (defined $cfc_mapping) {
 	$cfc->set_mapping($cfc_mapping);
     }
@@ -400,6 +398,7 @@ EOF
 	$cfc_top->destroy if Tk::Exists($cfc_top);
 	return;
     }
+
     $gpsman_last_dir = $file;
     $cfc_mapping = $cfc->get_mapping;
     if (open(D, ">$cfc_file")) {
@@ -409,16 +408,39 @@ EOF
     $cfc_top->destroy;
     $top->update;
 
-    BBBikeGPS::do_draw_gpsman_data($top, $file,
-				   -gap => $max_gap,
-				   -solidcoloring => $solid_coloring,
-				   -drawstreets => $draw_gpsman_data_s,
-				   -drawpoints  => $draw_gpsman_data_p,
-				   -accuracylevel => $accuracy_level,
-				   -centerbegin => $do_center_begin,
-				  );
+    my %draw_args =
+	(-gap => $max_gap,
+	 -solidcoloring => $solid_coloring,
+	 -drawstreets => $draw_gpsman_data_s,
+	 -drawpoints  => $draw_gpsman_data_p,
+	 -accuracylevel => $accuracy_level,
+	 -centerbegin => $do_center_begin,
+	);
+
+    if (eval {
+	require Storable;
+	require MIME::Base64;
+	1;
+    }) {
+	my $serialized = MIME::Base64::encode_base64(Storable::nfreeze(\%draw_args));
+	$serialized =~ s{\n}{}g;
+	my $add_def = "\t" . join("\t", -serialized => $serialized);
+	main::add_last_loaded($file, $main::last_loaded_tracks_obj, $add_def);
+	main::save_last_loaded($main::last_loaded_tracks_obj);
+    } else {
+	warn "Cannot store draw args: $@";
+    }
+
+    BBBikeGPS::do_draw_gpsman_data($top, $file, %draw_args);
 
     $file;
+}
+
+sub BBBikeGPS::load_cfc_mapping {
+    my $safe = Safe->new;
+    undef $cfc_mapping;
+    $safe->share(qw($cfc_mapping));
+    $safe->rdo($cfc_file);
 }
 
 use vars qw($global_draw_gpsman_data_s $global_draw_gpsman_data_p);
@@ -436,6 +458,11 @@ sub BBBikeGPS::do_draw_gpsman_data {
 
     my $base;
     my $s;
+
+    if (!$cfc_mapping) { # may happen if loading from "last loaded
+                         # tracks" menu
+	BBBikeGPS::load_cfc_mapping();
+    }
 
     require GPS::GpsmanData;
 
