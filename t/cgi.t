@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.36 2006/09/14 22:25:35 eserte Exp $
+# $Id: cgi.t,v 1.37 2006/09/28 23:05:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -205,15 +205,17 @@ for my $cgiurl (@urls) {
 
 	# Start and goal are in plaetze
 	$req = new HTTP::Request
-	    (GET => "$action?start=heinrichplatz&starthnr=&startcharimg.x=&startcharimg.y=&startmapimg.x=&startmapimg.y=&via=&viahnr=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=innsbrucker+platz&zielhnr=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=&scope=");
+	    (GET => "$action?start=heinrichplatz&starthnr=&startcharimg.x=&startcharimg.y=&startmapimg.x=&startmapimg.y=&via=&viahnr=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=gesundbrunnen&zielhnr=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=&scope=");
 	$res = $ua->request($req);
-	ok($res->is_success, "Heinrichplatz, Innsbrucker Platz")
+	ok($res->is_success, "Heinrichplatz - Gesundbrunnen")
 	    or diag $res->as_string;
 	$content = uncompr($res);
-	ok($content =~ qr/Start.*startc.*startname.*Heinrichplatz/,
-	   "Start is Heinrichplatz");
-	ok($content =~ qr/Ziel.*zielc.*zielname.*Innsbrucker.*Platz/,
-	   "Goal is Innsbrucker Platz");
+	BBBikeTest::like_long_data($content, qr/Start.*startc.*startname.*Heinrichplatz/,
+				   "Start is Heinrichplatz", ".html")
+		or diag "Test may fail if start is not in file plaetze";
+	BBBikeTest::like_long_data($content, qr/Ziel.*zielc.*zielname.*Gesundbrunnen/,
+				   "Goal is Gesundbrunnen", ".html")
+		or diag "Test may fail if goal is not in file plaetze";
 
 	# search_coord in and to Potsdam
 	$req = new HTTP::Request

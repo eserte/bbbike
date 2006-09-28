@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.50 2006/09/14 22:25:35 eserte Exp $
+# $Id: Makefile,v 1.51 2006/09/28 23:05:27 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -331,7 +331,7 @@ maps:	${MAPFILES} ${MAPFILES_EXTRA} ${IPAQ_MAPFILES} ${IPAQ_MAPFILES_EXTRA}
 
 html:	${HTMLFILES}
 
-misc:	crontab check-crontab httpd.conf
+misc:	permissions crontab check-crontab httpd.conf
 
 Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile \
 			${ABS_LOCAL_BBBIKE_DIR}/BBBikeVar.pm \
@@ -544,6 +544,9 @@ radroute_body.html:	$(BBBIKE_DATA_DIR)/comments_route-orig \
 
 ######################################################################
 # misc
+
+permissions:
+	chmod ugo+r brb.map-inc
 
 crontab:	crontab.tpl Makefile Makefile.${TARGET}.inc
 	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
