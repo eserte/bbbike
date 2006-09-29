@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.36 2006/09/25 22:55:00 eserte Exp $
+# $Id: PDF.pm,v 2.37 2006/09/29 07:12:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.36 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.37 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -393,7 +393,7 @@ if(1||$self->{Width} < $self->{Height}){#XXX scheint sonst undefinierbare Proble
   		my $s = $p->next_obj;
   		last if $s->is_empty;
   		my $cat = $s->category;
-  		next if $cat =~ /0$/;
+  		next if $cat =~ $BBBikeDraw::bahn_bau_rx;
   		my($x0,$y0) = @{$s->coord_as_list(0)};
   		# Bereichscheck (XXX ist nicht ganz korrekt wenn der Screen breiter ist als die Route)
 #  		next if (!(($x0 >= $self->{Min_x} and $x0 <= $self->{Max_x})

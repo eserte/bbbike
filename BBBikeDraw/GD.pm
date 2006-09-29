@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.51 2006/09/14 22:17:40 eserte Exp $
+# $Id: GD.pm,v 1.52 2006/09/29 07:12:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -40,7 +40,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.51 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.52 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush, %thickness, %outline_thickness);
 
@@ -578,7 +578,7 @@ sub draw_map {
 	    for my $s ($self->get_street_records_in_bbox($p)) {
 
 		my $cat = $s->[Strassen::CAT];
-		next if $cat =~ /0$/;
+		next if $cat =~ $BBBikeDraw::bahn_bau_rx;
 		my($x0,$y0) = split /,/, $s->[Strassen::COORDS][0];
 		my $draw_symbol = 1;
 		my $pad_left;
