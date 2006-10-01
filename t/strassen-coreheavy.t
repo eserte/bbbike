@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-coreheavy.t,v 1.1 2006/09/11 18:48:42 eserte Exp $
+# $Id: strassen-coreheavy.t,v 1.2 2006/09/30 13:30:49 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -17,6 +17,8 @@ use lib ("$FindBin::RealBin/..",
 use Strassen::Core;
 use Strassen::MultiStrassen;
 
+use Getopt::Long;
+
 BEGIN {
     if (!eval q{
 	use Test::More;
@@ -28,6 +30,10 @@ BEGIN {
 	exit;
     }
 }
+
+my $v;
+GetOptions("v" => \$v)
+    or die "usage: $0 [-v]";
 
 plan tests => 50;
 
@@ -61,7 +67,8 @@ my $s1 = Strassen->new($bbd1);
 
 
 {
-    diag "Sleep 1s so we have really a later modtime...";
+    diag "Sleep 1s so we have really a later modtime..."
+	if $v;
     sleep 1;
     open my $ofh, ">> $bbd1"
 	or die $!;
@@ -96,7 +103,8 @@ my $s2 = Strassen->new($bbd1);
 $s2->copy_orig;
 
 {
-    diag "Sleep 1s so we have really a later modtime...";
+    diag "Sleep 1s so we have really a later modtime..."
+	if $v;
     sleep 1;
     tie my @lines, "Tie::File", $bbd1
 	or die $!;
@@ -141,7 +149,8 @@ my $ms = MultiStrassen->new(@multibbd);
 }
 
 {
-    diag "Sleep 1s so we have really a later modtime...";
+    diag "Sleep 1s so we have really a later modtime..."
+	if $v;
     sleep 1;
     open my $ofh, ">> $multibbd[0]"
 	or die $!;
@@ -180,7 +189,8 @@ my $ms2 = MultiStrassen->new(@multibbd);
 $ms2->copy_orig;
 
 {
-    diag "Sleep 1s so we have really a later modtime...";
+    diag "Sleep 1s so we have really a later modtime..."
+	if $v;
     sleep 1;
     tie my @lines, "Tie::File", $multibbd[0]
 	or die $!;

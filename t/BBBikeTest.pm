@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.19 2006/09/14 20:58:58 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.20 2006/09/30 13:27:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006 Slaven Rezic. All rights reserved.
@@ -150,6 +150,7 @@ sub do_display {
 # only usable with Test::More, generates one test
 sub tidy_check {
     my($content, $test_name, %args) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
  SKIP: {
 	my $no_of_tests = 1;
 	if (!defined $can_tidy) {
@@ -187,17 +188,25 @@ sub tidy_check {
 
 sub failed_long_data {
     my($got, $expected, $testname, $suffix) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
     require File::Temp;
     require Data::Dumper;
     my($fh, $filename) = File::Temp::tempfile(SUFFIX => ".bbbike_test" . ($suffix ? $suffix : ""));
-    my $dump = Data::Dumper->new([$got, $expected],[qw(got expected)])->Indent(1)->Useqq(0)->Dump;
+    my $dump;
+    if ($suffix) {
+	$dump = $got;
+	Test::More::fail("Test <$testname> failed, <$expected> expected, see <$filename> for got contents");
+    } else {
+	$dump = Data::Dumper->new([$got, $expected],[qw(got expected)])->Indent(1)->Useqq(0)->Dump;
+	Test::More::fail("Test <$testname> failed, see <$filename> for more information");
+    }
     print $fh $dump;
     close $fh;
-    Test::More::fail("Test <$testname> failed, see <$filename> for more information");
 }
 
 sub is_long_data {
     my($got, $expected, $testname, $suffix) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
     if (!defined $got || !defined $expected) {
 	Test::More::is($got, $expected, $testname);
     } else {
@@ -212,6 +221,7 @@ sub is_long_data {
 
 sub like_long_data {
     my($got, $expected, $testname, $suffix) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
     if (!defined $got || !defined $expected) {
 	Test::More::like($got, $expected, $testname);
     } else {
@@ -226,6 +236,7 @@ sub like_long_data {
 
 sub unlike_long_data {
     my($got, $expected, $testname, $suffix) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
     if (!defined $got || !defined $expected) {
 	Test::More::unlike($got, $expected, $testname);
     } else {
@@ -245,6 +256,7 @@ if (!eval {
 }) {
     *eq_or_diff = sub {
 	my($a, $b, $info) = @_;
+	local $Test::Builder::Level = $Test::Builder::Level+1;
 
     SKIP: {
 	    $@ = "";

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapbbbike.cgi,v 2.23 2006/06/15 23:10:08 eserte Exp $
+# $Id: wapbbbike.cgi,v 2.24 2006/09/30 14:19:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003,2004 Slaven Rezic. All rights reserved.
@@ -331,10 +331,16 @@ sub _any_image {
 	    $temp2 = "/tmp/wapbbbike2." . time . ".$$";
 	    $temp2cmd = " > $temp2";
 	}
+	my $cmd;
 	if ($convert_to eq 'gif') {
-	    system("pngtopnm $temp | ppmquant 256 | ppmtogif $temp2cmd");
+	    $cmd = "pngtopnm $temp | ppmquant 256 | ppmtogif $temp2cmd";
 	} else { # wbmp
-	    system("pngtopnm $temp | ppmtopgm | pgmtopbm | pbmtowbmp $temp2cmd");
+	    $cmd = "pngtopnm $temp | ppmtopgm | pgmtopbm | pbmtowbmp $temp2cmd";
+	}
+	#warn $cmd;
+	system($cmd);
+	if ($? != 0) {
+	    warn "In case of netpbm errors: try to upgrade to at least version 10.26.30";
 	}
 
 	if (defined $temp2) {

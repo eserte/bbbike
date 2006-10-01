@@ -2508,9 +2508,9 @@ EOF
 userdel	2 2996,-10338 1764,-12480
 EOF
      },
-     { from  => 1149119975, # 2006-06-01 01:59
-       until => 1159653599, # 2006-09-30 23:59
-       text  => 'Swinemünder Brücke: Baustelle Straße für Autos vollständig gesperrt, Radfahrer und Fußgänger können passieren (bis Ende 09.2006) ',
+     { from  => 1159562294, # 2006-09-29 22:38
+       until => 1172703599, # 2007-02-28 23:59
+       text  => 'Swinemünder Brücke: Baustelle Straße für Autos vollständig gesperrt, Radfahrer und Fußgänger können passieren (bis Ende 02.2007)',
        type  => 'handicap',
        source_id => 'IM_002360',
        data  => <<EOF,
@@ -5903,9 +5903,9 @@ EOF
 userdel	2::inwork 12841,9368 12785,9443 12569,9547
 EOF
      },
-     { from  => 1159207537, # 2006-09-25 20:05
-       until => 1159653600, # 2006-10-01 00:00
-       text  => 'Stargarder Str. (Prenzlauer Berg) Richtung Schönhauser Allee zwischen Pappelallee und Greifenhagener Str. Baustelle, Fahrtrichtung gesperrt (bis 30.09.2006)',
+     { from  => 1159562228, # 2006-09-29 22:37
+       until => 1160172000, # 2006-10-07 00:00
+       text  => 'Stargarder Str. (Prenzlauer Berg) Richtung Schönhauser Allee zwischen Pappelallee und Greifenhagener Str. Baustelle, Fahrtrichtung gesperrt (bis 06.10.2006)',
        type  => 'gesperrt',
        source_id => 'IM_003670',
        data  => <<EOF,
@@ -5984,6 +5984,23 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 62104,16631 62380,16226
+EOF
+     },
+     { from  => 1161295200, # 2006-10-20 00:00
+       until => 1162508400, # 2006-11-03 00:00
+       text  => 'L 020 R.-Luxemburg-Str. OD Velten, Bahnübergang Arbeiten am Gleiskörper Vollsperrung 21.10.2006-02.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -5368,30480 -5496,30288
+EOF
+     },
+     { from  => 1159693063, # 2006-10-01 10:57
+       until => 1159916400, # 2006-10-04 01:00
+       text  => 'Residenzstr. (Wedding) in beiden Richtungen, zwischen Lindauer Alle und Pankower Allee Veranstaltung, Straße vollständig gesperrt (bis 04.10.06, 01.00 Uhr) ',
+       type  => 'gesperrt',
+       source_id => 'IM_003701',
+       data  => <<EOF,
+userdel	2::temp 7587,17532 7487,17836 7466,17904 7350,18262 7232,18572
 EOF
      },
     );

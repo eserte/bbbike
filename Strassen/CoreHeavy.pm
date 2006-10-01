@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.31 2006/06/01 23:05:23 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.32 2006/09/30 13:30:35 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -738,11 +738,13 @@ sub reload {
     if ($self->{RebuildCode}) {
 	$self->{RebuildCode}->();
     } else {
-	warn "Reload " . $self->file . "...\n";
+	warn "Reload " . $self->file . "...\n"
+	    if $VERBOSE;
 	$self->read_data;
     }
     if ($self->{Grid}) {
-	warn "Rebuild grid ...\n";
+	warn "Rebuild grid ...\n"
+	    if $VERBOSE;
 	$self->make_grid(-rebuild => 1);
     }
 }

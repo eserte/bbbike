@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: TelbuchDBApprox.pm,v 1.26 2006/09/19 21:48:32 eserte Exp $
+# $Id: TelbuchDBApprox.pm,v 1.27 2006/09/30 13:40:50 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2006 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -55,9 +55,14 @@ use TelbuchApprox; # for split_street and match_plz
 use PLZ;
 use DBI;
 use Karte;
+use Encode qw(encode decode);
 
 use vars qw($VERBOSE %exceptions);
 use vars qw($msgstr);
+
+sub _enc {
+    encode("iso-8859-1", $_[0]);
+}
 
 =item new(%args)
 
@@ -483,9 +488,9 @@ sub search_single {
 	$used_sth = (!defined $hnr ? $self->{Sth_cp_nohnr} : $self->{Sth_cp_exact});
     }
 
-    $used_sth->execute($str,
-		       defined $hnr ? $hnr : (),
-		       defined $city_citypart ? $city_citypart : ())
+    $used_sth->execute(_enc($str),
+		       defined $hnr ? _enc($hnr) : (),
+		       defined $city_citypart ? _enc($city_citypart) : ())
 	or die $!;
     if ($used_sth->rows) {
 	my @log;
@@ -497,9 +502,9 @@ sub search_single {
 	return @out;
     } else {
 	$used_sth->finish;
-	$used_sth->execute("$str%",
-			   defined $hnr ? $hnr : (),
-			   defined $city_citypart ? $city_citypart : ())
+	$used_sth->execute(_enc("$str%"),
+			   defined $hnr ? _enc($hnr) : (),
+			   defined $city_citypart ? _enc($city_citypart) : ())
 	    or die $!;
 	if ($used_sth->rows) {
 	    my @log;
@@ -787,7 +792,7 @@ sub tk_choose {
 				   ? $tdb->{Sth_exact}
 				   : $tdb->{Sth_nohnr}
 				  );
-			$sth->execute($str, (defined $hnr ? $hnr : ()))
+			$sth->execute(_enc($str), (defined $hnr ? _enc($hnr) : ()))
 			    or die $DBI::error;
 			while(my @row = $sth->fetchrow_array) {
 			    # street.name => citypart.name => list of [hnr, long, lat]

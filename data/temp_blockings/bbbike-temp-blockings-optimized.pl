@@ -4,9 +4,9 @@ push @temp_blocking,
 (
        {
          'source_id' => 'IM_002360',
-         'until' => 1159653599,
-         'text' => 'Swinemünder Brücke: Baustelle Straße für Autos vollständig gesperrt, Radfahrer und Fußgänger können passieren (bis Ende 09.2006) ',
-         'from' => 1149119975,
+         'until' => 1172703599,
+         'text' => 'Swinemünder Brücke: Baustelle Straße für Autos vollständig gesperrt, Radfahrer und Fußgänger können passieren (bis Ende 02.2007)',
+         'from' => 1159562294,
          'data' => 'userdel	q2::inwork 9494,15998 9583,15851
 ',
          'type' => 'handicap'
@@ -188,16 +188,6 @@ userdel	2::inwork 22668,12080 22701,12115
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_002513',
-         'until' => 1159653599,
-         'text' => 'Wiesbadener Str. (Wilmersdorf) in Richtung Bundesallee zwischen Geisenheimer und Südwestkorso Baustelle, Fahrtrichtung gesperrt. Ebenso gesperrt: Geisenheimer Str. Richtung Wiesbadener Str. (bis Ende 09.2006)',
-         'from' => 1142424201,
-         'data' => 'userdel	q4::inwork; 4391,7258 4618,7231 4743,7212
-userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
        undef,
@@ -217,14 +207,8 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        undef,
-       {
-         'until' => 1159653600,
-         'text' => 'L 220 OD Joachimsthal Bau Kreisverkehr Vollsperrung 28.03.2006-30.09.2006 ',
-         'from' => 1143410400,
-         'data' => 'userdel	q4::inwork 33787,63026 33254,63446
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -282,14 +266,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1159653600,
-         'text' => 'L 037 Petersdorfer Str. OD Petershagen Kanal- und Straßenbauarbeiten Vollsperrung 15.05.2006-30.09.2006 ',
-         'from' => 1147557600,
-         'data' => 'userdel	q4::inwork 74092,475 74246,584
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -313,14 +290,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        undef,
-       {
-         'until' => 1159653600,
-         'text' => 'L 011 Perleberger Chaussee zw. Weisen, Walhausstr. u. Wittenberge, Kyritzer Str. Straßenausbau Vollsperrung 22.05.2006-30.09.2006 ',
-         'from' => 1148162400,
-         'data' => 'userdel	2 -102390,65175 -102434,66177
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -470,14 +440,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1159653600,
-         'text' => 'B 096 Gransee-Fürstenberg OD Dannenwalde grundhafter Straßenbau Vollsperrung 21.07.2006-30.09.2006 ',
-         'from' => 1153346400,
-         'data' => 'userdel	q4::inwork -5962,74421 -5737,74650
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1164927600,
@@ -507,15 +470,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_003134',
-         'until' => 1159653600,
-         'text' => 'Ruschestr. (Lichtenberg) in Richtung Frankfurter Allee, zwischen Normannenstr. und Frankfurter Allee Baustelle, Straße vollständig gesperrt (bis 30.09.06)',
-         'from' => 1153860349,
-         'data' => 'userdel	1::inwork 15904,12340 15879,12131 15863,11992
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'INKO_81874_COPY_4',
@@ -586,22 +541,8 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
        undef,
        undef,
        undef,
-       {
-         'until' => 1159653600,
-         'text' => 'B 005 Berliner Str. OD Petershagen, zw. Betonstr. und Ortsausgang Kanal- und Straßenbauarbeiten Vollsperrung 16.08.2006-30.09.2006 ',
-         'from' => 1155592800,
-         'data' => 'userdel	q4::inwork 73775,831 74246,584
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1159653600,
-         'text' => 'K 6411 Neulewin- L 33 Wriezen OL Neulewin, zw. KAP-Straße und Dorfstr. Straßenbau Vollsperrung 15.08.2006-30.09.2006 ',
-         'from' => 1155506400,
-         'data' => 'userdel	q4::inwork 69208,37364 69249,37090
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => 1167606000,
          'text' => 'K 6418 Garzau-Hohenstein zw. Garzau und Gladowshöhe Straßenbau Vollsperrung 14.08.2006-31.12.2006 ',
@@ -610,22 +551,8 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1159480800,
-         'text' => 'K 7239 Diedersdorf-Birkholz OD Diedersdorf, Kno. Birkholzer Str./ Chausseestr. Bau Kreisverkehrsplatz Vollsperrung 15.08.2006-28.09.2006 ',
-         'from' => 1155506400,
-         'data' => 'userdel	q4::inwork 7547,-5739 7399,-7001
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1159653600,
-         'text' => 'L 038 zw. Briesen und Petersdorf grundhafter Straßenbau Vollsperrung 26.09.2006-31.12.2006 ',
-         'from' => 1156024800,
-         'data' => 'userdel	2::inwork 70549,-5215 71331,-5118 73292,-4598 74238,-3970 74606,-3837
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1180648800,
          'text' => 'L 141 Neustadt-Bahnhof Zernitz Dossebrücke in der OL Neustadt Brückenneubau Vollsperrung 14.08.2006-31.05.2007 ',
@@ -686,15 +613,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_003108',
-         'until' => 1159653599,
-         'text' => 'Leibnizstr. (Charlottenburg) Richtung Kantstr. zwischen Otto-Suhr-Allee und Bismarckstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 09/2006)',
-         'from' => 1156792939,
-         'data' => 'userdel	1::inwork 4359,11979 4345,11710
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1162335600,
@@ -755,14 +674,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1159567200,
-         'text' => 'L 010 Havelberger Str. OD Bad Wilsnack Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 04.09.2006-29.09.2006 ',
-         'from' => 1157234400,
-         'data' => 'userdel	1::inwork -89549,58784 -89647,59213
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_003491',
@@ -878,9 +790,9 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
        },
        {
          'source_id' => 'IM_003670',
-         'until' => 1159653600,
-         'text' => 'Stargarder Str. (Prenzlauer Berg) Richtung Schönhauser Allee zwischen Pappelallee und Greifenhagener Str. Baustelle, Fahrtrichtung gesperrt (bis 30.09.2006)',
-         'from' => 1159207537,
+         'until' => 1160172000,
+         'text' => 'Stargarder Str. (Prenzlauer Berg) Richtung Schönhauser Allee zwischen Pappelallee und Greifenhagener Str. Baustelle, Fahrtrichtung gesperrt (bis 06.10.2006)',
+         'from' => 1159562228,
          'data' => 'userdel	1::inwork 11301,15668 11192,15721 11093,15771
 ',
          'type' => 'gesperrt'
@@ -958,6 +870,23 @@ userdel	2::temp 8610,12254 8515,12242 8600,12165 8595,12066
          'data' => 'userdel	q4::inwork 62104,16631 62380,16226
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1162508400,
+         'text' => 'L 020 R.-Luxemburg-Str. OD Velten, Bahnübergang Arbeiten am Gleiskörper Vollsperrung 21.10.2006-02.11.2006 ',
+         'from' => 1161295200,
+         'data' => 'userdel	2::inwork -5368,30480 -5496,30288
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003701',
+         'until' => 1159916400,
+         'text' => 'Residenzstr. (Wedding) in beiden Richtungen, zwischen Lindauer Alle und Pankower Allee Veranstaltung, Straße vollständig gesperrt (bis 04.10.06, 01.00 Uhr) ',
+         'from' => 1159693063,
+         'data' => 'userdel	2::temp 7587,17532 7487,17836 7466,17904 7350,18262 7232,18572
+',
+         'type' => 'gesperrt'
        }
      
 );

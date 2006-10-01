@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.167 2006/09/28 22:33:18 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.168 2006/09/30 13:40:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -3065,6 +3065,7 @@ sub search_anything {
 	}
 	my $need_utf8_upgrade = $] >= 5.008 && ((defined $s_munged && eval { require Encode; Encode::is_utf8($s_munged) }) ||
 						(defined $s_rx     && eval { require Encode; Encode::is_utf8($s_rx) }));
+	my $may_utf8_downgrade = $] >= 5.008 && $need_utf8_upgrade && eval { require Encode; Encode::encode("iso-8859-1", Encode::FB_CROAK()); 1 };
 
 ### fork in eval is evil ??? (check it, it seems to work for 5.8.0 + FreeBSD)
 	IncBusy($t);
@@ -3075,17 +3076,23 @@ sub search_anything {
 	    foreach my $search_file (@search_files) {
 		my @matches;
 		my $pid;
-		if ($devel_host && !defined $s_munged && $has_grep) { # XXX because of fork problems only on my host
+		# Restrictions because of:
+		#   possible fork problems
+		#                  no String::Similarity support
+		#                                        direct grep cannot handle utf-8
+		#                                                                                        do we have grep at all?
+		if ($devel_host && !defined $s_munged && (!$need_utf8_upgrade || $may_utf8_downgrade) && $has_grep) {
+		    my $s_rx = $s_rx;
+		    if ($may_utf8_downgrade) {
+			$s_rx = Encode::encode("iso-8859-1", $s_rx);
+		    }
 		    $pid = open(GREP, "-|");
 		    if (!$pid) {
-			# No String::Similarity support
-			# No encoding support
-			exec("grep", "-i", $s_rx, $search_file) || warn "Can't exec program grep with $search_file: $!";
 			require POSIX;
+			exec("grep", "-i", $s_rx, $search_file) || warn "Can't exec program grep with $search_file: $!";
 			POSIX::_exit();
 		    }
 		} else {
-		    # non-Unix compatibility
 		    open(GREP, $search_file) || do {
 			warn "Can't open $search_file: $!";
 			next;
