@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.274 2006/09/28 22:34:49 eserte Exp $
+# $Id: bbbike,v 3.274 2006/09/28 22:34:49 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -5654,7 +5654,7 @@ sub generate_plot_functions {
 		    }
 		    if ($image) {
 			if (!$photo{$image}) {
-			    my $f = maybe_expand_image_file($image, $str_file{$abk});
+			    my $f = maybe_expand_image_file($image, $str_file{$abk}, "images");
 			    if ($f) {
 				$photo{$image} = image_from_file($top, $f);
 			    } else {
@@ -5801,7 +5801,7 @@ sub generate_plot_functions {
 		    }
 
 		} elsif ($cat_hin =~ /^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/) { # Bild, no $cat_rueck handling here
-		    my $img = maybe_expand_image_file($1, $str_file{$abk});
+		    my $img = maybe_expand_image_file($1, $str_file{$abk}, "data");
 		    my $anchor = ($2 ? $2 : "c");
 		    my $p = image_from_file($top, $img);
 		    # XXX this is leaking (photo never deleted...)
@@ -6265,11 +6265,11 @@ EOF
 }
 
 sub maybe_expand_image_file {
-    my($imgfile, $datafile) = @_;
+    my($imgfile, $datafile, $subdir) = @_;
     if (file_name_is_absolute($imgfile)) {
 	return $imgfile;
     }
-    my $abs_img = Tk::findINC("data/$imgfile");
+    my $abs_img = Tk::findINC("$subdir/$imgfile");
     if ($abs_img) {
 	return $abs_img;
     }
@@ -12080,7 +12080,7 @@ sub show_info {
 		 $info_top->SelectionHandle(sub { $current_link_url });
 	     });
 	my $show_url = sub {
-	    my($linkcount, $url) = @_;
+	    my($linkcount, $url, $my_link_menu) = @_;
 	    $info_text->tagBind
 		("link$linkcount", "<ButtonRelease-1>" => sub {
 		     my $url = ref $url eq 'CODE' ? $url->() : $url;
@@ -12089,11 +12089,14 @@ sub show_info {
 		     WWWBrowser::start_browser($url);
 		 }
 		);
+	    if (!$my_link_menu) {
+		$my_link_menu = $link_menu;
+	    }
 	    $info_text->tagBind
 		("link$linkcount", "<Button-3>" => sub {
 		     my $e = $_[0]->XEvent;
 		     $current_link_url = ref $url eq 'CODE' ? $url->() : $url;
-		     $link_menu->Post($e->X, $e->Y);
+		     $my_link_menu->Post($e->X, $e->Y);
 		     Tk->break;
 		 });
 	};
@@ -12280,6 +12283,33 @@ sub show_info {
 		    $info_text->windowCreate("end", -window => $zielname_e);
 		    $is_first = 0;
 		}
+
+		my $www_link_menu = $info_text->Menu(-title => M"Linkmenü",
+						     -tearoff => 0);
+		$www_link_menu->command
+		    (-label => M"Link kopieren als Ziel",
+		     -command => sub {
+			 $info_top->SelectionOwn;
+			 $info_top->SelectionHandle(sub { $current_link_url });
+		     });
+		$www_link_menu->command
+		    (-label => M"Link kopieren als Start",
+		     -command => sub {
+			 my $current_start_link_url = $current_link_url;
+			 $current_start_link_url =~ s{ziel}{start}g;
+			 $info_top->SelectionOwn;
+			 $info_top->SelectionHandle(sub { $current_start_link_url });
+		     });
+		$www_link_menu->command
+		    (-label => M"Link kopieren als Start und Ziel",
+		     -command => sub {
+			 my $current_start_link_url = $current_link_url;
+			 $current_start_link_url =~ s{ziel}{start}g;
+			 my $complete_link_url = "$current_start_link_url\n$current_link_url";
+			 $info_top->SelectionOwn;
+			 $info_top->SelectionHandle(sub { $complete_link_url });
+		     });
+
 		$show_url->($linkcount, sub {
 				require CGI;
 				# sigh, ";" still makes problems...
@@ -12289,7 +12319,9 @@ sub show_info {
 						 });
 				my $url = "$bbbike_cgi_url?" . $q->query_string;
 				$url;
-			    });
+			    },
+			    $www_link_menu,
+			   );
 		$info_text->insert("end", "\n");
 		$linkcount++;
 	    }

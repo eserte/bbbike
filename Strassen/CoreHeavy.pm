@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.32 2006/09/30 13:30:35 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.32 2006/09/30 13:30:35 eserte Exp eserte $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -361,10 +361,20 @@ sub diff_orig {
 	delete $self->{OrigFile};
 	return;
     }
-    if (!is_in_path("diff")) {
-	warn "diff not found in path" if $VERBOSE;
+
+    my $use_diff_tool;
+    # XXX check order not yet clear
+    if (eval { require Text::Diff; 1 }) {
+	$use_diff_tool = "Text::Diff";
+    } elsif (is_in_path("diff")) {
+	$use_diff_tool = "diff";
+    }
+
+    if (!$use_diff_tool) {
+	warn "diff not found in path or Text::Diff not available" if $VERBOSE;
 	return;
     }
+warn $use_diff_tool;
 
     my $dest = "$origdir/" . File::Basename::basename($first_file) . ".new";
     return unless $self->write($dest, IgnoreDirectives => 1);
@@ -372,9 +382,27 @@ sub diff_orig {
     my $old_line = 1;
     my $new_line = 1;
     my(@del, @add, %index_mapping);
-    my $diff_cmd = "diff -u $self->{OrigFile} $dest |";
-    #warn $diff_cmd;
-    open(DIFF, $diff_cmd);
+
+    if ($use_diff_tool eq 'diff') {
+	my $diff_cmd = "diff -u $self->{OrigFile} $dest |";
+	#warn $diff_cmd;
+	open(DIFF, $diff_cmd) or die $!;
+    } else {
+	my $diff = Text::Diff::diff($self->{OrigFile}, $dest, {STYLE => "Unified"});
+	eval 'open(DIFF, "<", \$diff) or die $!;';
+	if ($@) {
+	    warn "Need fallback ($@)";
+	    my $diff_fallback_file = "/tmp/bbbike_diff_fallback_" . $< . ".diff";
+	    open(DIFFOUT, "> $diff_fallback_file")
+		or die $!;
+	    binmode DIFFOUT;
+	    print DIFFOUT $diff;
+	    close DIFFOUT
+		or die $!;
+
+	    open(DIFF, $diff_fallback_file);
+	}
+    }
     scalar <DIFF>; scalar <DIFF>; # overread header
     while(<DIFF>) {
 	chomp;

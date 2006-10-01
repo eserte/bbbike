@@ -1,5 +1,5 @@
 #: title: Qualit‰t von Straﬂen in Brandenburg und weiterer Umgebung
-#: version: $Id: qualitaet_l-orig,v 4.79 2006/09/18 22:15:08 eserte Exp eserte $
+#: version: $Id: qualitaet_l-orig,v 4.81 2006/10/01 18:16:31 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen; schlechte Straﬂe; 01.11.96-unbekannt	Q3 -50149,24689 -50048,24475 -49883,24097 -50010,23562 -50201,23411 -50255,22794 -50938,21256
@@ -1120,7 +1120,7 @@ asphaltiert	Q0 -16306,2453 -15459,2946 -15034,3150 -14490,3081 -13840,2956 -1358
 Freundschaftsinsel: Parkweg	Q1 -12260,-1503 -12253,-1589 -12396,-1681 -12567,-1817
 Schlaatzstr.: Kopfsteinpflaster	Q2 -11681,-2256 -11506,-2368
 Schlaatzstr. - Horstweg: asphaltiert	Q0 -11506,-2368 -11425,-2384 -11431,-2425 -11240,-2525 -10903,-2700 -10624,-2957
-Horstweg - Stern: Parkweg	Q2 -10553,-2859 -10071,-3321 -9425,-3990
+Horstweg - Stern: Parkweg	Q2 -10553,-2859 -10071,-3321 -9756,-3648 -9425,-3990
 Horstweg - Stern: meist m‰ﬂiger Asphalt	Q2 -9425,-3990 -9375,-4159 -9306,-4259 -9234,-4190 -9009,-3837
 Am Pfingstberg: m‰ﬂiges Kopfsteinpflaster (Bankette etwas besser)	Q2 -12334,1324 -12513,1400
 #: unverified_by: Thomas
@@ -1770,4 +1770,11 @@ Am Havelkanal: Schotter	Q2 -8730,22254 -9012,22250
 Am Havelkanal: Sand	Q3 -9012,22250 -9046,22376
 #: note: laut "Berliner Umland" und laut neuer ADFC-Karte gut geeigneter Radweg
 An der Havel: Asphalt	Q0 -3379,23141 -3368,22890 -3347,22647 -3411,22586 -3421,22495 -3674,22172 -3714,21828 -3718,21758 -3633,21453 -3583,21403 -3569,21267 -3427,21104 -2972,20798 -2801,20575 -2742,19975 -2760,19847 -2871,19750
+#: by: ^^^
+#: by: Maurice Meeden:
+Bisamkiez: Beton	Q1 -9940,-4206 -9887,-3992 -9876,-3951 -9864,-3820 -9859,-3771 -9831,-3739 -9775,-3670 -9820,-3642 -9884,-3656 -9953,-3662 -9954,-3734 -9831,-3739
+Bieberkiez: Beton	Q1 -9859,-3771 -9662,-3778
+Bieberkiez: Beton	Q1 -9864,-3820 -9809,-3821
+Bieberkiez: Beton	Q1 -9887,-3992 -9979,-3978
+(Bieberkiez - Nutheweg): Sand	Q2 -9775,-3670 -9756,-3648
 #: by: ^^^

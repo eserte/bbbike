@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.131 2006/09/27 23:38:14 eserte Exp eserte $
+#: version: $Id: handicap_s-orig,v 4.133 2006/10/01 18:16:31 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # XXX hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -232,7 +232,7 @@ Barsekowstr.: Fußgänger	q1 5344,4672 5417,4647 5476,4626 5589,4617
 (Stadtpark Steglitz): Fußgänger	q1 5589,4617 5611,4697 5613,4769
 (Stadtpark Steglitz): Fußgänger	q1 5561,4795 5523,4793 5453,4665 5417,4647
 (Stadtpark Steglitz): Fußgänger	q1 5809,4828 5826,4819 5909,4798 5945,4828 6018,4850
-Spreeufer: Fußgänger	q1 7670,12576 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8554,12593
+Spreeufer: Fußgänger	q1 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8554,12593
 Dieffenbach/Schönleinstr.: Bodenschwellen	q1 11148,9730 11346,9655 11541,9576 11594,9604
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12213,10434 12180,10604
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12328,10442 12280,10636
@@ -486,6 +486,8 @@ Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 Schloßpark Charlottenburg: Fußgänger	q1 3288,12700 3263,12720 3127,12793 3055,12973 2997,13402 2950,13552
 Spreeweg: eng und unübersichtlich	q2 2950,13552 2922,13594 2859,13686 2777,13712 2568,13662 2260,13540
 Lefèvrestr.: enge Straße	q1 4987,6902 4993,6812 5034,6745 5137,6651 5215,6643 5372,6663
+(Paul-Löbe-Str. - südl. Spreeufer): Gäste des Biergartens des HDKDW	q4 7741,12581 7670,12576
+(südliches Spreeufer): Gäste des Biergartens des HDKDW	q4 7745,12603 7710,12585 7670,12576
 #: by: ^^^
 #: by: Michael Heckner:
 Robert-von-Ostertag-Str.: Pferde und Reiter	q1 -613,1949 -745,2320
@@ -508,7 +510,7 @@ Albestr.: enge Straße	q1 5422,7461 5448,7436 5640,7435 5811,7433
 #: by: Michael Dinter:
 Leuthener Str.: enge Straße	q1 7411,8364 7494,8364 7578,8358 7640,8359 7716,8356
 #: by: Wilfried Flade:
-südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7670,12576 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8554,12593
+südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8554,12593
 #: by: Julia (jbrauch):
 Berchtesgadener Str.: Fußgänger, Bordsteine	q2 6361,9164 6360,9194
 #: by: Uta Voigt:
@@ -634,7 +636,7 @@ Sesenheimer Str.: Fußgänger, Bordsteine	q2 3866,11473 3874,11380
 Schleswiger Ufer: schmal, Fußgänger	q2 5862,12385 5904,12438 5967,12525
 Cuxhavener Str.: Wohngebiet, Fußgänger	q2 5904,12438 5931,12396
 Holsteiner Ufer: schmal, Fußgänger	q2 6580,12775 6495,12854 6452,12828
-Uferweg an der Kongreßhalle: noch im Bau	q2::inwork 7782,12623 7670,12576
+Uferweg an der Kongreßhalle: noch im Bau	q2::inwork 7782,12623 7745,12603 7710,12585 7670,12576
 (Zufahrt Parkplätze Bartningallee): schmal, unübersichtlich, Fußgänger	q3 6159,12505 6149,12454
 (Altonaer Str. - Flensburger Str.): Einkaufszentrum, Fußgänger	q2 6178,12387 6149,12454 6137,12532 6160,12681
 (Cuxhavener Str. - Altonaer Str.): schmal, Fußgänger	q2 5999,12280 6086,12446
