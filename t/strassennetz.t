@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassennetz.t,v 1.14 2005/11/12 21:06:23 eserte Exp $
+# $Id: strassennetz.t,v 1.15 2006/10/01 21:00:30 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -183,6 +183,9 @@ if ($do_xxx) {
 
     my $c1 = "4695,17648"; # Scharnweberstr.
     my $c2 = "10524,655"; # Lichtenrader Damm
+    for my $c ($c1, $c2) { # points may move ... fix it!
+	$c = $s_net->fix_coords($c);
+    }
     my($path) = $s_net->search($c1, $c2);
     my(@route) = $s_net->route_to_name($path);
     my $dist1 = int sum map { $_->[StrassenNetz::ROUTE_DIST] } @route;

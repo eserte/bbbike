@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.33 2006/08/06 19:23:21 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.34 2006/10/01 22:13:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -70,8 +70,8 @@ eval {
     if ($debug) {
 	require Sys::Hostname;
 	if (Sys::Hostname::hostname() =~ /herceg\.de$/) {
-	    $to = "eserte\@vran.herceg.de";
-	    $cc = "slaven\@vran.herceg.de";
+	    $to = "eserte\@smtp.herceg.de";
+	    $cc = "slaven\@smtp.herceg.de";
 	}
     }
 

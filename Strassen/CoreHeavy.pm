@@ -374,7 +374,6 @@ sub diff_orig {
 	warn "diff not found in path or Text::Diff not available" if $VERBOSE;
 	return;
     }
-warn $use_diff_tool;
 
     my $dest = "$origdir/" . File::Basename::basename($first_file) . ".new";
     return unless $self->write($dest, IgnoreDirectives => 1);
