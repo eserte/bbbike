@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.274 2006/09/28 22:34:49 eserte Exp eserte $
+# $Id: bbbike,v 3.275 2006/10/01 18:40:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.274 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.275 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -416,6 +416,7 @@ generate_plot_functions();
 ###################################################################
 $really_no_www = $os eq 'win'; # Trumpet und Win32Sock hängen zu lange, wenn es keine Verbindung gibt XXX aber moderne Windows nicht mehr, oder?
 $no_map = !$devel_host && (!defined $ENV{USER} || $ENV{USER} !~ /^(eserte|rezic|srezic|slavenr)$/);
+use vars qw($MM_DRAG_IS_OBSOLETE);$MM_DRAG_IS_OBSOLETE = $devel_host;#XXX
 $abbiege_optimierung = 0;
 # Verlust in Metern beim Linksabbiegen ohne Ampel
 # XXXXX und beim Geradeausfahren??????
@@ -3096,6 +3097,7 @@ sub do_iconframe {
     $ch->attach($info_check, -pod => "^\\s*Info-Symbol");
     $col++;
 
+if (!$MM_DRAG_IS_OBSOLETE) {
     my $drag_photo = load_photo($misc_frame2, 'movehand.' . $default_img_fmt);
     my $drag_check = $misc_frame2->$Radiobutton
 	(image_or_text($drag_photo, 'Drag'),
@@ -3106,6 +3108,7 @@ sub do_iconframe {
     $balloon->attach($drag_check, -msg => M"Karte verschieben");
     # XXX $ch->attach($drag_check, -pod => "^\\s*Karte verschieben");
     $col++;
+}
 
     # room for plugin buttons
     my $mode_plugin_frame = $misc_frame2->Frame->grid
@@ -6313,16 +6316,20 @@ sub set_bindings {
     # Cursor bei delnet-Kreuzen:
     $c->bind("delnet", "<Any-Enter>" => sub {
 		 if ($map_mode eq MM_USEREDIT) {
-		     $c->{SavedCursor} = $c->get_cursor;
+		     save_cursor();
 		     set_cursor("addnet", "tcross");
 		 }
 	     });
-    $c->bind("delnet", "<Any-Leave>" => \&_restore_cursor);
+    $c->bind("delnet", "<Any-Leave>" => \&restore_cursor);
 
     foreach (qw(all)) {
 	# XXX TODO should be ButtonRelease-1 some day, if using
 	# B1-Motion for rubberbanding a zoom region
-	$c->bind($_, "<ButtonPress-1>" => \&set_route_point);
+	if ($MM_DRAG_IS_OBSOLETE) {
+	    $c->bind($_, "<ButtonRelease-1>" => \&set_route_point);
+	} else {
+	    $c->bind($_, "<ButtonPress-1>" => \&set_route_point);
+	}
     }
 
     # Stack in tkstadtware für dragging angucken! XXX
@@ -6353,18 +6360,36 @@ sub set_bindings {
 			       warn "Cannot get URL from " . join(", ", $c->gettags("current"));
 			   }
 		       }
-		       return unless $map_mode eq MM_DRAG;
+		       return if $map_mode ne MM_DRAG && !$MM_DRAG_IS_OBSOLETE;
 		       my $e = $c->XEvent;
-		       $c->scan('mark', $e->x, $e->y);
+		       ($canvas_drag_x, $canvas_drag_y) = ($e->x, $e->y);
+		       $c->scan('mark', $canvas_drag_x, $canvas_drag_y);
+		       $maybe_canvas_drag = 1;
 		   });
     $c->CanvasBind('<B1-Motion>' => sub {
 		       if ($map_mode eq MM_SCRIBBLE) {
 			   # XXX not Tk::Babybike!
 			   return Tk::Babybike::handle_button1_motion_scribble($c,$c->XEvent);
 		       }
-		       return unless $map_mode eq MM_DRAG;
+		       return if $map_mode ne MM_DRAG && !$MM_DRAG_IS_OBSOLETE;
 		       my $e = $c->XEvent;
-		       $c->scan('dragto', $e->x, $e->y, 1);
+		       my($e_x, $e_y) = ($e->x, $e->y);
+		       # Start drag only if the user has moved a certain
+		       # distance (3 pixels here). This is because clicking
+		       # the mouse may involve a small motion movement.
+		       return if ($maybe_canvas_drag &&
+				  Strassen::Util::strecke([$canvas_drag_x, $canvas_drag_y],[$e_x, $e_y]) < 3);
+		       $maybe_canvas_drag = 0;
+		       $c->scan('dragto', $e_x, $e_y, 1);
+		       if (!$c->{SavedCursor}) {
+			   save_cursor();
+			   set_cursor('movehand','fleur');
+		       }
+		       $in_canvas_drag = 1;
+		   });
+    $c->CanvasBind('<ButtonRelease-1>' => sub {
+		       restore_cursor();
+		       $in_canvas_drag = 0;
 		   });
 
     set_b2();
@@ -6770,6 +6795,7 @@ sub change_net_type {
 
 # Routenpunkt festlegen
 sub set_route_point {
+    return if $in_canvas_drag;
     my $e = $_[0]->XEvent;
     # auf Alt, Shift und CapsLock checken
     # bei Win95/NT ist 8 nicht CapsLock, sondern NumLock
@@ -6777,6 +6803,9 @@ sub set_route_point {
 	return if $e->s & (1+2+($os eq 'win' ? 0 : 8));
     } else {
 	return if $e->s =~ /\b(Shift|Alt|Lock)-/;
+    }
+    if ($MM_DRAG_IS_OBSOLETE) {
+	$c->scan('mark', $e->x, $e->y);
     }
     if ($map_mode eq MM_EDITPOINT) {
 	my(@tags) = $c->gettags('current');
@@ -16135,7 +16164,7 @@ sub load_user_dels {
 	     $c->delete("delnet-$xy2-$xy1");
 	 },
 	);
-    _restore_cursor();
+    restore_cursor();
 }
 
 sub _save_umask (&) {
@@ -16215,7 +16244,7 @@ sub delete_user_dels {
 					  $c->delete("delnet-$xy1-$xy2");
 					  $c->delete("delnet-$xy2-$xy1");
 				      });
-	_restore_cursor();
+	restore_cursor();
     }
 }
 
@@ -16375,7 +16404,7 @@ sub user_edit_street {
 		 my($xy1,$xy2) = @_;
 		 $c->delete("delnet-$xy1-$xy2");
 		 $c->delete("delnet-$xy2-$xy1");
-		 _restore_cursor();
+		 restore_cursor();
 	     });
     }
 }
@@ -16396,7 +16425,12 @@ sub set_usercross_image {
 }
 
 ### AutoLoad Sub
-sub _restore_cursor {
+sub save_cursor {
+    $c->{SavedCursor} = $c->get_cursor;
+}
+
+### AutoLoad Sub
+sub restore_cursor {
     if ($c->{SavedCursor}) {
 	$c->set_cursor($c->{SavedCursor});
 	undef $c->{SavedCursor};
@@ -18005,7 +18039,7 @@ sub set_mouse_desc {
 	$mouse_text[1] = M"Ampel editieren";
 	$mouse_text[2] = $mouse_text[3] = '';
     } else {
-	$mouse_text[1] = M"Punkt zur Route hinzufügen\nmit Alt oder Shift: Mauscursor muss sich nicht über einer Straße befinden";
+	$mouse_text[1] = M"Punkt zur Route hinzufügen\nMit Alt oder Shift: Mauscursor muss sich nicht über einer Straße befinden\nZiehen der Maus: Bewegen der Karte";
 	my $label = $b2_mode_desc{$b2_mode};
 	if (defined $label) {
 	    $mouse_text[2] = $label;

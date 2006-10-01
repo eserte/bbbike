@@ -1816,7 +1816,7 @@ EOF
        text  => 'Rosa-Luxemburg-Str. (Mitte) Richtung stadtauswärts, zwischen Memhardstr. und Torstr. Baustelle, Straße vollständig gesperrt (bis Ende 2005) Umleitung über Karl-Liebknecht-Straße - Torstraße',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 10755,13152 10846,13362 10790,13565 10777,13614 10746,13673
+userdel	q4; 10755,13152 10846,13362 10817,13467 10790,13565 10777,13614 10746,13673
 EOF
      },
      { from  => 1112220000, # 2005-03-31 00:00
@@ -2207,7 +2207,7 @@ EOF
        text  => 'Rosa-Luxemburg-Str. Richtung Schönhauser Tor wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 10755,13152 10846,13362 10790,13565 10777,13614 10746,13673
+userdel	1 10755,13152 10846,13362 10817,13467 10790,13565 10777,13614 10746,13673
 EOF
      },
      { from  => 1114293600, # 2005-04-24 00:00

@@ -35,7 +35,7 @@ Google, GoYellow.
 
  Google:         <1> original: zusatzinformationen anzeigen (?), bei
 		     bbbike weiterhin routenpunkte setzen
-                 <Motion-1> scanning
+                 <Motion-1> dragging
 		 <2> unbelegt (Browser)
 		 <3> unbelegt
 		 <Cursor>: scrolling mit zwei geschwindigkeiten
@@ -49,12 +49,18 @@ Google, GoYellow.
  GoYellow:	 <1> zoom in and center
 		 <3> zoom out and center
 	 	 <Shift-1> dito
-		 <motion-1> scanning
+		 <motion-1> dragging
 		 <enter> zusatzinformationen
 		 <pg up>: zoom out, center kept
 		 <pg down>: zoom in, center kept
 		 <cursor>: scrolling mit einer geschwindigkeit
 
+
+Alternativ: der größte Unterschied ist Motion-1 für Dragging. Ich habe
+testhalber Motion-1=dragging als Default für $devel_host eingestellt.
+Mal sehen, ob es sich gut anfühlt und überall verwendet werden kann.
+In diesem Fall ist die Implementation der unterschiedlichen
+Eingabemodi nicht so wichtig (-> niedrigere Prio).
 
 =item * (H5)
 

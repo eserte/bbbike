@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.117 2006/09/17 20:48:01 eserte Exp $
+# $Id: Makefile,v 2.118 2006/10/01 18:39:22 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -168,7 +168,8 @@ plaetze: plaetze-orig
 
 ${PERSISTENTTMPDIR}/non-faked-plaetze: plaetze-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) plaetze-orig | ${GREPSTRASSEN} -v -section "faked-plaetze" > $@
+	${GREPSTRASSEN} -v -section "faked_plaetze" plaetze-orig | $(CONVERT2HAFAS) -map H > $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 
 ${PERSISTENTTMPDIR}/non-faked-strassen: .strassen.tmp ${PERSISTENTTMPDIR}/non-faked-plaetze
@@ -847,8 +848,8 @@ check-disabled:	.check_label
 	$(CHECK_POINTS) -catrx '^Pl$$' plaetze .strassen.tmp landstrassen
 	@touch $@
 
-.check_plaetze2: plaetze add_plaetze
-	$(CHECK_STR_PLZ) -addstr add_plaetze -data plaetze -nomultibez
+.check_plaetze2: ${PERSISTENTTMPDIR}/non-faked-plaetze add_plaetze
+	$(CHECK_STR_PLZ) -addstr add_plaetze -data ${PERSISTENTTMPDIR}/non-faked-plaetze -nomultibez
 	@touch $@
 
 .check_strassen_plaetze_unique:	strassen-orig plaetze-orig

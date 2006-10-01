@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.43 2006/09/28 22:33:43 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.43 2006/09/28 22:33:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -102,6 +102,7 @@ use vars qw(
      $standard_menubar $auto_install_cpan $ask_quit $gps_device
      $outline_i
      $without_zoom_factor $coord_output_int
+     $in_canvas_drag $maybe_canvas_drag $canvas_drag_x $canvas_drag_y
     );
 #XXX del:  %wind_dir $wind_dir_from $wind_dir_to $wind 
 use vars qw(@speed @power $speed_power_reference_string
