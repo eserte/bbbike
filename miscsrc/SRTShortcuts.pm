@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.30 2006/07/28 21:54:34 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.31 2006/10/02 20:50:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.31 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -311,7 +311,7 @@ sub show_any_diff {
     # To pre-generate cache:
     # XXX make sure that only ONE check_bbbike_temp_blockings process
     # runs at a time...
-    system("$bbbike_rootdir/miscsrc/check_bbbike_temp_blockings >/dev/null 2>1 &");
+    system("$bbbike_rootdir/miscsrc/check_bbbike_temp_blockings >/dev/null 2>&1 &");
     require BBBikeAdvanced;
     require File::Basename;
     my $abk = main::plot_additional_layer("str", $file);

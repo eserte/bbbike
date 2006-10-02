@@ -1,5 +1,5 @@
 #: title: Qualit‰t von Straﬂen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.181 2006/10/02 18:58:36 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.181 2006/10/02 18:58:36 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Br¸cken, Straﬂen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -164,7 +164,7 @@ M¸ggelstr.: m‰ﬂiger Asphalt	Q1 14764,11591 14837,11706
 Weserstr. (Friedrichshain): Kopfsteinpflaster	Q2 15008,11436 14849,11539 14764,11591 14705,11629 14645,11670 14622,11685 14550,11732 14471,11782 14416,11815
 Finowstr.: Kopfsteinpflaster	Q2 14622,11685 14728,11807 14783,11949 14840,12140
 Glatzer Str.: Kopfsteinpflaster	Q2 14576,11582 14645,11670
-Wiesenweg (Lichtenberg): Kopfsteinpflaster	Q2 15452,11330 15227,11429 15043,11511
+Wiesenweg (Lichtenberg): Kopfsteinpflaster	Q2 15452,11330 15295,11399 15227,11429 15162,11458 15043,11511
 Revaler Str.: Kopfsteinpflaster	Q2 14139,11269 14211,11229 14286,11186 14357,11148 14442,11101 14509,11060
 Revaler Str.: Kopfsteinpflaster, Straﬂenbahn	Q2 13594,11489 13473,11456
 Prenzlauer Berg: Asphalt	Q0 11723,13630 11538,13683 11257,13647
@@ -1068,7 +1068,7 @@ Propststr.: Kopfsteinpflaster	Q2 10492,12289 10553,12333 10611,12378 10639,12394
 Naumannstr.: Asphalt	Q0 7707,8915 7709,8770
 Inselstr.: Kopfsteinpflaster	Q2 10869,11949 10824,11992
 Neue Gr¸nstr.: Kopfsteinpflaster	Q2 10517,11795 10528,11729
-Parkaue: m‰ﬂiger Asphalt	Q1 15518,12412 15447,12438 15390,12431 15350,12270
+Parkaue: m‰ﬂiger Asphalt	Q1 15518,12412 15447,12438 15390,12431 15402,12390 15350,12270
 Deutschmeisterstr.: m‰ﬂiger Asphalt	Q1 15437,12225 15350,12270 15315,12360
 Am Stadtpark: m‰ﬂiger Asphalt	Q1 15454,12519 15447,12438
 Kielblockstr.: m‰ﬂiger Asphalt	Q1 15433,12686 15546,12690
@@ -2812,7 +2812,7 @@ Schwarzer Weg (Tegel): Beton, stellenweise Querrillen	Q0 6,19817 23,19677 -38,19
 Ringbahnstr. (Neukˆlln): Kopfsteinpflaster	Q2 13081,7014 12934,6967 12689,6905
 Bohnstedtstr.: betoniert	Q0 11249,-1628 11509,-1602
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
-Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
+Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14202,13140 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934
 (Parkweg): Asphalt	Q0 14688,12884 14414,12979
 (Bad Kissingen): wassergebunde Decke	Q1 3639,7590 3652,7795
@@ -3029,7 +3029,7 @@ Dossestr. (Friedrichshain): Kopfsteinpflaster	Q2 15012,11644 15132,11849 15203,1
 Eldenaer Str.: Asphalt	Q1 14096,12827 13960,12866 13844,12900
 Neue Welt: Asphalt	Q0 14705,12934 14431,13028
 August-Lindemann-Str.: Gehwegplatten	Q0 14336,12758 14346,12790
-August-Lindemann-Str.: Asphalt	Q0 14346,12790 14398,12934 14414,12979 14431,13028 14474,13154 14490,13186
+August-Lindemann-Str.: Asphalt	Q0 14346,12790 14398,12934 14414,12979 14431,13028 14444,13068 14474,13154 14490,13186
 Zellestr.: Kopfsteinpflaster	Q2 14133,12482 14188,12664
 Umgehungschaussee: fester breiter Waldweg	Q1 1149,7205 1251,7429 1263,7450 1252,7741 1127,7856 1043,7929 860,8052 864,8110
 (Jagdschloﬂ Grunewald - Umgehungschaussee): fester breiter Waldweg	Q1 905,6631 1149,7205

@@ -870,6 +870,15 @@ userdel	2::temp 8610,12254 8515,12242 8600,12165 8595,12066
          'data' => 'userdel	2::temp 7587,17532 7487,17836 7466,17904 7350,18262 7232,18572
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1199227362,
+         'text' => 'Bau der O2-World, bis 2008',
+         'from' => undef,
+         'data' => 'userdel	2::inwork 13214,11064 13150,11101 13080,10956
+userdel	2::inwork 13150,11101 13240,11279 13056,11329
+',
+         'type' => 'gesperrt'
        }
      
 );

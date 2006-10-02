@@ -6003,4 +6003,13 @@ EOF
 userdel	2::temp 7587,17532 7487,17836 7466,17904 7350,18262 7232,18572
 EOF
      },
+     { from  => undef, # 
+       until => 1199227362, # 2008-01-01 23:42
+       text  => 'Bau der O2-World, bis 2008',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 13214,11064 13150,11101 13080,10956
+userdel	2::inwork 13150,11101 13240,11279 13056,11329
+EOF
+     },
     );
