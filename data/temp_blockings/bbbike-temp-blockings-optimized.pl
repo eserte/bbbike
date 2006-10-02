@@ -430,15 +430,7 @@ userdel	2::inwork 22668,12080 22701,12115
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_003395',
-         'until' => 1159739999,
-         'text' => 'Lützowplatz (Mitte) in beiden Richtungen zwischen Einemstr. und Lützowufer Baustelle, Straße vollständig gesperrt (bis Anfang 10.2006)',
-         'from' => 1159397648,
-         'data' => 'userdel	2::inwork 7002,11034 7010,11002 6918,10854
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -514,16 +506,7 @@ userdel	1::inwork 10781,13002 10706,13043
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_003144',
-         'until' => 1159739999,
-         'text' => 'Grunerstr. (Mitte) stadtauswärts neben Tunnel Alexanderplatz Baustelle, Fahrtrichtung gesperrt (bis Anfang 10.2006)',
-         'from' => 1154785716,
-         'data' => 'userdel	1::inwork 11323,12484 11209,12430 11092,12375 11056,12461 10954,12635
-userdel	1::inwork 10954,12635 11057,12715 11134,12793
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {

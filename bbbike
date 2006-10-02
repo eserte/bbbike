@@ -12342,6 +12342,10 @@ sub show_info {
 		$show_url->($linkcount, sub {
 				require CGI;
 				# sigh, ";" still makes problems...
+				my $zielname = $zielname;
+				if ($Tk::VERSION >= 804) {
+				    $zielname = Encode::encode("iso-8859-1", $zielname);
+				}
 				CGI->import('-oldstyle_urls');
 				my $q = CGI->new({zielc    => $real_coords,
 						  zielname => $zielname,
@@ -12374,6 +12378,10 @@ sub show_info {
 	    $info_text->insert("end", "Google Maps (BBBike)", # . ($good_quality ? " (hohe Auflösung)" : " (niedrige/unbekannte Auflösung)"),
 			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
 	    $show_url->($linkcount, sub {
+			    my $zielname = $zielname;
+			    if ($Tk::VERSION >= 804) {
+				$zielname = Encode::encode("iso-8859-1", $zielname);
+			    }
 			    require CGI;
 			    my $wpt = "$zielname!$sx,$sy";
 			    my $zoom;

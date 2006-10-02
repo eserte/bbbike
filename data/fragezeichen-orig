@@ -287,6 +287,8 @@ Im Heidewinkel: Kopfsteinpflaster Q3	? 768,15457 981,15490 968,15576
 Im Heidewinkel: Kopfsteinpflaster Q3, Einbahnstr.	? 1065,15229 981,15490
 #: by: Katharina Undisz [AM]
 Helmut-Just-Str. (Hohen Neuendorf): Asphalt Q1	? 4054,29959 4132,29954 4487,29996
+#: by: Jan Hieronymus:
+Formerweg: Beton Q0	? 15889,1612 16132,1445
 #: section ^^^
 #
 ######################################################################
@@ -321,7 +323,6 @@ Entlang der Industriebahn: laut ADFC-Karte befahrbar, Qualität?	? 5138,21358 471
 Waldpark Steinberg: laut ADFC-Karte befahrbar, Qualität?	? 3553,21665 3406,21911 3142,22170
 Weg am Tegeler Fließ: Durchfahrt möglich? Qualität, wahrscheinlich Waldweg Q2?	?? 7687,24407 6966,24090 6259,23947
 #: XXX Das ist ein nicht behindertengerechter Abschnitt des BD. Möglicherweise auch nicht fahrradgerecht.
-Weg am Tegeler Fließ: Qualität?	?  3767,22466 3789,22482 3808,22478 3839,22467 3850,22500 3881,22553 3889,22576 3914,22581 3959,22613 3985,22655 4044,22690
 # laut http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20060921.1145.47773.html ist in der Georg-Knorr-Str. ein Radweg
 Landsberger Allee/Wiesenburger Weg: Sind die Zugänge vorhanden (möglicherweise zwischen den beiden Richtungsfahrbahnen), Einbahnstraßen?	? 19280,15014 19472,15184
 Dorfstr./Seenpromenade Groß Glienicke: Durchfahrt möglich? Kopfsteinpflaster?	? -9449,7005 -9741,6106 -9797,5374 -9686,5268 -9678,4913
@@ -867,7 +868,6 @@ Tharauer Allee: Bauarbeiten erledigt?	? -1483,11283 -1634,11346 -1731,11425 -182
 wohin führt hier der Parkweg, derzeit im Bau?	? 4449,12985 4490,12990 4533,12990
 Hier ist doch ein Uferweg parallel zur Kaiserin-Augusta-Allee, wo genau?	? 5185,13078 5166,13034 4947,13130 4717,13118 4608,13218
 Pasewalker Str. (Wedding): Qualität, Einbahn für Radler?	? 7891,15417 7881,15577
-Treppe zw. Uferweg und Altonaer vorh.?	? 5962,12553 5967,12525
 Verbindung Stülpnagelstr. - Knobelsdorffstr. vorh.?	? 2185,11701 2154,11762
 (Machandelweg - Rossiter Weg): Qualität korrekt?	? 77,12260 -125,12173
 Koloniestr.: Qualität (zumindestens in Höhe Soldiner Str. Kopfsteinpflaster)	? 8503,16716 8583,16914 8601,16960 8677,17154 8983,17748
@@ -1208,13 +1208,12 @@ Schillerstr. (Potsdam): Qualität? Verbindung zum Uferweg vorhanden?	? -14252,-19
 Stiftstr. (Potsdam): Qualität?	? -14141,-1700 -14143,-1781
 Streustr.: zwischen Behaimstr. und Börnestr. Einbahnstraße? Auch für Radfahrer?	? 13139,15988 13269,15927
 Streust./Berliner Allee: Überqueren der Straßenbahntrasse möglich?	? 13432,15843
-Vorfahrt für Degnerstr.?	? 16464,15665 16526,15836 16654,16167
 Karower Chaussee - Karower Str.: Qualität? Gibt es einen einfacheren Weg (ohne viel Zick-Zack)?	? 16376,24609 16410,24584 16345,24459 16450,24393 16433,24364 16471,24338 16470,24302 16890,24029 17055,23991
 Unterführung Allee der Kosmonauten - Biesdorfer Promenade: Qualität (laut ADFC-Karte gut geeignet)? Existiert auch ein Zugang von der südlichen Fahrbahn der Allee der Kosmonauten?	? 19826,13479 19835,13152 20076,13034
 #: note: ADFC-Karte 2005/12
 Landsberger Allee - Große-Leege-Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? 16008,14340 16007,14367 15920,14357 15882,14564 15883,14606
 #: note: laut Luftbild sieht es so aus! vvv
-Marzahner Str. (Hohenschönhausen): Radwege? Vorfahrtsstraße?	? 17488,15766 17646,15777 17935,15781 18178,15787 18573,15803 18626,15604 18180,15594 18178,15787
+#Marzahner Str. (Hohenschönhausen): Radwege? Vorfahrtsstraße?	? 17488,15766 17646,15777 17935,15781 18178,15787 18573,15803 18626,15604 18180,15594 18178,15787
 #: note: ^^^
 Crivitzer Str.: Qualität? (laut ADFC-Karte/neu gut geeigntet)?	? 17807,18267 17670,18435 17580,18548
 Am Gutshof: Qualität? (laut ADFC-Karte/neu gut geeigntet)?	? 17797,18673 17835,18791 17889,18994
@@ -1344,7 +1343,6 @@ Waldstr.: Qualität?	? 24539,-3298 24872,-3095 24987,-3015 25182,-2915 25580,-267
 #: XXX der anonyme Eintrag hatte zu wenig Informationen
 Albert-Hößler-Str.: Qualität (möglicherweise mäßiger Belag)?	? 16023,11459 16134,11774
 Eichholzbahn (westlicher Teil): Qualität? Geht es weiter Richtung Westen?	? -7559,14379 -7730,14396 -7978,14419 -8316,14460 -8682,14489
-Plauener Str.: gibt es hier einen beschrankten Bahnübergang? (B0)	? 17954,15216
 Jägerstr.: Abschnitt Friedrichswerder bereits fertiggestellt? Was ist mit den anderen Straßen dort?	? 9907,12055 10006,12065
 Bahnhofstr.: Qualität in diesem Abschnitt (ostl. d. Bergstr.)?	? -2657,-2907 -2720,-2937 -2817,-2967 -2878,-3004
 Spandauer Hauptpromenade: beleuchtet?	? -1725,16878 -1750,16879 -1778,16873 -1840,16890 -1882,16850 -1876,16790 -1906,16620 -1939,16427
@@ -1388,7 +1386,6 @@ Theodor-Francke-Str.: Existiert eine Verbindung zum Franckepark?	? 9328,6164 933
 Pestalozzistr. - Falkenseer Chaussee: Qualität?	? -7255,16749 -7184,16582 -7183,16250
 Havellandkanal Richtung Norden: Qualität (wahrscheinlich Asphalt), wohin führt die Strecke?	? -8730,22254 -8734,22586
 Am Hohenzollernkanal: existieren Verbindungen zum Kurt-Schumacher-Damm und zum Flughafen Tegel?	? 3424,15758 2597,15775
-gute Verbindung zw. Wollenberger und Hauptstr.?	? 17456,16000 17460,16147 17585,16191 17640,16194
 (Falkenberger Chaussee - Rüdickenstr.): Qualität? beleuchtet? Fußgänger?	? 16947,17506 16964,17482 16992,17472 17012,17471 17185,17386 17384,17307 17397,17310
 (Parkweg Möllendorffstr. - Rathausstr.): Qualität? beleuchtet? Fußgänger?	? 15415,12179 15520,12160 15628,12246
 Brauhausberg/B2: wie weit Richtung Süden reichen die Radspuren? Werden die Radspuren dann zu einem gewöhnlichen Radweg?	? -12465,-2601 -12812,-2793 -12925,-2956 -13102,-3158

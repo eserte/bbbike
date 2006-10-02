@@ -1,5 +1,5 @@
 #: title: Radwege in Berlin
-#: version: $Id: radwege-orig,v 4.136 2006/10/01 18:16:32 eserte Exp $
+#: version: $Id: radwege-orig,v 4.137 2006/10/02 18:58:36 eserte Exp $
 #:
 # (für Radwege in Brandenburg siehe comments_cyclepath)
 	RW1;RW1 9227,8890 9235,9051
@@ -3917,3 +3917,7 @@ Aalemannufer	RW4;RW4 -1989,18378 -2053,18375 -2535,18391 -2678,18396 -2759,18400
 	RW1;RW1 463,3671 397,3674 270,3757 -141,3715 -266,3648
 	RW1;RW1 -266,3648 -575,3903
 	RW6;RW6 6274,7751 6258,7669 6255,7469 6249,7219
+#: by: Kay-Uwe Ludwig vvv
+Marzahner Str.	RW;RW 17488,15766 17646,15777 17935,15781
+Marzahner Str.	RW;RW 17935,15781 18178,15787 18573,15803 18626,15604 18180,15594 18178,15787
+#: by: ^^^
