@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.18 2006/09/28 22:32:58 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.18 2006/09/28 22:32:58 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -131,8 +131,7 @@ use vars qw($gpsman_last_dir $gpsman_data_dir);
 $gpsman_data_dir = "$FindBin::RealBin/misc/gps_data"
     if !defined $gpsman_data_dir;
 
-use vars qw($cfc_mapping $cfc_file);
-$cfc_file = "$main::bbbike_configdir/speed_color_mapping.cfc";
+use vars qw($cfc_mapping);
 
 use Class::Struct;
 struct('PathGraphElem' => [map { ($_ => "\$") }
@@ -401,7 +400,7 @@ EOF
 
     $gpsman_last_dir = $file;
     $cfc_mapping = $cfc->get_mapping;
-    if (open(D, ">$cfc_file")) {
+    if (open(D, "> " . BBBikeGPS::get_cfc_file())) {
 	print D Data::Dumper->Dumpxs([$cfc_mapping], ['cfc_mapping']);
 	close D;
     }
@@ -440,7 +439,11 @@ sub BBBikeGPS::load_cfc_mapping {
     my $safe = Safe->new;
     undef $cfc_mapping;
     $safe->share(qw($cfc_mapping));
-    $safe->rdo($cfc_file);
+    $safe->rdo(BBBikeGPS::get_cfc_file());
+}
+
+sub BBBikeGPS::get_cfc_file {
+    "$main::bbbike_configdir/speed_color_mapping.cfc";
 }
 
 use vars qw($global_draw_gpsman_data_s $global_draw_gpsman_data_p);

@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.181 2006/10/02 18:58:36 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.183 2006/10/03 14:52:35 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -4044,7 +4044,7 @@ Lipaer Str.: Kopfsteinpflaster (auf Fußweg ausweichen)	Q3 4184,4651 4214,4595 42
 Roonstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4012,4325 4265,4484 4515,4581
 Petershagener Weg: mäßiger Asphalt	Q2 30665,4312 30729,4510 30810,4765
 Letteallee: Asphalt	Q0 8503,17518 8226,17479 8110,17470 8014,17475 7845,17460 7684,17435
-Fahlandgasse: Kopfsteinpflaster	Q2 7684,17435 7675,17538
+Fahlandgasse: schlechtes Kopfsteinpflaster	Q3 7684,17435 7675,17538
 Semkensteig: Kopfsteinpflaster	Q2 7841,17551 7844,17498
 Semkensteig: Gehweg	Q1 7844,17498 7845,17460
 Mickestr.: Kopfsteinpflaster	Q2 8110,17470 8095,17574
@@ -4053,7 +4053,21 @@ Kühleweinstr.: Asphalt	Q1 8085,17225 8043,17282 8014,17475
 Kühleweinstr.: Kopfsteinpflaster	Q2 8014,17475 7998,17564
 Kühleweinstr.: Asphalt	Q1 7998,17564 7973,17732 7948,17895
 Katzwanger Steig: Asphalt	Q1 -8204,6068 -8084,5932 -7987,5831 -7954,5798 -7851,5692
+Bechsteinweg: Asphalt	Q0 -8204,6068 -8225,6075 -8250,6078 -8382,6000 -8389,5971 -8350,5948
+Bechsteinweg	Q0 -8350,5948 -8262,5901
+Johann-Ewald-Weg: Asphalt	Q1 -8389,5971 -8409,5980 -8502,5930 -8534,5849
+Haltrichweg: Asphalt	Q0 -8350,5948 -8403,5838
+Haltrichweg: sandiger Waldweg	Q2 -8403,5838 -8470,5716
+Gredinger Str.: Asphalt	Q0 -7864,5885 -7909,5840
+Gredinger Str.: mäßiger Asphalt mit Schlaglöchern	Q2 -7909,5840 -7954,5798
+Nailaer Weg: mäßiger Asphalt	Q2 -7987,5831 -8071,5736
+Hersbrucker Weg: mäßiger Asphalt mit Schlaglöchern	Q2 -8157,5815 -8071,5736 -7982,5657
+Hersbrucker Weg: Asphalt	Q1 -7982,5657 -7907,5591
+Fischbrunner Weg: Asphalt	Q0 -7949,5517 -7907,5591 -7851,5692
+Pegnitzring: Verbunsteinpflaster	Q1 -8084,5932 -8157,5815 -8200,5700
+Pegnitzring: mäßiger Asphalt	Q2 -8200,5700 -8050,5560
 Haeckelstr.: Verbundsteinpflaster	Q3 17468,3979 17379,3932 17245,3895
 Gemeinschaftsstr.: Kopfsteinpflaster	Q1 19790,3893 19873,3898 19924,3939 20067,4056
 Löwenstammstr.: Asphalt	Q1 -7965,15546 -7865,15867
 Leopoldstr. (Lichtenberg): Kopfsteinpflaster	Q1 15950,10987 16188,10913 16349,10860 16425,10839
+Ibisweg: Asphalt	Q0 14806,4125 14573,3843
