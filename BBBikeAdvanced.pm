@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.168 2006/09/30 13:40:20 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.168 2006/09/30 13:40:20 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -3967,7 +3967,7 @@ sub balloon_info_from_all_tags {
 	    print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@tags],[qw()])->Indent(1)->Useqq(1)->Dump;
 	}
 
-	if ($tags[0] =~ m{^(s|l|comm-route|comm-misc|comm-cyclepath|qs|ql|hs|hl|fz|u|b|r|f|w|rw|temp_sperre_s|L\d+)$}) {
+	if ($tags[0] =~ m{^(s|l|comm-route|comm-misc|comm-path|comm-cyclepath|qs|ql|hs|hl|fz|u|b|r|f|w|rw|temp_sperre_s|L\d+)$}) {
 	    my $label = $tags[1];
 	    if ($tags[0] eq 'rw') { # Special handling for cyclepaths
 		(my $rw_code) = $tags[2] =~ /^rw-(RW\d+)/;

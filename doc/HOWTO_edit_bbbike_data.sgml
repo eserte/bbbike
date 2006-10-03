@@ -9,7 +9,7 @@
 
 ]>
 
-<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.13 2006/09/10 22:32:15 eserte Exp $ -->
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.14 2006/10/03 16:31:37 eserte Exp $ -->
 
 <article lang="de">
  <artheader>
@@ -27,7 +27,7 @@
    </author>
   </authorgroup>
 
-  <pubdate>$Date: 2006/09/10 22:32:15 $</pubdate>
+  <pubdate>$Date: 2006/10/03 16:31:37 $</pubdate>
 
   <copyright>
    <year>2005</year>
@@ -47,10 +47,20 @@
 <title>Voraussetzungen</>
 
 <sect2>
+<title>Zeit</>
+
+<para> Das Editieren der BBBike-Daten erfordert Zeit. Um "nur mal
+schnell" die Berliner oder Brandenburger Daten zu ergänzen, kann eine
+der unten aufgeführten <link linkend="alternatives">Alternativen</>
+zum Editieren verwendet werden.
+</para>
+
+<sect2>
 <title>Betriebssystem</>
 
 <para>
-Empfehlenswert ist ein POSIX-kompatibles System, also Linux oder Unix.
+Zum Editieren ist ein POSIX-kompatibles System, also Linux oder Unix,
+empfehlenswert.
 </para>
 
 <para>
@@ -1098,10 +1108,47 @@ Achtung: da manche BBBike-Tools sich auf ein hart kodiertes
 <filename>data</>-Verzeichnis verlassen, könnten einige
 Editieroperationen fehlschlagen. Alternativ könnte man das neue
 Verzeichnis auch <filename>data</> nennen, aber ein CVS-Update würde
-zu Konflikten führen.
+dann zu Konflikten führen.
 </para>
 
 
 </sect1>
+
+<sect1 id="alternatives">
+<title>Alternativen</>
+
+<sect2>
+<title>Formlose Meldungen</>
+
+<para>
+Um formlos Änderungen oder Ergänzungen am Berliner und
+Brandenburger Datenbestand zu melden, reicht eine Mail an <ulink
+url="mailto:newstreet@bbbike.de">newstreet@bbbike.de</> aus.
+</para>
+
+<sect2>
+<title>Formular im WWW</>
+
+<para>
+Ein Formular zum Eintragen von Straßendaten findet man <ulink
+url="http://bbbike.radzeit.de/BBBike/html/newstreetform.html">hier</>.
+</para>
+
+<sect2>
+<title>Kommentare über Mapserver eintragen</>
+
+<para>
+Aus dem <ulink
+url="http://bbbike.radzeit.de/cgi-bin/bbbike.cgi?mapserver=1">Mapserver-Interface</>
+heraus ist es möglich, Kommentare für einen bestimmten Punkt zu
+schreiben. Dazu den Radiobutton <guibutton>Details anzeigen</>
+auswählen und auf einen Punkt in der Karte klicken. Im aufpoppenden
+Fenster kann ein formloser Kommentar eingetragen werden.
+</para>
+
+<!-- XXX more to follow: googlemaps, mapserver, aus der bbbike -->
+<!-- perl/tk-version heraus... -->
+</sect1>
+
 </article>
 

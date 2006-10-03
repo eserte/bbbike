@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.183 2006/10/03 14:52:35 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.183 2006/10/03 14:52:35 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -253,6 +253,8 @@ Auguste-Viktoria-Str.: Kopfsteinpflaster	Q2 2690,8814 2680,8608 2678,8571 2668,8
 Hüttenweg: Kopfsteinpflaster	Q1 1585,5136 1964,5070
 Wuhlheide: fester Waldweg, bei Trockenheit etwas sandig	Q2 20887,7267 20858,7143 21576,6644
 Wuhlheide: Waldweg	Q2 21378,5843 22012,6219
+#: add_fragezeichen: ist die gesamte Strecke vom Hegemeisterweg bis zum Stadion asphaltiert?
+(Hegemeisterweg - Ernst-Thälmann-Stadion): Asphalt	Q0 18409,7776 19069,6928
 Mittelweg: Kopfsteinpflaster	Q2 12923,7611 12781,7691 12697,7689 12644,7688 12516,7718
 Mittelweg: Kopfsteinpflaster	Q3 12182,7824 12335,7770
 Karl-Marx-Platz/Richardplatz: Kopfsteinpflaster	Q2 12980,7597 13100,7626 13177,7644 13297,7654
@@ -635,7 +637,7 @@ Curtiusstr.: Kopfsteinpflaster	Q2 3024,3863 3201,3968 3259,4002
 Rominter Allee: Kopfsteinpflaster (Q2, vielleicht aber Q1?)	Q2 -99,12019 -95,12038 -125,12173 -163,12303 -287,12460 -328,12654 -396,12749 -410,12792 -472,12961 -435,12997 -426,13030 -421,13050
 Waldemarstr.: teilweise Kopfsteinpflaster/Asphalt	Q1 12180,10604 12145,10618 12056,10655
 Sebastianstr.: Bordsteine	Q3 10918,11084 10939,11045
-Wuhlheide/R1: Parkweg, OK	Q1 19996,6410 19607,6582 18186,7200 18052,7148 18003,7144
+Wuhlheide/R1: Parkweg, OK	Q1 19996,6410 19607,6582 19052,6823 18186,7200 18052,7148 18003,7144
 Sobernheimer Str.: Kopfsteinpflaster/Asphalt	Q2 27609,305 27667,368 27741,446 28188,962
 An der Krampe: Waldweg, OK	Q1 28520,281 28430,259 28349,364 28300,364 28310,269 28265,157 28265,68 28213,-45 28199,-346 28107,-336 28008,-390 27978,-473 27847,-665
 An der Krampe: schlechter Waldweg, Wurzeln	Q3 27847,-665 27803,-742 27759,-995 27727,-1078 27767,-1217 27758,-1358 27765,-1654 27695,-2161 27718,-2301 27932,-2444 27985,-2389 28144,-2262 28116,-2127 28163,-2013
