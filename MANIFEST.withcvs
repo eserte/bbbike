@@ -30,6 +30,7 @@ BBBikeOvlPlugin.pm
 BBBikePalm.pm
 BBBikePersonal.pm
 BBBikePlugin.pm
+BBBikePluginLister.pm
 BBBikePrint.pm
 BBBikeProfil.pm
 BBBikeRouting.pm
@@ -1382,6 +1383,5 @@ doc/Makefile.doc
 doc/HOWTO_edit_bbbike_data.sgml
 doc/HOWTO_edit_bbbike_data.html
 doc/docbook.css
-miscsrc/BBBikePluginLister.pm
 cgi/bbbike-cs-umzug.html
 miscsrc/any2bbd
