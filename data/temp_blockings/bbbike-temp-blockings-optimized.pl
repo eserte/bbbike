@@ -735,14 +735,7 @@ userdel	1::inwork 10781,13002 10706,13043
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1167519600,
-         'text' => 'B 096 Hauptstr., Zossener Str. OD Baruth Kanal- und Straßenbau Vollsperrung 09.01.2006-30.12.2006 ',
-         'from' => 1136674800,
-         'data' => 'userdel	q4::inwork -4562,37787 -3506,38431
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -788,15 +781,7 @@ userdel	1::inwork 10781,13002 10706,13043
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_003692',
-         'until' => 1159999200,
-         'text' => 'Rixdorfer Str. (Treptow ) in beiden Richtungen, zwischen Schnellerstr. und Kiefholzstr. Baustelle, Straße vollständig gesperrt (bis 04.10.06)',
-         'from' => 1159397688,
-         'data' => 'userdel	2::inwork 16861,5935 17156,6235
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1162594800,
          'text' => 'B 168 Trampe - Eberswalde Trampe, Dorfstraße-Eberswalde Deckenerneuerung Vollsperrung 27.09.2006-03.11.2006 ',
@@ -805,15 +790,7 @@ userdel	1::inwork 10781,13002 10706,13043
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1159934400,
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str.(ausschl.) und Ebertstr.(einschl.), Platz des 18. März und Pariser Platz, Ebertstr. zwischen Behrenstr. und Scheidemannstr. sowie Scheidemannstr./Dorotheenstr. zwischen Yitzhak-Rabin-Str. und Wilhelmstr. gesperrt für das Deutschlandfest. Dauer: 29.09.2006 09:00 Uhr bis 04.10.2006 06:00 Uhr. ',
-         'from' => 1159426800,
-         'data' => 'userdel	2::temp 8063,12182 8089,12186 8214,12205 8515,12242 8539,12286 8560,12326 8540,12420
-userdel	2::temp 8610,12254 8515,12242 8600,12165 8595,12066
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1167606000,
          'text' => 'B 109 C.-Zetkin-Straße OL Zehdenick, zw. Liebknechtstr. u. Falkenthaler Ch. Kanal-/Straßenbau halbseitig gesperrt; Einbahnstraße 02.10.2006-31.12.2006 ',
@@ -862,21 +839,125 @@ userdel	2::temp 8610,12254 8515,12242 8600,12165 8595,12066
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_003701',
-         'until' => 1159916400,
-         'text' => 'Residenzstr. (Wedding) in beiden Richtungen, zwischen Lindauer Alle und Pankower Allee Veranstaltung, Straße vollständig gesperrt (bis 04.10.06, 01.00 Uhr) ',
-         'from' => 1159693063,
-         'data' => 'userdel	2::temp 7587,17532 7487,17836 7466,17904 7350,18262 7232,18572
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1199227362,
          'text' => 'Bau der O2-World, bis 2008',
          'from' => undef,
          'data' => 'userdel	2::inwork 13214,11064 13150,11101 13080,10956
 userdel	2::inwork 13150,11101 13240,11279 13056,11329
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1166655600,
+         'text' => 'B 101 zw. Wiederau und Krz. Friedrichsluga Straßenbau Richtungsverkehr 26.09.2006-20.12.2006 ',
+         'from' => 1159135200,
+         'data' => 'userdel	2::inwork 5339,-84725 4072,-82982 2952,-81725
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1187215200,
+         'text' => 'B 002 OD Gartz Knotenpunkt Stettiner-/Scheunenstraße Ausbau Knotenpunkt Vollsperrung 30.09.2006-15.08.2007 ',
+         'from' => 1159480800,
+         'data' => 'userdel	q4::inwork 76130,90395 76136,90778
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1160604000,
+         'text' => 'B 101 Promenade zw. Einmdg. Hauptstraße u. Elsterstraße Arbeit an Gashauptleitung Vollsperrung 04.10.2006-11.10.2006 ',
+         'from' => 1159826400,
+         'data' => 'userdel	q4::inwork 20952,-105585 21037,-105607
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1161381600,
+         'text' => 'B 169 Elsterwerdaer Str. OD Prösen, Bahnübergang Straßenbau Vollsperrung 25.09.2006-20.10.2006 ',
+         'from' => 1159048800,
+         'data' => 'userdel	2::inwork 19076,-108365 19683,-108408
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1161381600,
+         'text' => 'B 096 Luckau - Gießmannssdorf zw. OU Luckau u. Zickauer Chaussee (Gießmannsdorf) Fahrbahnsanierung Vollsperrung 05.10.2006-20.10.2006 ',
+         'from' => 1159912800,
+         'data' => 'userdel	2::inwork 32029,-59469 31903,-59042 31588,-58443 31525,-58272
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1160431200,
+         'text' => 'K 6417 Garzin - Garzau Abzwg. Agrargenossenschaft Deckenschluss Vollsperrung 06.10.2006-09.10.2006 ',
+         'from' => 1159999200,
+         'data' => 'userdel	2::inwork 47968,14759 49278,15634
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1167606000,
+         'text' => 'L 038 zw. Briesen und Petersdorf grundhafter Straßenbau Vollsperrung 26.09.2006-31.12.2006 ',
+         'from' => 1159135200,
+         'data' => 'userdel	2::inwork 70549,-5215 71331,-5118 73292,-4598 74238,-3970 74606,-3837
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1162249200,
+         'text' => 'L 021 Zühlslake-Wensickendorf Kreuzung. Summter Chaussee bei Zühlslake Neubau Kreisverkehr Vollsperrung 20.08.2006-30.10.2006 ',
+         'from' => 1155938400,
+         'data' => 'userdel	q4::inwork 7435,34963 7443,36175
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1160863200,
+         'text' => 'L 015 Linow - Dorf Zechlin Linow - Dorf Zechlin, nördl. OE/OA Linow Ersatzneubau Durchlass Vollsperrung 02.10.2006-14.10.2006 ',
+         'from' => 1159653600,
+         'data' => 'userdel	2::inwork -30855,77227 -30302,77196
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1160258400,
+         'text' => 'B 101 Dresdener Straße Bahnübergang Gleisbauarbeiten Vollsperrung 06.10.2006-07.10.2006 ',
+         'from' => 1159999200,
+         'data' => 'userdel	2::inwork 9220,-90110 9366,-90900
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1161381600,
+         'text' => 'B 096 Rüdingsdorf - Abzweig Jetsch 1km nördl. Rüdingsdorf - Einmdg. Jetsch Fahrbahnsanierung Vollsperrung 04.10.2006-20.10.2006 ',
+         'from' => 1159826400,
+         'data' => 'userdel	2::inwork 29918,-54610 29514,-52871
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1175292000,
+         'text' => 'K 6904 Gröben-KG-K6903 Nudow zw. Abzw. Nudow und Fahlhorst Bau Eisenbahnüberführung Vollsperrung 24.07.2006-30.03.2007 ',
+         'from' => 1153605600,
+         'data' => 'userdel	2::inwork -6631,-9207 -6181,-10412
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1160863200,
+         'text' => 'L 018 L 16 nördl. Neuruppin-AS Herzsprung gesamte OD Rossow bis Höhe Fretzdorf Deckenerneuerung Vollsperrung 04.10.2006-14.10.2006 ',
+         'from' => 1159826400,
+         'data' => 'userdel	2::inwork -48354,72564 -48057,70618
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1160863200,
+         'text' => 'L 037 Frankfurter Straße Brücke, Oder-Spree-Kanal Brückensanierungsarbeiten Vollsperrung 05.10.2006-14.10.2006 ',
+         'from' => 1159912800,
+         'data' => 'userdel	2::inwork 80143,-15900 79825,-16575
 ',
          'type' => 'gesperrt'
        }

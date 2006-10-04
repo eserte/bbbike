@@ -3960,6 +3960,9 @@ sub balloon_info_from_all_tags {
     }
     my @balloon_info;
     my $major_item_seen = 0;
+    my $comments_rx = join("|", map { "comm-" . quotemeta }
+			   grep { $_ ne "kfzverkehr" } # list types without meaningful "name" field
+			   @Strassen::Dataset::comments_types);
     for my $item (@items) {
 	my(@tags) = $c->gettags($item);
 	if ($verbose && $verbose >= 2) {
@@ -3967,7 +3970,7 @@ sub balloon_info_from_all_tags {
 	    print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@tags],[qw()])->Indent(1)->Useqq(1)->Dump;
 	}
 
-	if ($tags[0] =~ m{^(s|l|comm-route|comm-misc|comm-path|comm-cyclepath|qs|ql|hs|hl|fz|u|b|r|f|w|rw|temp_sperre_s|L\d+)$}) {
+	if ($tags[0] =~ m{^(s|l|$comments_rx|qs|ql|hs|hl|fz|u|b|r|f|w|rw|e|temp_sperre_s|L\d+)$}) {
 	    my $label = $tags[1];
 	    if ($tags[0] eq 'rw') { # Special handling for cyclepaths
 		(my $rw_code) = $tags[2] =~ /^rw-(RW\d+)/;
