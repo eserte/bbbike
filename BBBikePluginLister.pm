@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePluginLister.pm,v 1.3 2006/09/11 22:18:33 eserte Exp $
+# $Id: BBBikePluginLister.pm,v 1.4 2006/10/05 23:24:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikePluginLister;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 require BBBikePlugin;
 
@@ -52,6 +52,7 @@ sub plugin_lister {
 
     my $tl = $w->Toplevel(-title => "Plugins");
     main::set_as_toolwindow($tl);
+    %main::toplevel = %main::toplevel if 0; # cease -w
     $main::toplevel{BBBikePluginLister} = $tl;
     $tl->geometry(int($w->screenwidth*0.7)."x400");
 
@@ -158,6 +159,7 @@ sub plugin_lister {
 				    }
 
 				    my $short_path = $p->File;
+				    $FindBin::RealBin = $FindBin::RealBin if 0; # cease -w
 				    $short_path =~ s{^\Q$FindBin::RealBin\E/}{};
 
 				    push @new_initial_plugins, $short_path . (defined $plugin_args ? "=$plugin_args" : "");
@@ -168,6 +170,7 @@ sub plugin_lister {
 			    my $new_initial_plugins = join(",", @new_initial_plugins);
 
 			    $main::initial_plugins = $new_initial_plugins;
+			    $main::opt = $main::opt if 0; # cease -w
 			    $main::opt->save_options;
 			};
 			if ($@) {

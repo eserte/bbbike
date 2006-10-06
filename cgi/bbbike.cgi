@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.21 2006/09/06 21:00:06 eserte Exp $
+# $Id: bbbike.cgi,v 8.23 2006/10/06 00:09:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -105,7 +105,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $search_algorithm $use_background_image
 	    $use_apache_session $apache_session_module $cookiename
 	    $bbbike_temp_blockings_file $bbbike_temp_blockings_optimized_file
-	    @temp_blocking
+	    @temp_blocking $temp_blocking_epoch
 	    $use_cgi_compress_gzip $max_matches
 	    $use_winter_optimization
 	    $with_fullsearch_radio
@@ -694,7 +694,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.21 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.23 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -2966,7 +2966,8 @@ sub search_coord {
 	$extra_args{Algorithm} = $search_algorithm;
     }
 
-    load_temp_blockings();
+    my $is_test_mode = (defined $q->param("test") && grep { /^(?:custom|temp)[-_]blocking/ } $q->param("test"));
+    load_temp_blockings(-test => $is_test_mode);
 
     my(%custom_s, @current_temp_blocking);
     {
@@ -2977,7 +2978,8 @@ sub search_coord {
 	    next if !$tb; # undefined entry
 	    if (((!defined $tb->{from} || $t >= $tb->{from}) &&
 		 (!defined $tb->{until} || $t <= $tb->{until})) ||
-		(defined $q->param("test") && grep { /^(?:custom|temp)[-_]blocking/ } $q->param("test"))) {
+		$is_test_mode
+		) {
 		#XXX del: my $type = $tb->{type} || 'gesperrt';
 		push @current_temp_blocking, $tb;
 		$tb->{'index'} = $index;
@@ -4964,17 +4966,30 @@ sub init_plz {
 }
 
 sub load_temp_blockings {
+    my(%args) = @_;
+    my $test_mode = $args{-test};
+    if (@temp_blocking && ($temp_blocking_epoch + 3600 < time || $test_mode)) {
+	warn "Invalidate cached temp_blocking...\n" if $debug;
+	@temp_blocking = ();
+	$temp_blocking_epoch = undef;
+    }
+
     if (!@temp_blocking && defined $bbbike_temp_blockings_file) {
 	@temp_blocking = ();
-	if (defined $bbbike_temp_blockings_optimized_file &&
-	    -e $bbbike_temp_blockings_optimized_file &&
+	my $use_file;
+	if (!$test_mode &&
+	    defined $bbbike_temp_blockings_optimized_file &&
+	    -r $bbbike_temp_blockings_optimized_file &&
 	    -M $bbbike_temp_blockings_optimized_file < -M $bbbike_temp_blockings_file) {
-	    do $bbbike_temp_blockings_optimized_file;
+	    $use_file = $bbbike_temp_blockings_optimized_file;
 	} else {
-	    do $bbbike_temp_blockings_file;
+	    $use_file = $bbbike_temp_blockings_file;
 	}
+	do $use_file;
 	if (!@temp_blocking) {
-	    warn "Could not load $bbbike_temp_blockings_file/$bbbike_temp_blockings_optimized_file or file is empty: $@";
+	    warn "Could not load $use_file or file is empty: $@";
+	} else {
+	    $temp_blocking_epoch = time;
 	}
     }
 }
@@ -6086,7 +6101,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/09/06 21:00:06 $';
+    my $cgi_date = '$Date: 2006/10/06 00:09:56 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

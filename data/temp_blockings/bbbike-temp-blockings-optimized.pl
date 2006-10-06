@@ -960,6 +960,15 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'data' => 'userdel	2::inwork 80143,-15900 79825,-16575
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003744',
+         'until' => 1162421999,
+         'text' => 'Leibnizstr. (Charlottenburg ) in Richtung Süd,, zwischen Otto-Suhr-Allee und Bismarckstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 11.2006)',
+         'from' => 1160089339,
+         'data' => 'userdel	1::inwork 4359,11979 4345,11710
+',
+         'type' => 'gesperrt'
        }
      
 );

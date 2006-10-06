@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.32 2006/08/18 20:40:12 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.33 2006/10/05 23:53:38 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -50,7 +50,7 @@ if (!@browsers) {
 }
 @browsers = map { "$_ BBBikeTest/1.0" } @browsers;
 
-my $tests = 87;
+my $tests = 88;
 plan tests => $tests * @browsers;
 
 ######################################################################
@@ -267,10 +267,10 @@ for my $browser (@browsers) {
 	my_tidy_check($agent);
 
 	my $ct = get_ct($agent);
-	like_long_data($ct, qr{genaue kreuzung}i, "On the crossing page");
-	like_long_data($ct, qr/Kuhfortdamm/, "Expected start crossing")
+	like_long_data($ct, qr{genaue kreuzung}i, "On the crossing page", ".html");
+	like_long_data($ct, qr/Kuhfortdamm/, "Expected start crossing", ".html")
 	    or diag $agent->uri;
-	like_long_data($ct, qr/Mangerstr/, "Expected goal crossing")
+	like_long_data($ct, qr/Mangerstr/, "Expected goal crossing", ".html")
 	    or diag $agent->uri;
 
     }
@@ -366,14 +366,20 @@ for my $browser (@browsers) {
 
 	{
 	    my $url = $agent->uri;
-	    $url .= ";test=custom";
+	    $url .= ";test=custom_blockings";
 	    $agent->get($url);
 	}
 
 	my_tidy_check($agent);
-	like_long_data(get_ct($agent), qr{Ereignisse, die die Route betreffen}, "Found temp blocking hit");
-	like_long_data(get_ct($agent), qr{Ausweichroute suchen}, "Found Ausweichroute button");
-	$agent->form_name("Ausweichroute");
+	like_long_data(get_ct($agent), qr{Ereignisse, die die Route betreffen}, "Found temp blocking hit", ".html");
+	like_long_data(get_ct($agent), qr{Ausweichroute suchen}, "Found Ausweichroute button", ".html");
+	my $form = $agent->form_name("Ausweichroute");
+	isa_ok($form, "HTML::Form");
+	for my $input ($form->inputs) {
+	    if ($input->type eq 'checkbox') {
+		$input->check;
+	    }
+	}
 	$agent->submit;
 
 	my_tidy_check($agent);

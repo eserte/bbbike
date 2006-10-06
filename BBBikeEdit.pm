@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.113 2006/09/28 21:22:56 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.113 2006/09/28 21:22:56 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3701,6 +3701,10 @@ EOF
 		  } else {
 		      if ($as_data) {
 			  my $s = Strassen->new($file);
+			  if ($s->count == 0) {
+			      $t->messageBox(-message => "Keine Blockierungen ausgewählt");
+			      return;
+			  }
 			  $pl_entry .= "       data  => <<EOF,\n" . $s->as_string . "EOF\n";
 		      } else {
 			  $pl_entry .= <<EOF;

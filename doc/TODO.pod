@@ -2130,7 +2130,19 @@ points if delta exceeds 128/128 meters.
 
 =over
 
-=item * (H5)
+=item * (E5)
+
+$g_str muss wissen, welcher Scope verwendet wurde. Und jeder Zugriff
+auf get_streets muss ggfs. get_streets_rebuild_dependents aufrufen,
+falls sich der Scope geändert hat.
+
+Das wirkt sich nur in mod_perl aus.
+
+Kann ich einen Test schreiben, der dieses Verhalten reproduziert
+(i.e.: Apache neu starten, nur einen Prozess verwenden, scope=city ...
+scope=region, kreuzung auswählen -> boom!)
+
+=item * (H4)
 
 Mit www.bbbike.de umziehen.
 
