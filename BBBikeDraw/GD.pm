@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.52 2006/09/29 07:12:25 eserte Exp $
+# $Id: GD.pm,v 1.54 2006/10/07 09:41:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ use vars qw($gd_version $VERSION $DEBUG @colors %color %outline_color %width
 	    $TTF_STREET $TTF_CITY);
 BEGIN { @colors =
          qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
-	    $darkblue $lightblue $rose $black $darkgrey);
+	    $darkblue $lightblue $rose $black $darkgrey $lightgreen);
 }
 use vars @colors;
 
@@ -40,7 +40,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.52 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.54 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush, %thickness, %outline_thickness);
 
@@ -104,6 +104,8 @@ sub init {
             sub imageOut {
 		shift->svg(@_);
 	    }
+	    # newFromImage is missing because the newFrom* methods
+	    # are not available in GD::SVG
 	} else {
 	    require GD;
 	    $self->{GD_Image}   = 'GD::Image';
@@ -926,7 +928,7 @@ sub draw_route {
 		    # workaround: newFromPNG vergisst die Transparency-Information
 		    #$start_flag->transparent($start_flag->colorClosest(192,192,192));
 		    $im->copyMerge($start_flag, $x-5, $y-15,
-				   0, 0, $w, $h, 50);
+				   0, 0, $w, $h, 80);
 		} else {
 		    warn "$imgfile exists, but can't be read by GD";
 		}
@@ -945,7 +947,7 @@ sub draw_route {
 		    # workaround: newFromPNG vergisst die Transparency-Information
 		    #$end_flag->transparent($end_flag->colorClosest(192,192,192));
 		    $im->copyMerge($end_flag, $x-5, $y-15,
-				   0, 0, $w, $h, 50);
+				   0, 0, $w, $h, 80);
 		} else {
 		    warn "$imgfile exists, but can't be read by GD";
 		}

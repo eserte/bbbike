@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.37 2006/09/29 07:12:25 eserte Exp $
+# $Id: PDF.pm,v 2.38 2006/10/07 09:07:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
@@ -39,11 +39,11 @@ use vars qw($VERSION @colors %color %width %outline_color
 	    $sansserif $symbolfont);
 BEGIN { @colors =
          qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
-	    $darkblue $lightblue $rose $black $darkgrey);
+	    $darkblue $lightblue $rose $black $darkgrey $lightgreen);
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.37 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.38 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -140,6 +140,7 @@ sub allocate_colors {
     $darkblue    = [0,0,0.5];
     $lightblue   = [0.73,0.84,0.97];
     $middlegreen = [0,0.78,0];
+    $lightgreen  = [200/256,1,200/256];
     $rose        = [map { $_/256} 215, 184, 200];
     $black       = [0,0,0];
 }

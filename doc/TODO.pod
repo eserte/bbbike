@@ -14,8 +14,8 @@ Legend:
 
   Classification:
 
-    bug
-    feature
+    bug, external bug
+    feature, external feature
 
 =head1 Perl/Tk version of BBBike
 
@@ -2142,6 +2142,13 @@ Kann ich einen Test schreiben, der dieses Verhalten reproduziert
 (i.e.: Apache neu starten, nur einen Prozess verwenden, scope=city ...
 scope=region, kreuzung auswählen -> boom!)
 
+=item * (H5)
+
+Ich habe unvollständig gezeichnete Kacheln (fehlende Straßen) auf
+bbbike.radzeit.de gesehen. Wie sind sie entstanden? Vielleicht eine
+komplette Karte zusammenfügen, um zu sehen, ob weiterhin Fehler
+entstehen?
+
 =item * (H4)
 
 Mit www.bbbike.de umziehen.
@@ -2378,6 +2385,16 @@ list with generated shorter waypoint names
 
 =head2 BBBikeDraw
 
+=over
+
+=item * (M1)
+
+Wird ImageSuffix irgendwo verwendet? Besser ImageType stattdessen
+verwenden, dann kann ich auch bei bbbikedraw MapServer/gif oder
+MapServer/pdf sagen.
+
+=back
+
 =head3 BBBikeDraw::GD
 
 =over
@@ -2391,24 +2408,13 @@ TitleDraw: sollte nach Möglichkeit auch mit einem TTF-Font passieren.
 unclosedPolygon anstelle von mehreren line-Aufrufen verwenden
 (benötigt gd 2.0.33!), aber nur, wenn es sich als effizienter erweist.
 
-=item * (M5)
-
-Was sind die gepunkteten Linien bei der MapServer-Ausgabe von
-bbbikedraw.t? -> Steigungen! Nicht bzw. schöner zeichnen! Siehe auch
-brb.map-tpl, mount.
-
-=item * (M1)
-
-Wird ImageSuffix irgendwo verwendet? Besser ImageType stattdessen
-verwenden, dann kann ich auch bei bbbikedraw MapServer/gif oder
-MapServer/pdf sagen.
-
 =item * (M3)
 
 In BBBikeDraw/GD.pm nach Kommentar bei AREA suchen: Probleme mit den
 verschiedenen Netscape-Versionen. Beim Galeon scheint man nicht auf
 das Area-Polygon klicken zu koennen, sondern nur in der Naehe davon.
-Evtl. das gleiche Problem bei allen Gecko-Browsern.
+Evtl. das gleiche Problem bei allen Gecko-Browsern. -> AREA/map nutze
+ich gar nicht mehr. Vielleicht vorsichtig wiederbeleben? 
 
 =item * (H3)
 
@@ -2436,6 +2442,51 @@ nicht so schön zu klappen) Ebenfalls zu übelegen bei BBBikeDraw::PDF.
 =item * (E2)
 
 E<quot>(A -) BE<quot> zu E<quot>-> BE<quot> optimieren
+
+=item * (H2) (external bug)
+
+An den Rändern werden Straßen nicht durchgezeichnet (schön zu sehen:
+bbbikedraw.t, Yorckstr. an der Kreuzung Großbeerenstr.).
+Wahrscheinlich ein GD-Bug. Nicht bei der SVG-Variante.
+
+=item * (H2) (bug)
+
+Zusammenstoßende Straßenumrandungen weisen manchmal eine große Lücke
+auf (schön zu sehen: bbbikedraw.t, Hochkirchstr.). Auch bei der
+SVG-Variante.
+
+=item * (H1) (external bug)
+
+Die nördliche Begrenzung der Yorckstr. scheint zu dick gezeichnet zu
+sein (2 Pixel statt 1 Pixel?). Möglicherweise ein GD-Problem. Nicht
+bei der SVG-Variante.
+
+=item * (H3) (bug)
+
+Das Straßen-Labeling ist noch nicht perfekt. Siehe E<quot>Platz der
+LuftbrückeE<quot>. Bei der SVG-Variante fehlt das Labeling komplett.
+
+=item * (H1) (bug)
+
+GD/gif und GD/jpeg können mit Transparenzen in Bildern nichts
+anfangen.
+
+=item * (H2) (external feature)
+
+GD::SVG kann nicht externe Images einbinden, deshalb fehlt das
+Zeichnen von S- und (echten) U-Bahnhöfen bei der SVG-Variante, ebenso
+die Flaggen.
+
+=back
+
+=head3 BBBikeDraw::ImageMagick
+
+=over
+
+=item * (H2) (bug)
+
+Zusammenstoßende Straßenumrandungen weisen manchmal eine große Lücke
+auf (schön zu sehen: bbbikedraw.t, Hochkirchstr.). 
 
 =back
 
@@ -2546,6 +2597,30 @@ opposite to PDF::Create).
 
 =back
 
+=head3 BBBikeDraw::Imager
+
+=over
+
+=item * (M3) (bug)
+
+Manche Straßenbegrenzungen laufen spitz aufeinder zu (z.B.
+Hochkirchstr., Viktoria-Quartier). Gut zu sehen mit bbbikedraw.t.
+
+=item * (M3) (feature)
+
+Implement some icon drawing: U-Bahnhof, S-Bahnhof, Start/Goal flag ...
+
+=item * (H3) (feature)
+
+Implement street labeling.
+
+=item * (M2) (bug)
+
+Draw street outlines above areas. Siehe
+Viktoria-Park/Kreuzbergstr./Katzbachstr.
+
+=back
+
 =head2 Strassen and Strassen-related
 
 =over
@@ -2613,6 +2688,12 @@ LANG gesetzt) lösen.
 =head1 MapServer
 
 =over
+
+=item * (M5)
+
+Was sind die gepunkteten Linien bei der MapServer-Ausgabe von
+bbbikedraw.t? -> Steigungen! Nicht bzw. schöner zeichnen! Siehe auch
+brb.map-tpl, mount.
 
 =item * (H5)
 

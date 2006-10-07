@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.49 2006/09/21 00:00:23 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.50 2006/10/07 09:06:29 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION $bahn_bau_rx);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.49 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.50 $ =~ /(\d+)\.(\d+)/);
 
 $bahn_bau_rx = qr{^[SRU](0|Bau|G|P)$}; # auch ignorieren: Güterbahnen, Parkbahnen
 
@@ -64,6 +64,7 @@ sub new {
     $self->{FontSizeScale} = delete $args{FontSizeScale};
     $self->{Conf}      = delete $args{Conf};
     $self->{CGI}       = delete $args{CGI};
+    $self->{Compress}  = delete $args{Compress};
 
     if (defined $self->{Return} &&
 	$self->{Return} eq 'string') {
@@ -400,9 +401,9 @@ sub get_color_values {
 	# black-white image for WAP
 	$c{black} = $c{grey_bg} = $c{darkgrey} = [0, 0, 0];
 	$c{white} = $c{yellow} = $c{red} = $c{green} = $c{darkgreen} =
-	    $c{darkblue} = $c{lightblue} = $c{middlegreen} = $c{rose} = [255,255,255];
+	    $c{darkblue} = $c{lightblue} = $c{middlegreen} = $c{lightgreen} = $c{rose} = [255,255,255];
 	@c = qw(black grey_bg white yellow red green darkgreen
-		darkblue lightblue middlegreen rose darkgrey);
+		darkblue lightblue middlegreen lightgreen rose darkgrey);
 	return (\%c, \@c);
     }
 
@@ -441,10 +442,11 @@ sub get_color_values {
     $c{lightblue}   = [186,213,247];
     #$c{lightblue}   = [0xa0,0xa0,0xff];
     $c{middlegreen} = [0, 200, 0];
+    $c{lightgreen}  = [200, 255, 200];
     $c{rose}        = [215, 184, 200];
     $c{black}       = [0, 0, 0];
     $c{darkgrey}    = [0x63,0x63,0x63];
-    push @c, qw(red green darkgreen darkblue lightblue middlegreen rose black darkgrey);
+    push @c, qw(red green darkgreen darkblue lightblue middlegreen lightgreen rose black darkgrey);
 
     (\%c, \@c);
 }
@@ -466,7 +468,7 @@ sub set_category_colors {
 	      H  => $yellow,
 	      HH => $yellow,
 	      N  => $white,
-	      NN => $green,
+	      NN => $lightgreen,
 	      S  => $darkgreen,
 	      SA => $darkgreen,
 	      SB => $darkgreen,

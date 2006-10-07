@@ -5903,9 +5903,9 @@ EOF
 userdel	2::inwork 12841,9368 12785,9443 12569,9547
 EOF
      },
-     { from  => 1159562228, # 2006-09-29 22:37
-       until => 1160172000, # 2006-10-07 00:00
-       text  => 'Stargarder Str. (Prenzlauer Berg) Richtung Schönhauser Allee zwischen Pappelallee und Greifenhagener Str. Baustelle, Fahrtrichtung gesperrt (bis 06.10.2006)',
+     { from  => 1160172484, # 2006-10-07 00:08
+       until => 1160604000, # 2006-10-12 00:00
+       text  => 'Stargarder Str. (Prenzlauer Berg) Richtung Schönhauser Allee zwischen Pappelallee und Greifenhagener Str. Baustelle, Fahrtrichtung gesperrt (bis 11.10.2006)',
        type  => 'gesperrt',
        source_id => 'IM_003670',
        data  => <<EOF,
@@ -6131,6 +6131,39 @@ EOF
        source_id => 'IM_003744',
        data  => <<EOF,
 userdel	1::inwork 4359,11979 4345,11710
+EOF
+     },
+     { from  => 1160214543, # 2006-10-07 11:49
+       until => 1160258400, # 2006-10-08 00:00
+       text  => 'Akazienstr. in beiden Richtungen, zwischen Apostel-Paulus-Str. und Grunewaldstr. Veranstaltung, Straße vollständig gesperrt (bis 08.10.06, 00.00 Uhr) ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 7110,9024 7044,9163 7022,9211 7006,9282
+EOF
+     },
+     { from  => 1160214244, # 2006-10-07 11:44
+       until => 1160258400, # 2006-10-08 00:00
+       text  => 'Hermannstr. (Neukölln) in beiden Richtungen, zwischen Werbellinstr. und Thomasstr. Veranstaltung, Straße vollständig gesperrt (bis 08.10.06, 00.00 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_003771',
+       data  => <<EOF,
+userdel	2::temp 11979,8014 11998,7948 12025,7852 12041,7788 12055,7751 12075,7696 12090,7651 12122,7553 12180,7387
+EOF
+     },
+     { from  => 1160107200, # 2006-10-06 06:00
+       until => 1161360000, # 2006-10-20 18:00
+       text  => 'Ehrlichstraße zwischen Trautenauerstraße und Blockdammweg gesperrt. Dauer 07.10.2006 06:00 Uhr bis 20.10.2006 18:00 Uhr. ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 17729,8850 18147,8583
+EOF
+     },
+     { from  => 1160107200, # 2006-10-06 06:00
+       until => 1160431200, # 2006-10-10 00:00
+       text  => 'Grunewaldstraße zwischen Hauptstr. und Schwäbische Straße gesperrt, 7. Schöneberger Kürbisfest, Dauer: 07.10.2006 06:00 Uhr bis 09.10.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 6923,9266 7006,9282 7130,9305 7201,9318 7374,9350 7478,9340
 EOF
      },
     );

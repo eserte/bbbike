@@ -442,14 +442,7 @@ userdel	2::inwork 22668,12080 22701,12115
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1160172000,
-         'text' => 'L 098 Marzahne-Rathenow Brandenburger Str. in OL Mützlitz Kanal- und Straßenbau Vollsperrung 11.07.2006-06.10.2006 ',
-         'from' => 1152482400,
-         'data' => 'userdel	q4::inwork -50268,15901 -50493,15837 -50578,15920
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -766,9 +759,9 @@ userdel	1::inwork 10781,13002 10706,13043
        },
        {
          'source_id' => 'IM_003670',
-         'until' => 1160172000,
-         'text' => 'Stargarder Str. (Prenzlauer Berg) Richtung Schönhauser Allee zwischen Pappelallee und Greifenhagener Str. Baustelle, Fahrtrichtung gesperrt (bis 06.10.2006)',
-         'from' => 1159562228,
+         'until' => 1160604000,
+         'text' => 'Stargarder Str. (Prenzlauer Berg) Richtung Schönhauser Allee zwischen Pappelallee und Greifenhagener Str. Baustelle, Fahrtrichtung gesperrt (bis 11.10.2006)',
+         'from' => 1160172484,
          'data' => 'userdel	1::inwork 11301,15668 11192,15721 11093,15771
 ',
          'type' => 'gesperrt'
@@ -967,6 +960,39 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'text' => 'Leibnizstr. (Charlottenburg ) in Richtung Süd,, zwischen Otto-Suhr-Allee und Bismarckstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 11.2006)',
          'from' => 1160089339,
          'data' => 'userdel	1::inwork 4359,11979 4345,11710
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1160258400,
+         'text' => 'Akazienstr. in beiden Richtungen, zwischen Apostel-Paulus-Str. und Grunewaldstr. Veranstaltung, Straße vollständig gesperrt (bis 08.10.06, 00.00 Uhr) ',
+         'from' => 1160214543,
+         'data' => 'userdel	2::temp 7110,9024 7044,9163 7022,9211 7006,9282
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003771',
+         'until' => 1160258400,
+         'text' => 'Hermannstr. (Neukölln) in beiden Richtungen, zwischen Werbellinstr. und Thomasstr. Veranstaltung, Straße vollständig gesperrt (bis 08.10.06, 00.00 Uhr)',
+         'from' => 1160214244,
+         'data' => 'userdel	2::temp 11979,8014 11998,7948 12025,7852 12041,7788 12055,7751 12075,7696 12090,7651 12122,7553 12180,7387
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1161360000,
+         'text' => 'Ehrlichstraße zwischen Trautenauerstraße und Blockdammweg gesperrt. Dauer 07.10.2006 06:00 Uhr bis 20.10.2006 18:00 Uhr. ',
+         'from' => 1160107200,
+         'data' => 'userdel	2::inwork 17729,8850 18147,8583
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1160431200,
+         'text' => 'Grunewaldstraße zwischen Hauptstr. und Schwäbische Straße gesperrt, 7. Schöneberger Kürbisfest, Dauer: 07.10.2006 06:00 Uhr bis 09.10.2006 ',
+         'from' => 1160107200,
+         'data' => 'userdel	2::temp 6923,9266 7006,9282 7130,9305 7201,9318 7374,9350 7478,9340
 ',
          'type' => 'gesperrt'
        }

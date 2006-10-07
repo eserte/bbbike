@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.27 2006/09/25 20:38:11 eserte Exp $
+# $Id: MapServer.pm,v 1.29 2006/10/07 09:07:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -113,13 +113,15 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
 	    $self->MapserverMapDir("$apache_root/htdocs/mapserver/brb");
 	}
 	#$self->MapserverBinDir("$apache_root/cgi-bin");
-	$self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
+	#$self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
+	$self->MapserverBinDir("/usr/local/src/work/mapserver");
 	$self->MapserverRelurl("/mapserver/brb");
 	$self->MapserverUrl("http://radzeit.herceg.de/mapserver/brb");
 	$self->TemplateMap("brb.map-tpl");
 	$self->ImageSuffix("png");
 	#$self->FontsList("fonts-radzeit.list");
-	$self->FontsList("fonts-vran.list");
+	#$self->FontsList("fonts-vran.list");
+	$self->FontsList("fonts-biokovo.list");
 	$self;
     }
 
@@ -171,7 +173,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
     use vars qw(@accessors @computed_accessors);
     @accessors = qw(Width Height Imagecolor Transparent BBox
 		    ColorGreyBg ColorWhite ColorYellow ColorRed ColorGreen
-		    ColorMiddleGreen ColorDarkGreen ColorDarkBlue
+		    ColorMiddleGreen ColorDarkGreen ColorLightGreen ColorDarkBlue
 		    ColorLightBlue ColorRose ColorBlack
 		    OnFlaechen OnGewaesser OnStrassen OnUBahn OnSBahn OnRBahn
 		    OnAmpeln OnOrte OnFaehren OnGrenzen OnFragezeichen OnObst
@@ -360,6 +362,7 @@ sub allocate_colors {
     $im->ColorDarkBlue   ([0,0,128]);
     $im->ColorLightBlue  ([0xa0,0xa0,0xff]);
     $im->ColorMiddleGreen([0, 200, 0]);
+    $im->ColorLightGreen ([200, 255, 200]);
     $im->ColorRose	 ([215, 184, 200]);
     $im->ColorBlack      ([0, 0, 0]);
 }

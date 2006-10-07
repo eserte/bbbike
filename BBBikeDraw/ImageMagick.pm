@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ImageMagick.pm,v 1.15 2006/09/03 18:03:35 eserte Exp $
+# $Id: ImageMagick.pm,v 1.17 2006/10/07 09:42:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -32,11 +32,11 @@ use vars qw($gd_version $VERSION @colors %color %outline_color %width
 	    $TTF_STREET);
 BEGIN { @colors =
          qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
-	    $darkblue $lightblue $rose $black $darkgrey);
+	    $darkblue $lightblue $rose $black $darkgrey $lightgreen);
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -109,47 +109,18 @@ sub pre_draw {
     }
 }
 
-# XXX use BBBikeDraw::get_color_values
 sub allocate_colors {
     my $self = shift;
     my $im = $self->{Image};
+    my($c, $c_order) = $self->get_color_values;
 
-#    my $GREY = 153;
-    my $GREY = 225;
-
-    $self->{'Bg'} = '' if !defined $self->{'Bg'};
-    if ($self->{'Bg'} =~ /^white/) {
-	# Hintergrund weiß: Nebenstraßen werden grau,
-	# Hauptstraßen dunkelgelb gezeichnet
-	$grey_bg   = _colorAllocate(255,255,255);
-	$white     = _colorAllocate($GREY,$GREY,$GREY);
-	$yellow    = _colorAllocate(128,128,0);
-	$im->Transparent(color => $grey_bg) if ($self->{'Bg'} =~ /transparent$/);
-    } elsif ($self->{'Bg'} =~ /^\#([a-f0-9]{2})([a-f0-9]{2})([a-f0-9]{2})/i) {
-	my($r,$g,$b) = (hex($1), hex($2), hex($3));
-	$grey_bg   = _colorAllocate($r,$g,$b);
-	$im->Transparent(color => $grey_bg) if ($self->{'Bg'} =~ /transparent$/);
-    } else {
-	$grey_bg   = _colorAllocate($GREY,$GREY,$GREY);
-	$im->Transparent(color => $grey_bg) if ($self->{'Bg'} =~ /transparent$/);
-    }
-    if ($self->imagetype eq 'wbmp') { # XXX
-	# black-white image for WAP
-	$white = _colorAllocate(255,255,255) if !defined $white;
-	$yellow = $red = $green = $darkgreen = $darkblue =
-	    $lightblue = $middlegreen = $black = $rose = _colorAllocate(0, 0, 0);
-    } else {
-	$white       = _colorAllocate(255,255,255); # XXX! if !defined $white;
-	$yellow      = _colorAllocate(255,255,0); # XXX!   if !defined $yellow;
-	$red         = _colorAllocate(255,0,0);
-	$green       = _colorAllocate(0,255,0);
-	$darkgreen   = _colorAllocate(0,128,0);
-	$darkblue    = _colorAllocate(0,0,128);
-	#$lightblue   = _colorAllocate(186,213,247);
-	$lightblue   = _colorAllocate(0xa0,0xa0,0xff);
-	$middlegreen = _colorAllocate(0, 200, 0);
-	$rose        = _colorAllocate(215, 184, 200);
-	$black       = _colorAllocate(0, 0, 0);
+    no strict 'refs';
+    for my $color (@$c_order) {
+	my $value = $c->{$color};
+	if (defined $value) {
+	    # XXX handle transparent colors!
+	    ${$color} = _colorAllocate(@{$value}[0..2]);
+	}
     }
 }
 

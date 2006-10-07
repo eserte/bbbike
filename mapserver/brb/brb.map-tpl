@@ -1086,7 +1086,7 @@ LAYER
       OUTLINECOLOR 225 225 225
       ANGLE AUTO
     END
-    COLOR 255 255 200
+    COLOR 255 255 160
     SYMBOL 'width'
     SIZE [% p.size %]
     [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
