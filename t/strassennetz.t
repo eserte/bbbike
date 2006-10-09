@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassennetz.t,v 1.15 2006/10/01 21:00:30 eserte Exp $
+# $Id: strassennetz.t,v 1.16 2006/10/07 13:27:13 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -53,12 +53,14 @@ if ($do_xxx) {
     goto XXX;
 }
 
+my $bahnhofstr_coords = "16962,15440 16898,15453 16819,15495";
+my $bahnhofstr_route  = [map { [split /,/] } split /\s+/, $bahnhofstr_coords];
 {
     pass("-- Bahnhofstr. (Hohenschönhausen): einseitiges Kopfsteinpflaster --");
 
     my $net = StrassenNetz->new($qs);
     $net->make_net_cat(-obeydir => 1, -net2name => 1);
-    my $route = [[17014,15442],[16888,15462],[16819,15495]];
+    my $route = $bahnhofstr_route;
     is($net->get_point_comment($route, 1, undef), 0, "Without multiple");
     $route = [ reverse @$route ];
     like(($net->get_point_comment($route, 1, undef))[0], qr/kopfstein/i);
@@ -69,7 +71,7 @@ if ($do_xxx) {
 
     my $net = StrassenNetz->new($qs);
     $net->make_net_cat(-obeydir => 1, -net2name => 1, -multiple => 1);
-    my $route = [[17014,15442],[16888,15462],[16819,15495]];
+    my $route = $bahnhofstr_route;
     is(scalar $net->get_point_comment($route, 1, undef), 0, "With multiple");
     $route = [ reverse @$route ];
     like(($net->get_point_comment($route, 1, undef))[0], qr/kopfstein/i);

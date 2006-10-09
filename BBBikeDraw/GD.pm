@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.54 2006/10/07 09:41:54 eserte Exp $
+# $Id: GD.pm,v 1.55 2006/10/07 11:15:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -40,7 +40,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.54 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.55 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush, %thickness, %outline_thickness);
 
@@ -779,10 +779,14 @@ sub draw_scale {
     my $bar_width = 4;
     my($x0,$y0) = $transpose->(0,0);
     my($x1,$y1, $strecke, $strecke_label);
-    for $strecke (1000, 5000, 10000, 20000, 50000, 100000) {
+    for $strecke (10, 50, 100, 500, 1000, 5000, 10000, 20000, 50000, 100000) {
 	($x1,$y1) = $transpose->($strecke,0);
-	if ($x1-$x0 > 30) {
-	    $strecke_label = $strecke/1000 . "km";
+	if ($x1-$x0 > $self->{Width}/15) {
+	    if ($strecke >= 1000) {
+		$strecke_label = $strecke/1000 . "km";
+	    } else {
+		$strecke_label = $strecke . "m";
+	    }
 	    last;
 	}
     }

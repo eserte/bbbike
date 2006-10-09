@@ -5895,7 +5895,7 @@ userdel	1::inwork 19532,17911 19139,17416 18730,16973
 EOF
      },
      { from  => 1159207506, # 2006-09-25 20:05
-       until => 1160949599, # 2006-10-15 23:59
+       until => 1160414935, # 1160949599 2006-10-15 23:59 (nichts zu erkennen)
        text  => 'Maybachufer (Neukölln) in beiden Richtungen zwischen Pannierstr. und Harzer Str. Baustelle, Straße vollständig gesperrt (bis Mitte 10.2006)',
        type  => 'gesperrt',
        source_id => 'IM_003672',
@@ -5920,13 +5920,13 @@ EOF
 userdel	2::inwork 16407,-29400 16379,-29446 16336,-29511
 EOF
      },
-     { from  => 1159397688, # 2006-09-28 00:54
-       until => 1159999200, # 2006-10-05 00:00
-       text  => 'Rixdorfer Str. (Treptow ) in beiden Richtungen, zwischen Schnellerstr. und Kiefholzstr. Baustelle, Straße vollständig gesperrt (bis 04.10.06)',
+     { from  => 1160414834, # 2006-10-09 19:27
+       until => 1162335600, # 2006-11-01 00:00
+       text  => 'Rixdorfer Str. (Treptow ) in Richtung Kiefholzstr., zwischen Südostallee und Schnellerstr. Baustelle, Fahrtrichtung gesperrt (bis 31.10.06)',
        type  => 'gesperrt',
        source_id => 'IM_003692',
        data  => <<EOF,
-userdel	2::inwork 16861,5935 17156,6235
+userdel	1::inwork 17156,6235 16861,5935
 EOF
      },
      { from  => 1159221600, # 2006-09-26 00:00
@@ -6044,9 +6044,9 @@ EOF
 userdel	2::inwork 19076,-108365 19683,-108408
 EOF
      },
-     { from  => 1159912800, # 2006-10-04 00:00
-       until => 1161381600, # 2006-10-21 00:00
-       text  => 'B 096 Luckau - Gießmannssdorf zw. OU Luckau u. Zickauer Chaussee (Gießmannsdorf) Fahrbahnsanierung Vollsperrung 05.10.2006-20.10.2006 ',
+     { from  => 1160344800, # 2006-10-09 00:00
+       until => 1160604000, # 2006-10-12 00:00
+       text  => 'B 096 Luckau - Gießmannssdorf zw. OU Luckau u. Zickauer Chaussee (Gießmannsdorf) Deckeneinbau Vollsperrung 10.10.2006-11.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 32029,-59469 31903,-59042 31588,-58443 31525,-58272
@@ -6164,6 +6164,46 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 6923,9266 7006,9282 7130,9305 7201,9318 7374,9350 7478,9340
+EOF
+     },
+     { from  => 1160517600, # 2006-10-11 00:00
+       until => 1160776800, # 2006-10-14 00:00
+       text  => 'B 087 Luckau - Duben zwischen OA Duben u. Abzweig Freiimfelde (Altenoer Str.) Fahrbahnsanierung Vollsperrung 12.10.2006-13.10.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 39767,-55820 39067,-56134 37549,-57430 36050,-58754
+EOF
+     },
+     { from  => 1160431200, # 2006-10-10 00:00
+       until => 1164927600, # 2006-12-01 00:00
+       text  => 'L 017 Schwante-Staffelde OD Groß Ziethen Kanalarbeiten Vollsperrung 11.10.2006-30.11.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -17150,35462 -16293,35362 -16087,35343 -15837,35537
+EOF
+     },
+     { from  => 1159826400, # 2006-10-03 00:00
+       until => 1166655600, # 2006-12-21 00:00
+       text  => 'L 029 Oderberg-Niederfinow OD Liepe grundhafter Straßenbau Vollsperrung 04.10.2006-20.12.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 48662,51337 49039,51453 49211,51421 49875,51562
+EOF
+     },
+     { from  => 1159826400, # 2006-10-03 00:00
+       until => 1165014000, # 2006-12-02 00:00
+       text  => 'L 040 Chausseestraße OD Diedersdorf, zw. Bhf.- u. Mahlower Str. Grundhafter Ausbau Vollsperrung 04.10.2006-01.12.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 7558,-7093 7981,-7165 9170,-7708
+EOF
+     },
+     { from  => 1160863200, # 2006-10-15 00:00
+       until => 1163631600, # 2006-11-16 00:00
+       text  => 'L 863 B 5 Wustermark-L 86 Ketzin OD Wernitz Straßen- u. Radwegbau Vollsperrung 16.10.2006-15.11.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -22149,16586 -22959,16242 -24275,15746
 EOF
      },
     );

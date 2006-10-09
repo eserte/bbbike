@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.20 2006/09/21 00:50:47 eserte Exp $
+# $Id: bbbikedraw.t,v 1.23 2006/10/07 19:44:23 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -38,7 +38,7 @@ BEGIN {
 
     @modules = qw(GD/png GD/gif GD/jpeg GD::SVG SVG PDF PDF2
 		  Imager/png Imager/jpeg
-		  MapServer MapServer;noroute
+		  MapServer MapServer;noroute MapServer/pdf
 		  ImageMagick/png ImageMagick/jpeg
 		 );
 
@@ -52,10 +52,17 @@ BEGIN {
 }
 
 # Timings are (on my 466MHz machine) with -slow:
-# GD: 9 s
-# Imager: 37 s
-# MapServer: 60 s
-# ImageMagick: 461 s (with VectorUtil XS)
+# GD: 9s
+# Imager: 37s
+# MapServer: 60s
+# ImageMagick: 461s (with VectorUtil XS)
+
+# On a modern AMD Athlon with -slow (but later, more street data,
+#   different software version etc.):
+# GD: 6s
+# Imager: 37s
+# MapServer: 4s
+# ImageMagick: 23s
 
 my @drawtypes = qw(all);
 my $width = 640;
@@ -67,6 +74,8 @@ my $do_slow = 0;
 my $do_save = 0;
 my @bbox;
 my $do_display_all;
+my $flush_to_filename;
+my $do_compress = 1;
 
 my @only_modules;
 
@@ -76,6 +85,8 @@ if (!GetOptions(get_std_opts("display"),
 		"v|verbose!" => \$verbose,
 		"debug!" => \$debug,
 		"slow!" => \$do_slow,
+		"flushtofilename" => \$flush_to_filename,
+		"compress!" => \$do_compress,
 		'only=s@' => sub {
 		    push @only_modules, $_[1]; # Tests will fail with -only.
 		},
@@ -87,7 +98,17 @@ if (!GetOptions(get_std_opts("display"),
 		},
 	       )) {
     die "usage $0: [-display|-displayall] [-save] [-v|-verbose] [-debug] [-slow] [-only module]
-		   [-drawtypes type,type,...] [-bbox x0,y0,x1,y1] ...";
+		   [-drawtypes type,type,...] [-bbox x0,y0,x1,y1]
+		   [-flushtofilename] [-[no]compress] ...
+
+-flushtofilename: Normally the internal flush will be done to a filehandle.
+                  Change it to flush to a filename.
+-displayall:      Display generated image with all available viewers for
+		  this type.
+-debug:		  In debug mode, all created files will be kept.
+-nocompress:	  Do not compress output. Default is to compress where
+		  possible.
+";
 }
 
 @modules = @only_modules if @only_modules;
@@ -96,7 +117,8 @@ if ($do_display_all) {
     $do_display = 1;
 }
 
-my $tests_per_module = 4;
+my $image_info_tests = 3;
+my $tests_per_module = 1 + $image_info_tests;
 
 plan tests => scalar @modules * $tests_per_module;
 
@@ -108,7 +130,18 @@ for my $module (@modules) {
 	eval {
 	    draw_map($module);
 	};
-	is($@, "", "Draw with $module");
+	my $err = $@;
+	is($err, "", "Draw with $module");
+
+	if ($err && $module eq 'MapServer/pdf') {
+	    diag <<EOF;
+$module needs MapServer compiled with pdf support. Have pdflib installed
+and try recompile with something like:
+
+    sh configure --with-gd=/usr/local --with-pdf=/usr/local && make
+
+EOF
+	}
     }
 }
 
@@ -153,7 +186,7 @@ sub draw_map {
 
     my $draw = new BBBikeDraw
 	NoInit     => 1,
-	Fh         => $fh,
+	($flush_to_filename ? (Filename => $filename) : (Fh => $fh)),
 	Geometry   => $geometry,
 	Draw       => [@drawtypes],
 	Outline	   => 1,
@@ -168,6 +201,7 @@ sub draw_map {
 		       Windstaerke  => 3,
 		      },
         StrLabel   => ['str:HH,H'],
+	Compress   => $do_compress, # implemented for PDF
     ;
     if ($do_slow) {
 	$draw->set_bbox_max(Strassen->new("strassen"));
@@ -211,24 +245,39 @@ sub draw_map {
 	warn "Saved to $dest_filename\n";
     }
 
- SKIP: {
-	my $image_info = image_info($filename);
-	if ($imagetype =~ /^(png|gif|jpeg)$/) {
-	    is($image_info->{file_media_type}, "image/$imagetype", "Correct mime type for $imagetype");
-	} elsif ($imagetype eq 'svg') {
-	    like($image_info->{file_media_type}, qr{^image/svg[+-]xml$}, "Correct mime type for $imagetype");
-	    if ($image_info->{file_media_type} eq 'image/svg-xml') {
-		diag <<EOF;
+    # This block should generate $image_info_tests tests:
+    if ($imagetype =~ /^pdf$/) {
+	my $fh;
+	ok(open($fh, $filename), "File $filename opened");
+	local $/ = undef;
+	my $pdf_content = <$fh>;
+
+	local $TODO;
+	if ($module =~ /MapServer/) {
+	    $TODO = "Does not generate a PDF document, there's a PDFlib exception";
+	}
+	ok($pdf_content =~ m{^%PDF-1\.\d+}, "Looks like a PDF document");
+	ok($pdf_content =~ m{Creator.*(BBBikeDraw|MapServer)}i, "Found Creator");
+    } else {
+    SKIP: {
+	    my $image_info = image_info($filename);
+	    if ($imagetype =~ /^(png|gif|jpeg)$/) {
+		is($image_info->{file_media_type}, "image/$imagetype", "Correct mime type for $imagetype");
+	    } elsif ($imagetype eq 'svg') {
+		like($image_info->{file_media_type}, qr{^image/svg[+-]xml$}, "Correct mime type for $imagetype");
+		if ($image_info->{file_media_type} eq 'image/svg-xml') {
+		    diag <<EOF;
 The recommended mime type for SVG is image/svg+xml, not image svg-xml.
 See also http://www.svgfaq.com/ServerGen.asp or 
 http://support.adobe.com/devsup/devsup.nsf/docs/50809.htm.
 EOF
+		}
+	    } else {
+		skip "image_info does not work for $imagetype", 3;
 	    }
-	} else {
-	    skip "image_info does not work for $imagetype", 3;
+	    is($image_info->{width}, $width);
+	    is($image_info->{height}, $height);
 	}
-	is($image_info->{width}, $width);
-	is($image_info->{height}, $height);
     }
 }
 

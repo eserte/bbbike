@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.23 2006/10/06 00:09:56 eserte Exp $
+# $Id: bbbike.cgi,v 8.25 2006/10/09 16:01:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -694,7 +694,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.23 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.25 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -886,20 +886,51 @@ foreach my $type (qw(start via ziel)) {
     }
 }
 
-if (defined $q->param('movemap')) {
-    my $move = $q->param('movemap');
-    my($x, $y) = ($q->param('detailmapx'),
-		  $q->param('detailmapy'));
-    if    ($move =~ /^nord/i) { $y-- }
-    elsif ($move =~ /^s.*d/i) { $y++ }
-    if    ($move =~ /west$/i) { $x-- }
-    elsif ($move =~ /ost$/i)  { $x++ }
-    $q->delete('detailmapx');
-    $q->delete('detailmapy');
-    $q->delete('movemap');
-    draw_map('-x' => $x,
-	     '-y' => $y);
-    goto REQUEST_DONE;
+{
+    my($dx,$dy);
+ TRY_MOVEMAP: {
+	for my $ns_direction_def (['n', -1],
+				  ['s', +1],
+				  ['',   0],
+				 ) {
+	    my($ns_direction, $_dy) = @$ns_direction_def;
+	    for my $ew_direction_def (['',  0 ],
+				      ['e', +1],
+				      ['w', -1],
+				     ) {
+		my($ew_direction, $_dx) = @$ew_direction_def;
+		my $param_name = "movemap_" . $ns_direction . $ew_direction;
+		if ($q->param($param_name)) {
+		    $q->delete($param_name);
+		    $dx = $_dx;
+		    $dy = $_dy;
+		    last TRY_MOVEMAP;
+		}
+	    }
+	}
+
+	# otherwise: old style with hardcoded german labels
+	if (defined $q->param('movemap')) {
+	    my $move = $q->param('movemap');
+	    $q->delete("movemap");
+	    if    ($move =~ /^nord/i) { $dy = -1 }
+	    elsif ($move =~ /^s.*d/i) { $dy = +1 }
+	    if    ($move =~ /west$/i) { $dx = -1 }
+	    elsif ($move =~ /ost$/i)  { $dx = +1 }
+	}
+    }
+
+    if ($dx || $dy) {
+	my($x, $y) = ($q->param('detailmapx'),
+		      $q->param('detailmapy'));
+	$q->delete('detailmapx');
+	$q->delete('detailmapy');
+	$x += $dx;
+	$y += $dy;
+	draw_map('-x' => $x,
+		 '-y' => $y);
+	goto REQUEST_DONE;
+    }
 }
 
 foreach my $type (qw(start via ziel)) {
@@ -4714,11 +4745,11 @@ EOF
 	if ($y > 0) {
 	    print "<tr><td align=right>";
 	    if ($x > 0) {
-		print qq{<input type=submit name=movemap value="} . M("Nordwest") . qq{">};
+		print qq{<input type=submit name=movemap_nw value="} . M("Nordwest") . qq{">};
 	    }
-	    print qq{</td><td align=center><input type=submit name=movemap value="} . M("Nord") . qq{"></td>\n};
+	    print qq{</td><td align=center><input type=submit name=movemap_n value="} . M("Nord") . qq{"></td>\n};
 	    if ($x < $xgridnr-1) {
-		print qq{<td align=left><input type=submit name=movemap value="} . M("Nordost") . qq{"></td>};
+		print qq{<td align=left><input type=submit name=movemap_ne value="} . M("Nordost") . qq{"></td>};
 	    }
 	    print "</tr>\n";
 	}
@@ -4726,7 +4757,7 @@ EOF
 	# mittlere Zeile
 	print "<tr><td align=right>";
 	if ($x > 0) {
-	    print qq{<input type=submit name=movemap value="} . M("West") . qq{">};
+	    print qq{<input type=submit name=movemap_w value="} . M("West") . qq{">};
  	}
 	print
 	  "</td><td><input type=image title='' name=detailmap ",
@@ -4735,7 +4766,7 @@ EOF
 	  "align=middle width=$detailwidth height=$detailheight>",
 	  "</td>\n";
 	if ($x < $xgridnr-1) {
-	    print qq{<td align=left><input type=submit name=movemap value="} . M("Ost") . qq{"></td>};
+	    print qq{<td align=left><input type=submit name=movemap_e value="} . M("Ost") . qq{"></td>};
  	}
 	print "</tr>\n";
 
@@ -4743,11 +4774,11 @@ EOF
 	if ($y < $ygridnr-1) {
 	    print "<tr><td align=right>";
 	    if ($x > 0) {
-		print qq{<input type=submit name=movemap value="} . M("Südwest") . qq{">};
+		print qq{<input type=submit name=movemap_sw value="} . M("Südwest") . qq{">};
 	    }
-	    print qq{</td><td align=center><input type=submit name=movemap value="} . M("Süd") . qq{"></td>};
+	    print qq{</td><td align=center><input type=submit name=movemap_s value="} . M("Süd") . qq{"></td>};
 	    if ($x < $xgridnr-1) {
-		print qq{<td align=left><input type=submit name=movemap value="} . M("Südost") . qq{"></td>};
+		print qq{<td align=left><input type=submit name=movemap_se value="} . M("Südost") . qq{"></td>};
 	    }
 	    print "</tr>\n";
  	}
@@ -4813,12 +4844,8 @@ sub get_cyclepath_streets {
 sub get_streets {
     my($scope) = shift || $q->param("scope") || "city";
     $scope =~ s/^all,//;
-    if ($g_str) {
-	return $g_str
-	    if (($scope eq 'city'       && $g_str->{Scope} eq 'city') ||
-		($scope eq 'region'     && $g_str->{Scope} eq 'region') ||
-		($scope eq 'wideregion' && $g_str->{Scope} eq 'wideregion')
-	       );
+    if ($g_str && $g_str->{Scope} eq $scope) {
+	return $g_str;
     }
     my @f = ("strassen",
 	     ($scope =~ /region/ ? "landstrassen" : ()),
@@ -4871,6 +4898,8 @@ sub get_streets {
 	    $g_str->{Scope} = $scope;
 	}
     }
+
+    $crossings = {};
 
     $g_str;
 }
@@ -6101,7 +6130,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/10/06 00:09:56 $';
+    my $cgi_date = '$Date: 2006/10/09 16:01:27 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

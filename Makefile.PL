@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.132 2006/09/05 21:43:06 eserte Exp $
+# $Id: Makefile.PL,v 1.133 2006/10/07 10:42:52 eserte Exp $
 
 use 5.005;
 
@@ -196,7 +196,7 @@ my @req_table =
 # standard Unix: uname, who, tee, at, diff, zcat, ping
 # BSD Unix:      leave (very optional)
 # extra:         enscript, gv, ghostview, gs, netpbm-utils, cjpeg, agrep,
-#                netscape, socket, mapserver
+#                netscape, socket, mapserver, pdftk
 # local extra:   cdmount, dial
 # palm utils:    install-datebook, pilot_makedoc, iSilo*, txt2pdbdoc,
 #                pilot-xfer

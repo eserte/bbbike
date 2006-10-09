@@ -2488,36 +2488,32 @@ die Flaggen.
 Zusammenstoßende Straßenumrandungen weisen manchmal eine große Lücke
 auf (schön zu sehen: bbbikedraw.t, Hochkirchstr.). 
 
+=item * (M2) (bug)
+
+Draw street outlines above areas. Siehe
+Viktoria-Park/Kreuzbergstr./Katzbachstr.
+
 =back
 
 =head3 BBBikeDraw::PDF
 
 =over
 
-=item * (M4)
-
-Use pdftk or some other tool to compress the PDF output:
-
-    pdftk bbbike.pdf output c.pdf compress
-
-Saves a lot:
-
-    -rw-------  1 eserte  wheel  293319 21 Sep 00:56 bbbike.pdf
-    -rw-rw----  1 eserte  wheel   64763 21 Sep 01:11 c.pdf
-
 =item * (M3)
 
 Show more fields in route list (just like in web interface)
 
-=item * (H3)
+=item * (H3) (feature)
 
-Bei Bedarf in mehrere Seiten aufteilen?
+Bei Bedarf Karte in mehrere Seiten aufteilen?
 
 =item * (M2)
 
 Überprüfen, ob der Massstab noch auf die Karte passt, ansonsten von
 1km verkleinern. Der entsprechende Code müsste auch für andere
-BBBikeDraw::*-Module verwendet werden.
+BBBikeDraw::*-Module verwendet werden. (in BBBikeDraw::GD und
+BBBikeDraw::PDF bereits implementiert, Teile von draw_scale müssten
+nach BBBikeDraw.pm ausgelagert werden)
 
 =item * (H3)
 

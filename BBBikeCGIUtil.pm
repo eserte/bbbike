@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeCGIUtil.pm,v 1.5 2006/03/24 20:32:40 eserte Exp $
+# $Id: BBBikeCGIUtil.pm,v 1.6 2006/10/09 15:35:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -16,12 +16,14 @@ package BBBikeCGIUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 
 sub encode_possible_utf8_params {
     my($q, $from, $to) = @_;
     eval {
 	require Encode;
+	local $^W = 0; # version not numeric warning
+	Encode->VERSION(2.08); # "Süd" gets destroyed in older versions
 	my %new_param;
 	for my $key ($q->param) {
 	    next if $q->upload($key);
@@ -44,7 +46,9 @@ sub encode_possible_utf8_params {
 	    $q->param($k,@$v);
 	}
     };
-    warn $@ if $@;
+    if ($@ && $@ !~ /Encode version .* required/) {
+	warn $@ if $@;
+    }
 }
 
 # Hack for ProxyPass on bbbike.radzeit.de:

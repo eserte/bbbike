@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver.t,v 1.5 2006/09/09 10:52:18 eserte Exp $
+# $Id: mapserver.t,v 1.6 2006/10/07 13:36:13 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -118,7 +118,7 @@ my $ms = get_config();
     $agent->get($url);
     ok($agent->success, "$url is ok");
 
-    my $skip_not_useable = ($host eq "radzeit" && index($agent->content, 'Unable to access file. (/var/www/domains/radzeit.de/www/') > -1);
+    my $skip_not_useable = ($host eq "radzeit" && index($agent->content, 'Unable to access file.') > -1 && index($agent->content, '/var/www/domains/radzeit.de/www/') > -1);
 
     SKIP:
     {

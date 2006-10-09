@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.29 2006/10/07 09:07:18 eserte Exp $
+# $Id: MapServer.pm,v 1.30 2006/10/07 19:22:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -188,8 +188,16 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
     __PACKAGE__->mk_accessors(@accessors);
 
     sub ImageType {
-	my $suffix = shift->ImageSuffix;
-	uc($suffix);
+	my $self = shift;
+	if (@_) {
+	    $self->{ImageType} = $_[0];
+	}
+	if (!defined $self->{ImageType}) {
+	    my $suffix = shift->ImageSuffix;
+	    uc($suffix);
+	} else {
+	    uc($self->{ImageType});
+	}
     }
 
     sub Conf {
@@ -222,10 +230,12 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
     use File::Temp qw(tempfile);
 
     sub new {
-	my($package, $w, $h) = @_;
+	my($package, $w, $h, %args) = @_;
 	my $self = bless {}, $package;
 	$self->Width($w);
 	$self->Height($h);
+	$self->ImageType($args{imagetype}) 
+	    if exists $args{imagetype};
 	$self;
     }
 
@@ -274,6 +284,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
 		   "$mapserver_bin_dir/shp2img",
 		   "-m", $mapfile,
 		   "-e", @{ $self->BBox },
+		   "-i", $self->ImageType,
 		  );
 	#warn "@cmd";
 	my $buf;
@@ -316,7 +327,10 @@ sub init {
     if ($self->{OldImage}) {
 	die "No support for drawing over old images in " . __PACKAGE__;
     } else {
-	$im = BBBikeDraw::MapServer::Image->new($self->{Width},$self->{Height});
+	$im = BBBikeDraw::MapServer::Image->new
+	    ($self->{Width},$self->{Height},
+	     imagetype => $self->msImageType,
+	    );
     }
 
     $self->{Image}  = $im;
@@ -602,6 +616,15 @@ sub empty_image_error {
 #  	print $im->imageOut;
 #      }
 #      confess "Empty image";
+}
+
+sub msImageType {
+    my($self) = @_;
+    my $imagetype = $self->imagetype;
+    if ($imagetype eq 'jpeg') {
+	$imagetype = "jpg";
+    }
+    $imagetype;
 }
 
 1;

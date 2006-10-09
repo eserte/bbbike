@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.38 2006/10/07 09:07:25 eserte Exp $
+# $Id: PDF.pm,v 2.41 2006/10/07 11:15:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
@@ -36,17 +36,32 @@ use Strassen;
 use Carp qw(confess);
 
 use vars qw($VERSION @colors %color %width %outline_color
-	    $sansserif $symbolfont);
+	    $sansserif $symbolfont $VERBOSE);
 BEGIN { @colors =
          qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
 	    $darkblue $lightblue $rose $black $darkgrey $lightgreen);
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.38 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.41 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
+
+    if ($self->{Compress}) {
+	require BBBikeUtil;
+	if (BBBikeUtil::is_in_path("pdftk")) {
+	    require File::Temp;
+	    my($fh,$filename) = File::Temp::tempfile(SUFFIX => ".pdf", UNLINK => 1);
+	    die "Cannot create temporary file: $!" if !$filename;
+	    $self->{_CompressOriginalFilename} = $self->{Filename};
+	    $self->{_CompressTemporaryFilename} = $filename;
+	    $self->{Filename} = $filename;
+	} else {
+	    warn "No pdftk in PATH available, don't compress...";
+	    undef $self->{Compress};
+	}
+    }
 
     my $pdf = PDF::Create->new
 	((defined $self->{Filename} ?
@@ -501,10 +516,14 @@ sub draw_scale {
     my $bar_width = 4;
     my($x0,$y0) = $transpose->(0,0);
     my($x1,$y1, $strecke, $strecke_label);
-    for $strecke (1000, 5000, 10000, 20000, 50000, 100000) {
+    for $strecke (10, 50, 100, 500, 1000, 5000, 10000, 20000, 50000, 100000) {
 	($x1,$y1) = $transpose->($strecke,0);
-	if ($x1-$x0 > 30) {
-	    $strecke_label = $strecke/1000 . "km";
+	if ($x1-$x0 > 50) {
+	    if ($strecke >= 1000) {
+		$strecke_label = $strecke/1000 . "km";
+	    } else {
+		$strecke_label = $strecke . "m";
+	    }
 	    last;
 	}
     }
@@ -788,6 +807,36 @@ sub flush {
 	binmode $fh;
     }
     $self->{PDF}->close;
+
+    if ($self->{Compress}) {
+	my $compress_message = sub {
+	    my($before, $after) = @_;
+	    "Compressed " . (100-int(100*(-s $after)/(-s $before))) .
+		"% (original " . (-s $before) . " bytes, compressed " . (-s $after) . " bytes)...\n";
+	};
+
+	if (defined $self->{_CompressOriginalFilename}) {
+	    system("pdftk", $self->{Filename}, "output", $self->{_CompressOriginalFilename}, "compress");
+	    warn eval { $compress_message->($self->{Filename}, $self->{_CompressOriginalFilename}) }
+		if $VERBOSE;
+	    unlink $self->{_CompressTemporaryFilename};
+	} else {
+	    require File::Temp;
+	    my($fh,$filename) = File::Temp::tempfile(SUFFIX => ".pdf", UNLINK => 1);
+	    system("pdftk", $self->{Filename}, "output", $filename, "compress");
+	    seek $fh, 0, 0;
+	    local $/ = \4096;
+	    my $ofh = $self->{Fh};
+	    while(<$fh>) {
+		print $ofh $_;
+	    }
+	    close $fh;
+	    warn eval { $compress_message->($self->{Filename}, $filename) }
+		if $VERBOSE;
+	    unlink $filename;
+	    unlink $self->{_CompressTemporaryFilename};
+	}
+    }
 }
 
 # use Return => "string" in the constructor for this method

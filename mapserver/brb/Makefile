@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.51 2006/09/28 23:05:27 eserte Exp $
+# $Id: Makefile,v 1.52 2006/10/09 18:42:57 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -663,3 +663,6 @@ dist-spiff:
 #    sh configure --with-freetype=/usr/local/bin --with-gd=/usr/local --with-png=/usr/local --with-jpeg=/usr/local --with-xpm=/usr/X11R6 --with-libiconv=/usr/local --with-pdf=/usr/local
 # Mind a possible mismatch: /usr/local/include/gd* vs. /usr/local/include/gd/gd*
 
+# New compile of CVS version on bbbike.radzeit.de
+# - bison/yacc was missing, got it from http://www.slackware.at/data/slackware-10.0/slackware/d/
+#   and installed it with installpkg 
