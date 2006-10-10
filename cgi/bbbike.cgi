@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.25 2006/10/09 16:01:27 eserte Exp $
+# $Id: bbbike.cgi,v 8.26 2006/10/10 23:10:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -694,7 +694,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.25 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.26 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -810,7 +810,7 @@ if (defined $mapdir_fs && !-d $mapdir_fs) {
 
 # $mapdir_url absolut machen
 if (defined $mapdir_url && $mapdir_url !~ m{^https?://}) {
-    $mapdir_url = "http://" . $q->server_name . ($q->server_port != 80 ? ":" . $q->server_port : "") . $mapdir_url;
+    $mapdir_url = "http://" . BBBikeCGIUtil::my_server_name($q) . ($q->server_port != 80 ? ":" . $q->server_port : "") . $mapdir_url;
 }
 
 #XXX ! stay shared: my($fontstr, $fontend);
@@ -6130,7 +6130,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/10/09 16:01:27 $';
+    my $cgi_date = '$Date: 2006/10/10 23:10:33 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

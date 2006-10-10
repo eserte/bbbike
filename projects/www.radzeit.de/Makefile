@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.89 2006/09/18 22:17:32 eserte Exp $
+# $Id: Makefile,v 1.89 2006/09/18 22:17:32 eserte Exp eserte $
 #
 
 # Targets:
@@ -144,6 +144,7 @@ TARGET=radzeit.herceg.de
       make(rsync-mapserver)	     || \
       make(rsync-temp-blockings)     || \
       make(rsync-routopedia)	     || \
+      make(rsync-tests)		     || \
       make(clean-cache-files-on-remote)
 TARGET=radzeit
 .elif make(deploy-local)      || \
@@ -158,6 +159,9 @@ TARGET=radzeit.herceg.de
 .elif make(test-from-local-ixls-de) || \
       make(deploy-ixls-de)          || \
       make(rsync-ixls-de)
+TARGET=radzeit
+.elif make(rule-slaven1)
+# This is just a dummy:
 TARGET=radzeit
 .else
 .error "Please set TARGET to radzeit or radzeit.herceg.de"
@@ -229,6 +233,9 @@ rsync-bbbike:
 
 rsync-mapserver:	check-rsync-ok check-rsync-mapserver /tmp/mapserver.rsync.exclude
 	${RSYNC_PROG} ${RSYNC_ARGS_MS} ${CURDIR}/public/mapserver/ ${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_SSH_HOST}:${BBBIKE_RADZEIT_APACHE_DIR}/${HTDOCS}/mapserver/
+
+rsync-tests:
+	${RSYNC_PROG} ${RSYNC_ARGS} ${BBBIKE_ROOT_DIR}/t/ ${RSYNC_DEST}/BBBike/t/
 
 /tmp/mapserver.rsync.exclude: .rsync.exclude
 	perl -pe 's{^public/mapserver/}{}' $> > $@
@@ -302,6 +309,9 @@ deploy-local-data:	${DEPLOY_LOCAL_DATA_TARGETS}
 test-makefile:
 	${MAKE} -n deploy-local > /tmp/test-makefile.cmd
 	perl -e 'while(<ARGV>) {print STDERR "\a$$_> "; <STDIN>; system($$_) and warn $$?}' /tmp/test-makefile.cmd
+
+rule-slaven1:
+	${MAKE} ${.MAKEFLAGS} ${RULE} SSH_PROG_AND_ARGS="ssh -2 -p 5025" BBBIKE_RADZEIT_HOST=slaven1.radzeit.de
 
 ######################################################################
 # Sub targets

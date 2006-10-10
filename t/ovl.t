@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: ovl.t,v 1.8 2006/05/15 21:29:56 eserte Exp $
+# $Id: ovl.t,v 1.9 2006/10/10 22:11:38 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -57,12 +57,13 @@ YKoord3=52.39484059
 
 my $tests_per_file = 1;
 my $simple_tests_per_file = 1;
-my $tests = 4 * $tests_per_file + scalar(@ovl_files) * $simple_tests_per_file;
+my $total_file_tests = 4 * $tests_per_file;
+my $tests = $total_file_tests + scalar(@ovl_files) * $simple_tests_per_file;
 plan tests => $tests;
 my $ovl_zip = "$ovl2dir/bahn_mv.zip";
 
 SKIP: {
-    skip("No ovl archive for testing available", $tests)
+    skip("No ovl archive for testing available", $total_file_tests)
 	if !-r $ovl_zip;
 
     my $zip = Archive::Zip->new;

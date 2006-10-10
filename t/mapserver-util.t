@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver-util.t,v 1.4 2006/05/15 20:51:16 eserte Exp $
+# $Id: mapserver-util.t,v 1.5 2006/10/10 22:40:39 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -44,7 +44,7 @@ sub get_agent {
 
 sub is_on_mapserver_page {
     my($agent, $for) = @_;
-    like($agent->response->request->uri, qr{/mapserv.cgi}, "Show mapserver output for $for");
+    like($agent->response->request->uri, qr{(/mapserv.cgi|cgi-bin/mapserv)}, "Show mapserver output for $for");
 
     my(@images) = $agent->find_all_images;
     is(scalar(@images), 4, "Expected 4 images: map, ref, legend, scalebar");

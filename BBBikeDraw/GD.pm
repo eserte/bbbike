@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.55 2006/10/07 11:15:02 eserte Exp $
+# $Id: GD.pm,v 1.56 2006/10/10 21:42:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -40,7 +40,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.55 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.56 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush, %thickness, %outline_thickness);
 
@@ -61,6 +61,7 @@ sub init {
 			  '/usr/X11R6/lib/X11/fonts/ttf/LucidaSansRegular.ttf',
 			  '/usr/X11R6/lib/X11/fonts/bitstream-vera/Vera.ttf',
 			  '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
+			  '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # found on Debian
 			 ) {
 		if (-r $font) {
 		    $TTF_STREET = $font;
@@ -77,6 +78,7 @@ sub init {
 			  '/usr/X11R6/lib/X11/fonts/Type1/lcdxsr.pfa',
 			  '/usr/X11R6/lib/X11/fonts/bitstream-vera/Vera.ttf',
 			  '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
+			  '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # found on Debian
 			 ) {
 		if (-r $font) {
 		    $TTF_CITY = $font;

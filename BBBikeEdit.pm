@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.113 2006/09/28 21:22:56 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.114 2006/10/10 22:17:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -1826,7 +1826,6 @@ sub _auto_rcs_header {
 package BBBikeEdit;
 use Fcntl; # für DB_File;
 use Class::Struct;
-use Tk::LabEntry;
 use Strassen;
 use BBBikeEditUtil;
 use BBBikeGPS;
@@ -2044,6 +2043,7 @@ sub click {
     }
 
     require Tk::Ruler;
+    require Tk::LabEntry;
 
     my $top = $o->top;
     my $t = $top->Toplevel(-title => M("BBBike-Editor") . ": " . $click_info->basefile);

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeCGIUtil.pm,v 1.6 2006/10/09 15:35:51 eserte Exp $
+# $Id: BBBikeCGIUtil.pm,v 1.7 2006/10/10 23:10:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeCGIUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 sub encode_possible_utf8_params {
     my($q, $from, $to) = @_;
@@ -70,6 +70,15 @@ sub my_self_url {
     my $host = my_url($q);
     my $qs = $q->query_string;
     $host . ($qs ne "" ? "?$qs" : "");
+}
+
+sub my_server_name {
+    my($q) = @_;
+    if ($q->server_name eq '192.168.0.5') {
+	'slaven1.radzeit.de';
+    } else {
+	$q->server_name;
+    }
 }
 
 1;

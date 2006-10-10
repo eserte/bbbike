@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.37 2006/09/28 23:05:27 eserte Exp $
+# $Id: cgi.t,v 1.38 2006/10/10 23:45:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -155,42 +155,45 @@ for my $cgiurl (@urls) {
     # search_coord
     for my $output_as ("", qw(xml gpx-track gpx-route print perldump
 			      yaml yaml-short palmdoc mapserver)) {
-    SKIP: {
-	    skip "No mapserver tests", 1 if $skip{mapserver};
-
-	    $req = new HTTP::Request
-		('GET', "$action?startname=Dudenstr.&startplz=10965&startc=9222%2C8787&zielname=Grimmstr.+%28Kreuzberg%29&zielplz=10967&zielc=11036%2C9592&pref_seen=1&output_as=$output_as", $hdrs);
-	    $res = $ua->request($req);
-	    ok($res->is_success, "Route result output_as=$output_as")
-		or diag $res->as_string;
-	    my $content = uncompr($res);
-	    if ($output_as eq '' || $output_as eq 'print') {
-		is($res->content_type, 'text/html', "Expected content type");
-		ok($content =~ /L.*nge:.*(\d[\d.,]+).*km/ && $1 > 0,
-		   "Length text found");
-		like($content, qr/nach\s+Osten/, "Direction is correct");
-		like($content, qr/angekommen/, "End of route list found");
-	    } elsif ($output_as eq 'palmdoc') {
-		is($res->content_type, 'application/x-palm-database',
-		   "Correct mime type for palmdoc");
-		like($content, qr/Dudenstr/, "Expected palmdoc content");
-	    } elsif ($output_as eq 'perldump') {
-		is($res->content_type, 'text/plain',
-		   "Correct mime type for perl dump");
-		my $route = $cpt->reval($content);
-		is(ref $route, 'HASH', "perldump is a hash");
-		is(ref $route->{Route}, 'ARRAY', "Route member found");
-		like($route->{Route}[0]{DirectionString}, qr/nach\s+Osten/,
-		     "Direction is correct");
-		is($route->{Route}[0]{Direction}, "E",
-		   "Raw direction is correct");
-	    } elsif ($output_as eq 'mapserver') {
+	$req = new HTTP::Request
+	    ('GET', "$action?startname=Dudenstr.&startplz=10965&startc=9222%2C8787&zielname=Grimmstr.+%28Kreuzberg%29&zielplz=10967&zielc=11036%2C9592&pref_seen=1&output_as=$output_as", $hdrs);
+	$res = $ua->request($req);
+	ok($res->is_success, "Route result output_as=$output_as")
+	    or diag $res->as_string;
+	my $content = uncompr($res);
+	if ($output_as eq '' || $output_as eq 'print') {
+	    is($res->content_type, 'text/html', "Expected content type");
+	    ok($content =~ /L.*nge:.*(\d[\d.,]+).*km/ && $1 > 0,
+	       "Length text found");
+	    like($content, qr/nach\s+Osten/, "Direction is correct");
+	    like($content, qr/angekommen/, "End of route list found");
+	} elsif ($output_as eq 'palmdoc') {
+	    is($res->content_type, 'application/x-palm-database',
+	       "Correct mime type for palmdoc");
+	    like($content, qr/Dudenstr/, "Expected palmdoc content");
+	} elsif ($output_as eq 'perldump') {
+	    is($res->content_type, 'text/plain',
+	       "Correct mime type for perl dump");
+	    my $route = $cpt->reval($content);
+	    is(ref $route, 'HASH', "perldump is a hash");
+	    is(ref $route->{Route}, 'ARRAY', "Route member found");
+	    like($route->{Route}[0]{DirectionString}, qr/nach\s+Osten/,
+		 "Direction is correct");
+	    is($route->{Route}[0]{Direction}, "E",
+	       "Raw direction is correct");
+	} elsif ($output_as eq 'mapserver') {
+	SKIP: {
+		skip "No mapserver tests", 1 if $skip{mapserver};
 		is($res->content_type, "text/html",
 		   "Expected content-type for $output_as");
-	    } elsif ($output_as =~ m{^( xml
-				     |  gpx-track
-				     |  gpx-route
-				    )$}x && is_in_path('xmllint')) {
+	    }
+	} elsif ($output_as =~ m{^( xml
+				 |  gpx-track
+				 |  gpx-route
+				    )$}x) {
+	SKIP: {
+		skip("No xmllint in PATH", 1) if !is_in_path('xmllint');
+
 		open(XMLLINT, "| xmllint - 2>&1 >/dev/null");
 		print XMLLINT $content;
 		close XMLLINT;

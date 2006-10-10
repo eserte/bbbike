@@ -6206,4 +6206,20 @@ EOF
 userdel	q4::inwork -22149,16586 -22959,16242 -24275,15746
 EOF
      },
+     { from  => 1161295200, # 2006-10-20 00:00
+       until => 1161468000, # 2006-10-22 00:00
+       text  => 'B 102 Milower Landstraße Bahnübergang in der OD Rathenow Gleisbauarbeiten Vollsperrung 21.10.2006-21.10.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -62153,19281 -62269,19881
+EOF
+     },
+     { from  => 1160431200, # 2006-10-10 00:00
+       until => 1166828400, # 2006-12-23 00:00
+       text  => 'L 011 Wittenberger Str. OD Bad Wilsnack, zw. Karthanebrücke u. Wedenstr. Kanal- und Straßenbau Vollsperrung 11.10.2006-22.12.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -91328,59520 -89647,59213
+EOF
+     },
     );

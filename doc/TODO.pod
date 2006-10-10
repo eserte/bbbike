@@ -1324,24 +1324,14 @@ Tk-SREZIC/examples/k2listbox.pl?
 
 =back
 
-=head2 MacOSX specific
-
-=over
-
-=item * (H2)
-
-Maybe create a Mac distribution using .dmg disk images? See for
-example:
-
- http://www.stepwise.com/Articles/Technical/2001-03-29.01.html
- http://el-tramo.be/guides/fancy-dmg/
- http://el-tramo.be/files/fancy-dmg/Makefile
-
-=back
-
 =head2 Plugins
 
 =over
+
+=item * (M4) (bug)
+
+BBBikeRuler: das neue Leftmouse-Dragging funktioniert nicht mit diesem
+Plugin.
 
 =item * (H5)
 
@@ -1363,6 +1353,21 @@ Vielleicht Windchill-Temperatur zusätzlich anzeigen. See
 windchill program in bin/sh or devel. Frage: wie und wo soll die
 Temperatur angezeigt werden? Im CGI? In der Perl/Tk-Version als Plugin
 oder Standard?
+
+=back
+
+=head2 MacOSX specific
+
+=over
+
+=item * (H2)
+
+Maybe create a Mac distribution using .dmg disk images? See for
+example:
+
+ http://www.stepwise.com/Articles/Technical/2001-03-29.01.html
+ http://el-tramo.be/guides/fancy-dmg/
+ http://el-tramo.be/files/fancy-dmg/Makefile
 
 =back
 
@@ -2130,6 +2135,11 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (M3) (feature)
+
+Die Detailkarte auf Potsdam erweitern. Vielleicht auch das Scrollen
+auf der Detailmap unendlich möglich machen?
+
 =item * (E5)
 
 $g_str muss wissen, welcher Scope verwendet wurde. Und jeder Zugriff
@@ -2141,6 +2151,8 @@ Das wirkt sich nur in mod_perl aus.
 Kann ich einen Test schreiben, der dieses Verhalten reproduziert
 (i.e.: Apache neu starten, nur einen Prozess verwenden, scope=city ...
 scope=region, kreuzung auswählen -> boom!)
+
+-> fixed, aber der Test fehlt noch...
 
 =item * (H5)
 
@@ -2482,6 +2494,12 @@ die Flaggen.
 =head3 BBBikeDraw::ImageMagick
 
 =over
+
+=item * (M3) (feature)
+
+$TTF_STREET (und auch andere) sollte wie in GD.pm gesetzt werden. Oder
+besser: in BBBikeDraw.pm eine Funktion dazu definieren und überall bei
+Bedarf verwenden.
 
 =item * (H2) (bug)
 
