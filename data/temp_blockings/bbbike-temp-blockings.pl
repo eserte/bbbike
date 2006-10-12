@@ -5208,9 +5208,9 @@ EOF
 userdel	1::inwork 2639,2989 2638,2843
 EOF
      },
-     { from  => 1153860349, # 2006-07-25 22:45
-       until => 1159653600, # 2006-10-01 00:00
-       text  => 'Ruschestr. (Lichtenberg) in Richtung Frankfurter Allee, zwischen Normannenstr. und Frankfurter Allee Baustelle, Straße vollständig gesperrt (bis 30.09.06)',
+     { from  => 1160591740, # 2006-10-11 20:35
+       until => 1161208800, # 2006-10-19 00:00
+       text  => 'Ruschestr. (Lichtenberg) in Richtung Frankfurter Allee, zwischen Normannenstr. und Frankfurter Allee Baustelle, Fartrichtung gesperrt (bis 18.10.06)',
        type  => 'gesperrt',
        source_id => 'IM_003134',
        data  => <<EOF,
@@ -5318,9 +5318,9 @@ EOF
 userdel	q4::inwork 12571,-99519 12383,-99327 12173,-99115
 EOF
      },
-     { from  => 1154785716, # 2006-08-05 15:48
-       until => 1159739999, # 2006-10-01 23:59
-       text  => 'Grunerstr. (Mitte) stadtauswärts neben Tunnel Alexanderplatz Baustelle, Fahrtrichtung gesperrt (bis Anfang 10.2006)',
+     { from  => 1160591665, # 2006-10-11 20:34
+       until => 1160949599, # 2006-10-15 23:59
+       text  => 'Grunerstr. (Mitte) stadtauswärts neben Tunnel Alexanderplatz Baustelle, Fahrtrichtung gesperrt (bis Mitte 10.2006)',
        type  => 'gesperrt',
        source_id => 'IM_003144',
        data  => <<EOF,
@@ -5619,9 +5619,9 @@ EOF
 userdel	1::inwork 18853,6009 18445,6287 18343,6318 18175,6376 17992,6436
 EOF
      },
-     { from  => 1152396000, # 2006-07-09 00:00
-       until => 1162335600, # 2006-11-01 00:00
-       text  => 'B 097 Dresdener Str. Brücke ober DB im OT Schwarze Pumpe Brückensicherung Vollsperrung 10.07.2006-31.10.2006 ',
+     { from  => 1160949600, # 2006-10-16 00:00
+       until => 1188597600, # 2007-09-01 00:00
+       text  => 'B 097 Dresdener Str. Brücke ober DB im OT Schwarze Pumpe Brückenneubau Vollsperrung 17.10.2006-31.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 75459,-98456 75933,-97371
@@ -5930,8 +5930,8 @@ userdel	1::inwork 17156,6235 16861,5935
 EOF
      },
      { from  => 1159221600, # 2006-09-26 00:00
-       until => 1162594800, # 2006-11-04 00:00
-       text  => 'B 168 Trampe - Eberswalde Trampe, Dorfstraße-Eberswalde Deckenerneuerung Vollsperrung 27.09.2006-03.11.2006 ',
+       until => 1161381600, # 2006-10-21 00:00
+       text  => 'B 168 zw. Trampe und Eberswalde Deckenerneuerung Vollsperrung 27.09.2006-20.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 38554,47567 39446,42585
@@ -6021,8 +6021,8 @@ userdel	2::inwork 5339,-84725 4072,-82982 2952,-81725
 EOF
      },
      { from  => 1159480800, # 2006-09-29 00:00
-       until => 1187215200, # 2007-08-16 00:00
-       text  => 'B 002 OD Gartz Knotenpunkt Stettiner-/Scheunenstraße Ausbau Knotenpunkt Vollsperrung 30.09.2006-15.08.2007 ',
+       until => 1161036000, # 2006-10-17 00:00
+       text  => 'B 002 Stettiner Str. OD Gartz, Knotenpunkt Stettiner-/Scheunenstraße Ausbau Knotenpunkt Vollsperrung 30.09.2006-16.10.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 76130,90395 76136,90778
@@ -6220,6 +6220,22 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -91328,59520 -89647,59213
+EOF
+     },
+     { from  => 1160517600, # 2006-10-11 00:00
+       until => 1160690400, # 2006-10-13 00:00
+       text  => 'L 027 Woltersdorfer Str. Bahnübergang in der OL Casekow Gleisbauarbeiten Vollsperrung 12.10.2006-12.10.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 63363,90636 63491,90572
+EOF
+     },
+     { from  => 1160949600, # 2006-10-16 00:00
+       until => 1162594800, # 2006-11-04 00:00
+       text  => 'L 281 Neureetz-Altranft zw. Croustillier und Brücke über Alte Oder Deckenerneuerung Vollsperrung 17.10.2006-03.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 56925,41800 58564,43539
 EOF
      },
     );

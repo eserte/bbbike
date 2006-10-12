@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.23 2006/10/07 19:44:23 eserte Exp $
+# $Id: bbbikedraw.t,v 1.24 2006/10/11 23:49:59 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -72,10 +72,11 @@ my $verbose = 0;
 my $debug   = 0;
 my $do_slow = 0;
 my $do_save = 0;
-my @bbox;
+my @bbox = (8134,8581,9450,9718);
 my $do_display_all;
 my $flush_to_filename;
 my $do_compress = 1;
+my $do_route = 0;
 
 my @only_modules;
 
@@ -87,6 +88,8 @@ if (!GetOptions(get_std_opts("display"),
 		"slow!" => \$do_slow,
 		"flushtofilename" => \$flush_to_filename,
 		"compress!" => \$do_compress,
+		"route!" => \$do_route,
+		"geometry=s" => \$geometry,
 		'only=s@' => sub {
 		    push @only_modules, $_[1]; # Tests will fail with -only.
 		},
@@ -98,7 +101,7 @@ if (!GetOptions(get_std_opts("display"),
 		},
 	       )) {
     die "usage $0: [-display|-displayall] [-save] [-v|-verbose] [-debug] [-slow] [-only module]
-		   [-drawtypes type,type,...] [-bbox x0,y0,x1,y1]
+		   [-drawtypes type,type,...] [-bbox x0,y0,x1,y1] [-geometry wxh] [-noroute]
 		   [-flushtofilename] [-[no]compress] ...
 
 -flushtofilename: Normally the internal flush will be done to a filehandle.
@@ -108,6 +111,8 @@ if (!GetOptions(get_std_opts("display"),
 -debug:		  In debug mode, all created files will be kept.
 -nocompress:	  Do not compress output. Default is to compress where
 		  possible.
+-noroute:	  Do not draw route, so using just the bbox.
+-geometry wxh:    Default is $geometry.
 ";
 }
 
@@ -195,7 +200,7 @@ sub draw_map {
 	Module     => $module,
 	Startname  => "Start",
 	Zielname   => "Goal",
-	Coords     => ["9222,8787", "8209,8769"],
+	($do_route ? (Coords => ["9222,8787", "8209,8769"]) : ()),
 	UseFlags   => 1,
 	Wind       => {Windrichtung => 'N',
 		       Windstaerke  => 3,
@@ -208,13 +213,11 @@ sub draw_map {
     } elsif (@bbox) {
 	die "Bbox needs 4 coordinates" if @bbox != 4;
 	$draw->set_bbox(@bbox);
-    } else {
-	$draw->set_bbox(8134,8581,9450,9718);
     }
     $draw->init;
     $draw->create_transpose(-asstring => 1);
     $draw->draw_map if $draw->can("draw_map");
-    if (!$attributes{noroute}) {
+    if (!$attributes{noroute} && $do_route) {
 	$draw->draw_route if $draw->can("draw_route");
     }
     $draw->draw_wind if $draw->can("draw_wind");

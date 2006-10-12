@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SVG.pm,v 1.18 2006/10/07 09:07:35 eserte Exp $
+# $Id: SVG.pm,v 1.20 2006/10/11 23:50:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -28,15 +28,15 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
 
     my($w, $h) = (640, 480);
     my $geometry = $self->{Geometry};
-    if (defined $geometry) {
-	($w, $h) = split(/x/, $geometry);
+    if (defined $geometry && $geometry =~ /^(\d+)x(\d+)$/) { # no support for "auto"
+	($w, $h) = ($1, $2);
     }
 
     my $svg = SVG->new(width => $w, height => $h);
@@ -139,6 +139,9 @@ sub set_category_styles {
     for my $cat (qw(W2)) {
 	$style{$cat}->{'stroke-width'} = 3;
     }
+
+    $style{"U-Bhf"} = {'fill' => cat2svgrgb("U") };
+    $style{"S-Bhf"} = {'fill' => cat2svgrgb("S") };
 }
 
 sub allocate_fonts {
@@ -234,6 +237,7 @@ sub draw_map {
 		next if $restrict && !$restrict->{$cat};
 
 		my @p = map { [map { sprintf "%.2f", $_ } &$transpose(split /,/, $_)] } @{$s->[Strassen::COORDS]};
+		next if (@p == 1); # at least ImageMagick cannot handle one-point polylines
 		my $xv = [ map { $_->[0] } @p ];
 		my $yv = [ map { $_->[1] } @p ];
 		my $points = $im->get_path
@@ -280,6 +284,7 @@ sub draw_map {
 	    next if $restrict && !$restrict->{$cat};
 
 	    my @p = map { [map { sprintf "%.2f", $_ } &$transpose(split /,/, $_)] } @{$s->[Strassen::COORDS]};
+	    next if (@p == 1); # at least ImageMagick cannot handle one-point polylines
 	    my $xv = [ map { $_->[0] } @p ];
 	    my $yv = [ map { $_->[1] } @p ];
 
@@ -368,19 +373,6 @@ sub draw_map {
 #  	}
 #      }
 
-# XXXX hier wird $small_display und $xw/$yw nicht beachtet!
-    my($xw, $yw);
-    my $small_display = 0;
-    if ($self->{Width} < 200 ||	$self->{Height} < 150) {
-	($xw, $yw) = (1, 1);
-	$small_display = 1;
-    } else {
-	my($xw1, $yw1) = &$transpose(0, 0);
-	my($xw2, $yw2) = &$transpose(60, 60);
-#	($xw, $yw) = ($xw2-$xw1, $yw2-$yw1);
-	($xw, $yw) = (5, 5);
-    }
-
 # XXX verschiedene Zeichensatzgrößen für die Orte
 #      my $min_ort_category = ($self->{Xk} < 0.005 ? 4
 #  			    : ($self->{Xk} < 0.01 ? 3
@@ -394,7 +386,7 @@ sub draw_map {
 #  		    5 => &GD::Font::Giant,
 #  		    6 => &GD::Font::Giant,
 #  		   );
-    if (0) {
+    if (1) {
     foreach my $points (['ubahn', 'ubahnhof', 'u'],
   			['sbahn', 'sbahnhof', 's'],
 #  			['ort', 'orte',       'o'],
@@ -404,6 +396,26 @@ sub draw_map {
   		     ? $self->_get_orte
   		     : new Strassen $points->[1]);
   	    my $type = $points->[2];
+	    if (0 && $type eq 's') { # XXX Symbols are not supported very well by either ImageMagick or Mozilla
+		# Taken from
+		# http://upload.wikimedia.org/wikipedia/commons/e/e7/S-Bahn-Logo.svg
+		my $s_symbol = $im->symbol(id => 'SBhf',
+					   width => 500, height => 500);
+		$s_symbol->circle(cx=>250,cy=>250,r=>250,style=>{fill=>"#093",stroke=>"none"});
+		my $points = $s_symbol->get_path(x => [qw(100   102   106.6 111.7 122.9 147.4 159.8 172.6 190.8 209.4 228.3 247.3 263.7 279.9 296.1 311.8 329.4 346   361.3 368.3 374.8 382.6 389.4 395.1 399.5 402.7 404.3 404.4 402.8 399.8 394.7 388   379.9 370.7 360.5 349.7 338.8 327.9 316.9 294.4 270.2 257.3 243.8 232   220.2 209   199   190.6 184.5 182.5 181.3 180.8 181.3 182.1 183.9 186.8 190.4 194.7 199.6 210.2 219.3 228.6 238.1 247.6 257.1 266.5 284.9 302.9 319.7 335.6 351   378.9 379.4 372.8 356.5 339.1 320.6 301.2 287.7 273.9 260.1 246.1 232.2 218.4 204.8 191.4 180.7 170.3 160.4 150.9 142   133.8 126.4 119.8 114.3 109.7 105.9 103.1 101.3 100.7 101.2 103.1 105.6 109.1 113.8 119.2 125.4 132.3 147.2 164.9 174.2 183.8 193.9 204.2 215.1 226.5 249.9 261.5 272.7 283.2 292.5 300.5 306.8 309.6 311.8 313.5 314.5 314.8 313.9 312.3 309.7 306.1 301.5 296.2 290.3 284.1 271.2 258.4 245.7 233.2 220.9 205.7 190.7 176.3 162.5 150.2 138.5 127.3 116.8 100   100     )],
+						 "y" => [qw(380.5    383        387.4    391.2    398.3    411.7    417.8    423.1    429.3    434      437      438      437.6    435.7    432.4    427.7    421.1  412.6      401.8    395.5    388.6    379.5    369.4    358.7    347.7    336.2    324.5    312.8    301.2    288.7    276.6  265.4      254.8    245.1    236.7    229.4    223.5    218.5    214.7    209      203.6    200.1    195.6  191.1      185.6  179.2    172.1      164.3    155.7    151.3    146.7    142      137.1    131.7    126.1    120.7    115.5    110.7    106.4    99.6     95.6     93.3     92.5     93       94.6     97.1     103.6    111.2    119.7    129    139.2      160      102.6    97.5     86.2     76.8     69.1     63       59.3     56.5     54.4     53.3     53.3     54.4     56.8     60.4     64.1     68.7     74.2     80.4   87.6       95.5     104.2    113.8    122.8    132.4    142.2    152.3    162.5    172.8    183.1    193      202.5    211.5    220.1    228.4    236.2    243.5    256.5    269.2    274.5    279.1    282.8    286      288.4    290.1    292.8    294.2    296.2    299.2    303.6    309.8    318      322.3    327      332.1    337.3    348.1    353.2    358.1    363.9    369.1    373.8    377.7    381.2    384      388.1    390.9    392      391.4    389.6    386.2    381      374.4    366.3    358.1    349      339.1    328.7  311.9    380.5       )],
+						 -type => "path",
+						 -closed => "true",
+						);
+		$s_symbol->path(
+				%$points,
+				style => {
+					  'fill'   => 'white',
+					  'stroke' => 'none'
+					 },
+			       );
+	    }
+
   	    $p->init;
   	    while(1) {
   		my $s = $p->next_obj;
@@ -415,26 +427,33 @@ sub draw_map {
 #  		next if (!(($x0 >= $self->{Min_x} and $x0 <= $self->{Max_x})
 #  			   and
 #  			   ($y0 >= $self->{Min_y} and $y0 <= $self->{Max_y})));
-  		if ($type eq 'u' || ($type eq 's' && $small_display)) {
-  		    my($x1,$x2,$y1,$y2);
-#    		    if (!$small_display) {
-#    			($x1, $y1) = &$transpose($x0-30, $y0-30);
-#    			($x2, $y2) = &$transpose($x0+30, $y0+30);
-#    		    } else {
-  			($x1, $y1) = &$transpose($x0, $y0);
-#    			($x2, $y1) = ($x1+$xw, $y2+$yw);
-#    			($x1, $y2) = ($x1-$xw, $y2-$yw);
-#    		    }
-  		    # XXX Farbe bei small_display && s-bahn
-		    $im->set_fill_color(@$darkblue);
-  		    $im->rectangle($x1-2, $y1-2, 5, 5);
-		    $im->fill;
+  		if ($type eq 'u') {
+		    my($xtt, $ytt) = &$transpose($x0-8, $y0-8);
+		    my($x1t, $y1t) = &$transpose($x0-10, $y0-10);
+		    my($x2t, $y2t) = &$transpose($x0+10, $y0+10);
+		    my $fontsize = sprintf "%.1f", Strassen::Util::strecke([$x1t,$y1t],[$x2t,$y2t])*0.6;
+		    my $points = $im->get_path('x' => [$x1t, $x2t, $x2t, $x1t],
+					       'y' => [$y1t, $y1t, $y2t, $y2t],
+					       -type => 'polygon',
+					      );
+		    $im->polygon(%$points, ($style{'U-Bhf'} ? (style => $style{"U-Bhf"}) : ()));
+		    $im->text("x"=>$xtt, "y"=>$ytt, -cdata => 'U',
+			      style => {'font-size' => $fontsize, 'font' => 'sans', fill => 'white'});
 		} elsif ($type eq 's') {
-		    # XXX ausgefüllten Kreis zeichnen
-		    my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
-		    $im->set_fill_color(@$darkgreen);
-		    $im->circle($x, $y, 4);
-		    $im->fill;
+		    my($x0,$y0) = @{$s->coord_as_list(0)};
+ 		    my($xct, $yct) = &$transpose($x0, $y0);
+		    if (1) {
+			my($x2t, $y2t) = &$transpose($x0+12, $y0+0);
+			my($xtt, $ytt) = &$transpose($x0-7, $y0-7);
+			my $radius = sprintf "%.1f", Strassen::Util::strecke([$xct,$yct],[$x2t,$y2t]);
+			my $fontsize = $radius*1.3;
+			$im->circle("cx" => $xct, "cy" => $yct, "r" => $radius,
+				    ($style{'S-Bhf'} ? (style => $style{"S-Bhf"}) : ()));
+			$im->text("x"=>$xtt, "y"=>$ytt, -cdata => 'S',
+				  style => {'font-size' => $fontsize, 'font' => 'sans', fill => 'white'});
+		    } else {
+			$im->use(-href => "#SBhf", x=>$xct,"y"=>$yct,width=>10,height=>10,transform=>'scale(0.02)'); #XXXX
+		    }
 		}
 #  		} else {
 #  		    if ($cat >= $min_ort_category) {

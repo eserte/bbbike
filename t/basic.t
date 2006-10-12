@@ -2,13 +2,14 @@
 # -*- perl -*-
 
 #
-# $Id: basic.t,v 1.14 2006/09/03 18:03:05 eserte Exp $
+# $Id: basic.t,v 1.15 2006/10/11 20:04:57 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
 use FindBin;
 use ExtUtils::Manifest;
+use Getopt::Long;
 
 BEGIN {
     if (!eval q{
@@ -19,6 +20,10 @@ BEGIN {
 	exit;
     }
 }
+
+my $do_skip = 1;
+GetOptions("skip!" => \$do_skip)
+    or die "usage: $0 [-noskip]";
 
 chdir "$FindBin::RealBin/.." or die $!;
 
@@ -33,14 +38,25 @@ my @files = (qw(bbbike cmdbbbike cbbbike smsbbbike),
 my $tests_per_file = 2;
 plan tests => $tests_per_file * scalar @files;
 
+my $has_skips = 0;
+sub myskip ($$) {
+    my($why, $howmany) = @_;
+    if ($do_skip) {
+	$has_skips++;
+	skip $why, $howmany;
+    }
+}
+
 for my $f (@files) {
  SKIP: {
 	skip "$f not ready for stand-alone test", $tests_per_file
 	    if $f =~ m{^ (BBBikeWeather.pm) $}x;
 
-	skip "$f works only with installed StrassenNetz/CNetFilePerl.pm", $tests_per_file
+	myskip "$f works only with installed StrassenNetz/CNetFilePerl.pm", $tests_per_file
 	    if $f =~ m{StrassenNetz-CNetFile/CNetFile(Dist)?.pm$} && !eval { require StrassenNetz::CNetFilePerl };
-	skip "$f needs Tk", $tests_per_file
+	myskip "$f works only with installed PDF::Create", $tests_per_file
+	    if $f =~ m{BBBikeDraw/PDF\.pm$} && !eval { require PDF::Create };
+	myskip "$f needs Tk", $tests_per_file
 	    if $f =~ m{^( lib/TkChange.pm
 			| lib/AutoInstall/Tk.pm
                         | bbbike
@@ -48,47 +64,55 @@ for my $f (@files) {
 		        | BBBikeEdit.pm
 		        | PointEdit.pm
  			)$}x && !eval { require Tk };
-	skip "$f needs Inline", $tests_per_file
+	myskip "$f needs Inline", $tests_per_file
 	    if $f =~ m{ext/(Strassen-Inline|StrassenNetz-CNetFile).*} && !eval { require Inline::MakeMaker };
-	skip "$f needs 5.8.0 or better", $tests_per_file
+	myskip "$f needs 5.8.0 or better", $tests_per_file
 	    if $f eq 'BBBikeDebug.pm' && $] < 5.008;;
-	skip "$f needs Imager", $tests_per_file
+	myskip "$f needs Imager", $tests_per_file
 	    if $f eq 'BBBikeDraw/Imager.pm' && !eval { require Imager };
-	skip "$f needs Image::Magick", $tests_per_file
+	myskip "$f needs Image::Magick", $tests_per_file
 	    if $f eq 'BBBikeDraw/ImageMagick.pm' && !eval { require Image::Magick };
-	skip "$f needs SVG", $tests_per_file
+	myskip "$f needs SVG", $tests_per_file
 	    if $f eq 'BBBikeDraw/SVG.pm' && !eval { require SVG };
-	skip "$f needs GD", $tests_per_file
+	myskip "$f needs GD", $tests_per_file
 	    if $f =~ m{^BBBikeDraw/GD.*\.pm$} && !eval { require GD };
-	skip "$f needs Tk::Wizard", $tests_per_file
+	myskip "$f needs Tk::Wizard", $tests_per_file
 	    if $f eq 'BBBikeImportWizard.pm' && !eval { require Tk::Wizard };
-	skip "$f needs GPS::Garmin", $tests_per_file
+	myskip "$f needs GPS::Garmin", $tests_per_file
 	    if $f =~ m{^GPS/(DirectGarmin|GpsmanConn).pm$} && !eval { require GPS::Garmin };
-	skip "$f needs Algorithm::Permute", $tests_per_file
+	myskip "$f needs Algorithm::Permute", $tests_per_file
 	    if $f eq 'Salesman.pm' && !eval { require Algorithm::Permute; Algorithm::Permute->VERSION(0.06) };
-	skip "$f needs CDB_File", $tests_per_file
+	myskip "$f needs CDB_File", $tests_per_file
 	    if $f eq 'Strassen/CDB.pm' && !eval { require CDB_File };
-	skip "$f needs Object::Realize::Later", $tests_per_file
+	myskip "$f needs Object::Realize::Later", $tests_per_file
 	    if $f eq 'Strassen/Lazy.pm' && !eval { require Object::Realize::Later };
-	skip "$f needs DBD::Pg", $tests_per_file
+	myskip "$f needs DBD::Pg", $tests_per_file
 	    if $f eq 'Strassen/Pg.pm' && !eval { require DBD::Pg };
-	skip "$f needs X11::Protocol", $tests_per_file
+	myskip "$f needs X11::Protocol", $tests_per_file
 	    if $f eq 'lib/Tk/RotX11Font.pm' && !eval { require X11::Protocol };
-	skip "$f needs XML::LibXML", $tests_per_file
+	myskip "$f needs XML::LibXML", $tests_per_file
 	    if $f =~ m{^( Strassen/Touratech.pm
 			)$}x && !eval { require XML::LibXML };
-	skip "$f needs XML::LibXML or XML::Twig", $tests_per_file
+	myskip "$f needs XML::LibXML or XML::Twig", $tests_per_file
 	    if $f =~ m{^( Strassen/GPX.pm
+		        | GPS/GPX.pm
 		      )$}x && !eval { require XML::LibXML } && !eval { require XML::Twig };
-	skip "$f needs XML::LibXSLT", $tests_per_file
+	myskip "$f needs XML::LibXSLT", $tests_per_file
 	    if $f eq 'Strassen/Touratech.pm' && !eval { require XML::LibXSLT };
-	skip "$f needs Class::Accessor", $tests_per_file
+	myskip "$f needs Class::Accessor", $tests_per_file
 	    if $f =~ m{^( BBBikeDraw/MapServer.pm
 		        | ESRI/Shapefile.pm
 		        | ESRI/Shapefile/.*.pm
 		        | BBBikeESRI.pm
 		        | Strassen/ESRI.pm
+		        | ESRI/esri2bbd.pl
 		      )$}x && !eval { require Class::Accessor };
+	myskip "$f needs Archive::Zip", $tests_per_file
+	    if $f =~ m{^( cgi/bbbike-data.cgi
+		      )$}x && !eval { require Archive::Zip; 1 };
+	myskip "$f needs MIME::Lite", $tests_per_file
+	    if $f =~ m{^( cgi/mapserver_comment.cgi
+		      )$}x && !eval { require MIME::Lite; 1 };
 
 	my @add_opt;
 	if ($f =~ m{Tk/.*\.pm}) {
@@ -199,6 +223,16 @@ for my $f (@files) {
 
 	unlink $diag_file;
     }
+}
+
+if ($has_skips) {
+    diag <<EOF;
+There were skips because of missing modules. You can rerun the test with
+
+    $^X $0 -noskip
+
+to see failing tests because of these modules.
+EOF
 }
 
 __END__

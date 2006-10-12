@@ -455,7 +455,15 @@ userdel	2::inwork 22668,12080 22701,12115
          'type' => 'handicap'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'IM_003134',
+         'until' => 1161208800,
+         'text' => 'Ruschestr. (Lichtenberg) in Richtung Frankfurter Allee, zwischen Normannenstr. und Frankfurter Allee Baustelle, Fartrichtung gesperrt (bis 18.10.06)',
+         'from' => 1160591740,
+         'data' => 'userdel	1::inwork 15904,12340 15879,12131 15863,11992
+',
+         'type' => 'gesperrt'
+       },
        undef,
        {
          'source_id' => 'INKO_81874_COPY_4',
@@ -492,7 +500,16 @@ userdel	1::inwork 10781,13002 10706,13043
          'type' => 'gesperrt'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'IM_003144',
+         'until' => 1160949599,
+         'text' => 'Grunerstr. (Mitte) stadtauswärts neben Tunnel Alexanderplatz Baustelle, Fahrtrichtung gesperrt (bis Mitte 10.2006)',
+         'from' => 1160591665,
+         'data' => 'userdel	1::inwork 11323,12484 11209,12430 11092,12375 11056,12461 10954,12635
+userdel	1::inwork 10954,12635 11057,12715 11134,12793
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        {
@@ -578,9 +595,9 @@ userdel	1::inwork 10781,13002 10706,13043
        undef,
        undef,
        {
-         'until' => 1162335600,
-         'text' => 'B 097 Dresdener Str. Brücke ober DB im OT Schwarze Pumpe Brückensicherung Vollsperrung 10.07.2006-31.10.2006 ',
-         'from' => 1152396000,
+         'until' => 1188597600,
+         'text' => 'B 097 Dresdener Str. Brücke ober DB im OT Schwarze Pumpe Brückenneubau Vollsperrung 17.10.2006-31.08.2007 ',
+         'from' => 1160949600,
          'data' => 'userdel	2::inwork 75459,-98456 75933,-97371
 ',
          'type' => 'gesperrt'
@@ -728,15 +745,7 @@ userdel	1::inwork 10781,13002 10706,13043
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_003670',
-         'until' => 1160604000,
-         'text' => 'Stargarder Str. (Prenzlauer Berg) Richtung Schönhauser Allee zwischen Pappelallee und Greifenhagener Str. Baustelle, Fahrtrichtung gesperrt (bis 11.10.2006)',
-         'from' => 1160172484,
-         'data' => 'userdel	1::inwork 11301,15668 11192,15721 11093,15771
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1160690400,
          'text' => 'B 096 Baruth-Wünsdorf Bahnübegang in der OD Neuhof Gleisbauarbeiten Vollsperrung 11.10.2006-12.10.2006 ',
@@ -755,8 +764,8 @@ userdel	1::inwork 10781,13002 10706,13043
          'type' => 'gesperrt'
        },
        {
-         'until' => 1162594800,
-         'text' => 'B 168 Trampe - Eberswalde Trampe, Dorfstraße-Eberswalde Deckenerneuerung Vollsperrung 27.09.2006-03.11.2006 ',
+         'until' => 1161381600,
+         'text' => 'B 168 zw. Trampe und Eberswalde Deckenerneuerung Vollsperrung 27.09.2006-20.10.2006 ',
          'from' => 1159221600,
          'data' => 'userdel	2::inwork 38554,47567 39446,42585
 ',
@@ -771,14 +780,7 @@ userdel	1::inwork 10781,13002 10706,13043
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1160431200,
-         'text' => 'K 6425 Rudolf-Breitscheid-Allee OD Neuenhagen, zw. Hohe Allee u. Virchowstraße Straßenbauarbeiten Vollsperrung 06.10.2006-09.10.2006 ',
-         'from' => 1159999200,
-         'data' => 'userdel	2::inwork 29093,13456 28575,12975
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1163804400,
          'text' => 'L 040 Zossener Damm OD Blankenfelde Straßenausbau Vollsperrung 05.10.2006-17.11.2006 ',
@@ -823,21 +825,14 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'type' => 'gesperrt'
        },
        {
-         'until' => 1187215200,
-         'text' => 'B 002 OD Gartz Knotenpunkt Stettiner-/Scheunenstraße Ausbau Knotenpunkt Vollsperrung 30.09.2006-15.08.2007 ',
+         'until' => 1161036000,
+         'text' => 'B 002 Stettiner Str. OD Gartz, Knotenpunkt Stettiner-/Scheunenstraße Ausbau Knotenpunkt Vollsperrung 30.09.2006-16.10.2006 ',
          'from' => 1159480800,
          'data' => 'userdel	q4::inwork 76130,90395 76136,90778
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1160604000,
-         'text' => 'B 101 Promenade zw. Einmdg. Hauptstraße u. Elsterstraße Arbeit an Gashauptleitung Vollsperrung 04.10.2006-11.10.2006 ',
-         'from' => 1159826400,
-         'data' => 'userdel	q4::inwork 20952,-105585 21037,-105607
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1161381600,
          'text' => 'B 169 Elsterwerdaer Str. OD Prösen, Bahnübergang Straßenbau Vollsperrung 25.09.2006-20.10.2006 ',
@@ -846,22 +841,8 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1160604000,
-         'text' => 'B 096 Luckau - Gießmannssdorf zw. OU Luckau u. Zickauer Chaussee (Gießmannsdorf) Deckeneinbau Vollsperrung 10.10.2006-11.10.2006 ',
-         'from' => 1160344800,
-         'data' => 'userdel	2::inwork 32029,-59469 31903,-59042 31588,-58443 31525,-58272
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1160431200,
-         'text' => 'K 6417 Garzin - Garzau Abzwg. Agrargenossenschaft Deckenschluss Vollsperrung 06.10.2006-09.10.2006 ',
-         'from' => 1159999200,
-         'data' => 'userdel	2::inwork 47968,14759 49278,15634
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1167606000,
          'text' => 'L 038 zw. Briesen und Petersdorf grundhafter Straßenbau Vollsperrung 26.09.2006-31.12.2006 ',
@@ -938,14 +919,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1160431200,
-         'text' => 'Grunewaldstraße zwischen Hauptstr. und Schwäbische Straße gesperrt, 7. Schöneberger Kürbisfest, Dauer: 07.10.2006 06:00 Uhr bis 09.10.2006 ',
-         'from' => 1160107200,
-         'data' => 'userdel	2::temp 6923,9266 7006,9282 7130,9305 7201,9318 7374,9350 7478,9340
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1160776800,
          'text' => 'B 087 Luckau - Duben zwischen OA Duben u. Abzweig Freiimfelde (Altenoer Str.) Fahrbahnsanierung Vollsperrung 12.10.2006-13.10.2006 ',
@@ -985,6 +959,38 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'data' => 'userdel	q4::inwork -22149,16586 -22959,16242 -24275,15746
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1161468000,
+         'text' => 'B 102 Milower Landstraße Bahnübergang in der OD Rathenow Gleisbauarbeiten Vollsperrung 21.10.2006-21.10.2006 ',
+         'from' => 1161295200,
+         'data' => 'userdel	2::inwork -62153,19281 -62269,19881
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1166828400,
+         'text' => 'L 011 Wittenberger Str. OD Bad Wilsnack, zw. Karthanebrücke u. Wedenstr. Kanal- und Straßenbau Vollsperrung 11.10.2006-22.12.2006 ',
+         'from' => 1160431200,
+         'data' => 'userdel	q4::inwork -91328,59520 -89647,59213
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1160690400,
+         'text' => 'L 027 Woltersdorfer Str. Bahnübergang in der OL Casekow Gleisbauarbeiten Vollsperrung 12.10.2006-12.10.2006 ',
+         'from' => 1160517600,
+         'data' => 'userdel	2::inwork 63363,90636 63491,90572
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1162594800,
+         'text' => 'L 281 Neureetz-Altranft zw. Croustillier und Brücke über Alte Oder Deckenerneuerung Vollsperrung 17.10.2006-03.11.2006 ',
+         'from' => 1160949600,
+         'data' => 'userdel	2::inwork 56925,41800 58564,43539
+',
+         'type' => 'gesperrt'
        }
      
 );
