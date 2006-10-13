@@ -977,6 +977,14 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'data' => 'userdel	2::inwork 56925,41800 58564,43539
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1160949600,
+         'text' => 'Karl-Marx-Straße, Straßenfest zwischen Flughafenstr. und Thomasstr, gesperrt, Dauer: 14.10.2006 05:00 Uhr bis 16.10.2006 00:00 ',
+         'from' => 1160708400,
+         'data' => 'userdel	2::temp 12500,8504 12540,8458 12582,8408 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12980,7597
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.17 2006/06/01 23:22:04 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.18 2006/10/13 20:31:48 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2006 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,9 +28,9 @@ sub teaser {
 			       ];
     $teasers_mandatory{"de"} = [
 				$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
-				teaser_perltk_newrelease(),
+				#teaser_perltk_newrelease(),
+				teaser_perltk(),
 				teaser_beta(),
-				#teaser_perltk(),
 				teaser_mapserver(),
 				#teaser_routen(),
 				#teaser_sternfahrt(),
@@ -39,8 +39,8 @@ sub teaser {
     $teasers_optional{"en"} = [],
     $teasers_mandatory{"en"} = [
 				$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
-				teaser_perltk_newrelease(),
-				#teaser_perltk(),
+				#teaser_perltk_newrelease(),
+				teaser_perltk(),
 				teaser_mapserver(),
 				#teaser_routen(),
 				#teaser_sternfahrt(),
@@ -74,19 +74,25 @@ EOF
 sub teaser_perltk_newrelease {
     if ($lang eq 'en') {
     	<<EOF;
-<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}">Download</a> the offline version of BBBike (Perl/Tk) with interactive map. Runs on Linux, Un*x, Mac OS X and Windows.<br /><a class="new" href="@{[ CGI::escapeHTML($BBBike::LATEST_RELEASE_DISTDIR) ]}" style="font-weight:bold;">NEW: Version @{[ CGI::escapeHTML($BBBike::STABLE_VERSION) ]}</a></div>
+<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}/downloads.en.html">Download</a> the offline version of BBBike (Perl/Tk) with interactive map. Runs on Linux, Un*x, Mac OS X and Windows.<br /><a class="new" href="@{[ CGI::escapeHTML($BBBike::LATEST_RELEASE_DISTDIR) ]}" style="font-weight:bold;">NEW: Version @{[ CGI::escapeHTML($BBBike::STABLE_VERSION) ]}</a></div>
 EOF
 } else {
 	<<EOF;
-<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}">Download</a> der Offline-Version von BBBike (Perl/Tk) mit interaktiver Karte. Läuft auf Linux, Un*x, Mac OS X und Windows.<br /><a class="new" href="@{[ CGI::escapeHTML($BBBike::LATEST_RELEASE_DISTDIR) ]}" style="font-weight:bold;">NEU: Version @{[ CGI::escapeHTML($BBBike::STABLE_VERSION) ]}</a></div>
+<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}/downloads.en.html">Download</a> der Offline-Version von BBBike (Perl/Tk) mit interaktiver Karte. Läuft auf Linux, Un*x, Mac OS X und Windows.<br /><a class="new" href="@{[ CGI::escapeHTML($BBBike::LATEST_RELEASE_DISTDIR) ]}" style="font-weight:bold;">NEU: Version @{[ CGI::escapeHTML($BBBike::STABLE_VERSION) ]}</a></div>
 EOF
     }
 }
 
 sub teaser_perltk {
-    <<EOF;
-<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}">Download</a> der Offline-Version von BBBike (Perl/Tk) mit interaktiver Karte. Läuft auf Linux, Un*x, Mac OS X und Windows.</div>
+    if ($lang eq 'en') {
+    	<<EOF;
+<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}/downloads.en.html">Download</a> the offline version of BBBike (Perl/Tk) with interactive map. Runs on Linux, Un*x, Mac OS X and Windows.</div>
 EOF
+    } else {
+	<<EOF;
+<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}/downloads.de.html">Download</a> der Offline-Version von BBBike (Perl/Tk) mit interaktiver Karte. Läuft auf Linux, Un*x, Mac OS X und Windows.</div>
+EOF
+    }
 }
 
 sub teaser_none { "" }
