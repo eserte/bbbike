@@ -746,14 +746,7 @@ userdel	1::inwork 10954,12635 11057,12715 11134,12793
        },
        undef,
        undef,
-       {
-         'until' => 1160690400,
-         'text' => 'B 096 Baruth-Wünsdorf Bahnübegang in der OD Neuhof Gleisbauarbeiten Vollsperrung 11.10.2006-12.10.2006 ',
-         'from' => 1160431200,
-         'data' => 'userdel	2::inwork 16407,-29400 16379,-29446 16336,-29511
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_003692',
          'until' => 1162335600,
@@ -976,14 +969,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1160690400,
-         'text' => 'L 027 Woltersdorfer Str. Bahnübergang in der OL Casekow Gleisbauarbeiten Vollsperrung 12.10.2006-12.10.2006 ',
-         'from' => 1160517600,
-         'data' => 'userdel	2::inwork 63363,90636 63491,90572
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1162594800,
          'text' => 'L 281 Neureetz-Altranft zw. Croustillier und Brücke über Alte Oder Deckenerneuerung Vollsperrung 17.10.2006-03.11.2006 ',

@@ -6361,11 +6361,13 @@ sub set_bindings {
 			       warn "Cannot get URL from " . join(", ", $c->gettags("current"));
 			   }
 		       }
-		       return if $map_mode ne MM_DRAG && !$MM_DRAG_IS_OBSOLETE;
-		       my $e = $c->XEvent;
-		       ($canvas_drag_x, $canvas_drag_y) = ($e->x, $e->y);
-		       $c->scan('mark', $canvas_drag_x, $canvas_drag_y);
-		       $maybe_canvas_drag = 1;
+
+		       if ($map_mode eq MM_DRAG || $MM_DRAG_IS_OBSOLETE) {
+			   my $e = $c->XEvent;
+			   ($canvas_drag_x, $canvas_drag_y) = ($e->x, $e->y);
+			   $c->scan('mark', $canvas_drag_x, $canvas_drag_y);
+			   $maybe_canvas_drag = 1;
+		       }
 		   });
     $c->CanvasBind('<B1-Motion>' => sub {
 		       if ($map_mode eq MM_SCRIBBLE) {
@@ -6437,7 +6439,15 @@ sub set_bindings {
     my $alt_mouse1 = sub {
 ## DEBUG_BEGIN
 #benchbegin("Alt Mouse1");
-## DEBUG_END	   
+## DEBUG_END
+
+	if ($map_mode eq MM_DRAG || $MM_DRAG_IS_OBSOLETE) {
+	    my $e = $c->XEvent;
+	    ($canvas_drag_x, $canvas_drag_y) = ($e->x, $e->y);
+	    $c->scan('mark', $canvas_drag_x, $canvas_drag_y);
+	    $maybe_canvas_drag = 1;
+	}
+
 	if ($alt_set_route_point{$map_mode}) {
 	    return $alt_set_route_point{$map_mode}->(@_);
 	}

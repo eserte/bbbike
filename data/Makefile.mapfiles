@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.29 2006/09/14 21:08:44 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.30 2006/10/13 18:41:29 eserte Exp $
 #
 
 .ifndef COMMENTS_PARTIAL
@@ -428,3 +428,15 @@ cleanup-tmp:
 	       $(MAPFILES_TEMP_PREFIX)landstrassen2-sorted \
 	       $(MAPFILES_TEMP_PREFIX)orte-reversed \
 	       $(MAPFILES_TEMP_PREFIX)orte2-reversed
+
+mapfiles-dist:	mapfiles-without-reference-maps do-mapfiles-dist
+
+TODAY_DATE!=	date +'%Y%m%d'
+
+do-mapfiles-dist:
+	rm -rf /tmp/bbbike-b_de-esri
+	mkdir /tmp/bbbike-b_de-esri
+	mkdir /tmp/bbbike-b_de-esri/data
+	rsync --archive --copy-links --cvs-exclude $(MAPFILES_DATA_DIR)/ /tmp/bbbike-b_de-esri/data/
+	cd /tmp && \
+	    tar cfvz /tmp/bbbike-b_de-esri-$(TODAY_DATE).tar.gz bbbike-b_de-esri
