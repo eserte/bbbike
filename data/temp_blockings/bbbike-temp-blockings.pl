@@ -689,7 +689,7 @@ userdel	q4 33240,-85187 33354,-85304
 userdel	q4 33240,-85187 33060,-85292
 userdel	q4 33481,-85428 33354,-85304
 userdel	q4 33481,-85428 33488,-85803
-userdel	q4 33103,-85731 33060,-85292
+userdel	q4 33101,-85749 33060,-85292
 EOF
      },
      { from  => 1096840800, # 2004-10-04 00:00
@@ -2144,8 +2144,8 @@ EOF
        text  => 'L 53; (Seestr.); OL Großräschen, zw. B96 u. Ahornstr. Straßenbauarbeiten Vollsperrung 20.06.2005-25.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 53810,-90698 53805,-90240
-userdel	q4 53252,-90440 53805,-90240
+userdel	q4 54020,-90746 53752,-90652 53510,-90531
+userdel	q4 53144,-90435 53510,-90531
 EOF
      },
      { from  => 1123365600, # 2005-08-07 00:00
@@ -5187,7 +5187,7 @@ EOF
        text  => 'L 601 Berliner Str. OL Finsterwalde Sängerfest Vollsperrung 25.08.2006-28.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 33060,-85292 33103,-85731
+userdel	2::temp 33060,-85292 33101,-85749
 EOF
      },
      { from  => 1153805975, # 2006-07-25 07:39

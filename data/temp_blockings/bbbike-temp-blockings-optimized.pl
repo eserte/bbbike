@@ -913,14 +913,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1160776800,
-         'text' => 'B 087 Luckau - Duben zwischen OA Duben u. Abzweig Freiimfelde (Altenoer Str.) Fahrbahnsanierung Vollsperrung 12.10.2006-13.10.2006 ',
-         'from' => 1160517600,
-         'data' => 'userdel	2::inwork 39767,-55820 39067,-56134 37549,-57430 36050,-58754
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1164927600,
          'text' => 'L 017 Schwante-Staffelde OD Groﬂ Ziethen Kanalarbeiten Vollsperrung 11.10.2006-30.11.2006 ',
