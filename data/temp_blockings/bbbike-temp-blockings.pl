@@ -1448,7 +1448,7 @@ EOF
        text  => 'K 6148; (Brand-Halbe); Bahnübergang in OL Teurow Arbeiten an Signaltechnik Vollsperrung 08.02.2005-17.02.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 32937,-34794 32747,-34772
+userdel	2 32937,-34794 32781,-34707
 EOF
      },
      { from  => 1108854000, # 2005-02-20 00:00
