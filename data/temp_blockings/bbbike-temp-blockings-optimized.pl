@@ -926,6 +926,41 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'data' => 'userdel	2::inwork 56925,41800 58564,43539
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'IM_003833',
+         'until' => 1175378400,
+         'text' => 'Glinkastr. (Mitte) in Richtung Leipziger Str., zwischen Jägerstr. und Taubenstr. Baustelle, Fahrtrichtung gesperrt (bis 31.03.2007)',
+         'from' => 1161032658,
+         'data' => 'userdel	1::inwork 9201,11968 9208,11872
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003834',
+         'until' => 1162421999,
+         'text' => 'Lichterfelder Ring (Steglitz ) in beiden Richtungen, zwischen Schütte-Lanz-Str. - Sarntaler Weg Baustelle, Straße vollständig gesperrt (bis Anfang November 2006)',
+         'from' => 1161032728,
+         'data' => 'userdel	2::inwork 5916,499 5584,452
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1164927600,
+         'text' => 'K 6003 Friedrichswalde-L100 Gollin zw. Friedrichswalde und Kreisgrenze Straßenbau Vollsperrung 04.09.2006-30.11.2006 ',
+         'from' => 1157234400,
+         'data' => 'userdel	2::inwork 28975,69975 28100,70162 26500,71425
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1173999600,
+         'text' => 'L 029 Wandlitz-Schmachtenhagen OD Zehlendorf grundhafter Straßenbau Vollsperrung 06.07.2006-15.03.2007 ',
+         'from' => 1152050400,
+         'data' => 'userdel	q4::inwork 8293,42032 8682,42032
+',
+         'type' => 'handicap'
        }
      
 );

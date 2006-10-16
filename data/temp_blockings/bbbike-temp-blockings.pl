@@ -5268,7 +5268,7 @@ userdel	2::temp 5370,6500 5424,6584 5533,6753 5654,6941
 EOF
      },
      { from  => 1154203576, # 2006-07-29 22:06
-       until => 1183240800, # 2007-07-01 00:00
+       until => 1183240800, # 2007-07-01 00:00 # XXX nicht mehr in VMZ vorhanden!
        text  => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt. Ebenfalls Einbahnstraße: Teile der Dircksenstr. (bis Juni 2007) ',
        type  => 'gesperrt',
        source_id => 'IM_003157',
@@ -5278,7 +5278,7 @@ userdel	1::inwork 10781,13002 10706,13043
 EOF
      },
      { from  => 1154203576, # 2006-07-29 22:06
-       until => Time::Local::timelocal(reverse(2006-1900,9-1,23,23,59,59)),
+       until => Time::Local::timelocal(reverse(2006-1900,9-1,23,23,59,59)), # XXX nicht mehr in VMZ vorhanden!
        text  => 'Memhardstr. ist Einbahnstraße Richtung Westen (bis 23. September 2006) ',
        type  => 'gesperrt',
        source_id => 'IM_003157',
@@ -6244,6 +6244,40 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 12500,8504 12540,8458 12582,8408 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12980,7597
+EOF
+     },
+     { from  => 1161032658, # 2006-10-16 23:04
+       until => 1175378400, # 2007-04-01 00:00
+       text  => 'Glinkastr. (Mitte) in Richtung Leipziger Str., zwischen Jägerstr. und Taubenstr. Baustelle, Fahrtrichtung gesperrt (bis 31.03.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_003833',
+       data  => <<EOF,
+userdel	1::inwork 9201,11968 9208,11872
+EOF
+     },
+     { from  => 1161032728, # 2006-10-16 23:05
+       until => 1162421999, # 2006-11-01 23:59
+       text  => 'Lichterfelder Ring (Steglitz ) in beiden Richtungen, zwischen Schütte-Lanz-Str. - Sarntaler Weg Baustelle, Straße vollständig gesperrt (bis Anfang November 2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_003834',
+       data  => <<EOF,
+userdel	2::inwork 5916,499 5584,452
+EOF
+     },
+     { from  => 1157234400, # 2006-09-03 00:00
+       until => 1164927600, # 2006-12-01 00:00
+       text  => 'K 6003 Friedrichswalde-L100 Gollin zw. Friedrichswalde und Kreisgrenze Straßenbau Vollsperrung 04.09.2006-30.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 28975,69975 28100,70162 26500,71425
+EOF
+     },
+     { from  => 1152050400, # 2006-07-05 00:00
+       until => 1173999600, # 2007-03-16 00:00
+       text  => 'L 029 Wandlitz-Schmachtenhagen OD Zehlendorf grundhafter Straßenbau Vollsperrung 06.07.2006-15.03.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 8293,42032 8682,42032
 EOF
      },
     );

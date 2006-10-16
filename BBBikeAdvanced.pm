@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.168 2006/09/30 13:40:20 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.169 2006/10/16 20:37:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1787,6 +1787,35 @@ sub stderr_window_command {
 		$stderr_window = 0;
 		return;
 	    }
+	}
+	if (!$Tk::Stderr::__STDERR_PATCHED__) {
+
+	    # See https://rt.cpan.org/Ticket/Display.html?id=20718
+
+	    local $^W = 0; # redefined...
+
+	    *Tk::Stderr::Handle::TIEHANDLE = sub {
+		my ($class, $window) = @_;
+		bless { w => $window, pid => $$ }, $class;
+	    };
+
+	    *Tk::Stderr::Handle::PRINT = sub {
+		my $self = shift;
+		if ($self->{pid} != $$) {
+		    # child window, use fallback
+		    print STDOUT "@_";
+		} else {
+		    my $window = $self->{w};
+		    my $text = $window->Subwidget('text');
+		    $text->insert('end', $_) foreach (@_);
+		    $text->see('end');
+		    $window->deiconify;
+		    $window->raise;
+		    $window->focus;
+		}
+	    };
+
+	    $Tk::Stderr::__STDERR_PATCHED__ = 1;
 	}
 	my $errwin = $top->StderrWindow;
 	if (!$errwin || !Tk::Exists($errwin)) {
