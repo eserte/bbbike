@@ -328,14 +328,7 @@ userdel	2::inwork 22668,12080 22701,12115
        undef,
        undef,
        undef,
-       {
-         'until' => 1160949600,
-         'text' => 'K 6828 L 164 Altfriesack-Wuthenow OT Seehof, Dorfstr. Kanalarbeiten Vollsperrung 22.06.2006-15.10.2006 ',
-         'from' => 1150840800,
-         'data' => 'userdel	2::inwork -28368,51517 -28736,52387
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -390,14 +383,7 @@ userdel	2::inwork 22668,12080 22701,12115
        undef,
        undef,
        undef,
-       {
-         'until' => 1160949600,
-         'text' => 'L 019 Ruppiner Chaussee OD Kremmen grundhafter Straßenbau Vollsperrung 10.07.2006-15.10.2006 ',
-         'from' => 1152396000,
-         'data' => 'userdel	q4::inwork -15770,39361 -15556,39597 -15170,39685 -14871,40028
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -500,16 +486,7 @@ userdel	1::inwork 10781,13002 10706,13043
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_003144',
-         'until' => 1160949599,
-         'text' => 'Grunerstr. (Mitte) stadtauswärts neben Tunnel Alexanderplatz Baustelle, Fahrtrichtung gesperrt (bis Mitte 10.2006)',
-         'from' => 1160591665,
-         'data' => 'userdel	1::inwork 11323,12484 11209,12430 11092,12375 11056,12461 10954,12635
-userdel	1::inwork 10954,12635 11057,12715 11134,12793
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -852,14 +829,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1160863200,
-         'text' => 'L 015 Linow - Dorf Zechlin Linow - Dorf Zechlin, nördl. OE/OA Linow Ersatzneubau Durchlass Vollsperrung 02.10.2006-14.10.2006 ',
-         'from' => 1159653600,
-         'data' => 'userdel	2::inwork -30855,77227 -30302,77196
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1161381600,
@@ -877,22 +847,8 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1160863200,
-         'text' => 'L 018 L 16 nördl. Neuruppin-AS Herzsprung gesamte OD Rossow bis Höhe Fretzdorf Deckenerneuerung Vollsperrung 04.10.2006-14.10.2006 ',
-         'from' => 1159826400,
-         'data' => 'userdel	2::inwork -48354,72564 -48057,70618
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1160863200,
-         'text' => 'L 037 Frankfurter Straße Brücke, Oder-Spree-Kanal Brückensanierungsarbeiten Vollsperrung 05.10.2006-14.10.2006 ',
-         'from' => 1159912800,
-         'data' => 'userdel	2::inwork 80143,-15900 79825,-16575
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_003744',
          'until' => 1162421999,
@@ -968,14 +924,6 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'text' => 'L 281 Neureetz-Altranft zw. Croustillier und Brücke über Alte Oder Deckenerneuerung Vollsperrung 17.10.2006-03.11.2006 ',
          'from' => 1160949600,
          'data' => 'userdel	2::inwork 56925,41800 58564,43539
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1160949600,
-         'text' => 'Karl-Marx-Straße, Straßenfest zwischen Flughafenstr. und Thomasstr, gesperrt, Dauer: 14.10.2006 05:00 Uhr bis 16.10.2006 00:00 ',
-         'from' => 1160708400,
-         'data' => 'userdel	2::temp 12500,8504 12540,8458 12582,8408 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12980,7597
 ',
          'type' => 'gesperrt'
        }

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.32 2006/08/16 20:53:19 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.34 2006/10/14 22:03:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -24,6 +24,7 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../BBBike/lib",
 	);
 use CGI qw(:standard);
+use URI;
 use BBBikeCGIUtil qw();
 use BBBikeVar;
 use Karte;
@@ -151,16 +152,33 @@ sub get_html {
 	($centerx,$centery) = $converter->(split /,/, Geography::Berlin_DE->center());
     }
 
+    my %google_api_keys =
+	('www.radzeit.de'     => "ABQIAAAAidl4U46XIm-bi0ECbPGe5hR1DE4tk8nUxq5ddnsWMNnWMRHPuxTzJuNOAmRUyOC19LbqHh-nYAhakg",
+	 'slaven1.radzeit.de' => "ABQIAAAAidl4U46XIm-bi0ECbPGe5hTS_eeuTgvlotSiRSnbEXbHuw72JhQv5zsHIwt9pt-xa1jQybMfG07nnw",
+	 'bbbike.radzeit.de'  => "ABQIAAAAidl4U46XIm-bi0ECbPGe5hS6wT240HZyk82lqsABWbmUCmE0QhQkWx8v-NluR6PNjW3O3dGEjh16GA",
+	 'bbbike.dyndns.org'  => "ABQIAAAAidl4U46XIm-bi0ECbPGe5hSLqR5A2UGypn5BXWnifa_ooUsHQRSCfjJjmO9rJsmHNGaXSFEFrCsW4A",
+	 # Versehen, Host existiert nicht:
+	 'slaven1.bbbike.de'  => "ABQIAAAAidl4U46XIm-bi0ECbPGe5hRQAqip6zVbHiluFa7rPMSCpIxbfxQLz2YdzoN6O1jXFDkco3rJ_Ry2DA",
+	);
+    my $base = URI->new(url(-base => 1));
+    my $fallback_host = "bbbike.radzeit.de";
+    my $host = eval { $base->host } || $fallback_host;
+    my $google_api_key = $google_api_keys{$host} || $google_api_keys{$fallback_host};
+
+    my $bbbikeroot = "/BBBike";
+    if ($host eq 'bbbike.dyndns.org') {
+	$bbbikeroot = "/bbbike";
+    }
+
     my $html = <<EOF;
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
   <head>
     <title>BBBike data presented with Googlemap</title>
-    <link rel="stylesheet" type="text/css" href="/BBBike/html/bbbike.css"><!-- XXX only for radzeit -->
-    <link type="image/gif" rel="shortcut icon" href="/BBBike/images/srtbike16.gif"><!-- XXX only for radzeit -->
-    <!-- This is valid on www.radzeit.de: script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAAidl4U46XIm-bi0ECbPGe5hR1DE4tk8nUxq5ddnsWMNnWMRHPuxTzJuNOAmRUyOC19LbqHh-nYAhakg" type="text/javascript"></script -->
-    <script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAAidl4U46XIm-bi0ECbPGe5hS6wT240HZyk82lqsABWbmUCmE0QhQkWx8v-NluR6PNjW3O3dGEjh16GA" type="text/javascript"></script>
-    <script src="/BBBike/html/sprintf.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="$bbbikeroot/html/bbbike.css"><!-- XXX only for radzeit -->
+    <link type="image/gif" rel="shortcut icon" href="$bbbikeroot/images/srtbike16.gif"><!-- XXX only for radzeit -->
+    <script src="http://maps.google.com/maps?file=api&v=2&key=$google_api_key" type="text/javascript"></script>
+    <script src="$bbbikeroot/html/sprintf.js" type="text/javascript"></script>
   </head>
   <body>
     <div id="map" style="width: 100%; height: 500px"></div>
@@ -536,7 +554,8 @@ sub trim ($) {
 }
 # REPO END
 
-return 1 if caller;
+return 1 if ((caller() and (caller())[0] ne 'Apache::Registry')
+	     or keys %Devel::Trace::); # XXX Tracer bug
 
 my $o = BBBikeGooglemap->new;
 $o->run;
