@@ -794,14 +794,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1161036000,
-         'text' => 'B 002 Stettiner Str. OD Gartz, Knotenpunkt Stettiner-/Scheunenstraße Ausbau Knotenpunkt Vollsperrung 30.09.2006-16.10.2006 ',
-         'from' => 1159480800,
-         'data' => 'userdel	q4::inwork 76130,90395 76136,90778
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1161381600,
@@ -961,6 +954,14 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'data' => 'userdel	q4::inwork 8293,42032 8682,42032
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1161467999,
+         'text' => '21.10.2006 (Samstag): Vollsperrung der Jannowitzbrücke (Demontage von Stahlbetonteilen)',
+         'from' => 1161381600,
+         'data' => 'userdel	2::inwork 11347,12181 11328,12040
+',
+         'type' => 'gesperrt'
        }
      
 );

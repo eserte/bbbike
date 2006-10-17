@@ -6280,4 +6280,12 @@ EOF
 userdel	q4::inwork 8293,42032 8682,42032
 EOF
      },
+     { from  => 1161381600, # 2006-10-21 00:00
+       until => 1161467999, # 2006-10-21 23:59
+       text  => '21.10.2006 (Samstag): Vollsperrung der Jannowitzbrücke (Demontage von Stahlbetonteilen)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 11347,12181 11328,12040
+EOF
+     },
     );

@@ -1,6 +1,6 @@
 #: title.de: Sehenswürdigkeiten und andere wichtige Gebäude
 #: title.en: Sights and points of interest
-#: version: $Id: sehenswuerdigkeit-orig,v 4.74 2006/10/03 14:48:04 eserte Exp eserte $
+#: version: $Id: sehenswuerdigkeit-orig,v 4.75 2006/10/17 22:17:21 eserte Exp $
 #:
 ######################################################################
 #
@@ -205,6 +205,8 @@ Naturtheater Hasenheide	F:SW 11323,8695 11324,8663 11302,8665 11277,8684 11301,8
 SEZ	F:SW 13225,13585 13258,13526 13256,13514 13276,13494 13267,13455 13240,13462 13204,13426 13156,13403 13136,13427 13172,13450 13169,13460 13196,13473 13188,13512 13210,13518 13179,13581 13218,13589
 Städtisches Krankenhaus Friedrichshain	F:SW|IMG:hospital.gif 12811,13535 12971,13267 12807,13183 12726,13161 12625,13347 12622,13501 12687,13546
 Caritas-Klinik Pankow Maria Heimsuchung	SW|IMG:hospital.gif 10952,18399
+#: alias: Wilhelm-Griesinger-Krankenhaus:
+Vivantes-Klinikum Hellersdorf	SW|IMG:hospital.gif 21605,12535
 Max-Schmelling-Halle	F:SW 10430,15488 10443,15427 10382,15413 10369,15472
 Wasserturm Prenzlauer Berg	SW 11302,14228
 Wasserturm Westend	SW 1206,12466
@@ -339,6 +341,9 @@ Verwaltungsgebäude	F:SW 4336,9089 4425,9088 4426,9110 4418,9110 4362,9113 4364,9
 Senatsverwaltung für Stadtentwicklung	F:SW 4402,9242 4411,9231 4430,9253 4438,9285 4437,9311 4430,9329 4417,9321 4423,9301 4424,9280 4414,9255
 Hotel Adlon	F:SW 8793,12249 8799,12215 8780,12206 8775,12222 8746,12216 8749,12205 8762,12207 8778,12119 8737,12107 8734,12118 8747,12122 8737,12186 8727,12186 8721,12236
 St.-Sebastians-Kirche	SW|IMG:church.gif 8971,14686
+#: alias: Lietzowkirche
+Kirche Alt-Lietzow	SW|IMG:church.gif 4192,12355
+Herz-Jesu-Kirche (Lietzow)	SW|IMG:church.gif 3997,12382
 Lok Borsig 8	SW 2358,21491
 Denkmal Friedrich Wilhelm I.	SW 13292,7760
 Postbahnhof	SW 12649,11459

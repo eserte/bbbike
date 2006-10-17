@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.183 2006/10/03 14:52:35 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.184 2006/10/17 22:16:31 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -232,7 +232,8 @@ Melanchthonstr.: Kopfsteinpflaster	Q2 7126,12721 6941,12760 6818,12786
 Albrechtstr.: Kopfsteinpflaster	Q2 6377,4490 6505,4363
 Rembrandtstr.: Kopfsteinpflaster	Q2 6077,6790 6121,6851 6143,6853
 Körnerstr.: Kopfsteinpflaster	Q2 5767,6376 5697,6276 5598,6136 5466,5950 5481,5721 5481,5622 5480,5519
-Bergstr.: Kopfsteinpflaster, OK	Q1 5681,5743 5601,5732 5481,5721 5290,5704
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060922.1210.47859.html
+Bergstr.: asphaltiert	Q0 5681,5743 5601,5732 5481,5721 5290,5704
 Schützenstr.: Kopfsteinpflaster	Q2 5193,5431 5119,5332 5031,5220 4990,5164 4938,5096 4906,5052 4879,5017 4802,4921
 Gelieustr.: Kopfsteinpflaster	Q2 4802,4921 4742,4885 4725,4876 4568,4789 4507,4755
 Appenzeller Str.: Kopfsteinpflaster	Q2 3425,1647 3293,1839
@@ -1514,6 +1515,10 @@ Semperstr.: Asphalt	Q0 6081,7215 6155,7216 6249,7219 6277,7220
 Matthäifriedhofsweg: mäßiges Kopfsteinpflaster, teilweise welliger Asphalt	Q2 7230,7264 7305,7221 7477,7122 7563,7113
 Matthäifriedhofsweg: kleinteiliges Kopfsteinpflaster	Q1 7563,7113 7605,7109
 Motardstr.: Beton	Q0 990,14062 19,14186 -269,14178
+#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20061006.1320.48492.html vvv
+Mozartstr. (Köpenick): asphaltiert	Q0 21679,6580 21700,6700 21709,6791 21774,6880
+Bachstr. (Köpenick): asphaltiert	Q0 21861,6719 21785,6703 21700,6700
+#: by: ^^^
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045

@@ -333,7 +333,7 @@ Hedwigshof - Moor: existiert eine fahrbare Verbindung?	? 54450,109425 55250,1095
 Moor - Brüssow: Qualität?	? 55293,109705 56287,110437 57250,110862 57522,110764
 Gabelberger Str.: Linksabbiegen in die Frankfurter Allee möglich?	? 14381,12205
 Matternstr.: Linksabbiegen in die Petersburger Str. möglich?	? 13579,12904
-Gransee - Meseberg: Qualität?	? -7696,66033 -8112,65637 -8762,65250 -9437,65037 -9912,64300 -10287,64175 -10675,63237 -11088,62914
+Gransee - Meseberg: Qualität (wahrscheinlich asphaltiert)?	? -7696,66033 -8112,65637 -8762,65250 -9437,65037 -9912,64300 -10287,64175 -10675,63237 -11088,62914
 Hermsdorfer Str. (Hohen Neuendorf): Qualität?	? 621,29356 625,29868
 (Dorfstr. (Tiefwerder) - Heerstr.): Qualität?	? -2878,12193 -2953,12015 -2918,11678 -2835,11467
 Försterweg: Qualität (wahrscheinlich ein holpriger Waldweg)?	? -823,20184 -571,19834 -475,19746 -384,19740 -250,19815 -146,19806 6,19817
@@ -805,7 +805,7 @@ Hier führt die Route Sanssouci entlang: wie geht es weiter, Qualität, Straßennam
 Wublitzbrücke - Töplitz: Qualität (wahrscheinlich Feld- oder Waldweg)?	? -21681,702 -22045,765 -22525,1230 -22911,1634 -23105,2016 -23207,2284
 Nattwerder - Golm: Qualität (wahrscheinlich Feldweg)?	? -21043,1586 -20807,1383 -20955,978 -21221,764
 Röländer Str.: Qualität? Radweg?	? 15130,24012 15490,24198 15571,24315
-(Dorfstr. - Köthener Str.): noch nicht ganz fertiggestellt	? 19875,18182 20535,17913
+(Eichenallee): noch nicht ganz fertiggestellt	? 19875,18182 20535,17913
 Lüderitzstr.: Qualtität der Straße zwischen Transvaalstr. und Seestr.?	? 6231,16328 6503,16068 6681,15928
 Eschengraben: gibt es hier eine Einbahnstraßenregelung und gilt diese auch für Radfahrer?	? 11771,17213 11805,17039 11831,16802 11776,16753 11621,16749 11441,16745 11281,16743 11018,16730
 Kienberg: Qualität? Straßenname?	? 19900,-2656 19827,-2688 19698,-2836 19418,-3703 19427,-3762
@@ -915,6 +915,11 @@ Pegnitring oder Str. 136? beleuchtet? fester Sandweg	? -8050,5560 -7969,5453 -79
 Rummelsburger Ufer - Hauptstr.: Qualität?	? 15209,10581 15255,10751
 (Ernst-Thälmann-Stadion - An der Wuhlheide): Qualität?	? 19069,6928 19052,6823 18952,6587
 (Wasserwerk Wuhlheide - Ernst-Thälmann-Stadion): Qualität?	? 19338,7148 19223,7189 19084,7009 19069,6928
+Bau einer Ampel, voraussichtlich im Frühjahr 2007	? 16669,25373
+Schulstr. (Spandau): voraussichtlich 2006-12-01 mit einer Asphaltdecke versehen	? -7781,13437 -7580,13420
+Semnonenweg: voraussichtlich 2006-12-01 mit einer neuen Asphaltdecke versehen	? -4482,10914 -4536,10670
+Paul-Schwarz-Promenade: zwischen Königsberger Straße und Bäkestraße Bauarbeiten (ist das Passieren des Weges dennoch möglich?), bis ca. Ende 2006	? 4582,3076 4224,2659
+Mozartstr. (Köpenick): Qualität zwischen Hämmerlingstr. und Wuhle?	? 21774,6880 21864,6928
 # added from ampeln-orig
 wirklich? (?)	? 9215,3599
 Wirklich? (?)	? -3775,17087
@@ -980,7 +985,7 @@ Eichenweg (Qualität?)	? -9534,-2515 -9500,-2389
 Stolper Weg (Qualität?)	? -2743,-934 -2781,-946 -3540,-834 -3993,-700 -4162,-596 -4290,-490 -4328,-540 -4331,-631 -4350,-665 -4709,-728 -4734,-753
 Görlsdorf - Peetzig (Qualität?)	? 45584,72614 45209,73684 45124,74047 44996,74261 44200,74890
 Kanalstr. (Bansin) (Qualität: wahrscheinlich Asphalt?)	? 57343,173415 57537,173587 57668,173750
-Gransee (Gehronsee (auch laut Regio-Atlas, Tsp), Geronsee (Tippfehler im Tsp?), Gransee (auch laut ALDI-Karte): was stimmt?)	? -7203,67185 -7245,67645 -6770,67990 -6533,68121 -6252,67950 -6014,67972 -5927,67800 -6360,67648 -6770,67411 -7030,67079
+Gransee (Gehronsee (auch laut Regio-Atlas, Tsp, Wikipedia), Geronsee (Tippfehler im Tsp?), Gransee (auch laut ALDI-Karte): was stimmt?)	? -7203,67185 -7245,67645 -6770,67990 -6533,68121 -6252,67950 -6014,67972 -5927,67800 -6360,67648 -6770,67411 -7030,67079
 Barthels Pfuhl (oder Barth*o*ls Pfuhl?)	? -23662,80950 -23775,80837 -23675,80725 -23587,80825 -23587,80912
  (Ostseestr./Mandelstr.: ist hier tatsächlich eine Ampel?)	? 12911,15708
  (evtl. an der Württembergallee)	? 968,11283
