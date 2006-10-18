@@ -5930,8 +5930,8 @@ userdel	1::inwork 17156,6235 16861,5935
 EOF
      },
      { from  => 1159221600, # 2006-09-26 00:00
-       until => 1161381600, # 2006-10-21 00:00
-       text  => 'B 168 zw. Trampe und Eberswalde Deckenerneuerung Vollsperrung 27.09.2006-20.10.2006 ',
+       until => 1161208800, # 2006-10-19 00:00
+       text  => 'B 168 zw. Trampe und Eberswalde Deckenerneuerung Vollsperrung 27.09.2006-18.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 38554,47567 39446,42585
@@ -6037,8 +6037,8 @@ userdel	q4::inwork 20952,-105585 21037,-105607
 EOF
      },
      { from  => 1159048800, # 2006-09-24 00:00
-       until => 1161381600, # 2006-10-21 00:00
-       text  => 'B 169 Elsterwerdaer Str. OD Prösen, Bahnübergang Straßenbau Vollsperrung 25.09.2006-20.10.2006 ',
+       until => 1161640800, # 2006-10-24 00:00
+       text  => 'B 169 Elsterwerdaer Str. OD Prösen, Bahnübergang Straßenbau Vollsperrung 25.09.2006-23.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 19076,-108365 19683,-108408
@@ -6286,6 +6286,78 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 11347,12181 11328,12040
+EOF
+     },
+     { from  => 1159826400, # 2006-10-03 00:00
+       until => 1188597600, # 2007-09-01 00:00
+       text  => 'Vollsperrung der Springbornstraße. Dauer: 04.10.2006 bis 31.08.2007. ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 16934,3571 17142,3393
+EOF
+     },
+     { from  => 1161197339, # 2006-10-18 20:48
+       until => 1162335600, # 2006-11-01 00:00
+       text  => 'Ringbahnstraße zwischen Manteuffelstraße und Schöneberger Straße gesperrt, Fahrbahnarbeiten bis 31.10.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 8717,6965 8447,6964
+EOF
+     },
+     { from  => 1161036000, # 2006-10-17 00:00
+       until => 1161381600, # 2006-10-21 00:00
+       text  => 'L 033 Altlandsberger Chaussee zw. Abzw. Strausberg Stadt und Kno. Garzauer Chausse Deckenschluss Vollsperrung 18.10.2006-20.10.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 41193,17512 40712,16743
+EOF
+     },
+     { from  => 1161036000, # 2006-10-17 00:00
+       until => 1162594800, # 2006-11-04 00:00
+       text  => 'B 096 zw. Dannenwalde und Fürstenberg Deckenerneuerung Vollsperrung 18.10.2006-03.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -8278,82431 -7484,80215
+EOF
+     },
+     { from  => 1160863200, # 2006-10-15 00:00
+       until => 1167606000, # 2007-01-01 00:00
+       text  => 'B 198 Polßen-Gramzow OD Gramzow Vollsperrung 16.10.2006-31.12.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 49930,89857 49757,90015 49779,90206
+EOF
+     },
+     { from  => 1161295200, # 2006-10-20 00:00
+       until => 1161813600, # 2006-10-26 00:00
+       text  => 'K 6304 Fahrland-Priort Bahnübergang in der OL Priort Gleisbauarbeiten Vollsperrung 21.10.2006-25.10.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -19058,11636 -18750,11919
+EOF
+     },
+     { from  => 1161900000, # 2006-10-27 00:00
+       until => 1162422000, # 2006-11-02 00:00
+       text  => 'K 6304 Fahrland-Priort Bahnübergang in der OL Priort Gleisbauarbeiten Vollsperrung 28.10.2006-01.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -19058,11636 -18750,11919
+EOF
+     },
+     { from  => 1160863200, # 2006-10-15 00:00
+       until => 1162335600, # 2006-11-01 00:00
+       text  => 'L 272 Vierraden-Woltersdorf OD Blumenhagen Kanalbau Vollsperrung 16.10.2006-31.10.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 69341,80383 69442,80070 69400,79825
+EOF
+     },
+     { from  => 1161036000, # 2006-10-17 00:00
+       until => 1161381600, # 2006-10-21 00:00
+       text  => 'L 303 Eggersdorfer Weg zw. Abzw. Altlandsberg und OE Eggersdorf Deckenerneuerung Vollsperrung 18.10.2006-20.10.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 40540,16584 39400,15803
 EOF
      },
     );

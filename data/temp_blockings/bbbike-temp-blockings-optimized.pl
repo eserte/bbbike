@@ -734,8 +734,8 @@ userdel	1::inwork 10781,13002 10706,13043
          'type' => 'gesperrt'
        },
        {
-         'until' => 1161381600,
-         'text' => 'B 168 zw. Trampe und Eberswalde Deckenerneuerung Vollsperrung 27.09.2006-20.10.2006 ',
+         'until' => 1161208800,
+         'text' => 'B 168 zw. Trampe und Eberswalde Deckenerneuerung Vollsperrung 27.09.2006-18.10.2006 ',
          'from' => 1159221600,
          'data' => 'userdel	2::inwork 38554,47567 39446,42585
 ',
@@ -797,8 +797,8 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
        undef,
        undef,
        {
-         'until' => 1161381600,
-         'text' => 'B 169 Elsterwerdaer Str. OD Prösen, Bahnübergang Straßenbau Vollsperrung 25.09.2006-20.10.2006 ',
+         'until' => 1161640800,
+         'text' => 'B 169 Elsterwerdaer Str. OD Prösen, Bahnübergang Straßenbau Vollsperrung 25.09.2006-23.10.2006 ',
          'from' => 1159048800,
          'data' => 'userdel	2::inwork 19076,-108365 19683,-108408
 ',
@@ -960,6 +960,78 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'text' => '21.10.2006 (Samstag): Vollsperrung der Jannowitzbrücke (Demontage von Stahlbetonteilen)',
          'from' => 1161381600,
          'data' => 'userdel	2::inwork 11347,12181 11328,12040
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1188597600,
+         'text' => 'Vollsperrung der Springbornstraße. Dauer: 04.10.2006 bis 31.08.2007. ',
+         'from' => 1159826400,
+         'data' => 'userdel	q4::inwork 16934,3571 17142,3393
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1162335600,
+         'text' => 'Ringbahnstraße zwischen Manteuffelstraße und Schöneberger Straße gesperrt, Fahrbahnarbeiten bis 31.10.2006 ',
+         'from' => 1161197339,
+         'data' => 'userdel	2::inwork 8717,6965 8447,6964
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1161381600,
+         'text' => 'L 033 Altlandsberger Chaussee zw. Abzw. Strausberg Stadt und Kno. Garzauer Chausse Deckenschluss Vollsperrung 18.10.2006-20.10.2006 ',
+         'from' => 1161036000,
+         'data' => 'userdel	2::inwork 41193,17512 40712,16743
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1162594800,
+         'text' => 'B 096 zw. Dannenwalde und Fürstenberg Deckenerneuerung Vollsperrung 18.10.2006-03.11.2006 ',
+         'from' => 1161036000,
+         'data' => 'userdel	2::inwork -8278,82431 -7484,80215
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1167606000,
+         'text' => 'B 198 Polßen-Gramzow OD Gramzow Vollsperrung 16.10.2006-31.12.2006 ',
+         'from' => 1160863200,
+         'data' => 'userdel	q4::inwork 49930,89857 49757,90015 49779,90206
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1161813600,
+         'text' => 'K 6304 Fahrland-Priort Bahnübergang in der OL Priort Gleisbauarbeiten Vollsperrung 21.10.2006-25.10.2006 ',
+         'from' => 1161295200,
+         'data' => 'userdel	2::inwork -19058,11636 -18750,11919
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1162422000,
+         'text' => 'K 6304 Fahrland-Priort Bahnübergang in der OL Priort Gleisbauarbeiten Vollsperrung 28.10.2006-01.11.2006 ',
+         'from' => 1161900000,
+         'data' => 'userdel	2::inwork -19058,11636 -18750,11919
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1162335600,
+         'text' => 'L 272 Vierraden-Woltersdorf OD Blumenhagen Kanalbau Vollsperrung 16.10.2006-31.10.2006 ',
+         'from' => 1160863200,
+         'data' => 'userdel	q4::inwork 69341,80383 69442,80070 69400,79825
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1161381600,
+         'text' => 'L 303 Eggersdorfer Weg zw. Abzw. Altlandsberg und OE Eggersdorf Deckenerneuerung Vollsperrung 18.10.2006-20.10.2006 ',
+         'from' => 1161036000,
+         'data' => 'userdel	2::inwork 40540,16584 39400,15803
 ',
          'type' => 'gesperrt'
        }
