@@ -6360,4 +6360,36 @@ EOF
 userdel	2::inwork 40540,16584 39400,15803
 EOF
      },
+     { from  => 1161208800, # 2006-10-19 00:00
+       until => 1161468000, # 2006-10-22 00:00
+       text  => 'B 198 Grundmühlenweg OD Angermünde, zw. R.-Breitscheid-Str. u. Jahnstr. Kranarbeiten Vollsperrung 20.10.2006-21.10.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 49258,68818 49566,68311
+EOF
+     },
+     { from  => 1160863200, # 2006-10-15 00:00
+       until => 1161381600, # 2006-10-21 00:00
+       text  => 'B 198 Polßen-Gramzow zw. Meichow und Neumeichow Straßeninstandsetzung Vollsperrung 16.10.2006-20.10.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 48676,87452 48856,87456 49525,88337
+EOF
+     },
+     { from  => 1161468000, # 2006-10-22 00:00
+       until => 1167519600, # 2006-12-31 00:00
+       text  => 'B 198 Polßen-Gramzow zw. Neimeichow und B166 OL Gramzow grundhafter Ausbau Vollsperrung 23.10.2006-30.12.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 49525,88337 49932,88969 49930,89857
+EOF
+     },
+     { from  => 1162249200, # 2006-10-31 00:00
+       until => 1172703600, # 2007-03-01 00:00
+       text  => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Puschkinstr. Straßenausbau Vollsperrung 01.11.2006-28.02.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -4299,-35198 -4725,-34957
+EOF
+     },
     );

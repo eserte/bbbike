@@ -441,15 +441,7 @@ userdel	2::inwork 22668,12080 22701,12115
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_003134',
-         'until' => 1161208800,
-         'text' => 'Ruschestr. (Lichtenberg) in Richtung Frankfurter Allee, zwischen Normannenstr. und Frankfurter Allee Baustelle, Fartrichtung gesperrt (bis 18.10.06)',
-         'from' => 1160591740,
-         'data' => 'userdel	1::inwork 15904,12340 15879,12131 15863,11992
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'INKO_81874_COPY_4',
@@ -733,14 +725,7 @@ userdel	1::inwork 10781,13002 10706,13043
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1161208800,
-         'text' => 'B 168 zw. Trampe und Eberswalde Deckenerneuerung Vollsperrung 27.09.2006-18.10.2006 ',
-         'from' => 1159221600,
-         'data' => 'userdel	2::inwork 38554,47567 39446,42585
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1167606000,
@@ -1034,6 +1019,38 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'data' => 'userdel	2::inwork 40540,16584 39400,15803
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1161468000,
+         'text' => 'B 198 Grundmühlenweg OD Angermünde, zw. R.-Breitscheid-Str. u. Jahnstr. Kranarbeiten Vollsperrung 20.10.2006-21.10.2006 ',
+         'from' => 1161208800,
+         'data' => 'userdel	q4::inwork 49258,68818 49566,68311
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1161381600,
+         'text' => 'B 198 Polßen-Gramzow zw. Meichow und Neumeichow Straßeninstandsetzung Vollsperrung 16.10.2006-20.10.2006 ',
+         'from' => 1160863200,
+         'data' => 'userdel	2::inwork 48676,87452 48856,87456 49525,88337
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1167519600,
+         'text' => 'B 198 Polßen-Gramzow zw. Neimeichow und B166 OL Gramzow grundhafter Ausbau Vollsperrung 23.10.2006-30.12.2006 ',
+         'from' => 1161468000,
+         'data' => 'userdel	2::inwork 49525,88337 49932,88969 49930,89857
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1172703600,
+         'text' => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Puschkinstr. Straßenausbau Vollsperrung 01.11.2006-28.02.2007 ',
+         'from' => 1162249200,
+         'data' => 'userdel	q4::inwork -4299,-35198 -4725,-34957
+',
+         'type' => 'handicap'
        }
      
 );

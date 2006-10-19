@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.89 2006/09/18 22:17:32 eserte Exp eserte $
+# $Id: Makefile,v 1.90 2006/10/19 21:24:21 eserte Exp $
 #
 
 # Targets:
@@ -387,7 +387,12 @@ prepare-bbbike-dist-prog-bbbike-htdocs:
 	@echo "Do 'ln -s ../BBBike ${BBBIKE_RADZEIT_APACHE_DIR}/$(HTDOCS)/BBBike' manually on server"
 
 prepare-bbbike-dist-prog-bbbike-images:	prepare-sternfahrt2005-dist-images \
-					prepare-sternfahrt${STERNFAHRT_YEAR}-dist-images
+					prepare-sternfahrt${STERNFAHRT_YEAR}-dist-images \
+					prepare-favicon
+
+prepare-favicon:
+	cd ${CURDIR}/${HTDOCS} && \
+	    ( [ -e favicon.ico ] || ln -s BBBike/images/favicon.ico )
 
 prepare-bbbike-dist-prog-bbbike-tmp:
 	chmod 777 ${CURDIR}/BBBike/tmp

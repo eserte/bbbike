@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Getopt.pm,v 1.54 2006/08/26 20:31:25 eserte Exp $
+# $Id: Getopt.pm,v 1.55 2006/10/11 20:28:15 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1997,1998,1999,2000,2003 Slaven Rezic. All rights reserved.
@@ -913,7 +913,7 @@ sub _create_page {
 			   my $t = $f->Toplevel
 			       (-title => $self->{_string}{"helpfor"}
 				. " $label");
-			   $t->Label(-text => $opt->[OPTEXTRA]{'longhelp'},
+			   $t->Message(-text => $opt->[OPTEXTRA]{'longhelp'},
 				     -justify => 'left')->pack;
 			   $t->Button(-text => 'OK',
 				      -command => sub { $t->destroy }
@@ -1723,15 +1723,15 @@ A long help string used by B<option_editor>.
 
 An array of additional choices for the option editor.
 
-If C<-strict> is set to a true value, then the elements of choices may
+If C<strict> is set to a true value, then the elements of choices may
 also contain array references. In this case the first value of the
-"sub" array references are the display lavbels and the second value
+"sub" array references are the display labels and the second value
 the used value. This is similar to L<Tk::Optionmenu> (in fact, for
 displaying this option an Optionmenu is used).
 
-    -choices => ["one", "two", "three"]
+     choices => ["one", "two", "three"]
 
-    -choices => [["english"  => "en"],
+     choices => [["english"  => "en"],
 		 ["deutsch"  => "de"],
 		 ["hrvatski" => "hr"]]
 
