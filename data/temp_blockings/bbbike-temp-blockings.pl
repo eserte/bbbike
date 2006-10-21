@@ -5048,12 +5048,13 @@ EOF
 userdel	q4::inwork 26639,-17861 26650,-18150 26437,-18650 26343,-18775 25475,-19231
 EOF
      },
-     { from  => 1152312770, # 2006-07-08 00:52
-       until => 1162335600, # 2006-11-01 00:00
-       text  => 'Neue Bahnhofstr. Richtung Süden ab Oderstr. gesperrt, voraussichtlich bis Oktober 2006',
+     { from  => 1161366511, # 2006-10-20 19:48
+       until => 1161554400, # 2006-10-23 00:00
+       text  => 'Gürtelstr., Neue Bahnhofstr. in beiden Richtungen zwischen Boxhagener Str. und Oderstr. Baustelle, Straße vollständig gesperrt (bis 22.10.2006) ',
        type  => 'handicap',
+       source_id => 'INKO_83811',
        data  => <<EOF,
-userdel	q4::inwork; 15091,11596 15043,11511 15008,11436 14912,11252
+userdel	q4::inwork 14912,11252 15008,11436 15043,11511 15091,11596
 EOF
      },
      { from  => 1152228595, # 2006-07-07 01:29
@@ -5319,7 +5320,7 @@ userdel	q4::inwork 12571,-99519 12383,-99327 12173,-99115
 EOF
      },
      { from  => 1160591665, # 2006-10-11 20:34
-       until => 1160949599, # 2006-10-15 23:59
+       until => 1161366670, # 1160949599 2006-10-15 23:59
        text  => 'Grunerstr. (Mitte) stadtauswärts neben Tunnel Alexanderplatz Baustelle, Fahrtrichtung gesperrt (bis Mitte 10.2006)',
        type  => 'gesperrt',
        source_id => 'IM_003144',
@@ -6390,6 +6391,44 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -4299,-35198 -4725,-34957
+EOF
+     },
+     { from  => 1161326798, # 2006-10-20 08:46
+       until => 1161554400, # 2006-10-23 00:00
+       text  => 'Pankstr. - Schönstedtstr. - Thurneysserstr. (Wedding) Richtung Reinickendorfer Str., zwischen Schönstedtstr. und Badstr. Veranstaltung Fahrtrichtung gesperrt, einschl. Schönstedtstr. zwischen Pankstr. und Brunnenplatz sowie Thurneysserstr. zwischen Badstr. und Buttmannstr. (bis 22.10.2006 nachts)',
+       type  => 'handicap',
+       source_id => 'IM_003850',
+       data  => <<EOF,
+userdel	q4::temp 8481,16136 8582,16052 8437,15894 8283,15727
+userdel	q4::temp 8437,15894 8278,16043
+EOF
+     },
+     { from  => 1161326842, # 2006-10-20 08:47
+       until => 1161468000, # 2006-10-22 00:00
+       text  => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Y.-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (bis 21.10.2006 nachts)',
+       type  => 'handicap',
+       source_id => 'IM_003841',
+       data  => <<EOF,
+userdel	q4::temp 8515,12242 8214,12205 8089,12186
+EOF
+     },
+     { from  => 1161366455, # 2006-10-20 19:47
+       until => 1161468000, # 2006-10-22 00:00
+       text  => 'Ebertstr. (Tiergarten) Richtung Potsdamer Platz zwischen Scheidemannstr. und Behrenstr. Veranstaltung, Fahrtrichtung gesperrt (bis 21.10.2006 nachts)',
+       type  => 'handicap',
+       source_id => 'IM_003842',
+       data  => <<EOF,
+userdel	q4::temp 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
+userdel	q4::temp 8542,11502 8548,11552
+EOF
+     },
+     { from  => undef, # 
+       until => 1161442800, # 2006-10-21 17:00
+       text  => 'Spandauer Str. (Mitte) in beiden Richtungen zwischen Karl-Liebknecht-Str. und Grunerstr. Veranstaltung, Straße vollständig gesperrt (bis ca. 17:00 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_003844',
+       data  => <<EOF,
+userdel	2::temp 10738,12364 10684,12423 10644,12469 10596,12517 10440,12696
 EOF
      },
     );

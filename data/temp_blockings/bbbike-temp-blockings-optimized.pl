@@ -387,10 +387,11 @@ userdel	2::inwork 22668,12080 22701,12115
        undef,
        undef,
        {
-         'until' => 1162335600,
-         'text' => 'Neue Bahnhofstr. Richtung Süden ab Oderstr. gesperrt, voraussichtlich bis Oktober 2006',
-         'from' => 1152312770,
-         'data' => 'userdel	q4::inwork; 15091,11596 15043,11511 15008,11436 14912,11252
+         'source_id' => 'INKO_83811',
+         'until' => 1161554400,
+         'text' => 'Gürtelstr., Neue Bahnhofstr. in beiden Richtungen zwischen Boxhagener Str. und Oderstr. Baustelle, Straße vollständig gesperrt (bis 22.10.2006) ',
+         'from' => 1161366511,
+         'data' => 'userdel	q4::inwork 14912,11252 15008,11436 15043,11511 15091,11596
 ',
          'type' => 'handicap'
        },
@@ -809,14 +810,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
        },
        undef,
        undef,
-       {
-         'until' => 1161381600,
-         'text' => 'B 096 Rüdingsdorf - Abzweig Jetsch 1km nördl. Rüdingsdorf - Einmdg. Jetsch Fahrbahnsanierung Vollsperrung 04.10.2006-20.10.2006 ',
-         'from' => 1159826400,
-         'data' => 'userdel	2::inwork 29918,-54610 29514,-52871
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1175292000,
          'text' => 'K 6904 Gröben-KG-K6903 Nudow zw. Abzw. Nudow und Fahlhorst Bau Eisenbahnüberführung Vollsperrung 24.07.2006-30.03.2007 ',
@@ -838,14 +832,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
        },
        undef,
        undef,
-       {
-         'until' => 1161360000,
-         'text' => 'Ehrlichstraße zwischen Trautenauerstraße und Blockdammweg gesperrt. Dauer 07.10.2006 06:00 Uhr bis 20.10.2006 18:00 Uhr. ',
-         'from' => 1160107200,
-         'data' => 'userdel	2::inwork 17729,8850 18147,8583
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -964,14 +951,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1161381600,
-         'text' => 'L 033 Altlandsberger Chaussee zw. Abzw. Strausberg Stadt und Kno. Garzauer Chausse Deckenschluss Vollsperrung 18.10.2006-20.10.2006 ',
-         'from' => 1161036000,
-         'data' => 'userdel	2::inwork 41193,17512 40712,16743
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1162594800,
          'text' => 'B 096 zw. Dannenwalde und Fürstenberg Deckenerneuerung Vollsperrung 18.10.2006-03.11.2006 ',
@@ -1012,14 +992,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1161381600,
-         'text' => 'L 303 Eggersdorfer Weg zw. Abzw. Altlandsberg und OE Eggersdorf Deckenerneuerung Vollsperrung 18.10.2006-20.10.2006 ',
-         'from' => 1161036000,
-         'data' => 'userdel	2::inwork 40540,16584 39400,15803
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1161468000,
          'text' => 'B 198 Grundmühlenweg OD Angermünde, zw. R.-Breitscheid-Str. u. Jahnstr. Kranarbeiten Vollsperrung 20.10.2006-21.10.2006 ',
@@ -1028,14 +1001,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1161381600,
-         'text' => 'B 198 Polßen-Gramzow zw. Meichow und Neumeichow Straßeninstandsetzung Vollsperrung 16.10.2006-20.10.2006 ',
-         'from' => 1160863200,
-         'data' => 'userdel	2::inwork 48676,87452 48856,87456 49525,88337
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1167519600,
          'text' => 'B 198 Polßen-Gramzow zw. Neimeichow und B166 OL Gramzow grundhafter Ausbau Vollsperrung 23.10.2006-30.12.2006 ',
@@ -1051,6 +1017,44 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'data' => 'userdel	q4::inwork -4299,-35198 -4725,-34957
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_003850',
+         'until' => 1161554400,
+         'text' => 'Pankstr. - Schönstedtstr. - Thurneysserstr. (Wedding) Richtung Reinickendorfer Str., zwischen Schönstedtstr. und Badstr. Veranstaltung Fahrtrichtung gesperrt, einschl. Schönstedtstr. zwischen Pankstr. und Brunnenplatz sowie Thurneysserstr. zwischen Badstr. und Buttmannstr. (bis 22.10.2006 nachts)',
+         'from' => 1161326798,
+         'data' => 'userdel	q4::temp 8481,16136 8582,16052 8437,15894 8283,15727
+userdel	q4::temp 8437,15894 8278,16043
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_003841',
+         'until' => 1161468000,
+         'text' => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Y.-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (bis 21.10.2006 nachts)',
+         'from' => 1161326842,
+         'data' => 'userdel	q4::temp 8515,12242 8214,12205 8089,12186
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_003842',
+         'until' => 1161468000,
+         'text' => 'Ebertstr. (Tiergarten) Richtung Potsdamer Platz zwischen Scheidemannstr. und Behrenstr. Veranstaltung, Fahrtrichtung gesperrt (bis 21.10.2006 nachts)',
+         'from' => 1161366455,
+         'data' => 'userdel	q4::temp 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
+userdel	q4::temp 8542,11502 8548,11552
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_003844',
+         'until' => 1161442800,
+         'text' => 'Spandauer Str. (Mitte) in beiden Richtungen zwischen Karl-Liebknecht-Str. und Grunerstr. Veranstaltung, Straße vollständig gesperrt (bis ca. 17:00 Uhr)',
+         'from' => undef,
+         'data' => 'userdel	2::temp 10738,12364 10684,12423 10644,12469 10596,12517 10440,12696
+',
+         'type' => 'gesperrt'
        }
      
 );

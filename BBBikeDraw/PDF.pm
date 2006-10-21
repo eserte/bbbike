@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.41 2006/10/07 11:15:09 eserte Exp $
+# $Id: PDF.pm,v 2.41 2006/10/07 11:15:09 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
@@ -279,7 +279,7 @@ if(1||$self->{Width} < $self->{Height}){#XXX scheint sonst undefinierbare Proble
 	eval {
 	    $kl_ampel = $self->{PDF}->image("$images_dir/ampel_klein$suf.jpg");
 	    $kl_andreas = $self->{PDF}->image("$images_dir/andreaskr_klein$suf.jpg");
-	    $kl_zugbruecke = $self->{PDF}->image("$images_dir/zugbruecke_klein.jpg"); # smaller version available here
+	    $kl_zugbruecke = $self->{PDF}->image("$images_dir/zugbruecke_klein.jpg");
 	}; warn $@ if $@;
 	if ($kl_andreas && $kl_ampel) {
 	    $lsa->init;

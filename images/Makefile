@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.31 2006/09/25 21:49:06 eserte Exp $
+# $Id: Makefile,v 1.32 2006/10/19 21:49:41 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -189,6 +189,7 @@ png-to-wbmp:	\
 
 png-to-jpg:	\
 		andreaskr_klein.jpg \
+		zugbruecke_klein.jpg \
 		ubahn.jpg \
 		sbahn.jpg \
 		ubahn_klein.jpg \

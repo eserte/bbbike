@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.169 2006/10/16 20:37:58 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.169 2006/10/16 20:37:58 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -44,7 +44,7 @@ sub start_ptksh {
         # Find the ptksh script
         for $perldir (@perldirs) {
             if (-r "$perldir/ptksh") {
-	require "$perldir/ptksh";
+		require "$perldir/ptksh";
                 last TRY;
             }
         }

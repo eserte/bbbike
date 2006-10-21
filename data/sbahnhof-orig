@@ -1,6 +1,6 @@
 #: title.de: S-Bahnhöfe
 #: title.en: Railway stations (S-Bahn)
-#: version: $Id: sbahnhof-orig,v 4.28 2006/09/27 23:38:16 eserte Exp $
+#: version: $Id: sbahnhof-orig,v 4.29 2006/10/21 21:26:07 eserte Exp $
 #:
 Yorckstr.	SA 8280,9528
 Yorckstr. (Großgörschenstr.)	SA 7985,9576
@@ -8,6 +8,7 @@ Yorckstr. (Großgörschenstr.)	SA 7985,9576
 Anhalter Bhf.	SA 8880,10853
 #: attrs bg
 Potsdamer Platz	SA 8540,11480
+#: note: Aufzug von der Verteilerebene zum Bahnsteig
 Unter den Linden	SA 8838,12259
 #: attrs bg
 Friedrichstr.	SA 9181,12732
@@ -26,6 +27,7 @@ Gesundbrunnen	SA 9299,15930
 Bornholmer Str.	SB 9860,16507
 #: attrs bg
 Schönhauser Allee	SA 11064,15971
+#: note: Aufzug vorhanden, aber außer Betrieb
 Wollankstr.	SB 9472,17700
 #: attrs bg
 Pankow	SB 10796,17924
@@ -47,6 +49,7 @@ Karl-Bonhoeffer-Nervenklinik	SB 5171,19057
 Südkreuz	SA 7837,7712
 #: attrs bg
 Schöneberg	SA 6954,8114
+#: attrs bg
 Innsbrucker Platz	SA 6263,7956
 #: attrs bg
 Priesterweg	SB 7275,5975
@@ -103,6 +106,7 @@ Westkreuz	SA 2268,10413
 Messe Nord/ICC (Witzleben)	SA 2189,11092
 #: attrs bg
 Halensee	SA 2706,9927
+#: attrs bg
 Charlottenburg	SA 3650,10915
 #: attrs bg
 Savignyplatz	SA 4670,10930
@@ -122,6 +126,7 @@ Jannowitzbrücke	SA 11398,12103
 Ostbahnhof	SA 12609,11662
 Warschauer Str.	SA 13571,11234
 Ostkreuz	SA 14847,10892
+#: attrs bg
 Rummelsburg	SB 15454,10711
 Nöldnerplatz	SB 15829,10932
 Betriebsbhf. Rummelsburg	SB 16877,9840
@@ -146,7 +151,6 @@ Mehrower Allee	SB 20458,17110
 Raoul-Wallenberg-Str.	SB 20069,16334
 #: attrs bg
 Marzahn	SB 19623,15444
-#: attrs bf
 Poelchaustr.	SB 19253,14497
 #: attrs bg
 Springpfuhl	SB 19367,13687
@@ -206,7 +210,6 @@ Grünau	SB 22166,986
 Flughafen Berlin-Schönefeld	SC 18079,-1507
 #: attrs bf
 Grünbergallee	SB 20117,-578
-#: attrs bf
 Altglienicke	SB 21110,282
 #: attrs bg
 Heidelberger Platz	SA 4182,8142
@@ -289,6 +292,7 @@ Osdorfer Str.	SB 4502,1316
 #: attrs bg
 Lichterfelde Süd	SB 4149,362
 # wird nicht mehr eröffnet: Teltow	S0 E5841,5733
+#: attrs bg
 Teltow Stadt	SC 1917,-1180
 #: attrs bg
 Schulzendorf (b. Tegel)	SB -537,22867

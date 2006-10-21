@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: grepstrassen,v 1.15 2006/08/17 18:03:53 eserte Exp $
+# $Id: grepstrassen,v 1.16 2006/10/21 20:45:30 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -229,3 +229,15 @@ sub end_fragezeichen {
 }
 
 __END__
+
+=head1 EXAMPLES
+
+Voraussetzung:
+
+    cd .../bbbike/data
+
+Alle S-Bahnhöfe finden, die nicht barrierefrei sind:
+
+    ../miscsrc/grepstrassen -v -directive attributes~b sbahnhof-orig 
+
+=cut
