@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.278 2006/10/21 21:25:41 eserte Exp $
+# $Id: bbbike,v 3.278 2006/10/21 21:25:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -3591,7 +3591,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 	   };
 	   if ($@) {
 	       my $r;
-	       my $bbbike_html = Tk::findINC("bbbike.html");
+	       my $bbbike_html = Tk::findINC("doc/bbbike.html");
 	       my $url;
 	       if (defined $bbbike_html && -r $bbbike_html) {
 		   $url = "file:$bbbike_html";
@@ -3626,7 +3626,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 	$hpbm->command(-label => M"Kontexthilfe",
 		       -command => sub { $ch->activate });
     }
-    my $bbbike_html = Tk::findINC("bbbike.html");
+    my $bbbike_html = Tk::findINC("doc/bbbike.html");
     my $url;
     if (defined $bbbike_html && -r $bbbike_html) {
 	$url = "file:$bbbike_html";

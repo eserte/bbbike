@@ -27,7 +27,7 @@ my $htmlroot = "--htmlroot http://search.cpan.org/perldoc?";
 if ($pod2html) {
     my $patched_marek_pod_html = "/usr/local/src/CPAN/new.build/MarekPodHtml-0.49";
     if (-d $patched_marek_pod_html) {
-	$pod2html = "$^X -M$patched_marek_pod_html $patched_marek_pod_html/blib/scripts/mpod2html";
+	$pod2html = "$^X -I$patched_marek_pod_html $patched_marek_pod_html/blib/script/mpod2html";
     } else {
 	warn "With the patched Marek::Pod::HTML one would get links to search.cpan.org/perldoc";
     }
@@ -39,32 +39,37 @@ use constant POD_TITLE => 2; # XXX do not put double quotes into title
 #        podfile         htmlfile             title
 my @pods = 
     (
-     [qw(bbbike.pod      bbbike.html),        "Dokumentation für BBBike"],
-     [qw(README          README.html),        "README für BBBike"],
-     [qw(README.english  README.english.html),"README for BBBike"],
+     [qw(README          doc/README.html),        "README für BBBike"],
+     [qw(README.english  doc/README.english.html),"README for BBBike"],
+     [qw(bbbike.pod      doc/bbbike.html),        "Dokumentation für BBBike"],
+     [qw(doc/links.pod   doc/links.html),     "Links"],
+     [qw(doc/watchsites.pod   doc/watchsites.html),     "Links mit stets aktuellem Inhalt"],
      [qw(doc/bbd.pod     doc/bbd.html),           "BBD file format"],
      [qw(doc/bbbike_internals.pod  doc/bbbike_internals.html),        "BBBike Internals"],
      );
 my $all_pods = join " ", map { $_->[POD_POD] } @pods;
 my $all_html = join " ", map { $_->[POD_HTML] } @pods;
+my $really_all_html = "$all_html doc/podindex.html";
 if (defined $pod2html) {
     # XXX here no $htmlroot
     $bbbike_html_rule = <<EOF;
 $all_html:	$all_pods Makefile
 	$pod2html -stylesheet html/bbbikepod.css -tocname http://bbbike.sourceforge.net/index -notoc -nowarnings $all_pods
 	\$(CLEAN_AFTER_POD2HTML)
-	mv bbd.html doc/bbd.html
-	mv bbbike_internals.html doc/bbbike_internals.html
-	for f in $all_html; do \\
+	mv bbd.html doc/
+	mv bbbike_internals.html doc/
+	mv links.html doc/
+	mv watchsites.html doc/
+	mv podindex.html doc/
+	mv bbbike.html doc/
+	mv README.html doc/
+	mv README.english.html doc/
+	for f in $really_all_html; do \\
 		perl -i~ -nle 'if (!/^Cannot find page.*on line/) { print }' \$\$f; \\
+		perl -i~ -pe 's{(html/bbbikepod.css)}{../\$\$1}g' \$\$f; \\
+		perl -i~ -pe 's{(images/)}{../\$\$1}g' \$\$f; \\
 	done
-	for f in bbd bbbike_internals; do \\
-		perl -i~ -pe 's{(podindex.html|bbbike.html|README.html|README.english.html|html/bbbikepod.css)}{../\$\$1}g' doc/\$\$f.html; \\
-	done
-	for f in bbbike README README.english podindex; do \\
-		perl -i~ -pe 's{((?:bbbike_internals|bbd)\.html)}{doc/\$\$1}g' \$\$f.html; \\
-	done
-	chmod ugo+r $all_html podindex.html
+	chmod ugo+r $really_all_html
 EOF
 } else {
     # Warning: this is not really supported, please get Marek::Pod::HTML!
