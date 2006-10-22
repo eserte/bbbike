@@ -131,8 +131,8 @@ PLZ/Multi.pm
 PointEdit.pm
 README
 README.english
-README.english.html
-README.html
+doc/README.english.html
+doc/README.html
 Radwege.pm
 Route.pm
 Route/Descr.pm
@@ -189,7 +189,7 @@ Wizards.pm
 bbbike
 bbbike-fast.bat
 bbbike.bat
-bbbike.html
+doc/bbbike.html
 bbbike.pod
 doc/bbbike_internals.html
 doc/bbbike_internals.pod
@@ -833,7 +833,7 @@ lib/wettermeldung2
 lib/your.pm
 msg/bbbike/en
 msg/install/en
-podindex.html
+doc/podindex.html
 smsbbbike
 tkbikepwr
 tmp/.keep_me

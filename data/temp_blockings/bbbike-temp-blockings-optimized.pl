@@ -867,14 +867,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1161468000,
-         'text' => 'B 102 Milower Landstraße Bahnübergang in der OD Rathenow Gleisbauarbeiten Vollsperrung 21.10.2006-21.10.2006 ',
-         'from' => 1161295200,
-         'data' => 'userdel	2::inwork -62153,19281 -62269,19881
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1166828400,
          'text' => 'L 011 Wittenberger Str. OD Bad Wilsnack, zw. Karthanebrücke u. Wedenstr. Kanal- und Straßenbau Vollsperrung 11.10.2006-22.12.2006 ',
@@ -927,14 +920,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1161467999,
-         'text' => '21.10.2006 (Samstag): Vollsperrung der Jannowitzbrücke (Demontage von Stahlbetonteilen)',
-         'from' => 1161381600,
-         'data' => 'userdel	2::inwork 11347,12181 11328,12040
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1188597600,
          'text' => 'Vollsperrung der Springbornstraße. Dauer: 04.10.2006 bis 31.08.2007. ',
@@ -993,14 +979,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1161468000,
-         'text' => 'B 198 Grundmühlenweg OD Angermünde, zw. R.-Breitscheid-Str. u. Jahnstr. Kranarbeiten Vollsperrung 20.10.2006-21.10.2006 ',
-         'from' => 1161208800,
-         'data' => 'userdel	q4::inwork 49258,68818 49566,68311
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1167519600,
@@ -1028,31 +1007,14 @@ userdel	q4::temp 8437,15894 8278,16043
 ',
          'type' => 'handicap'
        },
+       undef,
+       undef,
+       undef,
        {
-         'source_id' => 'IM_003841',
-         'until' => 1161468000,
-         'text' => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Y.-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (bis 21.10.2006 nachts)',
-         'from' => 1161326842,
-         'data' => 'userdel	q4::temp 8515,12242 8214,12205 8089,12186
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_003842',
-         'until' => 1161468000,
-         'text' => 'Ebertstr. (Tiergarten) Richtung Potsdamer Platz zwischen Scheidemannstr. und Behrenstr. Veranstaltung, Fahrtrichtung gesperrt (bis 21.10.2006 nachts)',
-         'from' => 1161366455,
-         'data' => 'userdel	q4::temp 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
-userdel	q4::temp 8542,11502 8548,11552
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_003844',
-         'until' => 1161442800,
-         'text' => 'Spandauer Str. (Mitte) in beiden Richtungen zwischen Karl-Liebknecht-Str. und Grunerstr. Veranstaltung, Straße vollständig gesperrt (bis ca. 17:00 Uhr)',
-         'from' => undef,
-         'data' => 'userdel	2::temp 10738,12364 10684,12423 10644,12469 10596,12517 10440,12696
+         'until' => 1161986400,
+         'text' => 'Lankestr. gesperrt bis 27.10.2006 ',
+         'from' => 1161542089,
+         'data' => 'userdel	2::inwork -9952,-109 -9942,21
 ',
          'type' => 'gesperrt'
        }

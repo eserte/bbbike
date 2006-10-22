@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.33 2006/09/25 20:17:39 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.34 2006/10/22 20:18:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2005 Slaven Rezic. All rights reserved.
@@ -301,7 +301,7 @@ sub create_mapfile {
 	close TMP1;
 
 	# create a new unique id
-	my $prefix = "xxx-" . time . "-" . $$;
+	my $prefix = "xxx-" . time . "-" . $$ . int(rand(100000));
 
 	my @scopes;
 	my $preferred_scope;
