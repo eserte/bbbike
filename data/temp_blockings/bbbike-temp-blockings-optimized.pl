@@ -4,9 +4,9 @@ push @temp_blocking,
 (
        {
          'source_id' => 'IM_002360',
-         'until' => 1172703599,
-         'text' => 'Swinemünder Brücke: Baustelle Straße für Autos vollständig gesperrt, Radfahrer und Fußgänger können passieren (bis Ende 02.2007)',
-         'from' => 1159562294,
+         'until' => 1175378399,
+         'text' => 'Swinemünder Brücke: Baustelle Straße für Autos vollständig gesperrt, Radfahrer und Fußgänger können passieren (bis Ende 03.2007) ',
+         'from' => 1161627703,
          'data' => 'userdel	q2::inwork 9494,15998 9583,15851
 ',
          'type' => 'handicap'
@@ -188,7 +188,16 @@ userdel	2::inwork 22668,12080 22701,12115
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_003889',
+         'until' => 1167605999,
+         'text' => 'Wiesbadener Str. (Wilmersdorf) Richtung Bundesallee zwischen Geisenheimer Str. und Südwestkorso Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Ende 2006)',
+         'from' => 1161627812,
+         'data' => 'userdel	q4::inwork; 4391,7258 4618,7231 4743,7212
+userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -386,15 +395,7 @@ userdel	2::inwork 22668,12080 22701,12115
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_83811',
-         'until' => 1161554400,
-         'text' => 'Gürtelstr., Neue Bahnhofstr. in beiden Richtungen zwischen Boxhagener Str. und Oderstr. Baustelle, Straße vollständig gesperrt (bis 22.10.2006) ',
-         'from' => 1161366511,
-         'data' => 'userdel	q4::inwork 14912,11252 15008,11436 15043,11511 15091,11596
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1167606000,
          'text' => 'Luisenhain ist gesperrt, Umgestaltung bis 2007',
@@ -997,16 +998,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_003850',
-         'until' => 1161554400,
-         'text' => 'Pankstr. - Schönstedtstr. - Thurneysserstr. (Wedding) Richtung Reinickendorfer Str., zwischen Schönstedtstr. und Badstr. Veranstaltung Fahrtrichtung gesperrt, einschl. Schönstedtstr. zwischen Pankstr. und Brunnenplatz sowie Thurneysserstr. zwischen Badstr. und Buttmannstr. (bis 22.10.2006 nachts)',
-         'from' => 1161326798,
-         'data' => 'userdel	q4::temp 8481,16136 8582,16052 8437,15894 8283,15727
-userdel	q4::temp 8437,15894 8278,16043
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,

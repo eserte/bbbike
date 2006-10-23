@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.26 2006/10/10 23:10:33 eserte Exp $
+# $Id: bbbike.cgi,v 8.27 2006/10/23 19:21:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -694,7 +694,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.26 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.27 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -5954,6 +5954,7 @@ sub show_info {
 @{[ $can_palmdoc ? qq{<li><a href="#palmexport">Palm-Export</a>} : qq{} ]}
   </ul>
  <li><a href="@{[ $bbbike_html ]}/presse.html">Die Presse über BBBike</a>
+ <li><a href="http://bbbike.sourceforge.net/bbbike/doc/links.html">Links</a>
  <li><a href="#hardsoftware">Hard- und Softwareinformation</a>
  <li><a href="#disclaimer">Disclaimer</a>
  <li><a href="#autor">Kontakt</a>
@@ -6130,7 +6131,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/10/10 23:10:33 $';
+    my $cgi_date = '$Date: 2006/10/23 19:21:14 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

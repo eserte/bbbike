@@ -2508,9 +2508,9 @@ EOF
 userdel	2 2996,-10338 1764,-12480
 EOF
      },
-     { from  => 1159562294, # 2006-09-29 22:38
-       until => 1172703599, # 2007-02-28 23:59
-       text  => 'Swinemünder Brücke: Baustelle Straße für Autos vollständig gesperrt, Radfahrer und Fußgänger können passieren (bis Ende 02.2007)',
+     { from  => 1161627703, # 2006-10-23 20:21
+       until => 1175378399, # 2007-03-31 23:59
+       text  => 'Swinemünder Brücke: Baustelle Straße für Autos vollständig gesperrt, Radfahrer und Fußgänger können passieren (bis Ende 03.2007) ',
        type  => 'handicap',
        source_id => 'IM_002360',
        data  => <<EOF,
@@ -3759,11 +3759,11 @@ userdel	2 22324,-18950 22338,-19081
 userdel	2 23356,-20982 22599,-19785
 EOF
      },
-     { from  => 1142424201, # 2006-03-15 13:03
-       until => 1159653599, # 2006-09-30 23:59
-       text  => 'Wiesbadener Str. (Wilmersdorf) in Richtung Bundesallee zwischen Geisenheimer und Südwestkorso Baustelle, Fahrtrichtung gesperrt. Ebenso gesperrt: Geisenheimer Str. Richtung Wiesbadener Str. (bis Ende 09.2006)',
-       type  => 'handicap',
-       source_id => 'IM_002513',
+     { from  => 1161627812, # 2006-10-23 20:23
+       until => 1167605999, # 2006-12-31 23:59
+       text  => 'Wiesbadener Str. (Wilmersdorf) Richtung Bundesallee zwischen Geisenheimer Str. und Südwestkorso Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Ende 2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_003889',
        data  => <<EOF,
 userdel	q4::inwork; 4391,7258 4618,7231 4743,7212
 userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
