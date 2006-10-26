@@ -6439,4 +6439,13 @@ EOF
 userdel	2::inwork -9952,-109 -9942,21
 EOF
      },
+     { from  => 1161712875, # 2006-10-24 20:01
+       until => 1162335599, # 2006-10-31 23:59
+       text  => 'Loewenhardtdamm (Tempelhof) Richtung Manfred-von-Richthofen-Str. zwischen General-Pape-Str. und Bayernring Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_003899',
+       data  => <<EOF,
+userdel	1::inwork 8306,8722 8318,8692 8371,8543
+EOF
+     },
     );

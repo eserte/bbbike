@@ -783,14 +783,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
        },
        undef,
        undef,
-       {
-         'until' => 1161640800,
-         'text' => 'B 169 Elsterwerdaer Str. OD Prösen, Bahnübergang Straßenbau Vollsperrung 25.09.2006-23.10.2006 ',
-         'from' => 1159048800,
-         'data' => 'userdel	2::inwork 19076,-108365 19683,-108408
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1007,6 +1000,15 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'text' => 'Lankestr. gesperrt bis 27.10.2006 ',
          'from' => 1161542089,
          'data' => 'userdel	2::inwork -9952,-109 -9942,21
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003899',
+         'until' => 1162335599,
+         'text' => 'Loewenhardtdamm (Tempelhof) Richtung Manfred-von-Richthofen-Str. zwischen General-Pape-Str. und Bayernring Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2006)',
+         'from' => 1161712875,
+         'data' => 'userdel	1::inwork 8306,8722 8318,8692 8371,8543
 ',
          'type' => 'gesperrt'
        }
