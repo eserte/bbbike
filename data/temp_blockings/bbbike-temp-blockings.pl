@@ -6448,4 +6448,12 @@ EOF
 userdel	1::inwork 8306,8722 8318,8692 8371,8543
 EOF
      },
+     { from  => 1162681200, # 2006-11-05 00:00
+       until => 1163804400, # 2006-11-18 00:00
+       text  => 'B 246 Bahnübergang in der OD Bestensee Umbauarbeiten Vollsperrung 06.11.2006-17.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 26639,-17861 26752,-17872 26832,-17882
+EOF
+     },
     );

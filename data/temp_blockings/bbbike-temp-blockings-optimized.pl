@@ -948,14 +948,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1161813600,
-         'text' => 'K 6304 Fahrland-Priort Bahnübergang in der OL Priort Gleisbauarbeiten Vollsperrung 21.10.2006-25.10.2006 ',
-         'from' => 1161295200,
-         'data' => 'userdel	2::inwork -19058,11636 -18750,11919
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1162422000,
          'text' => 'K 6304 Fahrland-Priort Bahnübergang in der OL Priort Gleisbauarbeiten Vollsperrung 28.10.2006-01.11.2006 ',
@@ -1009,6 +1002,14 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'text' => 'Loewenhardtdamm (Tempelhof) Richtung Manfred-von-Richthofen-Str. zwischen General-Pape-Str. und Bayernring Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2006)',
          'from' => 1161712875,
          'data' => 'userdel	1::inwork 8306,8722 8318,8692 8371,8543
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1163804400,
+         'text' => 'B 246 Bahnübergang in der OD Bestensee Umbauarbeiten Vollsperrung 06.11.2006-17.11.2006 ',
+         'from' => 1162681200,
+         'data' => 'userdel	2::inwork 26639,-17861 26752,-17872 26832,-17882
 ',
          'type' => 'gesperrt'
        }
