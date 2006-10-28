@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.13 2006/09/17 20:20:19 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.14 2006/10/28 22:27:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!caller(2)) {
@@ -206,7 +206,7 @@ sub do_google_search {
 	my $street_citypart = "$street in $citypart";
 	# Unfortunately there seems to be a lot of encoding issues
 	# Maybe best to use the ersatz notation for umlauts?
-	my $query = qq{allintitle:"}. $street_citypart . qq{" site:luise-berlin.de OR site:berlin-chronik.de OR site:berlingeschichte.de OR site:berliner-lesezeichen.de};
+	my $query = qq{allintitle:"}. $street_citypart . qq{" site:luise-berlin.de OR site:berlin-chronik.de OR site:berlingeschichte.de OR site:berliner-lesezeichen.de OR site:berlin-topographie.de OR site:berlinische-monatsschrift.de};
 	if ($DEBUG) {
 	    use Devel::Peek; Dump $query;
 	}
