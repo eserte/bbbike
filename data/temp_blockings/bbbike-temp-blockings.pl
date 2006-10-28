@@ -6298,7 +6298,7 @@ userdel	q4::inwork 16934,3571 17142,3393
 EOF
      },
      { from  => 1161197339, # 2006-10-18 20:48
-       until => 1162335600, # 2006-11-01 00:00
+       until => 1161995611, # 2006-11-01 00:00 1162335600
        text  => 'Ringbahnstraße zwischen Manteuffelstraße und Schöneberger Straße gesperrt, Fahrbahnarbeiten bis 31.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -6314,8 +6314,8 @@ userdel	2::inwork 41193,17512 40712,16743
 EOF
      },
      { from  => 1161036000, # 2006-10-17 00:00
-       until => 1162594800, # 2006-11-04 00:00
-       text  => 'B 096 zw. Dannenwalde und Fürstenberg Deckenerneuerung Vollsperrung 18.10.2006-03.11.2006 ',
+       until => 1162422000, # 2006-11-02 00:00
+       text  => 'B 096 zw. Dannenwalde und Fürstenberg Deckenerneuerung Vollsperrung 18.10.2006-01.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -8278,82431 -7484,80215
@@ -6454,6 +6454,46 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 26639,-17861 26752,-17872 26832,-17882
+EOF
+     },
+     { from  => 1160604000, # 2006-10-12 00:00
+       until => 1163199600, # 2006-11-11 00:00
+       text  => 'L 033 Odervorstadt Bahnübergang in der OD Wriezen Fahrbahninstandsetzung Vollsperrung 13.10.2006-10.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 60086,36267 59990,36267 59876,36115
+EOF
+     },
+     { from  => 1156024800, # 2006-08-20 00:00
+       until => 1162767600, # 2006-11-06 00:00
+       text  => 'B 096 Strelitzer Str. OD Gransee, vom KVK in Ri Altlüdersdorf grundhafter Straßenbau Vollsperrung 21.08.2006-05.11.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -6382,67186 -7071,66471
+EOF
+     },
+     { from  => 1162249200, # 2006-10-31 00:00
+       until => 1163286000, # 2006-11-12 00:00
+       text  => 'B 096 zw. OA Gransee und Löwenberg Deckeneinbau Vollsperrung 01.11.2006-11.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -7974,62020 -7906,61543 -7781,60550
+EOF
+     },
+     { from  => 1162249200, # 2006-10-31 00:00
+       until => 1164841200, # 2006-11-30 00:00
+       text  => 'B 101 Haag OD Luckenwalde, Kno. Beelitzer Str. Straßenausbau Vollsperrung 01.11.2006-29.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -4609,-35650 -4299,-35198
+EOF
+     },
+     { from  => 1162249200, # 2006-10-31 00:00
+       until => 1177970400, # 2007-05-01 00:00
+       text  => 'K 6411 Neulewin-Wriezen zw. OL Neulewin und Kerstenbruch Straßenbauarbeiten Vollsperrung 01.11.2006-30.04.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 68761,38095 69208,37364 69249,37090
 EOF
      },
     );

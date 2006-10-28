@@ -521,14 +521,7 @@ userdel	1::inwork 10781,13002 10706,13043
        undef,
        undef,
        undef,
-       {
-         'until' => 1161986400,
-         'text' => 'B 096 Strelitzer Str. OD Gransee, vom KVK in Ri Altlüdersdorf grundhafter Straßenbau Vollsperrung 21.08.2006-27.10.2006 ',
-         'from' => 1156024800,
-         'data' => 'userdel	q4::inwork -6382,67186 -7071,66471
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -923,18 +916,11 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1162335600,
-         'text' => 'Ringbahnstraße zwischen Manteuffelstraße und Schöneberger Straße gesperrt, Fahrbahnarbeiten bis 31.10.2006 ',
-         'from' => 1161197339,
-         'data' => 'userdel	2::inwork 8717,6965 8447,6964
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
-         'until' => 1162594800,
-         'text' => 'B 096 zw. Dannenwalde und Fürstenberg Deckenerneuerung Vollsperrung 18.10.2006-03.11.2006 ',
+         'until' => 1162422000,
+         'text' => 'B 096 zw. Dannenwalde und Fürstenberg Deckenerneuerung Vollsperrung 18.10.2006-01.11.2006 ',
          'from' => 1161036000,
          'data' => 'userdel	2::inwork -8278,82431 -7484,80215
 ',
@@ -988,14 +974,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
        undef,
        undef,
        undef,
-       {
-         'until' => 1161986400,
-         'text' => 'Lankestr. gesperrt bis 27.10.2006 ',
-         'from' => 1161542089,
-         'data' => 'userdel	2::inwork -9952,-109 -9942,21
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_003899',
          'until' => 1162335599,
@@ -1010,6 +989,46 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'text' => 'B 246 Bahnübergang in der OD Bestensee Umbauarbeiten Vollsperrung 06.11.2006-17.11.2006 ',
          'from' => 1162681200,
          'data' => 'userdel	2::inwork 26639,-17861 26752,-17872 26832,-17882
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1163199600,
+         'text' => 'L 033 Odervorstadt Bahnübergang in der OD Wriezen Fahrbahninstandsetzung Vollsperrung 13.10.2006-10.11.2006 ',
+         'from' => 1160604000,
+         'data' => 'userdel	2::inwork 60086,36267 59990,36267 59876,36115
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1162767600,
+         'text' => 'B 096 Strelitzer Str. OD Gransee, vom KVK in Ri Altlüdersdorf grundhafter Straßenbau Vollsperrung 21.08.2006-05.11.2006 ',
+         'from' => 1156024800,
+         'data' => 'userdel	q4::inwork -6382,67186 -7071,66471
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1163286000,
+         'text' => 'B 096 zw. OA Gransee und Löwenberg Deckeneinbau Vollsperrung 01.11.2006-11.11.2006 ',
+         'from' => 1162249200,
+         'data' => 'userdel	2::inwork -7974,62020 -7906,61543 -7781,60550
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1164841200,
+         'text' => 'B 101 Haag OD Luckenwalde, Kno. Beelitzer Str. Straßenausbau Vollsperrung 01.11.2006-29.11.2006 ',
+         'from' => 1162249200,
+         'data' => 'userdel	2::inwork -4609,-35650 -4299,-35198
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1177970400,
+         'text' => 'K 6411 Neulewin-Wriezen zw. OL Neulewin und Kerstenbruch Straßenbauarbeiten Vollsperrung 01.11.2006-30.04.2007 ',
+         'from' => 1162249200,
+         'data' => 'userdel	2::inwork 68761,38095 69208,37364 69249,37090
 ',
          'type' => 'gesperrt'
        }

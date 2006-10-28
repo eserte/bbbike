@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.280 2006/10/23 20:05:50 eserte Exp $
+# $Id: bbbike,v 3.281 2006/10/28 00:34:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.280 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.281 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -6284,7 +6284,7 @@ sub maybe_expand_image_file {
 sub set_bindings {
     foreach (qw(p pp o
 		u-bg u-fg u_bg-img b-bg b-fg b_bg-img r-bg r-fg r_bg-img
-		sperre sperre_u sperre_b sperre_r temp_sperre
+		sperre sperre_u sperre_b sperre_r
 		lsa-fg lsa-bg show pl-fg
 		L-img L-fg kn-fg ki-fg rest-fg)) {
 	std_p_binding($_);
@@ -6292,7 +6292,7 @@ sub set_bindings {
 
     foreach (qw(s sBAB S l L u b r f v v-fg w W i e comm mount),
 	     (map { "comm-$_" } @comments_types),
-	     qw(gr qs hs ql hl fz nl ovl temp_sperre_s rw wr)) {
+	     qw(gr qs hs ql hl fz nl ovl temp_sperre temp_sperre_s rw wr)) {
 	std_str_binding($_);
     }
 
@@ -9462,16 +9462,24 @@ sub line_shorten {
     }
 }
 
+sub get_temp_blockings_files {
+    my $temp_blockings_dir = "$FindBin::RealBin/data/temp_blockings";
+    my $file = "$temp_blockings_dir/bbbike-temp-blockings.pl";
+    my $optimized_file = "$temp_blockings_dir/bbbike-temp-blockings-optimized.pl";
+    return { dir            => $temp_blockings_dir,
+	     file           => $file,
+	     optimized_file => $optimized_file,
+	   };
+}
+
 sub activate_temp_blockings {
     my $do_show_active_temp_blockings = shift;
     my(%args) = @_;
     my $now = $args{-now} || time;
     my $from = $args{-from};
 
-    # XXX these should come from a file as constants
-    my $temp_blockings_dir = "$FindBin::RealBin/data/temp_blockings"; # XXX was misc
-    my $file = "$temp_blockings_dir/bbbike-temp-blockings.pl";
-    my $optimized_file = "$temp_blockings_dir/bbbike-temp-blockings-optimized.pl";
+    my($temp_blockings_dir, $file, $optimized_file) =
+	@{ get_temp_blockings_files() }{qw(dir file optimized_file)};
     if (!-r $file && !-r $optimized_file) {
 	status_message(M("Kein Support fuer temporaere Sperrungen, das Verzeichnis $temp_blockings_dir fehlt. Dieses Verzeichnis ist aus dem CVS erhältlich, siehe README."), "warn");
 	return;
@@ -9502,10 +9510,14 @@ sub activate_temp_blockings {
 
     eval {
 	use vars qw(@temp_blocking); # XXX do not use a global such as this
+	use vars qw(%temp_blocking_inx_mapping); # XXX dito
 	@temp_blocking = ();
 	do $file; # XXX Safe?
 	my @s;
+	my $global_inx = -1;
+	my $used_inx = -1;
 	for my $o (@temp_blocking) {
+	    $global_inx++;
 	    next if !$o; # undefined entry
 	    my $do_it = 0;
 	    if (defined $from && (!defined $o->{until} || $o->{until} > $from)) {
@@ -9538,6 +9550,8 @@ sub activate_temp_blockings {
 		    last if !@{ $ret->[Strassen::COORDS()] };
 		    $ret->[Strassen::NAME] = $text;
 		    $new_s->push($ret);
+		    $used_inx++;
+		    $temp_blocking_inx_mapping{$used_inx} = $global_inx;
 		}
 		push @s, $new_s;
 	    }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.114 2006/10/10 22:17:35 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.115 2006/10/28 00:34:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -1854,6 +1854,7 @@ struct('top'      => "\$",
 
 struct(LinePartInfo => [ 'basefile' => "\$",
 			 'line'     => "\$",
+			 'filetype' => "\$",
 		       ]);
 
 use constant BBBIKEEDIT_TOPLEVEL => "bbbikeedit";
@@ -1933,6 +1934,7 @@ sub click_info {
 	my $pos = $tags[3];
 	# XXX p_file is not supported (yet)
 	my $str_filename;
+	my $filetype = "str";
 	if ($abk =~ /^[wi]$/) { # exception because of
                                 # _get_wasser_obj, include also _i_slands
 	    if ($main::wasserstadt) {
@@ -1956,12 +1958,17 @@ sub click_info {
 	    $str_filename = $o->str_file->{$abk};
 	} elsif ($abk =~ /^v-SW/ && exists $o->str_file->{"v"}) {
 	    $str_filename = $o->str_file->{$abk};
+	} elsif ($abk =~ m{^temp_sperre(?:_s)?$}) {
+	    my $info = main::get_temp_blockings_files();
+	    $str_filename = $info->{file};
+	    $filetype = "temp_blockings";
 	}
 	if ($str_filename) {
 	    my $ret = LinePartInfo->new;
 	    $ret->basefile($str_filename);
 	    $pos =~ s/^.*-//;
 	    $ret->line($pos);
+	    $ret->filetype($filetype);
 	    return $ret;
 	}
 
@@ -1971,6 +1978,7 @@ sub click_info {
 	    $ret->basefile($o->p_file->{$abk});
 	    $pos =~ s/^.*-//;
 	    $ret->line($pos);
+	    $ret->filetype("p");
 	    return $ret;
 	}
 	warn "Tags not recognized: @tags\n";
@@ -1985,6 +1993,25 @@ sub click {
     my $o = shift;
     my $click_info = $o->click_info;
     die "No (str or p) line recognised" if !$click_info;
+
+    if ($click_info->filetype eq "temp_blockings") {
+	open TEMP_BLOCKINGS, $click_info->basefile
+	    or main::status_message("Can't open " . $click_info->basefile . ": $!", "die");
+	my $line = $main::temp_blocking_inx_mapping{ $click_info->line };
+	my $record = 0;
+	my $linenumber = 1;
+	while(<TEMP_BLOCKINGS>) {
+	    if (m<^\s*\{>) {
+		if ($record == $line) {
+		    start_editor($click_info->basefile, $linenumber);
+		    return;
+		}
+		$record++;
+	    }
+	    $linenumber++;
+	}
+	main::status_message("Can't find record number " . $click_info->line . " in " . $click_info->basefile, "die");
+    }
 
     my $ev = $o->canvas->XEvent;
     my($cx,$cy) = ($o->canvas->canvasx($ev->x),
@@ -2090,20 +2117,8 @@ sub click {
 		       foreach (@rec) {
 			   if (!/^\#/) {
 			       if ($count == $click_info->line) {
-				   require BBBikeUtil;
-				   if (BBBikeUtil::is_in_path("gnuclient")) {
-				       system(qw(gnuclient -q), '+'.($rec_count+1), $file);
-				       if ($?/256 != 0) {
-					   main::status_message("Error while starting gnuclient", "die");
-				       }
-				       return;
-				   } else {
-				       system(qw(emacsclient -n), '+'.($rec_count+1), $file);
-				       if ($?/256 != 0) {
-					   main::status_message("Error while starting emacsclient", "die");
-				       }
-				       return;
-				   }
+				   start_editor($file, $rec_count+1);
+				   return;
 			       }
 			       $count++;
 			   }
@@ -2214,6 +2229,24 @@ use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n"
 			});
     }
 
+}
+
+sub start_editor {
+    my($file, $line) = @_;
+    require BBBikeUtil;
+    if (BBBikeUtil::is_in_path("gnuclient")) {
+	system(qw(gnuclient -q), '+'.$line, $file);
+	if ($?/256 != 0) {
+	    main::status_message("Error while starting gnuclient", "die");
+	}
+	return;
+    } else {
+	system(qw(emacsclient -n), '+'.$line, $file);
+	if ($?/256 != 0) {
+	    main::status_message("Error while starting emacsclient", "die");
+	}
+	return;
+    }
 }
 
 sub send_comment {
