@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.133 2006/10/07 10:42:52 eserte Exp $
+# $Id: Makefile.PL,v 1.134 2006/10/28 11:41:15 eserte Exp $
 
 use 5.005;
 
@@ -43,7 +43,13 @@ use constant REQ_BBBIKE_WINDIST => 4; # for windows distribution (not yet!)
 # ... 4, 8, 16 ...
 
 # Table of prerequisites:
-# Name, Version, OS, Req/CoReq (may contain "|"), description token (comma separated), long description
+#
+#    Modulname
+#                       Version
+#                               OS
+#                                       Req/CoReq (ORed with "|")
+#                                              description token (comma separated)
+#    long description (may have de/en variants)
 my @req_table =
  ([qw/Tk		800.000	all	1|4	gui/,
    { de => 'das absolute Muss!',
@@ -181,6 +187,8 @@ my @req_table =
    'Same DB_File operations, used in Strassen::Index'],
   [qw/GPS::Garmin	0	all	4	base/,
    'für GPS-Upload'],
+  [qw/Geo::SpaceManager 0.91	all	2	base/,
+   'Intelligentere Labelplatzierung, bei der PDF-Ausgabe verwendet'],
 
   [qw/Image::Info	0	all	0	test/],
   [qw/Test::More	0	all	0	test/],

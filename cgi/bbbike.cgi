@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.27 2006/10/23 19:21:14 eserte Exp $
+# $Id: bbbike.cgi,v 8.27 2006/10/23 19:21:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -4162,7 +4162,7 @@ EOF
 #  	    }
 	    print "</table>\n";
 	    print qq{<div class="graphfootnote">};
-	    printf M(<<EOF), 15, 50, 100, 400;
+	    printf M(<<EOF), 15, 50, 100, 2000;
 Die Dateigr&ouml;&szlig;e der Grafik beträgt je nach
 Bildgr&ouml;&szlig;e, Bildformat und Detailreichtum %s bis %s kB. PDFs sind %s bis %s kB groß.
 EOF

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.24 2006/10/11 23:49:59 eserte Exp $
+# $Id: bbbikedraw.t,v 1.25 2006/10/28 11:41:58 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -189,6 +189,7 @@ sub draw_map {
 	# XXX more to come...
     }
 
+    no warnings 'qw';
     my $draw = new BBBikeDraw
 	NoInit     => 1,
 	($flush_to_filename ? (Filename => $filename) : (Fh => $fh)),
@@ -200,13 +201,14 @@ sub draw_map {
 	Module     => $module,
 	Startname  => "Start",
 	Zielname   => "Goal",
-	($do_route ? (Coords => ["9222,8787", "8209,8769"]) : ()),
+	($do_route ? (Coords => [qw(8209,8769 8293,8768 8425,8771 8472,8772 8480,9071 8598,9061 8594,8773 8770,8777 8982,8781 9050,8783 9222,8787 9227,8890 9235,9051 9235,9111 9248,9350 9280,9476 8994,9509 9043,9745)]) : ()),
 	UseFlags   => 1,
 	Wind       => {Windrichtung => 'N',
 		       Windstaerke  => 3,
 		      },
         StrLabel   => ['str:HH,H'],
 	Compress   => $do_compress, # implemented for PDF
+	MakeNet    => \&make_net,
     ;
     if ($do_slow) {
 	$draw->set_bbox_max(Strassen->new("strassen"));
@@ -297,6 +299,15 @@ sub get_all_viewers {
     } else {
 	die "get_all_viewers not supported for $imagetype";
     }
+}
+
+sub make_net {
+    require Strassen::Core;
+    require Strassen::StrassenNetz;
+    my $s = Strassen->new("strassen");
+    my $net = StrassenNetz->new($s);
+    $net->make_net;
+    $net;
 }
 
 __END__

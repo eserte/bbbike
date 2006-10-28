@@ -2,7 +2,7 @@
 
 package Bundle::BBBike_radzeit;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 1;
 
@@ -45,13 +45,15 @@ Template	- für BBBikeDraw::MapServer
 
 Palm::PalmDoc	- für das Erzeugen von palmdoc-Dateien mit der Routenbeschreibung
 
-XBase	- Erzeugen der Mapserver- oder anderer ESRI-Dateien, notwendig für radzeit.de
+XBase	- Erzeugen der Mapserver- oder anderer ESRI-Dateien
 
 SVG	- additional optional BBBikeDraw backend for SVG graphics
 
-Object::Iterate	- Notwendig für die radzeit.de-Version (bbd2esri)
+Object::Iterate	- Notwendig für die bbd2-esri-Konvertierung
 
 Archive::Zip	- Zum Zippen der BBBike-Daten in bbbike-data.cgi
+
+Geo::SpaceManager 0.91	- Intelligentere Labelplatzierung, bei der PDF-Ausgabe verwendet
 
 WWW::Mechanize	- Für Testen des CGI-Interfaces
 

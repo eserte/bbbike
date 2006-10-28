@@ -2,7 +2,7 @@
 
 package Bundle::BBBike_windist;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 1;
 
@@ -67,7 +67,7 @@ Class::Accessor	- für GPS::GpsmanData, die ESRI-Module etc.
 
 IPC::Run	- hilft bei der sicheren Ausführung von externen Kommandos (insbesondere für Win32)
 
-Object::Iterate	- Notwendig für die radzeit.de-Version (bbd2esri)
+Object::Iterate	- Notwendig für die bbd2-esri-Konvertierung
 
 Tie::IxHash	- Damit Direktiven in Straßen-Daten geordnet bleiben
 

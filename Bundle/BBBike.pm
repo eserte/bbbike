@@ -2,7 +2,7 @@
 
 package Bundle::BBBike;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 1;
 
@@ -111,7 +111,7 @@ File::ReadBackwards	- LogTracker plugin, Edititeren
 
 Date::Pcalc	- LogTracker plugin (mögliche Alternative ist Date::Calc)
 
-XBase	- Erzeugen der Mapserver- oder anderer ESRI-Dateien, notwendig für radzeit.de
+XBase	- Erzeugen der Mapserver- oder anderer ESRI-Dateien
 
 IPC::Run	- hilft bei der sicheren Ausführung von externen Kommandos (insbesondere für Win32)
 
@@ -121,7 +121,7 @@ Image::ExifTool	- für geocode_images
 
 SVG	- additional optional BBBikeDraw backend for SVG graphics
 
-Object::Iterate	- Notwendig für die radzeit.de-Version (bbd2esri)
+Object::Iterate	- Notwendig für die bbd2-esri-Konvertierung
 
 Object::Realize::Later	- Notwendig für Strassen::Lazy, selten benötigt
 
@@ -144,6 +144,8 @@ CDB_File	- Für die alternative A*-Optimierung in XS/C
 DB_File::Lock	- Same DB_File operations, used in Strassen::Index
 
 GPS::Garmin	- für GPS-Upload
+
+Geo::SpaceManager 0.91	- Intelligentere Labelplatzierung, bei der PDF-Ausgabe verwendet
 
 Image::Info
 
