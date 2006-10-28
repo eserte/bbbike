@@ -2636,7 +2636,7 @@ EOF
        text  => 'Glienicker Straße zwischen Grünauer Straße und Nipkowstraße Richtung Adlergestell wegen Bauarbeiten gesperrt bis 15.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 21823,4210 21690,4057 21498,3837 21442,3774 21316,3662 21227,3549 21198,3522 21136,3482 20967,3343 20818,3182
+userdel	q4; 21823,4210 21690,4057 21498,3837 21442,3774 21316,3662 21227,3549 21198,3522 21136,3482 21055,3415 20967,3343 20818,3182
 EOF
      },
      { from  => 1125351382, # 2005-08-29 23:36
@@ -6494,6 +6494,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 68761,38095 69208,37364 69249,37090
+EOF
+     },
+     { from  => 1162508400, # 2006-11-03 00:00
+       until => 1162853999, # 2006-11-06 23:59
+       text  => 'Vollsperrung der Oberspreestraße zwischen Freystadter Weg und Ottomar-Geschke-Straße und Spindlersfelder Straße vom Sonnabend, den 04.11.2006, 5:00 Uhr bis Montag, den 06.11.2006, 5:00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 20949,4775 21077,4736 21332,4655
 EOF
      },
     );

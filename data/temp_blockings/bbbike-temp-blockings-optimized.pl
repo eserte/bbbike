@@ -1031,6 +1031,14 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'data' => 'userdel	2::inwork 68761,38095 69208,37364 69249,37090
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1162853999,
+         'text' => 'Vollsperrung der Oberspreestraße zwischen Freystadter Weg und Ottomar-Geschke-Straße und Spindlersfelder Straße vom Sonnabend, den 04.11.2006, 5:00 Uhr bis Montag, den 06.11.2006, 5:00 Uhr ',
+         'from' => 1162508400,
+         'data' => 'userdel	2::inwork 20949,4775 21077,4736 21332,4655
+',
+         'type' => 'gesperrt'
        }
      
 );
