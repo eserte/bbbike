@@ -433,15 +433,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_82304',
-         'until' => 1162335599,
-         'text' => 'Quitzowstr. (Tiergarten) Richtung Putlitzstr. zwischen Rathenower Str. und Havelberger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2006)',
-         'from' => 1153805975,
-         'data' => 'userdel	q4::inwork; 6670,14302 6482,14264
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1039,6 +1031,15 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'data' => 'userdel	2::inwork 20949,4775 21077,4736 21332,4655
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003935',
+         'until' => 1163804400,
+         'text' => 'Kynaststr (Lichtenberg) in Richtung Marktstr., zwischen Haupstr. und Markstr. Baustelle, Fahrtrichtung gesperrt (bis 17.11.06)',
+         'from' => 1162238001,
+         'data' => 'userdel	q4::inwork; 14881,10864 14897,10935 14988,11130
+',
+         'type' => 'handicap'
        }
      
 );

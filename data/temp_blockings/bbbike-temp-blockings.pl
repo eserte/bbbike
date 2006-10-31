@@ -5192,7 +5192,7 @@ userdel	2::temp 33060,-85292 33101,-85749
 EOF
      },
      { from  => 1153805975, # 2006-07-25 07:39
-       until => 1162335599, # 2006-10-31 23:59
+       until => 1162238095, # 2006-10-31 23:59 1162335599
        text  => 'Quitzowstr. (Tiergarten) Richtung Putlitzstr. zwischen Rathenower Str. und Havelberger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2006)',
        type  => 'handicap',
        source_id => 'INKO_82304',
@@ -6502,6 +6502,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 20949,4775 21077,4736 21332,4655
+EOF
+     },
+     { from  => 1162238001, # 2006-10-30 20:53
+       until => 1163804400, # 2006-11-18 00:00
+       text  => 'Kynaststr (Lichtenberg) in Richtung Marktstr., zwischen Haupstr. und Markstr. Baustelle, Fahrtrichtung gesperrt (bis 17.11.06)',
+       type  => 'handicap',
+       source_id => 'IM_003935',
+       data  => <<EOF,
+userdel	q4::inwork; 14881,10864 14897,10935 14988,11130
 EOF
      },
     );
