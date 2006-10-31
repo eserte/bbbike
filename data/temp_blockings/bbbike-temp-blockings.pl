@@ -4295,9 +4295,9 @@ EOF
 userdel	1 9248,9350 9235,9111 9235,9051 9227,8890 9222,8787
 EOF
      },
-     { from  => 1159207665, # 2006-09-25 20:07
-       until => 1162303200, # 2006-10-31 15:00
-       text  => 'Schulzendorfer Straße - Am Dachsbau (zwischen Ruppiner Chaussee und Blisenkrautstr.) in beiden Richtungen gesperrt, Baustelle bis 31.10.2006 15:00 Uhr',
+     { from  => 1162325129, # 2006-10-31 21:05
+       until => 1162821600, # 2006-11-06 15:00
+       text  => 'Schulzendorfer Straße - Am Dachsbau (zwischen Ruppiner Chaussee und Blisenkrautstr.) in beiden Richtungen gesperrt, Baustelle bis 06.11.2006 15:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -862,22946 -1254,22853
@@ -6125,9 +6125,9 @@ EOF
 userdel	2::inwork 80143,-15900 79825,-16575
 EOF
      },
-     { from  => 1160089339, # 2006-10-06 01:02
-       until => 1162421999, # 2006-11-01 23:59
-       text  => 'Leibnizstr. (Charlottenburg ) in Richtung Süd,, zwischen Otto-Suhr-Allee und Bismarckstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 11.2006)',
+     { from  => undef, # 
+       until => 1160604000, # 2006-10-12 00:00
+       text  => 'Leibnizstr. (Charlottenburg ) in Richtung Süd,, zwischen Otto-Suhr-Allee und Bismarckstr. Baustelle, Fahrtrichtung gesperrt (bis 11.10.2006)',
        type  => 'gesperrt',
        source_id => 'IM_003744',
        data  => <<EOF,

@@ -258,9 +258,9 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        {
-         'until' => 1162303200,
-         'text' => 'Schulzendorfer Straße - Am Dachsbau (zwischen Ruppiner Chaussee und Blisenkrautstr.) in beiden Richtungen gesperrt, Baustelle bis 31.10.2006 15:00 Uhr',
-         'from' => 1159207665,
+         'until' => 1162821600,
+         'text' => 'Schulzendorfer Straße - Am Dachsbau (zwischen Ruppiner Chaussee und Blisenkrautstr.) in beiden Richtungen gesperrt, Baustelle bis 06.11.2006 15:00 Uhr ',
+         'from' => 1162325129,
          'data' => 'userdel	2::inwork -862,22946 -1254,22853
 ',
          'type' => 'gesperrt'
@@ -779,14 +779,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1162249200,
-         'text' => 'L 021 Zühlslake-Wensickendorf Kreuzung. Summter Chaussee bei Zühlslake Neubau Kreisverkehr Vollsperrung 20.08.2006-30.10.2006 ',
-         'from' => 1155938400,
-         'data' => 'userdel	q4::inwork 7435,34963 7443,36175
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -800,15 +793,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_003744',
-         'until' => 1162421999,
-         'text' => 'Leibnizstr. (Charlottenburg ) in Richtung Süd,, zwischen Otto-Suhr-Allee und Bismarckstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 11.2006)',
-         'from' => 1160089339,
-         'data' => 'userdel	1::inwork 4359,11979 4345,11710
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
