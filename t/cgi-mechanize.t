@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.33 2006/10/05 23:53:38 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.34 2006/11/02 19:43:03 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -336,7 +336,7 @@ for my $browser (@browsers) {
     ######################################################################
     # Test custom blockings
 
- XXX: {
+    {
 
 	# Hier wird eine temporäre baustellenbedingte Einbahnstraße in
 	# der Rixdorfer Str. getestet.
@@ -421,7 +421,7 @@ for my $browser (@browsers) {
     SKIP: {
 	    skip("Street is known now!", 2); # XXX find another unknown street?
 	    like_long_data(get_ct($agent), qr/Kleine Parkstr\..*ist nicht bekannt/i, "Street not in database");
-	    like_long_data(get_ct($agent), qr{\Qhtml/newstreetform.html?\E.*\Qstrname=Kleine%20Parkstr}i, "newstreetform link");
+	    like_long_data(get_ct($agent), qr{\Qhtml/newstreetform(utf8.)?.html?\E.*\Qstrname=Kleine%20Parkstr}i, "newstreetform link");
 	}
 	like_long_data(get_ct($agent), qr{Hauptbahnhof.*?die nächste Kreuzung}is,  "S-Bhf.");
 	like_long_data(get_ct($agent), qr{Invalidenstr.}i,  "S-Bhf., next crossing (Invalidenstr)");
@@ -519,7 +519,7 @@ for my $browser (@browsers) {
 
     }
 
-    {
+ XXX: {
 	$get_agent->();
 
 	$agent->get($cgiurl);
@@ -529,7 +529,10 @@ for my $browser (@browsers) {
 	my_tidy_check($agent);
 
 	like_long_data(get_ct($agent), qr{Information}, "On the info page");
-	$agent->follow_link(text_regex => qr{dieses Formular});
+	{
+	    local $^W = 0; # cease "Parsing of undecoded UTF-8 will give garbage when decoding entities" warning
+	    $agent->follow_link(text_regex => qr{dieses Formular});
+	}
 	my_tidy_check($agent);
 
 	like_long_data(get_ct($agent), qr{Neue Stra.*e f.*r BBBike}, "On the new street form");
@@ -547,11 +550,14 @@ for my $browser (@browsers) {
 	    like_long_data(get_ct($agent), qr{Danke, die Angaben.*gesendet}, "Sent comment");
 	}
 
-	$agent->get($fragezeichenform_url);
+	{
+	    local $^W = 0; # cease "Parsing of undecoded UTF-8 will give garbage when decoding entities" warning
+	    $agent->get($fragezeichenform_url);
+	}
 	my_tidy_check($agent);
 
 	$agent->field("strname",  "TEST IGNORE");
-	$agent->field("comments", "TEST IGNORE");
+	$agent->field("comments", "TEST IGNORE with umlauts äöüß");
 	$agent->field("author",   "TEST IGNORE");
     SKIP: {
 	    skip("URL is hardcoded and not valid on radzeit.herceg.de", 2)

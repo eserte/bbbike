@@ -6537,4 +6537,21 @@ EOF
 userdel	q4::inwork 41193,17512 40712,16743
 EOF
      },
+     { from  => 1162454215, # 2006-11-02 08:56
+       until => 1167606000, # 2007-01-01 00:00
+       text  => 'Dunckerstr. (Prenzlauer Berg) in beiden Richtungen, Kreuzung Stargarder Str. Baustelle, Straße vollständig gesperrt (bis Anfang 2007)',
+       type  => 'handicap',
+       source_id => 'IM_003972',
+       data  => <<EOF,
+userdel	q4::inwork 11603,15455 11638,15522
+EOF
+     },
+     { from  => 1162508400, # 2006-11-03 00:00
+       until => 1162767600, # 2006-11-06 00:00
+       text  => 'L 745 Motzener Str. OD Gallun Deckenerneuerung Vollsperrung 04.11.2006-05.11.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 21970,-18337 22324,-18950
+EOF
+     },
     );

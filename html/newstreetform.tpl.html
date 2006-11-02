@@ -55,7 +55,9 @@
 <html>
  <head>
  <title>Neue Straße für BBBike</title>
+[% IF !nometacharset -%]
  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+[% END -%]
  <link rev="made" href="mailto:slaven@rezic.de" />
  <link rel="stylesheet" type="text/css" href="[% bbbikecss %]" />
  <script>
@@ -144,6 +146,9 @@ function init() {
   <input type="hidden" name="supplied_bezirk" value="" />
   <input type="hidden" name="supplied_plz" value="" />
   <input type="hidden" name="supplied_coord" value="" />
+[% IF encoding -%]
+  <input type="hidden" name="encoding" value="[% encoding | html %]" />
+[% END -%]
   <table>
 
 [% IF is_fragezeichen_form -%]

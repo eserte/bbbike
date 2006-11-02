@@ -110,6 +110,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $use_winter_optimization
 	    $with_fullsearch_radio
 	    $with_lang_switch
+	    $newstreetform_encoding
 	   );
 # XXX This may be removed one day
 use vars qw($use_cooked_street_data);
@@ -646,6 +647,8 @@ Explanation text for temporary blockings.
 
 # XXX document: # show max n matches in start form
 $max_matches = 20;
+
+$newstreetform_encoding = "";
 
 ####################################################################
 
@@ -1772,7 +1775,7 @@ EOF
 	    print "<td>$fontstr" if $bi->{'can_table'};
 	    print "<i>$$oneref</i> " . M("ist nicht bekannt") . ".<br>\n";
 	    my $qs = CGI->new({strname => $$oneref})->query_string;
-	    print qq{<a target="newstreetform" href="$bbbike_html/newstreetform.html?$qs">} . M("Diese Straﬂe eintragen") . qq{</a><br>\n};
+	    print qq{<a target="newstreetform" href="$bbbike_html/newstreetform${newstreetform_encoding}.html?$qs">} . M("Diese Straﬂe eintragen") . qq{</a><br>\n};
 	    $no_td = 1;
 	    $tryempty = 1;
 	} elsif ($$tworef ne '') {
@@ -1789,7 +1792,7 @@ EOF
 				  })->query_string;
 		my $report_nearest = $strasse !~ /^[su]-bhf/i;
 		if ($report_nearest) {
-		    print qq{<i>$strasse</i> } . M("ist nicht bekannt") . qq{ (<a target="newstreetform" href="$bbbike_html/newstreetform.html?$qs">} . M("diese Straﬂe eintragen") . qq{</a>).<br>\n};
+		    print qq{<i>$strasse</i> } . M("ist nicht bekannt") . qq{ (<a target="newstreetform" href="$bbbike_html/newstreetform${newstreetform_encoding}.html?$qs">} . M("diese Straﬂe eintragen") . qq{</a>).<br>\n};
 		} else {
 		    print qq{<i>$strasse</i><br>\n};
 		}
@@ -3890,7 +3893,7 @@ EOF
 			my $qs = CGI->new({strname => $fragezeichen_comment,
 					   strname_html => CGI::escapeHTML($fragezeichen_comment),
 					  })->query_string;
-			print qq{<td>$fontstr<a target="newstreetform" href="$bbbike_html/fragezeichenform.html?$qs">};
+			print qq{<td>$fontstr<a target="newstreetform" href="$bbbike_html/fragezeichenform${newstreetform_encoding}.html?$qs">};
 			if ($is_unknown) {
 			    print qq{Unbekannte Straﬂe};
 			} else {
@@ -6009,7 +6012,7 @@ Berlin f¸r einen Einzelnen eine schwere Aufgabe. Deshalb freue ich
 mich ¸ber Feedback: neue Straﬂen, ver‰nderte Gegebenheiten, sowohl in
 Berlin als auch im Brandenburger Umland. Anregungen bitte als <a
 href="mailto:$BBBike::EMAIL">Mail</a> schicken oder <a
-href="$bbbike_html/newstreetform.html?frompage=info">dieses Formular</a> benutzen.
+href="$bbbike_html/newstreetform${newstreetform_encoding}.html?frompage=info">dieses Formular</a> benutzen.
 
 <hr>
 <a name="link"><h3>Link auf BBBike setzen</h3></a>

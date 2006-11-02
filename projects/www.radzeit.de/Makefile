@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.90 2006/10/19 21:24:21 eserte Exp $
+# $Id: Makefile,v 1.91 2006/11/02 19:55:17 eserte Exp $
 #
 
 # Targets:
@@ -425,9 +425,9 @@ prepare-bbbike-dist-prog-bbbike-html:
 	# Vorsichtshalber, weil ansonsten die falschen URLs enthalten sein
 	# könnten:
 	cd ${CURDIR}/BBBike/html && \
-	    rm -f newstreetform.html fragezeichenform.html
+	    rm -f newstreetform.html newstreetform.utf8.html fragezeichenform.html fragezeichenform.utf8.html
 	cd ${CURDIR}/BBBike/html && \
-	    ${MAKE} newstreetform.html fragezeichenform.html \
+	    ${MAKE} newstreetform.html newstreetform.utf8.html fragezeichenform.html fragezeichenform.utf8.html \
 		CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin
 
 prepare-bbbike-dist-prog-stadtplan:

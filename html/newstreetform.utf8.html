@@ -1,0 +1,557 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <!-- -*-html-*- -->
+<!-- DO NOT EDIT, generated automatically from newstreetform.tpl.html -->
+<html>
+ <head>
+ <title>Neue Straße für BBBike</title>
+ <link rev="made" href="mailto:slaven@rezic.de" />
+ <link rel="stylesheet" type="text/css" href="bbbike.css?v=1.22" />
+ <script>
+function check() {
+  if (!check_strname()) return false;
+  return true;
+}
+function check_strname() {
+  var frm = document.forms.newstreet;
+  if (frm.elements.strname.value == "") {
+    alert("Der Straßenname darf nicht leer sein!");
+    return false;
+  }
+  return true;
+}
+function init() {
+  var frm = document.forms.newstreet;
+
+  var strname_html;
+  if (location.search) {
+    var search = unescape(location.search);
+    if (search.match(/strname=([^;&]*)/)) {
+      frm.supplied_strname.value = RegExp.$1;
+    }
+    if (search.match(/bezirk=([^;&]*)/)) {
+      frm.supplied_bezirk.value = RegExp.$1;
+    }
+    if (search.match(/plz=([^;&]*)/)) {
+      frm.supplied_plz.value = RegExp.$1;
+    }
+    if (search.match(/coord=([^;&]*)/)) {
+      frm.supplied_coord.value = RegExp.$1;
+    }
+    if (search.match(/strname_html=([^;&]*)/)) {
+      strname_html = RegExp.$1;
+    }
+  }
+
+  if (document.cookie) {
+    var cookies = document.cookie.split(/;\s*/);
+    for (var i=0; i<cookies.length; i++) {
+      if (cookies[i].match(/^mapserver_comment=(.*)/)) {
+        var arr = RegExp.$1.split("&");
+        for(var i=0; i<arr.length/2; i++) {
+          var key = arr[i*2];
+	  var val = arr[i*2+1];
+	  val = val.replace(/%40/g, "@");
+	  val = val.replace(/%20/g, " ");
+  	  if (key == "email" || key == "author") {
+	    frm.elements[key].value = val;
+	  }
+  	}
+	break;
+      }
+    }
+  }
+
+
+  if (typeof window.focus == "function") {
+    window.focus();
+  }
+}
+ </script>
+</head>
+<body onload="init()">
+ <h1>Neue Straße für BBBike</h1>
+ <form name="newstreet" method="post" action="../cgi/mapserver_comment.cgi">
+  <input type="hidden" name="formtype" value="newstreetform" />
+  <input type="hidden" name="supplied_strname" value="" />
+  <input type="hidden" name="supplied_bezirk" value="" />
+  <input type="hidden" name="supplied_plz" value="" />
+  <input type="hidden" name="supplied_coord" value="" />
+  <input type="hidden" name="encoding" value="utf-8" />
+  <table>
+
+
+
+   <tr>
+    <td>Straßenname</td>
+    <td><input name="strname"  size="30"/>
+        (ggfs. mit Bezirk oder Ortsteil)</td>
+   </tr>
+
+   <tr><td colspan="3"><hr /></td></tr>
+
+   <tr>
+    <td>Qualität</td>
+    <td>
+     <table cellpadding="0" cellspacing="0">
+
+      <tr><td colspan="2"><b>Bewertung:</b></td></tr>
+
+
+      <tr>       <td>
+        <input id="Qcat_1_Q0" style="margin-right:1em;" type="radio" name="Qcat_1" value="Q0"
+ /></td>
+       <td><label for="Qcat_1_Q0">sehr gut</label>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="Qcat_1_Q1" style="margin-right:1em;" type="radio" name="Qcat_1" value="Q1"
+ /></td>
+       <td><label for="Qcat_1_Q1">gut</label>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="Qcat_1_Q2" style="margin-right:1em;" type="radio" name="Qcat_1" value="Q2"
+ /></td>
+       <td><label for="Qcat_1_Q2">mäßig</label>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="Qcat_1_Q3" style="margin-right:1em;" type="radio" name="Qcat_1" value="Q3"
+ /></td>
+       <td><label for="Qcat_1_Q3">schlecht</label>
+
+       </td>
+      </tr>
+
+
+
+      <tr><td colspan="2"><b>Beschreibung:</b></td></tr>
+
+
+      <tr>       <td>
+        <input id="Qdesc_1_Asphalt" style="margin-right:1em;" type="radio" name="Qdesc_1" value="Asphalt"
+ /></td>
+       <td><label for="Qdesc_1_Asphalt">Asphalt</label>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="Qdesc_1_Beton" style="margin-right:1em;" type="radio" name="Qdesc_1" value="Beton"
+ /></td>
+       <td><label for="Qdesc_1_Beton">Beton</label>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="Qdesc_1_Kopfsteinpflaster" style="margin-right:1em;" type="radio" name="Qdesc_1" value="Kopfsteinpflaster"
+ /></td>
+       <td><label for="Qdesc_1_Kopfsteinpflaster">Kopfsteinpflaster</label>
+        <a class="yellowbox" style="text-decoration:none" target="newstreetform_help" href="http://de.wikipedia.org/wiki/Kopfsteinpflaster">?</a>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="Qdesc_1_fester Sandweg" style="margin-right:1em;" type="radio" name="Qdesc_1" value="fester Sandweg"
+ /></td>
+       <td><label for="Qdesc_1_fester Sandweg">fester Sandweg</label>
+        <a class="yellowbox" style="text-decoration:none" target="newstreetform_help" href="http://de.wikipedia.org/wiki/Wassergebundene_Decke">?</a>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="Qdesc_1_loser Sandweg" style="margin-right:1em;" type="radio" name="Qdesc_1" value="loser Sandweg"
+ /></td>
+       <td><label for="Qdesc_1_loser Sandweg">loser Sandweg</label>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="Qdesc_1_Verbundsteinpflaster" style="margin-right:1em;" type="radio" name="Qdesc_1" value="Verbundsteinpflaster"
+ /></td>
+       <td><label for="Qdesc_1_Verbundsteinpflaster">Verbundsteinpflaster</label>
+
+       </td>
+      </tr>
+
+      <tr>
+       <td>
+        <input type="radio" name="Qdesc_1" value="userdefined"
+ />
+       </td>
+       <td>
+        <input name="Qdescuserdef_1" />
+       </td>
+      </tr>
+     </table>
+    </td>
+    
+    <td>     <label>
+      <input type="radio" name="Qrange_1" value="whole"checked />
+      gesamte Straße
+     </label><br />
+     <label>
+      <input type="radio" name="Qrange_1" value="part" 
+ />
+      Teilabschnitt
+     </label><br />
+     <table cellpadding="0" cellspacing="0">
+      <tr>       <td style="padding-right:1ex;">von</td>
+       <td><input name="Qrangefrom_1" /></td>
+      </tr>
+      <tr>       <td style="padding-right:1ex;">bis </td>
+       <td><input name="Qrangeto_1" /></td>
+      </tr>
+     </table>
+    </td>
+
+   </tr>
+
+   <tr><td colspan="3"><hr /></td></tr>
+
+   <tr>
+    <td>Sonstige<br/>Behinderungen</td>
+    <td>
+     <table cellpadding="0" cellspacing="0">
+
+      <tr><td colspan="2"><b>Eingeschränkte Geschwindigkeit:</b></td></tr>
+
+
+      <tr>       <td>
+        <input id="qqcat_1_q0" style="margin-right:1em;" type="radio" name="qqcat_1" value="q0"
+ /></td>
+       <td><label for="qqcat_1_q0">30 km/h oder mehr möglich</label>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="qqcat_1_q1" style="margin-right:1em;" type="radio" name="qqcat_1" value="q1"
+ /></td>
+       <td><label for="qqcat_1_q1">bis 25 km/h</label>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="qqcat_1_q2" style="margin-right:1em;" type="radio" name="qqcat_1" value="q2"
+ /></td>
+       <td><label for="qqcat_1_q2">bis 18 km/h</label>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="qqcat_1_q3" style="margin-right:1em;" type="radio" name="qqcat_1" value="q3"
+ /></td>
+       <td><label for="qqcat_1_q3">bis 13 km/h</label>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="qqcat_1_q4" style="margin-right:1em;" type="radio" name="qqcat_1" value="q4"
+ /></td>
+       <td><label for="qqcat_1_q4">Schrittgeschwindigkeit</label>
+
+       </td>
+      </tr>
+
+
+      <tr><td colspan="2"><b>Grund:</b></td></tr>
+
+
+      <tr>       <td>
+        <input id="qqdesc_1_keine Einschränkung" style="margin-right:1em;" type="radio" name="qqdesc_1" value="keine Einschränkung"
+ /></td>
+       <td><label for="qqdesc_1_keine Einschränkung">keine Einschränkung</label>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="qqdesc_1_viele Fußgänger" style="margin-right:1em;" type="radio" name="qqdesc_1" value="viele Fußgänger"
+ /></td>
+       <td><label for="qqdesc_1_viele Fußgänger">viele Fußgänger</label>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="qqdesc_1_Fußgängerzone" style="margin-right:1em;" type="radio" name="qqdesc_1" value="Fußgängerzone"
+ /></td>
+       <td><label for="qqdesc_1_Fußgängerzone">Fußgängerzone</label>
+        <a class="yellowbox" style="text-decoration:none" target="newstreetform_help" href="http://de.wikipedia.org/wiki/Fu%DFg%E4ngerzone">?</a>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="qqdesc_1_kurvenreich" style="margin-right:1em;" type="radio" name="qqdesc_1" value="kurvenreich"
+ /></td>
+       <td><label for="qqdesc_1_kurvenreich">kurvenreich</label>
+
+       </td>
+      </tr>
+
+      <tr>
+       <td>
+        <input type="radio" name="qqdesc_1" value="userdefined"
+ />
+       </td>
+       <td>
+        <input name="qqdescuserdef_1" />
+       </td>
+      </tr>
+     </table>
+    </td>
+    
+    <td>     <label>
+      <input type="radio" name="qqrange_1" value="whole"checked />
+      gesamte Straße
+     </label><br />
+     <label>
+      <input type="radio" name="qqrange_1" value="part" 
+ />
+      Teilabschnitt
+     </label><br />
+     <table cellpadding="0" cellspacing="0">
+      <tr>       <td style="padding-right:1ex;">von</td>
+       <td><input name="qqrangefrom_1" /></td>
+      </tr>
+      <tr>       <td style="padding-right:1ex;">bis </td>
+       <td><input name="qqrangeto_1" /></td>
+      </tr>
+     </table>
+    </td>
+
+   </tr>
+
+   <tr><td colspan="3"><hr /></td></tr>
+
+   <tr>
+    <td>Besondere Anlagen<br/>für Radfahrer</td>
+    <td>
+     <table cellpadding="0" cellspacing="0">
+
+      <tr>       <td>
+        <input id="RWcat_1_RW0" style="margin-right:1em;" type="radio" name="RWcat_1" value="RW0"
+ /></td>
+       <td><label for="RWcat_1_RW0">keine</label>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="RWcat_1_RW1" style="margin-right:1em;" type="radio" name="RWcat_1" value="RW1"
+ /></td>
+       <td><label for="RWcat_1_RW1">Radweg</label>
+        <a class="yellowbox" style="text-decoration:none" target="newstreetform_help" href="http://de.wikipedia.org/wiki/Radweg">?</a>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="RWcat_1_RW4" style="margin-right:1em;" type="radio" name="RWcat_1" value="RW4"
+ /></td>
+       <td><label for="RWcat_1_RW4">Radstreifen</label>
+        <a class="yellowbox" style="text-decoration:none" target="newstreetform_help" href="http://www.adfc-bremen.de/front_content.php?idcat=105">?</a>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="RWcat_1_RW7" style="margin-right:1em;" type="radio" name="RWcat_1" value="RW7"
+ /></td>
+       <td><label for="RWcat_1_RW7">Fahrradstraße</label>
+        <a class="yellowbox" style="text-decoration:none" target="newstreetform_help" href="http://de.wikipedia.org/wiki/Fahrradstra%DFe">?</a>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="RWcat_1_RW5" style="margin-right:1em;" type="radio" name="RWcat_1" value="RW5"
+ /></td>
+       <td><label for="RWcat_1_RW5">Busspur</label>
+        <a class="yellowbox" style="text-decoration:none" target="newstreetform_help" href="http://de.wikipedia.org/wiki/Busspur">?</a>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="RWcat_1_RW6" style="margin-right:1em;" type="radio" name="RWcat_1" value="RW6"
+ /></td>
+       <td><label for="RWcat_1_RW6">Spielstraße</label>
+        <a class="yellowbox" style="text-decoration:none" target="newstreetform_help" href="http://de.wikipedia.org/wiki/Spielstra%DFe">?</a>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="RWcat_1_NN" style="margin-right:1em;" type="radio" name="RWcat_1" value="NN"
+ /></td>
+       <td><label for="RWcat_1_NN">Kein Autoverkehr</label>
+
+       </td>
+      </tr>
+
+
+      <tr>
+       <td>
+        <input type="radio" name="RWcat_1" value="userdefined"
+ /></td>
+       <td><input name="RWdescuserdef_1"  /></td>
+      </tr>
+     </table>
+    </td>
+    
+    <td>     <label>
+      <input type="radio" name="RWrange_1" value="whole"checked />
+      gesamte Straße
+     </label><br />
+     <label>
+      <input type="radio" name="RWrange_1" value="part" 
+ />
+      Teilabschnitt
+     </label><br />
+     <table cellpadding="0" cellspacing="0">
+      <tr>       <td style="padding-right:1ex;">von</td>
+       <td><input name="RWrangefrom_1" /></td>
+      </tr>
+      <tr>       <td style="padding-right:1ex;">bis </td>
+       <td><input name="RWrangeto_1" /></td>
+      </tr>
+     </table>
+    </td>
+
+   </tr>
+
+   <tr><td colspan="3"><hr /></td></tr>
+   <tr>
+    <td>Gesperrt</td>
+    <td>
+     <table cellpadding="0" cellspacing="0">
+
+      <tr>       <td>
+        <input id="sperrecat_1_" style="margin-right:1em;" type="radio" name="sperrecat_1" value=""checked
+ /></td>
+       <td><label for="sperrecat_1_">offen für Radfahrer</label>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="sperrecat_1_1" style="margin-right:1em;" type="radio" name="sperrecat_1" value="1"
+ /></td>
+       <td><label for="sperrecat_1_1">Einbahnstraße, offen in Richtung</label>
+<input name="sperre_oneway_1"  />
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="sperrecat_1_BNP" style="margin-right:1em;" type="radio" name="sperrecat_1" value="BNP"
+ /></td>
+       <td><label for="sperrecat_1_BNP">Drängelgitter/Schranke an der Kreuzung</label>
+        <a class="yellowbox" style="text-decoration:none" target="newstreetform_help" href="http://www.adfc-bergstrasse.de/radverkehrsplanung/umlaufsperren.htm">?</a>
+<input name="sperre_BNP_1"  />
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="sperrecat_1_0" style="margin-right:1em;" type="radio" name="sperrecat_1" value="0"
+ /></td>
+       <td><label for="sperrecat_1_0">Treppe, Rad muss getragen werden</label>
+<input name="sperre_carry_1"  />
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="sperrecat_1_2" style="margin-right:1em;" type="radio" name="sperrecat_1" value="2"
+ /></td>
+       <td><label for="sperrecat_1_2">Straße vollkommen gesperrt für Radfahrer</label>
+
+       </td>
+      </tr>
+
+     </table>
+    </td>
+   </tr>
+
+   <tr><td colspan="3"><hr /></td></tr>
+   <tr>
+    <td>Sonstige<br/>Anmerkungen</td>
+    <td><textarea cols="40" rows="5" name="comments"></textarea></td>
+   </tr>
+
+   <tr><td colspan="3"><hr /></td></tr>
+
+   <tr>
+    <td>Dein Name</td>
+    <td><input name="author"  size="30"></td>
+   </tr>
+   <tr>
+    <td>Deine E-Mail<br>(für Rückfragen bitte angeben)</td>
+    <td><input name="email"  size="30"></td>
+   </tr>
+
+   <tr>
+    <td></td>
+    <td><input type="submit" onclick="return check()" value="Abschicken"></td>
+   </tr>
+
+   <tr>
+    <td colspan="3">Die Daten werden manuell in die BBBike-Datenbank eingetragen.</td>
+   </tr>
+  </table>
+ </form>
+
+ <table width="100%">
+  <tr><td style="padding-top:3px"></td></tr>
+  <tr>
+   <td colspan="3">
+      <p class="ftr">
+       <a id="bbbikemail" href="mailto:slaven@rezic.de">E-Mail</a>
+       
+       | <a id="bbbikeurl" href="../cgi/bbbike.cgi">BBBike</a>
+       
+<!--       | <a href="javascript:history.back()">Zurück</a>-->
+      </p>
+   </td>
+  </tr>
+ </table>
+
+</body></html>

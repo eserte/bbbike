@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.43 2006/09/28 22:33:43 eserte Exp eserte $
+# $Id: BBBikeGlobalVars.pm,v 1.44 2006/11/02 20:54:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.43 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.44 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -194,7 +194,8 @@ use vars qw(%wetter_full $temperature %wind_colors $stderr $stderr_window
 	    $geometry $open_maximized $scaling $visual @max_extends);
 ### Fonts
 use vars qw(%font @font $font_family $fixed_font_family $font_size $font_weight
-	    $standard_height $use_font_rot $label_font_size);
+	    $standard_height $use_font_rot $label_font_size
+	    $sans_serif_font_family $has_xft);
 ### Postscript
 use vars qw($ps_rotate $print_cmd $gv_reuse $ps_color $ps_scale_a4 $ps_fixed_font $print_backend);
 
