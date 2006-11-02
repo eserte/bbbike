@@ -703,15 +703,7 @@ userdel	1::inwork 10781,13002 10706,13043
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_003692',
-         'until' => 1162335600,
-         'text' => 'Rixdorfer Str. (Treptow ) in Richtung Kiefholzstr., zwischen Südostallee und Schnellerstr. Baustelle, Fahrtrichtung gesperrt (bis 31.10.06)',
-         'from' => 1160414834,
-         'data' => 'userdel	1::inwork 17156,6235 16861,5935
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -859,15 +851,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_003834',
-         'until' => 1162421999,
-         'text' => 'Lichterfelder Ring (Steglitz ) in beiden Richtungen, zwischen Schütte-Lanz-Str. - Sarntaler Weg Baustelle, Straße vollständig gesperrt (bis Anfang November 2006)',
-         'from' => 1161032728,
-         'data' => 'userdel	2::inwork 5916,499 5584,452
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1164927600,
          'text' => 'K 6003 Friedrichswalde-L100 Gollin zw. Friedrichswalde und Kreisgrenze Straßenbau Vollsperrung 04.09.2006-30.11.2006 ',
@@ -895,14 +879,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
        },
        undef,
        undef,
-       {
-         'until' => 1162422000,
-         'text' => 'B 096 zw. Dannenwalde und Fürstenberg Deckenerneuerung Vollsperrung 18.10.2006-01.11.2006 ',
-         'from' => 1161036000,
-         'data' => 'userdel	2::inwork -8278,82431 -7484,80215
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1167606000,
          'text' => 'B 198 Polßen-Gramzow OD Gramzow Vollsperrung 16.10.2006-31.12.2006 ',
@@ -912,22 +889,8 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1162422000,
-         'text' => 'K 6304 Fahrland-Priort Bahnübergang in der OL Priort Gleisbauarbeiten Vollsperrung 28.10.2006-01.11.2006 ',
-         'from' => 1161900000,
-         'data' => 'userdel	2::inwork -19058,11636 -18750,11919
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1162335600,
-         'text' => 'L 272 Vierraden-Woltersdorf OD Blumenhagen Kanalbau Vollsperrung 16.10.2006-31.10.2006 ',
-         'from' => 1160863200,
-         'data' => 'userdel	q4::inwork 69341,80383 69442,80070 69400,79825
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -952,15 +915,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_003899',
-         'until' => 1162335599,
-         'text' => 'Loewenhardtdamm (Tempelhof) Richtung Manfred-von-Richthofen-Str. zwischen General-Pape-Str. und Bayernring Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2006)',
-         'from' => 1161712875,
-         'data' => 'userdel	1::inwork 8306,8722 8318,8692 8371,8543
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1163804400,
          'text' => 'B 246 Bahnübergang in der OD Bestensee Umbauarbeiten Vollsperrung 06.11.2006-17.11.2006 ',
@@ -1023,6 +978,30 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'text' => 'Kynaststr (Lichtenberg) in Richtung Marktstr., zwischen Haupstr. und Markstr. Baustelle, Fahrtrichtung gesperrt (bis 17.11.06)',
          'from' => 1162238001,
          'data' => 'userdel	q4::inwork; 14881,10864 14897,10935 14988,11130
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1166828400,
+         'text' => 'B 005 Berliner Str. OD Petershagen, zw. Betonstr. und Ortsausgang Kanal- und Straßenbauarbeiten Vollsperrung 16.08.2006-22.12.2006 ',
+         'from' => 1155592800,
+         'data' => 'userdel	q4::inwork 74246,584 73775,831 73443,1021
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1162767600,
+         'text' => 'B 109 Prenzlauer Allee OD Templin, ab A.-Bebel-Str. bis OA Einbau Deckschicht Vollsperrung 03.11.2006-05.11.2006 ',
+         'from' => 1162422000,
+         'data' => 'userdel	q4::inwork 16463,79756 16850,79712 17455,80199
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1162681200,
+         'text' => 'L 033 Altlandsberger Chaussee zw. Abzw. Strausberg Stadt und Kno. Garzauer Chausse Deckenerneuerung Richtungsverkehr 27.09.2006-04.11.2006 ',
+         'from' => 1159221600,
+         'data' => 'userdel	q4::inwork 41193,17512 40712,16743
 ',
          'type' => 'handicap'
        }

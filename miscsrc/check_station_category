@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_station_category,v 1.3 2005/06/28 21:30:29 eserte Exp $
+# $Id: check_station_category,v 1.4 2006/11/01 22:58:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -25,10 +25,10 @@ use Getopt::Long;
 
 sub usage {
     die <<EOF;
-$0 [-special rbahnhof] points_file streets_file
+$0 [-special noinwork] points_file streets_file
 
--special rbahnhof: handle the section "station only" for stations
-without lines (yet)
+-special noinwork: handle the section "station only" for stations
+without lines (yet), usually in work
 EOF
 }
 
@@ -44,7 +44,7 @@ sub doit {
     my $p = Strassen->new($points_file, UseLocalDirectives => 1);
     my $s = Strassen->new($streets_file, UseLocalDirectives => 1);
 
-    if ($opt{special} && $opt{special} eq 'rbahnhof') {
+    if ($opt{special} && $opt{special} eq 'noinwork') {
 	my $new_p = $p->grepstreets(sub {
 					my $dir = $p->get_directive_for_iterator("grepstreets");
 					if (defined $dir->{section} && grep { $_ eq 'station only' } @{ $dir->{section} }) {

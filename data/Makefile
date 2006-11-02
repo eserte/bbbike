@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.118 2006/10/01 18:39:22 eserte Exp $
+# $Id: Makefile,v 2.119 2006/11/01 22:58:27 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -907,11 +907,11 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s|2|3|BNP:\d+(:-?\d+)?)(:inwork)?$$'
 	@touch $@
 
 .check_ubahnhof:	ubahnhof ubahn
-	$(CHECK_STATION_CATEGORY) ubahnhof ubahn
+	$(CHECK_STATION_CATEGORY) -special noinwork ubahnhof-orig ubahn
 	@touch $@
 
 .check_sbahnhof:	sbahnhof sbahn
-	$(CHECK_STATION_CATEGORY) sbahnhof sbahn
+	$(CHECK_STATION_CATEGORY) -special noinwork sbahnhof-orig sbahn
 	@touch $@
 
 .for i in u s
@@ -929,7 +929,7 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s|2|3|BNP:\d+(:-?\d+)?)(:inwork)?$$'
 .endfor
 
 .check_rbahnhof:	rbahnhof rbahn
-	$(CHECK_STATION_CATEGORY) -special rbahnhof rbahnhof-orig rbahn
+	$(CHECK_STATION_CATEGORY) -special noinwork rbahnhof-orig rbahn
 	@touch $@
 
 .check_orte: orte orte2 orte_city

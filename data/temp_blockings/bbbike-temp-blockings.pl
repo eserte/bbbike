@@ -6513,4 +6513,28 @@ EOF
 userdel	q4::inwork; 14881,10864 14897,10935 14988,11130
 EOF
      },
+     { from  => 1155592800, # 2006-08-15 00:00
+       until => 1166828400, # 2006-12-23 00:00
+       text  => 'B 005 Berliner Str. OD Petershagen, zw. Betonstr. und Ortsausgang Kanal- und Straßenbauarbeiten Vollsperrung 16.08.2006-22.12.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 74246,584 73775,831 73443,1021
+EOF
+     },
+     { from  => 1162422000, # 2006-11-02 00:00
+       until => 1162767600, # 2006-11-06 00:00
+       text  => 'B 109 Prenzlauer Allee OD Templin, ab A.-Bebel-Str. bis OA Einbau Deckschicht Vollsperrung 03.11.2006-05.11.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 16463,79756 16850,79712 17455,80199
+EOF
+     },
+     { from  => 1159221600, # 2006-09-26 00:00
+       until => 1162681200, # 2006-11-05 00:00
+       text  => 'L 033 Altlandsberger Chaussee zw. Abzw. Strausberg Stadt und Kno. Garzauer Chausse Deckenerneuerung Richtungsverkehr 27.09.2006-04.11.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 41193,17512 40712,16743
+EOF
+     },
     );
