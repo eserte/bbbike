@@ -732,14 +732,7 @@ userdel	1::inwork 10781,13002 10706,13043
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1162508400,
-         'text' => 'L 020 R.-Luxemburg-Str. OD Velten, Bahnübergang Arbeiten am Gleiskörper Vollsperrung 21.10.2006-02.11.2006 ',
-         'from' => 1161295200,
-         'data' => 'userdel	2::inwork -5368,30480 -5496,30288
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1199227362,
@@ -1011,6 +1004,31 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'text' => 'Dunckerstr. (Prenzlauer Berg) in beiden Richtungen, Kreuzung Stargarder Str. Baustelle, Straße vollständig gesperrt (bis Anfang 2007)',
          'from' => 1162454215,
          'data' => 'userdel	q4::inwork 11603,15455 11638,15522
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1162767600,
+         'text' => 'L 745 Motzener Str. OD Gallun Deckenerneuerung Vollsperrung 04.11.2006-05.11.2006 ',
+         'from' => 1162508400,
+         'data' => 'userdel	q4::inwork 21970,-18337 22324,-18950
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1162594799,
+         'text' => 'Auguststr. zwischen der Joachimstr. und der Gipsstr. gesperrt. Dauer: 03.11.2006 in der Zeit von 06:00 Uhr bis 20:00 Uhr Grund: Kraneinsatz',
+         'from' => 1162443600,
+         'data' => 'userdel	2::inwork 10142,13556 10049,13528 10026,13521
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003984',
+         'until' => 1163804400,
+         'text' => 'Kolonnenstr. ( Schöneberg) in beiden Richtungen, in Höhe Kaiser-Wilhelm-Platz Baustelle, Straße vollständig gesperrt (bis 17.11.06)',
+         'from' => 1162538829,
+         'data' => 'userdel	q4::inwork 7360,8918 7320,8939 7275,8960
 ',
          'type' => 'handicap'
        }

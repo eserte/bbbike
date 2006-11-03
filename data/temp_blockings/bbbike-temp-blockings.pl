@@ -6554,4 +6554,21 @@ EOF
 userdel	q4::inwork 21970,-18337 22324,-18950
 EOF
      },
+     { from  => 1162443600, # 2006-11-02 06:00
+       until => 1162594799, # 2006-11-03 23:59
+       text  => 'Auguststr. zwischen der Joachimstr. und der Gipsstr. gesperrt. Dauer: 03.11.2006 in der Zeit von 06:00 Uhr bis 20:00 Uhr Grund: Kraneinsatz',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 10142,13556 10049,13528 10026,13521
+EOF
+     },
+     { from  => 1162538829, # 2006-11-03 08:27
+       until => 1163804400, # 2006-11-18 00:00
+       text  => 'Kolonnenstr. ( Schöneberg) in beiden Richtungen, in Höhe Kaiser-Wilhelm-Platz Baustelle, Straße vollständig gesperrt (bis 17.11.06)',
+       type  => 'handicap',
+       source_id => 'IM_003984',
+       data  => <<EOF,
+userdel	q4::inwork 7360,8918 7320,8939 7275,8960
+EOF
+     },
     );
