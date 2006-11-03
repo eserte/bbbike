@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.282 2006/11/02 20:54:44 eserte Exp $
+# $Id: bbbike,v 3.283 2006/11/03 07:47:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -181,6 +181,7 @@ use your qw($Karte::Standard::obj $Karte::Standard::init_scrollregion
 	    %Radwege::category_plural
 	    $FURadar::use_map $FURadar::progress
 	    $PLZ::VERBOSE $Devel::Trace::TRACE
+	    $Tk::Config::xlib
 	   );
 
 *transpose_ls          = \&transpose_ls_slow;
@@ -204,7 +205,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.282 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.283 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
