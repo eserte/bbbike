@@ -6595,4 +6595,20 @@ EOF
 userdel	2::inwork 33589,15778 32985,17127 32665,17841
 EOF
      },
+     { from  => 1162767600, # 2006-11-06 00:00
+       until => 1163026800, # 2006-11-09 00:00
+       text  => 'L 745 Motzener-, Mittenwalder Str. OD Gallun Deckschichteinbau Vollsperrung 07.11.2006-08.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 21812,-18037 21787,-17695
+EOF
+     },
+     { from  => 1162767600, # 2006-11-06 00:00
+       until => 1163804400, # 2006-11-18 00:00
+       text  => 'K 7237 Klein Kienitzer Str. OD Rangsdorf, Einmünd. zur B 96 Deckenerneuerung halbseitig gesperrt; Einbahnstraße 07.11.2006-17.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 14327,-11767 15962,-10958
+EOF
+     },
     );

@@ -257,14 +257,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        undef,
-       {
-         'until' => 1162821600,
-         'text' => 'Schulzendorfer Straße - Am Dachsbau (zwischen Ruppiner Chaussee und Blisenkrautstr.) in beiden Richtungen gesperrt, Baustelle bis 06.11.2006 15:00 Uhr ',
-         'from' => 1162325129,
-         'data' => 'userdel	2::inwork -862,22946 -1254,22853
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_002733',
@@ -826,14 +819,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1162594800,
-         'text' => 'L 281 Neureetz-Altranft zw. Croustillier und Brücke über Alte Oder Deckenerneuerung Vollsperrung 17.10.2006-03.11.2006 ',
-         'from' => 1160949600,
-         'data' => 'userdel	2::inwork 56925,41800 58564,43539
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_003833',
@@ -925,14 +911,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1162767600,
-         'text' => 'B 096 Strelitzer Str. OD Gransee, vom KVK in Ri Altlüdersdorf grundhafter Straßenbau Vollsperrung 21.08.2006-05.11.2006 ',
-         'from' => 1156024800,
-         'data' => 'userdel	q4::inwork -6382,67186 -7071,66471
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1163286000,
          'text' => 'B 096 zw. OA Gransee und Löwenberg Deckeneinbau Vollsperrung 01.11.2006-11.11.2006 ',
@@ -982,22 +961,8 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1162767600,
-         'text' => 'B 109 Prenzlauer Allee OD Templin, ab A.-Bebel-Str. bis OA Einbau Deckschicht Vollsperrung 03.11.2006-05.11.2006 ',
-         'from' => 1162422000,
-         'data' => 'userdel	q4::inwork 16463,79756 16850,79712 17455,80199
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1162681200,
-         'text' => 'L 033 Altlandsberger Chaussee zw. Abzw. Strausberg Stadt und Kno. Garzauer Chausse Deckenerneuerung Richtungsverkehr 27.09.2006-04.11.2006 ',
-         'from' => 1159221600,
-         'data' => 'userdel	q4::inwork 41193,17512 40712,16743
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_003972',
          'until' => 1167606000,
@@ -1007,22 +972,8 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1162767600,
-         'text' => 'L 745 Motzener Str. OD Gallun Deckenerneuerung Vollsperrung 04.11.2006-05.11.2006 ',
-         'from' => 1162508400,
-         'data' => 'userdel	q4::inwork 21970,-18337 22324,-18950
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1162594799,
-         'text' => 'Auguststr. zwischen der Joachimstr. und der Gipsstr. gesperrt. Dauer: 03.11.2006 in der Zeit von 06:00 Uhr bis 20:00 Uhr Grund: Kraneinsatz',
-         'from' => 1162443600,
-         'data' => 'userdel	2::inwork 10142,13556 10049,13528 10026,13521
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_003984',
          'until' => 1163804400,
@@ -1031,6 +982,46 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'data' => 'userdel	q4::inwork 7360,8918 7320,8939 7275,8960
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1166223600,
+         'text' => 'K 6728 zw. Abzw. Raßmannsdorf und Görzig Straßenneubau Vollsperrung 06.11.2006-15.12.2006 ',
+         'from' => 1162681200,
+         'data' => 'userdel	2::inwork 65591,-17536 65909,-18312 65936,-18973 66290,-19612
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1163199600,
+         'text' => 'K 7234 Dabendor-Glienick Bahnübergang in der OL Dabendorf Gleisbauarbeiten Vollsperrung 06.11.2006-10.11.2006 ',
+         'from' => 1162681200,
+         'data' => 'userdel	2::inwork 14153,-17829 13282,-18250 13048,-18384
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1164927600,
+         'text' => 'L 030 zw. OA Fredersdorf und Ortsumgehung Altlandsberg Deckenerneuerung Vollsperrung 06.11.2006-30.11.2006 ',
+         'from' => 1162681200,
+         'data' => 'userdel	2::inwork 33589,15778 32985,17127 32665,17841
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1163026800,
+         'text' => 'L 745 Motzener-, Mittenwalder Str. OD Gallun Deckschichteinbau Vollsperrung 07.11.2006-08.11.2006 ',
+         'from' => 1162767600,
+         'data' => 'userdel	2::inwork 21812,-18037 21787,-17695
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1163804400,
+         'text' => 'K 7237 Klein Kienitzer Str. OD Rangsdorf, Einmünd. zur B 96 Deckenerneuerung halbseitig gesperrt; Einbahnstraße 07.11.2006-17.11.2006 ',
+         'from' => 1162767600,
+         'data' => 'userdel	1::inwork 14327,-11767 15962,-10958
+',
+         'type' => 'gesperrt'
        }
      
 );

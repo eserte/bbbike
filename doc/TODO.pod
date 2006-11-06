@@ -2639,6 +2639,13 @@ Viktoria-Park/Kreuzbergstr./Katzbachstr.
 
 =over
 
+=item * (H1)
+
+Import/Export von und zu .osm (openstreetmap-XML-Format).
+L<http://wiki.openstreetmap.org/index.php/De:Map_Features> ist
+übrigens interessant, um eine Vereinheitlichung der Attributnamen zu
+bekommen.
+
 =item * (H2)
 
 Daten direkt von einer Postgres/Mysql-Datenbank auslesen und
