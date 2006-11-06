@@ -6571,4 +6571,28 @@ EOF
 userdel	q4::inwork 7360,8918 7320,8939 7275,8960
 EOF
      },
+     { from  => 1162681200, # 2006-11-05 00:00
+       until => 1166223600, # 2006-12-16 00:00
+       text  => 'K 6728 zw. Abzw. Raßmannsdorf und Görzig Straßenneubau Vollsperrung 06.11.2006-15.12.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 65591,-17536 65909,-18312 65936,-18973 66290,-19612
+EOF
+     },
+     { from  => 1162681200, # 2006-11-05 00:00
+       until => 1163199600, # 2006-11-11 00:00
+       text  => 'K 7234 Dabendor-Glienick Bahnübergang in der OL Dabendorf Gleisbauarbeiten Vollsperrung 06.11.2006-10.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 14153,-17829 13282,-18250 13048,-18384
+EOF
+     },
+     { from  => 1162681200, # 2006-11-05 00:00
+       until => 1164927600, # 2006-12-01 00:00
+       text  => 'L 030 zw. OA Fredersdorf und Ortsumgehung Altlandsberg Deckenerneuerung Vollsperrung 06.11.2006-30.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 33589,15778 32985,17127 32665,17841
+EOF
+     },
     );

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.283 2006/11/03 07:47:26 eserte Exp $
+# $Id: bbbike,v 3.283 2006/11/03 07:47:26 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -410,6 +410,10 @@ $map_mode = MM_SEARCH;
 $mark_color    = 'red'; # Farbe der Markierung in mark_street et al.
 $gps_waypoints = 50;
 
+### Fonts
+$standard_height = 12;
+set_sans_serif_font_family();
+
 define_item_attribs();
 
 generate_plot_functions();
@@ -487,9 +491,6 @@ use enum qw(:WIND_COLOR_ RED GREEN BLUE NAME);
 		 1 => [qw(154 205  50  YellowGreen)],
 		 2 => [qw(105 139 105  DarkSeaGreen4)],
 	       );
-
-### Fonts
-$standard_height = 12;
 
 ## DEBUG_BEGIN
 #BEGIN{mymstat("use vars für postscript...");}
@@ -5127,9 +5128,9 @@ sub define_item_attribs {
     for (qw(RA RB RC R0 RBau RG RP)) { $category_font_color{$_} = $category_font_color{"R"} }
     %category_font =
 	(
-	 'W'  => 'helvetica %d italic',
-	 'P'  => 'helvetica %d',
-	 'Ae' => 'helvetica %d',
+	 'W'  => "$sans_serif_font_family %d italic",
+	 'P'  => "$sans_serif_font_family %d",
+	 'Ae' => "$sans_serif_font_family %d",
 	);
     for (qw(Forest Forestabove Pabove Cemetery Orchard Green Sport Industrial)) { 
 	$category_font{$_} = $category_font{'P'};
@@ -18140,6 +18141,19 @@ sub size2pt {
     $size >= 0 ?  $size : int(0.5 - $size/($top_dpi/72));
 }
 
+# A part of set_fonts which has to be called very early
+sub set_sans_serif_font_family {
+    $has_xft = 0;
+    $sans_serif_font_family = "Helvetica";
+    eval {
+	require Tk::Config;
+	$has_xft = $Tk::Config::xlib =~ /-lXft\b/;
+	if ($has_xft) {
+	    $sans_serif_font_family = "sans-serif";
+	}
+    };
+}
+
 # Create the fontset for bbbike. Use $std_font as default normal font,
 # or, if not defined, use the system default (e.g. from the option
 # database). The fontset is stored to the global hash %font.
@@ -18174,16 +18188,6 @@ sub set_fonts {
 		$l->destroy;
 	    }
 	    $std_font;
-	};
-
-	$sans_serif_font_family = "Helvetica";
-	$has_xft = 0;
-	eval {
-	    require Tk::Config;
-	    $has_xft = $Tk::Config::xlib =~ /-lXft\b/;
-	    if ($has_xft) {
-		$sans_serif_font_family = "sans-serif";
-	    }
 	};
 
 	my $font_from_user = 0; # true, if from options or set interactively

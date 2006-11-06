@@ -2847,6 +2847,11 @@ install.pl: Falls Tk nicht installiert ist und PPM vorhanden ist, mit
 PPM nachinstallieren. Bei Bedarf eine Reihe weiterer Module
 nachinstallieren (siehe Bundle::BBBike).
 
+=item * (*M5)
+
+install.pl: Make it work for current GNOME/KDE versions. Windows
+support is not really necessary anymore, as we have the ISS installer.
+
 =item * (M1)
 
 FreeBSD-Port anpassen, so daﬂ install.pl verwendet wird. PLIST
