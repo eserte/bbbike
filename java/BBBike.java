@@ -1,4 +1,4 @@
-/* $Id: BBBike.java,v 1.6 2004/03/08 21:28:47 eserte Exp $ */
+/* $Id: BBBike.java,v 1.9 2006/11/09 22:01:27 eserte Exp $ */
 
 import java.util.Enumeration;
 import java.util.Hashtable;
@@ -11,6 +11,12 @@ import java.awt.Graphics;
 import java.awt.BorderLayout;
 import java.awt.Panel;
 import java.awt.Scrollbar;
+
+import java.awt.GraphicsEnvironment;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsConfiguration;
+import java.awt.Rectangle;
+
 import java.io.*;
 //import MyCanvas;
 //import Strassen;
@@ -37,15 +43,22 @@ class BBBike {
   }
 
   private void init() {
-    top = new Frame("BBBike $Revision: 1.6 $");
+/*
+    GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+    GraphicsDevice gd = ge.getDefaultScreenDevice();
+    GraphicsConfiguration gc = gd.getDefaultConfiguration();
+    Rectangle bounds = gc.getBounds();
+*/
+
+    top = new Frame("BBBike $Revision: 1.9 $");
     top.setLayout(new BorderLayout());
     c = new MyCanvas(this);
     try {
       plotstr();
     } catch (FileNotFoundException e) {
-      System.err.println("File not found, Exception caught: " + e);
+      System.err.println("In plotstr: File not found, Exception caught: " + e);
     } catch (Exception e) {
-      System.err.println("Exception caught: " + e);
+      System.err.println("In plotstr: Exception caught: " + e);
     }
 
     top.add("Center", c);
@@ -69,7 +82,10 @@ System.err.println("x/y=" + berlin_mitte_txy[0] + "/" + berlin_mitte_txy[1]);
     top.add("East", scrollV);
     top.add("South", scrollH);
 
-    top.resize(1000, 700);
+/*
+    top.setSize(bounds.width, bounds.height);
+*/
+    top.setSize(200,250);
     top.show();
   }
 
@@ -80,16 +96,18 @@ System.err.println("x/y=" + berlin_mitte_txy[0] + "/" + berlin_mitte_txy[1]);
 	return;
 	*/
 
-    Strassen str = new Strassen();
+    if (verbose) System.err.println("Trying to load strassen...");
+    Strassen str = new Strassen(new File("strassen"), verbose);
+    if (verbose) System.err.println("... OK");
     str.init();
     //int debugi = 0;
+    if (verbose) System.err.println("Starting plotting streets...");
     while(true) {
-      //if (debugi++>100) break;
+      //if(debugi++>100)break;
       Strasse ret = str.next();
       Vector kreuzungen = ret.Kreuzungen;
       if (kreuzungen.isEmpty()) break;
-      if (verbose)
-	System.err.println(ret.Name);
+      if (verbose) System.err.println(ret.Name);
       Vector transformed = new Vector();
       for(int i = 0; i < kreuzungen.size(); i++) {
         int[] koord = str.to_koord1((String)kreuzungen.elementAt(i));
@@ -109,16 +127,14 @@ System.err.println("x/y=" + berlin_mitte_txy[0] + "/" + berlin_mitte_txy[1]);
       prop.put(CanvasProp.WIDTH, new Integer(5));
       c.createLine(transformed, prop);
     }
-    if (verbose)
-      System.err.println();
+    if (verbose) System.err.println();
 
-    if (verbose)
-      System.err.println("Making net...");
+    if (verbose) System.err.println("Making net...");
     str_net = new StrassenNetz(str);
+    str_net.verbose = verbose;
     str_net.make_net();
     crossings = new Kreuzungen(str.all_crossings_hash());
-    if (verbose)
-      System.err.println();
+    if (verbose) System.err.println("Finished plotstr");
 
   }
 
@@ -160,6 +176,7 @@ System.err.println("x/y=" + berlin_mitte_txy[0] + "/" + berlin_mitte_txy[1]);
     Enumeration e_route = route.elements();
     if (!e_route.hasMoreElements())
       return;
+    deleteOldRoute();
     String first = (String)e_route.nextElement();
     int comma_index = first.indexOf(',');
     int first_x = Integer.parseInt(first.substring(0, comma_index));
@@ -179,11 +196,16 @@ System.err.println("x/y=" + berlin_mitte_txy[0] + "/" + berlin_mitte_txy[1]);
       CanvasProp prop = new CanvasProp();
       prop.put(CanvasProp.FILL, Color.red);
       prop.put(CanvasProp.WIDTH, new Integer(7));
+      prop.put(CanvasProp.TAG, "route");
       c.createLine(lineCoords, prop);
 
       cxy1 = cxy2;
     }
     c.repaint();
+  }
+
+  public void deleteOldRoute() {
+    c.deleteByTag("route");
   }
 }
 
@@ -194,6 +216,7 @@ class MyScrollbar extends Scrollbar {
 		     int a, int b, int c, int d, int e) {
     super(a,b,c,d,e);
     parent = p;
+    setUnitIncrement(30);
   }
 
   public boolean handleEvent(Event evt) {

@@ -1,4 +1,4 @@
-/* $Id: TestBBBike.java,v 1.2 2004/03/04 23:21:28 eserte Exp $ */
+/* $Id: TestBBBike.java,v 1.3 2006/11/09 20:18:27 eserte Exp $ */
 
 import java.util.Enumeration;
 import java.util.Hashtable;
@@ -25,3 +25,6 @@ class TestBBBike {
   }
 }
 
+// Local variables:
+// c-basic-offset: 2
+// End:

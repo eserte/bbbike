@@ -6,3 +6,6 @@ class Strasse {
   public Vector Kreuzungen;
 }
 
+// Local variables:
+// c-basic-offset: 2
+// End:

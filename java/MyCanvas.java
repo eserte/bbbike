@@ -52,6 +52,9 @@ class CanvasLine {
       case CanvasProp.WIDTH:
 	// NYI
 	break;
+      case CanvasProp.TAG:
+	// nothing to do here
+	break;
       default:
 	throw new Error("Unknown property key " + key);
       }
@@ -102,8 +105,14 @@ class MyCanvas extends Canvas
     lines.addElement(l);
   }
 
-  public void delete(String tag) {
-    
+  public void deleteByTag(String tag) {
+    for(int index = lines.size()-1; index >= 0; index--) {
+      CanvasLine l = (CanvasLine)lines.get(index);
+      String thisTag = (String)l.prop.get(CanvasProp.TAG);
+      if (thisTag != null && thisTag.equals(tag)) {
+	lines.removeElementAt(index);
+      }
+    }
   }
 
   public void paint(Graphics g) {
@@ -117,8 +126,13 @@ class MyCanvas extends Canvas
 
   public void mouseClicked(MouseEvent event) {
     try {
-      System.err.println("pressed x="+event.getX()+"/y="+event.getY());
-      app.mouseClicked(event.getX(), event.getY());
+      int eX = event.getX();
+      int eY = event.getY();
+      int tX = eX - (500-hpos);
+      int tY = eY - (350-vpos);
+      System.err.println("pressed x="+eX+"/y="+eY +
+			 " translated to x="+tX+"/y="+tY);
+      app.mouseClicked(tX, tY);
     } catch (Exception e) {
       System.err.println("Caught " + e.toString());
     }

@@ -1,6 +1,7 @@
 // (c) 1998 Slaven Rezic
 
 import java.lang.Integer;
+import java.lang.StringBuffer;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.StringTokenizer;
@@ -9,25 +10,60 @@ import java.io.File;
 import java.io.RandomAccessFile;
 import java.io.EOFException;
 import java.io.FileNotFoundException;
-//import GeneralStrassen;
-//import java.lang.System;
-//import java.util.Properties;
+import java.io.InputStream;
 
 class Strassen implements GeneralStrassen {
   public final Vector datadirs = new Vector();
+
+  boolean verbose = false;
 
   Vector Data = new Vector();
   int Pos = 0;
   // Koord
 
   void initObject (File filename) throws FileNotFoundException {
+    // Try first to read from jar
+    if (verbose) System.err.println("Try first to read from jar...");
+    InputStream is = Strassen.class.getClassLoader().getResourceAsStream("data/" + filename.getName());
+    if (is != null) {
+      boolean success = false;
+      try {
+	byte[] buf = new byte[1];
+	StringBuffer sb = new StringBuffer();
+	while (true) {
+	  int len = is.read(buf);
+	  if (len == -1) break;
+	  if (buf[0] == 10) {
+	    String s = sb.toString();
+	    if (verbose) {
+	      System.err.println(s);
+	    }
+	    if (!s.startsWith("#")) { // not a comment
+	      Data.addElement(s);
+	    }
+	    sb = new StringBuffer();
+	  } else {
+	    sb.append((char)buf[0]);
+	  }
+	}
+	success = true;
+      } catch (Exception e) {
+	System.err.println(e);
+      }
+      if (success) return;
+    }
+
+    // Fallback to filesystem
+    if (verbose) System.err.println("Fallback to filesystem...");
+
     // XXX eigentlich static
-    datadirs.addElement(new File("/home/e/eserte/src/bbbike/data"));
+    //datadirs.addElement(new File("/home/e/eserte/src/bbbike/data"));
     datadirs.addElement(new File("../data"));
     datadirs.addElement(new File("./data"));
-    datadirs.addElement(new File("/usr/local/BBBike/data"));
+    //datadirs.addElement(new File("/usr/local/BBBike/data"));
 
     Vector filenames = new Vector();
+
     for (Enumeration e = datadirs.elements() ; e.hasMoreElements() ;) {
       filenames.addElement(new File(e.nextElement().toString(),
 				    filename.toString()));
@@ -42,6 +78,7 @@ class Strassen implements GeneralStrassen {
 	  while (true) {
 	    String s = B.readLine();
 	    if (s == null) break;
+	    if (s.startsWith("#")) continue; // comments and directives
 	    Data.addElement(s);
 	  }
 	} catch (EOFException ex) {
@@ -53,6 +90,7 @@ class Strassen implements GeneralStrassen {
     }
 
     if (B == null) {
+      if (verbose) System.err.println("No file found.");
       throw new FileNotFoundException("Tried all datadirs");
     }
   }
@@ -61,8 +99,9 @@ class Strassen implements GeneralStrassen {
     initObject(filename);
   }
 
-  public Strassen () throws FileNotFoundException {
-    initObject(new File("strassen"));
+  public Strassen (File filename, boolean aVerbose) throws FileNotFoundException {
+    verbose = aVerbose;
+    initObject(filename);
   }
 
   public Strasse get (int pos) {
@@ -144,6 +183,7 @@ class Strassen implements GeneralStrassen {
   }
 
   public Hashtable all_crossings_hash() {
+    if (verbose) System.err.println("Creating hash for all crossings...");
     Hashtable crossings = new Hashtable();
     init();
     while(true) {
@@ -168,6 +208,7 @@ class Strassen implements GeneralStrassen {
   }
 
   public Vector all_crossings () {
+    if (verbose) System.err.println("Creating all crossings...");
     Hashtable crossings = new Hashtable();
     Hashtable crossing_name = new Hashtable();
     init();

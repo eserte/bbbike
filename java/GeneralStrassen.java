@@ -7,3 +7,7 @@ public interface GeneralStrassen {
   int[] to_koord1(String in);
   int pos();
 }
+
+// Local variables:
+// c-basic-offset: 2
+// End:

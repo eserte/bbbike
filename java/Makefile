@@ -1,13 +1,16 @@
 #
-# $Id: Makefile,v 1.7 2004/03/08 21:28:47 eserte Exp $
+# $Id: Makefile,v 1.10 2006/11/09 22:00:46 eserte Exp $
 #
 
-JAVAROOT?=/usr/lib/java
+#JAVAROOT?=/usr/lib/java
 
-DEBUG=	-g
+#DEBUG=	-g
 
-JAVAC=$(JAVAROOT)/bin/javac -deprecation $(DEBUG)
-JAVA=$(JAVAROOT)/bin/java
+#JAVAC=$(JAVAROOT)/bin/javac $(DEBUG)
+#JAVA=$(JAVAROOT)/bin/java
+
+JAVAC=javac $(DEBUG)
+JAVA=java
 
 all:	Strasse.class \
 	Strassen.class MultiStrassen.class GeneralStrassen.class \
@@ -52,3 +55,6 @@ test:	all
 
 clean:
 	rm *.class
+
+bbbike.jar:	all
+	jar cfm bbbike.jar Manifest.txt *.class -C .. data/strassen 
