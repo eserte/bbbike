@@ -936,14 +936,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1162853999,
-         'text' => 'Vollsperrung der Oberspreestraße zwischen Freystadter Weg und Ottomar-Geschke-Straße und Spindlersfelder Straße vom Sonnabend, den 04.11.2006, 5:00 Uhr bis Montag, den 06.11.2006, 5:00 Uhr ',
-         'from' => 1162508400,
-         'data' => 'userdel	2::inwork 20949,4775 21077,4736 21332,4655
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_003935',
          'until' => 1163804400,
@@ -976,9 +969,9 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
        undef,
        {
          'source_id' => 'IM_003984',
-         'until' => 1163804400,
-         'text' => 'Kolonnenstr. ( Schöneberg) in beiden Richtungen, in Höhe Kaiser-Wilhelm-Platz Baustelle, Straße vollständig gesperrt (bis 17.11.06)',
-         'from' => 1162538829,
+         'until' => 1163199600,
+         'text' => 'Kolonnenstr. ( Schöneberg) in beiden Richtungen, in Höhe Kaiser-Wilhelm-Platz Baustelle, Straße vollständig gesperrt (bis 10.11.06)',
+         'from' => 1163100276,
          'data' => 'userdel	q4::inwork 7360,8918 7320,8939 7275,8960
 ',
          'type' => 'handicap'
@@ -1007,19 +1000,29 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1163026800,
-         'text' => 'L 745 Motzener-, Mittenwalder Str. OD Gallun Deckschichteinbau Vollsperrung 07.11.2006-08.11.2006 ',
-         'from' => 1162767600,
-         'data' => 'userdel	2::inwork 21812,-18037 21787,-17695
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1163804400,
          'text' => 'K 7237 Klein Kienitzer Str. OD Rangsdorf, Einmünd. zur B 96 Deckenerneuerung halbseitig gesperrt; Einbahnstraße 07.11.2006-17.11.2006 ',
          'from' => 1162767600,
          'data' => 'userdel	1::inwork 14327,-11767 15962,-10958
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003947',
+         'until' => 1166223599,
+         'text' => 'Oberbaumbrücke Richtung Falckensteinstr. Baustelle, unbequemes Passieren (bis Mitte Dezember 2006)',
+         'from' => 1163194202,
+         'data' => 'userdel	3::inwork 13206,10651 13178,10623 13135,10551
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1163545200,
+         'text' => 'L 745 Mittenwalder Str. OD Gallun, zw. Storkower Str. u. Galluner Chaussee Deckenerneuerung Vollsperrung 13.11.2006-14.11.2006 ',
+         'from' => 1163286000,
+         'data' => 'userdel	2::inwork 21886,-17280 21787,-17695
 ',
          'type' => 'gesperrt'
        }

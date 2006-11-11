@@ -6611,4 +6611,21 @@ EOF
 userdel	1::inwork 14327,-11767 15962,-10958
 EOF
      },
+     { from  => 1163194202, # 2006-11-10 22:30
+       until => 1166223599, # 2006-12-15 23:59
+       text  => 'Oberbaumbrücke Richtung Falckensteinstr. Baustelle, unbequemes Passieren (bis Mitte Dezember 2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_003947',
+       data  => <<EOF,
+userdel	3::inwork 13206,10651 13178,10623 13135,10551
+EOF
+     },
+     { from  => 1163286000, # 2006-11-12 00:00
+       until => 1163545200, # 2006-11-15 00:00
+       text  => 'L 745 Mittenwalder Str. OD Gallun, zw. Storkower Str. u. Galluner Chaussee Deckenerneuerung Vollsperrung 13.11.2006-14.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 21886,-17280 21787,-17695
+EOF
+     },
     );
