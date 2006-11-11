@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRuler.pm,v 1.16 2005/11/20 19:49:28 eserte Exp $
+# $Id: BBBikeRuler.pm,v 1.17 2006/11/11 14:34:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -166,6 +166,7 @@ sub add_button {
 	     ],
 	     $b,
 	     __PACKAGE__."_menu",
+	     -title => "Ruler",
 	    );
 }
 

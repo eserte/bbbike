@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.12 2006/09/26 20:16:27 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.13 2006/11/11 15:10:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $geometry $viewer_menu);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(file_name_is_absolute);
 use File::Basename qw(dirname);
@@ -136,6 +136,7 @@ sub add_button {
 	     ],
 	     $b,
 	     __PACKAGE__."_menu",
+	     -title => "View Images",
 	    );
 
     $viewer_menu = $mmf->Subwidget(__PACKAGE__."_menu")->menu;

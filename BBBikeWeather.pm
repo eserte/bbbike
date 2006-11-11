@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeWeather.pm,v 1.8 2006/02/07 22:09:17 eserte Exp $
+# $Id: BBBikeWeather.pm,v 1.9 2006/11/11 14:32:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeWeather;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -228,13 +228,13 @@ sub BBBikeWeather::show_weather_db {
 	$top->Advertise(List => $lb);
 	eval {
 	    require Tk::ItemStyle;
-	    require Tk::resizeButton;
+	    require Tk::ResizeButton;
 	    my $headerstyle = $lb->ItemStyle('window', -padx => 0, -pady => 0);
 	    my @header;
 	    my $i = 0;
 	    my $scr_hlist = $lb->Subwidget('scrolled');#XXX
 	    for (qw(Datum Uhrzeit Temp Windri.)) {
-		$header[$i] = $lb->resizeButton
+		$header[$i] = $lb->ResizeButton
 		  (-text => $_,
 		   -relief => 'flat', -pady => 0,
 		   -widget => \$scr_hlist,

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeThunder.pm,v 1.11 2005/04/05 22:30:16 eserte Exp $
+# $Id: BBBikeThunder.pm,v 1.12 2006/11/11 14:33:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -34,6 +34,9 @@ use Hooks;
 use BBBikeUtil;
 
 sub register {
+    my $pkg = __PACKAGE__;
+
+    $BBBikePlugin::plugins{$pkg} = $pkg;
 
     if (!defined $button_image) {
 	$button_image = $main::top->Photo
@@ -72,6 +75,22 @@ EOF
     }
 
     add_button();
+}
+
+sub unregister {
+    my $pkg = __PACKAGE__;
+    return unless $BBBikePlugin::plugins{$pkg};
+    if ($main::map_mode eq $pkg) {
+	deactivate();
+    }
+
+    my $mf = $main::top->Subwidget("ModePluginFrame");
+    my $subw = $mf->Subwidget($pkg . '_on');
+    if (Tk::Exists($subw)) { $subw->destroy }
+
+    BBBikePlugin::remove_menu_button($pkg."_menu");
+
+    delete $BBBikePlugin::plugins{$pkg};
 }
 
 sub activate {
@@ -116,9 +135,17 @@ sub add_button {
     BBBikePlugin::place_menu_button
 	    ($mmf,
 	     [[Button => "~Reset", -command => sub { thunder_reset() }],
+	      "-",
+	      [Button => "Delete this menu",
+	       -command => sub {
+		   $mmf->after(100, sub {
+				   unregister();
+			       });
+	       }],
 	     ],
 	     $b,
 	     __PACKAGE__."_menu",
+	     -title => "Thunder",
 	    );
 }
 

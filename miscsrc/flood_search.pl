@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: flood_search.pl,v 1.12 2005/02/25 01:47:36 eserte Exp $
+# $Id: flood_search.pl,v 1.13 2006/11/11 14:34:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -48,10 +48,14 @@ sub unregister {
     if ($main::map_mode eq $pkg &&
 	$main::map_mode_deactivate) {
 	$main::map_mode_deactivate->();
-    }
+    
+}
     my $mf = $main::top->Subwidget("ModePluginFrame");
     my $subw = $mf->Subwidget($pkg . '_on');
     if (Tk::Exists($subw)) { $subw->destroy }
+
+    BBBikePlugin::remove_menu_button($pkg."_menu");
+
     delete $BBBikePlugin::plugins{$pkg};
 }
 
@@ -126,9 +130,17 @@ sub add_button {
 	      [Cascade => "Ein-/ausblenden",
 	       -menuitems => $ein_ausblenden_menuitems,
 	      ],
+	      "-",
+	      [Button => "Dieses Menü löschen",
+	       -command => sub {
+		   $mmf->after(100, sub {
+				   unregister();
+			       });
+	       }],
 	     ],
 	     $b,
 	     __PACKAGE__."_menu",
+	     -title => "Flood Search",
 	    );
 }
 

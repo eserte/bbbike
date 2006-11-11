@@ -9,7 +9,7 @@
 ## dnl * Tk version
 ## dnl
 ## dnl Warning: use no-fill in the next line!
-## replace #TESTPLATFORMS# "Solaris (Version 8 und 2.5), FreeBSD (Version 4.9, 4.6, 3.5), Linux (Suse 7.0 und 6.4, Debian 3.0, Red Hat 8.0), Windows (2000, NT 4.0, 98, 95), MacOSX 10.4"
+## replace #TESTPLATFORMS# "Solaris (Version 8 und 2.5), FreeBSD (Version 6.1, 4.9, 4.6, 3.5), Linux (Suse 7.0 und 6.4, Debian 3.0, Ubuntu, Red Hat 8.0), Windows (2000, NT 4.0, 98, 95), MacOSX 10.4"
 ## perlrequire BBBikeVar
 ## perlreplace #BBBIKEVAR_DISPLAY_DISTDIR#	$BBBike::DISPLAY_DISTDIR
 ## perlreplace #BBBIKEVAR_DISTFILE_SOURCE#	$BBBike::DISTFILE_SOURCE
@@ -23,7 +23,7 @@
 ## perlreplace #HTTPCVS#    $BBBike::BBBIKE_CVS_HTTP
 ## perlreplace #CVSREPO#    $BBBike::BBBIKE_CVS_ANON_REPOSITORY
 ## dnl
-## dnl $Id: README.spp,v 2.40 2006/05/15 19:41:57 eserte Exp $
+## dnl $Id: README.spp,v 2.40 2006/05/15 19:41:57 eserte Exp eserte $
 ## dnl strpp source of README
 ## dnl
 =head1 README
@@ -133,11 +133,11 @@ Next step is to extract the BBBike distribution:
 
 
 ## only DE
-Falls perl/Tk (eine möglichst neue Version, z.B. 800.025 order 804.027) nicht
+Falls perl/Tk (eine möglichst neue Version, z.B. 804.027 or 800.025) nicht
 installiert ist: in das Verzeichnis C<BBBike-#BBBIKEVER#>
 wechseln und als Superuser
 ## but DE
-If perl/Tk (the recommended version is 800.025 or 804.027) is not installed:
+If perl/Tk (the recommended version is 804.027 or 800.025) is not installed:
 change to the directory
 C<BBBike-#BBBIKEVER#> and type as super user:
 ## yes

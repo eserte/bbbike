@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeScribblePlugin.pm,v 1.6 2005/04/05 22:29:36 eserte Exp $
+# $Id: BBBikeScribblePlugin.pm,v 1.7 2006/11/11 14:34:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -50,6 +50,9 @@ sub unregister {
     my $mf = $main::top->Subwidget("ModePluginFrame");
     my $subw = $mf->Subwidget($pkg . '_on');
     if (Tk::Exists($subw)) { $subw->destroy }
+
+    BBBikePlugin::remove_menu_button($pkg."_menu");
+
     delete $BBBikePlugin::plugins{$pkg};
 }
 
@@ -100,9 +103,17 @@ sub add_button {
 	       -command => \&Tk::Babybike::set_show_scribble_labels],
 	      [Button => "~Load Scribble", -command => \&Tk::Babybike::load_scribble],
 	      [Button => "~Save Scribble", -command => \&Tk::Babybike::save_scribble],
+	      "-",
+	      [Button => "Delete this menu",
+	       -command => sub {
+		   $mmf->after(100, sub {
+				   unregister();
+			       });
+	       }],
 	     ],
 	     $b,
 	     __PACKAGE__."_menu",
+	     -title => "Scribble",
 	    );
 
 }

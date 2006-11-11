@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePlugin.pm,v 1.12 2006/09/06 20:59:51 eserte Exp $
+# $Id: BBBikePlugin.pm,v 1.13 2006/11/11 14:35:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2006 Slaven Rezic. All rights reserved.
@@ -160,7 +160,8 @@ sub _plugin_active_check {
 }
 
 sub place_menu_button {
-    my($frame, $menuitems, $refwidget, $advertised_name) = @_;
+    my($frame, $menuitems, $refwidget, $advertised_name, %args) = @_;
+    my $title = delete $args{-title};
     $refwidget->idletasks;    # XXX idletasks needed?
     my($x,$width) = ($refwidget->x, $refwidget->width);
     # If $refwidget is not yet mapped:
@@ -168,7 +169,9 @@ sub place_menu_button {
     my $old_w = $frame->Subwidget($advertised_name);
     undef $old_w if !Tk::Exists($old_w);
     my $menubutton = $frame->Menubutton;
-    my $menu = $menubutton->Menu(-menuitems => $menuitems);
+    my $menu = $menubutton->Menu(-menuitems => $menuitems,
+				 (defined $title ? (-title => $title) : ()),
+				);
     main::menuarrow_unmanaged($menubutton, $menu);
     if ($old_w) {
 	$old_w->destroy;

@@ -4,7 +4,7 @@
 # -*- perl -*-
 
 #
-# $Id: LogTracker.pm,v 1.21 2006/05/21 19:50:57 eserte Exp $
+# $Id: LogTracker.pm,v 1.22 2006/11/11 14:34:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -33,7 +33,7 @@ use vars qw($VERSION $lastcoords
             $remoteuser $remotehost $logfile $ssh_cmd $tracking $tail_pid $bbbike_cgi
 	    $last_parselog_call $session_dir_prefix
 	   );
-$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
 
 # XXX replace all %layer, %show etc. with @layer, @show...
 use constant ROUTES => 0;
@@ -223,6 +223,7 @@ sub add_button {
              ],
              $b,
 	     __PACKAGE__."_menu",
+	     -title => "Log Tracker",
             );
 }
 

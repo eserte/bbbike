@@ -41,7 +41,7 @@ Next step is to extract the BBBike distribution:
 
 	zcat BBBike-3.15.tar.gz | tar xfv -
 
-If perl/Tk (the recommended version is 800.025 or 804.027) is not installed:
+If perl/Tk (the recommended version is 804.027 or 800.025) is not installed:
 change to the directory
 C<BBBike-3.15> and type as super user:
 
@@ -240,7 +240,7 @@ this can be done with
 
 BBBike is a memory and cpu hog. You need at least 16 MB RAM on i386
 platforms (Solaris needs at least 32 MB), but with 32/64 MB it will
-work better. Some versions of BBBike are tested with: Solaris (Version 8 und 2.5), FreeBSD (Version 4.9, 4.6, 3.5), Linux (Suse 7.0 und 6.4, Debian 3.0, Red Hat 8.0), Windows (2000, NT 4.0, 98, 95), MacOSX 10.4. The
+work better. Some versions of BBBike are tested with: Solaris (Version 8 und 2.5), FreeBSD (Version 6.1, 4.9, 4.6, 3.5), Linux (Suse 7.0 und 6.4, Debian 3.0, Ubuntu, Red Hat 8.0), Windows (2000, NT 4.0, 98, 95), MacOSX 10.4. The
 development machine runs with FreeBSD.
 
 =head2 WWW version

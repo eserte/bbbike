@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.31 2006/10/02 20:50:36 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.32 2006/11/11 14:34:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.31 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -228,6 +228,7 @@ sub add_button {
 	     ],
 	     $b,
 	     __PACKAGE__."_menu",
+	     -title => "SRT Shortcuts",
 	    );
     my $menu = $mmf->Subwidget(__PACKAGE__ . "_menu_menu");
     if ($main::devel_host) {

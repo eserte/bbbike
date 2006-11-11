@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.115 2006/10/28 00:34:31 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.116 2006/11/11 14:32:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -590,7 +590,7 @@ sub ampel_display {
 	  )->pack(-expand => 1, -fill => 'both');
 	eval {
 	    require Tk::ItemStyle;
-	    require Tk::resizeButton;
+	    require Tk::ResizeButton;
 	    require BBBikeTkUtil;
 	    my $headerstyle = $ampel_hlist->ItemStyle('window', -padx => 0,
 						      -pady => 0);
@@ -600,7 +600,7 @@ sub ampel_display {
 	    my $scr2_hlist = $ampel2_hlist->Subwidget('scrolled');#XXX
 	    for (@header_list) {
 		my $ii = $i;
-		$header[$i] = $ampel_hlist->resizeButton
+		$header[$i] = $ampel_hlist->ResizeButton
 		  (-text => $_,
 		   -relief => 'flat', -pady => 0,
 		   -widget => \$scr_hlist,
@@ -608,7 +608,7 @@ sub ampel_display {
 		   -column => $i,
 		   -padx => 0, -pady => 0,
 		  );
-		$header2[$i] = $ampel2_hlist->resizeButton
+		$header2[$i] = $ampel2_hlist->ResizeButton
 		  (-text => $_,
 		   -relief => 'flat', -pady => 0,
 		   -widget => \$scr2_hlist,

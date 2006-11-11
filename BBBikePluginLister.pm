@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePluginLister.pm,v 1.4 2006/10/05 23:24:02 eserte Exp $
+# $Id: BBBikePluginLister.pm,v 1.5 2006/11/11 14:32:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikePluginLister;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 require BBBikePlugin;
 
@@ -68,7 +68,7 @@ sub plugin_lister {
 
     if (eval {
 	local $SIG{__DIE__};
-	require Tk::resizeButton;
+	require Tk::ResizeButton;
 	require BBBikeTkUtil;
 	1;
     }) {
@@ -77,7 +77,7 @@ sub plugin_lister {
 	my $i = 0;
 	for my $title (qw(Laden Name Zusammenfassung Dateipfad)) {
 	    my $ii = $i;
-	    my $header = $hl->resizeButton(-text => $title,
+	    my $header = $hl->ResizeButton(-text => $title,
 					   -relief => "flat",
 					   -padx => 0, -pady => 0,
 					   -widget => \$real_hl,

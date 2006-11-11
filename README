@@ -41,7 +41,7 @@ Danach kann BBBike ausgepackt werden:
 
 	zcat BBBike-3.15.tar.gz | tar xfv -
 
-Falls perl/Tk (eine möglichst neue Version, z.B. 800.025 order 804.027) nicht
+Falls perl/Tk (eine möglichst neue Version, z.B. 804.027 or 800.025) nicht
 installiert ist: in das Verzeichnis C<BBBike-3.15>
 wechseln und als Superuser
 
@@ -238,7 +238,7 @@ BBBike-Icon ebenfalls im Startmenü.
 BBBike ist sehr speicher- und CPU-intensiv. Mindestens 16 MB RAM sind
 auf i386-Plattformen notwendig (bei Solaris mindestens 32 MB), besser
 das doppelte davon. Einige Versionen von BBBike wurden unter folgenden
-Plattformen getestet: Solaris (Version 8 und 2.5), FreeBSD (Version 4.9, 4.6, 3.5), Linux (Suse 7.0 und 6.4, Debian 3.0, Red Hat 8.0), Windows (2000, NT 4.0, 98, 95), MacOSX 10.4. Die
+Plattformen getestet: Solaris (Version 8 und 2.5), FreeBSD (Version 6.1, 4.9, 4.6, 3.5), Linux (Suse 7.0 und 6.4, Debian 3.0, Ubuntu, Red Hat 8.0), Windows (2000, NT 4.0, 98, 95), MacOSX 10.4. Die
 Entwicklungsarbeit wird auf einem FreeBSD-Rechner vorgenommen.
 
 =head2 WWW-Version
