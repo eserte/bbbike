@@ -430,15 +430,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_81874_COPY_4',
-         'until' => 1167605999,
-         'text' => 'Josef-Orlopp-Str. (Lichtenberg) Richtung Vulkanstr. zwischen Siegfriedstr. und Vulkanstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2006)',
-         'from' => 1154038125,
-         'data' => 'userdel	1::inwork 16863,13138 15912,13153
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -903,23 +895,9 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1163199600,
-         'text' => 'L 033 Odervorstadt Bahnübergang in der OD Wriezen Fahrbahninstandsetzung Vollsperrung 13.10.2006-10.11.2006 ',
-         'from' => 1160604000,
-         'data' => 'userdel	2::inwork 60086,36267 59990,36267 59876,36115
-',
-         'type' => 'gesperrt'
-       },
        undef,
-       {
-         'until' => 1163286000,
-         'text' => 'B 096 zw. OA Gransee und Löwenberg Deckeneinbau Vollsperrung 01.11.2006-11.11.2006 ',
-         'from' => 1162249200,
-         'data' => 'userdel	2::inwork -7974,62020 -7906,61543 -7781,60550
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1164841200,
          'text' => 'B 101 Haag OD Luckenwalde, Kno. Beelitzer Str. Straßenausbau Vollsperrung 01.11.2006-29.11.2006 ',
@@ -967,15 +945,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_003984',
-         'until' => 1163199600,
-         'text' => 'Kolonnenstr. ( Schöneberg) in beiden Richtungen, in Höhe Kaiser-Wilhelm-Platz Baustelle, Straße vollständig gesperrt (bis 10.11.06)',
-         'from' => 1163100276,
-         'data' => 'userdel	q4::inwork 7360,8918 7320,8939 7275,8960
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1166223600,
          'text' => 'K 6728 zw. Abzw. Raßmannsdorf und Görzig Straßenneubau Vollsperrung 06.11.2006-15.12.2006 ',
@@ -984,18 +954,11 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'until' => 1163199600,
-         'text' => 'K 7234 Dabendor-Glienick Bahnübergang in der OL Dabendorf Gleisbauarbeiten Vollsperrung 06.11.2006-10.11.2006 ',
-         'from' => 1162681200,
-         'data' => 'userdel	2::inwork 14153,-17829 13282,-18250 13048,-18384
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1164927600,
-         'text' => 'L 030 zw. OA Fredersdorf und Ortsumgehung Altlandsberg Deckenerneuerung Vollsperrung 06.11.2006-30.11.2006 ',
-         'from' => 1162681200,
+         'until' => 1166828400,
+         'text' => 'L 030 zw. Ortsumgehung Altlandsberg und OE Altlandsberg Deckenerneuerung Vollsperrung 13.11.2006-22.12.2006 ',
+         'from' => 1163286000,
          'data' => 'userdel	2::inwork 33589,15778 32985,17127 32665,17841
 ',
          'type' => 'gesperrt'
@@ -1023,6 +986,23 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'text' => 'L 745 Mittenwalder Str. OD Gallun, zw. Storkower Str. u. Galluner Chaussee Deckenerneuerung Vollsperrung 13.11.2006-14.11.2006 ',
          'from' => 1163286000,
          'data' => 'userdel	2::inwork 21886,-17280 21787,-17695
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_004066',
+         'until' => 1163804400,
+         'text' => 'Schöneicher Str./Schöneicher Landstr. (Köpenick) in beiden Richtungen, zwischen Dahlwitzer Landstr. und Friedrichshagener Str. Straße vollständig gesperrt (bis 17.11.06)',
+         'from' => 1163446417,
+         'data' => 'userdel	2::inwork 25585,6050 25776,6054 26221,6229 28794,7219 29168,7350
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1163545200,
+         'text' => 'L 086 Groß Kreutz-Schmergow Bahnübergang in der OL Groß Kreutz Instandsetzungsarbeiten Vollsperrung 13.11.2006-14.11.2006 ',
+         'from' => 1163286000,
+         'data' => 'userdel	2::inwork -31993,-726 -32125,-130
 ',
          'type' => 'gesperrt'
        }

@@ -2505,7 +2505,7 @@ EOF
        text  => 'L 793; (Alfred-Kühne-Str.); OD Ludwigsfelde, am OA in Ri. A 10 Einbau Anschlussgleis Vollsperrung 24.08.2005-10.09.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 2996,-10338 1764,-12480
+userdel	2 2629,-10301 2580,-11069 2423,-11316 2001,-11983 1709,-12428
 EOF
      },
      { from  => 1161627703, # 2006-10-23 20:21
@@ -5227,7 +5227,7 @@ userdel	2::inwork 30743,99403 30504,99595
 EOF
      },
      { from  => 1154038125, # 2006-07-28 00:08
-       until => 1167605999, # 2006-12-31 23:59
+       until => 1163446597, # 1167605999 2006-12-31 23:59
        text  => 'Josef-Orlopp-Str. (Lichtenberg) Richtung Vulkanstr. zwischen Siegfriedstr. und Vulkanstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2006)',
        type  => 'gesperrt',
        source_id => 'INKO_81874_COPY_4',
@@ -6587,9 +6587,9 @@ EOF
 userdel	2::inwork 14153,-17829 13282,-18250 13048,-18384
 EOF
      },
-     { from  => 1162681200, # 2006-11-05 00:00
-       until => 1164927600, # 2006-12-01 00:00
-       text  => 'L 030 zw. OA Fredersdorf und Ortsumgehung Altlandsberg Deckenerneuerung Vollsperrung 06.11.2006-30.11.2006 ',
+     { from  => 1163286000, # 2006-11-12 00:00
+       until => 1166828400, # 2006-12-23 00:00
+       text  => 'L 030 zw. Ortsumgehung Altlandsberg und OE Altlandsberg Deckenerneuerung Vollsperrung 13.11.2006-22.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 33589,15778 32985,17127 32665,17841
@@ -6626,6 +6626,23 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 21886,-17280 21787,-17695
+EOF
+     },
+     { from  => 1163446417, # 2006-11-13 20:33
+       until => 1163804400, # 2006-11-18 00:00
+       text  => 'Schöneicher Str./Schöneicher Landstr. (Köpenick) in beiden Richtungen, zwischen Dahlwitzer Landstr. und Friedrichshagener Str. Straße vollständig gesperrt (bis 17.11.06)',
+       type  => 'gesperrt',
+       source_id => 'IM_004066',
+       data  => <<EOF,
+userdel	2::inwork 25585,6050 25776,6054 26221,6229 28794,7219 29168,7350
+EOF
+     },
+     { from  => 1163286000, # 2006-11-12 00:00
+       until => 1163545200, # 2006-11-15 00:00
+       text  => 'L 086 Groß Kreutz-Schmergow Bahnübergang in der OL Groß Kreutz Instandsetzungsarbeiten Vollsperrung 13.11.2006-14.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -31993,-726 -32125,-130
 EOF
      },
     );
