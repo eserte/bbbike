@@ -5226,11 +5226,11 @@ EOF
 userdel	2::inwork 30743,99403 30504,99595
 EOF
      },
-     { from  => 1154038125, # 2006-07-28 00:08
-       until => 1163446597, # 1167605999 2006-12-31 23:59
-       text  => 'Josef-Orlopp-Str. (Lichtenberg) Richtung Vulkanstr. zwischen Siegfriedstr. und Vulkanstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2006)',
+     { from  => 1163442022, # 2006-11-13 19:20
+       until => 1167675622, # 2007-01-01 19:20
+       text  => 'Josef-Orlopp-Str. (Lichtenberg) in Richtung Siegfriedstr., zwischen Vulkanstr. und Siegfreidstr. Baustelle, Fahrtrichtung gesperrt (bis 2007)',
        type  => 'gesperrt',
-       source_id => 'INKO_81874_COPY_4',
+       source_id => 'IM_004084',
        data  => <<EOF,
 userdel	1::inwork 16863,13138 15912,13153
 EOF
@@ -5462,11 +5462,11 @@ EOF
 userdel	2::inwork -56556,49662 -56487,49318 -56325,49162
 EOF
      },
-     { from  => 1156976280, # 2006-08-31 00:18
-       until => 1159397745, # 1159653599 2006-09-30 23:59
-       text  => 'Rixdorfer Str. (Treptow ) in Richtung Südostallee, von Schnellerstr. bis Kiefholzstr., Baustelle, Fahrtrichtung gesperrt (bis Ende 09/2006)',
+     { from  => 1163530090, # 2006-11-14 19:48
+       until => 1164927599, # 2006-11-30 23:59
+       text  => 'Rixdorfer Str. (Treptow) Richtung Südostallee zwischen Schnellerstr. und Kiefholzstr. Baustelle, Fahrtrichtung gesperrt Richtung A113 Auffahrt Späthstr. über Schnellerstr. - Köpenicker Landstr. - Baumschulenstr. (bis Ende 11.2006)',
        type  => 'gesperrt',
-       source_id => 'IM_003422',
+       source_id => 'IM_004079',
        data  => <<EOF,
 userdel	1::inwork 17290,6228 17239,6182 17156,6235 16861,5935
 EOF

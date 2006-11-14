@@ -430,7 +430,15 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_004084',
+         'until' => 1167675622,
+         'text' => 'Josef-Orlopp-Str. (Lichtenberg) in Richtung Siegfriedstr., zwischen Vulkanstr. und Siegfreidstr. Baustelle, Fahrtrichtung gesperrt (bis 2007)',
+         'from' => 1163442022,
+         'data' => 'userdel	1::inwork 16863,13138 15912,13153
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -495,7 +503,15 @@ userdel	1::inwork 10781,13002 10706,13043
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'source_id' => 'IM_004079',
+         'until' => 1164927599,
+         'text' => 'Rixdorfer Str. (Treptow) Richtung Südostallee zwischen Schnellerstr. und Kiefholzstr. Baustelle, Fahrtrichtung gesperrt Richtung A113 Auffahrt Späthstr. über Schnellerstr. - Köpenicker Landstr. - Baumschulenstr. (bis Ende 11.2006)',
+         'from' => 1163530090,
+         'data' => 'userdel	1::inwork 17290,6228 17239,6182 17156,6235 16861,5935
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
