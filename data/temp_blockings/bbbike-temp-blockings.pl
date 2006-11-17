@@ -6645,4 +6645,56 @@ EOF
 userdel	2::inwork -31993,-726 -32125,-130
 EOF
      },
+     { from  => 1163480400, # 2006-11-14 06:00
+       until => 1167433200, # 2006-12-30 00:00
+       text  => 'Bereich Oberwallstr., Niederlagstr., Hinter der Katholischen Kirche, Am Schinkelplatz gesperrt Grund : Veranstaltung (Weihnachtsmarkt am Opernpalais) Dauer: 15.11.2006 06:00 Uhr bis 29.12.2006 24:00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 9890,12161 9875,12254 9801,12245 9782,12393
+userdel	2::temp 9875,12254 9853,12402
+userdel	2::temp 9801,12245 9812,12145
+userdel	2::temp 10008,12378 9926,12368 9959,12180
+userdel	2::temp 9918,12411 9926,12368
+EOF
+     },
+     { from  => 1163718000, # 2006-11-17 00:00
+       until => 1164150000, # 2006-11-22 00:00
+       text  => 'L 338 Rosa-Luxemburg-Damm/ Hauptstr. Bahnübergang in der OL Neuenhagen Erneu. Gleisanlagen Vollsperrung 18.11.2006-21.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 30179,13667 30842,13175 30975,12918
+EOF
+     },
+     { from  => undef, # 
+       until => 1167678155, # 2007-01-01 20:02
+       text  => 'Bauarbeiten am Maybachufer zwischen Pannierstr. und Weichselstr., Behinderungen möglich',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 12841,9368 12785,9443 12569,9547
+EOF
+     },
+     { from  => 1164322800, # 2006-11-24 00:00
+       until => 1164582000, # 2006-11-27 00:00
+       text  => 'L 023 Joachimsthal-Britz ab AS Chorin, westl. Seite in Ri. Joachimsthal Brückenbauarbeiten Vollsperrung 25.11.2006-26.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 35962,59463 35405,59832
+EOF
+     },
+     { from  => 1163631600, # 2006-11-16 00:00
+       until => 1163977200, # 2006-11-20 00:00
+       text  => 'L 281 Neureetz-Altranft bei Neureetz Deckeneinbau Vollsperrung 17.11.2006-19.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 59730,42362 58564,43539
+EOF
+     },
+     { from  => 1160949600, # 2006-10-16 00:00
+       until => 1163804400, # 2006-11-18 00:00
+       text  => 'L 281 Neureetz-Altranft zw. Croustillier und Brücke über Alte Oder Deckenerneuerung Vollsperrung 17.10.2006-17.11.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 56925,41800 58564,43539
+EOF
+     },
     );

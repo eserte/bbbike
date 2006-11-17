@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.33 2006/09/28 22:33:58 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.33 2006/09/28 22:33:58 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -1075,7 +1075,7 @@ sub BBBikeHeavy::perlmod_install_advice {
 		$command = "    apt-get install @deb\n";
 		$command .= M("oder")."\n";
 	    }
-	    $command .= "    perl -MCPAN -e \"install " . join(", ", @mod) . "\"\n";
+	    $command .= "    $^X -MCPAN -e \"install " . join(", ", @mod) . "\"\n";
 	}
 	status_message
 	    (
