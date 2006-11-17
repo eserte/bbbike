@@ -5,8 +5,6 @@
 # XXX hier br‰uchte man keine zus‰tzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
 #: last_checked: 2006-05-13
 Stadthausstr., Bahnbr¸cke: Bauarbeiten	q4::inwork 15628,10915 15657,10846
-#: last_checked: 2006-03-29
-M‰rkisches Ufer: Bauarbeiten, Einbahnstrasse zwischen Am Kˆllnischen Park und Br¸ckenstr.	q4::inwork; 11328,12040 11251,12071 11155,12071
 #XXX del? Linienstr.: Bauarbeiten, Einbahnstraﬂe Richtung Osten (bis 2006-10-31)	q4::inwork; 9903,13646 9752,13575 9607,13507 9281,13374
 # XXX last_checked: 2005-07-03
 # XXX del? mˆglicherweise fertig: Bendastr.: Bauarbeiten, danach vielleicht asphaltiert?	q4::inwork 12743,6645 12756,6578 12779,6478
@@ -137,7 +135,6 @@ Gendarmenmarkt: Fuﬂg‰nger	q1 9516,12010 9651,12020
 Am Volkspark: Parkweg	q1 5745,8194 5934,8220
 Karl-Marx-Str. - Marchlewskistr.: Gehweg	q2 12869,12425 12989,12314
 Lange Str. [vor Kaufhof]: Fuﬂg‰nger	q2 12401,11886 12522,11837
-Dircksenstr.: Gehweg	q2 11283,12278 11304,12234
 Gotenstr. - Kolonnenstr.: Fuﬂg‰nger	q2 7488,8768 7548,8879
 Nettelbeckplatz: Fuﬂg‰nger	q2 8035,15411 7989,15412 7891,15417
 Nettelbeckplatz: Fuﬂg‰nger	q2 7953,15362 7989,15412
@@ -543,7 +540,7 @@ Br¸der-Grimm-Gasse: Fuﬂg‰nger	q2 8351,11163 8343,11133
 (Anhalter Steg - Anhalter Bahnhof): Fuﬂg‰nger	q1 8773,10429 8776,10548 8854,10712 8912,10846 8938,10872
 (Linkstr. - Alte Potsdamer Str.): Fuﬂg‰nger, schmal	q3 8474,11350 8420,11385
 Voxstr.: Fuﬂg‰nger	q3 8309,11390 8390,11363
-Alice-Salomon-Park: Fuﬂg‰nger, Bordsteine	q2 6851,9365 6743,9523
+Alice-Salomon-Park: getrennte Wege f¸r Radfahrer und Fuﬂg‰nger, Bordsteine	q2 6851,9365 6767,9492 6728,9515
 (Geﬂlerstr. - Monumentenstr.): Fuﬂg‰nger, Kinder	q2 7970,8886 7964,9060 8009,9063 8014,9126
 (Loewenhardtdamm - Hˆhndorfstr.): Fuﬂg‰nger, Bordsteine, Schranken	q2 8318,8692 8429,8692
 (Weg d. Kol. Papestr.): Fuﬂg‰nger	q1 8220,8596 8243,8596 8243,8321 8264,8289
@@ -692,7 +689,6 @@ Eiergasse: Touristen	q3 10671,12356 10700,12315
 Am Nuﬂbaum: Touristen	q3 10644,12469 10626,12455 10611,12444 10597,12405 10611,12378
 (Am Nuﬂbaum): Touristen	q3 10597,12405 10536,12355
 Kleine Gertraudenstr.: Fuﬂg‰nger	q1 10332,11929 10364,11896 10387,11901
-Dircksenstr.: Baustelle, Gehweg passierbar	q4::inwork 11057,12715 11156,12581 11209,12430 11283,12278 11304,12234
 Tharauer Allee: Bauarbeiten	q1::inwork -1483,11283 -1634,11346 -1731,11425 -1829,11337
 (Scottweg - Tharauer Allee): Fuﬂg‰nger	q1 -1403,11279 -1483,11283
 Zimmerstr. (Spandau): Fuﬂg‰nger	q1 -3937,12971 -3907,12958

@@ -403,8 +403,7 @@ Ringbahnstr.	1s 8717,6965 8447,6964
 Björnsonstr.	1s 10209,16674 10197,16528
 Hauptstr. -> Hildegard-Marcusson-Str.: Hauptstr. Straßenbahntrasse	3 16138,10105 16004,10204 15952,10134
 Hildegard-Marcusson-Str. -> Hauptstr.: Hauptstr. Straßenbahntrasse	3 15952,10134 16004,10204 15629,10481
-Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3 11462,12384 11333,12437 11343,12300
-Alexanderstr. -> Schillingstr.: umbequemes Überqueren wegen Bordsteinen	3 11323,12484 11333,12437 11462,12384
+Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3 11462,12384 11333,12437 11343,12300
 Karl-Liebknecht-Str. -> Alexanderpl. [Dircksenstr./zur Karl-Liebknecht-Str.]: Straßenbahntrasse in Bau	3 10920,13139 10781,13002 10844,12935
 Karl-Liebknecht-Str. -> Dircksenstr.: Straßenbahntrasse in Bau	3 10740,12960 10781,13002 10706,13043
 Alexanderpl. [Dircksenstr./zur Karl-Liebknecht-Str.] -> Karl-Liebknecht-Str.: Straßenbahntrasse in Bau	3 10844,12935 10781,13002 10740,12960
@@ -556,6 +555,9 @@ Waitzstr. -> Lewishamstr.: Straßentunnelrampe	3 3800,10580 3739,10576 3771,10511
 Waitzstr. -> Sybelstr.: Straßentunnelrampe	3 3800,10580 3739,10576 3712,10566
 Lewishamstr. -> Waitzstr.: Straßentunnelrampe	3 3813,10435 3771,10511 3739,10495
 Waitzstr. -> Lewishamstr.: Straßentunnelrampe	3 3739,10495 3771,10511 3739,10576
+Köbisstr. -> Rauchstr.: unbequem passierbarer Mittelstreifen	3 7160,11225 6853,11336 6683,11367
+Köbisstr. -> Klingelhöferstr.: unbequem passierbarer Mittelstreifen	3 7160,11225 6853,11336 6880,11110
+Rauchstr. -> Köbisstr.: unbequem passierbarer Mittelstreifen	3 6683,11367 6853,11336 7160,11225
 Rauchstr. -> Klingelhöferstr.: unbequem passierbarer Mittelstreifen	3 6683,11367 6853,11336 6825,11486
 Klingelhöferstr. -> Rauchstr.: unbequem passierbarer Mittelstreifen	3 6880,11110 6853,11336 6683,11367
 Bornholmer Str. -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen	3 10197,16528 9998,16547 9982,16527
@@ -720,6 +722,9 @@ Mühlenstr. -> Anschutz-Gelände: Mittelstreifen ohne Überquerungshilfe	3 12539,11
 Anschutz-Gelände -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3 12638,11433 12576,11375 12641,11288
 Anschutz-Gelände -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3 13150,11101 13080,10956 13144,10921
 Mühlenstr. -> Anschutz-Gelände: Mittelstreifen ohne Überquerungshilfe	3 13001,11000 13080,10956 13150,11101
+Klingelhöferstr.: Mittelstreifen	3 6683,11367 6853,11336 6880,11110
+Klingelhöferstr.: Mittelstreifen	3 7160,11225 6853,11336 6880,11110
+Klingelhöferstr.: Mittelstreifen	3 6880,11110 6853,11336 6683,11367
 tragen (Treppe)	0:30:-65 1179,13532
 tragen (7 Stufen)	0:20:-7 9762,16119
 tragen (ca. 10 Stufen)	0:20:-257 -6442,14286
@@ -863,9 +868,8 @@ Schwingtor an der Luiseninsel	BNP:10:-126 7742,11639
 Schranke	BNP:5:12 25558,997
 Drängelgitter	BNP:5:-118 8810,14373
 Untere Kynaststr.: wegen Bauarbeiten gesperrt	2:inwork 14843,10621 14890,10824
-Köbisdreieck: Bauarbeiten	2:inwork 7160,11225 6853,11336
 Hedwigskirchgasse: Bauarbeiten	2:inwork 9743,12239 9756,12139
-Dircksenstr. (Arbeiten an "Alexa", voraussichtlich bis 2006-12-31)	2:inwork 11283,12278 11209,12430 11156,12581 11057,12715
+Dircksenstr. (Arbeiten an "Alexa", voraussichtlich bis 2006-12-31)	2:inwork 11209,12430 11156,12581 11057,12715
 Schloßplatz (Bauarbeiten am Palast der Republik)	2:inwork 10267,12305 10173,12492
 Brücke über den Torfgraben/Phöben gesperrt, Neubau voraussichtlich bis 2006-12-31	2:inwork -25539,2641 -25453,2418
 Behlertstr.	1 -12362,-370 -12607,-434 -12813,-480 -12868,-493
@@ -1129,11 +1133,8 @@ Mittelstr.	1 9465,12460 9384,12448 9335,12442
 Friedrichstr. [Zufahrt]	1 9384,12448 9394,12351
 Museumstr.	2:inwork 9943,12642 9884,12712
 Bauhofstr.	1 9810,12712 9671,12644
-Kleine Jägerstr.	2:inwork 9976,11909 10055,11950
-Alte Leipziger Str.	2:inwork 10076,11840 10118,11907
 Jägerstr. (Mitte)	2:inwork 9907,12055 10006,12065
 Kleine Kurstr.	2:inwork 10182,11758 10249,11821
-Schicklerstr.: Bauarbeiten	2:inwork 11343,12300 11283,12278
 (Verlängerte Französische Str.): Tor kann verschlossen sein	2 8892,12006 9076,12054
 Hollmannstr.	2 9979,10639 9757,10708
 Nordsternstr.	1s 6268,8884 6281,8914

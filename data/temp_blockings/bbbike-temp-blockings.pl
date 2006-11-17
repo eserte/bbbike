@@ -3990,11 +3990,11 @@ EOF
 userdel	2 -15961,38892 -16173,38465
 EOF
      },
-     { from  => 1153737956, # 2006-07-24 12:45
-       until => 1155679199, # 2006-08-15 23:59
-       text  => 'L05 Karl-Marx-Str. (Großziethen) in beiden Richtungen zwischen Nibelungenstraße und Erlenweg Baustelle, Straße vollständig gesperrt, eine Umleitung ist eingerichtet (bis Mitte 08.2006)',
+     { from  => 1163800186, # 2006-11-17 22:49
+       until => 1164927599, # 2006-11-30 23:59
+       text  => 'Zossener Damm (Blankenfelde) Ortsdurchfahrt Blankenfelde in beiden Richtungen Baustelle, Straße vollständig gesperrt, eine Umleitung ist eingerichtet (bis Ende 11.2006)',
        type  => 'handicap',
-       source_id => 'IM_002624',
+       source_id => 'IM_003887',
        data  => <<EOF,
 userdel	q4 13225,-681 13090,205 12984,1011
 EOF
@@ -5965,7 +5965,7 @@ EOF
      },
      { from  => 1159912800, # 2006-10-04 00:00
        until => 1163804400, # 2006-11-18 00:00
-       text  => 'L 040 Zossener Damm OD Blankenfelde Straßenausbau Vollsperrung 05.10.2006-17.11.2006 ',
+       text  => 'L 040 Zossener Damm OD Blankenfelde Straßenausbau Vollsperrung 05.10.2006-28.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 11019,-8435 11555,-8625
@@ -6504,9 +6504,9 @@ EOF
 userdel	2::inwork 20949,4775 21077,4736 21332,4655
 EOF
      },
-     { from  => 1162238001, # 2006-10-30 20:53
-       until => 1163804400, # 2006-11-18 00:00
-       text  => 'Kynaststr (Lichtenberg) in Richtung Marktstr., zwischen Haupstr. und Markstr. Baustelle, Fahrtrichtung gesperrt (bis 17.11.06)',
+     { from  => 1163800165, # 2006-11-17 22:49
+       until => 1165618800, # 2006-12-09 00:00
+       text  => 'Kynaststr (Lichtenberg) in Richtung Marktstr., zwischen Haupstr. und Markstr. Baustelle, Fahrtrichtung gesperrt (bis 08.12.06)',
        type  => 'handicap',
        source_id => 'IM_003935',
        data  => <<EOF,

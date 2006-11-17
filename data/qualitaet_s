@@ -657,7 +657,7 @@ Am Urban-Krankenhaus: Kopfsteinpflaster, OK	Q1 10601,9922 10759,9901
 Dieffenbachstr.: Kopfsteinpflaster	Q2 11083,9753 11148,9730
 Am Volkspark: mäßiges Kopfsteinpflaster mit großen Ritzen	Q2 5745,8194 5669,8207
 Am Volkspark: Parkweg	Q1 5745,8194 5934,8220
-Dircksenstr.: Kopfsteinpflaster	Q2 11283,12278 11209,12430 11156,12581 11057,12715
+Dircksenstr.: Asphalt	Q0 11304,12234 11283,12278 11209,12430 11156,12581 11057,12715
 Ruhwaldweg: Kopfsteinpflaster	Q2 801,13323 830,13353
 Bahnhofvorplatz S-Bhf. Priesterweg: Kopfsteinpflaster	Q2 7217,6065 7251,6071
 Hegemeisterweg: Kopfsteinpflaster	Q2 17217,8377 17520,8219
@@ -833,7 +833,6 @@ Goslarer Ufer: Kopfsteinpflaster, kann auf Gehweg umfahren werden	Q2 4301,13213 
 Malmöer Str.: mäßiges Kopfsteinpflaster	Q2 10225,16436 10254,16363 10281,16263 10301,16186 10343,16015
 Sonnenburger Str.: Kopfsteinpflaster	Q2 10564,15721 10550,15610
 Charlottenstr.: mäßiger Asphalt	Q1 9454,12558 9465,12460 9476,12359
-Mohrenstr.: mäßiger Asphalt	Q1; 8990,11719 9076,11743 9173,11770 9220,11781
 Mohrenstr.: mäßiger Asphalt	Q1 9220,11781 9410,11803
 Jägerstr.: mäßiger Asphalt	Q1 9108,11961 9201,11968 9386,11995
 südlicher Uferweg an der Krummen Lanke: Waldweg, überwiegend OK, einige sandige Stellen	Q1 -1274,4367 -1245,4414 -1185,4450 -1139,4575 -1134,4706 -971,4971 -724,5080 -604,5228 -593,5280 -579,5320
@@ -1405,6 +1404,8 @@ Motardstr.: Beton	Q0 990,14062 19,14186 -269,14178
 Mozartstr. (Köpenick): asphaltiert	Q0 21679,6580 21700,6700 21709,6791 21774,6880
 Bachstr. (Köpenick): asphaltiert	Q0 21861,6719 21785,6703 21700,6700
 Wassermannstr.: asphaltiert	Q0 20796,3721 20637,3919 20414,4186
+Köbisstr.: glatte Gehwegplatten	Q0 7160,11225 6853,11336
+Hiroshimasteg: unebene Holzbohlen	Q1 7251,11202 7251,11181 7248,11143
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 364,4829 319,4906 168,5092 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2240,6904 2116,6861 2054,6840 1975,6818
@@ -1987,7 +1988,6 @@ Schnackenburgstr.: Asphalt	Q0 5636,7540 5812,7536
 Stierstr.: Asphalt	Q0 5957,7765 5956,7682 5955,7406
 Hähnelstr.: Asphalt	Q0 5810,7684 5956,7682 6157,7685
 Koburger Str.: Kopfsteinpflaster	Q2 6540,8421 6548,8335 6560,8219
-Hiroshimasteg: gute Qualität	Q1 7251,11202 7251,11181 7248,11143
 Hiroshimastr.: Asphalt	Q0 7354,11513 7251,11202
 Bitterstr.: Kopfsteinpflaster	Q2 2444,5303 2363,5398 2309,5428 2267,5450 2230,5543 2155,5608 2142,5649 2144,5702 2165,5790
 Ehrenbergstr.: asphaltiert	Q0 2857,4578 2767,4515 2635,4425 2537,4358
@@ -2068,7 +2068,7 @@ Friedhofstr.: sehr guter Asphalt	Q0 15534,15675 15598,15793
 Adolf-Martens-Str.: Asphalt	Q0 2712,4091 2787,3975 3025,4123
 Zwinglistr.: Asphalt	Q0 5212,13211 5358,13207 5699,13184
 Schlieperstr.: Kopfsteinpflaster	Q2 1585,19862 1863,19925 2029,19963 2224,20007 2450,20028
-Kulmbacher Str.: Asphalt	Q1 5799,9939 5853,10168
+Kulmbacher Str.: Asphalt, leicht schadhafte Stellen	Q0 5799,9939 5817,10173
 Nordhauser Str.: Asphalt	Q0 3542,13063 3719,13075 3839,13072 3975,13074 4099,13072 4211,13070 4341,13073
 Ringbahnstr. (Wilmersdorf): mäßiges Kopfsteinpflaster	Q2 2691,10047 2539,10235
 Gustav-Müller-Str.: asphaltiert	Q0 7639,8091 7640,8359 7641,8534

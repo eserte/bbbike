@@ -223,7 +223,15 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_003887',
+         'until' => 1164927599,
+         'text' => 'Zossener Damm (Blankenfelde) Ortsdurchfahrt Blankenfelde in beiden Richtungen Baustelle, Straße vollständig gesperrt, eine Umleitung ist eingerichtet (bis Ende 11.2006)',
+         'from' => 1163800186,
+         'data' => 'userdel	q4 13225,-681 13090,205 12984,1011
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -718,7 +726,7 @@ userdel	1::inwork 10781,13002 10706,13043
        undef,
        {
          'until' => 1163804400,
-         'text' => 'L 040 Zossener Damm OD Blankenfelde Straßenausbau Vollsperrung 05.10.2006-17.11.2006 ',
+         'text' => 'L 040 Zossener Damm OD Blankenfelde Straßenausbau Vollsperrung 05.10.2006-28.11.2006 ',
          'from' => 1159912800,
          'data' => 'userdel	q4::inwork 11019,-8435 11555,-8625
 ',
@@ -926,9 +934,9 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
        undef,
        {
          'source_id' => 'IM_003935',
-         'until' => 1163804400,
-         'text' => 'Kynaststr (Lichtenberg) in Richtung Marktstr., zwischen Haupstr. und Markstr. Baustelle, Fahrtrichtung gesperrt (bis 17.11.06)',
-         'from' => 1162238001,
+         'until' => 1165618800,
+         'text' => 'Kynaststr (Lichtenberg) in Richtung Marktstr., zwischen Haupstr. und Markstr. Baustelle, Fahrtrichtung gesperrt (bis 08.12.06)',
+         'from' => 1163800165,
          'data' => 'userdel	q4::inwork; 14881,10864 14897,10935 14988,11130
 ',
          'type' => 'handicap'
