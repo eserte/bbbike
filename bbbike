@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.284 2006/11/11 14:33:14 eserte Exp $
+# $Id: bbbike,v 3.284 2006/11/11 14:33:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -17633,10 +17633,13 @@ sub show_logo { # und About
 				 : $Config{'cc'})) . ")";
 	}
 	# Are we running an emulation?
+	# This could be wrong, e.g. if cygwin's uname is
+	# in the PATH, but Winn32 perl is running,
+	# hence the "maybe"
 	if (is_in_path("uname")) {
 	    chomp(my $real_os = `uname`);
 	    if ($^O !~ /^$real_os$/i) {
-		$os_info .= " (Real OS: $real_os)";
+		$os_info .= " (Real OS, maybe: $real_os)";
 	    }
 	}
 	$f->Label(-text => "perl $]\nTk $Tk::VERSION\n$os_info",

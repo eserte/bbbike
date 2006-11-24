@@ -223,15 +223,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_003887',
-         'until' => 1164927599,
-         'text' => 'Zossener Damm (Blankenfelde) Ortsdurchfahrt Blankenfelde in beiden Richtungen Baustelle, Straße vollständig gesperrt, eine Umleitung ist eingerichtet (bis Ende 11.2006)',
-         'from' => 1163800186,
-         'data' => 'userdel	q4 13225,-681 13090,205 12984,1011
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -569,10 +561,10 @@ userdel	1::inwork 10781,13002 10706,13043
        },
        undef,
        {
-         'until' => 1166569200,
-         'text' => 'L 075 OD Großziehten OD Großziehten, KP K.-Marx-/Attilastraße Straßenbauarbeiten Vollsperrung 28.08.2006-19.12.2006 ',
-         'from' => 1156629600,
-         'data' => 'userdel	2::inwork 12984,1011 13090,205 13225,-681
+         'until' => 1166828400,
+         'text' => 'L 075 Karl-Marx-Str. OD Großziehten Straßenbauarbeiten Vollsperrung 24.11.2006-22.12.2006 ',
+         'from' => 1164236400,
+         'data' => 'userdel	2 13225,-681 13090,205 12984,1011
 ',
          'type' => 'gesperrt'
        },
@@ -724,14 +716,7 @@ userdel	1::inwork 10781,13002 10706,13043
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1163804400,
-         'text' => 'L 040 Zossener Damm OD Blankenfelde Straßenausbau Vollsperrung 05.10.2006-28.11.2006 ',
-         'from' => 1159912800,
-         'data' => 'userdel	q4::inwork 11019,-8435 11555,-8625
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1166828400,
          'text' => 'L 304 AS Bernau Nord - B273 AS Bernau Nord - B273 Straßenbau Vollsperrung 28.09.2006-22.12.2006 ',
@@ -904,14 +889,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
        undef,
        undef,
        undef,
-       {
-         'until' => 1163804400,
-         'text' => 'B 246 Bahnübergang in der OD Bestensee Umbauarbeiten Vollsperrung 06.11.2006-17.11.2006 ',
-         'from' => 1162681200,
-         'data' => 'userdel	2::inwork 26639,-17861 26752,-17872 26832,-17882
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -981,14 +959,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1163804400,
-         'text' => 'K 7237 Klein Kienitzer Str. OD Rangsdorf, Einmünd. zur B 96 Deckenerneuerung halbseitig gesperrt; Einbahnstraße 07.11.2006-17.11.2006 ',
-         'from' => 1162767600,
-         'data' => 'userdel	1::inwork 14327,-11767 15962,-10958
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_003947',
          'until' => 1166223599,
@@ -999,15 +970,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_004066',
-         'until' => 1163804400,
-         'text' => 'Schöneicher Str./Schöneicher Landstr. (Köpenick) in beiden Richtungen, zwischen Dahlwitzer Landstr. und Friedrichshagener Str. Straße vollständig gesperrt (bis 17.11.06)',
-         'from' => 1163446417,
-         'data' => 'userdel	2::inwork 25585,6050 25776,6054 26221,6229 28794,7219 29168,7350
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1167433200,
@@ -1021,14 +984,7 @@ userdel	2::temp 9918,12411 9926,12368
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1164150000,
-         'text' => 'L 338 Rosa-Luxemburg-Damm/ Hauptstr. Bahnübergang in der OL Neuenhagen Erneu. Gleisanlagen Vollsperrung 18.11.2006-21.11.2006 ',
-         'from' => 1163718000,
-         'data' => 'userdel	2::inwork 30179,13667 30842,13175 30975,12918
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1167678155,
          'text' => 'Bauarbeiten am Maybachufer zwischen Pannierstr. und Weichselstr., Behinderungen möglich',
@@ -1045,21 +1001,33 @@ userdel	2::temp 9918,12411 9926,12368
 ',
          'type' => 'gesperrt'
        },
+       undef,
+       undef,
        {
-         'until' => 1163977200,
-         'text' => 'L 281 Neureetz-Altranft bei Neureetz Deckeneinbau Vollsperrung 17.11.2006-19.11.2006 ',
-         'from' => 1163631600,
-         'data' => 'userdel	2::inwork 59730,42362 58564,43539
+         'source_id' => 'IM_004135',
+         'until' => 1196463600,
+         'text' => 'Gürtelstr. (Friedrichshain ) in Richtung Treptow, zwischen Frankfurter Allee und Oderstr. Baustelle, Fahrtrichtung gesperrt (bis November 2007)',
+         'from' => 1164050202,
+         'data' => 'userdel	q4::inwork; 15349,12073 15288,11968 15243,11881 15203,11807 15091,11596
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
        },
        {
-         'until' => 1163804400,
-         'text' => 'L 281 Neureetz-Altranft zw. Croustillier und Brücke über Alte Oder Deckenerneuerung Vollsperrung 17.10.2006-17.11.2006 ',
-         'from' => 1160949600,
-         'data' => 'userdel	2::inwork 56925,41800 58564,43539
+         'source_id' => 'IM_004168',
+         'until' => 1166139296,
+         'text' => 'Einemstr. (Schöneberg) in Richtung Nollendorfplatz, hinter Kurfürstenstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte Dezember)',
+         'from' => undef,
+         'data' => 'userdel	q4::inwork; 6972,10665 6985,10597 7003,10513 7037,10359
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1164754800,
+         'text' => 'B 166 Berliner Str., Lindenallee OD Schwedt Deckenerneuerung Vollsperrung 21.11.2006-28.11.2006 ',
+         'from' => 1163977200,
+         'data' => 'userdel	q4::inwork 69480,73471 69238,73315
+',
+         'type' => 'handicap'
        }
      
 );

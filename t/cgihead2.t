@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.13 2006/06/10 20:53:37 eserte Exp $
+# $Id: cgihead2.t,v 1.14 2006/11/24 07:21:44 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -131,6 +131,10 @@ sub check_url {
 	    is($content_type, "application/octet-stream", "Expected type (binary)");
 	} elsif ($url =~ m{(?:\.tar\.bz2|\.tbz)$}) {
 	    is($content_type, "application/octet-stream", "Expected type (binary for bzip2)");
+	} elsif ($url =~ m{\.tar\.gz\?download$}) { # Sourceforge download
+	    is($content_type, "application/x-tar", "Expected type (tar)");
+	} elsif ($url =~ m{\.(exe|deb)\?download$}) { # Sourceforge download
+	    is($content_type, "application/octet-stream", "Expected type (binary)");
 	} else {
 	    is($content_type, "text/html", "Expected type (html)");
 	}

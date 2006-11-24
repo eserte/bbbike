@@ -3991,7 +3991,7 @@ userdel	2 -15961,38892 -16173,38465
 EOF
      },
      { from  => 1163800186, # 2006-11-17 22:49
-       until => 1164927599, # 2006-11-30 23:59
+       until => 1164151926, # 2006-11-30 23:59 1164927599, falsche Koordinaten!
        text  => 'Zossener Damm (Blankenfelde) Ortsdurchfahrt Blankenfelde in beiden Richtungen Baustelle, Straße vollständig gesperrt, eine Umleitung ist eingerichtet (bis Ende 11.2006)',
        type  => 'handicap',
        source_id => 'IM_003887',
@@ -5636,12 +5636,12 @@ EOF
 userdel	2::inwork 42175,-37437 42793,-36256 43200,-36012
 EOF
      },
-     { from  => 1156629600, # 2006-08-27 00:00
-       until => 1166569200, # 2006-12-20 00:00
-       text  => 'L 075 OD Großziehten OD Großziehten, KP K.-Marx-/Attilastraße Straßenbauarbeiten Vollsperrung 28.08.2006-19.12.2006 ',
+     { from  => 1164236400, # 2006-11-23 00:00
+       until => 1166828400, # 2006-12-23 00:00
+       text  => 'L 075 Karl-Marx-Str. OD Großziehten Straßenbauarbeiten Vollsperrung 24.11.2006-22.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 12984,1011 13090,205 13225,-681
+userdel	2 13225,-681 13090,205 12984,1011
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -6695,6 +6695,32 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 56925,41800 58564,43539
+EOF
+     },
+     { from  => 1164050202, # 2006-11-20 20:16
+       until => 1196463600, # 2007-12-01 00:00
+       text  => 'Gürtelstr. (Friedrichshain ) in Richtung Treptow, zwischen Frankfurter Allee und Oderstr. Baustelle, Fahrtrichtung gesperrt (bis November 2007)',
+       type  => 'handicap',
+       source_id => 'IM_004135',
+       data  => <<EOF,
+userdel	q4::inwork; 15349,12073 15288,11968 15243,11881 15203,11807 15091,11596
+EOF
+     },
+     { from  => undef, # 
+       until => 1166139296, # 2006-12-15 00:34
+       text  => 'Einemstr. (Schöneberg) in Richtung Nollendorfplatz, hinter Kurfürstenstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte Dezember)',
+       type  => 'handicap',
+       source_id => 'IM_004168',
+       data  => <<EOF,
+userdel	q4::inwork; 6972,10665 6985,10597 7003,10513 7037,10359
+EOF
+     },
+     { from  => 1163977200, # 2006-11-20 00:00
+       until => 1164754800, # 2006-11-29 00:00
+       text  => 'B 166 Berliner Str., Lindenallee OD Schwedt Deckenerneuerung Vollsperrung 21.11.2006-28.11.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 69480,73471 69238,73315
 EOF
      },
     );
