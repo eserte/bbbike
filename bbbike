@@ -4767,7 +4767,7 @@ speicherplatzsparender.",
 
     eval {
 	require Tk::Getopt;
-	Tk::Getopt->VERSION(0.50);
+	Tk::Getopt->VERSION(0.4950);
     };
     if ($@) {			# XXX
 	die "Please report to author: use opttable_to_getopt!!!! XXX";

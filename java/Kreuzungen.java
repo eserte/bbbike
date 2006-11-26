@@ -145,3 +145,7 @@ class Kreuzungen {
 // 1;
 
 }
+
+// Local variables:
+// c-basic-offset: 2
+// End:

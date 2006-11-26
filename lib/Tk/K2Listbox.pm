@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: K2Listbox.pm,v 1.11 2004/02/16 01:06:26 eserte Exp $
+# $Id: K2Listbox.pm,v 1.12 2006/09/01 22:18:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999, 2000, 2002, 2004 Slaven Rezic. All rights reserved.
@@ -188,8 +188,8 @@ sub Cache {
     $w->{'_cache'} = {};
     if ($v) {
 	my $last = $lb->index('end');
-	for(my $i = 0; $i <= $last; $i++) {
-	    for(my $j = 1; $j <= $v; $j++) {
+	for my $i (0 .. $last) {
+	    for my $j (1 .. $v) {
 		my $s = $lb->get($i);
 		next unless defined $s and $s ne '';
 		my $beg = lc(substr($s, 0, $j));
