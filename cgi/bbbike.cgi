@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.28 2006/11/11 14:35:27 eserte Exp $
+# $Id: bbbike.cgi,v 8.29 2006/11/26 22:42:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -697,7 +697,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.28 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.29 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -6134,13 +6134,14 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/11/11 14:35:27 $';
+    my $cgi_date = '$Date: 2006/11/26 22:42:20 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
+    $cgi_date =~ s{/}{-}g;
     my $data_date;
     for (@Strassen::datadirs) {
 	if (my(@s) = stat "$_/.modified") {
 	    my @l = localtime $s[9];
-	    $data_date = sprintf "%04d/%02d/%02d", $l[5]+1900,$l[4]+1,$l[3];
+	    $data_date = sprintf "%04d-%02d-%02d", $l[5]+1900,$l[4]+1,$l[3];
 	    last;
 	}
     }
