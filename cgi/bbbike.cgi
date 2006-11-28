@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.29 2006/11/26 22:42:20 eserte Exp $
+# $Id: bbbike.cgi,v 8.30 2006/11/27 21:44:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -697,7 +697,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.29 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.30 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -2928,6 +2928,10 @@ sub search_coord {
 			 "Q1" => 1,
 			 "Q2" => 1.5,
 			 "Q3" => 1.8 };
+	    # Bei hohen Geschwindigkeiten doch noch Q1-Optimierung machen:
+	    if ($velocity_kmh > 25) {
+		$penalty->{Q1} = $velocity_kmh / 25;
+	    }
 	}
 	$extra_args{Qualitaet} =
 	    {Net => $qualitaet_net,
@@ -6134,7 +6138,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/11/26 22:42:20 $';
+    my $cgi_date = '$Date: 2006/11/27 21:44:22 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

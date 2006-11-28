@@ -7733,6 +7733,7 @@ sub enter_opt_preferences {
 		 } elsif ($inx == 3) {
 		     # no op
 		 } else {
+		     # Taken from bbbike.cgi
 		     my $penalty;
 		     if ($inx == 1) { # Kopfsteinpflaster
 			 $penalty = { "Q0" => 1,
@@ -7744,6 +7745,10 @@ sub enter_opt_preferences {
 				      "Q1" => 1.2,
 				      "Q2" => 1.6,
 				      "Q3" => 2 };
+			 # Bei hohen Geschwindigkeiten doch noch Q1-Optimierung machen:
+			 if ($speed > 25) {
+			     $penalty->{Q1} = $speed / 25;
+			 }
 		     }
 		     while(my($k,$v) = each %$penalty) {
 			 $var{$k} = int($speed/$v);

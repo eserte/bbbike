@@ -692,15 +692,7 @@ userdel	1::inwork 10781,13002 10706,13043
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_003679',
-         'until' => 1165014000,
-         'text' => 'Hohenschönhauser Str. (Hohenschönhausen), zwischen Nordring und Bitterfelder Str. Baustelle, Fahrtrichtung gesperrt (bis 01.12.06)',
-         'from' => 1159207426,
-         'data' => 'userdel	1::inwork 19532,17911 19139,17416 18730,16973
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -993,25 +985,10 @@ userdel	2::temp 9918,12411 9926,12368
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1164582000,
-         'text' => 'L 023 Joachimsthal-Britz ab AS Chorin, westl. Seite in Ri. Joachimsthal Brückenbauarbeiten Vollsperrung 25.11.2006-26.11.2006 ',
-         'from' => 1164322800,
-         'data' => 'userdel	2::inwork 35962,59463 35405,59832
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
-       {
-         'source_id' => 'IM_004135',
-         'until' => 1196463600,
-         'text' => 'Gürtelstr. (Friedrichshain ) in Richtung Treptow, zwischen Frankfurter Allee und Oderstr. Baustelle, Fahrtrichtung gesperrt (bis November 2007)',
-         'from' => 1164050202,
-         'data' => 'userdel	q4::inwork; 15349,12073 15288,11968 15243,11881 15203,11807 15091,11596
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_004168',
          'until' => 1166139296,

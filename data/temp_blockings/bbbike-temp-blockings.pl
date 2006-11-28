@@ -5887,7 +5887,7 @@ userdel	q4::inwork -53945,-12911 -54243,-12956
 EOF
      },
      { from  => 1159207426, # 2006-09-25 20:03
-       until => 1165014000, # 2006-12-02 00:00
+       until => 1164656966, # 2006-12-02 00:00 1165014000
        text  => 'Hohenschönhauser Str. (Hohenschönhausen), zwischen Nordring und Bitterfelder Str. Baustelle, Fahrtrichtung gesperrt (bis 01.12.06)',
        type  => 'gesperrt',
        source_id => 'IM_003679',
@@ -6698,7 +6698,7 @@ userdel	2::inwork 56925,41800 58564,43539
 EOF
      },
      { from  => 1164050202, # 2006-11-20 20:16
-       until => 1196463600, # 2007-12-01 00:00
+       until => 1164656943, # 2007-12-01 00:00 1196463600
        text  => 'Gürtelstr. (Friedrichshain ) in Richtung Treptow, zwischen Frankfurter Allee und Oderstr. Baustelle, Fahrtrichtung gesperrt (bis November 2007)',
        type  => 'handicap',
        source_id => 'IM_004135',
@@ -6721,6 +6721,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 69480,73471 69238,73315
+EOF
+     },
+     { from  => 1164612153, # 2006-11-27 08:22
+       until => 1164656874, # 2006-12-15 23:59 1166223599
+       text  => 'Oranienburger Str. (Reinickendorf) in Richtung stadteinwärts, zwischen Jansenstr. und Tessenowstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte Dezember 2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_004175',
+       data  => <<EOF,
+userdel	1::inwork 5556,19796 5495,19446
 EOF
      },
     );
