@@ -6732,4 +6732,12 @@ EOF
 userdel	1::inwork 5556,19796 5495,19446
 EOF
      },
+     { from  => 1156629600, # 2006-08-27 00:00
+       until => 1180648800, # 2007-06-01 00:00
+       text  => 'B 198 Straße des Friedens OD Angermünde, zw. Am Kamp u. Krz. Berliner-/Gartenstr. Kanal- und Straßenbau Vollsperrung 28.08.2006-31.05.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 49728,68465 49875,68362
+EOF
+     },
     );
