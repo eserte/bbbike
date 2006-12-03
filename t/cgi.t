@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.40 2006/12/03 23:26:11 eserte Exp $
+# $Id: cgi.t,v 1.39 2006/12/03 23:24:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -77,7 +77,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (163 + $ortsuche_tests) * scalar @urls;
+plan tests => (153 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip) {
