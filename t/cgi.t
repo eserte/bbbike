@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.38 2006/10/10 23:45:07 eserte Exp $
+# $Id: cgi.t,v 1.40 2006/12/03 23:26:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -22,6 +22,7 @@ use URI::Escape qw(uri_escape);
 use Getopt::Long;
 use Data::Dumper;
 use Safe;
+use CGI qw();
 
 use FindBin;
 use lib ($FindBin::RealBin,
@@ -76,7 +77,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (144 + $ortsuche_tests) * scalar @urls;
+plan tests => (163 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip) {
@@ -283,7 +284,6 @@ for my $cgiurl (@urls) {
 	    fail("No hash, no route length");
 	}
 
-    XXX:
 	# Test comments_points (category 0, CARRY) (as part of Bemerkungen)
 	$req = new HTTP::Request
 	    ('GET', "$action?startname=Sonntagstr.&startplz=10245&startc=14798%2C10985&zielname=Markgrafendamm&zielplz=10245&zielc=14794%2C10844&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&scope=");
@@ -625,6 +625,41 @@ for my $cgiurl (@urls) {
 	}
 	ok($route->{Len} > 7000 && $route->{Len} < 8000, "check route length")
 	    or diag "Route length: $route->{Len}";
+    }
+
+    XXX:
+    {
+	# opensearch search params
+	my $resp;
+
+	$resp = $ua->get($cgiurl . "?" . CGI->new({ossp => 'dudenstr'})->query_string);
+	ok($resp->is_success, "ossp with start");
+	BBBikeTest::like_long_data($resp->content, qr{startname.*Dudenstr});
+	BBBikeTest::like_long_data($resp->content, qr{startplz.*10965});
+
+	$resp = $ua->get($cgiurl . "?" . CGI->new({ossp => '"unter den linden"'})->query_string);
+	ok($resp->is_success, "ossp with start with spaces");
+	BBBikeTest::like_long_data($resp->content, qr{startname.*Unter den Linden});
+	BBBikeTest::like_long_data($resp->content, qr{startplz.*10117});
+
+	$resp = $ua->get($cgiurl . "?" . CGI->new({ossp => 'dudenstr seumestr'})->query_string);
+	ok($resp->is_success, "ossp with start and goal");
+	BBBikeTest::like_long_data($resp->content, qr{startname.*Dudenstr});
+	BBBikeTest::like_long_data($resp->content, qr{zielname.*Seumestr});
+	BBBikeTest::like_long_data($resp->content, qr{Genaue Kreuzung angeben});
+
+	$resp = $ua->get($cgiurl . "?" . CGI->new({ossp => '  "unter den lind"    "habelschwerdter alle"'})->query_string);
+	ok($resp->is_success, "ossp with start and goal and spaces");
+	BBBikeTest::like_long_data($resp->content, qr{startname.*Unter den Linden});
+	BBBikeTest::like_long_data($resp->content, qr{zielname.*Habelschwerdter Allee});
+	BBBikeTest::like_long_data($resp->content, qr{Genaue Kreuzung angeben});
+
+	$resp = $ua->get($cgiurl . "?" . CGI->new({ossp => 'dudenstr "unter den linden" seumestr'})->query_string);
+	ok($resp->is_success, "ossp with start, via and goal");
+	BBBikeTest::like_long_data($resp->content, qr{startname.*Dudenstr});
+	BBBikeTest::like_long_data($resp->content, qr{vianame.*Unter den Linden});
+	BBBikeTest::like_long_data($resp->content, qr{zielname.*Seumestr});
+	BBBikeTest::like_long_data($resp->content, qr{Genaue Kreuzung angeben});
     }
 }
 

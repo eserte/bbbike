@@ -6125,9 +6125,9 @@ EOF
 userdel	2::inwork 80143,-15900 79825,-16575
 EOF
      },
-     { from  => undef, # 
-       until => 1160604000, # 2006-10-12 00:00
-       text  => 'Leibnizstr. (Charlottenburg ) in Richtung Süd,, zwischen Otto-Suhr-Allee und Bismarckstr. Baustelle, Fahrtrichtung gesperrt (bis 11.10.2006)',
+     { from  => 1164916572, # 2006-11-30 20:56
+       until => 1165618800, # 2006-12-09 00:00
+       text  => 'Leibnizstr. (Charlottenburg ) in Richtung Süd,, zwischen Otto-Suhr-Allee und Bismarckstr. Baustelle, Fahrtrichtung gesperrt (bis 08.12.2006)',
        type  => 'gesperrt',
        source_id => 'IM_003744',
        data  => <<EOF,
@@ -6738,6 +6738,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 49728,68465 49875,68362
+EOF
+     },
+     { from  => 1164916649, # 2006-11-30 20:57
+       until => 1175378399, # 2007-03-31 23:59
+       text  => 'Pankower Allee (Reinickendorf) in Richtung Markstr., zwischen Reginhardstr. und Residenzstr. Baustelle, Fahrtrichtung gesperrt (bis 03/2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_004242',
+       data  => <<EOF,
+userdel	1::inwork 8211,17585 8095,17574 7998,17564 7841,17551 7675,17538 7587,17532
 EOF
      },
     );

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.30 2006/11/27 21:44:22 eserte Exp $
+# $Id: bbbike.cgi,v 8.31 2006/12/03 23:23:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -697,7 +697,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.31 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1005,6 +1005,30 @@ if (defined $q->param('startpolar')) {
 }
 if (defined $q->param('zielpolar')) {
     $set_anyc->($q->param('zielpolar'), "ziel");
+}
+
+# Params for opensearch
+if (defined $q->param("ossp") && $q->param("ossp") !~ m{^\s*$}) {
+    (my $ossp = $q->param("ossp")) =~ s{^\s*}{};
+    $ossp =~ s{\s*$}{};
+    my @args;
+    if (eval { require Text::ParseWords; 1 }) {
+	@args = Text::ParseWords::shellwords($ossp);
+    } else {
+	warn $@;
+	@args = split /\s+/, $ossp;
+    }
+    if (@args == 1) {
+	$q->param('start', $args[0]);
+    } elsif (@args == 2) {
+	$q->param('start', $args[0]);
+	$q->param('ziel', $args[1]);
+    } elsif (@args >= 3) {
+	$q->param('start', $args[0]);
+	$q->param('via', $args[1]);
+	$q->param('ziel', $args[2]);
+	# more params will be ignored
+    }
 }
 
 if (defined $q->param('begin')) {
@@ -6138,7 +6162,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/11/27 21:44:22 $';
+    my $cgi_date = '$Date: 2006/12/03 23:23:21 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
