@@ -1,0 +1,43 @@
+## ONLY EDIT THE ORIGINAL TEMPlATE FILE
+## bbbike-opernsearch.tpl.src!
+##
+# Mozilla search plugin for BBBike
+# by Wolfram Schneider, Nov 2006
+
+<search
+	version="7.1"
+	name="BBBike ([% lang_msg %])"
+	description="BBBike ([% lang_msg %])"
+	sourceTextEncoding="0"
+	method="GET"
+	action="http://bbbike.radzeit.de/cgi-bin/bbbike.cgi"
+	queryCharset="iso-8859-1"
+	searchForm="http://bbbike.radzeit.de/cgi-bin/bbbike.cgi"
+>
+
+[% IF type == 'simple' -%]
+<input name="start" user>
+<input name="via" value="NO">
+[% ELSE -%]
+<input name="ossp" user>
+[% END -%]
+<input name="sourceid" value="mozilla-search">
+
+
+<interpret
+	browserResultType="result"
+	charset="iso-8859-1"
+	language="de"
+	resultListStart="<ul>"
+	resultListEnd="</ul>"
+	resultItemStart='<li style="padding-bottom: 1em;"'
+	resultItemEnd='</li>'
+>
+
+</search>
+
+<browser
+	update="http://wolfram.schneider.org/tmp/bbbike/opensearch/bbbike-de.src"
+	updateIcon="http://wolfram.schneider.org/tmp/bbbike/opensearch.html"
+	updateCheckDays="1"
+>

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.91 2006/11/02 19:55:17 eserte Exp $
+# $Id: Makefile,v 1.91 2006/11/02 19:55:17 eserte Exp eserte $
 #
 
 # Targets:
@@ -36,7 +36,11 @@ BBBIKE_RADZEIT_SSH_HOST?=	${BBBIKE_RADZEIT_HOST}
 STERNFAHRT_YEAR?=	2006
 
 EXTRA_MISCSRC_FILES=	bbd2esri winter_optimization.pl
-EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html
+EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html \
+			opensearch/bbbike-opensearch.tpl.src \
+			opensearch/bbbike-opensearch.tpl.xml \
+			opensearch/opensearch.html \
+			opensearch/opensearch.js
 CGI_FILES=		bbbike.cgi \
 			bbbike-data.cgi \
 			bbbikegooglemap.cgi \
@@ -417,18 +421,22 @@ prepare-bbbike-dist-prog-bbbike-t:
 .endfor
 
 prepare-bbbike-dist-prog-bbbike-html:
+	mkdir -p ${CURDIR}/BBBike/html/opensearch
 .for f in ${EXTRA_HTML_FILES}
 	if [ ! -e ${CURDIR}/BBBike/html/$f -o ${BBBIKE_ROOT_DIR}/html/$f -nt ${CURDIR}/BBBike/html/$f ] ; then \
 	    cp -pf ${BBBIKE_ROOT_DIR}/html/$f ${CURDIR}/BBBike/html/$f; \
 	fi
 .endfor
-	# Vorsichtshalber, weil ansonsten die falschen URLs enthalten sein
-	# könnten:
+	cd ${CURDIR}/BBBike/html && \
+	    ${MAKE} bbbike-opensearch bbbike-opensearch-images
+#	Vorsichtshalber, weil ansonsten die falschen URLs enthalten sein
+#	könnten:
 	cd ${CURDIR}/BBBike/html && \
 	    rm -f newstreetform.html newstreetform.utf8.html fragezeichenform.html fragezeichenform.utf8.html
 	cd ${CURDIR}/BBBike/html && \
 	    ${MAKE} newstreetform.html newstreetform.utf8.html fragezeichenform.html fragezeichenform.utf8.html \
 		CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin
+
 
 prepare-bbbike-dist-prog-stadtplan:
 	[ ! -e ${BBBIKE_ROOT_DIR}/projects/www.berliner-stadtplan.com ] && \

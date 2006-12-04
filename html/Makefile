@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.12 2006/11/02 19:24:38 eserte Exp $
+# $Id: Makefile,v 1.15 2006/12/04 22:38:19 eserte Exp eserte $
 #
 
 # XXX don't duplicate, see ../Makefile.PL
@@ -12,7 +12,9 @@ CGIDIR?=../cgi
 
 all:	newstreetform.html newstreetform.utf8.html \
 	fragezeichenform.html fragezeichenform.utf8.html \
-	bbbike_small
+	bbbike_small \
+	bbbike-opensearch \
+	bbbike-opensearch-images
 
 bbbike_small:	bbbike_small.html bbbike_small.en.html \
 		bbbike_sidebar.html bbbike_sidebar.en.html
@@ -40,3 +42,63 @@ fragezeichenform.html: newstreetform.tpl.html
 fragezeichenform.utf8.html: newstreetform.tpl.html
 	${TPAGE} --define cgidir=${CGIDIR} --define is_fragezeichen_form=1 --define nometacharset=1 --define encoding=utf-8 newstreetform.tpl.html | piconv -f latin1 -t utf8 > $@
 	chmod ugo+r $@
+
+bbbike-opensearch:	opensearch/bbbike-opensearch-de-simple.xml \
+			opensearch/bbbike-opensearch-de.xml \
+			opensearch/bbbike-opensearch-en-simple.xml \
+			opensearch/bbbike-opensearch-en.xml \
+			opensearch/bbbike-opensearch-de-simple.src \
+			opensearch/bbbike-opensearch-de.src \
+			opensearch/bbbike-opensearch-en-simple.src \
+			opensearch/bbbike-opensearch-en.src
+
+opensearch/bbbike-opensearch-de-simple.xml: opensearch/bbbike-opensearch.tpl.xml
+	${TPAGE} --define lang=de --define lang_msg=deutsch --define type_msg=einfach --define paramspec='start={searchTerms}' $> > $@
+	chmod ugo+r $@
+
+opensearch/bbbike-opensearch-de.xml: opensearch/bbbike-opensearch.tpl.xml
+	${TPAGE} --define lang=de --define lang_msg=deutsch --define type_msg=erweitert --define paramspec='ossp={searchTerms}' $> > $@
+	chmod ugo+r $@
+
+opensearch/bbbike-opensearch-en-simple.xml: opensearch/bbbike-opensearch.tpl.xml
+	${TPAGE} --define lang=en --define lang_msg=english --define type_msg=einfach --define paramspec='start={searchTerms}' $> > $@
+	chmod ugo+r $@
+
+opensearch/bbbike-opensearch-en.xml: opensearch/bbbike-opensearch.tpl.xml
+	${TPAGE} --define lang=en --define lang_msg=english --define type_msg=erweitert --define paramspec='ossp={searchTerms}' $> > $@
+	chmod ugo+r $@
+
+opensearch/bbbike-opensearch-de-simple.src: opensearch/bbbike-opensearch.tpl.src
+	${TPAGE} --define lang=de --define lang_msg=deutsch --define type_msg=einfach --define type=simple --define paramspec='start={searchTerms}' $> > $@
+	chmod ugo+r $@
+
+opensearch/bbbike-opensearch-de.src: opensearch/bbbike-opensearch.tpl.src
+	${TPAGE} --define lang=de --define lang_msg=deutsch --define type_msg=erweitert --define paramspec='ossp={searchTerms}' $> > $@
+	chmod ugo+r $@
+
+opensearch/bbbike-opensearch-en-simple.src: opensearch/bbbike-opensearch.tpl.src
+	${TPAGE} --define lang=en --define lang_msg=english --define type_msg=einfach --define type=simple --define paramspec='start={searchTerms}' $> > $@
+	chmod ugo+r $@
+
+opensearch/bbbike-opensearch-en.src: opensearch/bbbike-opensearch.tpl.src
+	${TPAGE} --define lang=en --define lang_msg=english --define type_msg=erweitert --define paramspec='ossp={searchTerms}' $> > $@
+	chmod ugo+r $@
+
+bbbike-opensearch-images:	\
+			opensearch/bbbike-opensearch-de-simple.gif \
+			opensearch/bbbike-opensearch-de.gif \
+			opensearch/bbbike-opensearch-en-simple.gif \
+			opensearch/bbbike-opensearch-en.gif
+
+opensearch/bbbike-opensearch-de-simple.gif:
+	cd opensearch && ln -s ../../images/srtbike16.gif bbbike-opensearch-de-simple.gif
+
+opensearch/bbbike-opensearch-de.gif:
+	cd opensearch && ln -s ../../images/srtbike16.gif bbbike-opensearch-de.gif
+
+opensearch/bbbike-opensearch-en-simple.gif:
+	cd opensearch && ln -s ../../images/srtbike16.gif bbbike-opensearch-en-simple.gif
+
+opensearch/bbbike-opensearch-en.gif:
+	cd opensearch && ln -s ../../images/srtbike16.gif bbbike-opensearch-en.gif
+
