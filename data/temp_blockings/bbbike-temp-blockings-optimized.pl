@@ -158,14 +158,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1164927600,
-         'text' => 'B 096 Gransee-Fürstenberg Brücke über Wentowkanal bei Dannenwalde Brückenabriß- u. -neubau Vollsperrung 20.02.2006-30.11.2006 ',
-         'from' => 1140303600,
-         'data' => 'userdel	2 -5962,74421 -6037,73865
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -307,14 +300,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        undef,
-       {
-         'until' => 1164927600,
-         'text' => 'L 338 Rahnsdorfer Str. OD Schöneiche, Brücke über Jägergraben Brückenneubau Vollsperrung 07.06.2006-30.11.2006 ',
-         'from' => 1149544800,
-         'data' => 'userdel	2::inwork 30221,7373 30118,8128
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -415,14 +401,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        undef,
-       {
-         'until' => 1164927600,
-         'text' => 'K 6425 Rudolf-Breitscheid-Allee OD Neuenhagen, zw. Am Friedhof u. Krz. Hönower Chaussee Straßen- uned Gehwegbau halbseitig gesperrt; Einbahnstraße 17.07.2006-30.11.2006 ',
-         'from' => 1153000800,
-         'data' => 'userdel	q4::inwork 29743,14143 29093,13456
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -468,14 +447,7 @@ userdel	1::inwork 10781,13002 10706,13043
        undef,
        undef,
        undef,
-       {
-         'until' => 1164927600,
-         'text' => 'B 109 B167-Zehdenick OD Falkenthal grundhafter Straßenbau Vollsperrung 07.08.2006-30.11.2006 ',
-         'from' => 1154815200,
-         'data' => 'userdel	2::inwork 2775,56089 2034,55227
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -503,15 +475,6 @@ userdel	1::inwork 10781,13002 10706,13043
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_004079',
-         'until' => 1164927599,
-         'text' => 'Rixdorfer Str. (Treptow) Richtung Südostallee zwischen Schnellerstr. und Kiefholzstr. Baustelle, Fahrtrichtung gesperrt Richtung A113 Auffahrt Späthstr. über Schnellerstr. - Köpenicker Landstr. - Baumschulenstr. (bis Ende 11.2006)',
-         'from' => 1163530090,
-         'data' => 'userdel	1::inwork 17290,6228 17239,6182 17156,6235 16861,5935
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -522,33 +485,13 @@ userdel	1::inwork 10781,13002 10706,13043
        undef,
        undef,
        undef,
-       {
-         'until' => 1164927599,
-         'text' => 'Hegemeisterweg ist vom 7. August 2006 bis zum 30. November 2006 nicht benutzbar. ',
-         'from' => 1154815200,
-         'data' => 'userdel	2::inwork 17775,7874 17987,7973 18387,7742
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
-       {
-         'until' => 1164927600,
-         'text' => 'L 030 Rüdersdorfer Str. OD Woltersdorf Straßenbau, Entwässerung Vollsperrung 28.08.2006-30.11.2006 ',
-         'from' => 1156629600,
-         'data' => 'userdel	q4::inwork 34535,5319 34579,5745
-',
-         'type' => 'handicap'
-       },
        undef,
-       {
-         'until' => 1164927600,
-         'text' => 'L 811 OA Oehna - Landesgrenze Sachsen-A. OA Oehna - Landesgrenze Sachsen-A. Straßenausbau Vollsperrung 28.08.2006-30.11.2006 ',
-         'from' => 1156629600,
-         'data' => 'userdel	2::inwork -13946,-56116 -13817,-54938 -13601,-53865
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
+       undef,
        undef,
        undef,
        {
@@ -621,24 +564,10 @@ userdel	1::inwork 10781,13002 10706,13043
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1164927600,
-         'text' => 'L 861 Damsdorf-B 1 Plessow OD Göhlsdorf, Hauptstr., Plötziner Str. Kanal- und Straßenbau Vollsperrung 09.09.2006-30.11.2006 ',
-         'from' => 1157666400,
-         'data' => 'userdel	q4::inwork -29624,-5855 -29900,-5879 -30199,-5774
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
-       {
-         'until' => 1164927600,
-         'text' => 'B 096 Gransee-Fürstenberg Brücke über Wentowkanal bei Dannenwalde Brückenabriß- u. -neubau Vollsperrung 20.02.2006-30.11.2006 ',
-         'from' => 1140303600,
-         'data' => 'userdel	2::inwork -5962,74421 -6037,73865
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1166742000,
          'text' => 'L 014 Großderschau-Kyritz Brücke über den Graben bei Babe Brückenneubau Vollsperrung 11.07.2006-21.12.2006 ',
@@ -656,31 +585,9 @@ userdel	1::inwork 10781,13002 10706,13043
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1164927600,
-         'text' => 'K 6801 Berliner Str. OL Fehrbellin, zw. Brunner Str. u. Ruppiner Str. Straßensanierung Vollsperrung 18.09.2006-30.11.2006 ',
-         'from' => 1158444000,
-         'data' => 'userdel	q4::inwork -33790,44573 -33927,44655
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_003182',
-         'until' => 1164927599,
-         'text' => 'Lindenberger Str. (Hohenschönhausen) in beiden Richtungen zwischen Fennpfuhlweg und Birkholzer Weg Für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Ende 11.2006)',
-         'from' => 1158618096,
-         'data' => 'userdel	q4::inwork 18061,19097 18073,19216 18109,19352
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1165100400,
-         'text' => 'B 002 Eberswalde-Angermünde zw. Abzw. Britz und BÜ Chorin Deckenerneuerung Vollsperrung 04.10.2006-02.12.2006 ',
-         'from' => 1159826400,
-         'data' => 'userdel	2::inwork 38845,51258 41075,53327 41587,53787 41654,53939 41847,54619 42231,54671 42595,54932 42742,54938 42749,55043 42452,55538 42981,57104 43462,57600 43581,57725
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -764,20 +671,21 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
        },
        undef,
        undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
-         'until' => 1164927600,
-         'text' => 'L 017 Schwante-Staffelde OD Groß Ziethen Kanalarbeiten Vollsperrung 11.10.2006-30.11.2006 ',
-         'from' => 1160431200,
-         'data' => 'userdel	q4::inwork -17150,35462 -16293,35362 -16087,35343 -15837,35537
+         'source_id' => 'IM_003744',
+         'until' => 1165618800,
+         'text' => 'Leibnizstr. (Charlottenburg ) in Richtung Süd,, zwischen Otto-Suhr-Allee und Bismarckstr. Baustelle, Fahrtrichtung gesperrt (bis 08.12.2006)',
+         'from' => 1164916572,
+         'data' => 'userdel	1::inwork 4359,11979 4345,11710
 ',
-         'type' => 'handicap'
+         'type' => 'gesperrt'
        },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'until' => 1166655600,
          'text' => 'L 029 Oderberg-Niederfinow OD Liepe grundhafter Straßenbau Vollsperrung 04.10.2006-20.12.2006 ',
@@ -786,14 +694,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1165014000,
-         'text' => 'L 040 Chausseestraße OD Diedersdorf, zw. Bhf.- u. Mahlower Str. Grundhafter Ausbau Vollsperrung 04.10.2006-01.12.2006 ',
-         'from' => 1159826400,
-         'data' => 'userdel	q4::inwork 7558,-7093 7981,-7165 9170,-7708
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -817,14 +718,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1164927600,
-         'text' => 'K 6003 Friedrichswalde-L100 Gollin zw. Friedrichswalde und Kreisgrenze Straßenbau Vollsperrung 04.09.2006-30.11.2006 ',
-         'from' => 1157234400,
-         'data' => 'userdel	2::inwork 28975,69975 28100,70162 26500,71425
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1173999600,
          'text' => 'L 029 Wandlitz-Schmachtenhagen OD Zehlendorf grundhafter Straßenbau Vollsperrung 06.07.2006-15.03.2007 ',
@@ -885,14 +779,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
        undef,
        undef,
        undef,
-       {
-         'until' => 1164841200,
-         'text' => 'B 101 Haag OD Luckenwalde, Kno. Beelitzer Str. Straßenausbau Vollsperrung 01.11.2006-29.11.2006 ',
-         'from' => 1162249200,
-         'data' => 'userdel	2::inwork -4609,-35650 -4299,-35198
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1177970400,
          'text' => 'K 6411 Neulewin-Wriezen zw. OL Neulewin und Kerstenbruch Straßenbauarbeiten Vollsperrung 01.11.2006-30.04.2007 ',
@@ -998,13 +885,42 @@ userdel	2::temp 9918,12411 9926,12368
 ',
          'type' => 'handicap'
        },
+       undef,
+       undef,
        {
-         'until' => 1164754800,
-         'text' => 'B 166 Berliner Str., Lindenallee OD Schwedt Deckenerneuerung Vollsperrung 21.11.2006-28.11.2006 ',
-         'from' => 1163977200,
-         'data' => 'userdel	q4::inwork 69480,73471 69238,73315
+         'until' => 1180648800,
+         'text' => 'B 198 Straße des Friedens OD Angermünde, zw. Am Kamp u. Krz. Berliner-/Gartenstr. Kanal- und Straßenbau Vollsperrung 28.08.2006-31.05.2007 ',
+         'from' => 1156629600,
+         'data' => 'userdel	q4::inwork 49728,68465 49875,68362
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_004242',
+         'until' => 1175378399,
+         'text' => 'Pankower Allee (Reinickendorf) in Richtung Markstr., zwischen Reginhardstr. und Residenzstr. Baustelle, Fahrtrichtung gesperrt (bis 03/2007)',
+         'from' => 1164916649,
+         'data' => 'userdel	1::inwork 8211,17585 8095,17574 7998,17564 7841,17551 7675,17538 7587,17532
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_004266',
+         'until' => 1165705200,
+         'text' => 'Am Falkenberg (Treptow) in Richtung Buntzelstr., zwischen Bruno-Taut-Str. und Kirchsteig Baustelle, Fahrtrichtung gesperrt (bis 09.12.06)',
+         'from' => 1165266184,
+         'data' => 'userdel	2::inwork 21847,794 22012,706
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_004267',
+         'until' => 1166223599,
+         'text' => 'Chemnitzer Str. (Marzahn) in Richtung Nord, zwischen Am Niederfeld und Alt-Kausldorf Baustelle, Fahrtrichtung gesperrt (bis Mitte 12/2006)',
+         'from' => 1165266208,
+         'data' => 'userdel	1::inwork 22429,11056 22473,11272
+',
+         'type' => 'gesperrt'
        }
      
 );

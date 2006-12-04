@@ -6749,4 +6749,22 @@ EOF
 userdel	1::inwork 8211,17585 8095,17574 7998,17564 7841,17551 7675,17538 7587,17532
 EOF
      },
+     { from  => 1165266184, # 2006-12-04 22:03
+       until => 1165705200, # 2006-12-10 00:00
+       text  => 'Am Falkenberg (Treptow) in Richtung Buntzelstr., zwischen Bruno-Taut-Str. und Kirchsteig Baustelle, Fahrtrichtung gesperrt (bis 09.12.06)',
+       type  => 'gesperrt',
+       source_id => 'IM_004266',
+       data  => <<EOF,
+userdel	2::inwork 21847,794 22012,706
+EOF
+     },
+     { from  => 1165266208, # 2006-12-04 22:03
+       until => 1166223599, # 2006-12-15 23:59
+       text  => 'Chemnitzer Str. (Marzahn) in Richtung Nord, zwischen Am Niederfeld und Alt-Kausldorf Baustelle, Fahrtrichtung gesperrt (bis Mitte 12/2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_004267',
+       data  => <<EOF,
+userdel	1::inwork 22429,11056 22473,11272
+EOF
+     },
     );
