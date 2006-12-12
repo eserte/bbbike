@@ -671,15 +671,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_003744',
-         'until' => 1165618800,
-         'text' => 'Leibnizstr. (Charlottenburg ) in Richtung Süd,, zwischen Otto-Suhr-Allee und Bismarckstr. Baustelle, Fahrtrichtung gesperrt (bis 08.12.2006)',
-         'from' => 1164916572,
-         'data' => 'userdel	1::inwork 4359,11979 4345,11710
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -789,15 +781,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_003935',
-         'until' => 1165618800,
-         'text' => 'Kynaststr (Lichtenberg) in Richtung Marktstr., zwischen Haupstr. und Markstr. Baustelle, Fahrtrichtung gesperrt (bis 08.12.06)',
-         'from' => 1163800165,
-         'data' => 'userdel	q4::inwork; 14881,10864 14897,10935 14988,11130
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1166828400,
          'text' => 'B 005 Berliner Str. OD Petershagen, zw. Betonstr. und Ortsausgang Kanal- und Straßenbauarbeiten Vollsperrung 16.08.2006-22.12.2006 ',
@@ -829,14 +813,7 @@ userdel	2::inwork 13150,11101 13240,11279 13056,11329
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1166828400,
-         'text' => 'L 030 zw. Ortsumgehung Altlandsberg und OE Altlandsberg Deckenerneuerung Vollsperrung 13.11.2006-22.12.2006 ',
-         'from' => 1163286000,
-         'data' => 'userdel	2::inwork 33589,15778 32985,17127 32665,17841
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -904,15 +881,7 @@ userdel	2::temp 9918,12411 9926,12368
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_004266',
-         'until' => 1165705200,
-         'text' => 'Am Falkenberg (Treptow) in Richtung Buntzelstr., zwischen Bruno-Taut-Str. und Kirchsteig Baustelle, Fahrtrichtung gesperrt (bis 09.12.06)',
-         'from' => 1165266184,
-         'data' => 'userdel	2::inwork 21847,794 22012,706
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_004267',
          'until' => 1166223599,
@@ -921,6 +890,32 @@ userdel	2::temp 9918,12411 9926,12368
          'data' => 'userdel	1::inwork 22429,11056 22473,11272
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'until' => 1185832800,
+         'text' => 'L 016 Paaren-Börnicke OD Grünefeld Kanal- und Straßenbau Vollsperrung 04.12.2006-30.07.2007 ',
+         'from' => 1165100400,
+         'data' => 'userdel	q4::inwork -19313,29417 -19894,29478
+',
+         'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => 1170198000,
+         'text' => 'L 030 Rüdersdorfer Str. OD Woltersdorf, zw. R.-Breitschei-Str. u. Interlakenstr. Straßenbau, Entwässerung Vollsperrung 28.08.2006-30.01.2007 ',
+         'from' => 1156629600,
+         'data' => 'userdel	2::inwork 34579,5745 34535,5319
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1166482800,
+         'text' => 'L 285 Günterberg-Schönermark OD Günterberg Kanal- und Straßenbau Vollsperrung 21.07.2006-18.12.2006 ',
+         'from' => 1153346400,
+         'data' => 'userdel	q4::inwork 48203,79315 47124,77624
+',
+         'type' => 'handicap'
        }
      
 );

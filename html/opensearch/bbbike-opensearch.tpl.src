@@ -6,8 +6,8 @@
 
 <search
 	version="7.1"
-	name="BBBike ([% lang_msg %])"
-	description="BBBike ([% lang_msg %])"
+	name="BBBike ([% lang %], [% type_msg %])"
+	description="BBBike ([% lang_msg %], [% type_msg %])"
 	sourceTextEncoding="0"
 	method="GET"
 	action="http://bbbike.radzeit.de/cgi-bin/bbbike.cgi"

@@ -228,9 +228,9 @@ userdel	2 15751,10582 16032,10842
 userdel	2 15751,10582 15629,10481
 EOF
      },
-     { from  => 1133420400, # 2005-12-01 08:00
-       until => 1133737200, # 2005-12-05 00:00
-       text  => 'Richardplatz Alt-Rixdorfer Weihnachtsmarkt, gesperrt. Dauer: 02.12.2005, 08:00 Uhr bis 04.12.2005, 24:00 Uhr. ',
+     { from  => undef,
+       until => Time::Local::timelocal(reverse(2006,12-1,9,23,59,59)),
+       text  => 'Richardplatz Alt-Rixdorfer Weihnachtsmarkt, gesperrt. Dauer: bis 09.12.2006. ',
        type  => 'gesperrt',
        file  => 'rixdorfer_weihnachtsmarkt.bbd',
      },
@@ -1527,7 +1527,7 @@ EOF
        text  => 'Ringstr. (Steglitz) Richtung Finkensteinallee zwischen Drakestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 12.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 3507,3635 3375,3544 3184,3413 3050,3316 2701,3064 2639,2989 2638,2843
+userdel	q4; 3507,3635 3375,3544 3234,3447 3184,3413 3050,3316 3021,3295 2781,3122 2701,3064 2639,2989 2638,2843
 EOF
      },
      { from  => 1110917391, # 2005-03-15 21:09
@@ -3454,14 +3454,13 @@ EOF
 userdel	2::inwork -19908,17940 -18793,18169
 EOF
      },
-     { from  => 1134104400, # 2005-12-09 06:00
-       until => 1134345600, # 2005-12-12 01:00
-       text  => 'Bahnhofstraße zwischen Goltzstraße und Steinstraße, Weihnachtsmarkt, Straße gesperrt. Dauer: 10.12.2005 06:00 Uhr bis 12.12.2005 01:00 Uhr. ',
+     { from  => 1165660181, # 2006-12-09 11:29
+       until => 1165708800, # 2006-12-10 01:00
+       text  => 'Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr. Veranstaltung, Straße vollständig gesperrt (Weihnachtsmarkt) (bis 10.12.2006 01:00 Uhr) ',
        type  => 'gesperrt',
+       source_id => 'IM_004172',
        data  => <<EOF,
-userdel	2::temp 10945,-2124 10747,-2129
-userdel	2::temp 10310,-2136 10453,-2133
-userdel	2::temp 10453,-2133 10747,-2129
+userdel	q4 10310,-2136 10453,-2133 10747,-2129 10945,-2124
 EOF
      },
      { from  => 1134255600, # 2005-12-11 00:00
@@ -5845,8 +5844,8 @@ userdel	q4::inwork 18061,19097 18073,19216 18109,19352
 EOF
      },
      { from  => 1159826400, # 2006-10-03 00:00
-       until => 1165100400, # 2006-12-03 00:00
-       text  => 'B 002 Eberswalde-Angermünde zw. Abzw. Britz und BÜ Chorin Deckenerneuerung Vollsperrung 04.10.2006-02.12.2006 ',
+       until => 1165618800, # 2006-12-09 00:00
+       text  => 'B 002 Eberswalde-Angermünde zw. Abzw. Britz und BÜ Chorin Deckenerneuerung Vollsperrung 04.10.2006-08.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 38845,51258 41075,53327 41587,53787 41654,53939 41847,54619 42231,54671 42595,54932 42742,54938 42749,55043 42452,55538 42981,57104 43462,57600 43581,57725
@@ -6588,8 +6587,8 @@ userdel	2::inwork 14153,-17829 13282,-18250 13048,-18384
 EOF
      },
      { from  => 1163286000, # 2006-11-12 00:00
-       until => 1166828400, # 2006-12-23 00:00
-       text  => 'L 030 zw. Ortsumgehung Altlandsberg und OE Altlandsberg Deckenerneuerung Vollsperrung 13.11.2006-22.12.2006 ',
+       until => 1165618800, # 2006-12-09 00:00
+       text  => 'L 030 zw. Ortsumgehung Altlandsberg und OE Altlandsberg Deckenerneuerung Vollsperrung 13.11.2006-08.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 33589,15778 32985,17127 32665,17841
@@ -6750,7 +6749,7 @@ userdel	1::inwork 8211,17585 8095,17574 7998,17564 7841,17551 7675,17538 7587,17
 EOF
      },
      { from  => 1165266184, # 2006-12-04 22:03
-       until => 1165705200, # 2006-12-10 00:00
+       until => 1165610763, # 1165705200 2006-12-10 00:00
        text  => 'Am Falkenberg (Treptow) in Richtung Buntzelstr., zwischen Bruno-Taut-Str. und Kirchsteig Baustelle, Fahrtrichtung gesperrt (bis 09.12.06)',
        type  => 'gesperrt',
        source_id => 'IM_004266',
@@ -6765,6 +6764,47 @@ EOF
        source_id => 'IM_004267',
        data  => <<EOF,
 userdel	1::inwork 22429,11056 22473,11272
+EOF
+     },
+     { from  => 1165532400, # 2006-12-08 00:00
+       until => 1165705200, # 2006-12-10 00:00
+       text  => 'B 102 Große Milower Str. OD Rathenow, zw. Eigendorfstr. u. Grünauer Weg Neub. B188n, Brückenbauarb. Vollsperrung 09.12.2006-09.12.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -62269,19881 -62333,20390
+EOF
+     },
+     { from  => 1165100400, # 2006-12-03 00:00
+       until => 1185832800, # 2007-07-31 00:00
+       text  => 'L 016 Paaren-Börnicke OD Grünefeld Kanal- und Straßenbau Vollsperrung 04.12.2006-30.07.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -19313,29417 -19894,29478
+EOF
+     },
+     { from  => 1165389396, # 2006-12-06 08:16
+       until => 1165618800, # 2006-12-09 00:00
+       text  => 'Rosenthaler Str. (Mitte) Richtung Hackescher Markt zwischen Neue Schönhauser Str. und Hackescher Markt Baustelle, Fahrtrichtung gesperrt (bis 08.12.2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_004277',
+       data  => <<EOF,
+userdel	1::inwork 10305,13211 10264,13097
+EOF
+     },
+     { from  => 1156629600, # 2006-08-27 00:00
+       until => 1170198000, # 2007-01-31 00:00
+       text  => 'L 030 Rüdersdorfer Str. OD Woltersdorf, zw. R.-Breitschei-Str. u. Interlakenstr. Straßenbau, Entwässerung Vollsperrung 28.08.2006-30.01.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 34579,5745 34535,5319
+EOF
+     },
+     { from  => 1153346400, # 2006-07-20 00:00
+       until => 1166482800, # 2006-12-19 00:00
+       text  => 'L 285 Günterberg-Schönermark OD Günterberg Kanal- und Straßenbau Vollsperrung 21.07.2006-18.12.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 48203,79315 47124,77624
 EOF
      },
     );

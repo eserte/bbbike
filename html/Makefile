@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.15 2006/12/04 22:38:19 eserte Exp eserte $
+# $Id: Makefile,v 1.16 2006/12/08 21:15:35 eserte Exp $
 #
 
 # XXX don't duplicate, see ../Makefile.PL
