@@ -53,9 +53,9 @@ Methfesselstr.: Kopfsteinpflaster	Q2 9106,9038 9057,8936 8982,8781
 Wilhelmshöhe: Verbundsteinpflaster	Q1 9235,9111 9186,9107 9155,9029 9149,8961
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7231,7349 7230,7264 7222,6458 7217,6065 7216,5888 7175,5843
 Großgörschenstr.: mäßiges Kopfsteinpflaster	Q2 8186,9380 8086,9418 8035,9437 7960,9466
-Waldemarstr.: Kopfsteinpflaster, OK	Q1 11556,10869 11328,10957
+Waldemarstr.: Kopfsteinpflaster	Q2 11556,10869 11328,10957
 Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11287,10976
-Waldemarstr.: Kopfsteinpflaster, OK	Q1 11287,10976 11145,11042
+Waldemarstr.: Kopfsteinpflaster	Q2 11287,10976 11145,11042
 Erkelenzdamm: Kopfsteinpflaster	Q2 11021,10242 11089,10276 11114,10338 11102,10442 11135,10519 11200,10678 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11269,10731 11302,10804 11270,10820 11328,10957 11365,11047 11421,11073 11461,11145 11473,11180
 Legiendamm: Kopfsteinpflaster	Q2 11349,11227 11337,11197 11307,11125
@@ -604,7 +604,6 @@ Curtiusstr.: Asphalt	Q0 2194,3169 2272,3188 2297,3322 2326,3478 2746,3699 2962,3
 Curtiusstr.: Kopfsteinpflaster	Q2 3024,3863 3201,3968 3259,4002
 Rominter Allee: Kopfsteinpflaster (Q2, vielleicht aber Q1?)	Q2 -99,12019 -95,12038 -125,12173 -163,12303 -287,12460 -328,12654 -396,12749 -410,12792 -472,12961 -435,12997 -426,13030 -421,13050
 Waldemarstr.: teilweise Kopfsteinpflaster/Asphalt	Q1 12180,10604 12145,10618 12056,10655
-Sebastianstr.: Bordsteine	Q3 10918,11084 10939,11045
 Wuhlheide/R1: Parkweg, OK	Q1 19996,6410 19607,6582 19052,6823 18186,7200 18052,7148 18003,7144
 Sobernheimer Str.: Kopfsteinpflaster/Asphalt	Q2 27609,305 27667,368 27741,446 28188,962
 An der Krampe: Waldweg, OK	Q1 28520,281 28430,259 28349,364 28300,364 28310,269 28265,157 28265,68 28213,-45 28199,-346 28107,-336 28008,-390 27978,-473 27847,-665
@@ -612,7 +611,8 @@ An der Krampe: schlechter Waldweg, Wurzeln	Q3 27847,-665 27803,-742 27759,-995 2
 Am Seddinsee: Waldweg	Q2 28163,-2013 28338,-2265 28443,-2317 28527,-2347 28568,-2346 28794,-2258 28898,-1986 28841,-1872
 Am Seddinsee: teils schlechter Waldweg	Q3 28841,-1872 29229,-1676 29204,-1545 29334,-1343 29475,-1275 29602,-1051 30028,-891 30162,-747 30218,-529 30570,-351 30778,-326
 Zum Seddinsee: teils schlechter Waldweg	Q3 30839,106 30859,-6 30778,-326
-Melchiorstr.: nördliche Fahrbahn: mäßiger Asphalt	Q1; 11921,11185 11726,11265 11542,11342
+Melchiorstr.: mäßiger Asphalt	Q1 11921,11185 11726,11265
+Melchiorstr.: mäßiger Asphalt	Q1; 11726,11265 11542,11342
 Hansaufer: Kopfsteinpflaster	Q2 5876,12585 5804,12490 5740,12407
 Unionstr: Kopfsteinpflaster	Q2 5778,14078 5943,14049
 Bremer Str.: Kopfsteinpflaster	Q2 5962,14156 5943,14049
@@ -1407,6 +1407,7 @@ Bachstr. (Köpenick): asphaltiert	Q0 21861,6719 21785,6703 21700,6700
 Wassermannstr.: asphaltiert	Q0 20796,3721 20637,3919 20414,4186
 Köbisstr.: glatte Gehwegplatten	Q0 7160,11225 6853,11336
 Hiroshimasteg: unebene Holzbohlen	Q1 7251,11202 7251,11181 7248,11143
+Melchiorstr. - Mariannenplatz: unbefestigt	Q2 11921,11185 11956,11166
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 364,4829 319,4906 168,5092 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2240,6904 2116,6861 2054,6840 1975,6818
@@ -1786,10 +1787,10 @@ Togostr.	Q0 6260,16081 6119,16203
 Togostr.	Q0 6119,16203 5918,16389 5602,16718 5315,16936
 Kommandantenstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 3028,2856 3036,3050 3050,3316 3055,3515 3060,3694
 Geibelstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 2781,3122 2765,3184 2748,3393 2734,3563 2712,3602
+Friedrichstr. (Lichterfelde): Kopfsteinpflaster	Q2 3185,3476 3055,3515
 Friedrichstr. (Lichterfelde): glatter Asphalt	Q0 3055,3515 2890,3561
 Friedrichstr. (Lichterfelde): Verbundsteinpflaster	Q1 2890,3561 2712,3602
-Pfleidererstr. (Lichterfelde): sehr glatt	Q0 3021,3295 2998,3324 2832,3372
-Pfleidererstr. (Lichterfelde): sehr glatt	Q0 2832,3372 2748,3393
+Pfleidererstr. (Lichterfelde): sehr glatt	Q0 3021,3295 2998,3324 2832,3372 2748,3393
 Kadettenweg: schlechtes Kopfsteinpflaster	Q3 2962,3827 3045,3718 3060,3694 3186,3515 3234,3447
 Kadettenweg: sehr glatte Asphaltstraße	Q0 3234,3447 3328,3313 3348,3278 3450,3142 3462,3113 3461,3028 3459,2944 3456,2835
 Baseler Str.: Kopfsteinpflaster	Q2 3148,1888 3151,2224 3154,2467 3171,2848 3180,3035 3184,3413 3185,3476 3186,3515 3193,3793 3201,3968

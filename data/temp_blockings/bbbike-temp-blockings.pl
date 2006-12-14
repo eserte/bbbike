@@ -5971,7 +5971,7 @@ userdel	q4::inwork 11019,-8435 11555,-8625
 EOF
      },
      { from  => 1159308000, # 2006-09-27 00:00
-       until => 1166828400, # 2006-12-23 00:00
+       until => 1165952561, # 1166828400 2006-12-23 00:00
        text  => 'L 304 AS Bernau Nord - B273 AS Bernau Nord - B273 Straßenbau Vollsperrung 28.09.2006-22.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -6008,8 +6008,7 @@ EOF
        text  => 'Bau der O2-World, bis 2008',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 13214,11064 13150,11101 13080,10956
-userdel	2::inwork 13150,11101 13240,11279 13056,11329
+userdel	2::inwork 13056,11329 13240,11279 13150,11101
 EOF
      },
      { from  => 1159135200, # 2006-09-25 00:00
@@ -6805,6 +6804,31 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 48203,79315 47124,77624
+EOF
+     },
+     { from  => 1165952495, # 2006-12-12 20:41
+       until => 1166310000, # 2006-12-17 00:00
+       text  => 'L20 Schönwalder Str. in beiden Richtungen zwischen Schönwalde und Bötzow Baustelle, Straße vollständig gesperrt: Schönwalde - Pausin - Wansdorf - Bötzow (bis 16.12.2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_004322',
+       data  => <<EOF,
+userdel	2::inwork -7640,26928 -7309,26146 -7243,25847 -7230,25622 -7260,25515 -7421,24956 -7603,24696
+EOF
+     },
+     { from  => 1165705200, # 2006-12-10 00:00
+       until => 1166828400, # 2006-12-23 00:00
+       text  => 'B 246 Nächst Neuendorfer Chaussee OD Zossen, Bahnübergang Kanalarbeiten Vollsperrung 11.12.2006-22.12.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 13623,-20519 13414,-20498 13326,-20518
+EOF
+     },
+     { from  => 1166050800, # 2006-12-14 00:00
+       until => 1166569200, # 2006-12-20 00:00
+       text  => 'K 6161 Friedensstr. Bahnübergang in der OD Eichwalde Gleisbauarbeiten Vollsperrung 15.12.2006-19.12.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 25185,-3955 25269,-4041 25372,-4019
 EOF
      },
     );

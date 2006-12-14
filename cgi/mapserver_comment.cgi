@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.34 2006/10/01 22:13:37 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.34 2006/10/01 22:13:37 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -195,10 +195,20 @@ eval {
 
     my $is_multipart = defined $add_html_body && $add_html_body ne "";
     $subject = substr($subject, 0, 70) . "..." if length $subject > 70;
-    my $msg = MIME::Lite->new(Subject => $subject,
-			      To      => $to,
-			      (defined $cc ? (Cc => $cc) : ()),
-			      ($email ? ("Reply-To" => $email) : ()),
+
+    my($subject_mime, $to_mime, $cc_mime, $email_mime) =
+	($subject, $to, $cc, $email);
+    if (eval { require Encode; 1 }) {
+	for ($subject_mime, $to_mime, $cc_mime, $email_mime) {
+	    $_ = Encode::encode("MIME-Q", $_)
+		if defined $_;
+	}
+    }
+
+    my $msg = MIME::Lite->new(Subject => $subject_mime,
+			      To      => $to_mime,
+			      (defined $cc_mime ? (Cc => $cc_mime) : ()),
+			      ($email_mime ? ("Reply-To" => $email_mime) : ()),
 			      ($is_multipart
 			       ? (Type => "multipart/mixed")
 			       : (Type => "text/plain; charset=iso-8859-1",

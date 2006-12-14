@@ -616,14 +616,7 @@ userdel	1::inwork 10781,13002 10706,13043
        },
        undef,
        undef,
-       {
-         'until' => 1166828400,
-         'text' => 'L 304 AS Bernau Nord - B273 AS Bernau Nord - B273 Straßenbau Vollsperrung 28.09.2006-22.12.2006 ',
-         'from' => 1159308000,
-         'data' => 'userdel	2::inwork 18242,34708 18742,34289 19275,33344
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -631,8 +624,7 @@ userdel	1::inwork 10781,13002 10706,13043
          'until' => 1199227362,
          'text' => 'Bau der O2-World, bis 2008',
          'from' => undef,
-         'data' => 'userdel	2::inwork 13214,11064 13150,11101 13080,10956
-userdel	2::inwork 13150,11101 13240,11279 13056,11329
+         'data' => 'userdel	2::inwork 13056,11329 13240,11279 13150,11101
 ',
          'type' => 'gesperrt'
        },
@@ -916,6 +908,31 @@ userdel	2::temp 9918,12411 9926,12368
          'data' => 'userdel	q4::inwork 48203,79315 47124,77624
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_004322',
+         'until' => 1166310000,
+         'text' => 'L20 Schönwalder Str. in beiden Richtungen zwischen Schönwalde und Bötzow Baustelle, Straße vollständig gesperrt: Schönwalde - Pausin - Wansdorf - Bötzow (bis 16.12.2006)',
+         'from' => 1165952495,
+         'data' => 'userdel	2::inwork -7640,26928 -7309,26146 -7243,25847 -7230,25622 -7260,25515 -7421,24956 -7603,24696
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1166828400,
+         'text' => 'B 246 Nächst Neuendorfer Chaussee OD Zossen, Bahnübergang Kanalarbeiten Vollsperrung 11.12.2006-22.12.2006 ',
+         'from' => 1165705200,
+         'data' => 'userdel	2::inwork 13623,-20519 13414,-20498 13326,-20518
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1166569200,
+         'text' => 'K 6161 Friedensstr. Bahnübergang in der OD Eichwalde Gleisbauarbeiten Vollsperrung 15.12.2006-19.12.2006 ',
+         'from' => 1166050800,
+         'data' => 'userdel	2::inwork 25185,-3955 25269,-4041 25372,-4019
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead.t,v 1.16 2006/03/28 20:55:40 eserte Exp $
+# $Id: cgihead.t,v 1.17 2006/12/14 20:01:43 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -21,7 +21,9 @@ BEGIN {
     }
 }
 
+use CGI;
 use Getopt::Long;
+
 my $cgi_dir = $ENV{BBBIKE_TEST_CGIDIR} || "http://localhost/~eserte/bbbike/cgi";
 my $html_dir = $ENV{BBBIKE_TEST_HTMLDIR};
 
@@ -81,7 +83,9 @@ delete $ENV{PERL5LIB}; # override Test::Harness setting
 for my $prog (@prog) {
     my $qs = "";
     if ($prog =~ /mapserver_comment/) {
-	$qs = "?comment=cgihead+test;subject=TEST+IGNORE";
+	$qs = "?" . CGI->new({comment=>"cgihead test",
+			      subject=>"TEST IGNORE הצü",
+			     })->query_string;
     }
     my $absurl = ($prog =~ /^http:/ ? $prog : "$cgi_dir/$prog");
     check_url("$absurl$qs", $prog);
