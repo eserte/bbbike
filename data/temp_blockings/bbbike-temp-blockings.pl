@@ -2514,7 +2514,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002360',
        data  => <<EOF,
-userdel	q2::inwork 9494,15998 9583,15851
+userdel	q2::inwork 9494,15998 9646,15737
 EOF
      },
      { from  => 1124137069, # 2005-08-15 22:17
@@ -4877,7 +4877,7 @@ EOF
        text  => 'B 002 Eberswalder Str. Bahnübergang in OL Melchow Umbau Bahnübergang Vollsperrung 21.06.2006-26.06.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 30143,41500 29468,41438
+userdel	2::inwork 30143,41500 29609,41448 29468,41438
 EOF
      },
      { from  => 1152050400, # 2006-07-05 00:00
@@ -5004,7 +5004,7 @@ EOF
        text  => 'L 029 Bahnhofstr. Bahnübergang in Biesenthal Umbau Bahnübergang Vollsperrung 12.07.2006-30.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 28993,38709 28262,39100 26237,40190
+userdel	2::inwork 28993,38709 28248,39107 26237,40190
 EOF
      },
      { from  => 1152223200, # 2006-07-07 00:00
@@ -5912,9 +5912,9 @@ EOF
 userdel	1::inwork 11301,15668 11192,15721 11093,15771
 EOF
      },
-     { from  => 1160431200, # 2006-10-10 00:00
-       until => 1160690400, # 2006-10-13 00:00
-       text  => 'B 096 Baruth-Wünsdorf Bahnübegang in der OD Neuhof Gleisbauarbeiten Vollsperrung 11.10.2006-12.10.2006 ',
+     { from  => 1166569200, # 2006-12-20 00:00
+       until => 1166742000, # 2006-12-22 00:00
+       text  => 'B 096 Baruth-Wünsdorf Bahnübergang in deer OD Neuhof Straßenbauarbeiten Vollsperrung 21.12.2006-21.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 16407,-29400 16379,-29446 16336,-29511
@@ -6610,7 +6610,7 @@ userdel	1::inwork 14327,-11767 15962,-10958
 EOF
      },
      { from  => 1163194202, # 2006-11-10 22:30
-       until => 1166223599, # 2006-12-15 23:59
+       until => 1166168794, # 1166223599 2006-12-15 23:59
        text  => 'Oberbaumbrücke Richtung Falckensteinstr. Baustelle, unbequemes Passieren (bis Mitte Dezember 2006)',
        type  => 'gesperrt',
        source_id => 'IM_003947',
@@ -6829,6 +6829,22 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 25185,-3955 25269,-4041 25372,-4019
+EOF
+     },
+     { from  => 1166050800, # 2006-12-14 00:00
+       until => 1166482800, # 2006-12-19 00:00
+       text  => 'B 168 Frankfurter Chaussee Bahnübergang Bahnhof Oegeln Gleisbauarbeiten Vollsperrung 15.12.2006-18.12.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 70984,-23637 70075,-24862
+EOF
+     },
+     { from  => 1166310000, # 2006-12-17 00:00
+       until => 1166828400, # 2006-12-23 00:00
+       text  => 'L 025 Schönermark-LG-Woldegk Brücke über den Dammseegraben am OA Fürstenwerder Brückenneubau Vollsperrung 18.12.2006-22.12.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 20336,110197 20035,110983
 EOF
      },
     );

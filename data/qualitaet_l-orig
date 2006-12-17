@@ -37,7 +37,7 @@ nach Garzin und Garzau: teilweise mäßiger, teilweise schlechter Belag (möglicher
 Garzin - Garzau: Asphalt	Q0 49700,16565 49437,16565 49359,15759 49278,15634 47968,14759 47381,14731 46984,14990 46421,14990
 Altlandsberg - Strausberg: sehr guter Asphalt	Q0 32513,18082 33051,18158 33961,17989 34154,17882 34813,17682 35225,17557 35618,17440 36768,17309 38537,17484 38846,17400 39181,17281 39235,17255 39287,17231 39984,16734 40166,16723 40487,16703 40712,16743
 Blumberg - Ahrensfelde: sehr guter Asphalt	Q0 24735,22556 24437,22381 24203,22171 23930,21873 23565,21396 23281,21043 22529,19361 22418,19268 21975,19068
-Bernau - Albertshof: Asphalt	Q0 23081,30990 23427,31286 23686,31370 24210,31811 25093,32573 25524,33041 25869,33211 26538,33271 27249,32862 27745,32583
+Bernau - Albertshof: Asphalt	Q0 23081,30990 23549,31301 23686,31370 24210,31811 25093,32573 25524,33041 25869,33211 26538,33271 27249,32862 27745,32583
 Albertshof - Tempelfelde: Asphalt	Q0 27745,32583 28263,32730 28457,32729 30228,33593 30715,33700 31293,33987
 B96 Oranienburg - Abzweig nach Grüneberg: sehr guter Asphalt	Q0 -816,40730 -1159,41069 -1329,41597 -1480,42369 -1856,43090 -2631,45150 -3168,45996 -3962,47034 -4284,47803 -4587,48481 -5125,48725 -6068,49150 -6042,49596 -6042,49937 -6459,50093 -6671,50534 -6542,51278
 Grüneberg - Liebenberg: OK	Q0 -6542,51278 -6201,51305 -5813,51200 -3395,51242 -2963,51390 -2727,51902 -2382,52285 -515,53700 -417,53951
@@ -264,14 +264,14 @@ Bertikow - Seelübbe: Betonplatten (wie vor Blankenburg)	Q1 44193,94953 43844,954
 #: according_to: "Up na Prenzlow", nördliches Ende per Sicht bestätigt:
 Bertikow - Seelübbe: Sand/Kopfsteinpflaster	Q2 43844,95441 43284,95954 42943,96687
 #: according_to: "Up na Prenzlow", südliches Ende per Sicht bestätigt:
-Seelübbe - Prenzlau: Kopfsteinplaster	Q2 42943,96687 42180,97682 42158,97874 42070,98088 41787,98345 41461,99029 41306,99542 40954,100113
+Seelübbe - Prenzlau: Kopfsteinplaster	Q2 42943,96687 42180,97682 42158,97874 42070,98088 41787,98345 41479,99060 41306,99542 40954,100113
 #: add_fragezeichen: aus der Bahn heraus gesehen
 Seelübbe - Prenzlau: asphaltiert	Q0 40682,100854 40754,100635 40954,100113
 Röpersdorf - Prenzlau: asphaltierter Radweg	Q0 38615,98224 38700,98275 38700,99012 38875,99653 38587,100075 38634,100421 38562,100725 38700,100937 38653,101065
 #: according_to: "Up na Prenzlow":
-Schenkenberger Str. (Prenzlau): Kopfsteinplaster	Q2 40342,102355 40586,102759 40898,103459 40944,103714
+Schenkenberger Str. (Prenzlau): Kopfsteinplaster	Q2 40168,102237 40731,103327 40822,103526 40889,103590 40801,103683
 #: according_to: "Up na Prenzlow":
-Prenzlau - Schenkenberg: Kopfsteinplaster	Q2 40944,103714 41120,103820 42568,105156 42981,105260 43199,105408 44836,106631 45406,107350
+Prenzlau - Schenkenberg: Kopfsteinplaster	Q2 40801,103683 40818,103718 40929,103712 41110,103784 42568,105156 42981,105260 43199,105408 44836,106631 45406,107350
 #: according_to: "Up na Prenzlow":
 Karlshof - Schönfeld: Kopfsteinplaster	Q2 47335,110888 47493,111289 47433,111713 47658,112367 47642,112620 47894,112908
 Schönwerder - B198: zweispuriger Plattenweg	Q1 39192,107687 38970,107400 38860,107132 38580,106837 38516,106706 38525,106532 38034,105319
@@ -485,10 +485,11 @@ Melchow: Kopfsteinpflaster	Q2 48676,87452 48404,87292 48162,86912
 B198 - Görlsdorf: Parkwege	Q2 47308,73565 46597,73419 46684,73117 46424,72828 45864,72724
 Görlsdorf - Redernswalde: teilweise nur mäßiger Asphalt	Q1 45584,72614 45175,72498 44916,72543 44571,72377 44074,72322 43569,72134 42941,72180 42811,72351 42638,72417 41918,72593 41128,72792 40566,72882 39790,73115
 Rüdnitz: Kopfsteinpflaster	Q2 24915,35340 25095,35601
-Melchow: Kopfsteinpflaster, OK	Q1 29468,41438 30143,41500
+Melchow: Kopfsteinpflaster, OK	Q1 29468,41438 29609,41448 30143,41500
 Brunnenstr., Eberswalde: Kopfsteinpflaster	Q2 37153,47300 37453,47693
 Weinbergstr., Eberswalde: teilweise schlechtes Kopfsteinpflaster	Q3 37453,47693 37275,47890
 Eisenbahnstr., Eberswalde: teilweise Kopfsteinpflaster	Q1 37426,48129 37532,48149 37875,48253
+Wildparkstr., Eberswalde: asphaltiert	Q0 35339,46996 35295,47041 35180,47123
 Gramzow: teilweise Kopfsteinpflaster	Q1 49930,89857 49757,90015
 nach Hammer: mäßiger Asphalt	Q1 17696,55415 17031,55218 15355,53848 12420,52922
 Hammer: teilweise schlechtes Kopfsteinpflaster, Sandbanketten	Q3 12420,52922 12243,52862 12212,52762 12018,52781 11747,52381
@@ -561,7 +562,10 @@ Badeweg: mäßiger Asphalt, Verbundsteinradweg	Q1 38939,101112 39106,101231
 Uckerpromenade: Asphalt, parallel führende Promenade hat wassergebundene Decke	Q0 39022,101334 39106,101231 39275,101193 39474,100982 39668,100787 40056,99762
 fester Sandweg	Q2 40056,99762 40056,99618 40262,99200 40418,99062
 Feldweg, teils ein-, teils zweispurig	Q2 40418,99062 40837,98993 40906,98518 41025,98275 41012,98156 41125,98018 41137,97643
-Feldweg, teilweise sandig/matschig	Q3 41137,97643 41181,96937 41287,96843 41481,96762 41675,96762 41950,96581 41987,96375
+Feldweg, teilweise sandig/matschig	Q3 41137,97643 41181,96937
+#: add_fragezeichen: von der Bahnstrecke aus gesehen
+Asphaltiert	Q0 41181,96937 41287,96843
+Feldweg, teilweise sandig/matschig	Q3 41287,96843 41481,96762 41675,96762 41950,96581 41987,96375
 Feldweg	Q2 41987,96375 41912,96150 42106,95893
 Bietikow - Mattheshöhe: sehr guter Asphalt	Q0 45931,97868 46425,98193 46693,98100 46825,97993 47043,97950 47200,97818 47756,97706 48321,97446
 Mattheshöhe - Falkenwalde: sehr guter Asphalt	Q0 48321,97446 48637,97306 48768,97193 48762,97075 48850,96925 49056,96700 49488,96417
@@ -1018,7 +1022,7 @@ ehem. Straße Großbeeren - Güterfelde: Feldweg	Q2 2443,-6309 2356,-6128 2471,-602
 Groß-Dölln - Joachimsthal: wahrscheinlich Waldweg, bei Joachimsthal Kopfsteinpflaster	Q2 22068,65681 22262,65687 22687,66025 23087,66087 23962,66462 24450,66575 24550,66987 24825,67112 25250,67187 25275,67412 26100,67825 26200,67787 26362,67300 26350,66737 26400,66325 26487,66100 27037,65962 27412,65812 28525,65800 30625,65012 31437,64500 32137,64362 32406,64340
 #: add_fragezeichen: soweit vom Zug aus zu sehen vvv
 Herzsprung: asphaltiert	Q0 48151,64245 48516,64085 49004,64047
-Danewitz - Biesenthal: Asphalt	Q0 27303,37099 27137,37337 26700,38062
+Danewitz - Biesenthal: Asphalt	Q0 27303,37099 27154,37315 26700,38062
 #: add_fragezeichen ^^^
 Carmzow - Hedwigshof: Asphalt	Q0 52483,110031 52635,109881
 Carmzow - Wallmow: Asphalt	Q0 52635,109881 52800,109625
@@ -1029,7 +1033,7 @@ Wendtshof - Carmzow: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten	Q
 Wallmow: Betonstraße	Q0 54790,104980 54861,105010 55022,105033 55239,104988
 Wallmow - Trampe: sehr guter Asphalt	Q0 55239,104988 55375,105118 55493,105350 55543,105468 55642,105795 55956,106270 56179,106456 56541,106605 56940,106870 57269,107132 57361,107212
 #: add_fragezeichen: aus der Bahn heraus gesehen (beide Seiten):
-Steinhöfel - B198: asphaltiert, nur unter der Bahnbrücke ist ein kurzes Stück Kopfsteinplaster	Q0 41472,77229 42820,77327 43106,77287 44301,77619
+Steinhöfel - B198: asphaltiert	Q0 41472,77229 42820,77327 43106,77287 44301,77619
 #: add_fragezeichen: aus der Bahn heraus gesehen:
 Greiffenberg: Kopfsteinplaster	Q2 44200,74890 45817,75966
 	Q0 28615,-17905 28018,-18051 27605,-17999 26832,-17882
@@ -1198,9 +1202,9 @@ Drense: Kopfsteinpflaster	Q2 47800,101393 47818,101493 47962,101568
 Drense - Ziemkendorf: Feldweg	Q2 48468,101793 49306,102162
 Ziemkendorf: schlechtes Kopfsteinpflaster, aber teilweise Ausweichen auf engen Gehweg möglich	Q3 49306,102162 49791,102345 50581,102443 50787,102575
 #: by: von der Zugstrecke aus gesehen, sowie Message-ID: <34g937F4a76j2U1@individual.net> (vielleicht sogar Q3 vergeben?)
-Biesenthal: Kopfsteinpflaster	Q2 28993,38709 28262,39100 26237,40190
+Biesenthal: Kopfsteinpflaster	Q2 28993,38709 28248,39107 26237,40190
 #: add_fragezeichen: von der Zugstrecke aus gesehen, "Berliner Umland" attestiert der gesamten Strecke eine gute Qualität:
-Rüdnitz - Danenwitz: Asphalt	Q0 27303,37099 26687,36525 26372,36360
+Rüdnitz - Danenwitz: Asphalt	Q0 27303,37099 26666,36512 26372,36360
 #: add_fragezeichen: von der Zugstrecke aus gesehen:
 Rüdnitz - Bahnhof: Asphalt	Q0 25095,35601 25737,35075
 # von der Zugstrecke aus gesehen (2x):
@@ -1388,10 +1392,8 @@ Märkische Allee (Großbeeren): Asphalt	Q0 2890,-6178 3162,-5673 3428,-4331 3643,-
 Wallgasse: Kopfsteinpflaster	Q2 39682,101543 39789,101564
 (Wallgasse - Stadtpark): Asphalt	Q0 39789,101564 39884,101572
 An der Schnelle: Asphalt	Q0 38848,101208 38762,101299 38823,101413 39066,102017
-Goethestr.: Asphalt	Q0 40507,100965 40709,100228
-#: note: allerdings wird dieser Teil des Weges vielleicht bald ausgebaut?
-#: last_checked: 2005-10-30
-Goethestr./Prenzlau - Seelübbe: Feldweg	Q2 40709,100228 40850,99777
+Goethestr.: Asphalt	Q0 40507,100965 40709,100228 40850,99777
+Goethestr./Prenzlau - Seelübbe: Feldweg	Q2 40850,99777 41170,98927 41197,98927 41317,98924 41406,98956 41445,98997 41479,99060
 #: note: laut Bild: http://adfc.jgr.de/alternativradroute/d3150.html
 Wüste Kunersdorf: Asphalt	Q0 86352,553 86129,933 86185,1110 85905,1461
 #: note: laut Bild: http://adfc.jgr.de/alternativradroute/d3132.html

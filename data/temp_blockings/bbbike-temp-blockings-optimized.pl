@@ -7,7 +7,7 @@ push @temp_blocking,
          'until' => 1175378399,
          'text' => 'Swinemünder Brücke: Baustelle Straße für Autos vollständig gesperrt, Radfahrer und Fußgänger können passieren (bis Ende 03.2007) ',
          'from' => 1161627703,
-         'data' => 'userdel	q2::inwork 9494,15998 9583,15851
+         'data' => 'userdel	q2::inwork 9494,15998 9646,15737
 ',
          'type' => 'handicap'
        },
@@ -602,7 +602,14 @@ userdel	1::inwork 10781,13002 10706,13043
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1166742000,
+         'text' => 'B 096 Baruth-Wünsdorf Bahnübergang in deer OD Neuhof Straßenbauarbeiten Vollsperrung 21.12.2006-21.12.2006 ',
+         'from' => 1166569200,
+         'data' => 'userdel	2::inwork 16407,-29400 16379,-29446 16336,-29511
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -796,27 +803,12 @@ userdel	1::inwork 10781,13002 10706,13043
        undef,
        undef,
        undef,
-       {
-         'until' => 1166223600,
-         'text' => 'K 6728 zw. Abzw. Raßmannsdorf und Görzig Straßenneubau Vollsperrung 06.11.2006-15.12.2006 ',
-         'from' => 1162681200,
-         'data' => 'userdel	2::inwork 65591,-17536 65909,-18312 65936,-18973 66290,-19612
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_003947',
-         'until' => 1166223599,
-         'text' => 'Oberbaumbrücke Richtung Falckensteinstr. Baustelle, unbequemes Passieren (bis Mitte Dezember 2006)',
-         'from' => 1163194202,
-         'data' => 'userdel	3::inwork 13206,10651 13178,10623 13135,10551
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -845,15 +837,7 @@ userdel	2::temp 9918,12411 9926,12368
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_004168',
-         'until' => 1166139296,
-         'text' => 'Einemstr. (Schöneberg) in Richtung Nollendorfplatz, hinter Kurfürstenstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte Dezember)',
-         'from' => undef,
-         'data' => 'userdel	q4::inwork; 6972,10665 6985,10597 7003,10513 7037,10359
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -874,15 +858,7 @@ userdel	2::temp 9918,12411 9926,12368
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_004267',
-         'until' => 1166223599,
-         'text' => 'Chemnitzer Str. (Marzahn) in Richtung Nord, zwischen Am Niederfeld und Alt-Kausldorf Baustelle, Fahrtrichtung gesperrt (bis Mitte 12/2006)',
-         'from' => 1165266208,
-         'data' => 'userdel	1::inwork 22429,11056 22473,11272
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1185832800,
@@ -909,15 +885,7 @@ userdel	2::temp 9918,12411 9926,12368
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_004322',
-         'until' => 1166310000,
-         'text' => 'L20 Schönwalder Str. in beiden Richtungen zwischen Schönwalde und Bötzow Baustelle, Straße vollständig gesperrt: Schönwalde - Pausin - Wansdorf - Bötzow (bis 16.12.2006)',
-         'from' => 1165952495,
-         'data' => 'userdel	2::inwork -7640,26928 -7309,26146 -7243,25847 -7230,25622 -7260,25515 -7421,24956 -7603,24696
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1166828400,
          'text' => 'B 246 Nächst Neuendorfer Chaussee OD Zossen, Bahnübergang Kanalarbeiten Vollsperrung 11.12.2006-22.12.2006 ',
@@ -931,6 +899,22 @@ userdel	2::temp 9918,12411 9926,12368
          'text' => 'K 6161 Friedensstr. Bahnübergang in der OD Eichwalde Gleisbauarbeiten Vollsperrung 15.12.2006-19.12.2006 ',
          'from' => 1166050800,
          'data' => 'userdel	2::inwork 25185,-3955 25269,-4041 25372,-4019
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1166482800,
+         'text' => 'B 168 Frankfurter Chaussee Bahnübergang Bahnhof Oegeln Gleisbauarbeiten Vollsperrung 15.12.2006-18.12.2006 ',
+         'from' => 1166050800,
+         'data' => 'userdel	2::inwork 70984,-23637 70075,-24862
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1166828400,
+         'text' => 'L 025 Schönermark-LG-Woldegk Brücke über den Dammseegraben am OA Fürstenwerder Brückenneubau Vollsperrung 18.12.2006-22.12.2006 ',
+         'from' => 1166310000,
+         'data' => 'userdel	2::inwork 20336,110197 20035,110983
 ',
          'type' => 'gesperrt'
        }

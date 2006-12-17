@@ -219,7 +219,7 @@ Alexandrinenstr.: Kopfsteinpflaster	Q2 10678,11172 10586,11116
 Bellermannstr.: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q1 9170,16324 9268,16228 9413,16085
 Swinemünder Str.: teilweise Kopfsteinpflaster	Q2 10094,14847 10155,14719 10189,14649
 Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10315,14386
-Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9734,15579 9583,15851
+Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9734,15579 9646,15737
 Fürstenberger Str.: Kopfsteinpflaster	Q2 10320,14608 10474,14633
 Kollwitzstr.: Kopfsteinpflaster	Q2 11016,14081 10924,13940
 Kiehlufer: Kopfsteinpflaster	Q2 13745,8448 13575,8593 13402,8741 13225,8880 13082,9006 12957,9114 12912,9367
@@ -1532,6 +1532,8 @@ Köbisstr.: glatte Gehwegplatten	Q0 7160,11225 6853,11336
 Hiroshimasteg: unebene Holzbohlen	Q1 7251,11202 7251,11181 7248,11143
 #: add_fragezeichen: wahrscheinlich noch in Bau
 Melchiorstr. - Mariannenplatz: unbefestigt	Q2 11921,11185 11956,11166
+(Weg am Humboldthain): grobes Verbundsteinpflaster	Q2 9255,15816 9092,15789
+(Weg am Humboldthain): Verbundsteinpflaster	Q1 9092,15789 8938,15723
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -2940,6 +2942,7 @@ Neustädter Str.: Beton	Q1 14338,22885 14276,22914 14148,23040 14057,23120
 Flaischlenstr.: asphaltiert	Q0 13514,22642 13468,22518
 Flaischlenstr.: schlechtes Kopfsteinpflaster, Ausweichen auf den Fußweg (Rasenflächen mit Trampelpfad) möglich	Q3 13468,22518 13426,22398 13395,22365 13333,22292 13285,22079 13268,22002
 Frankenstr.: schlechtes Kopfsteinpflaster	Q3 13285,22079 13534,22225 13565,22271 13646,22387 13707,22468
+#: note: bestätigt (von der Bahnstrecke aus gesehen)
 Rudelsburgstr.: Asphalt	Q0 12853,20632 13175,21121 13385,21445 13612,21806 13762,22064 13845,22231
 Frankensteinstr.: schlechtes Kopfsteinpflaster	Q3 13845,22231 13646,22387 13468,22518
 #: XXX: "glaube ich":
@@ -4342,13 +4345,13 @@ Wilzenweg: Verbundsteine	Q1 -4566,10677 -4604,10496
 Semnonenweg: Asphalt	Q3 -4536,10670 -4482,10914
 Hevellerweg: schlechter Asphalt	Q3 -4501,10660 -4519,10591
 Höhenweg: Kopfsteinpflaster	Q2 -4541,10484 -4535,10539 -4515,10551 -4462,10560 -4422,10582 -4401,10613 -4346,10762
-Ramlerstr.: Kopfsteinpflaster	Q2 9265,15790 9450,15825 9583,15851 9778,15881
-Graunstr.: Kopfsteinpflaster	Q2 9778,15881 9917,15613 10012,15389 10022,15203
+Ramlerstr.: Kopfsteinpflaster	Q2 9309,15700 9474,15714 9646,15737 9844,15755
+Graunstr.: Kopfsteinpflaster	Q2 9844,15755 9917,15613 10012,15389 10022,15203
 (Parkweg Swinemünder Str.): Kopfsteinpflaster	Q2 10189,14649 10228,14564
 Lortzingstr.: Kopfsteinpflaster	Q2 10012,15389 9900,15340
 Lortzingstr.Gehwegplatten	Q0 9900,15340 9859,15318 9818,15303
 Lortzingstr.: Kopfsteinpflaster	Q2 9818,15303 9718,15250 9571,15178
-Putbusser Str.: Asphalt	Q0 9450,15825 9600,15509 9718,15250 9793,15090
+Putbusser Str.: Asphalt	Q0 9474,15714 9600,15509 9718,15250 9793,15090
 Strahlsunder Str.: Gehwegplatten	Q0 9956,14909 9753,14825
 Strahlsunder Str.: schlechtes Kopfsteinpflaster	Q3 9753,14825 9553,14734 9371,14650 9300,14615
 Vineta Platz: Gehwegplatten	Q0 9956,14909 10043,14943 10131,14978
