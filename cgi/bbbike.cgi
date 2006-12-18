@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.31 2006/12/03 23:23:21 eserte Exp $
+# $Id: bbbike.cgi,v 8.31 2006/12/03 23:23:21 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -5330,6 +5330,14 @@ sub header {
 			  -href => "$bbbike_images/srtbike16.gif",
 			  -type => "image/gif",
 			 });
+    my($bbbike_de_script, $bbbike_en_script);
+    if ($lang eq 'en') {
+	($bbbike_de_script = $bbbike_script) =~ s{\.en\.cgi}{.cgi};
+	$bbbike_en_script = $bbbike_script;
+    } else {
+	($bbbike_en_script = $bbbike_script) =~ s{\.cgi}{.en.cgi};
+	$bbbike_de_script = $bbbike_script;
+    }
     if (!$smallform) {
 	push @$head,
 	    cgilink({-rel => 'Help',
@@ -5337,7 +5345,11 @@ sub header {
 	    cgilink({-rel => 'Home',
 		     -href => "$bbbike_script?begin=1"}),
 	    cgilink({-rel => 'Start',
-		     -href => "$bbbike_script?begin=1"}),
+		     -hreflang => 'de',
+		     -content => "$bbbike_de_script?begin=1"}),
+	    cgilink({-rel => 'Start',
+		     -hreflang => 'en',
+		     -content => "$bbbike_en_script?begin=1"}),
 	    cgilink({-rel => 'Author',
 		     -href => "mailto:@{[ $BBBike::EMAIL ]}"}),
 	   (defined $args{-up}
@@ -5404,16 +5416,14 @@ sub header {
     if ($with_lang_switch && defined $from && $from eq 'chooseform-start') {
 	print qq{<div style="position:absolute; top:5px; right:10px;">};
 	if ($lang eq 'en') {
-	    (my $de_script = $bbbike_script) =~ s{\.en\.cgi}{.cgi};
 	    print <<EOF;
-<a href="$de_script"><img class="unselectedflag" src="http://bbbike.sourceforge.net/images/de_flag.png" alt="Deutsch" border="0"></a>
+<a href="$bbbike_de_script"><img class="unselectedflag" src="http://bbbike.sourceforge.net/images/de_flag.png" alt="Deutsch" border="0"></a>
 <img class="selectedflag" src="http://bbbike.sourceforge.net/images/gb_flag.png" alt="English" border="0">
 EOF
 	} else {
-	    (my $en_script = $bbbike_script) =~ s{\.cgi}{.en.cgi};
 	    print <<EOF;
 <img class="selectedflag" src="http://bbbike.sourceforge.net/images/de_flag.png" alt="Deutsch" border="0">
-<a href="$en_script"><img class="unselectedflag" src="http://bbbike.sourceforge.net/images/gb_flag.png" alt="English" border="0"></a>
+<a href="$bbbike_en_script"><img class="unselectedflag" src="http://bbbike.sourceforge.net/images/gb_flag.png" alt="English" border="0"></a>
 EOF
 	}
 	print qq{</div>\n};

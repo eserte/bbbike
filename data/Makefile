@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.119 2006/11/01 22:58:27 eserte Exp $
+# $Id: Makefile,v 2.120 2006/12/18 22:02:55 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1290,12 +1290,16 @@ $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd: temp_blockings/bbbike-temp-blocki
 
 .if exists(/usr/local/bin/cgpsmapper-static)
 CGPSMAPPER?=	/usr/local/bin/cgpsmapper-static
+.elif exists(/usr/ports/distfiles/from_vran/cgpsmapper/cgpsmapper0081static)
+CGPSMAPPER?=	/usr/ports/distfiles/from_vran/cgpsmapper/cgpsmapper0081static
 .else
 CGPSMAPPER?=	/usr/ports/distfiles/cgpsmapper/cgpsmapper0081static
 .endif
 
 .if exists(/usr/local/bin/sendmap17Lstatic)
 SENDMAP?=	/usr/local/bin/sendmap17Lstatic
+.elif exists(/usr/ports/distfiles/from_vran/cgpsmapper/sendmap17Lstatic)
+SENDMAP?=	/usr/ports/distfiles/from_vran/cgpsmapper/sendmap17Lstatic
 .else
 SENDMAP?=	/usr/ports/distfiles/cgpsmapper/sendmap17Lstatic
 .endif
