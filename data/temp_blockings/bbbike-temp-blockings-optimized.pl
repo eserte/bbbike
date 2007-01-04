@@ -580,14 +580,7 @@ userdel	1::inwork 10781,13002 10706,13043
        undef,
        undef,
        undef,
-       {
-         'until' => 1177970400,
-         'text' => 'K 6411 Neulewin-Wriezen zw. OL Neulewin und Kerstenbruch Straßenbauarbeiten Vollsperrung 01.11.2006-30.04.2007 ',
-         'from' => 1162249200,
-         'data' => 'userdel	2::inwork 68761,38095 69208,37364 69249,37090
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

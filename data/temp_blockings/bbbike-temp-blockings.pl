@@ -6487,7 +6487,7 @@ userdel	2::inwork -4609,-35650 -4299,-35198
 EOF
      },
      { from  => 1162249200, # 2006-10-31 00:00
-       until => 1177970400, # 2007-05-01 00:00
+       until => 1167896319, # 1177970400 2007-05-01 00:00 nur noch "Wintersicherung"
        text  => 'K 6411 Neulewin-Wriezen zw. OL Neulewin und Kerstenbruch Straßenbauarbeiten Vollsperrung 01.11.2006-30.04.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
