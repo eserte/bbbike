@@ -2509,7 +2509,7 @@ userdel	2 2629,-10301 2580,-11069 2423,-11316 2001,-11983 1709,-12428
 EOF
      },
      { from  => 1161627703, # 2006-10-23 20:21
-       until => 1175378399, # 2007-03-31 23:59
+       until => 1166648093, # 1175378399 2007-03-31 23:59
        text  => 'Swinemünder Brücke: Baustelle Straße für Autos vollständig gesperrt, Radfahrer und Fußgänger können passieren (bis Ende 03.2007) ',
        type  => 'handicap',
        source_id => 'IM_002360',
@@ -2659,7 +2659,7 @@ EOF
      },
      { from  => 1139555958, # 2006-02-10 08:19
        until => 1191189600, # 2007-10-01 00:00
-       text  => 'Florastr. (Pankow) Berliner Str. in Richtung Mühlenstr. Baustelle, Fahrtrichtung gesperrt (bis September 2007)',
+       text  => 'Florastr. (Pankow) Berliner Str. in Richtung Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis September 2007)',
        type  => 'handicap',
        source_id => 'IM_002176',
        data  => <<EOF,
@@ -5947,7 +5947,7 @@ userdel	2::temp 8610,12254 8515,12242 8600,12165 8595,12066
 EOF
      },
      { from  => 1159653600, # 2006-10-01 00:00
-       until => 1167606000, # 2007-01-01 00:00
+       until => 1166648768, # 1167606000 2007-01-01 00:00
        text  => 'B 109 C.-Zetkin-Straße OL Zehdenick, zw. Liebknechtstr. u. Falkenthaler Ch. Kanal-/Straßenbau halbseitig gesperrt; Einbahnstraße 02.10.2006-31.12.2006 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -6512,7 +6512,7 @@ userdel	q4::inwork; 14881,10864 14897,10935 14988,11130
 EOF
      },
      { from  => 1155592800, # 2006-08-15 00:00
-       until => 1166828400, # 2006-12-23 00:00
+       until => 1166570964, # 1166828400 2006-12-23 00:00
        text  => 'B 005 Berliner Str. OD Petershagen, zw. Betonstr. und Ortsausgang Kanal- und Straßenbauarbeiten Vollsperrung 16.08.2006-22.12.2006 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -6845,6 +6845,32 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 20336,110197 20035,110983
+EOF
+     },
+     { from  => 1167692400, # 2007-01-02 00:00
+       until => 1199142000, # 2008-01-01 00:00
+       text  => 'L 060 Schipkau-Lichterfeld zw. Lichterfeld und Lauchhammer-Nord grundhafter Straßenbau Vollsperrung 03.01.2007-31.12.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 37419,-91709 37675,-92038 37809,-92300 37918,-93202
+EOF
+     },
+     { from  => 1166648042, # 2006-12-20 21:54
+       until => 1167001200, # 2006-12-25 00:00
+       text  => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Y.-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (bis 24.12.2006 16 Uhr)',
+       type  => 'handicap',
+       source_id => 'IM_004369',
+       data  => <<EOF,
+userdel	q4::temp 8089,12186 8214,12205 8515,12242
+EOF
+     },
+     { from  => undef, # 
+       until => 1183240800, # 2007-07-01 00:00
+       text  => 'Treptower Str. (Treptow) in beiden Richtungen zwischen Kiefholzstr. und Harzer Str. Baustelle Straße vollständig gesperrt (bis Mitte 2007) (16:10) ',
+       type  => 'gesperrt',
+       source_id => 'IM_004418',
+       data  => <<EOF,
+userdel	2::inwork 14140,8977 14015,8798 13982,8764 13857,8601
 EOF
      },
     );

@@ -1361,97 +1361,6 @@ example:
  http://el-tramo.be/guides/fancy-dmg/
  http://el-tramo.be/files/fancy-dmg/Makefile
 
-=back
-
-=head2 Windows specific
-
-=over
-
-=item * (*M4)
-
-Make sure that Tahoma 8 is used as default font on windows. Do I need
-to use a larger fonts if user's font settings are different?
-
-=item * (*M3)
-
-Prüfen, ob Font::Metrics::Helvetica in der winbindist dabei ist und
-tatsächlich bei der PDF-Erzeugung benötigt wird.
-
-=item * (*M3)
-
-Prüfen, ob String::Approx/String::Similarity in der winbindist dabei
-ist und ob das Modul irgendwo verwendet wird (approximative
-Volltextsuche?). Auch: in doc/tests.pod aufnehmen!
-
-=item * (*M3)
-
-Prüfen, ob das Problem des Handlungsreisenden mit der winbindist
-funktioniert. Auch: in doc/tests.pod aufnehmen!
-
-=item * (H4)
-
-Nach dem Auswählen einer Aktion im Popup-Menü ist der Fokus nicht mehr
-auf dem Fenster. Womöglich geht der Fokus auch bei anderen Aktionen
-verloren.
-
-=item * (*E5)
-
-Tie::File in die Windows-(SiePerl)-Distribution reinnehmen. Dann kann
-ich Sachen wie F8 propagieren und DB_File/RECNO langsam auslaufen
-lassen. -> DONE, check missing!
-
-=item * (H2)
-
-Make some research about alternative perl distribution on windows.
-Unfortunately I seem to be unable to compile Tk with Strawberry Perl.
-
-=item * (M5)
-
-Add Tk::Clipboard to @Tk::HList::ISA on Windows (or so). Then it would
-be possible to use Control-C for copying the selection.
-
-=item * (M1)
-
-Maybe under Windows or for all click-to-focus systems: make bbbike
-internal windows act as focus follows mouse. Something like:
-
-   $t->bind("<Enter>" => sub { $t->focus });
-
-may do (but only if the main toplevel or one of its descendents
-already has the focus). This is really only necessary for convenient
-keyboard control.
-
-=item * (H1)
-
-Windows: An activating click should only activate the window but not
-doing an action. This should be like in Excel (but unlink Windows
-Commander). This sounds like a generell Tk problem (is it maybe solved
-with Tk804?).
-
-=item * (E3)
-
-Windows: add List::Permutor to the bindist of Windows (sieperl)
--> getan; überprüfen, ob Salesman nun läuft
-
-=item * (M1)
-
-Check appearance on Windows, especially the buttons (is the ipady
-value OK now?). I do not use some optionAdd commands for fg/bg on
-Windows --- is this OK? It seems that it is standard on Windows to
-have some more spacing between buttons and make related buttons the
-equal width (especially in end dialog buttons). Is HList white?
-
-=item * (H1)
-
-Don't understand this one: E<quot>Bug: Busy-Zeiger zurücksetzen ist
-unter Win kontraproduktiv!!!E<quot>
-
-=item * (M1)
-
-An example how to programmatically make a screenshot on Windows ---
-maybe this can be of use somewhere (using instead of xwd?):
-L<http://www.perlmonks.org/index.pl?node_id=355073>
-
 =item * (H1)
 
 Drawing custom category images seems to not work in lazy mode (try:
@@ -1467,6 +1376,72 @@ all other points. Or just draw a region boundary, and all points
 inside the region would move.
 
 More ideas: copy polygons, rotate polygons.
+
+=back
+
+=head2 Windows specific
+
+=over
+
+=item * (M2)
+
+Do I need to use a larger font if user's font settings are different from Tahoma 8?
+
+=item * (M2)
+
+String::Similarity und ggfs. String::Approx in die winbindist aufnehmen
+für die approximative Volltextsuche. Diesen Testcase auch in doc/tests.pod aufnehmen!
+
+=item * (*M5)
+
+Prüfen, ob das Problem des Handlungsreisenden mit der winbindist
+funktioniert. Nein -> die -except-Option (von meinem IncBusy?) ist nicht
+implementiert (anscheinend für die Nicht-Tk::InputO-Variante von IncBusy).
+-except wird wahrscheinlich für das kleine Abbruch-Toplevel benötigt. 
+
+Auch: in doc/tests.pod aufnehmen!
+
+=item * (*E5)
+
+Tie::File in die Windows-(SiePerl)-Distribution reinnehmen. Dann kann
+ich Sachen wie F8 propagieren und DB_File/RECNO langsam auslaufen
+lassen. -> DONE, check missing! -> neue win-distro zum testen
+auf usb-stick kopieren!
+
+=item * (M1)
+
+Langfristig auf Strawberry Perl umsteigen, sobald ich alle Module 
+aus Bundle/BBBike_win.pm erzeugen kann.
+
+=item * (M5)
+
+Add Tk::Clipboard to @Tk::HList::ISA on Windows (or so). Then it would
+be possible to use Control-C for copying the selection. -> Eigentlich ein Task für Tk. Check it!
+
+=item * (E1)
+
+Should $top->focusfollowsmouse be default everywhere?
+
+=item * (H1)
+
+Windows: An activating click should only activate the window but not
+doing an action. This should be like in Excel (but unlink Windows
+Commander). This sounds like a generell Tk problem (is it maybe solved
+with Tk804?).
+
+=item * (M1)
+
+It seems that it is standard on Windows to
+have some more spacing between buttons and make related buttons the
+equal width (especially in end dialog buttons). I thing grid() has
+some new? -uniform option to force all widgets in a frame to have
+the same width.
+
+=item * (M1)
+
+An example how to programmatically make a screenshot on Windows ---
+maybe this can be of use somewhere (using instead of xwd?):
+L<http://www.perlmonks.org/index.pl?node_id=355073>
 
 =back
 

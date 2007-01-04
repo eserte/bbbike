@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.51 2006/10/22 20:31:39 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.51 2006/10/22 20:31:39 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -726,7 +726,7 @@ copy-cvs-to-stick:	copy-to-cvs
 	-(mount | grep -q /mnt/stick) || ( \
 	    sudo camcontrol reset all; \
 	    sudo camcontrol rescan all; \
-	    sudo mount_msdosfs -u eserte /dev/da0s1 /mnt/stick \
+	    sudo mount_msdosfs -u eserte /dev/da1s1 /mnt/stick \
 	)
 	mount | grep -q /mnt/stick
 	-mv /mnt/stick/BBBike-CVS /mnt/stick/BBBike-CVS.old

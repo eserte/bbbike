@@ -200,7 +200,7 @@ eval {
 	($subject, $to, $cc, $email);
     if (eval { require Encode; 1 }) {
 	for ($subject_mime, $to_mime, $cc_mime, $email_mime) {
-	    $_ = Encode::encode("MIME-Q", $_)
+	    $_ = Encode::encode("MIME-B", $_)
 		if defined $_;
 	}
     }

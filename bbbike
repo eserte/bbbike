@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.284 2006/11/11 14:33:14 eserte Exp eserte $
+# $Id: bbbike,v 3.285 2007/01/03 20:10:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -205,7 +205,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.284 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.285 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -844,6 +844,12 @@ if (!defined $focus_policy) {
 
 if ($focus_policy eq 'follow') {
     @popup_style = ('-popover', 'cursor');
+    # This seems to be a good idea for all platforms, but
+    # is dangerous where focus also means "raise" and the
+    # toplevel is not marked as transient. Therefore
+    # first check if this work OK and maybe always enable
+    # in BBBike 3.16 XXX
+    $top->focusFollowsMouse;
 } else {
     @popup_style = ();
 }
@@ -3667,12 +3673,19 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		     if ($file =~ m{\.pod$}) {
 			 eval {
 			     require Tk::Pod;
-			     $top->Pod(-file => $full_path,
-				       -title => $label);
 			 };
 			 if ($@) {
 			     perlmod_install_advice('Tk::Pod');
-			 }
+			 } else {
+			     eval {
+			         my $pod = $top->Pod(-file => $full_path,
+						     -title => $label);
+				 set_as_toolwindow($pod);
+			     };
+			     if ($@) {
+				 status_message($@, "die");
+			     }
+			 }  
 		     } else {
 			 require WWWBrowser;
 			 my $url = "file:$full_path";
