@@ -721,7 +721,7 @@ EOF
        text  => 'Oberwallstraße, Baustelle, Straße gesperrt zwischen Jägerstraße und Hausvogteiplatz, Dauer: 31.08.2004 bis 27.10.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9925,11947 9907,12055
+userdel	2 9925,11947 9913,12068
 EOF
      },
      { from  => 1093924800, # 2004-08-31 06:00
@@ -2079,9 +2079,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 9636,12126 9756,12139 9812,12145
-userdel	2 10084,12228 9959,12180
+userdel	2 10084,12228 9972,12184
 userdel	2 9812,12145 9890,12161
-userdel	2 9890,12161 9959,12180
+userdel	2 9890,12161 9972,12184
 userdel	2 10170,12261 10109,12238
 userdel	2 10170,12261 10267,12305
 EOF
@@ -3759,8 +3759,8 @@ userdel	2 23356,-20982 22599,-19785
 EOF
      },
      { from  => 1161627812, # 2006-10-23 20:23
-       until => 1167605999, # 2006-12-31 23:59
-       text  => 'Wiesbadener Str. (Wilmersdorf) Richtung Bundesallee zwischen Geisenheimer Str. und Südwestkorso Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Ende 2006)',
+       until => Time::Local::timelocal(reverse(2007-1900,7-1,1,0,0,0)),
+       text  => 'Wiesbadener Str. (Wilmersdorf) Richtung Bundesallee zwischen Geisenheimer Str. und Südwestkorso Baustelle, Fahrtrichtung gesperrt (bis Mitte 2007)',
        type  => 'gesperrt',
        source_id => 'IM_003889',
        data  => <<EOF,
@@ -4694,13 +4694,13 @@ userdel	2::temp 8021,11636 8006,11766 8172,11679
 userdel	2::temp 7816,12150 7875,12363
 userdel	2::temp 7504,11504 7382,11588 7163,11738 7287,11763 7535,11677 7591,11639 7669,11586 7706,11612 7742,11639 7852,11721 8006,11766
 userdel	2::temp 7669,11586 7711,11558
-userdel	2::temp 8022,12016 8006,11766 7811,11868 7663,11946 7570,11855 7223,11897 7073,11798 7163,11738 6980,11583 6809,11570
+userdel	2::temp 8022,12016 8006,11766 7801,11875 7663,11946 7570,11855 7223,11897 7073,11798 7163,11738 6980,11583 6809,11570
 userdel	2::temp 7039,12314 7383,12095
 userdel	2::temp 7073,11798 6778,11742
 userdel	2::temp 8374,12416 8539,12286
 userdel	2::temp 7382,11588 7354,11513
 userdel	2::temp 6809,11979 7073,11798
-userdel	2::temp 8223,11700 8220,11844 8215,12156 8214,12205
+userdel	2::temp 8223,11700 8223,11796 8222,11881 8215,12156 8214,12205
 userdel	2::temp 8119,12414 8063,12182
 userdel	2::temp 8063,12182 8034,12093 8006,12074 7999,12049 8022,12016
 userdel	2::temp 8540,12420 8560,12326 8539,12286 8515,12242 8600,12165 8595,12066
@@ -6651,7 +6651,7 @@ EOF
 userdel	2::temp 9890,12161 9875,12254 9801,12245 9782,12393
 userdel	2::temp 9875,12254 9853,12402
 userdel	2::temp 9801,12245 9812,12145
-userdel	2::temp 10008,12378 9926,12368 9959,12180
+userdel	2::temp 10008,12378 9926,12368 9972,12184
 userdel	2::temp 9918,12411 9926,12368
 EOF
      },

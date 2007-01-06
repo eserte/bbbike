@@ -14,7 +14,7 @@ Mollstr.	? 11905,13069 11867,13076 11839,13083 11721,13142 11681,13161 11557,132
 Stralauer Str.	? 11351,12221 11304,12234 11139,12243 11094,12243 10946,12241 10826,12279 10804,12291 10738,12364
 #: last_checked: 2006-10-25
 Alt-Moabit zwischen Kirch- und Paulstraße	? 7192,13036 7000,13067 6882,13088 6757,13112 6661,13130
-Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 10109,12238 10084,12228 9959,12180
+Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 10109,12238 10084,12228 9972,12184
 #: last_checked: 2005-11-07 (südliches Ende wird permanent überprüft)
 Köpenicker Str. (in Mitte und/oder in Kreuzberg?)	? 11155,11750 11242,11720 11574,11594 11807,11479 11943,11398 12026,11348
 #: last_checked: 2006-05-28
@@ -49,8 +49,6 @@ Linienstr.: Fahrradstraße geplant (nach der Sanierung)?	? 9607,13507 9752,13575 
 #: note: laut http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0511/nachricht2119.html Fertigstellung bis 2007-11-30
 Linienstr.: Fahrradstraße geplant (nach der Sanierung)?	? 9903,13646 9944,13665 9964,13665 10020,13669 10081,13673 10214,13680 10308,13679 10432,13678 10597,13647 10718,13625
 #: by ^^^
-#: last_checked: 2006-08-18
-Bethaniendamm: vor den Bauarbeiten war hier ein Radstreifen, wird er wieder hergestellt?	? 11461,11145 11649,11075 11816,11084 11852,11102 11956,11166 12012,11235 12055,11331
 #: by: http://www.reinickendorf.de/index_6280_de.html
 Aroser Allee, Fertigstellung bis 2007-10-01	? 6741,18613 6671,18132 6676,18030 6710,17905 6761,17741 6893,17317 6942,17128
 #: section ^^^
@@ -162,7 +160,7 @@ Bremer Weg (Tiergarten): genaue Wegführung, Qualität?	? 5901,11902 5923,11873 62
 Bremer Weg (Tiergarten): genaue Wegführung, Qualität (wassergebundene Strecke)?	? 6828,12031 6857,11992 7460,12054 7827,12105 8018,12131 8063,12182
 (Bremer Weg - Fasanerieallee): genaue Wegführung, Qualität?	? 6342,11878 6379,11843 6406,11784 6540,11754
 Bremer Weg (Tiergarten): genaue Koordinaten, Qualität (Asphalt)?	? 8089,12186 8095,12142 8215,12156 8490,12192 8515,12242
-(Weg im Tiergarten von Großer Weg über Bellevuealle zum Bremer Weg/Große Querallee): genaue Wegführung, Qualität ist überwiegend gut (Asphalt)	? 7591,11639 7642,11717 7723,11717 7771,11804 7811,11868 7846,11989 7827,12105 7816,12150
+(Weg im Tiergarten von Großer Weg über Bellevuealle zum Bremer Weg/Große Querallee): genaue Wegführung, Qualität ist überwiegend gut (Asphalt)	? 7591,11639 7642,11717 7723,11717 7771,11804 7801,11875 7833,11994 7827,12105 7816,12150
 Alle Straßen hier (Wendenschloß) scheinen Kopfsteinpflaster (mäßiges bis schlechtes) zu haben. Für die GPS-Tracks bestätigt.	? 23126,2034 23506,2101 23670,1231 23326,1143
 Ortsumfahrung Seelow (B1/B167): möglicherweise eine Kraftfahrzeugstraße?	? 79625,16206 77831,16850 76687,16583 76012,16425 75300,15087 75350,14743 76343,14181 76475,13318 78194,11798
 #: by Robert vvv
@@ -1356,7 +1354,6 @@ Waldstr.: Qualität?	? 24539,-3298 24872,-3095 24987,-3015 25182,-2915 25580,-267
 #: XXX der anonyme Eintrag hatte zu wenig Informationen
 Albert-Hößler-Str.: Qualität (möglicherweise mäßiger Belag)?	? 16023,11459 16134,11774
 Eichholzbahn (westlicher Teil): Qualität? Geht es weiter Richtung Westen?	? -7559,14379 -7730,14396 -7978,14419 -8316,14460 -8682,14489
-Jägerstr.: Abschnitt Friedrichswerder bereits fertiggestellt? Was ist mit den anderen Straßen dort?	? 9907,12055 10006,12065
 Bahnhofstr.: Qualität in diesem Abschnitt (ostl. d. Bergstr.)?	? -2657,-2907 -2720,-2937 -2817,-2967 -2878,-3004
 Spandauer Hauptpromenade: beleuchtet?	? -1725,16878 -1750,16879 -1778,16873 -1840,16890 -1882,16850 -1876,16790 -1906,16620 -1939,16427
 Scharnweberstr. (Friedrichshagen): Qualität?	? 25706,4723 25720,4832
@@ -1446,6 +1443,5 @@ Hackenbergstr.: Qualität? Gibt es hier einen Radweg?	? 20429,3792 20248,4040
 #: note: laut Message-ID: <e3o6lb$grb$1@hahn.informatik.hu-berlin.de> noch immer nicht fertig
 #: by: Skander Morgenthaler: nur kurzes Stück ist noch unfertig (30m):
 Groß-Berliner Damm: sind die Bauarbeiten mittlerweile beendet?	? 18058,4627 18882,3750
-Pariser Kommune/Metro: Ampel wird demnächst eingeschaltet	? 12656,11655
 Peetzig - Greiffenberg: westlich der Bahnstrecke mittlerweile asphaltiert?	? 44200,74890 45817,75966
 Am Unteruckersee: gibt es mittlerweile eine bessere wassergebundene Decke?	? 41137,97643 41181,96937

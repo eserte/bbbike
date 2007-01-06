@@ -157,7 +157,16 @@ userdel	2::inwork 22668,12080 22701,12115
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_003889',
+         'until' => 1183240800,
+         'text' => 'Wiesbadener Str. (Wilmersdorf) Richtung Bundesallee zwischen Geisenheimer Str. und Südwestkorso Baustelle, Fahrtrichtung gesperrt (bis Mitte 2007)',
+         'from' => 1161627812,
+         'data' => 'userdel	q4::inwork; 4391,7258 4618,7231 4743,7212
+userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
