@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.285 2007/01/03 20:10:18 eserte Exp $
+# $Id: bbbike,v 3.285 2007/01/03 20:10:18 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -849,7 +849,12 @@ if ($focus_policy eq 'follow') {
     # toplevel is not marked as transient. Therefore
     # first check if this work OK and maybe always enable
     # in BBBike 3.16 XXX
-    $top->focusFollowsMouse;
+    #
+    # Another problem, the reason why I disabled this for now: if
+    # the search window is redisplayed by hitting the "/"
+    # key, then the focus is not set to the search field.
+    #
+    #$top->focusFollowsMouse;
 } else {
     @popup_style = ();
 }
@@ -12510,7 +12515,9 @@ sub show_info {
 	    my(@y) = Karte::Polar::ddd2dms($py);
 	    push @x, $x[0] < 0 ? "W" : "E";
 	    push @y, $y[0] < 0 ? "S" : "N";
-	    my $url = "http://kvaleberg.com/extensions/mapsources/?params=" . join("_", @y, @x) . "_type:landmark_region:DE-BE";
+	    my $url = "http://tools.wikimedia.de/~magnus/geo/geohack.php?params=" . join("_", @y, @x) . "_type:landmark_region:DE-BE";
+	    ## Old, not functional anymore:
+	    #my $url = "http://kvaleberg.com/extensions/mapsources/?params=" . join("_", @y, @x) . "_type:landmark_region:DE-BE";
 
 	    my $need_indentation;
 	    if ($wikipedia_photo) {

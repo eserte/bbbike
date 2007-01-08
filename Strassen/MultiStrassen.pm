@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiStrassen.pm,v 1.15 2005/04/30 08:43:10 eserte Exp $
+# $Id: MultiStrassen.pm,v 1.16 2007/01/06 19:35:13 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::MultiStrassen;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 package MultiStrassen;
 use strict;
@@ -37,6 +37,7 @@ sub new {
     $self->{Pos}  = 0;
     $self->{SourcePos} = {};
     $self->{SubObj} = [];
+    $self->{GlobalDirectives} = {};
 
     for (@obj) {
 	if (!UNIVERSAL::isa($_, 'Strassen')) {
@@ -44,6 +45,18 @@ sub new {
 	    $_ = Strassen->new($_);
 	}
 	push @{ $self->{SubObj} }, $_;
+    }
+
+    for (@{ $self->{SubObj} }) {
+	my $global_dirs = $_->get_global_directives;
+	if ($global_dirs && $global_dirs->{encoding}) {
+	    my $encoding = $global_dirs->{encoding}->[0];
+	    if ($encoding ne 'iso-8859-1') {
+		# force everything to utf-8
+		$self->{GlobalDirectives}{encoding}[0] = 'utf-8';
+		last;
+	    }
+	}
     }
 
     bless $self, $class;

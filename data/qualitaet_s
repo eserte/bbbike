@@ -112,7 +112,7 @@ Belziger Str.: m‰ﬂiges, teilweise holpriges Kopfsteinpflaster	Q2 7315,9156 7110,
 Suadicanistr.: Asphalt	Q0 7859,7486 7854,7572
 Lilienthalstr.: teilweise keine befestigte Straﬂe	Q2 10675,8940 10598,8563
 Weichselstr.: m‰ﬂiges Kopfsteinpflaster, 15-17 km/h	Q2 12330,8636 12394,8729 12483,8834 12590,8977 12681,9083 12769,9186 12849,9319 12841,9368
-Treptower Str.: m‰ﬂiges Kopfsteinpflaster mit vereinzelten Asphaltflicken, 17 km/h	Q2 13857,8601 13982,8764 14015,8798 14140,8977
+Treptower Str.: m‰ﬂiges Kopfsteinpflaster mit vereinzelten Asphaltflicken, 17 km/h	Q0 13857,8601 14015,8798 14140,8977
 Pfarrstr.: m‰ﬂiges Kopfsteinpflaster	Q2 15267,10865 15339,11123 15438,11305
 Pfarrstr.: sehr guter Asphalt	Q0 15438,11305 15452,11330
 Schulze-Boysen-Str: sehr guter Asphalt	Q0 15452,11330 15480,11392
@@ -383,7 +383,8 @@ Kannerstr.: gutes Kopfsteinpflaster	Q1 13345,7424 13373,7432
 Kannerstr.: Asphalt mit kleinen Sch‰den	Q1 13373,7432 13487,7337
 Unstrutstr.: Asphalt	Q0 13487,7337 13506,7257
 Kˆnigsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15738,5369 15382,5687
-Uferweg: fester Sandweg	Q1 16604,8576 16529,8845 16449,9011 16319,9149 16259,9182 16129,9189 15969,9102 15793,8984
+Uferweg: fester Sandweg	Q1 16646,8561 16546,8852 16459,9017 16319,9149 16259,9182 16129,9189 15969,9102 15793,8984
+Uferweg: asphaltiert	Q0 16678,7475 16649,7570 16619,7831 16692,8166 16646,8561
 Bˆcklinstr.: Kopfsteinpflaster	Q2 14676,11375 14598,11245
 Berliner Str.: Kopfsteinpflaster	Q2 12746,17981 12479,17811
 Handjerystr.: Kopfsteinpflaster	Q2 20967,3343 20835,3496 20693,3667 20546,3865
@@ -408,8 +409,9 @@ Groﬂe Sternallee: Parkweg	Q1 6809,11979 7073,11798 7163,11738 7382,11588 7504,11
 Bellevueallee: Parkweg	Q1 7039,12314 7383,12095 7460,12054 7663,11946 7801,11875 8006,11766 8172,11679
 Ahornsteig: Parkweg	Q1 7669,11586 7706,11612 7742,11639 7852,11721 8006,11766
 Ahornsteig: kleinteiliges Pflaster und wassergebundene Decke	Q1 8006,11766 8156,11863 8222,11881 8284,11905 8453,12099 8522,12187 8515,12242
-Tiergarten: wassergebundene Decke	Q1 8223,11796 8156,11863 8095,12142
-Tiergarten: Parkweg	Q1 8021,11636 8006,11766 8022,12016 7999,12049 8006,12074 8034,12093 8063,12182
+Tiergarten: wassergebundene Decke	Q1 8223,11796 8156,11863 8091,11992 8089,12041 8107,12145
+Tiergarten: Parkweg	Q1 8021,11636 8006,11766 8022,12016
+Tiergarten: Parkweg	Q1 8034,12093 8057,12059 8048,12033 8022,12016 7999,12049 8006,12074 8034,12093 8048,12135 8063,12182
 Tiergarten: Parkweg	Q1 8214,12205 8215,12156 8222,11881 8223,11796 8223,11700
 Tiergarten: Parkweg	Q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
 Parkweg: teils sehr gutes Kopfsteinpflaster	Q1 14310,9692 14351,9757 14452,9919 14562,10079 14600,10128 14628,10160 14656,10197
@@ -968,7 +970,7 @@ Selkestr.: Kopfsteinpflaster	Q2 12685,7497 12703,7370
 (Kynaststr. - Uferwanderweg): Parkweg	Q1 14828,10628 14843,10621 14906,10587
 (Kynaststr. - Paul-und-Paula-Ufer): Parkweg	Q1 14795,10473 14864,10451
 Paul-und-Paula-Ufer: Kleinteiliges Kopfsteinpflaster	Q1 15314,10121 15261,10167
-Paul-und-Paula-Ufer: Parkweg, teilweise auch Asphalt/Beton	Q1 15261,10167 15204,10201 15059,10289 14903,10403 14864,10451 14906,10587 14937,10598 14990,10581 15100,10637 15209,10581
+Paul-und-Paula-Ufer: Parkweg, teilweise auch Asphalt/Beton	Q1 15261,10167 15204,10201 15059,10289 14903,10403 14864,10451 14884,10508 14906,10587 14937,10598 14990,10581 15100,10637 15209,10581
 Uferweg: Parkweg	Q1 15314,10121 15260,10048 15295,10022 15347,9922
 Uferweg: glatt gepflastert	Q0 15347,9922 15545,9818
 Uferweg: Parkweg	Q1 15545,9818 15583,9779 15626,9710
@@ -1412,6 +1414,10 @@ Hiroshimasteg: unebene Holzbohlen	Q1 7251,11202 7251,11181 7248,11143
 Melchiorstr. - Mariannenplatz: unbefestigt	Q2 11921,11185 11956,11166
 (Weg am Humboldthain): grobes Verbundsteinpflaster	Q2 9255,15816 9092,15789
 (Weg am Humboldthain): Verbundsteinpflaster	Q1 9092,15789 8938,15723
+Wasserweg: Kopfsteinpflaster und fester Sandweg	Q2 15673,8901 16010,8863 16119,8852 16395,8816
+Umfahrung Spreepark: fester Sandweg	Q2 16010,8863 16055,8831 16119,8852
+Kiehnwerderallee: asphaltiert	Q0 16395,8816 16534,8182 16602,7810 16620,7574 16633,7434
+(F‰hre - Kiehnwerderallee): asphaltiert	Q0 16649,7570 16620,7574
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: m‰ﬂiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 364,4829 319,4906 168,5092 103,5123
 P¸cklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2240,6904 2116,6861 2054,6840 1975,6818

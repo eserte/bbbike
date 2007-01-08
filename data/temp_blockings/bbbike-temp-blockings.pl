@@ -4502,8 +4502,8 @@ userdel	2 8515,12242 8214,12205 8089,12186
 userdel	2 8063,12182 7816,12150 7383,12095 6828,12031
 userdel auto	3 7460,12054 7383,12095 7039,12314
 userdel auto	3 7039,12314 7383,12095 7460,12054
-userdel	3 8119,12414 8063,12182 8034,12093
-userdel	3 8034,12093 8063,12182 8119,12414
+userdel	3 8119,12414 8063,12182 8048,12135 8034,12093
+userdel	3 8034,12093 8048,12135 8063,12182 8119,12414
 EOF
      },
      { from  => 1148623200, # 2006-05-26 08:00
@@ -4702,7 +4702,7 @@ userdel	2::temp 7382,11588 7354,11513
 userdel	2::temp 6809,11979 7073,11798
 userdel	2::temp 8223,11700 8223,11796 8222,11881 8215,12156 8214,12205
 userdel	2::temp 8119,12414 8063,12182
-userdel	2::temp 8063,12182 8034,12093 8006,12074 7999,12049 8022,12016
+userdel	2::temp 8063,12182 8048,12135 8034,12093 8006,12074 7999,12049 8022,12016 8048,12033 8057,12059 8034,12093
 userdel	2::temp 8540,12420 8560,12326 8539,12286 8515,12242 8600,12165 8595,12066
 userdel	2::temp 8595,12066 8581,11896 8571,11846
 EOF
@@ -5077,7 +5077,7 @@ EOF
        text  => 'Neubau der Treptower Straße in Neukölln, Sperrung zwischen Kiefholzstraße und Heidelberger Straße (Anliegerverkehr ist frei) (bis Ende 2006) ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 13857,8601 13982,8764 14015,8798 14140,8977
+userdel	q4::inwork 13857,8601 14015,8798 14140,8977
 EOF
      },
      { from  => 1153955394, # 2006-07-27 01:09
@@ -6865,12 +6865,12 @@ userdel	q4::temp 8089,12186 8214,12205 8515,12242
 EOF
      },
      { from  => undef, # 
-       until => 1183240800, # 2007-07-01 00:00
-       text  => 'Treptower Str. (Treptow) in beiden Richtungen zwischen Kiefholzstr. und Harzer Str. Baustelle Straße vollständig gesperrt (bis Mitte 2007) (16:10) ',
+       until => 1168288741, # 2007-07-01 00:00 1183240800
+       text  => 'Treptower Str. (Treptow) in beiden Richtungen zwischen Kiefholzstr. und Harzer Str. Baustelle Straße vollständig gesperrt (für Anlieger aber befahrbar!) (bis Mitte 2007) (16:10) ',
        type  => 'gesperrt',
        source_id => 'IM_004418',
        data  => <<EOF,
-userdel	2::inwork 14140,8977 14015,8798 13982,8764 13857,8601
+userdel	2::inwork 14140,8977 14015,8798 13857,8601
 EOF
      },
     );

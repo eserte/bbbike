@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.72 2006/09/12 21:42:05 eserte Exp $
+# $Id: Core.pm,v 1.73 2007/01/06 19:17:23 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.72 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.73 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -543,7 +543,12 @@ sub _write {
     }
     my $mode = delete $args{mode};
     if (open(COPY, "$mode $filename")) {
-	binmode COPY;
+	my $global_dirs = $self->get_global_directives;
+	if ($global_dirs->{encoding}) {
+	    binmode COPY, ":encoding(". $global_dirs->{encoding}->[0] . ")";
+	} else {
+	    binmode COPY;
+	}
 	print COPY $self->as_string(%args);
 	close COPY;
 	1;

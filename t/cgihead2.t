@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.14 2006/11/24 07:21:44 eserte Exp $
+# $Id: cgihead2.t,v 1.15 2007/01/08 21:10:32 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -120,23 +120,23 @@ sub check_url {
 	my $content_type = $resp->content_type;
 	if ($url eq $BBBike::BBBIKE_UPDATE_DATA_CGI ||
 	    $url =~ m{\.zip$}) {
-	    is($content_type, "application/zip", "Expected type (zip)");
+	    is($content_type, "application/zip", "Expected type (zip)") or diag("For URL $url");
 	} elsif ($url =~ m{\.tar\.gz$}) {
-	    is($content_type, "application/x-gzip", "Expected type (gzip)");
+	    is($content_type, "application/x-gzip", "Expected type (gzip)") or diag("For URL $url");
 	} elsif ($url =~ m{/\.modified$}) {
-	    is($content_type, "text/plain", "Expected type (plain text)");
+	    is($content_type, "text/plain", "Expected type (plain text)") or diag("For URL $url");
 	} elsif ($url =~ m{wap}) {
-	    is($content_type, "text/vnd.wap.wml", "Expected type (wml)");
+	    is($content_type, "text/vnd.wap.wml", "Expected type (wml)") or diag("For URL $url");
 	} elsif ($url =~ m{\.exe$}) {
-	    is($content_type, "application/octet-stream", "Expected type (binary)");
+	    is($content_type, "application/octet-stream", "Expected type (binary)") or diag("For URL $url");
 	} elsif ($url =~ m{(?:\.tar\.bz2|\.tbz)$}) {
-	    is($content_type, "application/octet-stream", "Expected type (binary for bzip2)");
+	    is($content_type, "application/octet-stream", "Expected type (binary for bzip2)") or diag("For URL $url");
 	} elsif ($url =~ m{\.tar\.gz\?download$}) { # Sourceforge download
-	    is($content_type, "application/x-tar", "Expected type (tar)");
+	    like($content_type, qr{^application/x-(tar|gzip)$}, "Expected type (tar or gzip)") or diag("For URL $url");
 	} elsif ($url =~ m{\.(exe|deb)\?download$}) { # Sourceforge download
-	    is($content_type, "application/octet-stream", "Expected type (binary)");
+	    is($content_type, "application/octet-stream", "Expected type (binary)") or diag("For URL $url");
 	} else {
-	    is($content_type, "text/html", "Expected type (html)");
+	    is($content_type, "text/html", "Expected type (html)") or diag("For URL $url");
 	}
     }
 }

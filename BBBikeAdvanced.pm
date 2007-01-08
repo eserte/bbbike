@@ -1162,6 +1162,9 @@ sub parse_url_for_coords {
 	$y_ddd *= -1 if $4 eq 'S';
 	$x_ddd = $5 + $6/60 + $7/3600;
 	$x_ddd *= -1 if $8 eq 'W';
+    } elsif ($url =~ m{ll=([0-9.]+),([0-9.]+)}) {
+	$x_ddd = $2;
+	$y_ddd = $1;
     } else {
 	if ($url =~ /LL=%2B([0-9.]+)%2B([0-9.]+)/) {
 	    $x_ddd = $2;

@@ -1377,6 +1377,14 @@ inside the region would move.
 
 More ideas: copy polygons, rotate polygons.
 
+=item * (M1)
+
+Use Imager::Screenshot for screenshots instead of xwd etc. tricks.
+Note: I should explicitely supply the display parameter because one
+cannot rely on $ENV{DISPLAY} (the application could be started with
+-display parameter). Also, I need to support both the id parameter and
+the hwnd parameter.
+
 =back
 
 =head2 Windows specific

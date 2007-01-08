@@ -326,6 +326,7 @@ Glasbläserallee: Tore versperren die Durchfahrt	2 14893,10359 14839,10271
 Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
 Quitzowstr.	1 7132,14375 7091,14401
 Quitzowstr.	1 7091,14401 7180,14419
+Spreepark	2 16010,8863 16119,8852
 Mauerstr.	1 -13425,-852 -13500,-640
 Wilhelm-Staab-Str.	1 -13003,-1343 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12685,-870 -12712,-734 -12730,-627
@@ -359,6 +360,7 @@ Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s 52431,94119 52422,94028 5235
 Lindenstr. (Frankfurt/Oder)	1 88960,-6639 88836,-6002
 Carthausplatz (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88960,-6639
 Gubener Str. (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88881,-6462 88775,-6151 88759,-5911
+B5 (paralleler Radweg existiert)	2 -8973,13293 -9586,13296 -10071,13353 -11250,13690
 B110 nach Swinoujscie: kein Grenzübergang	2 62279,166179 62934,166705
 Einbahnstraßen in Altlandsberg	1 32224,18110 32181,18009 32100,18012 32115,18106 32224,18110
 Korswandt - Ahlbeck: für Radfahrer gesperrt	2 59081,169443 59317,169771 59512,170017 60025,170281 60262,170468 60660,170797
@@ -615,7 +617,7 @@ Neue Blumenstr. -> Neue Blumenstr.: Mittelstreifen	3 11709,12601 12006,12464 121
 Neue Blumenstr. -> Lichtenberger Str.: Mittelstreifen	3 11709,12601 12006,12464 12047,12572
 Lichtenberger Str. -> Neue Blumenstr.: Mittelstreifen	3 12047,12572 12006,12464 12118,12462
 Lichtenberger Str. -> Neue Blumenstr.: Mittelstreifen	3 11929,12263 12006,12464 11709,12601
-Suadicanistr. -> Sachsendamm: unbequem passierbarer Mittelstreifen	3 7854,7572 7859,7486 7924,7431
+Suadicanistr. -> Sachsendamm: unbequem passierbarer Mittelstreifen	3 7854,7572 7859,7486 7946,7411
 Sachsendamm -> Suadicanistr.: unbequem passierbarer Mittelstreifen	3 7717,7564 7859,7486 7854,7572
 Boddinstr. -> Karl-Marx-Str.: Mittelstreifen	3 12368,8356 12582,8408 12540,8458
 Karl-Marx-Str. -> Saltykowstr.: unbequemes Überqueren wegen parkender Autos	3 12898,7832 12865,7923 12726,7887
@@ -824,10 +826,9 @@ Drängelgitter	BNP:5:-93 6560,21084
 Drängelgitter	BNP:5:-186 6613,21116
 Drängelgitter/Schranke	BNP:5:-180 9998,5210
 Schranke (Kopfstr.)	BNP:5:-101 12537,7899
-Drängelgitter (Parkweg)	BNP:5:37 14562,10079
-Drängelgitter (Parkweg)	BNP:5:41 14600,10128
-Drängelgitter (Parkweg)	BNP:5:37 14628,10160
-Drängelgitter (Parkweg)	BNP:5:34 14452,9919
+Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:5:37 14562,10079
+Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:5:41 14600,10128
+Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:5:37 14628,10160
 Drängelgitter (Görlitzer Park)	BNP:5:13 12686,10045
 Drängelgitter (Görlitzer Park)	BNP:5:22 12770,10210
 Drängelgitter (Görlitzer Park)	BNP:5:-153 12904,10141
@@ -852,7 +853,6 @@ Schranke (Berliner Str./Woltersdorf)	BNP:5:-108 32192,5915
 Schranke, schwer passierbarf (Neue Steinmetzstr.)	BNP:10:-201 7628,9364
 Schranke (Neue Steinmetzstr.)	BNP:5:-191 7612,9446
 Drängelgitter (Radweg nach Bötzow)	BNP:5:-260 -5890,25875
-Barriere (Treptower Str.)	BNP:5:-142 13982,8764
 Schranke (Rütlistr.)	BNP:5:-135 12496,9053
 Schranke (Rütlistr.)	BNP:5:-154 12565,9200
 Schranke, meistens offen (Iranische Str.)	BNP:5:-263 7875,16509

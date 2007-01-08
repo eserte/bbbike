@@ -79,7 +79,7 @@ Mauerweg am Nordbahnhof: wo genau?	?::inwork 9221,13992 8907,14398
 #: by: http://www.berlinonline.de/berliner-kurier/archiv/.bin/dump.fcgi/2005/1110/berlin/0033/index.html
 #: next_check: 2009-01-01
 Grenzweg: Brücke über die Spree bzw. Straßenverbindung zwischen Rummelsburger Landstraße und Schnellerstr. soll 2009 fertig werden	?::inwork 17082,7189 16954,7096
-Wiederaufbau des Kaiserstegs (ca. 2007-08-01)	?::inwork 18384,5914 18462,6087
+Wiederaufbau des Kaiserstegs (ca. 2007-08-01)	?::inwork 18353,5897 18462,6087
 #: next_check: 2006-08-01
 Uferweg an der Kongreßhalle: laut Tsp im Frühjahr 2005 fertig (aber noch nicht fertig geworden)	?::inwork 7753,12578
 Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
@@ -121,9 +121,6 @@ Warschauer Str.: Radwegbenutzungspflicht wird aufgehoben	?; 13546,11352 13476,11
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html
 R1: geänderte Ausschilderung steht noch aus	? 22967,4144 23435,4179 24181,4270 25396,4417 25347,4320 25373,4266 25318,4204 25238,3842 25251,3590 25261,3253 25275,3181 25346,2956 25474,2848 25819,2658 26006,2615 25948,2474
 Bernauer Str.: Ampeln genauer erfassen	? 9400,14400 9621,14624 9805,14717 10176,14896
-#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20060515.1310.40101.html
-#: note: anscheinend (laut VMZ) dauern die Bauarbeiten länger
-Treptower Str.: nach Ende der Bauarbeiten (2007-07-01) asphaltiert	?::inwork 14140,8977 14015,8798 13982,8764 13857,8601
 #: next_check: 2006-06-01
 Burgwallgraben: neuer Weg wg. Renaturisierung durch DB - fertig Sommer 2006	? -3609,13492 -3632,13304 -3625,13241 -3550,13122 -3403,13024 -3360,13028 -3332,13054
 Französische Str.: Vorfahrt (kann ich das so ausdrücken, mit zwei Punkten?)	? 9183,12076 9076,12054
@@ -157,9 +154,9 @@ Muspelsteig: falls Rübezahlweg OK, dann diesen Weg hier auch aufnemen	? 14052,18
 Höhenpunkt Mendelssohnstr.?	? 11613,13570
 #: XXX: Vorschlag von Corinna Meyer:
 Bremer Weg (Tiergarten): genaue Wegführung, Qualität?	? 5901,11902 5923,11873 6296,11890 6342,11878 6409,11925 6573,11943 6642,12010
-Bremer Weg (Tiergarten): genaue Wegführung, Qualität (wassergebundene Strecke)?	? 6828,12031 6857,11992 7460,12054 7827,12105 8018,12131 8063,12182
+Bremer Weg (Tiergarten): genaue Wegführung, Qualität (wassergebundene Strecke)?	? 6828,12031 6857,11992 7460,12054 7827,12105 8018,12131 8048,12135
 (Bremer Weg - Fasanerieallee): genaue Wegführung, Qualität?	? 6342,11878 6379,11843 6406,11784 6540,11754
-Bremer Weg (Tiergarten): genaue Koordinaten, Qualität (Asphalt)?	? 8089,12186 8095,12142 8215,12156 8490,12192 8515,12242
+Bremer Weg (Tiergarten): genaue Koordinaten, Qualität (Asphalt)?	? 8048,12135 8107,12145 8215,12156 8490,12192 8515,12242
 (Weg im Tiergarten von Großer Weg über Bellevuealle zum Bremer Weg/Große Querallee): genaue Wegführung, Qualität ist überwiegend gut (Asphalt)	? 7591,11639 7642,11717 7723,11717 7771,11804 7801,11875 7833,11994 7827,12105 7816,12150
 Alle Straßen hier (Wendenschloß) scheinen Kopfsteinpflaster (mäßiges bis schlechtes) zu haben. Für die GPS-Tracks bestätigt.	? 23126,2034 23506,2101 23670,1231 23326,1143
 Ortsumfahrung Seelow (B1/B167): möglicherweise eine Kraftfahrzeugstraße?	? 79625,16206 77831,16850 76687,16583 76012,16425 75300,15087 75350,14743 76343,14181 76475,13318 78194,11798
@@ -191,7 +188,6 @@ Tempelhofer Veloroutenpläne: Muschelkalkweg: genaue Lage, Qualität?	? 11193,1684
 Radweg in Zepernick, beidseitig, auf der südöstlichen Seite: genauer Beginn- und Endpunkt?	? 18292,26726 19364,27415 19475,27877 20017,28297 20472,28570
 Borussiastr.: aus dem Bus heraus sah es so aus, als ob hier *kein* Kopfsteinpflaster ist, vielleicht David nochmal fragen?	? 9241,6791 9706,6802
 Bürgerpark Pappelfriedhof: ist er hier?	? 11121,15327 11182,15284 11151,15233 11101,15263 11115,15284 11098,15298
-Hasselwerderpark: ist er hier?	? 18226,5930 18197,5876 18377,5748 18407,5845 18366,5912
 Ackerpark: ist er hier?	? 9629,14186 9577,14105 9634,14073 9681,14145
 Hinckeldeybrücke: genaue Koordinaten der Schleife?	? 3406,15792 3336,15644 3332,15587
 Uferpromenade Tegelort/Heiligensee: genaueres zur Qualität und zur Fußgängerfrequenz!	? -2251,19047 -2201,19218 -2205,19331 -2244,19547 -2228,19658 -2215,19817 -2149,19966 -2144,20100 -2011,20534
@@ -648,7 +644,7 @@ Terrassenstr.: Qualität?	? -1379,3897 -1554,3889 -1754,3907 -1909,3854 -1901,369
 #: XXX anonymer Eintrag?
 Pirolstr.: loser Sandweg (Q2): auf Biesdorfer oder Karlshorster Seite?	? 20716,10007 20140,10053
 Neubrandenburg: Hinterste Mühle - Stadt (Waldweg), wie geht es weiter?	? -78,126443 -112,126528 -62,126684 -96,126768 -231,126900 -428,127368 -493,127450 -671,127478
-Eichbuschallee: Teil der Eichbuschallee im Plänterwald: Qualität?	? 16136,7886 16440,8128
+Eichbuschallee: Teil der Eichbuschallee im Plänterwald: Qualität?	? 16136,7886 16534,8182
 Hof Sternhagen - Lindenhagen: Qualität? (Deckenerneuerung 5/2005)	? 35466,92211 34375,92125 33537,92937 33412,93612 33342,94000
 Beenz - Gollmitz: Qualität?	? 30850,95280 30813,95463 30179,95743 29814,96060 28583,96645 29156,97266 29424,97790 29862,98765 30033,98985 30284,99405
 Lindenhagen - Beenz: Qualität?	? 32388,94460 31922,94902 31069,95292 30850,95280 30510,95193 30216,94987
@@ -1441,7 +1437,5 @@ Wassermannstr.: Qualität zwischen Radickestr. und Glienicker Weg?	? 21055,3415 2
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20061025.0935.49339.html, aber ganz klar ist es nicht, ob nur die Straßenanbindung oder die gesamte Straße gemeint ist, und welcher Radweg?
 Hackenbergstr.: Qualität? Gibt es hier einen Radweg?	? 20429,3792 20248,4040
 #: note: laut Message-ID: <e3o6lb$grb$1@hahn.informatik.hu-berlin.de> noch immer nicht fertig
-#: by: Skander Morgenthaler: nur kurzes Stück ist noch unfertig (30m):
-Groß-Berliner Damm: sind die Bauarbeiten mittlerweile beendet?	? 18058,4627 18882,3750
 Peetzig - Greiffenberg: westlich der Bahnstrecke mittlerweile asphaltiert?	? 44200,74890 45817,75966
 Am Unteruckersee: gibt es mittlerweile eine bessere wassergebundene Decke?	? 41137,97643 41181,96937

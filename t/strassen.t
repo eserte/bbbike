@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen.t,v 1.11 2006/09/27 23:44:59 eserte Exp $
+# $Id: strassen.t,v 1.12 2007/01/08 21:10:32 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -14,6 +14,8 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../data",
 	 "$FindBin::RealBin",
 	);
+use File::Temp qw(tempfile);
+use File::Compare qw(compare);
 use Getopt::Long;
 
 use Strassen;
@@ -40,8 +42,9 @@ GetOptions(get_std_opts("xxx"),
 my $doit_tests = 6;
 my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 3;
+my $encoding_tests = 9;
 
-plan tests => 26 + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests;
+plan tests => 26 + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $encoding_tests;
 
 goto XXX if $do_xxx;
 
@@ -265,6 +268,53 @@ SKIP: {
     is($glob_dir->{"emacs-mode"}->[0], "-*- bbbike -*-", "Test the emacs-mode hack");
 }
 
+SKIP: {
+    skip("Need utf-8 (very!) capable perl", $encoding_tests)
+	if $] < 5.008;
+
+    my $data = <<EOF;
+#: encoding: utf-8
+#:
+\x{20ac}	X 2,2
+Nonumlaut	X 1,1
+EOF
+    my $s = Strassen->new_from_data_string($data);
+    my $global_dirs = $s->get_global_directives;
+    is($global_dirs->{encoding}->[0], "utf-8", "Encoding directive");
+    is(scalar @{$s->data}, 2);
+    $s->init;
+    my $rec = $s->next;
+    is($rec->[Strassen::NAME], "\x{20ac}", "Got unicode character");
+
+    my($tmpfh,$tmpfile) = tempfile(SUFFIX => ".bbd",
+				   UNLINK => 1);
+    binmode $tmpfh, ":utf8";
+    print $tmpfh $data or die $!;
+    close $tmpfh or die $!;
+
+    my $s2 = Strassen->new($tmpfile);
+    my $global_dirs2 = $s2->get_global_directives;
+    is_deeply($global_dirs2, $global_dirs, "Global directives do not differ when loading from file");
+    is_deeply($s2->data, $s->data, "Data does not differ when loading from file");
+
+    my($tmpfh2,$tmpfile2) = tempfile(SUFFIX => ".bbd",
+				     UNLINK => 1);
+    $s2->write($tmpfile2);
+    is(compare($tmpfile2, $tmpfile), 0, "File the same after write");
+
+    my $ms = MultiStrassen->new($s, $s2);
+    my $global_dirs_multi = $ms->get_global_directives;
+    is($global_dirs_multi->{encoding}->[0], "utf-8", "Encoding directive for MultiStrassen object");
+
+    my($tmpfh3,$tmpfile3) = tempfile(SUFFIX => ".bbd",
+				     UNLINK => 1);
+    $ms->write($tmpfile3);
+
+    my $ms2 = Strassen->new($tmpfile3);
+    my $global_dirs_multi2 = $ms2->get_global_directives;
+    is_deeply($global_dirs_multi2, $global_dirs_multi, "Global directives do not differ when loading from file (MultiStrassen)");
+    is_deeply($ms2->data, $ms->data, "Data does not differ when loading from file (MultiStrassen)");
+}
 
     
 __END__

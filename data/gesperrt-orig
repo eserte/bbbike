@@ -369,6 +369,7 @@ Glasbläserallee: Tore versperren die Durchfahrt	2 14893,10359 14839,10271
 Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
 Quitzowstr.	1 7132,14375 7091,14401
 Quitzowstr.	1 7091,14401 7180,14419
+Spreepark	2 16010,8863 16119,8852
 #
 # Potsdam
 #
@@ -399,6 +400,7 @@ Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s 52431,94119 52422,94028 5235
 Lindenstr. (Frankfurt/Oder)	1 88960,-6639 88836,-6002
 Carthausplatz (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88960,-6639
 Gubener Str. (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88881,-6462 88775,-6151 88759,-5911
+B5 (paralleler Radweg existiert)	2 -8973,13293 -9586,13296 -10071,13353 -11250,13690
 # elsewhere not in Brandenburg
 B110 nach Swinoujscie: kein Grenzübergang	2 62279,166179 62934,166705
 Einbahnstraßen in Altlandsberg	1 32224,18110 32181,18009 32100,18012 32115,18106 32224,18110
@@ -523,7 +525,7 @@ Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 11712,14868 11610,14886 1
 Torstr.: Mittelstreifen mit Straßenbahn	3nocross 10746,13673 10640,13700 10569,13719 10445,13752
 Yorckstr.: Linksabbiegen verboten (und unbequem)	3nocross 8188,9610 8095,9639 7941,9686
 Lichtenberger Str.: Mittelstreifen	3nocross 12047,12572 12006,12464 11929,12263
-Sachsendamm: unbequem passierbarer Mittelstreifen	3nocross 7717,7564 7859,7486 7924,7431
+Sachsendamm: unbequem passierbarer Mittelstreifen	3nocross 7717,7564 7859,7486 7946,7411
 Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12540,8458
 Karl-Marx-Str.: unbequemes Überqueren wegen parkender Autos	3nocross 12830,8031 12865,7923 12898,7832
 Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11763,8337 11892,8372
@@ -699,10 +701,9 @@ Drängelgitter	BNP:5 6560,21084
 Drängelgitter	BNP:5 6613,21116
 Drängelgitter/Schranke	BNP:5 9998,5210
 Schranke (Kopfstr.)	BNP:5 12537,7899
-Drängelgitter (Parkweg)	BNP:5 14562,10079
-Drängelgitter (Parkweg)	BNP:5 14600,10128
-Drängelgitter (Parkweg)	BNP:5 14628,10160
-Drängelgitter (Parkweg)	BNP:5 14452,9919
+Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:5 14562,10079
+Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:5 14600,10128
+Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:5 14628,10160
 Drängelgitter (Görlitzer Park)	BNP:5 12686,10045
 Drängelgitter (Görlitzer Park)	BNP:5 12770,10210
 # XXX eins von zwei Gittern fehlt zurzeit
@@ -733,7 +734,6 @@ Schranke (Neue Steinmetzstr.)	BNP:5 7612,9446
 #Barriere: Zillestr.	BNP:30 3268,11834
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Drängelgitter (Radweg nach Bötzow)	BNP:5 -5890,25875
-Barriere (Treptower Str.)	BNP:5 13982,8764
 Schranke (Rütlistr.)	BNP:5 12496,9053
 Schranke (Rütlistr.)	BNP:5 12565,9200
 Schranke, meistens offen (Iranische Str.)	BNP:5 7875,16509
@@ -761,8 +761,7 @@ Drängelgitter	BNP:5 8810,14373
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #
-#XXX del : last_checked: 2006-09-22 Uferweg: wegen Bauarbeiten gesperrt	2:inwork 14864,10451 14906,10587
-#: last_checked: 2006-09-22
+#: last_checked: 2007-01-08
 Untere Kynaststr.: wegen Bauarbeiten gesperrt	2:inwork 14843,10621 14890,10824
 #XXX del: # last_checked: 2005-11-19: Budapester Str.: Bauarbeiten, Fußgängerüberweg gesperrt	3nocross:inwork 5716,10978 5831,10978 6135,10982
 Hedwigskirchgasse: Bauarbeiten	2:inwork 9743,12239 9756,12139

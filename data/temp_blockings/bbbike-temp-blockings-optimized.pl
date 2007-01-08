@@ -668,16 +668,6 @@ userdel	1::inwork 10781,13002 10706,13043
          'data' => 'userdel	2::inwork 37419,-91709 37675,-92038 37809,-92300 37918,-93202
 ',
          'type' => 'gesperrt'
-       },
-       undef,
-       {
-         'source_id' => 'IM_004418',
-         'until' => 1183240800,
-         'text' => 'Treptower Str. (Treptow) in beiden Richtungen zwischen Kiefholzstr. und Harzer Str. Baustelle Straße vollständig gesperrt (bis Mitte 2007) (16:10) ',
-         'from' => undef,
-         'data' => 'userdel	2::inwork 14140,8977 14015,8798 13982,8764 13857,8601
-',
-         'type' => 'gesperrt'
        }
      
 );
