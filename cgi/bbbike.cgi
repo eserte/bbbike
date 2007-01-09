@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.31 2006/12/03 23:23:21 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.33 2007/01/09 00:26:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -83,7 +83,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $g_str $orte $orte2 $multiorte
 	    $ampeln $qualitaet_net $handicap_net
 	    $strcat_net $radwege_strcat_net $radwege_net $routen_net $comments_net
-	    $comments_points $green_net
+	    $comments_points $green_net $unlit_streets_net
 	    $crossings $kr $plz $net $multi_bez_str
 	    $overview_map $city
 	    $use_umland $use_umland_jwd $use_special_destinations
@@ -697,7 +697,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.31 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.33 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -760,7 +760,7 @@ use vars qw(%handicap_speed);
 		   "q1" => 25,
 		  );
 
-@pref_keys = qw/speed cat quality ampel green winter fragezeichen/;
+@pref_keys = qw/speed cat quality ampel green unlit winter fragezeichen/;
 
 CGI->import('-no_xhtml');
 
@@ -1804,6 +1804,9 @@ EOF
 	    $tryempty = 1;
 	} elsif ($$tworef ne '') {
 	    my($strasse, $bezirk, $plz, $xy) = split(/$delim/o, $$tworef);
+	    if ($bezirk eq 'Potsdam') {
+		upgrade_scope("region");
+	    }
 	    print "<td>$fontstr" if $bi->{'can_table'};
 	    if (defined $xy) {
 		new_kreuzungen();
@@ -2557,7 +2560,7 @@ sub set_cookie {
 }
 
 use vars qw($default_speed $default_cat $default_quality
-	    $default_ampel $default_routen $default_green $default_winter
+	    $default_ampel $default_routen $default_green $default_unlit $default_winter
 	    $default_fragezeichen);
 
 sub get_settings_defaults {
@@ -2573,7 +2576,8 @@ sub get_settings_defaults {
     if ($default_green eq 'yes') {
 	$default_green = 2;
     }
-    $default_winter   = (defined $c{"pref_winter"}   ? $c{"pref_winter"}   : "");
+    $default_unlit   = (defined $c{"pref_unlit"}   ? $c{"pref_unlit"}   : "");
+    $default_winter  = (defined $c{"pref_winter"}  ? $c{"pref_winter"}  : "");
     $default_fragezeichen = (defined $c{"pref_fragezeichen"} ? $c{"pref_fragezeichen"} : "");
 }
 
@@ -2583,13 +2587,23 @@ sub reset_html {
 	my(%strqual)   = ("" => 0, "Q0" => 1, "Q2" => 2);
 	my(%strrouten) = ("" => 0, "RR" => 1);
 	my(%strgreen)  = ("" => 0, "GR1" => 1, "GR2" => 2);
+	my(%strunlit)  = ("" => 0, "NL" => 1);
 	my(%strwinter) = ("" => 0, "WI1" => 1, "WI2" => 2);
 
 	get_settings_defaults();
 
-	print <<EOF
-<input class="settingsreset" type=button value="Reset" onclick="reset_form(@{[defined $default_speed ? $default_speed : "null" ]}, @{[defined $strcat{$default_cat} ? $strcat{$default_cat} : 0]}, @{[defined $strqual{$default_quality} ? $strqual{$default_quality}: 0]}, @{[defined $strrouten{$default_routen} ? $strrouten{$default_routen} : 0]}, @{[ $default_ampel?"true":"false" ]}, @{[defined $strgreen{$default_green} ? $strgreen{$default_green} : 0]}, @{[defined $strwinter{$default_winter} ? $strwinter{$default_winter} : 0]}); enable_settings_buttons(); return false;">
-EOF
+	print join(" ", 
+		   qq'<input class="settingsreset" type=button value="Reset" onclick="reset_form(',
+		   qq'@{[defined $default_speed ? $default_speed : "null" ]},',
+		   qq'@{[defined $strcat{$default_cat} ? $strcat{$default_cat} : 0]},',
+		   qq'@{[defined $strqual{$default_quality} ? $strqual{$default_quality}: 0]},',
+		   qq'@{[defined $strrouten{$default_routen} ? $strrouten{$default_routen} : 0]},',
+		   qq'@{[ $default_ampel?"true":"false" ]},',
+		   qq'@{[defined $strgreen{$default_green} ? $strgreen{$default_green} : 0]},',
+		   qq'@{[defined $strunlit{$default_unlit} ? $strunlit{$default_unlit} : 0]},',
+		   qq'@{[defined $strwinter{$default_winter} ? $strwinter{$default_winter} : 0]}',
+		   qq'); enable_settings_buttons(); return false;">',
+		  );
     }
 }
 
@@ -2619,6 +2633,10 @@ sub settings_html {
     my $green_checked = sub { my $val = shift;
 			      'value="' . $val . '" ' .
 			      ($default_green eq $val ? "selected" : "")
+			};
+    my $unlit_checked = sub { my $val = shift;
+			      'value="' . $val . '" ' .
+			      ($default_unlit eq $val ? "selected" : "")
 			};
     my $winter_checked = sub { my $val = shift;
 			      'value="' . $val . '" ' .
@@ -2656,7 +2674,18 @@ EOF
 #  <option value="R2">@{[ M("benutzungspflichtige Radwege vermeiden") ]}
 #  </select></td></tr>-->
     print <<EOF;
-<tr><td>@{[ M("Ampeln vermeiden") ]}:</td><td><input type=checkbox name="pref_ampel" value=yes @{[ $default_ampel?"checked":"" ]}></td>
+<tr><td>@{[ M("Ampeln vermeiden") ]}:</td><td><input type=checkbox name="pref_ampel" value="yes" @{[ $default_ampel?"checked":"" ]}></td>
+EOF
+    if ($is_beta) {
+	print <<EOF;
+<tr><td>@{[ M("Unbeleuchtete Wege vermeiden") ]}:</td><td><input type=checkbox name="pref_unlit" value="NL" @{[ $default_unlit?"checked":"" ]}></td>
+EOF
+    } else {
+	print <<EOF;
+<input type="hidden" name="pref_unlit" value="">
+EOF
+    }
+    print <<EOF;
 <tr><td>@{[ M("Grüne Wege") ]}:</td><td><select $bi->{hfill} name="pref_green">
 <option @{[ $green_checked->("") ]}>@{[ M("egal") ]}
 <option @{[ $green_checked->("GR1") ]}>@{[ M("bevorzugen") ]}
@@ -2891,6 +2920,20 @@ sub search_coord {
 		       });
 	$extra_args{Green} =
 	    {Net => $green_net,
+	     Penalty => $penalty,
+	    };
+    }
+
+    # Optimierung der beleuchteten Wegen
+    if (!$disable_other_optimizations && defined $q->param('pref_unlit') && $q->param('pref_unlit') ne '') {
+	if (!$unlit_streets_net) {
+	    $unlit_streets_net = new StrassenNetz(Strassen->new("nolighting"));
+	    $unlit_streets_net->make_net_cat;
+	}
+	my $penalty = { "NL" => 4,
+		      };
+	$extra_args{UnlitStreets} =
+	    {Net => $unlit_streets_net,
 	     Penalty => $penalty,
 	    };
     }
@@ -3623,6 +3666,7 @@ sub search_coord {
  ROUTE_HEADER:
     if (!@out_route) {
 	print M("Keine Route gefunden").".\n";
+	warn "Found no route between <$startname> and <$zielname>, should not happen!";
     } else {
 	if (@current_temp_blocking && !@custom && !$printmode) {
 	    my @affecting_blockings;
@@ -5124,6 +5168,18 @@ sub increment_scope {
     $scope;
 }
 
+sub upgrade_scope {
+    my($target_scope) = @_;
+    my $scope = $q->param("scope") || "city";
+    for my $check_scope (qw(wideregion region)) {
+	return if ($scope eq $check_scope);
+	if ($target_scope eq $check_scope) {
+	    $q->param("scope", $check_scope);
+	    return;
+	}
+    }
+}
+
 # falls die Koordinaten nicht exakt existieren, wird der nächste Punkt
 # gesucht und gesetzt
 sub fix_coords {
@@ -6172,7 +6228,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/12/03 23:23:21 $';
+    my $cgi_date = '$Date: 2007/01/09 00:26:50 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

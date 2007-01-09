@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.20 2006/09/30 13:27:44 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.21 2007/01/08 23:28:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006 Slaven Rezic. All rights reserved.
@@ -202,6 +202,7 @@ sub failed_long_data {
     }
     print $fh $dump;
     close $fh;
+    0;
 }
 
 sub is_long_data {
