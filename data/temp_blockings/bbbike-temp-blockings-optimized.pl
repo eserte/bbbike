@@ -668,6 +668,26 @@ userdel	1::inwork 10781,13002 10706,13043
          'data' => 'userdel	2::inwork 37419,-91709 37675,-92038 37809,-92300 37918,-93202
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       {
+         'source_id' => 'IM_004443',
+         'until' => 1183240800,
+         'text' => 'Nennhauser Damm (Spandau) Richtung Brunsbütteler Damm nach Heerstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2007)',
+         'from' => undef,
+         'data' => 'userdel	1::inwork -8671,13312 -8643,13383 -8358,13340 -8011,13351 -7693,13330
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_004447',
+         'until' => 1177970399,
+         'text' => 'Oranienstr. und Lobeckstr. (Kreuzberg) in beiden Richtungen an der Kreuzung Baustelle, Oranienstr. auf einen Fahrstreifen je Richtung verengt, Lobeckstr. Einbahnstr. Richtung Ritterstr. (bis Ende 04.2007)',
+         'from' => 1168327664,
+         'data' => 'userdel	1::inwork 10572,10773 10673,10975
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -6873,4 +6873,22 @@ EOF
 userdel	2::inwork 14140,8977 14015,8798 13857,8601
 EOF
      },
+     { from  => undef, # 
+       until => 1183240800, # 2007-07-01 00:00
+       text  => 'Nennhauser Damm (Spandau) Richtung Brunsbütteler Damm nach Heerstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_004443',
+       data  => <<EOF,
+userdel	1::inwork -8671,13312 -8643,13383 -8358,13340 -8011,13351 -7693,13330
+EOF
+     },
+     { from  => 1168327664, # 2007-01-09 08:27
+       until => 1177970399, # 2007-04-30 23:59
+       text  => 'Oranienstr. und Lobeckstr. (Kreuzberg) in beiden Richtungen an der Kreuzung Baustelle, Oranienstr. auf einen Fahrstreifen je Richtung verengt, Lobeckstr. Einbahnstr. Richtung Ritterstr. (bis Ende 04.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_004447',
+       data  => <<EOF,
+userdel	1::inwork 10572,10773 10673,10975
+EOF
+     },
     );
