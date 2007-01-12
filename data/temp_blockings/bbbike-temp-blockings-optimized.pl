@@ -57,22 +57,6 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1293836399,
-         'text' => 'Universitätsstr., Richtung Dorotheenstr. gesperrt (bis 2010) ',
-         'from' => undef,
-         'data' => 'userdel	q4::inwork; 9603,12372 9574,12578
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1293836399,
-         'text' => 'Universitätsstr., Richtung Dorotheenstr. gesperrt (bis 2010)',
-         'from' => undef,
-         'data' => 'userdel	q4::inwork; 9562,12679 9574,12578
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
        undef,
@@ -145,15 +129,9 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1193871599,
-         'text' => 'Die Kaulsdorfer Brücke ist ab Montag 06.03.2006, 6.00 Uhr bis voraussichtlich Herbst 2007 gesperrt.',
-         'from' => 1141561135,
-         'data' => 'userdel	2::inwork 22691,12044 22668,12080
-userdel	2::inwork 22668,12080 22701,12115
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -293,15 +271,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_82715',
-         'until' => 1188597599,
-         'text' => 'Askanierring (Spandau) in Richtung Hohenzollernring, zwischen Eckschanze und Fehrbelliner Tor Baustelle, Fahrtrichtung gesperrt (bis Ende 08/2007)',
-         'from' => 1151013248,
-         'data' => 'userdel	1::inwork -3972,15639 -3985,15770 -3735,16205 -3631,16224
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -319,10 +289,10 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        {
-         'source_id' => 'INKO_77721_COPY_1',
-         'until' => 1185833757,
-         'text' => 'Pistoriusstr. (Pankow) in Richtung Berliner Allee, zwischen Roelckstr. und Mirbachplatz Baustelle, Straße vollständig gesperrt (bis Mitte 2007)',
-         'from' => 1152221102,
+         'source_id' => 'IM_004456',
+         'until' => 1175378399,
+         'text' => 'Pistoriusstr. (Pankow) in Richtung Berliner Allee, zwischen Roelckestr. und Mirbachplatz Baustelle, Fahrtrichtung gesperrt (bis 03.2007)',
+         'from' => 1168462016,
          'data' => 'userdel	q4::inwork; 13131,16525 13386,16408
 ',
          'type' => 'handicap'
@@ -686,6 +656,15 @@ userdel	1::inwork 10781,13002 10706,13043
          'text' => 'Oranienstr. und Lobeckstr. (Kreuzberg) in beiden Richtungen an der Kreuzung Baustelle, Oranienstr. auf einen Fahrstreifen je Richtung verengt, Lobeckstr. Einbahnstr. Richtung Ritterstr. (bis Ende 04.2007)',
          'from' => 1168327664,
          'data' => 'userdel	1::inwork 10572,10773 10673,10975
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'until' => 1169474400,
+         'text' => 'Hultschiner Damm zwischen Alt-Mahlsdorf und Elsenstr. gesperrt, geplatzte Wasserleitung bis 22.01.2007 15:00 Uhr ',
+         'from' => 1168546273,
+         'data' => 'userdel	2::inwork 24637,10807 24735,11021 24658,11293
 ',
          'type' => 'gesperrt'
        }

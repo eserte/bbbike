@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: basic.t,v 1.15 2006/10/11 20:04:57 eserte Exp $
+# $Id: basic.t,v 1.16 2007/01/10 21:06:43 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -227,6 +227,7 @@ for my $f (@files) {
 
 if ($has_skips) {
     diag <<EOF;
+
 There were skips because of missing modules. You can rerun the test with
 
     $^X $0 -noskip
