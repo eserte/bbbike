@@ -685,6 +685,22 @@ userdel	1::inwork 10781,13002 10706,13043
          'data' => 'userdel	2::inwork 10331,13397 10528,13243
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1169506800,
+         'text' => 'B 183 Dresdener Str. Bahnübergang in der OL Bad Liebenwerda Gleis- u. Tiefbauarbeiten Vollsperrung 19.01.2007-22.01.2007 ',
+         'from' => 1169074800,
+         'data' => 'userdel	2::inwork 13828,-98986 13053,-99051 12593,-99029
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1169679600,
+         'text' => 'B 183 Hainsche Str. Burgplatz in der OL Bad Liebenwerda Geschäftseröffnung Vollsperrung 24.01.2007-24.01.2007 ',
+         'from' => 1169506800,
+         'data' => 'userdel	q4::temp 12194,-98944 11943,-99051
+',
+         'type' => 'handicap'
        }
      
 );
