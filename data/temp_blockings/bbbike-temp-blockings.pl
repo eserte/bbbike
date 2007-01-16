@@ -6900,12 +6900,30 @@ EOF
 userdel	2::temp 9106,12795 8852,12636
 EOF
      },
-     { from  => 1168546273, # 2007-01-11 21:11
-       until => 1169474400, # 2007-01-22 15:00
-       text  => 'Hultschiner Damm zwischen Alt-Mahlsdorf und Elsenstr. gesperrt, geplatzte Wasserleitung bis 22.01.2007 15:00 Uhr ',
+     { from  => 1168898272, # 2007-01-15 22:57
+       until => 1169215200, # 2007-01-19 15:00
+       text  => 'Hultschiner Damm zwischen Alt-Mahlsdorf und Elsenstr. gesperrt, geplatzte Wasserleitung bis 19.01.2007 15:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 24637,10807 24735,11021 24658,11293
+EOF
+     },
+     { from  => 1168898315, # 2007-01-15 22:58
+       until => 1183240799, # 2007-06-30 23:59
+       text  => 'Kaulsdorfer Brücke (Hellerdorf) in beiden Richtungen, in Höhe Gutenbergstr. Baustelle, Brücke gesperrt (bis 06/2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_004489',
+       data  => <<EOF,
+userdel	2::inwork 22691,12044 22668,12080 22701,12115
+EOF
+     },
+     { from  => 1168898369, # 2007-01-15 22:59
+       until => 1214863199, # 2008-06-30 23:59
+       text  => 'Weinmeisterstr. (Mitte) in beiden Richtungen, zwischen Münzstr. und Gipsstr. Baustelle, Straße vollständig gesperrt (bis 06/2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_004491',
+       data  => <<EOF,
+userdel	2::inwork 10331,13397 10528,13243
 EOF
      },
     );

@@ -661,10 +661,28 @@ userdel	1::inwork 10781,13002 10706,13043
        },
        undef,
        {
-         'until' => 1169474400,
-         'text' => 'Hultschiner Damm zwischen Alt-Mahlsdorf und Elsenstr. gesperrt, geplatzte Wasserleitung bis 22.01.2007 15:00 Uhr ',
-         'from' => 1168546273,
+         'until' => 1169215200,
+         'text' => 'Hultschiner Damm zwischen Alt-Mahlsdorf und Elsenstr. gesperrt, geplatzte Wasserleitung bis 19.01.2007 15:00 Uhr ',
+         'from' => 1168898272,
          'data' => 'userdel	2::inwork 24637,10807 24735,11021 24658,11293
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_004489',
+         'until' => 1183240799,
+         'text' => 'Kaulsdorfer Brücke (Hellerdorf) in beiden Richtungen, in Höhe Gutenbergstr. Baustelle, Brücke gesperrt (bis 06/2007)',
+         'from' => 1168898315,
+         'data' => 'userdel	2::inwork 22691,12044 22668,12080 22701,12115
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_004491',
+         'until' => 1214863199,
+         'text' => 'Weinmeisterstr. (Mitte) in beiden Richtungen, zwischen Münzstr. und Gipsstr. Baustelle, Straße vollständig gesperrt (bis 06/2008)',
+         'from' => 1168898369,
+         'data' => 'userdel	2::inwork 10331,13397 10528,13243
 ',
          'type' => 'gesperrt'
        }
