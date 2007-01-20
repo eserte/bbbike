@@ -660,14 +660,7 @@ userdel	1::inwork 10781,13002 10706,13043
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1169215200,
-         'text' => 'Hultschiner Damm zwischen Alt-Mahlsdorf und Elsenstr. gesperrt, geplatzte Wasserleitung bis 19.01.2007 15:00 Uhr ',
-         'from' => 1168898272,
-         'data' => 'userdel	2::inwork 24637,10807 24735,11021 24658,11293
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_004489',
          'until' => 1183240799,

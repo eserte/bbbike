@@ -10,7 +10,7 @@ Markgrafendamm: mäßiges Kopfsteinpflaster	Q2 14641,10552 14675,10693
 Markgrafendamm: mäßiges Kopfsteinpflaster	Q2; 14675,10693 14680,10758
 Markgrafendamm: schlechtes Kopfsteinpflaster	Q3; 14680,10758 14681,10847
 Markgrafendamm/Hauptstr.: asphaltiert	Q0 14681,10847 14794,10844 14890,10824
-Hauptstr.: mäßiges Kopfsteinpflaster	Q2 14890,10824 15181,10766 15255,10751
+Hauptstr.: mäßiges Kopfsteinpflaster	Q2 14890,10824 15034,10795 15181,10766 15255,10751
 Karlshorster Str.: mäßiges Kopfsteinpflaster	Q2 15267,10865 15266,10791 15255,10751
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1683,9847 1511,10051 1382,10124 1308,10031
 Werkstättenweg: mäßiges Kopfsteinpflaster	Q2 2121,10089 1634,9668
@@ -877,6 +877,7 @@ Rolandufer/Spreeufer: gutes Kopfsteinpflaster	Q1 10945,12150 10837,12158 10660,1
 Spreeufer: Verbundsteine	Q1 10583,12206 10492,12289 10423,12353 10422,12395
 Treptower Park: Schotterweg, aber relativ glatt	Q2 14854,8964 14614,9052
 Treptower Park: Schotterweg	Q2 14242,9448 14304,9538
+Treptower Park: Asphalt mit mäßigen Stellen	Q1 14697,9726 14645,9710 14575,9648 14496,9705 14351,9757
 Am Rosengarten: Parkweg	Q1 14910,9643 14811,9449
 Am Köllnischen Park: Kopfsteinpflaster	Q2 11197,11882 11155,11750
 Lichtensteinallee: gutes Kopfsteinpflaster	Q1 6399,11558 6309,11443 6252,11367
@@ -1046,13 +1047,17 @@ Selkestr.: Kopfsteinpflaster	Q2 12685,7497 12703,7370
 (Kynaststr. - Uferwanderweg): Parkweg	Q1 14828,10628 14843,10621 14906,10587
 (Kynaststr. - Paul-und-Paula-Ufer): Parkweg	Q1 14795,10473 14864,10451
 Paul-und-Paula-Ufer: Kleinteiliges Kopfsteinpflaster	Q1 15314,10121 15261,10167
-Paul-und-Paula-Ufer: Parkweg, teilweise auch Asphalt/Beton	Q1 15261,10167 15204,10201 15059,10289 14903,10403 14864,10451 14884,10508 14906,10587 14937,10598 14990,10581 15100,10637 15209,10581
+Paul-und-Paula-Ufer: Parkweg, teilweise auch Asphalt/Beton	Q1 15261,10167 15204,10201 15134,10243 15044,10297 14903,10403 14864,10451 14884,10508 14906,10587 14937,10598 14990,10581 15100,10637 15248,10562
 Uferweg: Parkweg	Q1 15314,10121 15260,10048 15295,10022 15347,9922
 Uferweg: glatt gepflastert	Q0 15347,9922 15545,9818
 Uferweg: Parkweg	Q1 15545,9818 15583,9779 15626,9710
-(Kynaststr. - Hauptstr.): Parkweg	Q1 14843,10621 14890,10824
+(Kynaststr. - Hauptstr.): asphaltiert	Q0 14802,10505 14836,10524 14843,10621 14882,10732 15034,10795
+(Rummelsburger Ufer - Hauptstr.): glattes Pflaster	Q0 15248,10562 15311,10710
+(Alt Stralau - Spreeufer): asphaltiert	Q0 14656,10197 14581,10067 14582,10048
+(Spreeufer): Parkweg	Q1 14582,10048 14776,9949 14996,9809
+(Alt Stralau - Spreeufer): Parkweg	Q1 15020,9875 14996,9809
 Tunnelstr. - Bartholomäusufer: Parkweg	Q1 15502,9693 15583,9779
-Am Rummelsburger See: glatt gepflastert	Q0 15209,10581 15453,10415
+Am Rummelsburger See: glatt gepflastert	Q0 15248,10562 15453,10415
 Am Rummelsburger See: Parkweg	Q2 15453,10415 15469,10329 15496,10277 15518,10234 15625,10187 15713,10035 15786,9957 15790,9920 15828,9875 15931,9846
 Am Rummelsburger See: Betonweg	Q0 15931,9846 16046,9746 16262,9925
 Tauchersteig: guter Asphalt	Q0 22074,2666 21770,2535
@@ -1071,10 +1076,10 @@ Hagenauer Str.: Kopfsteinpflaster	Q2 11154,14985 11187,14763
 Kolmarer Str.: Kopfsteinpflaster	Q2 11299,14112 11354,14187 11418,14290
 südliches Spreeufer: wechselnder Belag (Verbundsteinpflaster und fester glatter Sandweg)	Q1 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8554,12593
 Glasbläserallee: Verbundsteinpflaster	Q0 14747,10108 14839,10271 14893,10359
-Fischzug: Asphalt	Q0 14839,10271 14929,10221 15005,10183 15090,10140
-Fischzug: Kopfsteinpflaster, teilweise auch Verbundsteinpflaster	Q2 15090,10140 15153,10112 15209,10087
-Am Speicher: Kopfsteinpflaster	Q2 15209,10087 15261,10167
-Palmkernzeile: Verbundsteinpflaster	Q0 15100,9831 15142,9931 15209,10087
+Fischzug: Asphalt	Q0 14839,10271 14920,10225 14993,10188 15090,10140
+Fischzug: Kopfsteinpflaster, teilweise auch Verbundsteinpflaster	Q2 15090,10140 15153,10112 15219,10079
+Am Speicher: Kopfsteinpflaster	Q2 15219,10079 15261,10167
+Palmkernzeile: Verbundsteinpflaster	Q0 15100,9831 15142,9931 15219,10079
 Friedrich-Junge-Str.: Asphalt	Q0 15020,9875 15071,9967 15153,10112 15181,10154
 Friedrich-Junge-Str.: Verbundsteinpflaster	Q0 15181,10154 15204,10201
 Schinkestr.: Kopfsteinpflaster	Q2 11623,9841 11734,9856 11880,9874
@@ -1286,7 +1291,7 @@ Brommystr.: Kopfsteinpflaster	Q2 12509,11025 12567,11115
 (Tunnelstr. - Uferweg): Parkweg	Q1 15662,9501 15749,9558
 (Uferweg): glatt gepflastert	Q0 15741,9590 15749,9558 15819,9430
 (Uferweg): Parkweg	Q1 15819,9430 15787,9321
-(Fischzug - Uferweg): Holzbohlenweg	Q1 15209,10087 15260,10048
+(Fischzug - Uferweg): Holzbohlenweg	Q1 15219,10079 15260,10048
 #: add_fragezeichen: ist der Abschnitt zwischen Fischerhüttenstr. und Beerenstr. auch Kopfsteinpflaster?
 Busseallee: Kopfsteinpflaster	Q2 166,3040 82,3166 -266,3648
 Hallesches Tor: Beton	Q0 9593,10238 9592,10174
@@ -1504,11 +1509,11 @@ Hahnebergweg: Schotter	Q2 -7294,12560 -7375,12577 -7606,12624
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20050630.1255.27537.html
 Kurze Str.: asphaltiert/betoniert	Q0 11534,16614 11536,16477 11542,16384
 An der Bucht: Asphalt	Q0 15358,10562 15430,10508 15493,10460 15572,10406 15652,10348 15716,10303 15788,10252 15858,10202 15952,10134
-An den Knabenhäusern: Verbundsteinpflaster	Q1 15513,10298 15578,10250 15648,10191 15706,10142
-Lina-Morgenstern-Str.: Asphalt	Q0 15648,10191 15716,10303
-Alice-und-Hella-Hirsch-Ring: Asphalt	Q0 15818,10296 15788,10252 15706,10142 15749,10112 15773,10091 15858,10202 15888,10244
+An den Knabenhäusern: Verbundsteinpflaster	Q1 15513,10298 15578,10250 15641,10198 15709,10145
+Lina-Morgenstern-Str.: Asphalt	Q0 15641,10198 15716,10303
+Alice-und-Hella-Hirsch-Ring: Asphalt	Q0 15818,10296 15788,10252 15709,10145 15749,10112 15775,10092 15858,10202 15888,10244
 Charlotte-Salomon-Hain: Kopfsteinpflaster	Q2 15749,10112 15716,10065
-Paula-Fürst-Str.: Asphalt	Q0 15773,10091 15874,10025
+Paula-Fürst-Str.: Asphalt	Q0 15775,10092 15874,10025
 Clara-Grunwald-Str.: Asphalt	Q0 15652,10348 15578,10250 15567,10235
 #: XXX teilweise noch in Bau:
 Hildegard-Marcusson-Straße: Asphalt	Q0 16004,10204 15952,10134 15874,10025 15831,9968
@@ -1544,8 +1549,8 @@ Hiroshimasteg: unebene Holzbohlen	Q1 7251,11202 7251,11181 7248,11143
 Melchiorstr. - Mariannenplatz: unbefestigt	Q2 11921,11185 11956,11166
 (Weg am Humboldthain): grobes Verbundsteinpflaster	Q2 9255,15816 9092,15789
 (Weg am Humboldthain): Verbundsteinpflaster	Q1 9092,15789 8938,15723
-Wasserweg: Kopfsteinpflaster und fester Sandweg	Q2 15673,8901 16010,8863 16119,8852 16395,8816
-Umfahrung Spreepark: fester Sandweg	Q2 16010,8863 16055,8831 16119,8852
+Wasserweg: Kopfsteinpflaster und fester Sandweg	Q2 15673,8901 16023,8860 16161,8852 16395,8816
+Umfahrung Spreepark: fester Sandweg	Q2 16023,8860 16084,8833 16161,8852
 Kiehnwerderallee: asphaltiert	Q0 16395,8816 16534,8182 16602,7810 16620,7574 16633,7434
 (Fähre - Kiehnwerderallee): asphaltiert	Q0 16649,7570 16620,7574
 ######################### User Contributions #################################
@@ -1603,7 +1608,7 @@ Spiekermannstr.: Kopfsteinpflaster	Q2 11673,16456 12054,16517
 #: by: Klaus Feuerstein
 Kirschweg: Beton	Q1 13869,2658 13931,2579 13953,2551 13948,2418 14078,2390
 #: by: Daniel Küstner (and verified)
-Krachtstr.: Asphalt	Q0 14822,10027 14852,10080 14929,10221
+Krachtstr.: Asphalt	Q0 14817,10031 14844,10088 14920,10225
 #: by: Andre Köhler
 Wittekindstr.: Asphalt	Q0 8353,5429 8350,5505 8365,5779 8371,5896 8375,6036 8388,6322
 #: by: a.grund
@@ -4247,7 +4252,7 @@ Stendaler Str. (Tiergarten): Asphalt mit gepflasterten Bodenschwellen	Q1 6733,14
 Otto-Dix-Str.: Asphalt und Kopsteipflasterabschnitte	Q1 7207,13118 7370,13204 7496,13272
 Lesser-Ury-Weg: Asphalt und Kopsteipflasterabschnitte	Q1 7574,13128 7496,13272 7430,13396
 Claire-Waldoff-Promenade: Asphalt und Kopsteipflasterabschnitte	Q1 7448,13058 7370,13204 7303,13330
-Bahrfeldtstr.: Kopfsteinpflaster	Q2 14852,10080 14929,10036 15071,9967 15142,9931
+Bahrfeldtstr.: Kopfsteinpflaster	Q2 14844,10088 15071,9967 15142,9931
 Fanny-Zobel-Str.: Asphalt	Q0 13928,10053 13971,10182 14053,10157 14012,10029
 Fanny-Zobel-Str.: Asphalt	Q0 13971,10182 13891,10208
 (Hoffmannstr. - Puschkinallee): Verbundsteine	Q1 14058,10012 13976,9840
