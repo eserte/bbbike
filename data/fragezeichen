@@ -411,7 +411,6 @@ Dachsteinweg: verkehrsberuhigt?	? 10481,2549 10446,2373 10493,2318
 Kiepertplatz: Qualität?	? 8528,1846 8606,1875
 Lückhoffstr.: Qualität (Kopfsteinpflaster?)?	? -2847,2893 -3022,2696 -3162,2564 -3190,2467 -3211,2405
 Nauener Str. zur Altonaer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? -4759,13992 -4776,13869
-Staakener Str.: Qualität zwischen Seegefelder Str. und Nauener Str.? Einbahnstraße auch für Radfahrer gültig?	? -4112,14242 -4704,14174 -4741,14233
 Krumme Gärten: Qualität	? -4007,13187 -3996,13414
 Hertzbergplatz: genauer Name der Straße zwischen Treptower und Hertzbergstr.?	? 13478,8095 13474,8060
 Wolletz - Kerkow: Qualität? (In Höhe Bahnbrücke Kopfsteinpflaster)	? 44693,70057 45614,70316 45652,70216 46917,69881 47191,70529 47450,70590 47465,70674 47420,70696 47564,70795 48021,70856 48125,71018
@@ -567,7 +566,6 @@ Leonhard-Frank-Str.: Qualität (laut ADFC-Karte nordöstlich des Heinrich-Mann-Pla
 Stille Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10184,18875 10128,19110
 (Am Schloss Schönhausen): Qualität, für Autofahrer befahrbar?	? 10390,19069 10322,19046 10278,19072 10249,19148 10223,19223 10243,19267 10308,19297
 Schloßallee - Blankenburger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10661,19307 10481,19344 10393,19587
-Galenusstr. - Schloßallee: Qualität (laut ADFC-Karte gut geeignet)?	? 11366,19299 11221,19505
 Lindenberger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 11312,19537 11194,19861
 Treskowstr.: Qualität (laut ADFC-Karte gut geeignet)?	? 9978,19512 9809,19529 9714,19615 9677,19651 9565,19751 9489,19826 9403,20072
 Wördenweg und Fortsetzung am Nordgraben: Qualität (laut ADFC-Karte nicht für Radfahrer geeignet)? Weg für Autofahrer geöffnet?	? 8526,21110 8122,20873 7671,20757 7428,20674
@@ -930,7 +928,10 @@ Hackenbergstr.: Qualität? Gibt es hier einen Radweg?	? 20429,3792 20248,4040
 Peetzig - Greiffenberg: westlich der Bahnstrecke mittlerweile asphaltiert?	? 44200,74890 45817,75966
 Am Unteruckersee: gibt es mittlerweile eine bessere wassergebundene Decke?	? 41137,97643 41181,96937
 Putenweg: Qualität?	? 16491,517 16372,312 16281,156 16244,86 16192,24 16118,-51 16106,-94 16154,-230 16198,-339 16259,-368 16346,-394
-Am Bullengraben: Radweg in Bau	? -4006,13478 -4305,13412 -4357,13415 -4360,13397 -4399,13397 -4518,13433 -4661,13485 -4798,13570 -4881,13631 -4922,13641 -5054,13665 -5179,13674 -5280,13659 -5411,13631 -5612,13586
+Am Bullengraben: Radweg in Bau, teilweise schon fertig gestellt	? -4006,13478 -4305,13412 -4357,13415 -4360,13397 -4399,13397 -4518,13433 -4661,13485 -4798,13570 -4881,13631 -4922,13641 -5054,13665 -5179,13674 -5280,13659 -5411,13631 -5612,13586 -5914,13575
+Kerrweg: Qualität?	? -5914,13575 -6010,13586 -6125,13540 -6189,13497 -6268,13465
+Am Bullengraben: Radweg in Bau, teilweise schon fertig gestellt	? -6272,13482 -6349,13444 -6429,13426 -6563,13403 -6718,13383 -6724,13359 -6890,13351 -6911,13372 -7010,13382 -7237,13461 -7419,13601 -7520,13635
+Ortwinstr.: Qualität zwischen Im Amseltal und Alemannenstr.?	? 1828,25478 1730,25441 1627,25386
 # added from ampeln-orig
 wirklich? (?)	? 9215,3599
 Wirklich? (?)	? -3775,17087
@@ -959,7 +960,7 @@ Dolomitenstr.: mäßig geeignet (laut ADFC-Karte)	? 10596,17554 10473,17446 10305,
 Hohenschönhausener Weg: asphaltiert (laut Radzeit 3/2006)	? 15611,18547 16317,18020
 (Uferpromenade Spreebogenpark) (hat dieser Weg einen Namen (Ludwig-Erhard-Ufer?))	? 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871
 Ballonfahrerweg (Offiziell nur für Busse freigegeben)	? 7946,7411 7964,7510 7959,7609
-Czarnikauer Str. (Ist die Czarnikauer eine Einbahnstraße? Auch für Radfahrer?)	? 10225,16436 10449,16415 10613,16403
+Czarnikauer Str. (Ist die Czarnikauer eine Einbahnstraße? In welche Richtung ist die Straße offen?)	? 10225,16436 10449,16415 10613,16403
 (Am Stichkanal - Uferweg am Teltowkanal) (Qualität des Verbindungsweges)	? 2736,645 2784,589
 (Weg zur Krampenburg) (ist das ein offizieller Name mit Ausschilderung?)	? 27609,305 27571,262 27171,155 27273,-106 27407,-401 27552,-741 27559,-1365 27357,-1545 27323,-1671
 Straße am Wald (Ist der Straßenname offiziell und die Straße entsprechend ausgeschildert?)	? 21475,7500 21341,7487 21025,7349
@@ -973,7 +974,6 @@ Tivoliplatz (Qualität? Zur Zeit Zugang nur über Treppe.)	? 8949,8989 8950,8954
 (Viktoriapark (Steglitz)) (heisst dieser Weg wirklich so?)	? 4977,5885 5034,5990
 (Park am Hochmeisterplatz) (geht der Platz offiziell bis zu diesem Weg)	? 3361,10000 3474,9990
 Bambachstr. (Qualität? Behinderungen?)	? 12037,6706 12046,6645
-Schillerring (Sonstige Behinderungen (Spielstr., Fußgängerzone ...)?)	? 6922,18024 6793,18115 6671,18132 6579,18136 6560,18135
 Klausdorfer Str. (Beschaffenheit guter Beton?)	? 23126,15979 23178,15968 23271,15948 23267,15928 23243,15820 23217,15682
 Klausdorfer Str. (Beschaffenheit guter Beton?)	? 23267,15928 23359,15910
 Klausdorfer Str. (Beschaffenheit guter Beton?)	? 23178,15968 23151,15837 23243,15820

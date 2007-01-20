@@ -50,7 +50,7 @@ Linienstr.: Fahrradstraße geplant (nach der Sanierung)?	? 9607,13507 9752,13575 
 Linienstr.: Fahrradstraße geplant (nach der Sanierung)?	? 9903,13646 9944,13665 9964,13665 10020,13669 10081,13673 10214,13680 10308,13679 10432,13678 10597,13647 10718,13625
 #: by ^^^
 #: by: http://www.reinickendorf.de/index_6280_de.html
-Aroser Allee, Fertigstellung bis 2007-10-01	? 6741,18613 6671,18132 6676,18030 6710,17905 6761,17741 6893,17317 6942,17128
+Aroser Allee, Fertigstellung bis 2007-10-01	? 6741,18613 6702,18348 6671,18132 6676,18030 6710,17905 6761,17741 6893,17317 6942,17128
 #: section ^^^
 #: last_check: 2007-01-16
 Markgrafendamm: Radspuren in Vorbereitung	? 14564,10262 14608,10409 14641,10552
@@ -229,6 +229,9 @@ Sanssouci, Ökonomieweg: nachts geschlossen, wie geht es am Neuen Palais weiter?	
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: Thomas Kunz:
+Heimgartenstraße: Asphalt, Q0	? 23537,4238 23657,4255 23880,4280 24107,4309
+#: by: Burkhard Heine:
 Salzunger Pfad: guter Asphalt, Q0, Kinder q1	? 5006,1445 4993,1520 4981,1567 4968,1563 4942,1649
 #: by: anonymous
 Männertreuweg: guter Asphalt, Q0 (wobei es im Luftbild eher wie Beton aussieht), eng, parkende Autos (q1); existiert eine Verbindung zum Weg zum Teltowkanal?	? 16631,3292 16599,3316 16473,3417 16340,3517
@@ -284,6 +287,8 @@ Straße 59: fester Sandweg, sehr uneben, Q2	? 12484,20996 12537,20856
 Narzissenweg (Altglienicke): Asphalt Q1	? 20246,553 20206,464 20214,375
 #: by: Conny (corneliabecker@...)
 Horazweg: Asphalt Q1	? 10746,4546 10931,4521 11109,4503
+#: by: Andre (mueller):
+Catostr.: Asphalt Q0	? 10758,4611 10746,4546 10743,4515 10732,4437
 #: by: Oliver 
 Im Heidewinkel: Kopfsteinpflaster Q3	? 768,15457 981,15490 968,15576
 Im Heidewinkel: Kopfsteinpflaster Q3, Einbahnstr.	? 1065,15229 981,15490
@@ -762,7 +767,6 @@ Kiepertplatz: Qualität?	? 8528,1846 8606,1875
 #: XXX Martin Barghoorn hat KS angegeben, aber gleichzeitig "nur Fußweg" eingetragen
 Lückhoffstr.: Qualität (Kopfsteinpflaster?)?	? -2847,2893 -3022,2696 -3162,2564 -3190,2467 -3211,2405
 Nauener Str. zur Altonaer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? -4759,13992 -4776,13869
-Staakener Str.: Qualität zwischen Seegefelder Str. und Nauener Str.? Einbahnstraße auch für Radfahrer gültig?	? -4112,14242 -4704,14174 -4741,14233
 Krumme Gärten: Qualität	? -4007,13187 -3996,13414
 Hertzbergplatz: genauer Name der Straße zwischen Treptower und Hertzbergstr.?	? 13478,8095 13474,8060
 Wolletz - Kerkow: Qualität? (In Höhe Bahnbrücke Kopfsteinpflaster)	? 44693,70057 45614,70316 45652,70216 46917,69881 47191,70529 47450,70590 47465,70674 47420,70696 47564,70795 48021,70856 48125,71018
@@ -955,7 +959,6 @@ Leonhard-Frank-Str.: Qualität (laut ADFC-Karte nordöstlich des Heinrich-Mann-Pla
 Stille Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10184,18875 10128,19110
 (Am Schloss Schönhausen): Qualität, für Autofahrer befahrbar?	? 10390,19069 10322,19046 10278,19072 10249,19148 10223,19223 10243,19267 10308,19297
 Schloßallee - Blankenburger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10661,19307 10481,19344 10393,19587
-Galenusstr. - Schloßallee: Qualität (laut ADFC-Karte gut geeignet)?	? 11366,19299 11221,19505
 Lindenberger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 11312,19537 11194,19861
 Treskowstr.: Qualität (laut ADFC-Karte gut geeignet)?	? 9978,19512 9809,19529 9714,19615 9677,19651 9565,19751 9489,19826 9403,20072
 Wördenweg und Fortsetzung am Nordgraben: Qualität (laut ADFC-Karte nicht für Radfahrer geeignet)? Weg für Autofahrer geöffnet?	? 8526,21110 8122,20873 7671,20757 7428,20674
@@ -1444,4 +1447,9 @@ Hackenbergstr.: Qualität? Gibt es hier einen Radweg?	? 20429,3792 20248,4040
 Peetzig - Greiffenberg: westlich der Bahnstrecke mittlerweile asphaltiert?	? 44200,74890 45817,75966
 Am Unteruckersee: gibt es mittlerweile eine bessere wassergebundene Decke?	? 41137,97643 41181,96937
 Putenweg: Qualität?	? 16491,517 16372,312 16281,156 16244,86 16192,24 16118,-51 16106,-94 16154,-230 16198,-339 16259,-368 16346,-394
-Am Bullengraben: Radweg in Bau	? -4006,13478 -4305,13412 -4357,13415 -4360,13397 -4399,13397 -4518,13433 -4661,13485 -4798,13570 -4881,13631 -4922,13641 -5054,13665 -5179,13674 -5280,13659 -5411,13631 -5612,13586
+#: XXX green2, NL
+Am Bullengraben: Radweg in Bau, teilweise schon fertig gestellt	? -4006,13478 -4305,13412 -4357,13415 -4360,13397 -4399,13397 -4518,13433 -4661,13485 -4798,13570 -4881,13631 -4922,13641 -5054,13665 -5179,13674 -5280,13659 -5411,13631 -5612,13586 -5914,13575
+Kerrweg: Qualität?	? -5914,13575 -6010,13586 -6125,13540 -6189,13497 -6268,13465
+#: XXX green2, NL
+Am Bullengraben: Radweg in Bau, teilweise schon fertig gestellt	? -6272,13482 -6349,13444 -6429,13426 -6563,13403 -6718,13383 -6724,13359 -6890,13351 -6911,13372 -7010,13382 -7237,13461 -7419,13601 -7520,13635
+Ortwinstr.: Qualität zwischen Im Amseltal und Alemannenstr.?	? 1828,25478 1730,25441 1627,25386
