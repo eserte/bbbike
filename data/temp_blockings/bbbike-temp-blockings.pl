@@ -6942,4 +6942,22 @@ EOF
 userdel	q4::temp 12194,-98944 11943,-99051
 EOF
      },
+     { from  => 1169495904, # 2007-01-22 20:58
+       until => 1169679600, # 2007-01-25 00:00
+       text  => 'Ehrlichstr. (Lichtenberg) Richtung Treskowallee vor Treskowallee Baustelle, Fahrtrichtung gesperrt, bis 24.01.2007',
+       type  => 'gesperrt',
+       source_id => 'IM_004560',
+       data  => <<EOF,
+userdel	1::inwork 18528,8331 18615,8269 18683,8232
+EOF
+     },
+     { from  => 1169496024, # 2007-01-22 21:00
+       until => 1169938800, # 2007-01-28 00:00
+       text  => 'Hönower Str. (Hellersdorf) Richtung Ridbacher Str. zwischen Fritz-Reuter-Str. und Wilhelmsmühenweg Baustelle, Fahrtrichtung gesperrt (bis 27.01.2007)',
+       type  => 'handicap',
+       source_id => 'IM_004559',
+       data  => <<EOF,
+userdel	q4::inwork; 24623,11684 24652,11794 24578,11928
+EOF
+     },
     );

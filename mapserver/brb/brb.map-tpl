@@ -898,7 +898,7 @@ LAYER
 
   CLASSITEM 'CAT'
   CLASS
-    EXPRESSION /^RW[1234789]$/
+    EXPRESSION /^RW[1234789]?$/
     NAME "Radweg oder -streifen"
     COLOR 100 100 200
     SYMBOL 'width'
@@ -935,8 +935,8 @@ LAYER
 
   CLASSITEM 'CAT'
   CLASS
-    EXPRESSION /^RW[1234789]$/
-    NAME "Radweg"
+    EXPRESSION /^RW[1234789]?$/
+    NAME "Radweg oder -streifen"
     COLOR 100 100 200
     SYMBOL 'width'
     SIZE 6
@@ -971,8 +971,8 @@ LAYER
 
   CLASSITEM 'CAT'
   CLASS
-    EXPRESSION /^RW[1234789]$/
-    NAME "Radweg"
+    EXPRESSION /^RW[1234789]?$/
+    NAME "Radweg oder -streifen"
     COLOR 100 100 200
     SYMBOL 'width'
     SIZE 8

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.34 2006/10/14 22:03:00 eserte Exp eserte $
+# $Id: bbbikegooglemap.cgi,v 1.35 2007/01/23 22:56:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -176,7 +176,7 @@ sub get_html {
   <head>
     <title>BBBike data presented with Googlemap</title>
     <link rel="stylesheet" type="text/css" href="$bbbikeroot/html/bbbike.css"><!-- XXX only for radzeit -->
-    <link type="image/gif" rel="shortcut icon" href="$bbbikeroot/images/srtbike16.gif"><!-- XXX only for radzeit -->
+    <link type="image/gif" rel="shortcut icon" href="$bbbikeroot/images/bbbike_google.gif"><!-- XXX only for radzeit -->
     <script src="http://maps.google.com/maps?file=api&v=2&key=$google_api_key" type="text/javascript"></script>
     <script src="$bbbikeroot/html/sprintf.js" type="text/javascript"></script>
   </head>

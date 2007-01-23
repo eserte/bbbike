@@ -679,19 +679,30 @@ userdel	1::inwork 10781,13002 10706,13043
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1169506800,
-         'text' => 'B 183 Dresdener Str. Bahnübergang in der OL Bad Liebenwerda Gleis- u. Tiefbauarbeiten Vollsperrung 19.01.2007-22.01.2007 ',
-         'from' => 1169074800,
-         'data' => 'userdel	2::inwork 13828,-98986 13053,-99051 12593,-99029
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1169679600,
          'text' => 'B 183 Hainsche Str. Burgplatz in der OL Bad Liebenwerda Geschäftseröffnung Vollsperrung 24.01.2007-24.01.2007 ',
          'from' => 1169506800,
          'data' => 'userdel	q4::temp 12194,-98944 11943,-99051
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_004560',
+         'until' => 1169679600,
+         'text' => 'Ehrlichstr. (Lichtenberg) Richtung Treskowallee vor Treskowallee Baustelle, Fahrtrichtung gesperrt, bis 24.01.2007',
+         'from' => 1169495904,
+         'data' => 'userdel	1::inwork 18528,8331 18615,8269 18683,8232
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_004559',
+         'until' => 1169938800,
+         'text' => 'Hönower Str. (Hellersdorf) Richtung Ridbacher Str. zwischen Fritz-Reuter-Str. und Wilhelmsmühenweg Baustelle, Fahrtrichtung gesperrt (bis 27.01.2007)',
+         'from' => 1169496024,
+         'data' => 'userdel	q4::inwork; 24623,11684 24652,11794 24578,11928
 ',
          'type' => 'handicap'
        }

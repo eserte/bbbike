@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: convert_radwege,v 1.24 2005/04/13 22:21:26 eserte Exp $
+# $Id: convert_radwege,v 1.25 2007/01/23 21:57:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002 Slaven Rezic. All rights reserved.
@@ -129,7 +129,7 @@ my %rev_category_code;
 	    push @l, $rev_category_code{$rueck} || "kein";
 	} else {
 	    push @l, $rev_category_code{$r->[Strassen::CAT()]};
-	    push @l, "kein";
+	    push @l, $rev_category_code{$r->[Strassen::CAT()]};
 	}
 	push @l, @{$r->[Strassen::COORDS()]}[$rci-1, $rci];
 	$rci++;

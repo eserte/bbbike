@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.30 2006/10/13 18:41:29 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.31 2007/01/23 21:56:25 eserte Exp $
 #
 
 .ifndef COMMENTS_PARTIAL
@@ -302,21 +302,21 @@ $(MAPFILES_DATA_DIR)/deutschland.shp:	deutschland
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/deutschland deutschland
 
 #.for delta in ${RADWEGE_DELTA}
-#$(MAPFILES_DATA_DIR)/radwege${delta}.shp:	radwege_exact
+#$(MAPFILES_DATA_DIR)/radwege${delta}.shp:	radwege_exact comments_cyclepath
 #	${CONVERT_RADWEGE} -inmap Standard -delta ${delta} < $> > /tmp/radwege${delta}
 #	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/radwege${delta} /tmp/radwege${delta}
 #.endfor
 
-$(MAPFILES_DATA_DIR)/radwege5.shp:	radwege_exact
-	${CONVERT_RADWEGE} -inmap Standard -delta 5 < $> > /tmp/radwege5
+$(MAPFILES_DATA_DIR)/radwege5.shp:	radwege_exact comments_cyclepath
+	cat $> | ${CONVERT_RADWEGE} -inmap Standard -delta 5 > /tmp/radwege5
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/radwege5 /tmp/radwege5
 
-$(MAPFILES_DATA_DIR)/radwege10.shp:	radwege_exact
-	${CONVERT_RADWEGE} -inmap Standard -delta 10 < $> > /tmp/radwege10
+$(MAPFILES_DATA_DIR)/radwege10.shp:	radwege_exact comments_cyclepath
+	cat $> | ${CONVERT_RADWEGE} -inmap Standard -delta 10 > /tmp/radwege10
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/radwege10 /tmp/radwege10
 
-$(MAPFILES_DATA_DIR)/radwege20.shp:	radwege_exact
-	${CONVERT_RADWEGE} -inmap Standard -delta 20 < $> > /tmp/radwege20
+$(MAPFILES_DATA_DIR)/radwege20.shp:	radwege_exact comments_cyclepath
+	cat $> | ${CONVERT_RADWEGE} -inmap Standard -delta 20 > /tmp/radwege20
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/radwege20 /tmp/radwege20
 
 $(MAPFILES_DATA_DIR)/obst.shp:	obst

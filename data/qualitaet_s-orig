@@ -218,7 +218,7 @@ Pannierstr.: Kopfsteinpflaster	Q2 12242,8972 12202,8895
 Fuldastr.: Kopfsteinpflaster	Q2 12907,9073 12829,8971 12740,8862
 Reuterstr.: Kopfsteinpflaster	Q2 12195,8436 12217,8320
 Torfstr.: Kopfsteinpflaster	Q2 6647,15094 6756,14962 6859,14837
-Ostpreuﬂendamm.: gutes Kopfsteinpflaster	Q1 3450,543 3497,574 3579,627 3626,699 3647,739 3849,1116 3879,1211
+Ostpreuﬂendamm.: gutes Kopfsteinpflaster	Q1 3450,543 3497,574 3579,627 3626,699 3647,739 3808,1016 3849,1116 3879,1211
 Alexandrinenstr.: Kopfsteinpflaster	Q2 10678,11172 10586,11116
 Bellermannstr.: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q1 9170,16324 9268,16228 9413,16085
 Swinem¸nder Str.: teilweise Kopfsteinpflaster	Q2 10094,14847 10155,14719 10189,14649
@@ -764,8 +764,15 @@ Medebacher Weg: Kopfsteinpflaster	Q2 1840,19990 1863,19925 1886,19835
 Br¸nowplatz: Kopfsteinpflaster	Q2 1825,20047 1804,20009 1840,19990 1862,20025 1825,20047
 #: unverified_by ADFC-Karte
 Borsigwalder Weg: m‰ﬂig geeignet	Q2 2852,19546 3028,19771
-#: unverified_by ADFC-Karte
-Miraustr.: m‰ﬂig geeignet	Q2 3820,19688 4014,19433 4170,19079 4195,19043
+#: by: Alex (kruschkopp...): vvv
+#: note: laut ADFC-Karte gut geeignet
+#: XXX Q0-
+Miraustr.: Asphalt, m‰ﬂig	Q0 3321,20545 3390,20265 3581,20008 3645,19921 3820,19688
+#: note: laut ADFC-Karte m‰ﬂig/schlecht geeignet vvv
+Miraustr.: guter Asphalt	Q0 3820,19688 4014,19433
+Miraustr.: sehr schlechtes Kopfsteinpflaster	Q3 4014,19433 4170,19079 4195,19043
+#: note ^^^
+#: by: ^^^
 Schaperstr.: Asphalt	Q0 5706,10216 5597,10299 5471,10331
 Bleibtreustr.: Kopfsteinpflaster	Q2 4728,11195 4722,11030 4714,10950 4701,10837 4685,10689
 Wilhelmsaue: Kopfsteinpflaster	Q2 5181,8731 5226,8729 5346,8720 5510,8709
@@ -1490,8 +1497,8 @@ Straﬂe 270: Feldweg, im westlichen Teil nur zweispurig	Q2 -5035,11007 -4832,1104
 (Spekteweg - Galenstr.): kleinteiliges Pflaster	Q1 -4303,14960 -4200,14928 -4020,14786
 (Spekteweg - Galenstr.): Parkweg	Q1 -4020,14786 -3877,14520 -3776,14419
 (Falkenseer Chaussee - Spektelake): Asphalt	Q0 -7183,16250 -7237,16057 -7359,15939 -7314,15924 -7279,15964 -7221,15921 -7233,15810 -7189,15688 -7160,15534
-(An der Spektelake): Asphalt	Q0 -7160,15534 -7035,15432 -6821,15374
-(Spektewiesen): Asphalt	Q0 -5680,15112 -5769,14992 -5969,15040 -6176,15176 -6252,15228 -6498,15301 -6824,15274 -6821,15374
+(An der Spektelake): Asphalt	Q0 -7160,15534 -7035,15432 -6922,15394 -6802,15376
+(Spektewiesen): Asphalt	Q0 -5680,15112 -5769,14992 -5969,15040 -6214,15211 -6252,15228 -6498,15301 -6824,15274 -6802,15376
 Spekteweg: Asphalt	Q0 -4061,15164 -4303,14960 -4481,14808 -4631,14811 -5033,15059 -5146,15059 -5680,15112
 #: note: laut ADFC-Karte "m‰ﬂig geeignet"
 (Uferweg an der Havel): m‰ﬂig, noch Baustelle	Q2 -2053,18375 -2027,18424 -2291,18628 -2349,18744 -2434,18832 -2503,18945 -2516,19186 -2586,19271 -2699,19282 -2733,19454 -2854,19552 -2897,19637 -2871,19750
@@ -3730,7 +3737,7 @@ Swakopmunder Str.: guter Asphalt	Q1 5498,17101 5444,17093 5423,17076 5376,17017 
 Soorstr.: Kopfsteinpflaster	Q2 1916,12358 1792,11889 1779,11835 1747,11719
 #: by: anonymous, maybe Thomas Hallmann? vvv
 #: XXX still not sure vvv
-Lintruper Str.: Asphalt	Q0 10307,922 10380,757 10423,636 10506,405 10614,105
+Lintruper Str.: Asphalt	Q0 10307,922 10380,757 10423,636 10506,405 10550,282 10614,105
 Lintruper Str.: m‰ﬂiges Blaubasaltpflaster	Q2 10614,105 10665,-200
 Lintruper Str.: Kopfsteinpflaster	Q2 10665,-200 10729,-386
 #: XXX ^^^
@@ -4048,10 +4055,15 @@ Pestalozzistr.: Asphalt	Q0 10532,18601 10409,18551 10342,18528 10126,18444 10075
 Georg-Blank-Str.: Asphalt	Q0 12492,15833 12423,15875 12341,15932 12295,15953 12263,15973 12248,15971 12198,15999
 #: by: Stefan Schmidt:
 Nackenheimer Weg: guter Beton	Q0 11625,6248 11572,6613
-#: by: AndrË (Friedrich):
+#: by: AndrË (Friedrich): vvv
 Hauskavelweg: guter Asphalt	Q0 -6660,15379 -6627,15642 -6607,15816 -6592,15946 -6583,16050
-#: by: Johann Eickhoff-Koberg
+An der Felgenlake: Asphalt	Q0 -6148,15306 -6550,15383 -6660,15379 -6802,15376 -7004,15434
+#: by: ^^^
+#: by: Johann Eickhoff-Koberg vvv
 Ortwinstr.: m‰ﬂiger Beton	Q1 2038,25531 1931,25511 1828,25478
+#: note: "katastrophal", "viele Hulper"
+Ortwinstr.: unebene Kleinpflasterung mit Spurrinnen	Q3 1828,25478 1730,25441 1627,25386
+#: by: ^^^
 #: by: H‰hnel (m):
 Auguststr. (Lichterfelde): m‰ﬂiges Kopfsteinpflaster	Q2 5281,2038 5338,1905 5403,1779
 #: by: Wolfgang Koller:
@@ -4064,6 +4076,15 @@ Klingenthaler Str.: guter Asphalt	Q0 24041,13979 23887,14028 23802,14060 23776,1
 #: by: Matthias Bauer:
 #: note: laut ADFC-Karte "gut geeignet":
 (Galenusstr. - Schloﬂallee): sehr guter Asphalt	Q0 11366,19299 11328,19413 11273,19521
+#: by: Thorsten Schulz:
+Schottburger Str.: schlechtes Kopfsteinpflaster	Q3 10550,282 10463,251 10373,216
+#: by: Wolfram Zimmermann:
+Am Triftpark: gutes Verbundsteinpflaster	Q1 4450,20388 4407,20412 4386,20444 4407,20482 4436,20531 4498,20515
+#: by: Nadine (zimttiger):
+Feldstr.: m‰ﬂiges Kopfsteinpflaster	Q2 4136,505 4018,699 3951,798 3840,964 3808,1016
+#: by: Gerhard Wittkuhns:
+#: XXX Q2+
+Solquellstr.: m‰ﬂiger Beton	Q2 4436,23714 4382,23730 4303,23767 4180,23829 4128,23880 4073,23980 4034,24181 4029,24235 4073,24393 4111,24488
 #: by: Andreas M¸hlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14202,13140 14096,12827

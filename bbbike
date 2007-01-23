@@ -12419,11 +12419,14 @@ sub show_info {
 	if (!$google_photo) {
 	    $google_photo = load_photo($top, 'google.gif');
 	}
+	if (!$bbbike_google_photo) {
+	    $bbbike_google_photo = load_photo($top, 'bbbike_google.gif');
+	}
 
 	{
 	    my $need_indentation;
-	    if ($google_photo) {
-		$info_text->imageCreate("end", -image => $google_photo,
+	    if ($bbbike_google_photo) {
+		$info_text->imageCreate("end", -image => $bbbike_google_photo,
 					-align => "bottom", -padx => 2, -pady => 1);
 	    } else {
 		$need_indentation = 1;
@@ -12480,6 +12483,18 @@ sub show_info {
 	}
 
 	{
+	    if (!$berliner_stadtplan_photo) {
+		$berliner_stadtplan_photo = load_photo($top, 'berliner_stadtplan.gif');
+	    }
+
+	    my $need_indentation;
+	    if ($berliner_stadtplan_photo) {
+		$info_text->imageCreate("end", -image => $berliner_stadtplan_photo,
+					-align => "bottom", -padx => 2, -pady => 1);
+	    } else {
+		$need_indentation = 1;
+	    }
+
 	    my $y_wgs = sprintf "%.2f", (Karte::Polar::ddd2dmm($py))[1];
 	    my $x_wgs = sprintf "%.2f", (Karte::Polar::ddd2dmm($px))[1];
 	    my $zoom = "100";
@@ -12499,7 +12514,7 @@ sub show_info {
 	    ## But this works. Be nice and tell the Pharus guys where this request came from:
 	    my $url = "http://www.berliner-stadtplan.com/topic/bln/str/x_wgs/${x_wgs}/y_wgs/${y_wgs}/from/bbbike.html";
 	    $info_text->insert("end", "www.berliner-stadtplan.com",
-			       ["link$linkcount", "iconindent"]);
+			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
 	    $show_url->($linkcount, $url);
 	    $info_text->insert("end", "\n");
 	    $linkcount++;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: parse_synop,v 1.13 2006/02/15 23:39:49 eserte Exp eserte $
+# $Id: parse_synop,v 1.14 2007/01/20 20:33:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -46,6 +46,9 @@
 
 # Synop-Datenarchiv:
 # http://mtarchive.geol.iastate.edu/2006/02/13/text/syn/...
+
+# SYNOP Data Format (FM-12):
+# http://weather.unisys.com/wxp/Appendices/Formats/SYNOP.html
 
 use lib "$ENV{HOME}/lib/perl";
 use strict;
