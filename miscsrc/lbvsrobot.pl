@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.34 2006/06/06 11:06:51 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.35 2007/01/26 20:01:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006 Slaven Rezic. All rights reserved.
@@ -45,9 +45,9 @@ my $do_irrelevant;
 my $quiet;
 my $force;
 my $state_id;
-my $state_id_url = "http://www.ls.brandenburg.de/SCRIPTS/hsrun.exe/Single/BIS1/MapXtreme.htx;start=HS_Info";
+my $state_id_url = "http://service.ls.brandenburg.de/SCRIPTS/hsrun.exe/Single/BIS1/MapXtreme.htx;start=HS_Info";
 #my $base_url = "http://194.76.232.138/SCRIPTS/hsrun.exe/Single/BIS1/StateId/%STATE_ID%/HAHTpage";
-my $base_url = "http://www.ls.brandenburg.de/SCRIPTS/hsrun.exe/Single/BIS1/StateId/%STATE_ID%/HAHTpage";
+my $base_url = "http://service.ls.brandenburg.de/SCRIPTS/hsrun.exe/Single/BIS1/StateId/%STATE_ID%/HAHTpage";
 my $all_listing_url = "$base_url/SucheStrasse?txtStr="; # . Anfangsbuchstabe
 my $str_listing_url = "$base_url/ZeigeStrasse?lstStr="; # . Streetname
 my $detail_url      = "$base_url/HS_BauBlatt?BaustRowNr="; # . Rownumber

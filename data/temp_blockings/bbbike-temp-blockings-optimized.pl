@@ -680,23 +680,8 @@ userdel	1::inwork 10781,13002 10706,13043
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1169679600,
-         'text' => 'B 183 Hainsche Str. Burgplatz in der OL Bad Liebenwerda Geschäftseröffnung Vollsperrung 24.01.2007-24.01.2007 ',
-         'from' => 1169506800,
-         'data' => 'userdel	q4::temp 12194,-98944 11943,-99051
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_004560',
-         'until' => 1169679600,
-         'text' => 'Ehrlichstr. (Lichtenberg) Richtung Treskowallee vor Treskowallee Baustelle, Fahrtrichtung gesperrt, bis 24.01.2007',
-         'from' => 1169495904,
-         'data' => 'userdel	1::inwork 18528,8331 18615,8269 18683,8232
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_004559',
          'until' => 1169938800,
@@ -705,6 +690,41 @@ userdel	1::inwork 10781,13002 10706,13043
          'data' => 'userdel	q4::inwork; 24623,11684 24652,11794 24578,11928
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_004587',
+         'until' => 1196463599,
+         'text' => 'Gürtelstr. (Friedrichshain) RIchtung Boxhagener Str. zwischen Frankfurter Allee und Oderstr. Baustelle, Fahrtrichtung gesperrt (bis 11.2007)',
+         'from' => 1169710498,
+         'data' => 'userdel	q4::inwork; 15349,12073 15288,11968 15243,11881 15203,11807 15091,11596
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1170630000,
+         'text' => 'L 023 Britz-Joachimsthal Brücke über A 11, AS Chorin Brückenabbruch Vollsperrung 03.02.2007-04.02.2007 ',
+         'from' => 1170370800,
+         'data' => 'userdel	2::inwork 35962,59463 35405,59832
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003972',
+         'until' => 1170370799,
+         'text' => 'Dunckerstr. (Prenzlauer Berg) in beiden Richtungen, Kreuzung Stargarder Str. Baustelle, Straße vollständig gesperrt (bis Anfang 02/2007)',
+         'from' => 1169839000,
+         'data' => 'userdel	2::inwork 11603,15455 11638,15522
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_004452',
+         'until' => 1170370799,
+         'text' => 'Hultschiner Damm (Mahlsdorf) in beiden Richtungen zwischen Alt Mahlsdorf und Elsenstr. Straße vollständig gesperrt, Rohrbruch (bis Anfang 02/2007)',
+         'from' => 1169839019,
+         'data' => 'userdel	2::inwork 24637,10807 24735,11021 24658,11293
+',
+         'type' => 'gesperrt'
        }
      
 );

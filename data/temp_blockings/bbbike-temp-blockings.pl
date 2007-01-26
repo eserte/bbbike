@@ -6960,4 +6960,39 @@ EOF
 userdel	q4::inwork; 24623,11684 24652,11794 24578,11928
 EOF
      },
+     { from  => 1169710498, # 2007-01-25 08:34
+       until => 1196463599, # 2007-11-30 23:59
+       text  => 'Gürtelstr. (Friedrichshain) RIchtung Boxhagener Str. zwischen Frankfurter Allee und Oderstr. Baustelle, Fahrtrichtung gesperrt (bis 11.2007)',
+       type  => 'handicap',
+       source_id => 'IM_004587',
+       data  => <<EOF,
+userdel	q4::inwork; 15349,12073 15288,11968 15243,11881 15203,11807 15091,11596
+EOF
+     },
+     { from  => 1170370800, # 2007-02-02 00:00
+       until => 1170630000, # 2007-02-05 00:00
+       text  => 'L 023 Britz-Joachimsthal Brücke über A 11, AS Chorin Brückenabbruch Vollsperrung 03.02.2007-04.02.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 35962,59463 35405,59832
+EOF
+     },
+     { from  => 1169839000, # 2007-01-26 20:16
+       until => 1170370799, # 2007-02-01 23:59
+       text  => 'Dunckerstr. (Prenzlauer Berg) in beiden Richtungen, Kreuzung Stargarder Str. Baustelle, Straße vollständig gesperrt (bis Anfang 02/2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_003972',
+       data  => <<EOF,
+userdel	2::inwork 11603,15455 11638,15522
+EOF
+     },
+     { from  => 1169839019, # 2007-01-26 20:16
+       until => 1170370799, # 2007-02-01 23:59
+       text  => 'Hultschiner Damm (Mahlsdorf) in beiden Richtungen zwischen Alt Mahlsdorf und Elsenstr. Straße vollständig gesperrt, Rohrbruch (bis Anfang 02/2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_004452',
+       data  => <<EOF,
+userdel	2::inwork 24637,10807 24735,11021 24658,11293
+EOF
+     },
     );
