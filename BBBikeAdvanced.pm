@@ -1204,7 +1204,7 @@ sub set_line_coord_interactive {
 			 );
     return if !defined $t;
 
-    my $map = "standard";
+    my $map = "auto-detect";
 
     my $set_sub = sub {
 	my(@mark_args) = @_;
@@ -1214,7 +1214,15 @@ sub set_line_coord_interactive {
 						  : "PRIMARY"));
 	while ($s =~ /([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
 	    my($x,$y) = ($1,$2);
-	    if ($map eq 'polar') {
+	    my $_map = $map;
+	    if ($map eq 'auto-detect') {
+		if ($x =~ m{\.} && $y =~ m{\.} && $x <= 180 && $x >= -180 && $y <= 90 && $y >= -90) {
+		    $_map = "polar";
+		} else {
+		    $_map = "standard";
+		}
+	    }
+	    if ($_map eq 'polar') {
 		($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
 	    }
 	    push @coords, [$x,$y];
@@ -1241,6 +1249,9 @@ sub set_line_coord_interactive {
 	     });
 
     $t->Label(-text => "Koordinatensystem:")->pack(-anchor => "w");
+    $t->Radiobutton(-variable => \$map,
+		    -value => "auto-detect",
+		    -text => "Auto-detect")->pack(-anchor => "w");
     $t->Radiobutton(-variable => \$map,
 		    -value => "standard",
 		    -text => "Standard (BBBike)")->pack(-anchor => "w");
