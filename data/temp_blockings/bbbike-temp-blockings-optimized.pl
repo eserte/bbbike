@@ -682,15 +682,7 @@ userdel	1::inwork 10781,13002 10706,13043
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_004559',
-         'until' => 1169938800,
-         'text' => 'Hönower Str. (Hellersdorf) Richtung Ridbacher Str. zwischen Fritz-Reuter-Str. und Wilhelmsmühenweg Baustelle, Fahrtrichtung gesperrt (bis 27.01.2007)',
-         'from' => 1169496024,
-         'data' => 'userdel	q4::inwork; 24623,11684 24652,11794 24578,11928
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_004587',
          'until' => 1196463599,
