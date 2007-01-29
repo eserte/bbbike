@@ -496,7 +496,7 @@ Grüne Aue - Chemnitzer Str.: Qualität? Brücke über die Wuhle vorhanden (nicht fü
 Ist hier noch das DRK-Krankenhaus? Name?	? 1053,3142
 (Hüttenweg - Jagdschloß Grunewald): Wegführung, Qualität (fester Waldweg)?	? 869,6085 866,6328 880,6645
 (Waldweg Grunewald): Wegführung, Qualität (fester Waldweg)?	? 1512,6553 1364,6691
-Schriftsetzerweg: Einbahnstraße?	? 15868,1790 16194,1509
+Schriftsetzerweg: Einbahnstraße?	? 15868,1790 16200,1499
 Quellenweg: Qualität? Existiert tatsächlich eine Verbindung für Radfahrer zwischen Ruhwaldweg und Fürstenbrunner Weg?	? 1551,13377 1506,13376 1301,13338 1219,13310 1171,13320 1070,13309 919,13281 755,13281
 Heinrich-Zille-Weg: Qualität?	? 815,12653 1070,13309
 (Spandauer Damm - Fürstenbrunnerweg): Qualität?	? 1459,12475 1601,12908 1551,13377 1545,13418
@@ -932,6 +932,8 @@ Am Bullengraben: Radweg in Bau, teilweise schon fertig gestellt	? -6272,13482 -6
 Brettnacher Str. - Weg an der S-Bahn: für Radfahrer befahrbar, Qualität?	? 1893,3244 1873,3275
 (Teltowkanal - Engadiner Weg): Qualität des Weges durch die Schrebergärten? Asphaltiert?	? 3971,2106 3906,2135 3898,2120 3851,2148
 Widosteig - Bohnsdorfer Weg: Qualität (Trampelpfad?)	? 19934,1102 19957,1165 19940,1265
+Turmfalkenstr.: Qualität?	? -1764,19343 -1681,19593 -1663,19632 -1619,19754 -1572,19899 -1521,20041 -1473,20181
+Roedernallee - Freiheitsweg: Qualität?	? 6448,18957 6558,18947
 # added from ampeln-orig
 wirklich? (?)	? 9215,3599
 Wirklich? (?)	? -3775,17087
@@ -960,6 +962,7 @@ Hohenschönhausener Weg: asphaltiert (laut Radzeit 3/2006)	? 15611,18547 16317,18
 (Uferpromenade Spreebogenpark) (hat dieser Weg einen Namen (Ludwig-Erhard-Ufer?))	? 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871
 Ballonfahrerweg (Offiziell nur für Busse freigegeben)	? 7946,7411 7964,7510 7959,7609
 Czarnikauer Str. (Ist die Czarnikauer eine Einbahnstraße? In welche Richtung ist die Straße offen?)	? 10225,16436 10449,16415 10613,16403
+Freiheitsweg (ausgeschilderte Radroute - welche?)	? 6558,18947 6715,18918 6753,18909 6829,18887 6910,18861 7157,18810
 (Am Stichkanal - Uferweg am Teltowkanal) (Qualität des Verbindungsweges)	? 2736,645 2784,589
 (Weg zur Krampenburg) (ist das ein offizieller Name mit Ausschilderung?)	? 27609,305 27571,262 27171,155 27273,-106 27407,-401 27552,-741 27559,-1365 27357,-1545 27323,-1671
 Straße am Wald (Ist der Straßenname offiziell und die Straße entsprechend ausgeschildert?)	? 21475,7500 21341,7487 21025,7349
@@ -970,7 +973,6 @@ Grabenstr. (Lichterfelde) (Qualität der Straße, möglicherweise mäßiges Kopfstein
 Nelly-Sachs-Str. ((teilweise) Kategorie N oder sogar NN?)	? 23993,14797 24253,14888 24349,14922
 Tivoliplatz (Qualität? Zur Zeit Zugang nur über Treppe.)	? 8949,8989 8950,8954
 (Am Weinhang/Am Weinberg) (Welcher Name ist richtig? Wie wird die Qualität sein - auch Kopfsteinpflaster?)	? 8988,8990 8949,8989
-Nieritzweg (Qualität der Fahrbahn? Qualität der Radwege? Ampel zwischen Andreezeile und Claszeile? Vorfahrtsregelung an der Sachtlebenstr.?)	? 1207,1051 1075,1029 958,1009 932,1005 848,990 786,979 760,975 725,970 656,961 538,944 463,933 230,899
 (Viktoriapark (Steglitz)) (heisst dieser Weg wirklich so?)	? 4977,5885 5034,5990
 (Park am Hochmeisterplatz) (geht der Platz offiziell bis zu diesem Weg)	? 3361,10000 3474,9990
 Bambachstr. (Qualität? Behinderungen?)	? 12037,6706 12046,6645
@@ -1071,6 +1073,7 @@ Dianastr.: gute Qualität (asphaltiert oder betoniert?)	? -8458,-2461 -8302,-2469
 Rollwitz - Damerow: Kopfsteinpflaster/Feldweg (genauere Qualitätsbeschreibung fehlt)	? 46872,118656 46914,117945 47156,116507 47087,115725
 Marzahner Promenade - Mühlenbecker Weg: Fußgänger (Stimmt das?)	? 20222,15519 20150,15678
 X (Hat die Straße "Am Studio" Vorfahrt vor der Ernst-Augustin-Str.?)	? 19878,2899 19744,3027 19715,3059
+X (Hat die Sachtlebenstr. Vorfahrt vor dem Nieritzweg?)	? 254,792 230,899 150,1251
 Barsekowstr. (unbeleuchtet?)	? 5344,4672 5417,4647 5476,4626 5589,4617
 Stadtpark Steglitz (unbeleuchtet?)	? 5589,4617 5747,4697 5765,4693 5931,4659 6114,4709
 (Stadtpark Steglitz) (unbeleuchtet?)	? 5809,4828 5826,4819 5909,4798 5945,4828 6018,4850

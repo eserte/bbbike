@@ -6873,9 +6873,9 @@ EOF
 userdel	2::inwork 14140,8977 14015,8798 13857,8601
 EOF
      },
-     { from  => undef, # 
-       until => 1183240800, # 2007-07-01 00:00
-       text  => 'Nennhauser Damm (Spandau) Richtung Brunsbütteler Damm nach Heerstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2007)',
+     { from  => 1170098789, # 2007-01-29 20:26
+       until => 1175378399, # 2007-03-31 23:59
+       text  => 'Nennhauser Damm (Spandau) Richtung Brunsbütteler Damm nach Heerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 03.2007)',
        type  => 'gesperrt',
        source_id => 'IM_004443',
        data  => <<EOF,
@@ -6993,6 +6993,15 @@ EOF
        source_id => 'IM_004452',
        data  => <<EOF,
 userdel	2::inwork 24637,10807 24735,11021 24658,11293
+EOF
+     },
+     { from  => 1170098849, # 2007-01-29 20:27
+       until => 1171062000, # 2007-02-10 00:00
+       text  => 'Hauptstr. (Pankow) in Richtung stadteinwärts, zwischen Bucherstr. und Blankenfelder Str. Baustelle, Fahrtrichtung gesperrt (bis 09.02.07)',
+       type  => 'gesperrt',
+       source_id => 'IM_004638',
+       data  => <<EOF,
+userdel	1::inwork 12178,23034 12213,22884 12187,22486
 EOF
      },
     );

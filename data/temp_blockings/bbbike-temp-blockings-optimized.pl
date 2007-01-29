@@ -643,9 +643,9 @@ userdel	1::inwork 10781,13002 10706,13043
        undef,
        {
          'source_id' => 'IM_004443',
-         'until' => 1183240800,
-         'text' => 'Nennhauser Damm (Spandau) Richtung Brunsbütteler Damm nach Heerstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2007)',
-         'from' => undef,
+         'until' => 1175378399,
+         'text' => 'Nennhauser Damm (Spandau) Richtung Brunsbütteler Damm nach Heerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 03.2007)',
+         'from' => 1170098789,
          'data' => 'userdel	1::inwork -8671,13312 -8643,13383 -8358,13340 -8011,13351 -7693,13330
 ',
          'type' => 'gesperrt'
@@ -715,6 +715,15 @@ userdel	1::inwork 10781,13002 10706,13043
          'text' => 'Hultschiner Damm (Mahlsdorf) in beiden Richtungen zwischen Alt Mahlsdorf und Elsenstr. Straße vollständig gesperrt, Rohrbruch (bis Anfang 02/2007)',
          'from' => 1169839019,
          'data' => 'userdel	2::inwork 24637,10807 24735,11021 24658,11293
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_004638',
+         'until' => 1171062000,
+         'text' => 'Hauptstr. (Pankow) in Richtung stadteinwärts, zwischen Bucherstr. und Blankenfelder Str. Baustelle, Fahrtrichtung gesperrt (bis 09.02.07)',
+         'from' => 1170098849,
+         'data' => 'userdel	1::inwork 12178,23034 12213,22884 12187,22486
 ',
          'type' => 'gesperrt'
        }
