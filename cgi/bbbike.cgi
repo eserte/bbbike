@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.33 2007/01/09 00:26:50 eserte Exp $
+# $Id: bbbike.cgi,v 8.34 2007/01/30 20:26:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -697,7 +697,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.33 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.34 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1715,6 +1715,8 @@ EOF
 
     print "<table id=inputtable>\n" if ($bi->{'can_table'});
 
+    my $shown_unknown_street_helper = 0;
+
     foreach
       ([\$startname, \$start, \$start2, \$startort, \@start_matches, 'start',
 	$start_bgcolor],
@@ -1798,8 +1800,38 @@ EOF
 	} elsif ($$oneref ne '' && @$matchref == 0) {
 	    print "<td>$fontstr" if $bi->{'can_table'};
 	    print "<i>$$oneref</i> " . M("ist nicht bekannt") . ".<br>\n";
+	    if (!$shown_unknown_street_helper) {
+		if ($lang eq 'en') {
+		    print <<EOF;
+<p>
+Checklist:
+<ul>
+<li>Check the correct spelling of the street name.
+<li>Do not use house numbers, postcodes, place and suburb names!
+<li>The BBBike database only contains streets from Berlin and Potsdam.
+<li>Only most important Berlin sights are available through this interface.
+</ul>
+</p>
+EOF
+		} else {
+		    print <<EOF;
+<p>
+Checkliste:
+<ul>
+<li>Wurde der Straßenname richtig geschrieben?
+<li>Hausnummern, Bezirks-, Postleitzahl und Ortsnamen dürfen nicht angegeben werden!
+<li>In der Datenbank befinden sich nur Berliner und Potsdamer Straßen!
+<li>Nur die wichtigsten Berliner Sehenswürdigkeiten können verwendet werden.
+</ul>
+</p>
+EOF
+		}
+		$shown_unknown_street_helper = 1;
+	    }
+
 	    my $qs = CGI->new({strname => $$oneref})->query_string;
-	    print qq{<a target="newstreetform" href="$bbbike_html/newstreetform${newstreetform_encoding}.html?$qs">} . M("Diese Straße eintragen") . qq{</a><br>\n};
+	    print qq{<a target="newstreetform" href="$bbbike_html/newstreetform${newstreetform_encoding}.html?$qs">} . M("Diese Straße neu in die BBBike-Datenbank eintragen") . qq{</a><br><br>\n};
+	    print M(qq{Oder einen anderen Straßennamen versuchen}) . qq{:<br>\n};
 	    $no_td = 1;
 	    $tryempty = 1;
 	} elsif ($$tworef ne '') {
@@ -6228,7 +6260,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/01/09 00:26:50 $';
+    my $cgi_date = '$Date: 2007/01/30 20:26:50 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

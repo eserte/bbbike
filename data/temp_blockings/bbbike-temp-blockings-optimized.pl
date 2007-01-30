@@ -726,6 +726,14 @@ userdel	1::inwork 10781,13002 10706,13043
          'data' => 'userdel	1::inwork 12178,23034 12213,22884 12187,22486
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1171148400,
+         'text' => 'B 112 zw. Abzw. Wüste Kunersdorf und Lebus Gründungsarb. für Radwegbau Vollsperrung 08.02.2007-10.02.2007 ',
+         'from' => 1170802800,
+         'data' => 'userdel	2::inwork 86420,913 86769,1414
+',
+         'type' => 'gesperrt'
        }
      
 );

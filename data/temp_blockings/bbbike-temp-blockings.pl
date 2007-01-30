@@ -2013,7 +2013,7 @@ EOF
        text  => 'Bouchéstraße (Treptow) in beiden Richtungen zwischen Kiefholzstraße und Am Treptower Park Fahrbahnerneuerung, Straße vollständig gesperrt (bis Ende 2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 13867,9864 13601,9572
+userdel	2 13867,9864 13645,9621 13601,9572
 EOF
      },
      { from  => 1119391200, # 2005-06-22 00:00
@@ -3084,7 +3084,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002297',
        data  => <<EOF,
-userdel	1 2461,25270 2657,25486 2721,25576
+userdel	1 2461,25270 2531,25368 2657,25486 2721,25576
 EOF
      },
      { from  => 1129879314, # 2005-10-21 09:21
@@ -4299,7 +4299,7 @@ EOF
        text  => 'Schulzendorfer Straße - Am Dachsbau (zwischen Ruppiner Chaussee und Blisenkrautstr.) in beiden Richtungen gesperrt, Baustelle bis 06.11.2006 15:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -862,22946 -1254,22853
+userdel	2::inwork -915,22935 -1299,22842
 EOF
      },
      { from  => 1146701434, # 2006-05-04 02:10
@@ -4784,7 +4784,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_82301_COPY_1',
        data  => <<EOF,
-userdel	2::inwork -862,22946 -596,23009
+userdel	2::inwork -915,22935 -596,23009
 EOF
      },
      { from  => 1149976800, # 2006-06-11 00:00
@@ -7002,6 +7002,14 @@ EOF
        source_id => 'IM_004638',
        data  => <<EOF,
 userdel	1::inwork 12178,23034 12213,22884 12187,22486
+EOF
+     },
+     { from  => 1170802800, # 2007-02-07 00:00
+       until => 1171148400, # 2007-02-11 00:00
+       text  => 'B 112 zw. Abzw. Wüste Kunersdorf und Lebus Gründungsarb. für Radwegbau Vollsperrung 08.02.2007-10.02.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 86420,913 86769,1414
 EOF
      },
     );

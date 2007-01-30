@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.34 2006/10/01 22:13:37 eserte Exp eserte $
+# $Id: mapserver_comment.cgi,v 1.35 2007/01/30 20:26:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
