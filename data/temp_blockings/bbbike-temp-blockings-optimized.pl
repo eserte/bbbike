@@ -7,7 +7,7 @@ push @temp_blocking,
          'until' => 1191189600,
          'text' => 'Florastr. (Pankow) Berliner Str. in Richtung Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis September 2007)',
          'from' => 1139555958,
-         'data' => 'userdel	q4::inwork; 10459,17754 10722,17940 10846,17992
+         'data' => 'userdel	q4::inwork; 10459,17754 10548,17817 10722,17940 10846,17992
 ',
          'type' => 'handicap'
        },
