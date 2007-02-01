@@ -7012,4 +7012,20 @@ EOF
 userdel	2::inwork 86420,913 86769,1414
 EOF
      },
+     { from  => 1170543600, # 2007-02-04 00:00
+       until => 1170889200, # 2007-02-08 00:00
+       text  => 'B 273 Germendorf-Schwante Bahnübergang in der OD Schwante Gleisbauarbeiten Vollsperrung 05.02.2007-07.02.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -11565,36127 -10833,36580
+EOF
+     },
+     { from  => 1170716400, # 2007-02-06 00:00
+       until => 1171062000, # 2007-02-10 00:00
+       text  => 'K 6506 L172- Bärenklau-Vehlefanz Bahnübergang in der OD Vehlefanz Gleisbauarbeiten Vollsperrung 07.02.2007-09.02.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -10057,34800 -9159,34997
+EOF
+     },
     );

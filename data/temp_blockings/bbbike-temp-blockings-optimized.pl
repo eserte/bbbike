@@ -617,14 +617,7 @@ userdel	1::inwork 10781,13002 10706,13043
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1170198000,
-         'text' => 'L 030 Rüdersdorfer Str. OD Woltersdorf, zw. R.-Breitschei-Str. u. Interlakenstr. Straßenbau, Entwässerung Vollsperrung 28.08.2006-30.01.2007 ',
-         'from' => 1156629600,
-         'data' => 'userdel	2::inwork 34579,5745 34535,5319
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -732,6 +725,22 @@ userdel	1::inwork 10781,13002 10706,13043
          'text' => 'B 112 zw. Abzw. Wüste Kunersdorf und Lebus Gründungsarb. für Radwegbau Vollsperrung 08.02.2007-10.02.2007 ',
          'from' => 1170802800,
          'data' => 'userdel	2::inwork 86420,913 86769,1414
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1170889200,
+         'text' => 'B 273 Germendorf-Schwante Bahnübergang in der OD Schwante Gleisbauarbeiten Vollsperrung 05.02.2007-07.02.2007 ',
+         'from' => 1170543600,
+         'data' => 'userdel	2::inwork -11565,36127 -10833,36580
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1171062000,
+         'text' => 'K 6506 L172- Bärenklau-Vehlefanz Bahnübergang in der OD Vehlefanz Gleisbauarbeiten Vollsperrung 07.02.2007-09.02.2007 ',
+         'from' => 1170716400,
+         'data' => 'userdel	2::inwork -10057,34800 -9159,34997
 ',
          'type' => 'gesperrt'
        }
