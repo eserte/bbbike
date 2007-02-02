@@ -693,24 +693,8 @@ userdel	1::inwork 10781,13002 10706,13043
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_003972',
-         'until' => 1170370799,
-         'text' => 'Dunckerstr. (Prenzlauer Berg) in beiden Richtungen, Kreuzung Stargarder Str. Baustelle, Straße vollständig gesperrt (bis Anfang 02/2007)',
-         'from' => 1169839000,
-         'data' => 'userdel	2::inwork 11603,15455 11638,15522
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_004452',
-         'until' => 1170370799,
-         'text' => 'Hultschiner Damm (Mahlsdorf) in beiden Richtungen zwischen Alt Mahlsdorf und Elsenstr. Straße vollständig gesperrt, Rohrbruch (bis Anfang 02/2007)',
-         'from' => 1169839019,
-         'data' => 'userdel	2::inwork 24637,10807 24735,11021 24658,11293
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_004638',
          'until' => 1171062000,
@@ -741,6 +725,14 @@ userdel	1::inwork 10781,13002 10706,13043
          'text' => 'K 6506 L172- Bärenklau-Vehlefanz Bahnübergang in der OD Vehlefanz Gleisbauarbeiten Vollsperrung 07.02.2007-09.02.2007 ',
          'from' => 1170716400,
          'data' => 'userdel	2::inwork -10057,34800 -9159,34997
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1171062000,
+         'text' => 'B 112 Bereich Kunersdorfer Grund Errichtung Radwegbrücke Vollsperrung 08.02.2007-09.02.2007 ',
+         'from' => 1170802800,
+         'data' => 'userdel	2::inwork 86769,1414 87351,3652
 ',
          'type' => 'gesperrt'
        }

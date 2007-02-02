@@ -7028,4 +7028,12 @@ EOF
 userdel	2::inwork -10057,34800 -9159,34997
 EOF
      },
+     { from  => 1170802800, # 2007-02-07 00:00
+       until => 1171062000, # 2007-02-10 00:00
+       text  => 'B 112 Bereich Kunersdorfer Grund Errichtung Radwegbrücke Vollsperrung 08.02.2007-09.02.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 86769,1414 87351,3652
+EOF
+     },
     );
