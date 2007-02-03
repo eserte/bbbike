@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Cat.pm,v 1.4 2007/02/03 11:01:17 eserte Exp $
+# $Id: Cat.pm,v 1.5 2007/02/03 21:57:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 use File::Basename qw(basename);
 
@@ -49,6 +49,7 @@ use vars qw(%filetype_to_cat %file_to_cat);
      "strassen"	      => [qw(HH H N NN Pl)],
      "ubahn"	      => [qw(U0 UA UB UC UBau)],
      "wasserstrassen" => [qw(F:I F:W F:W1 W W0 W1 W2)],
+     "*bahnhof_bg"    => [qw(bg bf)],
     );
 
 %file_to_cat =
@@ -73,6 +74,9 @@ use vars qw(%filetype_to_cat %file_to_cat);
      "fragezeichen"		=> [qw(? ?? F:? F:??)],
      "gesperrt"			=> $filetype_to_cat{"gesperrt"},
      "gesperrt_car"		=> $filetype_to_cat{"gesperrt"},
+     "gesperrt_r"		=> $filetype_to_cat{"gesperrt"},
+     "gesperrt_s"		=> $filetype_to_cat{"gesperrt"},
+     "gesperrt_u"		=> $filetype_to_cat{"gesperrt"},
      "green"			=> [qw(green1 green2)],
      "handicap_l"		=> $filetype_to_cat{"handicap"},
      "handicap_s"		=> $filetype_to_cat{"handicap"},
@@ -100,12 +104,14 @@ use vars qw(%filetype_to_cat %file_to_cat);
      "rbahnhof"			=> $filetype_to_cat{"rbahn"},
      "sbahn"			=> $filetype_to_cat{"sbahn"},
      "sbahnhof"			=> $filetype_to_cat{"sbahn"},
+     "sbahnhof_bg"		=> $filetype_to_cat{"*bahnhof_bg"},
      "sehenswuerdigkeit"	=> $filetype_to_cat{"sehenswuerdigkeit"},
      "strassen"			=> $filetype_to_cat{"strassen"},
      "strassen-cooked"		=> $filetype_to_cat{"strassen"},
      "strassen_bab"		=> [qw(BAB)],
      "ubahn"			=> $filetype_to_cat{"ubahn"},
      "ubahnhof"			=> $filetype_to_cat{"ubahn"},
+     "ubahnhof_bg"		=> $filetype_to_cat{"*bahnhof_bg"},
      "vorfahrt"			=> [qw(X)],
      "wasserstrassen"		=> $filetype_to_cat{"wasserstrassen"},
      "wasserstrassen-lowres"	=> $filetype_to_cat{"wasserstrassen"},

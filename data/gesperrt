@@ -533,10 +533,14 @@ Wisbyer Str. -> Gudvanger Str.: Straßenbahn	3 12026,16247 11905,16318 11758,1611
 Dunckerstr. -> Wisbyer Str.: Straßenbahn	3 11939,16084 12026,16247 11905,16318
 Glaßbrennerstr. -> Wisbyer Str.: Straßenbahn	3 11543,16207 11632,16373 11542,16384
 Wisbyer Str. -> Glaßbrennerstr.: Straßenbahn	3 11688,16365 11632,16373 11543,16207
-Löwenberger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3 17477,11893 17436,11791 17750,11771
+Löwenberger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3 17477,11893 17436,11791 17746,11748
 Alt-Friedrichsfelde -> Löwenberger Str.: nicht passierbarer Mittelstreifen	3 17249,11802 17436,11791 17477,11893
-Alt-Friedrichsfelde -> Robert-Uhrig-Str.: nicht passierbarer Mittelstreifen	3 18220,11710 17750,11771 17734,11408
-Robert-Uhrig-Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3 17734,11408 17750,11771 17436,11791
+Fußgängerbrücke -> Robert-Uhrig-Str.: nicht passierbarer Mittelstreifen	3 17757,11761 17746,11748 17745,11711
+Fußgängerbrücke -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3 17757,11761 17746,11748 17966,11730
+Alt-Friedrichsfelde -> Fußgängerbrücke: nicht passierbarer Mittelstreifen	3 17436,11791 17746,11748 17757,11761
+Robert-Uhrig-Str. -> Fußgängerbrücke: nicht passierbarer Mittelstreifen	3 17745,11711 17746,11748 17757,11761
+Robert-Uhrig-Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3 17745,11711 17746,11748 17436,11791
+Alt-Friedrichsfelde -> Robert-Uhrig-Str.: nicht passierbarer Mittelstreifen	3 17966,11730 17746,11748 17745,11711
 Gensinger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3 19005,11705 19005,11796 18853,11798
 Gensinger Str. -> Gensinger Str.: nicht passierbarer Mittelstreifen	3 19144,11859 19005,11796 19005,11705
 Gensinger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3 19144,11859 19005,11796 19283,11785
@@ -732,6 +736,7 @@ Mühlenstr. -> Hedwig-Wachenheim-Str.: Mittelstreifen ohne Überquerungshilfe	3 13
 Klingelhöferstr.: Mittelstreifen	3 6683,11367 6853,11336 6880,11110
 Klingelhöferstr.: Mittelstreifen	3 7160,11225 6853,11336 6880,11110
 Klingelhöferstr.: Mittelstreifen	3 6880,11110 6853,11336 6683,11367
+tragen (Treppe)	0:30:53 17757,11761
 tragen (Treppe)	0:30:-198 4710,23263
 tragen (Treppe)	0:30:-65 1179,13532
 tragen (7 Stufen)	0:20:-7 9762,16119

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.53 2007/02/03 12:36:21 eserte Exp $
+# $Id: Makefile,v 1.54 2007/02/03 22:26:17 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -534,7 +534,8 @@ radroute_body.html:	$(BBBIKE_DATA_DIR)/comments_route-orig \
 			$(BBBIKE_MISCSRC_DIR)/grepstrassen \
 			Makefile
 	$(BBBIKE_MISCSRC_DIR)/grepstrassen -v -sectionrx ignorieren $(BBBIKE_DATA_DIR)/comments_route-orig |\
-		$(BBBIKE_MISCSRC_DIR)/grepstrassen -v -sectionrx "In Routenliste ignorieren" |\
+	    $(BBBIKE_MISCSRC_DIR)/grepstrassen -v -sectionrx "In Routenliste ignorieren" |\
+	    perl -pe 's{\s+\(.*\)\t}{\t}' |\
 	    $(BBBIKE_MISCSRC_DIR)/bbd2mapservhtml.pl \
 		-bbbikeurl $(BBBIKE_URL) \
 		-email $(EMAIL) \

@@ -510,7 +510,7 @@ Berliner Str.: U-Bahnrampe	3nocross 10986,16897 10999,16830 11018,16730 11042,16
 Wisbyer Str.: Straﬂenbahn	3nocross 11688,16365 11727,16358 11807,16340 11905,16318 12026,16247 12091,16209
 Wisbyer Str.: Straﬂenbahn	3nocross 11542,16384 11632,16373 11688,16365
 Wisbyer Str.: Straﬂenbahn	3nocross 11397,16405 11448,16398 11470,16393 11542,16384
-Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 17249,11802 17436,11791 17750,11771 18220,11710
+Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 17249,11802 17436,11791 17746,11748 17966,11730 18220,11710
 Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 18853,11798 19005,11796 19283,11785 19693,11762 19904,11745 19985,11739 20115,11730 20368,11711
 Alt-Friedrichsfelde: Straﬂentunnelrampe	3nocross 18220,11710 18555,11724 18853,11798
 Lewishamstr.: abgesperrter Mittelstreifen	3nocross 3592,10869 3631,10784 3644,10759
@@ -588,6 +588,7 @@ Klingelhˆferstr.: Mittelstreifen	3 6880,11110 6853,11336 6683,11367
 # Stellen, an denen getragen werden muﬂ:
 # die Zahl hinter dem ":" entspricht ungef‰hr den verlorenen Sekunden
 #
+tragen (Treppe)	0:30 17757,11761
 tragen (Treppe)	0:30 4710,23263
 tragen (Treppe)	0:30 1179,13532
 tragen (7 Stufen)	0:20 9762,16119

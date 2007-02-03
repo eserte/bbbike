@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.287 2007/02/03 13:20:49 eserte Exp $
+# $Id: bbbike,v 3.287 2007/02/03 13:20:49 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -233,6 +233,11 @@ besser.\n", $Tk::VERSION);
 
 if ($Tk::VERSION <= 402.004) {
     require TkCompat;
+}
+
+if ($os eq 'unix' && $Tk::VERSION >= 804.027001) {
+    require Tk::MsgBox;
+    import Tk::MsgBox 'as_default';
 }
 
 my $terminal_encoding;

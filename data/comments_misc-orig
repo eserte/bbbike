@@ -2,7 +2,7 @@
 #:
 Neuer Garten: bei Dunkelheit geschlossen	CS -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12115,1331 -12185,1388
 Neuer Garten: bei Dunkelheit geschlossen	CS -11650,590 -11603,721 -11615,853
-Neuer Garten: bei Dunkelheit geschlossen	CS -12081,1168 -12212,1201
+Neuer Garten: bei Dunkelheit geschlossen	CS -12081,1168 -12191,1196 -12212,1201
 Neuer Garten: bei Dunkelheit geschlossen	CS -11510,810 -11562,918 -11575,1031 -11537,1206 -11568,1287 -11868,1193 -12000,1243 -12115,1331
 Neuer Garten: bei Dunkelheit geschlossen	CS -11615,853 -11510,810 -11231,696
 Schloßpark Charlottenburg: bei Dunkelheit geschlossen, Ausweichen über Tegeler Weg und Fußgängerbrücke an der S-Bahn möglich	CS 3288,12700 3263,12720 3127,12793 3055,12973 2997,13402 2950,13552
@@ -101,7 +101,7 @@ Am Wriezener Bahnhof: Privatstr. zu diversen Märkten	CS 12794,11893 12953,11727
 Bordstein	CP 12054,12903 11983,12949 11921,12990
 Bordstein	CP2; 12483,12682 12594,12866
 #: XXX ^^^
-Wilhelmstr.: Fahrbahn vor der britischen Botschaft für Autos gesperrt, passierbar für Radfahrer (bis 2006-12-31, vielleicht auch länger)	CS 8851,12123 8804,12280
+Wilhelmstr.: Fahrbahn vor der britischen Botschaft für Autos gesperrt, passierbar für Radfahrer	CS 8851,12123 8804,12280
 Am Petersberg: Privatstraße	CS 990,5581 825,5420
 (Weg in Kolonie Bodenreform): entlang des Teltowkanals	CS 20928,2412 20810,2398
 (Weg in Kolonie Bodenreform): entlang des Teltowkanals	CS 20810,2398 20510,2321 20490,2276 20234,2254 20140,2260
@@ -154,3 +154,11 @@ Poller	CS -8929,5984
 #: by: ^^^
 #: by: rjoop:
 Ausgeschildert: zum Bahnhof	CS; 20772,-104623 20754,-104514
+(Am Neuen Palais, direkter Weg): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	CS -15810,-1274 -15820,-1146 -15854,-656
+(Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	CS -13857,-1040 -14153,-1135 -14182,-995
+(Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	CS -14182,-995 -14410,-1039 -14612,-1117 -14859,-1142 -15553,-1139 -15651,-1137 -15820,-1146
+(Lennestr. - Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	CS -14634,-1343 -14856,-1223 -14859,-1142
+(Affengang, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	CS -14150,-1290 -14131,-1181 -14153,-1135
+(Ökonomieweg, Neuer Garten): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	CS -12557,11 -12479,97 -12467,215 -12373,288 -12182,816 -12191,1196
+Neuer Garten, Westufer des Heiligen Sees: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	CS -12265,-418 -12262,-362 -12328,-212 -12331,-131 -12321,9 -12278,134 -12156,193 -12103,315 -12143,353 -12115,409 -12068,384 -11990,790 -11950,781 -11887,837 -11856,950 -11818,993
+Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	CS -12331,-131 -12412,-118 -12450,-34 -12557,11

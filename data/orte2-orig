@@ -2,7 +2,7 @@
 #: encoding: utf-8
 #: title.de: Orte im weiteren Umland
 #: title.en: Places far away
-#: version: $Id: orte2-orig,v 4.30 2007/01/06 19:35:29 eserte Exp $
+#: version: $Id: orte2-orig,v 4.30 2007/01/06 19:35:29 eserte Exp eserte $
 #:
 # Mecklenburg-Vorpommern, Brandenburg
 Rostock	5 -79160,185302
@@ -218,6 +218,7 @@ Wilhelmshof	0 30734,103253
 Neustrelitz	4 -14770,105941
 Wesenberg	3 -21335,96890
 Ducherow	2 33001,151572
+Heidberg	0 35410,151307
 Jarmen	3 3419,168376
 Ückeritz	2 50843,179488
 Ludwigslust	4 -120780,100414
@@ -257,6 +258,8 @@ Poseritz	2 -2524,210079
 Losentitz	0 2110,204705
 Putbus	3 10574,216684
 Pasewalk	3 47982,122958
+Rollwitz	1 47187,119302
+Friedberg	1 50039,125006
 Ostseebad Binz	2 19789,222004
 Bergen|auf Rügen	4 7796,223783
 Prohn	2 -19939,217939
@@ -777,7 +780,12 @@ Schenkenberg|(bei Prenzlau)	1 45406,107350
 Ludwigsburg	1 47587,106693
 Baumgarten|(Ludwigsburg)	0 45417,105402
 Milow|(bei Pasewalk)	1 36949,119322
-Werbelow	0 39980,117080
+Werbelow	0 40003,117291
+Brietzig	0 42221,119716
+Wilsickow	0 39454,120313
+Groß Luckow	1 36980,126194
+Klein Luckow	0 37504,128254
+Friedrichshagen	1 39582,137711
 Trebenow	0 38662,115923
 Bandelow	0 38762,112839
 Klockow	0 49578,110877
@@ -795,7 +803,10 @@ Kamp	0 37642,160110
 Neuendorf A	1 36978,147642
 Meiersberg	1 44304,144810
 Ferdinandshof	2 40625,140553
+Demnitz|(bei Ferdinandshof)	0 35048,144256
+Altwigshagen	0 37114,144939
 Eggesin	3 53539,142834
+Hoppenwalde	1 53232,145177
 Hammer|bei Torgelow	1 46852,133497
 Heinrichsruh	1 42884,138422
 Jatznick	1 44681,130937

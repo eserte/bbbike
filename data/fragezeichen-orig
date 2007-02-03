@@ -28,13 +28,14 @@ Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 
 Vulkanstraße	? 15912,13153 15892,13534
 #: last_checked: 2006-06-16 (von Corinna):
 Gorkistr.	? 2995,20487 2615,20421
-Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 17750,11771 17436,11791 17249,11802
+Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 17966,11730 17746,11748 17436,11791 17249,11802
 #: last_checked: 2006-08-20
 Löhleinstraße	? 2717,5578 2499,5144 2454,5067 2288,4932
 #: last_checked: 2006-08-20
 Saargemünder Straße	? 2005,4772 1934,4788 1744,4812 1479,4853
 #: last_checked: 2006-08-20
-Pacelliallee	? 2585,5696 2594,5923 2607,6285 2609,6348 2659,6499 2711,6698 2714,6857 2723,7029
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20061113.1305.50310.html
+Pacelliallee: Arbeiten werden bis 2007-07-01 abgeschlossen sein	? 2585,5696 2594,5923 2607,6285 2609,6348 2659,6499 2711,6698 2714,6857 2723,7029
 #: by ^^^
 #: by Tagesspiegel 2004-07-25 (obige waren auch dabei) vvv
 #: XXX: wird es die gesamte Strecke oder nur der Abschnitt der RR3?
@@ -102,7 +103,6 @@ Havelfähre - Brandenburg: Planung des Havelradwegs, genaue Strecke, Realisierung
 Lichterfeld - Besucherbergwerk F60: Radweg in Bau	? 37870,-89814 37883,-89858 37885,-89996 37960,-90233 38002,-90351 38101,-90412
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20061103.1420.49764.html
 Frankfurter Allee am S-Bhf. Richtung Westen: Radstreifen soll Radweg ablösen, bis 2006-12-01	?; 15349,12073 15117,12106
-Schönwalder Allee: von Hakenfelder Str. bis Buswendeschleife wird asphaltiert, bis ca. 2006-12-08	? -3775,17087 -3807,17226 -3820,17276 -3936,17516 -4119,17723
 #: section ^^^
 #: section ^^^
 #
@@ -116,6 +116,7 @@ Schönwalder Allee: von Hakenfelder Str. bis Buswendeschleife wird asphaltiert, b
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 #
+Papestr./Loewenhardtdamm: hat sich der Umbau auf die Straßenführung ausgewirkt?	? 8248,8688 8306,8722 8293,8768 8293,8768
 B87: im Bereich von Müllrose und Beeskow Umgehungsstraßen; bereits fertiggestellt?	? 86488,-7562 85598,-8331 84692,-9145 84255,-9991 83672,-10601 83389,-11087 82740,-11887 81786,-12568 81278,-13886 80317,-15604 80143,-15900 79825,-16575 79718,-16658 79714,-16872 79650,-16999 79542,-17061 78297,-17788 76631,-18359 74920,-18929 74707,-18991 73222,-20567 71815,-22343 70984,-23637 70075,-24862 69290,-25534 68467,-25032 68208,-25518 67864,-25691 66943,-26530 65386,-29479 64853,-30986 63609,-34428 63520,-34874 63095,-34910 62112,-36752 60430,-38587 58111,-41188 57451,-41866 55628,-43569 53268,-45117 52695,-45345 50425,-46001 49708,-46344 48300,-48609 47500,-49275 47037,-49675 46312,-50912 45998,-51063 45786,-51125 44856,-51015
 #: last_checked: 2006-09-27
 #: by: Message-ID: <4mfe1bF5vae4U1@uni-berlin.de>
@@ -208,7 +209,7 @@ Hildegard-Knef-Platz: Benennung geplant	? 7854,7572
 Berliner Mauerradweg: wird die Strecke von der Glienicker Brücke an der Pfaueninsel entlang zur Fähre Wannsee-Kladow geführt?	? -10587,471 -10573,564 -10512,683 -10430,848 -10273,1088 -10209,1161 -10163,1288 -10078,1551 -10044,1567 -9975,1564 -9900,1573 -9818,1530 -9770,1482 -9746,1408 -9734,1394 -9606,1389 -9647,1462 -9673,1519 -9663,1622 -9632,1672 -9584,1703 -9511,1739 -9444,1820 -9393,1831 -9108,1798 -9016,1782 -8934,1801 -8861,1855 -8747,2023 -8636,2102 -8591,2144 -8540,2209 -8468,2152 -8400,2156 -8328,2181 -8262,2178 -8141,2211 -8085,2252 -7833,2277 -7562,2431 -7420,2563 -7318,2567 -7216,2622 -7180,2657 -7161,2692 -7129,2786 -6975,3012 -6912,3080 -6792,3196 -6766,3209 -6667,3312 -6510,3404 -6439,3418 -6375,3400 -6260,3398 -6215,3384 -5919,3092 -5820,3035 -5745,2990 -5712,2946 -5653,2807 -5722,2714
 Berliner Mauerradweg: wird die Strecke von der Glienicker Brücke an der Pfaueninsel entlang zur Fähre Wannsee-Kladow geführt?	?; -5722,2714 -5749,2701 -5945,2381 -6021,2068 -6017,1987 -5867,1449 -5848,1379 -5868,1255 -5499,1349
 Berliner Mauerradweg: wird die Strecke von der Glienicker Brücke an der Pfaueninsel entlang zur Fähre Wannsee-Kladow geführt?	?; -5499,1349 -5518,1396 -5588,1454 -5645,1504 -5815,1649 -5874,1771 -5883,1948 -5836,2119 -5708,2307 -5653,2481 -5663,2609 -5722,2714 -5749,2701
-Berliner Mauerradweg: wird die Strecke von der Glienicker Brücke an der Pfaueninsel entlang zur Fähre Wannsee-Kladow geführt?	? -5499,1349 -5253,1395 -5161,1387 -4944,1298 -4841,1414 -4892,1487 -5029,1713 -5171,2450 -5285,2795 -5519,3167 -6605,4019 -6797,4562 -6842,4744 -6853,4756 -6970,4546 -6981,4469 -7092,4198 -7182,4137 -7263,4145 -7547,4131 -7686,4182 -7706,4221 -7806,4182 -7989,4033 -8154,3965 -8303,3838 -8406,3836 -8444,3865 -8479,3802 -8518,3782 -8695,3689 -8820,3707
+Berliner Mauerradweg: wird die Strecke von der Glienicker Brücke an der Pfaueninsel entlang zur Fähre Wannsee-Kladow geführt?	? -5499,1349 -5253,1395 -5161,1387 -4944,1298 -4841,1414 -4892,1487 -5029,1713 -5171,2450 -5285,2795 -5519,3167 -6605,4019 -6797,4562 -6842,4744 -6853,4756 -6970,4546 -6981,4469 -7092,4198 -7182,4137 -7263,4145 -7547,4131 -7686,4182 -7714,4279 -7792,4249 -7990,4086 -8162,4025 -8305,3897 -8401,3894 -8439,3913 -8473,3860 -8503,3837 -8681,3747 -8799,3778
 nördlicher Radweg auf der Bulgarischen Str.: siehe Message-ID: <1kl0p5nkwlmb1.dlg@tebe.my-fqdn.de>	? 15166,8489 15383,8662 15580,8839
 ######################################################################
 #
@@ -222,9 +223,6 @@ Kleistpark: im Sommer bis 21 Uhr geöffnet, im Winter bis 18 Uhr	? 7192,9508 7246
 Achenbachpromenade: Parkweg Q1, in die Datenbank aufnehmen? Gilt der Name auch jenseits des Bayernringes?	? 8770,8777 8737,8573 8696,8453
 Viktoriapark, Katzbachstr. über das Denkmal zur Methfesselstr.: Weg wird aufgenommen, wenn bbbike.cgi Steigungen kann	? 8598,9061 8884,9078 8901,9104 8943,9098 8962,9048 9106,9038
 Viktoriapark, Kreuzbergstr. zur Methfesselstr.: Weg wird aufgenommen, wenn bbbike.cgi Steigungen kann	? 9141,9142 8973,9171 9007,9264 8955,9318
-Potsdam, Lennestr. - Ökonomieweg: asphaltiert, durch Park Sanssouci, der nachts geschlossen wird	? -14634,-1343 -14856,-1223 -14859,-1142
-Sanssouci, Am Grünen Gitter: asphaltiert, nachts geschlossen	? -13857,-1040 -14153,-1135 -14182,-995
-Sanssouci, Ökonomieweg: nachts geschlossen, wie geht es am Neuen Palais weiter?	? -14182,-995 -14410,-1039 -14612,-1117 -14859,-1142 -15553,-1139 -15651,-1137 -15771,-1070
 ######################################################################
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
@@ -302,7 +300,6 @@ Helmut-Just-Str. (Hohen Neuendorf): Asphalt Q1	? 4054,29959 4132,29954 4487,2999
 #
 #  ÖFFENTLICHE FRAGEZEICHEN
 #
-Marienfelder Allee: existieren hier durchgängig bis zur Stadtgrenze Radwege?	?::inwork 7580,254 7491,61 7423,-86 7189,-469 7168,-509
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0608/nachricht2401.html
 KW - Wildau: existiert hier ein Radweg (wahrscheinlich ab 2006-09-30)?	? 26381,-9962 26450,-10134 26437,-10393
 Neuenhagen, Richtung Schöneiche: existiert hier ein Radweg (wahrscheinlich ab 2006-12-31)?	? 31146,12747 31059,12471 31037,12174
@@ -503,7 +500,7 @@ Am Park - Gutsstr. - Privatstr.: Durchfahrt möglich? Qualität?	? -9364,7189 -912
 Mauerweg am Groß-Glienicker See: laut "Berliner Umland" witterungsabhängige Strecke	? -9128,7275 -9178,7165 -9175,7037 -9437,6887 -9490,6650 -9668,6171 -9665,5840 -9725,5559 -9797,5374
 Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsabhängige Strecke	? -9430,4935 -9543,4625
 #: note: siehe auch http://archiv.tagesspiegel.de/archiv/13.08.2005/1987440.asp
-Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsabhängige Strecke; am Luisenberg wird vielleicht demnächst asphaltiert	? -9543,4625 -8868,3875 -8820,3707
+Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsabhängige Strecke; am Luisenberg wird vielleicht demnächst asphaltiert	? -9543,4625 -8868,3875 -8799,3778
 Mauerweg am Griebnitzsee: Qualität - vermutlich Asphalt?	? -9656,-285 -9562,-325 -9412,-518 -9365,-610
 Mauerweg am Griebnitzsee: Qualität - vermutlich wassergebundene Decke?	? -8128,-1490 -8062,-1459 -7837,-1346 -7592,-1402
 Mauerweg in Schildow: Qualität? Wegführung? einzelne Straßen benennen?	? 7687,24407 7590,24481 7412,24481 7425,24715 6821,24700 6306,24537 6034,24503 5534,24521 5309,24571 5256,24593 4950,24293 4825,24328
@@ -1333,7 +1330,6 @@ Luchweg: Qualität?	? -7841,15503 -7747,15842 -7743,15963
 Gerlinger Str. - Mauerweg: Qualität (wahrscheinlich guter fester Sandweg)?	? 12007,877 12017,777 11924,594
 #: by: http://berlinforen.de/viewtopic.php?t=511
 Kirchstr.: Asphalt oder Kopfsteinpflaster?	? 22312,4593 22263,4671 22243,4710 22234,4789 22196,4847
-Luisenhain: werden Radfahrer nach den Bauarbeiten weiterhin durch den Park fahren dürfen?	? 22196,4847 22147,4831 22043,4562 22071,4501
 Bellevuepark: ist ein Weg für Radfahrer offiziell freigegeben?	? 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340
 Idsteiner Str.: Qualität (laut ADFC-Karte zwischen Königsweg und Hegauer Weg mäsig, danach bis Ludwigsfelder Str. gut geeignet)?	? -163,1564 -284,2009 -319,2212 -383,2519
 Hegauer Weg: Qualität (laut ADFC-Karte ist der westliche Abschnitt gut, der östliche Abschnitt mäßig geeignet)?	? -371,2187 -319,2212 -165,2303 -6,2434
@@ -1381,9 +1377,6 @@ Margaretenstr. (Lichtenberg): Qualität (wahrscheinlich Asphalt)?	? 17070,11375 1
 #: by: http://www.berlin.de/ba-mitte/index_9634_hr.html: fertig?
 #: last_checked: 2006-05-21
 Pankeweg: Bauarbeiten an der Soldiener Str. mittlerweile abgeschlossen?	? 8904,17059 8836,16867
-#: by: http://www.berlin.de/ba-mitte/index_9634_hr.html: fertig?
-#: last_checked: 2006-05-21
-Pankeweg: Brücke über Panke (Nähe S-Bahnunterführung) fertiggestellt?	? 8321,15386 8290,15406
 Wongrowitzer Steig: Qualität (laut ADFC-Karte gut geeignet)?	? 22785,6984 22659,7015 22474,7065 22240,7122 22132,7148 22035,7146
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20050810.1640.28623.html:
 Fürstenwalder Damm: existieren zwischen Stillerzeile und Müggelseedamm Radwege?	? 25039,5766 23950,5342
@@ -1437,7 +1430,7 @@ Semnonenweg: voraussichtlich 2006-12-01 mit einer neuen Asphaltdecke versehen	? 
 Mozartstr. (Köpenick): Qualität zwischen Hämmerlingstr. und Wuhle?	? 21774,6880 21864,6928
 Grunerstr. Richtung Alexanderstr.: Radstreifen?	?; 11057,12715 11134,12793
 Fußgängerampel?	? 8110,13042
-Wassermannstr.: Qualität zwischen Radickestr. und Glienicker Weg?	? 21055,3415 20938,3560 20796,3721
+Wassermannstr.: Qualität zwischen Radickestr. und Glienicker Weg?	? 21055,3415 20938,3560 20776,3753
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20061025.0935.49339.html, aber ganz klar ist es nicht, ob nur die Straßenanbindung oder die gesamte Straße gemeint ist, und welcher Radweg?
 Hackenbergstr.: Qualität? Gibt es hier einen Radweg?	? 20429,3792 20248,4040
 #: note: laut Message-ID: <e3o6lb$grb$1@hahn.informatik.hu-berlin.de> noch immer nicht fertig
@@ -1455,3 +1448,21 @@ Widosteig - Bohnsdorfer Weg: Qualität (Trampelpfad?)	? 19934,1102 19957,1165 199
 #: XXX laut anonymen Kommentar "gut" ohne weitere Angaben
 Turmfalkenstr.: Qualität?	? -1764,19343 -1681,19593 -1663,19632 -1619,19754 -1572,19899 -1521,20041 -1473,20181
 Teltowkanalstr.: Qualität?	? 5405,4014 5517,4064 5624,4112
+Werbelow - Brietzig: Qualität? existiert eine Ausschilderung für die Berlin-Usedom-Alternative?	? 40003,117291 40027,117413 40393,117742 40624,117961 41087,118619 41514,119034 41758,119326 41855,119411 42221,119716
+Brietzig - Wilsikow: Qualität?	? 41855,119411 40856,120094 40697,120118 40015,120435 39844,120447 39686,120350 39539,120362 39454,120313
+Wilsickow - B104: Qualität (möglicherweise Asphalt)?	? 39454,120313 39332,120557 39369,120813
+B104 - Groß Luckow: Qualität?	? 39369,120813 39271,120831 39168,120971 39064,121051 38857,121398 38296,123080 38004,124031 37967,124414 37455,125329 37266,125834 37047,125944 36992,126023 36980,126194
+Groß Luckow - Klein Luckow: Qualität?	? 36980,126194 37169,126151 37602,126669 37681,126889 37681,127279 37644,127419 37577,127705 37535,127809 37504,128254
+Klein Luckow - Friedrichshagen: Qualität?	? 37504,128254 37522,128570 37687,128784 37784,129247 37803,130137 37766,130307 37547,130740 38156,131203 38455,132550 38400,132873 38333,133001 38308,133793 38595,135085 38796,135645 39210,136560 39582,137711
+Friedrichshagen - Ferdinandshof: Qualität?	? 39582,137711 39801,138357 40179,139472 40319,139899
+Ferdinandshof - Demnitz: Qualität?	? 40624,140484 40539,140514 40551,140642 39777,140892 39564,140874 39198,141039 37303,142007 34189,142020 34165,142081 34098,142111 34274,142787 34469,143098 34914,143574 35012,143647 35012,144092 35048,144256
+Demnitz - Altwigshagen: Qualität?	? 35048,144256 35170,144280 35505,144226 35871,144207 35920,144152 36828,144640 36901,144823 37114,144939
+Altwigshagen - B109: Qualität (möglicherweise Asphalt)?	? 37114,144939 37475,145205 37801,145443
+Neukladower Allee: Qualität?	? -6480,5713 -6319,5606
+(Neukladower Allee - Imchenallee): Qualität? Für Autos gesperrt?	? -6319,5606 -6349,5522 -6355,5449 -6474,5216 -6474,5144
+Sparnecker Weg: Qualität? Teile der Straße noch gesperrt?	? -8125,6184 -7984,6256 -7784,6377 -7655,6490 -7563,6567
+Am ehem. Flugplatz Gatow: Qualität? Für Autos gesperrt?	? -7984,6256 -7888,6218 -7824,6208 -7652,6130 -7559,6218 -7374,6416 -7345,6430 -7288,6499 -7285,6535 -7306,6572 -7219,6650
+Am Golfplatz: Qualität? Für Autos gesperrt?	? -7559,6218 -6977,5851
+Am Golfplatz: Qualität? Für Autos gesperrt?	? -6846,6049 -6444,5798 -6420,5771
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20061201.0900.51333.html
+Eichelmatenweg: Qualität (zumindest zwischen Porthanweg und Am Ritterholz wahrscheinlich gut)?	? -7184,5118 -7166,5138 -7182,5440 -7182,5498 -7161,5560 -7045,5745 -6977,5851 -6846,6049

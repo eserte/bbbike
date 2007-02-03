@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2mapservhtml.pl,v 1.18 2007/02/03 11:29:43 eserte Exp $
+# $Id: bbd2mapservhtml.pl,v 1.18 2007/02/03 11:29:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -148,7 +148,11 @@ if ($do_linklist) {
 	push @current_lines, $r->[Strassen::COORDS];
 
 	if (!defined $current_display_name) {
-	    $current_display_name = $s->get_directive->{alias}->[0] || $r->[Strassen::NAME];
+	    if ($preferalias) {
+		$current_display_name = $s->get_directive->{alias}->[0] || $r->[Strassen::NAME];
+	    } else {
+		$current_display_name = $r->[Strassen::NAME] || $s->get_directive->{alias}->[0];
+	    }
 	}
 
 	if ($do_headlines) {

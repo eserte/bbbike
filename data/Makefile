@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.122 2007/02/03 10:57:47 eserte Exp $
+# $Id: Makefile,v 2.123 2007/02/03 21:57:50 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1096,7 +1096,7 @@ check-categories:	.check_categories
 .for target in ${TARGETS}
 	@echo " ${target}"
 	@$(PERL_UTF8) -I../lib -I.. -MStrassen::Cat -e '\
-	    if ($$ARGV[0] =~ m{^(ampelschaltung|hoehe|gesperrt_[urs]|multi_bez_str|[urs]bahnhof_bg|.*/bbbike-temp-blockings-optimized.pl|kneipen)$$}) {\
+	    if ($$ARGV[0] =~ m{^(ampelschaltung|multi_bez_str|.*/bbbike-temp-blockings-optimized.pl|kneipen)$$}) {\
 		print "  Skip $$ARGV[0]...\n";\
 		exit 0;\
 	    }\
