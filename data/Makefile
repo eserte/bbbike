@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.121 2007/01/23 21:56:14 eserte Exp eserte $
+# $Id: Makefile,v 2.122 2007/02/03 10:57:47 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1091,7 +1091,7 @@ check-crossings-less-important:	${PERSISTENTTMPDIR}/crossings_gewaesser.bbd \
 
 check-categories:	.check_categories
 
-.check_categories:	${TARGET}
+.check_categories:	${TARGETS}
 	@echo "Check categories..."
 .for target in ${TARGETS}
 	@echo " ${target}"

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.52 2006/10/09 18:42:57 eserte Exp $
+# $Id: Makefile,v 1.53 2007/02/03 12:36:21 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -540,6 +540,7 @@ radroute_body.html:	$(BBBIKE_DATA_DIR)/comments_route-orig \
 		-email $(EMAIL) \
 		-linklist -preferalias -partialhtml \
 		-headlines \
+		-mapscale 1:40000 \
 		-center city=Berlin_DE -centernearest > $@
 
 ######################################################################

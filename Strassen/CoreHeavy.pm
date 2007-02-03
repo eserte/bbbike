@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.32 2006/09/30 13:30:35 eserte Exp eserte $
+# $Id: CoreHeavy.pm,v 1.33 2007/02/03 11:06:32 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -718,6 +718,7 @@ sub default_cat_stack_mapping {
 	    'F:Orchard'    => 13,
 	    'F:Sport'      => 13,
 	    'F:Green'      => 13,
+	    'F:Mine'	   => 13,
 
 	    'BAB'	   => 21,
 	    'B'            => 20,

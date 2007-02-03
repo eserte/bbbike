@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.24 2006/03/27 20:59:50 eserte Exp $
+# $Id: vmzrobot.pl,v 1.25 2007/02/03 11:07:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -196,9 +196,10 @@ sub get_listing {
 	'_tag', 'a',
 	sub {
 	    my $elem = shift;
-	    my $href = $elem->attr('href');
+	    my $href;
+	    $href = $elem->attr('href');
 	    return unless defined $href;
-	    my $href = uri_unescape($href);
+	    $href = uri_unescape($href);
 	    return unless $href =~ /javascript:trafficmap\((.*)\)/;
 	    my $remainder = $1;
 	    my @arg;
@@ -390,6 +391,8 @@ sub get_bbd_category {
 }
 
 __END__
+
+# Exit code with -diffcount: count of differences
 
 cd .../bbbike/miscsrc
 cp -f /tmp/vmz.yaml /tmp/oldvmz.yaml

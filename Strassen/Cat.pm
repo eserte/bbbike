@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Cat.pm,v 1.3 2006/04/17 21:29:37 eserte Exp $
+# $Id: Cat.pm,v 1.4 2007/02/03 11:01:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 use File::Basename qw(basename);
 
@@ -37,7 +37,7 @@ use vars qw(%filetype_to_cat %file_to_cat);
      "orte"	      => [qw(0 1 2 3 4 5 6)],
      "qualitaet"      => [qw(Q0 Q1 Q2 Q3)],
      "radwege"	      => [qw(RW0 RW1 RW2 RW3 RW4 RW5 RW6 RW7 RW8 RW9 RW10 RW)],
-     "rbahn"	      => [qw(R R0 RA RB RC RBau RG)],
+     "rbahn"	      => [qw(R R0 RA RB RC RBau RG RP)],
      "sbahn"	      => [qw(S0 SA SB SC SBau)],
      "sehenswuerdigkeit" => [qw(F:SW SW),
 			     sub {
@@ -52,7 +52,7 @@ use vars qw(%filetype_to_cat %file_to_cat);
     );
 
 %file_to_cat =
-    ("ampeln"			=> [qw(? B F X Zbr)],
+    ("ampeln"			=> [qw(? B B0 F X Zbr)],
      "berlin"			=> $filetype_to_cat{"borders"},
      "brunnels"			=> [qw(Br Tu TuBr)],
      "comments_cyclepath"	=> $filetype_to_cat{"radwege"},
@@ -68,7 +68,7 @@ use vars qw(%filetype_to_cat %file_to_cat);
      "exits"			=> [qw(X)],
      "faehren"			=> [qw(Q)],
      "flaechen"			=> [qw(F:Ae F:Cemetery F:Forest F:Green
-				       F:Industrial F:Orchard
+				       F:Industrial F:Orchard F:Mine
 				       F:P F:Pabove F:Sport)],
      "fragezeichen"		=> [qw(? ?? F:? F:??)],
      "gesperrt"			=> $filetype_to_cat{"gesperrt"},

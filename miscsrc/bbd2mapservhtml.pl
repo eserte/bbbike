@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2mapservhtml.pl,v 1.17 2006/06/06 15:27:00 eserte Exp $
+# $Id: bbd2mapservhtml.pl,v 1.18 2007/02/03 11:29:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -55,8 +55,13 @@ if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		'initmapext=s' => sub {
 		    ($width, $height) = split /x/, $_[1];
 		},
-		'mapscale=i' => sub {
-		    $width = $height = $_[1]/5;
+		'mapscale=s' => sub {
+		    my $scale = $_[1];
+		    $scale =~ s{^1:}{};
+		    if ($scale !~ /^\d+$/) {
+			die "-mapscale must be a number or 1:number";
+		    }
+		    $width = $height = $scale/5;
 		},
 		'center=s' => \$center_spec,
 		'centernearest!' => \$do_center_nearest,
@@ -325,9 +330,11 @@ Set the initial extents (in real life meters) of the map.
 
 =item -mapscale I<scale>
 
-Set the initial extents via a scale number (e.g. 1:20000, only the
-last part). Note that B<-mapscale> and B<-initmapext> cannot be
-specified together.
+=item -mapscale 1:I<scale>
+
+Set the initial extents via a scale number (e.g. 1:20000 or just
+20000). Note that B<-mapscale> and B<-initmapext> cannot be specified
+together.
 
 =item -center I<...>
 

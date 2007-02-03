@@ -873,6 +873,7 @@ Wanderweg Erkner - Hessenwinkel: guter Parkweg	Q1 33533,2761 33293,2768 33086,27
 Südendstr.: Kopfsteinpflaster	Q2 5687,5486 5840,5456 6002,5424
 Am Teltowkanal: Parkweg, teilweise mit schmalem Verbundsteinradweg	Q1 7990,4420 8242,4648 8590,4976 8772,5081 8881,5143 9171,5264 9185,5271
 Teltowkanal: Parkweg, OK	Q1 4224,2659 4193,2616 4053,2300 3971,2106 3690,1436
+Paul-Schwarz-Promenade: sehr eben, Rollsplit als Belag	Q0 4582,3076 4224,2659
 (Weg am Friedhof): Parkweg	Q1 11606,7260 12180,7387
 Spreetalallee: uneben, leichter Schotter	Q2 657,12697 753,12972 715,13126
 Spreetalallee: abschüssig, schlechtes Kopfsteinpflaster	Q3 715,13126 693,13215
@@ -2910,8 +2911,11 @@ Formerweg: Beton	Q0 15889,1612 16138,1436
 Am Seeschloß: Asphalt	Q0 4757,23184 4750,23211 4713,23254
 Scheiblerstr.: mäßiges Kopfsteinpflaster	Q2 16375,7070 16498,6944 16630,6800
 Skarbinastr.: guter Asphalt	Q1 12046,-1678 11997,-1407 11948,-1368 11739,-1384
-Freiheitsweg: Verbundsteinpflaster	Q1 6558,18947 6715,18918 6753,18909 6829,18887 6910,18861 7157,18810
-Freiheitsweg: Verbundsteinpflaster	Q1 7157,18810 7248,18793
+Freiheitsweg: gutes Verbundsteinpflaster	Q1 6558,18947 6715,18918 6753,18909 6829,18887 6910,18861 7157,18810
+Freiheitsweg: gutes Verbundsteinpflaster	Q1 7157,18810 7248,18793
+(Roedernallee - Freiheitsweg): teils Asphalt, teils unbefestigt	Q2 6448,18957 6558,18947
+(Veltener Str., Kienhorstpark): Asphalt mit unbefestigten Abschnitten	Q1 5391,18932 5842,18941 6063,18977 6125,18971 6360,18861
+(Veltener Str. - Roedernallee/Freiheitsweg): Asphalt mit unbefestigten Abschnitten	Q1 6125,18971 6448,18957
 Isegrimsteig: mäßiges Verbundsteinpflaster	Q2 -929,21851 -703,21788
 Isegrimsteig: mäßiges Verbundsteinpflaster	Q2 -711,21761 -583,21724 -489,21709
 Charlottenstr. (Niederschönhausen): schlectes Kopfsteinpflaster	Q3 10600,20839 10609,20796 10635,20693 10662,20559 10703,20464 10786,20272 10802,20240 10888,20051
@@ -4122,7 +4126,7 @@ Löwenbrucher Weg: Asphalt	Q0 10475,-2944 10392,-2980 10272,-3027 10149,-3054 100
 (Blohmstr. - Diedersdorfer Str.): unbefestigter Waldweg	Q1 9093,-1670 8968,-1576 8845,-1521 8776,-1487 8492,-1376
 (Blohmstr. - Diedersdorfer Str.): Asphalt mit Löchern	Q1 8492,-1376 8073,-1137
 (Dinnendahlstr. - Schichauweg): unbefestigter Waldweg	Q1 9123,-1321 8953,-1184 8882,-1142 8873,-1118
-(Mauerweg - Hohenzollernstr.): fester Waldweg	NN 9506,-2421 9559,-2417
+(Mauerweg - Hohenzollernstr.): fester Waldweg	Q1 9506,-2421 9559,-2417
 (Straße 478 - Königsgraben): fester Parkweg	Q1 8585,-231 8054,-198
 Straße 478: Asphalt	Q0 8054,-198 7781,-182
 (Parkweg am Königsgraben): fester Parkweg mit Kopfsteinpflasterpassagen	Q1 8873,-1118 8869,-1090 8737,-1115 8688,-781 8582,-640 8585,-231 8626,107 8584,327

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.34 2007/01/30 20:26:50 eserte Exp $
+# $Id: bbbike.cgi,v 8.35 2007/02/03 11:30:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -697,7 +697,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.34 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.35 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -2708,7 +2708,7 @@ EOF
     print <<EOF;
 <tr><td>@{[ M("Ampeln vermeiden") ]}:</td><td><input type=checkbox name="pref_ampel" value="yes" @{[ $default_ampel?"checked":"" ]}></td>
 EOF
-    if ($is_beta) {
+    if (1) {
 	print <<EOF;
 <tr><td>@{[ M("Unbeleuchtete Wege vermeiden") ]}:</td><td><input type=checkbox name="pref_unlit" value="NL" @{[ $default_unlit?"checked":"" ]}></td>
 EOF
@@ -6260,7 +6260,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/01/30 20:26:50 $';
+    my $cgi_date = '$Date: 2007/02/03 11:30:19 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
