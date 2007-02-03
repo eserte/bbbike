@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.34 2007/01/23 22:52:42 eserte Exp $
+# $Id: Makefile,v 1.35 2007/02/03 13:20:59 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -142,6 +142,10 @@ png-to-gif:	\
 		bab_table_16.gif \
 		bbbike_google.gif \
 		berliner_stadtplan.gif \
+		rampe.gif \
+		aufzug_klein2.gif \
+		aufzug_klein.gif \
+		aufzug.gif \
 
 png-to-xpm:	\
 		ampel.xpm \
@@ -187,6 +191,10 @@ png-to-xpm:	\
 		mosque.xpm \
 		bbbike_google.xpm \
 		berliner_stadtplan.xpm \
+		rampe.xpm \
+		aufzug_klein2.xpm \
+		aufzug_klein.xpm \
+		aufzug.xpm \
 
 png-to-wbmp:	\
 		flag2_bl.wbmp \

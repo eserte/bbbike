@@ -1,6 +1,6 @@
 #: title.de: U-Bahnhöfe
 #: title.en: Underground stations
-#: version: $Id: ubahnhof-orig,v 4.10 2006/10/21 20:32:04 eserte Exp $
+#: version: $Id: ubahnhof-orig,v 4.11 2007/02/03 13:21:07 eserte Exp $
 #:
 # U1
 #: attrs bg
@@ -148,8 +148,8 @@ Tempelhof	UA 9231,7085
 Paradestr.	UA 9264,8033
 Platz der Luftbrücke	UA 9217,8888
 Mehringdamm	UA 9396,9871
-#: note: offizieller Name: Kochstraße/Checkpoint Charlie
 #: attrs bg
+#: alias: Kochstraße (Checkpoint Charlie)
 Kochstr.	UA 9491,11089
 #: attrs bg
 Stadtmitte (U6)	UA 9423,11697

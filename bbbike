@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.286 2007/02/03 11:02:20 eserte Exp $
+# $Id: bbbike,v 3.287 2007/02/03 13:20:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -205,7 +205,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.286 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.287 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -5181,8 +5181,8 @@ sub define_item_attribs {
 
     # XXX use klein and klein2 versions, how? array/hash for different scalings?
     %category_image =
-	('bg'  => "behindertengerecht.gif",
-	 'bf'  => "behindertenfreundlich.gif",
+	('bg'  => "aufzug.gif", # bg=behindertengerecht
+	 'bf'  => "rampe.gif", # bf=behindertenfreundlich
 	);
 
     %category_stipple =
