@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Brandenburg und weiteres Umland)
-#: version: $Id: handicap_l-orig,v 4.31 2006/10/03 14:52:35 eserte Exp eserte $
+#: version: $Id: handicap_l-orig,v 4.32 2007/02/04 20:26:23 eserte Exp $
 #:
 Brandenburger Str.: Fußgängerzone	q4 -12894,-977 -13005,-1002 -13184,-1043 -13289,-1071 -13410,-1101 -13556,-1140
 Neuer Garten: Schiebestrecke	q3 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12115,1331 -12185,1388
@@ -24,8 +24,7 @@ Canalettostr - Stübelallee: Zufahrt über Gehweg	q2 37850,-150756 37780,-150830
 #: XXX ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 # temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Mützlitz - Garlitz: Bauarbeiten	q3::inwork -50268,15901 -49478,16227
-#: last_checked: 2005-11-28
-Potsdam, Friedrich-Engels-Str.: Bauarbeiten an der Nuthe-Brücke und weiter	q3::inwork -11507,-2130 -10995,-2108
+# XXX del? Sah so aus, von der S-Bahn... last_checked: 2005-11-28 Potsdam, Friedrich-Engels-Str.: Bauarbeiten an der Nuthe-Brücke und weiter	q3::inwork -11507,-2130 -10995,-2108
 #XXX del? B 169; OU Senftenberg; Bau Ortsumfahrung; Vollsperrung; 06.11.2003-30.05.2006	q4::inwork 55158,-95910 54884,-96292 54357,-96691
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: note: http://www.maerkischeallgemeine.de/cms/beitrag/10590495/60709/
@@ -47,5 +46,5 @@ Stormstr.: Spielstraße	q3 -15239,-2728 -15300,-2670
 (Am Grünen Gitter, Sanssouci): Fußgänger haben Vorrang	q1 -13857,-1040 -14153,-1135 -14182,-995
 (Ökonomieweg, Sanssouci): Fußgänger haben Vorrang	q1 -14182,-995 -14410,-1039 -14612,-1117 -14859,-1142 -15553,-1139 -15651,-1137 -15820,-1146
 (Lennestr. - Ökonomieweg, Sanssouci): Fußgänger haben Vorrang	q1 -14634,-1343 -14856,-1223 -14859,-1142
-(Affengang, Sanssouci): Schiebestrecke	q3 -14150,-1290 -14131,-1181 -14153,-1135
+(Affengang, Sanssouci): Schiebestrecke	q3 -14129,-1258 -14131,-1181 -14153,-1135
 (Ökonomieweg, Neuer Garten): Fußgänger haben Vorrang	q1 -12557,11 -12479,97 -12467,215 -12373,288 -12182,816 -12191,1196

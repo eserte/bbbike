@@ -48,21 +48,49 @@
 
 (defun bbbike-join-street ()
   (interactive)
-  (error "NYI")
-  ;; are we on the last coord of the line?
-  ;;   is there a next line, and non-comment? no -> error message
-  ;;   is the first coord of the next line the same? no -> error message
-  ;;   is the category of the next line the same? no -> ask user which to use
-  ;;   is the name of the next line the same? no -> ask user which to use
-  ;;   delete name, cat and first coord of next line, join lines, maybe replace name and/or cat
-  ;;   ready!
-  ;; are we on the first coord of the line? no -> error message
-  ;;   is there a prev line, and non-comment? no -> error message
-  ;;   is the last coord of the prev line the same? no -> error message
-  ;;   is the category/name of the prev line the same? see above
-  ;;   delete name, cat and first coord of this line, join lines, maybe replace name and/or cat
-  ;;   ready!
-)
+  (let (match-coord other-coord
+	match-cat other-cat
+	match-name other-name)
+    (save-excursion
+      (if (or (save-excursion (search-forward-regexp "\\=[^ ]+$" nil t)) ;; are we on the last coord of the line?
+	      (save-excursion (search-forward-regexp "\\=$" nil t)))
+	  (progn
+(message (format "%s" (point)))
+	    (beginning-of-line)
+	    (if (not (search-forward-regexp "^\\([^\t]*\\)\t\\([^ ]+\\).* \\([^ ]+\\)$"))
+	      (error "Cannot parse this line as valid bbd data line"))
+	    (setq match-name (buffer-substring (match-beginning 1) (match-end 1)))
+	    (setq match-cat (buffer-substring (match-beginning 2) (match-end 2)))
+	    (setq match-coord (buffer-substring (match-beginning 3) (match-end 3)))
+	    (end-of-line)
+	    (goto-char (1+ (point)))
+	    (if (= (point) (point-max))
+		(error "We are one the last line"))
+	    (if (string= (buffer-substring (point) (1+ (point))) "#")
+		(error "Next line is a comment line, no join possible"))
+	    (if (not (search-forward-regexp "^\\([^\t]*\\)\t\\([^ ]+\\) \\([^ ]+\\) "))
+		(error "Next line does not look like a valid bbd data line or only has one coordinate at all"))
+	    (setq other-name (buffer-substring (match-beginning 1) (match-end 1)))
+	    (if (not (string= match-name other-name)) ;; XXX ask the user which one to choose!
+		(error "Name on this line and name on next line do not match"))
+	    (setq other-cat (buffer-substring (match-beginning 2) (match-end 2)))
+	    (if (not (string= match-cat other-cat)) ;; XXX ask the user which one to choose!
+		(error "Category on this line and category on next line do not match"))
+	    (setq other-coord (buffer-substring (match-beginning 3) (match-end 3)))
+	    (if (not (string= match-cat other-cat))
+		(error "Last coordinate on this line and first coordinate on next line do not match"))
+	    (delete-region (match-beginning 0) (match-end 0))  ;; XXX maybe replace name and/or cat if user chose the 2nd name/cat
+	    (insert " ")
+	    (delete-region (1- (1- (point))) (1- (point))))
+	(error "no support for joining by first coordinate, must be on last coordinate")
+	;; are we on the first coord of the line? no -> error message
+	;;   is there a prev line, and non-comment? no -> error message
+	;;   is the last coord of the prev line the same? no -> error message
+	;;   is the category/name of the prev line the same? see above
+	;;   delete name, cat and first coord of this line, join lines, maybe replace name and/or cat
+	;;   ready!
+	)
+      )))
 
 (defun bbbike-search-x-selection ()
   (interactive)

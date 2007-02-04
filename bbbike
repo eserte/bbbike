@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.287 2007/02/03 13:20:49 eserte Exp eserte $
+# $Id: bbbike,v 3.288 2007/02/04 20:25:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -205,7 +205,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.287 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.288 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -10675,8 +10675,12 @@ sub mark_point {
 	($tx, $ty) = ($args{'-coords'}->[0][0][0], $args{'-coords'}->[0][0][1]);
     }
     my $width = $args{'-width'} || 9;
+    my $do_also_overview_canvas = Tk::Exists($overview_canvas);
     if (!$args{'-dont_mark'} && !$args{'-dont_delete_old'}) {
 	$c->delete('show');
+	if ($do_also_overview_canvas) {
+	    $overview_canvas->delete('show');
+	}
     }
     my @show_mark_args;
     if ($args{-endlessmark}) {
@@ -10691,11 +10695,21 @@ sub mark_point {
 		push @tags, $args{'-addtag'};
 	    }
 	}
+	my @common_args = (-capstyle => $capstyle_round,
+			   -fill => $mark_color,
+			   -tags => \@tags,
+			  );
 	$c->createLine($tx, $ty, $tx, $ty,
-		       -capstyle => $capstyle_round,
 		       -width => $width,
-		       -fill => $mark_color,
-		       -tags => \@tags);
+		       @common_args,
+		      );
+	if ($do_also_overview_canvas) {
+	    my($otx,$oty) = _convert_transposed_to_overview_coord($tx, $ty);
+	    $overview_canvas->createLine($otx,$oty,$otx,$oty,
+					 -width => 2,
+					 @common_args,
+					);
+	}
 	show_mark(undef, @show_mark_args);
     }
     if (!$args{'-dont_center'}) {
@@ -10716,7 +10730,7 @@ sub clever_center {
     # Is ($tx/$ty) already visible? Then do nothing
     my($rx, $ry) = ($c->rootx+$c->widgetx($tx), $c->rooty+$c->widgety($ty));
     my $curr_w = $top->containing($rx, $ry);
-    return 1 if $curr_w eq $c;
+    { local $^W = 0; return 1 if $curr_w eq $c; }
     my @win = Tk::Placement::get_toplevel_regions($top);
     if (!@win) { # no clever placement needed --- fallback to normal center
 	return 0;
@@ -10748,7 +10762,13 @@ sub clever_center {
 ### AutoLoad Sub
 sub mark_street {
     my(%args) = @_;
-    $c->delete('show') unless $args{'-dont_delete_old'};
+    my $do_also_overview_canvas = Tk::Exists($overview_canvas);
+    unless ($args{'-dont_delete_old'}) {
+	$c->delete('show');
+	if ($do_also_overview_canvas) {
+	    $overview_canvas->delete('show');
+	}
+    }
     my @res_coords;
     # adapt width of mark
     my $line_width = $args{'-linewidth'} || get_line_width("s-H")+6; # outline takes 2 pixels...
@@ -10773,14 +10793,27 @@ sub mark_street {
 	push @all_coords, @res_coords;
 	unless ($args{'-dont_mark'}) {
 	    my $label = shift @labels;
+	    my @common_args = (-fill => $mark_color,
+			       -tags => ['show', (defined $label ? $label : ())],
+			      );
 	    if ($args{'-polygon'}) {
 		if (@res_coords == 2) {
 		    push @res_coords, (@res_coords) x 2;
 		}
 		$c->createPolygon(@res_coords,
 				  -width => 5,
-				  -fill => $mark_color,
-				  -tags => ['show', $label]);
+				  @common_args,
+				 );
+		if ($do_also_overview_canvas) {
+		    my @overview_coords;
+		    for(my $i=0; $i<$#res_coords; $i+=2) {
+			push @overview_coords, _convert_transposed_to_overview_coord(@res_coords[$i,$i+1]);
+		    }
+		    $c->createPolygon(@overview_coords,
+				      -width => 1,
+				      @common_args,
+				     );
+		}
 	    } else {
 		my @add_args;
 		if (@res_coords == 2) {
@@ -10792,8 +10825,20 @@ sub mark_street {
 		}
 		$c->createLine(@res_coords,
 			       @add_args,
-			       -fill => $mark_color,
-			       -tags => ['show', $label]);
+			       @common_args,
+			      );
+		if ($do_also_overview_canvas) {
+		    my @overview_coords;
+		    for(my $i=0; $i<$#res_coords; $i+=2) {
+			push @overview_coords, _convert_transposed_to_overview_coord(@res_coords[$i,$i+1]);
+		    }
+		    my %add_args = @add_args;
+		    $add_args{-width} = 1; # overwrite
+		    $overview_canvas->createLine(@overview_coords,
+						 %add_args,
+						 @common_args,
+						);
+		}
 	    }
  	}
     }
@@ -10824,6 +10869,9 @@ sub mark_street {
 
 sub delete_markers {
     $c->delete('show');
+    if (Tk::Exists($overview_canvas)) {
+	$overview_canvas->delete('show');
+    }
     if ($showmark_after) {
 	$showmark_after->cancel;
 	undef $showmark_after;
@@ -14397,6 +14445,8 @@ sub show_zoomrect {
     }
 }
 
+# Mark blinking is only implemented in the main canvas,
+# not the overview canvas
 ### AutoLoad Sub
 sub show_mark {
     my($i, %args) = @_;
@@ -14531,6 +14581,12 @@ sub overview_del_route {
     if (Tk::Exists($overview_canvas)) {
 	$overview_canvas->delete("route");
     }
+}
+
+sub _convert_transposed_to_overview_coord {
+    my($tx,$ty) = @_;
+    my $transpose = $show_overview_mode eq 'brb' ? \&transpose_small : \&transpose_medium;
+    $transpose->(anti_transpose($tx, $ty));
 }
 
 sub show_overview_populate {
