@@ -7021,8 +7021,8 @@ userdel	2::inwork -11565,36127 -10833,36580
 EOF
      },
      { from  => 1170716400, # 2007-02-06 00:00
-       until => 1171062000, # 2007-02-10 00:00
-       text  => 'K 6506 L172- Bärenklau-Vehlefanz Bahnübergang in der OD Vehlefanz Gleisbauarbeiten Vollsperrung 07.02.2007-09.02.2007 ',
+       until => 1171148400, # 2007-02-11 00:00
+       text  => 'K 6506 L172- Bärenklau-Vehlefanz Bahnübergang in der OD Vehlefanz Gleisbauarbeiten Vollsperrung 07.02.2007-10.02.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -10057,34800 -9159,34997

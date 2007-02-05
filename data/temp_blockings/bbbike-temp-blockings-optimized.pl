@@ -685,14 +685,7 @@ userdel	1::inwork 10781,13002 10706,13043
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1170630000,
-         'text' => 'L 023 Britz-Joachimsthal Brücke über A 11, AS Chorin Brückenabbruch Vollsperrung 03.02.2007-04.02.2007 ',
-         'from' => 1170370800,
-         'data' => 'userdel	2::inwork 35962,59463 35405,59832
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -721,8 +714,8 @@ userdel	1::inwork 10781,13002 10706,13043
          'type' => 'gesperrt'
        },
        {
-         'until' => 1171062000,
-         'text' => 'K 6506 L172- Bärenklau-Vehlefanz Bahnübergang in der OD Vehlefanz Gleisbauarbeiten Vollsperrung 07.02.2007-09.02.2007 ',
+         'until' => 1171148400,
+         'text' => 'K 6506 L172- Bärenklau-Vehlefanz Bahnübergang in der OD Vehlefanz Gleisbauarbeiten Vollsperrung 07.02.2007-10.02.2007 ',
          'from' => 1170716400,
          'data' => 'userdel	2::inwork -10057,34800 -9159,34997
 ',
