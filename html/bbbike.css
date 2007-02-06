@@ -172,3 +172,8 @@ a.ms:visited { color:#333333; }
   border: 1px #d0d040 solid;
   padding: 2px;
 }
+
+.error {
+  color:red;
+  font-weight:bold;
+}

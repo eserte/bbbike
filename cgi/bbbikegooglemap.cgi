@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.35 2007/01/23 22:56:14 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.37 2007/02/06 20:25:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -66,33 +66,37 @@ sub run {
 	require Strassen::Core;
 	require File::Temp;
 	my $fh = upload("gpxfile");
-	my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1,
-						   SUFFIX => $ext);
-	while(<$fh>) {
-	    print $tmpfh $_;
-	}
-	close $fh;
-	close $tmpfh;
-
-	my $gpx = Strassen->new($tmpfile);
-	$gpx->init;
-	while(1) {
-	    my $r = $gpx->next;
-	    if (!$r || !UNIVERSAL::isa($r->[Strassen::COORDS()], "ARRAY")) {
-		warn "Parse error in line " . $gpx->pos . ", skipping...";
-		next;
+	if (!$fh) {
+	    $self->{errormessageupload} = "Upload-Datei fehlt!";
+	} else {
+	    my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1,
+						       SUFFIX => $ext);
+	    while (<$fh>) {
+		print $tmpfh $_;
 	    }
-	    last if !@{ $r->[Strassen::COORDS()] };
-	    if (@{ $r->[Strassen::COORDS()] } == 1) { # treat as waypoint
-		# XXX hack --- should append recognise self_or_default?
-		$CGI::Q->append(-name   => 'wpt',
-				-values => $r->[Strassen::NAME()] . "!" . $r->[Strassen::COORDS()][0]
-			       );
-	    } else {
-		# XXX hack --- should append recognise self_or_default?
-		$CGI::Q->append(-name   => 'coords',
-				-values => [join "!", @{ $r->[Strassen::COORDS()] }],
-			       );
+	    close $fh;
+	    close $tmpfh;
+
+	    my $gpx = Strassen->new($tmpfile);
+	    $gpx->init;
+	    while (1) {
+		my $r = $gpx->next;
+		if (!$r || !UNIVERSAL::isa($r->[Strassen::COORDS()], "ARRAY")) {
+		    warn "Parse error in line " . $gpx->pos . ", skipping...";
+		    next;
+		}
+		last if !@{ $r->[Strassen::COORDS()] };
+		if (@{ $r->[Strassen::COORDS()] } == 1) { # treat as waypoint
+		    # XXX hack --- should append recognise self_or_default?
+		    $CGI::Q->append(-name   => 'wpt',
+				    -values => $r->[Strassen::NAME()] . "!" . $r->[Strassen::COORDS()][0]
+				   );
+		} else {
+		    # XXX hack --- should append recognise self_or_default?
+		    $CGI::Q->append(-name   => 'coords',
+				    -values => [join "!", @{ $r->[Strassen::COORDS()] }],
+				   );
+		}
 	    }
 	}
     }
@@ -131,6 +135,7 @@ sub run {
 
 sub standard_converter {
     my($x,$y) = @_;
+    local $^W; # avoid non-numeric warnings...
     $Karte::Polar::obj->standard2map($x,$y);
 }
 
@@ -457,6 +462,13 @@ EOF
 </form>
 
 <form name="upload" onsubmit='setZoomInUploadForm()' style="margin-top:0.3cm; border:1px solid black; padding:3px; " method="post" enctype="multipart/form-data">
+EOF
+    if ($self->{errormessageupload}) {
+	$html .= <<EOF;
+  <div class="error">@{[ escapeHTML($self->{errormessageupload}) ]}</div>
+EOF
+    }
+    $html .= <<EOF;
   <input type="hidden" name="zoom" value="@{[ $zoom ]}" />
   Upload einer GPX-Datei: <input type="file" name="gpxfile" />
   <br />
@@ -493,6 +505,7 @@ EOF
   </body>
 </html>
 EOF
+    $html;
 }
 
 # REPO BEGIN

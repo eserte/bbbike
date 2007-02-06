@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.35 2007/01/09 00:22:55 eserte Exp eserte $
+# $Id: cgi-mechanize.t,v 1.37 2007/02/06 21:53:42 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -50,7 +50,7 @@ if (!@browsers) {
 }
 @browsers = map { "$_ BBBikeTest/1.0" } @browsers;
 
-my $tests = 94;
+my $tests = 99;
 plan tests => $tests * @browsers;
 
 ######################################################################
@@ -340,6 +340,7 @@ for my $browser (@browsers) {
 	     qr{(\QHans-Sachs-Str. (Potsdam)/Meistersingerstr. (Potsdam)\E
 		|\QCarl-von-Ossietzky-Str. (Potsdam)/Lennéstr. (Potsdam)\E
 		|\Q(Ökonomieweg, Sanssouci) (Potsdam)/(Lennestr. - Ökonomieweg, Sanssouci)\E
+		|\Q(Lennestr. - Ökonomieweg, Sanssouci) (Potsdam)/Lennéstr. (Potsdam)\E
 	       )}ix,  "Correct goal resolution (Hans-Sachs-Str. ... or Lennestr. ... or Ökonomieweg ...)");
 	$like_long_data->(qr{\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marquardt)}i,  "Correct goal resolution (Marquardt ...)");
                            
@@ -444,7 +445,7 @@ for my $browser (@browsers) {
     ######################################################################
     # Brandenburger Tor: in Berlin and Potsdam
 
- XXX: {
+    {
 	$get_agent->();
 
 	$agent->get($cgiurl);
@@ -566,6 +567,10 @@ for my $browser (@browsers) {
 	}
     }
 
+
+    ######################################################################
+    # non-utf8 checks
+
     {
 	$get_agent->();
 
@@ -614,6 +619,31 @@ for my $browser (@browsers) {
 
 	    $like_long_data->(qr{Danke, die Angaben.*gesendet}, "Sent comment (fragezeichenform)");
 	}
+    }
+
+    ######################################################################
+    # streets in plaetze in Potsdam
+
+ XXX: {
+
+	$get_agent->();
+
+	$agent->get($cgiurl);
+	$agent->form_name("BBBikeForm");
+	{
+	    local $^W; $agent->current_form->value('start', 'Schloß Sanssouci');
+	}
+	;
+	{
+	    local $^W; $agent->current_form->value('ziel', 'Potsdam Hauptbahnhof');
+	}
+	;
+	$agent->submit();
+	my_tidy_check($agent);
+	$unlike_long_data->(qr/ist nicht bekannt/i, "Known street");
+	$unlike_long_data->(qr/genaue kreuzung w.*hlen/i, "Exact match, no crossings");
+	$like_long_data->(qr/Bevorzugte Geschwindigkeit/i, "Einstellungen page");
+	$like_long_data->(qr/scope.*region/i, "Scope is set to region");
     }
 
 } # for

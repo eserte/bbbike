@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.35 2007/02/03 11:30:19 eserte Exp $
+# $Id: bbbike.cgi,v 8.37 2007/02/06 21:54:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -697,7 +697,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.35 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.37 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1203,7 +1203,7 @@ sub _potsdam_hack {
     my $potsdam_str = eval { Strassen->new($potsdam_file) };
     if (!$potsdam_str) {
 	$potsdam_str = Strassen->new;
-	my $landstr = Strassen->new("landstrassen");
+	my $landstr = MultiStrassen->new("landstrassen", "plaetze");
 	$landstr->init;
 	while(1) {
 	    my $r = $landstr->next;
@@ -5858,6 +5858,39 @@ sub get_nearest_crossing_coords {
 	    my $str = get_streets();
 	    my $ret = $str->nearest_point("$x,$y", FullReturn => 1);
 	    $xy = $ret->{Coord};
+	    if (!$kr->crossing_exists($xy)) {
+		# This may happen, because nearest_point does also return Kurvenpointe,
+		# whereas $kr has only real Kreuzungen. Find a real Kreuzung...
+		my @street_coords = @{ $ret->{StreetObj}->[Strassen::COORDS()] || [] };
+		# find this point in @street_coords
+		my $start_index = 0;
+		for(; $start_index <= $#street_coords; $start_index++) {
+		    last if ($street_coords[$start_index] eq $xy);
+		}
+		if ($start_index > $#street_coords) {
+		    warn "Strange: cannot find coord <$xy> in <@street_coords>";
+		} else {
+		    my $delta = 1;
+		    while() {
+			my $before_xy = $street_coords[$start_index-$delta];
+			my $after_xy  = $street_coords[$start_index+$delta];
+			if (!$before_xy && !$after_xy) {
+			    warn "Cannot find any real crossing in <@street_coords>";
+			    last;
+			}
+			if ($before_xy && $kr->crossing_exists($before_xy)) {
+			    $xy = $before_xy;
+			    last;
+			}
+			if ($after_xy && $kr->crossing_exists($after_xy)) {
+			    $xy = $after_xy;
+			    last;
+			}
+			$delta++;
+		    }
+		}
+
+	    }
 	} else {
 	    $xy = (($kr->nearest_loop($x,$y))[0]);
 	}
@@ -6260,7 +6293,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/02/03 11:30:19 $';
+    my $cgi_date = '$Date: 2007/02/06 21:54:16 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
