@@ -705,14 +705,7 @@ userdel	1::inwork 10781,13002 10706,13043
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1170889200,
-         'text' => 'B 273 Germendorf-Schwante Bahnübergang in der OD Schwante Gleisbauarbeiten Vollsperrung 05.02.2007-07.02.2007 ',
-         'from' => 1170543600,
-         'data' => 'userdel	2::inwork -11565,36127 -10833,36580
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1171148400,
          'text' => 'K 6506 L172- Bärenklau-Vehlefanz Bahnübergang in der OD Vehlefanz Gleisbauarbeiten Vollsperrung 07.02.2007-10.02.2007 ',

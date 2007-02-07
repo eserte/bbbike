@@ -253,7 +253,7 @@ Alter Markt: laut Message-ID: <2scvijF1io77eU1@uni-berlin.de> soll hier asphalti
 Berlin-Usedom am Werbellinsee: laut Tsp vom 2004-10-04 wird hier 2005 ein Radweg gebaut, laut anderen Informationen bis 2006-12-15	?::inwork 31000,61437 30784,60950 30778,60221 30671,59984 30625,59562 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27359,56787 27137,56650 26792,56558 26404,56518 26145,56499 26037,56412 26028,56303
 Zichow-Lindenwegsiedlung: Qualität? Auf der westlichen Seite als "Lindenweg" ausgeschildert	? 54500,87934 51978,87962
 zwischen Rudolf-Leonhard-Str. und S Raoul-Wallenberg-Str.: Verbindung existiert laut ADFC-Karte und hat eine gute Qualität	? 21210,16481 20865,16440 20543,16488 20265,16496 20181,16325 20111,16316
-Prötzeler Ring und Trappenfelder Pfad: Qualität laut ADFC-Karte gut	? 21980,15967 22134,15615 22073,15172
+Prötzeler Ring und Trappenfelder Pfad: Qualität laut ADFC-Karte gut	? 21951,15918 22134,15615 22073,15172
 Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23279,14785 23379,14514
 Beilsteiner Str.: laut ADFC-Karte im südlichen Abschnitt gut geeignet, Einbahnstraße!	? 18749,12413 18852,13269 18875,13473 18859,14048 18998,14089 19025,14037
@@ -710,8 +710,8 @@ Wilhelm-Staab-Str./Yorckstr.: Überqueren des Kanals möglich?	? -13003,-1343
 Museumstr.: zur "Bodestr." umbenannt?	? 9943,12642 9884,12712
 Saalburgstr./Cafeastr.: Qualität? Durchfahrt zur Gradestr. für Radfahrer möglich?	? 11114,5780 11365,5508 11576,5450 11533,5343 11661,5180
 Wrightallee: Streckenführung zwischen Melli-Besse-Ring und Gorissenstr. bereits komplett?	? 18143,2718 18170,2819 18199,2960 18010,3263 17976,3735 17949,3970
-Wuhlewanderweg zwischen Lindenstr. und Heesestr.: Durchgängig befahrbar? Qualität?	? 21386,9052 21462,9216 21514,9494 21581,9616 21620,9737 21669,9826 21668,9885
-Rad- und Fußwegverbindung zwischen Wuhle und Hönow durch Hellersdorf: genauer Verlauf? Qualität? bereits komplett fertiggestellt?	? 22368,15514 26112,15382
+Wuhlewanderweg zwischen Lindenstr. und Heesestr.: Qualität (asphaltiert, betoniert oder fester Sandweg)?	? 21386,9052 21462,9216 21514,9494 21581,9616 21620,9737 21669,9826 21668,9885
+Rad- und Fußwegverbindung zwischen Wuhle und Hönow durch Hellersdorf: genauer Verlauf? Qualität? bereits komplett fertiggestellt?	? 22518,15510 26112,15382
 Bornhagenweg: Qualität?	? 11174,-1719 11241,-1740 11445,-1846 11666,-1825 11784,-1809 12058,-1785
 Haberstr.: Qualität (möglicherweise gute Betonstr.?)?	? 14366,6337 14564,6496 14720,6664
 Niederlehme Anschlussstelle - Niederlehme: Qualität (wahrscheinlich Asphalt)? Radweg?	? 28485,-10143 28272,-10277 28168,-10289 27949,-10283 27906,-10191 27827,-10082 27535,-10033
@@ -806,7 +806,7 @@ Hier führt die Route Sanssouci entlang: wie geht es weiter, Qualität, Straßennam
 Wublitzbrücke - Töplitz: Qualität (wahrscheinlich Feld- oder Waldweg)?	? -21681,702 -22045,765 -22525,1230 -22911,1634 -23105,2016 -23207,2284
 Nattwerder - Golm: Qualität (wahrscheinlich Feldweg)?	? -21043,1586 -20807,1383 -20955,978 -21221,764
 Röländer Str.: Qualität? Radweg?	? 15130,24012 15490,24198 15571,24315
-(Eichenallee): noch nicht ganz fertiggestellt	? 19875,18182 20535,17913
+(Eichenallee): noch nicht ganz fertiggestellt	? 19875,18182 20535,17913 20746,17848 20804,17848
 Lüderitzstr.: Qualtität der Straße zwischen Transvaalstr. und Seestr.?	? 6231,16328 6503,16068 6681,15928
 Eschengraben: gibt es hier eine Einbahnstraßenregelung und gilt diese auch für Radfahrer?	? 11771,17213 11805,17039 11831,16802 11776,16753 11621,16749 11441,16745 11281,16743 11018,16730
 Kienberg: Qualität? Straßenname?	? 19900,-2656 19827,-2688 19698,-2836 19418,-3703 19427,-3762
@@ -944,6 +944,10 @@ Am Golfplatz: Qualität? Für Autos gesperrt?	? -7559,6218 -6977,5851
 Am Golfplatz: Qualität? Für Autos gesperrt?	? -6846,6049 -6444,5798 -6420,5771
 Eichelmatenweg: Qualität (zumindest zwischen Porthanweg und Am Ritterholz wahrscheinlich gut)?	? -7184,5118 -7166,5138 -7182,5440 -7182,5498 -7161,5560 -7045,5745 -6977,5851 -6846,6049
 Olympisches Dorf - Döberitzer Heide: Qualität (wahrscheinlich eher sandiger Weg)?	? -16015,13705 -16014,13680 -16087,13631 -16127,13586 -16139,13513 -16127,13452 -16151,13348 -16176,13263 -16206,13248 -16273,13287 -16313,13290 -16334,13269 -16355,13187 -16422,13117 -16581,13080 -16733,13065 -16837,13007
+Wuhletalstr. - Eichenallee: Qualität?	? 20732,17682 20801,17821 20804,17848
+Grüne Trift - Lindenberger Str.: Qualität? Straßennamen?	? 19579,18933 19381,19003 19157,19122 19125,19130 19061,19145 18997,19157 18947,19168 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18074,19227
+Str. 10, entlang des Hechtgrabens: Qualität?	? 18121,19390 18025,19433 17838,19501 17679,19532 17015,19287 16768,19191 16736,19193
+Hagenower Ring - Am Luchgraben: Qualität?	? 17009,19104 17021,19258 17015,19287 17015,19587 17079,20716 17100,20848 17274,20851
 # added from ampeln-orig
 wirklich? (?)	? 9215,3599
 Wirklich? (?)	? -3775,17087
@@ -1020,7 +1024,8 @@ Müncheberg, Turm (genaue Bezeichnung?)	? 60803,11559
 Müncheberg, Turm (genaue Bezeichnung?)	? 60306,11906
 Gemeinsamer Rad- und Gehweg parallel zur Straße (Ist der Radweg ein Zweirichtungsradweg? Auf welcher Seite führt der Radweg?)	? 30390,-3443 29780,-3563 28499,-3409 28073,-3255 27906,-3136
 (Hegemeisterweg - Ernst-Thälmann-Stadion): Asphalt (ist die gesamte Strecke vom Hegemeisterweg bis zum Stadion asphaltiert?)	? 18409,7776 19069,6928
-Artemisstr.: kleinteiliges Kopfsteinpflaster (mindestens im Süden:)	? 4371,22234 4293,22365 4140,22623
+Wuhlewanderweg: teilweise fester Kies, etwas sandig (Ist die Qualität entlang des Wuhlebeckens mittlerweile besser?)	? 21351,9066 21280,8954 21210,8898 21181,8766 21185,8483 21276,8374 21348,8254
+Wuhlewanderweg: Feldweg (Ist die Qualität zwischen Cecilienstr. und Eisenacher Str. mittlerweile besser?)	? 22806,14631 22741,14761 22550,15087 22449,15127
 Marienhöher Weg: Kopfsteinpflaster (mäßiges oder schlechtes Kopfsteinpflaster?)	? 8353,5188 8185,5209 8009,5000 7913,4996 7861,5029 7851,5125 7929,5250
 Parkstr.: Kopfsteinpflaster (stimmt das?)	? 9029,6360 9143,6415
 Nalepastr.: Betonstr., Eisenbahnschienen (stimmt das?)	? 17043,7512 17211,7265
