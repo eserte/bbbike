@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.123 2007/02/03 21:57:50 eserte Exp $
+# $Id: Makefile,v 2.125 2007/02/07 20:54:51 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -140,7 +140,8 @@ really-slow-checks:	check-crossings-important \
 # STRASSEN UND PLÄTZE
 strassen:	.strassen.tmp plaetze
 	-@$(WRITEABLE) $@
-	cat $> > $@
+	cat .strassen.tmp > $@
+	${GREPSTRASSEN} -v --namerx ' \(Potsdam\)' plaetze >> $@
 	#-rm -f strassen-cooked
 	-@$(READONLY) $@
 
@@ -254,9 +255,10 @@ brunnels:	brunnels-orig
 	mv $@~ $@
 	-@$(READONLY) $@
 
-landstrassen: landstrassen-orig
+landstrassen: landstrassen-orig plaetze
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) landstrassen-orig > $@~
+	${GREPSTRASSEN} --namerx ' \(Potsdam\)' plaetze >> $@~
 	cp $@~ $@
 	rm $@~
 	-rm -f landstrassen-cooked

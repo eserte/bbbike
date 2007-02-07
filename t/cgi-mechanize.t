@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.37 2007/02/06 21:53:42 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.38 2007/02/07 20:55:50 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -50,7 +50,7 @@ if (!@browsers) {
 }
 @browsers = map { "$_ BBBikeTest/1.0" } @browsers;
 
-my $tests = 99;
+my $tests = 101;
 plan tests => $tests * @browsers;
 
 ######################################################################
@@ -644,6 +644,9 @@ for my $browser (@browsers) {
 	$unlike_long_data->(qr/genaue kreuzung w.*hlen/i, "Exact match, no crossings");
 	$like_long_data->(qr/Bevorzugte Geschwindigkeit/i, "Einstellungen page");
 	$like_long_data->(qr/scope.*region/i, "Scope is set to region");
+	$agent->submit();
+	my_tidy_check($agent);
+	$like_long_data->(qr/Route/, "On the result page");
     }
 
 } # for

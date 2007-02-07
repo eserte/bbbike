@@ -7036,4 +7036,13 @@ EOF
 userdel	2::inwork 86769,1414 87351,3652
 EOF
      },
+     { from  => 1170808004, # 2007-02-07 01:26
+       until => 1175378399, # 2007-03-31 23:59
+       text  => 'Dunckerstr. (Prenzlauer Berg) in beiden Richtungen, Kreuzung Stargarder Str. Baustelle, Straße vollständig gesperrt (bis 03.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_003972',
+       data  => <<EOF,
+userdel	2::inwork 11603,15455 11638,15522
+EOF
+     },
     );

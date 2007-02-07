@@ -786,8 +786,8 @@ Werderstr.: Kopfsteinpflaster	Q2 8988,5821 8990,5950
 Wikingerufer: Kopfsteinpflaster	Q2 5369,12529 5391,12626 5376,12781 5372,12818 5388,12885
 #: XXX Q2-
 Wullenweberstr.: eher unangenehmes Kopfsteinpflaster	Q2 5369,12529 5446,12474 5493,12443 5535,12413 5676,12323
-(Gemeindewäldchen): Parkweg	Q1 461,3118 82,3166
-Beerenstr.: Kopfsteinpflaster	Q2 82,3166 -526,3229 -765,3253 -1054,3328 -1096,3339
+(Gemeindewäldchen): Parkweg	Q1 461,3118 71,3179
+Beerenstr.: Kopfsteinpflaster	Q2 71,3179 -107,3194 -526,3229 -765,3253 -1054,3328 -1096,3339
 Jupiterstr.: Kopfsteinpflaster	Q2 14850,6546 15043,6799
 #: unverified_by ADFC-Karte
 Grumbkowstr.: mäßig geeignet	Q2 11269,20667 11419,20327 11563,20048 11730,19684
@@ -1309,7 +1309,7 @@ Brommystr.: Kopfsteinpflaster	Q2 12509,11025 12567,11115
 (Uferweg): Parkweg	Q1 15819,9430 15787,9321
 (Fischzug - Uferweg): Holzbohlenweg	Q1 15219,10079 15260,10048
 #: add_fragezeichen: ist der Abschnitt zwischen Fischerhüttenstr. und Beerenstr. auch Kopfsteinpflaster?
-Busseallee: Kopfsteinpflaster	Q2 166,3040 82,3166 -266,3648
+Busseallee: Kopfsteinpflaster	Q2 166,3040 71,3179 -266,3648
 Hallesches Tor: Beton	Q0 9593,10238 9592,10174
 Bebelplatz: Kopfsteinpflaster, OK	Q1 9801,12245 9875,12254
 Metzer Str.: Kopfsteinpflaster	Q2 10947,14114 11016,14081 11160,14002 11389,13887
@@ -1537,7 +1537,7 @@ Clara-Grunwald-Str.: Asphalt	Q0 15652,10348 15578,10250 15567,10235
 Hildegard-Marcusson-Straße: Asphalt	Q0 16004,10204 15952,10134 15874,10025 15831,9968
 (Hildegard-Marcusson-Straße - Uferweg): Parkweg	Q1 15831,9968 15811,9957 15786,9957
 Sven-Hedin-Str.: asphaltierte Fahrbahn, asphaltierter Radweg	Q0 463,3671 397,3674 270,3757
-Sven-Hedin-Str.: asphaltierte Fahrbahn, Verbundsteinpflasterradweg	Q0 270,3757 -141,3715 -266,3648 -459,3509 -554,3441 -800,3383 -1022,3443
+Sven-Hedin-Str.: asphaltierte Fahrbahn, Verbundsteinpflasterradweg	Q0 270,3757 -141,3715 -266,3648 -364,3584 -461,3522 -548,3467 -800,3383 -1022,3443
 #: note: Q2 von Dominik Seelow hochgestuft
 Schützallee: kleinteiliges Kopfsteinpflaster auf der Fahrbahn, Radweg mit unebenen Pflaster	Q1 2230,3823 2151,3834 1952,3864 1918,3868
 Schützallee: asphaltierte Fahrbahn, Radweg mit unebenen Pflaster	Q0 1918,3868 1815,3876 1783,3879 1738,3881 1677,3885 1572,3883 1524,3882 1476,3881 1389,3879 1273,3877 1130,3868 897,3799 463,3671
@@ -4194,6 +4194,8 @@ Pfahlerstr.: guter Asphalt	Q0 5551,18434 5423,18438 5301,18447
 Fuchssteiner Weg: Kopfsteinpflaster	Q2 2531,25368 2667,25367 2728,25386 2749,25418 2794,25514 2826,25577 2880,25645 2950,25667
 #: by: Hans-Jochen Brauer:
 Rathenower Str.: guter Asphalt	Q0 11073,696 11229,634 11381,574 11488,531 11563,501
+#: by: Susanne (holtze):
+Glockenstr.: guter Asphalt	Q0 -107,3194 -268,3441 -364,3584
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14202,13140 14096,12827

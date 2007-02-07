@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.37 2007/02/06 21:54:16 eserte Exp $
+# $Id: bbbike.cgi,v 8.38 2007/02/07 21:41:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -697,7 +697,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.37 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.38 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1218,10 +1218,12 @@ sub _potsdam_hack {
     my $name;
     if (defined $pos) {
 	$name = $potsdam_str->get($pos)->[Strassen::NAME];
-	my $scope = $q->param("scope");
-	if (!$scope || $scope eq "city") {
-	    $q->param("scope", "region"); # XXX increment_scope?
-	}
+	upgrade_scope("region");
+#XXX del?
+# 	my $scope = $q->param("scope");
+# 	if (!$scope || $scope eq "city") {
+# 	    $q->param("scope", "region"); # XXX increment_scope?
+# 	}
     }
     $name;
 }
@@ -1313,9 +1315,10 @@ sub choose_form {
 		    my $str = get_streets();
 		    my $pos = $str->choose_street($strasse, $bezirk);
 		    if (!defined $pos) {
+			# Can't use upgrade_scope here:
 			if ($str->{Scope} eq 'city') {
 			    warn "Enlarge streets for umland\n" if $debug;
-			    $q->param("scope", "region");  # XXX increment_scope?
+			    $q->param("scope", "region");
 			    $str = get_streets_rebuild_dependents(); # XXX maybe wideregion too?
 			}
 			$pos = $str->choose_street($strasse, $bezirk);
@@ -1364,7 +1367,7 @@ sub choose_form {
 		 ($q->param("viac")))) {
 		search_coord();
 	    } else {
-		warn "Wähle Kreuzung für $startname und $zielname\n"
+		warn "Wähle Kreuzung für $startname und $zielname (1st)\n"
 		    if $debug;
 		get_kreuzung($startname, $vianame, $zielname);
 	    }
@@ -1570,9 +1573,10 @@ sub choose_form {
 		    my $str = get_streets();
 		    my $pos = $str->choose_street($strasse, $bezirk);
 		    if (!defined $pos) {
+			# Can't use upgrade_scope here
 			if ($str->{Scope} eq 'city') {
 			    warn "Enlarge streets for umland\n" if $debug;
-			    $q->param("scope", "region");  # XXX increment_scope?
+			    $q->param("scope", "region");
 			    $str = get_streets_rebuild_dependents(); # XXX maybe wideregion too?
 			}
 			$pos = $str->choose_street($strasse, $bezirk);
@@ -1594,7 +1598,7 @@ sub choose_form {
 	    last TRY if (((defined $via2 && $via2 ne '') ||
 			  (defined $via  && $via  ne '')) &&
 			 (!defined $vianame || $vianame eq ''));
-	    warn "Wähle Kreuzung für $startname und $zielname\n"
+	    warn "Wähle Kreuzung für $startname und $zielname (2nd)\n"
 	      if $debug;
 	    get_kreuzung($startname, $vianame, $zielname);
 	    return;
@@ -2310,6 +2314,18 @@ sub get_kreuzung {
 	}
     }
 
+    # Make sure scope is incremented to "region" if any Potsdam street
+    # is used here. This may happen for instance if choosing a Potsdam
+    # street from the street list.
+    for my $str ($start_str, $via_str, $ziel_str) {
+	next if !defined $str;
+	my($str_normed, $citypart) = Strasse::split_street_citypart($str);
+	if ($citypart && $citypart eq 'Potsdam') {
+	    upgrade_scope("region");
+	    last;
+	}
+    }
+
     my $str = get_streets();
     $str->init;
     # Abbruch kann hier nicht früher erfolgen, da Straßen unterbrochen
@@ -2335,7 +2351,12 @@ sub get_kreuzung {
     if ((!defined $start and !defined $start_c) ||
 	(!defined $ziel  and !defined $ziel_c)) {
 	local $^W = 0;
-	warn "Fehler: Start <$start_str/position $start> und/oder Ziel <$ziel_str/position $ziel> können nicht zugeordnet werden.<br>\n";
+	if (!defined $start and !defined $start_c) {
+	    warn "Fehler: Start <$start_str/position $start> kann nicht zugeordnet werden.\n";
+	}
+	if (!defined $ziel and !defined $ziel_c) {
+	    warn "Fehler: Ziel <$ziel_str/position $ziel> kann nicht zugeordnet werden.\n";
+	}
 	# Mostly this error comes from mistyped user input, so try to do
 	# the best and redirect to the start page:
 	$q->param('start', $start_str);
@@ -3698,7 +3719,7 @@ sub search_coord {
  ROUTE_HEADER:
     if (!@out_route) {
 	print M("Keine Route gefunden").".\n";
-	warn "Found no route between <$startname> and <$zielname>, should not happen!";
+	warn "Fehler: keine Route zwischen <$startname>" . ($vianame ? ", <$vianame>" : "") . " und <$zielname> gefunden, sollte niemals passieren!";
     } else {
 	if (@current_temp_blocking && !@custom && !$printmode) {
 	    my @affecting_blockings;
@@ -5200,6 +5221,7 @@ sub increment_scope {
     $scope;
 }
 
+# Should be called before a get_streets() call
 sub upgrade_scope {
     my($target_scope) = @_;
     my $scope = $q->param("scope") || "city";
@@ -6293,7 +6315,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/02/06 21:54:16 $';
+    my $cgi_date = '$Date: 2007/02/07 21:41:19 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

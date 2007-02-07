@@ -728,6 +728,15 @@ userdel	1::inwork 10781,13002 10706,13043
          'data' => 'userdel	2::inwork 86769,1414 87351,3652
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003972',
+         'until' => 1175378399,
+         'text' => 'Dunckerstr. (Prenzlauer Berg) in beiden Richtungen, Kreuzung Stargarder Str. Baustelle, Straße vollständig gesperrt (bis 03.2007)',
+         'from' => 1170808004,
+         'data' => 'userdel	2::inwork 11603,15455 11638,15522
+',
+         'type' => 'gesperrt'
        }
      
 );
