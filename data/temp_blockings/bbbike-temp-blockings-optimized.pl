@@ -541,8 +541,8 @@ userdel	1::inwork 10781,13002 10706,13043
        undef,
        undef,
        {
-         'until' => 1172703600,
-         'text' => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Puschkinstr. Straßenausbau Vollsperrung 01.11.2006-28.02.2007 ',
+         'until' => 1175378400,
+         'text' => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Puschkinstr. Straßenausbau Vollsperrung 01.11.2006-31.03.2007 ',
          'from' => 1162249200,
          'data' => 'userdel	q4::inwork -4299,-35198 -4725,-34957
 ',
@@ -636,9 +636,9 @@ userdel	1::inwork 10781,13002 10706,13043
        undef,
        {
          'source_id' => 'IM_004443',
-         'until' => 1175378399,
-         'text' => 'Nennhauser Damm (Spandau) Richtung Brunsbütteler Damm nach Heerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 03.2007)',
-         'from' => 1170098789,
+         'until' => 1183240799,
+         'text' => 'Nennhauser Damm (Spandau) Richtung Brunsbütteler Damm nach Heerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 06.2007)',
+         'from' => 1171050907,
          'data' => 'userdel	1::inwork -8671,13312 -8643,13383 -8358,13340 -8011,13351 -7693,13330
 ',
          'type' => 'gesperrt'
@@ -730,6 +730,55 @@ userdel	1::inwork 10781,13002 10706,13043
          'data' => 'userdel	2::inwork 11603,15455 11638,15522
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1199142000,
+         'text' => 'L 090 Dr.-Külz-Str. OD Glindow, zw. Alte Str. und Alpenstr. Kanal- und Straßenbau, starke Einschränkungen 11.09.2006-31.12.2007 ',
+         'from' => 1157839200,
+         'data' => 'userdel	q4::inwork -22914,-5137 -22867,-5778
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_004721',
+         'until' => 1171148400,
+         'text' => 'Bellevuestr. (Köpenick) in beiden Richtungen zwischen Fürstenwalder Damm und Seelenbinderstr. Baustelle, Straße vollständig gesperrt (bis 10.02.2007 22 Uhr)',
+         'from' => 1171051156,
+         'data' => 'userdel	2::inwork 23402,5483 23333,5731
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1171753200,
+         'text' => 'B 169 OD Plessa, zw. Waldstr. und Bahnhofstr. Karnevalsumzug Vollsperrung 17.02.2007-17.02.2007 ',
+         'from' => 1171580400,
+         'data' => 'userdel	q4::temp 28006,-104431 27775,-104430 27420,-104513
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1171580400,
+         'text' => 'L 025 Fürstenwerder-Woldegk Brücke über den Dammseegraben am OA Fürstenwerder Änderung Wasserführung Vollsperrung 12.02.2007-15.02.2007 ',
+         'from' => 1171148400,
+         'data' => 'userdel	2::inwork 20035,110983 20336,110197 20631,109980
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1173049200,
+         'text' => 'L 238 Eberswalde-Joachimsthal Brücke der A 11 zw. Lichterfelde u. Altenhof Brückenbauarbeiten Vollsperrung 03.03.2007-04.03.2007 ',
+         'from' => 1172790000,
+         'data' => 'userdel	2::inwork 31076,54246 30773,54731
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1171753200,
+         'text' => 'L 621 Döllinger Str. OD Plessa, zw. Hauptstr. und Von-Delius-Str. Karnevalsumzug Vollsperrung 17.02.2007-17.02.2007 ',
+         'from' => 1171580400,
+         'data' => 'userdel	q4::temp 27420,-104513 26667,-103869
+',
+         'type' => 'handicap'
        }
      
 );
