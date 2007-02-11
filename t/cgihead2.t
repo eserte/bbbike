@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.15 2007/01/08 21:10:32 eserte Exp $
+# $Id: cgihead2.t,v 1.16 2007/02/11 22:03:00 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -133,8 +133,10 @@ sub check_url {
 	    is($content_type, "application/octet-stream", "Expected type (binary for bzip2)") or diag("For URL $url");
 	} elsif ($url =~ m{\.tar\.gz\?download$}) { # Sourceforge download
 	    like($content_type, qr{^application/x-(tar|gzip)$}, "Expected type (tar or gzip)") or diag("For URL $url");
-	} elsif ($url =~ m{\.(exe|deb)\?download$}) { # Sourceforge download
+	} elsif ($url =~ m{\.exe\?download$}) { # Sourceforge download
 	    is($content_type, "application/octet-stream", "Expected type (binary)") or diag("For URL $url");
+	} elsif ($url =~ m{\.deb\?download$}) { # Sourceforge download
+	    like($content_type, qr{^application/(octet-stream|x-debian-package)$}, "Expected type (debian package), got $content_type") or diag("For URL $url");
 	} else {
 	    is($content_type, "text/html", "Expected type (html)") or diag("For URL $url");
 	}

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiMap.pm,v 1.5 2006/09/17 20:20:36 eserte Exp $
+# $Id: MultiMap.pm,v 1.6 2007/02/11 21:50:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%images);
 
@@ -44,6 +44,12 @@ sub register {
 	  callback => sub { showmap_wikimapia(@_) },
 	  callback_3_std => sub { showmap_url_wikimapia(@_) },
 	  ($images{WikiMapia} ? (icon => $images{WikiMapia}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . "_ClickRoute"} =
+	{ name => "ClickRoute",
+	  callback => sub { showmap_clickroute(@_) },
+	  callback_3_std => sub { showmap_url_clickroute(@_) },
+	  ($images{ClickRoute} ? (icon => $images{ClickRoute}) : ()),
 	};
 }
 
@@ -107,7 +113,12 @@ jbVTav81AGEEw9W3wYU1jMABeuoxoyJ5t4S3Ez5tjHjhDRwoKByF0W3YABsYynhECTYKJ6SQ
 VNCA4YUhAAA7
 EOF
     }
+
+    # XXX no image for clickroute.de yet
 }
+
+######################################################################
+# MultiMap
 
 sub showmap_url {
     my(%args) = @_;
@@ -137,6 +148,9 @@ sub showmap {
     start_browser($url);
 }
 
+######################################################################
+# GoYellow
+
 sub showmap_url_goyellow {
     my(%args) = @_;
 
@@ -152,6 +166,9 @@ sub showmap_goyellow {
     my $url = showmap_url_goyellow(%args);
     start_browser($url);
 }
+
+######################################################################
+# WikiMapia
 
 sub showmap_url_wikimapia {
     my(%args) = @_;
@@ -177,6 +194,28 @@ sub showmap_wikimapia {
     my $url = showmap_url_wikimapia(%args);
     start_browser($url);
 }
+
+######################################################################
+# ClickRoute
+
+sub showmap_url_clickroute {
+    my(%args) = @_;
+
+    my $px = $args{px};
+    my $py = $args{py};
+
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "http://clickroute.de/?center_lat=%s&center_lng=%s&zoom=%d&maptype=hybrid",
+	$py, $px, $scale;
+}
+
+sub showmap_clickroute {
+    my(%args) = @_;
+    my $url = showmap_url_clickroute(%args);
+    start_browser($url);
+}
+
+######################################################################
 
 sub start_browser {
     my($url) = @_;

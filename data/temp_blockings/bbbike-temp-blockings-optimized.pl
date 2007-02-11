@@ -688,40 +688,11 @@ userdel	1::inwork 10781,13002 10706,13043
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_004638',
-         'until' => 1171062000,
-         'text' => 'Hauptstr. (Pankow) in Richtung stadteinwärts, zwischen Bucherstr. und Blankenfelder Str. Baustelle, Fahrtrichtung gesperrt (bis 09.02.07)',
-         'from' => 1170098849,
-         'data' => 'userdel	1::inwork 12178,23034 12213,22884 12187,22486
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1171148400,
-         'text' => 'B 112 zw. Abzw. Wüste Kunersdorf und Lebus Gründungsarb. für Radwegbau Vollsperrung 08.02.2007-10.02.2007 ',
-         'from' => 1170802800,
-         'data' => 'userdel	2::inwork 86420,913 86769,1414
-',
-         'type' => 'gesperrt'
-       },
        undef,
-       {
-         'until' => 1171148400,
-         'text' => 'K 6506 L172- Bärenklau-Vehlefanz Bahnübergang in der OD Vehlefanz Gleisbauarbeiten Vollsperrung 07.02.2007-10.02.2007 ',
-         'from' => 1170716400,
-         'data' => 'userdel	2::inwork -10057,34800 -9159,34997
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1171062000,
-         'text' => 'B 112 Bereich Kunersdorfer Grund Errichtung Radwegbrücke Vollsperrung 08.02.2007-09.02.2007 ',
-         'from' => 1170802800,
-         'data' => 'userdel	2::inwork 86769,1414 87351,3652
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'source_id' => 'IM_003972',
          'until' => 1175378399,
@@ -739,15 +710,7 @@ userdel	1::inwork 10781,13002 10706,13043
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_004721',
-         'until' => 1171148400,
-         'text' => 'Bellevuestr. (Köpenick) in beiden Richtungen zwischen Fürstenwalder Damm und Seelenbinderstr. Baustelle, Straße vollständig gesperrt (bis 10.02.2007 22 Uhr)',
-         'from' => 1171051156,
-         'data' => 'userdel	2::inwork 23402,5483 23333,5731
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1171753200,
          'text' => 'B 169 OD Plessa, zw. Waldstr. und Bahnhofstr. Karnevalsumzug Vollsperrung 17.02.2007-17.02.2007 ',
