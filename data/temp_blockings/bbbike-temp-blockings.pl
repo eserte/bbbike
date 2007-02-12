@@ -7094,4 +7094,20 @@ EOF
 userdel	q4::temp 27420,-104513 26667,-103869
 EOF
      },
+     { from  => 1151618400, # 2006-06-30 00:00
+       until => 1175896800, # 2007-04-07 00:00
+       text  => 'L 211 Lehnitzstr. OL Oranienburg, zw. A.-Pican-Str. und Dr.-H.-Byk-Str. Munitionssuche u. -bergung Vollsperrung 01.07.2006-06.04.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -198,37506 -591,37970
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Paul-Schwarz-Promenade zwischen Krahmerstr. und Klinikum bis auf weiteres wegen Bauarbeiten gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 4825,3402 4921,3593 4970,3684 5093,3912 5145,3984 5225,4095
+EOF
+     },
     );
