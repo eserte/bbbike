@@ -5269,12 +5269,13 @@ EOF
      },
      { from  => 1154203576, # 2006-07-29 22:06
        until => 1183240800, # 2007-07-01 00:00 # XXX nicht mehr in VMZ vorhanden!
-       text  => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt. Ebenfalls Einbahnstraße: Teile der Dircksenstr. (bis Juni 2007) ',
+       text  => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt. Ebenfalls Einbahnstraße: Teile der Dircksenstr. Die Ausfahrt aus der Memhardstraße in Richtung Ost (Alexanderstraße) ist nicht möglich. (bis Juni 2007) ',
        type  => 'gesperrt',
        source_id => 'IM_003157',
        data  => <<EOF,
 userdel	1::inwork 10920,13139 10781,13002
 userdel	1::inwork 10781,13002 10706,13043
+userdel	3::inwork 10755,13152 10920,13139 11139,13008
 EOF
      },
      { from  => 1154203576, # 2006-07-29 22:06

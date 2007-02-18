@@ -604,7 +604,8 @@ if ($advanced) {
     require BBBikeAdvanced;
 }
 
-use vars qw($MM_DRAG_IS_OBSOLETE);$MM_DRAG_IS_OBSOLETE = $advanced;#XXX
+# XXX The MM_DRAG (move) button could be removed completely some day.
+use vars qw($MM_DRAG_IS_OBSOLETE);$MM_DRAG_IS_OBSOLETE = 1;
 
 $coord_system_obj = $Karte::Standard::obj;
 $coord_system     = $coord_system_obj->token;
@@ -16893,14 +16894,14 @@ sub plugin_menu {
 			   load_plugin($file);
 		       }
 		   });
-    if (!$advanced) { # XXX
-	$opbm->command(-label => M"Alle Plugins zeigen",
+    if (0) { # XXX The old Plugin lister could be removed completely some day
+	$opbm->command(-label => M"Alle Plugins zeigen (alt)",
 		       -command => sub {
 			   require BBBikePlugin;
 			   BBBikePlugin::find_all_plugins($FindBin::RealBin, $top);
 		       });
     } else {
-	$opbm->command(-label => M"Alle Plugins zeigen (neu)",
+	$opbm->command(-label => M"Alle Plugins zeigen",
 		       -command => sub {
 			   require BBBikePluginLister;
 			   BBBikePluginLister::plugin_lister($top, $FindBin::RealBin);
