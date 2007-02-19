@@ -648,7 +648,6 @@ Steigung 1.5% (Eulerstr.)	St; 9268,16228 9336,16302
 Steigung 1.5% (Franklinstr.)	St; 5018,12322 4999,12289
 Steigung 1.5% (Bismarckallee)	St; 1767,8853 1659,8744
 Steigung 1.5% (Pillkaller Allee)	St; 14,11215 21,11167
-Steigung 1.5% (Wiesenstr. (Wedding))	St; 8283,15727 8518,15506
 Steigung 1.5% (Alte Schönhauser Str.)	St; 10746,13673 10718,13625
 Steigung 1.5% (Am Rupenhorn)	St; -2478,10774 -2473,10662
 Steigung 1.5% (Wallotstr.)	St; 1965,9431 2046,9429
@@ -659,6 +658,7 @@ Steigung 1.5% (Bismarckallee)	St; 1659,8744 1632,8716
 Steigung 1.5% (Heerstr. (Spandau, Charlottenburg))	St; -831,11060 -1039,11034
 Steigung 1.5% (Weinbergsweg)	St; 10177,13766 10193,13816
 Steigung 1.5% (Machnower Str. (Zehlendorf))	St; 749,2616 653,2557
+Steigung 1.5% (Wiesenstr. (Wedding))	St; 8271,15734 8518,15506
 Steigung 1.5% (Petersburger Str.)	St; 13792,12292 13742,12538
 Steigung 1.4% (Artemisstr.)	St; 4044,22690 4140,22623
 Steigung 1.4% (Strelitzer Str.)	St; 9685,14495 9621,14624
@@ -1160,6 +1160,7 @@ Steigung 1.0% (Bendastr.)	St; 12793,6407 12779,6478
 Steigung 1.0% (Nikolskoer Weg)	St; -9500,827 -9443,1035
 Steigung 1.0% (Kirchstr. (Schmargendorf))	St; 3042,7465 2954,7248
 Steigung 1.0% (Weidenweg (Friedrichshain))	St; 13540,12523 13608,12547
+Steigung 1.0% (Eldenaer Str.)	St; 14906,12837 14940,12843
 Steigung 1.0% (Danziger Str.)	St; 11879,14771 11712,14868
 Steigung 1.0% (Konstanzer Str.)	St; 3960,9247 3920,9068
 Steigung 1.0% (Georg-Wilhelm-Str.)	St; 2708,10245 2691,10047
@@ -1226,7 +1227,7 @@ Steigung 1.0% (Böttgerstr.)	St; 8655,15979 8720,15914
 Steigung 1.0% (Hallesches Tor)	St; 9592,10174 9593,10238
 Steigung 1.0% (Jonasstr. (Neukölln))	St; 12585,7357 12396,7312
 Steigung 1.0% (Rognitzstr.)	St; 2219,11304 2234,11440
-Steigung 1.0% (Eldenaer Str.)	St; 14842,12826 15010,12855
+Steigung 1.0% (Eldenaer Str.)	St; 14842,12826 14906,12837
 Steigung 1.0% ((Weg zur Mühsamstr.))	St; 13253,12625 13279,12639
 Steigung 1.0% (Weidenweg (Friedrichshain))	St; 13468,12497 13540,12523
 Steigung 1.0% (Ruhrstr.)	St; 3917,9373 3849,9405
@@ -1243,6 +1244,7 @@ Steigung 1.0% (Westendallee)	St; 215,12307 236,12208
 Steigung 1.0% (Jafféstr.)	St; 711,11199 706,11251
 Steigung 1.0% (Nikolskoer Weg)	St; -9252,1244 -9085,1347
 Steigung 1.0% (Bastianstr.)	St; 8862,16208 8655,15979
+Steigung 1.0% (Grenzstr. (Wedding))	St; 8654,15201 8742,15298
 Steigung 1.0% (Karl-Marx-Str.)	St; 13245,6491 13209,6564
 Steigung 1.0% (Krampnitzer Weg)	St; -7504,4847 -7529,4853
 Steigung 1.0% (Hohenzollerndamm)	St; 4230,9229 4102,9164
@@ -1320,7 +1322,6 @@ Steigung 1.0% (Carl-Ludwig-Schleich-Promenade)	St; 2353,8636 2317,8616
 Steigung 1.0% (Hermannstr. (Neukölln))	St; 12422,6715 12395,6785
 Steigung 1.0% (Hermannstr. (Neukölln))	St; 12422,6715 12468,6592
 Steigung 1.0% (Körnerstr. (Steglitz))	St; 5466,5950 5598,6136
-Steigung 1.0% (Grenzstr. (Wedding))	St; 8665,15213 8742,15298
 Steigung 1.0% (Kurfürstendamm)	St; 3111,10116 2963,10078
 Steigung 1.0% (Brodauer Str.)	St; 22544,11705 22838,12042
 Steigung 1.0% (Berlinickestr.)	St; 5088,5495 5016,5401
@@ -1348,7 +1349,7 @@ Steigung 1.0% (Lyckallee)	St; -328,10971 -428,10956
 Steigung 1.0% ((Waldweg an der Schilfdachkirche))	St; -8251,6214 -8385,6148
 Steigung 1.0% (Kranoldstr. (Neukölln))	St; 12715,6783 12585,6747
 Steigung 1.0% (Landsberger Allee)	St; 12808,13181 12727,13159
-Steigung 1.0% (Grenzstr. (Wedding))	St; 8570,15107 8665,15213
+Steigung 1.0% (Grenzstr. (Wedding))	St; 8570,15107 8614,15156
 Steigung 1.0% (Sakrower Kirchweg)	St; -7131,4742 -7134,4681
 Steigung 1.0% (Bötzowstr.)	St; 12685,14371 12749,14452
 Steigung 1.0% (Eldenaer Str.)	St; 13960,12866 13844,12900
@@ -1359,6 +1360,7 @@ Steigung 1.0% (Dresselsteg)	St; 2313,11298 2294,11300
 Steigung 1.0% (Stülpnagelstr.)	St; 2193,11434 2190,11569
 Steigung 1.0% (Kaiserdamm)	St; 2193,11434 2110,11426
 Steigung 1.0% (Altenbraker Str.)	St; 12465,7051 12477,6975
+Steigung 1.0% (Grenzstr. (Wedding))	St; 8614,15156 8654,15201
 Steigung 1.0% (Egerstr.)	St; 2215,8066 2106,8075
 Steigung 1.0% (Nikolskoer Weg)	St; -9443,1035 -9333,1124
 Steigung 1.0% (Wattstr. (Wedding))	St; 9437,14926 9361,15066
@@ -1378,6 +1380,7 @@ Steigung 1.0% (Eylauer Str.)	St; 8480,9071 8472,8772
 Steigung 1.0% (Delbrückstr. (Grunewald))	St; 2315,8431 2427,8416
 Steigung 1.0% (Delbrückstr. (Grunewald))	St; 2315,8431 2223,8500
 Steigung 1.0% (Bielefelder Str.)	St; 3849,9405 3845,9281
+Steigung 1.0% (Eldenaer Str.)	St; 14940,12843 15010,12855
 Steigung 1.0% (Königstr. (Wannsee))	St; -6441,1139 -5951,1241
 Steigung 1.0% (Holsteinische Str. (Steglitz))	St; 5474,6438 5381,6298
 Steigung 1.0% (Bernhard-Lichtenberg-Str. (Prenzlauer Berg))	St; 12496,14515 12685,14371

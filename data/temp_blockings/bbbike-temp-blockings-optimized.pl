@@ -712,22 +712,8 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1171753200,
-         'text' => 'B 169 OD Plessa, zw. Waldstr. und Bahnhofstr. Karnevalsumzug Vollsperrung 17.02.2007-17.02.2007 ',
-         'from' => 1171580400,
-         'data' => 'userdel	q4::temp 28006,-104431 27775,-104430 27420,-104513
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1171580400,
-         'text' => 'L 025 Fürstenwerder-Woldegk Brücke über den Dammseegraben am OA Fürstenwerder Änderung Wasserführung Vollsperrung 12.02.2007-15.02.2007 ',
-         'from' => 1171148400,
-         'data' => 'userdel	2::inwork 20035,110983 20336,110197 20631,109980
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1173049200,
          'text' => 'L 238 Eberswalde-Joachimsthal Brücke der A 11 zw. Lichterfelde u. Altenhof Brückenbauarbeiten Vollsperrung 03.03.2007-04.03.2007 ',
@@ -736,14 +722,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1171753200,
-         'text' => 'L 621 Döllinger Str. OD Plessa, zw. Hauptstr. und Von-Delius-Str. Karnevalsumzug Vollsperrung 17.02.2007-17.02.2007 ',
-         'from' => 1171580400,
-         'data' => 'userdel	q4::temp 27420,-104513 26667,-103869
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1175896800,
          'text' => 'L 211 Lehnitzstr. OL Oranienburg, zw. A.-Pican-Str. und Dr.-H.-Byk-Str. Munitionssuche u. -bergung Vollsperrung 01.07.2006-06.04.2007 ',
@@ -757,6 +736,14 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'text' => 'Paul-Schwarz-Promenade zwischen Krahmerstr. und Klinikum bis auf weiteres wegen Bauarbeiten gesperrt',
          'from' => undef,
          'data' => 'userdel	2::inwork 4825,3402 4921,3593 4970,3684 5093,3912 5145,3984 5225,4095
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1177192800,
+         'text' => 'L 063 Berliner Str. Bahnübergang in der OD Lauchhammer Gleiserneuerung Vollsperrung 10.04.2007-21.04.2007 ',
+         'from' => 1176069600,
+         'data' => 'userdel	2::inwork 35482,-103562 35379,-103141 35072,-102150
 ',
          'type' => 'gesperrt'
        }

@@ -6398,8 +6398,8 @@ EOF
        type  => 'handicap',
        source_id => 'IM_003850',
        data  => <<EOF,
-userdel	q4::temp 8481,16136 8582,16052 8437,15894 8283,15727
-userdel	q4::temp 8437,15894 8278,16043
+userdel	q4::temp 8481,16136 8582,16052 8437,15894 8271,15734
+userdel	q4::temp 8437,15894 8278,16043 8236,16071
 EOF
      },
      { from  => 1161326842, # 2006-10-20 08:47
@@ -7109,6 +7109,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 4825,3402 4921,3593 4970,3684 5093,3912 5145,3984 5225,4095
+EOF
+     },
+     { from  => 1176069600, # 2007-04-09 00:00
+       until => 1177192800, # 2007-04-22 00:00
+       text  => 'L 063 Berliner Str. Bahnübergang in der OD Lauchhammer Gleiserneuerung Vollsperrung 10.04.2007-21.04.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 35482,-103562 35379,-103141 35072,-102150
 EOF
      },
     );

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.288 2007/02/04 20:25:14 eserte Exp eserte $
+# $Id: bbbike,v 3.289 2007/02/19 22:45:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -205,7 +205,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.288 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.289 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -981,6 +981,17 @@ $top->title("$progname $VERSION");
 # XXX Unter Unix vielleicht darauf verzichten und iconimage stattdessen verwenden?
 # XXX Also set icon according to freedesktop specs.
 $top->Icon(-image => $srtbike_icon) if defined $srtbike_icon;
+if ($devel_host && defined $srtbike_icon) {
+    # every toplevel in app should get bbbike icon
+    require Tk::Toplevel; # make sure it's loaded
+    package Tk::Toplevel;
+    *InitObject = sub {
+	my($self,$args) = @_;
+	$self->SUPER::InitObject($args);
+	$self->afterIdle(sub{ $self->iconimage($main::srtbike_icon) });
+    };
+}
+
 if ($splash_screen) {
     $splash_screen->Raise; # raise after the first ->update on $top, otherwise on Windows the splash screen will stay obscured by the main window
     $splash_screen->Update(0.0);

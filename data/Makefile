@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.125 2007/02/07 20:54:51 eserte Exp $
+# $Id: Makefile,v 2.126 2007/02/19 22:45:38 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -251,7 +251,7 @@ green:	green-orig
 
 brunnels:	brunnels-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) $> > $@~
+	${GREPSTRASSEN} -v -section 'S-Bahn' $> | $(CONVERT2HAFAS) -map H > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 

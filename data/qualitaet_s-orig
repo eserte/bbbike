@@ -164,7 +164,7 @@ Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
 Böttgerstr.: Kopfsteinpflaster	Q2 9134,15953 8923,15850 8720,15914 8655,15979 8582,16052
 Hussitenstr.: Kopfsteinpflaster, Radwege OK	Q1 8742,15298 8900,15146
 Hussitenstr.: Kopfsteinpflaster	Q2 8900,15146 9041,14896 9112,14771
-Grenzstr.: Kopfsteinpflaster, teilweise OK, über der S-Bahn-Brücke asphaltiert	Q2 8742,15298 8665,15213 8570,15107
+Grenzstr.: Kopfsteinpflaster, teilweise OK, über der S-Bahn-Brücke asphaltiert	Q2 8742,15298 8654,15201 8614,15156 8570,15107
 Grenzstr.: Kopfsteinpflaster	Q2 8570,15107 8412,14923
 Scheringstr.: Kopfsteinpflaster	Q2 8900,15146 8686,14934
 Charlottenstr.: mäßiges Kopfsteinpflaster	Q2 9653,10950 9615,11225
@@ -849,7 +849,7 @@ Pankeweg: teilweise nur mäßiger Parkweg	Q2 16172,25217 16117,25038 16126,24999 1
 Pankeweg: gut befestigter Weg	Q1 15998,24887 15820,25003 15810,24981 15648,25084
 Nesselweg: Betonplatten, OK	Q1 8722,21437 8526,21110
 Schönholzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 7992,20515 8090,20371 8131,20287 8196,20096
-Uferstr.: Kopfsteinpflaster	Q2 8420,16365 8334,16282 8187,15965 8140,15859
+Uferstr.: Kopfsteinpflaster	Q2 8420,16365 8334,16282 8236,16071 8187,15965 8140,15859
 Jessnerstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 14941,11689 14849,11539
 Oderstr.: Kopfsteinpflaster	Q2 15091,11596 15012,11644 14941,11689
 Oderstr.: Kopfsteinpflaster	Q2 14787,11774 14728,11807 14623,11867
@@ -1381,23 +1381,23 @@ Lindenstr.: äußere Fahrstreifen mit Kopfsteinpflaster	Q2 22101,5064 22196,4847
 Lienhardweg: asphaltiert	Q0 23104,2014 23330,2061 23433,2085 23535,2111
 Bendigstr.: Kopfsteinpflaster	Q2 23433,2085 23494,1799
 Logauweg: Kopfsteinpflaster	Q2 23393,1777 23494,1799 23592,1817
-(Walter-Nicklisch-Promenade): glattes Verbundsteinpflaster	Q0 8273,15311 8321,15386
+(Walter-Nicklisch-Promenade): glattes Verbundsteinpflaster	Q0 8290,15304 8321,15386
 Pankebrücke: Holzbohlen	Q1 8321,15386 8290,15406
-(Walter-Nicklisch-Promenade): glattes Verbundsteinpflaster	Q0 8290,15406 8310,15449 8179,15601
+(Walter-Nicklisch-Promenade): glattes Verbundsteinpflaster	Q0 8290,15406 8310,15449 8156,15614
 Parkstr.: Asphalt mit Straßenschäden	Q1 9909,18333 10075,18472 10202,18579 10496,18704
 #: note: anonymous korrigiert (war "schlechtes Kopfsteinpflaster")
 Eintrachtstr.: Asphalt mit Straßenschäden	Q1 10710,18393 10650,18544
 Hiddenseer Str.: Asphalt mit leichten Schäden	Q0 11655,15253 11822,15193
 Stubbenkammerstr.: Asphalt mit leichten Schäden	Q0 11643,15189 11798,15133
 (Chausseestr. - Schulzendorfer Str.): Parkweg	Q1 8286,14635 8316,14667 8263,14838 8248,14900
-(Pankeweg zwischen Pankstr. und Wiesenstr.): Kopfsteinpflaster	Q2 8179,15601 8150,15700 8164,15840
+(Pankeweg zwischen Pankstr. und Wiesenstr.): Kopfsteinpflaster	Q2 8176,15635 8150,15700 8164,15840
 Gropiusstr.: Fahrbahn Kopfsteinpflaster, Uferweg wassergebundene Decke	Q1 8389,16214 8543,16364
 Orthstr.: Parkweg	Q1 8164,15840 8278,16043 8340,16154 8389,16214
-Zugang zum Pankeweg: Parkweg und kleinteiliges Kopfsteinpflaster	Q1 8486,16425 8575,16424 8592,16406
+Zugang zum Pankeweg: Parkweg und kleinteiliges Kopfsteinpflaster	Q1 8486,16425 8567,16429 8592,16406
 Travemünder Str.: Kopfsteinpflaster, Uferweg Parkweg	Q1 8543,16364 8592,16406
 Travemünder Str.: Parkweg	Q1 8592,16406 8659,16494
 Travemünder Str.: Kopfsteinpflaster, Uferweg Parkweg	Q1 8659,16494 8759,16684
-(Pankeweg, teilweise als Walter-Nicklisch-Promenade gekennzeichnet): wechselnder Belag: asphaltiert, Verbundsteinpflaster, Parkweg	Q1 8759,16684 8776,16718 8836,16867 8904,17059 9020,17277 9131,17664 9084,17678 9140,17921
+(Pankeweg, teilweise als Walter-Nicklisch-Promenade gekennzeichnet): wechselnder Belag: asphaltiert, Verbundsteinpflaster, Parkweg	Q1 8759,16684 8776,16718 8836,16867 8904,17059 9027,17290 9131,17664 9084,17678 9140,17921
 (Pankeweg): Parkweg	Q1 8804,16881 8866,17075
 #: unverified_by Radzeit 3/2006
 Hohenschönhausener Weg: asphaltiert	Q0 15611,18547 16317,18020
@@ -1785,7 +1785,7 @@ Presselstr.: schlechtes Kopfsteinpflaster	Q3 6114,4709 6183,4785 6185,4839 6191,
 Kunkelstr.: Beton	Q0 8219,14897 8227,15075
 Kunkelstr.: Gehwegplatten	Q0 8227,15075 8229,15128
 Kunkelstr.: Fahrbahn ist Kopfsteinpflaster, Uferweg ist wassergebundene Decke 	Q1 8229,15128 8232,15220
-Kunkelstr.: Parkweg	Q1 8232,15220 8273,15311
+Kunkelstr.: Parkweg	Q1 8232,15220 8268,15312
 #: XXX: auch eingetragen: "viele Fußgänger"?:
 Rietzestr.: Asphalt	Q0 12718,15214 12480,15352
 Luzinstr.: Beton	Q0 22925,13662 22859,13684 22759,13715
@@ -1805,7 +1805,7 @@ Gudvanger Str.: guter Asphalt	Q0 11581,15831 11684,15997 11758,16111 11905,16318
 #: note: In der ADFC-Karte auch als "mäßig geeignet" ausgewiesen:
 Oudenarder Str.: Kopfsteinpflaster	Q2 7231,16418 7303,16350 7439,16350 7754,16364
 Kaiserswerther Str.: grobes Kopfsteinpflaster	Q3 2762,4713 2673,4651 2545,4565 2461,4556
-Schönstedtstr. (Wedding): gutes Verbundsteinpflaster	Q1 8437,15894 8278,16043
+Schönstedtstr. (Wedding): gutes Verbundsteinpflaster	Q1 8437,15894 8278,16043 8236,16071
 Büchnerweg: Kopfsteinpflaster	Q2 20207,3115 20405,3235 20835,3496 20938,3560 21048,3628
 Badener Str.: Beton	Q0 24051,9156 23467,9422 23140,9556
 Helmstedter Str.: Asphalt	Q0 5726,9029 5711,9349 5704,9557
@@ -2526,7 +2526,7 @@ Moltkestr.: eher schlechtes Kopfsteinpflaster	Q3 4234,4020 4092,4217 4012,4325 3
 Zionskirchstr.: Kopfsteinpflaster	Q1 10101,14455 10277,14350
 #: XXX Teil von Maikäferweg bis Radelandstr. laut "Berliner Umland" "witterungsabhängiger Weg"
 (Mauerweg Forst Spandau): Asphalt	Q0 -7257,16925 -7175,16968 -7151,17330 -6965,17565 -6968,17717 -6919,17841 -6764,18287 -6794,18921 -6943,19311 -7016,19375 -8022,19052
-Eiskeller - Schönwalder Allee: Asphalt	Q0 -6791,20816 -7102,20371 -7586,20088 -7598,19871 -8028,19646 -7991,19503 -8022,19052
+Eiskeller - Schönwalder Allee: Asphalt	Q0 -6791,20816 -7102,20371 -7586,20088 -7582,19875 -7971,19684 -8016,19641 -8018,19562 -7964,19490 -8022,19052
 #: XXX laut "Berliner Umland" im Ostteil ab Oberjägerweg witterungsabhängige Strecke, sonst gut geeigneter Radweg
 (Mauerweg Forst Spandau): mäßiger Asphalt (rauh und Wurzeln)	Q1 -3497,20003 -3805,20118 -4219,20240 -4472,20411 -4625,20537 -5118,20749 -5459,20807
 (Mauerweg Forst Spandau): sehr guter Asphalt	Q0 -5459,20807 -5609,20929 -5795,20965 -6099,20718
@@ -4156,8 +4156,11 @@ Max-Born-Str.: Asphalt	Q0 19111,2777 19064,2867 19053,2890 18951,3069
 Bildhauerweg: guter Asphalt	Q0 15977,1223 16087,1372 16138,1436 16165,1468 16200,1499 16255,1538 16311,1581 16345,1605 16418,1657 16454,1686 16549,1758
 #: by: Jan Hieronymus:
 Formerweg: Beton	Q0 15889,1612 16138,1436
-#: by: Andreas (schwarz...):
+#: by: Andreas (schwarz...): vvv
 Am Seeschloß: Asphalt	Q0 4757,23184 4750,23211 4713,23254
+(Mauerweg am Eiskeller): gut befahrbarer Trampelpfad	Q2 -7971,19684 -8031,19862
+(Mauerweg am Eiskeller): asphaltiert	Q0 -8031,19862 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8022,19052
+#: by: ^^^
 #: by: coco (taschkent):
 Scheiblerstr.: mäßiges Kopfsteinpflaster	Q2 16375,7070 16498,6944 16630,6800
 #: by: Igor Smikalla: vvv
@@ -4430,7 +4433,7 @@ August-Lindemann-Str.: Asphalt	Q0 14346,12790 14398,12934 14414,12979 14431,1302
 Zellestr.: Kopfsteinpflaster	Q2 14133,12482 14188,12664
 Umgehungschaussee: fester breiter Waldweg	Q1 1149,7205 1251,7429 1263,7450 1252,7741 1127,7856 1043,7929 860,8052 864,8110
 (Jagdschloß Grunewald - Umgehungschaussee): fester breiter Waldweg	Q1 905,6631 1149,7205
-(Uferweg am Grunewaldsee): überwiegend fester Waldweg, einige sandige Stellen	Q1 1251,7429 1168,7473 1089,7496 1007,7334 928,7252 794,6958 762,6906 682,6865 574,6842 524,6795 478,6738 306,6582
+(Uferweg am Grunewaldsee): überwiegend fester Waldweg, einige sandige Stellen	Q1 1251,7429 1197,7457 1168,7473 1089,7496 1007,7334 928,7252 794,6958 762,6906 682,6865 574,6842 524,6795 478,6738 306,6582
 (Grunewaldsee - Krumme Lanke): Waldweg	Q2 218,6571 204,6441 115,6292 48,6202 -44,6114 -71,6021 -63,5955 58,5794 70,5722 63,5600 -225,5332 -579,5320
 (Auerbachstr. - Koenigsallee): Kopfsteinpflaster	Q2 490,8716 445,8429
 (Auerbachstr. - Koenigsallee): fester Waldweg	Q1 445,8429 614,8006 761,7922
