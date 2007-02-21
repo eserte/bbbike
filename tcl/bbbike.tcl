@@ -117,6 +117,7 @@ proc draw_net {} {
 	    break
 	}
 	set name [lindex $ret 0]
+	set cat [lindex $ret 2]
 	set koord {}
 	foreach k $kreuzungen {
 	    set xy [strassenToKoord1 $k]
@@ -124,11 +125,44 @@ proc draw_net {} {
 	    lappend koord [lindex $txy 0] [lindex $txy 1]
 	}
 	if {[llength $koord] >= 4} {
-	    eval [concat .t.c create line $koord -fill white -width 3 \
+	    set fill white
+	    set width 3
+	    switch -- $cat {
+		HH -
+		H {
+		    set fill yellow
+		    set width 4
+		}
+		B {
+		    set fill red
+		    set width 5
+		}
+		NN {
+		    set fill "#c0ffc0"
+		    set width 2
+		}
+	    }
+	    eval [concat .t.c create line $koord -fill $fill -width $width \
 		    -tags {[list s $name]}]
 	}
     }
     update
+}
+
+set test 0
+for {set i 0} {$i < $argc} {incr i 2} {
+    set opt [lindex $argv $i]
+    set val [lindex $argv [expr $i + 1]]
+    switch -- $opt {
+	-test {
+	    set test 1
+	    incr i -1
+	}
+	default {
+	    puts "Unknown switch $opt"
+	    exit 1
+	}
+    }
 }
 
 strassenNew strassen
@@ -211,13 +245,21 @@ grid .res.lbox    -row 1 -column 0 -sticky news
 grid .res.hscroll -row 2 -column 0 -sticky news
 grid .res.vscroll -row 1 -column 1 -sticky news
 
+set taskbarheight 20
+switch $tcl_platform(os) {
+    Darwin {
+	# space for menubar and taskbar
+	set taskbarheight 80
+    }
+}
 toplevel .t
-wm geometry .t [join [list [winfo screenwidth .t] x [winfo screenheight .t]] ""]
+wm geometry .t [join [list [winfo screenwidth .t] x [expr [winfo screenheight .t] - $taskbarheight] "+0+0"] ""]
 scrollbar .t.hscroll -orient horiz -command ".t.c xview"
 scrollbar .t.vscroll -command ".t.c yview"
 canvas .t.c -scrollregion {-4000 -4000 4000 4000} \
 	-xscrollcommand ".t.hscroll set" \
-        -yscrollcommand ".t.vscroll set"
+        -yscrollcommand ".t.vscroll set" \
+        -background \#ddeedd
 label .t.l
 .t.c bind s <Enter> {.t.l configure -text [lindex [.t.c gettags current] 1]}
 

@@ -19,6 +19,7 @@ set strassenDatadirs { "./data" "../data" "/home/e/eserte/src/bbbike/data" }
 proc strassenNew {filename} {
     global strassenData strassenPos
     global strassenDatadirs
+    global test
 
     set B ""
     for {set x 0} {$x < [llength $strassenDatadirs]} {incr x} {
@@ -42,8 +43,8 @@ proc strassenNew {filename} {
 	    lappend strassenData $line
 	    incr i
 	}
-	# debug XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-	#if {$i > 100} break
+	# debug
+	if {$test && $i > 100} break
     }
     close $B
 
