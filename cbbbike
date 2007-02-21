@@ -139,6 +139,11 @@ my $IN   = $term->IN  || \*STDIN;
 my $line;
 my $paged;
 
+if ($^O eq 'darwin') {
+    binmode($OUT, ":utf8");
+    binmode($IN, ":utf8");
+}
+
 my $terminal;
 if ($clsscreen) {
     eval {
