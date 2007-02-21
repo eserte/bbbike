@@ -49,7 +49,8 @@ BEGIN {
     {
 	# Achtung: evtl. ist auch ~/lib/ für GD.pm notwendig (z.B. CS)
 	@extra_libs =
-	    (#"/home/e/eserte/src/bbbike",
+	    (grep { -d }
+	     #"/home/e/eserte/src/bbbike",
 	     "$FindBin::RealBin/..", # falls normal installiert
 	     "$FindBin::RealBin/../lib",
 	     "$FindBin::RealBin/../BBBike", # falls in .../cgi-bin/... installiert
@@ -1394,6 +1395,9 @@ sub choose_form {
 	    $prefer_png = 1;
 	} elsif ($bi->is_browser_version("Konqueror", 3.0, 3.9999)) { # andere nicht getestet
 	    $nice_berlinmap = $nice_abcmap = 0;
+	    $prefer_png = 1;
+	} elsif ($bi->is_browser_version("Safari", 419, 9999999)) {
+	    $nice_berlinmap = $nice_abcmap = 1;
 	    $prefer_png = 1;
 	}
     }
