@@ -319,7 +319,8 @@ sub set_info {
 			    ($self->{'user_agent_name'} eq 'Konqueror' &&
 			     $self->{'user_agent_version'} >= 2.0) ||
 			    ($self->{'user_agent_name'} eq 'Opera' &&
-			     $self->{'user_agent_version'} >= 7.0)
+			     $self->{'user_agent_version'} >= 7.0) ||
+			    ($self->{'user_agent_name'} eq 'Safari')
 			   );
 
     my $can_table;
@@ -553,6 +554,8 @@ sub _get_browser_version {
     my($s, $sep) = @_;
     $sep = "/" unless defined $sep;
     if ($s =~ m|\b(Opera)\s+(\d+\.\d+)|) {
+	($1, $2);
+    } elsif ($s =~ m{KHTML.*like Gecko.*(Safari)/(\d+\.\d+)}) {
 	($1, $2);
     } elsif ($s =~ m!^([^$sep]+)$sep(\d+\.\d+(\.\d+)?|beta-.*|PR\d+)!i) {
 	($1, $2);
