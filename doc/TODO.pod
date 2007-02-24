@@ -2788,6 +2788,21 @@ Sehenswürdigkeiten verwendet werden.
 
 =back
 
+=head1 Other languages (Java, Tcl, C++)
+
+=over
+
+=item * (H1)
+
+Tcl version is too slow --- get rid of the E<quot>calculate and show
+all crossingsE<quot>
+
+=item * (H1)
+
+Java version does not compile anymore with Java 1.5
+
+=back
+
 =head1 Distribution/Installation/other development
 
 =over
@@ -2904,6 +2919,12 @@ will run my mapfile again...
 
 =over
 
+=item * (M1)
+
+Maybe try Pod::ProjectDocs for pod2html conversion. But not the 0.31
+version, as it cannot handle umlauts and entities correctly. See
+http://rt.cpan.org/Ticket/Display.html?id=25123
+
 =item * (*M5)
 
 mpod2html scheint Warnungen (nicht existente Links) ins generierte
@@ -2917,10 +2938,6 @@ Verzeichnisstruktur auch unter Sourceforge haben möchte. Oder ich
 bewege alles, vielleicht bis auf README* nach doc. Dann gibt es keine
 Verlinkung zwischen den READMEs und dem Rest der Doku (Dann muss ich
 aber auch alle port/* wahrscheinlich anpassen).
-
-=item * (M4)
-
-Diese TODO-Liste aktualisieren.
 
 =item *
 

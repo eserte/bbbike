@@ -226,6 +226,8 @@ t/*.pm
 t/*.t
 t/Makefile
 t/cgiinfo.cgi
+t/tmp/.keep_me
+t/tmp/.cvsignore
 java/BBBike.java
 java/CanvasProp.java
 java/GeneralStrassen.java
