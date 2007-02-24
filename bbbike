@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.289 2007/02/19 22:45:22 eserte Exp $
+# $Id: bbbike,v 3.289 2007/02/19 22:45:22 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -985,6 +985,7 @@ if ($devel_host && defined $srtbike_icon) {
     # every toplevel in app should get bbbike icon
     require Tk::Toplevel; # make sure it's loaded
     package Tk::Toplevel;
+    *InitObject = *InitObject; # cease warnings
     *InitObject = sub {
 	my($self,$args) = @_;
 	$self->SUPER::InitObject($args);

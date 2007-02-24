@@ -1391,6 +1391,10 @@ the hwnd parameter.
 
 =over
 
+=item * (M1)
+
+Try Win32::GUI::SplashScreen as splash alternative.
+
 =item * (M2)
 
 Do I need to use a larger font if user's font settings are different from Tahoma 8?
