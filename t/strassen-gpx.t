@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-gpx.t,v 1.7 2006/09/12 21:47:14 eserte Exp $
+# $Id: strassen-gpx.t,v 1.7 2006/09/12 21:47:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -58,11 +58,13 @@ isa_ok($s, "Strassen::GPX");
 isa_ok($s, "Strassen");
 
 my %parsed_rte;
+my $do_not_compare_variants = 0;
 
 for my $use_xml_module (@variants) {
  SKIP: {
-	skip("$use_xml_module variant missing", $tests_per_variant)
-	    if !eval qq{ require $use_xml_module; 1 };
+	skip("$use_xml_module variant missing", $tests_per_variant),
+	    $do_not_compare_variants = 1
+		if !eval qq{ require $use_xml_module; 1 };
 
 	$Strassen::GPX::use_xml_module = $Strassen::GPX::use_xml_module if 0; # peacify -w
 	$Strassen::GPX::use_xml_module = $use_xml_module;
@@ -159,7 +161,11 @@ for my $use_xml_module (@variants) {
     }
 }
 
-is($parsed_rte{"XML::LibXML"}, $parsed_rte{"XML::Twig"}, "Both variants same result");
+SKIP: {
+    skip("one or more variants not testable, cannot compare variants", 1)
+	if $do_not_compare_variants;
+    is($parsed_rte{"XML::LibXML"}, $parsed_rte{"XML::Twig"}, "Both variants same result");
+}
 
 {
     my($fh,$file) = tempfile(SUFFIX => ".gpx", UNLINK => 1);
