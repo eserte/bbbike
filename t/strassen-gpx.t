@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-gpx.t,v 1.7 2006/09/12 21:47:14 eserte Exp eserte $
+# $Id: strassen-gpx.t,v 1.8 2007/02/25 20:49:25 eserte Exp $
 # Author: Slaven Rezic
 #
 
