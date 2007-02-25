@@ -80,8 +80,8 @@ Flughafen Tegel	1 2819,16141 2757,16194 2713,16286 2756,16344 2832,16343 2863,16
 Jakob-Kaiser-Platz	1 2816,14145 2839,14205 2873,14213 2906,14172 2873,14112 2816,14145
 Kurt-Schumacher-Damm (Süd)	1 2839,14205 2803,14288 2766,14381 2861,14731
 Kurt-Schumacher-Damm (Süd)	1 3006,14724 2881,14307 2873,14213
-Kurt-Schumacher-Damm (Nord)	1 3567,16369 3645,16509 3722,16649 3853,16825 3948,16849
-Kurt-Schumacher-Damm (Nord)	1 3948,16849 3824,16590 3744,16452 3612,16232
+Kurt-Schumacher-Damm (Nord)	1 3564,16294 3676,16497 3753,16638 3853,16825 3948,16849
+Kurt-Schumacher-Damm (Nord)	1 3948,16849 3788,16621 3711,16481 3585,16252
 Ferdinand-Friedensburg-Platz	1 -914,14602 -1357,14533 -1508,14508 -1369,14644 -1119,14659 -914,14602
 Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3313,14777 -3261,14769 -3248,14731 -3255,14685 -3301,14669 -3352,14676
 # Fasanenstr. für Radfahrer frei: 7167,8218 7169,8194 7174,8127
@@ -379,6 +379,7 @@ Langensteiner Weg	1 7282,4716 7335,4879 7437,4855
 Lowise-Reuter-Ring	1 13680,4715 13560,4681 13511,4695 13482,4718 13468,4766 13476,4812 13503,4846 13540,4861 13574,4862 13639,4850 13675,4855
 #: by: Gisela Mauer:
 Pfahlerstr.	1 5301,18447 5423,18438 5551,18434
+Harnackstr.	1 15848,11528 15881,11621 15871,11690 15911,11790 15984,11827 16134,11774
 #
 # Potsdam
 #
@@ -584,12 +585,15 @@ Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3nocross 13001,11000 13080,109
 Klingelhöferstr.: Mittelstreifen	3 6683,11367 6853,11336 6880,11110
 Klingelhöferstr.: Mittelstreifen	3 7160,11225 6853,11336 6880,11110
 Klingelhöferstr.: Mittelstreifen	3 6880,11110 6853,11336 6683,11367
+Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21158,15885 21220,15741 21235,15641
 #
 ####################################################################
 #
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 #
+#: by: Alwin (...schock):
+tragen (Treppe)	0:30 1761,3208
 tragen (Treppe)	0:30 17757,11761
 tragen (15 Stufen)	0:30 4710,23263
 tragen (Treppe)	0:30 1179,13532

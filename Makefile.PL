@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.134 2006/10/28 11:41:15 eserte Exp $
+# $Id: Makefile.PL,v 1.135 2007/02/24 20:34:56 eserte Exp $
 
 use 5.005;
 
@@ -115,8 +115,10 @@ my @req_table =
    'Tortendiagramme in der Statistik'],
   [qw/List::Permutor	0	all	0|4	base/,
    'Für das Problem des Handlungsreisenden'],
-  [qw/PDF::Create	0.06	all	2|4	base/,
-   'Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)'],
+#  [qw/PDF::Create	0.06	all	2|4	base/,
+#   'Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)'],
+  [qw/PDF::Create::GIFImage	0	all	2|4	base/,
+   'Erzeugung der Route als PDF-Dokument --- das ist die neueste Version wie auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)'],
   [qw/Font::Metrics::Helvetica	0	all	0	base/,
    'Für die Reparatur der Zeichenbreitentabellen in PDF::Create'],
   #in dist: [qw/BikePower	0	all	0	base/],

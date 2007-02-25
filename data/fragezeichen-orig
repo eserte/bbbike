@@ -954,7 +954,7 @@ Stille Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10184,18875 10128,19110
 (Am Schloss Schönhausen): Qualität, für Autofahrer befahrbar?	? 10390,19069 10322,19046 10278,19072 10249,19148 10223,19223 10243,19267 10308,19297
 Schloßallee - Blankenburger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10661,19307 10481,19344 10393,19587
 Lindenberger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 11312,19537 11194,19861
-Treskowstr.: Qualität (laut ADFC-Karte gut geeignet)?	? 9978,19512 9809,19529 9714,19615 9677,19651 9565,19751 9489,19826 9403,20072
+Treskowstr.: Qualität (laut ADFC-Karte gut geeignet)?	? 9978,19512 9809,19529 9714,19615 9677,19651 9565,19751 9489,19826 9408,19968 9403,20072
 Wördenweg und Fortsetzung am Nordgraben: Qualität (laut ADFC-Karte nicht für Radfahrer geeignet)? Weg für Autofahrer geöffnet?	? 8526,21110 8122,20873 7671,20757 7428,20674
 Blaubeerweg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 10953,22195 10979,21977 11008,21725
 Mazetstr.: Qualität (laut ADFC-Karte überwiegend gut geeignet)? Ist der Abschnitt östlich der Blankenfelder Str. für Autofahrer gesperrt?	? 10979,21977 11026,21997 11329,22138 11437,22198 11566,22350
@@ -1257,8 +1257,6 @@ Sparrstr. - Triftstr.: Durchfahrt für Radfahrer offen?	? 7303,15173 7241,15293
 #: note: unklarer Eintrag von anonymous: "mäßig", "kein Radweg" existiert
 Turmstr. (Potsdam): Qualität?	? -8081,-4396 -8111,-4396 -8259,-4119
 Turmstr. (Potsdam): Qualität?	? -8294,-4022 -8404,-3824 -8510,-3616
-#: note: unklarer Beitrag: Verbundstraße Q1, Fußgängerzone (?), q4
-Thomas-Mann-Str.: Qualität?	? 12886,15346 12993,15275 13106,15202 13240,15408
 Kronprinzessinenweg/Havelchaussee - Schlachtensse: existiert ein für Radfahrer befahrbarer Weg? Qualität?	? -3296,3686 -3324,3382
 #: note: unklarer Beitrag: Asphalt Q0, aber bezog sich das auf den Klinkeplatz oder die Kaiserstr.?:
 Kaiserstr. (Spandau): Qualität?	? -3840,16968 -3827,16900 -3788,16657 -3762,16502 -3760,16381
@@ -1377,8 +1375,6 @@ Pankeweg: Bauarbeiten an der Soldiener Str. mittlerweile abgeschlossen?	? 8904,1
 Wongrowitzer Steig: Qualität (laut ADFC-Karte gut geeignet)?	? 22785,6984 22659,7015 22474,7065 22240,7122 22132,7148 22035,7146
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20050810.1640.28623.html:
 Fürstenwalder Damm: existieren zwischen Stillerzeile und Müggelseedamm Radwege?	? 25039,5766 23950,5342
-#: by: http://www.berlin.de/ba-pankow/presse/archiv/20050823.1055.29114.html
-Berliner Str.: existiert zwischen Thulestr. und Westerlandstr. ein (benutzungspflichtiger) Radweg?	?; 11042,16605 11018,16730 10999,16830 10986,16897
 #: Verlauf aus goyello - Daniel Weber nach der Qualität fragen [AM]
 (Lilienthalpark): beleuchtet, Fußgängerfrequenz?	? 5503,575 5571,614 5671,637 5615,735 5576,800 5584,808 5571,864 5540,919
 (Lilienthalpark): beleuchtet, Fußgängerfrequenz?	? 5578,936 5540,919 5345,816
@@ -1407,7 +1403,7 @@ Pöppelmannstr.: Qualität?	? 6505,7010 6530,6786
 Grazer Platz: Überquerung des Platzes in Höhe Pöppelmannstr. möglich? Qualität?	? 6530,6786 6546,6720
 Kauschstr.: Qualität?	? 6517,6717 6538,6499
 Sachsenwaldstr.: Qualität?	? 5834,6142 5996,6238 6116,6261
-Segelfliegerdamm: Bauarbeiten mittlerweile beendet?	? 17797,4441 18058,4627
+#XXX (del by Inez Rankwitz, nicht 100%ig): Segelfliegerdamm: Bauarbeiten mittlerweile beendet?	? 17797,4441 18058,4627
 #: XXX genaue Wegführung?
 Am Schweizer Garten: Qualität?	? 11868,13646 12001,13863
 Zur Rinderauktionshalle: Qualität? Für Autofahrer gesperrt?	? 14202,13140 14444,13068
@@ -1461,7 +1457,6 @@ Am Golfplatz: Qualität? Für Autos gesperrt?	? -7559,6218 -6977,5851
 Am Golfplatz: Qualität? Für Autos gesperrt?	? -6846,6049 -6444,5798 -6420,5771
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20061201.0900.51333.html
 Eichelmatenweg: Qualität (zumindest zwischen Porthanweg und Am Ritterholz wahrscheinlich gut)?	? -7184,5118 -7166,5138 -7182,5440 -7182,5498 -7161,5560 -7045,5745 -6977,5851 -6846,6049
-Olympisches Dorf - Döberitzer Heide: Qualität (wahrscheinlich eher sandiger Weg)?	? -16015,13705 -16014,13680 -16087,13631 -16127,13586 -16139,13513 -16127,13452 -16151,13348 -16176,13263 -16206,13248 -16273,13287 -16313,13290 -16334,13269 -16355,13187 -16422,13117 -16581,13080 -16733,13065 -16837,13007
 Wuhletalstr. - Eichenallee: Qualität?	? 20732,17682 20801,17821 20804,17848
 Grüne Trift - Lindenberger Str.: Qualität? Straßennamen?	? 19579,18933 19381,19003 19157,19122 19125,19130 19061,19145 18997,19157 18947,19168 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18074,19227
 Str. 10, entlang des Hechtgrabens: Qualität?	? 18121,19390 18025,19433 17838,19501 17679,19532 17015,19287 16768,19191 16736,19193

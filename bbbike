@@ -3063,6 +3063,7 @@ sub do_iconframe {
     my $resetm = $resetmb->Menu(-title => M"Route löschen");
     $resetm->command(-label => M"Gesamte Route löschen",
 		     -command => \&delete_route,
+		     -accelerator => 'Ctrl-X',
 		    );
     $resetm->command(-label => M"Letzten Punkt der Route löschen",
 		     -command => \&mouse_dellast,
@@ -6607,6 +6608,7 @@ sub set_bindings {
 
     $top->bind("<BackSpace>" => \&mouse_dellast);
     $top->bind("<Shift-BackSpace>" => \&delete_route);
+    $top->bind("<Control-Key-x>" => \&delete_route);
     $top->bind("<Delete>" => \&deltovia);
 
     if ($advanced) {
