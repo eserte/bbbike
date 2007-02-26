@@ -746,6 +746,23 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	2::inwork 35482,-103562 35379,-103141 35072,-102150
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1175292000,
+         'text' => 'Fürstenwalder Damm, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, Baustelle bis 30.03.2007 (im Bereich Einmündung Mühlweg) ',
+         'from' => 1172530568,
+         'data' => 'userdel	q4::inwork 25039,5766 23950,5342
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_004793',
+         'until' => 1173999599,
+         'text' => 'Hildburghauser Str. (Steglitz) in beiden Richtungen zwischen Oberhofer Weg und Geraer Str. Baustelle, Fahrbahn auf einen Fahrstreifen verengt, Verkehr wird wechselseitig vorbeigeführt (bis Mitte 03.2007)',
+         'from' => 1172530621,
+         'data' => 'userdel	q4::inwork 5418,1292 5560,1278 5740,1227
+',
+         'type' => 'handicap'
        }
      
 );

@@ -7119,4 +7119,21 @@ EOF
 userdel	2::inwork 35482,-103562 35379,-103141 35072,-102150
 EOF
      },
+     { from  => 1172530568, # 2007-02-26 23:56
+       until => 1175292000, # 2007-03-31 00:00
+       text  => 'Fürstenwalder Damm, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, Baustelle bis 30.03.2007 (im Bereich Einmündung Mühlweg) ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 25039,5766 23950,5342
+EOF
+     },
+     { from  => 1172530621, # 2007-02-26 23:57
+       until => 1173999599, # 2007-03-15 23:59
+       text  => 'Hildburghauser Str. (Steglitz) in beiden Richtungen zwischen Oberhofer Weg und Geraer Str. Baustelle, Fahrbahn auf einen Fahrstreifen verengt, Verkehr wird wechselseitig vorbeigeführt (bis Mitte 03.2007)',
+       type  => 'handicap',
+       source_id => 'IM_004793',
+       data  => <<EOF,
+userdel	q4::inwork 5418,1292 5560,1278 5740,1227
+EOF
+     },
     );
