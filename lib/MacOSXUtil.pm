@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MacOSXUtil.pm,v 1.1 2007/02/26 00:51:22 eserte Exp $
+# $Id: MacOSXUtil.pm,v 1.2 2007/02/26 00:53:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -27,7 +27,7 @@ MacOSXUtil - a collection of MacOSX related functions
 use strict;
 use vars qw($DEBUG $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 $DEBUG=0 unless defined $DEBUG;
 
 sub client_window_region {

@@ -26,11 +26,11 @@ Vordergrund erscheinen.
 
 Texte in der Anwendung: die Schriftgröße sollte der Schriftgröße der
 normalen Desktopumgebung entsprechen (zumindest unter KDE, Windows und
-Standard-X11).
+Standard-X11, noch nicht unter MacOSX).
 
 Farben in der Anwendung: die Schriftfarbe und Hintergrundfarbe sollte
 der normalen Desktopumgebung entsprechen (zumindest unter KDE, Windows
-und Standard-X11).
+und Standard-X11, noch nicht unter MacOSX).
 
 I<X11>: Im Terminalfenster sollte nichts Kryptisches stehen.
 
@@ -85,7 +85,7 @@ wird in diesem Fenster angezeigt.
 =head3 Auf E<quot>SichernE<quot> klicken
 
 Ein Dateiselektor erscheint. Beliebigen Dateinamen ohne Extension in
-einem temporären Verzeichnis eingeben und mit E<quot>OpenE<quot> oder
+einem temporären Verzeichnis eingeben und mit E<quot>SaveE<quot> oder
 E<quot>OkE<quot> bestätigen. Die erzeugte Datei sollte eine
 E<quot>.txtE<quot> besitzen und mit einem üblichen Texteditor/-viewer
 zu öffnen und zu lesen sein. Die Datei sollte die Routenliste
@@ -105,12 +105,21 @@ wegklicken.
 I<X11>: Ein Vorschaufenster (z.B. per PDF-Viewer) mit der formatierten
 Routenliste erscheint. Fenster wegklicken.
 
+I<MacOSX>: Der PostScript-zu-PDF-Konverter wird angeworfen (kann
+länger dauern) und das erzeugte PDF-Dokument wird angezeigt. Fenster
+wegklicken, nicht speichern.
+
 I<Windows>: Ein Editor-Fenster mit der Routenliste erscheint kurz;
 danach wird die Datei direkt zum Drucker geschickt.
 
 =head3 Auf E<quot>MailE<quot> klicken
 
-B<KNOWN ISSUE>: Zu alte Version von Mail::Mailer bei Windows.
+B<KNOWN ISSUE>: Zu alte Version von Mail::Mailer bei Windows. (->
+Vielleicht Mail-Button entfernen???)
+
+B<KNOWN ISSUE>: Standard-Postfix-Installation unter MacOSX (?) reicht
+nicht aus, um Mails zu versenden (-> Vielleicht Mail-Button entfernen???)
+
 B<NOTE>: 
 
 Ein Fenster mit den Eingabefeldern E<quot>Mail anE<quot>,
@@ -156,7 +165,7 @@ Die Spalte mit den Kommentaren erscheint wieder.
 
 =head3 Das Fenster mit der E<quot>Aktuellen RouteE<quot> schließen
 
-=head3 Mit der rechten Maustaste auf der Karte klicken
+=head3 Mit der rechten Maustaste auf der Karte klicken (Mac: Apfel-Maustaste)
 
 Ein Popup-Menü erscheint. B<NOTE>: bei einigen GUI-Systemen (X11) kann
 es notwendig sein, die Maustaste gedrückt zu halten.
@@ -199,10 +208,14 @@ Es wird wieder eine Routensuche aktiviert, siehe oben. Einziger
 Unterschied: es wird keine Anpassung des Kartenausschnitts
 durchgeführt.
 
-=head3 Mittlere Maustaste auf der Karte gedrückt halten und langsam
-bewegen
+=head3 Linke Maustaste auf der Karte gedrückt halten und bewegen
 
-Die Karte wird in der gleichen Richtung gescrollt.
+Die Karte wird (langsam) in der gleichen Richtung gescrollt.
+
+=head3 Mittlere Maustaste (Mac: Alt+Maustaste) auf der Karte gedrückt
+halten und langsam bewegen
+
+Die Karte wird (schnell) in der gleichen Richtung gescrollt.
 
 =head3 Auf die Pfeile der Windrose klicken
 
@@ -325,7 +338,7 @@ haben.
 
 =head3 Datei > Exportieren > PNG
 
-I<Windows>: Wegen fehlender externer Programme (aus der
+I<Windows, MacOSX>: Wegen fehlender externer Programme (aus der
 netpbm-Sammlung) nicht verwendbar.
 
 Wieder F<test> schreiben.
@@ -339,7 +352,8 @@ Image-Viewer angesehen werden.
 
 =head3 Datei > Exportieren > PPM
 
-I<Windows>: Diese drei Funktionen sind ebenfalls nicht verwendbar.
+I<Windows, MacOSX>: Diese drei Funktionen sind ebenfalls nicht
+verwendbar.
 
 Ansonten: jeweils F<test> schreiben und sich die erzeugten Dateien
 (F<test.gif>, F<test.jpeg>, F<test.ppm>) mit einem Image-Viewer
@@ -367,7 +381,7 @@ jeweils F<.txt> verwendet.
 Beim Speichern den Dateinamen F<test> verwenden. Die erzeugte Datei
 sollte F<test.bbd> heißen.
 
-=head3 Kartenebenen > Zusätzliche Layer > Straßen-Layer
+=head3 Kartenebenen > Zusätzliche Kartenebenen > Straßen-Layer
 zeichnen
 
 Auf den Dateiselektor-Button klicken und die Datei F<test.bbd>
@@ -378,7 +392,7 @@ auswählen.
 Ein neuer Layer wird gezeichnet, der genau der aktuellen Route
 entspricht und deshalb nicht sichtbar ist.
 
-=head3 Route > Route löschen
+=head3 Route > Route löschen > Gesamte Route löschen
 
 Der Layer ist nun sichtbar, erkennbar an den fehlenden Flaggen.
 
@@ -386,7 +400,7 @@ Der Layer ist nun sichtbar, erkennbar an den fehlenden Flaggen.
 
 Nun sind die Flaggen wieder sichtbar.
 
-=head3 Kartenebenen > Zusätzliche Layer > Layer löschen
+=head3 Kartenebenen > Zusätzliche Kartenebenen > Layer löschen
 
 In der Liste erscheint ein Button mit dem Namen C<test.bbd>.
 
@@ -418,7 +432,7 @@ Die erzeugte Datei sollte F<test.fig> heißen. Sie kann beispielsweise
 mit xfig angesehen werden oder mit einem Programm aus der
 fig2*-Sammlung konvertiert werden.
 
-C<Windows>: In der BBBike-Distribution ist kein fig-Viewer dabei.
+I<Windows>: In der BBBike-Distribution ist kein fig-Viewer dabei.
 
 =head3 Kartenebenen > Straßen > Erweitere Auswahl > Volltextsuche
 
@@ -474,6 +488,9 @@ auswählen
 Das Fenster wird geschlossen.
 
 =head3 Einstellungen > Schriftart ändern
+
+I<Unix, MacOSX>: L<Tk::FontDialog> wird für die Schriftartenänderungen
+benötigt, ist aber nicht standardmäßig bei Tk dabei.
 
 Ein Zeichensatzdialog erscheint. Die aktuelle Schriftfamilie und
 -größe sollte selektiert sein (unter X11 typischerweise

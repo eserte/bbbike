@@ -1352,6 +1352,44 @@ oder Standard?
 
 =over
 
+=item * (M5)
+
+Bei E<quot>Schriftart ändernE<quot> erscheint folgende Fehlermeldung:
+
+ Tk::Error: named font "Helvetica -12 bold" doesn't exist at /Library/Perl/5.8.6/darwin-thread-multi-2level/Tk/Submethods.pm line 19.
+ Tk callback for font
+ Tk::Submethods::__ANON__ at /Library/Perl/5.8.6/darwin-thread-multi-2level/Tk/Submethods.pm line 19
+ main::set_fonts at ./bbbike line 18370
+ main::change_font at ./bbbike line 18254
+ main::__ANON__ at ./bbbike line 3485
+ Tk callback for .#menu.#frame#frame#symframe#frame1#menubutton7#menu
+ Tk::__ANON__ at /Library/Perl/5.8.6/darwin-thread-multi-2level/Tk.pm line 249
+ Tk::Menu::Invoke at /Library/Perl/5.8.6/darwin-thread-multi-2level/Tk/Menu.pm line 532
+ <ButtonRelease>
+ (command bound to event)
+
+In früheren Versuchen hat es aber funktioniert. Vielleicht liegt es an
+der Vorgeschichte (hatte gerade tests.pod durchgespielt)?
+
+=item * (M5)
+
+xfig-Erzeugung scheint nicht zu funktionieren, es wird kein ...fig
+erzeugt (aber dafür ...fig-images?)
+
+=item * (M2)
+
+Exportieren > PDF: Funktioniert nicht, aber Ps wird sowieso
+automatisch zu Pdf konvertiert, also könnte man die Funktion aus dem
+Menü herausnehmen oder einen entsprechenden Dialog anzeigen.
+
+=item * (M2)
+
+Wenn die Routenliste gespeichert wird, bekommt sie keine
+E<quot>.txtE<quot>-Extension, sondern bleibt extensionlos. Außerdem
+sollte die Routenliste vielleicht mit utf-8 gespeichert werden, da
+besser vom Betriebssystem unterstützt? Vielleicht auch unter Unix
+und/oder Windows? Vielleicht als Option anbieten?
+
 =item * (H2)
 
 Maybe create a Mac distribution using .dmg disk images? See for
