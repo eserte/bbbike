@@ -529,6 +529,9 @@ if ($os eq 'win') {
         $bbbike_configdir = catfile($home, "BBBike");
     }
 }
+if ($^O eq 'darwin') {
+    require MacOSXUtil;
+}
 if (!defined $bbbike_configdir) {
     $bbbike_configdir = defined $ENV{HOME} ? catfile($ENV{HOME}, ".bbbike")
     		        		   : "/bbbike.cfg";
@@ -4973,6 +4976,8 @@ sub set_default_geometry {
 	    @max_extends = $kde->client_window_region();
 	} elsif ($os eq 'win') {
 	    @max_extends = Win32Util::client_window_region($top);
+	} elsif ($^O eq 'darwin') {
+	    @max_extends = MacOSXUtil::client_window_region($top);
 	} else {
 	    if ($top->property("exists", "_NET_CURRENT_DESKTOP", "root") &&
 		$top->property("exists", "_NET_WORKAREA", "root")) {

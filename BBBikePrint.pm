@@ -229,7 +229,9 @@ sub BBBikePrint::print_postscript {
     } elsif (is_in_path("kghostview")) {
 	return 1 if $check_availability;
 	system("kghostview $file&");
-    } elsif ($os eq 'unix') {
+    } elsif ($^O eq 'darwin') {
+	system("open $file&"); # will call ps to pdf converter
+    } elsif ($os eq 'unix' && $^O ne 'darwin') {
 	# XXX Tk::Ghostscript funktioniert noch nicht so
 	# toll... besser mit gs-5.10 als mit gs-3.53
 	# Tk::Ghostview ist in 800.004 nicht mehr vorhanden
