@@ -7136,4 +7136,13 @@ EOF
 userdel	q4::inwork 5418,1292 5560,1278 5740,1227
 EOF
      },
+     { from  => 1172646005, # 2007-02-28 08:00
+       until => 1175378399, # 2007-03-31 23:59
+       text  => 'Kastanienallee (Pankow) Richtung Schönhauser Str. zwischen Friedrich-Engels-Str. und Eschenallee Baustelle, Fahrtrichtung gesperrt (bis Ende 03.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_004803',
+       data  => <<EOF,
+userdel	1::inwork 8915,20605 9476,20647 9655,20703 9737,20728 9848,20764
+EOF
+     },
     );
