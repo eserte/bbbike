@@ -219,15 +219,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_002765',
-         'until' => undef,
-         'text' => 'Linienstr. (Mitte) in Richtung Tucholskystr., ab Oranienburger Str. Straßenarbeiten, Einbahnstraße',
-         'from' => 1147721063,
-         'data' => 'userdel	q4; 9607,13507 9281,13374
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -773,19 +765,20 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1172854800,
-         'text' => 'Linienstr. zwischen Tucholskystr. und Kleine Hamburger Str. gesperrt wegen Straßenbauarbeiten. Dauer: 01.03.2007 07.00 Uhr bis 02.03.2007 18:00 Uhr. ',
-         'from' => 1172642400,
-         'data' => 'userdel	2::inwork 9752,13575 9607,13507
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1184536800,
          'text' => 'L 075 Karl-Marx-Str. OD Großziethen, nördl. Attilastr.- Landesgrenze Berlin, Buckower Damm; Straßen- und Kanalbau Vollsperrung 05.03.2007-15.07.2007 ',
          'from' => 1172962800,
          'data' => 'userdel	2::inwork 12984,1011 13090,205
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1173654000,
+         'text' => 'B 112 zw. Wüste Kunersdorf und Lebus Gründungsarb. für Radwegbau Vollsperrung 09.03.2007-11.03.2007 ',
+         'from' => 1173308400,
+         'data' => 'userdel	2::inwork 86420,913 86769,1414
 ',
          'type' => 'gesperrt'
        }

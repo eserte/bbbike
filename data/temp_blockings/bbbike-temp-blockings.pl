@@ -4427,7 +4427,7 @@ userdel	1 15388,16502 15121,16503 14621,16563
 EOF
      },
      { from  => 1147721063, # 2006-05-15 21:24
-       until => undef, # was 2006-05-17 00:00, but continuing
+       until => 1172778049, # was 2006-05-17 00:00, but continuing undef
        text  => 'Linienstr. (Mitte) in Richtung Tucholskystr., ab Oranienburger Str. Straßenarbeiten, Einbahnstraße',
        type  => 'handicap',
        source_id => 'IM_002765',
@@ -7146,7 +7146,7 @@ userdel	1::inwork 8915,20605 9476,20647 9655,20703 9737,20728 9848,20764
 EOF
      },
      { from  => 1172642400, # 2007-02-28 07:00
-       until => 1172854800, # 2007-03-02 18:00
+       until => 1172777980, # 2007-03-02 18:00 1172854800
        text  => 'Linienstr. zwischen Tucholskystr. und Kleine Hamburger Str. gesperrt wegen Straßenbauarbeiten. Dauer: 01.03.2007 07.00 Uhr bis 02.03.2007 18:00 Uhr. ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -7159,6 +7159,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 12984,1011 13090,205
+EOF
+     },
+     { from  => 1173308400, # 2007-03-08 00:00
+       until => 1173654000, # 2007-03-12 00:00
+       text  => 'B 112 zw. Wüste Kunersdorf und Lebus Gründungsarb. für Radwegbau Vollsperrung 09.03.2007-11.03.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 86420,913 86769,1414
 EOF
      },
     );

@@ -12,13 +12,14 @@
 Leipziger Straße zwischen Leipziger Platz und Wilhelmstraße (entweder beidseitig oder nur auf der Südseite)	? 8733,11524 9046,11558
 #: last_checked: 2006-08-01
 Mollstr.	? 11905,13069 11867,13076 11839,13083 11721,13142 11681,13161 11557,13228 11446,13294
+#: last_checked: 2007-03-01
 Stralauer Str.	? 11351,12221 11304,12234 11139,12243 11094,12243 10946,12241 10826,12279 10804,12291 10738,12364
 #: last_checked: 2006-10-25
 Alt-Moabit zwischen Kirch- und Paulstraße	? 7192,13036 7000,13067 6882,13088 6757,13112 6661,13130
 Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 10109,12238 10084,12228 9972,12184
 #: last_checked: 2005-11-07
 Köpenicker Str. (in Mitte und/oder in Kreuzberg?)	? 11155,11750 11242,11720 11574,11594 11807,11479 11943,11398 12026,11348
-#: last_checked: 2006-05-28
+#: last_checked: 2007-03-01
 Holzmarktstr.	? 11773,12006 11619,12084 11388,12202 11351,12221
 #: last_checked: 2007-01-09
 Gitschiner Str.	? 9948,10280 10122,10294 10340,10301 10605,10312 10859,10333 10962,10340 11114,10338
@@ -44,12 +45,6 @@ Reichsstr.	? 1403,11428 1308,11506 1220,11583 1133,11664 1033,11754 881,11893 81
 #: by ^^^
 #: by Berliner Kurier: vvv
 Max-Beer-Str.: Fahrradstraße geplant (2005, aber noch nichts passiert)	? 10632,13199 10703,13467 10740,13621
-#: note: laut http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0511/nachricht2119.html Fertigstellung bis 2008-02-28 (genau: bis zur Feuerwache)
-Linienstr.: Fahrradstraße geplant (nach der Sanierung)?	? 9281,13374 9607,13507
-#: note: laut http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0511/nachricht2119.html Fertigstellung bis 2006-10-31
-#: note: Fertigstellung erfolgt: nur dieser Teil oder die gesamte Straße?
-#: by: http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2007/0215/lokales/0042/index.html
-Linienstr.: Fahrradstraße geplant (nach der Sanierung)?	? 9607,13507 9752,13575 9903,13646
 #: note: laut http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0511/nachricht2119.html Fertigstellung bis 2007-11-30
 Linienstr.: Fahrradstraße geplant (nach der Sanierung)?	? 9903,13646 9944,13665 9964,13665 10020,13669 10081,13673 10214,13680 10308,13679 10432,13678 10597,13647 10718,13625
 #: by ^^^
@@ -788,7 +783,6 @@ Dewitz - Rosenhagen: laut Aktiv Regional viele Steigungen und Gefälle	? 6502,121
 Johannes-Bobrowski-Str.: Qualität (Asphalt?)	? 24692,14617 24543,14578 24515,14484
 Rösnerstr.: Qualität?	? 4165,5243 4204,5285
 Rudolf-Breitscheid-Str. (Babelsberg): sind zwischen Karl-Liebknecht-Str. und Plantagenstr. (vielleicht auch weiter?) ebenfalls Suggestivstreifen?	? -10446,-1947 -10360,-1934 -9986,-1882 -9735,-1845
-Claire-Waldoff-Str.: Verbindung zur Albrechtsstr./Reinhardstr.?	? 9114,13217 9001,13039
 #: XXX: von der Bahnstrecke aus gesehen: vvv
 Weg ist neu asphaltiert	? -14277,18001 -14603,18132
 Radweg B-K: Asphalt sieht nicht so gut aus	? -1532,28723 -1233,28982
@@ -953,7 +947,6 @@ Stille Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10184,18875 10128,19110
 (Am Schloss Schönhausen): Qualität, für Autofahrer befahrbar?	? 10390,19069 10322,19046 10278,19072 10249,19148 10223,19223 10243,19267 10308,19297
 Schloßallee - Blankenburger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10661,19307 10481,19344 10393,19587
 Lindenberger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 11312,19537 11194,19861
-Treskowstr.: Qualität (laut ADFC-Karte gut geeignet)?	? 9978,19512 9809,19529 9714,19615 9677,19651 9565,19751 9489,19826 9408,19968 9403,20072
 Wördenweg und Fortsetzung am Nordgraben: Qualität (laut ADFC-Karte nicht für Radfahrer geeignet)? Weg für Autofahrer geöffnet?	? 8526,21110 8122,20873 7671,20757 7428,20674
 Blaubeerweg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 10953,22195 10979,21977 11008,21725
 Mazetstr.: Qualität (laut ADFC-Karte überwiegend gut geeignet)? Ist der Abschnitt östlich der Blankenfelder Str. für Autofahrer gesperrt?	? 10979,21977 11026,21997 11329,22138 11437,22198 11566,22350
@@ -1327,7 +1320,6 @@ Kirchstr.: Asphalt oder Kopfsteinpflaster?	? 22312,4593 22263,4671 22243,4710 22
 Bellevuepark: ist ein Weg für Radfahrer offiziell freigegeben?	? 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340
 Idsteiner Str.: Qualität (laut ADFC-Karte zwischen Königsweg und Hegauer Weg mäsig, danach bis Ludwigsfelder Str. gut geeignet)?	? -163,1564 -284,2009 -319,2212 -383,2519
 Hegauer Weg: Qualität (laut ADFC-Karte ist der westliche Abschnitt gut, der östliche Abschnitt mäßig geeignet)?	? -371,2187 -319,2212 -165,2303 -6,2434
-Fürstenstr.: Qualität?	? -385,2896 -426,2978 -495,3113 -526,3229 -502,3429 -461,3522
 #: note: schien mir auch von der S-Bahn so auszusehen:
 Bülowstr. (Zehlendorf): Qualität (laut ADFC-Karte bis auf einen kleinen Abschnitt am Mexikoplatz gut geeignet)?	? -426,2978 -662,2998 -872,3133 -1052,3276 -1054,3328
 Heinrich-Laehr-Park: Weg am östlichen Rand des Parks befahrbar? Qualität? (lauf ADFC-Karte gut geeignet)	? 1527,574 1273,1672
