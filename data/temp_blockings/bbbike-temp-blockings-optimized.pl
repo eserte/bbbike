@@ -772,6 +772,22 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	1::inwork 8915,20605 9476,20647 9655,20703 9737,20728 9848,20764
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1172854800,
+         'text' => 'Linienstr. zwischen Tucholskystr. und Kleine Hamburger Str. gesperrt wegen Straßenbauarbeiten. Dauer: 01.03.2007 07.00 Uhr bis 02.03.2007 18:00 Uhr. ',
+         'from' => 1172642400,
+         'data' => 'userdel	2::inwork 9752,13575 9607,13507
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1184536800,
+         'text' => 'L 075 Karl-Marx-Str. OD Großziethen, nördl. Attilastr.- Landesgrenze Berlin, Buckower Damm; Straßen- und Kanalbau Vollsperrung 05.03.2007-15.07.2007 ',
+         'from' => 1172962800,
+         'data' => 'userdel	2::inwork 12984,1011 13090,205
+',
+         'type' => 'gesperrt'
        }
      
 );
