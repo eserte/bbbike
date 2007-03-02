@@ -1832,7 +1832,7 @@ EOF
        text  => 'Berliner Allee Richtung stadtauwärts, zwischen Langhanstr. und Lindenallee Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 13540,15928 13751,16009 14014,16106 14067,16127 14371,16252
+userdel	q4; 13540,15928 13751,16009 13821,16035 14014,16106 14067,16127 14371,16252
 EOF
      },
      { from  => 1138319749, # 2006-01-27 00:55
@@ -7167,6 +7167,30 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 86420,913 86769,1414
+EOF
+     },
+     { from  => 1173049200, # 2007-03-05 00:00
+       until => 1173394800, # 2007-03-09 00:00
+       text  => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 06.03.2007-08.03.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 73204,97424 72745,97584
+EOF
+     },
+     { from  => 1172962800, # 2007-03-04 00:00
+       until => 1188165600, # 2007-08-27 00:00
+       text  => 'B 198 Neubrandenburger Str. OD Prenzlau Grundhafter Straßenbau Vollsperrung 05.03.2007-26.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 38439,102279 37547,102663
+EOF
+     },
+     { from  => 1173222000, # 2007-03-07 00:00
+       until => 1173481200, # 2007-03-10 00:00
+       text  => 'K 6905 Langerwisch-B 2 Potsdam Bahnübergang in der OD Wilhelmshorst Markierungsarbeiten Vollsperrung 08.03.2007-09.03.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -12451,-9641 -12751,-8997 -12835,-8819
 EOF
      },
     );

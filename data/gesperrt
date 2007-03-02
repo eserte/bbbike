@@ -409,8 +409,8 @@ Stephanstr.	1s 6526,4475 6377,4490
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Ringbahnstr.	1s 8717,6965 8447,6964
 Björnsonstr.	1s 10209,16674 10197,16528
-Hauptstr. -> Hildegard-Marcusson-Str.: Hauptstr. Straßenbahntrasse	3 16138,10105 16004,10204 15952,10134
-Hildegard-Marcusson-Str. -> Hauptstr.: Hauptstr. Straßenbahntrasse	3 15952,10134 16004,10204 15629,10481
+Hauptstr. -> Hildegard-Marcusson-Str.: Straßenbahntrasse	3 16138,10105 16004,10204 15952,10134
+Hildegard-Marcusson-Str. -> Hauptstr.: Straßenbahntrasse	3 15952,10134 16004,10204 15629,10481
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3 11462,12384 11333,12437 11343,12300
 Karl-Liebknecht-Str. -> Alexanderpl. [Dircksenstr./zur Karl-Liebknecht-Str.]: Straßenbahntrasse in Bau	3 10920,13139 10781,13002 10844,12935
 Karl-Liebknecht-Str. -> Dircksenstr.: Straßenbahntrasse in Bau	3 10740,12960 10781,13002 10706,13043
@@ -529,12 +529,6 @@ Berliner Str. -> Schonensche Str.: U-Bahnrampe	3 11042,16605 11039,16553 11287,1
 Schonensche Str. -> Berliner Str.: U-Bahnrampe	3 11287,16515 11039,16553 11033,16464
 Wisbyer Str. -> Stahlheimer Str.: Straßenbahn	3 11807,16340 11727,16358 11618,16183
 Wisbyer Str. -> Varnhagenstr.: Straßenbahn	3 11887,16320 11807,16340 11680,16151
-Talstr. -> Gudvanger Str.: Straßenbahn	3 11908,16410 11887,16320 11758,16111
-Talstr. -> Wisbyer Str.: Straßenbahn	3 11908,16410 11887,16320 12026,16247
-Gudvanger Str. -> Talstr.: Straßenbahn	3 11758,16111 11887,16320 11908,16410
-Gudvanger Str. -> Wisbyer Str.: Straßenbahn	3 11758,16111 11887,16320 11807,16340
-Wisbyer Str. -> Gudvanger Str.: Straßenbahn	3 12026,16247 11887,16320 11758,16111
-Wisbyer Str. -> Talstr.: Straßenbahn	3 11807,16340 11887,16320 11908,16410
 Dunckerstr. -> Wisbyer Str.: Straßenbahn	3 11939,16084 12026,16247 11887,16320
 Glaßbrennerstr. -> Wisbyer Str.: Straßenbahn	3 11543,16207 11632,16373 11542,16384
 Wisbyer Str. -> Glaßbrennerstr.: Straßenbahn	3 11688,16365 11632,16373 11543,16207

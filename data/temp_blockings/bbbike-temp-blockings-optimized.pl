@@ -781,6 +781,30 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	2::inwork 86420,913 86769,1414
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1173394800,
+         'text' => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 06.03.2007-08.03.2007 ',
+         'from' => 1173049200,
+         'data' => 'userdel	2::inwork 73204,97424 72745,97584
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1188165600,
+         'text' => 'B 198 Neubrandenburger Str. OD Prenzlau Grundhafter Straßenbau Vollsperrung 05.03.2007-26.08.2007 ',
+         'from' => 1172962800,
+         'data' => 'userdel	2::inwork 38439,102279 37547,102663
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1173481200,
+         'text' => 'K 6905 Langerwisch-B 2 Potsdam Bahnübergang in der OD Wilhelmshorst Markierungsarbeiten Vollsperrung 08.03.2007-09.03.2007 ',
+         'from' => 1173222000,
+         'data' => 'userdel	2::inwork -12451,-9641 -12751,-8997 -12835,-8819
+',
+         'type' => 'gesperrt'
        }
      
 );

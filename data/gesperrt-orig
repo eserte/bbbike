@@ -476,8 +476,10 @@ Björnsonstr.	1s 10209,16674 10197,16528
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
+#: note: Luftbild:
+Berliner Str.: Straßenbahntrasse	3nocross 13751,16009 13821,16035 14014,16106
 #: XXX es sieht aber so aus, als ob hier ein Übergang entstehen könnte, auch für Autos:
-Hauptstr. Straßenbahntrasse	3nocross 16138,10105 16004,10204 15629,10481
+Hauptstr.: Straßenbahntrasse	3nocross 16138,10105 16004,10204 15629,10481
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3 11462,12384 11333,12437 11343,12300
 Karl-Liebknecht-Str./Dircksenstr: Straßenbahntrasse in Bau	3nocross 10740,12960 10781,13002 10920,13139
 Badstr.: Gitter auf Mittelstreifen	3nocross 8659,16327 8543,16364 8516,16393 8486,16425
@@ -511,7 +513,9 @@ Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9213,5187 9185,5
 Schönhauser Allee: U-Bahnviadukt	3nocross 10977,15944 10972,15895 10963,15789
 Schönhauser Allee: U-Bahnviadukt	3 10949,15674 10930,15522 11055,15504
 Berliner Str.: U-Bahnrampe	3nocross 10986,16897 10999,16830 11018,16730 11042,16605 11039,16553 11033,16464
-Wisbyer Str.: Straßenbahn	3nocross 11688,16365 11727,16358 11807,16340 11887,16320 12026,16247 12091,16209
+Wisbyer Str.: Straßenbahn	3nocross 11688,16365 11727,16358 11807,16340 11887,16320
+#: note: laut Kristina Nazarek ist die Wisbyer Str. in Höhe Talstr. überquerbar
+Wisbyer Str.: Straßenbahn	3nocross 11887,16320 12026,16247 12091,16209
 Wisbyer Str.: Straßenbahn	3nocross 11542,16384 11632,16373 11688,16365
 Wisbyer Str.: Straßenbahn	3nocross 11397,16405 11448,16398 11470,16393 11542,16384
 Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 17249,11802 17436,11791 17746,11748 17966,11730 18220,11710

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.170 2007/02/04 20:32:30 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.170 2007/02/04 20:32:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1157,22 +1157,28 @@ sub parse_url_for_coords {
 	    status_message(M("Kein Ergebnis gefunden"), "die");
 	}
 	($x_s,$y_s) = split /,/, $res[0]->{Coord};
-    } elsif ($url =~ /params=(\d+)_(\d+)_([\d\.]+)_([NS])_(\d+)_(\d+)_([\d\.]+)_([EW])/) {
+    } elsif ($url =~ /params=(\d+)_(\d+)_(?:([\d\.]+)_)?([NS])_(\d+)_(\d+)_(?:([\d\.]+)_)?([EW])/) { # wikipedia mapsources, deg min (sec)
 	$y_ddd = $1 + $2/60 + $3/3600;
 	$y_ddd *= -1 if $4 eq 'S';
 	$x_ddd = $5 + $6/60 + $7/3600;
 	$x_ddd *= -1 if $8 eq 'W';
+    } elsif ($url =~ /params=(\d+)\.(\d+)_([NS])_(\d+)\.(\d+)_([EW])/) { # wikipedia mapsources, decimal degrees
+	$y_ddd = sprintf "%s.%s", $1, $2;
+	$y_ddd *= -1 if $3 eq 'S';
+	$x_ddd = sprintf "%s.%s", $4, $5;
+	$x_ddd *= -1 if $6 eq 'W';
     } elsif ($url =~ m{ll=([0-9.]+),([0-9.]+)}) {
 	$x_ddd = $2;
 	$y_ddd = $1;
-    } else {
-	if ($url =~ /LL=%2B([0-9.]+)%2B([0-9.]+)/) {
-	    $x_ddd = $2;
-	    $y_ddd = $1;
-	} elsif ($url =~ /lat=([0-9.]+).*lon=([0-9.]+)/) { # e.g. goyellow.de
-	    $x_ddd = $2;
-	    $y_ddd = $1;
-	}
+    } elsif ($url =~ /LL=%2B([0-9.]+)%2B([0-9.]+)/) {
+	$x_ddd = $2;
+	$y_ddd = $1;
+    } elsif ($url =~ /lat=([0-9.]+).*long?=([0-9.]+)/) { # e.g. goyellow.de
+	$x_ddd = $2;
+	$y_ddd = $1;
+    } elsif ($url =~ /long?=([0-9.]+).*lat=([0-9.]+)/) { # e.g. goyellow.de new
+	$x_ddd = $1;
+	$y_ddd = $2;
     }
 
     if (defined $x_ddd && defined $y_ddd) {
@@ -3163,6 +3169,7 @@ sub search_anything {
 			    }
 			    next unless /$s_rx.*\t/i;
 			}
+			next if /^\#/;
 			push @matches, Strassen::parse($_);
 			$matches[-1]->[3] = [];
 		    }

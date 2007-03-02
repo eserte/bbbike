@@ -992,7 +992,8 @@ if ($devel_host && defined $srtbike_icon) {
     *InitObject = sub {
 	my($self,$args) = @_;
 	$self->SUPER::InitObject($args);
-	$self->afterIdle(sub{ $self->iconimage($main::srtbike_icon) });
+	# setting icon may fail in other mainwindows
+	$self->afterIdle(sub{ eval { $self->iconimage($main::srtbike_icon) } });
     };
 }
 
