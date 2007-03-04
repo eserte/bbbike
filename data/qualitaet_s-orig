@@ -1513,8 +1513,6 @@ Straﬂe 270: Feldweg, im westlichen Teil nur zweispurig	Q2 -5035,11007 -4832,1104
 (An der Spektelake): Asphalt	Q0 -7160,15534 -7035,15432 -6922,15394 -6802,15376
 (Spektewiesen): Asphalt	Q0 -5680,15112 -5769,14992 -5969,15040 -6214,15211 -6252,15228 -6498,15301 -6824,15274 -6802,15376
 Spekteweg: Asphalt	Q0 -4061,15164 -4303,14960 -4481,14808 -4631,14811 -5033,15059 -5146,15059 -5680,15112
-#: note: laut ADFC-Karte "m‰ﬂig geeignet"
-(Uferweg an der Havel): m‰ﬂig, noch Baustelle	Q2 -2053,18375 -2027,18424 -2291,18628 -2349,18744 -2434,18832 -2503,18945 -2516,19186 -2586,19271 -2699,19282 -2733,19454 -2854,19552 -2897,19637 -2871,19750
 Koloniewege: asphaltiert	Q0 -2434,17638 -2408,17716 -2114,17878 -2154,17917 -2419,17955 -2539,18109 -2728,18149
 (Am Hohenzollernkanal): Verbundsteinpflaster bzw. Schotterweg	Q1 4971,15263 4469,15711 4273,15740 4212,15787 4384,15927 3986,16092 4078,15961 4049,15776 3775,15768
 #: last_checked: 2006-09-10
@@ -4163,10 +4161,16 @@ Max-Born-Str.: Asphalt	Q0 19111,2777 19064,2867 19053,2890 18951,3069
 Bildhauerweg: guter Asphalt	Q0 15977,1223 16087,1372 16138,1436 16165,1468 16200,1499 16255,1538 16311,1581 16345,1605 16418,1657 16454,1686 16549,1758
 #: by: Jan Hieronymus:
 Formerweg: Beton	Q0 15889,1612 16138,1436
-#: by: Andreas (schwarz...): vvv
+#: by: Andreas Schwarz: vvv
 Am Seeschloﬂ: Asphalt	Q0 4757,23184 4750,23211 4713,23254
 (Mauerweg am Eiskeller): gut befahrbarer Trampelpfad	Q2 -7971,19684 -8031,19862
 (Mauerweg am Eiskeller): asphaltiert	Q0 -8031,19862 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8022,19052
+#: XXX Q0-
+(Mauerweg Spandau): asphaltiert, aber nicht unterhalten (Laub ...)	Q0 -2908,19715 -3404,19922
+#: note: laut ADFC-Karte "m‰ﬂig geeignet", mittlerweile besser
+(Uferweg an der Havel): sehr guter Asphalt	Q0 -2053,18375 -2027,18424 -2210,18526 -2291,18628 -2349,18744 -2413,18770 -2434,18832 -2460,18918 -2503,18945 -2516,19186 -2597,19251 -2723,19255
+(Uferweg an der Havel): gut befahrbarer Wanderweg	Q0 -2723,19255 -2726,19408 -2763,19450 -2775,19532 -2854,19552 -2897,19637 -2908,19715
+(Um den Laﬂzinssee): asphaltiert	Q0 -6459,20769 -6465,21060 -6099,21157 -6044,20971 -5795,20965
 #: by: ^^^
 #: by: coco (taschkent):
 Scheiblerstr.: m‰ﬂiges Kopfsteinpflaster	Q2 16375,7070 16498,6944 16630,6800
