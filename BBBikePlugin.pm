@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePlugin.pm,v 1.13 2006/11/11 14:35:00 eserte Exp $
+# $Id: BBBikePlugin.pm,v 1.14 2007/03/04 10:17:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2006 Slaven Rezic. All rights reserved.
@@ -162,6 +162,8 @@ sub _plugin_active_check {
 sub place_menu_button {
     my($frame, $menuitems, $refwidget, $advertised_name, %args) = @_;
     my $title = delete $args{-title};
+    my $addglobalmenu = exists $args{-noaddglobalmenu} ? !delete $args{-noaddglobalmenu} : 1;
+    my $topmenu = delete $args{-topmenu};
     $refwidget->idletasks;    # XXX idletasks needed?
     my($x,$width) = ($refwidget->x, $refwidget->width);
     # If $refwidget is not yet mapped:
@@ -179,6 +181,45 @@ sub place_menu_button {
     $menubutton->place(-x => $x, -y => 0, -width => $width);
     $frame->Advertise($advertised_name => $menubutton);
     $frame->Advertise($advertised_name . "_menu" => $menu);
+    if ($addglobalmenu) {
+	add_to_global_plugins_menu(-topmenu   => $topmenu,
+				   -menuitems => $menuitems,
+				   -title     => $title,
+				  );
+    }
+}
+
+sub add_to_global_plugins_menu {
+    my(%args) = @_;
+
+    my $topmenu   = delete $args{-topmenu}; # maybe be single or multiple menu items
+    my $menuitems = delete $args{-menuitems} || [];
+    my $title     = delete $args{-title};
+
+    if (Tk::Exists($BBBike::Menubar::plugins_menu)) {
+	my $m = $BBBike::Menubar::plugins_menu;
+	my $need_separator = 1;
+	for my $m_inx (0 .. $m->index("end")) {
+	    if ($m->type($m_inx) eq 'separator') {
+		$need_separator = 0;
+		last;
+	    }
+	}
+	if ($need_separator) {
+	    $m->separator;
+	}
+	my @menuitems = @$menuitems;
+	if ($topmenu) {
+	    if (ref $topmenu->[0] eq 'ARRAY') {
+		unshift @menuitems, @$topmenu;
+	    } else {
+		unshift @menuitems, $topmenu;
+	    }
+	}
+	$m->cascade(-label => $title,
+		    -menuitems => \@menuitems,
+		   );
+    }
 }
 
 sub remove_menu_button {

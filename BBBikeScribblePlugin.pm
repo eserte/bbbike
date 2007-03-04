@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeScribblePlugin.pm,v 1.7 2006/11/11 14:34:13 eserte Exp $
+# $Id: BBBikeScribblePlugin.pm,v 1.8 2007/03/04 10:18:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -79,13 +79,15 @@ sub add_button {
 
     my $Radiobutton = $main::Radiobutton;
 #    my $salesman_photo = main::load_photo($mf, 'salesman.' . $main::default_img_fmt);
-    my $b;
-    $b = $mf->$Radiobutton
-	(-text => "Scr",
-	 #main::image_or_text($salesman_photo, 'Salesman'),
-	 -variable => \$main::map_mode,
+    my %radio_args =
+	(-variable => \$main::map_mode,
 	 -value => main::MM_SCRIBBLE(),
 	 -command => \&main::set_map_mode,
+	);
+    my $b = $mf->$Radiobutton
+	(-text => "Scr",
+	 #main::image_or_text($salesman_photo, 'Salesman'),
+	 %radio_args,
 	);
     BBBikePlugin::replace_plugin_widget($mf, $b, __PACKAGE__.'_on');
     $main::balloon->attach($b, -msg => "Zeichnen")
@@ -114,6 +116,9 @@ sub add_button {
 	     $b,
 	     __PACKAGE__."_menu",
 	     -title => "Scribble",
+	     -topmenu => [Radiobutton => 'Scribble mode',
+			  %radio_args,
+			 ],
 	    );
 
 }

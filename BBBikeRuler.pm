@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRuler.pm,v 1.17 2006/11/11 14:34:23 eserte Exp $
+# $Id: BBBikeRuler.pm,v 1.18 2007/03/04 10:18:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -130,11 +130,15 @@ sub add_button {
     my $mmf = $main::top->Subwidget("ModeMenuPluginFrame");
     return unless defined $mf;
     my $Radiobutton = $main::Radiobutton;
+    my %radio_args = (
+		      -variable => \$main::map_mode,
+		      -value    => __PACKAGE__,
+		      -command  => \&main::set_map_mode,
+		     );
     my $b = $mf->$Radiobutton
 	(main::image_or_text($button_image, 'Ruler'),
-	 -variable => \$main::map_mode,
-	 -value => __PACKAGE__,
-	 -command => \&main::set_map_mode);
+	 %radio_args,
+	);
     BBBikePlugin::replace_plugin_widget($mf, $b, __PACKAGE__.'_on');
     $main::balloon->attach($b, -msg => "Ruler")
 	if $main::balloon;
@@ -167,6 +171,9 @@ sub add_button {
 	     $b,
 	     __PACKAGE__."_menu",
 	     -title => "Ruler",
+	     -topmenu => [Radiobutton => 'Ruler mode',
+			  %radio_args,
+			 ],
 	    );
 }
 

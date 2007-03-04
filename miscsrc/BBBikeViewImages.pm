@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.13 2006/11/11 15:10:13 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.14 2007/03/04 11:29:39 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2007 Slaven Rezic. All rights reserved.
 #
 
 # Description (en): View images in bbd files
@@ -16,7 +16,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $geometry $viewer_menu);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(file_name_is_absolute);
 use File::Basename qw(dirname);
@@ -76,16 +76,20 @@ sub add_button {
     my $mmf = $main::top->Subwidget("ModeMenuPluginFrame");
     return unless defined $mf;
     my $Radiobutton = $main::Radiobutton;
-    my $b = $mf->$Radiobutton
-	(#main::image_or_text($button_image, 'Thunder'),
-	 -text => "Img",
-	 -variable => \$main::map_mode,
-	 -value => 'BBBikeViewImages',
-	 -command => sub {
+    my %radio_args =
+	(-variable => \$main::map_mode,
+	 -value    => 'BBBikeViewImages',
+	 -command  => sub {
 	     $main::map_mode_deactivate->() if $main::map_mode_deactivate;
 	     activate();
 	     $main::map_mode_deactivate = \&deactivate;
-	 });
+	 },
+	);
+    my $b = $mf->$Radiobutton
+	(#main::image_or_text($button_image, 'Thunder'),
+	 -text => "Img",
+	 %radio_args,
+	);
     BBBikePlugin::replace_plugin_widget($mf, $b, __PACKAGE__.'_on');
     $main::balloon->attach($b, -msg => "Image Viewer")
 	if $main::balloon;
@@ -137,6 +141,9 @@ sub add_button {
 	     $b,
 	     __PACKAGE__."_menu",
 	     -title => "View Images",
+	     -topmenu => [Radiobutton => 'View Images mode',
+			  %radio_args,
+			 ],
 	    );
 
     $viewer_menu = $mmf->Subwidget(__PACKAGE__."_menu")->menu;

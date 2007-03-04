@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.38 2007/02/07 21:41:19 eserte Exp $
+# $Id: bbbike.cgi,v 8.39 2007/03/03 20:14:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -112,6 +112,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $with_fullsearch_radio
 	    $with_lang_switch
 	    $newstreetform_encoding
+	    $use_region_image
 	   );
 # XXX This may be removed one day
 use vars qw($use_cooked_street_data);
@@ -698,7 +699,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.38 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.39 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -725,16 +726,28 @@ use vars qw($xgridwidth $ygridwidth $xgridnr $ygridnr $xm $ym $x0 $y0
 	    $detailwidth $detailheight $nice_berlinmap $nice_abcmap
 	    $start_bgcolor $via_bgcolor $ziel_bgcolor @pref_keys);
 # Konstanten für die Imagemaps
+# Die Werte (bis auf $ym) werden mit small_berlinmap.pl ausgegeben.
+my($berlin_small_width, $berlin_small_suffix);
+if (!$use_region_image) {
+    $berlin_small_width = 200;
+    $berlin_small_suffix = "";
+    $xm = 228.58;
+    $ym = 228.58;
+    $x0 = -10849;
+    $y0 = 34282.5;
+} else {
+    $berlin_small_width = 240;
+    $berlin_small_suffix = "_240";
+    $xm = 223.6375;
+    $ym = 223.6375;
+    $x0 = -19716;
+    $y0 = 38448.5;
+}
 # Die nächsten beiden Variablen müssen auch in bbbike_start.js geändert werden.
 $xgridwidth = 20; # 20 * 10 = 200: Breite und Höhe von berlin_small.gif
 $ygridwidth = 20;
-$xgridnr = 10;
-$ygridnr = 10;
-# Diese Werte (bis auf $ym) werden mit small_berlinmap.pl ausgegeben.
-$xm = 228.58;
-$ym = $xm;
-$x0 = -10849;
-$y0 = 34867;
+$xgridnr = $berlin_small_width / $xgridwidth;
+$ygridnr = $berlin_small_width / $ygridwidth;
 ## schön groß, aber passt nicht auf Seite
 #$detailwidth  = 600; # muß quadratisch sein!
 #$detailheight = 600;
@@ -2014,10 +2027,10 @@ EOF
 		    print "<input type=hidden name=\"" . $type . "mapimg.x\" value=\"\">";
 		    print "<input type=hidden name=\"" . $type . "mapimg.y\" value=\"\">";
 		    print "<div id=" . $type . "mapbelow style=\"position:relative;visibility:hidden;\">";
-		    print "<img src=\"$bbbike_images/berlin_small.gif\" border=0 width=200 height=200 alt=\"\">";
+		    print "<img src=\"$bbbike_images/berlin_small$berlin_small_suffix.gif\" border=0 width=$berlin_small_width height=$berlin_small_width alt=\"\">";
 		    print "</div>";
 		    print "<div id=" . $type . "mapabove style=\"position:absolute;visibility:hidden;\">";
-		    print "<img src=\"$bbbike_images/berlin_small_hi.gif\" border=0 width=200 height=200 alt=\"\">";
+		    print "<img src=\"$bbbike_images/berlin_small_hi$berlin_small_suffix.gif\" border=0 width=$berlin_small_width height=$berlin_small_width alt=\"\">";
 		    print "</div>";
 		    print <<EOF;
 <script type="text/javascript"><!--
@@ -2029,7 +2042,7 @@ function $ {type}map_detail(Evt) { return any_detail("${type}map", Evt); }
 EOF
 		} elsif (!$bi->{'text_browser'} && !$no_berlinmap) {
 		    print "<input type=image name=" . $type
-		      . "mapimg src=\"$bbbike_images/berlin_small.gif\" class=\"citymap\" alt=\"\">";
+		      . "mapimg src=\"$bbbike_images/berlin_small$berlin_small_suffix.gif\" class=\"citymap\" alt=\"\">";
 		}
 		print "</td>" if $bi->{'can_table'};
 	    }
@@ -2095,7 +2108,7 @@ function " . $type . "char_init() {}
 sub berlinmap_with_choices {
     my($type, $matchref) = @_;
     print "<div id=${type}mapbelow style=\"position:relative;visibility:hidden;\">";
-    print "<img src=\"$bbbike_images/berlin_small.gif\" border=0 width=200 height=200 alt=\"\">";
+    print "<img src=\"$bbbike_images/berlin_small$berlin_small_suffix.gif\" border=0 width=$berlin_small_width height=$berlin_small_width alt=\"\">";
     print "</div>";
 
     my $js = "";
@@ -6319,7 +6332,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/02/07 21:41:19 $';
+    my $cgi_date = '$Date: 2007/03/03 20:14:30 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

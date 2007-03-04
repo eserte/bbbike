@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePluginLister.pm,v 1.5 2006/11/11 14:32:30 eserte Exp $
+# $Id: BBBikePluginLister.pm,v 1.6 2007/03/04 10:17:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -16,7 +16,9 @@ package BBBikePluginLister;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+
+require Tk::ItemStyle;
 
 require BBBikePlugin;
 

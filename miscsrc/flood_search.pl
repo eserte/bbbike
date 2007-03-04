@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: flood_search.pl,v 1.13 2006/11/11 14:34:07 eserte Exp $
+# $Id: flood_search.pl,v 1.14 2007/03/04 10:18:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -67,12 +67,15 @@ sub add_button {
     my $Radiobutton = $main::Radiobutton;
     my $b;
     # XXX Custom Cursor setzen
+    my %radio_args =
+	(-variable => \$main::map_mode,
+	 -value => __PACKAGE__,
+	 -command => \&main::set_map_mode,
+	);
     $b = $mf->$Radiobutton
 	(-text => "FS",
 	 #main::image_or_text($salesman_photo, 'Salesman'),
-	 -variable => \$main::map_mode,
-	 -value => __PACKAGE__,
-	 -command => \&main::set_map_mode,
+	 %radio_args,
 	);
     BBBikePlugin::replace_plugin_widget($mf, $b, __PACKAGE__.'_on');
     $main::balloon->attach($b, -msg => "Flood search")
@@ -141,6 +144,9 @@ sub add_button {
 	     $b,
 	     __PACKAGE__."_menu",
 	     -title => "Flood Search",
+	     -topmenu => [Radiobutton => 'Flood Search mode',
+			  %radio_args,
+			 ],
 	    );
 }
 

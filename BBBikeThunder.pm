@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeThunder.pm,v 1.12 2006/11/11 14:33:48 eserte Exp $
+# $Id: BBBikeThunder.pm,v 1.13 2007/03/04 10:18:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -119,15 +119,19 @@ sub add_button {
     my $mmf = $main::top->Subwidget("ModeMenuPluginFrame");
     return unless defined $mf;
     my $Radiobutton = $main::Radiobutton;
-    my $b = $mf->$Radiobutton
-	(main::image_or_text($button_image, 'Thunder'),
-	 -variable => \$main::map_mode,
-	 -value => 'BBBikeThunder',
-	 -command => sub {
+    my %radio_args =
+	(-variable => \$main::map_mode,
+	 -value    => 'BBBikeThunder',
+	 -command  => sub {
 	     $main::map_mode_deactivate->() if $main::map_mode_deactivate;
 	     activate();
 	     $main::map_mode_deactivate = \&deactivate;
-	 });
+	 },
+	);
+    my $b = $mf->$Radiobutton
+	(main::image_or_text($button_image, 'Thunder'),
+	 %radio_args,
+	);
     BBBikePlugin::replace_plugin_widget($mf, $b, __PACKAGE__.'_on');
     $main::balloon->attach($b, -msg => "Lightning/Thunder")
 	if $main::balloon;
@@ -146,6 +150,9 @@ sub add_button {
 	     $b,
 	     __PACKAGE__."_menu",
 	     -title => "Thunder",
+	     -topmenu => [Radiobutton => 'Thunder mode',
+			  %radio_args,
+			 ],
 	    );
 }
 

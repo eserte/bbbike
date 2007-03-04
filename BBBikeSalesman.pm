@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeSalesman.pm,v 1.8 2003/08/24 23:33:34 eserte Exp $
+# $Id: BBBikeSalesman.pm,v 1.9 2007/03/04 10:18:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -77,14 +77,23 @@ sub add_button {
     my $Radiobutton = $main::Radiobutton;
     my $salesman_photo = main::load_photo($mf, 'salesman.' . $main::default_img_fmt);
     my $salesman_check;
+    my %radio_args =
+	(-variable => \$main::map_mode,
+	 -value    => __PACKAGE__,
+	 -command  => \&main::set_map_mode,
+	);
     $salesman_check = $mf->$Radiobutton
 	(main::image_or_text($salesman_photo, 'Salesman'),
-	 -variable => \$main::map_mode,
-	 -value => __PACKAGE__,
-	 -command => \&main::set_map_mode,
+	 %radio_args,
 	);
     BBBikePlugin::replace_plugin_widget($mf, $salesman_check,
 					__PACKAGE__ . '_on');
+    BBBikePlugin::add_to_global_plugins_menu
+	    (-title   => "Salesman",
+	     -topmenu => [Radiobutton => 'Salesman mode',
+			  %radio_args,
+			 ],
+	    );
     $main::balloon->attach($salesman_check, -msg => M"Kürzeste Rundreise")
 	if $main::balloon;
     $main::ch->attach($salesman_check, -pod => "^\\s*Salesman-Symbol");

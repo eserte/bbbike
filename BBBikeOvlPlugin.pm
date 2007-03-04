@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeOvlPlugin.pm,v 2.11 2005/12/26 13:58:29 eserte Exp $
+# $Id: BBBikeOvlPlugin.pm,v 2.12 2007/03/04 10:18:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
@@ -52,9 +52,8 @@ sub add_buttons {
     my $mf = $main::top->Subwidget("ModePluginFrame");
     return unless defined $mf;
 
-    my $b = $mf->Button
-	(main::image_or_text($button_image, 'Open OVL'),
-	 -command => sub {
+    my %b_args =
+	(-command => sub {
 	     my $f = $main::top->getOpenFile
 		 (-filetypes =>
 		  [
@@ -65,19 +64,39 @@ sub add_buttons {
 	     if (defined $f) {
 		 bbbike_draw_symbols($f);
 	     }
-	 });
+	 }
+	);
+    my $b = $mf->Button
+	(main::image_or_text($button_image, 'Open OVL'),
+	 %b_args,
+	);
     BBBikePlugin::replace_plugin_widget($mf, $b, __PACKAGE__.'_open');
     $main::balloon->attach($b, -msg => "Open OVL file")
 	if $main::balloon;
 
+    my %b2_args =
+	(-command => sub {
+	     bbbike_del_ovl();
+	 }
+	);
     my $b2 = $mf->Button
 	(main::image_or_text($del_button_image, 'Del OVL'),
-	 -command => sub {
-	     bbbike_del_ovl();
-	 });
+	 %b2_args,
+	);
     BBBikePlugin::replace_plugin_widget($mf, $b2, __PACKAGE__.'_del');
     $main::balloon->attach($b2, -msg => "Del OVL")
 	if $main::balloon;
+
+    BBBikePlugin::add_to_global_plugins_menu
+	    (-title => 'OVL Files',
+	     -topmenu => [[Button => 'Open OVL file',
+			   %b_args,
+			  ],
+			  [Button => 'Delete OVL layer',
+			   %b2_args,
+			  ],
+			 ],
+	    );
 }
 
 sub draw_symbols {

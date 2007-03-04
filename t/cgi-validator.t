@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-validator.t,v 1.5 2006/10/01 22:21:16 eserte Exp $
+# $Id: cgi-validator.t,v 1.6 2007/03/04 10:20:17 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -46,6 +46,12 @@ my @uris = ("$rooturl/bbbike.cgi",
 	   );
 
 {
+    # XXX
+    # maybe replace with just:
+    # checklink --broken --directory 'http://bbbike.dyndns.org/bbbike/cgi/bbbike.cgi?startname=Heerstr.+%28Spandau%2C+Charlottenburg%29&startplz=14052%2C+14055&startc=1381%2C11335&zielname=Simplonstr.&zielplz=10245&zielc=14752%2C11041&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&scope='
+    # which hopefully returns a non-zero exit value on problems and prints a
+    # lot of diagnostics to stdout/stderr
+
     #local $TODO = "A test fails --- why?";
     my $validator = W3C::LogValidator::LinkChecker->new(\%config);
     $validator->uris(@uris);

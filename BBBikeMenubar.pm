@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMenubar.pm,v 1.17 2006/09/06 21:32:03 eserte Exp $
+# $Id: BBBikeMenubar.pm,v 1.18 2007/03/04 10:19:19 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2002,2003 Slaven Rezic. All rights reserved.
@@ -48,7 +48,7 @@ use Msg qw(frommain);
     }
 }
 
-use vars qw($file_menu $additional_layer_menu);
+use vars qw($file_menu $additional_layer_menu $plugins_menu);
 
 sub new {
     my($class, $context) = @_;
@@ -169,13 +169,14 @@ sub EmptyMenubar {
 
 sub plugin_menu {
     my($mb) = @_;
-    my $menulabel = M("Plugins");
-    my $menu = $mb->Menu;
+    my $menulabel = M("~Plugins");
+    $plugins_menu = my $menu = $mb->Menu(-title => $menulabel);
     main::plugin_menu($menu);
     # $menu->separator; # XXX enable if there's actually something
     # XXX more to follow... (what?)
     $mb->cascade(-menu => $menu,
-		 -label => $menulabel);
+		 -label => $menulabel,
+		);
 }
 
 1;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: small_berlinmap.pl,v 2.16 2005/05/24 23:32:19 eserte Exp $
+# $Id: small_berlinmap.pl,v 2.19 2007/03/03 20:14:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001 Slaven Rezic. All rights reserved.
@@ -21,14 +21,22 @@ small_berlinmap.pl - create a small overview map of Berlin
 
     ./small_berlinmap.pl [-width w] [-height h] [-normbg bgcolor]
                          [-includepotsdam] [-nogif] [-v [-v ...]]
+			 [-strfiles file,file,...]
+			 [-borderfiles file,file,...]
+			 [-bbox x,y,x,y]
+			 [-imagemagick] [-gif|-xpm]
+			 [-cgisettings] [-customplaces place;place;...]
+			 [-suffix suffix]
 
 =head1 DESCRIPTION
 
-The default width and height are 200 pixels. The generated images will
-be saved in the /tmp directory as berlin_small.gif (the normal
-image) and berlin_small_hi.gif (the highlighted image). There will be
-also PNG pictures generated (see L</BUGS> below). Also, some
-parameters for transpose functions are printed to stdout.
+The default width and height are 200 pixels. This can be overriden by
+the -width and -height options. The generated images will be saved in
+the /tmp directory as berlin_small.gif (the normal image) and
+berlin_small_hi.gif (the highlighted image). There will be also PNG
+pictures generated (see L</BUGS> below). Also, a parameter file for
+transpose functions is created (with the suffix .dim). With -v -v some
+constants will be return for inclusion in bbbike.cgi.
 
 The -normbg option sets the background color of the normal picture
 (default: transparent).
@@ -37,13 +45,35 @@ With -includepotsdam the borders of Potsdam are also included.
 
 With -nogif only the PNG images will be created.
 
+-strfiles may include a comma-separated list of bbd files which should
+be drawn. This overrides the default (streets, S-Bahn).
+
+-borderfiles may include a comma-separated list of bbd files for
+borders to draw and use for automatic bbox calculation. This overrides
+the default (Berlin, and, if -includepotsdam is set, also Potsdam).
+
+With -bbox the bounding box (expressed as standard BBBike coordinates)
+can be set. By default, the bounding box is calculated by the borders.
+
+With -imagemagick the BBBikeDraw::ImageMagick backend is used, but see
+L</BUGS>.
+
+With -customplaces a list of semicolon-separated places (probably must
+be quoted in most shells!) can be added. See
+L<BBBikeDraw::GDHeavy/draw_custom_places> for the exact format of the
+list.
+
+With -cgisettings the standard settings for bbbike.cgi are used.
+
+-suffix: set a suffix for all generated files (usually something like
+ _I<width>).
+
 =head1 OS DEPENDENCIES
 
 =over 4
 
 =item FreeBSD port: graphics/ImageMagick
 
-=comment
 =item FreeBSD port: graphics/giftrans
 
 =item FreeBSD port: graphics/netpbm
@@ -91,7 +121,11 @@ my $use_gif = 1;
 my $use_xpm = 1;
 my @strfiles = ('sbahn', 'ubahn', 'wasser');
 my @border;
+my $bbox;
 my $v = 0;
+my $use_cgi_settings;
+my $custom_places;
+my $suffix = "";
 
 my @orig_ARGV = @ARGV;
 if (!GetOptions("width=i" => \$img_w,
@@ -101,12 +135,29 @@ if (!GetOptions("width=i" => \$img_w,
 		"includepotsdam!" => \$includepotsdam,
 		"strfiles=s" => sub { @strfiles = split /,/, $_[1] },
 		"borderfiles=s" => sub { @border = split /,/, $_[1] },
+		"bbox=s" => \$bbox,
 		"imagemagick!" => \$use_imagemagick,
 		"gif!" => \$use_gif,
 		"xpm!" => \$use_xpm,
 		"v+" => \$v,
+		"cgisettings!" => \$use_cgi_settings,
+		"customplaces=s" => \$custom_places,
+		"suffix=s" => \$suffix,
 	       )) {
     die "usage!";
+}
+
+if ($use_cgi_settings) {
+    if (0) {
+	# old cgi settings (width=200 etc.)
+    } else {
+	$bbox = '-19716,-11471,33957,34695';
+	$includepotsdam = 1;
+	$custom_places = "Nauen,-anchor,e;Bernau;Königs Wusterhausen,-anchor,e;Teltow,-anchor,nc;Velten;Hennigsdorf,-anchor,e;Ahrensfelde;Michendorf;Mahlow";
+	$img_w = 240;
+	$img_h = 240;
+	$suffix = "_240";
+    }
 }
 
 if (defined $geometry) {
@@ -134,12 +185,13 @@ if (!@border) {
 }
 
 for my $type ('norm', 'hi') {
-    my $base = "/tmp/berlin_small" . ($type eq 'hi' ? '_hi' : '');
+    my $base = "/tmp/berlin_small" . ($type eq 'hi' ? '_hi' : '') . $suffix;
     my $img     = "$base.png";
     my $img_gif = "$base.gif";
     my $img_xpm = "$base.xpm";
     my $img_dim = "$base.dim";
     open(IMG, ">$img") or die "Can't write $img: $!";
+    chmod 0644, $img;
     print STDERR "# Creating $type ...\n" if $v;
     my($w, $h) = ($img_w, $img_h);
     my $draw = new BBBikeDraw
@@ -149,16 +201,23 @@ for my $type ('norm', 'hi') {
 	Bg => ($type eq 'hi' ? '#ffdead' : $normbg),
         FrontierColor => 'red',
 	ImageType => 'png',
+	FontSizeScale => 0.68,
 	%draw_args,
         ;
-    $draw->set_bbox_max(new MultiStrassen @border);
+    if ($bbox) {
+	$draw->set_bbox(split /,/, $bbox);
+    } else {
+	$draw->set_bbox_max(new MultiStrassen @border);
+    }
+    $draw->create_transpose(-asstring => 1);
+    # Note: this has to be called after create_transpose, because of possible
+    # adjustments
     print "
 my \$minx = $draw->{Min_x};
 my \$maxx = $draw->{Max_x};
 my \$miny = $draw->{Min_y};
-my \$maxy = $draw->{Max_y}
+my \$maxy = $draw->{Max_y};
 \n" if $v >= 2;
-    $draw->create_transpose(-asstring => 1);
     my $xm = ($draw->{Max_x}-$draw->{Min_x})/$w;
     my $ym = ($draw->{Max_y}-$draw->{Min_y})/$h;
     print "my \$xm = $xm;\nmy \$ym = $ym;\n\n" if $v >= 2;
@@ -170,9 +229,22 @@ my \$maxy = $draw->{Max_y}
     print "my \$transpose = $draw->{TransposeCode};\n" if $v >= 2;
     print "my \$anti_transpose = $draw->{AntiTransposeCode};\n\n" if $v >= 2;
 
+    if ($use_cgi_settings) {
+	print <<EOF;
+# For addition in bbbike.cgi:
+\$berlin_small_width = $img_w;
+\$berlin_small_suffix = "$suffix";
+\$xm = $xm;
+\$ym = $ym;
+\$x0 = $draw->{Min_x};
+\$y0 = $draw->{Max_y};
+EOF
+    }
+
     $draw->draw_map;
     my $gd_img = $draw->{Image};
     if ($type ne 'hi') {
+	no warnings 'uninitialized';
 	if ($draw->{Module} eq 'ImageMagick') {
 	    $gd_img->ColorFloodfill(geometry=>'+'.($w/2).'+'.+($h/2),
 				    fill=>$draw->get_color("white"));
@@ -188,6 +260,9 @@ my \$maxy = $draw->{Max_y}
 		$gd_img->fill($w/10, $h/4*3, $draw->get_color("white"));
 	    }
 	}
+    }
+    if (defined $custom_places) {
+	$draw->draw_custom_places($custom_places);
     }
 
     {
@@ -221,6 +296,7 @@ my \$maxy = $draw->{Max_y}
 	%draw2_args,
 	Bg => ($type eq 'hi' ? '#ffdead' : 'white') . "transparent",
 	%draw_args,
+	Scope => 'region',
 	;
     $draw2->set_dimension_max(new MultiStrassen @border);
     $draw2->create_transpose;
@@ -229,6 +305,7 @@ my \$maxy = $draw->{Max_y}
     close IMG;
 
     if (open(DIM, ">$img_dim")) {
+	chmod 0644, $img_dim;
 	require Data::Dumper;
 	print DIM "# generated by $0 @orig_ARGV\n";
 	print DIM Data::Dumper->Dumpxs([$draw], ['draw']);
@@ -238,13 +315,16 @@ my \$maxy = $draw->{Max_y}
     if ($use_gif) {
 	system("convert", $img, $img_gif) == 0
 	    or die "Failed $img -> $img_gif conversion: $?";
+	chmod 0644, $img_gif;
 	if (0) { # XXX old code using netpbm
 	    system("pngtopnm $img | ppmtogif > $img_gif");
+	    chmod 0644, $img_gif;
 
 	    if (is_in_path("giftool")) {
 		# add comment
 		system("giftool", "-B", "+c", "created by $0 on ".scalar(localtime),
 		       $img_gif);
+		chmod 0644, $img_gif;
 	    }
 
 	    if ($type eq 'norm' && $normbg =~ /transparent/) {
@@ -265,6 +345,7 @@ my \$maxy = $draw->{Max_y}
 		rename $img_gif, "$img_gif~";
 		system "giftrans -t $tr_color -o $img_gif $img_gif~";
 		die if $?;
+		chmod 0644, $img_gif;
 	    }
 	}
     }
@@ -272,6 +353,7 @@ my \$maxy = $draw->{Max_y}
     if ($use_xpm) {
 	system("convert", $img, $img_xpm) == 0
 	    or die "Failed $img -> $img_xpm conversion: $?";
+	chmod 0644, $img_xpm;
     }
 }
 
