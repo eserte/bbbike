@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.39 2007/03/03 20:14:30 eserte Exp $
+# $Id: bbbike.cgi,v 8.40 2007/03/04 19:42:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -699,7 +699,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.39 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.40 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -4742,6 +4742,7 @@ sub draw_map {
     if (exists $args{'-x'} and exists $args{'-y'}) {
 	($x, $y) = ($args{'-x'}, $args{'-y'});
 	$part = sprintf("%02d-%02d", $x, $y);
+	$part .= $berlin_small_suffix;
 	@dim  = xy_to_dim($x, $y);
     } else {
 	die "No x/y set";
@@ -4836,7 +4837,11 @@ sub draw_map {
 	    } elsif ($detailmap_module) {
 		$q->param('module', $detailmap_module);
 	    }
-	    my $draw = BBBikeDraw->new_from_cgi($q, Fh => \*IMG);
+	    # #c5c5c5 ist ein guter Kompromiss zwischen
+	    # dem Default (#b4b4b4, schmale Wasserstraßen kaum zu erkennen)
+	    # und #e1e1e1 (zu heller Hintergrund, Nebenstraßen auf einem
+	    # LCD-Monitor kaum zu erkennen).
+	    my $draw = BBBikeDraw->new_from_cgi($q, Fh => \*IMG, Bg => '#c5c5c5');
 	    $draw->set_dimension(@dim);
 	    $draw->create_transpose();
 	    print "Create $img_file...\n" if $args{-logging};
@@ -5544,8 +5549,8 @@ sub header {
 	print qq{<div style="position:absolute; top:5px; right:10px;">};
 	if ($lang eq 'en') {
 	    print <<EOF;
-<a href="$bbbike_de_script"><img class="unselectedflag" src="http://bbbike.sourceforge.net/images/de_flag.png" alt="Deutsch" border="0"></a>
-<img class="selectedflag" src="http://bbbike.sourceforge.net/images/gb_flag.png" alt="English" border="0">
+<a href="$bbbike_de_script"><img class="unselectedflag" src="$bbbike_images/de_flag.png" alt="Deutsch" border="0"></a>
+<img class="selectedflag" src="$bbbike_images/gb_flag.png" alt="English" border="0">
 EOF
 	} else {
 	    print <<EOF;
@@ -6332,7 +6337,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/03/03 20:14:30 $';
+    my $cgi_date = '$Date: 2007/03/04 19:42:15 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
