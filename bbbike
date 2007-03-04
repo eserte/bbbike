@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.292 2007/03/04 19:44:47 eserte Exp $
+# $Id: bbbike,v 3.292 2007/03/04 19:44:47 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -1077,6 +1077,8 @@ $top->optionAdd("*apply*foreground"   => 'yellow4');
 $top->optionAdd("*apply*text"         => M"Übernehmen");
 $top->optionAdd("*search*foreground"  => 'yellow4');
 $top->optionAdd("*search*text"        => M"Suchen");
+# Fix strangely colored Pod menu
+$top->optionAdd("*pod*search*foreground" => 'black');
 $top->optionAdd("*show*foreground"    => 'yellow4');
 $top->optionAdd("*show*text"          => M"Zeigen");
 $top->optionAdd("*default*foreground" => 'yellow4');
