@@ -7193,12 +7193,4 @@ EOF
 userdel	2::inwork -12451,-9641 -12751,-8997 -12835,-8819
 EOF
      },
-     { from  => 1173567600, # 2007-03-11 00:00
-       until => 1184104800, # 2007-07-11 00:00
-       text  => 'B 096 Finsterwalde-Luckau Brücke über das Berstefließ nördl. Riedebeck Abbruch u. Neubau Brücke Vollsperrung 12.03.2007-10.07.2007 ',
-       type  => 'gesperrt',
-       data  => <<EOF,
-userdel	2::inwork 30491,-65399 30577,-65764
-EOF
-     },
     );
