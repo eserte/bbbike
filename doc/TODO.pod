@@ -2152,10 +2152,11 @@ points if delta exceeds 128/128 meters.
 
 =over
 
-=item * (M3) (feature)
+=item * (H3) (feature)
 
-Die Detailkarte auf Potsdam erweitern. Vielleicht auch das Scrollen
-auf der Detailmap unendlich möglich machen?
+Im Umland sollte statt Kreuzungen bevorzugt der Ortsname verwendet
+werden. Der Code dazu ist teilweise schon vorbereitet (siehe
+get_kreuzung, if (0)).
 
 =item * (E5)
 
@@ -2185,9 +2186,13 @@ Mit www.bbbike.de umziehen.
 =item * (M4)
 
 Alternative Startseite a la
-L<http://wolfram.schneider.org/tmp/bbbike/>
+L<http://wolfram.schneider.org/tmp/bbbike/> (gibt's nicht mehr!)
 erzeugen. Aber zunächst müssten die Layer-Probleme gelöst werden (Via-
 und Ziel-Layer sind nach dem Aufklappen verschoben).
+
+Die Layer-Probleme gibt es übrigens schon jetzt, wenn durch ein Resize
+des Browser-Fensters eine Umordnung der Layer erfolgt. Also brauche
+ich so oder so eine Lösung.
 
 =item * (H4)
 
@@ -2199,11 +2204,6 @@ str or ...
 In real data (Berlin.coords.data) there are no streets containing a
 E<quot>,E<quot> (just a few Siedlungen with E<quot>I,IIE<quot> and
 Gaststätten).
-
-=item * (M5)
-
-Add a search option: E<quot>Unbeleuchtete Straßen vermeidenE<quot>
-(due to user request, but I always thought of it).
 
 =item * (M3)
 
@@ -2230,7 +2230,8 @@ E<quot>Berlin, ...E<quot> schreiben.
 
 /robots.txt einrichten, um das Indexieren von temporären Dateien bei
 bbbike und mapserver zu verhindern. -> Hmmm, es existiert schon ein
-robots.txt. Mit Dirk konferieren?
+robots.txt. Mit Dirk konferieren? Nein, ich kann selbst robots.txt
+schreiben.
 
 =item * (H1)
 
@@ -2276,7 +2277,7 @@ Safari, same for MSIE!)
 =item * (H1)
 
 On resize, the reddot/bluedot points for multiple choices become
-displaced.
+displaced. Siehe oben, Layer+Resize-Problematik.
 
 =item * (M2)
 

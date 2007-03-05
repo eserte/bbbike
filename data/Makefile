@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.126 2007/02/19 22:45:38 eserte Exp $
+# $Id: Makefile,v 2.127 2007/03/05 20:55:32 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -445,6 +445,8 @@ plz berlin:	plz-orig
 	cat plz-orig | \
 	    ${GREPSTRASSEN} -v -sectionrx "ortsteile" -preserveglobaldirectives | \
 	    $(CONVERT2HAFAS) -basefile plz-orig -specborder=berlin - > plz~
+	${COMBINE_STREETS} berlin > berlin~
+	mv -f berlin~ berlin
 	mv -f plz~ plz
 	-@$(READONLY) plz berlin
 
@@ -460,7 +462,9 @@ berlin_ortsteile:	plz-orig
 potsdam:	potsdam-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) potsdam-orig > potsdam~
-	mv potsdam~ potsdam
+	mv -f potsdam~ potsdam
+	${COMBINE_STREETS} potsdam > potsdam~
+	mv -f potsdam~ potsdam
 	-@$(READONLY) $@
 
 deutschland:	deutschland-orig

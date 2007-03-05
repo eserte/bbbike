@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.73 2006/07/25 19:48:39 eserte Exp $
+# $Id: insert_points,v 1.74 2007/03/05 20:55:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -352,9 +352,6 @@ sub process {
 	    # XXX gesperrt/gesperrt_car: Die Kategorie 3 müsste
 	    # eigentlich gesondert betrachtet werden (wie die Drei-Punkte-Form
 	    # von comments). Aber es sollte so auch funktionieren.
-
-	    # "potsdam" ist nicht dabei --- wahrscheinlich nicht notwendig
-	    # "plz" ist auch nicht dabei --- hoffentlich schon jetzt gut genug
 	    @{$check_files[T_NORMAL]} =
 		qw(gesperrt gesperrt_u gesperrt_s gesperrt_r gesperrt_car
 		   landstrassen landstrassen2
@@ -374,6 +371,7 @@ sub process {
 		   exits
 		   orte orte2
 		   sehenswuerdigkeit
+		   potsdam plz
 		  );
 	    if ($orig) {
 		push @{$check_files[T_NORMAL]}, "radwege";

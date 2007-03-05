@@ -706,14 +706,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        undef,
        undef,
        undef,
-       {
-         'until' => 1173049200,
-         'text' => 'L 238 Eberswalde-Joachimsthal Brücke der A 11 zw. Lichterfelde u. Altenhof Brückenbauarbeiten Vollsperrung 03.03.2007-04.03.2007 ',
-         'from' => 1172790000,
-         'data' => 'userdel	2::inwork 31076,54246 30773,54731
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1175896800,
@@ -803,6 +796,14 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'text' => 'K 6905 Langerwisch-B 2 Potsdam Bahnübergang in der OD Wilhelmshorst Markierungsarbeiten Vollsperrung 08.03.2007-09.03.2007 ',
          'from' => 1173222000,
          'data' => 'userdel	2::inwork -12451,-9641 -12751,-8997 -12835,-8819
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1184104800,
+         'text' => 'B 096 Finsterwalde-Luckau Brücke über das Berstefließ nördl. Riedebeck Abbruch u. Neubau Brücke Vollsperrung 12.03.2007-10.07.2007 ',
+         'from' => 1173567600,
+         'data' => 'userdel	2::inwork 30491,-65399 30577,-65764
 ',
          'type' => 'gesperrt'
        }

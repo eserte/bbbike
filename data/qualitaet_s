@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.188 2007/03/04 19:43:33 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.188 2007/03/04 19:43:33 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -199,7 +199,7 @@ Rotherstr.: Kopfsteinpflaster	Q2 13676,10926 13575,10963 13478,10998
 Warschauer Platz: Kopfsteinpflaster	Q2 13520,11097 13478,10998 13471,10983 13389,10808
 Colditzstr.: Kopfsteinpflaster	Q2 9665,6029 9781,5789 9847,5630 9875,5561 9955,5376 10029,5230
 Volkmarstr.: Kopfsteinpflaster	Q2 9661,5224 9690,5255 9955,5376 10230,5498
-Str. 229: Kopfsteinpflaster mit asphaltierten Banketten	Q2 11058,4338 11232,4327
+Str. 229: Kopfsteinpflaster mit asphaltierten Banketten	Q2 11072,4335 11232,4327
 Reuterstr.: Kopfsteinpflaster	Q2 12148,9209 12146,9384 12148,9426 12150,9545
 Lenaustr.: Kopfsteinpflaster	Q2 12148,9426 12047,9429 11954,9415 11810,9392
 Pflügerstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster (max. 16 km/h)	Q2 12480,9394 12333,9470 12318,9482 12150,9545
@@ -2477,7 +2477,7 @@ Buggenhagenstr.: mäßiger Beton	Q2 14425,13780 14378,13599
 Karlstadter Str.: mäßiger Asphalt	Q1 11500,18335 11579,18184 11656,18013
 Utrechter Str.: Kopfsteinpflaster	Q2 7043,15793 7196,15964 7279,16057 7491,16072
 Odinstr.: Kopfsteinpflaster	Q2 18006,9335 17898,9593 17890,9617
-Wolfsburger Weg: Beton	Q0 10492,4719 10335,4809 9998,4837
+Wolfsburger Weg: Beton	Q0 10505,4713 10335,4809 9998,4837
 Onkel-Herse-Str.: Asphalt	Q0 13680,4715 13922,4798
 Kamminer Str.: Asphalt	Q0 3248,12954 3292,13123 3315,13231 3346,13342 3366,13432 3403,13576
 Wattstr. (Oberschöneweide): mäßiger Asphalt	Q1 17686,7589 17633,7286
@@ -2971,6 +2971,10 @@ Jagowstr. (Spandau): gutes Kopfsteinpflaster	Q1 -3290,15565 -3260,15550 -3248,15
 Fürstenstr. (Zehlendorf): gutes Kopfsteinpflaster	Q1 -385,2896 -426,2978 -495,3113 -526,3229 -502,3429 -461,3522
 Talstr.: mäßiges Kopfsteinpflaster	Q2 11776,16753 11825,16666 11919,16495 11908,16410 11887,16320
 Flottenstr.: guter Asphalt	Q0 6392,19142 6680,19098 6960,19047 7329,18996 7519,18957 7890,18933 7920,18996
+Huronseestr.: mäßiger Beton	Q1 16807,10550 16727,10245 16811,10219
+Plautusstr.: guter Asphalt	Q0 11118,4550 11109,4503 11092,4433 11072,4335
+Horazweg: guter Asphalt	Q0 10746,4546 10931,4521 11109,4503
+Catostr.: Asphalt	Q0 10758,4611 10746,4546 10743,4515 10732,4437
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14202,13140 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934

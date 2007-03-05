@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.40 2007/03/04 19:42:15 eserte Exp $
+# $Id: bbbike.cgi,v 8.40 2007/03/04 19:42:15 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -2381,6 +2381,33 @@ sub get_kreuzung {
 	$q->param('ziel', $ziel_str);
 	$q->delete($_) for (qw(startname vianame zielname));
 	return choose_form();
+    }
+
+    if (0) {
+	# XXX nearly good enough, just:
+	#   cache $nearest_orte
+	#   cache everything necessary in outside_berlin_and_potsdam
+	#   do it earlier, not here!
+	#   check if the crossing is nearer than the place
+	#   maybe use the distinction in/bei like in bbbike/Perl/Tk
+	for my $def ([\$start_c, \$start_str],
+		     [\$via_c,   \$via_str],
+		     [\$ziel_c,   \$ziel_str],
+		    ) {
+	    my($c_ref, $str_ref) = @$def;
+	    next if !$$c_ref;
+	    next if !outside_berlin_and_potsdam($$c_ref);
+	    warn "do something with $$c_ref";
+	    my $nearest_orte = Kreuzungen->new_from_strassen(Strassen => get_orte());
+	    $nearest_orte->make_grid;
+	    my($nearest_ort_xy) = $nearest_orte->nearest_loop(split(/,/, $$c_ref),
+							      IncludeDistance => 1);
+	    if ($nearest_ort_xy) {
+		my $ort = $nearest_orte->get_first($nearest_ort_xy->[0]);
+		warn $nearest_ort_xy->[1];
+		$$str_ref = $ort;
+	    }							  
+	}
     }
 
     if (@start_coords == 1 and @ziel_coords == 1 and
@@ -6132,6 +6159,28 @@ sub filename_from_route {
     } else {
 	$type . "_" . $startname . "_" . $zielname;
     }
+}
+
+sub outside_berlin_and_potsdam {
+    my($c) = @_;
+    my $result = 0;
+    eval {
+	require VectorUtil;
+	my $berlin = Strassen->new("berlin");
+	$berlin->count == 1 or die "Record count of berlin is not 1";
+	$berlin->init;
+	my $potsdam = Strassen->new("potsdam");
+	$potsdam->count == 1 or die "Record count of potsdam is not 1";
+	$potsdam->init;
+	my $berlin_border = [ map { [split /,/] } @{ $berlin->next->[Strassen::COORDS()] } ];
+	my $potsdam_border = [ map { [split /,/] } @{ $potsdam->next->[Strassen::COORDS()] } ];
+	my $p = [split /,/, $c];
+	$result = 1 if (!VectorUtil::point_in_polygon($p,$berlin_border) &&
+			!VectorUtil::point_in_polygon($p,$potsdam_border));
+
+    };
+    warn $@ if $@;
+    $result;
 }
 
 ######################################################################
