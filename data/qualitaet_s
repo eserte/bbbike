@@ -1316,7 +1316,7 @@ Götzestr.: gutes Kopfsteinpflaster	Q1 3908,22709 3743,22642
 (Weg am Tegeler Fließ): Feldweg, teilweise nur einspurig, matschige Stellen	Q3 5860,24067 5965,24047 6084,24073 6259,23947
 (Tegeler Fließ - Lübars): Feldweg, teilweise nur einspurig, matschige Stellen	Q3 6259,23947 6395,23785
 (Tegeler Fließ - Lübars): sehr sandig	Q3 6395,23785 6585,23904
-(Tegeler Fließ - Lübars): schlechtes Kopfsteinpflaster	Q3 6585,23904 6744,23695
+(Tegeler Fließ - Lübars): schlechtes Kopfsteinpflaster	Q3 6585,23904 6609,23892 6744,23695
 Schildower Str. (Blankenfelde): Asphalt	Q0 9186,23625 9133,23750
 (Möllersfelder Weg): glatter Feldweg	Q1 9812,23983 10082,24061 10071,24087 10466,24468
 (Möllersfelder Weg - Schönerlinder Str.): glatter Feldweg	Q1 10466,24468 10569,24294 10615,24261 10746,24251 10799,24194
@@ -1490,6 +1490,7 @@ Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 Eulerstr.: Asphalt	Q0 9268,16228 9336,16302 9498,16480
 Boizenburger Str.: guter Asphalt	Q0 22310,12829 22310,12637 22309,12350 22385,12268
+Paul-Grasse-Str.: mäßiges Kopfsteinpflaster	Q2 12783,15921 12583,16025 12423,16109
 Enkenbacher Weg: guter Asphalt	Q0 27859,322 27734,437 27548,598 27471,664 27393,732 27329,786 27263,839 27234,874 27225,907 27231,962 27280,1119 27344,1329
 Thomas-Mann-Str.: Asphalt	Q0 12886,15346 12993,15275 13106,15202 13240,15408
 Löwensteinring: Asphalt	Q0 14812,2661 14599,2451 14497,2486 14411,2568 14407,2746 14500,2864
@@ -1596,7 +1597,7 @@ Kunkelstr.: Beton	Q0 8219,14897 8227,15075
 Kunkelstr.: Gehwegplatten	Q0 8227,15075 8229,15128
 Kunkelstr.: Fahrbahn ist Kopfsteinpflaster, Uferweg ist wassergebundene Decke 	Q1 8229,15128 8232,15220
 Kunkelstr.: Parkweg	Q1 8232,15220 8268,15312
-Rietzestr.: Asphalt	Q0 12718,15214 12480,15352
+Rietzestr.: Asphalt	Q0 12718,15214 12472,15356
 Luzinstr.: Beton	Q0 22925,13662 22859,13684 22759,13715
 Rudolf-Seiffert-Str.: mäßiger Asphalt	Q1 14857,13146 14978,13581 14821,13628 14844,13667
 Rosenbecker Str.: Beton	Q0 21684,18283 21699,18314 21751,18421 21732,18493 21678,18648 21628,18810
@@ -2681,8 +2682,8 @@ Oettingstr.: schlechtes Kopfsteinpflaster	Q3 21828,5623 21907,5517
 Cardinalstr.: schlechtes Kopfsteinpflaster	Q3 21718,5551 21828,5623 21901,5728
 Joachimstr. (Köpenick): guter Asphalt	Q0 21802,5437 21907,5517 22009,5593
 Buchholzweg: guter Asphalt	Q0 4535,15530 4466,15350 4389,15336
-Lehderstr.: asphaltiert	Q0 12182,16322 12466,16198 12858,16026 13094,15896 13214,15830 13332,15765
-Streustr.: asphaltiert	Q0 12285,16392 12512,16291 12673,16209 12903,16109 13139,15988 13269,15927 13432,15843
+Lehderstr.: asphaltiert	Q0 12182,16322 12466,16198 12842,16032 13094,15896 13214,15830 13332,15765
+Streustr.: asphaltiert	Q0 12285,16392 12512,16291 12673,16209 12885,16115 13139,15988 13269,15927 13432,15843
 Waldhüterpfad: Kopfsteinpflaster, uneben	Q2 510,4202 371,4453 301,4643
 Goldenes Horn: guter Asphalt	Q0 10561,3748 10587,4046 10613,4308
 Aubertstr.: guter Asphalt	Q0 10994,22526 11177,22736 11240,22803 11273,22838
@@ -2973,6 +2974,7 @@ Talstr.: mäßiges Kopfsteinpflaster	Q2 11776,16753 11825,16666 11919,16495 11908,
 Flottenstr.: guter Asphalt	Q0 6392,19142 6680,19098 6960,19047 7329,18996 7519,18957 7890,18933 7920,18996
 Huronseestr.: mäßiger Beton	Q1 16807,10550 16727,10245 16811,10219
 Plautusstr.: guter Asphalt	Q0 11118,4550 11109,4503 11092,4433 11072,4335
+Liviusstr.: betoniert	Q0 10743,4515 10499,4542 10453,4518
 Horazweg: guter Asphalt	Q0 10746,4546 10931,4521 11109,4503
 Catostr.: Asphalt	Q0 10758,4611 10746,4546 10743,4515 10732,4437
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165

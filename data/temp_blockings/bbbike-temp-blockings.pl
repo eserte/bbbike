@@ -1215,7 +1215,7 @@ EOF
        text  => 'L 23; (Templin-Lychen); OD Lychen Straßenbau Vollsperrung 17.11.2004-20.12.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 3125,88753 2788,89447
+userdel	q4 3125,88753 2797,89387
 EOF
      },
      { from  => 1116572111, # 2005-05-20 08:55
@@ -1676,7 +1676,7 @@ EOF
        text  => 'L 23; (Templin-Lychen); OD Lychen, Kreuzungsber. Straßenbau Vollsperrung 29.03.2005-03.05.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	q4 3125,88753 2788,89447
+userdel	q4 3125,88753 2797,89387
 EOF
      },
      { from  => 1113084000, # 2005-04-10 00:00
@@ -4414,7 +4414,7 @@ EOF
        text  => 'L 015 Fürstenberger Str. OL Lychen, ab Vogelsangstr. bis Am Markt Einbau Deckschicht Vollsperrung 13.05.2006-13.05.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 2788,89447 2179,89513
+userdel	q4 2797,89387 2111,89378
 EOF
      },
      { from  => 1147522037, # 2006-05-13 14:07
@@ -7191,6 +7191,23 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -12451,-9641 -12751,-8997 -12835,-8819
+EOF
+     },
+     { from  => 1173567600, # 2007-03-11 00:00
+       until => 1184104800, # 2007-07-11 00:00
+       text  => 'B 096 Finsterwalde-Luckau Brücke über das Berstefließ nördl. Riedebeck Abbruch u. Neubau Brücke Vollsperrung 12.03.2007-10.07.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 30491,-65399 30577,-65764
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Kietzer Str. (Köpenick) in beiden Richtungen, zwischen Grünstr. und Rosenstr. geplatzte Wasserleitung',
+       type  => 'gesperrt',
+       source_id => 'IM_004874',
+       data  => <<EOF,
+userdel	2::inwork 22312,4593 22263,4671
 EOF
      },
     );

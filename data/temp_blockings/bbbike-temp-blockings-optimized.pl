@@ -798,6 +798,23 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	2::inwork -12451,-9641 -12751,-8997 -12835,-8819
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1184104800,
+         'text' => 'B 096 Finsterwalde-Luckau Brücke über das Berstefließ nördl. Riedebeck Abbruch u. Neubau Brücke Vollsperrung 12.03.2007-10.07.2007 ',
+         'from' => 1173567600,
+         'data' => 'userdel	2::inwork 30491,-65399 30577,-65764
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_004874',
+         'until' => undef,
+         'text' => 'Kietzer Str. (Köpenick) in beiden Richtungen, zwischen Grünstr. und Rosenstr. geplatzte Wasserleitung',
+         'from' => undef,
+         'data' => 'userdel	2::inwork 22312,4593 22263,4671
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -24,7 +24,7 @@ Holzmarktstr.	? 11773,12006 11619,12084 11388,12202 11351,12221
 #: last_checked: 2007-03-03
 Gitschiner Str.	? 9948,10280 10122,10294 10340,10301 10605,10312 10859,10333 10962,10340 11114,10338
 Storkower Straße zwischen Kniprode- und Greifswalder Straße	? 13453,14678 12722,15105
-Grellstr.	? 12722,15105 12434,15272 12252,15376 11941,15586
+Grellstr.	? 12722,15105 12428,15275 12252,15376 11941,15586
 #: last_checked: 2006-08-27 (vom S-Bahnhof aus gesehen)
 Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 12188,14321 12338,14532 12384,14600 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941 12722,15105 12743,15138 12886,15346 12976,15483 13098,15592 13332,15765
 Vulkanstraße	? 15912,13153 15892,13534
@@ -319,7 +319,7 @@ Arkenberge: wo genau ist die Durchfahrt für Autos gesperrt	? 10402,26369 10318,2
 Neuendorf (Nl) wird ab 2002-08-18 geschlossen; neu: 'Cottbus-Willmersdorf Nord' und 'Teichland'. Grund: Umverlegung der Trasse (betr. RE1 und RE18)	?? 80691,-66664 80603,-64961 81213,-63504 82460,-63229
 Entlang der Industriebahn: laut ADFC-Karte befahrbar, Qualität?	? 5138,21358 4717,21199
 Waldpark Steinberg: laut ADFC-Karte befahrbar, Qualität?	? 3553,21665 3406,21911 3142,22170
-Weg am Tegeler Fließ: Durchfahrt möglich? Qualität, wahrscheinlich Waldweg Q2?	?? 7687,24407 6966,24090 6259,23947
+Weg am Tegeler Fließ: Durchfahrt möglich? Qualität, wahrscheinlich sandiger Weg?	?? 7736,24239 7627,24190 7594,24200 7402,24144 7315,24082 7207,24103 7039,24077 6930,24045 6870,24061 6716,23949 6609,23892
 #: XXX Das ist ein nicht behindertengerechter Abschnitt des BD. Möglicherweise auch nicht fahrradgerecht.
 # laut http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20060921.1145.47773.html ist in der Georg-Knorr-Str. ein Radweg
 Landsberger Allee/Wiesenburger Weg: Sind die Zugänge vorhanden (möglicherweise zwischen den beiden Richtungsfahrbahnen), Einbahnstraßen?	? 19280,15014 19472,15184
@@ -493,7 +493,7 @@ Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsab
 Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsabhängige Strecke; am Luisenberg wird vielleicht demnächst asphaltiert	? -9543,4625 -8868,3875 -8799,3778
 Mauerweg am Griebnitzsee: Qualität - vermutlich Asphalt?	? -9656,-285 -9562,-325 -9412,-518 -9365,-610
 Mauerweg am Griebnitzsee: Qualität - vermutlich wassergebundene Decke?	? -8128,-1490 -8062,-1459 -7837,-1346 -7592,-1402
-Mauerweg in Schildow: Qualität? Wegführung? einzelne Straßen benennen?	? 7687,24407 7590,24481 7412,24481 7425,24715 6821,24700 6306,24537 6034,24503 5534,24521 5309,24571 5256,24593 4950,24293 4825,24328
+Mauerweg in Schildow: Qualität? Wegführung? einzelne Straßen benennen?	? 7653,24412 7568,24527 6814,24593 6542,24466 6261,24462 6029,24562 5848,24609 5585,24606 5390,24604 5265,24642 5204,24496 5140,24338 4958,24418 4898,24351 4825,24328
 Mauerweg in Frohnau: Verlauf weitgehend unklar, Qualität?	? 3848,24546 3600,24490 3515,24668 3546,24859 3603,24968 3306,25259 3200,25429 3211,25484 3273,25516 3473,25618 3662,25618 3615,25890 3428,25979 3362,26046 3390,26225 3448,26315 3540,26465 3450,26503 3403,26668
 Mauerweg in Frohnau: laut "Berliner Umland" teilweise gut geeignet, teilweise witterungsabhängige Strecken	? 3403,26668 3081,27368 3706,27812 3512,28053 3078,28028 2162,28077 1979,28091 1871,28131 1741,27539
 Rehbrücke - Langerwisch: Qualität? genaue Wegführung?	? -9626,-6603 -9541,-6955 -9753,-7192 -9953,-7604 -10067,-8165 -10302,-8515 -10364,-8839 -10726,-9726 -11737,-10275 -12382,-10517
@@ -548,7 +548,7 @@ Luckow - Petershagen: Qualität?	? 63938,93631 65825,93937 66468,94268
 Petershagen - Penkun: Qualität?	? 66587,93937 66468,94268 66575,94387 66312,94862 66250,95800 65112,98837 65312,99387 65237,99575 65135,99977
 Luckow - Penkun: Qualität?	? 63938,93631 64150,94312 64062,94762 64262,96387 65112,98837
 Luckow - Sommersdorf: Qualität? (auf Sommersdorfer Seite: querliegende Betonplatten, vielleicht Q2)	? 63938,93631 63800,94250 62800,96175 62912,96800 62425,97375 61900,97587 61393,98356
-Bei Penkun: Qualität? Ausgeschildert?	? 68961,100161 67712,99425 65237,99575 64837,99262 64362,99087 63575,98375 62425,97375
+Bei Penkun: Qualität? Ausgeschildert?	? 68961,100161 67712,99425 65856,99466 65237,99575 64837,99262 64362,99087 63575,98375 62425,97375
 #: note: http://www.berlin.de/ba-lichtenberg/presse/archiv/20060801.2315.44967.html: ab 2006-11-30 wird dieser Abschnitt asphaltiert sein (last_checked 2006-10-03: an der Treskowallee bereits fertig)
 #: note: http://www.berlin.de/ba-lichtenberg/presse/archiv/20061109.1735.50098.html: ab 2006-11-24 fertig
 Laut "Berliner Umland" verläuft die R1 hier entlang, aber es gibt (noch) keine Ausschilderung	? 17527,7812 17678,7850 17775,7874 17987,7973 18387,7742
@@ -932,7 +932,7 @@ Neuruppin - Rheinsberg - Wesenberg: mittlerweile B122?	? -28477,59467 -28437,599
 Schildower Weg, Teil des Barnimer Dörferwegs: Qualität? (laut ADFC-Karte mäßig oder schlecht geeignet)	? 8423,24358 8198,24225 7956,24083 7887,24043 7874,24035
 Möllersfelder Weg - Schillingweg: Qualität (möglicherweise guter Feldweg)? Teil des Barnimer Dörferwegs?	? 10799,24194 11147,23778
 Lübarser Weg: Qualität?	? 8423,24358 8710,24821
-Goethestr. (Weißensee): Qualität (laut ADFC-Karte teilweise gut, teilweise mäßig geeignet)? Einbahnstraße im südlichen Teil nur für Autofahrer?	? 12384,16029 12466,16198 12512,16291 12564,16399 12642,16555
+Goethestr. (Weißensee): Qualität (laut ADFC-Karte teilweise gut, teilweise mäßig geeignet)? Einbahnstraße im südlichen Teil nur für Autofahrer?	? 12384,16029 12423,16109 12466,16198 12512,16291 12564,16399 12642,16555
 Max-Lingner-Str. - Maximilianstr.: laut ADFC-Karte Durchfahrt vorhanden, Qualität mäßig	? 11110,17301 10911,17275
 Leonhard-Frank-Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? 9229,18178 9496,18545
 Leonhard-Frank-Str.: Qualität (laut ADFC-Karte nordöstlich des Heinrich-Mann-Platzes schlecht geeignet)?	? 9556,18630 9586,18670 9658,18768
@@ -1445,5 +1445,4 @@ Str. 10, entlang des Hechtgrabens: Qualität?	? 18121,19390 18025,19433 17838,195
 Hagenower Ring - Am Luchgraben: Qualität?	? 17009,19104 17021,19258 17015,19287 17015,19587 17079,20716 17100,20848 17274,20851
 #: XXX: unklarer Eintrag von anonymous "mäßig"
 Herbert-Baum-Str.: Qualität? Kann die Berliner Str. in Höhe Herbert-Baum-Str. überquert werden?	? 13821,16035 13869,15912 13904,15818 13943,15717 13964,15656 13980,15607
-Liviusstr.: Qualität (vielleicht betoniert?)?	? 10743,4515 10499,4542 10453,4518
 Flaeming-Skate, RK4	? -7522,-44347 -7510,-44384 -6919,-44603 -6657,-44658 -6444,-44926 -5895,-45091 -5652,-45097 -5310,-45731 -4908,-46261 -4207,-46395 -3829,-47047 -3708,-47352 -3799,-47839 -4268,-48223 -4445,-48564 -5956,-49905 -6078,-49893 -6304,-50088 -6462,-50143 -6541,-50216 -7035,-50222 -8120,-50508 -9509,-50941 -9393,-51374 -9552,-51337 -9558,-51435 -9850,-51660 -9765,-52958
