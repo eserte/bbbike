@@ -285,7 +285,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
          'until' => 1175378399,
          'text' => 'Pistoriusstr. (Pankow) in Richtung Berliner Allee, zwischen Roelckestr. und Mirbachplatz Baustelle, Fahrtrichtung gesperrt (bis 03.2007)',
          'from' => 1168462016,
-         'data' => 'userdel	q4::inwork; 13131,16525 13386,16408
+         'data' => 'userdel	q4::inwork; 13131,16525 13331,16424
 ',
          'type' => 'handicap'
        },
@@ -754,7 +754,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'until' => 1175378399,
          'text' => 'Kastanienallee (Pankow) Richtung Schönhauser Str. zwischen Friedrich-Engels-Str. und Eschenallee Baustelle, Fahrtrichtung gesperrt (bis Ende 03.2007)',
          'from' => 1172646005,
-         'data' => 'userdel	1::inwork 8915,20605 9476,20647 9655,20703 9737,20728 9848,20764
+         'data' => 'userdel	1::inwork 8900,20601 9476,20647 9655,20703 9737,20728 9848,20764
 ',
          'type' => 'gesperrt'
        },
@@ -813,6 +813,14 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'text' => 'Kietzer Str. (Köpenick) in beiden Richtungen, zwischen Grünstr. und Rosenstr. geplatzte Wasserleitung',
          'from' => undef,
          'data' => 'userdel	2::inwork 22312,4593 22263,4671
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1178575200,
+         'text' => 'L 040 Zossener Damm OD Blankenfelde, zw. Kreisverkehr u. K.-Liebknecht-Str. Straßenausbau Vollsperrung 07.03.2007-07.05.2007 ',
+         'from' => 1173135600,
+         'data' => 'userdel	2::inwork 10115,-8276 11019,-8435
 ',
          'type' => 'gesperrt'
        }

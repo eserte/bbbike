@@ -1644,7 +1644,7 @@ EOF
        text  => 'Pistoriusstr. (Weissensee) Richtung Berliner Allee zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt (bis 30.06.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 13386,16408 13652,16297 13797,16237
+userdel	1 13400,16395 13652,16297 13797,16237
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -4980,7 +4980,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004456',
        data  => <<EOF,
-userdel	q4::inwork; 13131,16525 13386,16408
+userdel	q4::inwork; 13131,16525 13331,16424
 EOF
      },
      { from  => 1153000800, # 2006-07-16 00:00
@@ -7142,7 +7142,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004803',
        data  => <<EOF,
-userdel	1::inwork 8915,20605 9476,20647 9655,20703 9737,20728 9848,20764
+userdel	1::inwork 8900,20601 9476,20647 9655,20703 9737,20728 9848,20764
 EOF
      },
      { from  => 1172642400, # 2007-02-28 07:00
@@ -7208,6 +7208,14 @@ EOF
        source_id => 'IM_004874',
        data  => <<EOF,
 userdel	2::inwork 22312,4593 22263,4671
+EOF
+     },
+     { from  => 1173135600, # 2007-03-06 00:00
+       until => 1178575200, # 2007-05-08 00:00
+       text  => 'L 040 Zossener Damm OD Blankenfelde, zw. Kreisverkehr u. K.-Liebknecht-Str. Straßenausbau Vollsperrung 07.03.2007-07.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 10115,-8276 11019,-8435
 EOF
      },
     );
