@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.292 2007/03/04 19:44:47 eserte Exp eserte $
+# $Id: bbbike,v 3.293 2007/03/08 22:16:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -205,7 +205,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.292 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.293 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -12903,6 +12903,11 @@ sub next_free_layer {
 sub reset_free_layer {
     my $abk = shift;
     delete $no_overlap_label{$abk};
+    delete $layer_active_color{$abk};
+    delete $layer_pre_enter_command{$abk};
+    delete $layer_post_enter_command{$abk};
+    delete $layer_pre_leave_command{$abk};
+    delete $layer_post_leave_command{$abk};
     remove_from_stack($abk);
 }
 

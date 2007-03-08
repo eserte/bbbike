@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.19 2006/08/26 22:24:35 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.20 2007/03/08 22:28:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.

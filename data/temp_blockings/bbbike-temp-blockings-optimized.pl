@@ -776,8 +776,8 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'type' => 'gesperrt'
        },
        {
-         'until' => 1173394800,
-         'text' => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 06.03.2007-08.03.2007 ',
+         'until' => 1173567600,
+         'text' => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 06.03.2007-10.03.2007 ',
          'from' => 1173049200,
          'data' => 'userdel	2::inwork 73204,97424 72745,97584
 ',
@@ -821,6 +821,30 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'text' => 'L 040 Zossener Damm OD Blankenfelde, zw. Kreisverkehr u. K.-Liebknecht-Str. Straßenausbau Vollsperrung 07.03.2007-07.05.2007 ',
          'from' => 1173135600,
          'data' => 'userdel	2::inwork 10115,-8276 11019,-8435
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1183240800,
+         'text' => 'B 101 zw. Wiederau und Krz. Friedrichsluga Straßenbau Richtungsverkehr 07.03.2007-30.06.2007 ',
+         'from' => 1173135600,
+         'data' => 'userdel	1::inwork 5339,-84725 4072,-82982
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1180648800,
+         'text' => 'L 037 Petersdorfer Str. OD Petershagen Kanal- und Straßenbauarbeiten Vollsperrung 12.03.2007-31.05.2007 ',
+         'from' => 1173567600,
+         'data' => 'userdel	2::inwork 74092,475 74246,584
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1173740400,
+         'text' => 'L 742 Klein Köris-Teupitz Bahnübergang in der OD Groß Köris Gleisumbauarbeiten Vollsperrung 09.03.2007-12.03.2007 ',
+         'from' => 1173308400,
+         'data' => 'userdel	2::inwork 28494,-27010 28010,-27154 27824,-27205
 ',
          'type' => 'gesperrt'
        }

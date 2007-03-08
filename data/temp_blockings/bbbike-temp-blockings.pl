@@ -1329,7 +1329,7 @@ EOF
        text  => 'Schulze-Boysen-Str. (Lichtenberg) in beiden Richtungen zwischen Wiesenweg und Pfarrstr. Kranarbeiten, Straße vollständig gesperrt (bis 13.12.2004 ca. 5:00 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 15452,11330 15480,11392
+userdel	2 15458,11342 15480,11392
 EOF
      },
      { from  => 1105225200, # 2005-01-09 00:00
@@ -1448,7 +1448,7 @@ EOF
        text  => 'K 6148; (Brand-Halbe); Bahnübergang in OL Teurow Arbeiten an Signaltechnik Vollsperrung 08.02.2005-17.02.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 32937,-34794 32781,-34707
+userdel	2 32937,-34794 32870,-34756 32781,-34707
 EOF
      },
      { from  => 1108854000, # 2005-02-20 00:00
@@ -7170,8 +7170,8 @@ userdel	2::inwork 86420,913 86769,1414
 EOF
      },
      { from  => 1173049200, # 2007-03-05 00:00
-       until => 1173394800, # 2007-03-09 00:00
-       text  => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 06.03.2007-08.03.2007 ',
+       until => 1173567600, # 2007-03-11 00:00
+       text  => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 06.03.2007-10.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 73204,97424 72745,97584
@@ -7216,6 +7216,30 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 10115,-8276 11019,-8435
+EOF
+     },
+     { from  => 1173135600, # 2007-03-06 00:00
+       until => 1183240800, # 2007-07-01 00:00
+       text  => 'B 101 zw. Wiederau und Krz. Friedrichsluga Straßenbau Richtungsverkehr 07.03.2007-30.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 5339,-84725 4072,-82982
+EOF
+     },
+     { from  => 1173567600, # 2007-03-11 00:00
+       until => 1180648800, # 2007-06-01 00:00
+       text  => 'L 037 Petersdorfer Str. OD Petershagen Kanal- und Straßenbauarbeiten Vollsperrung 12.03.2007-31.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 74092,475 74246,584
+EOF
+     },
+     { from  => 1173308400, # 2007-03-08 00:00
+       until => 1173740400, # 2007-03-13 00:00
+       text  => 'L 742 Klein Köris-Teupitz Bahnübergang in der OD Groß Köris Gleisumbauarbeiten Vollsperrung 09.03.2007-12.03.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 28494,-27010 28010,-27154 27824,-27205
 EOF
      },
     );

@@ -1,5 +1,5 @@
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.99 2007/03/04 19:45:02 eserte Exp eserte $
+#: version: $Id: ampeln-orig,v 4.100 2007/03/08 22:16:53 eserte Exp $
 #:
 	X 9222,8787
 	X 8982,8781
@@ -1316,7 +1316,7 @@ nur Richtung O	X 8142,7221
 	X 10018,19429
 	X 9859,19283
 	X 11563,20048
-	X 12853,20632
+	F 12814,20648
 	X 15606,19839
 	X 15640,19208
 	X -5039,15618
@@ -1652,7 +1652,7 @@ nur Richtung O	X 8142,7221
 	X 8690,13723
 	X 11623,9104
 	X 15670,10800
-geschlossen jede volle Stunde	Zbr 28430,-26217
+geschlossen jede volle Stunde	Zbr 28482,-26163
 geschlossen bei Bedarf	Zbr 45301,48132
 geschlossen 5x täglich für max. 20 Minuten	Zbr 36080,162883
 geschlossen 5x täglich für max. 30 Minuten	Zbr 32848,183868
@@ -1710,7 +1710,7 @@ Bahn kommt ca. halbstündlich	B 40222,103642
 	B 45768,72675
 	B -8428,-2886
 	B -9975,-5578
-	B 26072,-23180
+	B 26112,-23187
 	B 26752,-17872
 	B 26699,-15709
 	B 43031,-50423
@@ -1939,3 +1939,11 @@ Hier auch eine Ampel?	? 8687,18755
 	F 6383,4890
 	F 17438,18998
 	B -12751,-8997
+	X 13867,9864
+	X 13884,9882
+	B 27705,-26035
+	B 28010,-27154
+	B 31675,-32839
+	B 29798,-30045
+	B 32870,-34756
+	B 33363,-36285

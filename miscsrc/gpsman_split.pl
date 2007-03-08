@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman_split.pl,v 1.5 2006/05/21 06:57:00 eserte Exp $
+# $Id: gpsman_split.pl,v 1.6 2007/03/08 22:18:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -78,6 +78,9 @@ if ($do eq 'by_date') {
 		    $_ = mark_with_question($_) if $do_mark_with_question;
 		    print OUT $_;
 		}
+	    } else {
+		# everything else: passthrough
+		print OUT $_;
 	    }
 	}
     }
