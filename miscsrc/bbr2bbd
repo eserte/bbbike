@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbr2bbd,v 1.9 2006/06/21 22:32:34 eserte Exp $
+# $Id: bbr2bbd,v 1.12 2007/03/09 00:47:26 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -27,11 +27,22 @@ use Route;
 use Route::Heavy;
 
 if (!GetOptions(\%opt,
-		"cat=s", "name=s", "dest=s", "f", "usebasename", "route-data", "data-route")) {
+		"cat=s", "cats=s", "name=s", "dest=s", "f", "usebasename",
+		"route-data","data-route",
+		"include-length-to-name", "include-moddate-to-name",
+	       )) {
     die "usage:
-    $0 [-cat category] ] [-dest directory] [-name routename]
-       [-usebasename] [-f] [-data-route] [-route-data] [from to | files ...]
+    $0 [-cat category | -cats category,category,...] [-name routename]
+       [-usebasename] [-dest directory] [-f] [-data-route] [-route-data]
+       [-include-length-to-name] [-include-moddate-to-name]
+       [from to | files ...]
 ";
+}
+
+my $cat_i = 0;
+my @cats;
+if ($opt{cats}) { # use round-robin categories
+    @cats = split /,/, $opt{cats};
 }
 
 if ($opt{dest}) {
@@ -114,10 +125,56 @@ sub convert_one_file {
 	if ($opt{usebasename}) {
 	    ($name) = fileparse($in_file, "\\..+\$");
 	}
-	my $cat = $opt{cat};
+	my $cat;
+	if (@cats) {
+	    $cat = $cats[$cat_i++];
+	    if ($cat_i > $#cats) {
+		$cat_i = 0;
+	    }
+	} else {
+	    $cat = $opt{cat};
+	}
 	my $str = Route::as_strassen($in_file, name => $name, cat => $cat, fuzzy => 1);
 	if (!$str) {
 	    die "Die Datei <$in_file> enthält keine Route."
+	}
+	if ($opt{'include-length-to-name'} || $opt{'include-moddate-to-name'}) {
+	    my $len = 0;
+	    my $moddate;
+
+	    if ($opt{'include-length-to-name'}) {
+		require BBBikeUtil;
+		require Strassen::Stat;
+		$str->init;
+		while(1) {
+		    my $ret = $str->next;
+		    last if !@{ $ret->[Strassen::COORDS()] };
+		    $len += Strassen::total_len($ret);
+		}
+	    }
+
+	    if ($opt{'include-moddate-to-name'}) {
+		my(@s) = stat($in_file);
+		if (@s) {
+		    my @l = localtime $s[9];
+		    $moddate = sprintf "%04d-%02d-%02d", $l[5]+1900, $l[4]+1, $l[3];
+		}
+	    }
+
+	    my $new_str = Strassen->new;
+	    $str->init;
+	    while(1) {
+		my $ret = $str->next;
+		last if !@{ $ret->[Strassen::COORDS()] };
+		if ($len) {
+		    $ret->[Strassen::NAME()] .= " (" . BBBikeUtil::m2km($len) . ")";
+		}
+		if ($moddate) {
+		    $ret->[Strassen::NAME()] .= " (" . $moddate . ")";
+		}
+		$new_str->push($ret);
+	    }
+	    $str = $new_str;
 	}
 	$open_out_file->();
 	print OUT $str->as_string;
