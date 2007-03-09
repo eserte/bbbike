@@ -7242,4 +7242,28 @@ EOF
 userdel	2::inwork 28494,-27010 28010,-27154 27824,-27205
 EOF
      },
+     { from  => 1173913200, # 2007-03-15 00:00
+       until => 1174345200, # 2007-03-20 00:00
+       text  => 'L 023 Storkow-Herzfelde Bahnübergang Fangschleuse Gleisbauarbeiten Vollsperrung 16.03.2007-19.03.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 39225,1082 39259,612 39264,-832
+EOF
+     },
+     { from  => 1174172400, # 2007-03-18 00:00
+       until => 1183240800, # 2007-07-01 00:00
+       text  => 'L 035 Pieskower Chaussee OD Bad Saarow, zw. R.-Koch-Str. und Einfahrt Klinikum Straßenbauarbeiten Vollsperrung 19.03.2007-30.06.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 55928,-13163 55790,-11816
+EOF
+     },
+     { from  => 1173567600, # 2007-03-11 00:00
+       until => 1174258800, # 2007-03-19 00:00
+       text  => 'L 070 Luckenwalder Str. OD Dahme, Kno. Hauptstr. B102 Abrissarbeiten Vollsperrung 12.03.2007-18.03.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 13308,-59619 13008,-59164
+EOF
+     },
     );

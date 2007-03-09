@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.37 2007/02/06 20:25:59 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.37 2007/02/06 20:25:59 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -126,6 +126,8 @@ sub run {
     my $zoom = param("zoom");
     $zoom = 3 if !defined $zoom;
 
+    $self->{autosel} = param("autosel") ? "true" : "false";
+
     $self->{converter} = $converter;
     $self->{coordsystem} = $coordsystem;
 
@@ -190,6 +192,8 @@ sub get_html {
     <script type="text/javascript">
     //<![CDATA[
 
+    var routeLabel = "Route: ";
+
     var addRoute = [];
     var addRouteOverlay;
 
@@ -237,29 +241,34 @@ sub get_html {
 		return;
 	}
 	addRoute[addRoute.length] = point;
-	updateRouteDiv();
-	updateRouteOverlay();
+	updateRoute();
     }
 
     function deleteLastPoint() {
 	if (addRoute.length > 0) {
 	    addRoute.length = addRoute.length-1;
-	    updateRouteDiv(); 
-	    updateRouteOverlay(); 
+	    updateRoute(); 
 	}
     }
 
     function resetRoute() {
 	addRoute = [];
-	updateRouteDiv();
+	updateRoute();
+    }
+
+    function updateRoute() {
+	updateRouteDiv(); 
 	updateRouteOverlay();
+	if ($self->{autosel}) {
+	    updateRouteSel();
+	}
     }
 
     function updateRouteDiv() {
 	var addRouteText = "";
 	for(var i = 0; i < addRoute.length; i++) {
 	    if (i == 0) {
-		addRouteText = "Route: ";	
+		addRouteText = routeLabel;
 	    } else if (i > 0) {
 		addRouteText += " ";
 	    }
@@ -277,6 +286,16 @@ sub get_html {
 	   return;
 	addRouteOverlay = new GPolyline(addRoute);
 	map.addOverlay(addRouteOverlay);
+    }
+
+    function updateRouteSel() {
+	var routeDiv = document.getElementById("addroutetext").firstChild;
+	var range = document.createRange();
+	range.setStart(routeDiv, routeLabel.length);
+	range.setEnd(routeDiv, routeDiv.length);
+	var s = window.getSelection();
+	s.removeAllRanges();
+	s.addRange(range);
     }
 
     function showLink(point, message) {

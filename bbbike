@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.293 2007/03/08 22:16:28 eserte Exp $
+# $Id: bbbike,v 3.293 2007/03/08 22:16:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -12042,7 +12042,7 @@ sub find_below_rx {
 sub show_below_str {
     my($c) = @_;
     my($item, @tags) = find_below($c,
-				  (qw/s sBAB l u b r f w/, (map { "comm-$_" } @comments_types)),
+				  (qw/s sBAB l u b r fz f w/, (map { "comm-$_" } @comments_types)),
 				 );
     return if !defined $item;
     $act_value{Strasse} = $tags[1];
@@ -12531,6 +12531,7 @@ sub show_info {
 			    }
 			    my $q2 = CGI->new({ wpt => $wpt,
 						zoom => $zoom,
+						autosel => 1,
 					      });
 			    my $url = $BBBike::BBBIKE_GOOGLEMAP_URL . "?" . $q2->query_string;
 			    $url;

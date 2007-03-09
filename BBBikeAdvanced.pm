@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.171 2007/03/04 19:45:49 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.171 2007/03/04 19:45:49 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1215,23 +1215,33 @@ sub set_line_coord_interactive {
     my $set_sub = sub {
 	my(@mark_args) = @_;
 	my @coords = ();
-	my $s = $t->SelectionGet('-selection' => ($os eq 'win'
-						  ? "CLIPBOARD"
-						  : "PRIMARY"));
-	while ($s =~ /([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
-	    my($x,$y) = ($1,$2);
-	    my $_map = $map;
-	    if ($map eq 'auto-detect') {
-		if ($x =~ m{\.} && $y =~ m{\.} && $x <= 180 && $x >= -180 && $y <= 90 && $y >= -90) {
-		    $_map = "polar";
-		} else {
-		    $_map = "standard";
+	my @selection_types = ('PRIMARY', 'CLIPBOARD');
+	if ($os eq 'win') {
+	    @selection_types = ('CLIPBOARD');
+	}
+	for my $selection_type (@selection_types) {
+	    my $s = eval { $t->SelectionGet('-selection' => $selection_type) };
+	    next if $@;
+	    while ($s =~ /([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
+		my($x,$y) = ($1,$2);
+		my $_map = $map;
+		if ($map eq 'auto-detect') {
+		    if ($x =~ m{\.} && $y =~ m{\.} && $x <= 180 && $x >= -180 && $y <= 90 && $y >= -90) {
+			$_map = "polar";
+		    } else {
+			$_map = "standard";
+		    }
 		}
+		if ($_map eq 'polar') {
+		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+		}
+		push @coords, [$x,$y];
 	    }
-	    if ($_map eq 'polar') {
-		($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
-	    }
-	    push @coords, [$x,$y];
+	    last if (@coords); # otherwise try the other selection type
+	}
+	if (!@coords) {
+	    warn "No coordinates found in any of the selections";
+	    return;
 	}
 	my @line_coords;
 	foreach (@coords) {
