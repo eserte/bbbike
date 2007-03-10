@@ -4240,7 +4240,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002668',
        data  => <<EOF,
-userdel	q4; 15904,12340 15879,12131 15863,11992
+userdel	q4; 15904,12340 15896,12273 15886,12192 15879,12131 15863,11992
 EOF
      },
      { from  => 1146175200, # 2006-04-28 00:00
@@ -5214,7 +5214,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003134',
        data  => <<EOF,
-userdel	1::inwork 15904,12340 15879,12131 15863,11992
+userdel	1::inwork 15904,12340 15896,12273 15886,12192 15879,12131 15863,11992
 EOF
      },
      { from  => 1154210400, # 2006-07-30 00:00
@@ -7037,9 +7037,9 @@ EOF
 userdel	2::inwork 86769,1414 87351,3652
 EOF
      },
-     { from  => 1170808004, # 2007-02-07 01:26
-       until => 1175378399, # 2007-03-31 23:59
-       text  => 'Dunckerstr. (Prenzlauer Berg) in beiden Richtungen, Kreuzung Stargarder Str. Baustelle, Straße vollständig gesperrt (bis 03.2007)',
+     { from  => 1173515301, # 2007-03-10 09:28
+       until => 1177970399, # 2007-04-30 23:59
+       text  => 'Dunckerstr. (Prenzlauer Berg) in beiden Richtungen, Kreuzung Stargarder Str. Baustelle, Straße vollständig gesperrt (bis 04.2007)',
        type  => 'gesperrt',
        source_id => 'IM_003972',
        data  => <<EOF,

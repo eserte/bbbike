@@ -2592,7 +2592,7 @@ But: it seems that PDF does not know anything about Unicode
 characters; and the PDF::Create documentation states that the ZingBats
 and Symbol fonts are not useable.
 
-=item * (H5)
+=item * (H5) (fixed?)
 
 Acrobat Reader often shows an error message for
 BBBikeDraw/PDF.pm-created files. No problems with xpdf and other
@@ -2626,6 +2626,17 @@ auch wichtige Straﬂen.
 Migrate to PDF::API2 (beginnings in BBBikeDraw::PDF2, Route::PDF2
 should also be created) or another pdf package, which is supported (in
 opposite to PDF::Create).
+
+=item * (M4)
+
+Komprimierung von PDFs. Ich habe die PDF::API2-verwendende Funktion in
+BBBikeDraw::PDFHeavy abgelegt. Die pdftk-verwendende Funktion sollte
+auch dorthin wandern. Weiterhin brauche ich eine Methode can_compress,
+eine Factory-Methode compress. Compress => 1 im BBBikeDraw-Konstruktor
+sollte angeben, welche Komprimierer man bevorzugt. Falls alles gut
+l‰uft (Testsuite mit vielen automatisch generierten PDFs und
+anschlieﬂendem Aufruf von xpdf/acroread?) kann ich es auf radzeit
+aktivieren.
 
 =back
 

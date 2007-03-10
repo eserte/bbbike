@@ -717,6 +717,7 @@ permission:
 # necessary, and optionally unmounted after copying.
 # The camcontrol commands were not necessary for 4.9, but are for 4.11
 # FreeBSD 6.x names the old mount_msdos now mount_msdosfs
+USB_STICK_NUMBER=1
 copy-cvs-to-stick:	copy-to-cvs
 	@[ ! -d /mnt/stick ] && ( \
 	    echo "Create the mount directory /mnt/stick? (CTRL-C to abort)"; \
@@ -726,7 +727,7 @@ copy-cvs-to-stick:	copy-to-cvs
 	-(mount | grep -q /mnt/stick) || ( \
 	    sudo camcontrol reset all; \
 	    sudo camcontrol rescan all; \
-	    sudo mount_msdosfs -u eserte /dev/da1s1 /mnt/stick \
+	    sudo mount_msdosfs -u eserte /dev/da$(USB_STICK_NUMBER)s1 /mnt/stick \
 	)
 	mount | grep -q /mnt/stick
 	-mv /mnt/stick/BBBike-CVS /mnt/stick/BBBike-CVS.old

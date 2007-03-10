@@ -688,9 +688,9 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        undef,
        {
          'source_id' => 'IM_003972',
-         'until' => 1175378399,
-         'text' => 'Dunckerstr. (Prenzlauer Berg) in beiden Richtungen, Kreuzung Stargarder Str. Baustelle, Straße vollständig gesperrt (bis 03.2007)',
-         'from' => 1170808004,
+         'until' => 1177970399,
+         'text' => 'Dunckerstr. (Prenzlauer Berg) in beiden Richtungen, Kreuzung Stargarder Str. Baustelle, Straße vollständig gesperrt (bis 04.2007)',
+         'from' => 1173515301,
          'data' => 'userdel	2::inwork 11603,15455 11638,15522
 ',
          'type' => 'gesperrt'
@@ -791,14 +791,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1173481200,
-         'text' => 'K 6905 Langerwisch-B 2 Potsdam Bahnübergang in der OD Wilhelmshorst Markierungsarbeiten Vollsperrung 08.03.2007-09.03.2007 ',
-         'from' => 1173222000,
-         'data' => 'userdel	2::inwork -12451,-9641 -12751,-8997 -12835,-8819
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1184104800,
          'text' => 'B 096 Finsterwalde-Luckau Brücke über das Berstefließ nördl. Riedebeck Abbruch u. Neubau Brücke Vollsperrung 12.03.2007-10.07.2007 ',

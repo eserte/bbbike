@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.41 2007/03/08 22:20:22 eserte Exp $
+# $Id: bbbike.cgi,v 8.41 2007/03/08 22:20:22 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -4706,10 +4706,16 @@ sub draw_route {
     # output is already written before calling flush
     if (defined $q->param('imagetype') &&
 	$q->param('imagetype') =~ /^pdf/) {
+	my($startname, $zielname);
+	if ($route) {
+	    $startname = Strasse::strip_bezirk($route->[0]->{Strname});
+	    $zielname  = Strasse::strip_bezirk($route->[-1]->{Strname});
+	}
+	my $filename = ($startname && $zielname ? filename_from_route($startname, $zielname, "bbbike") : "bbbike");
 	http_header
 	    (-type => "application/pdf",
 	     @header_args,
-	     -Content_Disposition => "inline; filename=bbbike.pdf",
+	     -Content_Disposition => "inline; filename=$filename.pdf",
 	    );
 	if ($q->param('imagetype') =~ /^pdf-(.*)/) {
 	    $q->param('geometry', $1);
