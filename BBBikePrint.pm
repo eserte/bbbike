@@ -204,9 +204,10 @@ sub BBBikePrint::print_postscript {
     } elsif (is_in_path("gv") && $os eq 'unix') {
 	return 1 if $check_availability;
 	my @print_args;
-	if ($args{'-media'}) {
-	    push @print_args, -media => $args{'-media'};
-	}
+## This does not seem to work anymore --- producing just an empty page!
+# 	if ($args{'-media'}) {
+# 	    push @print_args, '--media' => $args{'-media'};
+# 	}
 	push @print_args, $file;
 	if ($gv_reuse and join(" ", @gv_old_args) eq join(" ", @print_args)) {
 	    if (kill 0 => $gv_pid) {
