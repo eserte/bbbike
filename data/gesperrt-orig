@@ -347,7 +347,7 @@ Karl-Bonhoeffer-Nervenklinik: für Unbefugte nicht befahrbar, Strafvollzug	2 5001
 Schöneberger Südgelände: Radfahren verboten, Eintritt 1 Euro	2 7605,7109 7621,7105 7655,7096 7666,7093
 Schöneberger Südgelände: Radfahren verboten, Eintritt 1 Euro	2 7666,7093 7335,5807
 #: by: Karin Kühl:
-Sophie-Taeuber-Arp-Weg	1 3300,2464 3293,2218
+Sophie-Taeuber-Arp-Weg	1 3302,2471 3293,2218
 Prießnitzstr.	1 11549,19258 11407,19186 11351,19169
 #: add_fragezeichen: Wo genau sind die Einbahnstraßenabschnitte in der Klaustaler Str.?
 Klaustaler Str.	1 11439,18890 11384,19067
@@ -390,19 +390,25 @@ Helbigstr.	1 20109,4087 20339,3779 20362,3750
 #
 Mauerstr.	1 -13425,-852 -13500,-640
 Wilhelm-Staab-Str.	1 -13003,-1343 -12992,-1222 -12984,-1110
-Benkertstr.	1 -12685,-870 -12712,-734 -12730,-627
-Hans-Thoma-Str.	1 -12190,-775 -12262,-612 -12306,-496
+Benkertstr.	1 -12693,-827 -12712,-734 -12730,-627
+Hans-Thoma-Str.	1 -12219,-726 -12262,-612 -12306,-496
 Behlertstr.	1 -12265,-418 -12194,-490 -12063,-784
 Potsdamer Damm	2 -5736,-3629 -6439,-3969
 Nuthestr.	2 -6439,-3969 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -9063,-3934 -11144,-2193 -11142,-1675 -11226,-1445 -11356,-1317
+Kleine Gasse	1 -13272,-1168 -13287,-1231
+Bäckerstr.	1 -13314,-1226 -13287,-1231 -13203,-1246
+Spornstr.	1 -13240,-1425 -13350,-1403
 #: XXX ja?
 Nuthestr.	1 -11356,-1317 -11463,-1232 -11549,-1169
 Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12063,-784 -11875,-925 -11613,-1125 -11549,-1169 -11463,-1232 -11356,-1317
+Breite Str.: nicht passierbarer Mittelstreifen	3nocross -13270,-1564 -13375,-1546 -13516,-1517
+Feuerbachstr.	1 -14140,-1390 -13879,-1445
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11142,-1675
-Geschwister-Scholl-Str.	1 -14366,-1728 -14234,-1646 -14193,-1621 -14115,-1678
+Geschwister-Scholl-Str.	1 -14344,-1748 -14215,-1687 -14151,-1656 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13883,-1227
 Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
 Puschkinallee	1 -13052,775 -12922,762 -12811,533
+Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
 # 
 # elsewhere in Brandenburg
 Altlandsberger Chaussee	1 40487,16703 40712,16743
@@ -430,6 +436,7 @@ Bansin	1 57406,175093 57506,175000 57665,174803
 #
 # Einbahnstraßen, die man als Radfahrer halbwegs ignorieren kann:
 # 
+Sophie-Taeuber-Arp-Weg	1s 3302,2471 3293,2218
 Seelbuschring	1s 8473,4614 8432,4712 8242,4648
 Zionskirchstr.	1s 10389,14274 10426,14262
 Walsroder Str.	1s 6396,5125 6295,5132 6203,5138 6089,5145
@@ -460,7 +467,8 @@ Alt-Tegel	1s 1668,20156 1529,20131 1543,20060 1668,20156
 Am Treptower Park	1s 14529,9141 14390,9291 14242,9448 14179,9515 14089,9610
 Groebenufer	1s 13206,10651 13077,10747
 Jahnstr. (KW)	1s 26243,-12300 26028,-12312
-Seestr. (Potsdam)	1s -11581,559 -11609,400
+Seestr. (Potsdam)	1s -11581,559 -11584,452
+Tizianstr. (Potsdam)	1s -11424,542 -11480,621 -11581,559
 Spitzmühlenweg	1s 41728,17918 41668,17984 41556,18146
 Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -12265,-418
 Stephanstr.	1s 6526,4475 6377,4490
@@ -482,6 +490,7 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,125
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
+Königsberger Str.: Mittelstreifen nicht passierbar	3nocross 4251,2637 4212,2675 4164,2717
 #: note: Luftbild:
 Berliner Str.: Straßenbahntrasse	3nocross 13751,16009 13821,16035 14014,16106
 #: XXX es sieht aber so aus, als ob hier ein Übergang entstehen könnte, auch für Autos:
@@ -615,7 +624,7 @@ tragen (Treppe)	0:30 7621,7105
 tragen (Treppe)	0:30 7655,7096
 tragen (Treppe)	0:30 15571,4168
 tragen (steile Treppe)	0:30 15156,6034
-tragen (Treppe)	0:30 4798,3394
+tragen (Treppe)	0:30 4808,3404
 tragen (zwei Treppen, je ca. 10 Stufen)	0:30 8822,16873
 tragen (Treppe)	0:30 14390,5443
 tragen (Treppe)	0:30 14335,5425
@@ -782,6 +791,7 @@ Schwingtor an der Luiseninsel	BNP:10 7742,11639
 Schranke	BNP:5 25558,997
 #: by: holger (hd, sav):
 Drängelgitter	BNP:5 8810,14373
+enges Drängelgitter	BNP:5 100,3
 #
 ############################################################################
 #

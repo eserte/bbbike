@@ -720,7 +720,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'until' => undef,
          'text' => 'Paul-Schwarz-Promenade zwischen Krahmerstr. und Klinikum bis auf weiteres wegen Bauarbeiten gesperrt',
          'from' => undef,
-         'data' => 'userdel	2::inwork 4825,3402 4921,3593 4970,3684 5093,3912 5145,3984 5225,4095
+         'data' => 'userdel	2::inwork 4835,3415 4921,3593 4970,3684 5093,3912 5145,3984 5225,4095
 ',
          'type' => 'gesperrt'
        },
@@ -775,14 +775,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1173567600,
-         'text' => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 06.03.2007-10.03.2007 ',
-         'from' => 1173049200,
-         'data' => 'userdel	2::inwork 73204,97424 72745,97584
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1188165600,
          'text' => 'B 198 Neubrandenburger Str. OD Prenzlau Grundhafter Straßenbau Vollsperrung 05.03.2007-26.08.2007 ',

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.39 2006/12/03 23:24:43 eserte Exp $
+# $Id: cgi.t,v 1.41 2007/03/11 20:15:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -77,7 +77,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (153 + $ortsuche_tests) * scalar @urls;
+plan tests => (163 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip) {
@@ -399,12 +399,10 @@ for my $cgiurl (@urls) {
     ok($res->is_success, "Click on overview map")
 	or diag $res->as_string;
     $content = uncompr($res);
-    my $map_qr1 = qr|(http://.*/bbbike.*tmp/berlin_map_04-05.png)|i;
-    my $map_qr2 = qr|(http://.*/bbbike.*\?tmp=/berlin_map_04-05.png)|i;
-    if ($content !~ $map_qr1 &&
-	$content !~ $map_qr2) {
-	diag("Cannot get tile image reference, expected something like $map_qr1 or $map_qr2");
-	BBBikeTest::failed_long_data($content, $map_qr1, "Tile image check", ".html");
+    my $map_qr = qr{(http://.*/bbbike.*(?:tmp|\?tmp=)/berlin_map_04-05(?:_240)?.png)}i;
+    if ($content !~ $map_qr) {
+	diag("Cannot get tile image reference, expected something like $map_qr");
+	BBBikeTest::failed_long_data($content, $map_qr, "Tile image check", ".html");
 	ok(0) for 1..3; # really skip
     } else {
 	my $image_url = $1;
