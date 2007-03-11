@@ -11958,7 +11958,13 @@ sub enterroute {
     }
     if (@l) {
 	if ($leave_after) { $leave_after->cancel; undef $leave_after }
-	$c_balloon->Popup(join(" / ", @l));
+	my $b_str = join(" / ", @l);
+	if ($devel_host) { # XXX
+	    my $bi_str = balloon_info_from_all_tags($c); # XXX
+	    $bi_str =~ s{\Q$str\E\n?}{}; # XXX
+	    $b_str .= "\n" . $bi_str if $bi_str; # XXX
+	} # XXX
+	$c_balloon->Popup($b_str);
     } else {
 	$c_balloon->Deactivate;
     }
@@ -12081,7 +12087,7 @@ sub show_info {
 	$is_p = ($base_tag =~ /-(?:[fb]g|img)$/);
 	$base_tag =~ s/-(?:[fb]g|img)$//;
 	last unless !exists $p_file{$base_tag} and !$str_file{$base_tag};
-	my($below_item, @below_tags) = find_below($c, qw/s l u b r f w o v/);
+	my($below_item, @below_tags) = find_below($c, qw/s l u b r f w o v fz/);
 	if (!defined $below_item) {
 	    # 2nd pass: check for markers etc.
 	    my($below_item, @below_tags) = find_below($c, qw/show/);

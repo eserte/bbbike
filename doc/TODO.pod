@@ -2301,11 +2301,25 @@ Titel geändert auf E<quot>BBBike: <startname> (als Start)E<quot> bzw.
 das Gleiche mit E<quot>zielE<quot>. Hintergrund: wenn dieses auftritt,
 handelt es sich höchstwahrscheinlich um eine Bookmark-URL.
 
-=item * (H1)
+=item * (M4)
 
 Idea by Andreas Mühlhausen: beim Anzeigen der Ausweichroute auch die
 Basisdaten (Länge, Fahrzeit, Ampeln) der ursprünglichen Route
 anzeigen, sowie ein Diff zwischen den beiden Routen anzeigen.
+
+Implementationsmöglichkeit: Die alte Route wird per CGI-Parameter
+E<quot>oldcsE<quot> und als Wert die Session-ID der alten Route
+referenziert. Daraus kann man zumindest die Länge herausholen (die
+anderen Parameter sind vielleicht nicht so wichtig). Außerdem könnte
+man ein primitives Diff erstellen: einfach den ersten Unterschied am
+Anfang und am Ende nehmen und mit E<quot>Beginn der
+AusweichrouteE<quot> und E<quot>Ende der AusweichrouteE<quot> in der
+Tabelle kennzeichnen. Ein besserer Diff-Algorithmus ist nicht
+notwendig, typischerweise sollte es nur einen Diff-Chunk geben.
+Weiterhin könnte man feststellen, ob sich alte und Ausweichroute
+überhaupt unterscheiden und einen Erklärungstext anzeigen.
+
+Das geht natürlich nur, wenn Apache::Session* installiert ist.
 
 =item * (E3)
 
