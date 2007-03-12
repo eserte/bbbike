@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.38 2007/02/07 20:55:50 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.38 2007/02/07 20:55:50 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -341,6 +341,7 @@ for my $browser (@browsers) {
 		|\QCarl-von-Ossietzky-Str. (Potsdam)/Lennéstr. (Potsdam)\E
 		|\Q(Ökonomieweg, Sanssouci) (Potsdam)/(Lennestr. - Ökonomieweg, Sanssouci)\E
 		|\Q(Lennestr. - Ökonomieweg, Sanssouci) (Potsdam)/Lennéstr. (Potsdam)\E
+		|\Q(Lennestr. - Ökonomieweg, Sanssouci) (Potsdam)/(Hans-Sachs-Str. - Lennéstr.) (Potsdam)/Lennéstr. (Potsdam)\E
 	       )}ix,  "Correct goal resolution (Hans-Sachs-Str. ... or Lennestr. ... or Ökonomieweg ...)");
 	$like_long_data->(qr{\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marquardt)}i,  "Correct goal resolution (Marquardt ...)");
                            

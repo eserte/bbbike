@@ -859,6 +859,14 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	2::inwork 8306,8722 8248,8688 8220,8596 7945,7789
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1174345200,
+         'text' => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 16.03.2007-19.03.2007 ',
+         'from' => 1173913200,
+         'data' => 'userdel	2::inwork 73204,97424 73017,97449 72745,97584
+',
+         'type' => 'gesperrt'
        }
      
 );

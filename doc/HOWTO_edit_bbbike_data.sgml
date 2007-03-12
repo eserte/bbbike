@@ -9,7 +9,7 @@
 
 ]>
 
-<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.14 2006/10/03 16:31:37 eserte Exp $ -->
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.15 2007/03/12 22:10:49 eserte Exp $ -->
 
 <article lang="de">
  <artheader>
@@ -27,7 +27,7 @@
    </author>
   </authorgroup>
 
-  <pubdate>$Date: 2006/10/03 16:31:37 $</pubdate>
+  <pubdate>$Date: 2007/03/12 22:10:49 $</pubdate>
 
   <copyright>
    <year>2005</year>
@@ -52,7 +52,8 @@
 <para> Das Editieren der BBBike-Daten erfordert Zeit. Um "nur mal
 schnell" die Berliner oder Brandenburger Daten zu ergänzen, kann eine
 der unten aufgeführten <link linkend="alternatives">Alternativen</>
-zum Editieren verwendet werden.
+zum Editieren oder die Anweisung zum <link linkend="fastedit">schnelle
+Editieren</> verwendet werden. 
 </para>
 
 <sect2>
@@ -80,16 +81,16 @@ cygwin-Installation gemacht wird.
 Ein CVS-Checkout von BBBike ist notwendig, um die neuesten Daten sowie
 die aktuellsten Entwicklungstools zu erhalten. Eine Anleitung für das
 CVS-Checkout befindet sich unter <ulink
-url="REAMDE.html#Entwicklung">Entwicklung im README</>.
+url="README.html#ENTWICKLUNG">Entwicklung im README</>.
 Windows-Benutzer sollten das Verzeichnis aus dem CVS-Checkout an die
 Stelle des originalen BBBike-Programmverzeichnisses verschieben, also
 üblicherweise <filename>C:\Programme\BBBike\bbbike\</>.
 </para>
 
-<sect1>
+<sect1 id="bbbikeadvanced">
 <title>BBBike starten</>
 
-<para id="bbbikeadvanced">
+<para>
 BBBike sollte mit der Option <command>-advanced</> gestartet werden
 &mdash; entweder in der Kommandozeile angeben oder in den Option unter
 "Advanced" den Knopf "advanced" anklicken. Nach dem Ändern der Option
@@ -144,10 +145,10 @@ außerhalb von Brandenburg) hinzugefügt werden. Im nachfolgenden Dialog
 wird der Straßenname und die Kategorie eingetragen, die Koordinaten
 des Straßenzugs sind bereits eingetragen.
 
-<sect3>
+<sect3 id="officialstreetnames">
 <title>Regeln bei Straßennamen</>
 
-<para id="officialstreetnames">
+<para>
 In Berlin (<filename>strassen</>) werden nur "offizielle"
 Straßennamen verwendet. Offizielle Straßennamen sind in der Datei
 <filename>Berlin.coords.data</> aufgelistet.
@@ -246,7 +247,7 @@ Möglichkeit der Punktauswahl wäre eine normale Suche (dazu in
 den Suchmodus gehen). Nach der Suche müssen die Punkte per
 <menuchoice><guimenu>Bearbeiten</><guimenuitem>Path to
 Selection</></menuchoice> in die X11-Selection übertragen
-werden. Grundsätzlich muss Suche > Straßennetz neu berechnen
+werden. Grundsätzlich muss <menuchoice><guimenu>Suche</><guimenuitem>Straßennetz neu berechnen</></menuchoice>
 ausgewählt werden, wenn eine gerade neu eingefügte Straße
 attributiert werden soll. </para> </footnote>
 
@@ -272,9 +273,9 @@ Die Konvertierung wird vom <filename>Makefile</> im Verzeichnis
 <filename class="directory">data</> vorgenommen.
 Das <filename>Makefile</> funktioniert nur mit einem modernen BSD-make. Alle
 Nicht-BSD-Systeme (auch Linux) benötigen dieses make, dass bei <ulink
-url="http://www.sourceforge.net/projects/srezic">Sourceforge</> als
-<command>pmake</> im Quellcode erhältlich ist.
-Eine Windows-Binary existiert noch nicht.
+url="http://sourceforge.net/project/showfiles.php?group_id=91459&amp;package_id=115420">Sourceforge</> als
+<command>pmake</> im Quellcode erhältlich ist. Bei Debian existiert
+ein Paket für <command>pmake</>. Eine Windows-Binary existiert noch nicht.
 <!-- check, ob "make install" bei pmake existiert und das -->
 <!-- original-make überschreiben würde, böse, böse -->
 
@@ -479,7 +480,7 @@ schlechtere Kategorie für solchen Fälle wählen.
 <para>
 Dateinamen: <filename>qualitaet_s</> und <filename>qualitaet_l</>
 
-<sect2>
+<sect2 id="handicaptemporary">
 <title>sonstige Beeinträchtigungen</>
 
 <para>
@@ -492,7 +493,7 @@ anders gelöst werden). Notorisch zugestaute Straßen (z.B. die
 Friedrichstraße in Berlin-Mitte) könnten theoretisch hier auch
 aufgeführt werden.
 
-<para id="handicaptemporary">
+<para>
 Temporäre Beeinträchtigungen werden mit einer
 <constant>temporary</>-Direktive versehen und können noch den Zusatz
 <constant>::inwork</> erhalten (Beispiel <constant>q4::inwork</>). Der
@@ -974,15 +975,15 @@ Die Vorgehensweise sieht so aus:
 <itemizedlist>
 <listitem><para>Es ist nicht unbedingt notwendig, in den EDIT-Modus zu
 wechseln.
-<listitem><para>Den Menüpunkt Sucheinstellungen > Benutzerdefinierte
-Sperrungen > Definieren aktivieren.
+<listitem><para>Den Menüpunkt <menuchoice><guimenu>Sucheinstellungen</><guimenuitem>Benutzerdefinierte
+Sperrungen</><guimenuitem>Definieren</></menuchoice> aktivieren.
 <listitem><para>Die Straßenabschnitte, in denen Sperrungen
 vorkommen, mit einem Mausklick markieren. Es können nur ganze
 Straßenabschnitte von Kreuzung zu Kreuzung (oder Kurvenpunkt) markiert
 werden. Mit einem nochmaligen Klick auf das Sperr-Symbol wird dieses
 wieder entfernt
-<listitem><para>Den Menüpunkt Sucheinstellungen > Benutzerdefinierte
-Sperrungen > Speichern für temp_blockings auswählen. Ein Dialogfenster
+<listitem><para>Den Menüpunkt <menuchoice><guimenu>Sucheinstellungen</><guimenuitem>Benutzerdefinierte
+Sperrungen</><guimenuitem>Speichern für temp_blockings</></menuchoice> auswählen. Ein Dialogfenster
 erscheint.
 <listitem><para>Eine natürlich-sprachliche Beschreibung für die
 Sperrung eintragen (z.B. betroffene Straßenzüge, Grund der Sperrung,
@@ -1013,8 +1014,10 @@ der entsprechende Checkbutton deselektiert werden.
 <listitem><para>Die restlichen Einstellungen können meistens ignoriert
 werden. Man kann nun auf "Ok" klicken.
 <listitem><para>Der Dialog wird geschlossen und auch die Markierungen
-sollten verschwinden. Wenn man jetzt auf Sucheinstellungen > Benutzerdefinierte
-Sperrungen > Aktive und zukünftige Sperrungen zeichnen klickt, sollten
+sollten verschwinden. Wenn man jetzt auf
+<menuchoice><guimenu>Sucheinstellungen</><guimenuitem>Benutzerdefinierte
+Sperrungen</><guimenuitem>Aktive und zukünftige Sperrungen
+zeichnen</></menuchoice> klickt, sollten 
 die neuen Eintragungen wieder erscheinen, diesmal mit Baustellen- oder
 Kalendarsymbol.
 </itemizedlist>
@@ -1031,23 +1034,25 @@ beschrieben, geändert werden.
 <sect1>
 <title id="altedit">Alternative Editiermöglichkeiten</>
 
-<sect2>
+<sect2 id="fastedit">
 <title>Schnelles Erfassen von Daten</>
 
 <para>
 Es ist auch möglich, mit der Standardinstallation von BBBike (ohne
 CVS) Daten zu erfassen, die an der Daten-Maintainer geschickt werden
 können. Dazu muss einfach ein Straßenzug zusammengeklickt werden,
-indem man die Shift-Maustaste verwendet. Nach Auswählen des
-Menüpunktes Bearbeiten > Path to Selection (dazu muss die <link
-linkend="bbbikeadvanced">Option Advanced</> aktiviert sein) steht die
-Koordinatenliste als Selection zur Verfügung und kann mit "Paste" in
-einen Editor oder ein Mailprogramm eingefügt werden. Es ist für den
-Maintainer hilfreich, wenn dabei das normale BBBike-Datenformat
-verwendet wird, also
-<programlisting>
-    Beschreibung (z.B. Straßenname)    TAB    Kategorie oder X    Space    Koordinatenliste
-</programlisting>
+indem man die Shift-Maustaste verwendet. Existierende Punkte (nur im
+Edit-Modus) sollten nur mit der Maustaste (ohne Shift)
+zusammengeklickt werden. Nach Auswählen des Menüpunktes
+<menuchoice><guimenu>Bearbeiten</><guimenuitem>Path to
+Selection</></menuchoice>
+(dazu muss die <link linkend="bbbikeadvanced">Option
+Advanced</> aktiviert sein) steht die Koordinatenliste als Selection
+zur Verfügung und kann mit "Paste" in einen Editor oder ein
+Mailprogramm eingefügt werden. Es ist für den Maintainer hilfreich,
+wenn dabei das normale BBBike-Datenformat verwendet wird, also
+<programlisting> Beschreibung (z.B. Straßenname) TAB Kategorie oder X
+Space Koordinatenliste </programlisting>
 
 <sect2>
 <title id="directedit">Direktes Editieren der Daten</>

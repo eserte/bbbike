@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.41 2007/03/08 22:20:22 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.42 2007/03/12 22:25:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -699,7 +699,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.41 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.42 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1664,7 +1664,7 @@ EOF
 	print <<EOF if ($bi->{'can_table'});
 <td valign="top">@{[ blind_image(420,1) ]}<br>
 EOF
-	my($bln_str, $all_bln_str, $pdm_str) = (5500, 10000, 200);
+	my($bln_str, $all_bln_str, $pdm_str) = (6100, 10000, 200);
 	# XXX Use format number to get a comma in between.
 	if ($lang eq 'en') {
 	    print <<EOF;
@@ -6392,7 +6392,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/03/08 22:20:22 $';
+    my $cgi_date = '$Date: 2007/03/12 22:25:41 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
