@@ -767,14 +767,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1173654000,
-         'text' => 'B 112 zw. Wüste Kunersdorf und Lebus Gründungsarb. für Radwegbau Vollsperrung 09.03.2007-11.03.2007 ',
-         'from' => 1173308400,
-         'data' => 'userdel	2::inwork 86420,913 86769,1414
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1188165600,
@@ -857,6 +850,15 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	q4::inwork 13308,-59619 13008,-59164
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_004915',
+         'until' => 1174086000,
+         'text' => 'General-Pape-Str. (Tempelhof) in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis 16.03.2007)',
+         'from' => 1173682113,
+         'data' => 'userdel	2::inwork 8306,8722 8248,8688 8220,8596 7945,7789
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -7266,4 +7266,13 @@ EOF
 userdel	q4::inwork 13308,-59619 13008,-59164
 EOF
      },
+     { from  => 1173682113, # 2007-03-12 07:48
+       until => 1174086000, # 2007-03-17 00:00
+       text  => 'General-Pape-Str. (Tempelhof) in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis 16.03.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_004915',
+       data  => <<EOF,
+userdel	2::inwork 8306,8722 8248,8688 8220,8596 7945,7789
+EOF
+     },
     );
