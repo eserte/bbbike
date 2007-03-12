@@ -1314,6 +1314,13 @@ Why is selecting one of the last characters in the streets chooser
 significantly slower (approx. 4s vs 1s) than a similar test with
 Tk-SREZIC/examples/k2listbox.pl?
 
+=item * (M1)
+
+Eine Möglichkeit schaffen, auch im overview-Fenster Strecken zu
+zeichnen. In der Zwischenzeit geht es manuell mit ptksh>
+
+    plotstr("L100", Canvas => $overview_canvas, -filename => "$FindBin::RealBin/misc/abdeckung.bbd")
+
 =back
 
 =head2 Plugins
