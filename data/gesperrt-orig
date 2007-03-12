@@ -385,6 +385,10 @@ Carmerstr.	1 5088,11322 4926,11081
 Mirbachplatz	1 13331,16424 13347,16447 13391,16436 13400,16395 13377,16378 13348,16387 13331,16424
 Treskowstr. (Mahlsdorf)	1 24567,11980 24491,11972
 Helbigstr.	1 20109,4087 20339,3779 20362,3750
+Knoten am Flughafen Tegel	1 2996,15930 2960,15847
+Knoten am Flughafen Tegel	1 2913,15944 2949,15922 2977,15923 2996,15930
+Knoten am Flughafen Tegel	1 2960,15847 2880,15884 2828,15903
+Knoten am Flughafen Tegel	1 2828,15903 2880,15908 2913,15944
 #
 # Potsdam
 #
@@ -490,6 +494,7 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,125
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
+Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2996,15771 2960,15847 2913,15944 2819,16141
 Königsberger Str.: Mittelstreifen nicht passierbar	3nocross 4251,2637 4212,2675 4164,2717
 #: note: Luftbild:
 Berliner Str.: Straßenbahntrasse	3nocross 13751,16009 13821,16035 14014,16106
@@ -613,6 +618,10 @@ Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21158,15885 21220,15741 21235,
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 #
+#: by: rjoop vvv
+tragen (Treppe)	0:30 3281,15792
+tragen (Treppe)	0:30 3361,15784
+#: by: ^^^
 #: by: Alwin (...schock):
 tragen (ca. 40 Stufen)	0:30 1761,3208
 tragen (Treppe)	0:30 17757,11761
@@ -713,6 +722,10 @@ tragen (Treppe)	0:30 -6934,14291
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+#: by: rjoop vvv
+Drängelgitter	BNP:5 -7228,15504
+Drängelgitter	BNP:5 -7176,15527
+#: by: ^^^
 #: by: (x)qusor
 Drängelgitter	BNP:5 14285,12190
 Drängelgitter	BNP:5 14060,14986

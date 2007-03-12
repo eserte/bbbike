@@ -304,6 +304,7 @@ Am Bahndamm: Fuﬂg‰nger	q1 7772,4306 7795,4242 8103,3354 8173,3299
 Edenkobener Steg: Fuﬂg‰nger	q1 6627,4187 6645,4254
 Teltowkanalpromenade: enge und kurvige Unterf¸hrung	q2 4261,2703 4247,2652 4193,2616
 Heinrich-Laehr-Park: Fuﬂg‰nger	q1 1527,574 1258,1674
+(Unterf¸hrung): Rampen	q2 -8334,14461 -8238,14436 -8256,14418 -8227,14408 -8287,14411
 Liviusstr.: eng, parkende Autos	q1 10743,4515 10499,4542 10453,4518
 Dusekestr.: sehr schmale Straﬂe	q1 10473,18113 10498,18014 10479,18007 10525,17862 10548,17817
 Idastr.: schmale Fahrbahn durch parkende Fahrzeuge	q2 10697,19952 10829,19676
@@ -316,8 +317,9 @@ Friedrichsruher Str.: sehr eng	q1 6637,5952 6522,5933 6326,5912 6134,5894 6018,5
 Schˆnhauser Str.: eng	q1 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5838,5761
 Jeverstr.: eng	q1 5681,5743 5681,5768 5679,5853 5670,5889 5699,5949 5748,6051 5776,6118 5834,6142
 Friedrichstr. (Lichterfelde): Fuﬂ- und Radweg	q1 2890,3561 2712,3602
+(Seecktstr. - Wilhelmstr.): breiter Gehweg	q0 -4017,13167 -3886,13120
 Koloniewege: Bodenschwellen, Schranken	q1 -2434,17638 -2408,17716 -2114,17878 -2154,17917 -2419,17955 -2539,18109 -2728,18149
-(Am Hohenzollernkanal): Fuﬂg‰nger	q2 4971,15263 4469,15711 4273,15740 4212,15787 4384,15927 3986,16092 4078,15961 4049,15776 3775,15768
+(Am Hohenzollernkanal): Fuﬂg‰nger	q2 4971,15263 4469,15711 4273,15740 4212,15787 4369,15950 4136,16023 4078,15961 4049,15776 3775,15768
 Gralsburgsteig: enge Straﬂe	q1 2164,25190 2210,25251 2038,25531 1950,25763 1924,26013
 Bahnhofstr. (Friedenau): enge Straﬂe	q1 6082,7066 6139,7070 6157,7117
 (Michelangelostr. - Straﬂe 106): Kleingartenanlage	q2 13838,15113 14060,14986 14314,14841 14592,14682
@@ -377,7 +379,7 @@ H¸nensteig: Fuﬂg‰nger	q2 6396,5125 6406,5223 6108,5253
 (Ringstr. - Gersdorfstr. (Kolonie Marienhˆhe)): Kleingartenanlage, Fuﬂg‰nger (schieben!), tiefe Steinregenabl‰ufe quer zum Weg	q4 7921,4451 7935,4466 8162,4725
 M¸hlenbecker Weg: Fuﬂg‰nger	q1 20150,15678 20334,16043
 (Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger, Kleingartenweg	q1 6807,7262 7231,7394
-Herschelstr.: enge Wohnstraﬂe	q1 3222,13252 3262,13406 3276,13481 3307,13593
+Herschelstr.: enge Wohnstraﬂe	q1 3222,13252 3262,13406 3276,13481 3292,13622
 Togostr.: Radweg zwischen Fuﬂweg und Spielplatz	q1 6260,16081 6119,16203
 Konradinstr.: eng	q1 8575,5202 8557,5226 8674,5357 8865,5468 8870,5557
 (Livl‰ndische Str. - Schoelerpark): Fuﬂg‰nger	q1 5170,8449 5223,8611
@@ -399,7 +401,7 @@ Spinozastr.: eng u. un¸bersichtlich	q2 3926,6409 3930,6481 3974,6511 4050,6506
 (Parkweg): mit Stufen	q3 2210,4965 2262,4914
 Koburger Str.: Gehweg	q3 6534,8467 6540,8421
 H¸ttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5070 2075,5075 2174,5081 2204,5081
-(Mauerweg Forst Spandau): kurvenreich, schmal, manchmal Fuﬂg‰nger u. Skater	q1 -7257,16925 -7175,16968 -7151,17330 -6965,17565 -6968,17717 -6919,17841 -6764,18287 -6794,18921 -6943,19311 -7016,19375 -8022,19052
+(Mauerweg Forst Spandau): kurvenreich, schmal, manchmal Fuﬂg‰nger u. Skater	q1 -7263,16939 -7175,16968 -7151,17330 -6977,17655 -6977,17720 -6931,17864 -6837,18089 -6791,18328 -6780,18825 -6959,19306 -7016,19375 -8022,19052
 (Weverstr. - Gatower Str.): Fuﬂg‰nger	q1 -4154,12379 -4340,12375
 (S¸dpark): Fuﬂg‰nger	q1 -3707,11693 -3712,11714 -3732,11772 -3826,11901 -3883,12053 -3985,12056 -4040,12050
 (S¸dpark): Fuﬂg‰nger	q1 -4009,11789 -4004,11814 -4070,12006 -4040,12050 -4085,12081 -4117,12199 -4154,12379
@@ -421,7 +423,7 @@ Leuthener Str.: enge Straﬂe	q1 7411,8364 7494,8364 7578,8358 7640,8359 7716,8356
 s¸dliches Spreeufer: besonders an Wochenenden tags¸ber sehr viele Fuﬂg‰nger	q2 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8554,12593
 Berchtesgadener Str.: Fuﬂg‰nger, Bordsteine	q2 6361,9164 6360,9194
 Waldstr.: enge Straﬂe	q1 9718,20498 9725,20260
-Kamminer Str.: un¸bersichtliche Kreuzungen, parkende PKWs	q1 3248,12954 3292,13123 3315,13231 3346,13342 3366,13432 3403,13576
+Kamminer Str.: un¸bersichtliche Kreuzungen, parkende PKWs	q1 3248,12954 3292,13123 3315,13231 3346,13342 3366,13432 3407,13599
 (Bad Kissingen): Fuﬂg‰nger	q2 3639,7590 3652,7795
 (Kolonieweg a. d. Forkenbeckstr.): Fuﬂg‰nger, teilweise eng 	q3 3218,8233 3230,8194 3635,8099 3709,8082 3753,8073 3779,8105
 Claire-Waldoff-Weg: Fuﬂg‰nger	q2 3635,8099 3596,7550
@@ -548,14 +550,14 @@ Uferweg an der Kongreﬂhalle: noch im Bau	q2::inwork 7782,12623 7745,12603 7710,1
 (Teufelsseechaussee - Waldschulallee): Fuﬂg‰nger	q1 194,10846 355,10740
 (Teufelsseechaussee - Maik‰ferpfad): Fuﬂg‰nger	q1 573,10109 460,10193 332,10286 41,10501
 Gutsmuthsweg: Fuﬂg‰nger (nur bei Veranstaltungen ein Problem)	q1 -496,11884 -490,11718
-(Fuﬂg‰ngertunnel S-Bhf Jungfernheide): Fuﬂg‰nger	q3 3320,13796 3354,13659
-(Olbestr. - Lamberstr.): Fuﬂg‰nger	q2 3307,13593 3320,13638 3354,13659
+(Fuﬂg‰ngertunnel S-Bhf Jungfernheide): Fuﬂg‰nger	q3 3320,13796 3365,13695
+(Olbestr. - Lamberstr.): Fuﬂg‰nger	q2 3292,13622 3304,13685 3365,13695
 (Goslaer Ufer - Am Bahnhof Jungfernheide): Fuﬂg‰nger	q1 4195,13695 4156,13914 4151,13961 4087,14241
 (Lise-Meitner-Str. - Goslaer Ufer): Fuﬂg‰nger	q1 4087,14241 3966,14211
 (Verl‰ngerung der Ilsenburger Str. (Charlottenburg)): Fuﬂg‰nger	q2 3981,13292 3975,13448
 (Schwarzer Weg): Fuﬂg‰nger	q2 4262,13212 4185,13386 4081,13418 3975,13448 3797,13499
-(Dahlienweg): Fuﬂg‰nger	q2 3797,13499 3795,13541 3795,13553
-(Lambertstr. - Lise-Meitner-Str.): Fuﬂg‰nger, schmal	q3 3555,13705 3717,13743
+(Dahlienweg): Fuﬂg‰nger	q2 3797,13499 3795,13541 3796,13575
+(Lambertstr. - Lise-Meitner-Str.): Fuﬂg‰nger, schmal	q3 3508,13727 3717,13743
 (Bonhoefferufer - Tegler Weg): Fuﬂg‰nger	q2 3154,12936 3164,13067
 Eosanderstr.: Fuﬂg‰nger	q1 3345,12580 3272,12581
 Siemenssteg: Fuﬂg‰nger, schmal	q2 4142,12581 4140,12594 4135,12685 4135,12715
@@ -601,10 +603,10 @@ Am Nuﬂbaum: Touristen	q3 10644,12469 10626,12455 10611,12444 10597,12405 10611,1
 Kleine Gertraudenstr.: Fuﬂg‰nger	q1 10332,11929 10364,11896 10387,11901
 Tharauer Allee: Bauarbeiten	q1::inwork -1483,11283 -1634,11346 -1731,11425 -1829,11337
 (Scottweg - Tharauer Allee): Fuﬂg‰nger	q1 -1403,11279 -1483,11283
-Zimmerstr. (Spandau): Fuﬂg‰nger	q1 -3937,12971 -3907,12958
-Br¸derstr. (Spandau): Fuﬂg‰nger	q1 -3974,12914 -3937,12898
-Weiﬂenburger Str.: Fuﬂg‰nger	q1 -3984,12812 -4028,12831
-Sprengelstr. (Spandau): Fuﬂg‰nger	q1 -4009,12735 -4081,12765
+Zimmerstr. (Spandau): Fuﬂg‰nger	q1 -3962,12973 -3907,12958
+Br¸derstr. (Spandau): Fuﬂg‰nger	q1 -3999,12912 -3937,12898
+Weiﬂenburger Str.: Fuﬂg‰nger	q1 -3984,12812 -4043,12833
+Sprengelstr. (Spandau): Fuﬂg‰nger	q1 -4009,12735 -4099,12763
 J‰gerstr. (Spandau): Fuﬂg‰nger	q3 -3738,12572 -3729,12669
 Ziegelhof: Fuﬂg‰nger	q3 -3774,13517 -3668,13502
 (Wachheimer Weg - Gˆtelstr.): Fuﬂg‰nger	q2 -3437,12258 -3350,12260 -3349,12213

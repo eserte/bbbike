@@ -1700,9 +1700,9 @@ EOF
        text  => 'Wilhelmstraße, Straße gesperrt bis 03.04.2005 23:00 Uhr (Frühlingsfest zwischen Pichelsdorfer Straße und Adamstraße). ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -3887,13057 -3791,13357
-userdel	2 -3887,13057 -3937,12971 -3974,12914 -4028,12831
-userdel	2 -4028,12831 -4081,12765 -4150,12689
+userdel	2 -3913,13054 -3886,13120 -3791,13357
+userdel	2 -3913,13054 -3962,12973 -3999,12912 -4043,12833
+userdel	2 -4043,12833 -4099,12763 -4163,12691
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -4162,7 +4162,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002648',
        data  => <<EOF,
-userdel	2 -4167,12554 -4223,12631
+userdel	2 -4167,12554 -4239,12626
 userdel	2 -4167,12554 -4069,12558
 userdel	2 -3621,12575 -3738,12572
 userdel	2 -3738,12572 -3876,12567
@@ -4369,7 +4369,7 @@ EOF
        text  => 'Wilhelmstraße Richtung Pichelsdorf zwischen Einmündung Pichelsdorfer Straße und Einmündung Gatower Straße Baustelle, gesperrt bis 08.05.2006 13:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 -3791,13357 -3887,13057 -3937,12971 -3974,12914 -4028,12831 -4081,12765 -4150,12689 -4223,12631 -4300,12571 -4335,12465
+userdel	1 -3791,13357 -3886,13120 -3913,13054 -3962,12973 -3999,12912 -4043,12833 -4099,12763 -4163,12691 -4239,12626 -4300,12571 -4335,12465
 EOF
      },
      { from  => 1146801600, # 2006-05-05 06:00
