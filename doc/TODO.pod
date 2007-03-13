@@ -21,7 +21,7 @@ Legend:
 
 =over
 
-=item * (M4) (feature)
+=item * (M1) (feature)
 
 Mehrere Eingabemodi anbieten, z.B. E<quot>BBBike ClassicE<quot>,
 Google, GoYellow.
@@ -56,31 +56,30 @@ Google, GoYellow.
 		 <cursor>: scrolling mit einer geschwindigkeit
 
 
-Alternativ: der größte Unterschied ist Motion-1 für Dragging. Ich habe
-testhalber Motion-1=dragging als Default für $devel_host eingestellt.
-Mal sehen, ob es sich gut anfühlt und überall verwendet werden kann.
-In diesem Fall ist die Implementation der unterschiedlichen
-Eingabemodi nicht so wichtig (-> niedrigere Prio).
+Nachdem ich Motion-1 per default für Dragging eingestellt habe und es
+sich OK anfühlt, ist die Implementation der unterschiedlichen
+Eingabemodi nicht mehr so wichtig.
 
 =item * (H5)
 
 Aufräumen des Options-Editors.
 
-Wenn Tk::Getopt es unterstützt, dann vertikalen Listenview statt Tabs
+Sobald Tk::Getopt es unterstützt, vertikalen Listenview statt Tabs
 verwenden.
 
 =item * (M3) (feature)
 
 Routenliste: gewünschte Attribute für die Kommentare sollten über den
-Options-Editor einstellbar sein.
+Options-Editor einstellbar sein bzw. beim Beenden automatisch
+gespeichert werden.
 
 =item * (M4)
 
 If FontDialog is available, then use this instead of the *font entries
 in the option editor. Make FontDialog also usable for fixed font
-selection (this needs the slow -fixedfont option of FontDialog).
-Otherwise, if FontDialog is not available, the chosen fonts should be
-made immediately visible using set_fonts().
+selection (this needs the relatively slow -fixedfont option of
+FontDialog). Otherwise, if FontDialog is not available, the chosen
+fonts should be made immediately visible using set_fonts().
 
 =item * (H5)
 
@@ -91,7 +90,8 @@ und dann veröffentlichen.
 =item * (H2)
 
 category_* directives in bbd files have side effects: the global
-%category_... is set and not per-file variants. Should be fixed.
+%category_... is set and not per-file variants. Should be fixed,
+probably in reset_free_layer in bbbike.
 
 =item * (H2)
 
@@ -1644,13 +1644,14 @@ Moabiter Werder-Nord:
 Elisabeth-Abegg-Straße (DONE)
 
 Friedrichswerder-West:
-Caroline-von-Humboldt-Weg
+Caroline-von-Humboldt-Weg (DONE)
 
 Luisenstadt:
 Paula-Thiede-Ufer (DONE),
 Bona-Peiser-Straße (DONE (weg))
 
-Nochmal sichergehen: L<http://www.berlin-mitte.de/index_6819_de.html>
+Nochmal sichergehen: (leider existiert dieser Link nicht mehr)
+L<http://www.berlin-mitte.de/index_6819_de.html>
 
 =item * (E1)
 
@@ -1772,6 +1773,37 @@ L<http://www.adfc-frankfurt-oder.de/radtour/>
 =head2 Datenhandling (make, conversion ...)
 
 =over
+
+=item * (H3)
+
+Fragezeichen-Reorganisation: Es gibt mehrere Typen von Fragezeichen:
+
+=over
+
+=item public: werden von fragezeichen-orig nach fragezeichen
+konvertiert und sind öffentlich sichtbar
+
+=item private: sind nur in fragezeichen-orig und nicht öffentlich
+sichtbar
+
+=item last_checked/next_check mit relativen Datum: diese könnten
+automatisch als öffentliche Fragezeichen erzeugt werden
+
+=item Datensätze mit add_fragezeichen-Direktiven versehen: diese sind
+in fragezeichen-orig nicht sichtbar, dafür aber in fragezeichen
+
+=item XXX-Datensätze: diese sind ebenfalls in fragezeichen-orig sowie
+in fragezeichen nicht sichtbar
+
+=back
+
+Die öffentlichen Fragezeichen können bleiben wie bislang; evtl.
+könnten die last_checked/next_check-Datensätze automatisch aufgenommen
+werden.
+
+Im Editier-Modus muss zusätzlich sichtbar sein:
+- die add_fragezeichen-Datensätze
+- die XXX-Datensätze (vielleicht zwei Varianten hier erzeugen?)
 
 =item * (H4)
 
@@ -1924,7 +1956,8 @@ versehen).
 
 =item * (M3)
 
-Strip Bezirk: nicht für fragezeichen
+Das Strippen des Bezirk-Parts im Straßennamen: nicht für fragezeichen,
+da hier oft ein ergänzender Kommentar steht.
 
 =item * (M4)
 
@@ -1943,10 +1976,6 @@ Sichtbarkeiten zwischen strassen und landstrassen differenzieren
 =item * (H2)
 
 Straßennummern - wie?
-
-=item * (M4)
-
-beim Buildprozess fragezeichen separat erzeugen
 
 =item * (H3)
 
@@ -3009,6 +3038,11 @@ Verzeichnisstruktur auch unter Sourceforge haben möchte. Oder ich
 bewege alles, vielleicht bis auf README* nach doc. Dann gibt es keine
 Verlinkung zwischen den READMEs und dem Rest der Doku (Dann muss ich
 aber auch alle port/* wahrscheinlich anpassen).
+
+=item * (M1)
+
+Eine öffentliche FAQ bereitstellen, vielleicht auch ein
+(ChangeE<verbar>B)Log.
 
 =item *
 
