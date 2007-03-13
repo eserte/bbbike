@@ -340,6 +340,9 @@ Knoten am Flughafen Tegel	1 2996,15930 2960,15847
 Knoten am Flughafen Tegel	1 2913,15944 2949,15922 2977,15923 2996,15930
 Knoten am Flughafen Tegel	1 2960,15847 2880,15884 2828,15903
 Knoten am Flughafen Tegel	1 2828,15903 2880,15908 2913,15944
+Eschengraben	1 11755,17216 11783,17036 11831,16802 11776,16753
+Czarnikauer Str.	1 10613,16403 10449,16415 10225,16436
+Talstr.	1 11776,16753 11825,16666
 Mauerstr.	1 -13425,-852 -13500,-640
 Wilhelm-Staab-Str.	1 -13003,-1343 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12693,-827 -12712,-734 -12730,-627
@@ -439,6 +442,8 @@ Königsberger Str. -> Teltowkanalpromenade: Mittelstreifen nicht passierbar	3 425
 Königsberger Str. -> Paul-Schwarz-Promenade: Mittelstreifen nicht passierbar	3 4164,2717 4212,2675 4261,2703
 Teltowkanalpromenade -> Paul-Schwarz-Promenade: Mittelstreifen nicht passierbar	3 4193,2616 4212,2675 4261,2703
 Teltowkanalpromenade -> Königsberger Str.: Mittelstreifen nicht passierbar	3 4193,2616 4212,2675 4164,2717
+Max-Lingner-Str. -> Berliner Str.: Straßenbahntrasse	3 11107,17340 10906,17331 10911,17275
+Berliner Str. -> Max-Lingner-Str.: Straßenbahntrasse	3 10892,17491 10906,17331 11107,17340
 Hauptstr. -> Hildegard-Marcusson-Str.: Straßenbahntrasse	3 16138,10105 16004,10204 15952,10134
 Hildegard-Marcusson-Str. -> Hauptstr.: Straßenbahntrasse	3 15952,10134 16004,10204 15629,10481
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3 11462,12384 11333,12437 11343,12300
@@ -466,6 +471,8 @@ Langhoffstr. -> Allee der Kosmonauten: Straßenbahntrasse	3 19821,13604 19807,135
 Allee der Kosmonauten -> Langhoffstr.: Straßenbahntrasse	3 19628,13517 19807,13529 19821,13604
 Aalesunder Str. -> Bornholmer Str.: Straßenbahntrasse	3 10549,16650 10533,16505 10620,16497
 Bornholmer Str. -> Aalesunder Str.: Straßenbahntrasse	3 10445,16511 10533,16505 10549,16650
+Bornholmer Str. -> Bergener Str.: Straßenbahntrasse	3 10282,16522 10370,16516 10382,16661
+Bergener Str. -> Bornholmer Str.: Straßenbahntrasse	3 10382,16661 10370,16516 10445,16511
 Andersenstr. -> Bornholmer Str.: Straßenbahntrasse	3 10295,16667 10282,16522 10370,16516
 Bornholmer Str. -> Andersenstr.: Straßenbahntrasse	3 10197,16528 10282,16522 10295,16667
 Karl-Liebknecht-Str. -> Rosenstr.: Straßenbahntrasse	3 10440,12696 10519,12768 10489,12803

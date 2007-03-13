@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.37 2007/02/06 20:25:59 eserte Exp eserte $
+# $Id: bbbikegooglemap.cgi,v 1.39 2007/03/13 21:24:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -126,7 +126,13 @@ sub run {
     my $zoom = param("zoom");
     $zoom = 3 if !defined $zoom;
 
-    $self->{autosel} = param("autosel") ? "true" : "false";
+    my $autosel = param("autosel") || "";
+    $self->{autosel} = $autosel && $autosel ne 'false' ? "true" : "false";
+
+    my $maptype = param("maptype") || "";
+    $self->{maptype} = ($maptype =~ /hybrid/i ? 'G_HYBRID_MAP' :
+			$maptype =~ /normal/i ? 'G_NORMAL_MAP' :
+			'G_SATELLITE_MAP');
 
     $self->{converter} = $converter;
     $self->{coordsystem} = $coordsystem;
@@ -289,6 +295,8 @@ sub get_html {
     }
 
     function updateRouteSel() {
+	return; // XXX the selection code does not really work
+
 	var routeDiv = document.getElementById("addroutetext").firstChild;
 	var range = document.createRange();
 	range.setStart(routeDiv, routeLabel.length);
@@ -391,7 +399,7 @@ sub get_html {
         map.addControl(new GLargeMapControl());
         map.addControl(new GMapTypeControl());
         map.addControl(new GOverviewMapControl ());
- 	map.setMapType(G_SATELLITE_MAP);
+ 	map.setMapType($self->{maptype});
         map.centerAndZoom(new GPoint($centerx, $centery), $zoom);
     } else {
         document.getElementById("map").innerHTML = '<p class="large-error">Sorry, your browser is not supported by <a href="http://maps.google.com/support">Google Maps</a></p>';
@@ -498,6 +506,8 @@ EOF
 
 <form name="googlemap" onsubmit='return checkSetCoordForm()' style="margin-top:0.5cm; margin-left:10px; border:1px solid black; padding:3px; width:45%; float:left;">
   <input type="hidden" name="zoom" value="@{[ $zoom ]}" />
+  <input type="hidden" name="autosel" value="@{[ $self->{autosel} ]}" />
+  <input type="hidden" name="maptype" value="@{[ $self->{maptype} ]}" />
   Koordinatensystem:<br />
   <label><input type="radio" name="coordsystem" value="standard" @{[ $coordsystem eq 'standard' ? 'checked' : '' ]} /> BBBike</label><br />
   <label><input type="radio" name="coordsystem" value="polar" @{[ $coordsystem eq 'polar' ? 'checked' : '' ]} /> WGS84-Koordinaten (DDD)</label><br />

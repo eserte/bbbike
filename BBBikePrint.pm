@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.40 2007/02/03 11:06:03 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.41 2007/03/13 21:15:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003,2006 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ package BBBikePrint;
 package main;
 use strict;
 use BBBikeGlobalVars;
-use vars qw(@gv_old_args $gv_pid);
+use vars qw(@gv_old_args $gv_pid $gv_version @gv_version);
 
 BEGIN {
     if (!defined &M) {
@@ -203,11 +203,24 @@ sub BBBikePrint::print_postscript {
 	do_print_cmd($file);
     } elsif (is_in_path("gv") && $os eq 'unix') {
 	return 1 if $check_availability;
+	# check gv version:
+	if (!$gv_version) {
+	    chomp($gv_version = `gv --version`);
+	    $gv_version =~ s{gv\s*}{};
+	    @gv_version = split /\./, $gv_version;
+	}
 	my @print_args;
-## This does not seem to work anymore --- producing just an empty page!
-# 	if ($args{'-media'}) {
-# 	    push @print_args, '--media' => $args{'-media'};
-# 	}
+ 	if ($args{'-media'}) {
+	    if ($gv_version[0] < 3 ||
+		($gv_version[0] == 3 &&
+		 ($gv_version[1] < 6 ||
+		  ($gv_version[1] == 6 &&
+		   $gv_version[2] < 1)))) {
+		push @print_args, '-media', $args{'-media'};
+	    } else {
+		push @print_args, '--media=' . $args{'-media'};
+	    }
+ 	}
 	push @print_args, $file;
 	if ($gv_reuse and join(" ", @gv_old_args) eq join(" ", @print_args)) {
 	    if (kill 0 => $gv_pid) {
@@ -573,7 +586,12 @@ sub draw_legend {
 	next unless $p_draw{$abk};
 	my $skip_height_add;
 	my($x, $y);
-	if ($abk =~ /^[ubr]$/) {
+	if ($abk =~ /^[ub]$/) {
+	    my($x,$y) = ($left+$start_symbol, $top+$height+2);
+	    my $item_fg = $c->createImage($x+4, $y+3, -tags => "legend");
+	    $add_binding->($item_fg, "p", $abk);
+	    plot_symbol($c, $abk, -tag_fg => $item_fg);
+	} elsif ($abk =~ /^[r]$/) {
 	    my $ubahn_length = ($abk eq 'u'
 				? do { my(%a) = get_symbol_scale('u');
 				       $a{-width}/2 }

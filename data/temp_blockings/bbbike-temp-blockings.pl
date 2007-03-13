@@ -323,7 +323,7 @@ EOF
        data  => <<EOF,
 userdel	2 7043,15793 7198,15656
 userdel	2 7043,15793 6957,15869 6914,15908
-userdel	2 7198,15656 7288,15579
+userdel	2 7198,15656 7277,15586
 userdel	2 6790,16018 6914,15908
 EOF
      },
@@ -364,7 +364,7 @@ EOF
        data  => <<EOF,
 userdel	2 7043,15793 7198,15656
 userdel	2 7043,15793 6957,15869 6914,15908
-userdel	2 7198,15656 7288,15579
+userdel	2 7198,15656 7277,15586
 userdel	2 6790,16018 6914,15908
 EOF
      },
@@ -512,9 +512,9 @@ EOF
        text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Londoner Str. und Transvaalstr. Veranstaltung, Straße vollständig gesperrt (bis 17.07.2005 24 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 6032,16698 5791,16910
-userdel	2 6032,16698 6110,16630
-userdel	2 6110,16630 6329,16438
+userdel	2 6019,16712 5791,16910
+userdel	2 6019,16712 6110,16630
+userdel	2 6110,16630 6311,16457
 EOF
      },
      { from  => 1090533600, # 2004-07-23 00:00
@@ -1978,8 +1978,8 @@ EOF
        text  => 'Luxemburger Straße - Föhrer Straße, Zwischen Kreuzung Leopoldplatz und Kreuzung Amrumer Straße Veranstaltung, Straße gesperrt, Dauer: 27.05.2005 06:00 Uhr bis 30.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 7162,15436 7020,15314
-userdel	q4 7162,15436 7288,15579
+userdel	q4 7148,15447 7020,15314
+userdel	q4 7148,15447 7277,15586
 userdel	q4 6647,15094 6737,15133
 userdel	q4 6737,15133 6846,15202 7020,15314
 EOF
@@ -4722,7 +4722,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002867',
        data  => <<EOF,
-userdel	2 6790,16018 6914,15908 6957,15869 7043,15793 7198,15656 7288,15579
+userdel	2 6790,16018 6914,15908 6957,15869 7043,15793 7198,15656 7277,15586
 EOF
      },
      { from  => 1150581600, # 2006-06-18 00:00
@@ -6739,9 +6739,9 @@ EOF
 userdel	q4::inwork 49728,68465 49875,68362
 EOF
      },
-     { from  => 1164916649, # 2006-11-30 20:57
-       until => 1175378399, # 2007-03-31 23:59
-       text  => 'Pankower Allee (Reinickendorf) in Richtung Markstr., zwischen Reginhardstr. und Residenzstr. Baustelle, Fahrtrichtung gesperrt (bis 03/2007)',
+     { from  => 1173816689, # 2007-03-13 21:11
+       until => 1183240799, # 2007-06-30 23:59
+       text  => 'Pankower Allee (Reinickendorf) in Richtung Markstr., zwischen Reginhardstr. und Residenzstr. Baustelle, Fahrtrichtung gesperrt (bis 06.2007)',
        type  => 'gesperrt',
        source_id => 'IM_004242',
        data  => <<EOF,
@@ -7281,6 +7281,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 73204,97424 73017,97449 72745,97584
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Manteuffelstr. zwischen Skalitzer Str. und Naunynstr.: Einbahnstraßenregelung ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 11949,10414 12000,10531
 EOF
      },
     );

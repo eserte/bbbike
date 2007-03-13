@@ -389,6 +389,11 @@ Knoten am Flughafen Tegel	1 2996,15930 2960,15847
 Knoten am Flughafen Tegel	1 2913,15944 2949,15922 2977,15923 2996,15930
 Knoten am Flughafen Tegel	1 2960,15847 2880,15884 2828,15903
 Knoten am Flughafen Tegel	1 2828,15903 2880,15908 2913,15944
+#: by: rjoop: vvv
+Eschengraben	1 11755,17216 11783,17036 11831,16802 11776,16753
+Czarnikauer Str.	1 10613,16403 10449,16415 10225,16436
+Talstr.	1 11776,16753 11825,16666
+#: by: ^^^
 #
 # Potsdam
 #
@@ -496,6 +501,8 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,125
 #
 Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2996,15771 2960,15847 2913,15944 2819,16141
 Königsberger Str.: Mittelstreifen nicht passierbar	3nocross 4251,2637 4212,2675 4164,2717
+#: note: Luftbild:
+Berliner Str.: Straßenbahntrasse	3nocross 10911,17275 10906,17331 10892,17491
 #: note: Luftbild:
 Berliner Str.: Straßenbahntrasse	3nocross 13751,16009 13821,16035 14014,16106
 #: XXX es sieht aber so aus, als ob hier ein Übergang entstehen könnte, auch für Autos:
@@ -678,7 +685,9 @@ schieben (Rampe Schmöckwitzwerdersteg)	0:30 30546,-3072
 tragen (Treppe Mansfelder Str.)	0:30 3619,9331
 tragen (Treppe)	0:30 9557,12992
 tragen (Treppe)	0:30 9508,12991
+#: by: rjoop
 tragen (Treppe)	0:30 9983,16561
+#: by: rjoop
 tragen (Treppe)	0:30 9982,16527
 tragen (Treppe)	0:30 3756,12614
 tragen (Treppe)	0:30 4331,12538

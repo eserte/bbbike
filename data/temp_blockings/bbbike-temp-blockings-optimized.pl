@@ -591,9 +591,9 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        },
        {
          'source_id' => 'IM_004242',
-         'until' => 1175378399,
-         'text' => 'Pankower Allee (Reinickendorf) in Richtung Markstr., zwischen Reginhardstr. und Residenzstr. Baustelle, Fahrtrichtung gesperrt (bis 03/2007)',
-         'from' => 1164916649,
+         'until' => 1183240799,
+         'text' => 'Pankower Allee (Reinickendorf) in Richtung Markstr., zwischen Reginhardstr. und Residenzstr. Baustelle, Fahrtrichtung gesperrt (bis 06.2007)',
+         'from' => 1173816689,
          'data' => 'userdel	1::inwork 8211,17585 8095,17574 7998,17564 7841,17551 7675,17538 7587,17532
 ',
          'type' => 'gesperrt'
@@ -819,14 +819,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1173740400,
-         'text' => 'L 742 Klein Köris-Teupitz Bahnübergang in der OD Groß Köris Gleisumbauarbeiten Vollsperrung 09.03.2007-12.03.2007 ',
-         'from' => 1173308400,
-         'data' => 'userdel	2::inwork 28494,-27010 28010,-27154 27824,-27205
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1174345200,
          'text' => 'L 023 Storkow-Herzfelde Bahnübergang Fangschleuse Gleisbauarbeiten Vollsperrung 16.03.2007-19.03.2007 ',
@@ -865,6 +858,14 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'text' => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 16.03.2007-19.03.2007 ',
          'from' => 1173913200,
          'data' => 'userdel	2::inwork 73204,97424 73017,97449 72745,97584
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Manteuffelstr. zwischen Skalitzer Str. und Naunynstr.: Einbahnstraßenregelung ',
+         'from' => undef,
+         'data' => 'userdel	1::inwork 11949,10414 12000,10531
 ',
          'type' => 'gesperrt'
        }

@@ -534,6 +534,13 @@ d.h. es existiert ein Progressbar. Nach Beenden des Updates kann das
 Straßennetz aktualisiert werden, wenn auf dem Server neuere Daten
 existieren.
 
+=head2 Unsortierte Tests
+
+Nur Unix: Drucklegende einschalten, dann Drucken klicken: gv sollte
+mit der Karte erscheinen.
+
+Unter Unix würde sofort angefangen werden zu drucken (vielleicht).
+
 =head2 Unwichtige Tests
 
 =head3 Datei > Exportieren > 36 dpi

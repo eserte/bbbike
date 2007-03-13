@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.42 2007/03/12 22:25:41 eserte Exp $
+# $Id: bbbike.cgi,v 8.42 2007/03/12 22:25:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -5485,7 +5485,7 @@ sub header {
     push @$head, $q->meta({-name => 'DC.title',
 			   -content => "BBBike - Routenplaner für Radfahrer in Berlin und Brandenburg"});
     # ^^^
-    # Another one: http://geotags.com/geobot/add-tags.html
+    # Another one: http://geotags.com/geobot/add-tags.html --- seems to be dead
     push @$head, $q->meta({-name => "geo.position",
 			   -content => "$my_lat;$my_long"});
     push @$head, "<base target='_top'>"; # Can't use -target option here

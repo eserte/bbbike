@@ -12538,6 +12538,7 @@ sub show_info {
 			    my $q2 = CGI->new({ wpt => $wpt,
 						zoom => $zoom,
 						autosel => 1,
+						maptype => "hybrid",
 					      });
 			    my $url = $BBBike::BBBIKE_GOOGLEMAP_URL . "?" . $q2->query_string;
 			    $url;
@@ -14289,13 +14290,15 @@ sub get_symbol_scale {
 	if (1) {
 	    my $photo;
 	    my $base = $tag eq 'b' ? "sbahn" : "${tag}bahn";
+	    my $filename;
 	    if ($myscale > 2*$mod) {
-		$photo = load_photo($top, $base ."." . $default_img_fmt, -persistent => 1);
+		$filename = $base ."." . $default_img_fmt;
 	    } elsif ($myscale >= 0.5*$mod) {
-		$photo = load_photo($top, $base . "_klein." . $default_img_fmt, -persistent => 1);
+		$filename = $base . "_klein." . $default_img_fmt;
 	    } elsif ($myscale >= 0.2*$mod) {
-		$photo = load_photo($top, $base . "_mini." . $default_img_fmt, -persistent => 1);
+		$filename = $base . "_mini." . $default_img_fmt;
 	    }
+	    $photo = load_photo($top, $filename, -persistent => 1);
 	    return $photo;
 	} else {
 	    if ($myscale > 4*$mod) {
