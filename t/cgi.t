@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.41 2007/03/11 20:15:32 eserte Exp $
+# $Id: cgi.t,v 1.42 2007/03/14 19:31:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -47,6 +47,7 @@ my $fast = 0;
 my $ortsuche = 0; # XXX funktioniert nicht mehr
 my $do_display = 0;
 my $do_xxx;
+my $do_accept_gzip = 1;
 my $v = 0;
 my %skip;
 
@@ -62,8 +63,9 @@ if (!GetOptions("cgiurl=s" => sub {
 		"xxx" => \$do_xxx,
 		"v!" => \$v,
 		"skip-mapserver!" => \$skip{mapserver},
+		"accept-gzip!" => \$do_accept_gzip,
 	       )) {
-    die "usage: $0 [-cgiurl url] [-fast] [-ortsuche] [-display] [-v] [-skip-mapserver] [-xxx]";
+    die "usage: $0 [-cgiurl url] [-fast] [-ortsuche] [-display] [-v] [-skip-mapserver] [-noaccept-gzip] [-xxx]";
 }
 
 if (!@urls) {
@@ -80,7 +82,7 @@ my $ortsuche_tests = 11;
 plan tests => (163 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
-if (defined &Compress::Zlib::memGunzip) {
+if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
     $hdrs = HTTP::Headers->new(Accept_Encoding => "gzip");
     warn "Accept gzip encoding\n" if $v;
 } else {
@@ -159,8 +161,11 @@ for my $cgiurl (@urls) {
 	$req = new HTTP::Request
 	    ('GET', "$action?startname=Dudenstr.&startplz=10965&startc=9222%2C8787&zielname=Grimmstr.+%28Kreuzberg%29&zielplz=10967&zielc=11036%2C9592&pref_seen=1&output_as=$output_as", $hdrs);
 	$res = $ua->request($req);
-	ok($res->is_success, "Route result output_as=$output_as")
-	    or diag $res->as_string;
+    SKIP: {
+	    skip "No mapserver tests", 1 if $skip{mapserver};
+	    ok($res->is_success, "Route result output_as=$output_as")
+		or diag $res->as_string;
+	}
 	my $content = uncompr($res);
 	if ($output_as eq '' || $output_as eq 'print') {
 	    is($res->content_type, 'text/html', "Expected content type");
