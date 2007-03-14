@@ -7291,4 +7291,22 @@ EOF
 userdel	1::inwork 11949,10414 12000,10531
 EOF
      },
+     { from  => 1173906268, # 2007-03-14 22:04
+       until => 1175378399, # 2007-03-31 23:59
+       text  => 'Schulze-Boysen-Str. gesperrt (geplatzte Wasserleitung) (bis Ende 03.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_004953',
+       data  => <<EOF,
+userdel	2::inwork 15836,11840 15863,11992
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Bethaniendamm (Mitte) Kreuzung Leuschnerdamm Baustelle, Straße vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'INKO_86548_COPY_1',
+       data  => <<EOF,
+userdel	2::inwork 11461,11145 11421,11073
+EOF
+     },
     );

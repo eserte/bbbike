@@ -868,6 +868,24 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	1::inwork 11949,10414 12000,10531
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_004953',
+         'until' => 1175378399,
+         'text' => 'Schulze-Boysen-Str. gesperrt (geplatzte Wasserleitung) (bis Ende 03.2007)',
+         'from' => 1173906268,
+         'data' => 'userdel	2::inwork 15836,11840 15863,11992
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_86548_COPY_1',
+         'until' => undef,
+         'text' => 'Bethaniendamm (Mitte) Kreuzung Leuschnerdamm Baustelle, Straße vollständig gesperrt',
+         'from' => undef,
+         'data' => 'userdel	2::inwork 11461,11145 11421,11073
+',
+         'type' => 'gesperrt'
        }
      
 );

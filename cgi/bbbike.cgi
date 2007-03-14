@@ -8,7 +8,7 @@
 # $Id: bbbike.cgi,v 8.42 2007/03/12 22:25:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -4736,8 +4736,10 @@ sub draw_route {
 	local $SIG{'__DIE__'};
 	require BBBikeDraw;
 	BBBikeDraw->VERSION(2.26);
+	# Auch hier sieht dunkler besser aus:
 	$draw = BBBikeDraw->new_from_cgi($q,
-					 MakeNet => \&make_netz
+					 MakeNet => \&make_netz,
+					 Bg => '#c5c5c5',
 					);
 	die $@ if !$draw;
     };
@@ -4875,7 +4877,10 @@ sub draw_map {
 	    # dem Default (#b4b4b4, schmale Wasserstraßen kaum zu erkennen)
 	    # und #e1e1e1 (zu heller Hintergrund, Nebenstraßen auf einem
 	    # LCD-Monitor kaum zu erkennen).
-	    my $draw = BBBikeDraw->new_from_cgi($q, Fh => \*IMG, Bg => '#c5c5c5');
+	    my $draw = BBBikeDraw->new_from_cgi($q,
+						Fh => \*IMG,
+						Bg => '#c5c5c5',
+					       );
 	    $draw->set_dimension(@dim);
 	    $draw->create_transpose();
 	    print "Create $img_file...\n" if $args{-logging};
@@ -5549,7 +5554,7 @@ sub header {
 	     -BGCOLOR => '#ffffff',
 	     ($use_background_image && !$printmode ? (-BACKGROUND => "$bbbike_images/bg.jpg") : ()),
 	     -meta=>{'keywords'=>'berlin fahrrad route bike karte suche cycling route routing routenplaner routenplanung fahrradroutenplaner radroutenplaner',
-		     'copyright'=>'(c) 1998-2005 Slaven Rezic',
+		     'copyright'=>'(c) 1998-2007 Slaven Rezic',
 		    },
 	     -author => $BBBike::EMAIL,
 	    );
@@ -6540,7 +6545,7 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
+Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
 This is free software; you can redistribute it and/or modify it under the
 terms of the GNU General Public License, see the file COPYING.
 

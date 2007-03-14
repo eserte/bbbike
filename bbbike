@@ -5,7 +5,7 @@
 # $Id: bbbike,v 3.293 2007/03/08 22:16:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -17737,7 +17737,7 @@ sub show_logo { # und About
 	     "$progname $VERSION\n" .
 	     "(File Rev $PROG_REVISION)\n\n" .
 	     M("Ein Informationssystem für Radfahrer in Berlin") .
-	     "\n\n© 1995-2005 Slaven Rezic",
+	     "\n\n© 1995-2007 Slaven Rezic",
 	     -wraplength => 230,
 	     -font => $font{'bold'},
 	     -padx => 5,
