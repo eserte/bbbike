@@ -4870,6 +4870,7 @@ sub draw_map {
 	    } elsif ($detailmap_module) {
 		$q->param('module', $detailmap_module);
 	    }
+	    $q->param("scope", "region");
 	    # #c5c5c5 ist ein guter Kompromiss zwischen
 	    # dem Default (#b4b4b4, schmale Wasserstraßen kaum zu erkennen)
 	    # und #e1e1e1 (zu heller Hintergrund, Nebenstraßen auf einem
