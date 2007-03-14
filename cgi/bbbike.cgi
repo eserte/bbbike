@@ -5441,7 +5441,7 @@ sub http_header {
     }
     if ($use_cgi_compress_gzip &&
 	eval { require CGI::Compress::Gzip;
-	       CGI::Compress::Gzip->VERSION(0.16);
+	       CGI::Compress::Gzip->VERSION(0.22);
 	       package MyCGICompressGzip;
 	       @MyCGICompressGzip::ISA = 'CGI::Compress::Gzip';
 	       sub isCompressibleType {
