@@ -4624,7 +4624,7 @@ sub draw_route {
 					flaechen => "flaechen",
 					ampel => "ampeln",
 					fragezeichen => "fragezeichen",
-					orte => "orte",
+					ort => "ort",
 					grenzen => "grenzen",
 				       }->{$_};
 			    if (!defined $out) {
@@ -4853,7 +4853,7 @@ sub draw_map {
 	    open(MAP, ">$map_file") or confess "Fehler: Die Map $map_file konnte nicht erstellt werden.<br>\n";
 	    chmod 0644, $map_file;
 	    $q->param('geometry', $detailwidth."x".$detailheight);
-	    $q->param('draw', 'str', 'ubahn', 'sbahn', 'wasser', 'flaechen', 'orte', 'berlin');
+	    $q->param('draw', 'str', 'ubahn', 'sbahn', 'wasser', 'flaechen', 'ort', 'berlin');
 	    $q->param('drawwidth', 1);
 	    # XXX Argument sollte übergeben werden (wird sowieso noch nicht
 	    # verwendet, bis auf Überprüfung des boolschen Wertes)
