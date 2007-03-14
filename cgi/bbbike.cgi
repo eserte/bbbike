@@ -2042,7 +2042,7 @@ function $ {type}map_detail(Evt) { return any_detail("${type}map", Evt); }
 EOF
 		} elsif (!$bi->{'text_browser'} && !$no_berlinmap) {
 		    print "<input type=image name=" . $type
-		      . "mapimg src=\"$bbbike_images/berlin_small$berlin_small_suffix.gif\" class=\"citymap\" alt=\"\">";
+		      . "mapimg src=\"$bbbike_images/berlin_small$berlin_small_suffix.gif\" class=\"citymap\" style=\"width:${berlin_small_width}px; height:${berlin_small_width}px\" alt=\"\">";
 		}
 		print "</td>" if $bi->{'can_table'};
 	    }
