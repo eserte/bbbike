@@ -541,6 +541,26 @@ mit der Karte erscheinen.
 
 Unter Unix würde sofort angefangen werden zu drucken (vielleicht).
 
+=head3 Update über das Internet testen
+
+    * Entweder eine alte Distribution in /tmp auspacken oder einen
+      älteren CVS-Stand in /tmp auschecken (cvs update -D YYYY/MM/DD)
+
+    * Falls von CVS: alle CVS-Verzeichnisse und data/Makefile löschen.
+      Außerdem ein data/.modified besorgen
+
+    * bbbike von diesem Verzeichnis starten und ein Daten-Update
+      auswählen.
+
+    * Ja auswählen
+
+    * Nun werden Dateien geladen (Progressbar).
+
+    * Nach dem Laden gibt es ein Reload der neuen Straßen.
+
+    * Ein diff sollte keine/kaum Unterschiede zum neuesten Stand
+      anzeigen.
+
 =head2 Unwichtige Tests
 
 =head3 Datei > Exportieren > 36 dpi
