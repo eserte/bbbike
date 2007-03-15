@@ -362,7 +362,8 @@ sub bbbike_data_update {
 
     # assume http (or "best")
     my(@files, %modified, %md5);
-    if (open(MOD, "$rootdir/data/.modified")) {
+    my $modfile = "$rootdir/data/.modified";
+    if (open(MOD, $modfile)) {
 	while(<MOD>) {
 	    chomp;
 	    my($f, $t, $md5) = split(/\t/);
@@ -383,6 +384,8 @@ sub bbbike_data_update {
 			-md5 => \%md5,
 		       );
 	main::reload_all();
+    } else {
+	main::status_message("Das Update konnte wegen einer fehlenden Datei ($modfile) nicht durchgeführt werden.", "error");
     }
 }
 
