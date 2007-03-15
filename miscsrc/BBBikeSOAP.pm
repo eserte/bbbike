@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeSOAP.pm,v 1.9 2002/07/29 17:13:54 eserte Exp $
+# $Id: BBBikeSOAP.pm,v 1.10 2007/03/15 21:17:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Online Office Berlin. All rights reserved.
@@ -19,7 +19,7 @@ use Data::Dumper;
 $Data::Dumper::Indent = 0;
 
 sub logger {
-return; # DISABLED
+#return; # DISABLED
   my $caller = (caller(2))[3];
   $caller = (caller(2))[3] if $caller =~ /eval/;
   chomp(my $msg = Data::Dumper->Dumpxs([@_],[]));
@@ -60,12 +60,12 @@ sub SOAP::Serializer::envelope {
   } elsif ($type eq 'fault') {
     SOAP::Trace::fault(@parameters);
     $body = SOAP::Data
-      -> name(SOAP::Utils::qualify($self->namespace => 'Fault'))
+      -> name(SOAP::Utils::qualify($self->envprefix => 'Fault'))
     # commented on 2001/03/28 because of failing in ApacheSOAP
     # need to find out more about it
     # -> attr({'xmlns' => ''})
       -> value(\SOAP::Data->set_value(
-        SOAP::Data->name(faultcode => SOAP::Utils::qualify($self->namespace => $parameters[0])),
+        SOAP::Data->name(faultcode => SOAP::Utils::qualify($self->envprefix => $parameters[0])),
         SOAP::Data->name(faultstring => $parameters[1]),
         defined($parameters[2]) ? SOAP::Data->name(detail => do{my $detail = $parameters[2]; ref $detail ? \$detail : $detail}) : (),
         defined($parameters[3]) ? SOAP::Data->name(faultactor => $parameters[3]) : (),
@@ -79,9 +79,9 @@ sub SOAP::Serializer::envelope {
 
   $self->seen({}); # reinitialize multiref table
   my($encoded) = $self->encode_object(
-    SOAP::Data->name(SOAP::Utils::qualify($self->namespace => 'Envelope') => \SOAP::Data->value(
-      SOAP::Data->name(SOAP::Utils::qualify($self->namespace => 'Header') => \$header),
-      SOAP::Data->name(SOAP::Utils::qualify($self->namespace => 'Body')   => \$body)
+    SOAP::Data->name(SOAP::Utils::qualify($self->envprefix => 'Envelope') => \SOAP::Data->value(
+      SOAP::Data->name(SOAP::Utils::qualify($self->envprefix => 'Header') => \$header),
+      SOAP::Data->name(SOAP::Utils::qualify($self->envprefix => 'Body')   => \$body)
     ))->attr($self->attr)
   );
   $self->signature($parameters->signature) if ref $parameters;
@@ -103,7 +103,7 @@ sub SOAP::Serializer::envelope {
 use strict;
 use vars qw($VERSION @ISA
 	    $s $plz $net $cr $_cr %cinemas);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
 #      eval 'use FindBin';

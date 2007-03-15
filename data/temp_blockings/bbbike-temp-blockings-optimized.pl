@@ -325,8 +325,8 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        {
          'source_id' => 'IM_003157',
-         'until' => 1183240800,
-         'text' => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt. Ebenfalls Einbahnstraße: Teile der Dircksenstr. Die Ausfahrt aus der Memhardstraße in Richtung Ost (Alexanderstraße) ist nicht möglich. (bis Juni 2007) ',
+         'until' => 1179180000,
+         'text' => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt. Ebenfalls Einbahnstraße: Teile der Dircksenstr. Die Ausfahrt aus der Memhardstraße in Richtung Ost (Alexanderstraße) ist nicht möglich. (bis Mitte Mai 2007) ',
          'from' => 1154203576,
          'data' => 'userdel	1::inwork 10920,13139 10781,13002
 userdel	1::inwork 10781,13002 10706,13043
@@ -884,6 +884,38 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'text' => 'Bethaniendamm (Mitte) Kreuzung Leuschnerdamm Baustelle, Straße vollständig gesperrt',
          'from' => undef,
          'data' => 'userdel	2::inwork 11461,11145 11421,11073
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1185141600,
+         'text' => 'B 273 Breite Str. OD Oranienburg, zw. Berliner Str. u. Havelstr. Straßenbauarbeiten Vollsperrung 19.03.2007-22.07.2007 ',
+         'from' => 1174172400,
+         'data' => 'userdel	q4::inwork -1472,38523 -1580,38438 -1644,38289
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1197068400,
+         'text' => 'B 273 Breite Str., Havelstr. OD Oranienburg, zw. Berliner Str. und Gartenstr. Deckschichteinbau Vollsperrung 26.11.2007-07.12.2007 ',
+         'from' => 1195945200,
+         'data' => 'userdel	q4::inwork -1450,38268 -1644,38289
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1196031600,
+         'text' => 'B 273 Havelstr. OD Oranienburg, zw. Breite Str. und Gartenstr. Straßenbauarbeiten Vollsperrung 23.07.2007-25.11.2007 ',
+         'from' => 1185055200,
+         'data' => 'userdel	q4::inwork -1644,38289 -1832,38082
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1183672800,
+         'text' => 'K 7320 Potzlow-Prenzlau Brücke über Mühlgraben in der OL Potzlow Brückenneubau Vollsperrung 19.03.2007-05.07.2007 ',
+         'from' => 1174172400,
+         'data' => 'userdel	2::inwork 38475,90762 38637,91275 38612,91950
 ',
          'type' => 'gesperrt'
        }

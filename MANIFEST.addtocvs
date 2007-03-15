@@ -224,6 +224,7 @@ miscsrc/vmzrobot.pl
 t/*.pl
 t/*.pm
 t/*.t
+t/test.config.example
 t/Makefile
 t/cgiinfo.cgi
 t/tmp/.keep_me
@@ -439,3 +440,4 @@ html/opensearch/bbbike-opensearch.tpl.src
 html/opensearch/bbbike-opensearch.tpl.xml
 html/opensearch/opensearch.html
 html/opensearch/opensearch.js
+cgi/bbbikesoapserver.cgi

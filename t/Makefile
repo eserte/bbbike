@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.18 2004/11/29 22:25:03 eserte Exp $
+# $Id: Makefile,v 1.19 2007/03/15 22:12:33 eserte Exp $
 #
 
 # läuft nicht mit 5.004 oder älter
@@ -11,7 +11,7 @@ test:
 	    'BEGIN { if (!eval q{ use List::Util qw(shuffle); 1 }) { \
 			*shuffle = sub { @_ }; \
 		     } \
-	     } runtests(grep { !/(bbbikesoap).t/ } shuffle @ARGV)' *.t
+	     } runtests(shuffle @ARGV)' *.t
 
 interactive:
 	./cgi2.pl -v -netscape -today

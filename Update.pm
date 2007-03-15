@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Update.pm,v 1.24 2006/08/26 21:59:09 eserte Exp $
+# $Id: Update.pm,v 1.25 2007/03/15 19:02:39 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2001,2003,2005,2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2001,2003,2005,2006,2007 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #

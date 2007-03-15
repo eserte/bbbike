@@ -1,0 +1,9 @@
+require FindBin;
+
+$BBBIKE_TEST_CGIDIR       = "http://localhost/bbbike/cgi";
+$BBBIKE_TEST_CGIURL       = "http://localhost/bbbike/cgi/bbbike.cgi";
+$BBBIKE_TEST_HTMLDIR      = "http://localhost/bbbike/html";
+$BBBIKE_TEST_MAPSERVERURL = "http://localhost/cgi-bin/mapserv";
+$BBBIKE_TEST_WAPURL       = "http://localhost/bbbike/cgi/wapbbbike.cgi";
+
+1;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.21 2007/01/08 23:28:50 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.22 2007/03/15 22:13:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006 Slaven Rezic. All rights reserved.
@@ -16,8 +16,8 @@ package BBBikeTest;
 
 use vars qw(@opt_vars);
 BEGIN {
-    @opt_vars = qw($logfile $do_xxx $do_display $pdf_prog $cgiurl $debug
-		   $cgidir
+    @opt_vars = qw($logfile $do_xxx $do_display $pdf_prog $debug
+		   $cgiurl $cgidir $htmldir $mapserverurl $wapurl
 		  );
 }
 
@@ -26,7 +26,17 @@ use vars qw(@EXPORT);
 use vars (@opt_vars);
 use vars qw($can_tidy);
 
+use vars qw($BBBIKE_TEST_CGIDIR
+	    $BBBIKE_TEST_CGIURL
+	    $BBBIKE_TEST_HTMLDIR
+	    $BBBIKE_TEST_MAPSERVERURL
+	    $BBBIKE_TEST_WAPURL
+	  );
+
 use base qw(Exporter);
+
+use File::Basename qw(dirname);
+use File::Spec     qw();
 
 use BBBikeUtil qw(is_in_path);
 
@@ -41,24 +51,65 @@ use BBBikeUtil qw(is_in_path);
 # Again the old name since 2005-06-XX ca.
 $logfile = "$ENV{HOME}/www/log/radzeit.de-access_log";
 
-if (defined $ENV{BBBIKE_TEST_CGIURL}) {
-    $cgiurl = $ENV{BBBIKE_TEST_CGIURL};
-} elsif (defined $ENV{BBBIKE_TEST_CGIDIR}) {
-    $cgiurl = $ENV{BBBIKE_TEST_CGIDIR} . "/bbbike.cgi";
-} else {
-    $cgiurl = 'http://www/bbbike/cgi/bbbike.cgi';
+# load test config file
+my $config_file = dirname(File::Spec->rel2abs(__FILE__)) . "/test.config";
+#$config_file.=".example";#XXX!
+if (-e $config_file) {
+    require $config_file;
 }
 
-if (defined $ENV{BBBIKE_TEST_CGIDIR}) {
+if ($BBBIKE_TEST_CGIDIR) {
+    $cgidir = $BBBIKE_TEST_CGIDIR;
+} elsif (defined $ENV{BBBIKE_TEST_CGIDIR}) {
     $cgidir = $ENV{BBBIKE_TEST_CGIDIR};
 } else {
-    $cgidir = 'http://www/bbbike/cgi';
+    $cgidir = 'http://localhost/bbbike/cgi';
+}
+
+if ($BBBIKE_TEST_CGIURL) {
+    $cgiurl = $BBBIKE_TEST_CGIURL;
+} elsif (defined $ENV{BBBIKE_TEST_CGIURL}) {
+    $cgiurl = $ENV{BBBIKE_TEST_CGIURL};
+} elsif ($cgidir) {
+    $cgiurl = "$cgidir/bbbike.cgi";
+} else {
+    $cgiurl = 'http://localhost/bbbike/cgi/bbbike.cgi';
+}
+
+if ($BBBIKE_TEST_HTMLDIR) {
+    $htmldir = $BBBIKE_TEST_HTMLDIR;
+} elsif (defined $ENV{BBBIKE_TEST_HTMLDIR}) {
+    $htmldir = $ENV{BBBIKE_TEST_HTMLDIR};
+} else {
+    $htmldir = dirname $cgidir;
+}
+
+if ($BBBIKE_TEST_MAPSERVERURL) {
+    $mapserverurl = $BBBIKE_TEST_MAPSERVERURL;
+} elsif (defined $ENV{BBBIKE_TEST_MAPSERVERURL}) {
+    $mapserverurl = $ENV{BBBIKE_TEST_MAPSERVERURL};
+} else {
+    $mapserverurl = "http://localhost/cgi-bin/mapserv";
+}
+
+if ($BBBIKE_TEST_WAPURL) {
+    $wapurl = $BBBIKE_TEST_WAPURL;
+} elsif (defined $ENV{BBBIKE_TEST_WAPURL}) {
+    $wapurl = $ENV{BBBIKE_TEST_WAPURL};
+} elsif ($cgidir) {
+    $wapurl = "$cgidir/wapbbbike.cgi";
+} else {
+    $wapurl = "http://localhost/bbbike/cgi/wapbbbike.cgi";
 }
 
 sub get_std_opts {
     my(@what) = @_;
     my %std_opts = ("cgiurl=s"  => \$cgiurl,
 		    "cgidir=s"  => \$cgidir,
+		    "htmldir=s" => \$htmldir,
+		    "mapserverurl=s" => \$mapserverurl,
+		    "wapurl=s"  => \$wapurl,
+
 		    "xxx"       => \$do_xxx,
 		    "display!"  => \$do_display,
 		    "debug!"    => \$debug,

@@ -5268,8 +5268,8 @@ userdel	2::temp 5370,6500 5424,6584 5533,6753 5654,6941
 EOF
      },
      { from  => 1154203576, # 2006-07-29 22:06
-       until => 1183240800, # 2007-07-01 00:00 # XXX nicht mehr in VMZ vorhanden!
-       text  => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt. Ebenfalls Einbahnstraße: Teile der Dircksenstr. Die Ausfahrt aus der Memhardstraße in Richtung Ost (Alexanderstraße) ist nicht möglich. (bis Juni 2007) ',
+       until => Time::Local::timelocal(reverse(2007-1900,5-1,15,0,0,0)), # 1183240800, # 2007-07-01 00:00 # XXX nicht mehr in VMZ vorhanden!
+       text  => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt. Ebenfalls Einbahnstraße: Teile der Dircksenstr. Die Ausfahrt aus der Memhardstraße in Richtung Ost (Alexanderstraße) ist nicht möglich. (bis Mitte Mai 2007) ',
        type  => 'gesperrt',
        source_id => 'IM_003157',
        data  => <<EOF,
@@ -7307,6 +7307,38 @@ EOF
        source_id => 'INKO_86548_COPY_1',
        data  => <<EOF,
 userdel	2::inwork 11461,11145 11421,11073
+EOF
+     },
+     { from  => 1174172400, # 2007-03-18 00:00
+       until => 1185141600, # 2007-07-23 00:00
+       text  => 'B 273 Breite Str. OD Oranienburg, zw. Berliner Str. u. Havelstr. Straßenbauarbeiten Vollsperrung 19.03.2007-22.07.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -1472,38523 -1580,38438 -1644,38289
+EOF
+     },
+     { from  => 1195945200, # 2007-11-25 00:00
+       until => 1197068400, # 2007-12-08 00:00
+       text  => 'B 273 Breite Str., Havelstr. OD Oranienburg, zw. Berliner Str. und Gartenstr. Deckschichteinbau Vollsperrung 26.11.2007-07.12.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -1450,38268 -1644,38289
+EOF
+     },
+     { from  => 1185055200, # 2007-07-22 00:00
+       until => 1196031600, # 2007-11-26 00:00
+       text  => 'B 273 Havelstr. OD Oranienburg, zw. Breite Str. und Gartenstr. Straßenbauarbeiten Vollsperrung 23.07.2007-25.11.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -1644,38289 -1832,38082
+EOF
+     },
+     { from  => 1174172400, # 2007-03-18 00:00
+       until => 1183672800, # 2007-07-06 00:00
+       text  => 'K 7320 Potzlow-Prenzlau Brücke über Mühlgraben in der OL Potzlow Brückenneubau Vollsperrung 19.03.2007-05.07.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 38475,90762 38637,91275 38612,91950
 EOF
      },
     );

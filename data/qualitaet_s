@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.189 2007/03/08 22:17:37 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.190 2007/03/15 22:10:00 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -1350,7 +1350,7 @@ Straße 8: Asphalt	Q0 19227,20270 19261,20344 19354,20607
 Innsbrucker Str.: Verbundsteinpflaster	Q1 6244,8597 6274,8447
 Im Dol: Fahrbahn gutes Kopfsteinpflaster, Radwege	Q1 3216,6393 3077,6375
 Im Dol: Asphalt	Q0 1757,5976 1810,5959 1864,5996 1897,6019 2193,6214 2219,6231 2367,6336 2499,6428 2562,6473 2611,6495 2659,6499 2742,6488 2934,6385 3077,6375
-Elvirasteig: Asphalt	Q0 -1530,3323 -1495,3444 -1468,3537 -1422,3785 -1409,3834 -1392,3915 -1360,4014 -1278,4239 -1234,4341
+Elvirasteig: Asphalt	Q0 -1530,3323 -1495,3444 -1468,3537 -1422,3785 -1409,3834 -1392,3915 -1360,4014 -1323,4111 -1278,4239 -1234,4341
 Quermatenweg: Asphalt oder Beton	Q0 -1077,4236 -917,4619 -655,4886 -464,4982 103,5123
 Matterhornstr: überwiegend guter Asphalt	Q0 -1155,3255 -1187,3264 -1360,3314 -1530,3323 -1784,3317 -1873,3315 -1981,3353 -2137,3408 -2243,3371 -2359,3300 -2535,3194 -2614,3124 -2904,3033 -3064,2946 -3129,2922 -3131,2888
 Altvaterstr.: schlechtes Kopfsteinpflaster	Q3 -2283,3491 -2437,3435 -2500,3415 -2554,3426 -2917,3222
@@ -2314,7 +2314,7 @@ Urselweg: sehr guter Asphalt	Q0 -990,3160 -887,3081 -812,2915
 Isoldestr.: mäßiges Kopfsteinpflaster	Q2 -4038,1430 -4049,1535
 Achenseeweg: Asphalt	Q0 5913,1176 5867,807 5916,499 5987,256
 Mercatorweg: mäßiger Beton	Q1 4873,645 4703,534
-Andreezeile: Asphalt	Q0 1326,322 1225,309 1034,474 781,693 739,885 725,970
+Andreezeile: Asphalt	Q0 1326,322 1225,309 1034,474 914,598 781,693 739,885 725,970
 Brucknerstr.: mäßiges Kopfsteinpflaster	Q2 6051,4151 6138,3956 6221,3767 6287,3616
 Philippistr.: Asphalt	Q0 2516,11584 2450,11571
 Philippistr.: Kopfsteinpflaster	Q2 2589,11598 2516,11584
@@ -2454,7 +2454,7 @@ Beymestr.: mäßiges Kopfsteinpflaster	Q2 5510,4987 5809,4828
 Lützenstr.: Kopfsteinpflaster	Q2 2539,10235 2708,10245
 (Waidmannsluster Damm - Karolinenstr.): Waldweg	Q2 1942,21564 1928,21595 1869,21570 1835,21427 1800,21368 1656,21145
 Dalandweg: Kopfsteinpflaster	Q1 5557,4294 5396,4229 5266,4302 5233,4249 5128,4310
-Klopstockstr.: Kopfsteinpflaster	Q1 -1710,3676 -1670,3715 -1609,3741 -1479,3723 -1422,3785 -1394,3798 -1277,3854 -1157,4008 -1077,4236
+Klopstockstr.: Kopfsteinpflaster	Q1 -1710,3676 -1670,3715 -1609,3741 -1479,3723 -1422,3785 -1394,3798 -1277,3854 -1174,4029 -1077,4236
 Lüdenscheider Weg: Beton	Q1 -1037,15482 -1389,15285
 Zinsgutstr.: Asphalt	Q0 20692,3951 20857,3817 21048,3628 21136,3482
 Flinsberger Platz: Kopfsteinpflaster	Q2 2926,8527 2678,8571
@@ -3049,10 +3049,13 @@ Helbigstr.: schlechtes Kopfsteinpflaster	Q3 20362,3750 20339,3779 20109,4087
 Ulrich-von-Hassell-Weg: guter Asphalt	Q0 14902,2149 14789,2149 14681,2231
 Großer Spreering: guter Asphalt	Q0 -1020,14084 -1002,14162 -792,14258 -650,14355 -495,14311 -447,14338 -415,14392 -390,14476
 Tollerstr.: schlechtes Kopfsteinpflaster	Q3 7749,19693 7769,19736 7807,19811 7838,19884 7885,19975
-Parksiedlung Spruch: gut gepflastert	Q0 10578,1840 11031,1739 11136,1782 11205,1776
+Parksiedlung Spruch: Verbundsteinpflaster	Q0 10578,1840 11031,1739 11136,1782 11205,1776
 Oxforder Str.: Asphalt	Q0 6584,17017 6656,17094
 Bristolstr.: guter Asphalt	Q0 6704,16898 6584,17017 6476,17108 6407,17166
 Edwin-C.-Diltz-Str.: guter Asphalt	Q0 -1384,2068 -1371,2268 -1401,2391
+Windsteiner Weg: guter Asphalt	Q0 914,598 856,546 790,527 712,517 635,511 585,505 501,501
+Schillerstr.: Kopfsteinpflaster	Q2 -1013,3804 -1086,3907 -1174,4029 -1230,4078 -1323,4111
+Scharfestr.: guter Asphalt	Q0 935,3430 758,3417 574,3388
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14202,13140 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934

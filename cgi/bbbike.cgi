@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.42 2007/03/12 22:25:41 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.43 2007/03/15 22:12:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -29,7 +29,7 @@ BEGIN {
     $^W = 1 if $ENV{SERVER_NAME} =~ /herceg\.de/i;
 }
 use vars qw(@extra_libs);
-BEGIN { delete $INC{"FindBin.pm"} }
+BEGIN { delete $INC{"FindBin.pm"} } # causes warnings, maybe try FindBin->again if available?
 use FindBin;
 BEGIN {
 #     if ($ENV{SERVER_NAME} =~ /(radzeit\.de|radzeit.herceg.de)$/) {
@@ -671,6 +671,9 @@ eval { local $SIG{'__DIE__'};
        do "$config_master.config" };
 
 undef $msg;
+undef $bbbike_root;
+undef $bbbike_html;
+undef $bbbike_images;
 if ($lang ne "") {
     $msg = eval { do "$FindBin::RealBin/msg/$lang" };
     if ($msg && ref $msg ne 'HASH') {
@@ -699,7 +702,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.42 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.43 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -727,7 +730,7 @@ use vars qw($xgridwidth $ygridwidth $xgridnr $ygridnr $xm $ym $x0 $y0
 	    $start_bgcolor $via_bgcolor $ziel_bgcolor @pref_keys);
 # Konstanten für die Imagemaps
 # Die Werte (bis auf $ym) werden mit small_berlinmap.pl ausgegeben.
-my($berlin_small_width, $berlin_small_suffix);
+use vars qw($berlin_small_width $berlin_small_suffix);
 if (!$use_region_image) {
     $berlin_small_width = 200;
     $berlin_small_suffix = "";
@@ -6398,7 +6401,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/03/12 22:25:41 $';
+    my $cgi_date = '$Date: 2007/03/15 22:12:13 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

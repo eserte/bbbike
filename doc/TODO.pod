@@ -1774,6 +1774,20 @@ L<http://www.adfc-frankfurt-oder.de/radtour/>
 
 =over
 
+=item * (H4)
+
+Es sollte möglich sein, in einer bbd-Datei sowohl nur-Routing- als
+auch nur-Mapping-Information unterzubringen. Ein Beispiel wäre
+3nocross/3: beim Routen benutzt man die E<quot>3E<quot>er-Kategorie,
+beim Plotten die E<quot>3nocrossE<quot>-Kategorie. Evtl. könnte ich
+eine Konvention erfinden, dass Kategorien, die mit E<quot>RTE-E<quot>
+anfangen, für das Routing reserviert sind und nicht geplottet werden
+sollen. Sollte es dafür eine spezielle next-Methode in Strassen::Core
+geben, welches solche Kategorien überspringt (next_map)? Oder kann ich
+das erst einmal ignorieren, weil der gesperrt-Layer sowieso nur in
+bbbike Perl/Tk gezeichnet wird und spezielle gesperrt-Kategorien beim
+MapServer noch ignoriert werden?
+
 =item * (H3)
 
 Fragezeichen-Reorganisation: Es gibt mehrere Typen von Fragezeichen:
