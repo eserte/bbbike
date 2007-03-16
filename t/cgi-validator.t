@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-validator.t,v 1.6 2007/03/04 10:20:17 eserte Exp $
+# $Id: cgi-validator.t,v 1.7 2007/03/16 19:07:26 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -52,12 +52,11 @@ my @uris = ("$rooturl/bbbike.cgi",
     # which hopefully returns a non-zero exit value on problems and prints a
     # lot of diagnostics to stdout/stderr
 
-    #local $TODO = "A test fails --- why?";
     my $validator = W3C::LogValidator::LinkChecker->new(\%config);
     $validator->uris(@uris);
     my %results = $validator->process_list;
     is(scalar(@{$results{trows}}), 0, "Link checking")
-	or diag Dumper(\%results);
+	or diag Dumper(\%results) . "\nTry http://validator.w3.org/checklink for more information";
 }
 
 {

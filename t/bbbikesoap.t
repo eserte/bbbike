@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikesoap.t,v 1.3 2007/03/15 22:42:14 eserte Exp $
+# $Id: bbbikesoap.t,v 1.4 2007/03/16 20:01:15 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -49,9 +49,8 @@ BEGIN {
 }
 
 BEGIN {
-    print "# does not seem to work anymore...";
-    print "1..1\n";
-    print "ok 1\n";
+    plan tests => 1;
+    ok(1, 1, "does not seem to work anymore...");
     exit;
 }
 

@@ -7301,7 +7301,7 @@ userdel	2::inwork 15836,11840 15863,11992
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1174068889, # XXX
        text  => 'Bethaniendamm (Mitte) Kreuzung Leuschnerdamm Baustelle, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'INKO_86548_COPY_1',
@@ -7339,6 +7339,24 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 38475,90762 38637,91275 38612,91950
+EOF
+     },
+     { from  => 1174068849, # 2007-03-16 19:14
+       until => 1222812000, # 2008-10-01 00:00
+       text  => 'Reichstagufer (Mitte) in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis 30.09.2008)',
+       type  => 'handicap',
+       source_id => 'IM_004994',
+       data  => <<EOF,
+userdel	q4::inwork 9091,12681 9209,12795
+EOF
+     },
+     { from  => 1174068872, # 2007-03-16 19:14
+       until => 1174172400, # 2007-03-18 00:00
+       text  => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Großer Stern und Y.-Rabin-Str. Veranstaltung, Straße vollständig gesperrt (bis 17.03.2007 24.00 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_004977',
+       data  => <<EOF,
+userdel	2::temp 8063,12182 7816,12150 7383,12095 6828,12031
 EOF
      },
     );

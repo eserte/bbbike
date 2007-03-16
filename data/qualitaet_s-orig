@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.190 2007/03/15 22:10:00 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.190 2007/03/15 22:10:00 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -2694,9 +2694,11 @@ Kornburger Weg: schlechter Asphalt	Q1 -3309,17153 -3326,16553
 Am Berl: Asphalt	Q0 16923,18650 16817,18809
 Am Berl: Asphalt	Q0 16799,18556 16746,18632 16793,18668 16740,18751
 #: by: ^^^
-#: by: markus kringel: vvv
-Am Spreebord: gute Qualität	Q0 3735,12705 4135,12715
-Am Spreebord: Kopfsteinpflaster	Q2 4135,12715 4314,12659
+#: by: markus kringel: (corrected by rjoop) vvv
+Am Spreebord: Asphalt	Q0 3735,12705 3949,12710
+Am Spreebord: gutes Kopfsteinpflaster	Q1 3949,12710 4055,12713
+Am Spreebord: Asphalt	Q0 4055,12713 4135,12715 4252,12678
+Am Spreebord: Kopfsteinpflaster	Q2 4252,12678 4314,12659
 #: by: ^^^
 #: by: Peter Fenske: vvv
 #: note: vorher "Kopfsteinpflaster":

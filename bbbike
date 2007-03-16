@@ -9404,7 +9404,7 @@ sub plot_sperre {
 				      -smooth => 1,
 				      -fill => 'red',				
 				     )
-		                   : (-fill => 'orange',
+		                   : (-fill => '#ff4500',
 				     )
 		     ),
 		     ($Tk::VERSION >= 800.016 ? (-dash => $line_dash{sperre3}) : ()),
@@ -9822,6 +9822,9 @@ sub _get_comments_obj {
 sub _get_fragezeichen_obj {
     my @files;
     push @files, get_strassen_file("fragezeichen");
+    if ($files[0] ne 'fragezeichen') { # happens in edit mode
+	push @files, "fragezeichen";
+    }
     my $xxx_file = catfile($FindBin::RealBin, "tmp", "XXX.bbd");
     if (0 && -r $xxx_file) { # XXX soll ich oder soll ich nicht XXX.bbd mit einbinden?
 	push @files, $xxx_file;

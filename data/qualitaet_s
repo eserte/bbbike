@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.190 2007/03/15 22:10:00 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.190 2007/03/15 22:10:00 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -2182,8 +2182,10 @@ Hallandstr.: Kopfsteinpflaster	Q2 11598,16878 11285,16879 10999,16830
 Kornburger Weg: schlechter Asphalt	Q1 -3309,17153 -3326,16553
 Am Berl: Asphalt	Q0 16923,18650 16817,18809
 Am Berl: Asphalt	Q0 16799,18556 16746,18632 16793,18668 16740,18751
-Am Spreebord: gute Qualität	Q0 3735,12705 4135,12715
-Am Spreebord: Kopfsteinpflaster	Q2 4135,12715 4314,12659
+Am Spreebord: Asphalt	Q0 3735,12705 3949,12710
+Am Spreebord: gutes Kopfsteinpflaster	Q1 3949,12710 4055,12713
+Am Spreebord: Asphalt	Q0 4055,12713 4135,12715 4252,12678
+Am Spreebord: Kopfsteinpflaster	Q2 4252,12678 4314,12659
 Oberhofer Platz: Asphalt	Q0 5469,1949 5495,1964 5443,2109 5411,2098
 Oberhofer Weg: Asphalt	Q0 5740,1227 5751,1289 5665,1489 5642,1545 5570,1712 5519,1831 5469,1949
 Zerbster Str. (Lichterfelde): Hälfte der Strecke ist "leichtes" Kopfsteinpflaster	Q1 6283,1068 6132,1395 6023,1634 5952,1800

@@ -505,14 +505,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        },
        undef,
        undef,
-       {
-         'until' => 1173999600,
-         'text' => 'L 029 Wandlitz-Schmachtenhagen OD Zehlendorf grundhafter Straßenbau Vollsperrung 06.07.2006-15.03.2007 ',
-         'from' => 1152050400,
-         'data' => 'userdel	q4::inwork 8293,42032 8682,42032
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1188597600,
@@ -740,15 +733,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_004793',
-         'until' => 1173999599,
-         'text' => 'Hildburghauser Str. (Steglitz) in beiden Richtungen zwischen Oberhofer Weg und Geraer Str. Baustelle, Fahrbahn auf einen Fahrstreifen verengt, Verkehr wird wechselseitig vorbeigeführt (bis Mitte 03.2007)',
-         'from' => 1172530621,
-         'data' => 'userdel	q4::inwork 5418,1292 5560,1278 5740,1227
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_004803',
          'until' => 1175378399,
@@ -878,15 +863,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'INKO_86548_COPY_1',
-         'until' => undef,
-         'text' => 'Bethaniendamm (Mitte) Kreuzung Leuschnerdamm Baustelle, Straße vollständig gesperrt',
-         'from' => undef,
-         'data' => 'userdel	2::inwork 11461,11145 11421,11073
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1185141600,
          'text' => 'B 273 Breite Str. OD Oranienburg, zw. Berliner Str. u. Havelstr. Straßenbauarbeiten Vollsperrung 19.03.2007-22.07.2007 ',
@@ -916,6 +893,24 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'text' => 'K 7320 Potzlow-Prenzlau Brücke über Mühlgraben in der OL Potzlow Brückenneubau Vollsperrung 19.03.2007-05.07.2007 ',
          'from' => 1174172400,
          'data' => 'userdel	2::inwork 38475,90762 38637,91275 38612,91950
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_004994',
+         'until' => 1222812000,
+         'text' => 'Reichstagufer (Mitte) in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis 30.09.2008)',
+         'from' => 1174068849,
+         'data' => 'userdel	q4::inwork 9091,12681 9209,12795
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_004977',
+         'until' => 1174172400,
+         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Großer Stern und Y.-Rabin-Str. Veranstaltung, Straße vollständig gesperrt (bis 17.03.2007 24.00 Uhr)',
+         'from' => 1174068872,
+         'data' => 'userdel	2::temp 8063,12182 7816,12150 7383,12095 6828,12031
 ',
          'type' => 'gesperrt'
        }
