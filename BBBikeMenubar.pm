@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMenubar.pm,v 1.19 2007/03/04 19:44:52 eserte Exp $
+# $Id: BBBikeMenubar.pm,v 1.20 2007/03/16 21:39:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2002,2003 Slaven Rezic. All rights reserved.
@@ -68,6 +68,10 @@ sub bbbike_context {
       SaveCommand  => sub { main::load_save_route(1) },
       PrintCommand => \&main::print_function,
       OptionsCommand => sub { main::optedit() },
+      SearchCommand => sub {
+	  require BBBikeAdvanced;
+	  main::search_anything();
+      },
       ExitCommand  => \&main::exit_app,
      };
 }
@@ -86,6 +90,9 @@ sub menubar {
     $file_menu->command(-label => M("~Drucken")." ...",
 			-command => $self->{PrintCommand});
     my $print_menu = $file_menu->cascade(-label => M"D~ruckeinstellungen");
+    $file_menu->command(-label => M"Volltextsuche",
+			-accelerator => "Ctrl-F",
+			-command => $self->{SearchCommand});
     $file_menu->command(-label => M"~Beenden",
 			-accelerator => "Ctrl-Q",
 			-command => $self->{ExitCommand});

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.172 2007/03/11 22:28:46 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.173 2007/03/16 21:39:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -3076,6 +3076,9 @@ sub search_anything {
 			"wasserumland", "wasserumland2", "landstrassen2",
 			"orte2",
 		       );
+    if ($advanced) {
+	push @search_files, $str_file{fz};
+    }
     @search_files = map {
 	file_name_is_absolute($_) && -r $_ ? $_ :
 	    "$datadir/$_" ? "$datadir/$_" : ()

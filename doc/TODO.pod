@@ -1819,6 +1819,9 @@ Im Editier-Modus muss zusätzlich sichtbar sein:
 - die add_fragezeichen-Datensätze
 - die XXX-Datensätze (vielleicht zwei Varianten hier erzeugen?)
 
+-> Pragmatischer Ansatz: im edit-mode werden einfach noch die
+fragezeichen-Strecken zusätzlich zu fragezeichen-orig angezeigt.
+
 =item * (H4)
 
 Routes vs. Layers: some data formats may be interpreted as routes and
