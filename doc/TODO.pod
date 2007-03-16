@@ -87,6 +87,13 @@ Stacked tooltips: letzte Probleme (zu spätes Aktualisieren der Anzeige
 beim <Motion>, cyclepath im Edit-Mode wird falsch angezeigt) beheben
 und dann veröffentlichen.
 
+=item * (H3)
+
+Im Edit-Mode auch Direktiven zu Strecken zeigen, soweit sie
+interessant sind. Evtl. könnte man einige Direktiven (Aliase) auch im
+Normal-Mode zeigen. Außerdem sollten einige Direktiven auch suchbar
+sein.
+
 =item * (H2)
 
 category_* directives in bbd files have side effects: the global
