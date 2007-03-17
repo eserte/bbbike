@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.43 2007/03/15 22:12:13 eserte Exp $
+# $Id: bbbike.cgi,v 8.43 2007/03/15 22:12:13 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.

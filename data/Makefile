@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.127 2007/03/05 20:55:32 eserte Exp eserte $
+# $Id: Makefile,v 2.129 2007/03/17 21:20:56 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -19,6 +19,7 @@ PERSISTENTTMPDIR=	$(BBBIKEDIR)/tmp
 #BERLINMAP2HAFAS=	${MISCSRCDIR}/berlinmap2hafas -strict
 HAFAS2HAFAS=		${MISCSRCDIR}/hafas2hafas -strict
 CONVERT2HAFAS=		${MISCSRCDIR}/convert2hafas -strict
+CONVERT_ORIG=		${MISCSRCDIR}/convert_orig_to_bbd
 CHECK_POINTS=		${MISCSRCDIR}/check_points
 CHECK_STR_PLZ=		${MISCSRCDIR}/check_str_plz
 CHECK_CONT=		${MISCSRCDIR}/check_cont
@@ -501,13 +502,13 @@ radwege_exact:	radwege-orig
 
 qualitaet_s:	qualitaet_s-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) qualitaet_s-orig > qualitaet_s~
+	$(CONVERT_ORIG) -strip-tendencies qualitaet_s-orig > qualitaet_s~
 	mv qualitaet_s~ qualitaet_s
 	-@$(READONLY) $@
 
 qualitaet_l:	qualitaet_l-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) qualitaet_l-orig > qualitaet_l~
+	$(CONVERT_ORIG) -strip-tendencies qualitaet_l-orig > qualitaet_l~
 	mv qualitaet_l~ qualitaet_l
 	-@$(READONLY) $@
 

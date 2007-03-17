@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.294 2007/03/16 21:41:36 eserte Exp $
+# $Id: bbbike,v 3.294 2007/03/16 21:41:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -5161,6 +5161,10 @@ sub define_item_attribs {
 
 	 'X' => "red", # fallback color
 	);
+    for (qw(Q0 Q1 Q2 Q3)) { # same colors for tendencies
+	$category_color{$_."-"} = $category_color{$_};
+	$category_color{$_."+"} = $category_color{$_};
+    }
     %category_font_color =
 	(
 	 'W'  => '#2a45b7',

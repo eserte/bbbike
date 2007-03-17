@@ -512,6 +512,12 @@ Höchstgeschwindigkeit.
 
 =back
 
+Es ist möglich, eine Tendenz mit einem angehängten C<-> (besser) oder
+C<+> (schlechter) anzugeben, also beispielsweise C<Q2+> für eine
+mäßige Qualität mit Tendenz zur guten Qualität. Diese Tendenzen werden
+bislang nur bei der Erfassung verwendet, aber (noch) nicht beim
+Routing oder der Kartendarstellung.
+
 Andere, nicht fahrbahnbezogene Handicaps, zum Beispiel Beeinträchtigungen
 durch Fußgänger oder enge Kurven. Used in files: F<handicap_s> (used
 for city streets), F<handicap_l> (used for streets in the region

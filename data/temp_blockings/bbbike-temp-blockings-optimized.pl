@@ -829,15 +829,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_004915',
-         'until' => 1174086000,
-         'text' => 'General-Pape-Str. (Tempelhof) in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis 16.03.2007)',
-         'from' => 1173682113,
-         'data' => 'userdel	2::inwork 8306,8722 8248,8688 8220,8596 7945,7789
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1174345200,
          'text' => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 16.03.2007-19.03.2007 ',
@@ -911,6 +903,15 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Großer Stern und Y.-Rabin-Str. Veranstaltung, Straße vollständig gesperrt (bis 17.03.2007 24.00 Uhr)',
          'from' => 1174068872,
          'data' => 'userdel	2::temp 8063,12182 7816,12150 7383,12095 6828,12031
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_004990',
+         'until' => 1174345200,
+         'text' => 'Bahnhofstr. (Köpenick) in beiden Richtungen in Höhe der Bahnhofsbrücke Brückenarbeiten, Straße vollständig gesperrt, eine Umleitung ist eingerichtet (bis 19.03.2007 04 Uhr)',
+         'from' => 1174115692,
+         'data' => 'userdel	2::inwork 22428,6063 22475,6151
 ',
          'type' => 'gesperrt'
        }

@@ -55,7 +55,7 @@
       (if (or (save-excursion (search-forward-regexp "\\=[^ ]+$" nil t)) ;; are we on the last coord of the line?
 	      (save-excursion (search-forward-regexp "\\=$" nil t)))
 	  (progn
-(message (format "%s" (point)))
+	    (message (format "%s" (point)))
 	    (beginning-of-line)
 	    (if (not (search-forward-regexp "^\\([^\t]*\\)\t\\([^ ]+\\).* \\([^ ]+\\)$"))
 	      (error "Cannot parse this line as valid bbd data line"))
@@ -77,7 +77,7 @@
 	    (if (not (string= match-cat other-cat)) ;; XXX ask the user which one to choose!
 		(error "Category on this line and category on next line do not match"))
 	    (setq other-coord (buffer-substring (match-beginning 3) (match-end 3)))
-	    (if (not (string= match-cat other-cat))
+	    (if (not (string= match-coord other-coord))
 		(error "Last coordinate on this line and first coordinate on next line do not match"))
 	    (delete-region (match-beginning 0) (match-end 0))  ;; XXX maybe replace name and/or cat if user chose the 2nd name/cat
 	    (insert " ")

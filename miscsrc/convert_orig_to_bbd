@@ -1,0 +1,75 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: convert_orig_to_bbd,v 1.2 2007/03/17 21:13:45 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2007 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+# This will be the successor of convert2hafas, one day
+
+use strict;
+
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin/../data");
+
+use Getopt::Long;
+
+use Strassen::Core;
+
+my $do_strip_tendencies;
+
+if (!GetOptions("strip-tendencies!" => \$do_strip_tendencies,
+	       )) {
+    die "usage: $0 [-strip-tendencies] origbbd > bbd";
+}
+
+my $f = shift || "-";
+if ($f eq '-') {
+    if (-t $f) {
+	warn "Read from STDIN...\n";
+    }
+}
+
+my $s = Strassen->new($f);
+my $new_s = Strassen->new;
+$s->init;
+while(1) {
+    my $r = $s->next;
+    last if !@{ $r->[Strassen::COORDS] };
+
+    my($cat_hin, $cat_rueck);
+    if ($r->[Strassen::CAT] =~ /^(.*);(.*)$/) {
+	($cat_hin, $cat_rueck) = ($1, $2);
+    } else {
+	$cat_hin = $cat_rueck = $r->[Strassen::CAT];
+    }
+
+    if ($do_strip_tendencies) {
+	for ($cat_hin, $cat_rueck) {
+	    s{^([qQ]\d)[\+\-]$}{$1};
+	}
+    }
+
+    if ($cat_hin ne $cat_rueck) {
+	$r->[Strassen::CAT] = $cat_hin . ";" . $cat_rueck;
+    } else {
+	$r->[Strassen::CAT] = $cat_hin; # XXX unless both directions should be always preserved, see radwege
+    }
+
+    $new_s->push($r);
+}
+
+$new_s->set_global_directives($s->get_global_directives);
+print $new_s->as_string;
+
+__END__

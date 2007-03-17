@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen.t,v 1.12 2007/01/08 21:10:32 eserte Exp $
+# $Id: strassen.t,v 1.13 2007/03/17 21:35:19 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -44,7 +44,7 @@ my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 3;
 my $encoding_tests = 9;
 
-plan tests => 26 + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $encoding_tests;
+plan tests => 28 + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $encoding_tests;
 
 goto XXX if $do_xxx;
 
@@ -150,6 +150,14 @@ EOF
 	    }
 	}
     }
+
+    my $s = Strassen->new_from_data_string($data);
+    my $new_s = Strassen->new;
+    $new_s->set_global_directives($s->get_global_directives);
+    my $new_global_directives = $new_s->get_global_directives;
+    my $old_global_directives = $s->get_global_directives;
+    is_deeply($new_global_directives, $old_global_directives, "Copied global directives");
+    is($new_global_directives, $old_global_directives, "It's really the same referenced object");
 }
 
 {

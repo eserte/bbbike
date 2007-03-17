@@ -7359,4 +7359,13 @@ EOF
 userdel	2::temp 8063,12182 7816,12150 7383,12095 6828,12031
 EOF
      },
+     { from  => 1174115692, # 2007-03-17 08:14
+       until => 1174345200, # 2007-03-20 00:00
+       text  => 'Bahnhofstr. (Köpenick) in beiden Richtungen in Höhe der Bahnhofsbrücke Brückenarbeiten, Straße vollständig gesperrt, eine Umleitung ist eingerichtet (bis 19.03.2007 04 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_004990',
+       data  => <<EOF,
+userdel	2::inwork 22428,6063 22475,6151
+EOF
+     },
     );
