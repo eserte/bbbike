@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.35 2007/01/30 20:26:21 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.36 2007/03/18 18:45:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -32,6 +32,7 @@ use Data::Dumper;
 use MIME::Lite;
 use File::Basename;
 use CGI qw(:standard -no_xhtml);
+use CGI::Carp;
 use vars qw($debug $bbbike_url $bbbike_root $bbbike_html $use_cgi_bin_layout
 	    @MIME_Lite_send);
 

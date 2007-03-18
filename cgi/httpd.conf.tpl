@@ -50,3 +50,8 @@ Alias [% ROOT_URL %]  [% ROOT_DIR %]
 [%
 	END
 -%]
+
+[%# not tested yet! XXX %]
+<Location [% ROOT_URL %]/>
+  ErrorDocument 404 [% ROOT_URL %]/html/error404.html
+</Location>

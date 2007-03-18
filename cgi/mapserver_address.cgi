@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.27 2006/04/22 19:30:22 eserte Exp $
+# $Id: mapserver_address.cgi,v 1.28 2007/03/18 18:44:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -39,6 +39,7 @@ BEGIN { # XXX do not hardcode
     }
 }
 use CGI qw(:standard *table);
+use CGI::Carp;
 use lib (defined $BBBIKE_ROOT ? ("$BBBIKE_ROOT",
 				 "$BBBIKE_ROOT/lib",
 				 "$BBBIKE_ROOT/data",
@@ -300,8 +301,7 @@ sub resolve_fulltext {
 	require File::Spec;
 	open(STDERR, ">" . File::Spec->devnull)
 	    or warn "Can't redirect stderr to /dev/null: $!";
-	exec @cmd;
-	die $!; # XXX actually not visible because of redirect
+	exec @cmd or die $!; # XXX actually not visible because of redirect
     };
     while(<GREP>) {
 	my($file, $line) = split /:/, $_, 2;

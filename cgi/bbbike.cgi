@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.43 2007/03/15 22:12:13 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.44 2007/03/18 18:46:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -702,7 +702,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.43 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.44 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -4246,12 +4246,14 @@ EOF
 		chmod 0777, $sessdir;
 		if (open(SESS, ">> $sessdir/" . $sess->{_session_id})) {
 		    require Data::Dumper;
-		    print SESS Data::Dumper::Dumper({ date           => scalar(localtime),
-						      time           => time,
-						      routestringrep => $string_rep,
-						      route          => \@out_route,
-						      remote_ip      => $ENV{HTTP_X_FORWARDED_FOR} || $ENV{REMOTE_ADDR},
-						    });
+		    print SESS Data::Dumper::Dumper
+			({ date           => scalar(localtime),
+			   time           => time,
+			   routestringrep => $string_rep,
+			   route          => \@out_route,
+			   remote_ip      => $ENV{HTTP_X_FORWARDED_FOR} || $ENV{REMOTE_ADDR},
+			   user_agent     => $ENV{HTTP_USER_AGENT},
+			 });
 		    close SESS;
 		}
 		untie %$sess;
@@ -6119,12 +6121,15 @@ sub tie_session_counted {
     # To retrieve a session file:
     #perl -MData::Dumper -MStorable=thaw -e '$content=do{open my $fh,$ARGV[0] or die;local$/;<$fh>}; warn Dumper thaw $content' file
 
-    #my $dirlevels = 1;
-    my $dirlevels = 0;
+    #my $dirlevels = 0;
+    my $dirlevels = 1;
     my @l = localtime;
     my $date = sprintf "%04d-%02d-%02d", $l[5]+1900, $l[4]+1, $l[3];
-    # Make sure a different user for cgi-bin/mod_perl operation is used
-    my $directory = "/tmp/bbbike-sessions-" . $< . "-$date";
+    ## Make sure a different user for cgi-bin/mod_perl operation is used
+    #my $directory = "/tmp/bbbike-sessions-" . $< . "-$date";
+    ## No need for per-day directories, I have /tmp/coordssessions
+    my $directory = "/tmp/bbbike-sessions-" . $<;
+    my $counterfile = "/tmp/bbbike-counter-" . $< . "-$date";
 
 #     require File::Spec;
 #     open(OLDOUT, ">&STDOUT") or die $!;
@@ -6136,10 +6141,10 @@ sub tie_session_counted {
     tie my %sess, $apache_session_module, $id,
 	{ Directory => $directory,
 	  DirLevels => $dirlevels,
-	  CounterFile => "/tmp/bbbike-counter-" . $< . "-$date",
+	  CounterFile => $counterfile,
 	  AlwaysSave => 1,
-	  HostID => undef,
-	  HostURL => sub { undef },
+	  #HostID => undef,
+	  #HostURL => sub { undef },
 	  Timeout => 10,
 	} or do {
 	    $use_apache_session = undef;
@@ -6401,7 +6406,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/03/15 22:12:13 $';
+    my $cgi_date = '$Date: 2007/03/18 18:46:23 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

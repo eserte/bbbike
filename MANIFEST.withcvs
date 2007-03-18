@@ -367,6 +367,7 @@ html/bbbike_start.js
 html/bbbikepod.css
 html/bbbikeprint.css
 html/empty.html
+html/error404.html
 html/fragezeichenform.html
 html/fragezeichenform.utf8.html
 html/help.html
@@ -1210,6 +1211,7 @@ t/way.t
 t/test.config.example
 t/Makefile
 t/cgiinfo.cgi
+t/testbbd/globdir.bbd
 t/tmp/.keep_me
 t/tmp/.cvsignore
 java/BBBike.java
@@ -1424,3 +1426,4 @@ html/opensearch/bbbike-opensearch.tpl.xml
 html/opensearch/opensearch.html
 html/opensearch/opensearch.js
 cgi/bbbikesoapserver.cgi
+miscsrc/coordssession2bbd

@@ -18,3 +18,5 @@ ScriptAlias <%=$cgiurl%>/<%=$script%> <%=$rootdir%>/cgi/<%=$script%>
 <% } %>
 Alias <%=$rooturl%>/html/ <%=$rootdir%>/html/
 Alias <%=$rooturl%>/images/ <%=$rootdir%>/images/
+
+ErrorDocument 404 <%=$rooturl%>/html/error404.html

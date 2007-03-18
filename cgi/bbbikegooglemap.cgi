@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.39 2007/03/13 21:24:00 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.41 2007/03/18 18:45:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -24,6 +24,7 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../BBBike/lib",
 	);
 use CGI qw(:standard);
+use CGI::Carp;
 use URI;
 use BBBikeCGIUtil qw();
 use BBBikeVar;
@@ -307,7 +308,15 @@ sub get_html {
     }
 
     function showLink(point, message) {
-        var latLngStr = message + "@{[ BBBikeCGIUtil::my_url(CGI->new(), -full => 1) ]}?zoom=" + map.getZoomLevel() + "&wpt=" + formatPoint(point) + "&coordsystem=polar";
+	var mapType;
+	if (map.getCurrentMapType() == G_NORMAL_MAP) {
+	    mapType = "normal";
+	} else if (map.getCurrentMapType() == G_HYBRID_MAP) {
+	    mapType = "hybrid";
+	} else {
+	    mapType = "satellite";
+	}
+        var latLngStr = message + "@{[ BBBikeCGIUtil::my_url(CGI->new(), -full => 1) ]}?zoom=" + map.getZoomLevel() + "&wpt=" + formatPoint(point) + "&coordsystem=polar" + "&maptype=" + mapType;
         document.getElementById("permalink").innerHTML = latLngStr;
     }
 

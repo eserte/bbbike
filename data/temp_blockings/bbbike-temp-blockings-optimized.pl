@@ -897,15 +897,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_004977',
-         'until' => 1174172400,
-         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Großer Stern und Y.-Rabin-Str. Veranstaltung, Straße vollständig gesperrt (bis 17.03.2007 24.00 Uhr)',
-         'from' => 1174068872,
-         'data' => 'userdel	2::temp 8063,12182 7816,12150 7383,12095 6828,12031
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_004990',
          'until' => 1174345200,

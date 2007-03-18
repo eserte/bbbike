@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.129 2007/03/17 21:20:56 eserte Exp $
+# $Id: Makefile,v 2.130 2007/03/18 19:52:53 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -347,10 +347,8 @@ ubahnhof:	ubahnhof-orig
 $(i)bahnhof_bg:	$(i)bahnhof-orig
 	-@$(WRITEABLE) $@
 	(echo "#: title: Fahrradfreundliche Zugänge bei der $(i:U)-Bahn"; \
-	 echo "#: category_image.bg: behindertengerecht.gif"; \
-	 echo "#: category_image.bf: behindertenfreundlich.gif"; \
 	 [ "$(i)" = "s" ] && echo "#: note: http://www.s-bahn-berlin.de/fahrplanundnetz/sbahnhof_anzeige.php?ID=103"; \
-	 echo "#:") > $@
+	 echo "#:") > $@~
 	perl -I../lib -I.. -MStrassen::Core -MObject::Iterate=iterate -e '\
 	$$s=Strassen->new(shift, UseLocalDirectives => 1);\
 	$$new_s=Strassen->new;\

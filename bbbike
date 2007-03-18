@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.294 2007/03/16 21:41:36 eserte Exp eserte $
+# $Id: bbbike,v 3.295 2007/03/18 18:47:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -205,7 +205,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.294 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.295 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -5626,14 +5626,19 @@ sub generate_plot_functions {
 	    return if defined $ignore and $cat_hin =~ /$ignore/;
 	    return if defined $restrict and $cat_hin !~ /$restrict/;
 	    my $this_color_hin = $cat_hin =~ /^\#/ ? $cat_hin :
-		$category_color{$cat_hin} || $str_color{$abk} || 'white';
+		$layer_category_color{$abk}{$cat_hin}
+		|| $category_color{$cat_hin}
+		|| $str_color{$abk} || 'white';
 	    my $this_color_rueck = defined $cat_rueck ?
 		($cat_rueck =~ /^\#/ ? $cat_rueck :
-		 $category_color{$cat_rueck} || $str_color{$abk} || 'white') :
+		 $layer_category_color{$abk}{$cat_rueck}
+		 || $category_color{$cat_rueck}
+		 || $str_color{$abk} || 'white') :
 		     'white';
-	    my $this_width_hin = $category_width{$cat_hin} || $default_width || 1;
+	    my $this_width_hin = $layer_category_width{$abk}{$cat_hin}
+		 || $category_width{$cat_hin} || $default_width || 1;
 	    my $this_width_rueck = defined $cat_rueck ?
-		($category_width{$cat_hin} || $default_width || 1) :
+		($layer_category_width{$abk}{$cat_rueck} || $category_width{$cat_rueck} || $default_width || 1) :
 		    1;
 	    my @coordlist;
 	CROSSINGS_LOOP:
@@ -5806,7 +5811,7 @@ sub generate_plot_functions {
 		if ($cat_hin =~ /^F:(.*)$/) { # Fläche, no $cat_rueck handling here
 		    $category = $1;
 		    my($color, $rest) = split(/\|/, $category);
-		    my $stipple = $category_stipple{$category};
+		    my $stipple = $layer_category_stipple{$abk}{$category} || $category_stipple{$category};
 		    if (defined $rest && $rest ne "") {
 			if ($rest =~ /^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/) {
 			    $image = $1;
@@ -5816,7 +5821,7 @@ sub generate_plot_functions {
 			}
 		    }
 		    if ($color eq 'I') { $abk = 'i' } # Inseln
-		    $color = $category_color{$color} || $color;
+		    $color = $layer_category_color{$abk}{$color} || $category_color{$color} || $color;
 		    $stipple = Tk::findINC($stipple) if $stipple;
 		    $stipple = '@' . $stipple if $stipple;
 		    if ($str_outline{$abk} && @coordlist > 2) {
@@ -5940,7 +5945,8 @@ sub generate_plot_functions {
 			       -tags      => ["$abk-out",
 					      "$abk-$cat_hin-out"],
                                ($line_dash ? (-dash => $line_dash) : ()),
-			       (exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
+			       (exists $layer_line_arrow{$abk}{$cat_hin} ? (-arrow => $layer_line_arrow{$abk}{$cat_hin})
+				: exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
 			      );
 			}
 			if (defined $cat_rueck) {
@@ -6002,7 +6008,8 @@ sub generate_plot_functions {
 				 -tags      => [@std_tags,
 						@extra_tags],
 				 ($line_dash ? (-dash => $line_dash) : ()),
-				 (exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
+				 (exists $layer_line_arrow{$abk}{$cat_hin} ? (-arrow => $layer_line_arrow{$abk}{$cat_hin})
+				: exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
 				);
 			}
 
@@ -6188,8 +6195,8 @@ EOF
 		$c->createLine($cx1,$cy1,$cx2,$cy2,$cx3,$cy3,
 			       -tags => "$abk-bg");
 	    } elsif ($abk =~ /^L(\d+)/) {
-		my $color = $category =~ /^\#/ ? $category : exists $category_color{$category} ? $category_color{$category} : undef;
-		my $width = $category_width{$category} || $p_width{$abk} || $default_width || 6;
+		my $color = $category =~ /^\#/ ? $category : exists $layer_category_color{$abk}{$category} ? exists $layer_category_color{$abk}{$category} : exists $category_color{$category} ? $category_color{$category} : undef;
+		my $width = $layer_category_width{$abk}{$category} || $category_width{$category} || $p_width{$abk} || $default_width || 6;
 		$c->createLine($x, $y, $x, $y,
 			       (defined $color ? (-fill => $color) : ()),
 			       -width => $width,
@@ -12923,6 +12930,15 @@ sub reset_free_layer {
     delete $layer_post_enter_command{$abk};
     delete $layer_pre_leave_command{$abk};
     delete $layer_post_leave_command{$abk};
+    delete $layer_line_width{$abk};
+    delete $layer_line_length{$abk};
+    delete $layer_line_dash{$abk};
+    delete $layer_line_arrow{$abk};
+    delete $layer_category_size{$abk};
+    delete $layer_category_color{$abk};
+    delete $layer_category_width{$abk};
+    delete $layer_category_image{$abk};
+    delete $layer_category_stipple{$abk};
     remove_from_stack($abk);
 }
 
@@ -19102,22 +19118,30 @@ sub handle_global_directives {
     }
     return if !$glob_dir;
     my %accept_global_hash_directives = map{($_,1)}
-	qw(line_width line_length line_arrow
-	   str_color outline_color
-	   category_size category_color category_width category_image
+	qw(line_width line_length
+	   line_dash line_arrow
+	   category_size category_color
+	   category_width category_image
 	   category_stipple);
     my %accept_global_hashref_directives = map{($_,1)}
 	qw(str_attrib p_attrib);
+    my %accept_global_catless_directives = map{($_,1)}
+	qw(str_color outline_color);
     # XXX scrollregion
     while(my($directive, $vals) = each %$glob_dir) {
-	my($key, $val) = $directive =~ /^([^\.]+)\.([^\.]+)/;
-	next if !defined $key;
-	if ($accept_global_hash_directives{$key}) {
+	if ($accept_global_catless_directives{$directive}) {
 	    no strict 'refs';
-	    ${$key}{$val} = $vals->[0];
-	} elsif ($accept_global_hashref_directives{$key}) {
-	    no strict 'refs';
-	    ${$key}->{$val} = $vals->[0];
+	    ${$directive}->{$abk} = $vals->[0];
+	} else {
+	    my($key, $val) = $directive =~ /^([^\.]+)\.([^\.]+)/;
+	    next if !defined $key;
+	    if ($accept_global_hash_directives{$key}) {
+		no strict 'refs';
+		${"layer_".$key}{$abk}{$val} = $vals->[0];
+	    } elsif ($accept_global_hashref_directives{$key}) {
+		no strict 'refs';
+		${$key}->{$abk."-".$val} = $vals->[0]; # XXX $abk-???
+	    }
 	}
     }
 }

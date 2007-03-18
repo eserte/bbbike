@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiMap.pm,v 1.7 2007/03/04 19:46:19 eserte Exp $
+# $Id: MultiMap.pm,v 1.8 2007/03/18 19:53:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -21,18 +21,13 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%images);
 
 sub register {
     _create_images();
-    $main::info_plugins{__PACKAGE__ . "_MultiMap"} =
-	{ name => "MultiMap",
-	  callback => sub { showmap(@_) },
-	  callback_3_std => sub { showmap_url(@_) },
-	  ($images{MultiMap} ? (icon => $images{MultiMap}) : ()),
-	};
+    # this order will be reflected in show_info
     $main::info_plugins{__PACKAGE__ . "_GoYellow"} =
 	{ name => "GoYellow",
 	  callback => sub { showmap_goyellow(@_) },
@@ -50,6 +45,18 @@ sub register {
 	  callback => sub { showmap_clickroute(@_) },
 	  callback_3_std => sub { showmap_url_clickroute(@_) },
 	  ($images{ClickRoute} ? (icon => $images{ClickRoute}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . "_OpenStreetMap"} =
+	{ name => "OpenStreetMap",
+	  callback => sub { showmap_openstreetmap(@_) },
+	  callback_3_std => sub { showmap_url_openstreetmap(@_) },
+	  ($images{OpenStreetMap} ? (icon => $images{OpenStreetMap}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . "_MultiMap"} =
+	{ name => "MultiMap",
+	  callback => sub { showmap(@_) },
+	  callback_3_std => sub { showmap_url(@_) },
+	  ($images{MultiMap} ? (icon => $images{MultiMap}) : ()),
 	};
 }
 
@@ -115,6 +122,39 @@ EOF
     }
 
     # XXX no image for clickroute.de yet
+
+    if (!defined $images{OpenStreetMap}) {
+	# Fetched http://www.openstreetmap.org/images/mag_map.svg
+	# and converted using
+	#   convert -geometry 16x16 mag_map.svg mag_map_16x16.gif
+	#   mmencode -b /tmp/mag_map_16x16.gif
+	$images{OpenStreetMap} = $main::top->Photo
+	    (-format => 'gif',
+	     -data => <<EOF);
+R0lGODlhEAAQAPcAACs/GzIzMDM1Mjw/OEk+MDZRJThSIj9eJzxDNEdCNEBJOkRkK0lkM01q
+Ok9tOE1vOVFmPlR6NzdMQDpXRTJLVT5ZakhJRkpTQE5XQ1RfR19aRlBRT0xcWl1RVlVZUEtt
+R1ZvRl1hS1lkTVxlTlltSFxpTVhxQll5Ql18RFt7SltoUVxqUW1lUWFvVWJuVWNxV2RyWWZz
+XmZ2XG10XnxyWENfdVhxbG17YG5+Y2R4anF3Ymd/dmKBWXmeV3SQW3eNY3aDa3mGa3qJa3uN
+aXmIbnuObn6HdH6Odn+Sco2EZouHc4aOdIOUdYufd4OVeoyceZ+XdYajbI3HXafeeJGMi5eZ
+iJOjhZCmhJ+hg5qkjZmpiJ+vjZunkJ6pkbKziqWimKOpnKSqnaSrn6ampqysrKezpbGxsbq7
+t7q8uMaqhcqpkM28kM+9ktK8kOOoiOO4jqDBgbPbjq3Cla/Blq3DnbjEnbXLnbvMnbjRnrfP
+obzPorPDqcjBl8HNndbCldTFmObEl+LNn9XKptfOqMrUoM/Uo8DZo8HZpsfap8PUq8HZqcPc
+rdTXpdDYp9jQqtDdqsHbsMLbssbfsd7esObQoOnTo+ferMPjoMjgrMzkr9Hhrczyp87xq8ni
+s83lsMvltM/osc7otNPmsdDptNDptd/pst7stdjqvdf0td7wudz2vd75v+Xir+TmsePntOHs
+tuLwuc7OztLS0tTU09fX19bxwNvywtr2xN36wd/7weH7wevq6+zs7O/v8PHw8f38/QAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAAIf4yIENyZWF0ZWQgd2l0aCBJbmtz
+Y2FwZSAoaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvKSAALAAAAAAQABAAAAj+AHnR6vWr4C9e
+smTtikVmjJmERrp8OYOmjJUoQTwIsLAhwABeXUz5sTMnzhQ4LjIoWEFixIVfYERVckVqkxQG
+GW7gOOGjyZNfZ/K0YhUKVQ8DDyCAePDiCJNfaOb8eXTIkAkACwoUWNBAxo1fYhhZwoUJT4qs
+FCZEQOFChi8upSi9ynSJB4IPNSqkQDGEyKwtuGABIsTpCocdOWwU+YHkiCwtngqt6aNpjgoM
+IlS0uAGECK8stlK1SaOmChARCETICNLiBUxJumDpodLBoogEGlSEIACVTq1bkfYoWeIEio4Z
+LGgkgTrnkydFi/hUqdNmkR4veDKB9aRLFaJGgmwcZQp0ShcmUqt8dcGlSxejN24GJRpUSpcn
+VboCAgA7
+EOF
+	}
 }
 
 ######################################################################
@@ -212,6 +252,26 @@ sub showmap_url_clickroute {
 sub showmap_clickroute {
     my(%args) = @_;
     my $url = showmap_url_clickroute(%args);
+    start_browser($url);
+}
+
+######################################################################
+# OpenStreetMap
+
+sub showmap_url_openstreetmap {
+    my(%args) = @_;
+
+    my $px = $args{px};
+    my $py = $args{py};
+
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "http://www.openstreetmap.org/index.html?lat=%s&lon=%s&zoom=%d",
+	$py, $px, $scale;
+}
+
+sub showmap_openstreetmap {
+    my(%args) = @_;
+    my $url = showmap_url_openstreetmap(%args);
     start_browser($url);
 }
 

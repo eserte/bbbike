@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_setcoord.cgi,v 1.11 2005/06/15 20:46:23 eserte Exp $
+# $Id: mapserver_setcoord.cgi,v 1.12 2007/03/18 18:45:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,6 +14,7 @@
 #
 
 use CGI qw(:standard -oldstyle_urls);
+use CGI::Carp;
 
 use strict;
 use vars qw($mapserver_prog_url);

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.45 2007/01/23 22:56:28 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.46 2007/03/18 18:47:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.46 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -65,11 +65,16 @@ use vars qw(
      @wetter_dir $wetter_dir %wetter_zuordnung %wetter_name
      $x11 $special_edit $edit_mode $edit_mode_flag $edit_normal_mode
      $customchoosecmd $b2m_customcmd
-     %line_width %line_length %line_dash %category_dash %line_arrow
+     %layer_line_width %line_width %layer_line_length %line_length
+     %layer_line_dash %line_dash %category_dash %line_arrow %layer_line_arrow
      $default_line_width %line_shorten
-     %category_size %outline_color %category_color %category_stipple
+     %layer_category_size %category_size %outline_color
+     %layer_category_color %category_color
+     %layer_category_stipple %category_stipple
      %str_color %p_color %p_width
-     %category_font_color %category_font %category_width %category_image
+     %category_font_color %category_font
+     %layer_category_width %category_width
+     %layer_category_image %category_image
      %layer_active_color %layer_pre_enter_command %layer_post_enter_command
      %layer_pre_leave_command %layer_post_leave_command
      $crossings $all_outline %str_attrib %p_attrib %category_attrib
@@ -250,6 +255,10 @@ use enum qw(:B2M_
 
 # Attribute description field indexes
 use enum qw(:ATTRIB_ SINGULAR PLURAL LINES LONG);
+
+if (eval { require Tie::IxHash; 1 }) {
+    tie %info_plugins, 'Tie::IxHash' if not tied %info_plugins;
+}
 
 1;
 

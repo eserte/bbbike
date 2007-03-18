@@ -1,0 +1,140 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: coordssession2bbd,v 1.4 2007/03/18 19:52:02 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2007 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use Safe;
+use Getopt::Long;
+
+my $do_cumulated;
+my $do_cumulated_per_dir;
+my $do_start_goal;
+
+my $ignore_test_points;
+
+our %start; # our because of soft references
+our %goal;
+my %seen;
+
+# This list build with:
+#     make test on bbbike
+#     cd /tmp/coordssession
+#     perl -le 'for (<*>) { $x = do $_; @c = split /\!/, $x->{routestringrep}; print $c[0]; print $c[-1] }'|sort -u
+#
+my %test_start_goal = map {($_,1)}
+    qw(
+	  -11240,-2525
+	  -11831,-70
+	  -12493,-1896
+	  -13556,-1140
+	  -14355,-606
+	  -3360,2917
+	  10059,10147
+	  11016,9599
+	  1381,11335
+	  14395,11753
+	  14598,11245
+	  14752,11041
+	  14794,10844
+	  14798,10985
+	  16861,5935
+	  17210,6303
+	  26615,14054
+	  27342,-3023
+	  8982,8781
+	  9203,13463
+	  9222,8787
+	  9509,10391
+     );
+
+GetOptions("cumulated!" => \$do_cumulated,
+	   "cumulated-per-dir!" => \$do_cumulated_per_dir,
+	   "start-goal!" => \$do_start_goal,
+	   "ignore-test-points!" => \$ignore_test_points,
+	  )
+    or die "usage: $0 [-cumulated | -cumulated-per-dir | -start-goal]
+	[-ignore-test-points]
+	[/path/to/coordssessiondir]";
+
+my $dir = shift || "/home/e/eserte/www/log/bbbike-sessions/coordssession";
+my $cpt = Safe->new;
+opendir my $DIR, $dir
+    or die $!;
+my $count = 0;
+while(my $file = readdir $DIR) {
+    my $path = "$dir/$file";
+    next if !-f $path;
+    $count++;
+    my $data = $cpt->rdo($path);
+    if (UNIVERSAL::isa($data, "HASH") && $data->{routestringrep}) {
+	(my $coords = $data->{routestringrep}) =~ s{!}{ }g;
+	if ($do_cumulated || $do_cumulated_per_dir) {
+	    my @coords = split / /, $coords;
+	    for my $i (1 .. $#coords) {
+		if ($do_cumulated_per_dir) {
+		    $seen{$coords[$i-1]}{$coords[$i]}++;
+		} else {
+		    if ($seen{$coords[$i-1]}{$coords[$i]}) {
+			$seen{$coords[$i-1]}{$coords[$i]}++;
+		    } else {
+			$seen{$coords[$i]}{$coords[$i-1]}++;
+		    }
+		}
+	    }
+	} elsif ($do_start_goal) {
+	    my @coords = split / /, $coords;
+	    $start{$coords[0]}++;
+	    $goal{$coords[-1]}++;
+	} else {
+	    print "$data->{date} $data->{remote_ip}\tX $coords\n";
+	}
+    }
+}
+
+if ($do_cumulated || $do_cumulated_per_dir) {
+    while(my($k1,$v1) = each %seen) {
+	while(my($k2,$v2) = each %$v1) {
+	    if ($do_cumulated_per_dir) {
+		print "$v2\tX; $k1 $k2\n";
+	    } else {
+		print "$v2\tX $k1 $k2\n";
+	    }
+	}
+    }
+} elsif ($do_start_goal) {
+    my $max_width = 20;
+    my $logarithmic = 1.5;
+    for my $width (1..$max_width) {
+	$width = int(log($width)/log($logarithmic));
+	$width = 1 if ($width < 1);
+	my $display_width = 3+int(($max_width-3)/(13-1)*$width); # 1..13 -> 3..20
+	print "#: category_width.w$width: $display_width\n";
+    }
+    print "#:\n";
+    for my $type ('start', 'goal') {
+	no strict 'refs';
+	my $start_or_goal = \%{$type};
+	#my $cat = $type eq 'start' ? '#008000' : '#800000';
+	while(my($point,$count) = each %$start_or_goal) {
+	    next if $ignore_test_points && $test_start_goal{$point};
+	    my $cat = int($count/10);
+	    if ($cat < 1) { $cat = 1 }
+	    elsif ($cat > $max_width) { $cat = $max_width }
+	    $cat = "w$cat";
+	    print "$count ($type)\t$cat $point\n";
+	}
+    }
+}
+
+__END__
