@@ -1484,6 +1484,8 @@ Heinrich-Laehr-Park: Parkweg	Q1 1527,574 1258,1674
 (Mauerweg Schönow): Asphalt mit Unebenheiten	Q1 123,3 118,407 -4,1133
 Sachtlebenstr.: mäßige Verbundsteinpflasterradwege, Fahrbahn mit Kopfsteinpflaster	Q1 262,119 271,21
 Sachtlebenstr.: Kopfsteinpflaster	Q2 271,21 292,-36
+Sachtlebenstr.: mäßige Verbundsteinpflasterradwege, Fahrbahn mit Kopfsteinpflaster	Q1 262,119 275,228
+Sachtlebenstr.: mäßige Radwege, Fahrbahn asphaltiert	Q0 275,228 286,452 254,792 230,899 150,1251 90,1311
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 364,4829 319,4906 168,5092 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2240,6904 2116,6861 2054,6840 1975,6818
@@ -1536,6 +1538,7 @@ Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 Eulerstr.: Asphalt	Q0 9268,16228 9336,16302 9498,16480
 Boizenburger Str.: guter Asphalt	Q0 22310,12829 22310,12637 22309,12350 22385,12268
+Montanstr.: guter Beton	Q0 6792,19733 6680,19098
 Gehringstr.: guter Asphalt	Q0 14900,17423 14673,17454 14434,17500 14168,17522 14044,17519
 Bergener Str.: gutes Kopfsteinpflaster	Q1 10370,16516 10382,16661
 Lacknerstr.: guter Beton	Q0 6311,4319 6416,4452
@@ -1748,10 +1751,13 @@ Mellenseestr.: Beton	Q0 17523,9886 17618,9887 17958,10012
 Carnotstr.: Asphalt	Q0 4806,12902 4678,12938
 Pintschstr.: Kopfsteinpflaster	Q2 13438,12965 13342,13185
 Guineastr.: Kopfsteinpflaster	Q2 6431,15700 6282,15830 6138,15963 5988,16099
-Troppauer Str.: Kopfsteinpflaster	Q2 2297,3322 2684,3520
+Troppauer Str.: Kopfsteinpflaster	Q2 2297,3322 2400,3375 2684,3520
 Jägerndorfer Zeile: asphaltiert	Q0 2746,3699 2712,3602 2684,3520
-Jägerndorfer Zeile: Kopfsteinpflaster	Q2 2684,3520 2640,3391 2207,2917
+Jägerndorfer Zeile: Kopfsteinpflaster	Q2 2684,3520 2640,3391 2518,3258 2207,2917
 Ellwanger Str.: mäßiges Kopfsteinpflaster	Q2 7450,4397 7382,4503 7324,4582 7166,4643
+Hünefeldzeile: Asphalt	Q0 7363,4700 7324,4582
+Hünefeldzeile: Kopfsteinpflaster	Q2 7324,4582 7282,4478 7254,4396
+Spindelmühler Weg: Kopfsteinpflaster	Q2 2400,3375 2518,3258 2701,3064
 Thurneysserstr.: Kopfsteinpflaster	Q2 8582,16052 8481,16136 8389,16214
 Dievenowstr.: Asphalt	Q0 3206,7109 3189,7249 3208,7328 3225,7390
 Borkumer Str.: Asphalt	Q0 3056,7095 3094,7111 3206,7109 3302,7092 3382,7074 3488,7050 3585,7028
@@ -3062,7 +3068,10 @@ Edwin-C.-Diltz-Str.: guter Asphalt	Q0 -1384,2068 -1371,2268 -1401,2391
 Windsteiner Weg: guter Asphalt	Q0 914,598 856,546 790,527 712,517 635,511 585,505 501,501
 Schillerstr.: Kopfsteinpflaster	Q2 -1013,3804 -1086,3907 -1174,4029 -1230,4078 -1323,4111
 Scharfestr.: guter Asphalt	Q0 935,3430 758,3417 574,3388
-Anna-Seghers-Str.: schlechtes Kopfsteinpflaster	Q3 19884,4018 19821,4018 19795,3945 19790,3893 19791,3849 19864,3742 19933,3641 19966,3596 20012,3532 20089,3438 20113,3408 20166,3344 20315,3181
+Anna-Seghers-Str.: schlechtes Kopfsteinpflaster	Q3 19884,4018 19821,4018 19795,3945 19790,3893 19791,3849 19864,3742
+Anna-Seghers-Str.: asphaltiert	Q0 19864,3742 19933,3641
+Anna-Seghers-Str.: schlechtes Kopfsteinpflaster	Q3 19933,3641 19966,3596 20012,3532 20089,3438 20113,3408 20166,3344 20315,3181
+Söhtstr.: mäßiges Kopfsteinpflaster	Q2 4303,3260 4127,3430 4048,3355
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14202,13140 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934
@@ -3938,7 +3947,7 @@ Schöneicher Str. (Hohenschönhausen): Kopfsteinpflaster	Q2 16412,15559 16550,1550
 An den Haselbüschen: Verbundsteinpflaster	Q2 -1273,15539 -1291,15580 -1402,15592
 Raduhner Str.: Asphalt	Q1 17558,126 17351,451 17215,667
 Buttenstedtweg: Kopfsteinpflaster	Q2 25171,4757 25164,4706
-Dürerstr.: Asphalt	Q1 4573,3862 4487,3802 4275,3652 4132,3552 3943,3420 3757,3284
+Dürerstr.: Asphalt	Q1 4573,3862 4487,3802 4275,3652 4132,3552 3959,3444 3757,3284
 Nelly-Sachs-Str.: Gehwegplatten	Q0 23993,14797 24253,14888 24349,14922
 Am Waldidyll: Beton	Q1 2390,22573 2384,22689 2418,22878
 Pannwitzstr.: Asphalt mit vielen Schlaglöchern	Q2 4276,19086 4478,19116 4619,19267 4705,19425 4753,19728 4750,19881 4728,20003

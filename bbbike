@@ -12649,7 +12649,7 @@ sub show_info {
 	    $linkcount++;
 	}
 
-	for my $key (sort keys %info_plugins) {
+	for my $key (keys %info_plugins) {
 	    my $plugin = $info_plugins{$key};
 
 	    my @args = (coords => $real_coords,

@@ -2657,13 +2657,13 @@ userdel	q4 16958,11778 16821,11743
 userdel	q4 16821,11743 16786,11668
 EOF
      },
-     { from  => 1139555958, # 2006-02-10 08:19
-       until => 1191189600, # 2007-10-01 00:00
-       text  => 'Florastr. (Pankow) Berliner Str. in Richtung Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis September 2007)',
-       type  => 'handicap',
-       source_id => 'IM_002176',
+     { from  => 1174341828, # 2007-03-19 23:03
+       until => 1174604400, # 2007-03-23 00:00
+       text  => 'Florastr. (Pankow) in beiden Richtungen, zwischen Berliner Str. und Mühlenstr. Baustelle, Straße vollständig gesperrt (bis 22.03.07)',
+       type  => 'gesperrt',
+       source_id => 'IM_005006',
        data  => <<EOF,
-userdel	q4::inwork; 10459,17754 10548,17817 10722,17940 10846,17992
+userdel	2 10459,17754 10548,17817 10722,17940 10846,17992
 EOF
      },
      { from  => 1127508095, # 2005-09-23 22:41
@@ -7360,7 +7360,7 @@ userdel	2::temp 8063,12182 7816,12150 7383,12095 6828,12031
 EOF
      },
      { from  => 1174115692, # 2007-03-17 08:14
-       until => 1174345200, # 2007-03-20 00:00
+       until => 1174287358, # 1174345200 2007-03-20 00:00
        text  => 'Bahnhofstr. (Köpenick) in beiden Richtungen in Höhe der Bahnhofsbrücke Brückenarbeiten, Straße vollständig gesperrt, eine Umleitung ist eingerichtet (bis 19.03.2007 04 Uhr)',
        type  => 'gesperrt',
        source_id => 'IM_004990',

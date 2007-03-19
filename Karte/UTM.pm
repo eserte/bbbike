@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: UTM.pm,v 1.8 2003/02/06 21:53:01 eserte Exp $
+# $Id: UTM.pm,v 1.9 2007/03/19 21:55:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -604,6 +604,6 @@ foreach my $ref (\$lat, \$long) {
     }
 }
 
-warn join " ", Karte::UTM::DegreesToUTM($lat, $long), "\n";
+print join " ", Karte::UTM::DegreesToUTM($lat, $long), "\n";
 
 __END__

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.28 2007/03/18 18:44:51 eserte Exp $
+# $Id: mapserver_address.cgi,v 1.29 2007/03/19 21:35:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -476,25 +476,10 @@ sub redirect_to_ms {
     $ms->start_mapserver(%args);
 }
 
-# values from ..../data/Makefile
 sub scope {
     my($x,$y) = @_;
-    my @scopes = ([-15700,31300,37300,-8800],
-		  [-80800,81600,108200,-86200],
-		 );
-    for my $i (0 .. $#scopes) {
-	if ($x > $scopes[$i]->[0] &&
-	    $x < $scopes[$i]->[2] &&
-	    $y > $scopes[$i]->[3] &&
-	    $y < $scopes[$i]->[1]) {
-	    if ($i == 0) {
-		return "city";
-	    } else {
-		return "region";
-	    }
-	}
-    }
-    "wideregion";
+    require BBBikeMapserver;
+    BBBikeMapserver->narrowest_scope($x,$y);
 }
 
 sub file_to_label {

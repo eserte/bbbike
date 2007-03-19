@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.32 2007/03/04 19:58:50 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.33 2007/03/19 21:36:21 eserte Exp $
 #
 
 .ifndef COMMENTS_PARTIAL
@@ -25,6 +25,11 @@ MAPSERVER_BIN_DIR?=	/usr/local/bin
 MAPSERVER_BIN_DIR?=	/usr/local/src/work/mapserver
 .endif
 SHPTREE=		${MAPSERVER_BIN_DIR}/shptree
+
+BBOX_REGION!=	perl -I.. -MBBBikeMapserver -e 'print BBBikeMapserver->get_bbox_string_for_scope("region")'
+BBOX_CITY!=	perl -I.. -MBBBikeMapserver -e 'print BBBikeMapserver->get_bbox_string_for_scope("city")'
+BBOX_INNERCITY!=perl -I.. -MBBBikeMapserver -e 'print BBBikeMapserver->get_bbox_string_for_scope("innercity")'
+BBOX_POTSDAM!=	perl -I.. -MBBBikeMapserver -e 'print BBBikeMapserver->get_bbox_string_for_scope("potsdam")'
 
 mapfiles:	mapfiles-without-reference-maps mapfiles-reference-maps
 
@@ -75,7 +80,7 @@ $(MAPFILES_IMG_DIR)/reference.png: strassen landstrassen berlin deutschland orte
 	    -minplacecat 5 \
 	    -o $@~ -dimfile $(MAPFILES_IMG_DIR)/reference.dim \
 	    -nodrawscalebar -background \#e0e0e0 \
-	    -bbox -80800,81600,108200,-86200 -fontsizescale 0.8 \
+	    -bbox $(BBOX_REGION) -fontsizescale 0.8 \
 	    -customplaces "Berlin;Potsdam,-anchor,nw;Brandenburg,-anchor,e;Eberswalde;Frankfurt,-anchor,e;Dessau;Cottbus,-anchor,e;Neuruppin;Jüterbog;Guben,-anchor,e;Nauen,-anchor,e;Schwedt,-anchor,nc;Belzig;Bernau;Rheinsberg;Pritzwalk;Oranienburg,-anchor,e"
 	mv $@~ $@
 	perl -e '$$draw=do "$(MAPFILES_IMG_DIR)/reference.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn "Bbox of reference.png is " . join(" ", map { int } $$sub->(0,0), $$sub->($(REFWIDTH)-1,$(REFHEIGHT)-1)) . "\n";'
@@ -91,7 +96,7 @@ $(MAPFILES_IMG_DIR)/reference-b.png: strassen landstrassen berlin potsdam orte o
 	    -minplacecat 4 \
 	    -o $@~ -dimfile $(MAPFILES_IMG_DIR)/reference-b.dim \
 	    -nodrawscalebar -background \#e0e0e0 \
-	    -bbox -15700,31300,37300,-8800 -fontsizescale 0.8 \
+	    -bbox $(BBOX_CITY) -fontsizescale 0.8 \
 	    -customplaces "Potsdam;Bernau;Oranienburg;Königs Wusterhausen;Zossen"
 	mv $@~ $@
 	perl -e '$$draw=do "$(MAPFILES_IMG_DIR)/reference-b.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn "Bbox of reference-b.png is " . join(" ", map { int } $$sub->(0,0), $$sub->($(REFWIDTH)-1,$(REFHEIGHT)-1)) . "\n";'
@@ -106,7 +111,7 @@ $(MAPFILES_IMG_DIR)/reference-inner-b.png: strassen berlin wasserstrassen sbahn 
 	    -drawtypes str,wasser,sbahn,ubahn,flaechen,orte_city -restrict HH,H,B,W1,W2,Z,SA,UA,SB,UB \
 	    -o $@~ -dimfile $(MAPFILES_IMG_DIR)/reference-inner-b.dim \
 	    -nodrawscalebar -background \#e0e0e0 \
-	    -bbox 1887,16087,15337,6525 -fontsizescale 0.8
+	    -bbox $(BBOX_INNERCITY) -fontsizescale 0.8
 	mv $@~ $@
 	perl -e '$$draw=do "$(MAPFILES_IMG_DIR)/reference-inner-b.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn "Bbox of reference-inner-b.png is " . join(" ", map { int } $$sub->(0,0), $$sub->($(REFWIDTH)-1,$(REFHEIGHT)-1)) . "\n";'
 	chmod ugo+r $@
@@ -135,7 +140,7 @@ $(MAPFILES_IMG_DIR)/reference-p.png: strassen landstrassen berlin orte wasserstr
 	    -scope region \
 	    -drawtypes str,wasser,berlin,ort,rbahn -restrict B,HH,H,W1,W2,Z,RA,RB,RC,R \
 	    -minplacecat 0 \
-	    -bbox -17562,2587,-7200,-4800 \
+	    -bbox $(BBOX_POTSDAM) \
 	    -o $@~ -dimfile $(MAPFILES_IMG_DIR)/reference-p.dim \
 	    -nodrawscalebar -background \#e0e0e0 \
 	    -fontsizescale 0.8

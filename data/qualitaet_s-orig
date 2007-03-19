@@ -1621,6 +1621,10 @@ Heinrich-Laehr-Park: Parkweg	Q1 1527,574 1258,1674
 (Mauerweg Schönow): Asphalt mit Unebenheiten	Q1 123,3 118,407 -4,1133
 Sachtlebenstr.: mäßige Verbundsteinpflasterradwege, Fahrbahn mit Kopfsteinpflaster	Q1 262,119 271,21
 Sachtlebenstr.: Kopfsteinpflaster	Q2 271,21 292,-36
+#: by: Sylke (oberwoehrmann): vvv
+Sachtlebenstr.: mäßige Verbundsteinpflasterradwege, Fahrbahn mit Kopfsteinpflaster	Q1 262,119 275,228
+Sachtlebenstr.: mäßige Radwege, Fahrbahn asphaltiert	Q0 275,228 286,452 254,792 230,899 150,1251 90,1311
+#: by: ^^^
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -1704,7 +1708,9 @@ Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068
 Eulerstr.: Asphalt	Q0 9268,16228 9336,16302 9498,16480
 #: by: jackie kaiser:
 Boizenburger Str.: guter Asphalt	Q0 22310,12829 22310,12637 22309,12350 22385,12268
+######################################################################
 #: by: anonymous vvv
+Montanstr.: guter Beton	Q0 6792,19733 6680,19098
 Gehringstr.: guter Asphalt	Q0 14900,17423 14673,17454 14434,17500 14168,17522 14044,17519
 Bergener Str.: gutes Kopfsteinpflaster	Q1 10370,16516 10382,16661
 Lacknerstr.: guter Beton	Q0 6311,4319 6416,4452
@@ -1990,10 +1996,13 @@ Pintschstr.: Kopfsteinpflaster	Q2 13438,12965 13342,13185
 #: by: Ramiro Gomez:
 Guineastr.: Kopfsteinpflaster	Q2 6431,15700 6282,15830 6138,15963 5988,16099
 #: by: Mick (christopher mack): vvv
-Troppauer Str.: Kopfsteinpflaster	Q2 2297,3322 2684,3520
+Troppauer Str.: Kopfsteinpflaster	Q2 2297,3322 2400,3375 2684,3520
 Jägerndorfer Zeile: asphaltiert	Q0 2746,3699 2712,3602 2684,3520
-Jägerndorfer Zeile: Kopfsteinpflaster	Q2 2684,3520 2640,3391 2207,2917
+Jägerndorfer Zeile: Kopfsteinpflaster	Q2 2684,3520 2640,3391 2518,3258 2207,2917
 Ellwanger Str.: mäßiges Kopfsteinpflaster	Q2 7450,4397 7382,4503 7324,4582 7166,4643
+Hünefeldzeile: Asphalt	Q0 7363,4700 7324,4582
+Hünefeldzeile: Kopfsteinpflaster	Q2 7324,4582 7282,4478 7254,4396
+Spindelmühler Weg: Kopfsteinpflaster	Q2 2400,3375 2518,3258 2701,3064
 #: by: ^^^
 #: by: Tabea Pohl:
 Thurneysserstr.: Kopfsteinpflaster	Q2 8582,16052 8481,16136 8389,16214
@@ -4357,8 +4366,13 @@ Windsteiner Weg: guter Asphalt	Q0 914,598 856,546 790,527 712,517 635,511 585,50
 Schillerstr.: Kopfsteinpflaster	Q2 -1013,3804 -1086,3907 -1174,4029 -1230,4078 -1323,4111
 #: by: friedolin Turowski:
 Scharfestr.: guter Asphalt	Q0 935,3430 758,3417 574,3388
-#: by: T. Kallwass:
-Anna-Seghers-Str.: schlechtes Kopfsteinpflaster	Q3 19884,4018 19821,4018 19795,3945 19790,3893 19791,3849 19864,3742 19933,3641 19966,3596 20012,3532 20089,3438 20113,3408 20166,3344 20315,3181
+#: by: T. Kallwass (gstk): vvv
+Anna-Seghers-Str.: schlechtes Kopfsteinpflaster	Q3 19884,4018 19821,4018 19795,3945 19790,3893 19791,3849 19864,3742
+Anna-Seghers-Str.: asphaltiert	Q0 19864,3742 19933,3641
+Anna-Seghers-Str.: schlechtes Kopfsteinpflaster	Q3 19933,3641 19966,3596 20012,3532 20089,3438 20113,3408 20166,3344 20315,3181
+#: by: ^^^
+#: by: Jana (stastny):
+Söhtstr.: mäßiges Kopfsteinpflaster	Q2 4303,3260 4127,3430 4048,3355
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14202,13140 14096,12827
@@ -5261,7 +5275,7 @@ Raduhner Str.: Asphalt	Q1 17558,126 17351,451 17215,667
 #: by: Alexandra Winkel [AM]
 Buttenstedtweg: Kopfsteinpflaster	Q2 25171,4757 25164,4706
 #: by: Wilhelm Walz [AM]
-Dürerstr.: Asphalt	Q1 4573,3862 4487,3802 4275,3652 4132,3552 3943,3420 3757,3284
+Dürerstr.: Asphalt	Q1 4573,3862 4487,3802 4275,3652 4132,3552 3959,3444 3757,3284
 #: by: Benno Koch [AM]
 Nelly-Sachs-Str.: Gehwegplatten	Q0 23993,14797 24253,14888 24349,14922
 #: by: Julie Wegner [AM]

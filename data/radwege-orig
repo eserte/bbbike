@@ -1,5 +1,5 @@
 #: title: Radwege in Berlin
-#: version: $Id: radwege-orig,v 4.145 2007/03/18 19:54:30 eserte Exp $
+#: version: $Id: radwege-orig,v 4.145 2007/03/18 19:54:30 eserte Exp eserte $
 #:
 # (für Radwege in Brandenburg siehe comments_cyclepath)
 	RW1;RW1 9227,8890 9235,9051
@@ -3940,6 +3940,8 @@ Ostpreußendamm: Gehwege sind für Radfahrer frei	RW1;RW1 4700,2662 4722,2771 4767
 Dahlemer Weg: Nebenstraße jenseits des Gleises mit unterschiedlicher Qualität (gut asphaltiert bis eng)	RW10;RW0 2076,2626 2049,2519 1945,2127 1873,1772 1769,1257 1643,633
 Leo-Baeck-Str./Gutzmannstr.: Radweg kaum zu erkennen	RW1;RW1 1576,1742 1258,1674 1080,1637 796,1567 653,1540 359,1470 150,1529
 	RW1;RW1 90,1311 -4,1133
-	RW9;RW1 271,21 262,119
+	RW9;RW1 271,21 262,119 275,228
+#: by: Sylke:
+	RW1;RW1 275,228 286,452 254,792 230,899 150,1251 90,1311
 #: by: Nagel, Isolde:
 	RW6;RW6 10578,1840 11031,1739 11136,1782 11205,1776

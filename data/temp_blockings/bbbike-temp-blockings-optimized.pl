@@ -3,13 +3,13 @@ $#temp_blocking = 327;
 push @temp_blocking,
 (
        {
-         'source_id' => 'IM_002176',
-         'until' => 1191189600,
-         'text' => 'Florastr. (Pankow) Berliner Str. in Richtung Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis September 2007)',
-         'from' => 1139555958,
-         'data' => 'userdel	q4::inwork; 10459,17754 10548,17817 10722,17940 10846,17992
+         'source_id' => 'IM_005006',
+         'until' => 1174604400,
+         'text' => 'Florastr. (Pankow) in beiden Richtungen, zwischen Berliner Str. und Mühlenstr. Baustelle, Straße vollständig gesperrt (bis 22.03.07)',
+         'from' => 1174341828,
+         'data' => 'userdel	2 10459,17754 10548,17817 10722,17940 10846,17992
 ',
-         'type' => 'handicap'
+         'type' => 'gesperrt'
        },
        undef,
        undef,
@@ -821,14 +821,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1174258800,
-         'text' => 'L 070 Luckenwalder Str. OD Dahme, Kno. Hauptstr. B102 Abrissarbeiten Vollsperrung 12.03.2007-18.03.2007 ',
-         'from' => 1173567600,
-         'data' => 'userdel	q4::inwork 13308,-59619 13008,-59164
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1174345200,
@@ -896,16 +889,6 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	q4::inwork 9091,12681 9209,12795
 ',
          'type' => 'handicap'
-       },
-       undef,
-       {
-         'source_id' => 'IM_004990',
-         'until' => 1174345200,
-         'text' => 'Bahnhofstr. (Köpenick) in beiden Richtungen in Höhe der Bahnhofsbrücke Brückenarbeiten, Straße vollständig gesperrt, eine Umleitung ist eingerichtet (bis 19.03.2007 04 Uhr)',
-         'from' => 1174115692,
-         'data' => 'userdel	2::inwork 22428,6063 22475,6151
-',
-         'type' => 'gesperrt'
        }
      
 );

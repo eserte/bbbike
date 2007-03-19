@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.34 2006/10/22 20:18:34 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.35 2007/03/19 21:35:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2005 Slaven Rezic. All rights reserved.
@@ -52,6 +52,35 @@ sub new_from_cgi {
 	$self->{CenterTo} = $q->param("center");
     }
     $self;
+}
+
+sub get_bbox_for_scope {
+    my($self, $scope) = @_;
+    my $bbox = {'region'    => [-80800,-86200,108200,81600],
+		'city'      => [-15700,-8800,37300,31300],
+		'innercity' => [1887,6525,15337,16087],
+		'potsdam'   => [-17562,-4800,-7200,2587],
+	       }->{$scope};
+    $bbox ? @$bbox : ();
+}
+
+sub get_bbox_string_for_scope {
+    my($self, $scope) = @_;
+    join(",", $self->get_bbox_for_scope($scope));
+}
+
+sub narrowest_scope {
+    my($self, $x0,$y0, $x1,$y1) = @_;
+    require VectorUtil;
+    for my $scope ("innercity", "potsdam", "city", "region") {
+	my @bbox = $self->get_bbox_for_scope($scope);
+	if (VectorUtil::point_in_grid($x0,$y0,@bbox) &&
+	    (!defined $x1 || VectorUtil::point_in_grid($x1,$y1,@bbox))
+	   ) {
+	    return $scope;
+	}
+    }
+    "wideregion";
 }
 
 sub set_coords {
@@ -149,6 +178,7 @@ sub scope_by_map {
 
 # -scope => city, region, wideregion, or all,...
 #   all,... means all scopes, but starting with the "..." scope
+#   also: narrowest, needs also -mapext or center/start point
 # -externshape => bool: use external shape files. Internal features cannot
 #   be queried with the map server, so generally better to set to true
 # -route => bool: draw route (see new_from_cgi)
@@ -177,6 +207,25 @@ sub start_mapserver {
 	@mapext = split /\s+/, $args{'-mapext'};
     }
     my $q = $self->{CGI}; # original CGI object
+
+    if (!@mapext) {
+	my($width, $height) = ($args{-width}||6000, $args{-height}||6000); # meters
+	my @args;
+	if (defined $args{-padx}) {
+	    push @args, -padx => $args{-padx};
+	}
+	if (defined $args{-pady}) {
+	    push @args, -pady => $args{-pady};
+	}
+	@mapext = $self->get_extents($width, $height, $args{-markerpoint}, @args);
+    }
+    $self->{MapExt} = \@mapext;
+
+    if ($args{-scope} =~ /narrowest/) {
+	my $scope = $self->narrowest_scope(@mapext);
+	$args{-scope} =~ s/narrowest/$scope/;
+    }
+
     if (!exists $args{-scope}) {
 	if ($pass && defined $q->param("map")) {
 	    $args{-scope} = scope_by_map($q->param("map"));
@@ -193,18 +242,6 @@ sub start_mapserver {
     # send Location:
     my $cgi_prog = $self->{MAPSERVER_PROG_RELURL};
     my $url = $self->{MAPSERVER_PROG_URL};
-    if (!@mapext) {
-	my($width, $height) = ($args{-width}||6000, $args{-height}||6000); # meters
-	my @args;
-	if (defined $args{-padx}) {
-	    push @args, -padx => $args{-padx};
-	}
-	if (defined $args{-pady}) {
-	    push @args, -pady => $args{-pady};
-	}
-	@mapext = $self->get_extents($width, $height, $args{-markerpoint}, @args);
-    }
-    $self->{MapExt} = \@mapext;
 
     my $q2 = CGI->new({});
     if ($pass) {
@@ -306,12 +343,13 @@ sub create_mapfile {
 	my @scopes;
 	my $preferred_scope;
 	if ($scope =~ /^all,(.*)/) {
-	    my $preferred_scope = $1;
+	    $preferred_scope = $1;
 	    @scopes = qw(city region wideregion innercity potsdam);
 	    for my $i (0 .. $#scopes) {
 		if ($scopes[$i] eq $preferred_scope) {
 		    splice @scopes, $i, 1;
-		    push @scopes, $preferred_scope;
+		    unshift @scopes, $preferred_scope;
+		    last;
 		}
 	    }
 	} else {
