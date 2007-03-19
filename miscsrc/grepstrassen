@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: grepstrassen,v 1.16 2006/10/21 20:45:30 eserte Exp $
+# $Id: grepstrassen,v 1.18 2007/03/19 23:31:08 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -23,7 +23,9 @@ my($v, $cat, $catrx, $name, $namerx, $section, $sectionrx, @directive_def, @dire
 my($minarea, $minlength);
 my $preserveglobaldirectives;
 my %special;
+my %special_init;
 my %special_end;
+my %special_data;
 my %type_s;
 GetOptions("v" => \$v,
 	   "cat=s" => \$cat,
@@ -35,8 +37,7 @@ GetOptions("v" => \$v,
 	   "directive=s" => \@directive_def,
 	   "special=s" => sub {
 	       my $type = $_[1];
-	       no strict 'refs';
-	       &{"init_" . $type}($type);
+	       $special_init{$type} = 1;
 	   },
 	   "adddirectives=s" => sub {
 	       my $type = $_[1];
@@ -80,6 +81,12 @@ my $datafile = shift || "-";
 
 my $s = Strassen->new($datafile, UseLocalDirectives => 1, PreserveLineInfo => 1);
 my $new_s = Strassen->new;
+
+for my $type (keys %special_init) {
+    no strict 'refs';
+    &{"init_" . $type}($type);
+}
+
 $s->init;
 my @errors;
 LOOP_STREETS: while(1) {
@@ -158,6 +165,8 @@ if ($preserveglobaldirectives) {
 # as a global directive.
 print "# filtered\n" . $new_s->as_string;
 
+######################################################################
+
 sub init_directive_handler {
     my $type = shift;
     $special{$type} = sub { special_directive_handler($type, @_) };
@@ -188,6 +197,65 @@ sub end_directive_handler {
     my($type) = @_;
     require File::Basename;
     $type_s{$type}->write("/tmp/" . $type . "_" . File::Basename::basename($datafile) . ".bbd");
+}
+
+######################################################################
+
+sub init_nextcheck {
+    my $type = shift;
+    no strict 'refs';
+    $special{$type} = \&{"special_" . $type};
+    my $check_frequency_days = 30;
+    my $glob_dir = $s->get_global_directives;
+    if ($glob_dir && $glob_dir->{check_frequency}) {
+	($check_frequency_days) = $glob_dir->{check_frequency}[0] =~ m{(\d+)};
+    }
+    $special_data{$type}{check_frequency_days} = $check_frequency_days;
+    require POSIX;
+    $special_data{$type}{today} = POSIX::strftime("%Y-%m-%d", localtime);
+    $type_s{$type} = Strassen->new;
+    $special_end{$type} = sub { end_nextcheck(@_) };
+    require Date::Calc;
+    require Storable;
+}
+
+sub special_nextcheck {
+    my($r, $dir) = @_;
+    if (exists $dir->{last_checked}) {
+	my($y,$m,$d) = $dir->{last_checked}[0] =~ m{(\d{4})-(\d{2})-(\d{2})};
+	if (!$y) {
+	    ($y,$m) = $dir->{last_checked}[0] =~ m{(\d{4})-(\d{2})};
+	    $d=1;
+	}
+	return if (!$y);
+	($y,$m,$d) = Date::Calc::Add_Delta_Days($y,$m,$d, $special_data{nextcheck}{check_frequency_days});
+	my $date = sprintf "%04d-%02d-%02d", $y,$m,$d;
+	if ($date lt $special_data{nextcheck}{today}) {
+	    my $new_r = Storable::dclone($r);
+	    $new_r->[Strassen::CAT] = "?";
+	    $type_s{nextcheck}->push($new_r);
+	    $type_s{nextcheck}->set_directive_for_current($dir);
+	}
+    } elsif (exists $dir->{next_check}) {
+	my($y,$m,$d) = $dir->{next_check}[0] =~ m{(\d{4})-(\d{2})-(\d{2})};
+	if (!$y) {
+	    ($y,$m) = $dir->{next_check}[0] =~ m{(\d{4})-(\d{2})};
+	    $d=1;
+	}
+	return if (!$y);
+	my $date = sprintf "%04d-%02d-%02d", $y,$m,$d;
+	if ($date lt $special_data{nextcheck}{today}) {
+	    my $new_r = Storable::dclone($r);
+	    $new_r->[Strassen::CAT] = "?";
+	    $type_s{nextcheck}->push($new_r);
+	    $type_s{nextcheck}->set_directive_for_current($dir);
+	}
+    }
+}
+
+sub end_nextcheck {
+    require File::Basename;
+    $type_s{nextcheck}->write("/tmp/nextcheck.bbd");
 }
 
 ######################################################################

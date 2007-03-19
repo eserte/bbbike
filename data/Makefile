@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.130 2007/03/18 19:52:53 eserte Exp $
+# $Id: Makefile,v 2.131 2007/03/19 23:31:26 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -101,7 +101,9 @@ all:	targets check .modified .rsync_include make_misc
 # These targets have to be rebuild once a day
 .BEGIN:
 	@perl -e 'for (@ARGV) { do { unlink($$_) and warn "Removed $$_\n" } if (-M $$_ >= 1) }' \
-		.check_bbbike-temp-blockings-optimized .check_dates
+		.check_bbbike-temp-blockings-optimized \
+		.check_dates \
+		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd
 
 targets:	${TARGETS}
 
@@ -118,6 +120,8 @@ slow-checks:	check-categories \
 		persistent-tmp
 
 persistent-tmp:	${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
+		${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd \
+		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/strassen_in_planung.bbd \
 		${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt \
 		${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt \
@@ -665,6 +669,25 @@ ${PERSISTENTTMPDIR}/.XXX-$(i):	$(i)-orig
 	${GREPSTRASSEN} -adddirectives XXX ${DATADIR}/$(i)-orig > /dev/null
 	cp -f /tmp/XXX_$(i)-orig.bbd $@
 .endfor
+
+${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd:	\
+		ampeln-orig \
+		fragezeichen-orig \
+		gesperrt-orig \
+		qualitaet_s-orig \
+		qualitaet_l-orig \
+		handicap_s-orig \
+		handicap_l-orig
+	echo -n > ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+.for i in ampeln-orig fragezeichen-orig gesperrt-orig qualitaet_s-orig qualitaet_l-orig handicap_s-orig handicap_l-orig
+	echo "############################################################" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+	echo "# source: $(i)" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+	${GREPSTRASSEN} -directive last_checked~. -special nextcheck $(i) > /dev/null
+	cat /tmp/nextcheck.bbd >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+	${GREPSTRASSEN} -directive next_check~. -special nextcheck $(i) > /dev/null
+	cat /tmp/nextcheck.bbd >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+.endfor
+	touch ${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd
 
 ${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd:	fragezeichen-orig
 	cat fragezeichen-orig | ${GREPSTRASSEN} -sectionrx "projektierte Radstreifen" | ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@

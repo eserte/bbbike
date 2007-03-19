@@ -1,4 +1,5 @@
 #: title: Unbekannte Strecken
+#: check_frequency: 30d
 #:
 ######################################################################
 #
@@ -55,7 +56,7 @@ Linienstr.: Fahrradstraße geplant (nach der Sanierung)?	? 9903,13646 9944,13665 
 #: by: http://www.reinickendorf.de/index_6280_de.html
 Aroser Allee, Fertigstellung bis 2007-10-01	? 6741,18613 6702,18348 6671,18132 6676,18030 6710,17905 6761,17741 6893,17317 6942,17128
 #: section ^^^
-#: last_check: 2007-03-10
+#: last_checked: 2007-03-10
 Markgrafendamm: Radspuren in Vorbereitung	? 14564,10262 14608,10409 14641,10552
 #: section ^^^
 #
@@ -141,10 +142,8 @@ Katharina-Paulus-Str.?	?::inwork 7866,13009 7867,13106
 Katharina-Paulus-Str.???	?::inwork 7945,13107 7867,13106
 #: XXX ^^^
 Europaplatz: genaue Lage?	? 7814,13284
-#: last_checked: 2006-09-23
+#: last_checked: 2007-03-11
 Alexanderufer: in Bau	?::inwork 8257,13049 8312,13296 8369,13425 8337,13541
-#: last_checked: 2005-05-01
-Umgehungsstraße Michendorf: noch in Bau, genaue Lage, wird sie für Radfahrer gesperrt sein?	?::inwork -14949,-12785 -13597,-10497 -14149,-9371
 #: by: Message-ID: <Xns96A387773A8B04usenet@krickstadt.de>:
 #: by: http://archiv.tagesspiegel.de/archiv/30.07.2005/1962466.asp:
 Spree: ist dieser Spreearm wiederhergestellt worden?	? 43394,-2017 43296,-2181 43357,-2501 43220,-2544 43129,-2437 43162,-2242 43053,-2114
@@ -1317,7 +1316,7 @@ Dathepromenade: Qualität? Viele Fußgänger? Kann die Straße "Am Tierpark" überque
 Margaretenstr. (Lichtenberg): Qualität (wahrscheinlich Asphalt)?	? 17070,11375 16936,11409 16848,11421 16723,11470 16639,11496
 #: by: http://www.berlin.de/ba-mitte/index_9634_hr.html: fertig?
 #: last_checked: 2006-05-21
-Pankeweg: Bauarbeiten an der Soldiener Str. mittlerweile abgeschlossen?	? 8904,17059 8836,16867
+Pankeweg: Bauarbeiten an der Soldiner Str. mittlerweile abgeschlossen?	? 8904,17059 8836,16867
 Wongrowitzer Steig: Qualität (laut ADFC-Karte gut geeignet)?	? 22785,6984 22659,7015 22474,7065 22240,7122 22132,7148 22035,7146
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20050810.1640.28623.html:
 Fürstenwalder Damm: existieren zwischen Stillerzeile und Müggelseedamm Radwege?	? 25039,5766 23950,5342

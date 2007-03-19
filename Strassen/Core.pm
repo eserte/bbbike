@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.74 2007/03/17 20:54:52 eserte Exp $
+# $Id: Core.pm,v 1.75 2007/03/19 23:01:20 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.74 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.75 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -582,6 +582,12 @@ sub get_directive {
     $pos = $self->{Pos} if !defined $pos;
     return {} if !$self->{Directives};
     $self->{Directives}[$pos] || {};
+}
+
+sub set_directive_for_current {
+    my($self, $directives) = @_;
+    my $pos = $#{ $self->{Data} };
+    $self->{Directives}[$pos] = $directives;
 }
 
 sub get_directive_for_iterator {
