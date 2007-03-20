@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.131 2007/03/19 23:31:26 eserte Exp $
+# $Id: Makefile,v 2.133 2007/03/20 22:13:33 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -292,7 +292,7 @@ SBAHN_CATEGORIES=	SA SB SC S0 SBau
 
 sbahn: sbahn-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) sbahn-orig > /tmp/sbahn
+	$(CONVERT_ORIG) -strip-future-categories sbahn-orig > /tmp/sbahn
 .for cat in $(SBAHN_CATEGORIES)
 	$(GREPSTRASSEN) -cat $(cat) /tmp/sbahn | $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/sbahn-$(cat)
 .endfor
@@ -316,7 +316,7 @@ RBAHN_CATEGORIES=	RA RB RC R R0 RBau RG RP
 
 rbahn: rbahn-orig Makefile
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) rbahn-orig > /tmp/rbahn
+	$(CONVERT_ORIG) -strip-future-categories rbahn-orig > /tmp/rbahn
 .for cat in $(RBAHN_CATEGORIES)
 	$(GREPSTRASSEN) -cat $(cat) /tmp/rbahn | $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/rbahn-$(cat)
 .endfor
@@ -332,7 +332,7 @@ rbahnhof:	rbahnhof-orig
 
 ubahn: ubahn-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) ubahn-orig > ubahn~
+	$(CONVERT_ORIG) -strip-future-categories ubahn-orig > ubahn~
 	mv ubahn~ ubahn
 	-@$(READONLY) $@
 

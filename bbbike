@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.295 2007/03/18 18:47:01 eserte Exp eserte $
+# $Id: bbbike,v 3.296 2007/03/20 22:14:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -205,7 +205,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.295 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.296 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -6124,7 +6124,9 @@ EOF
     . $parse_coords_code . <<'EOF';
 	    my($x, $y) = transpose($xx, $yy);
 
-	    if (defined $category_image{$category}) {
+	    if (defined $layer_category_image{$abk}{$category}) {
+		$category = "IMG:$layer_category_image{$abk}{$category}";
+	    } elsif (defined $category_image{$category}) {
 		$category = "IMG:$category_image{$category}";
 	    }
 	    if ($category =~ /^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/) {

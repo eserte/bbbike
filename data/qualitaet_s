@@ -195,7 +195,8 @@ Straﬂe 59: fester Sandweg, sehr uneben	Q2 12484,20996 12524,20863
 Charlottenburger Str.: m‰ﬂiger Asphalt	Q1 13727,16085 13455,16192 13404,16212 13286,16267 13045,16368 12804,16480 12642,16555 12564,16591 12353,16687 12237,16741
 Engeldamm: Asphalt	Q0 12026,11348 11921,11185 11798,11128 11665,11118 11473,11180
 Ritterstr.: Kopfsteinpflaster	Q2 10572,10773 10498,10806 10389,10855 10094,10994
-Adalbertstr.: Kopfsteinpflaster	Q2 11665,11118 11726,11265 11807,11479
+Adalbertstr.: Kopfsteinpflaster, Asphaltstreifen neben den parkenden Autos	Q1; 11665,11118 11726,11265 11807,11479
+Adalbertstr.: Kopfsteinpflaster	Q2; 11807,11479 11726,11265 11665,11118
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur m‰ﬂiges Verbundsteinpflaster	Q2 11607,7145 11616,7089 11652,6879
 Friedelstr.: m‰ﬂiges, teilweise auch schlechtes Kopfsteinpflaster (max. 16 km/h) 	Q2 12066,9558 12047,9429 12074,9217 12078,9065
 Friedelstr.: m‰ﬂiges Kopfsteinpflaster	Q2 12093,9783 12081,9680 12066,9558
@@ -651,7 +652,7 @@ Dornacher Str.: holpriger Fahrweg	Q2 20949,10145 20947,9999 20948,9847
 Buchenhainer Str.: holpriger Fahrweg	Q2 21164,8243 21329,8222
 Nitzwalder Str.: holpriger Fahrweg	Q2 21329,8222 21529,8019 21598,7922
 Kaulsdorfer Str.: m‰ﬂiger Asphalt	Q1 22049,7085 22076,6956 22186,6672 22279,6470 22324,6397
-Marksburgstr.: m‰ﬂiger Asphalt	Q1 18809,9133 18697,9153 18586,9172 18319,9218
+Marksburgstr.: m‰ﬂiger Asphalt	Q1 18809,9133 18697,9153 18586,9172 18511,9185 18319,9218
 Walk¸renstr.: Kopfsteinpflaster	Q2 18069,9289 18006,9335 17735,9533
 Tannh‰userstr.: Kopfsteinpflaster	Q2 18095,9665 17898,9593 17735,9533 17549,9529
 (am Schloﬂ Schˆnhausen): Kopfsteinpflaster	Q1 10308,19297 10350,19182 10390,19069
@@ -1538,6 +1539,7 @@ Wˆhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 Eulerstr.: Asphalt	Q0 9268,16228 9336,16302 9498,16480
 Boizenburger Str.: guter Asphalt	Q0 22310,12829 22310,12637 22309,12350 22385,12268
+Arkonastr.: schlechtes Kopfsteinpflaster	Q3 11021,17889 11049,17752 11057,17690
 Montanstr.: guter Beton	Q0 6792,19733 6680,19098
 Gehringstr.: guter Asphalt	Q0 14900,17423 14673,17454 14434,17500 14168,17522 14044,17519
 Bergener Str.: gutes Kopfsteinpflaster	Q1 10370,16516 10382,16661
@@ -1911,7 +1913,7 @@ Undinestr.: Kopfsteinpflaster	Q2 4788,4074 4681,4537 4568,4789 4517,4853
 Vogelbeerstr.: m‰ﬂiges Kopfsteinpflaster	Q2 19693,4130 19896,4098 19996,4143
 Florian-Geyer-Str.: m‰ﬂiger Asphalt	Q1 19896,4098 19884,4018 19905,3973 19924,3939 19954,3887
 Florian-Geyer-Str.: m‰ﬂiges Kopfsteinpflaster	Q2 19954,3887 20073,3734 20159,3623
-Borkumstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11425,17817 11297,17795 11217,17783 10956,17735 10871,17722
+Borkumstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11425,17817 11297,17795 11217,17783 11049,17752 10956,17735 10871,17722
 Schmitzweg: m‰ﬂiger Asphalt, Schlaglˆcher	Q2 6004,19963 5920,19911 5763,19828 5849,19552 5914,19351
 Karl-Schrader-Str.: Asphalt	Q0 6851,9365 6862,9542
 J‰gerweg: Kopfsteinpflaster	Q2 -1333,22495 -1270,22720 -1299,22842
@@ -3072,6 +3074,7 @@ Anna-Seghers-Str.: schlechtes Kopfsteinpflaster	Q3 19884,4018 19821,4018 19795,3
 Anna-Seghers-Str.: asphaltiert	Q0 19864,3742 19933,3641
 Anna-Seghers-Str.: schlechtes Kopfsteinpflaster	Q3 19933,3641 19966,3596 20012,3532 20089,3438 20113,3408 20166,3344 20315,3181
 Sˆhtstr.: m‰ﬂiges Kopfsteinpflaster	Q2 4303,3260 4127,3430 4048,3355
+Junker-Jˆrg-Str.: m‰ﬂiges Kopfsteinpflaster	Q2 18447,8818 18471,8957 18511,9185 18545,9395
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14202,13140 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934

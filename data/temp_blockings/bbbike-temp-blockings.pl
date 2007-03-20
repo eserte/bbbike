@@ -7368,4 +7368,28 @@ EOF
 userdel	2::inwork 22428,6063 22475,6151
 EOF
      },
+     { from  => 1174518000, # 2007-03-22 00:00
+       until => 1174946400, # 2007-03-27 00:00
+       text  => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 23.03.2007-26.03.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 73204,97424 73017,97449 72745,97584
+EOF
+     },
+     { from  => 1174258800, # 2007-03-19 00:00
+       until => 1174777200, # 2007-03-25 00:00
+       text  => 'B 167 Marienwerderstr. OD Finowfurt, zw. Zum Krugacker u. Werbelliner Str. Fahrbahnsanierung Vollsperrung 20.03.2007-24.03.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 28589,49775 27634,49953
+EOF
+     },
+     { from  => 1174773600, # 2007-03-24 23:00
+       until => 1175032800, # 2007-03-28 00:00
+       text  => 'L 059 Stolzenhainer Str. Bahnübergang in der OD Prösen Gleisbauarbeiten Vollsperrung 26.03.2007-27.03.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 17465,-109257 17298,-109023
+EOF
+     },
     );

@@ -805,14 +805,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1174345200,
-         'text' => 'L 023 Storkow-Herzfelde Bahnübergang Fangschleuse Gleisbauarbeiten Vollsperrung 16.03.2007-19.03.2007 ',
-         'from' => 1173913200,
-         'data' => 'userdel	2::inwork 39225,1082 39259,612 39264,-832
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1183240800,
          'text' => 'L 035 Pieskower Chaussee OD Bad Saarow, zw. R.-Koch-Str. und Einfahrt Klinikum Straßenbauarbeiten Vollsperrung 19.03.2007-30.06.2007 ',
@@ -823,14 +816,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        },
        undef,
        undef,
-       {
-         'until' => 1174345200,
-         'text' => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 16.03.2007-19.03.2007 ',
-         'from' => 1173913200,
-         'data' => 'userdel	2::inwork 73204,97424 73017,97449 72745,97584
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Manteuffelstr. zwischen Skalitzer Str. und Naunynstr.: Einbahnstraßenregelung ',
@@ -889,6 +875,32 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	q4::inwork 9091,12681 9209,12795
 ',
          'type' => 'handicap'
+       },
+       undef,
+       undef,
+       {
+         'until' => 1174946400,
+         'text' => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 23.03.2007-26.03.2007 ',
+         'from' => 1174518000,
+         'data' => 'userdel	2::inwork 73204,97424 73017,97449 72745,97584
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1174777200,
+         'text' => 'B 167 Marienwerderstr. OD Finowfurt, zw. Zum Krugacker u. Werbelliner Str. Fahrbahnsanierung Vollsperrung 20.03.2007-24.03.2007 ',
+         'from' => 1174258800,
+         'data' => 'userdel	q4::inwork 28589,49775 27634,49953
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1175032800,
+         'text' => 'L 059 Stolzenhainer Str. Bahnübergang in der OD Prösen Gleisbauarbeiten Vollsperrung 26.03.2007-27.03.2007 ',
+         'from' => 1174773600,
+         'data' => 'userdel	2::inwork 17465,-109257 17298,-109023
+',
+         'type' => 'gesperrt'
        }
      
 );
