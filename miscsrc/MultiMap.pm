@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiMap.pm,v 1.8 2007/03/18 19:53:35 eserte Exp $
+# $Id: MultiMap.pm,v 1.9 2007/03/21 21:59:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%images);
 
@@ -57,6 +57,12 @@ sub register {
 	  callback => sub { showmap(@_) },
 	  callback_3_std => sub { showmap_url(@_) },
 	  ($images{MultiMap} ? (icon => $images{MultiMap}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . "_BvgStadtplan"} =
+	{ name => "BVG-Stadtplan",
+	  callback => sub { showmap_bvgstadtplan(@_) },
+	  callback_3_std => sub { showmap_url_bvgstadtplan(@_) },
+	  ($images{BvgStadtplan} ? (icon => $images{BvgStadtplan}) : ()),
 	};
 }
 
@@ -153,6 +159,29 @@ FCZEQOFChi8upSi9ynSJB4IPNSqkQDGEyKwtuGABIsTpCocdOWwU+YHkiCwtngqt6aNpjgoM
 IlS0uAGECK8stlK1SaOmChARCETICNLiBUxJumDpodLBoogEGlSEIACVTq1bkfYoWeIEio4Z
 LGgkgTrnkydFi/hUqdNmkR4veDKB9aRLFaJGgmwcZQp0ShcmUqt8dcGlSxejN24GJRpUSpcn
 VboCAgA7
+EOF
+	}
+
+    if (!defined $images{BvgStadtplan}) {
+	# Fetched http://www.bvg.de/images/favicon.ico
+	# and converted using
+	#   convert -resize 16x16 favicon.ico bvg.gif
+	#   mmencode -b bvg.gif
+	$images{BvgStadtplan} = $main::top->Photo
+	    (-format => 'gif',
+	     -data => <<EOF);
+R0lGODlhEAAQAPYAAB8cByklBy4rByclCCklCSwoCi8sCTAtCjMuDD05CTw5DEE+C0ZADElC
+DUxFDU5GDFFLDkVCEEtIEFVSEFlWEV1YEWRfD2JbEWBcE2JgEGZgFWlhEm5pFXZuF3lvFYV7
+F4qEGY+HGZWKGJeLGpmPG5WRHZyUGqOaH6idHqegHKyjHbCnH7OpHrawH6SaIK+oIbCkILSr
+IbmwIsS5IsW9I8i6IMi8I83GIs/DJNDCJNTIJtjMI9jIJNrPJdfMKdjNKNrRJuDTJ+TTJubW
+JebYKuTdKu/iKPPiK/LlK/XjLfTlLPXmLP3rKvzrK//rK/7tKf/vKvrpLPvrLv/rLP7rLv/s
+LP/wLgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAQABAAAAe5gFOCToKFhoWEh4qHTomL
+j5BTTY2FTZJNmJmSlJJTUpeYlY1PT1ZOmZmlnk5HPDpGSUJNS0RNRzY9UVNWKAYKFysORCwW
+PhcGDThNViEMKgYuBTMfFyAMNzpImCMGFxBADiUaHxscNidAyyMEFQ1AHRcOMBgeKgEuVlYi
+DDQELSkBDPjgQMFIhBL5SAyYoGCHDgASlMQwQMFADCtPgJwwgUPKEhg0rCyRIUKFEitTSuVL
+SerUsieNAgEAOw==
 EOF
 	}
 }
@@ -272,6 +301,24 @@ sub showmap_url_openstreetmap {
 sub showmap_openstreetmap {
     my(%args) = @_;
     my $url = showmap_url_openstreetmap(%args);
+    start_browser($url);
+}
+
+######################################################################
+# BVG-Stadtplan
+
+sub showmap_url_bvgstadtplan {
+    my(%args) = @_;
+
+    my $px = $args{px};
+    my $py = $args{py};
+
+    sprintf "http://www.fahrinfo-berlin.de/Stadtplan/index?language=d&client=fahrinfo&mode=show&zoom=3&ld=0.1&seqnr=1&location=,,WGS84,%s,%s&label=", $px, $py
+}
+
+sub showmap_bvgstadtplan {
+    my(%args) = @_;
+    my $url = showmap_url_bvgstadtplan(%args);
     start_browser($url);
 }
 

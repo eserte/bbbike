@@ -7392,4 +7392,46 @@ EOF
 userdel	2::inwork 17465,-109257 17298,-109023
 EOF
      },
+     { from  => 1174515627, # 2007-03-21 23:20
+       until => 1174968000, # 2007-03-27 06:00
+       text  => 'Ebertstr. zwischen Behrenstr. und Dorotheenstr. und Straße des 17. Juni zwischen Brandenburger Tor und Y.-Rabin-Str.: Veranstaltung, Straße vollständig gesperrt (Europafest) (bis 27.03.2007 morgens)',
+       type  => 'gesperrt',
+       source_id => 'IM_005018',
+       data  => <<EOF,
+userdel	2::temp 8540,12420 8560,12326 8539,12286 8515,12242 8214,12205 8089,12186 8063,12182
+userdel	2::temp 8595,12066 8600,12165 8515,12242
+EOF
+     },
+     { from  => 1169247600, # 2007-01-20 00:00
+       until => 1175810400, # 2007-04-06 00:00
+       text  => 'B 246 Brücker Str. OL Beelitz, zw. Bahnübergang u. Karl-Marx-Str. Ausbau Kreisverkehr Vollsperrung 21.01.2007-05.04.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -17930,-19476 -18615,-19264
+EOF
+     },
+     { from  => 1176069600, # 2007-04-09 00:00
+       until => 1179525600, # 2007-05-19 00:00
+       text  => 'B 246 Brücker Str. OL Beelitz, zw. Eckenerstr. u. Karl-Marx-Str. Ausbau Kreisverkehr Vollsperrung 10.04.2007-18.05.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -19124,-19178 -19825,-19350
+EOF
+     },
+     { from  => 1176069600, # 2007-04-09 00:00
+       until => 1176242400, # 2007-04-11 00:00
+       text  => 'B 320 Guben-Lieberose OD Jamlitz, Eisenbahnbrücke Rückbauarbeiten Vollsperrung 10.04.2007-10.04.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 77708,-45180 77263,-45193
+EOF
+     },
+     { from  => 1174518000, # 2007-03-22 00:00
+       until => 1174863600, # 2007-03-26 01:00
+       text  => 'L 063 Finsterwalder Str. OD Lauchhammer, zw. Schehlenstr. und F.-Mehring-Str. Einbau Deckschicht Vollsperrung 23.03.2007-25.03.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 35072,-102150 35379,-103141
+EOF
+     },
     );

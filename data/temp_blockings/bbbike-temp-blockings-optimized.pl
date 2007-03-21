@@ -901,6 +901,48 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	2::inwork 17465,-109257 17298,-109023
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005018',
+         'until' => 1174968000,
+         'text' => 'Ebertstr. zwischen Behrenstr. und Dorotheenstr. und Straße des 17. Juni zwischen Brandenburger Tor und Y.-Rabin-Str.: Veranstaltung, Straße vollständig gesperrt (Europafest) (bis 27.03.2007 morgens)',
+         'from' => 1174515627,
+         'data' => 'userdel	2::temp 8540,12420 8560,12326 8539,12286 8515,12242 8214,12205 8089,12186 8063,12182
+userdel	2::temp 8595,12066 8600,12165 8515,12242
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1175810400,
+         'text' => 'B 246 Brücker Str. OL Beelitz, zw. Bahnübergang u. Karl-Marx-Str. Ausbau Kreisverkehr Vollsperrung 21.01.2007-05.04.2007 ',
+         'from' => 1169247600,
+         'data' => 'userdel	q4::inwork -17930,-19476 -18615,-19264
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1179525600,
+         'text' => 'B 246 Brücker Str. OL Beelitz, zw. Eckenerstr. u. Karl-Marx-Str. Ausbau Kreisverkehr Vollsperrung 10.04.2007-18.05.2007 ',
+         'from' => 1176069600,
+         'data' => 'userdel	q4::inwork -19124,-19178 -19825,-19350
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1176242400,
+         'text' => 'B 320 Guben-Lieberose OD Jamlitz, Eisenbahnbrücke Rückbauarbeiten Vollsperrung 10.04.2007-10.04.2007 ',
+         'from' => 1176069600,
+         'data' => 'userdel	2::inwork 77708,-45180 77263,-45193
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1174863600,
+         'text' => 'L 063 Finsterwalder Str. OD Lauchhammer, zw. Schehlenstr. und F.-Mehring-Str. Einbau Deckschicht Vollsperrung 23.03.2007-25.03.2007 ',
+         'from' => 1174518000,
+         'data' => 'userdel	q4::inwork 35072,-102150 35379,-103141
+',
+         'type' => 'handicap'
        }
      
 );

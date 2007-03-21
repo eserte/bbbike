@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: WWWBrowser.pm,v 2.36 2007/02/24 13:25:27 eserte Exp $
+# $Id: WWWBrowser.pm,v 2.37 2007/03/21 22:30:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2000,2001,2003,2005,2006 Slaven Rezic. All rights reserved.
@@ -21,12 +21,12 @@ use vars qw(@unix_browsers @available_browsers
 	    $VERSION $VERBOSE $initialized $os $fork
 	    $got_from_config $ignore_config);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.36 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.37 $ =~ /(\d+)\.(\d+)/);
 
 @available_browsers = qw(_debian_browser _internal_htmlview
 			 _default_gnome _default_kde
 			 htmlview
-			 mozilla firefox galeon konqueror netscape Netscape kfmclient
+			 seamonkey mozilla firefox galeon konqueror netscape Netscape kfmclient
 			 dillo w3m lynx
 			 mosaic Mosaic
 			 chimera arena tkweb
@@ -123,6 +123,8 @@ sub start_browser {
 	    return 1 if open_in_konqueror($url, %args);
 	} elsif ($browser eq 'galeon') {
 	    return 1 if open_in_galeon($url, %args);
+	} elsif ($browser eq 'seamonkey') {
+	    return 1 if open_in_seamonkey($url, %args);
 	} elsif ($browser eq 'mozilla') {
 	    return 1 if open_in_mozilla($url, %args);
 	} elsif ($browser eq 'opera') {
@@ -243,23 +245,30 @@ sub open_in_galeon {
     0;
 }
 
-sub open_in_mozilla {
-    my $url = shift;
-    my(%args) = @_;
-    if (is_in_path("mozilla")) {
+sub _open_in_mozilloid {
+    my($cmd, $url, %args) = @_;
+    if (is_in_path($cmd)) {
 	if ($args{-oldwindow}) {
-	    system("mozilla", "-remote", "openURL($url)");
+	    system($cmd, "-remote", "openURL($url)");
 	} else {
 	    # no new-tab support in older Mozillas (e.g. 1.0)!
-	    system("mozilla", "-remote", "openURL($url,new-tab)");
+	    system($cmd, "-remote", "openURL($url,new-tab)");
 	}
 	return 1 if ($?/256 == 0);
 
 	# otherwise start a new mozilla process
-	exec_bg("mozilla", $url);
+	exec_bg($cmd, $url);
 	return 1; # if ($?/256 == 0);
     }
     0;
+}
+
+sub open_in_mozilla {
+    _open_in_mozilloid("mozilla", @_);
+}
+
+sub open_in_seamonkey {
+    _open_in_mozilloid("seamonkey", @_);
 }
 
 sub open_in_opera {
