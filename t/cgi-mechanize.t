@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.38 2007/02/07 20:55:50 eserte Exp eserte $
+# $Id: cgi-mechanize.t,v 1.39 2007/03/21 23:07:51 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -73,7 +73,7 @@ for my $browser (@browsers) {
     my $result_search_form_button = sub {
 	my($agent, $button_value) = @_;
 	if (!$can_javascript) {
-	    $agent->follow($button_value);
+	    $agent->follow_link(text => $button_value);
 	} else {
 	    my $form = $agent->form_name("search");
 	    my($input) = grep { defined $_->{value} && $_->{value} eq $button_value } $form->inputs; # but $_->value should also work?!
