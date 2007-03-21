@@ -7288,7 +7288,7 @@ EOF
        text  => 'Manteuffelstr. zwischen Skalitzer Str. und Naunynstr.: Einbahnstraßenregelung ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 11949,10414 12000,10531
+userdel	1::inwork 11949,10414 12000,10531 12056,10655
 EOF
      },
      { from  => 1173906268, # 2007-03-14 22:04

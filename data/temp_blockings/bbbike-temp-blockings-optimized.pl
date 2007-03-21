@@ -821,7 +821,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'until' => undef,
          'text' => 'Manteuffelstr. zwischen Skalitzer Str. und Naunynstr.: Einbahnstraßenregelung ',
          'from' => undef,
-         'data' => 'userdel	1::inwork 11949,10414 12000,10531
+         'data' => 'userdel	1::inwork 11949,10414 12000,10531 12056,10655
 ',
          'type' => 'gesperrt'
        },
