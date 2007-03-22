@@ -2,7 +2,7 @@
 #: encoding: utf-8
 #: title.de: Orte im weiteren Umland
 #: title.en: Places far away
-#: version: $Id: orte2-orig,v 4.31 2007/03/08 22:19:34 eserte Exp $
+#: version: $Id: orte2-orig,v 4.31 2007/03/08 22:19:34 eserte Exp eserte $
 #:
 # Mecklenburg-Vorpommern, Brandenburg
 Rostock	5 -79160,185302
@@ -441,7 +441,16 @@ Tessin	3 -57072,179343
 Sanitz	2 -62304,184777
 Gresenhorst	2 -60122,192991
 Marlow	3 -50124,193500
+Bergholz|(bei Belzig)	1 -46412,-34791
+Borne	1 -47691,-33758
+Grubo	2 -48376,-37627
+Neuendorf|bei Brück	2 -39077,-39997
+Raben	1 -44641,-41383
+Klein Marzehns	1 -42287,-44406
+Groß Marzehns	1 -44315,-46840
+Niemegk	2 -37188,-37728
 # Süden
+Straach	2 -43266,-51195
 Altdöbern	1 55212,-83137
 Leipzig	6 -57083,-119556
 Schkeuditz	4 -67652,-114176
@@ -503,7 +512,7 @@ Forst	4 96181,-72790
 Döbern	3 93670,-86458
 Seyda	2 -22209,-58887
 Kropstädt	2 -33166,-50007
-Marzahna	1 -31155,-45913
+Marzahna	1 -31201,-45781
 Luckau	3 32174,-61385
 Uckro	1 26261,-61447
 Calau	3 49092,-72754
@@ -549,6 +558,7 @@ Buro	0 -56002,-59625
 Zieko	1 -55692,-56061
 Waldersee|(Dessau)	0 -64834,-64089
 Blönsdorf	2 -23682,-50610
+Kurzlipsdorf	1 -25123,-49243
 Spremberg	4 78180,-91998
 Welzow	3 64833,-91449
 Großräschen	3 53805,-90240
