@@ -73,11 +73,13 @@ DEPLOY_DATA_TARGETS=		prepare-bbbike-data \
 				test
 
 # local deployment
-DEPLOY_LOCAL_TARGETS=		prepare-bbbike-data \
+DEPLOY_LOCAL_NO_TEST_TARGETS=	prepare-bbbike-data \
 				prepare-mapserver-data \
 				prepare-bbbike-dist \
 				prepare-mapserver-local-dist \
-				prepare-touren-dist \
+				prepare-touren-dist
+
+DEPLOY_LOCAL_TARGETS=		${DEPLOY_LOCAL_NO_TEST_TARGETS} \
 				test-local
 
 DEPLOY_LOCAL_DATA_TARGETS=	prepare-bbbike-data \
@@ -151,9 +153,10 @@ TARGET=radzeit.herceg.de
       make(rsync-tests)		     || \
       make(clean-cache-files-on-remote)
 TARGET=radzeit
-.elif make(deploy-local)      || \
-      make(deploy-local-data) || \
-      make(backup-local)      || \
+.elif make(deploy-local)         || \
+      make(deploy-local-data)    || \
+      make(deploy-local-no-test) || \
+      make(backup-local)         || \
       make(test-local)
 .if ${HOST} == "devpc01.iconmobile.de"
 TARGET=devpc01
@@ -303,6 +306,9 @@ deploy:			${DEPLOY_TARGETS}
 
 .ORDER:			${DEPLOY_LOCAL_TARGETS}
 deploy-local:		${DEPLOY_LOCAL_TARGETS}
+
+.ORDER:			${DEPLOY_LOCAL_NO_TEST_TARGETS}
+deploy-local-no-test:	${DEPLOY_LOCAL_NO_TEST_TARGETS}
 
 .ORDER:			${DEPLOY_DATA_TARGETS}
 deploy-data:		${DEPLOY_DATA_TARGETS}

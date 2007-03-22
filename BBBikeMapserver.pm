@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.35 2007/03/19 21:35:32 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.36 2007/03/22 20:01:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2005 Slaven Rezic. All rights reserved.
@@ -221,7 +221,7 @@ sub start_mapserver {
     }
     $self->{MapExt} = \@mapext;
 
-    if ($args{-scope} =~ /narrowest/) {
+    if ($args{-scope} && $args{-scope} =~ /narrowest/) {
 	my $scope = $self->narrowest_scope(@mapext);
 	$args{-scope} =~ s/narrowest/$scope/;
     }

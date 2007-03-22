@@ -803,8 +803,8 @@ EOF
        text  => 'Alt-Rudow in beiden Richtungen, zwischen Krokusstr. und Neudecker Weg Veranstaltung, Straße vollständig gesperrt (bis 05.09. 24 Uhr), Rudower Meilenfest ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 16596,1730 16838,1457
-userdel	2 16960,1282 16838,1457
+userdel	2 16596,1730 16849,1437
+userdel	2 16960,1282 16849,1437
 EOF
      },
      { from  => undef, # 
@@ -7432,6 +7432,39 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 35072,-102150 35379,-103141
+EOF
+     },
+     { from  => 1174593295, # 2007-03-22 20:54
+       until => 1174863600, # 2007-03-26 01:00
+       text  => 'Bahnhofstr. (Köpenick) in beiden Richtungen in Höhe der Bahnhofsbrücke Brückenarbeiten, Straße vollständig gesperrt, eine Umleitung ist eingerichtet (bis 25.03.2007 04 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_004990',
+       data  => <<EOF,
+userdel	2::inwork 22428,6063 22475,6151
+EOF
+     },
+     { from  => 1176328800, # 2007-04-12 00:00
+       until => 1176760800, # 2007-04-17 00:00
+       text  => 'B 112 Forster Str. Bahnunterführung in der OD Guben Gleis- u. Brückensanierung Vollsperrung 13.04.2007-16.04.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 100192,-50107 100189,-50404
+EOF
+     },
+     { from  => 1187215200, # 2007-08-16 00:00
+       until => 1187647200, # 2007-08-21 00:00
+       text  => 'B 112 Forster Str. Bahnunterführung in der OD Guben Gleis- u. Brückensanierung Vollsperrung 17.08.2007-20.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 100192,-50107 100189,-50404
+EOF
+     },
+     { from  => 1174599531, # 2007-03-22 22:38
+       until => 1177970399, # 2007-04-30 23:59
+       text  => 'Vom 20.03. bis voraussichtlich zum 30.04.2007 wird die Fahrbahndecke der Namslaustraße zwischen Berliner Straße und Sterkrader Straße erneuert. Während der Bauzeit wird die Namslaustraße in Richtung Berliner Straße als Einbahnstraße ausgewiesen. ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 2698,19099 2460,19083 2098,19058
 EOF
      },
     );

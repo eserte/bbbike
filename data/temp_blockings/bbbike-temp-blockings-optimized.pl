@@ -943,6 +943,39 @@ userdel	2::temp 8595,12066 8600,12165 8515,12242
          'data' => 'userdel	q4::inwork 35072,-102150 35379,-103141
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_004990',
+         'until' => 1174863600,
+         'text' => 'Bahnhofstr. (Köpenick) in beiden Richtungen in Höhe der Bahnhofsbrücke Brückenarbeiten, Straße vollständig gesperrt, eine Umleitung ist eingerichtet (bis 25.03.2007 04 Uhr)',
+         'from' => 1174593295,
+         'data' => 'userdel	2::inwork 22428,6063 22475,6151
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1176760800,
+         'text' => 'B 112 Forster Str. Bahnunterführung in der OD Guben Gleis- u. Brückensanierung Vollsperrung 13.04.2007-16.04.2007 ',
+         'from' => 1176328800,
+         'data' => 'userdel	2::inwork 100192,-50107 100189,-50404
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1187647200,
+         'text' => 'B 112 Forster Str. Bahnunterführung in der OD Guben Gleis- u. Brückensanierung Vollsperrung 17.08.2007-20.08.2007 ',
+         'from' => 1187215200,
+         'data' => 'userdel	2::inwork 100192,-50107 100189,-50404
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1177970399,
+         'text' => 'Vom 20.03. bis voraussichtlich zum 30.04.2007 wird die Fahrbahndecke der Namslaustraße zwischen Berliner Straße und Sterkrader Straße erneuert. Während der Bauzeit wird die Namslaustraße in Richtung Berliner Straße als Einbahnstraße ausgewiesen. ',
+         'from' => 1174599531,
+         'data' => 'userdel	1::inwork 2698,19099 2460,19083 2098,19058
+',
+         'type' => 'gesperrt'
        }
      
 );

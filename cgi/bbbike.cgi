@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.45 2007/03/19 21:58:45 eserte Exp $
+# $Id: bbbike.cgi,v 8.46 2007/03/22 20:44:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -702,7 +702,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.45 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.46 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -5592,8 +5592,8 @@ sub header {
 EOF
 	} else {
 	    print <<EOF;
-<img class="selectedflag" src="http://bbbike.sourceforge.net/images/de_flag.png" alt="Deutsch" border="0">
-<a href="$bbbike_en_script"><img class="unselectedflag" src="http://bbbike.sourceforge.net/images/gb_flag.png" alt="English" border="0"></a>
+<img class="selectedflag" src="$bbbike_images/de_flag.png" alt="Deutsch" border="0">
+<a href="$bbbike_en_script"><img class="unselectedflag" src="$bbbike_images/gb_flag.png" alt="English" border="0"></a>
 EOF
 	}
 	print qq{</div>\n};
@@ -6400,7 +6400,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/03/19 21:58:45 $';
+    my $cgi_date = '$Date: 2007/03/22 20:44:31 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

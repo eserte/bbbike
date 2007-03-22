@@ -171,7 +171,7 @@ Wilskistr.	1 -402,4012 -234,4136 21,4434 207,4575 301,4643 418,4696 639,4754 798
 Grazer Platz	1 6445,6769 6530,6786 6679,6816 6802,6816
 Grazer Platz	1 6811,6737 6686,6735 6546,6720 6517,6717 6451,6710
 Goltzstr. (Spandau)	1 -2843,16947 -3031,16807
-Putlitzstr.	1 6289,14225 6286,14183 6264,13995 6242,13953
+Putlitzstr.	1 6286,14183 6264,13995 6242,13953
 Langhansstr. (außer Tram)	1 12046,16568 12200,16579 12409,16475
 Triftstr. (Buchholz)	1 12018,23040 12178,23034
 Joachimstr.	1 10142,13556 10081,13673
@@ -1060,9 +1060,12 @@ Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (B
 Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13202,14388 13261,14456 13243,14470
 Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13261,14456 13318,14517 13281,14540
 Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13281,14540 13318,14517 13374,14581
-(Treppe zur Putlitzbrücke): tragen	0:180:90 6272,14183
+(Treppe zur Putlitzbrücke): tragen, ca. 40 Stufen	0:180:90 6272,14183
+(Treppe zur Putlitzbrücke): tragen, ca. 40 Stufen	0:180:-164 6224,14245
 Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3 6272,14183 6248,14185 6242,13953
-An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3 6255,14310 6248,14185 6272,14183
+An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3 6252,14249 6248,14185 6272,14183
+Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3 6224,14245 6252,14249 6255,14310
+An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3 6248,14185 6252,14249 6224,14245
 Rathenower Str. -> Otto-Dix-Str.: schwierig zu querender Mittelstreifen	3 7148,13245 7207,13118 7370,13204
 Otto-Dix-Str. -> Rathenower Str.: schwierig zu querender Mittelstreifen	3 7370,13204 7207,13118 7192,13036
 Eichkatzweg	1 1137,9943 1020,9786 934,9672
