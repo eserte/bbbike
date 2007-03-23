@@ -40,6 +40,7 @@ PERL_UTF8=		perl5.8.7
 .else
 PERL_UTF8=		perl5.8.8
 .endif
+SED=			env LANG=C sed
 GREPSTRASSEN_UTF8=	${PERL_UTF8} ${MISCSRCDIR}/grepstrassen
 COMBINE_STREETS=	${MISCSRCDIR}/combine_streets.pl
 
@@ -639,7 +640,7 @@ fragezeichen:	.create_fragezeichen
 	    ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@~
 	@echo "# added from ampeln-orig" >> $@~
 	grep '?' ${DATADIR}/ampeln-orig | \
-	    sed -e 's/	\([^ ]*\)/ (\1)	?/' | \
+	    $(SED) -e 's/	\([^ ]*\)/ (\1)	?/' | \
 	    ${CONVERT2HAFAS} -basefile ${DATADIR}/ampeln-orig -- - >> $@~
 	@echo "# added from handicap_s-orig and gesperrt-orig" >> $@~
 	${MISCSRCDIR}/temporary_streets.pl \
@@ -945,12 +946,12 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s|2|3|BNP:\d+(:-?\d+)?)(:inwork)?$$'
 .for i in u s
 .check_$(i)bahnhof2:	$(i)bahnhof Berlin.coords.data
 	grep -i '	$(i)[AB] ' $(i)bahnhof |\
-	    sed -e 's/ *(.*)//' -e 's/	.*//' -e 's/bhf\./bahnhof/' -e 's/Bhf\./Bahnhof/' |\
+	    $(SED) -e 's/ *(.*)//' -e 's/	.*//' -e 's/bhf\./bahnhof/' -e 's/Bhf\./Bahnhof/' |\
 	    $(SORT_NO_LOCALE) -u > /tmp/$(i)bahnhof1
 	grep -i '^$(i)-Bhf' Berlin.coords.data |\
 	    egrep -v 'S-Bhf (Fürstenbrunn)' |\
 	    egrep -v 'U-Bhf (Hauptbahnhof|Unter den Linden|Bundestag)' |\
-	    sed -e 's/ *(.*)//' -e 's/S-Bhf //' -e 's/U-Bhf //' -e 's/|.*//' |\
+	    $(SED) -e 's/ *(.*)//' -e 's/S-Bhf //' -e 's/U-Bhf //' -e 's/|.*//' |\
 	    $(SORT_NO_LOCALE) -u > /tmp/$(i)bahnhof2
 	diff /tmp/$(i)bahnhof1 /tmp/$(i)bahnhof2
 	@touch $@
