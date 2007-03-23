@@ -40,6 +40,7 @@ PERL_UTF8=		perl5.8.7
 .else
 PERL_UTF8=		perl5.8.8
 .endif
+PERL=			perl
 SED=			env LANG=C sed
 GREPSTRASSEN_UTF8=	${PERL_UTF8} ${MISCSRCDIR}/grepstrassen
 COMBINE_STREETS=	${MISCSRCDIR}/combine_streets.pl
@@ -101,7 +102,7 @@ all:	targets check .modified .rsync_include make_misc
 
 # These targets have to be rebuild once a day
 .BEGIN:
-	@perl -e 'for (@ARGV) { do { unlink($$_) and warn "Removed $$_\n" } if (-M $$_ >= 1) }' \
+	@$(PERL) -e 'for (@ARGV) { do { unlink($$_) and warn "Removed $$_\n" } if (-M $$_ >= 1) }' \
 		.check_bbbike-temp-blockings-optimized \
 		.check_dates \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd
@@ -160,7 +161,7 @@ strassen:	.strassen.tmp plaetze
 _f_raw_${f}:=${f:S/-cooked$//}
 $f:	${_f_raw_${f}} inaccessible_landstrassen
 	-@${WRITEABLE} $@
-	perl -I${BBBIKEDIR} -I${BBBIKEDIR}/lib -MStrassen -e \
+	$(PERL) -I${BBBIKEDIR} -I${BBBIKEDIR}/lib -MStrassen -e \
 	    '$$s = Strassen->new($$ARGV[0]); $$ina = Strassen->new($$ARGV[1]); $$s->new_with_removed_points($$ina)->write("-")' \
 	    ${_f_raw_${f}} inaccessible_landstrassen \
 	    > $@~
@@ -354,7 +355,7 @@ $(i)bahnhof_bg:	$(i)bahnhof-orig
 	(echo "#: title: Fahrradfreundliche Zugänge bei der $(i:U)-Bahn"; \
 	 [ "$(i)" = "s" ] && echo "#: note: http://www.s-bahn-berlin.de/fahrplanundnetz/sbahnhof_anzeige.php?ID=103"; \
 	 echo "#:") > $@~
-	perl -I../lib -I.. -MStrassen::Core -MObject::Iterate=iterate -e '\
+	$(PERL) -I../lib -I.. -MStrassen::Core -MObject::Iterate=iterate -e '\
 	$$s=Strassen->new(shift, UseLocalDirectives => 1);\
 	$$new_s=Strassen->new;\
 	iterate {\
@@ -610,7 +611,7 @@ make_misc:
 # handling of Storable files is slower, so it is not done by default
 storable:
 	for i in $(TARGETS); do \
-	    perl -I.. -I../lib ../Strassen/Storable.pm -v -u -f $$i $$i.st; \
+	    $(PERL) -I.. -I../lib ../Strassen/Storable.pm -v -u -f $$i $$i.st; \
 	done
 
 ######################################################################
@@ -645,7 +646,7 @@ fragezeichen:	.create_fragezeichen
 	@echo "# added from handicap_s-orig and gesperrt-orig" >> $@~
 	${MISCSRCDIR}/temporary_streets.pl \
 	    ${DATADIR}/handicap_s-orig ${DATADIR}/gesperrt-orig | \
-	    perl -nle '/(.*\t)(\S+)(.*)/ && !/\b(\d{4}-\d{2}-\d{2}|[0123]?\d\.[01]?\d\.\d{4})\b/ && print "Noch immer? $$1?::inwork$$3"' | \
+	    $(PERL) -nle '/(.*\t)(\S+)(.*)/ && !/\b(\d{4}-\d{2}-\d{2}|[0123]?\d\.[01]?\d\.\d{4})\b/ && print "Noch immer? $$1?::inwork$$3"' | \
 	    ${CONVERT2HAFAS} -basefile ${DATADIR}/handicap_s-orig -- - >> $@~
 	@echo "# added from other sources: (${SOURCE_TARGETS})" >> $@~
 	cat .fragezeichen-other-source ${SOURCE_TARGETS:S|^|.fragezeichen-|} >> $@~
@@ -707,10 +708,10 @@ $(HOME)/trash/plz.sql:	$(HOME)/trash/plz.zip
 	cd `dirname $>` && unzip -q -o `basename $>`
 
 ${PERSISTENTTMPDIR}/Berlin.coords.bbd: Berlin.coords.data
-	perl -F'\|' -nale 'print "@F[0,1,2]\tX $$F[3]" if $$F[3]' Berlin.coords.data > $@
+	$(PERL) -F'\|' -nale 'print "@F[0,1,2]\tX $$F[3]" if $$F[3]' Berlin.coords.data > $@
 
 ${PERSISTENTTMPDIR}/Potsdam.coords.bbd: Potsdam.coords.data
-	perl -F'\|' -nale 'print "@F[0,1,2]\tX $$F[3]" if $$F[3]' Potsdam.coords.data > $@
+	$(PERL) -F'\|' -nale 'print "@F[0,1,2]\tX $$F[3]" if $$F[3]' Potsdam.coords.data > $@
 
 OPENGEODB_REGION=BB MV
 .if ${HOST} == "mom.herceg.de"
@@ -728,10 +729,10 @@ ${PERSISTENTTMPDIR}/opengeodb-orte-${region}-DE.bbd:	${OPENGEODB_ORTE_SOURCE} ${
 
 # About 70 failures for now. If I correct them all, enlarge the bbox.
 .check_orte_opengeodb:	orte orte2 ${PERSISTENTTMPDIR}/opengeodb-orte-BB-DE.bbd
-	cat orte orte2 | grep -v '^#' | perl -pe 's{^([^\|\t]+).*}{$$1}' | sort > /tmp/orte_bbbike
+	cat orte orte2 | grep -v '^#' | $(PERL) -pe 's{^([^\|\t]+).*}{$$1}' | sort > /tmp/orte_bbbike
 	cat ${PERSISTENTTMPDIR}/opengeodb-orte-BB-DE.bbd | \
 	    ${MISCSRCDIR}/restrict_bbd_data.pl -bbox -59700,60100,116500,-44900 -strdata=- -o=- | \
-	    perl -pe 's{(\s*\(.*\))?\t.*}{}' | sort > /tmp/orte_opengeodb
+	    $(PERL) -pe 's{(\s*\(.*\))?\t.*}{}' | sort > /tmp/orte_opengeodb
 	diff -u /tmp/orte_bbbike /tmp/orte_opengeodb | grep '^\+'
 
 # Die mit "laut adfc-karte" u.ä. gekennzeichneten Straßen extrahieren und
@@ -742,7 +743,7 @@ ${PERSISTENTTMPDIR}/opengeodb-orte-${region}-DE.bbd:	${OPENGEODB_ORTE_SOURCE} ${
 # Now using Tie::File, which works everywhere
 .fragezeichen-other-source:	${DATADIR}/qualitaet_s-orig ${DATADIR}/qualitaet_l-orig
 	cd ${DATADIR} && \
-	    perl -I${BBBIKEDIR} -I${BBBIKEDIR}/lib \
+	    $(PERL) -I${BBBIKEDIR} -I${BBBIKEDIR}/lib \
 		-MStrassen::Core -MTie::File -MFcntl=O_RDONLY \
 		-e 'for my $$file (qw(qualitaet_s-orig qualitaet_l-orig)) {\
 			tie @l, "Tie::File", $$file, mode => O_RDONLY or \
@@ -861,7 +862,7 @@ do-checks:	.check_empty_lines \
 	.check_temp_blockings \
 
 .check_empty_lines:	*-orig
-	for i in *-orig; do perl -nle '$$_ eq q{} and die $$ARGV' $$i; done
+	for i in *-orig; do $(PERL) -nle '$$_ eq q{} and die $$ARGV' $$i; done
 
 check-disabled:	.check_label
 
@@ -1048,7 +1049,7 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s|2|3|BNP:\d+(:-?\d+)?)(:inwork)?$$'
 .check_exits:	exits \
 		ubahnhof sbahnhof rbahnhof \
 		.strassen.tmp landstrassen landstrassen2
-	perl -I../lib -I.. -MStrassen::Core -MObject::Iterate=iterate -e '\
+	$(PERL) -I../lib -I.. -MStrassen::Core -MObject::Iterate=iterate -e '\
 	$$s=Strassen->new(q{exits});\
 	$$new_s=Strassen->new;\
 	iterate {\
@@ -1081,11 +1082,11 @@ check-line-lengths:	.check_line_lengths
 
 .check_line_lengths:	$(TARGETS)
 	MAXLEN=`for i in $(TARGETS); do \
-	    perl -nle '$$max = length($$_) if length($$_) > $$max; END { print $$max }' < $$i; \
+	    $(PERL) -nle '$$max = length($$_) if length($$_) > $$max; END { print $$max }' < $$i; \
 	done | sort -nr | head -1`; \
 	[ $$MAXLEN -lt 12288 ] || ( echo $$MAXLEN; exit 1 )
 	MAXPOINTS=`for i in $(TARGETS); do \
-	    perl -nle '$$points = scalar split / /; $$max = $$points if $$points > $$max; END { print $$max }' < $$i; \
+	    $(PERL) -nle '$$points = scalar split / /; $$max = $$points if $$points > $$max; END { print $$max }' < $$i; \
 	done | sort -nr | head -1`; \
 	[ $$MAXPOINTS -lt 1024 ] || ( echo $$MAXPOINTS; exit 1 )
 	@touch $@
@@ -1177,7 +1178,7 @@ check-$(city).coords.data:	.check_$(city)_coords_data
 .check_$(city)_coords_data:: $(city).coords.data
 	$(SORT_NO_LOCALE) ${COORDS_DATA_SORT_OPTS} -c $(city).coords.data || \
 	    ( $(SORT_NO_LOCALE) ${COORDS_DATA_SORT_OPTS} $(city).coords.data | diff -u - $(city).coords.data; false )
-	perl -nle '@l=split /\|/;\
+	$(PERL) -nle '@l=split /\|/;\
 	    if (++$$x{"@l[0..2]"} > 1) { die "Duplicate: @l" }\
 	    if (@l < 2 || @l > 4) { die "Too less/many fields: @l" }\
 	    if ($$l[2] !~ /^(|\d{5})$$/) { die "Not a ZIP: @l" }\
@@ -1190,22 +1191,22 @@ check-Berlin.coords.data: .check_Berlin_coords_data_cityparts \
 
 .check_Berlin_coords_data_cityparts: Berlin.coords.data
 	cut -d'|' -f2 Berlin.coords.data | sort -u |\
-	    perl -I.. -MGeography::Berlin_DE -nle \
+	    $(PERL) -I.. -MGeography::Berlin_DE -nle \
 		'BEGIN { %cp = map {($$_,1)} Geography::Berlin_DE->get_all_subparts } !exists $$cp{$$_} and die "<$$_> not a citypart of Berlin"'
 	@touch $@
 
 .check_Berlin_coords_data_zip: Berlin.coords.data
 	cut -d'|' -f3 Berlin.coords.data | sort -u |\
-	    perl -nle '($$_ < 10000 || $$_ > 15000) and die "<$$_> unexpected ZIP in Berlin"'
+	    $(PERL) -nle '($$_ < 10000 || $$_ > 15000) and die "<$$_> unexpected ZIP in Berlin"'
 	@touch $@
 
 # Heavy check, fails for now:
 .check_Berlin_coords_data_zip2: Berlin.coords.data
 	unzip -c $(MISCDIR)/opengeodb/Berlin_I.zip D_Berlin_Postleitzahlen > /tmp/D_Berlin_Postleitzahlen
 	cat /tmp/D_Berlin_Postleitzahlen |\
-	    perl -nle '/^(\d{5}) .. (.*)/ && print "$$1 .. $$2"' |\
+	    $(PERL) -nle '/^(\d{5}) .. (.*)/ && print "$$1 .. $$2"' |\
 	    sort -u > /tmp/plz_opengeodb
-	perl -I $(BBBIKEDIR) -MGeography::Berlin_DE -F'\|' -nale \
+	$(PERL) -I $(BBBIKEDIR) -MGeography::Berlin_DE -F'\|' -nale \
 	    'BEGIN {$$g=Geography::Berlin_DE->new } print "$$F[2] .. " . $$g->get_supercitypart_for_any($$F[1]) ' Berlin.coords.data |\
 	    sort -u > /tmp/plz_bbbike
 # Ausnahmen (der Reihe nach):
@@ -1243,7 +1244,7 @@ ${PERSISTENTTMPDIR}/check_nearest.bbd:	strassen landstrassen landstrassen2 frage
 do-check-nearest:	.check-do-check-nearest
 
 .check-do-check-nearest:	${PERSISTENTTMPDIR}/check_nearest.bbd
-	perl -I${BBBIKEDIR} -I${BBBIKEDIR}/lib \
+	$(PERL) -I${BBBIKEDIR} -I${BBBIKEDIR}/lib \
 	    -MStrassen -MObject::Iterate=iterate -e \
 	    '$$s = Strassen->new($$ARGV[0]);\
 	     iterate { ($$dist) = $$_->[Strassen::NAME] =~ /^\S+\s+(\d+)/; die "Distance $$dist m found" if $$dist < 20 } $$s' ${PERSISTENTTMPDIR}/check_nearest.bbd
@@ -1258,7 +1259,7 @@ GNUmakefile.mapfiles: Makefile.mapfiles $(MISCRSRCDIR)/b2gmake
 	chmod ugo+r GNUmakefile.mapfiles
 .else
 GNUmakefile: Makefile
-	perl -e 'print qq{all:\n\t\@echo "*** Sorry, your make program is not supported."\n\t\@echo "*** Please try pmake from the BSD project."\n\t\@echo "*** You can get it from http://www.sourceforge.net/projects/srezic"\n\t\@echo "*** Debian users may install the pmake package."\n\t\@echo ""\n\t\@false\n}' > $@
+	$(PERL) -e 'print qq{all:\n\t\@echo "*** Sorry, your make program is not supported."\n\t\@echo "*** Please try pmake from the BSD project."\n\t\@echo "*** You can get it from http://www.sourceforge.net/projects/srezic"\n\t\@echo "*** Debian users may install the pmake package."\n\t\@echo ""\n\t\@false\n}' > $@
 .endif
 
 ######################################################################
@@ -1281,13 +1282,13 @@ sort-$(city).coords.data:
 # TEMPORARY BLOCKINGS LAYER
 
 temp_blockings/bbbike-temp-blockings.yml: temp_blockings/bbbike-temp-blockings.pl
-	perl -MYAML -e '\
+	$(PERL) -MYAML -e '\
 	    $$YAML::UseBlock = 1;\
 	    do $$ARGV[0];\
 	    die 1 if not @temp_blocking;\
 	    YAML::DumpFile($$ARGV[1], \@temp_blocking);\
 	' $> $@~
-	perl -MData::Compare -MData::Dumper -MYAML -e '\
+	$(PERL) -MData::Compare -MData::Dumper -MYAML -e '\
 	    do $$ARGV[0];\
 	    $$y = YAML::LoadFile($$ARGV[1]);\
 	    die 2 if not @temp_blocking;\
@@ -1302,7 +1303,7 @@ temp_blockings/bbbike-temp-blockings.yml: temp_blockings/bbbike-temp-blockings.p
 	@$(READABLE) $@
 
 $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd: temp_blockings/bbbike-temp-blockings.yml
-	perl -MYAML -e '\
+	$(PERL) -MYAML -e '\
 		$$x = YAML::LoadFile($$ARGV[0]);\
 		for (@$$x) {\
 		    $$d = $$_->{data};\
