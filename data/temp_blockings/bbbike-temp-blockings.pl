@@ -7451,8 +7451,8 @@ EOF
 userdel	2::inwork 100192,-50107 100189,-50404
 EOF
      },
-     { from  => 1187215200, # 2007-08-16 00:00
-       until => 1187647200, # 2007-08-21 00:00
+     { from  => 1174687832, # 1187215200 2007-08-16 00:00
+       until => 1174687837, # 1187647200 2007-08-21 00:00
        text  => 'B 112 Forster Str. Bahnunterführung in der OD Guben Gleis- u. Brückensanierung Vollsperrung 17.08.2007-20.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -7465,6 +7465,32 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1::inwork 2698,19099 2460,19083 2098,19058
+EOF
+     },
+     { from  => 1175292000, # 2007-03-31 00:00
+       until => 1175551200, # 2007-04-03 00:00
+       text  => 'Frühlingsfest auf der Sonnenallee Neukölln, Vollsperrung zw. Pannierstr. und Wildenbruchstr. von 31.03.2007 07:00 bis 02.04.2007 01:00 ',
+       type  => 'gesperrt',
+       source_id => 'IM_005045',
+       data  => <<EOF,
+userdel	2::temp 12925,8494 12772,8612 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972
+EOF
+     },
+     { from  => 1174640400, # 2007-03-23 10:00
+       until => 1174755600, # 2007-03-24 18:00
+       text  => 'Straßenfest in der Domäne Dahlem Dahlem, Königin-Luise-Str. Sperrungen von Sa 10:00 bis Sa 18:00 ',
+       type  => 'gesperrt',
+       source_id => 'IM_005044',
+       data  => <<EOF,
+userdel	2::temp 2823,5672 2771,5678 2654,5678
+EOF
+     },
+     { from  => 1174773600, # 2007-03-24 23:00
+       until => 1178316000, # 2007-05-05 00:00
+       text  => 'L 023 Britz-Joachimsthal zw. AS Chorin und Britz Deckenerneuerung Vollsperrung 26.03.2007-04.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 35962,59463 35809,59122 35755,58845 35950,58308 36151,57931 36230,57632 36686,57106 36621,56807
 EOF
      },
     );

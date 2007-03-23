@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.91 2006/11/02 19:55:17 eserte Exp eserte $
+# $Id: Makefile,v 1.92 2007/03/23 22:25:38 eserte Exp $
 #
 
 # Targets:
@@ -468,8 +468,6 @@ prepare-bbbike-dist-data-temp-blockings-dir:
 	[ -d ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR} ] || \
 	    mkdir -p ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR}
 	find ${BBBIKE_ROOT_DIR}/${TEMP_BLOCKINGS_DIR}/ -maxdepth 1 -type f ! -name "*~" -a ! -name "*.st" -a ! -name "*.core" -a ! -name "#*#" -a ! -name bbbike-temp-blockings-optimized.pl | ${XARGS_REPL} cp -pf % ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR}/
-	-cp -pf ${BBBIKE_ROOT_DIR}/${TEMP_BLOCKINGS_DIR}/* \
-	    ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR}/
 
 # Teasers for bbbike.cgi
 prepare-bbbike-dist-data-teasers:

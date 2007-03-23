@@ -722,7 +722,7 @@ tragen (Treppe)	0:30 2921,13606
 tragen (Treppe)	0:30 3016,13615
 #: by: ^^^
 #: by: rjoop:
-tragen (Treppe)	0:30 3031,13638
+tragen (Treppe, 32 Stufen)	0:30 3031,13638
 #: by: Sirko:
 tragen (Treppe, ca. 10 Stufen)	0:30 20933,2390
 #: by: Sabine Stock
@@ -944,10 +944,9 @@ Bregenzer Str.	1 4278,10262 4227,10014
 Bayerische Str.	1 4296,10004 4349,10247
 Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3nocross 12912,14084 12978,14151 12996,14172 13046,14220
 Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross 13070,14245 13115,14293 13202,14388 13261,14456 13318,14517 13374,14581
-#: note: Stufenanzahl geschätzt vvv
-(Treppe zur Putlitzbrücke): tragen, ca. 40 Stufen	0:180 6272,14183
-(Treppe zur Putlitzbrücke): tragen, ca. 40 Stufen	0:180 6224,14245
-#: note: ^^^
+(Treppe zur Putlitzbrücke): tragen	0:40 6272,14183
+#: by: rjoop
+(Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40 6224,14245
 An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3nocross 6242,13953 6248,14185 6252,14249 6255,14310
 Rathenower Str.: schwierig zu querender Mittelstreifen	3nocross 7192,13036 7207,13118 7148,13245
 Eichkatzweg	1 1137,9943 1020,9786 934,9672

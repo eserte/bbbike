@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEditUtil.pm,v 1.16 2006/05/22 22:20:35 eserte Exp $
+# $Id: BBBikeEditUtil.pm,v 1.17 2007/03/23 22:26:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -162,7 +162,7 @@ sub parse_dates {
     my $short_date_rx = qr/([0-3]?[0-9])\.([0-1]?[0-9])\./;
     my $time_rx       = qr/(\d{1,2})[\.:](\d{2})\s*Uhr/;
     my $full_date_rx  = qr/$date_rx\D+$time_rx/;
-    my $ab_rx         = qr/(?:ab[:\s]+|Dauer[:\s]+|vom[:\s]+)/;
+    my $ab_rx         = qr/(?:ab[:\s]+|Dauer[:\s]+|vo[mn][:\s]+)/;
     my $bis_und_rx    = qr/(?:[Bb]is|und|\s*-\s*)(?:\s+(?:ca\.|voraussichtlich|zum))?/;
     my $isodaterx = qr/\b(20\d{2})-(\d{2})-(\d{2})\b/;
     my $eudaterx  = qr/\b([0123]?\d)\.([01]?\d)\.(\d{4})\b/;

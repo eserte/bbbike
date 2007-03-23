@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.46 2007/03/22 20:44:31 eserte Exp $
+# $Id: bbbike.cgi,v 8.47 2007/03/23 22:23:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -660,6 +660,13 @@ unshift(@Strassen::datadirs,
        );
 
 use vars qw($lang $config_master $msg);
+
+# These must not be permanent:
+undef $msg;
+undef $bbbike_root;
+undef $bbbike_html;
+undef $bbbike_images;
+
 $config_master = $0;
 $lang = "";
 if ($config_master =~ s{^(.*)\.(en)(\.cgi)$}{$1$3}) {
@@ -670,10 +677,6 @@ eval { local $SIG{'__DIE__'};
        #warn "$config_master.config";
        do "$config_master.config" };
 
-undef $msg;
-undef $bbbike_root;
-undef $bbbike_html;
-undef $bbbike_images;
 if ($lang ne "") {
     $msg = eval { do "$FindBin::RealBin/msg/$lang" };
     if ($msg && ref $msg ne 'HASH') {
@@ -702,7 +705,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.46 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.47 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -6400,7 +6403,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/03/22 20:44:31 $';
+    my $cgi_date = '$Date: 2007/03/23 22:23:01 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
