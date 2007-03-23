@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize-upload.t,v 1.5 2006/01/04 08:48:40 eserte Exp $
+# $Id: cgi-mechanize-upload.t,v 1.6 2007/03/23 07:32:30 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -60,10 +60,10 @@ plan tests => 3 + $gpsman_tests * @gps_types;
     $agent->get($cgiurl);
     like($agent->content, qr{BBBike}, "Startpage $cgiurl is not empty");
 
-    $agent->follow(qr{Info});
+    $agent->follow_link(text => qr{Info});
     like($agent->content, qr{Information}, "Information page found");
 
-    $agent->follow(qr{GPS-Tracks});
+    $agent->follow_link(text => qr{GPS-Tracks});
     like($agent->content, qr{Anzuzeigende Route-Datei}, "Upload page found");
 
     for my $gps_type (@gps_types) {

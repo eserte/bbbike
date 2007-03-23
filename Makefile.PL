@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.135 2007/02/24 20:34:56 eserte Exp $
+# $Id: Makefile.PL,v 1.136 2007/03/23 07:32:50 eserte Exp $
 
 use 5.005;
 
@@ -117,7 +117,7 @@ my @req_table =
    'Für das Problem des Handlungsreisenden'],
 #  [qw/PDF::Create	0.06	all	2|4	base/,
 #   'Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)'],
-  [qw/PDF::Create::GIFImage	0	all	2|4	base/,
+  [qw/PDF::Image::GIFImage	0	all	2|4	base/,
    'Erzeugung der Route als PDF-Dokument --- das ist die neueste Version wie auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)'],
   [qw/Font::Metrics::Helvetica	0	all	0	base/,
    'Für die Reparatur der Zeichenbreitentabellen in PDF::Create'],
@@ -191,6 +191,10 @@ my @req_table =
    'für GPS-Upload'],
   [qw/Geo::SpaceManager 0.91	all	2	base/,
    'Intelligentere Labelplatzierung, bei der PDF-Ausgabe verwendet'],
+  [qw/Tk::ExecuteCommand	0	all	1	base/,
+   'Bessere Fehlerberichte im temp_blockings-Editor'],
+  [qw/Algorithm::Diff	0	all	1	base/,
+   'Unterschiede im temp_blockings-Editor anzeigen'],
 
   [qw/Image::Info	0	all	0	test/],
   [qw/Test::More	0	all	0	test/],

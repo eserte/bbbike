@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.36 2007/03/18 18:45:25 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.38 2007/03/23 07:32:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -71,8 +71,14 @@ eval {
     if ($debug) {
 	require Sys::Hostname;
 	if (Sys::Hostname::hostname() =~ /herceg\.de$/) {
-	    $to = "eserte\@smtp.herceg.de";
-	    $cc = "slaven\@smtp.herceg.de";
+	    require Config;
+	    if ($Config::Config{archname} =~ /amd64/) {
+		$to = "slaven\@rezic.de";
+		$cc = "slaven\@rezic.de";
+	    } else {
+		$to = "eserte\@smtp.herceg.de";
+		$cc = "slaven\@smtp.herceg.de";
+	    }
 	}
     }
 
@@ -278,13 +284,16 @@ if ($@) {
 }
 
 sub error_msg {
-    print header,
+    print(header,
 	  start_html(-title=>"Fehler beim Versenden",
 		     -style=>{'src'=>"$bbbike_html/bbbike.css"}),
-	  "Der Kommentar konnte wegen eines internen Fehlers ($_[0]) nicht abgesandt werden. Bitte stattdessen eine Mail an ", a({-href=>"mailto:$to?" . CGI->new(body=>$comment)->query_string},$to),
+	  "Der Kommentar konnte wegen eines internen Fehlers nicht abgesandt werden. Bitte stattdessen eine Mail an ",
+	  a({-href=>"mailto:$to?" . CGI->new({subject => "BBBike-Kommentar (fallback)",
+					      body=>$comment})->query_string},$to),
 	  " mit dem folgenden Inhalt versenden:",br(),br(),
-	      pre($comment),
-	  end_html;
+	  pre($comment),
+	  end_html,
+	 );
     exit;
 }
 
