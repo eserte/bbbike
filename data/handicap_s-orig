@@ -3,22 +3,8 @@
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # XXX hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
-#: last_checked: 2006-05-13
-Stadthausstr., Bahnbrücke: Bauarbeiten	q4::inwork 15628,10915 15657,10846
-#XXX del? Linienstr.: Bauarbeiten, Einbahnstraße Richtung Osten (bis 2006-10-31)	q4::inwork; 9903,13646 9752,13575 9607,13507 9281,13374
-# XXX last_checked: 2005-07-03
-# XXX del? möglicherweise fertig: Bendastr.: Bauarbeiten, danach vielleicht asphaltiert?	q4::inwork 12743,6645 12756,6578 12779,6478
-#XXX del: Oberwallstr.: Fahrbahn wegen Bauarbeiten gesperrt, Gehweg benutzen	q4::inwork 9913,12068 9925,11947
-#XXX del: Am Weidendamm: Fahrtrichtung wegen Bauarbeiten gesperrt, schieben (voraussichtlich bis 2006-12-31)	q4::inwork; 9283,12856 9383,12915
-#XXX del Unter den Linden (Mitte) Richtung Westen zwischen Schadowstr. und Wilhelmstr. Baustelle, Straße für Autos gesperrt, Radfahrer können weiterhin passieren (bis 2006-03-31)	q3::inwork; 9028,12307 8804,12280
-#XXX del? #: last_checked: 2006-09-16 Alexanderstr. in Richtung Stralauer Str. Baustelle, Fahrtrichtung gesperrt (bis 2006-10-20) (Radfahrer können weiterhin passieren)	q2::inwork; 11134,12793 11207,12706 11323,12484 11333,12437 11343,12300 11351,12221
-#XXX del last_checked: 2006-03-29, 2006-07-01 vom weiten: Naumannstraße: zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße für Autofahrer gesperrt, Radfahrer können passieren	q2::inwork 7716,8048 7717,7759
 Behrenstr./Bebelplatz: Einbahnstraße	q3::inwork; 9626,12227 9700,12234 9743,12239 9801,12245
 Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
-#XXX del? Prenzlauer Promenade, zw. Am Steinberg und Ostseestr. Baustelle, Sperrung stadteinwärts an Elsa-Brandström-Straße. Umleitung: Elsa-Brandström -Straße - Neumannstraße - Wisbyer Straße bis 15.06.2005	q4::inwork; 12012,16752 12046,16568 12054,16517 12097,16263 12091,16209
-#XXX schon vorbei? Mohrenstr.: Bauarbeiten	q4::inwork; 9173,11770 9220,11781
-#XXX del: by: markus kringel: Am Spreebord: Baustelle	q4::inwork 4135,12715 4252,12678 4314,12659
-#XXX Segelfliegerdamm: letzte Bauarbeiten	q3::inwork 17797,4441 18058,4627
 #: last_checked: 2007-03-08
 Columbiadamm: Bauarbeiten, Behinderungen möglich	q1::inwork 10213,8665 10598,8563 10796,8498 10911,8457 11271,8325 11416,8283 11632,8302
 #: by: http://www.berlin-straba.de/strecke-alex2.htm (Fertigstellungsdatum)
@@ -341,6 +327,29 @@ Viktoriapark: Fußgänger	q2 8884,9078 8901,9104 8943,9098 8962,9048
 Viktoriapark: starke Steigung, Fußgänger	q4; 8955,9318 9007,9264
 Viktoriapark: starkes Gefälle, Fußgänger	q3; 9007,9264 8955,9318
 Viktoriapark: Fußgänger	q1 9007,9264 8973,9171 9141,9142
+(Parkweg Möllendorffstr. - Rathausstr.): Fußgänger	q2 15415,12179 15520,12160 15628,12246
+Bleckmannweg: Fußgänger, eng	q1 15656,12235 15746,12209
+Hoenerweg: Fußgänger, eng	q1 15670,12298 15790,12289 15896,12273
+S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20109,16264 20111,16316
+(S-Bhf. Raoul-Wallenberg-Str. - Alfred-Döblin-Str.): Fußgänger, Bordsteine	q2 20111,16316 20198,16322
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Fußgänger	q1 20286,16494 20543,16488 20865,16440 21102,16415
+(Kinderbad Platsch - Max-Herrmann-Str.): Fußgänger	q1 21102,16415 21177,16499 21238,16627
+Wuhlewanderweg: Fußgänger	q1 22771,16194 22717,16142 22670,16063 22623,15959 22554,15780 22539,15729 22515,15620 22518,15510 22518,15417 22516,15399 22507,15373 22400,15321 22393,15292 22396,15254 22413,15187 22449,15127
+Wuhlewanderweg: Fußgänger	q1 22449,15127 22550,15087 22741,14761 22806,14631 22843,14497 22827,14356 22839,14149 22825,14109 22516,13799 22359,13599 22323,13533
+Wuhlewanderweg: enge Unterführung	q3 22359,13599 22259,13508
+Wuhlewanderweg: Fußgänger	q1 22323,13533 22259,13508 22191,13414 22221,13027 22199,12955 22036,12367 21998,12204 21970,12153
+Wuhlewanderweg: Fußgänger	q1 22242,11269 22244,11311 22073,11581 22009,11636 21886,11843 21914,12019 21936,12022
+Wuhlewanderweg: Fußgänger	q1 22244,11311 22280,11284
+Wuhlewanderweg: enge Unterführung	q3 22280,11284 22271,11218
+Wuhlewanderweg: Fußgänger	q1 22271,11218 22237,11215
+Wuhlewanderweg: Fußgänger	q1 22238,6195 22225,6244 22214,6271 22150,6324 22099,6401 22025,6612 22054,6622 21976,6848 21897,6952 21609,7202 21569,7273 21590,7414 21613,7521 21620,7647 21604,7715 21570,7751 21616,7863 21630,7933 21598,7922 21568,8052 21348,8254 21276,8374 21185,8483 21181,8766 21210,8898 21280,8954 21351,9066
+Wuhlewanderweg: Fußgänger	q1 21386,9052 21462,9216 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
+Wuhlewanderweg: Fußgänger	q1 21611,9893 21619,9993 21566,10222 21581,10329 21646,10510 21791,10623 21867,10733 21950,10776 22058,10786 22160,10834
+Heinrich-Dathe-Platz: Fußgänger	q2 18512,10337 18484,10411 18394,10348
+Dathepromenade: Fußgänger	q1 18394,10348 18287,10283 18048,10169
+(Dathepromenade - Sewanstr.): Bordsteine	q3 17953,10123 17905,10122
+#: note: die "parkenden Autos" von Uwe Schellenberg in der Rheinsteinstr. habe ich wieder entfernt
+Rheingoldpark: Fußgänger haben Vorrang	q1 19078,8817 19145,8659
 ######################### User Contributions #################################
 #: by: frau heilmann:
 Junker-Jörg-Str.: eng, parkende Autos	q1 18447,8818 18471,8957 18511,9185 18545,9395
@@ -546,7 +555,7 @@ Hackerstr.: schmale Straße, schlecht einzusehen	q1 5017,6387 5034,6425 5075,6509
 #: by: Jochen LIedtke:
 Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3326,16553
 #: by: Katrin Kroschk:
-(Wuhlewanderweg - Teterower Ring): Fußgänger	q1 22190,12934 22444,12990
+(Wuhlewanderweg - Teterower Ring): Fußgänger	q1 22199,12955 22444,12990
 #: by: Timo (fetteMa):
 #: note: dasselbe kann man auch für die beiden anderen Zeilen in der Nachbarschaft eintragen:
 (Dahrendorfzeile - Kurt-Schumacher-Damm): enger Weg, Fußgänger, Bordsteine	q2 2709,14284 2803,14288
@@ -860,7 +869,3 @@ Kühleweinstr.: Autos und Schule	q1 8085,17225 8043,17282 8014,17475 7998,17564 7
 #: by: ^^^
 #: by: Achim Stenzel:
 (Weg an der Markuskirche): viele Fußgänger, Bordsteinkanten	q3 6342,4783 6281,4700
-#: by: Uwe Schellenberg: vvv
-Rheingoldstr.: parkende Autos	q1 18903,9244 18961,9109 18983,9044 19078,8817
-Rheingoldstr.: parkende Autos	q1 19145,8659 19159,8622 19206,8514 19275,8419
-#: by: ^^^

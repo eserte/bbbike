@@ -11,6 +11,9 @@
 #: category_width.Thick: 20
 #: category_color.Wald: green
 #: category_stipple.Wald: baum.xbm
+#: category_dash.Dash: 4,2
+#: category_color.Dash: black
+#: line_dash: 4,4
 #:
 red street	R 8315,12349 8750,12364
 green street	G 8342,12218 8762,12218
@@ -20,3 +23,4 @@ thin street	Thin 8951,12373 9369,12379
 middle street	Middle 8994,12224 9436,12230
 thick street	Thick 9021,12081 9466,12096
 forest with tree stipple	F:Wald 9552,12391 9875,12404 9887,12059 9561,12062
+this line is dashed and black	Dash 8369,11879 9884,11882

@@ -2,7 +2,6 @@
 #: version: $Id: handicap_s-orig,v 4.138 2007/03/18 19:55:49 eserte Exp eserte $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-Stadthausstr., Bahnbr¸cke: Bauarbeiten	q4::inwork 15628,10915 15657,10846
 Behrenstr./Bebelplatz: Einbahnstraﬂe	q3::inwork; 9626,12227 9700,12234 9743,12239 9801,12245
 Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
 Columbiadamm: Bauarbeiten, Behinderungen mˆglich	q1::inwork 10213,8665 10598,8563 10796,8498 10911,8457 11271,8325 11416,8283 11632,8302
@@ -313,6 +312,28 @@ Viktoriapark: Fuﬂg‰nger	q2 8884,9078 8901,9104 8943,9098 8962,9048
 Viktoriapark: starke Steigung, Fuﬂg‰nger	q4; 8955,9318 9007,9264
 Viktoriapark: starkes Gef‰lle, Fuﬂg‰nger	q3; 9007,9264 8955,9318
 Viktoriapark: Fuﬂg‰nger	q1 9007,9264 8973,9171 9141,9142
+(Parkweg Mˆllendorffstr. - Rathausstr.): Fuﬂg‰nger	q2 15415,12179 15520,12160 15628,12246
+Bleckmannweg: Fuﬂg‰nger, eng	q1 15656,12235 15746,12209
+Hoenerweg: Fuﬂg‰nger, eng	q1 15670,12298 15790,12289 15896,12273
+S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20109,16264 20111,16316
+(S-Bhf. Raoul-Wallenberg-Str. - Alfred-Dˆblin-Str.): Fuﬂg‰nger, Bordsteine	q2 20111,16316 20198,16322
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Fuﬂg‰nger	q1 20286,16494 20543,16488 20865,16440 21102,16415
+(Kinderbad Platsch - Max-Herrmann-Str.): Fuﬂg‰nger	q1 21102,16415 21177,16499 21238,16627
+Wuhlewanderweg: Fuﬂg‰nger	q1 22771,16194 22717,16142 22670,16063 22623,15959 22554,15780 22539,15729 22515,15620 22518,15510 22518,15417 22516,15399 22507,15373 22400,15321 22393,15292 22396,15254 22413,15187 22449,15127
+Wuhlewanderweg: Fuﬂg‰nger	q1 22449,15127 22550,15087 22741,14761 22806,14631 22843,14497 22827,14356 22839,14149 22825,14109 22516,13799 22359,13599 22323,13533
+Wuhlewanderweg: enge Unterf¸hrung	q3 22359,13599 22259,13508
+Wuhlewanderweg: Fuﬂg‰nger	q1 22323,13533 22259,13508 22191,13414 22221,13027 22199,12955 22036,12367 21998,12204 21970,12153
+Wuhlewanderweg: Fuﬂg‰nger	q1 22242,11269 22244,11311 22073,11581 22009,11636 21886,11843 21914,12019 21936,12022
+Wuhlewanderweg: Fuﬂg‰nger	q1 22244,11311 22280,11284
+Wuhlewanderweg: enge Unterf¸hrung	q3 22280,11284 22271,11218
+Wuhlewanderweg: Fuﬂg‰nger	q1 22271,11218 22237,11215
+Wuhlewanderweg: Fuﬂg‰nger	q1 22238,6195 22225,6244 22214,6271 22150,6324 22099,6401 22025,6612 22054,6622 21976,6848 21897,6952 21609,7202 21569,7273 21590,7414 21613,7521 21620,7647 21604,7715 21570,7751 21616,7863 21630,7933 21598,7922 21568,8052 21348,8254 21276,8374 21185,8483 21181,8766 21210,8898 21280,8954 21351,9066
+Wuhlewanderweg: Fuﬂg‰nger	q1 21386,9052 21462,9216 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
+Wuhlewanderweg: Fuﬂg‰nger	q1 21611,9893 21619,9993 21566,10222 21581,10329 21646,10510 21791,10623 21867,10733 21950,10776 22058,10786 22160,10834
+Heinrich-Dathe-Platz: Fuﬂg‰nger	q2 18512,10337 18484,10411 18394,10348
+Dathepromenade: Fuﬂg‰nger	q1 18394,10348 18287,10283 18048,10169
+(Dathepromenade - Sewanstr.): Bordsteine	q3 17953,10123 17905,10122
+Rheingoldpark: Fuﬂg‰nger haben Vorrang	q1 19078,8817 19145,8659
 Junker-Jˆrg-Str.: eng, parkende Autos	q1 18447,8818 18471,8957 18511,9185 18545,9395
 Windsteiner Weg: Bodenschwellen	q1 914,598 856,546 790,527 712,517 635,511 585,505 501,501
 Liviusstr.: eng, parkende Autos	q1 10743,4515 10499,4542 10453,4518
@@ -426,7 +447,7 @@ LefËvrestr.: enge Straﬂe	q1 4987,6902 4993,6812 5034,6745 5137,6651 5215,6643 53
 Robert-von-Ostertag-Str.: Pferde und Reiter	q1 -613,1949 -745,2320
 Hackerstr.: schmale Straﬂe, schlecht einzusehen	q1 5017,6387 5034,6425 5075,6509 5101,6579 5137,6651 5184,6723
 Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3326,16553
-(Wuhlewanderweg - Teterower Ring): Fuﬂg‰nger	q1 22190,12934 22444,12990
+(Wuhlewanderweg - Teterower Ring): Fuﬂg‰nger	q1 22199,12955 22444,12990
 (Dahrendorfzeile - Kurt-Schumacher-Damm): enger Weg, Fuﬂg‰nger, Bordsteine	q2 2709,14284 2803,14288
 Retzdorffpromenade: Fuﬂg‰nger	q2 4893,6812 4993,6812
 Lothar-Bucher-Str.: enge Straﬂe	q1 5598,6136 5748,6051 5845,6049 6024,6080
@@ -695,5 +716,3 @@ K¸hleweinstr.: Autos und Schule	q1 8085,17225 8043,17282 8014,17475 7998,17564 7
 (Blohmstr. - Diedersdorfer Str.): kaum Fuﬂg‰nger	q1 9093,-1670 8968,-1576 8845,-1521 8776,-1487 8492,-1376 8073,-1137
 (Dinnendahlstr. - Schichauweg): kaum Fuﬂg‰nger	q1 9123,-1321 8953,-1184 8882,-1142 8873,-1118
 (Weg an der Markuskirche): viele Fuﬂg‰nger, Bordsteinkanten	q3 6342,4783 6281,4700
-Rheingoldstr.: parkende Autos	q1 18903,9244 18961,9109 18983,9044 19078,8817
-Rheingoldstr.: parkende Autos	q1 19145,8659 19159,8622 19206,8514 19275,8419

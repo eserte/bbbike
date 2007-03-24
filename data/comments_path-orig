@@ -1,6 +1,6 @@
 #: title.de: Abbiegevorschriften usw.
 #: title.en: Path instructions etc.
-#: version: $Id: comments_path-orig,v 4.76 2007/03/18 19:53:15 eserte Exp $
+#: version: $Id: comments_path-orig,v 4.76 2007/03/18 19:53:15 eserte Exp eserte $
 #:
 # Verwendete Kategorien:
 # CP;  : Kommentar an Punkt B bei Fahrt von A nach C; Bei entweder A oder C kann statt einer Koordinate 
@@ -29,9 +29,6 @@ Richtung Hochbahnhof Hallesches Tor abbiegen	CP; 9536,10064 9579,10122 9592,1017
 Fußgängerampel am Spittelmarkt zum Wechseln der Straßenseite benutzen, zwischen den Hochhäusern zur Axel-Springer-Str.	PI; 10313,11805 10296,11790 10222,11724 10135,11661 10154,11590
 Straßenseite bei der Fußgängerampel Yorckstr./Katzbachstr. wechseln	PI; 8773,9524 8648,9526 8595,9495
 von der Brandenburgischen in die Paderborner: frühzeitig auf den linken Gehweg wechseln	PI; 3930,9919 3906,10035 3720,9996
-#: XXX: Konfusion: was meinte ich hiermit?: das hier wird wegfallen, falls es eine andere Verbindung zwischen Gregoroviusweg und Bahndamm gibt
-nach links zum Bahndamm abbiegen: bis zur Kreuzung Gregoroviusweg vorfahren	PI; 18690,10016 18698,9996 19675,10410
-#XXX del: lohnt sich nicht, wegen Einbahnstr. in der Ontarioseestr.: Treskowallee - Ontarioseestr: an der Kreuzung Gregoroviusweg auf den linken Gehweg wechseln	PI; 18737,9901 18698,9996 18690,10016 18577,10023
 Treptower Str./Sonnenallee: Ampel an der Hertzbergstr. benutzen	CP 13478,8095 13459,8072 13376,7970
 zur Prenzlauer Promenade: Straßenseite wechseln	PI; 11907,19838 11907,19749 11933,19590
 zur Pasewalker Straße: Straßenseite wechseln	PI; 11950,18529 11934,18576
@@ -266,3 +263,9 @@ zur Kietzer Str.: gegenüber der Mauritiuskirchstr. in die Grünanlage einfahren	C
 Zufahrt zum Gartenbauamt	CS; 9141,9142 8973,9171
 Ellwanger Str. - Attilastr.: Attilastr. in Höhe der Neckarsulmer Str. überqueren	CP; 7382,4503 7450,4397 7601,4485
 Attilastr. - Ellwanger Str.: bereits an der Rottweiler Str. die Straßenseite wechseln	CP2; 7368,4342 7410,4373 7450,4397 7382,4503
+Wuhlewanderweg/Landsberger Allee: den linken Bürgersteig bis zur Ampel benutzen	CP; 22657,16287 22631,16215 22696,16208
+Wuhlewanderweg/Landsberger Allee: bereits an der Ringenwalder Str. die Landsberger Allee überqueren	CP; 22495,16165 22631,16215 22657,16287
+Sewanstr. - Bahndamm: An der Kreuzung Am Tierpark/Sewanstr. auf die "Tierpark"-Straßenseite wechseln 	PI; 18628,10177 18690,10016 18698,9996 19675,10410
+Bahndamm - Am Tierpark: auf dem linken Gehweg bis zur Ampel Gregoroviusweg fahren	CP; 19675,10410 18698,9996 18737,9901
+nach links zum Bahndamm abbiegen: bis zur Kreuzung Gregoroviusweg vorfahren und dort die Straße überqueren	PI; 18577,10023 18690,10016 18698,9996 19675,10410
+Treskowallee - Römerweg: bereits an der Ampel Römerweg die Straßenseite wechseln	PI; 18800,9743 18816,9705 19450,9728

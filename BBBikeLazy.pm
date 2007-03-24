@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.20 2007/03/08 22:28:33 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.21 2007/03/24 22:03:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -447,20 +447,7 @@ sub BBBikeLazy::plotstr_on_demand {
 	    my $i;
 	    my $restrict = undef; #XXX
 	    my $coordsys = $coord_system_obj->coordsys;
-	    my $use_stippleline = 0; # XXX Duplikat in plotstr
-	    if (exists $line_dash{$abk}) {
-		if ($Tk::VERSION >= 800.016) {
-		    $use_stippleline = 2; # new dash code
-		} else {
-		    $use_stippleline = 1;
-		    require Tk::StippleLine;
-		}
-	    } else {
-		if ($Tk::VERSION >= 800.016) {
-		    $use_stippleline = 3; # signal that -dash exists
-		}
-	    }
-
+	    my $use_stippleline = decide_stippleline($abk);
 	    my $label_spaceadd = ''; # XXX?
 	    my $transpose = \&transpose;
 	    my $conv = $lazy_str{$abk}->get_conversion;

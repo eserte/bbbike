@@ -176,7 +176,6 @@ Kirchstr.	1 22196,4847 22234,4789 22243,4710
 Kietzer Str.	1 22312,4593 22358,4521 22396,4464
 Ontarioseestr.	1 18577,10023 18408,10041 18339,10048
 Degnerstr. (außer Tram)	1 16434,15580 16464,15665
-Bornitzstr. (trotz Radroute?)	1 15645,12864 15543,12856
 Henriette-Herz-Platz	1 10371,13006 10255,12959
 Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092 4880,11088 4926,11081 4921,11017
 Dresdener Str./Oranienplatz	1 11258,10682 11232,10745
@@ -397,6 +396,8 @@ Talstr.	1 11776,16753 11825,16666
 #: by: friedolin Turowski:
 Scharfestr.	1 758,3417 935,3430
 Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18447,8818
+Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20775,16977
+(Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20401,16189 20487,16392
 #
 # Potsdam
 #
@@ -504,6 +505,8 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,125
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
+Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3nocross 21960,11269 22242,11269 22326,11266
+Konrad-Wolf-Str./Große-Leege-Str.: wegen Absperrgitter nicht überquerbar	3nocross 16961,16042 16917,16001 16819,15912
 Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2996,15771 2960,15847 2913,15944 2819,16141
 Königsberger Str.: Mittelstreifen nicht passierbar	3nocross 4251,2637 4212,2675 4164,2717
 #: note: Luftbild:
@@ -532,7 +535,7 @@ Hermannstr.: Gitter auf Mittelstreifen	3nocross 11892,8372 11920,8252 11933,8198
 Bundesplatztunnel	3nocross 5360,7554 5359,7619 5358,7681 5358,7746 5356,7862
 Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061 6873,11011 6824,10904
 Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3906,10035 3930,9919
-Treskowallee: Straßenbahntrasse	3nocross 18628,10177 18690,10016 18698,9996 18737,9901
+# XXX del: Treskowallee: Straßenbahntrasse	3nocross 18628,10177 18690,10016 18698,9996 18737,9901
 Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5474,9961 5475,9914 5472,9850
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19694,15149 19735,15155 20266,15456
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19670,15435 19582,15221 19506,15002 19466,14910 19422,14793
@@ -578,6 +581,7 @@ Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12540,8458
 Karl-Marx-Str.: unbequemes Überqueren wegen parkender Autos	3nocross 12830,8031 12865,7923 12898,7832
 Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11763,8337 11892,8372
 Stromstr.: unpassierbarer Mittelstreifen	3nocross 6201,13058 6185,12968 6177,12920 6168,12846
+Märkische Allee: Linksabbiegen verboten	3nocross 20111,16316 20219,16523 20339,16752
 #: XXX: wahrscheinlich (ich wurde durch einen anonymen Kommentar bestätigt)
 Märkische Allee: Linksabbiegen verboten	3nocross 20512,17101 20691,17463 20717,17516 20843,17745 20889,17838 20912,17872 21009,18055
 Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17703,17990 17843,18078
@@ -617,7 +621,7 @@ Linksabbiegen in den Wolfensteindamm gefährlich / unbequem	3nocross 4789,5079 46
 #: by ^^^
 Hauptstr.: Mittelstreifen	3nocross 6687,8385 6765,8480 6912,8617 6990,8685
 #: by: Jirka Klaue:
-Am Tierpark: Straßenbahntrasse	3nocross 18628,10177 18561,10341 18532,10410 18446,10620
+Am Tierpark: Straßenbahntrasse	3nocross 18628,10177 18554,10354 18446,10620
 Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3nocross 12504,11464 12539,11416 12576,11375 12641,11288
 Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3nocross 13001,11000 13080,10956 13144,10921
 Klingelhöferstr.: Mittelstreifen	3 6683,11367 6853,11336 6880,11110
@@ -733,10 +737,12 @@ tragen (Treppe)	0:30 -7418,181
 #: by: stefan ruedel:
 tragen (Treppe)	0:30 -6933,14317
 tragen (Treppe)	0:30 -6934,14291
+tragen (Treppe)	0:30 20673,7260
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+Drängelgitter	BNP:5 22280,11284
 #: by: rjoop vvv
 Drängelgitter	BNP:5 -7228,15504
 Drängelgitter	BNP:5 -7176,15527
@@ -1057,7 +1063,8 @@ Groscurthstr.	1 16369,25230 16458,25193 16428,25107
 #: by: Martha Wimmer [AM]
 Sonnenallee	3nocross 14617,7243 14693,7168 14803,7056
 #: by: Christian Schweda [AM]
-Treskowalle: Straßenbahn	3nocross 18872,9568 18857,9606 18816,9705
+Treskowallee: Straßenbahn	3nocross 18872,9568 18857,9606 18816,9705
+Treskowallee: Straßenbahn	3nocross 18800,9743 18816,9705 18857,9606
 #: by: Kay-Uwe Ludwig [AM] vvv
 Niehofer Str.	1 16942,16174 16815,16214 16692,16253
 Drängelgitter	BNP:10 17371,16194

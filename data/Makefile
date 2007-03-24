@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.133 2007/03/20 22:13:33 eserte Exp $
+# $Id: Makefile,v 2.134 2007/03/24 12:34:23 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -673,6 +673,7 @@ ${PERSISTENTTMPDIR}/.XXX-$(i):	$(i)-orig
 .endfor
 
 ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd:	\
+		Makefile \
 		ampeln-orig \
 		fragezeichen-orig \
 		gesperrt-orig \
@@ -681,6 +682,8 @@ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragez
 		handicap_s-orig \
 		handicap_l-orig
 	echo -n > ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+	echo "#: line_dash: 8, 5" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+	echo "#:" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
 .for i in ampeln-orig fragezeichen-orig gesperrt-orig qualitaet_s-orig qualitaet_l-orig handicap_s-orig handicap_l-orig
 	echo "############################################################" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
 	echo "# source: $(i)" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd

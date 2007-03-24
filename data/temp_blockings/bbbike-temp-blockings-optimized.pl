@@ -862,6 +862,24 @@ userdel	2::temp 8595,12066 8600,12165 8515,12242
          'data' => 'userdel	2::inwork 35962,59463 35809,59122 35755,58845 35950,58308 36151,57931 36230,57632 36686,57106 36621,56807
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005020',
+         'until' => 1174777200,
+         'text' => 'Behrenstr. (Mitte) in beiden Richtungen zwischen Wilhelmstr. und Ebertstr. Veranstaltung, Straße vollständig gesperrt (Europafest) (bis nachts) (06:50) ',
+         'from' => undef,
+         'data' => 'userdel	2::temp 8851,12123 8737,12098 8595,12066
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005040',
+         'until' => 1174788000,
+         'text' => 'Kurfürstendamm Charlottenburg, von Uhlandstraße bis Wittenbergplatz Veranstaltung; Straße gesperrt Lange Nacht des Shoppings',
+         'from' => undef,
+         'data' => 'userdel	2::temp 6137,10689 6040,10751 5942,10803 5797,10881 5725,10892 5657,10868 5484,10810 5351,10760 5229,10716 5076,10658
+',
+         'type' => 'gesperrt'
        }
      
 );

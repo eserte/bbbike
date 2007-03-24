@@ -4240,7 +4240,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002668',
        data  => <<EOF,
-userdel	q4; 15904,12340 15896,12273 15886,12192 15879,12131 15863,11992
+userdel	q4; 15904,12340 15896,12273 15879,12131 15863,11992
 EOF
      },
      { from  => 1146175200, # 2006-04-28 00:00
@@ -5214,7 +5214,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003134',
        data  => <<EOF,
-userdel	1::inwork 15904,12340 15896,12273 15886,12192 15879,12131 15863,11992
+userdel	1::inwork 15904,12340 15896,12273 15879,12131 15863,11992
 EOF
      },
      { from  => 1154210400, # 2006-07-30 00:00
@@ -5892,7 +5892,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003679',
        data  => <<EOF,
-userdel	1::inwork 19532,17911 19139,17416 18730,16973
+userdel	1::inwork 19532,17911 19152,17405 18738,16957
 EOF
      },
      { from  => 1159207506, # 2006-09-25 20:05
@@ -7491,6 +7491,24 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 35962,59463 35809,59122 35755,58845 35950,58308 36151,57931 36230,57632 36686,57106 36621,56807
+EOF
+     },
+     { from  => undef, # 
+       until => 1174777200, # 2007-03-25 00:00
+       text  => 'Behrenstr. (Mitte) in beiden Richtungen zwischen Wilhelmstr. und Ebertstr. Veranstaltung, Straße vollständig gesperrt (Europafest) (bis nachts) (06:50) ',
+       type  => 'gesperrt',
+       source_id => 'IM_005020',
+       data  => <<EOF,
+userdel	2::temp 8851,12123 8737,12098 8595,12066
+EOF
+     },
+     { from  => undef, # 
+       until => 1174788000, # 2007-03-25 04:00
+       text  => 'Kurfürstendamm Charlottenburg, von Uhlandstraße bis Wittenbergplatz Veranstaltung; Straße gesperrt Lange Nacht des Shoppings',
+       type  => 'gesperrt',
+       source_id => 'IM_005040',
+       data  => <<EOF,
+userdel	2::temp 6137,10689 6040,10751 5942,10803 5797,10881 5725,10892 5657,10868 5484,10810 5351,10760 5229,10716 5076,10658
 EOF
      },
     );

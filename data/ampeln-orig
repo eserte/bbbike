@@ -1,5 +1,5 @@
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.102 2007/03/19 23:31:35 eserte Exp eserte $
+#: version: $Id: ampeln-orig,v 4.105 2007/03/24 19:57:03 eserte Exp eserte $
 #:
 	X 9222,8787
 	X 8982,8781
@@ -881,10 +881,10 @@ wirklich?	? 9215,3599
 	X 11950,18529
 	X 17003,19035
 	X 18205,18256
-	X 18730,16973
+	X 18738,16957
 	X 21892,16841
 	X 20575,11698
-	X 22784,16184
+	X 22771,16194
 	X -4063,11805
 	X -4789,11225
 	X -5381,11427
@@ -913,7 +913,6 @@ wirklich?	? 9215,3599
 	X -3308,11565
 	X -3485,15627
 	X -3665,16378
-Wirklich?	? -3775,17087
 	X -1854,24385
 	F -1214,23742
 	X -931,23492
@@ -942,10 +941,7 @@ Wirklich?	? -3775,17087
 	X 12008,20368
 	X 11907,19749
 	X 8540,12420
-#: XXX nur eine Baustellenampel:
 	X 7863,12927
-#: XXX laut Luftbild wahrscheinlich keine Ampel mehr:
-#	X 7814,13284
 	X 7126,12721
 	X 16415,11926
 	X 6757,13112
@@ -1042,7 +1038,8 @@ Wirklich?	? -3775,17087
 	X 11368,13170
 	X 8093,16438
 	X 5376,18773
-geplante Ampel in der Johannisthaler	? 14196,2876
+#: note: laut Luftbild:
+	F 14196,2876
 	X 13070,14245
 	X 13292,13931
 	X 13100,13803
@@ -1443,7 +1440,6 @@ nur Richtung O	X 8142,7221
 	X 13756,13103
 	X 13844,12900
 	X 13089,13323
-#XXX laut Luftbild nicht: add_fragezeichen: Ostseestr./Mandelstr.: ist hier tatsächlich eine Ampel?	X 12911,15708
 	X 14770,14048
 	X 15912,13153
 	X 15838,14319
@@ -1575,7 +1571,7 @@ nur Richtung O	X 8142,7221
 	X -8115,6157
 	X 21977,9023
 	X 18683,8232
-	X 18758,9847
+	X 18800,9743
 	X 14614,9052
 	X 5360,7554
 	X 5785,9043
@@ -1599,7 +1595,7 @@ nur Richtung O	X 8142,7221
 	X 25115,11244
 	X 23633,11265
 	X 23101,11261
-	X 22959,11263
+	X 22937,11265
 	X 23090,12302
 	X 23001,12201
 	X 22920,12855
@@ -1652,7 +1648,6 @@ nur Richtung O	X 8142,7221
 	F 12606,12471
 	X 14449,11742
 	X 21135,10995
-(evtl. ident mit 14420,7937)	? 22912,11264
 	X 23368,3894
 	X 9851,10219
 	X 13035,10635
@@ -1685,7 +1680,6 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 2392,9715
 	F 6272,10926
 #: by: Olaf Schulz vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-	? 11939,16084
 	F 11310,14953
 #: by ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: by: Joern (js):
@@ -1774,8 +1768,6 @@ UBB, halbstündlich	B 50741,179789
 	F 7698,10147
 	X 8430,10710
 	F 5091,11406
-#: XXX mindestens Richtung Süden
-	X 14550,16161
 	X 15109,10911
 	X 15266,10791
 	F 11275,13407
@@ -1818,8 +1810,8 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B -6182,71661
 	B -6100,73876
  	F 6465,8326
-#: add_fragezeichen: evtl. an der Württembergallee
-	F 968,11283
+#: note: Luftbild
+	F 1064,11295
 	X 13161,13360
 #: section Ampeln in Brandenburg vvv
 # nur besondere Ampeln werden hier aufgeführt
@@ -1848,7 +1840,6 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	F 1186,10118
 	F 2234,11440
  	F -4648,11560
-# XXX del: #: temporary: (während der Umleitung über Schadowstr., ca. bis 2005-12-31)	X 9028,12307
 	X 10819,11664
  	X -1709,653
  	X -1668,-1709
@@ -1869,7 +1860,7 @@ Industriebahn	B0 -2410,13746
 	F 11906,15462
 	X 7880,13315
 	X 8017,13629
-#: XXX: Bahnübergang oder Treppen?
+#: note: Luftbild
 	B 15580,-26698
 	X 7717,7759
 	F 12185,13717
@@ -1950,12 +1941,16 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8626,23432
 	X 13144,10921
 #: note: laut Luftbild
 #: XXX: nicht ganz sicher:
+	F 4719,21232
+#: note: laut Luftbild
+#: XXX: nicht ganz sicher:
 	F 1724,3187
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060614.1435.42112.html
 	X 22785,6984
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20050128.0855.23450.html und Luftbild:
 	X 8650,18796
-Hier auch eine Ampel?	? 8687,18755
+#: note: laut Luftbild
+	X 8687,18755
 #: by: Detlef Neubauer [AM], Luftbild
 	F 16848,12614
 	X 11718,10544
@@ -2038,3 +2033,10 @@ Hier auch eine Ampel?	? 8687,18755
 	B 73017,97449
 #: note: Luftbild
 	B -18726,-19242
+	F 17130,16032
+	F 21539,17442
+	F 17209,10361
+	X 10846,17992
+	X -2026,2742
+#: note: Luftbild
+	X 12187,22486

@@ -156,7 +156,6 @@ Kirchstr.	1 22196,4847 22234,4789 22243,4710
 Kietzer Str.	1 22312,4593 22358,4521 22396,4464
 Ontarioseestr.	1 18577,10023 18408,10041 18339,10048
 Degnerstr. (außer Tram)	1 16434,15580 16464,15665
-Bornitzstr. (trotz Radroute?)	1 15645,12864 15543,12856
 Henriette-Herz-Platz	1 10371,13006 10255,12959
 Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092 4880,11088 4926,11081 4921,11017
 Dresdener Str./Oranienplatz	1 11258,10682 11232,10745
@@ -344,6 +343,8 @@ Czarnikauer Str.	1 10613,16403 10449,16415 10225,16436
 Talstr.	1 11776,16753 11825,16666
 Scharfestr.	1 758,3417 935,3430
 Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18447,8818
+Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20775,16977
+(Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20401,16189 20487,16392
 Mauerstr.	1 -13425,-852 -13500,-640
 Wilhelm-Staab-Str.	1 -13003,-1343 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12693,-827 -12712,-734 -12730,-627
@@ -433,6 +434,14 @@ Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Ringbahnstr.	1s 8717,6965 8447,6964
 Björnsonstr.	1s 10209,16674 10197,16528
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
+Möwenweg -> Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3 22237,11215 22242,11269 21960,11269
+Möwenweg -> Wuhlewanderweg: unbequemes Passieren des Mittelstreifens	3 22237,11215 22242,11269 22244,11311
+Alt-Biesdorf -> Wuhlewanderweg: unbequemes Passieren des Mittelstreifens	3 21960,11269 22242,11269 22244,11311
+Alt-Biesdorf -> Möwenweg: unbequemes Passieren des Mittelstreifens	3 22326,11266 22242,11269 22237,11215
+Wuhlewanderweg -> Möwenweg: unbequemes Passieren des Mittelstreifens	3 22244,11311 22242,11269 22237,11215
+Wuhlewanderweg -> Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3 22244,11311 22242,11269 22326,11266
+Große-Leege-Str. -> Konrad-Wolf-Str.: wegen Absperrgitter nicht überquerbar	3 16922,15977 16917,16001 16819,15912
+Konrad-Wolf-Str. -> Große-Leege-Str.: wegen Absperrgitter nicht überquerbar	3 16961,16042 16917,16001 16922,15977
 Zum Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3 2913,15944 2960,15847 2996,15930
 Knoten am Flughafen Tegel -> Zum Flughafen Tegel: Mittelstreifen nicht passierbar	3 2880,15884 2960,15847 2913,15944
 Knoten am Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3 2880,15884 2960,15847 2996,15930
@@ -517,9 +526,6 @@ Düsseldorfer Str. -> Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3 4151,
 Düsseldorfer Str. -> Paderborner Str.: Tunneleinfahrt Adenauerplatz	3 4151,10026 3906,10035 3720,9996
 Paderborner Str. -> Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3 3720,9996 3906,10035 3874,10153
 Paderborner Str. -> Düsseldorfer Str.: Tunneleinfahrt Adenauerplatz	3 3720,9996 3906,10035 4151,10026
-Treskowallee -> Ontarioseestr.: Straßenbahntrasse	3 18698,9996 18690,10016 18577,10023
-Ontarioseestr. -> Am Tierpark: Straßenbahntrasse	3 18577,10023 18690,10016 18628,10177
-Am Bahndamm -> Treskowallee: Straßenbahntrasse	3 19675,10410 18698,9996 18737,9901
 Bundesallee -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3 5474,9961 5475,9914 5541,9923
 Regensburger Str. -> Pariser Str.: unbequem passierbarer Mittelstreifen	3 5541,9923 5475,9914 5416,9928
 Pariser Str. -> Bundesallee: unbequem passierbarer Mittelstreifen	3 5416,9928 5475,9914 5474,9961
@@ -674,6 +680,8 @@ nördliches Spreeufer -> Bundesratufer: unpassierbarer Mittelstreifen	3 6218,1297
 Stromstr. -> Bundesratufer: unpassierbarer Mittelstreifen	3 6177,12920 6185,12968 6131,12978
 Bundesratufer -> Stromstr.: unpassierbarer Mittelstreifen	3 6131,12978 6185,12968 6201,13058
 Bundesratufer -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3 6131,12978 6185,12968 6218,12975
+Alfred-Döblin-Str. -> Märkische Allee: Linksabbiegen verboten	3 20286,16494 20219,16523 20111,16316
+Märkische Allee -> Alfred-Döblin-Str.: Linksabbiegen verboten	3 20339,16752 20219,16523 20286,16494
 zur Märkischen Allee -> Märkische Allee: Linksabbiegen verboten	3 20675,17515 20691,17463 20717,17516
 Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3 20853,17528 20717,17516 20691,17463
 Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3 20843,17745 20717,17516 20853,17528
@@ -762,8 +770,8 @@ Gehweg Gelieustr. -> Wolfensteindamm: Linksabbiegen in den Wolfensteindamm gefäh
 Wolfensteindamm -> Gehweg Gelieustr.: Linksabbiegen in den Wolfensteindamm gefährlich / unbequem	3 4692,4997 4675,4983 4725,4876
 Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3 6815,8691 6912,8617 6990,8685
 Hauptstr. -> Parkweg Heinrich-Lassen-Park: Mittelstreifen	3 6765,8480 6912,8617 6815,8691
-Am Tierpark -> Otto-Schmirgal-Str.: Straßenbahntrasse	3 18628,10177 18561,10341 18482,10306
-Otto-Schmirgal-Str. -> Am Tierpark: Straßenbahntrasse	3 18482,10306 18561,10341 18532,10410
+Am Tierpark -> Otto-Schmirgal-Str.: Straßenbahntrasse	3 18628,10177 18554,10354 18512,10337
+Otto-Schmirgal-Str. -> Am Tierpark: Straßenbahntrasse	3 18512,10337 18554,10354 18446,10620
 Mühlenstr. -> Anschutz-Gelände: Mittelstreifen ohne Überquerungshilfe	3 12504,11464 12539,11416 12594,11467
 Anschutz-Gelände -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3 12594,11467 12539,11416 12576,11375
 Mühlenstr. -> Anschutz-Gelände: Mittelstreifen ohne Überquerungshilfe	3 12539,11416 12576,11375 12638,11433
@@ -847,7 +855,7 @@ tragen (Treppe)	0:30:-4 8428,12859
 tragen (Treppe)	0:30:77 8445,12747
 tragen (Treppe)	0:30:28 17026,11810
 tragen (zwei kurze Treppen)	0:30:3 9453,6415
-tragen (S-Bhf. Raoul-Wallenberg-Str.)	0:30:-246 20007,16313
+tragen (S-Bhf. Raoul-Wallenberg-Str.)	0:30:-244 20007,16313
 tragen (ca. 40 Stufen)	0:59:-124 1659,3226
 tragen (Treppe)	0:30:-114 1715,3257
 tragen (Treppe)	0:30:-104 6187,12851
@@ -859,6 +867,8 @@ tragen (Treppe)	0:30:-43 -633,12739
 tragen (Treppe)	0:30:-118 -7418,181
 tragen (Treppe)	0:30:-64 -6933,14317
 tragen (Treppe)	0:30:2 -6934,14291
+tragen (Treppe)	0:30:-237 20673,7260
+Drängelgitter	BNP:5:-53 22280,11284
 Drängelgitter	BNP:5:66 -7228,15504
 Drängelgitter	BNP:5:66 -7176,15527
 Drängelgitter	BNP:5:-154 14285,12190
@@ -1218,6 +1228,7 @@ Krebsgang -> Sonnenallee: Sonnenallee	3 14792,7192 14693,7168 14803,7056
 Sonnenallee -> Krebsgang: Sonnenallee	3 14617,7243 14693,7168 14792,7192
 Treskowallee -> Rheinpfalzallee: Straßenbahn	3 18816,9705 18857,9606 18931,9629
 Rheinpfalzallee -> Treskowallee: Straßenbahn	3 18931,9629 18857,9606 18872,9568
+Römerweg -> Treskowallee: Straßenbahn	3 19450,9728 18816,9705 18857,9606
 Niehofer Str.	1 16942,16174 16815,16214 16692,16253
 Drängelgitter	BNP:10:-99 17371,16194
 Orlamünder Weg	1 7035,1814 7119,1829 7174,1718 7195,1703 7214,1710 7242,1754 7258,1757 7332,1718

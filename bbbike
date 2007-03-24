@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.296 2007/03/20 22:14:27 eserte Exp $
+# $Id: bbbike,v 3.297 2007/03/24 12:31:25 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -205,7 +205,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.296 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.297 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -5626,19 +5626,19 @@ sub generate_plot_functions {
 	    return if defined $ignore and $cat_hin =~ /$ignore/;
 	    return if defined $restrict and $cat_hin !~ /$restrict/;
 	    my $this_color_hin = $cat_hin =~ /^\#/ ? $cat_hin :
-		$layer_category_color{$abk}{$cat_hin}
+		($layer_category_color{$abk} && $layer_category_color{$abk}{$cat_hin})
 		|| $category_color{$cat_hin}
 		|| $str_color{$abk} || 'white';
 	    my $this_color_rueck = defined $cat_rueck ?
 		($cat_rueck =~ /^\#/ ? $cat_rueck :
-		 $layer_category_color{$abk}{$cat_rueck}
+		 ($layer_category_color{$abk} && $layer_category_color{$abk}{$cat_rueck})
 		 || $category_color{$cat_rueck}
 		 || $str_color{$abk} || 'white') :
 		     'white';
-	    my $this_width_hin = $layer_category_width{$abk}{$cat_hin}
+	    my $this_width_hin = ($layer_category_width{$abk} && $layer_category_width{$abk}{$cat_hin})
 		 || $category_width{$cat_hin} || $default_width || 1;
 	    my $this_width_rueck = defined $cat_rueck ?
-		($layer_category_width{$abk}{$cat_rueck} || $category_width{$cat_rueck} || $default_width || 1) :
+		(($layer_category_width{$abk} && $layer_category_width{$abk}{$cat_rueck}) || $category_width{$cat_rueck} || $default_width || 1) :
 		    1;
 	    my @coordlist;
 	CROSSINGS_LOOP:
@@ -5811,7 +5811,7 @@ sub generate_plot_functions {
 		if ($cat_hin =~ /^F:(.*)$/) { # Fläche, no $cat_rueck handling here
 		    $category = $1;
 		    my($color, $rest) = split(/\|/, $category);
-		    my $stipple = $layer_category_stipple{$abk}{$category} || $category_stipple{$category};
+		    my $stipple = ($layer_category_stipple{$abk} && $layer_category_stipple{$abk}{$category}) || $category_stipple{$category};
 		    if (defined $rest && $rest ne "") {
 			if ($rest =~ /^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/) {
 			    $image = $1;
@@ -5821,7 +5821,7 @@ sub generate_plot_functions {
 			}
 		    }
 		    if ($color eq 'I') { $abk = 'i' } # Inseln
-		    $color = $layer_category_color{$abk}{$color} || $category_color{$color} || $color;
+		    $color = ($layer_category_color{$abk} && $layer_category_color{$abk}{$color}) || $category_color{$color} || $color;
 		    $stipple = Tk::findINC($stipple) if $stipple;
 		    $stipple = '@' . $stipple if $stipple;
 		    if ($str_outline{$abk} && @coordlist > 2) {
@@ -5893,8 +5893,8 @@ sub generate_plot_functions {
 				 "$abk-$cat_hin", "$abk-" . $i],
 		      );
 
-		} else {
-		    if (@coordlist == 2) {
+		} else { # points or lines
+		    if (@coordlist == 2) { # point
 			# Points do not have $cat_rueck
 			if ($abk eq 'v') {
 			TRY_IMAGE: {
@@ -5919,9 +5919,9 @@ sub generate_plot_functions {
 						 "$abk-$cat_hin", "$abk-" . $i,
 						 @extra_tags],
 				      );
-		    } else {
+		    } else { # lines
 			my @std_tags = ($abk, $strname,"$abk-$cat_hin","$abk-" . $i);
-			my $line_dash = $category_dash{$cat_hin} || $line_dash{$abk};
+			my $line_dash = ($layer_category_dash{$abk} && $layer_category_dash{$abk}{$cat_hin}) || $layer_line_dash{$abk} || $category_dash{$cat_hin} || $line_dash{$abk};
 		        if (@addinfo_hin) { # ignore @addinfo_rueck for now
 			    for my $addinfo_hin (@addinfo_hin) {
 			        if ($addinfo_hin eq 'Tu') {
@@ -6124,7 +6124,7 @@ EOF
     . $parse_coords_code . <<'EOF';
 	    my($x, $y) = transpose($xx, $yy);
 
-	    if (defined $layer_category_image{$abk}{$category}) {
+	    if ($layer_category_image{$abk} && defined $layer_category_image{$abk}{$category}) {
 		$category = "IMG:$layer_category_image{$abk}{$category}";
 	    } elsif (defined $category_image{$category}) {
 		$category = "IMG:$category_image{$category}";
@@ -6197,8 +6197,8 @@ EOF
 		$c->createLine($cx1,$cy1,$cx2,$cy2,$cx3,$cy3,
 			       -tags => "$abk-bg");
 	    } elsif ($abk =~ /^L(\d+)/) {
-		my $color = $category =~ /^\#/ ? $category : exists $layer_category_color{$abk}{$category} ? exists $layer_category_color{$abk}{$category} : exists $category_color{$category} ? $category_color{$category} : undef;
-		my $width = $layer_category_width{$abk}{$category} || $category_width{$category} || $p_width{$abk} || $default_width || 6;
+		my $color = $category =~ /^\#/ ? $category : exists $layer_category_color{$abk} && exists $layer_category_color{$abk}{$category} ? $layer_category_color{$abk}{$category} : exists $category_color{$category} ? $category_color{$category} : undef;
+		my $width = ($layer_category_width{$abk} && $layer_category_width{$abk}{$category}) || $category_width{$category} || $p_width{$abk} || $default_width || 6;
 		$c->createLine($x, $y, $x, $y,
 			       (defined $color ? (-fill => $color) : ()),
 			       -width => $width,
@@ -9019,19 +9019,7 @@ sub plotstr {
 
     my $coordsys = $coord_system_obj->coordsys;
 
-    my $use_stippleline = 0; # XXX Duplikat in BBBikeLazy
-    if (exists $line_dash{$abk}) {
-	if ($Tk::VERSION >= 800.016) {
-	    $use_stippleline = 2; # new dash code
-	} else {
-	    $use_stippleline = 1;
-	    require Tk::StippleLine;
-	}
-    } else {
-	if ($Tk::VERSION >= 800.016) {
-	    $use_stippleline = 3; # signal that -dash exists
-	}
-    }
+    my $use_stippleline = decide_stippleline($abk);
 
     destroy_delayed_restack();
 
@@ -9180,6 +9168,19 @@ if ($str->pos != scalar @{$str->{Data}}) { status_message("warning: " . $str->po
     warn __LINE__ . ": $@" if ($@);
     $progress->Finish;
     DecBusy($top);
+}
+
+sub decide_stippleline {
+    my($abk) = @_;
+    if ($Tk::VERSION < 800.016) {
+	if (exists $line_dash{$abk} || exists $layer_line_dash{$abk} || exists $layer_category_dash{$abk}) {
+	    require Tk::StippleLine;
+	    return 1;
+	} else {
+	    return 0;
+	}
+    }
+    return 3; # signal that -dash exists or is needed
 }
 
 # Arguments:
@@ -11975,7 +11976,7 @@ sub enterroute {
     if (@l) {
 	if ($leave_after) { $leave_after->cancel; undef $leave_after }
 	my $b_str = join(" / ", @l);
-	if ($devel_host) { # XXX
+	if (defined $str && $devel_host) { # XXX
 	    my $bi_str = balloon_info_from_all_tags($c); # XXX
 	    $bi_str =~ s{\Q$str\E\n?}{}; # XXX
 	    $b_str .= "\n" . $bi_str if $bi_str; # XXX
@@ -12934,13 +12935,14 @@ sub reset_free_layer {
     delete $layer_post_leave_command{$abk};
     delete $layer_line_width{$abk};
     delete $layer_line_length{$abk};
-    delete $layer_line_dash{$abk};
     delete $layer_line_arrow{$abk};
+    delete $layer_line_dash{$abk};
     delete $layer_category_size{$abk};
     delete $layer_category_color{$abk};
     delete $layer_category_width{$abk};
     delete $layer_category_image{$abk};
     delete $layer_category_stipple{$abk};
+    delete $layer_category_dash{$abk};
     remove_from_stack($abk);
 }
 
@@ -19120,30 +19122,48 @@ sub handle_global_directives {
     }
     return if !$glob_dir;
     my %accept_global_hash_directives = map{($_,1)}
-	qw(line_width line_length
-	   line_dash line_arrow
-	   category_size category_color
+	qw(category_size category_color
 	   category_width category_image
-	   category_stipple);
+	   category_stipple category_dash);
     my %accept_global_hashref_directives = map{($_,1)}
 	qw(str_attrib p_attrib);
     my %accept_global_catless_directives = map{($_,1)}
 	qw(str_color outline_color);
+    my %accept_global_catless_directives_with_layer_prefix = map{($_,1)}
+	qw(line_width line_length
+	   line_dash line_arrow);
+
+    my $get_val = sub {
+	my($key, $vals) = @_;
+	my $val = $vals->[0];
+	if ($key =~ m{(?:_dash|_width|^line_length$)}) { # list of directives using arrays
+	    $val = [split /\s*,\s*/, $val];
+	}
+	$val;
+    };
+
     # XXX scrollregion
     while(my($directive, $vals) = each %$glob_dir) {
 	if ($accept_global_catless_directives{$directive}) {
 	    no strict 'refs';
-	    ${$directive}->{$abk} = $vals->[0];
+	    ${$directive}{$abk} = $get_val->($directive, $vals);
+	} elsif ($accept_global_catless_directives_with_layer_prefix{$directive}) {
+	    no strict 'refs';
+	    ${"layer_".$directive}{$abk} = $get_val->($directive, $vals);
 	} else {
-	    my($key, $val) = $directive =~ /^([^\.]+)\.([^\.]+)/;
-	    next if !defined $key;
-	    if ($accept_global_hash_directives{$key}) {
-		no strict 'refs';
-		${"layer_".$key}{$abk}{$val} = $vals->[0];
-	    } elsif ($accept_global_hashref_directives{$key}) {
-		no strict 'refs';
-		${$key}->{$abk."-".$val} = $vals->[0]; # XXX $abk-???
+	    my($key, $cat) = $directive =~ /^([^\.]+)\.([^\.]+)/;
+	    if (defined $key) {
+		if ($accept_global_hash_directives{$key}) {
+		    no strict 'refs';
+		    ${"layer_".$key}{$abk}{$cat} = $get_val->($key, $vals);
+		    next;
+		} elsif ($accept_global_hashref_directives{$key}) {
+		    no strict 'refs';
+		    ${$key}->{$abk."-".$cat} = $get_val->($key, $vals); # XXX $abk-???
+		    next;
+		}
 	    }
+	    #warn "Don't know how to handle global directive <$key>";
 	}
     }
 }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.173 2007/03/16 21:39:37 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.174 2007/03/24 12:32:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -119,25 +119,8 @@ sub advanced_option_menu {
 	$opbm->command(-label => 'Destroy all toplevels',
 		       -command => \&destroy_all_toplevels);
 	$opbm->command(-label => 'Re-call some subs',
-		       -command => sub {
-			   my @errors;
-			   while(my($k,$v) = each %autouse_func) {
-			       (my $module = $k) =~ s{::}{/}g;
-			       $module .= ".pm";
-			       delete $INC{$module};
-			       eval "use autouse $k => qw(" . join(" ", @$v) . ");";
-			       if ($@) {
-				   push @errors, "Can't autouse $k: $@";
-			       }
-			   }
-			   define_item_attribs();
-			   generate_plot_functions();
-			   set_bindings();
-			   Msg::setup_file(); # reload message catalog
-			   if (@errors) {
-			       die "@errors";
-			   }
-		       });
+		       -command => \&recall_some_subs,
+		      );
     }
     $opbm->command(-label => M"Datenverzeichnis ändern ...",
 		   -command => \&change_datadir);
@@ -2288,6 +2271,33 @@ sub destroy_all_toplevels {
     # Special toplevels:
     my $w = $top->Subwidget("Statistics");
     $w->destroy if Tk::Exists($w);
+}
+
+sub recall_some_subs {
+    my @info;
+    my $has_errors = 0;
+    push @info, "Reloading autoused functions";
+    while(my($k,$v) = each %autouse_func) {
+	(my $module = $k) =~ s{::}{/}g;
+	$module .= ".pm";
+	delete $INC{$module};
+	eval "use autouse $k => qw(" . join(" ", @$v) . ");";
+	if ($@) {
+	    push @info, "Can't autouse $k: $@";
+	    $has_errors++;
+	}
+    }
+    push @info, "Redefining item attributes"; 
+    define_item_attribs();
+    push @info, "Generating plot functions";
+    generate_plot_functions();
+    push @info, "Reset bindings";
+    set_bindings();
+    push @info, "Reload message catalog";
+    Msg::setup_file();
+    if ($has_errors) {
+	status_message(join("\n",@info), "die");
+    }
 }
 
 use vars qw(%module_time %module_check $main_check_time);
