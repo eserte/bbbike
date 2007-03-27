@@ -3019,7 +3019,7 @@ EOF
        text  => 'L 15; (B109-Boitzenburg); zw. Abzw. Klein Sperrenwalde u. OL Gollmitz, Prenzlauer Str. Straßenbauarbeiten Vollsperrung 16.10.2005-19.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 31882,98397 30743,99403
+userdel	2 31946,98379 30743,99403
 EOF
      },
      { from  => 1128981600, # 2005-10-11 00:00
@@ -3165,7 +3165,7 @@ EOF
        text  => 'L 15; (B109 südl. Prenzlau-Boitzenburg); OD Gollmitz Leitungsverlegung Vollsperrung 27.10.2005-16.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 30743,99403 30504,99595
+userdel	q4 30743,99403 30482,99609
 EOF
      },
      { from  => 1130450400, # 2005-10-28 00:00
@@ -3393,8 +3393,8 @@ EOF
        text  => 'L 15 Fürstenberg-Menz OD Fürstenberg, Rheinsberger Str. grundhafter Straßenbau Vollsperrung; Umleitung 30.11.2005-22.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -8787,85721 -8886,85737
-userdel	q4 -8886,85737 -9850,84800
+userdel	q4 -8775,85947 -8893,85743
+userdel	q4 -8893,85743 -9850,84800
 EOF
      },
      { from  => 1133650800, # 2005-12-04 00:00
@@ -4414,7 +4414,7 @@ EOF
        text  => 'L 015 Fürstenberger Str. OL Lychen, ab Vogelsangstr. bis Am Markt Einbau Deckschicht Vollsperrung 13.05.2006-13.05.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 2797,89387 2111,89378
+userdel	q4 2797,89387 2480,89399 2111,89378
 EOF
      },
      { from  => 1147522037, # 2006-05-13 14:07
@@ -5222,7 +5222,7 @@ EOF
        text  => 'L 015 B109 südl. Prenzlau-Boitzenburg OD Gollmitz Einbau Deckschicht Vollsperrung 31.07.2006-11.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 30743,99403 30504,99595
+userdel	2::inwork 30743,99403 30482,99609
 EOF
      },
      { from  => 1163442022, # 2006-11-13 19:20
@@ -5716,7 +5716,7 @@ EOF
        text  => 'L 015 B109 südl. Prenzlau-Boitzenburg OD Gollmitz Einbau Deckschicht Vollsperrung 01.09.2006-03.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 30743,99403 30504,99595
+userdel	2::inwork 30743,99403 30482,99609
 EOF
      },
      { from  => 1157138648, # 2006-09-01 21:24

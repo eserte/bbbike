@@ -960,14 +960,18 @@ if (defined $init_scale_massstab) {
 
 $srtbike_photo = load_photo($top, 'srtbike_solid.' . $default_img_fmt);
 if ($os eq 'win' || $^O eq 'cygwin') {
-    # XXX srtbike32.* looks broken on Win98, so use srtbike16.*
-    #$srtbike_icon = load_photo($top, 'srtbike32.' . $default_img_fmt);
-    # $srtbike_icon is also used in info window, so stick to 16x16 in every case.
-    $srtbike_icon = load_photo($top, 'srtbike16.' . $default_img_fmt);
-    if ($srtbike_icon) {
-#XXX Produces funny colors --- Tk problem?!
-#	$top->iconmask('@' . $FindBin::RealBin . '/images/srtbike32_mask.xbm');
+    # srtbike32.* looks broken on Win98,
+    # and srtbike16.* looks broken on WinXP
+    if ($ENV{OS} eq 'Windows_NT') { # this seems to be the case for XP
+	$srtbike_icon = load_photo($top, 'srtbike32.' . $default_img_fmt);
+    } else {
+	#XXX what does this mean? # $srtbike_icon is also used in info window, so stick to 16x16 in every case.
+	$srtbike_icon = load_photo($top, 'srtbike16.' . $default_img_fmt);
     }
+#XXX Produces funny colors --- Tk problem?!
+#    if ($srtbike_icon) {
+#	$top->iconmask('@' . $FindBin::RealBin . '/images/srtbike32_mask.xbm');
+#    }
 } else {
     # 16x16 is the preferred size for mini-icons in KDE
     # works also for twm (however, a little bit tiny)
@@ -5739,9 +5743,10 @@ sub generate_plot_functions {
 		my $draw_strname_for_area = sub {
 		    my($name, $add) = split(/\|/, $strname);
 		    $name = "" if !defined $name;
-		    if ($add) {
-		        $name .= " $add";
-		    }
+		    ## The addition is mostly for missing geographic context; not necessary when drawing
+		    #if ($add) {
+		    #    $name .= " $add";
+		    #}
 		    $name =~ s/\cK/\n/g; # vert tab -> newline
 		    ($mx,$my) = get_polygon_center(@coordlist);
 		    if (!defined $mx || ! do {

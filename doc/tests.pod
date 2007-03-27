@@ -19,7 +19,8 @@ das Brandenburger Tor. Falls die Datenbasis nicht zu alt ist, ist es
 sehr wahrscheinlich, dass temporäre Sperrungen erscheinen (mit
 Baustellen- oder Kalendarsymbol).
 
-Straßenauswahlliste erscheint. Die A-Z-Leiste sollte vollständig sein.
+Straßenauswahlliste erscheint. Die A-Z-Leiste sollte vollständig sein
+und die Schrift sollte gut lesbar sein.
 
 Splashscreen verschwindet. Das aufrufende Terminal sollte nun nicht im
 Vordergrund erscheinen.
@@ -88,8 +89,8 @@ Ein Dateiselektor erscheint. Beliebigen Dateinamen ohne Extension in
 einem temporären Verzeichnis eingeben und mit E<quot>SaveE<quot> oder
 E<quot>OkE<quot> bestätigen. Die erzeugte Datei sollte eine
 E<quot>.txtE<quot> besitzen und mit einem üblichen Texteditor/-viewer
-zu öffnen und zu lesen sein. Die Datei sollte die Routenliste
-enthalten.
+zu öffnen und zu lesen sein. Umlaute sollten möglichst korrekt
+dargestellt sein. Die Datei sollte die Routenliste enthalten.
 
 =head3 Auf E<quot>PalmE<quot> klicken
 
@@ -234,8 +235,8 @@ Die Karte wird in der angeklickten Richtung gescrollt.
 
 Die Karte wird nach oben/unten gescrollt.
 
-B<NOTE>: Mangels funktionierender Wheelmouse ist diese Funktion unter
-Windows noch nicht getestet worden.
+B<NOTE>: Die Wheelmouse-Funktion benötigt ein neues Tk (804 und
+besser), welches noch nicht bei der Standard-Windows-Distro dabei ist.
 
 =head3 Shift drücken und dabei das Scrollrad betätigen
 
@@ -295,7 +296,8 @@ Man wählt nun einen Namen aus, z.B. F<test> und bestätigt.
 Ein Dateiselektor öffnet sich im Verzeichnis F<.../.bbbike/route>. Der
 vorher verwendete Name sollte als F<test.bbr> (X11) oder F<test>
 (Windows) sichtbar sein. Unter Windows sollte diese Datei mit einem
-BBBike-Icon versehen sein. Diese Datei anklicken und laden.
+BBBike-Icon versehen sein, falls BBBike bereits per Installer
+installiert wurde. Diese Datei anklicken und laden.
 
 Der Kartenausschnitt passt sich an die geladene Route an. In der
 Statuszeile wird angezeigt, um welchen Typ Routendatei es sich handelt

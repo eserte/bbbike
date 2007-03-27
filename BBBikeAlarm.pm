@@ -77,7 +77,7 @@ sub enter_alarm {
 			 )->grid(-row => 0, -column => 1,
 				 -sticky => "w");
 	$e->focus;
-	if (defined $args{-location} && eval { require Astro::Sunrise; 1 }) {
+	if (defined $args{-location} && eval { require Astro::Sunrise; Astro::Sunrise->VERSION(0.85); 1 }) {
 	    my($px,$py) = (ref $args{-location} eq 'ARRAY'
 			   ? @{ $args{-location} }
 			   : split /,/, $args{-location}
@@ -678,7 +678,9 @@ sub tk_interface {
 	($wait*1000, sub {
 	     $top->deiconify;
 	     $top->raise;
-	     system(qw(xset s reset));
+	     if ($Tk::platform eq 'unix') {
+		 system(qw(xset s reset));
+	     }
 
 	     del_tk_alarm($$);
 

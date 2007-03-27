@@ -146,7 +146,7 @@ my @req_table =
    }],
   [qw/Palm::PalmDoc	0	all	2	base/,
    'für das Erzeugen von palmdoc-Dateien mit der Routenbeschreibung'],
-  [qw/Astro::Sunrise	0	all	0	base/,
+  [qw/Astro::Sunrise	0.85	all	0	base/,
    'Anzeige des Sonnenuntergangs/-aufgangs im Info-Fenster'],
   [qw/WWW::Shorten	0	all	0	base/,
    'Kürzen der langen Mapserver-Links im Info-Fenster'],

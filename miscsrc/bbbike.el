@@ -94,7 +94,9 @@
 
 (defun bbbike-search-x-selection ()
   (interactive)
-  (let* ((sel (x-selection))
+  (let* ((sel (if (fboundp 'w32-get-clipboard-data)
+		  (w32-get-clipboard-data)
+		(x-selection)))
 	 (rx  sel))
     (if sel
 	(let ((search-state 'begin)

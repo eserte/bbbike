@@ -20,10 +20,9 @@ Eine einfache WWW-Version kann man unter der Adresse
 L<http://www.bbbike.de> finden.
 
 Wenn eine Verbindung zum Internet existiert, kann B<BBBike> die
-aktuellen Wetterdaten von der FU Berlin (Dahlem) bzw. vom DWD Berlin
-(Tempelhof) fE<uuml>r die WindstE<auml>rke und -richtung auswerten.
-Diese Daten können bei der Berechnung der Fahrzeit und Leistung
-verwendet werden.
+aktuellen Wetterdaten von der FU Berlin (Dahlem) die WindstE<auml>rke
+und -richtung auswerten. Diese Daten können bei der Berechnung der
+Fahrzeit und Leistung verwendet werden.
 
 Ein Teil von B<BBBike> ist das perl-Modul L<BikePower|BikePower>. Mit
 diesem Modul kann (wie beim ursprE<uuml>nglichen
@@ -114,8 +113,8 @@ einer StraE<szlig>e liegt).
 
 =head1 INFORMATIONSLEISTE
 
-Im oberen Bereich des Fensters befindet sich die Informationsleiste
-von BBBike.
+Im oberen Bereich des Fensters, unterhalb der Menüleiste (falls
+eingeblendet), befindet sich die Informationsleiste von BBBike.
 
 =over 4
 
@@ -135,7 +134,8 @@ Klick wird die StraE<szlig>en-Auswahl angezeigt.
 
 LE<auml>nge der aktuellen Route in Kilometern. Mit Klick auf den
 Schriftzug E<quot>kmE<quot> kann zwischen der Angabe in Kilometern und
-Metern umgeschaltet werden.
+Metern umgeschaltet werden. Falls englisch als Sprache eingestellt
+wurde, ist auch die Auswahl "Meilen" möglich.
 
 =item %
 
@@ -159,7 +159,8 @@ E<auml>hnlichen Strecken in die Fahrzeit ein-/ausgeschaltet werden.
 Fahrzeit bei dieser durchschnittlichen Leistung, abhE<auml>ngig von
 der Windgeschwindigkeit und von Steigungen. Die Berechnung wird mit
 dem Modul L<BikePower|BikePower> durchgefE<uuml>hrt. Mit Klick auf das
-W-Feld kann eine andere Leistung (in Watt) eingegeben werden. Mit
+W-Feld kann eine andere Leistung (in Watt) eingegeben werden. Als
+Faustregel kann man 50W für eine gemütliche Fahrweise annehmen. Mit
 Klick auf die Fahrzeit wird das Alarm-Fenster geE<ouml>ffnet. Mit der
 rechten Maustaste kann die jeweilige Leistung als
 E<quot>ReferenzleistungE<quot> (intern wird diese auf eine
@@ -180,7 +181,7 @@ mit folgenden Punkten:
 =item Wetterstation
 
 Hier kann ausgewE<auml>hlt werden, welche der Quellen im Internet
-(Meteorologisches Institut der FU oder Deutscher Wetterdienst)
+(Meteorologisches Institut der FU oder ggfs. andere Quellen)
 verwendet werden soll. Mit "aktuellste" werden alle Quellen nach den
 aktuellsten Angaben E<uuml>berprE<uuml>ft.
 

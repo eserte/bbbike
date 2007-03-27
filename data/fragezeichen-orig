@@ -222,6 +222,8 @@ Berliner Mauerradweg: wird die Strecke von der Glienicker Brücke an der Pfauenin
 Berliner Mauerradweg: wird die Strecke von der Glienicker Brücke an der Pfaueninsel entlang zur Fähre Wannsee-Kladow geführt?	?; -5499,1349 -5518,1396 -5588,1454 -5645,1504 -5815,1649 -5874,1771 -5883,1948 -5836,2119 -5719,2323 -5653,2481 -5663,2609 -5722,2714 -5749,2701
 Berliner Mauerradweg: wird die Strecke von der Glienicker Brücke an der Pfaueninsel entlang zur Fähre Wannsee-Kladow geführt?	? -5499,1349 -5253,1395 -5161,1387 -4944,1298 -4841,1414 -4892,1487 -5029,1713 -5171,2450 -5285,2795 -5519,3167 -6605,4019 -6797,4562 -6842,4744 -6853,4756 -6970,4546 -6981,4469 -7092,4198 -7182,4137 -7263,4145 -7547,4131 -7686,4182 -7714,4279 -7792,4249 -7990,4086 -8162,4025 -8305,3897 -8401,3894 -8439,3913 -8473,3860 -8503,3837 -8681,3747 -8799,3778
 nördlicher Radweg auf der Bulgarischen Str.: siehe Message-ID: <1kl0p5nkwlmb1.dlg@tebe.my-fqdn.de>	? 15166,8489 15383,8662 15580,8839
+Route Lychen - Feldberg: wie sieht der Routenverlauf aus? Qualität?	? 627,89430 551,89619
+Route Lychen - Templin: wie sieht der Routenverlauf aus? Qualität?	? 2480,89399 2468,89293
 ######################################################################
 #
 #  AUFNAHME IN DB FRAGLICH
@@ -390,8 +392,6 @@ Stolzenhagen - Kreuzbruch: Qualität?	? 12427,41870 11625,42525 10934,44311 10485
 Basdorf - Bernauer Heide: passierbar (Bahnstrecke), Qualität, Kfz-los?	? 12887,36543 13723,36178
 Zugbrücke/Schleuse?	? 35066,4548
 Zugbrücke?	? 32737,183789
-Hohengüstow - Neu-Kleinow: Qualität (in Hohengüstow (Oberdorfstr.) wahrscheinlich Asphalt, weiter nördlich wahrscheinlich guter glatter Feldweg)?	? 48159,93211 48327,93356 48405,93835 48405,93838 48509,93897 48616,94199 48671,94257 48680,94357 48815,94454 48939,94804
-Hohengüstow - Blankenburg: Qualität (wahrscheinlich sandiger Feldweg)?	? 46834,92518 46677,92471 46485,92455 46404,92416 46119,92379 46054,92201 45946,91999 45912,91885 45849,91816 45698,91724 45518,91677 45324,91532 45025,91296
 eigentlich ein Knoten	? -9586,13296
 eigentlich ein Knoten	? -11250,13690
 B109n bei Großbeeren: ist diese Streckenführung temporär?	? 2715,-6365 2890,-6178 3131,-6334
@@ -626,7 +626,7 @@ Zühlen - Rheinsberg: Qualität?	? -30695,73610 -30112,73900 -27371,75722
 Zühlen - Binenwalde: Qualität?	? -30695,73610 -30962,73512 -31387,73037 -31537,72225 -31787,71700 -32112,71377
 #: unverified_by: http://www.ruppin.de/rheinsberg/freizeit/sport/radw_zechlh.html
 Beerenbusch - Zechlinerhütte: Qualität?	? -22787,81662 -23550,82037 -24975,82587 -26520,83231
-Neuglobsow - Rheinsberg: laut http://www.ruppin.de/rheinsberg/freizeit/sport/radw_neuglobsow.html teilweise Waldweg, teilweise Radweg?	? -14337,81562 -14795,81699 -14946,81614 -15229,81572 -15596,81274 -15943,81207 -16224,80970 -16961,80707 -17299,80205 -17707,79391 -17901,79432 -18074,79390 -18050,79047 -18179,78812 -18200,78576 -18350,78427 -18393,78235 -18544,78020
+Neuglobsow - Rheinsberg: laut http://www.ruppin.de/rheinsberg/freizeit/sport/radw_neuglobsow.html teilweise Waldweg, teilweise Radweg?	? -14354,81575 -14795,81699 -14946,81614 -15229,81572 -15596,81274 -15943,81207 -16224,80970 -16961,80707 -17299,80205 -17707,79391 -17901,79432 -18074,79390 -18050,79047 -18179,78812 -18200,78576 -18350,78427 -18393,78235 -18544,78020
 Hasselwerderstr.: Einbahnstraße, auch für Radfahrer?	? 18268,5739 18023,5623
 #: XXX ein anonymer Eintrag hat einen (diesen?) Mittelweg mit "loser Sandweg" attributiert:
 Mittelweg (Altglienicke, Bohnsdorf): Qualität (laut ADFC-Karte mäßig geeignet)?	? 20265,858 20171,698 20035,348
@@ -636,7 +636,7 @@ Pirolstr.: loser Sandweg (Q2): auf Biesdorfer oder Karlshorster Seite?	? 20716,1
 Neubrandenburg: Hinterste Mühle - Stadt (Waldweg), wie geht es weiter?	? -78,126443 -112,126528 -62,126684 -96,126768 -231,126900 -428,127368 -493,127450 -671,127478
 Eichbuschallee: Teil der Eichbuschallee im Plänterwald: Qualität?	? 16136,7886 16534,8182
 Hof Sternhagen - Lindenhagen: Qualität? (Deckenerneuerung 5/2005)	? 35466,92211 34375,92125 33537,92937 33412,93612 33342,94000
-Beenz - Gollmitz: Qualität?	? 30850,95280 30813,95463 30179,95743 29814,96060 28583,96645 29156,97266 29424,97790 29862,98765 30033,98985 30284,99405
+Beenz - Kröchlendorff: Qualität? (zumindest die Kröchlendorffer Seite ist asphaltiert)	? 30850,95280 30813,95463 30179,95743 29814,96060 28388,96768
 Lindenhagen - Beenz: Qualität?	? 32388,94460 31922,94902 31069,95292 30850,95280 30510,95193 30216,94987
 Teltow Richtung Süden: Qualität? Straßennamen?	? 3377,-366 3589,-673 3615,-757 3781,-889 3970,-918 3765,-1732 3750,-2087
 Teltow Richtung Süden (Bahnstr., Flugplatzstr.): Qualität? Wie geht es weiter?	? 3494,-1950 3417,-2460 3310,-3001 3092,-3093
@@ -672,9 +672,9 @@ Berlin - Kopenhagen zwischen Liebenwalde und Zehdenick: Qualität? Nur für Radfah
 Berlin - Kopenhagen: Zehdenick - Burgwall/Marienthal: Qualität? Nur für Radfahrer?	? 3493,63862 3731,65818 3212,66343 3350,67075 3187,67481 2656,68100 2831,68281 2925,69200 2850,69212 2850,69618 2737,69975 2731,70156 2406,70381 2387,70443 2412,70506 2350,70775 2200,70818 2037,71025 1918,71193 1912,71400 1712,71537 650,71562
 Berlin - Kopenhagen: Zabelsdorf - Dannenwalde: Qualität? Nur für Radfahrer?	? -1143,71100 -1987,71562 -2768,71868 -4125,72768 -5425,73225 -6006,73781
 Berlin - Kopenhagen: Dannenwalde - Bredereiche: Qualität? Nur für Radfahrer?	? -5525,74800 -5525,75100 -5062,77525 -5212,77625 -4150,79437 -3712,79825 -3112,80075 -2600,80500 -2343,80985
-Berlin - Kopenhagen: Himmelpfort - Fürstenberg: Qualität? Nur für Radfahrer?	? -3067,85696 -3900,85950 -4425,86375 -5850,86775 -6487,86850 -6987,87237 -7537,87225 -8650,87437
-Fürstenberg, Am Röblinsee: Qualität (von der Bahn aus gesehen: Betonstraße)? Nur für Radfahrer (wahrscheinlich nicht, jedenfalls nicht im Ort)?	? -8762,85962 -9025,85875 -9437,86012 -9875,86012 -10475,85837 -10450,85637 -10350,85500 -10412,85175 -9850,84800
-Berlin - Kopenhagen: Neuglobsow - Strasen: Qualität? Nur für Radfahrer?	? -14337,81562 -14387,81975 -14287,83137 -14362,83350 -15025,84150 -15000,84662 -15037,84887 -15062,85237 -14837,85562 -14762,87137 -15087,87275 -15637,87287 -16250,86900 -16537,86912 -16687,87187 -16975,87387 -17212,87675 -17750,88037 -18287,88225 -18587,88437 -19075,88375
+Berlin - Kopenhagen: Himmelpfort - Fürstenberg: Qualität? Nur für Radfahrer? (zumindest auf der Fürstenberger Seite Kopfsteinpflaster und für Autos offen)	? -3067,85696 -3900,85950 -4425,86375 -5850,86775 -6487,86850 -6987,87237 -7537,87225 -8527,87454
+Fürstenberg - Steinförde: Qualität?	? -10475,85837 -10697,85804 -11029,85712 -11441,85757 -11755,85901 -11980,86102 -12189,86217 -12573,86500
+Berlin - Kopenhagen: Neuglobsow - Strasen: Qualität? Nur für Radfahrer?	? -14354,81575 -14387,81975 -14287,83137 -14362,83350 -15025,84150 -15000,84662 -15037,84887 -15062,85237 -14837,85562 -14762,87137 -15087,87275 -15637,87287 -16250,86900 -16537,86912 -16687,87187 -16975,87387 -17212,87675 -17750,88037 -18287,88225 -18587,88437 -19075,88375
 Berlin - Kopenhagen: Strasen - Wesenberg: Qualität? Nur für Radfahrer?	? -20312,89975 -21112,89187 -21650,89287 -21650,89125 -21962,89212 -22025,89325 -22475,89287 -22825,89075 -23012,89337 -22995,89694 -22987,90087 -22850,90312 -22825,90625 -22387,90637 -22387,90800 -22587,90875 -23175,90787 -23200,90925 -22812,91737 -22637,92025 -22625,92350 -22675,92437 -22637,92650 -22425,92650 -22050,93775 -22237,94075 -22037,94512 -21362,95487
 Am Lehnitzsee: Qualität?	? -171,38119 -70,38205 -21,38485 709,38985 892,39436 1246,39667 1281,39850
 Birkenwerder, entlang der S-Bahn: Qualität?	? 2257,31124 2233,31465 2053,32051
@@ -728,9 +728,9 @@ Stolpe - Usedom: Qualität des Radweges? In Stolpe wahrscheinlich Asphalt/Verbund
 Bansin, Fischerweg: geht es weiter zur Bergstr.?	? 56934,175371 57000,175587
 Friedrich-Wilhelm-Str.: Einbahnstraße nur für Autofahrer oder auch für Radfahrer?	? 8371,5896 8282,5909
 Mürow - Kerkow: Qualität? Auf der östlichen Seite sah es gut aus (asphaltiert)	? 50387,70821 49950,70956 49512,70978 49007,71214
-Melzow - Gramzow: Qualität (asphaltiert, im Sommer 2006 waren hier Bauarbeiten?)	? 42245,86063 42751,86432 43129,86934 43348,87056 43567,87443 43765,87790 43915,87900 44265,88348 44366,88409 44527,88424 45086,88674 46529,89125
-Melzow - Meichow: Qualität?	? 43567,87443 44323,87544 45024,87474 45751,87363 46178,87310 46360,87391 46483,87364 47128,87233 47671,87099 48195,87137 48459,87290 48404,87292
-Blankenburg - Warnitz: Qualität (nördliche Seite war asphaltiert)?	? 45213,90527 45131,90434 44929,89725 45006,89303 44926,89017 45086,88674
+#: last_checked: 2007-03-25
+Melzow - Gramzow, Autobahnbrücke: wegen Bauarbeiten gesperrt, Qualität könnte mäßiger Asphalt sein	? 45082,88685 46529,89125
+Melzow - Meichow: Qualität (zumindest auf der westlichen Seite asphaltiert)?	? 43567,87443 44323,87544 45024,87474 45751,87363 46178,87310 46360,87391 46483,87364 47128,87233 47671,87099 48195,87137 48307,87186
 Niklasstr. zwischen Lindenthaler Allee und Potsdamer Chaussee: Qualität?	? -1269,2892 -1070,2924 -928,2900 -791,2819 -740,2771
 Freischützstr.: Qualität?	? 13268,22002 13340,21948 13612,21806
 #: XXX unklarer Eintrag von Jörg Nickisch, Rückfrage nicht möglich:
@@ -1231,9 +1231,10 @@ Mittenwalde - Blankensee: Qualität?	? 26483,86997 26687,86919 27565,87126 28997,
 Blankensee - Gerswalde: Qualität?	? 28997,87991 30648,87663
 Mittenwalde - Herrenstein: Qualität?	? 26687,86919 27614,86005 28229,85981 30006,85501
 Herrenstein - Gerswalde: Qualität?	? 30006,85501 31940,84981 32245,85285
-Kröchlendorff - Wichmannsdorf: Qualität (wahrscheinlich Feld/Waldwege)	? 28583,96645 27985,95975 26596,95950 25914,95365 25450,94634 24967,93994
-Boitzenburg - Rummelpforter Mühle: Qualität (wahrscheinlich Feld/Waldwege)	? 22884,95931 23427,96072 24402,96048 25012,95414 25450,94634
-Klein Sperrenwalde: Qualität?	? 29424,97790 29960,97778 30545,97656 30752,98302 30935,98315 31301,98168 31520,98339 31764,98266 31882,98397
+Boitzenburg - Rummelpforter Mühle: Qualität? (wahrscheinlich Feld/Waldwege)	? 22884,95931 23427,96072 24402,96048 25012,95414
+Rummelpforter Mühle - Wichmannsdorf: Qualität? (wahrscheinlich Feld/Waldwege, für das südliche Ende Feldweg bestätigt)	? 25012,95414 25403,94606
+Klein Sperrenwalde: Qualität? (zumindest am nordöstlichen Ende ist schlechtes Kopfsteinpflaster, das westliche Ende ist asphaltiert)	? 29238,97789 29960,97778 30545,97656 30752,98302 30935,98315 31301,98168 31520,98339 31764,98266 31946,98379
+Klein Sperrenwalde - Gollmitz: Qualität? (zumindest das Gollmitzer Ende ist asphaltiert)	? 30752,98302 30630,98619 30225,98927 29850,99017
 Ellingen - Uckerfeld: Qualität, wahrscheinlich asphaltiert?	? 37437,105478 38034,105319
 U-Bhf. Deutsche Oper: Fußgängerampel in Bau	? 4134,11672
 Paster-Behrens-Str.: Qualität (laut ADFC-Karte südlich der Parchimer gut geeignet)? Existiert ein Durchgang zum Hüsung?	? 13409,4716 13394,4500 13394,4373 13348,4290 13132,4023
@@ -1401,3 +1402,5 @@ Manetstr.: Qualität?	? 16412,15559 15753,15845
 Löcknitz - Bergholz: Qualität (wahrscheinlich Asphalt)?	? 61715,116163 60460,115792
 Bergholz - Grimme: Qualität?	? 60460,115792 59564,114268 58985,114226
 Grimme - Brüssow: Qualität?	? 58985,114226 58692,114171 58644,113939 58570,113866 58577,113531 58619,113397 58625,113293 58595,113171 58522,113056 58497,112964 58461,112854 58272,112531 58199,112288 57900,111758 57821,111672
+Radweg Lychen - Himmelpfort: Qualität? (Am Anfang bei Lychen noch asphaltiert)	? 234,89271 213,89085 188,88982 -12,88820 -1764,87733 -2306,87318 -3001,86675 -3236,86304
+L15 - Neuthymen: Qualität? (zumindest am südlichen Ende asphaltiert)	? -4847,88034 -5332,88826 -5429,89137 -5457,89570 -5493,89713

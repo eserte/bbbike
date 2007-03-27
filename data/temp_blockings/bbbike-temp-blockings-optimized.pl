@@ -745,22 +745,8 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        },
        undef,
        undef,
-       {
-         'until' => 1174946400,
-         'text' => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 23.03.2007-26.03.2007 ',
-         'from' => 1174518000,
-         'data' => 'userdel	2::inwork 73204,97424 73017,97449 72745,97584
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1174777200,
-         'text' => 'B 167 Marienwerderstr. OD Finowfurt, zw. Zum Krugacker u. Werbelliner Str. Fahrbahnsanierung Vollsperrung 20.03.2007-24.03.2007 ',
-         'from' => 1174258800,
-         'data' => 'userdel	q4::inwork 28589,49775 27634,49953
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => 1175032800,
          'text' => 'L 059 Stolzenhainer Str. Bahnübergang in der OD Prösen Gleisbauarbeiten Vollsperrung 26.03.2007-27.03.2007 ',
@@ -769,16 +755,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005018',
-         'until' => 1174968000,
-         'text' => 'Ebertstr. zwischen Behrenstr. und Dorotheenstr. und Straße des 17. Juni zwischen Brandenburger Tor und Y.-Rabin-Str.: Veranstaltung, Straße vollständig gesperrt (Europafest) (bis 27.03.2007 morgens)',
-         'from' => 1174515627,
-         'data' => 'userdel	2::temp 8540,12420 8560,12326 8539,12286 8515,12242 8214,12205 8089,12186 8063,12182
-userdel	2::temp 8595,12066 8600,12165 8515,12242
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1175810400,
          'text' => 'B 246 Brücker Str. OL Beelitz, zw. Bahnübergang u. Karl-Marx-Str. Ausbau Kreisverkehr Vollsperrung 21.01.2007-05.04.2007 ',
@@ -803,23 +780,8 @@ userdel	2::temp 8595,12066 8600,12165 8515,12242
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1174863600,
-         'text' => 'L 063 Finsterwalder Str. OD Lauchhammer, zw. Schehlenstr. und F.-Mehring-Str. Einbau Deckschicht Vollsperrung 23.03.2007-25.03.2007 ',
-         'from' => 1174518000,
-         'data' => 'userdel	q4::inwork 35072,-102150 35379,-103141
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_004990',
-         'until' => 1174863600,
-         'text' => 'Bahnhofstr. (Köpenick) in beiden Richtungen in Höhe der Bahnhofsbrücke Brückenarbeiten, Straße vollständig gesperrt, eine Umleitung ist eingerichtet (bis 25.03.2007 04 Uhr)',
-         'from' => 1174593295,
-         'data' => 'userdel	2::inwork 22428,6063 22475,6151
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1176760800,
          'text' => 'B 112 Forster Str. Bahnunterführung in der OD Guben Gleis- u. Brückensanierung Vollsperrung 13.04.2007-16.04.2007 ',
@@ -846,38 +808,12 @@ userdel	2::temp 8595,12066 8600,12165 8515,12242
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005044',
-         'until' => 1174755600,
-         'text' => 'Straßenfest in der Domäne Dahlem Dahlem, Königin-Luise-Str. Sperrungen von Sa 10:00 bis Sa 18:00 ',
-         'from' => 1174640400,
-         'data' => 'userdel	2::temp 2823,5672 2771,5678 2654,5678
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1178316000,
          'text' => 'L 023 Britz-Joachimsthal zw. AS Chorin und Britz Deckenerneuerung Vollsperrung 26.03.2007-04.05.2007 ',
          'from' => 1174773600,
          'data' => 'userdel	2::inwork 35962,59463 35809,59122 35755,58845 35950,58308 36151,57931 36230,57632 36686,57106 36621,56807
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_005020',
-         'until' => 1174777200,
-         'text' => 'Behrenstr. (Mitte) in beiden Richtungen zwischen Wilhelmstr. und Ebertstr. Veranstaltung, Straße vollständig gesperrt (Europafest) (bis nachts) (06:50) ',
-         'from' => undef,
-         'data' => 'userdel	2::temp 8851,12123 8737,12098 8595,12066
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_005040',
-         'until' => 1174788000,
-         'text' => 'Kurfürstendamm Charlottenburg, von Uhlandstraße bis Wittenbergplatz Veranstaltung; Straße gesperrt Lange Nacht des Shoppings',
-         'from' => undef,
-         'data' => 'userdel	2::temp 6137,10689 6040,10751 5942,10803 5797,10881 5725,10892 5657,10868 5484,10810 5351,10760 5229,10716 5076,10658
 ',
          'type' => 'gesperrt'
        }

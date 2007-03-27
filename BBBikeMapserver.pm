@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.36 2007/03/22 20:01:59 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.37 2007/03/27 15:12:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2005 Slaven Rezic. All rights reserved.
@@ -442,8 +442,10 @@ sub get_extents {
     my $center_to = $self->{CenterTo};
     if (!defined $center_to || $center_to eq "") {
 	if (!$self->has_coords) {
-	    # Default is Brandenburger Tor, do not hardcode XXX get from Geography object
-	    $center_to = ["8593,12243"];
+	    # There should be a possibility to specify other
+	    # Geography::* classes
+	    require Geography::Berlin_DE;
+	    $center_to = Geography::Berlin_DE->center;
 	} else {
 	    $center_to = $self->get_first_coord;
 	}
