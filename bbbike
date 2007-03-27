@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.297 2007/03/24 12:31:25 eserte Exp eserte $
+# $Id: bbbike,v 3.298 2007/03/27 21:34:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -205,7 +205,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.297 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.298 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -15679,7 +15679,7 @@ sub show_route_strname {
 	}	    
 
 	my $ges_entf = 0;
-	my($next_entf, $ges_entf_s, $next_winkel, $next_richtung)
+	my($next_entf, $ges_entf_s, $next_winkel, $next_richtung, $next_extra)
 	  = ("", "", undef, "");
 	my($aggr_begin_dist, $aggr_streets) = (0, "");
 	my $aggr_dir = undef;
@@ -15689,10 +15689,10 @@ sub show_route_strname {
 	my %seen_comments;
 	for(my $i = 0; $i <= $#search_route; $i++) {
 	    my($str, $index_arr);
-	    my($entf, $winkel, $richtung)
-	      = ($next_entf, $next_winkel, $next_richtung);
+	    my($entf, $winkel, $richtung, $extra)
+	      = ($next_entf, $next_winkel, $next_richtung, $next_extra);
 	    my $entf_s;
-	    ($str, $next_entf, $next_winkel, $next_richtung, $index_arr)
+	    ($str, $next_entf, $next_winkel, $next_richtung, $index_arr, $next_extra)
 	      = @{$search_route[$i]};
 	    my $route_strnames_index;
 	    if ($str ne '...' &&
@@ -15717,7 +15717,7 @@ sub show_route_strname {
 	    if ($i > 0) {
 		if (!$winkel) { $winkel = 0 }
 		$winkel = int($winkel/10)*10;
-		if ($winkel < ROUTE_STRAIGHT_ANGLE) {
+		if ($winkel < ROUTE_STRAIGHT_ANGLE && (!$extra || !$extra->{ImportantAngle})) {
 		    $richtung = "";
 		} else {
 		    my $artikel = (!defined $Msg::lang || $Msg::lang =~ /^(|de)$/

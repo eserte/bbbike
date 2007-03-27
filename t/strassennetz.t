@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassennetz.t,v 1.16 2006/10/07 13:27:13 eserte Exp $
+# $Id: strassennetz.t,v 1.18 2007/03/27 21:32:43 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -14,6 +14,8 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin",
 	);
 use Getopt::Long;
+use Data::Dumper qw(Dumper);
+use Storable qw(dclone);
 
 use Strassen::Core;
 use Strassen::Lazy;
@@ -34,7 +36,7 @@ BEGIN {
     }
 }
 
-plan tests => 38;
+plan tests => 45;
 
 print "# Tests may fail if data changes\n";
 
@@ -53,28 +55,32 @@ if ($do_xxx) {
     goto XXX;
 }
 
-my $bahnhofstr_coords = "16962,15440 16898,15453 16819,15495";
-my $bahnhofstr_route  = [map { [split /,/] } split /\s+/, $bahnhofstr_coords];
 {
-    pass("-- Bahnhofstr. (Hohenschˆnhausen): einseitiges Kopfsteinpflaster --");
+    # Melchiorstr.: m‰ﬂiger Asphalt	Q1; 11726,11265 11542,11342
+    my $coords = "11542,11342 11726,11265";
+    my $route  = [map { [split /,/] } split /\s+/, $coords];
 
-    my $net = StrassenNetz->new($qs);
-    $net->make_net_cat(-obeydir => 1, -net2name => 1);
-    my $route = $bahnhofstr_route;
-    is($net->get_point_comment($route, 1, undef), 0, "Without multiple");
-    $route = [ reverse @$route ];
-    like(($net->get_point_comment($route, 1, undef))[0], qr/kopfstein/i);
-}
+    {
+	pass("-- Melchiorstr.: einseitige Qualit‰tsangabe --");
 
-{
-    pass("-- Bahnhofstr. (Hohenschˆnhausen): einseitiges Kopfsteinpflaster (dito) --");
+	my $net = StrassenNetz->new($qs);
+	$net->make_net_cat(-obeydir => 1, -net2name => 1);
+	my $route = dclone $route;
+	is($net->get_point_comment($route, 0, undef), 0, "Without multiple");
+	$route = [ reverse @$route ];
+	like(($net->get_point_comment($route, 0, undef))[0], qr/m‰ﬂiger Asphalt/i);
+    }
 
-    my $net = StrassenNetz->new($qs);
-    $net->make_net_cat(-obeydir => 1, -net2name => 1, -multiple => 1);
-    my $route = $bahnhofstr_route;
-    is(scalar $net->get_point_comment($route, 1, undef), 0, "With multiple");
-    $route = [ reverse @$route ];
-    like(($net->get_point_comment($route, 1, undef))[0], qr/kopfstein/i);
+    {
+	pass("-- Melchiorstr.: einseitige Qualit‰tsangabe (dito) --");
+
+	my $net = StrassenNetz->new($qs);
+	$net->make_net_cat(-obeydir => 1, -net2name => 1, -multiple => 1);
+	my $route = dclone $route;
+	is(scalar $net->get_point_comment($route, 0, undef), 0, "With multiple");
+	$route = [ reverse @$route ];
+	like(($net->get_point_comment($route, 0, undef))[0], qr/m‰ﬂiger Asphalt/i);
+    }
 }
 
 {
@@ -197,7 +203,6 @@ my $bahnhofstr_route  = [map { [split /,/] } split /\s+/, $bahnhofstr_coords];
     cmp_ok(scalar(@compact_route), "<", scalar(@route), "Actually less hops in compacted route");
 }
 
-XXX:
 {
     pass("-- Bug reported by Dominik --");
 
@@ -213,6 +218,84 @@ EOF
     my $got_undef = 0;
     for (@route) { $got_undef++ if !defined $_->[StrassenNetz::ROUTE_ANGLE] }
     is($got_undef, 0);
+}
+
+XXX:
+{
+    # Bug reported by Andreas Wirsing, but was already known to me
+
+    {
+	# Wilhelmstr. - Stresemannstr.
+	my $route = <<'EOF';
+#BBBike route
+$realcoords_ref = [[9392,10260], [9376,10393], [9250,10563]];
+EOF
+	my $ret = Route::load_from_string($route);
+	my $path = $ret->{RealCoords};
+	my(@route) = $s_net->route_to_name($path);
+	is($route[0][StrassenNetz::ROUTE_EXTRA]{ImportantAngle}, '!', "Found an important angle (Wilhelmstr. -> Stresemannstr.)")
+	    or diag(Dumper(\@route));
+
+	# Add another point before start. This triggers a special case
+	# in route_to_name with combinestreet set (which is default)
+	unshift @$path, [9395,10233];
+	(@route) = $s_net->route_to_name($path);
+	is($route[0][StrassenNetz::ROUTE_EXTRA]{ImportantAngle}, '!', "Found an important angle (longer Wilhelmstr. -> Stresemannstr.)")
+	    or diag(Dumper(\@route));
+
+	# And add yet another point before start, just to see if everything
+	# is right if ImportantAngle is set to the *2nd* street in route
+	unshift @$path, [9401,10199];
+	(@route) = $s_net->route_to_name($path);
+	is($route[1][StrassenNetz::ROUTE_EXTRA]{ImportantAngle}, '!', "Found an important angle (Mehringdamm -> Wilhelmstr. -> Stresemannstr.)")
+	    or diag(Dumper(\@route));
+    }
+
+    {
+	# gleiche Kreuzung, Wilhelmstr. geradeaus
+	my $route = <<'EOF';
+#BBBike route
+$realcoords_ref = [[9392,10260], [9376,10393], [9366,10541]];
+EOF
+	my $ret = Route::load_from_string($route);
+	my $path = $ret->{RealCoords};
+	my(@route) = $s_net->route_to_name($path);
+	is($route[0][StrassenNetz::ROUTE_EXTRA]{ImportantAngle}, undef, "Important angle not set here (Wilhelmstr.)")
+	    or diag(Dumper(\@route));
+    }
+
+    {
+	# Martin-Luther-Str. -> Dominicusstr.
+	my $route = <<'EOF';
+#BBBike route
+$realcoords_ref = [[6470,8809], [6470,8681], [6590,8469]];
+EOF
+	my $ret = Route::load_from_string($route);
+	my $path = $ret->{RealCoords};
+	my(@route) = $s_net->route_to_name($path);
+	is($route[0][StrassenNetz::ROUTE_EXTRA]{ImportantAngle}, '!', "Found an important angle (Martin-Luther-Str. ->Dominicusstr.)")
+	    or diag(Dumper(\@route));
+
+	# reverse route: "geradeaus" ist OK
+	@$path = reverse @$path;
+	(@route) = $s_net->route_to_name($path);
+	is($route[0][StrassenNetz::ROUTE_EXTRA]{ImportantAngle}, undef, "Important angle not set now (Dominicusstr. -> Martin-Luther-Str.)")
+	    or diag(Dumper(\@route));
+
+    }
+
+    {
+	# gleiche Kreuzung, Martin-Luther-Str. geradeaus
+	my $route = <<'EOF';
+#BBBike route
+$realcoords_ref = [[6470,8809], [6470,8681], [6471,8639]];
+EOF
+	my $ret = Route::load_from_string($route);
+	my $path = $ret->{RealCoords};
+	my(@route) = $s_net->route_to_name($path);
+	is($route[0][StrassenNetz::ROUTE_EXTRA]{ImportantAngle}, undef, "Important angle not set here (Martin-Luther-Str.)")
+	    or diag(Dumper(\@route));
+    }
 }
 
 __END__

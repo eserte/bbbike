@@ -292,13 +292,14 @@ sub route_to_name_1 {
 	if ($i+1 < $#{$route_ref}) {
 	    ($richtung, $winkel) = Strassen::Util::abbiegen(@{$route_ref}[$i .. $i+2]);
 	}
+	my $extra;
 	if (@strname &&
 	    ($combinestreet && $str eq $strname[$#strname]->[ROUTE_NAME])) {
 	    $strname[$#strname][ROUTE_DIST] += $entf;
 	    $strname[$#strname][ROUTE_ANGLE] = $winkel;
 	    $strname[$#strname][ROUTE_DIR] = $richtung;
 	    $strname[$#strname][ROUTE_ARRAYINX][1] = $i+$start_i;
-	    my $extra = $strname[$#strname][ROUTE_EXTRA];
+	    $extra = $strname[$#strname][ROUTE_EXTRA];
 	    if ($extra) {
 		if ($args{-wanttrafficlights}) {
 		    $extra->{Trafficlights} = +0;
@@ -312,13 +313,29 @@ sub route_to_name_1 {
 	    $val->[ROUTE_ANGLE]	 = $winkel;
 	    $val->[ROUTE_DIR]	 = $richtung;
 	    $val->[ROUTE_ARRAYINX] = [$i+$start_i, $i+$start_i];
-	    my $extra = $val->[ROUTE_EXTRA] = {};
+	    $extra = $val->[ROUTE_EXTRA] = {};
 	    if ($args{-wanttrafficlights}) {
 		$extra->{Trafficlights} = 0;
 		$extra->{TrafficlightAtPoint} = 0;
 	    }
 	    push @strname, $val;
 	}
+
+
+	if ($i+1 < $#{$route_ref}) {
+	    my $xy3 = Route::_coord_as_string([$route_ref->[$i+2][0],
+				               $route_ref->[$i+2][1]]);
+	    for my $neighbour (keys %{$self->{Net}{$xy2}}) {
+		next if $neighbour eq $xy1 || $neighbour eq $xy3;
+		my($this_richtung, $this_winkel) = Strassen::Util::abbiegen(@{$route_ref}[$i .. $i+1],
+									    [split/,/,$neighbour]);
+		next if ($this_richtung ne $richtung && $this_winkel >= 30);
+		next if $winkel < $this_winkel;
+		$extra->{ImportantAngle} = '!';
+		last;
+	    }
+	}
+
 
     }
 
@@ -410,13 +427,14 @@ sub route_to_name_2 {
 	if ($i+1 < $#{$route_ref}) {
 	    ($richtung, $winkel) = Strassen::Util::abbiegen(@{$route_ref}[$i .. $i+2]);
 	}
+	my $extra;
 	if (@strname &&
 	    ($combinestreet && $str eq $strname[$#strname]->[ROUTE_NAME])) {
 	    $strname[$#strname][ROUTE_DIST] += $entf;
 	    $strname[$#strname][ROUTE_ANGLE] = $winkel;
 	    $strname[$#strname][ROUTE_DIR] = $richtung;
 	    $strname[$#strname][ROUTE_ARRAYINX][1] = $i+$start_i;
-	    my $extra = $strname[$#strname][ROUTE_EXTRA];
+	    $extra = $strname[$#strname][ROUTE_EXTRA];
 	    if ($extra) {
 		if ($args{-wanttrafficlights}) {
 		    $extra->{Trafficlights} = +0;
@@ -430,7 +448,7 @@ sub route_to_name_2 {
 	    $val->[ROUTE_ANGLE]	 = $winkel;
 	    $val->[ROUTE_DIR]	 = $richtung;
 	    $val->[ROUTE_ARRAYINX] = [$i+$start_i, $i+$start_i];
-	    my $extra = $val->[ROUTE_EXTRA] = {};
+	    $extra = $val->[ROUTE_EXTRA] = {};
 	    if ($args{-wanttrafficlights}) {
 		$extra->{Trafficlights} = 0;
 		$extra->{TrafficlightAtPoint} = 0;
@@ -438,11 +456,15 @@ sub route_to_name_2 {
 	    push @strname, $val;
 	}
 
+
+	warn "Cannot determine ImportantAngle with this format!";
+
+
     }
 
     @strname;
 }
-# line 359 Generated_src.pm
+# line 378 Generated_src.pm
 sub reachable_1 {
     my($self, $coord) = @_;
     if (!exists $self->{Net}{$coord}) {
@@ -453,7 +475,7 @@ sub reachable_1 {
 	1;
     }
 }
-# line 359 Generated_src.pm
+# line 378 Generated_src.pm
 sub reachable_2 {
     my($self, $coord) = @_;
     if (!defined $self->{Net}[$self->{Coord2Index}{$coord}]) {

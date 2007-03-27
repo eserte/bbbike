@@ -3626,9 +3626,9 @@ Buttmannstr.: schlechtes Kopfsteinpflaster	Q3 8481,16136 8659,16327
 Klingerstr.: Asphalt	Q0 14853,8670 14922,8730
 #: by: Tom Bschor
 #: note: laut ADFC-Karte "nicht geeignet"
-Cyclopstr.: schlechtes Kopfsteinpflaster, stark wellig und Schlaglöcher	Q3 5138,21358 5312,21228 5354,21232
+Cyclopstr.: schlechtes Kopfsteinpflaster, stark wellig und Schlaglöcher	Q3 5106,21418 5312,21228 5354,21232
 #: by: Corinna Orth (Korrektur des Eintrags von Tom Bschor für diesen Abschnitt)
-Cyclopstr.: asphaltiert	Q0 4825,21718 5138,21358
+Cyclopstr.: asphaltiert	Q0 4825,21718 5106,21418
 #: by: Steini vvv
 Lange Str. (Lichterfelde): Asphalt	Q0 5250,1725 5396,1774 5421,1786 5519,1831 5656,1882 5781,1936 5865,1975
 Bahnhofstr. (Lichterfelde): Asphalt	Q0 4767,2853 5058,2702 5324,2553 5367,2528
@@ -4430,11 +4430,15 @@ Greizer Str.: Beton	Q0 6592,882 6566,798 6579,740 6619,712 6739,691
 #: by: Thiemo Guenther: vvv
 Lange Enden: guter Asphalt	Q0 4732,21271 4660,21250 4376,21170
 Lange Enden: guter Asphalt	Q0 4660,21250 4719,21232
+(Lange Enden - Rosentreterpromenade): Parkweg	Q1 4376,21170 4315,21142 4294,21148 4226,21133
 #: by: ^^^
 #: by: Jennifer (jhofmeister):
 Salbeiweg: Asphalt	Q0 17541,2454 17477,2397 17391,2318 17289,2224
 #: by: Frank (...pirkebner...):
 Westiger Pfad: Beton	Q0 1625,18416 1617,18313 1596,18214
+#: by: Pamela (...ruhnke):
+Löwenzahnweg: guter Asphalt	Q0 16045,2434 16106,2514 16183,2615 16260,2717 16376,2862
+######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14202,13140 14096,12827

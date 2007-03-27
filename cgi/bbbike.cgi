@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.47 2007/03/23 22:23:01 eserte Exp $
+# $Id: bbbike.cgi,v 8.48 2007/03/27 21:33:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -705,7 +705,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.47 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.48 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -3490,9 +3490,9 @@ sub search_coord {
 	    @path = $r->path_list;
 	}
 
-	my($next_entf, $ges_entf_s, $next_winkel, $next_richtung);
-	($next_entf, $ges_entf_s, $next_winkel, $next_richtung)
-	    = (0, "", undef, "");
+	my($next_entf, $ges_entf_s, $next_winkel, $next_richtung, $next_extra);
+	($next_entf, $ges_entf_s, $next_winkel, $next_richtung, $next_extra)
+	    = (0, "", undef, "", undef);
 
 	my $ges_entf = 0;
 	for(my $i = 0; $i <= $#strnames; $i++) {
@@ -3502,15 +3502,15 @@ sub search_coord {
 	    my $entf_s;
 	    my $raw_direction;
 	    my $route_inx;
-	    my($entf, $winkel, $richtung)
-		= ($next_entf, $next_winkel, $next_richtung);
+	    my($entf, $winkel, $richtung, $extra)
+		= ($next_entf, $next_winkel, $next_richtung, $next_extra);
 	    ($strname, $next_entf, $next_winkel, $next_richtung,
-	     $route_inx) = @{$strnames[$i]};
+	     $route_inx, $next_extra) = @{$strnames[$i]};
 	    $strname = Strasse::strip_bezirk_perfect($strname, $city);
 	    if ($i > 0) {
 		if (!$winkel) { $winkel = 0 }
 		$winkel = int($winkel/10)*10;
-		if ($winkel < 30) {
+		if ($winkel < 30 && (!$extra || !$extra->{ImportantAngle})) {
 		    $richtung = "";
 		    $raw_direction = "";
 		} else {
@@ -6403,7 +6403,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/03/23 22:23:01 $';
+    my $cgi_date = '$Date: 2007/03/27 21:33:02 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

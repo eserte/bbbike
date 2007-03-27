@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.52 2007/03/18 19:58:06 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.54 2007/03/27 20:47:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -673,10 +673,10 @@ bundles-osd:
 		     $(FULLPERL) make_small_pi_osd win
 
 Strassen/Generated.pm: Strassen/Generated_src.pm Strassen.pm
-	-rm -f Strassen/Generated.pm
+	chmod u+w Strassen/Generated.pm
 	echo "1;" > Strassen/Generated.pm
-	cd Strassen && perl5.00503 Generated_src.pm
-	perl5.00503 -c Strassen/Generated_src.pm
+	cd Strassen && perl -I../lib Generated_src.pm
+	perl -Ilib -c Strassen/Generated_src.pm
 	chmod ugo+r,-w Strassen/Generated.pm
 
 echoversion:

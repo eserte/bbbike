@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetzHeavy.pm,v 1.24 2006/08/18 21:08:06 eserte Exp $
+# $Id: StrassenNetzHeavy.pm,v 1.25 2007/03/27 21:34:32 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -834,6 +834,7 @@ sub dump_search_nodes {
 }
 
 # $route_with_name is the result of route_to_name
+# XXX should I check ImportantAngle?
 sub compact_route {
     my($self, $route_with_name, %args) = @_;
     my $route_straight_angle = delete $args{-routestraightangle};
