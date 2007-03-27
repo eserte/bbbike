@@ -7137,7 +7137,7 @@ userdel	q4::inwork 5418,1292 5560,1278 5740,1227
 EOF
      },
      { from  => 1172646005, # 2007-02-28 08:00
-       until => 1175378399, # 2007-03-31 23:59
+       until => 1175032135, # 1175378399 2007-03-31 23:59
        text  => 'Kastanienallee (Pankow) Richtung Schönhauser Str. zwischen Friedrich-Engels-Str. und Eschenallee Baustelle, Fahrtrichtung gesperrt (bis Ende 03.2007)',
        type  => 'gesperrt',
        source_id => 'IM_004803',
@@ -7509,6 +7509,66 @@ EOF
        source_id => 'IM_005040',
        data  => <<EOF,
 userdel	2::temp 6137,10689 6040,10751 5942,10803 5797,10881 5725,10892 5657,10868 5484,10810 5351,10760 5229,10716 5076,10658
+EOF
+     },
+     { from  => undef, # 
+       until => 1188597600, # 2007-09-01 00:00
+       text  => 'Berliner Allee (Weißensee) in Richtung stadteinwärts, in Höhe Rennbahnstr. Baustelle, Fahrtrichtung gesperrt (bis Sommer 2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_005060',
+       data  => <<EOF,
+userdel	1::inwork 14535,17003 14559,16912
+EOF
+     },
+     { from  => 1175031936, # 2007-03-27 23:45
+       until => 1191189600, # 2007-10-01 00:00
+       text  => 'Florastr. (Pankow) Mühlenstr. in Richtung Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis September 2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_004035',
+       data  => <<EOF,
+userdel	1::inwork 10459,17754 10548,17817 10722,17940 10846,17992
+EOF
+     },
+     { from  => undef, # 
+       until => 1183154400, # 2007-06-30 00:00
+       text  => 'Rathausstr. (Tempelhof) in beiden Richtungen, zwischen Kurfürstenstr. und Kaiserstr. Baustelle, Straße vollständig gesperrt (bis Ende 06/07) (07:34) ',
+       type  => 'gesperrt',
+       source_id => 'IM_005053',
+       data  => <<EOF,
+userdel	2::inwork 8868,4498 8877,4356
+EOF
+     },
+     { from  => undef, # 
+       until => 1191189599, # 2007-09-30 23:59
+       text  => 'Transvaalstr. (Wedding) in Richtung Müllerstr., zwischen Guineastr. und Lüderitzstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 09/07)',
+       type  => 'handicap',
+       source_id => 'IM_005069',
+       data  => <<EOF,
+userdel	q4::inwork; 5988,16099 6104,16223 6215,16340
+EOF
+     },
+     { from  => 1176674400, # 2007-04-16 00:00
+       until => 1177192800, # 2007-04-22 00:00
+       text  => 'B 096 Höhe Krz..Buberow/ Meseberg grundhafter Straßenbau Vollsperrung 17.04.2007-21.04.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -7906,61543 -7974,62020 -7693,63274
+EOF
+     },
+     { from  => 1176069600, # 2007-04-09 00:00
+       until => 1183154400, # 2007-06-30 00:00
+       text  => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf Straßenbau, Entwässerung Vollsperrung 10.04.2007-29.06.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 34535,5319 34511,4787 34574,4552
+EOF
+     },
+     { from  => 1156629600, # 2006-08-27 00:00
+       until => 1176156000, # 2007-04-10 00:00
+       text  => 'L 030 Rüdersdorfer Str. OD Woltersdorf, zw. R.-Breitschei-Str. u. Interlakenstr. Straßenbau, Entwässerung Vollsperrung 28.08.2006-09.04.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 34579,5745 34535,5319
 EOF
      },
     );
