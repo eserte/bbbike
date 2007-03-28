@@ -739,14 +739,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        undef,
        undef,
        undef,
-       {
-         'until' => 1175032800,
-         'text' => 'L 059 Stolzenhainer Str. Bahnübergang in der OD Prösen Gleisbauarbeiten Vollsperrung 26.03.2007-27.03.2007 ',
-         'from' => 1174773600,
-         'data' => 'userdel	2::inwork 17465,-109257 17298,-109023
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1175810400,

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.28 2006/08/26 21:57:47 eserte Exp eserte $
+# $Id: Strasse.pm,v 1.28 2006/08/26 21:57:47 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the

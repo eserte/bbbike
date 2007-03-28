@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.21 2007/03/24 22:03:32 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.22 2007/03/28 23:28:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -906,11 +906,6 @@ sub BBBikeLazy::plotstr_on_demand {
 		$c->itemconfigure($label_tag,
 				  -anchor => 'w', -justify => 'left');
 	    }
-	    if ($orientation eq 'landscape' &&
-		!$do_outline_text) {
-		$c->itemconfigure($label_tag,
-				  -font => get_orte_label_font(2));
-	    }
 	    if ($municipality) {
 		$c->itemconfigure($label_tag, -fill => '#7e7e7e');
 	    } elsif (!$do_outline_text) {
@@ -918,13 +913,10 @@ sub BBBikeLazy::plotstr_on_demand {
 	    }
 	    if ($orientation eq 'landscape' &&
 		!$do_outline_text) {
-		unless ($args{'AllSmall'}) {
-		    # wichtigere Orte bekommen eine größere Schrift
-		    foreach my $category (3, 4, 5, 6) {
-			$c->itemconfigure
-			  ("$label_tag$category",
-			   -font => get_orte_label_font($category));
-		    }
+		foreach my $category (MIN_ORT_CAT .. MAX_ORT_CAT) {
+		    $c->itemconfigure
+			("$label_tag$category",
+			 -font => get_orte_label_font($category));
 		}
 	    }
 	}

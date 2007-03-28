@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.298 2007/03/27 21:34:18 eserte Exp $
+# $Id: bbbike,v 3.299 2007/03/28 23:14:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -205,7 +205,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.298 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.299 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -11170,27 +11170,36 @@ sub choose_from_plz {
 sub get_orte_label_font {
     my($category, $is_overview_canvas) = @_;
     my $base_index = 0;
-    if (!$is_overview_canvas) {
+    if ($is_overview_canvas) {
+	$base_index = -2;
+    } else {
 	if ($scale >= 6) {
 	    $base_index = 2;
 	} elsif ($scale >= 3) {
 	    $base_index = 1;
+	} else {
+	    $base_index = 0;
 	}
     }
+    my $fix_index = sub {
+	my $index = shift;
+	if ($index < 0) { $index = 0 }
+	$index;
+    };
     my $font;
     # This should handle the range MIN_ORT_CAT .. MAX_ORT_CAT:
     if      ($category == 0) {
-	my $index = $base_index + $orte_label_size - 2;
-	if ($index < 0) { $index = 0 }
+	my $index = $fix_index->($base_index + $orte_label_size - 2);
 	$font = $font{$font[$index] . "-italic"};
     } elsif ($category == 1) {
-	my $index = $base_index + $orte_label_size - 1;
-	if ($index < 0) { $index = 0 }
+	my $index = $fix_index->($base_index + $orte_label_size - 1);
 	$font = $font{$font[$index]};
     } elsif ($category <= 2) {
-	$font = $font{$font[$base_index + $orte_label_size]};
+	my $index = $fix_index->($base_index + $orte_label_size);
+	$font = $font{$font[$index]};
     } elsif ($category == 3) {
-	$font = $font{$font[$base_index + $orte_label_size+1]};
+	my $index = $fix_index->($base_index + $orte_label_size + 1);
+	$font = $font{$font[$index]};
     } elsif ($category == 4) {
 	$font = $font{$font[$base_index + $orte_label_size+2]};
     } elsif ($category == 5) {
@@ -11384,11 +11393,6 @@ sub plotorte {
 		$c->itemconfigure($label_tag,
 				  -anchor => 'w', -justify => 'left');
 	    }
-	    if ($orientation eq 'landscape' &&
-		!$do_outline_text) {
-		$c->itemconfigure($label_tag,
-				  -font => get_orte_label_font(2, $is_overview_canvas));
-	    }
 	    if ($municipality) {
 		$c->itemconfigure($label_tag, -fill => '#7e7e7e');
 	    } elsif (!$do_outline_text) {
@@ -11396,13 +11400,10 @@ sub plotorte {
 	    }
 	    if ($orientation eq 'landscape' &&
 		!$do_outline_text) {
-		unless ($args{'AllSmall'}) {
-		    # wichtigere Orte bekommen eine größere Schrift
-		    foreach my $category (3 .. MAX_ORT_CAT) {
-			$c->itemconfigure
-			  ("$label_tag$category",
-			   -font => get_orte_label_font($category, $is_overview_canvas));
-		    }
+		foreach my $category (MIN_ORT_CAT .. MAX_ORT_CAT) {
+		    $c->itemconfigure
+			("$label_tag$category",
+			 -font => get_orte_label_font($category, $is_overview_canvas));
 		}
 	    }
 	}
@@ -14920,7 +14921,6 @@ sub show_overview_populate {
 	#XXX del: $no_overlap_label{'o'} = 0; # XXX leider langsam
 	plotorte(Canvas        => $overview_canvas,
 		 PlaceCategory => 4,
-		 AllSmall      => 1,
 		 Shortname     => 1,
 		 NoOverlapLabel => 0,
 		);
@@ -14930,7 +14930,6 @@ sub show_overview_populate {
 	if ($show_overview_mode eq 'b') {
 	    plotorte(Canvas        => $overview_canvas,
 		     PlaceCategory => 0,
-		     AllSmall      => 1,
 		     Shortname     => 1,
 		     NameDraw      => 1,
 		     -municipality => 1,
