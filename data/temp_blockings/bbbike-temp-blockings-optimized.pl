@@ -569,8 +569,8 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        undef,
        undef,
        {
-         'until' => 1175896800,
-         'text' => 'L 211 Lehnitzstr. OL Oranienburg, zw. A.-Pican-Str. und Dr.-H.-Byk-Str. Munitionssuche u. -bergung Vollsperrung 01.07.2006-06.04.2007 ',
+         'until' => 1180648800,
+         'text' => 'L 211 Lehnitzstr. OL Oranienburg, zw. A.-Pican-Str. und Dr.-H.-Byk-Str. Munitionssuche u. -bergung Vollsperrung 01.07.2006-31.05.2007 ',
          'from' => 1151618400,
          'data' => 'userdel	2::inwork -198,37506 -591,37970
 ',
@@ -775,7 +775,14 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'until' => 1187647200,
+         'text' => 'B 112 Forster Str. Bahnunterführung in der OD Guben Gleis- u. Brückensanierung Vollsperrung 17.08.2007-20.08.2007 ',
+         'from' => 1187215200,
+         'data' => 'userdel	2::inwork 100192,-50107 100189,-50404
+',
+         'type' => 'gesperrt'
+       },
        {
          'until' => 1177970399,
          'text' => 'Vom 20.03. bis voraussichtlich zum 30.04.2007 wird die Fahrbahndecke der Namslaustraße zwischen Berliner Straße und Sterkrader Straße erneuert. Während der Bauzeit wird die Namslaustraße in Richtung Berliner Straße als Einbahnstraße ausgewiesen. ',
@@ -861,6 +868,22 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'text' => 'L 030 Rüdersdorfer Str. OD Woltersdorf, zw. R.-Breitschei-Str. u. Interlakenstr. Straßenbau, Entwässerung Vollsperrung 28.08.2006-09.04.2007 ',
          'from' => 1156629600,
          'data' => 'userdel	q4::inwork 34579,5745 34535,5319
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1175637600,
+         'text' => 'B 096 Sonnewalde-Luckau zw. Dabern und Weißack De- und Montage Trafostation Vollsperrung 02.04.2007-03.04.2007 ',
+         'from' => 1175378400,
+         'data' => 'userdel	2::inwork 30832,-72209 30767,-72806
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1180648800,
+         'text' => 'L 015 Mühlenstr. OD Rheinsberg, zw. Schloßstr. u. Rhinstr. Kanalarbeiten Vollsperrung 02.04.2007-31.05.2007 ',
+         'from' => 1175378400,
+         'data' => 'userdel	q4::inwork -25679,76561 -25764,76324
 ',
          'type' => 'handicap'
        }

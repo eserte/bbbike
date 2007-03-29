@@ -7096,8 +7096,8 @@ userdel	q4::temp 27420,-104513 26667,-103869
 EOF
      },
      { from  => 1151618400, # 2006-06-30 00:00
-       until => 1175896800, # 2007-04-07 00:00
-       text  => 'L 211 Lehnitzstr. OL Oranienburg, zw. A.-Pican-Str. und Dr.-H.-Byk-Str. Munitionssuche u. -bergung Vollsperrung 01.07.2006-06.04.2007 ',
+       until => 1180648800, # 2007-06-01 00:00
+       text  => 'L 211 Lehnitzstr. OL Oranienburg, zw. A.-Pican-Str. und Dr.-H.-Byk-Str. Munitionssuche u. -bergung Vollsperrung 01.07.2006-31.05.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -198,37506 -591,37970
@@ -7451,8 +7451,8 @@ EOF
 userdel	2::inwork 100192,-50107 100189,-50404
 EOF
      },
-     { from  => 1174687832, # 1187215200 2007-08-16 00:00
-       until => 1174687837, # 1187647200 2007-08-21 00:00
+     { from  => 1187215200, # 2007-08-16 00:00
+       until => 1187647200, # 2007-08-21 00:00
        text  => 'B 112 Forster Str. Bahnunterführung in der OD Guben Gleis- u. Brückensanierung Vollsperrung 17.08.2007-20.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -7569,6 +7569,22 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 34579,5745 34535,5319
+EOF
+     },
+     { from  => 1175378400, # 2007-04-01 00:00
+       until => 1175637600, # 2007-04-04 00:00
+       text  => 'B 096 Sonnewalde-Luckau zw. Dabern und Weißack De- und Montage Trafostation Vollsperrung 02.04.2007-03.04.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 30832,-72209 30767,-72806
+EOF
+     },
+     { from  => 1175378400, # 2007-04-01 00:00
+       until => 1180648800, # 2007-06-01 00:00
+       text  => 'L 015 Mühlenstr. OD Rheinsberg, zw. Schloßstr. u. Rhinstr. Kanalarbeiten Vollsperrung 02.04.2007-31.05.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -25679,76561 -25764,76324
 EOF
      },
     );
