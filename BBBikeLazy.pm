@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.22 2007/03/28 23:28:06 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.23 2007/03/29 17:56:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -913,7 +913,7 @@ sub BBBikeLazy::plotstr_on_demand {
 	    }
 	    if ($orientation eq 'landscape' &&
 		!$do_outline_text) {
-		foreach my $category (MIN_ORT_CAT .. MAX_ORT_CAT) {
+		foreach my $category (MIN_ORT_CAT() .. MAX_ORT_CAT()) {
 		    $c->itemconfigure
 			("$label_tag$category",
 			 -font => get_orte_label_font($category));
