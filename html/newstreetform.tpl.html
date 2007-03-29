@@ -42,7 +42,7 @@
         [%- INCLUDE radio_checked %] /></td>
        <td><label for="[% radioid | html %]">[% IF text %][% text | html_line_break %][% ELSE %][% val | html_line_break %][% END %]</label>
 [% IF helpurl -%]
-        <a class="yellowbox" style="text-decoration:none" target="newstreetform_help" href="[% helpurl | uri %]">?</a>
+        <a class="yellowbox" style="text-decoration:none" target="newstreetform_help" href="[% helpurl %]">?</a>
 [% END -%]
 [% IF entryname %]<input name="[% entryname %]_1" [% INCLUDE text_default inputname=entryname _ "_1" %] />[% END %]
        </td>
@@ -204,7 +204,7 @@ function init() {
 [% INCLUDE radiocell cat="Q" type="desc" val="Kopfsteinpflaster" helpurl="http://de.wikipedia.org/wiki/Kopfsteinpflaster" %]
 [% INCLUDE radiocell cat="Q" type="desc" val="fester Sandweg" helpurl="http://de.wikipedia.org/wiki/Wassergebundene_Decke" %]
 [% INCLUDE radiocell cat="Q" type="desc" val="loser Sandweg" %]
-[% INCLUDE radiocell cat="Q" type="desc" val="Verbundsteinpflaster" %]
+[% INCLUDE radiocell cat="Q" type="desc" val="Verbundsteinpflaster" helpurl="http://de.wikipedia.org/wiki/Verbundsteinpflaster" %]
       <tr>
        <td>
         <input type="radio" name="Qdesc_1" value="userdefined"
@@ -258,7 +258,7 @@ function init() {
      <table cellpadding="0" cellspacing="0">
 [% INCLUDE radiocell cat="RW" type="cat" val="RW0" text="keine" %]
 [% INCLUDE radiocell cat="RW" type="cat" val="RW1" text="Radweg" helpurl="http://de.wikipedia.org/wiki/Radweg" %]
-[% INCLUDE radiocell cat="RW" type="cat" val="RW4" text="Radstreifen" helpurl="http://www.adfc-bremen.de/front_content.php?idcat=105" %]
+[% INCLUDE radiocell cat="RW" type="cat" val="RW4" text="Radstreifen" helpurl="http://de.wikipedia.org/wiki/Radweg#Radfahrstreifen" %]
 [% INCLUDE radiocell cat="RW" type="cat" val="RW7" text="Fahrradstraﬂe" helpurl="http://de.wikipedia.org/wiki/Fahrradstraﬂe" %]
 [% INCLUDE radiocell cat="RW" type="cat" val="RW5" text="Busspur" helpurl="http://de.wikipedia.org/wiki/Busspur" %]
 [% INCLUDE radiocell cat="RW" type="cat" val="RW6" text="Spielstraﬂe" helpurl="http://de.wikipedia.org/wiki/Spielstraﬂe" %]
