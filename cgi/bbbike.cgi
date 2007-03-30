@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.48 2007/03/27 21:33:02 eserte Exp $
+# $Id: bbbike.cgi,v 8.48 2007/03/27 21:33:02 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -1838,6 +1838,7 @@ Checklist:
 <li>The BBBike database only contains streets from Berlin and Potsdam.
 <li>Only most important Berlin sights are available through this interface.
 </ul>
+Nothing applies?
 </p>
 EOF
 		} else {
@@ -1846,10 +1847,11 @@ EOF
 Checkliste:
 <ul>
 <li>Wurde der Straßenname richtig geschrieben?
-<li>Hausnummern, Bezirks-, Postleitzahl und Ortsnamen dürfen nicht angegeben werden!
+<li>Hausnummern, Bezirksnamen, Postleitzahlen und Ortsnamen dürfen nicht angegeben werden!
 <li>In der Datenbank befinden sich nur Berliner und Potsdamer Straßen!
 <li>Nur die wichtigsten Berliner Sehenswürdigkeiten können verwendet werden.
 </ul>
+Ansonsten:
 </p>
 EOF
 		}
@@ -4052,7 +4054,7 @@ EOF
 		    print "<td>$fontstr$etappe_comment$fontend</td>";
 		}
 		if ($has_fragezeichen_routelist && !$printmode) {
-		    if ($fragezeichen_comment ne "") {
+		    if (defined $fragezeichen_comment && $fragezeichen_comment ne "") {
 
 			# unbekannt oder unvollständig
 			my $is_unknown = 1;

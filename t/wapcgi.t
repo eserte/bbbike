@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.20 2006/06/17 08:01:55 eserte Exp $
+# $Id: wapcgi.t,v 1.21 2007/03/30 21:57:13 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -14,7 +14,7 @@ use File::Temp qw(tempfile);
 use URI;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!eval q{
@@ -121,7 +121,7 @@ for my $wapurl (@wap_url) {
 	is(length $resp->content > 0, 1, "Check for content in $surr_image_url");
 	check_image($resp, $surr_image_url);
 
-	$url = $wapurl . "?startname=dudenstr&startbezirk=&zielname=europaplatz&zielbezirk=;form=advanced";
+	$url = $wapurl . "?startname=dudenstr&startbezirk=&zielname=kleistpark&zielbezirk=;form=advanced";
 	$resp = $ua->get($url, @hdr);
 	ok($resp->is_success, "Advanced search ($url)");
 	like($resp->content, qr{genaue kreuzung.*dudenstr.*ecke}i, "Expected multiple start choices");

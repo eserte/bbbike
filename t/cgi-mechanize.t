@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.39 2007/03/21 23:07:51 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.40 2007/03/30 20:22:41 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -438,8 +438,8 @@ for my $browser (@browsers) {
 	    $like_long_data->(qr{\Qhtml/newstreetform(utf8.)?.html?\E.*\Qstrname=Kleine%20Parkstr}i, "newstreetform link");
 	}
 	$like_long_data->(qr{Hauptbahnhof.*?die nächste Kreuzung}is,  "S-Bhf.");
-	$like_long_data->(qr{Invalidenstr.}i,  "S-Bhf., next crossing (Invalidenstr)");
-	$like_long_data->(qr{Minna-Cauer-Str.}i,  "S-Bhf., next crossing (Minna-Cauer-Str)");
+	$like_long_data->(qr{(Invalidenstr.|Ella-Trebe-Str.)}i,  "S-Bhf., next crossing (Invalidenstr or Ella-Trebe-Str.)");
+	$like_long_data->(qr{(Minna-Cauer-Str.|Europaplatz)}i,  "S-Bhf., next crossing (Minna-Cauer-Str or Europaplatz)");
 
     }
 

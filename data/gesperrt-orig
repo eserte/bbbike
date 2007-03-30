@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.157 2007/03/28 23:16:14 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.157 2007/03/28 23:16:14 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -374,7 +374,7 @@ Spreepark	2 16023,8860 16161,8852
 Staakener Str.	1 -4112,14242 -4387,14256
 Langensteiner Weg	1 7282,4716 7335,4879 7437,4855
 #: by: Susanne Kuby:
-Lowise-Reuter-Ring	1 13680,4715 13560,4681 13511,4695 13482,4718 13468,4766 13476,4812 13503,4846 13540,4861 13574,4862 13639,4850 13675,4855
+Lowise-Reuter-Ring	1 13680,4715 13589,4681 13560,4681 13511,4695 13482,4718 13468,4766 13476,4812 13503,4846 13540,4861 13574,4862 13639,4850 13675,4855
 #: by: Gisela Mauer:
 Pfahlerstr.	1 5301,18447 5423,18438 5551,18434
 #: by: Juliane Bölker:
@@ -398,6 +398,10 @@ Scharfestr.	1 758,3417 935,3430
 Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18447,8818
 Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20775,16977
 (Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20401,16189 20487,16392
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
+Jugendweg	1 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
+Jochen-Nüßler-Str.	1 13571,4493 13589,4681
 #
 # Potsdam
 #
