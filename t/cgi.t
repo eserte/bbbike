@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.43 2007/03/23 07:33:52 eserte Exp $
+# $Id: cgi.t,v 1.44 2007/04/01 21:53:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -404,7 +404,7 @@ for my $cgiurl (@urls) {
     ok($res->is_success, "Click on overview map")
 	or diag $res->as_string;
     $content = uncompr($res);
-    my $map_qr = qr{(http://.*/bbbike.*(?:tmp|\?tmp=)/berlin_map_04-05(?:_240)?.png)}i;
+    my $map_qr = qr{(http://.*/bbbike.*(?:tmp|\?tmp=)/berlin_map_04-05(?:_240|_280x240)?.png)}i;
     if ($content !~ $map_qr) {
 	diag("Cannot get tile image reference, expected something like $map_qr");
 	BBBikeTest::failed_long_data($content, $map_qr, "Tile image check", ".html");

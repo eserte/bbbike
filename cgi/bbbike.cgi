@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.49 2007/04/01 20:02:51 eserte Exp $
+# $Id: bbbike.cgi,v 8.49 2007/04/01 20:02:51 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -2148,8 +2148,9 @@ sub berlinmap_with_choices {
 EOF
 	    $a_end   = "</a>";
 	}
+	my $alt = ($s->[0]||"") . "(" . ($s->[1]||"") . ")";
 	print <<EOF;
-<div id="$divid" style="position:absolute; visibility:show;">$a_start<img id="$matchimgid" src="$bbbike_images/bluedot.png" border=0 width=8 height=8 alt="$s->[0] ($s->[1])">$a_end</div>
+<div id="$divid" style="position:absolute; visibility:show;">$a_start<img id="$matchimgid" src="$bbbike_images/bluedot.png" border=0 width=8 height=8 alt="$alt">$a_end</div>
 EOF
 	$js .= "pos_rel(\"$divid\", \"${type}mapbelow\", $tx, $ty);\nvis(\"$divid\", \"show\");\n";
     }
@@ -5953,7 +5954,7 @@ sub get_nearest_crossing_coords {
 	    my $str = get_streets();
 	    my $ret = $str->nearest_point("$x,$y", FullReturn => 1);
 	    $xy = $ret->{Coord};
-	    if (!$kr->crossing_exists($xy)) {
+	    if ($xy && !$kr->crossing_exists($xy)) {
 		# This may happen, because nearest_point does also return Kurvenpointe,
 		# whereas $kr has only real Kreuzungen. Find a real Kreuzung...
 		my @street_coords = @{ $ret->{StreetObj}->[Strassen::COORDS()] || [] };
@@ -5963,7 +5964,9 @@ sub get_nearest_crossing_coords {
 		    last if ($street_coords[$start_index] eq $xy);
 		}
 		if ($start_index > $#street_coords) {
-		    warn "Strange: cannot find coord <$xy> in <@street_coords>";
+		    # This may happen if there's really no "nearest point".
+		    # Hopefully we'll get one after incrementing the scope,
+		    # see below.
 		} else {
 		    my $delta = 1;
 		    while() {

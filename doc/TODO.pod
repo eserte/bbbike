@@ -2813,6 +2813,21 @@ LANG gesetzt) lösen.
 
 =over
 
+=item * (M5)
+
+Ich sehe 404 für /cgi-bin/radroute.html und .../help.html mit Firefox
+2.0.0.3 unter Windows. Wird <base> hier nicht korrekt erkannt? ->
+confirmed: ich sehe Probleme mit Firefox 1.0.7, 1.5, 1.5.0.1,
+1.5.0.2, 1.5.0.3, 1.5.0.4, 1.5.0.5, 1.5.0.6, 1.5.0.7, 1.5.0.9, 2.0,
+2.0.0.1, 2.0.0.2, 2.0.0.3 (verschiedene OS) und einigen Java- und
+anderen Bots.
+
+=item * (M5)
+
+Funktioniert coordset=start mit dem MapServer unter MSIE6.0? Ich sehe
+Warnings im errorlog, das mit dieser Konstellation img.x/img.y fehlt
+und somit eine Suche in MapServer gar nicht möglich ist.
+
 =item * (E3)
 
 Sehenswürdigkeiten vielleicht grau statt rot einfärben wie auf
