@@ -255,7 +255,7 @@ Zossener Str.: Straßenbahntrasse	3nocross 23053,15727 23217,15682 23411,15632 23
 Kleinmachnower Weg: Sa und So ist die Schranke an der Kreuzung Sachlebenstraße zu, für Kfz-Verkehr demnach gesperrt	2 292,-36 665,85 1345,184
 #: by: Omi2006@... [AM]
 Hentigstr.	1 18514,8773 18548,8942 18586,9172 18621,9404
-#: by: Hubertus Fürther [AM] 
+#: by: Hubertus Fürther [AM]
 Grottewitzstr.	1 21933,152 22145,208
 Schlichtallee	3nocross 15629,10481 15751,10582 16032,10842
 Hindenburgdamm	3nocross 4507,4755 4515,4581 4521,4484
@@ -268,7 +268,7 @@ General-Pape-Str. - Werner-Voß-Damm	3 7931,7746 7959,7609 8263,7611
 Rubensstr. - Baumeisterstr.	3 6389,7196 6367,7356 6277,7220
 Sonnenallee: Mittelstreifen	3nocross 13010,8422 13042,8395 13107,8343
 Max-Born-Str./Rudower Chaussee	3nocross 19071,2746 19111,2777 19198,2844
-##: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20061129.1550.51196.html
+# : by: http://www.berlin.de/ba-neukoelln/presse/archiv/20061129.1550.51196.html
 #Diagonalsperre	X 16518,2122
 Gabelberger Str./Frankfurter Allee	3 14451,12396 14381,12205 14434,12196
 Mainzer Str./Frankfurter Allee	3nocross 14381,12205 14434,12196 14488,12189
@@ -277,8 +277,14 @@ Oranienburger Str. (Straßenbahnhaltestelle)	3nocross 9215,13392 9281,13374 9415,
 Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3nocross 5972,6756 5897,6799 5828,6839
 #: by: rjoop:
 Putlitzstr.	1 6210,13939 6214,14208
-#: add_fragezeichen: Ist die Bornitzstr. zwischen Heringerstr. und Möllendorffstr. in Richtung Stadtmitte für Radfahrer offen?
-Bornitzstr. (trotz Radroute?)	1 15645,12864 15543,12856
+Bornitzstr.	1 15645,12864 15543,12856
 Treskowallee: Straßenbahntrasse	3nocross 18890,9529 18834,9256 18809,9133
 Washingtonplatz: nur für Taxis	2 8107,13146 7938,13135
 Ella-Trebe-Str.: nur für Taxis	2 7938,13135 7938,13302
+An der Wuhlheide: Straßenbahntrasse	3nocross 20352,5877 20428,5841 20536,5789
+#: by: Torsten Franik: vvv
+Gürtelstr. - Lehderstr.: nur rechts abbiegen erlaubt	3 13423,15702 13332,15765 13214,15830
+Gürtelstr. - Greifswalder Str.: nur rechts abbiegen erlaubt	3 13423,15702 13332,15765 13098,15592
+#: by: ^^^
+#: by: Timo Feyerabend:
+Jochen-Nüßler-Str.	1 13571,4493 13589,4681

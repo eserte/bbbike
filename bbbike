@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.299 2007/03/28 23:14:53 eserte Exp $
+# $Id: bbbike,v 3.299 2007/03/28 23:14:53 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -14916,16 +14916,15 @@ sub show_overview_populate {
     {
 	# schöner wär's mit local(), aber geht nicht so ohne weiteres
 	my $orte_far_away_orig = $p_far_away{'o'};
-	#XXX del: my $overlap_label_orig = $no_overlap_label{'o'};
 	$p_far_away{'o'} = 1;
-	#XXX del: $no_overlap_label{'o'} = 0; # XXX leider langsam
+	local $no_overlap_label{'o'} = 1; # XXX Kein Effekt - warum?
+	local $orte_label_size = 1;	
 	plotorte(Canvas        => $overview_canvas,
 		 PlaceCategory => 4,
 		 Shortname     => 1,
 		 NoOverlapLabel => 0,
 		);
 	$p_far_away{'o'} = $orte_far_away_orig;
-	#XXX del: $no_overlap_label{'o'} = $overlap_label_orig;
 
 	if ($show_overview_mode eq 'b') {
 	    plotorte(Canvas        => $overview_canvas,

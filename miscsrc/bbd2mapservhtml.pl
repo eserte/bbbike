@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2mapservhtml.pl,v 1.19 2007/03/07 22:14:45 eserte Exp $
+# $Id: bbd2mapservhtml.pl,v 1.21 2007/03/31 17:05:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -24,6 +24,7 @@ use lib ("$FindBin::RealBin/..",
 	);
 use Strassen::Core;
 use Strassen::Util;
+use Strassen::Combine;
 use Object::Iterate qw(iterate);
 use Getopt::Long;
 use BBBikeVar;
@@ -40,6 +41,7 @@ my $partialhtml;
 my $do_linklist;
 my $do_headlines;
 my $preferalias;
+my $imagetype = "mapserver";
 
 my $save_cmdline = "$0 @ARGV";
 
@@ -69,13 +71,14 @@ if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		'linklist!' => \$do_linklist,
 		'preferalias!' => \$preferalias,
 		'headlines!' => \$do_headlines,
+		'imagetype=s' => \$imagetype,
 	       )) {
     require Pod::Usage;
     Pod::Usage::pod2usage(2);
 }
 
 if (!@layers) {
-    push @layers, qw(sbahn wasser flaechen grenzen orte fragezeichen);
+    push @layers, qw(sbahn rbahn wasser flaechen str grenzen ort fragezeichen);
 }
 
 my $bbd_file = shift || "-";
@@ -87,6 +90,9 @@ if ($bbd_file =~ /\.bbr$/) {
 } else {
     $s = Strassen->new($bbd_file, UseLocalDirectives => 1);
 }
+## Maybe call 
+#$s = $s->make_long_streets;
+## some day, but see the TODOs in Strassen::Combine first.
 
 my $center;
 if (defined $center_spec && $center_spec ne "") {
@@ -260,7 +266,8 @@ sub generate_single_html {
 
     my $html = <<EOF;
 <form style='margin-bottom:0px;' action="$bbbike_url" method="post">
- <input type="hidden" name="imagetype" value="mapserver" />
+ <input type="hidden" name="imagetype" value="$imagetype" />
+ <input type="hidden" name="scope" value="wideregion" />
 EOF
     for my $coords (@coords) {
 	$html .= <<EOF;
@@ -309,6 +316,7 @@ bbd2mapservhtml.pl - create a mapserver route from a bbd or bbr file
                     [-initmapext {width}x{height}] [-mapscale scale]
 		    [-center x,y] [-centernearest]
 		    [-partialhtml] [-linklist] [-preferalias]
+		    [-imagetype ...]
 		    [file]
 
 =head1 DESCRIPTION
@@ -384,6 +392,11 @@ Create headlines from "section" blocks.
 
 In a linklist, prefer the alias name (set in bbd files with the "#:
 alias" directive) over the street name.
+
+=item -imagetype ...
+
+Specify another imagetype than the default "mapserver". Examples are
+pdf or png, which would use different backends.
 
 =back
 

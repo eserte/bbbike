@@ -1,5 +1,5 @@
 #
-# $Id: strassen.tcl,v 1.2 2005/10/27 01:04:12 eserte Exp $
+# $Id: strassen.tcl,v 1.3 2007/03/31 20:04:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.

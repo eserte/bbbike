@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: comment_waypoints.pl,v 1.2 2002/02/05 22:27:24 eserte Exp eserte $
+# $Id: comment_waypoints.pl,v 1.3 2007/03/31 20:07:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2006 Slaven Rezic. All rights reserved.

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAlarm.pm,v 1.37 2006/05/01 20:42:54 eserte Exp $
+# $Id: BBBikeAlarm.pm,v 1.38 2007/03/31 20:00:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000, 2006 Slaven Rezic. All rights reserved.
@@ -41,7 +41,7 @@ my $install_datebook_additions = 1;
 
 use Time::Local;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.37 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?

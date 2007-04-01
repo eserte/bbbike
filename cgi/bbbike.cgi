@@ -4634,7 +4634,7 @@ sub draw_route {
 					flaechen => "flaechen",
 					ampel => "ampeln",
 					fragezeichen => "fragezeichen",
-					ort => "ort",
+					ort => "orte",
 					grenzen => "grenzen",
 				       }->{$_};
 			    if (!defined $out) {

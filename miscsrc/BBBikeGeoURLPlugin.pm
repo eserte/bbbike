@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGeoURLPlugin.pm,v 1.2 2006/09/20 19:49:20 eserte Exp $
+# $Id: BBBikeGeoURLPlugin.pm,v 1.3 2007/03/31 20:08:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 sub register {
     my $pkg = __PACKAGE__;

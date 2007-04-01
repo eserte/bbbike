@@ -96,7 +96,7 @@ Heinrich-Mann-Platz.	1 9590,18548 9527,18517 9496,18545 9469,18570 9475,18617 95
 Edelweißstr.	1 8251,19937 7966,19968 7885,19975 7772,20050
 Angerburger Allee	1 -1524,11108 -1608,11133 -1829,11337 -1895,11400 -1966,11466
 Edelhofdamm	1 3200,25429 2938,25317 2702,25223 2730,25298 2907,25363 3211,25484
-Antonienstr./Eichborndamm	1 3927,17909 4003,18308 4081,18677 4098,18762 4162,18891 4240,19019 4228,18873 4179,18652 4097,18288 4013,17901
+Antonienstr./Eichborndamm	1 3927,17909 3970,18126 4009,18322 4081,18677 4098,18762 4162,18891 4240,19019 4228,18873 4179,18652 4102,18298 4059,18107 4013,17901
 Spreestr.	1 17898,6049 17939,5968 17812,5726 17779,5694
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1 15657,10846 15871,10925
@@ -133,7 +133,7 @@ Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
 #Anscheinend hier keine Einbahnstraße, vielleicht weiter nördlich auch nicht: Burgstr.	1 10171,12769 10132,12941
 Schuckertdamm	1 746,14817 1109,14911 1343,14972 1488,14952
 Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
-Oberhofer Platz	1 5495,1964 5469,1949 5437,1941 5382,2080 5411,2098 5443,2109 5495,1964
+Oberhofer Platz	1 5495,1964 5469,1949 5437,1941 5431,1956 5382,2080 5411,2098 5443,2109 5489,1981 5495,1964
 Scheelestr.	1 5740,1227 5697,1098 5565,969 5424,882 5337,829
 Tibertius-Brücke: Kfz-Straße	2 5681,5743 5593,5803 5414,5939 5330,6001 4903,6221
 An der Schillingbrücke	1 12056,11390 12055,11331
@@ -253,7 +253,7 @@ Pintschstr.	1 13342,13185 13438,12965
 Dievenowstr.	1 3225,7390 3208,7328 3189,7249 3206,7109
 Neue Schönholzer Str.	1 10089,18180 10140,18080 10179,17772
 Wolliner Str.	1 10405,14425 10320,14608
-Splanemannstr.	1 18284,9948 18389,9925 18408,10041 18403,10077
+Splanemannstr.	1 18301,9946 18389,9925 18408,10041 18403,10077
 Burgherrenstr.	1 8969,8640 9050,8783
 Travestr.	1 14825,11844 14897,11801 14977,11754
 Müggelstr.	1 14897,11801 14953,11923
@@ -400,8 +400,8 @@ Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20775,16977
 (Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20401,16189 20487,16392
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Jugendweg	1 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
-#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
-Jochen-Nüßler-Str.	1 13571,4493 13589,4681
+Boschpoler Platz	1 20540,13773 20665,13759
+Kienbergstr.	1 21287,14963 21225,14907 21217,14721 21122,14713
 #
 # Potsdam
 #
@@ -505,15 +505,10 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,125
 #
 ####################################################################
 #
-# Einbahnstraßen, die für Radfahrer freigegeben sind:
-# 
-# Schulenburgring (?)
-#
-####################################################################
-#
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
+Sterndamm: Straßenbahntrasse	3nocross 17601,5090 17542,4772 17518,4644
 Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3nocross 21960,11269 22242,11269 22326,11266
 Konrad-Wolf-Str./Große-Leege-Str.: wegen Absperrgitter nicht überquerbar	3nocross 16961,16042 16917,16001 16819,15912
 Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2996,15771 2960,15847 2913,15944 2819,16141
@@ -531,7 +526,7 @@ Riesaer Str.: Straßenbahntrasse	3nocross 24120,14526 24097,14575 24020,14737
 Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17527,7812 17686,7589 17839,7365 18003,7144
 Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4469,8037 4659,7982 4793,7992
 Rhinstr.: Straßenbahntrasse	3nocross 18215,12132 18216,12262 18220,12450
-Allee der Kosmonauten: Straßenbahntrasse	3nocross 19628,13517 19807,13529 20182,13554
+Allee der Kosmonauten: Straßenbahntrasse	3nocross 19628,13517 19807,13529 19837,13531 20182,13554
 Bornhomer Str.: Straßenbahntrasse	3nocross 10765,16486 10699,16492 10620,16497
 Bornhomer Str.: Straßenbahntrasse	3nocross 10620,16497 10533,16505 10445,16511
 Bornhomer Str.: Straßenbahntrasse	3nocross 10445,16511 10370,16516 10282,16522 10197,16528
@@ -988,8 +983,8 @@ Weinmeisterhornweg	1s -4789,11225 -4564,11180
 Heerstr.	3nocross -4500,11937 -4437,11919 -4310,11882
 Heerstr.	3nocross -4310,11882 -4278,11873 -4063,11805
 tragen/schieben (40 Stufen, Rampe)	0:120 -4768,11016 -4836,11028
-Theodor-Heuss-Weg	1s 9246,14518 9095,14344
-tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:40 9271,14562
+Theodor-Heuss-Weg	1s 9197,14562 9081,14363
+tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:40 9223,14608
 Tor	BNP:5 3326,12730
 Herderstr. (Charlottenburg)	1 4451,11558 4435,11343
 tragen (Treppe)	0:30 7957,12864

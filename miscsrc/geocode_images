@@ -4,7 +4,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
 
 use File::Spec;
 use File::Basename;

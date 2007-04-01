@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: newstreetform_data.pl,v 1.28 2006/08/05 22:47:44 eserte Exp eserte $
+# $Id: newstreetform_data.pl,v 1.29 2007/03/31 20:07:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.

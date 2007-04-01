@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.25 2006/10/28 11:41:58 eserte Exp $
+# $Id: bbbikedraw.t,v 1.26 2007/03/31 17:05:58 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -77,6 +77,7 @@ my $do_display_all;
 my $flush_to_filename;
 my $do_compress = 1;
 my $do_route = 0;
+my $do_multiroute = 0;
 
 my @only_modules;
 
@@ -89,6 +90,7 @@ if (!GetOptions(get_std_opts("display"),
 		"flushtofilename" => \$flush_to_filename,
 		"compress!" => \$do_compress,
 		"route!" => \$do_route,
+		"multiroute!" => \$do_multiroute,
 		"geometry=s" => \$geometry,
 		'only=s@' => sub {
 		    push @only_modules, $_[1]; # Tests will fail with -only.
@@ -189,7 +191,19 @@ sub draw_map {
 	# XXX more to come...
     }
 
-    no warnings 'qw';
+    my @coords;
+    my @multicoords;
+    if ($do_route || $do_multiroute) {
+	no warnings 'qw';
+	@coords = qw(8209,8769 8293,8768 8425,8771 8472,8772 8480,9071 8598,9061 8594,8773 8770,8777 8982,8781 9050,8783 9222,8787 9227,8890 9235,9051 9235,9111 9248,9350 9280,9476 8994,9509 9043,9745);
+	if ($do_multiroute) {
+	    @multicoords = ([@coords],
+			    [qw(8595,9495 8598,9264)],
+			   );
+	    @coords = ();
+	}
+    }
+
     my $draw = new BBBikeDraw
 	NoInit     => 1,
 	($flush_to_filename ? (Filename => $filename) : (Fh => $fh)),
@@ -201,7 +215,8 @@ sub draw_map {
 	Module     => $module,
 	Startname  => "Start",
 	Zielname   => "Goal",
-	($do_route ? (Coords => [qw(8209,8769 8293,8768 8425,8771 8472,8772 8480,9071 8598,9061 8594,8773 8770,8777 8982,8781 9050,8783 9222,8787 9227,8890 9235,9051 9235,9111 9248,9350 9280,9476 8994,9509 9043,9745)]) : ()),
+	(@coords ? (Coords => [@coords]) : ()),
+	(@multicoords ? (MultiCoords => [@multicoords]) : ()),
 	UseFlags   => 1,
 	Wind       => {Windrichtung => 'N',
 		       Windstaerke  => 3,
@@ -219,7 +234,7 @@ sub draw_map {
     $draw->init;
     $draw->create_transpose(-asstring => 1);
     $draw->draw_map if $draw->can("draw_map");
-    if (!$attributes{noroute} && $do_route) {
+    if (!$attributes{noroute} && ($do_route || $do_multiroute)) {
 	$draw->draw_route if $draw->can("draw_route");
     }
     $draw->draw_wind if $draw->can("draw_wind");

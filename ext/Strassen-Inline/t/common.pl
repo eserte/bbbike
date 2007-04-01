@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: common.pl,v 1.6 2006/04/17 12:12:01 eserte Exp $
+# $Id: common.pl,v 1.7 2007/03/31 20:11:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2006 Slaven Rezic. All rights reserved.

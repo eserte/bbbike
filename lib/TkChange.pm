@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: TkChange.pm,v 1.13 2006/01/28 16:37:49 eserte Exp eserte $
+# $Id: TkChange.pm,v 1.13 2006/01/28 16:37:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.

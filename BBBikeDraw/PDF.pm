@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.43 2006/10/28 12:04:54 eserte Exp $
+# $Id: PDF.pm,v 2.44 2007/03/31 17:05:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.43 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.44 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -589,7 +589,8 @@ sub draw_route {
 
     my $im        = $self->{Image};
     my $transpose = $self->{Transpose};
-    my(@c1)       = @{ $self->{C1} };
+    #my(@c1)       = @{ $self->{C1} };
+    my @multi_c1 = @{ $self->{MultiC1} };
     my $strnet; # StrassenNetz-Objekt
 
     foreach (@{$self->{Draw}}) {
@@ -622,28 +623,34 @@ sub draw_route {
     $im->set_line_width(4);
 
     # Route
-    if (@c1) {
-	$im->moveto(map { sprintf "%.2f", $_ } $transpose->(@{ $c1[0] }));
-	for(my $i = 1; $i <= $#c1; $i++) {
-	    $im->lineto(map { sprintf "%.2f", $_ } $transpose->(@{ $c1[$i] }));
+    if (@multi_c1) {
+	for my $c1 (@multi_c1) {
+	    my @c1 = @$c1;
+	    if (@c1) {
+		$im->moveto(map { sprintf "%.2f", $_ } $transpose->(@{ $c1[0] }));
+		for(my $i = 1; $i <= $#c1; $i++) {
+		    $im->lineto(map { sprintf "%.2f", $_ } $transpose->(@{ $c1[$i] }));
+		}
+		$im->stroke;
+	    }
 	}
-	$im->stroke;
     }
 
     # Flags
-    if (@c1 > 1) {
+    #if (@c1 > 1) {
+    if (@multi_c1 > 1 || ($multi_c1[0] && @{$multi_c1[0]} > 1)) {
 $self->{UseFlags} = 0; # XXX don't use this because of missing transparency information in .jpg
 	if ($self->{UseFlags}) {
 	    my $images_dir = $self->get_images_dir;
 	    my $start_flag = $self->{PDF}->image("$images_dir/flag2_bl.jpg");
 	    if ($start_flag) {
-		my($x, $y) = &$transpose(@{ $c1[0] });
+		my($x, $y) = &$transpose(@{ $multi_c1[0][0] });
 		$im->image(image => $start_flag, xpos => $x-5, ypos => $y-15,
 			   xalign => 1, yalign => 1);
 	    }
 	    my $end_flag = $self->{PDF}->image("$images_dir/flag_ziel.jpg");
 	    if ($end_flag) {
-		my($x, $y) = &$transpose(@{ $c1[-1] });
+		my($x, $y) = &$transpose(@{ $multi_c1[-1][-1] });
 		$im->image(image => $end_flag, xpos => $x-5, ypos => $y-15,
 			   xalign => 1, yalign => 1);
 	    }
@@ -809,7 +816,14 @@ sub add_route_descr {
     my $self = shift;
     my(%args) = @_;
     my $net = $args{-net} || die "-net is missing";
-    my(@c) = map { [split /,/ ] } @{ $self->{Coords} };
+    my @c;
+    if ($self->{MultiCoords}) {
+	# XXX this is a suboptimal solution!
+	# Route should deal with interrupted routes!
+	@c = map { [split /,/ ] } map { @$_ } @{ $self->{MultiCoords} };
+    } else {
+	@c = map { [split /,/ ] } @{ $self->{Coords} };
+    }
 
     require Route::PDF;
     require Route;

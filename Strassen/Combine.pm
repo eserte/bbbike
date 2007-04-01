@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Combine.pm,v 1.4 2006/05/23 23:34:18 eserte Exp $
+# $Id: Combine.pm,v 1.5 2007/03/31 16:36:30 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2006,2007 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -12,38 +12,69 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-# Formerly miscsrc/combine_streets.pl
-
-# XXX  maybe the
-# implementation should be better...
-
 =head1 NAME
 
 Strassen::Combine - combine streets
 
 =head1 DESCRIPTION
 
-Zusammenfassen von Straﬂen
-Zusammengefasst werden kann, wenn:
+ Zusammenfassen von Straﬂen
+
+ Zusammengefasst werden kann, wenn:
  - Die Straﬂen den gleichen Namen haben (Voraussetzung: Straﬂen m¸ssen
    evtl. durch den Bezirksnamen n‰her klassifiziert werden, ist aber
    wegen der weiteren Bedingungen unproblematisch).
  - Start- oder Endpunkt von zwei Straﬂen zusammenfallen
  - Die Kategorie bei beiden Straﬂen die gleiche ist.
 
+=head2 METHODS
+
+Die beiden Methoden werden in die Klasse L<Strassen> geladen. Als
+Ausgabe wird ein neues B<Strassen>-Objekt erzeugt.
+
+=head3 make_long_streets(%args)
+
+Arguments: -closedpolygon, -v, -ignorecat
+
+=head3 combine_same_streets
+
+=head1 TODO
+
+ * W¸nschenswert w‰re wenigstens eine Umordnung der Straﬂen bei einer
+   streckenweise Teilung (z.B. Einbahnstraﬂen)
+
+   Also beispielsweise:
+
+   Straﬂe	Kat 0,0 1,1 2,2
+   Straﬂe	Kat; 2,2 3,3 4,4
+   Straﬂe	Kat; 4,4 3,4 2,2
+   Straﬂe	Kat 4,4 5,5
+
+ * Lokale Direktiven sollten mˆglichst beibehalten werden. Eventuell
+   muss es ein Regelwerk geben, ob Straﬂen zusammengefasst werden
+   d¸rfen, wenn lokale Direktiven unterschiedlich sind, und ob die
+   lokalen Direktiven bei der neuen Datei verworfen werden oder
+   zusammengefasst
+
+=head1 HISTORY
+
+Dieses Modul war fr¸her das Skript F<miscsrc/combine_streets.pl>. Das
+Skript existiert immer noch, aber der komplette Code ist in dieses
+Modul gewandert.
+
 =head1 AUTHOR
 
-Slaven Rezic <slaven.rezic@berlin.de>
+Slaven Rezic <eserte@users.sourceforge.net>
 
 =head1 COPYRIGHT
 
-Copyright (c) 1999,2001,2006 Slaven Rezic. All rights reserved.
+Copyright (c) 1999,2001,2006,2007 Slaven Rezic. All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
 =head1 SEE ALSO
 
-miscsrc/combine_streets.pl
+F<miscsrc/combine_streets.pl>
 
 =cut
 
@@ -54,7 +85,7 @@ package Strassen;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 sub make_long_streets {
     my($self, %args) = @_;

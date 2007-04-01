@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.52 2007/02/03 11:06:08 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.53 2007/03/31 17:06:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION $bahn_bau_rx);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.52 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.53 $ =~ /(\d+)\.(\d+)/);
 
 $bahn_bau_rx = qr{^[SRU](0|Bau|G|P)$}; # auch ignorieren: Güterbahnen, Parkbahnen
 
@@ -34,6 +34,7 @@ sub new {
     $self->{Return}    = delete $args{Return};
     $self->{Geometry}  = delete $args{Geometry};
     $self->{Coords}    = delete $args{Coords}; # route coordinates
+    $self->{MultiCoords} = delete $args{MultiCoords}; # same for interrupted routes
     $self->{MarkerPoint} = delete $args{MarkerPoint};
     $self->{Draw}      = delete $args{Draw};
     $self->{Scope}     = delete $args{Scope} || 'city';
@@ -116,8 +117,12 @@ sub new_from_cgi {
     my($pkg, $q, %args) = @_;
     $args{Geometry}  = $q->param('geometry')
       if defined $q->param('geometry');
-    $args{Coords}    = [ split(/[!; ]/, $q->param('coords')) ]
-      if defined $q->param('coords');
+    my @coords = $q->param('coords');
+    if (@coords == 1) {
+	$args{Coords} = [ split(/[!; ]/, $coords[0]) ];
+    } elsif (@coords > 1) {
+	$args{MultiCoords} = [ map { [ split(/[!; ]/, $_) ] } @coords ];
+    }
     $args{MarkerPoint} = $q->param('markerpoint')
       if defined $q->param('markerpoint');
     $args{Draw}      = [ $q->param('draw') ]
@@ -180,15 +185,26 @@ sub pre_draw {
     $self->{PreDrawCalled}++;
     if (!defined $self->{Min_x}) { # XXX condition may be dangerous
 	$self->dimension_from_route;
-    } else {
+    } #else {
 	$self->_set_c1;
-    }
+    #}
     $self->create_transpose;
 }
 
 sub _set_c1 {
     my $self = shift;
-    if ($self->{Coords}) {
+    if ($self->{MultiCoords}) {
+	my @multi_c1;
+	for my $elem (@{ $self->{MultiCoords} }) {
+	    my @c1;
+	    for (@$elem) {
+		my($x, $y) = split /,/, $_;
+		push @c1, [$x, $y];
+	    }
+	    push @multi_c1, \@c1;
+	}
+	$self->{MultiC1} = \@multi_c1;
+    } elsif ($self->{Coords}) {
 	my(@coords) = @{ $self->{Coords} };
 	my @c1;
 	foreach (@coords) {
@@ -196,13 +212,15 @@ sub _set_c1 {
 	    push @c1, [$x,$y];
 	}
 	$self->{C1} = \@c1;
+	$self->{MultiC1} = [ $self->{C1} ];
     }
 }
 
 sub dimension_from_route {
     my $self = shift;
-    my(@coords) = @{ $self->{Coords} };
-    my @c1;
+    #my(@coords) = @{ $self->{Coords} };
+    my @coords = $self->{MultiCoords} ? map { @$_ } @{ $self->{MultiCoords} } : @{ $self->{Coords} };
+#    my @c1;
     my($min_x, $min_y, $max_x, $max_y);
     foreach (@coords) {
 	my($x, $y) = split(/,/, $_);
@@ -218,7 +236,7 @@ sub dimension_from_route {
 	if (!defined $max_y || $y > $max_y) {
 	    $max_y = $y;
 	}
-	push @c1, [$x,$y];
+#	push @c1, [$x,$y];
     }
 
     if (!defined $max_x && !defined $min_x) {
@@ -249,7 +267,7 @@ sub dimension_from_route {
     $self->{Min_y} = $min_y;
     $self->{Max_x} = $max_x;
     $self->{Max_y} = $max_y;
-    $self->{C1}    = \@c1;
+#    $self->{C1}    = \@c1;
 }
 
 sub set_bbox {

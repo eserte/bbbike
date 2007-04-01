@@ -83,7 +83,7 @@ Heinrich-Mann-Platz.	1 9590,18548 9527,18517 9496,18545 9469,18570 9475,18617 95
 Edelweißstr.	1 8251,19937 7966,19968 7885,19975 7772,20050
 Angerburger Allee	1 -1524,11108 -1608,11133 -1829,11337 -1895,11400 -1966,11466
 Edelhofdamm	1 3200,25429 2938,25317 2702,25223 2730,25298 2907,25363 3211,25484
-Antonienstr./Eichborndamm	1 3927,17909 4003,18308 4081,18677 4098,18762 4162,18891 4240,19019 4228,18873 4179,18652 4097,18288 4013,17901
+Antonienstr./Eichborndamm	1 3927,17909 3970,18126 4009,18322 4081,18677 4098,18762 4162,18891 4240,19019 4228,18873 4179,18652 4102,18298 4059,18107 4013,17901
 Spreestr.	1 17898,6049 17939,5968 17812,5726 17779,5694
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1 15657,10846 15871,10925
@@ -117,7 +117,7 @@ Petersburger Platz	1 13467,12978 13558,12766
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
 Schuckertdamm	1 746,14817 1109,14911 1343,14972 1488,14952
 Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
-Oberhofer Platz	1 5495,1964 5469,1949 5437,1941 5382,2080 5411,2098 5443,2109 5495,1964
+Oberhofer Platz	1 5495,1964 5469,1949 5437,1941 5431,1956 5382,2080 5411,2098 5443,2109 5489,1981 5495,1964
 Scheelestr.	1 5740,1227 5697,1098 5565,969 5424,882 5337,829
 Tibertius-Brücke: Kfz-Straße	2 5681,5743 5593,5803 5414,5939 5330,6001 4903,6221
 An der Schillingbrücke	1 12056,11390 12055,11331
@@ -224,7 +224,7 @@ Pintschstr.	1 13342,13185 13438,12965
 Dievenowstr.	1 3225,7390 3208,7328 3189,7249 3206,7109
 Neue Schönholzer Str.	1 10089,18180 10140,18080 10179,17772
 Wolliner Str.	1 10405,14425 10320,14608
-Splanemannstr.	1 18284,9948 18389,9925 18408,10041 18403,10077
+Splanemannstr.	1 18301,9946 18389,9925 18408,10041 18403,10077
 Burgherrenstr.	1 8969,8640 9050,8783
 Travestr.	1 14825,11844 14897,11801 14977,11754
 Müggelstr.	1 14897,11801 14953,11923
@@ -346,7 +346,8 @@ Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18447,8818
 Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20775,16977
 (Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20401,16189 20487,16392
 Jugendweg	1 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
-Jochen-Nüßler-Str.	1 13571,4493 13589,4681
+Boschpoler Platz	1 20540,13773 20665,13759
+Kienbergstr.	1 21287,14963 21225,14907 21217,14721 21122,14713
 Mauerstr.	1 -13425,-852 -13500,-640
 Wilhelm-Staab-Str.	1 -13003,-1343 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12693,-827 -12712,-734 -12730,-627
@@ -441,6 +442,12 @@ Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Ringbahnstr.	1s 8717,6965 8447,6964
 Björnsonstr.	1s 10209,16674 10197,16528
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
+Ellernweg -> Sterndamm: Straßenbahntrasse	3 17428,4792 17542,4772 17601,5090
+Ellernweg -> Waldstr.: Straßenbahntrasse	3 17428,4792 17542,4772 17881,4521
+Sterndamm -> Ellernweg: Straßenbahntrasse	3 17518,4644 17542,4772 17428,4792
+Sterndamm -> Waldstr.: Straßenbahntrasse	3 17601,5090 17542,4772 17881,4521
+Waldstr. -> Ellernweg: Straßenbahntrasse	3 17881,4521 17542,4772 17428,4792
+Waldstr. -> Sterndamm: Straßenbahntrasse	3 17881,4521 17542,4772 17518,4644
 Möwenweg -> Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3 22237,11215 22242,11269 21960,11269
 Möwenweg -> Wuhlewanderweg: unbequemes Passieren des Mittelstreifens	3 22237,11215 22242,11269 22244,11311
 Alt-Biesdorf -> Wuhlewanderweg: unbequemes Passieren des Mittelstreifens	3 21960,11269 22242,11269 22244,11311
@@ -486,8 +493,10 @@ Detmolder Str. -> Aachener Str.: Mittelstreifen nicht passierbar	3 4572,7936 465
 Aachener Str. -> Detmolder Str.: Mittelstreifen nicht passierbar	3 4609,8013 4659,7982 4793,7992
 Rhinstr. -> Kolonie Friedrichsfelde Nord: Straßenbahntrasse	3 18215,12132 18216,12262 18180,12262
 Kolonie Friedrichsfelde Nord -> Rhinstr.: Straßenbahntrasse	3 18180,12262 18216,12262 18220,12450
-Langhoffstr. -> Allee der Kosmonauten: Straßenbahntrasse	3 19821,13604 19807,13529 20182,13554
+Langhoffstr. -> Allee der Kosmonauten: Straßenbahntrasse	3 19821,13604 19807,13529 19837,13531
 Allee der Kosmonauten -> Langhoffstr.: Straßenbahntrasse	3 19628,13517 19807,13529 19821,13604
+Allee der Kosmonauten -> Biesdorfer Promenade: Straßenbahntrasse	3 20182,13554 19837,13531 19826,13444
+Biesdorfer Promenade -> Allee der Kosmonauten: Straßenbahntrasse	3 19826,13444 19837,13531 19807,13529
 Aalesunder Str. -> Bornholmer Str.: Straßenbahntrasse	3 10549,16650 10533,16505 10620,16497
 Bornholmer Str. -> Aalesunder Str.: Straßenbahntrasse	3 10445,16511 10533,16505 10549,16650
 Bornholmer Str. -> Bergener Str.: Straßenbahntrasse	3 10282,16522 10370,16516 10382,16661
@@ -1119,8 +1128,8 @@ Roedeliusweg -> Heerstr.: Heerstr.	3 -4431,11779 -4437,11919 -4500,11937
 Enger Steig -> Heerstr.: Heerstr.	3 -4298,11769 -4278,11873 -4310,11882
 Heerstr. -> Enger Steig: Heerstr.	3 -4063,11805 -4278,11873 -4298,11769
 tragen/schieben (40 Stufen, Rampe)	0:120 -4768,11016 -4836,11028
-Theodor-Heuss-Weg	1s 9246,14518 9095,14344
-tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:40:-150 9271,14562
+Theodor-Heuss-Weg	1s 9197,14562 9081,14363
+tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:40:-150 9223,14608
 Tor	BNP:5:-260 3326,12730
 Herderstr. (Charlottenburg)	1 4451,11558 4435,11343
 tragen (Treppe)	0:30:-248 7957,12864

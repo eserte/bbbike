@@ -1519,7 +1519,7 @@ EOF
        text  => 'Hussitenstr. (Mitte) in Richtung Bernauer Str. zwischen Bernauer Str. und Usedomer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 9112,14771 9300,14615 9378,14553 9472,14478
+userdel	q4; 9112,14771 9250,14658 9338,14587 9472,14478
 EOF
      },
      { from  => 1109628414, # 2005-02-28 23:06
@@ -7585,6 +7585,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -25679,76561 -25764,76324
+EOF
+     },
+     { from  => 1176069600, # 2007-04-09 00:00
+       until => 1182549600, # 2007-06-23 00:00
+       text  => 'L 015 zw. Gollmitz u. Berkholz u. Boitzenburg Deckensanierung Vollsperrung 10.04.2007-22.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 29760,99768 27416,98865 26759,98614 26304,98234 26128,97916 25974,97619 24828,97295 24216,96897 23278,96396
 EOF
      },
     );

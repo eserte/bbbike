@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: FixRemoteAddrHandler.pm,v 1.2 2006/03/25 08:43:36 eserte Exp eserte $
+# $Id: FixRemoteAddrHandler.pm,v 1.3 2007/03/31 20:08:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ package FixRemoteAddrHandler;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 use Apache::Constants qw(DECLINED);
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.3 2003/01/08 20:12:34 eserte Exp eserte $
+# $Id: Util.pm,v 1.4 2007/03/31 20:03:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2006 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GPS::Util;
 
 use strict;
 use vars qw($VERSION @EXPORT);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Exporter);
 

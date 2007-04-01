@@ -147,15 +147,7 @@ userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_004456',
-         'until' => 1175378399,
-         'text' => 'Pistoriusstr. (Pankow) in Richtung Berliner Allee, zwischen Roelckestr. und Mirbachplatz Baustelle, Fahrtrichtung gesperrt (bis 03.2007)',
-         'from' => 1168462016,
-         'data' => 'userdel	q4::inwork; 13131,16525 13331,16424
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -336,14 +328,6 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        undef,
        undef,
        undef,
-       {
-         'until' => 1175292000,
-         'text' => 'K 6904 Gröben-KG-K6903 Nudow zw. Abzw. Nudow und Fahlhorst Bau Eisenbahnüberführung Vollsperrung 24.07.2006-30.03.2007 ',
-         'from' => 1153605600,
-         'data' => 'userdel	2::inwork -6631,-9207 -6181,-10412
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -361,15 +345,8 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_003833',
-         'until' => 1175378400,
-         'text' => 'Glinkastr. (Mitte) in Richtung Leipziger Str., zwischen Jägerstr. und Taubenstr. Baustelle, Fahrtrichtung gesperrt (bis 31.03.2007)',
-         'from' => 1161032658,
-         'data' => 'userdel	1::inwork 9201,11968 9208,11872
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -393,14 +370,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        undef,
        undef,
        undef,
-       {
-         'until' => 1175378400,
-         'text' => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Puschkinstr. Straßenausbau Vollsperrung 01.11.2006-31.03.2007 ',
-         'from' => 1162249200,
-         'data' => 'userdel	q4::inwork -4299,-35198 -4725,-34957
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -592,14 +562,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1175292000,
-         'text' => 'Fürstenwalder Damm, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, Baustelle bis 30.03.2007 (im Bereich Einmündung Mühlweg) ',
-         'from' => 1172530568,
-         'data' => 'userdel	q4::inwork 25039,5766 23950,5342
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -684,15 +647,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_004953',
-         'until' => 1175378399,
-         'text' => 'Schulze-Boysen-Str. gesperrt (geplatzte Wasserleitung) (bis Ende 03.2007)',
-         'from' => 1173906268,
-         'data' => 'userdel	2::inwork 15836,11840 15863,11992
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1185141600,
@@ -886,6 +841,14 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	q4::inwork -25679,76561 -25764,76324
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1182549600,
+         'text' => 'L 015 zw. Gollmitz u. Berkholz u. Boitzenburg Deckensanierung Vollsperrung 10.04.2007-22.06.2007 ',
+         'from' => 1176069600,
+         'data' => 'userdel	2::inwork 29760,99768 27416,98865 26759,98614 26304,98234 26128,97916 25974,97619 24828,97295 24216,96897 23278,96396
+',
+         'type' => 'gesperrt'
        }
      
 );

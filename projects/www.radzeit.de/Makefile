@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.92 2007/03/23 22:25:38 eserte Exp $
+# $Id: Makefile,v 1.93 2007/03/31 12:03:35 eserte Exp $
 #
 
 # Targets:
@@ -151,7 +151,8 @@ TARGET=radzeit.herceg.de
       make(rsync-temp-blockings)     || \
       make(rsync-routopedia)	     || \
       make(rsync-tests)		     || \
-      make(clean-cache-files-on-remote)
+      make(clean-cache-files-on-remote) || \
+      make(diff-temp-blockings)
 TARGET=radzeit
 .elif make(deploy-local)         || \
       make(deploy-local-data)    || \
@@ -676,6 +677,11 @@ remote-cleanup:
 # For quick deployment only:
 fast-rsync-googlemaps:
 	rsync -e "${SSH_PROG_AND_ARGS}" -av $(BBBIKE_ROOT_DIR)/cgi/bbbikegooglemap.cgi ${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_SSH_HOST}:/var/www/domains/radzeit.de/www/cgi-bin/
+
+# Do I need an rsync for temp-blockings?
+diff-temp-blockings:
+	${SSH_PROG_AND_ARGS} -C ${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_SSH_HOST} \
+	    cat ${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/data/temp_blockings/bbbike-temp-blockings.pl | diff -u - ${BBBIKE_ROOT_DIR}/${TEMP_BLOCKINGS_DIR}/bbbike-temp-blockings.pl
 
 #######################################################################
 ## Preliminary ixls.de rules, not needed anymore?

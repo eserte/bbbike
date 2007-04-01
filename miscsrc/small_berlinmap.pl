@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: small_berlinmap.pl,v 2.19 2007/03/03 20:14:57 eserte Exp $
+# $Id: small_berlinmap.pl,v 2.20 2007/03/30 22:20:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001 Slaven Rezic. All rights reserved.
@@ -148,12 +148,22 @@ if (!GetOptions("width=i" => \$img_w,
 }
 
 if ($use_cgi_settings) {
+die "Needs some work, filling does not seem to be right anymore.
+Also, some work for the 260x240 version should be done";
     if (0) {
 	# old cgi settings (width=200 etc.)
+    } elsif (0) {
+	# Nauen <-> Strausberg
+	$bbox = '-25901,-11471,43275,34695';
+	$includepotsdam = 1;
+	$custom_places = "Nauen,-anchor,e;Bernau;Königs Wusterhausen,-anchor,e;Teltow,-anchor,nc;Velten;Hennigsdorf,-anchor,e;Ahrensfelde,-anchor,nw;Michendorf;Mahlow;Werder,-anchor,nc;Strausberg,-anchor,e";
+	$img_w = 260;
+	$img_h = 240;
+	$suffix = "_260x240";
     } else {
 	$bbox = '-19716,-11471,33957,34695';
 	$includepotsdam = 1;
-	$custom_places = "Nauen,-anchor,e;Bernau;Königs Wusterhausen,-anchor,e;Teltow,-anchor,nc;Velten;Hennigsdorf,-anchor,e;Ahrensfelde;Michendorf;Mahlow";
+	$custom_places = "Nauen,-anchor,w;Bernau;Königs Wusterhausen,-anchor,ne;Teltow,-anchor,nc;Velten;Hennigsdorf,-anchor,ne;Ahrensfelde;Michendorf;Mahlow";
 	$img_w = 240;
 	$img_h = 240;
 	$suffix = "_240";
@@ -232,7 +242,8 @@ my \$maxy = $draw->{Max_y};
     if ($use_cgi_settings) {
 	print <<EOF;
 # For addition in bbbike.cgi:
-\$berlin_small_width = $img_w;
+\$berlin_small_width  = $img_w;
+\$berlin_small_height = $img_h;
 \$berlin_small_suffix = "$suffix";
 \$xm = $xm;
 \$ym = $ym;
@@ -260,9 +271,6 @@ EOF
 		$gd_img->fill($w/10, $h/4*3, $draw->get_color("white"));
 	    }
 	}
-    }
-    if (defined $custom_places) {
-	$draw->draw_custom_places($custom_places);
     }
 
     {
@@ -301,6 +309,9 @@ EOF
     $draw2->set_dimension_max(new MultiStrassen @border);
     $draw2->create_transpose;
     $draw2->draw_map;
+    if (defined $custom_places) {
+	$draw->draw_custom_places($custom_places);
+    }
     $draw2->flush;
     close IMG;
 

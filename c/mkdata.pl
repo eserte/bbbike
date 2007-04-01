@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mkdata.pl,v 1.9 2000/12/12 23:36:28 eserte Exp $
+# $Id: mkdata.pl,v 1.10 2007/03/31 20:03:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2000 Slaven Rezic. All rights reserved.
