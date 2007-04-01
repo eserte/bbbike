@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.48 2007/03/27 21:33:02 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.49 2007/04/01 20:02:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -705,7 +705,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.48 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.49 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -733,27 +733,35 @@ use vars qw($xgridwidth $ygridwidth $xgridnr $ygridnr $xm $ym $x0 $y0
 	    $start_bgcolor $via_bgcolor $ziel_bgcolor @pref_keys);
 # Konstanten für die Imagemaps
 # Die Werte (bis auf $ym) werden mit small_berlinmap.pl ausgegeben.
-use vars qw($berlin_small_width $berlin_small_suffix);
+use vars qw($berlin_small_width $berlin_small_height $berlin_small_suffix);
 if (!$use_region_image) {
-    $berlin_small_width = 200;
+    $berlin_small_width = $berlin_small_height = 200;
     $berlin_small_suffix = "";
     $xm = 228.58;
     $ym = 228.58;
     $x0 = -10849;
     $y0 = 34282.5;
-} else {
-    $berlin_small_width = 240;
+} elsif (0) {
+    $berlin_small_width = $berlin_small_height = 240;
     $berlin_small_suffix = "_240";
     $xm = 223.6375;
     $ym = 223.6375;
     $x0 = -19716;
     $y0 = 38448.5;
+} else {
+    $berlin_small_width  = 280;
+    $berlin_small_height = 240;
+    $berlin_small_suffix = "_280x240";
+    $xm = 247.057142857143;
+    $ym = 247.057142857143;
+    $x0 = -25901;
+    $y0 = 41258.8571428572;
 }
 # Die nächsten beiden Variablen müssen auch in bbbike_start.js geändert werden.
 $xgridwidth = 20; # 20 * 10 = 200: Breite und Höhe von berlin_small.gif
 $ygridwidth = 20;
 $xgridnr = $berlin_small_width / $xgridwidth;
-$ygridnr = $berlin_small_width / $ygridwidth;
+$ygridnr = $berlin_small_height / $ygridwidth;
 ## schön groß, aber passt nicht auf Seite
 #$detailwidth  = 600; # muß quadratisch sein!
 #$detailheight = 600;
@@ -2035,10 +2043,10 @@ EOF
 		    print "<input type=hidden name=\"" . $type . "mapimg.x\" value=\"\">";
 		    print "<input type=hidden name=\"" . $type . "mapimg.y\" value=\"\">";
 		    print "<div id=" . $type . "mapbelow style=\"position:relative;visibility:hidden;\">";
-		    print "<img src=\"$bbbike_images/berlin_small$berlin_small_suffix.gif\" border=0 width=$berlin_small_width height=$berlin_small_width alt=\"\">";
+		    print "<img src=\"$bbbike_images/berlin_small$berlin_small_suffix.gif\" border=0 width=$berlin_small_width height=$berlin_small_height alt=\"\">";
 		    print "</div>";
 		    print "<div id=" . $type . "mapabove style=\"position:absolute;visibility:hidden;\">";
-		    print "<img src=\"$bbbike_images/berlin_small_hi$berlin_small_suffix.gif\" border=0 width=$berlin_small_width height=$berlin_small_width alt=\"\">";
+		    print "<img src=\"$bbbike_images/berlin_small_hi$berlin_small_suffix.gif\" border=0 width=$berlin_small_width height=$berlin_small_height alt=\"\">";
 		    print "</div>";
 		    print <<EOF;
 <script type="text/javascript"><!--
@@ -2050,7 +2058,7 @@ function $ {type}map_detail(Evt) { return any_detail("${type}map", Evt); }
 EOF
 		} elsif (!$bi->{'text_browser'} && !$no_berlinmap) {
 		    print "<input type=image name=" . $type
-		      . "mapimg src=\"$bbbike_images/berlin_small$berlin_small_suffix.gif\" class=\"citymap\" style=\"width:${berlin_small_width}px; height:${berlin_small_width}px\" alt=\"\">";
+		      . "mapimg src=\"$bbbike_images/berlin_small$berlin_small_suffix.gif\" class=\"citymap\" style=\"width:${berlin_small_width}px; height:${berlin_small_height}px\" alt=\"\">";
 		}
 		print "</td>" if $bi->{'can_table'};
 	    }
@@ -2116,7 +2124,7 @@ function " . $type . "char_init() {}
 sub berlinmap_with_choices {
     my($type, $matchref) = @_;
     print "<div id=${type}mapbelow style=\"position:relative;visibility:hidden;\">";
-    print "<img src=\"$bbbike_images/berlin_small$berlin_small_suffix.gif\" border=0 width=$berlin_small_width height=$berlin_small_width alt=\"\">";
+    print "<img src=\"$bbbike_images/berlin_small$berlin_small_suffix.gif\" border=0 width=$berlin_small_width height=$berlin_small_height alt=\"\">";
     print "</div>";
 
     my $js = "";
@@ -6405,7 +6413,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/03/27 21:33:02 $';
+    my $cgi_date = '$Date: 2007/04/01 20:02:51 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

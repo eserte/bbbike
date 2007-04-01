@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: small_berlinmap.pl,v 2.20 2007/03/30 22:20:12 eserte Exp $
+# $Id: small_berlinmap.pl,v 2.21 2007/04/01 20:02:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001 Slaven Rezic. All rights reserved.
@@ -92,6 +92,13 @@ deshalb ist eine Konvertierung nach GIF erforderlich.
 The fill center point for Potsdam is very rough and can lead to wrong
 results.
 
+=head1 CAVEATS
+
+Es sieht so aus, als ob das generierte GIF-Bild kaputt wäre (fast
+alles schwarz), wenn man es sich mit display oder xv anschaut. Mit
+Mozilla sieht es aber OK aus. Anscheinend wird die transparente Farbe
+dort falsch interpretiert...
+
 =head1 AUTHOR
 
 Slaven Rezic <eserte@users.sourceforge.net>
@@ -109,6 +116,7 @@ use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib", "$FindBin::RealBin/
 use BBBikeDraw;
 use BBBikeUtil qw(is_in_path);
 use Getopt::Long;
+use File::Temp qw(tempfile);
 use strict;
 
 my $img_w = 200;
@@ -148,25 +156,22 @@ if (!GetOptions("width=i" => \$img_w,
 }
 
 if ($use_cgi_settings) {
-die "Needs some work, filling does not seem to be right anymore.
-Also, some work for the 260x240 version should be done";
     if (0) {
 	# old cgi settings (width=200 etc.)
-    } elsif (0) {
+    } elsif (1) {
 	# Nauen <-> Strausberg
 	$bbox = '-25901,-11471,43275,34695';
 	$includepotsdam = 1;
-	$custom_places = "Nauen,-anchor,e;Bernau;Königs Wusterhausen,-anchor,e;Teltow,-anchor,nc;Velten;Hennigsdorf,-anchor,e;Ahrensfelde,-anchor,nw;Michendorf;Mahlow;Werder,-anchor,nc;Strausberg,-anchor,e";
-	$img_w = 260;
+	$custom_places = "Bernau;Königs Wusterhausen,-anchor,e;Teltow,-anchor,nc;Velten;Hennigsdorf,-anchor,e;Ahrensfelde,-anchor,nw;Michendorf;Mahlow;Werder,-anchor,nc;Strausberg,-anchor,e;Nauen,-anchor,w;Oranienburg;Zossen;Falkensee,-anchor,e";
+	$img_w = 280;
 	$img_h = 240;
-	$suffix = "_260x240";
+	$suffix = "_".$img_w."x".$img_h;
     } else {
 	$bbox = '-19716,-11471,33957,34695';
 	$includepotsdam = 1;
 	$custom_places = "Nauen,-anchor,w;Bernau;Königs Wusterhausen,-anchor,ne;Teltow,-anchor,nc;Velten;Hennigsdorf,-anchor,ne;Ahrensfelde;Michendorf;Mahlow";
-	$img_w = 240;
-	$img_h = 240;
-	$suffix = "_240";
+	$img_w = $img_h = 240;
+	$suffix = "_".$img_w;
     }
 }
 
@@ -214,11 +219,7 @@ for my $type ('norm', 'hi') {
 	FontSizeScale => 0.68,
 	%draw_args,
         ;
-    if ($bbox) {
-	$draw->set_bbox(split /,/, $bbox);
-    } else {
-	$draw->set_bbox_max(new MultiStrassen @border);
-    }
+    set_bbox($draw);
     $draw->create_transpose(-asstring => 1);
     # Note: this has to be called after create_transpose, because of possible
     # adjustments
@@ -254,7 +255,7 @@ EOF
 
     $draw->draw_map;
     my $gd_img = $draw->{Image};
-    if ($type ne 'hi') {
+    if (0 && $type ne 'hi') { # filling not necessary anymore???
 	no warnings 'uninitialized';
 	if ($draw->{Module} eq 'ImageMagick') {
 	    $gd_img->ColorFloodfill(geometry=>'+'.($w/2).'+'.+($h/2),
@@ -306,7 +307,8 @@ EOF
 	%draw_args,
 	Scope => 'region',
 	;
-    $draw2->set_dimension_max(new MultiStrassen @border);
+    set_bbox($draw2);
+    #XXX del: $draw2->set_dimension_max(new MultiStrassen @border);
     $draw2->create_transpose;
     $draw2->draw_map;
     if (defined $custom_places) {
@@ -324,47 +326,63 @@ EOF
     }
 
     if ($use_gif) {
-	system("convert", $img, $img_gif) == 0
-	    or die "Failed $img -> $img_gif conversion: $?";
-	chmod 0644, $img_gif;
-	if (0) { # XXX old code using netpbm
-	    system("pngtopnm $img | ppmtogif > $img_gif");
-	    chmod 0644, $img_gif;
+	if (1) {
+	    system("convert", $img, $img_gif) == 0
+		or die "Failed $img -> $img_gif conversion: $?";
+	} else {
+	    # XXX old code using netpbm
+	    my($alphafh,$alphafile) = tempfile(SUFFIX => "_alpha.pbm",
+					       UNLINK => 1,
+					      );
+	    my($pgmfh,$pgmfile) = tempfile(SUFFIX => "_alpha.pgm",
+					   UNLINK => 1,
+					  );
+	    system("pngtopnm -alpha $img > $alphafile");
+	    system("pgmtopbm $alphafile > $pgmfile");
+	    system("pngtopnm $img | ppmtogif -alpha=$pgmfile > $img_gif");
 
 	    if (is_in_path("giftool")) {
 		# add comment
 		system("giftool", "-B", "+c", "created by $0 on ".scalar(localtime),
 		       $img_gif);
-		chmod 0644, $img_gif;
 	    }
 
-	    if ($type eq 'norm' && $normbg =~ /transparent/) {
-		# find transparent color
-		my $tr_color;
-		open(GIFTR, "giftrans -L $img_gif 2>&1 |");
-		while (<GIFTR>) {
-		    if (/Color\s+(\d+):.*\#999999/) {
-			$tr_color = $1;
-			last;
-		    }
-		}
-		close GIFTR;
-		if (!defined $tr_color) {
-		    die "Can't find transparent color in $img_gif";
-		}
+# 	    if ($type eq 'norm' && $normbg =~ /transparent/) {
+# 		# find transparent color
+# 		my $tr_color;
+# 		open(GIFTR, "giftrans -L $img_gif 2>&1 |");
+# 		while (<GIFTR>) {
+# 		    if (/Color\s+(\d+):.*\#999999/) {
+# 			$tr_color = $1;
+# 			last;
+# 		    }
+# 		}
+# 		close GIFTR;
+# 		if (!defined $tr_color) {
+# 		    die "Can't find transparent color in $img_gif";
+# 		}
 
-		rename $img_gif, "$img_gif~";
-		system "giftrans -t $tr_color -o $img_gif $img_gif~";
-		die if $?;
-		chmod 0644, $img_gif;
-	    }
+# 		rename $img_gif, "$img_gif~";
+# 		system "giftrans -t $tr_color -o $img_gif $img_gif~";
+# 		die if $?;
+# 	    }
 	}
+	chmod 0644, $img_gif;
     }
 
     if ($use_xpm) {
 	system("convert", $img, $img_xpm) == 0
 	    or die "Failed $img -> $img_xpm conversion: $?";
 	chmod 0644, $img_xpm;
+    }
+}
+
+sub set_bbox {
+    my($draw) = @_;
+    if ($bbox) {
+	$draw->set_bbox(split /,/, $bbox);
+    } else {
+	$draw->set_bbox_max(new MultiStrassen @border);
     }
 }
 

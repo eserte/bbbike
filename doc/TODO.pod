@@ -2847,6 +2847,7 @@ Verbleibende Issues mit mapserver 4.4.1:
    Start, Ziel)
  * Einbahnstraﬂen sind durch E<quot>>E<quot> markiert (das ist aber
    OK).
+ * Das Grenzen-Symbol (Punkt Strich) wird nicht gezeichnet.
 
  * CVS-Version (2006-09-25) scheint viel besser zu funktionieren! Noch
    kein einziger Segfault! Ich habe allerdings auch den GD-Patch oben
