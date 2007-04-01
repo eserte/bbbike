@@ -3759,7 +3759,7 @@ userdel	2 23356,-20982 22599,-19785
 EOF
      },
      { from  => 1161627812, # 2006-10-23 20:23
-       until => Time::Local::timelocal(reverse(2007-1900,7-1,1,0,0,0)),
+       until => 1175458876, # Time::Local::timelocal(reverse(2007-1900,7-1,1,0,0,0)),
        text  => 'Wiesbadener Str. (Wilmersdorf) Richtung Bundesallee zwischen Geisenheimer Str. und Südwestkorso Baustelle, Fahrtrichtung gesperrt (bis Mitte 2007)',
        type  => 'gesperrt',
        source_id => 'IM_003889',
@@ -7593,6 +7593,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 29760,99768 27416,98865 26759,98614 26304,98234 26128,97916 25974,97619 24828,97295 24216,96897 23278,96396
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Glinkastr. (Mitte) in Richtung Leipziger Str., zwischen Jägerstr. und Taubenstr. Baustelle, Fahrtrichtung gesperrt (bis auf weiteres)',
+       type  => 'gesperrt',
+       source_id => 'IM_003833',
+       data  => <<EOF,
+userdel	1::inwork 9201,11968 9208,11872
 EOF
      },
     );
