@@ -10,6 +10,8 @@
    UNLESS HEADLINE_HTML.defined; HEADLINE_HTML = "Berlin/Brandenburg"; END;
    UNLESS MOREINFO_HTML.defined; MOREINFO_HTML = ""; END;
  # XXX This is wrong: an array is never defined?! UNLESS EXTRA_LAYERS.defined && EXTRA_LAYERS.size > 0; EXTRA_LAYERS = []; END;
+   # Some/all? firefox versions have some <base> bug, so using absolute URLs here:
+   HELP = MAPSERVER_URL _ "/help.html";
 -%]
 [% SET style="new" -%]
 <html>
@@ -97,12 +99,12 @@
   <table summary="" cellpadding="5" cellspacing="0" border="0" bgcolor="#ffffff">
     <tr><td>
 
-      <b>Darzustellende Ebenen: </b><small><a href="help.html#layers" onclick="return help('layers')">(Hilfe)</a></small><br>
+      <b>Darzustellende Ebenen: </b><small><a href="[% HELP %]#layers" onclick="return help('layers')">(Hilfe)</a></small><br>
       <div class="lyrchk">
       <label><input type="checkbox" name="layer" value="qualitaet" [% t('qualitaet_check') %]> Qualit‰t</label><br>
       <label><input type="checkbox" name="layer" value="handicap" [% t('handicap_check') %]> sonstige Behinderungen</label><br>
       <label><input type="checkbox" name="layer" value="radwege" [% t('radwege_check') %]> Radwege/Busspuren</label><br>
-      <label><input type="checkbox" name="layer" value="comments_route" [% t('comments_route_check') %]> <a href="radroute.html">Radrouten</a> (in der Regel ausgeschildert)</label><br>
+      <label><input type="checkbox" name="layer" value="comments_route" [% t('comments_route_check') %]> <a href="[% MAPSERVER_URL %]/radroute.html">Radrouten</a> (in der Regel ausgeschildert)</label><br>
       <label><input type="checkbox" name="layer" value="blocked" [% t('blocked_check') %]> gesperrte Straﬂen</label><br>
       <label><input type="checkbox" name="layer" value="bahn" [% t('bahn_check') %]> Bahnlinien und Bahnhˆfe</label><br>
       <label><input type="checkbox" name="layer" value="gewaesser" [% t('gewaesser_check') %]> Gew‰sser</label><br>
@@ -127,26 +129,26 @@
       <input type="hidden" name="mode" />
       <input type="hidden" name="zoomdir" />
       <label><input type="radio" name="mode_or_zoomdir" value="0" [% t('zoomdir_0_check') %] onclick="change_mode_or_zoomdir()">&nbsp;Karte bewegen</label>
-        <small><a href="help.html#query" onclick="return help('move')">(Hilfe)</a></small>
+        <small><a href="[% HELP %]#query" onclick="return help('move')">(Hilfe)</a></small>
 	<br>
       <label><input type="radio" name="mode_or_zoomdir" value="1" [% t('zoomdir_1_check') %] onclick="change_mode_or_zoomdir()">&nbsp;Hineinzoomen</label>
-        <small><a href="help.html#query" onclick="return help('zoomin')">(Hilfe)</a></small>
+        <small><a href="[% HELP %]#query" onclick="return help('zoomin')">(Hilfe)</a></small>
 	<br>
       <label><input type="radio" name="mode_or_zoomdir" value="-1" [% t('zoomdir_-1_check') %] onclick="change_mode_or_zoomdir()">&nbsp;Herauszoomen</label>
-        <small><a href="help.html#query" onclick="return help('zoomout')">(Hilfe)</a></small>
+        <small><a href="[% HELP %]#query" onclick="return help('zoomout')">(Hilfe)</a></small>
 	<br>
       <label><input type="radio" name="mode_or_zoomdir" value="nquery" onclick="change_mode_or_zoomdir()">&nbsp;Details anzeigen</label>
-        <small><a href="help.html#query" onclick="return help('query')">(Hilfe)</a></small>
+        <small><a href="[% HELP %]#query" onclick="return help('query')">(Hilfe)</a></small>
 	<br>
       <label><input type="radio" name="mode_or_zoomdir" value="searchroute" onclick="change_mode_or_zoomdir()"> Start/Zielpunkt setzen</label>
-	<small>(experimentell! - <a href="help.html#search" onclick="return help('search')">Hilfe</a>)</small>
+	<small>(experimentell! - <a href="[% HELP %]#search" onclick="return help('search')">Hilfe</a>)</small>
       <p>
 
 [% ELSE %]
       <label><input type="radio" name="mode" value="browse" onclick="toggled_searchroute_mode();" checked> <b>Karte zoomen/bewegen</b></label>
-        <small><a href="help.html#browse" onclick="return help('browse')">(Hilfe)</a></small><br>
+        <small><a href="[% HELP %]#browse" onclick="return help('browse')">(Hilfe)</a></small><br>
       <label><input type="radio" name="mode" value="nquery" onclick="toggled_searchroute_mode();"> <b>Merkmale anzeigen</b></label>
-        <small><a href="help.html#query" onclick="return help('query')">(Hilfe)</a></small>
+        <small><a href="[% HELP %]#query" onclick="return help('query')">(Hilfe)</a></small>
       <p>
       <label><input type=radio name=zoomdir value=1 [% t('zoomdir_1_check') %] onclick="set_gui_browse_mode()">&nbsp;Hineinzoomen</label><br>
       <label><input type=radio name=zoomdir value=0 [% t('zoomdir_0_check') %] onclick="set_gui_browse_mode()">&nbsp;Bewegen</label><br> 
@@ -154,7 +156,7 @@
 [% END %]
 
       <p>
-      Zoomstufe <input type=text name=zoomsize size=4 value=[% t('zoomsize') %]> <small><a href="help.html#zoomin" onclick="return help('zoomin')">(Hilfe)</a></small>
+      Zoomstufe <input type=text name=zoomsize size=4 value=[% t('zoomsize') %]> <small><a href="[% HELP %]#zoomin" onclick="return help('zoomin')">(Hilfe)</a></small>
       <p>
 
 <!-- Does not work...
@@ -166,13 +168,13 @@
       <center><input type="submit" value="Neu zeichnen" onclick="adjust_for_redraw()"></center>
 
 [% IF style != "new" %]
-<input type="radio" name="mode" value="searchroute" onclick="toggled_searchroute_mode();"> Start/Zielpunkt setzen <small>(experimentell! - <a href="help.html#search" onclick="return help('query')">Hilfe</a>)</small>
+<input type="radio" name="mode" value="searchroute" onclick="toggled_searchroute_mode();"> Start/Zielpunkt setzen <small>(experimentell! - <a href="[% HELP %]#search" onclick="return help('query')">Hilfe</a>)</small>
 [% END %]
 
       <h3>Legende</h3>
       <img title="" alt="legend" src="[% t('legend') %]">
 
-      <br>Maﬂstab: 1:[% t('scale') %] <small><a href="help.html#scale" onclick="return help('scale')">(Hilfe)</a></small>
+      <br>Maﬂstab: 1:[% t('scale') %] <small><a href="[% HELP %]#scale" onclick="return help('scale')">(Hilfe)</a></small>
 
       <br>Letzte Aktualisierung der Daten:
           [%
@@ -190,7 +192,7 @@
   <td colspan="3">
       <p class="ftr">
        <a id="bbbikemail" href="mailto:slaven@rezic.de">E-Mail</a> |
-       <a href="help.html">Info</a> |
+       <a href="[% HELP %]">Info</a> |
        <a id="bbbikeurl" href="[% BBBIKE_URL %]">BBBike</a> |
        <a href="[% BBBIKE_CGI_RELURL %]/mapserver_address.cgi?[% t('get_layers') %];mapext=[% t('mapext_esc') %]">Adresssuche</a>
       </p>

@@ -678,6 +678,14 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	1::inwork 9201,11968 9208,11872
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1183240800,
+         'text' => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf grundhafter Straßenausbau Vollsperrung 11.07.2006-30.06.2007 ',
+         'from' => 1152482400,
+         'data' => 'userdel	2::inwork 7981,-7165 7558,-7093
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -2859,7 +2859,7 @@ Jägerstr.: schlechtes Kopfsteinpflaster	Q3 5443,2109 5533,2143 5672,2197 5778,22
 Parforceheide: Asphalt	Q0 -1737,1904 -1796,2054 -1717,2084 -1654,1954
 #: by: Michael Heckner: vvv
 Robert-von-Ostertag-Str.: breiter fester Sandweg	Q2 -613,1949 -745,2320
-#: XXX aber die ADFC-Karte kennzeichnet ein kleines SDtück im Norden als "schlect geeignet":
+#: XXX aber die ADFC-Karte kennzeichnet ein kleines Stück im Norden als "schlecht geeignet":
 Alte Spandauer Poststr.: Waldweg (fester Sandweg)	Q1 -1415,9144 -1482,9276 -1512,9438 -1495,9518 -1448,9644 -1453,9748 -1491,9801 -1602,9915 -1846,10292
 Teltower Weg: fester Waldweg, gut befahrbar	Q1 -903,6923 -1008,7427 -1112,7891 -1317,8836 -1336,9001 -1415,9144
 #: by: ^^^
@@ -4294,7 +4294,7 @@ Isegrimsteig: mäßiges Verbundsteinpflaster	Q2+ -929,21851 -703,21788
 Isegrimsteig: mäßiges Verbundsteinpflaster	Q2+ -711,21761 -583,21724 -489,21709
 #: by: ^^^
 #: by: Barbara Kleinen: vvv
-Charlottenstr. (Niederschönhausen): schlectes Kopfsteinpflaster	Q3 10600,20839 10609,20796 10635,20693 10662,20559 10703,20464 10786,20272 10802,20240 10888,20051
+Charlottenstr. (Niederschönhausen): schlechtes Kopfsteinpflaster	Q3 10600,20839 10609,20796 10635,20693 10662,20559 10703,20464 10786,20272 10802,20240 10888,20051
 Wackenbergstr.: Kopfsteinpflaster	Q2 10184,19727 10543,19872
 Wackenbergstr.: Kopfsteinpflaster mit schmaler Asphaltdecke in der Mitte	Q2 10543,19872 10614,19907 10657,19931
 Wackenbergstr.: Kopfsteinpflaster mit Asphaltdecke in der Mitte	Q1 10657,19931 10697,19952 10812,20011
@@ -4469,14 +4469,32 @@ Beckmannstr.: guter Beton	Q0 11670,-1973 11681,-1951 11666,-1825 11657,-1721
 Nixenstr.: guter Asphalt	Q0  20428,5841 20371,5753
 #: by: Bettina Weyh:
 Wolgaster Str.: Asphalt	Q0 9929,14777 9843,14949
-#: by: Rosemarie Heyne:
-Zobeltitzstr.: Kopfsteinpflaster	Q2 3733,18376 3674,18372 3663,18187 3871,18144 3970,18126 4059,18107 4139,18091 4248,18066 4377,18037 4492,18013 4644,17978 4739,17960 4862,17934 4992,17908
+#: by: Rosemarie Heyne: vvv
+Zobeltitzstr.: Asphalt	Q0 3733,18376 3674,18372 3663,18187 3871,18144 3970,18126 4059,18107
+Zobeltitzstr.: Kopfsteinpflaster	Q2 4059,18107 4139,18091 4248,18066 4377,18037
+#: note: statt General-Woyna- meinte sie wohl General-Barby-:
+Zobeltitzstr.: Parkweg	Q1 4377,18037 4492,18013
+Zobeltitzstr.: Asphalt auf Kopfsteinpflaster mit Löchern	Q1- 4492,18013 4644,17978 4739,17960 4862,17934 4992,17908
+#: by: ^^^
 #: by: Sophia (bartel):
 Uhlandstr. (Lichtenrade): schlechtes Kopfsteinpflaster	Q3 10179,744 10242,572 10321,341 10373,216 10425,62 10469,-52
 #: by: Torsten Franik:
 Gürtelstr.: guter Asphalt	Q0 13494,15653 13423,15702 13332,15765
 #: by: Rainer Mischke:
 Niebergallstr.: mäßiges Kopfsteinpflaster	Q2 23097,1641 23144,1439 23158,1379 23168,1335 23202,1192
+#: by: Liesbet (m-...):
+Kissinger Str. (Steglitz): asphaltiert	Q0 6214,6132 6198,6270 6222,5996
+#: by: Thomas (bergen):
+Engelmannweg: guter Asphalt	Q0 4558,18342 4531,18217 4492,18013 4429,17763
+#: by: Erik Boß:
+Ahornallee (Friedrichshagen): schlechtes Kopfsteinpflaster	Q3 25121,5799 25123,5767 25111,5464 25121,5286
+#: by: Hollie (freak...):
+#: note: laut ADFC-Karte/neu gut geeigntet:
+Demminer Str.: guter Beton	Q0 17502,18286 17670,18435 17772,18523 17797,18673
+#: by: Rademacher (liane): vvv
+Epensteinstr.: Kopfsteinpflaster	Q2 8423,17626 8433,17754
+Epensteinstr.: Kopfsteinpflaster	Q2 8432,17798 8415,17902 8391,17996
+#: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
@@ -5293,7 +5311,7 @@ Winterstr.: Asphalt	Q0 8124,18105 8296,18145
 Winterstr.: Asphalt	Q0 8361,18160 8504,18194 8605,18216
 Hausotterplatz: mäßiger Asphalt	Q2 8320,18185 8299,18172 8296,18145 8310,18127 8334,18127 8355,18142 8361,18160 8345,18182 8320,18185
 Kamekestr.: Kopfsteinpflaster	Q2 8286,18331 8307,18242 8320,18185
-Kamekestr.: Kopfsteinpflaster	Q2 8334,18127 8348,18071 8367,17984
+Kamekestr.: Kopfsteinpflaster	Q2 8334,18127 8348,18071 8362,17992
 #: by: ^^^
 #: by: Petra Friedrich [AM]
 Elsenbruchstr.: Asphalt	Q1 3135,23003 3168,22959 3198,22720 3214,22578 3232,22416 3243,22311
@@ -5402,8 +5420,8 @@ Karl-Pokern-Str.: Asphalt	Q0 26079,5057 26034,5056 25984,5070 25860,5067 25732,5
 Karl-Pokern-Str.: Beton	Q1 25860,5067 25860,5159 25857,5184 26026,5179 26028,5153 26034,5056
 Karl-Pokern-Str.: Beton	Q1 25860,5159 26028,5153
 Rahnsdorfer Str. (Friedrichshagen): sehr guter Asphalt	Q0 26629,5323 26580,5319 26069,5280 25739,5242
-Aßmannstr.: guter Asphalt	Q0 25739,5242 25539,5252 25030,5307 25039,5766
-Scharnweberstr. (Friedrichshagen): Kopfsteinpflaster	Q2 25720,4832 25732,5065 25739,5242 25757,5536 25773,5868
+Aßmannstr.: guter Asphalt	Q0 25738,5228 25539,5237 25121,5286 25039,5295 25039,5766
+Scharnweberstr. (Friedrichshagen): Kopfsteinpflaster	Q2 25720,4832 25732,5065 25738,5228 25739,5242 25757,5536 25773,5868
 #: by: ^^^
 #: by: Simon Schrape [AM]
 Ewaldstr.: Asphalt	Q0 21297,651 21164,476 20903,210 20690,175 20671,87 20689,-68 20495,-331 20146,-541

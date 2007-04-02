@@ -4090,7 +4090,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002611',
        data  => <<EOF,
-userdel	q4 4392,17777 4584,17704
+userdel	q4 4392,17777 4429,17763 4584,17704
 userdel	q4 4392,17777 4326,17801
 userdel	q4 4584,17704 4683,17669
 userdel	q4 4326,17801 4200,17848 4096,17890 4013,17901
@@ -7602,6 +7602,14 @@ EOF
        source_id => 'IM_003833',
        data  => <<EOF,
 userdel	1::inwork 9201,11968 9208,11872
+EOF
+     },
+     { from  => 1152482400, # 2006-07-10 00:00
+       until => 1183240800, # 2007-07-01 00:00
+       text  => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf grundhafter Straßenausbau Vollsperrung 11.07.2006-30.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 7981,-7165 7558,-7093
 EOF
      },
     );

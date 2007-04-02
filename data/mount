@@ -705,7 +705,6 @@ Steigung 1.4% ((Wohngebiet Mendelssohnstr.))	St; 11537,13617 11538,13683
 Steigung 1.4% (Knausstr. (Steglitz))	St; 6082,6566 6027,6722
 Steigung 1.4% (Saarbrücker Str.)	St; 10969,13914 11060,13865
 Steigung 1.4% (Karl-Stieler-Str.)	St; 6185,4839 6097,4858
-Steigung 1.4% (Feuerbachstr.)	St; 6185,6469 6097,6453
 Steigung 1.4% (Bredtschneiderstr.)	St; 1979,11277 1878,11268
 Steigung 1.4% ((Kopfstr. - Lessinghöhe))	St; 12582,7909 12537,7899
 Steigung 1.4% (Trabener Str.)	St; 1562,9436 1447,9334
@@ -763,7 +762,6 @@ Steigung 1.3% (Rembrandtstr. (Friedenau))	St; 6077,6790 6027,6722
 Steigung 1.3% (Schützenstr. (Steglitz))	St; 5119,5332 5193,5431
 Steigung 1.3% (Hubertusallee)	St; 2201,8519 2132,8422
 Steigung 1.3% (Heilsberger Allee)	St; -391,11322 -593,11173
-Steigung 1.3% (Peter-Vischer-Str.)	St; 6324,6480 6185,6469
 Steigung 1.3% (Gatower Str.)	St; -4734,9295 -4758,9689
 Steigung 1.3% (Delbrückstr. (Grunewald))	St; 2223,8500 2201,8519
 Steigung 1.3% (Morusstr.)	St; 12516,7718 12480,7887
@@ -776,7 +774,6 @@ Steigung 1.3% (Pasteurstr.)	St; 12188,14321 12307,14246
 Steigung 1.3% (Voltastr. (Wedding))	St; 9041,14896 9206,14987
 Steigung 1.3% (Westfälische Str.)	St; 3347,9793 3223,9837
 Steigung 1.3% ((Uferweg Hubertussee))	St; 2214,8752 2268,8746
-Steigung 1.3% (Thorwaldsenstr. (Steglitz, Friedenau))	St; 6185,6469 6082,6566
 Steigung 1.3% (Teufelsseechaussee)	St; -817,9533 -697,9598
 Steigung 1.3% (Meerscheidtstr.)	St; 1979,11277 1963,11409
 Steigung 1.3% (Havelchaussee)	St; -3296,3686 -3490,4212
@@ -1209,6 +1206,7 @@ Steigung 1.0% (Georg-Wilhelm-Str.)	St; 2708,10245 2691,10047
 Steigung 1.0% (Matthiasstr.)	St; 12907,12947 12844,13089
 Steigung 1.0% (Dresselsteg)	St; 2234,11304 2219,11304
 Steigung 1.0% (Franzensbader Str.)	St; 2327,8717 2353,8636
+Steigung 1.0% (Menzelstr. (Friedenau))	St; 6154,6734 6185,6469
 Steigung 1.0% (Bismarckallee)	St; 1577,8655 1554,8638
 Steigung 1.0% (Matthiasstr.)	St; 12844,13089 12808,13181
 Steigung 1.0% (Badstr.)	St; 8788,16264 8862,16208
@@ -1289,6 +1287,8 @@ Steigung 1.0% ((Parkweg Möllendorffstr. - Rathausstr.))	St; 15415,12179 15520,12
 Steigung 1.0% (Ruhwaldweg)	St; 801,13323 830,13353
 Steigung 1.0% (Schreinerstr.)	St; 15054,12323 14776,12418
 Steigung 1.0% (Keltererweg)	St; -4821,11143 -4550,11073
+Steigung 1.0% (Feuerbachstr.)	St; 6185,6469 6097,6453
+Steigung 1.0% (Thorwaldsenstr. (Steglitz, Friedenau))	St; 6185,6469 6082,6566
 Steigung 1.0% (Bersarinplatz)	St; 13678,12571 13686,12611
 Steigung 1.0% (Tempelhofer Damm)	St; 9176,5803 9192,5921
 Steigung 1.0% (Carl-Ludwig-Schleich-Promenade)	St; 2316,8593 2316,8469
@@ -1381,6 +1381,7 @@ Steigung 1.0% (Schellendorffstr.)	St; 2654,7324 2732,7235
 Steigung 1.0% (Kopfstr.)	St; 12211,7830 12182,7824
 Steigung 1.0% (Lyckallee)	St; -328,10971 -428,10956
 Steigung 1.0% ((Waldweg an der Schilfdachkirche))	St; -8251,6214 -8385,6148
+Steigung 1.0% (Menzelstr. (Friedenau))	St; 6141,6878 6143,6853
 Steigung 1.0% (Kranoldstr. (Neukölln))	St; 12715,6783 12585,6747
 Steigung 1.0% (Landsberger Allee)	St; 12808,13181 12727,13159
 Steigung 1.0% (Sakrower Kirchweg)	St; -7131,4742 -7134,4681
@@ -1397,6 +1398,7 @@ Steigung 1.0% (Altenbraker Str.)	St; 12465,7051 12477,6975
 Steigung 1.0% (Egerstr.)	St; 2215,8066 2106,8075
 Steigung 1.0% (Nikolskoer Weg)	St; -9443,1035 -9333,1124
 Steigung 1.0% (Wattstr. (Wedding))	St; 9437,14926 9361,15066
+Steigung 1.0% (Menzelstr. (Friedenau))	St; 6143,6853 6154,6734
 Steigung 1.0% (Misdroyer Str.)	St; 2954,7248 2983,7172
 Steigung 1.0% (Columbiadamm)	St; 10598,8563 10796,8498
 Steigung 1.0% (Potsdamer Str. (Schöneberg, Tiergarten))	St; 8025,11239 7993,11137
@@ -1433,6 +1435,7 @@ Steigung 1.0% (Silingenweg)	St; 801,11139 787,11121
 Steigung 1.0% (Fulhamer Allee)	St; 12826,4777 12731,4841
 Steigung 1.0% (Georg-Wilhelm-Str.)	St; 2718,10359 2708,10245
 Steigung 1.0% (John-Schehr-Str.)	St; 12573,14581 12749,14452
+Steigung 1.0% (Rembrandtstr. (Friedenau))	St; 6243,7033 6141,6878
 Steigung 1.0% (Angermünder Str. (Prenzlauer Berg))	St; 10640,13700 10703,13832
 Steigung 1.0% (Friedenstr. (Friedrichshain))	St; 12422,13047 12523,12942
 Steigung 1.0% (Juliusstr.)	St; 13209,6564 12902,6495

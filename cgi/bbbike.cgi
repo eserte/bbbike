@@ -1678,7 +1678,7 @@ EOF
 	print <<EOF if ($bi->{'can_table'});
 <td valign="top">@{[ blind_image(420,1) ]}<br>
 EOF
-	my($bln_str, $all_bln_str, $pdm_str) = (6100, 10000, 200);
+	my($bln_str, $all_bln_str, $pdm_str) = (6200, 10000, 200);
 	# XXX Use format number to get a comma in between.
 	if ($lang eq 'en') {
 	    print <<EOF;
