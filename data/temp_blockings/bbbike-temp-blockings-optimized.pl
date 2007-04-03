@@ -566,15 +566,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005045',
-         'until' => 1175551200,
-         'text' => 'Frühlingsfest auf der Sonnenallee Neukölln, Vollsperrung zw. Pannierstr. und Wildenbruchstr. von 31.03.2007 07:00 bis 02.04.2007 01:00 ',
-         'from' => 1175292000,
-         'data' => 'userdel	2::temp 12925,8494 12772,8612 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1178316000,
