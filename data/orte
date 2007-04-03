@@ -3,7 +3,6 @@
 #:
 Brandenburg	5 -46482,-737
 Potsdam	5 -12894,-977
-Eberswalde	5 37426,48129
 Frankfurt|(Oder)	5 88699,-5218
 Cottbus	5 74971,-71085
 Kyritz	4 -59014,59015
@@ -13,13 +12,13 @@ Perleberg	4 -95514,72399
 Wittenberge	4 -102912,64025
 Neuruppin	4 -30969,56746
 Nauen	4 -25542,21416
-Werder|(Havel)	4 -21112,-3787
 Jüterbog	4 -9870,-46645
 Luckenwalde	4 -4299,-35198
 Falkensee	4 -10706,17065
 Hennigsdorf|b. Berlin	4 -3018,25556
 Oranienburg	4 -1472,38523
 Zehdenick	4 4273,63382
+Eberswalde	4 37426,48129
 Angermünde	4 49728,68465
 Bad Freienwalde	4 52806,42862
 Bernau|b. Berlin	4 22541,30476
@@ -27,7 +26,6 @@ Fürstenwalde	4 55562,-4726
 Strausberg	4 42709,19940
 Königs Wusterhausen	4 25859,-11559
 Ludwigsfelde	4 798,-11586
-Teltow	4 1346,-762
 Lübben	4 44683,-51759
 Lübbenau	4 50275,-59112
 Kostrzyn	4 94733,21531
@@ -45,6 +43,7 @@ Belzig	3 -44165,-30318
 Alt Ruppin	3 -28477,59467
 Fehrbellin	3 -33927,44655
 Ketzin	3 -27637,7449
+Werder|(Havel)	3 -21112,-3787
 Beelitz	3 -17930,-19476
 Treuenbrietzen	3 -24967,-35112
 Velten	3 -5034,30811
@@ -57,10 +56,12 @@ Werneuchen	3 32444,25291
 Buckow|(Märkische Schweiz)	3 55920,18769
 Seelow	3 76771,15413
 Müncheberg	3 60197,12001
+Erkner	3 34142,2742
 Altlandsberg	3 32293,18093
 Beeskow	3 68467,-25032
 Zossen	3 14434,-21217
 Mittenwalde|(Stadt)	3 19943,-15530
+Teltow	3 1346,-762
 Storkow	3 46964,-16277
 Biesenthal	3 25273,40309
 Kremmen	3 -15961,38892
@@ -77,7 +78,10 @@ Vetschau	3 57546,-68410
 Slubice	3 89372,-4310
 Fürstenberg	3 -8711,86273
 Müllrose	3 79718,-16658
+Hohen Neuendorf|b. Berlin	3 910,29749
+Wandlitz	3 13054,38740
 Golßen	3 25192,-48055
+Neuenhagen|bei Berlin	3 29743,14143
 Golzow	3 -43225,-15267
 Trebbin	3 -1902,-21499
 Seehausen|(Altmark)	3 -102836,52161
@@ -92,7 +96,6 @@ Stüdenitz	2 -66831,52431
 Nitzow	2 -82250,50568
 Wustermark	2 -21011,15011
 Löwenberg|(Mark)	2 -7665,54237
-Erkner	2 34142,2742
 Woltersdorf	2 34535,5319
 Rüdersdorf|bei Berlin	2 35591,8683
 Petershagen|b. Berlin	2 35427,13624
@@ -180,10 +183,8 @@ Borgsdorf|/Nordbahn	2 1246,34168
 Schmachtenhagen	2 4411,40157
 Basdorf	2 12000,35670
 Birkenwerder|b. Berlin	2 1772,31266
-Hohen Neuendorf|b. Berlin	2 910,29749
 Zepernick	2 19475,27877
 Lindenberg|b. Berlin	2 18356,22225
-Wandlitz	2 13054,38740
 Klosterfelde	2 14941,42957
 Zerpenschleuse	2 16519,50234
 Groß Schönebeck	2 18216,55816
@@ -247,7 +248,6 @@ Buckow	2 62701,-23737
 Dahlwitz	2 27036,11142
 Hoppegarten|(Mark)	2 28510,12507
 Schöneiche	2 30290,8562
-Neuenhagen|bei Berlin	2 29743,14143
 Friedland	2 69851,-32733
 Werben|(Spreewald)	2 65155,-65147
 Ragösen	2 -44886,-19405
@@ -527,7 +527,7 @@ Neukünkendorf	1 52783,64215
 Schöneberg	1 59487,68169
 Felchow	1 57097,70580
 Flemsdorf	1 61103,70432
-Stolpe	1 57719,64558
+Stolpe|/Oder	1 57719,64558
 Criewen	1 65056,68557
 Zützen	1 66162,70106
 Kerkow	1 48929,70947

@@ -2869,7 +2869,7 @@ Alemannenallee: Asphalt	Q0 968,11283 1065,11216 1181,11136
 Kuckhoffstr.: guter Asphalt	Q0 10167,19797 9906,19718 9677,19651 9482,19594 9064,19456 8821,19331 8789,19278
 #: by: Adam Förster:
 #: XXX: auch im Abschnitt unter der S-Bahn (dort gibt es eine Buslinie)?
-Lemkestr.: schlechtes Kopfsteinpflaster	Q3 26615,14054 26455,13925 25984,13328 25525,12750 25149,12266 25109,12196 25068,12099
+Lemkestr.: schlechtes Kopfsteinpflaster	Q3 26615,14054 26455,13925 26301,13691 25984,13328 25525,12750 25149,12266 25109,12196 25068,12099
 #: by: Sabine Schwitzke:
 Stirnerstr.: guter Asphalt	Q0 5909,5072 6068,5028
 #: by: Tatze:
@@ -2995,7 +2995,7 @@ Cäsarstr.: etwas sandig	Q2 18665,9693 18655,9576 18621,9404
 (Römerweg - Hönower Weg): sandiger Weg	Q3 18408,9746 18409,9846 18278,9795 18279,9861
 #: by: ^^^
 #: by: Susan Richter:
-Griembergweg: Asphalt	Q0 11407,113 11198,110 11072,108 10740,82
+Griembergweg: Asphalt	Q0 11407,113 11198,110 11072,108 10913,96 10740,82
 #: by: Matthias Wiegandt vvv
 Strömannstr.: Asphalt	Q0 15574,22640 15595,22693 15691,22949 15799,23248 15853,23397 15884,23509 15950,23671
 Straße 70: loser Sandweg	Q3 15414,22748 15574,22640
@@ -4461,8 +4461,10 @@ Holzstr.: guter Asphalt	Q0 8539,17197 8660,17432 8659,17455 8638,17484 8586,1750
 Jochen-Nüßler-Str.: guter Asphalt	Q0 13571,4493 13589,4681
 #: by: Vera (no email):
 Lukas-Cranach-Str.: mäßiges Kopfsteinpflaster	Q2 4275,3428 4366,3513 4413,3564
-#: by: Niels Weber:
-Angermünder Str. (Lichtenrade): guter Asphalt	Q0 11081,-365 11145,-358 11179,-240 11193,-48 11198,110 11215,313 11223,481 11229,634 11237,773
+#: by: Niels Weber: vvv
+Angermünder Str. (Lichtenrade): schlechter Zustand der Fahrbahn	Q2+ 11081,-365 11145,-358 11179,-240 11193,-48
+Angermünder Str. (Lichtenrade): guter Asphalt	Q0 11193,-48 11198,110 11215,313 11223,481 11228,599 11229,634 11237,773
+#: by: ^^^
 #: by: Katja (...lindner):
 Beckmannstr.: guter Beton	Q0 11670,-1973 11681,-1951 11666,-1825 11657,-1721
 #: by: jenny (jeenz):
@@ -4494,6 +4496,11 @@ Demminer Str.: guter Beton	Q0 17502,18286 17670,18435 17772,18523 17797,18673
 #: by: Rademacher (liane): vvv
 Epensteinstr.: Kopfsteinpflaster	Q2 8423,17626 8433,17754
 Epensteinstr.: Kopfsteinpflaster	Q2 8432,17798 8415,17902 8391,17996
+#: by: ^^^
+#: by: marcel behrendt: vvv
+Lübecker Str.: gutes Verbundsteinpflaster	Q1 26061,14085 26063,13897 26104,13861 26156,13813
+Lübecker Str.: gutes Verbundsteinpflaster	Q1 26156,13813 26244,13740
+Lübecker Str.: gutes Verbundsteinpflaster	Q1 26301,13691 26371,13630 26445,13564 26536,13487 26637,13404
 #: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)

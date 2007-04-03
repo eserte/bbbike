@@ -2319,7 +2319,7 @@ Alte Spandauer Poststr.: Waldweg (fester Sandweg)	Q1 -1415,9144 -1482,9276 -1512
 Teltower Weg: fester Waldweg, gut befahrbar	Q1 -903,6923 -1008,7427 -1112,7891 -1317,8836 -1336,9001 -1415,9144
 Alemannenallee: Asphalt	Q0 968,11283 1065,11216 1181,11136
 Kuckhoffstr.: guter Asphalt	Q0 10167,19797 9906,19718 9677,19651 9482,19594 9064,19456 8821,19331 8789,19278
-Lemkestr.: schlechtes Kopfsteinpflaster	Q3 26615,14054 26455,13925 25984,13328 25525,12750 25149,12266 25109,12196 25068,12099
+Lemkestr.: schlechtes Kopfsteinpflaster	Q3 26615,14054 26455,13925 26301,13691 25984,13328 25525,12750 25149,12266 25109,12196 25068,12099
 Stirnerstr.: guter Asphalt	Q0 5909,5072 6068,5028
 Hammersteinstr.: schlechtes grobes Kopfsteinpflaster	Q3 2750,7416 2654,7324 2555,7238 2458,7156 2376,7089
 Hackerstr.: guter Asphalt	Q0 5017,6387 5034,6425 5075,6509 5101,6579 5137,6651 5184,6723
@@ -2382,7 +2382,7 @@ Römerweg: gute Qualität	Q0 18800,9743 18665,9693 18452,9744 18408,9746
 Aristotelessteig: guter Beton	Q0 18734,9561 18655,9576 18419,9622 18452,9744
 Cäsarstr.: etwas sandig	Q2 18665,9693 18655,9576 18621,9404
 (Römerweg - Hönower Weg): sandiger Weg	Q3 18408,9746 18409,9846 18278,9795 18279,9861
-Griembergweg: Asphalt	Q0 11407,113 11198,110 11072,108 10740,82
+Griembergweg: Asphalt	Q0 11407,113 11198,110 11072,108 10913,96 10740,82
 Strömannstr.: Asphalt	Q0 15574,22640 15595,22693 15691,22949 15799,23248 15853,23397 15884,23509 15950,23671
 Straße 70: loser Sandweg	Q3 15414,22748 15574,22640
 Blechenstr.: Asphalt	Q0 14028,16707 13876,16819
@@ -3137,7 +3137,8 @@ Sültstr.: mäßiger Asphalt	Q1 12094,15598 12171,15737 12247,15868 12295,15953 123
 Holzstr.: guter Asphalt	Q0 8539,17197 8660,17432 8659,17455 8638,17484 8586,17503 8503,17518
 Jochen-Nüßler-Str.: guter Asphalt	Q0 13571,4493 13589,4681
 Lukas-Cranach-Str.: mäßiges Kopfsteinpflaster	Q2 4275,3428 4366,3513 4413,3564
-Angermünder Str. (Lichtenrade): guter Asphalt	Q0 11081,-365 11145,-358 11179,-240 11193,-48 11198,110 11215,313 11223,481 11229,634 11237,773
+Angermünder Str. (Lichtenrade): schlechter Zustand der Fahrbahn	Q2 11081,-365 11145,-358 11179,-240 11193,-48
+Angermünder Str. (Lichtenrade): guter Asphalt	Q0 11193,-48 11198,110 11215,313 11223,481 11228,599 11229,634 11237,773
 Beckmannstr.: guter Beton	Q0 11670,-1973 11681,-1951 11666,-1825 11657,-1721
 Nixenstr.: guter Asphalt	Q0 20428,5841 20371,5753
 Wolgaster Str.: Asphalt	Q0 9929,14777 9843,14949
@@ -3154,6 +3155,9 @@ Ahornallee (Friedrichshagen): schlechtes Kopfsteinpflaster	Q3 25121,5799 25123,5
 Demminer Str.: guter Beton	Q0 17502,18286 17670,18435 17772,18523 17797,18673
 Epensteinstr.: Kopfsteinpflaster	Q2 8423,17626 8433,17754
 Epensteinstr.: Kopfsteinpflaster	Q2 8432,17798 8415,17902 8391,17996
+Lübecker Str.: gutes Verbundsteinpflaster	Q1 26061,14085 26063,13897 26104,13861 26156,13813
+Lübecker Str.: gutes Verbundsteinpflaster	Q1 26156,13813 26244,13740
+Lübecker Str.: gutes Verbundsteinpflaster	Q1 26301,13691 26371,13630 26445,13564 26536,13487 26637,13404
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14202,13140 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934

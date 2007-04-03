@@ -2,13 +2,13 @@
 #: encoding: utf-8
 #: title.de: Orte im weiteren Umland
 #: title.en: Places far away
-#: version: $Id: orte2-orig,v 4.32 2007/03/28 23:16:00 eserte Exp $
+#: version: $Id: orte2-orig,v 4.33 2007/04/03 23:19:32 eserte Exp $
 #:
 # Mecklenburg-Vorpommern, Brandenburg
 Rostock	5 -79160,185302
 Warnemünde	0 -83112,195145
 Schwerin	5 -127134,133359
-Wismar	5 -124516,162827
+Wismar	4 -124516,162827
 Dorf Mecklenburg	2 -124041,157272
 Bad Doberan	4 -95364,186923
 Ostseebad Heiligendamm	0 -99712,191131
@@ -223,8 +223,9 @@ Jarmen	3 3419,168376
 Ückeritz	2 50843,179488
 Ludwigslust	4 -120780,100414
 Grabow|(Mecklenburg)	3 -116692,94946
-Schwedt	5 69238,73315
+Schwedt|/Oder	4 69238,73315
 Strasburg	3 31214,122842
+#: note eigentlich cat=3, aber ich möchte einen prominenten Ort auf/vor Usedom in der Übersichtskarte haben
 Wolgast	4 31756,183490
 Zinnowitz	2 41450,186687
 Greifswald	5 5585,187733
@@ -233,7 +234,7 @@ Passow	2 57256,82768
 Wendemark	0 56134,84981
 Burg Stargard	3 1763,120930
 Bargensdorf	1 -121,122847
-Neubrandenburg	4 -1725,127713
+Neubrandenburg	5 -1725,127713
 Altentreptow	3 -2694,142835
 Burow	2 -1737,151716
 Lassen	3 37037,171747
@@ -261,6 +262,7 @@ Pasewalk	3 47982,122958
 Rollwitz	1 47187,119302
 Friedberg	1 50039,125006
 Ostseebad Binz	2 19789,222004
+#: note eigentlich cat=3, aber ich möchte einen prominenten Ort auf Rügen in der Übersichtskarte haben
 Bergen|auf Rügen	4 7796,223783
 Prohn	2 -19939,217939
 Rambin	1 -7477,216462
@@ -305,7 +307,8 @@ Ostseebad Göhren	2 28435,215851
 Middelhagen	1 26389,214433
 Lobbe	0 27178,213178
 Ostseebad Sellin	2 25320,219781
-Gartz	3 75460,90409
+Gartz|(Oder)	3 75460,90409
+Friedrichsthal|(bei Gartz)	1 72982,84835
 Lauenburg|/Elbe	3 -185101,104358
 Torgelow	3 49084,136899
 Barth	4 -39962,217478
@@ -328,7 +331,7 @@ Schwarzenbek	3 -190739,118747
 Lütau	2 -185764,110900
 Escheburg	2 -202042,114175
 Glinde	3 -209252,122140
-Reinbek	3 -206074,119025
+Reinbek	4 -206074,119025
 Bergedorf	0 -209464,116390
 Lenzen	3 -122199,74069
 Penkun	3 65597,100079
@@ -394,8 +397,10 @@ Blankenese	0 -236168,124317
 Altona	0 -227676,123222
 Artlenburg	2 -189877,104446
 Bleckede	3 -172954,95236
-Trittau	2 -195258,129703
-Winsen|(Luhe)	3 -208889,102903
+Trittau	3 -195258,129703
+Schönwalde|am Bungsberg	2 -173836,194467
+Winsen|(Luhe)	4 -208889,102903
+#: note: eigentlich cat=3, aber viel Platz in der Übersichtskarte
 Demmin	4 -17728,166453
 Herzsprung	1 -54025,72936
 Blumenthal	2 -63227,73339
@@ -417,7 +422,7 @@ Malchin	3 -35961,147383
 Hitzacker	3 -151317,79834
 Neu Darchau	2 -162755,88202
 Dömitz	3 -137773,79328
-Ahrensburg	3 -207119,137428
+Ahrensburg	4 -207119,137428
 Großensee	2 -200289,130660
 Richtenberg	3 -28339,199046
 Franzburg	3 -28877,197510
@@ -427,18 +432,19 @@ Bad Sülze	3 -43797,188545
 Tribsees	3 -37079,186986
 Dassow	3 -157242,164522
 Travemünde	0 -164551,170069
-Neustadt|i. Holstein	4 -168532,185715
-Lübeck	5 -177268,158951
+Neustadt|i. Holstein	3 -168532,185715
+Lübeck	6 -177268,158951
 Burg|a. Fehmarn	4 -141926,222560
 Puttgarden	0 -140707,228954
 Landkirchen|a. Fehmarn	3 -145249,223995
-Großenbrode	3 -149473,215268
+Großenbrode	2 -149473,215268
 Oldenburg|i. Holstein	3 -164504,205797
-Heiligenhafen	4 -158722,214977
+Schönberg (Holstein)	3 -199259,218123
+Heiligenhafen	3 -158722,214977
 Lütjenburg	3 -185716,205664
 Mustin	1 -163452,139247
-Ratzeburg	2 -171209,140734
-Kiel	5 -215604,208878
+Ratzeburg	3 -171209,140734
+Kiel	6 -215604,208878
 Eckernförde	4 -236318,224563
 Damp	2 -228311,236666
 Warenthin	0 -27980,78149
@@ -465,7 +471,7 @@ Dresden	6 36012,-150175
 Prettin	3 -20307,-83384
 Strehla	3 838,-117208
 Nienburg	3 -99329,-65133
-Bernburg	3 -100606,-69760
+Bernburg| (Saale)	4 -100606,-69760
 Aschersleben	4 -120131,-74464
 Ermsleben	3 -128061,-77502
 Köthen	4 -85143,-74737
@@ -506,7 +512,7 @@ Hohenbucko	1 16490,-71081
 Weißenfels	4 -84670,-135807
 Grimma	4 -33243,-131655
 Torgau	4 -15339,-94982
-Riesa	5 6224,-123089
+Riesa	4 6224,-123089
 Mühlberg	3 387,-108214
 Schilda	1 11423,-88891
 Radebeul	4 31915,-144447
@@ -536,9 +542,9 @@ Wahrenbrück	2 9904,-95170
 Elsterwerda	4 20812,-105130
 Rückersdorf	1 23409,-92184
 Gröditz	3 15729,-110682
-Lauchhammer	4 37087,-100932
+Lauchhammer	3 37087,-100932
 Doberlug-Kirchhain	3 23255,-86184
-Finsterwalde	4 32963,-85912
+Finsterwalde	3 32963,-85912
 Lichterfeld	1 37906,-89609
 Klettwitz	1 46184,-95755
 Lutherstadt Wittenberg	4 -40362,-60940
@@ -640,7 +646,7 @@ Bad Schandau	3 65176,-164757
 Königstein	3 59496,-164832
 Pirna	4 49664,-160444
 Wettin	3 -96278,-93492
-Halle	5 -84779,-105018
+Halle	6 -84779,-105018
 Merseburg	4 -83046,-118127
 Leuna	3 -80886,-122287
 Bad Dürrenberg	3 -78075,-124814
@@ -651,7 +657,7 @@ Alsleben	3 -104794,-80512
 Delitzsch	4 -59905,-99645
 Jeßnitz	3 -62910,-81813
 Wolfen	4 -64444,-84108
-Bitterfeld	4 -60894,-88195
+Bitterfeld	3 -60894,-88195
 Raguhn	3 -64086,-78442
 Eilenburg	3 -40564,-106557
 Brehna	3 -68505,-95874
@@ -672,7 +678,7 @@ Kletzen	1 -54319,-107262
 Landsberg	3 -72138,-99544
 Brandis	3 -40748,-120147
 Wurzen	4 -32262,-116410
-Kamenz	4 60752,-124811
+Kamenz	3 60752,-124811
 Görlitz	5 121442,-138202
 Zgorzelec	3 122653,-137792
 Ostritz	3 117771,-152973
@@ -686,7 +692,7 @@ Halberstadt	4 -148351,-60196
 Wegeleben	3 -139877,-60771
 Derenburg	3 -157657,-62566
 Lindau	2 -76907,-42769
-Quedlinburg	3 -141338,-71221
+Quedlinburg	4 -141338,-71221
 Hoym	3 -130310,-71988
 Güsten	3 -110187,-70353
 Hecklingen	3 -115298,-64647
@@ -703,7 +709,7 @@ Magdeburg	6 -108962,-31703
 Wolmirstedt	3 -108659,-19330
 Schönebeck	4 -101869,-44835
 Burg|bei Magdeburg	4 -94356,-16746
-Haldensleben	3 -122840,-14896
+Haldensleben	4 -122840,-14896
 Möser	2 -98297,-23053
 Parey	2 -85686,-4539
 Torfhaus	0 -182998,-70896
@@ -793,6 +799,8 @@ Caselow	0 57586,117220
 Damerow	1 47087,115725
 Schönfeld|(Uckermark)	1 47894,112908
 Tornow|(bei Schönfeld, Uckermark)	0 45810,110576
+Göritz	1 42854,112038
+Malchow|(bei Göritz)	0 43561,113159
 Neuenfeld|(bei Schönfeld, Uckermark)	0 49887,113837
 Wittenhof	0 43199,105408
 Schenkenberg|(bei Prenzlau)	1 45406,107350
@@ -841,7 +849,8 @@ Mölschow	1 36112,186478
 Trassenheide	2 37881,187596
 Bannemin	0 37278,185225
 Karlshagen	2 35595,190464
-Neuendorf	0 39755,181509
+Neuendorf|(Usedom)	0 39755,181509
+Lütow	1 39252,179236
 Zemnin	2 44291,185477
 Koserow	2 47391,183243
 Loddin	2 47869,180496
@@ -850,8 +859,8 @@ Stubbenfelde	0 49675,181384
 Pudagla	1 52328,174629
 Stoben	0 52203,172708
 Labömitz	0 52937,169481
-Stolpe|(Usedom)	1 47071,163315
-Welzin|bei Stolpe	0 45028,161679
+Stolpe|auf Usedom	1 47071,163315
+Welzin|(bei Stolpe)	0 45028,161679
 Dargen	1 52228,165503
 Gummlin	0 49188,164029
 Görke	0 54147,165600
@@ -924,15 +933,33 @@ Blumenhagen	0 69400,79825
 Kunow	1 66943,82495
 Woltersdorf|bei Casekow	1 64187,87200
 Casekow	2 63491,90572
+Biesendahlshof	1 63476,88711
 Wartin	2 59905,94908
 Luckow|(Luckow-Petershagen)	2 63888,93681
 Petershagen|(Luckow-Petershagen)	1 66462,94275
 Blumberg|bei Casekow	1 59648,89982
 Hohenselchow	2 68362,89958
+Hohenreinkendorf	1 71739,92879
+Geesow	1 75347,95511
+Mescherin	1 78564,94756
+Tantow	1 73017,97449
+Keesow	0 72032,97559
+Schönfeld|(bei Penkun)	1 68985,97656
+Radekow	1 73104,100581
+Neurochlitz	1 76725,98637
+Rosow	1 75337,101225
+Nadrensee	1 72666,104238
+Lebehn	1 71319,108797
+Kyritz|(bei Lebehn)	0 72276,107772
+Grambow	1 71617,113037
+Neu Grambow	0 73007,114500
+Bismark	1 70251,118039
+Gellin	0 70594,117181
+Plöwen	1 66718,118790
 Groß Pinnow	2 68212,87748
 Sommersdorf	1 61351,98696
 Grünz	1 58479,98546
-Celle	4 -215735,20890
+Celle	5 -215735,20890
 Groß Rietz	1 65774,-20483
 Bornow	1 64929,-25152
 Birkholz|bei Beeskow	0 65076,-22519
@@ -972,6 +999,7 @@ Ferdinandshof|(Oderbruch)	0 66154,42219
 Neureetz	1 59730,42362
 Altreetzer Losse	0 62066,41901
 Neuküstrinchen	1 60992,43905
+Neurüdnitz	1 62672,43860
 Neuranft	1 59375,45180
 #: XXX: beides zusammen ist Wustrow:
 Altwustrow	0 64808,40619
@@ -1022,6 +1050,16 @@ Klessin	0 88701,7344
 Steckelsdorf	1 -65837,20874
 Göttlin	1 -64524,23528
 Grütz	1 -66447,27090
+Braunschweig	6 -184186,-18956
+Wolfenbüttel	5 -182823,-30057
+Lüneburg	5 -195495,90242
+Norderstedt	5 -222580,139825
+Neumünster	5 -225686,180568
+Wolfsburg	5 -166437,-103
+Peine	5 -204694,-13759
+Uelzen	4 -183516,58937
+Güstrow	4 -76655,153557
+Northeim	4 -219144,-82630
 # Polen
 Cedynia|(Polen)	3 63744,53664
 Świnoujście	4 64415,168163

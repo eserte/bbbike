@@ -678,6 +678,38 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	2::inwork 7981,-7165 7558,-7093
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1176415200,
+         'text' => 'K 6617 zw. B169 und Ressen Deckeneinbau auf B169 Vollsperrung 12.04.2007-12.04.2007 ',
+         'from' => 1176242400,
+         'data' => 'userdel	2::inwork 63128,-86845 62491,-87561 61763,-88249
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1176933600,
+         'text' => 'L 049 Lübbenau-Lübben Bahnübergang nach OA Lübben Gleisbauarbeiten Vollsperrung 18.04.2007-18.04.2007 ',
+         'from' => 1176760800,
+         'data' => 'userdel	2::inwork 45124,-52888 45152,-53482 45088,-55645
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1177365600,
+         'text' => 'L 049 Lübbenau-Lübben Bahnübergang nach OA Lübben Gleisbauarbeiten Vollsperrung 21.04.2007-23.04.2007 ',
+         'from' => 1177020000,
+         'data' => 'userdel	2::inwork 45088,-55645 45152,-53482 45124,-52888
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1177711200,
+         'text' => 'L 049 Lübbenau-Lübben Bahnübergang nach OA Lübben Gleisbauarbeiten Vollsperrung 26.04.2007-27.04.2007 ',
+         'from' => 1177452000,
+         'data' => 'userdel	2::inwork 45088,-55645 45152,-53482 45124,-52888
+',
+         'type' => 'gesperrt'
        }
      
 );

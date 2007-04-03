@@ -1,0 +1,141 @@
+#!/usr/bin/perl
+# -*- perl -*-
+
+#
+# $Id: opengeodbmysql2bbd,v 1.1 2007/04/03 22:58:21 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2007 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+# Beispiel:
+# ./opengeodborte2bbd -restrictland BB -restrictcountry DE > /tmp/a.bbd
+
+use 5.8.1; # utf8 bugs?
+use strict;
+use warnings;
+no warnings 'once';
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+use Karte;
+Karte::preload(qw(Polar Standard));
+
+use DBI;
+use Encode qw(decode);
+use Getopt::Long;
+
+my $debug;
+my $db_is_utf8;
+my $bbd_is_utf8;
+my $only_orte;
+my $ew = 1;
+GetOptions("db-is-utf8" => \$db_is_utf8,
+	   "bbd-is-utf8" => \$bbd_is_utf8,
+	   "orte" => \$only_orte,
+	   "debug" => \$debug,
+	   "ew|einwohner!" => \$ew,
+	  ) or die "usage!";
+
+my $dbh = DBI->connect("dbi:mysql:opengeodb", "root", "", {RaiseError => 1})
+    or die $!;
+
+if ($bbd_is_utf8) {
+    binmode STDOUT, ":utf8";
+    print <<EOF;
+#: encoding: utf8
+#: title: all coordinates from opengeodb
+#:
+EOF
+}
+
+{
+    my %loc2einwohner;
+    if ($ew) {
+	my $einwohner_sql =<<EOF;
+SELECT loc_id, int_val AS einwohner, Max(valid_until)
+  FROM geodb_intdata
+ WHERE int_type = 600700000 -- Einwohnerzahl
+ GROUP BY loc_id
+EOF
+	my $einwohner_sth = $dbh->prepare_cached($einwohner_sql);
+	$einwohner_sth->execute;
+	while(my $row = $einwohner_sth->fetchrow_hashref) {
+	    $loc2einwohner{$row->{loc_id}} = $row->{einwohner};
+	}
+    }
+
+    my $coord_sql = <<EOF;
+SELECT geodb_coordinates.loc_id,
+       lon, lat,
+       text_val,
+       geodb_type_names.name AS text_type_name,
+       geodb_type_names2.name AS loc_type_name
+  FROM geodb_coordinates
+  JOIN geodb_textdata
+    ON geodb_textdata.loc_id = geodb_coordinates.loc_id
+  JOIN geodb_type_names
+    ON geodb_textdata.text_type = geodb_type_names.type_id
+  JOIN geodb_locations
+    ON geodb_coordinates.loc_id = geodb_locations.loc_id
+  JOIN geodb_type_names AS geodb_type_names2
+    ON geodb_locations.loc_type = geodb_type_names2.type_id
+ WHERE lon > 9.977352 -- Hamburg
+   AND lat > 51.041561 -- Dresden
+   AND geodb_textdata.text_type <> 500100002 -- Sortierung
+   AND geodb_textdata.text_type <> 500700001 -- Sortierung
+   AND geodb_textdata.text_locale LIKE "de%"
+EOF
+    if ($only_orte) {
+	# Ortschaft/Name
+	$coord_sql .= " AND geodb_locations.loc_type = 100700000 AND geodb_textdata.text_type = 500100000";
+    }
+    if ($debug) {
+	warn "SQL:\n$coord_sql\n";
+    }
+
+    my $coord_sth = $dbh->prepare_cached($coord_sql);
+    $coord_sth->execute;
+    while(my $row = $coord_sth->fetchrow_hashref) {
+	my $loc_id = $row->{loc_id};
+	my($x, $y) = map { int } $Karte::Polar::obj->map2standard($row->{lon}, $row->{lat});
+	if ($db_is_utf8) {
+	    print decode("utf8", $row->{text_val}) . "\tX$x,$y\n";
+	} else {
+	    my @add;
+	    if ($row->{loc_type_name} ne 'Ortschaft') {
+		push @add, $row->{loc_type_name};
+	    } 
+	    if ($row->{text_type_name} ne 'Name') {
+		push @add, $row->{text_type_name};
+	    }
+	    if (exists $loc2einwohner{$loc_id}) {
+		push @add, "EW: $loc2einwohner{$loc_id}";
+	    }
+	    print $row->{text_val};
+	    if (@add) {
+		print " (" . join(", ", @add) . ")";
+	    }
+	    print "\tX $x,$y\n";
+	}
+    }
+}
+
+__END__
+
+=pod
+
+Einwohnerzahlen und Kategorien vergleichen:
+
+    cd .../bbbike/miscsrc
+    ./opengeodbmysql2bbd -debug -orte > /tmp/o.bbd
+    rm /tmp/ort.db
+    perl -MDBM::Deep -nle 'BEGIN { tie %db, "DBM::Deep", "/tmp/ort.db" or die } next if /^#/; /^([^|]+).*\t(\d)/; next if not defined $1; push @{$x{$1}}, $2; END { %db = %x }' ../data/orte ../data/orte2
+    grep EW: /tmp/o.bbd | perl -MDBM::Deep -nle 'BEGIN { tie %db, "DBM::Deep", "/tmp/ort.db" or die } s/(.*)\(EW: (\d+)\)/$2 $1/; ($ort)=$_=~m{^\d+\s+(\S+)}; if (exists $db{$ort}) { print "$_ $db{$ort}" }' | sort -n
+

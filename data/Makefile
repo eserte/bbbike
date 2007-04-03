@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.134 2007/03/24 12:34:23 eserte Exp $
+# $Id: Makefile,v 2.135 2007/04/03 23:21:17 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -716,17 +716,36 @@ ${PERSISTENTTMPDIR}/Berlin.coords.bbd: Berlin.coords.data
 ${PERSISTENTTMPDIR}/Potsdam.coords.bbd: Potsdam.coords.data
 	$(PERL) -F'\|' -nale 'print "@F[0,1,2]\tX $$F[3]" if $$F[3]' Potsdam.coords.data > $@
 
-OPENGEODB_REGION=BB MV
+
+OPENGEODB_ORTE_ZIP=		opengeodb-0.2.4d-UTF8-text-orte.zip
+OPENGEODB_ORTE_FILE=		${OPENGEODB_ORTE_ZIP:S/.zip/.txt/}
+OPENGEODB_ORTE_DISTURL=	http://prdownloads.sourceforge.net/opengeodb/${OPENGEODB_ORTE_ZIP}
+OPENGEODB_REGION=	BB MV
 .if ${HOST} == "mom.herceg.de"
-OPENGEODB_ORTE_SOURCE=/amd/vran/root/usr/ports/distfiles/opengeodb/opengeodb-0.2.4a-UTF8-text-orte.txt
+OPENGEODB_DIR=		/amd/vran/root/usr/ports/distfiles/opengeodb
 .else
-OPENGEODB_ORTE_SOURCE=/usr/ports/distfiles/opengeodb/opengeodb-0.2.4a-UTF8-text-orte.txt
+OPENGEODB_DIR=		/usr/ports/distfiles/opengeodb
 .endif
+OPENGEODB_ORTE_PATH=		${OPENGEODB_DIR}/${OPENGEODB_ORTE_FILE}
+OPENGEODB_ORTE_ZIPPATH=	${OPENGEODB_DIR}/${OPENGEODB_ORTE_ZIP}
+
+fetch-opengeodb:	${OPENGEODB_ORTE_ZIPPATH}
+extract-opengeodb:	${OPENGEODB_ORTE_PATH}
+
+${OPENGEODB_ORTE_ZIPPATH}:
+	@echo -n "Should I fetch ${OPENGEODB_ORTE_DISTURL} to ${OPENGEODB_ORTE_ZIPPATH}? (CTRL-C to abort) "
+	@read yn
+	wget -O ${OPENGEODB_ORTE_ZIPPATH}~ ${OPENGEODB_ORTE_DISTURL}
+	mv ${OPENGEODB_ORTE_ZIPPATH}~ ${OPENGEODB_ORTE_ZIPPATH}
+
+${OPENGEODB_ORTE_PATH}:	${OPENGEODB_ORTE_ZIPPATH}
+	cd ${OPENGEODB_DIR} && unzip ${OPENGEODB_ORTE_ZIP}
+	touch ${OPENGEODB_ORTE_PATH}
 
 persistent-tmp-from-opengeodb:	${OPENGEODB_REGION:S/^/${PERSISTENTTMPDIR}\/opengeodb-orte-/:S/$/-DE.bbd/}
 
 .for region in BB MV
-${PERSISTENTTMPDIR}/opengeodb-orte-${region}-DE.bbd:	${OPENGEODB_ORTE_SOURCE} ${MISCSRCDIR}/opengeodborte2bbd
+${PERSISTENTTMPDIR}/opengeodb-orte-${region}-DE.bbd:	${OPENGEODB_ORTE_PATH} ${MISCSRCDIR}/opengeodborte2bbd
 	${PERL_UTF8} ${MISCSRCDIR}/opengeodborte2bbd -restrictland ${region} -restrictcountry DE $^ > $@
 .endfor
 

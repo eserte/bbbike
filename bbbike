@@ -11879,11 +11879,19 @@ sub enterpoint {
     if (defined $c_balloon) {
 	if (@l && $use_c_balloon >= 2) {
 	    if ($leave_after) {	$leave_after->cancel; undef $leave_after }
-	    $c_balloon->Popup(join(" / ", @l));
+	    my $str = join(" / ", @l);
+	    if ($devel_host) {#XXX
+		my $add_str = balloon_info_from_all_tags($c);
+		if ($add_str) {
+		    $str .= "\n$add_str";
+		}
+	    }
+	    $c_balloon->Popup($str);
 	} else {
 	    $c_balloon->Deactivate;
 	}
     }
+
 }
 
 # Wird beim Verlassen eines Punktes aufgerufen.
