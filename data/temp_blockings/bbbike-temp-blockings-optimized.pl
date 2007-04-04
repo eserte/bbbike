@@ -374,14 +374,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1177192800,
-         'text' => 'L 063 Berliner Str. Bahnübergang in der OD Lauchhammer Gleiserneuerung Vollsperrung 10.04.2007-21.04.2007 ',
-         'from' => 1176069600,
-         'data' => 'userdel	2::inwork 35482,-103562 35379,-103141 35072,-102150
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -638,14 +631,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1175637600,
-         'text' => 'B 096 Sonnewalde-Luckau zw. Dabern und Weißack De- und Montage Trafostation Vollsperrung 02.04.2007-03.04.2007 ',
-         'from' => 1175378400,
-         'data' => 'userdel	2::inwork 30832,-72209 30767,-72806
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1180648800,
          'text' => 'L 015 Mühlenstr. OD Rheinsberg, zw. Schloßstr. u. Rhinstr. Kanalarbeiten Vollsperrung 02.04.2007-31.05.2007 ',
@@ -672,9 +658,9 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'type' => 'gesperrt'
        },
        {
-         'until' => 1183240800,
-         'text' => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf grundhafter Straßenausbau Vollsperrung 11.07.2006-30.06.2007 ',
-         'from' => 1152482400,
+         'until' => 1179525600,
+         'text' => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf, zw. Bahnhofstr. und Mahlower Str. grundhafter Straßenausbau Vollsperrung 26.02.2007-18.05.2007 ',
+         'from' => 1172358000,
          'data' => 'userdel	2::inwork 7981,-7165 7558,-7093
 ',
          'type' => 'gesperrt'
@@ -710,6 +696,47 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	2::inwork 45088,-55645 45152,-53482 45124,-52888
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005138',
+         'until' => 1176674399,
+         'text' => 'Gustav-Meyer-Allee (Wedding) Richtung Scheringstr. zwischen Brunnenstr. und Hussitenstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 04.2007)',
+         'from' => 1175726673,
+         'data' => 'userdel	1::inwork 9443,15430 8900,15146
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1196463600,
+         'text' => 'L 024 AS Pfingstberg-Gerswalde OD Suckow grundhafter Straßenbau Vollsperrung 10.04.2007-30.11.2007 ',
+         'from' => 1176069600,
+         'data' => 'userdel	q4::inwork 39125,83492 38986,84365
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1185487200,
+         'text' => 'L 033 Eggersdorf-Altlandsberg Brücke über den Graben in der OD Radebrück Brückenneubau Vollsperrung 10.04.2007-26.07.2007 ',
+         'from' => 1176069600,
+         'data' => 'userdel	2::inwork 36768,17309 35618,17440 35225,17557
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1176156000,
+         'text' => 'L 056 Klein Mehßow-Crinitz OD Fürstlich Drehna Moto-Cross-Meisterschaft Vollsperrung 07.04.2007-09.04.2007 ',
+         'from' => 1175810400,
+         'data' => 'userdel	2::inwork 39208,-72065 39419,-72066 39608,-71896 39966,-71985
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1188597600,
+         'text' => 'L 171 Schönfließer Str. OD Hohen Neuendorf grundhafter Straßenbau Vollsperrung 10.04.2007-31.08.2007 ',
+         'from' => 1176069600,
+         'data' => 'userdel	q4::inwork 2853,28918 2353,29078 2071,29185
+',
+         'type' => 'handicap'
        }
      
 );
