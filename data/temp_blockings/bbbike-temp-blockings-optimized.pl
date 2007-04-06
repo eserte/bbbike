@@ -509,14 +509,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        undef,
        undef,
        undef,
-       {
-         'until' => 1175810400,
-         'text' => 'B 246 Brücker Str. OL Beelitz, zw. Bahnübergang u. Karl-Marx-Str. Ausbau Kreisverkehr Vollsperrung 21.01.2007-05.04.2007 ',
-         'from' => 1169247600,
-         'data' => 'userdel	q4::inwork -17930,-19476 -18615,-19264
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1179525600,
          'text' => 'B 246 Brücker Str. OL Beelitz, zw. Eckenerstr. u. Karl-Marx-Str. Ausbau Kreisverkehr Vollsperrung 10.04.2007-18.05.2007 ',
@@ -735,6 +728,38 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'text' => 'L 171 Schönfließer Str. OD Hohen Neuendorf grundhafter Straßenbau Vollsperrung 10.04.2007-31.08.2007 ',
          'from' => 1176069600,
          'data' => 'userdel	q4::inwork 2853,28918 2353,29078 2071,29185
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1177452000,
+         'text' => 'B 167 Eberswalder Str. OD Eberswalde, zw. Spechthausener Str. u. Schönholzer Str. Deckenerneuerung Vollsperrung 10.04.2007-24.04.2007 ',
+         'from' => 1176069600,
+         'data' => 'userdel	q4::inwork 32143,48553 33252,48525 34356,48775
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1176588000,
+         'text' => 'L 021 Wensickendorf-Liebenwalde OD Zehlendorf Einbau Deckschicht Vollsperrung 10.04.2007-14.04.2007 ',
+         'from' => 1176069600,
+         'data' => 'userdel	q4::inwork 9093,42159 8682,42032
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1176588000,
+         'text' => 'L 029 Wandlitz-Schmachtenhagen OD Zehlendorf Einbau Deckschicht Vollsperrung 10.04.2007-14.04.2007 ',
+         'from' => 1176069600,
+         'data' => 'userdel	q4::inwork 8293,42032 8682,42032
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1177192800,
+         'text' => 'L 064 Riesaer Str. OL Bad Liebenwerda Deckenerneuerung Vollsperrung 13.04.2007-21.04.2007 ',
+         'from' => 1176328800,
+         'data' => 'userdel	q4::inwork 11862,-99775 11943,-99051
 ',
          'type' => 'handicap'
        }

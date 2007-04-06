@@ -7685,4 +7685,36 @@ EOF
 userdel	q4::inwork 2853,28918 2353,29078 2071,29185
 EOF
      },
+     { from  => 1176069600, # 2007-04-09 00:00
+       until => 1177452000, # 2007-04-25 00:00
+       text  => 'B 167 Eberswalder Str. OD Eberswalde, zw. Spechthausener Str. u. Schönholzer Str. Deckenerneuerung Vollsperrung 10.04.2007-24.04.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 32143,48553 33252,48525 34356,48775
+EOF
+     },
+     { from  => 1176069600, # 2007-04-09 00:00
+       until => 1176588000, # 2007-04-15 00:00
+       text  => 'L 021 Wensickendorf-Liebenwalde OD Zehlendorf Einbau Deckschicht Vollsperrung 10.04.2007-14.04.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 9093,42159 8682,42032
+EOF
+     },
+     { from  => 1176069600, # 2007-04-09 00:00
+       until => 1176588000, # 2007-04-15 00:00
+       text  => 'L 029 Wandlitz-Schmachtenhagen OD Zehlendorf Einbau Deckschicht Vollsperrung 10.04.2007-14.04.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 8293,42032 8682,42032
+EOF
+     },
+     { from  => 1176328800, # 2007-04-12 00:00
+       until => 1177192800, # 2007-04-22 00:00
+       text  => 'L 064 Riesaer Str. OL Bad Liebenwerda Deckenerneuerung Vollsperrung 13.04.2007-21.04.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 11862,-99775 11943,-99051
+EOF
+     },
     );
