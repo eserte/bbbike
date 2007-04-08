@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.299 2007/03/28 23:14:53 eserte Exp eserte $
+# $Id: bbbike,v 3.301 2007/04/08 20:17:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -53,7 +53,10 @@ BEGIN {
     }
     if ($nosplash) { $use_logo = 0 }
 
+    local $^W;
+    $^W = 0 if $^O eq 'MSWin32'; # to avoid "no such signal" warnings
     eval 'use sigtrap qw(stack-trace USR1)'; warn $@ if $@;
+
     $booting = 1;
 }
 
@@ -205,7 +208,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.299 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.301 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -265,13 +268,25 @@ use Tk::DropSite;
 
 $tmpdir = $ENV{TMPDIR} || $ENV{TEMP} || "/tmp";
 if (! -d $tmpdir || ! -w $tmpdir) {
-    $tmpdir = "/temp";
-    if (! -d $tmpdir || ! -w $tmpdir) {
-	$tmpdir = catfile($FindBin::RealBin, "tmp");
-	warn Mfmt("Verwende Unterverzeichnis 'tmp' des Programmverzeichnisses (%s) als temporäres Verzeichnis", $tmpdir);
-	if (!-d $tmpdir || !-w $tmpdir) {
-	    warn Mfmt("Achtung: das Verzeichnis %s ist nicht schreibbar!", $tmpdir);
+    undef $tmpdir;
+    for my $fallback ('__SPEC__', "/temp", catfile($FindBin::RealBin, "tmp")) {
+	if ($fallback eq '__SPEC__') {
+	    if (eval { require File::Spec; 1 }) {
+		$fallback = File::Spec->tmpdir;
+	    } else {
+		warn $@;
+		next;
+	    }
 	}
+	if (-d $fallback && -w $fallback) {
+	    $tmpdir = $fallback;
+	    warn Mfmt("Verwende Verzeichnis '%s' als temporäres Verzeichnis.", $tmpdir);
+	    last;
+	}
+    }
+    if (!$tmpdir) {
+	$tmpdir = "/tmp";
+	warn M("Achtung: es konnte kein schreibbares temporäres Verzeichnis gefunden werden. Unter Umständen sind einige Operationen nicht möglich.");
     }
 }
 
@@ -962,7 +977,7 @@ $srtbike_photo = load_photo($top, 'srtbike_solid.' . $default_img_fmt);
 if ($os eq 'win' || $^O eq 'cygwin') {
     # srtbike32.* looks broken on Win98,
     # and srtbike16.* looks broken on WinXP
-    if ($ENV{OS} eq 'Windows_NT') { # this seems to be the case for XP
+    if ($ENV{OS} && $ENV{OS} eq 'Windows_NT') { # this seems to be the case for XP
 	$srtbike_icon = load_photo($top, 'srtbike32.' . $default_img_fmt);
     } else {
 	#XXX what does this mean? # $srtbike_icon is also used in info window, so stick to 16x16 in every case.
@@ -6518,10 +6533,11 @@ sub set_bindings {
 	if ($alt_set_route_point{$map_mode}) {
 	    return $alt_set_route_point{$map_mode}->(@_);
 	}
+	my($rx,$ry);
 	if ($map_mode eq MM_BUTTONPOINT) {
-	    freerec_sub(@_);
+	   ($rx,$ry) = freerec_sub(@_);
 	}
-	freedraw_sub(@_);
+	freedraw_sub($_[0],$rx,$ry);
 ## DEBUG_BEGIN
 #benchend();
 ## DEBUG_END	   
@@ -6799,9 +6815,15 @@ sub freerec_sub {
 
 # freies Zeichnen von Punkten
 sub freedraw_sub {
-    my $e = $_[0]->XEvent;
-    my($xx, $yy) = ($c->canvasx($e->x), $c->canvasy($e->y));
-    my($ax, $ay) = anti_transpose($xx, $yy);
+    my($w, $ax, $ay) = @_;
+    my($xx, $yy);
+    if (defined $ax && defined $ay) {
+	($xx, $yy) = transpose($ax, $ay);
+    } else {
+	my($e) = $w->XEvent;
+	($xx, $yy) = ($c->canvasx($e->x), $c->canvasy($e->y));
+	($ax, $ay) = anti_transpose($xx, $yy);
+    }
     return if !defined(addpoint_xy($ax, $ay, $xx, $yy));
     push @search_route_points, [join(",",@{ $realcoords[-1] }), POINT_MANUELL];
     if ($net && $map_mode ne MM_BUTTONPOINT) {
@@ -6828,9 +6850,6 @@ sub mouse_dellast {
 	eval $special_edit . '_edit_mouse3(@_)';
 	die $@ if $@;
     } else {
-	if ($map_mode eq MM_BUTTONPOINT) {
-	    dellast_selection();
-	}
 	dellast()
     }
 }
@@ -6925,8 +6944,8 @@ sub set_route_point {
 	    }
 	}
 	require BBBikeAdvanced;
-	buttonpoint(undef,undef,$item);
-	freedraw_sub($_[0]);
+	my($rx,$ry) = buttonpoint(undef,undef,$item);
+	freedraw_sub($_[0],$rx,$ry);
     } elsif ($map_mode eq MM_INFO) {
 	show_info();
     } elsif ($map_mode =~ /^BBBike/) {
@@ -10342,8 +10361,7 @@ sub choose_ort {
 	    my $max_cols;
 	    if ($Listbox =~ /K.*Listbox/ && $Tk::VERSION >= 800) {
 	        my $c = $t->Canvas(-takefocus => 0)->pack;
-		my $x = 1;
-		if ($os eq 'win') { $x++ } # otherwise A is cropped
+		my $x = 2; # 2, otherwise A may be cropped with some fonts
 		for ('A'..'Z') {
 		    $c->createText($x, 1,
 				   -text => $_,
@@ -10354,9 +10372,11 @@ sub choose_ort {
 				  );
 		    $x += $t->fontMeasure($font{'small'}, $_);
 		}
-		if ($os eq 'win') { $x++ } # otherwise Z is cropped
+		$x+=2; # otherwise Z may be cropped
 		my $asc = $t->fontMetrics($font{'small'}, '-ascent');
 		my $des = $t->fontMetrics($font{'small'}, '-descent');
+		# Note that this Canvas is NOT adjusted if the font
+		# is changed at runtime.
 		$c->GeometryRequest($x, $asc+$des+2);
 		$c->bind('all', '<ButtonPress-1>' => sub {
 			     my(@c) = $c->gettags('current');
@@ -10500,10 +10520,12 @@ sub choose_ort {
 				keys %orte);
 		} else {
 		    # XXX maybe use Sort::Naturally? speed issues?
-		    my $tf_sub = (defined &Win32Util::sort_cmp_hack_transform &&
-				  $os eq 'win'
-				  ? sub { Win32Util::sort_cmp_hack_transform($_[0]) }
-				  : sub { lc $_[0] });
+		    # "use locale" is not used here because:
+		    # - there's maybe no locale support at all
+		    # - the german locale may be missing
+		    # - with various perl versions and OSes I had in the
+		    #   past problems with "use locale"
+		    my $tf_sub = \&BBBikeUtil::umlauts_for_german_locale;
 		    $lb->insert('end',
 				map { $_->[1] }
 				sort { $a->[0] cmp $b->[0] }
@@ -13590,6 +13612,12 @@ sub dellast {
 	unless ($no_update) {
 	    update_flags_and_route();
 	}
+	if ($map_mode eq MM_BUTTONPOINT) { # update also selection
+	    if (@inslauf_selection) {
+		pop @inslauf_selection;
+		update_clipboard();
+	    }
+	}
     }
 }
 
@@ -13597,7 +13625,7 @@ sub update_flags_and_route {
     set_flag('via');
     set_flag('ziel');
     updatekm();
-    if (!@coords) {
+    if ($map_mode eq MM_SEARCH && !@coords) {
 	undef $search_route_flag;
 	search_route_mouse(1);
     }
@@ -13605,13 +13633,12 @@ sub update_flags_and_route {
 }
 
 ### AutoLoad Sub
-sub dellast_selection {
-    if (@inslauf_selection) {
-	pop @inslauf_selection;
-	if ($use_clipboard) {
-	    $c->clipboardClear;
-	    $c->clipboardAppend(" " . join(" ", @inslauf_selection));
-	}
+sub update_clipboard {
+    if ($use_clipboard) {
+	$c->clipboardClear;
+	# Use a leading space, to be consistent with rest of (lazy) clipboard
+	# code.
+	$c->clipboardAppend(" " . join(" ", @inslauf_selection));
     }
 }
 
@@ -13628,19 +13655,21 @@ sub deltovia {
     if ($xy eq $via) {
 	dellast();
     }
-    return if !@realcoords;
-    return if (!@search_route_points);
+    goto CLEANUP if !@realcoords;
+    goto CLEANUP if (!@search_route_points);
     $via = $search_route_points[-1]->[SRP_COORD];
     for(my $i = $#realcoords; $i >= 0; $i--) {
 	my($x, $y) = @{ $realcoords[$i] };
 	my $xy = "$x,$y";
 	if ($xy eq $via) {
 	    update_flags_and_route();
-	    return;
+	    goto CLEANUP;
 	} else {
 	    dellast(1);
 	}
     }
+  CLEANUP:
+    update_clipboard();
 }
 
 # Ausgabe der aktuellen Routenlänge
@@ -14922,17 +14951,18 @@ sub show_overview_populate {
 	    );
     }
     {
-	# schöner wär's mit local(), aber geht nicht so ohne weiteres
+	# local does not work here, segfault on Win98+perl5.6.1/perl5.8.0+Tk800.0xx
 	my $orte_far_away_orig = $p_far_away{'o'};
 	$p_far_away{'o'} = 1;
-	local $no_overlap_label{'o'} = 1; # XXX Kein Effekt - warum?
-	local $orte_label_size = 1;	
+	my $no_overlap_label_orig = $no_overlap_label{'o'};
+	$no_overlap_label{'o'} = 1; # XXX Kein Effekt - warum?
+	my $orte_label_size_orig = $orte_label_size;
+	$orte_label_size = 1;
 	plotorte(Canvas        => $overview_canvas,
 		 PlaceCategory => 4,
 		 Shortname     => 1,
 		 NoOverlapLabel => 0,
 		);
-	$p_far_away{'o'} = $orte_far_away_orig;
 
 	if ($show_overview_mode eq 'b') {
 	    plotorte(Canvas        => $overview_canvas,
@@ -14943,6 +14973,10 @@ sub show_overview_populate {
 		     -type         => 'oo'
 		    );
 	}
+
+	$p_far_away{'o'} = $orte_far_away_orig;
+	$orte_label_size = $orte_label_size_orig;
+	$no_overlap_label{'o'} = $no_overlap_label_orig;
     }
     $progress->FinishGroup;
     $overview_canvas->raise("zoomrect");
@@ -16650,12 +16684,19 @@ sub set_usercross_image {
 ### AutoLoad Sub
 sub save_cursor {
     $c->{SavedCursor} = $c->get_cursor;
+    if (!defined $c->{SavedCursor}) {
+	$c->{SavedCursor} = "__DEFAULT__";
+    }
 }
 
 ### AutoLoad Sub
 sub restore_cursor {
     if ($c->{SavedCursor}) {
-	$c->set_cursor($c->{SavedCursor});
+	if ($c->{SavedCursor} eq '__DEFAULT__') {
+	    $c->set_cursor(undef);
+	} else {
+	    $c->set_cursor($c->{SavedCursor});
+	}
 	undef $c->{SavedCursor};
     }
 }
@@ -18504,10 +18545,51 @@ sub set_fonts {
 	    $font{'fixed'} = "5x7"; # XXX really necessary?
 	}
 
+## Here from a Win98 session what fonts are readable
+##
+#  Arial:          unterhalb von 5pt: nicht zu gebrauchen
+#		   5pt - 6pt: noch lesbar, aber einige Buchstaben
+#			      sehen kaputt aus
+#		   7pt: OK
+#  Courier New:	   5pt: kaum lesbar
+#		   6pt: sieht ziemlich schlecht aus
+#		   7pt: OK
+#  Lucida Console:  unterhalb von 5pt: nicht zu gebrauchen
+#		   5pt: erstaunlich gut
+#		   6pt und mehr: OK
+#  MS Sans Serif:  9pt scheint die Minimalgröße zu sein
+#  MS Serif:       6pt ist die Minimalgröße und recht gut lesbar
+#  System:         16pt scheint die Minimalgröße zu sein
+#  Tahoma:         unterhalb von 5pt: nicht zu gebrauchen
+#		   5pt - 6pt: noch lesbar, aber einige Buchstaben
+#			      sehen kaputt aus
+#		   7pt: OK
+#  Times New Roman:unterhalb von 10px (6pt): nicht zu gebrauchen
+#		   10px (6pt): ein paar Buchstaben sehen komisch aus
+#		   12px (7pt): OK, wenn auch etwas gequetscht
+#  Verdana:        unterhalb von 5pt: nicht zu gebrauchen
+#		   5pt - 6pt: noch lesbar, aber einige Buchstaben
+#			      sehen kaputt aus
+#		   7pt: OK
+#  Pixel <-> Point (bei Times New Roman)
+#    3         2
+#    4         2
+#    5         4
+#    6         5
+#    7         5
+#    8         5
+#    9         5
+#   10         6
+#   11         6
+#   12         7
+#   13         8
+#   14         8
+#   15         9
+#
 	my %min_px =
 	    ('helvetica'	      => 8,
 	     'times'		      => 10,
-	     'times new roman'        => 10,
+	     'times new roman'        => 10, # 12 wäre eigentlich besser
 	     'lucida'		      => 8,
 	     'new century schoolbook' => 8,
 	     'fixed'		      => 7,

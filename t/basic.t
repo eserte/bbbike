@@ -10,6 +10,7 @@ use strict;
 use FindBin;
 use ExtUtils::Manifest;
 use Getopt::Long;
+use File::Spec qw();
 
 BEGIN {
     if (!eval q{
@@ -113,6 +114,9 @@ for my $f (@files) {
 	myskip "$f needs MIME::Lite", $tests_per_file
 	    if $f =~ m{^( cgi/mapserver_comment.cgi
 		      )$}x && !eval { require MIME::Lite; 1 };
+	myskip "$f does not work on Win32", $tests_per_file
+	    if $f =~ m{^( lib/Tk/ContextHelp.pm
+		      )$}x && $^O eq 'MSWin32';
 
 	my @add_opt;
 	if ($f =~ m{Tk/.*\.pm}) {
@@ -129,8 +133,8 @@ for my $f (@files) {
 	}
 	*OLDERR = *OLDERR; # cease -w
 	open(OLDERR, ">&STDERR") or die;
-	my $diag_file = "/tmp/bbbike-basic.text";
-	open(STDERR, ">$diag_file") or die $!;
+	my $diag_file = File::Spec->tmpdir . "/bbbike-basic.text";
+	open(STDERR, ">$diag_file") or die "Can't write to $diag_file: $!";
 
 	my $can_w = 1;
 	if ($f =~ m{^( lib/Tk/FastSplash.pm # keep it small without peacifiers
@@ -228,7 +232,8 @@ for my $f (@files) {
 if ($has_skips) {
     diag <<EOF;
 
-There were skips because of missing modules. You can rerun the test with
+There were skips because of missing modules or other prerequisites. You can
+rerun this test with
 
     $^X $0 -noskip
 

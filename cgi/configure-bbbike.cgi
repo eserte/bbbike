@@ -17,15 +17,17 @@ use CGI::Carp qw(fatalsToBrowser);
 
 # NOTE: Should be same as in bbbike.cgi
 use FindBin;
-use lib (#"/home/e/eserte/src/bbbike",
-	 "$FindBin::RealBin/..", # falls normal installiert
-	 "$FindBin::RealBin/../lib",
-	 "$FindBin::RealBin/../BBBike", # falls in .../cgi-bin/... installiert
-	 "$FindBin::RealBin/../BBBike/lib",
-	 "$FindBin::RealBin/BBBike", # weitere Alternative
-	 "$FindBin::RealBin/BBBike/lib",
-	 "$FindBin::RealBin",
-	 "/home/e/eserte/lib/perl", # only for TU Berlin
+use lib (grep { -d }
+	 (#"/home/e/eserte/src/bbbike",
+	  "$FindBin::RealBin/..", # falls normal installiert
+	  "$FindBin::RealBin/../lib",
+	  "$FindBin::RealBin/../BBBike", # falls in .../cgi-bin/... installiert
+	  "$FindBin::RealBin/../BBBike/lib",
+	  "$FindBin::RealBin/BBBike", # weitere Alternative
+	  "$FindBin::RealBin/BBBike/lib",
+	  "$FindBin::RealBin",
+	  "/home/e/eserte/lib/perl", # only for TU Berlin
+	 )
 	);
 
 use CGI qw(:standard);

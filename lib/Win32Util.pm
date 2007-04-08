@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Win32Util.pm,v 1.36 2006/01/12 21:58:37 eserte Exp $
+# $Id: Win32Util.pm,v 1.38 2007/04/08 18:33:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -35,7 +35,7 @@ these modules are already bundled with the popular ActivePerl package.
 use strict;
 use vars qw($DEBUG $browser_ole_obj $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.36 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
 $DEBUG=0 unless defined $DEBUG;
 
 # XXX Win-Registry-Funktionen mit Hilfe von Win32::API und
@@ -782,6 +782,7 @@ sub get_user_folder {
         $folder = $hashref->{$foldertype}[2];
     };
     warn $@ if $@;
+    # XXX could also use Win32::GetFolderPath(CSIDL_APPDATA) ...
     $folder;
 }
 
@@ -1681,7 +1682,7 @@ sub sort_cmp_hack {
 
 sub sort_cmp_hack_transform {
     my $s = shift;
-    $s =~ tr/äöüß/aous/;
+    $s =~ tr/äöüßÄÖÜ/aousAOU/;
     $s;
 }
 
@@ -1791,3 +1792,22 @@ DEU=Deutschland
 ENG=Grossbritanien
 
 (vielleicht fuer Msg.pm verwenden)
+
+Alternative zur Ermittlung der Sprache (von Wolf Behrenhoff):
+----------------------------------------------------------------------
+use Win32::API;
+my $GetLang = Win32::API->new(
+        "kernel32", "DWORD GetUserDefaultLangID()"
+    );
+$l = $GetLang->Call();
+
+my $lang;
+if ($l == 0x407) {
+  $lang = 'Deutsch';
+} elsif ($l == 0x419) {
+  $lang = 'Russisch';
+} else {
+  $lang = 'andere Sprache';
+}
+print $lang;
+----------------------------------------------------------------------

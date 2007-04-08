@@ -21,10 +21,12 @@ BEGIN { # taint fixes
     $ENV{PATH} = "/usr/bin:/usr/sbin:/bin:/sbin";
 }
 # from bbbike.cgi
-use lib (#"/home/e/eserte/src/bbbike",
-	 "$realbin/..", # falls normal installiert
-	 "$realbin/../BBBike", # falls in .../cgi-bin/... installiert
-	 "$realbin/BBBike", # weitere Alternative
+use lib (grep { -d }
+	 (#"/home/e/eserte/src/bbbike",
+	  "$realbin/..", # falls normal installiert
+	  "$realbin/../BBBike", # falls in .../cgi-bin/... installiert
+	  "$realbin/BBBike", # weitere Alternative
+	 )
 	);
 use BBBikeVar;
 use BBBikeCGIUtil qw();

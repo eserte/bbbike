@@ -189,6 +189,7 @@ but another problem...)
 
 Bugreport von Andreas Mühlhausen: BS/Del funktioniert nicht zum
 Löschen von Punkten aus der Selection im Edit-Modus unter Windows.
+-> BS worked, Del was buggy and is fixed.
 
 =item * (M5)
 
@@ -377,6 +378,10 @@ ist. CVS wäre besser, noch besser, wenn es eine abgespeckte
 Client-Variante in Perl gäbe (VCS-LibCVS scheint auch brauchbar zu
 sein), die man ins Windows-distfile dazupacken könnte. CVS ist unter
 Unix meist vorhanden.
+
+Vielleicht besser: gibt es eine Apache-Option, um automatisch bei
+accept-encoding: gzip mit komprimierten statischen Dateien zu
+antworten? Update.pm braucht allerdings auch Unterstützung dafür...
 
 =item * (M1)
 
@@ -1203,7 +1208,7 @@ geht ein import?
   * alle skripte/module, die zum abspeichern als ESRI notwendig sind,
     einbinden
 
-  * es ist nur ein Upload auf den Garmin unter Win moeglich. Wird ein
+  * es ist nur ein einziges Upload auf den Garmin unter Win moeglich. Wird ein
     FH evtl. nicht geschlossen? perl-gps-Problem oder bbbike-Problem?
     -> Lösung ist in Sicht, ich muss nur auf Win testen!
 
@@ -1222,15 +1227,15 @@ geht ein import?
   * M1 ->postscript is slow (sieperl). Warn before calling any export
     and print function? COMBINED WITH:
   * M1 PNG-Export: first check for all dependencies, then try to export
-    (change in GfxConvert needed). Das ist jetzt haesslioch: ps-export braucht
+    (change in GfxConvert needed). Das ist jetzt haesslich: ps-export braucht
     jahre und dann merkt man, dass es doch nicht geht
 
   * E3 Print OK? (ps vs. pdf backend and automatic recognition)
 
-  low prio: Research Tk::Balloon: kann ich Tk::CanvasBalloon durch
+  * H1 very low prio: Research Tk::Balloon: kann ich Tk::CanvasBalloon durch
   Tk::Balloon *effizient* ersetzen?
 
-  TelbuchDBApprox: wenn eine genaue hausnummer nicht gefunden wurde,
+  * M1 TelbuchDBApprox: wenn eine genaue hausnummer nicht gefunden wurde,
   dann in der naehe suchen!
 
   inaccessible_strassen, look at:
@@ -1238,10 +1243,6 @@ geht ein import?
      all_crossings and similar functions
      introduce also in perl/tk version
   [???]
-
-  data_corrected: cp or symlink or convert missing files: kneipen,
-  restaurants etc.
-  2. use data_corrected for CVS and all distributions!
 
 [Ab hier wieder geordnet:]
 
@@ -1449,7 +1450,11 @@ Try Win32::GUI::SplashScreen as splash alternative.
 
 =item * (M2)
 
-Do I need to use a larger font if user's font settings are different from Tahoma 8?
+Do I need to use a larger font if user's font settings are different
+from Tahoma 8? -> Es existiert eine Liste der noch lesbaren und gut
+aussehenden Font/Schriftgrößen-Kombinationen auf einer Win98-Maschine.
+Unter Win98 scheint ein Minimumdefault von 10px besser zu sein als
+8px, wie derzeit in set_fonts eingestellt.
 
 =item * (M2)
 
@@ -1475,7 +1480,7 @@ auf usb-stick kopieren!
 =item * (M1)
 
 Langfristig auf Strawberry Perl umsteigen, sobald ich alle Module 
-aus Bundle/BBBike_win.pm erzeugen kann.
+aus Bundle/BBBike_windist.pm erzeugen kann.
 
 =item * (M5)
 
@@ -1489,7 +1494,7 @@ Should $top->focusfollowsmouse be default everywhere?
 =item * (H1)
 
 Windows: An activating click should only activate the window but not
-doing an action. This should be like in Excel (but unlink Windows
+doing an action. This should be like in Excel (but unlike Windows
 Commander). This sounds like a generell Tk problem (is it maybe solved
 with Tk804?).
 
@@ -1497,7 +1502,7 @@ with Tk804?).
 
 It seems that it is standard on Windows to
 have some more spacing between buttons and make related buttons the
-equal width (especially in end dialog buttons). I thing grid() has
+equal width (especially in end dialog buttons). I think grid() has
 some new? -uniform option to force all widgets in a frame to have
 the same width.
 

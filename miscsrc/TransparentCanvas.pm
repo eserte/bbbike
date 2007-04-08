@@ -29,13 +29,25 @@ our $shape_pixmap;
 
 sub register {
     my $top = $main::top;
-    $top->bind("<Control-t>" => sub { doit() });
-    $top->bind("<Control-T>" => sub { remove() });
-    if (!$main::booting) {
-	$top->messageBox(-title => "Info",
-			 -icon => "info",
-			 -message => "C-t: Make transparent\nS-C-t: Remove transparency\nKey commands may also be used in the header area",
-			);
+    if ($Tk::platform eq 'MSWin32') {
+	my $warntext = "TransparentCanvas is not usable under Windows platform";
+	if ($main::booting) {
+	    warn $warntext;
+	} else {
+	    $top->messageBox(-title => "Not for Windows",
+			     -icon => "info",
+			     -message => $warntext,
+			     );
+	}
+    } else {
+	$top->bind("<Control-t>" => sub { doit() });
+	$top->bind("<Control-T>" => sub { remove() });
+	if (!$main::booting) {
+	    $top->messageBox(-title => "Info",
+			     -icon => "info",
+			     -message => "C-t: Make transparent\nS-C-t: Remove transparency\nKey commands may also be used in the header area",
+			    );
+	}
     }
 }
 

@@ -17,11 +17,13 @@ package BBBikeGooglemap;
 
 use strict;
 use FindBin;
-use lib ("$FindBin::RealBin/..",
-	 "$FindBin::RealBin/../lib",
-	 # für Radzeit:
-	 "$FindBin::RealBin/../BBBike",
-	 "$FindBin::RealBin/../BBBike/lib",
+use lib (grep { -d }
+	 ("$FindBin::RealBin/..",
+	  "$FindBin::RealBin/../lib",
+	  # für Radzeit:
+	  "$FindBin::RealBin/../BBBike",
+	  "$FindBin::RealBin/../BBBike/lib",
+	 )
 	);
 use CGI qw(:standard);
 use CGI::Carp;

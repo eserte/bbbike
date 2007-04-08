@@ -28,8 +28,9 @@ sub adjust_lib {
     delete $INC{"FindBin.pm"};
     require FindBin;
     require lib;
-    "lib"->import("$FindBin::RealBin/..", "$FindBin::RealBin/../lib",
-		"$FindBin::RealBin/../BBBike", "$FindBin::RealBin/../BBBike/lib");
+    "lib"->import(grep { -d }
+		  ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib",
+		   "$FindBin::RealBin/../BBBike", "$FindBin::RealBin/../BBBike/lib"));
     "lib"->import("/home/e/eserte/lib/perl"); # XXX fuer GD on cs
 }
 

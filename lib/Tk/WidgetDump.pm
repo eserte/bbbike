@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: WidgetDump.pm,v 1.30 2004/10/02 16:03:41 eserte Exp eserte $
+# $Id: WidgetDump.pm,v 1.33 2007/04/08 19:34:18 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2007 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ package Tk::WidgetDump;
 use vars qw($VERSION);
 use strict;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.33 $ =~ /(\d+)\.(\d+)/);
 
 package # hide from CPAN indexer
   Tk::Widget;
@@ -314,6 +314,7 @@ sub WidgetInfo {
 
     $Tk::WidgetDump::ref2widget{$w} = $w;
 
+    $txt->insert("end", "Self:\t" . $w . "\n");
     if (defined $w->parent) {
 	$txt->insert("end", "Parent:\t" . $w->parent,
 		     ["widgetlink", "href-" . $w->parent], "\n");
@@ -538,7 +539,13 @@ sub show_binding_details {
     my $cb = $widget->Tk::bind($bindtag, $bind);
     $ttxt->insert("end", "Binding <$bind> for bindtag <$bindtag>:\n");
     require Data::Dumper;
-    my $txt = Data::Dumper->new([$cb],[])->Deparse(1)->Useqq(1)->Dump;
+    my $txt;
+    my $dd = Data::Dumper->new([$cb],[]);
+    if ($dd->can("Deparse")) {
+	$txt = $dd->Deparse(1)->Useqq(1)->Dump;
+    } else {
+	$txt = "Sorry, your version of Data::Dumper is not capable to deparse the CODE reference.";
+    }
     $ttxt->insert("end", $txt);
 }
 
@@ -590,6 +597,14 @@ sub _edit_config {
 	$e = eval 'Tk::WidgetDump::Entry->entry($t, \$val, $set_sub)';
 	warn $@ if $@;
     }
+#XXX ja?
+#     $t->Button(-text => "Undef and close",
+# 	       -command => sub {
+# 		   $val = undef;
+# 		   $set_sub->();
+# 		   $t->destroy;
+# 	       }
+# 	      )->pack(-side => "left");
     $t->Button(-text => "Close",
 	       -command => [$t, 'destroy'],
 	      )->pack(-side => "left");
@@ -739,13 +754,14 @@ sub edit_canvas_config {
     warn $@ if $@;
     $e->focus if Tk::Exists($e);
     $t->bind("<Escape>" => [$t, 'destroy']);
-    $t->Button(-text => "Undef and close",
-	       -command => sub {
-		   $val = undef;
-		   $set_sub->();
-		   $t->destroy;
-	       }
-	      )->pack(-side => "left");
+#XXX ja?
+#     $t->Button(-text => "Undef and close",
+# 	       -command => sub {
+# 		   $val = undef;
+# 		   $set_sub->();
+# 		   $t->destroy;
+# 	       }
+# 	      )->pack(-side => "left");
     $t->Button(-text => "Close", -command => [$t, "destroy"])->pack(-side => "left");
 }
 

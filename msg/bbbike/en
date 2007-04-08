@@ -588,6 +588,8 @@ Warning:
 
 ",
 "Verwende Unterverzeichnis 'tmp' des Programmverzeichnisses (%s) als temporäres Verzeichnis" => "Using subdirectory 'tmp' of program directory (%s) as temporary directory",
+"Verwende Verzeichnis '%s' als temporäres Verzeichnis." => "Using directory '%s' as temporary directory.",
+"Achtung: es konnte kein schreibbares temporäres Verzeichnis gefunden werden. Unter Umständen sind einige Operationen nicht möglich." => "Warning: could not found any writable temporary directory. Some operations may fail.",
 "Kann das Verzeichnis %s nicht öffnen: %s" => "Can't open directory %s: %s",
 "Kann BikePower nicht laden: %s" => "Can't load BikePower: %s",
 "Kann EasySound nicht laden: %s" => "Can't load EasySound: %s",

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.175 2007/04/03 23:20:15 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.176 2007/04/08 19:39:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -115,13 +115,11 @@ sub advanced_option_menu {
 		   );
     $opbm->command(-label => 'Reload modules',
 		   -command => \&reload_new_modules);
-    if ($devel_host) {
-	$opbm->command(-label => 'Destroy all toplevels',
-		       -command => \&destroy_all_toplevels);
-	$opbm->command(-label => 'Re-call some subs',
-		       -command => \&recall_some_subs,
-		      );
-    }
+    $opbm->command(-label => 'Destroy all toplevels',
+		   -command => \&destroy_all_toplevels);
+    $opbm->command(-label => 'Re-call some subs',
+		   -command => \&recall_some_subs,
+		   );
     $opbm->command(-label => M"Datenverzeichnis ändern ...",
 		   -command => \&change_datadir);
 
@@ -2437,14 +2435,16 @@ sub reload_new_modules {
 # Selection-Kram (Koordinatenliste, buttonpoint et al.)
 #
 
-# Gibt den angewählten Punkt aus.
+# Gibt den angewählten Punkt auf STDERR aus.
 # Ausgegeben wird: Name (soweit vorhanden), Canvas-Koordinaten und
 # die Koordinaten abhängig von $coord_output_sub (gewöhnlich berlinmap).
 # Außerdem werden die $coord_output_sub-Koordinaten in die Selection
 # geschrieben.
+# Return-Value: $x, $y (u.U. an den nächsten Punkt normalisiert)
 ### AutoLoad Sub
 sub buttonpoint {
     my($x, $y, $current) = @_;
+    my($rx,$ry) = ($x,$y);
     $c->SelectionOwn(-command => sub {
 			 @inslauf_selection = ();
 			 # kein reset_ext_selection, weil dann beim Anklicken
@@ -2484,6 +2484,7 @@ sub buttonpoint {
 	    $tag = $tags[1];
 	    if ($tags[0] eq 'p') {
 		my($cx, $cy) = $koord->get($tag);
+		($rx,$ry) = ($cx,$cy);
 		my($x, $y) = $coord_output_sub->($cx, $cy);
 		$s = prepare_selection_line
 		    (-name => substr(Strassen::strip_bezirk($names[$tag]),
@@ -2497,8 +2498,8 @@ sub buttonpoint {
 	    } elsif ($tags[0] eq 'pp' || $tags[0] =~ /^lsa/ ||
 		     $tags[0] =~ /^L\d+/) {
 		my $use_prefix = 1;
-		my($x, $y) = $coord_output_sub->
-		  (@{Strassen::to_koord1($tags[1])});
+		($rx,$ry) = @{Strassen::to_koord1($tags[1])};
+		my($x, $y) = $coord_output_sub->($rx,$ry);
 		if ($tags[2] =~ m|^(.*\.wpt)/(\d+)/|) {
 		    my($wpt_file,$wpt_nr) = ($1,$2);
 		    system q{gnuclient -batch -eval '(find-file "~/src/bbbike/misc/gps_data/}.$wpt_file.q{") (goto-char (point-min)) (search-forward-regexp "^}.$wpt_nr.q{\t")'};
@@ -2532,6 +2533,7 @@ sub buttonpoint {
 		if (!defined $cx || !defined $cy) {
 		    ($cx, $cy) = anti_transpose($c->coords($current));
 		}
+		($rx,$ry) = ($cx,$cy);
 		my($x, $y) = $coord_output_sub->($cx, $cy);
 		my $name = ($tags[0] eq 'o'
 			    ? substr(Strassen::strip_bezirk($tag), 0, 40)
@@ -2551,6 +2553,7 @@ sub buttonpoint {
 	    print STDERR $s;
 	}
     }
+    ($rx,$ry);
 }
 
 ### AutoLoad Sub
