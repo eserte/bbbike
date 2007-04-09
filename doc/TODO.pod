@@ -185,12 +185,6 @@ in this situation to switch route searching off.
 (NB: Is this really the case? It does not seem to be the search mode,
 but another problem...)
 
-=item * (M3)
-
-Bugreport von Andreas Mühlhausen: BS/Del funktioniert nicht zum
-Löschen von Punkten aus der Selection im Edit-Modus unter Windows.
--> BS worked, Del was buggy and is fixed.
-
 =item * (M5)
 
 Tk::Getopt addition: for some changes a post dialog should be shown,
