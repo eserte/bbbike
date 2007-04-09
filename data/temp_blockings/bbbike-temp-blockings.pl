@@ -5393,7 +5393,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_003258',
        data  => <<EOF,
-userdel	q4::inwork 20161,-651 20315,-653 20386,-555
+userdel	q4::inwork 20205,-548 20354,-569 20362,-511
 EOF
      },
      { from  => undef, # 

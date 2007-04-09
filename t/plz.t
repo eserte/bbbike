@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.29 2006/07/09 21:43:26 eserte Exp $
+# $Id: plz.t,v 1.30 2007/04/09 22:02:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -188,7 +188,7 @@ for my $noextern (@extern_order) {
 	 Noextern => $noextern,
 	);
 
-    pass("*** This is a test with " . ($noextern ? "String::Approx" : "agrep") . " (if available) ***");
+    pass("*** This is a test with " . ($noextern ? "String::Approx $String::Approx::VERSION" : "agrep") . " (if available) ***");
 
     if ($goto_xxx) { goto XXX }
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.54 2007/03/27 20:47:53 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.55 2007/04/09 20:36:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -452,9 +452,11 @@ clean_pod2html:
 EOF
 . "bbbikedoc:	README README.english $all_html doc/HOWTO_edit_bbbike_data.html\n" . <<'EOF'
 
+RCS2LOG?=/usr/local/libexec/emacs/21.3/i386--freebsd/rcs2log
+
 # XXX this will fail if there is no symlink to the original libexec position
 ChangeLog:
-	rcs2log `find . -name "*,v" -a ! -path "./projects/*" -a ! -path "./misc/gps_data/*" -a ! -path "./Attic/*"` > ChangeLog
+	${RCS2LOG} `find . -name "*,v" -a ! -path "./projects/*" -a ! -path "./misc/gps_data/*" -a ! -path "./Attic/*"` > ChangeLog
 
 clean_cache:
 	echo rm -rf cache/*
