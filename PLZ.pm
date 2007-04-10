@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.68 2006/08/29 21:45:21 eserte Exp $
+# $Id: PLZ.pm,v 1.69 2007/04/10 20:01:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ use locale;
 use BBBikeUtil;
 use Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.68 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.69 $ =~ /(\d+)\.(\d+)/);
 
 use constant FMT_NORMAL  => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED => 1; # ./data/Berlin.small.data (does not exist anymore)
@@ -450,86 +450,23 @@ sub look_loop {
     } else {
 	$max_agrep = delete $args{Agrep} || 0;
     }
-    my $strip_strasse = sub {
-	my $str = shift;
-	if ($str =~ /stra(?:ss|ﬂ)e/i) {
-	    $str =~ s/(s)tra(?:ss|ﬂ)e/$1tr./i;
-	    $str;
-	} else {
-	    undef;
-	}
-    };
-    my $strip_hnr = sub {
-	my $str = shift;
-	# This strips input like "Straﬂe 1a" or "Straﬂe 1-2". Maybe
-	# also strip "Straﬂe 1 a"? XXX
-	if ($str =~ m{\s+(?:\d+[a-z]?|\d+\s*[-/]\s*\d+)\s*$}) {
-	    $str =~ s{\s+(?:\d+[a-z]?|\d+\s*[-/]\s*\d+)\s*$}{};
-	    $str;
-	} else {
-	    undef;
-	}
-    };
-    my $expand_strasse = sub {
-	my $str = shift;
-	my $replaced = 0;
-	if      ($str =~ /^([US])\s+/i) {
-	    $str =~ s/^([US])\s+/uc($1)."-Bhf "/ie;
-	    $replaced++;
-	} elsif ($str =~ /^(U\+S|S\+U)\s+/i) {
-	    $str =~ s/^(U\+S|S\+U)\s+/S-Bhf /i; # Choose one
-	    $replaced++;
-	} elsif ($str =~ /^([US])-Bahnhof\s+/i) {
-	    $str =~ s/^([US])-Bahnhof\s+/uc($1)."-Bhf "/ie;
-	    $replaced++;
-	} elsif ($str =~ /^(U\+S|S\+U)-Bahnhof\s+/i) {
-	    $str =~ s/^(U\+S|S\+U)-Bahnhof\s+/S-Bhf /i; # Choose one
-	    $replaced++;
-	} elsif ($str =~ /^(U\+S|S\+U)-Bhf\.?\s+/i) {
-	    $str =~ s/^(U\+S|S\+U)-Bhf\.?\s+/S-Bhf /i; # Choose one
-	    $replaced++;
-	}
-	if ($str =~ /^(k)l\.?\s+.*str/i) {
-	    $str =~ s/^(k)l\.?\s+/$1leine /i;
-	    $replaced++;
-	} elsif ($str =~ /^(g)r\.?\s+.*str/i) {
-	    $str =~ s/^(g)r\.?\s+/$1roﬂe /i;
-	    $replaced++;
-	}
-	if ($str =~ /^\s*str\.(\S)?/i) {
-	    if (defined $1) { # add space
-		$str =~ s/^\s*(s)tr\./$1traﬂe /i;
-	    } else {
-		$str =~ s/^\s*(s)tr\./$1traﬂe/i;
-	    }
-	    $replaced++;
-	    $str;
-	} elsif ($str =~ /^\s*strasse/i) {
-	    $str =~ s/^\s*(s)trasse/$1traﬂe/i;
-	    $replaced++;
-	    $str;
-	} elsif ($replaced) {
-	    $str;
-	} else {
-	    undef;
-	}
-    };
+
     my $agrep = 0;
     my @matchref;
     # 1. Try unaltered
     @matchref = $self->look($str, %args);
     if (!@matchref) {
 	# 2. Try to strip house number
-	if (my $str0 = $strip_hnr->($str)) {
+	if (my $str0 = _strip_hnr($str)) {
 	    @matchref = $self->look($str0, %args);
 	}
 	# 3. Try to strip "straﬂe" => "str."
 	# 3b. Strip house number
 	if (!@matchref) {
-	    if (my $str0 = $strip_strasse->($str)) {
+	    if (my $str0 = _strip_strasse($str)) {
 		@matchref = $self->look($str0, %args);
 		if (!@matchref) {
-		    if ($str0 = $strip_hnr->($str0)) {
+		    if ($str0 = _strip_hnr($str0)) {
 			@matchref = $self->look($str0, %args);
 		    }
 		}
@@ -538,10 +475,10 @@ sub look_loop {
 	# 4. Try to expand "Str." on beginning of the string
 	# 4b. Strip house number
 	if (!@matchref) {
-	    if (my $str0 = $expand_strasse->($str)) {
+	    if (my $str0 = _expand_strasse($str)) {
 		@matchref = $self->look($str0, %args);
 		if (!@matchref) {
-		    if ($str0 = $strip_hnr->($str0)) {
+		    if ($str0 = _strip_hnr($str0)) {
 			@matchref = $self->look($str0, %args);
 		    }
 		}
@@ -560,19 +497,19 @@ sub look_loop {
 	    $agrep = 1;
 	    while ($agrep <= $max_agrep) {
 		@matchref = $self->look($str, %args, Agrep => $agrep);
-		if (!@matchref && (my $str0 = $strip_strasse->($str))) {
+		if (!@matchref && (my $str0 = _strip_strasse($str))) {
 		    @matchref = $self->look($str0, %args, Agrep => $agrep);
 		}
-		if (!@matchref && (my $str0 = $strip_hnr->($str))) {
+		if (!@matchref && (my $str0 = _strip_hnr($str))) {
 		    @matchref = $self->look($str0, %args, Agrep => $agrep);
 		}
 		{
 		    my $str0;
 		    if (!@matchref
-			&& ($str0 = $strip_strasse->($str))) {
+			&& ($str0 = _strip_strasse($str))) {
 			@matchref = $self->look($str0, %args, Agrep => $agrep);
 			if (!@matchref
-			    && ($str0 = $strip_hnr->($str0))) {
+			    && ($str0 = _strip_hnr($str0))) {
 			    @matchref = $self->look($str0, %args, Agrep => $agrep);
 			}
 		    }
@@ -580,10 +517,10 @@ sub look_loop {
 		{
 		    my $str0;
 		    if (!@matchref
-			&& ($str0 = $expand_strasse->($str))) {
+			&& ($str0 = _expand_strasse($str))) {
 			@matchref = $self->look($str0, %args, Agrep => $agrep);
 			if (!@matchref
-			    && ($str0 = $strip_hnr->($str0))) {
+			    && ($str0 = _strip_hnr($str0))) {
 			    @matchref = $self->look($str0, %args, Agrep => $agrep);
 			}
 		    }
@@ -597,6 +534,73 @@ sub look_loop {
 	@matchref;
     } else {
 	(\@matchref, $agrep);
+    }
+}
+
+sub _strip_strasse {
+    my $str = shift;
+    if ($str =~ /stra(?:ss|ﬂ)e/i) {
+	$str =~ s/(s)tra(?:ss|ﬂ)e/$1tr./i;
+	$str;
+    } else {
+	undef;
+    }
+}
+
+sub _strip_hnr {
+    my $str = shift;
+    # This strips input like "Straﬂe 1a" or "Straﬂe 1-2". Maybe
+    # also strip "Straﬂe 1 a"? XXX
+    if ($str =~ m{\s+(?:\d+[a-z]?|\d+\s*[-/]\s*\d+)\s*$}) {
+	$str =~ s{\s+(?:\d+[a-z]?|\d+\s*[-/]\s*\d+)\s*$}{};
+	$str;
+    } else {
+	undef;
+    }
+}
+
+sub _expand_strasse {
+    my $str = shift;
+    my $replaced = 0;
+    if ($str =~ /^([US])\s+/i) {
+	$str =~ s/^([US])\s+/uc($1)."-Bhf "/ie;
+	$replaced++;
+    } elsif ($str =~ /^(U\+S|S\+U)\s+/i) {
+	$str =~ s/^(U\+S|S\+U)\s+/S-Bhf /i; # Choose one
+	$replaced++;
+    } elsif ($str =~ /^([US])-Bahnhof\s+/i) {
+	$str =~ s/^([US])-Bahnhof\s+/uc($1)."-Bhf "/ie;
+	$replaced++;
+    } elsif ($str =~ /^(U\+S|S\+U)-Bahnhof\s+/i) {
+	$str =~ s/^(U\+S|S\+U)-Bahnhof\s+/S-Bhf /i; # Choose one
+	$replaced++;
+    } elsif ($str =~ /^(U\+S|S\+U)-Bhf\.?\s+/i) {
+	$str =~ s/^(U\+S|S\+U)-Bhf\.?\s+/S-Bhf /i; # Choose one
+	$replaced++;
+    }
+    if ($str =~ /^(k)l\.?\s+.*str/i) {
+	$str =~ s/^(k)l\.?\s+/$1leine /i;
+	$replaced++;
+    } elsif ($str =~ /^(g)r\.?\s+.*str/i) {
+	$str =~ s/^(g)r\.?\s+/$1roﬂe /i;
+	$replaced++;
+    }
+    if ($str =~ /^\s*str\.(\S)?/i) {
+	if (defined $1) {	# add space
+	    $str =~ s/^\s*(s)tr\./$1traﬂe /i;
+	} else {
+	    $str =~ s/^\s*(s)tr\./$1traﬂe/i;
+	}
+	$replaced++;
+	$str;
+    } elsif ($str =~ /^\s*strasse/i) {
+	$str =~ s/^\s*(s)trasse/$1traﬂe/i;
+	$replaced++;
+	$str;
+    } elsif ($replaced) {
+	$str;
+    } else {
+	undef;
     }
 }
 

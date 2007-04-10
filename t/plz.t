@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.30 2007/04/09 22:02:54 eserte Exp $
+# $Id: plz.t,v 1.31 2007/04/10 22:29:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -70,13 +70,16 @@ my $goto_xxx;
 my $max = 1;
 my $extern_first;
 
+my $do_levenshtein;
+
 if (!GetOptions("create!" => \$create,
 		"xxx!" => \$goto_xxx,
 		"v" => \$PLZ::VERBOSE,
 		"max=i" => \$max,
 		"externfirst!" => \$extern_first,
+		"levenshtein!" => \$do_levenshtein,
 	       )) {
-    die "Usage: $0 [-create] [-xxx] [-v] [-[no]extern]";
+    die "Usage: $0 [-create] [-xxx] [-v] [-[no]extern] [-levenshtein]";
 }
 
 # XXX auch Test mit ! -small
@@ -178,6 +181,12 @@ EOF
 }
 
 my @extern_order = $extern_first ? (0, 1) : (1, 0);
+
+if ($do_levenshtein) {
+    require PLZ::Levenshtein;
+    $plz = PLZ::Levenshtein->new;
+}
+
 for my $noextern (@extern_order) {
     my @standard_look_loop_args =
 	(
@@ -188,7 +197,11 @@ for my $noextern (@extern_order) {
 	 Noextern => $noextern,
 	);
 
-    pass("*** This is a test with " . ($noextern ? "String::Approx $String::Approx::VERSION" : "agrep") . " (if available) ***");
+    if ($do_levenshtein) {
+	pass("*** This is a test with Text::Levenshtein $Text::Levenshtein::VERSION");
+    } else {
+	pass("*** This is a test with " . ($noextern ? "String::Approx $String::Approx::VERSION" : "agrep") . " (if available) ***");
+    }
 
     if ($goto_xxx) { goto XXX }
 

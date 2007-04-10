@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.193 2007/04/09 22:09:19 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.194 2007/04/10 20:36:50 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -689,7 +689,7 @@ Dornacher Str.: holpriger Fahrweg	Q2 20949,10145 20947,9999 20948,9847
 Buchenhainer Str.: holpriger Fahrweg	Q2 21164,8243 21329,8222
 Nitzwalder Str.: holpriger Fahrweg	Q2 21329,8222 21529,8019 21598,7922
 Kaulsdorfer Str.: mäßiger Asphalt	Q1 22049,7085 22076,6956 22186,6672 22279,6470 22324,6397
-Marksburgstr.: mäßiger Asphalt	Q1 19054,9143 18961,9109 18809,9133 18697,9153 18586,9172 18511,9185 18319,9218
+Marksburgstr.: mäßiger Asphalt	Q1 19054,9143 18961,9109 18900,9119 18809,9133 18697,9153 18586,9172 18511,9185 18319,9218
 Walkürenstr.: Kopfsteinpflaster	Q2 18069,9289 18006,9335 17735,9533
 Tannhäuserstr.: Kopfsteinpflaster	Q2 18095,9665 17898,9593 17735,9533 17549,9529
 (am Schloß Schönhausen): Kopfsteinpflaster	Q1 10308,19297 10350,19182 10390,19069
@@ -4540,6 +4540,11 @@ Regensburger Str. (Lichtenrade): Verbundsteinpflaster	Q1 11232,-2377 11433,-2320
 Freischützstr.: schlechtes Kopfsteinpflaster	Q3 13249,22003 13315,21969 13601,21826
 #: by: Benjamin Hermann:
 Pfingstrosenweg: guter Asphalt	Q0 22079,10852 22053,10911 22028,10968 22006,11019 21975,11089 21951,11144 21920,11214 21872,11196
+#: by: Alexander Unertl:
+#: XXX: vom Autor kam auch handicap=q4, aber ohne Begründung
+Malersteig: Asphalt	Q0 13606,3085 13596,3039 13563,2909 13510,2690 13487,2621 13452,2548 13420,2509
+#: by: Anna Behrend:
+Weseler Str.: guter Beton	Q0 18868,8731 18857,8790 18854,8831 18860,8886 18877,8973 18881,9002 18889,9031 18900,9119
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165

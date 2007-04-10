@@ -7596,8 +7596,8 @@ userdel	2::inwork 29760,99768 27416,98865 26759,98614 26304,98234 26128,97916 25
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Glinkastr. (Mitte) in Richtung Leipziger Str., zwischen Jägerstr. und Taubenstr. Baustelle, Fahrtrichtung gesperrt (bis auf weiteres)',
+       until => 1191189600, # 2007-10-01 00:00
+       text  => 'Glinkastr. (Mitte) in Richtung Leipziger Str., zwischen Jägerstr. und Taubenstr. Baustelle, Fahrtrichtung gesperrt (bis Herbst 2007) (16:40) ',
        type  => 'gesperrt',
        source_id => 'IM_003833',
        data  => <<EOF,
@@ -7715,6 +7715,33 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 11862,-99775 11943,-99051
+EOF
+     },
+     { from  => undef, # 
+       until => 1177970399, # 2007-04-30 23:59
+       text  => 'Wiltbergstr. (Pankow) in beiden Richtungen, zwischen Röntgentaler Weg - Röbellweg Baustelle, Verkehr wird wechselseitig vorbeigeführt (bis Ende 04.07)',
+       type  => 'handicap',
+       source_id => 'IM_005169',
+       data  => <<EOF,
+userdel	q4::inwork 16048,25927 16114,25827 16166,25767
+EOF
+     },
+     { from  => 1176243783, # 2007-04-11 00:23
+       until => 1199141999, # 2007-12-31 23:59
+       text  => 'Schlichtallee (Lichtenberg) in beiden Richtungen, zwischen Lückstr. und Hauptstr. Baustelle, Verkehr wird wechselseitig vorbeigeführt (bis Ende 2007)',
+       type  => 'handicap',
+       source_id => 'IM_004349',
+       data  => <<EOF,
+userdel	q4::inwork 15751,10582 15629,10481
+EOF
+     },
+     { from  => 1176243818, # 2007-04-11 00:23
+       until => 1176501600, # 2007-04-14 00:00
+       text  => 'Finkenkruger Weg (Spandau) in beiden Richtungen, zwischen Seegefelder Weg und Torweg Baustelle, Verkehr wird wechselseitig vorbeigeführt (bis 13.04.07)',
+       type  => 'handicap',
+       source_id => 'IM_005170',
+       data  => <<EOF,
+userdel	q4::inwork -7413,14561 -7390,14881 -7387,14951 -7365,15306
 EOF
      },
     );

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: basic.t,v 1.16 2007/01/10 21:06:43 eserte Exp $
+# $Id: basic.t,v 1.17 2007/04/10 20:36:19 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -117,6 +117,9 @@ for my $f (@files) {
 	myskip "$f does not work on Win32", $tests_per_file
 	    if $f =~ m{^( lib/Tk/ContextHelp.pm
 		      )$}x && $^O eq 'MSWin32';
+	myskip "$f needs Text::LevenshteinXS", $tests_per_file
+	    if $f =~ m{^( PLZ/Levenshtein.pm
+		      )$}x && !eval { require Text::LevenshteinXS; 1 };
 
 	my @add_opt;
 	if ($f =~ m{Tk/.*\.pm}) {
