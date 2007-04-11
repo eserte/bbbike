@@ -768,6 +768,14 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	q4::inwork -7413,14561 -7390,14881 -7387,14951 -7365,15306
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1185919200,
+         'text' => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Neue Beelitzer Str. Straßenausbau Vollsperrung 01.03.2007-31.07.2007 ',
+         'from' => 1172617200,
+         'data' => 'userdel	q4::inwork -4299,-35198 -4725,-34957
+',
+         'type' => 'handicap'
        }
      
 );

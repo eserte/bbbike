@@ -1,5 +1,5 @@
 #: title: Qualit‰t von Straﬂen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.194 2007/04/10 20:36:50 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.194 2007/04/10 20:36:50 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Br¸cken, Straﬂen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -1748,6 +1748,8 @@ Eulerstr.: Asphalt	Q0 9268,16228 9336,16302 9498,16480
 Boizenburger Str.: guter Asphalt	Q0 22310,12829 22310,12637 22309,12350 22385,12268
 ######################################################################
 #: by: anonymous vvv
+Fˆttingerzeile: guter Asphalt	Q0 10228,1194 10041,1328 9908,1416
+Rue Ambroise Pare: guter Asphalt	Q0 3643,16437 3606,16453 3481,16480 3382,16553
 #: note: auch q2 angegeben, aber ohne Grund:
 Hocksteinweg: guter Asphalt	Q0 726,379 712,517 696,655
 Waldstr. (Johannisthal): Asphalt	Q0 17542,4772 17881,4521
@@ -1808,7 +1810,7 @@ Ulrikenstr.: Beton	Q0 -5278,13606 -5254,13542 -5217,13446 -5161,13308 -5137,1324
 Kirchstr. (Marienfelde): guter Asphalt	Q0 8263,1061 8305,1148 8383,1311 8482,1502 8578,1692 8626,1812
 Friedrich-Karl-Str.: Asphalt	Q0 5144,17629 5307,17582
 Brunswickenweg: guter Asphalt	Q0 17009,26756 16895,26866 16767,26991
-Gustav-Zahnke-Str.: Asphalt	Q0 14424,13587 14408,13513 14331,13537
+Gustav-Zahnke-Str.: Asphalt	Q0 14428,13596 14408,13513 14331,13537
 Wiesenstr. (Rahnsdorf): Asphalt	Q0 29593,4057 29632,3968 29917,3697
 Ruthnerweg: Asphalt	Q0 3640,1959 3577,2000 3430,1998 3290,2007 3240,2007
 L¸deritzstr.: Asphalt	Q0 6003,16521 6215,16340
@@ -3375,7 +3377,7 @@ Ludwig-Renn-Str.: Asphalt	Q0 20479,16155 20504,16204 20567,16320 20750,16226 208
 #: by: Mannitou:
 Weverstr.: m‰ﬂiger Asphalt	Q1 -4154,12379 -4065,12382 -3978,12385 -3867,12388 -3760,12392 -3617,12396 -3441,12402 -3257,12407
 #: by: Jenny Pospieszny: vvv
-Buggenhagenstr.: m‰ﬂiger Beton	Q2 14425,13780 14378,13599
+Buggenhagenstr.: m‰ﬂiger Beton	Q2 14425,13780 14370,13615
 Karlstadter Str.: m‰ﬂiger Asphalt	Q1 11500,18335 11579,18184 11656,18013
 #: by: ^^^
 #: by: christoph (stauden):
@@ -3595,7 +3597,7 @@ Paul-Wegener-Str.: Beton	Q0 24149,9387 24444,9256 24611,9181 24737,9110 24860,90
 Bohnsdorfer Str.: Waldweg, nur nach starkem Regen schlammig	Q1 21999,2171 21996,1683 22162,1183 22217,1108
 #: by: Stefan Driesner: vvv
 Georg-Lehnig-Str.: m‰ﬂiger Asphalt	Q1 14532,13563 14509,13481 14428,13507
-Erich-Kuttner-Str.: m‰ﬂiger Asphalt	Q1 14584,13547 14532,13563 14424,13587 14378,13599 14317,13615 14104,13673 14088,13627 14053,13620
+Erich-Kuttner-Str.: m‰ﬂiger Asphalt	Q1 14584,13547 14532,13563 14428,13596 14370,13615 14323,13627 14217,13657 14117,13685 14088,13627 14053,13620
 #: by: ^^^
 #: by: Regine Bast:
 Eiswaldtstr.: Beton	Q0 6733,2433 6834,2449 6937,2417 7052,2353 7172,2343 7282,2386
@@ -4496,8 +4498,8 @@ Niebergallstr.: m‰ﬂiges Kopfsteinpflaster	Q2 23097,1641 23144,1439 23158,1379 23
 #: by: Liesbet (m-...):
 Kissinger Str. (Steglitz): asphaltiert	Q0 6214,6132 6198,6270 6214,6132 6222,5996
 #: by: Thomas (bergen):
-#: add_fragezeichen: teilweise Kopfsteinpflaster (OK, Q0), wo genau?
-Engelmannweg: guter Asphalt	Q0 4558,18342 4531,18217 4492,18013 4429,17763
+Engelmannweg: guter Asphalt	Q0 4558,18342 4531,18217
+Engelmannweg: gut befahrbares Kopfsteinpflaster	Q1 4531,18217 4492,18013 4429,17763
 #: by: Erik Boﬂ:
 Ahornallee (Friedrichshagen): schlechtes Kopfsteinpflaster	Q3 25121,5799 25123,5767 25111,5464 25121,5286
 #: by: Hollie (freak...): vvv
@@ -4545,6 +4547,14 @@ Pfingstrosenweg: guter Asphalt	Q0 22079,10852 22053,10911 22028,10968 22006,1101
 Malersteig: Asphalt	Q0 13606,3085 13596,3039 13563,2909 13510,2690 13487,2621 13452,2548 13420,2509
 #: by: Anna Behrend:
 Weseler Str.: guter Beton	Q0 18868,8731 18857,8790 18854,8831 18860,8886 18877,8973 18881,9002 18889,9031 18900,9119
+#: by: manfred aebi:
+Arthur-Weisbrodt-Str.: guter Asphalt	Q0 14168,13491 14217,13657
+#: by: peter walschburger:
+Erdmann-Graeser-Weg: Verbundsteinpflaster	Q1 -831,3616 -935,3706 -961,3737 -1013,3804
+#: by: Sebastian (Jiang-zemin):
+Friedrich-Wolf-Str.: m‰ﬂiger Beton	Q1- 22236,2029 22224,2061 22210,2140 22131,2333 22205,2367
+#: by: michael weber:
+Jansenstr.: guter Asphalt	Q0 5278,19853 5338,19843 5396,19833 5422,19829 5439,19826 5533,19811
 ######################################################################
 #: by: Andreas M¸hlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165

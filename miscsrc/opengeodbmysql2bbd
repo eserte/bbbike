@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: opengeodbmysql2bbd,v 1.1 2007/04/03 22:58:21 eserte Exp eserte $
+# $Id: opengeodbmysql2bbd,v 1.2 2007/04/10 22:28:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -137,5 +137,5 @@ Einwohnerzahlen und Kategorien vergleichen:
     ./opengeodbmysql2bbd -debug -orte > /tmp/o.bbd
     rm /tmp/ort.db
     perl -MDBM::Deep -nle 'BEGIN { tie %db, "DBM::Deep", "/tmp/ort.db" or die } next if /^#/; /^([^|]+).*\t(\d)/; next if not defined $1; push @{$x{$1}}, $2; END { %db = %x }' ../data/orte ../data/orte2
-    grep EW: /tmp/o.bbd | perl -MDBM::Deep -nle 'BEGIN { tie %db, "DBM::Deep", "/tmp/ort.db" or die } s/(.*)\(EW: (\d+)\)/$2 $1/; ($ort)=$_=~m{^\d+\s+(\S+)}; if (exists $db{$ort}) { print "$_ $db{$ort}" }' | sort -n
+    grep EW: /tmp/o.bbd | perl -MDBM::Deep -nle 'BEGIN { tie %db, "DBM::Deep", "/tmp/ort.db" or die } s/(.*)\(EW: (\d+)\)/$2 $1/; ($ort)=$_=~m{^\d+\s+(\S+)}; if (exists $db{$ort}) { print "$_ @{$db{$ort}}" }' | sort -n
 

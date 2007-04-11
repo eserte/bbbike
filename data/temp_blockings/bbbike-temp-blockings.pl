@@ -6728,7 +6728,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004175',
        data  => <<EOF,
-userdel	1::inwork 5556,19796 5495,19446
+userdel	1::inwork 5533,19811 5495,19446
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -7742,6 +7742,14 @@ EOF
        source_id => 'IM_005170',
        data  => <<EOF,
 userdel	q4::inwork -7413,14561 -7390,14881 -7387,14951 -7365,15306
+EOF
+     },
+     { from  => 1172617200, # 2007-02-28 00:00
+       until => 1185919200, # 2007-08-01 00:00
+       text  => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Neue Beelitzer Str. Straßenausbau Vollsperrung 01.03.2007-31.07.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -4299,-35198 -4725,-34957
 EOF
      },
     );
