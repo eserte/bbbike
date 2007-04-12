@@ -803,7 +803,7 @@ EOF
        text  => 'Alt-Rudow in beiden Richtungen, zwischen Krokusstr. und Neudecker Weg Veranstaltung, Straße vollständig gesperrt (bis 05.09. 24 Uhr), Rudower Meilenfest ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 16596,1730 16849,1437
+userdel	2 16610,1715 16849,1437
 userdel	2 16960,1282 16849,1437
 EOF
      },

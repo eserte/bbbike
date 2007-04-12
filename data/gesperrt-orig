@@ -405,6 +405,12 @@ Jugendweg	1 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
 Boschpoler Platz	1 20540,13773 20665,13759
 Kienbergstr.	1 21287,14963 21225,14907 21217,14721 21122,14713
 Engelmannweg	1 4531,18217 4492,18013 4429,17763
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung zwischen Stubenrauchstr. und Buchsbaumweg auch für Radfahrer oder nur für Autofahrer?
+Krokusstr.	1 16738,2717 16739,2736 16677,2856
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
+Waldowstr.	1 5546,18219 5548,18309 5551,18434 5553,18542 5557,18580 5560,18774
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung zwischen Ollenhauerstr. und Waldowstr. auch für Radfahrer oder nur für Autofahrer?
+Kienhorststr.	1 5553,18542 5324,18560
 #
 # Potsdam
 #
@@ -511,6 +517,7 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,125
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
+Stubenrauchstr.: Bahntrasse	3nocross 16635,2796 16677,2856 16779,2993
 Sterndamm: Straßenbahntrasse	3nocross 17601,5090 17542,4772 17518,4644
 Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3nocross 21960,11269 22242,11269 22326,11266
 Konrad-Wolf-Str./Große-Leege-Str.: wegen Absperrgitter nicht überquerbar	3nocross 16961,16042 16917,16001 16819,15912
