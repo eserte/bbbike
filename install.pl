@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: install.pl,v 4.11 2005/04/05 22:35:16 eserte Exp $
+# $Id: install.pl,v 4.12 2007/04/12 22:13:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2001 Slaven Rezic. All rights reserved.
@@ -577,7 +577,6 @@ sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
 	    M"Keine Verzeichnisse für die KDE-Installation gefunden.\n";
 	goto KDEEND;
     }
-
 # XXX @main_program_arguments
     my $main_bin = (exists $kdedirs{-bin}
 		    ? "$kdedirs{-bin}/$main_program"
@@ -597,7 +596,8 @@ sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
 	Print_shift;
 #	my $applications_dir  = "$kdedirs{-applnk}/Applications";
 #XXX do not hardcode Extras/Other
-	my $applications_dir  = "$kdedirs{-applnk}/Extras/Other";
+#	my $applications_dir  = "$kdedirs{-applnk}/Extras/Other";
+	my $applications_dir  = "$kdedirs{-applnk}/Edutainment/Miscellaneous";
 	if (!-d $applications_dir) {
 	    if ($show) {
 		Print "mkdir $applications_dir, 0755\n";
@@ -814,14 +814,16 @@ sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
     }
 
     if ($show) {
-	Print "Restarting kpanel\n";
-	Print "Refreshing desktop\n";
+	#Print "Restarting kpanel\n";
+	#Print "Refreshing desktop\n";
+	Print "Refreshing system\n";
     } else {
 	#system("kwmcom", "kpanel:restart");
 	# XXX this will start the kde filemanager, even if we
 	# aren't running kde...
 	#$kde->panel->restart;
 	#$kde->fm->refreshDesktop;
+	system("kbuildsycoca") if is_in_path("kbuildsycoca");
     }
 
   KDEEND:

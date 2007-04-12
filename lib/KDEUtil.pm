@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: KDEUtil.pm,v 2.15 2006/02/08 22:27:56 eserte Exp $
+# $Id: KDEUtil.pm,v 2.16 2007/04/12 22:06:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2004 Slaven Rezic. All rights reserved.
@@ -230,7 +230,7 @@ sub kde_dirs {
 	require File::Basename;
 	my $sep = $Config::Config{'path_sep'} || ':';
 
-	my %kdedirs = $self->_find_kde_dirs_with_kde_config(-writable => $writable, -all => 1);
+	my %kdedirs = $self->_find_kde_dirs_with_kde_config(-writable => $writable, -all => $all);
 	return %kdedirs if %kdedirs;
 
 	my @path = map { File::Basename::dirname($_) } split(/$sep/o, $ENV{PATH});

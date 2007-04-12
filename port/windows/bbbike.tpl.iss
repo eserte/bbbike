@@ -13,6 +13,7 @@ AppName=BBBike
 AppVerName=BBBike version [% VERSION %]
 AppVersion=[% VERSION %]
 AppPublisherURL=http://bbbike.sourceforge.net
+ChangesAssociations=yes
 DefaultDirName={pf}\BBBike
 DefaultGroupName=BBBike
 UninstallDisplayIcon={app}\bbbike\images\srtbike.ico
@@ -42,3 +43,10 @@ Name: "{group}\BBBike-Dokumentation"; Filename: "{app}\bbbike\bbbike.html"
 [Languages]
 Name: "de"; MessagesFile: "compiler:Languages\German.isl"
 Name: "en"; MessagesFile: "compiler:Default.isl" 
+
+[Registry]
+; .bbr
+Root: HKCR; Subkey: ".bbr"; ValueType: string; ValueName: ""; ValueData: "BBBike.Route"; Flags: uninsdeletevalue
+Root: HKCR; Subkey: "BBBike.Route"; ValueType: string; ValueName: ""; ValueData: "BBBike-Route"; Flags: uninsdeletekey
+Root: HKCR; Subkey: "BBBike.Route\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\bbbike\images\srtbike.ico"
+Root: HKCR; Subkey: "BBBike.Route\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\bbbike\bbbike"" ""%1"""
