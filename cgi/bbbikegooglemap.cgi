@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.41 2007/03/18 18:45:20 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.43 2007/04/13 19:03:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -43,12 +43,12 @@ sub run {
     my @polylines_polar;
     my @wpt;
 
-    my $coordsystem = param("coordsystem") || "standard";
+    my $coordsystem = param("coordsystem") || "bbbike";
     my $converter;
     if ($coordsystem eq 'polar') {
 	$converter = \&polar_converter;
-    } else {
-	$converter = \&standard_converter;
+    } else { # bbbike or standard
+	$converter = \&bbbike_converter;
     }
 
     if (param("wpt_or_trk")) {
@@ -144,7 +144,7 @@ sub run {
     print $self->get_html(\@polylines_polar, \@wpt, $zoom);
 }
 
-sub standard_converter {
+sub bbbike_converter {
     my($x,$y) = @_;
     local $^W; # avoid non-numeric warnings...
     $Karte::Polar::obj->standard2map($x,$y);
@@ -520,7 +520,7 @@ EOF
   <input type="hidden" name="autosel" value="@{[ $self->{autosel} ]}" />
   <input type="hidden" name="maptype" value="@{[ $self->{maptype} ]}" />
   Koordinatensystem:<br />
-  <label><input type="radio" name="coordsystem" value="standard" @{[ $coordsystem eq 'standard' ? 'checked' : '' ]} /> BBBike</label><br />
+  <label><input type="radio" name="coordsystem" value="bbbike" @{[ $coordsystem eq 'bbbike' ? 'checked' : '' ]} /> BBBike</label><br />
   <label><input type="radio" name="coordsystem" value="polar" @{[ $coordsystem eq 'polar' ? 'checked' : '' ]} /> WGS84-Koordinaten (DDD)</label><br />
   <br />
   <label>Koordinate(n) (x,y bzw. lon,lat): <input name="wpt_or_trk" size="15" /></label><br />

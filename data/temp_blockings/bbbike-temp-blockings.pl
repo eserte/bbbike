@@ -7201,8 +7201,8 @@ EOF
 userdel	2::inwork 30491,-65399 30577,-65764
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1176488048, # undef
+       until => 1176488053, # XXX undef
        text  => 'Kietzer Str. (Köpenick) in beiden Richtungen, zwischen Grünstr. und Rosenstr. geplatzte Wasserleitung',
        type  => 'gesperrt',
        source_id => 'IM_004874',
@@ -7736,7 +7736,7 @@ userdel	q4::inwork 15751,10582 15629,10481
 EOF
      },
      { from  => 1176243818, # 2007-04-11 00:23
-       until => 1176501600, # 2007-04-14 00:00
+       until => 1176488154, # 2007-04-14 00:00 1176501600
        text  => 'Finkenkruger Weg (Spandau) in beiden Richtungen, zwischen Seegefelder Weg und Torweg Baustelle, Verkehr wird wechselseitig vorbeigeführt (bis 13.04.07)',
        type  => 'handicap',
        source_id => 'IM_005170',
@@ -7750,6 +7750,31 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -4299,-35198 -4725,-34957
+EOF
+     },
+     { from  => 1176488131, # 2007-04-13 20:15
+       until => 1177106400, # 2007-04-21 00:00
+       text  => 'Säntisstr. (Tempelhof) in beiden Richtungen, zwischen Zehrensdorfer Str. und Alt-Marienfelde Baustelle, Straße vollständig gesperrt (bis 20.04.07)',
+       type  => 'gesperrt',
+       source_id => 'IM_005211',
+       data  => <<EOF,
+userdel	2::inwork 9695,1563 9241,1073 9024,906
+EOF
+     },
+     { from  => 1176674400, # 2007-04-16 00:00
+       until => 1177106400, # 2007-04-21 00:00
+       text  => 'B 109 zw. Stadtgrenze Berliin und Schönerlinde, Dorfstr. Deckeneinbau Vollsperrung 17.04.2007-20.04.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 13376,27572 13348,27204
+EOF
+     },
+     { from  => 1178402400, # 2007-05-06 00:00
+       until => 1178834400, # 2007-05-11 00:00
+       text  => 'L 038 zw. Briesen und Petersdorf Einbau Deckschicht Vollsperrung 07.05.2007-10.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 74238,-3970 73292,-4598
 EOF
      },
     );

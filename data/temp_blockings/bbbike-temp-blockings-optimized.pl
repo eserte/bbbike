@@ -406,15 +406,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_004874',
-         'until' => undef,
-         'text' => 'Kietzer Str. (Köpenick) in beiden Richtungen, zwischen Grünstr. und Rosenstr. geplatzte Wasserleitung',
-         'from' => undef,
-         'data' => 'userdel	2::inwork 22312,4593 22263,4671
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1178575200,
          'text' => 'L 040 Zossener Damm OD Blankenfelde, zw. Kreisverkehr u. K.-Liebknecht-Str. Straßenausbau Vollsperrung 07.03.2007-07.05.2007 ',
@@ -644,14 +636,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1176415200,
-         'text' => 'K 6617 zw. B169 und Ressen Deckeneinbau auf B169 Vollsperrung 12.04.2007-12.04.2007 ',
-         'from' => 1176242400,
-         'data' => 'userdel	2::inwork 63128,-86845 62491,-87561 61763,-88249
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1176933600,
          'text' => 'L 049 Lübbenau-Lübben Bahnübergang nach OA Lübben Gleisbauarbeiten Vollsperrung 18.04.2007-18.04.2007 ',
@@ -760,15 +745,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_005170',
-         'until' => 1176501600,
-         'text' => 'Finkenkruger Weg (Spandau) in beiden Richtungen, zwischen Seegefelder Weg und Torweg Baustelle, Verkehr wird wechselseitig vorbeigeführt (bis 13.04.07)',
-         'from' => 1176243818,
-         'data' => 'userdel	q4::inwork -7413,14561 -7390,14881 -7387,14951 -7365,15306
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1185919200,
          'text' => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Neue Beelitzer Str. Straßenausbau Vollsperrung 01.03.2007-31.07.2007 ',
@@ -776,6 +753,31 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	q4::inwork -4299,-35198 -4725,-34957
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_005211',
+         'until' => 1177106400,
+         'text' => 'Säntisstr. (Tempelhof) in beiden Richtungen, zwischen Zehrensdorfer Str. und Alt-Marienfelde Baustelle, Straße vollständig gesperrt (bis 20.04.07)',
+         'from' => 1176488131,
+         'data' => 'userdel	2::inwork 9695,1563 9241,1073 9024,906
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1177106400,
+         'text' => 'B 109 zw. Stadtgrenze Berliin und Schönerlinde, Dorfstr. Deckeneinbau Vollsperrung 17.04.2007-20.04.2007 ',
+         'from' => 1176674400,
+         'data' => 'userdel	2::inwork 13376,27572 13348,27204
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1178834400,
+         'text' => 'L 038 zw. Briesen und Petersdorf Einbau Deckschicht Vollsperrung 07.05.2007-10.05.2007 ',
+         'from' => 1178402400,
+         'data' => 'userdel	2::inwork 74238,-3970 73292,-4598
+',
+         'type' => 'gesperrt'
        }
      
 );

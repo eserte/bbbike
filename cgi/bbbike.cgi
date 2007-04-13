@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.50 2007/04/03 18:15:12 eserte Exp $
+# $Id: bbbike.cgi,v 8.51 2007/04/13 19:37:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -705,7 +705,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.50 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.51 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -4698,6 +4698,13 @@ sub draw_route {
 	return;
     }
 
+    # XXX Some day imagetype=googlemaps should be possible in
+    # BBBikeDraw::BBBikeGoogleMaps (waypoint support is missing...)
+    if (defined $q->param('imagetype') &&
+	$q->param('imagetype') eq 'googlemaps2') {
+	$q->param("module", "BBBikeGoogleMaps");
+    }
+
     if (defined $q->param('imagetype') &&
 	$q->param('imagetype') eq 'googlemaps') {
 	my @wpt;
@@ -6416,7 +6423,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/04/03 18:15:12 $';
+    my $cgi_date = '$Date: 2007/04/13 19:37:27 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

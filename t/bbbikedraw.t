@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.26 2007/03/31 17:05:58 eserte Exp $
+# $Id: bbbikedraw.t,v 1.27 2007/04/13 19:36:08 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -40,6 +40,7 @@ BEGIN {
 		  Imager/png Imager/jpeg
 		  MapServer MapServer;noroute MapServer/pdf
 		  ImageMagick/png ImageMagick/jpeg
+		  BBBikeGoogleMaps
 		 );
 
     if (eval { require BBBikeDraw::BerlinerStadtplan; 1 }) {
@@ -178,6 +179,8 @@ sub draw_map {
     } elsif ($module =~ /^PDF2?$/) {
 	$imagetype = "pdf";
     } elsif ($module eq 'BerlinerStadtplan') {
+	$imagetype = "http.html";
+    } elsif ($module eq 'BBBikeGoogleMaps') {
 	$imagetype = "http.html";
     }
 
