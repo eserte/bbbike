@@ -1,10 +1,10 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.140 2007/04/09 22:14:45 eserte Exp eserte $
+#: version: $Id: handicap_s-orig,v 4.141 2007/04/15 22:07:54 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Behrenstr./Bebelplatz: Einbahnstraﬂe	q3::inwork; 9626,12227 9700,12234 9743,12239 9801,12245
 Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
-Columbiadamm: Bauarbeiten, Behinderungen mˆglich	q1::inwork 10213,8665 10598,8563 10796,8498 10911,8457 11271,8325 11416,8283 11632,8302
+Columbiadamm: Bauarbeiten (neue Radwege), Behinderungen mˆglich	q0::inwork 10213,8665 10598,8563 10796,8498 10911,8457 11271,8325 11416,8283 11632,8302
 Dircksenstr.: Bauarbeiten (Bau einer neue Straﬂenbahnstrecke, bis 2007-05-31)	q4::inwork 10781,13002 10844,12935 10960,12809
 Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
 Pappelplatz (Mitte): gemeinsamer Fuﬂ- und Radweg	q2 9737,14126 9663,14036
@@ -286,7 +286,7 @@ Egidysteg: eng, Fuﬂg‰nger	q3 3124,22198 3142,22170
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger, eng	q2 5860,24067 5693,24037 5645,23968
 (Schildower Weg): Fuﬂg‰nger	q1 7874,24035 7675,23968 7615,23884 7185,23749
 (Mehrower Allee, Unterf¸hrung zum S-Bahnhof): Rampe, Fuﬂg‰nger	q4 20547,17084 20522,17020 20428,17058 20443,17093
-Altvaterstr.: Fuﬂg‰nger, Bordsteine	q2 -3112,3095 -3200,3030
+Altvaterstr.: Fuﬂg‰nger, Bordsteine	q2 -3117,3107 -3223,3034
 Im Gestell: Fuﬂg‰nger	q1 371,4453 261,4420
 Heinitzweg: Fuﬂg‰nger	q2 10329,1077 10363,1095
 Haewererweg: enge Durchfahrt, Bordstein	q1 12125,1282 12097,1243
@@ -320,7 +320,7 @@ S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20109,16264 20111,16316
 (S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Fuﬂg‰nger	q1 20286,16494 20543,16488 20865,16440 21102,16415
 (Kinderbad Platsch - Max-Herrmann-Str.): Fuﬂg‰nger	q1 21102,16415 21177,16499 21238,16627
 Wuhlewanderweg: Fuﬂg‰nger	q1 22771,16194 22717,16142 22670,16063 22623,15959 22554,15780 22539,15729 22515,15620 22518,15510 22518,15417 22516,15399 22507,15373 22400,15321 22393,15292 22396,15254 22413,15187 22449,15127
-Wuhlewanderweg: Fuﬂg‰nger	q1 22449,15127 22550,15087 22741,14761 22806,14631 22843,14497 22827,14356 22839,14149 22825,14109 22516,13799 22359,13599 22323,13533
+Wuhlewanderweg: Fuﬂg‰nger	q1 22449,15127 22550,15087 22741,14761 22806,14631 22843,14497 22827,14356 22839,14149 22825,14109 22607,13890 22516,13799 22359,13599 22323,13533
 Wuhlewanderweg: enge Unterf¸hrung	q3 22359,13599 22259,13508
 Wuhlewanderweg: Fuﬂg‰nger	q1 22323,13533 22259,13508 22191,13414 22221,13027 22199,12955 22036,12367 21998,12204 21970,12153
 Wuhlewanderweg: Fuﬂg‰nger	q1 22242,11269 22244,11311 22073,11581 22009,11636 21886,11843 21914,12019 21936,12022
@@ -337,6 +337,9 @@ Rheingoldpark: Fuﬂg‰nger haben Vorrang	q1 19078,8817 19145,8659
 Schloﬂinsel Kˆpenick: Fuﬂg‰nger	q4 22093,4499 22076,4422
 Braunschweiger Ufer: Fuﬂg‰nger	q1 12718,5845 13077,5893 13483,5973
 Kurt-Schumacher-Damm (Nord): eigentlich Einbahnstraﬂe, Gehweg benutzen	q4; 3643,16437 3676,16497
+Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen	q1 6505,7010 6662,7018
+Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen, kurze Rampe	q1 6662,7018 6781,7030
+Viktoriapark: Fuﬂg‰nger, kurze Rampe	q1 5013,6003 4981,5939 4957,5894
 Erdmann-Graeser-Weg: Bordsteinkante, Fuﬂg‰nger	q1 -831,3616 -935,3706 -961,3737 -1013,3804
 Aﬂmannstr.: Bodenschwellen	q1 25039,5295 25039,5304 25048,5727
 (Fuﬂweg parallel zur Aﬂmannstr.): wenig Fuﬂg‰nger	q1 25002,5296 25009,5593
@@ -375,7 +378,7 @@ Zangengasse: parkende Fahrzeuge	q1 5959,20524 5714,20784 5641,20857 5609,20968
 Lintruper Str.: teilweise wegen parkender Autos eng	q1 10307,922 10380,757 10423,636 10506,405 10550,282 10614,105 10665,-200 10729,-386
 Spandauer Str.: enge Straﬂe	q1 -6442,14186 -6261,14213
 (Parkplatz Kaufland - Am Steinberg): Fuﬂg‰nger	q2 12981,17557 13011,17470
-Achenbachstr.: nicht so breite Straﬂe	q1 -3354,14971 -3322,14814
+Achenbachstr.: nicht so breite Straﬂe	q1 -3360,14974 -3322,14814
 Herrnholzweg: enge Straﬂe	q1 6279,23170 6491,22915
 Hausotterstr.: sehr schmal, auf beiden Seiten parkende Autos	q1 8592,18128 8348,18071 8139,18020 7957,17967 7772,17915 7487,17836
 Prettauer Pfad: enge Straﬂe	q1 3384,1297 3569,1532
@@ -406,12 +409,12 @@ Nordufer: teilweise sehr schmaler Radweg	q1 7231,14749 7467,14633
 (Weg am Nordgraben): schmaler Weg, m‰ﬂiger Fuﬂg‰ngerverkehr	q2 3563,20589 3475,20656 3327,20758 3062,20898 2916,20870 2580,20805
 (Weg am Waldfriedhof Dahlem): Kurven	q2 1051,5525 825,5420 626,5322
 (Waldweg parallel zur Flanaganstr. zwischen H¸ttenweg und Im Jagen): starke Steigungen und Gef‰lle	q2 1051,5525 1697,5938
-(Altvaterstr./Breisgauer Str. - Salzachstr.): schmaler Fuﬂweg	q3 -2283,3491 -2146,3531
+(Altvaterstr./Breisgauer Str. - Salzachstr.): schmaler Fuﬂweg	q3 -2295,3523 -2122,3593
 Neustrelitzer Str.: kurvenreich	q1 16739,14733 16668,14765 16534,14740 16443,14825 16346,14750 16256,14828
 (Esplanade - Gr¸ntaler Str.): Zickzack-Kurs	q2 9984,16968 9846,16981 9757,16912
 L¸nette: Fuﬂg‰nger	q1 -1342,15510 -1496,15463
 Maselakeweg: Fuﬂg‰nger	q3 -2450,16981 -2391,16607 -2340,16590
-Gritznerstr.: enge Straﬂe	q1 4306,5865 4385,6045 4435,6154 4472,6242 4507,6320 4555,6403 4630,6534 4679,6620 4734,6716
+Gritznerstr.: enge Straﬂe	q1 4320,5885 4385,6045 4435,6154 4472,6242 4507,6320 4555,6403 4630,6534 4679,6620 4734,6716
 Im Jagen: Fuﬂg‰nger, Hundeauslaufgebiet	q1 905,6631 909,6584 1057,6461 1375,6138
 Worpsweder Str.: eng mit ein- und ausparkenden Autos	q1 6191,4923 6203,5138
 Wilseder Str.: eng mit ein- und ausparkenden Autos	q1 6295,5132 6288,4906
@@ -497,7 +500,7 @@ Voxstr.: Fuﬂg‰nger	q3 8309,11390 8390,11363
 Alice-Salomon-Park: getrennte Wege f¸r Radfahrer und Fuﬂg‰nger, Bordsteine	q2 6851,9365 6767,9492 6728,9515
 (Geﬂlerstr. - Monumentenstr.): Fuﬂg‰nger, Kinder	q2 7970,8886 7964,9060 8009,9063 8014,9126
 (Loewenhardtdamm - Hˆhndorfstr.): Fuﬂg‰nger, Bordsteine, Schranken	q2 8318,8692 8429,8692
-(Weg d. Kol. Papestr.): Fuﬂg‰nger	q1 8220,8596 8243,8596 8243,8321 8264,8289
+(Weg d. Kol. Papestr.): Fuﬂg‰nger	q1 8206,8596 8243,8596 8243,8321 8264,8289
 (Weg d. Kol. Papestr.): sehr eng	q4 8243,8321 8264,8289
 (zum Bayernring): Fuﬂg‰nger	q1 8437,8557 8525,8396
 Bautzener Platz: Fuﬂg‰nger, Bordsteine	q2 8182,9197 8098,9198

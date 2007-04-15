@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.28 2006/08/26 21:57:47 eserte Exp $
+# $Id: Strasse.pm,v 1.29 2007/04/15 22:05:01 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
 
 package Strasse;
 use strict;
@@ -191,13 +191,16 @@ sub get_last_part {
 #   ZR: Zubringer zum Radweg
 #   RR: Radialrouten (in Berlin)
 #   TR: Tangentialrouten (in Berlin)
+#   BAB: Bundesautobahn
+#   DK: Droga krajowa (in Polen)
+#   DW: Droga wojewódzka (in Polen)
 # In general, parse_street_type_nr returns a list:
 #  (Type of street, Number of street, Bool for round sign, optional image)
 sub parse_street_type_nr {
     my $strname = shift;
-    my($type,$nr) = $strname =~ /\((B|L|BAB|F|R|ZR|RR|TR)\s*([\d\.]+)\)/;
+    my($type,$nr) = $strname =~ /\((B|L|BAB|DK|DW|F|R|ZR|RR|TR)\s*([\d\.]+)\)/;
     if (!defined $type) {
-	($type,$nr) = $strname =~ /^(B|L|BAB|F|R|ZR|RR|TR)\s*([\d\.]+)(?::|$|\s*\()/;
+	($type,$nr) = $strname =~ /^(B|L|BAB|DK|DW|F|R|ZR|RR|TR)\s*([\d\.]+)(?::|$|\s*\()/;
 	if (!defined $type) { # B101n
 	    ($type,$nr) = $strname =~ /\((B|L)\s*(\d+(?:n|neu|a|b))\)/;
 	    if (!defined $type) {

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.31 2007/04/10 22:29:32 eserte Exp $
+# $Id: plz.t,v 1.32 2007/04/15 22:16:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -56,10 +56,12 @@ my @approx_tests = (
 		    ["ddnstraße", "Dudenstr."],
 		    ["Seuemstr", "Seumestr."],
 		    ["Stefanstr.", "Stephanstr."],
+		    ["Lennestr.", "Lennéstr."],
+		    ["Lennéstr.", "Lennéstr."],
 		    # Ku'damm => Kurfürstendamm, fails, maybe an extra rule?
 		   );
 		    
-plan tests => 140 + scalar(@approx_tests)*4;
+plan tests => 148 + scalar(@approx_tests)*4;
 
 my $tmpdir = "$FindBin::RealBin/tmp/plz";
 my $create;
@@ -434,6 +436,24 @@ for my $noextern (@extern_order) {
 	   "Should find Brandenburger Tor in Potsdam")
 	    or diag $dump->(\@res);
 
+    XXX:
+	@res = $plz_multi->look_loop("lennestr.",
+				     @standard_look_loop_args);
+	is(scalar(grep { $_->[PLZ::LOOK_CITYPART] eq 'Tiergarten' } @{$res[0]}), 1,
+	   "Should find Lennéstr. in Tiergarten (initially without accent)")
+	    or diag $dump->(\@res);
+	is(scalar(grep { $_->[PLZ::LOOK_CITYPART] eq 'Potsdam' } @{$res[0]}), 1,
+	   "Should find Lennéstr. in Potsdam (initially without accent)")
+	    or diag $dump->(\@res);
+
+	@res = $plz_multi->look("lennéstr.");
+	is(scalar(grep { $_->[PLZ::LOOK_CITYPART] eq 'Tiergarten' } @res), 1,
+	   "Should find Lennéstr. in Tiergarten (initially with accent)")
+	    or diag $dump->(\@res);
+	is(scalar(grep { $_->[PLZ::LOOK_CITYPART] eq 'Potsdam' } @res), 1,
+	   "Should find Lennéstr. in Potsdam (initially with accent)")
+	    or diag $dump->(\@res);
+
 	@res = $plz_multi->look_loop("brandenburger tor",
 				     @standard_look_loop_args);
 	is(scalar(grep { $_->[PLZ::LOOK_CITYPART] eq 'Mitte' } @{$res[0]}), 1,
@@ -479,7 +499,6 @@ for my $noextern (@extern_order) {
 	    ok((grep { $_->[PLZ::LOOK_NAME] eq $test } @res), "grep-substr: Matched $test");
 	}
 
-    XXX:
 	# Check also for an agrep trap: comma is a special boolean operator
 	@res = $plz->look_loop("Gustav-müller-str, 16",
 			       @standard_look_loop_args);

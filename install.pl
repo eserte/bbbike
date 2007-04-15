@@ -2,15 +2,15 @@
 # -*- perl -*-
 
 #
-# $Id: install.pl,v 4.12 2007/04/12 22:13:22 eserte Exp $
+# $Id: install.pl,v 4.13 2007/04/15 22:02:28 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2001,2007 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
 
 use FindBin;
@@ -124,8 +124,8 @@ sub Print_shift ();
 sub Print_unshift ();
 
 my %optdesc =
-  ('desktop'    => M"Desktop-Icon erstellen",
-   'show'       => M"Schritte zeigen und nicht ausführen",
+  ('desktop'      => M"Desktop-Icon erstellen",
+   'show'         => M"Schritte zeigen und nicht ausführen",
    'debuginstall' => M"Debugging-Version erzeugen",
   );
 if (@module_ext && $extensions) {
@@ -587,9 +587,16 @@ sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
 		      : "$FindBin::Bin/$client_program"
 		     );
 
-    my($bbbike_kdelnk, $bbbike_doc_kdelnk, $bbbike_www_kdelnk);
+    my($bbbike_desktop, $bbbike_doc_desktop, $bbbike_www_desktop);
 
 # XXX mehr nach KDEUtil.pm verlagern
+
+# XXX It seems that nowadays the user directory is
+# ~/.local/share/applications etc., not anymore
+# ~/.kde/share/...
+# Same for mimelnk
+
+    my %vars = (BBBIKEDIR => $FindBin::RealBin);
 
     if (exists $kdedirs{-applnk}) {
 	Print M"Installation der KDE-Verknüpfungen ...\n";
@@ -627,72 +634,39 @@ sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
 	    }
 	}
 
-	my %vars = (BBBIKEDIR => $FindBin::RealBin);
+# -> .kde or .local --- what's correct, what's wrong?
 
-	$bbbike_kdelnk     = "$applications_dir/BBBike.kdelnk";
-	if ($show) {
-	    Print M("BBBike.kdelnk.tmpl nach $applications_dir mit\n" .
-		    "  Variablensubstitution kopieren.\n");
-	} else {
-	    if (open(KDELNK, "$FindBin::Bin/kde/BBBike.kdelnk.tmpl") &&
-		open(SAVE,   ">$bbbike_kdelnk")) {
-		while(<KDELNK>) {
-		    if (/^Exec=/i) {
-			if ($use_client_server_mode) {
-			    print SAVE "Exec=$^X $client_bin %f\n";
-			} else {
-			    print SAVE "Exec=$^X $main_bin %f\n";
-			}
-		    } elsif (/^DocPath=/i) {
-			if ($has_docpath) {
-			    print SAVE "DocPath=$html_documentation\n";
-			}
-		    } else {
-			s/\@([^\@]+)\@/$vars{$1}/g;
-			print SAVE $_;
-		    }
-		}
-		close SAVE;
-		close KDELNK;
-	    }
-	}
+	$bbbike_desktop = "$applications_dir/BBBike.desktop";
+	copy_with_vars_subst("$FindBin::Bin/kde/BBBike.desktop.tmpl",
+			     $bbbike_desktop,
+			     { %vars,
+			       EXEC => ($use_client_server_mode ? "$^X $client_bin %f" : "$^X $main_bin %f"),
+			       DOCPATH => ($has_docpath || ""),
+			     },
+			    );
 
-	$bbbike_doc_kdelnk = "$applications_dir/BBBikeDoc.kdelnk";
-	if ($show) {
-	    Print "BBBikeDoc.kdelnk.tmpl nach $applications_dir mit\n" .
-	      "  Variablensubstitution kopieren.\n";
-	} else {
-	    if (open(KDELNK, "$FindBin::Bin/kde/BBBikeDoc.kdelnk.tmpl") &&
-		open(SAVE,   ">$bbbike_doc_kdelnk")) {
-		while(<KDELNK>) {
-		    if (/^URL=/i) {
-			print SAVE "URL=file:$FindBin::Bin/$html_documentation\n";
-		    } else {
-			s/\@([^\@]+)\@/$vars{$1}/g;
-			print SAVE $_;
-		    }
-		}
-		close SAVE;
-		close KDELNK;
-	    }
-	}
+	copy_with_vars_subst("$FindBin::Bin/kde/BBBike.desktop.tmpl",
+			     "$ENV{HOME}/.local/share/applications/BBBike.desktop",
+			     { %vars,
+			       EXEC => ($use_client_server_mode ? "$^X $client_bin %f" : "$^X $main_bin %f"),
+			       DOCPATH => ($has_docpath || ""),
+			     },
+			    );
 
-	$bbbike_www_kdelnk = "$applications_dir/BBBikeWWW.kdelnk";
-	if ($show) {
-	    Print "BBBikeWWW.kdelnk nach $applications_dir mit\n" .
-		"  Variablensubstitution kopieren.\n";
-	} else {
-	    if (open(KDELNK, "$FindBin::Bin/kde/BBBikeWWW.kdelnk.tmpl") &&
-		open(SAVE,   ">$bbbike_www_kdelnk")) {
-		while(<KDELNK>) {
-		    s/\@([^\@]+)\@/$vars{$1}/g;
-		    print SAVE $_;
-		}
-		close SAVE;
-		close KDELNK;
-		chmod 0644, $bbbike_www_kdelnk;
-	    }
-	}
+
+##XXX drop completely???
+# 	$bbbike_doc_desktop = "$applications_dir/BBBikeDoc.desktop";
+# 	copy_with_vars_subst("$FindBin::Bin/kde/BBBikeDoc.desktop.tmpl",
+# 			     $bbbike_doc_desktop,
+# 			     { %vars, URL => "file:$FindBin::Bin/$html_documentation" },
+# 			    );
+
+# 	$bbbike_www_desktop = "$applications_dir/BBBikeWWW.desktop";
+# 	copy_with_vars_subst("$FindBin::Bin/kde/BBBikeWWW.desktop.tmpl",
+# 			     $bbbike_www_desktop,
+# 			     { %vars },
+# 			    );
+
 	Print_unshift;
     }
 
@@ -711,12 +685,16 @@ sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
 
 	foreach my $mimefile (qw(x-bbbike-route x-bbbike-data x-gpstrack)) {
 	    my $dest = "$kdedirs{-mimelnk}/application/$mimefile.kdelnk";
-	    if ($show) {
-		Print "copy to $dest and chmod 0644\n";
-	    } else {
-		copy("$FindBin::Bin/kde/$mimefile.kdelnk", $dest);
-		chmod 0644, $dest;
-	    }
+	    copy_with_vars_subst("$FindBin::Bin/kde/$mimefile.kdelnk",
+				 $dest,
+				 \%vars,
+				);
+# 	    if ($show) {
+# 		Print "copy to $dest and chmod 0644\n";
+# 	    } else {
+# 		copy("$FindBin::Bin/kde/$mimefile.kdelnk", $dest);
+# 		chmod 0644, $dest;
+# 	    }
 	}
 
 	my $magic = "$kdedirs{-mimelnk}/magic";
@@ -790,23 +768,23 @@ sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
 	if (defined $homedir) {
 	    my $desktop = "$homedir/Desktop";
 	    if (-d $desktop && -w $desktop) {
-		my $kdelnk = "$desktop/BBBike.kdelnk";
-		if (defined $bbbike_kdelnk && -e $bbbike_kdelnk) {
+		my $desktop = "$desktop/BBBike.desktop";
+		if (defined $bbbike_desktop && -e $bbbike_desktop) {
 		    if ($show) {
-			Print "Symlink $kdelnk => $bbbike_kdelnk\n";
+			Print "Symlink $desktop => $bbbike_desktop\n";
 		    } else {
-			_safe_symlink($bbbike_kdelnk, $kdelnk);
+			_safe_symlink($bbbike_desktop, $desktop);
 		    }
 		}
-		$kdelnk = "$desktop/BBBikeWWW.kdelnk";
-		if (defined $bbbike_www_kdelnk && -e $bbbike_www_kdelnk) {
+		$desktop = "$desktop/BBBikeWWW.desktop";
+		if (defined $bbbike_www_desktop && -e $bbbike_www_desktop) {
 		    if ($show) {
-			Print "Symlink $kdelnk => $bbbike_www_kdelnk\n";
+			Print "Symlink $desktop => $bbbike_www_desktop\n";
 		    } else {
-			if (-e $kdelnk) { unlink $kdelnk }
-			copy("$FindBin::Bin/kde/BBBikeWWW.kdelnk",
-			     $kdelnk);
-			chmod 0644, $kdelnk;
+			if (-e $desktop) { unlink $desktop }
+			copy("$FindBin::Bin/kde/BBBikeWWW.desktop",
+			     $desktop);
+			chmod 0644, $desktop;
 		    }
 		}
 	    }
@@ -814,16 +792,10 @@ sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
     }
 
     if ($show) {
-	#Print "Restarting kpanel\n";
-	#Print "Refreshing desktop\n";
 	Print "Refreshing system\n";
     } else {
-	#system("kwmcom", "kpanel:restart");
-	# XXX this will start the kde filemanager, even if we
-	# aren't running kde...
-	#$kde->panel->restart;
-	#$kde->fm->refreshDesktop;
-	system("kbuildsycoca") if is_in_path("kbuildsycoca");
+	# XXX why was --noincremental necessary (once)?
+	system("kbuildsycoca", "--noincremental") if is_in_path("kbuildsycoca");
     }
 
   KDEEND:
@@ -1370,6 +1342,29 @@ sub Uninstall {
     # delete files
 
     # on Win32: delete registry information
+}
+
+sub copy_with_vars_subst {
+    my($src, $dest, $vars) = @_;
+    if ($show) {
+	Print basename($src) . " nach " . dirname($dest) . " mit\n";
+	Print_shift;
+	Print "Variablensubstitution kopieren.\n";
+	Print_unshift;
+    } else {
+	if (open(SRC, $src) &&
+	    open(SAVE,   "> $dest")) {
+	    while(<SRC>) {
+		s/\@([^\@]+)\@/$vars->{$1}/g;
+		print SAVE $_
+		    or Print("Achtung: Cannot print to $dest: $!");
+	    }
+	    close SAVE
+		or Print("Achtung: Error while closing $dest: $!");
+	    close SRC;
+	    chmod 0644, $dest;
+	}
+    }
 }
 
 # REPO BEGIN

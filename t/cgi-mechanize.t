@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.40 2007/03/30 20:22:41 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.41 2007/04/14 21:22:37 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -334,15 +334,15 @@ for my $browser (@browsers) {
 	# May have different results depending on $use_exact_streetchooser.
 	# The first is with $use_exact_streetchooser=0, the second with
 	# $use_exact_streetchooser=1. Actually the correct crossing in this case
-	# should be the end of "Lennestr.", but the find-nearest-crossing code finds
+	# should be the end of "Lennéstr.", but the find-nearest-crossing code finds
 	# only real crossing, not endpoints of streets.
 	$like_long_data->(
 	     qr{(\QHans-Sachs-Str. (Potsdam)/Meistersingerstr. (Potsdam)\E
 		|\QCarl-von-Ossietzky-Str. (Potsdam)/Lennéstr. (Potsdam)\E
-		|\Q(Ökonomieweg, Sanssouci) (Potsdam)/(Lennestr. - Ökonomieweg, Sanssouci)\E
-		|\Q(Lennestr. - Ökonomieweg, Sanssouci) (Potsdam)/Lennéstr. (Potsdam)\E
-		|\Q(Lennestr. - Ökonomieweg, Sanssouci) (Potsdam)/(Hans-Sachs-Str. - Lennéstr.) (Potsdam)/Lennéstr. (Potsdam)\E
-	       )}ix,  "Correct goal resolution (Hans-Sachs-Str. ... or Lennestr. ... or Ökonomieweg ...)");
+		|\Q(Ökonomieweg, Sanssouci) (Potsdam)/(Lennéstr. - Ökonomieweg, Sanssouci)\E
+		|\Q(Lennéstr. - Ökonomieweg, Sanssouci) (Potsdam)/Lennéstr. (Potsdam)\E
+		|\Q(Lennéstr. - Ökonomieweg, Sanssouci) (Potsdam)/(Hans-Sachs-Str. - Lennéstr.) (Potsdam)/Lennéstr. (Potsdam)\E
+	       )}ix,  "Correct goal resolution (Hans-Sachs-Str. ... or Lennéstr. ... or Ökonomieweg ...)");
 	$like_long_data->(qr{\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marquardt)}i,  "Correct goal resolution (Marquardt ...)");
                            
     }

@@ -27,7 +27,7 @@ Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 
 Köpenicker Str. (in Mitte und/oder in Kreuzberg?)	? 11155,11750 11242,11720 11574,11594 11807,11479 11943,11398 12026,11348
 #: last_checked: 2007-03-01
 Holzmarktstr.	? 11773,12006 11619,12084 11388,12202 11351,12221
-#: last_checked: 2007-03-03
+#: last_checked: 2007-04-09
 Gitschiner Str.	? 9948,10280 10122,10294 10340,10301 10605,10312 10859,10333 10962,10340 11114,10338
 Storkower Straße zwischen Kniprode- und Greifswalder Straße	? 13453,14678 12722,15105
 Grellstr.	? 12722,15105 12428,15275 12252,15376 11941,15586
@@ -38,17 +38,14 @@ Vulkanstraße	? 15912,13153 15892,13534
 #: last_checked: 2006-06-16 (von Corinna):
 Gorkistr.	? 2995,20487 2615,20421
 Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 17966,11730 17746,11748 17436,11791 17249,11802
-#: last_checked: 2006-08-20
+#: last_checked: 2007-04-14
 Löhleinstraße	? 2717,5578 2499,5144 2454,5067 2288,4932
+#: last_checked: 2007-04-14
+Saargemünder Straße	? 2007,4791 1884,4811 1747,4829 1479,4853
 #: last_checked: 2006-08-20
-Saargemünder Straße	? 2005,4772 1934,4788 1744,4812 1479,4853
-#: last_checked: 2006-08-20
+#: next_check: 2007-07-01
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20061113.1305.50310.html
 Pacelliallee: Arbeiten werden bis 2007-07-01 abgeschlossen sein	? 2585,5696 2594,5923 2607,6285 2609,6348 2659,6499 2711,6698 2714,6857 2723,7029
-#: by ^^^
-#: by Tagesspiegel 2004-07-25 (obige waren auch dabei) vvv
-#: XXX: wird es die gesamte Strecke oder nur der Abschnitt der RR3?
-Reichsstr.	? 1403,11428 1308,11506 1220,11583 1133,11664 1033,11754 881,11893 818,11954 738,12025 653,12109 628,12138 481,12319 419,12397 329,12503 269,12576 137,12668 23,12739 -112,12866 -129,12947
 #: by ^^^
 #: by Berliner Kurier: vvv
 Max-Beer-Str.: Fahrradstraße geplant (2005, aber noch nichts passiert)	? 10632,13199 10703,13467 10740,13621
@@ -127,12 +124,13 @@ Weserstr.: Bauarbeiten, eventuell wird die Fahrbahn danach asphaltiert sein	? 14
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 #
+#: by: http://www.stadtentwicklung.berlin.de/verkehr/radverkehrsanlagen/de/hellersdorf/route.shtml
+Marx-Engels-Forum: wird die RR8 hier durchgeführt? wo genau?	? 10300,12587 10355,12551 10411,12471 10596,12517
 #: XXX: Eintragung von Bernd Honsa: Q0 Asphalt, verkehrsberuhigt RW6
 #: XXX: laut luise-berlin zwischen Walter-Huth-Str. und Wolfgang-Harlan-Straße., laut berliner-stadtplan die eingetragene Wegführung
 #: XXX: obwohl: es gibt auch eine kürzere parallel verlaufende gleichnamige Straße. Wahrscheinlich ist diese die richtige!
 #: XXX: Schreibweise ist auch wiedersprüchlich: mit oder ohne Bindestrich, letzteres bei luise-berlin und wahrscheinlich richtig
 Wrightallee: Streckenführung zwischen Melli-Besse-Ring und Gorissenstr. bereits komplett?	? 18143,2718 18170,2819 18199,2960 18010,3263 17976,3735 17949,3970
-Papestr./Loewenhardtdamm: hat sich der Umbau auf die Straßenführung ausgewirkt?	? 8248,8688 8306,8722 8293,8768 8293,8768
 B87: im Bereich von Müllrose und Beeskow Umgehungsstraßen; bereits fertiggestellt?	? 86488,-7562 85598,-8331 84692,-9145 84255,-9991 83672,-10601 83389,-11087 82740,-11887 81786,-12568 81278,-13886 80317,-15604 80143,-15900 79825,-16575 79718,-16658 79714,-16872 79650,-16999 79542,-17061 78297,-17788 76631,-18359 74920,-18929 74707,-18991 73222,-20567 71815,-22343 70984,-23637 70075,-24862 69290,-25534 68467,-25032 68208,-25518 67864,-25691 66943,-26530 65386,-29479 64853,-30986 63609,-34428 63520,-34874 63095,-34910 62112,-36752 60430,-38587 58111,-41188 57451,-41866 55628,-43569 53268,-45117 52695,-45345 50425,-46001 49708,-46344 48300,-48609 47500,-49275 47037,-49675 46312,-50912 45914,-51087 45475,-51090 44856,-51015
 #: last_checked: 2007-04-04
 #: by: Message-ID: <4mfe1bF5vae4U1@uni-berlin.de>
@@ -234,6 +232,8 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet? in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: Peter Loth:
+Hornblendeweg: Asphalt, Q0, Einbahnstraße Richtung Westen	? 10659,1369 10641,1442 10594,1468 10504,1438 10408,1387 10406,1337 10441,1281
 #: by: anonymous:
 #: note: weitere Frage: genaue Streckenführung (Stadtpläne und Luise widersprechen sich)? (anonymous meint: kurvenreich)
 Kronstadter Weg: Beton, Q0, RW6	? 06809,-152 6867,-126 6963,-82 7061,-38 7161,6 7181,-15 7231,25
@@ -362,7 +362,7 @@ Skandinavische Str.: auf der westlichen Seite Suggestivstreifen (laut Radzeit)?	
 Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
 Fähre Liepnitzsee zum Großen Werder: wo genau?	? 16050,38181 16455,37790
 Sputendorfer Str.: laut http://home.arcor.de/hoge-online/std_tlw/std_tlw00.htm sieht die Straße gut aus, wie sieht es weiter südlich Richtung Sputendorf aus?	? -2049,-2165 -1853,-2412 -1834,-3968 -1809,-4235
-Groenerstr. - Kurstr.: Qualität?	? -3470,14836 -3354,14971 -3243,15068 -3231,15096 -3195,15134 -3035,15428 -2956,15575 -2856,15687
+Bismarckplatz. - Kurstr./Lynarstr.: Qualität? Ist es möglich, als Radfahrer durch den Koeltzepark zu fahren?	? -3258,15100 -3241,15118 -3216,15155 -3041,15434 -3006,15534 -2980,15675
 Fortsetzung der Wolziger Zeile bis zur B101: Qualität? Kann die B101 gequert werden?	? 9608,-2642 9529,-2628 9159,-2590 8100,-2471  6684,-1325 6606,-1598 6427,-1856
 #: XXX von anima43 folgende Einträge (aber nicht sicher für diesen Abschnitt): fester Sandweg, Q2, viele Fußgänger, viele Hunde q4 (aber ich würde wahrscheinlich eher q2 nehmen):
 Mauerweg zwischen Drusenheimer Weg und Buckower Damm: existiert eine Strecke, wie ist die Qualität? Vielleicht geht es auch weiter Richtung Rudow? (laut "Berliner Umland" witterungsabhängige Strecke)	? 11794,550 11924,594 12519,794 12984,1011
@@ -1128,8 +1128,6 @@ Bettina-von-Suttner-Str.: Qualität des westlichen Abschnitts (wahrscheinlich sch
 Eisenhartstr.: Qualität des südlichen Abschnitts (asphaltiert?)?	? -12813,-480 -12744,-306
 Reiterweg: Verlängerung! Qualität?	? -12961,-136 -12857,-168
 Helene-Lange-Str.: Qualität?	? -12863,-364 -13142,-303
-Posthofstr.: Qualität?	? -12552,-1233 -12362,-1122
-#Joliot-Curie-Str.: Qualität?	? -12549,-1277 -12542,-1305 -12526,-1356 -12500,-1437
 Joliot-Curie-Str.: existiert für Radfahrer eine Verlängerung zu "Am Alten Markt"? Qualität?	? -12614,-1471 -12582,-1460
 Neuer Markt: genaue Straßenführung und -namen? Qualität: Kopfsteinpflaster wahrscheinlich Q2	? -12762,-1545 -12914,-1477 -13088,-1333
 Zusätzlich: Überqueren der Straßenbahntrasse an dieser Stelle möglich (wahrscheinlich nicht)?	?? -12914,-1477 -12762,-1545
@@ -1278,8 +1276,8 @@ Bülowstr. (Zehlendorf): Qualität (laut ADFC-Karte bis auf einen kleinen Abschnit
 Kirchweg: Qualität? (laut ADFC-Karte zwischen B1 und Beskidenstr. gut geeignet, westlicher Abschnitt ungeeignet, wahrscheinlich wegen Kopfsteinpflaster)	? -2903,1818 -2981,1925 -3019,1998 -3031,2184 -3030,2266 -3109,2306 -3211,2405 -3244,2436 -3235,2496 -3280,2507
 Beskidenstr.: Qualität? (laut ADFC-Karte gut geeignet)	? -3030,2266 -3022,2400 -2842,2506 -2749,2548 -2440,2760
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060505.1315.39412.html (Freigabe Radfahrer)
-Jochen-Klepper-Weg: Qualität (laut ADFC-Karte teilweise gut geeignet)?	? -3030,2266 -2784,2358 -2363,2482
-Gerkrathstr.: Qualität (laut ADFC-Karte ungeeignet)?	? -3280,2507 -3246,2606 -3260,2675 -3207,2898
+Jochen-Klepper-Weg: Qualität (laut ADFC-Karte teilweise gut geeignet)?	? -3030,2266 -2784,2358 -2372,2477
+Gerkrathstr.: Qualität (laut ADFC-Karte ungeeignet)?	? -3280,2507 -3246,2606 -3260,2675 -3225,2902
 Rehsprung: Qualität? Für den Autoverkehr gesperrt (Teile davon?)? Existiert eine Treppe an der Autobahnunterführung?	? -3280,2507 -3309,2400 -3284,2306 -3156,2134 -3107,2068 -3098,1922 -3133,1802 -3234,1751 -3264,1645 -3502,1581 -3557,1652 -3609,1602 -3654,1539 -3764,1446
 An der Rehwiese: Qualität?	? -3559,1760 -3557,1652 -3511,1686 -3389,1703 -3299,1753 -3299,1838 -3223,2020 -3284,2041 -3420,2224 -3395,2403 -3372,2704 -3360,2917
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20060412.1640.38345.html
@@ -1329,7 +1327,6 @@ Dahme: Qualität?	? 13491,-59794 13484,-59914
 Flaeming-Skate: genaue Wegführung? Qualität (sehr wahrscheinlich asphaltierte Radwege)?	? -9213,-54963 -9339,-54985 -9820,-54585 -9765,-52958
 Flaeming-Skate: genaue Wegführung? Qualität (sehr wahrscheinlich asphaltierte Radwege)?	? -5347,-38826 -5082,-38726 -2517,-38996
 Str. 17: Qualität?	? 7314,7451 7305,7221
-Fortsetzung der Begasstr.: Qualität? Abschnitte nicht für Autofahrer passierbar? Hausdurchfahrten?	? 6505,7010 6662,7018 6781,7030
 Pöppelmannstr.: Qualität?	? 6505,7010 6530,6786
 Grazer Platz: Überquerung des Platzes in Höhe Pöppelmannstr. möglich? Qualität?	? 6530,6786 6546,6720
 Kauschstr.: Qualität?	? 6517,6717 6538,6499
@@ -1419,3 +1416,7 @@ Falkenberger Chaussee - Pablo-Picasso-Str.: Weg asphaltiert oder betoniert? (lau
 Werkring: Qualität?	? -990,13502 -975,13574 -978,13665 -1000,13764 -1084,13933 -1188,13988
 #: note: laut anonymen Eintrag guter Asphalt und Einbahnstraße Richtung Seegefelder Str., aber noch einige Fragen offen:
 Wustermarker Str.: Qualität, sowohl westlich als auch östlich der Nauener Str. (wahrscheinlich Asphalt)? Können Radfahrer von der Nauener Str. zur Wustermarker Str. gelangen (evtl. Hausdurchfahrt)? Einbahnstraßenregelung nur westlich der Nauener Str.?	? -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4750,14393 -4678,14382 -4556,14349 -4382,14303
+Krottnaurerstr.: Qualität? (nördlich der Matternhornstr. schlechtes Kopfsteinpflaster, südlich asphaltiert)	? -2390,2539 -2708,2439 -2749,2548 -2776,2660 -2804,2762 -2847,2893 -2867,3045 -2920,3246 -2948,3290
+Am Kanal, Nebenstraße: Qualität, Einbahnstraße?	? -12542,-1305 -12311,-1238
+Joliot-Curie-Str.: Qualität, Einbahnstraße?	? -12537,-1447 -12562,-1367 -12606,-1379 -12582,-1460 -12537,-1447
+Oderfähre: ab 2007-06-30 in Betrieb	? 71524,40721 72361,41057

@@ -1,5 +1,5 @@
 #: title.de: Orte im weiteren Umland
-#: version: $Id: orte2-orig,v 4.33 2007/04/03 23:19:32 eserte Exp $
+#: version: $Id: orte2-orig,v 4.34 2007/04/15 20:25:41 eserte Exp $
 #: title.en: Places far away
 #:
 Hannover	6 -238396,-7589
@@ -11,6 +11,7 @@ Dresden	6 36012,-150175
 Halle	6 -84779,-105018
 Magdeburg	6 -108962,-31703
 Braunschweig	6 -184186,-18956
+Szczecin	6 86292,115232
 Rostock	5 -79160,185302
 Schwerin	5 -127134,133359
 Greifswald	5 5585,187733
@@ -27,7 +28,6 @@ Norderstedt	5 -222580,139825
 Neumünster	5 -225686,180568
 Wolfsburg	5 -166437,-103
 Peine	5 -204694,-13759
-Szczecin	5 86292,115232
 Wismar	4 -124516,162827
 Bad Doberan	4 -95364,186923
 Anklam	4 26959,161572
@@ -96,7 +96,9 @@ Calbe	4 -99042,-57415
 Uelzen	4 -183516,58937
 Güstrow	4 -76655,153557
 Northeim	4 -219144,-82630
+Gryfino	4 82440,95463
 Swinoujscie	4 64415,168163
+Police	4 87325,128182
 Ostseebad Rerik	3 -114327,186494
 Kühlungsborn	3 -106940,191400
 Woldegk	3 20839,117478
@@ -254,8 +256,7 @@ Arneburg	3 -84879,28408
 Elbingerode|(Harz)	3 -164748,-74000
 Ilsenburg|(Harz)	3 -173296,-63682
 Eggesin	3 53539,142834
-Cedynia|(Polen)	3 63744,53664
-Police	3 87325,128182
+Chojna	3 78918,63251
 Wolin	3 89294,161267
 Miedzyzdroje	3 78052,170681
 Kamien Pomorski	3 99437,175872
@@ -430,7 +431,11 @@ Kolkwitz	2 69314,-71975
 Neulewin	2 69249,37090
 Lanz	2 -113555,72198
 Letschin	2 74977,27974
+Cedynia|(Polen)	2 63744,53664
+Widuchowa	2 75847,81483
 Stepnica	2 90980,140464
+Mieszkowice	2 83793,43762
+Slonsk	2 105548,19204
 Jakobshagen	1 19529,89093
 Hardenbeck	1 18817,95103
 Hinrichshagen	1 15524,116146
@@ -503,6 +508,7 @@ Zichow	1 51884,87559
 Golm|(Uckermark)	1 51689,83925
 Blankenburg|(Uckermark)	1 44971,90830
 Schmölln	1 55984,100093
+Kratzeburg	1 -23056,113208
 Bargensdorf	1 -121,122847
 Peenemünde	1 31807,193274
 Grambin	1 49343,150632
@@ -533,6 +539,7 @@ Born	1 -53441,218742
 Wieck	1 -49796,221774
 Ringenwalde|(Uckermark)	1 30268,72844
 Neppermin	1 50393,171375
+Karow|(Mecklenburg)	1 -69881,124463
 Wollin|(Penkun)	1 64241,102111
 Krackow	1 67229,105204
 Glasow|(Randowbruch)	1 67637,109062
@@ -783,6 +790,10 @@ Hackenow	1 83013,14517
 Steckelsdorf	1 -65837,20874
 Göttlin	1 -64524,23528
 Grütz	1 -66447,27090
+Osinow Dolny	1 60023,50497
+Ognica	1 74774,76230
+Gozdowice	1 72361,41057
+Kunowice	1 94262,-4622
 Warnemünde	0 -83112,195145
 Ostseebad Heiligendamm	0 -99712,191131
 Canzow	0 18200,117892

@@ -1,8 +1,12 @@
 #
-# $Id: Makefile,v 1.35 2007/02/03 13:20:59 eserte Exp $
+# $Id: Makefile,v 1.36 2007/04/15 22:05:09 eserte Exp $
 #
 
 # XXX needs MORE work
+
+# Note: with netpbm 10.31 (the version of the netpbm-devel FreeBSD port as
+# of April 2007) dumps core with ppmtowinicon. super-stable netpbm 10.26.42
+# seems to work.
 
 all:	favicon.ico srtbike.ico \
 	png-to-xpm \
@@ -137,9 +141,11 @@ png-to-gif:	\
 		legend_oneway.gif \
 		synagogue.gif \
 		bundesstrasse_table_32.gif \
-		bab_table_32.gif \
 		bundesstrasse_table_16.gif \
+		bab_table_32.gif \
 		bab_table_16.gif \
+		droga_krajowa_table_32.gif \
+		droga_krajowa_table_16.gif \
 		bbbike_google.gif \
 		berliner_stadtplan.gif \
 		rampe.gif \
@@ -222,7 +228,11 @@ png-to-jpg:	\
 #     convert -background none -scale 32 Bundesautobahn_10_number.svg  /tmp/bab_table_32.png
 #   Removed the number with GIMP
 
-# 16 version: same procedure, only with -scale 16
+# Creation of droga_krajowa_table_32.png
+#   Fetched http://upload.wikimedia.org/wikipedia/commons/f/fb/Tabliczka_DK10.svg
+# and converted like above
+
+# All 16 versions: same procedure, only with -scale 16
 
 # start.png, via.png, ziel.png should NOT be used to create corresponding gifs
 # dest.png was used to create dest.gif (by GIMP), but looks ugly

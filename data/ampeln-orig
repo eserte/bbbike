@@ -1,5 +1,5 @@
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.108 2007/04/10 20:36:30 eserte Exp eserte $
+#: version: $Id: ampeln-orig,v 4.109 2007/04/15 22:06:02 eserte Exp $
 #:
 	X 9222,8787
 	X 8982,8781
@@ -688,7 +688,7 @@
 	X 7789,651
 	X 5883,4985
 	X 6019,5785
-	X 5799,6397
+	X 5803,6403
 	X 6027,6722
 	X 8200,5510
 	X 8742,475
@@ -701,7 +701,7 @@
 	F 11882,8527
 	X 5074,7207
 	X 2750,5532
-	X 2005,4772
+	X 2007,4791
 	X 1074,8470
 	X 2116,7740
 	X 2767,7592
@@ -1097,7 +1097,7 @@
 	F 9915,9480
 	X -3132,14607
 	X -3910,15278
-	X -5907,15865
+	X -5911,15877
 	X -6682,16077
 	X 2295,20358
 	B 2358,20368
@@ -1457,7 +1457,8 @@ nur Richtung O	X 8142,7221
 	X 21951,15918
 	X 21358,13923
 	X 23053,15727
-	X 22969,13816
+#: note F by Luftbild
+	F 22969,13816
 	X 22828,13327
 	X 22594,13408
 	X 22883,13013
@@ -1986,7 +1987,6 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8626,23432
 	X 9242,15843
 	X 12653,11672
 	F 6058,10988
-#: note: Luftbild
 	F 6414,7009
 #: note: Luftbild
 #: by: thekla1707...
@@ -2052,3 +2052,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8626,23432
 	X -4663,14820
 #: note: Luftbild
 	X 18809,9133
+#: note: Luftbild und http://www.stadtentwicklung.berlin.de/verkehr/radverkehrsanlagen/de/hellersdorf/route.shtml
+	X 21337,13470
+#: note: Luftbild
+	X 23021,13982

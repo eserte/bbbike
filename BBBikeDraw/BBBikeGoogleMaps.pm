@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGoogleMaps.pm,v 1.1 2007/04/13 19:35:01 eserte Exp $
+# $Id: BBBikeGoogleMaps.pm,v 1.2 2007/04/13 20:32:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeDraw::BBBikeGoogleMaps;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(BBBikeDraw);
 
@@ -33,7 +33,7 @@ use CGI qw(:standard);
 use Karte;
 Karte::preload(qw(Standard Polar));
 
-sub module_handles_all_cgi { 1 } # only with flush_direct_redirect
+sub module_handles_all_cgi { 1 }
 
 sub pre_draw {
     my $self = shift;
@@ -44,7 +44,15 @@ sub flush_direct_redirect {
     my $self = shift;
     my $q = $self->{CGI} || CGI->new;
     my $coords = join "!", @{ $self->{Coords} || [] };
-    my $q2 = CGI->new({coords => $q->param("coords")});
+    my @wpt;
+    if ($self->{BBBikeRoute}) {
+	for my $wpt (@{ $self->{BBBikeRoute} }) {
+	    push @wpt, join "!", $wpt->{Strname}, $wpt->{Coord};
+	}
+    }
+    my $q2 = CGI->new({coords => $q->param("coords"),
+		       (@wpt ? (wpt => \@wpt) : ()),
+		      });
     print $q->redirect($bbbike_googlemaps_url . "?" . $q2->query_string);
     return;
 }
@@ -55,6 +63,12 @@ sub flush {
     my $self = shift;
     my $q = $self->{CGI} || CGI->new;
     my $coords = join "!", @{ $self->{Coords} || [] };
+    my @wpt;
+    if ($self->{BBBikeRoute}) {
+	for my $wpt (@{ $self->{BBBikeRoute} }) {
+	    push @wpt, join "!", $wpt->{Strname}, $wpt->{Coord};
+	}
+    }
 
     my $fh = $self->{Fh} || \*STDOUT;
 
@@ -70,6 +84,9 @@ EOF
     print $fh start_form(-action => $bbbike_googlemaps_url,
 			 -method => "POST");
     print $fh hidden("coords", $coords);
+    for my $wpt (@wpt) {
+	print $fh hidden("wpt", $wpt);
+    }
     print $fh "<noscript>";
     print $fh submit("Weiterleitung auf bbbikegooglemaps");
     print $fh "</noscript>";

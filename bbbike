@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.302 2007/04/11 21:29:31 eserte Exp $
+# $Id: bbbike,v 3.303 2007/04/15 22:04:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -208,7 +208,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.302 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.303 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -6990,11 +6990,11 @@ sub draw_street_numbers {
 		my($item, $r_item);
 		$item = $c->createText
 		    ($midx,$midy,
-		     -text => ($type =~ /^(B|BAB)$/ ? "" : $type) . $nr,
+		     -text => ($type =~ /^(B|BAB|DK|DW)$/ ? "" : $type) . $nr,
 		     -font => $scale < SMALLER_TABLES ? $font{'tiny'} : $font{'normal'},
-		     -fill => ($do_round          ? 'white'  :
-			       $type eq 'BAB'     ? 'white'  :
-			       $type =~ /^(F|R)$/ ? 'green4' :
+		     -fill => ($do_round             ? 'white'  :
+			       $type =~ /^(BAB|DK)$/ ? 'white'  :
+			       $type =~ /^(F|R)$/    ? 'green4' :
 			       'black'),
 		     -tags => "$abk-label"); # no strnr (only for images) and strnr-$item here
 		my(@bbox) = $c->bbox($item);
@@ -7006,26 +7006,18 @@ sub draw_street_numbers {
 			 -width => 1,
 			 -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
 			);
-		} elsif ($devel_host && $type eq 'B') {
+		} elsif ($type =~ m{^( B | BAB | DK | DW)$}x) {
 		    # XXX make public if it works well (size ok for non-X11-Fonts?)
 		    my $size = $scale < SMALLER_TABLES ? 16 : 32;
-		    my $p = get_image("strnr_B$size", "bundesstrasse_table_$size.png");	# prefer png because of alpha
-		    if ($p) {
-			# Manually corrected (-1/-1) to look with my standard font
-			# (lucida sans ...)
-			$r_item = $c->createImage(int(($bbox[2]+$bbox[0])/2) - ($size > 16 ? 1 : 0),
-						  int(($bbox[3]+$bbox[1])/2) - ($size > 16 ? 1 : 0),
-						  -image => $p,
-						  -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
-						 );
-		    } else {
-			# XXX fallback to createRectangle below
-			warn "Cannot get image for strnr_B32";
+		    my $p;
+		    # prefer png because of alpha
+		    if ($type eq 'B' || $type eq 'DW') {
+			$p = get_image("strnr_B$size", "bundesstrasse_table_$size.png");
+		    } elsif ($type eq 'BAB') {
+			$p = get_image("strnr_BAB$size", "bab_table_$size.png");
+		    } elsif ($type eq 'DK') {
+			$p = get_image("strnr_DK$size", "droga_krajowa_table_$size.png");
 		    }
-		} elsif ($devel_host && $type eq 'BAB') {
-		    # XXX make public if it works well (size ok for non-X11-Fonts?)
-		    my $size = $scale < SMALLER_TABLES ? 16 : 32;
-		    my $p = get_image("strnr_BAB$size", "bab_table_$size.png");	# prefer png because of alpha
 		    if ($p) {
 			# Manually corrected (-1/-1) to look with my standard font
 			# (lucida sans ...)
@@ -7036,7 +7028,7 @@ sub draw_street_numbers {
 						 );
 		    } else {
 			# XXX fallback to createRectangle below
-			warn "Cannot get image for strnr_BAB32";
+			warn "Cannot get image for strnr_" . $type . $size;
 		    }
 		} else {
 		    $r_item = $c->createRectangle

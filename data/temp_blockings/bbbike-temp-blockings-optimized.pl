@@ -703,22 +703,8 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1176588000,
-         'text' => 'L 021 Wensickendorf-Liebenwalde OD Zehlendorf Einbau Deckschicht Vollsperrung 10.04.2007-14.04.2007 ',
-         'from' => 1176069600,
-         'data' => 'userdel	q4::inwork 9093,42159 8682,42032
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1176588000,
-         'text' => 'L 029 Wandlitz-Schmachtenhagen OD Zehlendorf Einbau Deckschicht Vollsperrung 10.04.2007-14.04.2007 ',
-         'from' => 1176069600,
-         'data' => 'userdel	q4::inwork 8293,42032 8682,42032
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => 1177192800,
          'text' => 'L 064 Riesaer Str. OL Bad Liebenwerda Deckenerneuerung Vollsperrung 13.04.2007-21.04.2007 ',

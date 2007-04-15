@@ -2,7 +2,7 @@
 #: encoding: utf-8
 #: title.de: Orte im weiteren Umland
 #: title.en: Places far away
-#: version: $Id: orte2-orig,v 4.33 2007/04/03 23:19:32 eserte Exp $
+#: version: $Id: orte2-orig,v 4.34 2007/04/15 20:25:41 eserte Exp $
 #:
 # Mecklenburg-Vorpommern, Brandenburg
 Rostock	5 -79160,185302
@@ -216,6 +216,7 @@ Schönermark|(bei Prenzlau)	2 29110,103270
 Naugarten	0 27142,100908
 Wilhelmshof	0 30734,103253
 Neustrelitz	4 -14770,105941
+Kratzeburg	1 -23056,113208
 Wesenberg	3 -21335,96890
 Ducherow	2 33001,151572
 Heidberg	0 35410,151307
@@ -327,6 +328,7 @@ Ringenwalde|(Uckermark)	1 30268,72844
 Neppermin	1 50393,171375
 Katschow	0 51604,167865
 Plau|am See	3 -69253,115567
+Karow|(Mecklenburg)	1 -69881,124463
 Schwarzenbek	3 -190739,118747
 Lütau	2 -185764,110900
 Escheburg	2 -202042,114175
@@ -1060,17 +1062,28 @@ Peine	5 -204694,-13759
 Uelzen	4 -183516,58937
 Güstrow	4 -76655,153557
 Northeim	4 -219144,-82630
+######################################################################
 # Polen
-Cedynia|(Polen)	3 63744,53664
+Cedynia|(Polen)	2 63744,53664
+Osinow Dolny	1 60023,50497
+Chojna	3 78918,63251
+Ognica	1 74774,76230
+Widuchowa	2 75847,81483
+Gryfino	4 82440,95463
 Świnoujście	4 64415,168163
-Police	3 87325,128182
+Police	4 87325,128182
 Wolin	3 89294,161267
 Międzyzdroje	3 78052,170681
-Szczecin	5 86292,115232
+Szczecin	6 86292,115232
 Dąbie	0 94357,111566
 Stepnica	2 90980,140464
 Kamień Pomorski	3 99437,175872
 Łęknica	3 103457,-94854
+Mieszkowice	2 83793,43762
+Gozdowice	1 72361,41057
+Kunowice	1 94262,-4622
+Słońsk	2 105548,19204
+######################################################################
 # Tschechien
 Ústí|nad Labem	3 57794,-192950
 Děčín	3 69643,-179726

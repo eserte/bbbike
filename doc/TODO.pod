@@ -2997,8 +2997,11 @@ nachinstallieren (siehe Bundle::BBBike).
 
 =item * (*M5)
 
-install.pl: Make it work for current GNOME/KDE versions.
--> done for KDE 3.5
+install.pl: Is completely broken now and should made working for
+current GNOME/KDE versions.
+
+Also: it's not possible to start install.pl from konqueror. Try the
+install.pl.desktop experiment further...
 
 Windows support is not really necessary anymore, as we have the ISS
 installer.

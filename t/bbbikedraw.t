@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.27 2007/04/13 19:36:08 eserte Exp $
+# $Id: bbbikedraw.t,v 1.28 2007/04/13 20:33:02 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -196,6 +196,7 @@ sub draw_map {
 
     my @coords;
     my @multicoords;
+    my @pseudo_route;
     if ($do_route || $do_multiroute) {
 	no warnings 'qw';
 	@coords = qw(8209,8769 8293,8768 8425,8771 8472,8772 8480,9071 8598,9061 8594,8773 8770,8777 8982,8781 9050,8783 9222,8787 9227,8890 9235,9051 9235,9111 9248,9350 9280,9476 8994,9509 9043,9745);
@@ -204,6 +205,13 @@ sub draw_map {
 			    [qw(8595,9495 8598,9264)],
 			   );
 	    @coords = ();
+	}
+	if (@coords) {
+	    for(my $i = 0; $i <= $#coords; $i+=3) {
+		push @pseudo_route, {Strname => "Test Waypoint " . ($#pseudo_route+2),
+				     Coord => $coords[$i],
+				    };
+	    }
 	}
     }
 
@@ -227,6 +235,7 @@ sub draw_map {
         StrLabel   => ['str:HH,H'],
 	Compress   => $do_compress, # implemented for PDF
 	MakeNet    => \&make_net,
+	BBBikeRoute => \@pseudo_route,
     ;
     if ($do_slow) {
 	$draw->set_bbox_max(Strassen->new("strassen"));
