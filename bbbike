@@ -213,7 +213,7 @@ $PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.303 $ =~ /(\d+)\.(\d+)/);
 
 # OS related
 $progname = basename($0);
-$devel_host = ($ENV{HOST} && $ENV{HOST} =~ /^(biokovo|vran|cabulja|cvrsnica|spiff|mom|devpc01)(\.|$)/i);
+$devel_host = ($ENV{HOST} && $ENV{HOST} =~ /^(biokovo|vran|cabulja|cvrsnica|spiff|mom|devpc01|devpc01-debian)(\.|$)/i);
 $os =   $^O eq 'MSWin32' || $^O eq 'os2' || $^O eq 'dos' ? 'win'
       : $^O eq 'MacOS'				    	 ? 'mac'
       : 						   'unix';
