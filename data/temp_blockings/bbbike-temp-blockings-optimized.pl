@@ -661,15 +661,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005138',
-         'until' => 1176674399,
-         'text' => 'Gustav-Meyer-Allee (Wedding) Richtung Scheringstr. zwischen Brunnenstr. und Hussitenstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 04.2007)',
-         'from' => 1175726673,
-         'data' => 'userdel	1::inwork 9443,15430 8900,15146
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1196463600,
          'text' => 'L 024 AS Pfingstberg-Gerswalde OD Suckow grundhafter Straßenbau Vollsperrung 10.04.2007-30.11.2007 ',

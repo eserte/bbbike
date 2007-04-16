@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.43 2007/04/13 19:03:24 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.43 2007/04/13 19:03:24 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -201,6 +201,7 @@ sub get_html {
     <script type="text/javascript">
     //<![CDATA[
 
+    var routeLinkLabel = "Link to route: ";
     var routeLabel = "Route: ";
 
     var addRoute = [];
@@ -275,14 +276,20 @@ sub get_html {
 
     function updateRouteDiv() {
 	var addRouteText = "";
+	var addRouteLink = "";
 	for(var i = 0; i < addRoute.length; i++) {
 	    if (i == 0) {
 		addRouteText = routeLabel;
+		addRouteLink = routeLinkLabel + "@{[ BBBikeCGIUtil::my_url(CGI->new(), -full => 1) ]}?zoom=" + map.getZoomLevel() + "&coordsystem=polar" + "&maptype=" + mapTypeToString() + "&wpt_or_trk=";
 	    } else if (i > 0) {
 		addRouteText += " ";
+		addRouteLink += "+";
 	    }
 	    addRouteText += formatPoint(addRoute[i]);
+	    addRouteLink += formatPoint(addRoute[i]);
 	}
+
+	document.getElementById("addroutelink").innerHTML = addRouteLink;
         document.getElementById("addroutetext").innerHTML = addRouteText;
     }
 
@@ -309,7 +316,7 @@ sub get_html {
 	s.addRange(range);
     }
 
-    function showLink(point, message) {
+    function mapTypeToString() {
 	var mapType;
 	if (map.getCurrentMapType() == G_NORMAL_MAP) {
 	    mapType = "normal";
@@ -318,6 +325,11 @@ sub get_html {
 	} else {
 	    mapType = "satellite";
 	}
+	return mapType;
+    }
+
+    function showLink(point, message) {
+	var mapType = mapTypeToString();
         var latLngStr = message + "@{[ BBBikeCGIUtil::my_url(CGI->new(), -full => 1) ]}?zoom=" + map.getZoomLevel() + "&wpt=" + formatPoint(point) + "&coordsystem=polar" + "&maptype=" + mapType;
         document.getElementById("permalink").innerHTML = latLngStr;
     }
@@ -419,7 +431,7 @@ sub get_html {
     GEvent.addListener(map, "moveend", function() {
         var center = map.getCenterLatLng();
 	showCoords(center, 'Center of map: ');
-	showLink(center, 'Link: ');
+	showLink(center, 'Link to map center: ');
 	addCoordsToRoute(center,true);
     });
 
@@ -463,7 +475,8 @@ EOF
         <p>You must enable JavaScript and CSS to run this application!</p>
     </noscript>
     <div style="font-size:x-small;" id="message"></div>
-    <div style="font-size:x-small;" id="permalink"></div>
+    <div style="font-size:x-small; color:red;" id="permalink"></div>
+    <div style="font-size:x-small; color:blue;" id="addroutelink"></div>
     <div style="font-size:x-small;" id="addroutetext"></div>
     <div id="wpt">
 EOF

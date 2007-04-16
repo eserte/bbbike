@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.159 2007/04/15 22:07:31 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.159 2007/04/15 22:07:31 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -343,7 +343,7 @@ Graacher Str.	1 14672,17085 14533,17084
 Wehlener Str.	1 14673,17003 14535,17003
 Riastr.	1 18247,9158 18201,8984
 #: by: Corinna Orth:
-Karl-Bonhoeffer-Nervenklinik: für Unbefugte nicht befahrbar, Strafvollzug	2 5001,19832 5079,19635 5124,19634 5228,19320 5246,19244 5441,19139
+Karl-Bonhoeffer-Nervenklinik: für Unbefugte nicht befahrbar, Strafvollzug	2 5001,19832 5079,19635 5124,19634 5228,19320 5246,19244 5429,19165
 Schöneberger Südgelände: Radfahren verboten, Eintritt 1 Euro	2 7605,7109 7621,7105 7655,7096 7666,7093
 Schöneberger Südgelände: Radfahren verboten, Eintritt 1 Euro	2 7666,7093 7335,5807
 #: by: Karin Kühl:
@@ -411,6 +411,7 @@ Krokusstr.	1 16738,2717 16739,2736 16677,2856
 Waldowstr.	1 5546,18219 5548,18309 5551,18434 5553,18542 5557,18580 5560,18774
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung zwischen Ollenhauerstr. und Waldowstr. auch für Radfahrer oder nur für Autofahrer?
 Kienhorststr.	1 5553,18542 5324,18560
+Halbauer Weg	1 7722,3142 7719,3219 7734,3290 7753,3371
 #
 # Potsdam
 #
@@ -1107,7 +1108,7 @@ Prenzlauer Promenade: nicht passierbarer Mittelstreifen	3nocross 11950,18529 119
 Hindenburgdamm	1 4454,3260 4467,3332 4523,3482 4546,3527 4585,3575
 Hindenburgdamm	1 4585,3575 4580,3514 4564,3457 4514,3329 4454,3260
 tragen (Treppe)	0:60 14549,16538
-Blumenweg	1 -9445,-2389 -9353,-2089
+Blumenweg	1 -9445,-2389 -9343,-2087
 Golliner Str.	1 22217,17989 22276,18107 22191,18150
 Schorfheidestr.	1s 21900,18215 21864,18230
 Jagowstr. (Hermsdorf)	1 3046,22292 3043,22407 3050,22554 3056,22693

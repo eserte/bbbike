@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.141 2007/04/15 22:07:54 eserte Exp $
+#: version: $Id: handicap_s-orig,v 4.141 2007/04/15 22:07:54 eserte Exp eserte $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Behrenstr./Bebelplatz: Einbahnstraﬂe	q3::inwork; 9626,12227 9700,12234 9743,12239 9801,12245
@@ -340,6 +340,8 @@ Kurt-Schumacher-Damm (Nord): eigentlich Einbahnstraﬂe, Gehweg benutzen	q4; 3643,
 Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen	q1 6505,7010 6662,7018
 Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen, kurze Rampe	q1 6662,7018 6781,7030
 Viktoriapark: Fuﬂg‰nger, kurze Rampe	q1 5013,6003 4981,5939 4957,5894
+Blunckstr.: beidseitig beparkt und eng	q1 5429,19165 5502,19162 5571,19178 5601,19204 5609,19230 5603,19320 5586,19428 5570,19473
+(Hochkalterweg - Floningweg): Fuﬂg‰nger	q1 10294,2745 10196,2771
 Erdmann-Graeser-Weg: Bordsteinkante, Fuﬂg‰nger	q1 -831,3616 -935,3706 -961,3737 -1013,3804
 Aﬂmannstr.: Bodenschwellen	q1 25039,5295 25039,5304 25048,5727
 (Fuﬂweg parallel zur Aﬂmannstr.): wenig Fuﬂg‰nger	q1 25002,5296 25009,5593
@@ -389,7 +391,7 @@ Jeanne-Mammen-Bogen: Fuﬂg‰ngerzone	q3 4954,10876 5090,10868
 Holwedestr.: schmale Straﬂe	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
 (Fuﬂg‰ngertunnel Bahnhof Lichterfelde Ost): Fuﬂg‰nger	q4 5367,2528 5413,2436
 Am Schloﬂpark: eng bei Autoverkehr	q1 10775,19054 10712,18975 10625,18831 10496,18704
-(Karl-Bonhoeffer-Nervenklinik zwischen Hermann-Piper-Str. und U-Bahnhof): Krankenhausgel‰nde	q1 5001,19832 5079,19635 5124,19634 5228,19320 5246,19244 5441,19139
+(Karl-Bonhoeffer-Nervenklinik zwischen Hermann-Piper-Str. und U-Bahnhof): Krankenhausgel‰nde	q1 5001,19832 5079,19635 5124,19634 5228,19320 5246,19244 5429,19165
 Poschingerstr.: enge Straﬂe	q1 5697,6276 5754,6238 5824,6240 5875,6262 5925,6311 5971,6343 6106,6361 6261,6391
 Hˆltermannsteig: Fuﬂg‰nger	q2 13974,2728 13936,2795 13935,2908 13941,3219 13965,3222 13997,3290
 Eiswaldtstr.: schmale Straﬂe	q1 6733,2433 6834,2449 6937,2417 7052,2353 7172,2343 7282,2386
@@ -704,7 +706,7 @@ Altenburger Str.: Fuﬂg‰nger	q2 6650,1059 6631,968
 (Mauerweg Lichtenrade - Lichterfelde): Fuﬂg‰nger	q1 10323,-3150 10057,-3175 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 8846,-2089 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7110,-596 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6253,361 6198,328 6013,211 5832,93 5435,-157 4842,-547 4596,-707 4400,-913
 Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
 (Gielower Str - Buschkrugallee): Fuﬂg‰nger	q1 14012,4184 14053,4173 14100,4166
-(Parkweg Buschkrugallee - Bruno-Taut-Ring): Fuﬂg‰nger	q1 14053,4173 14045,4164 14009,4148 13923,4101 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895 13626,3867
+(Parkweg Buschkrugallee - Bruno-Taut-Ring): Fuﬂg‰nger	q1 14053,4173 14045,4164 14009,4148 13910,4090 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895 13626,3867
 (Parkweg Fritz-Reuter-Alle - Bruno-Taut-Ring): Fuﬂg‰nger	q1 13476,3857 13487,3862 13601,3895
 (Parkweg Fritz-Reuter-Allee - Britzer-Park):Fuﬂg‰nger	q1 13476,3857 13292,3837
 (Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): Fuﬂg‰nger	q1 13487,3862 13531,3768 13545,3692 13629,3511
@@ -726,3 +728,4 @@ K¸hleweinstr.: Autos und Schule	q1 8085,17225 8043,17282 8014,17475 7998,17564 7
 (Blohmstr. - Diedersdorfer Str.): kaum Fuﬂg‰nger	q1 9093,-1670 8968,-1576 8845,-1521 8776,-1487 8492,-1376 8073,-1137
 (Dinnendahlstr. - Schichauweg): kaum Fuﬂg‰nger	q1 9123,-1321 8953,-1184 8882,-1142 8873,-1118
 (Weg an der Markuskirche): viele Fuﬂg‰nger, Bordsteinkanten	q3 6342,4783 6281,4700
+Allee der Kosmonauten - Biesdorfer Promenade: Fuﬂg‰nger	q1 19821,13604 19826,13444 19835,13152 20076,13034

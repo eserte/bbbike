@@ -1,4 +1,4 @@
-#: version: $Id: qualitaet_s-orig,v 4.195 2007/04/15 22:06:34 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.195 2007/04/15 22:06:34 eserte Exp eserte $
 #: title: Qualität von Straßen in Berlin
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
@@ -1577,6 +1577,8 @@ Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 Eulerstr.: Asphalt	Q0 9268,16228 9336,16302 9498,16480
 Boizenburger Str.: guter Asphalt	Q0 22310,12829 22310,12637 22309,12350 22385,12268
+Halbauer Weg: guter Asphalt	Q0 7753,3371 7734,3290 7719,3219 7722,3142 7748,3037 7758,2973
+Wuhlestr.: guter Asphalt	Q0 21562,13424 21580,13583 21593,13705 21616,13900
 Slabystr.: guter Asphalt	Q0 19273,5866 19180,6020 19025,6173
 Grimbartsteig: Verbundsteinpflaster	Q1 -1368,22091 -1136,22029 -990,21992 -918,21975 -667,21881 -562,21846 -464,21828
 An den Feldtmanngärten: guter Asphalt	Q0 15810,17512 15802,17446 15537,17484 15271,17439
@@ -1708,7 +1710,6 @@ Rietzestr.: Asphalt	Q0 12718,15214 12472,15356
 Luzinstr.: Beton	Q0 22925,13662 22859,13684 22759,13715
 Rudolf-Seiffert-Str.: mäßiger Asphalt	Q1 14857,13146 14978,13581 14821,13628 14844,13667
 Rosenbecker Str.: Beton	Q0 21684,18283 21699,18314 21751,18421 21732,18493 21678,18648 21628,18810
-Friedrich-Wilhelm-Str.: schlechtes Kopfsteinpflaster	Q3 8282,5909 8371,5896 8622,5867 8801,5844 8988,5821 9176,5803 9364,5784 9654,5738
 Oleanderstr.: mäßiger Asphalt	Q2 14038,14099 14164,14062 14295,14010
 Biesenbrower Str.: Beton	Q0 18131,17793 18237,17637 18403,17631 18565,17759 18875,18009 18893,18137 18737,18350 18643,18290
 Woltmannweg: Asphalt	Q0 5056,1321 4934,1131 4859,956 4837,890 4753,833
@@ -3170,6 +3171,8 @@ Zobeltitzstr.: Parkweg	Q1 4377,18037 4492,18013
 Zobeltitzstr.: Asphalt auf Kopfsteinpflaster mit Löchern	Q1 4492,18013 4644,17978 4739,17960 4862,17934 4992,17908
 Uhlandstr. (Lichtenrade): schlechtes Kopfsteinpflaster	Q3 10179,744 10242,572 10321,341 10373,216 10425,62 10469,-52
 Gürtelstr.: guter Asphalt	Q0 13494,15653 13423,15702 13332,15765
+Gürtelstr.: schlechtes Kopfsteinpflaster	Q3 13494,15653 13601,15586 13723,15505
+Allee der Kosmonauten - Biesdorfer Promenade: Asphalt	Q0 19821,13604 19826,13444 19835,13152 20076,13034
 Niebergallstr.: mäßiges Kopfsteinpflaster	Q2 23097,1641 23144,1439 23158,1379 23168,1335 23202,1192
 Kissinger Str. (Steglitz): asphaltiert	Q0 6214,6132 6198,6270 6214,6132 6222,5996
 Engelmannweg: guter Asphalt	Q0 4558,18342 4531,18217
@@ -3201,14 +3204,19 @@ Arthur-Weisbrodt-Str.: guter Asphalt	Q0 14168,13491 14217,13657
 Erdmann-Graeser-Weg: kleinteiliges Pflaster	Q1 -831,3616 -935,3706 -961,3737 -1013,3804
 Friedrich-Wolf-Str.: mäßiger Beton	Q1 22236,2029 22224,2061 22210,2140 22131,2333 22205,2367
 Jansenstr.: guter Asphalt	Q0 5278,19853 5338,19843 5396,19833 5422,19829 5439,19826 5533,19811
+(Hermann-Piper-Str./Olbendorfer Weg - Rathauspromenade): gepflasterte Wege	Q0 5001,19832 5254,19931
 Solferinostr.: guter Asphalt	Q0 5548,18309 5415,18316 5423,18438
 Amfortasweg: guter Asphalt	Q0 5150,4345 5067,4434 5144,4498 5173,4471 5214,4445
 Grünlingweg: Asphalt	Q0 14140,3921 14012,4002 13927,4044
+(Grünlingweg - Parkweg): unbefestiger Weg	Q1 13927,4044 13910,4090
 Waplitzer Str.: guter Beton	Q0 22743,11540 22666,11541 22640,11587 22597,11631 22554,11681 22461,11790
 Elisabeth-Feller-Weg: Asphalt	Q0 3466,2214 3468,2304 3473,2465
 Bamberger Str.: Asphalt	Q0 11130,-2120 11380,-2100 11631,-2088 11692,-2047 11727,-2003
 Hochkalterweg: guter Asphalt	Q0 10612,2675 10526,2694 10402,2721 10294,2745
+(Hochkalterweg - Floningweg): gut befahrbar	Q0 10294,2745 10196,2771
 Groenerstr.: schlechtes Kopfsteinpflaster	Q3 -3258,15100 -3360,14974 -3447,14863
+Blunckstr.: guter Beton	Q0 5429,19165 5502,19162 5571,19178 5601,19204 5609,19230 5603,19320 5586,19428 5570,19473
+Friedrich-Wilhelm-Str.: schlechtes Kopfsteinpflaster	Q3 8282,5909 8371,5896 8622,5867 8801,5844 8988,5821 9176,5803 9364,5784 9654,5738
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14202,13140 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934
@@ -4218,7 +4226,7 @@ Wuhlewanderweg: wassergebundene Decke	Q1 22314,17916 22365,17864
 (Verbindung Golliner Str. - Wuhlewanderweg)	Q1 22250,18292 22282,18300 22356,18264 22356,18239 22367,18226
 Gielower Str.: Beton mit asphaltierten Ausbesserungen	Q2 13394,4373 13626,4304 13825,4240 14012,4184
 (Gielower Str - Buschkrugallee): Asphalt	Q0 14012,4184 14053,4173 14100,4166
-(Parkweg Buschkrugallee - Bruno-Taut-Ring): wassergebundene Decke	Q1 14053,4173 14045,4164 14009,4148 13923,4101 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895 13626,3867
+(Parkweg Buschkrugallee - Bruno-Taut-Ring): wassergebundene Decke	Q1 14053,4173 14045,4164 14009,4148 13910,4090 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895 13626,3867
 (Parkweg Fritz-Reuter-Alle - Bruno-Taut-Ring): Verbundsteine, wassergebundene Decke	Q1 13476,3857 13487,3862 13601,3895
 (Parkweg Fritz-Reuter-Allee - Britzer-Park): wassergebundene Decke	Q1 13476,3857 13292,3837
 (Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): wassergebundene Decke	Q1 13487,3862 13531,3768 13545,3692 13629,3511
