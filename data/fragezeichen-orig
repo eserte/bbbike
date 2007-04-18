@@ -193,7 +193,7 @@ Tempelhofer Veloroutenpläne: Grauwackeweg, Muschelkalkweg, Str. 482: genaue Lage
 #: by: ^^^
 #: XXX Eintrag von Torsten Fleischmann:
 Radweg in Zepernick, beidseitig, auf der südöstlichen Seite: genauer Beginn- und Endpunkt?	? 18292,26726 19364,27415 19475,27877 20017,28297 20472,28570
-Borussiastr.: aus dem Bus heraus sah es so aus, als ob hier *kein* Kopfsteinpflaster ist, vielleicht David nochmal fragen?	? 9241,6791 9706,6802
+Borussiastr.: aus dem Bus heraus sah es so aus, als ob hier *kein* Kopfsteinpflaster ist, vielleicht David nochmal fragen?	? 9241,6791 9511,6797 9706,6802
 Bürgerpark Pappelfriedhof: ist er hier?	? 11121,15327 11182,15284 11151,15233 11101,15263 11115,15284 11098,15298
 Ackerpark: ist er hier?	? 9629,14186 9577,14105 9634,14073 9681,14145
 Hinckeldeybrücke: genaue Koordinaten der Schleife?	? 3358,15794 3336,15644 3332,15587
@@ -232,6 +232,8 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet? in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: lesz...:
+Bulgenbachweg: gutes Kopfsteinpflaster, Q1, Sandbanketten	? 3439,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
 #: by: Peter Loth:
 Hornblendeweg: Asphalt, Q0, Einbahnstraße Richtung Westen	? 10659,1369 10641,1442 10594,1468 10504,1438 10408,1387 10406,1337 10441,1281
 #: by: anonymous:
@@ -293,9 +295,6 @@ Indrastr.: Kopfsteinpflaster, Q2	? 12233,18170 12269,18042 12245,17888
 Vietzer Zeile: guter Asphalt, Q0	? 2818,19606 2937,19753
 #: by: Hans-Peter Ott 
 Drenziger Zeile: mäßiger Asphalt, Q1	? 2937,19753 2800,19894
-#: by: anonymous und Holger Kohn: mäßiges Kopfsteinpflaster, Q2
-#: by: petra (loewe) mehr Details:
-Greulichstr.: zwischen Kiepertplatz und Hranitzkystraße gutes Kopfsteinpflaster, danach guter Asphalt Q1/Q0	? 8156,1100 8203,1194 8528,1846
 #: by: Sascha (saschajana@...)
 Narzissenweg (Altglienicke): Asphalt Q1	? 20246,553 20206,464 20214,375
 #: by: Oliver 
@@ -915,10 +914,6 @@ Göttin - Neu-Töplitz: Qualität? Ausschilderung?	? -24098,4329 -23819,4206 -23597
 Göttin - Neu-Töplitz (längere Alternativstrecke): Qualität? Ausschilderung?	? -24098,4329 -23927,4682 -23439,4685 -22782,4597 -22836,4190 -22906,4136 -22909,4076
 Beelitz - Schlunkendorf - Kähnsdorf: Qualität? Nur für Radfahrer offen (von Schlunkendorf bis Kähnsdorf)?	? -15840,-19875 -15820,-18897 -15477,-18643 -15211,-18664 -15160,-18324 -15198,-18059 -14322,-17043 -14233,-16484 -14637,-16112
 Siedlung Schönwalde - Wansdorf/Pausin: Qualität?	? -10313,21144 -10336,21462 -10425,22139 -10425,22503 -10564,22896 -10590,23112 -10559,23255
-#: note: Siehe auch http://www.ruppin.de/rheinsberg/allgemein/geografie.html (B122 durch Rheinsberg); lbvs-Baustelleninfos
-#: note: Gegenanzeige: http://www.neuzelle.com/dasdorf.htm
-#: note: Wikipedia aktualisieren!
-Neuruppin - Rheinsberg - Wesenberg: mittlerweile B122?	? -28477,59467 -28437,59917 -28116,60092 -27347,60616 -27155,60854 -26733,61993 -25490,64009 -25213,64243 -25042,64782 -24732,64958 -24335,65501 -22567,67134 -21150,67860 -20726,68037 -20134,68322 -20664,69697 -20923,70076 -21380,70629 -21618,70905 -22033,71864 -22298,72353 -22950,72861 -23500,74226 -24676,75500 -25331,76329 -25764,76324 -25331,76329 -25462,76520 -25679,76561 -25671,77176 -25459,77650 -25439,77907 -25923,78844 -26009,79227 -26582,81275 -26434,81736 -26543,81992 -26523,82141 -26827,82396 -26978,82545 -27024,82802 -26912,83088 -26693,83080 -26520,83231 -26098,84240 -26120,84667 -26316,84900 -26403,85177 -26219,85956 -26211,86312 -26204,86724 -25968,87174 -25474,87711 -25192,87735 -24204,88916 -22995,89694 -22822,89759 -22367,89699 -21869,89874 -21373,90177 -20960,90180 -20726,90673 -20817,91227 -20927,91460 -21084,92141 -21086,92461 -20901,93224 -20979,95105 -21155,95401 -21362,95487 -21289,96060 -21333,96656 -21335,96890 -21227,96890
 Schildower Weg, Teil des Barnimer Dörferwegs: Qualität? (laut ADFC-Karte mäßig oder schlecht geeignet)	? 8423,24358 8198,24225 7956,24083 7887,24043 7874,24035
 Möllersfelder Weg - Schillingweg: Qualität (möglicherweise guter Feldweg)? Teil des Barnimer Dörferwegs?	? 10799,24194 11147,23778
 Lübarser Weg: Qualität?	? 8423,24358 8710,24821
@@ -928,7 +923,6 @@ Leonhard-Frank-Str.: Qualität (laut ADFC-Karte nordöstlich des Heinrich-Mann-Pla
 Stille Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10184,18875 10128,19110
 (Am Schloss Schönhausen): Qualität, für Autofahrer befahrbar?	? 10390,19069 10322,19046 10278,19072 10249,19148 10223,19223 10243,19267 10308,19297
 Schloßallee - Blankenburger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10661,19307 10481,19344 10393,19587
-Lindenberger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 11312,19537 11194,19861
 Wördenweg und Fortsetzung am Nordgraben: Qualität (laut ADFC-Karte nicht für Radfahrer geeignet)? Weg für Autofahrer geöffnet?	? 8513,21099 8122,20873 7671,20757 7428,20674
 Blaubeerweg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 10953,22195 10979,21977 11008,21725
 Mazetstr.: Qualität (laut ADFC-Karte überwiegend gut geeignet)? Ist der Abschnitt östlich der Blankenfelder Str. für Autofahrer gesperrt?	? 10979,21977 11026,21997 11329,22138 11437,22198 11566,22350

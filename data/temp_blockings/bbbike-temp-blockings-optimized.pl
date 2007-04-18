@@ -513,14 +513,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        undef,
        undef,
        undef,
-       {
-         'until' => 1176760800,
-         'text' => 'B 112 Forster Str. Bahnunterführung in der OD Guben Gleis- u. Brückensanierung Vollsperrung 13.04.2007-16.04.2007 ',
-         'from' => 1176328800,
-         'data' => 'userdel	2::inwork 100192,-50107 100189,-50404
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1187647200,
          'text' => 'B 112 Forster Str. Bahnunterführung in der OD Guben Gleis- u. Brückensanierung Vollsperrung 17.08.2007-20.08.2007 ',
@@ -754,6 +747,30 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'text' => 'L 038 zw. Briesen und Petersdorf Einbau Deckschicht Vollsperrung 07.05.2007-10.05.2007 ',
          'from' => 1178402400,
          'data' => 'userdel	2::inwork 74238,-3970 73292,-4598
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1180130400,
+         'text' => 'L 049 AS Bademeusel-Forst zw. Forst und Groß Bademeusel 32. Forster Duathlon zeitw. Vollsperrung 25.05.2007-25.05.2007 ',
+         'from' => 1179957600,
+         'data' => 'userdel	2::temp 101469,-77761 98851,-76089
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1178488800,
+         'text' => 'L 049 AS Bademeusel-Forst zw. Forst und Groß Bademeusel 5. Forster Run & Bike zeitw. Vollsperrung 06.05.2007-06.05.2007 ',
+         'from' => 1178316000,
+         'data' => 'userdel	2::temp 101469,-77761 98851,-76089
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1179352800,
+         'text' => 'L 220 B167 AS Finowfurt-Joachimsthal zw. Eichhorst und Elsenau Bau Otterdurchlass Vollsperrung 07.05.2007-16.05.2007 ',
+         'from' => 1178402400,
+         'data' => 'userdel	2::inwork 29812,57628 29056,57503
 ',
          'type' => 'gesperrt'
        }

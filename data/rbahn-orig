@@ -1,5 +1,5 @@
 #: title: Regional- und Fernbahnstrecken
-#: version: $Id: rbahn-orig,v 5.34 2007/04/15 20:25:15 eserte Exp $
+#: version: $Id: rbahn-orig,v 5.34 2007/04/15 20:25:15 eserte Exp eserte $
 #:
 # "stillgelegt" meint hier: kein Personenverkehr auf diesen Gleisen
 # Werder - Brandenburg
@@ -17,9 +17,9 @@ RE1,RB20,RB21	RC -14975,-1918 -15324,-1987 -15581,-1902 -15875,-1719 -15988,-165
 # Potsdam Hbf - Abzweig nach Caputh
 RE1,RB20,RB21,RB22	RC -12248,-2045 -13487,-1898 -14234,-1920 -14634,-1896 -14975,-1918
 # Griebnitzsee - Potsdam Hbf
-RE1,RB21	RC -8060,-1670 -10527,-1979 -11379,-2066 -12248,-2045
+RE1,RB21	RC -8130,-1633 -10527,-1979 -11379,-2066 -12248,-2045
 # Abzweig nach Drewitz - Griebnitzsee
-RE1	RC -7434,-1463 -7607,-1542 -7780,-1607 -8060,-1670
+RE1	RC -7434,-1463 -7607,-1542 -7790,-1584 -8130,-1633
 # Wannsee - Abzweig nach Drewitz
 RE1,RE7,RB33	RC -4677,1420 -4854,1248 -5054,1079 -5073,1039 -5094,981 -5127,939 -5250,835 -5673,584 -5916,490 -6015,431 -6119,349 -6241,228 -6289,166 -6701,-491 -6997,-954 -7108,-1120 -7336,-1361 -7434,-1463
 # Wannsee - Abzweig nach Spandau

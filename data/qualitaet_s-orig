@@ -978,7 +978,7 @@ Südstern: gutes Kopfsteinpflaster	Q1 10747,9326 10629,9360
 Südstern: Kopfsteinpflaster	Q2 10629,9360 10567,9379
 Samariterstr.: Kopfsteinpflaster	Q2 14488,12189 14538,12371 14570,12478 14595,12557 14632,12681 14661,12798
 #: XXX: laut Juliane (no email), mein Eintrag war "Kopfsteinpflaster" mit einem Fragezeichen
-Fanningerstr.: Asphalt	Q0 16261,12224 16445,12193 16657,12168 16782,12154 16890,12135 16994,12122 17092,12107 17139,12100
+Fanningerstr.: Asphalt	Q0 16261,12224 16445,12193 16556,12180 16657,12168 16782,12154 16890,12135 16994,12122 17092,12107 17139,12100
 #: add_fragezeichen: mäßiges oder schlechtes Kopfsteinpflaster?
 Marienhöher Weg: Kopfsteinpflaster	Q2 8353,5188 8185,5209 8009,5000 7913,4996 7861,5029 7851,5125 7929,5250
 Maulbronner Ufer: Parkweg	Q1 7161,4091 6904,4162
@@ -1712,7 +1712,7 @@ Richnowstr.: mäßiger Asphalt	Q1 8850,6421 8946,6501
 Bosepark: kleinteiliges Kopfsteinpflaster, OK	Q1 8850,6421 8697,6455
 Bosestr.: Asphalt mit Asphaltflicken	Q1 8181,6341 8388,6322 8546,6307 8546,6329 8680,6322
 Bosestr.: schlechtes Kopfsteinpflaster	Q3 8680,6322 8846,6303 8943,6292
-Borussiastr.: Kopfsteinpflaster	Q2 9241,6791 9706,6802
+Borussiastr.: Kopfsteinpflaster	Q2 9241,6791 9511,6797 9706,6802
 Renate-Privatstr.: mäßiger Asphalt mit Schlaglöchern	Q1 8686,5536 8710,5735
 #: by ^^^
 #: by: Volker
@@ -1751,6 +1751,8 @@ Eulerstr.: Asphalt	Q0 9268,16228 9336,16302 9498,16480
 Boizenburger Str.: guter Asphalt	Q0 22310,12829 22310,12637 22309,12350 22385,12268
 ######################################################################
 #: by: anonymous vvv
+#: note: laut ADFC-Karte "gut geeignet", und laut anonymen Kommentar
+Lindenberger Str.: gut geeignet	Q0 11312,19537 11194,19861
 Halbauer Weg: guter Asphalt	Q0 7753,3371 7734,3290 7719,3219 7722,3142 7748,3037 7758,2973
 Wuhlestr.: guter Asphalt	Q0 21562,13424 21580,13583 21593,13705 21616,13900
 #: add_fragezeichen: wie ist die Qualität der Slabystr. in Oberschöneweide?
@@ -4606,8 +4608,27 @@ Groenerstr.: schlechtes Kopfsteinpflaster	Q3 -3258,15100 -3360,14974 -3447,14863
 #: by: elke Peters:
 Blunckstr.: guter Beton	Q0 5429,19165 5502,19162 5571,19178 5601,19204 5609,19230 5603,19320 5586,19428 5570,19473
 #: by Andreas (johnnyyen):
-#: note: anonymer Kommentar für die gesamte Straße, von Andreas nur zwischen Alboinplatz und Tedamm
+#: XXX: anonymer Kommentar für die gesamte Straße, von Andreas nur zwischen Alboinplatz und Tedamm
 Friedrich-Wilhelm-Str.: schlechtes Kopfsteinpflaster	Q3 8282,5909 8371,5896 8622,5867 8801,5844 8988,5821 9176,5803 9364,5784 9654,5738
+#: by: Thomas Pörs:
+Drachenfelsstr.: guter Asphalt	Q0- 18945,8547 18951,8574 18956,8618 18945,8660 18927,8702 18899,8744 18857,8790
+#: by: Andrea Kliche:
+Ecksteinweg: mäßiges Kopfsteinpflaster	Q2 17830,5324 17765,5406 17736,5441
+#: by: Petra (ploewe...):
+Stegerwaldstr.: guter Asphalt	Q0 8799,1380 8765,1363 8671,1409 8642,1422 8569,1457 8482,1502 8381,1550 8246,1616 8147,1663 8074,1698
+#: by: anonymous und Holger Kohn: mäßiges Kopfsteinpflaster, Q2
+#: by: petra (loewe) mehr Details:
+Greulichstr.: gutes Kopfsteinpflaster	Q1 8156,1100 8203,1194 8381,1550 8475,1738
+#: by: petra (loewe) mehr Details:
+Greulichstr.: guter Asphalt	Q0 8475,1738 8528,1846
+#: by: Kowaliczek Larissa:
+#: XXX: der Eintrag war "sehr gutes Kopfsteinpflaster", aber das gibt's einfach nicht
+Fuhrmannstr.: gutes Kopfsteinpflaster	Q1 9512,6652 9511,6797
+#: by: Marit Holzäpfel
+Hubertusstr. (Lichtenberg): gutes Kopfsteinpflaster	Q1 16556,12180 16583,12371
+Hubertusstr. (Lichtenberg): Asphalt	Q0 16514,11911 16541,12064
+#: by: mariposa:
+Laehr'scher Jagdweg: Asphalt	Q0 1482,359 1447,561 1377,897
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
@@ -5439,7 +5460,9 @@ Schillerring: kleinteiliges Kopfsteinpflaster	Q1 6922,18024 6793,18115 6671,1813
 Bootshausweg: fester Sandweg	Q1 -1073,16610 -1067,16635 -1092,16659 -1156,16689 -1190,16714 -1214,16745 -1229,16773 -1406,16907 -1465,16957 -1520,16989 -1564,17001 -1610,17007 -1664,17009 -1743,16990 -1723,16973 -1690,16971 -1676,16957 -1673,16939 -1725,16878 -1704,16870 -1684,16853 -1655,16813
 #: by Heiner Roettger [AM]
 #: by: Wilhelm Walz [AM]
-Holbeinstr. (Lichterfelde): Asphalt	Q1 3348,3278 3492,3371 3626,3465 3789,3576 4004,3729 4134,3825 4293,3951 4385,4032
+Holbeinstr. (Lichterfelde): Asphalt	Q1 3626,3465 3789,3576 4004,3729 4134,3825 4293,3951 4385,4032
+#: by: Hanswalter Schramm (correcting the above mentioned two)
+Holbeinstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 3348,3278 3492,3371 3626,3465
 #: by: Michael [AM]
 Coswiger Str.: Asphalt	Q1 19187,13850 19067,13818 19000,13801 18871,13796
 #: by: Karin Millonig [AM]
@@ -5595,7 +5618,7 @@ Michael-Bohnen-Ring: Asphalt	Q0 15229,6602 15251,6635 15251,6745 15284,6783 1545
 Otzenstr.: Asphalt	Q1 6410,7722 6429,7532 6352,7523
 Garzauer Str.: Asphalt	Q1 21737,13844 21722,13708 21830,13688 21895,13684
 Garzauer Str.: Asphalt	Q1 21830,13688 21814,13551
-Am Rehwechsel: Asphalt	Q0 1304,537 1527,574 1616,589 1643,633
+Am Rehwechsel: Asphalt	Q0 1304,537 1447,561 1527,574 1616,589 1643,633
 Schwabstr.: Kopfsteinpflaster	Q2 8182,17746 8409,17774
 Schwabstr.: Kopfsteinpflaster	Q2 8462,17778 8545,17787
 Lehmusstr.: Asphalt	Q0 19726,-32 19789,-43 20120,239 20098,359

@@ -5692,7 +5692,7 @@ EOF
        text  => 'B 112 Spremberger Str. OD Forst Brandenburgtag Vollsperrung 01.09.2006-03.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::temp 96181,-72790 95496,-73572
+userdel	q4::temp 96181,-72790
 EOF
      },
      { from  => 1156888800, # 2006-08-30 00:00
@@ -7775,6 +7775,30 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 74238,-3970 73292,-4598
+EOF
+     },
+     { from  => 1179957600, # 2007-05-24 00:00
+       until => 1180130400, # 2007-05-26 00:00
+       text  => 'L 049 AS Bademeusel-Forst zw. Forst und Groß Bademeusel 32. Forster Duathlon zeitw. Vollsperrung 25.05.2007-25.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 101469,-77761 98851,-76089
+EOF
+     },
+     { from  => 1178316000, # 2007-05-05 00:00
+       until => 1178488800, # 2007-05-07 00:00
+       text  => 'L 049 AS Bademeusel-Forst zw. Forst und Groß Bademeusel 5. Forster Run & Bike zeitw. Vollsperrung 06.05.2007-06.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 101469,-77761 98851,-76089
+EOF
+     },
+     { from  => 1178402400, # 2007-05-06 00:00
+       until => 1179352800, # 2007-05-17 00:00
+       text  => 'L 220 B167 AS Finowfurt-Joachimsthal zw. Eichhorst und Elsenau Bau Otterdurchlass Vollsperrung 07.05.2007-16.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 29812,57628 29056,57503
 EOF
      },
     );
