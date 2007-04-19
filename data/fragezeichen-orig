@@ -273,8 +273,6 @@ Erich-Pommer-Str: guter Beton, Q0	? -7464,-4407 -7417,-4323
 Delphinstr.: guter Asphalt, Q1	? 14555,6936 14686,7070
 #: by: rolf boje 
 Flötnerweg: mäßiger beton, Q1	? 5751,19443 5676,19424 5714,19290 5781,19236 5810,19244
-#: by: anonymous
-Hagedornstr.: mäßiger Asphalt, Q1	? 17810,5306 17906,5170 18030,5010 18202,4786
 #: by: Max Janke 
 Siedlungsring (Karow): sehr guter Asphalt, Q0, schlecht überaschaubar, q1	? 16139,24162 16245,24159 16357,24093 16473,24045 16900,23884 16887,23860 16720,23848 16664,23845 16600,23881 16542,23954 16512,23979 16462,24012
 #: by: Wilde (thwila) 
@@ -510,7 +508,8 @@ Werder - zum Plessower See: genaue Wegführung? Qualität?	? -22042,-2060 -22734,-
 Alt-Brieselang - Brieselang: Qualität? genaue Wegführung?	? -16914,22393 -18103,22064 -17978,21602 -18415,21465 -18378,20766 -18817,19637
 Marquardt, Hauptstr.: Laut mobil-potsdam.de: Asphaltiert	? -18825,4750
 B273 - Schwarzer Weg: Laut "mobil-potsdam.de" Waldweg	? -18693,4568 -18233,4501
-Goethestr./Fontanestr.: laut "mobil-potsdam.de" asphaltiert	? -9868,-1425 -9775,-1431 -9506,-1431 -9215,-1431 -9219,-1590 -9224,-1727
+Goetheplatz: Einbahnstraßenregelung auch für Radfahrer? Qualität?	? -9809,-1435 -9902,-1445 -9922,-1395 -9809,-1435
+Goethestr./Fontanestr.: laut "mobil-potsdam.de" asphaltiert	? -9809,-1435 -9506,-1431 -9215,-1431 -9219,-1590 -9224,-1727
 Geltow - Pirschheide am Templiner See: Laut "mobil-potsdam.de" überwiegend Waldweg mit kurzen asphaltierten Stellen	? -16912,-5690 -16558,-5727 -16323,-5706 -16072,-4894 -16010,-4509 -15886,-4339
 Am Templiner See zwischen Damm und R-Bhf. Charlottenhof: laut "mobil-potsdam.de" unterschiedliche Qualität ("Promenade", betoniert, Waldweg)	? -15886,-4339 -15750,-4196 -15765,-3990 -15431,-3618 -15340,-3406 -15203,-2931 -14912,-2884 -14905,-2690 -14751,-2431 -14859,-2384
 Uferweg - Mercure-Hotel: Zugang unter der Langen Brücke möglich?	? -12600,-1706 -12656,-1820 -12719,-1661
@@ -1109,7 +1108,7 @@ Friedrich-Klausing-Str.: Qualität	? -13133,1698 -13089,1707 -12983,1712 -12988,1
 Viereckremise: Qualität?	? -13316,1679 -13322,1760 -13332,1903 -13274,1908 -13211,1903 -13140,1900
 Fritz-von-der-Lancken-Str.: Qualität?	? -13140,1900 -13099,1903 -13009,1908
 Graf-von-Schwerin-Str.: Qualität?	? -13057,1384 -13067,1506 -13089,1707 -13089,1771 -13099,1903
-Angermannstr.: Qualität?	? -13100,1287 -13147,1278 -13189,1368 -13107,1374
+Angermannstr.: Qualität?	? -13100,1287 -13147,1278 -13189,1368 -13107,1357
 Peter-Hund-Str.: Qualität?	? -13242,1405 -13248,1490 -13252,1686
 Erich-Arendt-Str.: Qualität?	? -13248,1490 -13121,1496
 Nedlitzer Holz: Qualität?	? -13252,1686 -13264,1765 -13274,1908
@@ -1241,7 +1240,8 @@ Röländer Str.: Qualität? Radweg?	? 15130,24012 15490,24198 15571,24315
 Lüderitzstr.: Qualtität der Straße zwischen Transvaalstr. und Seestr.?	? 6215,16340 6503,16068 6681,15928
 Kienberg: Qualität? Straßenname?	? 19900,-2656 19827,-2688 19698,-2836 19418,-3703 19427,-3762
 Kirchstr. - An der Dorfkirche: Qualität (laut ADFC-Karte gut geeignet)?	? 8263,1061 8182,1026 8115,866 8173,839 8150,728
-An der Heilandsweide: Qualität (Abschnitt zwischen Marienfelder Allee und Kirchstr. laut ADFC-Karte gut geeignet)? Ist der Abschnitt östlich der Kirchstr. für Autofahrer gesperrt?	? 8070,1245 8203,1194 8305,1148 8539,1025 8687,950
+An der Heilandsweide: Qualität zwischen Marienfelder Allee und Greulichstr. (laut ADFC-Karte gut geeignet)?	? 8070,1245 8203,1194
+An der Heilandsweide: Ist der Abschnitt zwischen Kirchstr. und Wehnertstr. für Radfahrer befahrbar? Wie ist die Qualität?	? 8305,1148 8539,1025 8687,950
 B198 - Althüttendorf: Qualität?	? 37199,61240 36968,61684 36889,61715 36864,62166 36791,62367 36748,62422
 Althüttendorf - Joachimsthal: Qualität?	? 36730,62544 36450,62349 36188,62343 36029,62495 35798,62477 35292,62513 34987,62623 34524,62903 33939,63348 33732,63567 33592,63860 33592,64079 33500,64073 33421,64098 33080,63939
 Nördlich des Grimnitzsees: Qualität?	? 33689,65780 34018,65700 34347,65737 35176,65603 35786,65517 36377,65481 36681,65304 36864,64841 37193,64609 37266,64603 37608,64317 38095,64055 38327,63933
@@ -1412,3 +1412,7 @@ Krottnaurerstr.: Qualität? (nördlich der Matternhornstr. schlechtes Kopfsteinpfl
 Am Kanal, Nebenstraße: Qualität, Einbahnstraße?	? -12542,-1305 -12311,-1238
 Joliot-Curie-Str.: Qualität, Einbahnstraße?	? -12537,-1447 -12562,-1367 -12606,-1379 -12582,-1460 -12537,-1447
 Oderfähre: ab 2007-06-30 in Betrieb	? 71524,40721 72361,41057
+Gerlindeweg: Qualität des Abschnitts zwischen Beatestr. und Friederikestr.?	? -1484,18545 -1517,18580 -1572,18673 -1642,18679
+Gerlindeweg: Qualität des Abschnitts zwischen Luisenstr. und Helgaweg?	? -1846,18778 -1907,18810 -2029,18822 -2102,18840
+#: note: ein anonymer Kommentar war nicht klar genug. Laut Luftbild scheinen Autofahrer nicht auf die Daumstr. fahren zu können
+Burscheider Weg: Qualität (möglicherweise gutes Kopfsteinpflaster)? Einbahnstraßenregelung: gibt es eine, wo und in welche Richtung?	? -1345,15060 -1322,15079 -934,15254 -862,15283 -741,15304

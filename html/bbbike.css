@@ -175,3 +175,9 @@ a.ms:visited { color:#333333; }
   color:red;
   font-weight:bold;
 }
+
+.newstrattrhead {
+  vertical-align:top;
+  font-weight:bold;
+  font-size:larger;
+}

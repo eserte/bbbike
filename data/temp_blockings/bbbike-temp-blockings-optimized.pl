@@ -630,14 +630,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1176933600,
-         'text' => 'L 049 Lübbenau-Lübben Bahnübergang nach OA Lübben Gleisbauarbeiten Vollsperrung 18.04.2007-18.04.2007 ',
-         'from' => 1176760800,
-         'data' => 'userdel	2::inwork 45124,-52888 45152,-53482 45088,-55645
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1177365600,
          'text' => 'L 049 Lübbenau-Lübben Bahnübergang nach OA Lübben Gleisbauarbeiten Vollsperrung 21.04.2007-23.04.2007 ',

@@ -49,7 +49,7 @@
       </tr>
 [% END -%]
 [% IF !cgidir %][% cgidir = "../cgi" %][% END -%]
-[% IF !bbbikecss %][% bbbikecss = "bbbike.css?v=1.22" %][% END -%]
+[% IF !bbbikecss %][% bbbikecss = "bbbike.css?v=1.25" %][% END -%]
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <!-- -*-html-*- -->
 <!-- DO NOT EDIT, generated automatically from newstreetform.tpl.html -->
 <html>
@@ -181,7 +181,7 @@ function init() {
 [% END -%]
 
    <tr>
-    <td>Straﬂenname</td>
+    <td class="newstrattrhead">Straﬂenname</td>
     <td><input name="strname" [% INCLUDE text_default inputname="strname" %] size="30"/>
         (ggfs. mit Bezirk oder Ortsteil)</td>
    </tr>
@@ -189,7 +189,7 @@ function init() {
    <tr><td colspan="3"><hr /></td></tr>
 
    <tr>
-    <td>Qualit‰t</td>
+    <td class="newstrattrhead">Qualit‰t<br/>der Fahrbahn</td>
     <td>
      <table cellpadding="0" cellspacing="0">
 [% INCLUDE colhead text="Bewertung:" %]
@@ -222,7 +222,7 @@ function init() {
    <tr><td colspan="3"><hr /></td></tr>
 
    <tr>
-    <td>Sonstige<br/>Behinderungen</td>
+    <td class="newstrattrhead">Sonstige<br/>Behinderungen</td>
     <td>
      <table cellpadding="0" cellspacing="0">
 [% INCLUDE colhead text="Eingeschr‰nkte Geschwindigkeit:" %]
@@ -233,8 +233,11 @@ function init() {
 [% INCLUDE radiocell cat="qq" type="cat" val="q4" text="Schrittgeschwindigkeit" %]
 [% INCLUDE colhead text="Grund:" %]
 [% INCLUDE radiocell cat="qq" type="desc" val="keine Einschr‰nkung" %]
+[% INCLUDE radiocell cat="qq" type="desc" val="einige Fuﬂg‰nger" %]
 [% INCLUDE radiocell cat="qq" type="desc" val="viele Fuﬂg‰nger" %]
 [% INCLUDE radiocell cat="qq" type="desc" val="Fuﬂg‰ngerzone" helpurl="http://de.wikipedia.org/wiki/Fuﬂg‰ngerzone" %]
+[% INCLUDE radiocell cat="qq" type="desc" val="Bordsteinkanten" %]
+[% INCLUDE radiocell cat="qq" type="desc" val="enge Straﬂe" %]
 [% INCLUDE radiocell cat="qq" type="desc" val="kurvenreich" %]
       <tr>
        <td>
@@ -253,7 +256,7 @@ function init() {
    <tr><td colspan="3"><hr /></td></tr>
 
    <tr>
-    <td>Besondere Anlagen<br/>f¸r Radfahrer</td>
+    <td class="newstrattrhead">Besondere Anlagen<br/>f¸r Radfahrer</td>
     <td>
      <table cellpadding="0" cellspacing="0">
 [% INCLUDE radiocell cat="RW" type="cat" val="RW0" text="keine" %]
@@ -277,7 +280,7 @@ function init() {
 
    <tr><td colspan="3"><hr /></td></tr>
    <tr>
-    <td>Gesperrt</td>
+    <td class="newstrattrhead">Gesperrt</td>
     <td>
      <table cellpadding="0" cellspacing="0">
 [% INCLUDE radiocell cat="sperre" type="cat" val="" text="offen f¸r Radfahrer" %]

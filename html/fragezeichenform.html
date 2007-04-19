@@ -5,7 +5,7 @@
  <title>Neue Straße für BBBike</title>
  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
  <link rev="made" href="mailto:slaven@rezic.de" />
- <link rel="stylesheet" type="text/css" href="bbbike.css?v=1.22" />
+ <link rel="stylesheet" type="text/css" href="bbbike.css?v=1.25" />
  <script>
 function check() {
   if (!check_strname()) return false;
@@ -106,7 +106,7 @@ function init() {
    <tr><td colspan="3"><hr /></td></tr>
 
    <tr>
-    <td>Straßenname</td>
+    <td class="newstrattrhead">Straßenname</td>
     <td><input name="strname"  size="30"/>
         (ggfs. mit Bezirk oder Ortsteil)</td>
    </tr>
@@ -114,7 +114,7 @@ function init() {
    <tr><td colspan="3"><hr /></td></tr>
 
    <tr>
-    <td>Qualität</td>
+    <td class="newstrattrhead">Qualität<br/>der Fahrbahn</td>
     <td>
      <table cellpadding="0" cellspacing="0">
 
@@ -253,7 +253,7 @@ function init() {
    <tr><td colspan="3"><hr /></td></tr>
 
    <tr>
-    <td>Sonstige<br/>Behinderungen</td>
+    <td class="newstrattrhead">Sonstige<br/>Behinderungen</td>
     <td>
      <table cellpadding="0" cellspacing="0">
 
@@ -318,6 +318,15 @@ function init() {
 
 
       <tr>       <td>
+        <input id="qqdesc_1_einige Fußgänger" style="margin-right:1em;" type="radio" name="qqdesc_1" value="einige Fußgänger"
+ /></td>
+       <td><label for="qqdesc_1_einige Fußgänger">einige Fußgänger</label>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
         <input id="qqdesc_1_viele Fußgänger" style="margin-right:1em;" type="radio" name="qqdesc_1" value="viele Fußgänger"
  /></td>
        <td><label for="qqdesc_1_viele Fußgänger">viele Fußgänger</label>
@@ -331,6 +340,24 @@ function init() {
  /></td>
        <td><label for="qqdesc_1_Fußgängerzone">Fußgängerzone</label>
         <a class="yellowbox" style="text-decoration:none" target="newstreetform_help" href="http://de.wikipedia.org/wiki/Fußgängerzone">?</a>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="qqdesc_1_Bordsteinkanten" style="margin-right:1em;" type="radio" name="qqdesc_1" value="Bordsteinkanten"
+ /></td>
+       <td><label for="qqdesc_1_Bordsteinkanten">Bordsteinkanten</label>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
+        <input id="qqdesc_1_enge Straße" style="margin-right:1em;" type="radio" name="qqdesc_1" value="enge Straße"
+ /></td>
+       <td><label for="qqdesc_1_enge Straße">enge Straße</label>
 
        </td>
       </tr>
@@ -380,7 +407,7 @@ function init() {
    <tr><td colspan="3"><hr /></td></tr>
 
    <tr>
-    <td>Besondere Anlagen<br/>für Radfahrer</td>
+    <td class="newstrattrhead">Besondere Anlagen<br/>für Radfahrer</td>
     <td>
      <table cellpadding="0" cellspacing="0">
 
@@ -484,7 +511,7 @@ function init() {
 
    <tr><td colspan="3"><hr /></td></tr>
    <tr>
-    <td>Gesperrt</td>
+    <td class="newstrattrhead">Gesperrt</td>
     <td>
      <table cellpadding="0" cellspacing="0">
 

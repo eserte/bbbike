@@ -1370,7 +1370,7 @@ Altvaterstr.: Beton	Q0 -3223,3034 -3225,2902
 Gerosteig: Asphalt	Q0 18990,584 19379,479 19471,448
 P‰tzer Str.: schlechtes Kopfsteinpflaster	Q3 12885,5205 12963,5199 13039,5122
 Haewererweg: Verbundsteinpflaster	Q1 12125,1282 12097,1243
-Wiesbadener Str. (Lichtenrade): Asphalt	Q0 11124,-598 11460,-553 11755,-519
+Wiesbadener Str. (Lichtenrade): Asphalt	Q0 11124,-598 11460,-553 11771,-545
 Taunusstr. (Lichtenrade): Asphalt	Q0 11614,-1215 11537,-952 11460,-553 11456,-498
 Goltzstr.: schlechtes Kopfsteinpflaster	Q3 10639,-2364 10447,-2518 10379,-2571 10382,-2598
 (Beethovenstr. - Mozartstr., Mauerweg): Asphalt, kurze St¸cke unbefestigt	Q1 10323,-3150 10475,-3174
@@ -1577,6 +1577,7 @@ Wˆhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 Eulerstr.: Asphalt	Q0 9268,16228 9336,16302 9498,16480
 Boizenburger Str.: guter Asphalt	Q0 22310,12829 22310,12637 22309,12350 22385,12268
+Braunfelsstr.: m‰ﬂiger Asphalt	Q1 11953,-1181 11948,-1122 11878,-885 11844,-773 11808,-659 11771,-545 11747,-440 11721,-351
 Lindenberger Str.: gut geeignet	Q0 11312,19537 11194,19861
 Halbauer Weg: guter Asphalt	Q0 7753,3371 7734,3290 7719,3219 7722,3142 7748,3037 7758,2973
 Wuhlestr.: guter Asphalt	Q0 21562,13424 21580,13583 21593,13705 21616,13900
@@ -2501,8 +2502,8 @@ Malchower Str.: m‰ﬂig geeignet	Q2 12841,18157 13035,18151 13163,18149
 Malchower Str.: Asphalt	Q0 13163,18149 13374,18134 13537,18075 13631,18041
 Malchower Str.: m‰ﬂig geeignet	Q2 13631,18041 13732,18026 13901,18124
 Wiﬂlerstr.: Asphalt	Q0 23950,5342 23956,5213 23775,5258
-Kloster-Zinna-Str.: Asphalt	Q0 11218,-350 11704,-303
-Mauerweg Lichtenrade - Buckow: unbefestigte Strecke	Q2 11646,-3251 11803,-3250 12232,-2281 12265,-2147 11980,-1197 11736,-293 11581,281 11618,506 11794,550
+Kloster-Zinna-Str.: Asphalt	Q0 11218,-350 11712,-289
+Mauerweg Lichtenrade - Buckow: unbefestigte Strecke	Q2 11646,-3251 11803,-3250 12232,-2281 12265,-2147 12078,-1170 11819,-286 11686,169 11698,390 11794,550
 Campestr.: Asphalt	Q0 1127,20434 1128,20525 1080,20617
 Willdenowstr. (Wedding): Kopfsteinpflaster	Q2 7356,15350 7525,15186 7629,15078
 Lothar-Bucher-Str.: Asphalt	Q0 5598,6136 5748,6051 5845,6049 6024,6080
@@ -2702,7 +2703,7 @@ Birkenwerderstr.: Asphalt/Beton	Q0 6470,20761 6945,20805
 Tornower Weg: Asphalt/Beton	Q0 6461,20642 6457,20717 6470,20761 6496,20869 6523,20987 6544,21083
 Borgsdorfer Str.: Asphalt/Beton	Q0 6496,20869 6962,20895
 Germendorfer Str.: Asphalt/Beton	Q0 6383,20975 6523,20987 6982,21013 7036,21017
-Wentowsteig: Asphalt/Beton	Q0 6924,20695 6945,20805 6962,20895 6982,21013
+Wentowsteig: Asphalt/Beton	Q0 6924,20695 6945,20805 6955,20859 6962,20895 6982,21013
 Erholungsweg: Asphalt	Q0 2763,21000 2861,21089 2961,21119 3042,21141 3117,21154 3206,21179 3304,21205 3450,21244
 Buriger Weg: Beton	Q1 30132,4281 30192,4487 30254,4692
 (Spreeuferweg): Parkweg	Q2 4543,12516 4501,12544 4331,12538
@@ -3217,10 +3218,14 @@ Hochkalterweg: guter Asphalt	Q0 10612,2675 10526,2694 10402,2721 10294,2745
 (Hochkalterweg - Floningweg): gut befahrbar	Q0 10294,2745 10196,2771
 Groenerstr.: schlechtes Kopfsteinpflaster	Q3 -3258,15100 -3360,14974 -3447,14863
 Blunckstr.: guter Beton	Q0 5429,19165 5502,19162 5571,19178 5601,19204 5609,19230 5603,19320 5586,19428 5570,19473
-Friedrich-Wilhelm-Str.: schlechtes Kopfsteinpflaster	Q3 8282,5909 8371,5896 8622,5867 8801,5844 8988,5821 9176,5803 9364,5784 9654,5738
+Friedrich-Wilhelm-Str.: Asphalt	Q0 8282,5909 8371,5896
+Friedrich-Wilhelm-Str.: schlechtes Kopfsteinpflaster	Q3 8371,5896 8622,5867 8801,5844 8988,5821 9176,5803 9364,5784 9654,5738
 Drachenfelsstr.: guter Asphalt	Q0 18945,8547 18951,8574 18956,8618 18945,8660 18927,8702 18899,8744 18857,8790
 Ecksteinweg: m‰ﬂiges Kopfsteinpflaster	Q2 17830,5324 17765,5406 17736,5441
+Waiblinger Weg: m‰ﬂiger Asphalt	Q1 17830,5324 17803,5303 17771,5278
+Hagedornstr.: m‰ﬂiger Asphalt	Q1 17803,5303 17906,5170 18030,5010 18202,4786
 Stegerwaldstr.: guter Asphalt	Q0 8799,1380 8765,1363 8671,1409 8642,1422 8569,1457 8482,1502 8381,1550 8246,1616 8147,1663 8074,1698
+An der Heilandsweide: Parkweg	Q1 8203,1194 8305,1148
 Greulichstr.: gutes Kopfsteinpflaster	Q1 8156,1100 8203,1194 8381,1550 8475,1738
 Greulichstr.: guter Asphalt	Q0 8475,1738 8528,1846
 Fuhrmannstr.: gutes Kopfsteinpflaster	Q1 9512,6652 9511,6797
@@ -3228,6 +3233,11 @@ Hubertusstr. (Lichtenberg): gutes Kopfsteinpflaster	Q1 16556,12180 16583,12371
 Hubertusstr. (Lichtenberg): Asphalt	Q0 16514,11911 16541,12064
 Laehr'scher Jagdweg: Asphalt	Q0 1482,359 1447,561 1377,897
 (Laehr'scher Jagdweg - Teltower Damm): unbefestiger Weg	Q2 1482,359 1409,313 1329,298
+Gerlindeweg: Kopfsteinpflaster	Q2 -1642,18679 -1665,18679 -1713,18723 -1846,18778
+Suhler Str.: guter Beton	Q0 22969,14840 22966,14791 22961,14696 22958,14651 22877,14655 22836,14742 22839,14801 22824,14803 22829,14823 22822,14846 22781,14865 22730,14943 22726,15082
+Suhler Str.: guter Beton	Q0 22966,14791 22839,14801
+Daffinger Weg: m‰ﬂiger Asphalt, Fahrbahnsch‰den	Q1 26350,13068 26531,13280 26575,13330 26637,13404 26759,13550
+Teschendorfer Weg: guter Beton	Q0 7280,20895 7093,20874 6955,20859
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14202,13140 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934
