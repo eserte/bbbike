@@ -749,8 +749,6 @@ Röländer Str.: Qualität? Radweg?	? 15130,24012 15490,24198 15571,24315
 Lüderitzstr.: Qualtität der Straße zwischen Transvaalstr. und Seestr.?	? 6215,16340 6503,16068 6681,15928
 Kienberg: Qualität? Straßenname?	? 19900,-2656 19827,-2688 19698,-2836 19418,-3703 19427,-3762
 Kirchstr. - An der Dorfkirche: Qualität (laut ADFC-Karte gut geeignet)?	? 8263,1061 8182,1026 8115,866 8173,839 8150,728
-An der Heilandsweide: Qualität zwischen Marienfelder Allee und Greulichstr. (laut ADFC-Karte gut geeignet)?	? 8070,1245 8203,1194
-An der Heilandsweide: Ist der Abschnitt zwischen Kirchstr. und Wehnertstr. für Radfahrer befahrbar? Wie ist die Qualität?	? 8305,1148 8539,1025 8687,950
 B198 - Althüttendorf: Qualität?	? 37199,61240 36968,61684 36889,61715 36864,62166 36791,62367 36748,62422
 Althüttendorf - Joachimsthal: Qualität?	? 36730,62544 36450,62349 36188,62343 36029,62495 35798,62477 35292,62513 34987,62623 34524,62903 33939,63348 33732,63567 33592,63860 33592,64079 33500,64073 33421,64098 33080,63939
 Nördlich des Grimnitzsees: Qualität?	? 33689,65780 34018,65700 34347,65737 35176,65603 35786,65517 36377,65481 36681,65304 36864,64841 37193,64609 37266,64603 37608,64317 38095,64055 38327,63933
@@ -906,7 +904,6 @@ S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
 # added from handicap_s-orig and gesperrt-orig
 # added from other sources: (strassen plaetze landstrassen landstrassen2 strassen_bab flaechen wasserstrassen wasserumland wasserumland2 sbahn sbahnhof rbahn rbahnhof ubahn ubahnhof faehren hoehe orte orte2 orte_city ampeln ampelschaltung plz potsdam deutschland sehenswuerdigkeit obst radwege qualitaet_s qualitaet_l handicap_s handicap_l vorfahrt nolighting housenumbers green brunnels gesperrt gesperrt_car gesperrt_u gesperrt_s gesperrt_r comments_cyclepath comments_ferry comments_misc  comments_mount comments_path comments_route  comments_tram comments_kfzverkehr comments_scenic fragezeichen exits multi_bez_str)
 Bärenlauchstr.: gut geeignet (laut ADFC-Karte)	? 19722,5179 19745,4972 19760,4875
-(Der Breite Weg): wahrscheinlich Waldweg (laut ADFC-Karte)	? 1464,17373 1549,17718 1687,18141
 (Schwarzer Weg - Jörsstr.): wahrscheinlich Waldweg (laut ADFC-Karte)	? -792,18564 -828,18556 -955,18506 -1033,18504 -1224,18392 -1329,18382
 Alt-Hermsdorf: mäßig geeignet (laut ADFC-Karte (wahrscheinlich Kopfsteinpflaster))	? 4347,23205 4405,23149 4445,23128 4582,23035
 (Benekendorffstr - Lübars): mäßig geeignet (laut ADFC-Karte)	? 6606,23655 6674,23683 6744,23695
@@ -924,6 +921,8 @@ Freiheitsweg (ausgeschilderte Radroute - welche?)	? 6558,18947 6715,18918 6753,1
 (Am Stichkanal - Uferweg am Teltowkanal) (Qualität des Verbindungsweges?)	? 2736,645 2784,589
 Jugendplatz (Qualität?)	? 1191,14513 1262,14510
 (Weg zur Krampenburg) (ist das ein offizieller Name mit Ausschilderung?)	? 27609,305 27571,262 27171,155 27273,-106 27407,-401 27552,-741 27559,-1365 27357,-1545 27323,-1671
+Alemannenstr. (Frohnau) (Qualität der Alemannenstr. in Frohnau?)	? 1736,24722 1747,24606 1747,24549 1742,24526 1750,24433 1732,24402
+Alemannenstr. (Frohnau) (Qualität der Alemannenstr. in Frohnau?)	? 1750,24433 1776,24416
 (Allee der Kosmonauten - Biesdorfer Promenade) (Qualität? (laut ADFC-Karte gut geeignet))	? 19837,13531 19826,13444 19835,13152 20076,13034
 Grimmingweg (Qualität des Grimmingweges? (sowohl zwischen Säntisstr. und Föttingerzeile als auch des Fußwegabschnittes))	? 9978,1854 10001,1814 10004,1787 10003,1768 9943,1543 9931,1502 9908,1416
 Grimmingweg (Qualität des Grimmingweges? (sowohl zwischen Säntisstr. und Föttingerzeile als auch des Fußwegabschnittes))	? 9908,1416 9832,1380
@@ -968,7 +967,6 @@ Barthels Pfuhl (oder Barth*o*ls Pfuhl?)	? -23662,80950 -23775,80837 -23675,80725
 Eastgate (genaue Position?)	? 19788,15452
 Müncheberg, Turm (genaue Bezeichnung?)	? 60803,11559
 Müncheberg, Turm (genaue Bezeichnung?)	? 60306,11906
- (einige Radweg-Abschnitte der Perleberger Str. sind mittlerweile gesperrt, welche genau?)	? 6252,13600 6366,13716 6493,13822 6649,13947 6730,14021 6807,14093 7026,14282 7132,14375 7180,14419
 Gemeinsamer Rad- und Gehweg parallel zur Straße (Ist der Radweg ein Zweirichtungsradweg? Auf welcher Seite führt der Radweg?)	? 30390,-3443 29780,-3563 28499,-3409 28073,-3255 27906,-3136
 (Hegemeisterweg - Ernst-Thälmann-Stadion): Asphalt (ist die gesamte Strecke vom Hegemeisterweg bis zum Stadion asphaltiert?)	? 18409,7776 19069,6928
 Wuhlewanderweg: unbefestiger Weg/Schotterweg (der Abschnitt nördlich des Bahnhofs Wuhletal ist noch nicht fertiggestellt)	? 22199,12955 22036,12367 21998,12204 21970,12153

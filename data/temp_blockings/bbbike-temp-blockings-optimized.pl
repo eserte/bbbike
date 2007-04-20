@@ -673,14 +673,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1177452000,
-         'text' => 'B 167 Eberswalder Str. OD Eberswalde, zw. Spechthausener Str. u. Schönholzer Str. Deckenerneuerung Vollsperrung 10.04.2007-24.04.2007 ',
-         'from' => 1176069600,
-         'data' => 'userdel	q4::inwork 32143,48553 33252,48525 34356,48775
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -766,6 +759,57 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	2::inwork 29812,57628 29056,57503
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005213',
+         'until' => 1179266399,
+         'text' => 'Hosemannstraße (Prenzlauer Berg) in beiden Richtungen, zwischen Erich-Weinert-Straße und Schieritzstr. geplatzte Wasserleitung, Straße vollständig gesperrt (bis Mitte 05.2007)',
+         'from' => 1177102974,
+         'data' => 'userdel	2::inwork 12731,15824 12559,15524
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005269',
+         'until' => 1177365600,
+         'text' => 'Ebertstr. (Mitte) in beiden Richtungen, zwischen Behrenstr. und Scheidemannstr. Veranstaltung, Straße vollständig gesperrt (bis 23.04.07, 05:00)',
+         'from' => 1177103024,
+         'data' => 'userdel	2::temp 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005268',
+         'until' => 1177297200,
+         'text' => 'Str. des 17, Juni (Tiergarten) in beiden Richtungen, zwischen Großer Stern und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (bis 23.04.07, 05:00 Uhr)',
+         'from' => 1177103052,
+         'data' => 'userdel	2::temp 6828,12031 7383,12095 7816,12150 8063,12182 8089,12186 8214,12205 8515,12242
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1184536800,
+         'text' => 'B 167 zw. Dolgelin und Friedersdorf Inbetriebnahme OU Vollsperrung 23.04.2007-15.07.2007 ',
+         'from' => 1177192800,
+         'data' => 'userdel	2::inwork 78837,11306 78194,11798 77991,12506 77759,12767
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1177970400,
+         'text' => 'B 246 Bahnübergang in der OD Storkow Gleisbauarbeiten Vollsperrung 27.04.2007-30.04.2007 ',
+         'from' => 1177538400,
+         'data' => 'userdel	2::inwork 46813,-16595 47038,-17056 47086,-17195
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1178229600,
+         'text' => 'L 030 Luckenwalder Str. OD Königs Wusterhausen, Höhe ALDI Bau einer Zufahrt halbseitig gesperrt; Einbahnstraße 23.04.2007-03.05.2007 ',
+         'from' => 1177192800,
+         'data' => 'userdel	q4::inwork; 25543,-12403 25912,-11956
+',
+         'type' => 'handicap'
        }
      
 );

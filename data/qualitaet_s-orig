@@ -542,9 +542,11 @@ Corinthstr.: Kopfsteinpflaster	Q2 14608,10409 14439,10496
 (zum Mergenthalerring): etwas sandig	Q2 14458,8456 14560,8528
 Nordufer Flughafensee: Waldweg, OK	Q1 3108,18083 2801,18126 2775,18160 2239,18225
 Maienwerderweg: teils Waldweg (OK), teils m‰ﬂiger Asphalt	Q1 2239,18225 1549,17718 1293,17560 127,17176
-# XXX laut Thomas Thomas ist der s¸dliche Abschnitt "schmal, kurvig und enth‰t leider eine tiefsandige Passage" (Q2-Q3?), nˆrdlich des Maienwerder Wegs ist er "breit und z¸gig befahrbar" (Q1?)
-#: unverified_by ADFC-Karte
-(Der Breite Weg): wahrscheinlich Waldweg	Q2 1464,17373 1549,17718 1687,18141
+#: by: Thomas Thomas
+#: by: Konstanze Krug
+(Der Breite Weg): Waldweg mit tiefem Sand, wird auch als Radweg genutzt	Q3 1464,17373 1549,17718
+#: by: Thomas Thomas
+(Der Breite Weg): Waldweg, z¸gig befahrbar	Q2+ 1549,17718 1687,18141
 #: by: Thomas Heuving
 #: note: laut ADFC-Karte m‰ﬂig befahrbar
 (Uferweg): gut befahrbarer Waldweg	Q1 -389,17140 -280,17229 -266,17335 -215,17385 -141,17377 61,17495 110,17489 151,17537 187,17663 235,17704 260,17788 258,17880 381,18186 416,18386 448,18476 496,18514 586,18540 680,18631 757,18673 768,18742 970,18919 1006,18972 1122,19036 1189,19018 1200,18969 1369,18958 1457,18969 1490,18950
@@ -1751,6 +1753,9 @@ Eulerstr.: Asphalt	Q0 9268,16228 9336,16302 9498,16480
 Boizenburger Str.: guter Asphalt	Q0 22310,12829 22310,12637 22309,12350 22385,12268
 ######################################################################
 #: by: anonymous vvv
+Werbergstr.: Asphalt	Q0 9708,6493 9739,6635
+Tannenstr.: schlechtes Kopfsteinpflaster	Q3 2222,24884 2167,24900 2122,24929 2094,24961 2056,25035 2044,25111
+Horst-Caspar-Steig: guter Beton	Q0 15923,2129 15912,2100 15836,2113 15767,2097 15705,2085 15467,2073 15466,2049 15313,2041
 Braunfelsstr.: m‰ﬂiger Asphalt	Q1 11953,-1181 11948,-1122 11878,-885 11844,-773 11808,-659 11771,-545 11747,-440 11721,-351
 #: note: laut ADFC-Karte "gut geeignet", und laut anonymen Kommentar
 Lindenberger Str.: gut geeignet	Q0 11312,19537 11194,19861
@@ -3022,7 +3027,7 @@ Blechenstr.: Asphalt	Q0 14028,16707 13876,16819
 Nunsdorfer Ring: Asphalt	Q0 8853,172 8981,275 9171,166 9280,-127 9159,-171
 Albertinenstr.: gutes Kopfsteinpflaster	Q1 14067,16127 14085,16210
 Albertinenstr.: Asphalt	Q0 14085,16210 14153,16528
-Amalienstr.: Asphalt	Q0 14153,16528 13990,16629 13814,16759
+Amalienstr.: Asphalt	Q0 14153,16528 13990,16629 13855,16729 13814,16759
 Amalienstr.: m‰ﬂiger Asphalt	Q1 13814,16759 13589,16965
 Amalienstr.: Asphalt	Q0 13589,16965 13361,17172
 #: note: laut ADFC-Karte "m‰ﬂig geeignet":
@@ -4622,7 +4627,9 @@ Hagedornstr.: m‰ﬂiger Asphalt	Q1 17803,5303 17906,5170 18030,5010 18202,4786
 #: by: ^^^
 #: by: Petra (ploewe...): vvv
 Stegerwaldstr.: guter Asphalt	Q0 8799,1380 8765,1363 8671,1409 8642,1422 8569,1457 8482,1502 8381,1550 8246,1616 8147,1663 8074,1698
-An der Heilandsweide: Parkweg	Q1 8203,1194 8305,1148
+#: note: laut ADFC-Karte gut geeignet:
+An der Heilandsweide: asphaltiert	Q0 8070,1245 8203,1194
+An der Heilandsweide: Gehwegsteine, auﬂen fester Sand	Q0- 8203,1194 8305,1148 8539,1025 8687,950
 #: by: ^^^
 #: by: anonymous und Holger Kohn: m‰ﬂiges Kopfsteinpflaster, Q2
 #: by: petra (loewe) mehr Details:
@@ -4648,6 +4655,8 @@ Daffinger Weg: m‰ﬂiger Asphalt, Fahrbahnsch‰den	Q1 26350,13068 26531,13280 26575
 #: by: ^^^
 #: by: Martin Figur:
 Teschendorfer Weg: guter Beton	Q0 7280,20895 7093,20874 6955,20859
+#: by: Lydia Moldenhauer:
+Woelckpromenade: guter Asphalt	Q0 13632,16305 13726,16506 13706,16535 13756,16620 13855,16729
 ######################################################################
 #: by: Andreas M¸hlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
@@ -5888,7 +5897,8 @@ Ortliebstr.: Asphalt	Q0 17087,12501 17197,12488 17230,12481
 Kriemhildstr.: Kopfsteinpflaster	Q2 17300,12173 17314,12265
 Kriemhildstr.: Asphalt	Q0 17314,12265 17357,12566
 Hagenstr. (Lichtenberg): Asphalt	Q0 16957,12599 16918,12325 16890,12135 16870,11920
-Guntherstr. (Lichtenberg): Kopfsteinpflaster	Q3 17115,12296 17092,12107 17088,12069
+#: note: ‰hnlich von Jill Laukat best‰tigt "Kopfsteinpfalster, schlechte Radbedingungen, jedoch breiter Fuﬂweg und kaum Fuﬂg‰nger"
+Gernotstr. (Lichtenberg): Kopfsteinpflaster	Q3 17115,12296 17092,12107 17088,12069
 Volkerstr.: Kopfsteinpflaster	Q3 17214,12281 17195,12125
 (Am St‰dt. Zentralfriedhof - Rhinstr.): schlechter Asphalt	Q2 17774,12244 17792,12258 18037,12362 18176,12393 18191,12451 18220,12450
 #: by: ^^^

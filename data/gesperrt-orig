@@ -384,7 +384,6 @@ Harnackstr.	1 15848,11528 15881,11621 15871,11690 15911,11790 15984,11827 16099,
 Carmerstr.	1 5088,11322 4926,11081
 Mirbachplatz	1 13331,16424 13347,16447 13391,16436 13400,16395 13377,16378 13348,16387 13331,16424
 Treskowstr. (Mahlsdorf)	1 24567,11980 24491,11972
-Helbigstr.	1 20109,4087 20339,3779 20362,3750
 Knoten am Flughafen Tegel	1 2996,15930 2960,15847
 Knoten am Flughafen Tegel	1 2913,15944 2949,15922 2977,15923 2996,15930
 Knoten am Flughafen Tegel	1 2960,15847 2880,15884 2828,15903
@@ -474,6 +473,8 @@ Bansin	1 57406,175093 57506,175000 57665,174803
 #
 # Einbahnstraﬂen, die man als Radfahrer halbwegs ignorieren kann:
 # 
+#: by: Ilona Lange (man f‰hrt auf dem Gehweg, sowieso)
+Helbigstr.	1s 20109,4087 20339,3779 20362,3750
 #: by Andreas (johnnyyen):
 Friedrich-Wilhelm-Str.	1s 8371,5896 8282,5909
 Sophie-Taeuber-Arp-Weg	1s 3302,2471 3293,2218
