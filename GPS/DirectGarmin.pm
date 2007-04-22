@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.29 2006/05/24 19:20:26 eserte Exp $
+# $Id: DirectGarmin.pm,v 1.30 2007/04/22 16:25:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -307,6 +307,11 @@ sub convert_from_route {
     my $convmeth  = $args{-convmeth} || sub {
 	$obj->standard2map(@_);
     };
+    my $waypointlength = $args{-waypointlength} || 10;
+    my $waypointsymbol = $args{-waypointsymbol};
+    if (!$waypointsymbol || $waypointsymbol !~ m{^\d+$}) {
+	$waypointsymbol = 8246; # default: summit symbol
+    }
 
     my $gps_device = $args{-gpsdevice} || "/dev/cuaa0";
     my %crossings;
@@ -319,7 +324,6 @@ sub convert_from_route {
     my $ident_counter = 0;
     my %idents;
     use constant MAX_COMMENT => 45;
-    use constant IDENT_LENGTH => 10; # XXX make configurable
 
     use constant DISPLAY_SYMBOL_BIG => 8196; # zwei kleine Füße (sym_trcbck)
     use constant DISPLAY_SYMBOL_SMALL => 18; # viereckiger Punkt, also allgemeiner Wegepunkt (waypoint dot)
@@ -420,7 +424,7 @@ sub convert_from_route {
 	    # "+crossingstreet" syntax
 	    # XXX theoretisch kann "+crossingstreet+mainstreet" passieren,
 	    # was nicht so schön wäre ... aber dazu müsste crossingstreet
-	    # superkurz oder IDENT_LENGTH superlang sein
+	    # superkurz oder $waypointlength superlang sein
 	    # XXX die Abfrage im map scheint teilweise überflüssig zu sein
 	    # (main_street eq prev_street!)
 	    elsif (defined $prev_street && $prev_street eq $main_street &&
@@ -459,7 +463,7 @@ sub convert_from_route {
 		$short_crossing = _eliminate_umlauts($short_crossing);
 		last
 #		    if (length($short_crossing) + length($comment) <= MAX_COMMENT);
-		    if (length($short_crossing) + length($comment) <= IDENT_LENGTH);
+		    if (length($short_crossing) + length($comment) <= $waypointlength);
 		$level++;
 	    }
 
@@ -469,9 +473,9 @@ sub convert_from_route {
 	    my $suffix_in_use = 0;
 	    my $create_short_name = sub {
 		my($suffix,$name) = @_;
-		$name = substr($name.(" "x IDENT_LENGTH), 0, IDENT_LENGTH);
+		$name = substr($name.(" "x $waypointlength), 0, $waypointlength);
 		if ($suffix ne "") {
-		    substr($name, IDENT_LENGTH-length($suffix), length($suffix), $suffix);
+		    substr($name, $waypointlength-length($suffix), length($suffix), $suffix);
 		    $suffix_in_use = $suffix;
 		} else {
 		    $suffix_in_use = "";
@@ -497,7 +501,7 @@ sub convert_from_route {
 			 $local_ident_counter < ord("A")) {
 		    $local_ident_counter = ord("A");
 		}
-		substr($ident,IDENT_LENGTH-1-length($suffix_in_use),1) = chr($local_ident_counter);
+		substr($ident,$waypointlength-1-length($suffix_in_use),1) = chr($local_ident_counter);
 	    }
 
 	    if (length($comment) > MAX_COMMENT) {
@@ -522,7 +526,7 @@ sub convert_from_route {
 	if ($n > 0) {
 	    push @d, [$gps->GRMN_RTE_LINK_DATA, $handler->pack_Rte_link_data];
 	}
-	my $wptdata = {lat => $lat, lon => $lon, ident => $ident, smbl => 8246}; # summit symbol XXX
+	my $wptdata = {lat => $lat, lon => $lon, ident => $ident, smbl => $waypointsymbol};
 	push @d, [$gps->GRMN_RTE_WPT_DATA, $handler->pack_Rte_wpt_data($wptdata)];
 	if ($DEBUG) {
 	    push @{$self->{'debugdata'}}, {%$wptdata, origlon => $xy->[0], origlat => $xy->[1]};

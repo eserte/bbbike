@@ -1,10 +1,10 @@
 # -*- c -*-
 
 #
-# $Id: CNetFile.pm,v 1.11 2003/11/16 21:12:35 eserte Exp $
+# $Id: CNetFile.pm,v 1.12 2007/04/22 19:54:33 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001, 2002, 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001, 2002, 2003, 2007 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -15,7 +15,7 @@
 package StrassenNetz::CNetFile;
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
 }
 
 use Inline 0.40; # because of API changes
@@ -39,7 +39,7 @@ __C__
 #include <fcntl.h>
 #include <unistd.h>
 
-int mmap_net_file(SV* self, char* filename) {
+long mmap_net_file(SV* self, char* filename) {
     char *buf = NULL;
     int length;
     int version;
@@ -73,14 +73,14 @@ int mmap_net_file(SV* self, char* filename) {
 
     hv_store(self_hash, "CNetMagic", strlen("CNetMagic"), newSVpv(magic,0), 0);
     hv_store(self_hash, "CNetFileVersion", strlen("CNetFileVersion"), newSViv(version), 0);
-    hv_store(self_hash, "CNetMmap", strlen("CNetMmap"), newSViv((int)buf), 0);
+    hv_store(self_hash, "CNetMmap", strlen("CNetMmap"), newSViv((long)buf), 0);
 
-    return (int)buf;
+    return (long)buf;
 }
 
 void* translate_pointer(SV* self, int ptr) {
     HV* self_hash = (HV*)SvRV(self);
-    int buf;
+    long buf;
 
     {
 	SV** tmp = hv_fetch(self_hash, "CNetMmap", strlen("CNetMmap"), 0);

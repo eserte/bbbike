@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.303 2007/04/15 22:04:56 eserte Exp $
+# $Id: bbbike,v 3.304 2007/04/22 16:27:35 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -88,7 +88,7 @@ BEGIN {
 		pdf_export svg_export perlmod_install_advice
 		show_register save_register_routes load_register_routes
 		show_calories check_available_memory
-		reload_all)],
+		reload_all make_temp make_unique_temp)],
 	 #XXX problems with autouse! -> what problems?
 	 'BBBikeEdit'
 	 => [qw(insert_point_from_canvas create_relation_from_canvas
@@ -208,7 +208,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.303 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.304 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -429,6 +429,7 @@ $map_mode = MM_SEARCH;
 # Default ist rot, weil das Orange von power oder wind schlecht zu erkennen ist
 $mark_color    = 'red'; # Farbe der Markierung in mark_street et al.
 $gps_waypoints = 50;
+$gps_waypointlength = 10;
 
 ### Fonts
 $standard_height = 12;
@@ -4512,10 +4513,14 @@ sub handle_options {
 	  label => M"Zeichensatz (Fixed)", var =>   \$fixed_font_family],
 	 ['fontheight','=i',undef, #12,#XXX no defaults!
 	  alias => [qw(fontsize)],
-	  label => M"Zeichensatzgröße", var => \$font_size],
+	  label => M"Zeichensatzgröße", var => \$font_size,
+	  longhelp => M"Negative Größen sind in Pixeln, positive in Points",
+	 ],
 	 ['labelfontheight','=i',10,
 	  alias => [qw(labelfontsize)],
-	  label => M"Zeichensatzgröße für Labels", var => \$label_font_size],
+	  label => M"Zeichensatzgröße für Labels", var => \$label_font_size,
+	  longhelp => M"Negative Größen sind in Pixeln, positive in Points",
+	 ],
 	 ['fontweight','=s',undef,
 	  label => M"Zeichensatzform", var => \$font_weight],
 	 ['geometry','=s',undef,
@@ -4722,6 +4727,16 @@ dazu verwendet wird",
 	  label => M"Maximale Anzahl der GPS-Waypoints",
 	  longhelp => M"Moderne Garmin-Geräte können 50 Waypoints pro Route verwenden,\nwährend ältere nur 20 Waypoints laden können\n",
 	  var => \$gps_waypoints,
+	 ],
+	 ['gpswaypointlength','=i',10,
+	  label => M"Maximale Länge von GPS-Waypoint-Namen",
+	  longhelp => M"Typischerweise 10 bei Garmin-Geräten, aber neuere Geräte können längere Namen verwenden",
+	  var => \$gps_waypointlength,
+	 ],
+	 ['gpswaypointsymbol','=i','',
+	  label => M"Waypointsymbol",
+	  longhelp => M"Garmin-Symbol-ID. Falls leer gelassen, wird das Summit-Symbol verwendet",
+	  var => \$gps_waypointsymbol,
 	 ],
 	 ['gpsdevice','=s',($os eq 'win' ? "COM1" : ($os_bsd ? '/dev/cuaa0' : '/dev/ttyS0')),
 	  choices => (  $os eq 'win' ? [map {  "COM$_" 			       } (1..4) ]
@@ -5001,8 +5016,12 @@ sub set_default_geometry {
 	} elsif ($^O eq 'darwin') {
 	    @max_extends = MacOSXUtil::client_window_region($top);
 	} else {
-	    if ($top->property("exists", "_NET_CURRENT_DESKTOP", "root") &&
-		$top->property("exists", "_NET_WORKAREA", "root")) {
+	    if (
+		# check for broken ->property on 64bit platforms
+		($Tk::VERSION >= 804.027501 || $Config{longsize} == 4) &&
+		$top->property("exists", "_NET_CURRENT_DESKTOP", "root") &&
+		$top->property("exists", "_NET_WORKAREA", "root")
+	       ) {
 		(undef, my $desktop) = $top->property("get", "_NET_CURRENT_DESKTOP", "root");
 		if (defined $desktop) {
 		    my @vals = ($top->property("get", "_NET_WORKAREA", "root"))[$desktop*4+1 .. $desktop*4+4];
@@ -5010,8 +5029,8 @@ sub set_default_geometry {
 			@max_extends = @vals;
 		    }
 		}
-		$max_extends[2]-=10; # XXX
-		$max_extends[3]-=24;
+		#$max_extends[2]-=10; # XXX hmmm, does not need to be necessary on gnome/metacity
+		#$max_extends[3]-=24; # XXX "
 	    }
 	}
 	if (!@max_extends) {
@@ -7165,7 +7184,7 @@ sub exit_app_noninteractive {
 	if ($top->can("fontActual")) {
 	    my %f_attr = $top->fontActual($font{'normal'});
 	    $font_family = $f_attr{-family};
-	    $font_size   = size2pt($f_attr{-size});
+	    $font_size   = $f_attr{-size};
 	    $font_weight = $f_attr{-weight};
 	}
 	# Reference power/speed
@@ -18407,9 +18426,10 @@ sub set_sans_serif_font_family {
     };
 }
 
-# Create the fontset for bbbike. Use $std_font as default normal font,
-# or, if not defined, use the system default (e.g. from the option
-# database). The fontset is stored to the global hash %font.
+# Create the fontset for bbbike. Use $std_font (which must be a
+# current Tk font name, not a font specification) as default normal
+# font, or, if not defined, use the system default (e.g. from the
+# option database). The fontset is stored to the global hash %font.
 # $top is the main window.
 sub set_fonts {
     my $std_font = shift;
@@ -18450,22 +18470,17 @@ sub set_fonts {
 	    if (defined $font_family && $font_family ne "" && !$kde) {
 		if (!defined $font_size) {
 		    my $std_font = $get_std_font->();
-		    $font_size = size2pt($top->fontActual($std_font, '-size'));
+		    $font_size = $top->fontActual($std_font, '-size');
 		} else {
 		    $font_size_from_user = 1;
 		}
 		$font_from_user = 1;
 		my(%a) = (-family => $font_family);
-		if (defined $font_size && $font_size =~ /^\d+$/) {
+		if (defined $font_size && $font_size =~ /^-?\d+$/) {
 		    $a{-size} = $font_size;
 		} elsif (defined $font_size) {
-		    if ($font_size =~ /^-\d+$/) {
-			warn "Try to repair wrong font size <$font_size>...";
-			$font_size = size2pt($font_size);
-		    } else {
-			warn "Font size defined as <$font_size>, but does not match pattern, so using default...";
-			$font_size = 10;
-		    }
+		    warn "Font size defined as <$font_size>, but does not match pattern, so fallback to default size...";
+		    $a{-size} = $font_size = 10;
 		}
 		if (defined $font_weight && $font_weight ne '') {
 		    $a{-weight} = $font_weight;
@@ -18496,7 +18511,7 @@ sub set_fonts {
 	if (exists $font{'normal'} && $std_font) {
 	    $top->fontConfigure($font{normal}, $top->fontActual($std_font));
 	} elsif ($std_font) {
-	    $font{'normal'} = $std_font;
+	    $font{'normal'} = $top->fontCreate($top->fontActual($std_font));
 	} else {
 	    $font{'normal'} = $top->fontCreate;
 	}

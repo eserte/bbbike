@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.55 2007/04/09 20:36:55 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.55 2007/04/09 20:36:55 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -133,7 +133,7 @@ $bbbike_makefile_admin = <<'EOF'
 BBBIKE_CS_DEST=user.cs.tu-berlin.de:www/bbbike
 BBBIKE_CS_TEST_DEST=user.cs.tu-berlin.de:www/BBBike
 BBBIKE_SF_DEST=bbbike.sourceforge.net:/home/groups/b/bb/bbbike
-BBBIKE_SF_DIR=$(HOME)/www/bbbike.sourceforge.net
+BBBIKE_SF_DIR=${.CURDIR}/projects/bbbike.sourceforge.net
 
 BBBIKE_RADZEIT_USER=		root
 BBBIKE_RADZEIT_HOST=		bbbike.radzeit.de

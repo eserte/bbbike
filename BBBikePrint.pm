@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.41 2007/03/13 21:15:07 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.42 2007/04/22 21:13:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003,2006 Slaven Rezic. All rights reserved.
@@ -18,6 +18,7 @@ package main;
 use strict;
 use BBBikeGlobalVars;
 use vars qw(@gv_old_args $gv_pid $gv_version @gv_version);
+use File::Copy qw();
 
 BEGIN {
     if (!defined &M) {
@@ -193,6 +194,17 @@ sub do_print_cmd {
 		-command => sub { $t->destroy })->pack(-side => 'left');
 }
 
+# XXX Possible problem: most viewers expect that the postscript file
+# is left unchanged. So one could print multiple times the same document
+# if he selects "print" in bbbike multiple times without doing anything
+# in ghostview, and then select the "print" button in ghostview. This would
+# cause the last postscript document to be printed multiple times.
+#
+# The problem is solved for "gv" by copying the file, which is somewhat
+# costly. A same solution is probably needed for all viewers.
+#
+# Nice to have: detect that a viewer is done and delete the temporary file
+# afterwards. Would be easy if we could use fork...
 sub BBBikePrint::print_postscript {
     my($file, %args) = @_;
     my $check_availability = delete $args{-checkavailability};
@@ -221,7 +233,10 @@ sub BBBikePrint::print_postscript {
 		push @print_args, '--media=' . $args{'-media'};
 	    }
  	}
-	push @print_args, $file;
+	my $tmpfile = make_unique_temp("ps");
+	File::Copy::cp($file, $tmpfile)
+	    or status_message("Can't copy $file to $tmpfile: $!", "die");
+	push @print_args, $tmpfile;
 	if ($gv_reuse and join(" ", @gv_old_args) eq join(" ", @print_args)) {
 	    if (kill 0 => $gv_pid) {
 		kill 'HUP' => $gv_pid;
@@ -231,7 +246,9 @@ sub BBBikePrint::print_postscript {
 	@gv_old_args = @print_args;
 	$gv_pid = fork;
 	if ($gv_pid == 0) {
-	    exec "gv", @print_args;
+	    system("gv", @print_args) == 0
+		or warn "Failed to call gv @print_args: $?";
+	    unlink $tmpfile;
 	    CORE::exit(0);
 	}
     } elsif (is_in_path("ghostview")) {
@@ -293,9 +310,7 @@ sub BBBikePrint::print_postscript {
 sub BBBikePrint::print_text_postscript {
     my($text, %args) = @_;
     require Tk::Enscript;
-    my $tmpfile = "$tmpdir/$progname" . "_$$.ps";
-    unlink $tmpfile;
-    $tmpfiles{$tmpfile}++;
+    my $tmpfile = make_temp("ps");
     my($out) = Tk::Enscript::enscript
       ($top,
        -external => 'best',
@@ -310,9 +325,8 @@ sub BBBikePrint::print_text_pdflatex {
     my($text, %args) = @_;
     my $basename = "$progname" . "_$$.tex";
     my $tmpfile = "$tmpdir/$basename";
-    my $pdffile = "$tmpdir/$progname" . "_$$.pdf";
+    my $pdffile = make_temp("pdf");
     unlink $tmpfile;
-    unlink $pdffile;
     open(TEX, ">$tmpfile") or status_message(Mfmt("Kann %s nicht schreiben: %s", $tmpfile, $!), "die");
     print TEX $text;
     close TEX;
@@ -328,7 +342,6 @@ sub BBBikePrint::print_text_pdflatex {
 	BBBikePrint::view_pdf($pdffile);
     }
     unlink $tmpfile;
-    $main::tmpfiles{$pdffile}++;
     $ret;
 }
 

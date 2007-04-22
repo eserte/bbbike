@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.34 2007/03/20 22:15:10 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.35 2007/04/22 21:12:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.34 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.35 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -1535,6 +1535,28 @@ sub BBBikeHeavy::reload_all {
 	}
     }
     
+}
+
+sub BBBikeHeavy::make_temp {
+    my($ext) = @_;
+    $ext = "tmp" if !$ext;
+    my $tmpfile = "$tmpdir/$progname" . "_" . $$ . ".$ext";
+    unlink $tmpfile;
+    $tmpfiles{$tmpfile}++;
+    $tmpfile;
+}
+
+sub BBBikeHeavy::make_unique_temp {
+    my($ext) = @_;
+    $ext = "tmp" if !$ext;
+    my @l = localtime;
+    $l[5]+=1900;
+    $l[4]++;
+    my $date = sprintf "%04d%02d%02dT%02d%02d%02d", @l[5,4,3,2,1,0];
+    my $tmpfile = "$tmpdir/$progname" . "_" . $$ . "_" . $date . ".$ext";
+    unlink $tmpfile;
+    $tmpfiles{$tmpfile}++;
+    $tmpfile;
 }
 
 1;

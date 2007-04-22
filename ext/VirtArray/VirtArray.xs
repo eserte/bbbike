@@ -20,6 +20,10 @@ extern "C" {
 # define MODERN_PERL
 #endif
 
+#if INTSIZE != 4
+# error Works only with INTSIZE=4
+#endif
+
 #if !defined(PL_na) && !defined(MODERN_PERL)
 # define PL_na na
 #endif
@@ -66,8 +70,8 @@ XS(XS_VirtArray_fast_fetch)
             RETVAL = newSVpv((char*)(dflt_array->start_data+i*dflt_array->reclen),
                                      dflt_array->reclen);
         } else {
-            long i0 = *(long*)(dflt_array->filebuf+HEADER_LEN_VAR+i*sizeof(I32));
-            long i1 = *(long*)(dflt_array->filebuf+HEADER_LEN_VAR+(i+1)*sizeof(I32));
+            long i0 = (long)*(I32*)(dflt_array->filebuf+HEADER_LEN_VAR+i*sizeof(I32));
+            long i1 = (long)*(I32*)(dflt_array->filebuf+HEADER_LEN_VAR+(i+1)*sizeof(I32));
             RETVAL = newSVpv((char*)(dflt_array->start_data+i0), i1-i0);
         }
         ST(0) = RETVAL;
@@ -84,8 +88,8 @@ XS(XS_VirtArray_fast_fetch_var)
     {
         long    i = (long)SvIV(ST(0));
 
-        long i0 = *(long*)(dflt_array->filebuf+HEADER_LEN_VAR+i*sizeof(I32));
-        long i1 = *(long*)(dflt_array->filebuf+HEADER_LEN_VAR+(i+1)*sizeof(I32));
+        long i0 = (long)*(I32*)(dflt_array->filebuf+HEADER_LEN_VAR+i*sizeof(I32));
+        long i1 = (long)*(I32*)(dflt_array->filebuf+HEADER_LEN_VAR+(i+1)*sizeof(I32));
         ST(0) = newSVpv((char*)(dflt_array->start_data+i0), i1-i0);
         if (SvREFCNT(ST(0))) sv_2mortal(ST(0));
     }
@@ -171,8 +175,8 @@ FETCH(self, i)
 				     self->reclen);
 	} else {
 	    SV* tmp;
-	    long i0 = *(long*)(self->filebuf+HEADER_LEN_VAR+i*sizeof(I32));
-	    long i1 = *(long*)(self->filebuf+HEADER_LEN_VAR+(i+1)*sizeof(I32));
+	    long i0 = (long)*(I32*)(self->filebuf+HEADER_LEN_VAR+i*sizeof(I32));
+	    long i1 = (long)*(I32*)(self->filebuf+HEADER_LEN_VAR+(i+1)*sizeof(I32));
 	    tmp = newSVpv((char*)(self->start_data+i0), i1-i0);
 	    if (self->freezed) {
 	        dSP;
@@ -244,13 +248,13 @@ fetch_list_var(self, i)
 	long i0, i1, len;
 	int ii;
     PPCODE:
-	i0 = *(long*)(self->filebuf+HEADER_LEN_VAR+i*sizeof(I32));
-	i1 = *(long*)(self->filebuf+HEADER_LEN_VAR+(i+1)*sizeof(I32));
+	i0 = (long)*(I32*)(self->filebuf+HEADER_LEN_VAR+i*sizeof(I32));
+	i1 = (long)*(I32*)(self->filebuf+HEADER_LEN_VAR+(i+1)*sizeof(I32));
 	data = (char*)(self->start_data+i0);
 	len  = (i1-i0)/sizeof(I32);
 	EXTEND(sp, len);
 	for(ii = 0; ii < len; ii++)
-	    PUSHs(sv_2mortal(newSViv(*(long*)(data+sizeof(I32)*ii))));
+	    PUSHs(sv_2mortal(newSViv((long)*(I32*)(data+sizeof(I32)*ii))));
 
 void
 fetch_list_fixed(self, i)
@@ -266,7 +270,7 @@ fetch_list_fixed(self, i)
 	len  = self->reclen/sizeof(I32);
 	EXTEND(sp, len);
 	for(ii = 0; ii < len; ii++)
-	    PUSHs(sv_2mortal(newSViv(*(long*)(self->start_data+i*self->reclen+ii))));
+	    PUSHs(sv_2mortal(newSViv((long)*(I32*)(self->start_data+i*self->reclen+ii))));
 
 void
 set_default(self)

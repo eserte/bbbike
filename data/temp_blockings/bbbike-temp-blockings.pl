@@ -7852,4 +7852,25 @@ EOF
 userdel	q4::inwork; 25543,-12403 25912,-11956
 EOF
      },
+     { from  => 1177061612, # 2007-04-20 11:33
+       until => 1177171200, # 2007-04-21 18:00
+       text  => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Tempelhofer Damm und Lorenzweg Baustelle, Straße vollständig gesperrt (bis 18 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_005266',
+       data  => <<EOF,
+userdel	2::inwork 9654,5738 9341,5612 9147,5534
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX by Andreas Mühlhausen
+       text  => 'Linienstr.: Baustelle zwischen Koppenplatz (östliche Straße) und Rosenthaler Str., Einbahnstraße, Abbiegen in Kleine Auguststr. und Joachimstr. nicht möglich',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 10214,13680 10081,13673 10020,13669 9964,13665
+	3 9964,13665 10020,13669 10049,13528
+	3 10049,13528 10020,13669 10081,13673
+	3 10020,13669 10081,13673 10142,13556
+	3 10142,13556 10081,13673 10214,13680
+EOF
+     },
     );

@@ -578,14 +578,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1177192800,
-         'text' => 'B 096 Höhe Krz..Buberow/ Meseberg grundhafter Straßenbau Vollsperrung 17.04.2007-21.04.2007 ',
-         'from' => 1176674400,
-         'data' => 'userdel	2::inwork -7906,61543 -7974,62020 -7693,63274
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1183154400,
          'text' => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf Straßenbau, Entwässerung Vollsperrung 10.04.2007-29.06.2007 ',
@@ -676,14 +669,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        undef,
        undef,
        undef,
-       {
-         'until' => 1177192800,
-         'text' => 'L 064 Riesaer Str. OL Bad Liebenwerda Deckenerneuerung Vollsperrung 13.04.2007-21.04.2007 ',
-         'from' => 1176328800,
-         'data' => 'userdel	q4::inwork 11862,-99775 11943,-99051
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_005169',
          'until' => 1177970399,
@@ -711,23 +697,8 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_005211',
-         'until' => 1177106400,
-         'text' => 'Säntisstr. (Tempelhof) in beiden Richtungen, zwischen Zehrensdorfer Str. und Alt-Marienfelde Baustelle, Straße vollständig gesperrt (bis 20.04.07)',
-         'from' => 1176488131,
-         'data' => 'userdel	2::inwork 9695,1563 9241,1073 9024,906
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1177106400,
-         'text' => 'B 109 zw. Stadtgrenze Berliin und Schönerlinde, Dorfstr. Deckeneinbau Vollsperrung 17.04.2007-20.04.2007 ',
-         'from' => 1176674400,
-         'data' => 'userdel	2::inwork 13376,27572 13348,27204
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1178834400,
          'text' => 'L 038 zw. Briesen und Petersdorf Einbau Deckschicht Vollsperrung 07.05.2007-10.05.2007 ',
@@ -810,6 +781,19 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'data' => 'userdel	q4::inwork; 25543,-12403 25912,-11956
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => undef,
+         'text' => 'Linienstr.: Baustelle zwischen Koppenplatz (östliche Straße) und Rosenthaler Str., Einbahnstraße, Abbiegen in Kleine Auguststr. und Joachimstr. nicht möglich',
+         'from' => undef,
+         'data' => 'userdel	1::inwork 10214,13680 10081,13673 10020,13669 9964,13665
+	3 9964,13665 10020,13669 10049,13528
+	3 10049,13528 10020,13669 10081,13673
+	3 10020,13669 10081,13673 10142,13556
+	3 10142,13556 10081,13673 10214,13680
+',
+         'type' => 'gesperrt'
        }
      
 );
