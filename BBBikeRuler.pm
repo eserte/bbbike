@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRuler.pm,v 1.18 2007/03/04 10:18:39 eserte Exp $
+# $Id: BBBikeRuler.pm,v 1.19 2007/04/23 21:45:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -199,14 +199,14 @@ sub button {
 	    $gpsman_track_tag = $tags[1];
 	} else {
 	    undef $gpsman_track_tag;
-	    return;
+	    goto cleanup;
 	}
     } elsif ($mode eq MODE_GRADE_GPSMAN_TRACKS) {
 	if ($tags[1] && $tags[1] =~ /alt=/) {
 	    $gpsman_track_tag = $tags[1];
 	} else {
 	    undef $gpsman_track_tag;
-	    return;
+	    goto cleanup;
 	}
     }
     if (@tags >= 2 && $tags[0] =~ /^L\d+/ && $tags[2] =~ /^([-+]?[\d\.]+)/) {
@@ -226,6 +226,9 @@ sub button {
     $c->createLine($c_x-$l,$c_y+$l,$c_x-$l,$c_y+$l, -fill => $fill,
 		   -tags => ["ruler","rulerline"]);
     ($real_x, $real_y) = main::anti_transpose($c_x, $c_y);
+
+ cleanup:
+    return 1;
 }
 
 sub _fmt_time {

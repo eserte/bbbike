@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeThunder.pm,v 1.13 2007/03/04 10:18:45 eserte Exp $
+# $Id: BBBikeThunder.pm,v 1.14 2007/04/23 21:45:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -175,6 +175,7 @@ sub button {
 	lightning(@_);
 	direction(@_);
     }
+    1;
 }
 
 sub position {

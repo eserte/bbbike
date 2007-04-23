@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.304 2007/04/22 16:27:35 eserte Exp eserte $
+# $Id: bbbike,v 3.305 2007/04/23 21:06:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -208,7 +208,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.304 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.305 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -1119,6 +1119,9 @@ if ($small_icons) {
 $top->optionAdd("*FlatBut*borderWidth" => 0);
 $top->optionAdd("*FlatBut*padX" => 1);
 $top->optionAdd("*FlatBut*padY" => 0);
+
+$top->optionAdd("*SmallBut*padX" => 1);
+$top->optionAdd("*SmallBut*padY" => 1);
 
 if ($use_logo and (!$splash_screen or !$splash_screen->{Exists})) {
     show_logo();
@@ -6440,9 +6443,9 @@ sub set_bindings {
 			   my $button_callback = $map_mode . '::button';
 			   if (defined &$button_callback) {
 			       my $e = $c->XEvent;
-			       eval $button_callback.'($_[0], $e)';
+			       my $ret = eval $button_callback.'($_[0], $e)';
 			       die $@ if $@;
-			       return;
+			       return if $ret; # otherwise fallthrough to MM_DRAG
 			   }
 		       } elsif ($map_mode eq MM_CUSTOMCHOOSE) {
 			   set_route_point($c);
@@ -16786,14 +16789,18 @@ sub set_cursor {
 
 ### AutoLoad Sub
 sub set_cursor_data {
-    my $data = shift;
-    my $tmpfile = "$tmpdir/cursor.$<-$$.xbm";
+    my($data, $persistent) = @_;
+    my $tmpfile = "$tmpdir/cursor.$<-$$";
+    if ($persistent) {
+	$tmpfile .= "_" . $persistent;
+    }
+    $tmpfile .= ".xbm";
     if (open(C, ">$tmpfile")) {
         print C $data;
 	close C;
 	#$c->configure(-cursor => ['@' . $tmpfile, 'black']);
 	$c->set_cursor(['@' . $tmpfile, 'black']);
-	unlink $tmpfile;
+	unlink $tmpfile if !$persistent;
     } else {
 	warn "Can't set cursor data with file $tmpfile: $!";
 	#$c->configure(-cursor => undef);

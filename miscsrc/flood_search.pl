@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: flood_search.pl,v 1.14 2007/03/04 10:18:24 eserte Exp $
+# $Id: flood_search.pl,v 1.15 2007/04/23 21:45:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -180,6 +180,7 @@ sub button {
     # XXX Rückmeldung fehlt, dass die Suche jetzt läuft
     flood_search($c, $net, $start_coord);
     main::status_message("Start-Koordinate setzen", "info");
+    return 1;
 }
 
 sub flood_search {

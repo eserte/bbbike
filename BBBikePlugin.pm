@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePlugin.pm,v 1.14 2007/03/04 10:17:46 eserte Exp $
+# $Id: BBBikePlugin.pm,v 1.15 2007/04/23 22:01:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2006 Slaven Rezic. All rights reserved.
@@ -19,6 +19,8 @@ $VERSION = 0.02;
 
 use Class::Struct;
 struct('BBBikePlugin::Plugin' => [Name => "\$", File => "\$", Description => "\$", Active => "\$"]);
+
+use vars qw(%advertised_name_to_title);
 
 sub register {
     die "This package does not define the register method";
@@ -186,6 +188,7 @@ sub place_menu_button {
 				   -menuitems => $menuitems,
 				   -title     => $title,
 				  );
+	$advertised_name_to_title{$advertised_name} = $title;
     }
 }
 
@@ -239,6 +242,16 @@ sub remove_menu_button {
 	    my(%other_place_info) = $other_mb->placeInfo;
 	    next if $other_place_info{"-x"} <= $mb_x;
 	    $other_mb->place(-x => $other_place_info{"-x"} - $mb_w);
+	}
+    }
+    if (Tk::Exists($BBBike::Menubar::plugins_menu) and
+	my $title = $advertised_name_to_title{$advertised_name}) {
+	my $m = $BBBike::Menubar::plugins_menu;
+	for my $m_inx (0 .. $m->index("end")) {
+	    if (eval { $m->entrycget($m_inx, '-label') } eq $title) {
+		$m->delete($m_inx);
+		last;
+	    }
 	}
     }
 }

@@ -670,15 +670,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_005169',
-         'until' => 1177970399,
-         'text' => 'Wiltbergstr. (Pankow) in beiden Richtungen, zwischen Röntgentaler Weg - Röbellweg Baustelle, Verkehr wird wechselseitig vorbeigeführt (bis Ende 04.07)',
-         'from' => undef,
-         'data' => 'userdel	q4::inwork 16048,25927 16114,25827 16166,25767
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_004349',
          'until' => 1199141999,

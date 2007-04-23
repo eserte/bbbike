@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.55 2007/04/09 20:36:55 eserte Exp eserte $
+# $Id: Makefile.admin.PL,v 1.56 2007/04/23 21:46:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.

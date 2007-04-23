@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: CanvasUtil.pm,v 1.16 2005/06/21 21:00:36 eserte Exp $
+# $Id: CanvasUtil.pm,v 1.16 2005/06/21 21:00:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2007 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,6 +16,8 @@ package Tk::CanvasUtil;
 use strict;
 use vars qw($VERSION);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
+
+use Tk::Canvas;
 
 =head1 NAME
 

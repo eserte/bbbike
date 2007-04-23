@@ -7718,7 +7718,7 @@ userdel	q4::inwork 11862,-99775 11943,-99051
 EOF
      },
      { from  => undef, # 
-       until => 1177970399, # 2007-04-30 23:59
+       until => 1177364867, # 1177970399 2007-04-30 23:59
        text  => 'Wiltbergstr. (Pankow) in beiden Richtungen, zwischen Röntgentaler Weg - Röbellweg Baustelle, Verkehr wird wechselseitig vorbeigeführt (bis Ende 04.07)',
        type  => 'handicap',
        source_id => 'IM_005169',

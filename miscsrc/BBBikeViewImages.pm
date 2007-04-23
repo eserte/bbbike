@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.14 2007/03/04 11:29:39 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.15 2007/04/23 22:06:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2007 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $geometry $viewer_menu);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(file_name_is_absolute);
 use File::Basename qw(dirname);
@@ -122,13 +122,21 @@ sub add_button {
 	       -variable => \$geometry,
 	       -value => "max",
 	      ],
-	      [Radiobutton => "Halbe Bildschirmgröße",
+	      [Radiobutton => "Ca. halbe Bildschirmgröße",
 	       -variable => \$geometry,
 	       -value => "half",
 	      ],
-	      [Radiobutton => "1/3 der Bildschirmgröße",
+	      [Radiobutton => "Ca. 1/3 der Bildschirmgröße",
 	       -variable => \$geometry,
 	       -value => "third",
+	      ],
+	      [Radiobutton => "Halbe Bildgröße",
+	       -variable => \$geometry,
+	       -value => "image-half",
+	      ],
+	      [Radiobutton => "1/3 der Bildgröße",
+	       -variable => \$geometry,
+	       -value => "image-third",
 	      ],
 	      "-",
 	      [Button => "Dieses Menü löschen",
@@ -166,7 +174,7 @@ sub viewer_change {
 
 sub activate {
     $main::map_mode = 'BBBikeViewImages';
-    main::set_cursor_data($viewer_cursor);
+    main::set_cursor_data($viewer_cursor, "BBBikeViewImages");
     main::status_message("Auf Thumbnails klicken", "info");
 }
 
@@ -176,6 +184,7 @@ sub deactivate {
 sub button {
     my($c, $e) = @_;
     my($current_inx) = $c->find(withtag => "current");
+    return 0 if !defined $current_inx;
     my($img_x, $img_y) = $c->coords($current_inx);
     my @all_image_inx = map {
 	$_->[1];
@@ -194,10 +203,10 @@ sub button {
     } $c->find("overlapping",
 	       $img_x-10, $img_y-10,
 	       $img_x+10, $img_y+10);
-    show_image_viewer(-canvas    => $c,
-		      -allimages => \@all_image_inx,
-		      -current   => $current_inx,
-		     );
+    return show_image_viewer(-canvas    => $c,
+			     -allimages => \@all_image_inx,
+			     -current   => $current_inx,
+			    );
 }
 
 sub show_image_viewer {
@@ -250,17 +259,42 @@ sub show_image_viewer {
 		    $image_viewer_toplevel = $main::toplevel{"BBBikeViewImages_Viewer"};
 		} else {
 		    my $f = $image_viewer_toplevel->Frame->pack(-fill => "x", -side => "bottom");
-		    my $prev_button = $f->Button(-text => "<<")->pack(-side => "left");
+
+		    my $first_button = $f->Button(-class => "SmallBut", -text => "|<")->pack(-side => "left");
+		    $image_viewer_toplevel->Advertise(FirstButton => $first_button);
+		    $main::balloon->attach($first_button, -msg => "Erstes Bild") if ($main::balloon);
+
+		    my $prev_button = $f->Button(-class => "SmallBut", -text => "<<")->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(PrevButton => $prev_button);
-		    my $next_button = $f->Button(-text => ">>")->pack(-side => "left");
+		    $main::balloon->attach($prev_button, -msg => "Vorheriges Bild") if ($main::balloon);
+
+		    my $next_button = $f->Button(-class => "SmallBut", -text => ">>")->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(NextButton => $next_button);
+		    $main::balloon->attach($next_button, -msg => "Nächstes Bild") if ($main::balloon);
+
+		    my $last_button = $f->Button(-class => "SmallBut", -text => ">|")->pack(-side => "left");
+		    $image_viewer_toplevel->Advertise(LastButton => $last_button);
+		    $main::balloon->attach($last_button, -msg => "Letztes Bild") if ($main::balloon);
+
 		    my $n_of_m_label = $f->Label->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(NOfMLabel => $n_of_m_label);
+
 		    my $date_label = $f->Label->pack(-side => "left", -padx => 4);
 		    $image_viewer_toplevel->Advertise(DateLabel => $date_label);
-		    $f->Button(Name => "close",
-			       -command => sub { $image_viewer_toplevel->destroy },
-			      )->pack(-side => "right", -anchor => "e");
+		    $main::balloon->attach($date_label, -msg => "Datum aus dem EXIF") if ($main::balloon);
+
+		    my $close_button = $f->Button(Name => "close",
+						  -class => "SmallBut",
+						  -command => sub { $image_viewer_toplevel->destroy },
+						 )->pack(-side => "right", -anchor => "e");
+		    $main::balloon->attach($close_button, -msg => "Viewer schließen") if ($main::balloon);
+
+		    my $orig_button = $f->Button(-class => "SmallBut",
+						 -text => "Orig",
+						)->pack(-side => "right", -anchor => "e");
+		    $image_viewer_toplevel->Advertise(OrigButton => $orig_button);
+		    $main::balloon->attach($orig_button, -msg => "Originalbild mit ImageMagick zeigen") if ($main::balloon);
+
 		    my $image_viewer_label = $image_viewer_toplevel->Label->pack(-fill => "both", -expand => 1,
 										 -side => "bottom");
 		    $image_viewer_toplevel->Advertise(ImageLabel => $image_viewer_label);
@@ -282,14 +316,31 @@ sub show_image_viewer {
 		if (!$p) {
 		    die "Kann die Datei $abs_file nicht als Bild interpretieren";
 		}
-		if ($geometry eq 'half') {
-		    my $new_p = $image_viewer_toplevel->Photo(-width => $p->width/2, -height => $p->height/2);
-		    $new_p->copy($p, -subsample => 2);
-		    $p->delete;
-		    $p = $new_p;
-		} elsif ($geometry eq 'third') {
-		    my $new_p = $image_viewer_toplevel->Photo(-width => $p->width/3, -height => $p->height/3);
-		    $new_p->copy($p, -subsample => 3);
+		my $rel_w = $p->width/$main::top->screenwidth;
+		my $rel_h = $p->height/$main::top->screenheight;
+		my $screen_frac;
+		my $subsample;
+		if ($geometry eq 'half' && ($rel_w > 0.5 || $rel_h > 0.5)) {
+		    $screen_frac = 2;
+		} elsif ($geometry eq 'third' && ($rel_w > 0.333 || $rel_h > 0.333)) {
+		    $screen_frac = 3;
+		} elsif ($geometry eq 'image-half') {
+		    $subsample = 2;
+		} elsif ($geometry eq 'image-third') {
+		    $subsample = 3;
+		}
+		if ($screen_frac) {
+		    my $multi_w = $p->width/($main::top->screenwidth/$screen_frac);
+		    my $multi_h = $p->height/($main::top->screenheight/$screen_frac);
+		    my $multi = $multi_w > $multi_h ? $multi_w : $multi_h;
+		    if ($multi != int($multi)) {
+			$multi = int($multi)+1;
+		    }
+		    $subsample = $multi;
+		}
+		if ($subsample) {
+		    my $new_p = $image_viewer_toplevel->Photo(-width => $p->width/$subsample, -height => $p->height/$subsample);
+		    $new_p->copy($p, -subsample => $subsample);
 		    $p->delete;
 		    $p = $new_p;
 		}
@@ -328,6 +379,12 @@ sub show_image_viewer {
 		my $next_inx = $next_image_index->(+1);
 
 		my @args = (\&show_image_viewer, -canvas => $c, -allimages => $all_image_inx, '-current');
+		if (@$all_image_inx > 1 && defined $prev_inx) {
+		    $image_viewer_toplevel->Subwidget("FirstButton")->configure(-command => [@args, $all_image_inx->[0]],
+										-state => "normal");
+		} else {
+		    $image_viewer_toplevel->Subwidget("FirstButton")->configure(-state => "disabled");
+		}
 		if (defined $prev_inx) {
 		    $image_viewer_toplevel->Subwidget("PrevButton")->configure(-command => [@args, $prev_inx],
 									       -state => "normal");
@@ -340,6 +397,14 @@ sub show_image_viewer {
 		} else {
 		    $image_viewer_toplevel->Subwidget("NextButton")->configure(-state => "disabled");
 		}
+		if (@$all_image_inx > 1 && defined $next_inx) {
+		    $image_viewer_toplevel->Subwidget("LastButton")->configure(-command => [@args, $all_image_inx->[-1]],
+									       -state => "normal");
+		} else {
+		    $image_viewer_toplevel->Subwidget("LastButton")->configure(-state => "disabled");
+		}
+
+		$image_viewer_toplevel->Subwidget("OrigButton")->configure(-command => [\&viewer_display, $abs_file]);
 
 		$image_viewer_toplevel->Subwidget("NOfMLabel")->configure(-text => $this_index_in_array->() . "/" . @$all_image_inx);
 
@@ -363,15 +428,7 @@ sub show_image_viewer {
 	    } elsif ($geometry eq 'third') {
 		push @xv_args, "-expand", 0.33;
 	    }
-	    my @cmd = ("xv", @xv_args, $abs_file);
-	    main::status_message("@cmd", "info");
-	    my $pid = fork;
-	    die if !defined $pid;
-	    if ($pid == 0) {
-		exec @cmd;
-		warn $!;
-		CORE::exit(1);
-	    }
+	    viewer_xv(@xv_args, $abs_file);
 	} elsif ($viewer eq 'display') {
 	    my @display_args;
 	    if ($geometry eq 'maxpect') {
@@ -381,15 +438,7 @@ sub show_image_viewer {
 	    } elsif ($geometry eq 'third') {
 		push @display_args, "-resize", "33%";
 	    }
-	    my @cmd = ("display", @display_args, $abs_file);
-	    main::status_message("@cmd", "info");
-	    my $pid = fork;
-	    die if !defined $pid;
-	    if ($pid == 0) {
-		exec @cmd;
-		warn $!;
-		CORE::exit(1);
-	    }
+	    viewer_display(@display_args, $abs_file);
 	} elsif ($viewer eq '_wwwbrowser') {
 	    require WWWBrowser;
 	    WWWBrowser::start_browser("file://$abs_file", -oldwindow => 1);
@@ -398,11 +447,38 @@ sub show_image_viewer {
 	    warn "Try $cmd...\n";
 	    system("$cmd&");
 	}
+	return 1;
     } else {
-	require Data::Dumper;
-	main::status_message("Kann kein Bild in <" . Data::Dumper::Dumper(\@tags) . "> finden", "warn");
+	#require Data::Dumper;
+	#main::status_message("Kann kein Bild in <" . Data::Dumper::Dumper(\@tags) . "> finden", "warn");
+	return 0;
     }
 }
 
+sub viewer_xv {
+    my(@args) = @_;
+    my @cmd = ("xv", @args);
+    main::status_message("@cmd", "info");
+    my $pid = fork;
+    die if !defined $pid;
+    if ($pid == 0) {
+	exec @cmd;
+	warn $!;
+	CORE::exit(1);
+    }
+}
+
+sub viewer_display {
+    my(@args) = @_;
+    my @cmd = ("display", @args);
+    main::status_message("@cmd", "info");
+    my $pid = fork;
+    die if !defined $pid;
+    if ($pid == 0) {
+	exec @cmd;
+	warn $!;
+	CORE::exit(1);
+    }
+}
 
 1;
