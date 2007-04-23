@@ -7811,7 +7811,7 @@ userdel	2::inwork 12731,15824 12559,15524
 EOF
      },
      { from  => 1177103024, # 2007-04-20 23:03
-       until => 1177365600, # 2007-04-24 00:00
+       until => 1177308746, # 1177365600 2007-04-24 00:00
        text  => 'Ebertstr. (Mitte) in beiden Richtungen, zwischen Behrenstr. und Scheidemannstr. Veranstaltung, Straße vollständig gesperrt (bis 23.04.07, 05:00)',
        type  => 'gesperrt',
        source_id => 'IM_005269',

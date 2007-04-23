@@ -740,24 +740,8 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005269',
-         'until' => 1177365600,
-         'text' => 'Ebertstr. (Mitte) in beiden Richtungen, zwischen Behrenstr. und Scheidemannstr. Veranstaltung, Straße vollständig gesperrt (bis 23.04.07, 05:00)',
-         'from' => 1177103024,
-         'data' => 'userdel	2::temp 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_005268',
-         'until' => 1177297200,
-         'text' => 'Str. des 17, Juni (Tiergarten) in beiden Richtungen, zwischen Großer Stern und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (bis 23.04.07, 05:00 Uhr)',
-         'from' => 1177103052,
-         'data' => 'userdel	2::temp 6828,12031 7383,12095 7816,12150 8063,12182 8089,12186 8214,12205 8515,12242
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1184536800,
          'text' => 'B 167 zw. Dolgelin und Friedersdorf Inbetriebnahme OU Vollsperrung 23.04.2007-15.07.2007 ',
