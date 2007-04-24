@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2mapservhtml.pl,v 1.21 2007/03/31 17:05:24 eserte Exp $
+# $Id: bbd2mapservhtml.pl,v 1.22 2007/04/24 22:55:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -42,6 +42,7 @@ my $do_linklist;
 my $do_headlines;
 my $preferalias;
 my $imagetype = "mapserver";
+my $title = "Mapserver/BBBike";
 
 my $save_cmdline = "$0 @ARGV";
 
@@ -72,6 +73,7 @@ if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		'preferalias!' => \$preferalias,
 		'headlines!' => \$do_headlines,
 		'imagetype=s' => \$imagetype,
+		'title=s' => \$title,
 	       )) {
     require Pod::Usage;
     Pod::Usage::pod2usage(2);
@@ -111,7 +113,7 @@ if (defined $center_spec && $center_spec ne "") {
 my $html_header = <<EOF;
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <!-- -*-html-*- -->
 <html><head>
-<title>Mapserver/BBBike</title>
+<title>@{[ CGI::escapeHTML($title) ]}</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rev="made" href="mailto:$email" />
 <link rel="stylesheet" type="text/css" href="style.css" />
@@ -316,6 +318,7 @@ bbd2mapservhtml.pl - create a mapserver route from a bbd or bbr file
                     [-initmapext {width}x{height}] [-mapscale scale]
 		    [-center x,y] [-centernearest]
 		    [-partialhtml] [-linklist] [-preferalias]
+		    [-title title]
 		    [-imagetype ...]
 		    [file]
 
@@ -392,6 +395,10 @@ Create headlines from "section" blocks.
 
 In a linklist, prefer the alias name (set in bbd files with the "#:
 alias" directive) over the street name.
+
+=item -title I<string>
+
+Set title of generated HTML page to I<string>.
 
 =item -imagetype ...
 
