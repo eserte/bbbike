@@ -526,7 +526,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'until' => 1177970399,
          'text' => 'Vom 20.03. bis voraussichtlich zum 30.04.2007 wird die Fahrbahndecke der Namslaustraße zwischen Berliner Straße und Sterkrader Straße erneuert. Während der Bauzeit wird die Namslaustraße in Richtung Berliner Straße als Einbahnstraße ausgewiesen. ',
          'from' => 1174599531,
-         'data' => 'userdel	1::inwork 2698,19099 2460,19083 2098,19058
+         'data' => 'userdel	1::inwork 2698,19099 2585,19091 2460,19083 2098,19058
 ',
          'type' => 'gesperrt'
        },
@@ -624,14 +624,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        },
        undef,
        undef,
-       {
-         'until' => 1177365600,
-         'text' => 'L 049 Lübbenau-Lübben Bahnübergang nach OA Lübben Gleisbauarbeiten Vollsperrung 21.04.2007-23.04.2007 ',
-         'from' => 1177020000,
-         'data' => 'userdel	2::inwork 45088,-55645 45152,-53482 45124,-52888
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1177711200,
          'text' => 'L 049 Lübbenau-Lübben Bahnübergang nach OA Lübben Gleisbauarbeiten Vollsperrung 26.04.2007-27.04.2007 ',

@@ -1561,7 +1561,7 @@ EOF
        text  => 'Sterndamm (Treptow) in Richtung Rudow zwischen Königsheideweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 24.03.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 17518,4644 17428,4503
+userdel	1 17518,4644 17471,4570 17428,4503
 EOF
      },
      { from  => 1110235074, # 2005-03-07 23:37
@@ -7464,7 +7464,7 @@ EOF
        text  => 'Vom 20.03. bis voraussichtlich zum 30.04.2007 wird die Fahrbahndecke der Namslaustraße zwischen Berliner Straße und Sterkrader Straße erneuert. Während der Bauzeit wird die Namslaustraße in Richtung Berliner Straße als Einbahnstraße ausgewiesen. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 2698,19099 2460,19083 2098,19058
+userdel	1::inwork 2698,19099 2585,19091 2460,19083 2098,19058
 EOF
      },
      { from  => 1175292000, # 2007-03-31 00:00

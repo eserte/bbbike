@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: flood_search.pl,v 1.15 2007/04/23 21:45:37 eserte Exp $
+# $Id: flood_search.pl,v 1.16 2007/04/24 18:49:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -81,31 +81,18 @@ sub add_button {
     $main::balloon->attach($b, -msg => "Flood search")
 	if $main::balloon;
 
-    my $update_ring_visibility = sub {
-	if ($show_rings == 0) {
-	    $main::c->itemconfigure("flood", -state => "normal");
-	} else {
-	    my $dist = $show_rings;
-	    $main::c->itemconfigure("flood", -state => "hidden");
-	    while($dist < 600) { # max. 10 hours
-		$main::c->itemconfigure("flood-$dist", -state => "normal");
-		$dist += $show_rings;
-	    }
-	}
-    };
-
     my $ein_ausblenden_menuitems =
 	[[Radiobutton => "Alles",
 	  -variable => \$show_rings,
 	  -value => 0,
-	  -command => $update_ring_visibility,
+	  -command => sub { update_ring_visibility() },
 	 ]];
     for my $ring (2, 3, 4, 5, 7, 10, 15, 20, 25, 30, 40, 50, 60, 80, 100, 150) {
 	push @$ein_ausblenden_menuitems,
 	    [Radiobutton => "Alle $ring km",
 	     -variable => \$show_rings,
 	     -value => $ring,
-	     -command => $update_ring_visibility,
+	     -command => sub { update_ring_visibility() },
 	    ];
     }
 	       
@@ -148,6 +135,19 @@ sub add_button {
 			  %radio_args,
 			 ],
 	    );
+}
+
+sub update_ring_visibility {
+    if ($show_rings == 0) {
+	$main::c->itemconfigure("flood", -state => "normal");
+    } else {
+	my $dist = $show_rings;
+	$main::c->itemconfigure("flood", -state => "hidden");
+	while($dist < 600) { # max. 10 hours
+	    $main::c->itemconfigure("flood-$dist", -state => "normal");
+	    $dist += $show_rings;
+	}
+    }
 }
 
 sub activate {
@@ -246,6 +246,9 @@ sub flood_search {
 	    my $fill = ($entf % 10 == 0 ? "#b00000" :
 			$entf %  5 == 0 ? "#00b000" :
 			"black");
+	    if (@$cdef == 2) {
+		@$cdef = (@$cdef, @$cdef);
+	    }
 	    $c->createLine(@$cdef, -fill => $fill,
 			   -tags => ["flood","flood-circle","flood-$entf"]);
 	    my $label_dist;
@@ -339,6 +342,7 @@ sub flood_search {
 	    if (1) { # XXX siehe unten
 		if (int($new_act_dist/$CIRCLE_DELTA) > $last_circle+1) {
 		    $draw_circle->($last_circle+1);
+		    update_ring_visibility();
 		    $c->update;
 		    $last_circle++;
 		}
