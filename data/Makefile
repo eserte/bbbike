@@ -703,12 +703,14 @@ ${PERSISTENTTMPDIR}/strassen_in_planung.bbd:	fragezeichen-orig
 ${PERSISTENTTMPDIR}/XXX.bbd:	${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.XXX-|}
 	cat ${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.XXX-|} > $@
 
-# XXX geht nicht?
-${PERSISTENTTMPDIR}/plz-b.bbd:	$(HOME)/trash/plz.sql
+${PERSISTENTTMPDIR}/plz-b.bbd:	$(PERSISTENTTMPDIR)/plz.sql
 	grep -i berlin $> | $(MISCSRCDIR)/parse_mapbender_plz.pl > $@
 
-$(HOME)/trash/plz.sql:	$(HOME)/trash/plz.zip
+$(PERSISTENTTMPDIR)/plz.sql:	$(PERSISTENTTMPDIR)/plz.zip
 	cd `dirname $>` && unzip -q -o `basename $>`
+
+$(PERSISTENTTMPDIR)/plz.zip:
+	wget -O ${PERSISTENTTMPDIR}/plz.zip http://prdownloads.sourceforge.net/mapbender/plz.zip?download
 
 ${PERSISTENTTMPDIR}/Berlin.coords.bbd: Berlin.coords.data
 	$(PERL) -F'\|' -nale 'print "@F[0,1,2]\tX $$F[3]" if $$F[3]' Berlin.coords.data > $@
@@ -723,8 +725,10 @@ OPENGEODB_ORTE_DISTURL=	http://prdownloads.sourceforge.net/opengeodb/${OPENGEODB
 OPENGEODB_REGION=	BB MV
 .if ${HOST} == "mom.herceg.de"
 OPENGEODB_DIR=		/amd/vran/root/usr/ports/distfiles/opengeodb
-.else
+.elif exists(/usr/ports/distfiles/opengeodb)
 OPENGEODB_DIR=		/usr/ports/distfiles/opengeodb
+.else
+OPENGEODB_DIR=		${PERSISTENTTMPDIR}
 .endif
 OPENGEODB_ORTE_PATH=		${OPENGEODB_DIR}/${OPENGEODB_ORTE_FILE}
 OPENGEODB_ORTE_ZIPPATH=	${OPENGEODB_DIR}/${OPENGEODB_ORTE_ZIP}
@@ -734,7 +738,8 @@ extract-opengeodb:	${OPENGEODB_ORTE_PATH}
 
 ${OPENGEODB_ORTE_ZIPPATH}:
 	@echo -n "Should I fetch ${OPENGEODB_ORTE_DISTURL} to ${OPENGEODB_ORTE_ZIPPATH}? (CTRL-C to abort) "
-	@read yn
+# && true only for bugs in old pmake
+	@read yn && true
 	wget -O ${OPENGEODB_ORTE_ZIPPATH}~ ${OPENGEODB_ORTE_DISTURL}
 	mv ${OPENGEODB_ORTE_ZIPPATH}~ ${OPENGEODB_ORTE_ZIPPATH}
 
@@ -746,7 +751,7 @@ persistent-tmp-from-opengeodb:	${OPENGEODB_REGION:S/^/${PERSISTENTTMPDIR}\/openg
 
 .for region in BB MV
 ${PERSISTENTTMPDIR}/opengeodb-orte-${region}-DE.bbd:	${OPENGEODB_ORTE_PATH} ${MISCSRCDIR}/opengeodborte2bbd
-	${PERL_UTF8} ${MISCSRCDIR}/opengeodborte2bbd -restrictland ${region} -restrictcountry DE $^ > $@
+	${PERL_UTF8} ${MISCSRCDIR}/opengeodborte2bbd -restrictland ${region} -restrictcountry DE ${OPENGEODB_ORTE_PATH} > $@
 .endfor
 
 # About 70 failures for now. If I correct them all, enlarge the bbox.
