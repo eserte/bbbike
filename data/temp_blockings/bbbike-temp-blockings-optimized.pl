@@ -762,15 +762,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005307',
-         'until' => undef,
-         'text' => 'Wittestraße (Reinickendorf) in beiden Richtungen, zwischen Otisstraße und Antonienstraße Arbeiten an Gasleitungen, Straße vollständig gesperrt',
-         'from' => undef,
-         'data' => 'userdel	2::inwork 3724,18948 3883,18944 4162,18891
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1178488800,
          'text' => 'B 101 Herzberg-Jüterbog zw. Brandis und Abzw. Schweinitz ( Sa.-Anhalt) Deckeneinbau Vollsperrung 04.05.2007-06.05.2007 ',
@@ -784,6 +776,14 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'text' => 'B 101 Herzberg-Jüterbog zw. Brandis und Abzw. Schweinitz ( Sa.-Anhalt) Deckeneinbau Vollsperrung 27.04.2007-29.04.2007 ',
          'from' => 1177538400,
          'data' => 'userdel	2::inwork -4418,-65798 -4189,-65380
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1178661600,
+         'text' => 'L 792 Berliner Damm OD Blankenfelde, Höhe Hausnummer 4 Kranarbeiten Vollsperrung 08.05.2007-08.05.2007 ',
+         'from' => 1178488800,
+         'data' => 'userdel	2::inwork 10427,-7665 10424,-7409
 ',
          'type' => 'gesperrt'
        }

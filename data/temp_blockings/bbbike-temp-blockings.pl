@@ -7871,8 +7871,8 @@ userdel	1::inwork 10214,13680 10081,13673 10020,13669 9964,13665
 	3 10142,13556 10081,13673 10214,13680
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1177625221, # 
+       until => 1177625224, # XXX
        text  => 'Wittestraße (Reinickendorf) in beiden Richtungen, zwischen Otisstraße und Antonienstraße Arbeiten an Gasleitungen, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005307',
@@ -7894,6 +7894,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -4418,-65798 -4189,-65380
+EOF
+     },
+     { from  => 1178488800, # 2007-05-07 00:00
+       until => 1178661600, # 2007-05-09 00:00
+       text  => 'L 792 Berliner Damm OD Blankenfelde, Höhe Hausnummer 4 Kranarbeiten Vollsperrung 08.05.2007-08.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 10427,-7665 10424,-7409
 EOF
      },
     );
