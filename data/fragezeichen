@@ -20,7 +20,7 @@ Arkenberge: wo genau ist die Durchfahrt für Autos gesperrt	? 10402,26369 10318,2
 Neuendorf (Nl) wird ab 2002-08-18 geschlossen; neu: 'Cottbus-Willmersdorf Nord' und 'Teichland'. Grund: Umverlegung der Trasse (betr. RE1 und RE18)	?? 80691,-66664 80603,-64961 81213,-63504 82460,-63229
 Waldpark Steinberg: laut ADFC-Karte befahrbar, Qualität?	? 3553,21665 3406,21911 3142,22170
 Weg am Tegeler Fließ: Durchfahrt möglich? Qualität, wahrscheinlich sandiger Weg?	?? 7736,24239 7627,24190 7594,24200 7402,24144 7315,24082 7207,24103 7039,24077 6930,24045 6870,24061 6716,23949 6609,23892
-Landsberger Allee/Wiesenburger Weg: Sind die Zugänge vorhanden (möglicherweise zwischen den beiden Richtungsfahrbahnen), Einbahnstraßen?	? 19280,15014 19472,15184
+Georg-Knorr-Str. - Landsberger Allee: existiert ein Zugang, wahrscheinlich Treppen?	? 19183,15019 19151,15007 19175,14968
 Dorfstr./Seenpromenade Groß Glienicke: Durchfahrt möglich? Kopfsteinpflaster?	? -9449,7005 -9741,6106 -9797,5374 -9686,5268 -9678,4913
 Templerzeile - Götzstr.: existiert eine Verbindung? Qualität?	? 9665,6029 9708,6493
 Röntgental, Buchenallee: Qualität?	?? 17689,27853 18418,29246
@@ -233,7 +233,6 @@ Klockow - Kleptow (Feldweg): auf der Nordseite sandiger Feldweg (Q2?)	? 49487,11
 Bäkepromenade: Qualität? Existiert eine Verbindung?	? -2618,-1473 -2800,-1484 -2802,-1636
 Falkenthal - Bergsdorf: Kopfsteinpflaster, mindestens von Falkenthal her	? 2034,55227 -285,58256
 Jan-Petersen-Str.: Radwege (unklare Eintragung existiert)? Zugang zur Landsberger Allee vorhanden?	? 21022,16244 21195,16148 21107,15982 21079,15913 21037,15793 20943,15787 20800,15692
-Onkel-Bräsig-Str.: Qualität laut ADFC-Karte gut, Einbahnstraße auch für Radfahrer?	? 13305,4504 13345,5087 13323,5222
 Alter Markt: laut Message-ID: <2scvijF1io77eU1@uni-berlin.de> soll hier asphaltiert werden	?::inwork 22458,4565 22426,4609 22383,4703
 Berlin-Usedom am Werbellinsee: laut Tsp vom 2004-10-04 wird hier 2005 ein Radweg gebaut, laut anderen Informationen bis 2006-12-15	?::inwork 31000,61437 30784,60950 30778,60221 30671,59984 30625,59562 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27359,56787 27137,56650 26792,56558 26404,56518 26145,56499 26037,56412 26028,56303
 Zichow-Lindenwegsiedlung: Qualität? Auf der westlichen Seite als "Lindenweg" ausgeschildert	? 54500,87934 51978,87962
@@ -896,6 +895,9 @@ Oderfähre: ab 2007-06-30 in Betrieb	? 71524,40721 72361,41057
 Gerlindeweg: Qualität des Abschnitts zwischen Beatestr. und Friederikestr.?	? -1484,18545 -1517,18580 -1572,18673 -1642,18679
 Gerlindeweg: Qualität des Abschnitts zwischen Luisenstr. und Helgaweg?	? -1846,18778 -1907,18810 -2029,18822 -2102,18840
 Burscheider Weg: Qualität (möglicherweise gutes Kopfsteinpflaster)? Einbahnstraßenregelung: gibt es eine, wo und in welche Richtung?	? -1345,15060 -1322,15079 -934,15254 -862,15283 -741,15304
+Markomannenstr. - Preußenstr.: existiert eine für Radfahrer befahrbare Verbindung zwischen Markomannenstr. und Preußenstr.?	? 20700,1363 20711,1406
+Karl-Egon-Str.: Qualität der Karl-Egon-Str. zwischen Marksburgstr. und Dönhoffstr.?	? 18430,9199 18406,9052 18372,8869
+Rudolf-Breitscheid-Str. (Vogelsdorf): mäßiger fester Sandweg	Q2 33982,11496 34067,11751 34128,11843
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -914,13 +916,12 @@ Nymphenufer: mäßig geeignet (laut ADFC-Karte)	? -4044,1841 -3981,1764 -3806,1644
 (Orankestr. - Orankesee): gut geeignet (laut ADFC-Karte)	? 15598,15793 15581,15846
 Hohenschönhausener Weg: asphaltiert (laut Radzeit 3/2006)	? 15611,18547 16317,18020
 (Uferpromenade Spreebogenpark) (hat dieser Weg einen Namen (Ludwig-Erhard-Ufer?)?)	? 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871
+Hüsung (Qualität?)	? 13324,4784 13400,4788 13468,4766 13397,4762 13324,4784
 Rue Charles Calmette (Qualität (womöglich Beton)?)	? 3753,16638 3711,16670 3684,16788
 Freiheitsweg (ausgeschilderte Radroute - welche?)	? 6558,18947 6715,18918 6753,18909 6829,18887 6910,18861 7157,18810
 (Am Stichkanal - Uferweg am Teltowkanal) (Qualität des Verbindungsweges?)	? 2736,645 2784,589
 Jugendplatz (Qualität?)	? 1191,14513 1262,14510
 (Weg zur Krampenburg) (ist das ein offizieller Name mit Ausschilderung?)	? 27609,305 27571,262 27171,155 27273,-106 27407,-401 27552,-741 27559,-1365 27357,-1545 27323,-1671
-Alemannenstr. (Frohnau) (Qualität der Alemannenstr. in Frohnau?)	? 1736,24722 1747,24606 1747,24549 1742,24526 1750,24433 1732,24402
-Alemannenstr. (Frohnau) (Qualität der Alemannenstr. in Frohnau?)	? 1750,24433 1776,24416
 (Allee der Kosmonauten - Biesdorfer Promenade) (Qualität? (laut ADFC-Karte gut geeignet))	? 19837,13531 19826,13444 19835,13152 20076,13034
 Grimmingweg (Qualität des Grimmingweges? (sowohl zwischen Säntisstr. und Föttingerzeile als auch des Fußwegabschnittes))	? 9978,1854 10001,1814 10004,1787 10003,1768 9943,1543 9931,1502 9908,1416
 Grimmingweg (Qualität des Grimmingweges? (sowohl zwischen Säntisstr. und Föttingerzeile als auch des Fußwegabschnittes))	? 9908,1416 9832,1380
@@ -944,6 +945,7 @@ Klausdorfer Str. (Beschaffenheit guter Beton?)	? 23178,15968 23151,15837 23243,1
 Epensteinplatz (Qualität, Kopfsteinpflaster?)	? 8409,17774 8419,17762 8433,17754 8454,17760 8462,17778 8450,17795 8432,17798
 (Parkweg an der neuen Wuhle) (zurzeit (März 2007) wegen Bauarbeiten schlecht passierbar)	? 22022,17519 22093,17505 22121,17495 22364,17323
 (Parkweg auf die Ahrensfelder Berge) (Qualität?)	? 22662,16306 22671,16408 22678,16564 22661,16639 22559,16855 22524,16889 22486,16889 22396,16846 22352,16846 22271,16934 22265,16978 22290,17028 22309,17035 22367,17000
+Preußenstr. (Qualität?)	? 20807,1282 20761,1345 20711,1406 20693,1447 20668,1524
 Sachsenstr. (Altglienicke) (Qualität (vermutlich Kopfsteinpflster)?)	? 20685,817 20734,776 20772,742 20846,681 20980,563
 Matenzeile (Qualität (Beton o. Asphalt)?)	? 17365,17632 17474,17478 17582,17335 17714,17285
 Seeweg (Weißensee) (Qualität?)	? 14499,16341 14480,16449 14510,16549 14521,16599
@@ -1045,6 +1047,7 @@ Scharfestr. (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Aut
 Jugendweg (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
 Krokusstr. (Gilt die Einbahnstraßenregelung zwischen Stubenrauchstr. und Buchsbaumweg auch für Radfahrer oder nur für Autofahrer?)	? 16738,2717 16739,2736 16677,2856
 Kienhorststr. (Gilt die Einbahnstraßenregelung zwischen Ollenhauerstr. und Waldowstr. auch für Radfahrer oder nur für Autofahrer?)	? 5553,18542 5324,18560
+Karl-Egon-Str. (gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? 18372,8869 18406,9052 18430,9199 18457,9343
 tragen (zwei kurze Treppen) (wo sind die Treppen genau?)	? 9453,6415
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position ist vielleicht nicht ganz genau)	? -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9046,22376
 Radwege unterschiedlicher Form und Qualtität (genauer spezifizieren)	? -9723,-2451 -9700,-2459 -9534,-2515 -9462,-2540 -9075,-2664 -8865,-2732 -8500,-2856 -8428,-2886 -8283,-2917 -7873,-3094 -7060,-3124 -6810,-3151
