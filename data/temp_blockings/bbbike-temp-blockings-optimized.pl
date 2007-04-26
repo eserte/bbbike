@@ -491,7 +491,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'until' => 1222812000,
          'text' => 'Reichstagufer (Mitte) in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis 30.09.2008)',
          'from' => 1174068849,
-         'data' => 'userdel	q4::inwork 9091,12681 9209,12795
+         'data' => 'userdel	q4::inwork 9091,12681 9209,12795 9283,12856
 ',
          'type' => 'handicap'
        },
@@ -757,10 +757,33 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'text' => 'Linienstr.: Baustelle zwischen Koppenplatz (östliche Straße) und Rosenthaler Str., Einbahnstraße, Abbiegen in Kleine Auguststr. und Joachimstr. nicht möglich',
          'from' => undef,
          'data' => 'userdel	1::inwork 10214,13680 10081,13673 10020,13669 9964,13665
-	3 9964,13665 10020,13669 10049,13528
-	3 10049,13528 10020,13669 10081,13673
 	3 10020,13669 10081,13673 10142,13556
 	3 10142,13556 10081,13673 10214,13680
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005307',
+         'until' => undef,
+         'text' => 'Wittestraße (Reinickendorf) in beiden Richtungen, zwischen Otisstraße und Antonienstraße Arbeiten an Gasleitungen, Straße vollständig gesperrt',
+         'from' => undef,
+         'data' => 'userdel	2::inwork 3724,18948 3883,18944 4162,18891
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1178488800,
+         'text' => 'B 101 Herzberg-Jüterbog zw. Brandis und Abzw. Schweinitz ( Sa.-Anhalt) Deckeneinbau Vollsperrung 04.05.2007-06.05.2007 ',
+         'from' => 1178143200,
+         'data' => 'userdel	2::inwork -4418,-65798 -4189,-65380
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1177884000,
+         'text' => 'B 101 Herzberg-Jüterbog zw. Brandis und Abzw. Schweinitz ( Sa.-Anhalt) Deckeneinbau Vollsperrung 27.04.2007-29.04.2007 ',
+         'from' => 1177538400,
+         'data' => 'userdel	2::inwork -4418,-65798 -4189,-65380
 ',
          'type' => 'gesperrt'
        }

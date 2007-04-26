@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.305 2007/04/23 21:06:32 eserte Exp $
+# $Id: bbbike,v 3.305 2007/04/23 21:06:32 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -6592,6 +6592,7 @@ sub set_bindings {
     }
 
     $top->protocol('WM_DELETE_WINDOW', \&exit_app_noninteractive);
+    $top->command([$^X, $0]);
     my($old_width, $old_height);
     my $in_configure_event;
     $top->bind('<Configure>' => sub {

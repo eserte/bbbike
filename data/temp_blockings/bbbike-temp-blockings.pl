@@ -7347,7 +7347,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004994',
        data  => <<EOF,
-userdel	q4::inwork 9091,12681 9209,12795
+userdel	q4::inwork 9091,12681 9209,12795 9283,12856
 EOF
      },
      { from  => 1174068872, # 2007-03-16 19:14
@@ -7867,10 +7867,33 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1::inwork 10214,13680 10081,13673 10020,13669 9964,13665
-	3 9964,13665 10020,13669 10049,13528
-	3 10049,13528 10020,13669 10081,13673
 	3 10020,13669 10081,13673 10142,13556
 	3 10142,13556 10081,13673 10214,13680
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Wittestraße (Reinickendorf) in beiden Richtungen, zwischen Otisstraße und Antonienstraße Arbeiten an Gasleitungen, Straße vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_005307',
+       data  => <<EOF,
+userdel	2::inwork 3724,18948 3883,18944 4162,18891
+EOF
+     },
+     { from  => 1178143200, # 2007-05-03 00:00
+       until => 1178488800, # 2007-05-07 00:00
+       text  => 'B 101 Herzberg-Jüterbog zw. Brandis und Abzw. Schweinitz ( Sa.-Anhalt) Deckeneinbau Vollsperrung 04.05.2007-06.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -4418,-65798 -4189,-65380
+EOF
+     },
+     { from  => 1177538400, # 2007-04-26 00:00
+       until => 1177884000, # 2007-04-30 00:00
+       text  => 'B 101 Herzberg-Jüterbog zw. Brandis und Abzw. Schweinitz ( Sa.-Anhalt) Deckeneinbau Vollsperrung 27.04.2007-29.04.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -4418,-65798 -4189,-65380
 EOF
      },
     );

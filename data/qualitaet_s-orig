@@ -323,7 +323,7 @@ Rückerstr.: mäßiger Asphalt	Q1 10597,13647 10535,13509
 #: by: Andreas Mühlhausen (neu gemacht):
 Knaackstr.: Asphalt	Q0 11229,14422 11316,14360 11358,14331 11418,14290 11506,14230
 Immanuelkirchstr.: Kopfsteinpflaster	Q2 11506,14230 11727,14111 11958,13986
-Bersarinplatz: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q2 13710,12633 13686,12611 13678,12571 13698,12544 13742,12538 13776,12571 13770,12617 13747,12642 13710,12633
+Bersarinplatz: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q1- 13710,12633 13686,12611 13678,12571 13698,12544 13742,12538 13776,12571 13770,12617 13747,12642 13710,12633
 Petersburger Platz: Kopfsteinpflaster	Q2 13558,12766 13467,12978
 Pettenkoferstr Str.: Kopfsteinpflaster	Q2 15117,12106 15098,12213 15054,12323 14997,12450 14935,12596 14842,12826
 Marktstr., Fahrbahn Richtung Osten: Kopfsteinpflaster	Q2; 15267,10865 15109,10911
@@ -526,7 +526,7 @@ Stahnsdorfer Damm: Kopfsteinpflaster	Q2 -4803,1240 -4995,1075
 Hampsteadstr.: Kopfsteinpflaster	Q2 793,2632 1157,2818 1268,2886 1314,2915 1530,2900 1722,2887 1842,2880 1903,2903
 Reichstagufer: Kopfsteinpflaster	Q2 9091,12681 8892,12576 8766,12541 8665,12548
 Reichstagufer: guter bis mäßiger Asphalt	Q0- 9091,12681 9209,12795 9283,12856
-Am Weidendamm: mäßiger Asphalt	Q1 9383,12915 9529,12925
+Am Weidendamm: Asphalt	Q0 9283,12856 9383,12915 9529,12925
 Kopfstr.: Kopfsteinpflaster	Q2 12480,7887 12537,7899
 Kopfstr. - Lessinghöhe: Asphalt	Q2 12537,7899 12582,7909
 Neuwedeller Str.: Kopfsteinpflaster	Q2 12313,7852 12335,7770
@@ -1669,6 +1669,9 @@ Kulmseestr.: Asphalt	Q0 20303,12230 20364,12216 20473,12212 20629,12177
 Rotraudstr.: Asphalt, leicht uneben	Q0- 21118,14477 21099,14300 21087,14183 21074,14058 21062,13948
 (Pfingstrosenweg - Wuhlewanderweg): glatte Pflasterung	Q0 22079,10852 22097,10812 22106,10789
 (Begasstr. - Riemenschneiderweg): teils Verbundsteinpflaster, teils Asphalt	Q1 6505,7010 6662,7018 6781,7030
+(Gaudystr. - Mauerpark): glattes Pflaster	Q0 10473,15549 10256,15482 10186,15463
+#: note: laut joern (js) "schlechtere Qualität", ist aber ganz normales Kopfsteinpflaster
+Gaudystr.: Kopfsteinpflaster	Q2 10949,15674 10759,15622 10473,15549
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -2701,7 +2704,6 @@ Eckermannstr.: mäßiger Asphalt	Q1 20473,12212 20503,12432
 Eckermannstr.: Asphalt	Q0 20503,12432 20546,12815 20561,12925 20598,13219 20633,13497 20657,13692 20661,13725 20665,13759 20692,13984
 #: by: ^^^
 #: by: Joern (js): vvv
-Gaudystr.: Kopfsteinpflaster, schlechtere Qualität	Q2 10949,15674 10759,15622 10473,15549
 Greifenhagener Str.: Asphalt	Q0 11093,15771 11140,15859 11162,15903 11190,15950 11232,16037
 #: note: laut Bild im Tagesspiegel, kein Widerspruch von Joern vvv
 Greifenhagener Str.: Kopfsteinpflaster	Q2 11040,15398 11055,15504 11093,15771
