@@ -625,14 +625,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        undef,
        undef,
        undef,
-       {
-         'until' => 1177711200,
-         'text' => 'L 049 Lübbenau-Lübben Bahnübergang nach OA Lübben Gleisbauarbeiten Vollsperrung 26.04.2007-27.04.2007 ',
-         'from' => 1177452000,
-         'data' => 'userdel	2::inwork 45088,-55645 45152,-53482 45124,-52888
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1196463600,
@@ -784,6 +777,41 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'text' => 'L 792 Berliner Damm OD Blankenfelde, Höhe Hausnummer 4 Kranarbeiten Vollsperrung 08.05.2007-08.05.2007 ',
          'from' => 1178488800,
          'data' => 'userdel	2::inwork 10427,-7665 10424,-7409
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1178748000,
+         'text' => 'L 034 Philipp-Müller-Str. OD Strausberg, Höhe Feuerwehr Instandsetzung TW-Schieber halbseitig gesperrt; Einbahnstraße 02.05.2007-09.05.2007 ',
+         'from' => 1177970400,
+         'data' => 'userdel	1::inwork 43584,20871 43553,20466 43110,19818
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005329',
+         'until' => 1177884000,
+         'text' => 'Reichsstr. (Charlottenburg) in beiden Richtungen zwischen Theodor-Heuss-Platz und Steubenplatz Veranstaltung, Straße vollständig gesperrt (bis 29.04.2007 nachts)',
+         'from' => 1177739838,
+         'data' => 'userdel	2::temp 653,12109 738,12025 818,11954 881,11893 1033,11754 1133,11664 1220,11583 1308,11506 1403,11428
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005341',
+         'until' => 1177884000,
+         'text' => 'Rheinstr. (Schöneberg) in beiden Richtungen zwischen Walter-Schreiber-Platz und Saarstr. Straßenfest, Straße gesperrt (16:03) ',
+         'from' => undef,
+         'data' => 'userdel	2::temp 5370,6500 5424,6584 5533,6753 5654,6941
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005327',
+         'until' => 1178056800,
+         'text' => 'Stendaler Str. (Hellersdorf) in beiden Richtungen zwischen Hellersdorfer Str. und Janusz-Korczak-Str. Veranstaltung, Straße vollständig gesperrt (bis 01.05.2007 nachts)',
+         'from' => 1177739901,
+         'data' => 'userdel	2::temp 23952,15086 23960,15021 23993,14797
 ',
          'type' => 'gesperrt'
        }

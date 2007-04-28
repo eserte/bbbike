@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.30 2007/04/22 16:25:35 eserte Exp $
+# $Id: DirectGarmin.pm,v 1.30 2007/04/22 16:25:35 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -335,7 +335,7 @@ sub convert_from_route {
     if (!$args{-test}) {
 	$gps = new GPS::Garmin(  'Port'      => $gps_device,
 				 'Baud'      => 9600, # XXX don't hardcode
-				 #verbose => 1,
+				 ($DEBUG >= 2 ? (verbose => 1) : ()),
 			      ) or
 				  die Mfmt("Verbindung zum GPS-Gerät <%s> fehlgeschlagen", $gps_device);
     } else {

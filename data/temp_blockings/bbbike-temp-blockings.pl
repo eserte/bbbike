@@ -7904,4 +7904,39 @@ EOF
 userdel	2::inwork 10427,-7665 10424,-7409
 EOF
      },
+     { from  => 1177970400, # 2007-05-01 00:00
+       until => 1178748000, # 2007-05-10 00:00
+       text  => 'L 034 Philipp-Müller-Str. OD Strausberg, Höhe Feuerwehr Instandsetzung TW-Schieber halbseitig gesperrt; Einbahnstraße 02.05.2007-09.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 43584,20871 43553,20466 43110,19818
+EOF
+     },
+     { from  => 1177739838, # 2007-04-28 07:57
+       until => 1177884000, # 2007-04-30 00:00
+       text  => 'Reichsstr. (Charlottenburg) in beiden Richtungen zwischen Theodor-Heuss-Platz und Steubenplatz Veranstaltung, Straße vollständig gesperrt (bis 29.04.2007 nachts)',
+       type  => 'gesperrt',
+       source_id => 'IM_005329',
+       data  => <<EOF,
+userdel	2::temp 653,12109 738,12025 818,11954 881,11893 1033,11754 1133,11664 1220,11583 1308,11506 1403,11428
+EOF
+     },
+     { from  => undef, # 
+       until => 1177884000, # 2007-04-30 00:00
+       text  => 'Rheinstr. (Schöneberg) in beiden Richtungen zwischen Walter-Schreiber-Platz und Saarstr. Straßenfest, Straße gesperrt (16:03) ',
+       type  => 'gesperrt',
+       source_id => 'IM_005341',
+       data  => <<EOF,
+userdel	2::temp 5370,6500 5424,6584 5533,6753 5654,6941
+EOF
+     },
+     { from  => 1177739901, # 2007-04-28 07:58
+       until => 1178056800, # 2007-05-02 00:00
+       text  => 'Stendaler Str. (Hellersdorf) in beiden Richtungen zwischen Hellersdorfer Str. und Janusz-Korczak-Str. Veranstaltung, Straße vollständig gesperrt (bis 01.05.2007 nachts)',
+       type  => 'gesperrt',
+       source_id => 'IM_005327',
+       data  => <<EOF,
+userdel	2::temp 23952,15086 23960,15021 23993,14797
+EOF
+     },
     );
