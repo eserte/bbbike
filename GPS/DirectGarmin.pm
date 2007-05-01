@@ -96,6 +96,10 @@ sub transfer {
 	}
     } else {
 	$gps->upload_data($data);
+	if ($gps->{serial}) {
+	    # XXX Shouldn't be necessary, but it seems it is...
+	    $gps->{serial}->close;
+	}
     }
 }
 

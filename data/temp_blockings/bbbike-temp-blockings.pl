@@ -2896,7 +2896,7 @@ EOF
        text  => 'B 198; OD Prenzlau, Dr.-Wilhelm-Külz-Str. grundh. Straßenbau Vollsperrung 10.10.2005-12.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 39715,101866 39574,101863 39322,101924
+userdel	q4 39715,101866 39574,101863 39451,101893 39322,101924
 EOF
      },
      { from  => 1128376800, # 2005-10-04 00:00
@@ -3917,7 +3917,7 @@ EOF
        text  => 'B 198 Dr. Wilhelm Külz Str. Straßenbau Vollsperrung 03.04.2006-01.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 39322,101924 39574,101863
+userdel	q4::inwork 39322,101924 39451,101893 39574,101863
 userdel	q4::inwork 39715,101866 39574,101863
 EOF
      },
@@ -6884,8 +6884,8 @@ userdel	1::inwork -8671,13312 -8643,13383 -8358,13340 -8011,13351 -7693,13330
 EOF
      },
      { from  => 1168327664, # 2007-01-09 08:27
-       until => 1177970399, # 2007-04-30 23:59
-       text  => 'Oranienstr. und Lobeckstr. (Kreuzberg) in beiden Richtungen an der Kreuzung Baustelle, Oranienstr. auf einen Fahrstreifen je Richtung verengt, Lobeckstr. Einbahnstr. Richtung Ritterstr. (bis Ende 04.2007)',
+       until => Time::Local::timelocal(reverse(2007-1900,5-1,15,0,0,0)), # was 1177970399 2007-04-30 23:59
+       text  => 'Oranienstr. und Lobeckstr. (Kreuzberg) in beiden Richtungen an der Kreuzung Baustelle, Oranienstr. auf einen Fahrstreifen je Richtung verengt, Lobeckstr. Einbahnstr. Richtung Ritterstr. (bis Mitte 05.2007)',
        type  => 'gesperrt',
        source_id => 'IM_004447',
        data  => <<EOF,

@@ -288,8 +288,8 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        },
        {
          'source_id' => 'IM_004447',
-         'until' => 1177970399,
-         'text' => 'Oranienstr. und Lobeckstr. (Kreuzberg) in beiden Richtungen an der Kreuzung Baustelle, Oranienstr. auf einen Fahrstreifen je Richtung verengt, Lobeckstr. Einbahnstr. Richtung Ritterstr. (bis Ende 04.2007)',
+         'until' => 1179180000,
+         'text' => 'Oranienstr. und Lobeckstr. (Kreuzberg) in beiden Richtungen an der Kreuzung Baustelle, Oranienstr. auf einen Fahrstreifen je Richtung verengt, Lobeckstr. Einbahnstr. Richtung Ritterstr. (bis Mitte 05.2007)',
          'from' => 1168327664,
          'data' => 'userdel	1::inwork 10572,10773 10673,10975
 ',
@@ -336,15 +336,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_003972',
-         'until' => 1177970399,
-         'text' => 'Dunckerstr. (Prenzlauer Berg) in beiden Richtungen, Kreuzung Stargarder Str. Baustelle, Straße vollständig gesperrt (bis 04.2007)',
-         'from' => 1173515301,
-         'data' => 'userdel	2::inwork 11603,15455 11638,15522
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1199142000,
          'text' => 'L 090 Dr.-Külz-Str. OD Glindow, zw. Alte Str. und Alpenstr. Kanal- und Straßenbau, starke Einschränkungen 11.09.2006-31.12.2007 ',
@@ -522,14 +514,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1177970399,
-         'text' => 'Vom 20.03. bis voraussichtlich zum 30.04.2007 wird die Fahrbahndecke der Namslaustraße zwischen Berliner Straße und Sterkrader Straße erneuert. Während der Bauzeit wird die Namslaustraße in Richtung Berliner Straße als Einbahnstraße ausgewiesen. ',
-         'from' => 1174599531,
-         'data' => 'userdel	1::inwork 2698,19099 2585,19091 2460,19083 2098,19058
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -728,14 +713,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1177970400,
-         'text' => 'B 246 Bahnübergang in der OD Storkow Gleisbauarbeiten Vollsperrung 27.04.2007-30.04.2007 ',
-         'from' => 1177538400,
-         'data' => 'userdel	2::inwork 46813,-16595 47038,-17056 47086,-17195
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1178229600,
          'text' => 'L 030 Luckenwalder Str. OD Königs Wusterhausen, Höhe ALDI Bau einer Zufahrt halbseitig gesperrt; Einbahnstraße 23.04.2007-03.05.2007 ',
@@ -764,14 +742,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1177884000,
-         'text' => 'B 101 Herzberg-Jüterbog zw. Brandis und Abzw. Schweinitz ( Sa.-Anhalt) Deckeneinbau Vollsperrung 27.04.2007-29.04.2007 ',
-         'from' => 1177538400,
-         'data' => 'userdel	2::inwork -4418,-65798 -4189,-65380
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1178661600,
          'text' => 'L 792 Berliner Damm OD Blankenfelde, Höhe Hausnummer 4 Kranarbeiten Vollsperrung 08.05.2007-08.05.2007 ',
@@ -788,24 +759,8 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005329',
-         'until' => 1177884000,
-         'text' => 'Reichsstr. (Charlottenburg) in beiden Richtungen zwischen Theodor-Heuss-Platz und Steubenplatz Veranstaltung, Straße vollständig gesperrt (bis 29.04.2007 nachts)',
-         'from' => 1177739838,
-         'data' => 'userdel	2::temp 653,12109 738,12025 818,11954 881,11893 1033,11754 1133,11664 1220,11583 1308,11506 1403,11428
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_005341',
-         'until' => 1177884000,
-         'text' => 'Rheinstr. (Schöneberg) in beiden Richtungen zwischen Walter-Schreiber-Platz und Saarstr. Straßenfest, Straße gesperrt (16:03) ',
-         'from' => undef,
-         'data' => 'userdel	2::temp 5370,6500 5424,6584 5533,6753 5654,6941
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_005327',
          'until' => 1178056800,

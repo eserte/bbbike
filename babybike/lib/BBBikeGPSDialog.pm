@@ -22,11 +22,23 @@ use base qw(Tk::Toplevel);
 Construct Tk::Widget 'BBBikeGPSDialog';
 
 use vars qw($trkdir);
-$trkdir = "/tmp/gpstracks";
+if (eval { require File::Spec; 1 }) {
+    $trkdir = File::Spec->tmpdir . "/gpstracks";
+} else {
+    $trkdir = "/tmp/gpstracks";
+}
+
+if (eval { require File::Glob; 1 }) {
+    *my_glob = \&File::Glob::bsd_glob;
+} else {
+    *my_glob = sub { glob(@_) };
+}
 
 if (!caller) {
     require FindBin;
-    unshift @INC, "$FindBin::RealBin/../", $FindBin::RealBin;
+    unshift @INC, "$FindBin::RealBin/../",
+                  "$FindBin::RealBin/../..",
+                  $FindBin::RealBin;
 }
 
 require GPS::GpsmanConn; # Can't use
@@ -128,7 +140,7 @@ sub canvas {
 
 sub update_track_listing {
     my $w = shift;
-    my @files = sort glob("$trkdir/*.trk $trkdir/*.wpt");
+    my @files = sort { $a cmp $b } my_glob("$trkdir/*.trk", "$trkdir/*.wpt");
     my $lb = $w->Subwidget("Listbox");
     my %sel = map { ($lb->get($_) => 1) } $lb->curselection;
     $lb->delete(0, "end");
@@ -346,7 +358,7 @@ if (0) {
     $transpose = $canvas->get_transpose;
     $postdrawcommand = sub { $canvas->adjust_scrollregion };
 }
-$mw->BBBikeGPSDialog(-fork => 1,
+$mw->BBBikeGPSDialog(-fork => ($^O ne 'MSWin32'),
 		     -canvas => $canvas,
 		     -transpose => $transpose,
 		     -postdrawcommand => $postdrawcommand,

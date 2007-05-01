@@ -481,7 +481,7 @@ Wilmersdorf - Schmiedeberg: laut "Regio-Cart" gut geeignet	? 43151,79054 45600,8
 Bansin: Name der Straße (Badstr.? Schulstr.?)	? 57448,174956 57162,174737 57031,174737
 Westklüne - Ostklüne: Fährt hier eine Fähre? Wie oft?	? 42400,161212 42700,161025
 Dargen - Katschow: Fahrradroute laut Kompass-Karte	? 51162,165171 50715,166093 50337,166737 51034,167286 51565,167859
-#: note: von der südlichen Seite aus gesehen:
+#: note: vom südlichen Ende aus gesehen:
 Gellenthin: Fahrradroute laut Kompass-Karte; Qualität: scheint nur ein Feldweg zu sein	? 38459,162337 39037,162387 40018,160865
 Stücken - Tremsdorf: Qualität?	? -10978,-17764 -10562,-16912 -10175,-16537 -9675,-16375 -9200,-15550 -9035,-15135 -8680,-14704
 An der Havel (Mauerweg und Berlin-Kopenhagen): laut "Berliner Umland" gut geeigneter Radweg, laut ADFC-Karte "mäßig geeignet"; Durchfahrt unter der S-Bahn möglich?	? -3379,23141 -3025,23393 -2775,23981 -2675,24500 -2818,24631 -2946,25212
@@ -553,10 +553,11 @@ Str. 125a in "Kleine Usedomstr." umbenannt?	? 19497,1035 19571,1239
 Umbenenunng zu "Zu den Gosener Bergen"?	? 30640,-2803 30721,-2321
 Casekow - Luckow: Qualität? (Anfang in Casekow war gut asphaltiert)	? 63299,90673 63800,91275 63362,92337 63712,93412 63938,93631
 Luckow - Petershagen: Qualität?	? 63938,93631 65825,93937 66468,94268
-Petershagen - Penkun: Qualität?	? 66587,93937 66468,94268 66575,94387 66312,94862 66250,95800 65112,98837 65310,99357 65164,99497 65060,99990
+Petershagen - Penkun: Qualität?	? 66587,93937 66468,94268 66575,94387 66312,94862 66250,95800 65112,98837 65149,99482
 Luckow - Penkun: Qualität?	? 63938,93631 64150,94312 64062,94762 64262,96387 65112,98837
-Luckow - Sommersdorf: Qualität? (auf Sommersdorfer Seite: querliegende Betonplatten, vielleicht Q2)	? 63938,93631 63800,94250 62800,96175 62912,96800 62324,97382 61900,97587 61393,98356
-Bei Penkun: Qualität? Ausgeschildert?	? 68961,100161 68107,99606 67712,99425 66072,99485 65856,99466 65164,99497 64837,99262 64362,99087 63575,98375 62324,97382
+Luckow - Sommersdorf: Qualität?	? 63938,93631 63800,94250 62800,96175 62912,96800 62324,97382
+Storkow - Büssow: Qualität? zumindest die östliche Ende asphaltiert	? 68928,100165 68107,99606
+Büssow - Penkun: Qualität? (zumindest das westliche Ende wahrscheinlich asphaltiert)	? 68107,99606  67712,99425 66072,99485 65856,99466 65115,99600
 Büssow: Qualität?	? 68107,99606 67815,99673 67833,99771 67413,100429 66669,100124 66535,99929 66096,99655 66072,99485
 #: note: http://www.berlin.de/ba-lichtenberg/presse/archiv/20060801.2315.44967.html: ab 2006-11-30 wird dieser Abschnitt asphaltiert sein (last_checked 2006-10-03: an der Treskowallee bereits fertig)
 #: note: http://www.berlin.de/ba-lichtenberg/presse/archiv/20061109.1735.50098.html: ab 2006-11-24 fertig
@@ -577,7 +578,7 @@ Jan-Petersen-Str.: Radwege (unklare Eintragung existiert)? Zugang zur Landsberge
 #: next_check: 2005-08-01:
 Alter Markt: laut Message-ID: <2scvijF1io77eU1@uni-berlin.de> soll hier asphaltiert werden	?::inwork 22458,4565 22426,4609 22383,4703
 Berlin-Usedom am Werbellinsee: laut Tsp vom 2004-10-04 wird hier 2005 ein Radweg gebaut, laut anderen Informationen bis 2006-12-15	?::inwork 31000,61437 30784,60950 30778,60221 30671,59984 30625,59562 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27359,56787 27137,56650 26792,56558 26404,56518 26145,56499 26037,56412 26028,56303
-Zichow-Lindenwegsiedlung: Qualität? Auf der westlichen Seite als "Lindenweg" ausgeschildert	? 54500,87934 51978,87962
+Zichow-Lindenwegsiedlung: Qualität? Am westlichen Ende als "Lindenweg" ausgeschildert	? 54500,87934 51978,87962
 Prötzeler Ring und Trappenfelder Pfad: Qualität laut ADFC-Karte gut	? 21951,15918 22134,15615 22073,15172
 Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23279,14785 23379,14514
@@ -734,10 +735,10 @@ Bruno-Walter-Str.: Qualität?	? 5516,2873 5614,2822 5774,3007 5853,3050
 Stolpe - Usedom: Qualität des Radweges? In Stolpe wahrscheinlich Asphalt/Verbundsteinpflaster, westlich von Stolpe wahrscheinlich Asphalt? Genaue Koordinaten?	? 47621,163737 46987,163775 43164,164582
 Bansin, Fischerweg: geht es weiter zur Bergstr.?	? 56934,175371 57000,175587
 Friedrich-Wilhelm-Str.: Einbahnstraße nur für Autofahrer oder auch für Radfahrer?	? 8371,5896 8282,5909
-Mürow - Kerkow: Qualität? Auf der östlichen Seite sah es gut aus (asphaltiert)	? 50387,70821 49950,70956 49512,70978 49007,71214
+Mürow - Kerkow: Qualität? Am östlichen Ende sah es gut aus (asphaltiert)	? 50387,70821 49950,70956 49512,70978 49007,71214
 #: last_checked: 2007-03-25
 Melzow - Gramzow, Autobahnbrücke: wegen Bauarbeiten gesperrt, Qualität könnte mäßiger Asphalt sein	? 45082,88685 46529,89125
-Melzow - Meichow: Qualität (zumindest auf der westlichen Seite asphaltiert)?	? 43567,87443 44323,87544 45024,87474 45751,87363 46178,87310 46360,87391 46483,87364 47128,87233 47671,87099 48195,87137 48307,87186
+Melzow - Meichow: Qualität (zumindest am westlichen Ende asphaltiert)?	? 43567,87443 44323,87544 45024,87474 45751,87363 46178,87310 46360,87391 46483,87364 47128,87233 47671,87099 48195,87137 48307,87186
 Niklasstr. zwischen Lindenthaler Allee und Potsdamer Chaussee: Qualität?	? -1269,2892 -1070,2924 -928,2900 -791,2819 -740,2771
 #: XXX unklarer Eintrag von Jörg Nickisch, Rückfrage nicht möglich:
 Dachsteinweg: verkehrsberuhigt?	? 10481,2549 10446,2373 10493,2318
@@ -1275,8 +1276,8 @@ Bietzkestr.: Qualität? (wahrscheinlich Kopfsteinpflaster, das zwischen Marie-Cur
 Sophienstr. zwischen Marie-Curie-Allee und Heinrichstr.: Qualität? (Kopfsteinpflaster, das möglicherweise seit Sommer 2006 durch Asphalt ersetzt wurde)	? 16869,11190 16967,11162
 #: XXX war ein anonymer Eintrag, als Spielstraße ausgewiesen:
 Roßweiner Ring: Qualität?	? 25007,13951 25146,13901 25120,13803 24975,13848
-Herrenweg: Qualität? Von der nördlichen Seite aus ein Feldweg, von der südlichen Seite aus ein Plattenweg	? 52614,175530 51994,175744 51796,176068 51837,176409 51334,176779 51310,177121 51524,177739 51627,178336
-Brüssow - Caselow: Qualität (wahrscheinlich schlechtes Kopfsteinpflaster, von der südlichen Seite aus gesehen)?	? 55605,112935 55723,114036 56123,116226 55986,116675 56317,117060 56355,117304 56496,117228 57586,117220
+Herrenweg: Qualität? Vom nördlichen Ende aus ein Feldweg, vom südlichen Ende aus ein Plattenweg	? 52614,175530 51994,175744 51796,176068 51837,176409 51334,176779 51310,177121 51524,177739 51627,178336
+Brüssow - Caselow: Qualität (wahrscheinlich schlechtes Kopfsteinpflaster, vom südlichen Ende aus gesehen)?	? 55605,112935 55723,114036 56123,116226 55986,116675 56317,117060 56355,117304 56496,117228 57586,117220
 Bahnübergang	? 19302,-734
 Bohnsdorfer Chaussee/Gartenstr.: Qualität?	? 19704,-490 19302,-734 18773,-1095 18892,-1273
 Waldstr.: Qualität?	? 24539,-3298 24872,-3095 24987,-3015 25182,-2915 25580,-2673 25958,-2455
@@ -1341,7 +1342,6 @@ Alexanderstr./Alexa: Ampel in Vorbereitung	? 11207,12706
 Hackenbergstr.: Qualität? Gibt es hier einen Radweg?	? 20429,3792 20248,4040
 #: note: laut Message-ID: <e3o6lb$grb$1@hahn.informatik.hu-berlin.de> noch immer nicht fertig
 Peetzig - Greiffenberg: westlich der Bahnstrecke mittlerweile asphaltiert?	? 44200,74890 45817,75966
-Am Unteruckersee: gibt es mittlerweile eine bessere wassergebundene Decke?	? 41137,97643 41181,96937
 Putenweg: Qualität?	? 16491,517 16372,312 16281,156 16244,86 16192,24 16118,-51 16106,-94 16154,-230 16198,-339 16259,-368 16346,-394
 Widosteig - Bohnsdorfer Weg: Qualität (Trampelpfad?)	? 19934,1102 19957,1165 19940,1265
 #: XXX laut anonymen Kommentar "gut" ohne weitere Angaben
@@ -1416,5 +1416,12 @@ Gerlindeweg: Qualität des Abschnitts zwischen Luisenstr. und Helgaweg?	? -1846,1
 Burscheider Weg: Qualität (möglicherweise gutes Kopfsteinpflaster)? Einbahnstraßenregelung: gibt es eine, wo und in welche Richtung?	? -1345,15060 -1322,15079 -934,15254 -862,15283 -741,15304
 Markomannenstr. - Preußenstr.: existiert eine für Radfahrer befahrbare Verbindung zwischen Markomannenstr. und Preußenstr.?	? 20700,1363 20711,1406
 Karl-Egon-Str.: Qualität der Karl-Egon-Str. zwischen Marksburgstr. und Dönhoffstr.?	? 18430,9199 18406,9052 18372,8869
-Bootshausweg - An den Rohrbruchwiesen: Qualität des Weges? für Autofahrer gesperrt?	? -1229,16773 -1316,16729 -1355,16736 -1421,16751 -1452,16728
+Bootshausweg - An den Rohrbruchwiesen: Qualität des Weges? für Autofahrer gesperrt?	? -1229,16773 -1316,16729 -1359,16737 -1421,16751 -1452,16728
 Am Flugplatz (Strausberg): Qualität?	? 44596,21287 44661,21139 44631,21051 44692,20886 44686,20822 44536,20408 44527,19890 44085,19049
+Prenzlau, Friedrichstr.: Qualität? (zumindest am nördlichen Ende Kopfsteinpflaster, OK, Q1); Einbahnstraßenregelung? Fußgängerzone im Mittelteil?	? 39574,101863 39550,101671 39538,101564 39536,101514
+Prenzlau, Straße des Friedens: Qualität? (zumindest am nördlichen Ende Kopfsteinpflaster, mäßig bis schlecht, Q2-)	? 39451,101893 39389,101541 39392,101477
+Grünberg - Woddow: Kopfsteinpflaster?	? 59778,106987 60070,107705 60469,108187 60813,108458 60965,108878 61060,109018
+Grünberg - Battin: Qualität? zumindest am nördlichen Ende asphaltiert	? 59818,106862 59868,106575 59862,106288 59768,105990 59719,105670 59680,105514 59774,105301
+Bagemühl - Woddow: Qualität? zumindest am südlichen Ende asphaltiert	? 62065,106668 61934,107921 61962,108537 61660,108741 61301,108826 61179,108976 61060,109018
+Woddow - Wolschow: Qualität?	? 61060,109018 61885,112074 61780,112606
+Battinsthal - Penkun: Qualität? zumindest am nördlichen Ende asphaltiert	? 65975,103506 65883,103056 66039,102017 66127,101413

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.56 2007/04/23 21:46:12 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.56 2007/04/23 21:46:12 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -719,7 +719,7 @@ permission:
 # necessary, and optionally unmounted after copying.
 # The camcontrol commands were not necessary for 4.9, but are for 4.11
 # FreeBSD 6.x names the old mount_msdos now mount_msdosfs
-USB_STICK_NUMBER=1
+USB_STICK_NUMBER=0
 copy-cvs-to-stick:	copy-to-cvs
 	@[ ! -d /mnt/stick ] && ( \
 	    echo "Create the mount directory /mnt/stick? (CTRL-C to abort)"; \

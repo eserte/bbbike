@@ -139,12 +139,13 @@ Karstädt	2 -103601,81383
 Prenzlau	4 39682,101543
 Bündigershof	0 42981,101756
 Wollenthin	0 43200,102737
-Seelübbe	0 42437,96300
+Seelübbe	1 42437,96300
+Kietz Modderort|(bei Seelübbe)	0 42049,95965
 Brüssow	3 57405,111424
 Moor|(Brüssow)	0 55287,109712
 Hammelstall|(Brüssow)	0 56821,109071
-Woddow	1 61091,109037
-Bagemühl	1 62608,106744
+Woddow	1 61060,109018
+Bagemühl	1 62612,106709
 Damme|(Uckermark)	1 49971,99565
 #: XXX: Randowtal: besteht aus Eickstedt, Schmölln und Ziemkendorf.
 Eickstedt	1 51860,100659
@@ -168,11 +169,14 @@ Hedwigshof|(bei Carmzow)	0 54450,109425
 Grünberg	2 59136,106775
 Trampe|bei Grünberg	0 57431,107358
 Schwaneberg	0 57125,102912
+Albrechtshof|bei Schwaneberg	0 57296,104637
+Klausthal|bei Grünberg	0 56943,105764
 Battin	0 59774,105301
 Wollin|(Eickstedt)	0 53952,97760
 Seehausen|am Oberuckersee	1 41085,90590
 Berghausen|bei Seehausen	0 42081,92815
 Siefertshof|(bei Seehausen)	0 40981,94200
+Neumannshof|(bei Seehausen)	0 41181,95200
 Pinnow|bei Gerswalde	0 34805,90367
 Buchholz|bei Gerswalde	0 31796,89304
 Blankensee|bei Haßleben	0 28994,87995
@@ -337,9 +341,11 @@ Reinbek	4 -206074,119025
 Bergedorf	0 -209464,116390
 Lenzen	3 -122199,74069
 Penkun	3 65597,100079
+Storkow|(bei Penkun)	1 68140,101615
 Büssow	0 67815,99673
 Wollin|(Penkun)	1 64241,102111
 Krackow	1 67229,105204
+Battinsthal	0 65928,103659
 Glasow|(Randowbruch)	1 67637,109062
 Wollschow	1 61885,112074
 Sonnenberg|(bei Retzin)	0 70127,111146
@@ -960,6 +966,7 @@ Gellin	0 70594,117181
 Plöwen	1 66718,118790
 Groß Pinnow	2 68212,87748
 Sommersdorf	1 61351,98696
+Neuhof|bei Sommersdorf	0 62324,97382
 Grünz	1 58479,98546
 Celle	5 -215735,20890
 Groß Rietz	1 65774,-20483

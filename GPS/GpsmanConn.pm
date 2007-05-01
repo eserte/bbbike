@@ -296,6 +296,7 @@ sub new {
 	# XXX Linux: /dev/ttyS0 or ttyS1
 	my $port = $args{Port} || ($Config::Config{archname} eq 'arm-linux'   ? '/dev/ttySA0' :
 				   $Config::Config{archname} =~ /^i.86-linux/ ? '/dev/ttyS0'  :
+				   $^O eq 'MSWin32' ? 'COM1:' :
 				   '/dev/cuaa0'); # more distinctions
 	my $baud = $args{Baud} || 9600;
 	$self->{GPS} = new GPS::Garmin('Port' => $port,
@@ -307,6 +308,18 @@ sub new {
     }
     $self->{Verbose} = $args{Verbose};
     bless $self, $class;
+}
+
+# XXX Shouldn't be necessary, but it seems it is...
+sub DESTROY {
+    my($self) = @_;
+    warn "Calling Destructor of $self";
+    if ($self->{GPS}) {
+	if ($self->{GPS}->{serial}) {
+	    warn "close serial";
+	    $self->{GPS}->{serial}->close;
+	}
+    }
 }
 
 sub _time_to_gpsman {
