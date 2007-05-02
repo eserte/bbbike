@@ -7939,4 +7939,13 @@ EOF
 userdel	2::temp 23952,15086 23960,15021 23993,14797
 EOF
      },
+     { from  => undef, # 
+       until => 1199142000, # 2008-01-01 00:00
+       text  => 'Bernauer Str. (Reinickendorf) in beiden Richtungen zwischen Neheimer Str. und Berliner Str. Baustelle, Straße vollständig gesperrt (bis 2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_005339',
+       data  => <<EOF,
+userdel	2::inwork 2175,18740 2602,18737 2643,18738 2821,18831
+EOF
+     },
     );

@@ -132,6 +132,11 @@ wird das noch für die SF-Version verwendet? Vielleicht sollte die
 SF-Version grundsätzlich alle Module außer Tk/* bekommen?). Manuelle
 Tests machen, ob bei beiden das gleiche herauskommt.
 
+=item * (H4)
+
+qualitaet-Einstellungen sollten persistent aus dem Optimierungsdialog
+gemacht werden können
+
 =item * (M4)
 
 Konverter vom E<quot>TouratechE<quot>-Format nach bbd schreiben. Beispieldatei:
@@ -3011,6 +3016,11 @@ installer.
 FreeBSD-Port anpassen, so daß install.pl verwendet wird. PLIST
 von install.pl abhängig machen. -kdeinstall in
 Abhängigkeit von HAVE_KDE angeben.
+
+=item * (M1)
+
+copy-cvs-to-stick-Makeregel: cache-Verzeichnis sollte nicht auf dem
+Stick existieren
 
 =back
 

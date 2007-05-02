@@ -761,12 +761,13 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        },
        undef,
        undef,
+       undef,
        {
-         'source_id' => 'IM_005327',
-         'until' => 1178056800,
-         'text' => 'Stendaler Str. (Hellersdorf) in beiden Richtungen zwischen Hellersdorfer Str. und Janusz-Korczak-Str. Veranstaltung, Straße vollständig gesperrt (bis 01.05.2007 nachts)',
-         'from' => 1177739901,
-         'data' => 'userdel	2::temp 23952,15086 23960,15021 23993,14797
+         'source_id' => 'IM_005339',
+         'until' => 1199142000,
+         'text' => 'Bernauer Str. (Reinickendorf) in beiden Richtungen zwischen Neheimer Str. und Berliner Str. Baustelle, Straße vollständig gesperrt (bis 2008)',
+         'from' => undef,
+         'data' => 'userdel	2::inwork 2175,18740 2602,18737 2643,18738 2821,18831
 ',
          'type' => 'gesperrt'
        }
