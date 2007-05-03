@@ -765,9 +765,27 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        {
          'source_id' => 'IM_005339',
          'until' => 1199142000,
-         'text' => 'Bernauer Str. (Reinickendorf) in beiden Richtungen zwischen Neheimer Str. und Berliner Str. Baustelle, Straße vollständig gesperrt (bis 2008)',
+         'text' => 'Bernauer Str. (Reinickendorf) in Richtung Spandau zwischen Berliner Str. und Nehheimer Str. Baustelle, Fahrtrichtung gesperrt (bis 2008)',
+         'from' => 1178048628,
+         'data' => 'userdel	1::inwork 2821,18831 2643,18738 2602,18737 2175,18740
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005369',
+         'until' => 1188597600,
+         'text' => 'Burgfrauenstr. (Reinickendorf) in beiden Richtungen, zwischen Zeltlinger Pl. und Im Fischgrund Baustelle, Straße vollständig gesperrt (bis 09/07)',
          'from' => undef,
-         'data' => 'userdel	2::inwork 2175,18740 2602,18737 2643,18738 2821,18831
+         'data' => 'userdel	2::inwork 2979,24373 2438,25082
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005359',
+         'until' => undef,
+         'text' => 'Tiergartenstr. - H. v. Karajan-Str- (Tiergarten) in beiden Richtungen zwischen Stauffenbergstr. und Kemperplatz Veranstaltung Straße vollständig gesperrt',
+         'from' => undef,
+         'data' => 'userdel	2::temp 8172,11679 8021,11636 7717,11540
 ',
          'type' => 'gesperrt'
        }

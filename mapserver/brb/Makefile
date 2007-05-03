@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.54 2007/02/03 22:26:17 eserte Exp $
+# $Id: Makefile,v 1.55 2007/05/03 00:56:21 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -668,3 +668,16 @@ dist-spiff:
 # New compile of CVS version on bbbike.radzeit.de
 # - bison/yacc was missing, got it from http://www.slackware.at/data/slackware-10.0/slackware/d/
 #   and installed it with installpkg 
+
+# Tried mapserver 4.4.x on FreeBSD-amd64 6.2 as a package. Unfortunately there
+# are a lot of segfaults, and the detailmap images for bbbike.cgi do not
+# work at all.
+#
+# Some investigation: it seems that the problem is a premature "break" in
+# a switch in mapfile.c near line 1881. This problem seems to be fixed in the
+# latest CVS version.
+#
+# But there's another interesting problem: the index files created on a
+# 32 bit system does not seem to be compatible on a 64 bit system. Be
+# cautious when deploying the mapserver data files to the radzeit server!
+

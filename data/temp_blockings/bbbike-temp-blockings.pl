@@ -1135,7 +1135,7 @@ EOF
        text  => 'L 171; (Hohen Neuendorf-Hennigsdorf); Bereich Anschlußstelle Straßenbau Vollsperrung 28.10.2004-18.12.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -926,27132 -2118,26060
+userdel	2 -926,27132 -1941,26218 -2118,26060
 EOF
      },
      { from  => 1099177200, # 2004-10-31 01:00
@@ -1627,7 +1627,7 @@ EOF
        text  => 'K 6501; (Bahnhofstr.); OD Schildow, zw. Hauptstr. u. F.-Schmidt-Str. grundhafter Straßenbau Vollsperrung 16.03.2005-31.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 8066,25646 8182,25608
+userdel	q4 7975,25642 8182,25608
 EOF
      },
      { from  => 1149623367, # 2006-06-06 21:49
@@ -2356,7 +2356,7 @@ EOF
        text  => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarerstr. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 20.07.2005-01.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 1772,31266 2257,31124
+userdel	2 1738,31301 1771,31319 2135,31205 2259,31166
 EOF
      },
      { from  => 1121724000, # 2005-07-19 00:00
@@ -7939,13 +7939,31 @@ EOF
 userdel	2::temp 23952,15086 23960,15021 23993,14797
 EOF
      },
-     { from  => undef, # 
+     { from  => 1178048628, # 2007-05-01 21:43
        until => 1199142000, # 2008-01-01 00:00
-       text  => 'Bernauer Str. (Reinickendorf) in beiden Richtungen zwischen Neheimer Str. und Berliner Str. Baustelle, Straße vollständig gesperrt (bis 2008)',
+       text  => 'Bernauer Str. (Reinickendorf) in Richtung Spandau zwischen Berliner Str. und Nehheimer Str. Baustelle, Fahrtrichtung gesperrt (bis 2008)',
        type  => 'gesperrt',
        source_id => 'IM_005339',
        data  => <<EOF,
-userdel	2::inwork 2175,18740 2602,18737 2643,18738 2821,18831
+userdel	1::inwork 2821,18831 2643,18738 2602,18737 2175,18740
+EOF
+     },
+     { from  => undef, # 
+       until => 1188597600, # 2007-09-01 00:00
+       text  => 'Burgfrauenstr. (Reinickendorf) in beiden Richtungen, zwischen Zeltlinger Pl. und Im Fischgrund Baustelle, Straße vollständig gesperrt (bis 09/07)',
+       type  => 'gesperrt',
+       source_id => 'IM_005369',
+       data  => <<EOF,
+userdel	2::inwork 2979,24373 2438,25082
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Tiergartenstr. - H. v. Karajan-Str- (Tiergarten) in beiden Richtungen zwischen Stauffenbergstr. und Kemperplatz Veranstaltung Straße vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_005359',
+       data  => <<EOF,
+userdel	2::temp 8172,11679 8021,11636 7717,11540
 EOF
      },
     );

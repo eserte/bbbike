@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.32 2007/03/21 23:17:27 eserte Exp $
+# $Id: MapServer.pm,v 1.32 2007/03/21 23:17:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -54,8 +54,6 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
 
     sub biokovo_default {
 	my $self = shift->vran_default;
-	## use mapserver from ports
-	#$self->MapserverBinDir("/usr/local/bin");
 	require Config;
 	if ($Config::Config{archname} =~ /amd64/) {
 	    warn "Use latest CVS version (amd64)...";
@@ -64,6 +62,10 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
 	    warn "Use latest CVS version...";
 	    $self->MapserverBinDir("/usr/local/src/work/mapserver");
 	}
+	## use mapserver from ports
+	#$self->MapserverBinDir("/usr/local/bin");
+	## mapserver uninstalled from ports
+	#$self->MapserverBinDir("/usr/ports/graphics/mapserver/work/mapserver-4.4.1");
 	$self->FontsList("fonts-biokovo.list");
 	$self;
     }
@@ -293,7 +295,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
 		   "-e", @{ $self->BBox },
 		   "-i", $self->ImageType,
 		  );
-	#warn "@cmd";
+	warn "@cmd" if $BBBikeDraw::MapServer::DEBUG;
 	my $buf;
 
 #  	if ($ENV{MOD_PERL}) {

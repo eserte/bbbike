@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.52 2007/04/15 22:08:35 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.53 2007/05/02 23:06:53 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -705,7 +705,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.52 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.53 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -4873,10 +4873,10 @@ sub draw_map {
 	eval {
 	    local $SIG{'__DIE__'};
 	    require BBBikeDraw;
-	    open(IMG, ">$img_file") or confess "Fehler: Die Karte $img_file konnte nicht erstellt werden.<br>\n";
-	    chmod 0644, $img_file;
-	    open(MAP, ">$map_file") or confess "Fehler: Die Map $map_file konnte nicht erstellt werden.<br>\n";
-	    chmod 0644, $map_file;
+	    open(IMG, "> $img_file~") or confess "Fehler: Die Karte $img_file~ konnte nicht erstellt werden.<br>\n";
+	    chmod 0644, "$img_file~";
+	    open(MAP, "> $map_file~") or confess "Fehler: Die Map $map_file~ konnte nicht erstellt werden.<br>\n";
+	    chmod 0644, "$map_file~";
 	    $q->param('geometry', $detailwidth."x".$detailheight);
 	    $q->param('draw', 'str', 'ubahn', 'sbahn', 'wasser', 'flaechen', 'ort', 'berlin');
 	    $q->param('drawwidth', 1);
@@ -4906,7 +4906,7 @@ sub draw_map {
 					       );
 	    $draw->set_dimension(@dim);
 	    $draw->create_transpose();
-	    print "Create $img_file...\n" if $args{-logging};
+	    print "Create $img_file~...\n" if $args{-logging};
 	    $draw->draw_map();
 	    if ($_create_imagemap) {
 		$draw->make_imagemap(\*MAP);
@@ -4916,6 +4916,15 @@ sub draw_map {
 	    $q->delete('geometry');
 	    close MAP;
 	    close IMG;
+
+	    if (-z "$img_file~") {
+		confess "Fehler: die erzeugte Datei $img_file~ ist 0 Bytes groﬂ.\n";
+	    }
+	    rename "$map_file~", $map_file
+		or confess "Fehler: Die Datei $map_file~ konnte nicht umbenannt werden ($!).<br>\n";
+	    rename "$img_file~", $img_file
+		or confess "Fehler: Die Datei $img_file~ konnte nicht umbenannt werden ($!).<br>\n";
+
 	};
 	die __LINE__ . ": Warnung: $@<br>\n" if $@;
     }
@@ -5688,8 +5697,13 @@ sub complete_link_to_einstellungen {
 }
 
 sub link_to_met {
-    #qq{<a href="http://www.met.fu-berlin.de/deutsch/Wetter/meldungen.html">};
-    qq{<a href="http://www.met.fu-berlin.de/de/wetter/">};
+## Die Berliner Wetterkarte sieht nicht so schick aus, und hat sowieso
+## die gleichen Daten wie die Startseite von met.fu-berlin.de
+#     if ("@weather_cmdline" =~ /parse_wetterkarte/) {
+# 	qq{<a href="http://wkserv.met.fu-berlin.de/Wetter/mainframe.php">};
+#     } else {
+	qq{<a href="http://www.met.fu-berlin.de/de/wetter/">};
+#     }
 }
 
 sub window_open {
@@ -6426,7 +6440,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/04/15 22:08:35 $';
+    my $cgi_date = '$Date: 2007/05/02 23:06:53 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

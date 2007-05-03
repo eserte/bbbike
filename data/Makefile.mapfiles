@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.33 2007/03/19 21:36:21 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.33 2007/03/19 21:36:21 eserte Exp eserte $
 #
 
 .ifndef COMMENTS_PARTIAL
@@ -21,6 +21,8 @@ CONVERT_RADWEGE=	${MISCSRCDIR}/convert_radwege
 
 .if ${HOST} == "biokovo.herceg.de"
 MAPSERVER_BIN_DIR?=	/usr/local/bin
+.elif ${HOST} == "biokovo-amd64.herceg.de"
+MAPSERVER_BIN_DIR?=	/usr/local/src/work/mapserver-amd64
 .else
 MAPSERVER_BIN_DIR?=	/usr/local/src/work/mapserver
 .endif

@@ -27,7 +27,7 @@ Hauptstr. (Blankenfelde): Kopfsteinpflaster	Q2 9425,23693 9625,23781 9774,23936
 Hauptstr. (Blankenfelde): Asphalt	Q0 9774,23936 9812,23983 9828,24149
 Berliner Str. (Blankenfelde): schlechtes Kopfsteinpflaster	Q3 9425,23693 9490,23531
 Berliner Str. (Blankenfelde): mäßiges Kopfsteinpflaster	Q2 9490,23531 9528,23240
-B96a: Radweg Richtung N, OK	Q0 9228,23643 9146,23843 8984,24078 8891,24330 8710,24821 8659,24959 8493,25378
+B96a: Radweg Richtung N, OK	Q0 9228,23643 9146,23843 8984,24078 8891,24330 8686,24872 8659,24959 8493,25378
 Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15586,27150 15231,26587 14859,26029 14472,25449 14314,25193 14219,25013
 Hobrechtsfelder Chaussee (ab Kurve): schlechtes Kopfsteinpflaster, 13 km/h	Q3 15586,27150 15709,27984 15757,28054
 Wisbyer Str.: mäßiges Kopfsteinpflaster	Q2 11033,16464 11289,16423 11397,16405 11448,16398 11470,16393 11542,16384 11632,16373 11688,16365 11727,16358
@@ -294,7 +294,7 @@ Gabriel-Max-Str.: Kopfsteinpflaster	Q2 14102,11715 14065,11605 14049,11553
 Kurfürstenstr.: Kopfsteinpflaster	Q2 7633,10394 7744,10372 7850,10351 8061,10310
 (Im Jagen, Verlängerung): Waldweg	Q1 1375,6138 1057,6461 909,6584 905,6631
 Jahnstr: Kopfsteinpflaster	Q2 11509,9392 11493,9128
-Mauerweg: teilweise nur mäßiger Asphalt	Q1 7725,21247 7303,20639 7083,20584 6601,20542 6488,20505 6372,20467
+Mauerweg: teilweise nur mäßiger Asphalt	Q1 7725,21247 7289,20618 7083,20584 6601,20542 6488,20505 6372,20467
 An der Nordbahn: mäßiges Pflaster (?)	Q1 6985,19859 6679,20122 6374,20394 6289,20468
 An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q1 8665,18570 8476,18773
 An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q1 8361,18778 7528,19469
@@ -750,6 +750,8 @@ Schererstr.: mäßig geeignet	Q2 7786,15785 7960,15801
 Nibelungenstr. (Wannsee): sehr schlechtes Kopfsteinpflaster	Q3 -4578,1185 -4559,1337 -4554,1391 -4121,1760 -4071,1739
 Seeuferstr.: mäßiges Kopfsteinpflaster	Q2 -4071,1739 -4044,1841
 Nymphenufer: mäßig geeignet	Q2 -4044,1841 -3981,1764 -3806,1644 -3761,1576 -3654,1539
+(Bahnhofstr. - Schildower Weg): Feldwege	Q2 8626,23432 8535,23753 8502,23877 8462,24018 8338,24092 8198,24225
+Lübarser Weg: Asphalt	Q0 8415,24361 8686,24872
 Dolomitenstr.: Kopfsteinpflaster	Q2 10596,17554 10473,17446 10305,17299
 (Orankestr. - Orankesee): gut geeignet	Q0 15598,15793 15581,15846
 Peter-Vischer-Str.: Asphalt	Q0 6185,6469 6324,6480 6473,6493 6538,6499 6706,6513 6826,6523
@@ -1199,7 +1201,7 @@ Glanzstr.: Asphalt	Q0 16323,6998 16430,6880 16578,6715
 Heinrich-Lassen-Park: wassergebundener Belag	Q1 6664,8787 6740,8682 6815,8691 6912,8617
 Am Berlin-Spandauer Schiffahrtskanal: Kopfsteinpflaster	Q2 8337,13541 8248,13659
 Am Berlin-Spandauer Schiffahrtskanal: glatter Belag	Q0 8248,13659 8101,13901 8114,13921
-Uferweg: Asphalt für Radfahrer, Kopfsteinpflaster für Fußgänger	Q0 8015,14109 7993,14114 7954,14187 7807,14441
+Uferweg: Asphalt für Radfahrer, Kopfsteinpflaster für Fußgänger	Q0 8015,14109 7993,14114 7954,14187 7828,14405 7807,14441
 (Uferweg am Nordhafen): Asphalt	Q0 7753,14528 7695,14545 7467,14633
 Gabrielenstr.: überwiegend mäßiger Asphalt	Q1 1715,20766 1684,20773 1630,20731 1518,20615 1127,20434 1060,20403
 An der Malche: fester Waldweg	Q1 1127,20434 1060,20557 995,20590 921,20562 864,20646 673,20800
@@ -1585,6 +1587,8 @@ Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 Eulerstr.: Asphalt	Q0 9268,16228 9336,16302 9498,16480
 Boizenburger Str.: guter Asphalt	Q0 22310,12829 22310,12637 22309,12350 22385,12268
+Stößerstr.: mäßiger Asphalt	Q1 -2248,19849 -2103,19833 -1806,19806 -1739,19803
+Dürkheimer Str.: mäßiges Kopfsteinpflaster	Q2 6704,3662 6819,3782
 Georg-Knorr-Str.: guter Asphalt	Q0 19428,15126 19175,15042 19183,15019
 Trützschlerstr.: guter Asphalt	Q0 17471,4570 17612,4460 17745,4351
 Werbergstr.: Asphalt	Q0 9708,6493 9739,6635
@@ -1997,7 +2001,7 @@ Kleinaustr: Kopfsteinpflaster, Gehweg besser	Q2 1318,3009 1453,3085
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): wassergebundene Decke	Q1 1453,3085 1659,3226 1687,3244 1715,3257 1977,3414 2271,3571
 Matternstr.: mäßiges Kopfsteinpflaster	Q2 13798,13003 13579,12904
 Elßholzstr.: mäßiges Kopfsteinpflaster	Q2 7201,9318 7192,9508 7185,9819
-Schwarzspechtweg: Asphalt	Q0 -1787,19341 -2027,19326 -2152,19331 -2205,19331
+Schwarzspechtweg: Asphalt	Q0 -1787,19341 -2027,19326 -2152,19331 -2236,19331
 Schwarzspechtweg: Asphalt	Q0 -2152,19331 -2158,19119
 Rallenweg: asphaltiert	Q0 -2307,20958 -1978,20928
 Mühlenweg: Waldweg	Q1 -1978,20928 -1843,20925 -1700,20971 -1559,20931 -1040,20962 -843,20940 -750,20878 -290,20665 -46,20553 112,20568 595,20764 673,20800
@@ -2242,7 +2246,8 @@ Mudrackzeile: asphaltiert	Q0 6895,17625 7043,17667 7009,17778
 Mariabrunner Weg: asphaltiert	Q0 7009,17778 6859,17753
 Walderseestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7333,17149 7614,17245
 Fräsersteig: Betonplatten	Q1 5770,20407 5959,20524 6034,20551 6134,20585 6184,20550 6298,20599
-Alter Bernauer Heerweg: Kopfsteinpflaster	Q2 6668,22746 7072,22905 7782,23172 7923,23225 8203,23321 8584,23421
+Alter Bernauer Heerweg: Kopfsteinpflaster	Q2 6668,22746 7072,22905 7782,23172 7923,23225 8203,23321
+Alter Bernauer Heerweg: wassergebundene Decke	Q1 8203,23321 8584,23421
 Alte Fasanerie:: Sandweg, Spurrillen, mäßig bis gut	Q1 7416,22349 8015,22512
 Freizeitpark Lübars: befestigter Sandweg mittlerer Güte	Q1 8015,22512 8062,22631 7782,23172
 Schillerstr.: Betonplatten	Q2 10082,20518 10323,20578 10547,20644 10635,20693 10743,20764
@@ -3275,6 +3280,9 @@ Saalmannstr.: mäßiges Kopfsteinpflaster	Q2 5171,18785 5181,19037
 Ifenpfad: guter Asphalt	Q0 10187,1345 10259,1376
 Karl-Egon-Str.: schlechtes Kopfsteinpflaster	Q3 18457,9343 18430,9199
 Humperdinckstr.: mäßiges Kopfsteinpflaster	Q2 5783,3182 5933,3261 5988,3283 6039,3275
+Kösliner Str.: guter Beton	Q0 8048,15829 8066,15610
+Mommsenstr. (Lichterfelde): Kopfsteinpflaster	Q2 3583,4011 3356,3860
+Sodtkestr.: mäßiges Kopfsteinpflaster	Q2 12221,15514 12302,15664 12382,15802 12423,15875
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14202,13140 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934
