@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Build.pm,v 1.18 2005/03/28 22:48:41 eserte Exp eserte $
+# $Id: Build.pm,v 1.18 2005/03/28 22:48:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
