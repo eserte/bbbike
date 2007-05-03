@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.306 2007/05/03 01:26:04 eserte Exp $
+# $Id: bbbike,v 3.307 2007/05/03 22:32:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -208,7 +208,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.306 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.307 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4799,6 +4799,11 @@ speicherplatzsparender.",
 	  nogui => 1, 	# XXX remove some day?
 	  var => \$init_with_edittools,
 	 ],
+	 ['texteditor','=s',undef,
+	  label => M"Externer Texteditor",
+	  var => \$texteditor,
+	  longhelp => M"Mögliche Werte sind vi (automatisch in einem xterm gestartet), emacsclient, gnuclient",
+	 ],
 	 ['stderr','!',0,
 	  label => M"Fehlerausgabe auf stderr", var => \$stderr],
 	 ['stderrwindow','!',undef,
@@ -5757,10 +5762,15 @@ sub generate_plot_functions {
 		    }
 		    if ($image) {
 			if (!$photo{$image}) {
-			    my $f = maybe_expand_image_file($image, $str_file{$abk}, "images");
-			    if ($f) {
-				$photo{$image} = image_from_file($top, $f);
-			    } else {
+			    my $f;
+			    for my $subdir ("images", "data") {
+			        $f = maybe_expand_image_file($image, $str_file{$abk}, $subdir);
+			        if ($f && -r $f) {
+				    $photo{$image} = image_from_file($top, $f);
+				    last;
+			        }
+			    }
+			    if (!$photo{image}) {
 				warn "Can't find photo $image (1)";
 			    }
 			}
@@ -10899,7 +10909,7 @@ sub mark_street {
 				      @common_args,
 				     );
 		}
-	    } else {
+	    } elsif (@res_coords) {
 		my @add_args;
 		if (@res_coords == 2) {
 		    push @res_coords, @res_coords;
@@ -10916,6 +10926,10 @@ sub mark_street {
 		    my @overview_coords;
 		    for(my $i=0; $i<$#res_coords; $i+=2) {
 			push @overview_coords, _convert_transposed_to_overview_coord(@res_coords[$i,$i+1]);
+		    }
+		    if (@overview_coords == 2) {
+			push @overview_coords, @overview_coords;
+			push @add_args, -capstyle => $capstyle_round;
 		    }
 		    my %add_args = @add_args;
 		    $add_args{-width} = 1; # overwrite

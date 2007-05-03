@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.44 2007/05/03 01:31:08 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.45 2007/05/03 22:31:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -176,7 +176,7 @@ sub get_html {
 	 # Versehen, Host existiert nicht:
 	 'slaven1.bbbike.de'  => "ABQIAAAAidl4U46XIm-bi0ECbPGe5hRQAqip6zVbHiluFa7rPMSCpIxbfxQLz2YdzoN6O1jXFDkco3rJ_Ry2DA",
 	);
-    my $base = URI->new(url(-base => 1));
+    my $base = URI->new(BBBikeCGIUtil::my_url(CGI->new, -base => 1));
     my $fallback_host = "bbbike.radzeit.de";
     my $host = eval { $base->host } || $fallback_host;
     my $google_api_key = $google_api_keys{$host} || $google_api_keys{$fallback_host};
@@ -195,8 +195,13 @@ sub get_html {
     <link type="image/gif" rel="shortcut icon" href="$bbbikeroot/images/bbbike_google.gif"><!-- XXX only for radzeit -->
     <script src="http://maps.google.com/maps?file=api&v=2&key=$google_api_key" type="text/javascript"></script>
     <script src="$bbbikeroot/html/sprintf.js" type="text/javascript"></script>
+    <style type="text/css"><!--
+        .sml          { font-size:x-small; }
+	#permalink    { color:red; }
+	#addroutelink { color:blue; }
+    --></style>
   </head>
-  <body>
+  <body onunload="GUnload()">
     <div id="map" style="width: 100%; height: 500px"></div>
     <script type="text/javascript">
     //<![CDATA[
@@ -206,6 +211,12 @@ sub get_html {
 
     var addRoute = [];
     var addRouteOverlay;
+
+    var startIcon = new GIcon(G_DEFAULT_ICON, "http://bbbike.radzeit.de/BBBike/images/flag2_bl_centered.png");
+    startIcon.iconAnchor = new GPoint(10,10);
+    var goalIcon = new GIcon(G_DEFAULT_ICON, "http://bbbike.radzeit.de/BBBike/images/flag_ziel_centered.png");
+    goalIcon.iconAnchor = new GPoint(10,10);
+    var currentPointMarker = null;
 
     function createMarker(point, html_name) {
 	var marker = new GMarker(point);
@@ -218,6 +229,16 @@ sub get_html {
 
     function setwpt(x,y) {
         map.recenterOrPanToLatLng(new GPoint(x, y));
+    }
+
+    function setwptAndMark(x,y) {
+	var pt = new GPoint(x, y);
+	map.recenterOrPanToLatLng(pt);
+	if (currentPointMarker) {
+	    map.removeOverlay(currentPointMarker);
+	}
+	currentPointMarker = new GMarker(pt);
+	map.addOverlay(currentPointMarker);
     }
     
     function showCoords(point, message) {
@@ -304,6 +325,27 @@ sub get_html {
 	map.addOverlay(addRouteOverlay);
     }
 
+    function updateWptDiv(resultXml) {
+	var polarElements = resultXml.documentElement.getElementsByTagName("LongLatPath")[0].getElementsByTagName("XY");
+	var bbbikeElements = resultXml.documentElement.getElementsByTagName("Path")[0].getElementsByTagName("XY");
+	var bbbike2polar = {};
+	for(var i = 0; i < polarElements.length; i++) {
+	    bbbike2polar[bbbikeElements[i].textContent] = polarElements[i].textContent;
+	}
+	var pointElements = resultXml.documentElement.getElementsByTagName("Route")[0].getElementsByTagName("Point");
+	var wptHTML = "";
+	for(var i = 0; i < pointElements.length; i++) {
+	    var pe = pointElements[i];
+	    var bbbikeCoord = pe.getElementsByTagName("Coord")[0].textContent;
+	    var polarCoord = bbbike2polar[bbbikeCoord];
+	    if (polarCoord) {
+		var xy = polarCoord.split(",");
+		wptHTML += "<a href='#map' onclick='setwptAndMark(" + xy[0] + "," + xy[1] + ");return true;'>" + pe.getElementsByTagName("DistString")[0].textContent + " " + pe.getElementsByTagName("DirectionString")[0].textContent + " " + pe.getElementsByTagName("Strname")[0].textContent + "</a><br />\\n";
+	    }
+	}
+	document.getElementById("wpt").innerHTML = wptHTML;
+    }
+
     function updateRouteSel() {
 	return; // XXX the selection code does not really work
 
@@ -372,7 +414,6 @@ sub get_html {
 	    var xml = request.responseXML;
 	    var line = xml.documentElement.getElementsByTagName("LongLatPath")[0];
 	    var pointElements = line.getElementsByTagName("XY");
-	    var points = new Array();
 	    for (var i = 0; i < pointElements.length; i++) {
 	    	var xy = pointElements[i].textContent.split(",");
 		if (i == 0) setwpt(xy[0],xy[1]);
@@ -381,6 +422,7 @@ sub get_html {
             }
 	    //updateRouteDiv();
 	    updateRouteOverlay();
+	    updateWptDiv(xml);
 	}
     }
 
@@ -405,12 +447,12 @@ sub get_html {
 		goalOverlay = null;
 	    }
 	    startPoint = point;
-	    startOverlay = new GMarker(startPoint);
+	    startOverlay = new GMarker(startPoint, startIcon);
 	    map.addOverlay(startOverlay);
 	    searchStage = 1;
 	} else if (searchStage == 1) { // set goal
 	    goalPoint = point;
-	    goalOverlay = new GMarker(goalPoint);
+	    goalOverlay = new GMarker(goalPoint, goalIcon);
 	    map.addOverlay(goalOverlay);
 	    searchStage = 0;
 	    searchRoute(startPoint, goalPoint);
@@ -474,11 +516,11 @@ EOF
     <noscript>
         <p>You must enable JavaScript and CSS to run this application!</p>
     </noscript>
-    <div style="font-size:x-small;" id="message"></div>
-    <div style="font-size:x-small; color:red;" id="permalink"></div>
-    <div style="font-size:x-small; color:blue;" id="addroutelink"></div>
-    <div style="font-size:x-small;" id="addroutetext"></div>
-    <div id="wpt">
+    <div class="sml" id="message"></div>
+    <div class="sml" id="permalink"></div>
+    <div class="sml" id="addroutelink"></div>
+    <div class="sml" id="addroutetext"></div>
+    <div class="sml" id="wpt">
 EOF
     for my $wpt (@$wpts) {
 	my($x,$y,$name) = @$wpt;

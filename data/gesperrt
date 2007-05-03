@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.160 2007/05/03 01:28:46 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.160 2007/05/03 01:28:46 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -348,7 +348,6 @@ Jugendweg	1 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
 Boschpoler Platz	1 20540,13773 20665,13759
 Kienbergstr.	1 21287,14963 21225,14907 21217,14721 21122,14713
 Engelmannweg	1 4531,18217 4492,18013 4429,17763
-Krokusstr.	1 16738,2717 16739,2736 16677,2856
 Waldowstr.	1 5546,18219 5548,18309 5551,18434 5553,18542 5557,18580 5560,18774
 Kienhorststr.	1 5553,18542 5324,18560
 Halbauer Weg	1 7722,3142 7719,3219 7734,3290 7753,3371
@@ -465,6 +464,7 @@ Petersburger Str. -> An der Brauerei: Straßenbahntrasse	3 13393,13326 13378,1335
 Heidenfeldstr. -> Petersburger Str.: Straßenbahntrasse	3 13433,13346 13393,13326 13437,13228
 Petersburger Str. -> Heidenfeldstr.: Straßenbahntrasse	3 13378,13353 13393,13326 13433,13346
 Stubenrauchstr. -> Krokusstr.: Bahntrasse	3 16779,2993 16677,2856 16739,2736
+Krokusstr. -> Stubenrauchstr.: Bahntrasse	3 16739,2736 16677,2856 16635,2796
 Ellernweg -> Sterndamm: Straßenbahntrasse	3 17428,4792 17542,4772 17601,5090
 Ellernweg -> Waldstr.: Straßenbahntrasse	3 17428,4792 17542,4772 17881,4521
 Sterndamm -> Ellernweg: Straßenbahntrasse	3 17518,4644 17542,4772 17428,4792

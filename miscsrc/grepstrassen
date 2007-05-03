@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: grepstrassen,v 1.19 2007/03/24 19:38:14 eserte Exp $
+# $Id: grepstrassen,v 1.20 2007/05/03 21:02:46 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -221,14 +221,13 @@ sub init_nextcheck {
 
 sub special_nextcheck {
     my($r, $dir) = @_;
-    if (exists $dir->{last_checked}) {
-	my($y,$m,$d) = $dir->{last_checked}[0] =~ m{(\d{4})-(\d{2})-(\d{2})};
+    if (exists $dir->{next_check}) {
+	my($y,$m,$d) = $dir->{next_check}[0] =~ m{(\d{4})-(\d{2})-(\d{2})};
 	if (!$y) {
-	    ($y,$m) = $dir->{last_checked}[0] =~ m{(\d{4})-(\d{2})};
+	    ($y,$m) = $dir->{next_check}[0] =~ m{(\d{4})-(\d{2})};
 	    $d=1;
 	}
 	return if (!$y);
-	($y,$m,$d) = Date::Calc::Add_Delta_Days($y,$m,$d, $special_data{nextcheck}{check_frequency_days});
 	my $date = sprintf "%04d-%02d-%02d", $y,$m,$d;
 	if ($date lt $special_data{nextcheck}{today}) {
 	    my $new_r = Storable::dclone($r);
@@ -236,13 +235,14 @@ sub special_nextcheck {
 	    $type_s{nextcheck}->push($new_r);
 	    $type_s{nextcheck}->set_directive_for_current($dir);
 	}
-    } elsif (exists $dir->{next_check}) {
-	my($y,$m,$d) = $dir->{next_check}[0] =~ m{(\d{4})-(\d{2})-(\d{2})};
+    } elsif (exists $dir->{last_checked}) {
+	my($y,$m,$d) = $dir->{last_checked}[0] =~ m{(\d{4})-(\d{2})-(\d{2})};
 	if (!$y) {
-	    ($y,$m) = $dir->{next_check}[0] =~ m{(\d{4})-(\d{2})};
+	    ($y,$m) = $dir->{last_checked}[0] =~ m{(\d{4})-(\d{2})};
 	    $d=1;
 	}
 	return if (!$y);
+	($y,$m,$d) = Date::Calc::Add_Delta_Days($y,$m,$d, $special_data{nextcheck}{check_frequency_days});
 	my $date = sprintf "%04d-%02d-%02d", $y,$m,$d;
 	if ($date lt $special_data{nextcheck}{today}) {
 	    my $new_r = Storable::dclone($r);

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: create_track_index.pl,v 1.3 2007/03/31 20:07:42 eserte Exp $
+# $Id: create_track_index.pl,v 1.4 2007/05/03 20:35:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -104,3 +104,18 @@ sub seems_like_a_gpsman_file {
 }
 
 __END__
+
+=head1 NAME
+
+create_track_index.pl - create a date-to-gpsfile index
+
+=head1 SYNOPSIS
+
+    create_track_index.pl [-v] [-filenameindex file] [-dateindex file] tracks ...
+
+=head1 DESCRIPTION
+
+B<create_track_index.pl> creates an index from dates to gpsman files
+and an index from filenames to dates.
+
+=cut

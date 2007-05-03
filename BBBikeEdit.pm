@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.117 2007/04/09 22:10:58 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.119 2007/05/03 22:34:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2108,7 +2108,7 @@ sub click {
 		   },
 		   @button_args,
 		  )->pack(-side => "left");
-	$f->Button(-text => "Emacs",
+	$f->Button(-text => $main::texteditor || "Editor",
 		   -command => sub {
 		       # XXX don't duplicate code, see below
 		       # XXX ufff... this is also in  BBBikeAdvanced::find_canvas_item_file for the F9 key :-(
@@ -2181,6 +2181,7 @@ use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n"
 			if (!defined $this_base) {
 			    $this_base = $base;
 			}
+			local $^W = 0;
 			if ($this_base eq $coordsys) {
 			    push @coords, [$x,$y];
 			}
@@ -2234,19 +2235,40 @@ use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n"
 sub start_editor {
     my($file, $line) = @_;
     require BBBikeUtil;
-    if (BBBikeUtil::is_in_path("gnuclient")) {
-	system(qw(gnuclient -q), '+'.$line, $file);
-	if ($?/256 != 0) {
-	    main::status_message("Error while starting gnuclient", "die");
+    my @try = ((defined $main::texteditor && $main::texteditor !~ m{^\s*$} ? $main::texteditor : ()),
+	       "gnuclient",
+	       "emacsclient",
+	       "emacsclient-snapshot",
+	       "vi",
+	      );
+    for my $try (@try) {
+	if ($try =~ m{gnuclient} && BBBikeUtil::is_in_path($try)) {
+	    system($try, '-q', '+'.$line, $file);
+	    if ($?/256 != 0) {
+		main::status_message("Error while starting $try", "die");
+	    }
+	    return;
+	} elsif ($try =~ m{emacsclient} && BBBikeUtil::is_in_path($try)) {
+	    system($try, '-n', '+'.$line, $file);
+	    if ($?/256 != 0) {
+		main::status_message("Error while starting $try", "die");
+	    }
+	    return;
+	} elsif ($try eq 'vi' && BBBikeUtil::is_in_path($try) && BBBikeUtil::is_in_path("xterm")) {
+	    system("xterm", "-e", "vi", "+".$line, $file);
+	    if ($?/256 != 0) {
+		main::status_message("Error while starting $try in an xterm", "die");
+	    }
+	    return;
+	} elsif (BBBikeUtil::is_in_path($try)) {
+	    system($try, "+".$line, $file);
+	    if ($?/256 != 0) {
+		main::status_message("Error while starting $try", "die");
+	    }
+	    return;
 	}
-	return;
-    } else {
-	system(qw(emacsclient -n), '+'.$line, $file);
-	if ($?/256 != 0) {
-	    main::status_message("Error while starting emacsclient", "die");
-	}
-	return;
     }
+    main::status_message("Cannot find any text editor, tried @try", "die");
 }
 
 sub send_comment {

@@ -4,7 +4,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 
 use File::Spec;
 use File::Basename;
@@ -34,6 +34,7 @@ my $recreate_thumbnails;
 my $date_index_file;
 my $date_db;
 my $v;
+my $relative_paths;
 
 GetOptions("gpsdatadir=s" => \$gps_data_dir,
 	   "dateindex=s" => \$date_index_file,
@@ -44,13 +45,14 @@ GetOptions("gpsdatadir=s" => \$gps_data_dir,
 	   "thumbnailsize=i" => \$thumbnail_size,
 	   "converter=s" => \$converter,
 	   "recreatethumbnails" => \$recreate_thumbnails,
+	   "rel|relativepaths!" => \$relative_paths,
 	   "v!" => \$v,
 	  ) or die <<EOF;
 usage: $0 [-gpsdatadir directory] [-thumbnaildir directory]
           [-clockgps HH:MM:SS -clockcamera HH:MM:SS]
 	  [-anchor nw|n|ne|e|se|s|sw] [-thumbnailsize pixels]
           [-converter Image::GD::Thumbnail|ImageMagick|ImageMagick+exiftool|best|fast]
-	  [-recreatethumbnails]
+	  [-recreatethumbnails] [-rel|-relativepaths]
           [-v] image ...
 EOF
 
@@ -287,11 +289,14 @@ for my $file (@ARGV) {
 	my($lat, $long, $interval, $date) = @{$ret}{qw(Latitude Longitude Interval Date)};
 	my($x, $y) = $Karte::Standard::obj->trim_accuracy
 	    ($Karte::Polar::obj->map2standard($long, $lat));
-	my $abs_file = File::Spec->rel2abs($file);
+	my $file_in_bbd = $relative_paths ? $file : File::Spec->rel2abs($file);
 	my $thumb_file = create_thumbnail($file);
+	if ($relative_paths) {
+	    $thumb_file = File::Spec->abs2rel($thumb_file);
+	}
 	if (defined $thumb_file) {
 	    my $hm = s2hm($interval);
-	    print qq{Image: "$abs_file" ($lat/$long) ($date) ($hm)\tIMG:$thumb_file};
+	    print qq{Image: "$file_in_bbd" ($lat/$long) ($date) ($hm)\tIMG:$thumb_file};
 	    if ($anchor) {
 		print qq{|ANCHOR:$anchor};
 	    }
@@ -386,18 +391,6 @@ sub create_thumbnail_ImageMagick {
 # REPO BEGIN
 # REPO NAME is_in_path /home/e/eserte/work/srezic-repository 
 # REPO MD5 81c0124cc2f424c6acc9713c27b9a484
-
-=head2 is_in_path($prog)
-
-=for category File
-
-Return the pathname of $prog, if the program is in the PATH, or undef
-otherwise.
-
-DEPENDENCY: file_name_is_absolute
-
-=cut
-
 sub is_in_path {
     my($prog) = @_;
     return $prog if (file_name_is_absolute($prog) and -f $prog and -x $prog);
@@ -422,16 +415,6 @@ sub is_in_path {
 # REPO BEGIN
 # REPO NAME file_name_is_absolute /home/e/eserte/work/srezic-repository 
 # REPO MD5 89d0fdf16d11771f0f6e82c7d0ebf3a8
-
-=head2 file_name_is_absolute($file)
-
-=for category File
-
-Return true, if supplied file name is absolute. This is only necessary
-for older perls where File::Spec is not part of the system.
-
-=cut
-
 BEGIN {
     if (eval { require File::Spec; defined &File::Spec::file_name_is_absolute }) {
 	*file_name_is_absolute = \&File::Spec::file_name_is_absolute;
@@ -482,11 +465,17 @@ Or put instructions in a makefile:
 	mkdir -p rj-fotos/.xvpics
 	$(HOME)/src/bbbike/miscsrc/geocode_images \
 	    -gpsdatadir $(HOME)/src/bbbike/misc/gps_data/other \
-	    -thumbnaildir ${.CURDIR}/rj-fotos/.xvpics \
+	    -thumbnaildir rj-fotos/.xvpics \
 	    -converter fast \
 	    -clockgps 08:52:02 -clockcamera 08:49:43 \
-	    -v -anchor nw \
+	    -v -anchor nw -relativepaths \
 	    rj-fotos/*.jpg > rj-fotos.bbd
+
+B<-relativepaths> assumes that thumbnaildir, the specified photos and
+the generated bbd file are relative to each other.
+
+The B<-dateindex I</tmp/gpsdateindex.db>> option assumes that a GPS
+index was build before with L<create_track_index.pl>.
 
 =head1 HOWTO
 
@@ -509,5 +498,9 @@ plugin is located in the F<miscsrc> subdirectory of bbbike.
 thumbnails to get the larger version
 
 =back
+
+=head1 SEE ALSO
+
+L<create_track_index.pl>
 
 =cut

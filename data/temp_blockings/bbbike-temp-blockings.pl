@@ -6919,7 +6919,7 @@ userdel	2::inwork 22691,12044 22668,12080 22701,12115
 EOF
      },
      { from  => 1168898369, # 2007-01-15 22:59
-       until => 1214863199, # 2008-06-30 23:59
+       until => 1178221318, # 2008-06-30 23:59 1214863199
        text  => 'Weinmeisterstr. (Mitte) in beiden Richtungen, zwischen Münzstr. und Gipsstr. Baustelle, Straße vollständig gesperrt (bis 06/2008)',
        type  => 'gesperrt',
        source_id => 'IM_004491',
@@ -7958,12 +7958,47 @@ userdel	2::inwork 2979,24373 2438,25082
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1178221293, # XXX undef
        text  => 'Tiergartenstr. - H. v. Karajan-Str- (Tiergarten) in beiden Richtungen zwischen Stauffenbergstr. und Kemperplatz Veranstaltung Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005359',
        data  => <<EOF,
 userdel	2::temp 8172,11679 8021,11636 7717,11540
+EOF
+     },
+     { from  => 1178221257, # 2007-05-03 21:40
+       until => 1178575200, # 2007-05-08 00:00
+       text  => 'Alt-Köpenick (Köpenick) gesamter Bereich Alt-Köpenick, Schlossplatz, Rosentr., Grünstr. Veranstaltung, Straße vollständig gesperrt (bis 07.05.2007 16 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_005385',
+       data  => <<EOF,
+userdel	2::temp 22263,4671 22138,4661 22111,4562 22162,4546 22312,4593
+userdel	2::temp 22093,4499 22111,4562
+userdel	2::temp 22196,4847 22138,4661
+EOF
+     },
+     { from  => 1178402400, # 2007-05-06 00:00
+       until => 1178661600, # 2007-05-09 00:00
+       text  => 'B 246 Nächst Neuendorfer Chaussee Bahnübergang in OL Zossen Bauarbeiten am Bahnübergang Vollsperrung 07.05.2007-08.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 13326,-20518 13414,-20498 13623,-20519
+EOF
+     },
+     { from  => 1115157600, # 2005-05-04 00:00
+       until => 1178402400, # 2007-05-06 00:00
+       text  => 'L 015 Berliner Str. OD Lychen, zw. Hohe Stegstr. u. Nesselpfuhlfließ Einbau Asphaltdecke Vollsperrung 05.05.2005-05.05.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 2480,89399 2111,89378 1907,89597
+EOF
+     },
+     { from  => 1178402400, # 2007-05-06 00:00
+       until => 1179698400, # 2007-05-21 00:00
+       text  => 'L 040 Zossener Damm OD Blankenfelde, zw. Tankstelle u. Garagentrakt. Ausbau Landesstraße Vollsperrung 07.05.2007-20.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 10115,-8276 11019,-8435
 EOF
      },
     );
