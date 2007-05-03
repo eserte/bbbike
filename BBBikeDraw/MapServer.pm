@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.33 2007/05/03 01:21:58 eserte Exp $
+# $Id: MapServer.pm,v 1.33 2007/05/03 01:21:58 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -125,7 +125,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.33 $ =~ /(\d+)\.(\d+)/);
 	#$self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
 	$self->MapserverBinDir("/usr/local/src/work/mapserver");
 	$self->MapserverRelurl("/mapserver/brb");
-	$self->MapserverUrl("http://radzeit.herceg.de/mapserver/brb");
+	$self->MapserverUrl("http://radzeit.herceg.de/mapserver/brb"); # herceg.local some day
 	$self->TemplateMap("brb.map-tpl");
 	$self->ImageSuffix("png");
 	#$self->FontsList("fonts-radzeit.list");
@@ -221,11 +221,11 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.33 $ =~ /(\d+)\.(\d+)/);
 		    $ENV{SERVER_NAME} =~ /radzeit\.de$/) {
 		    $conf = BBBikeDraw::MapServer::Conf->radzeit_default;
 		} elsif (defined $ENV{SERVER_NAME} &&
-			 $ENV{SERVER_NAME} =~ /radzeit\.herceg\.de$/) {
+			 $ENV{SERVER_NAME} =~ /radzeit\.herceg\.(de|local)$/) {
 		    $conf = BBBikeDraw::MapServer::Conf->radzeit_herceg_de_default;
-		} elsif (Sys::Hostname::hostname() =~ /vran\.herceg\.de$/) {
+		} elsif (Sys::Hostname::hostname() =~ /vran\.herceg\.(de|local)$/) {
 		    $conf = BBBikeDraw::MapServer::Conf->vran_default;
-		} elsif (Sys::Hostname::hostname() =~ /herceg\.de$/) {
+		} elsif (Sys::Hostname::hostname() =~ /herceg\.(de|local)$/) {
 		    $conf = BBBikeDraw::MapServer::Conf->biokovo_default;
 		} else {
 		    $conf = BBBikeDraw::MapServer::Conf->bbbike_cgi_conf;
