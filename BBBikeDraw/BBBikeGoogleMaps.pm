@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGoogleMaps.pm,v 1.2 2007/04/13 20:32:45 eserte Exp $
+# $Id: BBBikeGoogleMaps.pm,v 1.3 2007/05/04 20:39:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -16,17 +16,19 @@ package BBBikeDraw::BBBikeGoogleMaps;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(BBBikeDraw);
 
-use vars qw($bbbike_googlemaps_url);
+use vars qw($bbbike_googlemaps_url $maptype);
 if (!defined $bbbike_googlemaps_url) {
     # Unfortunately I cannot use $BBBIKE_GOOGLEMAP_URL from BBBikeVar.pm here,
     # because it seems that POSTs content is not sent through the rewriting
     # rules...
     $bbbike_googlemaps_url = "http://bbbike.radzeit.de/cgi-bin/bbbikegooglemap.cgi";
 }
+
+$maptype = "hybrid" unless $maptype;
 
 use CGI qw(:standard);
 
@@ -50,7 +52,8 @@ sub flush_direct_redirect {
 	    push @wpt, join "!", $wpt->{Strname}, $wpt->{Coord};
 	}
     }
-    my $q2 = CGI->new({coords => $q->param("coords"),
+    my $q2 = CGI->new({coords  => $q->param("coords"),
+		       maptype => $maptype,
 		       (@wpt ? (wpt => \@wpt) : ()),
 		      });
     print $q->redirect($bbbike_googlemaps_url . "?" . $q2->query_string);
@@ -84,6 +87,7 @@ EOF
     print $fh start_form(-action => $bbbike_googlemaps_url,
 			 -method => "POST");
     print $fh hidden("coords", $coords);
+    print $fh hidden("maptype", $maptype);
     for my $wpt (@wpt) {
 	print $fh hidden("wpt", $wpt);
     }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.33 2007/05/03 01:21:58 eserte Exp eserte $
+# $Id: MapServer.pm,v 1.34 2007/05/04 20:38:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.33 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.34 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -123,7 +123,12 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.33 $ =~ /(\d+)\.(\d+)/);
 	}
 	#$self->MapserverBinDir("$apache_root/cgi-bin");
 	#$self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
-	$self->MapserverBinDir("/usr/local/src/work/mapserver");
+	if ($Config::Config{archname} =~ /amd64/) {
+	    warn "Use latest CVS version (amd64)...";
+	    $self->MapserverBinDir("/usr/local/src/work/mapserver-amd64");
+	} else {
+	    $self->MapserverBinDir("/usr/local/src/work/mapserver");
+	}
 	$self->MapserverRelurl("/mapserver/brb");
 	$self->MapserverUrl("http://radzeit.herceg.de/mapserver/brb"); # herceg.local some day
 	$self->TemplateMap("brb.map-tpl");

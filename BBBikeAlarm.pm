@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAlarm.pm,v 1.38 2007/03/31 20:00:41 eserte Exp $
+# $Id: BBBikeAlarm.pm,v 1.39 2007/05/04 22:55:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000, 2006 Slaven Rezic. All rights reserved.
@@ -21,7 +21,10 @@ package BBBikeAlarm;
 use FindBin;
 use vars qw($VERSION
 	    $can_leave $can_at $can_tk $can_palm $can_s25_ipaq $can_ical
-	    $alarms_file);
+	    $can_bluetooth
+	    $alarms_file
+	    @baddr
+	   );
 use strict;
 use lib "$FindBin::RealBin/lib";
 
@@ -41,11 +44,21 @@ my $install_datebook_additions = 1;
 
 use Time::Local;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.39 $ =~ /(\d+)\.(\d+)/);
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?
 # XXX Leave funktioniert nur für max. 12 Stunden (testen!)
+
+sub my_die ($) {
+    my $msg = shift;
+    if (defined &main::status_message) {
+	main::status_message($msg, "die");
+    } else {
+	require Carp;
+	Carp::croak($msg);
+    }
+}
 
 sub enter_alarm {
     my($top, $time_ref, %args) = @_;
@@ -190,7 +203,8 @@ sub enter_alarm {
 
 	capabilities();
 
-	my($use_tk, $use_leave, $use_palm, $use_s25_ipaq, $use_at, $use_ical);
+	my($use_tk, $use_leave, $use_palm, $use_s25_ipaq, $use_at, $use_ical,
+	   $use_bluetooth);
 	if ($can_tk) {
 	    $use_tk = 1;
 	} elsif ($can_leave) {
@@ -203,6 +217,8 @@ sub enter_alarm {
 	    $use_s25_ipaq = 1;
 	} elsif ($can_ical) {
 	    $use_ical = 1;
+	} elsif ($can_bluetooth) {
+	    $use_bluetooth = 1;
 	}
 
 	if ($can_tk) {
@@ -255,6 +271,16 @@ sub enter_alarm {
 	    $use_s25_ipaq = 0;
 	}
 
+	if ($can_bluetooth) {
+	    $t->Checkbutton(-text => "VCal via Bluetooth",
+			    -variable => \$use_bluetooth)->grid(-row => $row++,
+								-column => 0,
+								-columnspan => 2,
+								-sticky => "w");
+	} else {
+	    $use_bluetooth = 0;
+	}
+
 	if ($can_ical) {
 	    $t->Checkbutton(-text => "ical",
 			    -variable => \$use_ical)->grid(-row => $row++,
@@ -287,8 +313,10 @@ sub enter_alarm {
 		       palm_leave($ankunft_epoch, $pre_alarm_seconds,
 				  -text => $text)
 			   if $use_palm;
-		       s25_ipaq_leave($ankunft_epoch, $pre_alarm_seconds)
+		       s25_ipaq_leave($abfahrt_epoch, $ankunft_epoch, $pre_alarm_seconds)
 			   if $use_s25_ipaq;
+		       bluetooth_leave($top, $abfahrt_epoch, $ankunft_epoch, $pre_alarm_seconds)
+			   if $use_bluetooth;
 		       add_ical_entry($abfahrt_epoch, $text, -prealarm => $vorbereitung_s)
 			   if $use_ical;
 		       $do_close = 1;
@@ -386,7 +414,7 @@ sub grabbing_leave {
     # -text is ignored in leave
     my @tty = get_all_terms();
     if (!@tty) {
-	die "No tty found for current user!";
+	my_die "No tty found for current user!";
     }
     system("leave $time | tee @tty &");
 }
@@ -398,7 +426,7 @@ sub grabbing_at {
     $time = substr($time,0,2) . ":" . substr($time,2,2);
     my @tty = get_all_terms();
     if (!@tty) {
-	die "No tty found for current user!";
+	my_die "No tty found for current user!";
     }
     system(qq{echo 'echo "$time: $text" | tee @tty' | at $time});
 }
@@ -444,7 +472,7 @@ sub palm_leave {
 
     my $text = "BBBike datebook entry";
     $text = $args{-text} if $args{-text} ne "";
-    open(F, ">$leave_file") or die "Can't write to $leave_file: $!";
+    open(F, ">$leave_file") or my_die "Can't write to $leave_file: $!";
     print F "$begin\t$end\t" . $alarm_min . "m\t$text";
     if ($install_datebook_additions && defined &main::get_act_search_route) {
 	print F "\t";
@@ -456,7 +484,7 @@ sub palm_leave {
     }
     print F "\n";
     close F
-	or die "While closing $leave_file: $!";
+	or my_die "While closing $leave_file: $!";
 
     # pilot-xfer 0.9.3's install-datebook is buggy!!!!
     # use fixed executable XXX
@@ -480,35 +508,15 @@ sub s25_ipaq_leave {
     # - ipaq named "ipaq" in /etc/hosts
     # - ssh connection to the ipaq possible
     # - scmxx installed on the ipaq
-    return unless $main::cabulja;
-    my($ankunft_epoch, $pre_alarm_seconds, %args) = @_;
+    return unless $main::devel_host;
+    my($abfahrt_epoch, $ankunft_epoch, $pre_alarm_seconds, %args) = @_;
 
-    require POSIX;
-    my $dtstart = POSIX::strftime("%Y%m%dT%H%M%S", localtime $ankunft_epoch-$pre_alarm_seconds);
-
-    my $descr = "BBBike";
-    if (defined &main::get_act_search_route) {
-	my @search_route = @{ main::get_act_search_route() };
-	$descr = $search_route[-1][StrassenNetz::ROUTE_NAME()];
-    }
-
-    my $ical_file = "/tmp/s25_cal.ical";
-    #my $cat = "MISCELLANEOUS";
-    my $cat = "MEETING";
+    my $vcal_entry = create_vcalendar_entry($abfahrt_epoch, $ankunft_epoch, $pre_alarm_seconds);
 
     # create ical file on the ipaq
+    my $ical_file = "/tmp/s25_cal.ical";
     open(CAT, '| ssh -l root ipaq "cat > ' . $ical_file . '"');
-    print CAT <<EOF;
-BEGIN:VCALENDAR
-VERSION:1.0
-BEGIN:VEVENT
-CATEGORIES:$cat
-DALARM:$dtstart
-DTSTART:$dtstart
-DESCRIPTION:$descr
-END:VEVENT
-END:VCALENDAR
-EOF
+    print CAT $vcal_entry;
     close CAT;
 
     # now send the ical file to the s25
@@ -521,6 +529,218 @@ EOF
 	warn "OK, sent!\n";
 	CORE::exit();
     }
+}
+
+sub bluetooth_leave {
+    return unless $main::devel_host; # XXX vorerst, geht nur unter FreeBSD
+    my($top, $abfahrt_epoch, $ankunft_epoch, $pre_alarm_seconds, %args) = @_;
+    select_baddr_and_send
+	($top,
+	 sub {
+	     my($baddr) = @_;
+
+	     my $vcal_entry = create_vcalendar_entry($abfahrt_epoch, $ankunft_epoch, $pre_alarm_seconds);
+	     require File::Temp;
+	     my($fh,$file) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ".vcs");
+	     print $fh $vcal_entry;
+	     close $fh;
+
+	     #my $baddr = "00:18:42:e8:5f:b4"; # XXX hardcoded for n95_chief, should inquiry instead and cache the result for later use
+
+	     # 9 should not be hardcoded
+	     my @cmd = ("obexapp", "-C", 9, "-c", "-a", $baddr, "-n", "put", $file);
+	     system @cmd;
+	     my $status = $?;
+	     unlink $file;
+	     if ($status != 0) {
+		 my_die "Obex command <@cmd> failed with $status";
+	     }
+	 },
+	);
+}
+
+sub select_baddr_and_send {
+    my($top, $ok_cb) = @_;
+    my $t = $top->Toplevel(-title => "Bluetooth devices");
+    my $lb = $t->Scrolled("Listbox", -selectmode => "single")->pack(-fill => "both");
+    load_baddr_cache();
+    fill_baddr_lb($lb);
+    {
+	my $f = $t->Frame->pack(-fill => "x");
+	$f->Button(-text => "Inquiry",
+		   -command => sub {
+		       bluetooth_inquiry();
+		       fill_baddr_lb($lb);
+		   })->pack(-side => "left");
+	$f->Button(-text => "Send VCAL",
+		   -command => sub {
+		       my(@inx) = $lb->getSelected;
+		       $t->destroy;
+		       if (@inx) {
+			   my $baddr_entry = $baddr[$inx[0]];
+			   my $baddr = $baddr_entry->{baddr};
+			   for my $i (0 .. $#baddr) {
+			       if ($i == $inx[0]) {
+				   $baddr[$i]->{sel} = '+';
+			       } else {
+				   $baddr[$i]->{sel} = '-';
+			       }
+			   }
+			   $top->Busy(sub {
+					  $ok_cb->($baddr);
+				      });
+		       } else {
+			   $t->messageBox(-message => "Please select a device");
+		       }
+		   })->pack(-side => "left");
+	$f->Button(-text => "Cancel",
+		   -command => sub {
+		       $t->destroy;
+		   })->pack(-side => "left");
+    }
+}
+
+sub bluetooth_inquiry {
+    if (!is_in_path("hccontrol")) {
+	my_die "hccontrol is necessary for bluetooth inquiry";
+    }
+
+    my(@result) = `hccontrol inquiry`;
+    my_die "hccontrol inquiry failed with $?" if $? != 0;
+    my @_baddr;
+    for (@result) {
+	if (/^\s+BD_ADDR:\s+([0-9a-f:]+)/) {
+	    push @_baddr, $1;
+	}
+    }
+
+    my @__baddr;
+    for my $baddr (@_baddr) {
+	my $cmd = "hccontrol Remote_Name_Request $baddr";
+	my(@result) = `$cmd`;
+	my_die "$cmd failed with $?" if $? != 0;
+	for (@result) {
+	    if (/^Name:\s+(.*)/) {
+		my $name = $1;
+		push @__baddr, {name  => $name,
+				sel   => '-',
+				baddr => $baddr,
+			       };
+	    }
+	}
+    }
+
+    @baddr = @__baddr;
+    save_baddr_cache();
+}
+
+sub fill_baddr_lb {
+    my($lb) = @_;
+    my $sel_done = 0;
+    for my $baddr (@baddr) {
+	my($sel, $baddr, $name) = @{$baddr}{qw(sel baddr name)};
+	$lb->insert("end", sprintf "%-20s (%s)", $name, $baddr);
+	if (!$sel_done && $sel eq '+') {
+	    $lb->selectionClear;
+	    $lb->selectionSet("end");
+	    $sel_done = 1;
+	}
+    }
+}
+
+sub get_baddr_cache_file {
+    my $dir = $main::bbbike_configdir;
+    if (!$dir || !-d $dir || !-w $dir) {
+	$dir = "/tmp";
+    }
+    $dir . "/baddr_cache";
+}
+
+sub load_baddr_cache {
+    my $f = get_baddr_cache_file();
+    @baddr = ();
+    if (open BADDR, $f) {
+	while(<BADDR>) {
+	    chomp;
+	    my($sel) = $_ =~ m{^(.)};
+	    s{^.}{};
+	    my($baddr, $name) = split /\s+/, $_, 2;
+	    push @baddr, {sel   => $sel,
+			  baddr => $baddr,
+			  name  => $name,
+			 };
+	}
+	close BADDR;
+    }
+    @baddr;
+}
+
+sub save_baddr_cache {
+    my $f = get_baddr_cache_file();
+    open BADDR, "> $f"
+	or my_die "Can't write to $f: $!";
+    for my $baddr (@baddr) {
+	my($sel, $baddr, $name) = @{$baddr}{qw(sel baddr name)};
+	$sel = '-' if !$sel;
+	print BADDR "$sel$baddr $name\n"
+    }
+    close BADDR
+	or my_die "While closing $f: $!";
+}
+
+sub create_vcalendar_entry {
+    my($begintime, $endtime, $pre_alarm_seconds, $subject, $descr, $cat) = @_;
+
+    require POSIX;
+    my $dtstart = POSIX::strftime("%Y%m%dT%H%M%S", localtime $begintime);
+    my $dtend   = POSIX::strftime("%Y%m%dT%H%M%S", localtime $endtime);
+    my $alarm   = POSIX::strftime("%Y%m%dT%H%M%S", localtime ($begintime-$pre_alarm_seconds));
+
+    my @search_route;
+
+    if (!defined $subject) {
+	$subject = "Fahrradfahrt (BBBike)";
+	if (defined &main::get_act_search_route) {
+	    @search_route = @{ main::get_act_search_route() };
+	    if (@search_route) {
+		$subject = $search_route[-1][StrassenNetz::ROUTE_NAME()] . " (Fahrradfahrt)";
+	    }
+	}
+    }
+
+    if (!defined $descr && @search_route) {
+	require BBBikeUtil;
+	require Strassen::Strasse;
+	$descr = join(" - ", map {
+	    my $hop = Strasse::strip_bezirk($_->[StrassenNetz::ROUTE_NAME()]);
+	    $hop .= " [" . BBBikeUtil::m2km($_->[StrassenNetz::ROUTE_DIST()]);
+	    if ($_->[StrassenNetz::ROUTE_ANGLE()] >= 30) {
+		$hop .= ", " . uc($_->[StrassenNetz::ROUTE_DIR()]);
+	    }
+	    $hop .= "]";
+	} @search_route);
+    }
+
+    #my $cat = "MISCELLANEOUS";
+    $cat = "MEETING" if !defined $cat;
+
+    my $this_host = _get_host();
+    my $uid = POSIX::strftime("%Y%m%d%H%M%S-$this_host", localtime);
+
+    <<EOF;
+BEGIN:VCALENDAR
+VERSION:1.0
+BEGIN:VEVENT
+UID:$uid
+CATEGORIES:$cat
+DALARM:$alarm
+DTSTART:$dtstart
+DTEND:$dtend
+SUMMARY:$subject
+DESCRIPTION:$descr
+END:VEVENT
+END:VCALENDAR
+EOF
 }
 
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX not yet ready
@@ -562,7 +782,7 @@ sub add_ical_entry {
     if (open(F, $file)) {
 	if ($] >= 5.008) {
 	    eval q{binmode F, ':utf8';};
-	    die $@ if $@;
+	    my_die $@ if $@;
 	}
 	while(<F>) {
 	    $ical_data .= $_;
@@ -592,15 +812,15 @@ Dates [Single $day/$month/$year End
 ]
 ]
 EOF
-    open(F, ">$file") or die "Can't write to $file: $!";
+    open(F, ">$file") or my_die "Can't write to $file: $!";
     if ($] >= 5.008) {
 	eval q{binmode F, ':utf8';};
-	die $@ if $@;
+	my_die $@ if $@;
     }
     print F $ical_data
-	or die "Can't print to $file: $!";
+	or my_die "Can't print to $file: $!";
     close F
-	or die "While closing $file: $!";
+	or my_die "While closing $file: $!";
 }
 
 # called from outer world
@@ -825,7 +1045,7 @@ sub open_dbm {
     my(%args) = @_;
     my $readonly = delete $args{-readonly} || 0;
     if (keys %args) {
-	die "Unhandled arguments " . join " ", %args;
+	my_die "Unhandled arguments " . join " ", %args;
     }
     my $pids;
     if (!eval {
@@ -833,13 +1053,13 @@ sub open_dbm {
 	require Fcntl;
 	my $flags = $readonly ? &Fcntl::O_RDONLY : &Fcntl::O_RDWR|&Fcntl::O_CREAT;
 	tie %$pids, 'DB_File', get_alarms_file(), $flags, 0600
-	    or die "Can't tie DB_File " . get_alarms_file() . ": $!";
+	    or my_die "Can't tie DB_File " . get_alarms_file() . ": $!";
     }) {
 	require SDBM_File;
 	require Fcntl;
 	my $flags = $readonly ? &Fcntl::O_RDONLY : &Fcntl::O_RDWR|&Fcntl::O_CREAT;
 	tie %$pids, 'SDBM_File', get_alarms_file(), $flags, 0600
-	    or die "Can't tie SDBM_File " . get_alarms_file() . ": $!";
+	    or my_die "Can't tie SDBM_File " . get_alarms_file() . ": $!";
     }
     $pids;
 }
@@ -954,7 +1174,7 @@ sub end_time {
     if ($time_epoch < $now) {
 	$time_epoch+=86400;
 	if ($time_epoch < $now) {
-	    die "Strange: time is wrong";
+	    my_die "Strange: time is wrong";
 	}
     }
     $time_epoch;
@@ -976,11 +1196,14 @@ sub capabilities {
 	defined $ENV{PILOTPORT}) {
 	$can_palm = 1;
     }
-    if ($main::cabulja) {
+    if ($main::devel_host) {
 	$can_s25_ipaq = 1;
     }
     if (is_in_path("ical")) {
 	$can_ical = 1;
+    }
+    if ($main::devel_host && is_in_path("obexapp")) {
+	$can_bluetooth = 1;
     }
 }
 

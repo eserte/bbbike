@@ -306,7 +306,15 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'source_id' => 'IM_004491',
+         'until' => undef,
+         'text' => 'Weinmeisterstr. (Mitte) in Richtung Münzstr. Baustelle, Fahrtrichtung gesperrt',
+         'from' => undef,
+         'data' => 'userdel	1::inwork 10331,13397 10528,13243
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -706,14 +714,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1178229600,
-         'text' => 'L 030 Luckenwalder Str. OD Königs Wusterhausen, Höhe ALDI Bau einer Zufahrt halbseitig gesperrt; Einbahnstraße 23.04.2007-03.05.2007 ',
-         'from' => 1177192800,
-         'data' => 'userdel	q4::inwork; 25543,-12403 25912,-11956
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,
@@ -754,15 +755,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_005339',
-         'until' => 1199142000,
-         'text' => 'Bernauer Str. (Reinickendorf) in Richtung Spandau zwischen Berliner Str. und Nehheimer Str. Baustelle, Fahrtrichtung gesperrt (bis 2008)',
-         'from' => 1178048628,
-         'data' => 'userdel	1::inwork 2821,18831 2643,18738 2602,18737 2175,18740
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_005369',
          'until' => 1188597600,
@@ -805,6 +798,15 @@ userdel	2::temp 22196,4847 22138,4661
          'text' => 'L 040 Zossener Damm OD Blankenfelde, zw. Tankstelle u. Garagentrakt. Ausbau Landesstraße Vollsperrung 07.05.2007-20.05.2007 ',
          'from' => 1178402400,
          'data' => 'userdel	2::inwork 10115,-8276 11019,-8435
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005384',
+         'until' => 1178488800,
+         'text' => 'Turmstraße (Wedding) in beiden Richtungen, zwischen Stromstraße und Oldenburger Str. Veranstaltung, Straße gesperrt',
+         'from' => undef,
+         'data' => 'userdel	2::temp 6249,13322 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359
 ',
          'type' => 'gesperrt'
        }

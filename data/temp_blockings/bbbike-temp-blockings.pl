@@ -6918,13 +6918,13 @@ EOF
 userdel	2::inwork 22691,12044 22668,12080 22701,12115
 EOF
      },
-     { from  => 1168898369, # 2007-01-15 22:59
-       until => 1178221318, # 2008-06-30 23:59 1214863199
-       text  => 'Weinmeisterstr. (Mitte) in beiden Richtungen, zwischen Münzstr. und Gipsstr. Baustelle, Straße vollständig gesperrt (bis 06/2008)',
+     { from  => undef, # 2007-01-15 22:59 1168898369
+       until => undef , # 2008-06-30 23:59 1178221318 1214863199
+       text  => 'Weinmeisterstr. (Mitte) in Richtung Münzstr. Baustelle, Fahrtrichtung gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_004491',
        data  => <<EOF,
-userdel	2::inwork 10331,13397 10528,13243
+userdel	1::inwork 10331,13397 10528,13243
 EOF
      },
      { from  => 1169074800, # 2007-01-18 00:00
@@ -7940,7 +7940,7 @@ userdel	2::temp 23952,15086 23960,15021 23993,14797
 EOF
      },
      { from  => 1178048628, # 2007-05-01 21:43
-       until => 1199142000, # 2008-01-01 00:00
+       until => 1178310792, # 1199142000 2008-01-01 00:00
        text  => 'Bernauer Str. (Reinickendorf) in Richtung Spandau zwischen Berliner Str. und Nehheimer Str. Baustelle, Fahrtrichtung gesperrt (bis 2008)',
        type  => 'gesperrt',
        source_id => 'IM_005339',
@@ -7999,6 +7999,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 10115,-8276 11019,-8435
+EOF
+     },
+     { from  => undef, # 
+       until => 1178488800, # 2007-05-07 00:00
+       text  => 'Turmstraße (Wedding) in beiden Richtungen, zwischen Stromstraße und Oldenburger Str. Veranstaltung, Straße gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_005384',
+       data  => <<EOF,
+userdel	2::temp 6249,13322 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359
 EOF
      },
     );

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.54 2007/05/03 01:23:37 eserte Exp $
+# $Id: bbbike.cgi,v 8.56 2007/05/04 20:39:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -705,7 +705,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.54 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.56 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -4700,25 +4700,10 @@ sub draw_route {
 
     my %bbbikedraw_args;
 
-    # XXX prefer POST over GET?
-    if (defined $q->param('imagetype') &&
-	$q->param('imagetype') eq 'googlemaps2') {
-	$bbbikedraw_args{Module} = "BBBikeGoogleMaps";
-	$bbbikedraw_args{BBBikeRoute} = $route;
-    }
-
     if (defined $q->param('imagetype') &&
 	$q->param('imagetype') eq 'googlemaps') {
-	my @wpt;
-	if ($route) {
-	    for my $wpt (@$route) {
-		push @wpt, join "!", $wpt->{Strname}, $wpt->{Coord};
-	    }
-	}
-	my $q2 = CGI->new({coords => $q->param("coords"),
-			   wpt    => \@wpt});
-	print $q->redirect($BBBike::BBBIKE_GOOGLEMAP_URL . "?" . $q2->query_string);
-	return;
+	$bbbikedraw_args{Module} = "BBBikeGoogleMaps";
+	$bbbikedraw_args{BBBikeRoute} = $route;
     }
 
     my @header_args = @cache;
@@ -6440,7 +6425,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/05/03 01:23:37 $';
+    my $cgi_date = '$Date: 2007/05/04 20:39:22 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
