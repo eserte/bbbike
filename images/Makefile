@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.36 2007/04/15 22:05:09 eserte Exp $
+# $Id: Makefile,v 1.37 2007/05/05 22:21:33 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -152,6 +152,8 @@ png-to-gif:	\
 		aufzug_klein2.gif \
 		aufzug_klein.gif \
 		aufzug.gif \
+		grenzuebergang_32.gif \
+		grenzuebergang_16.gif \
 
 png-to-xpm:	\
 		ampel.xpm \
@@ -245,3 +247,10 @@ png-to-jpg:	\
 #
 # This is the only way I found to make sure that the alpha mask
 # is not preserved. What I want is just transparency.
+
+# Creation of grenzuebergang_*.png
+#   Fetched http://upload.wikimedia.org/wikipedia/commons/8/80/Zeichen_392.svg
+#   Edited in gimp:
+#     removed text
+#     made black bar narrower
+#     made red circle border broader

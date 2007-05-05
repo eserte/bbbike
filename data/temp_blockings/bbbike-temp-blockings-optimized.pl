@@ -517,14 +517,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        undef,
        undef,
        undef,
-       {
-         'until' => 1178316000,
-         'text' => 'L 023 Britz-Joachimsthal zw. AS Chorin und Britz Deckenerneuerung Vollsperrung 26.03.2007-04.05.2007 ',
-         'from' => 1174773600,
-         'data' => 'userdel	2::inwork 35962,59463 35809,59122 35755,58845 35950,58308 36151,57931 36230,57632 36686,57106 36621,56807
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -807,6 +800,15 @@ userdel	2::temp 22196,4847 22138,4661
          'text' => 'Turmstraße (Wedding) in beiden Richtungen, zwischen Stromstraße und Oldenburger Str. Veranstaltung, Straße gesperrt',
          'from' => undef,
          'data' => 'userdel	2::temp 6249,13322 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005386',
+         'until' => 1178488800,
+         'text' => 'Alt-Rudow (Rudow) in beiden Richtungen zwischen Köpenicker Str. und Krokusstr. Veranstaltung, Straße vollständig gesperrt (bis 06.05.2007 nachts)',
+         'from' => 1178379282,
+         'data' => 'userdel	2::temp 16849,1437 16610,1715
 ',
          'type' => 'gesperrt'
        }

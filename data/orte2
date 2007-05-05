@@ -1,5 +1,5 @@
 #: title.de: Orte im weiteren Umland
-#: version: $Id: orte2-orig,v 4.35 2007/05/03 01:26:40 eserte Exp $
+#: version: $Id: orte2-orig,v 4.37 2007/05/05 22:21:13 eserte Exp $
 #: title.en: Places far away
 #:
 Hannover	6 -238396,-7589
@@ -424,9 +424,9 @@ Altes Lager	2 -16438,-43689
 Bardenitz	2 -19917,-37315
 Casekow	2 63491,90572
 Wartin	2 59905,94908
-Luckow|(Luckow-Petershagen)	2 63888,93681
-Hohenselchow	2 68362,89958
-Groß Pinnow	2 68212,87748
+Luckow|(Luckow-Petershagen)	2 63938,93631
+Hohenselchow	2 68363,89887
+Groß Pinnow	2 68174,87742
 Kolkwitz	2 69314,-71975
 Neulewin	2 69249,37090
 Lanz	2 -113555,72198
@@ -459,7 +459,7 @@ Steinhöfel|b. Angermünde	1 41299,77101
 Stegelitz	1 39303,80853
 Wilmersdorf|(Uckermark)	1 43151,79054
 Günterberg	1 47124,77624
-Welsow	1 49911,74427
+Welsow	1 49734,74527
 Mürow	1 51978,72803
 Dobberzin	1 52316,69186
 Bruchhagen	1 47872,75827
@@ -472,7 +472,8 @@ Schapow	1 29003,106256
 Grünow|(Uckermark)	1 54326,80597
 Briest	1 53387,83859
 Stendell	1 60818,83099
-Jamikow	1 61483,85226
+Jamikow	1 61422,85188
+Kummerow|(Uckermark)	1 63202,83842
 Schönow|(Uckermark)	1 59749,87039
 Zechlinerhütte	1 -27024,82802
 Großzerlang	1 -22148,86587
@@ -744,16 +745,16 @@ Hohenfelde	1 68737,82062
 Kunow	1 66943,82495
 Woltersdorf|bei Casekow	1 64187,87200
 Biesendahlshof	1 63476,88711
-Petershagen|(Luckow-Petershagen)	1 66462,94275
+Petershagen|(Luckow-Petershagen)	1 66328,94287
 Blumberg|bei Casekow	1 59648,89982
-Hohenreinkendorf	1 71739,92879
+Hohenreinkendorf	1 71721,92864
 Geesow	1 75347,95511
 Mescherin	1 78564,94756
 Tantow	1 73017,97449
-Schönfeld|(bei Penkun)	1 68985,97656
-Radekow	1 73104,100581
+Schönfeld|(bei Penkun)	1 68964,97629
+Radekow	1 73101,100563
 Neurochlitz	1 76725,98637
-Rosow	1 75337,101225
+Rosow	1 75359,101224
 Nadrensee	1 72666,104238
 Lebehn	1 71319,108797
 Grambow	1 71617,113037
@@ -796,6 +797,9 @@ Osinow Dolny	1 60023,50497
 Ognica	1 74774,76230
 Gozdowice	1 72361,41057
 Kunowice	1 94262,-4622
+Warzymice	1 80420,110149
+Smolecin	1 78828,107090
+Kolbaskowo	1 78909,104939
 Warnemünde	0 -83112,195145
 Ostseebad Heiligendamm	0 -99712,191131
 Canzow	0 18200,117892
@@ -1078,3 +1082,4 @@ Neu Manschnow	0 90656,16269
 Werder|(Sachsendorf)	0 84740,11051
 Klessin	0 88701,7344
 Dabie	0 94357,111566
+Rajkowo	0 81163,111398

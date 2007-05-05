@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.137 2007/05/04 20:39:49 eserte Exp $
+# $Id: Makefile,v 2.138 2007/05/05 21:10:46 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -56,7 +56,7 @@ SOURCE_TARGETS+=	sbahn sbahnhof rbahn rbahnhof
 SOURCE_TARGETS+=	ubahn ubahnhof
 SOURCE_TARGETS+=	faehren hoehe orte orte2 orte_city
 SOURCE_TARGETS+=	ampeln ampelschaltung
-SOURCE_TARGETS+=	plz potsdam deutschland
+SOURCE_TARGETS+=	plz potsdam deutschland grenzuebergaenge
 SOURCE_TARGETS+=	sehenswuerdigkeit obst radwege
 SOURCE_TARGETS+=	qualitaet_s qualitaet_l
 SOURCE_TARGETS+=	handicap_s handicap_l
@@ -480,6 +480,12 @@ deutschland:	deutschland-orig
 	mv deutschland~ deutschland
 	-@$(READONLY) $@
 
+grenzuebergaenge:	grenzuebergaenge-orig
+	-@$(WRITEABLE) $@
+	$(CONVERT2HAFAS) grenzuebergaenge-orig > grenzuebergaenge~
+	mv grenzuebergaenge~ grenzuebergaenge
+	-@$(READONLY) $@
+
 sehenswuerdigkeit:	sehenswuerdigkeit-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) sehenswuerdigkeit-orig > sehenswuerdigkeit~
@@ -888,7 +894,7 @@ do-checks:	.check_empty_lines \
 	.check_housenumbers .check_sehenswuerdigkeit .check_green \
 	.check_brunnels .check_comments_ferry \
 	.check_exits \
-	.check_temp_blockings \
+	.check_temp_blockings .check_grenzuebergaenge\
 
 .check_empty_lines:	*-orig
 	for i in *-orig; do $(PERL) -nle '$$_ eq q{} and die $$ARGV' $$i; done
@@ -1099,6 +1105,11 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s|2|3|BNP:\d+(:-?\d+)?)(:inwork)?$$'
 		-against strassen -against landstrassen -against landstrassen2 \
 		-against faehren
 	rm -f /tmp/all_temp_blockings.bbd
+	@touch $@
+
+.check_grenzuebergaenge:	grenzuebergaenge .strassen.tmp landstrassen landstrassen2 fragezeichen deutschland
+	$(CHECK_POINTS) -catrx '^GU$$' grenzuebergaenge .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) grenzuebergaenge deutschland
 	@touch $@
 
 .check_add_str:	strassen add_str Berlin.coords.data

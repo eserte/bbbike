@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.74 2007/03/05 20:55:57 eserte Exp $
+# $Id: insert_points,v 1.75 2007/05/05 21:09:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -372,6 +372,7 @@ sub process {
 		   orte orte2
 		   sehenswuerdigkeit
 		   potsdam plz
+		   grenzuebergaenge
 		  );
 	    if ($orig) {
 		push @{$check_files[T_NORMAL]}, "radwege";

@@ -7174,7 +7174,7 @@ EOF
        text  => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 06.03.2007-10.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 73204,97424 73017,97449 72745,97584
+userdel	2::inwork 73204,97424 73031,97443 73017,97449 72960,97477 72745,97584
 EOF
      },
      { from  => 1172962800, # 2007-03-04 00:00
@@ -7280,7 +7280,7 @@ EOF
        text  => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 16.03.2007-19.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 73204,97424 73017,97449 72745,97584
+userdel	2::inwork 73204,97424 73031,97443 73017,97449 72960,97477 72745,97584
 EOF
      },
      { from  => undef, # 
@@ -7373,7 +7373,7 @@ EOF
        text  => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 23.03.2007-26.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 73204,97424 73017,97449 72745,97584
+userdel	2::inwork 73204,97424 73031,97443 73017,97449 72960,97477 72745,97584
 EOF
      },
      { from  => 1174258800, # 2007-03-19 00:00
@@ -8008,6 +8008,15 @@ EOF
        source_id => 'IM_005384',
        data  => <<EOF,
 userdel	2::temp 6249,13322 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359
+EOF
+     },
+     { from  => 1178379282, # 2007-05-05 17:34
+       until => 1178488800, # 2007-05-07 00:00
+       text  => 'Alt-Rudow (Rudow) in beiden Richtungen zwischen Köpenicker Str. und Krokusstr. Veranstaltung, Straße vollständig gesperrt (bis 06.05.2007 nachts)',
+       type  => 'gesperrt',
+       source_id => 'IM_005386',
+       data  => <<EOF,
+userdel	2::temp 16849,1437 16610,1715
 EOF
      },
     );

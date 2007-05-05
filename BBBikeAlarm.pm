@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAlarm.pm,v 1.39 2007/05/04 22:55:25 eserte Exp $
+# $Id: BBBikeAlarm.pm,v 1.40 2007/05/05 22:42:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000, 2006 Slaven Rezic. All rights reserved.
@@ -44,7 +44,7 @@ my $install_datebook_additions = 1;
 
 use Time::Local;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.39 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.40 $ =~ /(\d+)\.(\d+)/);
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?
@@ -441,7 +441,7 @@ sub tk_leave {
 }
 
 sub palm_leave {
-    return unless $main::cabulja;
+    return unless $main::devel_host;
     my($ankunft_epoch, $pre_alarm_seconds, %args) = @_;
     my $tmpdir = $main::tmpdir;
     $tmpdir = "/tmp" if !defined $tmpdir || !-d $tmpdir;
@@ -649,6 +649,7 @@ sub fill_baddr_lb {
 }
 
 sub get_baddr_cache_file {
+    $main::bbbike_configdir = $main::bbbike_configdir if 0;
     my $dir = $main::bbbike_configdir;
     if (!$dir || !-d $dir || !-w $dir) {
 	$dir = "/tmp";

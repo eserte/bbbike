@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Cat.pm,v 1.6 2007/04/09 21:35:00 eserte Exp $
+# $Id: Cat.pm,v 1.7 2007/05/05 22:38:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 use File::Basename qw(basename);
 
@@ -78,6 +78,7 @@ use vars qw(%filetype_to_cat %file_to_cat);
      "gesperrt_s"		=> $filetype_to_cat{"gesperrt"},
      "gesperrt_u"		=> $filetype_to_cat{"gesperrt"},
      "green"			=> [qw(green1 green2)],
+     "grenzuebergaenge"         => [qw(GU)],
      "handicap_l"		=> $filetype_to_cat{"handicap"},
      "handicap_s"		=> $filetype_to_cat{"handicap"},
      "hoehe"			=> [qw(X XXX ? ???)],
