@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeServer.pm,v 1.15 2006/09/01 23:57:30 eserte Exp $
+# $Id: BBBikeServer.pm,v 1.16 2007/05/05 19:45:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001 Slaven Rezic. All rights reserved.
@@ -235,8 +235,13 @@ sub create_socket_server {
 		 }
 		 if (exists $args{-routefile} &&
 		     -r $args{-routefile}) {
-		     warn "Read <$args{-routefile}> ...\n";
-		     main::load_save_route(0, $args{-routefile});
+		     if ($args{-routefile} =~ m{\.bbd$}) {
+			 warn "Read <$args{-routefile}> as bbd ...\n";
+			 main::plot_additional_layer("str", $args{-routefile});
+		     } else {
+			 warn "Read <$args{-routefile}> ...\n";
+			 main::load_save_route(0, $args{-routefile});
+		     }
 		 }
 		 $top->deiconify;
 		 $top->raise;

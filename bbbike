@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.307 2007/05/03 22:32:58 eserte Exp $
+# $Id: bbbike,v 3.308 2007/05/05 22:20:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -208,7 +208,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.307 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.308 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -354,7 +354,7 @@ $str_nr_draw{'sBAB'} = 1; # XXX sollte vielleicht umschaltbar sein?
    'str_r' => ['r', 'sperre_r', 'r-bg', 'r-fg', 'r_bg-img', 'r-label'],
    'str_w' => ['w-out', 'w', 'i-out', 'i', 'w-label-bg', 'w-label'],
    'str_f' => ['f', 'f-label-bg', 'f-label', 'f-Pabove'],
-   'str_g' => ['z', 'g', 'gBO', 'gP', 'gD', 'gBO-label-bg', 'gBO-label'],
+   'str_g' => ['z', 'g', 'gBO', 'gP', 'gD', 'gBO-label-bg', 'gBO-label', 'GU-img'],
    'p_kn'  => ['kn', 'ki', 'rest'],
    'map'   => ['map'],
    'route' => ['route'],
@@ -2360,6 +2360,10 @@ sub do_iconframe {
     $fcm->checkbutton(-label => M"Staatsgrenzen", # Deutschland
 		      -variable => \$str_draw{'gD'},
 		      -command => sub { plot('str','gD') });
+    $fcm->checkbutton(-label => M"Grenzübergänge",
+		      -variable => \$p_draw{'GU'},
+		      -command => sub { plot('p', 'GU') },
+		     );
 
     menu_entry_up_down($fcm, $tag_group{'str_f'});
     menuright($flaechen_check, $fcm);
@@ -5424,6 +5428,7 @@ sub define_item_attribs {
 	 'kn'     => 'kneipen',
 	 'ki'     => 'kinos',
 	 'rest'   => 'restaurants',
+	 'GU'     => 'grenzuebergaenge',
 	);
 
     # Feld-Elemente
@@ -5478,6 +5483,7 @@ sub define_item_attribs {
 	 'rest' => [M"Restaurant",  M"Restaurants",  undef],
 	 'hoehe' => [M"Höhenangabe", M"Höhenangaben",  undef],
 	 'personal' => [M"Persönlicher Ort", M"Persönliche Orte",  undef],
+	 'GU'   => [M"Grenzübergang", M"Grenzübergänge", undef],
 	);
     %category_attrib =
 	('UA' => [M"U-Bahn Zone A", undef, undef],
@@ -5620,7 +5626,7 @@ sub define_item_attribs {
 	    s-out l-out show gr rw s-NN s-N s-H s-HH s-B s-BAB sBAB sBAB-BAB l v
 	    f-label-bg wr w-label-bg gBO-label-bg f-label w-label gBO-label
 	    u sperre_u u-bg u-fg u_bg-img r sperre_r b sperre_b
-	    r-bg r-fg r_bg-img b-bg b-fg b_bg-img
+	    r-bg r-fg r_bg-img b-bg b-fg b_bg-img GU-img
 	    u-label r-label b-label
 	    hoehe vf-bg sperre temp_sperre_s temp_sperre v-fg obst
 	    fz route comm),
