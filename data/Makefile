@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.138 2007/05/05 21:10:46 eserte Exp $
+# $Id: Makefile,v 2.140 2007/05/07 01:05:34 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -578,9 +578,9 @@ housenumbers:	housenumbers-orig
 	mv housenumbers~ housenumbers
 	-@$(READONLY) $@
 
-mount:	strassen fragezeichen hoehe
+mount:	strassen fragezeichen hoehe gesperrt
 	-@$(WRITEABLE) $@
-	$(STEIGUNG_STAT) -minmount 1.0 -commentscompatible \
+	$(STEIGUNG_STAT) -minmount 1.0 -commentscompatible -sperre gesperrt \
 		-str strassen -str fragezeichen -i hoehe -o $@~
 	mv $@~ $@
 	-@$(READONLY) $@
@@ -651,11 +651,6 @@ fragezeichen:	.create_fragezeichen
 	grep '?' ${DATADIR}/ampeln-orig | \
 	    $(SED) -e 's/	\([^ ]*\)/ (\1)	?/' | \
 	    ${CONVERT2HAFAS} -basefile ${DATADIR}/ampeln-orig -- - >> $@~
-	@echo "# added from handicap_s-orig and gesperrt-orig" >> $@~
-	${MISCSRCDIR}/temporary_streets.pl \
-	    ${DATADIR}/handicap_s-orig ${DATADIR}/gesperrt-orig | \
-	    $(PERL) -nle '/(.*\t)(\S+)(.*)/ && !/\b(\d{4}-\d{2}-\d{2}|[0123]?\d\.[01]?\d\.\d{4})\b/ && print "Noch immer? $$1?::inwork$$3"' | \
-	    ${CONVERT2HAFAS} -basefile ${DATADIR}/handicap_s-orig -- - >> $@~
 	@echo "# added from other sources: (${SOURCE_TARGETS})" >> $@~
 	cat .fragezeichen-other-source ${SOURCE_TARGETS:S|^|.fragezeichen-|} >> $@~
 	cmp -s $@~ $@ && rm $@~ || mv $@~ $@
@@ -708,8 +703,18 @@ ${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd:	fragezeichen-orig
 ${PERSISTENTTMPDIR}/strassen_in_planung.bbd:	fragezeichen-orig
 	cat fragezeichen-orig | ${GREPSTRASSEN} -sectionrx "Straßen in Planung" | ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@
 
-${PERSISTENTTMPDIR}/XXX.bbd:	${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.XXX-|}
-	cat ${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.XXX-|} > $@
+# XXX Hmmm, die "temporary"-Einträge könnten eigentlich nach fragezeichen wandern,
+# aber nur, wenn sie nicht zusätzlich mit einer next_check/last_checked-Direktive
+# versehen wurden... Siehe auch das TODO "Fragezeichen-Reorganisation"
+${PERSISTENTTMPDIR}/XXX.bbd:	${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.XXX-|} \
+				handicap_s-orig gesperrt-orig
+	cat ${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.XXX-|} > $@~
+	@echo "# added from handicap_s-orig and gesperrt-orig" >> $@~
+	${MISCSRCDIR}/grepstrassen -directive temporary= \
+	    ${DATADIR}/handicap_s-orig ${DATADIR}/gesperrt-orig | \
+	    $(PERL) -nle '/(.*\t)(\S+)(.*)/ && !/\b(\d{4}-\d{2}-\d{2}|[0123]?\d\.[01]?\d\.\d{4})\b/ && print "Noch immer? $$1?::inwork$$3"' | \
+	    ${CONVERT2HAFAS} -basefile ${DATADIR}/handicap_s-orig -- - >> $@~
+	mv $@~ $@
 
 ${PERSISTENTTMPDIR}/plz-b.bbd:	$(PERSISTENTTMPDIR)/plz.sql
 	grep -i berlin $> | $(MISCSRCDIR)/parse_mapbender_plz.pl > $@

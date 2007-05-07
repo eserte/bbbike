@@ -671,14 +671,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1178488800,
-         'text' => 'L 049 AS Bademeusel-Forst zw. Forst und Groß Bademeusel 5. Forster Run & Bike zeitw. Vollsperrung 06.05.2007-06.05.2007 ',
-         'from' => 1178316000,
-         'data' => 'userdel	2::temp 101469,-77761 98851,-76089
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1179352800,
          'text' => 'L 220 B167 AS Finowfurt-Joachimsthal zw. Eichhorst und Elsenau Bau Otterdurchlass Vollsperrung 07.05.2007-16.05.2007 ',
@@ -720,14 +713,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1178488800,
-         'text' => 'B 101 Herzberg-Jüterbog zw. Brandis und Abzw. Schweinitz ( Sa.-Anhalt) Deckeneinbau Vollsperrung 04.05.2007-06.05.2007 ',
-         'from' => 1178143200,
-         'data' => 'userdel	2::inwork -4418,-65798 -4189,-65380
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1178661600,
@@ -778,37 +764,12 @@ userdel	2::temp 22196,4847 22138,4661
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1178402400,
-         'text' => 'L 015 Berliner Str. OD Lychen, zw. Hohe Stegstr. u. Nesselpfuhlfließ Einbau Asphaltdecke Vollsperrung 05.05.2005-05.05.2007 ',
-         'from' => 1115157600,
-         'data' => 'userdel	q4::inwork 2480,89399 2111,89378 1907,89597
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1179698400,
          'text' => 'L 040 Zossener Damm OD Blankenfelde, zw. Tankstelle u. Garagentrakt. Ausbau Landesstraße Vollsperrung 07.05.2007-20.05.2007 ',
          'from' => 1178402400,
          'data' => 'userdel	2::inwork 10115,-8276 11019,-8435
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_005384',
-         'until' => 1178488800,
-         'text' => 'Turmstraße (Wedding) in beiden Richtungen, zwischen Stromstraße und Oldenburger Str. Veranstaltung, Straße gesperrt',
-         'from' => undef,
-         'data' => 'userdel	2::temp 6249,13322 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_005386',
-         'until' => 1178488800,
-         'text' => 'Alt-Rudow (Rudow) in beiden Richtungen zwischen Köpenicker Str. und Krokusstr. Veranstaltung, Straße vollständig gesperrt (bis 06.05.2007 nachts)',
-         'from' => 1178379282,
-         'data' => 'userdel	2::temp 16849,1437 16610,1715
 ',
          'type' => 'gesperrt'
        }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.176 2007/04/08 19:39:04 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.177 2007/05/06 18:00:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -4019,9 +4019,9 @@ sub module_exists {
 }
 # REPO END
 
-# Very nice. Only the ->Track behaviour is somewhat problematic...
-# maybe teach track to look at overlapping items, too?
-#XX bug, see: otto-ostrowski-str over working image
+# Very nice. Note that the Tk::CanvasBalloon::Track method cannot cope with
+# dealing with stacked items, so the <Motion> binding in std_str_binding
+# needs additional code to deal with this.
 sub balloon_info_from_all_tags {
     my($c) = @_;
     my $e = $c->XEvent;
@@ -4070,6 +4070,11 @@ sub balloon_info_from_all_tags {
 			$label = $1;
 		    }
 		    if (my($cat) = $tags[2] =~ m{-(.*)}) {
+			if ($cat eq 'img') {
+			    # not the category, but really an quality/handicap
+			    # image, most probably an in-construction image
+			    next;
+			}
 			$label .= " ($cat)";
 		    }
 		} elsif ($tags[0] =~ m{^L\d+-fg$}) {

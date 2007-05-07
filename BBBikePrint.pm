@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.42 2007/04/22 21:13:20 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.42 2007/04/22 21:13:20 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003,2006 Slaven Rezic. All rights reserved.
@@ -648,7 +648,15 @@ sub draw_legend {
 				       -image => $ampel_photo,
 				       -tags => 'legend');
 	    $add_binding->($item, "p", $abk, "bg");
-	    # XXX Bahnübergang
+	    # XXX Bahnübergang, Fußgängerampel -> müsste ähnlich wie mit %str_category bei Straßen gelöst werden
+	} elsif ($abk =~ /^GU$/) {
+	    # XXX Too hardcoded...
+	    my $grenzuebergang_photo = get_image("p_grenzuebergang_16.gif");
+	    my $item = $c->createImage($left+$start_symbol, $top+$height,
+				       -anchor => 'nw',
+				       -image => $grenzuebergang_photo,
+				       -tags => 'legend');
+	    $add_binding->($item, "p", $abk, "img");
 	} elsif ($abk =~ /^hoehe$/) {
 	    $c->createLine($left+$start_symbol, $top+$height+2,
 			   $left+$start_symbol+1, $top+$height+2+1,

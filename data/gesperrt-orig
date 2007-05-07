@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.161 2007/05/04 20:40:51 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.161 2007/05/04 20:40:51 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -181,7 +181,7 @@ Henriette-Herz-Platz	1 10371,13006 10255,12959
 Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092 4880,11088 4926,11081 4921,11017
 Dresdener Str./Oranienplatz	1 11258,10682 11232,10745
 Gutsmuthsstr.	1 5311,6383 5075,6509
-Bornstr.	1 5210,6522 5341,6446
+Bornstr.	1 5210,6522 5347,6443
 Schildhornstr.	1 4903,6221 4962,6218 5165,6119
 Schildhornstr.	1 5137,6066 5047,6116 4903,6221
 # XXX evtl. nur bauestellenbedingt?
@@ -802,7 +802,7 @@ Drängelgitter	BNP:5 7935,4466
 Drängelgitter	BNP:5 6560,21084
 Drängelgitter	BNP:5 6613,21116
 Drängelgitter/Schranke	BNP:5 9998,5210
-Schranke (Kopfstr.)	BNP:5 12537,7899
+Schranke (Kopfstr.)	BNP:5 12571,7899
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:2 14562,10079
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:2 14600,10128
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:2 14628,10160
@@ -843,7 +843,7 @@ Schranke (Rütlistr.)	BNP:5 12565,9200
 Schranke, meistens offen (Iranische Str.)	BNP:5 7875,16509
 Schranke, meistens offen (Iranische Str.)	BNP:5 7707,16543
 #: XXX müsste eigentlich verschoben werden, weil die Barriere nicht für die Briesestr. gilt!
-Barriere (Falkstr.)	BNP:10 12177,7988
+Barriere (Falkstr.)	BNP:10 12179,7979
 Drängelgitter (Rochstr.)	BNP:5 10535,13006
 Barriere (Seydelstr.)	BNP:5 10370,11593
 Drängelgitter (Gleditschstr. - Elßholzstr.)	BNP:10 7158,9509

@@ -1806,10 +1806,13 @@ Fragezeichen-Reorganisation: Es gibt mehrere Typen von Fragezeichen:
 =over
 
 =item public: werden von fragezeichen-orig nach fragezeichen
-konvertiert und sind öffentlich sichtbar
+konvertiert und sind öffentlich sichtbar, insbesondere Perl/Tk-Version
+im Nicht-Edit-Modus und WWW-Version
 
 =item private: sind nur in fragezeichen-orig und nicht öffentlich
-sichtbar
+sichtbar, d.h. nur in der Perl/Tk-Version im Edit-Modus (allerdings
+sollte es auch eine Möglichkeit geben, die privaten Fragezeichen im
+Nicht-Edit-Modus anzuschauen)
 
 =item last_checked/next_check mit relativen Datum: diese könnten
 automatisch als öffentliche Fragezeichen erzeugt werden
@@ -1819,6 +1822,11 @@ in fragezeichen-orig nicht sichtbar, dafür aber in fragezeichen
 
 =item XXX-Datensätze: diese sind ebenfalls in fragezeichen-orig sowie
 in fragezeichen nicht sichtbar
+
+=item Es gibt Fragezeichen, die das Abfahren einer Strecke verlangen
+sowie Fragezeichen, die durch andere Recherchemöglichkeiten aufgelöst
+werden (z.B. Ortsteilfragen, nicht ausgeschilderte offizielle
+Straßennamen ...)
 
 =back
 
@@ -1832,6 +1840,37 @@ Im Editier-Modus muss zusätzlich sichtbar sein:
 
 -> Pragmatischer Ansatz: im edit-mode werden einfach noch die
 fragezeichen-Strecken zusätzlich zu fragezeichen-orig angezeigt.
+
+*** Neuer Versuch ***
+
+Es gibt drei fragezeichen-Dateien am Ende:
+
+ - fragezeichen-public (weiterhin nur E<quot>fragezeichenE<quot>
+   genannt) 
+ - fragezeichen-private-vorort (für alles, was E<quot>vor OrtE<quot>
+   recherchiert werden kann; falls es eine
+   nextcheck/lastcheck-Direktive gibt, wird diese beachtet)
+ - fragezeichen-private-vorort-checklater (ebenso Sachen, die
+   E<quot>vor OrtE<quot> recherchiert werden können, aber die später
+   überprüft werden sollen)
+ - fragezeichen-private-office (für alles, was im Internet oder
+   sonstwo recherchiert werden kann)
+
+Ungefähre Einordnung der jetzigen Daten:
+
+ - geplante Straßen und Radstreifen: sofern nicht durch nextcheck
+   oder ein Fertigstellungsdatum im Text abgedeckt, können diese ruhig
+   nach fragezeichen-public (aber genauer prüfen!)
+ - section private Fragezeichen: bleibt so
+ - Aufnahme in DB fraglich: dieser Abschnitt sollte entfernt werden
+ - Isolierte Einträge: fragezeichen-private-vorort
+ - öffentliche Fragezeichen: bleibt so
+ - XXX -> fragezeichen-private-vorort
+ - add_fragezeichen -> fragezeichen-public
+ - weiterhin wird eine neue Direktive für fragezeichen-private-office
+   benötigt 
+
+Übrigens: vor/am Ort -> on-scene, on-site
 
 =item * (H4)
 
@@ -3086,6 +3125,15 @@ will run my mapfile again...
 =head1 Documentation
 
 =over
+
+=item * (M5)
+
+There should be a document for design decisions. For example, thoughts
+which were developed in this file and later implemented, could go
+nearly unchanged into this new document.
+
+The new file could be named F<design_decisions.pod> if no better name
+pops up.
 
 =item * (M1)
 

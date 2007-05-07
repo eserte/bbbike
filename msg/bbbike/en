@@ -1,7 +1,7 @@
 # -*- perl -*-
 $lang_messages = {
 '(normal)' => '(normal)',
-'% über Luftlinie' => '% over direct line',
+'% über Luftlinie' => '% over straight line distance',
 'Abbiege-Optimierung' => 'Turn optimization',
 'Abbiegen' => 'Turn',
 'Abbiegen bevorzugen' => 'Prefer turns',
@@ -911,7 +911,7 @@ Warning:
 "Kommentare zum Kfz-Verkehr" => "Comments about motorized traffic",
 "Schöne Strecken" => "Scenic routes",
 "Sonstige" => "Other",
-"Tram auf Fahrbahn" => "Tramway on street", # XXX Fahrbahn?
+"Tram auf Fahrbahn" => "Tramway on lane",
 'nord' => 'north',
 'ost' => 'east',
 'süd' => 'south',
@@ -920,4 +920,7 @@ Warning:
 "Keine benutzerdefinierten Sperrungen vorhanden." => "No user defined blockings available.",
 "Alle benutzerdefinierten Sperrungen löschen?" => "Delete all user defined blockings?",
 "Volltextsuche" => "Full Text Search",
+"Grenzübergang" => "Border crossing",
+"Grenzübergänge" => "Border crossings",
+"Unbekannte Straße" => "Unknown street",
 };

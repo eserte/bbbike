@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: steigung_stat,v 1.14 2006/05/17 21:33:25 eserte Exp $
+# $Id: steigung_stat,v 1.17 2007/05/07 01:04:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001,2003 Slaven Rezic. All rights reserved.
@@ -12,6 +12,10 @@
 # Mail: slaven@rezic.de
 # WWW:  http://bbbike.sourceforge.net
 #
+
+# XXX Steigungsberechnung suspendieren, wenn man auf eine Treppe stößt!
+
+# XXX gleichzeitig Steigung und Gefälle? 4159,5332 4259,5390
 
 use FindBin;
 use lib ("$FindBin::RealBin/..",
@@ -36,6 +40,7 @@ my $commentscompatible = 0;
 my $gefaelle = 0;
 my $orig = 0;
 my $min_mount;
+my $sperre_file;
 
 # -orig is obsolete!
 if (!GetOptions("i=s" => \$i,
@@ -45,14 +50,17 @@ if (!GetOptions("i=s" => \$i,
 		"gefaelle!" => \$gefaelle,
 		"orig!" => \$orig,
 		"minmount=f" => \$min_mount,
+		"sperre=s" => \$sperre_file,
 		"v+" => \$v,
 	       )) {
-    die "usage: $0 [-str strassen.bbd [-str ...]] [-i hoehe.bbd] [-o output.bbd]
+    die "usage: $0 [-str strassen.bbd [-str ...]] [-i hoehe.bbd] [-sperre gesperrt.bbd] [-o output.bbd]
                    [-[no]commentscompatible] [-[no]gefaelle] [-[no]orig] [-v]
 
 Default for -str: $strfile_default
 Default for -i: $i
 Default for -o: $o
+
+-commentscompatible: output will be compatible with the format of comments_mount
 ";
 }
 
@@ -72,6 +80,24 @@ if ($orig) {
     $i = $i . "-orig";
     @strfile = map { $_ . "-orig" } @strfile;
 }
+
+my %treppe;
+if ($sperre_file) {
+    my $all_sperre = Strassen->new($sperre_file);
+    $all_sperre->init;
+    while(1) {
+	my $r = $all_sperre->next;
+	last if !@{ $r->[Strassen::COORDS] };
+	# Is this assumption correct:
+	#   cat=0 -> it's a Treppe?
+	if ($r->[Strassen::CAT] =~ m{^0($|:)}) {
+	    for my $c (@{$r->[Strassen::COORDS]}) {
+		$treppe{$c} = 1;
+	    }
+	}
+    }
+}
+
 my $str = MultiStrassen->new(@strfile);
 my $netz = new StrassenNetz $str;
 print STDERR "make net..." if ($v);
@@ -80,7 +106,8 @@ print STDERR "done\n" if ($v);
 read_hoehe();
 my $steigungsnetz = new StrassenNetz Strassen->new;
 print STDERR "make net steigung...\n" if ($v);
-$steigungsnetz->make_net_steigung
+#$steigungsnetz->make_net_steigung
+$steigungsnetz->better_make_net_steigung
     ($netz, \%hoehe,
      (defined $min_mount ? (-min => $min_mount) : ()),
      ($orig ? (-strecke => sub {
@@ -149,6 +176,216 @@ sub grey {
     my $steigung = shift;
     my $val = $steigung > $steigung_schwelle ? 255 : $steigung/$steigung_schwelle*255;
     sprintf("#%02x%02x%02x", (255-$val)x3);
+}
+
+######################################################################
+# Experiment:
+package StrassenNetz;
+sub better_make_net_steigung {
+    my($self, $sourcenet, $hoehe, %args) = @_;
+    die "sourcenet must be StrassenNetz object"
+	if !$sourcenet->isa('StrassenNetz');
+    my $calc_strecke = $args{'-strecke'} || \&Strassen::Util::strecke_s;
+    my $min_mount = 0.001; # 0.1% als minimale Steigung
+    my $max_search_dist = 1000; # bricht die Suche nach Höhenpunkten nach 1000m ab
+    my $v = $args{-v} || 0;
+
+    if (exists $args{'-min'}) {
+	$min_mount = $args{'-min'}/100;
+    }
+    if (exists $args{'-maxsearchdist'}) {
+	$max_search_dist = $args{'-maxsearchdist'};
+    }
+    $self->{Net} = {};
+    my $net = $self->{Net};
+
+    my %possible_elevations; # point -> [elevation, ...]
+    my %possible_mounts;     # point -> point -> [grade, ...]
+
+    # XXX Muss eine echte Breitensuche bzw. Dikstra-Suche werden!
+    my $find_neighbors;
+    $find_neighbors = sub {
+	my($from, $seen, $dist_so_far, $initial_elevation) = @_;
+	$seen ||= [];
+	$dist_so_far ||= 0;
+	my %seen = map { ($_=>1) } @$seen;
+
+	return if $treppe{$from};
+
+	while(defined(my $neighbor = each %{$sourcenet->{Net}{$from}})) {
+	    next if exists $seen{$neighbor};
+	    next if $treppe{$neighbor};
+	    my $strecke1 = $dist_so_far;
+	    my $strecke2 = $calc_strecke->($from, $neighbor);
+	    my $strecke = $strecke1 + $strecke2;
+	    if (exists $hoehe->{$neighbor}) {
+		my $hoehendiff = $hoehe->{$neighbor} - $initial_elevation;
+		if (#!exists $net->{$from}{$neighbor} &&
+		    $strecke > 0) { # condition should not be necessary, this is probably only possible if there's an error in the source data?
+		    my $exact_mount = $hoehendiff/$strecke;
+		    my $mount = int($exact_mount*1000)/1000;
+#XXXremove!!!!		    if ($mount >= $min_mount) {
+		    if ($mount >= 0) {
+			my $curr_elevation = $initial_elevation;
+			my $add_elevation = sub {
+			    my($p1,$p2) = @_;
+			    my $dist = $calc_strecke->($p1,$p2);
+			    $curr_elevation += $dist * $exact_mount;
+			};
+			for my $i (0 .. $#$seen - 1) {
+			    push @{ $possible_mounts{$seen->[$i]}{$seen->[$i+1]} }, $mount;
+			    if ($i > 0) {
+				push @{ $possible_elevations{$seen->[$i]} }, $curr_elevation;
+			    }
+			    $add_elevation->($seen->[$i], $seen->[$i+1]);
+			}
+			push @{ $possible_mounts{$seen->[-1]}{$from} }, $mount;
+			push @{ $possible_elevations{$seen->[-1]} }, $curr_elevation;
+			# this was the last calculated elevation to add
+
+			push @{ $possible_mounts{$from}{$neighbor} },   $mount;
+		    }
+		} else {
+		    warn "strecke==0 between $from and $neighbor???";
+		}
+	    } else {
+		return if $strecke > $max_search_dist;
+		$find_neighbors->($neighbor, [@$seen, $from], $strecke, $initial_elevation);
+	    }
+	}
+    };
+
+    my $count_hoehen_points = scalar keys %$hoehe;
+    my $i = 0;
+    my @hoehen_points = keys %$hoehe;
+    foreach my $p1 (@hoehen_points) {
+	next if !exists $sourcenet->{Net}{$p1}; # may happen if hoehenpoint is not in Net
+	my $val = $sourcenet->{Net}{$p1};
+	if ($v) {
+	    if ($i%100 == 0) {
+		printf STDERR "$i/$count_hoehen_points (%d%%) ($p1)...\r", $i/$count_hoehen_points*100;
+	    }
+	    $i++;
+	}
+	my @keys = keys %$val; # no iterator reset!
+	foreach my $p2 (@keys) {
+	    if (exists $hoehe->{$p1}) {
+		if (exists $hoehe->{$p2}) {
+		    my $strecke = $calc_strecke->($p1, $p2);
+		    my $hoehendiff = $hoehe->{$p2}-$hoehe->{$p1};
+		    if ($strecke > 0) {
+			my $mount = int(($hoehendiff/$strecke)*1000)/1000;
+			$net->{$p1}{$p2} = $mount
+			    if $mount >= $min_mount;
+		    }
+		} else {
+		    $find_neighbors->($p2, [$p1], $calc_strecke->($p1, $p2), $hoehe->{$p1});
+		}
+	    }
+	}
+    }
+    printf STDERR "\n" if $v;
+
+    use List::Util qw(min max);
+
+    my @min_max_elevations;
+    {
+	my %min_max_elevations;
+	while(my($p,$elevations) = each %possible_elevations) {
+	    my $min_elevation = min @$elevations;
+	    my $max_elevation = max @$elevations;
+	    if ($min_elevation != $max_elevation) {
+		$min_max_elevations{$p} = [$max_elevation-$min_elevation, $min_elevation, $max_elevation];
+	    }
+	}
+	@min_max_elevations = map {
+	    [$_, @{$min_max_elevations{$_}}];
+	} sort {
+	    $min_max_elevations{$b}->[0] <=> $min_max_elevations{$a}->[0];
+	} keys %min_max_elevations;
+    }
+
+    my %min_max_grades;
+    while(my($p1,$v) = each %possible_mounts) {
+	while(my($p2,$grades) = each %$v) {
+	    my $min_grade = min @$grades;
+	    my $max_grade = max @$grades;
+	    if ($min_grade != $max_grade) {
+		$min_max_grades{$p1}{$p2} = [$max_grade-$min_grade, $min_grade, $max_grade];
+	    }
+	    if ($min_grade >= $min_mount) { # schlechte Variablennamen
+		$net->{$p1}{$p2} = $min_grade;
+	    }
+	}
+    }
+    my @min_max_grades;
+    while(my($p1,$v) = each %min_max_grades) {
+	while(my($p2,$data) = each %$v) {
+	    push @min_max_grades, [$p1,$p2,@$data];
+	}
+    }
+    @min_max_grades = sort { $b->[2] <=> $a->[2] } @min_max_grades;
+
+    {
+    # sanity check
+	my @errors;
+	while(my($p1,$v) = each %$net) {
+	    while(my($p2,$v2) = each %$v) {
+		if (exists $net->{$p2}{$p1}) {
+		    push @errors, "$p1 $p2";
+		}
+	    }
+	}
+	if (@errors) {
+	    warn "**************************************************
+*** Should not happen: Steigung in both directions???
+";
+	    warn join("\n", @errors);
+	}
+    }
+
+    {
+	open my $ofh, ">", "/tmp/problematic_grades.bbd"
+	    or warn $!;
+	print $ofh <<EOF;
+#: category_width.PG1: 20
+#: category_width.PG2: 20
+#: category_width.PG3: 20
+#: category_width.PG4: 20
+#: category_color.PG1: #008000
+#: category_color.PG2: #00ff00
+#: category_color.PG3: #80ff80
+#: category_color.PG4: #e0ffe0
+#:
+EOF
+	for my $a (@min_max_grades) {
+	    my($p1, $p2, $delta, $min, $max) = @$a;
+	    last if $delta < 0.005;
+	    my $cat = $delta >= 0.03 ? 'PG1' : $delta >= 0.02 ? 'PG2' : $delta >= 0.01 ? 'PG3' : 'PG4';
+	    printf $ofh "d=%.3f (min=%.3f, max=%.3f)\t%s %s %s\n", $delta, $min, $max, $cat, $p1, $p2;
+	}
+    }
+
+    {
+	open my $ofh, ">", "/tmp/problematic_elevations.bbd"
+	    or warn $!;
+	print $ofh <<EOF;
+#: XXX layer_line_width not yet supported by bbbike
+#: layer_line_width: 20
+#:
+EOF
+	for my $a (@min_max_elevations) {
+	    my($p, $delta, $min, $max) = @$a;
+	    last if $delta < 0.2;
+	    my $color = $delta >= 5 ? '#ff0000' : $delta >= 2 ? '#ff8080' : '#ffe0e0';
+	    printf $ofh "d=%.1f (min=%.1f, max=%.1f)\t%s %s\n", $delta, $min, $max, $color, $p;
+	}
+	if ($v) {
+	    # XXX vielleicht wären min_max_grades interessanter? wahrscheinlich!
+	    require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@min_max_elevations],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+	}
+    }
+
 }
 
 __END__

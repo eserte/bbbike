@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.308 2007/05/05 22:20:49 eserte Exp $
+# $Id: bbbike,v 3.309 2007/05/06 18:00:57 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -208,7 +208,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.308 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.309 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -1942,7 +1942,7 @@ sub do_iconframe {
 	}
     }
 
-    if ($advanced) {
+    if ($devel_host) { # XXX the mount file is very problematic at the moment; do not show it publically until everything's fixed! See StrassenNetz.pm and steigung_stat
 	$strcm->checkbutton
 	    (-label => M"Steigungen",
 	     -variable => \$str_draw{'mount'},
@@ -6816,7 +6816,27 @@ sub std_str_binding {
 		     if exists $layer_post_leave_command{$tag};
 	     });
     if (defined $c_balloon) {
-	$c->bind($tag, '<Any-Motion>' => sub { $c_balloon->Track });
+	# Need to check if *all* items under the cursor are the same, as we
+	# create the balloon text from *all* canvas items. This uses some
+	# logic found in balloon_info_from_all_tags
+	use vars qw($old_current_str_items);
+	$old_current_str_items = "" if !defined $old_current_str_items;
+	my $closeenough = 4; # see balloon_info_from_all_tags
+	$c->bind($tag, '<Any-Motion>' => sub {
+		     my($c) = @_;
+		     my $e = $c->XEvent;
+		     my($xx, $yy) = ($c->canvasx($e->x), $c->canvasy($e->y));
+		     my(@items) = $c->find(overlapping =>
+					   $xx-$closeenough, $yy-$closeenough,
+					   $xx+$closeenough, $yy+$closeenough);
+		     my $new_current_str_items = join(" ", @items);
+		     if ($new_current_str_items ne $old_current_str_items) {
+			 enterstr($c);
+			 $old_current_str_items = $new_current_str_items;
+		     } else {
+			 $c_balloon->Track;
+		     }
+		 });
     }
 }
 
@@ -15021,6 +15041,7 @@ sub show_overview_populate {
 	plot('str',$abk,
 	     Canvas => $overview_canvas,
 	     ($abk eq 'g' && $coord_system ne 'standard' ? (Filename => "plz-orig") : ()),
+	     Width => 3,
 	    );
     }
     {
