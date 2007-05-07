@@ -444,7 +444,15 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'source_id' => 'IM_004953',
+         'until' => 1180648799,
+         'text' => 'geplatzte Wasserleitung, Schulze-Boysen-Str. gesperrt (bis Ende 05.2007)',
+         'from' => 1178564445,
+         'data' => 'userdel	2::inwork 15836,11840 15863,11992
+',
+         'type' => 'gesperrt'
+       },
        undef,
        {
          'until' => 1185141600,
@@ -770,6 +778,25 @@ userdel	2::temp 22196,4847 22138,4661
          'text' => 'L 040 Zossener Damm OD Blankenfelde, zw. Tankstelle u. Garagentrakt. Ausbau Landesstraße Vollsperrung 07.05.2007-20.05.2007 ',
          'from' => 1178402400,
          'data' => 'userdel	2::inwork 10115,-8276 11019,-8435
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       {
+         'source_id' => 'IM_005412',
+         'until' => 1178920800,
+         'text' => 'Gleimstr. (Prenzlauer Berg) Richtung Brunnenstr. zwischen Schönhauser Allee und Ystader Str. Baustelle, Fahrtrichtung gesperrt (bis 11.05.2007)',
+         'from' => 1178564497,
+         'data' => 'userdel	1::inwork 10963,15789 10713,15746 10564,15721 10423,15698
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1181944800,
+         'text' => 'K 6419 Garzauer Str. zw. Strausberg, E.-Thälmann-Str. u. Eggersd.Weg (Umgehungs.) Deckenerneuerung Vollsperrung 07.05.2007-15.06.2007 ',
+         'from' => 1178402400,
+         'data' => 'userdel	2::inwork 40540,16584 40793,16343 41168,16281
 ',
          'type' => 'gesperrt'
        }

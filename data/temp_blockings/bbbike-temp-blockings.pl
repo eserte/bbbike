@@ -1784,7 +1784,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -16640,1304 -15557,809 -15527,795
-userdel	q4 -16640,1304 -16894,1485
+userdel	q4 -16640,1304 -16905,1503
 EOF
      },
      { from  => 1113775200, # 2005-04-18 00:00
@@ -7133,7 +7133,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004793',
        data  => <<EOF,
-userdel	q4::inwork 5418,1292 5560,1278 5740,1227
+userdel	q4::inwork 5414,1304 5560,1278 5740,1227
 EOF
      },
      { from  => 1172646005, # 2007-02-28 08:00
@@ -7291,9 +7291,9 @@ EOF
 userdel	1::inwork 11949,10414 12000,10531 12056,10655
 EOF
      },
-     { from  => 1173906268, # 2007-03-14 22:04
-       until => 1175378399, # 2007-03-31 23:59
-       text  => 'Schulze-Boysen-Str. gesperrt (geplatzte Wasserleitung) (bis Ende 03.2007)',
+     { from  => 1178564445, # 2007-05-07 21:00
+       until => 1180648799, # 2007-05-31 23:59
+       text  => 'geplatzte Wasserleitung, Schulze-Boysen-Str. gesperrt (bis Ende 05.2007)',
        type  => 'gesperrt',
        source_id => 'IM_004953',
        data  => <<EOF,
@@ -8017,6 +8017,23 @@ EOF
        source_id => 'IM_005386',
        data  => <<EOF,
 userdel	2::temp 16849,1437 16610,1715
+EOF
+     },
+     { from  => 1178564497, # 2007-05-07 21:01
+       until => 1178920800, # 2007-05-12 00:00
+       text  => 'Gleimstr. (Prenzlauer Berg) Richtung Brunnenstr. zwischen Schönhauser Allee und Ystader Str. Baustelle, Fahrtrichtung gesperrt (bis 11.05.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_005412',
+       data  => <<EOF,
+userdel	1::inwork 10963,15789 10713,15746 10564,15721 10423,15698
+EOF
+     },
+     { from  => 1178402400, # 2007-05-06 00:00
+       until => 1181944800, # 2007-06-16 00:00
+       text  => 'K 6419 Garzauer Str. zw. Strausberg, E.-Thälmann-Str. u. Eggersd.Weg (Umgehungs.) Deckenerneuerung Vollsperrung 07.05.2007-15.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 40540,16584 40793,16343 41168,16281
 EOF
      },
     );

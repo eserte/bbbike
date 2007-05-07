@@ -155,6 +155,12 @@ URL providing more information, a Message-Id of a mail or posting, a
 date, or a combination of all. C<according_to:> is an alias for
 C<by:>.
 
+=item C<corrected_by: I<source> I<< previous -> current >> >
+
+Used after a C<by> directive for a correction. It is advisable to put
+the previous a small note of the previous and current entry after the
+I<source>.
+
 =item C<unverified_by: I<source>>
 
 Same as E<quot>by:E<quot> for unverified data.
