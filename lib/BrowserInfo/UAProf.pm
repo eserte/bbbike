@@ -84,6 +84,10 @@ sub get_cap {
     if (!$ua) {
 	$ua = LWP::UserAgent->new;
 	$ua->timeout(5); # keep it short
+	# To prevent the
+	# "Parsing of undecoded UTF-8 will give garbage when decoding entities at /usr/share/perl5/LWP/Protocol.pm line 137."
+	# errors.
+	$ua->parse_head(0);
 	$self->{ua} = $ua;
     }
     my $resp = $ua->get($self->{uaprofurl});
