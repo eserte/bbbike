@@ -399,14 +399,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1178575200,
-         'text' => 'L 040 Zossener Damm OD Blankenfelde, zw. Kreisverkehr u. K.-Liebknecht-Str. Straßenausbau Vollsperrung 07.03.2007-07.05.2007 ',
-         'from' => 1173135600,
-         'data' => 'userdel	2::inwork 10115,-8276 11019,-8435
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1183240800,
          'text' => 'B 101 zw. Wiederau und Krz. Friedrichsluga Straßenbau Richtungsverkehr 07.03.2007-30.06.2007 ',
@@ -416,9 +409,9 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'type' => 'gesperrt'
        },
        {
-         'until' => 1180648800,
-         'text' => 'L 037 Petersdorfer Str. OD Petershagen Kanal- und Straßenbauarbeiten Vollsperrung 12.03.2007-31.05.2007 ',
-         'from' => 1173567600,
+         'until' => 1180821600,
+         'text' => 'L 037 Petersdorfer Str. OD Petershagen Kanal- und Straßenbauarbeiten Vollsperrung 16.04.2007-02.06.2007 ',
+         'from' => 1176588000,
          'data' => 'userdel	2::inwork 74092,475 74246,584
 ',
          'type' => 'gesperrt'
@@ -753,17 +746,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_005385',
-         'until' => 1178575200,
-         'text' => 'Alt-Köpenick (Köpenick) gesamter Bereich Alt-Köpenick, Schlossplatz, Rosentr., Grünstr. Veranstaltung, Straße vollständig gesperrt (bis 07.05.2007 16 Uhr)',
-         'from' => 1178221257,
-         'data' => 'userdel	2::temp 22263,4671 22138,4661 22111,4562 22162,4546 22312,4593
-userdel	2::temp 22093,4499 22111,4562
-userdel	2::temp 22196,4847 22138,4661
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1178661600,
          'text' => 'B 246 Nächst Neuendorfer Chaussee Bahnübergang in OL Zossen Bauarbeiten am Bahnübergang Vollsperrung 07.05.2007-08.05.2007 ',
@@ -797,6 +780,22 @@ userdel	2::temp 22196,4847 22138,4661
          'text' => 'K 6419 Garzauer Str. zw. Strausberg, E.-Thälmann-Str. u. Eggersd.Weg (Umgehungs.) Deckenerneuerung Vollsperrung 07.05.2007-15.06.2007 ',
          'from' => 1178402400,
          'data' => 'userdel	2::inwork 40540,16584 40793,16343 41168,16281
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1191189600,
+         'text' => 'L 029 Grüntal-B 2 Biesenthal OD Biesenthal Deckenerneuerung mit Entwäss. Vollsperrung 10.04.2007-30.09.2007 ',
+         'from' => 1176069600,
+         'data' => 'userdel	2::inwork 28993,38709 28248,39107 26237,40190
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1178920800,
+         'text' => 'L 234 Landsberger Str. OD Bruchmühle, Höhe Fichtestr. Havarie TW-Netz Vollsperrung 07.05.2007-11.05.2007 ',
+         'from' => 1178402400,
+         'data' => 'userdel	2::inwork 36087,16319 35807,16563
 ',
          'type' => 'gesperrt'
        }

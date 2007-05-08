@@ -7226,9 +7226,9 @@ EOF
 userdel	1::inwork 5339,-84725 4072,-82982
 EOF
      },
-     { from  => 1173567600, # 2007-03-11 00:00
-       until => 1180648800, # 2007-06-01 00:00
-       text  => 'L 037 Petersdorfer Str. OD Petershagen Kanal- und Straßenbauarbeiten Vollsperrung 12.03.2007-31.05.2007 ',
+     { from  => 1176588000, # 2007-04-15 00:00
+       until => 1180821600, # 2007-06-03 00:00
+       text  => 'L 037 Petersdorfer Str. OD Petershagen Kanal- und Straßenbauarbeiten Vollsperrung 16.04.2007-02.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 74092,475 74246,584
@@ -8034,6 +8034,22 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 40540,16584 40793,16343 41168,16281
+EOF
+     },
+     { from  => 1176069600, # 2007-04-09 00:00
+       until => 1191189600, # 2007-10-01 00:00
+       text  => 'L 029 Grüntal-B 2 Biesenthal OD Biesenthal Deckenerneuerung mit Entwäss. Vollsperrung 10.04.2007-30.09.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 28993,38709 28248,39107 26237,40190
+EOF
+     },
+     { from  => 1178402400, # 2007-05-06 00:00
+       until => 1178920800, # 2007-05-12 00:00
+       text  => 'L 234 Landsberger Str. OD Bruchmühle, Höhe Fichtestr. Havarie TW-Netz Vollsperrung 07.05.2007-11.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 36087,16319 35807,16563
 EOF
      },
     );
