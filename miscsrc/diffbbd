@@ -61,7 +61,8 @@ for my $diff (@diffs) {
 	    }
 
 	    if (!$r1 || !$r2) {
-		die "Can't find corresponding line for $subdiff->[1], line deleted?";
+		warn "Can't find corresponding line for $subdiff->[1], line deleted?";
+		next;
 	    }
 
 	    (my $name1 = $r1->[Strassen::NAME]) =~ s/^\s+//;
@@ -130,3 +131,7 @@ EOF
 close DESC;
 
 __END__
+
+Alternativ:
+
+    diff -u /tmp/strassen strassen|grep '^\+'|cut -c2- | perl -pe 's/\t(\S+)/\t#ff0000/'
