@@ -42,6 +42,7 @@ use Msg qw(frommain);
 # XXX
 my $install_datebook_additions = 1;
 
+use File::Basename qw(basename);
 use Time::Local;
 
 $VERSION = sprintf("%d.%02d", q$Revision: 1.40 $ =~ /(\d+)\.(\d+)/);
@@ -315,7 +316,7 @@ sub enter_alarm {
 			   if $use_palm;
 		       s25_ipaq_leave($abfahrt_epoch, $ankunft_epoch, $pre_alarm_seconds)
 			   if $use_s25_ipaq;
-		       bluetooth_leave($top, $abfahrt_epoch, $ankunft_epoch, $pre_alarm_seconds)
+		       bluetooth_leave($top, $abfahrt_epoch, $ankunft_epoch, $vorbereitung_s)
 			   if $use_bluetooth;
 		       add_ical_entry($abfahrt_epoch, $text, -prealarm => $vorbereitung_s)
 			   if $use_ical;
@@ -533,24 +534,34 @@ sub s25_ipaq_leave {
 
 sub bluetooth_leave {
     return unless $main::devel_host; # XXX vorerst, geht nur unter FreeBSD
-    my($top, $abfahrt_epoch, $ankunft_epoch, $pre_alarm_seconds, %args) = @_;
+    my($top, $abfahrt_epoch, $ankunft_epoch, $vorbereitung_s, %args) = @_;
     select_baddr_and_send
 	($top,
 	 sub {
 	     my($baddr) = @_;
 
-	     my $vcal_entry = create_vcalendar_entry($abfahrt_epoch, $ankunft_epoch, $pre_alarm_seconds);
+	     my $vcal_entry = create_vcalendar_entry($abfahrt_epoch, $ankunft_epoch, $vorbereitung_s);
 	     require File::Temp;
 	     my($fh,$file) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ".vcs");
 	     print $fh $vcal_entry;
 	     close $fh;
 
-	     #my $baddr = "00:18:42:e8:5f:b4"; # XXX hardcoded for n95_chief, should inquiry instead and cache the result for later use
+	     my $status;
+	     my @cmd;
+	     if (is_in_path("obexapp")) {
+		 # 9 should not be hardcoded
+		 @cmd = ("obexapp", "-C", 9, "-c", "-a", $baddr, "-n", "put", $file);
+		 system @cmd;
+		 $status = $?;
+	     } elsif (is_in_path("ussp-push")) {
+		 # 9 should not be hardcoded
+		 @cmd = ("ussp-push", $baddr . '@' . 9, $file, basename($file));
+		 system @cmd;
+		 $status = $?;
+	     } else {
+		 my_die "Neither obexapp nor ussp-push are available";
+	     }
 
-	     # 9 should not be hardcoded
-	     my @cmd = ("obexapp", "-C", 9, "-c", "-a", $baddr, "-n", "put", $file);
-	     system @cmd;
-	     my $status = $?;
 	     unlink $file;
 	     if ($status != 0) {
 		 my_die "Obex command <@cmd> failed with $status";
@@ -569,12 +580,15 @@ sub select_baddr_and_send {
 	my $f = $t->Frame->pack(-fill => "x");
 	$f->Button(-text => "Inquiry",
 		   -command => sub {
-		       bluetooth_inquiry();
+		       $t->Busy(-recurse => 1,
+				sub {
+				    bluetooth_inquiry();
+				});
 		       fill_baddr_lb($lb);
 		   })->pack(-side => "left");
 	$f->Button(-text => "Send VCAL",
 		   -command => sub {
-		       my(@inx) = $lb->getSelected;
+		       my(@inx) = $lb->curselection;
 		       $t->destroy;
 		       if (@inx) {
 			   my $baddr_entry = $baddr[$inx[0]];
@@ -586,7 +600,8 @@ sub select_baddr_and_send {
 				   $baddr[$i]->{sel} = '-';
 			       }
 			   }
-			   $top->Busy(sub {
+			   $top->Busy(-recurse => 1,
+				      sub {
 					  $ok_cb->($baddr);
 				      });
 		       } else {
@@ -601,15 +616,23 @@ sub select_baddr_and_send {
 }
 
 sub bluetooth_inquiry {
-    if (!is_in_path("hccontrol")) {
-	my_die "hccontrol is necessary for bluetooth inquiry";
+    if (is_in_path("hccontrol")) {
+	@baddr = bluetooth_inquiry_hccontrol();
+    } elsif (is_in_path("hcitool")) {
+	@baddr = bluetooth_inquiry_hcitool();
+    } else {
+	my_die "Either hccontrol (BSD) or hcitool (Linux) is necessary for bluetooth inquiry";
     }
+    save_baddr_cache();
+}
 
-    my(@result) = `hccontrol inquiry`;
-    my_die "hccontrol inquiry failed with $?" if $? != 0;
+sub bluetooth_inquiry_hccontrol {
+    my $cmd = "hccontrol inquiry";
+    my(@result) = `$cmd`;
+    my_die "$cmd failed with $?" if $? != 0;
     my @_baddr;
     for (@result) {
-	if (/^\s+BD_ADDR:\s+([0-9a-f:]+)/) {
+	if (/^\s+BD_ADDR:\s+([0-9a-f:]+)/i) {
 	    push @_baddr, $1;
 	}
     }
@@ -630,13 +653,32 @@ sub bluetooth_inquiry {
 	}
     }
 
-    @baddr = @__baddr;
-    save_baddr_cache();
+    @__baddr;
+}
+
+sub bluetooth_inquiry_hcitool {
+    my $cmd = "hcitool scan 2>&1";
+    my(@result) = `$cmd`;
+    my_die "$cmd failed with $?" if $? != 0;
+    my @_baddr;
+    for (@result) {
+	if (/^\s+([0-9a-f:]+)\s+(.*)/i) {
+	    my $name = $2;
+	    my $baddr = $1;
+	    push @_baddr, { name  => $name,
+			    sel   => '-',
+			    baddr => $baddr,
+			  };
+	}
+    }
+
+    @_baddr;
 }
 
 sub fill_baddr_lb {
     my($lb) = @_;
     my $sel_done = 0;
+    $lb->delete(0,"end");
     for my $baddr (@baddr) {
 	my($sel, $baddr, $name) = @{$baddr}{qw(sel baddr name)};
 	$lb->insert("end", sprintf "%-20s (%s)", $name, $baddr);
@@ -690,12 +732,12 @@ sub save_baddr_cache {
 }
 
 sub create_vcalendar_entry {
-    my($begintime, $endtime, $pre_alarm_seconds, $subject, $descr, $cat) = @_;
+    my($begintime, $endtime, $vorbereitung_s, $subject, $descr, $cat) = @_;
 
     require POSIX;
     my $dtstart = POSIX::strftime("%Y%m%dT%H%M%S", localtime $begintime);
     my $dtend   = POSIX::strftime("%Y%m%dT%H%M%S", localtime $endtime);
-    my $alarm   = POSIX::strftime("%Y%m%dT%H%M%S", localtime ($begintime-$pre_alarm_seconds));
+    my $alarm   = POSIX::strftime("%Y%m%dT%H%M%S", localtime ($begintime-$vorbereitung_s));
 
     my @search_route;
 
@@ -715,7 +757,7 @@ sub create_vcalendar_entry {
 	$descr = join(" - ", map {
 	    my $hop = Strasse::strip_bezirk($_->[StrassenNetz::ROUTE_NAME()]);
 	    $hop .= " [" . BBBikeUtil::m2km($_->[StrassenNetz::ROUTE_DIST()]);
-	    if ($_->[StrassenNetz::ROUTE_ANGLE()] >= 30) {
+	    if (defined $_->[StrassenNetz::ROUTE_ANGLE()] && $_->[StrassenNetz::ROUTE_ANGLE()] >= 30) {
 		$hop .= ", " . uc($_->[StrassenNetz::ROUTE_DIR()]);
 	    }
 	    $hop .= "]";
@@ -1203,8 +1245,12 @@ sub capabilities {
     if (is_in_path("ical")) {
 	$can_ical = 1;
     }
-    if ($main::devel_host && is_in_path("obexapp")) {
-	$can_bluetooth = 1;
+    if ($main::devel_host) {
+	if (is_in_path("obexapp")) {
+	    $can_bluetooth = 1; # FreeBSD
+	} elsif (is_in_path("ussp-push")) {
+	    $can_bluetooth = 1; # Linux
+	}
     }
 }
 
