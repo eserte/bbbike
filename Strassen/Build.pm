@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Build.pm,v 1.18 2005/03/28 22:48:41 eserte Exp $
+# $Id: Build.pm,v 1.19 2007/05/09 20:38:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::Build;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz::CNetFile;
 
@@ -65,7 +65,7 @@ sub create_mmap_net {
 					 Type => $blocked_type);
     }
 
-    use constant SIZEOF_LONG => 4; # XXX only for intel
+    use constant SIZEOF_LONG => 4; # regardless of $Config{longsize};
 
     my $coord2ptr          = {};
     my $coord2structlength = {};

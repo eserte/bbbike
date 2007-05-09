@@ -1,7 +1,7 @@
 # -*- c -*-
 
 #
-# $Id: Inline.pm,v 2.34 2005/04/05 22:47:28 eserte Exp $
+# $Id: Inline.pm,v 2.35 2007/05/09 20:37:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ package Strassen::Inline;
 require 5.005; # new semantics of hv_iterinit
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 2.34 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = sprintf("%d.%02d", q$Revision: 2.35 $ =~ /(\d+)\.(\d+)/);
 }
 
 use Cwd;
@@ -88,7 +88,7 @@ typedef int dist_t;
 
 typedef struct {
 #ifdef USE_MMAP_IMPL
-  int predecessor;
+  long predecessor;
 #else
   char* predecessor;
 #endif
@@ -120,15 +120,15 @@ inline dist_t _strecke(char* p1, char* p2) {
 # define COORD_HV_VAL(x) ((char*)(&x))
 # define COORD_HV_LEN(x) (sizeof(int))
 # define DECLARE_HV_VAL(x) \
-	int x = 0; \
-	int x##_len = 0
+	long x = 0; \
+	STRLEN x##_len = 0
 # define PLACEHOLDER "%d"
 #else
 # define COORD_HV_VAL(x) (x)
 # define COORD_HV_LEN(x) (strlen(x))
 # define DECLARE_HV_VAL(x) \
 	char* x = NULL; \
-	int x##_len = 0
+	STRLEN x##_len = 0
 # define PLACEHOLDER "%s"
 #endif
 
@@ -148,7 +148,7 @@ inline search_node* get_search_node_from_key(char* key) {
 
 #ifdef USE_MMAP_IMPL
 /* The long output works only if the point has already an entry in NODES */
-void _dump_ptr(int c_net_mmap, int ptr, int use_long_output) {
+void _dump_ptr(long c_net_mmap, long ptr, int use_long_output) {
   int* mmap_ptr = (int*)(c_net_mmap+ptr);
   int x = *(mmap_ptr++);
   int y = *(mmap_ptr++);
@@ -163,7 +163,7 @@ void _dump_ptr(int c_net_mmap, int ptr, int use_long_output) {
 void _dump_node(char* node, int use_long_output) { }
 #else
 /* empty implementation for Inline::C */
-void _dump_ptr(int d1, int d2, int use_long_output) { }
+void _dump_ptr(long d1, long d2, int use_long_output) { }
 void _dump_node(char* node, int use_long_output) {
   if (use_long_output) {
     search_node *sn = get_search_node_from_key(node);
@@ -177,7 +177,7 @@ void _dump_node(char* node, int use_long_output) {
 #ifdef DEBUG_HEAP
 void walk_heap(void *node, void *c_net_mmap) {
 #ifdef USE_MMAP_IMPL
-  _dump_ptr((int)c_net_mmap, (int)node, 1);
+  _dump_ptr((long)c_net_mmap, (long)node, 1);
 #else
   _dump_node((char*)node, 1);
 #endif
@@ -214,7 +214,7 @@ void search_c(SV* self, char* from, char* to, ...) {
   HV* self_hash = Nullhv;
 
 #ifdef USE_MMAP_IMPL
-  int c_net_mmap = 0;
+  long c_net_mmap = 0;
   HV* c_net_coord2ptr = Nullhv;
 #else
   HV* net = Nullhv;
@@ -336,7 +336,7 @@ void search_c(SV* self, char* from, char* to, ...) {
     search_node *first_node = malloc(sizeof(search_node));
     if (!first_node)
       croak("Can't malloc");
-    first_node->predecessor = NULL;
+    first_node->predecessor = 0;
 #ifdef USE_MMAP_IMPL
     first_node->heuristic_dist = _strecke(from_x, from_y, to_x, to_y);
 #else
@@ -420,7 +420,7 @@ void search_c(SV* self, char* from, char* to, ...) {
 	if (!node_sv)
 	  croak("Can't get node for key <" PLACEHOLDER " >", key);
 	sn = (search_node*)SvIV(*node_sv);
-	if (min_node == NULL || sn->heuristic_dist < min_node_f) {
+	if (min_node == 0 || sn->heuristic_dist < min_node_f) {
 	  min_node = key;
 	  min_node_len = key_len;
 	  min_node_f = sn->heuristic_dist;
@@ -442,7 +442,7 @@ void search_c(SV* self, char* from, char* to, ...) {
 
       /* Route found? */
 #ifdef USE_MMAP_IMPL
-      if (min_node == to_ptr) {
+      if ((void*)min_node == to_ptr) {
 #else
       if (strcmp(min_node, to) == 0) {
 #endif
@@ -474,7 +474,7 @@ void search_c(SV* self, char* from, char* to, ...) {
 	  tmp2 = hv_fetch(NODES, COORD_HV_VAL(min_node), COORD_HV_LEN(min_node), 0);
 	  if (!tmp2) break;
 	  sn = (search_node*)SvIV(*tmp2);
-	  if (sn->predecessor == NULL) break;
+	  if (sn->predecessor == 0) break;
 #ifdef USE_MMAP_IMPL
 	  {
 	    int x2,y2;
@@ -524,7 +524,7 @@ void search_c(SV* self, char* from, char* to, ...) {
 	SV** node_sv = hv_fetch(NODES, COORD_HV_VAL(min_node), COORD_HV_LEN(min_node), 0);
 	search_node* sn = (search_node*)SvIV(*node_sv);
 # ifdef DEBUG_MMAP_IMPL
-	fprintf(stderr, "<%d><%d><%d>x=<%d> y=<%d> no=<%d> hdist=<%d>\n", (int)c_net_mmap, min_node,mmap_ptr, *mmap_ptr,*(mmap_ptr+1),*(mmap_ptr+2), sn->heuristic_dist );
+	fprintf(stderr, "<%ld><%d><%d>x=<%d> y=<%d> no=<%d> hdist=<%d>\n", (long)c_net_mmap, min_node,mmap_ptr, *mmap_ptr,*(mmap_ptr+1),*(mmap_ptr+2), sn->heuristic_dist );
 # endif
 	mmap_ptr+=2; /* skip x, y coordinate */
 	no_succ = *(mmap_ptr++);
@@ -541,7 +541,7 @@ void search_c(SV* self, char* from, char* to, ...) {
 	hv_iterinit(min_node_net);
 
 	while(succ_he = hv_iternext(min_node_net)) {
-	  int succ_key_len;
+	  STRLEN succ_key_len;
 	  char* succ_key = HePV(succ_he, succ_key_len);
 	  dist_t len_pen;
 #endif /* USE_MMAP_IMPL */
@@ -586,7 +586,7 @@ void search_c(SV* self, char* from, char* to, ...) {
 		    search_node *this_sn;
 		    tmp3 = hv_fetch(NODES, COORD_HV_VAL(this_node), COORD_HV_LEN(this_node), 0);
 		    this_sn = (search_node*)SvIV(*tmp3);
-		    if (this_sn->predecessor == NULL) {
+		    if (this_sn->predecessor == 0) {
 		      same = 0;
 		      break;
 		    }

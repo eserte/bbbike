@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: db_impl.t,v 1.13 2004/12/18 12:36:31 eserte Exp eserte $
+# $Id: db_impl.t,v 1.14 2006/04/17 12:29:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002, 2003, 2006 Slaven Rezic. All rights reserved.
@@ -17,7 +17,9 @@ BEGIN {
 
 }
 
+use strict;
 use Cwd;
+my $root;
 BEGIN { $root = "../.." }
 use lib ($root, "$root/lib", "$root/data");
 use lib @lib::ORIG_INC;
@@ -44,6 +46,7 @@ BEGIN {
 
 use vars qw($net $algorithm);
 
+my $tests;
 BEGIN {
     if (!eval q{
 	use Test::More;
@@ -59,9 +62,11 @@ BEGIN {
 
 BEGIN { plan tests => $tests }
 
+my $v = 0;
 if (!GetOptions("v+" => \$v)) {
     die "usage: $0 [-v]";
 }
+
 if ($v > 0) {
     Strassen::set_verbose(1);
 }
@@ -126,13 +131,18 @@ if (0) { # This does not work because search_c does not use
     $net->make_net;
     $net->make_sperre("gesperrt", Type => [qw(einbahn sperre wegfuehrung)]);
 } else {
+    warn "About to make net...\n" if ($v >= 2);
     $net->make_net(-blocked => "gesperrt");
+    warn "About to make sperre...\n" if ($v >= 2);
     $net->make_sperre("gesperrt", Type => [qw(wegfuehrung)]);
+    warn "Made the net.\n" if ($v >= 2);
 }
 
 ok($net->reachable($start_coord), "$start_coord reachable");
 ok($net->reachable($goal1_coord), "$goal1_coord reachable");
 ok($net->reachable($goal2_coord), "$goal2_coord reachable");
+
+my @arr;
 
 @arr = Strassen::Inline2::search_c($net, $start_coord, $goal1_coord);
 ok(@arr, "Path between $start_coord and $goal1_coord");
@@ -141,6 +151,8 @@ is(ref $arr[0], 'ARRAY', "Path elements correct");
 @arr = Strassen::Inline2::search_c($net, $start_coord, $goal2_coord);
 ok(@arr, "Path between $start_coord and $goal2_coord");
 is(ref $arr[0], 'ARRAY', "Path elements correct");
+
+my $handle;
 
 {
     my($sv1, $sv2);

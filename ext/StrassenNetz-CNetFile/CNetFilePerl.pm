@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: CNetFilePerl.pm,v 1.17 2005/04/05 22:47:44 eserte Exp $
+# $Id: CNetFilePerl.pm,v 1.18 2007/05/09 20:36:52 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001, 2002, 2007 Slaven Rezic. All rights reserved.
 #
 # Mail: slaven@rezic.de
 # WWW:  http://bbbike.sourceforge.net
@@ -225,7 +225,8 @@ sub FETCH {
 	    return $neighbors[$n_i+1];
 	}
     }
-#    warn "Can't find distance for $self->{Key1} - $key2! Try the hard way...";
+    warn "Can't find distance for $self->{Key1} - $key2!";
+#    warn "Try the hard way...";
 #    require Strassen::Util;
 #    int(Strassen::Util::strecke_s($self->{Key1}, $key2));
 }
