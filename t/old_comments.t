@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: old_comments.t,v 1.10 2006/08/27 21:14:01 eserte Exp $
+# $Id: old_comments.t,v 1.11 2007/05/09 20:55:15 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -133,10 +133,14 @@ EOF
 - {}
 - {}
 - R1: 1
+  RR2: 1
+  RR3: 1
 - ~
 EOF
 	     ["6642,12010", "6732,10754", <<EOF, "Rückweg"],
 - R1: 1
+  RR2: 1
+  RR3: 1
 - {}
 - {}
 - Als Lützowplatz ausgeschildert (Teilstrecke): 1
