@@ -4,8 +4,8 @@ push @temp_blocking,
 (
        {
          'source_id' => 'IM_003157',
-         'until' => 1179180000,
-         'text' => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt. Ebenfalls Einbahnstraße: Teile der Dircksenstr. Die Ausfahrt aus der Memhardstraße in Richtung Ost (Alexanderstraße) ist nicht möglich. (bis Mitte Mai 2007) ',
+         'until' => 1179007200,
+         'text' => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt. Ebenfalls Einbahnstraße: Teile der Dircksenstr. Die Ausfahrt aus der Memhardstraße in Richtung Ost (Alexanderstraße) ist nicht möglich. (bis 2007-05-13) ',
          'from' => 1154203576,
          'data' => 'userdel	1::inwork 10920,13139 10781,13002
 userdel	1::inwork 10781,13002 10706,13043
@@ -716,22 +716,8 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        undef,
        undef,
        undef,
-       {
-         'until' => 1178661600,
-         'text' => 'L 792 Berliner Damm OD Blankenfelde, Höhe Hausnummer 4 Kranarbeiten Vollsperrung 08.05.2007-08.05.2007 ',
-         'from' => 1178488800,
-         'data' => 'userdel	2::inwork 10427,-7665 10424,-7409
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1178748000,
-         'text' => 'L 034 Philipp-Müller-Str. OD Strausberg, Höhe Feuerwehr Instandsetzung TW-Schieber halbseitig gesperrt; Einbahnstraße 02.05.2007-09.05.2007 ',
-         'from' => 1177970400,
-         'data' => 'userdel	1::inwork 43584,20871 43553,20466 43110,19818
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -747,23 +733,9 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        },
        undef,
        undef,
-       {
-         'until' => 1178661600,
-         'text' => 'B 246 Nächst Neuendorfer Chaussee Bahnübergang in OL Zossen Bauarbeiten am Bahnübergang Vollsperrung 07.05.2007-08.05.2007 ',
-         'from' => 1178402400,
-         'data' => 'userdel	2::inwork 13326,-20518 13414,-20498 13623,-20519
-',
-         'type' => 'gesperrt'
-       },
        undef,
-       {
-         'until' => 1179698400,
-         'text' => 'L 040 Zossener Damm OD Blankenfelde, zw. Tankstelle u. Garagentrakt. Ausbau Landesstraße Vollsperrung 07.05.2007-20.05.2007 ',
-         'from' => 1178402400,
-         'data' => 'userdel	2::inwork 10115,-8276 11019,-8435
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        {
@@ -796,6 +768,38 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'text' => 'L 234 Landsberger Str. OD Bruchmühle, Höhe Fichtestr. Havarie TW-Netz Vollsperrung 07.05.2007-11.05.2007 ',
          'from' => 1178402400,
          'data' => 'userdel	2::inwork 36087,16319 35807,16563
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1179698400,
+         'text' => 'L 040 Zossener Damm OD Blankenfelde Ausbau Landesstr. Vollsperrung 07.05.2007-20.05.2007 ',
+         'from' => 1178402400,
+         'data' => 'userdel	2::inwork 10115,-8276 11019,-8435
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1180994400,
+         'text' => 'B 273 Wensickendorf-Oranienburg Schleusenbrücke Lehnitz am OA Oranienburg Instandsetzungsarbeiten Vollsperrung 02.06.2007-04.06.2007 ',
+         'from' => 1180648800,
+         'data' => 'userdel	2::inwork 1281,39850 1455,39824
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1179180000,
+         'text' => 'B 273 Wensickendorf-Oranienburg Schleusenbrücke Lehnitz am OA Oranienburg Instandsetzungsarbeiten Vollsperrung 12.05.2007-14.05.2007 ',
+         'from' => 1178834400,
+         'data' => 'userdel	2::inwork 1281,39850 1455,39824
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1179784800,
+         'text' => 'B 273 Wensickendorf-Oranienburg Schleusenbrücke Lehnitz am OA Oranienburg Instandsetzungsarbeiten Vollsperrung 19.05.2007-21.05.2007 ',
+         'from' => 1179439200,
+         'data' => 'userdel	2::inwork 1281,39850 1455,39824
 ',
          'type' => 'gesperrt'
        }

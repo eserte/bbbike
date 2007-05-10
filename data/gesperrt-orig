@@ -97,7 +97,7 @@ Heinrich-Mann-Platz.	1 9590,18548 9527,18517 9496,18545 9469,18570 9475,18617 95
 Edelweißstr.	1 8251,19937 7966,19968 7885,19975 7772,20050
 Angerburger Allee	1 -1524,11108 -1608,11133 -1829,11337 -1895,11400 -1966,11466
 Edelhofdamm	1 3200,25429 2938,25317 2702,25223 2730,25298 2907,25363 3211,25484
-Antonienstr./Eichborndamm	1 3927,17909 3970,18126 4009,18322 4081,18677 4098,18762 4162,18891 4240,19019 4228,18873 4179,18652 4102,18298 4059,18107 4013,17901
+Antonienstr./Eichborndamm	1 3930,17920 3970,18126 4009,18322 4081,18677 4098,18762 4162,18891 4240,19019 4228,18873 4179,18652 4102,18298 4059,18107 4015,17912
 Spreestr.	1 17898,6049 17939,5968 17812,5726 17779,5694
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1 15657,10846 15871,10925
@@ -528,8 +528,10 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,125
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
-#: note: Luftbild: vvv
+#: by: stefan: (sw-...)
 Müggelheimer Str.: Straßenbahntrasse	3nocross 22686,4310 22812,4236 22967,4144
+#: note: Luftbild: vvv
+Prenzlauer Promenade.: Straßenbahntrasse	3nocross 12054,16517 12077,16380 12097,16263
 Petersburger Str.: Straßenbahntrasse	3nocross 13631,12799 13579,12904 13537,13003
 Petersburger Str.: Straßenbahntrasse	3nocross 13537,13003 13487,13115 13437,13228
 Petersburger Str.: Straßenbahntrasse	3nocross 13334,13459 13378,13353 13393,13326 13437,13228
@@ -792,6 +794,8 @@ Drängelgitter	BNP:5 15393,6112
 Enges Drängelgitter	BNP:5 7887,24043
 Enges Drängelgitter	BNP:5 2375,21494
 Drängelgitter	BNP:5 8776,16718
+#: by: Sandra Hummel:
+Schranke	BNP:5 -8211,5490
 #: by: Charly Huber:
 Kurzschranke	BNP:5 6739,15307
 #: by: popanne: vvv

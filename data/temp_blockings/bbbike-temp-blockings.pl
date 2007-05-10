@@ -2968,7 +2968,7 @@ EOF
        text  => 'Ehrlichstr. (Lichtenberg) zwischen Wildensteiner Str. und Treskowallee Baustelle, gesperrt (bis 23.10.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 18147,8583 18225,8532 18467,8375 18528,8331 18615,8269 18683,8232
+userdel	q4 18147,8583 18225,8532 18391,8425 18461,8377 18528,8331 18615,8269 18683,8232
 EOF
      },
      { from  => undef, # 
@@ -4093,7 +4093,7 @@ EOF
 userdel	q4 4392,17777 4429,17763 4584,17704
 userdel	q4 4392,17777 4326,17801
 userdel	q4 4584,17704 4683,17669
-userdel	q4 4326,17801 4200,17848 4096,17890 4013,17901
+userdel	q4 4326,17801 4200,17848 4096,17890 4015,17912
 EOF
      },
      { from  => 1144706400, # 2006-04-11 00:00
@@ -5268,8 +5268,8 @@ userdel	2::temp 5370,6486 5424,6584 5533,6753 5654,6941
 EOF
      },
      { from  => 1154203576, # 2006-07-29 22:06
-       until => Time::Local::timelocal(reverse(2007-1900,5-1,15,0,0,0)), # 1183240800, # 2007-07-01 00:00 # XXX nicht mehr in VMZ vorhanden!
-       text  => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt. Ebenfalls Einbahnstraße: Teile der Dircksenstr. Die Ausfahrt aus der Memhardstraße in Richtung Ost (Alexanderstraße) ist nicht möglich. (bis Mitte Mai 2007) ',
+       until => Time::Local::timelocal(reverse(2007-1900,5-1,13,0,0,0)), # 1183240800, # 2007-07-01 00:00 # XXX nicht mehr in VMZ vorhanden!
+       text  => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt. Ebenfalls Einbahnstraße: Teile der Dircksenstr. Die Ausfahrt aus der Memhardstraße in Richtung Ost (Alexanderstraße) ist nicht möglich. (bis 2007-05-13) ',
        type  => 'gesperrt',
        source_id => 'IM_003157',
        data  => <<EOF,
@@ -7994,7 +7994,7 @@ userdel	q4::inwork 2480,89399 2111,89378 1907,89597
 EOF
      },
      { from  => 1178402400, # 2007-05-06 00:00
-       until => 1179698400, # 2007-05-21 00:00
+       until => 1178744977, # 1179698400 2007-05-21 00:00 see also below
        text  => 'L 040 Zossener Damm OD Blankenfelde, zw. Tankstelle u. Garagentrakt. Ausbau Landesstraße Vollsperrung 07.05.2007-20.05.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -8050,6 +8050,38 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 36087,16319 35807,16563
+EOF
+     },
+     { from  => 1178402400, # 2007-05-06 00:00
+       until => 1179698400, # 2007-05-21 00:00
+       text  => 'L 040 Zossener Damm OD Blankenfelde Ausbau Landesstr. Vollsperrung 07.05.2007-20.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 10115,-8276 11019,-8435
+EOF
+     },
+     { from  => 1180648800, # 2007-06-01 00:00
+       until => 1180994400, # 2007-06-05 00:00
+       text  => 'B 273 Wensickendorf-Oranienburg Schleusenbrücke Lehnitz am OA Oranienburg Instandsetzungsarbeiten Vollsperrung 02.06.2007-04.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 1281,39850 1455,39824
+EOF
+     },
+     { from  => 1178834400, # 2007-05-11 00:00
+       until => 1179180000, # 2007-05-15 00:00
+       text  => 'B 273 Wensickendorf-Oranienburg Schleusenbrücke Lehnitz am OA Oranienburg Instandsetzungsarbeiten Vollsperrung 12.05.2007-14.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 1281,39850 1455,39824
+EOF
+     },
+     { from  => 1179439200, # 2007-05-18 00:00
+       until => 1179784800, # 2007-05-22 00:00
+       text  => 'B 273 Wensickendorf-Oranienburg Schleusenbrücke Lehnitz am OA Oranienburg Instandsetzungsarbeiten Vollsperrung 19.05.2007-21.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 1281,39850 1455,39824
 EOF
      },
     );
