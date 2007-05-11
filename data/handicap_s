@@ -119,6 +119,7 @@ Lange Str. [vor Kaufhof]: Fuﬂg‰nger	q2 12401,11886 12522,11837
 Gotenstr. - Kolonnenstr.: Fuﬂg‰nger	q2 7488,8768 7548,8879
 Nettelbeckplatz: Fuﬂg‰nger	q2 8035,15411 7989,15412 7891,15417
 Nettelbeckplatz: Fuﬂg‰nger	q2 7953,15362 7989,15412
+Nettelbeckplatz: Fuﬂg‰nger	q2 7987,15501 7989,15412
 Volkspark Wilmersdorf: kombinierter Rad- und Fuﬂweg	q1 5919,8417 5805,8352 5666,8345 5533,8478 5481,8506
 zum Volksparksteg: kombinierter Rad- und Fuﬂweg, enge Kurven	q3 5533,8478 5531,8458
 Volksparksteg: kombinierter Rad- und Fuﬂweg	q1 5531,8458 5417,8519
@@ -256,7 +257,7 @@ Wanzlikpfad: eng und kurvig, Fuﬂg‰nger 	q3 13268,7801 13311,7915
 (Alt Stralau - Spreeufer): Fuﬂg‰nger, Radfahren erlaubt, kurze Rampe	q2 15020,9875 14996,9809
 Hildburghauser Str.: Bahnunterf¸hrung f¸r Fuﬂg‰nger und Radfahrer	q1 4582,1374 4488,1389
 (zur Pfaueninself‰hre): an schˆnen Tagen viele Fuﬂg‰nger	q3 -8540,2209 -8561,2236 -8564,2276
-(Unterf¸hrung am S-Bhf. Kaulsdorf): Fuﬂg‰nger	q4 22838,12042 22832,12109
+(Unterf¸hrung am S-Bhf. Kaulsdorf): Fuﬂg‰nger	q4 22836,11994 22842,12070
 (B¸rgipfad - Jenbacher Weg): Fuﬂg‰nger	q2 5591,240 5671,118 5702,51
 Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14454 19814,14079
 (Kolonie Friedrichsfelde Nord, entlang der Fernw‰rmeleitung): Fuﬂg‰nger	q1 17774,12244 18129,12245 18180,12262 18216,12262
@@ -341,8 +342,9 @@ Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen	q1 6505,7010
 Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen, kurze Rampe	q1 6662,7018 6781,7030
 Viktoriapark: Fuﬂg‰nger, kurze Rampe	q1 5013,6003 4981,5939 4957,5894
 (Gaudystr. - Mauerpark): Fuﬂg‰nger, bei Veranstaltungen in der Max-Schmelling-Halle grˆﬂere Behinderungen mˆglich	q3 10473,15549 10256,15482 10186,15463
-(Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Fuﬂg‰nger	q1 2915,14872 2685,15167 2707,15205 2695,15258 2632,15295
+(Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Fuﬂg‰nger	q1 2915,14872 2900,14891 2685,15167 2707,15205 2695,15258 2632,15295
 (Jungfernheide): Fuﬂg‰nger	q1 2632,15295 2431,15290 2364,15321 2349,15380 2027,15380 1925,15426 1563,15294 1386,15315
+(Jungfernheide): Fuﬂg‰nger	q1 1433,15190 1485,15184 1535,15111 1735,15071 2039,15083 2053,15036 2376,15036 2784,14826 2900,14891
 An der Heilandsweide: Fuﬂg‰nger	q1 8203,1194 8305,1148 8539,1025 8687,950
 Friedrich-Wilhelm-Str.: eng	q1 8282,5909 8371,5896
 Blunckstr.: beidseitig beparkt und eng	q1 5429,19165 5502,19162 5571,19178 5601,19204 5609,19230 5603,19320 5586,19428 5570,19473
@@ -603,8 +605,8 @@ Uferweg an der Kongreﬂhalle: noch im Bau	q2::inwork 7782,12623 7745,12603 7710,1
 Gutsmuthsweg: Fuﬂg‰nger (nur bei Veranstaltungen ein Problem)	q1 -496,11884 -490,11718
 (Fuﬂg‰ngertunnel S-Bhf Jungfernheide): Fuﬂg‰nger	q3 3320,13796 3365,13695
 (Olbestr. - Lamberstr.): Fuﬂg‰nger	q2 3292,13622 3304,13685 3365,13695
-(Goslaer Ufer - Am Bahnhof Jungfernheide): Fuﬂg‰nger	q1 4195,13695 4156,13914 4151,13961 4087,14241
-(Lise-Meitner-Str. - Goslaer Ufer): Fuﬂg‰nger	q1 4087,14241 3966,14211
+(Goslaer Ufer - Am Bahnhof Jungfernheide): Fuﬂg‰nger	q1 4195,13695 4156,13914 4151,13961 4076,14203 4011,14245
+(Lise-Meitner-Str. - Goslaer Ufer): Fuﬂg‰nger	q1 4011,14245 3957,14229
 (Verl‰ngerung der Ilsenburger Str. (Charlottenburg)): Fuﬂg‰nger	q2 3981,13292 3975,13448
 (Schwarzer Weg): Fuﬂg‰nger	q2 4262,13212 4185,13386 4081,13418 3975,13448 3797,13499
 (Dahlienweg): Fuﬂg‰nger	q2 3797,13499 3795,13541 3796,13575
@@ -743,3 +745,4 @@ Stanzer Zeile: enge Straﬂe	q1 6180,376 6130,449 6112,547 6089,643 6066,821 6067,
 Mommsenstr. (Lichterfelde): enge Straﬂe	q1 3583,4011 3356,3860
 Sodtkestr.: enge Straﬂe	q1 12221,15514 12302,15664 12382,15802 12423,15875
 Glauberstr.: viele parkende Autos, daher eng	q1 5556,984 5455,1150 5421,1205 5411,1259
+(Templerzeile - Gˆtzstr.): Parkweg, Fuﬂg‰nger, teilweise mit Radweg	q1 9681,6180 9708,6493

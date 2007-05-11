@@ -302,7 +302,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'until' => 1183240799,
          'text' => 'Kaulsdorfer Brücke (Hellerdorf) in beiden Richtungen, in Höhe Gutenbergstr. Baustelle, Brücke gesperrt (bis 06/2007)',
          'from' => 1168898315,
-         'data' => 'userdel	2::inwork 22691,12044 22668,12080 22701,12115
+         'data' => 'userdel	2::inwork 22688,12007 22669,12049 22693,12084
 ',
          'type' => 'gesperrt'
        },
@@ -714,7 +714,15 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_005465',
+         'until' => 1180648799,
+         'text' => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05/2007)',
+         'from' => 1178917642,
+         'data' => 'userdel	1::inwork 2821,18831 2643,18738 2602,18737 2175,18740 1659,18747 1405,18749 1229,18750
+',
+         'type' => 'gesperrt'
+       },
        {
          'source_id' => 'IM_005369',
          'until' => 1188597600,
@@ -793,6 +801,22 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'text' => 'B 273 Wensickendorf-Oranienburg Schleusenbrücke Lehnitz am OA Oranienburg Instandsetzungsarbeiten Vollsperrung 19.05.2007-21.05.2007 ',
          'from' => 1179439200,
          'data' => 'userdel	2::inwork 1281,39850 1455,39824
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1179698400,
+         'text' => 'B 183 Dresdener Str. OL Bad Liebenwerda, zw. Querspange u. Roßmarkt Kleines Stadtfest Vollsperrung 19.05.2007-20.05.2007 ',
+         'from' => 1179439200,
+         'data' => 'userdel	2::temp 12194,-98944 12593,-99029
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1179612000,
+         'text' => 'K 6908 Ferch-B 1 Geltow zw. B 1 und Fercher Str. in Petzow G 8 - Gipfel Vollsperrung 17.05.2007-19.05.2007 ',
+         'from' => 1179266400,
+         'data' => 'userdel	2::temp -20281,-6915 -19858,-6458
 ',
          'type' => 'gesperrt'
        }

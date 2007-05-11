@@ -3725,8 +3725,8 @@ EOF
        text  => 'Die Kaulsdorfer Brücke ist ab Montag 06.03.2006, 6.00 Uhr bis voraussichtlich Herbst 2007 gesperrt.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 22691,12044 22668,12080
-userdel	2::inwork 22668,12080 22701,12115
+userdel	2::inwork 22688,12007 22669,12049
+userdel	2::inwork 22669,12049 22693,12084
 EOF
      },
      { from  => 1141765672, # 2006-03-07 22:07
@@ -5196,7 +5196,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_82304',
        data  => <<EOF,
-userdel	q4::inwork; 6670,14302 6482,14264
+userdel	q4::inwork; 6656,14311 6476,14277
 EOF
      },
      { from  => 1158185618, # 2006-09-14 00:13
@@ -6915,7 +6915,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004489',
        data  => <<EOF,
-userdel	2::inwork 22691,12044 22668,12080 22701,12115
+userdel	2::inwork 22688,12007 22669,12049 22693,12084
 EOF
      },
      { from  => undef, # 2007-01-15 22:59 1168898369
@@ -7939,13 +7939,13 @@ EOF
 userdel	2::temp 23952,15086 23960,15021 23993,14797
 EOF
      },
-     { from  => 1178048628, # 2007-05-01 21:43
-       until => 1178310792, # 1199142000 2008-01-01 00:00
-       text  => 'Bernauer Str. (Reinickendorf) in Richtung Spandau zwischen Berliner Str. und Nehheimer Str. Baustelle, Fahrtrichtung gesperrt (bis 2008)',
+     { from  => 1178917642, # 2007-05-11 23:07
+       until => 1180648799, # 2007-05-31 23:59
+       text  => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05/2007)',
        type  => 'gesperrt',
-       source_id => 'IM_005339',
+       source_id => 'IM_005465',
        data  => <<EOF,
-userdel	1::inwork 2821,18831 2643,18738 2602,18737 2175,18740
+userdel	1::inwork 2821,18831 2643,18738 2602,18737 2175,18740 1659,18747 1405,18749 1229,18750
 EOF
      },
      { from  => undef, # 
@@ -8082,6 +8082,22 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 1281,39850 1455,39824
+EOF
+     },
+     { from  => 1179439200, # 2007-05-18 00:00
+       until => 1179698400, # 2007-05-21 00:00
+       text  => 'B 183 Dresdener Str. OL Bad Liebenwerda, zw. Querspange u. Roßmarkt Kleines Stadtfest Vollsperrung 19.05.2007-20.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 12194,-98944 12593,-99029
+EOF
+     },
+     { from  => 1179266400, # 2007-05-16 00:00
+       until => 1179612000, # 2007-05-20 00:00
+       text  => 'K 6908 Ferch-B 1 Geltow zw. B 1 und Fercher Str. in Petzow G 8 - Gipfel Vollsperrung 17.05.2007-19.05.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp -20281,-6915 -19858,-6458
 EOF
      },
     );
