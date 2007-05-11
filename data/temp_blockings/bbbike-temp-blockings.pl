@@ -6883,9 +6883,9 @@ EOF
 userdel	1::inwork -8671,13312 -8643,13383 -8358,13340 -8011,13351 -7693,13330
 EOF
      },
-     { from  => 1168327664, # 2007-01-09 08:27
-       until => Time::Local::timelocal(reverse(2007-1900,5-1,15,0,0,0)), # was 1177970399 2007-04-30 23:59
-       text  => 'Oranienstr. und Lobeckstr. (Kreuzberg) in beiden Richtungen an der Kreuzung Baustelle, Oranienstr. auf einen Fahrstreifen je Richtung verengt, Lobeckstr. Einbahnstr. Richtung Ritterstr. (bis Mitte 05.2007)',
+     { from  => 1178865859, # 2007-05-11 08:44
+       until => 1180648799, # 2007-05-31 23:59
+       text  => 'Oranienstr. und Lobeckstr. (Kreuzberg) in beiden Richtungen an der Kreuzung Baustelle, Oranienstr. auf einen Fahrstreifen je Richtung verengt, Lobeckstr. Einbahnstr. Richtung Ritterstr. (bis Ende 05.2007)',
        type  => 'gesperrt',
        source_id => 'IM_004447',
        data  => <<EOF,

@@ -288,9 +288,9 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        },
        {
          'source_id' => 'IM_004447',
-         'until' => 1179180000,
-         'text' => 'Oranienstr. und Lobeckstr. (Kreuzberg) in beiden Richtungen an der Kreuzung Baustelle, Oranienstr. auf einen Fahrstreifen je Richtung verengt, Lobeckstr. Einbahnstr. Richtung Ritterstr. (bis Mitte 05.2007)',
-         'from' => 1168327664,
+         'until' => 1180648799,
+         'text' => 'Oranienstr. und Lobeckstr. (Kreuzberg) in beiden Richtungen an der Kreuzung Baustelle, Oranienstr. auf einen Fahrstreifen je Richtung verengt, Lobeckstr. Einbahnstr. Richtung Ritterstr. (bis Ende 05.2007)',
+         'from' => 1178865859,
          'data' => 'userdel	1::inwork 10572,10773 10673,10975
 ',
          'type' => 'gesperrt'
@@ -656,14 +656,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
        },
        undef,
        undef,
-       {
-         'until' => 1178834400,
-         'text' => 'L 038 zw. Briesen und Petersdorf Einbau Deckschicht Vollsperrung 07.05.2007-10.05.2007 ',
-         'from' => 1178402400,
-         'data' => 'userdel	2::inwork 74238,-3970 73292,-4598
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1180130400,
          'text' => 'L 049 AS Bademeusel-Forst zw. Forst und Groﬂ Bademeusel 32. Forster Duathlon zeitw. Vollsperrung 25.05.2007-25.05.2007 ',
