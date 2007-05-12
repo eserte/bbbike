@@ -5485,7 +5485,7 @@ EOF
        text  => 'L 401 Königs Wusterhausen-Wildau OL Königs Wusterhausen, Höhe Neue Ziegelei Deckeneinbau Vollsperrung 31.08.2006-01.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 26437,-10393 26407,-10986
+userdel	2::inwork 26437,-10393 26418,-10758 26407,-10986
 EOF
      },
      { from  => 1156024800, # 2006-08-20 00:00

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.56 2007/05/04 20:39:22 eserte Exp $
+# $Id: bbbike.cgi,v 8.56 2007/05/04 20:39:22 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -6146,9 +6146,11 @@ sub tie_session_counted {
     my $date = sprintf "%04d-%02d-%02d", $l[5]+1900, $l[4]+1, $l[3];
     ## Make sure a different user for cgi-bin/mod_perl operation is used
     #my $directory = "/tmp/bbbike-sessions-" . $< . "-$date";
-    ## No need for per-day directories, I have /tmp/coordssessions
+    ## No need for per-day directories and counterfiles,
+    ## I have /tmp/coordssessions
     my $directory = "/tmp/bbbike-sessions-" . $<;
-    my $counterfile = "/tmp/bbbike-counter-" . $< . "-$date";
+    #my $counterfile = "/tmp/bbbike-counter-" . $< . "-$date";
+    my $counterfile = "/tmp/bbbike-counter-" . $<;
 
 #     require File::Spec;
 #     open(OLDOUT, ">&STDOUT") or die $!;

@@ -99,17 +99,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_003157',
-         'until' => 1179007200,
-         'text' => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt. Ebenfalls Einbahnstraße: Teile der Dircksenstr. Die Ausfahrt aus der Memhardstraße in Richtung Ost (Alexanderstraße) ist nicht möglich. (bis 2007-05-13) ',
-         'from' => 1154203576,
-         'data' => 'userdel	1::inwork 10920,13139 10781,13002
-userdel	1::inwork 10781,13002 10706,13043
-userdel	3::inwork 10755,13152 10920,13139 11139,13008
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -917,15 +907,6 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
          'text' => 'Bölschestr. (Köpenick) in beiden Richtungen Veranstaltung, Straße vollständig gesperrt (bis 13.05.07 24:00Uhr)',
          'from' => 1178958684,
          'data' => 'userdel	2::temp 25512,4842 25539,5237 25568,5763 25572,5842 25579,5980
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_005469',
-         'until' => 1179007200,
-         'text' => 'Straße des 17.Juni (Tiergarten) in beiden Richtungen, zwischen Yitzhak-Rabin-Str. und Großer Stern Veranstaltung, Straße vollständig gesperrt (bis 24:00 Uhr)',
-         'from' => 1178874938,
-         'data' => 'userdel	2::temp 8063,12182 7816,12150 7383,12095 6828,12031
 ',
          'type' => 'gesperrt'
        }
