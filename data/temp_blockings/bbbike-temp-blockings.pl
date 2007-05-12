@@ -4484,11 +4484,11 @@ EOF
 userdel	2 -2643,-21212 -2815,-20920
 EOF
      },
-     { from  => 1148113240, # 2006-05-20 10:20
-       until => 1148248800, # 2006-05-22 00:00
-       text  => 'Herrmannstr. (Neukölln) in beiden Richtungen zwischen Werbellinstr. und Thomasstr. Veranstaltung, Straße vollständig gesperrt (bis 21.05.2006 24 Uhr)',
+     { from  => 1178961276, # 2007-05-12 11:14
+       until => 1179093600, # 2007-05-14 00:00
+       text  => 'Hermannstr. (Neukölln) in beiden Richtungen zwischen Flughafenstr. und Thomasstr. Veranstaltung, Straße vollständig gesperrt (bis 13.05.2007 nachts)',
        type  => 'gesperrt',
-       source_id => 'IM_002798',
+       source_id => 'IM_005438',
        data  => <<EOF,
 userdel	2 11979,8014 12001,7937 12025,7852 12041,7788 12055,7751 12075,7696 12090,7651 12122,7553 12180,7387
 EOF
@@ -8098,6 +8098,33 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp -20281,-6915 -19858,-6458
+EOF
+     },
+     { from  => undef, # 
+       until => 1179010800, # 2007-05-13 01:00
+       text  => 'Bartningallee (Tiergarten) in beiden Richtungen zwischen Altonaer Str. und Hanseatenweg Veranstaltung, Straße vollständig gesperrt (bis 01:00 Uhr) ',
+       type  => 'handicap',
+       source_id => 'IM_005439',
+       data  => <<EOF,
+userdel	q4::temp 6178,12387 6276,12506 6314,12518 6444,12536
+EOF
+     },
+     { from  => 1178958684, # 2007-05-12 10:31
+       until => 1179093600, # 2007-05-14 00:00
+       text  => 'Bölschestr. (Köpenick) in beiden Richtungen Veranstaltung, Straße vollständig gesperrt (bis 13.05.07 24:00Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_005473',
+       data  => <<EOF,
+userdel	2::temp 25512,4842 25539,5237 25568,5763 25572,5842 25579,5980
+EOF
+     },
+     { from  => 1178874938, # 2007-05-11 11:15
+       until => 1179007200, # 2007-05-13 00:00
+       text  => 'Straße des 17.Juni (Tiergarten) in beiden Richtungen, zwischen Yitzhak-Rabin-Str. und Großer Stern Veranstaltung, Straße vollständig gesperrt (bis 24:00 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_005469',
+       data  => <<EOF,
+userdel	2::temp 8063,12182 7816,12150 7383,12095 6828,12031
 EOF
      },
     );
