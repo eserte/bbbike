@@ -2370,6 +2370,17 @@ multi_bez_str steht es drinnen, muesste wahrscheinlich von PLZ.pm
 verwendet werden (combined streets?). (Aber nur, falls multi_bez_str
 vorhanden ist)
 
+=item * (H2)
+
+Subroutine zum Mapping von Kreuzungen (E<quot>Astr./Bstr.E<quot>) auf
+mögliche Koordinaten erstellen. Ein Ansatz wäre der Code ab E<quot>if
+(defined $crossing_street)E<quot> in bbbike.cgi. Die größte Frage ist
+eigentlich, wo der Code hingehört: nach Strassen/Util.pm, Strasse.pm,
+PLZ.pm oder StrassenNetz.pm?
+
+Wenn die Subroutine einmal existiert, kann sie z.B. für E<quot>On
+start center on streetE<quot> verwendet werden.
+
 =item * (M2)
 
 Request:

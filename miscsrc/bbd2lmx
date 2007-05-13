@@ -1,0 +1,72 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: bbd2lmx,v 1.2 2007/05/13 17:15:25 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2007 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+# XXX Turn into a module, see lmx2bbd
+
+use strict;
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+
+use XML::LibXML;
+
+use Karte::Polar;
+use Karte::Standard;
+use Strassen::Core;
+
+my $file = shift || die "Missing .bbd file";
+
+my $doc = XML::LibXML::Document->new('1.0', 'utf-8');
+my $lmx = $doc->createElement("lmx");
+$doc->setDocumentElement($lmx);
+my $lm = "http://www.nokia.com/schemas/location/landmarks/1/0";
+$lmx->setNamespace($lm, "lm");
+$lmx->setNamespace("http://www.w3.org/2001/XMLSchema-instance", "xsi", 0);
+$lmx->setAttribute("xsi:schemaLocation" , "http://www.nokia.com/schemas/location/landmarks/1/0/ lmx.xsd");
+
+my @landmarks;
+
+my $s = Strassen->new($file);
+$s->init;
+while(1) {
+    my $r = $s->next;
+    last if !@{ $r->[Strassen::COORDS] };
+    for my $c (@{ $r->[Strassen::COORDS] }) {
+	my $lm_node = XML::LibXML::Element->new("lm:landmark");
+	$lm_node->appendTextChild("lm:name", $r->[Strassen::NAME]);
+	my $coordinates_node = $lm_node->addNewChild(undef, "lm:coordinates");
+	my($lon, $lat) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $c));
+	$coordinates_node->appendTextChild("lm:latitude", $lat);
+	$coordinates_node->appendTextChild("lm:longitude", $lon);
+	push @landmarks, $lm_node;
+    }
+}
+
+if (@landmarks == 0) {
+    die "No landmarks found in bbd";
+} elsif (@landmarks == 1) {
+    $lmx->appendChild($landmarks[0]);
+} else {
+    my $lc_node = $lmx->addNewChild($lm, "landmarkCollection");
+    for my $lm_node (@landmarks) {
+	$lc_node->addChild($lm_node);
+    }
+}
+
+binmode STDOUT, ':utf8';
+print $doc->toString;
+__END__
+

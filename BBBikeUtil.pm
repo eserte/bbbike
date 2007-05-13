@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeUtil.pm,v 1.23 2006/04/17 21:29:01 eserte Exp $
+# $Id: BBBikeUtil.pm,v 1.24 2007/05/13 19:27:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeUtil;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
 
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
@@ -28,7 +28,7 @@ require Exporter;
 	     cp850_iso iso_cp850 nil
 	     kmh2ms
 	     STAT_MODTIME);
-@EXPORT_OK = qw(min max);
+@EXPORT_OK = qw(min max ms2kmh);
 
 use constant STAT_MODTIME => 9;
 
@@ -133,6 +133,7 @@ sub m2km {
 }
 
 sub kmh2ms { $_[0]/3.6 }
+sub ms2kmh { $_[0]*3.6 }
 
 # damit ich nicht Math::Trig und Math::Complex laden muß
 sub pi ()   { 4 * atan2(1, 1) } # 3.141592653

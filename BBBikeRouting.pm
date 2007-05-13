@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.40 2006/06/15 23:10:30 eserte Exp $
+# $Id: BBBikeRouting.pm,v 1.41 2007/05/13 20:03:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -119,6 +119,8 @@ sub init_context {
     $self->Start($self->BBBikeRouting_Position_Class->new);
     $self->StartChoices([]);
     $self->StartChoicesIsCrossings(0);
+    $self->Via([]);
+    $self->ViaChoices([]);
     $self->Goal($self->BBBikeRouting_Position_Class->new);
     $self->GoalChoices([]);
     $self->GoalChoicesIsCrossings(0);

@@ -1,0 +1,50 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: lmx2bbd,v 1.2 2007/05/13 15:08:34 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2007 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+# XXX make a module Strassen::LMX from this script
+# XXX maybe again with a Twig version like for GPX
+
+use strict;
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+
+use File::Basename qw(basename);
+use XML::LibXML;
+
+use Karte::Polar;
+use Karte::Standard;
+
+my $file = shift || die "Missing .lmx file";
+
+my $p = XML::LibXML->new;
+my $doc = $p->parse_file($file);
+my $root = $doc->documentElement;
+
+print "#: encoding: utf-8\n";
+print "#:\n";
+print "# Source: " . basename($file) . "\n";
+binmode STDOUT, ':utf8';
+for my $landmark_node ($root->findnodes('/*[local-name()="lmx"]/*[local-name()="landmarkCollection"]/*[local-name()="landmark"]')) {
+    my $name = $landmark_node->findvalue('./*[local-name()="name"]');
+    my $cat  = 'X'; # use category?
+    my $lat = $landmark_node->findvalue('./*[local-name()="coordinates"]/*[local-name()="latitude"]');
+    my $lon = $landmark_node->findvalue('./*[local-name()="coordinates"]/*[local-name()="longitude"]');
+    my($x, $y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon, $lat));
+    print "$name\t$cat $x,$y\n";
+}
+
+__END__

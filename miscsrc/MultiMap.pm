@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiMap.pm,v 1.9 2007/03/21 21:59:11 eserte Exp $
+# $Id: MultiMap.pm,v 1.10 2007/05/13 14:52:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%images);
 
@@ -63,6 +63,12 @@ sub register {
 	  callback => sub { showmap_bvgstadtplan(@_) },
 	  callback_3_std => sub { showmap_url_bvgstadtplan(@_) },
 	  ($images{BvgStadtplan} ? (icon => $images{BvgStadtplan}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . "_LiveCom"} =
+	{ name => "local.live.com",
+	  callback => sub { showmap_livecom(@_) },
+	  callback_3_std => sub { showmap_url_livecom(@_) },
+	  ($images{LiveCom} ? (icon => $images{LiveCom}) : ()),
 	};
 }
 
@@ -184,6 +190,8 @@ DDQELSkBDPjgQMFIhBL5SAyYoGCHDgASlMQwQMFADCtPgJwwgUPKEhg0rCyRIUKFEitTSuVL
 SerUsieNAgEAOw==
 EOF
 	}
+
+    # XXX missing: LiveCom image
 }
 
 ######################################################################
@@ -319,6 +327,29 @@ sub showmap_url_bvgstadtplan {
 sub showmap_bvgstadtplan {
     my(%args) = @_;
     my $url = showmap_url_bvgstadtplan(%args);
+    start_browser($url);
+}
+
+######################################################################
+# local.live.com
+# Seems to not work on seamonkey, but linux-firefox is OK
+
+sub showmap_url_livecom {
+    my(%args) = @_;
+
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    if ($scale > 13) {
+	$scale = 13; # schlechte Auflösung in Berlin und Umgebung
+    }
+    sprintf "http://local.live.com/default.aspx?v=2&cp=%f~%f&style=h&lvl=%d&tilt=-90&dir=0&alt=-1000&encType=1",
+	$py, $px, $scale;
+}
+
+sub showmap_livecom {
+    my(%args) = @_;
+    my $url = showmap_url_livecom(%args);
     start_browser($url);
 }
 

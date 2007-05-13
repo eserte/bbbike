@@ -1522,7 +1522,7 @@ sub choose_form {
 	    # If this is a crossing, then get the exact point, but don't fail
 	    if (defined $crossing_street) {
 		# first: get all matching Strasse objects (first part)
-		my $rx = "^" . join("|", map { quotemeta($_->[&PLZ::LOOK_NAME]) } @$matchref);
+		my $rx = "^(" . join("|", map { quotemeta($_->[&PLZ::LOOK_NAME]) } @$matchref) . ")";
 		my $str = get_streets();
 		my @matches = grep {
 		    $_->[Strassen::NAME] =~ /$rx/i
