@@ -8127,4 +8127,21 @@ EOF
 userdel	2::temp 8063,12182 7816,12150 7383,12095 6828,12031
 EOF
      },
+     { from  => 1179185929, # 2007-05-15 01:38
+       until => 1180648799, # 2007-05-31 23:59
+       text  => 'Wilhelminenhofstr. (Oberschöneweide) Richtung An der Wuhlheide zwischen Rathenaustr. und Ostendstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_005487',
+       data  => <<EOF,
+userdel	1::inwork 18853,6009 19024,5830
+EOF
+     },
+     { from  => 1178402400, # 2007-05-06 00:00
+       until => 1179525600, # 2007-05-19 00:00
+       text  => 'L 234 Landsberger Str. OD Bruchmühle, Höhe Fichtestr. Havarie TW-Netz Vollsperrung 07.05.2007-18.05.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 36087,16319 35807,16563
+EOF
+     },
     );
