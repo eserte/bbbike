@@ -65,7 +65,7 @@ my @req_table =
    'zum Ändern des Zeichensatzes aus dem Programm heraus'],
   [qw/Tk::JPEG		0	all	0|4	gui/],
 #  [qw/X11::Protocol	0.04	unix	0	gui/], # not used anymore
-  [qw/Tie::Watch	0	all	0|4	gui/],
+  [qw/Tie::Watch	0	all	0|4	gui/], # hmmm... this version does not really work with Tk-804.027_500 and is not needed at all for Tk804
   [qw/Tk::HistEntry	0	all	0|4	gui/],
   [qw/Tk::Stderr	0	all	0|4	gui/,
    'optionales Redirect von Fehlermeldungen in ein Tk-Fenster'],
