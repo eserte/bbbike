@@ -84,8 +84,8 @@ sub show_usage {
     print STDERR <<EOF;
 Usage examples:
     cd .../bbbike/data
-    $0 -D2007/05/01 > /tmp/20070501.bbd
-    $0 -Dyesterday > /tmp/yesterday.bbd
+    ../miscsrc/cvsdiffbbd -D2007/05/01 > /tmp/20070501.bbd
+    ../miscsrc/cvsdiffbbd -Dyesterday > /tmp/yesterday.bbd
 
 EOF
     exit 0;
