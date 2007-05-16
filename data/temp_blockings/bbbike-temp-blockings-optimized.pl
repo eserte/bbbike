@@ -486,7 +486,14 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1182117600,
+         'text' => 'L 023 Britz-Joachimsthal zw. AS Chorin und Britz Deckenerneuerung Vollsperrung 26.03.2007-17.06.2007 ',
+         'from' => 1174773600,
+         'data' => 'userdel	2::inwork 35962,59463 35809,59122 35755,58845 35950,58308 36151,57931 36230,57632 36686,57106 36621,56807
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        {
@@ -642,15 +649,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005213',
-         'until' => 1179266399,
-         'text' => 'Hosemannstraße (Prenzlauer Berg) in beiden Richtungen, zwischen Erich-Weinert-Straße und Schieritzstr. geplatzte Wasserleitung, Straße vollständig gesperrt (bis Mitte 05.2007)',
-         'from' => 1177102974,
-         'data' => 'userdel	2::inwork 12731,15824 12559,15524
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -785,6 +784,23 @@ push @temp_blocking,
          'data' => 'userdel	q4::inwork 36087,16319 35807,16563
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1179612000,
+         'text' => 'B 112 Bahnhofstr., Frankfurter Str. OD Neuzelle 6. Run & Bike Veranstaltung halbseitig gesperrt; Einbahnstraße 18.05.2007-19.05.2007 ',
+         'from' => 1179352800,
+         'data' => 'userdel	q4::temp 96017,-33547 96014,-33803
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_005513',
+         'until' => 1179957600,
+         'text' => 'Sylter Str. (Wedding) in Richtung Seestr. Fahrtrichtung gesperrt (bis 23.05.07)',
+         'from' => 1179341723,
+         'data' => 'userdel	1::inwork 6334,14756 5991,14832 5753,15096
+',
+         'type' => 'gesperrt'
        }
      
 );

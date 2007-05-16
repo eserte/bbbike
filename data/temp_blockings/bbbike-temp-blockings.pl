@@ -7486,8 +7486,8 @@ userdel	2::temp 2823,5672 2771,5678 2654,5678
 EOF
      },
      { from  => 1174773600, # 2007-03-24 23:00
-       until => 1178316000, # 2007-05-05 00:00
-       text  => 'L 023 Britz-Joachimsthal zw. AS Chorin und Britz Deckenerneuerung Vollsperrung 26.03.2007-04.05.2007 ',
+       until => 1182117600, # 2007-06-18 00:00
+       text  => 'L 023 Britz-Joachimsthal zw. AS Chorin und Britz Deckenerneuerung Vollsperrung 26.03.2007-17.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 35962,59463 35809,59122 35755,58845 35950,58308 36151,57931 36230,57632 36686,57106 36621,56807
@@ -8142,6 +8142,23 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 36087,16319 35807,16563
+EOF
+     },
+     { from  => 1179352800, # 2007-05-17 00:00
+       until => 1179612000, # 2007-05-20 00:00
+       text  => 'B 112 Bahnhofstr., Frankfurter Str. OD Neuzelle 6. Run & Bike Veranstaltung halbseitig gesperrt; Einbahnstraße 18.05.2007-19.05.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 96017,-33547 96014,-33803
+EOF
+     },
+     { from  => 1179341723, # 2007-05-16 20:55
+       until => 1179957600, # 2007-05-24 00:00
+       text  => 'Sylter Str. (Wedding) in Richtung Seestr. Fahrtrichtung gesperrt (bis 23.05.07)',
+       type  => 'gesperrt',
+       source_id => 'IM_005513',
+       data  => <<EOF,
+userdel	1::inwork 6334,14756 5991,14832 5753,15096
 EOF
      },
     );
