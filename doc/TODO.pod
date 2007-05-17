@@ -10,7 +10,7 @@ Legend:
 
   Priority from 1 (unimportant) to 5 (very important).
 
-  * (star): showstopper for next release
+  #: showstopper for next release
 
   Classification:
 
@@ -1460,7 +1460,7 @@ Unter Win98 scheint ein Minimumdefault von 10px besser zu sein als
 String::Similarity und ggfs. String::Approx in die winbindist aufnehmen
 für die approximative Volltextsuche. Diesen Testcase auch in doc/tests.pod aufnehmen!
 
-=item * (*M5)
+=item * (#M5)
 
 Prüfen, ob das Problem des Handlungsreisenden mit der winbindist
 funktioniert. Nein -> die -except-Option (von meinem IncBusy?) ist nicht
@@ -1469,7 +1469,7 @@ implementiert (anscheinend für die Nicht-Tk::InputO-Variante von IncBusy).
 
 Auch: in doc/tests.pod aufnehmen!
 
-=item * (*E5)
+=item * (#E5)
 
 Tie::File in die Windows-(SiePerl)-Distribution reinnehmen. Dann kann
 ich Sachen wie F8 propagieren und DB_File/RECNO langsam auslaufen
@@ -3062,7 +3062,7 @@ install.pl: Falls Tk nicht installiert ist und PPM vorhanden ist, mit
 PPM nachinstallieren. Bei Bedarf eine Reihe weiterer Module
 nachinstallieren (siehe Bundle::BBBike).
 
-=item * (*M5)
+=item * (#M5)
 
 install.pl: Is completely broken now and should made working for
 current GNOME/KDE versions.
@@ -3152,7 +3152,7 @@ Maybe try Pod::ProjectDocs for pod2html conversion. But not the 0.31
 version, as it cannot handle umlauts and entities correctly. See
 http://rt.cpan.org/Ticket/Display.html?id=25123
 
-=item * (*M5)
+=item * (#M5)
 
 mpod2html scheint Warnungen (nicht existente Links) ins generierte
 HTML zu schreiben. -> workarounded

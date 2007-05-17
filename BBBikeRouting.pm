@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.41 2007/05/13 20:03:55 eserte Exp $
+# $Id: BBBikeRouting.pm,v 1.42 2007/05/16 23:32:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -136,7 +136,7 @@ sub init_context {
     $context->UseNetServer(0);
     $context->UseCache(1);
     $context->PreferCache(0);
-    $context->Algorithm("C-A*");
+    $context->Algorithm("A*");
     $context->RouteInfoKm(1);
     $context->MultipleChoices(1);
     $context->MultipleChoicesLimit(undef);
