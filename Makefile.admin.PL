@@ -202,7 +202,7 @@ cvs-chain:	copy-to-cvs \
 copy-to-cvs:	ask-copy-to-cvs do-copy-to-cvs
 
 ask-copy-to-cvs:
-	@echo "Really copy to ${CVS_DIR}? (Hit Ctrl-C otherwise) "
+	@echo -n "Really copy to ${CVS_DIR}? (Hit Ctrl-C otherwise) "
 	@read dummy
 
 do-copy-to-cvs:	MANIFEST.withcvs
@@ -715,14 +715,19 @@ permission:
 	chmod ugo+r  data/temp_blockings/*
 
 # Copy the current BBBike source first to CVS, and then to a USB
-# stick. The USB stick will be automatically mounter on FreeBSD, if
+# stick. The USB stick will be automatically mounted on FreeBSD, if
 # necessary, and optionally unmounted after copying.
 # The camcontrol commands were not necessary for 4.9, but are for 4.11
 # FreeBSD 6.x names the old mount_msdos now mount_msdosfs
+#
+# The correct rsync seems to be tricky. -a does not seem to work well,
+# as rsync tries to copy everything every time. -c seems to be better.
+# --inplace should be safe enough; data on the stick are not precious
+# in this stage.
 USB_STICK_NUMBER=0
 copy-cvs-to-stick:	copy-to-cvs
 	@[ ! -d /mnt/stick ] && ( \
-	    echo "Create the mount directory /mnt/stick? (CTRL-C to abort)"; \
+	    echo -n "Create the mount directory /mnt/stick? (CTRL-C to abort)"; \
 	    read yn; \
 	    sudo mkdir /mnt/stick; \
 	) || true
@@ -732,9 +737,11 @@ copy-cvs-to-stick:	copy-to-cvs
 	    sudo mount_msdosfs -u eserte /dev/da$(USB_STICK_NUMBER)s1 /mnt/stick \
 	)
 	mount | grep -q /mnt/stick
-	-mv /mnt/stick/BBBike-CVS /mnt/stick/BBBike-CVS.old
-	rsync -v -rlptoD $(CVS_DIR)/ /mnt/stick/BBBike-CVS/
-	@echo '*** Unmount stick? (CTRL-C to abort)'
+	@echo -n '*** Backup old BBBike-CVS directory on stick? (y/N) '
+	-@read yn && ([ "$$yn" = "y" ] && mv /mnt/stick/BBBike-CVS /mnt/stick/BBBike-CVS.old || true)
+	rsync -v --inplace -c -rLt $(CVS_DIR)/ /mnt/stick/BBBike-CVS/
+	#rsync -v -a $(CVS_DIR)/ /mnt/stick/BBBike-CVS/
+	@echo -n '*** Unmount stick? (CTRL-C to abort)'
 	@read yn
 	sudo umount /mnt/stick
 

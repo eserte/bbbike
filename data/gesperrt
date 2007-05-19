@@ -358,21 +358,27 @@ Hüsung	1s 13468,4766 13397,4762 13324,4784
 Karl-Egon-Str.	1 18372,8869 18406,9052 18430,9199 18457,9343
 (Landsberger Allee - Georg-Knorr-Str.)	1 19183,15019 19314,15059 19364,15045
 Marschnerstr.	1 4629,3916 4634,4053
+Weinbergstr.	1 -13519,-625 -13733,-722 -13815,-749
+Weinbergstr.	1 -13519,-625 -13257,-512
+Am Kanal	1 -12839,-1342 -12718,-1327
+Am Kanal	1 -12718,-1327 -12833,-1365
+Yorckstr.	1 -12833,-1365 -12976,-1356 -13001,-1349 -13208,-1315
+Yorckstr.	1 -13206,-1294 -13001,-1329 -12974,-1336 -12839,-1342
 Joliot-Curie-Str.	1 -12549,-1277 -12542,-1305 -12526,-1356 -12500,-1437
 Am Kanal, Nebenstraße	1 -12542,-1305 -12657,-1338
-Mauerstr.	1 -13425,-852 -13500,-640
-Wilhelm-Staab-Str.	1 -13003,-1343 -12992,-1222 -12984,-1110
+Mauerstr.	1 -13425,-852 -13519,-625
+Wilhelm-Staab-Str.	1 -13001,-1329 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12693,-827 -12712,-734 -12730,-627
 Hans-Thoma-Str.	1 -12219,-726 -12262,-612 -12306,-496
-Behlertstr.	1 -12265,-418 -12194,-490 -12063,-784
+Behlertstr.	1 -12265,-418 -12194,-490 -12045,-757
 Potsdamer Damm	2 -5736,-3629 -6439,-3969
 Nuthestr.	2 -6439,-3969 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -9063,-3934 -11144,-2193 -11142,-1675 -11226,-1445 -11356,-1317
 Kleine Gasse	1 -13272,-1168 -13287,-1231
 Bäckerstr.	1 -13314,-1226 -13287,-1231 -13203,-1246
-Spornstr.	1 -13240,-1425 -13350,-1403
+Spornstr.	1 -13220,-1416 -13350,-1403
 Nuthestr.	1 -11356,-1317 -11463,-1232 -11549,-1169
 Nuthestr. -> Holzmarktstr.: nicht passierbarer Mittelstreifen	3 -11613,-1125 -11875,-925 -11910,-945
-Holzmarktstr. -> Nuthestr.: nicht passierbarer Mittelstreifen	3 -11910,-945 -11875,-925 -12063,-784
+Holzmarktstr. -> Nuthestr.: nicht passierbarer Mittelstreifen	3 -11910,-945 -11875,-925 -12045,-757
 Nuthestr. -> Uferweg: nicht passierbarer Mittelstreifen	3 -11875,-925 -11613,-1125 -11657,-1018
 Uferweg -> Nuthestr.: nicht passierbarer Mittelstreifen	3 -11698,-1104 -11613,-1125 -11875,-925
 Uferweg -> Uferweg: nicht passierbarer Mittelstreifen	3 -11698,-1104 -11613,-1125 -11657,-1018
@@ -381,7 +387,7 @@ Uferweg -> Nuthestr.: nicht passierbarer Mittelstreifen	3 -11657,-1018 -11613,-1
 Nuthestr. -> Uferweg: nicht passierbarer Mittelstreifen	3 -11549,-1169 -11613,-1125 -11698,-1104
 Am Babelsberger Park -> Nuthestr.: nicht passierbarer Mittelstreifen	3 -11460,-1098 -11549,-1169 -11463,-1232
 Nuthestr. -> Am Babelsberger Park: nicht passierbarer Mittelstreifen	3 -11613,-1125 -11549,-1169 -11460,-1098
-Lindenstr. -> Breite Str. (B1): nicht passierbarer Mittelstreifen	3 -13366,-1499 -13375,-1546 -13270,-1564
+Lindenstr. -> Breite Str. (B1): nicht passierbarer Mittelstreifen	3 -13366,-1499 -13375,-1546 -13238,-1569
 Breite Str. (B1) -> Lindenstr.: nicht passierbarer Mittelstreifen	3 -13516,-1517 -13375,-1546 -13366,-1499
 Feuerbachstr.	1 -14140,-1390 -13879,-1445
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11142,-1675
@@ -390,6 +396,10 @@ Zimmerstr.	1 -13646,-1168 -13883,-1227
 Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
 Puschkinallee	1 -13052,775 -12922,762 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
+Yorckstr. -> Friedrich-Ebert-Str. (B1): Straßenbahntrasse, nur für Fußgänger passierbar	3 -12976,-1356 -12833,-1365 -12839,-1342
+Yorckstr. -> Am Kanal: Straßenbahntrasse, nur für Fußgänger passierbar	3 -12976,-1356 -12833,-1365 -12718,-1327
+Friedrich-Ebert-Str. (B1) -> Am Kanal: Straßenbahntrasse, nur für Fußgänger passierbar	3 -12839,-1342 -12833,-1365 -12718,-1327
+tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13733,-722 -13772,-623
 Dallgower Str.	1 -10799,15946 -10853,16230
 Altlandsberger Chaussee	1 40487,16703 40712,16743
 Bernau, Bahnhofstr.	1 22864,30560 22907,30433
@@ -805,7 +815,7 @@ Am Rixdorfer Teich -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3 10957,
 Columbiadamm -> Am Rixdorfer Teich: unbequem zu überqueren (Bordsteine)	3 10796,8498 10911,8457 10957,8573
 Birkbuschstr.: unbequem zu passieren	3 4839,5167 4807,5131 4789,5079
 Birkbuschstr.: unbequem zu passieren	3 4789,5079 4807,5131 4839,5167
-Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	3 4839,5167 4807,5131 4846,5069 4879,5017
+Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	3 4839,5167 4807,5131 4846,5069
 Oberlinstr. -> Birkbuschstr.: Metallgitter auf dem Mittelstreifen	3 4732,4939 4846,5069 4807,5131
 Birkbuschstr. -> Oberlinstr.: Metallgitter auf dem Mittelstreifen	3 4879,5017 4846,5069 4732,4939
 Oberlinstr. -> Wolfensteindamm: Linksabbiegen in den Wolfensteindamm gefährlich / unbequem	3 4732,4939 4692,4997 4675,4983
@@ -827,6 +837,7 @@ Klingelhöferstr.: Mittelstreifen	3 7160,11225 6853,11336 6880,11110
 Klingelhöferstr.: Mittelstreifen	3 6880,11110 6853,11336 6683,11367
 Raoul-Wallenberg-Str. -> Schönagelstr.: Straßenbahntrasse	3 21158,15885 21220,15741 21602,15908
 Schönagelstr. -> Raoul-Wallenberg-Str.: Straßenbahntrasse	3 21602,15908 21220,15741 21235,15641
+tragen (Treppe)	0:30:-267 1471,-311
 tragen (Treppe)	0:30:-90 3281,15792
 tragen (Treppe)	0:30:-235 3361,15784
 tragen (ca. 40 Stufen)	0:30:56 1761,3208
@@ -1253,7 +1264,7 @@ Kleine Kurstr.	2:inwork 10182,11758 10249,11821
 (Verlängerte Französische Str.): Tor kann verschlossen sein	2 8892,12006 9076,12054
 Hollmannstr.	2 9979,10639 9757,10708
 Nordsternstr.	1s 6268,8884 6281,8914
-tragen	0:60:-138 -9377,-625
+tragen	0:60:-40 -9377,-625
 tragen (ca. 60 Stufen)	0:120:-213 -8120,-1500
 tragen	0:60:-147 -8467,-1417
 Hausotterpl.	1 8320,18185 8345,18182 8361,18160 8355,18142 8334,18127 8310,18127 8296,18145 8299,18172 8320,18185

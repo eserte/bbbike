@@ -421,22 +421,28 @@ Marschnerstr.	1 4629,3916 4634,4053
 #
 # Potsdam
 #
+Weinbergstr.	1 -13519,-625 -13733,-722 -13815,-749
+Weinbergstr.	1 -13519,-625 -13257,-512
+Am Kanal	1 -12839,-1342 -12718,-1327
+Am Kanal	1 -12718,-1327 -12833,-1365
+Yorckstr.	1 -12833,-1365 -12976,-1356 -13001,-1349 -13208,-1315
+Yorckstr.	1 -13206,-1294 -13001,-1329 -12974,-1336 -12839,-1342
 Joliot-Curie-Str.	1 -12549,-1277 -12542,-1305 -12526,-1356 -12500,-1437
 Am Kanal, Nebenstraße	1 -12542,-1305 -12657,-1338
-Mauerstr.	1 -13425,-852 -13500,-640
-Wilhelm-Staab-Str.	1 -13003,-1343 -12992,-1222 -12984,-1110
+Mauerstr.	1 -13425,-852 -13519,-625
+Wilhelm-Staab-Str.	1 -13001,-1329 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12693,-827 -12712,-734 -12730,-627
 Hans-Thoma-Str.	1 -12219,-726 -12262,-612 -12306,-496
-Behlertstr.	1 -12265,-418 -12194,-490 -12063,-784
+Behlertstr.	1 -12265,-418 -12194,-490 -12045,-757
 Potsdamer Damm	2 -5736,-3629 -6439,-3969
 Nuthestr.	2 -6439,-3969 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -9063,-3934 -11144,-2193 -11142,-1675 -11226,-1445 -11356,-1317
 Kleine Gasse	1 -13272,-1168 -13287,-1231
 Bäckerstr.	1 -13314,-1226 -13287,-1231 -13203,-1246
-Spornstr.	1 -13240,-1425 -13350,-1403
+Spornstr.	1 -13220,-1416 -13350,-1403
 #: XXX ja?
 Nuthestr.	1 -11356,-1317 -11463,-1232 -11549,-1169
-Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12063,-784 -11875,-925 -11613,-1125 -11549,-1169 -11463,-1232 -11356,-1317
-Breite Str.: nicht passierbarer Mittelstreifen	3nocross -13270,-1564 -13375,-1546 -13516,-1517
+Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12045,-757 -11875,-925 -11613,-1125 -11549,-1169 -11463,-1232 -11356,-1317
+Breite Str.: nicht passierbarer Mittelstreifen	3nocross -13238,-1569 -13375,-1546 -13516,-1517
 Feuerbachstr.	1 -14140,-1390 -13879,-1445
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11142,-1675
 Geschwister-Scholl-Str.	1 -14344,-1748 -14215,-1687 -14151,-1656 -14115,-1678
@@ -444,6 +450,8 @@ Zimmerstr.	1 -13646,-1168 -13883,-1227
 Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
 Puschkinallee	1 -13052,775 -12922,762 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
+Friedrich-Ebert-Str.: Straßenbahntrasse, nur für Fußgänger passierbar	3nocross -12719,-1661 -12762,-1545 -12833,-1365 -12839,-1342
+tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13733,-722 -13772,-623
 # 
 # elsewhere in Brandenburg
 Dallgower Str.	1 -10799,15946 -10853,16230
@@ -648,7 +656,7 @@ Columbiadamm: unbequem zu überqueren (Bordsteine)	3nocross 10796,8498 10911,8457
 #: by: Wolfgang Schmidt: vvv
 Birkbuschstr.: unbequem zu passieren	3 4839,5167 4807,5131 4789,5079
 Birkbuschstr.: unbequem zu passieren	3 4789,5079 4807,5131 4839,5167
-Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	3 4839,5167 4807,5131 4846,5069 4879,5017
+Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	3 4839,5167 4807,5131 4846,5069
 #: by: ^^^
 #: by: Kai Brueggemann [AM] vvv
 Birkbuschstr.: Metallgitter auf dem Mittelstreifen	3nocross 4807,5131 4846,5069 4879,5017
@@ -669,6 +677,7 @@ Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21158,15885 21220,15741 21235,
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 #
+tragen (Treppe)	0:30 1471,-311
 #: by: rjoop vvv
 tragen (Treppe)	0:30 3281,15792
 tragen (Treppe)	0:30 3361,15784

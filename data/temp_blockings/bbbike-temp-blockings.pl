@@ -3107,7 +3107,7 @@ userdel	2 -12306,-496 -12262,-612
 userdel	2 -12531,-790 -12575,-1031
 userdel	2 -12531,-790 -12219,-726
 userdel	2 -12531,-790 -12693,-827
-userdel	2 -12063,-784 -12148,-934
+userdel	2 -12045,-757 -12148,-934
 userdel	2 -12148,-934 -12231,-1078
 userdel	2 -12148,-934 -12100,-962
 userdel	2 -11910,-945 -12100,-962
@@ -3125,7 +3125,7 @@ userdel	2 -12078,-1068 -12231,-1078
 userdel	2 -12078,-1068 -12100,-962
 userdel	2 -12768,-1069 -12784,-956
 userdel	2 -12571,-581 -12545,-698
-userdel	2 -12219,-726 -12148,-784
+userdel	2 -12219,-726
 userdel	2 -12784,-956 -12804,-854
 userdel	2 -12545,-698 -12712,-734
 userdel	2 -12693,-827 -12804,-854
@@ -7343,7 +7343,7 @@ EOF
      },
      { from  => 1174068849, # 2007-03-16 19:14
        until => 1222812000, # 2008-10-01 00:00
-       text  => 'Reichstagufer (Mitte) in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis 30.09.2008)',
+       text  => 'Reichstagufer (Mitte) in beiden Richtungen Baustelle, Straße vollständig gesperrt, Fußgänger können passieren (bis 30.09.2008)',
        type  => 'handicap',
        source_id => 'IM_004994',
        data  => <<EOF,

@@ -450,7 +450,7 @@ push @temp_blocking,
        {
          'source_id' => 'IM_004994',
          'until' => 1222812000,
-         'text' => 'Reichstagufer (Mitte) in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis 30.09.2008)',
+         'text' => 'Reichstagufer (Mitte) in beiden Richtungen Baustelle, Straße vollständig gesperrt, Fußgänger können passieren (bis 30.09.2008)',
          'from' => 1174068849,
          'data' => 'userdel	q4::inwork 9091,12681 9209,12795 9283,12856
 ',
@@ -463,14 +463,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1179525600,
-         'text' => 'B 246 Brücker Str. OL Beelitz, zw. Eckenerstr. u. Karl-Marx-Str. Ausbau Kreisverkehr Vollsperrung 10.04.2007-18.05.2007 ',
-         'from' => 1176069600,
-         'data' => 'userdel	q4::inwork -19124,-19178 -19825,-19350
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -568,14 +561,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1179525600,
-         'text' => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf, zw. Bahnhofstr. und Mahlower Str. grundhafter Straßenausbau Vollsperrung 26.02.2007-18.05.2007 ',
-         'from' => 1172358000,
-         'data' => 'userdel	2::inwork 7981,-7165 7558,-7093
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -641,14 +627,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1179352800,
-         'text' => 'L 220 B167 AS Finowfurt-Joachimsthal zw. Eichhorst und Elsenau Bau Otterdurchlass Vollsperrung 07.05.2007-16.05.2007 ',
-         'from' => 1178402400,
-         'data' => 'userdel	2::inwork 29812,57628 29056,57503
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -777,14 +756,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1179525600,
-         'text' => 'L 234 Landsberger Str. OD Bruchmühle, Höhe Fichtestr. Havarie TW-Netz Vollsperrung 07.05.2007-18.05.2007 ',
-         'from' => 1178402400,
-         'data' => 'userdel	q4::inwork 36087,16319 35807,16563
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1179612000,
          'text' => 'B 112 Bahnhofstr., Frankfurter Str. OD Neuzelle 6. Run & Bike Veranstaltung halbseitig gesperrt; Einbahnstraße 18.05.2007-19.05.2007 ',

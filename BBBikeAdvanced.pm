@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.177 2007/05/06 18:00:33 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.177 2007/05/06 18:00:33 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1512,6 +1512,8 @@ sub advanced_coord_menu {
 	$bpcm->entryconfigure('last', -menu => $csm);
 	foreach my $coldef ([M"Kurvenpunkte rot", '#800000'],
 			    [M"Kurvenpunkte grün", '#008000'],
+			    [M"Kurvenpunkte blau", '#000080'],
+			    [M"Kurvenpunkte schwarz", '#000000'],
 			   ) {
 	    $csm->radiobutton(-label    => $coldef->[0],
 			      -variable => ref $pp_color ? \$pp_color->[0] : \$pp_color,

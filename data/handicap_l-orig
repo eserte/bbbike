@@ -12,10 +12,10 @@ Am Waldessaum: Fuﬂg‰nger, enger Weg	q2 -12825,1284 -12709,1106
 Heiliger See, Ostufer: Schiebestrecke	q3 -11650,590 -11603,721 -11615,853
 Uferpromenade Caputh: Fuﬂg‰nger	q3 -17643,-7028 -17703,-7228 -18009,-7528
 Uferweg am Straussee: viele Fuﬂg‰nger, enger Weg	q2 41668,17984 41612,18287 41675,18462 41953,19137 42031,19131 42181,19212 42409,19193 42578,19587
-Am Schafgraben: enger Parkweg	q2 -14500,-2012 -14571,-1881 -14612,-1809
-Gesundheitsweg: enger Parkweg	q2 -14369,-1898 -14571,-1881
+Am Schafgraben: enger Parkweg	q2 -14500,-2012 -14536,-1943 -14571,-1881 -14612,-1809
+Gesundheitsweg: enger Parkweg	q2 -14351,-1882 -14571,-1881
 Holzmarktstr - Humboldtbr¸cke: steile Rampe	q4 -11910,-945 -11875,-925
-Platz der Einheit (diagonal ¸ber den Platz): Fuﬂg‰nger	q1 -12834,-1362 -12792,-1234 -12755,-1131
+Platz der Einheit (diagonal ¸ber den Platz): Fuﬂg‰nger	q1 -12839,-1342 -12792,-1234 -12755,-1131
 Platz der Einheit (diagonal ¸ber den Platz): Fuﬂg‰nger	q1 -12718,-1327 -12792,-1234 -12870,-1149
 Freundschaftsinsel: Fuﬂg‰nger	q1 -12256,-1456 -12260,-1503 -12253,-1589 -12396,-1681 -12567,-1817
 Prenzlau: enger Radweg f¸r beide Richtungen (ca. 2m)	q1 38700,100937 38939,101112
@@ -29,7 +29,7 @@ M¸tzlitz - Garlitz: Bauarbeiten	q3::inwork -50268,15901 -49478,16227
 #XXX del? B 169; OU Senftenberg; Bau Ortsumfahrung; Vollsperrung; 06.11.2003-30.05.2006	q4::inwork 55158,-95910 54884,-96292 54357,-96691
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: note: http://www.maerkischeallgemeine.de/cms/beitrag/10590495/60709/
-(Mauerweg am Griebnitzsee): besonders am Wochenende viele Fuﬂg‰nger	q3 -9656,-285 -9562,-325 -9412,-518 -9365,-610 -9337,-668 -9239,-739 -9103,-813 -8934,-871 -8846,-993 -8693,-1115 -8646,-1206 -8449,-1389 -8385,-1451 -8250,-1503 -8128,-1490 -8062,-1459 -7837,-1346 -7592,-1402
+(Mauerweg am Griebnitzsee): besonders am Wochenende viele Fuﬂg‰nger	q3 -9656,-285 -9562,-325 -9454,-434 -9365,-610 -9337,-668 -9239,-739 -9103,-813 -8934,-871 -8846,-993 -8693,-1115 -8646,-1206 -8449,-1389 -8385,-1451 -8250,-1503 -8128,-1490 -8062,-1459 -7629,-1157 -7376,-1226
 Eisenbahnbr¸cke - Wildpark West (F2.2): enger Feldweg, Fuﬂg‰nger	q2 -21063,-2021 -21062,-2042 -20700,-2020 -20677,-2058
 (Wallgasse - Stadtpark): Fuﬂg‰nger	q1 39789,101564 39884,101572
 Stadtpark Prenzlau: Fuﬂg‰nger	q1 39900,101931 39873,101780 39884,101572 39928,101357 39867,101104
@@ -44,9 +44,10 @@ Stormstr.: Spielstraﬂe	q3 -15168,-2529 -15235,-2603 -15179,-2662 -15206,-2695 -1
 Stormstr.: Spielstraﬂe	q3 -15206,-2695 -15270,-2639 -15300,-2670 -15331,-2700
 Stormstr.: Spielstraﬂe	q3 -15239,-2728 -15300,-2670
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1720
-(Am Gr¸nen Gitter, Sanssouci): Fuﬂg‰nger haben Vorrang	q1 -13857,-1040 -14153,-1135 -14171,-1011
-(÷konomieweg, Sanssouci): Fuﬂg‰nger haben Vorrang	q1 -14171,-1011 -14482,-1043 -14622,-1138 -14865,-1118 -15025,-1096 -15553,-1139 -15651,-1137 -15820,-1146
+(Am Gr¸nen Gitter, Sanssouci): Fuﬂg‰nger haben Vorrang	q1 -13857,-1040 -14153,-1135 -14171,-1026
+(÷konomieweg, Sanssouci): Fuﬂg‰nger haben Vorrang	q1 -14171,-1026 -14482,-1043 -14622,-1138 -14865,-1118 -15025,-1096 -15553,-1139 -15651,-1137 -15820,-1146
 (Lennestr. - ÷konomieweg, Sanssouci): Fuﬂg‰nger haben Vorrang	q1 -14614,-1342 -14856,-1223 -14865,-1118
 (Affengang, Sanssouci): Schiebestrecke	q3 -14129,-1258 -14131,-1181 -14153,-1135
 (÷konomieweg, Neuer Garten): Fuﬂg‰nger haben Vorrang	q1 -12557,11 -12479,97 -12467,215 -12373,288 -12182,816 -12191,1196
 (Hans-Sachs-Str. - LennÈstr.): Fuﬂg‰nger, eng, Rampe	q2 -14612,-1415 -14596,-1409 -14614,-1342
+(Uferweg): Fuﬂg‰nger	q2 -14069,-2227 -14009,-2234 -13967,-2143 -13962,-2097 -13912,-2007 -13934,-1874 -13977,-1870
