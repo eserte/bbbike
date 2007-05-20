@@ -33,7 +33,8 @@ B96a: Radweg Richtung N, OK	Q0 9228,23643 9146,23843 8984,24078 8891,24330 8686,
 Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15586,27150 15231,26587 14859,26029 14472,25449 14314,25193 14219,25013
 Hobrechtsfelder Chaussee (ab Kurve): schlechtes Kopfsteinpflaster, 13 km/h	Q3 15586,27150 15709,27984 15757,28054
 #: XXX Bauarbeiten ab August 2006 bis Stahlheimer Str., danach asphaltiert (http://www.berlin.de/ba-pankow/presse/archiv/20060717.1325.44287.html)
-Wisbyer Str.: mäßiges Kopfsteinpflaster	Q2 11033,16464 11289,16423 11397,16405 11448,16398 11470,16393 11542,16384 11632,16373 11688,16365 11727,16358
+Wisbyer Str.: mäßiges Kopfsteinpflaster	Q2; 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 11448,16398 11397,16405 11289,16423 11033,16464
+Wisbyer Str.: Asphalt	Q0; 11033,16464 11289,16423 11397,16405 11448,16398 11470,16393 11542,16384 11632,16373 11688,16365 11727,16358
 Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege	Q1 11888,9203 11993,9211 12074,9217 12148,9209
 Weserstr.: asphaltiert, schmale Verbundsteinpflaster-Radwege	Q0 12148,9209 12180,9193 12322,9124
 Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege	Q1 12322,9124 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13029,8632 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
@@ -1709,6 +1710,12 @@ Teltowkanalpromenade: teilweise nur Trampelpfad, Wurzeln	Q3 2079,-12 1924,-188 1
 #: note: ^^^
 (Am Teltowkanal): welliger Asphalt	Q0- 1453,-306 1357,-306 1159,-249 949,-103 822,-74 639,-82 507,-100
 (Am Teltowkanal): sehr guter Asphalt	Q0 507,-100 315,-131 275,-109
+#: note: von der Straßenbahn aus gesehen:
+Schönfließer Str.: Asphalt	Q0 10593,16037 10603,16158
+#: note: von der Straßenbahn aus gesehen:
+Stavanger Str.: Beton	Q0 10620,16497 10632,16644
+#: note: von der Straßenbahn aus gesehen:
+Malmöer Str.: Asphalt	Q0 10197,16528 10225,16436
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -1901,7 +1908,7 @@ Tangermünder Str.: mäßiger Asphalt	Q1 23866,15638 24113,15658 24148,15637 24226,
 Nikolaus-Groß-Weg: guter Asphalt	Q0 2087,14078 2028,13801
 Bansiner Str.: guter Asphalt	Q0 22803,12545 22780,12567 22720,12635 22712,12740 22684,12765 22592,12771 22585,12871 22615,12906 22671,12904 22785,12840 22807,12782 22906,12766
 Bruno-Taut-Ring: mäßiger Asphalt	Q1 13833,3665 13682,3718 13628,3781 13626,3867 13673,3915 13726,3928 13897,3848
-Pfeilstr.: mäßiges Kopfsteinpflaster	Q2 9915,18487 9586,18670
+Pfeilstr.: mäßiges Kopfsteinpflaster	Q2 9897,18496 9586,18670
 Lauterbachstr.: guter Asphalt	Q0 11270,17938 11297,17795
 Ilsestr. (Karlshorst): guter Asphalt	Q0 18353,9570 18159,9616 18121,9488 18069,9289 18037,9195 18021,9127
 Hannaweg: Beton	Q0 20923,13960 20938,14066
@@ -2164,7 +2171,7 @@ Brentanostr.: schlechtes Kopfsteinpflaster	Q3 4096,6632 4058,6602 4054,6565 4050
 #: by: Thomas Schulz:
 Am Schonungsberg: Asphalt	Q0 30518,3753 30655,4186 30696,4314
 #: by: Gunnar Heuschkel:
-Körnerstr.: schlechtes Kopfsteinpflaster	Q3 10653,20200 10547,20644 10521,20750
+Körnerstr.: schlechtes Kopfsteinpflaster	Q3 10653,20200 10537,20633 10521,20750
 #: by: Michael Bartnik:
 Koserstr.: Kopfsteinpflaster	Q2 3403,6331 3309,6270 3209,6206 3118,6140 3112,6090 2950,6141
 #: by: Ingmar Camphausen: vvv
@@ -2226,7 +2233,7 @@ Mühlenbecker Weg: Beton	Q0 20150,15678 20334,16043
 Mendelstr.: Asphalt	Q0 11357,18598 11268,18851 11233,18981 11164,19238
 #: by: Christoph Kögel: vvv
 Boris-Pasternak-Weg: guter Asphalt	Q0 9976,19059 10055,18831
-Majakowskiring: schlechtes Kopfsteinpflaster	Q3 9987,18757 9951,18744
+Majakowskiring: schlechtes Kopfsteinpflaster	Q3 9987,18757 9937,18741
 Majakowskiring: asphaltiert mit den üblichen Schlaglöchern	Q1 10373,18889 10307,18915 10184,18875 10055,18831 9987,18757 10037,18715 10203,18762 10354,18814 10373,18889
 Majakowskiring: asphaltiert mit den üblichen Schlaglöchern	Q1 10440,18910 10373,18889
 Güllweg: mäßiges Kopfsteinpflaster	Q2 10128,19110 10068,19276 10059,19304 10018,19429
@@ -2779,7 +2786,8 @@ Alter Bernauer Heerweg: wassergebundene Decke	Q1 8203,23321 8584,23421
 Alte Fasanerie:: Sandweg, Spurrillen, mäßig bis gut	Q1 7416,22349 8015,22512
 Freizeitpark Lübars: befestigter Sandweg mittlerer Güte	Q1 8015,22512 8062,22631 7782,23172
 #: note: die ADFC-Karte sagt hier "mäßig geeignet":
-Schillerstr.: Betonplatten	Q2 10082,20518 10323,20578 10547,20644 10635,20693 10743,20764
+#: corrected_by: srt (Q2 -> Q1)
+Schillerstr.: Betonplatten	Q1 10063,20493 10326,20566 10537,20633 10635,20693 10743,20764
 #: note: die ADFC-Karte sagt hier "mäßig geeignet":
 Beuthstr.: Asphalt mit Löchern	Q1 10843,20301 10786,20272 10653,20200 10452,20109 10309,20032 10137,19993
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2 14934,15860 14802,15857 14720,15905 14619,15920
@@ -3628,8 +3636,13 @@ Sondershauser Str.: teilweise Asphalt	Q0 6441,1444 6491,1658
 Ahrenshooper Str.: Beton	Q0 16764,18529 17082,18068
 Ahrenshooper Str.: Beton	Q0 16905,17949 17082,18068 17215,18153
 #: by: ^^^
-#: by: Tobias Kant:
-Wollankstr.: Kopfsteinpflaster	Q2 9624,17693 9663,17734 9727,17804 9832,17925 9870,17971 10004,18133 10089,18180
+#: by: Tobias Kant: vvv
+#: corrected_by: srt (teilweise gibt es Asphalt-Abschnitte, siehe Luftbilder)
+Wollankstr.: Kopfsteinpflaster	Q2 9624,17693 9663,17734 9727,17804 9832,17925
+Wollankstr.: Kopfsteinpflaster	Q2; 9832,17925 9870,17971 9978,18104
+Wollankstr.: Asphalt	Q0; 9978,18104 9870,17971 9832,17925
+Wollankstr.: Asphalt	Q0 9978,18104 10027,18165 10089,18180
+#: by: ^^^
 #: by: Kleinke (honda):
 Havelstr.: Asphalt	Q0 -3132,14607 -3122,14557 -3037,14509
 #: by: Karl Schlicke:
@@ -5933,7 +5946,7 @@ Elsflether Weg: Asphalt	Q0 -4011,13407 -4023,13493 -3989,13785 -3904,13944 -3884
 Nordendstr.: moderat fester Sandweg mit vielen Löchern	Q2 9149,20336 8409,19956 8415,19910
 #: by:
 #: by: Jacqueline Naber-Siemon, Peter Scherbarth [AM]
-Nordendstr.: Asphalt	Q0 10026,20576 9867,20525 9718,20498 9149,20336
+Nordendstr.: Asphalt	Q0 10007,20571 9867,20525 9718,20498 9149,20336
 #: by: Melanie Henke [AM] vvv
 Bültenring: Asphalt	Q0 21433,10367 21473,10369 21542,10398 21549,10404 21539,10435
 Bültenring: Asphalt	Q0 21473,10369 21546,10352

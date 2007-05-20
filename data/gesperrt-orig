@@ -418,6 +418,7 @@ Karl-Egon-Str.	1 18372,8869 18406,9052 18430,9199 18457,9343
 (Landsberger Allee - Georg-Knorr-Str.)	1 19183,15019 19314,15059 19364,15045
 #: by: Bosshold, Martin:
 Marschnerstr.	1 4629,3916 4634,4053
+Wollankstr.	1 10027,18165 10054,18210
 #
 # Potsdam
 #
@@ -472,6 +473,7 @@ Fürstenberg	1 -8777,85887 -8680,85652
 Fürstenberg	1 -8680,85652 -8787,85688
 Fürstenberg	1 -8893,85743 -9024,85862
 Fürstenberg	1 -9024,85862 -8775,85947
+Markt (Neustrelitz)	1 -14823,106096 -14782,106096 -14747,106096 -14745,106058 -14745,106011 -14780,106011 -14821,106013 -14824,106060 -14823,106096
 # elsewhere not in Brandenburg
 B110 nach Swinoujscie: kein Grenzübergang	2 62279,166179 62934,166705
 Einbahnstraßen in Altlandsberg	1 32224,18110 32181,18009 32100,18012 32115,18106 32224,18110
@@ -538,6 +540,7 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,125
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
+Schönholzer Str.: Straßenbahn auf der Fahrbahn	3nocross 10089,18180 10054,18210 9909,18333
 #: by: stefan: (sw-...)
 Müggelheimer Str.: Straßenbahntrasse	3nocross 22686,4310 22812,4236 22967,4144
 #: note: Luftbild: vvv

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.93 2007/03/31 12:03:35 eserte Exp $
+# $Id: Makefile,v 1.97 2007/05/20 20:31:21 eserte Exp $
 #
 
 # Targets:
@@ -33,7 +33,7 @@ LOCAL_HTML_URL?=	${LOCAL_URL}/BBBike
 DATA_DIR=		data
 TEMP_BLOCKINGS_DIR=	data/temp_blockings
 BBBIKE_RADZEIT_SSH_HOST?=	${BBBIKE_RADZEIT_HOST}
-STERNFAHRT_YEAR?=	2006
+STERNFAHRT_YEAR?=	2007
 
 EXTRA_MISCSRC_FILES=	bbd2esri winter_optimization.pl
 EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html \
@@ -138,6 +138,7 @@ TARGET=radzeit.herceg.de
 .ifndef TARGET
 .if   make(deploy)                   || \
       make(deploy-data)		     || \
+      make(deploy-temp-blockings)    || \
       make(tkrsync)		     || \
       make(check)		     || \
       make(backup) 		     || \
@@ -316,6 +317,11 @@ deploy-data:		${DEPLOY_DATA_TARGETS}
 
 .ORDER:			${DEPLOY_LOCAL_DATA_TARGETS}
 deploy-local-data:	${DEPLOY_LOCAL_DATA_TARGETS}
+
+deploy-temp-blockings:	check-temp-blockings-integrity-pre \
+			prepare-bbbike-dist-data-temp-blockings-dir \
+			check-temp-blockings-integrity \
+			rsync-temp-blockings
 
 test-makefile:
 	${MAKE} -n deploy-local > /tmp/test-makefile.cmd
@@ -682,6 +688,13 @@ fast-rsync-googlemaps:
 diff-temp-blockings:
 	${SSH_PROG_AND_ARGS} -C ${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_SSH_HOST} \
 	    cat ${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/data/temp_blockings/bbbike-temp-blockings.pl | diff -u - ${BBBIKE_ROOT_DIR}/${TEMP_BLOCKINGS_DIR}/bbbike-temp-blockings.pl
+
+check-temp-blockings-integrity-pre:
+	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} temp_blockings/bbbike-temp-blockings-optimized.pl
+	$(BBBIKE_ROOT_DIR)/miscsrc/check_bbbike_temp_blockings -datadir $(BBBIKE_ROOT_DIR)/data -action none
+
+check-temp-blockings-integrity:
+	$(BBBIKE_ROOT_DIR)/miscsrc/check_bbbike_temp_blockings -datadir $(CURDIR)/BBBike/data -action none
 
 #######################################################################
 ## Preliminary ixls.de rules, not needed anymore?

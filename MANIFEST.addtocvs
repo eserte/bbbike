@@ -150,6 +150,10 @@ mapserver/brb/sternfahrt2003/sternfahrt2003.map-tpl
 mapserver/brb/sternfahrt2003/sternfahrt2003_init.html-tpl
 mapserver/brb/sternfahrt2004/after_marker.inc
 mapserver/brb/sternfahrt2004/after_strassen_annotations.inc
+mapserver/brb/sternfahrt2007/after_marker.inc
+mapserver/brb/sternfahrt2007/after_strassen_annotations.inc
+mapserver/brb/sternfahrt2007/sternfahrt2007.inc
+mapserver/brb/sternfahrt2007/sternfahrt2007_init.html-tpl
 mapserver/daemon/mapscript_daemon.pl
 misc/ampelschaltung.txt
 misc/ampelschaltung2.txt
@@ -293,6 +297,11 @@ misc/sternfahrt_2004/Makefile
 misc/sternfahrt_2004/sternfahrt2004.bbd
 misc/sternfahrt_2004/treffpunkte2004.bbd
 misc/sternfahrt_2004/treffpunkte.cgi
+misc/sternfahrt_2007/Makefile
+misc/sternfahrt_2007/sternfahrt.t
+misc/sternfahrt_2007/sternfahrt2007.bbd
+misc/sternfahrt_2007/treffpunkte.cgi
+misc/sternfahrt_2007/treffpunkte2007.bbd
 MANIFEST.addtocvs
 MANIFEST.delfromcvs
 MANIFEST.withcvs

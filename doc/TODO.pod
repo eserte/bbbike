@@ -1850,11 +1850,13 @@ Es gibt drei fragezeichen-Dateien am Ende:
  - fragezeichen-private-vorort (für alles, was E<quot>vor OrtE<quot>
    recherchiert werden kann; falls es eine
    nextcheck/lastcheck-Direktive gibt, wird diese beachtet)
- - fragezeichen-private-vorort-checklater (ebenso Sachen, die
-   E<quot>vor OrtE<quot> recherchiert werden können, aber die später
-   überprüft werden sollen)
  - fragezeichen-private-office (für alles, was im Internet oder
    sonstwo recherchiert werden kann)
+ - fragezeichen-checklater (ebenso Sachen, die
+   E<quot>vor OrtE<quot> recherchiert werden können, aber die später
+   überprüft werden sollen --- wegen einer
+   nextcheck/lastcheck-Direktive. Hier können sich öffentliche und
+   private Fragezeichen befinden)
 
 Ungefähre Einordnung der jetzigen Daten:
 

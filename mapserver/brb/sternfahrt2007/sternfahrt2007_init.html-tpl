@@ -1,0 +1,21 @@
+[% PROCESS sternfahrt2007/sternfahrt2007.inc -%]
+[%- SET layer_s = "" -%]
+[%- SET ALL_LAYERS = ALL_LAYERS _ " sternfahrt treffpunkte" -%]
+[%- SET ALL_LAYERS = "bahn gewaesser faehren flaechen grenzen orte sternfahrt treffpunkte" -%]
+[%- FOR layer = ALL_LAYERS.split(" ") -%]
+ [%- IF layer != "route" -%]
+  [%- IF layer_s != "" -%]
+   [%- layer_s = layer_s _ "&" -%]
+  [%- END -%]
+  [%- layer_s = layer_s _ "layer=" _ layer -%]
+ [%- END -%]
+[%- END -%]
+[%- SET redirect_url = MAPSERVER_PROG_URL _ "?program=" _ MAPSERVER_PROG_RELURL _ "&map=" _ MAPSERVER_DIR _ "/sternfahrt" _ YEAR _ ".map&bbbikeurl=" _ BBBIKE_URL_ENC _ "&zoomsize=2&" _ layer_s -%]
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <!-- -*-html-*- -->
+<html>
+<head><title>Sternfahrt [% YEAR %]</title>
+<meta http-equiv="refresh" content="0; URL=[% redirect_url | html_entity %]">
+</head>
+<body bgcolor="#FFFFFF">
+<table summary="" width="100%" height="100%"><tr><td align="center" style="font-family:sans-serif;">Automatische Weiterleitung auf <a href="[% redirect_url | html_entity %]">Mapserver Sternfahrt [% YEAR %]</a> ...</td></tr></table>
+</body></html>

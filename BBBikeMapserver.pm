@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.37 2007/03/27 15:12:37 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.38 2007/05/20 21:07:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2005 Slaven Rezic. All rights reserved.
@@ -438,8 +438,12 @@ sub create_mapfile {
 }
 
 sub get_extents {
-    my($self, $width, $height, $do_center, %args) = @_;
-    my $center_to = $self->{CenterTo};
+    my($self, $width, $height, $center_to, %args) = @_;
+    my $do_center = 0;
+    if (!defined $center_to || $center_to eq "") {
+	$center_to = $self->{CenterTo};
+	$do_center = 1; # we really want to center to the specified point
+    }
     if (!defined $center_to || $center_to eq "") {
 	if (!$self->has_coords) {
 	    # There should be a possibility to specify other

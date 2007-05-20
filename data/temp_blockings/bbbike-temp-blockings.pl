@@ -554,7 +554,7 @@ EOF
        until => 1092439940,
        data => <<EOF,
 userdel	2 9475,18617 9301,18722
-userdel	2 9590,18548 9896,18343
+userdel	2 9590,18548 9881,18354
 EOF
        text  => 'Heinrich-Mann-Straße Berlin-Reinickendorf Richtung Berlin-Pankow Zwischen Heinrich-Mann-Straße und Grabbeallee Störungen durch geplatzte Wasserleitung, Straße gesperrt',
        type  => 'gesperrt',
@@ -612,7 +612,7 @@ EOF
        text  => 'B96A Berlin-Pankow, Schönholzer Straße - Mühlenstraße, Oranienburg Richtung Berlin-Mitte, Zwischen Kreuzung Grabbeallee und Kreuzung Breite Straße Baustelle, großer Zeitverlust, lange Staus bis 31.08.2004 , eine Umleitung ist eingerichtet (Sperrung nur zwischen Wollankstraße und Kreuzstraße)',
        type  => 'handicap',
       data  => <<EOF,
-userdel	q4 9909,18333 10089,18180
+userdel	q4 9909,18333 10054,18210 10089,18180
 EOF
      },
      { from  => 1093125600, # 2004-08-22 00:00
@@ -8159,6 +8159,15 @@ EOF
        source_id => 'IM_005513',
        data  => <<EOF,
 userdel	1::inwork 6334,14756 5991,14832 5753,15096
+EOF
+     },
+     { from  => 1179648093, # 2007-05-20 10:01
+       until => 1180735199, # 2007-06-01 23:59
+       text  => 'Flottwellstr. (Tiergarten) Richtung Potsdamer Str. Baustelle, Fahrtrichtung gesperrt (bis Anfang 06.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_005532',
+       data  => <<EOF,
+userdel	1::inwork 8336,10829 8300,10823 8281,10791 8199,10634
 EOF
      },
     );

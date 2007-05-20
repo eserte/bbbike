@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.18 2006/10/13 20:31:48 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.19 2007/05/20 21:52:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -27,24 +27,24 @@ sub teaser {
 				#'dobli',
 			       ];
     $teasers_mandatory{"de"} = [
-				$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
 				#teaser_perltk_newrelease(),
 				teaser_perltk(),
 				teaser_beta(),
 				teaser_mapserver(),
 				#teaser_routen(),
-				#teaser_sternfahrt(),
+				teaser_sternfahrt(),
 				#teaser_dobli(),
+				$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
 			       ];
     $teasers_optional{"en"} = [],
     $teasers_mandatory{"en"} = [
-				$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
 				#teaser_perltk_newrelease(),
 				teaser_perltk(),
 				teaser_mapserver(),
 				#teaser_routen(),
-				#teaser_sternfahrt(),
+				teaser_sternfahrt(),
 				#teaser_dobli(),
+				$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
 			       ];
 
     my $use_lang = $lang eq 'en' ? "en" : "de";

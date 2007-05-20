@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: check_bbbike_temp_blockings,v 1.27 2007/05/06 16:00:51 eserte Exp $
+# $Id: check_bbbike_temp_blockings,v 1.28 2007/05/20 15:26:34 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003, 2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003, 2004, 2007 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -31,6 +31,7 @@ use vars qw($temp_blockings_dir $temp_blockings_pl $temp_blockings_yml);
 my $do_output_files;
 my $check_net = 1;
 my $v;
+my $data_dir;
 my $do_yaml = 0;
 my $do_checks = 1;
 my @action;
@@ -65,12 +66,16 @@ sub process {
 		    "useyaml!" => \$do_yaml,
 		    'action=s@' => \@action,
 		    "checks!" => \$do_checks,
+		    "datadir=s" => \$data_dir,
 		   )) {
 	die "usage";
     }
+
     if (!@action) {
 	@action = "output_future";
     }
+    @action = grep { $_ ne 'none' } @action;
+
     if (defined $v && $v >= 2) {
 	Strassen::set_verbose($v - 1);
     }
@@ -172,24 +177,25 @@ sub run_checks {
 		}
 	    }
 
+	    my $datadirprefix = $data_dir ? "$data_dir/" : "";
 	    my @opt = $v ? ('-v') : ();
 	    warn "  Check neighbors...\n" if $v;
 	    require "$FindBin::RealBin/check_neighbour";
 	    if (!eval {
 		BBBike::check_neighbour::doit
 			("-type", "standard", "-data", $full_path,
-			 "-against", "strassen",
-			 "-against", "faehren",
+			 "-against", $datadirprefix."strassen",
+			 "-against", $datadirprefix."faehren",
 			 "-keepnet", "-q", @opt);
 		1;
 	    } && !eval {
 		warn "  Check neighbors (wide region)...\n" if $v;
 		BBBike::check_neighbour::doit
 			("-type", "standard", "-data", $full_path,
-			 "-against", "strassen",
-			 "-against", "faehren",
-			 "-against", "landstrassen",
-			 "-against", "landstrassen2",
+			 "-against", $datadirprefix."strassen",
+			 "-against", $datadirprefix."faehren",
+			 "-against", $datadirprefix."landstrassen",
+			 "-against", $datadirprefix."landstrassen2",
 			 "-keepnet", @opt);
 		1;
 	    }) {
@@ -334,3 +340,11 @@ for my $action (@action) {
 }
 
 __END__
+
+=head1 DESCRIPTION
+
+Allowed actions:
+
+ - output_future (default, if nothing is given)
+ - none: do nothing
+ - ... more?

@@ -736,14 +736,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1179612000,
-         'text' => 'K 6908 Ferch-B 1 Geltow zw. B 1 und Fercher Str. in Petzow G 8 - Gipfel Vollsperrung 17.05.2007-19.05.2007 ',
-         'from' => 1179266400,
-         'data' => 'userdel	2::temp -20281,-6915 -19858,-6458
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -757,20 +750,22 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1179612000,
-         'text' => 'B 112 Bahnhofstr., Frankfurter Str. OD Neuzelle 6. Run & Bike Veranstaltung halbseitig gesperrt; Einbahnstraße 18.05.2007-19.05.2007 ',
-         'from' => 1179352800,
-         'data' => 'userdel	q4::temp 96017,-33547 96014,-33803
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_005513',
          'until' => 1179957600,
          'text' => 'Sylter Str. (Wedding) in Richtung Seestr. Fahrtrichtung gesperrt (bis 23.05.07)',
          'from' => 1179341723,
          'data' => 'userdel	1::inwork 6334,14756 5991,14832 5753,15096
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005532',
+         'until' => 1180735199,
+         'text' => 'Flottwellstr. (Tiergarten) Richtung Potsdamer Str. Baustelle, Fahrtrichtung gesperrt (bis Anfang 06.2007)',
+         'from' => 1179648093,
+         'data' => 'userdel	1::inwork 8336,10829 8300,10823 8281,10791 8199,10634
 ',
          'type' => 'gesperrt'
        }
