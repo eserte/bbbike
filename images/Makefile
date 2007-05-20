@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.37 2007/05/05 22:21:33 eserte Exp $
+# $Id: Makefile,v 1.38 2007/05/20 22:48:10 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -7,6 +7,8 @@
 # Note: with netpbm 10.31 (the version of the netpbm-devel FreeBSD port as
 # of April 2007) dumps core with ppmtowinicon. super-stable netpbm 10.26.42
 # seems to work.
+
+# Maybe use "icotool -c" for windows ico creation instead?
 
 all:	favicon.ico srtbike.ico \
 	png-to-xpm \
