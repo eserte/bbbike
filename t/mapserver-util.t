@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver-util.t,v 1.5 2006/10/10 22:40:39 eserte Exp $
+# $Id: mapserver-util.t,v 1.6 2007/05/21 22:00:38 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -81,63 +81,69 @@ sub is_on_mapserver_page {
     ok($agent->success, "$url is ok");
 
     # Street
-    $agent->form(1) if $agent->forms and scalar @{$agent->forms};
-    { local $^W; $agent->current_form->value('street', 'Dudenstr'); };
-    $agent->submit();
+    $agent->submit_form(form_number => 1,
+			fields => {
+				   'street' => 'Dudenstr',
+				  },
+		       );
     is_on_mapserver_page($agent, "street Dudenstr");
 
     # City
     $agent->back();
-    $agent->form(2);
-    { local $^W; $agent->current_form->value('city', 'rollberg'); };
-    $agent->submit();
+    $agent->submit_form(form_number => 2,
+			fields => {'city', 'rollberg'},
+		       );
     is_on_mapserver_page($agent, "city");
 
     # Lat/long
     $agent->back();
-    $agent->form(4);
-    { local $^W; $agent->current_form->value('lat', '52.5'); };
-    { local $^W; $agent->current_form->value('long', '13.5'); };
-    $agent->submit();
+    $agent->submit_form(form_number => 4,
+			fields => {'lat', '52.5',
+				   'long', '13.5',
+				  },
+		       );
     is_on_mapserver_page($agent, "lat/long DDD");
 
     $agent->back();
-    { local $^W; $agent->current_form->value('latD', '52'); };
-    { local $^W; $agent->current_form->value('latM', '30'); };
-    { local $^W; $agent->current_form->value('longD', '13'); };
-    { local $^W; $agent->current_form->value('longM', '30'); };
-    $agent->submit();
+    $agent->submit_form(form_number => 4,
+			fields => {'latD', '52',
+				   'latM', '30',
+				   'longD', '13',
+				   'longM', '30',
+				  },
+		       );
     is_on_mapserver_page($agent, "lat/long DMS");
 
     $agent->back();
-    $agent->form(3);
-    { local $^W; $agent->current_form->value('searchterm', 'funkturm'); };
-    $agent->submit();
+    $agent->submit_form(form_number => 3,
+			fields => {'searchterm', 'funkturm'},
+		       );
     like($agent->uri, qr{/mapserver_address.cgi}, "Multiple matches, same address");
     like($agent->content, qr{Mehrere Treffer}, 'Expected "multiple ..." content');
 
-    $agent->form(1);
-    { local $^W; $agent->current_form->value('coords', 'Funkturm (Plätze)'); };
-    $agent->submit();
+    $agent->submit_form(form_number => 1,
+			fields => {'coords', 'Funkturm (Plätze)'},
+		       );
     is_on_mapserver_page($agent, "fulltext term");
 
     $agent->back();
-    $agent->form(2);
-    { local $^W; $agent->current_form->value('street', 'heerstr'); };
-    $agent->submit();
+    $agent->submit_form(form_number => 2,
+			fields => {'street', 'heerstr'},
+		       );
     like($agent->uri, qr{/mapserver_address.cgi}, "Multiple street matches, same address");
     like($agent->content, qr{Mehrere.*Stra.*en}, 'Expected "multiple ..." content');
 
-    $agent->form(1);
-    { local $^W; $agent->current_form->value('coords', 'Heerstr. (Spandau, 13591)'); };
-    $agent->submit();
+    $agent->submit_form(form_number => 1,
+			fields => {'coords', 'Heerstr. (Spandau, 13591)'},
+		       );
     is_on_mapserver_page($agent, "after multiple streets");
 
     $agent->back();
-    $agent->form(2);
-    { local $^W; $agent->current_form->value('street', 'heerstr'); };
-    { local $^W; $agent->current_form->value('citypart', 'spandau'); };
-    $agent->submit();
+    $agent->submit_form(form_number => 2,
+			fields => {'street', 'heerstr',
+				   'citypart', 'spandau',
+				  },
+		       );
     is_on_mapserver_page($agent, "street with citypart output");
 }
 
