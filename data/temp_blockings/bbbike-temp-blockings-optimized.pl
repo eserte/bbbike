@@ -376,14 +376,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1180821600,
-         'text' => 'L 037 Petersdorfer Str. OD Petershagen Kanal- und Straßenbauarbeiten Vollsperrung 16.04.2007-02.06.2007 ',
-         'from' => 1176588000,
-         'data' => 'userdel	2::inwork 74092,475 74246,584
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -703,14 +696,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1179698400,
-         'text' => 'L 040 Zossener Damm OD Blankenfelde Ausbau Landesstr. Vollsperrung 07.05.2007-20.05.2007 ',
-         'from' => 1178402400,
-         'data' => 'userdel	2::inwork 10115,-8276 11019,-8435
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1180994400,
          'text' => 'B 273 Wensickendorf-Oranienburg Schleusenbrücke Lehnitz am OA Oranienburg Instandsetzungsarbeiten Vollsperrung 02.06.2007-04.06.2007 ',
@@ -720,22 +706,8 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1179784800,
-         'text' => 'B 273 Wensickendorf-Oranienburg Schleusenbrücke Lehnitz am OA Oranienburg Instandsetzungsarbeiten Vollsperrung 19.05.2007-21.05.2007 ',
-         'from' => 1179439200,
-         'data' => 'userdel	2::inwork 1281,39850 1455,39824
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1179698400,
-         'text' => 'B 183 Dresdener Str. OL Bad Liebenwerda, zw. Querspange u. Roßmarkt Kleines Stadtfest Vollsperrung 19.05.2007-20.05.2007 ',
-         'from' => 1179439200,
-         'data' => 'userdel	2::temp 12194,-98944 12593,-99029
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -766,6 +738,14 @@ push @temp_blocking,
          'text' => 'Flottwellstr. (Tiergarten) Richtung Potsdamer Str. Baustelle, Fahrtrichtung gesperrt (bis Anfang 06.2007)',
          'from' => 1179648093,
          'data' => 'userdel	1::inwork 8336,10829 8300,10823 8281,10791 8199,10634
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1180735200,
+         'text' => 'L 037 Müllrose-Petersdorf Bahnübergang in der OL Jacobsdorf Gleisbauarbeiten Vollsperrung 31.05.2007-01.06.2007 ',
+         'from' => 1180476000,
+         'data' => 'userdel	2::inwork 75402,-6910 75394,-6991 75272,-7514
 ',
          'type' => 'gesperrt'
        }

@@ -7227,7 +7227,7 @@ userdel	1::inwork 5339,-84725 4072,-82982
 EOF
      },
      { from  => 1176588000, # 2007-04-15 00:00
-       until => 1180821600, # 2007-06-03 00:00
+       until => 1179790690, # 2007-06-03 00:00 1180821600
        text  => 'L 037 Petersdorfer Str. OD Petershagen Kanal- und Straßenbauarbeiten Vollsperrung 16.04.2007-02.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -8168,6 +8168,14 @@ EOF
        source_id => 'IM_005532',
        data  => <<EOF,
 userdel	1::inwork 8336,10829 8300,10823 8281,10791 8199,10634
+EOF
+     },
+     { from  => 1180476000, # 2007-05-30 00:00
+       until => 1180735200, # 2007-06-02 00:00
+       text  => 'L 037 Müllrose-Petersdorf Bahnübergang in der OL Jacobsdorf Gleisbauarbeiten Vollsperrung 31.05.2007-01.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 75402,-6910 75394,-6991 75272,-7514
 EOF
      },
     );
