@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.42 2007/05/16 23:32:06 eserte Exp $
+# $Id: BBBikeRouting.pm,v 1.42 2007/05/16 23:32:06 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -688,7 +688,9 @@ sub search {
     }
 
     if ($continued && $self->Path) {
+	my $path_index_start = 0;
 	if (defined $res) {
+	    $path_index_start = @{ $self->Path };
 	    $self->Path([@{ $self->Path },
 			 @{ $res }]);
 	}
@@ -698,7 +700,9 @@ sub search {
 	    $whole = $self->RouteInfo->[-1]->{Whole} + 0;
 	}
 	my @new_route_info = $self->Net->route_info(Route => $res,
-						    Km    => $context->RouteInfoKm);
+						    Km    => $context->RouteInfoKm,
+						    PathIndexStart => $path_index_start,
+						   );
 	for (@new_route_info) {
 	    my($num,$unit) = split /\s+/, $_->{Whole};
 	    $_->{Whole} = ($num+$whole) . " $unit";

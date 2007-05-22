@@ -8187,4 +8187,38 @@ EOF
 userdel	1::temp 8515,12242 8214,12205 8089,12186
 EOF
      },
+     { from  => 1179862554, # 2007-05-22 21:35
+       until => 1180648799, # 2007-05-31 23:59
+       text  => 'Waßmannsdorfer Chaussee (Rudow) in beiden Richtungen, zwischen Geflügelsteig und Rhodeländerweg geplatzte Wasserleitung, Straße vollständig gesperrt (bis Ende 05/2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_005511',
+       data  => <<EOF,
+userdel	2::inwork 16354,-494 16515,31
+EOF
+     },
+     { from  => 1179698400, # 2007-05-21 00:00
+       until => 1188597600, # 2007-09-01 00:00
+       text  => 'L 040 Ragow-Dahlewitz OD Dahlewitz, Kno. Thälmannstr./ Dorfstr. Bau Kreisverkehr Vollsperrung 22.05.2007-31.08.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 13228,-9606 13576,-9738 13878,-9818
+userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
+EOF
+     },
+     { from  => 1152482400, # 2006-07-10 00:00
+       until => 1183240800, # 2007-07-01 00:00
+       text  => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf grundhafter Straßenausbau halbs., Vollsp. 11.07.2006-30.06.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 7981,-7165 7558,-7093
+EOF
+     },
+     { from  => 1180130400, # 2007-05-26 00:00
+       until => 1180303200, # 2007-05-28 00:00
+       text  => 'L 071 Wiepersdorf-Brandis OL Schönewalde, Markt Heimat- u. Schützenfest zeitw. Vollsperrung 27.05.2007-27.05.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp -575,-65978 60,-66035
+EOF
+     },
     );

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.55 2005/11/16 01:49:52 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.55 2005/11/16 01:49:52 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -485,9 +485,11 @@ sub net2name {
 }
 
 sub get_street_record {
-    my($net, $from, $to) = @_;
-    my($pos) = $net->net2name($from, $to);
+    my($net, $from, $to, %args) = @_;
+    my $obeydir = delete $args{-obeydir};
+    my($pos, $reversed) = $net->net2name($from, $to);
     if (defined $pos) {
+	return undef if ($obeydir && $reversed);
 	if (ref $pos eq 'ARRAY') {
 	    map { $net->{Strassen}->get($_) } @$pos;
 	} else {
@@ -1467,6 +1469,11 @@ Return distances in km instead of m.
 
 Set the accuracy for angles in degrees. Default is 10E<deg>.
 
+=item PathIndexStart
+
+Set the start index for the reference to the Path/Route array. By
+default 0.
+
 =back
 
 The output is an array of hash elements with the following keys:
@@ -1525,6 +1532,7 @@ sub route_info {
    my $coords         = $args{Coords};
    my $s_in_km        = $args{Km};
    my $angle_accuracy = $args{AngleAccuracy} || 10;
+   my $path_index_start = $args{PathIndexStart} || 0;
 
    my $s_sub = ($s_in_km ? sub { m2km($_[0]) } : sub { $_[0] });
 
@@ -1601,6 +1609,7 @@ sub route_info {
 	    $_->{Street}      = $str;
 	    $_->{Coords}      =
 		join(",", @{$routeref->[$index_arr->[0]]});
+	    $_->{PathIndex}   = $index_arr->[0] + $path_index_start;
 	}
 
 	push @route_info, $route_info_item;

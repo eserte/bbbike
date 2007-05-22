@@ -3537,7 +3537,6 @@ sub search_coord {
 		$ges_entf_s = sprintf "%.1f km", $ges_entf/1000;
 		$entf_s = sprintf M("nach") . " %.2f km", $entf/1000;
 	    } elsif ($#{ $r->path } > 1) {
-		# XXX main:: ist haesslich
 		my($x1,$y1) = @{ $r->path->[0] };
 		my($x2,$y2) = @{ $r->path->[1] };
 		$raw_direction =
