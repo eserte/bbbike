@@ -391,8 +391,8 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => undef,
-         'text' => 'Manteuffelstr. zwischen Skalitzer Str. und Naunynstr.: Einbahnstraßenregelung ',
+         'until' => 1191189599,
+         'text' => 'Manteuffelstr. zwischen Skalitzer Str. und Naunynstr.: Einbahnstraßenregelung bis Ende 09.2007 ',
          'from' => undef,
          'data' => 'userdel	1::inwork 11949,10414 12000,10531 12056,10655
 ',
@@ -746,6 +746,15 @@ push @temp_blocking,
          'text' => 'L 037 Müllrose-Petersdorf Bahnübergang in der OL Jacobsdorf Gleisbauarbeiten Vollsperrung 31.05.2007-01.06.2007 ',
          'from' => 1180476000,
          'data' => 'userdel	2::inwork 75402,-6910 75394,-6991 75272,-7514
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005561',
+         'until' => 1180476000,
+         'text' => 'Str. des 17. Juni (Tiergarten) Richtung Großer Stern zwischen Brandenburger Tor und Y.-Rabin-Str. Veranstaltung, Fahrtrichtung gesperrt (Aufbau Pokalmeile zum Pokalendspiel) (bis 29.05.2007 morgens)',
+         'from' => 1179815002,
+         'data' => 'userdel	1::temp 8515,12242 8214,12205 8089,12186
 ',
          'type' => 'gesperrt'
        }

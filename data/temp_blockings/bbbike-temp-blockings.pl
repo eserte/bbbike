@@ -7284,8 +7284,8 @@ userdel	2::inwork 73204,97424 73031,97443 73017,97449 72960,97477 72745,97584
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Manteuffelstr. zwischen Skalitzer Str. und Naunynstr.: Einbahnstraßenregelung ',
+       until => 1191189599, # 2007-09-30 23:59
+       text  => 'Manteuffelstr. zwischen Skalitzer Str. und Naunynstr.: Einbahnstraßenregelung bis Ende 09.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1::inwork 11949,10414 12000,10531 12056,10655
@@ -8176,6 +8176,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 75402,-6910 75394,-6991 75272,-7514
+EOF
+     },
+     { from  => 1179815002, # 2007-05-22 08:23
+       until => 1180476000, # 2007-05-30 00:00
+       text  => 'Str. des 17. Juni (Tiergarten) Richtung Großer Stern zwischen Brandenburger Tor und Y.-Rabin-Str. Veranstaltung, Fahrtrichtung gesperrt (Aufbau Pokalmeile zum Pokalendspiel) (bis 29.05.2007 morgens)',
+       type  => 'gesperrt',
+       source_id => 'IM_005561',
+       data  => <<EOF,
+userdel	1::temp 8515,12242 8214,12205 8089,12186
 EOF
      },
     );
