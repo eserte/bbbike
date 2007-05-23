@@ -185,7 +185,7 @@ sub download_trk {
 sub do_download_trk {
     my $w = shift;
     eval {
-	my $gpsconn = GPS::GpsmanConn->new(Verbose => 1);
+	my $gpsconn = gpsconn();
 	my @t;
 	{
 	    local $^W;
@@ -235,7 +235,7 @@ sub download_wpt {
 sub do_download_wpt {
     my $w = shift;
 	eval {
-	    my $gpsconn = GPS::GpsmanConn->new(Verbose => 1);
+	    my $gpsconn = gpsconn();
 	    my $w;
 	    {
 		local $^W;
@@ -250,6 +250,12 @@ sub do_download_wpt {
     }
     warn "OK, waypoints downloaded\n";
     return 1;
+}
+
+sub gpsconn {
+    my $dev = $main::gps_device || undef;
+    my $gpsconn = GPS::GpsmanConn->new(Verbose => 1, Port => $dev);
+    $gpsconn;
 }
 
 sub button_status {
