@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeESRI.pm,v 1.14 2003/11/11 23:00:22 eserte Exp $
+# $Id: BBBikeESRI.pm,v 1.15 2007/05/23 21:08:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -251,9 +251,15 @@ sub dump_bbd {
     my($self, $outfile, %args) = @_;
     die "outfile not defined" if !defined $outfile;
     open(BBD, ">$outfile") or die "Can't write to $outfile: $!";
+    if ($args{-preamble}) {
+	$args{-preamble}->(\*BBD, $self, $outfile);
+    }
     $args{-outfh} = \*BBD;
 #    print BBD $self->as_bbd(%args);
     $self->as_bbd(%args);
+    if ($args{-postamble}) {
+	$args{-postamble}->(\*BBD, $self, $outfile);
+    }
     close BBD;
 }
 

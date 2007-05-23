@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.49 2007/05/03 22:31:58 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.49 2007/05/03 22:31:58 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -82,7 +82,8 @@ use vars qw(
      %init_p_draw %p_draw %str_outline $auto_show_list
      %str_name_draw %str_nr_draw %p_name_draw %str_far_away %p_far_away
      %p_regions %str_regions
-     $init_from $init_to $coloring $route_dashed $route_arrowed
+     $init_from $init_to $coloring $route_dashed $route_arrowed $route_below
+     $last_route_below
      $public $public_config $want_wind $winddir $wind
      $wind_v $wind_v_max $winddate
      $bp_obj $ua $proxy
