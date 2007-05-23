@@ -22,9 +22,9 @@ require Time::Local;
        text  => "Gesperrte Straßen am 28.5. zwischen 14 Und 24 Uhr während des Kirchentages (im Bereich Pariser Platz - Unter den Linden - Friedrichstr. - Gendarmenmarkt)",
        type  => "handicap",
      },
-     { from  => 1115848800, # 2005-05-12 00:00
-       until => 1116280616, # 2005-05-16 23:56
-       text  => 'Straßenfest rund um den Blücherplatz',
+     { from  => 1179957600, # 2007-05-24 00:00
+       until => 1180303200, # 2007-05-28 00:00
+       text  => 'Straßenfest rund um den Blücherplatz, 25.05.2007, 0.00 Uhr bis 28.05.2007, 0.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 9522,10017 9811,10055
@@ -45,9 +45,10 @@ userdel auto	3 9689,10124 9811,10055 9837,9856
 userdel auto	3 9579,10122 9592,10174 9593,10238
 EOF
      },
-     { from  => 1149323010, # 2006-06-03 10:23
-       until => 1149458399, # 2006-06-04 23:59
-       text  => 'Karneval der Kulturen, 04.06.2006, 12.30 bis 21.30 Uhr',
+     { from  => 1180175400, # 2007-05-26 12:30
+       until => 1180294200, # 2007-05-27 21:30
+       text  => 'Karneval der Kulturen, 27.05.2007, 12.30 Uhr bis 21.30 Uhr ',
+       type  => 'gesperrt',
        file  => "karneval-der-kulturen.bbd",
      },
      { from  => Time::Local::timelocal(reverse(2003-1900,6-1,19,6,0,0)),
@@ -441,9 +442,9 @@ userdel	2 13082,10634 13178,10623
 userdel	2 13178,10623 13206,10651
 EOF
      },
-     { from  => 1150347600, # 2006-06-15 07:00
-       until => 1150668000, # 2006-06-19 00:00
-       text  => 'Bergmannstraßenfest, Bergmannstr. zwischen Mehringdamm und Zossener Str. gesperrt, 16.06.2006, 7.00 Uhr bis 18.06.2006, 24.00 Uhr ',
+     { from  => 1181192400, # 2007-06-07 07:00
+       until => 1181512800, # 2007-06-11 00:00
+       text  => 'Bergmannstraßenfest, Bergmannstr. zwischen Mehringdamm und Zossener Str. gesperrt, 08.06.2007, 7.00 Uhr bis 10.06.2007, 24.00 Uhr ',
        type  => 'gesperrt',
        file  => 'bergmannstr.bbd',
      },
@@ -8219,6 +8220,31 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::temp -575,-65978 60,-66035
+EOF
+     },
+     { from  => 1180303200, # 2007-05-28 00:00
+       until => 1182636000, # 2007-06-24 00:00
+       text  => 'B 158 von OD Neuendorf bis OE Oderberg Deckenerneuerung Vollsperrung 29.05.2007-23.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 53948,53269 53937,54875
+EOF
+     },
+     { from  => 1181340000, # 2007-06-09 00:00
+       until => 1181512800, # 2007-06-11 00:00
+       text  => 'L 023 zw. KVK Seespitze Strausberg u. B168 (Prötzel-Tiefensee) und L 033 Gielsdorfer Chaussee OL Strausberg, zw. Badstr. u. KVK Seespitze; 18. Teamtriathlon Behinderungen 10.06.2007-10.06.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 41887,22959 41553,23243
+userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
+EOF
+     },
+     { from  => 1179871200, # 2007-05-23 00:00
+       until => 1183240800, # 2007-07-01 00:00
+       text  => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 24.05.2007-30.06.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 10115,-8276 11019,-8435
 EOF
      },
     );

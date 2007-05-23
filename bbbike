@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.309 2007/05/06 18:00:57 eserte Exp eserte $
+# $Id: bbbike,v 3.310 2007/05/23 21:35:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -208,7 +208,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.309 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.310 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -16494,6 +16494,7 @@ sub make_net {
 
 sub make_qualitaet_net {
     if (!$qualitaet_s_net) {
+	# XXX hmmm, fails fataly if any of the layers is missing
 	eval {
 	    $qualitaet_s_net = StrassenNetz->new
 		(MultiStrassen->new(Strassen->new("qualitaet_s"),
@@ -16509,6 +16510,7 @@ sub make_qualitaet_net {
 
 sub make_handicap_net {
     if (!$handicap_s_net) {
+	# XXX hmmm, fails fataly if any of the layers is missing
 	eval {
 	    my @s = (Strassen->new("handicap_s"),
 		     Strassen->new("handicap_l"),
