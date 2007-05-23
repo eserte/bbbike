@@ -8178,13 +8178,13 @@ EOF
 userdel	2::inwork 75402,-6910 75394,-6991 75272,-7514
 EOF
      },
-     { from  => 1179815002, # 2007-05-22 08:23
+     { from  => 1179900343, # 2007-05-23 08:05
        until => 1180476000, # 2007-05-30 00:00
-       text  => 'Str. des 17. Juni (Tiergarten) Richtung Großer Stern zwischen Brandenburger Tor und Y.-Rabin-Str. Veranstaltung, Fahrtrichtung gesperrt (Aufbau Pokalmeile zum Pokalendspiel) (bis 29.05.2007 morgens)',
+       text  => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Brandenburger Tor und Y.-Rabin-Str. Veranstaltung, Straße vollständig gesperrt (Pokalmeile zum Pokalendspiel) (bis 29.05.2007 morgens)',
        type  => 'gesperrt',
-       source_id => 'IM_005561',
+       source_id => 'IM_005565',
        data  => <<EOF,
-userdel	1::temp 8515,12242 8214,12205 8089,12186
+userdel	2::temp 8089,12186 8214,12205 8515,12242
 EOF
      },
      { from  => 1179862554, # 2007-05-22 21:35

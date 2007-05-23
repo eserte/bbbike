@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.29 2007/03/19 21:35:59 eserte Exp $
+# $Id: mapserver_address.cgi,v 1.30 2007/05/23 19:54:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -467,6 +467,9 @@ sub redirect_to_ms {
     }
     require File::Basename;
     $args{-bbbikeurl} = File::Basename::dirname(url) . "/bbbike.cgi";
+    if (param("msmap")) {
+	$args{-mapname} = File::Basename::basename(param("msmap"));
+    }
 
     require BBBikeMapserver;
     my $ms = BBBikeMapserver->new;

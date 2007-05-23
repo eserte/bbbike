@@ -14998,39 +14998,46 @@ sub show_overview_populate {
 	$radar_button->place("-x" => 2+2+$mode_button->reqwidth, "-y" => 2);
     }
 
+    my @layer_errors;
+
     # Zeichnen von Gewässern, S-Bahnen, Straßen in der
     # Übersichtskarte
     foreach my $abk (qw(w b s)) {
-	local(%str_outline, %str_name_draw, $wasserumland, $wasserstadt,
-	      %str_far_away, %str_restrict, %p_draw);
-	if ($overview_draw{$abk}) {
-	    $str_outline{$abk} = 0;
-	    $p_draw{'pp'} = 0;
-	    my %args;
-	    if ($abk eq 'w') {
-		my $ws_low = eval { Strassen->new("wasserstrassen-lowres") };
-		if ($ws_low) {
-		    $args{-object} = $ws_low;
-		} else {
-		    for my $cat (qw(W1 W2 F:W)) {
-			$str_restrict{$abk}->{$cat} = 1;
+	eval {
+	    local(%str_outline, %str_name_draw, $wasserumland, $wasserstadt,
+		  %str_far_away, %str_restrict, %p_draw);
+	    if ($overview_draw{$abk}) {
+		$str_outline{$abk} = 0;
+		$p_draw{'pp'} = 0;
+		my %args;
+		if ($abk eq 'w') {
+		    my $ws_low = eval { Strassen->new("wasserstrassen-lowres") };
+		    if ($ws_low) {
+			$args{-object} = $ws_low;
+		    } else {
+			for my $cat (qw(W1 W2 F:W)) {
+			    $str_restrict{$abk}->{$cat} = 1;
+			}
+			for my $cat (qw(W0 W)) {
+			    $str_restrict{$abk}->{$cat} = 0;
+			}
+			$wasserumland = $wasserstadt = 1;
+			$str_far_away{$abk} = 1;
 		    }
-		    for my $cat (qw(W0 W)) {
-			$str_restrict{$abk}->{$cat} = 0;
-		    }
-		    $wasserumland = $wasserstadt = 1;
-		    $str_far_away{$abk} = 1;
+		    $str_name_draw{$abk} = 0;
+		} elsif ($abk eq 's') {
+		    $str_restrict{$abk}->{'HH'} = 1;
 		}
-		$str_name_draw{$abk} = 0;
-	    } elsif ($abk eq 's') {
-		$str_restrict{$abk}->{'HH'} = 1;
-	    }
 
-	    plot('str',$abk,
-		 Canvas => $overview_canvas,
-		 Width  => 1,
-		 %args,
-		);
+		plot('str',$abk,
+		     Canvas => $overview_canvas,
+		     Width  => 1,
+		     %args,
+		    );
+	    }
+	};
+	if ($@) {
+	    push @layer_errors, "Der Layer <$abk> kann nicht gezeichnet werden: $@";
 	}
     }
 
@@ -15038,13 +15045,19 @@ sub show_overview_populate {
 
     $progress->InitGroup;
     for my $abk (qw(g gD)) {
-	plot('str',$abk,
-	     Canvas => $overview_canvas,
-	     ($abk eq 'g' && $coord_system ne 'standard' ? (Filename => "plz-orig") : ()),
-	     Width => 3,
-	    );
+	eval {
+	    plot('str',$abk,
+		 Canvas => $overview_canvas,
+		 ($abk eq 'g' && $coord_system ne 'standard' ? (Filename => "plz-orig") : ()),
+		 Width => 3,
+		);
+	};
+	if ($@) {
+	    push @layer_errors, "Der Layer mit den Grenzen <$abk> kann nicht gezeichnet werden: $@";
+	}
     }
-    {
+
+    eval {
 	# local does not work here, segfault on Win98+perl5.6.1/perl5.8.0+Tk800.0xx
 	my $orte_far_away_orig = $p_far_away{'o'};
 	$p_far_away{'o'} = 1;
@@ -15071,8 +15084,17 @@ sub show_overview_populate {
 	$p_far_away{'o'} = $orte_far_away_orig;
 	$orte_label_size = $orte_label_size_orig;
 	$no_overlap_label{'o'} = $no_overlap_label_orig;
+    };
+    if ($@) {
+	push @layer_errors, "Der Orte-Layer kann nicht gezeichnet werden: $@";
     }
+
     $progress->FinishGroup;
+
+    if (@layer_errors) {
+	status_message(join("\n", @layer_errors), "warn");
+    }
+
     $overview_canvas->raise("zoomrect");
     $overview_top->bind('<q>' => $withdraw_sub);
     $overview_top->bind('<Q>' => sub { &$withdraw_sub;

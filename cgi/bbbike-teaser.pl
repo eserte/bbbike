@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.19 2007/05/20 21:52:59 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.20 2007/05/23 19:47:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -33,6 +33,7 @@ sub teaser {
 				teaser_mapserver(),
 				#teaser_routen(),
 				teaser_sternfahrt(),
+				teaser_sternfahrt_changes(),
 				#teaser_dobli(),
 				$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
 			       ];
@@ -43,6 +44,7 @@ sub teaser {
 				teaser_mapserver(),
 				#teaser_routen(),
 				teaser_sternfahrt(),
+				teaser_sternfahrt_changes(),
 				#teaser_dobli(),
 				$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
 			       ];
@@ -69,6 +71,16 @@ sub teaser_sternfahrt {
     <<EOF
 <div class="teaser"><a style="text-decoration:none;" href="$url"><img style="padding:3px 0px 3px 0px; border:0px;" src="$bbbike_images/stern${year}_titel.jpg" border="0"></a><br><a href="$url">Die Routen der Sternfahrt ${year}</a></div>
 EOF
+}
+
+sub teaser_sternfahrt_changes {
+    my $year = (localtime)[5]+1900;
+    if ($year == 2007) {
+	my $url = "$mapserver_address_url?coords=-11971,57&&layer=bahn&layer=gewaesser&layer=faehren&layer=flaechen&layer=grenzen&layer=orte&layer=sternfahrt&layer=treffpunkte&msmap=sternfahrt$year";
+	<<EOF
+<div class="teaser"><b>Sternfahrt:</b><br> <a href="$url">Änderung der Routen im Bereich Potsdam</a><br>(betrifft die Routen Brandenburg, Werder und Rehbrücke)</div>
+EOF
+    }
 }
 
 sub teaser_perltk_newrelease {

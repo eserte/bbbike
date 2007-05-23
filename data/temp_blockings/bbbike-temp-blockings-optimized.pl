@@ -750,11 +750,11 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        {
-         'source_id' => 'IM_005561',
+         'source_id' => 'IM_005565',
          'until' => 1180476000,
-         'text' => 'Str. des 17. Juni (Tiergarten) Richtung Großer Stern zwischen Brandenburger Tor und Y.-Rabin-Str. Veranstaltung, Fahrtrichtung gesperrt (Aufbau Pokalmeile zum Pokalendspiel) (bis 29.05.2007 morgens)',
-         'from' => 1179815002,
-         'data' => 'userdel	1::temp 8515,12242 8214,12205 8089,12186
+         'text' => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Brandenburger Tor und Y.-Rabin-Str. Veranstaltung, Straße vollständig gesperrt (Pokalmeile zum Pokalendspiel) (bis 29.05.2007 morgens)',
+         'from' => 1179900343,
+         'data' => 'userdel	2::temp 8089,12186 8214,12205 8515,12242
 ',
          'type' => 'gesperrt'
        },
