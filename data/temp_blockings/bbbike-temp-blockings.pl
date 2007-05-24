@@ -22,9 +22,9 @@ require Time::Local;
        text  => "Gesperrte Straßen am 28.5. zwischen 14 Und 24 Uhr während des Kirchentages (im Bereich Pariser Platz - Unter den Linden - Friedrichstr. - Gendarmenmarkt)",
        type  => "handicap",
      },
-     { from  => 1179957600, # 2007-05-24 00:00
-       until => 1180303200, # 2007-05-28 00:00
-       text  => 'Straßenfest rund um den Blücherplatz, 25.05.2007, 0.00 Uhr bis 28.05.2007, 0.00 Uhr ',
+     { from  => 1180032943, # 2007-05-24 20:55
+       until => 1180389600, # 2007-05-29 00:00
+       text  => 'Straßenfest rund um den Blücherplatz, 25.05.2007, 0.00 Uhr bis 29.05.2007, 0.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 9522,10017 9811,10055
@@ -7522,7 +7522,7 @@ userdel	1::inwork 14535,17003 14559,16912
 EOF
      },
      { from  => 1175031936, # 2007-03-27 23:45
-       until => 1191189600, # 2007-10-01 00:00
+       until => 1180033051, # 2007-10-01 00:00 1191189600
        text  => 'Florastr. (Pankow) Mühlenstr. in Richtung Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis September 2007)',
        type  => 'gesperrt',
        source_id => 'IM_004035',
@@ -8245,6 +8245,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 10115,-8276 11019,-8435
+EOF
+     },
+     { from  => 1180032862, # 2007-05-24 20:54
+       until => 1180411200, # 2007-05-29 06:00
+       text  => 'Ebertstr. (Tiergarten) In beiden Richtungen zwischen Behrenstr. und Scheidemannstr. Veranstaltung, Straße vollständig gesperrt (bis 29.05.2007 morgens)',
+       type  => 'gesperrt',
+       source_id => 'IM_005563',
+       data  => <<EOF,
+userdel	2::temp 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
 EOF
      },
     );

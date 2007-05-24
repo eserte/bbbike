@@ -3,9 +3,9 @@ $#temp_blocking = 2;
 push @temp_blocking,
 (
        {
-         'until' => 1180303200,
-         'text' => 'Straßenfest rund um den Blücherplatz, 25.05.2007, 0.00 Uhr bis 28.05.2007, 0.00 Uhr ',
-         'from' => 1179957600,
+         'until' => 1180389600,
+         'text' => 'Straßenfest rund um den Blücherplatz, 25.05.2007, 0.00 Uhr bis 29.05.2007, 0.00 Uhr ',
+         'from' => 1180032943,
          'data' => 'userdel	2 9522,10017 9811,10055
 userdel	2 9522,10017 9444,10000
 userdel	2 9592,10174 9812,10211
@@ -1168,15 +1168,7 @@ userdel auto	3 9579,10122 9592,10174 9593,10238
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_004035',
-         'until' => 1191189600,
-         'text' => 'Florastr. (Pankow) Mühlenstr. in Richtung Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis September 2007)',
-         'from' => 1175031936,
-         'data' => 'userdel	1::inwork 10459,17754 10548,17817 10722,17940 10846,17992
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_005053',
          'until' => 1183154400,
@@ -1400,15 +1392,7 @@ userdel auto	3 9579,10122 9592,10174 9593,10238
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_005513',
-         'until' => 1179957600,
-         'text' => 'Sylter Str. (Wedding) in Richtung Seestr. Fahrtrichtung gesperrt (bis 23.05.07)',
-         'from' => 1179341723,
-         'data' => 'userdel	1::inwork 6334,14756 5991,14832 5753,15096
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_005532',
          'until' => 1180735199,
@@ -1493,6 +1477,15 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
          'data' => 'userdel	q4::inwork 10115,-8276 11019,-8435
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_005563',
+         'until' => 1180411200,
+         'text' => 'Ebertstr. (Tiergarten) In beiden Richtungen zwischen Behrenstr. und Scheidemannstr. Veranstaltung, Straße vollständig gesperrt (bis 29.05.2007 morgens)',
+         'from' => 1180032862,
+         'data' => 'userdel	2::temp 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
+',
+         'type' => 'gesperrt'
        }
      
 );

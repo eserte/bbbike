@@ -95,7 +95,22 @@ sub transfer {
 	    print STDERR $mess;
 	}
     } else {
-	$gps->upload_data($data);
+	my $cb;
+	if ($DEBUG && $DEBUG == 2) {
+	    $cb = sub {
+		my $i = shift;
+		printf STDERR "%3d%%\r", 100*$i/scalar @$data;
+	    };
+	    warn "About to start upload...\n";
+	}
+	if (1) {
+	    require File::Temp;
+	    require Storable;
+	    my($fh,$file) = File::Temp::tempfile(SUFFIX => "_gpsupload.gps");
+	    warn "Writing data to $file...\n";
+	    Storable::nstore($data, $file);
+	}
+	$gps->upload_data($data, $cb);
 	if ($gps->{serial}) {
 	    # XXX Shouldn't be necessary, but it seems it is...
 	    $gps->{serial}->close;
@@ -550,6 +565,7 @@ sub convert_from_route {
 # ... and more
 sub _eliminate_umlauts {
     my $s = shift;
+use Devel::Peek; Dump $s;#XXX
     $s = GPS::Util::eliminate_umlauts($s);
     # And more shortenings:
     $s =~ s/[\(\)]//g;
