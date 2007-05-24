@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.31 2007/05/03 01:28:03 eserte Exp eserte $
+# $Id: DirectGarmin.pm,v 1.32 2007/05/24 22:39:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -374,8 +374,8 @@ sub convert_from_route {
 
     my $handler = $gps->handler;
     push @d,
-	[$gps->GRMN_RTE_HDR, $handler->pack_Rte_hdr({nmbr => $routenumber,
-						     cmnt => $routename})];
+	[$gps->GRMN_RTE_HDR, $handler->pack_Rte_hdr({nmbr => make_bytes($routenumber),
+						     cmnt => make_bytes($routename)})];
     if ($DEBUG) {
 	$self->{'debugdata'} = [];
     }
@@ -545,7 +545,7 @@ sub convert_from_route {
 	if ($n > 0) {
 	    push @d, [$gps->GRMN_RTE_LINK_DATA, $handler->pack_Rte_link_data];
 	}
-	my $wptdata = {lat => $lat, lon => $lon, ident => $ident, smbl => $waypointsymbol};
+	my $wptdata = {lat => $lat, lon => $lon, ident => make_bytes($ident), smbl => $waypointsymbol};
 	push @d, [$gps->GRMN_RTE_WPT_DATA, $handler->pack_Rte_wpt_data($wptdata)];
 	if ($DEBUG) {
 	    push @{$self->{'debugdata'}}, {%$wptdata, origlon => $xy->[0], origlat => $xy->[1]};
@@ -565,7 +565,6 @@ sub convert_from_route {
 # ... and more
 sub _eliminate_umlauts {
     my $s = shift;
-use Devel::Peek; Dump $s;#XXX
     $s = GPS::Util::eliminate_umlauts($s);
     # And more shortenings:
     $s =~ s/[\(\)]//g;
@@ -579,6 +578,14 @@ sub short_landstrasse {
     $s = Strasse::beautify_landstrasse($s, $net->street_is_backwards($xy1, $xy2));
     $s =~ s/:\s+/ /g;
     $s =~ s/\s*\([^\)]+-\)\s*/-/g;
+    $s;
+}
+
+sub make_bytes {
+    my $s = shift;
+    if (eval { require Encode; 1 }) {
+	$s = Encode::encode("iso-8859-1", $s);
+    }
     $s;
 }
 
