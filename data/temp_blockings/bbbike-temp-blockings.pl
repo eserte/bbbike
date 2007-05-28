@@ -2162,7 +2162,7 @@ EOF
        text  => 'L 26; (Löcknitz MVP-LG-Brüssow); zw. LG und Kno. Wollschow Deckeneinbau Vollsperrung 27.06.2005-11.07.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 61780,112606 61784,112969
+userdel	2 61751,112656 61788,112769
 EOF
      },
      { from  => 1119697095, # 2005-06-25 12:58

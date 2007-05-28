@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.161 2007/05/04 20:40:51 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.162 2007/05/24 22:46:46 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -193,7 +193,6 @@ Alfredstr.	1 16211,11951 16261,12224 16270,12261
 Fanningerstr.	1 17139,12100 17092,12107 16994,12122 16890,12135 16782,12154
 Gierkeplatz	1 3450,12240 3460,12270 3484,12280 3516,12273 3531,12252 3524,12222 3495,12209 3463,12216 3450,12240
 Knaackstr.	1 11056,15009 11030,14979 11101,14768
-(Brückenstr. - Holzmarktstr.)	2 11388,12202 11347,12181
 Hagenplatz	1 1149,8538 1094,8398
 Branitzer Platz	1 1346,12053 1311,12084 1311,12122 1334,12152 1374,12164 1407,12134 1414,12091 1386,12058 1346,12053
 Reutlinger Str.	1 7676,4216 7601,4485
@@ -995,6 +994,7 @@ Schwingtor an der Luiseninsel	BNP:10:-126 7742,11639
 Schranke	BNP:5:12 25558,997
 Drängelgitter	BNP:5:-118 8810,14373
 enges Drängelgitter	BNP:5:90 100,3
+Margarte-Steffin-Str.: Baurabeiten	2:inwork 8700,12810 8730,12804
 Hedwigskirchgasse: Bauarbeiten	2:inwork 9743,12239 9756,12139
 Dircksenstr. (Arbeiten an "Alexa", voraussichtlich bis 2006-12-31)	2:inwork 11209,12430 11156,12581 11057,12715
 Schloßplatz (Bauarbeiten am Palast der Republik)	2:inwork 10267,12305 10173,12492

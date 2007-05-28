@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlin_DE.pm,v 1.26 2006/12/11 22:16:53 eserte Exp $
+# $Id: Berlin_DE.pm,v 1.27 2007/05/28 20:21:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2006 Slaven Rezic. All rights reserved.
@@ -212,6 +212,7 @@ sub parse_street_type_nr {
     my $image;
     if ($strname =~ /berlin\s*-\s*usedom/i) {
 	$type = 'BU';
+	$image = "BU.gif";
     } elsif ($strname =~ /berlin\s*-\s*kopenhagen/i) {
 	$type = 'BK';
 	$image = "BK.gif";

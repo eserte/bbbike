@@ -19,14 +19,14 @@ Wisbyer Str.	?; 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 1144
 Leipziger Straße zwischen Leipziger Platz und Wilhelmstraße (entweder beidseitig oder nur auf der Südseite)	? 8733,11524 9046,11558
 #: last_checked: 2006-08-01
 Mollstr.	? 11905,13069 11867,13076 11839,13083 11721,13142 11681,13161 11557,13228 11446,13294
-#: last_checked: 2007-03-01
+#: last_checked: 2007-05-28
 Stralauer Str.	? 11351,12221 11304,12234 11139,12243 11094,12243 10946,12241 10826,12279 10804,12291 10738,12364
 #: last_checked: 2006-10-25
 Alt-Moabit zwischen Kirch- und Paulstraße	? 7192,13036 7000,13067 6882,13088 6757,13112 6661,13130
 Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 10109,12238 10084,12228 9972,12184
 #: last_checked: 2007-03-20
 Köpenicker Str. (in Mitte und/oder in Kreuzberg?)	? 11155,11750 11242,11720 11574,11594 11807,11479 11943,11398 12026,11348
-#: last_checked: 2007-03-01
+#: last_checked: 2007-05-28
 Holzmarktstr.	? 11773,12006 11619,12084 11388,12202 11351,12221
 #: last_checked: 2007-05-23
 Gitschiner Str.	? 9948,10280 10122,10294 10340,10301 10605,10312 10859,10333 10962,10340 11114,10338
@@ -138,8 +138,7 @@ Unterführung unter der Stromstr. ab 2007-04-27 offen	? 6115,12934 6218,12975
 #: by: burkard.dau (Sperrungen):
 #: by: anonymous (geschlossen):
 Einige Radweg-Abschnitte der Perleberger Str. sind mittlerweile gesperrt, welche genau? Oder alle?	? 6252,13600 6366,13716 6493,13822 6649,13947 6730,14021 6807,14093 6992,14251 7132,14375 7180,14419
-#: by: http://www.stadtentwicklung.berlin.de/verkehr/radverkehrsanlagen/de/hellersdorf/route.shtml
-Marx-Engels-Forum: wird die RR8 hier durchgeführt? wo genau?	? 10300,12587 10355,12551 10411,12471 10596,12517
+## by: http://www.stadtentwicklung.berlin.de/verkehr/radverkehrsanlagen/de/hellersdorf/route.shtml: Marx-Engels-Forum: wird die RR8 hier durchgeführt? wo genau? -> Nein, keine Ausschilderung zu sehen; alle Radrouten werden an der Spandauer Str. nach SE geführt	? 10300,12587 10355,12551 10411,12471 10596,12517
 #: XXX: Eintragung von Bernd Honsa: Q0 Asphalt, verkehrsberuhigt RW6
 #: XXX: laut luise-berlin zwischen Walter-Huth-Str. und Wolfgang-Harlan-Straße., laut berliner-stadtplan die eingetragene Wegführung
 #: XXX: obwohl: es gibt auch eine kürzere parallel verlaufende gleichnamige Straße. Wahrscheinlich ist diese die richtige!
@@ -799,7 +798,6 @@ Seilershof - B96: Qualität? am Bahnübergang anscheinend asphaltiert	? -7455,7444
 Heylstr: Qualität?	? 6465,8326 6548,8335
 #: XXX Eintrag von Gabriel (glaeser) existiert, aber ist tatsächlich diese Mühlenstr. gemeint?
 Mühlenstr. (Blankenburg): Asphalt, Radweg?	? 14389,20254 14460,20406 14589,20988
-Bäumerplan: Qualität	? 8520,7945 8553,7795
 Paradestr.: Gibt es hier eine Abkürzung über den Adolf-Scheidt-Platz?	? 8770,8018 8724,8021
 Beelitz - Schönefeld: laut "Berliner Umland" wurde die Straße etwas nach Süden verlegt	? -18265,-20481 -18031,-20502 -17867,-20681
 Thyrow - Kerzendorf (ehem. B101): laut "Berliner Umland" am Bahnübergang unterbrochen, B101n stattdessen benutzen! 	? 1090,-16407 1773,-15712 1856,-15356
@@ -1388,7 +1386,6 @@ Barkhausenstr.: Qualität?	? -10530,16281 -10744,16241
 Barkhausenstr.: Qualität?	? -10853,16230 -10970,16232 -11130,16245 -11296,16308 -11549,16413 -11783,16506
 K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen: Qualität (bis Ende 2005 bei der LBVS als "schlechte Straße" gekennzeichnet)	? -50149,24689 -50048,24475 -49883,24097 -50010,23562 -50201,23411 -50255,22794 -50938,21256
 Manetstr.: Qualität?	? 16412,15559 15753,15845
-Löcknitz - Bergholz: Qualität (wahrscheinlich Asphalt)?	? 61715,116163 60460,115792
 Bergholz - Grimme: Qualität?	? 60460,115792 59564,114268 58985,114226
 Grimme - Brüssow: Qualität?	? 58985,114226 58692,114171 58644,113939 58570,113866 58577,113531 58619,113397 58625,113293 58595,113171 58522,113056 58497,112964 58461,112854 58272,112531 58199,112288 57900,111758 57821,111672
 Radweg Lychen - Himmelpfort: Qualität? (Am Anfang bei Lychen noch asphaltiert)	? 234,89271 213,89085 188,88982 -12,88820 -1764,87733 -2306,87318 -3001,86675 -3236,86304
@@ -1420,10 +1417,8 @@ Bootshausweg - An den Rohrbruchwiesen: Qualität des Weges? (wahrscheinlich aspha
 Am Flugplatz (Strausberg): Qualität?	? 44596,21287 44661,21139 44631,21051 44692,20886 44686,20822 44536,20408 44527,19890 44085,19049
 Prenzlau, Friedrichstr.: Qualität? (zumindest am nördlichen Ende Kopfsteinpflaster, OK, Q1); Einbahnstraßenregelung? Fußgängerzone im Mittelteil?	? 39574,101863 39550,101671 39538,101564 39536,101514
 Prenzlau, Straße des Friedens: Qualität? (zumindest am nördlichen Ende Kopfsteinpflaster, mäßig bis schlecht, Q2-)	? 39451,101893 39389,101541 39392,101477
-Grünberg - Woddow: Kopfsteinpflaster?	? 59778,106987 60070,107705 60469,108187 60813,108458 60965,108878 61060,109018
-Grünberg - Battin: Qualität? zumindest am nördlichen Ende asphaltiert	? 59818,106862 59868,106575 59862,106288 59768,105990 59719,105670 59680,105514 59774,105301
-Bagemühl - Woddow: Qualität? zumindest am südlichen Ende asphaltiert	? 62065,106668 61934,107921 61962,108537 61660,108741 61301,108826 61179,108976 61060,109018
-Woddow - Wolschow: Qualität?	? 61060,109018 61885,112074 61780,112606
+Grünberg - Woddow: wahrscheinlich schlechtes Kopfsteinpflaster, kaum Banketten vorhanden?	? 60070,107705 60469,108187 60813,108458 60965,108878
+Grünberg - Battin: Qualität? zumindest am nördlichen Ende asphaltiert	? 59868,106575 59862,106288 59768,105990 59719,105670 59680,105514 59774,105301
 Battinsthal - Penkun: Qualität? zumindest am nördlichen Ende asphaltiert	? 65975,103506 65883,103056 66039,102017 66127,101413
 Welsow - Kerkow: Qualität? (höchstwahrscheinlich asphaltiert)	? 49734,74527 49777,74463 49811,74177 49969,74149 50100,74058 50121,73960 50176,73842 50213,73705 50191,73574 50131,73439 50027,73351 49966,73257 49945,73025 50000,72647 49975,72419 49011,71344
 Tantow - Rossow: Qualität? (wahrscheinlich Feldweg oder Plattenweg)	? 73031,97443 73254,98025 73315,98049 73750,98403 74201,99192 74939,100000 75140,100530 75143,100700 75207,100834 75210,101020 75326,101099 75359,101157 75359,101224
@@ -1438,4 +1433,6 @@ Strausberg-Nord - Bienenwerder (Abschnitt Wrizen - Oder): genaue Lage des Radweg
 R1	? -12589,-1556 -12475,-1496
 Planitz	? -13979,-1842 -13794,-1838 -13793,-1860 -13802,-1856 -13733,-1856 -13741,-1861 -13741,-1843 -13487,-1847 -13475,-1890 -13427,-1883 -13356,-1889
 Am Luftschiffhafen - R1/Uferweg: existiert eine Verbindung für Radfahrer? Qualität?	? -15729,-3566 -15556,-3770
-Stettiner Grenzweg: Qualität? Existiert eine Ausschilderung? Sind einige Teilstücke für Autos gesperrt?	? 50039,125006 50357,124920 50380,124990 50811,125212 51579,125130 51979,125676 52795,125593 53008,125606 53023,125365 53217,125181 53255,124438 53938,125022 54153,125114 54309,125285 54363,125282 54550,125438 55325,125193 55451,125193 55889,125352 56318,125412 56397,125441 56616,125374 57172,124978 57340,124939 57876,125063 58222,125108 58638,125057 58876,125066 59178,124971 59378,124816 59460,124676 59952,124197 60412,123645 60377,123508 61256,123397 61552,123556 61612,123625 62174,123975 62250,124114 62361,124092
+Krugsdorfer Damm - Rothenburg: Qualität vor der Ortschaft?	? 53255,124438 53217,125181 53023,125365
+Pasewalk - Krugsdorf: Qualität?	? 51456,122864 52188,123497 53255,124438 53938,125022 54153,125114 54341,125283
+Krugsdorf - Koblentz: Qualität?	? 57864,125082 57736,125319 57711,125655 57622,126012 57525,126374

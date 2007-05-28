@@ -1,4 +1,4 @@
-#: version: $Id: qualitaet_s-orig,v 4.197 2007/05/04 20:40:35 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.198 2007/05/24 22:47:30 eserte Exp eserte $
 #: title: Qualität von Straßen in Berlin
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
@@ -1283,7 +1283,7 @@ Ostritzer Str.: Asphalt	Q0 20774,5131 20694,4856
 Bruno-Bürgel-Weg: Beton	Q0 20781,5242 20443,5457
 Bruno-Bürgel-Weg: Asphalt	Q0 20443,5457 20348,5509 20065,5534 19814,5512 19701,5452 19589,5371 19386,5335 19328,5304
 Wattstr. (Oberschöneweide): sehr schlechtes Kopfsteinpflaster	Q3 17633,7286 17632,6930 17766,6616
-Karl-Elsasser-Str.: Asphalt	Q0 11943,5825 12063,5927 12160,5989
+Karl-Elsasser-Str.: Asphalt	Q0 11943,5825 12063,5927 12160,5997 12270,6025
 Andreasberger Str.: Kopfsteinpflaster	Q2 12053,6185 12053,6042 12063,5927
 Ellricher Str.: Kopfsteinpflaster	Q2 12246,6227 12128,6201 12053,6185
 Sangeallee: Asphalt, mit einigen schadhaften Stellen	Q1 18124,9056 18247,9158 18319,9218
@@ -1403,6 +1403,7 @@ Möthlower Str.: Sand	Q2 -7588,15656 -7483,15690 -7457,15704
 Straße 270: Kopfsteinpflaster mit Sandbanketten	Q2 -5870,10847 -5035,11007
 Straße 270: Feldweg, im westlichen Teil nur zweispurig	Q2 -5035,11007 -4832,11047
 Eschengraben: Asphalt	Q0 11755,17216 11783,17036 11831,16802 11776,16753 11621,16749
+Bäumerplan: Asphalt	Q0 8553,7795 8520,7945
 Jungfernheideweg: Kopfsteinpflaster	Q2 1238,15705 1293,15559
 (Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Parkweg	Q1 2915,14872 2900,14891 2685,15167 2707,15205 2695,15258 2632,15295
 (Jungfernheide): Parkweg	Q1 2632,15295 2431,15290 2364,15321 2349,15380 2027,15380 1925,15426 1563,15294 1386,15315
@@ -1553,6 +1554,7 @@ Teltowkanalpromenade: teilweise nur Trampelpfad, Wurzeln	Q3 2079,-12 1924,-188 1
 Schönfließer Str.: Asphalt	Q0 10593,16037 10603,16158
 Stavanger Str.: Beton	Q0 10620,16497 10632,16644
 Malmöer Str.: Asphalt	Q0 10197,16528 10225,16436
+Lauterberger Str.: Asphalt	Q1 12053,6042 12154,6063
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 364,4829 319,4906 168,5092 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2240,6904 2116,6861 2054,6840 1975,6818
@@ -2809,7 +2811,7 @@ Filehner Str.: Asphalt	Q0 22391,6815 22439,6892 22474,7065 22528,7314 22551,7428
 Rapstedter Weg: Beton	Q0 9578,-92 9573,-3 9626,185 9832,658 9870,677
 Symeonstr.: Asphalt	Q0 7630,1297 7501,1246
 Illstr.: Asphalt	Q0 5674,6834 5654,6941
-Lauterberger Str.: Kopfsteinpflaster	Q2 12177,5746 12168,5855 12160,5989 12154,6063 12128,6201
+Lauterberger Str.: Kopfsteinpflaster	Q2 12177,5746 12168,5855 12160,5997 12154,6063 12128,6201
 Waldkraiburger Str.: Asphalt	Q0 12608,5046 12492,4995 12283,4971
 Illerzeile: mäßiger Asphalt	Q1 2704,20031 2659,20080 2567,20239 2541,20313 2530,20345 2515,20399
 Herkomerstr.: guter Asphalt	Q0 14563,9106 14446,8983
@@ -4386,12 +4388,14 @@ Rheinpfalzallee: geflickter Asphalt	Q1 19030,9530 19128,9523 19221,9517 19424,95
 Drössestr.: Kopfsteinpflaster	Q1 21167,1276 21078,1168 20971,1046
 Schirnerstr.: Kopfsteinpflaster	Q1 20751,566 20846,681 20960,819 21047,927 21279,1200
 Preußenstr.: Asphalt	Q1 21202,727 21129,819 21047,927
-Germaniapromenade: Asphalt	Q1 12053,6042 12154,6063 12263,6086 12388,6114 12503,6139 12628,6166
-Friedrichsbrunner Str.: Kopfsteinpflaster	Q3 12246,6227 12263,6086 12270,6025 12284,5929 12301,5783
-Braunlager Str.: Kopfsteinpflaster	Q3 12062,5779 12168,5855 12284,5929
-Walkenrieder Str: Kopfsteinpflaster	Q3 12370,6196 12388,6114 12420,5984 12437,5946
-Suderoder Str. (Britz): Kopfsteinpflaster	Q3 12503,6139 12487,6221
-Suderoder Str. (Britz): Kopfsteinpflaster	Q2 12437,5946 12481,5935 12523,5945 12537,5964 12537,5992 12503,6139
+Germaniapromenade: guter Asphalt	Q0 12154,6063 12263,6086 12388,6114 12503,6139 12628,6166
+Friedrichsbrunner Str.: schlechtes Kopfsteinpflaster	Q3 12246,6227 12263,6086
+Friedrichsbrunner Str.: Asphalt	Q0 12263,6086 12270,6025
+Friedrichsbrunner Str.: schlechtes Kopfsteinpflaster	Q3 12270,6025 12284,5929 12301,5783
+Braunlager Str.: schlechtes Kopfsteinpflaster	Q3 12062,5779 12168,5855 12284,5929
+Walkenrieder Str: schlechtes Kopfsteinpflaster	Q3 12370,6196 12388,6114 12420,5984 12437,5946
+Suderoder Str. (Britz): schlechtes Kopfsteinpflaster	Q3 12503,6139 12487,6221
+Suderoder Str. (Britz): mäßiges Kopfsteinpflaster	Q2 12437,5946 12481,5935 12523,5945 12537,5964 12537,5992 12503,6139
 Am Straßenbahnhof: Asphalt	Q0 12582,5232 12525,5510
 Am Straßenbahnhof: Beton	Q1 12525,5510 12490,5680
 Ahrenshooper Zeile: Kopfsteinpflaster	Q3 -1882,3643 -1784,3317 -1706,3071 -1654,2909 -1612,2785

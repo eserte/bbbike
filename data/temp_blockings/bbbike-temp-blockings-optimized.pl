@@ -25,13 +25,7 @@ userdel auto	3 9579,10122 9592,10174 9593,10238
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1180294200,
-         'text' => 'Karneval der Kulturen, 27.05.2007, 12.30 Uhr bis 21.30 Uhr ',
-         'from' => 1180175400,
-         'file' => 'karneval-der-kulturen.bbd',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1280,14 +1274,7 @@ userdel auto	3 9579,10122 9592,10174 9593,10238
        undef,
        undef,
        undef,
-       {
-         'until' => 1180130400,
-         'text' => 'L 049 AS Bademeusel-Forst zw. Forst und Groß Bademeusel 32. Forster Duathlon zeitw. Vollsperrung 25.05.2007-25.05.2007 ',
-         'from' => 1179957600,
-         'data' => 'userdel	2::temp 101469,-77761 98851,-76089
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1445,14 +1432,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1180303200,
-         'text' => 'L 071 Wiepersdorf-Brandis OL Schönewalde, Markt Heimat- u. Schützenfest zeitw. Vollsperrung 27.05.2007-27.05.2007 ',
-         'from' => 1180130400,
-         'data' => 'userdel	q4::temp -575,-65978 60,-66035
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1182636000,
          'text' => 'B 158 von OD Neuendorf bis OE Oderberg Deckenerneuerung Vollsperrung 29.05.2007-23.06.2007 ',
