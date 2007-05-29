@@ -8129,7 +8129,7 @@ userdel	2::temp 8063,12182 7816,12150 7383,12095 6828,12031
 EOF
      },
      { from  => 1179185929, # 2007-05-15 01:38
-       until => 1180648799, # 2007-05-31 23:59
+       until => 1180420736, # 2007-05-31 23:59 1180648799
        text  => 'Wilhelminenhofstr. (Oberschöneweide) Richtung An der Wuhlheide zwischen Rathenaustr. und Ostendstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2007)',
        type  => 'gesperrt',
        source_id => 'IM_005487',
@@ -8180,7 +8180,7 @@ userdel	2::inwork 75402,-6910 75394,-6991 75272,-7514
 EOF
      },
      { from  => 1179900343, # 2007-05-23 08:05
-       until => 1180476000, # 2007-05-30 00:00
+       until => 1180421086, # 2007-05-30 00:00 1180476000
        text  => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Brandenburger Tor und Y.-Rabin-Str. Veranstaltung, Straße vollständig gesperrt (Pokalmeile zum Pokalendspiel) (bis 29.05.2007 morgens)',
        type  => 'gesperrt',
        source_id => 'IM_005565',
@@ -8189,7 +8189,7 @@ userdel	2::temp 8089,12186 8214,12205 8515,12242
 EOF
      },
      { from  => 1179862554, # 2007-05-22 21:35
-       until => 1180648799, # 2007-05-31 23:59
+       until => 1180420718, # 2007-05-31 23:59 1180648799
        text  => 'Waßmannsdorfer Chaussee (Rudow) in beiden Richtungen, zwischen Geflügelsteig und Rhodeländerweg geplatzte Wasserleitung, Straße vollständig gesperrt (bis Ende 05/2007)',
        type  => 'gesperrt',
        source_id => 'IM_005511',
@@ -8254,6 +8254,23 @@ EOF
        source_id => 'IM_005563',
        data  => <<EOF,
 userdel	2::temp 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
+EOF
+     },
+     { from  => 1180476000, # 2007-05-30 00:00
+       until => 1180994400, # 2007-06-05 00:00
+       text  => 'L 030 Friedrichstr. OD Erkner, zw. Kreiverkehr und Beuststr. 14. Heimatfest Vollsperrung 31.05.2007-04.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 34443,1951 34250,2546
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Friedrichstr. (Kreuzberg) Richtung Mitte zwischen Kochstr. und Zimmerstr. Baustelle, Fahrtrichtung gesperrt',
+       type  => 'handicap',
+       source_id => 'IM_005616',
+       data  => <<EOF,
+userdel	q4::inwork; 9480,11207 9473,11316
 EOF
      },
     );

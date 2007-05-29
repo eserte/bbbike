@@ -1,92 +1,7 @@
 @temp_blocking = ();
-$#temp_blocking = 2;
+$#temp_blocking = 65;
 push @temp_blocking,
 (
-       {
-         'until' => 1180389600,
-         'text' => 'Straßenfest rund um den Blücherplatz, 25.05.2007, 0.00 Uhr bis 29.05.2007, 0.00 Uhr ',
-         'from' => 1180032943,
-         'data' => 'userdel	2 9522,10017 9811,10055
-userdel	2 9522,10017 9444,10000
-userdel	2 9592,10174 9812,10211
-userdel	2 9401,10199 9592,10174
-userdel	2 9579,10122 9536,10064
-userdel	2 9579,10122 9689,10124
-userdel	2 9827,10120 9811,10055
-userdel	2 9827,10120 9849,10202
-userdel auto	3 9593,10238 9592,10174 9579,10122
-userdel auto	3 10002,9948 9811,10055 9837,9856
-userdel auto	3 10002,9948 9811,10055 9689,10124
-userdel auto	3 9837,9856 9811,10055 10002,9948
-userdel auto	3 9837,9856 9811,10055 9689,10124
-userdel auto	3 9689,10124 9811,10055 10002,9948
-userdel auto	3 9689,10124 9811,10055 9837,9856
-userdel auto	3 9579,10122 9592,10174 9593,10238
-',
-         'type' => 'gesperrt'
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'until' => 1181512800,
          'text' => 'Bergmannstraßenfest, Bergmannstr. zwischen Mehringdamm und Zossener Str. gesperrt, 08.06.2007, 7.00 Uhr bis 10.06.2007, 24.00 Uhr ',
@@ -1368,15 +1283,7 @@ userdel auto	3 9579,10122 9592,10174 9593,10238
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_005487',
-         'until' => 1180648799,
-         'text' => 'Wilhelminenhofstr. (Oberschöneweide) Richtung An der Wuhlheide zwischen Rathenaustr. und Ostendstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2007)',
-         'from' => 1179185929,
-         'data' => 'userdel	1::inwork 18853,6009 19024,5830
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1397,24 +1304,8 @@ userdel auto	3 9579,10122 9592,10174 9593,10238
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005565',
-         'until' => 1180476000,
-         'text' => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Brandenburger Tor und Y.-Rabin-Str. Veranstaltung, Straße vollständig gesperrt (Pokalmeile zum Pokalendspiel) (bis 29.05.2007 morgens)',
-         'from' => 1179900343,
-         'data' => 'userdel	2::temp 8089,12186 8214,12205 8515,12242
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_005511',
-         'until' => 1180648799,
-         'text' => 'Waßmannsdorfer Chaussee (Rudow) in beiden Richtungen, zwischen Geflügelsteig und Rhodeländerweg geplatzte Wasserleitung, Straße vollständig gesperrt (bis Ende 05/2007)',
-         'from' => 1179862554,
-         'data' => 'userdel	2::inwork 16354,-494 16515,31
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1188597600,
          'text' => 'L 040 Ragow-Dahlewitz OD Dahlewitz, Kno. Thälmannstr./ Dorfstr. Bau Kreisverkehr Vollsperrung 22.05.2007-31.08.2007 ',
@@ -1458,14 +1349,23 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
 ',
          'type' => 'handicap'
        },
+       undef,
        {
-         'source_id' => 'IM_005563',
-         'until' => 1180411200,
-         'text' => 'Ebertstr. (Tiergarten) In beiden Richtungen zwischen Behrenstr. und Scheidemannstr. Veranstaltung, Straße vollständig gesperrt (bis 29.05.2007 morgens)',
-         'from' => 1180032862,
-         'data' => 'userdel	2::temp 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
+         'until' => 1180994400,
+         'text' => 'L 030 Friedrichstr. OD Erkner, zw. Kreiverkehr und Beuststr. 14. Heimatfest Vollsperrung 31.05.2007-04.06.2007 ',
+         'from' => 1180476000,
+         'data' => 'userdel	2::temp 34443,1951 34250,2546
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005616',
+         'until' => undef,
+         'text' => 'Friedrichstr. (Kreuzberg) Richtung Mitte zwischen Kochstr. und Zimmerstr. Baustelle, Fahrtrichtung gesperrt',
+         'from' => undef,
+         'data' => 'userdel	q4::inwork; 9480,11207 9473,11316
+',
+         'type' => 'handicap'
        }
      
 );
