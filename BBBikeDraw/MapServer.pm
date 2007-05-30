@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.34 2007/05/04 20:38:46 eserte Exp $
+# $Id: MapServer.pm,v 1.35 2007/05/29 21:37:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.34 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.35 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -32,6 +32,18 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.34 $ =~ /(\d+)\.(\d+)/);
 				 MapserverRelurl MapserverUrl TemplateMap
 				 ImageSuffix FontsList));
     sub new { bless {}, shift }
+
+    sub MapserverCgiBinDir {
+	my $self = shift;
+	if (@_) {
+	    $self->{MapserverCgiBinDir} = $_[0];
+	}
+	if (defined $self->{MapserverCgiBinDir}) {
+	    $self->{MapserverCgiBinDir};
+	} else {
+	    $self->MapserverBinDir;
+	}
+    }
 
     # XXX How to code the preferences better?
     sub vran_default {
@@ -159,6 +171,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.34 $ =~ /(\d+)\.(\d+)/);
 	    die "Please define \$mapserver_bin_dir in $bbbike_cgi_conf_path";
 	}
 	$self->MapserverBinDir($ms->{MAPSERVER_BIN_DIR});
+	$self->MapserverCgiBinDir($ms->{MAPSERVER_CGI_BIN_DIR}) if defined $ms->{MAPSERVER_CGI_BIN_DIR};
 	$self->MapserverRelurl($ms->{MAPSERVER_PROG_RELURL});
 	$self->MapserverUrl($ms->{MAPSERVER_PROG_URL});
 	$self->TemplateMap("brb.map-tpl");
@@ -223,7 +236,9 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.34 $ =~ /(\d+)\.(\d+)/);
 	    if (!$conf) {
 		require Sys::Hostname;
 		if (defined $ENV{SERVER_NAME} &&
-		    $ENV{SERVER_NAME} =~ /radzeit\.de$/) {
+		    $ENV{SERVER_NAME} =~ /radzeit\.de$/ &&
+		    $ENV{SERVER_NAME} !~ /bbbike2\.radzeit\.de$/ # not for debian-based install
+		   ) {
 		    $conf = BBBikeDraw::MapServer::Conf->radzeit_default;
 		} elsif (defined $ENV{SERVER_NAME} &&
 			 $ENV{SERVER_NAME} =~ /radzeit\.herceg\.(de|local)$/) {

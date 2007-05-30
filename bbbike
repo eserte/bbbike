@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.310 2007/05/23 21:35:28 eserte Exp $
+# $Id: bbbike,v 3.310 2007/05/23 21:35:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -6856,7 +6856,7 @@ sub std_transparent_binding {
 		     && $use_c_balloon >= 2) {
 		     # XXX before each $c_ballon->Popup should be this line (maybe move into sub?):
 		     if ($leave_after) { $leave_after->cancel; undef $leave_after }
-		     if ($devel_host) { $str = balloon_info_from_all_tags($c) }#XXX
+		     if (1) { $str = balloon_info_from_all_tags($c) }
 		     if (defined $str) { $c_balloon->Popup($str); } # XXX if defined
 		 }
 	     });
@@ -11983,7 +11983,7 @@ sub enterpoint {
 	if (@l && $use_c_balloon >= 2) {
 	    if ($leave_after) {	$leave_after->cancel; undef $leave_after }
 	    my $str = join(" / ", @l);
-	    if ($devel_host) {#XXX
+	    if (1) {
 		my $add_str = balloon_info_from_all_tags($c);
 		if ($add_str) {
 		    $str .= "\n$add_str";
@@ -12036,7 +12036,7 @@ sub enterstr {
 	if (@l && $use_c_balloon >= 2) {
 	    if ($leave_after) {	$leave_after->cancel; undef $leave_after }
 	    my $str;
-	    if ($devel_host) { $str = balloon_info_from_all_tags($c) }#XXX
+	    if (1) { $str = balloon_info_from_all_tags($c) }
 	    if (!defined $str) {
 		$str = join(" / ", @l);
 	    }
@@ -12093,11 +12093,11 @@ sub enterroute {
     if (@l) {
 	if ($leave_after) { $leave_after->cancel; undef $leave_after }
 	my $b_str = join(" / ", @l);
-	if (defined $str && $devel_host) { # XXX
-	    my $bi_str = balloon_info_from_all_tags($c); # XXX
-	    $bi_str =~ s{\Q$str\E\n?}{}; # XXX
-	    $b_str .= "\n" . $bi_str if $bi_str; # XXX
-	} # XXX
+	if (defined $str && 1) {
+	    my $bi_str = balloon_info_from_all_tags($c);
+	    $bi_str =~ s{\Q$str\E\n?}{};
+	    $b_str .= "\n" . $bi_str if $bi_str;
+	}
 	$c_balloon->Popup($b_str);
     } else {
 	$c_balloon->Deactivate;

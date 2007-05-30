@@ -984,15 +984,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_004953',
-         'until' => 1180648799,
-         'text' => 'geplatzte Wasserleitung, Schulze-Boysen-Str. gesperrt (bis Ende 05.2007)',
-         'from' => 1178564445,
-         'data' => 'userdel	2::inwork 15836,11840 15863,11992
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1185141600,
@@ -1226,9 +1218,9 @@ push @temp_blocking,
        undef,
        {
          'source_id' => 'IM_005465',
-         'until' => 1180648799,
-         'text' => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05/2007)',
-         'from' => 1178917642,
+         'until' => 1212271199,
+         'text' => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05/2008)',
+         'from' => 1180567227,
          'data' => 'userdel	1::inwork 2821,18831 2643,18738 2602,18737 2175,18740 1659,18747 1405,18749 1229,18750
 ',
          'type' => 'gesperrt'
@@ -1361,11 +1353,40 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
        {
          'source_id' => 'IM_005616',
          'until' => undef,
-         'text' => 'Friedrichstr. (Kreuzberg) Richtung Mitte zwischen Kochstr. und Zimmerstr. Baustelle, Fahrtrichtung gesperrt',
+         'text' => 'Friedrichstr. (Kreuzberg) zwischen Kochstr. und Zimmerstr. Baustelle, Radfahrer können aber langsam passieren',
          'from' => undef,
-         'data' => 'userdel	q4::inwork; 9480,11207 9473,11316
+         'data' => 'userdel	q4::inwork 9480,11207 9473,11316
 ',
          'type' => 'handicap'
+       },
+       undef,
+       undef,
+       undef,
+       {
+         'source_id' => 'IM_005464',
+         'until' => 1186005599,
+         'text' => 'Birkenstr. (Wedding) zwischen Lübecker Str. und Stromstr. Baustelle, Straße vollständig gesperrt (bis Anfang 08.2007)',
+         'from' => 1180567260,
+         'data' => 'userdel	2::inwork 6365,13879 6242,13928
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005637',
+         'until' => undef,
+         'text' => 'Blankenfelder Chaussee in beiden Richtungen, zwischen Alt-Lübars und Bahnhofstraße Baustelle, Straße vollständig gesperrt ',
+         'from' => undef,
+         'data' => 'userdel	2::inwork 8132,23478 7185,23749
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1181944800,
+         'text' => 'L 038 zw. Treplin und Sieversdorf Sicherung Hohlräume Vollsperrung 04.06.2007-15.06.2007 ',
+         'from' => 1180821600,
+         'data' => 'userdel	2::inwork 77850,-706 78103,-165
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -7293,7 +7293,7 @@ userdel	1::inwork 11949,10414 12000,10531 12056,10655
 EOF
      },
      { from  => 1178564445, # 2007-05-07 21:00
-       until => 1180648799, # 2007-05-31 23:59
+       until => 1180460014, # 2007-05-31 23:59 1180648799
        text  => 'geplatzte Wasserleitung, Schulze-Boysen-Str. gesperrt (bis Ende 05.2007)',
        type  => 'gesperrt',
        source_id => 'IM_004953',
@@ -7940,9 +7940,9 @@ EOF
 userdel	2::temp 23952,15086 23960,15021 23993,14797
 EOF
      },
-     { from  => 1178917642, # 2007-05-11 23:07
-       until => 1180648799, # 2007-05-31 23:59
-       text  => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05/2007)',
+     { from  => 1180567227, # 2007-05-31 01:20
+       until => 1212271199, # 2008-05-31 23:59
+       text  => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05/2008)',
        type  => 'gesperrt',
        source_id => 'IM_005465',
        data  => <<EOF,
@@ -8266,11 +8266,67 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Friedrichstr. (Kreuzberg) Richtung Mitte zwischen Kochstr. und Zimmerstr. Baustelle, Fahrtrichtung gesperrt',
+       text  => 'Friedrichstr. (Kreuzberg) zwischen Kochstr. und Zimmerstr. Baustelle, Radfahrer können aber langsam passieren',
        type  => 'handicap',
        source_id => 'IM_005616',
        data  => <<EOF,
-userdel	q4::inwork; 9480,11207 9473,11316
+userdel	q4::inwork 9480,11207 9473,11316
+EOF
+     },
+     { from  => 1180459975, # 2007-05-29 19:32
+       until => 1180519200, # 2007-05-30 12:00
+       text  => 'Friedrich-List-Ufer (Tiergarten) in beiden Richtungen bei Hauptbahnhof Veranstaltung, Straße vollständig gesperrt (bis 30.05.2007 ca. 12 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_005623',
+       data  => <<EOF,
+userdel	2::temp 8098,13419 8102,13304 8107,13146 8110,13042
+EOF
+     },
+     { from  => undef, # 
+       until => 1180567339, # XXX
+       text  => 'Lückstr. (Lichtenberg) in beiden Richtungen zwischen Weitlingstr. und Emanuelstr. Einsturzgefahr eines Hauses, Straße vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_005633',
+       data  => <<EOF,
+userdel	2::inwork 16460,10699 16316,10755
+EOF
+     },
+     { from  => 1180506105, # 2007-05-30 08:21
+       until => 1180562399, # 2007-05-30 23:59
+       text  => 'Sperrungen im Neuen Garten wegen des G8-Vorbereitungstreffens, bis 2007-05-30 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp -12185,1388 -12115,1331 -12081,1168 -12191,1196 -12182,816
+userdel	2::temp -11818,993 -11871,1087 -12081,1168
+userdel	2::temp -11887,837 -11856,950
+userdel	2::temp -11581,559 -11650,590 -11603,721 -11615,853 -11715,959
+userdel	2::temp -12000,1243 -11868,1193 -11568,1287 -11537,1206 -11575,1031 -11562,918 -11510,810 -11231,696
+EOF
+     },
+     { from  => 1180567260, # 2007-05-31 01:21
+       until => 1186005599, # 2007-08-01 23:59
+       text  => 'Birkenstr. (Wedding) zwischen Lübecker Str. und Stromstr. Baustelle, Straße vollständig gesperrt (bis Anfang 08.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_005464',
+       data  => <<EOF,
+userdel	2::inwork 6365,13879 6242,13928
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Blankenfelder Chaussee in beiden Richtungen, zwischen Alt-Lübars und Bahnhofstraße Baustelle, Straße vollständig gesperrt ',
+       type  => 'gesperrt',
+       source_id => 'IM_005637',
+       data  => <<EOF,
+userdel	2::inwork 8132,23478 7185,23749
+EOF
+     },
+     { from  => 1180821600, # 2007-06-03 00:00
+       until => 1181944800, # 2007-06-16 00:00
+       text  => 'L 038 zw. Treplin und Sieversdorf Sicherung Hohlräume Vollsperrung 04.06.2007-15.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 77850,-706 78103,-165
 EOF
      },
     );
