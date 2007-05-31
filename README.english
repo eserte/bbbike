@@ -72,6 +72,11 @@ and install the panel entry for KDE, type:
 
 	perl install.pl
 
+or
+
+
+	./install.sh
+
 
 
 You can also use Bundle::BBBike instead of Bundle::BBBike_small. This

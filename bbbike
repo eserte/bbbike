@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.311 2007/05/31 20:06:22 eserte Exp $
+# $Id: bbbike,v 3.312 2007/05/31 21:47:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -208,7 +208,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.311 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.312 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -8898,13 +8898,13 @@ sub plotstr {
 	$str = delete $args{-object};
     }
 
-    # Radwege werden im Edit-Modus besser mit radweg_draw_canvas() gezeichnet
-    # XXX ups? stimmt das noch immer???
-    if ($abk eq 'rw' and $coord_system ne 'standard') {
-	radweg_open();
-	radweg_draw_canvas();
-	return;
-    }
+#     # Radwege werden im Edit-Modus besser mit radweg_draw_canvas() gezeichnet
+#     # XXX ups? stimmt das noch immer??? -> wahrscheinlich nicht! XXX
+#     if ($abk eq 'rw' and $coord_system ne 'standard') {
+# 	radweg_open();
+# 	radweg_draw_canvas();
+# 	return;
+#     }
 
     my $dont_use_cache;
     my $dont_set_cache = 1;
@@ -12011,42 +12011,73 @@ sub leavepoint {
 # Zeigt aktuellen Straßenzugnamen.
 sub enterstr {
     my $c = shift;
-    my(@tags) = $c->gettags('current');
-    my @l;
-    if (grep { $_ eq 'rw' } @tags) {
-	# Special handling for cyclepaths
-	(my $rw_code) = $tags[2] =~ /^rw-(RW\d+)/;
-	my $name = Radwege::code2name($rw_code);
-	if (defined $name) {
-	    push @l, $name;
-	}
-    } else {
-	$act_value{Strasse} = $tags[1];
-	$act_value{Strasse} =~ s/\|.*$//; # Teil hinter "|" abschneiden
-	if (($edit_mode || $edit_normal_mode) and defined $tags[3] and $tags[3] =~ /-(\d+)$/) {
-	    $act_value{Strasse} .= " [" . ($1+1) . "]"; # Zeilennummer
-	}
-	$str_label->configure(-fg => 'black');
 
-	if ($hs_label->cget(-fg) eq 'black') {
-	    push @l, $act_value{Haltestelle};
-	}
-	if (defined $act_value{Strasse} && $act_value{Strasse} ne '') {
-	    push @l, $act_value{Strasse};
-	}
-    }
-
-    if (defined $c_balloon) {
-	if (@l && $use_c_balloon >= 2) {
-	    if ($leave_after) {	$leave_after->cancel; undef $leave_after }
-	    my $str;
-	    if (1) { $str = balloon_info_from_all_tags($c) }
-	    if (!defined $str) {
-		$str = join(" / ", @l);
+    if ($devel_host) { # new code XXX
+	my @balloon_info = balloon_info_from_all_tags($c);
+	if (@balloon_info) {
+	    $act_value{Strasse} = $balloon_info[0];
+	    $str_label->configure(-fg => 'black');
+	    if (defined $c_balloon) {
+	    TRY_BALLOON:
+		{
+		    if ($use_c_balloon >= 2) {
+			if ($leave_after) {
+			    $leave_after->cancel;
+			    undef $leave_after;
+			}
+			my $str = balloon_info_from_all_tags($c);
+			if (defined $str) {
+			    $c_balloon->Popup($str);
+			    last TRY_BALLOON;
+			}
+		    }
+		    $c_balloon->Deactivate;
+		}
 	    }
-	    $c_balloon->Popup($str);
+	}
+	return;
+    } else { # XXX old code 
+	my(@tags) = $c->gettags('current');
+	my @l;
+	if (grep { $_ eq 'rw' } @tags) {
+	    # Special handling for cyclepaths
+	    (my $rw_code) = $tags[2] =~ /^rw-(RW\d+)/;
+	    my $name = Radwege::code2name($rw_code);
+	    if (defined $name) {
+		push @l, $name;
+	    }
 	} else {
-	    $c_balloon->Deactivate;
+	    $act_value{Strasse} = $tags[1];
+	    $act_value{Strasse} =~ s/\|.*$//; # Teil hinter "|" abschneiden
+	    if (($edit_mode || $edit_normal_mode) and defined $tags[3] and $tags[3] =~ /-(\d+)$/) {
+		$act_value{Strasse} .= " [" . ($1+1) . "]"; # Zeilennummer
+	    }
+	    $str_label->configure(-fg => 'black');
+
+	    if ($hs_label->cget(-fg) eq 'black') {
+		push @l, $act_value{Haltestelle};
+	    }
+	    if (defined $act_value{Strasse} && $act_value{Strasse} ne '') {
+		push @l, $act_value{Strasse};
+	    }
+	}
+
+	if (defined $c_balloon) {
+	    if (@l && $use_c_balloon >= 2) {
+		if ($leave_after) {
+		    $leave_after->cancel; undef $leave_after;
+		}
+		my $str;
+		if (1) {
+		    $str = balloon_info_from_all_tags($c);
+		}
+		if (!defined $str) {
+		    $str = join(" / ", @l);
+		}
+		$c_balloon->Popup($str);
+	    } else {
+		$c_balloon->Deactivate;
+	    }
 	}
     }
 }
@@ -19494,6 +19525,104 @@ sub pp_color {
     } else {
 	$c->itemconfigure('pp',
 			  -fill => $pp_color);
+    }
+}
+
+# Very nice. Note that the Tk::CanvasBalloon::Track method cannot cope with
+# dealing with stacked items, so the <Motion> binding in std_str_binding
+# needs additional code to deal with this.
+sub balloon_info_from_all_tags {
+    my($c) = @_;
+    my $e = $c->XEvent;
+    my($xx, $yy) = ($c->canvasx($e->x), $c->canvasy($e->y));
+    my $closeenough = 3; # was 5, then 4
+    my(@items) = $c->find(overlapping =>
+			  $xx-$closeenough, $yy-$closeenough,
+			  $xx+$closeenough, $yy+$closeenough);
+    # Now using "reverse", so top-most items are preferred
+    @items = reverse @items;
+    if (!@items) {
+	push @items, "current";
+    }
+    my @major_balloon_info;
+    my @balloon_info;
+    my %balloon_info_seen;
+    my $major_item_seen = 0;
+    my $comments_rx = join("|", map { "comm-" . quotemeta }
+			   grep { $_ ne "kfzverkehr" } # list types without meaningful "name" field
+			   @Strassen::Dataset::comments_types);
+    for my $item (@items) {
+	my(@tags) = $c->gettags($item);
+	if ($verbose && $verbose >= 2) {
+	    require Data::Dumper;
+	    print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@tags],[qw()])->Indent(1)->Useqq(1)->Dump;
+	}
+
+	if ($tags[0] =~ m{^(s|l|$comments_rx|qs|ql|hs|hl|fz|u|b|r|f|w|rw|e|temp_sperre|temp_sperre_s|L\d+|L\d+-fg)$}) {
+	    my $label = $tags[1];
+	    if ($tags[0] eq 'rw') { # Special handling for cyclepaths
+		(my $rw_code) = $tags[2] =~ /^rw-(RW\d+)/;
+		my $name = Radwege::code2name($rw_code);
+		if (defined $name) {
+		    $label = $name;
+		}
+	    } elsif ($tags[0] eq 'temp_sperre') {
+		$label = $tags[2];
+	    }
+	    next if $label =~ m{^\s*$};
+	    $label =~ s/\|.*$//; # Teil hinter "|" abschneiden
+	    if ($tags[0] =~ m{^(s|l)$}) { # most significant, should be top-most:
+		if (!exists $balloon_info_seen{$label}) {
+		    push @major_balloon_info, $label;
+		    $balloon_info_seen{$label} = 1;
+		}
+		$major_item_seen++;
+	    } else {
+		if ($tags[0] =~ m{^(qs|ql|hs|hl)$}) {
+		    if ($label =~ m{^(?:.*)?:\s*(.*)}) {
+			$label = $1;
+		    }
+		    if (my($cat) = $tags[2] =~ m{-(.*)}) {
+			if ($cat eq 'img') {
+			    # not the category, but really an quality/handicap
+			    # image, most probably an in-construction image
+			    next;
+			}
+			$label .= " ($cat)";
+		    }
+		} elsif ($tags[0] =~ m{^L\d+-fg$}) {
+		    $label = $tags[2];
+		}
+		if ($major_item_seen && $tags[0] =~ m{^(f|w)$}) {
+		    next;
+		}
+		if (!exists $balloon_info_seen{$label}) {
+		    push @balloon_info, $label;
+		    $balloon_info_seen{$label} = 1;
+		}
+	    }
+	}
+    }
+
+    @balloon_info = (@major_balloon_info, @balloon_info);
+
+    if ($verbose && $verbose >= 2) {
+	require Data::Dumper;
+	print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@balloon_info],[qw(balloon_info)])->Indent(1)->Useqq(1)->Dump;
+    }
+
+    if (wantarray) {
+	if (!@balloon_info) {
+	    ();
+	} else {
+	    @balloon_info;
+	}
+    } else {
+	if (!@balloon_info) {
+	    undef;
+	} else {
+	    join("\n", @balloon_info);
+	}
     }
 }
 

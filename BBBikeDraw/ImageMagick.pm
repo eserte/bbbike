@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ImageMagick.pm,v 1.17 2006/10/07 09:42:06 eserte Exp $
+# $Id: ImageMagick.pm,v 1.18 2007/05/31 21:44:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -36,7 +36,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -159,6 +159,7 @@ sub draw_map {
  		my $s = $strecke->next;
  		last if !@{$s->[1]};
  		my $cat = $s->[2];
+		$cat =~ s{::.*}{};
 # XXX what about outlined areas?
 #  	    if ($cat =~ /^F:(.*)/) {
 #  		if ($1 eq 'I') {
@@ -232,6 +233,7 @@ sub draw_map {
 			  fill => $c,
 			  stroke => $oc);
 	    } elsif ($cat !~ $BBBikeDraw::bahn_bau_rx) { # Ausnahmen: in Bau
+		$cat =~ s{::.*}{};
 		next if $restrict && !$restrict->{$cat};
 		my $color = defined $color{$cat} ? $color{$cat} : $white;
 		my $width = defined $width{$cat} ? $width{$cat} : 1;

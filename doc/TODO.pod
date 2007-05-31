@@ -16,10 +16,25 @@ Legend:
 
     bug, external bug
     feature, external feature
+    improvement
 
 =head1 Perl/Tk version of BBBike
 
 =over
+
+=item * (H3) (feature)
+
+Create a small toolbar in the footer bar which displays the
+current optimization settings in a few letter or with images. Also, a
+shortcut to change the optimization settings should be possible there,
+at least by showing the existing preferences window.
+
+=item * (H3) (improvement)
+
+balloon_info_from_all_tags should also deal with E<quot>pointE<quot>
+values (Haltestellen, Einbahnstraßen...). Then enterpoint could be
+replaced by an universal enterstr. Also, enterroute should be probably
+replaced by an extended enterstr.
 
 =item * (M1) (feature)
 
@@ -1474,7 +1489,7 @@ Auch: in doc/tests.pod aufnehmen!
 Tie::File in die Windows-(SiePerl)-Distribution reinnehmen. Dann kann
 ich Sachen wie F8 propagieren und DB_File/RECNO langsam auslaufen
 lassen. -> DONE, check missing! -> neue win-distro zum testen
-auf usb-stick kopieren!
+auf usb-stick kopieren! -> make-target dafür schreiben
 
 =item * (M1)
 
@@ -2144,6 +2159,38 @@ L<http://www.bradculberson.com/cc/map.html> erzeugt werden.
 =head1 Routing (BBBikeRouting.pm, Strassen::StrassenNetz)
 
 =over
+
+=item * (H3)
+
+Idee: in bbd-Dateien die Möglichkeit erzeugen, Display-only- und
+Routing-only-Informationen ablegen zu können. Z.B.
+
+    #: routing-only vvv
+    Straße	q4; X1,Y1 X2,Y2
+    #: routing-only ^^^
+    #: display-only vvv
+    Straße	1 X1,Y1 X2,Y2
+    #: display-only ^^^
+
+In diesem Beispiel würde die Straße als Einbahnstraße dargestellt
+werden, aber im Routing als Schrittgeschwindigkeitstraße behandelt
+werden. Siehe auch nächstes Item.
+
+=item * (H4)
+
+Es sollte eine weitere Abgrenzung bei den Kategorien 1 (Einbahnstraße)
+und 2 (gesperrte Straße) geben, und zwar Einbahnstraßen/gesperrte
+Straßen, die man mit Schrittgeschwindigkeit passieren kann.
+Darstellung wäre also als Einbahnstraße, vielleicht mit einem
+speziellen Symbol dazu, und im Routing würde es als q4 angesehen
+werden. Dann könnte ich vielleicht auch die E<quot>1sE<quot>-Kategorie
+entfernen.
+
+In der Routingliste (bbbike.cgi und Perl/Tk) sollte ein entsprechender
+Text (E<quot>gegen die Einbahnstraße schiebenE<quot>) auftauchen.
+
+Ganz wichtig: Straßen wie B96a/Adlergestell, die wirklich nicht
+passierbar sind, sollen es auch bleiben! Be careful...
 
 =item * (H5)
 
@@ -3068,8 +3115,7 @@ nachinstallieren (siehe Bundle::BBBike).
 install.pl: Is completely broken now and should made working for
 current GNOME/KDE versions.
 
-Also: it's not possible to start install.pl from konqueror. Try the
-install.pl.desktop experiment further...
+Also: the toplevel resizing seems to be broken in kwin.
 
 Windows support is not really necessary anymore, as we have the ISS
 installer.

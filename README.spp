@@ -23,7 +23,7 @@
 ## perlreplace #HTTPCVS#    $BBBike::BBBIKE_CVS_HTTP
 ## perlreplace #CVSREPO#    $BBBike::BBBIKE_CVS_ANON_REPOSITORY
 ## dnl
-## dnl $Id: README.spp,v 2.41 2007/03/31 20:02:17 eserte Exp $
+## dnl $Id: README.spp,v 2.42 2007/05/31 22:27:05 eserte Exp $
 ## dnl strpp source of README
 ## dnl
 =head1 README
@@ -192,6 +192,17 @@ and install the panel entry for KDE, type:
 
 
 	perl install.pl
+
+
+## only DE
+oder
+## but DE
+or
+## yes
+
+
+
+	./install.sh
 
 
 ## only DE

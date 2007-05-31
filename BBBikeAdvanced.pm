@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.178 2007/05/24 22:49:30 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.179 2007/05/31 21:48:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -4020,86 +4020,6 @@ sub module_exists {
     return 0;
 }
 # REPO END
-
-# Very nice. Note that the Tk::CanvasBalloon::Track method cannot cope with
-# dealing with stacked items, so the <Motion> binding in std_str_binding
-# needs additional code to deal with this.
-sub balloon_info_from_all_tags {
-    my($c) = @_;
-    my $e = $c->XEvent;
-    my($xx, $yy) = ($c->canvasx($e->x), $c->canvasy($e->y));
-    # 5: matches value of -closeenough
-    my $closeenough = 4; # was 5
-    my(@items) = $c->find(overlapping =>
-			  $xx-$closeenough, $yy-$closeenough,
-			  $xx+$closeenough, $yy+$closeenough);
-    # Now using "reverse", so top-most items are preferred
-    @items = reverse @items;
-    if (!@items) {
-	push @items, "current";
-    }
-    my @balloon_info;
-    my %balloon_info_seen;
-    my $major_item_seen = 0;
-    my $comments_rx = join("|", map { "comm-" . quotemeta }
-			   grep { $_ ne "kfzverkehr" } # list types without meaningful "name" field
-			   @Strassen::Dataset::comments_types);
-    for my $item (@items) {
-	my(@tags) = $c->gettags($item);
-	if ($verbose && $verbose >= 2) {
-	    require Data::Dumper;
-	    print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@tags],[qw()])->Indent(1)->Useqq(1)->Dump;
-	}
-
-	if ($tags[0] =~ m{^(s|l|$comments_rx|qs|ql|hs|hl|fz|u|b|r|f|w|rw|e|temp_sperre|temp_sperre_s|L\d+|L\d+-fg)$}) {
-	    my $label = $tags[1];
-	    if ($tags[0] eq 'rw') { # Special handling for cyclepaths
-		(my $rw_code) = $tags[2] =~ /^rw-(RW\d+)/;
-		my $name = Radwege::code2name($rw_code);
-		if (defined $name) {
-		    $label = $name;
-		}
-	    } elsif ($tags[0] eq 'temp_sperre') {
-		$label = $tags[2];
-	    }
-	    next if $label =~ m{^\s*$};
-	    if ($tags[0] =~ m{^(s|l)$}) { # most significant:
-		unshift @balloon_info, $label;
-		$major_item_seen++;
-	    } else {
-		if ($tags[0] =~ m{^(qs|ql|hs|hl)$}) {
-		    if ($label =~ m{^(?:.*)?:\s*(.*)}) {
-			$label = $1;
-		    }
-		    if (my($cat) = $tags[2] =~ m{-(.*)}) {
-			if ($cat eq 'img') {
-			    # not the category, but really an quality/handicap
-			    # image, most probably an in-construction image
-			    next;
-			}
-			$label .= " ($cat)";
-		    }
-		} elsif ($tags[0] =~ m{^L\d+-fg$}) {
-		    $label = $tags[2];
-		}
-		if ($major_item_seen && $tags[0] =~ m{^(f|w)$}) {
-		    next;
-		}
-		if (!exists $balloon_info_seen{$label}) {
-		    push @balloon_info, $label;
-		    $balloon_info_seen{$label} = 1;
-		}
-	    }
-	}
-    }
-
-    if ($verbose && $verbose >= 2) {
-	require Data::Dumper;
-	print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@balloon_info],[qw(balloon_info)])->Indent(1)->Useqq(1)->Dump;
-    }
-
-    !@balloon_info ? undef : join("\n", @balloon_info);
-}
 
 1;
 

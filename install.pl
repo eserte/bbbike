@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: install.pl,v 4.13 2007/04/15 22:02:28 eserte Exp $
+# $Id: install.pl,v 4.14 2007/05/31 22:29:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2001,2007 Slaven Rezic. All rights reserved.
@@ -253,8 +253,9 @@ if ($use_tk) {
     my $min = sub { $_[0] < $_[1] ? $_[0] : $_[1] };
     # XXX The -width seems to be necessary, otherwise the window
     # will have the size 1x1 pixels (why?)
-    $close_frame = $top->Frame(-width => $min->(500,$top->screenwidth),
-			       #-height => $min->(50,$top->screenheight),
+    # Same for the height.
+    $close_frame = $top->Frame(-width => $min->(600,$top->screenwidth),
+			       -height => $min->(300,$top->screenheight),
 			      )->pack(-fill => "x", -side => "bottom");
     $txt = $top->Scrolled('ROText', -scrollbars => 'osoe',
 			  -wrap => "none",

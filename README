@@ -71,6 +71,11 @@ das Programm gestartet werden. Mit
 
 	perl install.pl
 
+oder
+
+
+	./install.sh
+
 kann optional eine Compilierung von einigen XS-Modulen durchgeführt
 werden sowie Einträge für KDE erzeugt werden. Für das Compilieren
 ist ein C-Compiler (z.B. gcc), der mittlerweile nicht bei allen

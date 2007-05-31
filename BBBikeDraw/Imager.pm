@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Imager.pm,v 1.22 2006/10/07 09:56:03 eserte Exp $
+# $Id: Imager.pm,v 1.23 2007/05/31 23:05:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -45,7 +45,7 @@ use vars @colors;
 #      }
 #  }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -184,6 +184,7 @@ sub draw_map {
 		my $s = $strecke->next;
 		last if !@{$s->[1]};
 		my $cat = $s->[2];
+		$cat =~ s{::.*}{};
 #  	    if ($cat =~ /^F:(.*)/) {
 #  		if ($1 eq 'I') {
 #  		    next; # Inseln vorerst ignorieren
@@ -242,6 +243,7 @@ my $s = $strecke->get($strpos);
 		}
 		$im->polygon(points => $points, color => $c);
 	    } elsif ($cat !~ $BBBikeDraw::bahn_bau_rx) { # Ausnahmen: in Bau
+		$cat =~ s{::.*}{};
 		next if $restrict && !$restrict->{$cat};
 		my $color = defined $color{$cat} ? $color{$cat} : $white;
 		my $width = $width{$cat} || 1;

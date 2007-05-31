@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SVG.pm,v 1.21 2007/02/03 11:06:38 eserte Exp $
+# $Id: SVG.pm,v 1.22 2007/05/31 21:44:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -28,7 +28,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -234,6 +234,7 @@ sub draw_map {
 		my $s = $strecke->next;
 		last if !@{$s->[1]};
 		my $cat = $s->[2];
+		$cat =~ s{::.*}{};
 		next if $restrict && !$restrict->{$cat};
 
 		my @p = map { [map { sprintf "%.2f", $_ } &$transpose(split /,/, $_)] } @{$s->[Strassen::COORDS]};
@@ -309,6 +310,7 @@ sub draw_map {
 			   );
 
 	    } elsif ($cat !~ $BBBikeDraw::bahn_bau_rx) { # Ausnahmen: in Bau
+		$cat =~ s{::.*}{};
 		my $style = $style{$cat};
 
 #  		$im->set_line_width(($width{$cat} || 1) * 1);
