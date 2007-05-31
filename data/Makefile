@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.140 2007/05/07 01:05:34 eserte Exp $
+# $Id: Makefile,v 2.140 2007/05/07 01:05:34 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -296,7 +296,7 @@ sbahn: sbahn-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) -strip-future-categories sbahn-orig > /tmp/sbahn
 .for cat in $(SBAHN_CATEGORIES)
-	$(GREPSTRASSEN) -cat $(cat) /tmp/sbahn | $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/sbahn-$(cat)
+	$(GREPSTRASSEN) -catrx ^$(cat).* /tmp/sbahn | $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/sbahn-$(cat)
 .endfor
 	cat $(SBAHN_CATEGORIES:S/^/\/tmp\/sbahn-/) > sbahn~
 	mv sbahn~ sbahn

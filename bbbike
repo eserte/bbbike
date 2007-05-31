@@ -5986,9 +5986,9 @@ sub generate_plot_functions {
 			my $line_dash = ($layer_category_dash{$abk} && $layer_category_dash{$abk}{$cat_hin}) || $layer_line_dash{$abk} || $category_dash{$cat_hin} || $line_dash{$abk};
 		        if (@addinfo_hin) { # ignore @addinfo_rueck for now
 			    for my $addinfo_hin (@addinfo_hin) {
-			        if ($addinfo_hin eq 'Tu') {
+			        if ($addinfo_hin =~ m{^_?Tu_?$}) {
 				    $line_dash = $line_dash{"Tu"};
-				    draw_tunnel_entrance(\@coordlist, width => $this_width_hin+4, tags => \@std_tags);
+				    draw_tunnel_entrance(\@coordlist, width => $this_width_hin+4, tags => \@std_tags, mounds => $addinfo_hin);
 				} elsif ($addinfo_hin eq 'Br') {
 				    draw_bridge(\@coordlist, width => $this_width_hin+4, tags => \@std_tags);
 				}
@@ -6059,8 +6059,8 @@ sub generate_plot_functions {
 			    }
 			} elsif ($cat_hin eq 'Br') {
 			    draw_bridge(\@coordlist, width => $this_width_hin+4, tags => \@std_tags);
-			} elsif ($cat_hin eq 'Tu') {
-			    draw_tunnel_entrance(\@coordlist, width => $this_width_hin+4, tags => \@std_tags);
+			} elsif ($cat_hin =~ m{^_?Tu_?$}) {
+			    draw_tunnel_entrance(\@coordlist, width => $this_width_hin+4, tags => \@std_tags, mounds => $cat_hin);
 			} else {
 			    $item = $c->createLine
 				(@coordlist,
@@ -11735,8 +11735,10 @@ sub draw_tunnel_entrance {
     my $width = $args{width}||20;
     my $color = '#505050';
     my $thickness = 3;
+    my $mounds = delete $args{mounds} || "_Tu_";
+    if ($mounds eq 'Tu') { $mounds = '_Tu_' }
 #XXX complicated code, make nicer!
-    {
+    if ($mounds =~ m{^_}) {
 	my $alpha = atan2($cl->[3]-$cl->[1],$cl->[2]-$cl->[0]);
 	my $beta  = $alpha - pi()/2;
 	my $knick = $alpha - pi()/4;
@@ -11755,7 +11757,7 @@ sub draw_tunnel_entrance {
 		       -fill => $color,
 		      );
     }
-    {
+    if ($mounds =~ m{_$}) {
 	my $alpha = atan2($cl->[-1]-$cl->[-3],$cl->[-2]-$cl->[-4]);
 	my $beta  = $alpha - pi()/2;
 	my $knick = $alpha - pi()/4;
