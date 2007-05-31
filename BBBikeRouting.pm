@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.43 2007/05/24 22:45:17 eserte Exp $
+# $Id: BBBikeRouting.pm,v 1.44 2007/05/31 20:04:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -694,19 +694,11 @@ sub search {
 	    $self->Path([@{ $self->Path },
 			 @{ $res }]);
 	}
-	my $whole;
-	{
-	    local $^W; # supress "numeric" warnings
-	    $whole = $self->RouteInfo->[-1]->{Whole} + 0;
-	}
 	my @new_route_info = $self->Net->route_info(Route => $res,
 						    Km    => $context->RouteInfoKm,
 						    PathIndexStart => $path_index_start,
+						    StartMeters => $self->RouteInfo->[-1]->{WholeMeters},
 						   );
-	for (@new_route_info) {
-	    my($num,$unit) = split /\s+/, $_->{Whole};
-	    $_->{Whole} = ($num+$whole) . " $unit";
-	}
 	$self->RouteInfo([@{ $self->RouteInfo }, @new_route_info ]);
     } else {
 	$self->Path([]);
@@ -751,17 +743,12 @@ sub add_position {
 	require Strassen::Util;
 	require BBBikeUtil;
 	my $hop = Strassen::Util::strecke(@{$self->Path}[-2,-1]);
-	my $whole;
-	{
-	    local $^W; # supress "numeric" warnings
-	    $whole = $self->RouteInfo->[-1]->{Whole} + 0
-		if $self->RouteInfo->[-1];
-	    $whole += BBBikeUtil::m2km($hop);
-	    $whole .= " km";
-	}
+	my $whole_meters = ($self->RouteInfo->[-1] ? $self->RouteInfo->[-1]->{WholeMeters} : 0) + $hop;
+	my $whole = BBBikeUtil::m2km($whole_meters) . " km";
 	push @{ $self->RouteInfo },
 	    {Hop => BBBikeUtil::m2km($hop),
 	     Whole => $whole,
+	     WholeMeters => $whole_meters,
 	     Way => "", # XXX
 	     Angle => "", # XXX
 	     Direction => "", # XXX

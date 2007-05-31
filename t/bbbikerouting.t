@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.30 2006/09/21 21:32:25 eserte Exp $
+# $Id: bbbikerouting.t,v 1.31 2007/05/31 20:25:26 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -32,7 +32,7 @@ BEGIN {
     }
 }
 
-my $num_tests = 76; # basic number of tests
+my $num_tests = 80; # basic number of tests
 
 use vars qw($single $all $common $bench $v $do_xxx);
 
@@ -206,15 +206,29 @@ sub do_tests {
 	local $^W; # no "numeric" warning
 	ok($routing->RouteInfo->[0]->{Whole} < $routing->RouteInfo->[-1]->{Whole}, "Positive distance");
     }
+    ok($routing->RouteInfo->[0]->{WholeMeters} < $routing->RouteInfo->[-1]->{WholeMeters}, "Positive distance (in meters)");
     is($routing->RouteInfo->[-1]->{Street}, $goal_street, "Goal street is really goal street");
     my $new_goal = BBBikeRouting::Position->new;
     $new_goal->Street("Alexanderstr");
+    my $route_info_length = scalar @{ $routing->RouteInfo };
     $routing->continue($new_goal);
     is($routing->Goal->Street, "Alexanderstr", "Continued to new goal");
     is(scalar @{$routing->Via}, 1, "With a new via");
     is($routing->Via->[0]->Street, "Sonntagstr./Böcklinstr.", "Correct via");
     $routing->search;
     is($routing->RouteInfo->[-1]->{Street}, $routing->Goal->Street);
+
+    my $new_route_info_length = scalar @{ $routing->RouteInfo };
+    cmp_ok($route_info_length, "<", $new_route_info_length, "New route has more hops");
+    cmp_ok($routing->RouteInfo->[$route_info_length-1]->{WholeMeters}, "<",
+	   $routing->RouteInfo->[$route_info_length]->{WholeMeters},
+	   "Route length looks OK after continuation");
+    {
+	local $^W; # no "numeric" warning
+	cmp_ok($routing->RouteInfo->[$route_info_length-1]->{Whole}, "<",
+	       $routing->RouteInfo->[$route_info_length]->{Whole},
+	       "Human readable route length looks OK after continuation");
+    }
 
     $routing->delete_to_last_via;
 

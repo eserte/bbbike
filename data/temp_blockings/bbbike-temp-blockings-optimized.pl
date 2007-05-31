@@ -978,9 +978,10 @@ push @temp_blocking,
        undef,
        {
          'until' => 1191189599,
-         'text' => 'Manteuffelstr. zwischen Skalitzer Str. und Naunynstr.: Einbahnstraßenregelung bis Ende 09.2007 ',
+         'text' => 'Manteuffelstr. zwischen Skalitzer Str. und Naunynstr. sowie Skalitzer Str. und Paul-Lincke-Ufer: Einbahnstraßenregelung bis Ende 09.2007 ',
          'from' => undef,
          'data' => 'userdel	1::inwork 11949,10414 12000,10531 12056,10655
+userdel	1::inwork 11949,10414 11833,10206 11735,10022
 ',
          'type' => 'gesperrt'
        },
@@ -1360,7 +1361,15 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
          'type' => 'handicap'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'IM_005633',
+         'until' => undef,
+         'text' => 'Lückstr. (Lichtenberg) in beiden Richtungen zwischen Weitlingstr. und Emanuelstr. Einsturzgefahr eines Hauses, Straße vollständig gesperrt',
+         'from' => undef,
+         'data' => 'userdel	2::inwork 16460,10699 16316,10755
+',
+         'type' => 'gesperrt'
+       },
        undef,
        {
          'source_id' => 'IM_005464',

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.50 2007/05/23 21:35:41 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.51 2007/05/31 20:06:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.50 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.51 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -126,7 +126,7 @@ use vars qw($mapscale $default_mapscale);
 use vars qw($small_scale $medium_scale $small_scale_edit $medium_scale_edit);
 use vars qw($zoomrect_after $showmark_after $bbbike_route_ext);
 use vars qw(%active_speed_power);
-use vars qw(%str_restrict %str_ignore);
+use vars qw(%str_restrict %str_ignore $tunnel_qr);
 use vars qw(%tag_group);
 use vars qw(@route_strnames);
 use vars qw($net_type %add_net);

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.56 2007/05/24 22:45:55 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.57 2007/05/31 20:04:55 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -29,7 +29,7 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =cut
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.56 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.57 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz;
 use strict;
@@ -1474,6 +1474,10 @@ Set the accuracy for angles in degrees. Default is 10E<deg>.
 Set the start index for the reference to the Path/Route array. By
 default 0.
 
+=item StartMeters
+
+Set the start distance. Used for continued routes. By default 0.
+
 =back
 
 The output is an array of hash elements with the following keys:
@@ -1533,13 +1537,13 @@ sub route_info {
    my $s_in_km        = $args{Km};
    my $angle_accuracy = $args{AngleAccuracy} || 10;
    my $path_index_start = $args{PathIndexStart} || 0;
+   my $whole          = $args{StartMeters} || 0;
 
    my $s_sub = ($s_in_km ? sub { m2km($_[0]) } : sub { $_[0] });
 
    my @search_route = $self->route_to_name($routeref);
    my @route_info;
    my @route_strnames;
-   my $whole = 0;
    my($next_angle, $next_direction)
 	= ("", undef, "");
    my $last_str;
