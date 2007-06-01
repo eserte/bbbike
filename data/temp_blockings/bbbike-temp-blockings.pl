@@ -8284,7 +8284,7 @@ userdel	2::temp 8098,13419 8102,13304 8107,13146 8110,13042
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1180730929, # XXX undef
        text  => 'Lückstr. (Lichtenberg) in beiden Richtungen zwischen Weitlingstr. und Emanuelstr. Einsturzgefahr eines Hauses, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005633',
@@ -8328,6 +8328,62 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 77850,-706 78103,-165
+EOF
+     },
+     { from  => 1181599200, # 2007-06-12 00:00
+       until => 1182117600, # 2007-06-18 00:00
+       text  => 'K 6503 Wandlitzer Chaussee Bahnübergang in der OT Lubowsee Gleisbauarbeiten Vollsperrung 13.06.2007-17.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 9067,36377 9439,36963 10209,37661
+EOF
+     },
+     { from  => 1180562400, # 2007-05-31 00:00
+       until => 1180908000, # 2007-06-04 00:00
+       text  => 'K 6747 Groß Schauen-Alt Stahnsdorf Bahnübergang bei Philadelphia Gleisbauarbeiten Vollsperrung 01.06.2007-03.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 44269,-15317 44343,-15112 44369,-14650
+EOF
+     },
+     { from  => 1181426400, # 2007-06-10 00:00
+       until => 1181685600, # 2007-06-13 00:00
+       text  => 'K 6747 Groß Schauen-Alt Stahnsdorf Bahnübergang bei Philadelphia Gleisbauarbeiten Vollsperrung 11.06.2007-12.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 44269,-15317 44343,-15112 44369,-14650
+EOF
+     },
+     { from  => 1181858400, # 2007-06-15 00:00
+       until => 1182376800, # 2007-06-21 00:00
+       text  => 'K 6747 Groß Schauen-Alt Stahnsdorf Bahnübergang bei Philadelphia Gleisbauarbeiten Vollsperrung 16.06.2007-20.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 44269,-15317 44343,-15112 44369,-14650
+EOF
+     },
+     { from  => 1180562400, # 2007-05-31 00:00
+       until => 1181944800, # 2007-06-16 00:00
+       text  => 'K 6748 Kummersdorf-Alt Stahnsdorf Bahnübergang in Kummersdorf Gleisbauarbeiten Vollsperrung 01.06.2007-15.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 43279,-13594 42804,-13910 42430,-14398
+EOF
+     },
+     { from  => 1180821600, # 2007-06-03 00:00
+       until => 1181340000, # 2007-06-09 00:00
+       text  => 'L 030 Luckenwalder Str. OD Königs Wusterhausen, zw. Cottbuser Str. und ALDI Kanalarbeiten Vollsperrung 04.06.2007-08.06.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 25543,-12403 25912,-11956
+EOF
+     },
+     { from  => 1182031200, # 2007-06-17 00:00
+       until => 1182549600, # 2007-06-23 00:00
+       text  => 'L 040 L 23 Storkow-L 39 Friedersdorf Bahnübergang bei Kummersdorf Gleisbauarbeiten Vollsperrung 18.06.2007-22.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 44261,-14205 43456,-14384 42430,-14398
 EOF
      },
     );

@@ -588,14 +588,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1180648800,
-         'text' => 'L 141 Neustadt-Bahnhof Zernitz Dossebrücke in der OL Neustadt Brückenneubau Vollsperrung 14.08.2006-31.05.2007 ',
-         'from' => 1155420000,
-         'data' => 'userdel	2::inwork -56556,49662 -56487,49318 -56325,49162
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -785,14 +778,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1180648800,
-         'text' => 'B 198 Straße des Friedens OD Angermünde, zw. Am Kamp u. Krz. Berliner-/Gartenstr. Kanal- und Straßenbau Vollsperrung 28.08.2006-31.05.2007 ',
-         'from' => 1156629600,
-         'data' => 'userdel	q4::inwork 49728,68465 49875,68362
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_004242',
          'until' => 1183240799,
@@ -840,15 +826,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_004447',
-         'until' => 1180648799,
-         'text' => 'Oranienstr. und Lobeckstr. (Kreuzberg) in beiden Richtungen an der Kreuzung Baustelle, Oranienstr. auf einen Fahrstreifen je Richtung verengt, Lobeckstr. Einbahnstr. Richtung Ritterstr. (bis Ende 05.2007)',
-         'from' => 1178865859,
-         'data' => 'userdel	1::inwork 10572,10773 10673,10975
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -904,14 +882,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1180648800,
-         'text' => 'L 211 Lehnitzstr. OL Oranienburg, zw. A.-Pican-Str. und Dr.-H.-Byk-Str. Munitionssuche u. -bergung Vollsperrung 01.07.2006-31.05.2007 ',
-         'from' => 1151618400,
-         'data' => 'userdel	2::inwork -198,37506 -591,37970
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Paul-Schwarz-Promenade zwischen Krahmerstr. und Klinikum bis auf weiteres wegen Bauarbeiten gesperrt',
@@ -1100,14 +1071,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        },
        undef,
        undef,
-       {
-         'until' => 1180648800,
-         'text' => 'L 015 Mühlenstr. OD Rheinsberg, zw. Schloßstr. u. Rhinstr. Kanalarbeiten Vollsperrung 02.04.2007-31.05.2007 ',
-         'from' => 1175378400,
-         'data' => 'userdel	q4::inwork -25679,76561 -25764,76324
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1182549600,
          'text' => 'L 015 zw. Gollmitz u. Berkholz u. Boitzenburg Deckensanierung Vollsperrung 10.04.2007-22.06.2007 ',
@@ -1361,15 +1325,7 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_005633',
-         'until' => undef,
-         'text' => 'Lückstr. (Lichtenberg) in beiden Richtungen zwischen Weitlingstr. und Emanuelstr. Einsturzgefahr eines Hauses, Straße vollständig gesperrt',
-         'from' => undef,
-         'data' => 'userdel	2::inwork 16460,10699 16316,10755
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_005464',
@@ -1394,6 +1350,62 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
          'text' => 'L 038 zw. Treplin und Sieversdorf Sicherung Hohlräume Vollsperrung 04.06.2007-15.06.2007 ',
          'from' => 1180821600,
          'data' => 'userdel	2::inwork 77850,-706 78103,-165
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1182117600,
+         'text' => 'K 6503 Wandlitzer Chaussee Bahnübergang in der OT Lubowsee Gleisbauarbeiten Vollsperrung 13.06.2007-17.06.2007 ',
+         'from' => 1181599200,
+         'data' => 'userdel	2::inwork 9067,36377 9439,36963 10209,37661
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1180908000,
+         'text' => 'K 6747 Groß Schauen-Alt Stahnsdorf Bahnübergang bei Philadelphia Gleisbauarbeiten Vollsperrung 01.06.2007-03.06.2007 ',
+         'from' => 1180562400,
+         'data' => 'userdel	2::inwork 44269,-15317 44343,-15112 44369,-14650
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1181685600,
+         'text' => 'K 6747 Groß Schauen-Alt Stahnsdorf Bahnübergang bei Philadelphia Gleisbauarbeiten Vollsperrung 11.06.2007-12.06.2007 ',
+         'from' => 1181426400,
+         'data' => 'userdel	2::inwork 44269,-15317 44343,-15112 44369,-14650
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1182376800,
+         'text' => 'K 6747 Groß Schauen-Alt Stahnsdorf Bahnübergang bei Philadelphia Gleisbauarbeiten Vollsperrung 16.06.2007-20.06.2007 ',
+         'from' => 1181858400,
+         'data' => 'userdel	2::inwork 44269,-15317 44343,-15112 44369,-14650
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1181944800,
+         'text' => 'K 6748 Kummersdorf-Alt Stahnsdorf Bahnübergang in Kummersdorf Gleisbauarbeiten Vollsperrung 01.06.2007-15.06.2007 ',
+         'from' => 1180562400,
+         'data' => 'userdel	2::inwork 43279,-13594 42804,-13910 42430,-14398
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1181340000,
+         'text' => 'L 030 Luckenwalder Str. OD Königs Wusterhausen, zw. Cottbuser Str. und ALDI Kanalarbeiten Vollsperrung 04.06.2007-08.06.2007 ',
+         'from' => 1180821600,
+         'data' => 'userdel	q4::inwork 25543,-12403 25912,-11956
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1182549600,
+         'text' => 'L 040 L 23 Storkow-L 39 Friedersdorf Bahnübergang bei Kummersdorf Gleisbauarbeiten Vollsperrung 18.06.2007-22.06.2007 ',
+         'from' => 1182031200,
+         'data' => 'userdel	2::inwork 44261,-14205 43456,-14384 42430,-14398
 ',
          'type' => 'gesperrt'
        }
