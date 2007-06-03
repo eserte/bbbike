@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: treffpunkte.cgi,v 1.5 2007/05/20 21:33:18 eserte Exp $
+# $Id: treffpunkte.cgi,v 1.6 2007/06/02 11:53:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -42,19 +42,29 @@ sub show_list {
 
     print header, start_html(-title => "Treffpunkte der Sternfahrt $year",
 			     -style=>{-src=> '/BBBike/html/bbbike.css'},
-			    ), h1("Treffpunkte der Sternfahrt $year"), "<ul>";
+			    ), h1("Treffpunkte der Sternfahrt $year");
+
+    print p;
+
+    print "Sortiert nach: ";
 
     if ($sort eq "name") {
 	my $qq = CGI->new(query_string);
 	$qq->param("sort", "time");
-	print a({-href => BBBikeCGIUtil::my_self_url($qq)}, "Sortiert nach Zeit");
+	print a({-href => BBBikeCGIUtil::my_self_url($qq)}, "Zeit");
     } else {
-	my $qq = CGI->new(query_string);
-	$qq->param("sort", "name");
-	print a({-href => BBBikeCGIUtil::my_self_url($qq)}, "Sortiert nach Treffpunkt");
+	print b("Zeit")." | ";
     }
 
-    print p;
+    if ($sort eq 'time') {
+	my $qq = CGI->new(query_string);
+	$qq->param("sort", "name");
+	print a({-href => BBBikeCGIUtil::my_self_url($qq)}, "Treffpunkt");
+    } else {
+	print " | ".b("Treffpunkt");
+    }
+
+    print p, ul;
 
     push_INC();
     require Strassen::Core;

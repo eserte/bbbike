@@ -1244,23 +1244,8 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_005532',
-         'until' => 1180735199,
-         'text' => 'Flottwellstr. (Tiergarten) Richtung Potsdamer Str. Baustelle, Fahrtrichtung gesperrt (bis Anfang 06.2007)',
-         'from' => 1179648093,
-         'data' => 'userdel	1::inwork 8336,10829 8300,10823 8281,10791 8199,10634
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1180735200,
-         'text' => 'L 037 Müllrose-Petersdorf Bahnübergang in der OL Jacobsdorf Gleisbauarbeiten Vollsperrung 31.05.2007-01.06.2007 ',
-         'from' => 1180476000,
-         'data' => 'userdel	2::inwork 75402,-6910 75394,-6991 75272,-7514
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        {
@@ -1408,6 +1393,42 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
          'data' => 'userdel	2::inwork 44261,-14205 43456,-14384 42430,-14398
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005660',
+         'until' => undef,
+         'text' => 'Alt-Müggelheim (Köpenick) in beiden Richtungen Veranstaltung, Straße vollständig gesperrt',
+         'from' => undef,
+         'data' => 'userdel	2::temp 28188,962 28317,891 28218,1017 28119,1079
+userdel	2::temp 28119,1079 28188,962
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005655',
+         'until' => 1180908000,
+         'text' => 'Müllerstr. (Wedding) in beiden Richtungen, zwischen Transvaalstr. und Liverpooler Str. Veranstaltung, Straße vollständig gesperrt (bis 03.06.2007, 24 Uhr)',
+         'from' => 1180783143,
+         'data' => 'userdel	2::temp 6311,16457 6110,16630 6019,16712 5791,16910
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005661',
+         'until' => 1183327199,
+         'text' => 'Voßstr. (Mitte) Richtung Ebertstr. zwischen Wilhelmstr. und Ebertstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 07.2007)',
+         'from' => 1180783165,
+         'data' => 'userdel	1::inwork 8990,11719 8837,11676 8553,11638
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Simon-Dach-Str./Wühlischstr.: Bauarbeiten, Ausweichen auf Gehweg',
+         'from' => undef,
+         'data' => 'userdel	q4::inwork 13981,11746 13954,11647
+',
+         'type' => 'handicap'
        }
      
 );

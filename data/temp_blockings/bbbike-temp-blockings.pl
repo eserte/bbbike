@@ -8386,4 +8386,40 @@ EOF
 userdel	2::inwork 44261,-14205 43456,-14384 42430,-14398
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Alt-Müggelheim (Köpenick) in beiden Richtungen Veranstaltung, Straße vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_005660',
+       data  => <<EOF,
+userdel	2::temp 28188,962 28317,891 28218,1017 28119,1079
+userdel	2::temp 28119,1079 28188,962
+EOF
+     },
+     { from  => 1180783143, # 2007-06-02 13:19
+       until => 1180908000, # 2007-06-04 00:00
+       text  => 'Müllerstr. (Wedding) in beiden Richtungen, zwischen Transvaalstr. und Liverpooler Str. Veranstaltung, Straße vollständig gesperrt (bis 03.06.2007, 24 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_005655',
+       data  => <<EOF,
+userdel	2::temp 6311,16457 6110,16630 6019,16712 5791,16910
+EOF
+     },
+     { from  => 1180783165, # 2007-06-02 13:19
+       until => 1183327199, # 2007-07-01 23:59
+       text  => 'Voßstr. (Mitte) Richtung Ebertstr. zwischen Wilhelmstr. und Ebertstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 07.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_005661',
+       data  => <<EOF,
+userdel	1::inwork 8990,11719 8837,11676 8553,11638
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Simon-Dach-Str./Wühlischstr.: Bauarbeiten, Ausweichen auf Gehweg',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 13981,11746 13954,11647
+EOF
+     },
     );

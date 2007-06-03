@@ -2315,6 +2315,13 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (M5) (bug)
+
+If the strname_html parameter to fragezeichenform.html contains
+HTML-escaped characters, then the parameter is parsed incorrectly due
+to premature call of unescape(). I need a correct querystring parse
+like the one in CGI.pm. Create one! Or maybe search one in the net.
+
 =item * (H3) (feature)
 
 Im Umland sollte statt Kreuzungen bevorzugt der Ortsname verwendet

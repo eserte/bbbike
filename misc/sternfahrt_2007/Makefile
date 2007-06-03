@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.3 2007/05/20 20:54:30 eserte Exp $
+# $Id: Makefile,v 1.4 2007/06/02 11:54:49 eserte Exp $
 #
 
 BBBIKEDIR=		../..
@@ -25,7 +25,7 @@ test-live:
 .include "../../mapserver/brb/Makefile.radzeit.inc"
 HTDOCS=	public
 
-SSH=ssh -2
+SSH=ssh -2 -p 5022
 # wo kommt RSYNC original her?
 RSYNC=rsync -e "$(SSH)"
 
