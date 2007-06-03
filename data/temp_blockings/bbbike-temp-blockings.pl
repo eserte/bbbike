@@ -8387,7 +8387,7 @@ userdel	2::inwork 44261,-14205 43456,-14384 42430,-14398
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1180901636, # XXX undef
        text  => 'Alt-Müggelheim (Köpenick) in beiden Richtungen Veranstaltung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005660',

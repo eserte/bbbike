@@ -1394,16 +1394,7 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005660',
-         'until' => undef,
-         'text' => 'Alt-Müggelheim (Köpenick) in beiden Richtungen Veranstaltung, Straße vollständig gesperrt',
-         'from' => undef,
-         'data' => 'userdel	2::temp 28188,962 28317,891 28218,1017 28119,1079
-userdel	2::temp 28119,1079 28188,962
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_005655',
          'until' => 1180908000,
