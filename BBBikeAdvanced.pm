@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.179 2007/05/31 21:48:01 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.180 2007/06/04 20:53:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -3548,17 +3548,21 @@ sub search_anything {
     }
 }
 
-use vars qw($gps_animation_om);
+use vars qw($gps_animation_om $gps_animation_om2);
 
 ### AutoLoad Sub
 sub gps_animation_update_optionmenu {
-    if (defined $gps_animation_om && Tk::Exists($gps_animation_om)) {
-	my $om = $gps_animation_om;
-	$om->configure(-options => []); # empty old
-	for my $i (0 .. MAX_LAYERS) {
-	    my $abk = "L$i";
-	    if ($str_draw{$abk} && $str_file{$abk} =~ /gpsspeed/) {
-		$om->addOptions([$str_file{$abk} => $i]);
+    for my $om ($gps_animation_om, $gps_animation_om2) {
+	if (defined $om && Tk::Exists($om)) {
+	    $om->configure(-options => []); # empty old
+	    for my $i (0 .. MAX_LAYERS) {
+		my $abk = "L$i";
+		if ($str_draw{$abk} && $str_file{$abk} =~ /gpsspeed/) {
+		    $om->addOptions([$str_file{$abk} => $i]);
+		}
+	    }
+	    if ($om eq $gps_animation_om2) {
+		$om->addOptions(["" => ""]);
 	    }
 	}
     }
@@ -3571,22 +3575,42 @@ sub gps_animation {
 			  -title => M"GPS-Track-Animation");
     return if !defined $t;
     $t->transient($top) if $transient;
-    my $trackfile;
-    my $track_abk;
+    $t->gridColumnconfigure(0,  -weight => 0);
+    $t->gridColumnconfigure($_, -weight => 1) for (1..2);
+    my $can_2nd_track = eval { require DB_File; 1 };
+    my %track2_cache;
+    if ($can_2nd_track) {
+	tie %track2_cache, 'DB_File', undef, undef, undef, $DB_File::DB_BTREE
+	    or warn $!, undef $can_2nd_track;
+    }
+    my($trackfile, $trackfile2);
+    my($track_abk, $track_abk2);
     my $track_i = 0;
     my $anim_timer;
     my($start_b, $skip_b);
-    my $om = $t->Optionmenu(-textvariable => \$trackfile,
-			    -variable => \$track_abk,
-			    -command => sub {
-				$t->afterCancel($anim_timer)
-				    if defined $anim_timer;
-				undef $anim_timer;
-				$track_i = 0;
-				$start_b->configure(-text => M"Start")
-				    if $start_b;
-			    })->pack;
-    $gps_animation_om = $om;
+    my $row = 0;
+    my $is_first_om = 1;
+    for my $def ([\$trackfile,  \$track_abk,  \$gps_animation_om],
+		 [\$trackfile2, \$track_abk2, \$gps_animation_om2],
+		) {
+	my($trackfile_ref, $track_abk_ref, $om_ref) = @$def;
+	my $om = $t->Optionmenu(-textvariable => $trackfile_ref,
+				-variable => $track_abk_ref,
+				-command => sub {
+				    $t->afterCancel($anim_timer)
+					if defined $anim_timer;
+				    undef $anim_timer;
+				    if (!$is_first_om) {
+					%track2_cache = ();
+				    }
+				    $track_i = 0;
+				    $start_b->configure(-text => M"Start")
+					if $start_b && $is_first_om;
+				})->grid(-row => $row++, -column => 0, -columnspan => 3, -sticky => "w");
+	$$om_ref = $om;
+	$is_first_om = 0;
+	last if !$can_2nd_track;
+    }
     gps_animation_update_optionmenu();
 
     # Hooks
@@ -3604,7 +3628,7 @@ sub gps_animation {
     my $speed;
     my $Scale = "Scale";
     my %scaleargs = (-bigincrement => 20,
-		     -resolution => 10,
+		     -resolution => 1, # a -resolution of 10 would make 0 the lowest possible value!
 		     -showvalue => 1,
 		     -variable => \$speed,
 		    );
@@ -3621,13 +3645,18 @@ sub gps_animation {
 		      -command => sub { warn $_speed; $speed = int $_speed },
 		      -showvalue => 0);
     };
+    $t->Label(-text => M"Zeitraffer-Faktor")->grid(-row => $row, -column => 0, -sticky => "w");
     $t->$Scale(-from => 1,
 	       -to => 500, -orient => "horiz",
-	       %scaleargs)->pack(-fill => "x");
-    $c->createRectangle(0,0,0,0,-width=>2,-outline => "#c08000", -tags => "gpsanimrect");
+	       %scaleargs)->grid(-row => $row, -column => 1, -columnspan => 2, -sticky => "ew");
+    $row++;
+
+    for (1 .. 2) {
+	$c->createRectangle(0,0,0,0,-width=>2,-outline => $_ eq 1 ? "#c08000" : "#80c000", -tags => ["gpsanimrect$_", "gpsanimrect"]);
+    }
 
     my $dir = +1;
-    my($curr_speed, $curr_time, $curr_dist);
+    my($curr_speed, $curr_time, $curr_dist, $curr_abs_time);
 
     my $next_track_point;
     $next_track_point = sub {
@@ -3649,13 +3678,46 @@ sub gps_animation {
 	($curr_speed) = $name1 =~ m|(\d+)\s*km/h|;
 	($curr_dist)  = $name1 =~ m|dist=([\d\.]+)|;
 
+	my @abstime = $name1 =~ /abstime=(\d+):(\d+):(\d+)/;
+	$curr_abs_time = sprintf "%02d:%02d:%02d", @abstime;
+
+	my $other_tag1;
+	if ($track_abk2 ne "" && $track_abk2 ne $track_abk) {
+	    if (!%track2_cache) {
+		my $track_i2 = 0;
+		while(1) {
+		    my($other_name) = ($c->gettags("L${track_abk2}-".$track_i2))[1];
+		    last if !$other_name;
+		    my @other_abstime = $other_name =~ /abstime=(\d+):(\d+):(\d+)/;
+		    my $other_abstime = $other_abstime[0]*3600 + $other_abstime[1]*60 + $other_abstime[2];
+		    $other_abstime = sprintf "%05d", $other_abstime; # leading zeros necessary for string comparison
+		    $track2_cache{$other_abstime} = $track_i2;
+		    $track_i2++;
+		}
+	    }
+
+	    my $abstime = $abstime[0]*3600 + $abstime[1]*60 + $abstime[2];
+	    my $key = sprintf "%0d", $abstime;
+	    my $val;
+	    (tied %track2_cache)->seq($key, $val, DB_File::R_CURSOR());
+	    my $nearest_i = $val;
+	    if (defined $nearest_i) {
+		$other_tag1 = "L${track_abk2}-".$nearest_i;
+	    }
+	}
+
 	$anim_timer =
 	    $t->after(1000*abs($time1-$time0)/$speed, sub {
 		      my $item = $c->find(withtag => $tag1);
 		      my($x,$y) = $c->coords($item);
 		      my $pad = 5;
-		      $c->coords("gpsanimrect", $x-$pad,$y-$pad,$x+$pad,$y+$pad);
+		      $c->coords("gpsanimrect1", $x-$pad,$y-$pad,$x+$pad,$y+$pad);
 		      $c->center_view($x,$y);
+		      if (defined $other_tag1) {
+			  my $item = $c->find(withtag => $other_tag1);
+			  my($x,$y) = $c->coords($item);
+			  $c->coords("gpsanimrect2", $x-$pad,$y-$pad,$x+$pad,$y+$pad);
+		      }
 		      $track_i+=$dir;
 		      if ($track_i < 0) {
 			  # XXX set start button
@@ -3666,28 +3728,31 @@ sub gps_animation {
 		  });
     };
 
-    {
-	my $f = $t->Frame->pack(-anchor => "w");
-	$f->Label(-text => M"Geschwindigkeit: ")->pack(-side => "left");
-	$f->Label(-textvariable => \$curr_speed)->pack(-side => "left");
-	$f->Label(-text => M"km/h")->pack(-side => "left");
-    }
+    $t->Label(-text => M"Geschwindigkeit: ")->grid(-row => $row, -column => 0, -sticky => "w");
+    $t->Label(-textvariable => \$curr_speed)->grid(-row => $row, -column => 1, -sticky => "w");
+    $t->Label(-text => M"km/h")->grid(-row => $row, -column => 2, -sticky => "w");
+    $row++;
+
+    $t->Label(-text => M"Distanz: ")->grid(-row => $row, -column => 0, -sticky => "w");
+    $t->Label(-textvariable => \$curr_dist)->grid(-row => $row, -column => 1, -sticky => "w");
+    $t->Label(-text => M"km")->grid(-row => $row, -column => 2, -sticky => "w");
+    $row++;
+
+    $t->Label(-text => M"Fahrzeit: ")->grid(-row => $row, -column => 0, -sticky => "w");
+    $t->Label(-textvariable => \$curr_time)->grid(-row => $row, -column => 1, -sticky => "w");
+    $row++;
+
+    $t->Label(-text => M"Zeit: ")->grid(-row => $row, -column => 0, -sticky => "w");
+    $t->Label(-textvariable => \$curr_abs_time)->grid(-row => $row, -column => 1, -sticky => "w");
+    $row++;
+
+    my $before_close_window = sub {
+	$t->afterCancel($anim_timer) if defined $anim_timer;
+	$c->delete("gpsanimrect");
+    };
 
     {
-	my $f = $t->Frame->pack(-anchor => "w");
-	$f->Label(-text => M"Distanz: ")->pack(-side => "left");
-	$f->Label(-textvariable => \$curr_dist)->pack(-side => "left");
-	$f->Label(-text => M"km")->pack(-side => "left");
-    }
-
-    {
-	my $f = $t->Frame->pack(-anchor => "w");
-	$f->Label(-text => M"Zeit: ")->pack(-side => "left");
-	$f->Label(-textvariable => \$curr_time)->pack(-side => "left");
-    }
-
-    {
-	my $f = $t->Frame->pack;
+	my $f = $t->Frame->grid(-row => $row, -column => 0, -columnspan => 3);
 	$start_b = $f->Button(-text => M"Start",
 		   -command => sub {
 		       if ($start_b->cget(-text) eq M"Start") {
@@ -3718,13 +3783,11 @@ sub gps_animation {
 		   })->pack(-side => "left");
 	$f->Button(-text => M"Schließen",
 		   -command => sub {
+		       $before_close_window->();
 		       $t->destroy;
 		   })->pack(-side => "left");
     }
-    $t->OnDestroy(sub {
-		      $t->afterCancel($anim_timer) if defined $anim_timer;
-		      $c->delete("gpsanimrect");
-		  });
+    $t->OnDestroy($before_close_window);
     $t->Popup(@popup_style);
 }
 

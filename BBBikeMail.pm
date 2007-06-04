@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMail.pm,v 1.19 2007/06/03 20:20:16 eserte Exp eserte $
+# $Id: BBBikeMail.pm,v 1.20 2007/06/04 20:57:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -138,12 +138,17 @@ sub enter_send_anything {
       (Name => 'ok',
        -command => $ok_window)->grid(-row => 0, -column => 0,
 				     -sticky => 'ew');
+    if ($Tk::VERSION >= 800) {
+	$okb->configure(-default => "disabled");
+    }
     my $cb = $bf->Button
       (Name => 'cancel',
        -command => $close_window)->grid(-row => 0, -column => 1,
 					-sticky => 'ew');
 
-    $t->bind('<Return>' => sub { $okb->invoke });
+    ## No! Otherwise it's not possible to use <Return> in the
+    ## text field!
+    #$t->bind('<Return>' => sub { $okb->invoke });
     $t->bind('<Escape>' => sub { $cb->invoke });
 
     $t->Popup(@popup_style);

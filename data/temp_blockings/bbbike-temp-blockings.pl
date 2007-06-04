@@ -8422,4 +8422,13 @@ EOF
 userdel	q4::inwork 13981,11746 13954,11647
 EOF
      },
+     { from  => 1180991094, # 2007-06-04 23:04
+       until => 1196463599, # 2007-11-30 23:59
+       text  => 'Bernstorffstr. (Reinickendorf) Richtung A111 zwischen Berliner Str. und Buddestr. Baustelle, Fahrtrichtung gesperrt (bis 11.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_005680',
+       data  => <<EOF,
+userdel	1::inwork 2029,20331 2259,20480
+EOF
+     },
     );
