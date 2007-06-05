@@ -1,11 +1,12 @@
 #
-# $Id: Makefile,v 1.4 2007/06/02 11:54:49 eserte Exp $
+# $Id: Makefile,v 1.5 2007/06/05 21:08:16 eserte Exp $
 #
 
 BBBIKEDIR=		../..
 MISCSRCDIR=		${BBBIKEDIR}/miscsrc
 
 all:	sternfahrt2007.shp treffpunkte2007.shp
+# .check_treffpunkte
 
 sternfahrt2007.shp:	sternfahrt2007.bbd
 	$(MISCSRCDIR)/bbd2esri $> -o sternfahrt2007
@@ -73,3 +74,6 @@ symlink-on-local-radzeit:
 	cd ${BBBIKEDIR}/projects/www.radzeit.de/cgi-bin && \
 	    [ -L sternfahrt2007-treffpunkte.cgi ] || ln -s ../BBBike/misc/sternfahrt_2007/treffpunkte.cgi sternfahrt2007-treffpunkte.cgi
 
+# .check_treffpunkte:	treffpunkte2007.bbd sternfahrt2007.bbd
+# 	$(MISCSRCDIR)/check_points -catrx '^(T)$$' treffpunkte2007.bbd sternfahrt2007.bbd
+# 	@touch $@
