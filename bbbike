@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.312 2007/05/31 21:47:47 eserte Exp $
+# $Id: bbbike,v 3.312 2007/05/31 21:47:47 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -306,6 +306,8 @@ $normal_scrollregion = $init_scrollregion*$scale;
 		 ($normal_scrollregion)  x 2);
 $bbbike_route_ext = 'bbr';
 $map_bg = 'grey85';
+use vars qw($balloon_info_from_all_tags_closeenough);
+$balloon_info_from_all_tags_closeenough = 3; # was 5, then 4
 
 # Var section: street and point attributes
 @comments_types = @Strassen::Dataset::comments_types;
@@ -5783,7 +5785,7 @@ sub generate_plot_functions {
 				    last;
 			        }
 			    }
-			    if (!$photo{image}) {
+			    if (!$photo{$image}) {
 				warn "Can't find photo $image (1)";
 			    }
 			}
@@ -6828,7 +6830,7 @@ sub std_str_binding {
 	# logic found in balloon_info_from_all_tags
 	use vars qw($old_current_str_items);
 	$old_current_str_items = "" if !defined $old_current_str_items;
-	my $closeenough = 4; # see balloon_info_from_all_tags
+	my $closeenough = $balloon_info_from_all_tags_closeenough;
 	$c->bind($tag, '<Any-Motion>' => sub {
 		     my($c) = @_;
 		     my $e = $c->XEvent;
@@ -19535,7 +19537,7 @@ sub balloon_info_from_all_tags {
     my($c) = @_;
     my $e = $c->XEvent;
     my($xx, $yy) = ($c->canvasx($e->x), $c->canvasy($e->y));
-    my $closeenough = 3; # was 5, then 4
+    my $closeenough = $balloon_info_from_all_tags_closeenough;
     my(@items) = $c->find(overlapping =>
 			  $xx-$closeenough, $yy-$closeenough,
 			  $xx+$closeenough, $yy+$closeenough);

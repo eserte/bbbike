@@ -1225,14 +1225,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        },
        undef,
        undef,
-       {
-         'until' => 1180994400,
-         'text' => 'B 273 Wensickendorf-Oranienburg Schleusenbrücke Lehnitz am OA Oranienburg Instandsetzungsarbeiten Vollsperrung 02.06.2007-04.06.2007 ',
-         'from' => 1180648800,
-         'data' => 'userdel	2::inwork 1281,39850 1455,39824
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1292,14 +1285,7 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1180994400,
-         'text' => 'L 030 Friedrichstr. OD Erkner, zw. Kreiverkehr und Beuststr. 14. Heimatfest Vollsperrung 31.05.2007-04.06.2007 ',
-         'from' => 1180476000,
-         'data' => 'userdel	2::temp 34443,1951 34250,2546
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_005616',
          'until' => undef,
@@ -1346,14 +1332,7 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1180908000,
-         'text' => 'K 6747 Groß Schauen-Alt Stahnsdorf Bahnübergang bei Philadelphia Gleisbauarbeiten Vollsperrung 01.06.2007-03.06.2007 ',
-         'from' => 1180562400,
-         'data' => 'userdel	2::inwork 44269,-15317 44343,-15112 44369,-14650
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1181685600,
          'text' => 'K 6747 Groß Schauen-Alt Stahnsdorf Bahnübergang bei Philadelphia Gleisbauarbeiten Vollsperrung 11.06.2007-12.06.2007 ',
@@ -1395,15 +1374,7 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_005655',
-         'until' => 1180908000,
-         'text' => 'Müllerstr. (Wedding) in beiden Richtungen, zwischen Transvaalstr. und Liverpooler Str. Veranstaltung, Straße vollständig gesperrt (bis 03.06.2007, 24 Uhr)',
-         'from' => 1180783143,
-         'data' => 'userdel	2::temp 6311,16457 6110,16630 6019,16712 5791,16910
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_005661',
          'until' => 1183327199,
@@ -1420,6 +1391,15 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
          'data' => 'userdel	q4::inwork 13981,11746 13954,11647
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_005680',
+         'until' => 1196463599,
+         'text' => 'Bernstorffstr. (Reinickendorf) Richtung A111 zwischen Berliner Str. und Buddestr. Baustelle, Fahrtrichtung gesperrt (bis 11.2007)',
+         'from' => 1180991094,
+         'data' => 'userdel	1::inwork 2029,20331 2259,20480
+',
+         'type' => 'gesperrt'
        }
      
 );

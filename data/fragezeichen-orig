@@ -15,7 +15,7 @@ Wisbyer Str.	? 12091,16209 12026,16247 11887,16320 11807,16340 11727,16358
 Wisbyer Str.	?; 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 11448,16398 11397,16405 11289,16423 11033,16464
 #: by http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2004/1103/lokales/0030/ vvv
 # (alte URL http://www.berlinonline.de/berliner-zeitung/berlin/327989.html?2004-03-26 gilt nicht mehr)
-#: last_checked: 2007-03-28
+#: last_checked: 2007-06-03
 Leipziger Straße zwischen Leipziger Platz und Wilhelmstraße (entweder beidseitig oder nur auf der Südseite)	? 8733,11524 9046,11558
 #: last_checked: 2006-08-01
 Mollstr.	? 11905,13069 11867,13076 11839,13083 11721,13142 11681,13161 11557,13228 11446,13294
@@ -26,7 +26,7 @@ Alt-Moabit zwischen Kirch- und Paulstraße	? 7192,13036 7000,13067 6882,13088 675
 Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 10109,12238 10084,12228 9972,12184
 #: last_checked: 2007-03-20
 Köpenicker Str. (in Mitte und/oder in Kreuzberg?)	? 11155,11750 11242,11720 11574,11594 11807,11479 11943,11398 12026,11348
-#: last_checked: 2007-05-28
+#: last_checked: 2007-06-03
 Holzmarktstr.	? 11773,12006 11619,12084 11388,12202 11351,12221
 #: last_checked: 2007-05-31
 Gitschiner Str.	? 9948,10280 10122,10294 10340,10301 10605,10312 10859,10333 10962,10340 11114,10338
@@ -114,11 +114,11 @@ Frankfurter Allee am S-Bhf. Richtung Westen: Radstreifen soll Radweg ablösen (zu
 Berliner Allee: nach den Bauarbeiten (ca. 2007-08-26) asphaltiert	? 14559,16912 14535,17003
 #: last_checked: 2007-05-20
 Weserstr.: Bauarbeiten, eventuell wird die Fahrbahn danach asphaltiert sein	? 14705,11629 14764,11591 14849,11539
-Neue Straßen an der Rummelsburger Bucht: Name: Erich-Müller-Straße. Straße ist asphaltiert, aber noch nicht ganz fertig	? 16049,9817 15831,9968
-Neuer Weg an der Rummelsburger Bucht: Name? Weg ist asphaltiert	? 16011,9777 16049,9817
-Neue Straßen an der Rummelsburger Bucht: Name: Georg-Löwenstein-Straße. Straße ist wahrscheinlich asphaltiert. Ist das Überqueren der Straßenbahntrasse an der Hauptstr. möglich?	? 16049,9817 16184,9961 16215,9994
+Neue Straßen an der Rummelsburger Bucht: Name: Erich-Müller-Straße. Straße ist asphaltiert, aber noch nicht ganz fertig	? 16045,9817 15831,9968
+Neuer Weg an der Rummelsburger Bucht: Name? Weg ist asphaltiert	? 16011,9777 16045,9817
+Neue Straßen an der Rummelsburger Bucht: Name: Georg-Löwenstein-Straße. Straße ist wahrscheinlich asphaltiert. Ist das Überqueren der Straßenbahntrasse an der Hauptstr. möglich?	? 16045,9817 16156,9980 16191,10035
 #: note: referenziert in http://www.wasserstadt.de/info-center/download/plaene_rubu/rubu_gestaltplan.pdf und auf berliner-stadtplan.com
-Neue Straßen an der Rummelsburger Bucht: Name: Karl-Wilker-Straße. Qualität der Straße?	? 15952,10134 16184,9961
+Neue Straßen an der Rummelsburger Bucht: Name: Karl-Wilker-Straße. Qualität der Straße?	? 15952,10134 16156,9980
 #: section ^^^
 #: section ^^^
 #
@@ -335,7 +335,8 @@ Ludwigsluster Str.: Qualität (wahrscheinlich Beton oder Asphalt)?	? 22883,13013 
 Günter-Litfin-Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 13361,17172 13115,17410
 #: XXX Eintrag in PLZ-DB fehlt für Dorsch-Allee. Clementweg mit oder ohne Akzent?:
 Clémentweg/Dr.-Dorsch-Allee: Qualität (laut ADFC-Karte gut geeignet)?	? 11740,22770 10889,23381
-Werdauer Weg: Qualität? (ebenfalls: Werdauer Brücke eintragen!)	? 7087,8066 6990,8040 6481,7345
+#: XXX ebenfalls: Werdauer Brücke eintragen!
+Werdauer Weg: Qualität? (Am Sachsendamm-Ende anscheinend Beton)	? 7087,8066 6990,8040 6481,7345
 Ludwig-Renn-Str.: Einbahnstraße auch für Radfahrer?	? 20843,16829 21017,16737
 Stolper Weg: Qualität? Bis wo (vom Europarc aus) ist Autoverkehr vorhanden? Radwege? Genaue Straßennamen?	? -4709,-728 -4884,-907 -5335,-1090 -6147,-1125 -6395,-887
 #: note: laut Message-ID: <dpqsm6$vmc$02$1@news.t-online.com> ist die Brücke offen für Fußgänger
@@ -576,8 +577,7 @@ Luckow - Sommersdorf: Qualität?	? 63938,93631 63800,94250 62800,96175 62912,9680
 Storkow - Büssow: Qualität? zumindest die östliche Ende asphaltiert	? 68928,100165 68107,99606
 Büssow - Penkun: Qualität? (zumindest das westliche Ende wahrscheinlich asphaltiert)	? 68107,99606  67712,99425 66072,99485 65856,99466 65115,99600
 Büssow: Qualität?	? 68107,99606 67815,99673 67833,99771 67413,100429 66669,100124 66535,99929 66096,99655 66072,99485
-#: note: http://www.berlin.de/ba-lichtenberg/presse/archiv/20060801.2315.44967.html: ab 2006-11-30 wird dieser Abschnitt asphaltiert sein (last_checked 2006-10-03: an der Treskowallee bereits fertig)
-#: note: http://www.berlin.de/ba-lichtenberg/presse/archiv/20061109.1735.50098.html: ab 2006-11-24 fertig
+#: last_checked: 2007-06-03
 Laut "Berliner Umland" verläuft die R1 hier entlang, aber es gibt (noch) keine Ausschilderung	? 17527,7812 17678,7850 17775,7874 17987,7973 18387,7742
 #: XXX Genaue Wegführung?
 Eberswalde - Spechthausen: Qualität? Straßennamen?	? 35362,48503 35312,48225 35485,48132 35428,47961
@@ -592,8 +592,7 @@ Klockow - Kleptow (Feldweg): auf der Nordseite sandiger Feldweg (Q2?)	? 49487,11
 Bäkepromenade: Qualität? Existiert eine Verbindung?	? -2618,-1473 -2800,-1484 -2802,-1636
 Falkenthal - Bergsdorf: Kopfsteinpflaster, mindestens von Falkenthal her	? 2034,55227 -285,58256
 Jan-Petersen-Str.: Radwege (unklare Eintragung existiert)? Zugang zur Landsberger Allee vorhanden?	? 21022,16244 21195,16148 21107,15982 21079,15913 21037,15793 20943,15787 20800,15692
-#: next_check: 2005-08-01:
-Alter Markt: laut Message-ID: <2scvijF1io77eU1@uni-berlin.de> soll hier asphaltiert werden	?::inwork 22458,4565 22426,4609 22383,4703
+# 2007-06-03: nix ist passiert: herausnehmen! Alter Markt: laut Message-ID: <2scvijF1io77eU1@uni-berlin.de> soll hier asphaltiert werden	?::inwork 22458,4565 22426,4609 22395,4678 22383,4703
 Berlin-Usedom am Werbellinsee: laut Tsp vom 2004-10-04 wird hier 2005 ein Radweg gebaut, laut anderen Informationen bis 2006-12-15	?::inwork 31000,61437 30784,60950 30778,60221 30671,59984 30625,59562 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27359,56787 27137,56650 26792,56558 26404,56518 26145,56499 26037,56412 26028,56303
 Zichow-Lindenwegsiedlung: Qualität? Am westlichen Ende als "Lindenweg" ausgeschildert	? 54500,87934 51978,87962
 Prötzeler Ring und Trappenfelder Pfad: Qualität laut ADFC-Karte gut	? 21951,15918 22134,15615 22073,15172
@@ -869,7 +868,6 @@ Heinrich-Zille-Weg: Qualität?	? 815,12653 1070,13309
 (Spandauer Damm - Fürstenbrunnerweg): Qualität?	? 1459,12475 1601,12908 1551,13377 1545,13418
 #: by: Karsta Prielipp:
 Marinesteig - Schlachtensee: Zugang zum See, wo genau? Evtl. offiziell für Radfahrer verboten	? -2699,3529 -2716,3566
-Freiheit: dauerhaft Einbahnstraße, Richtung Lüdersstr. gesperrt?	?; 22196,4847 22377,4836
 (Sömmeringstr. - Bonhoefferufer): vorhanden?	? 3735,12705 3588,12754 3511,12763 3528,12849 3517,12874 3487,12876 3422,12770
 #: next_check: 2005-12-01
 Tharauer Allee: Bauarbeiten erledigt?	? -1483,11283 -1634,11346 -1731,11425 -1829,11337
@@ -1297,7 +1295,7 @@ Marwitzer Str.: Radwege, aber von wo bis wo genau?	? -3700,26625 -4048,26914 -42
 Preußenstr.: Qualität?	? 21047,927 20971,1046 20850,1217
 Preußenstr.: Qualität?	? 21297,651 21202,727
 #: note: siehe auch http://www.berlin.de/ba-lichtenberg/presse/archiv/20030924.15288.html
-Margaretenstr. (Lichtenberg): Qualität (wahrscheinlich Asphalt)?	? 17070,11375 16936,11409 16848,11421 16723,11470 16649,11497
+Margaretenstr. (Lichtenberg): Qualität (wahrscheinlich Asphalt)?	? 17070,11375 16936,11409 16852,11430 16723,11470 16649,11497
 Wongrowitzer Steig: Qualität (laut ADFC-Karte gut geeignet)?	? 22785,6984 22663,7014 22474,7065 22240,7122 22132,7148 22035,7146
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20050810.1640.28623.html:
 Fürstenwalder Damm: existieren zwischen Stillerzeile und Müggelseedamm Radwege?	? 25012,5754 23950,5342
@@ -1331,8 +1329,7 @@ Straße 77: Qualität? Für Autofahrer geöffnet?	? 15402,12390 15315,12360
 Eberhardstr.: Qualität? Südlicher Abschnitt für Autofahrer gesperrt?	? 15228,12790 15233,12829 15231,12929
 #: by: Oliver Brass [AM]
 Pegnitring oder Str. 136? beleuchtet? fester Sandweg	? -8050,5560 -7969,5453 -7903,5302
-(Ernst-Thälmann-Stadion - An der Wuhlheide): Qualität?	? 19069,6928 19052,6823 18952,6587
-(Wasserwerk Wuhlheide - Ernst-Thälmann-Stadion): Qualität?	? 19338,7148 19223,7189 19084,7009 19069,6928
+(Wasserwerk Wuhlheide - An der Wuhlheide): Qualität? (zumindest an der südlichen Seite Kopfsteinpflaster)	? 19338,7148 19223,7189 19084,7009 19069,6928
 Bau einer Ampel, voraussichtlich im Frühjahr 2007	? 16669,25373
 Semnonenweg: voraussichtlich 2006-12-01 mit einer neuen Asphaltdecke versehen	? -4482,10914 -4536,10670
 Wassermannstr.: Qualität zwischen Radickestr. und Glienicker Weg?	? 21055,3415 20938,3560 20776,3753
