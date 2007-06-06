@@ -1400,6 +1400,24 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
          'data' => 'userdel	1::inwork 2029,20331 2259,20480
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005699',
+         'until' => undef,
+         'text' => 'Budapester Str. (Tiergarten) in beiden Richtungen zwischen Lützowufer und Kurfürstenstr. Straße vollständig gesperrt, Staatsbesuch',
+         'from' => undef,
+         'data' => 'userdel	2::temp 6135,10982 6168,11042 6446,11147 6582,11202
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_86792',
+         'until' => 1181138400,
+         'text' => 'Drakestr. (Steglitz) in beiden Richtungen zwischen Knesebeckstr. und Hans-Sachs-Str. Baustelle, Straße vollständig gesperrt (bis 16.00 Uhr)',
+         'from' => 1181024556,
+         'data' => 'userdel	2::inwork 3048,4305 3128,4190 3259,4002
+',
+         'type' => 'gesperrt'
        }
      
 );

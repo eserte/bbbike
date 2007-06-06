@@ -8431,4 +8431,22 @@ EOF
 userdel	1::inwork 2029,20331 2259,20480
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Budapester Str. (Tiergarten) in beiden Richtungen zwischen Lützowufer und Kurfürstenstr. Straße vollständig gesperrt, Staatsbesuch',
+       type  => 'gesperrt',
+       source_id => 'IM_005699',
+       data  => <<EOF,
+userdel	2::temp 6135,10982 6168,11042 6446,11147 6582,11202
+EOF
+     },
+     { from  => 1181024556, # 2007-06-05 08:22
+       until => 1181138400, # 2007-06-06 16:00
+       text  => 'Drakestr. (Steglitz) in beiden Richtungen zwischen Knesebeckstr. und Hans-Sachs-Str. Baustelle, Straße vollständig gesperrt (bis 16.00 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'INKO_86792',
+       data  => <<EOF,
+userdel	2::inwork 3048,4305 3128,4190 3259,4002
+EOF
+     },
     );
