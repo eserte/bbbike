@@ -3965,7 +3965,7 @@ EOF
      },
      { from  => 1144176662, # 2006-04-04 20:51
        until => 1144263062, # 2006-04-05 20:51
-       text  => ' ',
+       text  => 'XXX',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 16407,-29400 16379,-29446
@@ -8431,8 +8431,8 @@ EOF
 userdel	1::inwork 2029,20331 2259,20480
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1181165074, # undef
+       until => 1181165075, # XXX undef (nur noch "Verkehrsstörung erwartet)
        text  => 'Budapester Str. (Tiergarten) in beiden Richtungen zwischen Lützowufer und Kurfürstenstr. Straße vollständig gesperrt, Staatsbesuch',
        type  => 'gesperrt',
        source_id => 'IM_005699',
@@ -8447,6 +8447,22 @@ EOF
        source_id => 'INKO_86792',
        data  => <<EOF,
 userdel	2::inwork 3048,4305 3128,4190 3259,4002
+EOF
+     },
+     { from  => 1181253600, # 2007-06-08 00:00
+       until => 1181512800, # 2007-06-11 00:00
+       text  => 'L 054 Calau-Vetschau Bahnübergang in der OD Saßleben Gleisbauarbeiten Vollsperrung 09.06.2007-10.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 50637,-71768 51374,-71361 51440,-71337
+EOF
+     },
+     { from  => 1181512800, # 2007-06-11 00:00
+       until => 1181772000, # 2007-06-14 00:00
+       text  => 'L 054 Calau-Vetschau Bahnübergang in der OD Saßleben Gleisbauarbeiten Vollsperrung 12.06.2007-13.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 50637,-71768 51374,-71361 51440,-71337
 EOF
      },
     );
