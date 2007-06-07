@@ -1483,6 +1483,43 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
          'data' => 'userdel	2::inwork 50637,-71768 51374,-71361 51440,-71337
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_004688',
+         'until' => 1204325999,
+         'text' => 'Hultschiner Damm (Mahlsdorf) Richtung Alt-Mahlsdorf zwischen Rüsternallee und Levensauer Str. Baustelle, Fahrtrichtung gesperrt (bis 02.2008)',
+         'from' => 1181240753,
+         'id' => 1005,
+         'data' => 'userdel	1::inwork 23891,8780 24051,9156 24149,9387 24337,9835
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1188597600,
+         'text' => 'B 168 zw. Fürstenwalde und Trebus Grundhafter Straßenbau Vollsperrung 25.06.2007-31.08.2007 ',
+         'from' => 1182636000,
+         'id' => 1006,
+         'data' => 'userdel	2::inwork 54195,309 54279,10 54341,-331 54657,-1293
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1181340000,
+         'text' => 'L 256 B109 (Pasewalk)-B104 (Strasburg) Bahnübergang Nechlin Gleisbauarbeiten Vollsperrung 08.06.2007-08.06.2007 ',
+         'from' => 1181167200,
+         'id' => 1007,
+         'data' => 'userdel	2::inwork 42222,115929 42250,115925 42905,115846
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1182636000,
+         'text' => 'L 362 Frankfurter Chaussee OL Müncheberg, Höhe Behlendorfer Weg Straßenbauarbeiten Vollsperrung 11.06.2007-23.06.2007 ',
+         'from' => 1181426400,
+         'id' => 1008,
+         'data' => 'userdel	q4::inwork 61140,11287 61156,11478
+',
+         'type' => 'handicap'
        }
      
 );

@@ -24,8 +24,8 @@ Stralauer Str.	? 11351,12221 11304,12234 11139,12243 11094,12243 10946,12241 108
 #: last_checked: 2006-10-25
 Alt-Moabit zwischen Kirch- und Paulstraße	? 7192,13036 7000,13067 6882,13088 6757,13112 6661,13130
 Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 10109,12238 10084,12228 9972,12184
-#: last_checked: 2007-03-20
-Köpenicker Str. (in Mitte und/oder in Kreuzberg?)	? 11155,11750 11242,11720 11574,11594 11807,11479 11943,11398 12026,11348
+#: last_checked: 2007-06-06
+Köpenicker Str. (auch in Mitte?)	? 11155,11750 11242,11720 11574,11594 11807,11479 11943,11398 12026,11348
 #: last_checked: 2007-06-03
 Holzmarktstr.	? 11773,12006 11619,12084 11388,12202 11351,12221
 #: last_checked: 2007-05-31
@@ -147,7 +147,7 @@ Einige Radweg-Abschnitte der Perleberger Str. sind mittlerweile gesperrt, welche
 #: XXX: Schreibweise ist auch wiedersprüchlich: mit oder ohne Bindestrich, letzteres bei luise-berlin und wahrscheinlich richtig
 Wrightallee: Streckenführung zwischen Melli-Besse-Ring und Gorissenstr. bereits komplett?	? 18143,2718 18170,2819 18199,2960 18010,3263 17976,3735 17949,3970
 B87: im Bereich von Müllrose und Beeskow Umgehungsstraßen; bereits fertiggestellt?	? 86488,-7562 85598,-8331 84692,-9145 84255,-9991 83672,-10601 83389,-11087 82740,-11887 81786,-12568 81278,-13886 80317,-15604 80143,-15900 79825,-16575 79718,-16658 79714,-16872 79650,-16999 79542,-17061 78297,-17788 76631,-18359 74920,-18929 74707,-18991 73222,-20567 71815,-22343 70984,-23637 70075,-24862 69290,-25534 68467,-25032 68208,-25518 67864,-25691 66943,-26530 65386,-29479 64853,-30986 63609,-34428 63520,-34874 63095,-34910 62112,-36752 60430,-38587 58111,-41188 57451,-41866 55628,-43569 53268,-45117 52695,-45345 50425,-46001 49708,-46344 48300,-48609 47500,-49275 47037,-49675 46312,-50912 45914,-51087 45475,-51090 44856,-51015
-#: last_checked: 2007-04-04
+#: last_checked: 2007-06-06
 #: by: Message-ID: <4mfe1bF5vae4U1@uni-berlin.de>
 Warschauer Str.: Radwegbenutzungspflicht wird aufgehoben	?; 13546,11352 13476,11174 13454,11119 13409,11004 13332,10832
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html
@@ -241,6 +241,8 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet? in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: Jens-Michael Schau:
+Käthe-Kollwitz-Str., Hohen Neuendorf: schlechtes Kopfsteinpflaster, Q3	? 2177,29194 2225,29241 2288,29306 2344,29442 2353,29471 2318,29666 2314,29783 2320,29875
 #: by: anonymous:
 Kantstr. (Neuenhagen): mäßiges Kopfsteinpflaster, Q2	? 31471,12224 31566,11907 31669,11678
 #: by: ??? (siehe Mail...)
@@ -1274,9 +1276,6 @@ Jochen-Klepper-Weg: Qualität (laut ADFC-Karte teilweise gut geeignet)?	? -3030,2
 Gerkrathstr.: Qualität (laut ADFC-Karte ungeeignet)?	? -3280,2507 -3246,2606 -3260,2675 -3225,2902
 Rehsprung: Qualität? Für den Autoverkehr gesperrt (Teile davon?)? Existiert eine Treppe an der Autobahnunterführung?	? -3280,2507 -3309,2400 -3284,2306 -3156,2134 -3107,2068 -3098,1922 -3133,1802 -3234,1751 -3264,1645 -3502,1581 -3557,1652 -3609,1602 -3654,1539 -3764,1446
 An der Rehwiese: Qualität?	? -3559,1760 -3557,1652 -3511,1686 -3389,1703 -3299,1753 -3299,1838 -3223,2020 -3284,2041 -3420,2224 -3395,2403 -3372,2704 -3360,2917
-#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20060412.1640.38345.html
-Bietzkestr.: Qualität? (wahrscheinlich Kopfsteinpflaster, das zwischen Marie-Curie-Allee und Archenholdstr. möglicherweise seit Sommer 2006 durch Asphalt ersetzt wurde)	? 16967,11162 17062,11130 17263,11068
-Sophienstr. zwischen Marie-Curie-Allee und Heinrichstr.: Qualität? (Kopfsteinpflaster, das möglicherweise seit Sommer 2006 durch Asphalt ersetzt wurde)	? 16869,11190 16967,11162
 #: XXX war ein anonymer Eintrag, als Spielstraße ausgewiesen:
 Roßweiner Ring: Qualität?	? 25007,13951 25146,13901 25120,13803 24975,13848
 Herrenweg: Qualität? Vom nördlichen Ende aus ein Feldweg, vom südlichen Ende aus ein Plattenweg	? 52614,175530 51994,175744 51796,176068 51837,176409 51334,176779 51310,177121 51524,177739 51627,178336
@@ -1294,8 +1293,6 @@ Janusz-Korczak-Str.: Qualität, Radwege?	? 24303,15070 24232,15060 24139,15046 23
 Marwitzer Str.: Radwege, aber von wo bis wo genau?	? -3700,26625 -4048,26914 -4293,27146 -4750,27667
 Preußenstr.: Qualität?	? 21047,927 20971,1046 20850,1217
 Preußenstr.: Qualität?	? 21297,651 21202,727
-#: note: siehe auch http://www.berlin.de/ba-lichtenberg/presse/archiv/20030924.15288.html
-Margaretenstr. (Lichtenberg): Qualität (wahrscheinlich Asphalt)?	? 17070,11375 16936,11409 16852,11430 16723,11470 16649,11497
 Wongrowitzer Steig: Qualität (laut ADFC-Karte gut geeignet)?	? 22785,6984 22663,7014 22474,7065 22240,7122 22132,7148 22035,7146
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20050810.1640.28623.html:
 Fürstenwalder Damm: existieren zwischen Stillerzeile und Müggelseedamm Radwege?	? 25012,5754 23950,5342
@@ -1411,7 +1408,6 @@ Gerlindeweg: Qualität des Abschnitts zwischen Luisenstr. und Helgaweg?	? -1846,1
 #: note: ein anonymer Kommentar war nicht klar genug. Laut Luftbild scheinen Autofahrer nicht auf die Daumstr. fahren zu können
 Burscheider Weg: Qualität (möglicherweise gutes Kopfsteinpflaster)? Einbahnstraßenregelung: gibt es eine, wo und in welche Richtung?	? -1345,15060 -1322,15079 -934,15254 -862,15283 -741,15304
 Markomannenstr. - Preußenstr.: existiert eine für Radfahrer befahrbare Verbindung zwischen Markomannenstr. und Preußenstr.?	? 20700,1363 20711,1406
-Karl-Egon-Str.: Qualität der Karl-Egon-Str. zwischen Marksburgstr. und Dönhoffstr.?	? 18430,9199 18406,9052 18372,8869
 Bootshausweg - An den Rohrbruchwiesen: Qualität des Weges? (wahrscheinlich asphaltiert?) für Autofahrer gesperrt?	? -1229,16773 -1316,16729 -1359,16737 -1421,16751 -1452,16728
 Am Flugplatz (Strausberg): Qualität?	? 44596,21287 44661,21139 44631,21051 44692,20886 44686,20822 44536,20408 44527,19890 44085,19049
 Prenzlau, Friedrichstr.: Qualität? (zumindest am nördlichen Ende Kopfsteinpflaster, OK, Q1); Einbahnstraßenregelung? Fußgängerzone im Mittelteil?	? 39574,101863 39550,101671 39538,101564 39536,101514

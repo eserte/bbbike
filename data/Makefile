@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.142 2007/05/31 21:46:01 eserte Exp $
+# $Id: Makefile,v 2.142 2007/05/31 21:46:01 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -856,6 +856,7 @@ check-forever:
 	-nice forever -30 -i make check all
 	@-alarm -nicedown
 	xmessage "check-forever failed"
+	xterm-config -deiconify -raise
 
 .OPTIONAL: .check_bbbike-temp-blockings-optimized
 
