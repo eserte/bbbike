@@ -40,3 +40,4 @@ seek $fh, 0, 0;
 local $/ = \8192;
 print <$fh>;
 
+unlink $filename;
