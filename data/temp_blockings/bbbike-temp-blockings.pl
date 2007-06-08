@@ -8498,4 +8498,13 @@ EOF
 userdel	q4::inwork 61140,11287 61156,11478
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Hosemannstr. (Prenzlauer Berg) in beiden Richtungen, zwischen Grellstr. und Ostseeplatz Baustelle, Straße vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_005738',
+       data  => <<EOF,
+userdel	2::inwork 12731,15824 12559,15524 12472,15356 12428,15275
+EOF
+     },
     );

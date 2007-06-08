@@ -274,7 +274,7 @@ Große Präsidentenstr.	1 10097,12997 10220,13098
 Naumannstr.	1 7709,8770 7707,8915
 Gritznerstr.	1 4507,6320 4555,6403
 Duisburger Str.:	1 4183,10144 3874,10153
-Majakowskiring	1 10373,18889 10354,18814 10203,18762 10037,18715 9987,18757 10055,18831 10184,18875 10307,18915 10373,18889
+Majakowskiring	1 10373,18889 10354,18814 10203,18762 10041,18697 9987,18757 10055,18831 10184,18875 10307,18915 10373,18889
 Straße 462	1 4953,17412 5068,17384
 Havensteinstr.	1 6304,2569 6603,2803
 Worpsweder Str.	1 6191,4923 6203,5138
@@ -421,6 +421,10 @@ Karl-Egon-Str.	1 18372,8869 18406,9052 18430,9199 18457,9343
 #: by: Bosshold, Martin:
 Marschnerstr.	1 4629,3916 4634,4053
 Wollankstr.	1 10027,18165 10054,18210
+#: by: andk
+Kreuzstr.	1 9832,17925 9902,18180 9909,18333
+#: note: war mal "1s", aber ich wurde dafür zu oft getadelt...
+Vorbergstr.	1 7022,9211 7137,9216 7315,9156
 #
 # Potsdam
 #
@@ -500,8 +504,6 @@ Zionskirchstr.	1s 10389,14274 10426,14262
 Walsroder Str.	1s 6396,5125 6295,5132 6203,5138 6089,5145
 Hünensteig	1s 6415,5028 6393,5028 6396,5125
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s 12119,9823 11946,9913 11735,10022 11512,10105
-#: note: Richtung von Dominik korrigiert:
-Vorbergstr.	1s 7022,9211 7137,9216 7315,9156
 Czeminskistr.	1s 7615,8927 7570,8863
 Stallschreiberstr.	1s 10489,11405 10620,11244 10678,11172
 Jahnstr.	1s 11493,9128 11509,9392
@@ -887,8 +889,8 @@ enges Drängelgitter	BNP:5 100,3
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #
-#: last_checked: 2007-05-01
-Zum Anhalter Steg: Bauarbeiten	2:inwork 8773,10429 8776,10548
+#: last_checked: 2007-06-08
+Zum Anhalter Steg: Bauarbeiten bis 2007-10-31	2:inwork 8773,10429 8776,10548
 #: last_checked: 2007-05-28
 Margarte-Steffin-Str.: Baurabeiten	2:inwork 8700,12810 8730,12804
 #: XXX?

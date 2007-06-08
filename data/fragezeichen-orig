@@ -10,7 +10,7 @@
 #: by: http://archiv.tagesspiegel.de/archiv/16.03.2007/3142959.asp
 Wintersteinstr.	? 3763,12279 3760,12336 3748,12472 3741,12607 3738,12639
 #: last_checked: 2007-05-30
-Wilhelmstr. (Kreuzberg)	? 9376,10393 9366,10541 9359,10625 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
+Wilhelmstr. (Kreuzberg)	? 9376,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
 Wisbyer Str.	? 12091,16209 12026,16247 11887,16320 11807,16340 11727,16358
 Wisbyer Str.	?; 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 11448,16398 11397,16405 11289,16423 11033,16464
 #: by http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2004/1103/lokales/0030/ vvv
@@ -28,7 +28,7 @@ Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 
 Köpenicker Str. (auch in Mitte?)	? 11155,11750 11242,11720 11574,11594 11807,11479 11943,11398 12026,11348
 #: last_checked: 2007-06-03
 Holzmarktstr.	? 11773,12006 11619,12084 11388,12202 11351,12221
-#: last_checked: 2007-05-31
+#: last_checked: 2007-06-08
 Gitschiner Str.	? 9948,10280 10122,10294 10340,10301 10605,10312 10859,10333 10962,10340 11114,10338
 Storkower Straße zwischen Kniprode- und Greifswalder Straße	? 13453,14678 12722,15105
 Grellstr.	? 12722,15105 12428,15275 12252,15376 11941,15586
@@ -1334,7 +1334,7 @@ Wassermannstr.: Qualität zwischen Radickestr. und Glienicker Weg?	? 21055,3415 2
 Alexanderstr.: während der Arbeiten an Alexa kein Radweg	?; 11134,12793 11207,12706
 Alexanderstr./Alexa: Ampel in Vorbereitung	? 11207,12706
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20061025.0935.49339.html, aber ganz klar ist es nicht, ob nur die Straßenanbindung oder die gesamte Straße gemeint ist, und welcher Radweg?
-Hackenbergstr.: Qualität? Gibt es hier einen Radweg?	? 20429,3792 20248,4040
+Hackenbergstr.: Qualität? Gibt es hier einen Radweg?	? 20429,3792 20280,3996 20248,4040
 #: note: laut Message-ID: <e3o6lb$grb$1@hahn.informatik.hu-berlin.de> noch immer nicht fertig
 Peetzig - Greiffenberg: westlich der Bahnstrecke mittlerweile asphaltiert?	? 44200,74890 45817,75966
 Putenweg: Qualität?	? 16491,517 16372,312 16281,156 16244,86 16192,24 16118,-51 16106,-94 16154,-230 16198,-339 16259,-368 16346,-394
@@ -1431,3 +1431,7 @@ Am Luftschiffhafen - R1/Uferweg: existiert eine Verbindung für Radfahrer? Qualit
 Krugsdorfer Damm - Rothenburg: Qualität vor der Ortschaft?	? 53255,124438 53217,125181 53023,125365
 Pasewalk - Krugsdorf: Qualität?	? 51456,122864 52188,123497 53255,124438 53938,125022 54153,125114 54341,125283
 Krugsdorf - Koblentz: Qualität?	? 57864,125082 57736,125319 57711,125655 57622,126012 57525,126374
+#: note: ein anonymer Kommentar war nicht klar genug ("gute Qualität")
+Hoffmannstr. (Adlershof): Qualität?	? 20280,3996 20467,4122 20623,4227
+#: note: ein anonymer Kommentar war nicht ganz klar ("kein Autoverkehr?")
+Wilhelm-Gericke-Str.: Qualität? (wahrscheinlich guter Beton)	? 5700,19510 5592,19888 5612,19929 5804,20047 5925,20118

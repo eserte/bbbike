@@ -1520,6 +1520,16 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
          'data' => 'userdel	q4::inwork 61140,11287 61156,11478
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_005738',
+         'until' => undef,
+         'text' => 'Hosemannstr. (Prenzlauer Berg) in beiden Richtungen, zwischen Grellstr. und Ostseeplatz Baustelle, Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1009,
+         'data' => 'userdel	2::inwork 12731,15824 12559,15524 12472,15356 12428,15275
+',
+         'type' => 'gesperrt'
        }
      
 );

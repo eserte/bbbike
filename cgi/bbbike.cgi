@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.56 2007/05/04 20:39:22 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.57 2007/06/07 20:47:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -705,7 +705,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.56 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.57 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -6145,11 +6145,12 @@ sub tie_session_counted {
     my $date = sprintf "%04d-%02d-%02d", $l[5]+1900, $l[4]+1, $l[3];
     ## Make sure a different user for cgi-bin/mod_perl operation is used
     #my $directory = "/tmp/bbbike-sessions-" . $< . "-$date";
-    ## No need for per-day directories and counterfiles,
+    ## No need for per-day directories,
     ## I have /tmp/coordssessions
     my $directory = "/tmp/bbbike-sessions-" . $<;
-    #my $counterfile = "/tmp/bbbike-counter-" . $< . "-$date";
-    my $counterfile = "/tmp/bbbike-counter-" . $<;
+    ## Resetting the sessions daily:
+    my $counterfile = "/tmp/bbbike-counter-" . $< . "-$date";
+    #my $counterfile = "/tmp/bbbike-counter-" . $<;
 
 #     require File::Spec;
 #     open(OLDOUT, ">&STDOUT") or die $!;
@@ -6426,7 +6427,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/05/04 20:39:22 $';
+    my $cgi_date = '$Date: 2007/06/07 20:47:10 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
