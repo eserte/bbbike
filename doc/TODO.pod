@@ -591,6 +591,10 @@ E<quot>Mastering Perl/TkE<quot> verwenden.
 Rotierte Fonts: vielleicht ein Freetype-Modul schreiben, dafür
 eine Tk::Canvas-Erweiterung und diese in BBBike verwenden?
 
+Besser: man kann bereits jetzt rotierte TTF-Fonts verwenden:
+
+    perl -MTk -e 'tkinit->Label(-text => "hello, world!")->pack;MainLoop' -- -font 'serif:matrix=1 .1 0.2 1 122'
+
 =item * (M1)
 
 Vergrößerung der Schrift beim Zoomen
