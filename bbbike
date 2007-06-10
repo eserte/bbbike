@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.312 2007/05/31 21:47:47 eserte Exp eserte $
+# $Id: bbbike,v 3.314 2007/06/10 18:52:59 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -208,7 +208,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.312 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.314 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -3634,12 +3634,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 
     if ($advanced && $os ne "win") {
 	$opbm->command(-label => M"Start BBBike-Server",
-		       -command => sub {
-			   require BBBikeServer;
-			   if (!BBBikeServer::running()) {
-			       BBBikeServer::create_server($top);
-			   }
-		       },
+		       -command => sub { gui_start_bbbike_server() },
 		      );
     }
 
@@ -9641,7 +9636,7 @@ sub activate_temp_blockings {
     # Use the optimized file?
     if (!-r $file) {
 	$file = $optimized_file;
-    } else {
+    } elsif (!defined $from || $from >= $now) {
 	if (-r $optimized_file && -s $optimized_file &&
 	    -M $optimized_file <= -M $file) {
 	    $file = $optimized_file;
@@ -10289,7 +10284,10 @@ sub choose_ort {
     my $nodraw = $args{-nodraw};
     my $ondestroy = $args{-ondestroy};
     my $additionalframe = $args{-additionalframe};
-    my $sorted = exists $args{-unsorted} ? !$args{-unsorted} : 1;
+    my $sorted = "auto";
+    if (exists $args{-unsorted}) {
+	$sorted = "unsorted";
+    }
     my $splitter = $args{-splitter};
     my $columnwidths = $args{-columnwidths};
     my $container = $args{-container};
@@ -10341,37 +10339,148 @@ sub choose_ort {
 	    delete $toplevel{"chooseort-$type-$linetype"};
 	}
 
-	my $Listbox = "Listbox";
-	if ($splitter) {
-	    $Listbox = "HList";
-	} else {
-	    if ($sorted) {
-		if (!defined $K2Listbox) {
-		TRYLISTBOX: {
-			foreach my $try (qw(K2Listbox KListbox WListbox)) {
-			    if (eval q{ require Tk::} . $try . q{; 1;} && !$@) {
-				$K2Listbox = $Listbox = $try;
-				last TRYLISTBOX;
-			    } else {
-				warn "Can't use module Tk::$try: $@";
-			    }
-			}
-		    }
-		} else {
-		    $Listbox = $K2Listbox;
-		}
-	    }
-	}
 	my $attrib = ($linetype eq 's'
 		      ? $str_attrib{$type}
 		      : $p_attrib{$type});
+
 	IncBusy($top);
 	my $t;
 	eval {
+	    my %orte;
+	    my @orte;
+	    my $object;
+	    my $title = $attrib ? $attrib->[ATTRIB_PLURAL] : undef;
+	    if ($type eq 'p') {
+		my @haltestellen;
+		require Fahrinfo;
+		my $hs = tie @haltestellen, 'Fahrinfo::Haltestellen';
+		for my $i (0 .. $hs->{'anzahl_namen'}-1) {
+		    $orte{$hs->FETCH($i)} = $hs->get_eind_index($i);
+		}
+	    } elsif ($linetype =~ /^p/) {
+		if ($data) {
+		    $object = $data;
+		} elsif (defined $p_obj{$type} && $coord_system eq 'standard') {
+		    $object = $p_obj{$type};
+		} else {
+		    cache_decider_init();
+		    if ($type eq 'o') {
+			$object = _get_orte_obj("o");
+		    } else {
+			$object = get_strassen_obj($p_file{$type});
+		    }
+		    if ($coord_system eq 'standard' && cache_decider()) {
+			$p_obj{$type} = $object;
+		    }
+		}
+
+		my $i = 0;
+		$object->init;
+		while(1) {
+		    my $ret = $object->next;
+		    last if @{$ret->[Strassen::COORDS]} == 0;
+		    my $strname = $ret->[Strassen::NAME];
+		    $orte{$strname} = $i;
+		    $i++;
+		    push @orte, $strname;
+		}
+	    } elsif ($linetype =~ /^s/) {
+		if ($data) {
+		    $object = $data;
+		} elsif (defined $str_obj{$type} && $coord_system eq 'standard') {
+		    $object = $str_obj{$type};
+		} else {
+		    cache_decider_init();
+		    $object = get_any_strassen_obj("str", $type);
+		    if ($coord_system eq 'standard' && cache_decider()) {
+			$str_obj{$type} = $object;
+		    }
+		}
+
+		my $i = 0;
+		$object->init;
+		while(1) {
+		    my $ret = $object->next;
+		    last if @{$ret->[Strassen::COORDS]} == 0;
+		    my $strname = $ret->[Strassen::NAME];
+		    $strname =~ s/\|/ /g; # Bla|Foo: Pipe-Zeichen entfernen
+		    my @strname;
+		    if ($attrib->[ATTRIB_LINES]) { # Linien?
+			@strname = split(/,/, $strname);
+		    } else {
+			@strname = ($strname);
+		    }
+		    foreach $strname (@strname) {
+			if (exists $orte{$strname}) {
+			    $orte{$strname} .= ",$i";
+			} else {
+			    $orte{$strname} = $i;
+			}
+			push @orte, $strname;
+		    }
+		    $i++;
+		}
+	    }
+
+	    if ($sorted eq 'auto') {
+		if ($object && $object->can("get_global_directive")) {
+		    my $listing_sort = $object->get_global_directive("listing_sort");
+		    if ($listing_sort && $listing_sort =~ m{^(unsorted|natural)$}) {
+			$sorted = $1;
+		    }
+		}
+	    }
+	    if ($sorted eq 'auto') {
+		$sorted = "alphabetic";
+	    }
+	    if ($sorted eq 'natural') {
+		if (!eval { require Sort::Naturally; 1 }) {
+		    status_message(M"Sort::Naturally kann nicht geladen werden, natürliches Sortieren ist nicht möglich.", "info");
+		    $sorted = "alphabetic";
+		}
+	    }
+
+	    if (!defined $title && $object && $object->can("get_global_directive")) {
+		$title = $object->get_global_directive("title.$Msg::lang");
+		if (!defined $title) {
+		    $title = $object->get_global_directive("title");
+		    if (!defined $title) {
+			if (defined $object->file) {
+			    $title = basename($object->file);
+			}
+			if (!defined $title) {
+			    $title = "Layer $linetype/$type";
+			}
+		    }
+		}
+	    }
+
+	    my $Listbox = "Listbox";
+	    if ($splitter) {
+		$Listbox = "HList";
+	    } else {
+		if ($sorted eq 'alphabetic') {
+		    if (!defined $K2Listbox) {
+		    TRYLISTBOX: {
+			    foreach my $try (qw(K2Listbox KListbox WListbox)) {
+				if (eval q{ require Tk::} . $try . q{; 1;} && !$@) {
+				    $K2Listbox = $Listbox = $try;
+				    last TRYLISTBOX;
+				} else {
+				    warn "Can't use module Tk::$try: $@";
+				}
+			    }
+			}
+		    } else {
+			$Listbox = $K2Listbox;
+		    }
+		}
+	    }
+
 	    if ($container) {
 		$t = $container;
 	    } else {
-		$t = $top->Toplevel(-title => $attrib->[ATTRIB_PLURAL],
+		$t = $top->Toplevel(-title => $title,
 				    -class => "Bbbike Chooser");
 		set_as_toolwindow($t);
 		if ($coord_system eq 'standard') {
@@ -10453,79 +10562,6 @@ sub choose_ort {
 			 });
 	    }
 
-	    my %orte;
-	    my @orte;
-	    my $object;
-	    if ($type eq 'p') {
-		my @haltestellen;
-		require Fahrinfo;
-		my $hs = tie @haltestellen, 'Fahrinfo::Haltestellen';
-		for my $i (0 .. $hs->{'anzahl_namen'}-1) {
-		    $orte{$hs->FETCH($i)} = $hs->get_eind_index($i);
-		}
-	    } elsif ($linetype =~ /^p/) {
-		if ($data) {
-		    $object = $data;
-		} elsif (defined $p_obj{$type} && $coord_system eq 'standard') {
-		    $object = $p_obj{$type};
-		} else {
-		    cache_decider_init();
-		    if ($type eq 'o') {
-			$object = _get_orte_obj("o");
-		    } else {
-			$object = get_strassen_obj($p_file{$type});
-		    }
-		    if ($coord_system eq 'standard' && cache_decider()) {
-			$p_obj{$type} = $object;
-		    }
-		}
-
-		my $i = 0;
-		$object->init;
-		while(1) {
-		    my $ret = $object->next;
-		    last if @{$ret->[Strassen::COORDS]} == 0;
-		    my $strname = $ret->[Strassen::NAME];
-		    $orte{$strname} = $i;
-		    $i++;
-		}
-	    } elsif ($linetype =~ /^s/) {
-		if ($data) {
-		    $object = $data;
-		} elsif (defined $str_obj{$type} && $coord_system eq 'standard') {
-		    $object = $str_obj{$type};
-		} else {
-		    cache_decider_init();
-		    $object = get_any_strassen_obj("str", $type);
-		    if ($coord_system eq 'standard' && cache_decider()) {
-			$str_obj{$type} = $object;
-		    }
-		}
-
-		my $i = 0;
-		$object->init;
-		while(1) {
-		    my $ret = $object->next;
-		    last if @{$ret->[Strassen::COORDS]} == 0;
-		    my $strname = $ret->[Strassen::NAME];
-		    $strname =~ s/\|/ /g; # Bla|Foo: Pipe-Zeichen entfernen
-		    my @strname;
-		    if ($attrib->[ATTRIB_LINES]) { # Linien?
-			@strname = split(/,/, $strname);
-		    } else {
-			@strname = ($strname);
-		    }
-		    foreach $strname (@strname) {
-			if (exists $orte{$strname}) {
-			    $orte{$strname} .= ",$i";
-			} else {
-			    $orte{$strname} = $i;
-			}
-		    }
-		    $i++;
-		}
-	    }
-
 	    if ($splitter) {
 		my(@cols) = $splitter->((keys %orte)[0]);
 		$max_cols = scalar @cols;
@@ -10575,14 +10611,14 @@ sub choose_ort {
 		}
 		# XXX destroy text_styles?
 	    } else {
-		if (!$sorted) {
+		if ($sorted eq 'unsorted') {
 		    $lb->insert('end',
-				map { $_->[1] }
-				sort { $a->[0] <=> $b->[0] }
-				map { [lc $orte{$_}, $_] }
-				keys %orte);
+				@orte);
+		} elsif ($sorted eq 'natural') {
+		    $lb->insert('end',
+				Sort::Naturally::nsort(keys %orte));
 		} else {
-		    # XXX maybe use Sort::Naturally? speed issues?
+		    # XXX use Sort::Naturally if $sorted eq 'natural'
 		    # "use locale" is not used here because:
 		    # - there's maybe no locale support at all
 		    # - the german locale may be missing
@@ -10635,11 +10671,16 @@ sub choose_ort {
 				: $lb->index('active')
 			       );
 		return if !defined $lb_index;
-		my $ort = ($splitter
-			   ? $lb->info("data", $lb_index)
-			   : $lb->get($lb_index)
-			  );
-		my $index = $orte{$ort};
+		my $index;
+		if ($sorted eq 'unsorted') {
+		    $index = $lb_index;
+		} else {
+		    my $ort = ($splitter
+			       ? $lb->info("data", $lb_index)
+			       : $lb->get($lb_index)
+			      );
+		    $index = $orte{$ort};
+		}
 		my $tcoords = [];
 		$args{'-type'} = $type;
 		if ($type eq 'o') {
@@ -11894,6 +11935,16 @@ sub gui_set_edit_mode {
 	undef $edit_mode;
 	undef $edit_normal_mode;
 	$edit_mode_flag = 0;
+    }
+}
+
+sub gui_start_bbbike_server {
+    require BBBikeServer;
+    if (!BBBikeServer::running()) {
+	BBBikeServer::create_server($top);
+	status_message("Der BBBike-Server kann jetzt mit dem Programm <bbbikeclient> angesprochen werden", "info");
+    } else {
+	status_message("Der BBBike-Server läuft bereits.", "infodlg");
     }
 }
 
@@ -19560,7 +19611,7 @@ sub balloon_info_from_all_tags {
 	    print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@tags],[qw()])->Indent(1)->Useqq(1)->Dump;
 	}
 
-	if ($tags[0] =~ m{^(s|l|$comments_rx|qs|ql|hs|hl|fz|u|b|r|f|w|rw|e|temp_sperre|temp_sperre_s|L\d+|L\d+-fg)$}) {
+	if ($tags[0] =~ m{^(s|sBAB|l|$comments_rx|qs|ql|hs|hl|fz|u|b|r|f|w|rw|e|temp_sperre|temp_sperre_s|L\d+|L\d+-fg)$}) {
 	    my $label = $tags[1];
 	    if ($tags[0] eq 'rw') { # Special handling for cyclepaths
 		(my $rw_code) = $tags[2] =~ /^rw-(RW\d+)/;

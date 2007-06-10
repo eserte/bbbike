@@ -1,7 +1,17 @@
 @temp_blocking = ();
-$#temp_blocking = 65;
+$#temp_blocking = 62;
 push @temp_blocking,
 (
+       {
+         'until' => 1181512800,
+         'text' => 'Karl-Marx-Straße zwischen Flughafenstraße und Uthmannstraße sowie Erkstraße zwischen Donaustraße und Karl-Marx-Straße: Straßenfest, Straßen gesperrt, bis zum 10.6.2006 ',
+         'from' => 1181340000,
+         'file' => 'karlmarx.bbd',
+         'id' => 63,
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
        {
          'until' => 1181512800,
          'text' => 'Bergmannstraßenfest, Bergmannstr. zwischen Mehringdamm und Zossener Str. gesperrt, 08.06.2007, 7.00 Uhr bis 10.06.2007, 24.00 Uhr ',
@@ -1336,16 +1346,7 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_005616',
-         'until' => undef,
-         'text' => 'Friedrichstr. (Kreuzberg) zwischen Kochstr. und Zimmerstr. Baustelle, Radfahrer können aber langsam passieren',
-         'from' => undef,
-         'id' => 982,
-         'data' => 'userdel	q4::inwork 9480,11207 9473,11316
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1415,15 +1416,7 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1181340000,
-         'text' => 'L 030 Luckenwalder Str. OD Königs Wusterhausen, zw. Cottbuser Str. und ALDI Kanalarbeiten Vollsperrung 04.06.2007-08.06.2007 ',
-         'from' => 1180821600,
-         'id' => 994,
-         'data' => 'userdel	q4::inwork 25543,-12403 25912,-11956
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1182549600,
          'text' => 'L 040 L 23 Storkow-L 39 Friedersdorf Bahnübergang bei Kummersdorf Gleisbauarbeiten Vollsperrung 18.06.2007-22.06.2007 ',
@@ -1503,15 +1496,7 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1181340000,
-         'text' => 'L 256 B109 (Pasewalk)-B104 (Strasburg) Bahnübergang Nechlin Gleisbauarbeiten Vollsperrung 08.06.2007-08.06.2007 ',
-         'from' => 1181167200,
-         'id' => 1007,
-         'data' => 'userdel	2::inwork 42222,115929 42250,115925 42905,115846
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1182636000,
          'text' => 'L 362 Frankfurter Chaussee OL Müncheberg, Höhe Behlendorfer Weg Straßenbauarbeiten Vollsperrung 11.06.2007-23.06.2007 ',
@@ -1530,6 +1515,25 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
          'data' => 'userdel	2::inwork 12731,15824 12559,15524 12472,15356 12428,15275
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1181512800,
+         'text' => 'Treptower Festtage bis zum 10.06.2007',
+         'from' => 1181373108,
+         'id' => 1010,
+         'data' => 'userdel	2::temp 14464,9927 14500,9856 14671,9759 14697,9726 14910,9643
+userdel	2::temp 14500,9856 14483,9843
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Holteistraße: Bauarbeiten, Fahrbahn ist nicht benutzbar',
+         'from' => undef,
+         'id' => 1011,
+         'data' => 'userdel	q4::inwork 14535,11327 14495,11261 14459,11200
+',
+         'type' => 'handicap'
        }
      
 );

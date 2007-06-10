@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.75 2007/03/19 23:01:20 eserte Exp $
+# $Id: Core.pm,v 1.76 2007/06/10 18:24:03 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.75 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.76 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -1354,6 +1354,18 @@ sub get_global_directives {
 	my $tmp_s = $self->new($file, NoRead => 1);
 	$tmp_s->read_data(ReadOnlyGlobalDirectives => 1);
 	$tmp_s->{GlobalDirectives};
+    }
+}
+
+# If existing, get the *first* global directive with the given name,
+# otherwise undef
+sub get_global_directive {
+    my($self, $directive) = @_;
+    my $global_dir = $self->get_global_directives;
+    if ($global_dir && exists $global_dir->{$directive}) {
+	$global_dir->{$directive}[0];
+    } else {
+	undef;
     }
 }
 

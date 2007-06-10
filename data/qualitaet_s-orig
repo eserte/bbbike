@@ -1,4 +1,4 @@
-#: title: Qualität von Straßen in Berlin
+#: title: Qualität der Straßen in Berlin
 #: version: $Id: qualitaet_s-orig,v 4.199 2007/05/31 20:08:37 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
@@ -643,7 +643,8 @@ Pankeweg: asphaltiert	Q0 12377,20636 12207,20351 12122,20307 11995,19759
 #: note: laut http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0511/nachricht2116.html mit neuem Belag versehen:
 Schloßallee: Asphalt	Q0 11883,19739 11730,19684 11312,19537 11273,19521
 Schloßallee: Parkweg, OK	Q1 11273,19521 10857,19379 10661,19307 10525,19255
-Pankeweg, Schloßpark Schönhausen: Parkweg, meist OK	Q1 10661,19307 10592,19249 10509,18981 10496,18704
+#: by: rjoop
+Pankeweg, Schloßpark Schönhausen: Asphalt	Q0 10661,19307 10592,19249 10509,18981 10496,18704
 Pankeweg, Bürgerpark: Parkweg, OK	Q1 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9414,18278 9304,18165 9310,18108
 #: XXX geraten:
 Bürgerpark: Parkweg	Q1 9460,18053 9479,18217 9701,18256 9716,18290
@@ -1260,8 +1261,8 @@ Delbrückstr. (Neukölln): Kopfsteinpflaster	Q2 12743,6645 12851,6664 13125,6717
 Rungiusstr.: sehr guter Asphalt	Q0 13158,5490 13116,5689 13105,5748 13077,5893 13064,5953 13027,6168
 #: by: andreas voigt:
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20061221.1045.70244.html
-Rungiusstr.: sehr guter Asphalt	Q0 13027,6168 12997,6290 12981,6371
-Rungiusstr.: sehr guter Asphalt	Q0 12981,6371 12966,6424
+Rungiusstr.: sehr guter Asphalt	Q0 13027,6168 12997,6290 12981,6366 12979,6374
+Rungiusstr.: sehr guter Asphalt	Q0 12979,6374 12966,6424
 (Kolonie Blaschkotal): fester Sandweg, etwas Schotter	Q2 13158,5490 13162,5382 13112,5253
 (Weg durch Kolonie): fester Sandweg, etwas Schotter	Q2 13112,5253 13039,5122
 Braunschweiger Ufer: asphaltiert	Q0 13077,5893 13483,5973
@@ -1315,7 +1316,7 @@ Cora-Berliner-Str.: asphaltiert	Q0 8737,12098 8783,11959
 Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8823,11765 8804,11838 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10024,9993 10111,9942
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Beton	Q0 14680,10758 14564,10792 14558,10833
-(Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3 14558,10833 14124,10932 14093,10909 14043,10928
+(Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 14558,10833 14124,10932 14093,10909 14043,10928
 Mehringplatz: Verbundsteinpflaster	Q0 9590,10262 9508,10320 9509,10391 9569,10427 9644,10404 9662,10345 9646,10301 9590,10262
 Mehringplatz - Friedrichstr.: Verbundsteinpflaster	Q0 9569,10427 9556,10565
 zum Mehringplatz: Verbundsteinpflaster	Q0 9865,10286 9646,10301
@@ -4093,7 +4094,7 @@ Wachsmuthstr.: Kopfsteinpflaster, nur 13km/h	Q3 3762,23362 3939,23345 4021,23330
 #: by: André Maier:
 Langenbeckstr.: fester Sandweg, nur 13km/h	Q3 24673,9923 24770,9871 25004,9737
 #: by: Christina Hopmann:
-Hattenheimer Str. (Tempelhof): Asphalt	Q0 11590,6026 11655,6189 11625,6248
+Hattenheimer Str. (Tempelhof): Asphalt	Q0 11590,6026 11655,6189 11628,6240
 #: by: Volkmar (vloebe):
 Riastr.: schlechtes Kopfsteinpflaster	Q3 18201,8984 18247,9158
 #: by: TCBerlin:
@@ -4334,7 +4335,7 @@ Pestalozzistr.: Asphalt	Q0 10532,18601 10409,18551 10342,18528 10126,18444 10075
 Georg-Blank-Str.: Asphalt	Q0 12492,15833 12423,15875 12341,15932 12295,15953 12263,15973 12248,15971 12198,15999
 #: by: Stefan Schmidt:
 #: note: Kathrin H.s Freund meint auch: Beton
-Nackenheimer Weg: guter Beton	Q0 11625,6248 11572,6613
+Nackenheimer Weg: guter Beton	Q0 11628,6240 11572,6613
 #: by: Andrè (Friedrich): vvv
 Hauskavelweg: guter Asphalt	Q0 -6660,15379 -6627,15642 -6607,15816 -6592,15946 -6583,16050
 An der Felgenlake: Asphalt	Q0 -6148,15306 -6550,15383 -6660,15379 -6802,15376 -7004,15434

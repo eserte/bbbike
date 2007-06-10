@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.143 2007/06/07 20:24:14 eserte Exp $
+# $Id: Makefile,v 2.145 2007/06/10 18:50:00 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -8,6 +8,10 @@
 #
 # (This is a slightly modified version of the original pmake as found in
 # the FreeBSD sources)
+
+.ifndef HOSTNAME
+HOSTNAME	!= hostname
+.endif
 
 BBBIKEDIR=		..
 MISCDIR=		$(BBBIKEDIR)/misc
@@ -35,7 +39,7 @@ SEARCH_INACCESSIBLE=	${MISCSRCDIR}/search_inaccessible_points
 STEIGUNG_STAT=		${MISCSRCDIR}/steigung_stat
 GREPSTRASSEN=		${MISCSRCDIR}/grepstrassen
 # perl5.8.0 has utf8 bugs
-.if ${HOST} == "devpc01.iconmobile.de"
+.if ${HOSTNAME} == "devpc01.iconmobile.de"
 PERL_UTF8=		perl5.8.7
 .else
 PERL_UTF8=		perl5.8.8
@@ -258,7 +262,7 @@ green:	green-orig
 
 brunnels:	brunnels-orig
 	-@$(WRITEABLE) $@
-	${GREPSTRASSEN} -v -section 'S-Bahn' $> | $(CONVERT2HAFAS) -map H > $@~
+	${GREPSTRASSEN} -v -preserveglobaldirectives -section 'S-Bahn' $> | $(CONVERT2HAFAS) -map H > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
@@ -282,7 +286,7 @@ landstrassen2: landstrassen2-orig
 strassen_bab: strassen_bab-orig
 	-@$(WRITEABLE) $@
 	cat strassen_bab-orig |\
-		${GREPSTRASSEN} -v -sectionrx "Autobahnen in Planung" |\
+		${GREPSTRASSEN} -v -sectionrx "Autobahnen in Planung" -preserveglobaldirectives |\
 	    $(CONVERT2HAFAS) -basefile strassen_bab-orig > $@~
 	cp $@~ $@
 	rm $@~
@@ -461,7 +465,7 @@ plz berlin:	plz-orig
 berlin_ortsteile:	plz-orig
 	-@$(WRITEABLE) $@
 	cat plz-orig | \
-	    ${GREPSTRASSEN} -sectionrx "ortsteile" | \
+	    ${GREPSTRASSEN} -sectionrx "ortsteile" -preserveglobaldirectives | \
 	    $(CONVERT2HAFAS) -basefile plz-orig - > $@~
 	mv -f $@~ $@
 	-@$(READONLY) $@
@@ -708,8 +712,15 @@ ${PERSISTENTTMPDIR}/strassen_in_planung.bbd:	fragezeichen-orig
 # versehen wurden... Siehe auch das TODO "Fragezeichen-Reorganisation"
 ${PERSISTENTTMPDIR}/XXX.bbd:	${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.XXX-|} \
 				handicap_s-orig gesperrt-orig
-	cat ${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.XXX-|} > $@~
-	@echo "# added from handicap_s-orig and gesperrt-orig" >> $@~
+	echo -n > $@~
+	echo "#: line_dash: 8, 5" >> $@~
+	echo "#:" >> $@~
+.for i in ${SOURCE_TARGETS}
+	echo "############################################################" >> $@~
+	echo "# source: $(i)" >> $@~
+	cat ${i:S|^|${PERSISTENTTMPDIR}/.XXX-|} >> $@~
+.endfor
+	@echo "# source: handicap_s-orig and gesperrt-orig" >> $@~
 	${MISCSRCDIR}/grepstrassen -directive temporary= \
 	    ${DATADIR}/handicap_s-orig ${DATADIR}/gesperrt-orig | \
 	    $(PERL) -nle '/(.*\t)(\S+)(.*)/ && !/\b(\d{4}-\d{2}-\d{2}|[0123]?\d\.[01]?\d\.\d{4})\b/ && print "Noch immer? $$1?::inwork$$3"' | \
@@ -736,7 +747,7 @@ OPENGEODB_ORTE_ZIP=		opengeodb-0.2.4d-UTF8-text-orte.zip
 OPENGEODB_ORTE_FILE=		${OPENGEODB_ORTE_ZIP:S/.zip/.txt/}
 OPENGEODB_ORTE_DISTURL=	http://prdownloads.sourceforge.net/opengeodb/${OPENGEODB_ORTE_ZIP}
 OPENGEODB_REGION=	BB MV
-.if ${HOST} == "mom.herceg.de"
+.if ${HOSTNAME} == "mom.herceg.de"
 OPENGEODB_DIR=		/amd/vran/root/usr/ports/distfiles/opengeodb
 .elif exists(/usr/ports/distfiles/opengeodb)
 OPENGEODB_DIR=		/usr/ports/distfiles/opengeodb
@@ -855,8 +866,8 @@ ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd:	fragezeichen ${DATADIR}/strassen $
 check-forever:
 	-nice forever -30 -i make check all
 	@-alarm -nicedown
+	@-xterm-config -deiconify -raise
 	xmessage "check-forever failed"
-	xterm-config -deiconify -raise
 
 .OPTIONAL: .check_bbbike-temp-blockings-optimized
 
@@ -1380,7 +1391,7 @@ SENDMAP?=	/usr/ports/distfiles/from_vran/cgpsmapper/sendmap17Lstatic
 SENDMAP?=	/usr/ports/distfiles/cgpsmapper/sendmap17Lstatic
 .endif
 
-.if ${HOST} == "devpc01.iconmobile.de"
+.if ${HOSTNAME} == "devpc01.iconmobile.de"
 # for some reason 115200 does not work...
 SENDMAP_ARGS?=	-s57600
 .else

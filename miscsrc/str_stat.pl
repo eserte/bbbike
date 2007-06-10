@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: str_stat.pl,v 1.11 2006/04/04 22:02:42 eserte Exp $
+# $Id: str_stat.pl,v 1.11 2006/04/04 22:02:42 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2004,2006 Slaven Rezic. All rights reserved.
@@ -28,12 +28,15 @@ my $do_wasserstrassen = 0;
 
 my $do_area;
 my $splitlines;
+my $as_bbd;
 if (!GetOptions("area!" => \$do_area,
 		"splitlines" => \$splitlines,
+		"asbbd!" => \$as_bbd,
 	       )) {
-    die "usage: $0 [-area] [-splitlines] file ...
+    die "usage: $0 [-area] [-splitlines] [-asbbd] file ...
 -area: calculate areas instead of lines
 -splitlines: split lines like in railways and undergrounds
+-asbbd: create bbd file
 ";
 }
 

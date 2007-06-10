@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.34 2007/05/03 01:19:52 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.35 2007/06/09 22:33:47 eserte Exp $
 #
 
 .ifndef COMMENTS_PARTIAL
@@ -7,7 +7,11 @@
 .endif
 
 # should this be here?
+.if ${HOSTNAME} == "slaven.radzeit.de"
+MAPFILES_ROOT_DIR?=	../../public/mapserver/brb
+.else
 MAPFILES_ROOT_DIR?=	../mapserver/brb
+.endif
 MAPFILES_DATA_DIR=	$(MAPFILES_ROOT_DIR)/data
 MAPFILES_IMG_DIR=	$(MAPFILES_ROOT_DIR)/graphics
 
@@ -16,13 +20,22 @@ MISCSRCDIR?=		../miscsrc
 
 BBBIKEDRAW=		${MISCSRCDIR}/bbbikedraw.pl
 SORTBYCAT=		${MISCSRCDIR}/sortbycat
-BBD2ESRI=		${MISCSRCDIR}/bbd2esri
+# Specify encoding in case some non-latin1 unicode characters need to be
+# converted 
+BBD2ESRI=		${MISCSRCDIR}/bbd2esri -dbfencoding iso-8859-1
+# Some sample encoding variations
+#BBD2ESRI=		${MISCSRCDIR}/bbd2esri -dbfencoding ascii
+#BBD2ESRI=		${MISCSRCDIR}/bbd2esri -dbfencoding utf-8
+#BBD2ESRI=		${MISCSRCDIR}/bbd2esri -dbfencoding html
+
 CONVERT_RADWEGE=	${MISCSRCDIR}/convert_radwege
 
-.if ${HOST} == "biokovo.herceg.de"
+.if ${HOSTNAME} == "biokovo.herceg.de"
 MAPSERVER_BIN_DIR?=	/usr/local/bin
-.elif ${HOST} == "biokovo-amd64.herceg.de"
+.elif ${HOSTNAME} == "biokovo-amd64.herceg.de"
 MAPSERVER_BIN_DIR?=	/usr/local/src/work/mapserver-amd64
+.elif ${HOSTNAME} == "slaven.radzeit.de"
+MAPSERVER_BIN_DIR?=	/usr/local/src/mapserver
 .else
 MAPSERVER_BIN_DIR?=	/usr/local/src/work/mapserver
 .endif

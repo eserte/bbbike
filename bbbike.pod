@@ -271,7 +271,7 @@ Ortes E<uuml>ber eine Listbox.
 
 =item StraE<szlig>en-Symbol
 
-=for html <img src="images/strasse.gif">
+=for html <img src="images/strasse.gif" alt="icon strasse">
 
 Schaltet das Zeichnen von StraE<szlig>en in Berlin ein oder aus
 (Tastatur: C<s>).
@@ -422,7 +422,7 @@ FuE<szlig>gE<auml>ngerverkehr).
 
 =item LandstraE<szlig>en-Symbol
 
-=for html <img src="images/landstrasse.gif">
+=for html <img src="images/landstrasse.gif" alt="icon landstrasse">
 
 Schaltet das Zeichnen von LandstraE<szlig>en in Berlins Umgebung ein
 oder aus (Tastatur: C<l>).
@@ -452,7 +452,7 @@ Gleiche Funktion wie beim StraE<szlig>en-Symbol.
 
 =item Ort-Symbol
 
-=for html <img src="images/ort.gif">
+=for html <img src="images/ort.gif" alt="icon ort">
 
 Schaltet das Zeichnen von Orten in Brandenburg ein oder aus (Tastatur:
 C<o>).
@@ -503,7 +503,7 @@ abgespeichert werden soll.
 
 =item U-Bahn-Symbol
 
-=for html <img src="images/ubahn.gif">
+=for html <img src="images/ubahn.gif" alt="icon ubahn">
 
 Schaltet das Zeichnen von U-Bahnlinien ein oder aus (Tastatur: C<u>).
 
@@ -523,7 +523,7 @@ zusE<auml>tzlich auf die jeweilige Zone eingeschrE<auml>nkt werden.
 
 =item S-Bahn-Symbol
 
-=for html <img src="images/sbahn.gif">
+=for html <img src="images/sbahn.gif" alt="icon sbahn">
 
 Schaltet das Zeichnen von S-Bahnlinien ein oder aus (Tastatur: C<b>).
 
@@ -531,7 +531,7 @@ MenE<uuml>: Wie beim U-Bahn-Symbol.
 
 =item RB-Symbol
 
-=for html <img src="images/rbahn.gif">
+=for html <img src="images/rbahn.gif" alt="icon rbahn">
 
 Schaltet das Zeichnen von Regionalbahnlinien ein oder aus (Tastatur: C<r>).
 
@@ -539,7 +539,7 @@ MenE<uuml>: Wie beim U-Bahn-Symbol.
 
 =item GewE<auml>sser-Symbol
 
-=for html <img src="images/wasser.gif">
+=for html <img src="images/wasser.gif" alt="icon wasser">
 
 Schaltet das Zeichnen von FlE<uuml>ssen, KanE<auml>len und Seen ein
 oder aus (Tastatur: C<w>).
@@ -569,7 +569,7 @@ Schaltet das Zeichnen der GewE<auml>sser in Berlin ein oder aus.
 
 =item FlE<auml>chen-Symbol
 
-=for html <img src="images/flaechen.gif">
+=for html <img src="images/flaechen.gif" alt="icon flaechen">
 
 Schaltet das Zeichnen von sonstigen FlE<auml>chen (Parks,
 WE<auml>lder, FlughE<auml>fen) ein oder aus (Tastatur: C<f>).
@@ -596,7 +596,7 @@ Schaltet das Zeichnen der Berliner Stadtgrenze ein oder aus.
 
 =item Sehenswürdigkeiten-Symbol
 
-=for html <img src="images/star.gif">
+=for html <img src="images/star.gif" alt="icon stern">
 
 Schaltet das Zeichnen von Sehenswürdigkeiten und anderen wichtigen
 Gebäuden ein oder aus. Im MenE<uuml> gibt es die weiteren Punkte:
@@ -636,7 +636,7 @@ ObstbE<auml>umen.
 
 =item Zusätzliche Kartenebenen-Symbol
 
-=for html <img src="images/newlayer.gif">
+=for html <img src="images/newlayer.gif" alt="icon neuer layer">
 
 Im MenE<uuml> gibt es die Punkte:
 
@@ -740,7 +740,7 @@ Kartenausschnit vergrE<ouml>E<szlig>ert oder verkleinert werden.
 
 =item E<Uuml>bersichtskarten-Symbol
 
-=for html <img src="images/berlin_overview_small.gif">
+=for html <img src="images/berlin_overview_small.gif" alt="icon uebersichtskarte berlin">
 
 Mit diesem Symbol kann die E<Uuml>bersichtskarte von Berlin und
 Brandenburg ein- und ausgeschaltet werden. In der
@@ -750,7 +750,7 @@ der aktuelle Ausschnitt verschoben.
 
 =item Windrosen-Symbol
 
-=for html <img src="images/windrose.gif">
+=for html <img src="images/windrose.gif" alt="icon windrose">
 
 Mit dem Windrosen-Symbol kann man die Karte in die vier
 Himmelsrichtungen scrollen. Mit der linken Maustaste sind dabei die
@@ -771,7 +771,7 @@ Die folgenden Icons kontrollieren die Suche von Routen:
 
 =item Route suchen
 
-=for html <img src="images/search.gif">
+=for html <img src="images/search.gif" alt="icon suche">
 
 Mit diesem Schalter kann man den Suchmodus ein- oder ausschalten.
 Normalerweise ist dieser Schalter nicht aktiviert und es ist immer der
@@ -956,7 +956,7 @@ Noch nicht implementiert.
 
 =item Beschreibung der aktuellen Route
 
-=for html <img src="images/strlist.gif">
+=for html <img src="images/strlist.gif" alt="icon strassenliste">
 
 Es wird eine Routenbeschreibung in der folgenden Form angezeigt:
 
@@ -1031,26 +1031,26 @@ L<ftp://ftp.forth.org/pub/PalmOS/ryerson/>
 
 =item Route löschen
 
-=for html <img src="images/cross.gif">
+=for html <img src="images/cross.gif" alt="icon kreuz">
 
 Mit Klick auf dieses Icon wird die aktuelle Route gelE<ouml>scht.
 
 =item RE<uuml>ckweg-Symbol
 
-=for html <img src="images/rueckweg.gif">
+=for html <img src="images/rueckweg.gif" alt="icon rueckweg">
 
 Start- und Zielpunkt der aktuellen Route werden vertauscht.
 
 =item Koordinaten-Symbol
 
-=for html <img src="images/koord.gif">
+=for html <img src="images/koord.gif" alt="icon koordinaten">
 
 Dieses MenE<uuml> ist normalerweise nicht aktiviert und wird nur zum
 Editieren der Koordinatendateien benE<ouml>tigt.
 
 =item Info-Symbol
 
-=for html <img src="images/info.gif">
+=for html <img src="images/info.gif" alt="icon information">
 
 Hiermit kann im Informationsmodus umgeschaltet werden. Beim Klick auf
 Kartenelemente wird jeweils ein Informationsfenster geE<ouml>ffnet.
@@ -1068,13 +1068,13 @@ L<Astro::Sunrise>).
 
 =item Karte verschieben
 
-=for html <img src="images/movehand.gif">
+=for html <img src="images/movehand.gif" alt="icon hand">
 
 Verschieben der Karte durch Ziehen der Maus
 
 =item Salesman-Symbol
 
-=for html <img src="images/salesman.gif">
+=for html <img src="images/salesman.gif" alt="icon handelsreisender">
 
 (Dieses Symbol ist nur sichtbar, wenn das Salesman-Plugin geladen
 wurde)
@@ -1103,7 +1103,7 @@ wenn es nicht das optimalste ist).
 
 =item E<Ouml>ffnen-Symbol
 
-=for html <img src="images/open.gif">
+=for html <img src="images/open.gif" alt="icon oeffnen">
 
 Hiermit kann eine bereits gespeicherte Route wiedergeladen werden.
 Eine Liste der zuletzt geladenen Routen kann man mit Klick auf die
@@ -1118,7 +1118,7 @@ Zeilen im folgenden Format bestehen:
 
 =item Speichern-Symbol
 
-=for html <img src="images/save.gif">
+=for html <img src="images/save.gif" alt="icon speichern">
 
 Hiermit kann die aktuelle Route gespeichert werden.
 
@@ -1154,7 +1154,7 @@ direkt mit einem Screengrabber (z.B. B<xwd> oder B<xv>) arbeitet.
 
 =item Drucken-Symbol
 
-=for html <img src="images/printer.gif">
+=for html <img src="images/printer.gif" alt="icon drucker">
 
 Ausdruck des angezeigten Kartenausschnitts. Der Ausdruck wird nicht
 direkt vorgenommen, sondern es wird eine Postscript-Datei erstellt und
@@ -1199,7 +1199,7 @@ Die Position der Legende wird geE<auml>ndert.
 
 =item Fahrrad-Symbol (Bikepower)
 
-=for html <img src="images/bicycle.gif">
+=for html <img src="images/bicycle.gif" alt="icon fahrrad">
 
 Aufruf des Bikepower-Moduls, z.B. zum Eintragen der persE<ouml>nlichen und
 Fahrrad-Daten. Siehe L<BikePower|BikePower>.
@@ -1284,12 +1284,6 @@ nach stderr umgelenkt.
 Es werden zusE<auml>tzliche Meldungen nach stderr ausgegeben.
 
 =back
-
-=item Lautsprecher-Symbol
-
-=for html <img src="images/click.gif">
-
-Ein-/Ausschalten des zusE<auml>tzlichen Mausklicks.
 
 =item Hilfe-Symbol (?)
 

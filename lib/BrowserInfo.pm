@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BrowserInfo.pm,v 1.50 2007/03/31 20:10:41 eserte Exp $
+# $Id: BrowserInfo.pm,v 1.52 2007/06/09 17:33:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2005 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.50 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.52 $ =~ /(\d+)\.(\d+)/);
 
 my $vert_scrollbar_space = 6; # most browsers need space for a vertical scrollbar
 
@@ -413,12 +413,58 @@ sub show_info_html {
 	if ($self->{'can_javascript'}) {
 	    $out .= <<EOF;
 <script language=javascript><!--
-function get_navigator() {
-    var s = "";
-    for(var i in navigator) {
-	s = s + i + " = " + navigator[i] + "\\n";
+function get_jsinfo() {
+    var do_extended_info = false;
+    var jsinfo_div;
+    if (typeof document.getElementById == "function") {
+	jsinfo_div = document.getElementById("jsinfo");
     }
-    alert(s);
+    if (jsinfo_div && typeof jsinfo_div.innerHTML) {
+	do_extended_info = true;
+    }
+
+    var s = "";
+    s += "********** navigator **********\\n";
+    if (navigator != null) {
+        for(var i in navigator) {
+	    s = s + i + " = " + navigator[i] + "\\n";
+	}
+    } else {
+	s += "N/A\\n";
+    }
+
+    if (do_extended_info) {
+        s += "********** screen **********\\n";
+        if (screen != null) {
+            for(var i in screen) {
+    	        s = s + i + " = " + screen[i] + "\\n";
+    	    }
+        } else {
+    	    s += "N/A\\n";
+        }
+    
+        s += "********** window **********\\n";
+        if (window != null) {
+            for(var i in window) {
+		s = s + i + " = ";
+		if (typeof window[i] != "function" && typeof window[i] != "object") {
+    	            s = s + window[i];
+		} else {
+		    s = s + typeof(window[i]);
+		}
+		s = s + "\\n";
+    	    }
+        } else {
+    	    s += "N/A\\n";
+        }
+    }
+
+
+    if (do_extended_info) {
+	jsinfo_div.innerHTML = s;
+    } else {
+        alert(s);
+    }
 }
 
 // for buggy browsers like MSIE 4.5 for Mac, which do not support
@@ -488,11 +534,6 @@ EOF
     if ($complete) {
 	$out .= <<EOF;
 </pre>
-<br>
-<a href="javascript:get_navigator()">Information via Javascript</a><br>
-<a href="javascript:get_navigator2()">Same in an alternative manner (less error-prone way)</a><br>
-<a href="javascript:get_dhtml_info()">DHTML information</a>
-<br>
 EOF
     }
     $out;
@@ -547,6 +588,19 @@ sub show_server_info {
 	}
 	$out .= "</ul>";
     }
+    $out;
+}
+
+sub jsinfo_div {
+    my $out = <<EOF;
+<br>
+<a href="javascript:get_jsinfo()">Information via Javascript</a><br>
+<a href="javascript:get_navigator2()">Same in an alternative manner (less error-prone way)</a><br>
+<a href="javascript:get_dhtml_info()">DHTML information</a>
+<br>
+<div id="jsinfo" style="white-space:pre; font-family:monospace;">
+</div>
+EOF
     $out;
 }
 
@@ -625,6 +679,7 @@ my $bi = new BrowserInfo CGI->new;
 print $bi->header;
 print $bi->show_info('complete');
 print $bi->show_server_info;
+print $bi->jsinfo_div;
 print $bi->footer;
 exit;
 

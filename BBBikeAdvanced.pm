@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.180 2007/06/04 20:53:03 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.181 2007/06/10 05:55:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2161,7 +2161,7 @@ sub _insert_points_and_co ($) {
 	$ret = $modify_ret == BBBikeModify::RET_MODIFIED();
 
 	# clear the selection (sometimes)
-	if ($modify_ret != BBBikeModify::RET_ERROR() && $oper_name ne "grep") {
+	if ($modify_ret != BBBikeModify::RET_ERROR() && $oper_name !~ m{^grep}) {
 	    delete_route();
 	}
     };

@@ -1,15 +1,15 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeServer.pm,v 1.16 2007/05/05 19:45:50 eserte Exp $
+# $Id: BBBikeServer.pm,v 1.17 2007/06/10 19:14:04 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2007 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net/
 #
 
 # XXX ~/devel/Tk-OneInstance-code verwenden...
@@ -235,12 +235,16 @@ sub create_socket_server {
 		 }
 		 if (exists $args{-routefile} &&
 		     -r $args{-routefile}) {
-		     if ($args{-routefile} =~ m{\.bbd$}) {
-			 warn "Read <$args{-routefile}> as bbd ...\n";
-			 main::plot_additional_layer("str", $args{-routefile});
-		     } else {
+		     # This used to check for .bbd explicitely and everything
+		     # else is treated as a route, but it seems that
+		     # plot_additional_layer accepts more formats
+		     # automatically, including gpsman tracks
+		     if ($args{-routefile} =~ m{\.bbr$}) {
 			 warn "Read <$args{-routefile}> ...\n";
 			 main::load_save_route(0, $args{-routefile});
+		     } else {
+			 warn "Read <$args{-routefile}> as bbd ...\n";
+			 main::plot_additional_layer("str", $args{-routefile});
 		     }
 		 }
 		 $top->deiconify;

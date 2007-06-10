@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.20 2007/05/23 19:47:28 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.21 2007/06/10 12:48:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -21,19 +21,19 @@ sub teaser {
     my %teasers_mandatory;
 
     $teasers_optional{"de"}  = [
-				'link',
-				'wap',
-				'routen',
-				#'dobli',
+				'teaser_link',
+				'teaser_wap',
+				'teaser_collecting_tracks',
+				#'teaser_dobli',
 			       ];
     $teasers_mandatory{"de"} = [
 				#teaser_perltk_newrelease(),
 				teaser_perltk(),
 				teaser_beta(),
 				teaser_mapserver(),
-				#teaser_routen(),
-				teaser_sternfahrt(),
-				teaser_sternfahrt_changes(),
+				#teaser_collecting_tracks(),
+				#teaser_sternfahrt(),
+				#teaser_sternfahrt_changes(),
 				#teaser_dobli(),
 				$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
 			       ];
@@ -42,9 +42,9 @@ sub teaser {
 				#teaser_perltk_newrelease(),
 				teaser_perltk(),
 				teaser_mapserver(),
-				#teaser_routen(),
-				teaser_sternfahrt(),
-				teaser_sternfahrt_changes(),
+				#teaser_collecting_tracks(),
+				#teaser_sternfahrt(),
+				#teaser_sternfahrt_changes(),
 				#teaser_dobli(),
 				$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
 			       ];
@@ -53,7 +53,7 @@ sub teaser {
     my $teaser_optional = $teasers_optional{$use_lang}->[int(rand(@{$teasers_optional{$use_lang}}))];
     my $t;
     if ($teaser_optional) {
-	my $sub = "teaser_" . $teaser_optional;
+	my $sub = $teaser_optional;
 	$t = eval $sub . '()';
     }
     join("",
@@ -109,9 +109,9 @@ EOF
 
 sub teaser_none { "" }
 
-sub teaser_routen {
+sub teaser_collecting_tracks {
     <<EOF;
-<div class="teaser">Ich sammele GPS-Routen von Berlin und Brandenburg. Bitte per Mail an <a target="_top" href="mailto:@{[ CGI::escapeHTML($BBBike::EMAIL) ]}?subject=BBBike-GPS">Slaven Rezic</a> schicken.</div>
+<div class="teaser">Ich sammele GPS-Tracks von Berlin und Brandenburg. Bitte per Mail an <a target="_top" href="mailto:@{[ CGI::escapeHTML($BBBike::EMAIL) ]}?subject=BBBike-GPS">Slaven Rezic</a> schicken.</div>
 EOF
 }
 

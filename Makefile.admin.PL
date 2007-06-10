@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.57 2007/05/24 22:50:07 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.59 2007/06/10 14:56:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -16,6 +16,12 @@
 # POD files
 #
 # grab a good pod2html XXX this is somewhat hacky
+
+# I thought also about Pod::ProjectDocs for pod2html conversion, but
+# the 0.31 version has some bugs (it cannot handle umlauts and
+# entities correctly, see
+# http://rt.cpan.org/Ticket/Display.html?id=25123)
+
 my $bbbike_html_rule;
 my $pod2html = is_in_path("mpod2html");
 ## perldoc.com seems to be dead.
@@ -64,6 +70,8 @@ $all_html:	$all_pods Makefile
 	mv bbbike.html doc/
 	mv README.html doc/
 	mv README.english.html doc/
+	# Fix warnings (http://rt.cpan.org/Public/Bug/Display.html?id=21622)
+	# Fix links
 	for f in $really_all_html; do \\
 		perl -i~ -nle 'if (!/^Cannot find page.*on line/) { print }' \$\$f; \\
 		perl -i~ -pe 's{(html/bbbikepod.css)}{../\$\$1}g' \$\$f; \\
@@ -72,7 +80,10 @@ $all_html:	$all_pods Makefile
 	chmod ugo+r $really_all_html
 EOF
 } else {
-    # Warning: this is not really supported, please get Marek::Pod::HTML!
+    print STDERR <<EOF;
+*** NOTE: if you want to build HTML documentation using "make bbbikedoc"
+*** you should install Marek::Pod::HTML to get best results
+EOF
     my $pod2html;
     if (-e "/usr/perl5.8.1/bin/pod2html") {
 	$pod2html = "perl5.8.1 /usr/perl5.8.1/bin/pod2html";

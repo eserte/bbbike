@@ -1,5 +1,5 @@
 #: version: $Id: qualitaet_s-orig,v 4.199 2007/05/31 20:08:37 eserte Exp eserte $
-#: title: Qualität von Straßen in Berlin
+#: title: Qualität der Straßen in Berlin
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -606,7 +606,7 @@ Pankeweg: asphaltiert 	Q0 12563,20753 12377,20636
 Pankeweg: asphaltiert	Q0 12377,20636 12207,20351 12122,20307 11995,19759
 Schloßallee: Asphalt	Q0 11883,19739 11730,19684 11312,19537 11273,19521
 Schloßallee: Parkweg, OK	Q1 11273,19521 10857,19379 10661,19307 10525,19255
-Pankeweg, Schloßpark Schönhausen: Parkweg, meist OK	Q1 10661,19307 10592,19249 10509,18981 10496,18704
+Pankeweg, Schloßpark Schönhausen: Asphalt	Q0 10661,19307 10592,19249 10509,18981 10496,18704
 Pankeweg, Bürgerpark: Parkweg, OK	Q1 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9414,18278 9304,18165 9310,18108
 Bürgerpark: Parkweg	Q1 9460,18053 9479,18217 9701,18256 9716,18290
 Ossietzkystr.: Kopfsteinpflaster, OK	Q1 10390,19069 10440,18910 10496,18704
@@ -1173,8 +1173,8 @@ Spreeuferweg: glatte Gehwegplatten und fester Sandweg an den Seiten	Q0 7064,1241
 Spreeuferweg: fester Sandweg	Q1 7541,12582 7791,12706 7915,12795 7967,12860
 Delbrückstr. (Neukölln): Kopfsteinpflaster	Q2 12743,6645 12851,6664 13125,6717
 Rungiusstr.: sehr guter Asphalt	Q0 13158,5490 13116,5689 13105,5748 13077,5893 13064,5953 13027,6168
-Rungiusstr.: sehr guter Asphalt	Q0 13027,6168 12997,6290 12981,6371
-Rungiusstr.: sehr guter Asphalt	Q0 12981,6371 12966,6424
+Rungiusstr.: sehr guter Asphalt	Q0 13027,6168 12997,6290 12981,6366 12979,6374
+Rungiusstr.: sehr guter Asphalt	Q0 12979,6374 12966,6424
 (Kolonie Blaschkotal): fester Sandweg, etwas Schotter	Q2 13158,5490 13162,5382 13112,5253
 (Weg durch Kolonie): fester Sandweg, etwas Schotter	Q2 13112,5253 13039,5122
 Braunschweiger Ufer: asphaltiert	Q0 13077,5893 13483,5973
@@ -2974,7 +2974,7 @@ Langerhansstr.: Kopfsteinpflaster	Q2 22154,5659 22200,5776 22234,5921
 Elisabethstr. (Lankwitz): Asphalt	Q0 5763,2795 6022,2901 6224,3112 6308,3204
 Wachsmuthstr.: Kopfsteinpflaster, nur 13km/h	Q3 3762,23362 3939,23345 4021,23330 4213,23394
 Langenbeckstr.: fester Sandweg, nur 13km/h	Q3 24673,9923 24770,9871 25004,9737
-Hattenheimer Str. (Tempelhof): Asphalt	Q0 11590,6026 11655,6189 11625,6248
+Hattenheimer Str. (Tempelhof): Asphalt	Q0 11590,6026 11655,6189 11628,6240
 Riastr.: schlechtes Kopfsteinpflaster	Q3 18201,8984 18247,9158
 Am Stichkanal: Asphalt	Q0 2515,1131 2535,1102 2659,962 2733,871 2699,821 2672,725 2736,645 2262,207
 Holzkircher Str.: Asphalt, viele Schlaglöcher	Q1 12850,17084 12923,17133 13033,17211
@@ -3086,7 +3086,7 @@ Lortzingstr. (Mahlsdorf): guter Asphalt	Q0 25999,12269 26005,12237 25911,12062 2
 Friesacker Str.: Asphalt	Q0 25684,11518 25490,11578 25243,11656
 Pestalozzistr.: Asphalt	Q0 10532,18601 10409,18551 10342,18528 10126,18444 10075,18472
 Georg-Blank-Str.: Asphalt	Q0 12492,15833 12423,15875 12341,15932 12295,15953 12263,15973 12248,15971 12198,15999
-Nackenheimer Weg: guter Beton	Q0 11625,6248 11572,6613
+Nackenheimer Weg: guter Beton	Q0 11628,6240 11572,6613
 Hauskavelweg: guter Asphalt	Q0 -6660,15379 -6627,15642 -6607,15816 -6592,15946 -6583,16050
 An der Felgenlake: Asphalt	Q0 -6148,15306 -6550,15383 -6660,15379 -6802,15376 -7004,15434
 Ortwinstr.: mäßiger Beton	Q1 2038,25531 1931,25511 1828,25478

@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.137 2007/03/27 21:34:47 eserte Exp $
+# $Id: Makefile.PL,v 1.138 2007/06/10 18:50:15 eserte Exp $
 
 use 5.005;
 
@@ -195,6 +195,8 @@ my @req_table =
    'Bessere Fehlerberichte im temp_blockings-Editor'],
   [qw/Algorithm::Diff	0	all	1	base/,
    'Unterschiede im temp_blockings-Editor anzeigen'],
+  [qw/Sort::Naturally	0	all	0	base/,
+   'Für natürliches Sortieren von bbd-Dateien'],
 
   [qw/Image::Info	0	all	0	test/],
   [qw/Test::More	0	all	0	test/],

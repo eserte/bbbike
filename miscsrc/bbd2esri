@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2esri,v 1.18 2005/11/06 22:38:26 eserte Exp $
+# $Id: bbd2esri,v 1.21 2007/06/09 22:34:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -38,6 +38,7 @@ my $type = "";
 my $imagetype;
 my $onewayhack;
 my $qualityshack;
+my $dbf_encoding;
 
 my $city;
 my $country;
@@ -62,13 +63,16 @@ if (!GetOptions("o=s" => \$outprefix,
 		"qualityshack!" => \$qualityshack,
 		"city=s" => \$city,
 		"country=s" => \$country,
+		"dbfencoding=s" => \$dbf_encoding,
 	       )) {
     die "usage $0: [-o outprefix] [-shptype shapetype] [-type type]
 	[-imagetype imagetype] [-onewayhack] [-qualityshack]
 	[-city city] [-country country]
+	[-dbfencoding encoding]
 	bbdfile ...
 
 shapetype may be auto, polyline, polygon, or point
+encoding may be any valid perl encoding, and html
 ";
 }
 if (!defined $outprefix) {
@@ -250,8 +254,12 @@ sub create_shape_file {
 	 "field_lengths" => [ @max_length ],
 	 "field_decimals" => [ (undef) x $fields ]);
     my $rec_no = 0;
-    for (@dbf) {
-	$newtable->set_record($rec_no, @$_);
+    for my $row (@dbf) {
+	if ($dbf_encoding) {
+	    require Encode;
+	    $row = [ map { do_encode($_, $dbf_encoding) } @$row ];
+	}
+	$newtable->set_record($rec_no, @$row);
 	$rec_no++;
     }
 }
@@ -480,5 +488,77 @@ sub oneway_hack {
     }
     @res;
 }
+
+sub do_encode {
+    my($text, $encoding) = @_;
+    if ($encoding eq 'html') {
+	require HTML::Entities;
+	HTML::Entities::encode_numeric($text, q{<>&"'}.qq{\200-\xffffffff});
+    } else {
+	unidecode_any($text, $encoding);
+    }
+}
+
+# REPO BEGIN
+# REPO NAME unidecode_any /home/e/eserte/work/srezic-repository 
+# REPO MD5 59f056efd990dc126e49f5e846eee797
+
+=head2 unidecode_any($text, $encoding)
+
+Similar to Text::Unidecode::unidecode, but convert to the given
+$encoding. This will return an octet string in the given I<$encoding>.
+If all you want is just to restrict the charset of the string to a
+specific encoding charset, then it's best to C<Encode::decode> the
+result again with I<$encoding>.
+
+=cut
+
+sub unidecode_any {
+    my($text, $encoding) = @_;
+
+    require Text::Unidecode;
+    require Encode;
+
+    # provide better conversions for german umlauts
+    my %override = ("\xc4" => "Ae",
+		    "\xd6" => "Oe",
+		    "\xdc" => "Ue",
+		    "\xe4" => "ae",
+		    "\xf6" => "oe",
+		    "\xfc" => "ue",
+		   );
+    my $override_rx = "(" . join("|", map { quotemeta } keys %override) . ")";
+    $override_rx = qr{$override_rx};
+
+    my $res = "";
+
+    if (!eval {
+	Encode->VERSION(2.12); # need v2.12 to support coderef
+	$res = Encode::encode($encoding, $text,
+			      sub {
+				  my $ch = chr $_[0];
+				  if ($ch =~ $override_rx) {
+				      return $override{$ch};
+				  } else {
+				      my $ascii = unidecode($ch);
+				      Encode::_utf8_off($ascii);
+				      $ascii;
+				  }
+			      });
+	1;
+    }) {
+	for (split //, $text) {
+	    my $conv = eval { Encode::encode($encoding, $_, Encode::FB_CROAK()) };
+	    if ($@) {
+		$res .= Text::Unidecode::unidecode($_);
+	    } else {
+		$res .= $conv;
+	    }
+	}
+    }
+
+    $res;
+}
+# REPO END
 
 __END__

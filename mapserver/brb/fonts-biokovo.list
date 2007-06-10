@@ -1,2 +1,12 @@
-lucida	/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf
-street	/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf
+#lucida	/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf
+#street	/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf
+lucida	/usr/X11R6/lib/X11/fonts/bitstream-vera/Vera.ttf
+street	/usr/X11R6/lib/X11/fonts/bitstream-vera/Vera.ttf
+#test	/usr/X11R6/lib/X11/fonts/arkpandora/Veranda.ttf
+## Kaum ein Unterschied zu Bitstream Vera, leicht größere Laufweite,
+## eingebildet etwas weniger unruhig
+#street	/usr/X11R6/lib/X11/fonts/arkpandora/Veranda.ttf
+test	/usr/local/share/ghostscript/fonts/n019043l.pfb
+## Nimbus Condensed, sollte MINSIZE 10 statt MINSIZE 8 verwenden,
+## ansonsten zu unleserlich
+#street	/usr/local/share/ghostscript/fonts/n019043l.pfb

@@ -1343,6 +1343,19 @@ zeichnen. In der Zwischenzeit geht es manuell mit ptksh>
 
     plotstr("L100", Canvas => $overview_canvas, -filename => "$FindBin::RealBin/misc/abdeckung.bbd")
 
+=item * (H1)
+
+F8/F9 funktioniert bei fragezeichen im Edit-Mode (manchmal) nicht. Der
+Grund ist, dass fragezeichen hier kombiniert aus fragezeichen und
+XXX.bbd erzeugt wird. Wenn das Canvas-Item aus XXX.bbd oben liegt,
+kann keine entsprechende Datei von click_info in BBBikeEdit.pm
+gefunden werden.
+
+Theoretisch kann der Mechanismus intelligenter gemacht werden, indem
+der E<quot># sourceE<quot>-Mechanismus benutzt wird und vielleicht
+durch Zeilennummern ergänzt wird. Dann kann eindeutig auf die
+entsprechende Originaldatei verwiesen wird.
+
 =back
 
 =head2 Plugins
@@ -2023,6 +2036,35 @@ already done). Change some files which are using this information
 Change convert_* to optionally not ignore directives and comments.
 Rewrite the misc/Makefile rule to use standard Strassen methods.
 
+=item * (H4)
+
+In bbd files, there are presently line and block directives. Maybe
+introduce another form of block directives, which do NOT nest. This
+could be used for a E<quot>sourceE<quot> directive, which is more
+convenient to specify once at the beginning and not also at the end.
+
+=item * (H3)
+
+A new E<quot>sourceE<quot> directive could probably change the virtual
+file location for relative paths.
+
+=item * (H4)
+
+Add more directives to control presentation of bbd files. E.g:
+plotting of labels enabled...
+
+=item * (H1)
+
+Add directives for a kind of E<quot>metaE<quot> bbd which contains
+only references to other bbd file (E<quot>includeE<quot>?
+E<quot>referenceE<quot>?). But some questions are difficult to answer,
+e.g. how to apply global directives? What is the current directory of
+the file?
+
+But if the only concern is to open multiple layers and to avoid clumsy
+GUI dialogs, then it's probably sufficient to just use the
+BBBike-Server/Client.
+
 =back
 
 =head2 cgpsmapper
@@ -2176,7 +2218,7 @@ In diesem Beispiel würde die Straße als Einbahnstraße dargestellt
 werden, aber im Routing als Schrittgeschwindigkeitstraße behandelt
 werden. Siehe auch nächstes Item.
 
-=item * (H4)
+=item * (H5)
 
 Es sollte eine weitere Abgrenzung bei den Kategorien 1 (Einbahnstraße)
 und 2 (gesperrte Straße) geben, und zwar Einbahnstraßen/gesperrte
@@ -3199,26 +3241,6 @@ nearly unchanged into this new document.
 
 The new file could be named F<design_decisions.pod> if no better name
 pops up.
-
-=item * (M1)
-
-Maybe try Pod::ProjectDocs for pod2html conversion. But not the 0.31
-version, as it cannot handle umlauts and entities correctly. See
-http://rt.cpan.org/Ticket/Display.html?id=25123
-
-=item * (#M5)
-
-mpod2html scheint Warnungen (nicht existente Links) ins generierte
-HTML zu schreiben. -> workarounded
-
-Durch das Verschieben von einigen Dokumenten in doc/ funktionieren die
-Links im Header nicht. -> workarounded
-
-Ich muss mir auch überlegen, ob ich die selbe
-Verzeichnisstruktur auch unter Sourceforge haben möchte. Oder ich
-bewege alles, vielleicht bis auf README* nach doc. Dann gibt es keine
-Verlinkung zwischen den READMEs und dem Rest der Doku (Dann muss ich
-aber auch alle port/* wahrscheinlich anpassen).
 
 =item * (M1)
 

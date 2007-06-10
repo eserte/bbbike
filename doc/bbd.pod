@@ -139,6 +139,14 @@ This global directive introduces an RCS/CVS Id string.
 Treat this file as encoded in the given encoding (all names accepted
 by Perl/Encode may be used). If not set, then iso-8859-1 is assumed.
 
+=item C<listing_sort>: I<sort_method>>
+
+Define a sorting method for street/point listings. Normally listings
+will be sorted alphabetically (sort method B<alphabetic>). If the
+listing should appear as in the bbd file, specify B<unsorted>.
+B<natural> should be used for E<quot>naturalE<quot> sorting (see
+L<Sort::Naturally>).
+
 =back
 
 =head3 Line/block directives

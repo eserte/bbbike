@@ -418,10 +418,10 @@ EOF
        text  => 'Auguststraße zwischen Hindenburgdamm und Augustplatz Manteuffelstraße zwischen Augustplatz und Hindenburgdamm Hindenburgdamm (westliche Fahrbahn) zwischen Manteuffelstraße und Auguststraße Radrennen, Straße gesperrt, Dauer: 22.05.2004, 12.00 Uhr bis 20.00 Uhr. ',
        type  => 'gesperrt',
      },
-     { from  => 1086919200, # 2004-06-11 04:00
-       until => 1087163999, # 2004-06-13 23:59
+     { from  => Time::Local::timelocal(reverse(2007-1900,6-1,9,0,0,0)),
+       until => Time::Local::timelocal(reverse(2007-1900,6-1,11,0,0,0)),
        file  => 'karlmarx.bbd',
-       text  => 'Karl-Marx-Straße zwischen Flughafenstraße und Uthmannstraße sowie Erkstraße zwischen Donaustraße und Karl-Marx-Straße: Straßenfest, Straßen gesperrt, Dauer: 12.06.2004, 04.00 Uhr bis 13.06,24.00 Uhr. ',
+       text  => 'Karl-Marx-Straße zwischen Flughafenstraße und Uthmannstraße sowie Erkstraße zwischen Donaustraße und Karl-Marx-Straße: Straßenfest, Straßen gesperrt, bis zum 10.6.2006 ',
        type  => 'gesperrt',
      },
      { from  => 1086041261, # 2004-06-01 00:07
@@ -8266,7 +8266,7 @@ userdel	2::temp 34443,1951 34250,2546
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1181428648, # XXX undef
        text  => 'Friedrichstr. (Kreuzberg) zwischen Kochstr. und Zimmerstr. Baustelle, Radfahrer können aber langsam passieren',
        type  => 'handicap',
        source_id => 'IM_005616',
@@ -8505,6 +8505,23 @@ EOF
        source_id => 'IM_005738',
        data  => <<EOF,
 userdel	2::inwork 12731,15824 12559,15524 12472,15356 12428,15275
+EOF
+     },
+     { from  => 1181373108, # 2007-06-09 09:11
+       until => 1181512800, # 2007-06-11 00:00
+       text  => 'Treptower Festtage bis zum 10.06.2007',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 14464,9927 14500,9856 14671,9759 14697,9726 14910,9643
+userdel	2::temp 14500,9856 14483,9843
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Holteistraße: Bauarbeiten, Fahrbahn ist nicht benutzbar',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 14535,11327 14495,11261 14459,11200
 EOF
      },
     );

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen.t,v 1.13 2007/03/17 21:35:19 eserte Exp $
+# $Id: strassen.t,v 1.14 2007/06/10 21:05:33 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -39,12 +39,13 @@ GetOptions(get_std_opts("xxx"),
 	   "doit!" => \$doit,
 	  ) or die "usage";
 
+my $basic_tests = 30;
 my $doit_tests = 6;
 my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 3;
-my $encoding_tests = 9;
+my $encoding_tests = 10;
 
-plan tests => 28 + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $encoding_tests;
+plan tests => $basic_tests + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $encoding_tests;
 
 goto XXX if $do_xxx;
 
@@ -108,6 +109,7 @@ EOF
 {
     my $data = <<EOF;
 #: title: Testing global directives
+#: complex.key: Testing complex global directives
 #:
 #: section projektierte Radstreifen der Verkehrsverwaltung vvv
 #: by http://www.berlinonline.de/berliner-zeitung/berlin/327989.html?2004-03-26 vvv
@@ -158,6 +160,9 @@ EOF
     my $old_global_directives = $s->get_global_directives;
     is_deeply($new_global_directives, $old_global_directives, "Copied global directives");
     is($new_global_directives, $old_global_directives, "It's really the same referenced object");
+
+    is($s->get_global_directive("title"), "Testing global directives");
+    is($s->get_global_directive("complex.key"), "Testing complex global directives");
 }
 
 {
@@ -289,6 +294,7 @@ EOF
     my $s = Strassen->new_from_data_string($data);
     my $global_dirs = $s->get_global_directives;
     is($global_dirs->{encoding}->[0], "utf-8", "Encoding directive");
+    is($s->get_global_directive("encoding"), "utf-8", "get_global_directive shortcut");
     is(scalar @{$s->data}, 2);
     $s->init;
     my $rec = $s->next;
