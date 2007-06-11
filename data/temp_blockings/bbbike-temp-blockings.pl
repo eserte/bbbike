@@ -2621,7 +2621,7 @@ EOF
        text  => 'K 6422; (Eggersdorfer Str.); OL Petershagen, unbeschrankter Bahnübergang Instandsetzungsarb. Vollsperrung 04.09.2005-06.09.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 35900,13643 36716,13979
+userdel	2 35900,13643 36654,13977
 EOF
      },
      { from  => 1124920800, # 2005-08-25 00:00
@@ -5936,7 +5936,7 @@ EOF
        text  => 'B 168 zw. Trampe und Eberswalde Deckenerneuerung Vollsperrung 27.09.2006-18.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 38554,47567 39446,42585
+userdel	2::inwork 38522,47634 38653,47410 38723,47134 39446,42585
 EOF
      },
      { from  => 1159426800, # 2006-09-28 09:00
@@ -7155,8 +7155,8 @@ userdel	2::inwork 9752,13575 9607,13507
 EOF
      },
      { from  => 1172962800, # 2007-03-04 00:00
-       until => 1184536800, # 2007-07-16 00:00
-       text  => 'L 075 Karl-Marx-Str. OD Großziethen, nördl. Attilastr.- Landesgrenze Berlin, Buckower Damm; Straßen- und Kanalbau Vollsperrung 05.03.2007-15.07.2007 ',
+       until => 1182376800, # 2007-06-21 00:00
+       text  => 'L 075 Karl-Marx-Str. OD Großziethen, nördl. Attilastr.- Landesgrenze Berlin, Buckower Damm Straßen- und Kanalbau Vollsperrung 05.03.2007-20.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 12984,1011 13090,205
@@ -8498,8 +8498,8 @@ EOF
 userdel	q4::inwork 61140,11287 61156,11478
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1181587527, # 
+       until => 1181587530, # XXX
        text  => 'Hosemannstr. (Prenzlauer Berg) in beiden Richtungen, zwischen Grellstr. und Ostseeplatz Baustelle, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005738',
@@ -8522,6 +8522,63 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 14535,11327 14495,11261 14459,11200
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Glienicker Weg (Adlershof) Richtung Adlergestell zwischen Nipkowstr. und Adlergestell Fahrbahnunterspülung, Fahrtrichtung gesperrt',
+       type  => 'handicap',
+       source_id => 'IM_005746',
+       data  => <<EOF,
+userdel	q4::inwork; 20818,3182 20760,3059 20565,2754
+EOF
+     },
+     { from  => 1181685600, # 2007-06-13 00:00
+       until => 1181858400, # 2007-06-15 00:00
+       text  => 'B 115 Berliner Chaussee Bahnübergang in der OD Lübben Gleisbauarbeiten Vollsperrung 14.06.2007-14.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 43610,-50356 43031,-50423 39975,-50522
+EOF
+     },
+     { from  => 1181426400, # 2007-06-10 00:00
+       until => 1182376800, # 2007-06-21 00:00
+       text  => 'B 168 Breite Str. OD Eberswalde, zw. Heine-Str.u. Krz. Freienwalder Str. Deckenerneuerung halbseitig gesperrt; Einbahnstraße 11.06.2007-20.06.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 38653,47410 38522,47634
+EOF
+     },
+     { from  => 1181426400, # 2007-06-10 00:00
+       until => 1185919200, # 2007-08-01 00:00
+       text  => 'K 6422 Eggersdorfer Str./ Lessingstr. OL Petershagen, Knoten Lessingstr. u. BÜ Straßenausbau Vollsperrung 11.06.2007-31.07.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 36677,14087 36666,14172 36656,14204
+EOF
+     },
+     { from  => 1182031200, # 2007-06-17 00:00
+       until => 1188165600, # 2007-08-27 00:00
+       text  => 'K 6512 B 96 nördl.Löwenberg-B167 Grieben zw. Abzw. Vielitz und Grieben Straßenbau Vollsperrung 18.06.2007-26.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -14640,54609 -14619,54872 -14667,54977 -14759,55179 -14847,55938 -14966,56468
+EOF
+     },
+     { from  => 1188079200, # 2007-08-26 00:00
+       until => 1193871600, # 2007-11-01 00:00
+       text  => 'K 6512 B 96 nördl.Löwenberg-B167 Grieben zw. Abzw. Vielitz und Grieben Straßenbau halbseitig^^^^ 27.08.2007-31.10.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -14640,54609 -14619,54872 -14667,54977 -14759,55179 -14847,55938 -14966,56468
+EOF
+     },
+     { from  => 1181426400, # 2007-06-10 00:00
+       until => 1188597600, # 2007-09-01 00:00
+       text  => 'K 6515 Blumenow-B 96 Dannenwalde zw. Blumenow und Dannenwalde Straßenbauarbeiten Vollsperrung 11.06.2007-31.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -5737,74650 -5525,74800 -4412,75987 -3920,76368 -1232,77061
 EOF
      },
     );

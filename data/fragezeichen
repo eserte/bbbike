@@ -305,8 +305,8 @@ Erxlebenstr.: Qualität?	? 19726,-32 19626,367
 Mohnweg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 19471,448 19626,367 19728,364 19823,357 20035,348 20098,359 20214,375 20267,375
 Porzer Str.: Qualität? Laut ADFC-Karte Radwege, stimmt das? Sind die Radwege benutzungspflichtig?	? 19774,-231 20010,-35 20323,243 20606,300
 Bohnsdorfer Weg: Qualität? (laut ADFC-Karte mäßig geeignet)	? 20671,87 20606,300 20543,478 20510,530
-Calau - Werchow: Qualität?	? 48838,-72837 49300,-73237 49437,-74112 49425,-74550 49618,-75018
-Werchow - Cabel: Qualität?	? 49618,-75018 49412,-75175 49075,-75387 48818,-75806 48437,-75600 47821,-75451
+Calau - Werchow: Qualität?	? 48838,-72837 49300,-73237 49437,-74112 49539,-74585 49606,-74713 49618,-75018
+Werchow - Cabel: Qualität?	? 49618,-75018 49412,-75175 49075,-75387 48818,-75806 48692,-75633 48437,-75600 47821,-75451
 Baumgarten - Schenkenberg: Qualität? (von Baumgarten aus gesehen: Asphalt)	? 46581,105900 46275,106262 46200,106787 45512,107075 45406,107350
 Ludwigsburg - Schenkenberg: Qualität? (von Ludwigsburg aus gesehen: Asphalt)	? 47812,106862 47550,107125 45900,107675 45406,107350
 Potzlow - Strehlow: hier ist der Uckerseeweg und BU ausgeschildert, wie ist die genaue Route? (von Süden aus: Betonplatten)	? 39375,90456 39434,91129 39068,91189 39083,91639 38612,91950
@@ -360,7 +360,7 @@ Friedrichsthal - Liebenberg: Qualität?	? 2768,47431 2586,47784 2531,47833 2276,4
 Liebenberg - Lankesee - Löwenberg: Qualität?	? -646,54509 -728,54463 -862,54652 -929,54792 -1246,54878 -1538,55231 -1569,55414 -1867,55499 -1959,55329 -2087,55146 -2276,55249 -2818,55268 -3025,55085 -3805,55091 -4018,54750 -4176,54548
 Glambeck - Seebeck: Qualität?	? -13622,58765 -14762,59783 -15310,59277 -15511,59070 -15889,58912 -16100,58837
 Seebeck - Lindow: Qualität?	? -16100,58837 -16583,58871 -16962,58893 -16986,59052 -17748,60764 -17967,61148 -18497,61361 -18619,61447 -18887,61825 -18954,61849 -19113,61898
-Herzberg - Vielitz - Seebeck: Qualität?	? -19761,54883 -18575,56837 -17019,58171 -16762,58037 -16350,58125 -15987,58387 -15950,58625 -16100,58837
+Herzberg - Vielitz - Seebeck: Qualität?	? -19761,54883 -18575,56837 -17050,58123 -16860,58002 -16719,58021 -16567,58036 -16307,58144 -15975,58403 -15950,58625 -16100,58837
 Bei Liebenwalde an der Havel: Qualität?	? 7037,51950 7107,52868 7817,53807 7918,54093
 Bei Mildenberg: Qualität?	? 2656,68100 1625,68308 1352,68079 1090,67347
 Am Hügel: mäßiger Belag?	? 4265,20799 4107,21059
@@ -908,6 +908,8 @@ Pasewalk - Krugsdorf: Qualität?	? 51456,122864 52188,123497 53255,124438 53938,1
 Krugsdorf - Koblentz: Qualität?	? 57864,125082 57736,125319 57711,125655 57622,126012 57525,126374
 Hoffmannstr. (Adlershof): Qualität?	? 20280,3996 20467,4122 20623,4227
 Wilhelm-Gericke-Str.: Qualität? (wahrscheinlich guter Beton)	? 5700,19510 5592,19888 5612,19929 5804,20047 5925,20118
+Grieben - Vielitz: Qualität?	? -14966,56468 -15237,56681 -15453,56959 -15676,57044 -15819,57248 -15984,57315 -16206,57373 -16608,57867 -16755,57921 -16860,58002
+Vielitz - B167: Qualität?	? -16206,57373 -16069,57172 -15773,56724 -15697,55703 -15581,55353 -15335,54980 -15127,54664
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -953,6 +955,7 @@ Matenzeile (Qualität (Beton o. Asphalt)?)	? 17365,17632 17474,17478 17582,17335 
 Seeweg (Weißensee) (Qualität?)	? 14499,16341 14480,16449 14510,16549 14521,16599
 Seeweg (Weißensee) (Qualität?)	? 14601,16525 14549,16538 14510,16549
 Borkheide - Neuendorf (ungenaue Koordinaten!)	? -26338,-21122 -27908,-22935 -28547,-22981 -29244,-23127
+Grieben - Glambeck (Qualität? (möglicherweise asphaltiert?) )	? -14640,54609 -14619,54872 -14667,54977 -14759,55179 -14847,55938 -14966,56468 -14783,56907 -14320,57151 -13528,57848 -13065,58263
 Waldesruher Str. (Waldesruh) (Qualität, wahrscheinlich fester Sandweg?)	? 25047,8086 24923,7903 24910,7896 24842,7811 24800,7746 24718,7633 24648,7542 24593,7455
 (Am Neuen Palais, direkter Weg) (unbefestigter Weg oder Asphalt??)	? -15810,-1274 -15820,-1146 -15854,-656
 (Ökonomieweg, Neuer Garten) (Asphalt oder unbefestiger Parkweg?)	? -12557,11 -12479,97 -12467,215 -12373,288 -12182,816 -12191,1196
