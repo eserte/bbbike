@@ -2389,7 +2389,7 @@ EOF
        text  => 'B 112 OL Guben, Bahnübergang OL Guben, Bahnübergang zw. OT Gr. Breesen u. Bresinchen Arbeiten Deutsche Bahn Vollsperrung 09.07.2006-09.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 99277,-43921 99228,-44346
+userdel	2 99245,-43974 99228,-44346
 EOF
      },
      { from  => 1121892756, # 2005-07-20 22:52
@@ -3269,7 +3269,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_77722',
        data  => <<EOF,
-userdel	1 12708,16699 12874,16631 13131,16525
+userdel	1 12693,16700 12874,16631 13131,16525
 EOF
      },
      { from  => 1138319651, # 2006-01-27 00:54
@@ -5576,7 +5576,7 @@ EOF
        text  => 'B 112 Guben, OT Bresinchen Guben, OT Bresinchen, Bahnübergang Gleisbauarbeiten Vollsperrung 26.08.2006-27.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 99176,-43536 99277,-43921 99228,-44346
+userdel	2::inwork 99176,-43536 99245,-43974 99228,-44346
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -5668,7 +5668,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_77722',
        data  => <<EOF,
-userdel	1::inwork 12708,16699 12874,16631 13131,16525
+userdel	1::inwork 12693,16700 12874,16631 13131,16525
 EOF
      },
      { from  => 1156976256, # 2006-08-31 00:17
@@ -8224,7 +8224,7 @@ userdel	q4::temp -575,-65978 60,-66035
 EOF
      },
      { from  => 1180303200, # 2007-05-28 00:00
-       until => 1182636000, # 2007-06-24 00:00
+       until => 1181672690, # 2007-06-24 00:00 1182636000
        text  => 'B 158 von OD Neuendorf bis OE Oderberg Deckenerneuerung Vollsperrung 29.05.2007-23.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -8313,8 +8313,8 @@ EOF
 userdel	2::inwork 6365,13879 6242,13928
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1181672436, # 
+       until => 1181672441, # XXX
        text  => 'Blankenfelder Chaussee in beiden Richtungen, zwischen Alt-Lübars und Bahnhofstraße Baustelle, Straße vollständig gesperrt ',
        type  => 'gesperrt',
        source_id => 'IM_005637',
@@ -8579,6 +8579,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -5737,74650 -5525,74800 -4412,75987 -3920,76368 -1232,77061
+EOF
+     },
+     { from  => 1182204000, # 2007-06-19 00:00
+       until => 1182463200, # 2007-06-22 00:00
+       text  => 'B 112 Guben-Eisenhüttenstadt Bahnübergang bei Groß Breesen Gleisbauarbeiten Vollsperrung 20.06.2007-21.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 99176,-43536 99245,-43974 99228,-44346
 EOF
      },
     );

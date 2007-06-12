@@ -29,7 +29,7 @@ push @temp_blocking,
          'text' => 'Pistoriusstr. (Pankow) Richtung Berliner Allee zwischen Hamburger Platz und Roelckstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Mitte 2007) (10:34) ',
          'from' => undef,
          'id' => 671,
-         'data' => 'userdel	1::inwork 12708,16699 12874,16631 13131,16525
+         'data' => 'userdel	1::inwork 12693,16700 12874,16631 13131,16525
 ',
          'type' => 'gesperrt'
        },
@@ -699,15 +699,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1182636000,
-         'text' => 'B 158 von OD Neuendorf bis OE Oderberg Deckenerneuerung Vollsperrung 29.05.2007-23.06.2007 ',
-         'from' => 1180303200,
-         'id' => 977,
-         'data' => 'userdel	2::inwork 53948,53269 53937,54875
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1183240800,
@@ -734,16 +726,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005637',
-         'until' => undef,
-         'text' => 'Blankenfelder Chaussee in beiden Richtungen, zwischen Alt-Lübars und Bahnhofstraße Baustelle, Straße vollständig gesperrt ',
-         'from' => undef,
-         'id' => 987,
-         'data' => 'userdel	2::inwork 8132,23478 7185,23749
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1181944800,
          'text' => 'L 038 zw. Treplin und Sieversdorf Sicherung Hohlräume Vollsperrung 04.06.2007-15.06.2007 ',
@@ -944,6 +927,15 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'from' => 1181426400,
          'id' => 1018,
          'data' => 'userdel	2::inwork -5737,74650 -5525,74800 -4412,75987 -3920,76368 -1232,77061
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1182463200,
+         'text' => 'B 112 Guben-Eisenhüttenstadt Bahnübergang bei Groß Breesen Gleisbauarbeiten Vollsperrung 20.06.2007-21.06.2007 ',
+         'from' => 1182204000,
+         'id' => 1019,
+         'data' => 'userdel	2::inwork 99176,-43536 99245,-43974 99228,-44346
 ',
          'type' => 'gesperrt'
        }
