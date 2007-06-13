@@ -242,7 +242,7 @@ wasserstrassen-lowres:  wasserstrassen wasserumland wasserumland2 \
 	    $(GREPSTRASSEN) --catrx '^(F:W1)$$' > $@~
 	cat wasserstrassen wasserumland wasserumland2 |\
 	    $(GREPSTRASSEN) --catrx '^(W1|W2|F:W)$$' --minarea 3 >> $@~
-	$(MISCSRCDIR)/simplify_streets -simplify-coefficient 0.04 $@~ > $@~~
+	$(PERL) $(MISCSRCDIR)/simplify_streets -simplify-coefficient 0.04 $@~ > $@~~
 	rm $@~
 	mv -f $@~~ $@
 	-@$(READONLY) $@
@@ -298,7 +298,7 @@ SBAHN_CATEGORIES=	SA SB SC S0 SBau
 
 sbahn: sbahn-orig $(CONVERT_ORIG)
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) -strip-future-categories sbahn-orig > /tmp/sbahn
+	$(PERL) $(CONVERT_ORIG) -strip-future-categories sbahn-orig > /tmp/sbahn
 .for cat in $(SBAHN_CATEGORIES)
 	$(GREPSTRASSEN) -catrx ^$(cat).* /tmp/sbahn | $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/sbahn-$(cat)
 .endfor
@@ -322,7 +322,7 @@ RBAHN_CATEGORIES=	RA RB RC R R0 RBau RG RP
 
 rbahn: rbahn-orig Makefile $(CONVERT_ORIG)
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) -strip-future-categories rbahn-orig > /tmp/rbahn
+	$(PERL) $(CONVERT_ORIG) -strip-future-categories rbahn-orig > /tmp/rbahn
 .for cat in $(RBAHN_CATEGORIES)
 	$(GREPSTRASSEN) -catrx ^$(cat).* /tmp/rbahn | $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/rbahn-$(cat)
 .endfor
@@ -338,7 +338,7 @@ rbahnhof:	rbahnhof-orig
 
 ubahn: ubahn-orig $(CONVERT_ORIG)
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) -strip-future-categories ubahn-orig > ubahn~
+	$(PERL) $(CONVERT_ORIG) -strip-future-categories ubahn-orig > ubahn~
 	mv ubahn~ ubahn
 	-@$(READONLY) $@
 
@@ -518,13 +518,13 @@ radwege_exact:	radwege-orig
 
 qualitaet_s:	qualitaet_s-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) -strip-tendencies qualitaet_s-orig > qualitaet_s~
+	$(PERL) $(CONVERT_ORIG) -strip-tendencies qualitaet_s-orig > qualitaet_s~
 	mv qualitaet_s~ qualitaet_s
 	-@$(READONLY) $@
 
 qualitaet_l:	qualitaet_l-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) -strip-tendencies qualitaet_l-orig > qualitaet_l~
+	$(PERL) $(CONVERT_ORIG) -strip-tendencies qualitaet_l-orig > qualitaet_l~
 	mv qualitaet_l~ qualitaet_l
 	-@$(READONLY) $@
 
