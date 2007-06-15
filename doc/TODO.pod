@@ -2361,6 +2361,12 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (M4) (improvement)
+
+Review bbbike.cgi.config and change defaults in bbbike.cgi. Rule of
+thumb: everything which is included in the normal distro and needed by
+a feature, should be turned on.
+
 =item * (M5) (bug)
 
 If the strname_html parameter to fragezeichenform.html contains

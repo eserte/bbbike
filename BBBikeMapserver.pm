@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.39 2007/05/29 21:37:43 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.40 2007/06/14 22:20:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2005 Slaven Rezic. All rights reserved.
@@ -129,7 +129,9 @@ sub all_layers {
 }
 
 sub read_config {
-    my($self, $file) = @_;
+    my($self, $file, %args) = @_;
+    my $lax = delete $args{'-lax'};
+    die "Unhandled arguments: " . join(" ", %args) if %args;
     {
 	package BBBikeMapserver::Config;
 	do($file);
@@ -147,11 +149,16 @@ sub read_config {
 	$BBBikeMapserver::Config::mapserver_fonts_list  = $BBBikeMapserver::Config::mapserver_fonts_list;
     }
 
+    my $die = sub {
+	die @_ unless $lax;
+	undef;
+    };
+
     eval {
-	$self->{MAPSERVER_DIR}	       = $BBBikeMapserver::Config::mapserver_dir || die "mapserver_dir\n";
-	$self->{MAPSERVER_PROG_RELURL} = $BBBikeMapserver::Config::mapserver_prog_relurl || die "mapserver_prog_relurl\n";
-	$self->{MAPSERVER_PROG_URL}    = $BBBikeMapserver::Config::mapserver_prog_url || die "mapserver_prog_url\n";
-	$self->{BBD2ESRI_PROG}	       = $BBBikeMapserver::Config::bbd2esri_prog || die "bbd2esri_prog\n";
+	$self->{MAPSERVER_DIR}	       = $BBBikeMapserver::Config::mapserver_dir || $die->("mapserver_dir\n");
+	$self->{MAPSERVER_PROG_RELURL} = $BBBikeMapserver::Config::mapserver_prog_relurl || $die->("mapserver_prog_relurl\n");
+	$self->{MAPSERVER_PROG_URL}    = $BBBikeMapserver::Config::mapserver_prog_url || $die->("mapserver_prog_url\n");
+	$self->{BBD2ESRI_PROG}	       = $BBBikeMapserver::Config::bbd2esri_prog || $die->("bbd2esri_prog\n");
 	$self->{MAPSERVER_BIN_DIR}     = $BBBikeMapserver::Config::mapserver_bin_dir; # this is optional
 	$self->{MAPSERVER_CGI_BIN_DIR} = $BBBikeMapserver::Config::mapserver_cgi_bin_dir || $BBBikeMapserver::Config::mapserver_bin_dir; # this is optional
 	$self->{MAPSERVER_FONTS_LIST}  = $BBBikeMapserver::Config::mapserver_fonts_list;

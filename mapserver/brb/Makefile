@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.57 2007/05/20 22:37:47 eserte Exp $
+# $Id: Makefile,v 1.58 2007/06/15 21:15:37 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -14,7 +14,7 @@
 # Absolute path to the bbbike source directory.
 # It should be really absolute, because this directory may be replicated to
 # elsewhere.
-ABS_LOCAL_BBBIKE_DIR=	/home/e/eserte/src/bbbike		# ***
+ABS_LOCAL_BBBIKE_DIR!=	perl -MCwd=realpath -e 'print realpath("../..")'
 BBBIKE_DATA_DIR=	$(ABS_LOCAL_BBBIKE_DIR)/data
 BBBIKE_MISCSRC_DIR=	$(ABS_LOCAL_BBBIKE_DIR)/miscsrc
 

@@ -4424,7 +4424,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002776',
        data  => <<EOF,
-userdel	1 15388,16502 15121,16503 14621,16563
+userdel	1 15388,16502 15134,16499 14621,16563
 EOF
      },
      { from  => 1147721063, # 2006-05-15 21:24
@@ -5087,7 +5087,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_84063',
        data  => <<EOF,
-userdel	1::inwork 14621,16563 15121,16503 15388,16502
+userdel	1::inwork 14621,16563 15134,16499 15388,16502
 EOF
      },
      { from  => 1152566231, # 2006-07-10 23:17
@@ -5536,7 +5536,7 @@ EOF
        text  => 'Berlin Weißensee, Buschallee, Weißensee Richtung Ahrensfelde Zwischen Einmündung Berliner Allee und Kreuzung Hansastraße Baustelle, gesperrt bis 15.09.2006 18:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 14621,16563 15121,16503 15388,16502 15432,16500
+userdel	1::inwork 14621,16563 15134,16499 15388,16502 15432,16500
 EOF
      },
      { from  => 1156478400, # 2006-08-25 06:00
@@ -5993,7 +5993,7 @@ EOF
        text  => 'L 020 R.-Luxemburg-Str. OD Velten, Bahnübergang Arbeiten am Gleiskörper Vollsperrung 21.10.2006-02.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -5368,30480 -5496,30288
+userdel	2::inwork -5368,30480 -5417,30402 -5496,30288
 EOF
      },
      { from  => 1159693063, # 2006-10-01 10:57
@@ -6764,7 +6764,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004267',
        data  => <<EOF,
-userdel	1::inwork 22429,11056 22473,11272
+userdel	1::inwork 22436,11054 22473,11272
 EOF
      },
      { from  => 1165532400, # 2006-12-08 00:00
@@ -8524,8 +8524,8 @@ EOF
 userdel	q4::inwork 14535,11327 14495,11261 14459,11200
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1181768521, # 
+       until => 1181768526, # XXX
        text  => 'Glienicker Weg (Adlershof) Richtung Adlergestell zwischen Nipkowstr. und Adlergestell Fahrbahnunterspülung, Fahrtrichtung gesperrt',
        type  => 'handicap',
        source_id => 'IM_005746',
@@ -8587,6 +8587,91 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 99176,-43536 99245,-43974 99228,-44346
+EOF
+     },
+     { from  => 1181768451, # 2007-06-13 23:00
+       until => 1182117600, # 2007-06-18 00:00
+       text  => 'Dörpfeldstr. (Adlershof) in beiden Richtungen bei Adlergestell Baustelle, Straße vollständig gesperrt (bis 17.06.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_005786',
+       data  => <<EOF,
+userdel	2::inwork 20012,3532 19892,3454
+EOF
+     },
+     { from  => 1181768486, # 2007-06-13 23:01
+       until => 1185919199, # 2007-07-31 23:59
+       text  => 'Flottwellstr. (Tiergarten) Richtung Potsdamer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 07.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_005532',
+       data  => <<EOF,
+userdel	1::inwork 8336,10829 8300,10823 8281,10791 8199,10634
+EOF
+     },
+     { from  => 1181772000, # 2007-06-14 00:00
+       until => 1182031200, # 2007-06-17 00:00
+       text  => 'L 070 zw. Proßmarke und Hohenbucko Deckenerneuerung Vollsperrung 15.06.2007-16.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 16701,-71358 17029,-71672 17461,-72373 17827,-72696 17998,-73555
+EOF
+     },
+     { from  => 1188424800, # 2007-08-30 00:00
+       until => 1188856800, # 2007-09-04 00:00
+       text  => 'L 074 Am Markt OD Teupitz 700-Jahr-Feier Vollsperrung 31.08.2007-03.09.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 25190,-30385 25240,-29746 25412,-29762 25541,-29875
+EOF
+     },
+     { from  => 1181941660, # 2007-06-15 23:07
+       until => 1182204000, # 2007-06-19 00:00
+       text  => 'Motzstr., Eisenacher Str., Kalckreuthstr. (Schöneberg) in beiden Richtungen, Veranstaltung, Straße vollständig gesperrt (bis 18.06.07 06 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_005798',
+       data  => <<EOF,
+userdel	2::temp 6628,10318 6626,10143 6730,10199 6739,10120
+userdel	2::temp 6611,10135 6514,10076
+userdel	2::temp 7037,10359 6730,10199 6719,10347
+EOF
+     },
+     { from  => 1182031200, # 2007-06-17 00:00
+       until => 1191189600, # 2007-10-01 00:00
+       text  => 'B 005 Treplin-Petershagen OD Petershagen, zw. KVK und Ortsausgang Kanal- und Straßenbau Vollsperrung 18.06.2007-30.09.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 74246,584 74740,378
+EOF
+     },
+     { from  => 1182031200, # 2007-06-17 00:00
+       until => 1182549600, # 2007-06-23 00:00
+       text  => 'K 6419 Garzauer Str. zw. Strausberg, E.-Thälmann-Str. u. SVA Deckenerneuerung Vollsperrung 18.06.2007-22.06.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 41356,16225 41168,16281
+EOF
+     },
+     { from  => 1182376800, # 2007-06-21 00:00
+       until => 1183672800, # 2007-07-06 00:00
+       text  => 'L 020 Rosa-Luxemburg-Str. Bahnübergang in der OL Velten Gleisbauarbeiten Vollsperrung 22.06.2007-05.07.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -5368,30480 -5417,30402 -5496,30288
+EOF
+     },
+     { from  => 1182031200, # 2007-06-17 00:00
+       until => 1182722400, # 2007-06-25 00:00
+       text  => 'L 020 Veltener Str. OD Bötzow, zw. Marwitzer Str. u. Grünstr. Einbau Deckschicht Vollsperrung 18.06.2007-24.06.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -7681,27096 -7250,28021
+EOF
+     },
+     { from  => 1182031200, # 2007-06-17 00:00
+       until => 1195858800, # 2007-11-24 00:00
+       text  => 'L 023 B 2 - Britz Brücke über das kalte Wasser am OE Britz Brückenneubau Vollsperrung 18.06.2007-23.11.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 38357,51575 38111,51856
 EOF
      },
     );

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.35 2007/05/29 21:37:32 eserte Exp $
+# $Id: MapServer.pm,v 1.37 2007/06/14 22:24:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.35 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.37 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -164,22 +164,39 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.35 $ =~ /(\d+)\.(\d+)/);
 	}
 	require BBBikeMapserver;
 	my $ms = BBBikeMapserver->new;
-	$ms->read_config($bbbike_cgi_conf_path);
+	$ms->read_config($bbbike_cgi_conf_path, -lax => 1); # we can compute good defaults...
 	$self->BbbikeDir("$bbbike_dir");
 	$self->MapserverMapDir($ms->{MAPSERVER_DIR});
-	if (!defined $ms->{MAPSERVER_BIN_DIR}) {
+	if (!$self->MapserverMapDir) {
+	    $self->MapserverMapDir("$bbbike_dir/mapserver/brb");
+	}
+
+	$self->MapserverBinDir($ms->{MAPSERVER_BIN_DIR});
+	if (!$self->MapserverBinDir || ! -e $self->MapserverBinDir) {
+	TRY: {
+		for my $path (qw(/usr/local/bin /usr/bin)) {
+		    if (-e "$path/shp2img") {
+			$self->MapserverBinDir($path);
+			last TRY;
+		    }
+		}
+	    }
+	}
+	if (!defined $self->MapserverBinDir || ! -e $self->MapserverBinDir) {
 	    die "Please define \$mapserver_bin_dir in $bbbike_cgi_conf_path";
 	}
-	$self->MapserverBinDir($ms->{MAPSERVER_BIN_DIR});
+
 	$self->MapserverCgiBinDir($ms->{MAPSERVER_CGI_BIN_DIR}) if defined $ms->{MAPSERVER_CGI_BIN_DIR};
 	$self->MapserverRelurl($ms->{MAPSERVER_PROG_RELURL});
 	$self->MapserverUrl($ms->{MAPSERVER_PROG_URL});
 	$self->TemplateMap("brb.map-tpl");
 	$self->ImageSuffix($args{ImageType} || "png");
 	if (!defined $ms->{MAPSERVER_FONTS_LIST}) {
-	    die "Please define \$mapserver_fonts_list in $bbbike_cgi_conf_path";
+	    $self->FontsList("fonts-debian.list"); # good debian defaults
+	    #warn "Please consider to define \$mapserver_fonts_list in $bbbike_cgi_conf_path";
+	} else {
+	    $self->FontsList($ms->{MAPSERVER_FONTS_LIST});
 	}
-	$self->FontsList($ms->{MAPSERVER_FONTS_LIST});
 	$self;
     }
 

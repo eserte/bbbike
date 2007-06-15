@@ -9,7 +9,6 @@ B5: existiert ein Radweg in Höhe Wusterhausen (wahrscheinlich ab 2006-09-29)?	? 
 B246: existiert ein Radweg bei Nächst Neuendorf (wahrscheinlich ab 2006-11-15)?	? 11412,-19943 11136,-20007
 Askanierring: an der Verbindung zwischen Fehrbelliner Tor und Streitstr. wird gearbeitet, zukünftig asphaltiert	? -3631,16224 -3040,16246
 Havelschanze: Qualität?	? -3040,16246 -2565,16212
-Ludwigsluster Str.: Qualität (wahrscheinlich Beton oder Asphalt)?	? 22883,13013 22835,12999 22859,12912 22897,12830 22906,12766 22902,12688 22780,12567 22684,12484 22567,12407 22471,12343 22385,12268 22292,12198
 Günter-Litfin-Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 13342,17180 13115,17410
 Clémentweg/Dr.-Dorsch-Allee: Qualität (laut ADFC-Karte gut geeignet)?	? 11740,22770 10889,23381
 Werdauer Weg: Qualität? (Am Sachsendamm-Ende anscheinend Beton)	? 7087,8066 6990,8040 6481,7345
@@ -292,7 +291,6 @@ Neuglobsow - Rheinsberg: laut http://www.ruppin.de/rheinsberg/freizeit/sport/rad
 Hasselwerderstr.: Einbahnstraße, auch für Radfahrer?	? 18268,5739 18023,5623
 Mittelweg (Altglienicke, Bohnsdorf): Qualität (laut ADFC-Karte mäßig geeignet)?	? 20265,858 20171,698 20035,348
 Terrassenstr.: Qualität?	? -1392,3915 -1554,3889 -1754,3907 -1909,3854 -1901,3692
-Pirolstr.: loser Sandweg (Q2): auf Biesdorfer oder Karlshorster Seite?	? 20716,10007 20140,10053
 Neubrandenburg: Hinterste Mühle - Stadt (Waldweg), wie geht es weiter?	? -78,126443 -112,126528 -62,126684 -96,126768 -231,126900 -428,127368 -493,127450 -671,127478
 Eichbuschallee: Teil der Eichbuschallee im Plänterwald: Qualität?	? 16136,7886 16534,8182
 Hof Sternhagen - Lindenhagen: Qualität? (Deckenerneuerung 5/2005)	? 35466,92211 34375,92125 33537,92937 33412,93612 33342,94000
@@ -462,7 +460,6 @@ Bahnhofstr. (Eichwalde): Qualität?	? 26102,-2822 25153,-3423
 August-Bebel-Allee (Eichwalde): Qualität?	? 24987,-3015 25153,-3423 25372,-4019
 Färberstr.: Kopfsteinpflaster?	? 21494,4605 21607,4850
 (Mörchinger Str. - Berliner Str.): Qualität, Abbiegesituation an Berliner Str.? 	? 1360,3253 1334,3305
-Zu den Faltern: Qualität?	? 21862,10965 22071,11048
 Ist hier noch das DRK-Krankenhaus? Name?	? 1053,3142
 (Hüttenweg - Jagdschloß Grunewald): Wegführung, Qualität (fester Waldweg)?	? 869,6085 866,6328 880,6645
 (Waldweg Grunewald): Wegführung, Qualität (fester Waldweg)?	? 1512,6553 1364,6691
@@ -910,6 +907,8 @@ Wilhelm-Gericke-Str.: Qualität? (wahrscheinlich guter Beton)	? 5700,19510 5592,1
 Grieben - Vielitz: Qualität?	? -14966,56468 -15237,56681 -15453,56959 -15676,57044 -15819,57248 -15984,57315 -16206,57373 -16608,57867 -16755,57921 -16860,58002
 Vielitz - B167: Qualität?	? -16206,57373 -16069,57172 -15773,56724 -15697,55703 -15581,55353 -15335,54980 -15127,54664
 Gerhart-Hauptmann-Str.: Qualität? (möglicherweise asphaltiert?)	? 22988,8952 23071,9151
+Sägebockweg: Qualität zwischen Str. 71 und Str. 73? (unbefestiger Weg?)	? 15799,22787 15850,22905
+Salzmannstr. - Betriebsbhf. Rummelsburg: existiert eine für Radfahrer befahrbare Verbindung? Qualität?	? 16847,10092 16828,10027 16841,9995 16811,9937
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -985,6 +984,8 @@ Nalepastr.: Betonstr., Eisenbahnschienen (stimmt das?)	? 17043,7512 17211,7265
 Busseallee: Kopfsteinpflaster (ist der Abschnitt zwischen Fischerhüttenstr. und Beerenstr. auch Kopfsteinpflaster?)	? 161,3062 71,3179 -266,3648
 (Am Britzer Verbindungskanal): holpriger Feldweg (wahrscheinlich wird das noch nicht asphaltierte Teilstück bis 2006-09-01 fertiggestellt)	? 14319,5993 14212,6000
 Lincolnstr.: Kopfsteinpflaster (Qualität der Lincolnstr. zwischen Einbecker und Zachertstr.?)	? 17341,11595 17242,11304
+Kohlweißlingstr.: Verbundsteinpflaster (Qualität: Verbundsteinpflaster oder Asphalt?)	? 21723,10920 21765,10834
+Distelfalterstr.: Verbundsteinpflaster (Qualität: Verbundsteinpflaster oder Asphalt?)	? 21723,10920 21605,10866
 Slabystr.: guter Asphalt (wie ist die Qualität der Slabystr. in Oberschöneweide?)	? 19273,5866 19180,6020 19025,6173
 Achenbachstr.: Kopfsteinpflaster (Kopfsteinpflaster eher gut oder normal-mäßig?)	? -3360,14974 -3322,14814
 Gundelfinger Str.: Kopfsteinpflaster (Kopfsteinpflaster eher gut oder normal-mäßig?)	? 18735,9421 18697,9153 18653,8922 18609,8717
@@ -994,6 +995,7 @@ Heegermühler Weg: schlechtes Kopfsteinpflaster (Hier wurde als Range "5-15" ange
 Miethepfad: Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9518,-668 9547,-754 9585,-859
 Schulzendorfer Str.: Asphalt (ist die Schulzendorfer Str. nach den Bauarbeiten asphaltiert?)	? -596,23009 -915,22935 -1299,22842 -1484,22799 -1972,22899 -2107,22790 -2207,22741 -2437,22625
 Alter Bernauer Heerweg: Kopfsteinpflaster (Alter Bernauer Heerweg westlich des Mauerwegs: Kopfsteinpflaster oder wassergebundene Decke?)	? 6668,22746 7072,22905 7782,23172 7923,23225 8203,23321
+Dohlengrund: Asphalt (wie ist die Qualität zwischen Grabensprung und Köpenicker Str.?)	? 20716,10434 21017,10423 21288,10431
 Salzachstr.: unbefestigt, fester Erdboden (wo genau sind die Kopfsteinpflaster-/Asphaltabschnitte?)	? -2122,3593 -1998,3610
 Schrimmer Weg: schlechtes Kopfsteinpflaster (gilt das "schlechte Kopfsteinpflaster" auch für den Gehweg-Abschnitt Richtung Waltersdorfer Chaussee?)	? 17879,127 17818,93
 Fuchsienweg: Beton (Kann in die Stubenrauchstrße links eingebogen werden?)	? 16090,3079 16376,2862 16573,2715

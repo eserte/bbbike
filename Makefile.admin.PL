@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.59 2007/06/10 14:56:20 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.63 2007/06/14 22:20:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -769,6 +769,47 @@ clean-cache:
 	-rm -f tmp/m_de_*
 	-rm -f tmp/*.cache
 
+# Debian packages needed for (subparts of) BBBike, loosely
+# categorized:
+DEB_DEVEL=	cvs bison byacc flex g++ apt-show-versions pmake gcc \
+		libc6-dev libinline-perl strace rsync less make
+DEB_TEST=	libimage-info-perl libwww-mechanize-perl
+DEB_DRAW=	libgd2-xpm libgd2-xpm-dev perlmagick libimager-perl \
+		pdftk netpbm imagemagick libgd-gd2-perl ttf-bitstream-vera
+DEB_MAIL=	libmime-lite-perl libmailtools-perl
+DEB_DATA=	libstring-approx-perl libdbd-xbase-perl libxml-parser-perl \
+		libxml-twig-perl libdbi-perl libtie-ixhash-perl \
+		libobject-realize-later-perl libmldbm-perl \
+		libclass-accessor-perl libarchive-zip-perl \
+		libtemplate-perl libxml-libxml-perl libxml-simple-perl \
+		libyaml-perl libtext-unidecode-perl
+DEB_MISC=	libdate-calc-perl
+DEB_CGI=	libapache-session-perl apache-perl
+DEB_MAPSERVER=	mapserver-bin cgi-mapserver
+
+# All packages needed for full-flavoured Web server operation:
+DEB_ALL_CGI=	$(DEB_DEVEL)      \
+		$(DEB_TEST)       \
+		$(DEB_DRAW)       \
+		$(DEB_MAIL)       \
+		$(DEB_DATA)       \
+		$(DEB_MISC)       \
+		$(DEB_CGI)        \
+		$(DEB_MAPSERVER)  
+
+install-debian-for-cgi:	install-debian-packages-for-cgi \
+			install-debian-perlmods-for-cgi
+
+install-debian-packages-for-cgi:
+	apt-get install ${DEB_ALL_CGI}
+
+install-debian-perlmods-for-cgi:
+	cpan CPAN
+	cpan PDF::Image::GIFImage Apache::Session::Counted \
+	     Object::Iterate Palm::PalmDoc SVG WWW::Mechanize::FormFiller
+# Manchmal scheint hier -f (force) notwendig zu sein...
+	cpan CDB_File
+
 ######################################################################
 # Tests
 
@@ -779,6 +820,7 @@ clean-cache:
 #test-with-protocol-data:
 
 test-with-protocol: permission
+	-$(MAKE) ext
 	DATE=`date +%Y%m%d`; export HARNESS_NOTTY=1; script $(HOME)/trash/bbbike-test-$$DATE $(MAKE) test
 	DATE=`date +%Y%m%d`; cd data && script $(HOME)/trash/bbbike-test-data-$$DATE $(MAKE) all slow-checks really-slow-checks
 

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.145 2007/06/10 18:50:00 eserte Exp $
+# $Id: Makefile,v 2.147 2007/06/14 20:31:58 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -42,7 +42,8 @@ GREPSTRASSEN=		${MISCSRCDIR}/grepstrassen
 .if ${HOSTNAME} == "devpc01.iconmobile.de"
 PERL_UTF8=		perl5.8.7
 .else
-PERL_UTF8=		perl5.8.8
+# assume we have a modern perl installed...
+PERL_UTF8=		perl
 .endif
 PERL=			perl
 SED=			env LANG=C sed
@@ -92,11 +93,17 @@ READABLE=	chmod ugo+r
 
 # The locale was named de_DE.ISO_8859-1 in FreeBSD 4.x, but now with
 # an underline less.
-SORT_NO_LOCALE=	env LC_ALL=de_DE.ISO8859-1 sort
+.ifdef .FreeBSD
+GERMAN_LOCALE=de_DE.ISO8859-1
+.else
+# e.g. debian
+GERMAN_LOCALE=de_DE.ISO-8859-1
+.endif
+SORT_NO_LOCALE=	env LC_ALL=${GERMAN_LOCALE} sort
 
-## XXX what is write, what is wrong?
-#COORDS_DATA_SORT_OPTS=	-f -t "|" -k 1,3
-COORDS_DATA_SORT_OPTS=
+## This seems to generate better results:
+COORDS_DATA_SORT_OPTS=	-f -t "|" -k 1,3
+#COORDS_DATA_SORT_OPTS=
 
 ######################################################################
 # META TARGETS

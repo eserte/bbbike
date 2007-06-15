@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.35 2007/06/09 22:33:47 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.36 2007/06/14 20:31:28 eserte Exp $
 #
 
 .ifndef COMMENTS_PARTIAL
@@ -37,7 +37,7 @@ MAPSERVER_BIN_DIR?=	/usr/local/src/work/mapserver-amd64
 .elif ${HOSTNAME} == "slaven.radzeit.de"
 MAPSERVER_BIN_DIR?=	/usr/local/src/mapserver
 .else
-MAPSERVER_BIN_DIR?=	/usr/local/src/work/mapserver
+MAPSERVER_BIN_DIR?=	/usr/bin
 .endif
 SHPTREE=		${MAPSERVER_BIN_DIR}/shptree
 

@@ -746,15 +746,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1181685600,
-         'text' => 'K 6747 Groß Schauen-Alt Stahnsdorf Bahnübergang bei Philadelphia Gleisbauarbeiten Vollsperrung 11.06.2007-12.06.2007 ',
-         'from' => 1181426400,
-         'id' => 991,
-         'data' => 'userdel	2::inwork 44269,-15317 44343,-15112 44369,-14650
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1182376800,
          'text' => 'K 6747 Groß Schauen-Alt Stahnsdorf Bahnübergang bei Philadelphia Gleisbauarbeiten Vollsperrung 16.06.2007-20.06.2007 ',
@@ -817,15 +809,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        undef,
        undef,
        undef,
-       {
-         'until' => 1181772000,
-         'text' => 'L 054 Calau-Vetschau Bahnübergang in der OD Saßleben Gleisbauarbeiten Vollsperrung 12.06.2007-13.06.2007 ',
-         'from' => 1181512800,
-         'id' => 1004,
-         'data' => 'userdel	2::inwork 50637,-71768 51374,-71361 51440,-71337
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_004688',
          'until' => 1204325999,
@@ -866,25 +850,8 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_005746',
-         'until' => undef,
-         'text' => 'Glienicker Weg (Adlershof) Richtung Adlergestell zwischen Nipkowstr. und Adlergestell Fahrbahnunterspülung, Fahrtrichtung gesperrt',
-         'from' => undef,
-         'id' => 1012,
-         'data' => 'userdel	q4::inwork; 20818,3182 20760,3059 20565,2754
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1181858400,
-         'text' => 'B 115 Berliner Chaussee Bahnübergang in der OD Lübben Gleisbauarbeiten Vollsperrung 14.06.2007-14.06.2007 ',
-         'from' => 1181685600,
-         'id' => 1013,
-         'data' => 'userdel	2::inwork 43610,-50356 43031,-50423 39975,-50522
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1182376800,
          'text' => 'B 168 Breite Str. OD Eberswalde, zw. Heine-Str.u. Krz. Freienwalder Str. Deckenerneuerung halbseitig gesperrt; Einbahnstraße 11.06.2007-20.06.2007 ',
@@ -936,6 +903,101 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'from' => 1182204000,
          'id' => 1019,
          'data' => 'userdel	2::inwork 99176,-43536 99245,-43974 99228,-44346
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005786',
+         'until' => 1182117600,
+         'text' => 'Dörpfeldstr. (Adlershof) in beiden Richtungen bei Adlergestell Baustelle, Straße vollständig gesperrt (bis 17.06.2007)',
+         'from' => 1181768451,
+         'id' => 1020,
+         'data' => 'userdel	2::inwork 20012,3532 19892,3454
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005532',
+         'until' => 1185919199,
+         'text' => 'Flottwellstr. (Tiergarten) Richtung Potsdamer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 07.2007)',
+         'from' => 1181768486,
+         'id' => 1021,
+         'data' => 'userdel	1::inwork 8336,10829 8300,10823 8281,10791 8199,10634
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1182031200,
+         'text' => 'L 070 zw. Proßmarke und Hohenbucko Deckenerneuerung Vollsperrung 15.06.2007-16.06.2007 ',
+         'from' => 1181772000,
+         'id' => 1022,
+         'data' => 'userdel	2::inwork 16701,-71358 17029,-71672 17461,-72373 17827,-72696 17998,-73555
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1188856800,
+         'text' => 'L 074 Am Markt OD Teupitz 700-Jahr-Feier Vollsperrung 31.08.2007-03.09.2007 ',
+         'from' => 1188424800,
+         'id' => 1023,
+         'data' => 'userdel	q4::inwork 25190,-30385 25240,-29746 25412,-29762 25541,-29875
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_005798',
+         'until' => 1182204000,
+         'text' => 'Motzstr., Eisenacher Str., Kalckreuthstr. (Schöneberg) in beiden Richtungen, Veranstaltung, Straße vollständig gesperrt (bis 18.06.07 06 Uhr)',
+         'from' => 1181941660,
+         'id' => 1024,
+         'data' => 'userdel	2::temp 6628,10318 6626,10143 6730,10199 6739,10120
+userdel	2::temp 6611,10135 6514,10076
+userdel	2::temp 7037,10359 6730,10199 6719,10347
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1191189600,
+         'text' => 'B 005 Treplin-Petershagen OD Petershagen, zw. KVK und Ortsausgang Kanal- und Straßenbau Vollsperrung 18.06.2007-30.09.2007 ',
+         'from' => 1182031200,
+         'id' => 1025,
+         'data' => 'userdel	q4::inwork 74246,584 74740,378
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1182549600,
+         'text' => 'K 6419 Garzauer Str. zw. Strausberg, E.-Thälmann-Str. u. SVA Deckenerneuerung Vollsperrung 18.06.2007-22.06.2007 ',
+         'from' => 1182031200,
+         'id' => 1026,
+         'data' => 'userdel	2::inwork 41356,16225 41168,16281
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1183672800,
+         'text' => 'L 020 Rosa-Luxemburg-Str. Bahnübergang in der OL Velten Gleisbauarbeiten Vollsperrung 22.06.2007-05.07.2007 ',
+         'from' => 1182376800,
+         'id' => 1027,
+         'data' => 'userdel	2::inwork -5368,30480 -5417,30402 -5496,30288
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1182722400,
+         'text' => 'L 020 Veltener Str. OD Bötzow, zw. Marwitzer Str. u. Grünstr. Einbau Deckschicht Vollsperrung 18.06.2007-24.06.2007 ',
+         'from' => 1182031200,
+         'id' => 1028,
+         'data' => 'userdel	q4::inwork -7681,27096 -7250,28021
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1195858800,
+         'text' => 'L 023 B 2 - Britz Brücke über das kalte Wasser am OE Britz Brückenneubau Vollsperrung 18.06.2007-23.11.2007 ',
+         'from' => 1182031200,
+         'id' => 1029,
+         'data' => 'userdel	2::inwork 38357,51575 38111,51856
 ',
          'type' => 'gesperrt'
        }

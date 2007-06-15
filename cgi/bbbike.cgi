@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.57 2007/06/07 20:47:10 eserte Exp $
+# $Id: bbbike.cgi,v 8.61 2007/06/14 22:57:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -705,7 +705,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.57 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.61 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1102,8 +1102,8 @@ if (defined $q->param('begin')) {
 	       );
     $| = 1;
     $check_map_time = 1;
-    for my $x (0 .. 9) {
-	for my $y (0 .. 9) {
+    for my $x (0 .. $xgridnr-1) {
+	for my $y (0 .. $ygridnr-1) {
 	    print "x=$x y=$y ...\n";
 	    draw_map('-x' => $x,
 		     '-y' => $y,
@@ -4663,12 +4663,12 @@ sub draw_route {
 	if ($has_center) {
 	    my $width  = $q->param("width");
 	    my $height = $q->param("height");
-	    if ($scope =~ /city/) {
-		$q->param("width",  1000) if !defined $q->param("width");
-		$q->param("height", 1000) if !defined $q->param("height");
+	    if (!outside_berlin_and_potsdam($q->param("center"))) {
+		$q->param("width",  1000) if !defined $width  || $width eq '';
+		$q->param("height", 1000) if !defined $height || $height eq '';
 	    } else {
-		$q->param("width",  5000) if !defined $q->param("width");
-		$q->param("height", 5000) if !defined $q->param("height");
+		$q->param("width",  5000) if !defined $width  || $width eq '';
+		$q->param("height", 5000) if !defined $height || $height eq '';
 	    }
 	}
 
@@ -4857,9 +4857,15 @@ sub draw_map {
 	eval {
 	    local $SIG{'__DIE__'};
 	    require BBBikeDraw;
-	    open(IMG, "> $img_file~") or confess "Fehler: Die Karte $img_file~ konnte nicht erstellt werden.<br>\n";
+	    open(IMG, "> $img_file~") or do {
+		print STDERR "Error code: $!\n";
+		confess "Fehler: Die Karte $img_file~ konnte nicht erstellt werden.<br>\n";
+	    };
 	    chmod 0644, "$img_file~";
-	    open(MAP, "> $map_file~") or confess "Fehler: Die Map $map_file~ konnte nicht erstellt werden.<br>\n";
+	    open(MAP, "> $map_file~") or do {
+		print STDERR "Error code: $!\n";
+		confess "Fehler: Die Map $map_file~ konnte nicht erstellt werden.<br>\n";
+	    };
 	    chmod 0644, "$map_file~";
 	    $q->param('geometry', $detailwidth."x".$detailheight);
 	    $q->param('draw', 'str', 'ubahn', 'sbahn', 'wasser', 'flaechen', 'ort', 'berlin');
@@ -6427,7 +6433,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/06/07 20:47:10 $';
+    my $cgi_date = '$Date: 2007/06/14 22:57:58 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
@@ -6463,7 +6469,11 @@ EOF
 	if ($ENV{'SERVER_SOFTWARE'} =~ /apache/i) {
 	    print "<a href=\"http://www.apache.org/\"><img align=right src=\"";
 	    print "http://httpd.apache.org/apache_pb.gif";
-	    print "\" border=0></a>";
+	    print "\" alt=\"apache httpd\" border=0></a>";
+	} elsif ($ENV{'SERVER_SOFTWARE'} =~ /lighttpd/i) {
+	    print "<a href=\"http://www.lighttpd.net/\"><img align=right src=\"";
+	    print "http://www.lighttpd.net/light_button.png";
+	    print "\" alt=\"lighttpd\" border=0></a>";
 	}
 	print "<p>";
     }

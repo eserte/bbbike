@@ -13296,7 +13296,7 @@ sub addpoint_xy {
     $hw = BBBikeCalc::head_wind($deltax, $deltay) if $wind;
     my $curr_line = $c->createLine
 	($prex, $prey, $xx, $yy,
-	 -width => ($route_below ? get_line_width('HH')*2 : 5),
+	 -width => ($route_below ? int(get_line_width('HH')*2.5) : 5),
 	 ($route_arrowed ? (-arrow => "last") : ()),
 	 # -dash and -capstyle don't work well together
 	 ($route_dashed ? (-dash => [4,5]) : (-capstyle => $capstyle_round)),

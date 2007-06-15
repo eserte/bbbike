@@ -64,7 +64,7 @@ Aroser Allee, Fertigstellung bis 2007-10-01	? 6741,18613 6702,18348 6671,18132 6
 #
 #: section ignorieren vvv
 #: section Straßen in Planung vvv
-#: last_checked: 2007-06-01
+#: last_checked: 2007-06-15
 Columbiadamm: Bauarbeiten (neue Radwege)	?::inwork 10213,8665 10598,8563 10796,8498 10911,8457 11271,8325 11416,8283 11632,8302
 Blankenfelde, Berliner Str. und Hauptstr: nach Bauarbeiten (bis 2009-04-01) vielleicht bessere Fahrbahnqualität?	?::inwork 9528,23240 9490,23531 9425,23693 9625,23781 9774,23936
 #: by: http://www.berliner-stadtplan.com/topic/bln/str/x_wgs/22.04/y_wgs/28.92/from/form.html
@@ -164,8 +164,6 @@ Alexanderufer: in Bau (zumindest das südliche Ende wird asphaltiert sein)	?::inw
 #: by: Message-ID: <Xns96A387773A8B04usenet@krickstadt.de>:
 #: by: http://archiv.tagesspiegel.de/archiv/30.07.2005/1962466.asp:
 Spree: ist dieser Spreearm wiederhergestellt worden?	? 43394,-2017 43296,-2181 43357,-2501 43220,-2544 43129,-2437 43162,-2242 43053,-2114
-#: by: radzeit 3/2006
-Radwegrampe am Tierpark: wie hat man sich das vorzustellen?	? 18554,10354 18628,10177
 (Am Kanal - Adlergestell): genauer Wegverlauf, Koordinaten?	? 20928,2412 20933,2390 20937,2368
 #: by: http://www.berlinonline.de/berliner-zeitung/berlin/486071.html
 Straße 13: wird demnächst zur Frank-Zappa-Str. umbenannt	? 18598,14575 18932,14652
@@ -239,6 +237,8 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet? in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: Klaus Dieter Ritzmann
+Rue Nungesser et Coli: mäßiges Kopfsteinpflaster, Q2, enge Straße	? 3066,17833 3051,17879 3033,17903 3004,17917 2963,17917 2897,17902 2873,17867 2883,17801
 #: by: Jens-Michael Schau:
 Käthe-Kollwitz-Str., Hohen Neuendorf: schlechtes Kopfsteinpflaster, Q3	? 2177,29194 2225,29241 2288,29306 2344,29442 2353,29471 2318,29666 2314,29783 2320,29875
 #: by: anonymous:
@@ -331,7 +331,6 @@ B246: existiert ein Radweg bei Nächst Neuendorf (wahrscheinlich ab 2006-11-15)?	
 #: by: rjoop
 Askanierring: an der Verbindung zwischen Fehrbelliner Tor und Streitstr. wird gearbeitet, zukünftig asphaltiert	? -3631,16224 -3040,16246
 Havelschanze: Qualität?	? -3040,16246 -2565,16212
-Ludwigsluster Str.: Qualität (wahrscheinlich Beton oder Asphalt)?	? 22883,13013 22835,12999 22859,12912 22897,12830 22906,12766 22902,12688 22780,12567 22684,12484 22567,12407 22471,12343 22385,12268 22292,12198
 Günter-Litfin-Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 13342,17180 13115,17410
 #: XXX Eintrag in PLZ-DB fehlt für Dorsch-Allee. Clementweg mit oder ohne Akzent?:
 Clémentweg/Dr.-Dorsch-Allee: Qualität (laut ADFC-Karte gut geeignet)?	? 11740,22770 10889,23381
@@ -654,8 +653,6 @@ Hasselwerderstr.: Einbahnstraße, auch für Radfahrer?	? 18268,5739 18023,5623
 #: XXX ein anonymer Eintrag hat einen (diesen?) Mittelweg mit "loser Sandweg" attributiert:
 Mittelweg (Altglienicke, Bohnsdorf): Qualität (laut ADFC-Karte mäßig geeignet)?	? 20265,858 20171,698 20035,348
 Terrassenstr.: Qualität?	? -1392,3915 -1554,3889 -1754,3907 -1909,3854 -1901,3692
-#: XXX anonymer Eintrag?
-Pirolstr.: loser Sandweg (Q2): auf Biesdorfer oder Karlshorster Seite?	? 20716,10007 20140,10053
 Neubrandenburg: Hinterste Mühle - Stadt (Waldweg), wie geht es weiter?	? -78,126443 -112,126528 -62,126684 -96,126768 -231,126900 -428,127368 -493,127450 -671,127478
 Eichbuschallee: Teil der Eichbuschallee im Plänterwald: Qualität?	? 16136,7886 16534,8182
 Hof Sternhagen - Lindenhagen: Qualität? (Deckenerneuerung 5/2005)	? 35466,92211 34375,92125 33537,92937 33412,93612 33342,94000
@@ -849,7 +846,6 @@ Bahnhofstr. (Eichwalde): Qualität?	? 26102,-2822 25153,-3423
 August-Bebel-Allee (Eichwalde): Qualität?	? 24987,-3015 25153,-3423 25372,-4019
 Färberstr.: Kopfsteinpflaster?	? 21494,4605 21607,4850
 (Mörchinger Str. - Berliner Str.): Qualität, Abbiegesituation an Berliner Str.? 	? 1360,3253 1334,3305
-Zu den Faltern: Qualität?	? 21862,10965 22071,11048
 Ist hier noch das DRK-Krankenhaus? Name?	? 1053,3142
 (Hüttenweg - Jagdschloß Grunewald): Wegführung, Qualität (fester Waldweg)?	? 869,6085 866,6328 880,6645
 (Waldweg Grunewald): Wegführung, Qualität (fester Waldweg)?	? 1512,6553 1364,6691
@@ -1435,3 +1431,5 @@ Grieben - Vielitz: Qualität?	? -14966,56468 -15237,56681 -15453,56959 -15676,570
 Vielitz - B167: Qualität?	? -16206,57373 -16069,57172 -15773,56724 -15697,55703 -15581,55353 -15335,54980 -15127,54664
 #: note: ein anonymer Kommentar war nicht klar genug ("gute Qualität")
 Gerhart-Hauptmann-Str.: Qualität? (möglicherweise asphaltiert?)	? 22988,8952 23071,9151
+Sägebockweg: Qualität zwischen Str. 71 und Str. 73? (unbefestiger Weg?)	? 15799,22787 15850,22905
+Salzmannstr. - Betriebsbhf. Rummelsburg: existiert eine für Radfahrer befahrbare Verbindung? Qualität?	? 16847,10092 16828,10027 16841,9995 16811,9937
