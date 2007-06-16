@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEditUtil.pm,v 1.17 2007/03/23 22:26:01 eserte Exp $
+# $Id: BBBikeEditUtil.pm,v 1.18 2007/06/16 13:26:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -308,8 +308,13 @@ TRY_MATCHES: {
 		  /x) {
 	    $new_end_time   = $date_time_to_epoch->(59,59,23,$d2,$m2,$y2);
 	    $rx_matched     = 15;
+
 	# ^^^ until here
 
+	} elsif (($d2,$m2) = $btxt =~ /\s*$bis_und_rx\s*$short_date_rx/) {
+	    $new_end_time   = $date_time_to_epoch->(59,59,23,$d2,$m2,$this_year);
+	    $rx_matched     = 21;
+	
 	} else {
 	    $rx_matched     = 7;
 	}

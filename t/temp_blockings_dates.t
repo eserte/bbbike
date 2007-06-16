@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: temp_blockings_dates.t,v 1.9 2006/05/22 22:20:40 eserte Exp $
+# $Id: temp_blockings_dates.t,v 1.10 2007/06/16 13:26:39 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -26,9 +26,17 @@ BEGIN {
 }
 
 my @Today_and_Now = Today_and_Now;
+my $This_Year = $Today_and_Now[0];
 
 for my $test_data
-    (
+    ([<<EOF,
+Kastanienallee (Prenzlauer Berg) in Richtung Danziger Str., ab Schwedter Str. Baustelle, Fahrtrichtung gesperrt bis 15.07. 
+EOF
+      Mktime(@Today_and_Now),
+      Mktime($This_Year,7,15+1,0,0,0),
+      0,
+     ],
+
      [<<EOF,
 Vom 26. Mai 2006 bis 16. Juli 2006 wird die Straße des 17. Juni zwischen Siegessäule und Brandenburger Tor komplett gesperrt. Grund sind die geplante WM-Fanmeile sowie mehrere Festveranstaltungen (u.a. Love Parade).
 EOF
@@ -251,20 +259,25 @@ EOF
 
     ) {
 	my($btxt, $start_date_expected, $end_date_expected, $prewarn_days_expected) = @$test_data;
+	my $label = substr($btxt,0,20)."..."; $label =~ s{[\n\r]}{ }g;
 	my $errors = 0;
 	my($start_date, $end_date, $prewarn_days, $rx_matched);
 	eval {
 	    ($start_date, $end_date, $prewarn_days, $rx_matched)
 		= BBBikeEditUtil::parse_dates($btxt);
 	    # Delta 1s for Today_and_Now tests
-	    ok(abs($start_date - $start_date_expected) <= 1) or $errors++;
+	    ok(abs($start_date - $start_date_expected) <= 1, $label)
+		or $errors++;
 	    my $test_end_date = $end_date_expected;
 	    if (!defined $test_end_date) {
-		is($end_date, undef) or $errors++;
+		is($end_date, undef, "  no end date")
+		    or $errors++;
 	    } else {
-		ok(abs($end_date   - $test_end_date) <= 1) or $errors++;
+		ok(abs($end_date   - $test_end_date) <= 1, "  end date")
+		    or $errors++;
 	    }
-	    is($prewarn_days, $prewarn_days_expected) or $errors++;
+	    is($prewarn_days, $prewarn_days_expected, "  prewarn days")
+		or $errors++;
 	};
 	if ($@) {
 	    diag $@;

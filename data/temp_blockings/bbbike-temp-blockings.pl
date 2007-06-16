@@ -8690,4 +8690,24 @@ EOF
 userdel	1::inwork 5361,7423 5422,7461 5452,7493 5492,7543
 EOF
      },
+     { from  => 1181999685, # 2007-06-16 15:14
+       until => 1182110400, # 2007-06-17 22:00
+       text  => 'Alt-Köpenick (Köpenick) in beiden Richtungen, sowie umgebende Straßen Veranstaltung, Straße vollständig gesperrt (bis 17.06.07 22:00 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_005778',
+       data  => <<EOF,
+userdel	2::temp 22263,4671 22138,4661 22111,4562 22093,4499
+userdel	2::temp 22111,4562 22162,4546
+userdel	2::temp 22196,4847 22138,4661
+EOF
+     },
+     { from  => 1182000409, # 2007-06-16 15:26
+       until => 1184536799, # 2007-07-15 23:59
+       text  => 'Kastanienallee (Prenzlauer Berg) in Richtung Danziger Str., ab Schwedter Str. Baustelle, Fahrtrichtung gesperrt bis 15.07. ',
+       type  => 'gesperrt',
+       source_id => 'IM_005800',
+       data  => <<EOF,
+userdel	1::inwork 10534,14460 10723,14772 10889,15045
+EOF
+     },
     );

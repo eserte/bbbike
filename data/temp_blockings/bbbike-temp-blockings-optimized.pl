@@ -994,6 +994,28 @@ userdel	2::temp 7037,10359 6730,10199 6719,10347
          'data' => 'userdel	1::inwork 5361,7423 5422,7461 5452,7493 5492,7543
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005778',
+         'until' => 1182110400,
+         'text' => 'Alt-Köpenick (Köpenick) in beiden Richtungen, sowie umgebende Straßen Veranstaltung, Straße vollständig gesperrt (bis 17.06.07 22:00 Uhr)',
+         'from' => 1181999685,
+         'id' => 1032,
+         'data' => 'userdel	2::temp 22263,4671 22138,4661 22111,4562 22093,4499
+userdel	2::temp 22111,4562 22162,4546
+userdel	2::temp 22196,4847 22138,4661
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005800',
+         'until' => 1184536799,
+         'text' => 'Kastanienallee (Prenzlauer Berg) in Richtung Danziger Str., ab Schwedter Str. Baustelle, Fahrtrichtung gesperrt bis 15.07. ',
+         'from' => 1182000409,
+         'id' => 1033,
+         'data' => 'userdel	1::inwork 10534,14460 10723,14772 10889,15045
+',
+         'type' => 'gesperrt'
        }
      
 );
