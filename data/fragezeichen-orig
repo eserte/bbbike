@@ -11,7 +11,7 @@
 Wintersteinstr.	? 3763,12279 3760,12336 3748,12472 3741,12607 3738,12639
 #: last_checked: 2007-05-30
 Wilhelmstr. (Kreuzberg)	? 9376,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
-Wisbyer Str.	? 12091,16209 12026,16247 11887,16320 11807,16340 11727,16358
+Wisbyer Str.	? 12091,16209 12026,16247 11887,16320 11828,16335 11807,16340 11727,16358
 Wisbyer Str.	?; 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 11448,16398 11397,16405 11289,16423 11033,16464
 #: by http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2004/1103/lokales/0030/ vvv
 # (alte URL http://www.berlinonline.de/berliner-zeitung/berlin/327989.html?2004-03-26 gilt nicht mehr)
@@ -130,8 +130,6 @@ Neue Straßen an der Rummelsburger Bucht: Name: Karl-Wilker-Straße. Qualität der 
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 #
-#: by: pelo1970@... (pitt) (Name wurde nicht eingetragen, nur supplied_strname vorhanden)
-Wendelsteinweg: guter Asphalt, Q0	? 9664,3404 9680,3369 9701,3357 9911,3310 10039,3281 10167,3257 10280,3232 10367,3214
 #: by: wosch
 #: by: Abendblatt (by rjoop)
 Unterführung unter der Stromstr. ab 2007-04-27 offen	? 6115,12934 6218,12975
@@ -237,8 +235,8 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet? in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
-#: by: Klaus Dieter Ritzmann
-Rue Nungesser et Coli: mäßiges Kopfsteinpflaster, Q2, enge Straße	? 3066,17833 3051,17879 3033,17903 3004,17917 2963,17917 2897,17902 2873,17867 2883,17801
+#: by: anonymous
+Kiefernring (Potsdam): guter Beton, Q0-, parkende Autos, q1	? -10519,-5173 -10618,-4998 -10685,-5022 -10740,-5048 -10770,-5062 -10862,-5108 -10836,-5170 -10795,-5257 -10773,-5294
 #: by: Jens-Michael Schau:
 Käthe-Kollwitz-Str., Hohen Neuendorf: schlechtes Kopfsteinpflaster, Q3	? 2177,29194 2225,29241 2288,29306 2344,29442 2353,29471 2318,29666 2314,29783 2320,29875
 #: by: anonymous:
@@ -729,8 +727,6 @@ Seebeck - Lindow: Qualität?	? -16100,58837 -16583,58871 -16962,58893 -16986,5905
 Herzberg - Vielitz - Seebeck: Qualität?	? -19761,54883 -18575,56837 -17050,58123 -16860,58002 -16719,58021 -16567,58036 -16307,58144 -15975,58403 -15950,58625 -16100,58837
 Bei Liebenwalde an der Havel: Qualität?	? 7037,51950 7107,52868 7817,53807 7918,54093
 Bei Mildenberg: Qualität?	? 2656,68100 1625,68308 1352,68079 1090,67347
-#: XXX ungenaue Angaben by anonymous:
-Am Hügel: mäßiger Belag?	? 4265,20799 4107,21059
 Theodor-Loos-Weg: Qualität?	? 15304,1724 15450,1768 15620,1764 15671,1923 15781,1928 15818,1834 15868,1790
 Görke - Bossin: Qualität?	? 54147,165600 54696,164496
 Stolpe - Bundesstraße: Qualität? Im Süden Fortsetzung des sandigen Feldweges	? 46756,164815 47022,165745 47304,167015 48544,167874
@@ -1398,7 +1394,7 @@ Oderfähre: ab 2007-06-30 in Betrieb	? 71524,40721 72361,41057
 Gerlindeweg: Qualität des Abschnitts zwischen Beatestr. und Friederikestr.?	? -1484,18545 -1517,18580 -1572,18673 -1642,18679
 Gerlindeweg: Qualität des Abschnitts zwischen Luisenstr. und Helgaweg?	? -1846,18778 -1907,18810 -2029,18822 -2102,18840
 #: note: ein anonymer Kommentar war nicht klar genug. Laut Luftbild scheinen Autofahrer nicht auf die Daumstr. fahren zu können
-Burscheider Weg: Qualität (möglicherweise gutes Kopfsteinpflaster)? Einbahnstraßenregelung: gibt es eine, wo und in welche Richtung?	? -1345,15060 -1322,15079 -934,15254 -862,15283 -741,15304
+Burscheider Weg: Qualität (möglicherweise gutes Kopfsteinpflaster)? Einbahnstraßenregelung: gibt es eine, wo und in welche Richtung?	? -1345,15060 -1322,15079 -934,15254 -862,15283 -740,15306
 Markomannenstr. - Preußenstr.: existiert eine für Radfahrer befahrbare Verbindung zwischen Markomannenstr. und Preußenstr.?	? 20700,1363 20711,1406
 Bootshausweg - An den Rohrbruchwiesen: Qualität des Weges? (wahrscheinlich asphaltiert?) für Autofahrer gesperrt?	? -1229,16773 -1316,16729 -1359,16737 -1421,16751 -1452,16728
 Am Flugplatz (Strausberg): Qualität?	? 44596,21287 44661,21139 44631,21051 44692,20886 44686,20822 44536,20408 44527,19890 44085,19049
@@ -1431,5 +1427,6 @@ Grieben - Vielitz: Qualität?	? -14966,56468 -15237,56681 -15453,56959 -15676,570
 Vielitz - B167: Qualität?	? -16206,57373 -16069,57172 -15773,56724 -15697,55703 -15581,55353 -15335,54980 -15127,54664
 #: note: ein anonymer Kommentar war nicht klar genug ("gute Qualität")
 Gerhart-Hauptmann-Str.: Qualität? (möglicherweise asphaltiert?)	? 22988,8952 23071,9151
-Sägebockweg: Qualität zwischen Str. 71 und Str. 73? (unbefestiger Weg?)	? 15799,22787 15850,22905
 Salzmannstr. - Betriebsbhf. Rummelsburg: existiert eine für Radfahrer befahrbare Verbindung? Qualität?	? 16847,10092 16828,10027 16841,9995 16811,9937
+#: note: ein anonymer Kommentar war nicht klar genug (Asphalt Q2, OK, aber warum q3?)
+Strindbergstr.: Qualität? (möglicherweise mäßiger Asphalt)	? 23962,13689 24119,13658 24298,13617

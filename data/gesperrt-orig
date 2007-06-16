@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.164 2007/06/15 20:59:38 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.164 2007/06/15 20:59:38 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -427,6 +427,8 @@ Kreuzstr.	1 9832,17925 9902,18180 9909,18333
 Vorbergstr.	1 7022,9211 7137,9216 7315,9156
 Wederstr.	1 12981,6366 12813,6334 12597,6293
 DGZ-Ring	1 12989,16921 12911,17021 12877,17039 12853,17024 12810,16994 12789,16977 12783,16925 12858,16825
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
+Riensbergstr.	1 -740,15306 -764,15480
 #
 # Potsdam
 #
@@ -600,7 +602,7 @@ Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9213,5187 9185,5
 Schönhauser Allee: U-Bahnviadukt	3nocross 10977,15944 10972,15895 10963,15789
 Schönhauser Allee: U-Bahnviadukt	3 10949,15674 10930,15522 11055,15504
 Berliner Str.: U-Bahnrampe	3nocross 10986,16897 10999,16830 11018,16730 11042,16605 11039,16553 11033,16464
-Wisbyer Str.: Straßenbahn	3nocross 11688,16365 11727,16358 11807,16340 11887,16320
+Wisbyer Str.: Straßenbahn	3nocross 11688,16365 11727,16358 11807,16340 11828,16335 11887,16320
 #: note: laut Kristina Nazarek ist die Wisbyer Str. in Höhe Talstr. überquerbar
 Wisbyer Str.: Straßenbahn	3nocross 11887,16320 12026,16247 12091,16209
 Wisbyer Str.: Straßenbahn	3nocross 11542,16384 11632,16373 11688,16365

@@ -4300,7 +4300,7 @@ EOF
        text  => 'Schulzendorfer Straße - Am Dachsbau (zwischen Ruppiner Chaussee und Blisenkrautstr.) in beiden Richtungen gesperrt, Baustelle bis 06.11.2006 15:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -915,22935 -1299,22842
+userdel	2::inwork -915,22935 -1103,22889 -1299,22842
 EOF
      },
      { from  => 1146701434, # 2006-05-04 02:10
@@ -8672,6 +8672,22 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 38357,51575 38111,51856
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX (reported by: thuki@...)
+       text  => 'Homburger Str.: Einbahnstraße wegen Baustelle zw. Laubacher Str. und Assmannshauser Str., Durchfahrt Richtung Westen möglich',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 4403,7498 4628,7470 4785,7438
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX (reported by: thuki@...)
+       text  => 'Sarrazinstr.: zurzeit Einbahnstraße (Elsastr. bis Bundesallee; Durchfahrt in dieser Richtung) wegen Baustelle',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 5361,7423 5422,7461 5452,7493 5492,7543
 EOF
      },
     );

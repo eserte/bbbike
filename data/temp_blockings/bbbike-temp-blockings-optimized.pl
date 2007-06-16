@@ -643,15 +643,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        undef,
-       {
-         'until' => 1181944800,
-         'text' => 'K 6419 Garzauer Str. zw. Strausberg, E.-Thälmann-Str. u. Eggersd.Weg (Umgehungs.) Deckenerneuerung Vollsperrung 07.05.2007-15.06.2007 ',
-         'from' => 1178402400,
-         'id' => 954,
-         'data' => 'userdel	2::inwork 40540,16584 40793,16343 41168,16281
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1191189600,
          'text' => 'L 029 Grüntal-B 2 Biesenthal OD Biesenthal Deckenerneuerung mit Entwäss. Vollsperrung 10.04.2007-30.09.2007 ',
@@ -727,15 +719,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1181944800,
-         'text' => 'L 038 zw. Treplin und Sieversdorf Sicherung Hohlräume Vollsperrung 04.06.2007-15.06.2007 ',
-         'from' => 1180821600,
-         'id' => 988,
-         'data' => 'userdel	2::inwork 77850,-706 78103,-165
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1182117600,
          'text' => 'K 6503 Wandlitzer Chaussee Bahnübergang in der OT Lubowsee Gleisbauarbeiten Vollsperrung 13.06.2007-17.06.2007 ',
@@ -756,15 +740,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1181944800,
-         'text' => 'K 6748 Kummersdorf-Alt Stahnsdorf Bahnübergang in Kummersdorf Gleisbauarbeiten Vollsperrung 01.06.2007-15.06.2007 ',
-         'from' => 1180562400,
-         'id' => 993,
-         'data' => 'userdel	2::inwork 43279,-13594 42804,-13910 42430,-14398
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1182549600,
@@ -998,6 +974,24 @@ userdel	2::temp 7037,10359 6730,10199 6719,10347
          'from' => 1182031200,
          'id' => 1029,
          'data' => 'userdel	2::inwork 38357,51575 38111,51856
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Homburger Str.: Einbahnstraße wegen Baustelle zw. Laubacher Str. und Assmannshauser Str., Durchfahrt Richtung Westen möglich',
+         'from' => undef,
+         'id' => 1030,
+         'data' => 'userdel	1::inwork 4403,7498 4628,7470 4785,7438
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Sarrazinstr.: zurzeit Einbahnstraße (Elsastr. bis Bundesallee; Durchfahrt in dieser Richtung) wegen Baustelle',
+         'from' => undef,
+         'id' => 1031,
+         'data' => 'userdel	1::inwork 5361,7423 5422,7461 5452,7493 5492,7543
 ',
          'type' => 'gesperrt'
        }
