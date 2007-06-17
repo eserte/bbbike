@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.47 2007/06/17 22:10:04 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.50 2007/06/17 22:23:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -27,6 +27,7 @@ use lib (grep { -d }
 	);
 use CGI qw(:standard);
 use CGI::Carp;
+use File::Basename qw(dirname);
 use URI;
 use BBBikeCGIUtil qw();
 use BBBikeVar;
@@ -176,17 +177,21 @@ sub get_html {
 	 'bbbike.dyndns.org'  => "ABQIAAAAidl4U46XIm-bi0ECbPGe5hSLqR5A2UGypn5BXWnifa_ooUsHQRSCfjJjmO9rJsmHNGaXSFEFrCsW4A",
 	 # temporary
 	 'srand.de'	      => "ABQIAAAAJEpwLJEnjBq8azKO6edvZhSaoDeIPWe_eenmgYXVZinATdYRPhRaxtajxwqk10x-j6wAGQPTERtEEQ",
+	 'www.srand.de'	      => "ABQIAAAAJEpwLJEnjBq8azKO6edvZhQcuFdDaAeyxk8HEJsg2LO6FXA-0BSfij-GORz-Y3oODCTRrbrFTCsdpw",
 	 # Versehen, Host existiert nicht:
 	 'slaven1.bbbike.de'  => "ABQIAAAAidl4U46XIm-bi0ECbPGe5hRQAqip6zVbHiluFa7rPMSCpIxbfxQLz2YdzoN6O1jXFDkco3rJ_Ry2DA",
 	);
-    my $base = URI->new(BBBikeCGIUtil::my_url(CGI->new, -base => 1));
+    my $full = URI->new(BBBikeCGIUtil::my_url(CGI->new, -full => 1));
     my $fallback_host = "bbbike.radzeit.de";
-    my $host = eval { $base->host } || $fallback_host;
+    my $host = eval { $full->host } || $fallback_host;
     my $google_api_key = $google_api_keys{$host} || $google_api_keys{$fallback_host};
+    my $cgi_reldir = dirname($full->path);
 
     my $bbbikeroot = "/BBBike";
     if ($host eq 'bbbike.dyndns.org') {
 	$bbbikeroot = "/bbbike";
+    } elsif ($host =~ m{srand\.de}) {
+	$bbbikeroot = dirname(dirname($full->path));
     }
 
     my $html = <<EOF;
@@ -398,7 +403,7 @@ sub get_html {
 
     function searchRoute(startPoint, goalPoint) {
 	var requestLine =
-	    "http://@{[ $host ]}/cgi-bin/bbbike.cgi?startpolar=" + startPoint.x + "x" + startPoint.y + "&zielpolar=" + goalPoint.x + "x" + goalPoint.y + "&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&scope=;output_as=xml;referer=bbbikegooglemap";
+	    "@{[ $cgi_reldir ]}/bbbike.cgi?startpolar=" + startPoint.x + "x" + startPoint.y + "&zielpolar=" + goalPoint.x + "x" + goalPoint.y + "&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&scope=;output_as=xml;referer=bbbikegooglemap";
 	var routeRequest = GXmlHttp.create();
 	routeRequest.open("GET", requestLine, true);
 	routeRequest.onreadystatechange = function() {
@@ -592,7 +597,7 @@ EOF
       <p class="ftr">
        <a id="bbbikemail" href="mailto:$BBBike::EMAIL">E-Mail</a> |
        <a id="bbbikeurl" href="$BBBike::BBBIKE_DIRECT_WWW">BBBike</a> |
-       <a href="/cgi-bin/mapserver_address.cgi?usemap=googlemaps">Adresssuche</a>
+       <a href="@{[ $cgi_reldir ]}/mapserver_address.cgi?usemap=googlemaps">Adresssuche</a>
        | <a href="http://maps.google.com/maps?ll=52.515385,13.381004&amp;spn=0.146083,0.229288&amp;t=k">Google Maps</a>
       </p>
   </td>
