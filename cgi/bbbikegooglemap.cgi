@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.46 2007/05/29 20:47:01 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.47 2007/06/17 22:10:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -174,6 +174,8 @@ sub get_html {
 	 'bbbike.radzeit.de'  => "ABQIAAAAidl4U46XIm-bi0ECbPGe5hS6wT240HZyk82lqsABWbmUCmE0QhQkWx8v-NluR6PNjW3O3dGEjh16GA",
 	 'bbbike2.radzeit.de' => "ABQIAAAAJEpwLJEnjBq8azKO6edvZhTVOBsDIw_K6AwUqiwPnLrAK56XrRT9Hcfdh86z8Tt62SrscN1BOkEPUg",
 	 'bbbike.dyndns.org'  => "ABQIAAAAidl4U46XIm-bi0ECbPGe5hSLqR5A2UGypn5BXWnifa_ooUsHQRSCfjJjmO9rJsmHNGaXSFEFrCsW4A",
+	 # temporary
+	 'srand.de'	      => "ABQIAAAAJEpwLJEnjBq8azKO6edvZhSaoDeIPWe_eenmgYXVZinATdYRPhRaxtajxwqk10x-j6wAGQPTERtEEQ",
 	 # Versehen, Host existiert nicht:
 	 'slaven1.bbbike.de'  => "ABQIAAAAidl4U46XIm-bi0ECbPGe5hRQAqip6zVbHiluFa7rPMSCpIxbfxQLz2YdzoN6O1jXFDkco3rJ_Ry2DA",
 	);
