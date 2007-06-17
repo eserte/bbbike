@@ -1,6 +1,6 @@
 #: title.de: Abbiegevorschriften usw.
 #: title.en: Path instructions etc.
-#: version: $Id: comments_path-orig,v 4.80 2007/06/10 12:29:32 eserte Exp eserte $
+#: version: $Id: comments_path-orig,v 4.81 2007/06/17 21:46:57 eserte Exp $
 #:
 # Verwendete Kategorien:
 # CP;  : Kommentar an Punkt B bei Fahrt von A nach C; Bei entweder A oder C kann statt einer Koordinate 
@@ -223,8 +223,8 @@ Freundschaftsinsel - Potsdam Hbf: wegen der Tramtrasse zunächst auf dem Gehweg b
 Zum Barnimer Dörferweg: am Waidmannsluster Damm auf den Gehweg fahren, nicht auf die Radspur fahren (wegen eines nicht überwindbaren Geländers)	PI; 1858,20740 1828,20780 1799,20815 1716,20915 1819,21116
 Barnimer Dörferweg - Karolinenstr.: wegen des Geländers zunächst auf dem Gehweg fahren	CP; 1819,21116 1716,20915 1799,20815 1828,20780 1858,20740
 Tegeler Hafen: zweite Brücke zur Insel nehmen	CP; 1675,20392 1756,20405 1736,20441
-Clayallee - Flanaganstr.: Fußweg vor dem McDrive nehmen	CP; 1746,5922 1736,5850 1598,5718
-Flanaganstr. - Clayallee: Fußweg am McDrive nehmen, bis zur Ampel an der Königin-Luise-Str. den linken Gehweg benutzen	PI; 1598,5718 1736,5850 1746,5922
+Clayallee - Flanaganstr.: Fußweg vor dem McDrive nehmen	CP; 1746,5922 1736,5850 1596,5754
+Flanaganstr. - Clayallee: Fußweg am McDrive nehmen, bis zur Ampel an der Königin-Luise-Str. den linken Gehweg benutzen	PI; 1596,5754 1736,5850 1746,5922
 Zeppelinstr. - Helmholtzstr.: zum Überqueren der Edisonstr. Fußgängerampel benutzen	CP 17845,6986 17924,6967 18053,6920
 Mariendorfer Damm - Heinitzweg: bereits an der Buckower Chaussee die Straßenseite wechseln	PI; 10411,966 10363,1095 10329,1077
 Heinitzweg - Mariendorfer Damm: zunächst auf dem linken Gehweg/Radweg vorfahren	PI; 10329,1077 10363,1095 10315,1223
@@ -279,3 +279,5 @@ Klixstr. - Scharnweberstr.: zunächst den linken Gehweg bis zur Antonienstr. benu
 #: by: ^^^
 Falkenseer Chaussee - Darbystr.: bereits am Bahnübergang die Straßenseite wechseln	PI; -5609,15780 -5526,15757 -5505,15859
 Darbystr. - Falkenseer Chaussee: zunächst auf dem linken Gehweg bis zur Frankenwaldstr. vorfahren	CP; -5505,15859 -5526,15757 -5473,15742
+B1 - Ilsensteinweg: bereits an der Ampel Spanische Allee die Gehwegseite wechseln	CP; -1651,2415 -1622,2426 -1724,2743
+Ilsensteinweg - B1: ggfs. die Ampel an der Spanischen Allee zur rechten Hand zum Überqueren der Straße benutzen	CP; -1724,2743 -1622,2426 -1248,2574

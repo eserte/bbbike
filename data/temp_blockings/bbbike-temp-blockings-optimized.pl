@@ -882,16 +882,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005786',
-         'until' => 1182117600,
-         'text' => 'Dörpfeldstr. (Adlershof) in beiden Richtungen bei Adlergestell Baustelle, Straße vollständig gesperrt (bis 17.06.2007)',
-         'from' => 1181768451,
-         'id' => 1020,
-         'data' => 'userdel	2::inwork 20012,3532 19892,3454
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_005532',
          'until' => 1185919199,
@@ -902,15 +893,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1182031200,
-         'text' => 'L 070 zw. Proßmarke und Hohenbucko Deckenerneuerung Vollsperrung 15.06.2007-16.06.2007 ',
-         'from' => 1181772000,
-         'id' => 1022,
-         'data' => 'userdel	2::inwork 16701,-71358 17029,-71672 17461,-72373 17827,-72696 17998,-73555
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1188856800,
          'text' => 'L 074 Am Markt OD Teupitz 700-Jahr-Feier Vollsperrung 31.08.2007-03.09.2007 ',
@@ -995,18 +978,7 @@ userdel	2::temp 7037,10359 6730,10199 6719,10347
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005778',
-         'until' => 1182110400,
-         'text' => 'Alt-Köpenick (Köpenick) in beiden Richtungen, sowie umgebende Straßen Veranstaltung, Straße vollständig gesperrt (bis 17.06.07 22:00 Uhr)',
-         'from' => 1181999685,
-         'id' => 1032,
-         'data' => 'userdel	2::temp 22263,4671 22138,4661 22111,4562 22093,4499
-userdel	2::temp 22111,4562 22162,4546
-userdel	2::temp 22196,4847 22138,4661
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_005800',
          'until' => 1184536799,

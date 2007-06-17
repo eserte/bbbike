@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.144 2007/05/31 20:08:17 eserte Exp eserte $
+#: version: $Id: handicap_s-orig,v 4.145 2007/06/17 21:46:06 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # XXX hier br‰uchte man keine zus‰tzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -365,6 +365,9 @@ Viktoriapark: Fuﬂg‰nger, kurze Rampe	q1 5013,6003 4981,5939 4957,5894
 Teltowkanalpromenade: eng, nicht anh‰ngertauglich	q2 2079,-12 1924,-188 1593,-317 1471,-311
 (Wohnanlage Friedastr.): Fuﬂg‰nger, Bordsteine	q3 16887,11545 16759,11582
 (Eitelstr. - Bahnhof Lichtenberg): Fuﬂg‰nger	q3 16727,11611 16766,11603
+Bennigsenstr.: enge Straﬂe	q1 5807,7771 5957,7765 6225,7776
+Perelsplatz: Fuﬂg‰nger, Park	q2 5809,7712 5636,7709
+Gustav-Rickelt-Weg: eng, Fuﬂg‰nger	q2 4226,6712 4223,6796 4206,6820
 ######################### User Contributions #################################
 #: by: Petra (ploewe...):
 An der Heilandsweide: Fuﬂg‰nger	q1 8203,1194 8305,1148 8539,1025 8687,950
@@ -929,8 +932,10 @@ Glauberstr.: viele parkende Autos, daher eng	q1 5556,984 5455,1150 5421,1205 541
 Mittelheide: enge Straﬂe	q1 22724,6608 22858,6535 23033,6511 23135,6500 23220,6520 23299,6541 23375,6579 23482,6649 23593,6663
 #: by: Steffen Ryll:
 Platanenstr.: teilweise recht eng	q1 9355,19789 9489,19826 9840,19923 10137,19993
-#: by: Michael Dinter:
+#: by: Michael Dinter: vvv
 Senegalstr.: enge Straﬂe	q1 5961,15562 5906,15623 5848,15685 5787,15741 5722,15795
+Tangastr.: enge Straﬂe	q1 6133,15680 5961,15562
+#: by: ^^^
 #: by: Klaus Dieter Ritzmann: vvv
 Rue Nungesser et Coli: enge Straﬂe	q1 3066,17833 3051,17879 3033,17903 3004,17917 2963,17917 2897,17902 2873,17867 2883,17801
 Rue Henri Guillaumet: enge Straﬂe	q1 3004,17917 3005,17950 2972,18068
@@ -942,3 +947,7 @@ Rue Marin la MeslÈe: enge Straﬂe	q1 3213,17858 3123,17923
 #: by: Enke (berndenke):
 #: note: Wohngebietsstraﬂe, wird von Kfz nur zum Ein- und Ausladen befahren
 Max-Koska-Str.: Fuﬂg‰nger	q2 11828,16335 11846,16438 11844,16483
+#: by: Axel Stojenthin:
+Schulzendorfer Str.: Gehweg	q2 -2176,22789 -2263,22748 -2348,22704 -2377,22689 -2504,22626
+#: by: Holger Schulze:
+William-H.-Tunner-Str.: enge Straﬂe	q0 2375,1037 2336,1111 2163,1499

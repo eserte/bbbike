@@ -8590,7 +8590,7 @@ userdel	2::inwork 99176,-43536 99245,-43974 99228,-44346
 EOF
      },
      { from  => 1181768451, # 2007-06-13 23:00
-       until => 1182117600, # 2007-06-18 00:00
+       until => 1182116704, # 2007-06-18 00:00 1182117600
        text  => 'Dörpfeldstr. (Adlershof) in beiden Richtungen bei Adlergestell Baustelle, Straße vollständig gesperrt (bis 17.06.2007)',
        type  => 'gesperrt',
        source_id => 'IM_005786',
