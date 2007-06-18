@@ -191,7 +191,6 @@ Alternative	? 24081,50440 24472,50937
 Popitzweg: Fußgängerzone?	? 1361,14431 1897,14408
 #: last_checked: 2005-08
 R1 im Raum Spindlersfeld: alternative Wegführung?	? 21364,5435 21443,5406 21487,5425 21600,5221 21684,5079 21735,5003 21779,4957 21821,4918 21845,4875 21896,4853 21796,4517
-McNair-Promenade: genaue Wegführung (weiter nördlich, oder hier)? wo weschseln sich NN und N-Abschnitte ab? Wie ist die Qualität, die ADFC-Karte sagt "schlecht geeignet"?	? 2163,1499 1975,1413 1882,1376 1785,1338
 Pappelstr. -> Kastanienallee: hier verliert man durchaus 2 1/2 Minuten bei der Überquerung der Schönhauser!	? 11119,15385 10889,15045 10723,14772
 #: by: http://www.agenda21berlin.de/vonwegen/map_tmpvelo.htm vvv
 Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 8934,5095 9025,4871
@@ -235,6 +234,8 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet? in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: sandra (dries):
+Tongrubenweg: guter Asphalt, Q0, enge Fahrbahn, q1	? 28493,2315 28415,2233 28308,2120 28278,2068 28257,1991 28241,1857 28205,1630
 #: by: anonymous
 Kiefernring (Potsdam): guter Beton, Q0-, parkende Autos, q1	? -10519,-5173 -10618,-4998 -10685,-5022 -10740,-5048 -10770,-5062 -10862,-5108 -10836,-5170 -10795,-5257 -10773,-5294
 #: by: Jens-Michael Schau:
@@ -371,7 +372,7 @@ Fortsetzung der Wolziger Zeile bis zur B101: Qualität? Kann die B101 gequert wer
 Mauerweg zwischen Drusenheimer Weg und Buckower Damm: existiert eine Strecke, wie ist die Qualität? Vielleicht geht es auch weiter Richtung Rudow? (laut "Berliner Umland" witterungsabhängige Strecke)	? 11794,550 11924,594 12519,794 12984,1011
 Mauerweg Rudow: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 14996,1564 15272,778 15403,416 15621,-193 15118,-970
 Mauerweg Rudow: Qualität (laut "Berliner Umland" gut geeigneter Radweg)?	? 18127,-367 18609,375 18668,1021 18610,1077
-Mauerweg Rudow: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 18677,1249 18614,1453 18584,1575 18484,1750 18365,1914 18378,2246
+Mauerweg Rudow: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 18677,1249 18614,1453 18584,1575 18484,1750 18425,1831 18365,1914 18378,2246
 Grüner Weg in Marienfelde: Qualität? laut ADFC-Karte gut befahrbar	? 7781,-182 7633,-20 7491,61 7235,205 7032,533 7040,686 7058,844
 Märchenweg/Rübezahlweg: Qualität?	? 14288,19459 14248,19370 14044,19502 13297,19987
 # ansonsten gleiche Wegbeschaffenheit wie der kreuzende Weg:
@@ -457,7 +458,7 @@ Neue Trasse der B167: für Radfahrer benutzbar? Alte Trasse nicht mehr Bundesstra
 Neue Trasse der B167: für Radfahrer benutzbar? Alte Trasse nicht mehr Bundesstraße, sondern K6436?	? 58206,37275 58206,37675 58225,37959 58087,38231 57734,38743 57612,39937 57403,40340 56862,40818 56659,41179 56381,41675 56087,41956 55506,42350 54895,43268 54515,43803 53987,44157 53425,44300 53187,44262 52400,43239
 Wendisch-Rietz - Radlow: Qualität?	? 54370,-20977 55509,-18644
 Lianenweg: Qualität? Durchfahrt möglich?	? 19686,1542 19955,1509
-Cimbernstr.: Qualität?	? 19843,1375 19907,1404 19981,1397 20196,1325 20517,1209
+Cimbernstr.: Qualität?	? 19843,1375 19907,1404 19981,1397 20196,1325 20318,1281 20517,1209
 Freiheitstr., Wildau: Qualität?	? 25187,-8934 25875,-8746 26568,-8593 26755,-8553
 Str. der Freiheit, Zeuthen: Qualität?	? 25281,-6921 25981,-7196
 Westkorso, Zeuthen: Qualität?	? 25981,-7196 26244,-7147 26581,-7087
@@ -658,7 +659,9 @@ Beenz - Kröchlendorff: Qualität? (zumindest die Kröchlendorffer Seite ist asphal
 Lindenhagen - Beenz: Qualität?	? 32388,94460 31922,94902 31069,95292 30850,95280 30510,95193 30216,94987
 Teltow Richtung Süden: Qualität? Straßennamen?	? 3377,-366 3589,-673 3615,-757 3781,-889 3970,-918 3765,-1732 3750,-2087
 Teltow Richtung Süden (Bahnstr., Flugplatzstr.): Qualität? Wie geht es weiter?	? 3494,-1950 3417,-2460 3310,-3001 3092,-3093
-An der Werderlake, Glashütter Weg, Rudower Höhe: Qualität?	? 18205,1808 18262,1734 18204,1704 18404,1376 18614,1453
+An der Werderlake: Qualität?	? 18205,1808 18266,1715
+Glashütter Weg: Qualität?	? 18121,1614 18219,1680 18266,1715 18425,1831
+Rudower Höhe: Qualität?	? 18219,1680 18404,1376 18614,1453
 Erxlebenstr.: Qualität?	? 19726,-32 19626,367
 Mohnweg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 19471,448 19626,367 19728,364 19823,357 20035,348 20098,359 20214,375 20267,375
 Porzer Str.: Qualität? Laut ADFC-Karte Radwege, stimmt das? Sind die Radwege benutzungspflichtig?	? 19774,-231 20010,-35 20323,243 20606,300
@@ -1147,7 +1150,6 @@ Saalburgstr./Cafeastr.: Qualität (wahrscheinlich Kopfsteinpflaster, zumindestens
 #Dorfstr. (Malchow): seit November 2005 Bauarbeiten für neuen Radweg, bereits fertig?	? 15606,19839 15656,19946 15686,20100 15778,20350 15900,20531 16025,20631
 #: XXX: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0506/nachricht1941.html
 Rad- und Fußwegverbindung zwischen Wuhle und Hönow durch Hellersdorf: genauer Verlauf? Qualität? bereits komplett fertiggestellt?	? 22579,15416 26112,15382
-Haberstr.: Qualität (möglicherweise gute Betonstr.?)?	? 14366,6337 14564,6496 14720,6664
 Niederlehme Anschlussstelle - Niederlehme: Qualität (wahrscheinlich Asphalt)? Radweg?	? 28485,-10143 28272,-10277 28168,-10289 27949,-10283 27906,-10191 27827,-10082 27535,-10033
 Fürstenwalder Str. (Zernsdorf): Qualität?	? 27966,-11585 28150,-11380 28235,-11227 28388,-11093 28839,-10831 29192,-10630
 Am Möllenberg (Zernsdorf): Qualität?	? 27949,-10283 28016,-10429 28241,-10904 28388,-11093
@@ -1435,3 +1437,7 @@ Hönower Wiesenweg: Qualität? Teile für den Autoverkehr gesperrt? Teile komplett 
 Kraatzgraben/Kleingärten: besteht hier ein befahrbarer Weg für Radfahrer? Qualität?	? 16839,10064 16666,10219 16464,10467 16297,10636 16246,10641 16187,10587
 Dubrowplatz: Qualität (wahrscheinlich schlechtes Kopfsteinpflaster)? Hat der Dubrowplatz auch eine nördliche Fahrbahn?	? -1945,2975 -1814,3021
 Ilsensteinweg: Qualität?	? -1885,3319 -1899,3298 -1819,3042 -1814,3021 -1724,2743 -1622,2426
+McNair-Promenade: Wie ist die Qualität, die ADFC-Karte meint "schlecht geeignet"?	? 2163,1499 1975,1413 1882,1376 1785,1338
+#: note: unvollständiger anonymer Kommentar:
+Adele-Sandrock-Str.: Qualität der Straße (betoniert, asphaltiert oder etwas anderes)?	? 25172,14384 25018,14466 25006,14483 24981,14550 24951,14649 24937,14693 24939,14715 24963,14760 24989,14783 25080,14812 25103,14838
+Benatzkyweg - Glashütter Weg: Qualität (Parkweg/wassergebundene Decke)?	? 17902,1517 17969,1521 18021,1552 18121,1614

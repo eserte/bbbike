@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Cat.pm,v 1.7 2007/05/05 22:38:42 eserte Exp $
+# $Id: Cat.pm,v 1.8 2007/06/18 20:57:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 use File::Basename qw(basename);
 
@@ -42,7 +42,7 @@ use vars qw(%filetype_to_cat %file_to_cat);
      "sehenswuerdigkeit" => [qw(F:SW SW),
 			     sub {
 				 my $anchor  = qr{\|ANCHOR:[news]};
-				 my $img     = qr{IMG:.*gif($anchor)?};
+				 my $img     = qr{IMG:.*(?:gif|png)($anchor)?};
 				 /^((F:)?SW(\|$img)?|($img)?)$/
 			     },
 			    ],

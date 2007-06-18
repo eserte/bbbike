@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.32 2007/04/15 22:16:47 eserte Exp $
+# $Id: plz.t,v 1.33 2007/06/18 21:06:26 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004,2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2006,2007 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -61,7 +61,7 @@ my @approx_tests = (
 		    # Ku'damm => Kurfürstendamm, fails, maybe an extra rule?
 		   );
 		    
-plan tests => 148 + scalar(@approx_tests)*4;
+plan tests => 152 + scalar(@approx_tests)*4;
 
 my $tmpdir = "$FindBin::RealBin/tmp/plz";
 my $create;
@@ -497,6 +497,14 @@ for my $noextern (@extern_order) {
 		      "Herzbergstr.",
 		     ) {
 	    ok((grep { $_->[PLZ::LOOK_NAME] eq $test } @res), "grep-substr: Matched $test");
+	}
+
+	for my $test (
+		      "S-Bhf. Potsdam Hauptbahnhof",
+		      "S-Bhf. Griebnitzsee",
+		     ) {
+	    @res = $plz_multi->look($test);
+	    like($res[0][0], qr{$test}i, "S-Bhf. in Potsdam ($test)");
 	}
 
 	# Check also for an agrep trap: comma is a special boolean operator

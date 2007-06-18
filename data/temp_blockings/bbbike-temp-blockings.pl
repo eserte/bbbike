@@ -3509,7 +3509,7 @@ EOF
        text  => 'Säntisstraße zwischen Daimlerstraße und Nahmitzer Damm Bahnübergang gesperrt bzw. halbseitig gesperrt, Dauer: 17.12.05 04:00 Uhr bis 20.12.05 20:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9024,906 9241,1073
+userdel	2 9024,906 9165,1014 9241,1073
 EOF
      },
      { from  => 1136070000, # 2006-01-01 00:00
@@ -3662,7 +3662,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 8957,852 9024,906
-userdel	2 9241,1073 9024,906
+userdel	2 9241,1073 9165,1014 9024,906
 EOF
      },
      { from  => 1140303600, # 2006-02-19 00:00
@@ -7760,7 +7760,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005211',
        data  => <<EOF,
-userdel	2::inwork 9695,1563 9241,1073 9024,906
+userdel	2::inwork 9695,1563 9241,1073 9165,1014 9024,906
 EOF
      },
      { from  => 1176674400, # 2007-04-16 00:00

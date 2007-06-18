@@ -1,5 +1,5 @@
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.201 2007/06/17 21:46:12 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.201 2007/06/17 21:46:12 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -1867,6 +1867,8 @@ Eulerstr.: Asphalt	Q0 9268,16228 9336,16302 9498,16480
 Boizenburger Str.: guter Asphalt	Q0 22310,12829 22310,12637 22309,12350 22385,12268
 ######################################################################
 #: by: anonymous vvv
+Moosdorfstr.: Asphalt	Q0 14305,9213 14382,9299
+Horchheimer Weg: mäßiges Kopfsteinpflaster	Q2 27836,286 27949,182 27970,164
 Am Hügel: mäßiger Beton	Q2+ 4265,20799 4107,21059
 Schauflerpfad: mäßiges Kopfsteinpflaster	Q2 -716,21284 -734,21360 -796,21375 -865,21361 -1128,21421 -1218,21436
 Ludwigsluster Str.: guter Beton	Q0- 22746,13071 22775,12984 22790,12937 22868,12899 22896,12827 22906,12766 22906,12707 22891,12673 22780,12567 22688,12489 22614,12425 22568,12408 22472,12343 22385,12268 22292,12198
@@ -1947,7 +1949,7 @@ Gembitzer Str.: guter Asphalt	Q0 16815,16214 16889,16378 16948,16482 17059,16560
 #: note: der Eintrag hat explizit nur den Abschnitt Alt-Lankwitz - Kamenzer Damm erwähnt. Laut ADFC-Karte ist die gesamte Strecke "gut geeignet":
 Wedellstr.: Asphalt	Q0 7520,2564 7489,2787 7498,2845 7528,2964 7500,3081 7463,3182 7472,3308 7481,3334 7501,3432
 Schöningstr.: guter Asphalt	Q0 6110,16630 6157,16684 6281,16841
-Klaustaler Str.: mäßiger Asphalt	Q1 11309,19267 11351,19169 11384,19067 11439,18890 11465,18811 11488,18743 11464,18732 11501,18648
+Klaustaler Str.: mäßiger Asphalt	Q1 11309,19267 11351,19169 11384,19067 11439,18890 11465,18811 11483,18753 11462,18743 11501,18648
 Köhlerstr.: gutes Kopfsteinpflaster	Q1 2765,3184 2832,3372 2890,3561 2962,3827
 Trachtenbrodtstr.: Asphalt	Q0 12158,15556 12236,15701 12311,15828
 #: note: laut ADFC-Karte teilweise gut und mäßig
@@ -2294,7 +2296,7 @@ Käthe-Niederkirchner-Str.: schlechtes Kopfsteinpflaster	Q3 12403,13755 12379,137
 Haubachstr.: Asphalt	Q0 3304,12053 3384,12060 3507,12076 3643,12092 3782,12104
 #: by: ^^^
 #: by: Benno Koch: vvv
-Hoyerswerdaer Str.: Beton	Q0 25040,14991 25181,15028 25292,14981 25312,14910
+Hoyerswerdaer Str.: Beton	Q0 25045,14946 25181,15028 25292,14981 25312,14910
 #: by: ^^^
 #: by: Roy vvv
 Rotkamp: gute Betonstraße	Q0 17768,17688 17650,17605 17474,17478 17358,17400
@@ -4223,7 +4225,7 @@ Sophie-Taeuber-Arp-Weg: Asphalt	Q0 3302,2471 3293,2218
 Mosischstr.: Kopfsteinpflaster	Q2 15919,6992 16089,7041 16156,7061
 #: by: holrit:
 #: note: laut ADFC-Karte mäßig geeignet, wahrscheinlich wegen stärkeren Verkehrs?
-Germanenstr.: Asphalt	Q0 19955,1509 20387,1359 20543,1284 20653,1211 20696,1134 20836,982 20960,819 21089,639 21164,476
+Germanenstr.: Asphalt	Q0 19955,1509 20365,1393 20543,1284 20653,1211 20696,1134 20836,982 20960,819 21089,639 21164,476
 #: by: Jens (buchmann): vvv
 Königstr.: guter Asphalt	Q0 8418,4432 8569,4459 8868,4498
 Bogotastr.: schlechtes Kopfsteinpflaster	Q3 -1261,3422 -1319,3517 -1340,3602 -1348,3676 -1366,3747 -1394,3798 -1409,3834
@@ -5014,6 +5016,22 @@ Eitel-Fritz-Str.: schlechtes Kopfsteinpflaster	Q3 -1710,3319 -1633,3104 -1575,29
 César-Franck-Str.: Asphalt	Q0 8344,20548 8351,20492 8359,20449 8372,20411 8400,20339 8458,20201
 #: by: Holger Schulze:
 William-H.-Tunner-Str.: Asphalt	Q0 2375,1037 2336,1111 2163,1499
+#: by: Heike Anders:
+Wilkestr.: mäßiges Kopfsteinpflaster	Q2 1457,20159 1445,20219 1425,20301
+#: by: connie (koven):
+Harzgeroder Str.: guter Asphalt	Q0 11397,18720 11462,18743
+#: by: Frank Vopel:
+Frankenstr. (Altglienicke): schlechtes Kopfsteinpflaster	Q3 20262,1072 20295,1200 20318,1281 20365,1393
+#: by: Angelika (feer):
+#: XXX oder ist es vielleicht doch Beton, wie die restlichen Straßen in der Gegend?
+Haberstr.: asphaltiert	Q0 14366,6337 14564,6496 14720,6664
+#: by: stefan (L_Berlin):
+Mauserstr.: guter Beton	Q0 9165,1014 9139,1043 9218,1226 9314,1451 9420,1700
+#: by: KF Kempowski:
+Benatzkyweg: Asphalt	Q0 17605,1429 17730,1464 17902,1517
+#: by: Bieletzke (d):
+#: XXX: auf Luftbildern sieht die Qualität der Straße arg unterschiedlich aus:
+Theodorstr. (Mahlsdorf): mäßiger Beton	Q1- 24916,10539 24917,10697 24928,10731 24926,10758 24899,11017 24897,11083 24900,11156 24907,11186 24890,11268
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
@@ -6284,7 +6302,7 @@ Aalemannufer: Asphalt	Q0 -1989,18378 -2053,18375 -2535,18391 -2678,18396 -2759,1
 #: by: anonymous [AM] vvv
 Westendstr.: Asphalt	Q1 21389,4635 21371,4437
 Theodor-Francke-Str.: Beton	Q1 9221,6179 9328,6164
-Am Tegeler Hafen: Asphalt	Q0 1968,20417 1708,20314 1468,20223
+Am Tegeler Hafen: Asphalt	Q0 1968,20417 1708,20314 1445,20219
 Ibsenstr.: Kopfsteinpflaster	Q1 10209,16674 10295,16667 10382,16661 10549,16650 10632,16644 10774,16634
 Schützenstr. (Mariendorf): Asphalt	Q0 8581,4342 8569,4459 8561,4535 8546,4629
 Hanns-Eisler-Str.: Asphalt	Q1 12993,15275 13043,15353 12989,15390 12984,15417 13035,15501 13065,15514 13151,15462 13240,15408 13365,15325 13504,15235 13476,15178 13614,15095 13550,14973 13596,14934 13649,14899

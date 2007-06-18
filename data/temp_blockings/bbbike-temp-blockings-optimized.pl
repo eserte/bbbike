@@ -442,15 +442,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        undef,
-       {
-         'until' => 1182117600,
-         'text' => 'L 023 Britz-Joachimsthal zw. AS Chorin und Britz Deckenerneuerung Vollsperrung 26.03.2007-17.06.2007 ',
-         'from' => 1174773600,
-         'id' => 890,
-         'data' => 'userdel	2::inwork 35962,59463 35809,59122 35755,58845 35950,58308 36151,57931 36230,57632 36686,57106 36621,56807
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -720,15 +712,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        },
        undef,
        undef,
-       {
-         'until' => 1182117600,
-         'text' => 'K 6503 Wandlitzer Chaussee Bahnübergang in der OT Lubowsee Gleisbauarbeiten Vollsperrung 13.06.2007-17.06.2007 ',
-         'from' => 1181599200,
-         'id' => 989,
-         'data' => 'userdel	2::inwork 9067,36377 9439,36963 10209,37661
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
