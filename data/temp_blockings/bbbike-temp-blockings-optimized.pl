@@ -674,8 +674,8 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'type' => 'handicap'
        },
        {
-         'until' => 1183240800,
-         'text' => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf grundhafter Straßenausbau halbs., Vollsp. 11.07.2006-30.06.2007 ',
+         'until' => 1188511200,
+         'text' => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf grundhafter Straßenausbau Vollsperrung 11.07.2006-30.08.2007 ',
          'from' => 1152482400,
          'id' => 975,
          'data' => 'userdel	q4::inwork 7981,-7165 7558,-7093
@@ -972,6 +972,80 @@ userdel	2::temp 7037,10359 6730,10199 6719,10347
          'data' => 'userdel	1::inwork 10534,14460 10723,14772 10889,15045
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005823',
+         'until' => undef,
+         'text' => 'Drakestr. (Lichterfelde) in beiden Richtungen, zwischen Curtiusstr. und Unter den Eichen Fahrbahnunterspülung, Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1034,
+         'data' => 'userdel	2::inwork 3048,4305 3128,4190 3259,4002
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005810',
+         'until' => undef,
+         'text' => 'Fürstenbrunner Weg (Charlottenburg) in beiden Richtungen, zwischen Spandauer Damm und Rohrdamm Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1035,
+         'data' => 'userdel	2::inwork 1971,12368 1935,12761 1901,13061
+userdel	2::inwork 1858,13231 1610,13380 1545,13418
+userdel	2::inwork 929,14261 990,14062 1053,13790 1124,13599
+userdel	2::inwork 1159,13541 1193,13485 1488,13454
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005809',
+         'until' => undef,
+         'text' => 'Hauptstr. (Blankenfelde) in beiden Richtungen, zwischen Berliner Str. und Möllersfelder Weg Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1036,
+         'data' => 'userdel	2::inwork 9812,23983 9774,23936 9625,23781 9425,23693 9228,23643
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005827',
+         'until' => undef,
+         'text' => 'Hüttenweg (Zehlendorf) in beiden Richtungen zwischen Clayallee und Onkel-Tom-Str. Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1037,
+         'data' => 'userdel	2::inwork 297,6541 441,6435
+userdel	2::inwork 1535,5155 1506,5169 1399,5208 1361,5228 1212,5353 1086,5491 1051,5525 990,5581 910,5654 894,5829 884,5974 869,6085 736,6217
+userdel	2::inwork 486,6404 605,6345
+userdel	2::inwork -130,6694 218,6571
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005812',
+         'until' => 1183327200,
+         'text' => 'Invalidenstr. (Mitte) in Richtung Brunnenstr., zwischen Ackerstr und Brunnenstr. Baustelle, Fahrtrichtung gesperrt (bis 01.07.07)',
+         'from' => 1182201647,
+         'id' => 1038,
+         'data' => 'userdel	1::inwork 9810,14066 9937,14080 10003,14088
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1183413600,
+         'text' => 'B 087 Luckau-Herzberg OD Schlieben, zw. Horstweg u. Am Mühlberg Moienmarkt Vollsperrung 26.06.2007-02.07.2007 ',
+         'from' => 1182722400,
+         'id' => 1039,
+         'data' => 'userdel	q4::temp 10891,-76066 11354,-75979
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1198191600,
+         'text' => 'L 235 Gielsdorf-Werneuchen OD Werneuchen Straßenausbau Vollsperrung 29.08.2007-20.12.2007 ',
+         'from' => 1188252000,
+         'id' => 1040,
+         'data' => 'userdel	q4::inwork 32766,25156 33511,24201
+',
+         'type' => 'handicap'
        }
      
 );
