@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.314 2007/06/10 18:52:59 eserte Exp eserte $
+# $Id: bbbike,v 3.316 2007/06/19 20:38:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -208,7 +208,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.314 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.316 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -10349,6 +10349,7 @@ sub choose_ort {
 	    my %orte;
 	    my @orte;
 	    my $object;
+	    my $conv;
 	    my $title = $attrib ? $attrib->[ATTRIB_PLURAL] : undef;
 	    if ($type eq 'p') {
 		my @haltestellen;
@@ -10454,6 +10455,8 @@ sub choose_ort {
 		    }
 		}
 	    }
+
+	    $conv = $object && $object->get_conversion;
 
 	    my $Listbox = "Listbox";
 	    if ($splitter) {
@@ -10683,18 +10686,20 @@ sub choose_ort {
 		}
 		my $tcoords = [];
 		$args{'-type'} = $type;
-		if ($type eq 'o') {
-		    my($x,$y) = split /,/, _get_orte_obj()->get($index)->[Strassen::COORDS]->[0];
-		    $tcoords->[0][0] = [ transpose($x, $y) ];
-		} elsif ($type eq 'p') {
-		    $tcoords->[0][0] = [ transpose($koord->get($index)) ];
+		if ($type eq 'o' || $type eq 'p') { # XXX is 'p' OK here?
+		    my $p = $object->get($index)->[Strassen::COORDS]->[0];
+		    $p = $conv->($p) if $conv;
+		    $tcoords->[0][0] = [ transpose(split /,/, $p) ];
 		} else {
 		    my @i = split(/,/, $index);
 		    my $i;
 		    foreach $i (@i) {
 			my $r = $object->get($i);
-			push @{$tcoords},
-			[ transpose_all(@{Strassen::to_koord($r->[Strassen::COORDS])}) ];
+			my @c = @{ $r->[Strassen::COORDS] };
+			if ($conv) {
+			    @c = map { $conv->($_) } @c;
+			}
+			push @{$tcoords}, [ transpose_all(@{ Strassen::to_koord(\@c) }) ];
 		    }
 		    if ($linetype =~ /^p/) {
 			$args{'-width'} = 20;

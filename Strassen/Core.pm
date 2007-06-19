@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.76 2007/06/10 18:24:03 eserte Exp $
+# $Id: Core.pm,v 1.77 2007/06/19 20:37:52 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.76 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.77 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -106,6 +106,10 @@ sub new {
 	    } else {
 		require Strassen::FromRoute;
 		return Strassen::FromRoute->new($filename, %args);
+	    }
+	} elsif ($filename =~ /\.kml$/i) {
+	    if (eval { require Strassen::KML; 1 }) {
+		return Strassen::KML->new($filename, %args);
 	    }
 	} elsif ($filename =~ /\.xml$/ && eval { require Strassen::Touratech; 1 }) {
 	    # XXX Maybe really check for touratech files

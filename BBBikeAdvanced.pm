@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.181 2007/06/10 05:55:18 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.182 2007/06/19 20:41:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2474,8 +2474,7 @@ sub buttonpoint {
 	$current = 'current' if !defined $current;
 	my(@tags) = $c->gettags($current);
 	return if !@tags || !defined $tags[0];
-	if ($tags[0] eq 'p'    ||
-	    $tags[0] eq 'o'    ||
+	if ($tags[0] eq 'o'    ||
 	    $tags[0] eq 'pp'   ||
 	    $tags[0] =~ /^lsa/ ||
 	    $tags[0] =~ /^L\d+/||
@@ -2484,21 +2483,8 @@ sub buttonpoint {
 	   ) {
 	    my($tag, $s);
 	    $tag = $tags[1];
-	    if ($tags[0] eq 'p') {
-		my($cx, $cy) = $koord->get($tag);
-		($rx,$ry) = ($cx,$cy);
-		my($x, $y) = $coord_output_sub->($cx, $cy);
-		$s = prepare_selection_line
-		    (-name => substr(Strassen::strip_bezirk($names[$tag]),
-				     0, 40),
-		     -coord1 => Route::_coord_as_string([$cx,$cy]),
-		     -coord2 => Route::_coord_as_string([$x,$y]),
-		     -tag => $tag);
-		push(@inslauf_selection, $tag);
-		$c->clipboardAppend(" $tag") if $use_clipboard;
-		push_ext_selection($s);
-	    } elsif ($tags[0] eq 'pp' || $tags[0] =~ /^lsa/ ||
-		     $tags[0] =~ /^L\d+/) {
+	    if ($tags[0] eq 'pp' || $tags[0] =~ /^lsa/ ||
+		$tags[0] =~ /^L\d+/) {
 		my $use_prefix = 1;
 		($rx,$ry) = @{Strassen::to_koord1($tags[1])};
 		my($x, $y) = $coord_output_sub->($rx,$ry);
@@ -2640,65 +2626,6 @@ sub show_coord_list {
        -command => sub { $coordlist_top->destroy },
       )->pack;
     $coordlist_top->Popup(@popup_style);
-}
-
-######################################################################
-#
-# Zusätzliche Zeichenfunktionen
-#
-
-# Zeichnet Haltestellen-Informationen aus der Hafas-Datenbank.
-# Funktioniert nur für ältere Daten.
-# Fraglich, ob diese Funktion noch benötigt wird...
-### AutoLoad Sub
-sub ploths {
-    status_message("");
-
-    $c->delete("p");		# evtl. alte Koordinaten löschen
-    if (!$p_draw{'p'}) {
-	return;
-    }
-
-    my $anzahl_eindeutig;
-    eval {
-	require Fahrinfo;
-	my $eh = tie @names, 'Fahrinfo::Eind_haltestellen';
-	if (!$koord) {
-	    $koord = new Fahrinfo::Koord $eh;
-	}
-	$anzahl_eindeutig = $eh->{'haltestellen'}{'anzahl_eindeutig'};
-    };
-    if ($@) {
-	status_message($@, 'err');
-	return;
-    }
-
-    destroy_delayed_restack();
-
-    IncBusy($top);
-    $progress->Init(-dependents => $c,
-		    -label => 'Haltestellen');
-    eval {
-	# mit nextdirect geht es am schnellsten
-	$koord->initnextdirect;
-	for my $i (0 .. $anzahl_eindeutig-1) {
-	    my ($tx, $ty) = transpose($koord->nextdirect);
-	    $progress->Update($i/$anzahl_eindeutig)
-	      if $i % 80 == 0;
-	    $c->createLine
-	      ($tx, $ty, $tx, $ty,
-	       -tags => ['p', $i]);
-	}
-
-	$c->itemconfigure('p',
-			  -capstyle => 'round',
-			  -width => 5,
-			  -fill => 'blue',
-			 );
-	restack_delayed();
-    };
-    $progress->Finish;
-    DecBusy($top);
 }
 
 ######################################################################
