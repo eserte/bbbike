@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: any2bbd,v 1.13 2006/09/12 21:59:37 eserte Exp $
+# $Id: any2bbd,v 1.14 2007/06/19 22:52:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -22,7 +22,7 @@ use Hash::Util qw(lock_keys);
 
 use Archive::Zip qw(:ERROR_CODES);
 use File::Temp qw(tempfile);
-use File::Basename qw(basename);
+use File::Basename qw(basename dirname);
 use Getopt::Long;
 
 use Strassen::Gpsman;
@@ -33,11 +33,12 @@ use Strassen::MultiStrassen;
 
 my %opt;
 
-GetOptions(\%opt, "dir=s", "o=s", "append|a!", "inputformat|i=s")
-    or die "usage: $0 [-i inputformat] [-o outfile] [-a|-append] [-dir download-dir | files ...]";
+GetOptions(\%opt, "dir=s", "o=s", "append|a!", "inputformat|i=s", "routenamefmt=s")
+    or die "usage: $0 [-i inputformat] -o outfile [-a|-append] [-routenamefmt ...] [-dir download-dir | files ...]";
 
 my $download_dir = $opt{dir} if defined $opt{dir};
-my $outfile = $opt{o} || "/tmp/all.bbd";
+my $outfile = $opt{o} || die "Missing option -o for output file";
+my $routenamefmt = $opt{routenamefmt} || "%b";
 
 my @files = @ARGV;
 if (!@files) {
@@ -77,14 +78,15 @@ for my $file (@files) {
 		print $tmpfh $member->contents;
 		close $tmpfh;
 		$s = run_gpsbabel($tmpfile,
-				     title => basename($member->fileName),
-				     info => \%info);
+				  title => routenamefmt($file . "/" . basename($member->fileName)),
+				  info => \%info,
+				 );
 		if ($check_s->()) {
 		    push @s, $s;
 		}
 	    }
 	} else {
-	    $s = run_gpsbabel($file, title => basename($file),
+	    $s = run_gpsbabel($file, title => routenamefmt($file),
 			      info => \%info);
 	    if ($check_s->()) {
 		push @s, $s;
@@ -127,6 +129,7 @@ sub run_gpsbabel {
 		   | \.mps$
 		   | \.g7t$
 		   | \.gpx$
+		   | \.kml$
 		   | \.ovl$
 		   )
 	          }xi) {
@@ -176,5 +179,16 @@ sub run_gpsbabel {
 				  fallbackname => $title);
     $s;
 }
+
+sub routenamefmt {
+    my($file) = @_;
+    my $rv = $routenamefmt;
+    $rv =~ s{%b}{ basename($file) }ge;
+    $rv =~ s{%f}{ $file }g;
+    $rv =~ s{%d}{ basename(dirname($file)) }ge;
+    $rv =~ s{%D}{ dirname($file) }ge;
+    $rv;
+}
+
 
 __END__

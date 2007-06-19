@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: KML.pm,v 1.1 2007/06/19 20:37:26 eserte Exp $
+# $Id: KML.pm,v 1.2 2007/06/19 22:51:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::KML;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Strassen);
 
@@ -33,7 +33,7 @@ sub new {
 	bless $self, $class;
 
 	if ($filename_or_object) {
-	    $self->kml2bbd($filename_or_object);
+	    $self->kml2bbd($filename_or_object, %args);
 	}
 
 	$self;
@@ -41,7 +41,7 @@ sub new {
 }
 
 sub kml2bbd {
-    my($self, $file) = @_;
+    my($self, $file, %args) = @_;
 
     my $p = XML::LibXML->new;
     my $doc = $p->parse_file($file);
@@ -52,7 +52,10 @@ sub kml2bbd {
 	my($lon,$lat) = split /,/, $_;
 	join(",", longlat2xy($lon,$lat));
     } grep { !/^\s+$/ } split ' ', $coords;
-    $self->push(["Route", [@c], "X"]);
+
+    my $name = $args{name} || "Route";
+    my $cat  = $args{cat}  || "X";
+    $self->push([$name, [@c], $cat]);
 }
 
 sub longlat2xy {
