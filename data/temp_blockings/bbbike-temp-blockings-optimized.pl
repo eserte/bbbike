@@ -234,9 +234,9 @@ push @temp_blocking,
        undef,
        {
          'source_id' => 'IM_004489',
-         'until' => 1183240799,
-         'text' => 'Kaulsdorfer Brücke (Hellerdorf) in beiden Richtungen, in Höhe Gutenbergstr. Baustelle, Brücke gesperrt (bis 06/2007)',
-         'from' => 1168898315,
+         'until' => 1184018400,
+         'text' => 'Kaulsdorfer Brücke (Hellerdorf) in beiden Richtungen Baustelle, Brücke gesperrt (bis 09.07.2007)',
+         'from' => 1182281811,
          'id' => 821,
          'data' => 'userdel	2::inwork 22688,12007 22669,12049 22693,12084
 ',
@@ -887,18 +887,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_005798',
-         'until' => 1182204000,
-         'text' => 'Motzstr., Eisenacher Str., Kalckreuthstr. (Schöneberg) in beiden Richtungen, Veranstaltung, Straße vollständig gesperrt (bis 18.06.07 06 Uhr)',
-         'from' => 1181941660,
-         'id' => 1024,
-         'data' => 'userdel	2::temp 6628,10318 6626,10143 6730,10199 6739,10120
-userdel	2::temp 6611,10135 6514,10076
-userdel	2::temp 7037,10359 6730,10199 6719,10347
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1191189600,
          'text' => 'B 005 Treplin-Petershagen OD Petershagen, zw. KVK und Ortsausgang Kanal- und Straßenbau Vollsperrung 18.06.2007-30.09.2007 ',
@@ -996,29 +985,8 @@ userdel	2::inwork 1159,13541 1193,13485 1488,13454
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005809',
-         'until' => undef,
-         'text' => 'Hauptstr. (Blankenfelde) in beiden Richtungen, zwischen Berliner Str. und Möllersfelder Weg Straße vollständig gesperrt',
-         'from' => undef,
-         'id' => 1036,
-         'data' => 'userdel	2::inwork 9812,23983 9774,23936 9625,23781 9425,23693 9228,23643
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_005827',
-         'until' => undef,
-         'text' => 'Hüttenweg (Zehlendorf) in beiden Richtungen zwischen Clayallee und Onkel-Tom-Str. Straße vollständig gesperrt',
-         'from' => undef,
-         'id' => 1037,
-         'data' => 'userdel	2::inwork 297,6541 441,6435
-userdel	2::inwork 1535,5155 1506,5169 1399,5208 1361,5228 1212,5353 1086,5491 1051,5525 990,5581 910,5654 894,5829 884,5974 869,6085 736,6217
-userdel	2::inwork 486,6404 605,6345
-userdel	2::inwork -130,6694 218,6571
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_005812',
          'until' => 1183327200,
@@ -1044,6 +1012,16 @@ userdel	2::inwork -130,6694 218,6571
          'from' => 1188252000,
          'id' => 1040,
          'data' => 'userdel	q4::inwork 32766,25156 33511,24201
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_005839',
+         'until' => 1182492000,
+         'text' => 'Ebertstr. (Tiergarten) in beiden Richtungen zwischen Behrenstr. und Lennéstr. Veranstaltung, Straße vollständig gesperrt (bis 22.06. morgens)',
+         'from' => 1182281851,
+         'id' => 1041,
+         'data' => 'userdel	q4::temp 8595,12066 8581,11896 8571,11846
 ',
          'type' => 'handicap'
        }

@@ -6910,9 +6910,9 @@ EOF
 userdel	2::inwork 24637,10807 24735,11021 24658,11293
 EOF
      },
-     { from  => 1168898315, # 2007-01-15 22:58
-       until => 1183240799, # 2007-06-30 23:59
-       text  => 'Kaulsdorfer Brücke (Hellerdorf) in beiden Richtungen, in Höhe Gutenbergstr. Baustelle, Brücke gesperrt (bis 06/2007)',
+     { from  => 1182281811, # 2007-06-19 21:36
+       until => 1184018400, # 2007-07-10 00:00
+       text  => 'Kaulsdorfer Brücke (Hellerdorf) in beiden Richtungen Baustelle, Brücke gesperrt (bis 09.07.2007)',
        type  => 'gesperrt',
        source_id => 'IM_004489',
        data  => <<EOF,
@@ -8732,7 +8732,7 @@ userdel	2::inwork 1159,13541 1193,13485 1488,13454
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1182281918, # XXX undef
        text  => 'Hauptstr. (Blankenfelde) in beiden Richtungen, zwischen Berliner Str. und Möllersfelder Weg Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005809',
@@ -8741,7 +8741,7 @@ userdel	2::inwork 9812,23983 9774,23936 9625,23781 9425,23693 9228,23643
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1182281931, # XXX undef
        text  => 'Hüttenweg (Zehlendorf) in beiden Richtungen zwischen Clayallee und Onkel-Tom-Str. Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005827',
@@ -8775,6 +8775,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 32766,25156 33511,24201
+EOF
+     },
+     { from  => 1182281851, # 2007-06-19 21:37
+       until => 1182492000, # 2007-06-22 08:00
+       text  => 'Ebertstr. (Tiergarten) in beiden Richtungen zwischen Behrenstr. und Lennéstr. Veranstaltung, Straße vollständig gesperrt (bis 22.06. morgens)',
+       type  => 'handicap',
+       source_id => 'IM_005839',
+       data  => <<EOF,
+userdel	q4::temp 8595,12066 8581,11896 8571,11846
 EOF
      },
     );
