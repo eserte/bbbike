@@ -281,9 +281,13 @@ data/sbahnhof
 data/sbahnhof_bg
 data/sehenswuerdigkeit
 data/sehenswuerdigkeit_img/berliner_dom.gif
+data/sehenswuerdigkeit_img/bodemuseum.png
+data/sehenswuerdigkeit_img/bodemuseum_klein.png
 data/sehenswuerdigkeit_img/brandenburger_tor.gif
 data/sehenswuerdigkeit_img/einsteinturm.gif
 data/sehenswuerdigkeit_img/fernsehturm.gif
+data/sehenswuerdigkeit_img/friedrichswerdersche_kirche.png
+data/sehenswuerdigkeit_img/friedrichswerdersche_kirche_klein.png
 data/sehenswuerdigkeit_img/funkturm.gif
 data/sehenswuerdigkeit_img/gedaechtniskirche.gif
 data/sehenswuerdigkeit_img/luftbrueckendenkmal.gif
@@ -1459,3 +1463,4 @@ miscsrc/coordssession2bbd
 miscsrc/replay_accesslog
 PLZ/Levenshtein.pm
 miscsrc/BBBikeAllTracksPlugin.pm
+miscsrc/ampelschaltung.pl

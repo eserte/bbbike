@@ -952,16 +952,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_005800',
-         'until' => 1184536799,
-         'text' => 'Kastanienallee (Prenzlauer Berg) in Richtung Danziger Str., ab Schwedter Str. Baustelle, Fahrtrichtung gesperrt bis 15.07. ',
-         'from' => 1182000409,
-         'id' => 1033,
-         'data' => 'userdel	1::inwork 10534,14460 10723,14772 10889,15045
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_005823',
          'until' => undef,
@@ -1022,6 +1013,24 @@ userdel	2::inwork 1159,13541 1193,13485 1488,13454
          'from' => 1182281851,
          'id' => 1041,
          'data' => 'userdel	q4::temp 8595,12066 8581,11896 8571,11846
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1183240800,
+         'text' => 'L 015 Boitzenburg-Fürstenberg OD Lychen, Berliner Str. Kanal- und Straßenbau Vollsperrung 30.06.2007-30.06.2007 ',
+         'from' => 1183068000,
+         'id' => 1042,
+         'data' => 'userdel	q4::inwork 2480,89399 2111,89378 1907,89597
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1182981600,
+         'text' => 'B 179 Leibsch-Märkisch-Buchholz OD Märkisch Buchholz Einbau Schwarzdecke Vollsperrung 25.06.2007-27.06.2007 ',
+         'from' => 1182636000,
+         'id' => 1043,
+         'data' => 'userdel	q4::inwork 37813,-33029 35916,-32601
 ',
          'type' => 'handicap'
        }

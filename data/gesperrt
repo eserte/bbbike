@@ -742,12 +742,12 @@ Boddinstr. -> Karl-Marx-Str.: Mittelstreifen	3 12368,8356 12582,8408 12540,8458
 Karl-Marx-Str. -> Saltykowstr.: unbequemes Überqueren wegen parkender Autos	3 12898,7832 12865,7923 12726,7887
 Flughafenstr. -> Weisestr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3 11892,8372 11763,8337 11770,8292
 Weisestr. -> Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3 11770,8292 11763,8337 11632,8302
-Stromstr. -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3 6201,13058 6185,12968 6218,12975
-nördliches Spreeufer -> Stromstr.: unpassierbarer Mittelstreifen	3 6218,12975 6185,12968 6177,12920
-nördliches Spreeufer -> Bundesratufer: unpassierbarer Mittelstreifen	3 6218,12975 6185,12968 6131,12978
+nördliches Spreeufer -> Stromstr.: unpassierbarer Mittelstreifen	3 6200,12971 6185,12968 6177,12920
+nördliches Spreeufer -> Bundesratufer: unpassierbarer Mittelstreifen	3 6200,12971 6185,12968 6131,12978
+Stromstr. -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3 6201,13058 6185,12968 6200,12971
 Stromstr. -> Bundesratufer: unpassierbarer Mittelstreifen	3 6177,12920 6185,12968 6131,12978
+Bundesratufer -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3 6131,12978 6185,12968 6200,12971
 Bundesratufer -> Stromstr.: unpassierbarer Mittelstreifen	3 6131,12978 6185,12968 6201,13058
-Bundesratufer -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3 6131,12978 6185,12968 6218,12975
 Alfred-Döblin-Str. -> Märkische Allee: Linksabbiegen verboten	3 20286,16494 20219,16523 20111,16316
 Märkische Allee -> Alfred-Döblin-Str.: Linksabbiegen verboten	3 20339,16752 20219,16523 20286,16494
 zur Märkischen Allee -> Märkische Allee: Linksabbiegen verboten	3 20675,17515 20691,17463 20717,17516
@@ -1253,8 +1253,8 @@ Riehlstr. -> Saldernstr.: queren schlecht möglich	3 2419,11365 2417,11465 2450,1
 Riehlstr. -> Kaiserdamm: queren schlecht möglich	3 2419,11365 2417,11465 2234,11440
 Kaiserdamm -> Riehlstr.: queren schlecht möglich	3 2612,11491 2417,11465 2419,11365
 Kleine Markusstr.	1 12037,12092 11974,12110 11969,12054 12021,12037
-tragen, schieben (3 x 9 Stufen, schmale Rampe)	0:30:79 6218,12975
-tragen (30 Stufen)	0:45:-251 5896,12590
+tragen, schieben (3 x 9 Stufen, schmale Rampe)	0:30:77 6200,12971
+tragen (30 Stufen)	0:45:47 5896,12590
 mehrere einzelne Stufen	0:20:39 5717,12337
 Karolingerplatz	1 1278,11087 1181,11136
 Karolingerplatz	1 1209,11212 1315,11179
