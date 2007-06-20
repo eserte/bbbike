@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: KML.pm,v 1.2 2007/06/19 22:51:34 eserte Exp $
+# $Id: KML.pm,v 1.3 2007/06/20 21:18:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::KML;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Strassen);
 
@@ -62,6 +62,62 @@ sub longlat2xy {
     my($lon,$lat) = @_;
     my($x, $y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon, $lat));
     ($x, $y);
+}
+
+sub xy2longlat {
+    my($c) = @_;
+    my($lon, $lat) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $c));
+    ($lon, $lat);
+}
+
+sub xml { shift } # XXX impl missing!
+
+sub bbd2kml {
+    my($self, %args) = @_;
+    my @coords;
+    my $title;
+    $self->init;
+    while(1) {
+	my $r = $self->next;
+	last if !@{ $r->[Strassen::COORDS] };
+	$title = $r->[Strassen::NAME] if !defined $title; # XXX better heuristic? use %args?
+	push @coords, map {
+	    join(",", xy2longlat($_))
+	} @{ $r->[Strassen::COORDS] };
+    }
+    my $coords = join("\n", @coords);
+    my $kml_tmpl = <<EOF;
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+  <Document>
+    <name>Paths</name>
+    <description>@{[ xml($title) ]}</description>
+    <Style id="yellowLineGreenPoly">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>ff0000ff</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <name>Tour</name>
+      <description>enable/disable</description>
+      <styleUrl>#yellowLineGreenPoly</styleUrl> 
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates> 
+@{[ xml($coords) ]}
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
+EOF
+    
 }
 
 1;

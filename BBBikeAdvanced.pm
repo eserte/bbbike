@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.182 2007/06/19 20:41:34 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.183 2007/06/20 21:22:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -572,25 +572,32 @@ sub additional_layer_dialog {
 		 });
     };
     $fill_pane = sub {
+	my @pack_opts = qw(-fill x -expand 1 -anchor w);
+	my @b_opts = qw(-justify left -anchor w);
+	## not sure if this is really necessary, we have at least the titlebar
+	#$f->Label(-text => $title, -font => $font{large}, @b_opts)->pack(@pack_opts);
 	for my $i (1..MAX_LAYERS) {
 	    my $abk = "L$i";
 	    if ($str_draw{$abk}) {
 		$f->Button(-text => "Straßen $abk ($str_file{$abk})",
+			   @b_opts,
 			   -command => sub {
 			       $s_cb->($abk);
-			   })->pack(-anchor => "w");
+			   })->pack(@pack_opts);
 	    }
 	    if ($p_draw{$abk}) {
 		$f->Button(-text => "Punkte $abk ($p_file{$abk})",
+			   @b_opts,
 			   -command => sub {
 			       $p_cb->($abk);
-			   })->pack(-anchor => "w");
+			   })->pack(@pack_opts);
 	    }
 	    if ($p_draw{"$abk-sperre"}) {
 		$f->Button(-text => "Sperrungen $abk (" . $p_file{"$abk-sperre"} . ")",
+			   @b_opts,
 			   -command => sub {
 			       $p_cb->($abk . "-sperre");
-			   })->pack(-anchor => "w");
+			   })->pack(@pack_opts);
 	    }
 	}
     };
@@ -713,16 +720,19 @@ sub delete_additional_layer {
 			 if ($str_draw{$abk}) {
 			     $str_draw{$abk} = 0;
 			     plot('str',$abk);
+			     plot('str',$abk,Canvas => $overview_canvas,-draw => 0) if $overview_canvas;
 			     delete $str_file{$abk};
 			 }
 			 if ($p_draw{$abk}) {
 			     $p_draw{$abk} = 0;
 			     plot('p',$abk);
+			     # XXX overview canvas?
 			     delete $p_file{$abk};
 			 }
 			 if ($p_draw{"$abk-sperre"}) {
 			     $p_draw{"$abk-sperre"} = 0;
 			     plot('p',"$abk-sperre");
+			     # XXX overview canvas?
 			     delete $p_file{"$abk-sperre"};
 			     # XXX This should also undo the net changes
 			 }
@@ -757,6 +767,31 @@ sub delete_additional_layer {
 	     }
 	 });
 
+}
+
+sub tk_draw_layer_in_overview {
+    additional_layer_dialog
+	(-title => M"Layer in Übersichtskarte zeichnen",
+	 -cb => sub {
+	     my $abk = shift;
+	     draw_layer_in_overview($abk);
+	 },
+	 -token => 'choose_from_additional_layer',
+	);
+}
+
+sub draw_layer_in_overview {
+    my $abk = shift;
+    if (!$overview_canvas) {
+	# XXX maybe remember for later instead
+	status_message(M"Die Übersichtskarte ist noch nicht verfügbar.", "info");
+	return;
+    }
+    # XXX support for point layers missing
+    plotstr($abk,
+	    Canvas => $overview_canvas,
+	   );
+    # XXX it's not possible to remove layers!
 }
 
 sub tk_zoom_view_for_layer {

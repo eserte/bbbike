@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.316 2007/06/19 20:38:15 eserte Exp eserte $
+# $Id: bbbike,v 3.318 2007/06/20 21:21:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -88,7 +88,9 @@ BEGIN {
 		pdf_export svg_export perlmod_install_advice
 		show_register save_register_routes load_register_routes
 		show_calories check_available_memory
-		reload_all make_temp make_unique_temp)],
+		reload_all make_temp make_unique_temp
+		save_route_as_gpx save_route_as_kml
+	      )],
 	 #XXX problems with autouse! -> what problems?
 	 'BBBikeEdit'
 	 => [qw(insert_point_from_canvas create_relation_from_canvas
@@ -208,7 +210,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.316 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.318 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -2510,6 +2512,13 @@ sub do_iconframe {
 		       -command => sub {
 			   require BBBikeAdvanced;
 			   delete_additional_layer() });
+	if ($devel_host) {
+	    $cusm->command(-label => M"Layer in Übersichtskarte zeichnen",
+			   -command => sub {
+			       require BBBikeAdvanced;
+			       tk_draw_layer_in_overview();
+			   });
+	}
 	$cusm->command(-label => M"Ausschnitt an Layer anpassen",
 		       -command => sub {
 			   require BBBikeAdvanced;
@@ -3267,6 +3276,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		     # GPS
 		     ['GPX (Track)', 'GPX/track'],
 		     #['GPX (Route)', 'GPX/route'], # not yet, support not ready
+		     ($advanced ? ['KML (GoogleEarth)', 'KML/track'] : ()),
 		     ['GPSMAN (Track)', 'GpsmanData'],
 		     ['G7toWin (ASCII)', 'G7toWin_ASCII'],
 		     ['Waypoint+ (Track)', 'WaypointPlus'],
@@ -3352,6 +3362,12 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		$svm->command
 		    (-label => $label,
 		     -command => sub { save_route_as_gpx(-as => $as) },
+		    );
+	    } elsif ($module =~ m{^KML/(.*)$}) {
+		my $as = $1;
+		$svm->command
+		    (-label => $label,
+		     -command => sub { save_route_as_kml(-as => $as) },
 		    );
 	    } else {
 		$svm->command
@@ -8675,38 +8691,6 @@ sub save_route_as_esri {
     unlink $tmpfile1;
 }
 
-### AutoLoad Sub
-sub save_route_as_gpx {
-    my(%args) = @_;
-    if (!eval { require Strassen::GPX; 1 }) {
-	perlmod_install_advice("XML::Parser", "XML::Twig");
-    } else {
-	require Route;
-	require Route::Heavy;
-	my $file = $top->getSaveFile(-defaultextension => '.gpx');
-	return unless defined $file;
-	my $tmpfile = "$tmpdir/bbbike-$<-$$.bbr";
-	load_save_route(1, $tmpfile);
-	my $s = Route::as_strassen($tmpfile,
-				   name => "Route",
-				   cat => "X",
-				   fuzzy => 0,
-				  );
-	if (!$s) {
-	    status_message("Fataler Fehler: $tmpfile lässt sich nicht konvertieren", "die");
-	}
-	my $s_gpx = Strassen::GPX->new($s);
-	my $out = $s_gpx->bbd2gpx(%args);
-
-	open(FH, "> $file") or status_message("Can't write to $file: $!", "die");
-	binmode FH;
-	print FH $out;
-	close FH;
-
-	unlink $tmpfile;
-    }
-}
-
 # weiter zur Druckfunktion...
 ### AutoLoad Sub
 sub print_function {
@@ -8787,7 +8771,6 @@ sub plot {
 	} else {
 	    $p_draw{$abk} = $args{'-draw'};
 	}
-	delete $args{'-draw'};
     }
     if ($type eq 'str') {
 	plotstr($abk, %args);
@@ -8871,6 +8854,10 @@ sub plotstr {
 	    bbbikelazy_remove_data("str", $abk);
 	}
 	status_message(Mfmt("Layer <%s> entfernt", exists $str_attrib{$abk} ? $str_attrib{$abk}->[ATTRIB_PLURAL] : $abk), "info");
+	return;
+    }
+    # A hack to get overview canvas plots deleted
+    if (exists $args{Canvas} && exists $args{-draw} && !$args{-draw}) {
 	return;
     }
 
@@ -19616,7 +19603,7 @@ sub balloon_info_from_all_tags {
 	    print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@tags],[qw()])->Indent(1)->Useqq(1)->Dump;
 	}
 
-	if ($tags[0] =~ m{^(s|sBAB|l|$comments_rx|qs|ql|hs|hl|fz|u|b|r|f|w|rw|e|v|temp_sperre|temp_sperre_s|L\d+|L\d+-fg)$}) {
+	if ($tags[0] =~ m{^(s|sBAB|l|$comments_rx|qs|ql|hs|hl|fz|u|b|r|f|w|rw|e|v|v-fg|temp_sperre|temp_sperre_s|L\d+|L\d+-fg)$}) {
 	    my $label = $tags[1];
 	    if ($tags[0] eq 'rw') { # Special handling for cyclepaths
 		(my $rw_code) = $tags[2] =~ /^rw-(RW\d+)/;

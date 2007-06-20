@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.35 2007/04/22 21:12:43 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.36 2007/06/20 21:21:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.35 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.36 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -1557,6 +1557,68 @@ sub BBBikeHeavy::make_unique_temp {
     unlink $tmpfile;
     $tmpfiles{$tmpfile}++;
     $tmpfile;
+}
+
+sub BBBikeHeavy::save_route_as_gpx {
+    my(%args) = @_;
+    if (!eval { require Strassen::GPX; 1 }) {
+	perlmod_install_advice("XML::Parser", "XML::Twig");
+    } else {
+	require Route;
+	require Route::Heavy;
+	my $file = $top->getSaveFile(-defaultextension => '.gpx');
+	return unless defined $file;
+	my $tmpfile = "$tmpdir/bbbike-$<-$$.bbr";
+	load_save_route(1, $tmpfile);
+	my $s = Route::as_strassen($tmpfile,
+				   name => "Route",
+				   cat => "X",
+				   fuzzy => 0,
+				  );
+	if (!$s) {
+	    status_message("Fataler Fehler: $tmpfile lässt sich nicht konvertieren", "die");
+	}
+	my $s_gpx = Strassen::GPX->new($s);
+	my $out = $s_gpx->bbd2gpx(%args);
+
+	open(FH, "> $file") or status_message("Can't write to $file: $!", "die");
+	binmode FH;
+	print FH $out;
+	close FH;
+
+	unlink $tmpfile;
+    }
+}
+
+sub BBBikeHeavy::save_route_as_kml {
+    my(%args) = @_;
+    if (!eval { require Strassen::KML; 1 }) {
+	perlmod_install_advice("XML::LibXML");
+    } else {
+	require Route;
+	require Route::Heavy;
+	my $file = $top->getSaveFile(-defaultextension => '.kml');
+	return unless defined $file;
+	my $tmpfile = "$tmpdir/bbbike-$<-$$.bbr";
+	load_save_route(1, $tmpfile);
+	my $s = Route::as_strassen($tmpfile,
+				   name => "Route",
+				   cat => "X",
+				   fuzzy => 0,
+				  );
+	if (!$s) {
+	    status_message("Fataler Fehler: $tmpfile lässt sich nicht konvertieren", "die");
+	}
+	my $s_kml = Strassen::KML->new($s);
+	my $out = $s_kml->bbd2kml(%args);
+
+	open(FH, "> $file") or status_message("Can't write to $file: $!", "die");
+	binmode FH;
+	print FH $out;
+	close FH;
+
+	unlink $tmpfile;
+    }
 }
 
 1;

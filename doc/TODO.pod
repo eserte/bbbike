@@ -1302,6 +1302,22 @@ Sehenswürdigkeiten: eine neue Kategorie für
 E<quot>flächigeE<quot> Sehenswürdigkeiten (z.B. Holländisches Viertel)
 einführen, um besseres Stacking zu machen (unterhalb von Straßen).
 
+=item * (H2)
+
+Sehenswürdigkeiten: mehrere Bilder für unterschiedliche Zoomstufen
+sollten bereitsgestellt werden können bzw. Zooming on-the-fly. Ich
+habe bereits bodemuseum.png und bodemuseum_klein.png.
+
+=item * (M2)
+
+Gewässer: vielleicht sollte kleinere Flüsse/Bäche/Seen immer ohne
+Outline dargestellt werden, damit sie nicht so sehr auffallen,
+jedenfalls bei großen Maßstäben? (Bei kleinen Seen scheint es nicht so
+schlimm zu sein wie bei langen Bächen) Ich sollte nochmal die
+Gewässerkategorisierung überarbeiten in punkto Empfehlungen für die
+Darstellung (wann wird ausgeblendet, wie werden E<quot>breitereE<quot>
+Flüsse gekennzeichnet).
+
 =item * (M4)
 
 comments_kfzverkehr sollte nicht in E<quot>Aktuelle RouteE<quot> (und
@@ -1338,7 +1354,8 @@ Einfärben der Route nach Steigungen.
 
 Why is selecting one of the last characters in the streets chooser
 significantly slower (approx. 4s vs 1s) than a similar test with
-Tk-SREZIC/examples/k2listbox.pl?
+Tk-SREZIC/examples/k2listbox.pl? (Seems to be not reproducible with my
+new machine)
 
 =item * (M1)
 
@@ -1346,6 +1363,18 @@ Eine Möglichkeit schaffen, auch im overview-Fenster Strecken zu
 zeichnen. In der Zwischenzeit geht es manuell mit ptksh>
 
     plotstr("L100", Canvas => $overview_canvas, -filename => "$FindBin::RealBin/misc/abdeckung.bbd")
+
+Das gibt es schon (im Devel-Mode für Strecken), hat aber noch eine
+Defizite; in BBBikeAdvanced.pm bei draw_layer_in_overview()
+nachschauen.
+
+=item * (H3)
+
+Umbau der plot*-Funktionen, damit $str_draw{...} etc. nicht sowohl für
+den Status (ist der Layer an?) und auch den Wunsch (möchte man den
+Layer einschalten?) verwendet wird. Außerdem gibt es ein Problem bei
+normal canvas vs. $overview_canvas, aber nur einen Satz an
+$str_draw{...}-Variablen.
 
 =item * (H1)
 
@@ -1644,6 +1673,11 @@ GPS-Tracks zusammenfassen.
 =head2 Fehler, Ergänzungen, ...
 
 =over
+
+=item * (M1)
+
+Neues Sehenswürdigkeit-Bild vom Fernsehturm machen, das jetzige sieht
+etwas mickrig aus im Vergleich zu anderen Bildern.
 
 =item * (M1)
 
