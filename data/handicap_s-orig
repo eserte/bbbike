@@ -1,13 +1,12 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.145 2007/06/17 21:46:06 eserte Exp eserte $
+#: version: $Id: handicap_s-orig,v 4.146 2007/06/21 22:26:36 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # XXX hier br‰uchte man keine zus‰tzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
 Behrenstr./Bebelplatz: Einbahnstraﬂe	q3::inwork; 9626,12227 9700,12234 9743,12239 9801,12245
 #XXX del Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
 Bodestr.: Bauarbeiten	q4::inwork 9912,12623 9943,12642
-#: by: http://www.berlin-straba.de/strecke-alex2.htm (Fertigstellungsdatum)
-Dircksenstr.: Bauarbeiten (Bau einer neue Straﬂenbahnstrecke, bis 2007-05-31)	q4::inwork 10781,13002 10844,12935 10960,12809
+# del by: http://www.berlin-straba.de/strecke-alex2.htm (Fertigstellungsdatum) Dircksenstr.: Bauarbeiten (Bau einer neue Straﬂenbahnstrecke, bis 2007-05-31)	q4::inwork 10781,13002 10844,12935 10960,12809
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
 Pappelplatz (Mitte): gemeinsamer Fuﬂ- und Radweg	q2 9737,14126 9663,14036
@@ -421,6 +420,7 @@ Jeverstr.: eng	q1 5681,5743 5681,5768 5679,5853 5670,5889 5699,5949 5748,6051 57
 #: by: Hanswalter Schramm:
 Friedrichstr. (Lichterfelde): Fuﬂ- und Radweg	q1 2890,3561 2712,3602
 #: by: rjoop: vvv
+nˆrdliches Spreeufer: drei niedrige Stufen	q2 6180,12962 6121,12955
 Sparrstr. - Triftstr.: Gehweg	q1 7303,15173 7241,15293
 #: note: laut ADFC-Karte "m‰ﬂig"
 (Max-Lingner-Str. - Maximilianstr.): schmaler Fuﬂweg und Parkplatz	q2 11107,17340 10906,17331

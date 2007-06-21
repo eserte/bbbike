@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: ampelschaltung.pl,v 1.8 2002/11/06 15:26:15 eserte Exp $
+# $Id: ampelschaltung.pl,v 1.9 2007/06/21 19:44:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -75,7 +75,7 @@ if ($old_ampelschaltung && defined $file) { # XXX obsolet, kann gelöscht werden
     close F;
 
     if ($n) {
-	printf "Durchschnittliche Wartezeit: %.1f s\n", $warte_zeit/$n;
+	printf "Durchschnittlich verlorene Zeit: %.1f s\n", $warte_zeit/$n;
 	printf "Verlorene Strecke bei %d km/h: %d m\n",
 	$speed, $warte_strecke/$n;
     }
@@ -153,7 +153,7 @@ Beschleunigung: $a m/s²
 				   -geschwindigkeit => $kmh,
 				   -beschleunigung => $a);
 
-    printf "Durchschnittliche Wartezeit: %.1f s\n", $res{-zeit};
+    printf "Durchschnittlich verlorene Zeit: %.1f s\n", $res{-zeit};
     if (defined $res{-strecke}) {
 	printf
 	  "Durchschnittlich verlorene Strecke bei $kmh km/h: %d m\n",

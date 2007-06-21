@@ -304,15 +304,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1182376800,
-         'text' => 'L 075 Karl-Marx-Str. OD Großziethen, nördl. Attilastr.- Landesgrenze Berlin, Buckower Damm Straßen- und Kanalbau Vollsperrung 05.03.2007-20.06.2007 ',
-         'from' => 1172962800,
-         'id' => 850,
-         'data' => 'userdel	2::inwork 12984,1011 13090,205
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -715,15 +707,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        undef,
        undef,
        undef,
-       {
-         'until' => 1182376800,
-         'text' => 'K 6747 Groß Schauen-Alt Stahnsdorf Bahnübergang bei Philadelphia Gleisbauarbeiten Vollsperrung 16.06.2007-20.06.2007 ',
-         'from' => 1181858400,
-         'id' => 992,
-         'data' => 'userdel	2::inwork 44269,-15317 44343,-15112 44369,-14650
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -812,15 +796,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        },
        undef,
        undef,
-       {
-         'until' => 1182376800,
-         'text' => 'B 168 Breite Str. OD Eberswalde, zw. Heine-Str.u. Krz. Freienwalder Str. Deckenerneuerung halbseitig gesperrt; Einbahnstraße 11.06.2007-20.06.2007 ',
-         'from' => 1181426400,
-         'id' => 1014,
-         'data' => 'userdel	q4::inwork; 38653,47410 38522,47634
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1185919200,
          'text' => 'K 6422 Eggersdorfer Str./ Lessingstr. OL Petershagen, Knoten Lessingstr. u. BÜ Straßenausbau Vollsperrung 11.06.2007-31.07.2007 ',
