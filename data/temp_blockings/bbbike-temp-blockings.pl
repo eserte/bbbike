@@ -66,10 +66,10 @@ EOF
        file  => "strassenfest-karl-marx-str.bbd",
        text  => "Karl-Marx-Straße zwischen Flughafenstraße und Werbellinstraße, Erkstraße zwischen Karl-Marx-Straße und Donaustraße: Straßenfest, Straßen gesperrt. Datum: 21.06.2003, 04.00 Uhr bis 22.06.2003, 24.00 Uhr",
      },
-     { from  => Time::Local::timelocal(reverse(2005-1900,6-1,25,5,0,0)),
-       until => Time::Local::timelocal(reverse(2005-1900,6-1,26,5,0,0)),
+     { from  => Time::Local::timelocal(reverse(2007-1900,6-1,23,5,0,0)),
+       until => Time::Local::timelocal(reverse(2007-1900,6-1,24,5,0,0)),
        file  => "csd.bbd",
-       text  => "CSD am 25.6.",
+       text  => "CSD am 23.6.",
      },
      { from  => 1119070200, # 2005-06-18 06:50
        until => 1119218400, # 2005-06-20 00:00
@@ -7417,7 +7417,7 @@ EOF
        text  => 'B 246 Brücker Str. OL Beelitz, zw. Eckenerstr. u. Karl-Marx-Str. Ausbau Kreisverkehr Vollsperrung 10.04.2007-18.05.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -19124,-19178 -19825,-19350
+userdel	q4::inwork -19026,-19156 -19076,-19148 -19825,-19350
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
@@ -8475,8 +8475,8 @@ userdel	1::inwork 23891,8780 24051,9156 24149,9387 24337,9835
 EOF
      },
      { from  => 1182636000, # 2007-06-24 00:00
-       until => 1188597600, # 2007-09-01 00:00
-       text  => 'B 168 zw. Fürstenwalde und Trebus Grundhafter Straßenbau Vollsperrung 25.06.2007-31.08.2007 ',
+       until => 1220220000, # 2008-09-01 00:00
+       text  => 'B 168 zw. Fürstenwalde und Trebus Grundhafter Straßenbau Vollsperrung 25.06.2007-31.08.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 54195,309 54279,10 54341,-331 54657,-1293
@@ -8800,6 +8800,23 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 37813,-33029 35916,-32601
+EOF
+     },
+     { from  => 1182538248, # 2007-06-22 20:50
+       until => 1191189600, # 2007-10-01 00:00
+       text  => 'Buchholzer Str. (Pankow) in Richtung Grumbkowstr. ab Charlottenstr. Baustelle, Fahrtrichtung gesperrt (bis 30.09.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_005877',
+       data  => <<EOF,
+userdel	1::inwork 10802,20240 10843,20301 11004,20526 11269,20667
+EOF
+     },
+     { from  => 1184191200, # 2007-07-12 00:00
+       until => 1187388000, # 2007-08-18 00:00
+       text  => 'L 088 Karl-Marx-Str. OL Beelitz, zw. R.-Koch-Str. u. Zeppelinstr. Ausbau Kreisverkehr Vollsperrung 13.07.2007-17.08.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -19105,-19043 -19058,-19120
 EOF
      },
     );
