@@ -8819,4 +8819,13 @@ EOF
 userdel	q4::inwork -19105,-19043 -19058,-19120
 EOF
      },
+     { from  => 1182577874, # 2007-06-23 07:51
+       until => 1182722400, # 2007-06-25 00:00
+       text  => 'Badstraße (Wedding) in beiden Richtungen zwischen Pankstraße und Behmstraße Veranstaltung, Straße gesperrt (bis 24.06.2007 nachts)',
+       type  => 'gesperrt',
+       source_id => 'IM_005849',
+       data  => <<EOF,
+userdel	2::temp 8788,16264 8862,16208 8928,16158 8993,16100 9059,16038 9134,15953
+EOF
+     },
     );

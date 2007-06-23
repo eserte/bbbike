@@ -1145,15 +1145,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        undef,
-       {
-         'until' => 1182549600,
-         'text' => 'L 015 zw. Gollmitz u. Berkholz u. Boitzenburg Deckensanierung Vollsperrung 10.04.2007-22.06.2007 ',
-         'from' => 1176069600,
-         'id' => 902,
-         'data' => 'userdel	2::inwork 29760,99768 27416,98865 26759,98614 26304,98234 26128,97916 25974,97619 24828,97295 24216,96897 23278,96396
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_003833',
          'until' => 1191189600,
@@ -1374,15 +1366,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        undef,
        undef,
        undef,
-       {
-         'until' => 1182549600,
-         'text' => 'L 040 L 23 Storkow-L 39 Friedersdorf Bahnübergang bei Kummersdorf Gleisbauarbeiten Vollsperrung 18.06.2007-22.06.2007 ',
-         'from' => 1182031200,
-         'id' => 995,
-         'data' => 'userdel	2::inwork 44261,-14205 43456,-14384 42430,-14398
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1529,15 +1513,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1182549600,
-         'text' => 'K 6419 Garzauer Str. zw. Strausberg, E.-Thälmann-Str. u. SVA Deckenerneuerung Vollsperrung 18.06.2007-22.06.2007 ',
-         'from' => 1182031200,
-         'id' => 1026,
-         'data' => 'userdel	2::inwork 41356,16225 41168,16281
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1183672800,
          'text' => 'L 020 Rosa-Luxemburg-Str. Bahnübergang in der OL Velten Gleisbauarbeiten Vollsperrung 22.06.2007-05.07.2007 ',
@@ -1675,6 +1651,16 @@ userdel	2::inwork 1159,13541 1193,13485 1488,13454
          'data' => 'userdel	q4::inwork -19105,-19043 -19058,-19120
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_005849',
+         'until' => 1182722400,
+         'text' => 'Badstraße (Wedding) in beiden Richtungen zwischen Pankstraße und Behmstraße Veranstaltung, Straße gesperrt (bis 24.06.2007 nachts)',
+         'from' => 1182577874,
+         'id' => 1046,
+         'data' => 'userdel	2::temp 8788,16264 8862,16208 8928,16158 8993,16100 9059,16038 9134,15953
+',
+         'type' => 'gesperrt'
        }
      
 );

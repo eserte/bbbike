@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.63 2007/06/14 22:20:07 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.63 2007/06/14 22:20:07 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -750,7 +750,7 @@ copy-cvs-to-stick:	copy-to-cvs
 	mount | grep -q /mnt/stick
 	@echo -n '*** Backup old BBBike-CVS directory on stick? (y/N) '
 	-@read yn && ([ "$$yn" = "y" ] && mv /mnt/stick/BBBike-CVS /mnt/stick/BBBike-CVS.old || true)
-	rsync -v --inplace -c -rLt $(CVS_DIR)/ /mnt/stick/BBBike-CVS/
+	rsync -v --exclude ".#*" --inplace -c -rLt $(CVS_DIR)/ /mnt/stick/BBBike-CVS/
 	#rsync -v -a $(CVS_DIR)/ /mnt/stick/BBBike-CVS/
 	@echo -n '*** Unmount stick? (CTRL-C to abort)'
 	@read yn
