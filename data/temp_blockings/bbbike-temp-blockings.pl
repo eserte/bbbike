@@ -8241,8 +8241,8 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
 EOF
      },
      { from  => 1179871200, # 2007-05-23 00:00
-       until => 1183240800, # 2007-07-01 00:00
-       text  => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 24.05.2007-30.06.2007 ',
+       until => 1184018400, # 2007-07-10 00:00
+       text  => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 24.05.2007-09.07.2007 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 10115,-8276 11019,-8435
@@ -8711,7 +8711,7 @@ userdel	1::inwork 10534,14460 10723,14772 10889,15045
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1183280342, # XXX undef
        text  => 'Drakestr. (Lichterfelde) in beiden Richtungen, zwischen Curtiusstr. und Unter den Eichen Fahrbahnunterspülung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005823',
@@ -8720,7 +8720,7 @@ userdel	2::inwork 3048,4305 3128,4190 3259,4002
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1183280362, # XXX undef
        text  => 'Fürstenbrunner Weg (Charlottenburg) in beiden Richtungen, zwischen Spandauer Damm und Rohrdamm Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005810',
@@ -8826,6 +8826,77 @@ EOF
        source_id => 'IM_005849',
        data  => <<EOF,
 userdel	2::temp 8788,16264 8862,16208 8928,16158 8993,16100 9059,16038 9134,15953
+EOF
+     },
+     { from  => 1183280005, # 2007-07-01 10:53
+       until => 1188597599, # 2007-08-31 23:59
+       text  => 'Nennhauser Damm (Spandau) Richtung Brunsbütteler Damm nach Heerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_004443',
+       data  => <<EOF,
+userdel	1::inwork -8671,13312 -8643,13383 -8358,13340 -8011,13351
+EOF
+     },
+     { from  => 1183280053, # 2007-07-01 10:54
+       until => 1183413600, # 2007-07-03 00:00
+       text  => 'Altstadt Köpenick Straße Alt-Köpenick und umliegende Straßen Veranstaltung, Straße vollständig gesperrt (bis 02.07.07 16 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_005925',
+       data  => <<EOF,
+userdel	2::temp 22263,4671 22138,4661 22111,4562 22093,4499
+userdel	2::temp 22312,4593 22162,4546 22111,4562
+userdel	2::temp 22196,4847 22138,4661
+EOF
+     },
+     { from  => 1183193708, # 2007-06-30 10:55
+       until => 1183323600, # 2007-07-01 23:00
+       text  => 'Brunnenstr. (Wedding) in beiden Richtungen, zwischen Stralsunder Str. und Demminer Str. Veranstaltung, Straße vollständig gesperrt (bis 23 Uhr) ',
+       type  => 'gesperrt',
+       source_id => 'IM_005922',
+       data  => <<EOF,
+userdel	2::temp 9648,15027 9718,14888
+EOF
+     },
+     { from  => 1183193764, # 2007-06-30 10:56
+       until => 1183327199, # 2007-07-01 23:59
+       text  => 'Mehringdamm (Kreuzberg) in Richtung Tempelhof, zwischen Kreuzbergstr. und Dudenstr. Veranstaltung (Seifenkistenrennen), Fahrtrichtung gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_005931',
+       data  => <<EOF,
+userdel	1::temp 9248,9350 9235,9111 9235,9051 9227,8890 9222,8787
+EOF
+     },
+     { from  => 1183280291, # 2007-07-01 10:58
+       until => 1184536799, # 2007-07-15 23:59
+       text  => 'Stubenrauchstr. (Treptow ) in Richtung Segelfliegerdamm, ab Akeleiweg Baustelle, Fahrtrichtung gesperrt und Akeleiweg gesperrt (bis Mitte Juli 2007)',
+       type  => 'handicap',
+       source_id => 'IM_005905',
+       data  => <<EOF,
+userdel	q4::inwork; 17388,3576 17490,3637 17593,3748
+EOF
+     },
+     { from  => 1184191200, # 2007-07-12 00:00
+       until => 1184536800, # 2007-07-16 00:00
+       text  => 'B 156 Tschernitz-Spremberg zw. Abzw. Friedrichshain und Abzw. Reuthen Deckeneinbau Vollsperrung 13.07.2007-15.07.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 89821,-90648 91975,-90138
+EOF
+     },
+     { from  => 1183672800, # 2007-07-06 00:00
+       until => 1183932000, # 2007-07-09 00:00
+       text  => 'L 030 Puschkinstr. OL Königs Wusterhausen Open-Air Konzert Vollsperrung 07.07.2007-08.07.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 25859,-11559 26177,-11648
+EOF
+     },
+     { from  => 1183240800, # 2007-07-01 00:00
+       until => 1188597600, # 2007-09-01 00:00
+       text  => 'L 339 Neuer Hönower Weg Bahnübergang in der OD Birkenstein Erneuerung Bahnübergang halbseitig gesperrt; Einbahnstraße 02.07.2007-31.08.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 27067,12608 27094,12535 27117,12466
 EOF
      },
     );

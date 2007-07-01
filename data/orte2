@@ -1,5 +1,5 @@
 #: title.de: Orte im weiteren Umland
-#: version: $Id: orte2-orig,v 4.39 2007/05/28 20:23:09 eserte Exp $
+#: version: $Id: orte2-orig,v 4.39 2007/05/28 20:23:09 eserte Exp eserte $
 #: title.en: Places far away
 #:
 Hannover	6 -238396,-7589
@@ -103,7 +103,7 @@ Ostseebad Rerik	3 -114327,186494
 Kühlungsborn	3 -106940,191400
 Woldegk	3 20839,117478
 Friedland|(Vorpommern)	3 17403,140308
-Usedom	3 42393,163718
+Usedom	3 42397,163738
 Feldberg	3 10780,103541
 Gützkow	3 7587,170583
 Brüssow	3 57405,111424
@@ -288,7 +288,7 @@ Grünberg	2 59125,106758
 Grünow	2 45189,101514
 Dedelow	2 35175,106764
 Schönermark|(bei Prenzlau)	2 29110,103270
-Ducherow	2 33001,151572
+Ducherow	2 32990,151593
 Ückeritz	2 50843,179488
 Zinnowitz	2 41450,186687
 Passow	2 57256,82768
@@ -703,7 +703,10 @@ Züsedom	1 49981,116048
 Nieden	1 43275,115703
 Nechlin	1 41224,116194
 Torgelow-Holländerei	1 50935,142656
-Neuendorf A	1 36978,147642
+Gellendin	1 27611,158184
+Dargibell	1 28103,154687
+Neuendorf A	1 36994,147794
+Wietstock|(bei Ferdinandshof)	1 33834,145941
 Meiersberg	1 44304,144810
 Hoppenwalde	1 53232,145177
 Hammer|bei Torgelow	1 46852,133497
@@ -821,13 +824,17 @@ Quadenschönfeld	0 4846,113002
 Warbende	0 1978,111942
 Rattey	0 22303,130287
 Klein Daberkow	0 25109,125933
+Anklamer Fähre	0 35635,160700
 Pinnow|bei Anklam	0 33153,166785
 Relzow	0 27848,165204
 Karnin	0 38537,160709
+Mönchow	0 39363,160487
+Wilhelmshof|(Usedom)	0 40484,161360
+Gellenthin	0 38951,162439
+Gneventhin	0 38283,162634
 Westklüne	0 42418,161106
 Ostklüne	0 42587,161025
 Zecherin	0 36892,162044
-Selenthin	0 38508,162341
 Krienke	0 44247,169475
 Rankwitz Hafen	0 43017,171074
 Quilitz	0 42067,173223
@@ -999,17 +1006,20 @@ Malchow|(bei Göritz)	0 43561,113159
 Neuenfeld|(bei Schönfeld, Uckermark)	0 49887,113837
 Wittenhof	0 43199,105408
 Baumgarten|(Ludwigsburg)	0 45417,105402
-Werbelow	0 40003,117291
+Werbelow	0 39987,117301
 Brietzig	0 42221,119716
-Wilsickow	0 39454,120313
+Wilsickow	0 39437,120318
 Klein Luckow	0 37504,128254
 Trebenow	0 38662,115923
 Bandelow	0 38762,112839
 Klockow	0 49578,110877
 Bröllin	0 51891,118057
 Schmarsow	0 44142,117823
-Kamp	0 37642,160110
-Demnitz|(bei Ferdinandshof)	0 35048,144256
+Kamp	0 37530,160248
+Bargischow	0 31360,159081
+Charlottenhof|(bei Ducherow)	0 30423,151890
+Kurtshagen	0 35851,149177
+Demnitz|(bei Ferdinandshof)	0 35047,144242
 Altwigshagen	0 37114,144939
 Binenwalde	0 -31939,71144
 Neeberg	0 35033,182037
@@ -1019,7 +1029,7 @@ Netzelkow	0 40874,180778
 Grüssow	0 44766,175673
 Reestow	0 43711,175435
 Bannemin	0 37278,185225
-Neuendorf|(Usedom)	0 39755,181509
+Neuendorf|(Usedom)	0 39942,181508
 Kölpinsee	0 49060,182334
 Stubbenfelde	0 49675,181384
 Stoben	0 52203,172708
