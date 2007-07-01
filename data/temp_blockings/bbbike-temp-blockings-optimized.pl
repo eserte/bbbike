@@ -654,16 +654,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_005661',
-         'until' => 1183327199,
-         'text' => 'Voßstr. (Mitte) Richtung Ebertstr. zwischen Wilhelmstr. und Ebertstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 07.2007)',
-         'from' => 1180783165,
-         'id' => 998,
-         'data' => 'userdel	1::inwork 8990,11719 8837,11676 8553,11638
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Simon-Dach-Str./Wühlischstr.: Bauarbeiten, Ausweichen auf Gehweg',
@@ -834,16 +825,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_005812',
-         'until' => 1183327200,
-         'text' => 'Invalidenstr. (Mitte) in Richtung Brunnenstr., zwischen Ackerstr und Brunnenstr. Baustelle, Fahrtrichtung gesperrt (bis 01.07.07)',
-         'from' => 1182201647,
-         'id' => 1038,
-         'data' => 'userdel	1::inwork 9810,14066 9937,14080 10003,14088
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1183413600,
          'text' => 'B 087 Luckau-Herzberg OD Schlieben, zw. Horstweg u. Am Mühlberg Moienmarkt Vollsperrung 26.06.2007-02.07.2007 ',
@@ -907,26 +889,8 @@ userdel	2::temp 22196,4847 22138,4661
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005922',
-         'until' => 1183323600,
-         'text' => 'Brunnenstr. (Wedding) in beiden Richtungen, zwischen Stralsunder Str. und Demminer Str. Veranstaltung, Straße vollständig gesperrt (bis 23 Uhr) ',
-         'from' => 1183193708,
-         'id' => 1049,
-         'data' => 'userdel	2::temp 9648,15027 9718,14888
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_005931',
-         'until' => 1183327199,
-         'text' => 'Mehringdamm (Kreuzberg) in Richtung Tempelhof, zwischen Kreuzbergstr. und Dudenstr. Veranstaltung (Seifenkistenrennen), Fahrtrichtung gesperrt',
-         'from' => 1183193764,
-         'id' => 1050,
-         'data' => 'userdel	1::temp 9248,9350 9235,9111 9235,9051 9227,8890 9222,8787
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_005905',
          'until' => 1184536799,

@@ -93,7 +93,7 @@ Gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW -150,-1457 61,-2956
 Gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW -1853,-2412 -2049,-2165
 Bansin: Zweirichtungsradweg (Verbundsteinpflaster) auf der südöstlichen Seite	RW 56175,173875 56327,173853 56493,173943 56546,174049
 Ückeritz: teils Verbundsteinpflasterradweg, teils separate Straße, nörliche Seite	RW 50843,179488 51288,179162
-Bansin - Ückeritz: asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW 56029,174482 55741,174692 55541,175016 55388,175169 55063,175432 54841,175487 54576,175560 54162,175850 52866,176160 52713,176237 52093,178063 51899,178200 51627,178336 51599,178430 51538,178665 51288,179162
+Bansin - Ückeritz: asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW 56029,174482 55741,174692 55541,175016 55388,175169 55063,175432 54841,175487 54576,175560 54162,175850 52866,176160 52713,176237 52093,178063 51899,178200 51627,178336 51611,178406 51538,178665 51288,179162
 Ladeburg - Lobetal: Fahrradstraße	RW 22414,33559 22606,33958 22931,35451
 Lobetal: verkehrsberuhigte Straße	RW 22931,35451 23232,36004
 Schönerlinder Str.: Radweg auf Gehweg	RW 17368,27859 17689,27853 18053,27875 18337,27854 18410,27890 18817,27979 18899,27976 19196,27963
@@ -171,7 +171,7 @@ Badeweg Prenzlau: Zweirichtungsradweg	RW 38939,101112 39106,101231
 Uckerpromenade: gemeinsamer Geh- und Radweg, überwiegend fester Sand	RW 39106,101231 39275,101193 39474,100982 39671,100750 40056,99762
 asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW 77909,209 77325,303 76840,600 75743,878 74740,378
 Mölschow - Trassenheide: Radweg	RW 37100,186740 37881,187596
-Trassenheide - Ostsee: Radweg	RW 38056,187615 38443,187905 38762,188150
+Trassenheide - Ostsee: Radweg	RW 38056,187615 38435,187917 38762,188150
 #: add_fragezeichen: nicht ganz sicher:
 Lessingstr.: optionaler Radweg	RW -13749,105474 -12659,104581 -12122,104267 -12062,104131
 B 198: benutzungspflichtige Radwege auf beiden Seiten	RW -12062,104131 -11793,104246 -11208,104538
@@ -186,7 +186,7 @@ Straßenbegleitender Radweg	RW 23759,49971 23387,49893
 #: according_to: ^^^
 B158: Zweirichtungsradweg auf der nordöstlichen Seite, Verbundsteinpflaster	RW 24203,22171 23930,21873
 B158: Zweirichtungsradweg auf der nordöstlichen Seite, asphaltiert, ca. 2m breit	RW 23930,21873 23565,21396 23281,21043 22529,19361
-Berliner Str. (Schwedt): Verbundsteinpflasteradweg, benutzungspflichtig	RW 69606,73554 69733,73945 69827,74244 70077,75094 70636,75624 70700,75740
+Berliner Str. (Schwedt): Verbundsteinpflasteradweg, benutzungspflichtig	RW 69606,73554 69733,73945 69827,74244 70077,75094 70164,75201 70636,75624 70700,75740
 Berliner Str. (Schwedt): Zweirichtungsradweg (östliche Seite), Verbundsteinpflaster, benutzungspflichtig	RW 70700,75740 70700,75848 70700,76125 70500,76862
 Schwedt - Vierraden: asphaltierter Radweg, Zweirichtungsradweg (östliche Seite), benutzungspflichtig	RW 70500,76862 70546,77321 70464,77755 70489,77838
 Sommersdorf: Zweirichtungsradweg (westliche Seite), Verbundsteinpflaster, benutzungspflichtig	RW 61124,97528 61139,97940 61393,98356 61351,98696
@@ -204,7 +204,7 @@ B5: Radweg	RW -31230,23101 -32007,22836 -34213,23540 -36413,24363 -36882,24414 -
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1644
 B1: Radweg	RW 88251,18156 90732,18784 91438,18959 92618,19763 92818,19943 92955,20065 93334,20606
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1644
-B111: separater Radweg, bis 3m breit	RW 37278,185225 37836,185694 39055,185755 40063,185467 40722,185530
+B111: separater Radweg, bis 3m breit	RW 37278,185225 37903,185677 38118,185746 38898,185789 39862,185533 40485,185461 40722,185530
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1644
 L33: Radweg auf der südwestlichen Seite, Betonsteinpflaster, bis 2,5m breit	RW 1763,120930 1435,120973 1303,121143 842,121718 206,122655 -121,122847
 Benutzungspflichtiger Radweg	RW 18481,-995 18423,-843 18177,-449 18127,-367
@@ -229,7 +229,7 @@ Lychen: Radweg auf Gehweg	RW 2745,89716 2797,89387
 Lychen - Fürstenberg: Verbundsteinpflasterradweg auf Gehweg	RW 2797,89387 2480,89399 2111,89378 1907,89597 1544,89701 1090,89570
 Lychen - Fürstenberg: asphaltierter Zweirichtungsradweg auf der nördlichen Seite	RW 1090,89570 627,89430 234,89271
 Fürstenberg: Verbundsteinpflasterradweg auf Gehweg, teilweise sehr eng	RW -8777,85887 -8775,85947 -8738,86096 -8726,86224 -8711,86273 -8641,86541
-Tassow - Schönfeld: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 72745,97584 72248,97784 71719,98650 71282,98881
+Tassow - Schönfeld: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 72583,97595 72309,97699 72151,97918 72038,98101 71684,98650 71282,98881
 Kamp - Anklam: Zweirichtungsradweg auf der westlichen Seite	RW 28842,161837 28567,161564 28473,161345
 Bargischow - Anklam: Radweg, teilweise als Zweirichtungsradweg	RW 28473,161345 28139,161441 27778,161482 27589,161496
 ######################### User Contributions #################################
@@ -267,7 +267,7 @@ Radweg, wahrscheinlich für beide Richtungen	RW 41409,-5222 41836,-5523 42349,-56
 #: by: anonymous:
 Wusterhausener Str. (Eichwalde)	RW 25678,-3957 25752,-4178 25763,-4283
 Asphaltierter Zweirichtungsradweg, westliche Seite, im Dorf Verbundsteinpflaster	RW 55271,172339 55459,172528 55640,172618 55704,172720 55991,173100 56072,173403 56139,173567 56175,173875
-Pudagla - Schmollensee: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 52407,174744 52468,174931 52614,175530 52837,176075 52866,176160
+Pudagla - Schmollensee: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 52407,174744 52468,174931 52614,175530 52830,176128 52866,176160
 Neppermin - Balm: Zweirichtungsradweg auf der nördlichen Seite, Verbundsteinpflaster	RW 49978,171395 49668,171500 49515,171716 49028,171817
 Verbundsteinpflasterradwege	RW 47751,123738 47836,123659 47955,123488
 Haußmannstr.: Verbundsteinpflasterradwege	RW 47955,123488 48071,123507 48180,123455 48275,123369
@@ -293,7 +293,7 @@ Leipziger Str.: Radstreifen, 1,50m; kurz vor der Kreuzung Bürgersteigradweg	RW4;
 #: by: ^^^
 #: by: Mentecapti...:
 Wusterhausener Str.: Radweg auf dem Bürgersteig	RW 25678,-3957 25752,-4178 25763,-4283
-Löcknitz: Verbundsteinpflasterradwege	RW 63394,117419 63580,117205
+Löcknitz: Verbundsteinpflasterradwege	RW 63382,117437 63580,117205
 #: by: Jakob-Dominik Ullmann: vvv
 #: note: auch laut Luftbild (wahrscheinlich Verbundsteinpflasterradwege)
 Förster-Funke-Allee: Radwege	RW -2213,-251 -2141,-307 -2046,-345 -1945,-354 -1921,-354 -1802,-339

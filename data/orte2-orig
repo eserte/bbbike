@@ -54,16 +54,17 @@ Liepe|(Rankwitz)	0 43381,174089
 Warthe|(Rankwitz)	0 41532,176095
 Mellenthin	1 48629,169142
 Balm	0 48923,171834
-Kamminke	1 61850,163631
+Kamminke	1 61873,163628
 Dewichow	0 45757,171555
-Garz|(Usedom)	0 59363,164986
-Kutzow	0 56715,165482
+Garz|(Usedom)	0 59381,165027
+Kutzow	0 56782,165441
 Bossin	0 54696,164496
 Suckow	0 44942,168115
 Usedom	3 42397,163738
 Seebad Ahlbeck	2 60244,171551
 Seebad Heringsdorf	2 58620,173512
 Seebad Bansin	2 57031,174737
+Bansin Dorf	0 56493,173943
 Zirchow	2 57407,166272
 Benz	2 52668,171487
 Sellin|(bei Benz)	0 53943,173459
@@ -266,7 +267,7 @@ Neubrandenburg	5 -1725,127713
 Altentreptow	3 -2694,142835
 Burow	2 -1737,151716
 Lassen	3 37037,171747
-Peenemünde	1 31807,193274
+Peenemünde	1 31413,192783
 Greiffenberg	3 46563,76471
 Gramzow	2 49779,90206
 Zehnebeck	0 52723,90807
@@ -276,7 +277,13 @@ Wittstock|a.d. Dosse	4 -53744,82975
 Mirow	3 -31370,95842
 Pritzwalk	4 -74653,81289
 #: alias: Ückermünde
-Ueckermünde	4 51049,148745
+Ueckermünde	4 50947,149040
+Bellin	1 56657,148680
+#: note: Vogelsang-Warsin
+Warsin	1 60301,148276
+Vogelsang|(Vogelsang-Warsin)	1 59311,147810
+Rieth	1 65548,143811
+Altwarp	2 66127,149868
 Grambin	1 49343,150632
 Stralsund	5 -15329,211585
 Brandshagen	2 -9220,203447
@@ -335,7 +342,7 @@ Ostseebad Göhren	2 28435,215851
 Middelhagen	1 26389,214433
 Lobbe	0 27178,213178
 Ostseebad Sellin	2 25320,219781
-Gartz|(Oder)	3 75460,90409
+Gartz|(Oder)	3 75423,90420
 Friedrichsthal|(bei Gartz)	1 72982,84835
 Lauenburg|/Elbe	3 -185101,104358
 Torgelow	3 49084,136899
@@ -363,7 +370,7 @@ Glinde	3 -209252,122140
 Reinbek	4 -206074,119025
 Bergedorf	0 -209464,116390
 Lenzen	3 -122199,74069
-Penkun	3 65597,100079
+Penkun	3 65441,100173
 Storkow|(bei Penkun)	1 68140,101615
 Büssow	0 67815,99673
 Wollin|(Penkun)	1 64241,102111
@@ -892,12 +899,12 @@ Reestow	0 43711,175435
 Mölschow	1 36112,186478
 Trassenheide	2 37881,187596
 Bannemin	0 37278,185225
-Karlshagen	2 35595,190464
-Neuendorf|(Usedom)	0 39942,181508
+Karlshagen	2 35822,190563
+Neuendorf|(Usedom)	0 39922,181505
 Lütow	1 39252,179236
-Zemnin	2 44291,185477
-Koserow	2 47391,183243
-Loddin	2 47869,180496
+Zempin	2 44215,185475
+Koserow	2 47500,183223
+Loddin	2 47917,180585
 Kölpinsee	0 49060,182334
 Stubbenfelde	0 49675,181384
 Pudagla	1 52328,174629
@@ -907,7 +914,7 @@ Stolpe|auf Usedom	1 47071,163315
 Welzin|(bei Stolpe)	0 45028,161679
 Dargen	1 52228,165503
 Gummlin	0 49188,164029
-Görke	0 54147,165600
+Görke	0 54219,165539
 Kachlin	0 52616,166814
 Reetzow	0 54252,170649
 Gothen	0 56858,172064
@@ -990,7 +997,7 @@ Tantow	1 73017,97449
 Keesow	0 72032,97559
 Schönfeld|(bei Penkun)	1 68964,97629
 Radekow	1 73101,100563
-Neurochlitz	1 76725,98637
+Neurochlitz	1 76788,98470
 Rosow	1 75359,101224
 Nadrensee	1 72666,104238
 Lebehn	1 71319,108797

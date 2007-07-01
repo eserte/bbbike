@@ -7175,7 +7175,7 @@ EOF
        text  => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 06.03.2007-10.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 73204,97424 73031,97443 73017,97449 72960,97477 72745,97584
+userdel	2::inwork 73204,97424 73031,97443 73017,97449 72960,97477 72583,97595
 EOF
      },
      { from  => 1172962800, # 2007-03-04 00:00
@@ -7281,7 +7281,7 @@ EOF
        text  => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 16.03.2007-19.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 73204,97424 73031,97443 73017,97449 72960,97477 72745,97584
+userdel	2::inwork 73204,97424 73031,97443 73017,97449 72960,97477 72583,97595
 EOF
      },
      { from  => undef, # 
@@ -7375,7 +7375,7 @@ EOF
        text  => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 23.03.2007-26.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 73204,97424 73031,97443 73017,97449 72960,97477 72745,97584
+userdel	2::inwork 73204,97424 73031,97443 73017,97449 72960,97477 72583,97595
 EOF
      },
      { from  => 1174258800, # 2007-03-19 00:00
