@@ -8711,7 +8711,7 @@ userdel	1::inwork 10534,14460 10723,14772 10889,15045
 EOF
      },
      { from  => undef, # 
-       until => 1183280342, # XXX undef
+       until => undef, # XXX
        text  => 'Drakestr. (Lichterfelde) in beiden Richtungen, zwischen Curtiusstr. und Unter den Eichen Fahrbahnunterspülung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005823',
@@ -8897,6 +8897,33 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 27067,12608 27094,12535 27117,12466
+EOF
+     },
+     { from  => 1183412527, # 2007-07-02 23:42
+       until => 1187215199, # 2007-08-15 23:59
+       text  => 'Treptower Str. (Treptow) in beiden Richtungen zwischen Kiefholzstr. und Harzer Str. Baustelle Straße vollständig gesperrt (bis Mitte 08/2007)',
+       type  => 'handicap',
+       source_id => 'IM_004418',
+       data  => <<EOF,
+userdel	2::inwork 13857,8601 14015,8798 14140,8977
+EOF
+     },
+     { from  => 1183412580, # 2007-07-02 23:43
+       until => 1188597599, # 2007-08-31 23:59
+       text  => 'Pankower Allee (Reinickendorf) in Richtung Markstr., zwischen Reginhardstr. und Residenzstr. Baustelle, Fahrtrichtung gesperrt (bis 08.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_004242',
+       data  => <<EOF,
+userdel	1::inwork 8211,17585 8095,17574 7998,17564 7841,17551 7675,17538 7587,17532
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Hauptstr. (Wilhelmsruh) in beiden Richtungen zwischen Schillerstr. und Edelweißstr. Baustelle, Straße vollständig gesperrt (bis auf weiteres)',
+       type  => 'handicap',
+       source_id => 'IM_005953',
+       data  => <<EOF,
+userdel	q4::inwork 7772,20050 7852,20231
 EOF
      },
     );

@@ -1,0 +1,114 @@
+#!/usr/bin/perl
+# -*- perl -*-
+
+#
+# $Id: opengeodbgeocode,v 1.3 2007/07/02 21:01:51 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2007 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+# Beispiel:
+
+use 5.8.1; # utf8 bugs?
+use strict;
+use warnings;
+no warnings 'once';
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+use Karte;
+Karte::preload(qw(Polar Standard));
+
+use Getopt::Long;
+
+use constant OPENGEODB_PLZ_INDEX => 13;
+use constant OPENGEODB_LON_INDEX => 10;
+use constant OPENGEODB_LAT_INDEX => 11;
+
+my $delim = '|';
+my $plzfield = 1;
+my $opengeodbfile = "/usr/ports/distfiles/opengeodb/opengeodb-0.2.4d-UTF8-text-orte.txt";
+my $debug;
+
+GetOptions("f=i" => \$plzfield,
+	   "d=s" => \$delim,
+	   "opengeodbfile" => \$opengeodbfile,
+	   "debug" => \$debug,
+	  )
+    or die "usage: $0 [-f number] [-d delim] file";
+$delim = quotemeta $delim;
+
+my $file = shift or die "usage!";
+
+
+open my $fh, $opengeodbfile
+    or die "Can't open $opengeodbfile: $!";
+open my $ifh, $file
+    or die "Can't open $file: $!";
+
+my %plz2rec;
+if ($debug) {
+    warn "Read $opengeodbfile...\n";
+}
+binmode $fh, ":encoding(utf-8)";
+while(<$fh>) {
+    next if /^#/;
+    chomp;
+    my(@rec) = split /;/;
+    my @plz = split /,/, $rec[OPENGEODB_PLZ_INDEX];
+    for my $plz (@plz) {
+	push @{ $plz2rec{$plz} }, \@rec;
+    }
+}
+
+if ($debug) {
+    warn "Start geocoding...\n";
+}
+# XXX binmode?
+while(<$ifh>) {
+    chomp;
+    my(@rec) = split /$delim/;
+    my $plz = $rec[$plzfield];
+    if (exists $plz2rec{$plz}) {
+	my($opengeodbrec) = $plz2rec{$plz}->[0]; # use only first one
+	my($x, $y) = map { int } $Karte::Polar::obj->map2standard(@{$opengeodbrec}[OPENGEODB_LON_INDEX, OPENGEODB_LAT_INDEX]);
+	print "@rec\tX $x,$y\n";
+    } else {
+	print "# Cannot match <$plz> from @rec\n";
+    }
+}
+
+__END__
+
+=pod
+
+Beispiele:
+
+    ./opengeodbgeocode -f 2 -debug /tmp/elberadwegunterkunft.csv > /tmp/elberadwegunterkunft.bbd
+
+Die folgenden Beispiele nicht mit csh-kompatiblen Shells versuchen.
+
+Alle Bett&Bike-Hotels in Berlin live holen und bearbeiten:
+
+    GET 'http://www.icore.de/cgi-bin/bettundbike/nph-liste.cgi?start=0&index=&buland=ber%25&region_auswahl=%25&rfw_auswahl=%25&name=&plz=&ort=&von=&bis=' | xmlgrep -parse-html '/html/body/form/table/tr[position()>3 and position()<=23]/td' | perl -MList::MoreUtils=natatime -e 'chomp(@a = <>); $it=natatime 8, @a; while (@vals = $it->()) { print join("|", @vals), "\n" }'|grep -v Druckansicht| ~/src/bbbike/miscsrc/opengeodbgeocode -f 2 -
+
+Alle Bett&Bike-Hotels in Sachsen (und Sachsen-Anhalt?):
+
+    ( for i in `perl -e 'print join(" ", map { $_*20 } 0 .. int(314/20))'`; do \
+        GET 'http://www.icore.de/cgi-bin/bettundbike/nph-liste.cgi?start='$i'&index=&buland=sa%25&region_auswahl=%25&rfw_auswahl=%25&name=&plz=&ort=&von=&bis=' | xmlgrep -parse-html '/html/body/form/table/tr[position()>3 and position()<=23]/td' | perl -MList::MoreUtils=natatime -e 'chomp(@a = <>); $it=natatime 8, @a; while (@vals = $it->()) { print join("|", @vals), "\n" }'|grep -v Druckansicht ; \
+      done ) | ~/src/bbbike/miscsrc/opengeodbgeocode -f 2 - > /tmp/sachsenunterkunft.bbd
+
+Alle Bett&Bike-Hotels in Brandenburg:
+
+    ( for i in `perl -e 'print join(" ", map { $_*20 } 0 .. int(227/20))'`; do \
+        GET 'http://www.icore.de/cgi-bin/bettundbike/nph-liste.cgi?start='$i'&index=&buland=bra%25&region_auswahl=%25&rfw_auswahl=%25&name=&plz=&ort=&von=&bis=' | xmlgrep -parse-html '/html/body/form/table/tr[position()>3 and position()<=23]/td' | perl -MList::MoreUtils=natatime -e 'chomp(@a = <>); $it=natatime 8, @a; while (@vals = $it->()) { print join("|", @vals), "\n" }'|grep -v Druckansicht ; \
+      done ) | ~/src/bbbike/miscsrc/opengeodbgeocode -f 2 - > /tmp/brbunterkunft.bbd
+
+=cut

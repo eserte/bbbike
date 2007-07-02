@@ -821,7 +821,16 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        },
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_005823',
+         'until' => undef,
+         'text' => 'Drakestr. (Lichterfelde) in beiden Richtungen, zwischen Curtiusstr. und Unter den Eichen Fahrbahnunterspülung, Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1034,
+         'data' => 'userdel	2::inwork 3048,4305 3128,4190 3259,4002
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -925,6 +934,36 @@ userdel	2::temp 22196,4847 22138,4661
          'from' => 1183240800,
          'id' => 1054,
          'data' => 'userdel	q4::inwork 27067,12608 27094,12535 27117,12466
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_004418',
+         'until' => 1187215199,
+         'text' => 'Treptower Str. (Treptow) in beiden Richtungen zwischen Kiefholzstr. und Harzer Str. Baustelle Straße vollständig gesperrt (bis Mitte 08/2007)',
+         'from' => 1183412527,
+         'id' => 1055,
+         'data' => 'userdel	2::inwork 13857,8601 14015,8798 14140,8977
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_004242',
+         'until' => 1188597599,
+         'text' => 'Pankower Allee (Reinickendorf) in Richtung Markstr., zwischen Reginhardstr. und Residenzstr. Baustelle, Fahrtrichtung gesperrt (bis 08.2007)',
+         'from' => 1183412580,
+         'id' => 1056,
+         'data' => 'userdel	1::inwork 8211,17585 8095,17574 7998,17564 7841,17551 7675,17538 7587,17532
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005953',
+         'until' => undef,
+         'text' => 'Hauptstr. (Wilhelmsruh) in beiden Richtungen zwischen Schillerstr. und Edelweißstr. Baustelle, Straße vollständig gesperrt (bis auf weiteres)',
+         'from' => undef,
+         'id' => 1057,
+         'data' => 'userdel	q4::inwork 7772,20050 7852,20231
 ',
          'type' => 'handicap'
        }
