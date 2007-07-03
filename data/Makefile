@@ -99,7 +99,7 @@ GERMAN_LOCALE=de_DE.ISO8859-1
 # e.g. debian
 GERMAN_LOCALE=de_DE.ISO-8859-1
 .endif
-SORT_NO_LOCALE=	env LC_ALL=${GERMAN_LOCALE} sort
+SORT_GERMAN_LOCALE=	env LC_ALL=${GERMAN_LOCALE} sort
 
 ## This seems to generate better results:
 COORDS_DATA_SORT_OPTS=	-f -t "|" -k 1,3
@@ -1007,12 +1007,12 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s|2|3|BNP:\d+(:-?\d+)?)(:inwork)?$$'
 .check_$(i)bahnhof2:	$(i)bahnhof Berlin.coords.data
 	grep -i '	$(i)[AB] ' $(i)bahnhof |\
 	    $(SED) -e 's/ *(.*)//' -e 's/	.*//' -e 's/bhf\./bahnhof/' -e 's/Bhf\./Bahnhof/' |\
-	    $(SORT_NO_LOCALE) -u > /tmp/$(i)bahnhof1
+	    $(SORT_GERMAN_LOCALE) -u > /tmp/$(i)bahnhof1
 	grep -i '^$(i)-Bhf' Berlin.coords.data |\
 	    egrep -v 'S-Bhf (Fürstenbrunn)' |\
 	    egrep -v 'U-Bhf (Hauptbahnhof|Unter den Linden|Bundestag)' |\
 	    $(SED) -e 's/ *(.*)//' -e 's/S-Bhf //' -e 's/U-Bhf //' -e 's/|.*//' |\
-	    $(SORT_NO_LOCALE) -u > /tmp/$(i)bahnhof2
+	    $(SORT_GERMAN_LOCALE) -u > /tmp/$(i)bahnhof2
 	diff /tmp/$(i)bahnhof1 /tmp/$(i)bahnhof2
 	@touch $@
 .endfor
@@ -1240,8 +1240,8 @@ check-$(city).coords.data:	.check_$(city)_coords_data
 
 # Check for sortedness and unique records:
 .check_$(city)_coords_data:: $(city).coords.data
-	$(SORT_NO_LOCALE) ${COORDS_DATA_SORT_OPTS} -c $(city).coords.data || \
-	    ( $(SORT_NO_LOCALE) ${COORDS_DATA_SORT_OPTS} $(city).coords.data | diff -u - $(city).coords.data; false )
+	$(SORT_GERMAN_LOCALE) ${COORDS_DATA_SORT_OPTS} -c $(city).coords.data || \
+	    ( $(SORT_GERMAN_LOCALE) ${COORDS_DATA_SORT_OPTS} $(city).coords.data | diff -u - $(city).coords.data; false )
 	$(PERL) -nle '@l=split /\|/;\
 	    if (++$$x{"@l[0..2]"} > 1) { die "Duplicate: @l" }\
 	    if (@l < 2 || @l > 4) { die "Too less/many fields: @l" }\
@@ -1336,7 +1336,7 @@ sort-$(city).coords.data:
 	[ "`uname`" = FreeBSD ] && true || (echo "Sorting probably not correct on `uname`"; false)
 	-@$(WRITEABLE) $(city).coords.data~
 	mv $(city).coords.data $(city).coords.data~
-	$(SORT_NO_LOCALE) ${COORDS_DATA_SORT_OPTS} < $(city).coords.data~ > $(city).coords.data
+	$(SORT_GERMAN_LOCALE) ${COORDS_DATA_SORT_OPTS} < $(city).coords.data~ > $(city).coords.data
 	@$(READABLE) $(city).coords.data
 	touch .check_$(city)_coords_data
 .endfor
