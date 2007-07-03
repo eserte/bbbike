@@ -45,7 +45,7 @@ Fortsetzung der Wolziger Zeile bis zur B101: Qualität? Kann die B101 gequert wer
 Mauerweg zwischen Drusenheimer Weg und Buckower Damm: existiert eine Strecke, wie ist die Qualität? Vielleicht geht es auch weiter Richtung Rudow? (laut "Berliner Umland" witterungsabhängige Strecke)	? 11794,550 11924,594 12519,794 12984,1011
 Mauerweg Rudow: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 14996,1564 15272,778 15403,416 15621,-193 15118,-970
 Mauerweg Rudow: Qualität (laut "Berliner Umland" gut geeigneter Radweg)?	? 18127,-367 18609,375 18668,1021 18610,1077
-Mauerweg Rudow: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 18677,1249 18614,1453 18584,1575 18484,1750 18425,1831 18365,1914 18378,2246
+Mauerweg Rudow: Existiert hier ein Verbindung vom Niederschlemaer Weg aus? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 18677,1249 18614,1453 18584,1575 18447,1727
 Grüner Weg in Marienfelde: Qualität? laut ADFC-Karte gut befahrbar	? 7781,-182 7633,-20 7491,61 7235,205 7032,533 7040,686 7058,844
 Märchenweg/Rübezahlweg: Qualität?	? 14288,19459 14248,19370 14044,19502 13297,19987
 Am Marderberg, kreuzender Weg: genaue Wegführung?	? 14288,19459 14328,19527 14201,19946
@@ -297,7 +297,6 @@ Lindenhagen - Beenz: Qualität?	? 32388,94460 31922,94902 31069,95292 30850,95280
 Teltow Richtung Süden: Qualität? Straßennamen?	? 3377,-366 3589,-673 3615,-757 3781,-889 3970,-918 3765,-1732 3750,-2087
 Teltow Richtung Süden (Bahnstr., Flugplatzstr.): Qualität? Wie geht es weiter?	? 3494,-1950 3417,-2460 3310,-3001 3092,-3093
 An der Werderlake: Qualität?	? 18205,1808 18266,1715
-Glashütter Weg: Qualität?	? 18121,1614 18219,1680 18266,1715 18425,1831
 Rudower Höhe: Qualität?	? 18219,1680 18404,1376 18614,1453
 Erxlebenstr.: Qualität?	? 19726,-32 19626,367
 Mohnweg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 19471,448 19626,367 19728,364 19823,357 20035,348 20098,359 20214,375 20267,375
@@ -914,7 +913,6 @@ Dubrowplatz: Qualität (wahrscheinlich schlechtes Kopfsteinpflaster)? Hat der Dub
 Ilsensteinweg: Qualität?	? -1885,3319 -1899,3298 -1819,3042 -1814,3021 -1724,2743 -1622,2426
 McNair-Promenade: Wie ist die Qualität, die ADFC-Karte meint "schlecht geeignet"?	? 2163,1499 1975,1413 1882,1376 1785,1338
 Adele-Sandrock-Str.: Qualität der Straße (betoniert, asphaltiert oder etwas anderes)?	? 25172,14384 25018,14466 25006,14483 24981,14550 24951,14649 24937,14693 24939,14715 24963,14760 24989,14783 25080,14812 25103,14838
-Benatzkyweg - Glashütter Weg: Qualität (Parkweg/wassergebundene Decke)?	? 17902,1517 17969,1521 18021,1552 18121,1614
 Hobrechtsfelde - Gorinsee: Qualität (wahrscheinlich fester Sandweg)?	? 16301,29192 15621,29290
 Laufener Str.: Qualität?	? 18409,6069 18473,6265
 Zieten- und Wilhelmplatz: sind die Plätze ausgeschildert?	? 8990,11719 9076,11743 9173,11770
@@ -955,6 +953,7 @@ Murchin - Daugzin: Qualität?	? 30258,167203 30045,167370 29826,167541 29631,1675
 Libnow - Lassan: Qualität? (möglicherweise nur ein Feldweg)	? 31996,167054 32020,167181 32132,167279 32157,167349 32145,167413 31739,168418
 Rankwitz - Lassen: Daten zur Fähre	? 43031,170709 42343,170953 38875,172989 37809,172428
 Freest - Peenemünde: Daten zur Fähre	? 28887,192995 29771,193403 30100,193330 30496,192617 31301,192513 31355,192739
+Niederschlemaer Weg: Qualität?	? 18447,1727 18444,1782 18425,1831
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -1023,6 +1022,8 @@ Eastgate (genaue Position?)	? 19788,15452
 Müncheberg, Turm (genaue Bezeichnung?)	? 60803,11559
 Müncheberg, Turm (genaue Bezeichnung?)	? 60306,11906
 Gemeinsamer Rad- und Gehweg parallel zur Straße (Ist der Radweg ein Zweirichtungsradweg? Auf welcher Seite führt der Radweg?)	? 30390,-3443 29780,-3563 28499,-3409 28073,-3255 27906,-3136
+An der Nordbahn: mäßiges Pflaster (?) (Qualität des Weges zwischen Interessentenweg und Lengeder Str.?)	? 7184,19663 6669,20129
+Florastr.: kurzes Stück Kopfsteinpflaster (existiert der Kopfsteinpflaster-Abschnitt nach den Bauarbeiten noch?)	? 10846,17992 10722,17940
 Wuhlewanderweg: unbefestiger Weg/Schotterweg (der Abschnitt nördlich des Bahnhofs Wuhletal ist noch nicht fertiggestellt)	? 22199,12955 22036,12367 21998,12204 21970,12153
 Marienhöher Weg: Kopfsteinpflaster (mäßiges oder schlechtes Kopfsteinpflaster?)	? 8353,5188 8185,5209 8009,5000 7913,4996 7861,5029 7851,5125 7929,5250
 Parkstr.: Kopfsteinpflaster (stimmt das?)	? 9029,6360 9143,6415
@@ -1080,7 +1081,7 @@ Briesen - Petersdorf: guter bis mäßiger Asphalt (nach den Bauarbeiten (2007-05-1
 Petershagen: kleinteiliges Kopfsteinpflaster, OK (nach den Bauarbeiten (2006-09-30) Asphalt?)	? 74740,378 74246,584 73775,831
 Rüdersdorfer Str. (Schöneiche): schlechtes bis mäßiges Kopfsteinpflaster (wie ist die Qualität ab Berliner Str. Richtung Süden: genauso schlecht?)	? 31512,7971 31446,7915
 Brandenburgische Str.: Betonstraße (wie ist die Qualität ab Berliner Str. Richtung Süden?)	? 30496,7915 30587,8490
-Kliestow - Wüste Kunersdorf: Feldwege (Qualität des Feldwegs mäßig und nicht schlecht?)	? 86555,-2783 86261,-1514 85834,181 86352,553
+Kliestow - Wüste Kunersdorf: Feldwege (Qualität des Feldwegs mäßig und nicht schlecht?)	? 86555,-2783 86261,-1514 85834,181 86307,581
 Mühlental - Lebus: Feldwege (Qualität des Feldwegs mäßig und nicht schlecht?)	? 85662,1959 85885,2842 85956,3025 85940,3299
 Mützlitz: gutes Kopfsteinpflaster (nach Ende der Bauarbeiten (2006-10-06) vielleicht asphaltiert?)	? -50578,15920 -50493,15837 -50268,15901
 Melzow - Warnitz: querliegende Betonplatten (Betonplatten zumindest auf der nördlichen Seite)	? 41910,85359 41901,85524 42245,86063
@@ -1103,6 +1104,7 @@ Scharfestr. (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Aut
 Jugendweg (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
 Kienhorststr. (Gilt die Einbahnstraßenregelung zwischen Ollenhauerstr. und Waldowstr. auch für Radfahrer oder nur für Autofahrer?)	? 5553,18542 5324,18560
 Riensbergstr. (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? -740,15306 -764,15480
+Triniusstr. (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? 18339,6660 18262,6606
 tragen (zwei kurze Treppen) (wo sind die Treppen genau?)	? 9453,6415
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position ist vielleicht nicht ganz genau)	? -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9046,22376
 Radwege unterschiedlicher Form und Qualtität (genauer spezifizieren)	? -9723,-2451 -9700,-2459 -9534,-2515 -9462,-2540 -9075,-2664 -8865,-2732 -8500,-2856 -8428,-2886 -8283,-2917 -7873,-3094 -7060,-3124 -6810,-3151

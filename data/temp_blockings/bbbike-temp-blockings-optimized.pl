@@ -25,7 +25,7 @@ push @temp_blocking,
        undef,
        {
          'source_id' => 'INKO_77722',
-         'until' => 1185833757,
+         'until' => 1183932000,
          'text' => 'Pistoriusstr. (Pankow) Richtung Berliner Allee zwischen Hamburger Platz und Roelckstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Mitte 2007) (10:34) ',
          'from' => undef,
          'id' => 671,
@@ -835,15 +835,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        undef,
        undef,
        undef,
-       {
-         'until' => 1183413600,
-         'text' => 'B 087 Luckau-Herzberg OD Schlieben, zw. Horstweg u. Am Mühlberg Moienmarkt Vollsperrung 26.06.2007-02.07.2007 ',
-         'from' => 1182722400,
-         'id' => 1039,
-         'data' => 'userdel	q4::temp 10891,-76066 11354,-75979
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1198191600,
          'text' => 'L 235 Gielsdorf-Werneuchen OD Werneuchen Straßenausbau Vollsperrung 29.08.2007-20.12.2007 ',
@@ -886,18 +878,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005925',
-         'until' => 1183413600,
-         'text' => 'Altstadt Köpenick Straße Alt-Köpenick und umliegende Straßen Veranstaltung, Straße vollständig gesperrt (bis 02.07.07 16 Uhr)',
-         'from' => 1183280053,
-         'id' => 1048,
-         'data' => 'userdel	2::temp 22263,4671 22138,4661 22111,4562 22093,4499
-userdel	2::temp 22312,4593 22162,4546 22111,4562
-userdel	2::temp 22196,4847 22138,4661
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -966,6 +947,52 @@ userdel	2::temp 22196,4847 22138,4661
          'data' => 'userdel	q4::inwork 7772,20050 7852,20231
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1188079200,
+         'text' => 'B 112 zw. Frankfurt (O) und Lebus Gründungsarb. für Radwegbau Vollsperrung 12.07.2007-25.08.2007 ',
+         'from' => 1184104800,
+         'id' => 1058,
+         'data' => 'userdel	2::inwork 86392,-776 86307,581
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1185919200,
+         'text' => 'L 063 Berliner Str., Finsterwalder Str. Bahnübergang in der OD Lauchhammer Gleiserneuerung Vollsperrung 18.07.2007-31.07.2007 ',
+         'from' => 1184623200,
+         'id' => 1059,
+         'data' => 'userdel	2::inwork 35482,-103562 35379,-103141 35072,-102150
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1185746400,
+         'text' => 'L 075 Knoten mit B 96a bei Waßmannsdorf Umbau Knotenpunkt Vollsperrung 11.07.2007-29.07.2007 ',
+         'from' => 1184018400,
+         'id' => 1060,
+         'data' => 'userdel	2::inwork 14993,-4196 15053,-4328
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1184277600,
+         'text' => 'B 002 Raumerstr. OD Eberswalde, zw. Brunnenstr. und R.-Breitscheid-Str. Straßenbauarbeiten Vollsperrung 03.07.2007-12.07.2007 ',
+         'from' => 1183327200,
+         'id' => 1061,
+         'data' => 'userdel	2::inwork 37245,47419 37153,47300
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20070703.1505.81257.html',
+         'until' => 1230764399,
+         'text' => 'Straßen- und Leitungsbauarbeiten in der Pistoriusstraße zwischen Hamburger Platz (Gustav-Adolf-Straße) und Am Steinberg, Einbahnstraße Richtung Hamburger Platz (09.07.2007 bis Ende 2008) ',
+         'from' => 1183495734,
+         'id' => 1062,
+         'data' => 'userdel	1::inwork 12693,16700 12486,16791 12269,16881
+',
+         'type' => 'gesperrt'
        }
      
 );

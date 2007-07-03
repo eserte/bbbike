@@ -3477,7 +3477,7 @@ EOF
        text  => 'B 167 Eisenbahn- u. Heegermühler Str. OD Eberswalde, Eisenbahnbrücke Ersatzneubau Brücke Vollsperrung; Umleitung 14.12.2005-16.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 36913,48088 36403,48168
+userdel	2 36937,48074 36403,48168
 EOF
      },
      { from  => 1136242800, # 2006-01-03 00:00
@@ -5663,7 +5663,7 @@ userdel	q4::inwork 7852,20231 7772,20050 7726,19952
 EOF
      },
      { from  => undef, # 
-       until => 1185833757, # 2007-07-31 00:15
+       until => Time::Local::timelocal(reverse(2007-1900,7-1,9,0,0,0)), # 1185833757, # 2007-07-31 00:15
        text  => 'Pistoriusstr. (Pankow) Richtung Berliner Allee zwischen Hamburger Platz und Roelckstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Mitte 2007) (10:34) ',
        type  => 'gesperrt',
        source_id => 'INKO_77722',
@@ -7105,7 +7105,7 @@ userdel	2::inwork -198,37506 -591,37970
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1183500687, # XXX aufgehoben von steini
        text  => 'Paul-Schwarz-Promenade zwischen Krahmerstr. und Klinikum bis auf weiteres wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -8924,6 +8924,47 @@ EOF
        source_id => 'IM_005953',
        data  => <<EOF,
 userdel	q4::inwork 7772,20050 7852,20231
+EOF
+     },
+     { from  => 1184104800, # 2007-07-11 00:00
+       until => 1188079200, # 2007-08-26 00:00
+       text  => 'B 112 zw. Frankfurt (O) und Lebus Gründungsarb. für Radwegbau Vollsperrung 12.07.2007-25.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 86392,-776 86307,581
+EOF
+     },
+     { from  => 1184623200, # 2007-07-17 00:00
+       until => 1185919200, # 2007-08-01 00:00
+       text  => 'L 063 Berliner Str., Finsterwalder Str. Bahnübergang in der OD Lauchhammer Gleiserneuerung Vollsperrung 18.07.2007-31.07.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 35482,-103562 35379,-103141 35072,-102150
+EOF
+     },
+     { from  => 1184018400, # 2007-07-10 00:00
+       until => 1185746400, # 2007-07-30 00:00
+       text  => 'L 075 Knoten mit B 96a bei Waßmannsdorf Umbau Knotenpunkt Vollsperrung 11.07.2007-29.07.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 14993,-4196 15053,-4328
+EOF
+     },
+     { from  => 1183327200, # 2007-07-02 00:00
+       until => 1184277600, # 2007-07-13 00:00
+       text  => 'B 002 Raumerstr. OD Eberswalde, zw. Brunnenstr. und R.-Breitscheid-Str. Straßenbauarbeiten Vollsperrung 03.07.2007-12.07.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 37245,47419 37153,47300
+EOF
+     },
+     { from  => 1183495734, # 2007-07-03 22:48
+       until => 1230764399, # 2008-12-31 23:59
+       text  => 'Straßen- und Leitungsbauarbeiten in der Pistoriusstraße zwischen Hamburger Platz (Gustav-Adolf-Straße) und Am Steinberg, Einbahnstraße Richtung Hamburger Platz (09.07.2007 bis Ende 2008) ',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20070703.1505.81257.html',
+       data  => <<EOF,
+userdel	1::inwork 12693,16700 12486,16791 12269,16881
 EOF
      },
     );
