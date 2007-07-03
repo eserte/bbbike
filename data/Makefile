@@ -1382,20 +1382,20 @@ $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd: temp_blockings/bbbike-temp-blocki
 ######################################################################
 # CGPSMAPPER TARGETS
 
-.if exists(/usr/local/bin/cgpsmapper-static)
-CGPSMAPPER?=	/usr/local/bin/cgpsmapper-static
+.if exists(/usr/ports/distfiles/cgpsmapper/cgpsmapper0081static)
+CGPSMAPPER?=	/usr/ports/distfiles/cgpsmapper/cgpsmapper0081static
 .elif exists(/usr/ports/distfiles/from_vran/cgpsmapper/cgpsmapper0081static)
 CGPSMAPPER?=	/usr/ports/distfiles/from_vran/cgpsmapper/cgpsmapper0081static
 .else
-CGPSMAPPER?=	/usr/ports/distfiles/cgpsmapper/cgpsmapper0081static
+CGPSMAPPER?=	/usr/local/bin/cgpsmapper-static
 .endif
 
-.if exists(/usr/local/bin/sendmap17Lstatic)
-SENDMAP?=	/usr/local/bin/sendmap17Lstatic
+.if exists(/usr/ports/distfiles/cgpsmapper/sendmap17Lstatic)
+SENDMAP?=	/usr/ports/distfiles/cgpsmapper/sendmap17Lstatic
 .elif exists(/usr/ports/distfiles/from_vran/cgpsmapper/sendmap17Lstatic)
 SENDMAP?=	/usr/ports/distfiles/from_vran/cgpsmapper/sendmap17Lstatic
 .else
-SENDMAP?=	/usr/ports/distfiles/cgpsmapper/sendmap17Lstatic
+SENDMAP?=	/usr/local/bin/sendmap17Lstatic
 .endif
 
 .if ${HOSTNAME} == "devpc01.iconmobile.de"
@@ -1422,7 +1422,7 @@ cgpsmapper-output:	${CGPSMAPPER_MP_FILES}
 
 cgpsmapper-images:	${CGPSMAPPER_IMG_FILES}
 
-cgpsmapper-upload:	cgpsmapper-images
+cgpsmapper-upload:	${SENDMAP} cgpsmapper-images
 	@echo "Approx. upload time: half an hour for 1,7 MB data"
 	-${SENDMAP} ${GPSPORT} ${SENDMAP_ARGS} ${CGPSMAPPER_IMG_FILES}
 
@@ -1443,9 +1443,19 @@ ${PERSISTENTTMPDIR}/fragezeichen.mp:	${BBD2POLISH} \
 	${BBD2POLISH} -mapset fragezeichen > $@
 
 .for i in ${CGPSMAPPER_FILES}
-${PERSISTENTTMPDIR}/$i.img: ${PERSISTENTTMPDIR}/$i.mp
+${PERSISTENTTMPDIR}/$i.img: ${CGPSMAPPER} ${PERSISTENTTMPDIR}/$i.mp
 	-${CGPSMAPPER} ${PERSISTENTTMPDIR}/$i.mp
 .endfor
+
+${SENDMAP}:
+	wget http://www.cgpsmapper.com/download/sendmap17Lstatic.gz -O /tmp/sendmap17Lstatic.gz
+	gunzip /tmp/sendmap17Lstatic.gz
+	sudo install /tmp/sendmap17Lstatic ${SENDMAP}
+
+${CGPSMAPPER}:
+	wget http://www.cgpsmapper.com/download/cgpsmapper-static.gz -O /tmp/cgpsmapper-static.gz
+	gunzip /tmp/cgpsmapper-static.gz
+	sudo install /tmp/cgpsmapper-static ${CGPSMAPPER}
 
 ######################################################################
 
