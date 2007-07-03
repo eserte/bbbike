@@ -735,7 +735,7 @@ ${PERSISTENTTMPDIR}/XXX.bbd:	${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.XXX-|} \
 	mv $@~ $@
 
 ${PERSISTENTTMPDIR}/plz-b.bbd:	$(PERSISTENTTMPDIR)/plz.sql
-	grep -i berlin $> | $(MISCSRCDIR)/parse_mapbender_plz.pl > $@
+	grep -i berlin $> | perl $(MISCSRCDIR)/parse_mapbender_plz.pl > $@
 
 $(PERSISTENTTMPDIR)/plz.sql:	$(PERSISTENTTMPDIR)/plz.zip
 	cd `dirname $>` && unzip -q -o `basename $>`
