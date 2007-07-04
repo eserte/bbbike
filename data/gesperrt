@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.164 2007/06/15 20:59:38 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.165 2007/07/04 20:38:04 eserte Exp $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -345,7 +345,7 @@ Talstr.	1 11776,16753 11825,16666
 Scharfestr.	1 758,3417 935,3430
 Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18447,8818
 Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20775,16977
-(Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20401,16189 20487,16392
+(Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20394,16162 20487,16392
 Jugendweg	1 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
 Boschpoler Platz	1 20540,13773 20665,13759
 Kienbergstr.	1 21287,14963 21225,14907 21217,14721 21122,14713
@@ -368,6 +368,8 @@ DGZ-Ring	1 12989,16921 12911,17021 12877,17039 12853,17024 12810,16994 12789,169
 Riensbergstr.	1 -740,15306 -764,15480
 Saganer Str.: Bahngelände	2 16654,9748 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159
 Triniusstr.	1 18339,6660 18262,6606
+Franz-Stenzer-Str.	1 19876,15644 19974,15594 20044,15585 20111,15609 20181,15658 20399,15744 20508,15792 20586,15947 20610,15993 20636,16046
+Planetenstr.	1 15175,7221 15056,7198 14951,7163
 Weinbergstr.	1 -13519,-625 -13733,-722 -13815,-749
 Weinbergstr.	1 -13519,-625 -13257,-512
 Am Kanal	1 -12839,-1342 -12718,-1327
@@ -478,6 +480,8 @@ Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Ringbahnstr.	1s 8717,6965 8447,6964
 Björnsonstr.	1s 10209,16674 10197,16528
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
+Blumberger Damm -> Fridolinweg: Mittelstreifen	3 21521,14943 21408,14591 21450,14576
+Fridolinweg -> Blumberger Damm: Mittelstreifen	3 21450,14576 21408,14591 21381,14506
 Schönholzer Str. -> Wollankstr.: Straßenbahn auf der Fahrbahn	3 10089,18180 10054,18210 10027,18165
 Pohlestr. -> Müggelheimer Str.: Straßenbahntrasse	3 22831,4070 22812,4236 22686,4310
 Müggelheimer Str. -> Pohlestr.: Straßenbahntrasse	3 22967,4144 22812,4236 22831,4070
@@ -751,7 +755,7 @@ Stromstr. -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3 6201,13058 61
 Stromstr. -> Bundesratufer: unpassierbarer Mittelstreifen	3 6177,12920 6185,12968 6131,12978
 Bundesratufer -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3 6131,12978 6185,12968 6200,12971
 Bundesratufer -> Stromstr.: unpassierbarer Mittelstreifen	3 6131,12978 6185,12968 6201,13058
-Alfred-Döblin-Str. -> Märkische Allee: Linksabbiegen verboten	3 20286,16494 20219,16523 20111,16316
+Alfred-Döblin-Str. -> Märkische Allee: Linksabbiegen verboten	3 20286,16494 20219,16523 20109,16305
 Märkische Allee -> Alfred-Döblin-Str.: Linksabbiegen verboten	3 20339,16752 20219,16523 20286,16494
 zur Märkischen Allee -> Märkische Allee: Linksabbiegen verboten	3 20675,17515 20691,17463 20717,17516
 Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3 20853,17528 20717,17516 20691,17463

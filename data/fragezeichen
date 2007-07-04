@@ -863,7 +863,6 @@ Seestr. (Hermsdorf): Qualität?	? 4768,23045 4742,23078 4728,23100 4684,23156 461
 Sachsenhauser Str.: Qualität?	? 10454,6281 10404,5969
 Steinförder Str. - Menz: Qualität? Teil des Radwegs Berlin - Kopenhagen?	? -10475,85837 -10453,85639 -10301,85444 -10356,85146 -9850,84800
 Steinförde - Großmenow: Qualität?	? -12573,86500 -12599,86520 -13025,86596 -13293,86590 -13519,86715 -13924,86895 -14177,87056 -14445,87123 -14762,87137
-Parallelstr. (Lichterfelde): Qualität?	? 5028,1783 5198,1853 5335,1913 5431,1956 5489,1981 5592,2021 5720,2081
 Gartenstr. (Elstal): Qualität?	? -18164,14194 -18123,14276 -18017,14480 -17979,14574 -17937,14727 -17871,14855 -17821,14925 -17763,15004
 Spechthausener Str. (Eberswalde): Qualität?	? 34356,48775 34378,48552 34354,48308 34372,48205 34451,47693 34518,47449 34475,47425
 Zoostr. (Eberswalde): Qualität?	? 34475,47425 34603,47145 34622,46834 34939,46907 35030,47010 35180,47123
@@ -954,6 +953,11 @@ Libnow - Lassan: Qualität? (möglicherweise nur ein Feldweg)	? 31996,167054 32020
 Rankwitz - Lassen: Daten zur Fähre	? 43031,170709 42343,170953 38875,172989 37809,172428
 Freest - Peenemünde: Daten zur Fähre	? 28887,192995 29771,193403 30100,193330 30496,192617 31301,192513 31355,192739
 Niederschlemaer Weg: Qualität?	? 18447,1727 18444,1782 18425,1831
+Brusebergstr.: Qualität? (Kopfsteinpflaster bis Lübener Weg, danach betoniert oder asphaltiert?) Gibt es Radwege für Radfahrer?	? 6383,18033 6307,18039 6145,18016 6115,18042 6086,18162 6045,18305 6060,18534
+Lorenzstr./Parallelstr.: Ampel?	? 5720,2081
+Parallelstr.: endet die Parallelstr. am südwestlichen oder am nordöstlichen Teil der Luisenstr.?	? 5807,2117 5825,2125
+Glindowseestr.: zwischen Ruppiner-See-Str. und Am Havelgarten bereits fertiggestellt?	? -1553,16695 -1443,16676
+Straße 339: Qualität der Straße (teilweise unbefestigter Weg, teilweise Asphalt?)	? -8450,15702 -8479,15609 -8558,15306 -8613,15083
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -1022,7 +1026,6 @@ Eastgate (genaue Position?)	? 19788,15452
 Müncheberg, Turm (genaue Bezeichnung?)	? 60803,11559
 Müncheberg, Turm (genaue Bezeichnung?)	? 60306,11906
 Gemeinsamer Rad- und Gehweg parallel zur Straße (Ist der Radweg ein Zweirichtungsradweg? Auf welcher Seite führt der Radweg?)	? 30390,-3443 29780,-3563 28499,-3409 28073,-3255 27906,-3136
-An der Nordbahn: mäßiges Pflaster (?) (Qualität des Weges zwischen Interessentenweg und Lengeder Str.?)	? 7184,19663 6669,20129
 Florastr.: kurzes Stück Kopfsteinpflaster (existiert der Kopfsteinpflaster-Abschnitt nach den Bauarbeiten noch?)	? 10846,17992 10722,17940
 Wuhlewanderweg: unbefestiger Weg/Schotterweg (der Abschnitt nördlich des Bahnhofs Wuhletal ist noch nicht fertiggestellt)	? 22199,12955 22036,12367 21998,12204 21970,12153
 Marienhöher Weg: Kopfsteinpflaster (mäßiges oder schlechtes Kopfsteinpflaster?)	? 8353,5188 8185,5209 8009,5000 7913,4996 7861,5029 7851,5125 7929,5250
@@ -1045,6 +1048,7 @@ Dohlengrund: Asphalt (wie ist die Qualität zwischen Grabensprung und Köpenicker 
 Salzachstr.: unbefestigt, fester Erdboden (wo genau sind die Kopfsteinpflaster-/Asphaltabschnitte?)	? -2122,3593 -1998,3610
 Schrimmer Weg: schlechtes Kopfsteinpflaster (gilt das "schlechte Kopfsteinpflaster" auch für den Gehweg-Abschnitt Richtung Waltersdorfer Chaussee?)	? 17879,127 17818,93
 Amalienhofstr.: schlechtes Kopfsteinpflaster (wie ist die Qualität zwischen Ulrikenstr. und Lutoner Str.?)	? -5118,13053 -5100,13081 -5073,13097 -4871,13178 -4771,13214
+Planetenstr.: schlechtes Kopfsteinpflaster (gilt das "schlechte Kopfsteinpflaster" für die gesamte Straße oder nur für einen Abschnitt?)	? 14567,6810 14620,6876 14751,7007 14803,7056 14902,7148 14951,7163 15056,7198 15175,7221 15185,7234
 Fuchsienweg: Beton (Kann in die Stubenrauchstrße links eingebogen werden?)	? 16090,3079 16376,2862 16573,2715
 Ortsdurchfahrt Buckow: schlechtes Kopfsteinpflaster (nach den Bauarbeiten (2006-12-31) vielleicht asphaltiert?)	? 55920,18769 55988,18385 55623,17923 55217,17672
 Jühnsdorf: Asphalt (existiert durch Jühnsdorf ein Radweg?)	? 9792,-12090 9345,-11425 9472,-11297 9578,-10891
@@ -1090,7 +1094,7 @@ Seeburger Chaussee: mäßig, teils Kopfsteinpflaster, teils Asphalt (kann sich mit
 Reichenberg: grobes Kopfsteinpflaster (genauer Abschnitt fehlt)	? 58453,24209 58429,23868 58340,23653
 Dianastr.: gute Qualität (asphaltiert oder betoniert?)	? -8458,-2461 -8302,-2469 -8244,-2373 -8191,-2259 -8173,-2151
 Rollwitz - Damerow: Kopfsteinpflaster/Feldweg (genauere Qualitätsbeschreibung fehlt)	? 46872,118656 46914,117945 47156,116507 47087,115725
-Marzahner Promenade - Mühlenbecker Weg: Fußgänger (Stimmt das?)	? 20222,15519 20150,15678
+Marzahner Promenade - Mühlenbecker Weg: Fußgänger (Stimmt das?)	? 20222,15519 20181,15658 20150,15678
 X (Hat die Hosemannstr. Vorfahrt vor der Rietzestr.?)	? 12428,15275 12472,15356 12559,15524
 Barsekowstr. (unbeleuchtet?)	? 5344,4672 5417,4647 5476,4626 5589,4617
 Stadtpark Steglitz (unbeleuchtet?)	? 5589,4617 5747,4697 5765,4693 5931,4659 6114,4709
@@ -1105,6 +1109,7 @@ Jugendweg (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autof
 Kienhorststr. (Gilt die Einbahnstraßenregelung zwischen Ollenhauerstr. und Waldowstr. auch für Radfahrer oder nur für Autofahrer?)	? 5553,18542 5324,18560
 Riensbergstr. (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? -740,15306 -764,15480
 Triniusstr. (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? 18339,6660 18262,6606
+Planetenstr. (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? 15175,7221 15056,7198 14951,7163
 tragen (zwei kurze Treppen) (wo sind die Treppen genau?)	? 9453,6415
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position ist vielleicht nicht ganz genau)	? -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9046,22376
 Radwege unterschiedlicher Form und Qualtität (genauer spezifizieren)	? -9723,-2451 -9700,-2459 -9534,-2515 -9462,-2540 -9075,-2664 -8865,-2732 -8500,-2856 -8428,-2886 -8283,-2917 -7873,-3094 -7060,-3124 -6810,-3151

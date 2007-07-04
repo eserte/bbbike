@@ -266,9 +266,6 @@ Promenadenweg (Kleinmachnow): Asphalt, Q0, q4(???), Frage: Gehwegverbindung zum 
 Widosteig: gutes Kopfsteinpflaster, Q1	? 19876,984 19934,1102
 #: by: Thomas Kunz:
 Heimgartenstraße: Asphalt, Q0	? 23537,4238 23657,4255 23880,4280 24107,4309
-#: by: Burkhard Heine:
-#: by: Markus Hilbich:
-Salzunger Pfad: guter Asphalt, Q0, enge Straße, Kinder q1, RW6	? 5006,1445 4993,1520 4981,1567 4968,1563 4942,1649
 #: by: anonymous
 Männertreuweg: guter Asphalt, Q0 (wobei es im Luftbild eher wie Beton aussieht), eng, parkende Autos (q1); existiert eine Verbindung zum Weg zum Teltowkanal?	? 16631,3292 16599,3316 16473,3417 16340,3517
 #: by: Heinz Langhans:
@@ -710,7 +707,7 @@ Spreeradweg/Gurkenradweg: Alt Schadow - Leibsch: Qualität?	? 48393,-31006 48200,
 Köthener See: Qualität?	? 40118,-36709 40012,-36612 39500,-36487 39312,-36212 38975,-36275 38775,-36150
 Groß Wasserburg - Krausnick (Hofjagdradweg): Qualität?	? 41687,-38100 41462,-38325 41475,-38750 41700,-39425 41012,-40575 41000,-40763
 Köthen - Krausnick (Gurkenradweg): Qualität?	? 39070,-36825 38750,-37212 38087,-37775 37875,-38037 39187,-38325 39625,-38175 40125,-38275 40337,-38625 40150,-39037 40500,-40325 40763,-40888
-#An den Rohrbruchwiesen: Qualität? Teilstrecke nur für Radfahrer geöffnet?	? -1655,16813 -1457,16755 -1434,16609 -1351,16587 -1321,16564
+#An den Rohrbruchwiesen: Qualität? Teilstrecke nur für Radfahrer geöffnet?	? -1655,16813 -1467,16753 -1434,16609 -1351,16587 -1321,16564
 Fabrikstr. (Hennigsdorf): Qualität? Hauptstraße?	? -3018,25556 -3020,25628 -3099,25732 -3057,26034 -3209,26317
 Maurerstr. (Hennigsdorf): Qualität? Hauptstraße?	? -3209,26317 -3297,26805 -3334,27381 -3473,27393
 Velten - Leegebruch - Oranienburg: Qualität?	? -5799,33475 -4914,33432 -4281,33584 -4237,33694 -3757,33792 -3888,34218 -3757,34283 -4063,34720 -4052,34938 -4357,35168 -4357,35506 -4641,36347 -4226,36511 -4150,36445 -3222,37111 -1360,37506 -820,37363 -754,36980 -579,36893
@@ -1376,7 +1373,6 @@ Seestr. (Hermsdorf): Qualität?	? 4768,23045 4742,23078 4728,23100 4684,23156 461
 Sachsenhauser Str.: Qualität?	? 10454,6281 10404,5969
 Steinförder Str. - Menz: Qualität? Teil des Radwegs Berlin - Kopenhagen?	? -10475,85837 -10453,85639 -10301,85444 -10356,85146 -9850,84800
 Steinförde - Großmenow: Qualität?	? -12573,86500 -12599,86520 -13025,86596 -13293,86590 -13519,86715 -13924,86895 -14177,87056 -14445,87123 -14762,87137
-Parallelstr. (Lichterfelde): Qualität?	? 5028,1783 5198,1853 5335,1913 5431,1956 5489,1981 5592,2021 5720,2081
 Gartenstr. (Elstal): Qualität?	? -18164,14194 -18123,14276 -18017,14480 -17979,14574 -17937,14727 -17871,14855 -17821,14925 -17763,15004
 Spechthausener Str. (Eberswalde): Qualität?	? 34356,48775 34378,48552 34354,48308 34372,48205 34451,47693 34518,47449 34475,47425
 Zoostr. (Eberswalde): Qualität?	? 34475,47425 34603,47145 34622,46834 34939,46907 35030,47010 35180,47123
@@ -1477,3 +1473,11 @@ Libnow - Lassan: Qualität? (möglicherweise nur ein Feldweg)	? 31996,167054 32020
 Rankwitz - Lassen: Daten zur Fähre	? 43031,170709 42343,170953 38875,172989 37809,172428
 Freest - Peenemünde: Daten zur Fähre	? 28887,192995 29771,193403 30100,193330 30496,192617 31301,192513 31355,192739
 Niederschlemaer Weg: Qualität?	? 18447,1727 18444,1782 18425,1831
+#: XXX Eintrag von Frauke (goenner) (Q3 Kopfsteinpflaster whole, Radstreifen RW4) korrespondiert nicht zum Luftbild
+Brusebergstr.: Qualität? (Kopfsteinpflaster bis Lübener Weg, danach betoniert oder asphaltiert?) Gibt es Radwege für Radfahrer?	? 6383,18033 6307,18039 6145,18016 6115,18042 6086,18162 6045,18305 6060,18534
+Lorenzstr./Parallelstr.: Ampel?	? 5720,2081
+Parallelstr.: endet die Parallelstr. am südwestlichen oder am nordöstlichen Teil der Luisenstr.?	? 5807,2117 5825,2125
+#: XXX laut Luftbild von 2006 noch Bauarbeiten
+Glindowseestr.: zwischen Ruppiner-See-Str. und Am Havelgarten bereits fertiggestellt?	? -1553,16695 -1443,16676
+#: XXX anonymer Eintrag (Asphalt Q1, viele Fußgänger), Luftbild widerspricht teilweise
+Straße 339: Qualität der Straße (teilweise unbefestigter Weg, teilweise Asphalt?)	? -8450,15702 -8479,15609 -8558,15306 -8613,15083

@@ -272,15 +272,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Paul-Schwarz-Promenade zwischen Krahmerstr. und Klinikum bis auf weiteres wegen Bauarbeiten gesperrt',
-         'from' => undef,
-         'id' => 844,
-         'data' => 'userdel	2::inwork 4835,3415 4921,3593 4970,3684 5093,3912 5145,3984 5225,4095
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.146 2007/06/21 22:26:36 eserte Exp $
+#: version: $Id: handicap_s-orig,v 4.147 2007/07/04 20:37:57 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # XXX hier br‰uchte man keine zus‰tzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -231,7 +231,7 @@ Verl. P¸cklerstr.: Fuﬂg‰nger, Hundeauslaufgebiet	q1 1558,6729 1364,6691 1170,665
 Weimarer Str.: Fuﬂg‰nger	q1 4092,11338 4077,11226
 Norwegerstr. - Behmstr.: Rampe	q2 10022,16237 10068,16093 10078,16164
 #: add_fragezeichen: Stimmt das?
-Marzahner Promenade - M¸hlenbecker Weg: Fuﬂg‰nger	q1 20222,15519 20150,15678
+Marzahner Promenade - M¸hlenbecker Weg: Fuﬂg‰nger	q1 20222,15519 20181,15658 20150,15678
 Rosemeyerweg: Fuﬂg‰nger	q1 -3758,2678 -3956,2787 -4001,2858
 Moorlake - Krughorn: Fuﬂg‰nger, aber breite Straﬂe	q0 -9606,1389 -9734,1394 -9746,1408 -9770,1482 -9818,1530 -9900,1573 -9975,1564 -10044,1567 -10078,1551
 Krughorn - Volkspark Klein-Glienicke: Fuﬂg‰nger, besonders an schˆnen Tagen	q1 -10078,1551 -10163,1288 -10209,1161 -10273,1088 -10430,848 -10512,683 -10573,564 -10587,471
@@ -255,7 +255,7 @@ Uferweg, Mentzelpark: Fuﬂg‰nger	q1 21487,5425 21600,5221 21684,5079 21735,5003 2
 Heinrich-Lassen-Park: Fuﬂg‰nger (aber Radfahren ist erlaubt!)	q1 6664,8787 6740,8682 6815,8691 6912,8617
 (Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7467,14633
 An der Malche: teilweise eng und kurvig	q1 1127,20434 1060,20557 995,20590 921,20562 864,20646 673,20800
-Am Friedhof: recht enger Radweg	q1 6391,17838 6376,17687 6347,17381
+Am Friedhof: recht enger Radweg	q1 6380,17836 6376,17687 6347,17381
 Kolonie: enger Weg	q1 10198,16929 10209,16674
 Gerlachsheimer Weg: Fuﬂg‰nger	q2 13151,7914 13251,7972
 Wanzlikpfad: eng und kurvig, Fuﬂg‰nger 	q3 13268,7801 13311,7915
@@ -329,8 +329,8 @@ Viktoriapark: Fuﬂg‰nger	q1 9007,9264 8973,9171 9141,9142
 (Parkweg Mˆllendorffstr. - Rathausstr.): Fuﬂg‰nger	q2 15415,12179 15520,12160 15628,12246
 Bleckmannweg: Fuﬂg‰nger, eng	q1 15656,12235 15746,12209
 Hoenerweg: Fuﬂg‰nger, eng	q1 15670,12298 15790,12289 15896,12273
-S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20109,16264 20111,16316
-(S-Bhf. Raoul-Wallenberg-Str. - Alfred-Dˆblin-Str.): Fuﬂg‰nger, Bordsteine	q2 20111,16316 20198,16322
+S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20109,16264 20109,16305
+(S-Bhf. Raoul-Wallenberg-Str. - Alfred-Dˆblin-Str.): Fuﬂg‰nger, Bordsteine	q2 20109,16305 20198,16322
 (S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Fuﬂg‰nger	q1 20286,16494 20543,16488 20865,16440 21102,16415
 (Kinderbad Platsch - Max-Herrmann-Str.): Fuﬂg‰nger	q1 21102,16415 21177,16499 21238,16627
 Wuhlewanderweg: Fuﬂg‰nger	q1 22771,16194 22717,16142 22670,16063 22623,15959 22554,15780 22539,15729 22515,15620 22518,15510 22518,15417 22516,15399 22507,15373 22400,15321 22393,15292 22396,15254 22413,15187 22449,15127
@@ -585,7 +585,7 @@ H¸ttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 Schloﬂpark Charlottenburg: Fuﬂg‰nger	q1 3288,12700 3263,12720 3127,12793 3055,12973 2997,13402 2950,13552
 Spreeweg: eng und un¸bersichtlich	q2 2950,13552 2922,13594 2859,13686 2777,13712 2568,13662 2260,13540
 LefËvrestr.: enge Straﬂe	q1 4987,6902 4993,6812 5034,6745 5137,6651 5215,6643 5372,6663
-(Paul-Lˆbe-Str. - s¸dl. Spreeufer): G‰ste des Biergartens des HDKDW	q4 7741,12581 7670,12576
+(Paul-Lˆbe-Allee - s¸dl. Spreeufer): G‰ste des Biergartens des HDKDW	q4 7741,12581 7670,12576
 (s¸dliches Spreeufer): G‰ste des Biergartens des HDKDW	q4 7745,12603 7710,12585 7670,12576
 #: by: ^^^
 #: by: Michael Heckner:
@@ -835,7 +835,7 @@ Wittenberger Str. (Einkaufzentrum): Fuﬂg‰nger	q3 21654,18048 21719,18017
 Wittenberger Str. (Einkaufzentrum): Fuﬂg‰nger	q3 21590,17918 21647,17889
 (Parkweg an der Neuen Wuhle): wenig Fuﬂg‰nger	q1 20889,17838 20983,17846 21057,17785 21093,17765 21353,17635 21535,17550 21555,17546
 (Parkweg an der neuen Wuhle): wenig Fuﬂg‰nger	q1 21555,17546 21751,17511 21875,17533 21925,17542 22022,17519 22093,17505 22121,17495 22364,17323
-(Radweg an der Straﬂenbahn): wenig Fuﬂg‰nger	q1 21843,18198 21804,18125 21726,17974 21698,17920 21639,17803 21576,17678 21559,17617 21555,17546 21539,17442 21510,17329 21484,17205 21484,17189 21470,17117 21453,17041 21441,16973 21417,16896 21377,16822 21323,16716 21321,16696 21283,16619 21254,16567 21235,16531 21210,16481 21179,16455 21067,16327 21043,16299 21035,16280 20995,16237 20931,16164 20851,16037 20834,15999
+(Radweg an der Straﬂenbahn): wenig Fuﬂg‰nger	q1 21843,18198 21804,18125 21726,17974 21698,17920 21639,17803 21576,17678 21559,17617 21555,17546 21539,17442 21510,17329 21484,17205 21484,17189 21470,17117 21453,17041 21441,16973 21417,16896 21377,16822 21323,16716 21321,16696 21283,16619 21254,16567 21235,16531 21210,16481 21179,16455 21067,16327 21043,16299 21035,16280 20995,16237 20931,16164 20851,16037 20839,15978
 Wuhlewanderweg: Spazierg‰nger	q1 22313,18595 22332,18496 22391,18349 22395,18313 22367,18226 22341,18091 22324,18030 22327,17997 22343,17960 22353,17940 22353,17920 22365,17864 22381,17811 22384,17764 22333,17664 22329,17644 22364,17323
 Wuhlewanderweg: Spazierg‰nger	q1 22314,17916 22365,17864
 #: by: ^^^
@@ -957,3 +957,8 @@ William-H.-Tunner-Str.: enge Straﬂe	q0 2375,1037 2336,1111 2163,1499
 Mauserstr.: enge Straﬂe	q1 9165,1014 9139,1043 9218,1226 9314,1451 9420,1700
 #: by: KF Kempowski:
 (Benatzkyweg - Glash¸tter Weg): teilweise nur ein "wilder" Weg durchs Geb¸sch	q2 17902,1517 17969,1521 18021,1552 18121,1614
+#: by: Markus Hilbich: vvv
+Am Pfuhl: enge Straﬂe	q1 5304,1523 5251,1543 5178,1499 5120,1460 5074,1445 5006,1445 4940,1432
+Salzunger Pfad: enge Straﬂe	q1 5006,1445 4993,1520 4981,1567 4968,1563 4942,1649
+Hasselfelder Weg: enge Straﬂe	q1 5045,1675 4942,1649 4855,1616 4800,1582
+#: by: ^^^

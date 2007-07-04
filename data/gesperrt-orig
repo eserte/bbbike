@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.164 2007/06/15 20:59:38 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.165 2007/07/04 20:38:04 eserte Exp $
 #:
 ###################################################################
 #
@@ -397,7 +397,7 @@ Talstr.	1 11776,16753 11825,16666
 Scharfestr.	1 758,3417 935,3430
 Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18447,8818
 Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20775,16977
-(Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20401,16189 20487,16392
+(Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20394,16162 20487,16392
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Jugendweg	1 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
 Boschpoler Platz	1 20540,13773 20665,13759
@@ -431,6 +431,9 @@ Riensbergstr.	1 -740,15306 -764,15480
 Saganer Str.: Bahngelände	2 16654,9748 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Triniusstr.	1 18339,6660 18262,6606
+Franz-Stenzer-Str.	1 19876,15644 19974,15594 20044,15585 20111,15609 20181,15658 20399,15744 20508,15792 20586,15947 20610,15993 20636,16046
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
+Planetenstr.	1 15175,7221 15056,7198 14951,7163
 #
 # Potsdam
 #
@@ -552,6 +555,8 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,125
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
+#: note: Luftbild
+Blumberger Damm: Mittelstreifen	3nocross 21381,14506 21408,14591 21521,14943
 Schönholzer Str.: Straßenbahn auf der Fahrbahn	3nocross 10089,18180 10054,18210 9909,18333
 #: by: stefan: (sw-...)
 Müggelheimer Str.: Straßenbahntrasse	3nocross 22686,4310 22812,4236 22967,4144
@@ -596,7 +601,7 @@ Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,101
 # XXX del: Treskowallee: Straßenbahntrasse	3nocross 18628,10177 18690,10016 18698,9996 18737,9901
 Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5474,9961 5475,9914 5472,9850
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19694,15149 19735,15155 20266,15456
-Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19670,15435 19582,15221 19506,15002 19466,14910 19422,14793
+Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19582,15221 19506,15002 19466,14910 19422,14793
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9851,10219 9849,10202 9827,10120
 Grunerstr.: Straßentunnelrampe	3nocross 10878,12560 10954,12635 11057,12715 11134,12793
 Bundesallee: Straßentunnelrampe	3nocross 5505,8832 5510,8709 5513,8588
@@ -639,7 +644,7 @@ Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12540,8458
 Karl-Marx-Str.: unbequemes Überqueren wegen parkender Autos	3nocross 12830,8031 12865,7923 12898,7832
 Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11763,8337 11892,8372
 Stromstr.: unpassierbarer Mittelstreifen	3nocross 6201,13058 6185,12968 6177,12920 6168,12846
-Märkische Allee: Linksabbiegen verboten	3nocross 20111,16316 20219,16523 20339,16752
+Märkische Allee: Linksabbiegen verboten	3nocross 20109,16305 20219,16523 20339,16752
 #: XXX: wahrscheinlich (ich wurde durch einen anonymen Kommentar bestätigt)
 Märkische Allee: Linksabbiegen verboten	3nocross 20512,17101 20691,17463 20717,17516 20843,17745 20889,17838 20912,17872 21009,18055
 Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17703,17990 17843,18078
