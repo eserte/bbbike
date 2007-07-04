@@ -22,11 +22,16 @@ use lib ("$FindBin::RealBin/..",
 	);
 
 use Encode qw(encode);
+use Getopt::Long;
 use XML::LibXML;
 
 use Karte::Polar;
 use Karte::Standard;
 use Strassen::Core;
+
+my $use_middle;
+GetOptions("middle!" => \$use_middle)
+    or die "usage?";
 
 my $file = shift || die "Missing .bbd file";
 
@@ -44,8 +49,12 @@ my $s = Strassen->new($file);
 $s->init;
 while(1) {
     my $r = $s->next;
-    last if !@{ $r->[Strassen::COORDS] };
-    for my $c (@{ $r->[Strassen::COORDS] }) {
+    my @c = @{ $r->[Strassen::COORDS] };
+    last if !@c;
+    if ($use_middle) {
+	@c = $c[$#c/2];
+    }
+    for my $c (@c) {
 	my $lm_node = XML::LibXML::Element->new("lm:landmark");
 	my $name = encode("utf-8", $r->[Strassen::NAME]); # this looks like an XML::LibXML bug, shouldn't be necessary!
 	$lm_node->appendTextChild("lm:name", $name);
@@ -70,6 +79,6 @@ if (@landmarks == 0) {
 
 #binmode STDOUT, ':utf8';
 binmode STDOUT, ':raw';
-print $doc->toString;
+print $doc->toString(1); # 1 is for some XML viewers better than 0 (nxml-mode, mozilla), but creates larger files
 __END__
 
