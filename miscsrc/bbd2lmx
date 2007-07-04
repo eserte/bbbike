@@ -21,6 +21,7 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
 
+use Encode qw(encode);
 use XML::LibXML;
 
 use Karte::Polar;
@@ -46,7 +47,8 @@ while(1) {
     last if !@{ $r->[Strassen::COORDS] };
     for my $c (@{ $r->[Strassen::COORDS] }) {
 	my $lm_node = XML::LibXML::Element->new("lm:landmark");
-	$lm_node->appendTextChild("lm:name", $r->[Strassen::NAME]);
+	my $name = encode("utf-8", $r->[Strassen::NAME]); # this looks like an XML::LibXML bug, shouldn't be necessary!
+	$lm_node->appendTextChild("lm:name", $name);
 	my $coordinates_node = $lm_node->addNewChild(undef, "lm:coordinates");
 	my($lon, $lat) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $c));
 	$coordinates_node->appendTextChild("lm:latitude", $lat);
@@ -66,7 +68,8 @@ if (@landmarks == 0) {
     }
 }
 
-binmode STDOUT, ':utf8';
+#binmode STDOUT, ':utf8';
+binmode STDOUT, ':raw';
 print $doc->toString;
 __END__
 
