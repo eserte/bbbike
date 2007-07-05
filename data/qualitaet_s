@@ -1,4 +1,4 @@
-#: version: $Id: qualitaet_s-orig,v 4.203 2007/07/04 20:37:51 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.203 2007/07/04 20:37:51 eserte Exp eserte $
 #: title: Qualit‰t der Straﬂen in Berlin
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
@@ -2772,8 +2772,8 @@ Tile-Br¸gge-Weg: schlechter Asphalt	Q2 2404,20469 2603,20505 2804,20539 2989,205
 Eschachstr.: Verbundsteinpflaster	Q1 2404,20469 2431,20383 2463,20295
 (Waidmannsluster Damm - Eschachstr./Gorkistr.): Verbundsteinpflaster	Q1 2205,20885 2353,20577 2404,20469
 (Eschachstr./Gorkistr. - Leuenberger Zeile): Verbundsteinpflaster	Q1 2463,20295 2596,20022 2716,19776
-Im Erpelgrund: Verbundsteinpflaster	Q1 -1581,22233 -1485,22260 -1288,22210 -973,22117 -827,22039 -629,21975 -385,21921
-Im Erpelgrund: Verbundsteinpflaster	Q1 -354,21997 -586,22064 -735,22103 -973,22117
+Im Erpelgrund: Verbundsteinpflaster	Q1 -1581,22233 -1485,22260 -1288,22210 -973,22117 -827,22039 -629,21975 -428,21933
+Im Erpelgrund: Verbundsteinpflaster	Q1 -403,21991 -586,22064 -735,22103 -973,22117
 (Weg am Nordgraben): m‰ﬂiger fester Sandweg	Q2 3563,20589 3475,20656 3327,20758 3062,20898 2916,20870 2580,20805
 Goldregenstr.: asphaltiert	Q0 24448,10098 24340,10138 24154,10188 23726,10308
 Immortellenweg:: loser Sandweg	Q3 24069,9888 24198,9856 24244,9948 24340,10138 24370,10198
@@ -3500,6 +3500,14 @@ Salzunger Pfad: guter Asphalt	Q0 5006,1445 4993,1520 4981,1567 4968,1563 4942,16
 Hasselfelder Weg: guter Asphalt	Q0 5045,1675 4942,1649 4855,1616 4800,1582
 Glindowseestr.: Asphalt	Q0 -1710,16735 -1553,16695 -1443,16676
 Planetenstr.: schlechtes Kopfsteinpflaster	Q3 14567,6810 14620,6876 14751,7007 14803,7056 14902,7148 14951,7163 15056,7198 15175,7221 15185,7234
+Rue Hyancinte Vincent: guter Asphalt	Q0 3456,16713 3455,16659 3401,16582 3382,16553 3347,16534 3292,16553
+Sachsenwaldstr.: guter Asphalt	Q0 5834,6142 5996,6238 6116,6261
+Moldaustr.: guter Beton	Q0 17511,10577 17702,10525 17826,10493 17829,10516 17950,10481 17915,10350
+An der Schneise: gutes Kopfsteinpflaster	Q1 -481,21513 -475,21560 -487,21631 -489,21709 -464,21828 -428,21933 -403,21991 -362,22105 -313,22233
+Wustermarker Str.: m‰ﬂiger Asphalt	Q1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4750,14393
+Wustermarker Str.: m‰ﬂiger Asphalt	Q1 -4678,14382 -4556,14349 -4382,14303
+Ruwersteig: Asphalt	Q0 19364,13033 19333,13037 19293,13043 19217,13054 19123,13067 19019,13078 18923,13089 18832,13099
+Steinmetzstr (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4168,591 4069,734 4003,831 3892,999
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14202,13140 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953

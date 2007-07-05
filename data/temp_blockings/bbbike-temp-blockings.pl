@@ -1224,7 +1224,7 @@ EOF
        text  => 'Volksradstr. (Friedrichsfelde) in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis 23.05.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 17475,10442 17565,10782 17621,10994
+userdel	q4 17475,10442 17511,10577 17565,10782 17621,10994
 userdel	q4 17475,10442 17427,10259
 EOF
      },
@@ -4835,7 +4835,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_82715',
        data  => <<EOF,
-userdel	1::inwork -3972,15639 -3985,15770 -3735,16205 -3631,16224
+userdel	1::inwork -3972,15639 -3985,15770 -3942,15926 -3735,16205 -3631,16224
 EOF
      },
      { from  => 1150840800, # 2006-06-21 00:00

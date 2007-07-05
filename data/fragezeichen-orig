@@ -231,6 +231,10 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet? in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: Tom Noack:
+Birnenpfad: loser Sandweg, Q3	? -7850,14555 -7762,14542 -7663,14532 -7553,14518
+#: by: anonymous
+Erna-Sack-Str.: sehr gutes Verbundsteinpflaster, Q0, enge Straße	? -7486,13321 -7496,13214
 #: by: Monika Kaiser:
 Thaler Str.: Asphalt, Q0	? 13744,21067 13817,21304 13884,21524 13938,21700
 #: by: sandra (dries):
@@ -589,7 +593,7 @@ Zichow-Lindenwegsiedlung: Qualität? Am westlichen Ende als "Lindenweg" ausgeschi
 Prötzeler Ring und Trappenfelder Pfad: Qualität laut ADFC-Karte gut	? 21951,15918 22134,15615 22073,15172
 Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23279,14785 23379,14514
-Beilsteiner Str.: Qualität (laut ADFC-Karte im südlichen Abschnitt gut geeignet; zumindest in Höhe Allee der Kosmonauten asphaltiert); ist die Straße eine Einbahnstraße, in welcher Rictung offen?	? 18749,12413 18852,13269 18875,13473 18859,14048 18998,14089 19025,14037
+Beilsteiner Str.: Qualität (laut ADFC-Karte im südlichen Abschnitt gut geeignet; zumindest in Höhe Allee der Kosmonauten asphaltiert); ist die Straße eine Einbahnstraße, in welcher Rictung offen?	? 18749,12413 18832,13099 18852,13269 18875,13473 18859,14048 18998,14089 19025,14037
 Bleicheroder Str. - Pasewalker Str.: existiert eine Verbindung für Radfahrer entlang der Tram-Trasse?	? 11805,19071 11937,19175
 Birkenallee (Pankow): Qualität?	? 9718,20498 9655,20703
 #: XXX: ein anonymer Eintrag: eng schlechter straßenbelag, Q2
@@ -731,6 +735,7 @@ Neeberg - Krummin: Qualität?	? 35047,182022 36973,183302
 Wolgast - Ziemitz: Qualität?	? 33315,183598 32822,181806 32653,180114
 Neeberg - Sauzin: Qualität?	? 35047,182022 34133,181849 33287,181934 32822,181806
 Liepe - Grüssow: Qualität?	? 43381,174089 44780,175658
+#: XXX laut Jörg Rother befahrbar (nicht ganz klar), und wie ist die Qualität?
 Schwarzer Weg: möglicherweise ist das letzte Stück zwischen Grenzweg und Nalepastr. nicht befahrbar	? 17295,7336 17284,7175
 Bruno-Walter-Str.: Qualität?	? 5516,2873 5614,2822 5774,3007 5853,3050
 Stolpe - Usedom: Qualität des Radweges? In Stolpe wahrscheinlich Asphalt/Verbundsteinpflaster, westlich von Stolpe wahrscheinlich Asphalt? Genaue Koordinaten?	? 47621,163737 46987,163775 43164,164582
@@ -1302,7 +1307,6 @@ Str. 17: Qualität?	? 7314,7451 7305,7221
 Pöppelmannstr.: Qualität?	? 6505,7010 6530,6786
 Grazer Platz: Überquerung des Platzes in Höhe Pöppelmannstr. möglich? Qualität?	? 6530,6786 6546,6720
 Kauschstr.: Qualität?	? 6517,6717 6538,6499
-Sachsenwaldstr.: Qualität?	? 5834,6142 5996,6238 6116,6261
 #XXX (del by Inez Rankwitz, nicht 100%ig): Segelfliegerdamm: Bauarbeiten mittlerweile beendet?	? 17797,4441 18058,4627
 #: XXX genaue Wegführung?
 Am Schweizer Garten: Qualität?	? 11868,13646 12001,13863
@@ -1378,8 +1382,6 @@ Spechthausener Str. (Eberswalde): Qualität?	? 34356,48775 34378,48552 34354,4830
 Zoostr. (Eberswalde): Qualität?	? 34475,47425 34603,47145 34622,46834 34939,46907 35030,47010 35180,47123
 Falkenberger Chaussee - Pablo-Picasso-Str.: Weg asphaltiert oder betoniert? (laut ADFC-Karte "gut geeignet") Fußgängerfrequenz?	? 17703,17990 17906,17746 17973,17772
 Werkring: Qualität?	? -990,13502 -975,13574 -978,13665 -1000,13764 -1084,13933 -1188,13988
-#: note: laut anonymen Eintrag guter Asphalt und Einbahnstraße Richtung Seegefelder Str., aber noch einige Fragen offen:
-Wustermarker Str.: Qualität, sowohl westlich als auch östlich der Nauener Str. (wahrscheinlich Asphalt)? Können Radfahrer von der Nauener Str. zur Wustermarker Str. gelangen (evtl. Hausdurchfahrt)? Einbahnstraßenregelung nur westlich der Nauener Str.?	? -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4750,14393 -4678,14382 -4556,14349 -4382,14303
 Krottnaurerstr.: Qualität? (direkt südlich der Spanischen Allee wahrscheinlich Kopfsteinpflaster)	? -2390,2539 -2708,2439 -2749,2548 -2776,2660 -2804,2762 -2847,2893
 Krottnaurerstr.: Qualität unter der S-Bahnbrücke?	? -2920,3246 -2948,3290
 Am Kanal, Nebenstraße: Qualität, Einbahnstraße?	? -12542,-1305 -12311,-1238
@@ -1481,3 +1483,5 @@ Parallelstr.: endet die Parallelstr. am südwestlichen oder am nordöstlichen Teil
 Glindowseestr.: zwischen Ruppiner-See-Str. und Am Havelgarten bereits fertiggestellt?	? -1553,16695 -1443,16676
 #: XXX anonymer Eintrag (Asphalt Q1, viele Fußgänger), Luftbild widerspricht teilweise
 Straße 339: Qualität der Straße (teilweise unbefestigter Weg, teilweise Asphalt?)	? -8450,15702 -8479,15609 -8558,15306 -8613,15083
+#: XXX unklarer anonymer Eintrag:
+Perwenitzer Weg: Qualität der Straße? Existiert hier ein Radweg? Ist es möglich, auf den Askanierring zu gelangen?	? -3708,15831 -3829,15868 -3924,15915

@@ -1,5 +1,5 @@
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.203 2007/07/04 20:37:51 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.203 2007/07/04 20:37:51 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -3659,8 +3659,8 @@ Tile-Brügge-Weg: schlechter Asphalt	Q2 2404,20469 2603,20505 2804,20539 2989,205
 Eschachstr.: Verbundsteinpflaster	Q1 2404,20469 2431,20383 2463,20295
 (Waidmannsluster Damm - Eschachstr./Gorkistr.): Verbundsteinpflaster	Q1 2205,20885 2353,20577 2404,20469
 (Eschachstr./Gorkistr. - Leuenberger Zeile): Verbundsteinpflaster	Q1 2463,20295 2596,20022 2716,19776
-Im Erpelgrund: Verbundsteinpflaster	Q1 -1581,22233 -1485,22260 -1288,22210 -973,22117 -827,22039 -629,21975 -385,21921
-Im Erpelgrund: Verbundsteinpflaster	Q1 -354,21997 -586,22064 -735,22103 -973,22117
+Im Erpelgrund: Verbundsteinpflaster	Q1 -1581,22233 -1485,22260 -1288,22210 -973,22117 -827,22039 -629,21975 -428,21933
+Im Erpelgrund: Verbundsteinpflaster	Q1 -403,21991 -586,22064 -735,22103 -973,22117
 (Weg am Nordgraben): mäßiger fester Sandweg	Q2 3563,20589 3475,20656 3327,20758 3062,20898 2916,20870 2580,20805
 #: by: ^^^
 #: by: Peter Störzel: vvv
@@ -5081,6 +5081,22 @@ Glindowseestr.: Asphalt	Q0 -1710,16735 -1553,16695 -1443,16676
 #: by: Olaf (gonxo):
 #: add_fragezeichen: gilt das "schlechte Kopfsteinpflaster" für die gesamte Straße oder nur für einen Abschnitt?
 Planetenstr.: schlechtes Kopfsteinpflaster	Q3 14567,6810 14620,6876 14751,7007 14803,7056 14902,7148 14951,7163 15056,7198 15175,7221 15185,7234
+#: by: Manfred (pussehl):
+Rue Hyancinte Vincent: guter Asphalt	Q0 3456,16713 3455,16659 3401,16582 3382,16553 3347,16534 3292,16553
+#: by: Rainer Prüfert:
+Sachsenwaldstr.: guter Asphalt	Q0 5834,6142 5996,6238 6116,6261
+#: by: J.F. (jofmoher):
+Moldaustr.: guter Beton	Q0- 17511,10577 17702,10525 17826,10493 17829,10516 17950,10481 17915,10350
+#: by: Matthias Kaller:
+An der Schneise: gutes Kopfsteinpflaster	Q1- -481,21513 -475,21560 -487,21631 -489,21709 -464,21828 -428,21933 -403,21991 -362,22105 -313,22233
+#: by: Mirko Grammel: vvv
+#: note: laut anonymen Eintrag "guter Asphalt"
+Wustermarker Str.: mäßiger Asphalt	Q1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4750,14393
+Wustermarker Str.: mäßiger Asphalt	Q1 -4678,14382 -4556,14349 -4382,14303
+#: by: ^^^
+Ruwersteig: Asphalt	Q0 19364,13033 19333,13037 19293,13043 19217,13054 19123,13067 19019,13078 18923,13089 18832,13099
+#: by: W. Koch:
+Steinmetzstr (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4168,591 4069,734 4003,831 3892,999
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
