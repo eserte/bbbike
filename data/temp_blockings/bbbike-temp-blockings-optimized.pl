@@ -349,15 +349,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1183672800,
-         'text' => 'K 7320 Potzlow-Prenzlau Brücke über Mühlgraben in der OL Potzlow Brückenneubau Vollsperrung 19.03.2007-05.07.2007 ',
-         'from' => 1174172400,
-         'id' => 872,
-         'data' => 'userdel	2::inwork 38475,90762 38637,91275 38612,91950
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_004994',
          'until' => 1222812000,
@@ -611,8 +603,8 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        undef,
        undef,
        {
-         'until' => 1184018400,
-         'text' => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 24.05.2007-09.07.2007 ',
+         'until' => 1191189600,
+         'text' => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 24.05.2007-30.09.2007 ',
          'from' => 1179871200,
          'id' => 979,
          'data' => 'userdel	q4::inwork 10115,-8276 11019,-8435
@@ -774,15 +766,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1183672800,
-         'text' => 'L 020 Rosa-Luxemburg-Str. Bahnübergang in der OL Velten Gleisbauarbeiten Vollsperrung 22.06.2007-05.07.2007 ',
-         'from' => 1182376800,
-         'id' => 1027,
-         'data' => 'userdel	2::inwork -5368,30480 -5417,30402 -5496,30288
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1195858800,
@@ -930,16 +914,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005953',
-         'until' => undef,
-         'text' => 'Hauptstr. (Wilhelmsruh) in beiden Richtungen zwischen Schillerstr. und Edelweißstr. Baustelle, Straße vollständig gesperrt (bis auf weiteres)',
-         'from' => undef,
-         'id' => 1057,
-         'data' => 'userdel	q4::inwork 7772,20050 7852,20231
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1188079200,
          'text' => 'B 112 zw. Frankfurt (O) und Lebus Gründungsarb. für Radwegbau Vollsperrung 12.07.2007-25.08.2007 ',
@@ -985,6 +960,35 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'data' => 'userdel	1::inwork 12693,16700 12486,16791 12269,16881
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'IM_006015',
+         'until' => 1183932000,
+         'text' => 'Finsterwalder Str. (Reinickendorf) in beiden Richtungen zwischen Eichhorster Weg und Bruchstückgraben Veranstaltung, Straße vollständig gesperrt (bis 08.07.2007 abends)',
+         'from' => 1183798422,
+         'id' => 1064,
+         'data' => 'userdel	2::temp 6442,22240 6492,22113 6485,21955 6420,21828 6337,21774 5934,21513
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1188079200,
+         'text' => 'L 020 Velten-Borgsdorf zw. OL Pinnow, Havelweg und Berliner Ch., Borgsdorf Grundhafter Straßenbau Vollsperrung 11.07.2007-25.08.2007 ',
+         'from' => 1184018400,
+         'id' => 1065,
+         'data' => 'userdel	2::inwork -736,32837 -409,33522
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1194044400,
+         'text' => 'L 171 Karl-Marx-Str. OD Hohen Neuendorf, Krz. K.-Tucholsky-Str. grundh.Straßenbau, Kreisverk. Vollsperrung 09.07.2007-02.11.2007 ',
+         'from' => 1183845600,
+         'id' => 1066,
+         'data' => 'userdel	q4::inwork 1379,29410 1611,29359
+',
+         'type' => 'handicap'
        }
      
 );

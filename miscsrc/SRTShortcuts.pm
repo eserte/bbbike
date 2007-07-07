@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.32 2006/11/11 14:34:44 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.32 2006/11/11 14:34:44 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -197,12 +197,21 @@ sub add_button {
 		   $main::top->bind("<F12>"=> \&find_nearest_hoehe);
 	       }
 	      ],
-	      [Button => "Add Berlin.coords.data",
-	       -command => sub {
-		   my $f = "$bbbike_rootdir/tmp/Berlin.coords.bbd";
-		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
-		   add_new_layer("p", $f);
-	       }
+	      [Cascade => 'Berlin/Potsdam coords', -menuitems =>
+	       [
+		[Button => "Add Berlin.coords.data",
+		 -command => sub { add_coords_data("Berlin.coords.bbd") },
+		],
+# 		[Button => "Add Berlin.coords.data with labels",
+# 		 -command => sub { add_coords_data("Berlin.coords.bbd", 1) },
+# 		],
+		[Button => "Add Potsdam.coords.data",
+		 -command => sub { add_coords_data("Potsdam.coords.bbd") },
+		],
+# 		[Button => "Add Potsdam.coords.data with labels",
+# 		 -command => sub { add_coords_data("Potsdam.coords.bbd", 1) },
+# 		],
+	       ]
 	      ],
 	      [Button => "Show VMZ diff",
 	       -command => sub { show_vmz_diff() },
@@ -512,6 +521,14 @@ sub default_penalty_fragezeichen {
     $BBBikeEdit::bbd_penalty_file = "$bbbike_rootdir/data/fragezeichen";
 
     BBBikeEdit::build_bbd_penalty_for_search();
+}
+
+# XXX $namedraw does not work
+sub add_coords_data {
+    my($file, $namedraw) = @_;
+    my $f = "$bbbike_rootdir/tmp/$file";
+    if ($main::coord_system ne 'standard') { $f .= "-orig" }
+    add_new_layer("p", $f, NameDraw => $namedraw);
 }
 
 1;

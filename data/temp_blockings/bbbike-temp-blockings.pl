@@ -8241,8 +8241,8 @@ userdel	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
 EOF
      },
      { from  => 1179871200, # 2007-05-23 00:00
-       until => 1184018400, # 2007-07-10 00:00
-       text  => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 24.05.2007-09.07.2007 ',
+       until => 1191189600, # 2007-10-01 00:00
+       text  => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 24.05.2007-30.09.2007 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 10115,-8276 11019,-8435
@@ -8918,7 +8918,7 @@ userdel	1::inwork 8211,17585 8095,17574 7998,17564 7841,17551 7675,17538 7587,17
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1183798449, # XXX undef
        text  => 'Hauptstr. (Wilhelmsruh) in beiden Richtungen zwischen Schillerstr. und Edelweißstr. Baustelle, Straße vollständig gesperrt (bis auf weiteres)',
        type  => 'handicap',
        source_id => 'IM_005953',
@@ -8965,6 +8965,40 @@ EOF
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20070703.1505.81257.html',
        data  => <<EOF,
 userdel	1::inwork 12693,16700 12486,16791 12269,16881
+EOF
+     },
+     { from  => 1183704492, # 2007-07-06 08:48
+       until => 1183798472, # 2007-07-08 00:00 1183845600
+       text  => 'Str. des 17. Juni und Ebertstr. (Tiergarten) in beiden Richtungen zwischen Y.-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (bis 07.07.2007 morgens)',
+       type  => 'gesperrt',
+       source_id => 'IM_006009',
+       data  => <<EOF,
+userdel	2::temp 8515,12242 8214,12205 8089,12186
+EOF
+     },
+     { from  => 1183798422, # 2007-07-07 10:53
+       until => 1183932000, # 2007-07-09 00:00
+       text  => 'Finsterwalder Str. (Reinickendorf) in beiden Richtungen zwischen Eichhorster Weg und Bruchstückgraben Veranstaltung, Straße vollständig gesperrt (bis 08.07.2007 abends)',
+       type  => 'gesperrt',
+       source_id => 'IM_006015',
+       data  => <<EOF,
+userdel	2::temp 6442,22240 6492,22113 6485,21955 6420,21828 6337,21774 5934,21513
+EOF
+     },
+     { from  => 1184018400, # 2007-07-10 00:00
+       until => 1188079200, # 2007-08-26 00:00
+       text  => 'L 020 Velten-Borgsdorf zw. OL Pinnow, Havelweg und Berliner Ch., Borgsdorf Grundhafter Straßenbau Vollsperrung 11.07.2007-25.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -736,32837 -409,33522
+EOF
+     },
+     { from  => 1183845600, # 2007-07-08 00:00
+       until => 1194044400, # 2007-11-03 00:00
+       text  => 'L 171 Karl-Marx-Str. OD Hohen Neuendorf, Krz. K.-Tucholsky-Str. grundh.Straßenbau, Kreisverk. Vollsperrung 09.07.2007-02.11.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 1379,29410 1611,29359
 EOF
      },
     );
