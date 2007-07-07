@@ -3209,13 +3209,7 @@ nachinstallieren (siehe Bundle::BBBike).
 
 =item * (#M5)
 
-install.pl: Is completely broken now and should made working for
-current GNOME/KDE versions.
-
-Also: the toplevel resizing seems to be broken in kwin.
-
-Windows support is not really necessary anymore, as we have the ISS
-installer.
+install.pl: Should be tested on another system.
 
 =item * (M1)
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: install.pl,v 4.14 2007/05/31 22:29:43 eserte Exp $
+# $Id: install.pl,v 4.15 2007/07/07 20:15:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2001,2007 Slaven Rezic. All rights reserved.
@@ -65,27 +65,14 @@ BEGIN {
 use strict;
 use vars values %config_vars;
 use vars qw($is_bbbike);
+$is_bbbike = 1;
 
 my $uninstall_mode = ($0 =~ /uninstall\.pl$/ ? 1 : 0);
 
-if ($uninstall_mode) {
-    # works right if called through install.pl -uninstall
-    eval { do "$FindBin::RealBin/install.pl.config" }; warn $@ if $@;
-} else {
-    eval { do "$0.config" }; warn $@ if $@;
-}
-load_Makefile_PL();
-
-# add more dirs
-
-if (!defined $extra_libdir) {
-    $extra_libdir = $main_program =~ /^[A-Z]/ ? $main_program : ucfirst($main_program);
-}
-unshift @INC, "$_/$extra_libdir", "$_/lib/$extra_libdir" for reverse @INC;
-
-my $kde_install   = 'best';
-my $gnome_install = 'best';
-my $win_install   = 'best';
+my $kde_install         = 'best';
+my $gnome_install       = 'best';
+my $freedesktop_install = 'user';
+my $win_install         = 'best';
 $desktop_icon = 1 unless defined $desktop_icon;
 my $show = 0;
 $extensions = 1 unless defined $extensions;
@@ -123,32 +110,6 @@ sub Print (@);
 sub Print_shift ();
 sub Print_unshift ();
 
-my %optdesc =
-  ('desktop'      => M"Desktop-Icon erstellen",
-   'show'         => M"Schritte zeigen und nicht ausführen",
-   'debuginstall' => M"Debugging-Version erzeugen",
-  );
-if (@module_ext && $extensions) {
-    $optdesc{'extensions'} = M"Erweiterungen compilieren";
-}
-if ($os eq 'win') {
-    $optdesc{'networkinstall'} = M"Netzwerkfähige-Installation für Win32";
-    $optdesc{'startinstall'} = M"Eintrag im Startmenü erstellen";
-    if (defined $use_autostart) {
-	$optdesc{'autostart'} = M"Autostart";
-    }
-} elsif ($os eq 'unix') {
-    #$optdesc{'kdeinstall'}   = 'Menüeinträge für KDE erstellen';
-    #$optdesc{'gnomeinstall'} = 'Menüeinträge für GNOME erstellen';
-    if (defined $use_client_server_mode) {
-	$optdesc{'clientservermode'} = M"Server-Client-Modus verwenden";
-    }
-}
-
-if (!defined $program_title) {
-    $program_title = ucfirst($main_program);
-}
-
 my $root_or_user_sub = sub {
     my($var, $opt, $arg) = @_;
     die Mfmt('Argument für %s muss root, user oder best sein', $opt)
@@ -164,6 +125,7 @@ my @options =
 #  	 $kde_install = $arg;
 #       },
    'gnomeinstall=s' => sub { $root_or_user_sub->(\$gnome_install, @_) },
+   'freedesktopinstall=s' => sub { $root_or_user_sub->(\$freedesktop_install, @_) },
    'wininstall=s'   => sub { $root_or_user_sub->(\$win_install, @_) },
 
    'desktop!'    => \$desktop_icon,
@@ -195,8 +157,40 @@ if (!GetOptions(@options)) {
     }
     die "Usage: $0 " . join(" ", map { "[-$_]" } @usage_opt) . "\n";
 }
-
 $extensions = 1 if ($onlyextensions);
+
+load_Makefile_PL(); # must be after Getopt::Long calls
+# add more dirs
+if (!defined $extra_libdir) {
+    $extra_libdir = $main_program =~ /^[A-Z]/ ? $main_program : ucfirst($main_program);
+}
+unshift @INC, "$_/$extra_libdir", "$_/lib/$extra_libdir" for reverse @INC;
+
+my %optdesc =
+  ('desktop'      => M"Desktop-Icon erstellen",
+   'show'         => M"Schritte zeigen und nicht ausführen",
+   'debuginstall' => M"Debugging-Version erzeugen",
+  );
+if (@module_ext && $extensions) {
+    $optdesc{'extensions'} = M"Erweiterungen compilieren";
+}
+if ($os eq 'win') {
+    $optdesc{'networkinstall'} = M"Netzwerkfähige-Installation für Win32";
+    $optdesc{'startinstall'} = M"Eintrag im Startmenü erstellen";
+    if (defined $use_autostart) {
+	$optdesc{'autostart'} = M"Autostart";
+    }
+} elsif ($os eq 'unix') {
+    #$optdesc{'kdeinstall'}   = 'Menüeinträge für KDE erstellen';
+    #$optdesc{'gnomeinstall'} = 'Menüeinträge für GNOME erstellen';
+    if (defined $use_client_server_mode) {
+	$optdesc{'clientservermode'} = M"Server-Client-Modus verwenden";
+    }
+}
+
+if (!defined $program_title) {
+    $program_title = ucfirst($main_program);
+}
 
 if ($uninstall_mode) {
     exit Uninstall();
@@ -255,7 +249,7 @@ if ($use_tk) {
     # will have the size 1x1 pixels (why?)
     # Same for the height.
     $close_frame = $top->Frame(-width => $min->(600,$top->screenwidth),
-			       -height => $min->(300,$top->screenheight),
+			       -height => $min->(50,$top->screenheight),
 			      )->pack(-fill => "x", -side => "bottom");
     $txt = $top->Scrolled('ROText', -scrollbars => 'osoe',
 			  -wrap => "none",
@@ -275,8 +269,10 @@ unless ($onlyextensions) {
 	Win32Install(-type => $win_install);
     }
     if ($os ne "win") { # there's no KDE/GNOME for Windows
-	KDEInstall(-type => $kde_install);
-	GNOMEInstall(-type => $gnome_install);
+	## Obsolete:
+	#KDEInstall(-type => $kde_install);
+	#GNOMEInstall(-type => $gnome_install);
+	FreeDesktopInstall(-type => $freedesktop_install);
     }
 }
 ModuleExtensions(-clean => $cleanextensions) if $extensions;
@@ -531,6 +527,222 @@ sub Win32Install {
 
     Print_unshift;
 
+}
+
+sub FreeDesktopInstall {
+    my(%args) = @_;
+    my $type = $args{-type} || 'user'; # may be 'root', 'user' or 'best'
+    if ($type eq 'best') {
+	Print "Type <best> is not supported for FreeDesktopInstall. Please specify either root or user\n";
+    }
+    return if $type eq 'none';
+
+    my $ret = 0;
+    my $old_umask = umask 0022;
+    my $std_d_mode = $type eq 'root' ? 0755 : 0700;
+
+    Print M("FreeDesktop-Installation (KDE und GNOME)")." ...\n";
+    Print_shift;
+
+    my $kde;
+    if (!eval {
+	require KDEUtil; # has utilities for getting standard paths
+	$kde = KDEUtil->new;
+    }) {
+	Print "Problem: $@";
+	goto CLEANUP;
+    }
+
+    my($xdgconf_menu, $xdgdata_apps, $xdgdata_dirs, $mimelnk);
+
+    if ($type eq 'root') {
+	$xdgconf_menu = $kde->get_kde_install_path("xdgconf-menu")
+	    or do { Print "Problem: xdgconf-menu konnte nicht festgestellt werden\n"; goto CLEANUP };
+	$xdgdata_apps = $kde->get_kde_install_path("xdgdata-apps")
+	    or do { Print "Problem: xdgconf-apps konnte nicht festgestellt werden\n"; goto CLEANUP };
+	$xdgdata_dirs = $kde->get_kde_install_path("xdgdata-dirs")
+	    or do { Print "Problem: xdgconf-dirs konnte nicht festgestellt werden\n"; goto CLEANUP };
+	for ($xdgconf_menu, $xdgdata_apps, $xdgdata_dirs) {
+	    (-d $_ && -w $_)
+		or do { Print "Problem: das Verzeichnis $_ ist nicht schreibbar\n"; goto CLEANUP };
+	}
+	$mimelnk = $kde->get_kde_install_path("mime")
+	    or do { Print "Warnung: mime-Verzeichnis konnte nicht festgestellt werden\n" }; # not fatal
+    } else { # user
+	($xdgconf_menu) = $kde->get_kde_path("xdgconf-menu")
+	    or do { Print "Problem: xdgconf-menu konnte nicht festgestellt werden\n"; goto CLEANUP };
+	($xdgdata_apps) = $kde->get_kde_path("xdgdata-apps")
+	    or do { Print "Problem: xdgconf-apps konnte nicht festgestellt werden\n"; goto CLEANUP };
+	($xdgdata_dirs) = $kde->get_kde_path("xdgdata-dirs")
+	    or do { Print "Problem: xdgconf-dirs konnte nicht festgestellt werden\n"; goto CLEANUP };
+	($mimelnk) = $kde->get_kde_path("mime")
+	    or do { Print "Warnung: mime-Verzeichnis konnte nicht festgestellt werden\n" }; # not fatal
+    }
+
+    my $exe_dir;
+    if ($type eq 'root') {
+	$exe_dir = $kde->get_kde_install_path("exe");
+    } else {
+	$exe_dir = $FindBin::Bin;
+    }
+    if (!$exe_dir) {
+	Print "Problem: exe-Verzeichnis konnte nicht festgestellt werden\n";
+	goto CLEANUP;
+    }
+    my $main_bin   = "$exe_dir/$main_program";
+    my $client_bin = "$exe_dir/$client_program";
+
+    my $bbbike_desktop;
+    if ($desktop_icon && $type ne "root") {
+	my $desktop = $kde->get_kde_user_path("desktop")
+	    or do { Print "Problem: desktop-Verzeichnis konnte nicht festgestellt werden\n"; goto CLEANUP };
+	$bbbike_desktop = "$desktop/BBBike.desktop";
+    }
+
+    my %vars = (BBBIKEDIR => $FindBin::RealBin);
+
+    Print M"Installation der FreeDesktop-Verknüpfungen ...\n";
+    Print_shift;
+
+    Print M"Neue Menü-Kategorie Cartography/Kartografie ...\n";
+    if (!$show) {
+	Print_shift;
+	if ($type ne 'root' && !-d $xdgdata_dirs) {
+	    mkpath([$xdgdata_dirs], $debug, $std_d_mode);
+	}
+	copy_with_vars_subst("$FindBin::Bin/kde/Cartography.directory.tmpl",
+			     "$xdgdata_dirs/Cartography.directory",
+			     \%vars,
+			    );
+
+	my $app_merged_dir = "$xdgconf_menu/applications-merged";
+	if (!-d $app_merged_dir) {
+	    mkpath([$app_merged_dir], $debug, $std_d_mode);
+	}
+	if (!-e "$xdgconf_menu/kde-applications-merged") {
+	    symlink "applications-merged", "$xdgconf_menu/kde-applications-merged"
+		or Print "Symlink von $xdgconf_menu/kde-applications-merged fehlgeschlagen: $!\n";
+	}
+	if (!-e "$xdgconf_menu/gnome-applications-merged") {
+	    symlink "applications-merged", "$xdgconf_menu/gnome-applications-merged"
+		or Print "Symlink von $xdgconf_menu/gnome-applications-merged fehlgeschlagen: $!\n";
+	}
+
+	my_copy("$FindBin::Bin/kde/bbbike.menu",
+		"$app_merged_dir/bbbike.menu",
+	       );
+	Print_unshift;
+    }
+
+    my $has_docpath = 0; #XXX what's this?
+
+    my %bbbike_app_vars = (%vars,
+			   EXEC => ($use_client_server_mode ? "$^X $client_bin %f" : "$^X $main_bin %f"),
+			   DOCPATH => ($has_docpath || ""),
+			  );
+
+    {
+	Print M"BBBike-Applikation ...\n";
+	Print_shift;
+	if ($type ne 'root' && !-d $xdgdata_apps) {
+	    mkpath([$xdgdata_apps], $debug, $std_d_mode);
+	}
+	copy_with_vars_subst("$FindBin::Bin/kde/BBBike.desktop.tmpl",
+			     "$xdgdata_apps/BBBike.desktop",
+			     \%bbbike_app_vars,
+			    );
+	Print_unshift;
+    }
+
+    if ($bbbike_desktop) {
+	Print M"Desktop-Icon ...\n";
+	Print_shift;
+	copy_with_vars_subst("$FindBin::Bin/kde/BBBike.desktop.tmpl",
+			     $bbbike_desktop,
+			     \%bbbike_app_vars,
+			    );
+	Print_unshift;
+    }
+
+    {
+	# See also http://www.ces.clemson.edu/linux/fc4_desktop.shtml
+	Print M"MIME-Types and Magics ...\n";
+	Print_shift;
+	# Note: this is not yet used by GNOME and KDE
+	my $mime_packages_dir = "$ENV{HOME}/.local/share/mime/packages";
+	if (!-d $mime_packages_dir) {
+	    if ($show) {
+		Print "mkpath $mime_packages_dir\n";
+	    } else {
+		mkpath([$mime_packages_dir], $debug, $std_d_mode);
+	    }
+	}
+	my_copy("$FindBin::Bin/kde/bbbike-mime-info.xml",
+		"$mime_packages_dir/bbbike-mime-info.xml",
+	       );
+	if ($show) {
+	    Print "update mime database\n";
+	} else {
+	    system("update-mime-database", dirname($mime_packages_dir));
+	}
+
+	# This is the KDE fallback:
+	if ($mimelnk) {
+	    my $application_dir = "$mimelnk/application";
+	    if (!-d $application_dir) {
+		if ($show) {
+		    Print "mkdir $application_dir, $std_d_mode\n";
+		} else {
+		    mkdir $application_dir, $std_d_mode;
+		}
+	    }
+
+	    foreach my $mimefile (qw(x-bbbike-route x-bbbike-data x-gpstrack)) {
+		my $dest = "$mimelnk/application/$mimefile.desktop";
+		copy_with_vars_subst("$FindBin::Bin/kde/$mimefile.desktop.tmpl",
+				     $dest,
+				     \%vars,
+				    );
+	    }
+	}
+
+	Print_unshift;
+    }
+
+    Print M"Icons (NYI) ...\n";
+
+    if ($type eq 'root') {
+	foreach my $f ($main_bin, $client_bin) {
+	    my $thisf = $FindBin::Bin . "/" . basename($f);
+	    if ($thisf ne $f) {
+		Print "Symbolischen Link von $f nach\n" .
+		  "  $thisf erzeugen ...\n";
+		if (!$show) {
+		    _safe_symlink($thisf, $f, 1);
+		}
+	    }
+	}
+    }
+
+    Print_unshift;
+
+    if ($show) {
+	Print "Refreshing system\n";
+    } else {
+	# XXX why was --noincremental necessary (once)?
+	system("kbuildsycoca", "--noincremental") if is_in_path("kbuildsycoca");
+    }
+
+    # We were successful!
+    $ret = 1;
+
+ CLEANUP:
+    Print_unshift;
+    Print "\n";
+
+    umask $old_umask;
+
+    $ret;
 }
 
 sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
@@ -1352,7 +1564,9 @@ sub copy_with_vars_subst {
 	Print_shift;
 	Print "Variablensubstitution kopieren.\n";
 	Print_unshift;
+	1;
     } else {
+	my $ret = 0;
 	if (open(SRC, $src) &&
 	    open(SAVE,   "> $dest")) {
 	    while(<SRC>) {
@@ -1360,11 +1574,31 @@ sub copy_with_vars_subst {
 		print SAVE $_
 		    or Print("Achtung: Cannot print to $dest: $!");
 	    }
-	    close SAVE
-		or Print("Achtung: Error while closing $dest: $!");
 	    close SRC;
-	    chmod 0644, $dest;
+	    if (!close SAVE) {
+		Print("Achtung: Error while closing $dest: $!");
+	    } else {
+		chmod 0644, $dest;
+		$ret = 1;
+	    }
+	} else {
+	    Print("Achtung: Das Kopieren von $src nach $dest ist fehlgeschlagen: $!\n");
 	}
+	$ret;
+    }
+}
+
+sub my_copy {
+    my($src, $dest) = @_;
+    if ($show) {
+	Print basename($src) . " nach " . dirname($dest) . " kopieren.\n";
+	1;
+    } else {
+	my $ret = copy $src, $dest;
+	if (!$ret) {
+	    Print "Das Kopieren von $src nach $dest ist fehlgeschlagen: $!\n";
+	}
+	$ret;
     }
 }
 
@@ -1492,3 +1726,15 @@ sub Tk::Widget::tk_sleep {
 # REPO END
 
 __END__
+
+=pod
+
+For testing: remove all KDE/GNOME-related personal directories:
+
+    rm ~/Desktop/BBBike.desktop
+    rm -rf ~/.kde
+    rm -rf ~/.gnome2 ~/.gnome2_private
+    rm -rf ~/.local
+    rm -rf ~/.config/menus/
+
+=cut

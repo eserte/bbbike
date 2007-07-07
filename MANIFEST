@@ -762,13 +762,15 @@ images/berliner_stadtplan.gif
 install.bat
 install.sh
 install.pl
-install.pl.config
 kde/BBBike.desktop.tmpl
 kde/BBBikeDoc.desktop.tmpl
 kde/BBBikeWWW.desktop.tmpl
 kde/x-bbbike-data.desktop.tmpl
 kde/x-bbbike-route.desktop.tmpl
 kde/x-gpstrack.desktop.tmpl
+kde/Cartography.directory.tmpl
+kde/bbbike.menu
+kde/bbbike-mime-info.xml
 lib/AutoInstall/Tk.pm
 lib/BikePower.pm
 lib/BikePower/HTML.pm

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: KDEUtil.pm,v 2.16 2007/04/12 22:06:02 eserte Exp $
+# $Id: KDEUtil.pm,v 2.21 2007/07/07 17:30:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2004 Slaven Rezic. All rights reserved.
@@ -315,6 +315,85 @@ sub _find_kde_dirs {
     }
 }
 
+# Modern KDE paths
+# References:
+#   http://docs.kde.org/userguide/kde-menu.html
+#   http://standards.freedesktop.org/basedir-spec/basedir-spec-0.6.html
+#   http://standards.freedesktop.org/menu-spec/menu-spec-1.0.html
+sub get_kde_path_types {
+    my($self) = @_;
+    if (!$self->{PATH_TYPES}) {
+	my @path_types;
+	for (split /\n/, `kde-config --types`) {
+	    chomp;
+	    my($path_type) = $_ =~ m{^(\S+)};
+	    push @path_types, $path_type;
+	}
+	$self->{PATH_TYPES} = \@path_types;
+    }
+    @{ $self->{PATH_TYPES} };
+}
+
+# Returns array of paths
+sub get_kde_path {
+    my($self, $path_type) = @_;
+    if (!$self->{PATH}->{$path_type}) {
+	my $paths;
+	if (_is_in_path("kde-config")) {
+	    ($paths) = `kde-config --expandvars --path $path_type`;
+	    chomp $paths;
+	} else {
+	    # Fallback only works for xdg paths
+	    my $xdg_data_home   = $ENV{XDG_DATA_HOME} || "$ENV{HOME}/.local/share";
+	    my $xdg_config_home = $ENV{XDG_CONFIG_HOME} || "$ENV{HOME}/.config";
+	    $paths = {'xdgconf-menu' => "$xdg_config_home/menus/:" . _default_prefix("etc") . "/xdg/menus/",
+		      'xdgdata-apps' => "$xdg_data_home/applications/:" . _default_prefix("share") . "/applications/",
+		      'xdgdata-dirs' => "$xdg_data_home/desktop-directories/:" . _default_prefix("share") . "/desktop-directories/",
+		     }->{$path_type};
+	}
+	$self->{PATH}->{$path_type} = [ split /:/, $paths ];
+    }
+    @{ $self->{PATH}->{$path_type} };
+}
+
+# Returns default installation path
+sub get_kde_install_path {
+    my($self, $path_type) = @_;
+    if (!$self->{INSTALL_PATH}->{$path_type}) {
+	my $paths;
+	if (_is_in_path("kde-config")) {
+	    ($paths) = `kde-config --expandvars --install $path_type`;
+	    chomp $paths;
+	} else {
+	    $paths = {'xdgconf-menu' => _default_prefix("etc")   . "/xdg/menus/",
+		      'xdgdata-apps' => _default_prefix("share") . "/applications/",
+		      'xdgdata-dirs' => _default_prefix("share") . "/desktop-directories/",
+		      'exe'          => _default_prefix("usr")   . "/bin/",
+		     }->{$path_type};
+	}
+	$self->{INSTALL_PATH}->{$path_type} = $paths;
+    }
+    $self->{INSTALL_PATH}->{$path_type};
+}
+
+sub get_kde_user_path {
+    my($self, $path_type) = @_;
+    if (!$self->{USER_PATH}->{$path_type}) {
+	my $paths;
+	if (_is_in_path("kde-config")) {
+	    ($paths) = `kde-config --expandvars --userpath $path_type`;
+	    chomp $paths;
+	} else {
+	    $paths = {'desktop'  => "$ENV{HOME}/Desktop",
+		      'document' => "$ENV{HOME}",
+		     }->{$path_type};
+	}
+	$self->{USER_PATH}->{$path_type} = $paths;
+    }
+    $self->{USER_PATH}->{$path_type};
+}
+
+# KDE configuration, probably outdated
 sub get_kde_config {
     my $self = shift;
     my $rc = shift;
@@ -476,6 +555,40 @@ sub remove_kde_decoration {
 # sub append_magic {
 #     my($self, $magicfile, 
 # }
+
+sub _is_in_path {
+    my($prog) = @_;
+    my $sep = ':';
+    foreach (split(/$sep/o, $ENV{PATH})) {
+	return "$_/$prog" if (-x "$_/$prog" && !-d "$_/$prog");
+    }
+    undef;
+}
+
+sub _default_prefix {
+    my($path) = @_;
+    if ($^O =~ m{linux}) {
+	if ($path eq 'etc') {
+	    '/etc';
+	} elsif ($path eq 'usr') {
+	    '/usr';
+	} elsif ($path eq 'share') {
+	    '/usr/share';
+	} else {
+	    die "Unhandled path <$path>";
+	}
+    } else { # e.g. BSD
+	if ($path eq 'etc') {
+	    '/usr/local/etc';
+	} elsif ($path eq 'usr') {
+	    '/usr/local';
+	} elsif ($path eq 'share') {
+	    '/usr/local/share';
+	} else {
+	    die "Unhandled path <$path>";
+	}
+    }
+}
 
 {
 package KDEUtil::WM;

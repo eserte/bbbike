@@ -1,0 +1,16 @@
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+  <mime-type type="application/x-bbbike-data">
+    <comment>BBBike data</comment>
+    <comment xml:lang="de">BBBike-Daten</comment>
+    <glob pattern="*.bbd" />
+  </mime-type>
+  <mime-type type="application/x-bbbike-route">
+    <comment>BBBike route</comment>
+    <comment xml:lang="de">BBBike-Route</comment>
+    <glob pattern="*.bbr" />
+  </mime-type>
+  <mime-type type="application/x-gpstrack">
+    <comment>GPS track file</comment>
+    <glob pattern="*.trk" />
+  </mime-type>
+</mime-info>
