@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.15 2007/03/20 22:01:58 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.15 2007/03/20 22:01:58 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -110,7 +110,7 @@ EOF
 sub find_street {
     my($strname) = @_;
     if ($strname =~ /^\(/ || $strname =~ /^\s*$/) {
-	main::status_message("Die Straße hat keinen offiziellen Namen", "err");
+	main::status_message("Die Straße <$strname> hat keinen offiziellen Namen", "err");
 	return;
     }
     $strname =~ s{\[.*\]}{}g; # remove special [...] parts
@@ -121,7 +121,7 @@ sub find_street {
 	@subcityparts = map { $_->[PLZ::LOOK_CITYPART] } @res;
     }
     if (!@subcityparts) {
-	main::status_message("Die Straße konnte in der BBBike-Datenbank nicht gefunden werden.", "err");
+	main::status_message("Die Straße <$strname> konnte in der BBBike-Datenbank nicht gefunden werden.", "err");
 	return;
     }
 
@@ -193,7 +193,7 @@ sub launch_street_url {
     } elsif ($@) {
 	main::status_message($@, "err");
     } else {
-	main::status_message("Die Straße konnte über Google nicht gefunden werden.", "err");
+	main::status_message("Die Straße <$street> konnte über Google nicht gefunden werden.", "err");
     }
 }
 
