@@ -1,5 +1,5 @@
 #: title.de: Orte im weiteren Umland
-#: version: $Id: orte2-orig,v 4.39 2007/05/28 20:23:09 eserte Exp eserte $
+#: version: $Id: orte2-orig,v 4.40 2007/07/08 19:41:07 eserte Exp $
 #: title.en: Places far away
 #:
 Hannover	6 -238396,-7589
@@ -170,10 +170,8 @@ Strehla	3 838,-117208
 Nienburg	3 -99329,-65133
 Ermsleben	3 -128061,-77502
 Gerbstedt	3 -108380,-88265
-Dommitzsch	3 -23071,-86116
 Schlieben	3 10891,-76044
 Mühlberg	3 387,-108214
-Pretzsch	3 -28379,-77895
 Dahme	3 13308,-59619
 Döbern	3 93670,-86458
 Luckau	3 32174,-61385
@@ -207,6 +205,7 @@ Schirgiswalde	3 83573,-146598
 Wittichenau	3 70116,-112268
 Bad Schandau	3 65176,-164757
 Königstein	3 59496,-164832
+Hohnstein	3 61892,-157699
 Wettin	3 -96278,-93492
 Leuna	3 -80886,-122287
 Bad Dürrenberg	3 -78075,-124814
@@ -341,9 +340,12 @@ Osternienburg	2 -81406,-69725
 Lebendorf	2 -97750,-78712
 Wulfen	2 -87975,-66985
 Wörbzig	2 -90463,-78398
+Dommitzsch	2 -23071,-86116
+Bad Schmiedeberg	2 -33025,-80746
 Hohenleipisch	2 23220,-100874
 Schönborn	2 19368,-90090
 Elster	2 -27223,-65150
+Pretzsch	2 -28379,-77895
 Seyda	2 -22209,-58887
 Kropstädt	2 -33166,-50007
 Wahrenbrück	2 9904,-95170
@@ -368,6 +370,9 @@ Oehna	2 -13394,-53379
 Plessa	2 27775,-104430
 Wormlage	2 46570,-88820
 Tröbitz	2 14131,-90080
+Gohrisch	2 61879,-165414
+Struppen	2 54677,-162635
+Stadt Wehlen	2 56748,-160356
 Seegrehna	2 -45877,-64834
 Löbnitz|(Sachsen)	2 -51531,-91717
 Cochstedt	2 -124332,-60695
@@ -666,6 +671,9 @@ Kummersdorf Gut	1 8259,-34363
 Woltersdorf|b. Luckenwalde	1 -2319,-32806
 Gentha	1 -22474,-62608
 Weixdorf	1 40431,-139079
+Reinhardtsdorf-Schöna	1 68144,-167790
+Rathen	1 60088,-160112
+Porschdorf	1 63561,-162184
 Radis	1 -48347,-74032
 Pratau	1 -39691,-63580
 Schköna	1 -46410,-81732
@@ -996,6 +1004,15 @@ Altgolßen	0 22225,-48133
 Krossen|(bei Drahnsdorf)	0 24639,-53978
 Zagelsdorf	0 15567,-57966
 Klotzsche	0 39071,-143285
+Schmilka|(Bad Schandau)	0 70435,-167327
+Postelwitz|(Bad Schandau)	0 67937,-165609
+Krippen|(Bad Schandau)	0 65865,-165853
+Kleinhennersdorf|(Gohrisch)	0 64463,-165889
+Oberrathen	0 59552,-160600
+Waltersdorf|(Porschdorf)	0 61721,-161124
+Prossen|(Porschdorf)	0 64792,-164719
+Weißig|(Struppen)	0 59369,-161587
+Pratzschwitz	0 47620,-159283
 Mocherwitz	0 -54471,-104040
 Torfhaus	0 -182998,-70896
 Mahlenzien	0 -54749,-9973

@@ -217,7 +217,16 @@ sub do_google_search {
 	my $street_citypart = "$street in $citypart";
 	# Unfortunately there seems to be a lot of encoding issues
 	# Maybe best to use the ersatz notation for umlauts?
-	my $query = qq{allintitle:"}. $street_citypart . qq{" site:luise-berlin.de OR site:berlin-chronik.de OR site:berlingeschichte.de OR site:berliner-lesezeichen.de OR site:berlin-topographie.de OR site:berlinische-monatsschrift.de};
+	my $query = qq{allintitle:"}. $street_citypart . qq{" } .
+	    join(" OR ", map { "site:$_" }
+		 qw(luise-berlin.de
+		    berlin-chronik.de
+		    berlingeschichte.de
+		    berliner-lesezeichen.de
+		    berlin-topographie.de
+		    berlinische-monatsschrift.de
+		    berlinvisite.de
+		  ));
 	if ($DEBUG) {
 	    use Devel::Peek; Dump $query;
 	}

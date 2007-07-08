@@ -2,7 +2,7 @@
 #: encoding: utf-8
 #: title.de: Orte im weiteren Umland
 #: title.en: Places far away
-#: version: $Id: orte2-orig,v 4.39 2007/05/28 20:23:09 eserte Exp eserte $
+#: version: $Id: orte2-orig,v 4.40 2007/07/08 19:41:07 eserte Exp $
 #:
 # Mecklenburg-Vorpommern, Brandenburg
 Rostock	5 -79160,185302
@@ -547,7 +547,8 @@ Baasdorf	1 -84814,-79401
 Wörbzig	2 -90463,-78398
 Vockerode	1 -59497,-63470
 Gerbstedt	3 -108380,-88265
-Dommitzsch	3 -23071,-86116
+Dommitzsch	2 -23071,-86116
+Bad Schmiedeberg	2 -33025,-80746
 Schlieben	3 10891,-76044
 Hohenleipisch	2 23220,-100874
 Dollingen	1 25243,-102391
@@ -563,7 +564,7 @@ Schilda	1 11423,-88891
 Radebeul	4 31915,-144447
 Meißen	4 18257,-138004
 Elster	2 -27223,-65150
-Pretzsch	3 -28379,-77895
+Pretzsch	2 -28379,-77895
 Dahme	3 13308,-59619
 Körba	1 10923,-66973
 Forst	4 96181,-72790
@@ -688,7 +689,23 @@ Schirgiswalde	3 83573,-146598
 Weißwasser	4 96690,-98895
 Wittichenau	3 70116,-112268
 Bad Schandau	3 65176,-164757
+Schmilka|(Bad Schandau)	0 70435,-167327
+Postelwitz|(Bad Schandau)	0 67937,-165609
+Krippen|(Bad Schandau)	0 65865,-165853
+Reinhardtsdorf-Schöna	1 68144,-167790
 Königstein	3 59496,-164832
+Gohrisch	2 61879,-165414
+Kleinhennersdorf|(Gohrisch)	0 64463,-165889
+Rathen	1 60088,-160112
+Oberrathen	0 59552,-160600
+Hohnstein	3 61892,-157699
+Waltersdorf|(Porschdorf)	0 61721,-161124
+Porschdorf	1 63561,-162184
+Prossen|(Porschdorf)	0 64792,-164719
+Weißig|(Struppen)	0 59369,-161587
+Struppen	2 54677,-162635
+Stadt Wehlen	2 56748,-160356
+Pratzschwitz	0 47620,-159283
 Pirna	4 49664,-160444
 Wettin	3 -96278,-93492
 Halle	6 -84779,-105018

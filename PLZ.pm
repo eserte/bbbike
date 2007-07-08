@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.69 2007/04/10 20:01:50 eserte Exp $
+# $Id: PLZ.pm,v 1.69 2007/04/10 20:01:50 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -373,7 +373,7 @@ sub combine {
     foreach my $s (@in) {
 	if (exists $out{$s->[LOOK_NAME]}) {
 	    foreach my $r (@{ $out{$s->[LOOK_NAME]} }) {
-		my $eq_coord = $s->[LOOK_COORD] eq $r->[LOOK_COORD];
+		my $eq_coord = $s->[LOOK_COORD] && $s->[LOOK_COORD] eq $r->[LOOK_COORD];
 		my $eq_cp = grep { $s->[LOOK_CITYPART] eq $_ } grep { $_ ne "" } @{ $r->[LOOK_CITYPART] };
 		my $eq_zp = grep { $s->[LOOK_ZIP]      eq $_ } grep { $_ ne "" } @{ $r->[LOOK_ZIP] };
 		if ($eq_cp || $eq_zp || $eq_coord) {

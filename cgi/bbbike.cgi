@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.61 2007/06/14 22:57:58 eserte Exp $
+# $Id: bbbike.cgi,v 8.61 2007/06/14 22:57:58 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -1479,7 +1479,9 @@ sub choose_form {
 	    my($retref, $matcherr) = $plz->look_loop(@look_loop_args);
 	    #require Data::Dumper; warn Data::Dumper->new([$retref, $matcherr],[qw()])->Indent(1)->Useqq(1)->Dump;
 
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
 	    @$matchref = grep { defined $_->[PLZ::LOOK_COORD()] && $_->[PLZ::LOOK_COORD()] ne "" } @$retref;
+#	    @$matchref = @$retref;
 	    # XXX needs more checks, but seems to work good
 	    # except in the cases, where the same street has different coordinates
 	    # see Ackerstr. Mitte/Wedding
@@ -1877,7 +1879,7 @@ EOF
 		upgrade_scope("region");
 	    }
 	    print "<td>$fontstr" if $bi->{'can_table'};
-	    if (defined $xy) {
+	    if (defined $xy && $xy !~ /^\s*$/) {
 		new_kreuzungen();
 		my($best) = get_nearest_crossing_coords(split(/,/, $xy));
 		my $cr = crossing_text(defined $best ? $best : $xy);
