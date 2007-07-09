@@ -1479,9 +1479,7 @@ sub choose_form {
 	    my($retref, $matcherr) = $plz->look_loop(@look_loop_args);
 	    #require Data::Dumper; warn Data::Dumper->new([$retref, $matcherr],[qw()])->Indent(1)->Useqq(1)->Dump;
 
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
 	    @$matchref = grep { defined $_->[PLZ::LOOK_COORD()] && $_->[PLZ::LOOK_COORD()] ne "" } @$retref;
-#	    @$matchref = @$retref;
 	    # XXX needs more checks, but seems to work good
 	    # except in the cases, where the same street has different coordinates
 	    # see Ackerstr. Mitte/Wedding
