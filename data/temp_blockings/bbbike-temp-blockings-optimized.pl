@@ -205,16 +205,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_004489',
-         'until' => 1184018400,
-         'text' => 'Kaulsdorfer Brücke (Hellerdorf) in beiden Richtungen Baustelle, Brücke gesperrt (bis 09.07.2007)',
-         'from' => 1182281811,
-         'id' => 821,
-         'data' => 'userdel	2::inwork 22688,12007 22669,12049 22693,12084
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_004491',
          'until' => undef,
@@ -282,15 +273,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1184104800,
-         'text' => 'B 096 Finsterwalde-Luckau Brücke über das Berstefließ nördl. Riedebeck Abbruch u. Neubau Brücke Vollsperrung 12.03.2007-10.07.2007 ',
-         'from' => 1173567600,
-         'id' => 855,
-         'data' => 'userdel	2::inwork 30491,-65399 30577,-65764
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -870,8 +853,8 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        undef,
        {
          'until' => 1188597600,
-         'text' => 'L 339 Neuer Hönower Weg Bahnübergang in der OD Birkenstein Erneuerung Bahnübergang halbseitig gesperrt; Einbahnstraße 02.07.2007-31.08.2007 ',
-         'from' => 1183240800,
+         'text' => 'L 339 Neuer Hönower Weg Bahnübergang in der OD Birkenstein Erneuerung Bahnübergang halbseitig gesperrt; Einbahnstraße 16.07.2007-31.08.2007 ',
+         'from' => 1184450400,
          'id' => 1054,
          'data' => 'userdel	q4::inwork 27067,12608 27094,12535 27117,12466
 ',
@@ -964,6 +947,15 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'data' => 'userdel	2::inwork 25457,15594 25955,15531 26117,15452
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1184882400,
+         'text' => 'B 246 Ernst-Thälmann-Str. OL Belzig, Höhe Gymnasium Kanalarbeiten Vollsperrung 19.07.2007-19.07.2007 ',
+         'from' => 1184709600,
+         'id' => 1068,
+         'data' => 'userdel	q4::inwork -44441,-30214 -44165,-30318
+',
+         'type' => 'handicap'
        }
      
 );

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.183 2007/06/20 21:22:16 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.183 2007/06/20 21:22:16 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1526,6 +1526,10 @@ sub advanced_coord_menu {
 		   -command => \&show_coord_list);
     $bpcm->command(-label => M"Path to Selection",
 		   -command => \&path_to_selection);
+    $bpcm->command(-label => M"Marks to Path",
+		   -command => \&marks_to_path);
+    $bpcm->command(-label => M"Marks to Selection",
+		   -command => \&marks_to_selection);
     $bpcm->separator;
     {
 	$bpcm->checkbutton(-label => M"Kreuzungen/Kurvenpunkte (pp) zeichnen (zukünftige Layer)",
@@ -3818,6 +3822,24 @@ sub path_to_selection {
     } @realcoords;
     $c->SelectionOwn;
     standard_selection_handle();
+}
+
+sub marks_to_path {
+    my @mark_items = $c->find(withtag => "show");
+    delete_route();
+    for my $item (@mark_items) {
+	my @coords = $c->coords($item);
+	for(my $xy_i = 0; $xy_i < $#coords; $xy_i+=2) {
+	    my($xx,$yy) = @coords[$xy_i, $xy_i+1];
+	    my($x,$y) = anti_transpose($xx,$yy);
+	    addpoint_xy($x,$y,$xx,$yy);
+	}
+    }
+}
+
+sub marks_to_selection {
+    marks_to_path();
+    path_to_selection();
 }
 
 sub active_temp_blockings_for_date_dialog {

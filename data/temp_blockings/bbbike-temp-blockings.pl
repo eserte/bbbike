@@ -8891,9 +8891,9 @@ EOF
 userdel	2::temp 25859,-11559 26177,-11648
 EOF
      },
-     { from  => 1183240800, # 2007-07-01 00:00
+     { from  => 1184450400, # 2007-07-15 00:00
        until => 1188597600, # 2007-09-01 00:00
-       text  => 'L 339 Neuer Hönower Weg Bahnübergang in der OD Birkenstein Erneuerung Bahnübergang halbseitig gesperrt; Einbahnstraße 02.07.2007-31.08.2007 ',
+       text  => 'L 339 Neuer Hönower Weg Bahnübergang in der OD Birkenstein Erneuerung Bahnübergang halbseitig gesperrt; Einbahnstraße 16.07.2007-31.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 27067,12608 27094,12535 27117,12466
@@ -9007,6 +9007,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 25457,15594 25955,15531 26117,15452
+EOF
+     },
+     { from  => 1184709600, # 2007-07-18 00:00
+       until => 1184882400, # 2007-07-20 00:00
+       text  => 'B 246 Ernst-Thälmann-Str. OL Belzig, Höhe Gymnasium Kanalarbeiten Vollsperrung 19.07.2007-19.07.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -44441,-30214 -44165,-30318
 EOF
      },
     );
