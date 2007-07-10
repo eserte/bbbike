@@ -8951,7 +8951,7 @@ userdel	2::inwork 14993,-4196 15053,-4328
 EOF
      },
      { from  => 1183327200, # 2007-07-02 00:00
-       until => 1184277600, # 2007-07-13 00:00
+       until => 1184006715, # 2007-07-13 00:00 1184277600
        text  => 'B 002 Raumerstr. OD Eberswalde, zw. Brunnenstr. und R.-Breitscheid-Str. Straßenbauarbeiten Vollsperrung 03.07.2007-12.07.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -8960,7 +8960,7 @@ EOF
      },
      { from  => 1183495734, # 2007-07-03 22:48
        until => 1230764399, # 2008-12-31 23:59
-       text  => 'Straßen- und Leitungsbauarbeiten in der Pistoriusstraße zwischen Hamburger Platz (Gustav-Adolf-Straße) und Am Steinberg, Einbahnstraße Richtung Hamburger Platz (09.07.2007 bis Ende 2008) ',
+       text  => 'Straßen- und Leitungsbauarbeiten in der Pistoriusstraße zwischen Hamburger Platz (Gustav-Adolf-Straße) und Am Steinberg, Einbahnstraße Richtung Hamburger Platz (09.07.2007 bis Ende 2008) ', # VMZ meint: NEW	Pistoriusstr. (Weißensee) RIchtung Berliner Str. zwischen Gustav-Adolf-Str. und Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis Anfang 09.2007) (08:30) 	IM_006024
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20070703.1505.81257.html',
        data  => <<EOF,
@@ -8999,6 +8999,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 1379,29410 1611,29359
+EOF
+     },
+     { from  => 1186264800, # 2007-08-05 00:00
+       until => 1187388000, # 2007-08-18 00:00
+       text  => 'L 033 zw. Kreuz. Hönow und Krz. Landsberger Ch./ Stendaler Str. Deckeninstandsetzung Vollsperrung 06.08.2007-17.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 25457,15594 25955,15531 26117,15452
 EOF
      },
     );

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2polish,v 1.18 2007/05/24 22:48:00 eserte Exp $
+# $Id: bbd2polish,v 1.19 2007/07/10 00:10:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -47,13 +47,18 @@ use Getopt::Long;
 my $codepage; # eg. 1252
 my $mapset = "b";
 my $layer;
+my $strcatqual;
 if (!GetOptions("mapset=s" => \$mapset,
 		"layer=s" => \$layer,
 		"codepage=s" => \$codepage,
+		"strcatqual!" => \$strcatqual, # combined street/quality layer
 	       )) {
     die "usage: $0 [-mapset [ b | brb | wide ]";
 }
 
+die "NYI" if $strcatqual;
+
+my $anyquality = qr{(?:-Q\d[+-]?)?};
 my $base_id = 10000099; # XXX how to choose img id? is there a manual? or just increment?
 my $name = {"b"    => "BBBike map",
 	    "brb"  => "BBBike BRB map",
@@ -87,6 +92,8 @@ Codepage=$codepage
 EOF
 }
 $out .= <<EOF;
+;; XXX not tested yet:
+Transparent=Y
 PreProcess=F
 ;TreSize=800
 TreSize=3000
@@ -301,17 +308,27 @@ sub cat2type {
 	$cat = $1;
 	$cat_attrib = $2;
     }
+
     # Cat;Cat is not handled yet, see DirIndicator above? XXX
-    return 2 if $cat eq 'B' || $cat eq 'HH'; # Principal HWY-thick
-    return 3 if $cat eq 'H'; # Principal HWY - medium
-    return 4 if $cat eq 'N'; # Arterial Road - medium
-    return 6 if $cat eq 'NN'; # Road - thin
+
+    # combined street+quality category e.g. HH-Q0
+    return 10 if $cat =~ m{-Q3[+-]?$}; # Unpaved Road - thin
+    return 6  if $cat =~ m{-Q2[+-]?$}; # Road - thin
+    return 4  if $cat =~ m{^NN-Q.*}; # Arterial Road - medium
+    # fall through for other categories
+
+    # normal street categories
+    return 2 if $cat =~ m{^B$anyquality$} || $cat =~ m{^HH$anyquality$}; # Principal HWY-thick
+    return 3 if $cat =~ m{^H$anyquality$}; # Principal HWY - medium
+    return 4 if $cat =~ m{^N$anyquality$}; # Arterial Road - medium
+    return 6 if $cat =~ m{^NN$anyquality$}; # Road - thin
+
     if ($file =~ /[rus]bahnhof$/) {
-        return 2816 if $cat =~ /^[RUS][ABC]?$/; # namedpoint
-        return undef if $cat =~ /^[RUS]0$/;
+        return 2816 if $cat =~ /^[RUS][ABCGP]?$/; # namedpoint
+        return undef if $cat =~ /^[RUS](0|Bau)$/;
     } else {
-        return 20 if $cat =~ /^[RUS][ABC]?$/; # Railroad
-        return undef if $cat =~ /^[RUS]0$/;
+        return 20 if $cat =~ /^[RUS][ABCGP]?$/; # Railroad
+        return undef if $cat =~ /^[RUS](0|Bau)$/;
     }
     if ($cat eq 'Pl') {
 	if ($rgn_type eq 'poi') {
@@ -321,11 +338,15 @@ sub cat2type {
 	    return 4;
 	}
     }
-    return 0x07 if $cat eq 'Ae';
-    return 0x17 if $cat =~ /^P       (above)?$/x && $rgn_type eq 'polygon';
-    return 0x50 if $cat =~ /^Forest  (above)?$/x && $rgn_type eq 'polygon'; # XXX Woods wrong?
-    return 0x1a if $cat =~ /^Cemetery(above)?$/x && $rgn_type eq 'polygon';
-    return 0x4e if $cat =~ /^Orchard (above)?$/x && $rgn_type eq 'polygon';
+    return 0x07 if $cat eq 'Ae'; # Airport
+    return 0x17 if $cat =~ /^P         (above)?$/x && $rgn_type eq 'polygon';
+    return 0x17 if $cat =~ /^Green     (above)?$/x && $rgn_type eq 'polygon'; # something like Gartenbauamt...
+    return 0x50 if $cat =~ /^Forest    (above)?$/x && $rgn_type eq 'polygon'; # XXX Woods wrong?
+    return 0x1a if $cat =~ /^Cemetery  (above)?$/x && $rgn_type eq 'polygon';
+    return 0x4e if $cat =~ /^Orchard   (above)?$/x && $rgn_type eq 'polygon';
+    return 0x19 if $cat =~ /^Sport     (above)?$/x && $rgn_type eq 'polygon';
+    return 0x0c if $cat =~ /^Industrial(above)?$/x && $rgn_type eq 'polygon';
+    return undef if $cat =~ /^Mine     (above)?$/x && $rgn_type eq 'polygon'; # no definition available
     return 0x3c if $cat =~ /^W\d?$/ && $rgn_type eq 'polygon';
     return 0x1f if $cat =~ /^W\d?$/ && $rgn_type eq 'polyline';
     return 0x13 if $cat eq 'I' && $rgn_type eq 'polygon'; # 0x4b=background -> problems?
@@ -338,13 +359,14 @@ sub cat2type {
 	return 0x03 if $cat =~ /^[5]$/;
 	return 0x01 if $cat =~ /^[6]$/;
     }
-    return 0x1d if $cat eq 'Z' && $file =~ /^(berlin|potsdam)$/;
-    return 0x1e if $cat eq 'Z' && $file =~ /^deutschland$/;
-    return 0x1a if $cat eq 'Q';
+    return 0x1d if $cat eq 'Z' && $file =~ /^(berlin|potsdam)$/; # County Boundary
+    return 0x1e if $cat eq 'Z' && $file =~ /^deutschland$/; # International Boundary
+    return 0x1a if $cat eq 'Q'; # Ferry
     return 0x01 if $cat =~ /^\?+/; # major highway --- nicht zu übersehen!
     return 0x4500 if $file =~ /kneipen$/; # 0x4500 restaurant, maybe also 0x4600 for bars
     warn "Unhandled cat <$cat>\n";
-    return 22; # Trail
+    #return 22; # Trail
+    undef;
 }
 
 sub convert_strname {
@@ -358,7 +380,10 @@ sub encode_string {
     my($string) = @_;
     if ($codepage) {
 	if ($codepage eq '1252') {
-	    $string;
+	    # From the cgpsmapper manual: "All labels must be written
+	    # in CAPITALS if a codepage is used". Hmmm...
+	    use locale; # assuming an ISO-8859-1-styled locale is used
+	    uc $string;
 	} else {
 	    die "Cannot handle codepage $codepage";
 	}

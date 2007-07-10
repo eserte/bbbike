@@ -23,16 +23,7 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'INKO_77722',
-         'until' => 1183932000,
-         'text' => 'Pistoriusstr. (Pankow) Richtung Berliner Allee zwischen Hamburger Platz und Roelckstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Mitte 2007) (10:34) ',
-         'from' => undef,
-         'id' => 671,
-         'data' => 'userdel	1::inwork 12693,16700 12874,16631 13131,16525
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -876,15 +867,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1183932000,
-         'text' => 'L 030 Puschkinstr. OL Königs Wusterhausen Open-Air Konzert Vollsperrung 07.07.2007-08.07.2007 ',
-         'from' => 1183672800,
-         'id' => 1053,
-         'data' => 'userdel	2::temp 25859,-11559 26177,-11648
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1188597600,
          'text' => 'L 339 Neuer Hönower Weg Bahnübergang in der OD Birkenstein Erneuerung Bahnübergang halbseitig gesperrt; Einbahnstraße 02.07.2007-31.08.2007 ',
@@ -942,15 +925,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1184277600,
-         'text' => 'B 002 Raumerstr. OD Eberswalde, zw. Brunnenstr. und R.-Breitscheid-Str. Straßenbauarbeiten Vollsperrung 03.07.2007-12.07.2007 ',
-         'from' => 1183327200,
-         'id' => 1061,
-         'data' => 'userdel	2::inwork 37245,47419 37153,47300
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20070703.1505.81257.html',
          'until' => 1230764399,
@@ -962,16 +937,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_006015',
-         'until' => 1183932000,
-         'text' => 'Finsterwalder Str. (Reinickendorf) in beiden Richtungen zwischen Eichhorster Weg und Bruchstückgraben Veranstaltung, Straße vollständig gesperrt (bis 08.07.2007 abends)',
-         'from' => 1183798422,
-         'id' => 1064,
-         'data' => 'userdel	2::temp 6442,22240 6492,22113 6485,21955 6420,21828 6337,21774 5934,21513
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1188079200,
          'text' => 'L 020 Velten-Borgsdorf zw. OL Pinnow, Havelweg und Berliner Ch., Borgsdorf Grundhafter Straßenbau Vollsperrung 11.07.2007-25.08.2007 ',
@@ -989,6 +955,15 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'data' => 'userdel	q4::inwork 1379,29410 1611,29359
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1187388000,
+         'text' => 'L 033 zw. Kreuz. Hönow und Krz. Landsberger Ch./ Stendaler Str. Deckeninstandsetzung Vollsperrung 06.08.2007-17.08.2007 ',
+         'from' => 1186264800,
+         'id' => 1067,
+         'data' => 'userdel	2::inwork 25457,15594 25955,15531 26117,15452
+',
+         'type' => 'gesperrt'
        }
      
 );
