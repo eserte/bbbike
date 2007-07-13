@@ -956,6 +956,53 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'data' => 'userdel	q4::inwork -44441,-30214 -44165,-30318
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_006033',
+         'until' => 1184299200,
+         'text' => 'Straße des 17. Juni (Tiergarten) Zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (bis 13.07.07 6:00 Uhr)',
+         'from' => 1184222221,
+         'id' => 1069,
+         'data' => 'userdel	2::temp 8515,12242 8214,12205 8089,12186
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006066',
+         'until' => undef,
+         'text' => 'Str. nach Fichtenau (Köpenick) in beiden Richtungen bei S Rahnsdorf geplatzte Wasserleitung, Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1070,
+         'data' => 'userdel	2::inwork 30087,5448 30021,5322
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1187215200,
+         'text' => 'B 002 Stettiner Str. OD Gartz, Knotenpunkt Stettiner-/Scheunenstraße Ausbau Knotenpunkt Vollsperrung 16.07.2007-15.08.2007 ',
+         'from' => 1184450400,
+         'id' => 1071,
+         'data' => 'userdel	q4::inwork 76078,90752 76075,90647
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1187647200,
+         'text' => 'L 023 Templin-Lychen von OL Densow bis OE Lychen Straßenbauarbeiten Vollsperrung 16.07.2007-20.08.2007 ',
+         'from' => 1184450400,
+         'id' => 1072,
+         'data' => 'userdel	2::inwork 4239,85382 5194,83184
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1184968800,
+         'text' => 'L 281 Neureetz-Altranft zw. Croustillier und Altreetz Deckeneinbau Vollsperrung 16.07.2007-20.07.2007 ',
+         'from' => 1184450400,
+         'id' => 1073,
+         'data' => 'userdel	2::inwork 59730,42362 58564,43539
+',
+         'type' => 'gesperrt'
        }
      
 );

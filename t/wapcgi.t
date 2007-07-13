@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.21 2007/03/30 21:57:13 eserte Exp $
+# $Id: wapcgi.t,v 1.22 2007/07/13 07:20:48 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -14,7 +14,7 @@ use File::Temp qw(tempfile);
 use URI;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!eval q{
@@ -82,7 +82,9 @@ for my $wapurl (@wap_url) {
 	    like($resp->content, qr/$_/, "$_ in $url?");
 	}
 
-	$url = "$wapurl?startname=duden&startbezirk=&zielname=sonntag&zielbezirk=";
+	# This used to be "sonntag", but now is not unambigous anymore
+	# (Sonntagsfrieden ...)
+	$url = "$wapurl?startname=duden&startbezirk=&zielname=sonntagstr&zielbezirk=";
 	$resp = $ua->get($url, @hdr);
 	like($resp->header('Content_Type'), qr|^text/vnd.wap.wml|, $url);
 	validate_wml($resp->content, $url);

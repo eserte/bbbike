@@ -6026,7 +6026,7 @@ EOF
        text  => 'B 002 Stettiner Str. OD Gartz, Knotenpunkt Stettiner-/Scheunenstraße Ausbau Knotenpunkt Vollsperrung 30.09.2006-16.10.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 76130,90395 76136,90778
+userdel	q4::inwork 76131,90452 76075,90647 76078,90752
 EOF
      },
      { from  => 1159826400, # 2006-10-03 00:00
@@ -9015,6 +9015,48 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -44441,-30214 -44165,-30318
+EOF
+     },
+     { from  => 1184222221, # 2007-07-12 08:37
+       until => 1184299200, # 2007-07-13 06:00
+       text  => 'Straße des 17. Juni (Tiergarten) Zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (bis 13.07.07 6:00 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_006033',
+       data  => <<EOF,
+userdel	2::temp 8515,12242 8214,12205 8089,12186
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Str. nach Fichtenau (Köpenick) in beiden Richtungen bei S Rahnsdorf geplatzte Wasserleitung, Straße vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_006066',
+       data  => <<EOF,
+userdel	2::inwork 30087,5448 30021,5322
+EOF
+     },
+     { from  => 1184450400, # 2007-07-15 00:00
+       until => 1187215200, # 2007-08-16 00:00
+       text  => 'B 002 Stettiner Str. OD Gartz, Knotenpunkt Stettiner-/Scheunenstraße Ausbau Knotenpunkt Vollsperrung 16.07.2007-15.08.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 76078,90752 76075,90647
+EOF
+     },
+     { from  => 1184450400, # 2007-07-15 00:00
+       until => 1187647200, # 2007-08-21 00:00
+       text  => 'L 023 Templin-Lychen von OL Densow bis OE Lychen Straßenbauarbeiten Vollsperrung 16.07.2007-20.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 4239,85382 5194,83184
+EOF
+     },
+     { from  => 1184450400, # 2007-07-15 00:00
+       until => 1184968800, # 2007-07-21 00:00
+       text  => 'L 281 Neureetz-Altranft zw. Croustillier und Altreetz Deckeneinbau Vollsperrung 16.07.2007-20.07.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 59730,42362 58564,43539
 EOF
      },
     );

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.41 2007/04/14 21:22:37 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.42 2007/07/13 06:30:39 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -120,7 +120,9 @@ for my $browser (@browsers) {
 	}
 	;
 	{
-	    local $^W; $agent->current_form->value('ziel', 'sonntag');
+	    # This used to be just "sonntag", but now there are some
+	    # new "Kolonien" starting with the same prefix...
+	    local $^W; $agent->current_form->value('ziel', 'sonntagstr');
 	}
 	;
 	$agent->submit();
