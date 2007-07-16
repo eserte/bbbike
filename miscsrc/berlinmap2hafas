@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: berlinmap2hafas,v 1.59 2007/05/05 20:47:36 eserte Exp $
+# $Id: berlinmap2hafas,v 1.60 2007/07/16 19:27:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2004,2005 Slaven Rezic. All rights reserved.
@@ -101,6 +101,7 @@ if ($convert_all) {
     $koord = new Fahrinfo::Koord;
 }
 
+my $doppeltATS = 0;
 my $k_obj;
 my $bahnhof;
 my $specborder;
@@ -390,6 +391,7 @@ LINES: while(defined($_ = nextline())) {
 	    } else {
 		warn "Doppelte Koordinaten in $name: $_\n"
 		    unless $quiet;
+		$doppeltATS = 1;
 	    }
 	} else {
 	    $last = $_;
@@ -592,6 +594,11 @@ if ($no_coords) {
 if (defined $bahnhof || defined $specborder) {
     close SPEC;
 }
+
+exit $doppeltATS;
+
+######################################################################
+# Subs
 
 sub berlinmap2hafas {
     my($oldx, $oldy) = @_;

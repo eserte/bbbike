@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.147 2007/07/04 20:37:57 eserte Exp eserte $
+#: version: $Id: handicap_s-orig,v 4.148 2007/07/16 19:31:06 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # XXX hier br‰uchte man keine zus‰tzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -26,7 +26,7 @@ Friedrichstr. (am Mehringplatz): Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 
 Gorkistr.: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q3 2049,20292 2116,20314 2295,20358
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5657,10868 5652,11004
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5797,10881 5831,10978
-Wilmersdorfer Str.: starker Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q4 3723,11457 3751,11334 3770,11231 3795,11098 3827,10980
+Wilmersdorfer Str.: starker Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone), nachts und sonntags Radfahren erlaubt	q4 3723,11457 3751,11334 3770,11231 3795,11098 3827,10980
 (An der M¸ggelspree): fester Waldweg, aber Fuﬂg‰nger	q2 23451,4877 23441,4956 23468,5075 23620,5096 23776,5040 23982,5030 24233,4878 24398,4842 24834,4541 25023,4441 25102,4408 25427,4482 25479,4540 25565,4549
 Am M¸ggelsee: Fuﬂg‰nger	q2 26006,2615 26151,2624 26339,2667 26457,2660 26627,2610 26868,2580 27135,2500 27173,2444 27267,2414 27372,2434 27517,2523 27565,2569 27743,2842 27822,2910 27945,3006 28292,3150 28496,3253
 Pestalozzistr.: Fuﬂg‰ngerzone	q3 3721,11230 3770,11231 3822,11224
@@ -153,7 +153,8 @@ Fuggerstr.: Gehweg	q2 6128,10319 6020,10351
 Pfalzburger Str.: Gehweg	q2 4905,10069 4909,10119
 (Tilla-Durieux-Park): Fuﬂg‰nger	q2 8467,11125 8410,11143
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3288,12700 3383,12720 3582,12704 3763,12624 3907,12619 4091,12617 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
-Spreeufer: Fuﬂg‰nger	q1 10171,12769 10100,12876 9977,12912 9895,12936 9784,12953 9707,12974 9557,12992 9533,12994 9508,12991 9271,12952
+Spreeufer: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 10171,12769 10100,12876 9977,12912 9895,12936 9784,12953 9707,12974
+Spreeufer: Fuﬂg‰nger	q1 9707,12974 9557,12992 9533,12994 9508,12991 9271,12952
 Monbijoupark - Henriette-Herz-Platz: Fuﬂg‰nger	q1 9977,12912 10132,12941
 Monbijoubr¸cke: Fuﬂg‰nger	q1 9707,12974 9680,12916 9661,12876
 Garnisonkirchplatz: Straﬂenbahn	q2 10309,12854 10255,12959
@@ -212,7 +213,6 @@ Barsekowstr.: Fuﬂg‰nger	q1 5344,4672 5417,4647 5476,4626 5589,4617
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5589,4617 5611,4697 5613,4769
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5561,4795 5523,4793 5453,4665 5417,4647
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5809,4828 5826,4819 5909,4798 5945,4828 6018,4850
-Spreeufer: Fuﬂg‰nger	q1 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8554,12593
 Dieffenbach/Schˆnleinstr.: Bodenschwellen	q1 11148,9730 11346,9655 11541,9576 11594,9604
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12213,10434 12180,10604
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12328,10442 12280,10636
@@ -248,6 +248,8 @@ Torstr. - Weydingerstr.: Bordsteine	q2 11079,13492 11108,13513
 Gustav-Heinemann-Br¸cke: Fuﬂg‰nger, enge Br¸cke	q2 8116,12938 8110,13042
 Beruner Str.: Rampen, Fuﬂg‰nger, U-Bahn-Ausgang	q3 20143,10731 20215,10554
 (Parkweg Spreebogenpark): besonders an Wochenenden tags¸ber sehr viele Fuﬂg‰nger	q2 8017,12826 8021,12839 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8275,12936 8341,12911 8417,12846
+Spreeuferweg: besonders an Wochenenden tags¸ber viele Fuﬂg‰nger	q1 7915,12795 7967,12860 8034,12964 8161,13006
+Spreeuferweg: besonders an Wochenenden tags¸ber viele Fuﬂg‰nger	q1 8245,13016 8315,13005 8396,12968 8465,12887 8478,12867 8529,12757 8536,12758 8529,12757 8566,12661 8587,12642 8635,12629 8754,12622
 Helenenhof: enge Tore, Fuﬂg‰nger	q3 14495,11261 14395,11356
 F‰rberstr. - Uferweg: sehr eng	q2 21675,4989 21665,5035 21684,5079
 Uferweg, Mentzelpark: Fuﬂg‰nger	q1 21487,5425 21600,5221 21684,5079 21735,5003 21821,4918 21845,4875

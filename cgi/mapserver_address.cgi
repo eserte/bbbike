@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.30 2007/05/23 19:54:36 eserte Exp $
+# $Id: mapserver_address.cgi,v 1.31 2007/07/14 15:30:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -177,9 +177,9 @@ sub resolve_street {
     my $coord = $br->get_start_position(fixposition => 0);
 
     if (!defined $coord) {
-	if (!$br->StartChoices && !@{$br->StartChoices}) {
+	if (!$br->StartChoices || !@{$br->StartChoices}) {
 	    print header, start_html("Auswahl nach Straﬂen und Orten"), h1("Auswahl nach Straﬂen und Orten");
-	    print "Nichs gefunden!<br>";
+	    print "Nichts gefunden!<br>";
 	    show_form();
 	    print end_html;
 	    return;
@@ -241,7 +241,7 @@ sub resolve_city {
     }
     if (!@res) {
 	print header, start_html("Auswahl nach Straﬂen und Orten"), h1("Auswahl nach Straﬂen und Orten");
-	print "Nichs gefunden!<br>";
+	print "Nichts gefunden!<br>";
 	show_form();
 	print end_html;
     } elsif (@res == 1) {
@@ -317,7 +317,7 @@ sub resolve_fulltext {
     close GREP;
     if (!@res) {
 	print header, start_html("Auswahl nach Straﬂen und Orten"), h1("Auswahl nach Straﬂen und Orten");
-	print "Nichs gefunden!<br>";
+	print "Nichts gefunden!<br>";
 	show_form();
 	print end_html;
     } elsif (@res > 1) {

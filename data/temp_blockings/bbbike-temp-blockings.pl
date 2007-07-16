@@ -6662,7 +6662,7 @@ EOF
        text  => 'L 338 Rosa-Luxemburg-Damm/ Hauptstr. Bahnübergang in der OL Neuenhagen Erneu. Gleisanlagen Vollsperrung 18.11.2006-21.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 30179,13667 30842,13175 30975,12918
+userdel	2::inwork 30179,13667 30795,13191 30815,13170 30975,12918
 EOF
      },
      { from  => undef, # 
@@ -9027,7 +9027,7 @@ userdel	2::temp 8515,12242 8214,12205 8089,12186
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1184610940, # XXX
        text  => 'Str. nach Fichtenau (Köpenick) in beiden Richtungen bei S Rahnsdorf geplatzte Wasserleitung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_006066',
@@ -9036,7 +9036,7 @@ userdel	2::inwork 30087,5448 30021,5322
 EOF
      },
      { from  => 1184450400, # 2007-07-15 00:00
-       until => 1187215200, # 2007-08-16 00:00
+       until => 1184611295, # 2007-08-16 00:00 1187215200
        text  => 'B 002 Stettiner Str. OD Gartz, Knotenpunkt Stettiner-/Scheunenstraße Ausbau Knotenpunkt Vollsperrung 16.07.2007-15.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -9057,6 +9057,31 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 59730,42362 58564,43539
+EOF
+     },
+     { from  => 1184610917, # 2007-07-16 20:35
+       until => 1191189599, # 2007-09-30 23:59
+       text  => 'Simon-Bolivar-Str. (Hohenschönhausen) in beiden Richtungen zwischen Konrad-Wolf-Str. und Küstriner Str. Baustelle, Straße vollständig gesperrt (bis Ende 09.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_006088',
+       data  => <<EOF,
+userdel	2::inwork 15763,15003 16025,14753
+EOF
+     },
+     { from  => 1184450400, # 2007-07-15 00:00
+       until => 1188079200, # 2007-08-26 00:00
+       text  => 'B 002 Pommernstr., Stettiner Str. OD Gartz, Kno. Pommern-/Scheunenstr. u. Stettiner-/Scheu Ausbau Knotenpunkte Vollsperrung 16.07.2007-25.08.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 75502,90490 75956,90435
+EOF
+     },
+     { from  => 1184450400, # 2007-07-15 00:00
+       until => 1188597600, # 2007-09-01 00:00
+       text  => 'L 338 R.-Luxemburg-Damm, Hauptstr. Bahnübergang in der OL Neuenhagen Erneuerung Bahnübergang halbseitig gesperrt; Einbahnstraße 16.07.2007-31.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 30795,13191 30815,13170 30975,12918
 EOF
      },
     );

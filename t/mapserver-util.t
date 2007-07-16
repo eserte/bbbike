@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver-util.t,v 1.6 2007/05/21 22:00:38 eserte Exp $
+# $Id: mapserver-util.t,v 1.7 2007/07/14 15:29:58 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -33,7 +33,7 @@ if (!GetOptions(get_std_opts("cgidir", "xxx"),
     die "usage: $0 [-cgidir url] [-xxx]";
 }
 
-plan tests => 97;
+plan tests => 99;
 
 sub get_agent {
     my $agent = WWW::Mechanize->new;
@@ -113,13 +113,25 @@ sub is_on_mapserver_page {
 				  },
 		       );
     is_on_mapserver_page($agent, "lat/long DMS");
-
     $agent->back();
+
+    ######################################################################
+    # non-existent
+
+    $agent->submit_form(form_number => 3,
+			fields => {'searchterm', 'thisreallydoesnotexistBlafoobarXYZ'},
+		       );
+    like($agent->uri, qr{/mapserver_address.cgi}, "Nothing found, same address");
+    like($agent->content, qr{Nichts gefunden}, 'Expected "nothing found" content for nonsense search term');
+
+    ######################################################################
+    # Volltext (Funkturm)
+
     $agent->submit_form(form_number => 3,
 			fields => {'searchterm', 'funkturm'},
 		       );
     like($agent->uri, qr{/mapserver_address.cgi}, "Multiple matches, same address");
-    like($agent->content, qr{Mehrere Treffer}, 'Expected "multiple ..." content');
+    like($agent->content, qr{Mehrere Treffer}, 'Expected "multiple ..." content for Funkturm');
 
     $agent->submit_form(form_number => 1,
 			fields => {'coords', 'Funkturm (Plätze)'},
@@ -127,11 +139,15 @@ sub is_on_mapserver_page {
     is_on_mapserver_page($agent, "fulltext term");
 
     $agent->back();
+
+    ######################################################################
+    # Straße (Heerstr.)
+
     $agent->submit_form(form_number => 2,
 			fields => {'street', 'heerstr'},
 		       );
     like($agent->uri, qr{/mapserver_address.cgi}, "Multiple street matches, same address");
-    like($agent->content, qr{Mehrere.*Stra.*en}, 'Expected "multiple ..." content');
+    like($agent->content, qr{Mehrere.*Stra.*en}, 'Expected "multiple ..." content for Heerstr');
 
     $agent->submit_form(form_number => 1,
 			fields => {'coords', 'Heerstr. (Spandau, 13591)'},
@@ -141,7 +157,7 @@ sub is_on_mapserver_page {
     $agent->back();
     $agent->submit_form(form_number => 2,
 			fields => {'street', 'heerstr',
-				   'citypart', 'spandau',
+				   'citypart', 'charlottenburg',
 				  },
 		       );
     is_on_mapserver_page($agent, "street with citypart output");

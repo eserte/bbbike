@@ -3159,6 +3159,11 @@ Java version does not compile anymore with Java 1.5
 
 =over
 
+=item * (M1)
+
+There is CDB_Perl on CPAN which could be used as a fallback for
+CDB_File.
+
 =item * (H2)
 
 Marek::Pod::HTML seams to have a problem, maybe inherited from

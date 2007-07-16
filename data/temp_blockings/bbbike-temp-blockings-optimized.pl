@@ -467,15 +467,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        undef,
-       {
-         'until' => 1184536800,
-         'text' => 'B 167 zw. Dolgelin und Friedersdorf Inbetriebnahme OU Vollsperrung 23.04.2007-15.07.2007 ',
-         'from' => 1177192800,
-         'id' => 931,
-         'data' => 'userdel	2::inwork 78837,11306 78194,11798 77991,12506 77759,12767
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -831,25 +823,8 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_005905',
-         'until' => 1184536799,
-         'text' => 'Stubenrauchstr. (Treptow ) in Richtung Segelfliegerdamm, ab Akeleiweg Baustelle, Fahrtrichtung gesperrt und Akeleiweg gesperrt (bis Mitte Juli 2007)',
-         'from' => 1183280291,
-         'id' => 1051,
-         'data' => 'userdel	q4::inwork; 17388,3576 17490,3637 17593,3748
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1184536800,
-         'text' => 'B 156 Tschernitz-Spremberg zw. Abzw. Friedrichshain und Abzw. Reuthen Deckeneinbau Vollsperrung 13.07.2007-15.07.2007 ',
-         'from' => 1184191200,
-         'id' => 1052,
-         'data' => 'userdel	2::inwork 89821,-90648 91975,-90138
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        {
          'until' => 1188597600,
@@ -957,35 +932,9 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_006033',
-         'until' => 1184299200,
-         'text' => 'Straße des 17. Juni (Tiergarten) Zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (bis 13.07.07 6:00 Uhr)',
-         'from' => 1184222221,
-         'id' => 1069,
-         'data' => 'userdel	2::temp 8515,12242 8214,12205 8089,12186
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_006066',
-         'until' => undef,
-         'text' => 'Str. nach Fichtenau (Köpenick) in beiden Richtungen bei S Rahnsdorf geplatzte Wasserleitung, Straße vollständig gesperrt',
-         'from' => undef,
-         'id' => 1070,
-         'data' => 'userdel	2::inwork 30087,5448 30021,5322
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1187215200,
-         'text' => 'B 002 Stettiner Str. OD Gartz, Knotenpunkt Stettiner-/Scheunenstraße Ausbau Knotenpunkt Vollsperrung 16.07.2007-15.08.2007 ',
-         'from' => 1184450400,
-         'id' => 1071,
-         'data' => 'userdel	q4::inwork 76078,90752 76075,90647
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
+       undef,
        {
          'until' => 1187647200,
          'text' => 'L 023 Templin-Lychen von OL Densow bis OE Lychen Straßenbauarbeiten Vollsperrung 16.07.2007-20.08.2007 ',
@@ -1001,6 +950,34 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'from' => 1184450400,
          'id' => 1073,
          'data' => 'userdel	2::inwork 59730,42362 58564,43539
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006088',
+         'until' => 1191189599,
+         'text' => 'Simon-Bolivar-Str. (Hohenschönhausen) in beiden Richtungen zwischen Konrad-Wolf-Str. und Küstriner Str. Baustelle, Straße vollständig gesperrt (bis Ende 09.2007)',
+         'from' => 1184610917,
+         'id' => 1074,
+         'data' => 'userdel	2::inwork 15763,15003 16025,14753
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1188079200,
+         'text' => 'B 002 Pommernstr., Stettiner Str. OD Gartz, Kno. Pommern-/Scheunenstr. u. Stettiner-/Scheu Ausbau Knotenpunkte Vollsperrung 16.07.2007-25.08.2007 ',
+         'from' => 1184450400,
+         'id' => 1075,
+         'data' => 'userdel	q4::inwork 75502,90490 75956,90435
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1188597600,
+         'text' => 'L 338 R.-Luxemburg-Damm, Hauptstr. Bahnübergang in der OL Neuenhagen Erneuerung Bahnübergang halbseitig gesperrt; Einbahnstraße 16.07.2007-31.08.2007 ',
+         'from' => 1184450400,
+         'id' => 1076,
+         'data' => 'userdel	2::inwork 30795,13191 30815,13170 30975,12918
 ',
          'type' => 'gesperrt'
        }
