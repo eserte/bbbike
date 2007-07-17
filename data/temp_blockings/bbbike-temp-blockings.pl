@@ -2357,7 +2357,7 @@ EOF
        text  => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarerstr. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 20.07.2005-01.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 1738,31301 1771,31319 2135,31205 2259,31166
+userdel	2 1741,31299 1771,31319 2135,31205 2259,31165
 EOF
      },
      { from  => 1121724000, # 2005-07-19 00:00
@@ -4843,7 +4843,7 @@ EOF
        text  => 'L 211 Lehnitzer Str. OD Oanienburg, zw. Lindenring u. Dr.-H.-Byk-Str. Munitionssuche u.-bergung halbseitig gesperrt; Einbahnstraße 22.06.2006-30.06.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -954,38397 -591,37970
+userdel	q4::inwork -896,38348 -856,38306 -793,38240 -770,38215 -612,38051
 EOF
      },
      { from  => 1151042079, # 2006-06-23 07:54
@@ -5858,7 +5858,7 @@ EOF
        text  => 'B 096 Hauptstr., Zossener Str. OD Baruth Kanal- und Straßenbau Vollsperrung 09.01.2006-30.12.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -4562,37787 -3506,38431
+userdel	q4::inwork -4134,38068 -4009,38126
 EOF
      },
      { from  => 1158876000, # 2006-09-22 00:00
@@ -6278,7 +6278,7 @@ EOF
        text  => 'L 029 Wandlitz-Schmachtenhagen OD Zehlendorf grundhafter Straßenbau Vollsperrung 06.07.2006-15.03.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 8293,42032 8682,42032
+userdel	q4::inwork 8332,41982 8439,41992 8504,41998 8521,41998 8600,42004 8696,42028
 EOF
      },
      { from  => 1161381600, # 2006-10-21 00:00
@@ -7101,7 +7101,7 @@ EOF
        text  => 'L 211 Lehnitzstr. OL Oranienburg, zw. A.-Pican-Str. und Dr.-H.-Byk-Str. Munitionssuche u. -bergung Vollsperrung 01.07.2006-31.05.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -198,37506 -591,37970
+userdel	2::inwork -612,38051 -234,37510
 EOF
      },
      { from  => undef, # 
@@ -7316,7 +7316,7 @@ EOF
        text  => 'B 273 Breite Str. OD Oranienburg, zw. Berliner Str. u. Havelstr. Straßenbauarbeiten Vollsperrung 19.03.2007-22.07.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -1472,38523 -1580,38438 -1644,38289
+userdel	q4::inwork -1571,38406 -1553,38501 -1517,38543 -1500,38565
 EOF
      },
      { from  => 1195945200, # 2007-11-25 00:00
@@ -7324,7 +7324,7 @@ EOF
        text  => 'B 273 Breite Str., Havelstr. OD Oranienburg, zw. Berliner Str. und Gartenstr. Deckschichteinbau Vollsperrung 26.11.2007-07.12.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -1450,38268 -1644,38289
+userdel	q4::inwork -1618,38293 -1504,38289 -1353,38301
 EOF
      },
      { from  => 1185055200, # 2007-07-22 00:00
@@ -7332,7 +7332,7 @@ EOF
        text  => 'B 273 Havelstr. OD Oranienburg, zw. Breite Str. und Gartenstr. Straßenbauarbeiten Vollsperrung 23.07.2007-25.11.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -1644,38289 -1832,38082
+userdel	q4::inwork -1618,38293 -1709,38275 -1720,38268 -1764,38237 -1796,38203 -1832,38148
 EOF
      },
      { from  => 1174172400, # 2007-03-18 00:00
@@ -7700,7 +7700,7 @@ EOF
        text  => 'L 021 Wensickendorf-Liebenwalde OD Zehlendorf Einbau Deckschicht Vollsperrung 10.04.2007-14.04.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 9093,42159 8682,42032
+userdel	q4::inwork 9043,42165 9032,42153 8925,42114 8696,42028
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
@@ -7708,7 +7708,7 @@ EOF
        text  => 'L 029 Wandlitz-Schmachtenhagen OD Zehlendorf Einbau Deckschicht Vollsperrung 10.04.2007-14.04.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 8293,42032 8682,42032
+userdel	q4::inwork 8332,41982 8439,41992 8504,41998 8521,41998 8600,42004 8696,42028
 EOF
      },
      { from  => 1176328800, # 2007-04-12 00:00
@@ -8067,7 +8067,7 @@ EOF
        text  => 'B 273 Wensickendorf-Oranienburg Schleusenbrücke Lehnitz am OA Oranienburg Instandsetzungsarbeiten Vollsperrung 02.06.2007-04.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 1281,39850 1455,39824
+userdel	2::inwork 1284,39885 1406,39868
 EOF
      },
      { from  => 1178834400, # 2007-05-11 00:00
@@ -8075,7 +8075,7 @@ EOF
        text  => 'B 273 Wensickendorf-Oranienburg Schleusenbrücke Lehnitz am OA Oranienburg Instandsetzungsarbeiten Vollsperrung 12.05.2007-14.05.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 1281,39850 1455,39824
+userdel	2::inwork 1284,39885 1406,39868
 EOF
      },
      { from  => 1179439200, # 2007-05-18 00:00
@@ -8083,7 +8083,7 @@ EOF
        text  => 'B 273 Wensickendorf-Oranienburg Schleusenbrücke Lehnitz am OA Oranienburg Instandsetzungsarbeiten Vollsperrung 19.05.2007-21.05.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 1281,39850 1455,39824
+userdel	2::inwork 1284,39885 1406,39868
 EOF
      },
      { from  => 1179439200, # 2007-05-18 00:00
@@ -8990,7 +8990,7 @@ EOF
        text  => 'L 020 Velten-Borgsdorf zw. OL Pinnow, Havelweg und Berliner Ch., Borgsdorf Grundhafter Straßenbau Vollsperrung 11.07.2007-25.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -736,32837 -409,33522
+userdel	2::inwork -736,32837 -579,33145 -409,33522
 EOF
      },
      { from  => 1183845600, # 2007-07-08 00:00

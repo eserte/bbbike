@@ -56,9 +56,9 @@ href="mailto:slaven@rezic.de">slaven@rezic.de</a>&#62;</code><br />
 
 <dt>9. <a href="#AEN494">Alternative Editiermöglichkeiten</a></dt>
 
-<dt>10. <a href="#AEN509">Neue Layer auf Basis der Berliner BBBike-Daten</a></dt>
+<dt>10. <a href="#AEN518">Neue Layer auf Basis der Berliner BBBike-Daten</a></dt>
 
-<dt>11. <a href="#AEN512">Eine komplett neue Datenbank aufbauen</a></dt>
+<dt>11. <a href="#AEN521">Eine komplett neue Datenbank aufbauen</a></dt>
 
 <dt>12. <a href="#ALTERNATIVES">Alternativen</a></dt>
 </dl>
@@ -1138,17 +1138,29 @@ Space Koordinatenliste
 <h3 class="SECT2"><a id="AEN504" name="AEN504">9.2. Direktes Editieren der Daten</a></h3>
 
 <p>BBBike-Daten sind reine Textdateien und können mit einem normalen Texteditor
-bearbeitet werden. Allerdings wird dabei kein <tt class="FILENAME">datachange.log</tt>
-erzeugt und das Zusammenführen mit den Stammdaten könnte in Handarbeit resultieren.
-Deshalb sollte möglichst immer der Straßen-Editor verwendet werden. In einigen Fällen ist
-aber weitergehendes Editieren möglich. Für die genauere Beschreibung des
-BBBike-Datenformats siehe <a href="bbd.html" target="_top">hier</a>.&#13;</p>
+bearbeitet werden. Dabei sollte der Texteditor im Zeichensatz <span class="emphasis"><i
+class="EMPHASIS">iso-8859-1</i></span> eingestellt sein. Der Zeichensatz <span
+class="emphasis"><i class="EMPHASIS">Windows-1252</i></span> ist erlaubt, soweit nicht
+einige Zeichen im Bereich 128-160 verwendet werden (z.B. die typografischen doppelten
+Anführungszeichen, das Euro-Zeichen). Ausnahmen sind einige Dateien, die den Zeichensatz
+<span class="emphasis"><i class="EMPHASIS">utf-8</i></span> verwenden (z.B. <tt
+class="FILENAME">orte-orig</tt>, <tt class="FILENAME">orte2-orig</tt>). Der Zeichensatz
+ist, soweit er von <span class="emphasis"><i class="EMPHASIS">iso-8859-1</i></span>
+abweicht, am Anfang der Datei mit einer entsprechenden <span class="emphasis"><i
+class="EMPHASIS">encoding</i></span>-Direktive gekennzeichnet. Das Umschalten des
+Zeichensatzes sollte beim <tt class="FILENAME">emacs</tt> automatisch erfolgen.&#13;</p>
+
+<p>Beim Editieren mit einem Texteditor wird allerdings kein <tt
+class="FILENAME">datachange.log</tt> erzeugt und das Zusammenführen mit den Stammdaten
+könnte in Handarbeit resultieren. Deshalb sollte möglichst immer der Straßen-Editor
+verwendet werden. Für die genauere Beschreibung des BBBike-Datenformats siehe <a
+href="bbd.html" target="_top">hier</a>.&#13;</p>
 </div>
 </div>
 
 <div class="SECT1">
 <hr />
-<h2 class="SECT1"><a id="AEN509" name="AEN509">10. Neue Layer auf Basis der Berliner
+<h2 class="SECT1"><a id="AEN518" name="AEN518">10. Neue Layer auf Basis der Berliner
 BBBike-Daten</a></h2>
 
 <p>TBD &#13;</p>
@@ -1156,7 +1168,7 @@ BBBike-Daten</a></h2>
 
 <div class="SECT1">
 <hr />
-<h2 class="SECT1"><a id="AEN512" name="AEN512">11. Eine komplett neue Datenbank
+<h2 class="SECT1"><a id="AEN521" name="AEN521">11. Eine komplett neue Datenbank
 aufbauen</a></h2>
 
 <p>Dazu sollte ein neues Datenverzeichnis parallel zu <tt
@@ -1189,7 +1201,7 @@ führen.<br />
 <h2 class="SECT1"><a id="ALTERNATIVES" name="ALTERNATIVES">12. Alternativen</a></h2>
 
 <div class="SECT2">
-<h3 class="SECT2"><a id="AEN529" name="AEN529">12.1. Formlose Meldungen</a></h3>
+<h3 class="SECT2"><a id="AEN538" name="AEN538">12.1. Formlose Meldungen</a></h3>
 
 <p>Um formlos Änderungen oder Ergänzungen am Berliner und Brandenburger Datenbestand zu
 melden, reicht eine Mail an <a href="mailto:newstreet@bbbike.de"
@@ -1198,7 +1210,7 @@ target="_top">newstreet@bbbike.de</a> aus.</p>
 
 <div class="SECT2">
 <hr />
-<h3 class="SECT2"><a id="AEN533" name="AEN533">12.2. Formular im WWW</a></h3>
+<h3 class="SECT2"><a id="AEN542" name="AEN542">12.2. Formular im WWW</a></h3>
 
 <p>Ein Formular zum Eintragen von Straßendaten findet man <a
 href="http://bbbike.radzeit.de/BBBike/html/newstreetform.html"
@@ -1207,7 +1219,7 @@ target="_top">hier</a>.</p>
 
 <div class="SECT2">
 <hr />
-<h3 class="SECT2"><a id="AEN537" name="AEN537">12.3. Kommentare über Mapserver
+<h3 class="SECT2"><a id="AEN546" name="AEN546">12.3. Kommentare über Mapserver
 eintragen</a></h3>
 
 <p>Aus dem <a href="http://bbbike.radzeit.de/cgi-bin/bbbike.cgi?mapserver=1"

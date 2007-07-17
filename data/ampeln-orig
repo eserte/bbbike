@@ -1,5 +1,5 @@
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.117 2007/07/16 19:30:47 eserte Exp $
+#: version: $Id: ampeln-orig,v 4.118 2007/07/17 21:21:48 eserte Exp $
 #:
 	X 9222,8787
 	X 8982,8781
@@ -2127,3 +2127,64 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 #: note: Luftbild
 	B 35386,13954
 	B 70188,-78014
+#: by: Andreas Titz vvv
+################################################################################
+# meine Ergänzungen
+#: append_comment Oranienburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Aderluch	F -435,39823
+André-Pican-Str. / Bernauer Str.	X -292,39051
+André-Pican-Str. / Saarlandstr. / Lehnitzstr.	X -234,37510
+B273 / B96neu w	X -4422,37871
+B273 / B96neu o / Birkenweg	X -4134,38068
+Berliner Str. / Adolf-Dechert-Str. / Bötzower Stadtgraben	F -1501,38221
+Berliner Str. / Saarlandstr.	X -967,36196
+Berliner Str. / Melanchthonstr.	X -1464,37682
+Berliner Str. / Südcenter	X -1114,36603
+Berliner Str. / Walther-Bothe-Str.	X -1440,37514
+Bernauer Str. / Koblenzer Str. / Mathias-Thesen-Str.	F -25,39151
+Bernauer Str. / Lehnitzstr. / Sachsenhausener Str.	X -1253,38715
+Bernauer Str. / Mittelstr. / Liebigstr.	F -1010,38798
+Bernauer Str. / Stralsunder Str.	X -853,38856
+Breite Str. / Kanalstr. / Blutgasse	F -1571,38406
+Germendorfer Allee / Eichendorffstr.	F -2715,38240
+Havelstr. / Nicolaikirche	F -1720,38268
+Saarlandstr. / Nauener Str.	F -576,36956
+Sachsenhausener Str. / Rungestr.	X -1221,38998
+Schlossplatz	X -1517,38543
+Str. der Einheit / Eberswalder Str. / Hans-von-Dohnanyi-Str.	F -290,39365
+#: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#: append_comment Oranienburg-Germendorf vvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Germendorfer Dorfstr. Höhe Am Anger	F -5757,37890
+Germendorfer Dorfstr. / Kremmener Allee / Veltner Str. / Hohenbrucher Str.	X -5903,37885
+#: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#: append_comment Oranienburg-Lehnitz vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+S-Bf Lehnitz	F 329,37254
+#: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#: append_comment Oranienburg-Sachsenhausen vvvvvvvvvvvvvvvvvvvvvvvvv
+Chausseestr. / Zum Bahnhof	X -882,40723
+Granseer Str. Höhe Post	F -1235,41150
+Zum Bahnhof / Nordbahn	B -521,40612
+#: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#: append_comment Oranienburg-Schmachtenhagen vvvvvvvvvvvvvvvvvvvvvvv
+Bauernmarktchaussee / nGAR	B0 5150,41018
+Malzer Weg / nGAR	B0 4581,41115
+Schwarzer Weg / nGAR	B0 3167,41284
+#: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#: append_comment Oranienburg-Wensickendorf vvvvvvvvvvvvvvvvvvvvvvvvv
+B273 / NEB	B 8643,38865
+Im Wensickendorfer Felde / nGAR (nur am Wochenende)	B 7378,40295
+Triftweg / NEB (Mo-Fr Testbetrieb bis 31.12.2007)	B 8926,40020
+#: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#: append_comment Oranienburg-Zehlendorf vvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Alte Dorfstr. / Stolzenhagener Chaussee / NEB	B0 9343,42173
+Ausbau Rickbyhl / NEB	B0 9407,42489
+Rehmater Weg / NEB	B0 9707,43684
+Sandstr. / NEB (Mo-Fr Testbetrieb bis 31.12.2007)	B 9232,41584
+#: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Wensickendorf - Zehlendorf / nGAR (nur am Wochenende)	B 8218,39700
+Friedrichsthaler Str. / nGAR (südl. Kurve)	B0 -76,41304
+Friedrichsthaler Str. / nGAR (nördl. Kurve)	B0 -4,41437
+# außerhalb Oranienburgs
+Borgsdorfer Kreuzung	X 103,33971
+Kreuzbruch - Rehmate / NEB	B0 10095,45368
+#: by: ^^^

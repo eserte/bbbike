@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.166 2007/07/16 19:31:05 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.167 2007/07/17 21:21:51 eserte Exp $
 #:
 ###################################################################
 #
@@ -1192,3 +1192,244 @@ Schöneicher Str. (Hohenschönhausen)	1 16675,15688 16628,15642 16597,15552 16550,
 #: by: Daniel Pepper [AM]
 tragen (Treppe)	0:45 5964,12540
 Stormstr. (Potsdam)	1 -15243,-2459 -15168,-2529 -15060,-2626
+#: by: Andreas Titz vvv
+#: append_comment Oranienburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Am Kanal	1 -1964,35846 -2110,36206 -2209,36443
+An der Landstr.	1 -3485,38431 -3496,38421 -3528,38403 -3601,38359 -3748,38273
+Bagnoletstr.	1 -1470,37075 -1468,37162 -1525,37398
+(Berliner Str. - Apoldaer Str.)	1 -1104,36281 -1012,36317
+Blutgasse	1 -1514,38404 -1571,38406
+Bonner Str.	1 212,39123 3,39075
+(Bötzower Platz (westl. Lieferantenzufahrt))	1 -1812,38295 -1754,38289 -1760,38434
+# Ri Norden
+Dr.-Kurt-Schumacher-Str.	1 -1918,37979 -2021,37775
+# Ri Süden
+Dr.-Kurt-Schumacher-Str.	1 -2021,37775 -2045,37882 -1918,37979
+Florastr.	1s 300,37329 237,37348
+# Melniker Str. â†’ Berliner Str.
+Friedrich-Engels-Str	1 -1275,37046 -1403,37062
+# Theodor-Neubauer-Str. â†’ Arthur-Becker-Str.
+Friedrich-Engels-Str.	1 -1657,37104 -1607,37096
+Haller Str.	1 -1032,37401 -1117,37570 -1160,37654
+Hammer Str.	1 -1606,37476 -1590,37382 -1537,37140 -1539,37084
+Heidelberger Platz	1s -77,38790 -100,38813 -88,38842 -63,38825 -64,38796 -77,38790
+Hildburghausener Str.	1 -1643,37051 -1657,37104
+Hirtenweg	1 -271,39753 -273,39731 -248,39665 -200,39595
+Illerstr.	1s -1125,36635 -1017,36667
+Kitzbüheler Str.	1 -1110,37689 -1062,37598 -1031,37546 -960,37425
+(Kreisverkehr Alter Flugplatz)	1 -2096,35187 -2135,35218 -2110,35256 -2075,35234 -2096,35187
+(Kreisverkehr Am Anker)	1 2315,44104 2295,44137 2329,44142
+(Kreisverkehr Annahof)	1 -3085,37118 -3126,37135 -3123,37167 -3078,37154 -3085,37118
+(Kreisverkehr Dekra)	1 -2248,37357 -2262,37376 -2251,37390 -2237,37385 -2231,37373 -2248,37357
+(Kreisverkehr Bahnhof Sachsenhausen)	1 -429,40556 -435,40587 -400,40600 -382,40564 -429,40556
+(Kreisverkehr Kremmener Str.)	1 -2203,38167 -2207,38196 -2185,38204 -2179,38179 -2203,38167
+(Kreisverkehr Rosengarten)	1 -1831,38109 -1850,38132 -1832,38148 -1817,38131 -1831,38109
+Liebigstr.	1 -1067,38879 -1032,38792
+Lindenring	1 -770,38215 -903,38101 -950,38114 -967,38143 -973,38189 -964,38223 -939,38262 -878,38279 -856,38306
+Lehnitzstr.	1 -1153,38610 -1253,38715
+Luisenweg	1 -1907,39195 -1912,39154 -1943,38959
+Mannheimer Str.	1 -235,38435 -51,38476
+Melniker Str.	1 -1403,37062 -1396,37162 -1457,37415
+Mittelstr.	1 -931,38614 -937,38631 -953,38681 -996,38804
+# "Blockumfahrung" nördl. und westl. Straße
+Mittelstr.	1s -1007,38585 -1031,38650 -953,38681
+# "Blockumfahrung" südl. Straße
+Mittelstr.	1 -931,38614 -1007,38585
+(Oranienpark Lieferantenzufahrt)	1 -2304,37918 -2450,37901 -2475,38004 -2490,38120 -2482,38160 -2354,38146 -2342,38187 -2353,38253
+Quedlinburger Str.	1 -1035,36095 -979,35926 -946,35837
+Sandhausener Weg	1 -71,39687 -200,39595 -285,39520
+Schulstr.	1 -937,38631 -790,38671
+Theodor-Neubauer-Str.	1 -1607,37096 -1604,37150 -1659,37365 -1684,37456
+(Walther-Bothe-Str. 56XXX)	1 -1965,37298 -1929,37298 -1893,37140 -1957,37153 -1979,37270 -1965,37298
+#: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#: append_comment Oranienburg-Germendorf vvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Am alten Bahnhof	1 -6090,38367 -6368,38485
+Am Bahndamm	1 -4895,37765 -4907,37609
+(Rampe am Hp Germendorf Süd)	1 -5776,37314 -5740,37334
+(Tankstelle Germendorf)	1 -4437,37975 -4400,37928 -4340,37965 -4373,38020
+#: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#: append_comment Oranienburg-Lehnitz vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Dianastr.	1 489,37526 443,37393 396,37329 346,37320 300,37329
+Gutsplatz	1 159,37212 159,37164 250,37170
+Uferpromenade	1 557,38481 531,38409 507,38260
+Geranienstr.	1 6220,38521 6246,38787 6295,38935
+#: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#: append_comment Oranienburg-Zehlendorf vvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Ausbau Siedlung	2 6348,41968 6470,41378
+#: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+B96 Anst Teerofen w	1 -2014,42871 -1989,42943 -1887,42993 -1864,43042
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+# Am Bahndamm
+Durchgang neben Schranke	BNP:15 -4829,37754
+# (Am Friedhof) / Innsbrucker Straße
+Poller mittig	BNP:5 -929,37462
+# (Am Krankenhaus)
+drei Poller	BNP:0 -976,37210
+# (Am Krankenhaus)
+drei Poller	BNP:0 -989,37250
+# (Am Krankenhaus)
+drei Poller	BNP:0 -993,37268
+#((am Oranienburger Kanal) - Beuthnerweg)
+Drängelgitter	BNP:15 -2409,38797
+#((am Oranienburger Kanal) - Hauptweg)
+Drängelgitter	BNP:15 -2334,39003
+# Am Park / Granseer Straße
+zwischen den Blumenkästen durch	BNP:5 -1215,40976
+# Am Park Höhe Sportplatz
+an dem liegenden Baumstamm vorbei	BNP:0 -1315,40870
+# Am Wolfsbusch / Friedensstraße
+zwischen den liegenden Baumstämmen durch	BNP:5 -2296,37678
+# An den Waldseen - Mühlensteig
+zwei Poller	BNP:5 -6282,37576
+# an der Havelbrücke der Nordbahn / Umfahrung des ehem. Bü
+an der Holzschranke vorbei	BNP:15 -542,42873
+# An der Landstraße (westlich der Kurve)
+drei Poller	BNP:0 -3528,38403
+# An der Landstraße / Ostweg
+Poller mittig	BNP:0 -3496,38421
+# (An der Saarlandstraße) / Saarlandstraße
+drei Poller	BNP:5 -287,37415
+# Badeweg - Friedrich-Wolf-Straße (am Badeweg)
+2 Poller	BNP:0 458,37985
+# Badeweg - Friedrich-Wolf-Straße (an der Friedrich-Wolf-Straße)
+2 Poller	BNP:0 509,37963
+# Bärenklauer Weg (Fußradweg Ecke Landstraße)
+Poller mittig	BNP:5 -3810,36673
+# Bärenklauer Weg (Nähe westlicher Ortseingang Leegebruch)
+Poller mittig	BNP:10 -5256,36131
+# Bärenklauer Weg (östlicher Ortseingang Leegebruch)
+Pollerreihe	BNP:0 -4037,36545
+# Blumenweg - Am Havelbogen / Am Havelbogen
+Poller	BNP:5 -1604,39299
+# Bodestraße / Egerstraße
+zwischen den liegenden Baumstämmen durch	BNP:5 -765,36314
+# (Bollwerk) / Blaues Wunder
+Pollerreihe	BNP:5 -1082,38034
+# (Bollwerk) Höhe ehem. Marktplatz
+Pollerreihe	BNP:0 -1442,38509
+# Bötzower Platz (Westseite) / Havelstraße
+Pollerreihe	BNP:5 -1721,38272
+# Bötzower Platz (Westseite) / Kanalstraße
+Pollerreihe	BNP:5 -1729,38425
+# Bötzower Stadtgraben
+Pollerreihe	BNP:0 -1782,38140
+# Brieseweg / Mühlenbecker Weg (Stichstraße)
+zwischen den liegenden Baumstämmen durch	BNP:0 439,37064
+# Drosselgasse / Spielplatz am Eichkatzweg
+an dem liegenden Baumstamm vorbei	BNP:15 -1734,41253
+# Dürerpromenade (Privatstraße) / Badstraße
+Poller mittig	BNP:0 -396,35753
+# Dürerpromenade (Privatstraße) / Dürerpromenade
+Pollerreihe	BNP:0 -335,35640
+# Dürerpromenade (Privatstraße) / Thomastraße
+Poller + Tor	BNP:0 -489,35625
+# Eichkatzweg / Pfad über den Spielplatz zur Drosselgasse
+zwischen den liegenden Baumstämmen durch	BNP:10 -1744,41296
+# Eichkatzweg / Pfad über den Spielplatz zur Jägerstraße
+zwischen den liegenden Baumstämmen durch	BNP:10 -1792,41320
+# Elbestraße / Freiheitsplatz-Innenbereich
+Poller	BNP:0 -585,36153
+# (entlang Umgehungsbahn) / Einfahrt Kleingartenanlage
+Poller	BNP:5 -2228,37131
+# (entlang Umgehungsbahn) / Schmalkaldener Str.
+Poller	BNP:5 -1889,37093
+# Fliederweg (Ostende)
+Poller	BNP:0 -1790,39587
+# Fliederweg (Ostende, am Ende der Grundstücke)
+Engstelle	BNP:20 -1765,39579
+# Friedenthaler Schleuse
+Schienen in Längsrichtung	BNP:30 -1732,40250
+# Friedrich-Engels-Straße (Westende)
+Poller und im Weg parkende Autos	BNP:30 -1882,37139
+# Friedrich-Wolf-Straße (Nordende)
+Begrenzungssteine und Böschung	BNP:30 695,38500
+# (Fußweg am Lehnitzsee): beim Café Dietrich
+Poller mittig	BNP:1 256,38687
+# Gewerbegebiet Germendorf am Hp Germendorf Süd
+zwischen den Betonklötzen durch	BNP:0 -5942,37343
+# Händelbrücke, Nordkopf
+Pfeiler mittig	BNP:0 -707,35114
+# Hermann-Löns-Str. / Verbindung zur Am Park
+Pollerreihe	BNP:0 -1497,40821
+# Hopfener Weg / Freienhagener Straße
+3 Poller	BNP:10 2070,44379
+# Jägerstr. / Spielplatz am Eichkatzweg
+an dem liegenden Baumstamm vorbei	BNP:15 -1834,41306
+# Kanalstr. / Breite Str.
+Pollerreihe	BNP:5 -1575,38406
+# Kleine Str. (Ecke Havelkorso)
+zwei dicke Poller	BNP:0 29,36584
+# Klinkerhafen (an der Nordostecke)
+zwischen Sandhausen und Zaun über den Huckel	BNP:10 1684,41081
+# Klinkerhafen (an der Nordseite)
+zwischen Sandhaufen und Zaun hindurch	BNP:10 1600,41087
+# Kolonie Schnelle Havel - Chausseestr.
+drei Poller	BNP:5 -954,40606
+# Lehnitzschleuse / Klinkerhafen
+Drehkreuz, sehr eng|werktags ist tagsüber das Tor daneben geöffnet	BNP:30 1431,40378
+# Lippestraße / Freiheitsplatz-Innenbereich
+Poller	BNP:0 -521,36162
+# Lönsweg (östliches Ende, Richtung Bootshafen Eden)
+2 Pfeiler	BNP:0 -2603,37476
+# Luisenstraße / Schlosspark
+Pollerreihe	BNP:0 -2115,38603
+# Luisenweg / Schlosspark
+Poller mittig	BNP:0 -1960,38853
+# Malzer Dorfstraße - Ausbau, neben dem Gemeindehaus
+Poller	BNP:5 2243,43942
+# Mittelweg Höhe Mosterei
+Geländer, sehr eng	BNP:20 -3639,37993
+# Muldestraße / Iserstraße
+zwischen den liegenden Baumstämmen durch	BNP:5 -771,35989
+# Rosselstraße / Freiheitsplatz-Innenbereich
+Poller	BNP:0 -531,36123
+# Rotkehlchenweg
+Poller	BNP:5 -4406,40467
+# Sawallstraße (östliches Ende)
+Poller	BNP:5 -2087,39817
+# Schlosshof (Havelseite)
+Pollerreihe	BNP:0 -1498,38671
+# Schlosshof (Parkseite)
+Pollerreihe	BNP:0 -1576,38673
+# Schützenstr. (Stichstraße) / Spielplatz am Eichkatzweg
+an dem liegenden Baumstamm vorbei	BNP:10 -1795,41276
+# Selkestraße / Freiheitsplatz-Innenbereich
+Poller	BNP:0 -531,36173
+# Südcenter / hinter dem Südcenter
+Poller mittig	BNP:5 -1226,36567
+# südliche Rampe der Brücke der Nordbahn über die Havel
+Poller mittig	BNP:10 -465,42668
+# Südweg (westliches Ende)
+2 Pfeiler	BNP:5 -3968,37550
+# Tannengrund
+schmaler Pfad neben Poller	BNP:5 -840,40559
+# Teerofen, Richtung Tiergartenschleuse
+Schranke	BNP:10 -3776,42721
+# Uferpromenade / Uferweg am Lehnitzseeostufer (N)
+zwischen den liegenden Baumstämmen durch	BNP:5 548,38485
+# Umfahrung des ehem. Bü Freienhagener Weg (direkt am Freienhagener Weg)
+drei Poller	BNP:5 -642,42775
+# Umfahrung des ehem. Bü Freienhagener Weg (östlich der Brücke)
+drei Poller	BNP:5 -521,42793
+# Umfahrung des ehem. Bü Freienhagener Weg (westlich der Brücke)
+drei Poller	BNP:5 -543,42770
+# Veilchenweg / verlängerter Margaritenweg
+Böschung und Pollerreihe	BNP:10 -1828,39524
+# Verbindung Asternweg - Lilienweg (Stichstraße)
+Engstelle	BNP:20 -2014,39128
+# Waldallee
+Pollerreihe	BNP:0 -5923,37934
+# (Wanderweg am Lehnitzsee): Nähe vorderer Karpfenteich
+Drängelgitter	BNP:10 565,38885
+# (Wanderweg am Lehnitzsee): an der B273
+Drängelgitter	BNP:5 1289,39862
+# westliches Havelufer am Schloss
+Treppe (mehrere, weit auseinander liegende Stufen)	BNP:30 -1498,38589
+# Zum Bahnhof
+Durchgang neben Schranke	BNP:5 -840,40618
+# zwischen Klinkerhafen und nGAR
+über den Huckel	BNP:15 1409,41218
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+# (Pinnower Schleuse)
+Durchgang neben Schranke	BNP:5 -1335,34371
+#: by: ^^^

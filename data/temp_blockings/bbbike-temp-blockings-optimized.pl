@@ -301,7 +301,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'text' => 'B 273 Breite Str. OD Oranienburg, zw. Berliner Str. u. Havelstr. Straßenbauarbeiten Vollsperrung 19.03.2007-22.07.2007 ',
          'from' => 1174172400,
          'id' => 869,
-         'data' => 'userdel	q4::inwork -1472,38523 -1580,38438 -1644,38289
+         'data' => 'userdel	q4::inwork -1571,38406 -1553,38501 -1517,38543 -1500,38565
 ',
          'type' => 'handicap'
        },
@@ -310,7 +310,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'text' => 'B 273 Breite Str., Havelstr. OD Oranienburg, zw. Berliner Str. und Gartenstr. Deckschichteinbau Vollsperrung 26.11.2007-07.12.2007 ',
          'from' => 1195945200,
          'id' => 870,
-         'data' => 'userdel	q4::inwork -1450,38268 -1644,38289
+         'data' => 'userdel	q4::inwork -1618,38293 -1504,38289 -1353,38301
 ',
          'type' => 'handicap'
        },
@@ -319,7 +319,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'text' => 'B 273 Havelstr. OD Oranienburg, zw. Breite Str. und Gartenstr. Straßenbauarbeiten Vollsperrung 23.07.2007-25.11.2007 ',
          'from' => 1185055200,
          'id' => 871,
-         'data' => 'userdel	q4::inwork -1644,38289 -1832,38082
+         'data' => 'userdel	q4::inwork -1618,38293 -1709,38275 -1720,38268 -1764,38237 -1796,38203 -1832,38148
 ',
          'type' => 'handicap'
        },
@@ -901,7 +901,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'text' => 'L 020 Velten-Borgsdorf zw. OL Pinnow, Havelweg und Berliner Ch., Borgsdorf Grundhafter Straßenbau Vollsperrung 11.07.2007-25.08.2007 ',
          'from' => 1184018400,
          'id' => 1065,
-         'data' => 'userdel	2::inwork -736,32837 -409,33522
+         'data' => 'userdel	2::inwork -736,32837 -579,33145 -409,33522
 ',
          'type' => 'gesperrt'
        },

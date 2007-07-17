@@ -23,7 +23,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $FreeBSD: doc/share/misc/docbook.css,v 1.8 2006/02/26 13:16:52 ceri Exp $
+ * $FreeBSD: doc/share/misc/docbook.css,v 1.9 2007/04/12 16:10:21 blackend Exp $
  */
 
 BODY ADDRESS {
@@ -120,6 +120,10 @@ UL, BODY DIR, BODY MENU {
 HTML {
 	margin: 0; 
 	padding: 0;
+}
+
+BODY P B.APPLICATION {
+	color: #000000;
 }
 
 .FILENAME {

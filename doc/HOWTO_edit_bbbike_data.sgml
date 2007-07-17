@@ -9,7 +9,7 @@
 
 ]>
 
-<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.15 2007/03/12 22:10:49 eserte Exp $ -->
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.16 2007/07/17 19:05:09 eserte Exp $ -->
 
 <article lang="de">
  <artheader>
@@ -27,7 +27,7 @@
    </author>
   </authorgroup>
 
-  <pubdate>$Date: 2007/03/12 22:10:49 $</pubdate>
+  <pubdate>$Date: 2007/07/17 19:05:09 $</pubdate>
 
   <copyright>
    <year>2005</year>
@@ -1059,12 +1059,26 @@ Space Koordinatenliste </programlisting>
 
 <para>
 BBBike-Daten sind reine Textdateien und können mit einem normalen
-Texteditor bearbeitet werden. Allerdings wird dabei kein
+Texteditor bearbeitet werden. Dabei sollte der Texteditor im
+Zeichensatz <emphasis>iso-8859-1</emphasis> eingestellt sein. Der
+Zeichensatz <emphasis>Windows-1252</emphasis> ist erlaubt, soweit
+nicht einige Zeichen im Bereich 128-160 verwendet werden (z.B. die
+typografischen doppelten Anführungszeichen, das Euro-Zeichen).
+Ausnahmen sind einige Dateien, die den Zeichensatz
+<emphasis>utf-8</emphasis> verwenden (z.B. <filename>orte-orig</>,
+<filename>orte2-orig</>). Der Zeichensatz ist, soweit er von
+<emphasis>iso-8859-1</emphasis> abweicht, am Anfang der Datei mit
+einer entsprechenden <emphasis>encoding</emphasis>-Direktive
+gekennzeichnet. Das Umschalten des Zeichensatzes sollte beim
+<filename>emacs</> automatisch erfolgen.
+
+<para>
+Beim Editieren mit einem Texteditor wird allerdings kein
 <filename>datachange.log</> erzeugt und das Zusammenführen mit den
 Stammdaten könnte in Handarbeit resultieren. Deshalb sollte möglichst
-immer der Straßen-Editor verwendet werden. In einigen Fällen ist aber
-weitergehendes Editieren möglich. Für die genauere Beschreibung des
-BBBike-Datenformats siehe <ulink url="bbd.html">hier</>.
+immer der Straßen-Editor verwendet werden. Für die genauere
+Beschreibung des BBBike-Datenformats siehe <ulink
+url="bbd.html">hier</>.
 
 <sect1>
 <title>Neue Layer auf Basis der Berliner BBBike-Daten</>
