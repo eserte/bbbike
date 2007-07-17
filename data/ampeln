@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.119 2007/07/17 21:28:48 eserte Exp $
+#: version: $Id: ampeln-orig,v 4.120 2007/07/17 22:32:11 eserte Exp $
 #:
 	X 9222,8787
 	X 8982,8781
@@ -1676,9 +1676,9 @@ nur Richtung Westen	X 5831,10978
 	F 2702,10006
 	X 12042,21886
 	X 10423,15698
-	B 34466,2570
+	B 34385,2609
 	X 1053,13790
-	B 12817,-12643
+	B 12755,-12554
 	B 11618,-7528
 	B 11875,-8728
 	B 13282,-18250
@@ -2017,6 +2017,9 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 	B 34183,13746
 	B 35386,13954
 	B 70188,-78014
+	B 11382,35230
+	B 12034,35012
+	B 24718,22731
 Aderluch (Oranienburg)	F -435,39823
 André-Pican-Str. / Bernauer Str. (Oranienburg)	X -292,39051
 André-Pican-Str. / Saarlandstr. / Lehnitzstr. (Oranienburg)	X -234,37510

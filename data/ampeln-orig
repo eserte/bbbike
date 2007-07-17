@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.119 2007/07/17 21:28:48 eserte Exp $
+#: version: $Id: ampeln-orig,v 4.120 2007/07/17 22:32:11 eserte Exp $
 #:
 	X 9222,8787
 	X 8982,8781
@@ -1697,9 +1697,9 @@ nur Richtung Westen	X 5831,10978
 	X 12042,21886
 	X 10423,15698
 # aufgehoben, by: Kaja Kruse:	X 10713,15746
-	B 34466,2570
+	B 34385,2609
 	X 1053,13790
-	B 12817,-12643
+	B 12755,-12554
 	B 11618,-7528
 	B 11875,-8728
 	B 13282,-18250
@@ -2128,6 +2128,12 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 #: note: Luftbild
 	B 35386,13954
 	B 70188,-78014
+#: note: Luftbild
+	B 11382,35230
+#: note: Luftbild
+	B 12034,35012
+#: note: Luftbild
+	B 24718,22731
 #: by: Andreas Titz vvv
 ################################################################################
 # meine Ergänzungen

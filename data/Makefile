@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.149 2007/07/17 21:22:28 eserte Exp $
+# $Id: Makefile,v 2.150 2007/07/17 22:33:06 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -958,6 +958,12 @@ check-disabled:	.check_label
 
 .check_ampeln:	ampeln .strassen.tmp landstrassen landstrassen2 fragezeichen
 	$(CHECK_POINTS) -catrx '^(X|F|B|B0|Zbr|\?)(::inwork)?$$' ampeln .strassen.tmp landstrassen landstrassen2 fragezeichen
+	@touch $@
+
+# XXX not executed by default
+.check_bahnuebergaenge: ampeln ubahn sbahn rbahn
+	${GREPSTRASSEN} --catrx '^B' ampeln > /tmp/bahnuebergaenge
+	${CHECK_POINTS} /tmp/bahnuebergaenge ubahn sbahn rbahn
 	@touch $@
 
 .check_ampelschaltung:	ampelschaltung-orig ampeln-orig

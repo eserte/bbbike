@@ -8335,7 +8335,7 @@ EOF
        text  => 'K 6503 Wandlitzer Chaussee Bahnübergang in der OT Lubowsee Gleisbauarbeiten Vollsperrung 13.06.2007-17.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 9067,36377 9439,36963 10209,37661
+userdel	2::inwork 9059,36323 9282,36780 9439,36963 10209,37661
 EOF
      },
      { from  => 1180562400, # 2007-05-31 00:00
