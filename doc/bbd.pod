@@ -194,6 +194,17 @@ the processed data. C<XXX> is an alias for C<unsure:>.
 
 Define another known name for the next line.
 
+=item C<alias_wide: I<name>>
+
+Special alias name to be used for E<quot>wide regionE<quot> routings.
+In E<quot>inner cityE<quot> routing the real name should be used
+instead.
+
+Examples:
+
+    #: alias_wide: Oranienburg - Bernau (B273)
+    Bernauer Str. (B273)	B ...,...
+
 =item C<oldname: I<when>: I<name>>
 
 An old name for the next line. I<when> is a time specification (best:

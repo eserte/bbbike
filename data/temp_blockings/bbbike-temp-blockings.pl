@@ -9084,4 +9084,20 @@ EOF
 userdel	2::inwork 30795,13191 30815,13170 30975,12918
 EOF
      },
+     { from  => 1185055200, # 2007-07-22 00:00
+       until => 1186178400, # 2007-08-04 00:00
+       text  => 'B 005 Kieler Str. OL Frankfurt (O), zw. Lebuser Ch. u. Goepelstr. Bergsicherungsarbeiten Vollsperrung 23.07.2007-03.08.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 87377,-3591 87272,-3504
+EOF
+     },
+     { from  => 1184709600, # 2007-07-18 00:00
+       until => 1186178400, # 2007-08-04 00:00
+       text  => 'L 086 B 1 Groß Kreutz-Schmergow OD Groß Kreutz Kanal- und Straßenbau Vollsperrung 19.07.2007-03.08.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -32125,-130 -31993,-726 -31991,-1024
+EOF
+     },
     );

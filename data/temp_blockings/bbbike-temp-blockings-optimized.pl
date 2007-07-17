@@ -980,6 +980,24 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'data' => 'userdel	2::inwork 30795,13191 30815,13170 30975,12918
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1186178400,
+         'text' => 'B 005 Kieler Str. OL Frankfurt (O), zw. Lebuser Ch. u. Goepelstr. Bergsicherungsarbeiten Vollsperrung 23.07.2007-03.08.2007 ',
+         'from' => 1185055200,
+         'id' => 1077,
+         'data' => 'userdel	q4::inwork 87377,-3591 87272,-3504
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1186178400,
+         'text' => 'L 086 B 1 Groß Kreutz-Schmergow OD Groß Kreutz Kanal- und Straßenbau Vollsperrung 19.07.2007-03.08.2007 ',
+         'from' => 1184709600,
+         'id' => 1078,
+         'data' => 'userdel	q4::inwork -32125,-130 -31993,-726 -31991,-1024
+',
+         'type' => 'handicap'
        }
      
 );
