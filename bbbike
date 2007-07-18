@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.319 2007/06/21 22:27:15 eserte Exp $
+# $Id: bbbike,v 3.319 2007/06/21 22:27:15 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -616,6 +616,11 @@ if (defined $city) {
     # default (Berlin)
     set_datadir("$FindBin::RealBin/data");
 }
+# XXX Henne-und-Ei-Problem: ich würde gerne Plotting-Defaults anhand der
+# -city-Option setzen (z.B. Zeichnen der Landstraßen für OR). Problem:
+# das initiale Setzen von %init_str geschieht auch während handle_options
+# Ich bräuchte also eine Art pre_handle_options, um erst einmal die
+# -city-Option herauszufischen und dann den Rest handhaben...
 
 if ($environment ne "normal") {
     eval { local $SIG{'__DIE__'};
@@ -4148,8 +4153,7 @@ if ($top->{initial_iconic}) {
 }
 
 # XXX should be after deiconify, otherwise center does not work (?)
-choose_from_plz(-str   => $center_on_str)   if defined $center_on_str;
-choose_from_plz(-coord => $center_on_coord) if defined $center_on_coord;
+center_best();
 
 $splash_screen->Update(0.9) if $splash_screen;
 
@@ -9702,6 +9706,7 @@ sub activate_temp_blockings {
 	    return;
 	}
 	my $ms = MultiStrassen->new(@s);
+	push @{ $ms->{DependentFiles} }, $file;
 	$current_temp_blockings_ms = $ms;
 	warn "Aktive temporäre Sperrungen: " . join(", ", $ms->dependent_files) . "\n" if $verbose;
 	make_net() if !$net;

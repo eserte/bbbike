@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.77 2007/06/19 20:37:52 eserte Exp $
+# $Id: Core.pm,v 1.77 2007/06/19 20:37:52 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -393,6 +393,7 @@ sub new_copy_restricted {
     }
 
     $res->{File} = $old_s->file;
+    $res->{DependentFiles} = $old_s->{DependentFiles};
     $res->{Id}   = $old_s->id . "_restr_" . join("_", keys %restrictions);
 
     $res;

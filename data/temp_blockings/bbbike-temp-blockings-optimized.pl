@@ -289,7 +289,7 @@ push @temp_blocking,
          'text' => 'Manteuffelstr. zwischen Skalitzer Str. und Naunynstr. sowie Skalitzer Str. und Paul-Lincke-Ufer: Einbahnstraßenregelung bis Ende 09.2007 ',
          'from' => undef,
          'id' => 866,
-         'data' => 'userdel	1::inwork 11949,10414 12000,10531 12056,10655
+         'data' => 'userdel	1::inwork 12000,10531 12056,10655
 userdel	1::inwork 11949,10414 11833,10206 11735,10022
 ',
          'type' => 'gesperrt'
@@ -944,15 +944,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1184968800,
-         'text' => 'L 281 Neureetz-Altranft zw. Croustillier und Altreetz Deckeneinbau Vollsperrung 16.07.2007-20.07.2007 ',
-         'from' => 1184450400,
-         'id' => 1073,
-         'data' => 'userdel	2::inwork 59730,42362 58564,43539
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_006088',
          'until' => 1191189599,
@@ -998,6 +990,25 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'data' => 'userdel	q4::inwork -32125,-130 -31993,-726 -31991,-1024
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_006107',
+         'until' => 1270065106,
+         'text' => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren',
+         'from' => undef,
+         'id' => 1079,
+         'data' => 'userdel	q4::inwork 19892,3454 19732,3340
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1199142000,
+         'text' => 'L 023 Herzfelde-Strausberg OD Hennickendorf, unterhalb Wachtelberg Instandsetzung Stützwand Vollsperrung 23.07.2007-31.12.2007 ',
+         'from' => 1185055200,
+         'id' => 1080,
+         'data' => 'userdel	2::inwork 40565,12409 40362,12087
+',
+         'type' => 'gesperrt'
        }
      
 );

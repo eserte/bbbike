@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Muenchen_DE.pm,v 1.6 2003/08/14 22:47:54 eserte Exp $
+# $Id: Muenchen_DE.pm,v 1.7 2007/07/18 20:48:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -67,7 +67,6 @@ sub datadir {
     $pkg .= ".pm";
     if (exists $INC{$pkg}) {
 	$Strassen::Util::cacheprefix = "m_de";
-	$main::center_on_coord = "1831,768"; # Marienplatz
 	return File::Basename::dirname(File::Basename::dirname($INC{$pkg}))
 	    . "/projects/radlstadtplan_muenchen/data_Muenchen_DE";
     }
@@ -79,6 +78,8 @@ sub search_args {
 #XXX     (WideSearch => 1);
     (Algorithm => "C-A*-2");
 }
+
+sub center { "1831,768" } # Marienplatz
 
 1;
 
