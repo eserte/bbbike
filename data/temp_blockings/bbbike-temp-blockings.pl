@@ -5096,7 +5096,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_84075',
        data  => <<EOF,
-userdel	q4::inwork; 18175,6376 18343,6318 18473,6265 18853,6009
+userdel	q4::inwork; 18191,6363 18343,6318 18473,6265 18574,6197 18670,6132 18766,6067 18853,6009
 EOF
      },
      { from  => 1154642400, # 2006-08-04 00:00
@@ -5618,7 +5618,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003370',
        data  => <<EOF,
-userdel	1::inwork 18853,6009 18473,6265 18343,6318 18175,6376 17992,6436
+userdel	1::inwork 18853,6009 18766,6067 18670,6132 18574,6197 18473,6265 18343,6318 18191,6363 17992,6436
 EOF
      },
      { from  => 1160949600, # 2006-10-16 00:00
@@ -7664,7 +7664,7 @@ userdel	q4::inwork 39125,83492 38986,84365
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
-       until => 1185487200, # 2007-07-27 00:00
+       until => 1184881131, # 2007-07-27 00:00 1185487200
        text  => 'L 033 Eggersdorf-Altlandsberg Brücke über den Graben in der OD Radebrück Brückenneubau Vollsperrung 10.04.2007-26.07.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -9115,6 +9115,22 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 40565,12409 40362,12087
+EOF
+     },
+     { from  => 1186264800, # 2007-08-05 00:00
+       until => 1187388000, # 2007-08-18 00:00
+       text  => 'L 033 zw. Kreuz. Hönow und Krz. Landsberger Ch./ Stendaler Str. Deckeninstandsetzung Vollsperrung 06.08.2007-17.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 26328,15462 26232,15444 26117,15452 25955,15531 25457,15594 25339,15592 24999,15634 23893,15893
+EOF
+     },
+     { from  => 1186092000, # 2007-08-03 00:00
+       until => 1186437600, # 2007-08-07 00:00
+       text  => 'L 040 Friedersdorf-Bindow Bahnübergang in der OD Friedersdorf Gleisbauarbeiten Vollsperrung 04.08.2007-06.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 36895,-12039 36087,-12087 35496,-12280
 EOF
      },
     );

@@ -142,7 +142,7 @@ Stellmacherweg	1 13151,2958 13400,2890
 Hittorfstr	1 2442,4806 2469,4882 2516,4936 2587,4965
 Lefèvrestr.	1 5372,6663 5215,6643
 Kühlebornweg	1 5161,4664 5075,4600 5004,4709
-Gartenstr.	1 22467,3889 22275,4032 22246,4106 22267,4200
+Gartenstr.	1 22467,3889 22275,4032 22246,4106 22273,4216
 Wichmannstr.	1 6462,11069 6552,11006 6681,10959 6824,10904
 Lützowufer	1 6873,11011 6732,11106 6626,11178 6582,11202
 Mulackstr.	1 10304,13575 10385,13548 10535,13509 10640,13471
@@ -298,8 +298,11 @@ Lintruper Str.	1 10307,922 10380,757
 Edison-/Siemensstr.	3 17992,6436 17962,6674 17766,6616
 Edisonstr.	1 17962,6674 17992,6436
 Brückenstr./Edisonstr.	1 17992,6436 17952,6246 17937,6173 17898,6049
-Karlstr. -> Müggelheimer Str.: Müggelheimer Str.	3 22460,4125 22554,4380 22396,4464
-Müggelheimer Str. -> Karlstr.: Müggelheimer Str.	3 22686,4310 22554,4380 22460,4125
+Karlstr. -> Müggelheimer Str.: Müggelheimer Str.	3 22458,4134 22554,4380 22449,4435
+Spitzerstr. -> Müggelheimer Str.: Müggelheimer Str.	3 22425,4370 22449,4435 22418,4452
+Müggelheimer Str. -> Spitzerstr.: Müggelheimer Str.	3 22554,4380 22449,4435 22425,4370
+Müggelheimer Str. -> Gartenstr.: Müggelheimer Str.	3 22449,4435 22418,4452 22362,4331
+Gartenstr. -> Müggelheimer Str.: Müggelheimer Str.	3 22362,4331 22418,4452 22396,4464
 Gropiusstr.	1 8543,16364 8389,16214
 Osloer Str. -> Pankeweg: Osloer Str.	3 8503,16716 8721,16689 8804,16881
 Pankeweg -> Osloer Str.: Osloer Str.	3 8804,16881 8721,16689 8759,16684
@@ -397,3 +400,4 @@ Fridolinweg -> Cecilienstr.: Mittelstreifen	3 21412,14023 21398,13906 21576,1389
 Cecilienstr. -> Fridolinweg: Mittelstreifen	3 21358,13909 21398,13906 21412,14023
 Glindowseestr. -> Daumstr.: Mittelstreifen	3 -1553,16695 -1710,16735 -1764,16633
 Daumstr. -> Glindowseestr.: Mittelstreifen	3 -1655,16813 -1710,16735 -1553,16695
+Karlstr.	1 22554,4380 22458,4134

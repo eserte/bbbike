@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.168 2007/07/17 21:28:54 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.168 2007/07/17 21:28:54 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -156,7 +156,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369
 #: by: Rolf Schröder <001301c0fe12$f9c9eb00$fe78a8c0@pc166>
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18005,6681 18046,6687 18146,6703 18339,6660 18494,6588
-Griechische Allee	1 18494,6588 18262,6606 18159,6642 18080,6670 18049,6671 18008,6672 17962,6674
+Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18080,6670 18049,6671 18008,6672 17962,6674
 Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5590,11118 5542,11075
 (Waterlooufer - Zossener Str.)	1 9849,10202 9812,10211
 Greinerstr.	1 8340,3365 8327,2975
@@ -335,7 +335,6 @@ Fehmarner Str. 	1 6710,14776 6528,15000
 Alte Späthbrücke	2 14437,5080 14535,5137
 Rutherfordstr.: nicht permanent geöffnet	2 19071,2746 19136,2673 19207,2592
 Katzengraben	1 22445,4758 22452,4689
-Karlstr.	1 22554,4380 22460,4125
 Schwiegersteig	1 1134,14721 1130,14823 1109,14911
 Moränenweg	1 3216,21409 3304,21205
 #: by: Marcel Länger:
@@ -431,11 +430,13 @@ DGZ-Ring	1 12989,16921 12911,17021 12877,17039 12853,17024 12810,16994 12789,169
 Riensbergstr.	1 -740,15306 -764,15480
 Saganer Str.: Bahngelände	2 16654,9748 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
-Triniusstr.	1 18339,6660 18262,6606
+Triniusstr.	1 18339,6660 18273,6606
 Franz-Stenzer-Str.	1 19876,15644 19974,15594 20044,15585 20111,15609 20181,15658 20399,15744 20508,15792 20586,15947 20610,15993 20636,16046
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Planetenstr.	1 15175,7221 15056,7198 14951,7163
 Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4750,14393
+Gartenstr. (Köpenick)	1 22418,4452 22362,4331 22302,4255 22273,4216
+Spitzerstr.	1 22319,4197 22358,4282 22425,4370 22449,4435
 #
 # Potsdam
 #
@@ -578,8 +579,6 @@ Königsberger Str.: Mittelstreifen nicht passierbar	3nocross 4251,2637 4212,2675 
 Berliner Str.: Straßenbahntrasse	3nocross 10911,17275 10906,17331 10900,17397 10892,17491
 #: note: Luftbild:
 Berliner Str.: Straßenbahntrasse	3nocross 13751,16009 13821,16035 14014,16106
-#: XXX es sieht aber so aus, als ob hier ein Übergang entstehen könnte, auch für Autos:
-Hauptstr.: Straßenbahntrasse	3nocross 16138,10105 16004,10204 15629,10481
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3 11462,12384 11333,12437 11343,12300
 Karl-Liebknecht-Str./Dircksenstr: Straßenbahntrasse in Bau	3nocross 10740,12960 10781,13002 10920,13139
 Badstr.: Gitter auf Mittelstreifen	3nocross 8659,16327 8543,16364 8516,16393 8486,16425
@@ -808,6 +807,7 @@ tragen (Treppe)	0:30 20673,7260
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+Barriere für Autofahrer	BNP:2 17301,7645
 #: by: Niels Weber
 Drängelgitter	BNP:5 11010,-378
 Drängelgitter	BNP:5 22280,11284
@@ -855,7 +855,7 @@ Schranke (Privatstr.)	BNP:5 9907,11752
 Schranke (Privatstr.)	BNP:5 10112,11796
 Schranke (Brandesstr.)	BNP:5 9698,10348
 Drängelgitter (Thomashöhe)	BNP:5 12682,7514
-Barriere (Schwarzer Weg)	BNP:5 17301,7619
+Barriere (Schwarzer Weg)	BNP:5 17301,7645
 Drängelgitter (Uferweg Spree)	BNP:5 24398,4842
 #: unverified_by: ADFC-Plan:
 Drängelgitter (Schloßallee/Straßenbahn) 	BNP:5 11883,19739
@@ -1207,9 +1207,9 @@ Dr.-Kurt-Schumacher-Str.	1 -1918,37979 -2021,37775
 # Ri Süden
 Dr.-Kurt-Schumacher-Str.	1 -2021,37775 -2045,37882 -1918,37979
 Florastr.	1s 300,37329 237,37348
-# Melniker Str. â†’ Berliner Str.
+# Melniker Str. - Berliner Str.
 Friedrich-Engels-Str	1 -1275,37046 -1403,37062
-# Theodor-Neubauer-Str. â†’ Arthur-Becker-Str.
+# Theodor-Neubauer-Str. - Arthur-Becker-Str.
 Friedrich-Engels-Str.	1 -1657,37104 -1607,37096
 Haller Str.	1 -1032,37401 -1117,37570 -1160,37654
 Hammer Str.	1 -1606,37476 -1590,37382 -1537,37140 -1539,37084
