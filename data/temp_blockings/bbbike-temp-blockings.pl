@@ -9133,4 +9133,13 @@ EOF
 userdel	2::inwork 36895,-12039 36087,-12087 35496,-12280
 EOF
      },
+     { from  => 1184913352, # 2007-07-20 08:35
+       until => 1185141600, # 2007-07-23 00:00
+       text  => 'Stendaler Str. (Hellersdorf) Richtung Süden zwischen Janusz-Korczak-Str. und Hellersdorfer Str. Veranstaltung, Fahrtrichtung gesperrt (bis 22.07.07)',
+       type  => 'gesperrt',
+       source_id => 'IM_006131',
+       data  => <<EOF,
+userdel	1::temp 23960,15021 23993,14797
+EOF
+     },
     );

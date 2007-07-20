@@ -915,15 +915,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1184882400,
-         'text' => 'B 246 Ernst-Thälmann-Str. OL Belzig, Höhe Gymnasium Kanalarbeiten Vollsperrung 19.07.2007-19.07.2007 ',
-         'from' => 1184709600,
-         'id' => 1068,
-         'data' => 'userdel	q4::inwork -44441,-30214 -44165,-30318
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1017,6 +1009,16 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'from' => 1186092000,
          'id' => 1082,
          'data' => 'userdel	2::inwork 36895,-12039 36087,-12087 35496,-12280
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006131',
+         'until' => 1185141600,
+         'text' => 'Stendaler Str. (Hellersdorf) Richtung Süden zwischen Janusz-Korczak-Str. und Hellersdorfer Str. Veranstaltung, Fahrtrichtung gesperrt (bis 22.07.07)',
+         'from' => 1184913352,
+         'id' => 1083,
+         'data' => 'userdel	1::temp 23960,15021 23993,14797
 ',
          'type' => 'gesperrt'
        }
