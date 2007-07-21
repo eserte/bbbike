@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: G7toWin_ASCII.pm,v 1.17 2005/04/16 12:22:33 eserte Exp $
+# $Id: G7toWin_ASCII.pm,v 1.19 2007/07/21 10:14:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -29,7 +29,9 @@ sub convert_to_route {
     die "File $file is not a G7T file" unless $fh;
 
     require Karte::Polar;
+    require Karte::Standard;
     my $obj = $Karte::Polar::obj;
+    $Karte::Standard::obj = $Karte::Standard::obj if 0; # cease -w
 
     my @res;
     my $check = sub {
@@ -47,7 +49,7 @@ sub convert_to_route {
 
 	    if ($1 eq 'S') { $breite = -$breite }
 	    if ($3 eq 'W') { $laenge = -$laenge }
-	    my($x,$y) = $obj->map2standard($laenge, $breite);
+	    my($x,$y) = $Karte::Standard::obj->trim_accuracy($obj->map2standard($laenge, $breite));
 	    if (!@res || ($x != $res[-1]->[0] ||
 			  $y != $res[-1]->[1])) {
 		push @res, [$x, $y];
@@ -121,7 +123,7 @@ EOF
     my $n = 0;
     foreach my $xy (@path) {
 	my $xy_string = join ",", @$xy;
-	my($polar_x, $polar_y) = $obj->standard2map(@$xy);
+	my($polar_x, $polar_y) = $obj->trim_accuracy($obj->standard2map(@$xy));
 	my $NS = $polar_y > 0 ? "N" : do { $polar_y = -$polar_y; "S" };
 	my $EW = $polar_x > 0 ? "E" : do { $polar_x = -$polar_x; "W" };
 	my $ns_deg = int($polar_y);

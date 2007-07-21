@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MPS.pm,v 1.7 2005/06/06 22:19:25 eserte Exp $
+# $Id: MPS.pm,v 1.8 2007/07/20 22:24:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,9 @@ package GPS::MPS;
 
 use strict;
 use vars qw($VERSION $DEBUG);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+
+use Data::Dumper;
 
 use constant SEEK_CUR => 1; # no Fcntl for 5.005 compatibility
 
@@ -126,15 +128,17 @@ EOF
 	my $len = unpack("V", $buf);
 	read($fh, $buf, $len+1);
 	my $type = substr($buf, 0, 1);
+#XXX warn "$type $len";
 	if ($type eq 'W') {
 	    my($name) = substr($buf, 1) =~ /^([^\0]+)/;
 	    warn "Waypoint <$name>\n" if $DEBUG;
 	    $buf = substr($buf, length($name)); # skip name
-	    $buf = substr($buf, 12*2+($version>=2?1:0)); # skip 00 and ff
+	    $buf = substr($buf, 12*2+($version>=2?1:0)+($version>=3?4:0)); # skip 00 and ff
 	    my $coords = substr($buf, 0, 16);
 	    my @c = unpack("V*", $coords);
 	    my $lat = semicirc_deg($c[0]);
 	    my $long = semicirc_deg($c[1]);
+#XXX warn "$name $version $lat $long";
 	    if (!defined $last_type || $last_type ne 'W') {
 		$out .= "!W:\n";
 		$last_type = 'W';
@@ -184,8 +188,11 @@ EOF
 		}
 	    }
 #	    warn "Dist: $dist";
+	} elsif ($type eq 'V') {
+	    # seems to be a no-op
 	} else {
-	    warn "Unhandled type $type";
+	    warn "Unhandled type <$type>, len <$len>. Dump: " . 
+		Data::Dumper->new([$buf],[qw()])->Indent(1)->Useqq(1)->Dump;
 	}
     }
     $out;

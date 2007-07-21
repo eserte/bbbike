@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: read-gps-formats.t,v 1.7 2006/01/28 16:57:53 eserte Exp $
+# $Id: read-gps-formats.t,v 1.8 2007/07/20 19:33:38 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -12,9 +12,12 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
 
+use Data::Dumper qw(Dumper);
+use File::Temp qw(tempfile);
+use Getopt::Long;
+
 use Route;
 use Strassen::Core;
-use Getopt::Long;
 
 BEGIN {
     if (!eval q{
@@ -27,13 +30,17 @@ BEGIN {
 }
 
 my $v;
+my $store;
 my $miscdir = "$FindBin::RealBin/../misc";
 my $gpsmandir = "$miscdir/gps_data";
 my $datadir = "$FindBin::RealBin/../data";
 my $mapserverdir = "$FindBin::RealBin/../mapserver/brb/data";
-my $isdir = "$FindBin::RealBin/..//projects/infrasystem/data/transfer";
+my $isdir = "$FindBin::RealBin/../projects/infrasystem/data/transfer";
 
-GetOptions("v!" => \$v) or die "usage!";
+GetOptions("v!" => \$v,
+	   "store!" => \$store,
+	  )
+    or die "usage: $0 [-v] [-store]";
 
 my @gps_formats       = (
 			 ["$miscdir/mps_examples/BERNAU~1.MPS", "MPS"],
@@ -70,7 +77,13 @@ for my $def (@gps_formats) {
 	   ref $ret->{RealCoords} eq 'ARRAY' &&
 	   ref $ret->{RealCoords}->[0] eq 'ARRAY',
 	   "Format $fmt$extra_info with file $file (Route)");
-	is($ret->{Type}, $fmt);
+	if ($store) {
+	    my($fh,$outfile) = tempfile(SUFFIX => "_bbbikeroutetest.$fmt");
+	    print $fh Dumper($ret);
+	    close $fh;
+	    warn "Written <$file> data to <$outfile> as route...\n";
+	}
+	is($ret->{Type}, $fmt, "Type is <$fmt>");
     }
 }
 
@@ -84,6 +97,12 @@ for my $def (@strassen_formats) {
 	my $err = $@;
 	ok($s && scalar @{ $s->data }, "Format $fmt with file $file (Strassen)")
 	    or diag "Exception: $@";
+	if ($store) {
+	    my($fh,$outfile) = tempfile(SUFFIX => "_bbbikestrassentest.$fmt");
+	    print $fh $s->as_string;
+	    close $fh;
+	    warn "Written <$file> data to <$outfile> as Strassen file...\n";
+	}
     }
 }
 

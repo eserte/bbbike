@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-gpx.t,v 1.8 2007/02/25 20:49:25 eserte Exp $
+# $Id: strassen-gpx.t,v 1.9 2007/07/20 20:14:06 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -30,7 +30,7 @@ use Route;
 
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
-my $tests_per_variant = 17;
+my $tests_per_variant = 23;
 my $bbdfile = "obst";
 
 GetOptions("v" => \$v,
@@ -94,7 +94,20 @@ for my $use_xml_module (@variants) {
 
 	    my $s3 = Strassen::GPX->new;
 	    $s3->gpx2bbd($ofilename);
-	    is_deeply($s->data, $s3->data, "File loading OK");
+	    is_deeply($s3->data, $s->data, "File loading OK");
+
+	    # Parsing from string, overriding name and cat
+	    my $s4 = Strassen::GPX->new;
+	    $s4->gpxdata2bbd($gpx_sample, name => "My Name", cat => "MYCAT");
+	    $s4->init;
+	    my $r4 = $s4->next;
+	    is($r4->[Strassen::NAME()], "My Name", "Check overridden name");
+	    is($r4->[Strassen::CAT()], "MYCAT", "Check overriden category");
+
+	    # Parsing from file, overriding name and cat
+	    my $s5 = Strassen::GPX->new;
+	    $s5->gpx2bbd($ofilename, name => "My Name", cat => "MYCAT");
+	    is_deeply($s5->data, $s4->data, "Check overriden data in files");
 	}
 
 	# Waypoint file
@@ -124,6 +137,19 @@ for my $use_xml_module (@variants) {
 	    my $s3 = Strassen::GPX->new;
 	    $s3->gpx2bbd($ofilename);
 	    is_deeply($s->data, $s3->data, "File loading OK");
+
+	    # Parsing from string, overriding name and cat
+	    my $s4 = Strassen::GPX->new;
+	    $s4->gpxdata2bbd($gpx_sample, name => "My Name", cat => "MYCAT");
+	    $s4->init;
+	    my $r4 = $s4->next;
+	    is($r4->[Strassen::NAME()], "My Name", "Check overridden name");
+	    is($r4->[Strassen::CAT()], "MYCAT", "Check overriden category");
+
+	    # Parsing from file, overriding name and cat
+	    my $s5 = Strassen::GPX->new;
+	    $s5->gpx2bbd($ofilename, name => "My Name", cat => "MYCAT");
+	    is_deeply($s5->data, $s4->data, "Check overriden data in files");
 	}
 
 	# Rte file

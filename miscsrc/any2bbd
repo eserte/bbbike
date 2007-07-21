@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: any2bbd,v 1.14 2007/06/19 22:52:16 eserte Exp $
+# $Id: any2bbd,v 1.19 2007/07/21 20:36:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -33,12 +33,36 @@ use Strassen::MultiStrassen;
 
 my %opt;
 
-GetOptions(\%opt, "dir=s", "o=s", "append|a!", "inputformat|i=s", "routenamefmt=s")
-    or die "usage: $0 [-i inputformat] -o outfile [-a|-append] [-routenamefmt ...] [-dir download-dir | files ...]";
+GetOptions(\%opt,
+	   "dir=s",
+	   'exclude=s@',
+	   'excluderx=s@',
+	   "o=s",
+	   "append|a!",
+	   "inputformat|i=s",
+	   "routenamefmt=s",
+	   "infotobbd!",
+	  )
+    or die <<EOF;
+usage: $0 [-i inputformat] -o outfile [-a|-append]
+    [-routenamefmt ...] [-dir download-dir | files ...]
+    [-exclude basename [-exclude ...]]
+    [-excluderx rx [-excluderx ...]]
+    [-infotobbd]
+EOF
 
 my $download_dir = $opt{dir} if defined $opt{dir};
-my $outfile = $opt{o} || die "Missing option -o for output file";
+my $outfile = $opt{o} || die "Missing option -o for output file, use -o - for stdout";
 my $routenamefmt = $opt{routenamefmt} || "%b";
+my %exclude = map {($_,1)} @{ $opt{exclude} || [] };
+my $excludebyrx = sub {
+    return if !$opt{excluderx};
+    for (@{ $opt{excluderx} }) {
+	return 1 if ($_[0] =~ m{$_}i);
+    }
+    0;
+};
+my $do_infotobbd = $opt{infotobbd} || 0;
 
 my @files = @ARGV;
 if (!@files) {
@@ -49,12 +73,14 @@ if (!@files) {
 
 my @s;
 for my $file (@files) {
+    next if $exclude{ basename($file) };
+    next if $excludebyrx->($file);
     print STDERR "$file... ";
-    my %info = (handled_by => "?");
-    my $s;
+    my %info = (handled_by => "?", file => $file, subfile => undef);
     lock_keys %info;
 
     my $check_s = sub {
+	my $s = shift;
 	if ($s && $s->data && @{ $s->data }) {
 	    print STDERR "OK ($info{handled_by})\n";
 	    1;
@@ -70,25 +96,30 @@ for my $file (@files) {
 	    $zip->read($file) == AZ_OK or die;
 	    print STDERR "\n";
 	    for my $member ($zip->members) {
+		next if $exclude{ basename($member->fileName) };
+		next if $excludebyrx->($member->fileName);
 		print STDERR "  " . $member->fileName . "... ";
+		$info{subfile} = $member->fileName;
 		my($suffix) = $member->fileName =~ /(\.[^\.]+)$/;
 		my($tmpfh,$tmpfile) = tempfile(UNLINK => 1,
 					       SUFFIX => $suffix,
 					      );
-		print $tmpfh $member->contents;
+		print $tmpfh ($member->contents)[0];
 		close $tmpfh;
-		$s = run_gpsbabel($tmpfile,
-				  title => routenamefmt($file . "/" . basename($member->fileName)),
-				  info => \%info,
-				 );
-		if ($check_s->()) {
+		my $s = run_gpsbabel($tmpfile,
+				     title => routenamefmt($file . "/" . basename($member->fileName)),
+				     info => \%info,
+				    );
+		if ($check_s->($s)) {
+		    prepend_info($s, \%info);
 		    push @s, $s;
 		}
 	    }
 	} else {
-	    $s = run_gpsbabel($file, title => routenamefmt($file),
-			      info => \%info);
-	    if ($check_s->()) {
+	    my $s = run_gpsbabel($file, title => routenamefmt($file),
+				 info => \%info);
+	    if ($check_s->($s)) {
+		prepend_info($s, \%info);
 		push @s, $s;
 	    }
 	}
@@ -113,6 +144,7 @@ sub run_gpsbabel {
     my($file, %args) = @_;
     my $title = $args{title} || $file;
     my $info = $args{info} || {};
+    my $cat = "#000080";
     if ($opt{inputformat}) {
 	my $s = eval {
 	    require Strassen::FromRoute;
@@ -131,12 +163,15 @@ sub run_gpsbabel {
 		   | \.gpx$
 		   | \.kml$
 		   | \.ovl$
+		   | \.gpx$
 		   )
 	          }xi) {
-	my $s = eval { Strassen->new($file, name => $title, cat => "#000080") };
+	my $s = eval { Strassen->new($file, name => $title, cat => $cat) };
 	if ($s) {
-	    $info->{handled_by} = "Strassen::Core";
+	    $info->{handled_by} = ref $s;
 	    return $s;
+	} else {
+	    warn $@;
 	}
     }
 
@@ -145,7 +180,7 @@ sub run_gpsbabel {
 	if ($first_line =~ /^%.*(gpsmanager|gps::gpsmanconn)/i) {
 	    close $fh;
 	    my $s = Strassen::Gpsman->new($file,
-					  cat => "#000080",
+					  cat => $cat,
 					  fallbackname => $title);
 	    if ($s) {
 		$info->{handled_by} = "Strassen::Gpsman";
@@ -154,29 +189,58 @@ sub run_gpsbabel {
 	}
     }
 
-    my($ofh,$ofilename) = tempfile(UNLINK => 1);
-    # XXX need a patched gpsbabel (gpsbabel by default only outputs waypoint files, not tracks)
+    # XXX should really check magic before trying, i.e. 2nd line should match
+    # /^I\s+PCX5/
     my $in_fmt = "pcx";
+    my $out_fmt;
+    if (eval { require Strassen::GPX; 1 }) {
+	# Prefer gpx output, because gpsbabel's pcx->gpx conversion is
+	# better than pcx->gpsman.
+	#
+	# Downside: handling GPX is *MUCH* slower
+	$out_fmt = "gpx";
+    } else {
+	$out_fmt = "gpsman";
+    }
     if ($file =~ /\.gpx$/) {
 	$in_fmt = "gpx";
+	$out_fmt = "gpsman";
     }
+    my($ofh,$ofilename) = tempfile(UNLINK => 1,
+				   SUFFIX => "_any2bbd.$out_fmt");
     system("gpsbabel", "-t",
 	   "-i", $in_fmt, "-f", $file,
-	   "-o", "gpsman", -F, $ofilename);
-    # Hack: set track name
-    my($o2fh,$o2filename) = tempfile(UNLINK => 1);
-    open(F, $ofilename) or die $!;
-    while(<F>) {
-	s/(^!T:)/$1\t$title/;
-	print $o2fh $_;
-    }
-    close F;
-    close $o2fh;
-
+	   "-o", $out_fmt, -F, $ofilename);
     $info->{handled_by} = "gpsbabel";
-    my $s = Strassen::Gpsman->new($o2filename,
-				  cat => "#000080",
-				  fallbackname => $title);
+
+    if ($out_fmt eq 'gpsman') {
+	# Hack: set track name
+	my($o2fh,$o2filename) = tempfile(UNLINK => 1);
+	open(F, $ofilename) or die $!;
+	while(<F>) {
+	    s/(^!T:)/$1\t$title/;
+	    print $o2fh $_;
+	}
+	close F;
+	close $o2fh;
+	$ofilename = $o2filename;
+    }
+
+    my $s;
+    if ($out_fmt eq 'gpsman') {
+	$s = Strassen::Gpsman->new($ofilename,
+				   cat => $cat,
+				   fallbackname => $title);
+	$info->{handled_by} .= " and Strassen::Gpsman";
+    } elsif ($out_fmt eq 'gpx') {
+	$s = eval { Strassen->new($ofilename,
+				  cat => $cat,
+				  name => $title)
+		};
+	$info->{handled_by} .= " and " . ref($s);
+    } else {
+	die "Shouldn't happen: out_fmt=<$out_fmt>";
+    }
     $s;
 }
 
@@ -190,5 +254,13 @@ sub routenamefmt {
     $rv;
 }
 
+# XXX Should go to Strassen::?
+sub prepend_info {
+    return if !$do_infotobbd;
+    my($s, $info) = @_;
+    unshift @{ $s->data },
+	"# source file: $info->{file}" . ($info->{subfile} ? "#$info->{subfile}" : "") . "\n",
+	    "# handled_by: $info->{handled_by}\n";
+}
 
 __END__

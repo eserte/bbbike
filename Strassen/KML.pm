@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: KML.pm,v 1.3 2007/06/20 21:18:03 eserte Exp $
+# $Id: KML.pm,v 1.4 2007/07/20 23:10:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::KML;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Strassen);
 
@@ -47,15 +47,15 @@ sub kml2bbd {
     my $doc = $p->parse_file($file);
     my $root = $doc->documentElement;
     $root->setNamespaceDeclURI(undef, undef);
-    my $coords = $root->findvalue('/kml/Document/Placemark/LineString/coordinates');
+    my $coords = $root->findvalue('/kml//Placemark/LineString/coordinates'); # might be Document or Folder in between
     my @c = map {
 	my($lon,$lat) = split /,/, $_;
 	join(",", longlat2xy($lon,$lat));
     } grep { !/^\s+$/ } split ' ', $coords;
 
-    my $name = $args{name} || "Route";
+    my $name = $args{name} || "Route"; # XXX get from /kml//name?
     my $cat  = $args{cat}  || "X";
-    $self->push([$name, [@c], $cat]);
+    $self->push([$name, [@c], $cat]) if @c;
 }
 
 sub longlat2xy {

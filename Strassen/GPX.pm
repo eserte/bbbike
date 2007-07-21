@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GPX.pm,v 1.10 2006/09/12 21:41:42 eserte Exp $
+# $Id: GPX.pm,v 1.11 2007/07/20 20:13:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::GPX;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Core;
 
@@ -56,7 +56,9 @@ sub new {
 	bless $self, $class;
 
 	if ($filename_or_object) {
-	    $self->gpx2bbd($filename_or_object);
+	    my $name = delete $args{name};
+	    my $cat  = delete $args{cat};
+	    $self->gpx2bbd($filename_or_object, name => $name, cat => $cat);
 	}
 
 	$self;
@@ -67,55 +69,66 @@ sub new {
 # GPX to BBD
 #
 sub gpx2bbd {
-    my($self, $file) = @_;
+    my($self, $file, %args) = @_;
     
     if ($use_xml_module eq 'XML::LibXML') {
 	my $p = XML::LibXML->new;
 	my $doc = $p->parse_file($file);
-	$self->_gpx2bbd_libxml($doc);
+	$self->_gpx2bbd_libxml($doc, %args);
     } else {
 	my $twig = XML::Twig->new;
 	$twig->parsefile($file);
-	$self->_gpx2bbd_twig($twig);
+	$self->_gpx2bbd_twig($twig, %args);
     }
 }
 
 sub gpxdata2bbd {
-    my($self, $data) = @_;
+    my($self, $data, %args) = @_;
 
     if ($use_xml_module eq 'XML::LibXML') {
 	my $p = XML::LibXML->new;
 	my $doc = $p->parse_string($data);
-	$self->_gpx2bbd_libxml($doc);
+	$self->_gpx2bbd_libxml($doc, %args);
     } else {
 	my $twig = XML::Twig->new;
 	$twig->parse($data);
-	$self->_gpx2bbd_twig($twig);
+	$self->_gpx2bbd_twig($twig, %args);
     }
 }
 
 sub _gpx2bbd_libxml {
-    my($self, $doc) = @_;
+    my($self, $doc, %args) = @_;
+
+    my $def_name = delete $args{name};
+    my $def_cat  = delete $args{cat};
+    if (!defined $def_cat) {
+	$def_cat = "X";
+    }
 
     my $root = $doc->documentElement;
 
     for my $wpt ($root->childNodes) {
 	next if $wpt->nodeName ne "wpt";
 	my($x, $y) = latlong2xy($wpt);
-	my $name = "";
-	for my $name_node ($wpt->childNodes) {
-	    next if $name_node->nodeName ne "name";
-	    $name = $name_node->textContent;
-	    last;
+	my $name;
+	if (defined $def_name) {
+	    $name = $def_name;
+	} else {
+	    $name = "";
+	    for my $name_node ($wpt->childNodes) {
+		next if $name_node->nodeName ne "name";
+		$name = $name_node->textContent;
+		last;
+	    }
 	}
-	$self->push([$name, ["$x,$y"], "X"]);
+	$self->push([$name, ["$x,$y"], $def_cat]);
     }
 
     for my $trk ($root->childNodes) {
 	next if $trk->nodeName ne "trk";
-	my $name;
+	my $name = $def_name;
 	for my $trk_child ($trk->childNodes) {
-	    if ($trk_child->nodeName eq 'name') {
+	    if ($trk_child->nodeName eq 'name' && !defined $name) {
 		$name = $trk_child->textContent;
 	    } elsif ($trk_child->nodeName eq 'trkseg') {
 		my @c;
@@ -127,7 +140,7 @@ sub _gpx2bbd_libxml {
 		    push @c, "$x,$y";
 		}
 		if (@c) {
-		    $self->push([$name, [@c], "X"]);
+		    $self->push([$name, [@c], $def_cat]);
 		}
 	    }
 	}
@@ -135,10 +148,10 @@ sub _gpx2bbd_libxml {
 
     for my $rte ($root->childNodes) {
 	next if $rte->nodeName ne "rte";
-	my $name;
+	my $name = $def_name;
 	my @c;
 	for my $rte_child ($rte->childNodes) {
-	    if ($rte_child->nodeName eq 'name') {
+	    if ($rte_child->nodeName eq 'name' && !defined $name) {
 		$name = $rte_child->textContent;
 	    } elsif ($rte_child->nodeName eq 'rtept') {
 		my($x, $y) = latlong2xy($rte_child);
@@ -146,31 +159,42 @@ sub _gpx2bbd_libxml {
 	    }
 	}
 	if (@c) {
-	    $self->push([$name, [@c], "X"]);
+	    $self->push([$name, [@c], $def_cat]);
 	}
     }
 }
 
 sub _gpx2bbd_twig {
-    my($self, $twig) = @_;
+    my($self, $twig, %args) = @_;
+
+    my $def_name = delete $args{name};
+    my $def_cat  = delete $args{cat};
+    if (!defined $def_cat) {
+	$def_cat = "X";
+    }
 
     my($root) = $twig->children;
     for my $wpt_or_trk ($root->children) {
 	if ($wpt_or_trk->name eq 'wpt') {
 	    my $wpt = $wpt_or_trk;
 	    my($x, $y) = latlong2xy_twig($wpt);
-	    my $name = "";
-	    for my $name_node ($wpt->children) {
-		next if $name_node->name ne "name";
-		$name = $name_node->children_text;
-		last;
+	    my $name;
+	    if (defined $def_name) {
+		$name = $def_name;
+	    } else {
+		$name = "";
+		for my $name_node ($wpt->children) {
+		    next if $name_node->name ne "name";
+		    $name = $name_node->children_text;
+		    last;
+		}
 	    }
-	    $self->push([$name, ["$x,$y"], "X"]);
+	    $self->push([$name, ["$x,$y"], $def_cat]);
 	} elsif ($wpt_or_trk->name eq 'trk') {
 	    my $trk = $wpt_or_trk;
-	    my $name;
+	    my $name = $def_name;
 	    for my $trk_child ($trk->children) {
-		if ($trk_child->name eq 'name') {
+		if ($trk_child->name eq 'name' && !defined $name) {
 		    $name = $trk_child->children_text;
 		} elsif ($trk_child->name eq 'trkseg') {
 		    my @c;
@@ -180,16 +204,16 @@ sub _gpx2bbd_twig {
 			push @c, "$x,$y";
 		    }
 		    if (@c) {
-			$self->push([$name, [@c], "X"]);
+			$self->push([$name, [@c], $def_cat]);
 		    }
 		}
 	    }
 	} elsif ($wpt_or_trk->name eq 'rte') {
 	    my $rte = $wpt_or_trk;
-	    my $name;
+	    my $name = $def_name;
 	    my @c;
 	    for my $rte_child ($rte->children) {
-		if ($rte_child->name eq 'name') {
+		if ($rte_child->name eq 'name' && !defined $name) {
 		    $name = $rte_child->children_text;
 		} elsif ($rte_child->name eq 'rtept') {
 		    my($x, $y) = latlong2xy_twig($rte_child);
@@ -197,7 +221,7 @@ sub _gpx2bbd_twig {
 		}
 	    }
 	    if (@c) {
-		$self->push([$name, [@c], "X"]);
+		$self->push([$name, [@c], $def_cat]);
 	    }
 	}
     }

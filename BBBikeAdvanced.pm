@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.183 2007/06/20 21:22:16 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.184 2007/07/21 20:43:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1238,20 +1238,32 @@ sub set_line_coord_interactive {
 	for my $selection_type (@selection_types) {
 	    my $s = eval { $t->SelectionGet('-selection' => $selection_type) };
 	    next if $@;
-	    while ($s =~ /([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
-		my($x,$y) = ($1,$2);
-		my $_map = $map;
-		if ($map eq 'auto-detect') {
-		    if ($x =~ m{\.} && $y =~ m{\.} && $x <= 180 && $x >= -180 && $y <= 90 && $y >= -90) {
-			$_map = "polar";
-		    } else {
-			$_map = "standard";
+	    if ($map eq 'postgis') {
+		while ($s =~ /(?:MULTI)?(?:POINT|LINESTRING|POLYGON)\(([\d \.\)\(,]+)\)/g) {
+		    (my $coords = $1) =~ s{\),\(}{,}g;
+		    $coords =~ s{[\(\)]}{}g;
+		    my @_coords = split /,/, $coords;
+		    for (@_coords) {
+			my($x, $y) = split / /, $_;
+			push @coords, [$x,$y]; # XXX assume always standard coordinates here, maybe should also auto-detect?
 		    }
 		}
-		if ($_map eq 'polar') {
-		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+	    } else {
+		while ($s =~ /([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
+		    my($x,$y) = ($1,$2);
+		    my $_map = $map;
+		    if ($map eq 'auto-detect') {
+			if ($x =~ m{\.} && $y =~ m{\.} && $x <= 180 && $x >= -180 && $y <= 90 && $y >= -90) {
+			    $_map = "polar";
+			} else {
+			    $_map = "standard";
+			}
+		    }
+		    if ($_map eq 'polar') {
+			($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+		    }
+		    push @coords, [$x,$y];
 		}
-		push @coords, [$x,$y];
 	    }
 	    last if (@coords); # otherwise try the other selection type
 	}
@@ -1290,6 +1302,9 @@ sub set_line_coord_interactive {
     $t->Radiobutton(-variable => \$map,
 		    -value => "polar",
 		    -text => "WGS 84")->pack(-anchor => "w");
+    $t->Radiobutton(-variable => \$map,
+		    -value => "postgis",
+		    -text => "PostGIS-styled")->pack(-anchor => "w");
 }
 
 sub coord_to_markers_dialog {

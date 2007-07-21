@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapInfo.pm,v 1.16 2004/06/21 07:38:27 eserte Exp $
+# $Id: MapInfo.pm,v 1.17 2007/07/21 22:09:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2004 Slaven Rezic. All rights reserved.
@@ -117,6 +117,8 @@ sub read_mif {
 	};
     }
 
+    my $conv = sub { join(",",@_) };
+
     # XXX A lot of directives are not handled for now
     while(<MIF>) {
 	my @l = split /[\015\012]/, $_;
@@ -137,15 +139,22 @@ sub read_mif {
 		} elsif (/^point\s+([-+\d\.]+)\s+([-+\d\.]+)/i) {
 		    my($x, $y) = ($1, $2);
 		    $push->();
-		    $current_record = ["$x,$y"];
+		    $current_record = [$conv->($x,$y)];
 		} elsif (/^\s*([-+\d\.]+)\s+([-+\d\.]+)/) {
-		    push @$current_record, "$1,$2";
+		    push @$current_record, $conv->($1,$2);
 		}
 	    } elsif ($mode == MODE_COLUMNS) {
 		$l =~ /^\s*(\S+)\s*(\S+)/;
 		push @{ $self->{MIF_COLUMNS} }, [$1, $2];
 	    } elsif ($l =~ /delimiter\s+"(.)"/i) {
 		$self->{MIF_DELIMITER} = $1;
+	    } elsif ($l =~ /^coordsys\s+earth\s+projection\s+1\s*,\s*0/i) {
+		require Karte::Polar;
+		require Karte::Standard;
+		my $obj = $Karte::Polar::obj;
+		$conv = sub {
+		    join(",", $Karte::Standard::obj->trim_accuracy($obj->map2standard(@_)));
+		};
 	    }
 	}
     }

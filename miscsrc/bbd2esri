@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2esri,v 1.22 2007/06/15 20:58:48 eserte Exp $
+# $Id: bbd2esri,v 1.23 2007/07/21 15:30:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -39,6 +39,7 @@ my $imagetype;
 my $onewayhack;
 my $qualityshack;
 my $dbf_encoding;
+my $polar;
 
 my $city;
 my $country;
@@ -64,11 +65,12 @@ if (!GetOptions("o=s" => \$outprefix,
 		"city=s" => \$city,
 		"country=s" => \$country,
 		"dbfencoding=s" => \$dbf_encoding,
+		"polar!" => \$polar,
 	       )) {
     die "usage $0: [-o outprefix] [-shptype shapetype] [-type type]
 	[-imagetype imagetype] [-onewayhack] [-qualityshack]
 	[-city city] [-country country]
-	[-dbfencoding encoding]
+	[-dbfencoding encoding] [-polar]
 	bbdfile ...
 
 shapetype may be auto, polyline, polygon, or point
@@ -84,6 +86,12 @@ my $city_obj = Geography->new($city, $country);
 my @files = @ARGV;
 if (!@files) {
     die "No files specified";
+}
+
+if ($polar) {
+    require Karte::Standard;
+    require Karte::Polar;
+    $Karte::Polar::obj = $Karte::Polar::obj if 0; # cease -w
 }
 
 if ($shapetype eq 'auto') {
@@ -147,6 +155,18 @@ sub create_shape_file {
 	    $type .= "-l";
 	} elsif ($file =~ /\bstrassen/) {
 	    $type .= "-s";
+	}
+
+	if ($polar) {
+	    $s->init;
+	    while(1) {
+		my $r = $s->next;
+		last if !@{ $r->[Strassen::COORDS] };
+		for my $c (@{ $r->[Strassen::COORDS] }) {
+		    $c = join(",", $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $c)));
+		}
+		$s->set_current2($r);
+	    }
 	}
 
 	my $create_esri_and_dbf_record = sub {

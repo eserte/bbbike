@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Unknown1.pm,v 1.3 2002/02/10 21:26:50 eserte Exp $
+# $Id: Unknown1.pm,v 1.4 2007/07/20 19:36:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -11,6 +11,8 @@
 # Mail: eserte@cs.tu-berlin.de
 # WWW:  http://user.cs.tu-berlin.de/~eserte/
 #
+
+# XXX trim_accuracy calls are missing
 
 package GPS::Unknown1;
 require GPS;

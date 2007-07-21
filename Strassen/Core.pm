@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.77 2007/06/19 20:37:52 eserte Exp eserte $
+# $Id: Core.pm,v 1.79 2007/07/21 15:29:11 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.77 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.79 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -222,10 +222,7 @@ sub read_from_fh {
 
     my $read_only_global_directives = $args{ReadOnlyGlobalDirectives};
     my $use_local_directives = $args{UseLocalDirectives};
-    my $has_tie_ixhash = 0;
-    if ($use_local_directives) {
-	$has_tie_ixhash = eval { require Tie::IxHash; 1 };
-    }
+    my $has_tie_ixhash = eval { require Tie::IxHash; 1 };
 
     use constant DIR_STAGE_LOCAL => 0;
     use constant DIR_STAGE_GLOBAL => 1;
@@ -679,9 +676,18 @@ sub set {
     my($self, $index, $arg) = @_;
     $self->{Data}[$index] = arr2line($arg);
 }
-sub set_current { # funktioniert in init/next-Schleifen
+sub set_current {
     my($self, $arg) = @_;
     $self->set($self->{Pos}, $arg);
+}
+
+sub set2 {
+    my($self, $index, $arg) = @_;
+    $self->{Data}[$index] = arr2line2($arg);
+}
+sub set_current2 { # preferred for usage in init/next loops
+    my($self, $arg) = @_;
+    $self->set2($self->{Pos}, $arg);
 }
 
 # Arguments: [name, [xy1, xy2, ...], cat],
