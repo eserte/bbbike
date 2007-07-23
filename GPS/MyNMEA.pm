@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MyNMEA.pm,v 1.7 2005/05/25 21:29:50 eserte Exp $
+# $Id: MyNMEA.pm,v 1.8 2007/07/23 19:37:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -29,6 +29,7 @@ sub convert_to_route {
     require Karte::GPS;
     my $obj = $Karte::GPS::obj;
     $Karte::GPS::obj = $Karte::GPS::obj if 0; # peacify -w
+    $Karte::Standard::obj = $Karte::Standard::obj if 0; # peacify -w
 
 # XXX noch nicht zufriedenstellend... ist es überhaupt richtig? außerdem
 # zu ungenau....
@@ -61,7 +62,7 @@ sub convert_to_route {
 	    $breite += $breite_min + $breite_dec;
 	    $laenge += $laenge_min + $laenge_dec;
 
-	    my($x,$y) = $obj->map2standard($laenge, $breite);
+	    my($x,$y) = $Karte::Standard::obj->trim_accuracy($obj->map2standard($laenge, $breite));
 	    if (!@res || ($x != $res[-1]->[0] ||
 			  $y != $res[-1]->[1])) {
 		push @res, [$x, $y];

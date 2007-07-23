@@ -296,15 +296,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        },
        undef,
        undef,
-       {
-         'until' => 1185141600,
-         'text' => 'B 273 Breite Str. OD Oranienburg, zw. Berliner Str. u. Havelstr. Straßenbauarbeiten Vollsperrung 19.03.2007-22.07.2007 ',
-         'from' => 1174172400,
-         'id' => 869,
-         'data' => 'userdel	q4::inwork -1571,38406 -1553,38501 -1517,38543 -1500,38565
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1197068400,
          'text' => 'B 273 Breite Str., Havelstr. OD Oranienburg, zw. Berliner Str. und Gartenstr. Deckschichteinbau Vollsperrung 26.11.2007-07.12.2007 ',
@@ -1009,16 +1001,6 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'from' => 1186092000,
          'id' => 1082,
          'data' => 'userdel	2::inwork 36895,-12039 36087,-12087 35496,-12280
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_006131',
-         'until' => 1185141600,
-         'text' => 'Stendaler Str. (Hellersdorf) Richtung Süden zwischen Janusz-Korczak-Str. und Hellersdorfer Str. Veranstaltung, Fahrtrichtung gesperrt (bis 22.07.07)',
-         'from' => 1184913352,
-         'id' => 1083,
-         'data' => 'userdel	1::temp 23960,15021 23993,14797
 ',
          'type' => 'gesperrt'
        }

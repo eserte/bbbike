@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.22 2006/08/29 21:46:01 eserte Exp $
+# $Id: Util.pm,v 1.23 2007/07/23 07:10:28 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Util;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
 
 use strict;
 use Config;
@@ -121,7 +121,7 @@ sub middle_s {
     join(",",middle(split(/,/,$p0), split(/,/,$p1)));
 }
 
-# gibt für "x,y"  [x,y] aus
+# gibt für "x,y"  (x,y) aus
 sub string_to_coord ($) { split /,/, $_[0] }
 
 # Gibt "l" oder "r" für Links- oder Rechtsabbiegen sowie den Winkel in

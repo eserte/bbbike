@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.36 2007/06/20 21:21:28 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.37 2007/07/22 20:41:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.36 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.37 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -472,8 +472,8 @@ require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . 
 
     # Hooks
     my $bblpath = $bbl->PathName;
-    for my $layer (qw(after_new_layer after_delete_layer)) {
-	Hooks::get_hooks($layer)->add
+    for my $hook (qw(after_new_layer after_delete_layer)) {
+	Hooks::get_hooks($hook)->add
 		(sub {
 		     $reorder_elems->();
 		     $bbl->add(@elem);
@@ -481,8 +481,13 @@ require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . 
     }
     $bbl->OnDestroy
 	(sub {
-	     for my $layer (qw(after_new_layer after_delete_layer)) {
-		 Hooks::get_hooks($layer)->del($bblpath);
+	     # Maybe something was deleted/added, so call the hooks
+	     for my $hook (qw(after_new_layer after_delete_layer)) {
+		 Hooks::get_hooks($hook)->execute_except($bblpath);
+	     }
+	     # Finally delete
+	     for my $hook (qw(after_new_layer after_delete_layer)) {
+		 Hooks::get_hooks($hook)->del($bblpath);
 	     }
 	 });
 }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.79 2007/07/21 15:29:11 eserte Exp $
+# $Id: Core.pm,v 1.80 2007/07/23 19:37:30 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.79 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.80 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -683,7 +683,7 @@ sub set_current {
 
 sub set2 {
     my($self, $index, $arg) = @_;
-    $self->{Data}[$index] = arr2line2($arg);
+    $self->{Data}[$index] = arr2line2($arg) . "\n";
 }
 sub set_current2 { # preferred for usage in init/next loops
     my($self, $arg) = @_;

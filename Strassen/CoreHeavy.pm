@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.33 2007/02/03 11:06:32 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.34 2007/07/23 19:11:24 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -830,6 +830,92 @@ sub grepstreets {
 	}
     }
     $new_s;
+}
+
+# Simplify the object using the Douglas-Peuker algorithm.
+# Adapted from http://mapserver.gis.umn.edu/community/scripts/thin.pl
+# Note: this changes the self object
+sub simplify {
+    my($s, $tolerance) = @_;
+    require BBBikeUtil;
+    require Strassen::Util;
+
+    # from: mapsearch.c, msDistancePointToSegment
+    my $distancePointToSegment = sub {
+	my($p, $a, $b) = @_;
+
+	$p = [ Strassen::Util::string_to_coord($p) ];
+	$a = [ Strassen::Util::string_to_coord($a) ];
+	$b = [ Strassen::Util::string_to_coord($b) ];
+
+	my $l = Strassen::Util::strecke($a, $b);
+	if ($l == 0.0) { # a = b
+	    return Strassen::Util::strecke($a, $p);
+	}
+
+	my $r = (($a->[1] - $p->[1])*($a->[1] - $b->[1]) -
+		 ($a->[0] - $p->[0])*($b->[0] - $a->[0]))/($l*$l);
+	if ($r > 1) { # perpendicular projection of P is on the forward extention of AB
+	    return BBBikeUtil::min(Strassen::Util::strecke($p, $b),
+				   Strassen::Util::strecke($p, $a));
+	}
+	if ($r < 0) { # perpendicular projection of P is on the backward extention of AB
+	    return BBBikeUtil::min(Strassen::Util::strecke($p, $b),
+				   Strassen::Util::strecke($p, $a));
+	}
+
+	my $s = (($a->[1] - $p->[1])*($b->[0] - $a->[0]) - ($a->[0] - $p->[0])*($b->[1] - $a->[1]))/($l*$l);
+	
+	return abs($s*$l);
+    };
+
+    $s->init;
+    while() {
+	my $r = $s->next;
+	my @c = @{ $r->[Strassen::COORDS] };
+	last if !@c;
+	next if @c == 1;
+
+	my @new_c;
+	my @stack = ();
+	my $anchor = $c[0]; # save first point
+	CORE::push @new_c, $anchor;
+	my $aIndex = 0;
+	my $fIndex = $#c;
+	CORE::push @stack, $fIndex;
+
+	# Douglas - Peucker algorithm
+	while (@stack) {
+	    $fIndex = $stack[$#stack];
+	    my $fPoint = $c[$fIndex];
+	    my $max = $tolerance; # comparison values
+	    my $maxIndex = 0;
+
+	    # process middle points
+	    for (($aIndex+1) .. ($fIndex-1)) {
+
+		my $point = $c[$_];
+		# XXX wrong! should be distanceToSegment!!!
+		my $dist = $distancePointToSegment->($point, $anchor, $fPoint);
+
+		if ($dist >= $max) {
+		    $max = $dist;
+		    $maxIndex = $_;
+		}
+	    }
+
+	    if ($maxIndex > 0) {
+		CORE::push @stack, $maxIndex;
+	    } else {
+		CORE::push @new_c, $fPoint;
+		$anchor = @c[pop @stack];
+		$aIndex = $fIndex;
+	    }
+	}
+
+	$r->[Strassen::COORDS] = \@new_c;
+	$s->set_current2($r);
+    }
 }
 
 1;

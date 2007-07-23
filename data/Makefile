@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.150 2007/07/17 22:33:06 eserte Exp $
+# $Id: Makefile,v 2.151 2007/07/23 19:36:49 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -249,7 +249,8 @@ wasserstrassen-lowres:  wasserstrassen wasserumland wasserumland2 \
 	    $(GREPSTRASSEN) --catrx '^(F:W1)$$' > $@~
 	cat wasserstrassen wasserumland wasserumland2 |\
 	    $(GREPSTRASSEN) --catrx '^(W1|W2|F:W)$$' --minarea 3 >> $@~
-	$(PERL) $(MISCSRCDIR)/simplify_streets -simplify-coefficient 0.04 $@~ > $@~~
+#	$(PERL) $(MISCSRCDIR)/simplify_streets -simplify-coefficient 0.04 $@~ > $@~~
+	$(PERL) $(MISCSRCDIR)/simplify_streets -tolerance 300 -algorithm 'douglas-peuker' $@~ > $@~~
 	rm $@~
 	mv -f $@~~ $@
 	-@$(READONLY) $@

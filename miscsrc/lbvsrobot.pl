@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.35 2007/01/26 20:01:18 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.36 2007/07/23 20:16:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006 Slaven Rezic. All rights reserved.
@@ -476,7 +476,7 @@ sub get_detail_id {
     #my $diffcol = "text";
     #$detail->{$diffcol};
     #$detail->{details}{Meldenummer};
-    join("#", @{$detail->{details}}{qw(Meldenummer Lage Sperrart)}); # Beginn ja/nein?
+    join("#", @{$detail->{details}}{qw(Meldenummer Lage Sperrart Beginn)}); # Beginn ja/nein?
 }
 
 sub get_detail_info {
