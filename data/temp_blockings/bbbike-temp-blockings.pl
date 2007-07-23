@@ -6920,7 +6920,7 @@ userdel	2::inwork 22688,12007 22669,12049 22693,12084
 EOF
      },
      { from  => undef, # 2007-01-15 22:59 1168898369
-       until => undef , # 2008-06-30 23:59 1178221318 1214863199
+       until => 1185227672 , # 2008-06-30 23:59 1178221318 1214863199 undef
        text  => 'Weinmeisterstr. (Mitte) in Richtung Münzstr. Baustelle, Fahrtrichtung gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_004491',
@@ -8711,7 +8711,7 @@ userdel	1::inwork 10534,14460 10723,14772 10889,15045
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1185227622, # XXX undef
        text  => 'Drakestr. (Lichterfelde) in beiden Richtungen, zwischen Curtiusstr. und Unter den Eichen Fahrbahnunterspülung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005823',
@@ -9085,7 +9085,7 @@ userdel	2::inwork 30795,13191 30815,13170 30975,12918
 EOF
      },
      { from  => 1185055200, # 2007-07-22 00:00
-       until => 1186178400, # 2007-08-04 00:00
+       until => 1185228255, # 2007-08-04 00:00 1186178400
        text  => 'B 005 Kieler Str. OL Frankfurt (O), zw. Lebuser Ch. u. Goepelstr. Bergsicherungsarbeiten Vollsperrung 23.07.2007-03.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,

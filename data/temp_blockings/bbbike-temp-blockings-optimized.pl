@@ -206,16 +206,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_004491',
-         'until' => undef,
-         'text' => 'Weinmeisterstr. (Mitte) in Richtung M¸nzstr. Baustelle, Fahrtrichtung gesperrt',
-         'from' => undef,
-         'id' => 822,
-         'data' => 'userdel	1::inwork 10331,13397 10528,13243
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -747,16 +738,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_005823',
-         'until' => undef,
-         'text' => 'Drakestr. (Lichterfelde) in beiden Richtungen, zwischen Curtiusstr. und Unter den Eichen Fahrbahnuntersp¸lung, Straﬂe vollst‰ndig gesperrt',
-         'from' => undef,
-         'id' => 1034,
-         'data' => 'userdel	2::inwork 3048,4305 3128,4190 3259,4002
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -949,15 +931,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1186178400,
-         'text' => 'B 005 Kieler Str. OL Frankfurt (O), zw. Lebuser Ch. u. Goepelstr. Bergsicherungsarbeiten Vollsperrung 23.07.2007-03.08.2007 ',
-         'from' => 1185055200,
-         'id' => 1077,
-         'data' => 'userdel	q4::inwork 87377,-3591 87272,-3504
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1186178400,
          'text' => 'L 086 B 1 Groﬂ Kreutz-Schmergow OD Groﬂ Kreutz Kanal- und Straﬂenbau Vollsperrung 19.07.2007-03.08.2007 ',
