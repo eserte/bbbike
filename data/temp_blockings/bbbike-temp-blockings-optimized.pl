@@ -178,7 +178,7 @@ push @temp_blocking,
          'text' => 'L 016 Paaren-Börnicke OD Grünefeld Kanal- und Straßenbau Vollsperrung 04.12.2006-30.07.2007 ',
          'from' => 1165100400,
          'id' => 805,
-         'data' => 'userdel	q4::inwork -19313,29417 -19894,29478
+         'data' => 'userdel	q4::inwork -19282,29433 -19608,29389 -19798,29399
 ',
          'type' => 'handicap'
        },
@@ -977,6 +977,35 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'data' => 'userdel	2::inwork 36895,-12039 36087,-12087 35496,-12280
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'IM_006159',
+         'until' => 1188597599,
+         'text' => 'Persiusstr. (Friedrichshain) in beiden Richtungen bei Markgrafendamm Baustelle, Straße vollständig gesperrt über Markgrafendamm - Stralauer Str. - Bossestr. (bis Ende 08.2007)',
+         'from' => 1185304600,
+         'id' => 1084,
+         'data' => 'userdel	2::inwork 14641,10552 14488,10603
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1187042400,
+         'text' => 'K 6153 AS Friedersdorf-Königs Wusterhausen Bahnübergang in der OL Kablow Gleisbauarbeiten Vollsperrung 11.08.2007-13.08.2007 ',
+         'from' => 1186696800,
+         'id' => 1085,
+         'data' => 'userdel	2::inwork 33221,-10748 32827,-11406 32725,-11546
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1189893600,
+         'text' => 'L 016 Perwenitz-Börnicke OD Grünefeld 4. Brandenb.Dorf- u. Erntefest Vollsperrung 15.09.2007-15.09.2007 ',
+         'from' => 1189720800,
+         'id' => 1086,
+         'data' => 'userdel	q4::temp -19882,29552 -19833,29510 -19798,29399
+',
+         'type' => 'handicap'
        }
      
 );

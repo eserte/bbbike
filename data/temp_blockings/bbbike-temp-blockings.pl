@@ -2777,7 +2777,7 @@ EOF
        text  => 'K 6424; (Dahlwitzer Landstr.-Münchehofe-B 1); OD Münchehofe Straßenausbau Vollsperrung 12.09.2005-31.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 28605,9637 26851,9005
+userdel	q4 28619,9588 26851,9005
 EOF
      },
      { from  => 1127772000, # 2005-09-27 00:00
@@ -5659,7 +5659,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_84070',
        data  => <<EOF,
-userdel	q4::inwork 7852,20231 7772,20050 7726,19952
+userdel	q4::inwork 7832,20219 7790,20132 7755,20059 7716,19954
 EOF
      },
      { from  => undef, # 
@@ -6780,7 +6780,7 @@ EOF
        text  => 'L 016 Paaren-Börnicke OD Grünefeld Kanal- und Straßenbau Vollsperrung 04.12.2006-30.07.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -19313,29417 -19894,29478
+userdel	q4::inwork -19282,29433 -19608,29389 -19798,29399
 EOF
      },
      { from  => 1165389396, # 2006-12-06 08:16
@@ -8923,7 +8923,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_005953',
        data  => <<EOF,
-userdel	q4::inwork 7772,20050 7852,20231
+userdel	q4::inwork 7755,20059 7790,20132 7832,20219
 EOF
      },
      { from  => 1184104800, # 2007-07-11 00:00
@@ -9140,6 +9140,31 @@ EOF
        source_id => 'IM_006131',
        data  => <<EOF,
 userdel	1::temp 23960,15021 23993,14797
+EOF
+     },
+     { from  => 1185304600, # 2007-07-24 21:16
+       until => 1188597599, # 2007-08-31 23:59
+       text  => 'Persiusstr. (Friedrichshain) in beiden Richtungen bei Markgrafendamm Baustelle, Straße vollständig gesperrt über Markgrafendamm - Stralauer Str. - Bossestr. (bis Ende 08.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_006159',
+       data  => <<EOF,
+userdel	2::inwork 14641,10552 14488,10603
+EOF
+     },
+     { from  => 1186696800, # 2007-08-10 00:00
+       until => 1187042400, # 2007-08-14 00:00
+       text  => 'K 6153 AS Friedersdorf-Königs Wusterhausen Bahnübergang in der OL Kablow Gleisbauarbeiten Vollsperrung 11.08.2007-13.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 33221,-10748 32827,-11406 32725,-11546
+EOF
+     },
+     { from  => 1189720800, # 2007-09-14 00:00
+       until => 1189893600, # 2007-09-16 00:00
+       text  => 'L 016 Perwenitz-Börnicke OD Grünefeld 4. Brandenb.Dorf- u. Erntefest Vollsperrung 15.09.2007-15.09.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp -19882,29552 -19833,29510 -19798,29399
 EOF
      },
     );

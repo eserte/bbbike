@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.44 2007/04/01 21:53:45 eserte Exp $
+# $Id: cgi.t,v 1.45 2007/07/24 22:36:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -79,7 +79,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (163 + $ortsuche_tests) * scalar @urls;
+plan tests => (169 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -631,6 +631,35 @@ for my $cgiurl (@urls) {
     }
 
     XXX:
+    {
+	$req = HTTP::Request->new
+	    ('GET', "$action?" . CGI->new({startc=>"42685,19584",
+					   zielc=>"-8063,17487",
+					   scope=>"region", # why needed?
+					  })->query_string);
+	$res = $ua->request($req);
+	ok($res->is_success, "Request with crossings in region")
+	    or diag $res->as_string;
+	$content = uncompr($res);
+	like($content, qr{\QWallstr./Karl-Liebknecht-Str./August-Bebel-Str./Große Str. (Strausberg)\E}, "Simplified crossing");
+	like($content, qr{\QHumboldtallee/Haydnallee/Fröbelstr. (Falkensee)},
+	     "Simplified crossing (goal)");
+    }
+
+    {
+	$req = HTTP::Request->new
+	    ('GET', "$action?" . CGI->new({startc=>"9222,8787",
+					   zielc=>"-502,-803",
+					   scope=>"region", # why needed?
+					  })->query_string);
+	$res = $ua->request($req);
+	ok($res->is_success, "Another request with crossings")
+	    or diag $res->as_string;
+	$content = uncompr($res);
+	like($content, qr{\QDudenstr./Mehringdamm/Platz der Luftbrücke/Tempelhofer Damm\E}, "No simplification for Berlin crossings needed");
+	like($content, qr{\QThomas-Müntzer-Damm (Kleinmachnow)/Warthestr. (Teltow)\E}, "No simplification possible between different places");
+    }
+
     {
 	# opensearch search params
 	my $resp;

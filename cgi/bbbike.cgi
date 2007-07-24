@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.61 2007/06/14 22:57:58 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.63 2007/07/24 20:08:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -705,7 +705,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.61 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.63 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1536,7 +1536,7 @@ sub choose_form {
 				# is this the right crossing?
 				foreach my $test_crossing_street (@{$crossings->{$c}}) {
 				    if ($test_crossing_street =~ /^\Q$crossing_street\E/i) {
-					$$nameref = join("/", @{$crossings->{$c}});
+					$$nameref = nice_crossing_name(@{$crossings->{$c}});
 					$q->param($type . 'c', $c);
 					next MATCH_STREET;
 				    }
@@ -5245,12 +5245,12 @@ sub crossing_text {
     my $c = shift;
     all_crossings();
     if (exists $crossings->{$c}) {
-	join("/", @{ $crossings->{$c} });
+	nice_crossing_name(@{ $crossings->{$c} });
     } else {
 	new_kreuzungen();
 	my(@nearest) = $kr->nearest_coord($c);
 	if (@nearest and exists $crossings->{$nearest[0]}) {
-	    join("/", @{ $crossings->{$nearest[0]} });
+	    nice_crossing_name(@{ $crossings->{$nearest[0]} });
 	} else {
 	    "???";
 	}
@@ -5539,10 +5539,10 @@ sub header {
 		     -href => "$bbbike_script?begin=1"}),
 	    cgilink({-rel => 'Start',
 		     -hreflang => 'de',
-		     -content => "$bbbike_de_script?begin=1"}),
+		     -href => "$bbbike_de_script?begin=1"}),
 	    cgilink({-rel => 'Start',
 		     -hreflang => 'en',
-		     -content => "$bbbike_en_script?begin=1"}),
+		     -href => "$bbbike_en_script?begin=1"}),
 	    cgilink({-rel => 'Author',
 		     -href => "mailto:@{[ $BBBike::EMAIL ]}"}),
 	   (defined $args{-up}
@@ -5939,7 +5939,7 @@ sub nahbereich {
 	if ($i++ == 0) {
 	    print " checked";
 	}
-	print "> ", join("/", @{$crossings->{$_}}), "<br>\n";
+	print "> ", nice_crossing_name(@{$crossings->{$_}}), "<br>\n";
     }
     print "<hr>";
     print "<input type=hidden name=zielname value=\"$zielname\">";
@@ -5950,7 +5950,7 @@ sub nahbereich {
 	if ($i++ == 0) {
 	    print " checked";
 	}
-	print "> ", join("/", @{$crossings->{$_}}), "<br>\n";
+	print "> ", nice_crossing_name(@{$crossings->{$_}}), "<br>\n";
     }
     print "<hr>";
     suche_button();
@@ -6230,6 +6230,23 @@ sub outside_berlin_and_potsdam {
     $result;
 }
 
+sub nice_crossing_name {
+    my(@c) = @_;
+    my @c_street;
+    my $unique_cityparts;
+    for my $c (@c) {
+	my($street, @cityparts) = Strasse::split_street_citypart($c);
+	my $cityparts = join(", ", @cityparts);
+	if (!defined $unique_cityparts) {
+	    $unique_cityparts = $cityparts;
+	} elsif ($cityparts ne $unique_cityparts) {
+	    return join("/", @c);
+	}
+	push @c_street, $street;
+    }
+    return join("/", @c_street) . ($unique_cityparts ne "" ? " ($unique_cityparts)" : "");
+}
+
 ######################################################################
 #
 # Information
@@ -6433,7 +6450,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/06/14 22:57:58 $';
+    my $cgi_date = '$Date: 2007/07/24 20:08:32 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
