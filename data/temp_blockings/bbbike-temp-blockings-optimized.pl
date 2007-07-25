@@ -1006,6 +1006,16 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'data' => 'userdel	q4::temp -19882,29552 -19833,29510 -19798,29399
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_006151',
+         'until' => undef,
+         'text' => 'Marktstr. (Lichtenberg) Richtung Karlshorster Str. zwischen Kynaststr. und Schreiberhauer Str. geplatzte Wasserleitung, Fahrtrichtung gesperrt',
+         'from' => undef,
+         'id' => 1087,
+         'data' => 'userdel	1::inwork 14988,11130 15050,11017 15085,10956 15109,10911
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -9167,4 +9167,13 @@ EOF
 userdel	q4::temp -19882,29552 -19833,29510 -19798,29399
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Marktstr. (Lichtenberg) Richtung Karlshorster Str. zwischen Kynaststr. und Schreiberhauer Str. geplatzte Wasserleitung, Fahrtrichtung gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_006151',
+       data  => <<EOF,
+userdel	1::inwork 14988,11130 15050,11017 15085,10956 15109,10911
+EOF
+     },
     );
