@@ -1016,6 +1016,24 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'data' => 'userdel	1::inwork 14988,11130 15050,11017 15085,10956 15109,10911
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1189893600,
+         'text' => 'L 079 Ludwigsfelde-Potsdam zw. Kreisverkehr Nudow und Kreisverkehr Philippsthal Straßenbau Vollsperrung 23.07.2007-15.09.2007 ',
+         'from' => 1185055200,
+         'id' => 1088,
+         'data' => 'userdel	2::inwork -5673,-8130 -5271,-8290 -4971,-8420 -4878,-8656
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1186178400,
+         'text' => 'L 621 Döllinger Str. OL Plessa Kanalarbeiten Vollsperrung 30.07.2007-03.08.2007 ',
+         'from' => 1185660000,
+         'id' => 1089,
+         'data' => 'userdel	2::inwork 27420,-104513 26667,-103869
+',
+         'type' => 'gesperrt'
        }
      
 );

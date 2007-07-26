@@ -9176,4 +9176,20 @@ EOF
 userdel	1::inwork 14988,11130 15050,11017 15085,10956 15109,10911
 EOF
      },
+     { from  => 1185055200, # 2007-07-22 00:00
+       until => 1189893600, # 2007-09-16 00:00
+       text  => 'L 079 Ludwigsfelde-Potsdam zw. Kreisverkehr Nudow und Kreisverkehr Philippsthal Straßenbau Vollsperrung 23.07.2007-15.09.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -5673,-8130 -5271,-8290 -4971,-8420 -4878,-8656
+EOF
+     },
+     { from  => 1185660000, # 2007-07-29 00:00
+       until => 1186178400, # 2007-08-04 00:00
+       text  => 'L 621 Döllinger Str. OL Plessa Kanalarbeiten Vollsperrung 30.07.2007-03.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 27420,-104513 26667,-103869
+EOF
+     },
     );
