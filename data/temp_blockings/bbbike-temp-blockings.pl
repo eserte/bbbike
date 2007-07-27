@@ -1001,7 +1001,7 @@ EOF
        text  => 'Ruppiner Chaussee (Hennigsdorf) Kreuzung Hennigsdorfer Straße wegen Bauarbeiten gesperrt (bis 17.10.2004)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -1854,24385 -1591,24124 -1214,23742
+userdel	q4 -1854,24385 -1591,24124 -1281,23746
 userdel	q4 -1854,24385 -1896,24275 -1935,24187
 userdel	q4 -1854,24385 -1912,24442
 EOF
@@ -6156,7 +6156,7 @@ EOF
        text  => 'Ehrlichstraße zwischen Trautenauerstraße und Blockdammweg gesperrt. Dauer 07.10.2006 06:00 Uhr bis 20.10.2006 18:00 Uhr. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 17729,8850 18147,8583
+userdel	2::inwork 17729,8850 18080,8626 18147,8583
 EOF
      },
      { from  => 1160107200, # 2006-10-06 06:00
@@ -9168,7 +9168,7 @@ userdel	q4::temp -19882,29552 -19833,29510 -19798,29399
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1185577821, # XXX
        text  => 'Marktstr. (Lichtenberg) Richtung Karlshorster Str. zwischen Kynaststr. und Schreiberhauer Str. geplatzte Wasserleitung, Fahrtrichtung gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_006151',

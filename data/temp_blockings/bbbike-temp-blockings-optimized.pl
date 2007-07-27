@@ -1007,16 +1007,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_006151',
-         'until' => undef,
-         'text' => 'Marktstr. (Lichtenberg) Richtung Karlshorster Str. zwischen Kynaststr. und Schreiberhauer Str. geplatzte Wasserleitung, Fahrtrichtung gesperrt',
-         'from' => undef,
-         'id' => 1087,
-         'data' => 'userdel	1::inwork 14988,11130 15050,11017 15085,10956 15109,10911
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1189893600,
          'text' => 'L 079 Ludwigsfelde-Potsdam zw. Kreisverkehr Nudow und Kreisverkehr Philippsthal Straßenbau Vollsperrung 23.07.2007-15.09.2007 ',
