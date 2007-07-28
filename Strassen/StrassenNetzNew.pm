@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetzNew.pm,v 1.2 2005/03/19 11:14:15 eserte Exp $
+# $Id: StrassenNetzNew.pm,v 1.3 2007/07/28 20:50:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -12,11 +12,13 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
+# XXX do not used yet...
+
 package StrassenNetz;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Core;
 use BBBikeCalc qw();

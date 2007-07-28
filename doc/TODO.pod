@@ -1537,6 +1537,11 @@ ich Sachen wie F8 propagieren und DB_File/RECNO langsam auslaufen
 lassen. -> DONE, check missing! -> neue win-distro zum testen
 auf usb-stick kopieren! -> make-target dafür schreiben
 
+=item * (#M5)
+
+Neueste Tk::Pod-Version in die Distribution aufnehmen, ansonsten
+können anscheinend die Pod-Seiten nicht angezeigt werden.
+
 =item * (M1)
 
 Langfristig auf Strawberry Perl umsteigen, sobald ich alle Module 

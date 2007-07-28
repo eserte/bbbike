@@ -130,6 +130,7 @@ MasterPunkte.pm
 MasterStrassen.pm
 PLZ.pm
 PLZ/Multi.pm
+PLZ/Levenshtein.pm
 PointEdit.pm
 README
 README.english
@@ -230,6 +231,7 @@ data/README
 data/ampeln
 data/ampelschaltung
 data/berlin
+data/berlin_ortsteile
 data/brunnels
 data/comments_cyclepath
 data/comments_ferry
@@ -885,6 +887,9 @@ msg/bbbike/en
 msg/install/en
 doc/podindex.html
 doc/authors.pod
+doc/tests.pod
+doc/watchsites.pod
+doc/links.pod
 smsbbbike
 tkbikepwr
 tmp/.keep_me

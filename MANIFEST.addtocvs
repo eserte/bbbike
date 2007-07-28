@@ -90,7 +90,6 @@ data/temp_blockings/*.pl
 data/exits-orig
 data/exits
 data/multi_bez_str-orig
-data/berlin_ortsteile
 data/comments_route_img/README
 data/comments_route_img/BK-orig.gif
 data/comments_route_img/BK.gif
@@ -462,8 +461,10 @@ html/opensearch/bbbike-opensearch.tpl.xml
 html/opensearch/opensearch.html
 html/opensearch/opensearch.js
 cgi/bbbikesoapserver.cgi
+cgi/gridserv.cgi
 miscsrc/coordssession2bbd
 miscsrc/replay_accesslog
-PLZ/Levenshtein.pm
 miscsrc/BBBikeAllTracksPlugin.pm
 miscsrc/ampelschaltung.pl
+html/google2brb.html
+html/google2brb.js

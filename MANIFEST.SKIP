@@ -54,13 +54,16 @@ patch\.gz$
 ^ext/VirtArray/VirtArray.(bs|c|o)$
 ^ext/VectorUtil-Inline/Inline.(bs|c|o)$
 ^BBBike-\d\.\d+/
+^BBBike-\d\.\d+-DEVEL/
 ^Bundle/BBBike.tpl.pm$
 ^Bundle/BBBike_radzeit.pm$
+^Bundle/BBBike_windist.pm$
 ^Bundle/make_radzeit_bundle$
 ^Bundle/make_bundle$
 ^Bundle/make_small_bundle$
 ^Bundle/make_pi_osd$
 ^Bundle/make_small_pi_osd$
+^Bundle/make_windist_bundle$
 \bbbbike-advanced.pod$
 ^misc/
 ^miscsrc/
@@ -89,12 +92,14 @@ cgi/bbbike-sourceforge.cgi.config
 cgi/bbbike-ipaq.cgi.config$
 cgi/bbbike-radzeit.cgi.config$
 cgi/bbbike2-radzeit.cgi.config$
+cgi/bbbike2.cgi.config$
 cgi/bbbike-cs.cgi.config$
 cgi/bbbike2.cgi$
 cgi/bbbikesoapserver.cgi$
 cgi/global.asa$
 cgi/test.cgi$
 cgi/Makefile.local.inc$
+cgi/bbbike-cs-umzug.html$
 data/\.check_
 data/\.create_fragezeichen$
 data/\.fragezeichen_
@@ -206,6 +211,23 @@ BBBikeCanvas.pm
 BBBikeContext.pm
 BBBikeUserEdit.pm
 BBBikeMapEditorPlugin.pm
+BBBikeDraw/PDF2.pm
+BBBikeDraw/PDFHeavy.pm
+cgi/bbbike_comment.cgi$
+cgi/Makefile$
+cgi/GNUmakefile$
+cgi/gridserv.cgi$
+^data/comments_route_img/
+^data/kneipen.yml$
+^data/exits$
+^data/Makefile$
+^Strassen/QuadTree.pm$
+^Strassen/StrassenNetzNew.pm$
+^Strassen/Touratech.pm$
+^mapserver/daemon/mapscript_daemon.pl$
+^html/opensearch/
+^html/google2brb.html$
+^html/google2brb.js$
 # these too
 ^GDF/
 ^projects/
@@ -253,3 +275,11 @@ BBBikeMapEditorPlugin.pm
 ^docbook.css$
 ^bbbike-stick.bat$
 ^BBBikeRouting/Boat.pm$
+# not needed anymore?
+^images/behindertenfreundlich.gif$
+^images/behindertengerecht.gif$
+^images/behindertengerecht_klein.gif$
+^images/behindertengerecht_klein2.gif$
+^doc/links.html$
+^doc/snippets.pod$
+^doc/watchsites.html$

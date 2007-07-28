@@ -131,6 +131,7 @@ MasterPunkte.pm
 MasterStrassen.pm
 PLZ.pm
 PLZ/Multi.pm
+PLZ/Levenshtein.pm
 PointEdit.pm
 README
 README.english
@@ -230,6 +231,7 @@ data/README
 data/ampeln
 data/ampelschaltung
 data/berlin
+data/berlin_ortsteile
 data/brunnels
 data/comments_cyclepath
 data/comments_ferry
@@ -885,6 +887,9 @@ msg/bbbike/en
 msg/install/en
 doc/podindex.html
 doc/authors.pod
+doc/tests.pod
+doc/watchsites.pod
+doc/links.pod
 smsbbbike
 tkbikepwr
 tmp/.keep_me
@@ -1049,7 +1054,6 @@ data/temp_blockings/bbbike-temp-blockings.pl
 data/exits-orig
 data/exits
 data/multi_bez_str-orig
-data/berlin_ortsteile
 data/comments_route_img/README
 data/comments_route_img/BK-orig.gif
 data/comments_route_img/BK.gif
@@ -1484,8 +1488,10 @@ html/opensearch/bbbike-opensearch.tpl.xml
 html/opensearch/opensearch.html
 html/opensearch/opensearch.js
 cgi/bbbikesoapserver.cgi
+cgi/gridserv.cgi
 miscsrc/coordssession2bbd
 miscsrc/replay_accesslog
-PLZ/Levenshtein.pm
 miscsrc/BBBikeAllTracksPlugin.pm
 miscsrc/ampelschaltung.pl
+html/google2brb.html
+html/google2brb.js
