@@ -481,7 +481,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'text' => 'Burgfrauenstr. (Reinickendorf) in beiden Richtungen, zwischen Zeltlinger Pl. und Im Fischgrund Baustelle, Straße vollständig gesperrt (bis 09/07)',
          'from' => undef,
          'id' => 945,
-         'data' => 'userdel	2::inwork 2979,24373 2438,25082
+         'data' => 'userdel	2::inwork 2979,24373 2690,24751 2542,24945 2438,25082
 ',
          'type' => 'gesperrt'
        },
@@ -1023,6 +1023,15 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'from' => 1185660000,
          'id' => 1089,
          'data' => 'userdel	2::inwork 27420,-104513 26667,-103869
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1186869600,
+         'text' => 'L 220 B167 AS Finowfurt-Joachimsthal zw. Eichhorst und Elsenau Bau Otterdurchlass Vollsperrung 30.07.2007-11.08.2007 ',
+         'from' => 1185660000,
+         'id' => 1090,
+         'data' => 'userdel	2::inwork 29812,57628 29056,57503
 ',
          'type' => 'gesperrt'
        }

@@ -1,4 +1,4 @@
-// $Id: bbbike_start.js,v 1.13 2005/12/18 21:46:13 eserte Exp $
+// $Id: bbbike_start.js,v 1.14 2007/07/28 11:02:26 eserte Exp $
 // (c) 2001-2002 Slaven Rezic. All rights reserved.
 // See comment in bbbike.cgi regarding x/ygridwidth
 
@@ -271,6 +271,19 @@ function set_street_from_berlinmap(type, inx) {
   document.BBBikeForm[type + "2"][inx-1].checked = true;
   set_street_in_berlinmap(type, inx);
   return false;
+}
+
+function focus_first() {
+  if (document.BBBikeForm) {
+    var elems = ["start", "via", "ziel"];
+    for (var i = 0; i < elems.length; i++) {
+      var elem = elems[i];
+      if (document.BBBikeForm[elem] && typeof document.BBBikeForm[elem].focus == "function") {
+	document.BBBikeForm[elem].focus();
+	break;
+      }
+    }
+  }
 }
 
 // Local variables:

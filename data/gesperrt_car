@@ -306,12 +306,12 @@ Gartenstr. -> Müggelheimer Str.: Müggelheimer Str.	3 22362,4331 22418,4452 22396
 Gropiusstr.	1 8543,16364 8389,16214
 Osloer Str. -> Pankeweg: Osloer Str.	3 8503,16716 8721,16689 8804,16881
 Pankeweg -> Osloer Str.: Osloer Str.	3 8804,16881 8721,16689 8759,16684
-Osloer Str. -> Travemünder Str.: Osloer Str.	3 8958,16667 8759,16684 8659,16494
 Osloer Str. -> Pankeweg, teilweise als Walter-Nicklisch-Promenade gekennzeichnet: Osloer Str.	3 8721,16689 8759,16684 8776,16718
-Pankeweg, teilweise als Walter-Nicklisch-Promenade gekennzeichnet -> Osloer Str.: Osloer Str.	3 8776,16718 8759,16684 8958,16667
 Pankeweg, teilweise als Walter-Nicklisch-Promenade gekennzeichnet -> Travemünder Str.: Osloer Str.	3 8776,16718 8759,16684 8659,16494
+Pankeweg, teilweise als Walter-Nicklisch-Promenade gekennzeichnet -> Osloer Str.: Osloer Str.	3 8776,16718 8759,16684 8939,16668
 Travemünder Str. -> Osloer Str.: Osloer Str.	3 8659,16494 8759,16684 8721,16689
 Travemünder Str. -> Pankeweg, teilweise als Walter-Nicklisch-Promenade gekennzeichnet: Osloer Str.	3 8659,16494 8759,16684 8776,16718
+Osloer Str. -> Travemünder Str.: Osloer Str.	3 8939,16668 8759,16684 8659,16494
 Lynarstr. -> Müllerstr.: Müllerstr./Lindower Str.	3 7629,15078 7754,15160 7611,15286
 Lynarstr. -> Lindower Str.: Müllerstr./Lindower Str.	3 7629,15078 7754,15160 7953,15362
 Müllerstr. -> Lindower Str.: Müllerstr./Lindower Str.	3 7611,15286 7754,15160 7953,15362
@@ -403,3 +403,9 @@ Daumstr. -> Glindowseestr.: Mittelstreifen	3 -1655,16813 -1710,16735 -1553,16695
 Karlstr.	1 22554,4380 22458,4134
 Klandorfer Str. -> Märkische Allee: Mittelstreifen	3 21377,18663 21335,18679 21251,18508
 Märkische Allee -> Klandorfer Str.: Mittelstreifen	3 21400,18817 21335,18679 21377,18663
+Mörchinger Str. -> Berliner Str.: Mittelstreifen	3 1358,3257 1334,3305 1208,3211
+Berliner Str. -> Mörchinger Str.: Mittelstreifen	3 1415,3362 1334,3305 1358,3257
+Prinzenallee -> Biesenthaler Str.: Mittelstreifen	3 9082,16982 9024,16855 9245,16758
+Biesenthaler Str. -> Prinzenallee: Mittelstreifen	3 9245,16758 9024,16855 8939,16668
+Berliner Allee -> Tassostr.: Straßenbahntrasse	3 13540,15928 13630,15956 13621,15990
+Tassostr. -> Berliner Allee: Straßenbahntrasse	3 13621,15990 13630,15956 13753,16000

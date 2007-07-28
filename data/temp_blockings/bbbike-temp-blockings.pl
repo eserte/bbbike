@@ -1645,7 +1645,7 @@ EOF
        text  => 'Pistoriusstr. (Weissensee) Richtung Berliner Allee zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt (bis 30.06.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 13400,16395 13632,16305 13652,16297 13797,16237
+userdel	1 13400,16395 13632,16305 13652,16297 13679,16286 13797,16237
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -1833,7 +1833,7 @@ EOF
        text  => 'Berliner Allee Richtung stadtauwärts, zwischen Langhanstr. und Lindenallee Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 13540,15928 13751,16009 13821,16035 14014,16106 14067,16127 14371,16252
+userdel	q4; 13540,15928 13630,15956 13753,16000 13826,16026 14014,16106 14067,16127 14371,16252
 EOF
      },
      { from  => 1138319749, # 2006-01-27 00:55
@@ -2523,7 +2523,7 @@ EOF
        text  => 'Lauenburger Str. (Steglitz) in beiden Richtungen zwischen Lothar-Bucher-Str. und Lauenburger Platz Baustelle, Straße vollständig gesperrt (bis 09.09.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 6030,6165 6024,6080
+userdel	2 6014,6160 6019,6087 6008,6067
 EOF
      },
      { from  => 1123970400, # 2005-08-14 00:00
@@ -2664,7 +2664,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005006',
        data  => <<EOF,
-userdel	2 10459,17754 10548,17817 10722,17940 10846,17992
+userdel	2 10459,17754 10548,17817 10705,17931 10846,17992
 EOF
      },
      { from  => 1127508095, # 2005-09-23 22:41
@@ -7528,7 +7528,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004035',
        data  => <<EOF,
-userdel	1::inwork 10459,17754 10548,17817 10722,17940 10846,17992
+userdel	1::inwork 10459,17754 10548,17817 10705,17931 10846,17992
 EOF
      },
      { from  => undef, # 
@@ -7879,7 +7879,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005307',
        data  => <<EOF,
-userdel	2::inwork 3724,18948 3883,18944 4162,18891
+userdel	2::inwork 3726,18962 3883,18944 4162,18891
 EOF
      },
      { from  => 1178143200, # 2007-05-03 00:00
@@ -7956,7 +7956,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005369',
        data  => <<EOF,
-userdel	2::inwork 2979,24373 2438,25082
+userdel	2::inwork 2979,24373 2690,24751 2542,24945 2438,25082
 EOF
      },
      { from  => undef, # 
@@ -9190,6 +9190,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 27420,-104513 26667,-103869
+EOF
+     },
+     { from  => 1185660000, # 2007-07-29 00:00
+       until => 1186869600, # 2007-08-12 00:00
+       text  => 'L 220 B167 AS Finowfurt-Joachimsthal zw. Eichhorst und Elsenau Bau Otterdurchlass Vollsperrung 30.07.2007-11.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 29812,57628 29056,57503
 EOF
      },
     );

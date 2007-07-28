@@ -55,7 +55,7 @@ Max-Beer-Str.: Fahrradstraße geplant (2005, aber noch nichts passiert)	? 10632,1
 Linienstr.: Fahrradstraße geplant (nach der Sanierung)?	? 9903,13646 9944,13665 9964,13665 10020,13669 10081,13673 10214,13680 10308,13679 10432,13678 10597,13647 10718,13625
 #: by ^^^
 #: by: http://www.reinickendorf.de/index_6280_de.html
-Aroser Allee, Fertigstellung bis 2007-10-01	? 6741,18613 6702,18348 6671,18132 6676,18030 6710,17905 6761,17741 6893,17317 6942,17128
+Aroser Allee, Fertigstellung bis 2007-10-01	? 6741,18613 6702,18348 6671,18132 6662,18019 6689,17911 6739,17749 6878,17315 6928,17154
 #: section ^^^
 #: section ^^^
 #
@@ -161,8 +161,8 @@ Alexanderufer: in Bau (zumindest das südliche Ende wird asphaltiert sein, außerd
 #: by: http://archiv.tagesspiegel.de/archiv/30.07.2005/1962466.asp:
 Spree: ist dieser Spreearm wiederhergestellt worden?	? 43394,-2017 43296,-2181 43357,-2501 43220,-2544 43129,-2437 43162,-2242 43053,-2114
 (Am Kanal - Adlergestell): genauer Wegverlauf, Koordinaten?	? 20928,2412 20933,2390 20937,2368
-#: by: http://www.berlinonline.de/berliner-zeitung/berlin/486071.html
-Straße 13: wird demnächst zur Frank-Zappa-Str. umbenannt	? 18598,14575 18932,14652
+#: by: http://www.berlinonline.de/berliner-zeitung/print/berlin/673199.html (oldname: Straße 13 (-20070728)
+Franz-Zappa-Str.: Qualität?	? 18598,14575 18932,14652
 #: by: Andreas Mühlhausen:
 Heinrich-von-Gagern-Str., Yitzhak-Rabin-Str.: möglicherweise schlechte Radwege (Kopfsteinpflaster)	? 8063,12182 8119,12414 8122,12600
 Gebrüder-Grimm-Weg: falls Märchenweg OK, dann diesen Weg hier auch aufnehmen	? 14281,18682 14284,18786 14573,19281
@@ -175,6 +175,7 @@ Bremer Weg (Tiergarten): genaue Wegführung, Qualität (wassergebundene Strecke)?	
 Bremer Weg (Tiergarten): genaue Koordinaten, Qualität (Asphalt)?	? 8048,12135 8107,12145 8215,12156 8490,12192 8515,12242
 (Weg im Tiergarten von Großer Weg über Bellevuealle zum Bremer Weg/Große Querallee): genaue Wegführung, Qualität ist überwiegend gut (Asphalt)	? 7591,11639 7642,11717 7723,11717 7771,11804 7801,11875 7833,11994 7827,12105 7816,12150
 Alle Straßen hier (Wendenschloß) scheinen Kopfsteinpflaster (mäßiges bis schlechtes) zu haben. Für die GPS-Tracks bestätigt.	? 23126,2034 23506,2101 23670,1231 23326,1143
+Entwicklungsgebiet Haveleck: laut Thomas Biederbick sind alle Straßen fertig gestellt und gut befahrbar	? -1857,16747 -1457,16645 -1634,16255 -1916,16438
 Ortsumfahrung Seelow (B1/B167): möglicherweise eine Kraftfahrzeugstraße?	? 79625,16206 77831,16850 76687,16583 76012,16425 75300,15087 75350,14743 76343,14181 76475,13318 78194,11798
 #: by Robert vvv
 eher sandig, wellig	? 15490,24848 14472,25449 14131,25643
@@ -231,6 +232,14 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet? in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: Hans Rumprecht:
+Pulfrichzeile: Beton, Q0	? -5752,12006 -5826,12054
+#: by: anonymous
+Friedrich-Steinwachs-Weg (Teltow): Verbundsteinpflaster, Q1, RW6	? 2148,-962 2153,-940 2160,-805
+#: by: D (anonymous)
+Argoallee: guter Asphalt, Q0	? 26715,-6276 26962,-6074 27036,-6064
+#: by: anonymous
+Lönnrotweg: mäßiger Asphalt, Q1-, Fußgängerzone??? (wahrscheinlich verkehrsberuhigter Bereich?)	? -6916,5509 -6943,5484 -6981,5452 -7085,5359
 #: by: Tim Wöhrle:
 Starkenburger Str.: enge Straße q1, mäßiger Asphalt Q1-	? -575,4319 -441,4354 -380,4376 -324,4410 -277,4443 -287,4495
 #: by: Kurt Kratz:
@@ -507,8 +516,10 @@ Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsab
 Mauerweg am Griebnitzsee: Qualität - vermutlich Asphalt?	? -9656,-285 -9562,-325 -9454,-434 -9365,-610
 Mauerweg am Griebnitzsee: Qualität - vermutlich wassergebundene Decke?	? -8128,-1490 -8062,-1459 -7629,-1157 -7504,-1179
 Mauerweg in Schildow: Qualität? Wegführung? einzelne Straßen benennen?	? 7653,24412 7568,24527 6814,24593 6542,24466 6261,24462 6029,24562 5848,24609 5585,24606 5390,24604 5265,24642 5204,24496 5140,24338 4958,24418 4898,24351 4825,24328
-Mauerweg in Frohnau: Verlauf weitgehend unklar, Qualität?	? 3848,24546 3600,24490 3515,24668 3546,24859 3603,24968 3306,25259 3200,25429 3211,25484 3273,25516 3473,25618 3662,25618 3615,25890 3428,25979 3362,26046 3390,26225 3448,26315 3540,26465 3450,26503 3403,26668
-Mauerweg in Frohnau: laut "Berliner Umland" teilweise gut geeignet, teilweise witterungsabhängige Strecken	? 3403,26668 3081,27368 3706,27812 3512,28053 3078,28028 2162,28077 1979,28091 1871,28131 1741,27539
+Langohrzeile - Burgfrauenstr.: besteht eine Durchfahrt für Radfahrer? Qualität? Ist dieser Weg Teil des Mauerwegs in Frohnau?	? 3575,24498 3462,24702
+Langohrzeile: Qualität? Verläuft der Mauerweg hier entlang?	? 3462,24702 3490,24846 3490,24887
+Mauerweg in Frohnau: Verlauf weitgehend unklar, Qualität?	? 3490,24887 3603,24968 3306,25259 3200,25429 3211,25484 3273,25516 3473,25618 3662,25618 3615,25890 3428,25979 3362,26046 3390,26225 3448,26315 3540,26465 3450,26503 3403,26668
+Mauerweg in Frohnau: laut "Berliner Umland" teilweise gut geeignet, teilweise witterungsabhängige Strecken	? 3403,26668 3081,27368 3706,27812 3512,28053 3078,28028 2162,28077 1937,28118 1871,28131 1741,27539
 Rehbrücke - Langerwisch: Qualität? genaue Wegführung?	? -9626,-6603 -9541,-6955 -9753,-7192 -9953,-7604 -10067,-8165 -10302,-8515 -10364,-8839 -10726,-9726 -11737,-10275 -12382,-10517
 Blankensee - Stangenhagen: laut "Berliner Umland" witterungsabhängige Strecke	? -6860,-20736 -7519,-21034 -8005,-21334 -9578,-21920 -9710,-22155
 Stangenhagen - Hennickendorf: Qualität? genaue Wegführung?	? -9710,-22155 -9815,-22769 -9453,-23518 -9291,-23955 -9853,-25278 -9403,-26688 -9375,-27159
@@ -596,7 +607,8 @@ Zichow-Lindenwegsiedlung: Qualität? Am westlichen Ende als "Lindenweg" ausgeschi
 Prötzeler Ring und Trappenfelder Pfad: Qualität laut ADFC-Karte gut	? 21951,15918 22134,15615 22073,15172
 Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23279,14785 23379,14514
-Beilsteiner Str.: Qualität (laut ADFC-Karte im südlichen Abschnitt gut geeignet; zumindest in Höhe Allee der Kosmonauten asphaltiert); ist die Straße eine Einbahnstraße, in welcher Rictung offen?	? 18749,12413 18832,13099 18852,13269 18875,13473 18859,14048 18998,14089 19025,14037
+#: note: Die Beilsteiner ist eine Einbahnstraße in diesem Abschnitt: 18852,13269 18832,13099 18749,12413 (Merler - Marzahner, offen Richtung Marzahner)
+Beilsteiner Str.: Qualität (laut ADFC-Karte im südlichen Abschnitt gut geeignet; zumindest in Höhe Allee der Kosmonauten asphaltiert)	? 18749,12413 18832,13099 18852,13269 18875,13473 18859,14048 18998,14089 19025,14037
 Bleicheroder Str. - Pasewalker Str.: existiert eine Verbindung für Radfahrer entlang der Tram-Trasse?	? 11805,19071 11937,19175
 Birkenallee (Pankow): Qualität?	? 9718,20498 9655,20703
 #: XXX: ein anonymer Eintrag: eng schlechter straßenbelag, Q2
@@ -734,7 +746,7 @@ Neeberg - Krummin: Qualität?	? 35047,182022 36973,183302
 Wolgast - Ziemitz: Qualität?	? 33315,183598 32822,181806 32653,180114
 Neeberg - Sauzin: Qualität?	? 35047,182022 34133,181849 33287,181934 32822,181806
 Liepe - Grüssow: Qualität?	? 43381,174089 44780,175658
-Bruno-Walter-Str.: Qualität?	? 5516,2873 5614,2822 5774,3007 5853,3050
+Bruno-Walter-Str.: Qualität?	? 5510,2883 5614,2822 5774,3007 5853,3050
 Stolpe - Usedom: Qualität des Radweges? In Stolpe wahrscheinlich Asphalt/Verbundsteinpflaster, westlich von Stolpe wahrscheinlich Asphalt? Genaue Koordinaten?	? 47621,163737 46987,163775 43164,164582
 Bansin, Fischerweg: geht es weiter zur Bergstr.?	? 56934,175371 57000,175587
 Friedrich-Wilhelm-Str.: Einbahnstraße nur für Autofahrer oder auch für Radfahrer?	? 8385,5907 8282,5909
@@ -745,7 +757,6 @@ Melzow - Meichow: Qualität (zumindest am westlichen Ende asphaltiert)?	? 43567,8
 Niklasstr. zwischen Lindenthaler Allee und Potsdamer Chaussee: Qualität?	? -1269,2892 -1070,2924 -928,2900 -791,2819 -740,2771
 #: XXX unklarer Eintrag von Jörg Nickisch, Rückfrage nicht möglich:
 Dachsteinweg: verkehrsberuhigt?	? 10481,2549 10446,2373 10493,2318
-Kiepertplatz: Qualität?	? 8528,1846 8606,1875
 #: XXX Martin Barghoorn hat KS angegeben, aber gleichzeitig "nur Fußweg" eingetragen
 Lückhoffstr.: Qualität (Kopfsteinpflaster?)?	? -2847,2893 -3022,2696 -3162,2564 -3190,2467 -3211,2405
 Nauener Str. zur Altonaer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? -4759,13992 -4776,13869
@@ -788,7 +799,7 @@ Gutengermendorf - Häsen: Qualität? am Bahnübergang anscheinend Feldweg (Q2)	? -6
 Seilershof - B96: Qualität? am Bahnübergang anscheinend asphaltiert	? -7455,74445 -6794,74226 -6517,74079 -6100,73876 -6037,73865
 Heylstr: Qualität?	? 6465,8326 6548,8335
 #: XXX Eintrag von Gabriel (glaeser) existiert, aber ist tatsächlich diese Mühlenstr. gemeint?
-Mühlenstr. (Blankenburg): Asphalt, Radweg?	? 14389,20254 14460,20406 14589,20988
+Mühlenstr. (Blankenburg): Asphalt, Radweg?	? 14389,20254 14460,20406 14499,20649 14589,20988
 Paradestr.: Gibt es hier eine Abkürzung über den Adolf-Scheidt-Platz?	? 8770,8018 8724,8021
 Beelitz - Schönefeld: laut "Berliner Umland" wurde die Straße etwas nach Süden verlegt	? -18265,-20481 -18031,-20502 -17867,-20681
 Thyrow - Kerzendorf (ehem. B101): laut "Berliner Umland" am Bahnübergang unterbrochen, B101n stattdessen benutzen! 	? 1090,-16407 1773,-15712 1856,-15356
@@ -837,7 +848,6 @@ Hangelsberg - A10: Qualität, für Radfahrer überhaupt benutzbar?	? 37527,-1102 37
 Gosener Str. (Eichwalde): Qualität?	? 26186,-2832 26102,-2822 25580,-2673
 Bahnhofstr. (Eichwalde): Qualität?	? 26102,-2822 25153,-3423
 August-Bebel-Allee (Eichwalde): Qualität?	? 24987,-3015 25153,-3423 25372,-4019
-(Mörchinger Str. - Berliner Str.): Qualität, Abbiegesituation an Berliner Str.? 	? 1360,3253 1334,3305
 Ist hier noch das DRK-Krankenhaus? Name?	? 1053,3142
 (Hüttenweg - Jagdschloß Grunewald): Wegführung, Qualität (fester Waldweg)?	? 869,6085 866,6328 880,6645
 (Waldweg Grunewald): Wegführung, Qualität (fester Waldweg)?	? 1512,6553 1364,6691
@@ -1342,7 +1352,7 @@ Grüne Trift - Lindenberger Str.: Qualität? Straßennamen?	? 19579,18933 19381,190
 Str. 10, entlang des Hechtgrabens: Qualität?	? 18121,19390 18025,19433 17838,19501 17679,19532 17015,19287 16768,19191 16736,19193
 Hagenower Ring - Am Luchgraben: Qualität?	? 17009,19104 17021,19258 17015,19287 17015,19587 17079,20716 17100,20848 17274,20851
 #: XXX: unklarer Eintrag von anonymous "mäßig"
-Herbert-Baum-Str.: Qualität? Kann die Berliner Str. in Höhe Herbert-Baum-Str. überquert werden?	? 13821,16035 13869,15912 13904,15818 13943,15717 13964,15656 13980,15607
+Herbert-Baum-Str.: Qualität? Kann die Berliner Str. in Höhe Herbert-Baum-Str. überquert werden?	? 13826,16026 13869,15912 13904,15818 13943,15717 13964,15656 13980,15607
 Flaeming-Skate, RK3: genaue Wegführung, Qualität (wahrscheinlich asphaltierte Radwege)	? -11258,-44256 -11846,-43656 -12023,-43430 -11968,-42909 -11928,-42617 -10865,-42209 -10612,-42017 -10274,-42032 -10021,-42071 -10009,-42157 -9811,-42202 -9622,-42397 -9088,-42717 -8988,-42742 -9082,-43110 -9037,-43211 -8936,-43318
 Flaeming-Skate, RK2: genaue Wegführung, Qualität (wahrscheinlich asphaltierte Radwege)	? -5082,-38726 -5149,-38403 -4942,-37087 -4768,-36337 -3794,-36334
 Löpten - Halbe (West): Qualität?	? 30295,-28418 29920,-28522 29923,-28702 30082,-29064 30094,-29360 29798,-30045 29704,-30237 29881,-30578 29850,-30776 30079,-31267 30024,-31526 30201,-31788 29936,-32373
@@ -1359,7 +1369,6 @@ Asbestweg: Qualität?	? 11207,1737 11309,1718 11362,1723
 Barkhausenstr.: Qualität?	? -10530,16281 -10744,16241
 Barkhausenstr.: Qualität?	? -10853,16230 -10970,16232 -11130,16245 -11296,16308 -11549,16413 -11783,16506
 K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen: Qualität (bis Ende 2005 bei der LBVS als "schlechte Straße" gekennzeichnet)	? -50149,24689 -50048,24475 -49883,24097 -50010,23562 -50201,23411 -50255,22794 -50938,21256
-Manetstr.: Qualität?	? 16412,15559 15753,15845
 Bergholz - Grimme: Qualität?	? 60460,115792 59564,114268 58985,114226
 Grimme - Brüssow: Qualität?	? 58985,114226 58692,114171 58644,113939 58570,113866 58577,113531 58619,113397 58625,113293 58595,113171 58522,113056 58497,112964 58461,112854 58272,112531 58199,112288 57900,111758 57821,111672
 Radweg Lychen - Himmelpfort: Qualität? (Am Anfang bei Lychen noch asphaltiert)	? 234,89271 213,89085 188,88982 -12,88820 -1764,87733 -2306,87318 -3001,86675 -3236,86304
@@ -1468,10 +1477,6 @@ Niederschlemaer Weg: Qualität?	? 18447,1727 18444,1782 18425,1831
 Brusebergstr.: Qualität? (Kopfsteinpflaster bis Lübener Weg, danach betoniert oder asphaltiert?) Gibt es Radwege für Radfahrer?	? 6383,18033 6307,18039 6145,18016 6115,18042 6086,18162 6045,18305 6060,18534
 Lorenzstr./Parallelstr.: Ampel?	? 5720,2081
 Parallelstr.: endet die Parallelstr. am südwestlichen oder am nordöstlichen Teil der Luisenstr.?	? 5807,2117 5825,2125
-#: XXX laut Luftbild von 2006 noch Bauarbeiten
-Glindowseestr.: zwischen Ruppiner-See-Str. und Am Havelgarten bereits fertiggestellt?	? -1553,16695 -1443,16676
-#: XXX anonymer Eintrag (Asphalt Q1, viele Fußgänger), Luftbild widerspricht teilweise
-Straße 339: Qualität der Straße (teilweise unbefestigter Weg, teilweise Asphalt?)	? -8450,15702 -8479,15609 -8558,15306 -8613,15083
 #: XXX unklarer anonymer Eintrag:
 Perwenitzer Weg: Qualität der Straße? Existiert hier ein Radweg? Ist es möglich, auf den Askanierring zu gelangen?	? -3708,15831 -3829,15868 -3924,15915
 #: XXX unklarer anonymer Eintrag (gutes Kopfsteinpflaster), Teile der Straße sehen tatsächlich nach Kopfsteinpflaster aus, Teile sind anscheinend asphaltiert oder unbefestigt; Netzanbindung fehlt
@@ -1484,3 +1489,10 @@ Hildegard-Marcusson-Straße/Haupstr.: Ampel in Bau	? 16004,10204
 Eupener Str.: Qualität nördlich des Uhlenwegs?	? 16384,26726 16432,26829
 Am Nordgraben: Qualität des Weges?	? 3604,20603 3857,20412 3942,20367 3999,20367 4026,20356 4052,20321 4088,20301 4187,20258 4335,20210 4418,20185 4808,20159
 Brücke über den Nordgraben, Höhe Kolonie Frühauf: für Radfahrer passierbar?	? 4088,20301 4076,20268
+Breitenbachstr. - Soltauer Str.: besteht eine Verbindung für Radfahrer entlang der S-Bahn? Qualität?	? 3909,19002 3756,19003 3749,19031
+Schillerstr. (Lichterfelde): Qualität?	? 4429,2396 4568,2424 4721,2449 4868,2370 5033,2279
+#: XXX: unklarer Eintrag von micha hoffmann (Fußgängerzone?)
+Manetstr.: ist die Straße verkehrsberuhigt?	? 16412,15559 15753,15845
+Ulmenstr.: Qualität?	? 3996,23012 3762,23362
+Waldseeweg: Qualität?	? 3762,23362 3621,23548 3587,23584
+Schloßstr. (Hermsdorf): Qualität?	? 4058,23342 3953,23401 3632,23563 3587,23584 3563,23609 3471,23750

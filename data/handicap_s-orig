@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.149 2007/07/17 21:28:56 eserte Exp eserte $
+#: version: $Id: handicap_s-orig,v 4.150 2007/07/28 16:24:10 eserte Exp eserte $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # XXX hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -371,7 +371,8 @@ Bennigsenstr.: enge Straße	q1 5807,7771 5957,7765 6225,7776
 Perelsplatz: Fußgänger, Park	q2 5809,7712 5636,7709
 Gustav-Rickelt-Weg: eng, Fußgänger	q2 4226,6712 4223,6796 4206,6820
 Unterführung unter der Stromstr.: Fußgänger, eng	q2 6218,12975 6180,12962 6121,12955
-Wustermarker Str.: Fußgänger	q2 -4750,14393 -4678,14382
+#: by: Mirko Grammel (Bordsteine):
+Wustermarker Str.: Fußgänger, Bordsteine	q2 -4750,14393 -4678,14382
 Firlstr.: zwei Bodenschwellen	q1 18574,6401 18623,6523
 Waldesruher Str.: parkende Autos	q1; 24910,7896 24923,7903 25047,8086
 ######################### User Contributions #################################
@@ -488,7 +489,7 @@ Am Schloßpark: eng bei Autoverkehr	q1 10775,19054 10712,18975 10625,18831 10496,
 #: XXX von wen?
 (Karl-Bonhoeffer-Nervenklinik zwischen Hermann-Piper-Str. und U-Bahnhof): Krankenhausgelände	q1 5001,19832 5079,19635 5124,19634 5228,19320 5246,19244 5429,19165
 #: by: Daniel (dan.berlin):
-Poschingerstr.: enge Straße	q1 5697,6276 5754,6238 5824,6240 5875,6262 5925,6311 5971,6343 6106,6361 6261,6391
+Poschingerstr.: enge Straße	q1 5697,6276 5754,6238 5824,6240 5875,6262 5925,6311 5971,6343 6095,6358 6261,6391
 #: by: Manfred Köhnen:
 Höltermannsteig: Fußgänger	q2 13974,2728 13936,2795 13935,2908 13941,3219 13965,3222 13997,3290
 #: by: Regine Bast:
@@ -609,7 +610,7 @@ Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3326,16553
 #: by: Sini Bodemer:
 Retzdorffpromenade: Fußgänger	q2 4893,6812 4993,6812
 #: by: Michael Meixner:
-Lothar-Bucher-Str.: enge Straße	q1 5598,6136 5748,6051 5845,6049 6024,6080
+Lothar-Bucher-Str.: enge Straße	q1 5598,6136 5748,6051 5845,6049 6008,6067
 #: by: Julie:
 #: XXX hier hat sie "Schrittgeschwindigkeit" angegeben?!
 Albestr.: enge Straße	q1 5422,7461 5448,7436 5640,7435 5811,7433
@@ -981,3 +982,13 @@ Hobeckweg: enge Straße	q1 27190,13327 27414,13508 27530,13627 27556,13641
 Rosenorter Steig: enge Straße	q1 -1349,23497 -1451,23525 -1535,23575 -1617,23624 -1700,23671
 #: by: Alfred Zudse:
 Straße 40 (Blankenburg): enge Straße	q1 14893,20583 14945,20748 15035,21026
+#: by: Andreas Vildman:
+(Mörchinger Str. - Berliner Str.): Fußgänger	q2 1360,3253 1358,3257 1334,3305
+#: by: Liana (lumielle):
+Sanddornstr.: enge Straße	q1 19184,4888 19199,4954 19191,5075 19173,5139
+#: by: Catherina Haags:
+Biesentaler Str.: Bodenschwellen	q1 9024,16855 9245,16758
+#: by: anonymous
+Chamissostr. (Französisch Buchholz): enge Straße	q1 12513,21857 12433,21880 12332,21910 12216,21945 12063,21991
+#: by: misersky:
+Tassostr.: enge Straße	q1 13630,15956 13621,15990 13625,16054 13642,16118 13659,16151 13645,16192 13679,16286

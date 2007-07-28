@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.63 2007/07/24 20:08:32 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.64 2007/07/28 11:02:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -705,7 +705,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.63 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.64 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1643,19 +1643,22 @@ sub choose_form {
     if ($bi->{'text_browser'} && !$bi->{'mobile_device'}) {
 	push @extra_headers, -up => $BBBike::HOMEPAGE;
     }
+
     my $onloadscript = "";
     if ($nice_berlinmap || $nice_abcmap) {
 	$onloadscript .= "init_hi(); window.onResize = init_hi; "
     }
+    $onloadscript .= "focus_first(); ";
     if ($nice_berlinmap || $nice_abcmap) {
 	push @extra_headers, -onLoad => $onloadscript,
-	     -script => [{-src => $bbbike_html . "/bbbike_start.js?v=1.11"},
+	     -script => [{-src => $bbbike_html . "/bbbike_start.js?v=1.14"},
 			 ($nice_berlinmap
 			  ? {-code => qq{set_bbbike_images_dir('$bbbike_images')}}
 			  : ()
 			 ),
 			],
     }
+
     my $show_introduction;
     {
 	local $^W = 0;
@@ -2150,7 +2153,7 @@ EOF
 	}
 	my $alt = ($s->[0]||"") . "(" . ($s->[1]||"") . ")";
 	print <<EOF;
-<div id="$divid" style="position:absolute; visibility:show;">$a_start<img id="$matchimgid" src="$bbbike_images/bluedot.png" border=0 width=8 height=8 alt="$alt">$a_end</div>
+<div id="$divid" style="position:absolute; visibility:visible;">$a_start<img id="$matchimgid" src="$bbbike_images/bluedot.png" border=0 width=8 height=8 alt="$alt">$a_end</div>
 EOF
 	$js .= "pos_rel(\"$divid\", \"${type}mapbelow\", $tx, $ty);\nvis(\"$divid\", \"show\");\n";
     }
@@ -6450,7 +6453,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/07/24 20:08:32 $';
+    my $cgi_date = '$Date: 2007/07/28 11:02:56 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
