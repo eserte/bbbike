@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.150 2007/07/28 16:24:10 eserte Exp eserte $
+#: version: $Id: handicap_s-orig,v 4.151 2007/07/29 19:34:56 eserte Exp eserte $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # XXX hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -719,7 +719,7 @@ Käuzchensteig: Fußgänger, Bordsteine	q1 1930,6432 1909,6441
 Margarete-Steffin-Str.: Fußgänger, Restaurantterrasse (vor allem abends)	q3 8700,12810 8730,12804
 (Luisenstr. - Hufelandweg): Fußgänger	q3 8665,13353 8582,13355
 Helga-Hahnemann-Str.: Fußgänger, schmal	q2 9415,13315 9395,13160
-An der Karolinenhöhe: Fußgänger, spielende Kinder	q3 -5888,11712 -5832,11770 -5873,11800 -5813,11875
+An der Karolinenhöhe: Fußgänger, spielende Kinder	q3 -5900,11726 -5848,11779 -5892,11820 -5847,11876
 Obstallee: Bodenschwellen, Fußgänger, spielende Kinder	q3 -5421,12450 -5896,12607
 Leubnitzweg: Fußgänger (Wohngebiet), Bordsteine	q3 -5385,12540 -5421,12450
 Enger Steig: Fußgänger, Bordsteine	q1 -4263,11582 -4294,11673
@@ -992,3 +992,5 @@ Biesentaler Str.: Bodenschwellen	q1 9024,16855 9245,16758
 Chamissostr. (Französisch Buchholz): enge Straße	q1 12513,21857 12433,21880 12332,21910 12216,21945 12063,21991
 #: by: misersky:
 Tassostr.: enge Straße	q1 13630,15956 13621,15990 13625,16054 13642,16118 13659,16151 13645,16192 13679,16286
+#: by: Nicole Weber:
+An der Wildbahn: viele parkende Autos in enger Straße	q1 -1581,22553 -1333,22495 -1267,22480 -1221,22468 -996,22416 -926,22399 -725,22355 -489,22295 -313,22233

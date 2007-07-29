@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.6 2007/07/28 21:05:20 eserte Exp eserte $
+# $Id: Makefile,v 1.7 2007/07/28 22:22:11 eserte Exp $
 #
 
 BBBIKEVER!=		perl -I../.. -MBBBikeVar -e 'print $$BBBike::WINDOWS_VERSION'
@@ -17,9 +17,18 @@ show-instructions:
 	    echo "    make BBBIKEVER=$(BBBIKEDEVELVER)"; \
 	    echo; \
 	fi
+	@echo "Note that an existing distribution directory from"
+	@echo "a previous run of this Makefile is not removed or"
+	@echo "remade. To do so, use"
+	@echo
+	@echo "    make BBBIKEVER=$(BBBIKEVER) BBBIKEDEVELVER=$(BBBIKEDEVELVER) winbindist-clean"
+	@echo
 
 make-BBBikeVar.tpl:
 	cd ../.. && $(MAKE) BBBikeVar.tpl
+
+winbindist-clean:
+	-cd ../.. && $(MAKE) winbindist-clean
 
 make-winbindist:
 	-cd ../.. && $(MAKE) winbindist-copy

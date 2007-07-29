@@ -1518,29 +1518,35 @@ Unter Win98 scheint ein Minimumdefault von 10px besser zu sein als
 
 =item * (M2)
 
-String::Similarity und ggfs. String::Approx in die winbindist aufnehmen
-für die approximative Volltextsuche. Diesen Testcase auch in doc/tests.pod aufnehmen!
+String::Similarity und ggfs. String::Approx in die winbindist
+aufnehmen für die approximative Volltextsuche. Leider sind das beides
+nicht pure-perl-Module. Diesen Testcase auch in doc/tests.pod
+aufnehmen!
 
-=item * (#M5)
+=item * (H1)
 
-Prüfen, ob das Problem des Handlungsreisenden mit der winbindist
-funktioniert. Nein -> die -except-Option (von meinem IncBusy?) ist nicht
-implementiert (anscheinend für die Nicht-Tk::InputO-Variante von IncBusy).
--except wird wahrscheinlich für das kleine Abbruch-Toplevel benötigt. 
+Die -except-Option von IncBusy sollte auch für die
+Nicht-Tk::InputO-Variante implementiert werden.
 
-Auch: in doc/tests.pod aufnehmen!
+=item * (M1)
 
-=item * (#E5)
+make-target für das Kopieren einer kompletten win-distro auf usb-stick
+schreiben.
 
-Tie::File in die Windows-(SiePerl)-Distribution reinnehmen. Dann kann
-ich Sachen wie F8 propagieren und DB_File/RECNO langsam auslaufen
-lassen. -> DONE, check missing! -> neue win-distro zum testen
-auf usb-stick kopieren! -> make-target dafür schreiben
+=item * (M4)
 
-=item * (#M5)
+HINWEIS zum Update von Modulen in der sieperl-Distribution (dieses
+sollte zu einem Skript oder so werden?):
 
-Neueste Tk::Pod-Version in die Distribution aufnehmen, ansonsten
-können anscheinend die Pod-Seiten nicht angezeigt werden.
+Am besten, ich update neue Module in ein shadow-Verzeichnis
+sieperl-5.6.1-bbbike-$(BBBIKEVER) und lasse winbindistcopy dieses
+Verzeichnis zusätzlich kopieren. Bei einer neuen Version würde ich
+typischerweise die alte rüberkopieren und vielleicht Updates machen.
+
+Ich muss noch rausfinden, wie ich pure-perl-Module in dieses
+Verzeichnis installieren lasse. -> So:
+
+    umask 022; setenv PATCHBINPERLROOT /home/e/eserte/src/binperl/sieperl-5.6.1-bbbike-3.16-DEVEL; perl Makefile.PL INSTALLSITEARCH=$PATCHBINPERLROOT/site/5.6.1/lib INSTALLSITELIB=$PATCHBINPERLROOT/site/5.6.1/lib INSTALLSITEBIN=$PATCHBINPERLROOT/5.6.1/bin INSTALLSITESCRIPT=$PATCHBINPERLROOT/5.6.1/bin INSTALLSITEMAN1DIR=/tmp/IGNORE_man/man1 INSTALLSITEMAN3DIR=/tmp/IGNORE_man/man3
 
 =item * (M1)
 

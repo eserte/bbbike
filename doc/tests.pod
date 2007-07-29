@@ -573,6 +573,42 @@ Wieder F<test> speichern.
 
 B<NOTE>: Unterscheidet sich diese Datei von der alten überhaupt?
 
+=head3 Das Menü Plugins > Alle Plugins anzeigen auswählen
+
+Es sollten ungefähr fünf Plugins in der Liste erscheinen (exakte Zahl
+ist nicht wichtig).
+
+=head3 Das Plugin E<quot>BBBikeSalesmanE<quot> durch Anklicken der
+Checkbox laden und auf E<quot>SchließenE<quot> klicken
+
+In der Toolbar sollte jetzt das Handlungsreisenden-Symbol erscheinen.
+
+=head3 Das Handlungsreisenden-Symbol anklicken.
+
+Es erscheint ein Fenster, auf dem sich die Anzahl der Stationen (am
+Anfang: 0) und ein E<quot>BerechnenE<quot>-Button befinden.
+
+=head3 Bis zu acht, evtl. neun Stationen auf der BBBike-Karte mit
+Mausklicks auswählen.
+
+Für jede Station wird eine Fahne gesetzt; außerdem erhöht sich die
+Anzahl der Stationen im Handlungsreisenden-Fenster.
+
+=head3 Auf E<quot>BerechnenE<quot> klicken
+
+Unten bewegt sich der Progressbar. Aus dem
+E<quot>BerechnenE<quot>-Button wird ein
+E<quot>AbbrechenE<quot>-Button. Nach einigen Sekunden sollte eine
+plausible Handlungsreisenden-Route erscheinen.
+
+=head3 Die Prozedur wiederholen, aber diesmal auf
+E<quot>AbbrechenE<quot> drücken.
+
+Die Berechnung sollte abgebrochen werden. Gegebenfalls wird die beste
+bislang gefundene Route eingezeichnet. B<KNOWN ISSUE>: unter Umständen
+wird der Progressbar nicht zurückgesetzt, außerdem können
+Fehlermeldungen erscheinen.
+
 =head1 AUTOR
 
 Slaven Rezic <srezic@cpan.org>

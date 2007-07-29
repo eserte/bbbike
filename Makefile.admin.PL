@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.63 2007/06/14 22:20:07 eserte Exp eserte $
+# $Id: Makefile.admin.PL,v 1.64 2007/07/28 23:03:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -519,6 +519,8 @@ fbsdport-pkg-plist-check: fbsdport
 WINBINDISTDIR=$(TMPDIR)/BBBike-$(VERSION)-Windows
 # XXX use another bbbike.bat/setup.bat if activeperl-613 would be used...
 WINPERLBIN=$(HOME)/src/binperl/sieperl-5.6.1
+# XXX the bbbike version should not be hardcoded here!!!
+PATCHBINPERLROOT=$(HOME)/src/binperl/sieperl-5.6.1-bbbike-3.16-DEVEL
 WINBINDIST=$(WINBINDISTDIR).zip
 
 winbindist-pre:	winbindist-clean winbindist-copy
@@ -532,6 +534,7 @@ winbindist-copy:
 	umask 022; mkdir $(WINBINDISTDIR)
 	umask 022; cp -Rp $(WINPERLBIN) $(WINBINDISTDIR)
 	mv $(WINBINDISTDIR)/`basename $(WINPERLBIN)` $(WINBINDISTDIR)/windows
+	umask 022; cp -Rpf $(PATCHBINPERLROOT)/* $(WINBINDISTDIR)/windows
 	umask 022; if [ -r distfiles/BBBike-$(VERSION).tar.gz ] ; then \
 	    cat distfiles/BBBike-$(VERSION).tar.gz | (cd $(WINBINDISTDIR) && tar xfvz - ); \
 	elif [ -r BBBike-$(VERSION).tar.gz ]; then \

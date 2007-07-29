@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.119 2007/05/03 22:34:49 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.120 2007/07/28 22:46:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -1920,8 +1920,14 @@ sub create {
     $o->str_file(\%main::str_file);
     $o->p_file(\%main::p_file);
     $o->coord_system($main::coord_system_obj);
-    BBBikeEditUtil::base();
-    $o->file2base(\%BBBikeEditUtil::file2base);
+    eval {
+	BBBikeEditUtil::base();
+	$o->file2base(\%BBBikeEditUtil::file2base);
+    };
+    if ($@) {
+	# BASE is not really used these days, so just warn... 
+	warn $@;
+    }
     $o;
 }
 
@@ -2061,7 +2067,8 @@ sub click {
 	    main::status_message(Mfmt("Die Datei %s kann mit DB_File nicht geöffnet werden: %s", $file, $!), "die");
 	}
     } elsif (eval { require Tie::File; 1 }) {
-	if (!tie @rec, "Tie::File", $file, mode => ($readonly ? O_RDONLY : O_RDWR)) {
+	# note that record separator is probably always Unix-styled
+	if (!tie @rec, "Tie::File", $file, mode => ($readonly ? O_RDONLY : O_RDWR), recsep => "\n") {
 	    main::status_message(Mfmt("Die Datei %s kann mit Tie::File nicht geöffnet werden: %s", $file, $!), "die");
 	}
     } else {
@@ -2200,7 +2207,7 @@ use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n"
 	    }
 	    $rec_count++;
 	}
-	die "Can't find line " . $click_info->line . " in file";
+	die "Can't find line <" . $click_info->line . "> in file <$file> which contains <$rec_count> lines and <$count> non-comment lines";
     }
 
     my $modtime_file = (stat($file))[9];

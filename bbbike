@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.320 2007/07/28 20:59:00 eserte Exp $
+# $Id: bbbike,v 3.322 2007/07/29 19:28:21 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -210,7 +210,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.320 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.322 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -5176,6 +5176,7 @@ sub define_item_attribs {
 	 'Mine' => 'white',	# Tagebau, Bergbau
 	 'F'  => 'grey99',	# sonstige Flächen
 	 'SW' => 'red',		# Sehenswürdigkeit
+	 'Shop' => 'red',	# Einkaufszentrum, Markthalle
 	 'Q'  => 'grey99',	# Fähre
 	 'I'  => 'grey85',	# Inseln (wird später überschrieben)
 	 'Z'  => 'black',	# PLZ-Grenzen
@@ -18281,8 +18282,16 @@ sub IncBusy {
 		$t->{'BusyIO'} = $io;
 	    }
 	} else {
-	    # see changes in TkChange.pm
-	    $top->Busy(-recurse => 1, %args);
+	    # see "Busy" changes in TkChange.pm
+	    my $except = delete $args{-except};
+	    if ($except) {
+		# In this case we must not use the -recurse option, as
+		# usually using -except means that there's a "cancel" window
+		# which has to be accessible all the time
+		$top->Busy(%args);
+	    } else {
+		$top->Busy(-recurse => 1, %args);
+	    }
 	}
     }
     $top->{'BusyCount'}++;
@@ -19599,7 +19608,7 @@ sub balloon_info_from_all_tags {
     my %balloon_info_seen;
     my $major_item_seen = 0;
     my $comments_rx = join("|", map { "comm-" . quotemeta }
-			   grep { $_ ne "kfzverkehr" } # list types without meaningful "name" field
+			   grep { $_ ne "kfzverkehr" } # list types without meaningful "name" field XXX but maybe comm-kfzverkehr should have meaningful names some day...
 			   @Strassen::Dataset::comments_types);
     for my $item (@items) {
 	my(@tags) = $c->gettags($item);

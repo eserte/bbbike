@@ -4082,7 +4082,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002605',
        data  => <<EOF,
-userdel	q4; 15392,12135 15349,12073
+userdel	q4; 15349,12073
 EOF
      },
      { from  => undef, # 
@@ -5552,7 +5552,7 @@ EOF
        text  => 'Vom 26. August 2006, 13 Uhr bis zum 28. August 2006, 4 Uhr ist der Verkehr in der Möllendorffstraße im Abschnitt zwischen der Straße Am Containerbahnhof und der Frankfurter Allee gesperrt.',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 15392,12135 15349,12073
+userdel	q4::inwork; 15349,12073
 EOF
      },
      { from  => 1154815200, # 2006-08-06 00:00

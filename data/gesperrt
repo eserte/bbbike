@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.168 2007/07/17 21:28:54 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.169 2007/07/29 19:34:53 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -375,6 +375,7 @@ Gartenstr. (Köpenick)	1 22418,4452 22362,4331 22302,4255 22273,4216
 Spitzerstr.	1 22319,4197 22358,4282 22425,4370 22449,4435
 Zitadellenweg/BMW-Betriebswerk	2 -1971,14610 -1768,14605 -1616,14527
 Tassostr.	1 13679,16286 13645,16192 13659,16151 13642,16118 13625,16054 13621,15990 13630,15956
+Heimat	1 1032,1325 994,1485 968,1479 941,1603
 Weinbergstr.	1 -13519,-625 -13733,-722 -13815,-749
 Weinbergstr.	1 -13519,-625 -13257,-512
 Am Kanal	1 -12839,-1342 -12718,-1327
@@ -788,7 +789,6 @@ Mühlendamm -> Rolandufer: unbequemes Passieren des Mittelstreifens	3 10567,12135
 Kurfürstendamm -> Meinekestr.: unbequemes Passieren des Mittelstreifens (Bordsteine)	3 5484,10810 5351,10760 5329,10422
 Meinekestr. -> Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3 5329,10422 5351,10760 5229,10716
 Deutschmeisterstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3 15350,12270 15437,12225 15475,12307
-Möllendorffstr. -> Deutschmeisterstr.: Mittelstreifen mit Straßenbahn	3 15415,12179 15437,12225 15350,12270
 Rathausstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3 15531,12300 15475,12307 15437,12225
 Möllendorffstr. -> Rathausstr.: Mittelstreifen mit Straßenbahn	3 15502,12367 15475,12307 15531,12300
 Müllerstr. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3 6957,15869 6914,15908 6809,15798
