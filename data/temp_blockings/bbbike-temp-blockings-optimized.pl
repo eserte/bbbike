@@ -173,15 +173,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1185832800,
-         'text' => 'L 016 Paaren-Börnicke OD Grünefeld Kanal- und Straßenbau Vollsperrung 04.12.2006-30.07.2007 ',
-         'from' => 1165100400,
-         'id' => 805,
-         'data' => 'userdel	q4::inwork -19282,29433 -19608,29389 -19798,29399
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -346,8 +338,8 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        {
          'source_id' => 'IM_005060',
-         'until' => 1188597600,
-         'text' => 'Berliner Allee (Weißensee) in Richtung stadteinwärts, in Höhe Rennbahnstr. Baustelle, Fahrtrichtung gesperrt (bis Sommer 2007)',
+         'until' => 1191189600,
+         'text' => 'Berliner Allee (Weißensee) in Richtung stadteinwärts, in Höhe Rennbahnstr. Baustelle, Fahrtrichtung gesperrt (bis Ende September 2007)',
          'from' => undef,
          'id' => 893,
          'data' => 'userdel	1::inwork 14535,17003 14559,16912
@@ -811,16 +803,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_004242',
-         'until' => 1188597599,
-         'text' => 'Pankower Allee (Reinickendorf) in Richtung Markstr., zwischen Reginhardstr. und Residenzstr. Baustelle, Fahrtrichtung gesperrt (bis 08.2007)',
-         'from' => 1183412580,
-         'id' => 1056,
-         'data' => 'userdel	1::inwork 8211,17585 8095,17574 7998,17564 7841,17551 7675,17538 7587,17532
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1188079200,
@@ -831,24 +814,8 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1185919200,
-         'text' => 'L 063 Berliner Str., Finsterwalder Str. Bahnübergang in der OD Lauchhammer Gleiserneuerung Vollsperrung 18.07.2007-31.07.2007 ',
-         'from' => 1184623200,
-         'id' => 1059,
-         'data' => 'userdel	2::inwork 35482,-103562 35379,-103141 35072,-102150
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1185746400,
-         'text' => 'L 075 Knoten mit B 96a bei Waßmannsdorf Umbau Knotenpunkt Vollsperrung 11.07.2007-29.07.2007 ',
-         'from' => 1184018400,
-         'id' => 1060,
-         'data' => 'userdel	2::inwork 14993,-4196 15053,-4328
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20070703.1505.81257.html',
@@ -1032,6 +999,74 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'from' => 1185660000,
          'id' => 1090,
          'data' => 'userdel	2::inwork 29812,57628 29056,57503
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006194',
+         'until' => 1189893599,
+         'text' => 'Blankenfelder Str. (Niederschönhausen) stadteinwärts zwischen Kastanienallee bis Schillerstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 09.2007)',
+         'from' => 1185833762,
+         'id' => 1091,
+         'data' => 'userdel	1::inwork 10138,20840 10119,20731 10063,20493
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005823',
+         'until' => 1188597599,
+         'text' => 'Drakestr. (Lichterfelde) in beiden Richtungen, zwischen Curtiusstr. und Unter den Eichen Fahrbahnunterspülung, Straße vollständig gesperrt (bis Ende 08.2007)',
+         'from' => 1185833817,
+         'id' => 1092,
+         'data' => 'userdel	2::inwork 3048,4305 3128,4190 3259,4002
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006195',
+         'until' => 1186178400,
+         'text' => 'Grünbergallee (Bohnsdorf) in beiden Richtungen zwischen Am Seegraben und Rosenweg Baustelle, Straße vollständig gesperrt, Zufahrt zum Baumarkt von Bohnsdorf kommend frei (bis 03.08.2007)',
+         'from' => 1185833871,
+         'id' => 1093,
+         'data' => 'userdel	2::inwork 20362,-511 20354,-569 20205,-548
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006190',
+         'until' => 1188597599,
+         'text' => 'Joachimstaler Str. (Charlottenburg) Richtung Kantstr. zwischen Lietzenburger Str. und Kurfürstendamm Baustelle Fahrtrichtung gesperrt (bis Ende 08.2007)',
+         'from' => 1185833906,
+         'id' => 1094,
+         'data' => 'userdel	1::inwork 5468,10442 5479,10719 5484,10810
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006189',
+         'until' => 1187215199,
+         'text' => 'Oranienburger Str. (Wittenau) stadtauswärts zwischen Lübarser Str. und Wittenauer Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 08.2007)',
+         'from' => 1185833959,
+         'id' => 1095,
+         'data' => 'userdel	1::inwork 5326,21407 5311,21495 5149,21721
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1187820000,
+         'text' => 'L 017 Bahnbrücke zw. Flatow und Staffelde Brückendemontage Vollsperrung 22.08.2007-22.08.2007 ',
+         'from' => 1187647200,
+         'id' => 1096,
+         'data' => 'userdel	2::inwork -20450,35368 -19737,35362 -19481,35481
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1186351200,
+         'text' => 'L 062 Bahnübergang zw. Elsterwerda und Hohenleipisch Gleisbauarbeiten Vollsperrung 03.08.2007-05.08.2007 ',
+         'from' => 1186005600,
+         'id' => 1097,
+         'data' => 'userdel	2::inwork 22382,-102254 22501,-102573 22654,-103425
 ',
          'type' => 'gesperrt'
        }
