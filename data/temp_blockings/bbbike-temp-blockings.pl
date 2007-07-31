@@ -6290,7 +6290,7 @@ userdel	2::inwork 11347,12181 11328,12040
 EOF
      },
      { from  => 1159826400, # 2006-10-03 00:00
-       until => 1188597600, # 2007-09-01 00:00
+       until => 1185914821, # 2007-09-01 00:00 1188597600
        text  => 'Vollsperrung der Springbornstraße. Dauer: 04.10.2006 bis 31.08.2007. ',
        type  => 'handicap',
        data  => <<EOF,
@@ -6755,7 +6755,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004266',
        data  => <<EOF,
-userdel	2::inwork 21847,794 22012,706
+userdel	2::inwork 21861,802 22007,711
 EOF
      },
      { from  => 1165266208, # 2006-12-04 22:03
@@ -7725,7 +7725,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_005169',
        data  => <<EOF,
-userdel	q4::inwork 16048,25927 16114,25827 16166,25767
+userdel	q4::inwork 16045,25907 16114,25827 16166,25767
 EOF
      },
      { from  => 1176243783, # 2007-04-11 00:23
@@ -9259,6 +9259,56 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 22382,-102254 22501,-102573 22654,-103425
+EOF
+     },
+     { from  => 1185828321, # 2007-07-30 22:45
+       until => 1186696800, # 2007-08-10 00:00
+       text  => 'Dörpfeldstr. (Treptow) in Richtung Oberspreestr. zwischen Anna-Seghers-Str. und Gellertstr. Baustelle, Straße vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_006201',
+       data  => <<EOF,
+userdel	2::inwork 20012,3532 20082,3578
+EOF
+     },
+     { from  => 1185828358, # 2007-07-30 22:45
+       until => 1186696800, # 2007-08-10 00:00
+       text  => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Komturstr. und Tempelhofer Damm Fahrbahnabsenkung, Straße vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_006204',
+       data  => <<EOF,
+userdel	2::inwork 10254,5921 9781,5789 9654,5738 9341,5612 9147,5534
+EOF
+     },
+     { from  => 1186869600, # 2007-08-12 00:00
+       until => 1188079200, # 2007-08-26 00:00
+       text  => 'B 102 Brücken über den Mühlenrhin u. Büttgraben nördl.Rhinow Brückenbauarbeiten Vollsperrung 13.08.2007-25.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -62502,27066 -62531,27427
+EOF
+     },
+     { from  => 1185832800, # 2007-07-31 00:00
+       until => 1186696800, # 2007-08-10 00:00
+       text  => 'B 169 zw. Cottbus und Klein Gaglow Deckenerneuerung halbseitig gesperrt; Einbahnstraße 01.08.2007-09.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 73977,-74037 73211,-74836 72657,-75488
+EOF
+     },
+     { from  => 1186869600, # 2007-08-12 00:00
+       until => 1187301600, # 2007-08-17 00:00
+       text  => 'B 169 zw. Cottbus und Klein Gaglow Deckenerneuerung halbseitig gesperrt; Einbahnstraße 13.08.2007-16.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 73977,-74037 73211,-74836 72657,-75488
+EOF
+     },
+     { from  => 1186264800, # 2007-08-05 00:00
+       until => 1188079200, # 2007-08-26 00:00
+       text  => 'L 071 B 96 (Luckau-Baruth) - Dahme zw. Jetsch und Krossen Durchlassneubau Vollsperrung 06.08.2007-25.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 24639,-53978 25777,-53225 26126,-53177
 EOF
      },
     );
