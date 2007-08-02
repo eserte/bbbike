@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Karte.pm,v 1.41 2004/06/10 23:03:52 eserte Exp $
+# $Id: Karte.pm,v 1.42 2007/08/02 21:55:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2002 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package Karte;
 #use AutoLoader 'AUTOLOAD';
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.41 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.42 $ =~ /(\d+)\.(\d+)/);
 
 use strict;
 use vars qw(%map %map_by_modname %map_by_coordsys @map $cache_root $map_root);
@@ -38,6 +38,7 @@ sub preload {
 		    Satmap SatmapGIF GISmap Polar T99 T2001 GDF
 		    FURadar FURadar2 FURadar3
                     GPS Soldner_alt Cityinfo PilotPl PilotPl12 Tk50
+		    Deinplan
 		   );
     }
     my $karte;

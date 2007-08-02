@@ -3295,7 +3295,7 @@ EOF
        text  => 'B 96 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 07.01.2006-09.01.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 16336,-29511 16379,-29446
+userdel	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1134082800, # 2005-12-09 00:00
@@ -3303,7 +3303,7 @@ EOF
        text  => 'B 96 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 10.12.2005-12.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 16336,-29511 16379,-29446
+userdel	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1136847600, # 2006-01-10 00:00
@@ -3311,7 +3311,7 @@ EOF
        text  => 'B 96 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 11.01.2006-11.01.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 16336,-29511 16379,-29446
+userdel	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1135033200, # 2005-12-20 00:00
@@ -3319,7 +3319,7 @@ EOF
        text  => 'B 96 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 21.12.2005-22.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 16336,-29511 16379,-29446
+userdel	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1078095600, # 2004-03-01 00:00
@@ -3585,7 +3585,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 16407,-29400 16379,-29446
-userdel	2 16336,-29511 16379,-29446
+userdel	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1144015200, # 2006-04-03 00:00
@@ -3850,7 +3850,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 16407,-29400 16379,-29446
-userdel	2 16336,-29511 16379,-29446
+userdel	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1146693600, # 2006-05-04 00:00
@@ -3859,7 +3859,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 16407,-29400 16379,-29446
-userdel	2 16336,-29511 16379,-29446
+userdel	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1144262992, # 1144965600 2006-04-14 00:00
@@ -3868,7 +3868,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 16407,-29400 16379,-29446
-userdel	2 16336,-29511 16379,-29446
+userdel	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1142895600, # 2006-03-21 00:00
@@ -3969,7 +3969,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 16407,-29400 16379,-29446
-userdel	2 16336,-29511 16379,-29446
+userdel	2 16360,-29489 16379,-29446
 EOF
      },
      { from  => 1144015200, # 2006-04-03 00:00
@@ -4102,7 +4102,7 @@ EOF
        text  => 'B 096 Hauptstr. OD Baruth Einbau Spundwände Vollsperrung 12.04.2006-10.05.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 18307,-38801 18042,-39923
+userdel	q4 18433,-38781 18272,-39512 18138,-39957
 EOF
      },
      { from  => 1144792800, # 2006-04-12 00:00
@@ -5685,7 +5685,7 @@ EOF
        text  => 'B 096 Bahnübergang Neuhof Gleisbauarbeiten Vollsperrung 07.09.2006-08.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 16407,-29400 16379,-29446 16336,-29511
+userdel	2::inwork 16407,-29400 16379,-29446 16360,-29489
 EOF
      },
      { from  => 1156975200, # 2006-08-31 00:00
@@ -5919,7 +5919,7 @@ EOF
        text  => 'B 096 Baruth-Wünsdorf Bahnübergang in deer OD Neuhof Straßenbauarbeiten Vollsperrung 21.12.2006-21.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 16407,-29400 16379,-29446 16336,-29511
+userdel	2::inwork 16407,-29400 16379,-29446 16360,-29489
 EOF
      },
      { from  => 1160414834, # 2006-10-09 19:27

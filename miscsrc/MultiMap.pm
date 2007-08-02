@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: MultiMap.pm,v 1.10 2007/05/13 14:52:19 eserte Exp $
+# $Id: MultiMap.pm,v 1.11 2007/08/02 21:54:03 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -12,8 +12,8 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-# Description (en): Link to GoYellow, WikiMapia and MultiMap
-# Description (de): Links zu GoYellow, WikiMapia und MultiMap
+# Description (en): Link to GoYellow, WikiMapia, MultiMap and other maps
+# Description (de): Links zu GoYellow, WikiMapia, MultiMap und anderen Karten
 package MultiMap;
 
 use BBBikePlugin;
@@ -21,13 +21,19 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%images);
 
 sub register {
     _create_images();
     # this order will be reflected in show_info
+    $main::info_plugins{__PACKAGE__ . "_DeinPlan"} =
+	{ name => "Pharus (dein-plan)",
+	  callback => sub { showmap_deinplan(@_) },
+	  callback_3_std => sub { showmap_url_deinplan(@_) },
+	  ($images{Pharus} ? (icon => $images{Pharus}) : ()),
+	};
     $main::info_plugins{__PACKAGE__ . "_GoYellow"} =
 	{ name => "GoYellow",
 	  callback => sub { showmap_goyellow(@_) },
@@ -69,6 +75,18 @@ sub register {
 	  callback => sub { showmap_livecom(@_) },
 	  callback_3_std => sub { showmap_url_livecom(@_) },
 	  ($images{LiveCom} ? (icon => $images{LiveCom}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . "_BikeMapDe"} =
+	{ name => "bikemap.de",
+	  callback => sub { showmap_bikemapde(@_) },
+	  callback_3_std => sub { showmap_url_bikemapde(@_) },
+	  ($images{BikeMapDe} ? (icon => $images{BikeMapDe}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . "_BerlinerStadtplan24"} =
+	{ name => "www.berliner-stadtplan24.com",
+	  callback => sub { showmap_berliner_stadtplan24(@_) },
+	  callback_3_std => sub { showmap_url_berliner_stadtplan24(@_) },
+	  ($images{BerlinerStadtplan24} ? (icon => $images{BerlinerStadtplan24}) : ()),
 	};
 }
 
@@ -192,6 +210,73 @@ EOF
 	}
 
     # XXX missing: LiveCom image
+
+    if (!defined $images{Pharus}) {
+	# Fetched http://www.pharus-plan.de/px/head_kopf.jpg
+	# and converted using Gimp (cropped manually and scaled to 16px width)
+	# mmencode the result
+	$images{Pharus} = $main::top->Photo
+	    (-format => 'gif',
+	     -data => <<EOF);
+R0lGODlhDQAQAOfOADg4NDs7OEFBPUVEQlBHPVJKSU1OSFZOSmBRRl5RTGBUTVpYTFNcTWFa
+NGhYQRmMAxiNAhqMAhqMAx+ICxuMARuMAx6KBxuNARuNAh+LAhiPABqOAHNbHxqOARqOAhuO
+ABuOAR2NARuOAiCLBx+MBk9oR3RdKiOMDWheT3ReL11iW2RgWGVeYGpdWieNEVBtUlhqTimO
+FWphVyaREH9iH1NwT35jJ25iWC2SFy+RGXVkW35qLnRmX2huW3RqXzuTI21sbXlqYXlrXD2W
+J3duY29xbn5uY2GDVWeAW3R3amp/X3d2c4R0XYRzZ29+akSfMIJ0bnt3c3x2d2yCaoJ5X0ef
+OIF3dHGBbYR6X4V4aYd2cEyfOnl+cYZ4bnaAcUqiNIJ7bop4aoN7bU6gOXt9fIh6bH99dox6
+aGSSVol+Y32AfY16cl+YT2KWU4t/ZlCmQmyTZVWmQVqjTm2XW3+IfH6LdYiEhVunRFumS3eS
+a16lSmyaX1+lTXWVZ3eTb2KjU4SKfnaVapSGa5aFa5OEeWmiWoyKg2WlXmmnWYGVenKhZG6l
+W3idb3ifaXaga4uRhJCPiJGRj5WPj5KRj5GTiZGUhJSUkoCldJ+SjaiSd5iWkpqalZebmKeZ
+gK+Xdp6alrCce6mekaCin7KggqOko6SnqKamqK+mnqSvobGpqaysp8Gtj664qMaxkLW2r8q0
+icG5m7i5vbe8sM63j8u7kcHBuL/Aw8XBusHEwMHDx9fBn9fDn8XHvcLJw9bGqMnJxszLxc3M
+xNzPr+nLosjVy9LS0dfVydXY0NnZ2drb2Nzf2d7f3+Lg4OXi4///////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+/////////////////////////////////yH+FUNyZWF0ZWQgd2l0aCBUaGUgR0lNUAAh+QQB
+CgD/ACwAAAAADQAQAAAI7QAzfBDhIg4bNG345IBw4QIGCkMU1TH0SVKSRmMqgJDwgxEvYK7I
+qKklK8+XCCQWsQomypYpS0VIHbuE44kfZZyW9SKGClckZI/w/AHUrFQxSpAqxcr1S5UjOHaY
+NeBgw8QOGilSbUqkJEoyIlSwCHLDxIExTVymALlFyJcnXaBWnTk1iQ6SJaHWDBo269UuBFqk
+OJljpkyTNK0yjerkI4iVQHd6ZAmDAhYtYWBu6FhQKMYRAC26EBCjgAeUAjCqPHhTw8AKGUKM
+HAjAANEIDxbklBDAAlOCAS8OzaCwIcSELXuuqPDSR8+JDhoCAgA7
+EOF
+    }
+
+    if (!defined $images{BikeMapDe}) {
+	# Fetched http://www.bikemap.de/static/images/header/logo.de.gif
+	# and converted using Gimp (cropped manually and scaled to 16px height)
+	# mmencode the result
+	$images{BikeMapDe} = $main::top->Photo
+	    (-format => 'gif',
+	     -data => <<EOF);
+R0lGODlhEAAKAMZzAASbygWbyhOZxRGaxxSZxRKbxxOeyhGgzBagyhyfyR2fyR6lzx2n0Suj
+yy6kzDWz2Da02Dm02Uev0kiw0kC02EC12D632je630O22T653EW52z694EG830W73Uy83Uq9
+3la52VO83Fq72lO/3lu93E3D41q+3F2+3FjB31vA3l+/3VXF42LE4WbE4GnF4XDE32zG4W3H
+4nPF33nG33TL5X3I4HnK43fP6IrO44DS6ovO5ILS6IzT6I3U6ZXR5ZfS5pbX6pXZ7Zra7J7e
+8Kvb66zc66ff76ng77Tg7q3j8rXh77ji77jj8Lfl8rvm8r7p9Mfo88Tq9cro8szp88fs9tDr
+9Mvt98/t9s/u99Du9tfv9tjv9tfw+Njw99nw99rw9tvx997y+eP0+eT2++f1+uX2++f3++34
+++74/PL6/Pf8/fj8/vn9/vv9/vz+/vz+//3+/v3+//7/////////////////////////////
+/////////////////////////yH+FUNyZWF0ZWQgd2l0aCBUaGUgR0lNUAAh+QQBCgB/ACwA
+AAAAEAAKAAAHjoBzc29lVGOCTyVDgoyCWCsXSYJsVhtmjY05N3JzcVEcQZhrV0dNGVlcPR87
+HUZOanNhMSw0GhAWHkJpQA8jKBFdGDBuYikMLWhzTCE8FG0uFQFaYAsmKiSCJzZnB1BeAAhI
+altzIi+CMiBzSmRLBjoJRFU1A+RzXwUzVUUKOHA/DgRIkNJoygQCDXzACQQAOw==
+EOF
+    }
+
+    if (!defined $images{BerlinerStadtplan24}) {
+	$images{BerlinerStadtplan24} = $main::top->Photo
+	    (-format => 'gif',
+	     -data => <<EOF);
+R0lGODlhEAAQAPUAAFxYWFxcWFxYXFxcXGBcWGBcXGBgYGRkZGhkaHBscHR0dHx4eHx8eIB8
+eIB8gIiEhIiIiIyMjJCMjJCQkJiUmJycnKCcnKiopKyorKyssLy8vMDAwMTExMjIyMzIzMzM
+zNDQ0NTU1NjU0NjY2Nzc3ODg4OTk5Ojo6PDw8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAAIf4V
+Q3JlYXRlZCB3aXRoIFRoZSBHSU1QACwAAAAAEAAQAAAGgECUcEgsGo9IVGnJ5EwaE5KQCToM
+BNdBNmICeToWLRZLKBQGDop2EGCLAoQ4AWDIXAaFeGAPjwMCChsfeGtaZnltCRooGAwLCmZi
+AwSJiw54AmZYVwRaiigQApkFmVmUA4onIRUQCghXh6eBSiMgHRKwmZ0DDxtTTMDBJUnExUJB
+ADs=
+EOF
+    }
+
 }
 
 ######################################################################
@@ -350,7 +435,87 @@ sub showmap_url_livecom {
 sub showmap_livecom {
     my(%args) = @_;
     my $url = showmap_url_livecom(%args);
+    start_browser_no_mozilla($url);
+}
+
+######################################################################
+# dein-plan, Pharus
+
+sub showmap_url_deinplan {
+    my(%args) = @_;
+    require Karte::Deinplan;
+    my($sx,$sy) = split /,/, $args{coords};
+    my($x, $y) = map { int } $Karte::Deinplan::obj->standard2map($sx,$sy);
+    my $urlfmt = "http://www.dein-plan.de/?location=|berlin|%d|%d";
+    sprintf($urlfmt, $x, $y);
+}
+    
+sub showmap_deinplan {
+    my(%args) = @_;
+    my $url = showmap_url_deinplan(%args);
     start_browser($url);
+}
+
+######################################################################
+# bikemap.de
+
+sub showmap_url_bikemapde {
+    my(%args) = @_;
+
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    if ($scale > 13) {
+	$scale = 13; # zu wenig Details (=Routen) bei niedrigeren Stufen
+    }
+    sprintf "http://www.bikemap.de/#lt=%s&ln=%s&z=%d&t=0",
+	$py, $px, $scale;
+}
+
+sub showmap_bikemapde {
+    my(%args) = @_;
+    my $url = showmap_url_bikemapde(%args);
+    start_browser($url);
+}
+
+######################################################################
+# Berliner-Stadtplan24.com, does not work in seamonkey, but works in
+# firefox
+
+sub showmap_url_berliner_stadtplan24 {
+    my(%args) = @_;
+
+    #my $y_wgs = sprintf "%.2f", (Karte::Polar::ddd2dmm($py))[1];
+    #my $x_wgs = sprintf "%.2f", (Karte::Polar::ddd2dmm($px))[1];
+    (my $y_wgs = $args{py}) =~ s{\.}{,};
+    (my $x_wgs = $args{px}) =~ s{\.}{,};
+    my $zoom = "100";
+    my $mapscale_scale = $args{mapscale_scale};
+    if ($mapscale_scale) {
+	if ($mapscale_scale < 13000) {
+	    $zoom = 100;
+	} elsif ($mapscale_scale < 18000) {
+	    $zoom = 75;
+	} elsif ($mapscale_scale < 26000) {
+	    $zoom = 50;
+	} else {
+	    $zoom = 27;
+	}
+    }
+    ## Does not work anymore?
+    #my $url = "http://www.berliner-stadtplan.com/?y_wgs=${y_wgs}%27&x_wgs=${x_wgs}%27&zoom=$zoom&size=500x400&sub.x=15&sub.y=7";
+    ## But this works. Be nice and tell the Pharus guys where this request came from:
+    #my $url = "http://www.berliner-stadtplan24.com/topic/bln/str/x_wgs/${x_wgs}/y_wgs/${y_wgs}/from/bbbike.html";
+    ## Since 2007-08-01 everything changed. Now it is:
+    ## http://www.berliner-stadtplan24.com/berlin/gps_x/13,4439/gps_y/52,514.html
+    my $url = "http://www.berliner-stadtplan24.com/berlin/gps_x/${x_wgs}/gps_y/${y_wgs}.html";
+    $url;
+}
+
+sub showmap_berliner_stadtplan24 {
+    my(%args) = @_;
+    my $url = showmap_url_berliner_stadtplan24(%args);
+    start_browser_no_mozilla($url);
 }
 
 ######################################################################
@@ -360,6 +525,14 @@ sub start_browser {
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
     require WWWBrowser;
     WWWBrowser::start_browser($url);
+}
+
+sub start_browser_no_mozilla {
+    my($url) = @_;
+    require WWWBrowser;
+    local @WWWBrowser::unix_browsers = @WWWBrowser::unix_browsers;
+    @WWWBrowser::unix_browsers = grep { !m{^(seamonkey|mozilla|htmlview|_.*)$} } @WWWBrowser::unix_browsers;
+    start_browser($url);
 }
 
 1;

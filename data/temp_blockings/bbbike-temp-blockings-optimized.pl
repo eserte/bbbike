@@ -13,15 +13,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1185919200,
-         'text' => 'L 201 OD Falkensee OD Falkensee, Falkenhagener Str. Straßenbau Vollsperrung 28.08.2006-31.07.2007 ',
-         'from' => 1156629600,
-         'id' => 669,
-         'data' => 'userdel	q4::inwork -10661,17873 -10926,17992
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -408,15 +400,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1185919200,
-         'text' => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Neue Beelitzer Str. Straßenausbau Vollsperrung 01.03.2007-31.07.2007 ',
-         'from' => 1172617200,
-         'id' => 921,
-         'data' => 'userdel	q4::inwork -4299,-35198 -4725,-34957
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -542,16 +526,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_005464',
-         'until' => 1186005599,
-         'text' => 'Birkenstr. (Wedding) zwischen Lübecker Str. und Stromstr. Baustelle, Straße vollständig gesperrt (bis Anfang 08.2007)',
-         'from' => 1180567260,
-         'id' => 986,
-         'data' => 'userdel	2::inwork 6365,13879 6242,13928
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -622,15 +597,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        undef,
        undef,
        undef,
-       {
-         'until' => 1185919200,
-         'text' => 'K 6422 Eggersdorfer Str./ Lessingstr. OL Petershagen, Knoten Lessingstr. u. BÜ Straßenausbau Vollsperrung 11.06.2007-31.07.2007 ',
-         'from' => 1181426400,
-         'id' => 1015,
-         'data' => 'userdel	2::inwork 36677,14087 36666,14172 36656,14204
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1188165600,
          'text' => 'K 6512 B 96 nördl.Löwenberg-B167 Grieben zw. Abzw. Vielitz und Grieben Straßenbau Vollsperrung 18.06.2007-26.08.2007 ',
@@ -660,16 +627,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_005532',
-         'until' => 1185919199,
-         'text' => 'Flottwellstr. (Tiergarten) Richtung Potsdamer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 07.2007)',
-         'from' => 1181768486,
-         'id' => 1021,
-         'data' => 'userdel	1::inwork 8336,10829 8300,10823 8281,10791 8199,10634
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1188856800,

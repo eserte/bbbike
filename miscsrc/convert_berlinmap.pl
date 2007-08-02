@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: convert_berlinmap.pl,v 1.42 2004/06/10 22:25:12 eserte Exp $
+# $Id: convert_berlinmap.pl,v 1.43 2007/08/02 21:55:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003 Slaven Rezic. All rights reserved.
@@ -477,6 +477,15 @@ my @city_info_data = split(/\n/, <<'EOF');
 76030,-70384	9539,11960		# Cottbus
 EOF
 
+my @dein_plan_data = split(/\n/, <<'EOF');
+# hafas		dein plan
+8593,12243	5019,5585		# Brandenburger Tor
+8983,8779	5128,6739		# Duden/Methfessel
+3831,10348	3350,6192		# Adenauerpl
+8790,16261	5120,4208		# Pank/Bad
+16462,10697	7720,6155		# Weitling/Lück
+EOF
+
 my @maps =
          (
 	  ['berlinmap',	\@berlinmap_data,        ''],
@@ -504,6 +513,7 @@ my @maps =
 	  ['soldneralt',\@soldneralt_data,       'sa'],
 	  ['soldnerneu',\@soldnerneu_data,       'sn'],
 	  ['cityinfo',  \@city_info_data,        'cityinfo'],
+	  ['deinplan',  \@dein_plan_data,	 'deinplan'],
 	 );
 
 my @global_map_data;

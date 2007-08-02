@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.64 2007/07/28 11:02:56 eserte Exp $
+# $Id: bbbike.cgi,v 8.67 2007/08/02 21:56:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -677,6 +677,9 @@ eval { local $SIG{'__DIE__'};
        #warn "$config_master.config";
        do "$config_master.config" };
 
+# Post-config adjustments:
+$can_berliner_stadtplan_post = 0; # API does not work since 2007-08-01
+
 if ($lang ne "") {
     $msg = eval { do "$FindBin::RealBin/msg/$lang" };
     if ($msg && ref $msg ne 'HASH') {
@@ -705,7 +708,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.64 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.67 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -3934,8 +3937,9 @@ EOF
 	    # Ist width=... bei Netscape4 buggy? Das nachfolgende Attribut
 	    # ignoriert font-family.
 	    #   width=\"90%\"
-	    print "<center>" unless $printmode;
-	    print "<table class='routelist";
+	    print q{<center>} unless $printmode;
+	    print q{<table cellspacing="0" cellpadding="0" class='routelist};
+	    #print q{<table  class='routelist};
 	    if ($printmode) {
 		print " print";
 	    }
@@ -6259,7 +6263,7 @@ sub show_info {
     header();
     my $perl_url = "http://www.perl.org/";
     my $cpan = "http://www.cpan.org/";
-    my $scpan = "http://search.cpan.org/search?mode=module&query=";
+    my $scpan = "http://search.cpan.org/search?mode=module&amp;query=";
     print <<EOF;
 <center><h2>Information</h2></center>
 <ul>
@@ -6273,6 +6277,7 @@ sub show_info {
    <li><a href="#pda">PDA-Version</a>
    <li><a href="#wap">WAP</a>
    <li><a href="#gpsupload">GPS-Upload</a>
+   <li><a href="#opensearch">Suchplugin für Firefox und IE</a>
 @{[ $can_palmdoc ? qq{<li><a href="#palmexport">Palm-Export</a>} : qq{} ]}
   </ul>
  <li><a href="@{[ $bbbike_html ]}/presse.html">Die Presse über BBBike</a>
@@ -6283,7 +6288,7 @@ sub show_info {
 </ul>
 <hr>
 
-<a name="tipps"><h3>Die Routensuche</h3></a>
+<h3 id="tipps">Die Routensuche</h3>
 Das Programm sucht den kürzesten oder schnellsten Weg zwischen den gewählten Berliner Straßen. Die Auswahl erfolgt entweder durch das Eintippen
 in die Eingabefelder für Start und Ziel (Via ist optional), durch Auswahl
 aus der Buchstabenliste oder durch Auswahl über die Berlin-Karte.
@@ -6324,7 +6329,7 @@ EOF
 
     print <<EOF;
 <hr>
-<a name="data"><h3>Daten</h3></a>
+<h3 id="data">Daten</h3>
 
 Die Daten auf dem aktuellen Stand zu halten ist in einer Stadt wie
 Berlin für einen Einzelnen eine schwere Aufgabe. Deshalb freue ich
@@ -6334,7 +6339,7 @@ href="mailto:$BBBike::EMAIL">Mail</a> schicken oder <a
 href="$bbbike_html/newstreetform${newstreetform_encoding}.html?frompage=info">dieses Formular</a> benutzen.
 
 <hr>
-<a name="link"><h3>Link auf BBBike setzen</h3></a>
+<h3 id="link">Link auf BBBike setzen</h3>
 Man kann einen Link auf BBBike mit einem
 bereits vordefinierten Ziel setzen. Die Vorgehensweise sieht so aus:
 <ul>
@@ -6351,29 +6356,29 @@ bereits vordefinierten Ziel setzen. Die Vorgehensweise sieht so aus:
 </ul>
 Für einen vordefinierten Startort geht man genauso vor, lediglich werden alle Vorkommen von <tt>ziel</tt> durch <tt>start</tt> ersetzt.
 
-<a name="mambo"><h4>BBBike-Modul für Mambo</h4></a>
+<h4 id="mambo">BBBike-Modul für Mambo</h4>
 Für das CMS Mambo gibt es auf mamboforge ein <a href="http://mamboforge.net/frs/?group_id=1094">BBBike-Modul</a> von Ramiro G&#243;mez.
 <hr>
 <p>
 EOF
 
     print <<EOF;
-<a name="resourcen"><h3>Weitere Möglichkeiten und Tipps</h3></a>
-<a name="perltk"><h4>Perl/Tk-Version</h4></a>
+<h3 id="resourcen">Weitere Möglichkeiten und Tipps</h3>
+<h4 id="perltk">Perl/Tk-Version</h4>
 Es gibt eine wesentlich komplexere Version von BBBike mit interaktiver Karte, mehr Kontrollmöglichkeiten über die Routensuche, GPS-Anbindung und den kompletten Daten. Diese Version läuft als normales Programm (mit Perl/Tk-Interface) unter Unix, Linux, Mac OS X und Windows.
 <a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">Hier</a>
 bekommt man dazu mehr Informationen. Als Beispiel kann man sich
 <a href="@{[ $BBBike::BBBIKE_SF_WWW ]}/screenshots.de.html">Screenshots</a> der Perl/Tk-Version angucken.
-<a name="beta"><h4>Beta-Version</h4></a>
+<h4 id="beta">Beta-Version</h4>
 Zukünftige BBBike-Features können <a href="$bbbike2_url">hier</a> getestet werden.
-<a name="pda"><h4>PDA-Version für iPAQ/Linux</h4></a>
+<h4 id="pda">PDA-Version für iPAQ/Linux</h4>
 Für iPAQ-Handhelds mit Familiar Linux gibt es eine kleine Version von BBBike: <a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">tkbabybike</a>.
-<a name="wap"><h4>WAP</h4></a>
+<h4 id="wap">WAP</h4>
 BBBike kann man per WAP-Handy unter der Adresse <a href="@{[ $BBBike::BBBIKE_WAP ]}">@{[ $BBBike::BBBIKE_WAP ]}</a> nutzen.
 <p>
-<a name="gpsupload"><h4>GPS-Upload</h4></a>
+<h4 id="gpsupload">GPS-Upload</h4>
 Es besteht die experimentelle Möglichkeit, sich <a href="@{[ $bbbike_url ]}?uploadpage=1">GPS-Tracks oder bbr-Dateien</a> anzeigen zu lassen.<p>
-<h4>Diplomarbeit</h4>
+<h4 id="diplom">Diplomarbeit</h4>
 Das Programm wird auch in <a href="@{[ $BBBike::DIPLOM_URL ]}">meiner Diplomarbeit</a> behandelt.<p>
 EOF
     if ($bi->is_browser_version("Mozilla", 5)) {
@@ -6398,8 +6403,10 @@ function addSidebar(frm) {
     return false;
 }
 // --></script>
+<h4 id="opensearch">Suchplugin für Firefox und IE</h4>
+Installation des <a href="$bbbike_html/opensearch/opensearch.html">Suchplugins</a>
 <h4>Mozilla-Sidebar</h4>
-<form name="bbbike_add_sidebar">
+<form name="bbbike_add_sidebar" action="#">
 <a href="#" onclick="return addSidebar(document.forms.bbbike_add_sidebar)"><!-- img src="http://developer.netscape.com/docs/manuals/browser/sidebar/add-button.gif" alt="Add sidebar" border=0 -->Add sidebar</a>, dabei folgende Adressen optional als Default verwenden:<br>
 <table>
 <tr><td><img src="$bbbike_images/flag2_bl.gif" border=0 alt="Start"> Start:</td><td> <input size=10 name="start"></td></tr>
@@ -6410,7 +6417,7 @@ EOF
     }
     if ($can_palmdoc) {
 	print <<EOF;
-<a name="palmexport"><h4>Palm-Export</h4></a>
+<h4 id="palmexport">Palm-Export</h4>
 <p>Für den PalmDoc-Export benötigt man auf dem Palm einen entsprechenden
 Viewer, z.B.
 <a href="http://www.freewarepalm.com/docs/cspotrun.shtml">CSpotRun</a>.
@@ -6420,7 +6427,7 @@ EOF
     }
     print "<hr><p>\n";
 
-    print "<a name='hardsoftware'><h3>Hard- und Software</h3></a>\n";
+    print "<h3 id='hardsoftware'>Hard- und Software</h3>\n";
     # funktioniert nur auf dem CS-Server
     my $os;
     if (open(INFO, "/usr/INFO/Rechnertabelle")) {
@@ -6453,7 +6460,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/07/28 11:02:56 $';
+    my $cgi_date = '$Date: 2007/08/02 21:56:35 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
@@ -6476,11 +6483,11 @@ EOF
         if ($os =~ /freebsd/i) {
 	    print "<a href=\"http://www.freebsd.org/\"><img align=right src=\"";
 	    print "http://www.freebsd.org/gifs/powerani.gif";
-	    print "\" border=0></a>";
+	    print "\" border=0 alt='FreeBSD'></a>";
 	} elsif ($os =~ /linux/i) {
 	    print "<a href=\"http://www.linux.org/\"><img align=right src=\"";
 	    print "http://lwn.net/images/linuxpower2.png";
-	    print "\" border=0></a>";
+	    print "\" border=0 alt='Linux'></a>";
 	}
         print "<p>";
     }
@@ -6501,15 +6508,15 @@ EOF
 	print <<EOF;
 <A href="http://sourceforge.net"> <IMG align=right
 src="http://sourceforge.net/sflogo.php?group_id=19142"
-width="88" height="31" border="0" alt="SourceForge Logo"></A><p>
+width="88" height="31" border="0" alt="SourceForge"></A><p>
 EOF
     }
 
     print <<EOF;
 Verwendete Software:
 <ul>
-<li><a href="$perl_url">perl $]</a><a href="$perl_url"><img border=0 align=right src="http://www.perlfoundation.org/images/perl_powered.png"></a>
-<li>perl-Module:<a href="$cpan"><img border=0 align=right src="http://theoryx5.uwinnipeg.ca/images/cpan.jpg"></a>
+<li><a href="$perl_url">perl $]</a><a href="$perl_url"><img border=0 align=right src="http://www.perlfoundation.org/images/perl_powered.png" alt="Perl"></a>
+<li>perl-Module:<a href="$cpan"><img border=0 align=right src="http://theoryx5.uwinnipeg.ca/images/cpan.jpg" alt="CPAN"></a>
 <ul>
 <li><a href="${scpan}CGI">CGI $CGI::VERSION</a>
 EOF
@@ -6553,18 +6560,18 @@ EOF
     }
 
     print <<EOF;
-<h3><a name="disclaimer">Disclaimer</a></h3>
+<h3 id="disclaimer">Disclaimer</h3>
 Es wird keine Gewähr für die Inhalte dieser Site sowie verlinkter Sites übernommen.
 <hr>
 
 EOF
 
     print <<EOF;
-<h3><a name="autor">Kontakt</a></h3>
+<h3 id="autor">Kontakt</h3>
 <center>
 Autor: Slaven Rezic<br>
 <a href="mailto:@{[ $BBBike::EMAIL ]}">E-Mail:</a> <a href="mailto:@{[ $BBBike::EMAIL ]}">@{[ $BBBike::EMAIL ]}</a><br>
-<a href="@{[ $BBBike::HOMEPAGE ]}">Homepage:</a> <a href="@{[ $BBBike::HOMEPAGE ]}">@{[ $BBBike::HOMEPAGE ]}</a></a><br>
+<a href="@{[ $BBBike::HOMEPAGE ]}">Homepage:</a> <a href="@{[ $BBBike::HOMEPAGE ]}">@{[ $BBBike::HOMEPAGE ]}</a><br>
 Telefon: @{[ CGI::escapeHTML("+49-172-1661969") ]}<br>
 Donji Crna&#x10d; 81, BiH-88220 &#x160;iroki Brijeg<br>
 </center>
@@ -6575,7 +6582,7 @@ EOF
     print <<EOF;
 <p><p><p><hr>
 Fußnoten:<br>
-<a name="footnote1"><sup>1</sup> @{[ footnote(1) ]}<hr><p>
+<sup id="footnote1">1</sup> @{[ footnote(1) ]}<hr><p>
 EOF
 
     footer();

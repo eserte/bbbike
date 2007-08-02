@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BrowserInfo.pm,v 1.52 2007/06/09 17:33:24 eserte Exp $
+# $Id: BrowserInfo.pm,v 1.53 2007/08/01 21:17:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2005 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.52 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.53 $ =~ /(\d+)\.(\d+)/);
 
 my $vert_scrollbar_space = 6; # most browsers need space for a vertical scrollbar
 
@@ -400,7 +400,7 @@ sub show_info {
     if ($self->{'wap_browser'}) {
 	$self->show_info_wml(@_);
     } else {
-	$self->show_info_html(@_) . "<hr>\n";
+	$self->show_info_html(@_) . "\n"; # this used to add a <hr> at the end, but usually this block is enclosed in a <pre> block, thus it would be invalid html
     }
 }
 

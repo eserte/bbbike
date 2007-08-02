@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.322 2007/07/29 19:28:21 eserte Exp eserte $
+# $Id: bbbike,v 3.323 2007/08/02 21:54:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -210,7 +210,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.322 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.323 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -12784,44 +12784,6 @@ sub show_info {
 			    my $url = "http://www.google.com/maps?" . $q2->query_string;
 			    $url;
 			});
-	    $info_text->insert("end", "\n");
-	    $linkcount++;
-	}
-
-	{
-	    if (!$berliner_stadtplan_photo) {
-		$berliner_stadtplan_photo = load_photo($top, 'berliner_stadtplan.gif');
-	    }
-
-	    my $need_indentation;
-	    if ($berliner_stadtplan_photo) {
-		$info_text->imageCreate("end", -image => $berliner_stadtplan_photo,
-					-align => "bottom", -padx => 2, -pady => 1);
-	    } else {
-		$need_indentation = 1;
-	    }
-
-	    my $y_wgs = sprintf "%.2f", (Karte::Polar::ddd2dmm($py))[1];
-	    my $x_wgs = sprintf "%.2f", (Karte::Polar::ddd2dmm($px))[1];
-	    my $zoom = "100";
-	    if ($mapscale_scale) {
-		if ($mapscale_scale < 13000) {
-		    $zoom = 100;
-		} elsif ($mapscale_scale < 18000) {
-		    $zoom = 75;
-		} elsif ($mapscale_scale < 26000) {
-		    $zoom = 50;
-		} else {
-		    $zoom = 27;
-		}
-	    }
-	    ## Does not work anymore?
-	    #my $url = "http://www.berliner-stadtplan.com/?y_wgs=${y_wgs}%27&x_wgs=${x_wgs}%27&zoom=$zoom&size=500x400&sub.x=15&sub.y=7";
-	    ## But this works. Be nice and tell the Pharus guys where this request came from:
-	    my $url = "http://www.berliner-stadtplan24.com/topic/bln/str/x_wgs/${x_wgs}/y_wgs/${y_wgs}/from/bbbike.html";
-	    $info_text->insert("end", "www.berliner-stadtplan.com",
-			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-	    $show_url->($linkcount, $url);
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
 	}

@@ -213,6 +213,11 @@
 
   (setq bbbike-imenu-generic-expression '((nil "^#: \\(append_comment\\|section\\):? *\\(.*\\) +vvv+" 2)))
   (setq imenu-generic-expression bbbike-imenu-generic-expression)
+
+  ;; Do not let emacs asking if another process (i.e. bbbike itself) changed
+  ;; a bbd file:
+  (make-local-variable 'revert-without-query)
+  (setq revert-without-query (list (buffer-file-name)))
   )
 
 (fset 'bbbike-cons25-format-answer
@@ -239,7 +244,7 @@
   (interactive)
   (let ((coords (buffer-substring (region-beginning) (region-end))))
     (setq coords (replace-regexp-in-string " " "!" coords))
-    (browse-url (concat "http://www.radzeit.de/cgi-bin/bbbikegooglemap.cgi?coords=" coords)))
+    (browse-url (concat "http://bbbike.radzeit.de/cgi-bin/bbbikegooglemap.cgi?coords=" coords)))
   )
 
 (defun bbbike-now ()
