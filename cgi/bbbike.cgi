@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.67 2007/08/02 21:56:35 eserte Exp $
+# $Id: bbbike.cgi,v 8.67 2007/08/02 21:56:35 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -4253,7 +4253,7 @@ EOF
 	    print " <option " . $imagetype_checked->("svg") . ">SVG\n" unless $cannot_svg;
 	    print " <option " . $imagetype_checked->("mapserver") . ">MapServer\n" if $can_mapserver;
 	    print " <option " . $imagetype_checked->("berlinerstadtplan") . ">www.berliner-stadtplan.com\n" if $can_berliner_stadtplan_post;
-	    print " <option " . $imagetype_checked->("googlemaps") . ">Google Maps (experimentell!!!)\n" if $can_google_maps;
+	    print " <option " . $imagetype_checked->("googlemaps") . ">Google Maps\n" if $can_google_maps;
 	    print " </select></span>\n";
 	    print "<br>\n";
 

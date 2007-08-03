@@ -30,3 +30,6 @@ table.print {
 table.print td, table.print th {
   border: 1px solid black;
 }
+table.routelist td, table.routelist th {
+  padding:2px 3px 2px 3px;
+}

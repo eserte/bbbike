@@ -662,22 +662,14 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        },
        {
          'until' => undef,
-         'text' => 'Homburger Str.: Einbahnstraße wegen Baustelle zw. Laubacher Str. und Assmannshauser Str., Durchfahrt Richtung Westen möglich',
-         'from' => undef,
+         'text' => 'Homburger Str.: Einbahnstraße wegen Baustelle zw. Ahrweile Str. und Assmannshauser Str., Durchfahrt Richtung Osten möglich',
+         'from' => 1186170676,
          'id' => 1030,
-         'data' => 'userdel	1::inwork 4403,7498 4628,7470 4785,7438
+         'data' => 'userdel	1::inwork 4628,7470 4403,7498
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => undef,
-         'text' => 'Sarrazinstr.: zurzeit Einbahnstraße (Elsastr. bis Bundesallee; Durchfahrt in dieser Richtung) wegen Baustelle',
-         'from' => undef,
-         'id' => 1031,
-         'data' => 'userdel	1::inwork 5361,7423 5422,7461 5452,7493 5492,7543
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -972,16 +964,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_006195',
-         'until' => 1186178400,
-         'text' => 'Grünbergallee (Bohnsdorf) in beiden Richtungen zwischen Am Seegraben und Rosenweg Baustelle, Straße vollständig gesperrt, Zufahrt zum Baumarkt von Bohnsdorf kommend frei (bis 03.08.2007)',
-         'from' => 1185833871,
-         'id' => 1093,
-         'data' => 'userdel	2::inwork 20362,-511 20354,-569 20205,-548
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_006190',
          'until' => 1188597599,
@@ -1020,16 +1003,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_006201',
-         'until' => 1186696800,
-         'text' => 'Dörpfeldstr. (Treptow) in Richtung Oberspreestr. zwischen Anna-Seghers-Str. und Gellertstr. Baustelle, Straße vollständig gesperrt',
-         'from' => 1185828321,
-         'id' => 1098,
-         'data' => 'userdel	2::inwork 20012,3532 20082,3578
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_006204',
          'until' => 1186696800,
@@ -1040,15 +1014,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1188079200,
-         'text' => 'B 102 Brücken über den Mühlenrhin u. Büttgraben nördl.Rhinow Brückenbauarbeiten Vollsperrung 13.08.2007-25.08.2007 ',
-         'from' => 1186869600,
-         'id' => 1100,
-         'data' => 'userdel	2::inwork -62502,27066 -62531,27427
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1186696800,
          'text' => 'B 169 zw. Cottbus und Klein Gaglow Deckenerneuerung halbseitig gesperrt; Einbahnstraße 01.08.2007-09.08.2007 ',
@@ -1073,6 +1039,81 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'from' => 1186264800,
          'id' => 1103,
          'data' => 'userdel	2::inwork 24639,-53978 25777,-53225 26126,-53177
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006085',
+         'until' => 1187042400,
+         'text' => 'Adlergestell (Grünau) stadteinwärts zwischen Wassersportallee und Kablower Weg Baustelle, Fahrtrichtung gesperrt (bis 13.08.2007)',
+         'from' => 1186167826,
+         'id' => 1104,
+         'data' => 'userdel	1::inwork 23206,206 22547,651 22162,1067
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006236',
+         'until' => 1187560800,
+         'text' => 'Nöldnerstr.. (Lichtenberg) in beiden Richtungen zwischen Schlichtallee und Karlshorster Str. geplatzte Wasserleitung, Straße vollständig gesperrt',
+         'from' => 1186081543,
+         'id' => 1105,
+         'data' => 'userdel	2::inwork 16032,10842 15670,10800 15396,10767 15266,10791
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006219',
+         'until' => 1186351200,
+         'text' => 'Str. der Pariser Kommune (Friedrichshain) in beiden Richtungen zwischen Weidenweg und Karl-Marx-Allee Veranstaltung, Straße vollständig gesperrt',
+         'from' => 1186081587,
+         'id' => 1106,
+         'data' => 'userdel	2::temp 12891,12549 12869,12425
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1186344000,
+         'text' => '5. Open Air Gallery am Sonntag, den 05.08.2007 von 10.00 bis 22.00 Uhr auf der Oberbaumbrücke ',
+         'from' => 1186214400,
+         'id' => 1107,
+         'data' => 'userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1196463600,
+         'text' => 'L 029 Oderberg-Liepe OD Oderberg Straßenbauarbeiten Vollsperrung 06.08.2007-30.11.2007 ',
+         'from' => 1186264800,
+         'id' => 1108,
+         'data' => 'userdel	2::inwork 52671,51846 51496,51542
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1210370400,
+         'text' => 'L 171 Schönfließer Str. Brücke über die DB in der OD Hohen Neuendorf Brückenersatzneubau Vollsperrung 06.08.2007-09.05.2008 ',
+         'from' => 1186264800,
+         'id' => 1109,
+         'data' => 'userdel	2::inwork 2353,29078 2071,29185
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1188079200,
+         'text' => 'B 102 Brücken über den Mühlenrhin u. Büttgraben nördl.Rhinow Brückenbauarbeiten Vollsperrung 13.08.2007-25.08.2007 ',
+         'from' => 1186869600,
+         'id' => 1110,
+         'data' => 'userdel	2::inwork -60904,38644 -60907,38811
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'der Fußweg von der Buchberger Str. zum S-Bahnhof Nöldnerplatz ist z.Zt. voll gesperrt (Bauzaun)',
+         'from' => undef,
+         'id' => 1111,
+         'data' => 'userdel	2::inwork 15779,10970 15735,11201 15731,11270
 ',
          'type' => 'gesperrt'
        }

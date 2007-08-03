@@ -247,7 +247,7 @@ Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23279,14785 23379,14514
 Beilsteiner Str.: Qualität (laut ADFC-Karte im südlichen Abschnitt gut geeignet; zumindest in Höhe Allee der Kosmonauten asphaltiert)	? 18749,12413 18832,13099 18852,13269 18875,13473 18859,14048 18998,14089 19025,14037
 Bleicheroder Str. - Pasewalker Str.: existiert eine Verbindung für Radfahrer entlang der Tram-Trasse?	? 11805,19071 11937,19175
-Birkenallee (Pankow): Qualität?	? 9718,20498 9655,20703
+Birkenallee (Pankow): Qualität?	? 9739,20508 9655,20703
 Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11147,23778 10889,23381 10775,23253 10396,23128 9890,22932
 Wriezener/Osloer Str.: ist das Abbiegen wegen der Straßenbahn möglich?	? 9210,16638
 Laut <cp6net$f0g$1@zeppelin.rz.uni-potsdam.de> ist die Eisenbahnbrücke für Fußgänger begehbar, laut <cn2fr0taoncnlu6s84inbhgpo8lq0u0bh2@4ax.com> sogar offizieller Bestandteil des Elbe-Radwegs	? -92087,-49506 -91387,-49350
@@ -759,7 +759,7 @@ Bohnsdorfer Chaussee/Gartenstr.: Qualität?	? 19704,-490 19302,-734 18773,-1095 1
 Waldstr.: Qualität?	? 24539,-3298 24872,-3095 24987,-3015 25182,-2915 25580,-2673 25958,-2455
 Bahnhofstr.: Qualität in diesem Abschnitt (ostl. d. Bergstr.)?	? -2657,-2907 -2720,-2937 -2817,-2967 -2878,-3004
 Scharnweberstr. (Friedrichshagen): Qualität?	? 25706,4723 25720,4832
-Ahornallee (Pankow) Qualität?	? 9737,20728 9867,20525
+Ahornallee (Pankow) Qualität?	? 9737,20728 9859,20542
 Pankeweg: Qualität?	? 16635,26118 16712,26192 16890,26334 16937,26354 16979,26401 17104,26478 17279,26582 17101,26701
 Janusz-Korczak-Str.: Qualität, Radwege?	? 24303,15070 24232,15060 24139,15046 23960,15021 23778,14995 23798,14826 23815,14721
 Marwitzer Str.: Radwege, aber von wo bis wo genau?	? -3700,26625 -4048,26914 -4293,27146 -4750,27667
@@ -944,13 +944,12 @@ Bernöwe - Zehdenick: Qualität?	? 5475,45590 5987,46492 7047,47102 8254,47126 920
 Großstr.: Qualität (östlicher Abschnitt Kopfsteinpflaster, wie sieht der Abschnitt zur Griechischen Allee hin aus?)?	? 18574,6401 18483,6460 18457,6490 18429,6582
 Hildegard-Marcusson-Straße/Haupstr.: Ampel in Bau	? 16004,10204
 Eupener Str.: Qualität nördlich des Uhlenwegs?	? 16384,26726 16432,26829
-Am Nordgraben: Qualität des Weges?	? 3604,20603 3857,20412 3942,20367 3999,20367 4026,20356 4052,20321 4088,20301 4187,20258 4335,20210 4418,20185 4808,20159
-Brücke über den Nordgraben, Höhe Kolonie Frühauf: für Radfahrer passierbar?	? 4088,20301 4076,20268
 Breitenbachstr. - Soltauer Str.: besteht eine Verbindung für Radfahrer entlang der S-Bahn? Qualität?	? 3909,19002 3756,19003 3749,19031
 Schillerstr. (Lichterfelde): Qualität?	? 4429,2396 4568,2424 4721,2449 4868,2370 5033,2279
 Ulmenstr.: Qualität?	? 3996,23012 3762,23362
 Waldseeweg: Qualität?	? 3762,23362 3621,23548 3587,23584
 Schloßstr. (Hermsdorf): Qualität?	? 4058,23342 3953,23401 3632,23563 3587,23584 3563,23609 3471,23750
+Schulzendorfer Str.: Ist die Schulzendorfer Straße eine Vorfahrtsstraße?	? 22222,156 22303,67 22312,48 22382,-87 22418,-181 23037,-1076
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -1032,7 +1031,6 @@ Achenbachstr.: Kopfsteinpflaster (Kopfsteinpflaster eher gut oder normal-mäßig?)
 Gundelfinger Str.: Kopfsteinpflaster (Kopfsteinpflaster eher gut oder normal-mäßig?)	? 18735,9421 18697,9153 18653,8922 18609,8717
 Haßfurter Weg: mäßiger Asphalt (Kopfsteinpflaster oder Asphalt?)	? 11835,18301 11796,18482
 Heegermühler Weg: schlechtes Kopfsteinpflaster (Hier wurde als Range "5-15" angegegeben. Hausnummern?)	? 7966,19968 8043,19725 8231,19806 8415,19910
-Ellwanger Str.: mäßiges Kopfsteinpflaster (Qualität Kopfsteinpflaster oder Asphalt?)	? 7450,4397 7382,4503 7324,4582 7166,4643
 (Unter dem S-Bhf. Schichauweg): Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9693,-621 9518,-668
 Miethepfad: Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9518,-668 9547,-754 9585,-859
 Alter Bernauer Heerweg: Kopfsteinpflaster (Alter Bernauer Heerweg westlich des Mauerwegs: Kopfsteinpflaster oder wassergebundene Decke?)	? 6668,22746 7072,22905 7782,23172 7923,23225 8203,23321
