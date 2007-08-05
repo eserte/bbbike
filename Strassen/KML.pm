@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: KML.pm,v 1.4 2007/07/20 23:10:32 eserte Exp $
+# $Id: KML.pm,v 1.5 2007/08/05 22:22:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::KML;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Strassen);
 
@@ -46,7 +46,27 @@ sub kml2bbd {
     my $p = XML::LibXML->new;
     my $doc = $p->parse_file($file);
     my $root = $doc->documentElement;
-    $root->setNamespaceDeclURI(undef, undef);
+    if ($root->can("setNamespaceDeclURI")) {
+	$root->setNamespaceDeclURI(undef, undef);
+    } else {
+	# ugly hack, try it again, remove namespace first:
+	require File::Temp;
+	my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1,
+						   SUFFIX => "_kml2bbd.kml");
+	open my $infh, $file
+	    or die "While opening $file: $!";
+	while(<$infh>) {
+	    s{xmlns="[^"]+"}{}g;
+	    print $tmpfh $_
+		or die $!;
+	}
+	close $infh;
+	close $tmpfh
+	    or die $!;
+	$doc = $p->parse_file($tmpfile);
+	$root = $doc->documentElement;
+	unlink $tmpfile;
+    }
     my $coords = $root->findvalue('/kml//Placemark/LineString/coordinates'); # might be Document or Folder in between
     my @c = map {
 	my($lon,$lat) = split /,/, $_;

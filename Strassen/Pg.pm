@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Pg.pm,v 1.4 2007/07/21 17:18:31 eserte Exp eserte $
+# $Id: Pg.pm,v 1.5 2007/08/05 22:26:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2007 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::Pg;
 
 use strict;
 use vars qw($VERSION $DSN $USER $dbh);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(is_in_path);
 use Strassen::Core;
@@ -146,46 +146,77 @@ sub import_data {
 
 __END__
 
-=pod
-
-B<PostgreSQL installation and configuration>
+=head1 PostgreSQL installation and configuration
 
 Installing was rather difficult. I decided to use postgresql81, which
 was the latest package on my FreeBSD 6.2 machine.
 
+=over
+
+=item 
+
 Set
+
 	PGSQL_VER=81
+
 in /etc/make.conf
+
+=item
 
 Install postgresql81-server with pkg_add.
 
+=item
+
 Add
+
 	postgresql_enable="YES"
+
 to /etc/rc.conf
 
+=item
+
 Initialize postgres database:
+
 	sudo /usr/local/etc/rc.d/010.pgsql.sh initdb
 
+=item
+
 Start postgres:
+
 	sudo /usr/local/etc/rc.d/010.pgsql.sh start
+
+=item
 
 As pgsql user, create the "eserte" database user. Give all
 permissions, especially for creating databases.
+
 	createuser eserte
 
+=item
+
 As eserte, create my own database:
+
 	createdb eserte
+
+=item
 
 Compile and install postgis via ports. Set both the UTF-8 and GEOS
 options.
 
+=item
+
 Afterwork needed:
+
 	createlang plpgsql eserte
 	psql -d eserte -f /usr/local/share/postgis/lwpostgis.sql
 	psql -d eserte -f /usr/local/share/postgis/spatial_ref_sys.sql
 
+=item
+
 Compile and install p5-DBD-PG via ports (package does not work,
 because all postgres-related packages use PostgreSQL 7.x).
+
+=back
 
 Now the import (see above) should work, hopefully...
 
