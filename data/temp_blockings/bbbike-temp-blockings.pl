@@ -9378,4 +9378,15 @@ EOF
 userdel	2::inwork 15779,10970 15735,11201 15731,11270
 EOF
      },
+     { from  => 1186266363, # 2007-08-05 00:26
+       until => 1186955999, # 2007-08-12 23:59
+       text  => '17. Berliner Gauklerfest, 3. bis 12. August 2007, einige Straßen am Opernpalais sind vollständig gesperrt ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 9890,12161 9875,12254 9801,12245 9782,12393
+userdel	2::temp 9875,12254 9853,12402
+userdel	2::temp 10008,12378 9926,12368 9972,12184
+userdel	2::temp 9918,12411 9926,12368
+EOF
+     },
     );

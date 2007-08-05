@@ -841,15 +841,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1186178400,
-         'text' => 'L 086 B 1 Groß Kreutz-Schmergow OD Groß Kreutz Kanal- und Straßenbau Vollsperrung 19.07.2007-03.08.2007 ',
-         'from' => 1184709600,
-         'id' => 1078,
-         'data' => 'userdel	q4::inwork -32125,-130 -31993,-726 -31991,-1024
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_006107',
          'until' => 1270065106,
@@ -926,15 +918,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1186178400,
-         'text' => 'L 621 Döllinger Str. OL Plessa Kanalarbeiten Vollsperrung 30.07.2007-03.08.2007 ',
-         'from' => 1185660000,
-         'id' => 1089,
-         'data' => 'userdel	2::inwork 27420,-104513 26667,-103869
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1186869600,
          'text' => 'L 220 B167 AS Finowfurt-Joachimsthal zw. Eichhorst und Elsenau Bau Otterdurchlass Vollsperrung 30.07.2007-11.08.2007 ',
@@ -1114,6 +1098,18 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'from' => undef,
          'id' => 1111,
          'data' => 'userdel	2::inwork 15779,10970 15735,11201 15731,11270
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1186955999,
+         'text' => '17. Berliner Gauklerfest, 3. bis 12. August 2007, einige Straßen am Opernpalais sind vollständig gesperrt ',
+         'from' => 1186266363,
+         'id' => 1112,
+         'data' => 'userdel	2::temp 9890,12161 9875,12254 9801,12245 9782,12393
+userdel	2::temp 9875,12254 9853,12402
+userdel	2::temp 10008,12378 9926,12368 9972,12184
+userdel	2::temp 9918,12411 9926,12368
 ',
          'type' => 'gesperrt'
        }
