@@ -42,11 +42,11 @@ Stahlheimer Richtung Wisbyer Str.: linken Gehweg bis Fußgängerampel benutzen	PI;
 Varnhagenstr Richtung Wisbyer Str.: linken Gehweg bis Fußgängerampel benutzen	PI; 11680,16151 11807,16340 11727,16358 11688,16365
 Fußgängerampel links benutzen	CP; 6033,10403 6020,10351 5997,10286
 Fußgängerampel links benutzen	CP; 6033,10403 6020,10351 6147,10383
-Fußgängerampel links benutzen	CP; 15323,16774 14619,16682 14621,16563
+Fußgängerampel links benutzen	CP; 15323,16774 14619,16682 14619,16672 14621,16563
 Fußgängerampel vor der Passauer Str. benutzen	CP; 6147,10383 6020,10351 5997,10286
-Münchener Str., über Hohenstaufenstr.: Fußgängerampel auf der linken Seite verwenden	PI; 6219,9891 6222,9832 6227,9773 6227,9531
-Münchener Str., Richtung Martin-Luther-Str.: Fußgängerampel auf der linken Seite verwenden	PI; 6219,9891 6222,9832 6227,9773 6514,9775
-Hohenstaufenstr. zur Münchener Str.: frühzeitig Fußgängerampel nach links benutzen	PI; 6514,9775 6227,9773 6227,9531
+Münchener Str., über Hohenstaufenstr.: Fußgängerampel auf der linken Seite verwenden	PI; 6219,9891 6210,9833 6209,9772 6227,9531
+Münchener Str., Richtung Martin-Luther-Str.: Fußgängerampel auf der linken Seite verwenden	PI; 6219,9891 6210,9833 6209,9772 6241,9772 6514,9775
+Hohenstaufenstr. zur Münchener Str.: frühzeitig Fußgängerampel nach links benutzen	PI; 6514,9775 6241,9772 6209,9772 6227,9531
 Thomas-Dehler-Str. => Stülerstr.: nach dem Abbiegen zunächst auf dem linken Gehweg bleiben	PI; 6654,11460 6716,11439 6825,11486
 Gervinusstr./Lewishamstr.: Gehweg zur Ampel benutzen	PI; 3839,10904 3631,10784 3644,10759
 Tiergarten: rechts des Neuen Sees halten	CP; 5901,11902 5890,11865 5870,11842
@@ -99,7 +99,7 @@ Stralauer Allee - Warschauer Platz: bereits vor der U-Bahnbrücke die Straßenseit
 Am Schinkelplatz: Nicht ausgeschildert, Fortsetzung der Unterwasserstr.	CP; 10109,12238 10084,12228 10008,12378 9987,12421
 Am Schinkelplatz: Nicht ausgeschildert, Fortsetzung der Unterwasserstr.	CP; 9972,12184 10084,12228 10008,12378 9987,12421
 Am Schinkelplatz: Nicht ausgeschildert, Fortsetzung der Unterwasserstr.	CP; 10201,11995 10084,12228 10008,12378 9987,12421
-Unter Umständen bereits an der Ampel Steinmetzstr. die Straßenseite wechseln	PI; 7698,10147 7813,10112 7850,10351
+Unter Umständen bereits an der Ampel Steinmetzstr. die Straßenseite wechseln	PI; 7698,10147 7702,10146 7813,10112 7850,10351
 Weißenhöher Str. - Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen, bis zum Tunnel Friedrichsfelde vorfahren und ggfs. die Straßenseite wechseln	PI; 19827,11686 19693,11762 19283,11785
 Regensburger Str. - Bundesallee: zunächst auf der linken Gehwegseite bis zur Kreuzung Nachodstr. fahren und dort die Straßenseite wechseln	PI; 5541,9923 5475,9914 5472,9850
 Bundesallee - Pariser Str.: an der Kreuzung Nachodstr. auf die linken Gehwegseite der Bundesallee wechseln	PI; 5472,9850 5475,9914 5416,9928
@@ -241,7 +241,7 @@ Sonnenallee - Anzengruberstr.: Sonnenalle schon an Innstr. oder erst an der Fino
 Rudower Chaussee - Max-Born-Str.: Rudower Chaussee kann über Fußgängerfurt gequert werden	CP; 19071,2746 19111,2777 19064,2867
 Max-Born-Str. - Rudower Chaussee: Rudower Chaussee kann über Fußgängerfurt gequert werden	CP; 19064,2867 19111,2777 19206,2848
 Straßenbahnhaltestelle überqueren oder umfahren	CP; 9215,13392 9281,13374 9607,13507
-Kulmer Str./Goebenstr.: Fußgängerampel an der linken Seite zum Überqueren der Goebenstr. benutzen	CP; 7771,9479 7829,9723 7862,9893
+Kulmer Str./Goebenstr.: Fußgängerampel an der linken Seite zum Überqueren der Goebenstr. benutzen	CP; 7771,9479 7829,9723 7866,9902
 zur Kietzer Str.: gegenüber der Mauritiuskirchstr. in die Grünanlage einfahren	CP2; 15339,11912 15298,11892
 Zufahrt zum Gartenbauamt	CS; 9141,9142 8973,9171
 Ellwanger Str. - Attilastr.: Attilastr. in Höhe der Neckarsulmer Str. überqueren	CP; 7382,4503 7450,4397 7601,4485
@@ -271,3 +271,6 @@ Am Ende der Straße RECHTS neben dem Tor weiterfahren	CP; -1100,39025 -965,39065 
 rechts an dem Verteilerkasten vorbei (direkt am Wassergraben entlang)	CP; -2118,39157 -2032,39137 -2014,39128
 hinter dem Verteilerkasten scharf links (direkt am Wassergraben entlang)	CP; -2004,39140 -2032,39137 -2014,39128
 ganz am Ende der Stichstraße links	CP; -2050,39003 -2000,39121 -2014,39128
+Alexanderstr. - Jacobystr.: bereits an der Ampel Alexanderstr./Grunerstr. auf die linke Straßenseite wechseln	PI; 11134,12793 11207,12706 11260,12809
+Jacobystr. - Alexanderstr.: zunächst auf der linken Seite weiterfahren	CP; 11260,12809 11207,12706 11323,12484
+Skalitzer Str. - Adalbertstr.: entweder schon am Kottbusser Tor auf die gegenüberliegende Straßenseite wechseln oder die Fußgängerampel am U-Bahnhof zum Überqueren benutzen	PI; 11370,10398 11336,10390 11314,10320

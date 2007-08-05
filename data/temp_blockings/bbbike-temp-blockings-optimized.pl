@@ -289,7 +289,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'text' => 'Reichstagufer (Mitte) in beiden Richtungen Baustelle, Straße vollständig gesperrt, Fußgänger können passieren (bis 30.09.2008)',
          'from' => 1174068849,
          'id' => 873,
-         'data' => 'userdel	q4::inwork 9091,12681 9209,12795 9283,12856
+         'data' => 'userdel	q4::inwork 9098,12687 9209,12795 9283,12856
 ',
          'type' => 'handicap'
        },
@@ -1056,15 +1056,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1186344000,
-         'text' => '5. Open Air Gallery am Sonntag, den 05.08.2007 von 10.00 bis 22.00 Uhr auf der Oberbaumbrücke ',
-         'from' => 1186214400,
-         'id' => 1107,
-         'data' => 'userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1196463600,
          'text' => 'L 029 Oderberg-Liepe OD Oderberg Straßenbauarbeiten Vollsperrung 06.08.2007-30.11.2007 ',

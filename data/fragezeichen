@@ -409,9 +409,8 @@ Häsen - Gutengermendorf: Qualität? Westlich/nördlich der Bahnstrecke anscheinend
 Gutengermendorf - Häsen: Qualität? am Bahnübergang anscheinend Feldweg (Q2)	? -6390,59554 -6070,59687 -5227,60124 -5044,59890 -4597,59799 -4313,59921 -3764,59657 -3537,59727
 (bei Altlüdersdorf): Qualität? westlich des Bahnübergangs anscheinend mäßiger Asphalt (Q1)	? -7200,71187 -6182,71661 -5335,72039
 Seilershof - B96: Qualität? am Bahnübergang anscheinend asphaltiert	? -7455,74445 -6794,74226 -6517,74079 -6100,73876 -6037,73865
-Heylstr: Qualität?	? 6465,8326 6548,8335
+Heylstr: Qualität?	? 6459,8281 6552,8281
 Mühlenstr. (Blankenburg): Asphalt, Radweg?	? 14389,20254 14460,20406 14499,20649 14589,20988
-Paradestr.: Gibt es hier eine Abkürzung über den Adolf-Scheidt-Platz?	? 8770,8018 8724,8021
 Beelitz - Schönefeld: laut "Berliner Umland" wurde die Straße etwas nach Süden verlegt	? -18265,-20481 -18031,-20502 -17867,-20681
 Thyrow - Kerzendorf (ehem. B101): laut "Berliner Umland" am Bahnübergang unterbrochen, B101n stattdessen benutzen! 	? 1090,-16407 1773,-15712 1856,-15356
 Umfahrung Nauen: auch für Radfahrer benutzbar?	? -24421,19803 -24681,20018 -24904,20093 -25871,20229 -26745,20437 -27095,20987 -27689,21958 -28075,22250
@@ -731,7 +730,7 @@ Nördlich des Grimnitzsees: Qualität?	? 33689,65780 34018,65700 34347,65737 35176
 Neugrimnitz - Ziethen: Qualität?	? 38272,63836 38577,63641 38759,63647 39131,63537 39637,63244 39741,63220 39832,63263
 Neugrimnitz - B198: Qualität?	? 39637,63244 39576,63074 39521,62861 39503,62647 39375,62148 39180,61605 39156,61459 39003,61246
 B2 - Chorin: Qualität?	? 41847,54619 41806,54725 41636,54890 41538,55140 41301,55146 41093,55310 41173,55516
-Wilhelm-von-Siemens-Str.: existiert zwischen Fritz-Werner-Str. und Hirzerweg möglicherweise eine Einbahnstraße Richtung Westen (auch für Radfahrer)?	? 9422,2648 9072,2589
+Wilhelm-von-Siemens-Str.: existiert zwischen Fritz-Werner-Str. und Hirzerweg möglicherweise eine Einbahnstraße Richtung Westen (auch für Radfahrer)?	? 9437,2649 9072,2589
 Cimbernstr.: Qualität?	? -3753,2241 -3703,2137 -3503,1988 -3299,1838
 Selchow - Kiekebusch: Qualität zwischen Kreuzung Diepensee-Rotberg und Kreuzung Dahlewitz/Zeuthen (wahrscheinlich Plattenweg)	? 18764,-5531 19915,-6315
 Prieroser Str.: Qualität?	? 28164,-19771 28231,-19792 28421,-19768
@@ -895,7 +894,6 @@ Ilsensteinweg: Qualität?	? -1885,3319 -1899,3298 -1819,3042 -1814,3021 -1724,274
 McNair-Promenade: Wie ist die Qualität, die ADFC-Karte meint "schlecht geeignet"?	? 2163,1499 1975,1413 1882,1376 1785,1338
 Adele-Sandrock-Str.: Qualität der Straße (betoniert, asphaltiert oder etwas anderes)?	? 25172,14384 25018,14466 25006,14483 24981,14550 24951,14649 24937,14693 24939,14715 24963,14760 24989,14783 25080,14812 25103,14838
 Hobrechtsfelde - Gorinsee: Qualität (wahrscheinlich fester Sandweg)?	? 16301,29192 15621,29290
-Zieten- und Wilhelmplatz: sind die Plätze ausgeschildert?	? 8990,11719 9076,11743 9173,11770
 Clara-Jaschke-Str. - Berta-Benz-Str. - Katharina-Paulus-Str.: Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	?; 7863,12927 7866,13009 7779,13012 7768,13175 7764,13236
 B110, Umgehung Anklam: westlicher Teil der Umgehung schon fertig?	? 26264,159478 25880,159605 25185,160127 24733,160839 24722,161235
 Demnitz - L28: nördlicher Teil asphaltiert, Rest auch?	? 34171,142029 34186,141681 34232,141608
@@ -951,6 +949,7 @@ Waldseeweg: Qualität?	? 3762,23362 3621,23548 3587,23584
 Schloßstr. (Hermsdorf): Qualität?	? 4058,23342 3953,23401 3632,23563 3587,23584 3563,23609 3471,23750
 Schulzendorfer Str.: Ist die Schulzendorfer Straße eine Vorfahrtsstraße?	? 22222,156 22303,67 22312,48 22382,-87 22418,-181 23037,-1076
 # added from ampeln-orig
+#: add_fragezeichen: Ist hier (Wilhelmstr./Zimmerstr.) tatsächlich eine Ampel?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
 # added from other sources: (strassen plaetze landstrassen landstrassen2 strassen_bab flaechen wasserstrassen wasserumland wasserumland2 sbahn sbahnhof rbahn rbahnhof ubahn ubahnhof faehren hoehe orte orte2 orte_city ampeln ampelschaltung plz potsdam deutschland grenzuebergaenge sehenswuerdigkeit obst radwege qualitaet_s qualitaet_l handicap_s handicap_l vorfahrt nolighting housenumbers green brunnels gesperrt gesperrt_car gesperrt_u gesperrt_s gesperrt_r comments_cyclepath comments_ferry comments_misc  comments_mount comments_path comments_route  comments_tram comments_kfzverkehr comments_scenic fragezeichen exits multi_bez_str)
@@ -965,6 +964,7 @@ Nymphenufer: mäßig geeignet (laut ADFC-Karte)	? -4044,1841 -3981,1764 -3806,1644
 (Orankestr. - Orankesee): gut geeignet (laut ADFC-Karte)	? 15598,15793 15581,15846
 Hohenschönhausener Weg: asphaltiert (laut Radzeit 3/2006)	? 15611,18547 16317,18020
 (Uferpromenade Spreebogenpark) (hat dieser Weg einen Namen (Ludwig-Erhard-Ufer?)?)	? 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871
+Aprikosensteig (wie ist die genau Straßenführung des Aprikosensteigs: bis zum Thujaweg oder bis zum Ligusterweg?)	? 15445,4878 15474,4845 15558,4758 15558,4757 15608,4722 15690,4668 15774,4612 15863,4554
 Rue Charles Calmette (Qualität (womöglich Beton)?)	? 3753,16638 3711,16670 3684,16788
 Freiheitsweg (ausgeschilderte Radroute - welche?)	? 6558,18947 6715,18918 6753,18909 6829,18887 6910,18861 7157,18810
 Jugendplatz (Qualität?)	? 1191,14513 1262,14510
@@ -1013,6 +1013,7 @@ Friedrich-Wilhelm-Str. (Einbahnstraße?)	? -14242,105542 -14166,105632 -14061,105
 Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
 Gransee (Gehronsee (auch laut Regio-Atlas, Tsp, Wikipedia), Geronsee (Tippfehler im Tsp?), Gransee (auch laut ALDI-Karte): was stimmt?)	? -7203,67185 -7245,67645 -6770,67990 -6533,68121 -6252,67950 -6014,67972 -5927,67800 -6360,67648 -6770,67411 -7030,67079
 Barthels Pfuhl (oder Barth*o*ls Pfuhl?)	? -23662,80950 -23775,80837 -23675,80725 -23587,80825 -23587,80912
+ (Ist hier (Wilhelmstr./Zimmerstr.) tatsächlich eine Ampel?)	? 9162,11286
 Eastgate (genaue Position?)	? 19788,15452
 Müncheberg, Turm (genaue Bezeichnung?)	? 60803,11559
 Müncheberg, Turm (genaue Bezeichnung?)	? 60306,11906
@@ -1101,6 +1102,7 @@ Riensbergstr. (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für A
 Triniusstr. (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? 18339,6660 18273,6606
 Planetenstr. (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? 15175,7221 15056,7198 14951,7163
 Techowpromenade (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? 5219,20467 5185,20358 5173,20275 5170,20182
+Germersheimer Weg (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer? In welchem Abschnitt genau ist die Einbahnstraße?)	? -4489,15014 -4507,15068 -4499,15152 -4497,15176 -4495,15198 -4466,15460
 tragen (zwei kurze Treppen) (wo sind die Treppen genau?)	? 9453,6415
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position ist vielleicht nicht ganz genau)	? -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9046,22376
 Radwege unterschiedlicher Form und Qualtität (genauer spezifizieren)	? -9723,-2451 -9700,-2459 -9534,-2515 -9462,-2540 -9075,-2664 -8865,-2732 -8500,-2856 -8428,-2886 -8283,-2917 -7873,-3094 -7060,-3124 -6810,-3151

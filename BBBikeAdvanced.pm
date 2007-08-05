@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.185 2007/07/24 20:31:31 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.187 2007/08/05 20:40:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1286,13 +1286,14 @@ sub set_line_coord_interactive {
     };
 
     my $b = $t->Button
-	(-text => M"Selection setzen",
+	(-text => M("Selection setzen") . " (F11)",
 	 -command => sub {
 	     $set_sub->(-clever_center => 1);
 	 })->pack;
     $b->bind("<3>" => sub {
 		 $set_sub->(-dont_center => 1);
 	     });
+    $top->bind("<F11>" => sub { $b->invoke });
 
     $t->Label(-text => "Koordinatensystem:")->pack(-anchor => "w");
     $t->Radiobutton(-variable => \$map,

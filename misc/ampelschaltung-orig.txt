@@ -8,7 +8,7 @@ Do, 22.10.1998
 8595,9495     Katzbachstr./Yorckstr.             S->N   60  11:26:00  11:26:10
 7829,9723     Goebenstr./Kulmer Str.             O->W       11:28:32
 7941,9686     Goebenstr./Mansteinstr.            O->W                 11:28:52
-7862,9893     Bülowstr./Denewitzplatz            S->N       11:29:40
+7866,9918     Bülowstr./Denewitzplatz            S->N       11:29:40
 7579,10183    Bülowstr./Potsdamer Str.           O->W       11:31:10  11:30:30
 7413,10244    Bülowstr./Frobenstr.               O->W       11:31:35? 11:31:00
 7037,10359    Bülowstr./Einemstr.                O->W                 11:32:23
@@ -85,7 +85,7 @@ Sa, 24.10.1998
 9248,9350     Mehringdamm/Kreuzbergs. (Rad)      S->N                 +5s
 9793,9241     Bergmannstr./Friesenstr.           W->S   70  19:31:20  19:28:21
 9753,9252     Bergmannstr./Zossener Str.         W->O   70  19:28:20  19:27:46
-9492,9311     Bergmannstr./Nostitzstr.           W->O       19:29:10  19:28:42
+9489,9312     Bergmannstr./Nostitzstr.           W->O       19:29:10  19:28:42
 9248,9350     Kreuzbergstr./Mehringdamm          O->W   70  19:32:20  19:32:38
 8955,9318     Kreuzbergstr./Großbeerenstr.       O->W   70  19:34:08  19:33:34
 8598,9264     Kreuzbergstr./Katzbachstr.         O->W   70  19:34:07  19:34:27
@@ -143,7 +143,7 @@ Mo, 26.10.1998
 7037,10359    Kleiststr./Maaßenstr.              O->W       16:50:06
 7413,10244    Bülowstr./Frobenstr.               O->W   60  16:50:33  16:50:57
 7579,10183    Bülowstr./Potsdamer Str.           O->W   70  16:51:33  16:51:55
-7862,9893     Bülowstr./Denewitzplatz            N->S       16:54:28  16:53:49
+7866,9918     Bülowstr./Denewitzplatz            N->S       16:54:28  16:53:49
 7829,9723     Kulmer Str./Goebenstr.             N->O       16:54:35
 8188,9610     Yorckstr./Bautzener Str.           W->O   70  16:56:16  16:55:46
 8595,9495     Yorckstr./Katzbachstr. (Auto)      W->O   70  16:57:50  16:57:18
@@ -342,8 +342,8 @@ Sa, 31.10.1998
 4009,9465     Westfälische/Konstanzer Str.       W->O   60  16:04:38  16:04:58
 4347,9290     Fehrbelliner Platz (Auto)          NW->SO     16:07:03  16:07:22
 4347,9290     Fehrbelliner Platz (Rad)           NW->SO               +5s
-4781,8863     Brandenburgische Str./Berliner Str NW->O      16:09:10  16:09:22
-4928,8859     Berliner Str./Uhlandstr. (Rad)     W->O   60  16:11:19  16:10:40
+4777,8870     Brandenburgische Str./Berliner Str NW->O      16:09:10  16:09:22
+4918,8872     Berliner Str./Uhlandstr. (Rad)     W->O   60  16:11:19  16:10:40
 5505,8832     Badensche Str./Bundesallee         W->O       16:14:00
 5655,8828     Badensche Str./Prinzregentenstr.   W->O   60  16:14:13  16:14:38
 6023,8799     Badensche Str./Meraner Str.        W->O       16:15:41
@@ -379,7 +379,7 @@ Mo,  2.11.1998
 10719,9259    Körtestr/Südstern                  N->S       14:31:33
 9793,9241     Bergmannstr/Friesenstr. (Rad)      O->W                 11:34:14
 9753,9252     Bergmannstr/Zossener Str.          O->W       14:34:48
-9492,9311     Bergmannstr/Nostitzstr.            O->W       14:35:46  14:35:18
+9489,9312     Bergmannstr/Nostitzstr.            O->W       14:35:46  14:35:18
 9248,9350     Bergmannstr/Mehringdamm            O->W       14:36:25
 9248,9350     Bergmannstr/Mehringdamm (Rad)      N->S       14:36:53
 9222,8787     Mehringdamm/Dudenstr. (Rad)        N->S       14:38:48
@@ -390,7 +390,7 @@ Mo,  2.11.1998
 Fr,  6.11.1998
 9248,9350     Kreuzbergstr/Mehringdamm  (Rad)    W->O       12:05:47
 9248,9350     Kreuzbergstr/Mehringdamm  (Auto)   W->O       12:05:49
-9492,9311     Bergmannstr/Nostitzstr             W->O       12:06:07
+9489,9312     Bergmannstr/Nostitzstr             W->O       12:06:07
 9753,9252     Bergmannstr/Zossener Str.          W->O       12:06:30
 9793,9241     Bergmannstr/Friesenstr (Rad)       W->O       12:07:50  12:07:06
 10719,9259    Südstern/Lilienthalstr             W->O       12:09:56
@@ -425,7 +425,7 @@ Di, 10.11.1998
 10189,9403    Baerwaldstr/Gneisenaustr.          S->N       16:33:53
 9753,9252     Bergmannstr/Zossener Str.          O->W       16:35:14  16:34:28
 9793,9241     Bergmannstr/Friesenstr. (?)        O->W       16:35:24  16:34:39
-9492,9311     Bergmannstr/Nostitzstr.            O->W       16:35:57
+9489,9312     Bergmannstr/Nostitzstr.            O->W       16:35:57
 9248,9350     Bergmannstr/Mehringdamm            O->W   80  16:36:25  16:36:42
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
@@ -454,7 +454,7 @@ Di, 10.11.1998
 	      Kleiststr/Motzstr.		 W->O	    18:20:49
 7037,10359    Kleiststr/Maaßenstr.               W->O   60  18:21:09  18:21:24
 7413,10244    Bülowstr/Frobenstr.                W->O       18:22:36
-7862,9893     Dennewitzplatz                     N->S       18:25:10
+7866,9918     Dennewitzplatz                     N->S       18:25:10
 8188,9610     Yorckstr./Bautzener Str.           W->O       18:26:57
 8595,9495     Yorckstr/Katzbachstr.              W->O       18:28:32
 8777,9601     Yorckstr/Möckernstr.               SW->NO               18:29:17
@@ -605,7 +605,7 @@ Di, 31.03.1999
 10719,9259    Südstern                           N->S   60  13:27:50  13:28:03
 10542,9297    Südstern/Blücherstr.               O->W       13:29:16
 10189,9403    Gneisenau/Baerwaldstr.             O->W       13:30:44  13:30:10
-9915,9480     Gneisenau/Mittenwalder Str.        O->W       13:31:03  13:31:31
+9919,9479     Gneisenau/Mittenwalder Str.        O->W       13:31:03  13:31:31
 9784,9519     Gneisenau/Zossener                 O->W       13:32:15  13:31:41
 9532,9600     Gneisenau/Nostitzstr.              O->W       13:32:32
 9334,9670     Gneisenau/Mehringdamm (Auto)       O->W       13:33:40  13:33:03
@@ -617,7 +617,7 @@ Di, 31.03.1999
 Mi, 01.04.1999
 9248,9350     Mehringdamm/Kreuzbergstr. (Rad)    W->O       10:56:53  10:56:02
 9248,9350     Mehringdamm/Kreuzbergstr. (Auto)   W->O       10:56:55  10:56:02
-9492,9311     Bergmann/Nostitz                   W->O   55  10:57:35  10:57:53
+9489,9312     Bergmann/Nostitz                   W->O   55  10:57:35  10:57:53
 9753,9252     Bergmannstr. (Kreuzberg)/Zossener  W->O       10:58:46  10:58:12
 9793,9241     Bergmannstr./Friesenstr. (Auto)    W->S       10:58:16
 10719,9259    Lilienthalstr./Südstern/Körtestr.  W->O   60  11:01:12  11:01:43
@@ -629,7 +629,7 @@ Mi, 01.04.1999
 10719,9259    Lilienthalstr./Südstern/Körtestr.  N->S   70  16:45:04  16:45:18
 10542,9297    Gneisenaustr./Südstern/Blücherstr  O->W   70* 16:46:36
 10189,9403    Gneisenaustr./Baerwaldstr.         O->W   70* 16:47:11
-9915,9480     Gneisenaustr./Mittenwalder Str.    O->W   70  16:48:41  16:48:13
+9919,9479     Gneisenaustr./Mittenwalder Str.    O->W   70  16:48:41  16:48:13
 9784,9519     Gneisenaustr./Zossener Str.        O->W   70  16:49:03  16:49:36
 9532,9600     Gneisenaustr./Nostitzstr.          O->W   70* 16:50:30  16:49:57
 9334,9670     Mehringdamm/Yorckstr./Gneisenaust  O->W   65  16:53:10  16:52:25
@@ -702,7 +702,7 @@ Fr, 09.04.1999
 9222,8787     Dudenstr./Mehringdamm/Platz der L  S->N       13:47:29
 9532,9600     Gneisenaustr./Nostitzstr.          W->O       14:09:56  14:09:23
 9784,9519     Gneisenaustr./Zossener Str. (Kreu  W->O   60  14:10:17  14:10:42
-9915,9480     Gneisenaustr./Mittenwalder Str.    W->O       14:11:26
+9919,9479     Gneisenaustr./Mittenwalder Str.    W->O       14:11:26
 10189,9403    Gneisenaustr./Baerwaldstr.         W->O   60  14:11:44  14:12:11
 10542,9297    Gneisenaustr./Südstern/Blücherstr  W->O   60  14:13:12  14:12:39
 10719,9259    Lilienthalstr./Südstern/Körtestr.  W->O       14:15:14  14:14:44
@@ -962,7 +962,7 @@ Mo, 26.04.1999
 7037,10359    Bülowstr./Einemstr./Kleiststr./Mo  N->S       18:18:00
 7413,10244    Bülowstr./Frobenstr.               W->O   60  18:18:55  18:19:20
 7579,10183    Potsdamer Str./Bülowstr.           W->O   70  18:19:56  18:20:18
-7862,9893     Kulmer Str./Bülowstr./Dennewitzpl  N->S                 18:22:10
+7866,9918     Kulmer Str./Bülowstr./Dennewitzpl  N->S                 18:22:10
 7941,9686     Yorckstr./Goebenstr./Bülowstr.     N->S   70  18:23:54? 18:22:57?
 8188,9610     Yorckstr./Bautzener Str.           W->O       18:24:37
 8595,9495     Katzbachstr./Yorckstr.             NW->NO     18:26:12  18:25:41
@@ -1146,7 +1146,7 @@ Fr, 30.04.1999
 Fr, 30.04.1999
 12753,8187    Karl-Marx-Str./Werbellinstr./Gang  O->W       17:36:34
 11979,8014    Hermannstr./Herrfurthstr./Werbell  O->W   80  17:39:10  17:39:25
-11933,8198    Hermannstr./Boddinstr.             S->N       17:41:01  17:40:37
+11931,8206    Hermannstr./Boddinstr.             S->N       17:41:01  17:40:37
 11892,8372    Hermannstr./Flughafenstr.          S->N   80? 17:41:09  17:42:01
 11632,8302    Columbiadamm/Flughafenstr.         O->W       17:43:55  17:43:18
 10213,8665    Columbiadamm/Golßener Str.         O->W   70  17:47:20  17:47:54

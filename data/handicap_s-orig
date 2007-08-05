@@ -1,10 +1,11 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.151 2007/07/29 19:34:56 eserte Exp eserte $
+#: version: $Id: handicap_s-orig,v 4.152 2007/08/05 20:41:54 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # XXX hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
-Behrenstr./Bebelplatz: Einbahnstraße	q3::inwork; 9626,12227 9700,12234 9743,12239 9801,12245
+#: last_checked: 2007-08-04
+Behrenstr./Bebelplatz: Einbahnstraße	q3::inwork; 9626,12227 9700,12234 9743,12239
 #XXX del Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
 Bodestr.: Bauarbeiten	q4::inwork 9912,12623 9943,12642
 # del by: http://www.berlin-straba.de/strecke-alex2.htm (Fertigstellungsdatum) Dircksenstr.: Bauarbeiten (Bau einer neue Straßenbahnstrecke, bis 2007-05-31)	q4::inwork 10781,13002 10844,12935 10960,12809
@@ -14,7 +15,7 @@ Pappelplatz (Mitte): gemeinsamer Fuß- und Radweg	q2 9737,14126 9663,14036
 (Frankfurter Allee - Liebigstr.): Fußgänger	q2 13885,12279 13905,12374
 Otto-Ludwig-Str.: Fußgängerzone	q2 4862,10881 4954,10876
 Mauerstr. (Mitte): Fußgänger, Bordsteine	q3 9405,11413 9461,11412
-Georgenstr.: Fußgänger	q1 9437,12662 9308,12649
+Georgenstr.: Fußgänger	q1 9434,12669 9313,12662
 Neue Promenade: Fußgängerzone, Radfahren erlaubt	q2 10294,13070 10185,12982 10132,12941
 Pariser Platz/Brandenburger Tor: Fußgänger	q2 8804,12280 8610,12254 8515,12242
 Potsdamer Platz: Fußgänger	q3 8542,11502 8462,11538
@@ -90,7 +91,7 @@ Bahnhofsgebäude	q4 7854,7572 7934,7621 7959,7609
 Marx-Engels-Forum: Fußgänger, eigentlich Schiebestrecke	q2 10300,12587 10355,12551 10411,12471 10422,12395
 Volkspark Friedrichshain: Fußgänger	q1 12325,13148 12344,13157 12372,13198 12382,13262 12474,13311 12438,13387 12483,13418 12446,13570 12336,13646 12403,13755
 Volkspark Friedrichshain: Fußgänger	q1 12336,13646 12128,13604 12115,13540 12005,13481 11982,13471
-Volkspark Friedrichshain: Fußgänger	q1 12128,13604 12185,13717
+Volkspark Friedrichshain: Fußgänger	q1 12128,13604 12161,13711
 Volkspark Friedrichshain: Fußgänger	q1 12115,13540 12091,13449 12088,13403
 Volkspark Friedrichshain: Fußgänger	q1 12386,13085 12387,13107 12344,13157 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11772,13624
 Volkspark Friedrichshain: Fußgänger	q1 11857,13596 11842,13576
@@ -113,6 +114,7 @@ Carl-Schurz-Str.: Fußgängerzone	q3 -3513,14238 -3445,14226 -3409,14241 -3338,143
 Charlottenstr.: Fußgängerzone	q3 -3227,14260 -3338,14333 -3397,14370
 Moritzstr.: Fußgängerzone	q3 -3275,14407 -3350,14446 -3417,14483 -3481,14523
 Mauerstr. (Spandau): Fußgängerzone	q3 -3316,14169 -3409,14241
+Eichgestell: bei schönem Wetter viele Fußgänger	q1 19052,6823 19407,6660 19590,6590 19986,6404 20200,6321 20293,6278
 Wuhlheide/R1: Fußgänger	q2 20440,6221 20293,6278
 (am Schloß Schönhausen): Fußgänger	q2 10308,19297 10350,19182 10390,19069
 Blockdammweg (Brücke): eng, Fußgänger	q2 17976,8964 18087,9035 18124,9056
@@ -167,7 +169,7 @@ Goerdelersteg: enge wendelförmige Rampen	q3 3619,14183 3600,14278
 Goerdelerdamm: enger Zweirichtungsradweg	q1 3600,14278 3707,14303 4676,14534
 Schneckenbrücke: Rampe	q3 2012,3356 1977,3414
 Radweg eng und bewachsen	q1 5071,14614 5264,14671 5440,14840
-Tunnel S-Bhf. Grunewald: Fußgänger	q2 698,9124 731,9103 884,8954
+Tunnel S-Bhf. Grunewald: Fußgänger	q2 693,9129 731,9103 884,8954
 enge Kurven	q2 33533,2761 33293,2768
 Kieler Str.: Bordsteine, Fußgänger	q3 5000,5816 5050,5785
 Fontanepromenade: enger Gehweg	q2 10764,9689 10752,9662
@@ -375,6 +377,7 @@ Unterführung unter der Stromstr.: Fußgänger, eng	q2 6218,12975 6180,12962 6121,1
 Wustermarker Str.: Fußgänger, Bordsteine	q2 -4750,14393 -4678,14382
 Firlstr.: zwei Bodenschwellen	q1 18574,6401 18623,6523
 Waldesruher Str.: parkende Autos	q1; 24910,7896 24923,7903 25047,8086
+(Florastr. - Schloßstr.): Fußgänger	q2 5234,6086 5165,6119
 ######################### User Contributions #################################
 #: by: Petra (ploewe...):
 An der Heilandsweide: Fußgänger	q1 8203,1194 8305,1148 8539,1025 8687,950
@@ -632,13 +635,13 @@ Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 8000,10879 8135,10784
 (Volkspark Friedrichshain, parallel zur Friedenstr.):Fußgänger	q1 12386,13085 12387,13107 12344,13157 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11772,13624
 (Weydemeyerstr.): Fußgänger	q1 11905,12765 11873,12778 11851,12729
 (Weydemeyerstr.): Fußgänger	q1 11978,12673 11987,12763 11918,12789
-(Karl-Marx-Allee): Fußgänger, Bordsteine	q1 11557,12869 11573,12860 11667,12811
+(Karl-Marx-Allee): Fußgänger, Bordsteine	q1 11560,12874 11600,12857 11622,12850 11725,12809
 (Karl-Marx-Allee - Berolinastr.): Fußgänger	q1 11419,12944 11362,12964 11295,12915
-(Karl-Marx-Allee - Berolinastr.): Fußgänger	q1 11573,12860 11540,12795
+(Karl-Marx-Allee - Berolinastr.): Fußgänger	q1 11600,12857 11589,12768
 (Berolinastr.): Fußgänger	q1 11834,12902 11862,12889 11942,12839
 (Berlolinastr.): Fußgänger	q1 11834,12902 11862,12889 11880,12921 11921,12990 11983,12949
 (Berolinastr.): Fußgänger	q1 11921,12990 11858,13029
-(Berolinastr.): Fußgänger	q1 11815,13045 11700,13102
+(Berolinastr.): Fußgänger	q1 11815,13045 11719,13088
 (Berolinastr.): Weg am Spielplatz vorbei	q2 11858,13029 11815,13045
 (Berolinastr. - Mollstr.): Fußgänger	q1 11858,13029 11863,13053 11867,13076
 (Berolinastr. - Mollstr.): Fußgänger	q1 11608,12985 11681,13161
@@ -647,13 +650,13 @@ Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 8000,10879 8135,10784
 Weinstr.: Fußgänger, Wurzeln	q3 11793,13247 11909,13387
 Weinstr.: Fußgänger	q1 11953,13437 11982,13471
 (Fußweg Büschingstr. - Mollstr.): Fußgänger, schmal	q2 11879,13133 11905,13069
-(Mollstr. - Barnimstr.): Fußgänger	q1 11721,13142 11754,13199
+(Mollstr. - Barnimstr.): Fußgänger	q1 11723,13139 11754,13199
 Brüder-Grimm-Gasse: Fußgänger	q2 8351,11163 8343,11133
 (zum Anhalter Steg): eng, Fußgänger	q2 8659,10239 8685,10317 8726,10351
 (Anhalter Steg): Fußgänger	q1 8726,10351 8773,10429
 (Anhalter Steg - Anhalter Bahnhof): Fußgänger	q1 8773,10429 8776,10548 8854,10712 8912,10846 8938,10872
-(Linkstr. - Alte Potsdamer Str.): Fußgänger, schmal	q3 8474,11350 8420,11385
-Voxstr.: Fußgänger	q3 8309,11390 8390,11363
+(Linkstr. - Alte Potsdamer Str.): Fußgänger, schmal	q3 8474,11350 8389,11378
+Voxstr.: Fußgänger	q3 8309,11390 8375,11368
 Alice-Salomon-Park: getrennte Wege für Radfahrer und Fußgänger, Bordsteine	q2 6851,9365 6767,9492 6728,9515
 (Geßlerstr. - Monumentenstr.): Fußgänger, Kinder	q2 7970,8886 7964,9060 8009,9063 8014,9126
 (Loewenhardtdamm - Höhndorfstr.): Fußgänger, Bordsteine, Schranken	q2 8318,8692 8429,8692
@@ -994,3 +997,5 @@ Chamissostr. (Französisch Buchholz): enge Straße	q1 12513,21857 12433,21880 1233
 Tassostr.: enge Straße	q1 13630,15956 13621,15990 13625,16054 13642,16118 13659,16151 13645,16192 13679,16286
 #: by: Nicole Weber:
 An der Wildbahn: viele parkende Autos in enger Straße	q1 -1581,22553 -1333,22495 -1267,22480 -1221,22468 -996,22416 -926,22399 -725,22355 -489,22295 -313,22233
+#: by: anonymous
+Wolmirstedter Weg: enge Straße	q1 -4143,15639 -4216,15635 -4283,15639

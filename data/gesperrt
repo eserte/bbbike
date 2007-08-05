@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.169 2007/07/29 19:34:53 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.170 2007/08/05 20:41:41 eserte Exp $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -16,15 +16,15 @@ Oberbaumstr.	1 12995,10669 13015,10659 13082,10634
 Oberbaumstr.	1 13082,10634 13035,10635
 am Hackeschen Markt (Süd)	1 10132,12941 10117,12966 10097,12997 9932,13109
 am Hackeschen Markt (Nord)	1 9932,13109 10077,13100 10220,13098 10264,13097
-Dennewitzplatz	1 7862,9893 7813,10112
-Dennewitzplatz	1 7813,10112 7911,10109 7862,9893
+Dennewitzplatz	1 7866,9918 7813,10112
+Dennewitzplatz	1 7813,10112 7911,10109 7866,9918
 Winterfeldtplatz	1 7049,9833 7039,10082
 Winterfeldtplatz	1 7080,10098 7126,9825
 Moritzplatz	1 10847,10853 10824,10909 10885,10928 10906,10874 10847,10853
 Segitzdamm etc.	1 10910,10131 10974,10266 10962,10340
 Segitzdamm etc.	1 10971,10367 11009,10442 11062,10458 11090,10538 11134,10642 11157,10699 11133,10714 11151,10781 11186,10843 11220,10839 11287,10976
 Erkelenzdamm etc.	1 11328,10957 11270,10820 11302,10804 11269,10731
-Erkelenzdamm etc.	1 11258,10682 11200,10678 11135,10519 11102,10442 11114,10338
+Erkelenzdamm etc.	1 11258,10682 11200,10678 11135,10519 11102,10442 11117,10326
 Erkelenzdamm etc.	1 11089,10276 11021,10242 10955,10105
 Überführung Daimlerstr.	1 8651,2197 8588,2176 8537,2286 8606,2376
 Großer Stern	1 6725,12113 6754,12108 6799,12083 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6653,12067 6690,12104 6725,12113
@@ -89,7 +89,7 @@ Edelweißstr.	1 8251,19937 7966,19968 7885,19975 7755,20059
 Angerburger Allee	1 -1524,11108 -1608,11133 -1829,11337 -1895,11400 -1966,11466
 Edelhofdamm	1 3200,25429 2938,25317 2702,25223 2730,25298 2907,25363 3211,25484
 Antonienstr./Eichborndamm	1 3930,17920 3970,18126 4009,18322 4085,18694 4098,18762 4162,18891 4240,19019 4210,18878 4171,18677 4102,18298 4059,18107 4015,17912
-Spreestr.	1 17898,6049 17939,5968 17812,5726 17779,5694
+Spreestr.	1 17898,6049 17939,5968 17816,5733 17812,5726 17779,5694
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1 15657,10846 15871,10925
 Nöldnerplatz	1 15871,10925 16032,10842
@@ -103,7 +103,7 @@ Platz S (Hundekehlestr.)	1 2277,7705 2206,7637
 Platz S (Hundekehlestr.)	1 2161,7685 2222,7718 2277,7705
 Platz am Wilden Eber	1 2723,7029 2701,7045 2688,7067 2695,7082 2717,7093 2737,7073 2742,7056 2733,7039 2723,7029
 Wexstr.	2 6371,7976 6135,7973 5807,7978 5634,8004
-Wexstr.	1 5634,8004 5824,8035 5928,8052 6229,8086 6409,8026
+Wexstr.	1 5634,8004 5824,8035 5928,8052 6266,8058 6409,8026
 Detmolder Str. (Süd)	1 4659,7982 4572,7936 4371,8018 4342,8093 4280,8188
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4659,7982
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
@@ -115,8 +115,8 @@ Giesebrechtstr.	1 3915,10684 4006,10585 4157,10418
 Bethaniendamm	1 12055,11331 12012,11235 11956,11166 11852,11102 11816,11084 11649,11075 11461,11145
 Engeldamm	1 11473,11180 11665,11118 11798,11128 11921,11185 12026,11348
 Pannierstr.	1 12202,8895 12242,8972
-Stolzenfelsstr.	1 19468,8168 19425,8140 19333,8165 19171,8280 18957,8431 18738,8584
-Dönhoffstr.	1 18744,8638 18609,8717 18514,8773 18447,8818 18372,8869 18296,8920 18201,8984 18124,9056
+Stolzenfelsstr.	1 19468,8168 19425,8140 19333,8165 19171,8280 18957,8431 18722,8582
+Dönhoffstr.	1 18726,8633 18609,8717 18514,8773 18447,8818 18372,8869 18296,8920 18201,8984 18124,9056
 Bersarinplatz	1 13742,12538 13698,12544 13678,12571 13686,12611 13710,12633 13747,12642 13770,12617 13776,12571 13742,12538
 Petersburger Platz	1 13467,12978 13558,12766
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
@@ -132,7 +132,7 @@ Schulze-Delitzsch-Platz	1 11022,11782 11155,11750
 Weydemeyerstr.	1 11905,13069 11910,13055 12062,12986 12054,12903
 Gipsstr.	1 10331,13397 10199,13446 10026,13521
 Dorotheenstr.	1 9867,12651 9723,12594 9682,12590 9574,12578 9454,12558 9323,12528
-Georgenstr.	1 9437,12662 9562,12679 9657,12694 9754,12775
+Georgenstr.	1 9434,12669 9561,12687 9659,12704 9754,12775
 Paul-Junius-Str	1 15084,13276 15082,13369
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18005,6681 18046,6687 18146,6703 18339,6660 18494,6588
@@ -179,8 +179,8 @@ Putlitzstr.	1 6286,14183 6264,13995 6242,13953
 Langhansstr. (außer Tram)	1 12046,16568 12200,16579 12409,16475
 Triftstr. (Buchholz)	1 12018,23040 12178,23034
 Joachimstr.	1 10142,13556 10081,13673
-Wilhelmsaue	1 4778,8784 4927,8785 5180,8785
-Wilhelmsaue	1 5181,8731 4926,8730 4777,8720
+Wilhelmsaue	1 4778,8784 4918,8785 5165,8784
+Wilhelmsaue	1 5164,8740 4918,8740 4777,8731
 Friedrichsruher Str.	1 3196,9193 3333,9026
 Schweidnitzer Str	1 3202,9583 3223,9837
 Mansfelder Str.	1 4102,9164 4158,9109 4228,9093 4325,9082
@@ -194,7 +194,7 @@ Darßer Str.	1 15000,18056 15031,18106 15181,18137
 Schottstr.	1 16276,12273 16389,12394
 Rüdigerstr.	1 16389,12394 16485,12384
 Alfredstr.	1 16211,11951 16261,12224 16276,12273
-Fanningerstr.	1 17139,12100 17092,12107 16994,12122 16890,12135 16782,12154
+Fanningerstr.	1 17139,12100 17092,12107 16994,12122 16890,12135 16794,12144
 Gierkeplatz	1 3450,12240 3460,12270 3484,12280 3516,12273 3531,12252 3524,12222 3495,12209 3463,12216 3450,12240
 Knaackstr.	1 11056,15009 11030,14979 11101,14768
 Hagenplatz	1 1149,8538 1094,8398
@@ -256,7 +256,7 @@ Schmitzweg	1 5914,19351 5849,19552 5763,19828
 Barbarossaplatz	1 6731,9559 6746,9540 6743,9523 6728,9515 6704,9537 6712,9557 6731,9559
 Otto-von-Simson-Str.	1 2560,5044 2835,5410
 In den neuen Gärten	1 7130,3414 7339,3276 7378,3328 7472,3308
-Braillestr.	1 4433,5315 4460,5274 4512,5199
+Braillestr.	1 4430,5324 4460,5274 4512,5199
 Mudrackzeile	1 6985,17812 7020,17690
 Gustav-Müller-Str.	1 7642,8583 7642,8815
 Gustav-Müller-Platz	1 7642,8583 7712,8560 7641,8534 7577,8558 7642,8583
@@ -378,6 +378,7 @@ Tassostr.	1 13679,16286 13645,16192 13659,16151 13642,16118 13625,16054 13621,15
 Heimat	1 1032,1325 994,1485 968,1479 941,1603
 Plonzstr.	1 16227,12280 16252,12411
 Techowpromenade	1 5219,20467 5185,20358 5173,20275 5170,20182
+Germersheimer Weg	1 -4489,15014 -4507,15068 -4499,15152 -4497,15176 -4495,15198 -4466,15460
 Weinbergstr.	1 -13519,-625 -13733,-722 -13815,-749
 Weinbergstr.	1 -13519,-625 -13257,-512
 Am Kanal	1 -12839,-1342 -12718,-1327
@@ -465,7 +466,7 @@ Waldweg	1s 25496,2429 24972,2583
 Schulenburgring	1s 9019,8434 9013,8594
 Neue Schönhauser Str.	1s 10528,13243 10441,13195 10305,13211
 Alte Schönhauser Str.	1s 10718,13625 10746,13673
-Kirchhofstr.	1s 13188,7590 13117,7471 13032,7334
+Kirchhofstr.	1s 13188,7590 13117,7471 13027,7368
 Niemannstr.	1s 14252,11368 14211,11229
 Björnsonstr	1s 10209,16674 10197,16528
 Eichhornstr.	1s 8232,11414 8258,11254
@@ -581,9 +582,9 @@ Flemmingstr. -> Oberspreestr.: Straßenbahntrasse	3 21845,4875 21726,4537 21796,4
 Oberspreestr. -> Flemmingstr.: Straßenbahntrasse	3 21579,4579 21726,4537 21845,4875
 Westendstr. -> Oberspreestr.: Straßenbahntrasse	3 21371,4437 21389,4635 21332,4655
 Oberspreestr. -> Westendstr.: Straßenbahntrasse	3 21494,4605 21389,4635 21371,4437
-Hermannstr. -> Mahlower Str.: Gitter auf Mittelstreifen	3 11933,8198 11920,8252 11773,8231
 Mahlower Str. -> Boddinstr.: Gitter auf Mittelstreifen	3 11773,8231 11920,8252 12096,8300
 Mahlower Str. -> Hermannstr.: Gitter auf Mittelstreifen	3 11773,8231 11920,8252 11892,8372
+Hermannstr. -> Mahlower Str.: Gitter auf Mittelstreifen	3 11931,8206 11920,8252 11773,8231
 Hermannstr. -> Boddinstr.: Gitter auf Mittelstreifen	3 11892,8372 11920,8252 12096,8300
 Bundesallee -> Ortrudstr.: Bundesplatztunnel	3 5358,7681 5359,7619 5493,7590
 Ortrudstr. -> Bundesallee: Bundesplatztunnel	3 5493,7590 5359,7619 5360,7554
@@ -741,8 +742,8 @@ Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3 11526,14693 11610,14
 Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3 11712,14868 11610,14886 11526,14693
 Angermünder Str. -> Torstr.: Mittelstreifen mit Straßenbahn	3 10703,13832 10640,13700 10746,13673
 Torstr. -> Angermünder Str.: Mittelstreifen mit Straßenbahn	3 10569,13719 10640,13700 10703,13832
+Torstr. -> Christinenstr.: Mittelstreifen mit Straßenbahn	3 10450,13751 10569,13719 10593,13765
 Christinenstr. -> Torstr.: Mittelstreifen mit Straßenbahn	3 10593,13765 10569,13719 10640,13700
-Torstr. -> Christinenstr.: Mittelstreifen mit Straßenbahn	3 10445,13752 10569,13719 10593,13765
 Yorckstr. -> Katzlerstr.: Linksabbiegen verboten (und unbequem)	3 8188,9610 8095,9639 8035,9437
 Katzlerstr. -> Yorckstr.: Linksabbiegen verboten (und unbequem)	3 8035,9437 8095,9639 7941,9686
 Neue Blumenstr. -> Neue Blumenstr.: Mittelstreifen	3 12118,12462 12006,12464 11709,12601
@@ -831,14 +832,14 @@ Otto-Braun-Str. -> Barnimstr.: Mittelstreifen	3 11646,13546 11550,13427 11605,13
 Wohngebiet Mendelssohnstr. -> Otto-Braun-Str.: Mittelstreifen	3 11613,13570 11646,13546 11723,13630
 Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Mittelstreifen	3 11550,13427 11646,13546 11613,13570
 Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3 11228,12951 11295,12915 11362,12964
-Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3 11362,12964 11295,12915 11540,12795
-Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3 11573,12860 11540,12795 11635,12745
-Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3 11295,12915 11540,12795 11573,12860
+Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3 11362,12964 11295,12915 11589,12768
+Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3 11295,12915 11589,12768 11600,12857
+Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3 11600,12857 11589,12768 11635,12745
 Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9008,12485 9112,12499 9323,12528
 Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9323,12528 9112,12499 9008,12485
 Mittelstr. -> Mittelstr.: An der US-Botschaft	3 9335,12442 9126,12413 9018,12400
 Mittelstr. -> Mittelstr.: An der US-Botschaft	3 9018,12400 9126,12413 9335,12442
-Sperrung vor der amerikanischen Botschaft	2 9141,12320 9126,12413 9112,12499 9100,12627
+Sperrung vor der amerikanischen Botschaft	2 9141,12320 9126,12413 9112,12499 9108,12635
 Am Rixdorfer Teich -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3 10957,8573 10911,8457 11271,8325
 Columbiadamm -> Am Rixdorfer Teich: unbequem zu überqueren (Bordsteine)	3 10796,8498 10911,8457 10957,8573
 Birkbuschstr.: unbequem zu passieren	3 4839,5167 4807,5131 4789,5079
@@ -1001,7 +1002,7 @@ Schranke (Griesinger-Krankenhaus)	BNP:5:-169 21581,12182
 Hauptweg: Schranke	BNP:5:-106 9410,21680
 Drängelgitter (Hoher Bogen)	BNP:5:48 3831,8674
 Schranke (Krankenhaus Herzberge)	BNP:5:88 17247,13519
-Drängelgitter (S-Bhf. Grunewald)	BNP:10:-57 731,9103
+Drängelgitter (S-Bhf. Grunewald)	BNP:10:-55 731,9103
 Drängelgitter (vor der Straßenbahnhaltestelle)	BNP:5:-115 29092,4761
 Schranke (Berliner Str./Woltersdorf)	BNP:5:-108 32192,5915
 Schranke, schwer passierbarf (Neue Steinmetzstr.)	BNP:10:-201 7628,9364
@@ -1084,8 +1085,10 @@ Tübinger Str. -> Bundesallee: Queren nicht möglich	3 5420,8160 5359,8140 5357,80
 Bregenzer Str.	1 4278,10262 4227,10014
 Berolinastr. -> Mollstr.: Straßenbahn	3 11863,13053 11867,13076 11839,13083
 Mollstr. -> Berolinastr.: Straßenbahn	3 11905,13069 11867,13076 11863,13053
-Mollstr. -> Büschingstr.: Straßenbahn	3 11721,13142 11839,13083 11879,13133
+Mollstr. -> Büschingstr.: Straßenbahn	3 11739,13131 11839,13083 11879,13133
 Büschingstr. -> Mollstr.: Straßenbahn	3 11879,13133 11839,13083 11867,13076
+Mollstr. -> Mollstr.: Straßenbahn	3 11719,13088 11739,13131 11723,13139
+Mollstr. -> Mollstr.: Straßenbahn	3 11839,13083 11739,13131 11719,13088
 (Berolinastr.): Tor zum Spielplatz	BNP:10:-238 11858,13029
 (Berolinastr.): Tor zum Spielplatz	BNP:10:-168 11863,13053
 (Berolinastr.): Tor zum Spielplatz	BNP:10:-249 11815,13045
@@ -1134,7 +1137,7 @@ Margarete-Sommer-Str. -> Erich-Boltze-Str.: Straßenbahnschienen	3 12972,13970 12
 Heinz-Bartsch-Str. -> Danziger Str.: Straßenbahnschienen	3 13137,13968 13037,13897 13100,13803
 Danziger Str. -> Heinz-Bartsch-Str.: Straßenbahnschienen	3 12975,13990 13037,13897 13137,13968
 Danziger Str. -> Rudi-Arndt-Str.: Straßenbahnschienen	3 13100,13803 13166,13707 13359,13832
-Rudi-Arndt-Str. -> Danziger Str.: Straßenbahnschienen	3 13359,13832 13166,13707 13228,13615
+Rudi-Arndt-Str. -> Danziger Str.: Straßenbahnschienen	3 13359,13832 13166,13707 13225,13620
 Pintschstr.	1 13342,13185 13438,12965
 Weidenweg (Friedrichshain)	1s 13678,12571 13608,12547
 Ernst-Zinna-Weg -> Landsberger Allee: Landsberger Allee	3 12564,13216 12582,13128 12727,13159
@@ -1170,8 +1173,8 @@ Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu übe
 An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3 6248,14185 6252,14249 6224,14245
 Rathenower Str. -> Otto-Dix-Str.: schwierig zu querender Mittelstreifen	3 7148,13245 7207,13118 7370,13204
 Otto-Dix-Str. -> Rathenower Str.: schwierig zu querender Mittelstreifen	3 7370,13204 7207,13118 7192,13036
-Eichkatzweg	1 1137,9943 1020,9786 934,9672
-Lärchenweg	1 1038,10018 1083,9984 1137,9943 1238,9869
+Eichkatzweg	1 1137,9921 1026,9772 925,9644
+Lärchenweg	1 1046,9989 1093,9952 1137,9921 1157,9907 1238,9869
 schieben - einzelne Stufen	0:20:-140 1412,8033
 tragen (4 x 12 Stufen)	0:180:87 874,8205
 schieben (steile Treppe mit seitlicher Rampe)	0:180:35 1176,7922
@@ -1239,14 +1242,14 @@ Pillkaller Allee -> Parkweg Ortelsburger Allee: Heerstr.	3 14,11215 21,11167 23,
 Heerstr. -> Parkweg Ortelsburger Allee: Heerstr.	3 232,11190 21,11167 23,11137
 Parkweg Ortelsburger Allee -> Heerstr.: Heerstr.	3 23,11137 21,11167 -68,11156
 Parkweg Ortelsburger Allee -> Pillkaller Allee: Heerstr.	3 23,11137 21,11167 14,11215
-Insterburgallee -> Heerstr.: Heerstr.	3 200,11428 232,11190 442,11215
+Insterburgallee -> Heerstr.: Heerstr.	3 200,11428 232,11190 439,11228
 Insterburgallee -> Insterburgallee: Heerstr.	3 200,11428 232,11190 251,11039
 Heerstr. -> Insterburgallee: Heerstr.	3 21,11167 232,11190 200,11428
-Heerstr. -> Insterburgallee: Heerstr.	3 442,11215 232,11190 251,11039
+Heerstr. -> Insterburgallee: Heerstr.	3 439,11228 232,11190 251,11039
 Insterburgallee -> Insterburgallee: Heerstr.	3 251,11039 232,11190 200,11428
 Insterburgallee -> Heerstr.: Heerstr.	3 251,11039 232,11190 21,11167
-Teufelsseestr. -> Heerstr.: Heerstr.	3 454,11159 442,11215 232,11190
-Heerstr. -> Teufelsseestr.: Heerstr.	3 467,11219 442,11215 454,11159
+Heerstr. -> Teufelsseestr.: Heerstr.	3 456,11233 439,11228 454,11159
+Teufelsseestr. -> Heerstr.: Heerstr.	3 454,11159 439,11228 232,11190
 tragen (20 Stufen)	0:30:-186 23,11137
 Oldenburgallee	1 454,11670 461,11455
 Brixplatz	1 419,12397 335,12343 215,12307
@@ -1261,14 +1264,14 @@ Spandauer Damm -> Nithackstr.: queren nur mit tragen möglich	3 3280,12512 3191,1
 Bonhoefferufer	1 3216,12994 3154,12936 3194,12830 3324,12784
 tragen (16 Stufen)	0:40:-183 4135,12685
 tragen (16 Stufen)	0:40:-188 4140,12594
-Stülpnagelstr. -> Kaiserdamm: queren schlecht möglich	3 2190,11569 2193,11434 2234,11440
-Kaiserdamm -> Stülpnagelstr.: queren schlecht möglich	3 2110,11426 2193,11434 2190,11569
-Saldernstr. -> Riehlstr.: queren schlecht möglich	3 2450,11571 2417,11465 2419,11365
-Saldernstr. -> Kaiserdamm: queren schlecht möglich	3 2450,11571 2417,11465 2612,11491
-Kaiserdamm -> Saldernstr.: queren schlecht möglich	3 2234,11440 2417,11465 2450,11571
-Riehlstr. -> Saldernstr.: queren schlecht möglich	3 2419,11365 2417,11465 2450,11571
-Riehlstr. -> Kaiserdamm: queren schlecht möglich	3 2419,11365 2417,11465 2234,11440
-Kaiserdamm -> Riehlstr.: queren schlecht möglich	3 2612,11491 2417,11465 2419,11365
+Kaiserdamm -> Stülpnagelstr.: queren schlecht möglich	3 2109,11441 2191,11451 2190,11569
+Stülpnagelstr. -> Kaiserdamm: queren schlecht möglich	3 2190,11569 2191,11451 2282,11463
+Saldernstr. -> Riehlstr.: queren schlecht möglich	3 2450,11571 2419,11472 2419,11365
+Saldernstr. -> Kaiserdamm: queren schlecht möglich	3 2450,11571 2419,11472 2612,11491
+Riehlstr. -> Saldernstr.: queren schlecht möglich	3 2419,11365 2419,11472 2450,11571
+Riehlstr. -> Kaiserdamm: queren schlecht möglich	3 2419,11365 2419,11472 2282,11463
+Kaiserdamm -> Saldernstr.: queren schlecht möglich	3 2282,11463 2419,11472 2450,11571
+Kaiserdamm -> Riehlstr.: queren schlecht möglich	3 2612,11491 2419,11472 2419,11365
 Kleine Markusstr.	1 12037,12092 11974,12110 11969,12054 12021,12037
 tragen, schieben (3 x 9 Stufen, schmale Rampe)	0:30:77 6200,12971
 tragen (30 Stufen)	0:45:47 5896,12590

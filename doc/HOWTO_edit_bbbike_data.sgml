@@ -9,7 +9,7 @@
 
 ]>
 
-<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.16 2007/07/17 19:05:09 eserte Exp $ -->
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.17 2007/08/05 20:33:55 eserte Exp $ -->
 
 <article lang="de">
  <artheader>
@@ -27,7 +27,7 @@
    </author>
   </authorgroup>
 
-  <pubdate>$Date: 2007/07/17 19:05:09 $</pubdate>
+  <pubdate>$Date: 2007/08/05 20:33:55 $</pubdate>
 
   <copyright>
    <year>2005</year>
@@ -585,7 +585,7 @@ existieren (z.B. gesehen bei der B110 zwischen Anklam und Usedom).
 Bei Ampeln wird zwischen normalen Ampeln (Kategorie <constant>X</>,
 Achtung: kann sich in Zukunft ‰ndern) und reinen Fuﬂg‰ngerampeln
 (Kategorie <constant>F</>) unterschieden. Ampeln sind nur in Berlin
-erfasst.
+und Oranienburg erfasst.
 
 <para>
 Mehrfachampeln werden meistens nur einfach erfast, aber theoretisch

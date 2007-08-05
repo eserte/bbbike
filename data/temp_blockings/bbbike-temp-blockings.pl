@@ -782,7 +782,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 12180,7387 12122,7553
-userdel	2 11920,8252 11933,8198
+userdel	2 11920,8252 11931,8206 11933,8198
 userdel	2 11920,8252 11892,8372
 userdel	2 12041,7788 12055,7751 12075,7696
 userdel	2 11979,8014 11960,8090
@@ -1001,7 +1001,7 @@ EOF
        text  => 'Ruppiner Chaussee (Hennigsdorf) Kreuzung Hennigsdorfer Straße wegen Bauarbeiten gesperrt (bis 17.10.2004)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -1854,24385 -1591,24124 -1281,23746
+userdel	q4 -1854,24385 -1591,24124 -1286,23753 -1281,23746
 userdel	q4 -1854,24385 -1896,24275 -1935,24187
 userdel	q4 -1854,24385 -1912,24442
 EOF
@@ -2980,7 +2980,7 @@ EOF
 userdel	2 12090,7651 12075,7696
 userdel	2 12090,7651 12122,7553
 userdel	2 12180,7387 12122,7553
-userdel	2 11920,8252 11933,8198
+userdel	2 11920,8252 11931,8206 11933,8198
 userdel	2 11920,8252 11892,8372
 userdel	2 12041,7788 12055,7751
 userdel	2 12041,7788 12025,7852
@@ -3068,7 +3068,7 @@ EOF
        text  => 'Universitätsstr., Richtung Dorotheenstr. gesperrt (bis 2010)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 9562,12679 9574,12578
+userdel	q4::inwork; 9561,12687 9574,12578
 EOF
      },
      { from  => 1129413600, # 2005-10-16 00:00
@@ -3840,7 +3840,7 @@ EOF
        source_id => 'LMS_1142967727545',
        data  => <<EOF,
 userdel	q4 25012,5754 23950,5342
-userdel	q4 25012,5754 25121,5799
+userdel	q4 25012,5754 25018,5756 25121,5799
 userdel	q4 25579,5980 25121,5799
 EOF
      },
@@ -4292,7 +4292,7 @@ EOF
        text  => 'Seifenkisten auf dem Mehringdamm, 28.4.2006-29.4.2006',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 9248,9350 9235,9111 9235,9051 9227,8890 9222,8787
+userdel	1 9248,9350 9235,9111 9235,9051 9234,9038 9227,8890 9222,8787
 EOF
      },
      { from  => 1162325129, # 2006-10-31 21:05
@@ -4343,7 +4343,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LMS_1146113785841',
        data  => <<EOF,
-userdel	2 9091,12681 9209,12795
+userdel	2 9098,12687 9209,12795
 userdel	2 9283,12856 9209,12795
 EOF
      },
@@ -5544,7 +5544,7 @@ EOF
        text  => 'Straßenfest am Kaiserdamm. Die Fahrbahn Richtung Theodor-Heuss-Platz ist vom 26.08.2006, 6.00 Uhr, von der Sophie-Charlotten- bis zur Königin-Elisabeth-Straße bis zum 28.08.2006, 0.00 Uhr gesperrt.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::temp 2612,11491 2417,11465 2234,11440 2193,11434 2110,11426
+userdel	1::temp 2612,11491 2419,11472 2282,11463 2191,11451 2109,11441
 EOF
      },
      { from  => 1156454823, # 2006-08-24 23:27
@@ -7349,7 +7349,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004994',
        data  => <<EOF,
-userdel	q4::inwork 9091,12681 9209,12795 9283,12856
+userdel	q4::inwork 9098,12687 9209,12795 9283,12856
 EOF
      },
      { from  => 1174068872, # 2007-03-16 19:14
@@ -7760,7 +7760,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005211',
        data  => <<EOF,
-userdel	2::inwork 9695,1563 9241,1073 9165,1014 9024,906
+userdel	2::inwork 9695,1563 9391,1235 9241,1073 9165,1014 9024,906
 EOF
      },
      { from  => 1176674400, # 2007-04-16 00:00
@@ -7920,7 +7920,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005329',
        data  => <<EOF,
-userdel	2::temp 653,12109 738,12025 818,11954 881,11893 1033,11754 1133,11664 1220,11583 1308,11506 1403,11428
+userdel	2::temp 653,12109 738,12025 818,11954 881,11893 1033,11754 1133,11664 1215,11587 1220,11583 1308,11506 1403,11428
 EOF
      },
      { from  => undef, # 
@@ -8415,7 +8415,7 @@ userdel	1::inwork 8990,11719 8837,11676 8553,11638
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => undef, # XXX last_checked: 2007-08-04
        text  => 'Simon-Dach-Str./Wühlischstr.: Bauarbeiten, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
@@ -8517,7 +8517,7 @@ userdel	2::temp 14500,9856 14483,9843
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => undef, # XXX last_checked: 2007-08-05
        text  => 'Holteistraße: Bauarbeiten, Fahrbahn ist nicht benutzbar',
        type  => 'handicap',
        data  => <<EOF,
@@ -8863,7 +8863,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005931',
        data  => <<EOF,
-userdel	1::temp 9248,9350 9235,9111 9235,9051 9227,8890 9222,8787
+userdel	1::temp 9248,9350 9235,9111 9235,9051 9234,9038 9227,8890 9222,8787
 EOF
      },
      { from  => 1183280291, # 2007-07-01 10:58
