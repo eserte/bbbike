@@ -1486,7 +1486,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 13557,-21831 13014,-22300
-userdel	2 13557,-21831 13988,-21217
+userdel	2 13557,-21831 13960,-21244
 EOF
      },
      { from  => 1109280022, # 2005-02-24 22:20
@@ -5784,7 +5784,7 @@ EOF
        text  => 'B 246 Nächst Neuendorfer Chaussee Bahnübergang in der OL Zossen Gleisbauarbeiten Vollsperrung 23.09.2006-26.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 13623,-20519 13414,-20498 13326,-20518
+userdel	2::inwork 13526,-20548 13412,-20513 13326,-20518
 EOF
      },
      { from  => 1159999200, # 2006-10-05 00:00
@@ -6822,7 +6822,7 @@ EOF
        text  => 'B 246 Nächst Neuendorfer Chaussee OD Zossen, Bahnübergang Kanalarbeiten Vollsperrung 11.12.2006-22.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 13623,-20519 13414,-20498 13326,-20518
+userdel	2::inwork 13526,-20548 13412,-20513 13326,-20518
 EOF
      },
      { from  => 1166050800, # 2006-12-14 00:00
@@ -7984,7 +7984,7 @@ EOF
        text  => 'B 246 Nächst Neuendorfer Chaussee Bahnübergang in OL Zossen Bauarbeiten am Bahnübergang Vollsperrung 07.05.2007-08.05.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 13326,-20518 13414,-20498 13623,-20519
+userdel	2::inwork 13326,-20518 13412,-20513 13526,-20548
 EOF
      },
      { from  => 1115157600, # 2005-05-04 00:00
@@ -9387,6 +9387,30 @@ userdel	2::temp 9890,12161 9875,12254 9801,12245 9782,12393
 userdel	2::temp 9875,12254 9853,12402
 userdel	2::temp 10008,12378 9926,12368 9972,12184
 userdel	2::temp 9918,12411 9926,12368
+EOF
+     },
+     { from  => 1186524000, # 2007-08-08 00:00
+       until => 1190239200, # 2007-09-20 00:00
+       text  => 'B 246 Nächst Neuendorfer Chaussee OL Zossen, zw. Bahnhofstr. und OA Kanalarbeiten halbseitig gesperrt; Einbahnstraße 09.08.2007-19.09.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 13412,-20513 13526,-20548
+EOF
+     },
+     { from  => 1186610400, # 2007-08-09 00:00
+       until => 1186869600, # 2007-08-12 00:00
+       text  => 'L 060 Friedrich-List-Str. OD Falkenberg, zw. H.-Zille-Str. und Lindenstr. Einbau Dünnschichtbelag halbseitig gesperrt; Einbahnstraße 10.08.2007-11.08.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 2001,-91126 1142,-91254
+EOF
+     },
+     { from  => 1186437600, # 2007-08-07 00:00
+       until => 1186696800, # 2007-08-10 00:00
+       text  => 'L 603 Tröbitz-Drasdo zw. Drasdo und Schilda Einbau Dünnschichtbelag Vollsperrung 08.08.2007-09.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 11403,-88614 10459,-88231 9578,-87785
 EOF
      },
     );

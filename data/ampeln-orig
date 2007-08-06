@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.123 2007/08/05 20:33:19 eserte Exp eserte $
+#: version: $Id: ampeln-orig,v 4.124 2007/08/06 22:03:38 eserte Exp $
 #:
 	X 9222,8787
 	X 8982,8781
@@ -1503,7 +1503,7 @@ nur Richtung O	X 8142,7221
 	X 13526,3519
 	X 13498,2411
 	X 13020,2092
-	X 12568,1870
+	F 12547,1852
 	X 12643,1706
 	X 12207,1704
 	X 11475,1404
@@ -1706,7 +1706,7 @@ nur Richtung Westen	X 5831,10978
 	B 11875,-8728
 	B 13282,-18250
 	B 13295,-18620
-	B 13414,-20498
+	B 13412,-20513
 	B 13557,-21831
 	B 16379,-29446
 	B 16630,-30953

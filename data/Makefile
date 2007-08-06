@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.152 2007/07/28 19:29:36 eserte Exp $
+# $Id: Makefile,v 2.153 2007/08/06 22:02:39 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -79,6 +79,7 @@ COMPUTED_TARGETS+=	radwege_exact mount
 COMPUTED_TARGETS+=	temp_blockings/bbbike-temp-blockings-optimized.pl
 COMPUTED_TARGETS+=	wasserstrassen-lowres
 COMPUTED_TARGETS+=	kneipen
+COMPUTED_TARGETS+=	fragezeichen-cooked
 
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COMPUTED_TARGETS} ${COOKED_TARGETS}
@@ -648,6 +649,13 @@ fragezeichen:	.create_fragezeichen
 	-@$(WRITEABLE) $@
 	cmp -s .create_fragezeichen $@ && true || cp .create_fragezeichen $@
 	-@$(READONLY) $@
+
+fragezeichen-cooked:	fragezeichen strassen landstrassen landstrassen2
+	-@${WRITEABLE} $@
+	${MISCSRCDIR}/reduce_streets -delsinglepoint -reducelines fragezeichen \
+	    strassen landstrassen landstrassen2 > $@~
+	mv $@~ $@
+	-@${READONLY} $@
 
 # ::inwork => will maybe change to :inwork
 #XXX in "-orig" transition: handicap_s-orig and gesperrt-orig always need to have the same base map!

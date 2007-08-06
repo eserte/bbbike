@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.209 2007/08/05 20:41:14 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.210 2007/08/06 22:03:21 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -491,7 +491,6 @@ Biesdorfer Promenade: mäßiger Asphalt	Q1 20975,12620 20843,12677 20693,12742 205
 Luise-Zietz-Str.: Kopfsteinpflaster	Q2 20079,12479 20137,13016 20143,13082
 Rigaer Str.: Kopfsteinpflaster	Q2 14133,12482 14272,12446 14451,12396 14538,12371 14748,12314 14997,12243 15098,12213 15175,12180
 Thaerstr.: Kopfsteinpflaster	Q2 13773,12694 13844,12900
-Florastr.: kurzes Stück Kopfsteinpflaster	Q1 10846,17992 10705,17931
 Diesterwegstr.: Kopfsteinpflaster	Q2 12078,15160 11968,14950 11879,14771
 Straßmannstr.: Kopfsteinpflaster	Q2 13537,13003 13756,13103
 Niederkirchnerstr.: Kopfsteinpflaster	Q2 8739,11228 9162,11286
@@ -1695,6 +1694,8 @@ Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6133,15680 6282,15830 6401,15956 6503,16068 6608,16180
 Eulerstr.: Asphalt	Q0 9268,16228 9336,16302 9498,16480
 Boizenburger Str.: guter Asphalt	Q0 22310,12829 22310,12637 22309,12350 22385,12268
+Geraldstr.: mäßiger Asphalt	Q1 20967,8720 21072,8742
+Käthe-Dorsch-Ring: Asphalt	Q0 15525,2299 15518,2184 15527,2150 15578,2124 15700,2127 15731,2148 15738,2190 15745,2294
 Wolmirstedter Weg: guter Asphalt	Q0 -4143,15639 -4216,15635 -4283,15639
 Tietzstr.: guter Asphalt	Q0 3223,20053 3310,19934 3429,19786 3621,19539
 Zerpenschleuser Ring: Beton	Q0 7781,21812 7911,21908 7957,22007 7925,22113 7821,22181 7722,22157 7594,22068
@@ -3640,7 +3641,9 @@ Im Amtmannsgarten: Asphalt	Q0 12643,1706 12609,1780 12560,1764 12487,1727
 Pieskower Weg: Asphalt	Q0 13131,15175 13105,15122 13070,15063 12894,15165 12864,15185 12931,15300
 Pieskower Weg: Asphalt	Q0 12894,15165 12812,15053
 Aprikosensteig: guter Beton	Q0 15445,4878 15474,4845 15558,4758 15558,4757 15608,4722 15690,4668 15774,4612 15863,4554
+Aprikosensteig: guter Beton	Q0 15474,4845 15364,4748
 Brandaustr.: guter Asphalt	Q0 9391,1235 9370,1262 9367,1296 9411,1406 9513,1651
+Glaschkestr.: schlechtes Kopfsteinpflaster	Q3 16159,12301 16144,12388 16147,12424
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14202,13140 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953

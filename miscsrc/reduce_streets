@@ -1,0 +1,141 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: reduce_streets,v 1.2 2007/08/06 21:56:58 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven.rezic@berlin.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+# Remove all points in the referenced files
+# reduce_streets.pl streefile reducestreetfile > newstreetfile
+
+# See also new_with_removed_points in Strassen::CoreHeavy
+
+# XXX the non-reducelines operation looks fishy, probably bugs in!
+
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin/../data",
+	);
+use strict;
+use Strassen::Core;
+use Strassen::Kreuzungen;
+use Strassen::MultiStrassen;
+use Object::Iterate qw(iterate);
+use Getopt::Long;
+
+my $del_single_points;
+my $reduce_lines;
+
+if (!GetOptions("delsinglepoints!" => \$del_single_points,
+		"reducelines!" => \$reduce_lines,
+	       )) {
+    die "usage: $0 [-delsinglepoints] [-reducelines] streetfile reducestreetfile";
+}
+
+my $min_points = 1;
+if ($del_single_points) {
+    $min_points = 2;
+}
+
+my $streetfile = shift || die "streets file missing";
+my @reducestreetfile = @ARGV;
+if (!@reducestreetfile) {
+    die "reducestreets file(s) missing";
+}
+
+my $s = Strassen->new($streetfile);
+my $rs = MultiStrassen->new(@reducestreetfile);
+my $new_s = Strassen->new;
+
+if (!$reduce_lines) {
+    warn <<EOF;
+**********************************************************************
+* results may be wrong!!!
+**********************************************************************
+EOF
+    my $inacc = Kreuzungen->new_from_strassen(Strassen => $rs);
+    my $inacc_hash = $inacc->{Hash};
+
+    my $reduce;
+    $reduce = sub {
+	my($l, @c) = @_;
+	while(@c && exists $inacc_hash->{$c[0]}) {
+	    shift @c;
+	}
+	while(@c && exists $inacc_hash->{$c[-1]}) {
+	    pop @c;
+	}
+	for my $i (0 .. $#c) {
+	    if (exists $inacc_hash->{$l}) { # XXX haeh? $l? sollte es nicht $c[$i] sein????
+		my $res;
+		$res = $reduce->($l, @c[0 .. $i-1]);
+		$new_s->push($res) if $res; # XXX correct? see below
+		$res = $reduce->($l, @c[$i+1 .. $#c]);
+		$new_s->push($res) if $res; # XXX correct? see below
+		return;
+	    }
+	}
+	if (@c >= $min_points) {
+	    $new_s->push([$l->[Strassen::NAME], \@c, $l->[Strassen::CAT]]);
+	} else {
+	    undef;
+	}
+    };
+
+    iterate {
+	$reduce->($_, @{$_->[Strassen::COORDS]});
+    } $s;
+
+} else {
+    require Strassen::StrassenNetz;
+    my $net = StrassenNetz->new($rs);
+    $net->make_net;
+
+    my $exists = sub {
+	my($p1, $p2) = @_;
+	return 1 if exists $net->{Net}{$p1}{$p2};
+	return      exists $net->{Net}{$p2}{$p1};
+    };
+
+    my $reduce_line;
+    $reduce_line = sub {
+	my($l, @c) = @_;
+	while(@c >= 2 && $exists->($c[0], $c[1])) {
+	    shift @c;
+	}
+	while(@c >= 2 && $exists->($c[0], $c[1])) {
+	    pop @c;
+	}
+	for my $i (0 .. $#c-1) {
+	    if ($exists->($c[$i], $c[$i+1])) {
+		my $res;
+		$reduce_line->($l, @c[0 .. $i]);
+		$reduce_line->($l, @c[$i+1 .. $#c]);
+		return;
+	    }
+	}
+	if (@c >= $min_points) {
+	    $new_s->push([$l->[Strassen::NAME], \@c, $l->[Strassen::CAT]]);
+	} else {
+	    undef;
+	}
+    };
+
+    iterate {
+	$reduce_line->($_, @{$_->[Strassen::COORDS]});
+    } $s;
+
+}
+
+$new_s->write("-");
+
+__END__

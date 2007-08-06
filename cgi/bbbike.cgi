@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.67 2007/08/02 21:56:35 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.68 2007/08/06 22:02:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -708,7 +708,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.67 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.68 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -5070,10 +5070,6 @@ sub get_streets {
 	     ($scope eq 'wideregion' ? "landstrassen2" : ()),
 	    );
 
-    if (defined $q->param("pref_fragezeichen") && $q->param("pref_fragezeichen") eq 'yes') {
-	push @f, "fragezeichen";
-    }
-
     if ($q->param("addnet")) {
 	for my $addnet ($q->param("addnet")) {
 	    if ($addnet =~ /^(?:  )$/x) { # no addnet support for now
@@ -5082,11 +5078,19 @@ sub get_streets {
 	}
     }
 
+    # Should be last:
+    if (defined $q->param("pref_fragezeichen") && $q->param("pref_fragezeichen") eq 'yes') {
+	push @f, "fragezeichen";
+    }
+
     my $use_cooked_street_data = $use_cooked_street_data;
     while(1) {
 	my @f = @f;
 	if ($use_cooked_street_data) {
-	    @f = map { $_ eq "fragezeichen" ? $_ : "$_-cooked" } @f;
+	    @f = map {
+		#$_ eq "fragezeichen" ? $_ :
+		"$_-cooked"
+	    } @f;
 	}
 	eval {
 	    if (@f == 1) {
@@ -5097,7 +5101,7 @@ sub get_streets {
 	};
 	if ($@) {
 	    if ($use_cooked_street_data) {
-		warn 'Maybe the "cooked" version is missing? Try again the normal version...';
+		warn 'Maybe the "cooked" version for <@f> is missing? Try again the normal version...';
 		$use_cooked_street_data = 0;
 		next;
 	    } else {
@@ -5251,17 +5255,27 @@ sub load_temp_blockings {
 sub crossing_text {
     my $c = shift;
     all_crossings();
-    if (exists $crossings->{$c}) {
-	nice_crossing_name(@{ $crossings->{$c} });
-    } else {
+    if (!exists $crossings->{$c}) {
 	new_kreuzungen();
 	my(@nearest) = $kr->nearest_coord($c);
-	if (@nearest and exists $crossings->{$nearest[0]}) {
-	    nice_crossing_name(@{ $crossings->{$nearest[0]} });
+	if (!@nearest || !exists $crossings->{$nearest[0]}) {
+	    # Should not happen, but try to be smart
+	    my $crossing_text = eval {
+		require Karte;
+		Karte::preload('Standard', 'Polar');
+		my($px,$py) = $Karte::Polar::obj->standard2map(split /,/, $c);
+		"N $py / O $px";
+	    };
+	    if ($@) {
+		warn $@;
+		$crossing_text = "???";
+	    }
+	    return $crossing_text;
 	} else {
-	    "???";
+	    $c = $nearest[0];
 	}
     }
+    nice_crossing_name(@{ $crossings->{$c} });
 }
 
 # Gibt den Straßennamen für type=start/via/ziel zurück --- entweder
@@ -6460,7 +6474,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/08/02 21:56:35 $';
+    my $cgi_date = '$Date: 2007/08/06 22:02:15 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

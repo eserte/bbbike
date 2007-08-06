@@ -978,15 +978,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1186351200,
-         'text' => 'L 062 Bahnübergang zw. Elsterwerda und Hohenleipisch Gleisbauarbeiten Vollsperrung 03.08.2007-05.08.2007 ',
-         'from' => 1186005600,
-         'id' => 1097,
-         'data' => 'userdel	2::inwork 22382,-102254 22501,-102573 22654,-103425
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_006204',
@@ -1046,16 +1038,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_006219',
-         'until' => 1186351200,
-         'text' => 'Str. der Pariser Kommune (Friedrichshain) in beiden Richtungen zwischen Weidenweg und Karl-Marx-Allee Veranstaltung, Straße vollständig gesperrt',
-         'from' => 1186081587,
-         'id' => 1106,
-         'data' => 'userdel	2::temp 12891,12549 12869,12425
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1196463600,
@@ -1102,6 +1085,33 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 userdel	2::temp 9875,12254 9853,12402
 userdel	2::temp 10008,12378 9926,12368 9972,12184
 userdel	2::temp 9918,12411 9926,12368
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1190239200,
+         'text' => 'B 246 Nächst Neuendorfer Chaussee OL Zossen, zw. Bahnhofstr. und OA Kanalarbeiten halbseitig gesperrt; Einbahnstraße 09.08.2007-19.09.2007 ',
+         'from' => 1186524000,
+         'id' => 1113,
+         'data' => 'userdel	1::inwork 13412,-20513 13526,-20548
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1186869600,
+         'text' => 'L 060 Friedrich-List-Str. OD Falkenberg, zw. H.-Zille-Str. und Lindenstr. Einbau Dünnschichtbelag halbseitig gesperrt; Einbahnstraße 10.08.2007-11.08.2007 ',
+         'from' => 1186610400,
+         'id' => 1114,
+         'data' => 'userdel	q4::inwork; 2001,-91126 1142,-91254
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1186696800,
+         'text' => 'L 603 Tröbitz-Drasdo zw. Drasdo und Schilda Einbau Dünnschichtbelag Vollsperrung 08.08.2007-09.08.2007 ',
+         'from' => 1186437600,
+         'id' => 1115,
+         'data' => 'userdel	2::inwork 11403,-88614 10459,-88231 9578,-87785
 ',
          'type' => 'gesperrt'
        }
