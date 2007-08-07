@@ -8454,7 +8454,7 @@ EOF
        text  => 'L 054 Calau-Vetschau Bahnübergang in der OD Saßleben Gleisbauarbeiten Vollsperrung 09.06.2007-10.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 50637,-71768 51374,-71361 51440,-71337
+userdel	2::inwork 50732,-71705 51374,-71361 51440,-71337
 EOF
      },
      { from  => 1181512800, # 2007-06-11 00:00
@@ -8462,7 +8462,7 @@ EOF
        text  => 'L 054 Calau-Vetschau Bahnübergang in der OD Saßleben Gleisbauarbeiten Vollsperrung 12.06.2007-13.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 50637,-71768 51374,-71361 51440,-71337
+userdel	2::inwork 50732,-71705 51374,-71361 51440,-71337
 EOF
      },
      { from  => 1181240753, # 2007-06-07 20:25
@@ -9411,6 +9411,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 11403,-88614 10459,-88231 9578,-87785
+EOF
+     },
+     { from  => 1188165600, # 2007-08-27 00:00
+       until => 1188597600, # 2007-09-01 00:00
+       text  => 'L 052 Ogrosen-Calau Bahnübergang in der OD Calau Gleisbauarbeiten Vollsperrung 28.08.2007-31.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 51046,-73683 51081,-73709 51147,-73755
 EOF
      },
     );

@@ -870,15 +870,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1186437600,
-         'text' => 'L 040 Friedersdorf-Bindow Bahnübergang in der OD Friedersdorf Gleisbauarbeiten Vollsperrung 04.08.2007-06.08.2007 ',
-         'from' => 1186092000,
-         'id' => 1082,
-         'data' => 'userdel	2::inwork 36895,-12039 36087,-12087 35496,-12280
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_006159',
@@ -1112,6 +1104,15 @@ userdel	2::temp 9918,12411 9926,12368
          'from' => 1186437600,
          'id' => 1115,
          'data' => 'userdel	2::inwork 11403,-88614 10459,-88231 9578,-87785
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1188597600,
+         'text' => 'L 052 Ogrosen-Calau Bahnübergang in der OD Calau Gleisbauarbeiten Vollsperrung 28.08.2007-31.08.2007 ',
+         'from' => 1188165600,
+         'id' => 1116,
+         'data' => 'userdel	2::inwork 51046,-73683 51081,-73709 51147,-73755
 ',
          'type' => 'gesperrt'
        }
