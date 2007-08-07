@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.45 2007/07/24 22:36:48 eserte Exp $
+# $Id: cgi.t,v 1.46 2007/08/07 22:43:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -630,7 +630,6 @@ for my $cgiurl (@urls) {
 	    or diag "Route length: $route->{Len}";
     }
 
-    XXX:
     {
 	$req = HTTP::Request->new
 	    ('GET', "$action?" . CGI->new({startc=>"42685,19584",
@@ -659,6 +658,30 @@ for my $cgiurl (@urls) {
 	like($content, qr{\QDudenstr./Mehringdamm/Platz der Luftbrücke/Tempelhofer Damm\E}, "No simplification for Berlin crossings needed");
 	like($content, qr{\QThomas-Müntzer-Damm (Kleinmachnow)/Warthestr. (Teltow)\E}, "No simplification possible between different places");
     }
+
+#     XXX:
+#     {
+# 	# fragezeichen streets not in crossing
+# 	$req = HTTP::Request->new
+# 	    ('GET', "$action?" . CGI->new({startc=>'-1179,-298',
+# 					   zielname=>'Dudenstr.',
+# 					   zielplz=>10965,
+# 					   zielc=>'9222,8787',
+# 					   pref_seen=>1,
+# 					   pref_speed=>26,
+# 					   pref_cat=>'',
+# 					   pref_quality=>'Q2',
+# 					   pref_green=>'',
+# 					   pref_fragezeichen=>'yes',
+# 					   scope=>'region',
+# 					  })->query_string);
+# 	$res = $ua->request($req);
+# 	ok($res->is_success, "Another request with pref_fragezeichen=yes")
+# 	    or diag $res->as_string;
+# 	$content = uncompr($res);
+# 	unlike($content, qr{Route von.*Qualit.*?t zwischen}, "No fragezeichen text found");
+# 	like($content, qr{fragezeichenform.*Qualit.*?t.*zwischen}, "But fragezeichenform link is there");
+#     }
 
     {
 	# opensearch search params

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.44 2007/07/24 22:52:10 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.45 2007/08/07 21:16:46 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -224,6 +224,45 @@ for my $browser (@browsers) {
     }
 
     ######################################################################
+    # A street in Potsdam but not in "landstrassen"
+
+    {
+
+	$get_agent->();
+
+	$agent->get($cgiurl);
+	$agent->form_name("BBBikeForm");
+	{
+	    local $^W; $agent->current_form->value('start', 'Petri Dank');
+	}
+	;
+	{
+	    local $^W; $agent->current_form->value('ziel', 'Römische Bäder');
+	}
+	;
+	$agent->submit();
+	my_tidy_check($agent);
+
+	# May have different results depending on $use_exact_streetchooser.
+	# The first is with $use_exact_streetchooser=0, the second with
+	# $use_exact_streetchooser=1. Actually the correct crossing in this case
+	# should be the end of "Lennéstr.", but the find-nearest-crossing code finds
+	# only real crossing, not endpoints of streets.
+	$like_long_data->(
+	     qr{(\QHans-Sachs-Str. (Potsdam)/Meistersingerstr. (Potsdam)\E
+		|\QCarl-von-Ossietzky-Str. (Potsdam)/Lennéstr. (Potsdam)\E
+		|\Q(Ökonomieweg, Sanssouci) (Potsdam)/(Lennéstr. - Ökonomieweg, Sanssouci)\E
+		|\Q(Lennéstr. - Ökonomieweg, Sanssouci) (Potsdam)/Lennéstr. (Potsdam)\E
+		|\Q(Lennéstr. - Ökonomieweg, Sanssouci) (Potsdam)/(Hans-Sachs-Str. - Lennéstr.) (Potsdam)/Lennéstr. (Potsdam)\E
+		|\Q(Lennéstr. - Ökonomieweg, Sanssouci)/(Hans-Sachs-Str. - Lennéstr.)/Lennéstr. (Potsdam)\E
+	       )}ix,  "Correct goal resolution (Hans-Sachs-Str. ... or Lennéstr. ... or Ökonomieweg ...)");
+	$like_long_data->(qr{(\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marquardt)\E
+			     |\QMarquardter Damm/Schlänitzseer Weg (Marquardt)\E
+			    )}ix,  "Correct goal resolution (Marquardt ...)");
+                           
+    }
+
+    ######################################################################
     # test for Kaiser-Friedrich-Str. (Potsdam) problem
 
     {
@@ -311,45 +350,6 @@ for my $browser (@browsers) {
 	$like_long_data->(qr/genaue.*kreuzung.*angeben/i, "On the crossing page");
 	$like_long_data->(qr/\QAm Neuen Palais (Potsdam)/i,  "Correct start resolution (Neues Palais ...)");
 
-    }
-
-    ######################################################################
-    # A street in Potsdam but not in "landstrassen"
-
-    {
-
-	$get_agent->();
-
-	$agent->get($cgiurl);
-	$agent->form_name("BBBikeForm");
-	{
-	    local $^W; $agent->current_form->value('start', 'Petri Dank');
-	}
-	;
-	{
-	    local $^W; $agent->current_form->value('ziel', 'Römische Bäder');
-	}
-	;
-	$agent->submit();
-	my_tidy_check($agent);
-
-	# May have different results depending on $use_exact_streetchooser.
-	# The first is with $use_exact_streetchooser=0, the second with
-	# $use_exact_streetchooser=1. Actually the correct crossing in this case
-	# should be the end of "Lennéstr.", but the find-nearest-crossing code finds
-	# only real crossing, not endpoints of streets.
-	$like_long_data->(
-	     qr{(\QHans-Sachs-Str. (Potsdam)/Meistersingerstr. (Potsdam)\E
-		|\QCarl-von-Ossietzky-Str. (Potsdam)/Lennéstr. (Potsdam)\E
-		|\Q(Ökonomieweg, Sanssouci) (Potsdam)/(Lennéstr. - Ökonomieweg, Sanssouci)\E
-		|\Q(Lennéstr. - Ökonomieweg, Sanssouci) (Potsdam)/Lennéstr. (Potsdam)\E
-		|\Q(Lennéstr. - Ökonomieweg, Sanssouci) (Potsdam)/(Hans-Sachs-Str. - Lennéstr.) (Potsdam)/Lennéstr. (Potsdam)\E
-		|\Q(Lennéstr. - Ökonomieweg, Sanssouci)/(Hans-Sachs-Str. - Lennéstr.)/Lennéstr. (Potsdam)\E
-	       )}ix,  "Correct goal resolution (Hans-Sachs-Str. ... or Lennéstr. ... or Ökonomieweg ...)");
-	$like_long_data->(qr{(\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marquardt)\E
-			     |\QMarquardter Damm/Schlänitzseer Weg (Marquardt)\E
-			    )}ix,  "Correct goal resolution (Marquardt ...)");
-                           
     }
 
     ######################################################################

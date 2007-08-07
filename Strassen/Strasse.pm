@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.30 2007/06/21 22:28:57 eserte Exp $
+# $Id: Strasse.pm,v 1.33 2007/08/07 22:24:34 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.33 $ =~ /(\d+)\.(\d+)/);
 
 package Strasse;
 use strict;
@@ -57,12 +57,18 @@ sub is_in {
 }
 
 # statische Methode
+#
+# XXX more candidates: ...heide, ...tunnel, but there are problems like
+# "in die Fußgängertunnel S-Bhf Jungfernheide" or
+# "in den Platz am Spreetunnel"
 ### AutoLoad Sub
 sub de_artikel {
     my($strasse) = @_;
     if ($strasse =~ /^(am|an|auf|hinter|im|in|unter|zum|zur|zwischen|u-bhf|s-bhf)\b/i) {
 	"=>";
-    } elsif ($strasse =~ /^(rue\b|allée)\b/i) { # oh la la
+    } elsif ($strasse =~ / - /) {
+	"=>";
+    } elsif ($strasse =~ /^(avenue\b|rue\b|allée)\b/i) { # oh la la
 	"in die";
     } elsif ($strasse =~ /(str\.|straße\b|allee\b|chaussee\b|promenade\b|zeile\b|gasse\b|kehre\b)/i) {
 	"in die";
@@ -88,16 +94,21 @@ sub de_artikel {
 }
 
 # Den Straßennamen so weit wie möglich abkürzen...
-# Verschiedene Level (0 bis 3) sind möglich
+# Verschiedene Level (0 bis 4) sind möglich
 sub short {
     my($strname, $level, $nodot) = @_;
     my $dot = ($nodot ? "" : ".");
-    if ($level > 0) {
+    if ($level >= 4) {
+	# abbrev Bernhard-Lichtenberg-Str. to B-Lichtenberg-Str.
+	$strname =~ s/^([A-Z])\S+(-[^ -]+-[^ -]+(?: .*)?)$/$1$2/
+    }
+    if ($level >= 1) {
 	$strname =~ s/(s)tra(ss|ß)e/$1tr$dot/i;
 	$strname =~ s/(p)latz/$1l$dot/i;
+	$strname =~ s/(s)teig/$1t$dot/i;
 	$strname =~ s/\bBahnhof/Bhf$dot/;
     }
-    if ($level > 2) {
+    if ($level >= 3) {
 	$strname =~ s/str\.//;
 	$strname =~ s/^Str\.\s+de[rs]\s+/S.d./;
 	$strname =~ s/^Str\./Str/;
@@ -110,7 +121,7 @@ sub short {
 	$strname =~ s/\b(g)ro(ß|ss)e[srnm]?\b/$1r$dot/i;
 	$strname =~ s/Rathaus\s+/Rath./i;
 	$strname =~ s/b[eu]rg$/b\'g/;
-    } elsif ($level > 1) {
+    } elsif ($level >= 2) {
 	$strname =~ s/(s)tr\./$1tr/i;
 	$strname =~ s/(p)l\./$1l/i;
     }
