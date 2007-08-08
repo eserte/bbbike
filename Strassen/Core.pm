@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.80 2007/07/23 19:37:30 eserte Exp $
+# $Id: Core.pm,v 1.81 2007/08/08 16:31:23 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.80 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.81 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -350,6 +350,13 @@ sub new_from_data_string {
     bless $self, $class;
     my $fh;
     if ($] >= 5.008) {
+	# Make sure we have raw octets. Encoding is controlled
+	# through an "encoding" bbd directive
+	require Encode;
+	if (Encode::is_utf8($string)) {
+	    $string = Encode::encode("iso-8859-1", $string);
+	}
+	# string eval because for older perl's this is invalid syntax
 	eval 'open($fh, "<", \$string)';
     } else {
 	require IO::String; # XXX add as prereq_pm for <5.008

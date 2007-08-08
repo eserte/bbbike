@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Http.pm,v 3.15 2005/05/09 22:14:09 eserte Exp $
+# $Id: Http.pm,v 3.17 2007/08/08 19:38:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1995,1996,1998,2000,2001,2003,2005 Slaven Rezic. All rights reserved.
@@ -25,7 +25,7 @@ use vars qw(@ISA @EXPORT_OK $VERSION $tk_widget $user_agent $http_defaultheader
 @ISA = qw(Exporter);
 @EXPORT_OK = qw(get $user_agent $http_defaultheader
 		rfc850_date uuencode);
-$VERSION = sprintf("%d.%02d", q$Revision: 3.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.17 $ =~ /(\d+)\.(\d+)/);
 
 $tk_widget = 0 unless defined $tk_widget;
 $timeout = 10  unless defined $timeout;
@@ -372,23 +372,40 @@ sub get_plain {
     close($sock);
 
     if (defined $header{'content-encoding'} and
-	$header{'content-encoding'} =~ /^x-(gzip|compress)/) {
+	$header{'content-encoding'} =~ /^(?:x-)?(?:gzip|compress)/) {
 	# gzip und compress dekomprimieren --- Holzhammermethode
-	open(OUT, ">/tmp/zcat.$$") || croak "Can't open temp file";
-	print OUT $content;
-	close(OUT);
+	my($tmpfh,$tmpfile);
+	if (eval { require File::Temp; 1 }) {
+	    ($tmpfh,$tmpfile) = File::Temp::tempfile(SUFFIX => '_Http.gz',
+						     UNLINK => 1);
+	    croak "Cannot create temporary file" if !$tmpfile;
+	    print $tmpfh $content
+		or croak "While writing compressed content to temporary file $tmpfile: $!";
+	    close $tmpfh
+		or croak "While closing temporary file $tmpfile: $!";
+	} else {
+	    $tmpfile = "/tmp/zcat.$$";
+	    open(OUT, "> $tmpfile")
+		or croak "Can't write to temporary file $tmpfile: $!";
+	    print OUT $content
+		or croak "While writing compressed content to temporary file $tmpfile: $!";
+	    close(OUT)
+		or croak "While closing temporary file $tmpfile: $!";
+	}
 
 	local($/) = undef;
-	open(IN, "zcat /tmp/zcat.$$ |") || croak "Can't uncompress";
+	open(IN, "zcat $tmpfile |") || croak "Can't uncompress";
 	$content = <IN>;
 	close(IN);
 
-	unlink "/tmp/zcat.$$";
+	unlink $tmpfile;
     }
 
     ('content'       => $content,
      'error'         => $error{code},
-     'last-modified' => $header{'last-modified'});
+     'last-modified' => $header{'last-modified'},
+     'headers'       => \%header,
+    );
 }
 
 

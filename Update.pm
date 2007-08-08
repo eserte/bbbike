@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Update.pm,v 1.25 2007/03/15 19:02:39 eserte Exp $
+# $Id: Update.pm,v 1.26 2007/08/08 19:59:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2003,2005,2006,2007 Slaven Rezic. All rights reserved.
@@ -74,6 +74,9 @@ sub update_http {
     my(%modified) = %{$args{-modified}};
     my $ua;
     eval {
+## Be conservative: sieperl comes only with an ancient libwww (5.51 or so)
+# 	require LWP;
+# 	LWP->VERSION(5.802); # decoded_content
 	require LWP::UserAgent;
 	$main::public_test = $main::public_test; # peacify -w
 	if ($main::public_test) {
@@ -82,6 +85,10 @@ sub update_http {
 	}
 	$ua = new LWP::UserAgent;
 	$ua->agent("$main::progname/$main::VERSION (LWP::UserAgent/$LWP::VERSION)");
+## sieperl does not have compress::zlib, also decoded_content is not available
+# 	if (eval { require Compress::Zlib; 1 }) {
+# 	    $ua->default_headers->push_header('Accept-Encoding' => 'gzip');
+# 	}
 	$main::progname = $main::progname if 0; # peacify -w
 	if ($main::proxy) {
 	    $ua->proxy(['http', 'ftp'], $main::proxy);

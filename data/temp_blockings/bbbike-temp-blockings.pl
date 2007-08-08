@@ -3230,10 +3230,10 @@ EOF
        text  => 'Behrenstraße, zwischen Kreuzung Ebertstraße und Kreuzung Glinkastraße in beiden Richtungen Veranstaltung, Straße gesperrt, Dauer: 10.11.2005 12:00 Uhr bis 12.11.2005 12:00 Uhr ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 8851,12123 9059,12155
+userdel	q4 8851,12123 9054,12154 9064,12156
 userdel	q4 8851,12123 8737,12098
 userdel	q4 8595,12066 8737,12098
-userdel	q4 9164,12172 9059,12155
+userdel	q4 9164,12172 9064,12156
 EOF
      },
      { from  => undef, # 
@@ -8635,8 +8635,8 @@ userdel	2::temp 7037,10359 6730,10199 6719,10347
 EOF
      },
      { from  => 1182031200, # 2007-06-17 00:00
-       until => 1191189600, # 2007-10-01 00:00
-       text  => 'B 005 Treplin-Petershagen OD Petershagen, zw. KVK und Ortsausgang Kanal- und Straßenbau Vollsperrung 18.06.2007-30.09.2007 ',
+       until => 1192485600, # 2007-10-16 00:00
+       text  => 'B 005 Treplin-Petershagen OD Petershagen, zw. KVK und Ortsausgang Kanal- und Straßenbau Vollsperrung 18.06.2007-15.10.2007 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 74246,584 74740,378
@@ -9272,11 +9272,11 @@ EOF
      },
      { from  => 1185828358, # 2007-07-30 22:45
        until => 1186696800, # 2007-08-10 00:00
-       text  => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Komturstr. und Tempelhofer Damm Fahrbahnabsenkung, Straße vollständig gesperrt',
+       text  => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Fahrbahnabsenkung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_006204',
        data  => <<EOF,
-userdel	2::inwork 10254,5921 9781,5789 9654,5738 9341,5612 9147,5534
+userdel	2::inwork 9341,5612 9147,5534
 EOF
      },
      { from  => 1186168786, # 2007-08-12 00:00
@@ -9419,6 +9419,22 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 51046,-73683 51081,-73709 51147,-73755
+EOF
+     },
+     { from  => 1186869600, # 2007-08-12 00:00
+       until => 1187992800, # 2007-08-25 00:00
+       text  => 'B 246 Bahnübergang Wendisch Rietz Siedlung, OT Neue Mühle Gleiserneuerung Vollsperrung 13.08.2007-24.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 53048,-21761 52989,-21777 52964,-21796
+EOF
+     },
+     { from  => 1187301600, # 2007-08-17 00:00
+       until => 1187647200, # 2007-08-21 00:00
+       text  => 'L 040 Friedersdorf-Bindow Bahnübergang in der OD Friedersdorf Gleisbauarbeiten Vollsperrung 18.08.2007-20.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 36895,-12039 36087,-12087 35496,-12280
 EOF
      },
     );

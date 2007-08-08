@@ -640,8 +640,8 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        },
        undef,
        {
-         'until' => 1191189600,
-         'text' => 'B 005 Treplin-Petershagen OD Petershagen, zw. KVK und Ortsausgang Kanal- und Straßenbau Vollsperrung 18.06.2007-30.09.2007 ',
+         'until' => 1192485600,
+         'text' => 'B 005 Treplin-Petershagen OD Petershagen, zw. KVK und Ortsausgang Kanal- und Straßenbau Vollsperrung 18.06.2007-15.10.2007 ',
          'from' => 1182031200,
          'id' => 1025,
          'data' => 'userdel	q4::inwork 74246,584 74740,378
@@ -975,10 +975,10 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        {
          'source_id' => 'IM_006204',
          'until' => 1186696800,
-         'text' => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Komturstr. und Tempelhofer Damm Fahrbahnabsenkung, Straße vollständig gesperrt',
+         'text' => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Fahrbahnabsenkung, Straße vollständig gesperrt',
          'from' => 1185828358,
          'id' => 1099,
-         'data' => 'userdel	2::inwork 10254,5921 9781,5789 9654,5738 9341,5612 9147,5534
+         'data' => 'userdel	2::inwork 9341,5612 9147,5534
 ',
          'type' => 'gesperrt'
        },
@@ -1113,6 +1113,24 @@ userdel	2::temp 9918,12411 9926,12368
          'from' => 1188165600,
          'id' => 1116,
          'data' => 'userdel	2::inwork 51046,-73683 51081,-73709 51147,-73755
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1187992800,
+         'text' => 'B 246 Bahnübergang Wendisch Rietz Siedlung, OT Neue Mühle Gleiserneuerung Vollsperrung 13.08.2007-24.08.2007 ',
+         'from' => 1186869600,
+         'id' => 1117,
+         'data' => 'userdel	2::inwork 53048,-21761 52989,-21777 52964,-21796
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1187647200,
+         'text' => 'L 040 Friedersdorf-Bindow Bahnübergang in der OD Friedersdorf Gleisbauarbeiten Vollsperrung 18.08.2007-20.08.2007 ',
+         'from' => 1187301600,
+         'id' => 1118,
+         'data' => 'userdel	2::inwork 36895,-12039 36087,-12087 35496,-12280
 ',
          'type' => 'gesperrt'
        }

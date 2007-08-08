@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Cat.pm,v 1.9 2007/07/29 21:16:01 eserte Exp $
+# $Id: Cat.pm,v 1.10 2007/08/08 21:55:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
 use File::Basename qw(basename);
 
@@ -31,6 +31,7 @@ use vars qw(%filetype_to_cat %file_to_cat);
      "gesperrt"	      => [qw(1 1s 2 3 3nocross),
 			  sub { /^0:\d+(:-?\d+)?$/ },
 			  sub { /^BNP:\d+(:-?\d+)?$/} ],
+     "fragezeichen"   => [qw(? ?? F:? F:??)],
      "handicap"	      => [qw(q0 q1 q2 q3 q4)],
      "landstrassen"   => [qw(B HH H N NN Pl)],
      "mount"   	      => [qw(St Gf CS)],
@@ -71,7 +72,8 @@ use vars qw(%filetype_to_cat %file_to_cat);
      "flaechen"			=> [qw(F:Ae F:Cemetery F:Forest F:Green
 				       F:Industrial F:Orchard F:Mine
 				       F:P F:Pabove F:Sport)],
-     "fragezeichen"		=> [qw(? ?? F:? F:??)],
+     "fragezeichen"		=> $filetype_to_cat{"fragezeichen"},
+     "fragezeichen-cooked"	=> $filetype_to_cat{"fragezeichen"},
      "gesperrt"			=> $filetype_to_cat{"gesperrt"},
      "gesperrt_car"		=> $filetype_to_cat{"gesperrt"},
      "gesperrt_r"		=> $filetype_to_cat{"gesperrt"},

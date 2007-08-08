@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.97 2007/05/20 20:31:21 eserte Exp $
+# $Id: Makefile,v 1.98 2007/08/08 16:32:29 eserte Exp $
 #
 
 # Targets:
@@ -52,6 +52,7 @@ TESTS_ON_REMOTE?=	basic.t
 TESTS_FROM_LOCAL=	cgihead.t \
 			cgi-mechanize.t \
 			cgi.t \
+			radzeit.t \
 			wapcgi.t
 TESTS=			$(TESTS_ON_REMOTE) $(TESTS_FROM_LOCAL)
 TESTS_ADD=		BBBikeTest.pm
