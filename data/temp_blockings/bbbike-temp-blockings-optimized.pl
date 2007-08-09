@@ -1133,6 +1133,24 @@ userdel	2::temp 9918,12411 9926,12368
          'data' => 'userdel	2::inwork 36895,-12039 36087,-12087 35496,-12280
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1193785200,
+         'text' => 'B 167 Lebus-Seelow OD Dolgelin Kanal-,Straßen- u. Radwegbau Vollsperrung 20.09.2007-30.10.2007 ',
+         'from' => 1190152800,
+         'id' => 1119,
+         'data' => 'userdel	q4::inwork 78194,11798 78837,11306
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1186956000,
+         'text' => 'B 169 zw. Cottbus und Klein Gaglow Deckenerneuerung Vollsperrung 10.08.2007-12.08.2007 ',
+         'from' => 1186610400,
+         'id' => 1120,
+         'data' => 'userdel	2::inwork 72657,-75488 73211,-74836 73977,-74037
+',
+         'type' => 'gesperrt'
        }
      
 );

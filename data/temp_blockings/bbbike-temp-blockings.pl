@@ -9437,4 +9437,20 @@ EOF
 userdel	2::inwork 36895,-12039 36087,-12087 35496,-12280
 EOF
      },
+     { from  => 1190152800, # 2007-09-19 00:00
+       until => 1193785200, # 2007-10-31 00:00
+       text  => 'B 167 Lebus-Seelow OD Dolgelin Kanal-,Straßen- u. Radwegbau Vollsperrung 20.09.2007-30.10.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 78194,11798 78837,11306
+EOF
+     },
+     { from  => 1186610400, # 2007-08-09 00:00
+       until => 1186956000, # 2007-08-13 00:00
+       text  => 'B 169 zw. Cottbus und Klein Gaglow Deckenerneuerung Vollsperrung 10.08.2007-12.08.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 72657,-75488 73211,-74836 73977,-74037
+EOF
+     },
     );
