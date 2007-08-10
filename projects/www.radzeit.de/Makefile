@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.99 2007/08/10 20:44:46 eserte Exp $
+# $Id: Makefile,v 1.100 2007/08/10 22:45:27 eserte Exp $
 #
 
 # Targets:
@@ -699,7 +699,7 @@ check-temp-blockings-integrity:
 	$(BBBIKE_ROOT_DIR)/miscsrc/check_bbbike_temp_blockings -datadir $(CURDIR)/BBBike/data -action none
 
 create-all-maps:
-	lwp-request -e GET 'http://${BBBIKE_RADZEIT_HOST}/cgi-bin/bbbike.cgi?create_all_maps=1'
+	lwp-request -m GET 'http://${BBBIKE_RADZEIT_HOST}/cgi-bin/bbbike.cgi?create_all_maps=1'
 
 #######################################################################
 ## Preliminary ixls.de rules, not needed anymore?

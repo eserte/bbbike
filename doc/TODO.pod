@@ -2411,6 +2411,21 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (M5) (bug)
+
+Wenn auf der Übersichtskarte eine Straße außerhalb Berlins aber in der
+Nähe der Grenze angeklickt wird, dann wird häufig eine Straßenkreuzung
+in Berlin gewählt, auch wenn es eine bessere Kreuzung außerhalb
+Berlins gäbe. Lösung: zuerst prüfen, ob sich der Klickpunkt innerhalb
+Berlins befindet, ansonsten sofort den Scope erhöhen.
+
+=item * (H5) (bug)
+
+Zwischen Rudow und Lichtenrade wird man nicht über Großziethen
+geroutet. Lösung: Luftlinie zwischen Start-(Via)-Ziel legen, falls
+diese die Berliner Grenze kreuzt, muss der Scope von city auf region
+erhöht werden.
+
 =item * (H4) (improvement)
 
 Use the suggest AJAX funktion for bbbikegooglemaps.cgi. Possible
