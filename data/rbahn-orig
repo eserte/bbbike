@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Regional- und Fernbahnstrecken
-#: version: $Id: rbahn-orig,v 5.42 2007/08/08 22:09:00 eserte Exp $
+#: version: $Id: rbahn-orig,v 5.42 2007/08/08 22:09:00 eserte Exp eserte $
 #:
 # "stillgelegt" meint hier: kein Personenverkehr auf diesen Gleisen
 # Werder - Brandenburg
@@ -330,7 +330,7 @@ RB26	RC 19233,12246 19474,12310 19713,12380 19801,12386 20055,12340 20194,12277 
 # Velten - Vehlefanz
 RE6,RB55	RC -5713,30692 -7654,32774 -9562,34675
 # Vehlefanz - Kremmen
-RE6,RB55	R -9562,34675 -11222,36087 -11823,36531 -13953,37426 -14320,37637 -14472,37827 -14754,38167
+RE6,RB55	R -9562,34675 -11222,36087 -11823,36531 -13357,37176 -13953,37426 -14320,37637 -14472,37827 -14754,38167
 # Kremmen - Neuruppin
 RE6	R -14754,38167 -14969,38410 -15077,38580 -15079,38877 -14816,40988 -15365,42751 -16228,43906 -20232,46311 -22880,48051 -25033,49754 -25916,50404 -26778,50951 -27511,51435 -27812,51903 -28395,54104 -28964,56147 -29902,57308
 # Neustadt - Rathenow (früher RB50), zwischen Rathenow Nord und Rathenow jetzt RB51

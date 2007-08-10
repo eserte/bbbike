@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.98 2007/08/08 16:32:29 eserte Exp $
+# $Id: Makefile,v 1.99 2007/08/10 20:44:46 eserte Exp $
 #
 
 # Targets:
@@ -65,7 +65,8 @@ DEPLOY_TARGETS=			prepare-bbbike-data \
 				prepare-mapserver-dist \
 				prepare-touren-dist \
 				rsync \
-				test
+				test \
+				create-all-maps
 
 # only bbbike data, no program, no mapserver
 DEPLOY_DATA_TARGETS=		prepare-bbbike-data \
@@ -696,6 +697,9 @@ check-temp-blockings-integrity-pre:
 
 check-temp-blockings-integrity:
 	$(BBBIKE_ROOT_DIR)/miscsrc/check_bbbike_temp_blockings -datadir $(CURDIR)/BBBike/data -action none
+
+create-all-maps:
+	lwp-request -e GET 'http://${BBBIKE_RADZEIT_HOST}/cgi-bin/bbbike.cgi?create_all_maps=1'
 
 #######################################################################
 ## Preliminary ixls.de rules, not needed anymore?

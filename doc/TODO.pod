@@ -134,6 +134,11 @@ positioning algorithm.
 
 Straﬂennummerierungsschilder (+ Font) werden nicht korrekt gezoomt.
 
+=item * (M4)
+
+‹berlappende (gleiche) Straﬂennummern sollten gar nicht erst gezeichnet
+werden.
+
 =item * (H5)
 
 Die Optimierungsparameter des CGIs (textuell) sollten in der
@@ -2405,6 +2410,12 @@ points if delta exceeds 128/128 meters.
 =head1 CGI version of BBBike (bbbike.cgi)
 
 =over
+
+=item * (H4) (improvement)
+
+Use the suggest AJAX funktion for bbbikegooglemaps.cgi. Possible
+alternatives: just for searching for streets (and user has to use the
+existing function to set start/goal) or to set start+goal or both.
 
 =item * (M4) (improvement)
 

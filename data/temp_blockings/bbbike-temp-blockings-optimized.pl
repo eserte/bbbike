@@ -735,16 +735,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_004418',
-         'until' => 1187215199,
-         'text' => 'Treptower Str. (Treptow) in beiden Richtungen zwischen Kiefholzstr. und Harzer Str. Baustelle Straße vollständig gesperrt (bis Mitte 08/2007)',
-         'from' => 1183412527,
-         'id' => 1055,
-         'data' => 'userdel	2::inwork 13857,8601 14015,8798 14140,8977
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -972,26 +963,9 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_006204',
-         'until' => 1186696800,
-         'text' => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Fahrbahnabsenkung, Straße vollständig gesperrt',
-         'from' => 1185828358,
-         'id' => 1099,
-         'data' => 'userdel	2::inwork 9341,5612 9147,5534
-',
-         'type' => 'gesperrt'
-       },
        undef,
-       {
-         'until' => 1186696800,
-         'text' => 'B 169 zw. Cottbus und Klein Gaglow Deckenerneuerung halbseitig gesperrt; Einbahnstraße 01.08.2007-09.08.2007 ',
-         'from' => 1185832800,
-         'id' => 1101,
-         'data' => 'userdel	1::inwork 73977,-74037 73211,-74836 72657,-75488
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1187301600,
          'text' => 'B 169 zw. Cottbus und Klein Gaglow Deckenerneuerung halbseitig gesperrt; Einbahnstraße 13.08.2007-16.08.2007 ',
@@ -1010,23 +984,14 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_006085',
-         'until' => 1187042400,
-         'text' => 'Adlergestell (Grünau) stadteinwärts zwischen Wassersportallee und Kablower Weg Baustelle, Fahrtrichtung gesperrt (bis 13.08.2007)',
-         'from' => 1186167826,
-         'id' => 1104,
-         'data' => 'userdel	1::inwork 23206,206 22547,651 22162,1067
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_006236',
          'until' => 1187560800,
-         'text' => 'Nöldnerstr.. (Lichtenberg) in beiden Richtungen zwischen Schlichtallee und Karlshorster Str. geplatzte Wasserleitung, Straße vollständig gesperrt',
-         'from' => 1186081543,
+         'text' => 'Nöldnerstr.. (Lichtenberg) in Richtung Karlshorster Str. ab Schlichtalllee geplatzte Wasserleitung, Fahrtrichtung gesperrt',
+         'from' => undef,
          'id' => 1105,
-         'data' => 'userdel	2::inwork 16032,10842 15670,10800 15396,10767 15266,10791
+         'data' => 'userdel	1::inwork 16032,10842 15670,10800 15396,10767 15266,10791
 ',
          'type' => 'gesperrt'
        },
@@ -1098,15 +1063,7 @@ userdel	2::temp 9918,12411 9926,12368
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1186696800,
-         'text' => 'L 603 Tröbitz-Drasdo zw. Drasdo und Schilda Einbau Dünnschichtbelag Vollsperrung 08.08.2007-09.08.2007 ',
-         'from' => 1186437600,
-         'id' => 1115,
-         'data' => 'userdel	2::inwork 11403,-88614 10459,-88231 9578,-87785
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1188597600,
          'text' => 'L 052 Ogrosen-Calau Bahnübergang in der OD Calau Gleisbauarbeiten Vollsperrung 28.08.2007-31.08.2007 ',

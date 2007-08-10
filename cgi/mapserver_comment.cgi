@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.39 2007/06/02 19:24:16 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.40 2007/08/10 20:08:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -327,13 +327,12 @@ EOF
     my $body =<<EOF;
 Hallo $name,
 
-danke für deinen Eintrag. Die Straße "$strname" wird demnächst bei
-BBBike verfügbar sein.
+danke für deinen Eintrag. Die Straße "$strname" wird demnächst bei BBBike verfügbar sein.
 
 Gruß,
-    das BBBike-Team
 
 EOF
+    # not anymore :-(    das BBBike-Team
     my $subject = "Re: $header->{Subject}";
     $extra_html .= <<EOF;
 <hr>Antwort-Mail:<br>

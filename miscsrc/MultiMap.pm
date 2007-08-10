@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiMap.pm,v 1.11 2007/08/02 21:54:03 eserte Exp $
+# $Id: MultiMap.pm,v 1.13 2007/08/10 19:54:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006,2007 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%images);
 
@@ -443,11 +443,29 @@ sub showmap_livecom {
 
 sub showmap_url_deinplan {
     my(%args) = @_;
-    require Karte::Deinplan;
-    my($sx,$sy) = split /,/, $args{coords};
-    my($x, $y) = map { int } $Karte::Deinplan::obj->standard2map($sx,$sy);
-    my $urlfmt = "http://www.dein-plan.de/?location=|berlin|%d|%d";
-    sprintf($urlfmt, $x, $y);
+    if (0) {
+	require Karte::Deinplan;
+	my($sx,$sy) = split /,/, $args{coords};
+	my($x, $y) = map { int } $Karte::Deinplan::obj->standard2map($sx,$sy);
+	my $urlfmt = "http://www.dein-plan.de/?location=|berlin|%d|%d";
+	sprintf($urlfmt, $x, $y);
+    } else {
+	# The old-styled links still work. Prefer this over the
+	# approximate pixel method above.
+	require Karte::Polar;
+	require URI::Escape;
+	my($px, $py) = ($args{px}, $args{py});
+	my $y_wgs = sprintf "%.2f", (Karte::Polar::ddd2dmm($py))[1];
+	my $x_wgs = sprintf "%.2f", (Karte::Polar::ddd2dmm($px))[1];
+	my $message = $args{street};
+	if (!$message) {
+	    $message = " "; # avoid empty message
+	}
+	$message =~ s{[/?]}{ }g;
+	$message = URI::Escape::uri_escape($message);
+	my $urlfmt = "http://www.berliner-stadtplan.com/topic/bln/str/message/%s/x_wgs/%s/y_wgs/%s/size/800x600/from/bbbike.html";
+	sprintf($urlfmt, $message, $x_wgs, $y_wgs);
+    }
 }
     
 sub showmap_deinplan {

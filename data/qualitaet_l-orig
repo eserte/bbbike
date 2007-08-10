@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Brandenburg und weiterer Umgebung
-#: version: $Id: qualitaet_l-orig,v 4.103 2007/08/06 22:03:14 eserte Exp $
+#: version: $Id: qualitaet_l-orig,v 4.103 2007/08/06 22:03:14 eserte Exp eserte $
 #:
 Basdorf: Kopfsteinpflaster, mäßig bis OK	Q1 11964,35230 12034,35012 12193,34683 12551,32765
 Strausberg Nord - Prötzel: sehr guter Asphalt	Q0 43584,20871 44596,21287 45545,21723 46072,21966 46782,22769 47585,23227 47712,23526 47671,23769 48104,24510 48904,25611 49255,26084 50022,26518
@@ -1590,8 +1590,11 @@ Kamp - Bargischow: asphaltiert	Q0 35539,159670 34996,159670
 Kamp - Anklam: Plattenweg, Mitte mit Asphalt aufgefüllt	Q1- 34996,159670 35076,159932 34766,160425 34620,160671 34504,160970 34360,161118 34044,161206 33336,161160 33086,161090 32097,160553 31902,160370 31835,160455 31544,160569 31393,160613 31401,160743 30981,160825 30594,161028 30438,161235 29421,161573 28842,161837
 Kamp - Anklam: Fahrbahn Plattenweg, Radweg Verbundsteinpflaster	Q1 28842,161837 28567,161564 28473,161345
 ######################### User Contributions #################################
-#: by: Maren (e-blu):
-Bogensee - Prenden: Asphalt	Q0 18019,41416 18113,41517 18199,41654 18345,41745 18220,41998 18211,42279 18138,42580 18720,43107
+#: by: Maren (e-blu): vvv
+Bogensee - Prenden: Asphalt	Q0 17879,41267 18019,41416 18113,41517 18199,41654 18345,41745 18220,41998 18211,42279 18138,42580 18720,43107
+Prenden - Klosterfelde: schlechtes Kopfsteinpflaster mit tiefen Löchern und Asphaltflicken	Q3 19609,43128 19107,43180 18720,43107
+Bogensee - Wandlitz: Asphalt	Q0 17879,41267 17833,41227 17766,41142 17806,40831 17757,40658 17544,40499 17288,40557
+#: by: ^^^
 #: by: Ariane Gießler:
 Haeckelstr.: Kopfsteinpflaster	Q2 -15185,-2444 -15208,-2279 -14996,-2257 -14868,-2244
 #: by: Laurenz Heine:
@@ -1987,8 +1990,16 @@ Hobrechtsfelde - Gorinsee: loser Sandweg	Q3 15159,30109 15063,30310
 Hobrechtsfelde - Gorinsee: fester Sandweg, teilweise kleiner Schotter	Q2 15063,30310 14865,30807 14857,31087
 Buch - Gorinsee: fester Sandweg, teilweise kleiner Schotter	Q2 15757,28054 15700,28074 15697,28147 15463,28202 15508,28522 15621,29290
 #: by: ^^^
-#: by: Jakob-Dominik Ullmann:
+#: by: Jakob-Dominik Ullmann: vvv
 Im Kamp: schlechtes Kopfsteinpflaster	Q3 -1072,28 -1160,-71 -1186,-134 -1192,-195 -1179,-298
+Im Kamp: Verbundsteinpflaster	Q0- -1157,-360 -1179,-298
+Im Kamp: guter Asphalt	Q0 -1072,28 -990,137 -903,314 -786,629
+Ginsterheide: Asphalt	Q0 -786,629 -818,789 -868,1124 -877,1209
+#: by: ^^^
+#: by: Joachim Ueberall: 
+Rote-Kreuz-Str.: Asphalt	Q0 -8142,-1909 -8173,-2151
+#: by: Roland Miseler:
+Mittelweg (Amalienfelde): mäßiger fester Sandweg	Q2 -13513,36825 -13357,37176 -13219,37477 -13098,37745
 ######################################################################
 #: by: Andreas Titz vvv
 #: append_comment Oranienburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv

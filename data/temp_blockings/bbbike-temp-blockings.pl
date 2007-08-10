@@ -2905,7 +2905,7 @@ EOF
        text  => 'B 273; zw. Kremmen und Schwante Straßenbauarbeiten Vollsperrung 05.10.2005-07.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -14038,37008 -12791,36632
+userdel	2 -14038,37008 -13513,36825 -12791,36632
 EOF
      },
      { from  => 1128549600, # 2005-10-06 00:00
@@ -8900,7 +8900,7 @@ userdel	q4::inwork 27067,12608 27094,12535 27117,12466
 EOF
      },
      { from  => 1183412527, # 2007-07-02 23:42
-       until => 1187215199, # 2007-08-15 23:59
+       until => 1186773173, # 2007-08-15 23:59 1187215199
        text  => 'Treptower Str. (Treptow) in beiden Richtungen zwischen Kiefholzstr. und Harzer Str. Baustelle Straße vollständig gesperrt (bis Mitte 08/2007)',
        type  => 'handicap',
        source_id => 'IM_004418',
@@ -9312,7 +9312,7 @@ userdel	2::inwork 24639,-53978 25777,-53225 26126,-53177
 EOF
      },
      { from  => 1186167826, # 2007-08-03 21:03
-       until => 1187042400, # 2007-08-14 00:00
+       until => 1186773145, # 2007-08-14 00:00 1187042400
        text  => 'Adlergestell (Grünau) stadteinwärts zwischen Wassersportallee und Kablower Weg Baustelle, Fahrtrichtung gesperrt (bis 13.08.2007)',
        type  => 'gesperrt',
        source_id => 'IM_006085',
@@ -9320,13 +9320,13 @@ EOF
 userdel	1::inwork 23206,206 22547,651 22162,1067
 EOF
      },
-     { from  => 1186081543, # 2007-08-02 21:05
+     { from  => undef, # 
        until => 1187560800, # 2007-08-20 00:00
-       text  => 'Nöldnerstr.. (Lichtenberg) in beiden Richtungen zwischen Schlichtallee und Karlshorster Str. geplatzte Wasserleitung, Straße vollständig gesperrt',
+       text  => 'Nöldnerstr.. (Lichtenberg) in Richtung Karlshorster Str. ab Schlichtalllee geplatzte Wasserleitung, Fahrtrichtung gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_006236',
        data  => <<EOF,
-userdel	2::inwork 16032,10842 15670,10800 15396,10767 15266,10791
+userdel	1::inwork 16032,10842 15670,10800 15396,10767 15266,10791
 EOF
      },
      { from  => 1186081587, # 2007-08-02 21:06
