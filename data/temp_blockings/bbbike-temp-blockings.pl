@@ -9453,4 +9453,13 @@ EOF
 userdel	2::inwork 72657,-75488 73211,-74836 73977,-74037
 EOF
      },
+     { from  => 1186819867, # 2007-08-11 10:11
+       until => 1186898400, # 2007-08-12 08:00
+       text  => 'Straße des 17. Juni (Mitte) Zwischen Großer Stern und Yitzhak-Rabin-Str. Veranstaltung, Straße vollständig gesperrt (bis 12.08. ca. 8 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_006277',
+       data  => <<EOF,
+userdel	2::temp 8063,12182 7816,12150 7383,12095 6828,12031
+EOF
+     },
     );

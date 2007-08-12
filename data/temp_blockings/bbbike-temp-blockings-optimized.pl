@@ -902,15 +902,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1186869600,
-         'text' => 'L 220 B167 AS Finowfurt-Joachimsthal zw. Eichhorst und Elsenau Bau Otterdurchlass Vollsperrung 30.07.2007-11.08.2007 ',
-         'from' => 1185660000,
-         'id' => 1090,
-         'data' => 'userdel	2::inwork 29812,57628 29056,57503
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_006194',
          'until' => 1189893599,
@@ -1054,15 +1046,7 @@ userdel	2::temp 9918,12411 9926,12368
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1186869600,
-         'text' => 'L 060 Friedrich-List-Str. OD Falkenberg, zw. H.-Zille-Str. und Lindenstr. Einbau Dünnschichtbelag halbseitig gesperrt; Einbahnstraße 10.08.2007-11.08.2007 ',
-         'from' => 1186610400,
-         'id' => 1114,
-         'data' => 'userdel	q4::inwork; 2001,-91126 1142,-91254
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1188597600,
