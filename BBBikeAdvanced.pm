@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.187 2007/08/05 20:40:47 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.188 2007/08/12 11:58:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1163,6 +1163,8 @@ sub parse_url_for_coords {
 	$y_ddd = Karte::Polar::dmm2ddd(52, $y);
     } elsif ($url =~ m{x_wgsv=([\d\.]+)&y_wgsv=([\d\.]+)}) { # berliner-stadtpan new (2007-07-24)
 	($x_ddd, $y_ddd) = ($1, $2);
+    } elsif ($url =~ m{/gps_x/(\d+),(\d+)/gps_y/(\d+),(\d+)}) { # berliner-stadtplan24 (ca. 2007-08-10)
+	($x_ddd, $y_ddd) = ($1.".".$2, $3.".".$4);
     } elsif ($url =~ /ADR_ZIP=(\d+)&ADR_STREET=(.+?)&ADR_HOUSE=(.*)/) {
 	my($zip, $street, $hnr) = ($1, $2, $3);
 	local @INC = @INC;
