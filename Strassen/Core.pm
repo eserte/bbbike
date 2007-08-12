@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.82 2007/08/12 18:51:08 eserte Exp $
+# $Id: Core.pm,v 1.83 2007/08/12 21:35:05 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.82 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.83 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -343,6 +343,8 @@ sub new_from_data_ref {
     bless $self, $class;
 }
 
+# Note that this constructor expects binary data i.e. *octets*
+# not character data! 
 ### AutoLoad Sub
 sub new_from_data_string {
     my($class, $string, %args) = @_;

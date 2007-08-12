@@ -1407,10 +1407,9 @@ Plugin.
 
 =item * (H5)
 
-Besserer Plugin-Dialog: offiziell machen, wenn er sich bewährt.
-Plugin-Argumente sollten angezeigt und editiert werden können.
-Vielleicht auch mehr Informationen (Icon, längere Beschreibung etc.)
-hereinnehmen.
+BBBikePluginLister: Plugin-Argumente sollten angezeigt und editiert
+werden können. Vielleicht auch mehr Informationen (Icon, längere
+Beschreibung etc.) hereinnehmen.
 
 =item * (M1) (feature)
 
@@ -2438,12 +2437,6 @@ geroutet. Lösung: Luftlinie zwischen Start-(Via)-Ziel legen, falls
 diese die Berliner Grenze kreuzt, muss der Scope von city auf region
 erhöht werden.
 
-=item * (H4) (improvement)
-
-Use the suggest AJAX funktion for bbbikegooglemaps.cgi. Possible
-alternatives: just for searching for streets (and user has to use the
-existing function to set start/goal) or to set start+goal or both.
-
 =item * (M4) (improvement)
 
 Review bbbike.cgi.config and change defaults in bbbike.cgi. Rule of
@@ -2647,13 +2640,21 @@ newstreetform.html: qualitaet zum Pflichtfeld machen.
 
 =over
 
+=item * (H4) (improvement)
+
+Use the suggest AJAX funktion for bbbikegooglemaps.cgi. Possible
+alternatives: just for searching for streets (and user has to use the
+existing function to set start/goal) or to set start+goal or both.
+
 =item * (H2)
 
 Use the googlemaps clone on mapserver basis.
 
-=item * (M2)
+=item * (M4) (improvement)
 
-Support for kml/kmz files, see misc/Nordosteuropa\ 2006.kmz.
+Make it possible to add points to a computed route in
+bbbikegooglemaps.cgi. Also make it possible to delete points (last, to
+last via, whole) from a computed route.
 
 =back
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen.t,v 1.14 2007/06/10 21:05:33 eserte Exp $
+# $Id: strassen.t,v 1.15 2007/08/12 21:35:44 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -284,6 +284,8 @@ SKIP: {
 SKIP: {
     skip("Need utf-8 (very!) capable perl", $encoding_tests)
 	if $] < 5.008;
+    skip("Need Encode module", $encoding_tests)
+	if !eval { require Encode; 1 };
 
     my $data = <<EOF;
 #: encoding: utf-8
@@ -291,7 +293,8 @@ SKIP: {
 \x{20ac}	X 2,2
 Nonumlaut	X 1,1
 EOF
-    my $s = Strassen->new_from_data_string($data);
+    my $octet_data = Encode::encode("utf-8", $data);
+    my $s = Strassen->new_from_data_string($octet_data);
     my $global_dirs = $s->get_global_directives;
     is($global_dirs->{encoding}->[0], "utf-8", "Encoding directive");
     is($s->get_global_directive("encoding"), "utf-8", "get_global_directive shortcut");
