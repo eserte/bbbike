@@ -707,6 +707,58 @@ in meters, the category is not used.
 
 XXX To be continued
 
+=head1 ATTRIBUTES
+
+=over
+
+=item inwork
+
+Marks the map item to be E<quot>in workE<quot>. This could be rendered
+with an additional E<quot>in workE<quot> sign along the map item. This
+attribute is already handled in a couple of data files
+(F<fragezeichen>, F<gesperrt>, F<handicap>, F<strassen_bab>).
+
+=item Tu
+
+The map item is in a tunnel. This is already handled in F<sbahn>,
+F<rbahn> and F<strassen_bab>.
+
+=item Tu_
+
+The map item is in a tunnel and a tunnel mound should only be drawn at the
+beginning of the map item.
+
+=item _Tu
+
+The map item is in a tunnel and a tunnel mound should only be drawn at
+the end of the map item.
+
+=item _Tu_
+
+The map item is in a tunnel and no tunnel mounds should be drawn at
+all.
+
+=item Br
+
+The map item is on a bridge. This is already handled in
+F<strassen_bab>.
+
+=item Eb
+
+The map item is on an embankment (Bahn- oder Straﬂendamm). This means
+that the map item is typically over other map items. The attribute is
+not used yet.
+
+=item Cu
+
+The map item is in a cutting (Einschnitt). This means that the map
+item is typically under other map items. The attribute is not used
+yet.
+
+=item
+
+=back
+
 =head1 EXAMPLES
 
     #: map: polar
@@ -741,6 +793,13 @@ C<< <TAB> >> and C<< <SPACE> >> should be inserted)
     ^                  ^
     Name of a park     Category (F = area (polygon, Fl‰che),
                                  P = park)
+
+                    Category (S = S-Bahn, A = Tariff area A)
+                    v
+    S1,S2,S25 <TAB> SA::Tu_ <SPACE> coordinates ...
+                        ^
+                        Attribute (Tunnel, only draw tunnel entrance
+                                   at beginning)
 
 =head1 CAVEATS
 

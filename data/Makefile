@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.153 2007/08/06 22:02:39 eserte Exp eserte $
+# $Id: Makefile,v 2.154 2007/08/12 12:08:49 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1442,6 +1442,8 @@ cgpsmapper-upload:	${SENDMAP} cgpsmapper-images do-cgpsmapper-upload
 
 do-cgpsmapper-upload:
 	@echo "Approx. upload time: half an hour for 1,7 MB data"
+	@echo "                     35 minutes   for 1,94 MB data"
+	@echo " (maybe use -sSPEED option to do it faster?)"
 	-${SENDMAP} ${GPSPORT} ${SENDMAP_ARGS} ${CGPSMAPPER_IMG_FILES}
 
 ${PERSISTENTTMPDIR}/bbbike.mp:	${BBD2POLISH} \

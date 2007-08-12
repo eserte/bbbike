@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: KML.pm,v 1.5 2007/08/05 22:22:06 eserte Exp $
+# $Id: KML.pm,v 1.6 2007/08/12 18:50:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -15,8 +15,8 @@
 package Strassen::KML;
 
 use strict;
-use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+use vars qw($VERSION $TEST_SET_NAMESPACE_DECL_URI_HACK);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Strassen);
 
@@ -33,7 +33,11 @@ sub new {
 	bless $self, $class;
 
 	if ($filename_or_object) {
-	    $self->kml2bbd($filename_or_object, %args);
+	    if ($filename_or_object =~ m{\.kmz$}i) {
+		$self->kmz2bbd($filename_or_object, %args);
+	    } else {
+		$self->kml2bbd($filename_or_object, %args);
+	    }
 	}
 
 	$self;
@@ -42,30 +46,23 @@ sub new {
 
 sub kml2bbd {
     my($self, $file, %args) = @_;
-
     my $p = XML::LibXML->new;
     my $doc = $p->parse_file($file);
+    $self->_kmldoc2bbd($doc, %args);
+}
+
+sub _kmldoc2bbd {
+    my($self, $doc, %args) = @_;
     my $root = $doc->documentElement;
-    if ($root->can("setNamespaceDeclURI")) {
+    if ($root->can("setNamespaceDeclURI") && !$TEST_SET_NAMESPACE_DECL_URI_HACK) {
 	$root->setNamespaceDeclURI(undef, undef);
     } else {
 	# ugly hack, try it again, remove namespace first:
-	require File::Temp;
-	my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1,
-						   SUFFIX => "_kml2bbd.kml");
-	open my $infh, $file
-	    or die "While opening $file: $!";
-	while(<$infh>) {
-	    s{xmlns="[^"]+"}{}g;
-	    print $tmpfh $_
-		or die $!;
-	}
-	close $infh;
-	close $tmpfh
-	    or die $!;
-	$doc = $p->parse_file($tmpfile);
+	my $xml = $doc->serialize;
+	$xml =~ s{xmlns="[^"]+"}{}g;
+	my $p = XML::LibXML->new;
+	$doc = $p->parse_string($xml);
 	$root = $doc->documentElement;
-	unlink $tmpfile;
     }
     my $coords = $root->findvalue('/kml//Placemark/LineString/coordinates'); # might be Document or Folder in between
     my @c = map {
@@ -76,6 +73,28 @@ sub kml2bbd {
     my $name = $args{name} || "Route"; # XXX get from /kml//name?
     my $cat  = $args{cat}  || "X";
     $self->push([$name, [@c], $cat]) if @c;
+}
+
+sub kmz2bbd {
+    my($self, $file, %args) = @_;
+
+    require Archive::Zip;
+
+    my $zip = Archive::Zip->new;
+    unless ($zip->read($file) == Archive::Zip::AZ_OK()) {
+	die "Can't read kmz file <$file>";
+    }
+    my $docMember = $zip->memberNamed('doc.kml');
+    if (!$docMember) {
+	die "Can't find expected file <doc.kml> in <$file>";
+    }
+    my($contents, $status) = $docMember->contents;
+    if ($status != Archive::Zip::AZ_OK()) {
+	die "Error while getting doc.kml contents";
+    }
+    my $p = XML::LibXML->new;
+    my $doc = $p->parse_string($contents);
+    $self->_kmldoc2bbd($doc, %args);
 }
 
 sub longlat2xy {

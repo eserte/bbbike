@@ -1592,6 +1592,18 @@ L<http://www.perlmonks.org/index.pl?node_id=355073>
 
 =head1 Daten allgemein
 
+=head2 Kategorien, Attribute
+
+=over
+
+=item * (H4) (improvement)
+
+S- und U-Bahnlinien mit den neuen Attributen Em und Cu versehen. Diese
+sollten dann dafür verwendet werden, um das Layering anzupassen.
+Außerdem U-Bahntunnelstrecken als solche markieren.
+
+=back
+
 =head2 Radwege und -touren im Netz
 
 =over
@@ -3270,12 +3282,7 @@ Stick existieren
 
 =over
 
-=item * (E4)
-
-xmllint-checks in strassen-gpx.t. Eventuell allgemeinen xmllint-check
-in BBBikeTest.pm unterbringen.
-
-=item * (M2)
+=item * (M1)
 
 Cgiinfo in cgi2.t funktioniert leider nicht, weil openURL als zweiten
 Parameter nur true oder false zuläßt. Workaround:
@@ -3300,13 +3307,13 @@ Z<>=> maybe the cache build should be done in a separate process. This
 
 =over
 
-=item *
+=item * (H1)
 
 Maybe I should create a tiny wrapper around mapserver-3.6.4, and if
 this fails (segfaults) call mapserver-3.6.6. So I will get the nicer
 images of 3.6.4, but the fallback safety of 3.6.6.
 
-=item *
+=item * (E3)
 
 Regularly check the CVS version/latest release of mapserver. Maybe it
 will run my mapfile again...

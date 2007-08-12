@@ -1184,7 +1184,7 @@ EOF
        text  => 'K 6740; (L 38 östl. Berkenbrück-Steinhöfel); OL Demnitz Straßenbauarbeiten Vollsperrung 12.07.2004-30.04.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 64514,-1544 64439,-1243
+userdel	q4 64469,-1532 64463,-1173
 EOF
      },
      { from  => 1097359200, # 2004-10-10 00:00
@@ -8327,7 +8327,7 @@ EOF
        text  => 'L 038 zw. Treplin und Sieversdorf Sicherung Hohlräume Vollsperrung 04.06.2007-15.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 77850,-706 78103,-165
+userdel	2::inwork 77833,-697 78103,-165
 EOF
      },
      { from  => 1181599200, # 2007-06-12 00:00
@@ -9089,7 +9089,7 @@ EOF
        text  => 'B 005 Kieler Str. OL Frankfurt (O), zw. Lebuser Ch. u. Goepelstr. Bergsicherungsarbeiten Vollsperrung 23.07.2007-03.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 87377,-3591 87272,-3504
+userdel	q4::inwork 87377,-3591 87248,-3446
 EOF
      },
      { from  => 1184709600, # 2007-07-18 00:00
@@ -9237,7 +9237,7 @@ userdel	1::inwork 5468,10442 5479,10719 5484,10810
 EOF
      },
      { from  => 1185833959, # 2007-07-31 00:19
-       until => 1187215199, # 2007-08-15 23:59
+       until => 1186937842, # 2007-08-15 23:59 1187215199
        text  => 'Oranienburger Str. (Wittenau) stadtauswärts zwischen Lübarser Str. und Wittenauer Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 08.2007)',
        type  => 'gesperrt',
        source_id => 'IM_006189',

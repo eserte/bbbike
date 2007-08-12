@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.22 2007/03/15 22:13:13 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.23 2007/08/12 19:23:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ BEGIN {
 use strict;
 use vars qw(@EXPORT);
 use vars (@opt_vars);
-use vars qw($can_tidy);
+use vars qw($can_tidy $can_xmllint);
 
 use vars qw($BBBIKE_TEST_CGIDIR
 	    $BBBIKE_TEST_CGIURL
@@ -40,8 +40,8 @@ use File::Spec     qw();
 
 use BBBikeUtil qw(is_in_path);
 
-@EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check eq_or_diff
-	      is_long_data like_long_data unlike_long_data),
+@EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check xmllint_string
+	      eq_or_diff is_long_data like_long_data unlike_long_data),
 	   @opt_vars);
 
 # Old logfile
@@ -234,6 +234,30 @@ sub tidy_check {
 		    close DIAG;
 		    Test::More::diag($diag);
 		};
+    }
+}
+
+# only usable with Test::More, generates one test
+sub xmllint_string {
+    my($content, $test_name, %args) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
+ SKIP: {
+	my $no_of_tests = 1;
+	if (!defined $can_xmllint) {
+	    $can_xmllint = is_in_path("xmllint");
+	}
+	Test::More::skip("xmllint is not available", $no_of_tests) if !$can_xmllint;
+
+	$test_name = "xmllint check" if !$test_name;
+
+	open(my $XMLLINT, "| xmllint - 2>&1 >/dev/null")
+	    or die "Error while opening xmllint: $!";
+	print $XMLLINT $content
+	    or die $!;
+	close $XMLLINT
+	    or die $!;
+	Test::More::is($?, 0, $test_name)
+		or diag $content;
     }
 }
 

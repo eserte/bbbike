@@ -934,16 +934,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_006189',
-         'until' => 1187215199,
-         'text' => 'Oranienburger Str. (Wittenau) stadtauswärts zwischen Lübarser Str. und Wittenauer Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 08.2007)',
-         'from' => 1185833959,
-         'id' => 1095,
-         'data' => 'userdel	1::inwork 5326,21407 5311,21495 5149,21721
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1187820000,
          'text' => 'L 017 Bahnbrücke zw. Flatow und Staffelde Brückendemontage Vollsperrung 22.08.2007-22.08.2007 ',

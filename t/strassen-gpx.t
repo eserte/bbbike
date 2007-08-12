@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-gpx.t,v 1.9 2007/07/20 20:14:06 eserte Exp $
+# $Id: strassen-gpx.t,v 1.10 2007/08/12 19:24:01 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -11,6 +11,7 @@ use strict;
 use FindBin;
 use lib ("$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/..",
+	 $FindBin::RealBin,
 	);
 use Data::Dumper;
 use File::Temp qw(tempfile);
@@ -26,11 +27,13 @@ BEGIN {
     }
 }
 
+use BBBikeTest qw(xmllint_string);
+
 use Route;
 
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
-my $tests_per_variant = 23;
+my $tests_per_variant = 26;
 my $bbdfile = "obst";
 
 GetOptions("v" => \$v,
@@ -82,6 +85,7 @@ for my $use_xml_module (@variants) {
 
 	    my $xml_res = $s->bbd2gpx;
 	    like($xml_res, qr{^<(\?xml|gpx)}, "Looks like XML");
+	    xmllint_string($xml_res, "xmllint for bbd2gpx output (track)");
 
 	    my $s2 = Strassen::GPX->new;
 	    $s2->gpxdata2bbd($xml_res);
@@ -124,6 +128,7 @@ for my $use_xml_module (@variants) {
 
 	    my $xml_res = $s->bbd2gpx;
 	    like($xml_res, qr{^<(\?xml|gpx)}, "Looks like XML");
+	    xmllint_string($xml_res, "xmllint for bbd2gpx output (waypoint)");
 
 	    my $s2 = Strassen::GPX->new;
 	    $s2->gpxdata2bbd($xml_res);
@@ -169,6 +174,7 @@ for my $use_xml_module (@variants) {
 	    isa_ok($s, "Strassen::GPX");
 	    my $xml_res = $s->Strassen::GPX::bbd2gpx;
 	    like($xml_res, qr{^<(\?xml|gpx)}, "Looks like XML");
+	    xmllint_string($xml_res, "xmllint for bbd2gpx output ($bbdfile)");
 	}
 
 	# Problematic file
