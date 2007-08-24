@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiMap.pm,v 1.13 2007/08/10 19:54:25 eserte Exp $
+# $Id: MultiMap.pm,v 1.14 2007/08/24 22:50:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006,2007 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%images);
 
@@ -87,6 +87,12 @@ sub register {
 	  callback => sub { showmap_berliner_stadtplan24(@_) },
 	  callback_3_std => sub { showmap_url_berliner_stadtplan24(@_) },
 	  ($images{BerlinerStadtplan24} ? (icon => $images{BerlinerStadtplan24}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . "_Geocaching"} =
+	{ name => "geocaching.com",
+	  callback => sub { showmap_geocaching(@_) },
+	  callback_3_std => sub { showmap_geocaching(@_) },
+	  ($images{Geocaching} ? (icon => $images{Geocaching}) : ()),
 	};
 }
 
@@ -277,6 +283,30 @@ ADs=
 EOF
     }
 
+    if (!defined $images{Geocaching}) {
+	# Fetched logo:
+	#   wget http://www.geocaching.com/images/nav/logo_sub.gif
+	# Cropped whitespace and resized to 16px using gimp
+	# Created base64:
+	#   mmencode -b geocaching.gif
+	$images{Geocaching} = $main::top->Photo
+	    (-format => 'gif',
+	     -data => <<EOF);
+R0lGODlhEAAQAMZ9ADMxNjQxNDMyNTEzNzM0NTQ+OS4/RkM5NjVBOkQ7NkM/MitHTElFMUpG
+MUtHMVNENyNcYl1KOCJfaVhSMFtXL1xXL11YLjlqRzpvSBGBjw6Hkw+HlRCHkw2Jl4JgOwqQ
+nguQnDuGUAmToTuNUjyNUnx3KQOgrzyUVAGisoN7KQCktACktT2cVz2dV4qBKaJyPw2ouD6j
+WT6kWqx5QD6vXT+yXrR+QJiSJT+2Xz+3X7eAQLmAQKGZJqiiI9aRQ9eRQ7WtIbiwIdqaTuqc
+Re6eRcS7H/GfRsa+HfKgRvShR/ejR/mjR/qkR8vEHdDIHPqpU9bMHNjQG97VGt7WGuHXGsfG
+x+jfGOziGPHoF/LoF7ze4dTV1brh5vbrFtnZ07jm6vjuFvnuFvrvFfnwFf7yFf/yFd7e3//z
+Fd3f3dfm29vp3tjs39nw39zs79nx3/3kye7sz9vw8tnx89ry9P7u3f7u3v78zf/8zfL7+//9
+3Pn7+v/89v/99////////////yH+FUNyZWF0ZWQgd2l0aCBUaGUgR0lNUAAh+QQBCgB/ACwA
+AAAAEAAQAAAHzYBYUl1HY1NleW44i4w4YC5BKTdUiGonNI04VzwUFT1niGgEBSGNZFklExZN
+Z3lsMRckjWVWClRODU6JjDIji2VFDGFnUVC7ODkYCDU4ZUAOYmXSxzgsAi04d3BednfefHpu
+4mtbaW5fWlVcX+x4e2/w8W8qIgAaKvhydEtJRv5IS1SgWAABnwp9S14cSPBAR0AVHEAYRLgj
+QAQfSx7i6yDhQ5x9PzwQyahxRQYDA8zsG2KDpEZ8Jja02adkBhOSMHLqhDGnzpMnQn7+DAQA
+Ow==
+EOF
+    }
 }
 
 ######################################################################
@@ -534,6 +564,26 @@ sub showmap_berliner_stadtplan24 {
     my(%args) = @_;
     my $url = showmap_url_berliner_stadtplan24(%args);
     start_browser_no_mozilla($url);
+}
+
+######################################################################
+# Geocaching.com
+
+sub showmap_url_geocaching {
+    my(%args) = @_;
+
+    my $px = $args{px};
+    my $py = $args{py};
+
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "http://www.geocaching.com/seek/gmnearest.aspx?lat=%s&lng=%s&zm=%d&mt=m",
+	$py, $px, $scale;
+}
+
+sub showmap_geocaching {
+    my(%args) = @_;
+    my $url = showmap_url_geocaching(%args);
+    start_browser($url);
 }
 
 ######################################################################
