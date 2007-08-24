@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: temp_blockings_dates.t,v 1.10 2007/06/16 13:26:39 eserte Exp $
+# $Id: temp_blockings_dates.t,v 1.11 2007/08/24 21:07:51 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -255,6 +255,14 @@ Alt-Wittenau zwischen Eichborndamm und Triftstraße Bürgerfest, Straße gesperrt, 
 EOF
       Mktime(2004,06,19,10,00,00),
       Mktime(2004,06,20,02,00,00),
+     ],
+
+     [<<EOF,
+Siegfriedstr. (Lichtenberg) Richtung Josef-Orlopp-Str., Höhe Fanninger Str. Baustelle, Fahrtrichtung gesperrt (bis 28.07.07 04 Uhr)
+EOF
+      Mktime(@Today_and_Now),
+      Mktime(2007,07,28,04,00,00),
+      0,
      ],
 
     ) {

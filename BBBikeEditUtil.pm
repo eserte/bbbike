@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEditUtil.pm,v 1.18 2007/06/16 13:26:26 eserte Exp $
+# $Id: BBBikeEditUtil.pm,v 1.19 2007/08/24 21:07:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -161,6 +161,7 @@ sub parse_dates {
     my $date_rx       = qr/(\d{1,2})\.(\d{1,2})\.((?:20)?\d{2})/;
     my $short_date_rx = qr/([0-3]?[0-9])\.([0-1]?[0-9])\./;
     my $time_rx       = qr/(\d{1,2})[\.:](\d{2})\s*Uhr/;
+    my $short_time_rx = qr/(\d{1,2})\s*Uhr/;
     my $full_date_rx  = qr/$date_rx\D+$time_rx/;
     my $ab_rx         = qr/(?:ab[:\s]+|Dauer[:\s]+|vo[mn][:\s]+)/;
     my $bis_und_rx    = qr/(?:[Bb]is|und|\s*-\s*)(?:\s+(?:ca\.|voraussichtlich|zum))?/;
@@ -236,7 +237,13 @@ TRY_MATCHES: {
 		last TRY_MATCHES;
 	    }
 	}
-	if (($d1,$m1,$y1, $H1,$M1) = $btxt =~
+	if (($d1,$m1,$y1, $H1) = $btxt =~
+	    /$bis_und_rx\s*$date_rx(?:\D+$short_time_rx)?/) {
+	    $H1 = 24 if !defined $H1;
+	    $M1 = 0;
+	    $new_end_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
+	    $rx_matched     = 22;
+	} elsif (($d1,$m1,$y1, $H1,$M1) = $btxt =~
 	    /$bis_und_rx\s*$date_rx(?:\D+$time_rx)?/) {
 	    $H1 = 24 if !defined $H1;
 	    $M1 ||= 0;

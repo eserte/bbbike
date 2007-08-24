@@ -305,31 +305,14 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        undef,
-       {
-         'until' => 1187647200,
-         'text' => 'B 112 Forster Str. Bahnunterführung in der OD Guben Gleis- u. Brückensanierung Vollsperrung 17.08.2007-20.08.2007 ',
-         'from' => 1187215200,
-         'id' => 886,
-         'data' => 'userdel	2::inwork 100192,-50107 100189,-50404
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_005060',
-         'until' => 1191189600,
-         'text' => 'Berliner Allee (Weißensee) in Richtung stadteinwärts, in Höhe Rennbahnstr. Baustelle, Fahrtrichtung gesperrt (bis Ende September 2007)',
-         'from' => undef,
-         'id' => 893,
-         'data' => 'userdel	1::inwork 14535,17003 14559,16912
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        {
@@ -700,15 +683,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1187388000,
-         'text' => 'L 088 Karl-Marx-Str. OL Beelitz, zw. R.-Koch-Str. u. Zeppelinstr. Ausbau Kreisverkehr Vollsperrung 13.07.2007-17.08.2007 ',
-         'from' => 1184191200,
-         'id' => 1045,
-         'data' => 'userdel	q4::inwork -19105,-19043 -19058,-19120
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_004443',
@@ -780,28 +755,12 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1187388000,
-         'text' => 'L 033 zw. Kreuz. Hönow und Krz. Landsberger Ch./ Stendaler Str. Deckeninstandsetzung Vollsperrung 06.08.2007-17.08.2007 ',
-         'from' => 1186264800,
-         'id' => 1067,
-         'data' => 'userdel	2::inwork 25457,15594 25955,15531 26117,15452
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
        undef,
-       {
-         'until' => 1187647200,
-         'text' => 'L 023 Templin-Lychen von OL Densow bis OE Lychen Straßenbauarbeiten Vollsperrung 16.07.2007-20.08.2007 ',
-         'from' => 1184450400,
-         'id' => 1072,
-         'data' => 'userdel	2::inwork 4239,85382 5194,83184
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        {
          'source_id' => 'IM_006088',
@@ -852,15 +811,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1187388000,
-         'text' => 'L 033 zw. Kreuz. Hönow und Krz. Landsberger Ch./ Stendaler Str. Deckeninstandsetzung Vollsperrung 06.08.2007-17.08.2007 ',
-         'from' => 1186264800,
-         'id' => 1081,
-         'data' => 'userdel	2::inwork 26328,15462 26232,15444 26117,15452 25955,15531 25457,15594 25339,15592 24999,15634 23893,15893
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -873,15 +824,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1187042400,
-         'text' => 'K 6153 AS Friedersdorf-Königs Wusterhausen Bahnübergang in der OL Kablow Gleisbauarbeiten Vollsperrung 11.08.2007-13.08.2007 ',
-         'from' => 1186696800,
-         'id' => 1085,
-         'data' => 'userdel	2::inwork 33221,-10748 32827,-11406 32725,-11546
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1189893600,
          'text' => 'L 016 Perwenitz-Börnicke OD Grünefeld 4. Brandenb.Dorf- u. Erntefest Vollsperrung 15.09.2007-15.09.2007 ',
@@ -906,23 +849,14 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        {
          'source_id' => 'IM_006194',
          'until' => 1189893599,
-         'text' => 'Blankenfelder Str. (Niederschönhausen) stadteinwärts zwischen Kastanienallee bis Schillerstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 09.2007)',
+         'text' => 'Dietzgenstr. (Pankow) stadteinwärts zwischen Kastanienallee bis Schillerstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 09.2007)',
          'from' => 1185833762,
          'id' => 1091,
          'data' => 'userdel	1::inwork 10138,20840 10119,20731 10063,20493
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_005823',
-         'until' => 1188597599,
-         'text' => 'Drakestr. (Lichterfelde) in beiden Richtungen, zwischen Curtiusstr. und Unter den Eichen Fahrbahnunterspülung, Straße vollständig gesperrt (bis Ende 08.2007)',
-         'from' => 1185833817,
-         'id' => 1092,
-         'data' => 'userdel	2::inwork 3048,4305 3128,4190 3259,4002
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_006190',
@@ -935,29 +869,21 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1187820000,
-         'text' => 'L 017 Bahnbrücke zw. Flatow und Staffelde Brückendemontage Vollsperrung 22.08.2007-22.08.2007 ',
-         'from' => 1187647200,
-         'id' => 1096,
-         'data' => 'userdel	2::inwork -20450,35368 -19737,35362 -19481,35481
-',
-         'type' => 'gesperrt'
-       },
-       undef,
        undef,
        undef,
        undef,
        undef,
        {
-         'until' => 1187301600,
-         'text' => 'B 169 zw. Cottbus und Klein Gaglow Deckenerneuerung halbseitig gesperrt; Einbahnstraße 13.08.2007-16.08.2007 ',
+         'until' => 1188856800,
+         'text' => 'B 102 Brücken über den Mühlenrhin u. Büttgraben nördl.Rhinow Brückenbauarbeiten Vollsperrung 13.08.2007-03.09.2007 ',
          'from' => 1186869600,
-         'id' => 1102,
-         'data' => 'userdel	1::inwork 73977,-74037 73211,-74836 72657,-75488
+         'id' => 1100,
+         'data' => 'userdel	2::inwork -62502,27066 -62531,27427
 ',
          'type' => 'gesperrt'
        },
+       undef,
+       undef,
        {
          'until' => 1188079200,
          'text' => 'L 071 B 96 (Luckau-Baruth) - Dahme zw. Jetsch und Krossen Durchlassneubau Vollsperrung 06.08.2007-25.08.2007 ',
@@ -968,16 +894,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_006236',
-         'until' => 1187560800,
-         'text' => 'Nöldnerstr.. (Lichtenberg) in Richtung Karlshorster Str. ab Schlichtalllee geplatzte Wasserleitung, Fahrtrichtung gesperrt',
-         'from' => undef,
-         'id' => 1105,
-         'data' => 'userdel	1::inwork 16032,10842 15670,10800 15396,10767 15266,10791
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -998,15 +915,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1188079200,
-         'text' => 'B 102 Brücken über den Mühlenrhin u. Büttgraben nördl.Rhinow Brückenbauarbeiten Vollsperrung 13.08.2007-25.08.2007 ',
-         'from' => 1186869600,
-         'id' => 1110,
-         'data' => 'userdel	2::inwork -60904,38644 -60907,38811
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'der Fußweg von der Buchberger Str. zum S-Bahnhof Nöldnerplatz ist z.Zt. voll gesperrt (Bauzaun)',
@@ -1016,18 +925,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1186955999,
-         'text' => '17. Berliner Gauklerfest, 3. bis 12. August 2007, einige Straßen am Opernpalais sind vollständig gesperrt ',
-         'from' => 1186266363,
-         'id' => 1112,
-         'data' => 'userdel	2::temp 9890,12161 9875,12254 9801,12245 9782,12393
-userdel	2::temp 9875,12254 9853,12402
-userdel	2::temp 10008,12378 9926,12368 9972,12184
-userdel	2::temp 9918,12411 9926,12368
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1190239200,
          'text' => 'B 246 Nächst Neuendorfer Chaussee OL Zossen, zw. Bahnhofstr. und OA Kanalarbeiten halbseitig gesperrt; Einbahnstraße 09.08.2007-19.09.2007 ',
@@ -1049,38 +947,247 @@ userdel	2::temp 9918,12411 9926,12368
          'type' => 'gesperrt'
        },
        {
-         'until' => 1187992800,
-         'text' => 'B 246 Bahnübergang Wendisch Rietz Siedlung, OT Neue Mühle Gleiserneuerung Vollsperrung 13.08.2007-24.08.2007 ',
+         'until' => 1188338400,
+         'text' => 'B 246 Bahnübergang Wendisch Rietz Siedlung, OT Neue Mühle Gleiserneuerung Vollsperrung 13.08.2007-28.08.2007 ',
          'from' => 1186869600,
          'id' => 1117,
          'data' => 'userdel	2::inwork 53048,-21761 52989,-21777 52964,-21796
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1187647200,
-         'text' => 'L 040 Friedersdorf-Bindow Bahnübergang in der OD Friedersdorf Gleisbauarbeiten Vollsperrung 18.08.2007-20.08.2007 ',
-         'from' => 1187301600,
-         'id' => 1118,
-         'data' => 'userdel	2::inwork 36895,-12039 36087,-12087 35496,-12280
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1193785200,
          'text' => 'B 167 Lebus-Seelow OD Dolgelin Kanal-,Straßen- u. Radwegbau Vollsperrung 20.09.2007-30.10.2007 ',
          'from' => 1190152800,
          'id' => 1119,
-         'data' => 'userdel	q4::inwork 78194,11798 78837,11306
+         'data' => 'userdel	q4::inwork 78194,11798 78753,11368 78805,11331
+',
+         'type' => 'handicap'
+       },
+       undef,
+       undef,
+       {
+         'source_id' => 'IM_006274',
+         'until' => undef,
+         'text' => 'Gitschiner Str. (Kreuzberg) in beiden Richtungen zwischen Zossener Str. und Prinzenstr. geplatzte Wasserleitung, Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1122,
+         'data' => 'userdel	2::inwork 10605,10312 10340,10301 10122,10294 9948,10280
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006429',
+         'until' => undef,
+         'text' => 'Alt-Moabit (Tiergarten) Kreuzung Thomasiusstraße Fahrbahnabsenkung, Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1123,
+         'data' => 'userdel	2::inwork 6882,13088 6757,13112 6661,13130
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006366',
+         'until' => 1188136800,
+         'text' => 'Behrenstr. (Mitte) in beiden Richtungen, zwischen Ebertstr. und Cora-Berliner-Str. Veranstaltung, Straße vollständig gesperrt (bis 26.08.07 16 Uhr)',
+         'from' => 1187989093,
+         'id' => 1124,
+         'data' => 'userdel	2::temp 8737,12098 8595,12066
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_005516',
+         'until' => 1199142000,
+         'text' => 'Drakestr. (Lichterfelde) in beiden Richtungen bei der Bahnunterführung Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Anfang 2008)',
+         'from' => 1187989206,
+         'id' => 1125,
+         'data' => 'userdel	q4::inwork 3048,4305 3128,4190 3259,4002
 ',
          'type' => 'handicap'
        },
        {
-         'until' => 1186956000,
-         'text' => 'B 169 zw. Cottbus und Klein Gaglow Deckenerneuerung Vollsperrung 10.08.2007-12.08.2007 ',
-         'from' => 1186610400,
-         'id' => 1120,
-         'data' => 'userdel	2::inwork 72657,-75488 73211,-74836 73977,-74037
+         'source_id' => 'IM_006365',
+         'until' => 1188230400,
+         'text' => 'Ebertstr. (Mitte) in beiden Richtungen zwischen Dorotheenstr. und Hanna-Ahrendt-Str. Veranstaltung, Straße vollständig gesperrt (bis 27.08.07 18 Uhr)',
+         'from' => 1187989232,
+         'id' => 1126,
+         'data' => 'userdel	2::temp 8581,11896 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006400',
+         'until' => undef,
+         'text' => 'Falkenhagener Str. (Spandau) zwischen Bismarckplatz und Elisabethstr. Fahrbahnabsenkung, Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1127,
+         'data' => 'userdel	2::inwork -3481,15315 -3349,15229 -3241,15118
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006352',
+         'until' => undef,
+         'text' => 'Oranienburger Str. (Reinickendorf) stadtauswärts, zwischen Lübarser Str. und WIttenauer Str. Baustelle, Fahrtrichtung gesperrt',
+         'from' => undef,
+         'id' => 1128,
+         'data' => 'userdel	1::inwork 5326,21407 5311,21495 5149,21721
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006364',
+         'until' => undef,
+         'text' => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Brandenburger Tor und Yitzhak-Rabin-Str. Veranstaltung, Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1129,
+         'data' => 'userdel	2::temp 8610,12254 8515,12242 8214,12205 8089,12186 8063,12182
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1198278000,
+         'text' => 'B 096 Brücke über den Seichgraben zw. Zützen u. Golßen Brückenbauarbeiten Vollsperrung 03.09.2007-21.12.2007 ',
+         'from' => 1188684000,
+         'id' => 1130,
+         'data' => 'userdel	2::inwork 27428,-49936 26648,-49177
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1188252000,
+         'text' => 'B 112 Beeskower Str. OL Eisenhüttenstadt, zw. K.-Marx-Str. u. Fr.-Heckert-Str. Stadtfest Vollsperrung 20.08.2007-27.08.2007 ',
+         'from' => 1187474400,
+         'id' => 1131,
+         'data' => 'userdel	2::temp 94796,-26727 95218,-26861
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1189893600,
+         'text' => 'B 112 Eisenhüttenstadt-Frankfurt (O) zw. Güldendorf und Frankfurt (O) Deckenerneuerung Richtungsverkehr 28.08.2007-15.09.2007 ',
+         'from' => 1188165600,
+         'id' => 1132,
+         'data' => 'userdel	1::inwork 87207,-9278 86800,-8681
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1192831200,
+         'text' => 'B 122 zw. Abzw. Klausheide und Zippelsförde Deckenerneuerung Vollsperrung 27.08.2007-19.10.2007 ',
+         'from' => 1188079200,
+         'id' => 1133,
+         'data' => 'userdel	2::inwork -25490,64009 -26733,61993
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1199142000,
+         'text' => 'B 168 zw. Friedland und Beeskow Straßenbauarbeiten Vollsperrung 28.08.2007-31.12.2007 ',
+         'from' => 1188165600,
+         'id' => 1134,
+         'data' => 'userdel	2::inwork 69461,-27572 69160,-25724
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1190325600,
+         'text' => 'K 6402 Ernst-Thälmann-Str. OD Dolgelin, Krz. Hauptstr. Kanal-,Straßen- u. Radwegbau Vollsperrung 21.08.2007-20.09.2007 ',
+         'from' => 1187560800,
+         'id' => 1135,
+         'data' => 'userdel	q4::inwork 78753,11368 78711,11343 78598,11099
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1189807200,
+         'text' => 'K 6747 Alt Stahnsdorf - L 23, AS Storkow zw. Neu Stahnsdorf und Alt Stahnsdorf Straßenbauarbeiten Vollsperrung 20.08.2007-14.09.2007 ',
+         'from' => 1187474400,
+         'id' => 1136,
+         'data' => 'userdel	2::inwork 44592,-9998 44336,-9931 44273,-10358 43912,-10589 43744,-11591 43467,-12187 43278,-12804
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1198278000,
+         'text' => 'K 7302 zwischen Dobberzin und Stolpe Straßenneubau Vollsperrung 27.08.2007-21.12.2007 ',
+         'from' => 1188079200,
+         'id' => 1137,
+         'data' => 'userdel	2::inwork 57050,65287 56712,66112 56200,66475
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1187992800,
+         'text' => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, Kno. A.-Bebel-Str. Straßenbau, Entwässerung Vollsperrung 15.08.2007-24.08.2007 ',
+         'from' => 1187042400,
+         'id' => 1138,
+         'data' => 'userdel	q4::inwork 34511,4787 34535,5319
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1189288800,
+         'text' => 'L 070 Wernzhain-Trebbus zw. Hauptstr. in OL Werenzhain und OE Arenzhain Deckenerneuerung Vollsperrung 22.08.2007-08.09.2007 ',
+         'from' => 1187647200,
+         'id' => 1139,
+         'data' => 'userdel	2::inwork 19820,-81831 20862,-83214
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1192485600,
+         'text' => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Neue Beelitzer Str. Straßenausbau Vollsperrung 18.07.2007-15.10.2007 ',
+         'from' => 1184623200,
+         'id' => 1140,
+         'data' => 'userdel	q4::inwork -4299,-35198 -4725,-34957
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1188770400,
+         'text' => 'L 073 Luckenwalde-Stülpe OD Jänickendorf 7. Kreiserntefest Vollsperrung 31.08.2007-02.09.2007 ',
+         'from' => 1188424800,
+         'id' => 1141,
+         'data' => 'userdel	q4::inwork -521,-39003 -757,-38862
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1191708000,
+         'text' => 'L 172 Hennigsdorf-Velten zw. Kreisverkehr Hennigsdorf und Abzw. AS Hennigsdorf grundhafter Straßenbau Vollsperrung 27.08.2007-06.10.2007 ',
+         'from' => 1188079200,
+         'id' => 1142,
+         'data' => 'userdel	2::inwork -3470,27651 -3571,28529
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1196463600,
+         'text' => 'L 213 B167 Liebenwalde-Nassenheide zw. B167 über Neuholland nach Freienhagen Deckenerneuerung Vollsperrung 15.08.2007-30.11.2007 ',
+         'from' => 1187042400,
+         'id' => 1143,
+         'data' => 'userdel	2::inwork 4693,50925 4689,50170 4709,49765 4412,49281
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1188165600,
+         'text' => 'L 238 Eberswalde-Joachimsthal Brücke der A 11 zw. Lichterfelde u. Altenhof Brückenabbruch Vollsperrung 25.08.2007-26.08.2007 ',
+         'from' => 1187906400,
+         'id' => 1144,
+         'data' => 'userdel	2::inwork 31076,54246 30773,54731
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1197759600,
+         'text' => 'L 381 zw. Lossow und Frankfurt (O) Fahrbahninstandsetzung Vollsperrung 27.08.2007-15.12.2007 ',
+         'from' => 1188079200,
+         'id' => 1145,
+         'data' => 'userdel	2::inwork 89198,-10380 89181,-9996 89395,-9979
 ',
          'type' => 'gesperrt'
        }

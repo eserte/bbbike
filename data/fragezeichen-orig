@@ -60,6 +60,26 @@ Aroser Allee, Fertigstellung bis 2007-10-01	? 6741,18613 6702,18348 6671,18132 6
 #: section ^^^
 #: section ^^^
 #
+## new list by http://www.tagesspiegel.de/berlin/;art270,2355982 (11.08.2007)
+# Engeldamm (Kreuzberg)
+# Zossener Straﬂe (Kreuzberg)
+# Gertraudenstraﬂe (Spittelmarkt, Mitte)
+# Grunerstraﬂe (Mitte)
+# Memhardtstraﬂe (Mitte)
+# Memhardstraﬂe (Mitte)
+# Greifswalder Straﬂe (Prenzlauer Berg)
+# Wisbyer Straﬂe (Prenzlauer Berg)
+# Ostseeplatz (Prenzlauer Berg)
+# Gorkistraﬂe (Tegel)
+# Bernauer Straﬂe (Tegel)
+# Aroser Allee (Reinickendorf)
+# Neuendorfer Straﬂe (Spandau)
+# Hochstraﬂe (Wedding)
+# Alexanderufer (am Hauptbahnhof)
+# Vulkanstraﬂe (Lichtenberg)
+# Markgrafendamm (Friedrichshain)
+# Konrad-Wolf-Straﬂe (Hohenschˆnh.)
+#
 ######################################################################
 #
 #  STRASSEN IN BAU UND PLANUNG
@@ -112,8 +132,6 @@ Lichterfeld - Besucherbergwerk F60: Radweg in Bau	? 37870,-89814 37883,-89858 37
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20061103.1420.49764.html
 #: last_checked: 2007-05-20
 Frankfurter Allee am S-Bhf. Richtung Westen: Radstreifen soll Radweg ablˆsen (zurzeit ist bereits ein provisorischer Radstreifen angelegt)	?; 15349,12073 15117,12106
-#: by: http://www.berlin.de/ba-pankow/presse/archiv/20070322.1155.74912.html
-Berliner Allee: nach den Bauarbeiten (ca. 2007-08-26) asphaltiert	? 14559,16912 14535,17003
 #: last_checked: 2007-05-20
 Weserstr.: Bauarbeiten, eventuell wird die Fahrbahn danach asphaltiert sein	? 14705,11629 14764,11591 14849,11539
 Neue Straﬂen an der Rummelsburger Bucht: Name: Erich-M¸ller-Straﬂe. Straﬂe ist asphaltiert, aber noch nicht ganz fertig	? 16045,9817 15831,9968
@@ -366,7 +384,8 @@ Brunow - Gamengrund: Qualit‰t?	? 41624,36648 43362,37337 43825,37262 43922,36623
 # Normannenstr.: gar keine Einbahnstraﬂe	? -3692,2549 -3579,2532 -3395,2403
 Kleinziethen - Pechsteinstr. (Lichtenrade): befahrbare Verbindung, Qualit‰t?	? 13506,-2809 12232,-2281
 Mauerweg Lichtenrade: Qualit‰t? laut "Berliner Umland" gut geeigneter Radweg	? 10609,-3098 10687,-3270 11157,-3295 11646,-3251
-Mauerweg Lichterfelde: Qualit‰t? laut "Berliner Umland" gut geeigneter Radweg	?? 4400,-913 4064,-415 4066,-304 4034,-255 3982,-181 3918,-92 3848,-79 3767,66 3689,182 3607,283 3417,524
+Mauerweg Lichterfelde: Qualit‰t? laut "Berliner Umland" gut geeigneter Radweg	?? 4400,-913 4064,-415 4066,-304
+Mauerweg Lichterfelde: Qualit‰t? laut "Berliner Umland" gut geeigneter Radweg	?? 3918,-92 3848,-79 3767,66 3689,182 3607,283 3417,524
 Lichterfelder Allee - Mauerweg Teltow: befahrbar, Qualit‰t? laut "Berliner Umland" gut geeigneter Radweg	? 3417,524 3271,745 3232,803
 Str. 19 (Am Nordgraben): Qualit‰t? westl. Seite: m‰ﬂiger Feldweg	? 10228,21940 11008,21725 11183,21598 11345,21360 11729,21144
 NisblÈstr.: Qualit‰t? (laut ADFC-Karte gut geeignet)	? 11870,21574 11659,21611 11252,21682 11008,21725
@@ -1066,7 +1085,7 @@ Altbleyen: Qualit‰t?	? 92404,20801 91392,21601 90986,22134 90783,22477 90895,228
 #: XXX: laut Aktiv Regional m‰ﬂig starker Verkehr
 Seelow - Zechin: Qualit‰t?	? 76567,16056 76687,16583 76843,17107 76767,17780 76805,18326 77212,18719 77250,19037 77669,18973 78011,19126 78126,19494 78456,19925 78989,20128 79306,21588 79192,21804 79471,22490 79459,22693 79725,23213
 #: XXX: laut Aktiv Regional gut geeignet
-Dolgelin - Sachsendorf: Qualit‰t?	? 78837,11306 79167,11356 79840,11559 80119,11838 81566,12232 82341,11991 83356,12359 83644,12846
+Dolgelin - Sachsendorf: Qualit‰t?	? 78805,11331 79167,11356 79840,11559 80119,11838 81566,12232 82341,11991 83356,12359 83644,12846
 #: XXX: laut Aktiv Regional gut geeignet
 Sachsendorf - Rathstock: Qualit‰t?	? 83644,12846 84016,13146 84930,13489 85235,13666 86771,14517 87149,14494 87889,14339
 #: XXX: laut Aktiv Regional gut geeignet
@@ -1495,3 +1514,6 @@ Schulzendorfer Str.: Ist die Schulzendorfer Straﬂe eine Vorfahrtsstraﬂe?	? 22222
 Am Bogen: Qualit‰t?	? -6607,15816 -6510,15804 -6497,15817 -6485,15915 -6476,15944 -6449,15965 -6419,15965 -6330,15941 -6243,15902 -6244,15902 -6224,15876 -6209,15842 -6155,15818
 Falkenseer Chaussee - Am Bogen: Qualit‰t?	? -6313,15996 -6330,15941
 Ginsterheide: Qualit‰t zwischen Machnower Busch und Neuruppiner Straﬂe?	? -877,1209 -907,1401 -918,1435 -930,1477
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20070322.1155.74912.html
+Berliner Allee: ist die Berliner Allee zwischen Rennbahnstr. und Wehlener Str. nach den Bauarbeiten asphaltiert?	? 14559,16912 14535,17003
+M¸ckendorf/B96 - Richtung Teupitz: Qualit‰t? Wie geht es in Richtung Teupitz weiter?	? 18001,-35985 18101,-35914 18479,-35645 18936,-35316 19344,-35036 19826,-34707 20021,-34512 20246,-34268 20338,-34165 20618,-33964 20661,-33854
