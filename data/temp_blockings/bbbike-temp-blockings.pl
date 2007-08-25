@@ -9471,8 +9471,8 @@ EOF
 userdel	2::inwork 10605,10312 10340,10301 10122,10294 9948,10280
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1188059338, # 
+       until => 1188059341, # XXX
        text  => 'Alt-Moabit (Tiergarten) Kreuzung Thomasiusstraße Fahrbahnabsenkung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_006429',
@@ -9507,8 +9507,8 @@ EOF
 userdel	2::temp 8581,11896 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1188059356, # 
+       until => 1188059359, # XXX
        text  => 'Falkenhagener Str. (Spandau) zwischen Bismarckplatz und Elisabethstr. Fahrbahnabsenkung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_006400',
@@ -9660,6 +9660,24 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 89198,-10380 89181,-9996 89395,-9979
+EOF
+     },
+     { from  => 1188059206, # 2007-08-25 18:26
+       until => 1188165599, # 2007-08-26 23:59
+       text  => 'Edisonstr. (Köpenick) in Richtung Lichtenberg zwischen Brückenstr. und Wilhelminenhofstr. Baustelle, Fahrtrichtung gesperrt (bis 26.08. ca. 24 Uhr)',
+       type  => 'handicap',
+       source_id => 'IM_006436',
+       data  => <<EOF,
+userdel	q4::inwork; 17898,6049 17937,6173 17952,6246 17992,6436
+EOF
+     },
+     { from  => 1188059298, # 2007-08-25 18:28
+       until => 1188183600, # 2007-08-27 05:00
+       text  => 'Siegfriedstr. (Lichtenberg) in beiden Richtungen vor Kreuzung Landsberger Allee Bauarbeiten, Straße vollständig gesperrt (bis 27.8. 5 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_006391',
+       data  => <<EOF,
+userdel	2::inwork 16843,14420 16881,14063
 EOF
      },
     );

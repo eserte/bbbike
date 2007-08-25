@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.172 2007/08/08 22:10:17 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.173 2007/08/25 21:08:12 eserte Exp $
 #:
 ###################################################################
 #
@@ -447,6 +447,10 @@ Techowpromenade	1 5219,20467 5185,20358 5173,20275 5170,20182
 #
 # Potsdam
 #
+Gregor-Mendel-Str.	1 -13693,-528 -13784,-537 -13948,-564 -14034,-571
+Schillerstr.	1 -14236,-2125 -14252,-1978
+Henning-von-Tresckow-Str.	1 -13180,-1627 -12946,-1659
+Am Lustgartenwall: Ministerien	2 -13281,-1796 -12948,-1863
 Weinbergstr.	1 -13519,-625 -13733,-722 -13815,-749
 Weinbergstr.	1 -13519,-625 -13257,-512
 Am Kanal	1 -12839,-1342 -12718,-1327
@@ -455,7 +459,7 @@ Yorckstr.	1 -12833,-1365 -12976,-1356 -13001,-1349 -13208,-1315
 Yorckstr.	1 -13206,-1294 -13001,-1329 -12974,-1336 -12839,-1342
 Joliot-Curie-Str.	1 -12549,-1277 -12542,-1305 -12526,-1356 -12500,-1437
 Am Kanal, Nebenstraße	1 -12542,-1305 -12657,-1338
-Mauerstr.	1 -13425,-852 -13519,-625
+Mauerstr.	1 -13433,-831 -13519,-625
 Wilhelm-Staab-Str.	1 -13001,-1329 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12693,-827 -12712,-734 -12730,-627
 Hans-Thoma-Str.	1 -12219,-726 -12262,-612 -12306,-496
@@ -469,6 +473,7 @@ Spornstr.	1 -13220,-1416 -13350,-1403
 Nuthestr.	1 -11356,-1317 -11463,-1232 -11549,-1169
 Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12045,-757 -11875,-925 -11613,-1125 -11549,-1169 -11463,-1232 -11356,-1317
 Breite Str.: nicht passierbarer Mittelstreifen	3nocross -13238,-1569 -13375,-1546 -13516,-1517
+Lange Brücke: Straßenbahntrasse	3nocross -12719,-1661 -12659,-1700 -12567,-1817
 Feuerbachstr.	1 -14140,-1390 -13879,-1445
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11142,-1675
 Geschwister-Scholl-Str.	1 -14344,-1748 -14215,-1687 -14151,-1656 -14115,-1678
@@ -476,7 +481,7 @@ Zimmerstr.	1 -13646,-1168 -13883,-1227
 Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
 Puschkinallee	1 -13052,775 -12922,762 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
-Friedrich-Ebert-Str.: Straßenbahntrasse, nur für Fußgänger passierbar	3nocross -12719,-1661 -12762,-1545 -12833,-1365 -12839,-1342
+Friedrich-Ebert-Str.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3nocross -12719,-1661 -12755,-1585 -12773,-1544 -12795,-1499 -12833,-1365
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13733,-722 -13772,-623
 # 
 # elsewhere in Brandenburg
@@ -705,6 +710,9 @@ Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21158,15885 21220,15741 21235,
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 #
+tragen (Treppe)	0:20 -12681,-1726
+tragen (ca. 30 Stufen)	0:30 -13802,-1856
+tragen (ca. 30 Stufen)	0:30 -13733,-1856
 #: note: Luftbild
 tragen (Treppe)	0:30 15091,21172
 tragen (Treppe)	0:30 1471,-311
@@ -734,8 +742,8 @@ tragen (12 Stufen)	0:30 7942,12879
 tragen (zwei Mal, je fünf Stufen)	0:30 5017,6387
 tragen (Treppen zur U-Bahnbrücke, je drei Stufen)	0:20 2301,4917
 tragen (Treppen zur U-Bahnbrücke, je drei Stufen)	0:20 2181,4835
-tragen (Eisenbahnbrücke Templiner See)	0:60 -15497,-4614
-tragen (Eisenbahnbrücke Templiner See)	0:60 -15779,-4402
+tragen (Eisenbahnbrücke Templiner See)	0:60 -15537,-4535
+tragen (Eisenbahnbrücke Templiner See)	0:60 -15652,-4441
 tragen (Eisenbahnbrücke Caputh)	0:60 -18009,-7528
 tragen (Eisenbahnbrücke Caputh)	0:60 -17978,-7375
 tragen (Eisenbahnbrücke Werder)	0:60 -21048,-2029

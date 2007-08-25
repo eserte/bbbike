@@ -977,16 +977,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_006429',
-         'until' => undef,
-         'text' => 'Alt-Moabit (Tiergarten) Kreuzung Thomasiusstraße Fahrbahnabsenkung, Straße vollständig gesperrt',
-         'from' => undef,
-         'id' => 1123,
-         'data' => 'userdel	2::inwork 6882,13088 6757,13112 6661,13130
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_006366',
          'until' => 1188136800,
@@ -1017,16 +1008,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_006400',
-         'until' => undef,
-         'text' => 'Falkenhagener Str. (Spandau) zwischen Bismarckplatz und Elisabethstr. Fahrbahnabsenkung, Straße vollständig gesperrt',
-         'from' => undef,
-         'id' => 1127,
-         'data' => 'userdel	2::inwork -3481,15315 -3349,15229 -3241,15118
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_006352',
          'until' => undef,
@@ -1119,15 +1101,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1187992800,
-         'text' => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, Kno. A.-Bebel-Str. Straßenbau, Entwässerung Vollsperrung 15.08.2007-24.08.2007 ',
-         'from' => 1187042400,
-         'id' => 1138,
-         'data' => 'userdel	q4::inwork 34511,4787 34535,5319
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1189288800,
          'text' => 'L 070 Wernzhain-Trebbus zw. Hauptstr. in OL Werenzhain und OE Arenzhain Deckenerneuerung Vollsperrung 22.08.2007-08.09.2007 ',
@@ -1188,6 +1162,26 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'from' => 1188079200,
          'id' => 1145,
          'data' => 'userdel	2::inwork 89198,-10380 89181,-9996 89395,-9979
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006436',
+         'until' => 1188165599,
+         'text' => 'Edisonstr. (Köpenick) in Richtung Lichtenberg zwischen Brückenstr. und Wilhelminenhofstr. Baustelle, Fahrtrichtung gesperrt (bis 26.08. ca. 24 Uhr)',
+         'from' => 1188059206,
+         'id' => 1146,
+         'data' => 'userdel	q4::inwork; 17898,6049 17937,6173 17952,6246 17992,6436
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_006391',
+         'until' => 1188183600,
+         'text' => 'Siegfriedstr. (Lichtenberg) in beiden Richtungen vor Kreuzung Landsberger Allee Bauarbeiten, Straße vollständig gesperrt (bis 27.8. 5 Uhr)',
+         'from' => 1188059298,
+         'id' => 1147,
+         'data' => 'userdel	2::inwork 16843,14420 16881,14063
 ',
          'type' => 'gesperrt'
        }

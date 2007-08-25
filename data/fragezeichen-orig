@@ -61,24 +61,24 @@ Aroser Allee, Fertigstellung bis 2007-10-01	? 6741,18613 6702,18348 6671,18132 6
 #: section ^^^
 #
 ## new list by http://www.tagesspiegel.de/berlin/;art270,2355982 (11.08.2007)
-# Engeldamm (Kreuzberg)
-# Zossener Straße (Kreuzberg)
 # Gertraudenstraße (Spittelmarkt, Mitte)
-# Grunerstraße (Mitte)
-# Memhardtstraße (Mitte)
 # Memhardstraße (Mitte)
 # Greifswalder Straße (Prenzlauer Berg)
-# Wisbyer Straße (Prenzlauer Berg)
-# Ostseeplatz (Prenzlauer Berg)
+# Wisbyer Straße (Prenzlauer Berg) (teilweise schon realisiert, Rest folgt)
 # Gorkistraße (Tegel)
 # Bernauer Straße (Tegel)
 # Aroser Allee (Reinickendorf)
 # Neuendorfer Straße (Spandau)
+# Vulkanstraße (Lichtenberg) (ein Stück fehlt noch)
+# Markgrafendamm (Friedrichshain) (der sanierte Bereich ist bereits markiert)
+# Konrad-Wolf-Straße (Hohenschönh.)
+## bereits realisiert:
+# Engeldamm (Kreuzberg)
+# Zossener Straße (Kreuzberg) (teilweise, Richtung Norden von Blücherstr.)
+# Grunerstraße (Mitte) (teilweise, Richtung Norden)
+# Ostseeplatz (Prenzlauer Berg)
 # Hochstraße (Wedding)
 # Alexanderufer (am Hauptbahnhof)
-# Vulkanstraße (Lichtenberg)
-# Markgrafendamm (Friedrichshain)
-# Konrad-Wolf-Straße (Hohenschönh.)
 #
 ######################################################################
 #
@@ -114,7 +114,6 @@ Wiederaufbau des Kaiserstegs (ca. 2007-08-01)	?::inwork 18353,5897 18409,6069
 #: next_check: 2006-08-01
 Uferweg an der Kongreßhalle: laut Tsp im Frühjahr 2005 fertig (aber noch nicht fertig geworden)	?::inwork 7753,12578
 Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
-Uferweg - Friedrich-Ebert-Str. an der Nikolaikirche: zurzeit wegen Bauarbeiten kein Durchgang möglich (aber jetzt scheint es eine provisorische Treppe zu geben)	? -12600,-1706 -12719,-1661
 #: next_check: 2005-11-25
 Gramzow: nach Abschluss der Bauarbeiten kein Kopfsteinpflaster mehr?	? 50109,89725 49930,89857
 #: next_check: 2005-11-30
@@ -176,8 +175,6 @@ Französische Str.: Vorfahrt (kann ich das so ausdrücken, mit zwei Punkten?)	? 91
 auf der östlichen Seite der B101n: wo genau ist der Radweg hier?	? 6173,-2344 5957,-2575 5627,-2671
 #: XXX laut holger, hd, sav:
 Drängelgitter/Schranke	? 8810,14373
-#: last_checked: 2007-07-15
-Alexanderufer: in Bau (zumindest das südliche Ende wird asphaltiert sein, außerdem Radspuren)	?::inwork 8257,13049 8312,13296 8369,13425 8337,13541
 #: by: Message-ID: <Xns96A387773A8B04usenet@krickstadt.de>:
 #: by: http://archiv.tagesspiegel.de/archiv/30.07.2005/1962466.asp:
 Spree: ist dieser Spreearm wiederhergestellt worden?	? 43394,-2017 43296,-2181 43357,-2501 43220,-2544 43129,-2437 43162,-2242 43053,-2114
@@ -552,9 +549,6 @@ Marquardt, Hauptstr.: Laut mobil-potsdam.de: Asphaltiert	? -18825,4750
 B273 - Schwarzer Weg: Laut "mobil-potsdam.de" Waldweg	? -18693,4568 -18233,4501
 Goetheplatz: Einbahnstraßenregelung auch für Radfahrer? Qualität?	? -9809,-1435 -9902,-1445 -9922,-1395 -9809,-1435
 Goethestr./Fontanestr.: laut "mobil-potsdam.de" asphaltiert	? -9809,-1435 -9506,-1431 -9215,-1431 -9219,-1590 -9224,-1727
-Geltow - Pirschheide am Templiner See: Laut "mobil-potsdam.de" überwiegend Waldweg mit kurzen asphaltierten Stellen	? -16975,-5724 -16849,-5673 -16809,-5662 -16435,-5680 -16350,-5511 -16245,-5370 -16179,-5354 -16084,-5140 -15964,-5052 -15959,-4518 -15924,-4447 -15867,-4348
-Am Templiner See zwischen Damm und R-Bhf. Charlottenhof: laut "mobil-potsdam.de" unterschiedliche Qualität ("Promenade", betoniert, Waldweg)	? -15810,-4003 -15734,-4027 -15665,-3893 -15556,-3770 -15407,-3631 -15307,-3388 -15265,-3260 -15256,-3106 -15204,-2950 -15174,-2919 -14898,-2886 -14905,-2690 -14758,-2460 -14859,-2384
-Uferweg - Mercure-Hotel: Zugang unter der Langen Brücke möglich?	? -12600,-1706 -12669,-1768 -12681,-1726 -12659,-1700
 Strausberg - Garzau: Qualität (laut "Berliner Umland" teilweise witterungsabhängige Strecke, auf Garzauer Seite anscheinend nur Feldweg)?	? 42578,15750 43850,15737 45618,15431 46150,15006 46421,14990
 Waldsieversdorf: laut "Berliner Umland" geeignete Strecke	? 54751,15669 55000,15887 55225,15862 55875,16287 56487,16825
 Waldsieversdorf - Münchehofe: laut "Berliner Umland" witterungsabhängige Strecke	? 56487,16825 58512,18662
@@ -651,7 +645,6 @@ Teerofenweg: Waldweg? Qualität?	? -7067,-36 -6395,-887
 Fresdorf - Kähnsdorf: Qualität?	? -11617,-15497 -12187,-15175 -12887,-15425 -13654,-15506
 Kähnsdorf - Seddin: Qualität?	? -13654,-15506 -13887,-15575 -14637,-16112 -15863,-15363 -16336,-15236
 Fußgängerweg zwischen Wartenberger Str. und Margaretenhöhe: Qualität? Gibt es an der Bahnbrücke Treppen?	? 16284,19198 16392,19760
-Gabelung der R1 (zwischen Fähre und Zeppelinstr.): Wegführung und Qualität?	? -14359,-2142 -14411,-2180 -14400,-2221 -14416,-2231 -14585,-2338 -14712,-2415 -14758,-2460
 Paplitzer Str.: Qualität? Zwischen Goltzstr. und Kirchbachstr. Einbahnstraße auch für Radfahrer? Verbindung zum Mauerweg vorhanden?	? 11063,-2025 11021,-2464 10949,-2635 10927,-2687 10831,-2919 10707,-3109 10687,-3270
 #: XXX von anonym eingetragen: Spielstraße:
 Am Irissee: Qualität?	? 11000,3115 11143,3246 11114,3360
@@ -1148,21 +1141,9 @@ Eisenhartstr.: Qualität des südlichen Abschnitts (asphaltiert?)?	? -12813,-480 -
 Reiterweg: Verlängerung! Qualität?	? -12961,-136 -12857,-168
 Helene-Lange-Str.: Qualität?	? -12863,-364 -13142,-303
 Joliot-Curie-Str.: existiert für Radfahrer eine Verlängerung zu "Am Alten Markt"? Qualität?	? -12614,-1471 -12582,-1460
-Neuer Markt: genaue Straßenführung und -namen? Qualität: Kopfsteinpflaster wahrscheinlich Q2	? -12762,-1545 -12813,-1520 -12829,-1468 -12917,-1441
-Zusätzlich: Überqueren der Straßenbahntrasse an dieser Stelle möglich (wahrscheinlich nicht)?	?? -12917,-1441 -12829,-1468 -12813,-1520 -12762,-1545
-Straßen: Siefertstr., Am Neuen Markt, Schwertfegerstr., Schloßstr.	? -12976,-1356 -12917,-1441 -12829,-1468 -12813,-1520 -12762,-1545
-Wall am Kiez: Qualität?	? -13516,-1517 -13507,-1578 -13478,-1585 -13450,-1595
-Wall am Kiez: Qualität?	? -13478,-1585 -13479,-1624 -13453,-1656 -13459,-1718 -13397,-1729 -13394,-1771 -13328,-1790
-???	? -14430,-2057 -14395,-2024 -14346,-1996
-Am Alten Markt	? -12589,-1556 -12762,-1545
-Kiezstr.: Qualität?	? -13281,-1796 -13328,-1790 -13450,-1595
-Am Lustgartenwall: Qualität?	? -13281,-1796 -12948,-1863
-Hoffbauerstr.: Qualität?	? -13281,-1796 -13235,-1617 -13238,-1569
-H.-von-Treschkow-Str.: Qualität? Wofür steht das H? Spelling?	? -13260,-1613 -13235,-1617 -13180,-1627 -12946,-1659 -12920,-1663
-(Am Lustgarten)	? -12920,-1663 -12931,-1761 -12948,-1863 -12953,-1889 -12708,-1928
-Unbenannte Straße: Qualität? Straßenname?	? -12946,-1659 -12940,-1625 -12924,-1562
-Werner-Seelenbinder-Str.: Qualität?	? -12924,-1562 -13152,-1525
-Am Hinzenberg: Qualität?	? -12669,-1768 -12678,-1812 -12708,-1928 -12894,-2111 -12946,-2119
+Wall am Kiez: Qualität zwischen Kiezstr. und Dortustr.?	? -13478,-1585 -13479,-1624 -13453,-1656 -13459,-1718 -13397,-1729 -13394,-1771 -13328,-1790
+Schloßstr.: Qualität zwischen Breite Str., Werner-Seelenbinder-Str. und Friedrich-Ebert-Str.?	? -12940,-1625 -12927,-1576 -12923,-1558 -12882,-1565 -12755,-1585
+Werner-Seelenbinder-Str.: Qualität?	? -12927,-1576 -13152,-1525
 Wilhelm-Staab-Str./Yorckstr.: Überqueren des Kanals möglich?	? -13001,-1329
 #: XXX unklarer Eintrag in strum2005.pdf (Museumstr. -> Bodestr.)
 Museumstr.: zur "Bodestr." umbenannt?	? 9943,12642 9884,12712
@@ -1183,9 +1164,6 @@ Brentanoweg: Qualität?	? -13406,-396 -13636,-331
 Ruinenbergstr. (Potsdam): Qualität?	? -13636,-331 -13690,-271 -13884,-200 -13781,174
 Schlegelstr. (Potsdam): Qualität?	? -13646,-368 -13636,-331 -13643,-250 -13525,-90 -13436,84
 Moritz-von-Egidy-Str. (Potsdam): Qualität?	? -13525,-90 -13503,-165 -13421,-140 -13391,-215
-Wielandstr. (Potsdam): Qualität? Genauer Verlauf der Straße?	? -13975,-2098 -14120,-2109 -14236,-2125 -14294,-2122 -14395,-2024
-Grillparzerstr. (Potsdam): Qualität?	? -14128,-1955 -14120,-2109
-Schillerstr. (Potsdam): Qualität (zumindest der nördliche Abschnitt ist Kopfsteinpflaster)? Verbindung zum Uferweg vorhanden?	? -14252,-1978 -14236,-2125 -14202,-2232
 Stiftstr. (Potsdam): Qualität?	? -14141,-1700 -14143,-1781
 Streustr.: zwischen Behaimstr. und Börnestr. Einbahnstraße? Auch für Radfahrer?	? 13139,15988 13269,15927
 Streust./Berliner Allee: Überqueren der Straßenbahntrasse möglich?	? 13432,15843
@@ -1428,8 +1406,6 @@ Strausberg-Nord - Bienenwerder (Abschnitt bis Reichenow): genaue Lage des Radweg
 Strausberg-Nord - Bienenwerder (Abschnitt Reichenow - Bliesdorf): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 55981,27193 57864,29533 60231,32427
 Strausberg-Nord - Bienenwerder (Abschnitt Bliesdorf - Wriezen): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 61273,33058 60212,36154
 Strausberg-Nord - Bienenwerder (Abschnitt Wrizen - Oder): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 60212,36154 60368,36566 61522,38715 62690,40886 64609,44963 65286,46173
-R1	? -12589,-1556 -12475,-1496
-Planitz	? -13979,-1842 -13794,-1838 -13793,-1860 -13802,-1856 -13733,-1856 -13741,-1861 -13741,-1843 -13487,-1847 -13475,-1890 -13427,-1883 -13356,-1889
 Am Luftschiffhafen - R1/Uferweg: existiert eine Verbindung für Radfahrer? Qualität?	? -15729,-3566 -15556,-3770
 Krugsdorfer Damm - Rothenburg: Qualität vor der Ortschaft?	? 53255,124438 53217,125181 53023,125365
 Pasewalk - Krugsdorf: Qualität?	? 51456,122864 52188,123497 53255,124438 53938,125022 54153,125114 54341,125283

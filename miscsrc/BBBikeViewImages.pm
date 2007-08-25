@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.15 2007/04/23 22:06:40 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.16 2007/08/25 21:38:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2007 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $geometry $viewer_menu);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(file_name_is_absolute);
 use File::Basename qw(dirname);
@@ -189,7 +189,7 @@ sub button {
     my @all_image_inx = map {
 	$_->[1];
     } sort {
-	$a cmp $b;
+	$a->[0] cmp $b->[0];
     } map {
 	my(@tags) = $c->gettags($_);
 	my($date) = "@tags" =~ $iso_date_rx;
