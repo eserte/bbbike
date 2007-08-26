@@ -16,11 +16,11 @@ Wisbyer Str.	? 12091,16209 12026,16247 11887,16320 11828,16335 11807,16340 11727
 Wisbyer Str.	?; 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 11448,16398 11397,16405 11289,16423 11033,16464
 #: by http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2004/1103/lokales/0030/ vvv
 # (alte URL http://www.berlinonline.de/berliner-zeitung/berlin/327989.html?2004-03-26 gilt nicht mehr)
-#: last_checked: 2007-08-08
+#: last_checked: 2007-08-26
 Leipziger Straße zwischen Leipziger Platz und Wilhelmstraße (entweder beidseitig oder nur auf der Südseite)	? 8733,11524 9046,11558
 #: last_checked: 2006-08-01
 Mollstr.	? 11905,13069 11867,13076 11839,13083 11739,13131 11723,13139 11681,13161 11557,13228 11446,13294
-#: last_checked: 2007-08-04
+#: last_checked: 2007-08-26
 Stralauer Str.	? 11351,12221 11304,12234 11139,12243 11094,12243 10946,12241 10826,12279 10804,12291 10738,12364
 #: last_checked: 2006-10-25
 Alt-Moabit zwischen Kirch- und Paulstraße	? 7192,13036 7000,13067 6882,13088 6757,13112 6661,13130
@@ -28,9 +28,9 @@ Alt-Moabit zwischen Kirch- und Paulstraße	? 7192,13036 7000,13067 6882,13088 675
 Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 10109,12238 10084,12228 9972,12184
 #: last_checked: 2007-08-04
 Köpenicker Str.	? 11574,11594 11807,11479 11943,11398 12026,11348
-#: last_checked: 2007-06-03
+#: last_checked: 2007-08-26
 Holzmarktstr.	? 11773,12006 11619,12084 11388,12202 11351,12221
-#: last_checked: 2007-08-03
+#: last_checked: 2007-08-26
 Gitschiner Str.	? 9948,10280 10122,10294 10340,10301 10605,10312 10859,10333 10962,10340 11117,10326
 #: last_checked: 2007-08-08
 Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 12188,14321 12338,14532 12384,14600 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941 12722,15105 12743,15138 12880,15335 12976,15483 13098,15592 13332,15765
@@ -61,7 +61,6 @@ Aroser Allee, Fertigstellung bis 2007-10-01	? 6741,18613 6702,18348 6671,18132 6
 #: section ^^^
 #
 ## new list by http://www.tagesspiegel.de/berlin/;art270,2355982 (11.08.2007)
-# Gertraudenstraße (Spittelmarkt, Mitte)
 # Memhardstraße (Mitte)
 # Greifswalder Straße (Prenzlauer Berg)
 # Wisbyer Straße (Prenzlauer Berg) (teilweise schon realisiert, Rest folgt)
@@ -79,6 +78,7 @@ Aroser Allee, Fertigstellung bis 2007-10-01	? 6741,18613 6702,18348 6671,18132 6
 # Ostseeplatz (Prenzlauer Berg)
 # Hochstraße (Wedding)
 # Alexanderufer (am Hauptbahnhof)
+# Gertraudenstraße (Spittelmarkt, Mitte) (nur Richtung Westen)
 #
 ######################################################################
 #
@@ -619,7 +619,8 @@ Jan-Petersen-Str.: Radwege? Zugang zur Landsberger Allee vorhanden?	? 21022,1624
 # 2007-06-03: nix ist passiert: herausnehmen! Alter Markt: laut Message-ID: <2scvijF1io77eU1@uni-berlin.de> soll hier asphaltiert werden	?::inwork 22458,4565 22426,4609 22395,4678 22383,4703
 Berlin-Usedom am Werbellinsee: laut Tsp vom 2004-10-04 wird hier 2005 ein Radweg gebaut, laut anderen Informationen bis 2006-12-15	?::inwork 31000,61437 30784,60950 30778,60221 30671,59984 30625,59562 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27359,56787 27137,56650 26792,56558 26404,56518 26145,56499 26037,56412 26028,56303
 Zichow-Lindenwegsiedlung: Qualität? Am westlichen Ende als "Lindenweg" ausgeschildert	? 54500,87934 51978,87962
-Prötzeler Ring und Trappenfelder Pfad: Qualität laut ADFC-Karte gut	? 21951,15918 22134,15615 22073,15172
+Prötzeler Ring: Qualität laut ADFC-Karte gut	? 21951,15918 21980,15857 22055,15698 22092,15610
+Trappenfelder Pfad: Qualität laut ADFC-Karte gut	? 22092,15610 22101,15601 22076,15276 22061,15168 22059,15153
 Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23279,14785 23379,14514
 #: note: Die Beilsteiner ist eine Einbahnstraße in diesem Abschnitt: 18852,13269 18832,13099 18749,12413 (Merler - Marzahner, offen Richtung Marzahner)
@@ -1152,7 +1153,7 @@ Saalburgstr./Cafeastr.: Qualität (wahrscheinlich Kopfsteinpflaster, zumindestens
 # XXX: unklare Angaben von Nils Fiedler, leider keine Rückfrage möglich: Q1 (Asphalt); q2 (Fußgängerzone); RW1 (Radweg); Gefälle "5°"? #Mühlenfeldstr.: Steigung, wenn ja, wo genau?	? 3727,22868 3739,22693 3743,22642 3753,22534 3728,22507 3601,22484 3531,22440 3353,22348 3243,22311 3134,22292 3046,22292 2757,22310 2587,22332
 #Dorfstr. (Malchow): seit November 2005 Bauarbeiten für neuen Radweg, bereits fertig?	? 15606,19839 15656,19946 15686,20100 15778,20350 15900,20531 16025,20631
 #: XXX: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0506/nachricht1941.html
-Rad- und Fußwegverbindung zwischen Wuhle und Hönow durch Hellersdorf: genauer Verlauf? Qualität? bereits komplett fertiggestellt?	? 22579,15416 26112,15382
+Rad- und Fußwegverbindung zwischen Wuhle und Hönow durch Hellersdorf: genauer Verlauf? Qualität? bereits komplett fertiggestellt?	? 22579,15416 23057,15458 23240,15472 23368,15469 23484,15485 23629,15498 23643,15389 23895,15450 24169,15497 24303,15766 25003,15617 25984,15415 25936,15335 25990,15301 25985,15080 26014,15039
 Niederlehme Anschlussstelle - Niederlehme: Qualität (wahrscheinlich Asphalt)? Radweg?	? 28485,-10143 28272,-10277 28168,-10289 27949,-10283 27906,-10191 27827,-10082 27535,-10033
 Fürstenwalder Str. (Zernsdorf): Qualität?	? 27966,-11585 28150,-11380 28235,-11227 28388,-11093 28839,-10831 29192,-10630
 Am Möllenberg (Zernsdorf): Qualität?	? 27949,-10283 28016,-10429 28241,-10904 28388,-11093
@@ -1493,3 +1494,8 @@ Ginsterheide: Qualität zwischen Machnower Busch und Neuruppiner Straße?	? -877,1
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20070322.1155.74912.html
 Berliner Allee: ist die Berliner Allee zwischen Rennbahnstr. und Wehlener Str. nach den Bauarbeiten asphaltiert?	? 14559,16912 14535,17003
 Mückendorf/B96 - Richtung Teupitz: Qualität? Wie geht es in Richtung Teupitz weiter?	? 18001,-35985 18101,-35914 18479,-35645 18936,-35316 19344,-35036 19826,-34707 20021,-34512 20246,-34268 20338,-34165 20618,-33964 20661,-33854
+#: XXX: anonymer Eintrag meint "mäßig"
+Guntersblumer Weg: Qualität?	? -2274,2656 -2288,2705 -2286,2772 -2269,2825
+#: XXX: anonymer Eintrag meint "mäßig" und q1 wegen vielen Fußgängern
+#: XXX: ein weiterer Eintrag meint "Beton, Q0", ebenfalls q1 und Fußgängerzone und Fahrradstraße?
+Havelländer Ring: Qualität?	? 23629,15498 23484,15485 23368,15469 23369,15443 23386,15330 23539,15352 23588,15381 23643,15389

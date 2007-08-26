@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.323 2007/08/02 21:54:31 eserte Exp $
+# $Id: bbbike,v 3.323 2007/08/02 21:54:31 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -3283,6 +3283,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		     #['GPX (Route)', 'GPX/route'], # not yet, support not ready
 		     ($advanced ? ['KML (GoogleEarth)', 'KML/track'] : ()),
 		     ['GPSMAN (Track)', 'GpsmanData'],
+		     'GPSMAN (Route)',
 		     ['G7toWin (ASCII)', 'G7toWin_ASCII'],
 		     ['Waypoint+ (Track)', 'WaypointPlus'],
 
@@ -3351,6 +3352,30 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		(-label => $fmt,
 		 -command => \&save_route_as_bbd
 		);
+	} elsif ($fmt eq 'GPSMAN (Route)') {
+	    $svm->command
+		(-label => $fmt,
+		 -command => sub {
+		     require GPS::DirectGarmin;
+		     require GPS::GpsmanData;
+		     require BBBikeGPS;
+		     my $routetoname = get_route_simplification_mapping(verbose => 1);
+		     my %extra_args;
+		     $extra_args{-routetoname} = $routetoname if $routetoname;
+		     my $dg = GPS::DirectGarmin->new;
+		     $dg->convert_from_route(Route->new_from_realcoords(\@realcoords),
+					     -streetobj   => $multistrassen || $str_obj{'s'},
+					     -netobj      => $net,
+					     # 				    -routename   => $gps_route_info->{Name},
+					     # 				    -routenumber => $gps_route_info->{Number},
+					     # 				    -wptsuffix   => $gps_route_info->{WptSuffix},
+					     # 				    -wptsuffixexisting => $gps_route_info->{WptSuffixExisting},
+					     -waypointlength => $gps_waypointlength,
+					     -waypointsymbol => $gps_waypointsymbol,
+					     %extra_args,
+					    );
+		     require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$dg->{debugdata}],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+		 });
 	} elsif ($fmt =~ /^esri/i) {
 	    if (-x "$FindBin::RealBin/miscsrc/bbd2esri" &&
 		-x "$FindBin::RealBin/miscsrc/bbr2bbd"

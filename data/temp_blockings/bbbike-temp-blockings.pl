@@ -4549,7 +4549,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002820',
        data  => <<EOF,
-userdel	2 11347,12181 11328,12040
+userdel	2 11347,12181 11325,12021
 EOF
      },
      { from  => 1149058136, # 2006-05-31 08:48
@@ -5735,7 +5735,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003436',
        data  => <<EOF,
-userdel	1::inwork 11351,12221 11347,12181 11328,12040 11283,11876 11242,11720
+userdel	1::inwork 11351,12221 11347,12181 11325,12021 11283,11876 11242,11720
 EOF
      },
      { from  => 1159826400, # 2006-10-03 00:00
@@ -6286,7 +6286,7 @@ EOF
        text  => '21.10.2006 (Samstag): Vollsperrung der Jannowitzbrücke (Demontage von Stahlbetonteilen)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 11347,12181 11328,12040
+userdel	2::inwork 11347,12181 11325,12021
 EOF
      },
      { from  => 1159826400, # 2006-10-03 00:00
@@ -6941,7 +6941,7 @@ EOF
        text  => 'B 183 Hainsche Str. Burgplatz in der OL Bad Liebenwerda Geschäftseröffnung Vollsperrung 24.01.2007-24.01.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::temp 12194,-98944 11943,-99051
+userdel	q4::temp 12194,-98944 11974,-99110
 EOF
      },
      { from  => 1169495904, # 2007-01-22 20:58
@@ -7716,7 +7716,7 @@ EOF
        text  => 'L 064 Riesaer Str. OL Bad Liebenwerda Deckenerneuerung Vollsperrung 13.04.2007-21.04.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 11862,-99775 11943,-99051
+userdel	q4::inwork 11862,-99775 11974,-99110
 EOF
      },
      { from  => undef, # 
@@ -8629,9 +8629,9 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005798',
        data  => <<EOF,
-userdel	2::temp 6628,10318 6626,10143 6730,10199 6739,10120
-userdel	2::temp 6611,10135 6514,10076
-userdel	2::temp 7037,10359 6730,10199 6719,10347
+userdel	2::temp 6628,10318 6626,10155 6729,10212 6739,10120
+userdel	2::temp 6609,10147 6514,10088
+userdel	2::temp 7037,10359 6729,10212 6719,10347
 EOF
      },
      { from  => 1182031200, # 2007-06-17 00:00
@@ -9122,7 +9122,7 @@ EOF
        text  => 'L 033 zw. Kreuz. Hönow und Krz. Landsberger Ch./ Stendaler Str. Deckeninstandsetzung Vollsperrung 06.08.2007-17.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 26328,15462 26232,15444 26117,15452 25955,15531 25457,15594 25339,15592 24999,15634 23893,15893
+userdel	2::inwork 26328,15462 26232,15444 26117,15452 25955,15531 25457,15594 25342,15609 25007,15650 23893,15893
 EOF
      },
      { from  => 1186092000, # 2007-08-03 00:00

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.154 2007/08/12 12:08:49 eserte Exp $
+# $Id: Makefile,v 2.154 2007/08/12 12:08:49 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1418,6 +1418,8 @@ SENDMAP?=	/usr/local/bin/sendmap17Lstatic
 # for some reason 115200 does not work...
 SENDMAP_ARGS?=	-s57600
 .else
+# This seems to default to 9600 or so, and it does not seem to be changable
+# at all...
 SENDMAP_ARGS?=
 .endif
 
@@ -1443,7 +1445,6 @@ cgpsmapper-upload:	${SENDMAP} cgpsmapper-images do-cgpsmapper-upload
 do-cgpsmapper-upload:
 	@echo "Approx. upload time: half an hour for 1,7 MB data"
 	@echo "                     35 minutes   for 1,94 MB data"
-	@echo " (maybe use -sSPEED option to do it faster?)"
 	-${SENDMAP} ${GPSPORT} ${SENDMAP_ARGS} ${CGPSMAPPER_IMG_FILES}
 
 ${PERSISTENTTMPDIR}/bbbike.mp:	${BBD2POLISH} \

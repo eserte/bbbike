@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.173 2007/08/25 21:08:12 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.173 2007/08/25 21:08:12 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -877,6 +877,8 @@ Klingelhöferstr.: Mittelstreifen	3 7160,11225 6853,11336 6880,11110
 Klingelhöferstr.: Mittelstreifen	3 6880,11110 6853,11336 6683,11367
 Raoul-Wallenberg-Str. -> Schönagelstr.: Straßenbahntrasse	3 21158,15885 21220,15741 21602,15908
 Schönagelstr. -> Raoul-Wallenberg-Str.: Straßenbahntrasse	3 21602,15908 21220,15741 21235,15641
+Krummenseer Str. -> Blumberger Damm: Mittelstreifen	3 21657,15352 21626,15357 21599,15213
+Blumberger Damm -> Krummenseer Str.: Mittelstreifen	3 21647,15496 21626,15357 21657,15352
 tragen (Treppe)	0:20:-195 -12681,-1726
 tragen (ca. 30 Stufen)	0:30:-246 -13802,-1856
 tragen (ca. 30 Stufen)	0:30:-90 -13733,-1856
@@ -967,6 +969,7 @@ tragen (Treppe)	0:30:-118 -7418,181
 tragen (Treppe)	0:30:-64 -6933,14317
 tragen (Treppe)	0:30:2 -6934,14291
 tragen (Treppe)	0:30:-237 20673,7260
+Drängelgitter	BNP:5:7 22061,15168
 Drängelgitter kann ohne Absteigen passiert werden	BNP:2:-206 1358,3257
 Barriere für Autofahrer	BNP:2:-2 17301,7645
 Drängelgitter	BNP:5:72 11010,-378

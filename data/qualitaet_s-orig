@@ -1808,6 +1808,7 @@ Mauerstr. (Mitte): sehr guter Asphalt	Q0 9173,11770 9144,11866 9108,11961 9076,1
 Mauerweg Lichterfelde: Asphalt	Q0 4066,-304 4034,-255 3982,-181 3918,-92
 Alexanderufer: Asphalt	Q0 8257,13049 8312,13296
 Alexanderufer: Asphalt	Q0 8312,13296 8369,13425 8337,13541
+Koppenstr.: Asphalt mit Schäden	Q1+ 12525,12151 12575,12223
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -2034,7 +2035,7 @@ Achenbachstr.: Kopfsteinpflaster	Q2 -3360,14974 -3322,14814
 Gundelfinger Str.: Kopfsteinpflaster	Q2 18735,9421 18697,9153 18653,8922 18609,8717
 Sparrstr.: Kopfsteinpflaster	Q2 7436,14964 7397,15036 7303,15173
 Dachdeckerweg: guter Asphalt	Q0 13093,2282 13064,2499 13025,2662 12854,2950 12807,2958 12701,2955
-Tangermünder Str.: mäßiger Asphalt	Q1 23866,15638 24113,15658 24148,15637 24226,15121 24232,15060 24253,14888
+Tangermünder Str.: mäßiger Asphalt	Q1 23866,15638 24113,15658 24148,15637 24169,15497 24226,15121 24232,15060 24253,14888
 Nikolaus-Groß-Weg: guter Asphalt	Q0 2087,14078 2028,13801
 Bansiner Str.: guter Asphalt	Q0 22803,12545 22780,12567 22720,12635 22712,12740 22684,12765 22592,12771 22585,12871 22615,12906 22671,12904 22785,12840 22807,12782 22906,12766
 Bruno-Taut-Ring: mäßiger Asphalt	Q1 13833,3665 13682,3718 13628,3781 13626,3867 13673,3915 13726,3928 13897,3848
@@ -4216,7 +4217,7 @@ Wachsmuthstr.: Kopfsteinpflaster, nur 13km/h	Q3 3762,23362 3939,23345 4021,23330
 #: by: André Maier:
 Langenbeckstr.: fester Sandweg, nur 13km/h	Q3 24673,9923 24770,9871 25004,9737
 #: by: Christina Hopmann:
-Hattenheimer Str. (Tempelhof): Asphalt	Q0 11590,6026 11655,6189 11628,6240
+Hattenheimer Str. (Tempelhof): Asphalt	Q0 11590,6026 11656,6182 11651,6192 11628,6240
 #: by: Volkmar (vloebe):
 Riastr.: schlechtes Kopfsteinpflaster	Q3 18201,8984 18247,9158
 #: by: TCBerlin:
@@ -5363,6 +5364,17 @@ Jörsstr.: Kopfsteinpflaster	Q2 -1478,18407 -1358,18400
 Bertramstr.: mäßiger Beton	Q2+ 4201,23397 4293,23459 4355,23554 4373,23590 4382,23635 4380,23709 4383,23732 4396,23775 4430,23848 4453,23918 4472,23953 4489,23976 4511,23989 4617,24029 4737,24064 4832,24068 4942,24046 5013,24019 5046,24000
 #: by: bettina (windmueller):
 Freiwaldauer Weg: schlechtes Kopfsteinpflaster	Q3 2765,3184 2595,3356 2510,3447 2457,3547
+#: by: Sylvia Grotjohann-Ernst:
+Peter-Anders-Str.: Asphalt	Q0 15334,6492 15356,6532 15350,6781
+#: by: Bernd Albinus: vvv
+Krummenseer Str.: Asphalt	Q0 21626,15357 21657,15352 21743,15336 21834,15319 21927,15303 22043,15282 22076,15276
+#: note: laut ADFC-Karte gut geeignet
+Prötzeler Ring: Asphalt/Beton	Q0 21951,15918 21980,15857 22055,15698 22092,15610
+#: note: laut ADFC-Karte gut geeignet
+Trappenfelder Pfad: Asphalt/Beton	Q0 22092,15610 22101,15601 22076,15276 22061,15168 22059,15153
+#: by: ^^^
+#: by: Thomas Lützen-Johannsen:
+Haberechtstr.: guter Asphalt	Q0 11656,6182 11768,6159
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
@@ -5397,7 +5409,7 @@ Hüninger Str.: Kopfsteipflaster	Q2 1987,3987 2034,4156 2045,4193 2079,4299 2148,
 Mörchinger Str.: Kopfsteinpflaster	Q1 1453,3085 1360,3253 1470,3309
 Mörchinger Str.: Verbundsteine	Q0 1892,3534 2075,3630
 Am Mühlenberg: Gehwegplatten	Q0 6096,8600 6135,8674 6133,8709
-Kalckreuthstr.: Asphalt mit Löchern	Q1 6636,10485 6628,10318 6626,10143
+Kalckreuthstr.: Asphalt mit Löchern	Q1 6636,10485 6628,10318 6626,10155
 Landhausstr.: Kopfsteinpflaster	Q2 5314,9588 5342,9559 5342,9374
 Landhausstr.: Kopfsteinpflaster	Q1 5341,8915 5343,8858
 Gasteiner Str.: grobes Kopfsteinpflaster	Q3 4920,9000 4715,8977
@@ -6355,7 +6367,7 @@ Groscurthstr.: Beton	Q1 16369,25230 16458,25193 16428,25107
 #: by: anonymous [AM] vvv
 Dinnendahlstr.: Kopfsteinpflaster	Q2 9123,-1321 9282,-1442 9445,-1460
 Karl-Stieler-Str.: Asphalt	Q1 6034,4893 6097,4858 6185,4839 6267,4825 6317,4804 6342,4783 6414,4723
-Michael-Bohnen-Ring: Asphalt	Q0 15229,6602 15251,6635 15251,6745 15284,6783 15453,6784 15453,6434 15426,6398
+Michael-Bohnen-Ring: Asphalt	Q0 15229,6602 15251,6635 15251,6745 15284,6783 15350,6781 15453,6784 15453,6434 15426,6398
 Otzenstr.: Asphalt	Q1 6410,7722 6429,7532 6352,7523
 Garzauer Str.: Asphalt	Q1 21737,13844 21722,13708 21830,13688 21895,13684
 Garzauer Str.: Asphalt	Q1 21830,13688 21814,13551

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.32 2007/05/24 22:39:41 eserte Exp $
+# $Id: DirectGarmin.pm,v 1.32 2007/05/24 22:39:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -376,9 +376,7 @@ sub convert_from_route {
     push @d,
 	[$gps->GRMN_RTE_HDR, $handler->pack_Rte_hdr({nmbr => make_bytes($routenumber),
 						     cmnt => make_bytes($routename)})];
-    if ($DEBUG) {
-	$self->{'debugdata'} = [];
-    }
+    $self->{'debugdata'} = []; # create always as additional return value
 
     my @path;
     my $obj_type;
@@ -547,9 +545,7 @@ sub convert_from_route {
 	}
 	my $wptdata = {lat => $lat, lon => $lon, ident => make_bytes($ident), smbl => $waypointsymbol};
 	push @d, [$gps->GRMN_RTE_WPT_DATA, $handler->pack_Rte_wpt_data($wptdata)];
-	if ($DEBUG) {
-	    push @{$self->{'debugdata'}}, {%$wptdata, origlon => $xy->[0], origlat => $xy->[1]};
-	}
+	push @{$self->{'debugdata'}}, {%$wptdata, origlon => $xy->[0], origlat => $xy->[1]};
     } continue {
 	$n++;
     }

@@ -713,15 +713,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        undef,
        undef,
        undef,
-       {
-         'until' => 1188079200,
-         'text' => 'B 112 zw. Frankfurt (O) und Lebus Gründungsarb. für Radwegbau Vollsperrung 12.07.2007-25.08.2007 ',
-         'from' => 1184104800,
-         'id' => 1058,
-         'data' => 'userdel	2::inwork 86392,-776 86307,581
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -737,15 +729,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        },
        undef,
        undef,
-       {
-         'until' => 1188079200,
-         'text' => 'L 020 Velten-Borgsdorf zw. OL Pinnow, Havelweg und Berliner Ch., Borgsdorf Grundhafter Straßenbau Vollsperrung 11.07.2007-25.08.2007 ',
-         'from' => 1184018400,
-         'id' => 1065,
-         'data' => 'userdel	2::inwork -736,32837 -579,33145 -409,33522
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1194044400,
          'text' => 'L 171 Karl-Marx-Str. OD Hohen Neuendorf, Krz. K.-Tucholsky-Str. grundh.Straßenbau, Kreisverk. Vollsperrung 09.07.2007-02.11.2007 ',
@@ -772,15 +756,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1188079200,
-         'text' => 'B 002 Pommernstr., Stettiner Str. OD Gartz, Kno. Pommern-/Scheunenstr. u. Stettiner-/Scheu Ausbau Knotenpunkte Vollsperrung 16.07.2007-25.08.2007 ',
-         'from' => 1184450400,
-         'id' => 1075,
-         'data' => 'userdel	q4::inwork 75502,90490 75956,90435
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1188597600,
          'text' => 'L 338 R.-Luxemburg-Damm, Hauptstr. Bahnübergang in der OL Neuenhagen Erneuerung Bahnübergang halbseitig gesperrt; Einbahnstraße 16.07.2007-31.08.2007 ',
@@ -884,15 +860,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        },
        undef,
        undef,
-       {
-         'until' => 1188079200,
-         'text' => 'L 071 B 96 (Luckau-Baruth) - Dahme zw. Jetsch und Krossen Durchlassneubau Vollsperrung 06.08.2007-25.08.2007 ',
-         'from' => 1186264800,
-         'id' => 1103,
-         'data' => 'userdel	2::inwork 24639,-53978 25777,-53225 26126,-53177
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -978,16 +946,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_006366',
-         'until' => 1188136800,
-         'text' => 'Behrenstr. (Mitte) in beiden Richtungen, zwischen Ebertstr. und Cora-Berliner-Str. Veranstaltung, Straße vollständig gesperrt (bis 26.08.07 16 Uhr)',
-         'from' => 1187989093,
-         'id' => 1124,
-         'data' => 'userdel	2::temp 8737,12098 8595,12066
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_005516',
          'until' => 1199142000,

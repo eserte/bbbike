@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.126 2007/08/25 21:11:51 eserte Exp $
+#: version: $Id: ampeln-orig,v 4.126 2007/08/25 21:11:51 eserte Exp eserte $
 #:
 	X 9222,8787
 	X 8982,8781
@@ -143,7 +143,7 @@
 	X 20771,14500
 	X 21381,14506
 	X 21235,15641
-	X 21590,15236
+	X 21599,15213
 	X 21694,15802
 	X 13594,11489
 	X 13655,11727
@@ -1003,7 +1003,7 @@
 	X 14007,10802
 	F 14024,10861
 	X 6460,9537
-	X 6514,10076
+	X 6514,10088
 	X 5329,10422
 	F 6234,10629
 	X 4267,10724
@@ -1226,7 +1226,7 @@
 	X 17161,11681
 	X 23155,16075
 	X 23893,15893
-	X 24999,15634
+	X 25007,15650
 	X 17843,18078
 	X 17400,17790
 	X 16837,17440
@@ -2162,6 +2162,8 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 	B 18101,-35914
 #: note: Luftbild
 	B 22928,-46895
+#: note: Luftbild
+	X 21647,15496
 ################################################################################
 #: by: Andreas Titz vvv
 #: append_comment Oranienburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
