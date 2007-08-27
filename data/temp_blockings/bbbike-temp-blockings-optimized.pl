@@ -3,8 +3,8 @@ $#temp_blocking = 665;
 push @temp_blocking,
 (
        {
-         'until' => 1188597600,
-         'text' => 'B 097 Dresdener Str. Brücke ober DB im OT Schwarze Pumpe Brückenneubau Vollsperrung 17.10.2006-31.08.2007 ',
+         'until' => 1191189600,
+         'text' => 'B 097 Dresdener Str. Brücke ober DB im OT Schwarze Pumpe Brückenneubau Vollsperrung 17.10.2006-30.09.2007 ',
          'from' => 1160949600,
          'id' => 666,
          'data' => 'userdel	2::inwork 75459,-98456 75933,-97371
@@ -230,15 +230,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1188165600,
-         'text' => 'B 198 Neubrandenburger Str. OD Prenzlau Grundhafter Straßenbau Vollsperrung 05.03.2007-26.08.2007 ',
-         'from' => 1172962800,
-         'id' => 853,
-         'data' => 'userdel	2::inwork 38439,102279 37547,102663
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -581,15 +573,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        undef,
        undef,
        undef,
-       {
-         'until' => 1188165600,
-         'text' => 'K 6512 B 96 nördl.Löwenberg-B167 Grieben zw. Abzw. Vielitz und Grieben Straßenbau Vollsperrung 18.06.2007-26.08.2007 ',
-         'from' => 1182031200,
-         'id' => 1016,
-         'data' => 'userdel	2::inwork -14640,54609 -14619,54872 -14667,54977 -14759,55179 -14847,55938 -14966,56468
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1193871600,
          'text' => 'K 6512 B 96 nördl.Löwenberg-B167 Grieben zw. Abzw. Vielitz und Grieben Straßenbau halbseitig^^^^ 27.08.2007-31.10.2007 ',
@@ -884,15 +868,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => undef,
-         'text' => 'der Fußweg von der Buchberger Str. zum S-Bahnhof Nöldnerplatz ist z.Zt. voll gesperrt (Bauzaun)',
-         'from' => undef,
-         'id' => 1111,
-         'data' => 'userdel	2::inwork 15779,10970 15735,11201 15731,11270
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1190239200,
@@ -957,16 +933,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_006365',
-         'until' => 1188230400,
-         'text' => 'Ebertstr. (Mitte) in beiden Richtungen zwischen Dorotheenstr. und Hanna-Ahrendt-Str. Veranstaltung, Straße vollständig gesperrt (bis 27.08.07 18 Uhr)',
-         'from' => 1187989232,
-         'id' => 1126,
-         'data' => 'userdel	2::temp 8581,11896 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_006352',
@@ -978,16 +945,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_006364',
-         'until' => undef,
-         'text' => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Brandenburger Tor und Yitzhak-Rabin-Str. Veranstaltung, Straße vollständig gesperrt',
-         'from' => undef,
-         'id' => 1129,
-         'data' => 'userdel	2::temp 8610,12254 8515,12242 8214,12205 8089,12186 8063,12182
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1198278000,
          'text' => 'B 096 Brücke über den Seichgraben zw. Zützen u. Golßen Brückenbauarbeiten Vollsperrung 03.09.2007-21.12.2007 ',
@@ -1106,41 +1064,13 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1188165600,
-         'text' => 'L 238 Eberswalde-Joachimsthal Brücke der A 11 zw. Lichterfelde u. Altenhof Brückenabbruch Vollsperrung 25.08.2007-26.08.2007 ',
-         'from' => 1187906400,
-         'id' => 1144,
-         'data' => 'userdel	2::inwork 31076,54246 30773,54731
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1197759600,
          'text' => 'L 381 zw. Lossow und Frankfurt (O) Fahrbahninstandsetzung Vollsperrung 27.08.2007-15.12.2007 ',
          'from' => 1188079200,
          'id' => 1145,
          'data' => 'userdel	2::inwork 89198,-10380 89181,-9996 89395,-9979
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_006436',
-         'until' => 1188165599,
-         'text' => 'Edisonstr. (Köpenick) in Richtung Lichtenberg zwischen Brückenstr. und Wilhelminenhofstr. Baustelle, Fahrtrichtung gesperrt (bis 26.08. ca. 24 Uhr)',
-         'from' => 1188059206,
-         'id' => 1146,
-         'data' => 'userdel	q4::inwork; 17898,6049 17937,6173 17952,6246 17992,6436
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_006391',
-         'until' => 1188183600,
-         'text' => 'Siegfriedstr. (Lichtenberg) in beiden Richtungen vor Kreuzung Landsberger Allee Bauarbeiten, Straße vollständig gesperrt (bis 27.8. 5 Uhr)',
-         'from' => 1188059298,
-         'id' => 1147,
-         'data' => 'userdel	2::inwork 16843,14420 16881,14063
 ',
          'type' => 'gesperrt'
        }

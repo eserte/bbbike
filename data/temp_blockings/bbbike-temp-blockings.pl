@@ -5622,8 +5622,8 @@ userdel	1::inwork 18853,6009 18766,6067 18670,6132 18574,6197 18473,6265 18343,6
 EOF
      },
      { from  => 1160949600, # 2006-10-16 00:00
-       until => 1188597600, # 2007-09-01 00:00
-       text  => 'B 097 Dresdener Str. Brücke ober DB im OT Schwarze Pumpe Brückenneubau Vollsperrung 17.10.2006-31.08.2007 ',
+       until => 1191189600, # 2007-10-01 00:00
+       text  => 'B 097 Dresdener Str. Brücke ober DB im OT Schwarze Pumpe Brückenneubau Vollsperrung 17.10.2006-30.09.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 75459,-98456 75933,-97371
@@ -7809,7 +7809,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005213',
        data  => <<EOF,
-userdel	2::inwork 12731,15824 12559,15524
+userdel	2::inwork 12731,15824 12642,15668 12559,15524
 EOF
      },
      { from  => 1177103024, # 2007-04-20 23:03
@@ -8504,7 +8504,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005738',
        data  => <<EOF,
-userdel	2::inwork 12731,15824 12559,15524 12472,15356 12428,15275
+userdel	2::inwork 12731,15824 12642,15668 12559,15524 12472,15356 12428,15275
 EOF
      },
      { from  => 1181373108, # 2007-06-09 09:11
@@ -9370,8 +9370,8 @@ EOF
 userdel	2::inwork -60904,38644 -60907,38811
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1188246966, # 
+       until => 1188246970, # XXX laut Cord nur bis 2007-08-17
        text  => 'der Fußweg von der Buchberger Str. zum S-Bahnhof Nöldnerplatz ist z.Zt. voll gesperrt (Bauzaun)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -9525,8 +9525,8 @@ EOF
 userdel	1::inwork 5326,21407 5311,21495 5149,21721
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1188240671, # 
+       until => 1188240674, # XXX
        text  => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Brandenburger Tor und Yitzhak-Rabin-Str. Veranstaltung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_006364',

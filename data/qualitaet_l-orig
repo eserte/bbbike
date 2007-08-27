@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Brandenburg und weiterer Umgebung
-#: version: $Id: qualitaet_l-orig,v 4.105 2007/08/26 21:24:32 eserte Exp $
+#: version: $Id: qualitaet_l-orig,v 4.105 2007/08/26 21:24:32 eserte Exp eserte $
 #:
 Basdorf: Kopfsteinpflaster, mäßig bis OK	Q1 11964,35230 12034,35012 12193,34683 12551,32765
 Strausberg Nord - Prötzel: sehr guter Asphalt	Q0 43584,20871 44596,21287 45545,21723 46072,21966 46782,22769 47585,23227 47712,23526 47671,23769 48104,24510 48904,25611 49255,26084 50022,26518
@@ -1236,7 +1236,8 @@ Bahnhofstr.: Kopfsteinpflaster	Q2 -4032,-1937 -3917,-2146 -3895,-2189 -3650,-260
 An der Parforceheide: gutes Verbundsteinpflaster	Q0 -7421,-2487 -7421,-2428 -7510,-2276 -7610,-2245 -7651,-2262 -7708,-2437
 Postenweg Parforceheide: Asphalt mit groben Fugen	Q1 -7610,-2245 -7798,-1990 -7800,-1956
 Postenweg Parforceheide: feiner Schotter	Q2 -7800,-1956 -7821,-1890
-Mauerweg: mäßiger Asphalt	Q1 3232,803 3045,707 2789,482 1993,-275 1926,-301 1510,-423 1473,-420
+#: by: Christoph Kasprowiak:
+Mauerweg: sehr guter Asphalt	Q0 3232,803 3045,707 2789,482 1993,-275 1926,-301 1510,-423 1473,-420
 Berliner Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 1453,-746 1378,-676 1268,-618
 Breite Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 1268,-618 1118,-548
 Marktplatz: mäßiges bis schlechtes Kopfsteinpflaster	Q3 1118,-548 1132,-498
@@ -2045,9 +2046,10 @@ Buch - Gorinsee: fester Sandweg, teilweise kleiner Schotter	Q2 15757,28054 15700
 #: by: ^^^
 #: by: Jakob-Dominik Ullmann: vvv
 Im Kamp: schlechtes Kopfsteinpflaster	Q3 -1072,28 -1160,-71 -1186,-134 -1192,-195 -1179,-298
-Im Kamp: Verbundsteinpflaster	Q0- -1157,-360 -1179,-298
+Im Kamp: glattes Verbundsteinpflaster	Q0- -1157,-360 -1179,-298
 Im Kamp: guter Asphalt	Q0 -1072,28 -990,137 -903,314 -786,629
 Ginsterheide: Asphalt	Q0 -786,629 -818,789 -868,1124 -877,1209
+Ginsterheide: Betonplatten, nicht die beste Qualität	Q1 -877,1209 -907,1401 -918,1435
 #: by: ^^^
 #: by: Joachim Ueberall: 
 Rote-Kreuz-Str.: Asphalt	Q0 -8142,-1909 -8173,-2151
