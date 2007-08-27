@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.211 2007/08/08 22:09:59 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.212 2007/08/26 21:24:55 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -1898,6 +1898,7 @@ Eulerstr.: Asphalt	Q0 9268,16228 9336,16302 9498,16480
 Boizenburger Str.: guter Asphalt	Q0 22310,12829 22310,12637 22309,12350 22385,12268
 ######################################################################
 #: by: anonymous vvv
+Cevennenstr.: mäßiger Asphalt	Q1 11175,21571 11175,21572 11204,21567 11217,21565 11308,21550 11408,21537 11522,21519 11696,21493 11831,21469
 Straße 49 (Karow): Asphalt	Q0 14906,21579 14928,21634 14953,21680 15031,21810 15068,21880 15121,22016
 Geraldstr.: mäßiger Asphalt	Q1- 20967,8720 21072,8742
 Käthe-Dorsch-Ring: Asphalt	Q0 15525,2299 15518,2184 15527,2150 15578,2124 15700,2127 15731,2148 15738,2190 15745,2294
@@ -5375,6 +5376,8 @@ Trappenfelder Pfad: Asphalt/Beton	Q0 22092,15610 22101,15601 22076,15276 22061,1
 #: by: ^^^
 #: by: Thomas Lützen-Johannsen:
 Haberechtstr.: guter Asphalt	Q0 11656,6182 11768,6159
+#: by: Katrin Kabisch:
+Reihersteg: mäßiges Kopfsteinpflaster	Q2 22471,-591 22462,-671 22458,-742 22451,-927 22442,-1093
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165

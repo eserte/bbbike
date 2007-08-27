@@ -9464,11 +9464,11 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Gitschiner Str. (Kreuzberg) in beiden Richtungen zwischen Zossener Str. und Prinzenstr. geplatzte Wasserleitung, Straße vollständig gesperrt',
+       text  => 'Gitschiner Str. (Kreuzberg) in beiden Richtungen zwischen Lobeckstr. und Prinzenstr. wegen einer geplatzten Wasserleitung gesperrt, Radfahrer können auf dem Gehweg passieren',
        type  => 'gesperrt',
        source_id => 'IM_006274',
        data  => <<EOF,
-userdel	2::inwork 10605,10312 10340,10301 10122,10294 9948,10280
+userdel	2::inwork 10340,10301 10605,10312
 EOF
      },
      { from  => 1188059338, # 

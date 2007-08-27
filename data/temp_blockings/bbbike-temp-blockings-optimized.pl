@@ -938,10 +938,10 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        {
          'source_id' => 'IM_006274',
          'until' => undef,
-         'text' => 'Gitschiner Str. (Kreuzberg) in beiden Richtungen zwischen Zossener Str. und Prinzenstr. geplatzte Wasserleitung, Straße vollständig gesperrt',
+         'text' => 'Gitschiner Str. (Kreuzberg) in beiden Richtungen zwischen Lobeckstr. und Prinzenstr. wegen einer geplatzten Wasserleitung gesperrt, Radfahrer können auf dem Gehweg passieren',
          'from' => undef,
          'id' => 1122,
-         'data' => 'userdel	2::inwork 10605,10312 10340,10301 10122,10294 9948,10280
+         'data' => 'userdel	2::inwork 10340,10301 10605,10312
 ',
          'type' => 'gesperrt'
        },

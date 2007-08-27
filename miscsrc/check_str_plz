@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_str_plz,v 1.26 2006/01/17 23:48:47 eserte Exp $
+# $Id: check_str_plz,v 1.27 2007/08/26 21:23:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2004,2005 Slaven Rezic. All rights reserved.
@@ -18,6 +18,7 @@
 use Getopt::Long;
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+use File::Basename qw(basename);
 use Strassen;
 use PLZ;
 use Symbol;
@@ -34,6 +35,7 @@ my $plzfield = PLZ::FILE_ZIP();
 my $plzdata;
 my $addstr;
 my $do_check_coords;
+my $ignore_plz_warnings;
 
 GetOptions("plzdata=s"  => \$plzdata,
 	   "plzfield=i" => \$plzfield,
@@ -42,11 +44,12 @@ GetOptions("plzdata=s"  => \$plzdata,
 	   "data=s"     => \$datafile,
 	   "ignoreparens!" => \$ignore_in_parens,
 	   "ignorebracketpart!" => \$ignore_bracket_part, # ignore [...]
+	   "ignoreplzwarnings!" => \$ignore_plz_warnings,
 	   "checkcoords!" => \$do_check_coords,
 	  ) or die <<EOF;
 usage: $0 [-plzdata plzdatafile] [-plzfield fieldindex]
 	  [-addstr bbdfile] [-[no]multibez] [-[no]checkcoords]
-	  [-[no]ignoreparens] [-[no]ignorebracketpart]
+	  [-[no]ignoreparens] [-[no]ignorebracketpart] [-ignoreplzwarnings]
 	  -data bbdfile
 EOF
 
@@ -66,6 +69,7 @@ while(<$fh>) {
     chomp;
     my(@l) = split(/\|/, $_);
     $str_in_plz{$l[0]}->{$l[1]}++;
+    $l[$plzfield]="" if $ignore_plz_warnings && !defined $l[$plzfield]; # may happen for example in Potsdam.coords.data
     $str_in_plz2{$l[0]}->{$l[$plzfield]}++;
     $str_coord{$l[PLZ::FILE_NAME()]}->{$l[PLZ::FILE_CITYPART()]}
 	= $l[PLZ::FILE_COORD()];
@@ -228,7 +232,7 @@ if (@unknown || @unknown2 || @ambiguous || @no_coord) {
     print "="x70,"\n", join("\n", sort @unknown2), "\n";
     print "="x70,"\n";
     if (@no_coord) {
-	print "= No coordinate in Berlin.coords.data for:\n";
+	print "= No coordinate in " . basename($plzdata) . " for:\n";
 	print join("\n", sort @no_coord), "\n";
     }
     print "="x70,"\n";

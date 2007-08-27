@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.154 2007/08/12 12:08:49 eserte Exp eserte $
+# $Id: Makefile,v 2.155 2007/08/26 21:23:39 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -936,6 +936,16 @@ check-disabled:	.check_label
 
 .check_strassen1:	.strassen.tmp add_str multi_bez_str-orig Berlin.coords.data
 	$(CHECK_STR_PLZ) -data .strassen.tmp
+	@touch $@
+
+# This rule is not called automatically, because
+# it has some known and expected failures. But the rule
+# should be called manually from time to time.
+.check_strassen_potsdam:	landstrassen Potsdam.coords.data
+	-rm /tmp/potsdam-strassen
+	${GREPSTRASSEN} --namerx ' \(Potsdam\)' landstrassen | perl -pe 's/\s+\(B\d+\)//' > /tmp/potsdam-strassen
+	${CHECK_STR_PLZ} -ignoreplzwarnings -plzdata Potsdam.coords.data -data /tmp/potsdam-strassen
+	rm /tmp/potsdam-strassen
 	@touch $@
 
 .check_strassen_cont:	.strassen.tmp str_cont_ausnahme

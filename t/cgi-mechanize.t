@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.45 2007/08/07 21:16:46 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.46 2007/08/26 22:00:05 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -322,7 +322,7 @@ for my $browser (@browsers) {
 	my_tidy_check($agent);
 
 	$like_long_data->(qr{genaue kreuzung}i, "On the crossing page");
-	$like_long_data->(qr/Kuhfortdamm/, "Expected start crossing");
+	$like_long_data->(qr/Kuhfort(er )?damm/i, "Expected start crossing");
 	$like_long_data->(qr/Mangerstr/, "Expected goal crossing");
 
     }
