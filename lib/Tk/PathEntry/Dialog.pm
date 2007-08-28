@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Dialog.pm,v 1.4 2007/07/01 12:42:49 k_wittrock Exp $
+# $Id: Dialog.pm,v 1.9 2004/09/04 01:11:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2005 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ use Tk::PathEntry;
 use base qw(Tk::DialogBox);
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 Construct Tk::Widget 'PathEntryDialog';
 
@@ -43,16 +43,20 @@ sub Populate {
     my($w, $args) = @_;
 
     $args->{-buttons} = ["OK", "Cancel"];
-    # Disable default button feature of Tk::DialogBox
-    $args->{-default_button} = 'none';
-    $args->{-title}  ||=  'Select path';   # default window title
+
+    my %pe_args;
+    foreach (qw(dir file)) {
+	if (exists $args->{"-initial$_"}) {
+	    $pe_args{"-initial$_"} = delete $args->{"-initial$_"};
+	}
+    }
+
     $w->SUPER::Populate($args);
 
     my $pe = $w->add('PathEntry',
 		     -textvariable => \$w->{PathName},
-		    )->pack(-expand => 1, -fill => 'x');
+		     %pe_args)->pack;
     $w->Advertise("PathEntry" => $pe);
-    $args->{-focus} = $pe;
 
     $pe->bind("<Return>" => sub {
 		  $w->Subwidget("B_OK")->Invoke;
@@ -62,9 +66,7 @@ sub Populate {
 	     });
 
     $w->ConfigSpecs
-	(-create => ['PASSIVE', undef, undef, 0],
-	 'DEFAULT' => [$pe],
-	);
+	(-create => ['PASSIVE', undef, undef, 0]);
 }
 
 sub Show {
@@ -77,11 +79,16 @@ sub Show {
     while (1) {
 	undef $pathname;
 
+	$w->after(300, sub {
+		      $pe->focus;
+		      $pe->icursor("end");
+		  });
+
 	my $r = $w->SUPER::Show(@args);
 	$pathname = $w->{PathName} if $r =~ /ok/i;
 	$pe->Finish;
 
-	if (defined $pathname && $w->cget(-create) && -f $pathname) {
+	if (defined $pathname && $w->cget(-create) && -e $pathname) {
 
 	    my $reply = $w->messageBox
 		(-icon => 'warning',
@@ -121,56 +128,21 @@ Tk::PathEntry::Dialog - File dialog using Tk::PathEntry
 Using as a replacement for getOpenFile and getSaveFile:
 
     use Tk::PathEntry::Dialog qw(as_default);
-    $filename = $mw->getOpenFile;
+    $mw->getOpenFile;
 
 Using as a normal module:
 
     use Tk::PathEntry::Dialog;
-    $filename = $mw->PathEntryDialog(-autocomplete => 1)->Show;
+    $filename = $mw->PathEntryDialog->Show;
 
 =head1 DESCRIPTION
 
-This module provides a dialog window with a L<Tk::PathEntry|Tk::PathEntry>
-widget, an OK button and a Cancel button.
-
 With this module, the L<Tk::PathEntry|Tk::PathEntry> can also be used
-as a standard Tk file dialog. You are allowed to select a directory.
-
-=head1 OPTIONS
-
-=head2 Options of getOpenFile and getSaveFile
-
-You cannot use the options C<-filetypes>, C<-defaultextension>, and C<-multiple>. So the only
-remaining options are C<-initialdir>, C<-initialfile>, and C<-title>.
-
-=head2 Options of PathEntryDialog
-
-B<PathEntryDialog> supports all options of L<Tk::PathEntry|Tk::PathEntry>. The additional options are:
-
-=over 4
-
-=item -title
-
-Sets the window title.
-
-=item -create
-
-If this is set to a C<true> value, you will be warned when you select an existing file.
-
-=back
-
-=head1 NOTES
-
-Surprisingly this module also works on Microsoft Windows.
+as a standard Tk file dialog.
 
 =head1 BUGS
 
-The following bug is known for B<PathEntryDialog> on Microsoft Windows:
-Directly after klicking on a choice in the choices listbox which displays
-below the C<PathEntryDialog> window, the C<OK> and
-C<Cancel> buttons don't respond to mouse clicks. Workaround: Move the mouse
-cursor out of the button and back. Or use the Enter resp. Escape keys in
-place of the buttons.
+This widget does not work on Windows.
 
 =head1 SEE ALSO
 

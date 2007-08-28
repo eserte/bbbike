@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.40 2007/08/10 20:08:39 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.42 2007/08/28 19:37:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -87,6 +87,7 @@ eval {
     my $email  = param('email');
     my $author = param('author');
     my $by     = $author || $email;
+    my $by_long = $author ? $author . ($email ? " <$email>" : "") : $email ? $email . ($author ? " ($author)" : "") : "unknown";
 
     my $subject = param("subject") || "BBBike/Mapserver-Kommentar";
     if ($by) {
@@ -178,7 +179,7 @@ eval {
 
     } elsif (param("formtype") && param("formtype") eq 'bbbikeroute') {
 	$comment =
-	    "Von: " . ($by || "anonymous\@bbbike.de") . "\n" .
+	    "Von: $by_long\n" .
 	    "An:  $to\n\n" .
 	    "Kommentar:\n" .
 	    param("comment") . "\n" .
@@ -191,7 +192,7 @@ eval {
 	$plain_body .= "\n" . Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
     } else {
 	$comment =
-	    "Von: " . ($by || "anonymous\@bbbike.de") . "\n" .
+	    "Von: $by_long\n" .
 	    "An:  $to\n\n" .
 	    (defined $mapx ? "Kartenkoordinaten: " . int($mapx) . "," . int($mapy) . "\n\n" : "") .
 	    "Kommentar:\n" .
@@ -367,6 +368,49 @@ none
 
 Send comments about mapserver data via email. The receiver is the
 C<$EMAIL> address in L<BBBikeVar>.
+
+=head2 CGI parameters
+
+The following CGI parameters are processed:
+
+=over
+
+=item email
+
+The e-mail address of the sender.
+
+=item author
+
+The full name of the sender.
+
+=item subject
+
+The subject for the Mail. It defaults to "BBBike/Mapserver-Kommentar".
+
+=item mapx
+
+=item mapy
+
+The coordinates for which point the comment applies as BBBike standard
+coordinates.
+
+=item formtype (optional)
+
+May be B<newstreetform> (if coming from the newstreetform.html
+formular), B<fragezeichenform> (if coming from the
+fragezeichenform.html formular), B<bbbikeroute> (if coming from
+bbbike_comment.cgi, not yet used), or nothing.
+
+=item comment
+
+The actual comment, typically encoded as iso-8859-1.
+
+=item
+
+=back
+
+Further parameters will be dumped to a local file if the formtype is
+either B<newstreetform> or B<fragezeichenform>.
 
 =head2 Configuration
 

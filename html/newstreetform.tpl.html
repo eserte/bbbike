@@ -99,6 +99,7 @@ function init() {
   }
 
 [% IF !data -%]
+  // NOTE: this is duplicated in get_and_set_email_author_from_cookie in bbbike_util.js
   if (document.cookie) {
     var cookies = document.cookie.split(/;\s*/);
     for (var i=0; i<cookies.length; i++) {

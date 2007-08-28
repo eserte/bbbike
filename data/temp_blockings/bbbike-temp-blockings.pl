@@ -9463,7 +9463,7 @@ userdel	2::temp 8063,12182 7816,12150 7383,12095 6828,12031
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => Time::Local::timelocal(reverse(2007-1900,9-1,19,23,59,59)), # XXX Richtung Westen nur bis zum 8.9.2007 gesperrt
        text  => 'Gitschiner Str. (Kreuzberg) in beiden Richtungen zwischen Lobeckstr. und Prinzenstr. wegen einer geplatzten Wasserleitung gesperrt, Radfahrer können auf dem Gehweg passieren',
        type  => 'gesperrt',
        source_id => 'IM_006274',
