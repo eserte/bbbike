@@ -913,7 +913,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        undef,
        {
          'source_id' => 'IM_006274',
-         'until' => undef,
+         'until' => 1190239199,
          'text' => 'Gitschiner Str. (Kreuzberg) in beiden Richtungen zwischen Lobeckstr. und Prinzenstr. wegen einer geplatzten Wasserleitung gesperrt, Radfahrer können auf dem Gehweg passieren',
          'from' => undef,
          'id' => 1122,
@@ -955,15 +955,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1188252000,
-         'text' => 'B 112 Beeskower Str. OL Eisenhüttenstadt, zw. K.-Marx-Str. u. Fr.-Heckert-Str. Stadtfest Vollsperrung 20.08.2007-27.08.2007 ',
-         'from' => 1187474400,
-         'id' => 1131,
-         'data' => 'userdel	2::temp 94796,-26727 95218,-26861
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1189893600,
          'text' => 'B 112 Eisenhüttenstadt-Frankfurt (O) zw. Güldendorf und Frankfurt (O) Deckenerneuerung Richtungsverkehr 28.08.2007-15.09.2007 ',

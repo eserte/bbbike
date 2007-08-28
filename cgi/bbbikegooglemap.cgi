@@ -2,15 +2,15 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.50 2007/06/17 22:23:55 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 2.1 2007/08/28 20:57:58 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2006,2007 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
 
 package BBBikeGooglemap;
@@ -192,6 +192,8 @@ sub get_html {
 	$bbbikeroot = "/bbbike";
     } elsif ($host =~ m{srand\.de}) {
 	$bbbikeroot = dirname(dirname($full->path));
+    } elsif ($host eq 'localhost') {
+	$bbbikeroot = "/~eserte/bbbike";
     }
 
     my $html = <<EOF;
@@ -203,13 +205,15 @@ sub get_html {
     <link type="image/gif" rel="shortcut icon" href="$bbbikeroot/images/bbbike_google.gif"><!-- XXX only for radzeit -->
     <script src="http://maps.google.com/maps?file=api&v=2&key=$google_api_key" type="text/javascript"></script>
     <script src="$bbbikeroot/html/sprintf.js" type="text/javascript"></script>
+    <script src="$bbbikeroot/html/bbbike_util.js" type="text/javascript"></script>
     <style type="text/css"><!--
         .sml          { font-size:x-small; }
 	#permalink    { color:red; }
 	#addroutelink { color:blue; }
+	.boxed	      { border:1px solid black; padding:3px; }
     --></style>
   </head>
-  <body onunload="GUnload()">
+  <body onload="init()" onunload="GUnload()">
     <div id="map" style="width: 100%; height: 500px"></div>
     <script type="text/javascript">
     //<![CDATA[
@@ -320,6 +324,12 @@ sub get_html {
 
 	document.getElementById("addroutelink").innerHTML = addRouteLink;
         document.getElementById("addroutetext").innerHTML = addRouteText;
+
+	if (addRoute.length > 0) {
+	  document.getElementById("commentlink").style.visibility = "visible";
+	} else {
+	  document.getElementById("commentlink").style.visibility = "hidden";
+	}
     }
 
     function updateRouteOverlay() {
@@ -467,6 +477,51 @@ sub get_html {
 	}
     }
 
+    function init() {
+        var frm = document.forms.commentform;
+        get_and_set_email_author_from_cookie(frm);
+    }
+
+    function send_via_post() {
+        var http = GXmlHttp.create(); // new XMLHttpRequest();
+        var frm = document.forms.commentform;
+        http.open('POST', "@{[ $cgi_reldir ]}/mapserver_comment.cgi", false);
+        http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        var comment = frm.comment.value;
+        comment += "\\n\\n" + document.getElementById("addroutelink").innerHTML;
+        http.send("author="+encodeURIComponent(frm.author.value)+"&"+
+                  "email="+encodeURIComponent(frm.email.value)+"&"+
+      	    "comment="+encodeURIComponent(comment)+"&"+
+      	    "encoding=utf-8");
+        var strResult=http.responseText;
+        if (http.status != 200) {
+          strResult = "Die Übertragung ist mit dem Fehlercode <" + http.status + "> fehlgeschlagen.\\n\\n" + strResult;
+        }
+        var answerBoxDiv = document.getElementById("answerbox");
+        var answerDiv = document.getElementById("answer");
+        answerBoxDiv.style.visibility = "visible";
+        answerDiv.innerHTML=strResult;
+	close_commentform();
+    }
+  
+    function close_answerbox() {
+        var answerDiv = document.getElementById("answer");
+        var answerBoxDiv = document.getElementById("answerbox");
+        answerBoxDiv.style.visibility = "hidden";
+        answerDiv.innerHTML = "";
+    }
+
+    function close_commentform() {
+        var frm = document.forms.commentform;
+        frm.style.visibility = "hidden";
+    }
+
+    function show_comment() {
+	close_answerbox();
+        var commentformDiv = document.getElementById("commentform");
+        commentformDiv.style.visibility = "visible";
+    }
+
     if (GBrowserIsCompatible() ) {
         var map = new GMap(document.getElementById("map"));
         map.addControl(new GLargeMapControl());
@@ -538,9 +593,13 @@ EOF
     $html .= <<EOF;
     </div>
 
+<div id="commentlink" class="boxed" class="boxed" style="visibility:hidden;">
+  <a href="#" onclick="show_comment(); return false;">Kommentar zu dieser Route senden</a>
+</div>
+
 <div style="float:left; width:45%; margin-top:0.5cm; ">
 
-<form name="mapmode" style="border:1px solid black; padding:3px; " method="get">
+<form name="mapmode" class="boxed" method="get">
  <table border="0">
    <tr style="vertical-align:top;">
     <td><input id="mapmode_browse"
@@ -562,7 +621,7 @@ EOF
  </table>
 </form>
 
-<form name="upload" onsubmit='setZoomInUploadForm()' style="margin-top:0.3cm; border:1px solid black; padding:3px; " method="post" enctype="multipart/form-data">
+<form name="upload" onsubmit='setZoomInUploadForm()' class="boxed" style="margin-top:0.3cm; " method="post" enctype="multipart/form-data">
 EOF
     if ($self->{errormessageupload}) {
 	$html .= <<EOF;
@@ -578,7 +637,7 @@ EOF
 
 </div>
 
-<form name="googlemap" onsubmit='return checkSetCoordForm()' style="margin-top:0.5cm; margin-left:10px; border:1px solid black; padding:3px; width:45%; float:left;">
+<form name="googlemap" onsubmit='return checkSetCoordForm()' class="boxed" style="margin-top:0.5cm; margin-left:10px; width:45%; float:left;">
   <input type="hidden" name="zoom" value="@{[ $zoom ]}" />
   <input type="hidden" name="autosel" value="@{[ $self->{autosel} ]}" />
   <input type="hidden" name="maptype" value="@{[ $self->{maptype} ]}" />
@@ -590,6 +649,22 @@ EOF
   <br />
   <button>Zeigen</button>
 </form>
+
+<form id="commentform" style="position:absolute; top:20px; left: 20px; border:1px solid black; padding:4px; background:white; visibility:hidden;">
+  <table>
+    <tr><td>Kommentar:</td><td> <textarea cols="40" rows="4" name="comment"></textarea></td></tr>
+    <tr><td>Name:</td><td><input name="author"></td></tr>
+    <tr><td>E-Mail:</td><td> <input name="email"></td></tr>
+    <tr><td></td><td><a href="#" onclick="send_via_post(); return false;">Senden</a>
+                     <a href="#" onclick="close_commentform(); return false;">Abbrechen</a>
+                 </td></tr>
+  </table>
+</form>
+
+<div style="position:absolute; top:20px; left: 20px; border:1px solid black; padding:4px; background:white; visibility:hidden;" id="answerbox">
+  <a href="#" onclick="close_answerbox(); return false;">[x]</a>
+  <div id="answer"></div>
+</div>
 
 <table width="100%" style="clear:left;">
  <tr>

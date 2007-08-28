@@ -2,15 +2,15 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.42 2007/08/28 19:37:37 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.43 2007/08/28 20:06:52 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003-2007 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
 
 use strict;
@@ -81,6 +81,16 @@ eval {
 		$to = "eserte\@smtp.herceg.de";
 		$cc = "slaven\@smtp.herceg.de";
 	    }
+	}
+    }
+
+    my $encoding = param("encoding");
+    if ($encoding && $encoding !~ m{^(utf-8|iso-8859-1)$}) {
+	undef $encoding;
+    }
+    if ($encoding && eval { require Encode; 1 }) {
+	for my $key (param) {
+	    param($key, Encode::decode($encoding, param($key)));
 	}
     }
 
@@ -403,7 +413,12 @@ bbbike_comment.cgi, not yet used), or nothing.
 
 =item comment
 
-The actual comment, typically encoded as iso-8859-1.
+The actual comment.
+
+=item encoding (optional)
+
+May be B<iso-8859-1> or B<utf-8>. If set, then this is the encoding of
+all CGI parameters.
 
 =item
 
