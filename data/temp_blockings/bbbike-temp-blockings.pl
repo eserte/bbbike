@@ -911,7 +911,7 @@ EOF
        text  => 'K 6907; (B 2-AS Ferch); OD Neuseddin Straßenbauarbeiten Vollsperrung 04.10.2004-24.12.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -18080,-12637 -17374,-13449
+userdel	q4 -18153,-12489 -17341,-13386
 EOF
      },
      { from  => 1096754400, # 2004-10-03 00:00
@@ -1553,8 +1553,8 @@ EOF
        text  => 'K 6907; (B 1 Neuseddin-Ferch); OD Neuseddin, Kunersdorfer Str. Straßenbauarbeiten Vollsperrung 29.03.2005-31.08.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -16605,-14239 -17374,-13449
-userdel	q4 -18080,-12637 -17374,-13449
+userdel	q4 -16479,-14389 -17341,-13386
+userdel	q4 -18153,-12489 -17341,-13386
 EOF
      },
      { from  => 1111437775, # 2005-03-21 21:42
@@ -2232,7 +2232,7 @@ EOF
        text  => 'Einfahrt in die Kastanienallee wegen Bauarbeiten gesperrt, 16.07.2005-17.07.2005',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 10889,15045 10723,14772
+userdel	q4; 10889,15045 10838,14962 10723,14772
 EOF
      },
      { from  => 1121732314, # 2005-07-19 02:18
@@ -7047,9 +7047,9 @@ EOF
 userdel	2::inwork 11603,15455 11638,15522
 EOF
      },
-     { from  => 1157839200, # 2006-09-10 00:00
+     { from  => 1181426400, # 2007-06-10 00:00
        until => 1199142000, # 2008-01-01 00:00
-       text  => 'L 090 Dr.-Külz-Str. OD Glindow, zw. Alte Str. und Alpenstr. Kanal- und Straßenbau, starke Einschränkungen 11.09.2006-31.12.2007 ',
+       text  => 'L 090 Dr.-Külz-Str. OD Glindow, zw. Alte Str. und Alpenstr. Kanal- und Straßenbau Vollsperrung 11.06.2007-31.12.2007 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -22914,-5137 -22867,-5778
@@ -7864,7 +7864,7 @@ userdel	2::inwork 9654,5738 9341,5612 9147,5534
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX by Andreas Mühlhausen
+       until => undef, # XXX by Andreas Mühlhausen; last-checked 2007-08-29
        text  => 'Linienstr.: Baustelle zwischen Koppenplatz (östliche Straße) und Rosenthaler Str., Einbahnstraße, Abbiegen in Kleine Auguststr. und Joachimstr. nicht möglich',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -8208,8 +8208,8 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 EOF
      },
      { from  => 1152482400, # 2006-07-10 00:00
-       until => 1188511200, # 2007-08-31 00:00
-       text  => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf grundhafter Straßenausbau Vollsperrung 11.07.2006-30.08.2007 ',
+       until => 1189807200, # 2007-09-15 00:00
+       text  => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf grundhafter Straßenausbau Vollsperrung 11.07.2006-14.09.2007 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 7981,-7165 7558,-7093
@@ -8707,7 +8707,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005800',
        data  => <<EOF,
-userdel	1::inwork 10534,14460 10723,14772 10889,15045
+userdel	1::inwork 10534,14460 10723,14772 10838,14962 10889,15045
 EOF
      },
      { from  => undef, # 
@@ -8829,7 +8829,7 @@ userdel	2::temp 8788,16264 8862,16208 8928,16158 8993,16100 9059,16038 9134,1595
 EOF
      },
      { from  => 1183280005, # 2007-07-01 10:53
-       until => 1188597599, # 2007-08-31 23:59
+       until => 1188428089, # 2007-08-31 23:59 1188597599
        text  => 'Nennhauser Damm (Spandau) Richtung Brunsbütteler Damm nach Heerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2007)',
        type  => 'gesperrt',
        source_id => 'IM_004443',
@@ -9227,9 +9227,9 @@ EOF
 userdel	2::inwork 20362,-511 20354,-569 20205,-548
 EOF
      },
-     { from  => 1185833906, # 2007-07-31 00:18
-       until => 1188597599, # 2007-08-31 23:59
-       text  => 'Joachimstaler Str. (Charlottenburg) Richtung Kantstr. zwischen Lietzenburger Str. und Kurfürstendamm Baustelle Fahrtrichtung gesperrt (bis Ende 08.2007)',
+     { from  => 1188428040, # 2007-08-30 00:54
+       until => 1188683999, # 2007-09-01 23:59
+       text  => 'Joachimstaler Str. (Charlottenburg) Richtung Kantstr. zwischen Lietzenburger Str. und Kurfürstendamm Baustelle Fahrtrichtung gesperrt (bis Anfang 09.2007)',
        type  => 'gesperrt',
        source_id => 'IM_006190',
        data  => <<EOF,
@@ -9678,6 +9678,14 @@ EOF
        source_id => 'IM_006391',
        data  => <<EOF,
 userdel	2::inwork 16843,14420 16881,14063
+EOF
+     },
+     { from  => 1188424800, # 2007-08-30 00:00
+       until => 1189807200, # 2007-09-15 00:00
+       text  => 'K 6907 BAB A10, AS-Ferch bis Ferch Bahnübergang am Bhf Lienewitz Gleisbau am Bahnübergang Vollsperrung 31.08.2007-14.09.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -18640,-11826 -19043,-11944 -19150,-11976
 EOF
      },
     );

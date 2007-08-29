@@ -10,7 +10,7 @@
 #: section projektierte Radstreifen der Verkehrsverwaltung vvv
 #: by: http://archiv.tagesspiegel.de/archiv/16.03.2007/3142959.asp
 Wintersteinstr.	? 3763,12279 3760,12336 3748,12472 3741,12607 3738,12639
-#: last_checked: 2007-05-30
+#: last_checked: 2007-08-29
 Wilhelmstr. (Kreuzberg)	? 9376,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
 Wisbyer Str.	? 12091,16209 12026,16247 11887,16320 11828,16335 11807,16340 11727,16358
 Wisbyer Str.	?; 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 11448,16398 11397,16405 11289,16423 11033,16464
@@ -18,8 +18,8 @@ Wisbyer Str.	?; 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 1144
 # (alte URL http://www.berlinonline.de/berliner-zeitung/berlin/327989.html?2004-03-26 gilt nicht mehr)
 #: last_checked: 2007-08-26
 Leipziger Straße zwischen Leipziger Platz und Wilhelmstraße (entweder beidseitig oder nur auf der Südseite)	? 8733,11524 9046,11558
-#: last_checked: 2006-08-01
-Mollstr.	? 11905,13069 11867,13076 11839,13083 11739,13131 11723,13139 11681,13161 11557,13228 11446,13294
+#: last_checked: 2007-08-30
+Mollstr.	?; 11446,13294 11557,13228 11681,13161 11723,13139 11739,13131 11839,13083 11867,13076 11905,13069
 #: last_checked: 2007-08-26
 Stralauer Str.	? 11351,12221 11304,12234 11139,12243 11094,12243 10946,12241 10826,12279 10804,12291 10738,12364
 #: last_checked: 2006-10-25
@@ -209,7 +209,7 @@ Alternative	? 24081,50440 24472,50937
 Popitzweg: Fußgängerzone?	? 1361,14431 1897,14408
 #: last_checked: 2007-07-19
 R1 im Raum Spindlersfeld: alternative Wegführung?	? 21364,5426 21443,5406 21487,5425 21600,5221 21684,5079 21735,5003 21779,4957 21821,4918 21845,4875 21896,4853 21796,4517
-Pappelstr. -> Kastanienallee: hier verliert man durchaus 2 1/2 Minuten bei der Überquerung der Schönhauser!	? 11119,15385 10889,15045 10723,14772
+Pappelstr. -> Kastanienallee: hier verliert man durchaus 2 1/2 Minuten bei der Überquerung der Schönhauser!	? 11119,15385 10889,15045 10838,14962
 #: by: http://www.agenda21berlin.de/vonwegen/map_tmpvelo.htm vvv
 Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 8934,5095 9025,4871
 #: note: laut Marko Preuss kann man hier höchstens Slalom fahren:
@@ -641,8 +641,8 @@ Teerofenweg: Waldweg? Qualität?	? -7067,-36 -6395,-887
 #XXX Koordinaten stimmen nicht mehr! Darßer Str.: beidseitiger Radweg ja, eintragen!	? B24943,-13819 B23513,-13631
 #XXX Koordinaten stimmen nicht mehr! Granitzstr.: wenigstens teilweise Radweg Richtung Osten? (Richtung Westen definitiv kein Radweg)	? B14908,-13452 B15798,-14098
 # XXX: B96 ab Ende Schnellstraße bis mindestens Fürstenberg als "stark befahren" markieren!
-Fresdorf - Kähnsdorf: Qualität?	? -11617,-15497 -12187,-15175 -12887,-15425 -13654,-15506
-Kähnsdorf - Seddin: Qualität?	? -13654,-15506 -13887,-15575 -14637,-16112 -15863,-15363 -16336,-15236
+Fresdorf - Kähnsdorf: Qualität?	? -11617,-15497 -12187,-15175 -12289,-15205 -12402,-15326 -12765,-15415 -12909,-15368 -13133,-15396 -13607,-15551
+Kähnsdorf - Seddin: Qualität?	? -13607,-15551 -13887,-15575 -13996,-15825 -14270,-15906 -15863,-15363 -16345,-15170
 Fußgängerweg zwischen Wartenberger Str. und Margaretenhöhe: Qualität? Gibt es an der Bahnbrücke Treppen?	? 16284,19198 16392,19760
 Paplitzer Str.: Qualität? Zwischen Goltzstr. und Kirchbachstr. Einbahnstraße auch für Radfahrer? Verbindung zum Mauerweg vorhanden?	? 11063,-2025 11021,-2464 10949,-2635 10927,-2687 10831,-2919 10707,-3109 10687,-3270
 #: XXX von anonym eingetragen: Spielstraße:
@@ -935,7 +935,7 @@ Töplitz - Neu-Töplitz - Leest: Qualität (von Leest aus asphaltiert!)? Durchgehen
 Töplitz - Göttin: Qualität? Ausschilderung?	? -23694,2739 -23826,2871 -23975,2925 -24013,2975 -24073,2959 -24121,3026 -24076,3347 -24359,3569 -24613,3867 -24464,3972 -24362,3987 -24308,4092 -24368,4124 -24276,4282 -24191,4349 -24098,4329
 Göttin - Neu-Töplitz: Qualität? Ausschilderung?	? -24098,4329 -23819,4206 -23597,4083 -23423,3918 -23353,3762 -23229,3692
 Göttin - Neu-Töplitz (längere Alternativstrecke): Qualität? Ausschilderung?	? -24098,4329 -23927,4682 -23439,4685 -22782,4597 -22836,4190 -22906,4136 -22909,4076
-Beelitz - Schlunkendorf - Kähnsdorf: Qualität? Nur für Radfahrer offen (von Schlunkendorf bis Kähnsdorf)?	? -15840,-19875 -15820,-18897 -15477,-18643 -15211,-18664 -15160,-18324 -15198,-18059 -14322,-17043 -14233,-16484 -14637,-16112
+Beelitz - Schlunkendorf - Kähnsdorf: Qualität? Nur für Radfahrer offen (von Schlunkendorf bis Kähnsdorf)?	? -15840,-19875 -15820,-18897 -15477,-18643 -15211,-18664 -15160,-18324 -15198,-18059 -14322,-17043 -14233,-16484 -14270,-15906
 Siedlung Schönwalde - Wansdorf/Pausin: Qualität?	? -10313,21144 -10336,21462 -10425,22139 -10425,22503 -10564,22896 -10590,23112 -10559,23255
 Schildower Weg, Teil des Barnimer Dörferwegs: Qualität? (laut ADFC-Karte mäßig oder schlecht geeignet)	? 8415,24361 8212,24258 8198,24225 7956,24083 7887,24043 7874,24035
 Möllersfelder Weg - Schillingweg: Qualität (möglicherweise guter Feldweg)? Teil des Barnimer Dörferwegs?	? 10799,24194 11147,23778
@@ -1498,3 +1498,5 @@ Guntersblumer Weg: Qualität?	? -2274,2656 -2288,2705 -2286,2772 -2269,2825
 Havelländer Ring: Qualität?	? 23629,15498 23484,15485 23368,15469 23369,15443 23386,15330 23539,15352 23588,15381 23643,15389
 #: by: Emanuel Schlüßler
 Darwinbogen (Königs Wusterhausen): Qualität (betoniert?)? Mit Radweg oder Radspur? Wie weit richtung Westen ist die Straßen schon gebaut?	? 24381,-11212 24289,-11236 24131,-11318 23982,-11328
+#: last_checked: 2007-08-29
+Friedrichstr./Mohrenstr.: Ampel in Bau	? 9410,11803

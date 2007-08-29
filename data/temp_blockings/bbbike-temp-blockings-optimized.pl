@@ -208,8 +208,8 @@ push @temp_blocking,
        undef,
        {
          'until' => 1199142000,
-         'text' => 'L 090 Dr.-Külz-Str. OD Glindow, zw. Alte Str. und Alpenstr. Kanal- und Straßenbau, starke Einschränkungen 11.09.2006-31.12.2007 ',
-         'from' => 1157839200,
+         'text' => 'L 090 Dr.-Külz-Str. OD Glindow, zw. Alte Str. und Alpenstr. Kanal- und Straßenbau Vollsperrung 11.06.2007-31.12.2007 ',
+         'from' => 1181426400,
          'id' => 837,
          'data' => 'userdel	q4::inwork -22914,-5137 -22867,-5778
 ',
@@ -475,8 +475,8 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'type' => 'handicap'
        },
        {
-         'until' => 1188511200,
-         'text' => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf grundhafter Straßenausbau Vollsperrung 11.07.2006-30.08.2007 ',
+         'until' => 1189807200,
+         'text' => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf grundhafter Straßenausbau Vollsperrung 11.07.2006-14.09.2007 ',
          'from' => 1152482400,
          'id' => 975,
          'data' => 'userdel	q4::inwork 7981,-7165 7558,-7093
@@ -669,16 +669,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_004443',
-         'until' => 1188597599,
-         'text' => 'Nennhauser Damm (Spandau) Richtung Brunsbütteler Damm nach Heerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2007)',
-         'from' => 1183280005,
-         'id' => 1047,
-         'data' => 'userdel	1::inwork -8671,13312 -8643,13383 -8358,13340 -8011,13351
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -820,9 +811,9 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
        undef,
        {
          'source_id' => 'IM_006190',
-         'until' => 1188597599,
-         'text' => 'Joachimstaler Str. (Charlottenburg) Richtung Kantstr. zwischen Lietzenburger Str. und Kurfürstendamm Baustelle Fahrtrichtung gesperrt (bis Ende 08.2007)',
-         'from' => 1185833906,
+         'until' => 1188683999,
+         'text' => 'Joachimstaler Str. (Charlottenburg) Richtung Kantstr. zwischen Lietzenburger Str. und Kurfürstendamm Baustelle Fahrtrichtung gesperrt (bis Anfang 09.2007)',
+         'from' => 1188428040,
          'id' => 1094,
          'data' => 'userdel	1::inwork 5468,10442 5479,10719 5484,10810
 ',
@@ -890,15 +881,7 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1188338400,
-         'text' => 'B 246 Bahnübergang Wendisch Rietz Siedlung, OT Neue Mühle Gleiserneuerung Vollsperrung 13.08.2007-28.08.2007 ',
-         'from' => 1186869600,
-         'id' => 1117,
-         'data' => 'userdel	2::inwork 53048,-21761 52989,-21777 52964,-21796
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1193785200,
@@ -1063,6 +1046,17 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
          'from' => 1188079200,
          'id' => 1145,
          'data' => 'userdel	2::inwork 89198,-10380 89181,-9996 89395,-9979
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       {
+         'until' => 1189807200,
+         'text' => 'K 6907 BAB A10, AS-Ferch bis Ferch Bahnübergang am Bhf Lienewitz Gleisbau am Bahnübergang Vollsperrung 31.08.2007-14.09.2007 ',
+         'from' => 1188424800,
+         'id' => 1148,
+         'data' => 'userdel	2::inwork -18640,-11826 -19043,-11944 -19150,-11976
 ',
          'type' => 'gesperrt'
        }
