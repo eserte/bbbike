@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.33 2007/07/10 00:20:32 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.33 2007/07/10 00:20:32 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -197,6 +197,12 @@ sub add_button {
 		   $main::top->bind("<F12>"=> \&find_nearest_hoehe);
 	       }
 	      ],
+	      [Button => "Add Zebrastreifen",
+	       -command => sub {
+		   local $main::lazy_plot = 0; # lazy mode does not support bbd images yet
+		   add_new_nonlazy_layer("p", "$bbbike_rootdir/misc/zebrastreifen");
+	       }
+	      ],
 	      [Cascade => 'Berlin/Potsdam coords', -menuitems =>
 	       [
 		[Button => "Add Berlin.coords.data",
@@ -274,6 +280,12 @@ sub add_new_layer {
     }
     Hooks::get_hooks("after_new_layer")->execute;
     $free_layer;
+}
+
+sub add_new_nonlazy_layer {
+    my($type, $file, %args) = @_;
+    require BBBikeAdvanced;
+    main::plot_additional_layer($type, $file, %args);
 }
 
 sub set_layer_highlightning {

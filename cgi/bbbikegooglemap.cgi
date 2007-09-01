@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 2.1 2007/08/28 20:57:58 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 2.1 2007/08/28 20:57:58 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006,2007 Slaven Rezic. All rights reserved.
@@ -326,9 +326,9 @@ sub get_html {
         document.getElementById("addroutetext").innerHTML = addRouteText;
 
 	if (addRoute.length > 0) {
-	  document.getElementById("commentlink").style.visibility = "visible";
+	  document.getElementById("commentlink").style.display = "block";
 	} else {
-	  document.getElementById("commentlink").style.visibility = "hidden";
+	  document.getElementById("commentlink").style.display = "none";
 	}
     }
 
@@ -593,7 +593,7 @@ EOF
     $html .= <<EOF;
     </div>
 
-<div id="commentlink" class="boxed" class="boxed" style="visibility:hidden;">
+<div id="commentlink" class="boxed" class="boxed" style="display:none;">
   <a href="#" onclick="show_comment(); return false;">Kommentar zu dieser Route senden</a>
 </div>
 

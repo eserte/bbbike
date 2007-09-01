@@ -52,7 +52,7 @@ Bayerischer Platz	1 6063,9106 6053,9224 6084,9242 6131,9241 6161,9128 6152,9091 
 orthodoxe Kirche (unsicher)	1 3952,8980 3932,8989 3835,9044
 U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2750,5532 2532,5105 2472,5037 2313,4901 2190,4823 2074,4750 2007,4791
 U-Bahn Dahlem	1 2007,4791 2095,4805 2169,4854 2217,4884 2262,4914 2288,4932 2454,5067 2499,5144 2717,5578
-Am Großen Wannsee	1 -5868,1255 -5848,1379 -5867,1449 -6017,1987 -6021,2068 -5945,2381 -5749,2701 -5722,2714 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5883,1948 -5874,1771 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
+Am Großen Wannsee	1 -5868,1255 -5848,1379 -5867,1449 -5929,1649 -6025,1991 -6021,2068 -5945,2381 -5749,2701 -5722,2714 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5883,1948 -5874,1771 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
 Wilhelplatz	1 -7232,445 -7059,578
 Wilhelplatz	1 -7059,578 -7088,463 -7095,436 -7186,363
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
@@ -210,7 +210,7 @@ Schweidnitzer Str	1 3202,9583 3223,9837
 Mansfelder Str.	1 4102,9164 4158,9109 4228,9093 4325,9082
 Johann-Georg-Str.	1 3108,10069 3170,10041 3347,9793
 Damaschkestr.	1 3132,10499 3013,10553
-Herbartstr.	1 2386,11183 2352,11041
+Herbartstr.	1 2346,11147 2340,11045
 Lietzenseeufer	1 2871,11211 2806,11241 2748,11206 2621,11190 2621,11065
 Gervinusstr.	1 3587,10768 3631,10784
 #: note während Veranstaltungen und nachts von ca. 22 bis 7 Uhr gesperrt, mit Anhänger wegen des engen Südeinganges nicht befahrbar:
@@ -444,6 +444,7 @@ Plonzstr.	1 16227,12280 16252,12411
 #: by: MIchael Wedel:
 Techowpromenade	1 5219,20467 5185,20358 5173,20275 5170,20182
 (Kastanienallee - Schönhauser Allee)	1 10895,14951 10838,14962
+Lossebergplatz	1 16070,23566 16094,23554 16095,23539 16079,23535 16064,23547 16070,23566
 ######################################################################
 #
 # Potsdam
@@ -484,10 +485,12 @@ Puschkinallee	1 -13052,775 -12922,762 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
 Friedrich-Ebert-Str.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3nocross -12719,-1661 -12755,-1585 -12773,-1544 -12795,-1499 -12833,-1365
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13733,-722 -13772,-623
+#: by: rjoop
+Brücke mittlerweile gesperrt	2 -19183,7299 -19150,7320
 # 
 # elsewhere in Brandenburg
 #: by: grote energus: vvv
-Straße gesperrt - Baustelle Großflughafen Schönefeld, Durchfahrt nicht möglich	2 18005,-6959 18037,-6627 18301,-6019 18411,-5428
+Straße gesperrt - Baustelle Großflughafen Schönefeld, Durchfahrt nicht möglich	2 18301,-6019 18411,-5428
 Straße gesperrt - Baustelle Großflughafen Schönefeld, Durchfahrt nicht möglich	2 15490,-4709 15539,-4658 15685,-4645 15964,-4817 16261,-4683 17742,-5179 18411,-5428 18764,-5531
 #: by: ^^^
 Dallgower Str.	1 -10799,15946 -10853,16230
@@ -776,7 +779,7 @@ tragen (Fußgängerbrücke Ostkreuz)	0:60 14739,10892
 tragen (Durchgang unter der U-Bahn zur Warschauer Str.)	0:30 13437,10992
 tragen (Treppe)	0:30 7370,6451
 tragen (Bahnübergang Bhf. Satzkorn)	0:60 -19150,7320
-tragen (Bahnübergang Bhf. Satzkorn)	0:60 -19190,7296
+tragen (Bahnübergang Bhf. Satzkorn)	0:60 -19183,7299
 schieben (Rampe Schmöckwitzwerdersteg)	0:30 30533,-3124
 schieben (Rampe Schmöckwitzwerdersteg)	0:30 30546,-3072
 tragen (Treppe Mansfelder Str.)	0:30 3619,9331
@@ -1102,13 +1105,13 @@ Gottfried-Keller-Str.	1 1697,11911 1792,11889
 tragen (5 Stufen)	0:20 3795,13541
 Schranke	BNP:5 3981,13292
 Tor (meist offen, sonst Fußgängerweg nehmen)	BNP:5 3822,14195
-Wiebestr.: (Privatweg)	2 4556,13219 4490,12990
+Wiebestr.: (Privatweg)	2 4547,13232 4490,12990
 Spandauer Damm: queren nur mit tragen möglich	3nocross 3038,12482 3191,12502 3280,12512
 Bonhoefferufer	1 3216,12994 3154,12936 3194,12830 3324,12784
 tragen (16 Stufen)	0:40 4135,12685
 tragen (16 Stufen)	0:40 4140,12594
 Kaiserdamm: queren schlecht möglich	3nocross 2109,11441 2191,11451 2282,11463
-Kaiserdamm: queren schlecht möglich	3nocross 2282,11463 2419,11472 2612,11491
+Kaiserdamm: queren schlecht möglich	3nocross 2282,11463 2390,11468 2612,11491
 Kleine Markusstr.	1 12037,12092 11974,12110 11969,12054 12021,12037
 tragen, schieben (3 x 9 Stufen, schmale Rampe)	0:30 6200,12971
 tragen (30 Stufen)	0:45 5896,12590

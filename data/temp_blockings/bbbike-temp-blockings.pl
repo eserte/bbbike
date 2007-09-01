@@ -287,17 +287,13 @@ EOF
        text  => 'Lückstraße zwischen Giselastraße und Schlichtallee in Fahrtrichtung Schlichtallee Bauarbeiten, Straße gesperrt. Dauer: 26.04.2004, 07:00 Uhr bis voraussichtlich 30.04.2004 ',
        type  => 'handicap',
      },
-     { from  => 1112991869, # 2005-04-08 22:24
-       until => 1113170400, # 2005-04-11 00:00
-       text  => 'Turmstr. (Mitte) in beiden Richtungen zwischen Gotzkowskystr. und Stromstr. Veranstaltung, Straße vollständig gesperrt (bis 10.04.2005 ca. 24 Uhr)',
-       type  => 'handicap',
+     { from  => 1188506853, # 2007-08-30 22:47
+       until => 1188770400, # 2007-09-03 00:00
+       text  => 'Turmstr. (Moabit) in beiden Richtungen zwischen Stromstr. und Beusselstr. Veranstaltung, Straße vollständig gesperrt (bis 02.09.2007 nachts)',
+       type  => 'gesperrt',
+       source_id => 'IM_006461',
        data  => <<EOF,
-userdel	q4 6112,13327 6249,13322
-userdel	q4 5705,13359 5857,13342
-userdel	q4 5705,13359 5560,13382
-userdel	q4 5956,13330 5857,13342
-userdel	q4 5368,13406 5560,13382
-userdel	q4 6112,13327 6011,13330 5956,13330
+userdel	2 6249,13322 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359 5560,13382 5368,13406 5256,13420
 EOF
      },
      { from  => Time::Local::timelocal(reverse(2004-1900,4-1,30,12,0,0)),
@@ -322,7 +318,7 @@ EOF
        text  => 'Müllerstraße, Zwischen Kreuzung Seestraße und Kreuzung Leopoldplatz in beiden Richtungen Veranstaltung, Straße gesperrt, Dauer: 01.04.2005 06:00 Uhr bis 03.04.2005 23:00 Uhr (Müllerstraßenfest) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 7043,15793 7198,15656
+userdel	2 7043,15793 7129,15717 7198,15656
 userdel	2 7043,15793 6957,15869 6914,15908
 userdel	2 7198,15656 7277,15586
 userdel	2 6790,16018 6914,15908
@@ -363,7 +359,7 @@ EOF
        text  => 'Hermannstraße, Straßenfest zwischen Flughafenstraße und Thomasstraße, Dauer: 21.05.2005 04:00 Uhr bis 23.05.2005',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 7043,15793 7198,15656
+userdel	2 7043,15793 7129,15717 7198,15656
 userdel	2 7043,15793 6957,15869 6914,15908
 userdel	2 7198,15656 7277,15586
 userdel	2 6790,16018 6914,15908
@@ -1637,7 +1633,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002500',
        data  => <<EOF,
-userdel	1 -8671,13312 -8643,13383 -8358,13340 -8011,13351
+userdel	1 -8671,13312 -8643,13383 -8358,13340 -8028,13345
 EOF
      },
      { from  => 1111524913, # 2005-03-22 21:55
@@ -1981,7 +1977,7 @@ EOF
        data  => <<EOF,
 userdel	q4 7148,15447 7020,15314
 userdel	q4 7148,15447 7277,15586
-userdel	q4 6647,15094 6737,15133
+userdel	q4 6630,15100 6737,15133
 userdel	q4 6737,15133 6846,15202 7020,15314
 EOF
      },
@@ -4723,7 +4719,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002867',
        data  => <<EOF,
-userdel	2 6790,16018 6914,15908 6957,15869 7043,15793 7198,15656 7277,15586
+userdel	2 6790,16018 6914,15908 6957,15869 7043,15793 7129,15717 7198,15656 7277,15586
 EOF
      },
      { from  => 1150581600, # 2006-06-18 00:00
@@ -5544,7 +5540,7 @@ EOF
        text  => 'Straßenfest am Kaiserdamm. Die Fahrbahn Richtung Theodor-Heuss-Platz ist vom 26.08.2006, 6.00 Uhr, von der Sophie-Charlotten- bis zur Königin-Elisabeth-Straße bis zum 28.08.2006, 0.00 Uhr gesperrt.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::temp 2612,11491 2419,11472 2282,11463 2191,11451 2109,11441
+userdel	1::temp 2612,11491 2390,11468 2282,11463 2191,11451 2109,11441
 EOF
      },
      { from  => 1156454823, # 2006-08-24 23:27
@@ -6881,7 +6877,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004443',
        data  => <<EOF,
-userdel	1::inwork -8671,13312 -8643,13383 -8358,13340 -8011,13351 -7693,13330
+userdel	1::inwork -8671,13312 -8643,13383 -8358,13340 -8028,13345 -7693,13330
 EOF
      },
      { from  => 1178865859, # 2007-05-11 08:44
@@ -8297,7 +8293,7 @@ EOF
        text  => 'Sperrungen im Neuen Garten wegen des G8-Vorbereitungstreffens, bis 2007-05-30 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp -12185,1388 -12115,1331 -12081,1168 -12191,1196 -12182,816
+userdel	2::temp -12166,1384 -12115,1331 -12081,1168 -12191,1196 -12182,816
 userdel	2::temp -11818,993 -11871,1087 -12081,1168
 userdel	2::temp -11887,837 -11856,950
 userdel	2::temp -11581,559 -11650,590 -11603,721 -11615,853 -11715,959
@@ -8834,7 +8830,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004443',
        data  => <<EOF,
-userdel	1::inwork -8671,13312 -8643,13383 -8358,13340 -8011,13351
+userdel	1::inwork -8671,13312 -8643,13383 -8358,13340 -8028,13345
 EOF
      },
      { from  => 1183280053, # 2007-07-01 10:54
@@ -9142,9 +9138,9 @@ EOF
 userdel	1::temp 23960,15021 23993,14797
 EOF
      },
-     { from  => 1185304600, # 2007-07-24 21:16
-       until => 1188597599, # 2007-08-31 23:59
-       text  => 'Persiusstr. (Friedrichshain) in beiden Richtungen bei Markgrafendamm Baustelle, Straße vollständig gesperrt über Markgrafendamm - Stralauer Str. - Bossestr. (bis Ende 08.2007)',
+     { from  => 1188588474, # 2007-08-31 21:27
+       until => 1196463599, # 2007-11-30 23:59
+       text  => 'Persiusstr. (Friedrichshain) in beiden Richtungen bei Markgrafendamm Baustelle, Straße vollständig gesperrt (bis Ende 11.2007)',
        type  => 'gesperrt',
        source_id => 'IM_006159',
        data  => <<EOF,
@@ -9686,6 +9682,24 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -18640,-11826 -19043,-11944 -19150,-11976
+EOF
+     },
+     { from  => 1188588424, # 2007-08-31 21:27
+       until => 1193871599, # 2007-10-31 23:59
+       text  => 'Askanierring (Spandau) in Richtung Falkenhagener Tor, zwischen Fehrbelliner Tor und Eckschanze Baustelle, Einbahnstraßenregelung das Befahren ist nur in südliche Richtung möglich.(bis Ende 10/2007) ',
+       type  => 'gesperrt',
+       source_id => 'IM_002956',
+       data  => <<EOF,
+userdel	1::inwork -3942,15926 -3735,16205 -3631,16224
+EOF
+     },
+     { from  => 1188588635, # 2007-08-31 21:30
+       until => 1188770399, # 2007-09-02 23:59
+       text  => 'Alt-Blankenburg und Priesterstege Richtung Krugstege Veranstaltung, Straße vollständig gesperrt (bis 02.09. nachts)',
+       type  => 'gesperrt',
+       source_id => 'IM_006462',
+       data  => <<EOF,
+userdel	2::temp 13915,20944 13570,20938 13594,20855
 EOF
      },
     );
