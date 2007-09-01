@@ -6330,7 +6330,7 @@ EOF
        text  => 'K 6304 Fahrland-Priort Bahnübergang in der OL Priort Gleisbauarbeiten Vollsperrung 21.10.2006-25.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -19058,11636 -18750,11919
+userdel	2::inwork -19058,11636 -19029,11660 -18750,11919
 EOF
      },
      { from  => 1161900000, # 2006-10-27 00:00
@@ -6338,7 +6338,7 @@ EOF
        text  => 'K 6304 Fahrland-Priort Bahnübergang in der OL Priort Gleisbauarbeiten Vollsperrung 28.10.2006-01.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -19058,11636 -18750,11919
+userdel	2::inwork -19058,11636 -19029,11660 -18750,11919
 EOF
      },
      { from  => 1160863200, # 2006-10-15 00:00

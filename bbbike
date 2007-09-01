@@ -2390,7 +2390,8 @@ sub do_iconframe {
     $balloon->attach($sehenswuerdigkeiten_check, -msg => M"Sehenswürdigkeiten etc.");
     $ch->attach($sehenswuerdigkeiten_check, -pod => "^\\s*Sehenswürdigkeiten-Symbol");
     my $knmb = $misc_frame->Menubutton;
-    my $knm = $knmb->Menu(-title => M"Sehenswürdigkeiten etc.");
+    my $knm = $knmb->Menu(-title => M"Sehenswürdigkeiten etc.",
+		       -disabledforeground => $wb->cget(-foreground));
 
     $knm->checkbutton(-label => M"Sehenswürdigkeiten",
 		      -variable => \$str_draw{'v'},
@@ -2412,36 +2413,40 @@ sub do_iconframe {
 		     );
     $knm->separator;
 
-    my @kneipen_list = ('kn');
-    if ($advanced) {
-	push @kneipen_list, qw(rest ki);
-    }
-    foreach my $f (@kneipen_list) {
-	if (-f "$FindBin::RealBin/data/$p_file{$f}") {
-	    $knm->checkbutton(-label => $p_attrib{$f}->[ATTRIB_PLURAL],
-			      -variable => \$p_draw{$f},
-			      -command => sub { plot('p',$f) });
-	    $knm->command(-label => Mfmt("%s auswählen", $p_attrib{$f}->[ATTRIB_SINGULAR]),
-			  -command => sub { choose_ort('p', $f) });
-	}
-    }
-    if (0 && $advanced) { # XXX Wird nicht mehr gepflegt...
-	$knm->command(-label => M"Film auswählen",
-		      -command => sub {
-			  require BBBikeAdvanced;
-			  search_movie();
-		      });
-    }
     $knm->command(-label => M"Persönliche Orte",
 		  -command => sub {
 		      require BBBikePersonal;
 		      BBBikePersonal::dialog();
 		  });
 
-    $knm->separator;
     $knm->checkbutton(-label => M"Obst",
 		      -variable => \$p_draw{'obst'},
 		      -command => sub { plot('p','obst') });
+
+    if ($advanced) {
+	$knm->separator;
+	$knm->command(-label => M("Nicht mehr gepflegt").":",
+		      -state => 'disabled',
+		      -font => $font{'bold'},
+		     );
+	my @kneipen_list = qw(kn rest ki);
+	foreach my $f (@kneipen_list) {
+	    if (-f "$FindBin::RealBin/data/$p_file{$f}") {
+		$knm->checkbutton(-label => $p_attrib{$f}->[ATTRIB_PLURAL],
+				  -variable => \$p_draw{$f},
+				  -command => sub { plot('p',$f) });
+		$knm->command(-label => Mfmt("%s auswählen", $p_attrib{$f}->[ATTRIB_SINGULAR]),
+			      -command => sub { choose_ort('p', $f) });
+	    }
+	}
+	if (0) { # XXX Wird gar nicht mehr gepflegt...
+	    $knm->command(-label => M"Film auswählen",
+			  -command => sub {
+			      require BBBikeAdvanced;
+			      search_movie();
+			  });
+	}
+    }
 
     #XXXX menu_entry_up_down($knm, $tag_group{'str_f'});
     menuright($sehenswuerdigkeiten_check, $knm);

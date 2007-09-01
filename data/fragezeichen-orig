@@ -388,7 +388,7 @@ Nisbléstr.: Qualität? (laut ADFC-Karte gut geeignet)	? 11870,21574 11659,21611 1
 Martin-Luther-Str. (Falkensee) - Radelandstr.: durchgängige Verbindung vorhanden? Qualität?	? -6977,17720 -7060,17637 -7306,17291 -7424,17303
 Am Oder-Spree-Kanal, Schwarzer Weg nach Schmöckwitz: Qualtität?	? 30546,-3072 29348,-2798 28923,-2859 28623,-3061 28110,-3047 27906,-3136
 Straßenführung und Straßennamen im Wohnpark an der Buga?	? -13820,1095 -13907,1223 -13801,1414 -14016,1563
-westlich des Sacrower Sees - Försterei Zedlitz - zur Straße nach Krampnitz: Qualität? (wahrscheinlich Waldweg, Q2)	? -9353,5012 -9395,5025 -9678,4913 -10147,4870 -10616,4399 -10912,3738 -11011,3721 -11156,3523 -11247,3503 -11299,3471 -11334,3365 -11395,3270 -11524,3238 -11607,3254
+westlich des Sacrower Sees - Försterei Zedlitz: Qualität? (wahrscheinlich Waldweg, Q2)	? -9353,5012 -9395,5025 -9678,4913 -10147,4870 -10616,4399 -10912,3738 -10955,3723
 Schenkenberg - Tornow: Qualität?	? 45406,107350 44745,108948 45265,108797 46428,109624 46174,110110 45810,110576 46075,110850 46272,110976 46317,111103 46685,111038 47335,110888
 Lichterfelde - Teltow über Kantstr.: befahrbar, Qualität?	? 3689,182 3471,87 3137,-67 2507,-446 2545,-501
 Skandinavische Str.: auf der westlichen Seite Suggestivstreifen (laut Radzeit)?	? 17363,11972 17082,11909 16958,11778
@@ -474,8 +474,8 @@ Galileistr.: Qualität? Name westl. der Neuendorfer Str. noch immer Galileistr?	?
 Im Schäferfeld: Qualität?	? -8114,-3675 -8404,-3824 -8475,-3861
 Im Schäferfeld - Nuthe: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)? genaue Wegführung? Durchfahrt möglich?	? -8475,-3861 -8813,-3912 -8915,-4069 -9306,-4259
 Stern - Nudow: Durchfahrt möglich? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? -6983,-3886 -7077,-4186 -6902,-4397 -6775,-4326 -6671,-6390 -6516,-6520 -6508,-6969 -6183,-7600 -6319,-7823 -5766,-8911 -5387,-8896
-F3 nach Marquardt: genaue Wegführung? Qualität?	? -19309,4359 -19403,4631 -18693,4568
-F3 nach Marquardt: genaue Wegführung? Laut "mobil-potsdam.de" Kopfsteinpflaster	? -18693,4568 -18743,4789 -18811,4782
+F3 nach Marquardt: genaue Wegführung? Qualität?	? -19309,4359 -19403,4631 -18701,4578
+#XXX del: F3 nach Marquardt: genaue Wegführung? Laut "mobil-potsdam.de" Kopfsteinpflaster	? -18701,4574 -18722,4681 -18743,4789 -18811,4782
 Joachimsthal - Altkünkendorf: Qualität?	? 35512,66695 38125,66800 39287,67537 39575,67262 39875,66425
 Schwedt - Gartz: Qualität?	? 69331,73165 69850,73437 69872,73500 69887,73650 70225,73562 70752,73805 71090,74113 71255,74433 71362,74950 71262,74987 71450,75037 71512,75737 72587,78862 72700,79387 72925,81275 73241,81946 72483,82148 73000,84300 73074,84238 73190,84219 73637,84225 73762,84750 74177,85231 74271,85435 74300,85700 74225,86237 74362,86887 74425,87450 74625,87850 74787,89037 74800,89500 74929,89762 75125,89937 75525,90125 75335,90277 75329,90359
 Gartz - B113: Qualität?	? 75502,90490 75637,90262 76023,90222 76100,90212 76450,90525 76846,91410 76925,92050 77330,92723 77262,93150 77362,93337 77350,93537 77912,93762 78137,93950 78104,94070 78220,94287 78250,94612 78412,94812 78537,94775 78587,94887 78641,95024 78662,95275 78787,95425 78812,95825 78921,96072
@@ -542,7 +542,6 @@ Glindow - Pertzow: laut "Berliner Umland" witterungsabhängige Strecke	? -22914,-
 Werder - zum Plessower See: genaue Wegführung? Qualität?	? -22042,-2060 -22734,-2249 -22933,-2411 -23320,-2574
 Alt-Brieselang - Brieselang: Qualität? genaue Wegführung?	? -16914,22393 -18103,22064 -17978,21602 -18415,21465 -18378,20766 -18817,19637
 Marquardt, Hauptstr.: Laut mobil-potsdam.de: Asphaltiert	? -18811,4782
-B273 - Schwarzer Weg: Laut "mobil-potsdam.de" Waldweg	? -18693,4568 -18233,4501
 Goetheplatz: Einbahnstraßenregelung auch für Radfahrer? Qualität?	? -9809,-1435 -9902,-1445 -9922,-1395 -9809,-1435
 Goethestr./Fontanestr.: laut "mobil-potsdam.de" asphaltiert	? -9809,-1435 -9506,-1431 -9215,-1431 -9219,-1590 -9224,-1727
 Strausberg - Garzau: Qualität (laut "Berliner Umland" teilweise witterungsabhängige Strecke, auf Garzauer Seite anscheinend nur Feldweg)?	? 42578,15750 43850,15737 45618,15431 46150,15006 46421,14990
@@ -1187,7 +1186,7 @@ Turmstr. (Potsdam): Qualität?	? -8294,-4022 -8404,-3824 -8510,-3616
 Kronprinzessinenweg/Havelchaussee - Schlachtensse: existiert ein für Radfahrer befahrbarer Weg? Qualität?	? -3296,3686 -3324,3382
 Neue Straße (Phöben): Qualität?	? -26488,2783 -26183,2902 -26070,2911 -25847,2835 -25664,2840
 Baumgartenbrück - B1: Rampe oder Treppe?	? -19189,-5754 -19181,-5732 -19201,-5714
-Fähre Ketzin - Paretz: Qualität des Radwegs? Nur für Radfahrer oder auch für Autofahrer befahrbar? Führt hier die Route F3 entlang?	? -26794,5867 -26526,5882 -26360,5950 -26214,5988 -26121,6011 -26141,6106 -26010,6122 -25973,6078 -25933,6081 -25921,6058 -25629,5996 -25569,6220 -25516,6282 -25444,6326
+Fähre Ketzin - Paretz: Qualität des Radwegs? Nur für Radfahrer oder auch für Autofahrer befahrbar? Führt hier die Route F3 entlang?	? -26785,5851 -26526,5882 -26360,5950 -26214,5988 -26121,6011 -26141,6106 -26010,6122 -25973,6078 -25933,6081 -25921,6058 -25629,5996 -25569,6220 -25516,6282 -25444,6326
 #: note: unklarer Beitrag (anonymous): schlechtes Verbundsteinpflaster Q3
 Rohrwallallee: Qualität?	? 26201,-863 26240,-866 26346,-863 26389,-932 26445,-1037 26656,-1147 26713,-1346 26780,-1468 26707,-1726 26662,-1916
 Barnimer Dörferweg in Blankenfelde: Qualität?	? 7956,24083 8132,23896 8502,23877
@@ -1502,3 +1501,4 @@ Limburger Str.: Qualität (möglicherweise Asphalt)? Gibt es Abschnitte, die für d
 Bergstr. (Wannsee): Qualität zwischen Hermannstr. und Lindenstr., möglicherweise Asphalt?	? -6084,1715 -6119,1684 -6159,1672 -6202,1684 -6214,1709 -6249,1832
 (Heuweg): Qualität (wahrscheinlich Waldweg)	? -6021,2068 -6357,2274 -6587,2295
 Mauerweg in Kladow	? -9395,5025 -9367,5246 -9390,5298 -9440,5329 -9587,5351 -9675,5370 -9766,5437
+Schwarzer Weg: Qualität?	? -18385,4346 -18620,4569
