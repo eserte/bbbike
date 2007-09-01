@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.32 2007/05/24 22:39:41 eserte Exp eserte $
+# $Id: DirectGarmin.pm,v 1.35 2007/09/01 10:44:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -38,6 +38,11 @@ use vars qw($DEBUG %waypoints);
 $DEBUG = 1 if !defined $DEBUG;
 
 sub transfer_to_file { 0 }
+
+sub has_gps_settings { 1 }
+
+sub ok_label      { M("Upload zum Garmin") }
+sub ok_test_label { M("Upload zum Garmin simulieren") }
 
 sub transfer {
     my($self, %args) = @_;
@@ -176,82 +181,15 @@ sub dump {
     %ret;
 }
 
-use vars qw($old_route_info_name $old_route_info_number $old_route_info_wpt_suffix $old_route_info_wpt_suffix_existing);
-$old_route_info_wpt_suffix_existing=1;
-
 sub tk_interface {
     my($self, %args) = @_;
-#XXX    return 1 if $args{-test}; # comment out if also testing wptsuffix
-    my $top = $args{-top} or die "-top arg is missing";
-    my $gps_route_info = $args{-gpsrouteinfo} or die "-gpsrouteinfo arg is missing";
-    $gps_route_info->{Name} ||= $old_route_info_name if defined $old_route_info_name;
-    $gps_route_info->{Number} ||= $old_route_info_number if defined $old_route_info_number;
-    $gps_route_info->{WptSuffix} ||= $old_route_info_wpt_suffix if defined $old_route_info_wpt_suffix;
-    $gps_route_info->{WptSuffixExisting} ||= $old_route_info_wpt_suffix_existing if defined $old_route_info_wpt_suffix_existing;
-    my $t = $top->Toplevel(-title => "GPS");
-    $t->transient($top) if $main::transient;
-    Tk::grid($t->Label(-text => M"Name der Route"),
-	     my $e = $t->Entry(-textvariable => \$gps_route_info->{Name},
-			       -validate => 'all',
-			       -vcmd => sub { length $_[0] <= 13 }),
-	     -sticky => "w");
-    $e->focus;
-    my $NumEntry = 'Entry';
-    my @NumEntryArgs = ();
-    if (eval { require Tk::NumEntry }) {
-	$NumEntry = "NumEntry";
-	@NumEntryArgs = (-minvalue => 1, -maxvalue => 20);
-    }
-    Tk::grid($t->Label(-text => M"Routennummer"),
-	     $t->$NumEntry(-textvariable => \$gps_route_info->{Number},
-			   @NumEntryArgs,
-			   -validate => 'all',
-			   -vcmd => sub { $_[0] =~ /^\d*$/ }),
-	     -sticky => "w");
-    Tk::grid($t->Label(-text => M"Waypoint-Suffix"),
-	     $t->Entry(-textvariable => \$gps_route_info->{WptSuffix}),
-	     -sticky => "w");
-    Tk::grid($t->Checkbutton(-text => M"Suffix nur bei vorhandenen Waypoints verwenden",
-			     -variable => \$gps_route_info->{WptSuffixExisting}),
-	     -sticky => "w", -columnspan => 2);
-    Tk::grid($t->Button(-text => M"Waypoints-Cache zurücksetzen",
-			-command => sub {
-			    %waypoints = ();
-			}),
-	     -sticky => "w", -columnspan => 2);
-    if (defined &main::optedit) {
-	Tk::grid($t->Button(-text => M"GPS-Einstellungen",
-			    -command => sub {
-				main::optedit(-page => M"GPS");
-			    }),
-		 -sticky => "w", -columnspan => 2);
-    }
-    my $weiter = 0;
-    {
-	my $f = $t->Frame->grid(-columnspan => 2, -sticky => "ew");
-	Tk::grid($f->Button(-text => ($args{-test} ?
-				      M("Upload zum Garmin simulieren") :
-				      M("Upload zum Garmin")),
-			    -command => sub { $weiter = 1 }),
-		 $f->Button(Name => "cancel",
-			    -text => M"Abbruch",
-			    -command => sub { $weiter = -1 }),
-		);
-    }
-    $t->gridColumnconfigure($_, -weight => 1) for (0..1);
-    $t->OnDestroy(sub { $weiter = -1 });
-    $t->waitVariable(\$weiter);
-    $t->afterIdle(sub { if (Tk::Exists($t)) { $t->destroy } });
+    require BBBikeGPS;
+    BBBikeGPS::tk_interface($self, %args);
+}
 
-    if ($weiter == 1) {
-	$old_route_info_name = $gps_route_info->{Name};
-	$old_route_info_number = $gps_route_info->{Number};
-	$old_route_info_wpt_suffix = $gps_route_info->{WptSuffix};
-	$old_route_info_wpt_suffix_existing = $gps_route_info->{WptSuffixExisting};
-    }
-
-    return undef if $weiter == -1;
-    1;
+sub reset_waypoint_cache {
+    my($self) = @_;
+    %waypoints = ();
 }
 
 ### this should load a route or track from the GPS device and
@@ -307,7 +245,7 @@ sub tk_interface {
 #  - punkte für straßennamenswechsel
 #  - evtl. minuspunkte für kleine entfernungen vom vorherigen+nächsten punkt
 #XXX mit GpsmanData und den anderen Modulen mergen!!!
-sub convert_from_route {
+sub simplify_route {
     my($self, $route, %args) = @_;
 
     no locale; # for scalar localtime
@@ -327,12 +265,7 @@ sub convert_from_route {
 	$obj->standard2map(@_);
     };
     my $waypointlength = $args{-waypointlength} || 10;
-    my $waypointsymbol = $args{-waypointsymbol};
-    if (!$waypointsymbol || $waypointsymbol !~ m{^\d+$}) {
-	$waypointsymbol = 8246; # default: summit symbol
-    }
 
-    my $gps_device = $args{-gpsdevice} || "/dev/cuaa0";
     my %crossings;
     if ($str) {
 	%crossings = %{ $str->all_crossings(RetType => 'hash',
@@ -344,39 +277,9 @@ sub convert_from_route {
     my %idents;
     use constant MAX_COMMENT => 45;
 
-    use constant DISPLAY_SYMBOL_BIG => 8196; # zwei kleine Füße (sym_trcbck)
-    use constant DISPLAY_SYMBOL_SMALL => 18; # viereckiger Punkt, also allgemeiner Wegepunkt (waypoint dot)
-    use constant SHOW_SYMBOL => 1;
-    use constant SHOW_SYMBOL_AND_NAME => 4; # XXX ? ja ?
-    use constant SHOW_SYMBOL_AND_COMMENT => 5;
-
-    my $gps;
-    if (!$args{-test}) {
-	$gps = new GPS::Garmin(  'Port'      => $gps_device,
-				 'Baud'      => 9600, # XXX don't hardcode
-				 ($DEBUG >= 2 ? (verbose => 1) : ()),
-			      ) or
-				  die Mfmt("Verbindung zum GPS-Gerät <%s> fehlgeschlagen", $gps_device);
-    } else {
-	$gps = bless {}, 'GPS::Garmin::Dummy';
-	{
-	    package GPS::Garmin::Dummy;
-	    *handler      = sub { bless {}, 'GPS::Garmin::Dummy' };
-	    sub dummy { 0 }
-	    sub AUTOLOAD { goto &dummy }
-	    # more dummy definition
-	    sub GRMN_RTE_LINK_DATA { 1 }
-	    sub GRMN_RTE_WPT_DATA  { 2 }
-	}
-    }
-
-    my @d;
-
-    my $handler = $gps->handler;
-    push @d,
-	[$gps->GRMN_RTE_HDR, $handler->pack_Rte_hdr({nmbr => make_bytes($routenumber),
-						     cmnt => make_bytes($routename)})];
-    $self->{'debugdata'} = []; # create always as additional return value
+    my $simplified_route = { routenumber => $routenumber,
+			     routename   => $routename,
+			   };
 
     my @path;
     my $obj_type;
@@ -540,22 +443,80 @@ sub convert_from_route {
 	$idents{$ident}++;
 	$waypoints{$ident}++;
 
-	if ($n > 0) {
-	    push @d, [$gps->GRMN_RTE_LINK_DATA, $handler->pack_Rte_link_data];
-	}
-	my $wptdata = {lat => $lat, lon => $lon, ident => make_bytes($ident), smbl => $waypointsymbol};
-	push @d, [$gps->GRMN_RTE_WPT_DATA, $handler->pack_Rte_wpt_data($wptdata)];
-	push @{$self->{'debugdata'}}, {%$wptdata, origlon => $xy->[0], origlat => $xy->[1]};
+	my $wpt = {lat => $lat, lon => $lon, ident => $ident,
+		   origlon => $xy->[0], origlat => $xy->[1]};
+	push @{ $simplified_route->{wpt} }, $wpt;
     } continue {
 	$n++;
     }
 
     $self->{'origpath'} = $route->path;
 
-#use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->Dumpxs([\@d],[]); # XXX
+    #use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->Dumpxs([\@d],[]); # XXX
+
+    $simplified_route;
+}
+
+sub convert_from_route {
+    my($self, $route, %args) = @_;
+
+    my $gps_device = $args{-gpsdevice} || "/dev/cuaa0";
+    my $waypointsymbol = $args{-waypointsymbol};
+    if (!$waypointsymbol || $waypointsymbol !~ m{^\d+$}) {
+	$waypointsymbol = 8246; # default: summit symbol
+    }
+
+    # Not yet in use...
+    use constant DISPLAY_SYMBOL_BIG => 8196; # zwei kleine Füße (sym_trcbck)
+    use constant DISPLAY_SYMBOL_SMALL => 18; # viereckiger Punkt, also allgemeiner Wegepunkt (waypoint dot)
+    use constant SHOW_SYMBOL => 1;
+    use constant SHOW_SYMBOL_AND_NAME => 4; # XXX ? ja ?
+    use constant SHOW_SYMBOL_AND_COMMENT => 5;
+
+    my $gps;
+    if (!$args{-test}) {
+	$gps = new GPS::Garmin(  'Port'      => $gps_device,
+				 'Baud'      => 9600, # XXX don't hardcode
+				 ($DEBUG >= 2 ? (verbose => 1) : ()),
+			      ) or
+				  die Mfmt("Verbindung zum GPS-Gerät <%s> fehlgeschlagen", $gps_device);
+    } else {
+	$gps = bless {}, 'GPS::Garmin::Dummy';
+	{
+	    package GPS::Garmin::Dummy;
+	    *handler      = sub { bless {}, 'GPS::Garmin::Dummy' };
+	    *dummy        = sub { 0 };
+	    *AUTOLOAD     = sub { goto &dummy };
+	    # more dummy definition
+	    *GRMN_RTE_LINK_DATA = sub { 1 };
+	    *GRMN_RTE_WPT_DATA = sub { 2 };
+	}
+    }
+
+    my $simplified_route = $self->simplify_route($route, %args);
+
+    $self->{'debugdata'} = []; # create always as additional return value
+
+    my @d;
+
+    my $handler = $gps->handler;
+    push @d,
+	[$gps->GRMN_RTE_HDR, $handler->pack_Rte_hdr({nmbr => make_bytes($simplified_route->{routenumber}),
+						     cmnt => make_bytes($simplified_route->{routename})})];
+    {
+	my $n = -1;
+	for my $wpt (@{ $simplified_route->{wpt} }) {
+	    $n++;
+	    if ($n > 0) {
+		push @d, [$gps->GRMN_RTE_LINK_DATA, $handler->pack_Rte_link_data];
+	    }
+	    my $wptdata = {lat => $wpt->{lat}, lon => $wpt->{lon}, ident => make_bytes($wpt->{ident}), smbl => $waypointsymbol};
+	    push @d, [$gps->GRMN_RTE_WPT_DATA, $handler->pack_Rte_wpt_data($wptdata)];
+	    push @{$self->{'debugdata'}}, $wpt;
+	}
+    }
 
     return [$gps, \@d];
-
 }
 
 # ... and more

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.323 2007/08/02 21:54:31 eserte Exp eserte $
+# $Id: bbbike,v 3.324 2007/09/01 10:48:31 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -210,7 +210,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.323 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.324 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -3361,25 +3361,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 	    $svm->command
 		(-label => $fmt,
 		 -command => sub {
-		     require GPS::DirectGarmin;
-		     require GPS::GpsmanData;
-		     require BBBikeGPS;
-		     my $routetoname = get_route_simplification_mapping(verbose => 1);
-		     my %extra_args;
-		     $extra_args{-routetoname} = $routetoname if $routetoname;
-		     my $dg = GPS::DirectGarmin->new;
-		     $dg->convert_from_route(Route->new_from_realcoords(\@realcoords),
-					     -streetobj   => $multistrassen || $str_obj{'s'},
-					     -netobj      => $net,
-					     # 				    -routename   => $gps_route_info->{Name},
-					     # 				    -routenumber => $gps_route_info->{Number},
-					     # 				    -wptsuffix   => $gps_route_info->{WptSuffix},
-					     # 				    -wptsuffixexisting => $gps_route_info->{WptSuffixExisting},
-					     -waypointlength => $gps_waypointlength,
-					     -waypointsymbol => $gps_waypointsymbol,
-					     %extra_args,
-					    );
-		     require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$dg->{debugdata}],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+		     gps_interface('GPSMAN (Route)', 'BBBikeGPS::GpsmanRoute', -noloading => 1);
 		 });
 	} elsif ($fmt =~ /^esri/i) {
 	    if (-x "$FindBin::RealBin/miscsrc/bbd2esri" &&
@@ -10953,6 +10935,8 @@ sub clever_center {
 }
 
 # Markiert und/oder zentriert auf die Linie
+# Coordinates must be map coords, not BBBike standard coords
+#   (that is, use transpose())
 # Important arguments:
 #   -coords => [[[x,y],[x2,y2]], # first line
 #               [[x3,y3],[x4,y4]], # second line

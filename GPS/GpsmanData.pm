@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.48 2006/08/05 20:08:48 eserte Exp $
+# $Id: GpsmanData.pm,v 1.49 2007/09/01 10:44:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005 Slaven Rezic. All rights reserved.
@@ -44,7 +44,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.48 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.49 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -658,6 +658,14 @@ sub create_cache {
 	$db{$wpt->Ident} = $coord;
     }
     untie %db;
+}
+
+sub push_waypoint {
+    my($self, $wpt) = @_;
+    if (!$self->Track) {
+	$self->Track([]);
+    }
+    push @{ $self->Track }, $wpt;
 }
 
 sub make_hash {

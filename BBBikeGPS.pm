@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.20 2007/04/22 16:25:47 eserte Exp eserte $
+# $Id: BBBikeGPS.pm,v 1.21 2007/09/01 10:43:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -31,7 +31,11 @@ use Msg; # This call has to be in bbbike!
 }
 
 sub BBBikeGPS::gps_interface {
-    my($label, $mod) = @_;
+    my($label, $mod, %args) = @_;
+
+    my $noloading = delete $args{-noloading};
+
+    die "Unhandled args: " . join(" ", %args) if %args;
 
     $mod = 'GPS::' . $mod;
     my %extra_args;
@@ -39,27 +43,35 @@ sub BBBikeGPS::gps_interface {
 	$extra_args{"-test"} = 1;
     }
 
-    my $modobj;
-    eval qq{
-	require $mod;
-    } . q{
-	$modobj = $mod->new;
-    };
+    if (!$noloading) {
+	eval qq{
+	    require $mod;
+        };
+	if ($@) {
+	    my $err = $@;
+	    status_message(Mfmt("Das Modul %s konnte nicht geladen werden. Grund: %s", $mod, $err), "error");
+	    warn $err;
+	    return;
+	}
+    }
+    my $modobj = eval { $mod->new };
     if ($@ || !$modobj) {
 	if (!$@) {
 	    $@ = "\$modobj undefined";
 	}
 	my $err = $@;
-	status_message(Mfmt("Das Modul %s konnte nicht geladen werden. Grund: %s", $mod, $err), "error");
+	status_message(Mfmt("Das Modul %s konnte nicht initialisiert werden. Grund: %s", $mod, $err), "error");
 	warn $err;
 	return;
     }
     my $file;
     my $gps_route_info = {};
     if ($modobj->transfer_to_file()) {
-	$file = $top->getSaveFile(-defaultextension => '.txt');
+	my $default_extension = $modobj->default_extension;
+	$file = $top->getSaveFile(-defaultextension => $default_extension);
 	return unless defined $file;
-    } elsif ($modobj->can("tk_interface")) {
+    }
+    if ($modobj->can("tk_interface")) {
 	return if !$modobj->tk_interface(-top => $top,
 					 -gpsrouteinfo => $gps_route_info,
 					 -test => $extra_args{-test});
@@ -1148,6 +1160,12 @@ sub BBBikeGPS::draw_track_graph {
 
 package BBBikeGPS;
 
+# i18n functions M and Mfmt
+BEGIN {
+    *M = \&main::M;
+    *Mfmt = \&main::Mfmt;
+}
+
 # From Tk::Plot (mine)
 sub make_tics {
     my($tmin, $tmax, $logscale, $base_log) = @_;
@@ -1192,6 +1210,128 @@ sub dbl_raise {
     } else {
 	$val;
     }
+}
+
+# Caches
+use vars qw($old_route_info_name $old_route_info_number $old_route_info_wpt_suffix $old_route_info_wpt_suffix_existing);
+$old_route_info_wpt_suffix_existing=1;
+
+# $self is NOT a BBBikeGPS object here, but GPS::DirectGarmin or so...
+sub tk_interface {
+    my($self, %args) = @_;
+#XXX    return 1 if $args{-test}; # comment out if also testing wptsuffix
+    my $top = $args{-top} or die "-top arg is missing";
+    my $gps_route_info = $args{-gpsrouteinfo} or die "-gpsrouteinfo arg is missing";
+    my $oklabel = $args{-oklabel};
+    $gps_route_info->{Name} ||= $old_route_info_name if defined $old_route_info_name;
+    $gps_route_info->{Number} ||= $old_route_info_number if defined $old_route_info_number;
+    $gps_route_info->{WptSuffix} ||= $old_route_info_wpt_suffix if defined $old_route_info_wpt_suffix;
+    $gps_route_info->{WptSuffixExisting} ||= $old_route_info_wpt_suffix_existing if defined $old_route_info_wpt_suffix_existing;
+    my $t = $top->Toplevel(-title => "GPS");
+    $t->transient($top) if $main::transient;
+    Tk::grid($t->Label(-text => M"Name der Route"),
+	     my $e = $t->Entry(-textvariable => \$gps_route_info->{Name},
+			       -validate => 'all',
+			       -vcmd => sub { length $_[0] <= 13 }),
+	     -sticky => "w");
+    $e->focus;
+    my $NumEntry = 'Entry';
+    my @NumEntryArgs = ();
+    if (eval { require Tk::NumEntry }) {
+	$NumEntry = "NumEntry";
+	@NumEntryArgs = (-minvalue => 1, -maxvalue => 20);
+    }
+    Tk::grid($t->Label(-text => M"Routennummer"),
+	     $t->$NumEntry(-textvariable => \$gps_route_info->{Number},
+			   @NumEntryArgs,
+			   -validate => 'all',
+			   -vcmd => sub { $_[0] =~ /^\d*$/ }),
+	     -sticky => "w");
+    Tk::grid($t->Label(-text => M"Waypoint-Suffix"),
+	     $t->Entry(-textvariable => \$gps_route_info->{WptSuffix}),
+	     -sticky => "w");
+    Tk::grid($t->Checkbutton(-text => M"Suffix nur bei vorhandenen Waypoints verwenden",
+			     -variable => \$gps_route_info->{WptSuffixExisting}),
+	     -sticky => "w", -columnspan => 2);
+    if ($self->can('reset_waypoint_cache')) {
+	Tk::grid($t->Button(-text => M"Waypoints-Cache zurücksetzen",
+			    -command => sub {
+				$self->reset_waypoint_cache;
+			    }),
+		 -sticky => "w", -columnspan => 2);
+    }
+    if ($self->has_gps_settings && defined &main::optedit) {
+	Tk::grid($t->Button(-text => M"GPS-Einstellungen",
+			    -command => sub {
+				main::optedit(-page => M"GPS");
+			    }),
+		 -sticky => "w", -columnspan => 2);
+    }
+    my $weiter = 0;
+    {
+	my $f = $t->Frame->grid(-columnspan => 2, -sticky => "ew");
+	Tk::grid($f->Button(-text => ($args{-test} ?
+				      $self->ok_test_label :
+				      $self->ok_label),
+			    -command => sub { $weiter = 1 }),
+		 $f->Button(Name => "cancel",
+			    -text => M"Abbruch",
+			    -command => sub { $weiter = -1 }),
+		);
+    }
+    $t->gridColumnconfigure($_, -weight => 1) for (0..1);
+    $t->OnDestroy(sub { $weiter = -1 });
+    $t->waitVariable(\$weiter);
+    $t->afterIdle(sub { if (Tk::Exists($t)) { $t->destroy } });
+
+    if ($weiter == 1) {
+	$old_route_info_name = $gps_route_info->{Name};
+	$old_route_info_number = $gps_route_info->{Number};
+	$old_route_info_wpt_suffix = $gps_route_info->{WptSuffix};
+	$old_route_info_wpt_suffix_existing = $gps_route_info->{WptSuffixExisting};
+    }
+
+    return undef if $weiter == -1;
+    1;
+}
+
+{
+    package GPS::BBBikeGPS::GpsmanRoute;
+    require GPS;
+    push @GPS::BBBikeGPS::GpsmanRoute::ISA, 'GPS';
+    
+    sub default_extension { ".rte" }
+
+    sub has_gps_settings { 0 }
+
+    sub ok_label { "Speichern der Route" } # XXX M/Mfmt
+
+    sub tk_interface {
+	my($self, %args) = @_;
+	BBBikeGPS::tk_interface($self, %args);
+    }
+
+    sub convert_from_route {
+	my($self, $route, %args) = @_;
+	require GPS::DirectGarmin;
+	require GPS::GpsmanData;
+	my $dg = GPS::DirectGarmin->new; # only for simplify_route
+	my $simplified_route = $dg->simplify_route($route, %args);
+	my $gd = GPS::GpsmanData->new;
+	$gd->change_position_format("DDD");
+	$gd->Type(GPS::GpsmanData::TYPE_ROUTE());
+	$gd->Name($simplified_route->{routename});
+	for my $wpt (@{ $simplified_route->{wpt} }) {
+	    my $gpsman_wpt = GPS::Gpsman::Waypoint->new;
+	    $gpsman_wpt->Ident($wpt->{ident});
+	    $gpsman_wpt->Latitude($wpt->{lat});
+	    $gpsman_wpt->Longitude($wpt->{lon});
+	    $gpsman_wpt->Symbol(8246); # default: summit symbol
+	    $gd->push_waypoint($gpsman_wpt);
+	}
+	$gd->as_string;
+    }
+
 }
 
 1;

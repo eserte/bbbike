@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.33 2007/07/10 00:20:32 eserte Exp eserte $
+# $Id: SRTShortcuts.pm,v 1.34 2007/09/01 11:17:48 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.33 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.34 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -133,17 +133,6 @@ sub add_button {
 		   $t->Button(Name => "close",
 			      -command => sub { $t->destroy })->pack;
 	       }],
-##XXX del obsoleted by EDIT button
-# 	      [Button => "My edit mode",
-# 	       -command => sub {
-# 		   require BBBikeEdit;
-# 		   require BBBikeLazy;
-# 		   main::plot("str","s", -draw => 0);
-# 		   main::switch_edit_berlin_mode();
-# 		   main::bbbikelazy_reload_all();
-# 		   BBBikeEdit::editmenu($main::top);
-# 		   main::plot('str','fz', -draw => 1);
-# 	       }],
 	      [Button => "Standard download all",
 	       -command => sub { make_gps_target("download") },
 	      ],
@@ -233,6 +222,9 @@ sub add_button {
 	       ],
 	      ],
 	      ($main::devel_host ? [Cascade => "Karte"] : ()),
+	      [Button => "Mark Layer",
+	       -command => sub { mark_layer() },
+	      ],
 	      "-",
 	      [Button => "Delete this menu",
 	       -command => sub {
@@ -407,64 +399,6 @@ sub _lbvs_info_callback {
     $txt->insert("end", $text);
 }
 
-##XXX del obsoleted by great conversion
-# sub edit_in_normal_mode {
-#     require BBBikeEdit;
-#     my $map = "standard";
-#     if (0) {
-# 	BBBikeEdit->draw_pp("strassen", -abk => "s");
-#     } else {
-# 	require BBBikeLazy;
-# 	BBBikeLazy::bbbikelazy_add_data_by_subs
-# 		("p","pp",
-# 		 init      => sub {
-# 		     BBBikeEdit->draw_pp_init_code("strassen", -abk => "s")
-# 		 },
-# 		 draw      => \&BBBikeEdit::draw_pp_draw_code,
-# 		 post_draw => \&BBBikeEdit::draw_pp_post_draw_code,
-# 		);
-#     }
-#     main::set_coord_output_sub($map);
-#     $SRTShortcuts::force_edit_mode = 1;
-#     $main::use_current_coord_prefix = 0;
-#     $main::coord_prefix = undef;
-#     main::set_map_mode(&main::MM_BUTTONPOINT);
-# }
-
-# sub edit_in_normal_mode_landstrassen {
-#     require BBBikeEdit;
-#     my $map = "standard";
-#     if (0) {
-# 	BBBikeEdit->draw_pp(["landstrassen", "landstrassen2"], -abk => "l");
-#     } else {
-# 	require BBBikeLazy;
-# 	BBBikeLazy::bbbikelazy_add_data_by_subs
-# 		("p","pp",
-# 		 init      => sub {
-# 		     BBBikeEdit->draw_pp_init_code(["landstrassen", "landstrassen2"], -abk => "l")
-# 		 },
-# 		 draw      => \&BBBikeEdit::draw_pp_draw_code,
-# 		 post_draw => \&BBBikeEdit::draw_pp_post_draw_code,
-# 		);
-#     }
-#     main::set_coord_output_sub($map);
-#     $SRTShortcuts::force_edit_mode = 1;
-#     $main::use_current_coord_prefix = 0;
-#     $main::coord_prefix = undef;
-#     main::set_map_mode(&main::MM_BUTTONPOINT);
-# }
-
-# sub cancel_edit_in_normal_mode {
-#     require BBBikeEdit;
-#     for my $abk (qw(s l)) {
-# 	BBBikeEdit->draw_pp([], -abk => $abk);
-#     }
-#     main::set_coord_output_sub("standard");
-#     $SRTShortcuts::force_edit_mode = 0;
-#     $main::use_current_coord_prefix = 0;
-#     $main::coord_prefix = undef;
-# }
-
 sub define_subs {
     package main;
     *show_info_ext = sub {
@@ -542,6 +476,33 @@ sub add_coords_data {
     if ($main::coord_system ne 'standard') { $f .= "-orig" }
     add_new_layer("p", $f, NameDraw => $namedraw);
 }
+
+sub mark_layer {
+    main::additional_layer_dialog
+	    (-title => "Layer markieren",
+	     -cb => sub {
+		 my $abk = shift;
+		 my $s = $main::str_obj{$abk};
+		 if (!$s) {
+		     main::status_message("Cannot get street object for <$abk>", "die");
+		 }
+		 my @mc;
+		 $s->init;
+		 while(1) {
+		     my $r = $s->next;
+		     last if !@{ $r->[Strassen::COORDS()] };
+		     push @mc, [ map { [ main::transpose(split /,/) ] } @{ $r->[Strassen::COORDS()] }];
+		 }
+		 if (@mc) {
+		     main::mark_street(-coords => [@mc]);
+		 } else {
+		     main::status_message("No points found in street object", "info");
+		 }
+	     },
+	     -token => 'mark_additional_layer',
+	    );
+}
+
 
 1;
 

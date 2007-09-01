@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.188 2007/08/12 11:58:58 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.189 2007/09/01 10:40:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1881,11 +1881,16 @@ sub stderr_window_command {
 		} else {
 		    my $window = $self->{w};
 		    my $text = $window->Subwidget('text');
-		    $text->insert('end', $_) foreach (@_);
-		    $text->see('end');
-		    $window->deiconify;
-		    $window->raise;
-		    $window->focus;
+		    if ($text) {
+			$text->insert('end', $_) foreach (@_);
+			$text->see('end');
+			$window->deiconify;
+			$window->raise;
+			$window->focus;
+		    } else {
+			# no window yet, use fallback
+			print STDOUT "@_";
+		    }
 		}
 	    };
 

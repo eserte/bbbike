@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeServer.pm,v 1.17 2007/06/10 19:14:04 eserte Exp $
+# $Id: BBBikeServer.pm,v 1.18 2007/09/01 10:41:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001,2007 Slaven Rezic. All rights reserved.
@@ -241,6 +241,8 @@ sub create_socket_server {
 		     # automatically, including gpsman tracks
 		     if ($args{-routefile} =~ m{\.bbr$}) {
 			 warn "Read <$args{-routefile}> ...\n";
+			 $main::center_loaded_route = $main::center_loaded_route if 0; # cease -w
+			 local $main::center_loaded_route = 1;
 			 main::load_save_route(0, $args{-routefile});
 		     } else {
 			 warn "Read <$args{-routefile}> as bbd ...\n";

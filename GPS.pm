@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GPS.pm,v 1.12 2006/08/29 22:37:53 eserte Exp $
+# $Id: GPS.pm,v 1.13 2007/09/01 10:41:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
@@ -35,6 +35,8 @@ sub preload {
 }
 
 sub transfer_to_file { 1 }
+
+sub default_extension { ".txt" }
 
 sub transfer {
     my($self, %args) = @_;
