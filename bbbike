@@ -14865,6 +14865,12 @@ sub _convert_transposed_to_overview_coord {
     $transpose->(anti_transpose($tx, $ty));
 }
 
+sub _convert_overview_to_transposed_coord {
+    my($x,$y) = @_;
+    my $anti_transpose = $show_overview_mode eq 'brb' ? \&anti_transpose_small : \&anti_transpose_medium;
+    $anti_transpose->(transpose($x, $y));
+}
+
 sub show_overview_populate {
     my $overview_top = shift;
     my $withdraw_sub = sub { $overview_top->withdraw;

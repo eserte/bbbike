@@ -205,6 +205,10 @@ Examples:
     #: alias_wide: Oranienburg - Bernau (B273)
     Bernauer Str. (B273)	B ...,...
 
+=item C<name: I<lang>: I<name>>
+
+The name in another language, specified by I<lang> in ISO 639 codes.
+
 =item C<oldname: I<when>: I<name>>
 
 An old name for the next line. I<when> is a time specification (best:

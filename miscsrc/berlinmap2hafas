@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: berlinmap2hafas,v 1.60 2007/07/16 19:27:29 eserte Exp $
+# $Id: berlinmap2hafas,v 1.61 2007/09/01 14:20:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2004,2005 Slaven Rezic. All rights reserved.
@@ -294,8 +294,10 @@ LINES: while(defined($_ = nextline())) {
 	if (/^#:\s*encoding:\s*utf-8/) {
 	    $is_utf8 = 1;
 	    binmode(F, ":utf8");
+	    print W "#: encoding: iso-8859-1\n";
 	    next;
-	} elsif (/#:#\s*-\*- coding: utf-8 -\*-/) {
+	} elsif (/#:\s*#\s*-\*- coding: utf-8 -\*-/) {
+	    print W "#:# -*- coding: iso-8859-1 -*-\n";
 	    next;
 	}
     }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiMap.pm,v 1.14 2007/08/24 22:50:52 eserte Exp $
+# $Id: MultiMap.pm,v 1.15 2007/09/01 13:27:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006,2007 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%images);
 
@@ -71,7 +71,7 @@ sub register {
 	  ($images{BvgStadtplan} ? (icon => $images{BvgStadtplan}) : ()),
 	};
     $main::info_plugins{__PACKAGE__ . "_LiveCom"} =
-	{ name => "local.live.com",
+	{ name => "maps.live.com",
 	  callback => sub { showmap_livecom(@_) },
 	  callback_3_std => sub { showmap_url_livecom(@_) },
 	  ($images{LiveCom} ? (icon => $images{LiveCom}) : ()),
@@ -446,7 +446,7 @@ sub showmap_bvgstadtplan {
 }
 
 ######################################################################
-# local.live.com
+# maps.live.com
 # Seems to not work on seamonkey, but linux-firefox is OK
 
 sub showmap_url_livecom {
@@ -458,7 +458,7 @@ sub showmap_url_livecom {
     if ($scale > 13) {
 	$scale = 13; # schlechte Auflösung in Berlin und Umgebung
     }
-    sprintf "http://local.live.com/default.aspx?v=2&cp=%f~%f&style=h&lvl=%d&tilt=-90&dir=0&alt=-1000&encType=1",
+    sprintf "http://maps.live.com/default.aspx?v=2&cp=%f~%f&style=h&lvl=%d&tilt=-90&dir=0&alt=-1000&encType=1",
 	$py, $px, $scale;
 }
 

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.155 2007/08/26 21:23:39 eserte Exp $
+# $Id: Makefile,v 2.156 2007/09/01 14:21:18 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -238,8 +238,9 @@ wasserumland: wasserumland-orig
 
 wasserumland2: wasserumland2-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) wasserumland2-orig | $(SORTBYCAT) -ignore F:I > $@ \
-	    || (rm -f $@; false)
+	$(CONVERT2HAFAS) -unutf8ify wasserumland2-orig | $(SORTBYCAT) -ignore F:I > $@~
+	[ -s $@~ ]
+	mv $@~ $@
 	-@$(READONLY) $@
 
 # The output is not the prettiest, but we save some 100k
