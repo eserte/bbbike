@@ -1,7 +1,7 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title.de: Abbiegevorschriften usw.
 #: title.en: Path instructions etc.
-#: version: $Id: comments_path-orig,v 4.87 2007/08/25 21:08:30 eserte Exp $
+#: version: $Id: comments_path-orig,v 4.87 2007/08/25 21:08:30 eserte Exp eserte $
 #:
 # Verwendete Kategorien:
 # CP;  : Kommentar an Punkt B bei Fahrt von A nach C; Bei entweder A oder C kann statt einer Koordinate 
@@ -297,3 +297,5 @@ ganz am Ende der Stichstraße links	CP; -2050,39003 -2000,39121 -2014,39128
 Alexanderstr. - Jacobystr.: bereits an der Ampel Alexanderstr./Grunerstr. auf die linke Straßenseite wechseln	PI; 11134,12793 11207,12706 11260,12809
 Jacobystr. - Alexanderstr.: zunächst auf der linken Seite weiterfahren	CP; 11260,12809 11207,12706 11323,12484
 Skalitzer Str. - Adalbertstr.: entweder schon am Kottbusser Tor auf die gegenüberliegende Straßenseite wechseln oder die Fußgängerampel am U-Bahnhof zum Überqueren benutzen	PI; 11370,10398 11336,10390 11314,10320
+Mahlsdorfer Str. - Straße im Walde: wegen der Straßenbahntrasse bereits an der Kreuzung Genovevastr./Unter den Birken die Straßenseite wechseln	PI; 23066,7355 23145,7429 22900,7611
+Mahlsdorfer Str. - Straße im Walde: die Straßenbahntrasse ca. 40 Meter vor der Einmündung Straße im Walde überqueren	PI; 23223,7493 23145,7429 22900,7611

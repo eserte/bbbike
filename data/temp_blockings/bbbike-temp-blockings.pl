@@ -3008,7 +3008,7 @@ EOF
        text  => 'Mahlsdorfer Str. (Köpenick) Richtung Köpenick, zwischen Hultischiner Damm und Genovevastr. Baustelle, Fahrtrichtung gesperrt (bis 15.10.)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 23799,7877 23774,7803 23701,7772 23190,7484 23066,7355
+userdel	q4; 23799,7877 23774,7803 23701,7772 23223,7493 23145,7429 23066,7355
 EOF
      },
      { from  => 1129327200, # 2005-10-15 00:00
@@ -9700,6 +9700,15 @@ EOF
        source_id => 'IM_006462',
        data  => <<EOF,
 userdel	2::temp 13915,20944 13570,20938 13594,20855
+EOF
+     },
+     { from  => undef, # 
+       until => 1188741600, # 2007-09-02 16:00
+       text  => 'Kurfürstendamm (Charlottenburg) in beiden Richtungen zwischen Knesebeckstr. und Breitscheidplatz Veranstaltung, Straße vollständig gesperrt (bis ca. 16 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_006499',
+       data  => <<EOF,
+userdel	2::temp 5797,10881 5725,10892 5657,10868 5484,10810 5351,10760 5229,10716 5076,10658 4847,10589
 EOF
      },
     );

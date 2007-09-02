@@ -1390,16 +1390,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_006190',
-         'until' => 1188683999,
-         'text' => 'Joachimstaler Str. (Charlottenburg) Richtung Kantstr. zwischen Lietzenburger Str. und Kurfürstendamm Baustelle Fahrtrichtung gesperrt (bis Anfang 09.2007)',
-         'from' => 1188428040,
-         'id' => 1094,
-         'data' => 'userdel	1::inwork 5468,10442 5479,10719 5484,10810
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1650,6 +1641,16 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'from' => 1188588635,
          'id' => 1150,
          'data' => 'userdel	2::temp 13915,20944 13570,20938 13594,20855
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006499',
+         'until' => 1188741600,
+         'text' => 'Kurfürstendamm (Charlottenburg) in beiden Richtungen zwischen Knesebeckstr. und Breitscheidplatz Veranstaltung, Straße vollständig gesperrt (bis ca. 16 Uhr)',
+         'from' => undef,
+         'id' => 1151,
+         'data' => 'userdel	2::temp 5797,10881 5725,10892 5657,10868 5484,10810 5351,10760 5229,10716 5076,10658 4847,10589
 ',
          'type' => 'gesperrt'
        }
