@@ -873,7 +873,7 @@ EOF
        text  => 'K 6413; (Wriezener Straße); OL Buckow, zw. Weinbergsweg u. Ringstr. Kanal- u. Straßenbau Vollsperrung 17.01.2005-27.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 55664,19342 55558,19957
+userdel	q4 55621,19338 55511,19881
 EOF
      },
      { from  => 1096322400, # 2004-09-28 00:00
@@ -4968,7 +4968,7 @@ EOF
        text  => 'L 362 Bergmannstr. OD Müncheberg, zw. Seelower Str. u. Marienfeld Instandsetzung Durchlass Vollsperrung 10.07.2006-19.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 61069,13387 61181,12075
+userdel	q4::inwork 61026,13354 61181,12075
 EOF
      },
      { from  => 1168462016, # 2007-01-10 21:46
@@ -4985,7 +4985,7 @@ EOF
        text  => 'K 6413 Berliner Str. OL Buckow, zw. Hauptstr. und OA grundhafter Straßenbau Vollsperrung 17.07.2006-31.12.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 55988,18385 55623,17923 55217,17672
+userdel	q4::inwork 55877,18248 55700,18101 55623,17923 55524,17754 55164,17565
 EOF
      },
      { from  => 1152568800, # 2006-07-11 00:00
@@ -4993,7 +4993,7 @@ EOF
        text  => 'K 6413 Berliner Str. OL Buckow, zw. Nr. 60 und Waldweg grundhafter Straßenbau Vollsperrung; Umleitung 12.07.2006-14.07.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 55988,18385 55623,17923 55217,17672
+userdel	q4::inwork 55877,18248 55700,18101 55623,17923 55524,17754 55164,17565
 EOF
      },
      { from  => 1152568800, # 2006-07-11 00:00
@@ -5176,7 +5176,7 @@ EOF
        text  => 'L 362 Müncheberg-Wulkow OD Obersdorf Kanal- u. Straßenbau Vollsperrung 19.07.2006-30.07.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 62444,15991 62380,16226 62104,16631
+userdel	q4::inwork 62416,15883 62294,16249 62099,16389
 EOF
      },
      { from  => 1156370400, # 2006-08-24 00:00
@@ -5424,7 +5424,7 @@ EOF
        text  => 'K 6411 Neulewin- L 33 Wriezen OL Neulewin, zw. KAP-Straße und Dorfstr. Straßenbau Vollsperrung 15.08.2006-30.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 69208,37364 69249,37090
+userdel	q4::inwork 69095,37169 69283,37114
 EOF
      },
      { from  => 1155420000, # 2006-08-13 00:00
@@ -5889,7 +5889,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003679',
        data  => <<EOF,
-userdel	1::inwork 19532,17911 19152,17405 18738,16957
+userdel	1::inwork 19524,17896 19152,17405 18738,16957
 EOF
      },
      { from  => 1159207506, # 2006-09-25 20:05
@@ -5981,7 +5981,7 @@ EOF
        text  => 'L 362 Müncheberg-Wulkow OD Obersdorf Kanal- u. Str.bau,Deckeneibau Vollsperrung 02.10.2006-07.10.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 62104,16631 62380,16226
+userdel	q4::inwork 62099,16389 62294,16249
 EOF
      },
      { from  => 1161295200, # 2006-10-20 00:00
@@ -5998,7 +5998,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003701',
        data  => <<EOF,
-userdel	2::temp 7587,17532 7487,17836 7466,17904 7350,18262 7232,18572
+userdel	2::temp 7587,17532 7500,17796 7487,17836 7466,17904 7350,18262 7232,18572
 EOF
      },
      { from  => undef, # 
@@ -6489,7 +6489,7 @@ EOF
        text  => 'K 6411 Neulewin-Wriezen zw. OL Neulewin und Kerstenbruch Straßenbauarbeiten Vollsperrung 01.11.2006-30.04.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 68761,38095 69208,37364 69249,37090
+userdel	2::inwork 68583,37906 68973,37547 69095,37169 69283,37114
 EOF
      },
      { from  => 1162508400, # 2006-11-03 00:00
@@ -8955,8 +8955,8 @@ userdel	2::inwork 37245,47419 37153,47300
 EOF
      },
      { from  => 1183495734, # 2007-07-03 22:48
-       until => 1230764399, # 2008-12-31 23:59
-       text  => 'Straßen- und Leitungsbauarbeiten in der Pistoriusstraße zwischen Hamburger Platz (Gustav-Adolf-Straße) und Am Steinberg, Einbahnstraße Richtung Hamburger Platz (09.07.2007 bis Ende 2008) ', # VMZ meint: NEW	Pistoriusstr. (Weißensee) RIchtung Berliner Str. zwischen Gustav-Adolf-Str. und Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis Anfang 09.2007) (08:30) 	IM_006024
+       until => Time::Local::timelocal(reverse(2008-1900,1-1,1,0,0,0)),
+       text  => 'Straßen- und Leitungsbauarbeiten in der Pistoriusstraße zwischen Hamburger Platz (Gustav-Adolf-Straße) und Am Steinberg, Einbahnstraße Richtung Hamburger Platz (09.07.2007 bis Anfang 2008) ', # VMZ meint: NEW	Pistoriusstr. (Weißensee) RIchtung Berliner Str. zwischen Gustav-Adolf-Str. und Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis Anfang 2008) (08:30) 	IM_006024
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20070703.1505.81257.html',
        data  => <<EOF,

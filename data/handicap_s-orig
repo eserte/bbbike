@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.155 2007/08/26 21:24:47 eserte Exp eserte $
+#: version: $Id: handicap_s-orig,v 4.156 2007/09/03 21:21:26 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # XXX hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -351,7 +351,7 @@ Wuhlewanderweg: Fußgänger	q1 22238,6195 22225,6244 22214,6271 22150,6324 22099,6
 Wuhlewanderweg: Fußgänger	q1 21386,9052 21462,9216 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
 Wuhlewanderweg: Fußgänger	q1 21611,9893 21619,9993 21566,10222 21581,10329 21646,10510 21791,10623 21867,10733 21950,10776 22060,10778 22097,10812 22160,10834
 Heinrich-Dathe-Platz: Fußgänger	q2 18512,10337 18484,10411 18394,10348
-Dathepromenade: Fußgänger	q1 18394,10348 18287,10283 18048,10169
+Dathepromenade: Fußgänger	q1 18394,10348 18302,10289 18048,10169
 (Dathepromenade - Sewanstr.): Bordsteine	q3 17953,10123 17905,10122
 #: note: die "parkenden Autos" von Uwe Schellenberg in der Rheinsteinstr. habe ich wieder entfernt
 Rheingoldpark: Fußgänger haben Vorrang	q1 19078,8817 19145,8659
@@ -1020,3 +1020,7 @@ Grässeweg: enge Straße	q1 -5510,13326 -5295,13415 -5217,13446
 Schieritzstr.: enge Straße	q1 12463,15774 12642,15668 12821,15565 12966,15478
 #: by: Max Janke 
 Siedlungsring (Karow): schlecht überaschaubar	q1 16139,24162 16245,24159 16357,24093 16473,24045 16900,23884 16887,23860 16717,23845 16664,23845 16600,23881 16542,23954 16512,23979 16462,24012
+#: by: karsten (kasi):
+Würzburger Str.: enge Straße	q1 11681,-1951 11886,-1930 11919,-1927 12082,-1908 12167,-1898 12216,-1891
+#: by: guenther (m...berlin):
+Hauptweg (Biesdorf): enger Weg	q2 20821,8438 20834,8694 20799,8965 20802,9297

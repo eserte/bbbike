@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.43 2007/08/28 20:06:52 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.44 2007/09/03 20:37:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003-2007 Slaven Rezic. All rights reserved.
@@ -354,6 +354,7 @@ EOF
     # This hack is needed for Mozilla Mail
     require Encode;
     Encode::from_to($body, "iso-8859-1", "utf-8");
+    Encode::from_to($subject, "iso-8859-1", "utf-8");
     my $q = CGI->new({subject => $subject,
 		      ($cc ? (cc => $cc) : ()),
 		      body => $body,

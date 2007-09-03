@@ -68,11 +68,11 @@ Bad Freienwalde	4 52806,42862
 Wriezen	3 59454,35356
 Werneuchen	3 32444,25291
 Bernau|b. Berlin	4 22541,30476
-Buckow|(Märkische Schweiz)	3 55920,18769
+Buckow|(Märkische Schweiz)	3 55786,18881
 Seelow	3 76771,15413
 #: XXX Großgemeinde ohne Ortskern?
-Vierlinden	1 73367,12818
-Diedersdorf (Vierlinden)	1 73367,12818
+Vierlinden	1 73372,12848
+Diedersdorf (Vierlinden)	1 73372,12848
 Müncheberg	3 60197,12001
 #: alias: Fürstenwalde/Spree
 Fürstenwalde	4 55562,-4726
@@ -319,7 +319,7 @@ Ruhlsdorf|(Hohenstein)	0 50418,19010
 Hasenholz	0 52283,18278
 Ernsthof	0 52089,22277
 Pritzhagen	0 57701,21291
-Münchehofe|(Märkische Schweiz)	0 60358,17819
+Münchehofe|(Märkische Schweiz)	0 60313,17760
 Reichenberg|(Märkische Schweiz)	1 58340,23653
 Ihlow	1 55385,24878
 Reichenow	2 55981,27193
@@ -334,10 +334,10 @@ Quappendorf	1 68509,24736
 Wuschewier	1 68842,28923
 Sietzing	1 69921,29312
 Neuhardenberg	2 66861,22159
-Platkow	2 72454,20776
-Wulkow	1 66555,19582
+Platkow	2 72513,20819
+Wulkow	1 66523,19497
 Hermersdorf	1 63286,18968
-Obersdorf	1 62444,15991
+Obersdorf	1 62416,15883
 #: XXX: Schreibweise (laut opengeodb) Alt Rosenthal, andere Quellen nennen Altrosenthal. Siehe auch: http://www.vierlinden.org/gemeinde/altrosenthal.htm
 #: alias: Altrosenthal
 Alt Rosenthal	0 69731,16901
@@ -368,7 +368,7 @@ Hathenow	1 87550,12426
 Reitwein	1 90344,12005
 Golzow|(Oderbruch)	2 84241,20046
 Gorgast	2 87920,19351
-Trebnitz	2 65668,15404
+Trebnitz	2 65572,15310
 Jahnsfelde	1 66373,12410
 Worin	2 69286,13953
 Marxdorf	1 69873,10052
@@ -397,7 +397,7 @@ Sieversdorf	1 76665,-1850
 Pillgram	1 78196,-7189
 Biegen	1 76206,-9473
 Werder|b. Rehfelde	1 47216,13439
-Zinndorf	1 45747,11268
+Zinndorf	1 45725,11270
 Rehfelde	2 45754,14207
 Dorf Rehfelde	0 43972,12473
 Prötzel	2 50022,26518
@@ -436,7 +436,7 @@ Bruchmühle	2 35807,16563
 Hennickendorf|b. Strausberg	2 40467,11827
 Tasdorf	0 36599,10112
 Herzfelde	2 40737,9012
-Fangschleuse	0 37819,1516
+Fangschleuse	0 37870,1620
 Grünheide	2 39044,2686
 Alt Buchhorst	0 40200,3515
 Alt-Rüdersdorf	0 38253,7268
@@ -448,7 +448,7 @@ Heidekrug	0 48434,8950
 Lichtenow Dorf	1 43750,9742
 Hoppegarten	1 52167,9914
 Birkenstein	1 27276,12986
-Liebenhof	0 51701,16963
+Liebenhof	0 51715,16919
 Wilkendorf	0 44382,23318
 Melchow	1 30409,41559
 Schönholz	0 33918,41987
@@ -818,7 +818,7 @@ Hartmannsdorf	1 39787,-5750
 Spreeau	1 40256,-3818
 Steinfurth	0 36120,-2902
 Freienbrink	0 37567,-2894
-Möllensee	0 42946,5792
+Möllensee	0 42952,5834
 Mönchwinkel	1 43395,-1376
 Spreewerder	0 41857,-3090
 Kirchhofen	0 42857,-4318

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 2.1 2007/08/28 20:57:58 eserte Exp eserte $
+# $Id: bbbikegooglemap.cgi,v 2.2 2007/09/03 21:27:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006,2007 Slaven Rezic. All rights reserved.
