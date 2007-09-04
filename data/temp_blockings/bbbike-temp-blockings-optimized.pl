@@ -562,15 +562,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        undef,
-       {
-         'until' => 1188856800,
-         'text' => 'L 074 Am Markt OD Teupitz 700-Jahr-Feier Vollsperrung 31.08.2007-03.09.2007 ',
-         'from' => 1188424800,
-         'id' => 1023,
-         'data' => 'userdel	q4::inwork 25190,-30385 25240,-29746 25412,-29762 25541,-29875
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1192485600,
@@ -765,15 +757,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        undef,
-       {
-         'until' => 1188856800,
-         'text' => 'B 102 Brücken über den Mühlenrhin u. Büttgraben nördl.Rhinow Brückenbauarbeiten Vollsperrung 13.08.2007-03.09.2007 ',
-         'from' => 1186869600,
-         'id' => 1100,
-         'data' => 'userdel	2::inwork -62502,27066 -62531,27427
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

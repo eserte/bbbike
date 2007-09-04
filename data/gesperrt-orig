@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.174 2007/09/03 21:21:02 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.174 2007/09/03 21:21:02 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -445,6 +445,8 @@ Plonzstr.	1 16227,12280 16252,12411
 Techowpromenade	1 5219,20467 5185,20358 5173,20275 5170,20182
 (Kastanienallee - Schönhauser Allee)	1 10895,14951 10838,14962
 Lossebergplatz	1 16070,23566 16094,23554 16095,23539 16079,23535 16064,23547 16070,23566
+#: XXX Annahme, da Radweg am Dammfuß verläuft
+Spindlersfelder Str.	2 21316,3662 21127,4180 21121,4234 21080,4702 21075,4769 21065,4957
 ######################################################################
 #
 # Potsdam

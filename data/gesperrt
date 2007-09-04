@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.174 2007/09/03 21:21:02 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.174 2007/09/03 21:21:02 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -379,6 +379,7 @@ Plonzstr.	1 16227,12280 16252,12411
 Techowpromenade	1 5219,20467 5185,20358 5173,20275 5170,20182
 (Kastanienallee - Schönhauser Allee)	1 10895,14951 10838,14962
 Lossebergplatz	1 16070,23566 16094,23554 16095,23539 16079,23535 16064,23547 16070,23566
+Spindlersfelder Str.	2 21316,3662 21127,4180 21121,4234 21080,4702 21075,4769 21065,4957
 Gregor-Mendel-Str.	1 -13693,-528 -13784,-537 -13948,-564 -14034,-571
 Schillerstr.	1 -14236,-2125 -14252,-1978
 Henning-von-Tresckow-Str.	1 -13180,-1627 -12946,-1659
@@ -1345,7 +1346,7 @@ Krebsgang -> Sonnenallee: Sonnenallee	3 14792,7192 14693,7168 14803,7056
 Sonnenallee -> Krebsgang: Sonnenallee	3 14617,7243 14693,7168 14792,7192
 Treskowallee -> Rheinpfalzallee: Straßenbahn	3 18816,9705 18857,9606 18931,9629
 Rheinpfalzallee -> Treskowallee: Straßenbahn	3 18931,9629 18857,9606 18872,9568
-Römerweg -> Treskowallee: Straßenbahn	3 19450,9728 18816,9705 18857,9606
+Römerweg -> Treskowallee: Straßenbahn	3 19236,9710 18816,9705 18857,9606
 Niehofer Str.	1 16942,16174 16815,16214 16692,16253
 Drängelgitter	BNP:10:-99 17371,16194
 Orlamünder Weg	1 7035,1814 7119,1829 7174,1718 7195,1703 7214,1710 7242,1754 7258,1757 7332,1718

@@ -1,6 +1,17 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Hausnummern
 #:
+# ALT: alternierend, typischerweise eine Seite gerade und die andere
+#      ungerade Nummern
+# CONT: aufsteigend
+# SINGLE: nur eine Straßenseite???
+#
+# <a>/<b> <c>/<d>:
+#   <a> und <c> befinden sich rechts in Richtung der Strecke aus gesehen
+#   <b> und <d> befinden sich links in Richtung der Strecke aus gesehen
+#   <a> und <b> sind die Nummern am Anfang der Strecke
+#   <c> und <d> sind die Nummern am Ende der Strecke
+#
 # Dudenstr.
 ALT 2/9 100/91	HNR 9222,8787 8209,8769
 # Adlergestell; first on right seems to be 250

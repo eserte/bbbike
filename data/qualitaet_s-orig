@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.213 2007/09/03 21:20:49 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.213 2007/09/03 21:20:49 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -659,7 +659,7 @@ Schönerlinder Weg: holpriger Weg	Q2 15130,24012 14923,24264 14869,24391
 zum Schönerlinder Weg: Waldweg, OK	Q1 14869,24391 14462,24862
 zum Schönerlinder Weg: Feldweg	Q2 14462,24862 14389,24879 14231,24922 14029,24753
 Hofzeichendamm: Verbundsteine	Q0 16546,22940 16323,23104
-Krontaler Str.: Kopfsteinpflaster	Q2 13890,22889 13984,22826 14125,22732
+Krontaler Str.: Kopfsteinpflaster	Q2 13884,22879 13976,22813 14122,22708
 Grüntaler Str.: Kopfsteinpflaster	Q2 9757,16912 9604,16760 9455,16609
 Zur Hagelberger Str.: Kopfsteinpflaster	Q2 8773,9524 8648,9526
 Saubuchtweg: guter Waldweg	Q1 -3073,9061 -2983,8841 -2965,8705 -2962,8493 -2981,8350 -2975,8172 -2890,7994 -2859,7946 -2804,7915 -2677,7696 -2675,7622 -2639,7452 -2563,7353 -2546,7240 -2524,7141 -2547,7055 -2549,6948 -2634,6907 -2668,6862
@@ -1207,7 +1207,7 @@ Im Bereich des Fähranlegers: Kopfsteinpflaster	Q2 -8468,2152 -8540,2209 -8591,21
 (zur Pfaueninselfähre): Kopfsteinpflaster	Q2 -8540,2209 -8561,2236 -8564,2276
 Pfaueninsel - Moorlake: Asphalt	Q0 -8591,2144 -8636,2102 -8747,2023 -8861,1855 -8934,1801 -9016,1782 -9108,1798 -9393,1831 -9444,1820 -9511,1739 -9584,1703 -9632,1672 -9663,1622 -9673,1519 -9647,1462 -9606,1389
 Krughorn - Moorlake: Asphalt	Q0 -10078,1551 -10044,1567 -9975,1564 -9900,1573 -9818,1530 -9770,1482 -9746,1408 -9734,1394 -9606,1389
-Krughorn - Volkspark Glienicke: Asphalt	Q0 -10078,1551 -10163,1288 -10209,1161 -10273,1088 -10430,848 -10512,683 -10573,564 -10587,471
+Krughorn - Volkspark Glienicke: Asphalt	Q0 -10078,1551 -10163,1288 -10190,1185 -10198,1173 -10273,1088 -10430,848 -10512,683 -10573,564 -10587,471
 Uferpromenade: fester Waldweg	Q2+ -8400,2156 -8328,2181 -8262,2178 -8141,2211 -8085,2252 -7833,2277 -7562,2431 -7420,2563 -7318,2567 -7225,2627 -7190,2670 -7161,2692 -7129,2786 -6975,3012 -6912,3080 -6792,3196 -6766,3209 -6667,3312 -6510,3404 -6439,3418 -6375,3400 -6260,3398 -6215,3384 -5919,3092 -5820,3035 -5745,2990 -5712,2946 -5653,2807 -5722,2714
 Rosmarienstr.: gutes Kopfsteinpflaster	Q1 9359,12252 9487,12263
 Weimarische Str.: Kopfsteinpflaster	Q2 5064,8340 5066,8140 5066,7998 5068,7965
@@ -1819,6 +1819,10 @@ Mauerweg Lichterfelde: Asphalt	Q0 4066,-304 4034,-255 3982,-181 3918,-92
 Alexanderufer: Asphalt	Q0 8257,13049 8312,13296
 Alexanderufer: Asphalt	Q0 8312,13296 8369,13425 8337,13541
 Koppenstr.: Asphalt mit Schäden	Q1+ 12525,12151 12575,12223
+#: note: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/de/bild_tvo_april_2007_2.shtml
+(Weg unterhalb der Spindlersfelder Str.): Verbundsteinpflaster	Q0- 21089,4731 21137,4221 21139,4183 21316,3662
+#: note: http://www.reinickendorf.de/index_7745_de.html
+Montanstr.: Asphalt	Q0 6792,19733 6680,19098
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -1981,7 +1985,6 @@ Lotosweg: Kopfsteinpflaster	Q2 4728,23100 4613,23060
 Jugendweg: Kopfsteinpflaster	Q2 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
 Schauensteiner Weg: mäßiges Verbundsteinpflaster	Q1- -9294,4689 -9215,4640 -9058,4544 -8974,4482 -8932,4419
 Arkonastr.: schlechtes Kopfsteinpflaster	Q3 11021,17889 11049,17752 11057,17690
-Montanstr.: guter Beton	Q0 6792,19733 6680,19098
 Gehringstr.: guter Asphalt	Q0 14900,17423 14673,17454 14434,17500 14168,17522 14044,17519
 Bergener Str.: gutes Kopfsteinpflaster	Q1 10370,16516 10382,16661
 Lacknerstr.: guter Beton	Q0 6311,4319 6416,4452
@@ -3355,7 +3358,7 @@ Am Breiten Luch: Asphalt	Q0 17531,17802 17650,17605 17729,17448 17907,17161
 Blumenweg: schlechtes Kopfsteinpflaster	Q3 8418,4432 8169,4342
 #: by: ^^^
 #: by: Stefan Fruhner vvv
-Streckfußstr.: Asphalt	Q0 13903,22720 13984,22826 14050,22912 14148,23040 14351,23200 14442,23339 14651,23653
+Streckfußstr.: Asphalt	Q0 13903,22720 13976,22813 14050,22912 14148,23040 14351,23200 14442,23339 14651,23653
 #: confirmed_by: srt (vom Zug aus gesehen)
 Liebenstr.: schlechtes Kopfsteinpflaster	Q3 14597,23280 14526,23155
 Liebenstr.: Bitumen	Q0 14526,23155 14338,22885 14251,22755 14201,22631
@@ -3366,14 +3369,14 @@ Florastr. (Karow): Kopfsteinpflaster	Q2 14931,22868 14795,22964 14526,23155
 Schräger Weg: Asphalt	Q0 14338,22885 14721,22821 14917,22823 15273,22819
 Neustädter Str.: Beton	Q1 14338,22885 14276,22914 14148,23040 14057,23120
 #: note: auch laut ADFC-Karte nicht geeignet:
-Flaischlenstr.: asphaltiert	Q0 13514,22642 13468,22518
-Flaischlenstr.: schlechtes Kopfsteinpflaster, Ausweichen auf den Fußweg (Rasenflächen mit Trampelpfad) möglich	Q3 13468,22518 13426,22398 13395,22365 13354,22327 13267,22090 13249,22003
+Flaischlenstr.: asphaltiert	Q0 13497,22623 13458,22519
+Flaischlenstr.: schlechtes Kopfsteinpflaster, Ausweichen auf den Fußweg (Rasenflächen mit Trampelpfad) möglich	Q3 13458,22519 13395,22365 13354,22327 13267,22090 13249,22003
 Frankenstr.: schlechtes Kopfsteinpflaster	Q3 13267,22090 13534,22225 13565,22271 13646,22387 13707,22468
 #: confirmed_by: srt (von der Bahnstrecke aus gesehen)
 Rudelsburgstr.: Asphalt	Q0 12814,20648 12835,20670 12865,20684 13175,21121 13385,21445 13601,21826 13762,22064 13845,22231
-Frankensteinstr.: schlechtes Kopfsteinpflaster	Q3 13845,22231 13646,22387 13468,22518
+Frankensteinstr.: schlechtes Kopfsteinpflaster	Q3 13845,22231 13646,22387 13458,22519
 #: XXX: "glaube ich":
-Wolkensteinstr.: fester Sandweg	Q2 13707,22468 13514,22642
+Wolkensteinstr.: fester Sandweg	Q2 13707,22468 13497,22623
 #: by: ^^^
 #: by: bettina (ufo):
 Amboßweg: Asphalt	Q0 6034,20551 5760,20837 5673,20941 5609,20968 5598,21032
@@ -6612,6 +6615,7 @@ Steinbockstr.: Kopfsteinpflaster	Q1 14840,7307 14861,7316 14868,7297 14848,7288
 #: by: Christian Schweda [AM] vvv
 Johannes-Zoschke-Str.: Asphalt	Q2 19020,9364 19030,9530 19037,9636
 Rheinpfalzallee: Sandweg	Q2 18857,9606 18931,9629 18987,9534 19030,9530
+#: add_fragezeichen: bis 2007-10-15 wird der Asphaltbelag erneuert:
 Rheinpfalzallee: geflickter Asphalt	Q1 19030,9530 19128,9523 19221,9517 19424,9502 19510,9497 19651,9489
 #: by: ^^^
 #: by: Sandra Tabbert (Luzifera) [AM]

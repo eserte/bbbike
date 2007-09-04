@@ -4141,7 +4141,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 21182,4336 21174,4250
-userdel	2 21100,4192 21174,4250
+userdel	2 21100,4192 21137,4221 21174,4250
 EOF
      },
      { from  => 1151002800, # 2006-06-22 21:00
@@ -4150,7 +4150,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 21182,4336 21174,4250
-userdel	2 21100,4192 21174,4250
+userdel	2 21100,4192 21137,4221 21174,4250
 EOF
      },
      { from  => 1145209261, # 2006-04-16 19:41
@@ -4857,7 +4857,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_64281_COPY_1',
        data  => <<EOF,
-userdel	2 20692,3951 21100,4192 21174,4250 21182,4336 21332,4655
+userdel	2 20692,3951 21100,4192 21137,4221 21174,4250 21182,4336 21332,4655
 EOF
      },
      { from  => 1151101431, # 2006-06-24 00:23
@@ -6497,7 +6497,7 @@ EOF
        text  => 'Vollsperrung der Oberspreestraße zwischen Freystadter Weg und Ottomar-Geschke-Straße und Spindlersfelder Straße vom Sonnabend, den 04.11.2006, 5:00 Uhr bis Montag, den 06.11.2006, 5:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 20949,4775 21077,4736 21332,4655
+userdel	2::inwork 20949,4775 21332,4655
 EOF
      },
      { from  => 1163800165, # 2006-11-17 22:49
@@ -8978,7 +8978,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006015',
        data  => <<EOF,
-userdel	2::temp 6442,22240 6492,22113 6485,21955 6420,21828 6337,21774 5934,21513
+userdel	2::temp 6442,22240 6492,22113 6485,21955 6420,21828 6337,21774 6093,21648 5934,21513
 EOF
      },
      { from  => 1184018400, # 2007-07-10 00:00
