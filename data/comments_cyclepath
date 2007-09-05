@@ -99,7 +99,7 @@ Zweirichtungsradweg auf der östlichen Seite	RW -17588,2815 -17309,2517 -16706,19
 Bötzseestr.: verkehrsberuhigte Straße	RW 39287,17231 39193,16900 39400,15803
 Rehfelde - Strausberg: Zweirichtungsradweg auf der nördlichen/östlichen Seite, Verbundsteinpflaster	RW 44121,14615 43743,14634 43162,14428 42996,14793
 Rehfelde: Zweirichtungsradweg auf der östlichen Seite, Verbundsteinpflaster	RW 46421,14990 46250,14765 46053,14653 45856,14437
-Verbundsteinpflasterradweg zumindest Richtung Osten	RW; 23081,30990 23549,31301
+Verbundsteinpflasterradweg zumindest Richtung Osten	RW; 23109,30968 23325,31194 23549,31301
 Auf beiden Seiten Verbundsteinpflasterradwege	RW 37950,52575 37650,53211
 Zumeist holprige Verbundsteinpflasterradwege	RW 40868,102837 40670,102503 40342,102355 40168,102237 40025,101987 39830,101921 39715,101866
 Rudolf-Breitscheid-Str.: Radstreifen	RW; -10973,-1764 -11056,-1726
@@ -160,7 +160,7 @@ B 198: benutzungspflichtiger Zweirichtungsradweg, überwiegend Asphalt, nur kurze
 Gemeinsamer Rad- und Gehweg auf der nördlichen Seite	RW 5394,-3053 4283,-2370
 Zweirichtungsradweg auf östlicher Seite, teils asphaltiert	RW 47432,119730 47554,120007 47547,120819 47501,121206 47549,121619
 Radweg auf Gehweg, Verbundsteinpflaster	RW 46859,118757 47008,118886 47187,119302 47432,119730
-Straßenbegleitender Radweg	RW 22378,30943 22306,31150 22512,31754 22527,32200 22528,32937
+Straßenbegleitender Radweg	RW 22378,30943 22306,31150 22512,31754 22527,32200 22500,32911
 Straßenbegleitender Radweg	RW 23759,49971 23387,49893
 B158: Zweirichtungsradweg auf der nordöstlichen Seite, Verbundsteinpflaster	RW 24203,22171 23930,21873
 B158: Zweirichtungsradweg auf der nordöstlichen Seite, asphaltiert, ca. 2m breit	RW 23930,21873 23565,21396 23281,21043 22529,19361
@@ -212,6 +212,7 @@ Geltow: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW -18025,-637
 B1: kombinierte Geh- und Radwege auf beiden Straßenseiten, Verbundsteinpflasterradweg	RW -19012,-5346 -18515,-5282 -17806,-5251 -17682,-5054
 B1: asphaltierte Radwege auf beiden Seiten	RW -17682,-5054 -17564,-4895 -17434,-4782 -17122,-4622 -16333,-3922 -16161,-3777
 B1: betonierte Radwege auf beiden Seiten	RW -16161,-3777 -16039,-3697 -15669,-3311
+Radweg zwischen Wandlitz und Klosterfelde: 2m breiter Zweirichtungsradweg	RW 13556,37493 13938,38028 14437,38712 14498,38870 14551,39291 14713,40426 14877,41623 14962,42702
 B96: asphaltierter Zweirichtungsradweg auf der südwestlichen Seite	RW 103,33971 821,33228 1069,32756 1184,32554 1254,32428 1365,31576 1429,31501
 Schildow - Wensickendorf: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW 8071,30398 8100,30308 8281,29788 8327,29494 8315,29159
 Marienwerder - B167: Radweg	RW 22912,48759 22862,49031 23597,49573 23748,49682 23759,49971
@@ -235,6 +236,7 @@ Radweg, wahrscheinlich für beide Richtungen	RW 41409,-5222 41836,-5523 42349,-56
 Wusterhausener Str. (Eichwalde)	RW 25678,-3957 25752,-4178 25763,-4283
 Asphaltierter Zweirichtungsradweg, westliche Seite, im Dorf Verbundsteinpflaster	RW 55271,172339 55359,172397 55459,172528 55640,172618 55704,172720 55991,173100 56072,173403 56139,173567 56175,173875
 Pudagla - Schmollensee: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 52407,174744 52468,174931 52614,175530 52830,176128 52866,176160
+Neppermin - Pudagla: überwiegend asphaltierter Zweirichtungsradweg auf der östlichen Seite, 2m breit	RW 50615,171529 50659,171691 50958,172295 51771,173453 51887,174062 52056,174462 52129,174507
 Neppermin - Balm: Zweirichtungsradweg auf der nördlichen Seite, Verbundsteinpflaster	RW 49978,171395 49668,171500 49515,171716 49028,171817
 Verbundsteinpflasterradwege	RW 47751,123738 47836,123659 47955,123488
 Haußmannstr.: Verbundsteinpflasterradwege	RW 47955,123488 48071,123507 48180,123455 48275,123369
@@ -258,3 +260,4 @@ Förster-Funke-Allee: Radwege, Verbundsteinpflasterradwege	RW -2213,-251 -2141,-3
 Vehlefanz - Schwante: Radweg	RW -11307,35852 -11193,35418 -10950,35081 -10962,34793 -10825,34568
 Ruppiner Chaussee: Radweg	RW -1918,24514 -1950,24762 -2139,25038 -2446,25386 -2800,25478
 Parkstr. (Hennigsdorf): gepflasterte, eher schmale Radwege	RW -3331,25078 -3446,25075 -3815,25252 -4219,25460 -4265,25459
+Bernau (ab Autobahnbrücke) - Zepernick: Zweirichtungsradweg ohne Benutzungspflicht auf der östlichen Seite	RW 21085,29942 20499,29310 20475,28650 20472,28570 20017,28297 19475,27877

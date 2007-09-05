@@ -12,7 +12,6 @@
 Wintersteinstr.	? 3763,12279 3759,12362 3748,12472 3741,12607 3738,12639
 #: last_checked: 2007-09-02
 Wilhelmstr. (Kreuzberg)	? 9376,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
-Wisbyer Str.	? 12091,16209 12026,16247 11887,16320 11828,16335 11807,16340 11727,16358
 Wisbyer Str.	?; 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 11448,16398 11397,16405 11289,16423 11033,16464
 #: by http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2004/1103/lokales/0030/ vvv
 # (alte URL http://www.berlinonline.de/berliner-zeitung/berlin/327989.html?2004-03-26 gilt nicht mehr)
@@ -86,6 +85,7 @@ Aroser Allee, Fertigstellung bis 2007-10-01	? 6741,18613 6702,18348 6671,18132 6
 #
 #: section ignorieren vvv
 #: section Straßen in Planung vvv
+Neppermin - Mellenthin - B110: Radweg in Planung, Fertigstellung 2008	?::inwork 50574,171409 50283,171077 50168,170868 49835,170038 49737,169837 49114,169212 49028,168646 48954,167870
 #: last_checked: 2007-08-06 vvv
 Columbiadamm: Bauarbeiten (neue Radwege)	?::inwork; 10796,8498 10598,8563 10213,8665
 Columbiadamm: Bauarbeiten (neue Radwege)	?::inwork 10796,8498 10911,8457 11271,8325 11416,8283 11632,8302
@@ -218,7 +218,7 @@ Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 9
 Tempelhofer Veloroutenpläne: Grauwackeweg, Muschelkalkweg, Str. 482: genaue Lage, Qualität?	? 11193,1684 11146,1413 11120,1384 10718,1220 10759,1112
 #: by: ^^^
 #: XXX Eintrag von Torsten Fleischmann:
-Radweg in Zepernick, beidseitig, auf der südöstlichen Seite: genauer Beginn- und Endpunkt?	? 18292,26726 19364,27415 19475,27877 20017,28297 20472,28570
+Radweg in Zepernick, beidseitig, auf der südöstlichen Seite: genauer Beginn- und Endpunkt?	? 18292,26726 19364,27415 19475,27877
 Hinckeldeybrücke: genaue Koordinaten der Schleife?	? 3358,15794 3336,15644 3332,15587
 Uferpromenade Tegelort/Heiligensee: genaueres zur Qualität und zur Fußgängerfrequenz!	? -2285,19053 -2251,19216 -2236,19331 -2279,19503 -2266,19692 -2248,19849 -2149,19966 -2144,20100 -2011,20534
 Stintgraben und See	? 1584,39467 1930,39739 1864,40227 2186,40991 2056,41586 1860,42350
@@ -433,7 +433,6 @@ Charlotte-E-Pauly-Str.: Qualität?	? 25018,5294 25030,4984 25010,4807
 B101 bis Großbeeren: hier auch ein Radweg?	? 5394,-3053 5068,-3719 4842,-4182 4547,-4951 4227,-5721
 Teltow: größtenteils auch Radweg, genauer erfassen	? -2477,-1717 -2276,-1621 -2073,-1525 -1668,-1709 -1453,-1715 -1303,-1758 -1143,-1759 -705,-1564 -282,-1184 465,-662 741,-584 925,-684 1346,-762
 B273: hier auch Radweg?	? -14737,300 -14859,421 -15527,795
-Bernau (ab Autobahnbrücke) - Zepernick: teilweise (schlechte) Radwege, wo genau?	? 21085,29942 20499,29310 20475,28650 20472,28570 20017,28297 19475,27877
 Basdorf - Bernauer Heide: passierbar (Bahnstrecke), Qualität, Kfz-los?	? 12887,36543 13723,36178
 Zugbrücke/Schleuse?	? 35066,4548
 Zugbrücke?	? 32737,183789
@@ -574,7 +573,6 @@ Brieskow-Finkenheerd: Qualität?	? 90109,-16411 90175,-16367 90129,-16123 90183,-
 Oder-Neiße-Radweg: Qualität?	? 90952,-14806 91203,-14745 91249,-14508 91340,-13206 91516,-13092 91767,-13412 92072,-13564 92856,-13747 93344,-13747 93664,-13838 94083,-14044 94821,-14569 95362,-14676 95949,-14592 96840,-14798 98188,-15598 99262,-16710 99316,-17441 99544,-18104 99734,-18363 99567,-19361 99232,-19841 98759,-20930 98112,-21608 98097,-22385 98417,-23177 99270,-24076 99468,-24601 99437,-25066 99117,-25531 98851,-25706 97647,-27138 97632,-27290 97343,-27595 97487,-27778 97609,-28204 97617,-28318 98066,-29720 98082,-29979 97952,-30634 97990,-31045 98866,-32386 98813,-32554 98950,-32820 99681,-33224 100214,-33399 101075,-33391 101227,-33460 102614,-34801 102614,-35204 102934,-35639 103063,-35692 103101,-35913 102347,-37010 102530,-37398 102690,-37924 102629,-38404 102896,-38746 102896,-39059 102698,-39455 102583,-39897 102720,-39958 102667,-40072 102400,-40140 102286,-40376 102309,-40826 102172,-41070 101677,-41572 101418,-41466 101159,-41473 100847,-41329 100458,-41915 99727,-42662 99300,-43225 99453,-43477 99565,-43453 99811,-43385 99933,-44147 99719,-44475 99674,-44764 99573,-44905
 Criewen - Schwedt: Qualität (vermutlich gut?)?	? 65206,68107 66470,69836 67262,71187 68312,72287 68281,72757
 Falkenberg - Liepe: Qualität (vermutlich nur mäßig?)?	? 48475,46175 48425,46625 48662,47600 49237,48087 49400,48437 49750,48625 49918,48858
-Zepernicker Landweg: Qualität (vermutlich mäßig bis schlecht?)?	? 22195,32466 22528,32937 22540,33318
 Crossiw - Gellmersdorf: Qualität?	? 55045,66286 54925,64862 54700,64125 54787,63762 54700,63500
 Gellmersdorf - Lüderitz: Qualität?	? 54874,63371 54975,63187 54712,63012 54662,62850 55100,61175 55462,60387 55443,60071
 Pinnow - Schönermark: Qualität? (das südliche Ende bei Pinnow sah gut aus, asphaltiert) 	? 55164,74111 55006,74618 54837,75112 54975,75812 54875,76587 54887,78437
@@ -780,7 +778,6 @@ Liepe - Chorin: Qualität?	? 46938,50961 46757,50998 46391,51303 45805,51471 4508
 Herzsprung - Schmargendorf: Qualität?	? 47863,64274 47267,64435 47123,64587 46955,64641 47045,64773
 Schmargendorf - Angermünde: Qualität?	? 47045,64773 47328,65204 47831,65501 48433,66233 48570,66705 48783,67071 49065,67154
 Albertshof, Alternative: Qualität?	? 24181,31820 24515,31931 25240,31808 25630,31782 26144,31855 27434,32400
-Kirschgarten, Ladeburg: Verlängerung?	? 22195,32466 22528,32937
 Niederfinow - Bralitz: Qualität?	? 46094,49871 46368,49825 46909,49947 47183,50000 47511,50259 47641,50237 47999,50427 48143,50747 48237,50875
 Am Finowkanal: Qualität? (In Höhe Bahnbrücke asphaltiert)	? 37162,48462 36969,48599 36816,48645 36367,48561 35986,48591 35742,48774
 Am Finowkanal: Qualität?	? 35659,48744 35575,48942 35377,49117 35270,49300 34966,49422 34745,49323 34630,49178 34547,49193 34478,49056 34349,48972 33937,48866 33701,49041 33526,49025 33221,48820 32696,48706 32391,48706 32162,48797 32002,48904 31820,48919 31455,49067
@@ -829,7 +826,7 @@ Schönfeld - Tempelfelde: Qualität?	? 32766,31010 32725,31025 33156,33418
 #: XXX: laut "Berliner Umland" bis Abzweig Grüntal mäßig geeignet, danach witterungsabhängige Strecke:
 Melchow - Schönholz: Qualität?	? 30143,41500 30175,41193 30493,41075 30943,41018 31343,41112 32006,41150 32862,41531 33218,41606 33768,41868 33918,41987
 #: XXX: laut "Berliner Umland" mäßig geeignet (Autoverkehr?)
-Schönholz - Spechthausen: Qualität?	? 33918,41987 34200,42181 34287,42412 34081,44856
+Schönholz - Spechthausen: Qualität?	? 33918,41987 34200,42181 34287,42412 34218,43747 34081,44856
 #: XXX: laut "Berliner Umland" witterungsabhängige Strecke
 Schönholz - Spechthausen: (Eiszeittour) Qualität? Ausschilderung?	? 34287,42412 34462,42668 34868,42781 34750,43118 34843,43731 34906,43787 34975,43781 35031,43918 34856,44193 34681,44312 34706,44437 34562,44462 34556,44693 34500,44718 34512,44837 34612,44906 34706,45200 34625,45275
 #: XXX: laut "Berliner Umland" mäßig geeignet (Autoverkehr?)
@@ -965,13 +962,13 @@ Altranft - Neugaul: Qualität?	? 56219,41473 56659,41179 57826,40835 58194,40391 
 #: XXX: laut Aktiv Regional gut geeignet
 Altreetz - Wustrow: Qualität?	? 61425,40876 62690,40886 63397,40911 63744,40783 64232,40545 64853,40374 64975,40490
 #: XXX: laut Aktiv Regional gut geeignet
-Ferdinandshof - Karlshof: Qualität?	? 65900,41952 66528,40968 66827,40340 67906,39413 68107,39149
+Ferdinandshof - Karlshof: Qualität?	? 65965,41684 66224,41404 66447,40938 66627,40545 66642,40408 66904,39963 67839,39314 68107,39149
 #: XXX: laut Aktiv Regional gut geeignet
-Karlshof - Güstebieser Loose: Qualität?	? 68107,39149 68109,39489 68893,39887 69881,40234 70283,39862 70588,39600 70722,39223 71039,39113
+Karlshof - Güstebieser Loose: Qualität?	? 68107,39149 68446,39421 68893,39887 69881,40234 70283,39862 70588,39600 70722,39223 71039,39113
 #: XXX: laut Aktiv Regional gut geeignet
 Karlshof - Kerstenbruch: Qualität?	? 68107,39149 68261,38905 68312,38778 68327,37979
 #: XXX: laut Aktiv Regional gut geeignet
-Wustrow - Ferdinandshof - Oder: Qualität?	? 64975,40490 65067,40569 65237,40581 65582,41673 65900,41952 66160,42212 66509,43133 67112,43813
+Wustrow - Ferdinandshof - Oder: Qualität?	? 64975,40490 65067,40569 65237,40581 65676,41496 65965,41684 66160,42212 66509,43133 67112,43813
 #: XXX: laut Aktiv Regional gut geeignet
 Neukarlshof: Qualität?	? 68261,38905 68858,38842 69321,38987 69670,39121 70283,39862
 #: XXX: laut Aktiv Regional gut geeignet
@@ -983,7 +980,7 @@ Wriezen - Altlewin: Qualität?	? 62879,36334 64090,35965 64745,35846 65849,35579 
 #: XXX: laut Aktiv Regional gut geeignet
 Thöringswerder - Beauregard: Qualität?	? 64745,35846 64960,36531 64960,37179 65271,37400 64841,37778
 #: XXX: laut Aktiv Regional sehr gut bis gut geeignet
-Thöringswerder - Bliesdorf: Qualität?	? 64745,35846 64618,35503 63240,35001 63081,34703 63043,34144 62332,33446 61971,33056 61556,32854 61313,32867 60231,32427
+Thöringswerder - Bliesdorf: Qualität?	? 64745,35846 64618,35503 63240,35001 63081,34703 63043,34144 62332,33446 61971,33056 61556,32854 61313,32867 61241,32838 60231,32427
 #: XXX: laut Aktiv Regional gut geeignet
 Neulewin - Heinrichsdorf: Qualität?	? 68705,35895 68617,36595 67665,36810 66522,38029 66413,38217
 #: XXX: laut Aktiv Regional gut geeignet
@@ -993,7 +990,7 @@ Altlewin - Letschin: Qualität?	? 68004,34549 68343,34277 68515,33852 68871,33713
 #: XXX: laut Aktiv Regional mäßig starker Verkehr
 Altlewin - Neutrebbin: Qualität?	? 68004,34549 67937,34024 67510,33415 67423,32900 67391,32728 67279,32324 66852,31617 65993,30228 65975,30131
 #: XXX: laut Aktiv Regional mäßig starker Verkehr
-Neutrebbin - Kunersdorf: Qualität? Wahrscheinlich ab 2006-10-30 mit Radweg?	? 65975,30131 65240,30196 64757,30221 63919,30310 63285,30539 62891,30996 62574,31021 62434,31313 62142,31275 61952,30932 61571,30932 61291,31064
+Neutrebbin - Kunersdorf: Qualität? Wahrscheinlich ab 2006-10-30 mit Radweg?	? 65975,30131 65240,30196 64757,30221 63919,30310 63285,30539 62891,30996 62574,31021 62434,31313 62142,31275 61952,30932 61560,30911 61270,30987
 #: XXX: laut Aktiv Regional gut geeignet
 Wriezener Damm - Gottesgabe: Qualität?	? 64757,30221 64656,29218 64529,28914 64491,28114 63983,27619 63526,26921 63285,26692
 #: XXX: laut Aktiv Regional gut geeignet
@@ -1310,7 +1307,7 @@ Bau einer Ampel, voraussichtlich im Frühjahr 2007	? 16669,25373
 Semnonenweg: voraussichtlich 2006-12-01 mit einer neuen Asphaltdecke versehen	? -4482,10914 -4536,10670
 Wassermannstr.: Qualität zwischen Radickestr. und Glienicker Weg?	? 21055,3415 20938,3560 20776,3753
 #: last_checked: 2007-08-04
-Alexanderstr.: während der Arbeiten an Alexa kein Radweg (bereits wieder aufgehoben?)	?; 11134,12793 11207,12706
+Alexanderstr.: während der Arbeiten an Alexa voraussichtlich bis 2007-09-12 kein Radweg in Richtung Jannowitzbrücke	?; 11134,12793 11207,12706
 Alexanderstr./Alexa: Ampel in Vorbereitung	? 11207,12706
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20061025.0935.49339.html, aber ganz klar ist es nicht, ob nur die Straßenanbindung oder die gesamte Straße gemeint ist, und welcher Radweg?
 Hackenbergstr.: Qualität? Gibt es hier einen Radweg?	? 20429,3792 20280,3996 20253,4034 20248,4040
@@ -1396,9 +1393,10 @@ Zufahrtstraße zur Brücke am Nottekanal: Wo genau verläuft die Zufahrtstraße? Qua
 Hafenstr. (KW): Qualität?	? 26895,-11124 26815,-11398 26767,-11721 26713,-11908
 #: note: laut Tagesspiegel (2007-05-12) ist die Strecke rund 45km lang, ich komme hier nur auf 37,6km. Laut Tsp durchgehend asphaltiert. Teile der Strecke gehören zur "Tour Brandenburg" (ca. Strausberg - Wriezen).
 Strausberg-Nord - Bienenwerder (Abschnitt bis Reichenow): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 48040,21721 49101,24195 49466,24652 51276,25176 51587,25613 51867,25572 54549,27273 55042,27230 55360,27703
-Strausberg-Nord - Bienenwerder (Abschnitt Reichenow - Bliesdorf): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 55981,27193 57864,29533 60231,32427
+Strausberg-Nord - Bienenwerder (Abschnitt Reichenow - Möglin): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 55981,27193 56288,27602 56867,27964 57370,28680 57708,29375 57870,29552
+Strausberg-Nord - Bienenwerder (Abschnitt Möglin - Bliesdorf): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 57978,29316 58692,29655 58924,29923 59448,30258 59588,30478 60057,30667 60441,30728 60557,30819 61051,30959 61173,31087 61255,31127 61294,32550 61241,32838
 Strausberg-Nord - Bienenwerder (Abschnitt Bliesdorf - Wriezen): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 61313,32867 60212,36154
-Strausberg-Nord - Bienenwerder (Abschnitt Wrizen - Oder): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 60212,36154 60368,36566 61522,38715 62690,40886 64609,44963 65286,46173
+Strausberg-Nord - Bienenwerder (Abschnitt Wrizen - Oder): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 60212,36154 60368,36566 61522,38715 62690,40886 63689,42714 64609,44963 64972,45813 65076,45984 65286,46173
 Am Luftschiffhafen - R1/Uferweg: existiert eine Verbindung für Radfahrer? Qualität?	? -15729,-3566 -15556,-3770
 Krugsdorfer Damm - Rothenburg: Qualität vor der Ortschaft?	? 53255,124438 53217,125181 53023,125365
 Pasewalk - Krugsdorf: Qualität?	? 51456,122864 52188,123497 53255,124438 53938,125022 54153,125114 54341,125283
@@ -1481,8 +1479,6 @@ Schulzendorfer Str.: Ist die Schulzendorfer Straße eine Vorfahrtsstraße?	? 22222
 #: XXX unvollständiger Eintrag von anonymous: "gut"
 Am Bogen: Qualität?	? -6607,15816 -6510,15804 -6497,15817 -6485,15915 -6476,15944 -6449,15965 -6419,15965 -6330,15941 -6243,15902 -6244,15902 -6224,15876 -6209,15842 -6155,15818
 Falkenseer Chaussee - Am Bogen: Qualität?	? -6313,15996 -6330,15941
-#: by: http://www.berlin.de/ba-pankow/presse/archiv/20070322.1155.74912.html
-Berliner Allee: ist die Berliner Allee zwischen Rennbahnstr. und Wehlener Str. nach den Bauarbeiten asphaltiert?	? 14559,16912 14535,17003
 Mückendorf/B96 - Richtung Teupitz: Qualität? Wie geht es in Richtung Teupitz weiter?	? 18001,-35985 18101,-35914 18479,-35645 18936,-35316 19344,-35036 19826,-34707 20021,-34512 20246,-34268 20338,-34165 20618,-33964 20661,-33854
 #: XXX: anonymer Eintrag meint "mäßig"
 Guntersblumer Weg: Qualität?	? -2274,2656 -2288,2705 -2286,2772 -2269,2825
@@ -1512,3 +1508,15 @@ Döberitzer Str., Fahrland: Qualität?	? -16182,6673 -16165,6692 -16244,7050 -1627
 Gartenstr., Fahrland: Qualität?	? -15472,6477 -15533,6563 -15562,6678 -15603,6771 -15712,6866 -15853,6997 -15924,7041 -16009,7063 -16107,7073 -16244,7050
 Pankeweg: laut http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0707/nachricht2740.html wurde der Pankeweg zwischen Krontaler Str. und Barnimer Dörferweg fertiggestellt. U.U. fehlt noch eine Brücke. Qualität: gute Schotterdecke. Verläuft der Radweg auf der östlichen oder westlichen Pankeseite?	? 13551,23072 13572,23138 13797,23374 13953,23497 14265,23759 14356,23862 14625,24215 14869,24391
 Neuwieder Str.: Qualität?	? 19206,9243 19221,9517 19236,9710 19242,9815
+#: XXX: Eintrag von Michael Lietz war nicht spezifisch genug, einfach nur "gut"
+Kirschengrabenstr.: Qualität?	? 19560,689 19648,656 19736,623
+#: note: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20070327.1735.75259.html
+Margarete-Steffin-Str.: Ist die Verlängerung der Margarete-Steffin-Str. bis zum Alexanderufer bereits fertig gestellt? Qualität?	? 8525,12958 8406,13127 8292,13205
+#: note: für Autofahrer ist die Überfahrt über die Straßenbahntrasse nicht möglich
+Hans-Jürgen-Str.: Qualität?	? 11799,20224 11839,20176 11870,20154 11939,20140 11963,20136
+#: note: http://www.berlin.de/ba-pankow/presse/archiv/20070808.1610.83262.html
+Wisbyer Str.: sind die Radspuren in der Wisbyer Str. zwischen Prenzlauer Allee und Stahlheimer Str. auf beiden Seiten fertig gestellt?	? 12091,16209 12026,16247 11887,16320 11828,16335 11807,16340 11727,16358
+Siegfried-Baruch-Weg: Qualität? Weg für Autos geöffnet?	? 7868,19692 8030,19762
+Ladiusstr.: Qualität?	? 1224,481 1108,465 1078,443 1042,406 935,391 924,405
+Oderbruchbahnradweg: Asphaltierter Radweg, wie verläuft er weiter?	? 62452,935 63110,1642 63391,1898 63586,2044 64707,2739 65073,2934 65780,3348
+Dahmeradweg: genauer Verlauf zwischen Freidorf und Briesen? Qualität? Wie verläuft der restliche Dahmeradweg?	? 31361,-37090 32535,-38671

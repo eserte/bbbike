@@ -46,7 +46,7 @@ Wilhelplatz	1 -7232,445 -7059,578
 Wilhelplatz	1 -7059,578 -7088,463 -7095,436 -7186,363
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf (Nord)	1 9731,3889 9934,3802
-Alt-Mariendorf (Süd)	1 9934,3802 9751,3769 9440,3665 9215,3599 9131,3571 8955,3521
+Alt-Mariendorf (Süd)	1 9934,3802 9751,3769 9440,3665 9391,3651 9215,3599 9131,3571 8955,3521
 Knoten Märkische Allee	1 19693,11762 19802,11794 19882,11860 19918,11891
 Knoten Märkische Allee	1 19918,11891 19988,11821 20115,11730
 Knoten Märkische Allee	1 20115,11730 20014,11651
@@ -523,6 +523,8 @@ Heidenfeldstr. -> Petersburger Str.: Straßenbahntrasse	3 13433,13346 13393,13326
 Petersburger Str. -> Heidenfeldstr.: Straßenbahntrasse	3 13378,13353 13393,13326 13433,13346
 Stubenrauchstr. -> Krokusstr.: Bahntrasse	3 16779,2993 16677,2856 16739,2736
 Krokusstr. -> Stubenrauchstr.: Bahntrasse	3 16739,2736 16677,2856 16635,2796
+Stubenrauchstr. -> Fuchsienweg: Bahntrasse	3 16460,2567 16573,2715 16376,2862
+Fuchsienweg -> Stubenrauchstr.: Bahntrasse	3 16376,2862 16573,2715 16635,2796
 Ellernweg -> Sterndamm: Straßenbahntrasse	3 17428,4792 17542,4772 17601,5090
 Ellernweg -> Waldstr.: Straßenbahntrasse	3 17428,4792 17542,4772 17881,4521
 Sterndamm -> Ellernweg: Straßenbahntrasse	3 17518,4644 17542,4772 17428,4792

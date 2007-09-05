@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: str_stat.pl,v 1.11 2006/04/04 22:02:42 eserte Exp eserte $
+# $Id: str_stat.pl,v 1.12 2007/09/05 20:23:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2004,2006 Slaven Rezic. All rights reserved.
@@ -102,8 +102,8 @@ if ($do_area) {
 }
 my $unit = $do_area ? 'km²' : 'km';
 print join("\n",
-	   map { sprintf "%-40s %6.2f $unit",
-		   $_, $str{$_}
+	   map { sprintf("%-40s %6.2f $unit", $_, $str{$_})
+		     . ($do_area ? sprintf(" = %5.f ha = %d m²", $str{$_}*100, $str{$_}*1000*1000) : "")
 	       } sort { $str{$b} <=> $str{$a} } keys %str), "\n";
 
 if ($do_area) {

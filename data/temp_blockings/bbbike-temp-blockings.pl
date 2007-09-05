@@ -2244,7 +2244,7 @@ EOF
        text  => 'B 109; (Prenzlauer Str.); OD Basdorf, Kno. Dimitroff-/Waldheimstr. Straßen-,Geh- u.Radwegbau Vollsperrung 04.07.2005-08.08.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 12193,34683 12551,32765
+userdel	q4 12193,34683 12635,32221
 EOF
      },
      { from  => 1122415200, # 2005-07-27 00:00
@@ -4874,7 +4874,7 @@ EOF
        text  => 'B 002 Eberswalder Str. Bahnübergang in OL Melchow Umbau Bahnübergang Vollsperrung 21.06.2006-26.06.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 30143,41500 29609,41448 29468,41438
+userdel	2::inwork 30143,41500 29553,41441 29468,41438
 EOF
      },
      { from  => 1152050400, # 2006-07-05 00:00
@@ -8204,8 +8204,8 @@ userdel	q4::inwork 13772,-10251 13576,-9738 13503,-9528
 EOF
      },
      { from  => 1152482400, # 2006-07-10 00:00
-       until => 1189807200, # 2007-09-15 00:00
-       text  => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf grundhafter Straßenausbau Vollsperrung 11.07.2006-14.09.2007 ',
+       until => Time::Local::timelocal(reverse(2007-1900,9-1,20,23,59,59)), # was: 1189807200, # 2007-09-15 00:00
+       text  => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf grundhafter Straßenausbau Vollsperrung 11.07.2006-20.09.2007 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 7981,-7165 7558,-7093
@@ -9709,6 +9709,14 @@ EOF
        source_id => 'IM_006499',
        data  => <<EOF,
 userdel	2::temp 5797,10881 5725,10892 5657,10868 5484,10810 5351,10760 5229,10716 5076,10658 4847,10589
+EOF
+     },
+     { from  => 1189288800, # 2007-09-09 00:00
+       until => 1190412000, # 2007-09-22 00:00
+       text  => 'L 074 Poststraße OD Teupitz, Poststr. Tiefbauarbeiten Vollsperrung 10.09.2007-21.09.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 25412,-29762 25240,-29746
 EOF
      },
     );

@@ -449,8 +449,8 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        {
-         'until' => 1189807200,
-         'text' => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf grundhafter Straßenausbau Vollsperrung 11.07.2006-14.09.2007 ',
+         'until' => 1190325599,
+         'text' => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf grundhafter Straßenausbau Vollsperrung 11.07.2006-20.09.2007 ',
          'from' => 1152482400,
          'id' => 975,
          'data' => 'userdel	q4::inwork 7981,-7165 7558,-7093
@@ -978,6 +978,17 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'data' => 'userdel	1::inwork -3942,15926 -3735,16205 -3631,16224
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       {
+         'until' => 1190412000,
+         'text' => 'L 074 Poststraße OD Teupitz, Poststr. Tiefbauarbeiten Vollsperrung 10.09.2007-21.09.2007 ',
+         'from' => 1189288800,
+         'id' => 1152,
+         'data' => 'userdel	q4::inwork 25412,-29762 25240,-29746
+',
+         'type' => 'handicap'
        }
      
 );
