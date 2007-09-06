@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.49 2007/09/01 10:44:45 eserte Exp $
+# $Id: GpsmanData.pm,v 1.49 2007/09/01 10:44:45 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005 Slaven Rezic. All rights reserved.
@@ -30,7 +30,7 @@ BEGIN {
 	    Type Name
 	    Waypoints WaypointsHash
 	    Track CurrentConverter
-	    Version
+	    Version TrackAttrs
 	   )) {
 	my $acc = $_;
 	*{$acc} = sub {
@@ -512,6 +512,16 @@ sub parse {
 		    } elsif (defined $current_track_name) {
 			$self->Name($current_track_name);
 		    }
+		}
+		if (@l > 2) {
+		    my %attr;
+		    for my $l_i (2 .. $#l) {
+			my($key,$val) = split /=/, $l[$l_i];
+			$attr{$key} = $val;
+		    }
+		    $self->TrackAttrs(\%attr);
+		} else {
+		    $self->TrackAttrs({});
 		}
 		$self->Type(TYPE_TRACK);
 		$type = TYPE_TRACK;

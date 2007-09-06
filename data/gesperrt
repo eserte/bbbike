@@ -556,12 +556,10 @@ Berliner Str. -> Max-Lingner-Str.: Straßenbahntrasse	3 10900,17397 10906,17331 1
 Berliner Str. -> Masurenstr.: Straßenbahntrasse	3 10906,17331 10900,17397 10712,17391
 Masurenstr. -> Berliner Str.: Straßenbahntrasse	3 10712,17391 10900,17397 10892,17491
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3 11462,12384 11333,12437 11343,12300
-Karl-Liebknecht-Str. -> Alexanderpl. [Dircksenstr./zur Karl-Liebknecht-Str.]: Straßenbahntrasse in Bau	3 10920,13139 10781,13002 10844,12935
-Karl-Liebknecht-Str. -> Dircksenstr.: Straßenbahntrasse in Bau	3 10740,12960 10781,13002 10706,13043
-Alexanderpl. [Dircksenstr./zur Karl-Liebknecht-Str.] -> Karl-Liebknecht-Str.: Straßenbahntrasse in Bau	3 10844,12935 10781,13002 10740,12960
-Alexanderpl. [Dircksenstr./zur Karl-Liebknecht-Str.] -> Dircksenstr.: Straßenbahntrasse in Bau	3 10844,12935 10781,13002 10706,13043
-Dircksenstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse in Bau	3 10706,13043 10781,13002 10920,13139
-Dircksenstr. -> Alexanderpl. [Dircksenstr./zur Karl-Liebknecht-Str.]: Straßenbahntrasse in Bau	3 10706,13043 10781,13002 10844,12935
+Karl-Liebknecht-Str. -> Hirtenstr.: Straßenbahntrasse	3 10920,13139 11015,13264 10923,13317
+Hirtenstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3 10923,13317 11015,13264 11087,13359
+Karl-Liebknecht-Str. -> Wadzeckstr.: Straßenbahntrasse	3 11149,13442 11087,13359 11187,13289
+Wadzeckstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3 11187,13289 11087,13359 11015,13264
 Gropiusstr. -> Badstr.: Gitter auf Mittelstreifen	3 8389,16214 8543,16364 8516,16393
 Gropiusstr. -> Travemünder Str.: Gitter auf Mittelstreifen	3 8389,16214 8543,16364 8592,16406
 Badstr. -> Gropiusstr.: Gitter auf Mittelstreifen	3 8659,16327 8543,16364 8389,16214

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.48 2007/08/27 01:39:48 eserte Exp $
+# $Id: cgi.t,v 1.49 2007/09/06 23:51:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -79,7 +79,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (169 + $ortsuche_tests) * scalar @urls;
+plan tests => (172 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -345,6 +345,20 @@ for my $cgiurl (@urls) {
 	    diag($@);
 	    fail("No hash, no route length");
 	}
+    }
+
+ XXX: {
+	my $content;
+
+	# optimal route crosses Berlin border
+	$res = $ua->get("$action?startname=Kirchhainer+Damm&startplz=12309&startc=11172%2C-2224&zielname=Zwickauer+Damm&zielplz=12353%2C+12355&zielc=15540%2C1235&pref_seen=1&pref_speed=26&pref_cat=&pref_quality=&pref_green=&pref_fragezeichen=yes&scope=");
+	ok($res->is_success, "Kirchhainer Damm - Zwickauer Damm")
+	    or diag $res->as_string;
+	$content = uncompr($res);
+	BBBikeTest::like_long_data($content, qr/\(Lichtenrade -\) Großziethen/,
+				   "Shorter route through Großziethen");
+	BBBikeTest::like_long_data($content, qr/\(Großziethen -\) Rudow/,
+				   "Shorter route through Großziethen");
     }
 
     {
@@ -660,7 +674,6 @@ for my $cgiurl (@urls) {
 	like($content, qr{\QThomas-Müntzer-Damm (Kleinmachnow)/Warthestr. (Teltow)\E}, "No simplification possible between different places");
     }
 
-#     XXX:
 #     {
 # 	# fragezeichen streets not in crossing
 # 	$req = HTTP::Request->new

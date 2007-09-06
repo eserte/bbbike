@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman2bbd.pl,v 2.10 2005/12/28 19:06:11 eserte Exp $
+# $Id: gpsman2bbd.pl,v 2.11 2007/09/06 23:35:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -169,12 +169,28 @@ EOF
 	    }
 	}
 
+	my $vehicle; # remember vehicle across chunks
+	my %brand;   # vehicle -> brand
+
 	for my $gps (@{ $gps_multi->Chunks }) {
 	    #XXX $gps->convert_all("DDD");
+
+	    my $brand;
 
 	    my $curr_s;
 	    if ($gps->Type eq GPS::GpsmanData::TYPE_TRACK()) {
 	        $curr_s = $s;
+		if ($gps->TrackAttrs->{"srt:vehicle"}) {
+		    $vehicle = $gps->TrackAttrs->{"srt:vehicle"};
+		}
+		$brand = $gps->TrackAttrs->{"srt:brand"};
+		if (!$brand) {
+		    if ($brand{$vehicle}) {
+			$brand = $brand{$vehicle}; # remember from last
+		    }
+		} else {
+		    $brand{$vehicle} = $brand;
+		}
 	    } else {
 	        $curr_s = $p;
 	    }
@@ -183,7 +199,15 @@ EOF
 	    my $last_is_inaccurate = 0;
 	    my $push_streets = sub {
 		if (@street_coords) {
-		    $s->push([$base, [@street_coords], $scat[$last_is_inaccurate]]);
+		    my $name = $base;
+		    if ($vehicle) { # XXX yes? no? && $vehicle ne 'bike') {
+			$name .= " ($vehicle";
+			if ($brand) {
+			    $name .= "/$brand";
+			}
+			$name .= ")";
+		    }
+		    $s->push([$name, [@street_coords], $scat[$last_is_inaccurate]]);
 		    @street_coords = ();
 		    $last_is_inaccurate = 0;
 		}
@@ -270,14 +294,15 @@ EOF
 	while (1) {
 	    my $r = $s->next;
 	    last if !@{ $r->[Strassen::COORDS()] };
-	    $new_s{$r->[Strassen::NAME()]}++;
+	    my($filename) = $r->[Strassen::NAME()] =~ m{^(\S+)};
+	    $new_s{$filename}++;
 	}
 	$p->init;
 	while (1) {
 	    my $r = $p->next;
 	    last if !@{ $r->[Strassen::COORDS()] };
-	    my $file = $r->[Strassen::NAME()] =~ m|^([^/]+)|;
-	    $new_p{$file}++;
+	    my($filename) = $r->[Strassen::NAME()] =~ m|^([^/]+)|;
+	    $new_p{$filename}++;
 	}
 
 	# load old data
@@ -289,7 +314,8 @@ EOF
 	while (1) {
 	    my $r = $old_s->next;
 	    last if !@{ $r->[Strassen::COORDS()] };
-	    if (!$new_s{$r->[Strassen::NAME()]}) {
+	    my($filename) = $r->[Strassen::NAME()] =~ m{^(\S+)};
+	    if (!$new_s{$filename}) {
 		$s->push($r);
 	    }
 	}
@@ -297,8 +323,8 @@ EOF
 	while (1) {
 	    my $r = $old_p->next;
 	    last if !@{ $r->[Strassen::COORDS()] };
-	    (my $file) = $r->[Strassen::NAME()] =~ m|^([^/]+)|;
-	    if (!$new_p{$file}) {
+	    my($filename) = $r->[Strassen::NAME()] =~ m|^([^/]+)|;
+	    if (!$new_p{$filename}) {
 		$p->push($r);
 	    }
 	}

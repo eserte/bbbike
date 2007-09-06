@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.68 2007/08/06 22:02:15 eserte Exp $
+# $Id: bbbike.cgi,v 8.68 2007/08/06 22:02:15 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -2909,16 +2909,23 @@ sub search_coord {
 
     my $printwidth  = 400;
 
+    my $via_array = (defined $viacoord && $viacoord ne ''
+		     ? [$viacoord]
+		     : []);
+
+    # Technically more correct it would be to adjust the scope
+    # after fix_coords. But fix_coords already needs a built net,
+    # so we ignore the hopefully small fix by fix_coords.
+    #
+    # adjust_scope_for_search adjust $q->param("scope")
+    adjust_scope_for_search([$startcoord, @$via_array, $zielcoord]);
+
+    my $scope = $q->param("scope") || "city";
+
     make_netz();
 
     ($startcoord, $viacoord, $zielcoord)
       = fix_coords($startcoord, $viacoord, $zielcoord);
-
-    my $scope = $q->param("scope") || "city";
-
-    my $via_array = (defined $viacoord && $viacoord ne ''
-		     ? [$viacoord]
-		     : []);
 
     my %extra_args;
     if (@$via_array) {
@@ -5334,6 +5341,51 @@ sub upgrade_scope {
 	if ($target_scope eq $check_scope) {
 	    $q->param("scope", $check_scope);
 	    return;
+	}
+    }
+}
+
+# NOTE: this is only valid for city=b_de. Other cities should use other
+# border files (XXX -> Geography::....)
+sub adjust_scope_for_search {
+    my($coordsref) = @_;
+    return if $q->param("scope") && $q->param("scope") ne 'city'; # already bigger scope
+
+    if (!eval { require VectorUtil; 1 }) {
+	warn $@;
+	return;
+    }
+
+    my $city_border = eval { Strassen->new("berlin") };
+    if (!$city_border) {
+	warn "Cannot get border file";
+	return;
+    }
+
+    my @border_polylines;
+    $city_border->init;
+    while() {
+	my $r = $city_border->next;
+	last if !@{ $r->[Strassen::COORDS()] };
+	push @border_polylines, $r->[Strassen::COORDS()];
+    }
+
+    for my $i (1 .. $#$coordsref) {
+	my($xfrom,$yfrom,$xto,$yto) = (split(/,/,$coordsref->[$i-1]),
+				       split(/,/,$coordsref->[$i]));
+	warn "$xfrom $yfrom -> $xto $yto";
+	for my $border_polyline (@border_polylines) {
+	    for my $pt_i (1..$#$border_polyline) {
+		my($x1,$y1,$x2,$y2) = (split(/,/,$border_polyline->[$pt_i-1]),
+				       split(/,/,$border_polyline->[$pt_i]));
+		if (VectorUtil::intersect_lines($xfrom,$yfrom,$xto,$yto,
+						$x1,$y1,$x2,$y2)) {
+		    warn "intersecting!";
+		    warn "upgrading to region!!!";
+		    upgrade_scope("region");
+		    return;
+		}
+	    }
 	}
     }
 }

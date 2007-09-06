@@ -4,7 +4,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
 
 use File::Spec;
 use File::Basename;
@@ -48,7 +48,8 @@ GetOptions("gpsdatadir=s" => \$gps_data_dir,
 	   "rel|relativepaths!" => \$relative_paths,
 	   "v!" => \$v,
 	  ) or die <<EOF;
-usage: $0 [-gpsdatadir directory] [-thumbnaildir directory]
+usage: $0
+          [-gpsdatadir directory] [-thumbnaildir directory]
           [-clockgps HH:MM:SS -clockcamera HH:MM:SS]
 	  [-anchor nw|n|ne|e|se|s|sw] [-thumbnailsize pixels]
           [-converter Image::GD::Thumbnail|ImageMagick|ImageMagick+exiftool|best|fast]

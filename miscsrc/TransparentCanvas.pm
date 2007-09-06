@@ -34,10 +34,7 @@ sub register {
 	if ($main::booting) {
 	    warn $warntext;
 	} else {
-	    $top->messageBox(-title => "Not for Windows",
-			     -icon => "info",
-			     -message => $warntext,
-			     );
+	    main::status_message($warntext, "warn");
 	}
     } else {
 	$top->bind("<Control-t>" => sub { doit() });
@@ -53,7 +50,8 @@ sub register {
 
 sub remove {
     my $x11 = new X11::Protocol;
-    $x11->init_extension('SHAPE') or die "SHAPE extension not available";
+    $x11->init_extension('SHAPE')
+	or main::status_message("SHAPE extension not available", "die");
     my $top = $main::top;
     my($wrapper) = $top->wrapper;
     if ($shape_pixmap) {
@@ -65,12 +63,14 @@ sub remove {
 
 sub doit {
     my $x11 = new X11::Protocol;
-    $x11->init_extension('SHAPE') or die "SHAPE extension not available";
+    $x11->init_extension('SHAPE')
+	or main::status_message("SHAPE extension not available", "die");
 
     my $c = $main::c;
     my $top = $main::top;
     my($wrapper) = $top->wrapper;
     my $transbg = "\xd6\xd7\xd6";
+    my $transbg2 = "\xd6\xda\xd6"; # requested canvas background is not equal to the visible!
     my $id = $c->id;
 
     if ($shape_pixmap) {
@@ -82,6 +82,12 @@ sub doit {
     my $top_height = $top->height;
     my $c_x = $c->rootx - $top->rootx;
     my $c_y = $c->rooty - $top->rooty;
+
+    # menu height is not included:
+    my(undef, $menu_height) = $top->wrapper;
+    $top_height+=$menu_height;
+    $c_y+=$menu_height;
+
     $shape_pixmap = $x11->new_rsrc;
     $x11->CreatePixmap($shape_pixmap, $wrapper, 1, $top_width, $top_height);
     my $gc = $x11->new_rsrc;
@@ -101,11 +107,23 @@ sub doit {
     $c->move("all", -1, -1);
     $top->update;
 
-    unlink "/tmp/canvas.xwd";
-    unlink "/tmp/canvas.ppm";
-    system("xwd -id $id > /tmp/canvas.xwd");
-    system("convert /tmp/canvas.xwd /tmp/canvas.ppm");
-    open my $fh, "/tmp/canvas.ppm" or die $!;
+    my $tmpfile1 = "/tmp/transparent_canvas_".$<.".xwd";
+    my $tmpfile2 = "/tmp/transparent_canvas_".$<.".ppm";
+
+    unlink $tmpfile1;
+    unlink $tmpfile2;
+    {
+	my $cmd = "xwd -id $id > $tmpfile1";
+	system $cmd;
+	$? == 0 or main::status_message("Failure while running <$cmd>: $?", "die");
+    }
+    {
+	my $cmd = "convert $tmpfile1 $tmpfile2";
+	system $cmd;
+	$? == 0 or main::status_message("Failure while running <$cmd>: $?", "die");
+    }
+    open my $fh, $tmpfile2
+	or main::status_message("Can't write to $tmpfile2: $!", "die");
     binmode $fh;
     my %imgmeta;
     my($width, $height);
@@ -116,7 +134,7 @@ sub doit {
 	$imgmeta{$state} = $line;
 	if ($state eq 'fmt') {
 	    if ($imgmeta{fmt} ne "P6") {
-		die "Supports only P6 (ppm binary), not $imgmeta{fmt}";
+		main::status_message("Supports only P6 (ppm binary), not $imgmeta{fmt}", "die");
 	    }
 	    $state = "wh";
 	} elsif ($state eq 'wh') {
@@ -124,7 +142,7 @@ sub doit {
 	    $state = "maxval";
 	} elsif ($state eq 'maxval') {
 	    if ($imgmeta{maxval} ne 255) {
-		die "Supports only maxval=255";
+		main::status_message("Supports only maxval=255", "die");
 	    }
 	    last;
 	}
@@ -139,7 +157,7 @@ sub doit {
     my $y = 0;
     my @p;
     while(<$fh>) {
-	if ($_ ne $transbg) {
+	if ($_ ne $transbg && $_ ne $transbg2) {
 	    push @p, $x+$c_x, $y+$c_y;
 	    if (scalar @p > 10000) {
 		$x11->PolyPoint($shape_pixmap, $gc, 'Origin', @p);

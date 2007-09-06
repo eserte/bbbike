@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.189 2007/09/01 10:40:30 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.189 2007/09/01 10:40:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1199,6 +1199,9 @@ sub parse_url_for_coords {
     } elsif ($url =~ /long?=([0-9.]+).*lat=([0-9.]+)/) { # e.g. goyellow.de new
 	$x_ddd = $1;
 	$y_ddd = $2;
+    } elsif ($url =~ /cp=([0-9.]+)~([0-9.]+)&/) { # e.g. maps.live.com
+	$x_ddd = $2;
+	$y_ddd = $1;
     }
 
     if (defined $x_ddd && defined $y_ddd) {
