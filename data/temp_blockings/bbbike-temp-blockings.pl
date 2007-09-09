@@ -3340,7 +3340,7 @@ EOF
        text  => 'B 198 Greiffenberger Str. OD Kerkow grundhafter Straßenbau Vollsperrung * 17.10.2005-30.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 48929,70947 49007,71214
+userdel	q4 48929,70947 48996,71176
 EOF
      },
      { from  => 1127599200, # 2005-09-25 00:00
@@ -3872,7 +3872,7 @@ EOF
        text  => 'B 198 OD Kerkow Greiffenbg.Str. Kerkow Neubau Straße Vollsperrung 22.03.2006-31.05.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 48929,70947 49007,71214
+userdel	q4 48929,70947 48996,71176
 EOF
      },
      { from  => 1143575024, # 2006-03-28 21:43
@@ -4069,7 +4069,7 @@ EOF
        text  => 'Herzbergstraße, zwischen Siegfriedstraße und Vulkanstraße gesperrt, die Gegenrichtung ist als Einbahnstraße ausgeschildert, Straße am Wasserwerk, zwischen Herzbergstraße und Landsberger Allee gesperrt, Baustelle. Dauer: 07.04.2006 , 18:00 Uhr bis 27.05.2006, 18:00 Uhr. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 16866,13532 15892,13534
+userdel	1 16866,13532 16629,13532 15892,13534
 EOF
      },
      { from  => 1144483509, # 2006-04-08 10:05
@@ -6596,7 +6596,7 @@ EOF
        text  => 'L 745 Motzener-, Mittenwalder Str. OD Gallun Deckschichteinbau Vollsperrung 07.11.2006-08.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 21812,-18037 21787,-17695
+userdel	2::inwork 21828,-18016 21813,-17700 21811,-17649
 EOF
      },
      { from  => 1162767600, # 2006-11-06 00:00
@@ -6621,7 +6621,7 @@ EOF
        text  => 'L 745 Mittenwalder Str. OD Gallun, zw. Storkower Str. u. Galluner Chaussee Deckenerneuerung Vollsperrung 13.11.2006-14.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 21886,-17280 21787,-17695
+userdel	2::inwork 21886,-17280 21820,-17524 21811,-17649
 EOF
      },
      { from  => 1163446417, # 2006-11-13 20:33
@@ -6964,7 +6964,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004587',
        data  => <<EOF,
-userdel	q4::inwork; 15349,12073 15288,11968 15243,11881 15203,11807 15091,11596
+userdel	q4::inwork; 15243,11881 15203,11807 15091,11596
 EOF
      },
      { from  => 1170370800, # 2007-02-02 00:00
@@ -9512,8 +9512,8 @@ EOF
 userdel	2::inwork -3481,15315 -3349,15229 -3241,15118
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1189353413, # undef
+       until => 1189353419, # XXX undef
        text  => 'Oranienburger Str. (Reinickendorf) stadtauswärts, zwischen Lübarser Str. und WIttenauer Str. Baustelle, Fahrtrichtung gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_006352',
@@ -9551,7 +9551,7 @@ EOF
        text  => 'B 112 Eisenhüttenstadt-Frankfurt (O) zw. Güldendorf und Frankfurt (O) Deckenerneuerung Richtungsverkehr 28.08.2007-15.09.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 87207,-9278 86800,-8681
+userdel	1::inwork 87207,-9278 86790,-8657
 EOF
      },
      { from  => 1188079200, # 2007-08-26 00:00
@@ -9717,6 +9717,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 25412,-29762 25240,-29746
+EOF
+     },
+     { from  => 1189288800, # 2007-09-09 00:00
+       until => 1217541600, # 2008-08-01 00:00
+       text  => 'K 7305 Bahnunterführung bis Welsow Brückenbau u. Straßenneubau Vollsperrung 10.09.2007-31.07.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 48437,74675 49075,74662 49734,74527
 EOF
      },
     );

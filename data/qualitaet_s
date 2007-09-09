@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.214 2007/09/07 09:03:09 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.214 2007/09/07 09:03:09 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -385,8 +385,8 @@ Alt-Marienfelde: schlechtes Kopfsteinpflaster	Q3 8026,711 8208,626 8258,662
 Ratiborstr.: Kopfsteinpflaster	Q2 12712,9523 12724,9545 12837,9748
 Kirchhofstr: schlechtes Kopfsteinpflaster	Q3 13177,7644 13188,7590 13117,7471 13027,7368
 Kirchhofstr: relativ glattes Kopfsteinpflaster	Q2 13003,7316 12909,7181 12872,7134
-Berliner Allee: Kopfsteinpflaster	Q2 14828,17856 14754,17673 14673,17454 14584,17224 14533,17084 14535,17003
-Berliner Allee: Asphalt	Q0 14535,17003 14559,16912
+Berliner Allee: Kopfsteinpflaster	Q2 14828,17856 14754,17673 14673,17454 14584,17224
+Berliner Allee: Asphalt	Q0 14584,17224 14533,17084 14535,17003 14559,16912
 Lessingstr.: Kopfsteinpflaster	Q2 10425,67 10300,42 10156,13 10066,-3 9966,-22 9848,-59
 Monbijoustr.: Kopfsteinpflaster, OK	Q1 9734,13057 9707,12974
 Nördliche Monbijoubrücke: Kleinsteinpflaster	Q1 9707,12974 9680,12916
@@ -597,6 +597,7 @@ Rheinsteinstr.: Kopfsteinpflaster	Q2 18998,8784 19078,8817 19173,8857 19316,8933
 Zwieseler Str.: Kopfsteinpflaster	Q2 19510,9035 19629,9094
 Köpenicker Allee: wechselnd: holpriger Fahrweg, mäßiger Asphalt	Q2 19907,8407 20213,7872 20280,7757
 Vulkanstr.: Asphalt	Q0 15912,13153 15892,13534 15897,13942 15838,14319
+Vulkanstr.: Asphalt	Q0 15912,13153 15950,12886 15953,12753 15952,12679 15947,12626 15926,12478 15904,12340 15896,12273 15879,12131 15863,11992
 Sandinostr.: Kopfsteinpflaster	Q2 15883,14606 15830,14647 15685,14757
 Orankeweg: holpriger Feldweg	Q2 14934,15860 15305,15858 15439,15859
 Orankestr.: schlechtes Kopfsteinpflaster	Q3 16331,15486 15665,15765
@@ -1657,6 +1658,7 @@ Koppenstr.: Asphalt mit Schäden	Q1 12525,12151 12575,12223
 Montanstr.: Asphalt	Q0 6792,19733 6680,19098
 Griechische Allee: Asphalt	Q0 18623,6523 18494,6588 18339,6660 18146,6703
 Griechische Allee: Asphalt	Q0 18159,6642 18273,6606 18429,6582 18494,6588
+Normannenstr.: Asphalt	Q0 15502,12367 15537,12367 15710,12365 15800,12353 15904,12340
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 364,4829 319,4906 168,5092 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2240,6904 2116,6861 2054,6840 1975,6818
@@ -3732,6 +3734,7 @@ Alt-Hermsdorf: schlechtes Kopfsteinpflaster, aber es existiert ein Sandstreifen	
 Hallichpromenade: guter Asphalt	Q0 5304,20630 5335,20615 5388,20606
 Wrightallee: Asphalt	Q0 18010,3263 17976,3735 17949,3970
 Kirschenbaumstr.: asphaltiert/betoniert	Q0 19560,689 19648,656 19736,623
+Altenberger Weg: Beton	Q0 9725,20260 9840,20286 9972,20307 10066,20323
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14202,13140 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953

@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.214 2007/09/07 09:03:09 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.214 2007/09/07 09:03:09 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -398,9 +398,8 @@ Alt-Marienfelde: schlechtes Kopfsteinpflaster	Q3 8026,711 8208,626 8258,662
 Ratiborstr.: Kopfsteinpflaster	Q2 12712,9523 12724,9545 12837,9748
 Kirchhofstr: schlechtes Kopfsteinpflaster	Q3 13177,7644 13188,7590 13117,7471 13027,7368
 Kirchhofstr: relativ glattes Kopfsteinpflaster	Q2 13003,7316 12909,7181 12872,7134
-Berliner Allee: Kopfsteinpflaster	Q2 14828,17856 14754,17673 14673,17454 14584,17224 14533,17084 14535,17003
-#: by: http://www.berlin.de/ba-pankow/presse/archiv/20070828.1105.84201.html
-Berliner Allee: Asphalt	Q0 14535,17003 14559,16912
+Berliner Allee: Kopfsteinpflaster	Q2 14828,17856 14754,17673 14673,17454 14584,17224
+Berliner Allee: Asphalt	Q0 14584,17224 14533,17084 14535,17003 14559,16912
 Lessingstr.: Kopfsteinpflaster	Q2 10425,67 10300,42 10156,13 10066,-3 9966,-22 9848,-59
 Monbijoustr.: Kopfsteinpflaster, OK	Q1 9734,13057 9707,12974
 #: by: Message-ID: <ehgp1u$d4g$03$1@news.t-online.com>
@@ -630,7 +629,9 @@ Rheinsteinstr.: Kopfsteinpflaster	Q2 18998,8784 19078,8817 19173,8857 19316,8933
 Zwieseler Str.: Kopfsteinpflaster	Q2 19510,9035 19629,9094
 Köpenicker Allee: wechselnd: holpriger Fahrweg, mäßiger Asphalt	Q2 19907,8407 20213,7872 20280,7757
 #: by: Roy Fischer [AM]
+#: confirmed_by: srt
 Vulkanstr.: Asphalt	Q0 15912,13153 15892,13534 15897,13942 15838,14319
+Vulkanstr.: Asphalt	Q0 15912,13153 15950,12886 15953,12753 15952,12679 15947,12626 15926,12478 15904,12340 15896,12273 15879,12131 15863,11992
 Sandinostr.: Kopfsteinpflaster	Q2 15883,14606 15830,14647 15685,14757
 Orankeweg: holpriger Feldweg	Q2 14934,15860 15305,15858 15439,15859
 Orankestr.: schlechtes Kopfsteinpflaster	Q3 16331,15486 15665,15765
@@ -1827,6 +1828,7 @@ Montanstr.: Asphalt	Q0 6792,19733 6680,19098
 Griechische Allee: Asphalt	Q0 18623,6523 18494,6588 18339,6660 18146,6703
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20070821.1325.83838.html
 Griechische Allee: Asphalt	Q0 18159,6642 18273,6606 18429,6582 18494,6588
+Normannenstr.: Asphalt	Q0 15502,12367 15537,12367 15710,12365 15800,12353 15904,12340
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -5490,6 +5492,8 @@ Wrightallee: Asphalt	Q0 18010,3263 17976,3735 17949,3970
 #: by: ^^^
 #: by: Michael Lietz:
 Kirschenbaumstr.: asphaltiert/betoniert	Q0 19560,689 19648,656 19736,623
+#: by: Reinhardt Herold:
+Altenberger Weg: Beton	Q0 9725,20260 9840,20286 9972,20307 10066,20323
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
@@ -6737,6 +6741,7 @@ Zeiler Weg: Kopfsteinpflaster	Q2 11495,18129 11579,18184 11665,18237 11750,18273
 Stuckstr.: Asphalt	Q2 14446,8983 14525,8894 14619,8794
 #: by: Detlef Neubauer [AM] vvv
 Gotlindestr.: Asphalt	Q0 16859,12613 16957,12599 17088,12617 17357,12566
+#: confirmed_by: srt
 Gotlindestr.: Beton mit Ausbesserungen	Q1 15947,12626 16284,12616 16409,12612 16576,12612 16720,12614 16859,12613
 Dietlindestr.: Asphalt	Q0 17056,12304 17087,12501 17088,12617
 Ortliebstr.: Asphalt	Q0 17087,12501 17197,12488 17230,12481

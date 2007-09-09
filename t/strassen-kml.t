@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-kml.t,v 1.4 2007/08/12 19:25:40 eserte Exp $
+# $Id: strassen-kml.t,v 1.5 2007/09/09 15:10:07 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -91,6 +91,7 @@ isa_ok($s, "Strassen");
     my @sample_coords = get_sample_coordinates_1();
 
     local $Strassen::KML::TEST_SET_NAMESPACE_DECL_URI_HACK = 1;
+    $Strassen::KML::TEST_SET_NAMESPACE_DECL_URI_HACK = $Strassen::KML::TEST_SET_NAMESPACE_DECL_URI_HACK if 0; # cease -w
     my $s = Strassen::KML->new($file);
     isa_ok($s, "Strassen", "File <$file> loaded OK");
     my @data = @{ $s->data };

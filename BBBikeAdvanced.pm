@@ -3177,7 +3177,7 @@ sub search_anything {
 		    utf8::upgrade($_) if $need_utf8_upgrade;
 		    if (defined $s_munged) {
 			if (/^#:\s*encoding:\s*(.*)/) {
-			    Strassen::Core::switch_encoding(\*GREP, $1);
+			    Strassen::switch_encoding(\*GREP, $1);
 			}
 			next if /^\#/;
 			my($rec) = Strassen::parse($_);
@@ -3187,7 +3187,7 @@ sub search_anything {
 		    } else {
 			if (!defined $pid) { # we have to do the grep ourselves
 			    if (/^#:\s*encoding:\s*(.*)/) {
-				Strassen::Core::switch_encoding(\*GREP, $1);
+				Strassen::switch_encoding(\*GREP, $1);
 			    }
 			    next unless /$s_rx.*\t/i;
 			}

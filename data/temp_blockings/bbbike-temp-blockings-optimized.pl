@@ -193,7 +193,7 @@ push @temp_blocking,
          'text' => 'Gürtelstr. (Friedrichshain) RIchtung Boxhagener Str. zwischen Frankfurter Allee und Oderstr. Baustelle, Fahrtrichtung gesperrt (bis 11.2007)',
          'from' => 1169710498,
          'id' => 827,
-         'data' => 'userdel	q4::inwork; 15349,12073 15288,11968 15243,11881 15203,11807 15091,11596
+         'data' => 'userdel	q4::inwork; 15243,11881 15203,11807 15091,11596
 ',
          'type' => 'handicap'
        },
@@ -835,16 +835,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_006352',
-         'until' => undef,
-         'text' => 'Oranienburger Str. (Reinickendorf) stadtauswärts, zwischen Lübarser Str. und WIttenauer Str. Baustelle, Fahrtrichtung gesperrt',
-         'from' => undef,
-         'id' => 1128,
-         'data' => 'userdel	1::inwork 5326,21407 5311,21495 5149,21721
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1198278000,
@@ -861,7 +852,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'text' => 'B 112 Eisenhüttenstadt-Frankfurt (O) zw. Güldendorf und Frankfurt (O) Deckenerneuerung Richtungsverkehr 28.08.2007-15.09.2007 ',
          'from' => 1188165600,
          'id' => 1132,
-         'data' => 'userdel	1::inwork 87207,-9278 86800,-8681
+         'data' => 'userdel	1::inwork 87207,-9278 86790,-8657
 ',
          'type' => 'gesperrt'
        },
@@ -911,15 +902,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1189288800,
-         'text' => 'L 070 Wernzhain-Trebbus zw. Hauptstr. in OL Werenzhain und OE Arenzhain Deckenerneuerung Vollsperrung 22.08.2007-08.09.2007 ',
-         'from' => 1187647200,
-         'id' => 1139,
-         'data' => 'userdel	2::inwork 19820,-81831 20862,-83214
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1192485600,
          'text' => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Neue Beelitzer Str. Straßenausbau Vollsperrung 18.07.2007-15.10.2007 ',
@@ -989,6 +972,15 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'data' => 'userdel	q4::inwork 25412,-29762 25240,-29746
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1217541600,
+         'text' => 'K 7305 Bahnunterführung bis Welsow Brückenbau u. Straßenneubau Vollsperrung 10.09.2007-31.07.2008 ',
+         'from' => 1189288800,
+         'id' => 1153,
+         'data' => 'userdel	2::inwork 48437,74675 49075,74662 49734,74527
+',
+         'type' => 'gesperrt'
        }
      
 );
