@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.17 2007/07/10 00:19:03 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.18 2007/09/10 18:36:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!caller(2)) {
@@ -229,6 +229,7 @@ sub do_google_search {
 		    berlinische-monatsschrift.de
 		    berlinvisite.de
 		    berlin-visite.de
+		    berlin-ehrungen.de
 		  ));
 	if ($DEBUG) {
 	    use Devel::Peek; Dump $query;

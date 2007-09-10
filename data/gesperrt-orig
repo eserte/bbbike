@@ -448,6 +448,11 @@ Lossebergplatz	1 16070,23566 16094,23554 16095,23539 16079,23535 16064,23547 160
 #: XXX Annahme, da Radweg am Dammfuﬂ verl‰uft
 Spindlersfelder Str.	2 21316,3662 21127,4180 21121,4234 21080,4702 21075,4769 21065,4957
 Rathausstr.:	1 15651,12214 15628,12246 15576,12315 15537,12367
+Alt-Marzahn	1 21112,15396 21042,15428 20967,15458 20796,15559 20903,15545 20988,15505 21051,15464 21112,15396
+Bonifaziusstr.	1 2635,21559 2699,21401 2714,21369 2728,21336 2760,21269 2840,21141
+Bonifaziusstr.	1 2819,21128 2737,21256 2690,21363 2621,21538
+Sandgrasweg	1 2851,21089 2819,21128
+Sandgrasweg	1 2840,21141 2866,21103
 ######################################################################
 #
 # Potsdam
@@ -587,6 +592,8 @@ Atzpodienstr. (Umgehung auf Gehweg mˆglich)	1s 16485,12384 16509,12518 16564,125
 #
 #: note: Luftbild
 Blumberger Damm: Mittelstreifen	3nocross 21381,14506 21408,14591 21521,14943
+#: note: Luftbild
+Blumberger Damm: Straﬂenbahntrasse	3nocross 21232,15465 21187,15350 21163,15289
 Schˆnholzer Str.: Straﬂenbahn auf der Fahrbahn	3nocross 10089,18180 10054,18210 9909,18333
 #: by: stefan: (sw-...)
 M¸ggelheimer Str.: Straﬂenbahntrasse	3nocross 22686,4310 22812,4236 22967,4144
@@ -617,8 +624,8 @@ Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4469,8037 4659,7982 479
 Rhinstr.: Straﬂenbahntrasse	3nocross 18215,12132 18216,12262 18220,12450
 Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 19628,13517 19807,13529 19837,13531 20182,13554
 Bornhomer Str.: Straﬂenbahntrasse	3nocross 10765,16486 10699,16492 10620,16497
-Bornhomer Str.: Straﬂenbahntrasse	3nocross 10620,16497 10533,16505 10445,16511
-Bornhomer Str.: Straﬂenbahntrasse	3nocross 10445,16511 10370,16516 10282,16522 10197,16528
+Bornhomer Str.: Straﬂenbahntrasse	3nocross 10620,16497 10533,16505 10458,16509
+Bornhomer Str.: Straﬂenbahntrasse	3nocross 10458,16509 10370,16516 10282,16522 10197,16528
 Karl-Liebknecht-Str./Rosenstr.: Straﬂenbahntrasse	3nocross 10440,12696 10519,12768 10699,12929
 Martin-Luther-Str.: Mittelstreifen	3nocross 6514,9775 6520,9867 6522,9948
 Schˆnhauser Allee: U-Bahnviadukt und Straﬂenbahn	3nocross 11013,16278 11003,16196 10994,16120
@@ -1051,6 +1058,7 @@ Danziger Str.: Straﬂenbahnschienen	3nocross 13100,13803 13166,13707 13225,13620 
 Pintschstr.	1 13342,13185 13438,12965
 Weidenweg (Friedrichshain)	1s 13678,12571 13608,12547
 Landsberger Allee	3nocross 12386,13085 12582,13128 12727,13159
+Landsberger Allee	3nocross 20551,15582 20641,15622 20796,15667
 #: by: jˆrg (schalkau):
 Landsberger Allee	3nocross 17252,14471 17398,14490 17841,14546
 Kalkhorster Weg (10 Stufen)	0:40 3931,8638

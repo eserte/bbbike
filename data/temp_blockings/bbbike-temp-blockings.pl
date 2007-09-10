@@ -2992,7 +2992,7 @@ EOF
        text  => 'Josef-Orlopp-Str. (Lichtenberg) in Richtung Storkower Str. zwischen Siegfriedstr. und Vulkanstr. Fahrbahnerneuerung, Fahrtrichtung gesperrt (bis 23.10.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 16863,13138 15912,13153
+userdel	1 16863,13138 16426,13145 15912,13153
 EOF
      },
      { from  => 1128899379, # 2005-10-10 01:09 (by Tagesspiegel)
@@ -5228,7 +5228,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004084',
        data  => <<EOF,
-userdel	1::inwork 16863,13138 15912,13153
+userdel	1::inwork 16863,13138 16426,13145 15912,13153
 EOF
      },
      { from  => 1154210400, # 2006-07-30 00:00
@@ -9459,12 +9459,12 @@ userdel	2::temp 8063,12182 7816,12150 7383,12095 6828,12031
 EOF
      },
      { from  => undef, # 
-       until => Time::Local::timelocal(reverse(2007-1900,9-1,19,23,59,59)), # XXX Richtung Westen nur bis zum 8.9.2007 gesperrt
-       text  => 'Gitschiner Str. (Kreuzberg) in beiden Richtungen zwischen Lobeckstr. und Prinzenstr. wegen einer geplatzten Wasserleitung gesperrt, Radfahrer können auf dem Gehweg passieren',
+       until => Time::Local::timelocal(reverse(2007-1900,10-1,15,23,59,59)),
+       text  => 'Gitschiner Str. (Kreuzberg) in Richtung Hallesches Tor zwischen Lobeckstr. und Prinzenstr. wegen einer geplatzten Wasserleitung bis Mitte Oktober 2007 gesperrt, Radfahrer können auf dem Gehweg passieren',
        type  => 'gesperrt',
        source_id => 'IM_006274',
        data  => <<EOF,
-userdel	2::inwork 10340,10301 10605,10312
+userdel	1::inwork 10605,10312 10340,10301
 EOF
      },
      { from  => 1188059338, # 

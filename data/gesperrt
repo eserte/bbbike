@@ -381,6 +381,11 @@ Techowpromenade	1 5219,20467 5185,20358 5173,20275 5170,20182
 Lossebergplatz	1 16070,23566 16094,23554 16095,23539 16079,23535 16064,23547 16070,23566
 Spindlersfelder Str.	2 21316,3662 21127,4180 21121,4234 21080,4702 21075,4769 21065,4957
 Rathausstr.:	1 15651,12214 15628,12246 15576,12315 15537,12367
+Alt-Marzahn	1 21112,15396 21042,15428 20967,15458 20796,15559 20903,15545 20988,15505 21051,15464 21112,15396
+Bonifaziusstr.	1 2635,21559 2699,21401 2714,21369 2728,21336 2760,21269 2840,21141
+Bonifaziusstr.	1 2819,21128 2737,21256 2690,21363 2621,21538
+Sandgrasweg	1 2851,21089 2819,21128
+Sandgrasweg	1 2840,21141 2866,21103
 Stadtheide	1 -15432,-2763 -15504,-2984 -15537,-3091 -15501,-3122
 Gregor-Mendel-Str.	1 -13693,-528 -13784,-537 -13948,-564 -14034,-571
 Schillerstr.	1 -14236,-2125 -14252,-1978
@@ -514,6 +519,8 @@ Björnsonstr.	1s 10209,16674 10197,16528
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
 Blumberger Damm -> Fridolinweg: Mittelstreifen	3 21521,14943 21408,14591 21450,14576
 Fridolinweg -> Blumberger Damm: Mittelstreifen	3 21450,14576 21408,14591 21381,14506
+Allee der Kosmonauten -> Alt-Marzahn: Straßenbahntrasse	3 21163,15289 21187,15350 21139,15376
+Alt-Marzahn -> Allee der Kosmonauten: Straßenbahntrasse	3 21139,15376 21187,15350 21232,15465
 Schönholzer Str. -> Wollankstr.: Straßenbahn auf der Fahrbahn	3 10089,18180 10054,18210 10027,18165
 Pohlestr. -> Müggelheimer Str.: Straßenbahntrasse	3 22831,4070 22812,4236 22686,4310
 Müggelheimer Str. -> Pohlestr.: Straßenbahntrasse	3 22967,4144 22812,4236 22831,4070
@@ -587,9 +594,9 @@ Allee der Kosmonauten -> Langhoffstr.: Straßenbahntrasse	3 19628,13517 19807,135
 Allee der Kosmonauten -> Biesdorfer Promenade: Straßenbahntrasse	3 20182,13554 19837,13531 19826,13444
 Biesdorfer Promenade -> Allee der Kosmonauten: Straßenbahntrasse	3 19826,13444 19837,13531 19807,13529
 Aalesunder Str. -> Bornholmer Str.: Straßenbahntrasse	3 10549,16650 10533,16505 10620,16497
-Bornholmer Str. -> Aalesunder Str.: Straßenbahntrasse	3 10445,16511 10533,16505 10549,16650
+Bornholmer Str. -> Aalesunder Str.: Straßenbahntrasse	3 10458,16509 10533,16505 10549,16650
 Bornholmer Str. -> Bergener Str.: Straßenbahntrasse	3 10282,16522 10370,16516 10382,16661
-Bergener Str. -> Bornholmer Str.: Straßenbahntrasse	3 10382,16661 10370,16516 10445,16511
+Bergener Str. -> Bornholmer Str.: Straßenbahntrasse	3 10382,16661 10370,16516 10458,16509
 Andersenstr. -> Bornholmer Str.: Straßenbahntrasse	3 10295,16667 10282,16522 10370,16516
 Bornholmer Str. -> Andersenstr.: Straßenbahntrasse	3 10197,16528 10282,16522 10295,16667
 Karl-Liebknecht-Str. -> Rosenstr.: Straßenbahntrasse	3 10440,12696 10519,12768 10489,12803
@@ -1172,6 +1179,8 @@ Pintschstr.	1 13342,13185 13438,12965
 Weidenweg (Friedrichshain)	1s 13678,12571 13608,12547
 Ernst-Zinna-Weg -> Landsberger Allee: Landsberger Allee	3 12564,13216 12582,13128 12727,13159
 Landsberger Allee -> Ernst-Zinna-Weg: Landsberger Allee	3 12386,13085 12582,13128 12564,13216
+Landsberger Allee -> Alt-Marzahn: Landsberger Allee	3 20796,15667 20641,15622 20658,15589
+Alt-Marzahn -> Landsberger Allee: Landsberger Allee	3 20658,15589 20641,15622 20551,15582
 Landsberger Allee -> Schalkauer Str.: Landsberger Allee	3 17252,14471 17398,14490 17389,14599
 Schalkauer Str. -> Landsberger Allee: Landsberger Allee	3 17389,14599 17398,14490 17841,14546
 Kalkhorster Weg (10 Stufen)	0:40:-175 3931,8638

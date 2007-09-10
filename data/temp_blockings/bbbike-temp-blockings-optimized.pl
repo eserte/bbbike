@@ -813,11 +813,11 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        {
          'source_id' => 'IM_006274',
-         'until' => 1190239199,
-         'text' => 'Gitschiner Str. (Kreuzberg) in beiden Richtungen zwischen Lobeckstr. und Prinzenstr. wegen einer geplatzten Wasserleitung gesperrt, Radfahrer können auf dem Gehweg passieren',
+         'until' => 1192485599,
+         'text' => 'Gitschiner Str. (Kreuzberg) in Richtung Hallesches Tor zwischen Lobeckstr. und Prinzenstr. wegen einer geplatzten Wasserleitung bis Mitte Oktober 2007 gesperrt, Radfahrer können auf dem Gehweg passieren',
          'from' => undef,
          'id' => 1122,
-         'data' => 'userdel	2::inwork 10340,10301 10605,10312
+         'data' => 'userdel	1::inwork 10605,10312 10340,10301
 ',
          'type' => 'gesperrt'
        },
