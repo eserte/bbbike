@@ -8424,7 +8424,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005680',
        data  => <<EOF,
-userdel	1::inwork 2029,20331 2259,20480
+userdel	1::inwork 2029,20331 2241,20487
 EOF
      },
      { from  => 1181165074, # undef
@@ -9725,6 +9725,72 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 48437,74675 49075,74662 49734,74527
+EOF
+     },
+     { from  => 1189543409, # 2007-09-11 22:43
+       until => 1189807200, # 2007-09-15 00:00
+       text  => 'Alexanderstr. (Mitte) Richtung Jannowitzbrücke, zwischen Grunerstr. und Holzmarktstr. Baustelle, Fahrtrichtung gesperrt (bis 14.09.07)',
+       type  => 'gesperrt',
+       source_id => 'IM_006622',
+       data  => <<EOF,
+userdel	1::inwork 11134,12793 11207,12706 11323,12484
+EOF
+     },
+     { from  => 1189893600, # 2007-09-16 00:00
+       until => 1190584800, # 2007-09-24 00:00
+       text  => 'B 087 Ortsumgehung Müllrose - Ragow Ortsausg.Müllrose bis hinter Ragow Straßenbauarbeiten Vollsperrung 17.09.2007-23.09.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 74920,-18929 76631,-18359
+userdel	2::inwork 71815,-22343 73222,-20567 74707,-18991
+EOF
+     },
+     { from  => 1189893600, # 2007-09-16 00:00
+       until => 1190584800, # 2007-09-24 00:00
+       text  => 'B 087 Ortsumgehung Müllrose - Ragow Ortsausg.Müllrose bis hinter Ragow Straßenbauarbeiten Vollsperrung 17.09.2007-23.09.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 33060,-85292 33021,-85257
+EOF
+     },
+     { from  => 1189461600, # 2007-09-11 00:00
+       until => 1209592800, # 2008-05-01 00:00
+       text  => 'K 6422 Eggersdorfer Str. Petershagen, zw.Trift- u. Lessingstr.,Bahn Straßenbau Vollsperrung 12.09.2007-30.04.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 36666,14172 36677,14087 36654,13977 35900,13643
+EOF
+     },
+     { from  => 1189461600, # 2007-09-11 00:00
+       until => 1209592800, # 2008-05-01 00:00
+       text  => 'K 6422 Eggersdorfer Str. Petershagen, zw.Trift- u. Lessingstr.,BahnLandsbg.Str. Straßenbau Vollsperrung 12.09.2007-30.04.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -579,33145 -409,33522 103,33971
+EOF
+     },
+     { from  => 1188856800, # 2007-09-04 00:00
+       until => 1198191600, # 2007-12-21 00:00
+       text  => 'L 026 Landesgrenze - AS Prenzlau-Ost (BAB A11) zw. OA Wollschow u. OE Brüssow Straßen-/Radwegebau Vollsperrung 05.09.2007-20.12.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 61502,112547 60639,112544 58357,111700 57995,111657
+EOF
+     },
+     { from  => 1174172400, # 2007-03-18 00:00
+       until => 1191621600, # 2007-10-06 00:00
+       text  => 'L 191 L172 Abzw. Germendorf-Sommerfeld OD Sommerfeld grundhafter Ausbau Vollsperrung 19.03.2007-05.10.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -15397,43682 -14950,43712
+EOF
+     },
+     { from  => 1189288800, # 2007-09-09 00:00
+       until => 1194562800, # 2007-11-09 00:00
+       text  => 'L 214 OD Blumenow OD Blumenow Straßenbau+Kanalisationsbau Vollsperrung 10.09.2007-08.11.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -1406,77488 -1232,77061 -1123,76677
 EOF
      },
     );

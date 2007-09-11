@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: basic.t,v 1.17 2007/04/10 20:36:19 eserte Exp $
+# $Id: basic.t,v 1.18 2007/09/11 21:15:19 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -188,6 +188,7 @@ for my $f (@files) {
 		     | Strassen/MultiBezStr.pm
 		     | GPS/DirectGarmin.pm
 		     | GPS/SerialStty.pm
+		     | lib/AutoInstall/Tk.pm # this is because of warnings in CPAN.pm
 		   )$}x) {
 	    $can_w = 0;
 	}
