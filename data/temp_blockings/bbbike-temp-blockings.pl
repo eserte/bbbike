@@ -1967,7 +1967,7 @@ EOF
        text  => 'L 35; (Eisenbahnstr.); OL Fürstenwalde, zw. Wassergasse und Frankfurter Str. Frühlingsfest Vollsperrung 25.05.2005-30.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 55393,-4240 55562,-4726
+userdel	q4 55447,-4247 55447,-4585 55562,-4726
 EOF
      },
      { from  => 1117080000, # 2005-05-26 06:00
@@ -5973,7 +5973,7 @@ EOF
        text  => 'L 304 AS Bernau Nord - B273 AS Bernau Nord - B273 Straßenbau Vollsperrung 28.09.2006-22.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 18242,34708 18742,34289 19275,33344
+userdel	2::inwork 18242,34708 18717,34274 19290,33278
 EOF
      },
      { from  => 1159653600, # 2006-10-01 00:00
@@ -9728,7 +9728,7 @@ userdel	2::inwork 48437,74675 49075,74662 49734,74527
 EOF
      },
      { from  => 1189543409, # 2007-09-11 22:43
-       until => 1189807200, # 2007-09-15 00:00
+       until => 1189633841, # 2007-09-15 00:00 1189807200
        text  => 'Alexanderstr. (Mitte) Richtung Jannowitzbrücke, zwischen Grunerstr. und Holzmarktstr. Baustelle, Fahrtrichtung gesperrt (bis 14.09.07)',
        type  => 'gesperrt',
        source_id => 'IM_006622',
@@ -9791,6 +9791,30 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -1406,77488 -1232,77061 -1123,76677
+EOF
+     },
+     { from  => 1188424800, # 2007-08-30 00:00
+       until => 1198278000, # 2007-12-22 00:00
+       text  => 'B2 zw. Spechthausen u.Eberswalde Brücke Leuenberger Wiesengraben Brückenneubau Vollsperrung, Radfahrer können wahrscheinlich passieren 31.08.2007-21.12.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 36000,45950 35743,45915
+EOF
+     },
+     { from  => 1188684000, # 2007-09-02 00:00
+       until => 1199142000, # 2008-01-01 00:00
+       text  => 'L 035 Dr. W.-Külz-Str. OL Fü.-walde zw. Sembritzki- u. Eisenbahnstr. Abwasserkanalbau Vollsperrung 03.09.2007-31.12.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 55447,-4585 55447,-4247
+EOF
+     },
+     { from  => 1189548000, # 2007-09-12 00:00
+       until => 1190066400, # 2007-09-18 00:00
+       text  => 'B 107 Jeserig-Wiesenburg Bahnübergang zw. Kreisverkehr u. Wiesenburg Gleisbauarbeiten Vollsperrung 13.09.2007-17.09.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -54890,-35286 -54891,-35326 -54881,-35591
 EOF
      },
     );

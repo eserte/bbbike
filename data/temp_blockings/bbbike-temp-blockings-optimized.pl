@@ -982,16 +982,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_006622',
-         'until' => 1189807200,
-         'text' => 'Alexanderstr. (Mitte) Richtung Jannowitzbrücke, zwischen Grunerstr. und Holzmarktstr. Baustelle, Fahrtrichtung gesperrt (bis 14.09.07)',
-         'from' => 1189543409,
-         'id' => 1154,
-         'data' => 'userdel	1::inwork 11134,12793 11207,12706 11323,12484
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1190584800,
          'text' => 'B 087 Ortsumgehung Müllrose - Ragow Ortsausg.Müllrose bis hinter Ragow Straßenbauarbeiten Vollsperrung 17.09.2007-23.09.2007 ',
@@ -1053,6 +1044,33 @@ userdel	2::inwork 71815,-22343 73222,-20567 74707,-18991
          'from' => 1189288800,
          'id' => 1161,
          'data' => 'userdel	2::inwork -1406,77488 -1232,77061 -1123,76677
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1198278000,
+         'text' => 'B2 zw. Spechthausen u.Eberswalde Brücke Leuenberger Wiesengraben Brückenneubau Vollsperrung, Radfahrer können wahrscheinlich passieren 31.08.2007-21.12.2007 ',
+         'from' => 1188424800,
+         'id' => 1162,
+         'data' => 'userdel	q4::inwork 36000,45950 35743,45915
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1199142000,
+         'text' => 'L 035 Dr. W.-Külz-Str. OL Fü.-walde zw. Sembritzki- u. Eisenbahnstr. Abwasserkanalbau Vollsperrung 03.09.2007-31.12.2007 ',
+         'from' => 1188684000,
+         'id' => 1163,
+         'data' => 'userdel	q4::inwork 55447,-4585 55447,-4247
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1190066400,
+         'text' => 'B 107 Jeserig-Wiesenburg Bahnübergang zw. Kreisverkehr u. Wiesenburg Gleisbauarbeiten Vollsperrung 13.09.2007-17.09.2007 ',
+         'from' => 1189548000,
+         'id' => 1164,
+         'data' => 'userdel	2::inwork -54890,-35286 -54891,-35326 -54881,-35591
 ',
          'type' => 'gesperrt'
        }
