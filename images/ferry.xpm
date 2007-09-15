@@ -2,8 +2,8 @@
 static char *ferry[] = {
 /* columns rows colors chars-per-pixel */
 "16 16 2 1",
-"  c #2ba2e2",
-". c white",
+"  c #2BA2E2",
+". c gray100",
 /* pixels */
 "................",
 ".              .",

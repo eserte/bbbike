@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.38 2007/05/20 22:48:10 eserte Exp $
+# $Id: Makefile,v 1.40 2007/09/15 19:35:17 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -84,6 +84,10 @@ bbbike_splash_tkbabybike.xpm: srtbike.xpm
 	convert $< $@
 	chmod ugo+r $@
 
+# .gif.xpm:
+# 	convert $< $@
+# 	chmod ugo+r $@
+
 # The following gifs are not generated automatically with ImageMagick
 # (quality would be too bad):
 #    mosque.gif
@@ -118,7 +122,6 @@ png-to-gif:	\
 		sbahn_klein.gif \
 		sbahn_mini.gif \
 		search_pref.gif \
-		star.gif \
 		steigung.gif \
 		ubahn_klein.gif \
 		ubahn_mini.gif \
@@ -149,13 +152,14 @@ png-to-gif:	\
 		droga_krajowa_table_32.gif \
 		droga_krajowa_table_16.gif \
 		bbbike_google.gif \
-		berliner_stadtplan.gif \
 		rampe.gif \
 		aufzug_klein2.gif \
 		aufzug_klein.gif \
 		aufzug.gif \
 		grenzuebergang_32.gif \
 		grenzuebergang_16.gif \
+		museum.gif \
+		theater.gif \
 
 png-to-xpm:	\
 		ampel.xpm \
@@ -178,7 +182,6 @@ png-to-xpm:	\
 		sbahn_klein.xpm \
 		sbahn_mini.xpm \
 		search_pref.xpm \
-		star.xpm \
 		steigung.xpm \
 		ubahn.xpm \
 		ubahn_klein.xpm \
@@ -200,11 +203,13 @@ png-to-xpm:	\
 		synagogue.xpm \
 		mosque.xpm \
 		bbbike_google.xpm \
-		berliner_stadtplan.xpm \
 		rampe.xpm \
 		aufzug_klein2.xpm \
 		aufzug_klein.xpm \
 		aufzug.xpm \
+		museum.xpm \
+		star.xpm \
+		theater.xpm \
 
 png-to-wbmp:	\
 		flag2_bl.wbmp \
@@ -219,6 +224,11 @@ png-to-jpg:	\
 		ubahn_mini.jpg \
 		sbahn_mini.jpg \
 
+# .PHONY: star.gif
+
+# star.xpm:	star.gif
+# 	convert $< $@
+# 	chmod ugo+r $@
 
 #XXX .PHONY: favicon.ico srtbike.ico
 
@@ -238,7 +248,9 @@ png-to-jpg:	\
 
 # All 16 versions: same procedure, only with -scale 16
 
-# start.png, via.png, ziel.png should NOT be used to create corresponding gifs
+# star.png start.png, via.png, ziel.png should NOT be used to create corresponding gifs
+# This also means that there cannot be any makefile rules gif -> xpm, because this
+# would fire the corresponding png -> gif rule.
 # dest.png was used to create dest.gif (by GIMP), but looks ugly
 
 # Creation of ampelf*noalpha.png

@@ -3,7 +3,7 @@ static char *ubahn[] = {
 /* columns rows colors chars-per-pixel */
 "15 15 2 1",
 "  c navy",
-". c white",
+". c gray100",
 /* pixels */
 "               ",
 "               ",

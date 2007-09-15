@@ -288,14 +288,17 @@ data/sehenswuerdigkeit
 data/sehenswuerdigkeit_img/berliner_dom.gif
 data/sehenswuerdigkeit_img/bodemuseum.png
 data/sehenswuerdigkeit_img/bodemuseum_klein.png
+data/sehenswuerdigkeit_img/bodemuseum_klein.gif
 data/sehenswuerdigkeit_img/brandenburger_tor.gif
 data/sehenswuerdigkeit_img/einsteinturm.gif
 data/sehenswuerdigkeit_img/fernsehturm.gif
 data/sehenswuerdigkeit_img/friedrichswerdersche_kirche.png
 data/sehenswuerdigkeit_img/friedrichswerdersche_kirche_klein.png
+data/sehenswuerdigkeit_img/friedrichswerdersche_kirche_klein.gif
 data/sehenswuerdigkeit_img/funkturm.gif
 data/sehenswuerdigkeit_img/gedaechtniskirche.gif
 data/sehenswuerdigkeit_img/heilandskirche_sacrow.png
+data/sehenswuerdigkeit_img/heilandskirche_sacrow.gif
 data/sehenswuerdigkeit_img/luftbrueckendenkmal.gif
 data/sehenswuerdigkeit_img/oberbaumbruecke.gif
 data/sehenswuerdigkeit_img/oberbaumcity.gif
@@ -305,6 +308,7 @@ data/sehenswuerdigkeit_img/siegessaeule.gif
 data/sehenswuerdigkeit_img/viktoriaparkdenkmal.gif
 data/sehenswuerdigkeit_img/wasserturm_jungfernheide.gif
 data/sehenswuerdigkeit_img/wasserturm_ostkreuz.png
+data/sehenswuerdigkeit_img/wasserturm_ostkreuz.gif
 data/strassen
 data/strassen_bab
 data/ubahn
@@ -635,6 +639,9 @@ images/movehand.gif
 images/movehand.xpm
 images/movehand_ptr.xbm
 images/movehand_ptr_mask.xbm
+images/museum.gif
+images/museum.png
+images/museum.xpm
 images/newlayer.gif
 images/newlayer.png
 images/newlayer.xpm
@@ -722,6 +729,9 @@ images/strlist.xpm
 images/synagogue.gif
 images/synagogue.png
 images/synagogue.xpm
+images/theater.gif
+images/theater.png
+images/theater.xpm
 images/thunder_cursor.xbm
 images/touristinfo.gif
 images/touristinfo.png

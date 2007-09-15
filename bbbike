@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.324 2007/09/01 10:48:31 eserte Exp eserte $
+# $Id: bbbike,v 3.327 2007/09/15 20:58:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -210,7 +210,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.324 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.327 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -442,6 +442,14 @@ $gps_waypointlength = 10;
 $standard_height = 12;
 set_sans_serif_font_family();
 
+### Images
+@image_type_order = ('png', # best quality
+		     'jpg', # 24bit, good quality
+		     'xpm', # small memory size (8bit pixmaps)
+		     'gif',
+		    );
+$default_img_fmt = 'xpm'; # XXX This variable should die some time!
+
 define_item_attribs();
 
 generate_plot_functions();
@@ -586,6 +594,10 @@ eval { local $SIG{'__DIE__'};
 ## DEBUG_END
 
 handle_options();
+
+if ($lowmem) {
+    @image_type_order = ('xpm', 'gif', 'jpg', 'png');
+}
 
 ## DEBUG_BEGIN
 #mymstat("after getopt processing");
@@ -986,15 +998,15 @@ if (defined $init_scale_massstab) {
     }
 }
 
-$srtbike_photo = load_photo($top, 'srtbike_solid.' . $default_img_fmt);
+$srtbike_photo = load_photo($top, 'srtbike_solid'); # XXX.' . $default_img_fmt);
 if ($os eq 'win' || $^O eq 'cygwin') {
     # srtbike32.* looks broken on Win98,
     # and srtbike16.* looks broken on WinXP
     if ($ENV{OS} && $ENV{OS} eq 'Windows_NT') { # this seems to be the case for XP
-	$srtbike_icon = load_photo($top, 'srtbike32.' . $default_img_fmt);
+	$srtbike_icon = load_photo($top, 'srtbike32'); # XXX.' . $default_img_fmt);
     } else {
 	#XXX what does this mean? # $srtbike_icon is also used in info window, so stick to 16x16 in every case.
-	$srtbike_icon = load_photo($top, 'srtbike16.' . $default_img_fmt);
+	$srtbike_icon = load_photo($top, 'srtbike16'); # XXX.' . $default_img_fmt);
     }
 #XXX Produces funny colors --- Tk problem?!
 #    if ($srtbike_icon) {
@@ -1004,7 +1016,7 @@ if ($os eq 'win' || $^O eq 'cygwin') {
     # 16x16 is the preferred size for mini-icons in KDE
     # works also for twm (however, a little bit tiny)
     # $srtbike_icon is also used in info window, so stick to 16x16 in every case.
-    $srtbike_icon = load_photo($top, 'srtbike16.' . $default_img_fmt);
+    $srtbike_icon = load_photo($top, 'srtbike16'); # XXX .' . $default_img_fmt);
     if ($srtbike_icon) {
 	$top->iconmask('@' . $FindBin::RealBin . '/images/srtbike16_mask.xbm');
     }
@@ -1215,7 +1227,7 @@ $ctrl_frame = $frame->Frame->pack(-anchor => 'w', -fill => 'x');
 
 $splash_screen->Update(0.1) if $splash_screen;
 
-$menuarrow_photo = load_photo($top, 'menupfeil.' . $default_img_fmt);
+$menuarrow_photo = load_photo($top, 'menupfeil'); # XXX.' . $default_img_fmt);
 
 my $col = 0;
 use vars qw($top_frame);
@@ -1294,12 +1306,12 @@ $percent_frame->Label(-width => 4,
 $balloon->attach($percent_frame, -msg => M"% über Luftlinie");
 $ch->attach($percent_frame, -pod => "^\\s*%");
 
-$ampel_klein_photo      = load_photo($top, 'ampel_klein.' . $default_img_fmt);
-$ampel_klein_grey_photo = load_photo($top, 'ampel_klein_grey.' . $default_img_fmt);
-$kopfstein_klein_photo      = load_photo($top, 'kopfstein_klein.' . $default_img_fmt);
-$kopfstein_klein_grey_photo = load_photo($top, 'kopfstein_klein_grey.' . $default_img_fmt);
-$star_photo             = load_photo($top, 'star.' . $default_img_fmt);
-$newlayer_photo		= load_photo($top, 'newlayer.' . $default_img_fmt);
+$ampel_klein_photo      = load_photo($top, 'ampel_klein'); # XXX .' . $default_img_fmt);
+$ampel_klein_grey_photo = load_photo($top, 'ampel_klein_grey'); # XXX .' . $default_img_fmt);
+$kopfstein_klein_photo      = load_photo($top, 'kopfstein_klein'); # XXX .' . $default_img_fmt);
+$kopfstein_klein_grey_photo = load_photo($top, 'kopfstein_klein_grey'); # XXX .' . $default_img_fmt);
+$star_photo             = load_photo($top, 'star'); # XXX del: . .$default_img_fmt);
+$newlayer_photo		= load_photo($top, 'newlayer'); # XXX .' . $default_img_fmt);
 
 for(my $i = 0; $i <= $#speed; $i++) {
     my $ii = $i; # für das sub
@@ -1718,7 +1730,7 @@ sub do_iconframe {
     $misc_frame->gridColumnconfigure(999, -weight => 1); # force buttons to the left
     $col = 0;
 ##### Straßen #####
-    $strasse_photo = load_photo($misc_frame, 'strasse.' . $default_img_fmt);
+    $strasse_photo = load_photo($misc_frame, 'strasse'); # XXX .' . $default_img_fmt);
     my $strasse_check = $misc_frame->$Checkbutton
       (image_or_text($strasse_photo, 'Str'),
        -variable => \$str_draw{'s'},
@@ -1967,7 +1979,7 @@ sub do_iconframe {
 
 ##### Landstraßen #####
     $landstrasse_photo =
-      load_photo($misc_frame, 'landstrasse.' . $default_img_fmt);
+      load_photo($misc_frame, 'landstrasse'); # XXX .' . $default_img_fmt);
     my $landstrasse_check = $misc_frame->$Checkbutton
       (image_or_text($landstrasse_photo, 'LStr'),
        -variable => \$str_draw{'l'},
@@ -2033,7 +2045,7 @@ sub do_iconframe {
     menuarrow($lstrcmb, $lstrcm, $col++, -special => 'LAYER');
 
 ##### Orte #####
-    $ort_photo = load_photo($misc_frame, 'ort.' . $default_img_fmt);
+    $ort_photo = load_photo($misc_frame, 'ort'); # XXX .' . $default_img_fmt);
     my $ort_check = $misc_frame->$Checkbutton
       (image_or_text($ort_photo, 'Ort'),
        -variable => \$p_draw{'o'},
@@ -2114,7 +2126,7 @@ sub do_iconframe {
     menuarrow($ocmb, $ocm, $col++, -special => 'LAYER');
 
 ##### U-Bahn #####
-    $ubahn_photo = load_photo($misc_frame, 'ubahn.' . $default_img_fmt);
+    $ubahn_photo = load_photo($misc_frame, 'ubahn'); # XXX .' . $default_img_fmt);
     my $ubahn_check = $misc_frame->$Checkbutton
       (image_or_text($ubahn_photo, 'U'),
        -variable => \$str_draw{'u'},
@@ -2170,7 +2182,7 @@ sub do_iconframe {
 	      -menulabel => M"U-Bahn", -special => 'LAYER');
 
 ##### S-Bahn #####
-    $sbahn_photo = load_photo($misc_frame, 'sbahn.' . $default_img_fmt);
+    $sbahn_photo = load_photo($misc_frame, 'sbahn'); # XXX .' . $default_img_fmt);
     my $sbahn_check = $misc_frame->$Checkbutton
       (image_or_text($sbahn_photo, 'S'),
        -variable => \$str_draw{'b'},
@@ -2226,7 +2238,7 @@ sub do_iconframe {
 	      -menulabel => M"S-Bahn", -special => 'LAYER');
 
 ##### RB #####
-    $rbahn_photo = load_photo($misc_frame, 'rbahn.' . $default_img_fmt);
+    $rbahn_photo = load_photo($misc_frame, 'rbahn'); # XXX .' . $default_img_fmt);
     my $rbahn_check = $misc_frame->$Checkbutton
       (image_or_text($rbahn_photo, 'RB'),
        -variable => \$str_draw{'r'},
@@ -2278,7 +2290,7 @@ sub do_iconframe {
 	      -menulabel => M"R-Bahn", -special => 'LAYER');
 
 ##### Gewässer #####
-    $wasser_photo = load_photo($misc_frame, 'wasser.' . $default_img_fmt);
+    $wasser_photo = load_photo($misc_frame, 'wasser'); # XXX .' . $default_img_fmt);
     my $wasser_check = $misc_frame->$Checkbutton
       (image_or_text($wasser_photo, 'H20'),
        -variable => \$str_draw{'w'},
@@ -2328,7 +2340,7 @@ sub do_iconframe {
     menuarrow($wcmb, $wcm, $col++, -special => 'LAYER');
 
 ##### Flächen #####
-    $flaechen_photo = load_photo($misc_frame, 'flaechen.' . $default_img_fmt);
+    $flaechen_photo = load_photo($misc_frame, 'flaechen'); # XXX .' . $default_img_fmt);
     my $flaechen_check = $misc_frame->$Checkbutton
       (image_or_text($flaechen_photo, 'Fl'),
        -variable => \$str_draw{'f'},
@@ -2616,7 +2628,7 @@ sub do_iconframe {
 
 ###### Vergrößern #####
     my $mapscale_plus_photo = load_photo($misc_frame,
-					 'viewmag+.' . $default_img_fmt);
+					 'viewmag+'); # XXX .' . $default_img_fmt);
     my $mapscale_plus_button = $misc_frame->Button
       (image_or_text($mapscale_plus_photo, '+'),
        -command => sub { scalecanvas($c, 2) },
@@ -2627,7 +2639,7 @@ sub do_iconframe {
 
 ###### Verkleinern #####
     my $mapscale_minus_photo = load_photo($misc_frame,
-					  'viewmag-.' . $default_img_fmt);
+					  'viewmag-'); # XXX .' . $default_img_fmt);
     my $mapscale_minus_button = $misc_frame->Button
       (image_or_text($mapscale_minus_photo, '-'),
        -command => sub { scalecanvas($c, 0.5) },
@@ -2652,7 +2664,7 @@ sub do_iconframe {
 
 ##### Übersichtskarte
     my $berlin_overview_small_photo
-      = load_photo($top, 'berlin_overview_small.' . $default_img_fmt);
+      = load_photo($top, 'berlin_overview_small'); # XXX .' . $default_img_fmt);
     my $overview_check = $misc_frame->$Checkbutton
       (image_or_text($berlin_overview_small_photo, 'Ovw'),
        -variable => \$show_overview,
@@ -2675,7 +2687,7 @@ sub do_iconframe {
 
 ##### Windrose #####
     my $windrose_photo = load_photo($misc_frame,
-				    'windrose.' . $default_img_fmt);
+				    'windrose'); # XXX .' . $default_img_fmt);
     eval {
 	die "Low memory" if $lowmem;
 	require Tk::FireButton;
@@ -2716,7 +2728,7 @@ sub do_iconframe {
     $col = 0;
 
 ##### Komplex: Suche/Route ... #####
-    $search_photo = load_photo($misc_frame2, 'search.' . $default_img_fmt);
+    $search_photo = load_photo($misc_frame2, 'search'); # XXX .' . $default_img_fmt);
     my $search_button = $misc_frame2->$Radiobutton
       (image_or_text($search_photo, 'Route'),
        -variable => \$map_mode,
@@ -2864,7 +2876,7 @@ sub do_iconframe {
 
     #####
 
-    $search_pref_photo = load_photo($misc_frame2, 'search_pref.' . $default_img_fmt);
+    $search_pref_photo = load_photo($misc_frame2, 'search_pref'); # XXX .' . $default_img_fmt);
     my $search_pref_button = $misc_frame2->$Checkbutton
       (image_or_text($search_pref_photo, 'Sucheinst.'),
        -variable => \$show_enter_opt_preferences,
@@ -3075,7 +3087,7 @@ sub do_iconframe {
     #####
 
     my $strlist_photo = load_photo($misc_frame2,
-				   'strlist.' . $default_img_fmt);
+				   'strlist'); # XXX .' . $default_img_fmt);
     my $strlist_button = $misc_frame2->$Checkbutton
 	(image_or_text($strlist_photo, 'StrL'),
 	 -variable => \$show_strlist,
@@ -3113,7 +3125,7 @@ sub do_iconframe {
     menuarrow($slbmb, $slbm, $col, -menulabel => M"Routen~liste");
     $col++;
 
-    my $reset_photo = load_photo($misc_frame2, 'cross.' . $default_img_fmt);
+    my $reset_photo = load_photo($misc_frame2, 'cross'); # XXX .' . $default_img_fmt);
     my $reset_button = $misc_frame2->Button
 	(image_or_text($reset_photo, 'X'),
 	 -command => \&delete_route,
@@ -3142,7 +3154,7 @@ sub do_iconframe {
     $sbm->entryconfigure($sbm_reset_menu_index, -menu => $resetm->clone($sbmb, "normal"));
 
     my $reverse_photo = load_photo($misc_frame2,
-				   'rueckweg.' . $default_img_fmt);
+				   'rueckweg'); # XXX .' . $default_img_fmt);
     my $reverse_button = $misc_frame2->Button
 	(image_or_text($reverse_photo, 'Rev'),
 	 -command => \&way_back_gui,
@@ -3158,7 +3170,7 @@ sub do_iconframe {
     $ch->attach($reverse_button, -pod => "^\\s*Rückweg-Symbol");
     $col++;
 
-    my $koord_photo = load_photo($misc_frame2, 'koord.' . $default_img_fmt);
+    my $koord_photo = load_photo($misc_frame2, 'koord'); # XXX .' . $default_img_fmt);
     my $buttonpoint_check = $misc_frame2->$Radiobutton
       (image_or_text($koord_photo, 'Koord'),
        -variable => \$map_mode,
@@ -3180,7 +3192,7 @@ sub do_iconframe {
     }
     $col++;
 
-    my $info_photo = load_photo($misc_frame2, 'info.' . $default_img_fmt);
+    my $info_photo = load_photo($misc_frame2, 'info'); # XXX .' . $default_img_fmt);
     my $info_check = $misc_frame2->$Radiobutton
 	(image_or_text($info_photo, 'Info'),
 	 -variable => \$map_mode,
@@ -3192,7 +3204,7 @@ sub do_iconframe {
     $col++;
 
 if (!$MM_DRAG_IS_OBSOLETE) {
-    my $drag_photo = load_photo($misc_frame2, 'movehand.' . $default_img_fmt);
+    my $drag_photo = load_photo($misc_frame2, 'movehand'); # XXX .' . $default_img_fmt);
     my $drag_check = $misc_frame2->$Radiobutton
 	(image_or_text($drag_photo, 'Drag'),
 	 -variable => \$map_mode,
@@ -3220,7 +3232,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 #mymstat("iconframe: load/save/print buttons");
 ## DEBUG_END
 ##### Komplex: Laden/Speichern/Drucken #####
-    my $load_photo = load_photo($misc_frame2, 'open.' . $default_img_fmt);
+    my $load_photo = load_photo($misc_frame2, 'open'); # XXX .' . $default_img_fmt);
     my $load_button = $misc_frame2->Button
       (image_or_text($load_photo, 'Load'),
        -command => sub { load_save_route(0) }
@@ -3237,7 +3249,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 	      -special   => "OPEN");
     $col++;
 
-    my $save_photo = load_photo($misc_frame2, 'save.' . $default_img_fmt);
+    my $save_photo = load_photo($misc_frame2, 'save'); # XXX .' . $default_img_fmt);
     my $save_button = $misc_frame2->Button
       (image_or_text($save_photo, 'Save'),
        -command => sub { load_save_route(1) }
@@ -3401,7 +3413,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
     menuarrow($svmb, $svm, $col++, -menulabel => M"Speichern",
 	      -special   => 'SAVE');
 
-    my $print_photo = load_photo($misc_frame2, 'printer.' . $default_img_fmt);
+    my $print_photo = load_photo($misc_frame2, 'printer'); # XXX .' . $default_img_fmt);
     my $print_button = $misc_frame2->Button
 	(image_or_text($print_photo, 'Print'),
 	 -command => sub { print_function() },
@@ -3446,7 +3458,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 					    -column => $col++);
 
 ##### Bikepower #####
-    my $bike_photo = load_photo($misc_frame2, 'bicycle.' . $default_img_fmt);
+    my $bike_photo = load_photo($misc_frame2, 'bicycle'); # XXX .' . $default_img_fmt);
     my $bike_button = $misc_frame2->Button
       (image_or_text($bike_photo, 'Bike'),
        -command => sub { my %args;
@@ -3475,7 +3487,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 					   -column => $col++);
 
 ##### Komplex: sonstige Optionen #####
-    my $opt_photo = load_photo($misc_frame2, 'opt.' . $default_img_fmt);
+    my $opt_photo = load_photo($misc_frame2, 'opt'); # XXX .' . $default_img_fmt);
     my $opt_button = $misc_frame2->Button
       (image_or_text($opt_photo, 'Opt'),
        -command => \&optedit,
@@ -3681,7 +3693,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
     menuarrow($opbmb, $opbm, $col++,
 	      -menulabel => M"~Einstellungen", -special => 'OPTIONS');
 
-    my $help_photo = load_photo($misc_frame2, 'help.' . $default_img_fmt);
+    my $help_photo = load_photo($misc_frame2, 'help'); # XXX .' . $default_img_fmt);
     my $help_button = $misc_frame2->Button
       (image_or_text($help_photo, '?'),
        -command => sub {
@@ -3825,7 +3837,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 	$misc_frame2->Label(-text => ' ')->grid(-row => $curr_row,
 						-column => $col++);
 
-	my $exit_photo = load_photo($misc_frame2, 'exit.' . $default_img_fmt);
+	my $exit_photo = load_photo($misc_frame2, 'exit'); # XXX .' . $default_img_fmt);
 	my $exit_button = $misc_frame2->Button
 	    (image_or_text($exit_photo, 'Exit'),
 	     -command => \&exit_app,
@@ -4942,6 +4954,9 @@ sub _set_public {
     $autosave_opts = 0;
     $lazy_plot = 0;
     undef $proxy;
+    # Not in old standard Tk:
+    $can_handle_image{png} = 0;
+    $can_handle_image{jpg} = 0;
 }
 
 sub c_balloon_update {
@@ -5006,36 +5021,36 @@ sub standard_selection_handle {
 }
 
 sub load_photos {
-    $flag_photo{'start'} = load_photo($top, 'flag2_bl_centered.' . $default_img_fmt);
-    $flag_photo{'via'}   = load_photo($top, 'flag_via_centered.' . $default_img_fmt);
-    $flag_photo{'ziel'}  = load_photo($top, 'flag_ziel_centered.' . $default_img_fmt);
-    $ampel_photo         = load_photo($top, 'ampel.' . $default_img_fmt);
-    $ampel_klein2_photo  = load_photo($top, 'ampel_klein2.' . $default_img_fmt);
-    $ampelf_photo        = load_photo($top, 'ampelf.' . $default_img_fmt);
-    $ampelf_klein_photo  = load_photo($top, 'ampelf_klein.' . $default_img_fmt);
-    $ampelf_klein2_photo = load_photo($top, 'ampelf_klein2.' . $default_img_fmt);
+    $flag_photo{'start'} = load_photo($top, 'flag2_bl_centered'); # XXX .' . $default_img_fmt);
+    $flag_photo{'via'}   = load_photo($top, 'flag_via_centered'); # XXX .' . $default_img_fmt);
+    $flag_photo{'ziel'}  = load_photo($top, 'flag_ziel_centered'); # XXX .' . $default_img_fmt);
+    $ampel_photo         = load_photo($top, 'ampel'); # XXX .' . $default_img_fmt);
+    $ampel_klein2_photo  = load_photo($top, 'ampel_klein2'); # XXX .' . $default_img_fmt);
+    $ampelf_photo        = load_photo($top, 'ampelf'); # XXX .' . $default_img_fmt);
+    $ampelf_klein_photo  = load_photo($top, 'ampelf_klein'); # XXX .' . $default_img_fmt);
+    $ampelf_klein2_photo = load_photo($top, 'ampelf_klein2'); # XXX .' . $default_img_fmt);
     $andreaskr_klein_photo = load_photo($top,
-					'andreaskr_klein.' . $default_img_fmt);
+					'andreaskr_klein'); # XXX .' . $default_img_fmt);
     $andreaskr_klein2_photo= load_photo($top,
-					'andreaskr_klein2.' . $default_img_fmt);
-    $andreaskr_photo     = load_photo($top, 'andreaskr.' . $default_img_fmt);
-    $vorfahrt_photo      = load_photo($top, 'vorfahrt.' . $default_img_fmt);
-    $vorfahrt_klein_photo= load_photo($top, 'vorfahrt_klein.' . $default_img_fmt);
-    $windrose2_photo     = load_photo($top, 'windrose2.' . $default_img_fmt);
-    $kneipen_photo       = load_photo($top, 'glas.' . $default_img_fmt);
-    $kneipen_klein_photo = load_photo($top, 'glas_klein.' . $default_img_fmt);
-    $essen_photo         = load_photo($top, 'essen.' . $default_img_fmt);
-    $essen_klein_photo   = load_photo($top, 'essen_klein.' . $default_img_fmt);
-    $kino_klein_photo    = load_photo($top, 'kino_klein.' . $default_img_fmt);
-    $steigung_photo      = load_photo($top, 'steigung.' . $default_img_fmt);
-    $gefaelle_photo      = load_photo($top, 'gefaelle.' . $default_img_fmt);
-    $inwork_photo        = load_photo($top, 'inwork.' . $default_img_fmt);
-    $cal_photo           = load_photo($top, 'cal.' . $default_img_fmt);
-    $ferry_photo         = load_photo($top, 'ferry.' . $default_img_fmt);
-    $ferry_klein_photo   = load_photo($top, 'ferry_klein.' . $default_img_fmt);
-    $zugbruecke_photo    = load_photo($top, 'zugbruecke.' . $default_img_fmt);
+					'andreaskr_klein2'); # XXX .' . $default_img_fmt);
+    $andreaskr_photo     = load_photo($top, 'andreaskr'); # XXX .' . $default_img_fmt);
+    $vorfahrt_photo      = load_photo($top, 'vorfahrt'); # XXX .' . $default_img_fmt);
+    $vorfahrt_klein_photo= load_photo($top, 'vorfahrt_klein'); # XXX .' . $default_img_fmt);
+    $windrose2_photo     = load_photo($top, 'windrose2'); # XXX .' . $default_img_fmt);
+    $kneipen_photo       = load_photo($top, 'glas'); # XXX .' . $default_img_fmt);
+    $kneipen_klein_photo = load_photo($top, 'glas_klein'); # XXX .' . $default_img_fmt);
+    $essen_photo         = load_photo($top, 'essen'); # XXX .' . $default_img_fmt);
+    $essen_klein_photo   = load_photo($top, 'essen_klein'); # XXX .' . $default_img_fmt);
+    $kino_klein_photo    = load_photo($top, 'kino_klein'); # XXX .' . $default_img_fmt);
+    $steigung_photo      = load_photo($top, 'steigung'); # XXX .' . $default_img_fmt);
+    $gefaelle_photo      = load_photo($top, 'gefaelle'); # XXX .' . $default_img_fmt);
+    $inwork_photo        = load_photo($top, 'inwork'); # XXX .' . $default_img_fmt);
+    $cal_photo           = load_photo($top, 'cal'); # XXX .' . $default_img_fmt);
+    $ferry_photo         = load_photo($top, 'ferry'); # XXX .' . $default_img_fmt);
+    $ferry_klein_photo   = load_photo($top, 'ferry_klein'); # XXX .' . $default_img_fmt);
+    $zugbruecke_photo    = load_photo($top, 'zugbruecke'); # XXX .' . $default_img_fmt);
     $zugbruecke_klein_photo
-	= load_photo($top, 'zugbruecke_klein.' . $default_img_fmt);
+	= load_photo($top, 'zugbruecke_klein'); # XXX .' . $default_img_fmt);
 #XXX not yet necessary:
 #    $blocked_photo       = load_photo($top, 'redcross.' . $default_img_fmt);
 }
@@ -5618,7 +5633,6 @@ sub define_item_attribs {
 	}
     }
 
-    $default_img_fmt = 'xpm';
     %obst_file =
 	('apfel'   => 'apfel.'   . $default_img_fmt,
 	 'kirsche' => 'kirsche.' . $default_img_fmt,
@@ -6428,14 +6442,48 @@ EOF
 sub maybe_expand_image_file {
     my($imgfile, $datafile, $subdir) = @_;
     if (file_name_is_absolute($imgfile)) {
-	return $imgfile;
+	return try_image_suffix($imgfile);
     }
-    my $abs_img = Tk::findINC("$subdir/$imgfile");
-    if ($abs_img) {
+    my $abs_img = try_image_suffix("$FindBin::RealBin/$subdir/$imgfile");
+    if (defined $abs_img && -r $abs_img) {
 	return $abs_img;
     }
+#XXX del:
+#     my $abs_img = Tk::findINC("$subdir/$imgfile");
+#     if ($abs_img) {
+# 	return $abs_img;
+#     }
     # relative to this file
-    return dirname($datafile) . "/" . $imgfile;
+    return try_image_suffix(dirname($datafile) . "/" . $imgfile);
+}
+
+sub try_image_suffix {
+    my($imgfile_without_suffix) = @_;
+    return $imgfile_without_suffix if $imgfile_without_suffix =~ m{\.(png|jpg|xpm|gif)$};
+    for my $suffix (@image_type_order) {
+	if (!defined $can_handle_image{$suffix}) {
+	    if ($suffix eq 'png') {
+		if (eval { require Tk::PNG; 1 }) {
+		    $can_handle_image{$suffix} = 1;
+		} else {
+		    $can_handle_image{$suffix} = 0;
+		}
+	    } elsif ($suffix eq 'jpg') {
+		if (eval { require Tk::JPEG; 1 }) {
+		    $can_handle_image{$suffix} = 1;
+		} else {
+		    $can_handle_image{$suffix} = 0;
+		}
+	    } else {
+		$can_handle_image{$suffix} = 1;
+	    }
+	}
+	my $try_imgfile = $imgfile_without_suffix.".".$suffix;
+	if ($can_handle_image{$suffix} && -r $try_imgfile) {
+	    return $try_imgfile;
+	}
+    }
+    undef;
 }
 
 sub set_bindings {
@@ -9344,7 +9392,7 @@ sub plot_sperre {
 	my $is_car = $gesperrt->file =~ /gesperrt_car/;
 	my $car_photo;
 	if ($is_car) {
-	    $car_photo = load_photo($top, 'car.' . $default_img_fmt, -persistent => 1);
+	    $car_photo = load_photo($top, 'car'); # XXX .' . $default_img_fmt, -persistent => 1);
 	}
 
 	my $width0  = get_line_width('sperre0');
@@ -12735,10 +12783,10 @@ sub show_info {
 	my($mapscale_scale) = $mapscale =~ /:\s*(\d+)/;
 
 	if (!$google_photo) {
-	    $google_photo = load_photo($top, 'google.gif');
+	    $google_photo = load_photo($top, 'google'); # XXX .gif');
 	}
 	if (!$bbbike_google_photo) {
-	    $bbbike_google_photo = load_photo($top, 'bbbike_google.gif');
+	    $bbbike_google_photo = load_photo($top, 'bbbike_google'); # XXX .gif');
 	}
 
 	{
@@ -12805,7 +12853,7 @@ sub show_info {
 	{
 
 	    if (!$wikipedia_photo) {
-		$wikipedia_photo = load_photo($top, 'wikipedia.gif');
+		$wikipedia_photo = load_photo($top, 'wikipedia'); # XXX .gif');
 	    }
 
 	    my(@x) = Karte::Polar::ddd2dms($px);
@@ -14530,13 +14578,15 @@ sub get_symbol_scale {
 	    my $base = $tag eq 'b' ? "sbahn" : "${tag}bahn";
 	    my $filename;
 	    if ($myscale > 2*$mod) {
-		$filename = $base ."." . $default_img_fmt;
+		$filename = $base;#XXX ."." . $default_img_fmt;
 	    } elsif ($myscale >= 0.5*$mod) {
-		$filename = $base . "_klein." . $default_img_fmt;
+		$filename = $base . "_klein"; # XXX ." . $default_img_fmt;
 	    } elsif ($myscale >= 0.2*$mod) {
-		$filename = $base . "_mini." . $default_img_fmt;
+		$filename = $base . "_mini"; # XXX ." . $default_img_fmt;
 	    }
-	    $photo = load_photo($top, $filename, -persistent => 1);
+	    if ($filename) {
+		$photo = load_photo($top, $filename, -persistent => 1);
+	    }
 	    return $photo;
 	} else {
 	    if ($myscale > 4*$mod) {
@@ -16870,7 +16920,7 @@ sub set_usercross_image {
     my($xy1,$xy2) = @_;
     if (!$usercross_photo) {
 	$usercross_photo =
-	    load_photo($top, 'usercross.' . $default_img_fmt);
+	    load_photo($top, 'usercross'); # XXX .' . $default_img_fmt);
     }
     my($x1,$y1,$x2,$y2) = (split(/,/,$xy1), split(/,/,$xy2));
     my($midx,$midy) = (int(($x2-$x1)/2+$x1), int(($y2-$y1)/2+$y1));
@@ -18891,6 +18941,10 @@ sub image_from_file {
 # image is shrinked to half width/height.
 sub load_photo {
     my($top, $file, %args) = @_;
+    if (!defined $file) {
+	require Data::Dumper;
+	die "File missing in load_photo, called in " . Dumper(caller);
+    }
     return $photo{$file} if exists $photo{$file};
     my $photo;
     unless ($lowmem) {
@@ -18899,7 +18953,14 @@ sub load_photo {
 	    if ($file =~ /.xpm$/ && !$small_icons) {
 		$photo = $top->Pixmap(@name, -file => Tk::findINC($file));
 	    } else {
-		$photo = $top->Photo(@name, -file => Tk::findINC($file));
+		my $path = "$FindBin::RealBin/images/$file";
+		$path = try_image_suffix($path);
+		if (defined $path && -r $path) {
+		    $photo = $top->Photo(@name, -file => $path);
+		} else {
+		    warn "Could not find <$path>, try <$file> in some \@INC dirs...\n"; # XXX should never happen?
+		    $photo = $top->Photo(@name, -file => Tk::findINC($file));
+		}
 	    }
 	    if ($small_icons && $photo) {
 		# XXX setting of @name missing
@@ -19515,6 +19576,10 @@ sub get_image {
     my $images = ($top->{'MapImages'} ||= {});
     my $p = $images->{$base};
     if (!$p) {
+	my $try_file = try_image_suffix($file);
+	if (defined $try_file) {
+	    $file = $try_file;
+	}
 	eval {
 	    if ($file =~ /\.png$/ && !exists $INC{"Tk/PNG.pm"}) {
 		require Tk::PNG;
@@ -19528,7 +19593,13 @@ sub get_image {
 	};
 	if (!$p) {
 	    eval {
-		my $file = Tk::findINC($file);
+		my $try_file = try_image_suffix("$FindBin::RealBin/images/$file");
+		if (defined $try_file) {
+		    $file = $try_file;
+		} else {
+		    warn "Could not find $file in images, try in \@INC..."; # XXX should never happen?
+		    $file = Tk::findINC($file);
+		}
 		#warn "Try $file...\n";
 		$p = $c->Photo(-file => $file)
 		    if defined $file;

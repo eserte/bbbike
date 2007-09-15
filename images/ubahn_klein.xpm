@@ -3,7 +3,7 @@ static char *ubahn_klein[] = {
 /* columns rows colors chars-per-pixel */
 "10 10 2 1",
 "  c navy",
-". c white",
+". c gray100",
 /* pixels */
 "          ",
 "  .    .  ",

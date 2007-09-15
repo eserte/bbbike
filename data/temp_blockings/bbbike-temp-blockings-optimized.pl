@@ -448,15 +448,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        undef,
-       {
-         'until' => 1190325599,
-         'text' => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf grundhafter Straßenausbau Vollsperrung 11.07.2006-20.09.2007 ',
-         'from' => 1152482400,
-         'id' => 975,
-         'data' => 'userdel	q4::inwork 7981,-7165 7558,-7093
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -741,9 +733,9 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        {
          'source_id' => 'IM_006194',
-         'until' => 1189893599,
-         'text' => 'Dietzgenstr. (Pankow) stadteinwärts zwischen Kastanienallee bis Schillerstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 09.2007)',
-         'from' => 1185833762,
+         'until' => 1192485599,
+         'text' => 'Dietzgenstr. (Pankow) stadteinwärts zwischen Kastanienallee und Schillerstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 10.2007)',
+         'from' => 1189797888,
          'id' => 1091,
          'data' => 'userdel	1::inwork 10138,20840 10119,20731 10063,20493
 ',
@@ -802,8 +794,8 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        {
          'until' => 1193785200,
-         'text' => 'B 167 Lebus-Seelow OD Dolgelin Kanal-,Straßen- u. Radwegbau Vollsperrung 20.09.2007-30.10.2007 ',
-         'from' => 1190152800,
+         'text' => 'B 167 Lebus-Seelow OD Dolgelin Kanal-,Straßen- u. Radwegbau Vollsperrung 27.09.2007-30.10.2007 ',
+         'from' => 1190757600,
          'id' => 1119,
          'data' => 'userdel	q4::inwork 78194,11798 78753,11368 78805,11331
 ',
@@ -813,13 +805,13 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        {
          'source_id' => 'IM_006274',
-         'until' => 1192485599,
-         'text' => 'Gitschiner Str. (Kreuzberg) in Richtung Hallesches Tor zwischen Lobeckstr. und Prinzenstr. wegen einer geplatzten Wasserleitung bis Mitte Oktober 2007 gesperrt, Radfahrer können auf dem Gehweg passieren',
+         'until' => 1193435999,
+         'text' => 'Gitschiner Str. (Kreuzberg) in Richtung Kottbusser Tor zwischen Lobeckstr. und Prinzenstr. wegen einer geplatzten Wasserleitung bis Mitte Oktober 2007 gesperrt, Radfahrer können auf dem Gehweg passieren',
          'from' => undef,
          'id' => 1122,
-         'data' => 'userdel	1::inwork 10605,10312 10340,10301
+         'data' => 'userdel	q4::inwork; 10340,10301 10605,10312
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
        },
        undef,
        undef,
@@ -867,8 +859,8 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        },
        {
          'until' => 1199142000,
-         'text' => 'B 168 zw. Friedland und Beeskow Straßenbauarbeiten Vollsperrung 28.08.2007-31.12.2007 ',
-         'from' => 1188165600,
+         'text' => 'B 168 zw. Friedland und Beeskow Straßenbauarbeiten Vollsperrung 10.09.2007-31.12.2007 ',
+         'from' => 1189288800,
          'id' => 1134,
          'data' => 'userdel	2::inwork 69461,-27572 69160,-25724
 ',
@@ -883,15 +875,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1189807200,
-         'text' => 'K 6747 Alt Stahnsdorf - L 23, AS Storkow zw. Neu Stahnsdorf und Alt Stahnsdorf Straßenbauarbeiten Vollsperrung 20.08.2007-14.09.2007 ',
-         'from' => 1187474400,
-         'id' => 1136,
-         'data' => 'userdel	2::inwork 44592,-9998 44336,-9931 44273,-10358 43912,-10589 43744,-11591 43467,-12187 43278,-12804
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1198278000,
          'text' => 'K 7302 zwischen Dobberzin und Stolpe Straßenneubau Vollsperrung 27.08.2007-21.12.2007 ',
@@ -932,26 +916,10 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1197759600,
-         'text' => 'L 381 zw. Lossow und Frankfurt (O) Fahrbahninstandsetzung Vollsperrung 27.08.2007-15.12.2007 ',
-         'from' => 1188079200,
-         'id' => 1145,
-         'data' => 'userdel	2::inwork 89198,-10380 89181,-9996 89395,-9979
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
-       {
-         'until' => 1189807200,
-         'text' => 'K 6907 BAB A10, AS-Ferch bis Ferch Bahnübergang am Bhf Lienewitz Gleisbau am Bahnübergang Vollsperrung 31.08.2007-14.09.2007 ',
-         'from' => 1188424800,
-         'id' => 1148,
-         'data' => 'userdel	2::inwork -18640,-11826 -19043,-11944 -19150,-11976
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_002956',
          'until' => 1193871599,
@@ -993,15 +961,7 @@ userdel	2::inwork 71815,-22343 73222,-20567 74707,-18991
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1190584800,
-         'text' => 'B 087 Ortsumgehung Müllrose - Ragow Ortsausg.Müllrose bis hinter Ragow Straßenbauarbeiten Vollsperrung 17.09.2007-23.09.2007 ',
-         'from' => 1189893600,
-         'id' => 1156,
-         'data' => 'userdel	2::inwork 33060,-85292 33021,-85257
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1209592800,
          'text' => 'K 6422 Eggersdorfer Str. Petershagen, zw.Trift- u. Lessingstr.,Bahn Straßenbau Vollsperrung 12.09.2007-30.04.2008 ',
@@ -1021,9 +981,9 @@ userdel	2::inwork 71815,-22343 73222,-20567 74707,-18991
          'type' => 'gesperrt'
        },
        {
-         'until' => 1198191600,
-         'text' => 'L 026 Landesgrenze - AS Prenzlau-Ost (BAB A11) zw. OA Wollschow u. OE Brüssow Straßen-/Radwegebau Vollsperrung 05.09.2007-20.12.2007 ',
-         'from' => 1188856800,
+         'until' => 1197068400,
+         'text' => 'L 026 Landesgrenze - AS Prenzlau-Ost (BAB A11) zw. OA Wollschow u. OE Brüssow Straßen-/Radwegebau Vollsperrung 10.09.2007-07.12.2007 ',
+         'from' => 1189288800,
          'id' => 1159,
          'data' => 'userdel	2::inwork 61502,112547 60639,112544 58357,111700 57995,111657
 ',
@@ -1071,6 +1031,36 @@ userdel	2::inwork 71815,-22343 73222,-20567 74707,-18991
          'from' => 1189548000,
          'id' => 1164,
          'data' => 'userdel	2::inwork -54890,-35286 -54891,-35326 -54881,-35591
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1603753200,
+         'text' => 'B 096 Bahnhofstraße OD Finsterwalde, Kreuzung mit Berliner Str. (L601) Straßenbau Sperrung B96 Ri. Luckau 10.09.2007-26.10.2020 ',
+         'from' => 1189288800,
+         'id' => 1165,
+         'data' => 'userdel	2::inwork 33060,-85292 33021,-85257
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006666',
+         'until' => 1189980000,
+         'text' => 'Potsdamer Str. (Tiergarten) zwischen Potsdamer Platz und Eichhornstr. Veranstaltung, Potsdamer Str. und umliegende Nebenstraßen vollständig gesperrt (bis 16.09.2007 ca. 24 Uhr)',
+         'from' => 1189842208,
+         'id' => 1166,
+         'data' => 'userdel	2::temp 8374,11477 8505,11494 8542,11502
+userdel	2::temp 8226,11458 8301,11469 8358,11475
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006665',
+         'until' => 1189979999,
+         'text' => 'Sonnenallee (Neukölln) beide Richtungen, zwischen Pannierstr. und Wildenbruchstr. Veranstaltung, Straße vollständig gesperrt (bs 16.09.2007 24 Uhr)',
+         'from' => 1189842239,
+         'id' => 1167,
+         'data' => 'userdel	2::temp 12925,8494 12772,8612 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972
 ',
          'type' => 'gesperrt'
        }

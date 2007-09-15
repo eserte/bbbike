@@ -1,17 +1,16 @@
 /* XPM */
 static char *sbahn_mini[] = {
 /* columns rows colors chars-per-pixel */
-"5 5 6 1",
-"  c opaque",
-". c #008000",
-"X c #76b876",
-"o c #89c289",
-"O c white",
-"+ c None",
+"5 5 5 1",
+"  c #008000",
+". c #76B876",
+"X c #89C289",
+"o c gray100",
+"O c None",
 /* pixels */
-"+.OX+",
-".O...",
-".oOo.",
-"...O.",
-"+XO.+"
+"O o.O",
+" o   ",
+" XoX ",
+"   o ",
+"O.o O"
 };

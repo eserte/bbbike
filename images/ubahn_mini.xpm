@@ -3,8 +3,8 @@ static char *ubahn_mini[] = {
 /* columns rows colors chars-per-pixel */
 "5 5 3 1",
 "  c navy",
-". c #9b9bcd",
-"X c white",
+". c #9B9BCD",
+"X c gray100",
 /* pixels */
 "     ",
 " X X ",

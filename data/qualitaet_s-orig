@@ -903,7 +903,6 @@ Albrecht-Achilles-Str.: wechselnd Asphalt und gutes Kopfsteinpflaster	Q1 3618,10
 (Stresemannstr. - Wilhelmstr.): Parkweg, etwas holprig	Q1 9210,10614 9367,10641
 (Stresemannstr. - Wilhelmstr.): Parkweg	Q1 9250,10563 9370,10615
 #: by Olaf Schulz vvv
-(Stavanger Str. - Esplanade): Trampelpfad, mäßige Qualität	Q2 10635,16706 10576,16824 10569,16910
 Fröbelstr.: guter Asphalt	Q0 11776,15060 11870,15004 11968,14950 12089,14891
 Ella-Kay-Str.: guter Asphalt	Q0 12089,14891 11990,14714
 Ella-Kay-Str.: Beton	Q0 12215,15115 12234,15151 12215,15115 12089,14891
@@ -1834,6 +1833,7 @@ Normannenstr.: Asphalt	Q0 15502,12367 15537,12367 15710,12365 15800,12353 15904,
 Straße 18: Beton	Q0- 16426,13145 16429,13021
 Eberhardstr.: Kopfsteinpflaster	Q2 15233,12829 15231,12929
 Straße 77: etwas unebenes kleinteiliges Kopfsteinpflaster	Q1- 15402,12390 15315,12360
+#XXX del (Stavanger Str. - Esplanade): Trampelpfad, mäßige Qualität	Q2 10635,16706 10576,16824 10569,16910
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -2784,12 +2784,12 @@ Wachtelstr. (Dahlem): Kopfsteinpflaster	Q2 1897,6019 2122,5953 2180,5935 2333,58
 Vogelsang: Kopfsteinpflaster	Q2 2082,5818 2122,5953 2195,6184 2193,6214
 Vogelsang: Kopfsteinpflaster	Q2 2137,5798 2180,5935 2255,6184
 Spechtstr. (Dahlem): Kopfsteinpflaster	Q1 1865,5884 1880,5938 1864,5996
-Dohnenstieg: Kopfsteinpflaster	Q2 2611,6717 2454,6666 2317,6619 2170,6567 1951,6495
+Dohnenstieg: Kopfsteinpflaster	Q2 2611,6717 2454,6666 2317,6619 2170,6567 1933,6497
 Gadebuscher Weg: Kopfsteinpflaster, am Rand besser	Q3 2547,6274 2499,6428
 Heinrich-Stahl-Weg: Verbundsteinpflaster, wassergeb. Decke	Q2 2367,6336 2281,6469
 Hammersteinstr.: Parkweg	Q2 2376,7089 2319,7041
 Drosselweg (Dahlem): Kopfsteinpflaster	Q2 2412,5901 2594,5923
-Finkenstr. (Dahlem): Asphalt	Q1 2506,6606 2435,6580 2281,6469 2180,6428 2039,6394 1970,6392 1923,6404
+Finkenstr. (Dahlem): Asphalt	Q1 2506,6606 2435,6580 2281,6469 2180,6428 2039,6394 1970,6392 1904,6415
 Franz-Cornelsen-Weg: Asphalt	Q1 3593,7176 3597,7192 3612,7335
 Franz-Cornelsen-Weg: wassergeb. Decke	Q1 3612,7335 3639,7590
 Patschkauer Weg: Kopfsteinpflaster	Q2 2996,5005 3132,4803
@@ -5501,8 +5501,9 @@ Kirschenbaumstr.: asphaltiert/betoniert	Q0 19560,689 19648,656 19736,623
 #: by: Reinhardt Herold:
 Altenberger Weg: Beton	Q0 9725,20260 9840,20286 9972,20307 10066,20323
 #: by: W. Koch: vvv
-Alt-Marzahn: guter Beton	Q0 20625,15502 20658,15589 20796,15559 20967,15458 21042,15428 21112,15396 21139,15376
-Alt-Marzahn: guter Beton	Q0 21112,15396 21051,15464 20988,15505 20903,15545 20796,15559
+#: corrected_by: himself (guter Beton -> Kopfsteinpflaster)
+Alt-Marzahn: Kopfsteinpflaster	Q2 20625,15502 20658,15589 20796,15559 20967,15458 21042,15428 21112,15396 21139,15376
+Alt-Marzahn: Kopfsteinpflaster	Q2 21112,15396 21051,15464 20988,15505 20903,15545 20796,15559
 #: by: ^^^
 #: by: Nils (ni-ro):
 Nordkapstr.: guter Asphalt	Q0 10458,16509 10465,16656
@@ -5516,6 +5517,8 @@ Allmendeweg: guter Beton	Q0 2990,22018 3063,21821 3071,21801 3155,21572
 #: by: ^^^
 #: by: benjamin völker:
 Neue Str. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 161,3062 200,2855 226,2752 249,2653 272,2548
+#: by: Stefan (2806):
+Lindenstr. (Bohnsdorf): guter Asphalt	Q0 21586,-1167 21663,-1213 21729,-1241 21794,-1260 21914,-1278 22107,-1304 22307,-1329 22382,-1338 22470,-1349 22690,-1376
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
@@ -5773,10 +5776,10 @@ Frischlingsteig: Asphalt	Q0 1915,7219 1743,7223
 Wildentensteig: Asphalt	Q0 1908,7121 1737,7122
 Fischottersteig: Asphalt	Q0 1900,7023 1727,7005
 Bibersteig: Asphalt	Q0 1894,6925 1719,6896
-Fohlenweg: Asphalt	Q0 1885,6799 1870,6543 1844,6466
-Käuzchensteig: Gehwegplatten	Q0 1930,6432 1909,6441
-Käuzchensteig: Asphalt	Q0 1909,6441 1844,6466 1696,6520
-Bussardsteig: Asphalt	Q0 1870,6543 1789,6571
+Fohlenweg: Asphalt	Q0 1885,6799 1841,6566 1819,6500
+Käuzchensteig: Gehwegplatten	Q0 1918,6456 1895,6470
+Käuzchensteig: Asphalt	Q0 1895,6470 1819,6500 1696,6520
+Bussardsteig: Asphalt	Q0 1841,6566 1742,6613
 Eichhörnchensteig: Asphalt	Q1 1782,7527 1449,7519 1405,7471
 (Verlängerter Eichhörnchensteig): fester Waldweg	Q1 1405,7471 1149,7205
 (Eichhörnchensteig - Umgehungschaussee): Waldweg	Q2 1405,7471 1319,7444 1251,7429

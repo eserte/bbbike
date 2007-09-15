@@ -2,18 +2,19 @@
 # -*- perl -*-
 
 #
-# $Id: check_images,v 1.2 2002/11/23 17:31:40 eserte Exp $
+# $Id: check_images,v 1.3 2007/09/15 17:32:11 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2007 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven.rezic@berlin.de
+# Mail: eserte@users.sourceforge.net
 # WWW:  http://bbbike.sourceforge.net
 #
 
 # Überprüft, ob alle Bilder tatsächlich existieren
+# Wenn kein file suffix existiert, wird .gif angenommen (see below)
 
 use strict;
 use FindBin;
@@ -50,6 +51,12 @@ iterate {
     if ($cat =~ /IMG:([^|]+)/) {
 	my $f = $1;
     TRY: {
+	    if ($f !~ m{^\.(gif|png|xpm|jpg)$}) {
+		foreach my $dir (@imagedir) {
+		    last TRY if (-e "$dir/$f.gif"); # for now, only check for gifs, because we cannot rely on Tk::PNG or Tk::JPEG
+		}
+	    }
+	    # suffix probably already there
 	    foreach my $dir (@imagedir) {
 		last TRY if (-e "$dir/$f");
 	    }

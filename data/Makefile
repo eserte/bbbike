@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.157 2007/09/07 09:03:22 eserte Exp $
+# $Id: Makefile,v 2.158 2007/09/15 20:16:41 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -82,7 +82,7 @@ COMPUTED_TARGETS+=	kneipen
 COMPUTED_TARGETS+=	fragezeichen-cooked
 
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
-TARGETS+=	${SOURCE_TARGETS} ${COMPUTED_TARGETS} ${COOKED_TARGETS}
+TARGETS+=	${SOURCE_TARGETS} ${COMPUTED_TARGETS} ${COOKED_TARGETS} data-images
 
 ALL_STREETS=		strassen landstrassen landstrassen2
 
@@ -610,6 +610,21 @@ kneipen:	kneipen.yml
 	$(MISCSRCDIR)/yaml2bbd $> > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
+
+######################################################################
+# DATA-SPECIFIC IMAGES
+SEHENSWUERDIGKEIT_IMG_PNG_SRC=	bodemuseum_klein \
+				wasserturm_ostkreuz \
+				friedrichswerdersche_kirche_klein \
+				heilandskirche_sacrow
+data-images:	${SEHENSWUERDIGKEIT_IMG_PNG_SRC:S/^/sehenswuerdigkeit_img\//:S/$/.gif/}
+
+.for img in ${SEHENSWUERDIGKEIT_IMG_PNG_SRC}
+_img_gif_${img}:=${img:S/^/sehenswuerdigkeit_img\//:S/$/.gif/}
+_img_png_${img}:=${_img_gif_${img}:S/.gif$/.png/}
+${_img_gif_${img}}: ${_img_png_${img}}
+	convert ${_img_png_${img}} ${_img_gif_${img}}
+.endfor
 
 ######################################################################
 # MORE HELPER TARGETS
