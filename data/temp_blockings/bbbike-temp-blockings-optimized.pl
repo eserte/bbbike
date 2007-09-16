@@ -526,15 +526,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Holteistraße: Bauarbeiten, Fahrbahn ist nicht benutzbar',
-         'from' => undef,
-         'id' => 1011,
-         'data' => 'userdel	q4::inwork 14535,11327 14495,11261 14459,11200
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,

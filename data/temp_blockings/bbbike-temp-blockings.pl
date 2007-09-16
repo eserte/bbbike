@@ -8512,8 +8512,8 @@ userdel	2::temp 14464,9927 14500,9856 14671,9759 14697,9726 14910,9643
 userdel	2::temp 14500,9856 14483,9843
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX last_checked: 2007-08-05
+     { from  => 1189968907, # 
+       until => 1189968910, # XXX last_checked: 2007-08-05
        text  => 'Holteistraße: Bauarbeiten, Fahrbahn ist nicht benutzbar',
        type  => 'handicap',
        data  => <<EOF,
