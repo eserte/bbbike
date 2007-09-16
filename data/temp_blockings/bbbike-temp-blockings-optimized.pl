@@ -710,25 +710,9 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1189893600,
-         'text' => 'L 016 Perwenitz-Börnicke OD Grünefeld 4. Brandenb.Dorf- u. Erntefest Vollsperrung 15.09.2007-15.09.2007 ',
-         'from' => 1189720800,
-         'id' => 1086,
-         'data' => 'userdel	q4::temp -19882,29552 -19833,29510 -19798,29399
-',
-         'type' => 'handicap'
-       },
        undef,
-       {
-         'until' => 1189893600,
-         'text' => 'L 079 Ludwigsfelde-Potsdam zw. Kreisverkehr Nudow und Kreisverkehr Philippsthal Straßenbau Vollsperrung 23.07.2007-15.09.2007 ',
-         'from' => 1185055200,
-         'id' => 1088,
-         'data' => 'userdel	2::inwork -5673,-8130 -5271,-8290 -4971,-8420 -4878,-8656
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        {
@@ -839,15 +823,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1189893600,
-         'text' => 'B 112 Eisenhüttenstadt-Frankfurt (O) zw. Güldendorf und Frankfurt (O) Deckenerneuerung Richtungsverkehr 28.08.2007-15.09.2007 ',
-         'from' => 1188165600,
-         'id' => 1132,
-         'data' => 'userdel	1::inwork 87207,-9278 86790,-8657
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1192831200,
          'text' => 'B 122 zw. Abzw. Klausheide und Zippelsförde Deckenerneuerung Vollsperrung 27.08.2007-19.10.2007 ',

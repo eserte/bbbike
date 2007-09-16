@@ -1375,7 +1375,7 @@ userdel	q4 8610,12254 8515,12242
 userdel	q4 7816,12150 8063,12182
 userdel	q4 7816,12150 7383,12095
 userdel	q4 6744,11936 6809,11979
-userdel	q4 8851,12123 8737,12098
+userdel	q4 8861,12125 8737,12098
 userdel	q4 6809,11979 6828,12031
 userdel	q4 8539,12286 8560,12326
 userdel	q4 8539,12286 8515,12242
@@ -3226,8 +3226,8 @@ EOF
        text  => 'Behrenstraße, zwischen Kreuzung Ebertstraße und Kreuzung Glinkastraße in beiden Richtungen Veranstaltung, Straße gesperrt, Dauer: 10.11.2005 12:00 Uhr bis 12.11.2005 12:00 Uhr ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 8851,12123 9054,12154 9064,12156
-userdel	q4 8851,12123 8737,12098
+userdel	q4 8861,12125 9054,12154 9064,12156
+userdel	q4 8861,12125 8737,12098
 userdel	q4 8595,12066 8737,12098
 userdel	q4 9164,12172 9064,12156
 EOF
@@ -7497,7 +7497,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005020',
        data  => <<EOF,
-userdel	2::temp 8851,12123 8737,12098 8595,12066
+userdel	2::temp 8861,12125 8737,12098 8595,12066
 EOF
      },
      { from  => undef, # 
@@ -8407,7 +8407,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005661',
        data  => <<EOF,
-userdel	1::inwork 8990,11719 8837,11676 8553,11638
+userdel	1::inwork 9000,11727 8837,11676 8553,11638
 EOF
      },
      { from  => undef, # 
