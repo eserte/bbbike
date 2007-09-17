@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.69 2007/09/07 09:02:55 eserte Exp $
+# $Id: bbbike.cgi,v 8.70 2007/09/17 22:59:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -708,7 +708,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.69 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.70 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -5373,15 +5373,12 @@ sub adjust_scope_for_search {
     for my $i (1 .. $#$coordsref) {
 	my($xfrom,$yfrom,$xto,$yto) = (split(/,/,$coordsref->[$i-1]),
 				       split(/,/,$coordsref->[$i]));
-	warn "$xfrom $yfrom -> $xto $yto";
 	for my $border_polyline (@border_polylines) {
 	    for my $pt_i (1..$#$border_polyline) {
 		my($x1,$y1,$x2,$y2) = (split(/,/,$border_polyline->[$pt_i-1]),
 				       split(/,/,$border_polyline->[$pt_i]));
 		if (VectorUtil::intersect_lines($xfrom,$yfrom,$xto,$yto,
 						$x1,$y1,$x2,$y2)) {
-		    warn "intersecting!";
-		    warn "upgrading to region!!!";
 		    upgrade_scope("region");
 		    return;
 		}
@@ -6526,7 +6523,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/09/07 09:02:55 $';
+    my $cgi_date = '$Date: 2007/09/17 22:59:29 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
