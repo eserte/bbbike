@@ -188,12 +188,12 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'source_id' => 'IM_004587',
-         'until' => 1196463599,
-         'text' => 'Gürtelstr. (Friedrichshain) RIchtung Boxhagener Str. zwischen Frankfurter Allee und Oderstr. Baustelle, Fahrtrichtung gesperrt (bis 11.2007)',
-         'from' => 1169710498,
+         'source_id' => 'IM_006669',
+         'until' => 1190498400,
+         'text' => 'Gürtelstr. (Friedrichshain) in beiden Richtungen zwischen Scharnweberstr. und Dossestr. Baustelle, Straße vollständig gesperrt (bis 22.09.2007)',
+         'from' => 1190067630,
          'id' => 827,
-         'data' => 'userdel	q4::inwork; 15243,11881 15203,11807 15091,11596
+         'data' => 'userdel	q4::inwork 15203,11807 15243,11881
 ',
          'type' => 'handicap'
        },
@@ -825,15 +825,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1199142000,
-         'text' => 'B 168 zw. Friedland und Beeskow Straßenbauarbeiten Vollsperrung 10.09.2007-31.12.2007 ',
-         'from' => 1189288800,
-         'id' => 1134,
-         'data' => 'userdel	2::inwork 69461,-27572 69160,-25724
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1190325600,
          'text' => 'K 6402 Ernst-Thälmann-Str. OD Dolgelin, Krz. Hauptstr. Kanal-,Straßen- u. Radwegbau Vollsperrung 21.08.2007-20.09.2007 ',
@@ -939,15 +931,7 @@ userdel	2::inwork 71815,-22343 73222,-20567 74707,-18991
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1209592800,
-         'text' => 'K 6422 Eggersdorfer Str. Petershagen, zw.Trift- u. Lessingstr.,BahnLandsbg.Str. Straßenbau Vollsperrung 12.09.2007-30.04.2008 ',
-         'from' => 1189461600,
-         'id' => 1158,
-         'data' => 'userdel	2::inwork -579,33145 -409,33522 103,33971
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1197068400,
          'text' => 'L 026 Landesgrenze - AS Prenzlau-Ost (BAB A11) zw. OA Wollschow u. OE Brüssow Straßen-/Radwegebau Vollsperrung 10.09.2007-07.12.2007 ',
@@ -993,15 +977,7 @@ userdel	2::inwork 71815,-22343 73222,-20567 74707,-18991
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1190066400,
-         'text' => 'B 107 Jeserig-Wiesenburg Bahnübergang zw. Kreisverkehr u. Wiesenburg Gleisbauarbeiten Vollsperrung 13.09.2007-17.09.2007 ',
-         'from' => 1189548000,
-         'id' => 1164,
-         'data' => 'userdel	2::inwork -54890,-35286 -54891,-35326 -54881,-35591
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1603753200,
          'text' => 'B 096 Bahnhofstraße OD Finsterwalde, Kreuzung mit Berliner Str. (L601) Straßenbau Sperrung B96 Ri. Luckau 10.09.2007-26.10.2020 ',
@@ -1011,24 +987,34 @@ userdel	2::inwork 71815,-22343 73222,-20567 74707,-18991
 ',
          'type' => 'gesperrt'
        },
+       undef,
+       undef,
        {
-         'source_id' => 'IM_006666',
-         'until' => 1189980000,
-         'text' => 'Potsdamer Str. (Tiergarten) zwischen Potsdamer Platz und Eichhornstr. Veranstaltung, Potsdamer Str. und umliegende Nebenstraßen vollständig gesperrt (bis 16.09.2007 ca. 24 Uhr)',
-         'from' => 1189842208,
-         'id' => 1166,
-         'data' => 'userdel	2::temp 8374,11477 8505,11494 8542,11502
-userdel	2::temp 8226,11458 8301,11469 8358,11475
+         'source_id' => 'IM_006663',
+         'until' => 1199141999,
+         'text' => 'Sterndamm (Treptow) Richtung Michael-Brückner-Str. zwischen Lindhorstweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2007)',
+         'from' => 1190067574,
+         'id' => 1168,
+         'data' => 'userdel	1::inwork 17053,3971 17387,4446 17428,4503
 ',
          'type' => 'gesperrt'
        },
        {
-         'source_id' => 'IM_006665',
-         'until' => 1189979999,
-         'text' => 'Sonnenallee (Neukölln) beide Richtungen, zwischen Pannierstr. und Wildenbruchstr. Veranstaltung, Straße vollständig gesperrt (bs 16.09.2007 24 Uhr)',
-         'from' => 1189842239,
-         'id' => 1167,
-         'data' => 'userdel	2::temp 12925,8494 12772,8612 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972
+         'source_id' => 'IM_006673',
+         'until' => 1190498400,
+         'text' => 'Ostendstr. (Niederschöneweide) Richtung An der Wuhlheide zwischen Slabystr. und An der Wuhlheide Baustelle, Fahrtrichtung gesperrt (bis 22.09.2007)',
+         'from' => 1190067732,
+         'id' => 1169,
+         'data' => 'userdel	1::inwork 19273,5866 19650,5920 19681,5924 19934,5956
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1192658400,
+         'text' => 'L 020 Velten-Borgsdorf zw. OL Pinnow, Havelweg und Berliner Ch., Borgsdorf Grundhafter Straßenbau Vollsperrung 26.08.2007-17.10.2007 ',
+         'from' => 1187992800,
+         'id' => 1170,
+         'data' => 'userdel	2::inwork -579,33145 -409,33522
 ',
          'type' => 'gesperrt'
        }

@@ -6958,13 +6958,13 @@ EOF
 userdel	q4::inwork; 24623,11684 24652,11794 24578,11928
 EOF
      },
-     { from  => 1169710498, # 2007-01-25 08:34
-       until => 1196463599, # 2007-11-30 23:59
-       text  => 'Gürtelstr. (Friedrichshain) RIchtung Boxhagener Str. zwischen Frankfurter Allee und Oderstr. Baustelle, Fahrtrichtung gesperrt (bis 11.2007)',
+     { from  => 1190067630, # 2007-09-18 00:20
+       until => 1190498400, # 2007-09-23 00:00
+       text  => 'Gürtelstr. (Friedrichshain) in beiden Richtungen zwischen Scharnweberstr. und Dossestr. Baustelle, Straße vollständig gesperrt (bis 22.09.2007)',
        type  => 'handicap',
-       source_id => 'IM_004587',
+       source_id => 'IM_006669',
        data  => <<EOF,
-userdel	q4::inwork; 15243,11881 15203,11807 15091,11596
+userdel	q4::inwork 15203,11807 15243,11881
 EOF
      },
      { from  => 1170370800, # 2007-02-02 00:00
@@ -9563,7 +9563,7 @@ userdel	2::inwork -25490,64009 -26733,61993
 EOF
      },
      { from  => 1189288800, # 2007-09-09 00:00
-       until => 1199142000, # 2008-01-01 00:00
+       until => 1190068315, # 2008-01-01 00:00 1199142000
        text  => 'B 168 zw. Friedland und Beeskow Straßenbauarbeiten Vollsperrung 10.09.2007-31.12.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -9762,7 +9762,7 @@ userdel	2::inwork 36666,14172 36677,14087 36654,13977 35900,13643
 EOF
      },
      { from  => 1189461600, # 2007-09-11 00:00
-       until => 1209592800, # 2008-05-01 00:00
+       until => 1190068132, # 2008-05-01 00:00 1209592800 WRONG COORDS!
        text  => 'K 6422 Eggersdorfer Str. Petershagen, zw.Trift- u. Lessingstr.,BahnLandsbg.Str. Straßenbau Vollsperrung 12.09.2007-30.04.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -9842,6 +9842,32 @@ EOF
        source_id => 'IM_006665',
        data  => <<EOF,
 userdel	2::temp 12925,8494 12772,8612 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972
+EOF
+     },
+     { from  => 1190067574, # 2007-09-18 00:19
+       until => 1199141999, # 2007-12-31 23:59
+       text  => 'Sterndamm (Treptow) Richtung Michael-Brückner-Str. zwischen Lindhorstweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_006663',
+       data  => <<EOF,
+userdel	1::inwork 17053,3971 17387,4446 17428,4503
+EOF
+     },
+     { from  => 1190067732, # 2007-09-18 00:22
+       until => 1190498400, # 2007-09-23 00:00
+       text  => 'Ostendstr. (Niederschöneweide) Richtung An der Wuhlheide zwischen Slabystr. und An der Wuhlheide Baustelle, Fahrtrichtung gesperrt (bis 22.09.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_006673',
+       data  => <<EOF,
+userdel	1::inwork 19273,5866 19650,5920 19681,5924 19934,5956
+EOF
+     },
+     { from  => 1187992800, # 2007-08-25 00:00
+       until => 1192658400, # 2007-10-18 00:00
+       text  => 'L 020 Velten-Borgsdorf zw. OL Pinnow, Havelweg und Berliner Ch., Borgsdorf Grundhafter Straßenbau Vollsperrung 26.08.2007-17.10.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -579,33145 -409,33522
 EOF
      },
     );

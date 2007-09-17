@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.158 2007/09/15 20:16:41 eserte Exp $
+# $Id: Makefile,v 2.159 2007/09/17 22:36:33 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -82,7 +82,7 @@ COMPUTED_TARGETS+=	kneipen
 COMPUTED_TARGETS+=	fragezeichen-cooked
 
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
-TARGETS+=	${SOURCE_TARGETS} ${COMPUTED_TARGETS} ${COOKED_TARGETS} data-images
+TARGETS+=	${SOURCE_TARGETS} ${COMPUTED_TARGETS} ${COOKED_TARGETS}
 
 ALL_STREETS=		strassen landstrassen landstrassen2
 
@@ -109,8 +109,8 @@ COORDS_DATA_SORT_OPTS=	-f -t "|" -k 1,3
 ######################################################################
 # META TARGETS
 
-.ORDER: targets check .modified .rsync_include make_misc
-all:	targets check .modified .rsync_include make_misc
+.ORDER: targets data-images check .modified .rsync_include make_misc
+all:	targets data-images check .modified .rsync_include make_misc
 
 # These targets have to be rebuild once a day
 .BEGIN:
