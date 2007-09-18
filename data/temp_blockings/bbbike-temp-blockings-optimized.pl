@@ -599,16 +599,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_005877',
-         'until' => 1191189600,
-         'text' => 'Buchholzer Str. (Pankow) in Richtung Grumbkowstr. ab Charlottenstr. Baustelle, Fahrtrichtung gesperrt (bis 30.09.2007)',
-         'from' => 1182538248,
-         'id' => 1044,
-         'data' => 'userdel	1::inwork 10802,20240 10843,20301 11004,20526 11269,20667
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1015,6 +1006,16 @@ userdel	2::inwork 71815,-22343 73222,-20567 74707,-18991
          'from' => 1187992800,
          'id' => 1170,
          'data' => 'userdel	2::inwork -579,33145 -409,33522
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006682',
+         'until' => undef,
+         'text' => 'Glinkastr. (Mitte) in beiden Richtungen zwischen Jägerstr. und Taubenstr. Kranarbeiten, Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1171,
+         'data' => 'userdel	2::inwork 9208,11872 9201,11968
 ',
          'type' => 'gesperrt'
        }

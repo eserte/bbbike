@@ -63,7 +63,7 @@ my $crossings = $s->all_crossings(RetType => "hash",
 				 );
 
 my $top = tkinit;
-my $c = $top->Scrolled("Canvas", -width => $canvas_w, -height => $canvas_h)->pack(qw(-fill both -expand 1));
+my $c = $top->Scrolled("Canvas", -scrollbars => "osoe", -width => $canvas_w, -height => $canvas_h)->pack(qw(-fill both -expand 1));
 
 my $p = eval { $c->Photo(-file => "$FindBin::RealBin/../images/ampel.gif") };
 

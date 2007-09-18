@@ -8799,7 +8799,7 @@ userdel	q4::inwork 37813,-33029 35916,-32601
 EOF
      },
      { from  => 1182538248, # 2007-06-22 20:50
-       until => 1191189600, # 2007-10-01 00:00
+       until => 1190143134, # 2007-10-01 00:00 1191189600
        text  => 'Buchholzer Str. (Pankow) in Richtung Grumbkowstr. ab Charlottenstr. Baustelle, Fahrtrichtung gesperrt (bis 30.09.2007)',
        type  => 'gesperrt',
        source_id => 'IM_005877',
@@ -9868,6 +9868,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -579,33145 -409,33522
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Glinkastr. (Mitte) in beiden Richtungen zwischen Jägerstr. und Taubenstr. Kranarbeiten, Straße vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_006682',
+       data  => <<EOF,
+userdel	2::inwork 9208,11872 9201,11968
 EOF
      },
     );
