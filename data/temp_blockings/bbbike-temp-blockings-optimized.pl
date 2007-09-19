@@ -1009,13 +1009,14 @@ userdel	2::inwork 71815,-22343 73222,-20567 74707,-18991
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'source_id' => 'IM_006682',
-         'until' => undef,
-         'text' => 'Glinkastr. (Mitte) in beiden Richtungen zwischen Jägerstr. und Taubenstr. Kranarbeiten, Straße vollständig gesperrt',
-         'from' => undef,
-         'id' => 1171,
-         'data' => 'userdel	2::inwork 9208,11872 9201,11968
+         'source_id' => 'IM_006691',
+         'until' => 1193698799,
+         'text' => 'Lückstraße (Lichtenberg) Richtung Ostkreuz ab Weitlingstraße Baustelle, Fahrtrichtung gesperrt (bis 29.10.)',
+         'from' => 1190237300,
+         'id' => 1172,
+         'data' => 'userdel	1::inwork 16460,10699 16316,10755 16153,10818 16032,10842
 ',
          'type' => 'gesperrt'
        }

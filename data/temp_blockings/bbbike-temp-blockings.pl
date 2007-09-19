@@ -9870,13 +9870,22 @@ EOF
 userdel	2::inwork -579,33145 -409,33522
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1190237327, # 
+       until => 1190237331, # XXX
        text  => 'Glinkastr. (Mitte) in beiden Richtungen zwischen Jägerstr. und Taubenstr. Kranarbeiten, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_006682',
        data  => <<EOF,
 userdel	2::inwork 9208,11872 9201,11968
+EOF
+     },
+     { from  => 1190237300, # 2007-09-19 23:28
+       until => 1193698799, # 2007-10-29 23:59
+       text  => 'Lückstraße (Lichtenberg) Richtung Ostkreuz ab Weitlingstraße Baustelle, Fahrtrichtung gesperrt (bis 29.10.)',
+       type  => 'gesperrt',
+       source_id => 'IM_006691',
+       data  => <<EOF,
+userdel	1::inwork 16460,10699 16316,10755 16153,10818 16032,10842
 EOF
      },
     );

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.64 2007/07/28 23:03:31 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.65 2007/09/19 06:22:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -11,6 +11,8 @@
 # Mail: slaven@rezic.de
 # WWW:  http://bbbike.sourceforge.net
 #
+
+$bbbike_makefile_admin = "";
 
 ######################################################################
 # POD files
@@ -137,7 +139,23 @@ for my $module_dist (@bundled_perl_module_dists) {
 my $EXTMODCPAN = join(" ", @EXTMODCPAN);
 my $EXTMODPERL = join(" ", @EXTMODPERL);
 
-$bbbike_makefile_admin = <<'EOF'
+my $rcs2log = is_in_path("rcs2log");
+if (!$rcs2log) {
+    for my $candidate ("/usr/local/libexec/emacs/21.3/i386--freebsd/rcs2log",
+		       "/usr/local/libexec/emacs/21.3/amd64--freebsd/rcs2log",
+		       "/usr/local/libexec/emacs/21.3/$Config{archname}/rcs2log",
+		      ) {
+	if (-x $candidate) {
+	    $rcs2log = $candidate;
+	    last;
+	}
+    }
+}
+if ($rcs2log) {
+    $bbbike_makefile_admin .= "RCS2LOG?=$rcs2log\n";
+}
+
+$bbbike_makefile_admin .= <<'EOF'
 #### RSYNCS ###############################################################
 # XXX check which of the rsyncs are not obsolete!
 
@@ -462,8 +480,6 @@ clean_pod2html:
 
 EOF
 . "bbbikedoc:	README README.english $all_html doc/HOWTO_edit_bbbike_data.html\n" . <<'EOF'
-
-RCS2LOG?=/usr/local/libexec/emacs/21.3/i386--freebsd/rcs2log
 
 # XXX this will fail if there is no symlink to the original libexec position
 ChangeLog:
