@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cmdbbbike.t,v 1.1 2006/09/21 18:32:38 eserte Exp $
+# $Id: cmdbbbike.t,v 1.2 2007/09/20 22:41:27 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -22,7 +22,7 @@ BEGIN {
 plan tests => 4 + 2;
 
 {
-    my @route = `$FindBin::RealBin/../cmdbbbike duden seume`;
+    my @route = `$^X $FindBin::RealBin/../cmdbbbike duden seume`;
     like($route[0], qr{duden.*seume}i, "Title line");
     like($route[1], qr{methfesse}i, "First hop expected");
     like($route[-1], qr{seume}i, "Last hop expected");
@@ -30,7 +30,7 @@ plan tests => 4 + 2;
 }
 
 {
-    my $route = `$FindBin::RealBin/../smsbbbike duden seume`;
+    my $route = `$^X $FindBin::RealBin/../smsbbbike duden seume`;
     chomp $route;
     like($route, qr{^methfessel.*\*.*seume$}i, "Short SMS route");
     local $TODO = "Not yet";

@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.138 2007/06/10 18:50:15 eserte Exp $
+# $Id: Makefile.PL,v 1.139 2007/09/20 22:49:20 eserte Exp $
 
 use 5.005;
 
@@ -206,6 +206,7 @@ my @req_table =
    'Für Testen des CGI-Interfaces'],
   [qw/Devel::Leak	0	all	0	test/,
    'Für Memory-Leak-Tests'],
+  [qw/Text::Table	0	all	0	devel/],
  );
 
 # EXE corequisites ####################################################
@@ -492,7 +493,7 @@ EOF
     }
     if (-r "t/Makefile") {
 	$out .= <<'EOF';
-	cd t && $(MAKE) test
+	cd t && $(MAKE) test PERL=$(FULLPERL)
 EOF
     }
     if (-r "ext/Makefile") {

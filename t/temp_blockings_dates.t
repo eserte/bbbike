@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: temp_blockings_dates.t,v 1.11 2007/08/24 21:07:51 eserte Exp $
+# $Id: temp_blockings_dates.t,v 1.12 2007/09/20 21:04:23 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -16,7 +16,7 @@ require BBBikeEdit;
 
 BEGIN {
     if (!eval q{
-	use Test::More qw(no_plan);
+	use Test::More;
 	use Date::Calc qw(Mktime Today_and_Now); # fallback to Date::PCalc?
 	1;
     }) {
@@ -24,6 +24,8 @@ BEGIN {
 	exit;
     }
 }
+
+plan tests => 81;
 
 my @Today_and_Now = Today_and_Now;
 my $This_Year = $Today_and_Now[0];

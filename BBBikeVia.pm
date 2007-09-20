@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVia.pm,v 1.17 2006/07/25 19:46:34 eserte Exp $
+# $Id: BBBikeVia.pm,v 1.18 2007/09/20 22:24:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeVia;
 
 use strict;
 use vars qw($VERSION $move_index $add_point);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use BBBikeGlobalVars;
@@ -25,7 +25,9 @@ use BBBikeGlobalVars;
 #  	    @search_route_points %set_route_point
 #  	    $map_mode_deactivate $net @realcoords
 #  	    $advanced);
-use subs qw(M SRP_TYPE SRP_COORD POINT_MANUELL POINT_SEARCH);
+use subs qw(M SRP_TYPE SRP_COORD);
+## XXX Dumps core on 5.10.0:
+#use subs qw(POINT_MANUELL POINT_SEARCH);
 
 BBBikeVia::load_cursors(); # XXX move somewhere...
 
@@ -112,8 +114,8 @@ sub BBBikeVia::show_via_flags {
     $c->delete("viaflag");
     for my $i (1 .. $#search_route_points-1) {
 	my $p1 = $search_route_points[$i];
-	if ($p1->[SRP_TYPE] eq POINT_MANUELL ||
-	    $p1->[SRP_TYPE] eq POINT_SEARCH
+	if ($p1->[SRP_TYPE] eq POINT_MANUELL() ||
+	    $p1->[SRP_TYPE] eq POINT_SEARCH()
 	   ) {
 	    my($x,$y) = transpose(split(/,/, $p1->[SRP_COORD]));
 	    $c->createImage($x, $y, -image => $flag_photo{"via"},
@@ -194,7 +196,7 @@ sub BBBikeVia::move_via_alt_action {
     my($ax, $ay) = map { int } anti_transpose($xx, $yy);
     my $coord = "$ax,$ay";
     $search_route_points[$BBBikeVia::move_index]->[SRP_COORD] = $coord;
-    $search_route_points[$BBBikeVia::move_index]->[SRP_TYPE] = POINT_MANUELL;
+    $search_route_points[$BBBikeVia::move_index]->[SRP_TYPE] = POINT_MANUELL();
     re_search();
     BBBikeVia::move_via_cont();
 }
@@ -238,7 +240,7 @@ sub BBBikeVia::add_via_2 {
 	splice @search_route_points,
 	    1,
 	    0,
-	    [$BBBikeVia::add_point, POINT_SEARCH];
+	    [$BBBikeVia::add_point, POINT_SEARCH()];
 	re_search();
 	return BBBikeVia::add_via_cont(1);
     }
@@ -258,7 +260,7 @@ sub BBBikeVia::add_via_2 {
 		    splice @search_route_points,
 			$srp_to_index{$xy},
 			0,
-			[$BBBikeVia::add_point, POINT_SEARCH];
+			[$BBBikeVia::add_point, POINT_SEARCH()];
 		    re_search();
 		    return BBBikeVia::add_via_cont($srp_to_index{$xy});
 		}
@@ -356,13 +358,13 @@ sub BBBikeVia::add_via_action {
 	splice @search_route_points,
 	    $move_index,
 	    0,
-	    [$BBBikeVia::add_point, POINT_SEARCH];
+	    [$BBBikeVia::add_point, POINT_SEARCH()];
     } elsif ($BBBikeVia::add_nb1_index == 0 && $BBBikeVia::add_nb2_index == 0) {
-	unshift @search_route_points, [$BBBikeVia::add_point, POINT_MANUELL];
-	$search_route_points[1]->[SRP_TYPE] = POINT_SEARCH;
+	unshift @search_route_points, [$BBBikeVia::add_point, POINT_MANUELL()];
+	$search_route_points[1]->[SRP_TYPE] = POINT_SEARCH();
 	$move_index = 1;
     } elsif ($BBBikeVia::add_nb1_index == $#search_route_points && $BBBikeVia::add_nb2_index == $#search_route_points) {
-	push @search_route_points, [$BBBikeVia::add_point, POINT_SEARCH];
+	push @search_route_points, [$BBBikeVia::add_point, POINT_SEARCH()];
 	$move_index = $#search_route_points;
     } else {
 	status_message(M"Keine Nachbarn, bitte noch einmal versuchen", "error");

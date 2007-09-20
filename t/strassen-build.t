@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-build.t,v 1.3 2003/11/16 20:42:39 eserte Exp $
+# $Id: strassen-build.t,v 1.4 2007/09/20 23:22:27 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -59,7 +59,8 @@ ok($net->isa("StrassenNetz"), 1);
 $net->use_data_format($StrassenNetz::FMT_MMAP);
 ok($net->isa("StrassenNetz::CNetFile"), 1);
 
-ok($net->can("filename_c_net_mmap"));
+# Make sure CODE reference gets not interpreted...
+ok(!!$net->can("filename_c_net_mmap"));
 
 ok($net->filename_c_net_mmap($prefix), $mmap_net_file);
 

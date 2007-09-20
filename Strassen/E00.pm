@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: E00.pm,v 1.1 2005/04/16 12:20:10 eserte Exp $
+# $Id: E00.pm,v 1.2 2007/09/20 23:19:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::E00;
 
 use strict;
 use vars qw(@ISA $VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 require Strassen::Core;
 
@@ -41,10 +41,10 @@ sub new {
 	open(DCWTOBBD, "-|") or do {
 	    require File::Basename;
 	    my $bbbikeroot = File::Basename::dirname(__FILE__) . "/..";
-	    system("$bbbikeroot/miscsrc/dcwtobbd.pl", $filename);
+	    system($^X, "$bbbikeroot/miscsrc/dcwtobbd.pl", $filename);
 	    if ($?) {
 		warn "Fallback to e00_to_bbd...\n";
-		system("$bbbikeroot/miscsrc/e00_to_bbd.pl < $filename");
+		system($^X, "$bbbikeroot/miscsrc/e00_to_bbd.pl < $filename");
 	    }
 	    exit 0;
 	};

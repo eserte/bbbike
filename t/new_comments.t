@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: new_comments.t,v 1.4 2005/05/24 23:35:39 eserte Exp $
+# $Id: new_comments.t,v 1.6 2007/09/20 22:54:28 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -18,15 +18,30 @@ BEGIN {
     if (!eval q{
 	use Test::More;
         use YAML 0.39; # changed YAML magic
+	1;
+    }) {
+	print "1..0 # skip: no Test::More and/or YAML modules\n";
+	exit;
+    }
+    if (!eval q{
 	use Strassen::StrassenNetzNew;
+	1;
+    }) {
+	print "1..0 # skip: no Strassen::StrassenNetzNew module\n";
+	exit;
+    }
+    if (!eval q{
+	use Text::Table;
 	require "$FindBin::RealBin/../miscsrc/XXX_new_comments.pl";
 	1;
     }) {
-	print "1..0 # skip: no Test::More, YAML, Strassen::StrassenNetzNew modules or new_comments script\n";
+	print "1..0 # skip: no new_comments script or Text::Table module\n";
 	exit;
     }
+
 }
 
+use File::Basename qw(basename);
 
 my @tests = (
 	     ["700,1000", "1000,1600", <<EOF, "Kombination von gleichen Abschnitten"],
@@ -63,10 +78,12 @@ Frankfurter Allee - Kreutzigerstr.: Einfahrt in Hausdurchgang	CP; 2000,1200 2000
 EOF
 
 my $str = Strassen->new_from_data_string($str_data);
+$str->{Id} = basename($0) . "-str_data";
 my $net = StrassenNetz->new($str);
 $net->make_net;
 
 my $qs = Strassen->new_from_data_string($qs_data);
+$qs->{Id} = basename($0) . "-qs_data";
 my $qs_net = StrassenNetz->new($qs);
 $qs_net->make_net_cat(-net2name => 1, -multiple => 1);
 

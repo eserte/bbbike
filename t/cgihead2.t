@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.16 2007/02/11 22:03:00 eserte Exp $
+# $Id: cgihead2.t,v 1.17 2007/09/20 23:22:27 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -110,6 +110,12 @@ sub check_url {
 	$method = "get";	# HEAD does not work here
     }
     my $resp = $ua->$method($url);
+    my $redir_url = $resp->request->uri;
+    if ($redir_url eq $url) {
+	$redir_url = "(not redirected)";
+    } else {
+	$redir_url = "(redirected to $redir_url)";
+    }
  SKIP: {
 	my $no_tests = 2;
 	skip("No internet available", $no_tests)
@@ -120,25 +126,26 @@ sub check_url {
 	my $content_type = $resp->content_type;
 	if ($url eq $BBBike::BBBIKE_UPDATE_DATA_CGI ||
 	    $url =~ m{\.zip$}) {
-	    is($content_type, "application/zip", "Expected type (zip)") or diag("For URL $url");
+	    is($content_type, "application/zip", "Expected type (zip)") or diag("For URL $url $redir_url");
 	} elsif ($url =~ m{\.tar\.gz$}) {
-	    is($content_type, "application/x-gzip", "Expected type (gzip)") or diag("For URL $url");
+	    is($content_type, "application/x-gzip", "Expected type (gzip)") or diag("For URL $url $redir_url");
 	} elsif ($url =~ m{/\.modified$}) {
-	    is($content_type, "text/plain", "Expected type (plain text)") or diag("For URL $url");
+	    is($content_type, "text/plain", "Expected type (plain text)") or diag("For URL $url $redir_url");
 	} elsif ($url =~ m{wap}) {
-	    is($content_type, "text/vnd.wap.wml", "Expected type (wml)") or diag("For URL $url");
+	    is($content_type, "text/vnd.wap.wml", "Expected type (wml)") or diag("For URL $url $redir_url");
 	} elsif ($url =~ m{\.exe$}) {
-	    is($content_type, "application/octet-stream", "Expected type (binary)") or diag("For URL $url");
+	    is($content_type, "application/octet-stream", "Expected type (binary)") or diag("For URL $url $redir_url");
 	} elsif ($url =~ m{(?:\.tar\.bz2|\.tbz)$}) {
-	    is($content_type, "application/octet-stream", "Expected type (binary for bzip2)") or diag("For URL $url");
+	    is($content_type, "application/octet-stream", "Expected type (binary for bzip2)") or diag("For URL $url $redir_url");
 	} elsif ($url =~ m{\.tar\.gz\?download$}) { # Sourceforge download
-	    like($content_type, qr{^application/x-(tar|gzip)$}, "Expected type (tar or gzip)") or diag("For URL $url");
+	    like($content_type, qr{^application/x-(tar|gzip)$}, "Expected type (tar or gzip)") or diag("For URL $url $redir_url");
 	} elsif ($url =~ m{\.exe\?download$}) { # Sourceforge download
-	    is($content_type, "application/octet-stream", "Expected type (binary)") or diag("For URL $url");
+	    is($content_type, "application/octet-stream", "Expected type (binary)") or diag("For URL $url $redir_url");
 	} elsif ($url =~ m{\.deb\?download$}) { # Sourceforge download
-	    like($content_type, qr{^application/(octet-stream|x-debian-package)$}, "Expected type (debian package), got $content_type") or diag("For URL $url");
+	    # XXX One of the sourceforge mirrors uses text/plain as content-type
+	    like($content_type, qr{^application/(octet-stream|x-debian-package)$}, "Expected type (debian package), got $content_type") or diag("For URL $url $redir_url");
 	} else {
-	    is($content_type, "text/html", "Expected type (html)") or diag("For URL $url");
+	    is($content_type, "text/html", "Expected type (html)") or diag("For URL $url $redir_url");
 	}
     }
 }
