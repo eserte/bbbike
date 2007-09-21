@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.100 2007/08/10 22:45:27 eserte Exp $
+# $Id: Makefile,v 1.101 2007/09/21 20:07:17 eserte Exp $
 #
 
 # Targets:
@@ -34,6 +34,7 @@ DATA_DIR=		data
 TEMP_BLOCKINGS_DIR=	data/temp_blockings
 BBBIKE_RADZEIT_SSH_HOST?=	${BBBIKE_RADZEIT_HOST}
 STERNFAHRT_YEAR?=	2007
+KREISFAHRT_YEAR?=	2007
 
 EXTRA_MISCSRC_FILES=	bbd2esri winter_optimization.pl
 EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html \
@@ -562,6 +563,10 @@ prepare-sternfahrt${STERNFAHRT_YEAR}-dist-data:
 	[ -e ${CURDIR}/cgi-bin/sternfahrt${STERNFAHRT_YEAR}-treffpunkte.cgi ] || \
 		ln -s ../BBBike/misc/sternfahrt_${STERNFAHRT_YEAR}/treffpunkte.cgi \
 		      ${CURDIR}/cgi-bin/sternfahrt${STERNFAHRT_YEAR}-treffpunkte.cgi
+
+# Call once kreisfahrt files have changed:
+prepare-kreisfahrt-dist:
+	rsync --cvs-exclude -a ${BBBIKE_ROOT_DIR}/misc/kreisfahrt_${KREISFAHRT_YEAR}/ ${CURDIR}/BBBike/misc/kreisfahrt_${KREISFAHRT_YEAR}/
 
 test:	test-on-remote test-from-local
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.21 2007/06/10 12:48:25 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.22 2007/09/21 20:06:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -33,6 +33,7 @@ sub teaser {
 				teaser_mapserver(),
 				#teaser_collecting_tracks(),
 				#teaser_sternfahrt(),
+				teaser_kreisfahrt(),
 				#teaser_sternfahrt_changes(),
 				#teaser_dobli(),
 				$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
@@ -44,6 +45,7 @@ sub teaser {
 				teaser_mapserver(),
 				#teaser_collecting_tracks(),
 				#teaser_sternfahrt(),
+				teaser_kreisfahrt(),
 				#teaser_sternfahrt_changes(),
 				#teaser_dobli(),
 				$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
@@ -81,6 +83,16 @@ sub teaser_sternfahrt_changes {
 <div class="teaser"><b>Sternfahrt:</b><br> <a href="$url">Änderung der Routen im Bereich Potsdam</a><br>(betrifft die Routen Brandenburg, Werder und Rehbrücke)</div>
 EOF
     }
+}
+
+sub teaser_kreisfahrt {
+    my $year = (localtime)[5]+1900;
+    my $radzeit_url    = "http://www.adfc-berlin.de/home/termine2/kreisfahrt";
+    my $mapserver_url  = "/BBBike/misc/kreisfahrt_2007/kreisfahrt2007.html";
+    my $googlemaps_url = "/BBBike/misc/kreisfahrt_2007/kreisfahrt2007_googlemaps.html";
+    <<EOF
+<div class="teaser"><a style="text-decoration:none;" href="$radzeit_url"><img style="padding:3px 0px 3px 0px; border:0px;" src="/BBBike/misc/kreisfahrt_2007/kreisfahrt2007_titel.png" border="0"></a><br>Die Route der Kreisfahrt ${year}:<br><a href="$googlemaps_url">Googlemaps</a> <a href="$mapserver_url">Mapserver</a></div>
+EOF
 }
 
 sub teaser_perltk_newrelease {

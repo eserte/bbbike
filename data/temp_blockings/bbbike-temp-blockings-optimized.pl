@@ -745,15 +745,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        undef,
-       {
-         'until' => 1190239200,
-         'text' => 'B 246 Nächst Neuendorfer Chaussee OL Zossen, zw. Bahnhofstr. und OA Kanalarbeiten halbseitig gesperrt; Einbahnstraße 09.08.2007-19.09.2007 ',
-         'from' => 1186524000,
-         'id' => 1113,
-         'data' => 'userdel	1::inwork 13412,-20513 13526,-20548
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -817,15 +809,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1190325600,
-         'text' => 'K 6402 Ernst-Thälmann-Str. OD Dolgelin, Krz. Hauptstr. Kanal-,Straßen- u. Radwegbau Vollsperrung 21.08.2007-20.09.2007 ',
-         'from' => 1187560800,
-         'id' => 1135,
-         'data' => 'userdel	q4::inwork 78753,11368 78711,11343 78598,11099
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1198278000,
