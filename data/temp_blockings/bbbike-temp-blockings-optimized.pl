@@ -867,15 +867,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        },
        undef,
        undef,
-       {
-         'until' => 1190412000,
-         'text' => 'L 074 Poststraße OD Teupitz, Poststr. Tiefbauarbeiten Vollsperrung 10.09.2007-21.09.2007 ',
-         'from' => 1189288800,
-         'id' => 1152,
-         'data' => 'userdel	q4::inwork 25412,-29762 25240,-29746
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1217541600,
          'text' => 'K 7305 Bahnunterführung bis Welsow Brückenbau u. Straßenneubau Vollsperrung 10.09.2007-31.07.2008 ',

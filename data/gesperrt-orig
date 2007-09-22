@@ -199,7 +199,7 @@ Wilskistr.	1 -402,4012 -234,4136 21,4434 207,4575 301,4643 418,4696 639,4754 798
 Grazer Platz	1 6445,6769 6530,6786 6679,6816 6802,6816
 Grazer Platz	1 6811,6737 6686,6735 6546,6720 6517,6717 6451,6710
 Goltzstr. (Spandau)	1 -2843,16947 -3031,16807
-Putlitzstr.	1 6286,14183 6264,13995 6242,13953
+Putlitzstr.	1 6267,14184 6264,13995 6226,13951
 Langhansstr. (außer Tram)	1 12046,16568 12200,16579 12409,16475
 Triftstr. (Buchholz)	1 12018,23040 12178,23034
 Joachimstr.	1 10142,13556 10081,13673
@@ -454,6 +454,7 @@ Bonifaziusstr.	1 2819,21128 2737,21256 2690,21363 2621,21538
 Sandgrasweg	1 2851,21089 2819,21128
 Sandgrasweg	1 2840,21141 2866,21103
 Max-Eyth-Str.	1 2506,6606 2566,6531 2611,6495
+(IKEA-Zufahrt)	1 8204,6958 8229,7154
 ######################################################################
 #
 # Potsdam
@@ -583,7 +584,7 @@ Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -
 Stephanstr.	1s 6526,4475 6366,4500
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 #: by: David Greve:
-Ringbahnstr.	1s 8717,6965 8447,6964
+# note: removed by srt: Ringbahnstr.	1s 8717,6965 8447,6964
 Björnsonstr.	1s 10209,16674 10197,16528
 #: by: Juliane Bölker:
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
@@ -663,6 +664,9 @@ Lewishamstr.: abgesperrter Mittelstreifen	3nocross 3592,10869 3631,10784 3644,10
 Lewishamstr: Straßentunnelrampe	3nocross 3644,10759 3739,10576 3771,10511 3813,10435
 Klingelhöferstr: unbequem passierbarer Mittelstreifen	3nocross 6825,11486 6853,11336 6880,11110
 Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 10197,16528 9998,16547 9883,16557 9816,16565
+Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 9514,16603 9617,16590 9816,16565
+Seestr.: Straßenbahntrasse	3nocross 7231,16418 7051,16264 6965,16190
+Föhrer Str.: Mittelstreifen	3nocross 6528,15000 6561,15041 6630,15100
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14208,12235 14291,12220 14381,12205
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14381,12205 14434,12196 14488,12189
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 13792,12292 13885,12279 14208,12235
@@ -695,7 +699,7 @@ Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10659,12259 10621,12207 10567,12135
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5229,10716 5351,10760 5484,10810
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15415,12179 15437,12225 15475,12307 15502,12367
-Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6790,16018 6914,15908 6957,15869 7043,15793
+Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6790,16018 6914,15908 6936,15888 7043,15793
 #del: Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14576,16069 14550,16161 14499,16341
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14603,15971 14619,15920 14650,15750
 Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16738,11878 16858,11860 16964,11845
@@ -1074,10 +1078,10 @@ Bregenzer Str.	1 4278,10262 4227,10014
 Bayerische Str.	1 4296,10004 4349,10247
 Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3nocross 12912,14084 12978,14151 12996,14172 13046,14220
 Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross 13070,14245 13115,14293 13202,14388 13261,14456 13318,14517 13374,14581
-(Treppe zur Putlitzbrücke): tragen	0:40 6272,14183
+(Treppe zur Putlitzbrücke): tragen	0:40 6253,14184
 #: by: rjoop
-(Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40 6224,14245
-An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3nocross 6242,13953 6248,14185 6252,14249 6255,14310
+(Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40 6209,14245
+An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3nocross 6226,13951 6230,14184 6234,14247 6237,14309
 Rathenower Str.: schwierig zu querender Mittelstreifen	3nocross 7192,13036 7207,13118 7148,13245
 Eichkatzweg	1 1137,9921 1026,9772 925,9644
 Lärchenweg	1 1046,9989 1093,9952 1137,9921 1157,9907 1238,9869

@@ -175,7 +175,7 @@ Wilskistr.	1 -402,4012 -234,4136 21,4434 207,4575 301,4643 418,4696 639,4754 798
 Grazer Platz	1 6445,6769 6530,6786 6679,6816 6802,6816
 Grazer Platz	1 6811,6737 6686,6735 6546,6720 6517,6717 6451,6710
 Goltzstr. (Spandau)	1 -2843,16947 -3031,16807
-Putlitzstr.	1 6286,14183 6264,13995 6242,13953
+Putlitzstr.	1 6267,14184 6264,13995 6226,13951
 Langhansstr. (außer Tram)	1 12046,16568 12200,16579 12409,16475
 Triftstr. (Buchholz)	1 12018,23040 12178,23034
 Joachimstr.	1 10142,13556 10081,13673
@@ -387,6 +387,7 @@ Bonifaziusstr.	1 2819,21128 2737,21256 2690,21363 2621,21538
 Sandgrasweg	1 2851,21089 2819,21128
 Sandgrasweg	1 2840,21141 2866,21103
 Max-Eyth-Str.	1 2506,6606 2566,6531 2611,6495
+(IKEA-Zufahrt)	1 8204,6958 8229,7154
 Merkurstr.	1 -8469,-2576 -8380,-2580 -8359,-2582 -8411,-2699 -8432,-2713 -8484,-2710
 Stadtheide	1 -15432,-2763 -15504,-2984 -15537,-3091 -15501,-3122
 Gregor-Mendel-Str.	1 -13693,-528 -13784,-537 -13948,-564 -14034,-571
@@ -516,7 +517,6 @@ Spitzmühlenweg	1s 41728,17918 41668,17984 41556,18146
 Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -12265,-418
 Stephanstr.	1s 6526,4475 6366,4500
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
-Ringbahnstr.	1s 8717,6965 8447,6964
 Björnsonstr.	1s 10209,16674 10197,16528
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
 Blumberger Damm -> Fridolinweg: Mittelstreifen	3 21521,14943 21408,14591 21450,14576
@@ -738,6 +738,10 @@ Treppe zum Kolonnenweg -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen
 Treppe zum Kolonnenweg -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen	3 9982,16527 9998,16547 9983,16561
 Treppe zum Kolonnenweg -> Bornholmer Str.: Straßenbahn auf Mittelstreifen	3 9982,16527 9998,16547 9883,16557
 Bornholmer Str. -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen	3 9883,16557 9998,16547 9983,16561
+Bornholmer Str. -> Sonderburger Str.: Straßenbahn auf Mittelstreifen	3 9816,16565 9617,16590 9603,16468
+Sonderburger Str. -> Bornholmer Str.: Straßenbahn auf Mittelstreifen	3 9603,16468 9617,16590 9514,16603
+Seestr. -> Malplaquetstr.: Straßenbahntrasse	3 7231,16418 7051,16264 7162,16163
+Malplaquetstr. -> Seestr.: Straßenbahntrasse	3 7162,16163 7051,16264 6965,16190
 Kreutzigerstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3 14285,12190 14291,12220 14208,12235
 Frankfurter Allee -> Kreutzigerstr.: unbequem passierbarer Mittelstreifen	3 14381,12205 14291,12220 14285,12190
 Frankfurter Allee -> Mainzer Str.: unbequem passierbarer Mittelstreifen	3 14488,12189 14434,12196 14357,12011
@@ -826,9 +830,9 @@ Meinekestr. -> Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordste
 Deutschmeisterstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3 15350,12270 15437,12225 15475,12307
 Rathausstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3 15531,12300 15475,12307 15437,12225
 Möllendorffstr. -> Rathausstr.: Mittelstreifen mit Straßenbahn	3 15502,12367 15475,12307 15531,12300
-Müllerstr. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3 6957,15869 6914,15908 6809,15798
+Müllerstr. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3 6936,15888 6914,15908 6809,15798
 Müllerstr. -> Amsterdamer Str.: Zaun auf dem Mittelstreifen	3 6790,16018 6914,15908 7077,16078
-Amsterdamer Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3 7077,16078 6914,15908 6957,15869
+Amsterdamer Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3 7077,16078 6914,15908 6936,15888
 Amsterdamer Str. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3 7077,16078 6914,15908 6809,15798
 Brüsseler Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3 6809,15798 6914,15908 6790,16018
 Brüsseler Str. -> Amsterdamer Str.: Zaun auf dem Mittelstreifen	3 6809,15798 6914,15908 7077,16078
@@ -1206,12 +1210,12 @@ Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (B
 Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13202,14388 13261,14456 13243,14470
 Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13261,14456 13318,14517 13281,14540
 Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13281,14540 13318,14517 13374,14581
-(Treppe zur Putlitzbrücke): tragen	0:40:90 6272,14183
-(Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40:-146 6224,14245
-Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3 6272,14183 6248,14185 6242,13953
-An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3 6252,14249 6248,14185 6272,14183
-Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3 6224,14245 6252,14249 6255,14310
-An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3 6248,14185 6252,14249 6224,14245
+(Treppe zur Putlitzbrücke): tragen	0:40:90 6253,14184
+(Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40:-172 6209,14245
+An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3 6234,14247 6230,14184 6253,14184
+Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3 6253,14184 6230,14184 6226,13951
+An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3 6230,14184 6234,14247 6209,14245
+Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3 6209,14245 6234,14247 6237,14309
 Rathenower Str. -> Otto-Dix-Str.: schwierig zu querender Mittelstreifen	3 7148,13245 7207,13118 7370,13204
 Otto-Dix-Str. -> Rathenower Str.: schwierig zu querender Mittelstreifen	3 7370,13204 7207,13118 7192,13036
 Eichkatzweg	1 1137,9921 1026,9772 925,9644

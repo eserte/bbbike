@@ -444,3 +444,27 @@ Potsdamer Str. -> Alte Potsdamer Str.: Mittelstreifen	3 8542,11502 8505,11494 84
 Alte Potsdamer Str. -> Potsdamer Str.: Mittelstreifen	3 8499,11452 8505,11494 8374,11477
 Jägerallee/Hegelallee: Durchfahrt verboten	3 -13182,-515 -13231,-763 -13236,-797
 Jägerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13182,-515
+Osloer Str. -> Stettiner Str.: Straßenbahntrasse	3 9455,16609 9331,16624 9107,16389
+Freienwalder Str. -> Osloer Str.: Straßenbahntrasse	3 9435,16832 9331,16624 9455,16609
+Freienwalder Str. -> Stettiner Str.: Straßenbahntrasse	3 9435,16832 9331,16624 9107,16389
+Stettiner Str. -> Freienwalder Str.: Straßenbahntrasse	3 9107,16389 9331,16624 9435,16832
+Stettiner Str. -> Osloer Str.: Straßenbahntrasse	3 9107,16389 9331,16624 9210,16638
+Osloer Str. -> Freienwalder Str.: Straßenbahntrasse	3 9210,16638 9331,16624 9435,16832
+Wriezener Str. -> Osloer Str.: Straßenbahntrasse	3 9245,16758 9210,16638 9331,16624
+Osloer Str. -> Wriezener Str.: Straßenbahntrasse	3 8939,16668 9210,16638 9245,16758
+Heinz-Galinski-Str. -> Osloer Str.: Straßenbahntrasse	3 8092,16485 8196,16746 8144,16750
+Heinz-Galinski-Str. -> Heinz-Galinski-Str.: Straßenbahntrasse	3 8092,16485 8196,16746 8210,16793
+Osloer Str. -> Heinz-Galinski-Str.: Straßenbahntrasse	3 8144,16750 8196,16746 8210,16793
+Osloer Str. -> Heinz-Galinski-Str.: Straßenbahntrasse	3 8260,16740 8196,16746 8092,16485
+Heinz-Galinski-Str. -> Heinz-Galinski-Str.: Straßenbahntrasse	3 8210,16793 8196,16746 8092,16485
+Heinz-Galinski-Str. -> Osloer Str.: Straßenbahntrasse	3 8210,16793 8196,16746 8260,16740
+Seestr. -> Iranische Str.: Straßenbahntrasse	3 7606,16746 7456,16620 7707,16543
+Iranische Str. -> Seestr.: Straßenbahntrasse	3 7707,16543 7456,16620 7403,16575
+Groninger Str. -> Seestr.: Straßenbahntrasse	3 7439,16350 7403,16575 7388,16561
+Seestr. -> Groninger Str.: Straßenbahntrasse	3 7456,16620 7403,16575 7439,16350
+Bismarckstr. -> Sesenheimer Str.: Mittelstreifen	3 3898,11654 3844,11649 3866,11473
+Bismarckstr. -> Richard-Wagner-Str.: Mittelstreifen	3 3690,11629 3844,11649 3837,11760
+Sesenheimer Str. -> Bismarckstr.: Mittelstreifen	3 3866,11473 3844,11649 3690,11629
+Sesenheimer Str. -> Richard-Wagner-Str.: Mittelstreifen	3 3866,11473 3844,11649 3837,11760
+Richard-Wagner-Str. -> Bismarckstr.: Mittelstreifen	3 3837,11760 3844,11649 3898,11654
+Richard-Wagner-Str. -> Sesenheimer Str.: Mittelstreifen	3 3837,11760 3844,11649 3866,11473

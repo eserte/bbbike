@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman2bbd.pl,v 2.11 2007/09/06 23:35:00 eserte Exp $
+# $Id: gpsman2bbd.pl,v 2.11 2007/09/06 23:35:00 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -170,6 +170,7 @@ EOF
 	}
 
 	my $vehicle; # remember vehicle across chunks
+	my $event;   # dito
 	my %brand;   # vehicle -> brand
 
 	for my $gps (@{ $gps_multi->Chunks }) {
@@ -180,9 +181,11 @@ EOF
 	    my $curr_s;
 	    if ($gps->Type eq GPS::GpsmanData::TYPE_TRACK()) {
 	        $curr_s = $s;
+
 		if ($gps->TrackAttrs->{"srt:vehicle"}) {
 		    $vehicle = $gps->TrackAttrs->{"srt:vehicle"};
 		}
+
 		$brand = $gps->TrackAttrs->{"srt:brand"};
 		if (!$brand) {
 		    if ($brand{$vehicle}) {
@@ -190,6 +193,10 @@ EOF
 		    }
 		} else {
 		    $brand{$vehicle} = $brand;
+		}
+
+		if ($gps->TrackAttrs->{"srt:event"}) {
+		    $event = $gps->TrackAttrs->{"srt:event"};
 		}
 	    } else {
 	        $curr_s = $p;
@@ -204,6 +211,9 @@ EOF
 			$name .= " ($vehicle";
 			if ($brand) {
 			    $name .= "/$brand";
+			}
+			if ($event) {
+			    $name .= "/$event";
 			}
 			$name .= ")";
 		    }

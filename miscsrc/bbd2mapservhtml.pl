@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2mapservhtml.pl,v 1.22 2007/04/24 22:55:12 eserte Exp $
+# $Id: bbd2mapservhtml.pl,v 1.23 2007/09/22 08:22:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -116,7 +116,6 @@ my $html_header = <<EOF;
 <title>@{[ CGI::escapeHTML($title) ]}</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rev="made" href="mailto:$email" />
-<link rel="stylesheet" type="text/css" href="style.css" />
 EOF
 if (!$do_linklist) {
     $html_header .= <<EOF;

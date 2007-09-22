@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.101 2007/09/21 20:07:17 eserte Exp $
+# $Id: Makefile,v 1.102 2007/09/22 08:24:44 eserte Exp $
 #
 
 # Targets:
@@ -156,7 +156,8 @@ TARGET=radzeit.herceg.de
       make(rsync-routopedia)	     || \
       make(rsync-tests)		     || \
       make(clean-cache-files-on-remote) || \
-      make(diff-temp-blockings)
+      make(diff-temp-blockings)      || \
+      make(prepare-kreisfahrt-dist)
 TARGET=radzeit
 .elif make(deploy-local)         || \
       make(deploy-local-data)    || \
