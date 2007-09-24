@@ -187,16 +187,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_006669',
-         'until' => 1190498400,
-         'text' => 'Gürtelstr. (Friedrichshain) in beiden Richtungen zwischen Scharnweberstr. und Dossestr. Baustelle, Straße vollständig gesperrt (bis 22.09.2007)',
-         'from' => 1190067630,
-         'id' => 827,
-         'data' => 'userdel	q4::inwork 15203,11807 15243,11881
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -878,16 +869,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1190584800,
-         'text' => 'B 087 Ortsumgehung Müllrose - Ragow Ortsausg.Müllrose bis hinter Ragow Straßenbauarbeiten Vollsperrung 17.09.2007-23.09.2007 ',
-         'from' => 1189893600,
-         'id' => 1155,
-         'data' => 'userdel	2::inwork 74920,-18929 76631,-18359
-userdel	2::inwork 71815,-22343 73222,-20567 74707,-18991
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1209592800,
@@ -908,15 +890,7 @@ userdel	2::inwork 71815,-22343 73222,-20567 74707,-18991
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1191621600,
-         'text' => 'L 191 L172 Abzw. Germendorf-Sommerfeld OD Sommerfeld grundhafter Ausbau Vollsperrung 19.03.2007-05.10.2007 ',
-         'from' => 1174172400,
-         'id' => 1160,
-         'data' => 'userdel	2::inwork -15397,43682 -14950,43712
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1194562800,
          'text' => 'L 214 OD Blumenow OD Blumenow Straßenbau+Kanalisationsbau Vollsperrung 10.09.2007-08.11.2007 ',
@@ -966,16 +940,7 @@ userdel	2::inwork 71815,-22343 73222,-20567 74707,-18991
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_006673',
-         'until' => 1190498400,
-         'text' => 'Ostendstr. (Niederschöneweide) Richtung An der Wuhlheide zwischen Slabystr. und An der Wuhlheide Baustelle, Fahrtrichtung gesperrt (bis 22.09.2007)',
-         'from' => 1190067732,
-         'id' => 1169,
-         'data' => 'userdel	1::inwork 19273,5866 19650,5920 19681,5924 19934,5956
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1192658400,
          'text' => 'L 020 Velten-Borgsdorf zw. OL Pinnow, Havelweg und Berliner Ch., Borgsdorf Grundhafter Straßenbau Vollsperrung 26.08.2007-17.10.2007 ',
@@ -995,6 +960,33 @@ userdel	2::inwork 71815,-22343 73222,-20567 74707,-18991
          'data' => 'userdel	1::inwork 16460,10699 16316,10755 16153,10818 16032,10842
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1192658400,
+         'text' => 'B 101 Herzberg-Jüterbog zw. Welsickendorf und Landesgrenze Deckeneinbau Vollsperrung 16.10.2007-17.10.2007 ',
+         'from' => 1192399200,
+         'id' => 1173,
+         'data' => 'userdel	2::inwork -5503,-62012 -6079,-56811
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1193871600,
+         'text' => 'L 073 Beelitzer Str. OL Luckenwalde, zw. Puschkinstr. u. Woltersdorfer Str. Straßenausbau Vollsperrung 24.09.2007-31.10.2007 ',
+         'from' => 1190498400,
+         'id' => 1174,
+         'data' => 'userdel	q4::inwork -4725,-34957 -5019,-34814
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1193871600,
+         'text' => 'L 080 Bahnhofstr. OL Luckenwalde, Einmünd. Beelitzer Str. Straßenausbau Vollsperrung 24.09.2007-31.10.2007 ',
+         'from' => 1190498400,
+         'id' => 1175,
+         'data' => 'userdel	q4::inwork -4725,-34957 -4888,-34952
+',
+         'type' => 'handicap'
        }
      
 );

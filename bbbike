@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.327 2007/09/15 20:58:29 eserte Exp $
+# $Id: bbbike,v 3.327 2007/09/15 20:58:29 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -12525,8 +12525,12 @@ sub show_info {
 	$link_menu->command
 	    (-label => M"Link kopieren",
 	     -command => sub {
+		 # Primary selection (for emacs, only works 1st time for xterm/mozilla...)
 		 $info_top->SelectionOwn;
-		 $info_top->SelectionHandle(sub { $current_link_url });
+		 $info_top->SelectionHandle(sub {
+						my($offset,$maxbytes) = @_;
+						substr($current_link_url, $offset, $maxbytes);
+					    });
 	     });
 	my $show_url = sub {
 	    my($linkcount, $url, $my_link_menu) = @_;

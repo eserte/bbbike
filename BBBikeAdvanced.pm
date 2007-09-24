@@ -2381,6 +2381,7 @@ sub check_new_modules {
     #warn "checking new modules for $pkg..." if $verbose; # nervig
     my %inc = %{$pkg."::INC"};
     while(my($k, $v) = each %inc) {
+	$v = "" if !defined $v; # may happen (in 5.10.x only?), to cease warnings
 	# only record BBBike-related and own modules
 	next if $v !~ /bbbike/i && $v !~ /\Q$ENV{HOME}/;
 	next if exists $module_time{$v};

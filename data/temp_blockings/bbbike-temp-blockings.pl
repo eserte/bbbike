@@ -702,7 +702,7 @@ EOF
        text  => 'Die Naumannstraße ist zwischen Torgauer Straße und Tempelhofer Weg von 27.08.04, 07.00 Uhr bis 28.08.04, 20.00 Uhr gesperrt. Grund Bauarbeiten.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 7716,8048 7717,7759
+userdel	2 7716,8048 7717,7879 7717,7759
 EOF
      },
      { from  => 1093730400, # 2004-08-29 00:00
@@ -1042,7 +1042,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002432',
        data  => <<EOF,
-userdel	q4 7717,7759 7716,8048
+userdel	q4 7717,7759 7717,7879 7716,8048
 EOF
      },
      { from  => 1097964000, # 2004-10-17 00:00
@@ -9778,7 +9778,7 @@ userdel	2::inwork 61502,112547 60639,112544 58357,111700 57995,111657
 EOF
      },
      { from  => 1174172400, # 2007-03-18 00:00
-       until => 1191621600, # 2007-10-06 00:00
+       until => 1190664710, # 2007-10-06 00:00 1191621600
        text  => 'L 191 L172 Abzw. Germendorf-Sommerfeld OD Sommerfeld grundhafter Ausbau Vollsperrung 19.03.2007-05.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -9886,6 +9886,30 @@ EOF
        source_id => 'IM_006691',
        data  => <<EOF,
 userdel	1::inwork 16460,10699 16316,10755 16153,10818 16032,10842
+EOF
+     },
+     { from  => 1192399200, # 2007-10-15 00:00
+       until => 1192658400, # 2007-10-18 00:00
+       text  => 'B 101 Herzberg-Jüterbog zw. Welsickendorf und Landesgrenze Deckeneinbau Vollsperrung 16.10.2007-17.10.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -5503,-62012 -6079,-56811
+EOF
+     },
+     { from  => 1190498400, # 2007-09-23 00:00
+       until => 1193871600, # 2007-11-01 00:00
+       text  => 'L 073 Beelitzer Str. OL Luckenwalde, zw. Puschkinstr. u. Woltersdorfer Str. Straßenausbau Vollsperrung 24.09.2007-31.10.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -4725,-34957 -5019,-34814
+EOF
+     },
+     { from  => 1190498400, # 2007-09-23 00:00
+       until => 1193871600, # 2007-11-01 00:00
+       text  => 'L 080 Bahnhofstr. OL Luckenwalde, Einmünd. Beelitzer Str. Straßenausbau Vollsperrung 24.09.2007-31.10.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -4725,-34957 -4888,-34952
 EOF
      },
     );
