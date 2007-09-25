@@ -3081,7 +3081,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002297',
        data  => <<EOF,
-userdel	1 2446,25265 2531,25368 2657,25486 2721,25576
+userdel	1 2446,25265 2519,25353 2531,25368 2657,25486 2721,25576
 EOF
      },
      { from  => 1129879314, # 2005-10-21 09:21
@@ -7602,10 +7602,10 @@ EOF
 userdel	1::inwork 9201,11968 9208,11872
 EOF
      },
-     { from  => 1172358000, # 2007-02-25 00:00
-       until => 1179525600, # 2007-05-19 00:00
-       text  => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf, zw. Bahnhofstr. und Mahlower Str. grundhafter Straßenausbau Vollsperrung 26.02.2007-18.05.2007 ',
-       type  => 'gesperrt',
+     { from  => 1190671200, # 2007-09-25 00:00
+       until => 1194649200, # 2007-11-10 00:00
+       text  => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf, Mahlower Str.bis Kreisverkehr grundhafter Straßenausbau Vollsperrung 26.09.2007-09.11.2007 ',
+       type  => 'handicap',
        data  => <<EOF,
 userdel	2::inwork 7981,-7165 7558,-7093
 EOF
@@ -7952,7 +7952,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005369',
        data  => <<EOF,
-userdel	2::inwork 2979,24373 2690,24751 2542,24945 2438,25082
+userdel	2::inwork 2951,24389 2690,24751 2542,24945 2438,25082
 EOF
      },
      { from  => undef, # 
@@ -9434,8 +9434,8 @@ userdel	2::inwork 36895,-12039 36087,-12087 35496,-12280
 EOF
      },
      { from  => 1190757600, # 2007-09-26 00:00
-       until => 1193785200, # 2007-10-31 00:00
-       text  => 'B 167 Lebus-Seelow OD Dolgelin Kanal-,Straßen- u. Radwegbau Vollsperrung 27.09.2007-30.10.2007 ',
+       until => 1196463600, # 2007-12-01 00:00
+       text  => 'B 167 Lebus-Seelow OD Dolgelin Kanal-,Straßen- u. Radwegbau Vollsperrung 27.09.2007-30.11.2007 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 78194,11798 78753,11368 78805,11331
@@ -9487,9 +9487,9 @@ EOF
      },
      { from  => 1187989206, # 2007-08-24 23:00
        until => 1199142000, # 2008-01-01 00:00
-       text  => 'Drakestr. (Lichterfelde) in beiden Richtungen bei der Bahnunterführung Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Anfang 2008)',
+       text  => 'Drakestr. (Lichterfelde) in beiden Richtungen bei der Bahnunterführung geplatzte Wasserleitung, Straße vollständig gesperrt (bis Anfang 2008)',
        type  => 'handicap',
-       source_id => 'IM_005516',
+       source_id => 'IM_006754', # IM_005516
        data  => <<EOF,
 userdel	q4::inwork 3048,4305 3128,4190 3259,4002
 EOF

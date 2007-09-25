@@ -324,7 +324,15 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'until' => 1194649200,
+         'text' => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf, Mahlower Str.bis Kreisverkehr grundhafter Straßenausbau Vollsperrung 26.09.2007-09.11.2007 ',
+         'from' => 1190671200,
+         'id' => 904,
+         'data' => 'userdel	2::inwork 7981,-7165 7558,-7093
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -743,8 +751,8 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        {
-         'until' => 1193785200,
-         'text' => 'B 167 Lebus-Seelow OD Dolgelin Kanal-,Straßen- u. Radwegbau Vollsperrung 27.09.2007-30.10.2007 ',
+         'until' => 1196463600,
+         'text' => 'B 167 Lebus-Seelow OD Dolgelin Kanal-,Straßen- u. Radwegbau Vollsperrung 27.09.2007-30.11.2007 ',
          'from' => 1190757600,
          'id' => 1119,
          'data' => 'userdel	q4::inwork 78194,11798 78753,11368 78805,11331
@@ -766,9 +774,9 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        {
-         'source_id' => 'IM_005516',
+         'source_id' => 'IM_006754',
          'until' => 1199142000,
-         'text' => 'Drakestr. (Lichterfelde) in beiden Richtungen bei der Bahnunterführung Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Anfang 2008)',
+         'text' => 'Drakestr. (Lichterfelde) in beiden Richtungen bei der Bahnunterführung geplatzte Wasserleitung, Straße vollständig gesperrt (bis Anfang 2008)',
          'from' => 1187989206,
          'id' => 1125,
          'data' => 'userdel	q4::inwork 3048,4305 3128,4190 3259,4002
