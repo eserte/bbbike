@@ -552,7 +552,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'text' => 'B 005 Treplin-Petershagen OD Petershagen, zw. KVK und Ortsausgang Kanal- und Straßenbau Vollsperrung 18.06.2007-15.10.2007 ',
          'from' => 1182031200,
          'id' => 1025,
-         'data' => 'userdel	q4::inwork 74246,584 74740,378
+         'data' => 'userdel	q4::inwork 74246,584 74683,385
 ',
          'type' => 'handicap'
        },
@@ -922,7 +922,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'text' => 'L 035 Dr. W.-Külz-Str. OL Fü.-walde zw. Sembritzki- u. Eisenbahnstr. Abwasserkanalbau Vollsperrung 03.09.2007-31.12.2007 ',
          'from' => 1188684000,
          'id' => 1163,
-         'data' => 'userdel	q4::inwork 55447,-4585 55447,-4247
+         'data' => 'userdel	q4::inwork 55447,-4585 55447,-4432 55447,-4247
 ',
          'type' => 'handicap'
        },

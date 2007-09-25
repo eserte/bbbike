@@ -2203,6 +2203,25 @@ verwenden?
 
 =over
 
+=item * (M5)
+
+Cleanup the E<quot>-infoE<quot> companion of a .bbd file. Suggestions:
+
+* Have a .yml or .dd file (first better because it's more readable,
+  second is better because it does not need any perl requirements, but
+  is also unsafe) with the id -> info-string/object mapping. Name it
+  maybe .infoyml or .infodd?
+
+* Have a module which reads and creates these info files.
+
+* It is preferable to cache these files in a berkeley db file or
+  anydbm file (like is the situation now).
+
+* Parts of the info-reading code in show_info in bbbike should also go
+  into this module.
+
+The other tracks in misc/gps_data should have a info companion.
+
 =item * (H4)
 
 Interesting: L<http://www.geonames.org/export/>. Geographical names,

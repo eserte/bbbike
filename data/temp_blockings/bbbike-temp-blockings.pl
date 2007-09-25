@@ -1967,7 +1967,7 @@ EOF
        text  => 'L 35; (Eisenbahnstr.); OL Fürstenwalde, zw. Wassergasse und Frankfurter Str. Frühlingsfest Vollsperrung 25.05.2005-30.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 55447,-4247 55447,-4585 55562,-4726
+userdel	q4 55447,-4247 55447,-4432 55447,-4585 55562,-4726
 EOF
      },
      { from  => 1117080000, # 2005-05-26 06:00
@@ -6514,7 +6514,7 @@ EOF
        text  => 'B 005 Berliner Str. OD Petershagen, zw. Betonstr. und Ortsausgang Kanal- und Straßenbauarbeiten Vollsperrung 16.08.2006-22.12.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 74246,584 73775,831 73443,1021
+userdel	q4::inwork 74246,584 73775,831 73479,1000
 EOF
      },
      { from  => 1162422000, # 2006-11-02 00:00
@@ -8635,7 +8635,7 @@ EOF
        text  => 'B 005 Treplin-Petershagen OD Petershagen, zw. KVK und Ortsausgang Kanal- und Straßenbau Vollsperrung 18.06.2007-15.10.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 74246,584 74740,378
+userdel	q4::inwork 74246,584 74683,385
 EOF
      },
      { from  => 1182031200, # 2007-06-17 00:00
@@ -9806,7 +9806,7 @@ EOF
        text  => 'L 035 Dr. W.-Külz-Str. OL Fü.-walde zw. Sembritzki- u. Eisenbahnstr. Abwasserkanalbau Vollsperrung 03.09.2007-31.12.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 55447,-4585 55447,-4247
+userdel	q4::inwork 55447,-4585 55447,-4432 55447,-4247
 EOF
      },
      { from  => 1189548000, # 2007-09-12 00:00
