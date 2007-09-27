@@ -3323,7 +3323,7 @@ EOF
        text  => 'B 167 (Herzberg-Neuruppin) OL Alt Ruppin, Rhinbrücke Brückenneubau Vollsperrung 02.03.2004-31.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -28866,59954 -28692,59635 -28477,59467
+userdel	2 -28866,59954 -28641,59609 -28477,59467
 EOF
      },
      { from  => 1067986800, # 2003-11-05 00:00
@@ -3640,8 +3640,8 @@ EOF
        text  => 'B 122 Alt Ruppin-Dierberg Bahnübergang bei Dierberg Gleisbauarbeiten Vollsperrrung 28.02.2006-03.03.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -22567,67134 -21150,67860
-userdel	2 -21150,67860 -20726,68037
+userdel	2 -22477,67059 -21066,67757
+userdel	2 -21066,67757 -20469,68007
 EOF
      },
      { from  => 1139871600, # 2006-02-14 00:00
@@ -3905,8 +3905,8 @@ EOF
        text  => 'L 019 Kremmen, Schloßdamm, Ruppiner Str. Kremmen Neubau Fahrbahn Vollsperrung 27.03.2006-14.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -15302,43177 -15278,42709
-userdel	2 -14998,42541 -15278,42709
+userdel	2 -15344,43220 -15262,42754
+userdel	2 -14917,42525 -15262,42754
 EOF
      },
      { from  => 1143928800, # 2006-04-02 00:00
@@ -3983,7 +3983,7 @@ EOF
        text  => 'L 019 Schloßdamm, Ruppiner Str. OD Kremmen grundhafter Straßenbau Vollsperrung 27.03.2006-14.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -15961,38892 -16173,38465
+userdel	2 -15961,38892 -16160,38503
 EOF
      },
      { from  => 1163800186, # 2006-11-17 22:49
@@ -5025,7 +5025,7 @@ EOF
        text  => 'L 019 Ruppiner Chaussee OD Kremmen grundhafter Straßenbau Vollsperrung 10.07.2006-15.10.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -15770,39361 -15556,39597 -15170,39685 -14871,40028
+userdel	q4::inwork -15770,39361 -15556,39597 -15198,39722 -15063,39954 -14975,40027 -14856,40112
 EOF
      },
      { from  => 1152396000, # 2006-07-09 00:00
@@ -5357,7 +5357,7 @@ EOF
        text  => 'B 167 Friedrich-Engels-Str. OD Alt Ruppin, zw. Rhinbrücke u. Brückenstr. Straßenbauarbeiten Vollsperrung 14.08.2006-31.01.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -28866,59954 -28692,59635
+userdel	2::inwork -28866,59954 -28641,59609
 EOF
      },
      { from  => 1156975200, # 2006-08-31 00:00
@@ -7015,7 +7015,7 @@ EOF
        text  => 'B 273 Germendorf-Schwante Bahnübergang in der OD Schwante Gleisbauarbeiten Vollsperrung 05.02.2007-07.02.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -11565,36127 -10833,36580
+userdel	2::inwork -11541,36139 -11386,36243 -10833,36580
 EOF
      },
      { from  => 1170716400, # 2007-02-06 00:00
@@ -7023,7 +7023,7 @@ EOF
        text  => 'K 6506 L172- Bärenklau-Vehlefanz Bahnübergang in der OD Vehlefanz Gleisbauarbeiten Vollsperrung 07.02.2007-10.02.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -10057,34800 -9159,34997
+userdel	2::inwork -10057,34800 -9783,34896 -9159,34997
 EOF
      },
      { from  => 1170802800, # 2007-02-07 00:00
@@ -7446,7 +7446,7 @@ EOF
        text  => 'B 112 Forster Str. Bahnunterführung in der OD Guben Gleis- u. Brückensanierung Vollsperrung 13.04.2007-16.04.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 100192,-50107 100189,-50404
+userdel	2::inwork 100158,-50079 100201,-50335
 EOF
      },
      { from  => 1187215200, # 2007-08-16 00:00
@@ -7454,7 +7454,7 @@ EOF
        text  => 'B 112 Forster Str. Bahnunterführung in der OD Guben Gleis- u. Brückensanierung Vollsperrung 17.08.2007-20.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 100192,-50107 100189,-50404
+userdel	2::inwork 100158,-50079 100201,-50335
 EOF
      },
      { from  => 1174599531, # 2007-03-22 22:38
@@ -9555,8 +9555,8 @@ userdel	1::inwork 87207,-9278 86790,-8657
 EOF
      },
      { from  => 1188079200, # 2007-08-26 00:00
-       until => 1192831200, # 2007-10-20 00:00
-       text  => 'B 122 zw. Abzw. Klausheide und Zippelsförde Deckenerneuerung Vollsperrung 27.08.2007-19.10.2007 ',
+       until => 1191189600, # 2007-10-01 00:00
+       text  => 'B 122 zw. Abzw. Klausheide und Zippelsförde Deckenerneuerung Vollsperrung 27.08.2007-30.09.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -25490,64009 -26733,61993
@@ -9910,6 +9910,31 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -4725,-34957 -4888,-34952
+EOF
+     },
+     { from  => 1191708000, # 2007-10-07 00:00
+       until => 1199142000, # 2008-01-01 00:00
+       text  => 'K 6947 Wenzlow-Mahlenzien OD Wenzlow Straßenbauarbeiten Vollsperrung 08.10.2007-31.12.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -53700,-13146 -53945,-12911 -54243,-12956
+EOF
+     },
+     { from  => 1190926266, # 2007-09-27 22:51
+       until => 1191520800, # 2007-10-04 20:00
+       text  => 'Straße des 17. Juni (Tiergarten) In beiden Richtungen zwischen Brandenburger Tor und Y.-Rabin-Str. Veranstaltung, Straße vollständig gesperrt (bis 04.10.2007 20 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_006764',
+       data  => <<EOF,
+userdel	2::temp 8063,12182 8089,12186 8214,12205 8515,12242
+EOF
+     },
+     { from  => 1191103200, # 2007-09-30 00:00
+       until => 1196463600, # 2007-12-01 00:00
+       text  => 'B 122 zw. Dierberg und Zippelsförde Deckenerneuerung Vollsperrung 01.10.2007-30.11.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -22589,66989 -24436,65301
 EOF
      },
     );

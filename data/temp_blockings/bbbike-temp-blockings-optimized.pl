@@ -799,8 +799,8 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        {
-         'until' => 1192831200,
-         'text' => 'B 122 zw. Abzw. Klausheide und Zippelsförde Deckenerneuerung Vollsperrung 27.08.2007-19.10.2007 ',
+         'until' => 1191189600,
+         'text' => 'B 122 zw. Abzw. Klausheide und Zippelsförde Deckenerneuerung Vollsperrung 27.08.2007-30.09.2007 ',
          'from' => 1188079200,
          'id' => 1133,
          'data' => 'userdel	2::inwork -25490,64009 -26733,61993
@@ -995,6 +995,34 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
          'data' => 'userdel	q4::inwork -4725,-34957 -4888,-34952
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1199142000,
+         'text' => 'K 6947 Wenzlow-Mahlenzien OD Wenzlow Straßenbauarbeiten Vollsperrung 08.10.2007-31.12.2007 ',
+         'from' => 1191708000,
+         'id' => 1176,
+         'data' => 'userdel	q4::inwork -53700,-13146 -53945,-12911 -54243,-12956
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_006764',
+         'until' => 1191520800,
+         'text' => 'Straße des 17. Juni (Tiergarten) In beiden Richtungen zwischen Brandenburger Tor und Y.-Rabin-Str. Veranstaltung, Straße vollständig gesperrt (bis 04.10.2007 20 Uhr)',
+         'from' => 1190926266,
+         'id' => 1177,
+         'data' => 'userdel	2::temp 8063,12182 8089,12186 8214,12205 8515,12242
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1196463600,
+         'text' => 'B 122 zw. Dierberg und Zippelsförde Deckenerneuerung Vollsperrung 01.10.2007-30.11.2007 ',
+         'from' => 1191103200,
+         'id' => 1178,
+         'data' => 'userdel	2::inwork -22589,66989 -24436,65301
+',
+         'type' => 'gesperrt'
        }
      
 );

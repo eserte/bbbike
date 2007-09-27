@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.35 2007/09/03 21:24:11 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.36 2007/09/27 23:01:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.35 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.36 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -265,9 +265,11 @@ sub add_new_layer {
     if (!$BBBikeLazy::mode) {
 	require BBBikeLazy;
 	BBBikeLazy::bbbikelazy_empty_setup();
+	main::handle_global_directives($file, $free_layer);
 	main::bbbikelazy_add_data($type, $free_layer, $file);
 	main::bbbikelazy_init();
     } else {
+	main::handle_global_directives($file, $free_layer);
 	main::bbbikelazy_add_data($type, $free_layer, $file);
     }
     Hooks::get_hooks("after_new_layer")->execute;

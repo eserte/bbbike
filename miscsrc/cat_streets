@@ -1,0 +1,45 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: cat_streets,v 1.1 2007/09/27 22:41:51 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2007 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+use strict;
+use Strassen::Core;
+use Strassen::MultiStrassen;
+
+my @files = @ARGV;
+my @ms;
+my @glob_dirs;
+for my $file (@files) {
+    push @ms, Strassen->new($file, PreserveComments => 1, UseLocalDirectives => 1);
+    push @glob_dirs, $ms[-1]->get_global_directives;
+    $ms[-1]->set_global_directives({});
+}
+
+# XXX conflict handling (e.g. different encodings)
+my %glob_dirs;
+for (@glob_dirs) {
+    while(my($k,$v) = each %$_) {
+	$glob_dirs{$k} = $v;
+    }
+}
+
+my $ms = MultiStrassen->new(@ms);
+$ms->set_global_directives(\%glob_dirs);
+$ms->write("-");
+
+__END__

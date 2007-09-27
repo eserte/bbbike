@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: any2bbd,v 1.21 2007/09/01 00:48:37 eserte Exp $
+# $Id: any2bbd,v 1.22 2007/09/27 22:51:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -42,12 +42,14 @@ GetOptions(\%opt,
 	   "inputformat|i=s",
 	   "routenamefmt=s",
 	   "infotobbd!",
+	   "info=s",
 	  )
     or die <<EOF;
 usage: $0 [-i inputformat] -o outfile [-a|-append]
     [-routenamefmt ...] [-dir download-dir | files ...]
     [-exclude basename [-exclude ...]]
     [-excluderx rx [-excluderx ...]]
+    [-info file]
     [-infotobbd]
 EOF
 
@@ -63,6 +65,12 @@ my $excludebyrx = sub {
     0;
 };
 my $do_infotobbd = $opt{infotobbd} || 0;
+my $file_info = $opt{info};
+my %file_info;
+if ($file_info) {
+    require YAML;
+    %file_info = %{ YAML::LoadFile($file_info) };
+}
 
 my @files = @ARGV;
 if (!@files) {
@@ -73,11 +81,14 @@ if (!@files) {
 
 my @s;
 for my $file (@files) {
-    next if $exclude{ basename($file) };
+    my $basename = basename($file);
+    next if $exclude{$basename};
     next if $excludebyrx->($file);
     print STDERR "$file... ";
     my %info = (handled_by => "?", file => $file, subfile => undef);
     lock_keys %info;
+    my %this_file_info = %{ $file_info{$basename} || {} };
+    # do not lock %this_file_info
 
     my $check_s = sub {
 	my $s = shift;
@@ -109,6 +120,7 @@ for my $file (@files) {
 		my $s = run_gpsbabel($tmpfile,
 				     title => routenamefmt($file . "/" . basename($member->fileName)),
 				     info => \%info,
+				     file_info => \%this_file_info,
 				    );
 		if ($check_s->($s)) {
 		    prepend_info($s, \%info);
@@ -117,8 +129,11 @@ for my $file (@files) {
 	    }
 	} else {
 	    if (-f $file) {
-		my $s = run_gpsbabel($file, title => routenamefmt($file),
-				     info => \%info);
+		my $s = run_gpsbabel($file,
+				     title => routenamefmt($file),
+				     info => \%info,
+				     file_info => \%this_file_info,
+				    );
 		if ($check_s->($s)) {
 		    prepend_info($s, \%info);
 		    push @s, $s;
@@ -140,6 +155,11 @@ my $ms = MultiStrassen->new(@s);
 if ($opt{append}) {
     $ms->append($outfile);
 } else {
+    $ms->set_global_directives({ "category_dash.AccManually"  => ["3,8"],
+				 "category_color.AccManually" => ["#8080c0"],
+				 "category_dash.AccLow"       => ["2,4"],
+				 "category_color.AccLow"      => ["#4040a0"],
+			       });
     $ms->write($outfile);
 }
 
@@ -148,7 +168,17 @@ sub run_gpsbabel {
     my($file, %args) = @_;
     my $title = $args{title} || $file;
     my $info = $args{info} || {};
+    my $file_info = $args{file_info} || {};
     my $cat = "#000080";
+    if (!$opt{append}) {
+	if ($file_info->{accuracy}) {
+	    if ($file_info->{accuracy} eq 'manually') {
+		$cat = "AccManually";
+	    } elsif ($file_info->{accuracy} eq 'low') {
+		$cat = "AccLow";
+	    }
+	}
+    }
     if ($opt{inputformat}) {
 	my $s = eval {
 	    require Strassen::FromRoute;
