@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.46 2007/08/26 22:00:05 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.47 2007/09/29 13:31:47 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -92,6 +92,7 @@ for my $browser (@browsers) {
     my $like_long_data = sub {
 	my($expected, $testname, $suffix) = @_;
 	$suffix = ".html" if !defined $suffix;
+	local $Test::Builder::Level = $Test::Builder::Level+1;
 	like_long_data(get_ct($agent), $expected, $testname, $suffix)
 	    or diag("URL is <" . $agent->uri . ">");
     };
@@ -99,6 +100,7 @@ for my $browser (@browsers) {
     my $unlike_long_data = sub {
 	my($expected, $testname, $suffix) = @_;
 	$suffix = ".html" if !defined $suffix;
+	local $Test::Builder::Level = $Test::Builder::Level+1;
 	unlike_long_data(get_ct($agent), $expected, $testname, $suffix)
 	    or diag("URL is <" . $agent->uri . ">");
     };

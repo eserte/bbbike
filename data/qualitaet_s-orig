@@ -1935,6 +1935,7 @@ Polkwitzer Str.: schlechtes Kopfsteinpflaster	Q3 21367,-420 21463,-434 21618,-45
 Würmseestr.: guter Asphalt	Q0 22095,1572 22178,1589 22300,1627
 ######################################################################
 #: by: anonymous vvv
+Schweiggerweg: guter Asphalt	Q0 2081,14570 2079,14704 2099,14852
 Meller Bogen: guter Asphalt	Q0 4465,18475 4670,18434 4658,18375 4641,18348 4609,18199
 Regenwalder Weg: guter Beton	Q0 -969,24358 -923,24323 -833,24244 -758,24172 -684,24095 -514,23905
 Schneppenhorstweg: Asphalt	Q0 2009,14567 2022,14454 2000,14449
@@ -2951,8 +2952,8 @@ Greifenhagener Str.: Kopfsteinpflaster	Q2 11040,15398 11055,15504 11093,15771
 Greifenhagener Str.: Kopfsteinpflaster	Q2 11232,16037 11268,16113 11306,16194 11341,16273 11397,16405
 #: note: ^^^
 #: XXX: Katha hat hier "Kopfsteinpflaster, schlechte Straße" geschrieben, die ADFC-Karte sagt hier "gut geeignet". 2:1 für Q1
-Zermatter Str.: Kopfsteinpflaster besserer Qualität 	Q1 6653,17696 6739,17749 6841,17781
-Zermatter Str.: Betonplatten, gut	Q1 6376,17687 6512,17696 6653,17696
+Zermatter Str.: Kopfsteinpflaster besserer Qualität 	Q1 6631,17721 6739,17749 6841,17781
+Zermatter Str.: Betonplatten, gut	Q1 6376,17687 6512,17696 6631,17721
 (Um den Schäfersee): gute befestigte Sandwege	Q1 7501,17525 7490,17632 7437,17670 7214,17656 7193,17554 7233,17462
 Baseler Str. (Reinickendorf): Kopfsteinpflaster	Q2 6792,17951 6841,17781 6886,17649 6914,17567 6995,17322
 #: note: auch die ADFC-Karte sagt "gut geeignet" vvv
@@ -3092,7 +3093,7 @@ Kolk: Kopfsteinpflaster	Q2 -2939,14585 -3010,14612 -3029,14656
 Heidetor: Kopfsteinpflaster	Q2 -3110,14698 -3106,14731
 Oranienburger Tor (Spandau): Kopfsteinpflaster	Q2 -3054,14704 -3110,14698
 Goebelplatz: Asphalt	Q0 1898,14640 1996,14643
-Toeplerstr.: Asphalt	Q0 2374,14583 2009,14567 1974,14565 1893,14559
+Toeplerstr.: Asphalt	Q0 2374,14583 2081,14570 2009,14567 1974,14565 1893,14559
 Goebelstr.: Asphalt	Q0 1893,14559 1732,14553 1423,14679 1282,14710 1134,14721 1060,14726
 Popitzweg: sehr guter Asphalt	Q0 1361,14431 1897,14408
 Dahrendorfzeile: Asphalt	Q0 2597,14288 2709,14284
@@ -4234,7 +4235,7 @@ Südekumzeile: guter Beton	Q0 -6325,13668 -6432,13656 -6561,13615 -6651,13583 -69
 #: note: "auch für Skater geeignet"
 Hugo-Distler-Str.: Asphalt	Q0 23671,13081 23724,13016 23791,13036 23797,13054 23883,13013 23878,12990 23904,12912 23957,12902
 #: by: Thoma (J.Thoma):
-Lausanner Str.: Asphalt	Q0 3805,2196 3726,2209 3466,2214 3293,2218 3151,2224
+Lausanner Str.: Asphalt	Q0 3805,2196 3726,2209 3551,2212 3466,2214 3293,2218 3151,2224
 #: by: hendrik (housemeister):
 #: note: Qualität laut ADFC-Karte gut
 Eichhorster Str.: guter Beton	Q0 21446,18405 21481,18474 21526,18558 21545,18595 21552,18607 21678,18648 21825,18689 21853,18700
@@ -5519,7 +5520,7 @@ Nordkapstr.: guter Asphalt	Q0 10458,16509 10465,16656
 Bonifaziusstr.: guter Beton	Q0 2635,21559 2699,21401 2714,21369 2728,21336 2760,21269 2840,21141
 Bonifaziusstr.: guter Beton	Q0 2819,21128 2737,21256 2690,21363 2621,21538
 Egidystr.: schlechtes Kopfsteinpflaster, sehr unebenes Pflaster	Q3 3134,22153 3145,22123
-Egidystr.: schlechtes Kopfsteinpflaster, sehr unebenes Pflaster	Q3 3145,22123 3133,22108 3133,22107 3138,22088 3139,22088 3149,22084 3158,22084 3170,22093 3172,22109 3160,22121 3145,22123
+Egidystr.: schlechtes Kopfsteinpflaster, sehr unebenes Pflaster	Q3 3145,22123 3133,22108 3133,22107 3137,22088 3149,22084 3158,22084 3170,22093 3172,22109 3160,22121 3145,22123
 Egidystr.: schlechtes Kopfsteinpflaster, sehr unebenes Pflaster	Q3 3158,22084 3292,21708 3356,21534 3430,21327
 Allmendeweg: guter Beton	Q0 2990,22018 3063,21821 3071,21801 3155,21572
 #: by: ^^^
@@ -5535,6 +5536,18 @@ Ritterstr. (Lichterfelde): Asphalt	Q0 4821,2954 5115,2803
 Senheimer Str.: schlechtes Kopfsteinpflaster	Q3 2519,25353 2506,25398 2505,25538 2515,25666 2519,25772 2496,25915 2484,25984 2490,26126 2531,26251 2560,26349 2569,26408 2564,26462
 Käthestr. (Hermsdorf): Asphalt	Q0 4829,24067 4872,24183 4911,24299
 #: by: ^^^
+#: by: KurtHolz...:
+Klein-Ziethener Weg: schlechtes Klein-Ziethener	Q3 15971,57 15949,53 15834,-28 15812,-65 15694,-178 15655,-245
+#: by: Jan Riemke:
+Romanshorner Weg: Kopfsteinpflaster	Q2 6709,17466 6679,17568 6631,17721 6578,17898 6550,17988 6577,17998
+#: by: Reyk Bederke:
+Wegerichstr.: guter Beton	Q0 16678,2330 16666,2437 16663,2450 16538,2543
+#: by: Holger Nitz:
+Marie-Vögtlin-Weg: Asphalt	Q0 3560,2462 3553,2280 3551,2212
+#: by: Barbara Praetorius:
+Bruno-Walter-Str.: Asphalt	Q0 5510,2883 5604,2832 5794,3039 5853,3050
+#: by: Sabine (myps...):
+Am Weidenbruch: loser Sandweg	Q3 20879,10834 20872,10591
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
@@ -6368,7 +6381,7 @@ Zur Sonnenhöhe: Asphalt	Q2 -1896,24275 -1768,24075 -1639,23915 -1515,23807
 #: by: ^^^
 #: by: Kahless [AM]
 #: corrected_by: Thomas Heuving
-Schillerring: kleinteiliges Kopfsteinpflaster	Q1 6922,18024 6793,18115 6671,18132 6579,18136 6560,18135
+Schillerring: kleinteiliges Kopfsteinpflaster	Q1 6922,18024 6793,18115 6671,18132 6576,18136 6548,18139
 #: by: Freddy [AM]
 Bootshausweg: fester Sandweg	Q1 -1073,16610 -1067,16635 -1092,16659 -1156,16689 -1190,16714 -1214,16745 -1229,16773 -1406,16907 -1465,16957 -1520,16989 -1564,17001 -1610,17007 -1664,17009 -1743,16990 -1723,16973 -1690,16971 -1676,16957 -1673,16939 -1725,16878 -1704,16870 -1684,16853 -1655,16813
 #: by Heiner Roettger [AM]

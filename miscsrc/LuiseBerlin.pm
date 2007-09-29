@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.18 2007/09/10 18:36:48 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.20 2007/09/29 21:10:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!caller(2)) {
@@ -218,7 +218,7 @@ sub do_google_search {
 	# Unfortunately there seems to be a lot of encoding issues
 	# Maybe best to use the ersatz notation for umlauts?
 	my $query = qq{allintitle:"}. $street_citypart . qq{" } .
-	    join(" OR ", map { "site:$_" }
+	    join(" OR ", map { ("site:$_", "site:www.$_") }
 		 qw(luise-berlin.de
 		    berlinchronik.de
 		    berlin-chronik.de
@@ -230,16 +230,17 @@ sub do_google_search {
 		    berlinvisite.de
 		    berlin-visite.de
 		    berlin-ehrungen.de
+		    berlinhistory.de
 		  ));
 	if ($DEBUG) {
 	    use Devel::Peek; Dump $query;
 	}
 	## Usage of encode should not be necessary here!
-	$query = encode("utf-8", $query) if $] == 5.008; # why only this perl version?
+	$query = encode("utf-8", $query) if $] == 5.008 || $] >= 5.010; # why only these perl versions?
 	if ($DEBUG) {
 	    Dump $query;
 	    require Data::Dumper;
-	    print STDERR "Google query term: ". Data::Dumper->new([$query],[qw()])->Indent(1)->Useqq(1)->Dump . "\n";
+	    print STDERR "Google query term:\n$query\n";
 	}
 	$search->native_query($query);
 	while(my $result = $search->next_result) {
@@ -255,8 +256,10 @@ sub do_google_search {
 	
     }
     @results = sort { $b->{similarity} <=> $a->{similarity} } @results;
-
-        #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@results],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+    if ($DEBUG && $DEBUG >= 2) {
+        require Data::Dumper;
+	print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@results],[qw()])->Indent(1)->Useqq(1)->Dump;
+    }
 
     $results[0]->{url};
 }
@@ -359,9 +362,10 @@ sub batch {
     my $file;
     Getopt::Long::GetOptions("f|file=s" => \$file,
 			     "q" => sub { $DEBUG = 0 },
+			     "debug!" => sub { $DEBUG = 2 },
 			    )
 	    or die <<EOF;
-usage: $0 [-q] [-f file | street cityparts]
+usage: $0 [-q] [-debug] [-f file | street cityparts]
 
 -f file: batch processing, where file is a Berlin.coords.data-styled
          file (street "|" citypath ...) 
