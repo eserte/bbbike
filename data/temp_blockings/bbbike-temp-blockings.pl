@@ -7725,7 +7725,7 @@ userdel	q4::inwork 16045,25907 16114,25827 16166,25767
 EOF
      },
      { from  => 1176243783, # 2007-04-11 00:23
-       until => 1199141999, # 2007-12-31 23:59
+       until => 1191018892, # 2007-12-31 23:59 1199141999
        text  => 'Schlichtallee (Lichtenberg) in beiden Richtungen, zwischen Lückstr. und Hauptstr. Baustelle, Verkehr wird wechselseitig vorbeigeführt (bis Ende 2007)',
        type  => 'handicap',
        source_id => 'IM_004349',
@@ -9266,9 +9266,9 @@ EOF
 userdel	2::inwork 20012,3532 20082,3578
 EOF
      },
-     { from  => 1185828358, # 2007-07-30 22:45
-       until => 1186696800, # 2007-08-10 00:00
-       text  => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Fahrbahnabsenkung, Straße vollständig gesperrt',
+     { from  => 1191018605, # 2007-09-29 00:30
+       until => 1193871599, # 2007-10-31 23:59
+       text  => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Fahrbahnabsenkung, Straße vollständig gesperrt (bis Ende 10.2007)',
        type  => 'gesperrt',
        source_id => 'IM_006204',
        data  => <<EOF,
@@ -9920,13 +9920,21 @@ EOF
 userdel	q4::inwork -53700,-13146 -53945,-12911 -54243,-12956
 EOF
      },
-     { from  => 1190926266, # 2007-09-27 22:51
+     { from  => 1191018682, # 2007-09-29 00:31
        until => 1191520800, # 2007-10-04 20:00
-       text  => 'Straße des 17. Juni (Tiergarten) In beiden Richtungen zwischen Brandenburger Tor und Y.-Rabin-Str. Veranstaltung, Straße vollständig gesperrt (bis 04.10.2007 20 Uhr)',
+       text  => 'Straße des 17. Juni, Y.-Rabin-Str. und Ebertstr. (Tiergarten) In beiden Richtungen zwischen Brandenburger Tor und Großer Stern Veranstaltung, Straße vollständig gesperrt (Y.-Rabin-Str. zwischen Str. des 17. Juni und Scheidemannstr., Ebertstr. zwischen Behrenstr. und Dorotheenstr.) (bis 04.10.2007 20 Uhr)',
        type  => 'gesperrt',
-       source_id => 'IM_006764',
+       source_id => 'IM_006765',
        data  => <<EOF,
-userdel	2::temp 8063,12182 8089,12186 8214,12205 8515,12242
+userdel	2::temp 8063,12182 8089,12186 8214,12205
+userdel	2::temp 8214,12205 8515,12242
+userdel	2::temp 8539,12286 8515,12242
+userdel	2::temp 8600,12165 8515,12242
+userdel	2::temp 8515,12242 8610,12254
+userdel	2::temp 8539,12286 8560,12326 8540,12420
+userdel	2::temp 6828,12031 7383,12095 7816,12150 8063,12182
+userdel	2::temp 8600,12165 8595,12066
+userdel	2::temp 8119,12414 8063,12182
 EOF
      },
      { from  => 1191103200, # 2007-09-30 00:00
@@ -9935,6 +9943,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -22589,66989 -24436,65301
+EOF
+     },
+     { from  => 1190966681, # 2007-09-28 10:04
+       until => 1191211200, # 2007-10-01 06:00
+       text  => 'Scheidemannstr. (Mitte) in beiden Richtungen zw. Ebertstr. und Große Querallee Marathon, Straße vollständig gesperrt (bis 01.10.2007 - 6 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_006771',
+       data  => <<EOF,
+userdel	2::temp 7875,12363 8017,12359 8119,12414 8374,12416 8400,12417 8540,12420
 EOF
      },
     );
