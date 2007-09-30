@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.34 2007/07/23 19:11:24 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.35 2007/09/30 20:19:09 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -872,6 +872,7 @@ sub simplify {
     $s->init;
     while() {
 	my $r = $s->next;
+	next if $r->[Strassen::NAME] =~ m{^\#}; # skip comments (really needed???)
 	my @c = @{ $r->[Strassen::COORDS] };
 	last if !@c;
 	next if @c == 1;

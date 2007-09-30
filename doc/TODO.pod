@@ -1877,6 +1877,11 @@ L<http://www.adfc-frankfurt-oder.de/radtour/>
 
 =over
 
+=item * (M5) (bug)
+
+Bei Verwendung von PreserveComments=>1 sollte $s->next die Kommentare
+überspringen. Siehe workaround in Strassen::CoreHeavy::simplify.
+
 =item * (H4)
 
 Es sollte möglich sein, in einer bbd-Datei sowohl nur-Routing- als

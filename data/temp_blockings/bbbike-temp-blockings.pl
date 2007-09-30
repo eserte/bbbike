@@ -979,8 +979,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 24200,72512 25875,71662
-userdel	q4 28100,70162 26500,71425
-userdel	q4 26500,71425 25875,71662
+userdel	q4 28132,70222 26843,71276 26511,71453
+userdel	q4 26511,71453 25875,71662
 EOF
      },
      { from  => 1115503200, # 2005-05-08 00:00
@@ -5949,7 +5949,7 @@ EOF
        text  => 'B 109 C.-Zetkin-Straße OL Zehdenick, zw. Liebknechtstr. u. Falkenthaler Ch. Kanal-/Straßenbau halbseitig gesperrt; Einbahnstraße 02.10.2006-31.12.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 4475,63431 4880,63531
+userdel	q4::inwork 4478,63369 4801,63458 4948,63424
 EOF
      },
      { from  => 1159999200, # 2006-10-05 00:00
@@ -6266,7 +6266,7 @@ EOF
        text  => 'K 6003 Friedrichswalde-L100 Gollin zw. Friedrichswalde und Kreisgrenze Straßenbau Vollsperrung 04.09.2006-30.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 28975,69975 28100,70162 26500,71425
+userdel	2::inwork 28975,69975 28132,70222 26843,71276 26511,71453
 EOF
      },
      { from  => 1152050400, # 2006-07-05 00:00
@@ -6497,7 +6497,7 @@ EOF
        text  => 'Vollsperrung der Oberspreestraße zwischen Freystadter Weg und Ottomar-Geschke-Straße und Spindlersfelder Straße vom Sonnabend, den 04.11.2006, 5:00 Uhr bis Montag, den 06.11.2006, 5:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 20949,4775 21332,4655
+userdel	2::inwork 20949,4775 21089,4731 21332,4655
 EOF
      },
      { from  => 1163800165, # 2006-11-17 22:49

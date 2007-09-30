@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: any2bbd,v 1.22 2007/09/27 22:51:21 eserte Exp $
+# $Id: any2bbd,v 1.24 2007/09/30 20:02:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -31,6 +31,10 @@ use Strassen::MultiStrassen;
 
 # XXX problematisch: die .g7t-Waypoints-Dateien, die Zeilen ohne Koordinaten erzeugen!
 
+# Note: if using any2bbd with -info ... and -append, then make sure that the
+# first file wrote a global directive preamble. The easiest is to call any2bbd
+# first without any files in non-append mode.
+
 my %opt;
 
 GetOptions(\%opt,
@@ -43,6 +47,7 @@ GetOptions(\%opt,
 	   "routenamefmt=s",
 	   "infotobbd!",
 	   "info=s",
+	   "noempty",
 	  )
     or die <<EOF;
 usage: $0 [-i inputformat] -o outfile [-a|-append]
@@ -51,6 +56,7 @@ usage: $0 [-i inputformat] -o outfile [-a|-append]
     [-excluderx rx [-excluderx ...]]
     [-info file]
     [-infotobbd]
+    [-noempty]
 EOF
 
 my $download_dir = $opt{dir} if defined $opt{dir};
@@ -146,7 +152,7 @@ for my $file (@files) {
     warn $@ if $@;
 }
 
-if (!@s) {
+if (!@s && $opt{noempty}) {
     warn "No usable input files (tried @files), do not write anything...\n";
     exit 0;
 }
@@ -170,14 +176,15 @@ sub run_gpsbabel {
     my $info = $args{info} || {};
     my $file_info = $args{file_info} || {};
     my $cat = "#000080";
-    if (!$opt{append}) {
-	if ($file_info->{accuracy}) {
-	    if ($file_info->{accuracy} eq 'manually') {
-		$cat = "AccManually";
-	    } elsif ($file_info->{accuracy} eq 'low') {
-		$cat = "AccLow";
-	    }
+    if ($file_info->{accuracy}) {
+	if ($file_info->{accuracy} eq 'manually') {
+	    $cat = "AccManually";
+	} elsif ($file_info->{accuracy} eq 'low') {
+	    $cat = "AccLow";
 	}
+    }
+    if ($file_info->{maptitle}) {
+	$title = $file_info->{maptitle};
     }
     if ($opt{inputformat}) {
 	my $s = eval {
