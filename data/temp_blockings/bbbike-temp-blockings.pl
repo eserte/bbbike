@@ -9954,4 +9954,45 @@ EOF
 userdel	2::temp 7875,12363 8017,12359 8119,12414 8374,12416 8400,12417 8540,12420
 EOF
      },
+     { from  => 1191269068, # 2007-10-01 22:04
+       until => 1191621600, # 2007-10-06 00:00
+       text  => 'Wartenberger Str. (Hohenschönhausen) in beiden Richtungen zwischen Paul-Koenig-Str. und Arnimstr. Baustelle Straße tagsüber gesperrt (bis 05.10.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_006787',
+       data  => <<EOF,
+userdel	2::inwork 17900,17068 17839,16987 17788,16916 17634,16681 17446,16393
+EOF
+     },
+     { from  => 1186524000, # 2007-08-08 00:00
+       until => 1195254000, # 2007-11-17 00:00
+       text  => 'B 246 Nächst Neuendorfer Chaussee OL Zossen, zw. Bahnhofstr. und OA Kanalarbeiten halbseitig gesperrt; Einbahnstraße 09.08.2007-16.11.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 13412,-20513 13526,-20548
+EOF
+     },
+     { from  => 1191103200, # 2007-09-30 00:00
+       until => 1191794400, # 2007-10-08 00:00
+       text  => 'L 031 zw. Bernau, hinter Zuf. Toom Baumarkt und BÜ Blumberg Deckensanierung Vollsperrung 01.10.2007-07.10.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 24186,26271 24204,25870 24244,25405 24242,25066 24281,24622 24214,24093 24677,23407 24761,23151 24718,22731
+EOF
+     },
+     { from  => 1191103200, # 2007-09-30 00:00
+       until => 1194044400, # 2007-11-03 00:00
+       text  => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 01.10.2007-02.11.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 10115,-8276 11019,-8435
+EOF
+     },
+     { from  => 1191708000, # 2007-10-07 00:00
+       until => 1193608800, # 2007-10-28 23:00
+       text  => 'L 073 Baruth-Stülpe zw. Paplitz und Lynow Deckeninstandsetzung Vollsperrung 08.10.2007-28.10.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 10970,-39919 11561,-39875 11814,-39896 12751,-39434 13114,-39180 13618,-39476 13914,-39770 15241,-39692
+EOF
+     },
     );

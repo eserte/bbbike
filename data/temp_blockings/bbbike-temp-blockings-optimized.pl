@@ -1,61 +1,7 @@
 @temp_blocking = ();
-$#temp_blocking = 665;
+$#temp_blocking = 711;
 push @temp_blocking,
 (
-       {
-         'until' => 1191189600,
-         'text' => 'B 097 Dresdener Str. Brücke ober DB im OT Schwarze Pumpe Brückenneubau Vollsperrung 17.10.2006-30.09.2007 ',
-         'from' => 1160949600,
-         'id' => 666,
-         'data' => 'userdel	2::inwork 75459,-98456 75933,-97371
-',
-         'type' => 'gesperrt'
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'until' => 1199227362,
          'text' => 'Bau der O2-World, bis 2008',
@@ -234,16 +180,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1191189599,
-         'text' => 'Manteuffelstr. zwischen Skalitzer Str. und Naunynstr. sowie Skalitzer Str. und Paul-Lincke-Ufer: Einbahnstraßenregelung bis Ende 09.2007 ',
-         'from' => undef,
-         'id' => 866,
-         'data' => 'userdel	1::inwork 12000,10531 12056,10655
-userdel	1::inwork 11949,10414 11833,10206 11735,10022
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -298,32 +235,14 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_005069',
-         'until' => 1191189599,
-         'text' => 'Transvaalstr. (Wedding) in Richtung Müllerstr., zwischen Guineastr. und Lüderitzstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 09/07)',
-         'from' => undef,
-         'id' => 896,
-         'data' => 'userdel	q4::inwork; 5988,16099 6104,16223 6215,16340
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
        undef,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_003833',
-         'until' => 1191189600,
-         'text' => 'Glinkastr. (Mitte) in Richtung Leipziger Str., zwischen Jägerstr. und Taubenstr. Baustelle, Fahrtrichtung gesperrt (bis Herbst 2007) (16:40) ',
-         'from' => undef,
-         'id' => 903,
-         'data' => 'userdel	1::inwork 9201,11968 9208,11872
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1194649200,
          'text' => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf, Mahlower Str.bis Kreisverkehr grundhafter Straßenausbau Vollsperrung 26.09.2007-09.11.2007 ',
@@ -410,15 +329,6 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        undef,
-       {
-         'until' => 1191189600,
-         'text' => 'L 029 Grüntal-B 2 Biesenthal OD Biesenthal Deckenerneuerung mit Entwäss. Vollsperrung 10.04.2007-30.09.2007 ',
-         'from' => 1176069600,
-         'id' => 955,
-         'data' => 'userdel	2::inwork 28993,38709 28248,39107 26237,40190
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -442,15 +352,8 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        undef,
-       {
-         'until' => 1191189600,
-         'text' => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 24.05.2007-30.09.2007 ',
-         'from' => 1179871200,
-         'id' => 979,
-         'data' => 'userdel	q4::inwork 10115,-8276 11019,-8435
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -636,16 +539,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_006088',
-         'until' => 1191189599,
-         'text' => 'Simon-Bolivar-Str. (Hohenschönhausen) in beiden Richtungen zwischen Konrad-Wolf-Str. und Küstriner Str. Baustelle, Straße vollständig gesperrt (bis Ende 09.2007)',
-         'from' => 1184610917,
-         'id' => 1074,
-         'data' => 'userdel	2::inwork 15763,15003 16025,14753
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -798,15 +692,7 @@ userdel	1::inwork 11949,10414 11833,10206 11735,10022
        },
        undef,
        undef,
-       {
-         'until' => 1191189600,
-         'text' => 'B 122 zw. Abzw. Klausheide und Zippelsförde Deckenerneuerung Vollsperrung 27.08.2007-30.09.2007 ',
-         'from' => 1188079200,
-         'id' => 1133,
-         'data' => 'userdel	2::inwork -25490,64009 -26733,61993
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1032,13 +918,50 @@ userdel	2::temp 8119,12414 8063,12182
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'source_id' => 'IM_006771',
-         'until' => 1191211200,
-         'text' => 'Scheidemannstr. (Mitte) in beiden Richtungen zw. Ebertstr. und Große Querallee Marathon, Straße vollständig gesperrt (bis 01.10.2007 - 6 Uhr)',
-         'from' => 1190966681,
-         'id' => 1179,
-         'data' => 'userdel	2::temp 7875,12363 8017,12359 8119,12414 8374,12416 8400,12417 8540,12420
+         'source_id' => 'IM_006787',
+         'until' => 1191621600,
+         'text' => 'Wartenberger Str. (Hohenschönhausen) in beiden Richtungen zwischen Paul-Koenig-Str. und Arnimstr. Baustelle Straße tagsüber gesperrt (bis 05.10.2007)',
+         'from' => 1191269068,
+         'id' => 1180,
+         'data' => 'userdel	2::inwork 17900,17068 17839,16987 17788,16916 17634,16681 17446,16393
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1195254000,
+         'text' => 'B 246 Nächst Neuendorfer Chaussee OL Zossen, zw. Bahnhofstr. und OA Kanalarbeiten halbseitig gesperrt; Einbahnstraße 09.08.2007-16.11.2007 ',
+         'from' => 1186524000,
+         'id' => 1181,
+         'data' => 'userdel	1::inwork 13412,-20513 13526,-20548
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1191794400,
+         'text' => 'L 031 zw. Bernau, hinter Zuf. Toom Baumarkt und BÜ Blumberg Deckensanierung Vollsperrung 01.10.2007-07.10.2007 ',
+         'from' => 1191103200,
+         'id' => 1182,
+         'data' => 'userdel	2::inwork 24186,26271 24204,25870 24244,25405 24242,25066 24281,24622 24214,24093 24677,23407 24761,23151 24718,22731
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1194044400,
+         'text' => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 01.10.2007-02.11.2007 ',
+         'from' => 1191103200,
+         'id' => 1183,
+         'data' => 'userdel	2::inwork 10115,-8276 11019,-8435
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1193608800,
+         'text' => 'L 073 Baruth-Stülpe zw. Paplitz und Lynow Deckeninstandsetzung Vollsperrung 08.10.2007-28.10.2007 ',
+         'from' => 1191708000,
+         'id' => 1184,
+         'data' => 'userdel	2::inwork 10970,-39919 11561,-39875 11814,-39896 12751,-39434 13114,-39180 13618,-39476 13914,-39770 15241,-39692
 ',
          'type' => 'gesperrt'
        }
