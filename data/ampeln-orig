@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.127 2007/09/03 21:21:59 eserte Exp eserte $
+#: version: $Id: ampeln-orig,v 4.129 2007/10/01 19:55:53 eserte Exp $
 #:
 	X 9222,8787
 	X 8982,8781
@@ -2254,6 +2254,7 @@ Malzer Weg / nGAR	B0 4581,41115
 Schwarzer Weg / nGAR	B0 3167,41284
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: append_comment Oranienburg-Wensickendorf vvvvvvvvvvvvvvvvvvvvvvvvv
+Wensickendorf	F 7836,38835
 B273 / NEB	B 8643,38865
 Im Wensickendorfer Felde / nGAR (nur am Wochenende)	B 7378,40295
 Triftweg / NEB (Mo-Fr Testbetrieb bis 31.12.2007)	B 8926,40020

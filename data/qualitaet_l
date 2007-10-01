@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Brandenburg und weiterer Umgebung
-#: version: $Id: qualitaet_l-orig,v 4.107 2007/09/07 09:03:06 eserte Exp eserte $
+#: version: $Id: qualitaet_l-orig,v 4.110 2007/10/01 19:55:55 eserte Exp $
 #:
 Basdorf: Kopfsteinpflaster, mäßig bis OK	Q1 11964,35230 12034,35012 12193,34683 12635,32221
 Strausberg Nord - Prötzel: sehr guter Asphalt	Q0 43584,20871 44596,21287 45545,21723 46072,21966 46782,22769 47585,23227 47712,23526 47671,23769 48104,24510 48904,25611 49255,26084 49808,26346 49984,26511
@@ -564,7 +564,7 @@ Steinhöfel: zweispurige Betonplatten	Q1 40733,77232 40656,77681
 	Q0 8919,51778 8856,51512 9137,51000 9256,50262 9600,49756 9581,49487 9706,48675 9825,48275 9893,47987 9925,47831 9889,47618 9995,47299 10037,46602 10043,46478 10078,46093 9940,45390 9618,44150 9376,43507 9293,43085 9287,43028 9329,42885 9360,42714 9317,42598 9232,42478 9098,42254 9043,42165
 	Q0 9043,42165 9032,42153 8925,42114 8696,42028
 	Q0 8696,42028 8764,41570 8768,41543 8800,41346 8765,41187 8710,41000 8392,40142 8373,40095 8218,39700 7946,38987 7950,38843
-	Q0 7950,38843 7698,38825
+	Q0 7950,38843 7836,38835 7698,38825
 	Q0 7698,38825 7703,38662 7703,38498 7787,38248 7814,38168 7823,38090 7704,37531 7529,36946 7464,36678 7443,36428 7443,36175 7435,34963 7346,32257 7429,31973 7367,31669 7397,31494 7562,31439 7856,31013 7971,30713 8071,30398 8100,30308 8281,29788 8327,29494 8315,29159 8409,29043 8353,28965 8337,28834 8303,28478 8216,28310 8184,28103 8209,27937 8128,27753 8103,27587
 	Q0 8303,28478 8571,28209 8738,28086 8980,27690 9201,27089
 	Q0 8194,25966 8182,25608 8370,25539 8493,25378
@@ -1886,24 +1886,24 @@ Bötzower Stadtgraben: Verbundpflaster	Q0 -1817,38131 -1782,38140 -1709,38162 -16
 Martin-Luther-Str.: sehr schlechtes Kopfsteinpflaster	Q3 -1612,37767 -1620,37976 -1631,38184
 (Martin-Luther-Str. - Paul-Gerhard-Str.): Trampelpfad	Q2 -1620,37976 -1707,37976
 Nauener Str.: dünner Asphalt	Q1 -1264,37018 -1140,37000 -1031,36984 -928,36968 -823,36953 -718,36940 -657,36939 -585,36939
-Aderluch (Oranienburg): Radweg aus Verbundpflaster	Q1 -423,39804 -435,39823 -495,39892 -525,40160
-Dimitroffstr. (Oranienburg): Sandweg	Q3 -506,40332 -410,40325
-Friedrich-Ebert-Str. (Oranienburg): Sandweg	Q3 -525,40160 -425,40148 -301,40115 -140,40118
-Hannah-Arendt-Str. (Oranienburg): Sandweg	Q3 -407,40370 -253,40290
-(Kreisverkehr am Bahnhof Sachsenhausen) (Oranienburg): Radweg aus Verbundpflaster	Q1 -429,40556 -382,40564 -400,40600 -435,40587 -429,40556
-Olof-Palme-Str. (Oranienburg): Sandweg	Q3 -301,40115 -270,40207 -253,40290 -229,40379
-Rudolf-Breitscheid-Str. (Oranienburg): Sandweg	Q3 -425,40148 -415,40278 -410,40325 -407,40370 -370,40460
-Sophie-Scholl-Str. (Oranienburg): Radweg aus Verbundpflaster	Q1 -525,40160 -506,40332 -481,40507 -464,40521 -429,40556
-Walther-Rathenau-Str. (Oranienburg): sehr schlechtes Kopfsteinpflaster	Q3 -464,40521 -370,40460 -229,40379 -132,40321
-Wilhelm-Liebknecht-Str. (Oranienburg): Sandweg	Q3 -415,40278 -270,40207 -135,40198
+Aderluch: Radweg aus Verbundpflaster	Q1 -423,39804 -435,39823 -495,39892 -525,40160
+Dimitroffstr.: Sandweg	Q3 -506,40332 -410,40325
+Friedrich-Ebert-Str.: Sandweg	Q3 -525,40160 -425,40148 -301,40115 -140,40118
+Hannah-Arendt-Str.: Sandweg	Q3 -407,40370 -253,40290
+(Kreisverkehr am Bahnhof Sachsenhausen): Radweg aus Verbundpflaster	Q1 -429,40556 -382,40564 -400,40600 -435,40587 -429,40556
+Olof-Palme-Str.: Sandweg	Q3 -301,40115 -270,40207 -253,40290 -229,40379
+Rudolf-Breitscheid-Str.: Sandweg	Q3 -425,40148 -415,40278 -410,40325 -407,40370 -370,40460
+Sophie-Scholl-Str.: Radweg aus Verbundpflaster	Q1 -525,40160 -506,40332 -481,40507 -464,40521 -429,40556
+Walther-Rathenau-Str.: sehr schlechtes Kopfsteinpflaster	Q3 -464,40521 -370,40460 -229,40379 -132,40321
+Wilhelm-Liebknecht-Str.: Sandweg	Q3 -415,40278 -270,40207 -135,40198
 Am Biotop	Q0 323,40821 368,40898 375,40953 373,41004 410,41078 478,41203
 Am Flöhnberg	Q0 -84,40901 -242,40993
 Am Gleis	Q0 -93,41271 -1,41292 93,41270 281,41170 410,41078 590,40942
 Am Heidering	Q0 62,40715 345,40618 384,40639 390,40735 348,40801 323,40821 218,40873 153,40875 82,40857 20,40785
 An den Dünen	Q0 73,40587 51,40642 62,40715 53,40757 20,40785 -59,40835 -84,40901 21,41064
-Carl-Gustav-Hempel-Str. (Oranienburg): Radweg aus Verbundpflaster	Q1 -382,40564 -201,40467 -129,40460 -65,40481 50,40567 73,40587 100,40593 164,40585 509,40457 562,40418 582,40371 650,40143 660,40101 698,40065 1223,39893
+Carl-Gustav-Hempel-Str.: Radweg aus Verbundpflaster	Q1 -382,40564 -201,40467 -129,40460 -65,40481 50,40567 73,40587 100,40593 164,40585 509,40457 562,40418 582,40371 650,40143 660,40101 698,40065 1223,39893
 (Wanderweg am Lehnitzsee)	Q0 264,38696 396,38828 475,38871 565,38885 657,38867 770,39095 773,39192
-(Wanderweg am Lehnitzsee) (Oranienburg): Wasser gebundene Decke	Q1 773,39192 875,39431 928,39517 1070,39640 1148,39673 1229,39665 1295,39782 1289,39862 1284,39885
+(Wanderweg am Lehnitzsee): Wasser gebundene Decke	Q1 773,39192 875,39431 928,39517 1070,39640 1148,39673 1229,39665 1295,39782 1289,39862 1284,39885
 (zwischen Karpfenteich und Entwässerungsgraben)	Q2 773,39192 643,39426
 Adolf-Damaschke-Str.: Sandweg	Q3 -1615,39917 -1471,39942 -1331,39962
 Adolf-Mertens-Str.: Asphalt	Q0 -965,39734 -1206,39787 -1242,39781 -1262,39776 -1440,39748 -1590,39723
@@ -1918,25 +1918,25 @@ Pflaumenallee: Sandweg	Q3 -1614,40021 -1489,40043 -1417,40056 -1328,40140
 (an der Saarlandstr.): Sandweg	Q3 -359,37298 -315,37348 -287,37415 -284,37435
 (ehem. Busbahnhof): Asphalt	Q1 -770,38215 -707,38279 -648,38259 -600,38284
 Lindenring: Asphalt	Q0 -856,38306 -878,38279 -939,38262 -964,38223 -973,38189 -967,38143 -950,38114 -903,38101 -770,38215
-André-Bergeron-Str. (Oranienburg)	Q0 7,39229 -29,39332 -68,39435
+André-Bergeron-Str.	Q0 7,39229 -29,39332 -68,39435
 Angerwiese: Sandweg	Q2 -581,39537 -456,39578 -478,39618 -590,39585 -581,39537
-Auenstr. (Oranienburg)	Q2 -29,39332 31,39354
-Bachstr. (Oranienburg)	Q2 -6,39460 31,39354 67,39253
-(Bachstr.) (Oranienburg)	Q2 67,39253 90,39196
+Auenstr.	Q2 -29,39332 31,39354
+Bachstr.	Q2 -6,39460 31,39354 67,39253
+(Bachstr.)	Q2 67,39253 90,39196
 Eberswalder Str.: Verbundpflaster	Q0 -287,39381 -423,39348 -539,39321 -575,39290 -631,39278 -723,39253 -815,39226 -871,39214
-Ernst-Schneller-Str. (Oranienburg)	Q2 -60,39209 7,39229 67,39253 104,39264
+Ernst-Schneller-Str.	Q2 -60,39209 7,39229 67,39253 104,39264
 Forstweg: Sandweg	Q2 -590,39585 -629,39775
 Greifswalder Str.: sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 -662,39381 -631,39278 -581,39106 -534,38965
-Hans-von-Dohnanyi-Str. (Oranienburg)	Q0 -198,39382 -131,39407 -68,39435 -6,39460 71,39496
-Hans-von-Dohnanyi-Str. (Oranienburg): sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 -198,39382 -290,39342
+Hans-von-Dohnanyi-Str.	Q0 -198,39382 -131,39407 -68,39435 -6,39460 71,39496
+Hans-von-Dohnanyi-Str.: sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 -198,39382 -290,39342
 Heinrich-Grüber-Platz	Q0 221,39242 200,39296 179,39348 140,39334 171,39253
 (hinter dem Finanzamt)	Q0 148,39450 71,39496
 (hinter dem Straßenverkehrsamt)	Q0 200,39296 231,39314 215,39360 206,39396
 Hirtenweg	Q2 -200,39595 -248,39665 -273,39731 -271,39753
-Hubertusstr. (Oranienburg): sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 -198,39382 -187,39229 -153,39103
+Hubertusstr.: sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 -198,39382 -187,39229 -153,39103
 Kastanienweg: Sandweg	Q2 -478,39618 -506,39682 -525,39787
 Kiefernweg: Verbundpflaster	Q0 -662,39381 -679,39432 -662,39514 -581,39537
-Mathias-Thesen-Str. (Oranienburg)	Q0 -39,39148 -60,39209 -131,39407
+Mathias-Thesen-Str.	Q0 -39,39148 -60,39209 -131,39407
 (Parkplatz hinter dem Finanzamt)	Q0 206,39396 148,39450 167,39382 206,39396
 Pasewalker Str.: Sandweg mit Kopfsteinpflaster	Q3 -481,39134 -539,39321
 Prenzlauer Str.: Sandweg	Q3 -375,39168 -423,39348 -450,39440
@@ -1949,29 +1949,29 @@ Strelitzer Str.: grobes Kopfsteinpflaster	Q3 -850,39334 -835,39389
 Strelitzer Str.	Q0 -765,38887 -818,39040 -856,39056 -865,39103 -871,39214 -850,39334
 Waldstr.	Q0 -284,39490 -450,39440 -662,39381
 (zwischen Finanz- und Straßenverkehrsamt)	Q0 179,39348 215,39360
-An der Hasenheide (Oranienburg): Sandweg	Q3 475,38871 478,38925 300,38904
+An der Hasenheide: Sandweg	Q3 475,38871 478,38925 300,38904
 André-Pican-Str.: Radweg aus Verbundpflaster	Q0 -292,39051 -273,38792 -260,38689 -248,38560 -235,38435 -209,38185 -167,37890 -234,37510
-Bonner Str. (Oranienburg): sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 3,39075 212,39123
+Bonner Str.: sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 3,39075 212,39123
 Freiburger Str.: sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 -534,38965 -471,38737 -450,38646 -425,38559
-(Fußweg am Lehnitzsee) (Oranienburg)	Q1 112,38548 128,38581 256,38687 264,38696
-Heidelberger Platz (Oranienburg): sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 -77,38790 -64,38796 -63,38825 -88,38842 -100,38813 -77,38790
-Heidelberger Str. (Oranienburg): sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 -153,39103 -88,38842
-Heidelberger Str. (Oranienburg): sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 -85,38248 -42,38306 -51,38476 -51,38517 -60,38603 -77,38790
-Heidelberger Str. (Oranienburg)	Q1 -85,38248 -209,38185
-Koblenzer Str. (Oranienburg): sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 31,38904 3,39075 -7,39157
-Kölner Str. (Oranienburg): sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 221,39064 212,39123 187,39231
+(Fußweg am Lehnitzsee)	Q1 112,38548 128,38581 256,38687 264,38696
+Heidelberger Platz: sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 -77,38790 -64,38796 -63,38825 -88,38842 -100,38813 -77,38790
+Heidelberger Str.: sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 -153,39103 -88,38842
+Heidelberger Str.: sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 -85,38248 -42,38306 -51,38476 -51,38517 -60,38603 -77,38790
+Heidelberger Str.	Q1 -85,38248 -209,38185
+Koblenzer Str.: sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 31,38904 3,39075 -7,39157
+Kölner Str.: sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 221,39064 212,39123 187,39231
 Ladestraße zum Güterbahnhof: grobes Kopfsteinpflaster	Q3 -398,38162 -450,38290 -484,38356 -518,38396 -650,38687 -765,38887
-Ludwigshafener Str. (Oranienburg): sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 95,38614 33,38685 -64,38796
-(Ludwigshafener Str.) (Oranienburg)	Q2 128,38581 95,38614
-Mainzer Str. (Oranienburg): sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 153,38792 193,38804 475,38871
+Ludwigshafener Str.: sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 95,38614 33,38685 -64,38796
+(Ludwigshafener Str.)	Q2 128,38581 95,38614
+Mainzer Str.: sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 153,38792 193,38804 475,38871
 Mannheimer Str.:-51,38476 -235,38435	Q3 -51,38476 -235,38435
-Rüdesheimer Str. (Oranienburg): sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 284,38689 264,38696 239,38709 153,38792 31,38904
+Rüdesheimer Str.: sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 284,38689 264,38696 239,38709 153,38792 31,38904
 Speyerer Str.: sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 -100,38813 -273,38792
 Straßburger Str.: sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 -571,38621 -450,38646 -260,38689
-Wiesbadener Str. (Oranienburg): sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 153,38792 33,38685 -60,38603
-Wiesbadener Str. (Oranienburg)	Q0 -60,38603 -248,38560
+Wiesbadener Str.: sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 153,38792 33,38685 -60,38603
+Wiesbadener Str.	Q0 -60,38603 -248,38560
 (Weg am Güterbahnhof): Sandweg bzw. Trampelpfad	Q2 -450,38290 -435,38312 -571,38621 -629,38704 -765,38887
-Wormser Str. (Oranienburg): sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 31,38904 -63,38825
+Wormser Str.: sehr schlechtes Kopfsteinpflaster, Gehweg holprig	Q3 31,38904 -63,38825
 Wörthstr.	Q1 112,38548 -51,38517
 Badstr.: sehr schlechtes Kopfsteinpflaster	Q3 -775,35643 -687,35673 -665,35679 -614,35695 -534,35721 -521,35726 -437,35754 -395,35767 -367,35775 -270,35807
 (entlang Umgehungsbahn): Sandweg	Q3 -928,36876 -928,36929 -1115,36960 -1251,36985 -1643,37051 -1873,37093 -1889,37093 -2228,37131 -2334,37146
@@ -2099,6 +2099,110 @@ Dameswalde - Freienhagen: schlechtes Kopfsteinpflaster	Q3 871,44282 1279,44332 1
 Kreuzbruch - Rehmate: mäßiger Asphalt	Q1 9940,45390 10095,45368 10454,45320 10526,45095 10818,44595 10934,44381 10942,44331
 Rehmate - Stolzenhagen: fester Sandweg	Q2 10942,44331 11039,44026 11640,42470 12128,42043
 Schmachtenhagen - Bernöwe: Asphalt	Q0 4696,40926 4592,41098 4581,41115 4490,41251 4353,41568 4160,41835 4112,41939 4035,42443 4037,42653 4082,42854 4042,43095 4195,43501 4457,43957 4637,44431 4625,44662
+Am Anger: Betonfahrbahn	Q1 -4647,35644 -4582,35640 -4518,35648 -4469,35663 -4412,35681
+Am Backofenberg: Betonfahrbahn	Q1 -4051,35876 -4009,35795 -3975,35713 -3971,35692 -3972,35574
+Am Backofenberg: Betonfahrbahn	Q1 -4058,35999 -4051,35876 -4048,35800 -4028,35696 -4007,35575 -4009,35526 -4019,35401 -4024,35329 -4026,35321
+(Am Backofenberg): Rasen	Q3 -4009,35795 -3964,35815
+(Am Backofenberg): Trampelpfad	Q2 -3971,35692 -3921,35695
+Am Birkenberg: Betonfahrbahn	Q1 -4487,36218 -4459,36138 -4442,36083 -4410,35982 -4326,35826 -4287,35700
+(Am Birkenberg - Mittelweg): Trampelpfad	Q2 -4442,36083 -4532,36051 -4633,36022
+Am Hauptgraben: Betonfahrbahn	Q1 -4540,35102 -4504,34867 -4446,34635 -4381,34426
+Am Luch: Betonfahrbahn	Q1 -4624,35105 -4598,34845 -4557,34606 -4475,34400
+(Am Luch - Havelhausener Str.): Sandweg	Q2 -4557,34606 -4501,34620 -4446,34635 -4406,34648 -4346,34668 -4240,34681 -4193,34688 -4143,34695 -4100,34709 -4062,34726
+Am Roggenfeld: Betonfahrbahn	Q1 -4866,36080 -4841,35963 -4829,35903 -4737,35700 -4740,35601
+Am Schlangenberg: Verbundpflaster	Q0 -3837,34241 -3745,34078 -3653,33912 -3711,33867
+Am Wall: mäßiger Sandweg (im nördlichen Teil), schlechter Asphalt (im südlichen Teil)	Q2 -3614,33859 -3590,33912 -3601,34032 -3667,34120 -3721,34218 -3771,34281
+(Am Wall - Str. der Jungen Pioniere): fester Sandweg	Q2 -3864,34462 -3978,34437 -4018,34429 -4090,34417 -4132,34400 -4167,34392 -4248,34384 -4279,34370
+(Am Wasserwerk - Am Anger): Sandweg	Q3 -4446,35268 -4432,35380 -4429,35415 -4431,35532 -4453,35629 -4469,35663
+(Am Wasserwerk): Asphalt	Q0 -4574,35270 -4592,35393 -4620,35495 -4618,35525 -4618,35568
+(Am Wasserwerk): Sandweg	Q3 -4543,35270 -4534,35339 -4532,35396 -4533,35408 -4542,35468 -4526,35500 -4532,35540
+(Am Wasserwerk): Verbundpflaster	Q0 -4618,35568 -4548,35570
+An den Schlenken: Betonfahrbahn	Q1 -4374,36254 -4357,36160 -4329,36090 -4264,35981 -4235,35907 -4224,35842
+An der Aue: Verbundpflaster	Q0 -3937,35085 -3885,35092
+An der Aue: Verbundpflaster	Q0 -3944,35113 -3896,35120
+An der Aue: Verbundpflaster	Q0 -3956,35164 -3944,35113 -3937,35085 -3929,35043 -3982,35037
+An der Muhre: Betonfahrbahn	Q1 -3858,35572 -3860,35664 -3874,35710 -3880,35724 -3920,35835 -3956,35914 -3998,36000 -4037,36157 -4056,36182 -4081,36190 -4141,36189
+(An der Muhre): Rasen	Q3 -3874,35710 -3823,35726
+(An der Muhre): Rasen	Q3 -3956,35914 -4003,35889
+(An der Muhre): Trampelpfad	Q2 -3880,35724 -3925,35708
+Dorfaue: fester Sandweg	Q2 -4118,35066 -4053,35064 -4052,35178 -4040,35284
+Dorfaue: Verbundpflaster	Q0 -4122,34994 -4118,35066 -4116,35105 -4114,35187 -4052,35178 -3956,35164
+(entlang Hauptgraben): Trampelpfad	Q2 -4298,34381 -4327,34435
+Ernst-Thälmann-Str.: Asphalt	Q0 -4457,34405 -4432,34355 -4412,34312 -4300,34075 -4211,33875 -4141,33714
+(Ernst-Thälmann-Str. - (entlang Hauptgraben)): Rasen	Q3 -4432,34355 -4357,34368 -4298,34381
+Fohlenweg: Verbundpflaster	Q0 -3860,35475 -3857,35308 -3857,35212
+Fohlenweide: Asphalt	Q0 -4791,35077 -4765,35070 -4723,34987 -4693,34954 -4682,34835 -4721,34830 -4715,34776 -4673,34753 -4655,34625
+Fohlenweide: Asphalt	Q0 -4791,35111 -4791,35077 -4793,35054 -4823,35039 -4832,34975 -4832,34885 -4804,34821 -4796,34773 -4810,34726 -4800,34648 -4773,34628 -4731,34632 -4714,34623 -4655,34625 -4613,34627
+Fohlenweide: Asphalt	Q0 -4796,34773 -4715,34776
+Fohlenweide: Asphalt	Q0 -4804,34821 -4721,34830
+Fohlenweide: Asphalt	Q0 -4832,34975 -4723,34987
+Fontanehof: Verbundpflaster	Q0 -4264,35057 -4283,35009 -4295,34984 -4314,34979
+Fontanehof: Verbundpflaster	Q0 -4295,34984 -4279,34976 -4267,35000 -4283,35009
+(Fontanestr. - Am Schlangenberg): fester Sandweg	Q2 -4143,33904 -4062,33923 -4020,33944 -3956,33975 -3887,34007 -3808,34044 -3745,34078
+(Fontanestr. - Am Schlangenberg): Verbundpflaster	Q0 -4266,33848 -4211,33875 -4143,33904
+Fontanestr.: Verbundpflaster	Q0 -4201,33706 -4266,33848 -4360,34046 -4300,34075
+(Fontanestr. - (Westrand)): Trampelpfad	Q2 -4360,34046 -4400,34040
+(Gartenstr. - (entlang Hauptgraben)): fester Sandweg	Q2 -4345,34337 -4310,34356 -4298,34381
+(Gartenstr. - Ernst-Thälmann-Str.): Verbundpflaster	Q0 -4345,34337 -4412,34312
+Gartenstr.: Verbundpflaster	Q0 -4064,33725 -4143,33904 -4229,34093 -4235,34108 -4345,34337 -4357,34368
+Geschwister-Scholl-Str.: Sandweg	Q2 -4319,34870 -4323,34787
+Grünstr.: Verbundpflaster	Q0 -4213,33703 -4089,33443 -4071,33404
+(Grünstr. - Wiesenstr.): Verbundpflaster	Q0 -4089,33443 -4030,33472 -3970,33503
+Hauptstr.: Kopfsteinpflaster	Q3 -3913,34233 -3967,34330
+Hauptstr.: Trampelpfad	Q2 -3967,34330 -4007,34398 -4018,34429 -4034,34487
+Havelhausener Str.: schlechtes Kopfsteinpflaster (meist Ausweichen auf Bankett möglich)	Q2 -4078,34801 -4062,34726 -3900,34531 -3879,34504
+(hinter dem Friedhof): Sandweg	Q2 -3967,34330 -3940,34343 -3978,34437
+(Hufeisenweg - Fohlenweg): Verbundpflaster	Q0 -3781,35322 -3818,35323 -3857,35308
+(Hufeisenweg - Fohlenweg): Verbundpflaster	Q0 -3935,35294 -3890,35296 -3857,35308
+Hufeisenweg: Verbundpflaster	Q0 -3934,35174 -3935,35294 -3939,35481 -3860,35475 -3785,35470 -3781,35322 -3781,35250
+Hufeisenweg: Verbundpflaster	Q0 -3970,35484 -3939,35481
+(Karl-Marx-Str. - Am Wasserwerk): Rasen	Q3 -4669,35527 -4618,35525
+Karl-Marx-Str.: Betonfahrbahn	Q1 -4779,36113 -4729,36004 -4657,35843 -4643,35775 -4638,35692 -4647,35644 -4649,35627 -4661,35571 -4669,35527 -4662,35453 -4637,35376 -4615,35270 -4616,35237 -4618,35181 -4624,35105
+(Karl-Marx-Str. - Birkenallee): Rasen	Q3 -4532,35396 -4484,35390 -4432,35380
+(Karl-Marx-Str. - Birkenallee): Rasen	Q3 -4637,35376 -4592,35393
+(Karl-Marx-Str. - Birkenallee): Rasen	Q3 -4638,35692 -4528,35698 -4446,35723
+(Karl-Marx-Str. - Birkenallee): Sandweg	Q3 -4432,35380 -4363,35378
+(Karl-Marx-Str. - Birkenallee): Sandweg	Q3 -4592,35393 -4533,35408
+Kirchhofstr.: Asphalt	Q0 -3898,34205 -3837,34241 -3771,34281
+Kirchhofstr.: fester Sandweg	Q2 -4180,34114 -4114,34143 -4056,34169 -3993,34197 -3913,34233
+Kirchhofstr.: Verbundpflaster	Q0 -4180,34114 -4229,34093
+Kirchhofstr.: Verbundpflaster	Q0 -4235,34108 -4300,34075
+Kornweg: Betonfahrbahn	Q1 -4518,35648 -4489,35551 -4481,35435 -4484,35390 -4497,35269
+Kurze Str.: Betonfahrbahn	Q1 -4130,35998 -4058,35999 -4035,35999 -3998,36000
+Lindenstr.: Verbundpflaster	Q0 -4165,35337 -4024,35329
+Maxim-Gorki-Str.:Betonfahrbahn	Q1 -4475,34400 -4457,34405 -4431,34412 -4381,34426 -4263,34447 -4155,34466 -4106,34474 -4034,34487 -3996,34499 -3900,34531
+Maxim-Gorki-Str.: Sandweg	Q2 -4529,34367 -4475,34400
+Mittelweg: Betonfahrbahn	Q1 -4680,36151 -4640,36039 -4633,36022 -4595,35906 -4550,35798 -4528,35698 -4518,35648
+Moorgrabenstr.: Verbundpflaster	Q0 -3929,33745 -3845,33559
+Nordweg - Am Birkenberg: fester Sandweg	Q2 -4516,36209 -4479,36129 -4459,36138
+Nordweg: Betonfahrbahn	Q1 -4937,36053 -4909,36063 -4866,36080 -4829,36094 -4779,36113 -4736,36129 -4680,36151 -4636,36168 -4579,36190 -4516,36209 -4487,36218 -4374,36254 -4296,36278 -4226,36287 -4151,36291
+Nordweg: fester Sandweg	Q2 -4296,36278 -4295,36225 -4282,36175
+Nordweg: fester Sandweg	Q2 -4636,36168 -4612,36101
+Nordweg: fester Sandweg	Q2 -4736,36129 -4704,36060
+Nordweg: fester Sandweg	Q2 -4829,36094 -4793,36006
+Nordweg: fester Sandweg	Q2 -4909,36063 -4893,36003
+Ostweg: Betonfahrbahn	Q1 -4007,35575 -3972,35574 -3951,35574 -3910,35573 -3858,35572 -3792,35570
+(Ostweg - Kurze Str.): Rasen	Q3 -3910,35573 -3910,35640 -3921,35695 -3925,35708 -3964,35815 -4003,35889 -4031,35953 -4035,35999
+Parkstr.: Betonfahrbahn	Q1 -4408,35665 -4343,35684 -4287,35700 -4146,35700 -4028,35696
+Parkstr.: Trampelpfad	Q2 -4028,35696 -3975,35713
+Remontehof: Verbundpflaster	Q0 -3857,35212 -3795,35082
+Remontehof: Verbundpflaster	Q0 -3956,35164 -3934,35174 -3857,35212 -3781,35250
+Ringstr.: Verbundpflaster	Q0 -4217,35040 -4209,35109 -4212,35146 -4209,35167 -4178,35200 -4154,35195 -4114,35187
+Sandweg: Betonfahrbahn	Q1 -4164,34807 -4165,34750 -4143,34695 -4085,34606 -4034,34487
+Sandweg: Sandweg	Q2 -4157,34873 -4164,34807
+Schulweg: Betonfahrbahn	Q1 -4326,35826 -4278,35842 -4224,35842 -4137,35841
+Str. der Jungen Pioniere: Asphalt	Q0 -4419,35097 -4395,34887 -4346,34668 -4263,34447 -4248,34384
+Wasserstr.: Verbundpflaster	Q0 -4141,33714 -4030,33472
+Weidensteg: Betonfahrbahn	Q1 -4260,34842 -4271,34787 -4240,34681 -4184,34568 -4155,34466
+(Weidensteg - Blumenstr.): Trampelpfad	Q2 -4155,34466 -4132,34400 -4073,34225 -4056,34169
+Weidensteg - Rudolf-Breitscheid-Str.: Trampelpfad	Q2 -4073,34225 -3993,34197
+(Westrand): Betonplatten	Q2 -4326,33801 -4251,33693
+(Westrand): Sandweg	Q2 -4682,35107 -4645,34839 -4613,34627 -4604,34556 -4529,34367 -4423,34182 -4400,34040 -4381,33935 -4326,33801
+(Westrand): Sandweg	Q2 -5002,36146 -4990,35954 -4984,35924 -4968,35831 -4860,35590 -4835,35531
+Wiesenstr.: Verbundpflaster	Q0 -4074,33724 -3970,33503
+Wiesenweg: Betonfahrbahn	Q1 -4948,36159 -4940,36140 -4937,36053 -4935,35951 -4930,35935 -4910,35843 -4818,35601 -4740,35601 -4727,35597 -4661,35571
+Wiesenweg:Sandweg	Q2 -4860,35590 -4818,35601
+(Wiesenweg - (Westrand)): Sandweg	Q2 -4930,35935 -4984,35924
 Am Vogelherd (Waldesruh, Dahlwitz-Hoppegarten): loser Sandweg	Q3 25228,7462 25179,7853 25175,7953
 Heinrich-Heine-Allee (Waldesruh): glatt asphaltiert	Q0 25175,7953 25115,8033 25047,8086 24953,8152 24885,8208 24852,8235 24797,8246 24767,8251
 Mühlenstr.: Kopfsteinpflaster	Q2 25437,7460 25397,7452
