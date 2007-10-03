@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.176 2007/10/01 18:57:37 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.176 2007/10/01 18:57:37 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -84,7 +84,7 @@ Prenzlauer Promenade	2 12165,19600 12008,19613 11953,19363 12003,18896 11984,187
 Prenzlauer Promenade	2 11927,19308 12020,19333
 Breite Str. Pankow	1 10240,18193 10281,18241 10562,18387 10609,18384
 Breite Str. Pankow	1 10680,18380 10669,18336 10327,18177 10240,18193
-Heinrich-Mann-Platz.	1 9590,18548 9527,18517 9496,18545 9469,18570 9475,18617 9526,18648 9556,18630 9588,18610 9590,18548
+Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
 Edelweißstr.	1 8251,19937 7966,19968 7885,19975 7755,20059
 Angerburger Allee	1 -1524,11108 -1608,11133 -1829,11337 -1895,11400 -1966,11466
 Edelhofdamm	1 3200,25429 2938,25317 2702,25223 2730,25298 2907,25363 3211,25484
@@ -176,7 +176,7 @@ Grazer Platz	1 6445,6769 6530,6786 6679,6816 6802,6816
 Grazer Platz	1 6811,6737 6686,6735 6546,6720 6517,6717 6451,6710
 Goltzstr. (Spandau)	1 -2843,16947 -3031,16807
 Putlitzstr.	1 6267,14184 6264,13995 6226,13951
-Langhansstr. (außer Tram)	1 12046,16568 12200,16579 12409,16475
+Langhansstr. (außer Tram)	1 12046,16568 12189,16578 12409,16475
 Triftstr. (Buchholz)	1 12018,23040 12178,23034
 Joachimstr.	1 10142,13556 10081,13673
 Wilhelmsaue	1 4778,8784 4918,8785 5165,8784
@@ -235,7 +235,7 @@ Schmollerplatz/str.	1 13241,9407 13184,9340 13209,9325
 Isarstr.	1 12349,8464 12368,8356
 Zionskirchplatz	1 10306,14247 10277,14350 10315,14386 10365,14372 10389,14274
 Ohmstr.	1 11324,11689 11378,11856
-Anton-Saefkow-Str.	1 13202,14388 13084,14472 12998,14533 12885,14616 12782,14676 12723,14714 12536,14827
+Anton-Saefkow-Str.	1 13202,14388 13084,14472 13013,14523 12885,14616 12782,14676 12723,14714 12536,14827
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 Wöhlertstr.	1 8442,14456 8662,14567
 Pflugstr.	1 8662,14567 8781,14357
@@ -682,8 +682,8 @@ Tempelhofer Damm -> Viktoriastr.: unbequem passierbarer Mittelstreifen	3 9182,53
 Kopenhagener Str. -> Schönhauser Allee: U-Bahnviadukt	3 10722,15921 10972,15895 10977,15944
 Schönhauser Allee -> Kopenhagener Str.: U-Bahnviadukt	3 10963,15789 10972,15895 10722,15921
 Schönhauser Allee: U-Bahnviadukt	3 10949,15674 10930,15522 11055,15504
-Hallandstr. -> Berliner Str.: U-Bahnrampe	3 11285,16879 10999,16830 11018,16730
-Berliner Str. -> Hallandstr.: U-Bahnrampe	3 10986,16897 10999,16830 11285,16879
+Berliner Str. -> Hallandstr.: U-Bahnrampe	3 10986,16897 10999,16830 11270,16890
+Hallandstr. -> Berliner Str.: U-Bahnrampe	3 11270,16890 10999,16830 11018,16730
 Eschengraben -> Berliner Str.: U-Bahnrampe	3 11281,16743 11018,16730 11042,16605
 Berliner Str. -> Eschengraben: U-Bahnrampe	3 10999,16830 11018,16730 11281,16743
 Berliner Str. -> Thulestr.: U-Bahnrampe	3 11018,16730 11042,16605 11278,16609
@@ -766,9 +766,8 @@ Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 12604,1
 Greifswalder Str. -> Anton-Saefkow-Str.: Mittelstreifen mit Straßenbahn	3 12604,14927 12536,14827 12723,14714
 Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 12612,14904 12604,14927 12536,14827
 Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 12614,14941 12604,14927 12612,14904
-Greifswalder Str. -> Güterbahnhof Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 12614,14941 12604,14927 12734,14943
-Güterbahnhof Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 12734,14943 12604,14927 12612,14904
-Güterbahnhof Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 12734,14943 12604,14927 12536,14827
+Naugarder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 12693,15225 12743,15138 12880,15335
+Greifswalder Str. -> Naugarder Str.: Mittelstreifen mit Straßenbahn	3 12722,15105 12743,15138 12693,15225
 Jablonskistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3 11955,14531 11662,14695 11642,14625
 Prenzlauer Allee -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3 11681,14759 11662,14695 11955,14531
 Hiddenseer Str. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3 11655,15253 11822,15193 11852,15281
@@ -998,6 +997,7 @@ tragen (Treppe)	0:30:-118 -7418,181
 tragen (Treppe)	0:30:-64 -6933,14317
 tragen (Treppe)	0:30:2 -6934,14291
 tragen (Treppe)	0:30:-237 20673,7260
+Schranke	BNP:3:61 8251,20927
 Schranke	BNP:5:-174 21297,12748
 Drängelgitter	BNP:5:7 22061,15168
 Drängelgitter kann ohne Absteigen passiert werden	BNP:2:-206 1358,3257
@@ -1071,6 +1071,7 @@ Schwingtor an der Luiseninsel	BNP:10:-126 7742,11639
 Schranke	BNP:5:12 25558,997
 Drängelgitter	BNP:5:-118 8810,14373
 enges Drängelgitter	BNP:5:90 100,3
+Otto-Ostrowski-Str.: Straße in Bau	2:inwork 13708,13623 13769,13487
 Zum Anhalter Steg: Bauarbeiten bis 2007-10-31	2:inwork 8773,10429 8776,10548
 Margarte-Steffin-Str.: Baurabeiten	2:inwork 8700,12810 8730,12804
 Hedwigskirchgasse: Bauarbeiten	2:inwork 9743,12239 9756,12139
@@ -1156,7 +1157,7 @@ Greifswalder Str. -> Olga-Benario-Prestes-Str.: Greifswalder Str.	3 12536,14827 
 Dietrich-Bonhoeffer-Str.	1 12578,14237 12285,14458
 tragen (3 einzelne Stufen)	0:15:-233 13079,14320
 Achtung schlecht sichtbare Kette!!	BNP:5:-121 13446,14030
-Treppe	0:20:-60 12869,14666
+Treppe	0:20:-62 12867,14648
 2 Treppen o. schmale Rampen	0:10:-229 12969,14672
 tragen (Treppe)	0:15 5595,5781 5593,5803
 Althoffplatz	1 5687,5586 5609,5584 5573,5622 5613,5672 5683,5672

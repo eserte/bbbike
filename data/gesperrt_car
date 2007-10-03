@@ -92,7 +92,7 @@ Mehringdamm -> Baruther Str.: Mehringdamm - Baruther	3 9444,9919 9387,9804 9568,
 Fidicin - Mehringdamm	3 9305,9044 9235,9051 9234,9038 9227,8890
 Hobrechtstr.	1 12003,9105 11998,8872
 Lützowplatz	1 7002,11034 6873,11011
-Romain-Rolland-Str. - Berliner Str.	3 12856,17825 12746,17981 12479,17811
+Romain-Rolland-Str. - Berliner Str.	3 12856,17825 12736,17998 12479,17811
 Mahlower Str.	1 11773,8231 11920,8252
 Essener Str.	1 5902,13009 6012,13039 6149,13070 6201,13058
 Belforter Str. - Heinrich-Roller-Str.	3 11299,14112 11435,14023 11616,13911
@@ -126,8 +126,6 @@ Steinstr. (Mitte)	1 10603,13395 10369,13503 10277,13542
 Roennebergstr.	1 5533,6753 5374,6932
 Matternstr.	1 13798,13003 13579,12904
 John-Schehr-Str. - Greifswalder Str.	3 12573,14581 12437,14680 12384,14600 12338,14532
-Fritz-Riedel-Str. - Landsberger Allee	3 13375,13986 13440,13886 13517,13778 13640,13597 13708,13623 13862,13688
-Landsberger Allee - Fritz-Riedel-Str.	3 13550,13560 13640,13597 13517,13778 13440,13886 13375,13986
 Prenzlauer Allee -> Stubbenkammerstr.: Prenzlauer Allee	3 11776,15060 11798,15133 11643,15189
 Fröbelstr. -> Raumerstr.: Prenzlauer Allee	3 11870,15004 11776,15060 11623,15108
 Fröbelstr. -> Prenzlauer Allee: Prenzlauer Allee	3 11870,15004 11776,15060 11712,14868
@@ -158,7 +156,7 @@ Wismarplatz	3 14449,11742 14416,11815 14395,11753
 Simon-Dach-Str.	1 13954,11647 13981,11746 14006,11843
 Simon-Dach-Str.	1 14045,11965 14006,11843
 Gabriel-Max-Str.	1:inwork 14127,11811 14161,11930
-Buchhorster Str.	1 7637,20614 7992,20515
+Buchhorster Str.	1 7620,20635 7866,20556 7992,20515
 Handjerystr.	1 5641,7189 5624,7113 5574,7018
 Leuthener Str.	1 7494,8364 7578,8358
 Leuthener Str.	1 7716,8356 7640,8359
@@ -239,11 +237,13 @@ Lilli-Henoch-Str. -> Prenzlauer Allee: Straßenbahn	3 11952,15374 11882,15384 118
 Prenzlauer Allee -> Ahlbecker Str.: Straßenbahn	3 11860,15309 11882,15384 11638,15522
 John-Schehr-Str. -> Greifswalder Str.: Straßenbahn	3 12573,14581 12437,14680 12384,14600
 Greifswalder Str. -> John-Schehr-Str.: Straßenbahn	3 12488,14753 12437,14680 12573,14581
+Naugarder Str. -> Greifswalder Str.: Straßenbahntrasse	3 12693,15225 12743,15138 12880,15335
+Greifswalder Str. -> Naugarder Str.: Straßenbahntrasse	3 12722,15105 12743,15138 12693,15225
+Hausburgstr. -> Landsberger Allee: Straßenbahn	3 13700,13459 13640,13597 13550,13560
+Hausburgstr. -> Fritz-Riedel-Str.: Straßenbahn	3 13700,13459 13640,13597 13517,13778
 Landsberger Allee -> Fritz-Riedel-Str.: Straßenbahn	3 13550,13560 13640,13597 13517,13778
-Hausburgstr. -> Landsberger Allee: Straßenbahn	3 13692,13475 13640,13597 13550,13560
-Hausburgstr. -> Fritz-Riedel-Str.: Straßenbahn	3 13692,13475 13640,13597 13517,13778
-Landsberger Allee -> Hausburgstr.: Straßenbahn	3 13708,13623 13640,13597 13692,13475
-Fritz-Riedel-Str. -> Hausburgstr.: Straßenbahn	3 13517,13778 13640,13597 13692,13475
+Landsberger Allee -> Hausburgstr.: Straßenbahn	3 13708,13623 13640,13597 13700,13459
+Fritz-Riedel-Str. -> Hausburgstr.: Straßenbahn	3 13517,13778 13640,13597 13700,13459
 Fritz-Riedel-Str. -> Landsberger Allee: Straßenbahn	3 13517,13778 13640,13597 13708,13623
 Topsstr.	1 10607,15142 10896,15250
 Buchholzer Str. -> Schönhauser Allee: Schönhauser Allee	3 11055,15504 10930,15522 10917,15418

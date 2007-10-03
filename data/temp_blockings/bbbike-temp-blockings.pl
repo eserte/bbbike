@@ -550,8 +550,8 @@ EOF
      { from  => undef,
        until => 1092439940,
        data => <<EOF,
-userdel	2 9475,18617 9301,18722
-userdel	2 9590,18548 9881,18354
+userdel	2 9457,18612 9301,18722
+userdel	2 9565,18555 9881,18354
 EOF
        text  => 'Heinrich-Mann-Straße Berlin-Reinickendorf Richtung Berlin-Pankow Zwischen Heinrich-Mann-Straße und Grabbeallee Störungen durch geplatzte Wasserleitung, Straße gesperrt',
        type  => 'gesperrt',
@@ -3209,7 +3209,7 @@ EOF
        source_id => 'IM_002329',
        data  => <<EOF,
 userdel	q4 13300,17726 13031,17775 12928,17801 12856,17825
-userdel	q4 12856,17825 12746,17981
+userdel	q4 12856,17825 12736,17998
 EOF
      },
      { from  => undef, # 
@@ -4330,7 +4330,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002743',
        data  => <<EOF,
-userdel	1 10596,17554 10510,17649 10459,17754
+userdel	1 10572,17573 10510,17649 10459,17754
 EOF
      },
      { from  => undef, # 
@@ -8960,7 +8960,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20070703.1505.81257.html',
        data  => <<EOF,
-userdel	1::inwork 12693,16700 12486,16791 12269,16881
+userdel	1::inwork 12693,16700 12486,16791 12257,16876 12241,16900
 EOF
      },
      { from  => 1183704492, # 2007-07-06 08:48

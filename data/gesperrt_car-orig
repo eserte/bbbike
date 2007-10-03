@@ -92,7 +92,7 @@ Mehringdamm - Baruther	3nocross 9444,9919 9387,9804 9334,9670
 Fidicin - Mehringdamm	3 9305,9044 9235,9051 9234,9038 9227,8890
 Hobrechtstr.	1 12003,9105 11998,8872
 Lützowplatz	1 7002,11034 6873,11011
-Romain-Rolland-Str. - Berliner Str.	3 12856,17825 12746,17981 12479,17811
+Romain-Rolland-Str. - Berliner Str.	3 12856,17825 12736,17998 12479,17811
 Mahlower Str.	1 11773,8231 11920,8252
 Essener Str.	1 5902,13009 6012,13039 6149,13070 6201,13058
 Belforter Str. - Heinrich-Roller-Str.	3 11299,14112 11435,14023 11616,13911
@@ -128,8 +128,6 @@ Steinstr. (Mitte)	1 10603,13395 10369,13503 10277,13542
 Roennebergstr.	1 5533,6753 5374,6932
 Matternstr.	1 13798,13003 13579,12904
 John-Schehr-Str. - Greifswalder Str.	3 12573,14581 12437,14680 12384,14600 12338,14532
-Fritz-Riedel-Str. - Landsberger Allee	3 13375,13986 13440,13886 13517,13778 13640,13597 13708,13623 13862,13688
-Landsberger Allee - Fritz-Riedel-Str.	3 13550,13560 13640,13597 13517,13778 13440,13886 13375,13986
 Prenzlauer Allee	3nocross 11822,15193 11798,15133 11776,15060 11712,14868
 Große Weinmeisterstr. (Potsdam)	1 -12557,11 -12576,107 -12618,296
 #: by: Christian Marten (Einbahnstraße nur für Autofahrer)
@@ -157,7 +155,7 @@ Simon-Dach-Str.	1 14045,11965 14006,11843
 #: last_checked: 2006-03-23
 Gabriel-Max-Str.	1:inwork 14127,11811 14161,11930
 #: by: Gregor (bluege):
-Buchhorster Str.	1 7637,20614 7992,20515
+Buchhorster Str.	1 7620,20635 7866,20556 7992,20515
 Handjerystr.	1 5641,7189 5624,7113 5574,7018
 #: XXX: Die Stadtpläne sind hier nicht einheitlich.
 #: by: Michael Dinter: Einbahnstraße nicht für Radfahrer:
@@ -205,6 +203,7 @@ Wilhelmstr.: vor der britischen Botschaft dauerhaft für Kfz gesperrt	2 8861,1212
 Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 11033,16464 11018,16358 11013,16278 11003,16196 10994,16120
 Prenzlauer Allee: Straßenbahn	3nocross 11860,15309 11882,15384 11891,15413
 Greifswalder Str.: Straßenbahn	3nocross 12488,14753 12437,14680 12384,14600
+Greifswalder Str.: Straßenbahntrasse	3nocross 12722,15105 12743,15138 12880,15335
 Landsberger Allee: Straßenbahn	3nocross 13550,13560 13640,13597 13708,13623
 Topsstr.	1 10607,15142 10896,15250
 Schönhauser Allee	3nocross 10917,15418 10930,15522 10949,15674

@@ -516,7 +516,7 @@ push @temp_blocking,
          'text' => 'Straßen- und Leitungsbauarbeiten in der Pistoriusstraße zwischen Hamburger Platz (Gustav-Adolf-Straße) und Am Steinberg, Einbahnstraße Richtung Hamburger Platz (09.07.2007 bis Anfang 2008) ',
          'from' => 1183495734,
          'id' => 1062,
-         'data' => 'userdel	1::inwork 12693,16700 12486,16791 12269,16881
+         'data' => 'userdel	1::inwork 12693,16700 12486,16791 12257,16876 12241,16900
 ',
          'type' => 'gesperrt'
        },

@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.176 2007/10/01 18:57:37 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.176 2007/10/01 18:57:37 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -99,7 +99,7 @@ Prenzlauer Promenade	2 12165,19600 12008,19613 11953,19363 12003,18896 11984,187
 Prenzlauer Promenade	2 11927,19308 12020,19333
 Breite Str. Pankow	1 10240,18193 10281,18241 10562,18387 10609,18384
 Breite Str. Pankow	1 10680,18380 10669,18336 10327,18177 10240,18193
-Heinrich-Mann-Platz.	1 9590,18548 9527,18517 9496,18545 9469,18570 9475,18617 9526,18648 9556,18630 9588,18610 9590,18548
+Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
 Edelweißstr.	1 8251,19937 7966,19968 7885,19975 7755,20059
 Angerburger Allee	1 -1524,11108 -1608,11133 -1829,11337 -1895,11400 -1966,11466
 Edelhofdamm	1 3200,25429 2938,25317 2702,25223 2730,25298 2907,25363 3211,25484
@@ -200,7 +200,7 @@ Grazer Platz	1 6445,6769 6530,6786 6679,6816 6802,6816
 Grazer Platz	1 6811,6737 6686,6735 6546,6720 6517,6717 6451,6710
 Goltzstr. (Spandau)	1 -2843,16947 -3031,16807
 Putlitzstr.	1 6267,14184 6264,13995 6226,13951
-Langhansstr. (außer Tram)	1 12046,16568 12200,16579 12409,16475
+Langhansstr. (außer Tram)	1 12046,16568 12189,16578 12409,16475
 Triftstr. (Buchholz)	1 12018,23040 12178,23034
 Joachimstr.	1 10142,13556 10081,13673
 Wilhelmsaue	1 4778,8784 4918,8785 5165,8784
@@ -264,7 +264,7 @@ Schmollerplatz/str.	1 13241,9407 13184,9340 13209,9325
 Isarstr.	1 12349,8464 12368,8356
 Zionskirchplatz	1 10306,14247 10277,14350 10315,14386 10365,14372 10389,14274
 Ohmstr.	1 11324,11689 11378,11856
-Anton-Saefkow-Str.	1 13202,14388 13084,14472 12998,14533 12885,14616 12782,14676 12723,14714 12536,14827
+Anton-Saefkow-Str.	1 13202,14388 13084,14472 13013,14523 12885,14616 12782,14676 12723,14714 12536,14827
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 Wöhlertstr.	1 8442,14456 8662,14567
 Pflugstr.	1 8662,14567 8781,14357
@@ -677,6 +677,7 @@ Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11649 9899,11
 #Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13241,13405 13334,13459
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12188,14321 12239,14393 12285,14458 12338,14532
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941
+Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12722,15105 12743,15138 12880,15335
 #: note: Fußgängerfurt existiert zwischen Chodowieckistr. und Jablonskistr.:
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 11642,14625 11662,14695 11681,14759
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3nocross 11798,15133 11822,15193 11852,15281
@@ -860,6 +861,7 @@ tragen (Treppe)	0:30 20673,7260
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+Schranke	BNP:3 8251,20927
 #: by: Sorven (xbs9):
 Schranke	BNP:5 21297,12748
 #: by: Bernd Albinus (und Luftbild):
@@ -963,6 +965,8 @@ enges Drängelgitter	BNP:5 100,3
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #
+#: last_checked: 2007-10-03
+Otto-Ostrowski-Str.: Straße in Bau	2:inwork 13708,13623 13769,13487
 #: last_checked: 2007-09-15
 Zum Anhalter Steg: Bauarbeiten bis 2007-10-31	2:inwork 8773,10429 8776,10548
 #: last_checked: 2007-05-28
@@ -1051,7 +1055,7 @@ Greifswalder Str.	3nocross 12437,14680 12488,14753 12536,14827
 Dietrich-Bonhoeffer-Str.	1 12578,14237 12285,14458
 tragen (3 einzelne Stufen)	0:15 13079,14320
 Achtung schlecht sichtbare Kette!!	BNP:5 13446,14030
-Treppe	0:20 12869,14666
+Treppe	0:20 12867,14648
 2 Treppen o. schmale Rampen	0:10 12969,14672
 tragen (Treppe)	0:15 5595,5781 5593,5803
 Althoffplatz	1 5687,5586 5609,5584 5573,5622 5613,5672 5683,5672
@@ -1071,6 +1075,7 @@ Pintschstr.	1 13342,13185 13438,12965
 Weidenweg (Friedrichshain)	1s 13678,12571 13608,12547
 Landsberger Allee	3nocross 12386,13085 12582,13128 12727,13159
 Landsberger Allee	3nocross 20551,15582 20641,15622 20796,15667
+Landsberger Allee: Straßenbahntrasse	3nocross 13640,13597 13708,13623 13862,13688
 #: by: jörg (schalkau):
 Landsberger Allee	3nocross 17252,14471 17398,14490 17841,14546
 Kalkhorster Weg (10 Stufen)	0:40 3931,8638

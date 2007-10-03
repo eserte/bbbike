@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.158 2007/10/03 15:20:02 eserte Exp $
+#: version: $Id: handicap_s-orig,v 4.158 2007/10/03 15:20:02 eserte Exp eserte $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Behrenstr./Bebelplatz: Einbahnstraße	q3::inwork; 9626,12227 9700,12234 9743,12239
@@ -360,6 +360,7 @@ Wustermarker Str.: Fußgänger, Bordsteine	q2 -4750,14393 -4678,14382
 Firlstr.: zwei Bodenschwellen	q1 18574,6401 18623,6523
 Waldesruher Str.: parkende Autos	q1; 24910,7896 24923,7903 25047,8086
 (Florastr. - Schloßstr.): Fußgänger	q2 5234,6086 5165,6119
+Pankeweg: enger Pfad	q2 13365,22743 13295,22545 13290,22362 13354,22327
 Straße 103 (Niederschönhausen): enge Straße 	q1 10914,20065 11051,19789
 An der Heilandsweide: Fußgänger	q1 8203,1194 8305,1148 8539,1025 8687,950
 Friedrich-Wilhelm-Str.: eng	q1 8282,5909 8385,5907
@@ -433,7 +434,7 @@ Germendorfer Str.: enge Straße mit parkenden Autos	q1 6383,20975 6523,20987 6982
 Wentowsteig: enge Straße mit parkenden Autos	q1 6924,20695 6945,20805 6955,20859 6962,20895 6982,21013
 (Spreeuferweg): Fußgänger	q1 4543,12516 4501,12544 4331,12538
 Havelstr.: Fußgängerzone	q4 -3132,14607 -3122,14557 -3037,14509
-(Schönholzer Heide, parallel zur Friesenstr.): Fußgänger	q1 8789,19278 8784,19253 9446,18855 9475,18862
+(Schönholzer Heide, parallel zur Friesenstr.): Fußgänger	q1 8765,19288 8784,19253 9446,18855 9475,18862
 Nordufer: teilweise sehr schmaler Radweg	q1 7231,14749 7467,14633
 (Weg am Nordgraben): schmaler Weg, mäßiger Fußgängerverkehr	q2 3563,20589 3475,20656 3327,20758 3062,20898 2916,20870 2580,20805
 (Weg am Waldfriedhof Dahlem): Kurven	q2 1051,5525 825,5420 626,5322
@@ -566,7 +567,7 @@ Vereinsweg (Steglitz): Fußgänger, Privatstraße, Radfahren nicht erlaubt	q4 5347,
 (Volkspark Friedrichshain): Fußgänger	q2 12382,13262 12344,13320 12290,13356 12176,13366 12148,13348
 (Volkspark Friedrichshain): Fußgänger	q2 12128,13604 12024,13581 12052,13687
 (Zufahrt Landsberger Allee): Fußgänger	q2 13433,13346 13397,13426 13574,13505
-Otto-Ostrowski-Str.: Fußgänger	q1 13708,13623 13760,13503
+Otto-Ostrowski-Str.: Fußgänger	q1 13708,13623 13769,13487
 (Verlängerte Wallenbergstr.): Fußgänger, schmal	q3 4139,8485 4029,8482
 (Zufahrt zur Kolonie Hohenzollerndamm): Fußgänger, Poller	q2 3775,8771 3868,8759
 Apeldorner Weg: Fußgänger	q1 3848,8689 3868,8759 3932,8989
