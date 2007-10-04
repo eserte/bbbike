@@ -94,7 +94,16 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_004587',
+         'until' => 1196463599,
+         'text' => 'Gürtelstr. (Friedrichshain) Richtung Boxhagener Str. zwischen Frankfurter Allee und Oderstr. Baustelle, Fahrtrichtung gesperrt (bis 11.2007)',
+         'from' => 1191532790,
+         'id' => 796,
+         'data' => 'userdel	q4::inwork; 15349,12073 15288,11968 15243,11881 15203,11807 15091,11596
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -891,24 +900,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_006765',
-         'until' => 1191520800,
-         'text' => 'Straße des 17. Juni, Y.-Rabin-Str. und Ebertstr. (Tiergarten) In beiden Richtungen zwischen Brandenburger Tor und Großer Stern Veranstaltung, Straße vollständig gesperrt (Y.-Rabin-Str. zwischen Str. des 17. Juni und Scheidemannstr., Ebertstr. zwischen Behrenstr. und Dorotheenstr.) (bis 04.10.2007 20 Uhr)',
-         'from' => 1191018682,
-         'id' => 1177,
-         'data' => 'userdel	2::temp 8063,12182 8089,12186 8214,12205
-userdel	2::temp 8214,12205 8515,12242
-userdel	2::temp 8539,12286 8515,12242
-userdel	2::temp 8600,12165 8515,12242
-userdel	2::temp 8515,12242 8610,12254
-userdel	2::temp 8539,12286 8560,12326 8540,12420
-userdel	2::temp 6828,12031 7383,12095 7816,12150 8063,12182
-userdel	2::temp 8600,12165 8595,12066
-userdel	2::temp 8119,12414 8063,12182
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1196463600,
          'text' => 'B 122 zw. Dierberg und Zippelsförde Deckenerneuerung Vollsperrung 01.10.2007-30.11.2007 ',
@@ -964,6 +956,62 @@ userdel	2::temp 8119,12414 8063,12182
          'data' => 'userdel	2::inwork 10970,-39919 11561,-39875 11814,-39896 12751,-39434 13114,-39180 13618,-39476 13914,-39770 15241,-39692
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006088',
+         'until' => 1193871599,
+         'text' => 'Simon-Bolivar-Str. (Hohenschönhausen) in beiden Richtungen zwischen Konrad-Wolf-Str. und Küstriner Str. Baustelle, Straße vollständig gesperrt (bis Ende 10.2007)',
+         'from' => 1191532874,
+         'id' => 1185,
+         'data' => 'userdel	2::inwork 15763,15003 16025,14753
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006795',
+         'until' => 1191707999,
+         'text' => 'Ullsteinstr. (Tempelhof) in beiden Richtungen zwischen Rathausstr. und Mariendorfer Damm Baustelle, Straße vollständig gesperrt (bis 06.10.)',
+         'from' => 1191532907,
+         'id' => 1186,
+         'data' => 'userdel	2::inwork 9213,5187 8934,5095 8813,5004
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1192917600,
+         'text' => 'L 095 abschnittsweise zw. Belzig und Görzke Straßenbauarbeiten Vollsperrung 15.10.2007-20.10.2007 ',
+         'from' => 1192312800,
+         'id' => 1187,
+         'data' => 'userdel	2::inwork -50335,-28686 -51740,-27889 -52270,-27702 -52679,-27853 -53505,-27647
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1198191600,
+         'text' => 'L 141 Havelberger Str. OD Breddin Kanal- u. Straßenbauarbeiten Vollsperrung 04.10.2007-20.12.2007 ',
+         'from' => 1191362400,
+         'id' => 1188,
+         'data' => 'userdel	q4::inwork -70922,51604 -70980,51154 -71053,49770
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1203116400,
+         'text' => 'L 314 Zepernicker Chaussee OD Bernau grundhafter Straßenbau Vollsperrung 04.10.2007-15.02.2008 ',
+         'from' => 1191362400,
+         'id' => 1189,
+         'data' => 'userdel	q4::inwork 22178,30343 21872,30139 21561,30131 21172,29984
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1214863200,
+         'text' => 'L 315 Prenden-Klosterfelde OD Klosterfelde grundhafter Straßenbau Vollsperrung 04.10.2007-30.06.2008 ',
+         'from' => 1191362400,
+         'id' => 1190,
+         'data' => 'userdel	q4::inwork 14941,42957 15632,43100 15783,43227 16258,43457
+',
+         'type' => 'handicap'
        }
      
 );

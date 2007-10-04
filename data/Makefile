@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.159 2007/09/17 22:36:33 eserte Exp $
+# $Id: Makefile,v 2.160 2007/10/04 22:35:52 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -775,6 +775,8 @@ ${PERSISTENTTMPDIR}/Potsdam.coords.bbd: Potsdam.coords.data
 	$(PERL) -F'\|' -nale 'print "@F[0,1,2]\tX $$F[3]" if $$F[3]' Potsdam.coords.data > $@
 
 
+# Development versions may be found under
+#   http://fa-technik.adfc.de/Codierung/opengeodb/dump/
 OPENGEODB_ORTE_ZIP=		opengeodb-0.2.4d-UTF8-text-orte.zip
 OPENGEODB_ORTE_FILE=		${OPENGEODB_ORTE_ZIP:S/.zip/.txt/}
 OPENGEODB_ORTE_DISTURL=	http://prdownloads.sourceforge.net/opengeodb/${OPENGEODB_ORTE_ZIP}

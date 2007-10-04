@@ -6693,11 +6693,11 @@ EOF
 userdel	2::inwork 56925,41800 58564,43539
 EOF
      },
-     { from  => 1164050202, # 2006-11-20 20:16
-       until => 1164656943, # 2007-12-01 00:00 1196463600
-       text  => 'Gürtelstr. (Friedrichshain ) in Richtung Treptow, zwischen Frankfurter Allee und Oderstr. Baustelle, Fahrtrichtung gesperrt (bis November 2007)',
+     { from  => 1191532790, # 2007-10-04 23:19
+       until => 1196463599, # 2007-11-30 23:59
+       text  => 'Gürtelstr. (Friedrichshain) Richtung Boxhagener Str. zwischen Frankfurter Allee und Oderstr. Baustelle, Fahrtrichtung gesperrt (bis 11.2007)',
        type  => 'handicap',
-       source_id => 'IM_004135',
+       source_id => 'IM_004587',
        data  => <<EOF,
 userdel	q4::inwork; 15349,12073 15288,11968 15243,11881 15203,11807 15091,11596
 EOF
@@ -9993,6 +9993,56 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 10970,-39919 11561,-39875 11814,-39896 12751,-39434 13114,-39180 13618,-39476 13914,-39770 15241,-39692
+EOF
+     },
+     { from  => 1191532874, # 2007-10-04 23:21
+       until => 1193871599, # 2007-10-31 23:59
+       text  => 'Simon-Bolivar-Str. (Hohenschönhausen) in beiden Richtungen zwischen Konrad-Wolf-Str. und Küstriner Str. Baustelle, Straße vollständig gesperrt (bis Ende 10.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_006088',
+       data  => <<EOF,
+userdel	2::inwork 15763,15003 16025,14753
+EOF
+     },
+     { from  => 1191532907, # 2007-10-04 23:21
+       until => 1191707999, # 2007-10-06 23:59
+       text  => 'Ullsteinstr. (Tempelhof) in beiden Richtungen zwischen Rathausstr. und Mariendorfer Damm Baustelle, Straße vollständig gesperrt (bis 06.10.)',
+       type  => 'gesperrt',
+       source_id => 'IM_006795',
+       data  => <<EOF,
+userdel	2::inwork 9213,5187 8934,5095 8813,5004
+EOF
+     },
+     { from  => 1192312800, # 2007-10-14 00:00
+       until => 1192917600, # 2007-10-21 00:00
+       text  => 'L 095 abschnittsweise zw. Belzig und Görzke Straßenbauarbeiten Vollsperrung 15.10.2007-20.10.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -50335,-28686 -51740,-27889 -52270,-27702 -52679,-27853 -53505,-27647
+EOF
+     },
+     { from  => 1191362400, # 2007-10-03 00:00
+       until => 1198191600, # 2007-12-21 00:00
+       text  => 'L 141 Havelberger Str. OD Breddin Kanal- u. Straßenbauarbeiten Vollsperrung 04.10.2007-20.12.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -70922,51604 -70980,51154 -71053,49770
+EOF
+     },
+     { from  => 1191362400, # 2007-10-03 00:00
+       until => 1203116400, # 2008-02-16 00:00
+       text  => 'L 314 Zepernicker Chaussee OD Bernau grundhafter Straßenbau Vollsperrung 04.10.2007-15.02.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 22178,30343 21872,30139 21561,30131 21172,29984
+EOF
+     },
+     { from  => 1191362400, # 2007-10-03 00:00
+       until => 1214863200, # 2008-07-01 00:00
+       text  => 'L 315 Prenden-Klosterfelde OD Klosterfelde grundhafter Straßenbau Vollsperrung 04.10.2007-30.06.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 14941,42957 15632,43100 15783,43227 16258,43457
 EOF
      },
     );
