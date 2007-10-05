@@ -2138,7 +2138,7 @@ Am Faulen See: guter Asphalt	Q0 16515,16207 16546,16308 16623,16554 16639,16671 
 Badeweg: guter Belag	Q0 -4171,2659 -4292,2762
 Badeweg: guter Belag	Q0 -4292,2762 -4471,2917
 Bröndbystr.: Asphalt	Q0 3500,1587 3273,1302 3312,1241 3384,1297
-Petkusser Str.: mäßiges Kopfsteinpflaster	Q2 10484,-2637 10609,-3098
+Petkusser Str.: mäßiges Kopfsteinpflaster	Q2 10484,-2637 10606,-3017 10655,-3135
 Kurpromenade: mäßiger Asphalt	Q1 -8917,5986 -8864,6289 -8862,6375 -8860,6439 -8859,6540 -8868,6798 -8804,6818 -8732,6840 -8656,6864 -8567,6893
 #: note: ein weiteres Mal von anonymous bestätigt:
 Schriftsetzerweg: Asphalt	Q0 15868,1790 16200,1499
@@ -3229,7 +3229,7 @@ Schulstr. (Pankow): mäßiger Asphalt	Q1 10755,18231 10582,18159 10473,18113
 Trelleborger Str.: kaputter Asphalt, Schlaglöcher	Q1 11243,17421 11256,17291 11272,17139 11267,17017 11270,16890 11281,16743 11278,16609 11287,16515 11289,16423 11253,16296
 #: by: Richard Kempter:
 #: XXX: mit "25 km/h" notiert?
-Saalower Str.: schlechtes Kopfsteinpflaster	Q3 10609,-3098 10707,-3109 10949,-3161 11144,-3179 11225,-3121
+Saalower Str.: schlechtes Kopfsteinpflaster	Q3 10655,-3135 10735,-3142 10949,-3161 11144,-3179 11225,-3121
 #: by: Andreas Debus:
 Nahariyastr.: sehr guter Asphalt	Q0 11717,-1204 11739,-1384 11778,-1706 11784,-1809
 #: by: Jana Eberhart:
@@ -4345,7 +4345,7 @@ Maurerweg: guter Asphalt	Q0 12864,2191 12835,2470 12825,2573 12810,2751 12807,29
 #: by: jörg (schalkau):
 Schalkauer Str.: guter Asphalt	Q0 17343,14906 17377,14678 17389,14599 17398,14490
 #: by: peter (ph2607):
-Frobenstr. (Spandau): guter Asphalt	Q0 -3826,15542 -3867,15469 -3861,15333
+Frobenstr. (Spandau): guter Asphalt	Q0 -3825,15551 -3867,15469 -3861,15333
 #: by: Lydia Weitmann:
 Strelitzstr.: guter Asphalt	Q0 9259,4815 9032,4791
 #: by: Paul (APMarcuse) (Kopfsteinpflaster confirmed):
@@ -5573,8 +5573,10 @@ Ritterstr. (Lichterfelde): Asphalt	Q0 4821,2954 5115,2803
 Senheimer Str.: schlechtes Kopfsteinpflaster	Q3 2519,25353 2506,25398 2505,25538 2515,25666 2519,25772 2496,25915 2484,25984 2490,26126 2531,26251 2560,26349 2569,26408 2564,26462
 Käthestr. (Hermsdorf): Asphalt	Q0 4829,24067 4872,24183 4911,24299
 #: by: ^^^
-#: by: KurtHolz...:
-Klein-Ziethener Weg: schlechtes Klein-Ziethener	Q3 15971,57 15949,53 15834,-28 15812,-65 15694,-178 15655,-245
+#: by: KurtHolz...: vvv
+Klein-Ziethener Weg: schlechtes Kopfsteinpflaster	Q3 15971,57 15949,53 15834,-28 15812,-65 15694,-178 15655,-245
+Rhodeländerweg: asphaltiert	Q0 16354,-494 16281,-468 16234,-450 16093,-393 15971,57 16113,247 16422,575 16518,784 16412,965
+#: by: ^^^
 #: by: Jan Riemke: vvv
 Romanshorner Weg: Kopfsteinpflaster	Q2 6709,17466 6679,17568 6631,17721 6578,17898 6550,17988 6577,17998
 Romanshorner Weg: asphaltiert	Q0 6548,18139 6584,18474
@@ -5597,6 +5599,12 @@ Heegermühler Weg: mäßiger Asphalt, Flickstellen	Q2+ 7966,19968 8030,19762 8043,1
 #: by: anonymous (Range "5-15")
 #: confirmed_by: srt (Kopfsteinpflaster)
 Heegermühler Weg: schlechtes Kopfsteinpflaster	Q3 8231,19806 8415,19910
+#: by: Sara Köhler: 
+Fehrbelliner Str. (Spandau): guter Asphalt	Q0 -3727,15695 -3720,15717 -3712,15739 -3708,15831 -3697,15918 -3684,15982 -3640,16169 -3621,16175
+#: by: Yvonne Wiener:
+Spirdingseestr.: Kopfsteinpflaster	Q2 11225,-2996 11091,-3056 10890,-3041 10783,-3033 10751,-3030 10606,-3017
+#: by: Chris (schruth):
+Adele-Sandrock-Str.: Asphalt	Q0 25172,14384 25018,14466 25006,14483 24981,14550 24951,14649 24937,14693 24939,14715 24963,14760 24989,14783 25080,14812 25103,14838
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

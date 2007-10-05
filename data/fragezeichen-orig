@@ -252,6 +252,10 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet; in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: Bernd Steffen:
+Viernheimer Weg: mäßiger Asphalt, wellig durch Baumwurzeln, Q2	? -311,4637 -354,4603 -401,4572 -446,4552 -493,4529 -548,4511
+#: by: Christian Johann:
+Huberweg: guter Asphalt, Q0	? -1449,15688 -1324,15719 -1343,15804 -1380,15899
 #: by: connie zipser:
 Am Kinderdorf: mäßiger Asphalt, Belag stark beschädigt, Q2+, enge Straße, Baustellen, q1	? -5093,8398 -5106,8534 -5103,8614 -5089,8701 -5074,8761 -5071,8864
 #: by: Bernd Honsa
@@ -387,7 +391,7 @@ Gamengrund: genauere Wegführung fehlt (GPS-Track gesucht!), Qualität, teilweise 
 Brunow - Gamengrund: Qualität?	? 41624,36648 43362,37337 43825,37262 43922,36623 43637,36362 42975,36212 42748,35962
 # Normannenstr.: gar keine Einbahnstraße	? -3692,2549 -3579,2532 -3395,2403
 Kleinziethen - Pechsteinstr. (Lichtenrade): befahrbare Verbindung, Qualität?	? 13506,-2809 12268,-2294
-Mauerweg Lichtenrade: Qualität? laut "Berliner Umland" gut geeigneter Radweg	? 10609,-3098 10687,-3270 11157,-3295 11646,-3251
+Mauerweg Lichtenrade: Qualität? laut "Berliner Umland" gut geeigneter Radweg	? 10687,-3270 11157,-3295 11646,-3251
 Mauerweg Lichterfelde: Qualität? laut "Berliner Umland" gut geeigneter Radweg	?? 4400,-913 4064,-415 4066,-304
 Mauerweg Lichterfelde: Qualität? laut "Berliner Umland" gut geeigneter Radweg	?? 3918,-92 3848,-79 3767,66 3689,182 3607,283 3417,524
 Lichterfelder Allee - Mauerweg Teltow: befahrbar, Qualität? laut "Berliner Umland" gut geeigneter Radweg	? 3417,524 3271,745 3232,803
@@ -644,7 +648,7 @@ Teerofenweg: Waldweg? Qualität?	? -7067,-36 -6395,-887
 Fresdorf - Kähnsdorf: Qualität?	? -11617,-15497 -12187,-15175 -12289,-15205 -12402,-15326 -12765,-15415 -12909,-15368 -13133,-15396 -13607,-15551
 Kähnsdorf - Seddin: Qualität?	? -13607,-15551 -13887,-15575 -13996,-15825 -14270,-15906 -15863,-15363 -16345,-15170
 Fußgängerweg zwischen Wartenberger Str. und Margaretenhöhe: Qualität? Gibt es an der Bahnbrücke Treppen?	? 16284,19198 16392,19760
-Paplitzer Str.: Qualität? Zwischen Goltzstr. und Kirchbachstr. Einbahnstraße auch für Radfahrer? Verbindung zum Mauerweg vorhanden?	? 11063,-2025 11021,-2464 10949,-2635 10927,-2687 10831,-2919 10707,-3109 10687,-3270
+Paplitzer Str.: Qualität? Zwischen Goltzstr. und Kirchbachstr. Einbahnstraße auch für Radfahrer? Verbindung zum Mauerweg vorhanden?	? 11063,-2025 11021,-2464 10949,-2635 10927,-2687 10831,-2919 10783,-3033 10735,-3142 10687,-3270
 #: XXX von anonym eingetragen: Spielstraße:
 Am Irissee: Qualität?	? 11000,3115 11143,3246 11114,3360
 Rheinsberg - Großzerlang: Qualität?	? -25439,77907 -25050,79662 -24100,80450 -23725,81512 -23550,82037 -23462,82925 -23612,83475 -23525,84137 -23152,84531 -22637,85912 -22325,86300
@@ -1411,8 +1415,6 @@ Kraatzgraben/Kleingärten: besteht hier ein befahrbarer Weg für Radfahrer? Qualit
 Dubrowplatz: Qualität (wahrscheinlich schlechtes Kopfsteinpflaster)? Hat der Dubrowplatz auch eine nördliche Fahrbahn?	? -1945,2975 -1814,3021
 Ilsensteinweg: Qualität?	? -1885,3319 -1899,3298 -1819,3042 -1814,3021 -1724,2743 -1622,2426
 McNair-Promenade: Wie ist die Qualität, die ADFC-Karte meint "schlecht geeignet"?	? 2163,1499 1975,1413 1882,1376 1785,1338
-#: note: unvollständiger anonymer Kommentar:
-Adele-Sandrock-Str.: Qualität der Straße (betoniert, asphaltiert oder etwas anderes)?	? 25172,14384 25018,14466 25006,14483 24981,14550 24951,14649 24937,14693 24939,14715 24963,14760 24989,14783 25080,14812 25103,14838
 Hobrechtsfelde - Gorinsee: Qualität (wahrscheinlich fester Sandweg)?	? 16301,29192 15621,29290
 #: note: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0704/nachricht2630.html - Einbahnstraße offen Richtung Süden. Die Regelung bleibt offenbar nicht permanent? Abschluss bis 2007-08-31
 Clara-Jaschke-Str. - Berta-Benz-Str. - Katharina-Paulus-Str.: Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	?; 7863,12927 7866,13009 7779,13012 7768,13175 7764,13236
@@ -1532,3 +1534,4 @@ St. Galler Str.: Qualität?	? 6418,18491 6584,18474 6597,18473 6704,18462
 #: XXX: unklarer Eintrag von anonymous: Asphalt Q0, einige Fußgänger q2, Radweg???
 Maßliebweg: Qualität?	? 15356,2499 15593,2495
 Hielscherstr.: Qualität?	? 7522,19804 7556,19882 7604,19988 7695,20175 7735,20262 7809,20420 7866,20556 7937,20778
+Pulvermühlenweg: Qualität?	? -1794,15517 -1547,15377 -1496,15463
