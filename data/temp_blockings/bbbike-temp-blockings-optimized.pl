@@ -911,16 +911,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_006787',
-         'until' => 1191621600,
-         'text' => 'Wartenberger Str. (Hohenschönhausen) in beiden Richtungen zwischen Paul-Koenig-Str. und Arnimstr. Baustelle Straße tagsüber gesperrt (bis 05.10.2007)',
-         'from' => 1191269068,
-         'id' => 1180,
-         'data' => 'userdel	2::inwork 17900,17068 17839,16987 17788,16916 17634,16681 17446,16393
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1195254000,
          'text' => 'B 246 Nächst Neuendorfer Chaussee OL Zossen, zw. Bahnhofstr. und OA Kanalarbeiten halbseitig gesperrt; Einbahnstraße 09.08.2007-16.11.2007 ',
@@ -1012,6 +1003,33 @@ push @temp_blocking,
          'data' => 'userdel	q4::inwork 14941,42957 15632,43100 15783,43227 16258,43457
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1195340400,
+         'text' => 'B 109 Zehdenick-Templin zw. Zehdenick und Hammelspring Straßenbauarbeiten Vollsperrung 08.10.2007-17.11.2007 ',
+         'from' => 1191708000,
+         'id' => 1191,
+         'data' => 'userdel	2::inwork 8656,71489 8031,70019 8031,69636 7879,69487 7215,68252 6538,67236
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1194044400,
+         'text' => 'L 030 Altlandsberg-B158 Seefeld zw. Krummensee und Seefeld Neubau Radweg Vollsperrung 08.10.2007-02.11.2007 ',
+         'from' => 1191708000,
+         'id' => 1192,
+         'data' => 'userdel	2::inwork 29835,21516 29573,21750 29537,21850 28936,23307 28753,23756 28614,23943
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1193176800,
+         'text' => 'L 164 zw. Herzberg und Radensleben Straßenbauarbeiten Vollsperrung 10.10.2007-23.10.2007 ',
+         'from' => 1191880800,
+         'id' => 1193,
+         'data' => 'userdel	2::inwork -20021,54750 -20798,54347 -21553,54152 -22376,53427 -23839,52751
+',
+         'type' => 'gesperrt'
        }
      
 );

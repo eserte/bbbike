@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: opengeodborte2bbd,v 1.2 2006/01/20 00:29:30 eserte Exp eserte $
+# $Id: opengeodborte2bbd,v 1.3 2007/10/05 21:56:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -16,7 +16,6 @@
 # Beispiel:
 # ./opengeodborte2bbd -restrictland BB -restrictcountry DE > /tmp/a.bbd
 
-use 5.8.1; # utf8 bugs?
 use strict;
 use warnings;
 no warnings 'once';
@@ -31,36 +30,77 @@ use Getopt::Long;
 
 my $restrictland;
 my $restrictcountry;
+my $version;
 
 GetOptions("restrictland=s" => \$restrictland,
 	   "restrictcountry=s" => \$restrictcountry,
+	   "version=s" => \$version,
 	  )
     or die "usage?";
 
-my $infile = shift || "/usr/ports/distfiles/opengeodb/opengeodb-0.2.4a-UTF8-text-orte.txt";
-
-open my $fh, $infile
-    or die "Can't open $infile: $!";
-binmode $fh, ":encoding(utf-8)";
-while(<$fh>) {
-    next if /^#/;
-    chomp;
-    my($key, $country, $land, $regbez, $landkreis, $verwalt, $ort, $ortsteil,
-       $gemeindeteil, $otherort, $lon, $lat, $kfz, $plz) = split /;/;
-    next if (defined $restrictland    && $land ne $restrictland);
-    next if (defined $restrictcountry && $country ne $restrictcountry);
-    my($x, $y) = map { int } $Karte::Polar::obj->map2standard($lon, $lat);
-    my $display_ort = $ort;
-    my $cat;
-    if ($ortsteil ne $gemeindeteil && $gemeindeteil ne "-") {
-	$display_ort = $gemeindeteil; # keep it short
-	$cat = 0;
-    } elsif ($ort ne $ortsteil && $ortsteil ne "-") {
-	$display_ort = "$ortsteil ($ort)";
-	$cat = 1;
+my $infile = shift;
+if ($version eq 'old') {
+    $infile ||= "/usr/ports/distfiles/opengeodb/opengeodb-0.2.4a-UTF8-text-orte.txt";
+    parse_old();
+} else {
+    $infile ||= "/usr/ports/distfiles/opengeodb/D.tab";
+    if ($restrictland) {
+	die "Cannot restrict by 'land' with new data format";
     }
-    $cat = 2 if !defined $cat;
-    print "$display_ort\t$cat $x,$y\n";
+    parse_new();
+}
+
+sub parse_new {
+    open my $fh, $infile
+	or die "Can't open $infile: $!";
+    while(<$fh>) {
+	next if /^#/;
+	chomp;
+	my($locid, $ags, $ascii, $name, $lat, $lon, $amt, $plz, $vorwahl, $einwohner, $flaeche, $kz, $typ, $level, $of, $invalid)
+	    = split /\t/;
+	next if $lon eq '' || $lat eq '';
+	my($x, $y) = map { int } $Karte::Polar::obj->map2standard($lon, $lat);
+	my $display_ort = $name;
+	my $cat = 0;
+	if ($einwohner) {
+	    $cat = ($einwohner >= 200000 ? 6 :
+		    $einwohner >=  50000 ? 5 :
+		    $einwohner >=  20000 ? 4 :
+		    $einwohner >=   5000 ? 3 :
+		    $einwohner >=   2000 ? 2 :
+		    $einwohner >=    500 ? 1 :
+		    0
+		   );
+	}
+	print "$display_ort\t$cat $x,$y\n";
+    }
+}
+
+sub parse_old {
+    require 5.008001; # utf8 bugs?
+    open my $fh, $infile
+	or die "Can't open $infile: $!";
+    binmode $fh, ":encoding(utf-8)";
+    while(<$fh>) {
+	next if /^#/;
+	chomp;
+	my($key, $country, $land, $regbez, $landkreis, $verwalt, $ort, $ortsteil,
+	   $gemeindeteil, $otherort, $lon, $lat, $kfz, $plz) = split /;/;
+	next if (defined $restrictland    && $land ne $restrictland);
+	next if (defined $restrictcountry && $country ne $restrictcountry);
+	my($x, $y) = map { int } $Karte::Polar::obj->map2standard($lon, $lat);
+	my $display_ort = $ort;
+	my $cat;
+	if ($ortsteil ne $gemeindeteil && $gemeindeteil ne "-") {
+	    $display_ort = $gemeindeteil; # keep it short
+	    $cat = 0;
+	} elsif ($ort ne $ortsteil && $ortsteil ne "-") {
+	    $display_ort = "$ortsteil ($ort)";
+	    $cat = 1;
+	}
+	$cat = 2 if !defined $cat;
+	print "$display_ort\t$cat $x,$y\n";
+    }
 }
 
 __END__

@@ -10045,4 +10045,28 @@ EOF
 userdel	q4::inwork 14941,42957 15632,43100 15783,43227 16258,43457
 EOF
      },
+     { from  => 1191708000, # 2007-10-07 00:00
+       until => 1195340400, # 2007-11-18 00:00
+       text  => 'B 109 Zehdenick-Templin zw. Zehdenick und Hammelspring Straßenbauarbeiten Vollsperrung 08.10.2007-17.11.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 8656,71489 8031,70019 8031,69636 7879,69487 7215,68252 6538,67236
+EOF
+     },
+     { from  => 1191708000, # 2007-10-07 00:00
+       until => 1194044400, # 2007-11-03 00:00
+       text  => 'L 030 Altlandsberg-B158 Seefeld zw. Krummensee und Seefeld Neubau Radweg Vollsperrung 08.10.2007-02.11.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 29835,21516 29573,21750 29537,21850 28936,23307 28753,23756 28614,23943
+EOF
+     },
+     { from  => 1191880800, # 2007-10-09 00:00
+       until => 1193176800, # 2007-10-24 00:00
+       text  => 'L 164 zw. Herzberg und Radensleben Straßenbauarbeiten Vollsperrung 10.10.2007-23.10.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -20021,54750 -20798,54347 -21553,54152 -22376,53427 -23839,52751
+EOF
+     },
     );

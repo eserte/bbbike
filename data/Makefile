@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.160 2007/10/04 22:35:52 eserte Exp $
+# $Id: Makefile,v 2.161 2007/10/05 22:05:22 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -775,12 +775,8 @@ ${PERSISTENTTMPDIR}/Potsdam.coords.bbd: Potsdam.coords.data
 	$(PERL) -F'\|' -nale 'print "@F[0,1,2]\tX $$F[3]" if $$F[3]' Potsdam.coords.data > $@
 
 
-# Development versions may be found under
-#   http://fa-technik.adfc.de/Codierung/opengeodb/dump/
-OPENGEODB_ORTE_ZIP=		opengeodb-0.2.4d-UTF8-text-orte.zip
-OPENGEODB_ORTE_FILE=		${OPENGEODB_ORTE_ZIP:S/.zip/.txt/}
-OPENGEODB_ORTE_DISTURL=	http://prdownloads.sourceforge.net/opengeodb/${OPENGEODB_ORTE_ZIP}
-OPENGEODB_REGION=	BB MV
+OPENGEODB_D_ORTE_FILE=		D.tab
+OPENGEODB_D_ORTE_DISTURL=	http://fa-technik.adfc.de/Codierung/opengeodb/D.tab
 .if ${HOSTNAME} == "mom.herceg.de"
 OPENGEODB_DIR=		/amd/vran/root/usr/ports/distfiles/opengeodb
 .elif exists(/usr/ports/distfiles/opengeodb)
@@ -788,36 +784,32 @@ OPENGEODB_DIR=		/usr/ports/distfiles/opengeodb
 .else
 OPENGEODB_DIR=		${PERSISTENTTMPDIR}
 .endif
-OPENGEODB_ORTE_PATH=		${OPENGEODB_DIR}/${OPENGEODB_ORTE_FILE}
-OPENGEODB_ORTE_ZIPPATH=	${OPENGEODB_DIR}/${OPENGEODB_ORTE_ZIP}
+OPENGEODB_D_ORTE_PATH=		${OPENGEODB_DIR}/${OPENGEODB_D_ORTE_FILE}
 
-fetch-opengeodb:	${OPENGEODB_ORTE_ZIPPATH}
-extract-opengeodb:	${OPENGEODB_ORTE_PATH}
+fetch-opengeodb:	${OPENGEODB_D_ORTE_FILE}
 
-${OPENGEODB_ORTE_ZIPPATH}:
-	@echo -n "Should I fetch ${OPENGEODB_ORTE_DISTURL} to ${OPENGEODB_ORTE_ZIPPATH}? (CTRL-C to abort) "
+# NOTE: This will only fetch one version. To fetch a newer one, remove
+# the old first.
+${OPENGEODB_D_ORTE_FILE}:
+	@echo -n "Should I fetch ${OPENGEODB_D_ORTE_DISTURL} to ${OPENGEODB_D_ORTE_PATH}? (CTRL-C to abort) "
 # && true only for bugs in old pmake
 	@read yn && true
-	wget -O ${OPENGEODB_ORTE_ZIPPATH}~ ${OPENGEODB_ORTE_DISTURL}
-	mv ${OPENGEODB_ORTE_ZIPPATH}~ ${OPENGEODB_ORTE_ZIPPATH}
+	wget -O ${OPENGEODB_D_ORTE_PATH}~ ${OPENGEODB_D_ORTE_DISTURL}
+	mv ${OPENGEODB_D_ORTE_PATH}~ ${OPENGEODB_D_ORTE_PATH}
 
-${OPENGEODB_ORTE_PATH}:	${OPENGEODB_ORTE_ZIPPATH}
-	cd ${OPENGEODB_DIR} && unzip ${OPENGEODB_ORTE_ZIP}
-	touch ${OPENGEODB_ORTE_PATH}
+persistent-tmp-from-opengeodb:	${PERSISTENTTMPDIR}/opengeodb-orte-DE.bbd
 
-persistent-tmp-from-opengeodb:	${OPENGEODB_REGION:S/^/${PERSISTENTTMPDIR}\/opengeodb-orte-/:S/$/-DE.bbd/}
-
-.for region in BB MV
-${PERSISTENTTMPDIR}/opengeodb-orte-${region}-DE.bbd:	${OPENGEODB_ORTE_PATH} ${MISCSRCDIR}/opengeodborte2bbd
-	${PERL_UTF8} ${MISCSRCDIR}/opengeodborte2bbd -restrictland ${region} -restrictcountry DE ${OPENGEODB_ORTE_PATH} > $@
-.endfor
+${PERSISTENTTMPDIR}/opengeodb-orte-DE.bbd:	${OPENGEODB_D_ORTE_PATH} ${MISCSRCDIR}/opengeodborte2bbd
+	${PERL_UTF8} ${MISCSRCDIR}/opengeodborte2bbd ${OPENGEODB_D_ORTE_PATH} > $@
 
 # About 70 failures for now. If I correct them all, enlarge the bbox.
-.check_orte_opengeodb:	orte orte2 ${PERSISTENTTMPDIR}/opengeodb-orte-BB-DE.bbd
-	cat orte orte2 | grep -v '^#' | $(PERL) -pe 's{^([^\|\t]+).*}{$$1}' | sort > /tmp/orte_bbbike
-	cat ${PERSISTENTTMPDIR}/opengeodb-orte-BB-DE.bbd | \
+.check_orte_opengeodb:	orte orte2 ${PERSISTENTTMPDIR}/opengeodb-orte-DE.bbd
+	cat orte orte2 | grep -v '^#' | \
+	    $(PERL) -pe 'if (m{^(.*)\|(.*)\t}) { print "$$1 $$2\n" } s{^([^\|\t]+).*}{$$1}' | \
+	    sort -u > /tmp/orte_bbbike
+	cat ${PERSISTENTTMPDIR}/opengeodb-orte-DE.bbd | \
 	    ${MISCSRCDIR}/restrict_bbd_data.pl -bbox -59700,60100,116500,-44900 -strdata=- -o=- | \
-	    $(PERL) -pe 's{(\s*\(.*\))?\t.*}{}' | sort > /tmp/orte_opengeodb
+	    $(PERL) -pe 's{(\s*\(.*\))?\t.*}{}' | sort -u > /tmp/orte_opengeodb
 	diff -u /tmp/orte_bbbike /tmp/orte_opengeodb | grep '^\+'
 
 # Die mit "laut adfc-karte" u.‰. gekennzeichneten Straﬂen extrahieren und
