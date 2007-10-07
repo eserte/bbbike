@@ -658,7 +658,11 @@ Waterlooufer -> Zossener Str.: unbequem passierbarer Mittelstreifen	3 9812,10211
 Brachvogelstr. -> Zossener Str.: unbequem passierbarer Mittelstreifen	3 9884,10192 9849,10202 9827,10120
 Littenstr. -> Grunerstr.: Straßentunnelrampe	3 11056,12461 10954,12635 10878,12560
 Grunerstr. -> Littenstr.: Straßentunnelrampe	3 11057,12715 10954,12635 11056,12461
+Dircksenstr. -> Grunerstr.: Straßentunnelrampe	3 11156,12581 11057,12715 10954,12635
+Dircksenstr. -> Alexanderpl. [Dircksenstr./zur Grunerstr.]: Straßentunnelrampe	3 11156,12581 11057,12715 11030,12741
+Grunerstr. -> Dircksenstr.: Straßentunnelrampe	3 11134,12793 11057,12715 11156,12581
 Grunerstr. -> Alexanderpl. [Dircksenstr./zur Grunerstr.]: Straßentunnelrampe	3 10954,12635 11057,12715 11030,12741
+Alexanderpl. [Dircksenstr./zur Grunerstr.] -> Dircksenstr.: Straßentunnelrampe	3 11030,12741 11057,12715 11156,12581
 Alexanderpl. [Dircksenstr./zur Grunerstr.] -> Grunerstr.: Straßentunnelrampe	3 11030,12741 11057,12715 11134,12793
 Wilhelmsaue -> Bundesallee: Straßentunnelrampe	3 5346,8720 5510,8709 5505,8832
 Bundesallee -> Wilhelmsaue: Straßentunnelrampe	3 5513,8588 5510,8709 5346,8720
@@ -906,6 +910,8 @@ Raoul-Wallenberg-Str. -> Schönagelstr.: Straßenbahntrasse	3 21158,15885 21220,15
 Schönagelstr. -> Raoul-Wallenberg-Str.: Straßenbahntrasse	3 21602,15908 21220,15741 21235,15641
 Krummenseer Str. -> Blumberger Damm: Mittelstreifen	3 21657,15352 21626,15357 21599,15213
 Blumberger Damm -> Krummenseer Str.: Mittelstreifen	3 21647,15496 21626,15357 21657,15352
+Rudower Chaussee -> Brook-Taylor-Str.: Mittelstreifen	3 19206,2848 19242,2876 19215,2906
+Brook-Taylor-Str. -> Rudower Chaussee: Mittelstreifen	3 19215,2906 19242,2876 19314,2932
 tragen (Treppe)	0:30:-14 -18702,4551
 tragen (Treppe)	0:20:-195 -12681,-1726
 tragen (ca. 30 Stufen)	0:30:-246 -13802,-1856
@@ -1075,7 +1081,6 @@ Otto-Ostrowski-Str.: Straße in Bau	2:inwork 13708,13623 13769,13487
 Zum Anhalter Steg: Bauarbeiten bis 2007-10-31	2:inwork 8773,10429 8776,10548
 Margarte-Steffin-Str.: Baurabeiten	2:inwork 8700,12810 8730,12804
 Hedwigskirchgasse: Bauarbeiten	2:inwork 9743,12239 9756,12139
-Dircksenstr. (Arbeiten an "Alexa", voraussichtlich bis 2006-12-31)	2:inwork 11209,12430 11156,12581 11057,12715
 Schloßplatz (Bauarbeiten am Palast der Republik)	2:inwork 10267,12305 10173,12492
 Brücke über den Torfgraben/Phöben gesperrt, Neubau voraussichtlich bis 2006-12-31	2:inwork -25539,2641 -25453,2418
 Behlertstr.	1 -12362,-370 -12607,-434 -12813,-480 -12868,-493
