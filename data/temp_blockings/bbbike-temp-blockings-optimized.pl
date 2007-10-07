@@ -726,15 +726,7 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1191708000,
-         'text' => 'L 172 Hennigsdorf-Velten zw. Kreisverkehr Hennigsdorf und Abzw. AS Hennigsdorf grundhafter Straßenbau Vollsperrung 27.08.2007-06.10.2007 ',
-         'from' => 1188079200,
-         'id' => 1142,
-         'data' => 'userdel	2::inwork -3470,27651 -3571,28529
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1196463600,
          'text' => 'L 213 B167 Liebenwalde-Nassenheide zw. B167 über Neuholland nach Freienhagen Deckenerneuerung Vollsperrung 15.08.2007-30.11.2007 ',
@@ -958,16 +950,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_006795',
-         'until' => 1191707999,
-         'text' => 'Ullsteinstr. (Tempelhof) in beiden Richtungen zwischen Rathausstr. und Mariendorfer Damm Baustelle, Straße vollständig gesperrt (bis 06.10.)',
-         'from' => 1191532907,
-         'id' => 1186,
-         'data' => 'userdel	2::inwork 9213,5187 8934,5095 8813,5004
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1192917600,
          'text' => 'L 095 abschnittsweise zw. Belzig und Görzke Straßenbauarbeiten Vollsperrung 15.10.2007-20.10.2007 ',

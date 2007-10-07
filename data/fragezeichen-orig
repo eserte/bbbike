@@ -33,7 +33,7 @@ Holzmarktstr.	? 11773,12006 11619,12084 11388,12202 11351,12221
 #: last_checked: 2007-09-16
 Gitschiner Str.	? 9948,10280 10122,10294 10340,10301 10605,10312 10859,10333 10962,10340 11117,10326
 #: last_checked: 2007-10-03
-Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 12188,14321 12338,14532 12384,14600 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941 12628,14962 12722,15105 12743,15138 12880,15335 12966,15478 13098,15592 13332,15765
+Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 12188,14321 12338,14532 12384,14600 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941 12628,14962 12722,15105 12743,15138 12880,15335 12966,15478 13098,15592 13316,15758
 #: last_checked: 2007-09-07
 Vulkanstraße	? 15912,13153 15892,13534
 #: last_checked: 2006-06-16 (von Corinna):
@@ -252,10 +252,6 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet; in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
-#: by: Bernd Steffen:
-Viernheimer Weg: mäßiger Asphalt, wellig durch Baumwurzeln, Q2	? -311,4637 -354,4603 -401,4572 -446,4552 -493,4529 -548,4511
-#: by: Christian Johann:
-Huberweg: guter Asphalt, Q0	? -1449,15688 -1324,15719 -1343,15804 -1380,15899
 #: by: connie zipser:
 Am Kinderdorf: mäßiger Asphalt, Belag stark beschädigt, Q2+, enge Straße, Baustellen, q1	? -5093,8398 -5106,8534 -5103,8614 -5089,8701 -5074,8761 -5071,8864
 #: by: Bernd Honsa
@@ -270,8 +266,6 @@ Friedrich-Steinwachs-Weg (Teltow): Verbundsteinpflaster, Q1, RW6	? 2148,-962 215
 Argoallee: guter Asphalt, Q0	? 26715,-6276 26962,-6074 27036,-6064
 #: by: anonymous
 Lönnrotweg: mäßiger Asphalt, Q1-, Fußgängerzone??? (wahrscheinlich verkehrsberuhigter Bereich?)	? -6916,5509 -6943,5484 -6981,5452 -7085,5359
-#: by: Tim Wöhrle:
-Starkenburger Str.: enge Straße q1, mäßiger Asphalt Q1-	? -575,4319 -441,4354 -380,4376 -324,4410 -277,4443 -287,4495
 #: by: Kurt Kratz:
 Waldschluchtpfad: mäßiger Beton, Q2+, enge Straße, q0	? -4741,7003 -4995,7042 -5050,7058 -5127,7090 -5163,7090
 #: by: Tom Noack:
@@ -1338,7 +1332,7 @@ Grüne Trift - Lindenberger Str.: Qualität? Straßennamen?	? 19579,18933 19381,190
 Str. 10, entlang des Hechtgrabens: Qualität?	? 18121,19390 18025,19433 17838,19501 17679,19532 17015,19287 16768,19191 16736,19193
 Hagenower Ring - Am Luchgraben: Qualität?	? 17009,19104 17021,19258 17015,19287 17015,19587 17079,20716 17100,20848 17274,20851
 #: XXX: unklarer Eintrag von anonymous "mäßig"
-Herbert-Baum-Str.: Qualität? Kann die Berliner Str. in Höhe Herbert-Baum-Str. überquert werden?	? 13826,16026 13869,15912 13904,15818 13943,15717 13964,15656 13980,15607
+Herbert-Baum-Str.: Qualität? Kann die Berliner Str. in Höhe Herbert-Baum-Str. überquert werden?	? 13826,16026 13869,15912 13904,15818 13943,15717 13964,15656 13989,15589
 Flaeming-Skate, RK3: genaue Wegführung, Qualität (wahrscheinlich asphaltierte Radwege)	? -11258,-44256 -11846,-43656 -12023,-43430 -11968,-42909 -11928,-42617 -10865,-42209 -10612,-42017 -10274,-42032 -10021,-42071 -10009,-42157 -9811,-42202 -9622,-42397 -9088,-42717 -8988,-42742 -9082,-43110 -9037,-43211 -8936,-43318
 Flaeming-Skate, RK2: genaue Wegführung, Qualität (wahrscheinlich asphaltierte Radwege)	? -5082,-38726 -5149,-38403 -4942,-37087 -4768,-36337 -3794,-36334
 Löpten - Halbe (West): Qualität?	? 30295,-28418 29920,-28522 29923,-28702 30082,-29064 30094,-29360 29798,-30045 29704,-30237 29881,-30578 29850,-30776 30079,-31267 30024,-31526 30201,-31788 29936,-32373
@@ -1534,4 +1528,4 @@ St. Galler Str.: Qualität?	? 6418,18491 6584,18474 6597,18473 6704,18462
 #: XXX: unklarer Eintrag von anonymous: Asphalt Q0, einige Fußgänger q2, Radweg???
 Maßliebweg: Qualität?	? 15356,2499 15593,2495
 Hielscherstr.: Qualität?	? 7522,19804 7556,19882 7604,19988 7695,20175 7735,20262 7809,20420 7866,20556 7937,20778
-Pulvermühlenweg: Qualität?	? -1794,15517 -1547,15377 -1496,15463
+Pulvermühlenweg: Qualität?	? -1794,15517 -1547,15377 -1485,15463

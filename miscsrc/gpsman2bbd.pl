@@ -57,6 +57,7 @@ sub gpsman2bbd {
     my $force_points;
     my $update;
     my $fail = 1;
+    my @filter;
 
     if (!GetOptions("destdir=s" => \$destdir,
 		    "deststreets=s" => \$deststreets,
@@ -73,6 +74,7 @@ sub gpsman2bbd {
 		    "forcepoints" => \$force_points,
 		    "update" => \$update,
 		    "fail!" => \$fail,
+		    'filter=s@' => \@filter,
 		   )) {
 	die <<EOF;
 Usage: $0 [-destdir directory] [-deststreets basename.bbd]
@@ -81,6 +83,7 @@ Usage: $0 [-destdir directory] [-deststreets basename.bbd]
 	  [-destmap maptoken] [-addprefix]
           [-pcat cat] [-scat cat] [-scat1 cat] [-scat2 cat]
 	  [-forcepoints] [-update] [-[no]fail]
+	  [-filter expr [-filter ...]]
 	  gpsmanfiles ...
 
 -destdir:     destination directory, default: $destdir
@@ -97,8 +100,45 @@ Usage: $0 [-destdir directory] [-deststreets basename.bbd]
 -forcepoints: force creation of points file for tracks
 -update:      update, should be faster if only some files changed
 -[no]fail:    (do not) fail on non existing source files
+-filter:      filter by expression in the form
+              key=val	key matches val exactly
+              key~val	key matches val as regular expression
+              key!=val	key does not match val exactly
+              key!~val	key does not match val as regexp
+
 EOF
 
+    }
+
+    my @code_filter;
+    for my $filter (@filter) {
+	my($key, $op, $val) = $filter =~ m{^(.*)(!?[=~])(.*)$};
+	if (!defined $key) {
+	    die "Cannot parse filter <$filter>";
+	}
+	if ($op eq '=') {
+	    push @code_filter, sub {
+		my($ckey, $cval) = @_;
+		$ckey eq $key && $cval eq $val;
+	    };
+	} elsif ($op eq '!=') {
+	    push @code_filter, sub {
+		my($ckey, $cval) = @_;
+		$ckey eq $key && $cval ne $val;
+	    };
+	} elsif ($op eq '~') {
+	    push @code_filter, sub {
+		my($ckey, $cval) = @_;
+		$ckey eq $key && $cval =~ qr{$val};
+	    };
+	} elsif ($op eq '!~') {
+	    push @code_filter, sub {
+		my($ckey, $cval) = @_;
+		$ckey eq $key && $cval !~ qr{$val};
+	    };
+	} else {
+	    die "Should not happen: unrecognized op <$op>";
+	}
     }
 
     my $s = Strassen->new;
@@ -173,6 +213,7 @@ EOF
 	my $event;   # dito
 	my %brand;   # vehicle -> brand
 
+    GPSMAN_CHUNK:
 	for my $gps (@{ $gps_multi->Chunks }) {
 	    #XXX $gps->convert_all("DDD");
 
@@ -180,6 +221,22 @@ EOF
 
 	    my $curr_s;
 	    if ($gps->Type eq GPS::GpsmanData::TYPE_TRACK()) {
+		if (@code_filter) {
+		    for my $code_filter (@code_filter) {
+			my $code_filter_given = 0;
+			for my $k (keys %{ $gps->TrackAttrs }) {
+			    my $v = $gps->TrackAttrs->{$k};
+			    if ($code_filter->($k,$v)) {
+				$code_filter_given++;
+				last;
+			    }
+			}
+			if (!$code_filter_given) {
+			    next GPSMAN_CHUNK;
+			}
+		    }
+		}
+
 	        $curr_s = $s;
 
 		if ($gps->TrackAttrs->{"srt:vehicle"}) {
