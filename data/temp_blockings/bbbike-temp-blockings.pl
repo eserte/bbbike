@@ -9486,7 +9486,7 @@ userdel	2::temp 8737,12098 8595,12066
 EOF
      },
      { from  => 1187989206, # 2007-08-24 23:00
-       until => 1199142000, # 2008-01-01 00:00
+       until => 1191967870, # 2008-01-01 00:00 1199142000
        text  => 'Drakestr. (Lichterfelde) in beiden Richtungen bei der Bahnunterführung geplatzte Wasserleitung, Straße vollständig gesperrt (bis Anfang 2008)',
        type  => 'handicap',
        source_id => 'IM_006754', # IM_005516
@@ -9733,7 +9733,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006622',
        data  => <<EOF,
-userdel	1::inwork 11134,12793 11207,12706 11323,12484
+userdel	1::inwork 11134,12793 11207,12706 11252,12644 11323,12484
 EOF
      },
      { from  => 1189893600, # 2007-09-16 00:00
@@ -10067,6 +10067,40 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -20021,54750 -20798,54347 -21553,54152 -22376,53427 -23839,52751
+EOF
+     },
+     { from  => 1191967812, # 2007-10-10 00:10
+       until => 1230764399, # 2008-12-31 23:59
+       text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Mohrenstr. und Leipziger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_006819',
+       data  => <<EOF,
+userdel	1::inwork 9220,11781 9234,11683 9268,11590
+EOF
+     },
+     { from  => 1191967853, # 2007-10-10 00:10
+       until => 1193871599, # 2007-10-31 23:59
+       text  => 'Südostallee (Königsheide) Richtung Sterndamm zwischen Rixdorfer Str. und Sterndamm Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_006820',
+       data  => <<EOF,
+userdel	1::inwork 16861,5935 16987,5838 17331,5571 17586,5374
+EOF
+     },
+     { from  => 1191708000, # 2007-10-07 00:00
+       until => 1197673200, # 2007-12-15 00:00
+       text  => 'L 238 AS Werbellin-Joachimsthal OD Altenhof Kanal- und Straßenbau Vollsperrung 08.10.2007-14.12.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 30762,56847 30526,56720 30056,56665 30137,56487
+EOF
+     },
+     { from  => 1192140000, # 2007-10-12 00:00
+       until => 1192917600, # 2007-10-21 00:00
+       text  => 'L 402 Schulzendorf-Dahlewitz zw. Abzw. Waltersdorf und Dahlewitz Fahrbahninstandsetzung Vollsperrung 13.10.2007-20.10.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 17910,-6981 17480,-7498 17278,-7925 16437,-8257
 EOF
      },
     );

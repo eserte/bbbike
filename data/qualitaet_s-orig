@@ -2199,7 +2199,7 @@ Grevesmühlener Str.: Asphalt	Q0 18177,18412 18031,18433 17807,18267 17678,18171
 Husumer Str.: Asphalt	Q0 20713,10293 21015,10284 21263,10276
 Gottschedstr.: Kopfsteinpflaster	Q2 7894,15980 8003,16098 8077,16178 8306,16428
 Maisweg: Asphalt	Q0 20682,12646 20818,12628 20843,12677 20953,12866 20996,13162 21032,13467
-Ingwäonenweg: Asphalt	Q0 16500,22465 16499,22789 16546,22940 16627,23187 16831,23615
+Ingwäonenweg: Asphalt	Q0 16500,22465 16499,22789 16546,22940 16627,23187 16730,23492 16745,23548 16783,23615
 Wulfila-Ufer: Asphalt	Q0 8249,4769 8494,5001 8750,5173
 Schluchseestr.: Asphalt	Q0 5006,22507 5056,22389 5098,22326 5209,22229 5335,22196 5443,22210 5515,22250 5735,22564 5801,22618
 Niedstr.: Asphalt	Q0 5364,7330 5641,7332 5810,7337 5902,7334
@@ -3076,7 +3076,7 @@ Tieckstr.: asphaltiert	Q0 9081,13636 9279,13710 9394,13754 9510,13823
 #: by: H.-G. Danelski: vvv
 Löptener Str.: sehr guter Asphalt	Q0 10989,-1904 10760,-1931
 Mellener Str.: Asphalt	Q0 10747,-2129 10760,-1931 10767,-1850 10779,-1751
-Mellener Str.: schlecht befahrbares Kopfsteinpflaster	Q3 10747,-2129 10761,-2268 10773,-2421
+Mellener Str.: schlecht befahrbares Kopfsteinpflaster	Q3 10747,-2129 10761,-2268 10789,-2451
 (Am Lichtenrader Graben): asphaltiert	Q0 10513,-1954 10531,-1959 10628,-1737 10703,-1518
 #: note: Verbindung wird auch in http://www.agenda21berlin.de/vonwegen/map_tmpvelo.htm erwähnt
 Mellener Str. - Lichtenrader Graben: asphaltiert	Q0 10779,-1751 10628,-1737
@@ -4267,7 +4267,7 @@ Südekumzeile: guter Beton	Q0 -6325,13668 -6432,13656 -6561,13615 -6651,13583 -69
 #: note: "auch für Skater geeignet"
 Hugo-Distler-Str.: Asphalt	Q0 23671,13081 23724,13016 23791,13036 23797,13054 23883,13013 23878,12990 23904,12912 23957,12902
 #: by: Thoma (J.Thoma):
-Lausanner Str.: Asphalt	Q0 3805,2196 3726,2209 3551,2212 3466,2214 3293,2218 3151,2224
+Lausanner Str.: Asphalt	Q0 3805,2196 3726,2209 3551,2212 3466,2214 3382,2216 3293,2218 3151,2224
 #: by: hendrik (housemeister):
 #: note: Qualität laut ADFC-Karte gut
 Eichhorster Str.: guter Beton	Q0 21446,18405 21481,18474 21526,18558 21545,18595 21552,18607 21678,18648 21825,18689 21853,18700
@@ -4414,7 +4414,7 @@ Döbelner Str.: guter Asphalt	Q0 24667,14088 25025,13974
 #: by: Daniel Parreira:
 Siebweg: guter Asphalt	Q0 21151,-520 21241,-533 21343,-549 21451,-561 21600,-578 21681,-589 21789,-602 21868,-611 21934,-617 21987,-624 22034,-631 22143,-645 22162,-648 22268,-663
 #: by: Marco Kühne: vvv
-Achillesstr.: Asphalt	Q0 15344,24315 15490,24198 15675,24086 15793,23762 15838,23729 15950,23671 16070,23566
+Achillesstr.: Asphalt	Q0 15344,24315 15490,24198 15675,24086 15793,23762 15845,23717 15950,23671 16070,23566
 Lossebergplatz.: Asphalt	Q0 16070,23566 16094,23554 16095,23539 16079,23535 16064,23547 16070,23566
 Achillesstr.: Asphalt	Q0 16095,23539 16183,23476 16627,23187
 #: by: ^^^
@@ -5632,6 +5632,16 @@ Grützmacherweg: Asphalt	Q0 -1511,15127 -1631,15164 -1709,15188 -1783,15208 -1870
 Brook-Taylor-Str.: Asphalt	Q0 19242,2876 19215,2906 19146,2975
 #: by: Thomas Schäfer:
 Am Irissee: Asphalt	Q0 11000,3115 11154,3246 11125,3343
+#: by: Kevin (electronic_music...):
+Mandelstr.: guter Asphalt	Q0 12821,15565 12911,15708
+#: by: susanne von below:
+Helene-von-Mülinen-Weg: Asphalt	Q0 3382,2216 3385,2341 3387,2468
+#: by: Mark (treseler):
+Alvenslebenstr. (Lichtenrade): mäßiges Kopfsteinpflaster	Q2- 10828,-2774 10832,-2636 10833,-2544 10833,-2509
+#: by: Maud Apel:
+Augustenburger Platz: Asphalt	Q0 6561,15041 6537,15156 6562,15177
+#: by: Mario Federmann:
+Haduweg: Asphalt	Q0 15981,23996 16029,23964 16106,23913 16416,23705 16510,23642 16586,23592 16609,23572 16730,23492
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

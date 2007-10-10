@@ -676,16 +676,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_006754',
-         'until' => 1199142000,
-         'text' => 'Drakestr. (Lichterfelde) in beiden Richtungen bei der Bahnunterführung geplatzte Wasserleitung, Straße vollständig gesperrt (bis Anfang 2008)',
-         'from' => 1187989206,
-         'id' => 1125,
-         'data' => 'userdel	q4::inwork 3048,4305 3128,4190 3259,4002
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -913,15 +904,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1191794400,
-         'text' => 'L 031 zw. Bernau, hinter Zuf. Toom Baumarkt und BÜ Blumberg Deckensanierung Vollsperrung 01.10.2007-07.10.2007 ',
-         'from' => 1191103200,
-         'id' => 1182,
-         'data' => 'userdel	2::inwork 24186,26271 24204,25870 24244,25405 24242,25066 24281,24622 24214,24093 24677,23407 24761,23151 24718,22731
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1194044400,
          'text' => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 01.10.2007-02.11.2007 ',
@@ -1011,6 +994,44 @@ push @temp_blocking,
          'from' => 1191880800,
          'id' => 1193,
          'data' => 'userdel	2::inwork -20021,54750 -20798,54347 -21553,54152 -22376,53427 -23839,52751
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006819',
+         'until' => 1230764399,
+         'text' => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Mohrenstr. und Leipziger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2008)',
+         'from' => 1191967812,
+         'id' => 1194,
+         'data' => 'userdel	1::inwork 9220,11781 9234,11683 9268,11590
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006820',
+         'until' => 1193871599,
+         'text' => 'Südostallee (Königsheide) Richtung Sterndamm zwischen Rixdorfer Str. und Sterndamm Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2007)',
+         'from' => 1191967853,
+         'id' => 1195,
+         'data' => 'userdel	1::inwork 16861,5935 16987,5838 17331,5571 17586,5374
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1197673200,
+         'text' => 'L 238 AS Werbellin-Joachimsthal OD Altenhof Kanal- und Straßenbau Vollsperrung 08.10.2007-14.12.2007 ',
+         'from' => 1191708000,
+         'id' => 1196,
+         'data' => 'userdel	q4::inwork 30762,56847 30526,56720 30056,56665 30137,56487
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1192917600,
+         'text' => 'L 402 Schulzendorf-Dahlewitz zw. Abzw. Waltersdorf und Dahlewitz Fahrbahninstandsetzung Vollsperrung 13.10.2007-20.10.2007 ',
+         'from' => 1192140000,
+         'id' => 1197,
+         'data' => 'userdel	2::inwork 17910,-6981 17480,-7498 17278,-7925 16437,-8257
 ',
          'type' => 'gesperrt'
        }
