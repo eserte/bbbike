@@ -8419,7 +8419,7 @@ userdel	q4::inwork 13981,11746 13954,11647
 EOF
      },
      { from  => 1180991094, # 2007-06-04 23:04
-       until => 1196463599, # 2007-11-30 23:59
+       until => 1192223607, # 2007-11-30 23:59 1196463599
        text  => 'Bernstorffstr. (Reinickendorf) Richtung A111 zwischen Berliner Str. und Buddestr. Baustelle, Fahrtrichtung gesperrt (bis 11.2007)',
        type  => 'gesperrt',
        source_id => 'IM_005680',
@@ -10101,6 +10101,63 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 17910,-6981 17480,-7498 17278,-7925 16437,-8257
+EOF
+     },
+     { from  => 1192223561, # 2007-10-12 23:12
+       until => 1196463599, # 2007-11-30 23:59
+       text  => 'Drakestr. (Lichterfelde) in beiden Richtungen bei der Bahnunterführung geplatzte Wasserleitung, Straße vollständig gesperrt (bis Ende 11.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_006754',
+       data  => <<EOF,
+userdel	2::inwork 3259,4002 3128,4190
+EOF
+     },
+     { from  => 1192140000, # 2007-10-12 00:00
+       until => 1192399200, # 2007-10-15 00:00
+       text  => 'B 096 Brücke zw. Großräschen und Freienhufen Brückenabbruch Vollsperrung 13.10.2007-14.10.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 50965,-90836 52580,-90602
+EOF
+     },
+     { from  => 1192312800, # 2007-10-14 00:00
+       until => 1193263200, # 2007-10-25 00:00
+       text  => 'B 109 August-Bebel-Str. OD Templin, zw. Jahnstr. und Krz. Prenzlauer Allee Kanalarbeiten Vollsperrung 15.10.2007-24.10.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 16463,79756 16200,79437
+EOF
+     },
+     { from  => 1192399200, # 2007-10-15 00:00
+       until => 1199055600, # 2007-12-31 00:00
+       text  => 'L 030 Börnicker Chaussee OD Bernau, zw. Gernotstr. und Eberswalder Str. grundhater Straßenbau Vollsperrung 16.10.2007-30.12.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 23113,30450 23368,30409 23631,30262
+EOF
+     },
+     { from  => 1192312800, # 2007-10-14 00:00
+       until => 1193004000, # 2007-10-22 00:00
+       text  => 'L 037 zw. OL Dubrow und OU Müllrose Straßensanierungsarbeiten Vollsperrung 15.10.2007-21.10.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 78364,-14355 78029,-13837 77866,-13279
+EOF
+     },
+     { from  => 1192312800, # 2007-10-14 00:00
+       until => 1192572000, # 2007-10-17 00:00
+       text  => 'L 037 zw. Schernsdorf und Müllrose Straßensanierungsarbeiten Vollsperrung 15.10.2007-16.10.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 80237,-17646 80679,-17994 82000,-19505
+EOF
+     },
+     { from  => 1192399200, # 2007-10-15 00:00
+       until => 1194562800, # 2007-11-09 00:00
+       text  => 'L 161 B 5 Bredow - Paaren Kreisverkehr westl. AS Falkensee in Ri. Paaren Straaßenbau, Umbau KVK Vollsperrung 16.10.2007-08.11.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -18577,24383 -19282,23081
 EOF
      },
     );
