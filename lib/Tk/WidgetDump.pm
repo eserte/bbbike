@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: WidgetDump.pm,v 1.33 2007/04/08 19:34:18 eserte Exp $
+# $Id: WidgetDump.pm,v 1.35 2007/09/23 08:15:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2007 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ package Tk::WidgetDump;
 use vars qw($VERSION);
 use strict;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.33 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.35 $ =~ /(\d+)\.(\d+)/);
 
 package # hide from CPAN indexer
   Tk::Widget;
@@ -292,10 +292,16 @@ sub WidgetInfo {
     $txt->insert("end", "Configuration:\n\n", "title");
     $txt->insert("end", "Option Switch\tOptionDB Name\tOptionDB Class\tDefault Value\tCurrent Value\n", "title");
     foreach my $c ($w->configure) {
+	my $class = $c->[2];
+	my $name  = $c->[1];
+	if ($name =~ m{^-}) { # an alias
+	    my @c_alias = $w->configure($name);
+	    $class = $c_alias[2];
+	}
 	$txt->insert("end",
 		     join("\t", map { !defined $_ ? "<undef>" : $_ } @$c),
 		     ["widgetlink",
-		      "config-" . $w . ($c->[0]||"") . "-" . ($c->[2]||"")],
+		      "config-" . $w . ($c->[0]||"") . "-" . ($class||"")],
 		     "\n");
     }
     $txt->insert("end", "\n");
@@ -605,6 +611,9 @@ sub _edit_config {
 # 		   $t->destroy;
 # 	       }
 # 	      )->pack(-side => "left");
+    $t->Button(-text => "Set",
+	       -command => $set_sub,
+	      )->pack(-side => "left");
     $t->Button(-text => "Close",
 	       -command => [$t, 'destroy'],
 	      )->pack(-side => "left");
@@ -1373,9 +1382,9 @@ Tk::WidgetDump - dump the widget hierarchie
 
 In a script:
 
-    use Tk::WidgetDump;
+    use Tk::WidgetDump; # optional
     $mw = new MainWindow;
-    $mw->WidgetDump;
+    $mw->WidgetDump; # usually before MainLoop
 
 From the command line for a quick widget option test:
 
@@ -1427,9 +1436,8 @@ itself.
 
 =item * Changing configuration values
 
-You have to hit <Return> to see the changes. The changes are not
-reflected in the configuration window, you have to hit the "Refresh"
-button.
+Changes are not reflected in the configuration window, you have to hit
+the "Refresh" button.
 
 =item * Tk::WidgetDump does not follow the conventions of a "real"
 widget (ConfiSpecs etc.)
@@ -1440,7 +1448,7 @@ widget (ConfiSpecs etc.)
 
 =head1 AUTHOR
 
-Slaven Rezic (slaven@rezic.de)
+Slaven Rezic (srezic@cpan.org)
 
 =head1 SEE ALSO
 

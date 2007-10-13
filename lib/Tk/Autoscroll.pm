@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Autoscroll.pm,v 1.13 2003/10/22 21:34:37 eserte Exp $
+# $Id: Autoscroll.pm,v 1.14 2006/09/10 08:39:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001,2002 Slaven Rezic. All rights reserved.
@@ -19,14 +19,15 @@ use vars qw($VERSION @default_args);
 my $count = 0;
 my $prefix = "Autoscroll";
 
-$VERSION = sprintf "%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/;
+$VERSION = sprintf "%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/;
 
 sub import {
     if (defined $_[1] and $_[1] eq 'as_default') {
 	local $^W = 0;
 	eval q{
 	    use Tk::Widget;
-	    package Tk::Widget;
+	    package # hide from CPAN indexer
+		Tk::Widget;
 	    # XXX better solution!!!!!!
 	    sub Scrolled
 	      {

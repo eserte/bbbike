@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.47 2007/09/29 13:31:47 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.48 2007/10/13 12:31:04 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -254,6 +254,7 @@ for my $browser (@browsers) {
 	     qr{(\QHans-Sachs-Str. (Potsdam)/Meistersingerstr. (Potsdam)\E
 		|\QCarl-von-Ossietzky-Str. (Potsdam)/Lennéstr. (Potsdam)\E
 		|\Q(Ökonomieweg, Sanssouci) (Potsdam)/(Lennéstr. - Ökonomieweg, Sanssouci)\E
+		|\Q(Ökonomieweg, Sanssouci)/(Lennéstr. - Ökonomieweg, Sanssouci) (Potsdam)\E
 		|\Q(Lennéstr. - Ökonomieweg, Sanssouci) (Potsdam)/Lennéstr. (Potsdam)\E
 		|\Q(Lennéstr. - Ökonomieweg, Sanssouci) (Potsdam)/(Hans-Sachs-Str. - Lennéstr.) (Potsdam)/Lennéstr. (Potsdam)\E
 		|\Q(Lennéstr. - Ökonomieweg, Sanssouci)/(Hans-Sachs-Str. - Lennéstr.)/Lennéstr. (Potsdam)\E

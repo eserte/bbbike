@@ -261,6 +261,7 @@ sub save_options {
 		}
 	    }
 	    local $Data::Dumper::Sortkeys = $Data::Dumper::Sortkeys = 1;
+	    local $Data::Dumper::Indent = $Data::Dumper::Indent = 1;
 	    if (Data::Dumper->can('Dumpxs')) {
 		# use faster version of Dump
 		print OPT

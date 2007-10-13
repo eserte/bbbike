@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiMap.pm,v 1.15 2007/09/01 13:27:26 eserte Exp $
+# $Id: MultiMap.pm,v 1.16 2007/10/13 12:37:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006,2007 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%images);
 
@@ -563,7 +563,7 @@ sub showmap_url_berliner_stadtplan24 {
 sub showmap_berliner_stadtplan24 {
     my(%args) = @_;
     my $url = showmap_url_berliner_stadtplan24(%args);
-    start_browser_no_mozilla($url);
+    start_browser($url);
 }
 
 ######################################################################
@@ -595,6 +595,7 @@ sub start_browser {
     WWWBrowser::start_browser($url);
 }
 
+# For sites which not work with mozilla/seamonkey - prefer firefox
 sub start_browser_no_mozilla {
     my($url) = @_;
     require WWWBrowser;

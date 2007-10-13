@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ContextHelp.pm,v 1.16 2003/02/12 22:46:07 eserte Exp $
+# $Id: ContextHelp.pm,v 1.17 2007/10/03 07:53:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ BEGIN { die "Tk::ContextHelp does not work with Win32" if $^O eq 'MSWin32' }
 use Tk::InputO;
 use strict;
 use vars qw($VERSION @ISA $NO_TK_POD);
-$VERSION = '0.10';
+$VERSION = '0.11';
 @ISA = qw(Tk::Toplevel);
 
 Construct Tk::Widget 'ContextHelp';

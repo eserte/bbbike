@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: WWWBrowser.pm,v 2.37 2007/03/21 22:30:40 eserte Exp $
+# $Id: WWWBrowser.pm,v 2.38 2007/04/20 19:33:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2000,2001,2003,2005,2006 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use vars qw(@unix_browsers @available_browsers
 	    $VERSION $VERBOSE $initialized $os $fork
 	    $got_from_config $ignore_config);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.37 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.38 $ =~ /(\d+)\.(\d+)/);
 
 @available_browsers = qw(_debian_browser _internal_htmlview
 			 _default_gnome _default_kde
@@ -169,17 +169,21 @@ sub start_browser {
 		return 1;
 	    }
 	} elsif ($browser eq '_debian_browser') {
-	    if ($ENV{DISPLAY}) {
-		if (-x "/etc/alternatives/gnome-www-browser") { # usually firefox or mozilla
-		    exec_bg("/etc/alternatives/gnome-www-browser", $url); # use additional args if mozilla, learn args for firefox
-		    return 1;
-		} elsif (-x "/etc/alternatives/x-www-browser") { # usually dillo
-		    exec_bg("/etc/alternatives/x-www-browser", $url);
-		    return 1;
-		}
+	    if (-x "/usr/bin/sensible-browser") {
+		exec_bg("/usr/bin/sensible-browser", $url);
 	    } else {
-		if (-x "/etc/alternatives/www-browser") {
-		    return 1 if open_in_terminal("/etc/alternatives/www-browser", $url, %args);
+		if ($ENV{DISPLAY}) {
+		    if (-x "/etc/alternatives/gnome-www-browser") { # usually firefox or mozilla
+			exec_bg("/etc/alternatives/gnome-www-browser", $url); # use additional args if mozilla, learn args for firefox
+			return 1;
+		    } elsif (-x "/etc/alternatives/x-www-browser") { # usually dillo
+			exec_bg("/etc/alternatives/x-www-browser", $url);
+			return 1;
+		    }
+		} else {
+		    if (-x "/etc/alternatives/www-browser") {
+			return 1 if open_in_terminal("/etc/alternatives/www-browser", $url, %args);
+		    }
 		}
 	    }
 	} else {
