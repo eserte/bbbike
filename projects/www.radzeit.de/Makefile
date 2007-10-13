@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.102 2007/09/22 08:24:44 eserte Exp $
+# $Id: Makefile,v 1.103 2007/10/13 16:34:23 eserte Exp $
 #
 
 # Targets:
@@ -108,6 +108,11 @@ XARGS_REPL?=	xargs -J %
 .endif
 
 MAPSERVER_EXE?=	$(HOME)/www/cgi/mapserv.cgi
+
+## Prefer cp, so I may make changes in ~/src/bbbike and still have
+## a copy on my disk similar to the radzeit contents.
+#MKDIST_STYLE=	best
+MKDIST_STYLE=	cp
 
 .ifndef TARGET
 .if ${CURDIR:T} == "www.radzeit-old.de"
@@ -372,7 +377,7 @@ prepare-bbbike-dist-prog-bbbike:	\
 
 prepare-bbbike-dist-prog-bbbike-copy:
 	cd ${BBBIKE_ROOT_DIR} && ${MAKE} distcheck
-	(umask 022; cd ${BBBIKE_ROOT_DIR} && perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread(),'${CURDIR}/BBBike', 'best');")
+	(umask 022; cd ${BBBIKE_ROOT_DIR} && perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread(),'${CURDIR}/BBBike', '${MKDIST_STYLE}');")
 
 prepare-bbbike-dist-prog-bbbike-cgi:
 	[ -d ${CURDIR}/cgi-bin ] || mkdir ${CURDIR}/cgi-bin
@@ -535,7 +540,7 @@ prepare-touren-dist:
 
 prepare-routopedia-dist:
 	cd ${BBBIKE_ROOT_DIR}/routopedia && ${MAKE} distcheck
-	(umask 022; cd ${BBBIKE_ROOT_DIR}/routopedia && perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread(),'${CURDIR}/routopedia', 'best');")
+	(umask 022; cd ${BBBIKE_ROOT_DIR}/routopedia && perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread(),'${CURDIR}/routopedia', '${MKDIST_STYLE}');")
 
 # Call once sternfahrt files have changed:
 prepare-sternfahrt-dist:	prepare-sternfahrt${STERNFAHRT_YEAR}-dist

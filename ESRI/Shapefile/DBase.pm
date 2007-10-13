@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DBase.pm,v 1.12 2005/01/08 11:09:41 eserte Exp $
+# $Id: DBase.pm,v 1.13 2007/10/13 17:39:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2002,2004,2005 Slaven Rezic. All rights reserved.
@@ -175,21 +175,6 @@ sub cp850_iso {
     $_[0] =~ tr/\204\224\201\216\231\232\341\202\370/äöüÄÖÜßé°/;
 }
 
-return 1 if caller();
-
-######################################################################
-
-if ($0 =~ /merge_with_bbd/) {
-    my $shapefile = shift or die "Shapefile?";
-    my $bbdfile   = shift or die "bbd file?";
-    my $outfile   = shift or die "new bbd file for output?";
-
-    require ESRI::Shapefile;
-    my $esri = ESRI::Shapefile->new;
-    $esri->set_file($shapefile);
-    $esri->DBase->merge_with_bbd($bbdfile, $outfile);
-}
-
-$DBI::errstr = $DBI::errstr if 0; # peacify -w
+1;
 
 __END__

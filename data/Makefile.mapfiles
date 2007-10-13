@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.36 2007/06/14 20:31:28 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.36 2007/06/14 20:31:28 eserte Exp eserte $
 #
 
 .ifndef COMMENTS_PARTIAL
@@ -460,9 +460,15 @@ do-mapfiles-dist:
 	rsync --archive --copy-links --cvs-exclude $(MAPFILES_DATA_DIR)/ /tmp/bbbike-b_de-esri/data/
 	cd /tmp && \
 	    tar cfvz /tmp/bbbike-b_de-esri-$(TODAY_DATE).tar.gz bbbike-b_de-esri
+
 mapfiles-sf-release:	do-mapfiles-dist
 	@echo "Really upload bbbike-b_de-esri-$(TODAY_DATE).tar.gz to SourceForge?"
 	@cd /tmp && ls -l bbbike-b_de-esri-$(TODAY_DATE).tar.gz
 	@echo "Press CTRL-C to abort."
 	@read yn
 	cd /tmp && sf-upload -groupid 19142 -packageid 207826 -r $(TODAY_DATE) -f bbbike-b_de-esri-$(TODAY_DATE).tar.gz
+
+# Creates a variant with WGS84 coordinates
+create-polar-mapfiles:
+	mkdir -p /tmp/polar_data
+	$(MAKE) mapfiles-without-reference-maps MAPFILES_DATA_DIR=/tmp/polar_data BBD2ESRI="$(BBD2ESRI) -polar"

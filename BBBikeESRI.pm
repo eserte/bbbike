@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeESRI.pm,v 1.15 2007/05/23 21:08:59 eserte Exp $
+# $Id: BBBikeESRI.pm,v 1.16 2007/10/13 17:39:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -304,6 +304,24 @@ sub merge_with_bbd {
     $self->_finish_db;
 }
 
-1;
+return 1 if caller();
+
+######################################################################
+
+my $action = shift || die "Please specify action (e.g. merge_with_bbd)";
+if ($action eq 'merge_with_bbd') {
+    my $shapefile = shift or die "Shapefile?";
+    my $bbdfile   = shift or die "bbd file?";
+    my $outfile   = shift or die "new bbd file for output?";
+
+    require ESRI::Shapefile;
+    my $esri = ESRI::Shapefile->new;
+    $esri->set_file($shapefile);
+    $esri->DBase->merge_with_bbd($bbdfile, $outfile);
+} else {
+    die "Action <$action> unknown";
+}
+
+$DBI::errstr = $DBI::errstr if 0; # peacify -w
 
 __END__
