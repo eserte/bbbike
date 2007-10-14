@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: TransparentCanvas.pm,v 1.7 2006/09/05 21:32:15 eserte Exp $
+# $Id: TransparentCanvas.pm,v 1.8 2007/10/14 20:19:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 use X11::Protocol;
 

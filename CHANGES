@@ -1,20 +1,68 @@
 BBBike RELEASE 3.16 (in the future)
 
+XXX CHECKED CHANGELOG UNTIL 2007-03-03 XXX
+
 bbbike (ptk)
-- new Plugins for accessing Multimap and GoYellow.de (for now only in CVS)
-- info window: better organization of external links (now with right click menu)
-  new link to Wikipedia Mapsources
+- info window: better organization of external links (now with right click
+  menu), new link to Wikipedia Mapsources
+- new export formats: GPSman route (as opposed to GPSman track), KML
+- nicer bridge and tunnel drawings
+- label visibility fixes while zooming (but still not perfect)
+- balloon info now with information for all layers below
+- alarm feature with bluetooth transfer (e.g. for mobile phones, only Linux and
+  FreeBSD)
+- full text search now callable from "File" menu
+- new option -texteditor
+- fixes for forthcoming perl version 5.10.0
+- fixes for 64bit platforms
+- bug fixes (e.g. font size now always correct, better Win32 icon)
 
 Data
+- thanks to Andreas Titz Oranienburg is now nearly complete
+- as usual, much more data
+- corrected place categories (by comparing to Wikipedia entries)
+- more cycle routes
+- new map data: border crossings (between Germany and Poland)
+- new map signatures: theater, museum, road numbers (Bundesstraﬂe,
+  Autobahn ...)
+- more map images for sights (some orginals contributed by Robert Joop)
+- some map signatures are now in PNG rather than GIF (better alpha support)
+- some source data files are now in utf-8, allowing for real
+  Polish names, though generated data files are still iso-8859-1
+- cafes/bars layer marked as unsupported
+- more bbd directives like listing_sort, corrected_by, category_color ...
+- bbd: category tendencies (Q1+ ...) used in source files
 
 Modules
+- new BBBikeDraw module for BBBikeGoogleMaps
+- new: PLZ::Levenshtein (but not yet used)
+- new: MacOSXUtil
+
+Plugins
+- nicer and more comfortable plugin lister
+- new Plugins for accessing Multimap, GoYellow.de, Luise-Berlin,
+  geocaching.com, dein-plan.de, BVG, OpenStreetMap (only in CVS)
+- new features for ViewImages plugin (only in CVS)
 
 Install
+- updated installer for newer KDE/GNOME
 
 CGI
+- larger overview map (including Nauen, Oranienburg, Strausberg, KW)
 - english translation of the website (expect info page)
+- better Google Maps support
+  comments may be send via an ajax form
+- opensearch support (initial work by Wolfram Schneider)
+- removed www.berliner-stadtplan24.com support because the route transfer
+  does not work anymore
+- slightly more modern HTML (e.g. better CSS)
+- Mapserver interface polishing
 
 Misc
+- support for converting data to cgpsmapper (CVS only)
+- new script for converting anything to bbd (CVS only)
+- included some new documentation files (HOWTO_edit_bbbike_data.html,
+  qualitaetskategorien.html)
 
 ----------------------------------------------------------------------
 

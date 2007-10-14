@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: trafficlightgraph.pl,v 1.5 2007/09/17 21:41:23 eserte Exp eserte $
+# $Id: trafficlightgraph.pl,v 1.6 2007/10/14 20:21:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.

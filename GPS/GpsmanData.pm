@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.49 2007/09/01 10:44:45 eserte Exp eserte $
+# $Id: GpsmanData.pm,v 1.50 2007/10/14 20:27:32 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2005,2007 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -44,7 +44,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.49 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.50 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;

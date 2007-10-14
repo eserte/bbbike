@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.189 2007/09/01 10:40:30 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.190 2007/10/14 20:25:12 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2007 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #

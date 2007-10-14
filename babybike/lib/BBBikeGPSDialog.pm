@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSDialog.pm,v 1.13 2004/09/09 00:27:48 eserte Exp $
+# $Id: BBBikeGPSDialog.pm,v 1.14 2007/10/14 20:28:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002, 2003 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeGPSDialog;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Tk::Toplevel);
 Construct Tk::Widget 'BBBikeGPSDialog';

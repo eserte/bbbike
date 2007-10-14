@@ -9197,7 +9197,7 @@ userdel	2::inwork 29812,57628 29056,57503
 EOF
      },
      { from  => 1189797888, # 2007-09-14 21:24
-       until => 1192485599, # 2007-10-15 23:59
+       until => 1192310079, # 2007-10-15 23:59 1192485599
        text  => 'Dietzgenstr. (Pankow) stadteinwärts zwischen Kastanienallee und Schillerstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 10.2007)',
        type  => 'gesperrt',
        source_id => 'IM_006194',
@@ -10158,6 +10158,24 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -18577,24383 -19282,23081
+EOF
+     },
+     { from  => 1192310001, # 2007-10-13 23:13
+       until => 1192399200, # 2007-10-15 00:00
+       text  => 'Pichelsdorfer Str. (Wilhelmstadt) in beiden Richtungen zwischen Weißenburger Str. und Wilhelmstr. Veranstaltung, Straße vollständig gesperrt (bis 14.10.2007 nachts)',
+       type  => 'gesperrt',
+       source_id => 'IM_006856',
+       data  => <<EOF,
+userdel	2::temp -3629,12781 -3641,12861 -3650,12929 -3669,13015 -3764,13270 -3791,13357
+EOF
+     },
+     { from  => 1192310039, # 2007-10-13 23:13
+       until => 1192402800, # 2007-10-15 01:00
+       text  => 'Residenzstr. (Reinikendorf) in beiden Richtungen zwischen Emmentaler Str. und Franz-Neumann-Platz Veranstaltung, Straße vollständig gesperrt (bis 15.10. - 01 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_006852',
+       data  => <<EOF,
+userdel	2::temp 7350,18262 7466,17904 7487,17836 7500,17796 7587,17532
 EOF
      },
     );

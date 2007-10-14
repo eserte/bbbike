@@ -269,9 +269,8 @@ cgi/gridserv.cgi$
 ^data/\.fragezeichen-
 ^data/.*-cooked
 ^BBBikeVar\.tpl$
-^Makefile\.doc$
-^HOWTO_edit_bbbike_data\.
-^docbook.css$
+^doc/Makefile\.doc$
+^doc/HOWTO_edit_bbbike_data\.sgml$
 ^bbbike-stick.bat$
 ^BBBikeRouting/Boat.pm$
 # not needed anymore?

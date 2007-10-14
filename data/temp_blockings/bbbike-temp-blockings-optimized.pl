@@ -582,16 +582,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_006194',
-         'until' => 1192485599,
-         'text' => 'Dietzgenstr. (Pankow) stadteinwärts zwischen Kastanienallee und Schillerstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 10.2007)',
-         'from' => 1189797888,
-         'id' => 1091,
-         'data' => 'userdel	1::inwork 10138,20840 10119,20731 10063,20493
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1089,6 +1080,26 @@ push @temp_blocking,
          'data' => 'userdel	q4::inwork -18577,24383 -19282,23081
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_006856',
+         'until' => 1192399200,
+         'text' => 'Pichelsdorfer Str. (Wilhelmstadt) in beiden Richtungen zwischen Weißenburger Str. und Wilhelmstr. Veranstaltung, Straße vollständig gesperrt (bis 14.10.2007 nachts)',
+         'from' => 1192310001,
+         'id' => 1205,
+         'data' => 'userdel	2::temp -3629,12781 -3641,12861 -3650,12929 -3669,13015 -3764,13270 -3791,13357
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006852',
+         'until' => 1192402800,
+         'text' => 'Residenzstr. (Reinikendorf) in beiden Richtungen zwischen Emmentaler Str. und Franz-Neumann-Platz Veranstaltung, Straße vollständig gesperrt (bis 15.10. - 01 Uhr)',
+         'from' => 1192310039,
+         'id' => 1206,
+         'data' => 'userdel	2::temp 7350,18262 7466,17904 7487,17836 7500,17796 7587,17532
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DBase.pm,v 1.13 2007/10/13 17:39:36 eserte Exp $
+# $Id: DBase.pm,v 1.14 2007/10/13 21:23:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2002,2004,2005 Slaven Rezic. All rights reserved.
@@ -152,6 +152,7 @@ sub _get_all_sth {
 
     require File::Basename;
     require DBI;
+    $DBI::errstr = $DBI::errstr if 0; # cease -w
 
     my($name, $dir) = File::Basename::fileparse($self->File, '\..*');
     my $dbh = DBI->connect("DBI:XBase:$dir") or die $DBI::errstr;

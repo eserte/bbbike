@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: UAProf.pm,v 1.5 2005/07/17 21:31:44 eserte Exp $
+# $Id: UAProf.pm,v 1.6 2007/10/14 20:30:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BrowserInfo::UAProf;
 
 use strict;
 use vars qw($VERSION $DEBUG);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($class, %args) = @_;
