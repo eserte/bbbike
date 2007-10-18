@@ -441,15 +441,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1192485600,
-         'text' => 'B 005 Treplin-Petershagen OD Petershagen, zw. KVK und Ortsausgang Kanal- und Straßenbau Vollsperrung 18.06.2007-15.10.2007 ',
-         'from' => 1182031200,
-         'id' => 1025,
-         'data' => 'userdel	q4::inwork 74246,584 74683,385
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -648,8 +640,8 @@ push @temp_blocking,
        undef,
        {
          'source_id' => 'IM_006274',
-         'until' => 1193435999,
-         'text' => 'Gitschiner Str. (Kreuzberg) in Richtung Kottbusser Tor zwischen Lobeckstr. und Prinzenstr. wegen einer geplatzten Wasserleitung bis Mitte Oktober 2007 gesperrt, Radfahrer können auf dem Gehweg passieren',
+         'until' => 1193957999,
+         'text' => 'Gitschiner Str. (Kreuzberg) in Richtung Kottbusser Tor zwischen Lobeckstr. und Prinzenstr. wegen einer geplatzten Wasserleitung bis Anfang November 2007 gesperrt, Radfahrer können auf dem Gehweg passieren',
          'from' => undef,
          'id' => 1122,
          'data' => 'userdel	q4::inwork; 10340,10301 10605,10312
@@ -689,15 +681,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1192485600,
-         'text' => 'L 073 Beelitzer Str. OD Luckenwalde, zw. B101 und Neue Beelitzer Str. Straßenausbau Vollsperrung 18.07.2007-15.10.2007 ',
-         'from' => 1184623200,
-         'id' => 1140,
-         'data' => 'userdel	q4::inwork -4299,-35198 -4725,-34957
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -809,15 +793,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1192658400,
-         'text' => 'L 020 Velten-Borgsdorf zw. OL Pinnow, Havelweg und Berliner Ch., Borgsdorf Grundhafter Straßenbau Vollsperrung 26.08.2007-17.10.2007 ',
-         'from' => 1187992800,
-         'id' => 1170,
-         'data' => 'userdel	2::inwork -579,33145 -409,33522
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_006691',
@@ -829,15 +805,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1192658400,
-         'text' => 'B 101 Herzberg-Jüterbog zw. Welsickendorf und Landesgrenze Deckeneinbau Vollsperrung 16.10.2007-17.10.2007 ',
-         'from' => 1192399200,
-         'id' => 1173,
-         'data' => 'userdel	2::inwork -5503,-62012 -6079,-56811
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1193871600,
          'text' => 'L 073 Beelitzer Str. OL Luckenwalde, zw. Puschkinstr. u. Woltersdorfer Str. Straßenausbau Vollsperrung 24.09.2007-31.10.2007 ',
@@ -1027,15 +995,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1192399200,
-         'text' => 'B 096 Brücke zw. Großräschen und Freienhufen Brückenabbruch Vollsperrung 13.10.2007-14.10.2007 ',
-         'from' => 1192140000,
-         'id' => 1199,
-         'data' => 'userdel	2::inwork 50965,-90836 52580,-90602
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1193263200,
          'text' => 'B 109 August-Bebel-Str. OD Templin, zw. Jahnstr. und Krz. Prenzlauer Allee Kanalarbeiten Vollsperrung 15.10.2007-24.10.2007 ',
@@ -1063,15 +1023,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1192572000,
-         'text' => 'L 037 zw. Schernsdorf und Müllrose Straßensanierungsarbeiten Vollsperrung 15.10.2007-16.10.2007 ',
-         'from' => 1192312800,
-         'id' => 1203,
-         'data' => 'userdel	2::inwork 80237,-17646 80679,-17994 82000,-19505
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1194562800,
          'text' => 'L 161 B 5 Bredow - Paaren Kreisverkehr westl. AS Falkensee in Ri. Paaren Straaßenbau, Umbau KVK Vollsperrung 16.10.2007-08.11.2007 ',
@@ -1081,25 +1033,91 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
+       undef,
+       undef,
        {
-         'source_id' => 'IM_006856',
-         'until' => 1192399200,
-         'text' => 'Pichelsdorfer Str. (Wilhelmstadt) in beiden Richtungen zwischen Weißenburger Str. und Wilhelmstr. Veranstaltung, Straße vollständig gesperrt (bis 14.10.2007 nachts)',
-         'from' => 1192310001,
-         'id' => 1205,
-         'data' => 'userdel	2::temp -3629,12781 -3641,12861 -3650,12929 -3669,13015 -3764,13270 -3791,13357
+         'source_id' => 'IM_006886',
+         'until' => 1192831200,
+         'text' => 'Erkstr. (Neukölln) in beiden Richtungen bei Karl-Marx-Str. Baustelle, Straße vollständig gesperrt (bis 19.10.2007)',
+         'from' => 1192489272,
+         'id' => 1207,
+         'data' => 'userdel	2::inwork 12598,8390 12771,8439
 ',
          'type' => 'gesperrt'
        },
        {
-         'source_id' => 'IM_006852',
-         'until' => 1192402800,
-         'text' => 'Residenzstr. (Reinikendorf) in beiden Richtungen zwischen Emmentaler Str. und Franz-Neumann-Platz Veranstaltung, Straße vollständig gesperrt (bis 15.10. - 01 Uhr)',
-         'from' => 1192310039,
-         'id' => 1206,
-         'data' => 'userdel	2::temp 7350,18262 7466,17904 7487,17836 7500,17796 7587,17532
+         'source_id' => 'IM_006875',
+         'until' => 1192744800,
+         'text' => 'Rauchstr. (Hakenfelde) in beiden Richtungen auf der Wasserstadtbrücke Baustelle, Brücke vollständig gesperrt (bis 18.10.2007)',
+         'from' => 1192489295,
+         'id' => 1208,
+         'data' => 'userdel	2::inwork -2069,16907 -1863,16868
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006873',
+         'until' => 1192831200,
+         'text' => 'Suermondtstr. (Hohenschönhausen) Richtung Hauptstr. zwischen Augustastr. und Sabinensteig Baustelle, Fahrtrichtung gesperrt (bis 19.10.2007)',
+         'from' => 1192489357,
+         'id' => 1209,
+         'data' => 'userdel	1::inwork 15918,16383 16515,16207
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1193436000,
+         'text' => 'B 005 Treplin-Petershagen OD Petershagen, zw. KVK und Ortsausgang Kanal- und Straßenbau Vollsperrung 18.06.2007-26.10.2007 ',
+         'from' => 1182031200,
+         'id' => 1210,
+         'data' => 'userdel	q4::inwork 74246,584 74683,385
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1193608800,
+         'text' => 'B 096 Baruth-Wünsdorf Brücke über das Mühlenfließ in der OD Neuhof Brückenbauarbeiten Vollsperrung 24.10.2007-28.10.2007 ',
+         'from' => 1193090400,
+         'id' => 1211,
+         'data' => 'userdel	2::inwork 16407,-29400 16434,-29189
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1194908400,
+         'text' => 'B 096 Hauptstr., Zossener Str. OD Baruth Einbau Deckschicht Vollsperrung 10.11.2007-12.11.2007 ',
+         'from' => 1194562800,
+         'id' => 1212,
+         'data' => 'userdel	q4::inwork 18272,-39512 18433,-38781
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1192917600,
+         'text' => 'L 068 Drasdo-Oelsig zw. Oelsig und Abzw. Dübrichen Dünnschichtbelag aufbringen Vollsperrung 20.10.2007-20.10.2007 ',
+         'from' => 1192744800,
+         'id' => 1213,
+         'data' => 'userdel	2::inwork 10229,-82398 10315,-83509 10187,-84995
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1192831200,
+         'text' => 'L 072 Kolochau-Wildenau zw. Kolochau und Jeßnick Dünnschichtbelag aufbringen Vollsperrung 19.10.2007-19.10.2007 ',
+         'from' => 1192658400,
+         'id' => 1214,
+         'data' => 'userdel	2::inwork 4483,-73538 5356,-74776 5988,-75608
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1230764400,
+         'text' => 'L 232 Möllensee-Lichtenow OD Kagel Straßenbauarbeiten Vollsperrung 22.10.2007-31.12.2008 ',
+         'from' => 1192917600,
+         'id' => 1215,
+         'data' => 'userdel	q4::inwork 44634,7400 44774,6962 44914,6791 44912,6613 44835,6310
+',
+         'type' => 'handicap'
        }
      
 );

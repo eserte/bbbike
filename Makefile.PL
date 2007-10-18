@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.139 2007/09/20 22:49:20 eserte Exp $
+# $Id: Makefile.PL,v 1.140 2007/10/18 21:18:00 eserte Exp $
 
 use 5.005;
 
@@ -543,7 +543,18 @@ EOF
 	$INSTALL_PREFIX = "/usr";
 	$BBBIKE_DEST_DIR = "/usr/local/BBBike";
     } elsif ($^O eq 'MSWin32') {
-	die "No support for MSWin32 yet";
+	warn <<EOF;
+No installation support for MSWin32 yet. Please follow the instructions in
+the README file or just start the application using
+
+    perl bbbike
+
+or just
+
+    bbbike
+
+EOF
+	return;
     } else {
 	print STDERR "Choosing /usr layout (/usr/BBBike, executable in /usr/bin)...\n";
 	$INSTALL_PREFIX = "/usr";

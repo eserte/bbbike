@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.103 2007/10/13 16:34:23 eserte Exp $
+# $Id: Makefile,v 1.104 2007/10/15 23:08:32 eserte Exp $
 #
 
 # Targets:
@@ -479,11 +479,13 @@ prepare-bbbike-dist-data-datadir-additional:
 	    ${CURDIR}/BBBike/data/
 
 # Most of temp_blockings is not yet in MANIFEST, so copy is necessary
-# Exception: bbbike-temp-blockings-optimized.pl, maybe others to follow
+# bbbike-temp-blockings-optimized.pl *is* in MANIFEST, but is also
+# needed in deploy-temp-blockings rule, which does not use the normal
+# MANIFEST copy.
 prepare-bbbike-dist-data-temp-blockings-dir:
 	[ -d ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR} ] || \
 	    mkdir -p ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR}
-	find ${BBBIKE_ROOT_DIR}/${TEMP_BLOCKINGS_DIR}/ -maxdepth 1 -type f ! -name "*~" -a ! -name "*.st" -a ! -name "*.core" -a ! -name "#*#" -a ! -name bbbike-temp-blockings-optimized.pl | ${XARGS_REPL} cp -pf % ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR}/
+	find ${BBBIKE_ROOT_DIR}/${TEMP_BLOCKINGS_DIR}/ -maxdepth 1 -type f ! -name "*~" -a ! -name "*.st" -a ! -name "*.core" -a ! -name "#*#" | ${XARGS_REPL} cp -pf % ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR}/
 
 # Teasers for bbbike.cgi
 prepare-bbbike-dist-data-teasers:
