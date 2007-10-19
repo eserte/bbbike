@@ -1,15 +1,15 @@
 # -*- perl -*-
 
 #
-# $Id: FlatCheckbox.pm,v 1.11 2004/10/02 08:49:21 eserte Exp $
+# $Id: FlatCheckbox.pm,v 1.1 2007/10/13 21:35:31 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2001,2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2001,2002,2007 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: srezic@cpan.org
+# WWW:  http://www.rezic.de/eserte/
 #
 
 # XXX borderwidth ist krampfig ... check it
@@ -22,7 +22,7 @@ use vars qw($VERSION @ISA);
 @ISA = qw(Tk::Derived Tk::Canvas);
 Construct Tk::Widget 'FlatCheckbox';
 
-$VERSION = '0.06';
+$VERSION = '0.07';
 
 my %trace;
 my %trace_rev;

@@ -1,14 +1,14 @@
 # -*- perl -*-
 
 #
-# $Id: FlatRadiobutton.pm,v 1.4 2004/10/02 08:49:27 eserte Exp $
+# $Id: FlatRadiobutton.pm,v 1.1 2007/10/13 21:36:16 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2007 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
+# Mail: srezic@cpan.org
 # WWW:  http://www.rezic.de/eserte/
 #
 
@@ -20,7 +20,7 @@ use strict;
 use vars qw($VERSION @ISA);
 Construct Tk::Widget 'FlatRadiobutton';
 
-$VERSION = '0.05';
+$VERSION = '0.06';
 
 sub Populate {
     my($w,$args) = @_;

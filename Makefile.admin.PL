@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.65 2007/09/19 06:22:09 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.66 2007/10/19 20:39:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -115,6 +115,7 @@ my(@bundled_perl_module_dists) =
        Tk-SREZIC Tk-CanvasBalloon Tk-CanvasUtil Tk-LogScale
        Tk-ColorFlowChooser Tk-LayerEditor Tk-Placement
        Tk-StippleLine Tk-WidgetDump Win32Util WWWBrowser
+       Tk-FlatCheckbox
       );
 my $EXTMODCPANTOP = "$ENV{HOME}/src/CPAN";
 if (!-e $EXTMODCPANTOP) {

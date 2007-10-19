@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ProgressSplash.pm,v 1.9 2005/12/21 22:24:11 eserte Exp $
+# $Id: ProgressSplash.pm,v 1.10 2007/10/14 19:14:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package Tk::ProgressSplash;
 #use strict;use vars qw($TK_VERSION $VERSION $firstupdatetime $lastcallindex);
-$VERSION = 0.03;
+$VERSION = 0.04;
 $TK_VERSION = 800 if !defined $TK_VERSION;
 
 sub Show {
