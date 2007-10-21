@@ -1524,7 +1524,7 @@ EOF
        text  => 'Ringstr. (Steglitz) Richtung Finkensteinallee zwischen Drakestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 12.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 3507,3635 3375,3544 3234,3447 3184,3413 3050,3316 3021,3295 2781,3122 2701,3064 2639,2989 2638,2843
+userdel	q4; 3507,3635 3375,3544 3228,3455 3184,3427 3050,3333 3011,3303 2781,3122 2701,3064 2639,2989 2638,2843
 EOF
      },
      { from  => 1110917391, # 2005-03-15 21:09
@@ -10251,6 +10251,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 44634,7400 44774,6962 44914,6791 44912,6613 44835,6310
+EOF
+     },
+     { from  => 1192917600, # 2007-10-21 00:00
+       until => 1194130800, # 2007-11-04 00:00
+       text  => 'B 112 Beeskower Str. OD Eisenhüttenstadt, zw. F.-Heckert-Str. und K.-Marx-Str. Straßenbauarbeiten Vollsperrung 22.10.2007-03.11.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 94796,-26727 95218,-26861
 EOF
      },
     );

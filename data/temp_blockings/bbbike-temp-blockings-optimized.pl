@@ -884,15 +884,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1192917600,
-         'text' => 'L 095 abschnittsweise zw. Belzig und Görzke Straßenbauarbeiten Vollsperrung 15.10.2007-20.10.2007 ',
-         'from' => 1192312800,
-         'id' => 1187,
-         'data' => 'userdel	2::inwork -50335,-28686 -51740,-27889 -52270,-27702 -52679,-27853 -53505,-27647
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1198191600,
          'text' => 'L 141 Havelberger Str. OD Breddin Kanal- u. Straßenbauarbeiten Vollsperrung 04.10.2007-20.12.2007 ',
@@ -976,15 +968,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1192917600,
-         'text' => 'L 402 Schulzendorf-Dahlewitz zw. Abzw. Waltersdorf und Dahlewitz Fahrbahninstandsetzung Vollsperrung 13.10.2007-20.10.2007 ',
-         'from' => 1192140000,
-         'id' => 1197,
-         'data' => 'userdel	2::inwork 17910,-6981 17480,-7498 17278,-7925 16437,-8257
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_006754',
          'until' => 1196463599,
@@ -1035,36 +1019,9 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_006886',
-         'until' => 1192831200,
-         'text' => 'Erkstr. (Neukölln) in beiden Richtungen bei Karl-Marx-Str. Baustelle, Straße vollständig gesperrt (bis 19.10.2007)',
-         'from' => 1192489272,
-         'id' => 1207,
-         'data' => 'userdel	2::inwork 12598,8390 12771,8439
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_006875',
-         'until' => 1192744800,
-         'text' => 'Rauchstr. (Hakenfelde) in beiden Richtungen auf der Wasserstadtbrücke Baustelle, Brücke vollständig gesperrt (bis 18.10.2007)',
-         'from' => 1192489295,
-         'id' => 1208,
-         'data' => 'userdel	2::inwork -2069,16907 -1863,16868
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_006873',
-         'until' => 1192831200,
-         'text' => 'Suermondtstr. (Hohenschönhausen) Richtung Hauptstr. zwischen Augustastr. und Sabinensteig Baustelle, Fahrtrichtung gesperrt (bis 19.10.2007)',
-         'from' => 1192489357,
-         'id' => 1209,
-         'data' => 'userdel	1::inwork 15918,16383 16515,16207
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
        {
          'until' => 1193436000,
          'text' => 'B 005 Treplin-Petershagen OD Petershagen, zw. KVK und Ortsausgang Kanal- und Straßenbau Vollsperrung 18.06.2007-26.10.2007 ',
@@ -1092,30 +1049,23 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1192917600,
-         'text' => 'L 068 Drasdo-Oelsig zw. Oelsig und Abzw. Dübrichen Dünnschichtbelag aufbringen Vollsperrung 20.10.2007-20.10.2007 ',
-         'from' => 1192744800,
-         'id' => 1213,
-         'data' => 'userdel	2::inwork 10229,-82398 10315,-83509 10187,-84995
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1192831200,
-         'text' => 'L 072 Kolochau-Wildenau zw. Kolochau und Jeßnick Dünnschichtbelag aufbringen Vollsperrung 19.10.2007-19.10.2007 ',
-         'from' => 1192658400,
-         'id' => 1214,
-         'data' => 'userdel	2::inwork 4483,-73538 5356,-74776 5988,-75608
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1230764400,
          'text' => 'L 232 Möllensee-Lichtenow OD Kagel Straßenbauarbeiten Vollsperrung 22.10.2007-31.12.2008 ',
          'from' => 1192917600,
          'id' => 1215,
          'data' => 'userdel	q4::inwork 44634,7400 44774,6962 44914,6791 44912,6613 44835,6310
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1194130800,
+         'text' => 'B 112 Beeskower Str. OD Eisenhüttenstadt, zw. F.-Heckert-Str. und K.-Marx-Str. Straßenbauarbeiten Vollsperrung 22.10.2007-03.11.2007 ',
+         'from' => 1192917600,
+         'id' => 1216,
+         'data' => 'userdel	q4::inwork 94796,-26727 95218,-26861
 ',
          'type' => 'handicap'
        }
