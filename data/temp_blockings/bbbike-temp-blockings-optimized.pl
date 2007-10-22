@@ -584,8 +584,8 @@ push @temp_blocking,
        undef,
        {
          'source_id' => 'IM_006204',
-         'until' => 1193871599,
-         'text' => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Fahrbahnabsenkung, Straße vollständig gesperrt (bis Ende 10.2007)',
+         'until' => 1193957999,
+         'text' => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Fahrbahnabsenkung, Straße vollständig gesperrt (bis 11.2007)',
          'from' => 1191018605,
          'id' => 1099,
          'data' => 'userdel	2::inwork 9341,5612 9147,5534
@@ -795,16 +795,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_006691',
-         'until' => 1193698799,
-         'text' => 'Lückstraße (Lichtenberg) Richtung Ostkreuz ab Weitlingstraße Baustelle, Fahrtrichtung gesperrt (bis 29.10.)',
-         'from' => 1190237300,
-         'id' => 1172,
-         'data' => 'userdel	1::inwork 16460,10699 16316,10755 16153,10818 16032,10842
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1193871600,
@@ -998,15 +989,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1193004000,
-         'text' => 'L 037 zw. OL Dubrow und OU Müllrose Straßensanierungsarbeiten Vollsperrung 15.10.2007-21.10.2007 ',
-         'from' => 1192312800,
-         'id' => 1202,
-         'data' => 'userdel	2::inwork 78364,-14355 78029,-13837 77866,-13279
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1194562800,
@@ -1066,6 +1049,15 @@ push @temp_blocking,
          'from' => 1192917600,
          'id' => 1216,
          'data' => 'userdel	q4::inwork 94796,-26727 95218,-26861
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1196463600,
+         'text' => 'L 037 Eisenhüttenstadt-Müllrose Durchlass in der OD Pohlitz Ersatzneubau Vollsperrung 29.10.2007-30.11.2007 ',
+         'from' => 1193526000,
+         'id' => 1217,
+         'data' => 'userdel	q4::inwork 90982,-23216 91107,-23410
 ',
          'type' => 'handicap'
        }

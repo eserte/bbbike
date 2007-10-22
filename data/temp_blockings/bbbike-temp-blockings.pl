@@ -9267,8 +9267,8 @@ userdel	2::inwork 20012,3532 20082,3578
 EOF
      },
      { from  => 1191018605, # 2007-09-29 00:30
-       until => 1193871599, # 2007-10-31 23:59
-       text  => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Fahrbahnabsenkung, Straße vollständig gesperrt (bis Ende 10.2007)',
+       until => Time::Local::timelocal(reverse(2007-1900,11-1,1,23,59,59)),
+       text  => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Fahrbahnabsenkung, Straße vollständig gesperrt (bis 11.2007)',
        type  => 'gesperrt',
        source_id => 'IM_006204',
        data  => <<EOF,
@@ -9880,7 +9880,7 @@ userdel	2::inwork 9208,11872 9201,11968
 EOF
      },
      { from  => 1190237300, # 2007-09-19 23:28
-       until => 1193698799, # 2007-10-29 23:59
+       until => 1193090292, # 2007-10-29 23:59 1193698799
        text  => 'Lückstraße (Lichtenberg) Richtung Ostkreuz ab Weitlingstraße Baustelle, Fahrtrichtung gesperrt (bis 29.10.)',
        type  => 'gesperrt',
        source_id => 'IM_006691',
@@ -10259,6 +10259,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 94796,-26727 95218,-26861
+EOF
+     },
+     { from  => 1193526000, # 2007-10-28 01:00
+       until => 1196463600, # 2007-12-01 00:00
+       text  => 'L 037 Eisenhüttenstadt-Müllrose Durchlass in der OD Pohlitz Ersatzneubau Vollsperrung 29.10.2007-30.11.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 90982,-23216 91107,-23410
 EOF
      },
     );
