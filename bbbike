@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.328 2007/10/14 20:27:05 eserte Exp $
+# $Id: bbbike,v 3.329 2007/10/24 21:59:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -18,6 +18,8 @@ package main;
 ## Additional files for perl2exe.
 ## NOTE: This list is not maintained anymore.
 #perl2exe_include Tk/Checkbutton.pm
+
+eval q{ use open ':locale' }; if ($] >= 5.008 && $@) { warn $@ }
 
 BEGIN { $Devel::Trace::TRACE = 0 }
 
@@ -210,7 +212,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.328 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.329 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -231,7 +233,7 @@ require TkChange;
 
 # compatibility includes
 if ($Tk::VERSION < 800) {
-    warn Mfmt("Die Tk-Version ist veraltet (%s). Möglicherweise ist
+    print STDERR Mfmt("Die Tk-Version ist veraltet (%s). Möglicherweise ist
 BBBike trotzdem benutzbar. Empfohlen wird ein Upgrade auf Version 800.024 oder
 besser.\n", $Tk::VERSION);
 }
@@ -282,13 +284,13 @@ if (! -d $tmpdir || ! -w $tmpdir) {
 	}
 	if (-d $fallback && -w $fallback) {
 	    $tmpdir = $fallback;
-	    warn Mfmt("Verwende Verzeichnis '%s' als temporäres Verzeichnis.", $tmpdir);
+	    print STDERR Mfmt("Verwende Verzeichnis '%s' als temporäres Verzeichnis.", $tmpdir) . "\n";
 	    last;
 	}
     }
     if (!$tmpdir) {
 	$tmpdir = "/tmp";
-	warn M("Achtung: es konnte kein schreibbares temporäres Verzeichnis gefunden werden. Unter Umständen sind einige Operationen nicht möglich.");
+	print STDERR M("Achtung: es konnte kein schreibbares temporäres Verzeichnis gefunden werden. Unter Umständen sind einige Operationen nicht möglich.") . "\n";
     }
 }
 
@@ -697,7 +699,7 @@ if ($bikepwr) {
  	$bikepwr = 0;
     } else {
 	if ($verbose && $BikePower::has_xs) {
-	    warn M"Verwende die XS version von BikePower\n";
+	    print STDERR M"Verwende die XS version von BikePower\n";
 	}
  	$bp_obj = new BikePower;
 	$bp_obj->given('P');
@@ -725,9 +727,9 @@ TRY_SPEED_POWER_REFERENCE_STRING: {
 		}
 		$i++;
 	    }
-	    warn "Referenzgeschwidigkeit/-leistung $type $val wird ignoriert";
+	    print STDERR "Referenzgeschwidigkeit/-leistung $type $val wird ignoriert\n";
 	} else {
-	    warn "Die Option -reference sollte im Format type:value sein, wobei type entweder speed oder power ist und value die entsprechende Geschwindigkeit in km/h oder Leistung in W";
+	    print STDERR "Die Option -reference sollte im Format type:value sein, wobei type entweder speed oder power ist und value die entsprechende Geschwindigkeit in km/h oder Leistung in W\n";
 	}
     }
 }
@@ -970,7 +972,7 @@ if (@want_extends) {
 	($want_extends[GEOMETRY_HEIGHT] < 20 && $want_extends[GEOMETRY_HEIGHT] !~ /^-/) ||
 	$want_extends[GEOMETRY_X] < 0 ||
 	$want_extends[GEOMETRY_Y] < 0) {
-	warn M("Die Fenstergröße wird wegen ungültiger Werte nicht gesetzt: ")
+	print STDERR M("Die Fenstergröße wird wegen ungültiger Werte nicht gesetzt: ")
 	    . join(", ", @want_extends), "\n";
     } else {
 	geometry($top, @want_extends);
@@ -994,7 +996,7 @@ if (defined $init_scale_massstab) {
 	    $_ *= $change_scale_factor;
 	}
     } else {
-	warn "Ungültiger Skalierungswert <$init_scale_massstab> wird ignoriert\n";
+	print STDERR "Ungültiger Skalierungswert <$init_scale_massstab> wird ignoriert\n";
     }
 }
 
@@ -1074,7 +1076,7 @@ if (defined $font_family && $font_family =~ /nimbus/) {
     $rot_font_sub = sub { '-b&h-Luxi Sans-medium-r-normal--0-' . $_[0] . '-0-0-p-0-iso8859-1'};
 }
 if (defined $rot_font_sub && !check_font($rot_font_sub->(120))) {
-    warn "Cannot get normal font in $font_family, use fallback...\n";
+    print STDERR "Der Normalzeichensatz in <$font_family> kann nicht gefunden werden, der Fallback wird verwendet...\n";
     undef $rot_font_sub;
 }
 # Fallback to helvetica
@@ -1091,7 +1093,7 @@ if (defined $font_family && $font_family =~ /nimbus/) {
     $rot_bold_font_sub = sub { '-b&h-Luxi Sans-bold-r-normal--0-' . $_[0] . '-0-0-p-0-iso8859-1'};
 }
 if (defined $rot_bold_font_sub && !check_font($rot_bold_font_sub->(120))) {
-    warn "Cannot get bold font in $font_family, use fallback...\n";
+    print STDERR "Der Fettschriftzeichensatz in <$font_family> kann nicht gefunden werden, der Fallback wird verwendet...\n";
     undef $rot_bold_font_sub;
 }
 # Fallback to helvetica bold
@@ -4024,7 +4026,7 @@ if ($c->can('DropSite')) {
 			  [($Tk::VERSION >= 804 ? () : 'KDE'), 'XDND', 'Sun']
 			 )
 	  );
-	warn M("Datei-DND wird akzeptiert") . "\n" if $verbose;
+	print STDERR M("Datei-DND wird akzeptiert") . "\n" if $verbose;
     };
     warn __LINE__ . ": $@" if $@ && $verbose;
 }
@@ -7275,7 +7277,7 @@ sub set_datadir {
 	$datadir = $Strassen::datadirs[0];
     }
     if ($verbose) {
-	warn Mfmt("Aktuelles Datenverzeichnis ist %s\n", $datadir);
+	print STDERR Mfmt("Aktuelles Datenverzeichnis ist %s\n", $datadir);
     }
 }
 
@@ -9049,14 +9051,14 @@ sub plotstr {
 	my($new_str, $todelref);
 	($new_str, $todelref, $indexmap) = $str->diff_orig(-clonefile => 1);
 	if (!defined $new_str) {
-	    warn M("Diff-Ausgabe wird nicht verwendet"), "\n" if $verbose;
+	    print STDERR M("Diff-Ausgabe wird nicht verwendet"), "\n" if $verbose;
 	    $c->delete($abk);		# evtl. alte Koordinaten löschen
 	    $c->delete("pp-$abk");
 	} else {
 	    if ($verbose) {
-		warn M("Diff-Ausgabe wird verwendet"), "\n";
-		warn Mfmt("Anzahl der neu zu zeichnenden Straßen: %d", scalar @{$new_str->data}), "\n";
-		warn Mfmt("Anzahl der zu löschenden Straßen: %d", scalar @$todelref), "\n";
+		print STDERR M("Diff-Ausgabe wird verwendet"), "\n";
+		print STDERR Mfmt("Anzahl der neu zu zeichnenden Straßen: %d", scalar @{$new_str->data}), "\n";
+		print STDERR Mfmt("Anzahl der zu löschenden Straßen: %d", scalar @$todelref), "\n";
 	    }
 	    for my $id (@$todelref) {
 		for my $strdeladd ("", "-label") {
@@ -9432,14 +9434,14 @@ sub plot_sperre {
 	    my($new_str, $todelref);
 	    ($new_str, $todelref, $indexmap) = $str->diff_orig(-clonefile => 1);
 	    if (!defined $new_str) {
-		warn M("Diff-Ausgabe wird nicht verwendet") if $verbose;
+		print STDERR M("Diff-Ausgabe wird nicht verwendet") if $verbose;
 		$c->delete($abk);		# evtl. alte Koordinaten löschen
 		$c->delete("pp-$abk");
 	    } else {
 		if ($verbose) {
-		    warn M("Diff-Ausgabe wird verwendet"), "\n";
-		    warn Mfmt("Anzahl der neu zu zeichnenden Objekte: %d", scalar @{$new_str->data}), "\n";
-		    warn Mfmt("Anzahl der zu löschenden Objekte: %d", scalar @$todelref), "\n";
+		    print STDERR M("Diff-Ausgabe wird verwendet"), "\n";
+		    print STDERR Mfmt("Anzahl der neu zu zeichnenden Objekte: %d", scalar @{$new_str->data}), "\n";
+		    print STDERR Mfmt("Anzahl der zu löschenden Objekte: %d", scalar @$todelref), "\n";
 		}
 		foreach (@$todelref) {
 		    $c->delete("$abk-$_");
@@ -9759,9 +9761,9 @@ sub activate_temp_blockings {
 	if (!@s) {
 	    if ($verbose) {
 		if (defined $args{-now}) {
-		    warn "Keine temporären Sperrungen am " . scalar(localtime($now)) . "\n";
+		    print STDERR "Keine temporären Sperrungen am " . scalar(localtime($now)) . "\n";
 		} else {
-		    warn "Keine aktiven temporären Sperrungen\n";
+		    print STDERR "Keine aktiven temporären Sperrungen\n";
 		}
 	    }
 	    return;
@@ -9769,7 +9771,7 @@ sub activate_temp_blockings {
 	my $ms = MultiStrassen->new(@s);
 	push @{ $ms->{DependentFiles} }, $file;
 	$current_temp_blockings_ms = $ms;
-	warn "Aktive temporäre Sperrungen: " . join(", ", $ms->dependent_files) . "\n" if $verbose;
+	print STDERR "Aktive temporäre Sperrungen: " . join(", ", $ms->dependent_files) . "\n" if $verbose;
 	make_net() if !$net;
 	add_temp_blockings_to_net($ms);
 	plot("p", "temp_sperre", -object => $ms, -draw => 1);
@@ -10202,13 +10204,13 @@ sub plot_point {
 	    my($new_str, $todelref);
 	    ($new_str, $todelref, $indexmap) = $bhf->diff_orig(-clonefile => 1);
 	    if (!defined $new_str) {
-		warn M("Diff-Ausgabe wird nicht verwendet") if $verbose;
+		print STDERR M("Diff-Ausgabe wird nicht verwendet") if $verbose;
 		$c->delete($_) for (@del_tags);
 	    } else {
 		if ($verbose) {
-		    warn M("Diff-Ausgabe wird verwendet"), "\n";
-		    warn Mfmt("Anzahl der neu zu zeichnenden Punkte: %d", scalar @{$new_str->data}), "\n";
-		    warn Mfmt("Anzahl der zu löschenden Punkte: %d", scalar @$todelref), "\n";
+		    print STDERR M("Diff-Ausgabe wird verwendet"), "\n";
+		    print STDERR Mfmt("Anzahl der neu zu zeichnenden Punkte: %d", scalar @{$new_str->data}), "\n";
+		    print STDERR Mfmt("Anzahl der zu löschenden Punkte: %d", scalar @$todelref), "\n";
 		}
 		foreach my $id (@$todelref) {
 		    for my $ptagadd ("") { # XXX what's necessary of the following?, "-fg", "-bg", "-img", "-label") {
@@ -15404,7 +15406,7 @@ sub search_route {
 	status_message("");
 	# XXX $str_draw{'r'} ueberprfen, wenn im RB-Mode
 	if (!$net and ($str_draw{'s'} || $str_draw{'l'})) { make_net() }
-	warn "Suche von <$start> bis <$ziel>" . (@via ? " via <@via>" : "")
+	print STDERR "Suche von <$start> bis <$ziel>" . (@via ? " via <@via>" : "") . "\n"
 	  if $verbose;
 	my %extra_args;
 	if (keys %ampeln) {
@@ -17144,7 +17146,7 @@ sub search_route_mouse {
 	    # XXX $str_draw{'r'} ueberprfen, wenn im RB-Mode
 	    $net->reset if ($net);
 	} else {
-	    warn M"`Straßennetz neu berechnen' vor Suche anklicken!\n";
+	    print STDERR M"`Straßennetz neu berechnen' vor Suche anklicken!\n";
 	}
 
 	set_cursor('start');
@@ -17492,7 +17494,7 @@ sub status_message {
 		require Carp;
 		Carp::cluck($msg);
 	    } else {
-		warn "$msg\n";
+		print STDERR "$msg\n";
 	    }
 	} else {
 	    $msg =~ s/\n+\z//;
@@ -17527,7 +17529,7 @@ sub status_message {
     } else {
 	# warn or error
 	if (!$top) {
-	    warn "$msg\n";
+	    print STDERR "$msg\n";
 	} else {
 	    my %args = (-title  => ($err eq 'warn' ? 'Warnung' : $err eq 'infodlg' ? 'Info' : 'Fehler'),
 			-text   => $msg,
@@ -18707,7 +18709,7 @@ sub set_fonts {
 		if ($@) {
 		    my $err = $@;
 		    $std_font = "helvetica 10";
-		    warn Mfmt("Fehler beim Definieren des Zeichensatzes:\n" .
+		    print STDERR Mfmt("Fehler beim Definieren des Zeichensatzes:\n" .
 			      "%s\n" .
 			      "Fallback auf den Zeichensatz <%s>.\n",
 			      $err, $std_font) .
@@ -18992,7 +18994,7 @@ sub load_cursor {
     my $base = $lang_def . '_ptr.xbm';
     my $xbm = Tk::findINC($base);
     if (!defined $xbm) {
-	warn Mfmt("Die Datei <%s> existiert nicht.", $base);
+	print STDERR Mfmt("Die Datei <%s> existiert nicht.", $base) . "\n";
     } elsif (-r $xbm) {
 	my $mask = Tk::findINC($lang_def . '_ptr_mask.xbm');
 	if (-r $mask) {
