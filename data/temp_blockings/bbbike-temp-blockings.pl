@@ -9980,8 +9980,8 @@ userdel	2::inwork 24186,26271 24204,25870 24244,25405 24242,25066 24281,24622 24
 EOF
      },
      { from  => 1191103200, # 2007-09-30 00:00
-       until => 1194044400, # 2007-11-03 00:00
-       text  => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 01.10.2007-02.11.2007 ',
+       until => 1195772400, # 2007-11-23 00:00
+       text  => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 01.10.2007-22.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 10115,-8276 11019,-8435
@@ -10079,7 +10079,7 @@ userdel	1::inwork 9220,11781 9234,11683 9268,11590
 EOF
      },
      { from  => 1191967853, # 2007-10-10 00:10
-       until => 1193871599, # 2007-10-31 23:59
+       until => 1193482895, # 2007-10-31 23:59 1193871599
        text  => 'Südostallee (Königsheide) Richtung Sterndamm zwischen Rixdorfer Str. und Sterndamm Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2007)',
        type  => 'gesperrt',
        source_id => 'IM_006820',
@@ -10267,6 +10267,98 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 90982,-23216 91107,-23410
+EOF
+     },
+     { from  => 1193349600, # 2007-10-26 00:00
+       until => 1193608800, # 2007-10-28 23:00
+       text  => 'B 189 Pritzwalk-Wittstock OD Kemnitz, Dorfstr. Deckeneinbau Vollsperrung 27.10.2007-28.10.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -69972,80090 -70343,80256 -70779,80378 -71104,80353
+EOF
+     },
+     { from  => 1193349600, # 2007-10-26 00:00
+       until => 1193698800, # 2007-10-30 00:00
+       text  => 'L 063 Finsterwalder Str. OD Lauchhammer, zw. F.-Mehring-Str. u. Grundhofstr. Straßen-, Durchlassbau, KVP Vollsperrung 27.10.2007-29.10.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 35072,-102150 35032,-101702 34848,-101127
+EOF
+     },
+     { from  => 1193090400, # 2007-10-23 00:00
+       until => 1193871600, # 2007-11-01 00:00
+       text  => 'L 243 Wegguner Str. OL Boitzenburg, zw. Puschkinstr. und Goethestr. Reparatur Rohrleitung Vollsperrung 24.10.2007-31.10.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 22507,95722 22233,95712
+EOF
+     },
+     { from  => 1193526000, # 2007-10-28 01:00
+       until => 1214863200, # 2008-07-01 00:00
+       text  => 'L 793 Alfred-Kühne-Str. Ludwigsfelde, Kreuzung Am Birkengrund/ Ludwigsfelder Str. Bau Kreisverkehr Vollsperrung 29.10.2007-30.06.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 3257,-10374 2629,-10301 2580,-11069
+userdel	q4::inwork 1867,-10228 2629,-10301
+EOF
+     },
+     { from  => 1193482575, # 2007-10-27 12:56
+       until => 1194735600, # 2007-11-11 00:00
+       text  => 'Lahnstr. (Neukölln) in beiden Richtungen zwischen Naumburger Str. und Karl-Marx-Str. Baustelle, Straße vollständig gesperrt (bis 10.11.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_006967',
+       data  => <<EOF,
+userdel	2::inwork 13095,6926 13278,6967
+EOF
+     },
+     { from  => 1193482816, # 2007-10-27 13:00
+       until => 1194649200, # 2007-11-10 00:00
+       text  => 'Mahlsdorfer Str. (Uhlenhorst) Richtung Köpenick zwischen Eitelsdorfer Str. und Gehsener Str. Baustelle, Fahrtrichtung gesperrt (bis 09.11.2007)',
+       type  => 'handicap',
+       source_id => 'IM_006985',
+       data  => <<EOF,
+userdel	q4::inwork; 22967,7252 22785,6984 22758,6944 22745,6657 22724,6608
+EOF
+     },
+     { from  => 1193482855, # 2007-10-27 13:00
+       until => 1194735600, # 2007-11-11 00:00
+       text  => 'Silbersteinstr. (Neukölln) in beiden Richtungen zwischen Walterstr. und Karl-Marx-Str. Baustelle, Straße vollständig gesperrt (bis 10.11.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_006966',
+       data  => <<EOF,
+userdel	2::inwork 12983,6904 13095,6926
+EOF
+     },
+     { from  => 1194044400, # 2007-11-03 00:00
+       until => 1195858800, # 2007-11-24 00:00
+       text  => 'B 112 Beeskower Str. OD Eisenhüttenstadt, zw. F.-Heckert-Str. und K.-Marx-Str. Straßenbauarbeiten Vollsperrung 04.11.2007-23.11.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 94796,-26727 95218,-26861
+EOF
+     },
+     { from  => 1193526000, # 2007-10-28 01:00
+       until => 1194649200, # 2007-11-10 00:00
+       text  => 'L 022 Schönermark-Lindow zw. Schönermark und Keller Deckenerneuerung Vollsperrung 29.10.2007-09.11.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -15344,63638 -14811,64192 -13924,65015 -13695,65213 -13104,65432 -12824,65746 -12440,66011 -12209,66099 -10423,66477
+EOF
+     },
+     { from  => undef, # 
+       until => Time::Local::timelocal(reverse(2010-1900,1-1,1,0,0,0)), #
+       text  => 'Bauarbeiten am Ostkreuz, Verbindungsstraße könnte für die Durchfahrt gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 14802,10505 14836,10524 14843,10621 14882,10732
+EOF
+     },
+     { from  => undef, # 
+       until => Time::Local::timelocal(reverse(2010-1900,1-1,1,0,0,0)), #
+       text  => 'Bauarbeiten am Ostkreuz, Durchfahrt nicht mehr möglich',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 14906,10587 14843,10621 14828,10628
 EOF
      },
     );
