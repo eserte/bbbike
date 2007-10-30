@@ -855,20 +855,12 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1193608800,
-         'text' => 'L 073 Baruth-Stülpe zw. Paplitz und Lynow Deckeninstandsetzung Vollsperrung 08.10.2007-28.10.2007 ',
-         'from' => 1191708000,
-         'id' => 1184,
-         'data' => 'userdel	2::inwork 10970,-39919 11561,-39875 11814,-39896 12751,-39434 13114,-39180 13618,-39476 13914,-39770 15241,-39692
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_006088',
-         'until' => 1193871599,
-         'text' => 'Simon-Bolivar-Str. (Hohenschönhausen) in beiden Richtungen zwischen Konrad-Wolf-Str. und Küstriner Str. Baustelle, Straße vollständig gesperrt (bis Ende 10.2007)',
-         'from' => 1191532874,
+         'until' => 1196463599,
+         'text' => 'Simon-Bolivar-Str. (Hohenschönhausen) in beiden Richtungen zwischen Konrad-Wolf-Str. und Küstriner Str. Baustelle, Straße vollständig gesperrt (bis Ende 11.2007)',
+         'from' => 1193776679,
          'id' => 1185,
          'data' => 'userdel	2::inwork 15763,15003 16025,14753
 ',
@@ -981,15 +973,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1193608800,
-         'text' => 'B 096 Baruth-Wünsdorf Brücke über das Mühlenfließ in der OD Neuhof Brückenbauarbeiten Vollsperrung 24.10.2007-28.10.2007 ',
-         'from' => 1193090400,
-         'id' => 1211,
-         'data' => 'userdel	2::inwork 16407,-29400 16434,-29189
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1194908400,
          'text' => 'B 096 Hauptstr., Zossener Str. OD Baruth Einbau Deckschicht Vollsperrung 10.11.2007-12.11.2007 ',
@@ -1028,24 +1012,8 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1193608800,
-         'text' => 'B 189 Pritzwalk-Wittstock OD Kemnitz, Dorfstr. Deckeneinbau Vollsperrung 27.10.2007-28.10.2007 ',
-         'from' => 1193349600,
-         'id' => 1218,
-         'data' => 'userdel	q4::inwork -69972,80090 -70343,80256 -70779,80378 -71104,80353
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1193698800,
-         'text' => 'L 063 Finsterwalder Str. OD Lauchhammer, zw. F.-Mehring-Str. u. Grundhofstr. Straßen-, Durchlassbau, KVP Vollsperrung 27.10.2007-29.10.2007 ',
-         'from' => 1193349600,
-         'id' => 1219,
-         'data' => 'userdel	q4::inwork 35072,-102150 35032,-101702 34848,-101127
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => 1193871600,
          'text' => 'L 243 Wegguner Str. OL Boitzenburg, zw. Puschkinstr. und Goethestr. Reparatur Rohrleitung Vollsperrung 24.10.2007-31.10.2007 ',
@@ -1130,6 +1098,35 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	2::inwork 14906,10587 14843,10621 14828,10628
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_006788',
+         'until' => 1199141999,
+         'text' => 'Birkenstr. (Tiergarten) beide Richtungen, zwischen Stromstr. und Lübecker Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 12.2007)',
+         'from' => 1193776707,
+         'id' => 1229,
+         'data' => 'userdel	q4::inwork 6227,13938 6365,13879
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_007006',
+         'until' => 1194130800,
+         'text' => 'Zabel-Krüger-Damm (Waidmannslust) Richtung Lübars bei Schonacher Str. Baustelle, Fahrtrichtung gesperrt (bis 03.11.2007)',
+         'from' => 1193776759,
+         'id' => 1230,
+         'data' => 'userdel	1::inwork 4898,22459 5006,22507 5148,22568
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1196463600,
+         'text' => 'L 088 Klaistow-Lehnin OD Emstal Straßenbauarbeiten Vollsperrung 08.11.2007-30.11.2007 ',
+         'from' => 1194390000,
+         'id' => 1231,
+         'data' => 'userdel	q4::inwork -32394,-12207 -32010,-12375 -31776,-12438 -31585,-12330
+',
+         'type' => 'handicap'
        }
      
 );

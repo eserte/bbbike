@@ -9995,9 +9995,9 @@ EOF
 userdel	2::inwork 10970,-39919 11561,-39875 11814,-39896 12751,-39434 13114,-39180 13618,-39476 13914,-39770 15241,-39692
 EOF
      },
-     { from  => 1191532874, # 2007-10-04 23:21
-       until => 1193871599, # 2007-10-31 23:59
-       text  => 'Simon-Bolivar-Str. (Hohenschönhausen) in beiden Richtungen zwischen Konrad-Wolf-Str. und Küstriner Str. Baustelle, Straße vollständig gesperrt (bis Ende 10.2007)',
+     { from  => 1193776679, # 2007-10-30 21:37
+       until => 1196463599, # 2007-11-30 23:59
+       text  => 'Simon-Bolivar-Str. (Hohenschönhausen) in beiden Richtungen zwischen Konrad-Wolf-Str. und Küstriner Str. Baustelle, Straße vollständig gesperrt (bis Ende 11.2007)',
        type  => 'gesperrt',
        source_id => 'IM_006088',
        data  => <<EOF,
@@ -10359,6 +10359,32 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 14906,10587 14843,10621 14828,10628
+EOF
+     },
+     { from  => 1193776707, # 2007-10-30 21:38
+       until => 1199141999, # 2007-12-31 23:59
+       text  => 'Birkenstr. (Tiergarten) beide Richtungen, zwischen Stromstr. und Lübecker Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 12.2007)',
+       type  => 'handicap',
+       source_id => 'IM_006788',
+       data  => <<EOF,
+userdel	q4::inwork 6227,13938 6365,13879
+EOF
+     },
+     { from  => 1193776759, # 2007-10-30 21:39
+       until => 1194130800, # 2007-11-04 00:00
+       text  => 'Zabel-Krüger-Damm (Waidmannslust) Richtung Lübars bei Schonacher Str. Baustelle, Fahrtrichtung gesperrt (bis 03.11.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_007006',
+       data  => <<EOF,
+userdel	1::inwork 4898,22459 5006,22507 5148,22568
+EOF
+     },
+     { from  => 1194390000, # 2007-11-07 00:00
+       until => 1196463600, # 2007-12-01 00:00
+       text  => 'L 088 Klaistow-Lehnin OD Emstal Straßenbauarbeiten Vollsperrung 08.11.2007-30.11.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -32394,-12207 -32010,-12375 -31776,-12438 -31585,-12330
 EOF
      },
     );
