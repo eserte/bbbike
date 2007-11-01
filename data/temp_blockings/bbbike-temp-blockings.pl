@@ -9266,9 +9266,9 @@ EOF
 userdel	2::inwork 20012,3532 20082,3578
 EOF
      },
-     { from  => 1191018605, # 2007-09-29 00:30
-       until => Time::Local::timelocal(reverse(2007-1900,11-1,1,23,59,59)),
-       text  => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Fahrbahnabsenkung, Straße vollständig gesperrt (bis 11.2007)',
+     { from  => 1193957531, # 2007-11-01 23:52
+       until => 1194217200, # 2007-11-05 00:00
+       text  => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Fahrbahnabsenkung, Straße vollständig gesperrt (bis 4.11.2007)',
        type  => 'gesperrt',
        source_id => 'IM_006204',
        data  => <<EOF,
@@ -10312,7 +10312,7 @@ userdel	2::inwork 13095,6926 13278,6967
 EOF
      },
      { from  => 1193482816, # 2007-10-27 13:00
-       until => 1194649200, # 2007-11-10 00:00
+       until => 1193957647, # 2007-11-10 00:00 1194649200
        text  => 'Mahlsdorfer Str. (Uhlenhorst) Richtung Köpenick zwischen Eitelsdorfer Str. und Gehsener Str. Baustelle, Fahrtrichtung gesperrt (bis 09.11.2007)',
        type  => 'handicap',
        source_id => 'IM_006985',
@@ -10385,6 +10385,24 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -32394,-12207 -32010,-12375 -31776,-12438 -31585,-12330
+EOF
+     },
+     { from  => 1193957489, # 2007-11-01 23:51
+       until => 1199141999, # 2007-12-31 23:59
+       text  => 'Askanierring (Spandau) in Richtung Fehrbelliner Tor ab Eckschanze Baustelle, Fahrtrichtung gesperrt (bis Ende 2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_002956',
+       data  => <<EOF,
+userdel	1::inwork -3972,15639 -3985,15770 -3942,15926 -3735,16205 -3631,16224
+EOF
+     },
+     { from  => undef, # 
+       until => 1214863200, # 2008-07-01 00:00
+       text  => 'Holländerstr. (Reinickendorf) Richtung Markstr., zwischen Aroser Allee und Markstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2008) (08:51) ',
+       type  => 'gesperrt',
+       source_id => 'IM_007023',
+       data  => <<EOF,
+userdel	1::inwork 6878,17315 6995,17322 7031,17323 7131,17329 7308,17306 7379,17295 7602,17399
 EOF
      },
     );

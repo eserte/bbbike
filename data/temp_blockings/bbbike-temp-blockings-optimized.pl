@@ -425,15 +425,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1193871600,
-         'text' => 'K 6512 B 96 nördl.Löwenberg-B167 Grieben zw. Abzw. Vielitz und Grieben Straßenbau halbseitig^^^^ 27.08.2007-31.10.2007 ',
-         'from' => 1188079200,
-         'id' => 1017,
-         'data' => 'userdel	q4::inwork -14640,54609 -14619,54872 -14667,54977 -14759,55179 -14847,55938 -14966,56468
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -584,9 +576,9 @@ push @temp_blocking,
        undef,
        {
          'source_id' => 'IM_006204',
-         'until' => 1193957999,
-         'text' => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Fahrbahnabsenkung, Straße vollständig gesperrt (bis 11.2007)',
-         'from' => 1191018605,
+         'until' => 1194217200,
+         'text' => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Fahrbahnabsenkung, Straße vollständig gesperrt (bis 4.11.2007)',
+         'from' => 1193957531,
          'id' => 1099,
          'data' => 'userdel	2::inwork 9341,5612 9147,5534
 ',
@@ -698,16 +690,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_002956',
-         'until' => 1193871599,
-         'text' => 'Askanierring (Spandau) in Richtung Falkenhagener Tor, zwischen Fehrbelliner Tor und Eckschanze Baustelle, Einbahnstraßenregelung das Befahren ist nur in südliche Richtung möglich.(bis Ende 10/2007) ',
-         'from' => 1188588424,
-         'id' => 1149,
-         'data' => 'userdel	1::inwork -3942,15926 -3735,16205 -3631,16224
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -797,24 +780,8 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1193871600,
-         'text' => 'L 073 Beelitzer Str. OL Luckenwalde, zw. Puschkinstr. u. Woltersdorfer Str. Straßenausbau Vollsperrung 24.09.2007-31.10.2007 ',
-         'from' => 1190498400,
-         'id' => 1174,
-         'data' => 'userdel	q4::inwork -4725,-34957 -5019,-34814
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1193871600,
-         'text' => 'L 080 Bahnhofstr. OL Luckenwalde, Einmünd. Beelitzer Str. Straßenausbau Vollsperrung 24.09.2007-31.10.2007 ',
-         'from' => 1190498400,
-         'id' => 1175,
-         'data' => 'userdel	q4::inwork -4725,-34957 -4888,-34952
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => 1199142000,
          'text' => 'K 6947 Wenzlow-Mahlenzien OD Wenzlow Straßenbauarbeiten Vollsperrung 08.10.2007-31.12.2007 ',
@@ -1014,15 +981,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1193871600,
-         'text' => 'L 243 Wegguner Str. OL Boitzenburg, zw. Puschkinstr. und Goethestr. Reparatur Rohrleitung Vollsperrung 24.10.2007-31.10.2007 ',
-         'from' => 1193090400,
-         'id' => 1220,
-         'data' => 'userdel	q4::inwork 22507,95722 22233,95712
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1214863200,
          'text' => 'L 793 Alfred-Kühne-Str. Ludwigsfelde, Kreuzung Am Birkengrund/ Ludwigsfelder Str. Bau Kreisverkehr Vollsperrung 29.10.2007-30.06.2008 ',
@@ -1043,16 +1002,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_006985',
-         'until' => 1194649200,
-         'text' => 'Mahlsdorfer Str. (Uhlenhorst) Richtung Köpenick zwischen Eitelsdorfer Str. und Gehsener Str. Baustelle, Fahrtrichtung gesperrt (bis 09.11.2007)',
-         'from' => 1193482816,
-         'id' => 1223,
-         'data' => 'userdel	q4::inwork; 22967,7252 22785,6984 22758,6944 22745,6657 22724,6608
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_006966',
          'until' => 1194735600,
@@ -1127,6 +1077,26 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork -32394,-12207 -32010,-12375 -31776,-12438 -31585,-12330
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_002956',
+         'until' => 1199141999,
+         'text' => 'Askanierring (Spandau) in Richtung Fehrbelliner Tor ab Eckschanze Baustelle, Fahrtrichtung gesperrt (bis Ende 2007)',
+         'from' => 1193957489,
+         'id' => 1232,
+         'data' => 'userdel	1::inwork -3972,15639 -3985,15770 -3942,15926 -3735,16205 -3631,16224
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_007023',
+         'until' => 1214863200,
+         'text' => 'Holländerstr. (Reinickendorf) Richtung Markstr., zwischen Aroser Allee und Markstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2008) (08:51) ',
+         'from' => undef,
+         'id' => 1233,
+         'data' => 'userdel	1::inwork 6878,17315 6995,17322 7031,17323 7131,17329 7308,17306 7379,17295 7602,17399
+',
+         'type' => 'gesperrt'
        }
      
 );
