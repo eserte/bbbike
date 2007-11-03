@@ -507,15 +507,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1194044400,
-         'text' => 'L 171 Karl-Marx-Str. OD Hohen Neuendorf, Krz. K.-Tucholsky-Str. grundh.Straßenbau, Kreisverk. Vollsperrung 09.07.2007-02.11.2007 ',
-         'from' => 1183845600,
-         'id' => 1066,
-         'data' => 'userdel	q4::inwork 1379,29410 1611,29359
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -630,16 +622,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_006274',
-         'until' => 1193957999,
-         'text' => 'Gitschiner Str. (Kreuzberg) in Richtung Kottbusser Tor zwischen Lobeckstr. und Prinzenstr. wegen einer geplatzten Wasserleitung bis Anfang November 2007 gesperrt, Radfahrer können auf dem Gehweg passieren',
-         'from' => undef,
-         'id' => 1122,
-         'data' => 'userdel	q4::inwork; 10340,10301 10605,10312
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -862,24 +845,8 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1195340400,
-         'text' => 'B 109 Zehdenick-Templin zw. Zehdenick und Hammelspring Straßenbauarbeiten Vollsperrung 08.10.2007-17.11.2007 ',
-         'from' => 1191708000,
-         'id' => 1191,
-         'data' => 'userdel	2::inwork 8656,71489 8031,70019 8031,69636 7879,69487 7215,68252 6538,67236
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1194044400,
-         'text' => 'L 030 Altlandsberg-B158 Seefeld zw. Krummensee und Seefeld Neubau Radweg Vollsperrung 08.10.2007-02.11.2007 ',
-         'from' => 1191708000,
-         'id' => 1192,
-         'data' => 'userdel	2::inwork 29835,21516 29573,21750 29537,21850 28936,23307 28753,23756 28614,23943
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        {
          'source_id' => 'IM_006819',
@@ -1095,6 +1062,24 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'from' => undef,
          'id' => 1233,
          'data' => 'userdel	1::inwork 6878,17315 6995,17322 7031,17323 7131,17329 7308,17306 7379,17295 7602,17399
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1220220000,
+         'text' => 'B 167 OD Alt Ruppin, zw. Brückenstr. und Neumühler Weg Straßen- u. Brückenbauarbeiten Vollsperrung 05.11.2007-31.08.2008 ',
+         'from' => 1194130800,
+         'id' => 1234,
+         'data' => 'userdel	2::inwork -28641,59609 -28866,59954 -29211,60036
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1194735600,
+         'text' => 'L 025 Prenzlau-Schönermark zw. OA Güstow und OE Wilhelmshof Deckenerneuerung Vollsperrung 05.11.2007-10.11.2007 ',
+         'from' => 1194130800,
+         'id' => 1235,
+         'data' => 'userdel	2::inwork 34336,102545 33123,102859 32251,103225
 ',
          'type' => 'gesperrt'
        }

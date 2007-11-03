@@ -10045,8 +10045,8 @@ EOF
 userdel	q4::inwork 14941,42957 15632,43100 15783,43227 16258,43457
 EOF
      },
-     { from  => 1191708000, # 2007-10-07 00:00
-       until => 1195340400, # 2007-11-18 00:00
+     { from  => 1194082880, # 2007-10-07 00:00 1191708000
+       until => 1194082885, # 2007-11-18 00:00 1195340400
        text  => 'B 109 Zehdenick-Templin zw. Zehdenick und Hammelspring Straßenbauarbeiten Vollsperrung 08.10.2007-17.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -10403,6 +10403,22 @@ EOF
        source_id => 'IM_007023',
        data  => <<EOF,
 userdel	1::inwork 6878,17315 6995,17322 7031,17323 7131,17329 7308,17306 7379,17295 7602,17399
+EOF
+     },
+     { from  => 1194130800, # 2007-11-04 00:00
+       until => 1220220000, # 2008-09-01 00:00
+       text  => 'B 167 OD Alt Ruppin, zw. Brückenstr. und Neumühler Weg Straßen- u. Brückenbauarbeiten Vollsperrung 05.11.2007-31.08.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -28641,59609 -28866,59954 -29211,60036
+EOF
+     },
+     { from  => 1194130800, # 2007-11-04 00:00
+       until => 1194735600, # 2007-11-11 00:00
+       text  => 'L 025 Prenzlau-Schönermark zw. OA Güstow und OE Wilhelmshof Deckenerneuerung Vollsperrung 05.11.2007-10.11.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 34336,102545 33123,102859 32251,103225
 EOF
      },
     );
