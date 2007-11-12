@@ -3314,6 +3314,12 @@ Abhängigkeit von HAVE_KDE angeben.
 copy-cvs-to-stick-Makeregel: cache-Verzeichnis sollte nicht auf dem
 Stick existieren
 
+=item * (H1)
+
+Check if it would be feasible to create a BBBike Windows distribution
+using L<Perl::Dist>. Note that the current Perl::Dist (0.0.5) has many
+very serious problems (up to making the current perl unusable!).
+
 =back
 
 =head1 Tests

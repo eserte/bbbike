@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.48 2007/10/13 12:31:04 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.48 2007/10/13 12:31:04 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -228,7 +228,7 @@ for my $browser (@browsers) {
     ######################################################################
     # A street in Potsdam but not in "landstrassen"
 
-    {
+ XXX: {
 
 	$get_agent->();
 
@@ -633,7 +633,7 @@ for my $browser (@browsers) {
     ######################################################################
     # streets in plaetze in Potsdam
 
- XXX: {
+    {
 
 	$get_agent->();
 

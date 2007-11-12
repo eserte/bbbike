@@ -252,15 +252,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1194649200,
-         'text' => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf, Mahlower Str.bis Kreisverkehr grundhafter Straßenausbau Vollsperrung 26.09.2007-09.11.2007 ',
-         'from' => 1190671200,
-         'id' => 904,
-         'data' => 'userdel	2::inwork 7981,-7165 7558,-7093
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -566,16 +558,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_006204',
-         'until' => 1194217200,
-         'text' => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Fahrbahnabsenkung, Straße vollständig gesperrt (bis 4.11.2007)',
-         'from' => 1193957531,
-         'id' => 1099,
-         'data' => 'userdel	2::inwork 9341,5612 9147,5534
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -622,7 +605,16 @@ push @temp_blocking,
        },
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_006274',
+         'until' => 1196463599,
+         'text' => 'Gitschiner Str. (Kreuzberg) in Richtung Kottbusser Tor zwischen Lobeckstr. und Prinzenstr. wegen einer geplatzten Wasserleitung gesperrt, Radfahrer können auf dem Gehweg passieren (bis Ende 11.2007)',
+         'from' => 1194897338,
+         'id' => 1122,
+         'data' => 'userdel	q4::inwork; 10340,10301 10605,10312
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -709,15 +701,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1194562800,
-         'text' => 'L 214 OD Blumenow OD Blumenow Straßenbau+Kanalisationsbau Vollsperrung 10.09.2007-08.11.2007 ',
-         'from' => 1189288800,
-         'id' => 1161,
-         'data' => 'userdel	2::inwork -1406,77488 -1232,77061 -1123,76677
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1198278000,
          'text' => 'B2 zw. Spechthausen u.Eberswalde Brücke Leuenberger Wiesengraben Brückenneubau Vollsperrung, Radfahrer können wahrscheinlich passieren 31.08.2007-21.12.2007 ',
@@ -892,15 +876,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1194562800,
-         'text' => 'L 161 B 5 Bredow - Paaren Kreisverkehr westl. AS Falkensee in Ri. Paaren Straaßenbau, Umbau KVK Vollsperrung 16.10.2007-08.11.2007 ',
-         'from' => 1192399200,
-         'id' => 1204,
-         'data' => 'userdel	q4::inwork -18577,24383 -19282,23081
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -928,15 +904,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1194130800,
-         'text' => 'B 112 Beeskower Str. OD Eisenhüttenstadt, zw. F.-Heckert-Str. und K.-Marx-Str. Straßenbauarbeiten Vollsperrung 22.10.2007-03.11.2007 ',
-         'from' => 1192917600,
-         'id' => 1216,
-         'data' => 'userdel	q4::inwork 94796,-26727 95218,-26861
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1196463600,
          'text' => 'L 037 Eisenhüttenstadt-Müllrose Durchlass in der OD Pohlitz Ersatzneubau Vollsperrung 29.10.2007-30.11.2007 ',
@@ -959,27 +927,9 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_006967',
-         'until' => 1194735600,
-         'text' => 'Lahnstr. (Neukölln) in beiden Richtungen zwischen Naumburger Str. und Karl-Marx-Str. Baustelle, Straße vollständig gesperrt (bis 10.11.2007)',
-         'from' => 1193482575,
-         'id' => 1222,
-         'data' => 'userdel	2::inwork 13095,6926 13278,6967
-',
-         'type' => 'gesperrt'
-       },
        undef,
-       {
-         'source_id' => 'IM_006966',
-         'until' => 1194735600,
-         'text' => 'Silbersteinstr. (Neukölln) in beiden Richtungen zwischen Walterstr. und Karl-Marx-Str. Baustelle, Straße vollständig gesperrt (bis 10.11.2007)',
-         'from' => 1193482855,
-         'id' => 1224,
-         'data' => 'userdel	2::inwork 12983,6904 13095,6926
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1195858800,
          'text' => 'B 112 Beeskower Str. OD Eisenhüttenstadt, zw. F.-Heckert-Str. und K.-Marx-Str. Straßenbauarbeiten Vollsperrung 04.11.2007-23.11.2007 ',
@@ -989,15 +939,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1194649200,
-         'text' => 'L 022 Schönermark-Lindow zw. Schönermark und Keller Deckenerneuerung Vollsperrung 29.10.2007-09.11.2007 ',
-         'from' => 1193526000,
-         'id' => 1226,
-         'data' => 'userdel	2::inwork -15344,63638 -14811,64192 -13924,65015 -13695,65213 -13104,65432 -12824,65746 -12440,66011 -12209,66099 -10423,66477
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1262300400,
          'text' => 'Bauarbeiten am Ostkreuz, Verbindungsstraße könnte für die Durchfahrt gesperrt sein',
@@ -1026,16 +968,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_007006',
-         'until' => 1194130800,
-         'text' => 'Zabel-Krüger-Damm (Waidmannslust) Richtung Lübars bei Schonacher Str. Baustelle, Fahrtrichtung gesperrt (bis 03.11.2007)',
-         'from' => 1193776759,
-         'id' => 1230,
-         'data' => 'userdel	1::inwork 4898,22459 5006,22507 5148,22568
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1196463600,
          'text' => 'L 088 Klaistow-Lehnin OD Emstal Straßenbauarbeiten Vollsperrung 08.11.2007-30.11.2007 ',
@@ -1074,12 +1007,52 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'until' => 1194735600,
-         'text' => 'L 025 Prenzlau-Schönermark zw. OA Güstow und OE Wilhelmshof Deckenerneuerung Vollsperrung 05.11.2007-10.11.2007 ',
-         'from' => 1194130800,
-         'id' => 1235,
-         'data' => 'userdel	2::inwork 34336,102545 33123,102859 32251,103225
+         'source_id' => 'IM_007063',
+         'until' => 1197759599,
+         'text' => 'Schlichtallee (Lichtenberg) in beiden Richtungen zwischen Hauptstr. und Lückstr. Baustelle, Straße vollständig gesperrt (bis Mitte 12.2007)',
+         'from' => 1194301150,
+         'id' => 1236,
+         'data' => 'userdel	2::inwork 15751,10582 15629,10481
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_007093',
+         'until' => 1198277999,
+         'text' => 'Lückstr. (Lichtenberg) Richtung Nöldnerplatz zwischen Emanuelstr.und Schlichtallee Baustelle, Fahrtrichtung gesperrt (bis 21.12.)',
+         'from' => 1194897448,
+         'id' => 1237,
+         'data' => 'userdel	1::inwork 16316,10755 16153,10818 16032,10842
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_007154',
+         'until' => undef,
+         'text' => 'Siegfriedstr. (Lichtenberg) in beiden Richtungen zwischen Josef-Orlopp-Str. und Herzbergstr. Beeinträchtigung durch Sicherungsmaßnahmen, Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1238,
+         'data' => 'userdel	2::inwork 16866,13532 16863,13138
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1195254000,
+         'text' => 'L 023 OU Strausberg, zw. Kreisel Seespitze u. Abzw. Stadt Treibjagd Vollsperrung 16.11.2007-16.11.2007 ',
+         'from' => 1195081200,
+         'id' => 1239,
+         'data' => 'userdel	2::inwork 41683,19794 41882,20643
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1196204400,
+         'text' => 'L 216 Gollin-Templin zw. Vietmannsdorf und Templin Straßenbauarbeiten Vollsperrung 13.11.2007-27.11.2007 ',
+         'from' => 1194822000,
+         'id' => 1240,
+         'data' => 'userdel	2::inwork 16109,76100 16048,75165 17001,73315
 ',
          'type' => 'gesperrt'
        }

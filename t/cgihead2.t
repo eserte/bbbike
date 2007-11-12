@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.17 2007/09/20 23:22:27 eserte Exp $
+# $Id: cgihead2.t,v 1.18 2007/11/12 22:58:42 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -134,7 +134,8 @@ sub check_url {
 	} elsif ($url =~ m{wap}) {
 	    is($content_type, "text/vnd.wap.wml", "Expected type (wml)") or diag("For URL $url $redir_url");
 	} elsif ($url =~ m{\.exe$}) {
-	    is($content_type, "application/octet-stream", "Expected type (binary)") or diag("For URL $url $redir_url");
+	    like($content_type, qr{^application/(octet-stream|x-msdos-program)$}, "Expected type (binary or msdos program)")
+		or diag("For URL $url $redir_url");
 	} elsif ($url =~ m{(?:\.tar\.bz2|\.tbz)$}) {
 	    is($content_type, "application/octet-stream", "Expected type (binary for bzip2)") or diag("For URL $url $redir_url");
 	} elsif ($url =~ m{\.tar\.gz\?download$}) { # Sourceforge download
@@ -143,7 +144,8 @@ sub check_url {
 	    is($content_type, "application/octet-stream", "Expected type (binary)") or diag("For URL $url $redir_url");
 	} elsif ($url =~ m{\.deb\?download$}) { # Sourceforge download
 	    # XXX One of the sourceforge mirrors uses text/plain as content-type
-	    like($content_type, qr{^application/(octet-stream|x-debian-package)$}, "Expected type (debian package), got $content_type") or diag("For URL $url $redir_url");
+	    like($content_type, qr{^application/(octet-stream|x-debian-package)$}, "Expected type (debian package), got $content_type")
+		or diag("For URL $url $redir_url");
 	} else {
 	    is($content_type, "text/html", "Expected type (html)") or diag("For URL $url $redir_url");
 	}

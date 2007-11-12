@@ -9458,9 +9458,9 @@ EOF
 userdel	2::temp 8063,12182 7816,12150 7383,12095 6828,12031
 EOF
      },
-     { from  => undef, # 
-       until => Time::Local::timelocal(reverse(2007-1900,11-1,1,23,59,59)),
-       text  => 'Gitschiner Str. (Kreuzberg) in Richtung Kottbusser Tor zwischen Lobeckstr. und Prinzenstr. wegen einer geplatzten Wasserleitung bis Anfang November 2007 gesperrt, Radfahrer können auf dem Gehweg passieren',
+     { from  => 1194897338, # 2007-11-12 20:55
+       until => 1196463599, # 2007-11-30 23:59
+       text  => 'Gitschiner Str. (Kreuzberg) in Richtung Kottbusser Tor zwischen Lobeckstr. und Prinzenstr. wegen einer geplatzten Wasserleitung gesperrt, Radfahrer können auf dem Gehweg passieren (bis Ende 11.2007)',
        type  => 'handicap',
        source_id => 'IM_006274',
        data  => <<EOF,
@@ -10419,6 +10419,49 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 34336,102545 33123,102859 32251,103225
+EOF
+     },
+     { from  => 1194301150, # 2007-11-05 23:19
+       until => 1197759599, # 2007-12-15 23:59
+       text  => 'Schlichtallee (Lichtenberg) in beiden Richtungen zwischen Hauptstr. und Lückstr. Baustelle, Straße vollständig gesperrt (bis Mitte 12.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_007063',
+       data  => <<EOF,
+userdel	2::inwork 15751,10582 15629,10481
+EOF
+     },
+     { from  => 1194897448, # 2007-11-12 20:57
+       until => 1198277999, # 2007-12-21 23:59
+       text  => 'Lückstr. (Lichtenberg) Richtung Nöldnerplatz zwischen Emanuelstr.und Schlichtallee Baustelle, Fahrtrichtung gesperrt (bis 21.12.)',
+       type  => 'gesperrt',
+       source_id => 'IM_007093',
+       data  => <<EOF,
+userdel	1::inwork 16316,10755 16153,10818 16032,10842
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Siegfriedstr. (Lichtenberg) in beiden Richtungen zwischen Josef-Orlopp-Str. und Herzbergstr. Beeinträchtigung durch Sicherungsmaßnahmen, Straße vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_007154',
+       data  => <<EOF,
+userdel	2::inwork 16866,13532 16863,13138
+EOF
+     },
+     { from  => 1195081200, # 2007-11-15 00:00
+       until => 1195254000, # 2007-11-17 00:00
+       text  => 'L 023 OU Strausberg, zw. Kreisel Seespitze u. Abzw. Stadt Treibjagd Vollsperrung 16.11.2007-16.11.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 41683,19794 41882,20643
+EOF
+     },
+     { from  => 1194822000, # 2007-11-12 00:00
+       until => 1196204400, # 2007-11-28 00:00
+       text  => 'L 216 Gollin-Templin zw. Vietmannsdorf und Templin Straßenbauarbeiten Vollsperrung 13.11.2007-27.11.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 16109,76100 16048,75165 17001,73315
 EOF
      },
     );
