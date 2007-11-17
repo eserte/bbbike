@@ -7044,7 +7044,7 @@ userdel	2::inwork 11603,15455 11638,15522
 EOF
      },
      { from  => 1181426400, # 2007-06-10 00:00
-       until => 1199142000, # 2008-01-01 00:00
+       until => 1195308700, # 2008-01-01 00:00 1199142000
        text  => 'L 090 Dr.-Külz-Str. OD Glindow, zw. Alte Str. und Alpenstr. Kanal- und Straßenbau Vollsperrung 11.06.2007-31.12.2007 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -8663,7 +8663,7 @@ userdel	q4::inwork -7681,27096 -7250,28021
 EOF
      },
      { from  => 1182031200, # 2007-06-17 00:00
-       until => 1195858800, # 2007-11-24 00:00
+       until => 1195308659, # 2007-11-24 00:00 1195858800
        text  => 'L 023 B 2 - Britz Brücke über das kalte Wasser am OE Britz Brückenneubau Vollsperrung 18.06.2007-23.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -9635,7 +9635,7 @@ userdel	2::inwork -3470,27651 -3571,28529
 EOF
      },
      { from  => 1187042400, # 2007-08-14 00:00
-       until => 1196463600, # 2007-12-01 00:00
+       until => 1195308726, # 2007-12-01 00:00 1196463600
        text  => 'L 213 B167 Liebenwalde-Nassenheide zw. B167 über Neuholland nach Freienhagen Deckenerneuerung Vollsperrung 15.08.2007-30.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -10103,9 +10103,9 @@ EOF
 userdel	2::inwork 17910,-6981 17480,-7498 17278,-7925 16437,-8257
 EOF
      },
-     { from  => 1192223561, # 2007-10-12 23:12
-       until => 1196463599, # 2007-11-30 23:59
-       text  => 'Drakestr. (Lichterfelde) in beiden Richtungen bei der Bahnunterführung geplatzte Wasserleitung, Straße vollständig gesperrt (bis Ende 11.2007)',
+     { from  => 1195307982, # 2007-11-17 14:59
+       until => 1199142000, # 2008-01-01 00:00
+       text  => 'Drakestr. (Lichterfelde) in beiden Richtungen bei der Bahnunterführung geplatzte Wasserleitung, Straße vollständig gesperrt (bis Anfang 2008)',
        type  => 'gesperrt',
        source_id => 'IM_006754',
        data  => <<EOF,
@@ -10439,8 +10439,8 @@ EOF
 userdel	1::inwork 16316,10755 16153,10818 16032,10842
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1195308223, # 
+       until => 1195308227, # XXX
        text  => 'Siegfriedstr. (Lichtenberg) in beiden Richtungen zwischen Josef-Orlopp-Str. und Herzbergstr. Beeinträchtigung durch Sicherungsmaßnahmen, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_007154',
@@ -10462,6 +10462,49 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 16109,76100 16048,75165 17001,73315
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Bahnhofstr. (Blankenfelde) in beiden Richtungen Baustelle, Straße vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_007189',
+       data  => <<EOF,
+userdel	2::inwork 8909,23506 8803,23478 8626,23432 8584,23421 8132,23478
+EOF
+     },
+     { from  => 1195308071, # 2007-11-17 15:01
+       until => 1195444800, # 2007-11-19 05:00
+       text  => 'Baumschulenstr. (Treptow) in beiden Richtungen Höhe S-Bahnbrücke Baustelle, Straße vollständig gesperrt ist ausgeschildert (bis 19.11. 05 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_007201',
+       data  => <<EOF,
+userdel	2::inwork 16286,6946 16323,6998
+EOF
+     },
+     { from  => 1195308150, # 2007-11-17 15:02
+       until => 1195858800, # 2007-11-24 00:00
+       text  => 'Buchholzer Str. (Niederschönhausen) in Richtung Nord, zwischen Charlottenstr. und Grumbkowstr. Baustelle, Fahrtrichtung gesperrt (bis 23.11.07)',
+       type  => 'gesperrt',
+       source_id => 'IM_007190',
+       data  => <<EOF,
+userdel	1::inwork 10802,20240 10843,20301 11004,20526 11269,20667
+EOF
+     },
+     { from  => 1194994800, # 2007-11-14 00:00
+       until => 1195513200, # 2007-11-20 00:00
+       text  => 'B 096 Hauptstr., Zossener Str. OD Baruth Einbau Deckschicht Vollsperrung 15.11.2007-19.11.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 18272,-39512 18433,-38781
+EOF
+     },
+     { from  => 1195340400, # 2007-11-18 00:00
+       until => 1198278000, # 2007-12-22 00:00
+       text  => 'L 015 Hardenbeck - Fürstenberg OD Lychen, Prenzlauer Str. Kanal- und Straßenbau Vollsperrung 19.11.2007-21.12.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 2940,90332 2565,89990 2745,89716
 EOF
      },
     );
