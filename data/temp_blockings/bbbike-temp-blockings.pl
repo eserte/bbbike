@@ -10507,4 +10507,20 @@ EOF
 userdel	q4::inwork 2940,90332 2565,89990 2745,89716
 EOF
      },
+     { from  => undef, # 
+       until => 1199141999, # 2007-12-31 23:59
+       text  => 'Weihnachtsmarkt ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 9700,12234 9681,12382
+EOF
+     },
+     { from  => undef, # 
+       until => 1199141999, # 2007-12-31 23:59
+       text  => 'Weihnachtsmarkt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 10170,12261 10083,12442
+EOF
+     },
     );

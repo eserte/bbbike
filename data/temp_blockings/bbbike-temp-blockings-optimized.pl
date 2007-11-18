@@ -1046,6 +1046,24 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork 2940,90332 2565,89990 2745,89716
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1199141999,
+         'text' => 'Weihnachtsmarkt ',
+         'from' => undef,
+         'id' => 1246,
+         'data' => 'userdel	2::inwork 9700,12234 9681,12382
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1199141999,
+         'text' => 'Weihnachtsmarkt',
+         'from' => undef,
+         'id' => 1247,
+         'data' => 'userdel	2::inwork 10170,12261 10083,12442
+',
+         'type' => 'gesperrt'
        }
      
 );
