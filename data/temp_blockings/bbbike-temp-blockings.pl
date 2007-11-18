@@ -3835,7 +3835,7 @@ EOF
        type  => 'handicap',
        source_id => 'LMS_1142967727545',
        data  => <<EOF,
-userdel	q4 25012,5754 23950,5342
+userdel	q4 25012,5754 24700,5633 23950,5342
 userdel	q4 25012,5754 25018,5756 25121,5799
 userdel	q4 25579,5980 25121,5799
 EOF
@@ -7121,7 +7121,7 @@ EOF
        text  => 'Fürstenwalder Damm, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, Baustelle bis 30.03.2007 (im Bereich Einmündung Mühlweg) ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 25012,5754 23950,5342
+userdel	q4::inwork 25012,5754 24700,5633 23950,5342
 EOF
      },
      { from  => 1172530621, # 2007-02-26 23:57
@@ -10317,7 +10317,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_006985',
        data  => <<EOF,
-userdel	q4::inwork; 22967,7252 22785,6984 22758,6944 22745,6657 22724,6608
+userdel	q4::inwork; 22967,7252 22785,6984 22758,6944 22748,6714 22745,6657 22724,6608
 EOF
      },
      { from  => 1193482855, # 2007-10-27 13:00

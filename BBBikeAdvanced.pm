@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.190 2007/10/14 20:25:12 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.190 2007/10/14 20:25:12 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2007 Slaven Rezic. All rights reserved.
@@ -1187,6 +1187,9 @@ sub parse_url_for_coords {
 	$y_ddd *= -1 if $3 eq 'S';
 	$x_ddd = sprintf "%s.%s", $4, $5;
 	$x_ddd *= -1 if $6 eq 'W';
+    } elsif ($url =~ m{[\?&]ll=([0-9.]+),([0-9.]+)}) { # google maps
+	$x_ddd = $2;
+	$y_ddd = $1;
     } elsif ($url =~ m{ll=([0-9.]+),([0-9.]+)}) {
 	$x_ddd = $2;
 	$y_ddd = $1;

@@ -1931,7 +1931,7 @@ Waldsteg: Asphalt	Q0 8359,19162 7893,19612 7868,19692
 Niederstr.: altes grobes Kopfsteinpflaster	Q3 7868,19692 7769,19736 7660,19810
 #: by ^^^
 #: by: Thomas Dobrzinski
-Denkstr.: Asphalt	Q0 6865,4659 7040,4615
+Denkstr.: Asphalt	Q0 6865,4659 7032,4635
 #: by: Martin Lambrecht vvv
 Peschkestr.: Asphalt	Q0 5424,6584 5533,6517
 Peschkestr.: Kopfsteinpflaster	Q2 5533,6517 5657,6451
@@ -1960,6 +1960,11 @@ Würmseestr.: guter Asphalt	Q0 22095,1572 22178,1589 22300,1627
 (Hanns-Eisler-Str. - Thomas-Mann-Str.): asphaltiert	Q0 13550,14973 13324,15109 13328,15127 13132,15239
 ######################################################################
 #: by: anonymous vvv
+Neumarkplan: guter Asphalt	Q0 12337,4160 12356,4133 12415,4053 12483,3929 12569,3764 12572,3731 12560,3697 12530,3669 12485,3658 12445,3674 12420,3707 12415,3743 12421,3767 12483,3929
+#: add_fragezeichen: betoniert oder asphaltiert?
+An der Spreeschanze: guter Beton	Q0 -2623,14396 -2600,14436 -2597,14532
+Windwallstr.: gutes Kopfsteinpflaster	Q1 27021,-2336 27161,-2474 27219,-2538
+Untertürkheimer Str.: guter Asphalt	Q0 9487,2391 9199,2337 9053,2373
 Paulinenstr.: mäßiges Kopfsteinpflaster	Q2 3328,3313 3318,3046 3313,2842
 Gorgasring: guter Asphalt	Q0 -1207,14781 -1120,14709 -995,14704 -836,14765 -653,14843 -626,14871 -621,14907 -663,14996
 #: XXX der südliche Teil sah auf den Luftbildern etwas zweifelhaft aus:
@@ -2739,7 +2744,7 @@ Brennerstr.: Asphalt	Q0 10927,17022 10656,17018
 Viktoriastr.: Kopfsteinpflaster	Q2 9171,5397 8943,5428
 #: by: Sissy (Rabefranziska)
 #: by: Niels (makanamail) (später auf Q0/Asphalt korrigiert)
-Genovevastr.: Asphalt	Q0 23066,7355 23172,7236 23312,7078 23603,6906
+Genovevastr.: Asphalt	Q0 23066,7355 23172,7236 23312,7078 23444,6980 23603,6906
 #: by: Johannes Krugel: vvv
 Schmarjestr.: Asphalt	Q0 511,3532 641,3548 971,3534
 Otto-von-Simson-Str.: Kopfsteinpflaster	Q2 2560,5044 2835,5410
@@ -4000,7 +4005,7 @@ Gotlandstr.: mäßiges Kopfsteinpflaster	Q2 10765,16486 10774,16634 10783,16760
 #: by: Johannes (butt):
 Glaßbrennerstr.: Kopfsteinpflaster	Q2 11543,16207 11632,16373
 #: by: Frida (juliane):
-Grabertstr.: Asphalt	Q0 7110,4747 7087,4887 6945,5060
+Grabertstr.: Asphalt	Q0 7091,4760 7087,4887 6945,5060
 #: by: christian (czorr):
 Tulpenstr.: Kopfsteinpflaster	Q2 3584,4504 3785,4637 3991,4773 4210,4907
 #: by: koschulz:
@@ -5658,6 +5663,13 @@ Haduweg: Asphalt	Q0 15981,23996 16029,23964 16106,23913 16416,23705 16510,23642 
 Straße 41 (Karow): Asphalt	Q0 15013,22472 15087,22573 15154,22674 15169,22770
 #: by: Dugrain Olivier:
 Feldzeugmeisterstr. (Spandau): guter Asphalt	Q0 -663,14996 -634,15012 -556,15128 -528,15171 -532,15184
+#: by: Hans-Eberhard Heß:
+Telramundweg: guter Asphalt	Q0 5206,4432 5284,4390
+#: by: Jens L. Hesse:
+Reimerswalder Steig: guter Beton	Q0 -1870,22999 -1764,23260
+#: by: Patrick Walter:
+#: note: laut ADFC-Karte gut geeignet:
+(Weg entlang der U-Bahn-Betriebswerkstatt): guter Asphalt	Q0 13162,3576 13356,3467 13624,3355 13740,3252
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

@@ -186,7 +186,7 @@ Franz-Zappa-Str.: Qualität?	? 18598,14575 18932,14652
 #: by: Andreas Mühlhausen:
 Heinrich-von-Gagern-Str., Yitzhak-Rabin-Str.: möglicherweise schlechte Radwege (Kopfsteinpflaster)	? 8063,12182 8119,12414 8122,12600
 Gebrüder-Grimm-Weg: falls Märchenweg OK, dann diesen Weg hier auch aufnehmen	? 14281,18682 14284,18786 14573,19281
-Muspelsteig: falls Rübezahlweg OK, dann diesen Weg hier auch aufnemen	? 14052,18273 13970,18332 13935,19222 14044,19502
+Muspelsteig: falls Rübezahlweg OK, dann diesen Weg hier auch aufnemen	? 14052,18273 13970,18332 13953,18842 13935,19222 14044,19502
 Höhenpunkt Mendelssohnstr.?	? 11613,13570
 #: XXX: Vorschlag von Corinna Meyer:
 Bremer Weg (Tiergarten): genaue Wegführung, Qualität?	? 5901,11902 5923,11873 6296,11890 6342,11878 6409,11925 6573,11943 6642,12010
@@ -252,6 +252,12 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet; in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: A. Weiß:
+Drosselbartweg: loser Sandweg, Q3, enger Weg, q3, NN, BNP an beiden Enden (vermutlich)	? 13899,18833 13953,18842 13967,18842 13993,18833 14061,18791 14206,18700 14221,18666
+#: by: Ramona Hesse vvv
+Am Schlangenfenn (Potsdam): guter Asphalt, Q0	? -10516,-5498 -10585,-5528 -10630,-5553 -10712,-5594 -10758,-5502 -10630,-5440
+Am Schlangenfenn (Potsdam): guter Asphalt, Q0	? -10585,-5528 -10630,-5440 -10652,-5393 -10804,-5464
+#: by: ^^^
 #: by: connie zipser:
 Am Kinderdorf: mäßiger Asphalt, Belag stark beschädigt, Q2+, enge Straße, Baustellen, q1	? -5093,8398 -5106,8534 -5103,8614 -5089,8701 -5074,8761 -5071,8864
 #: by: Bernd Honsa
@@ -1209,7 +1215,6 @@ Rummelpforter Mühle - Wichmannsdorf: Qualität? (wahrscheinlich Feld/Waldwege, fü
 Klein Sperrenwalde: Qualität? (zumindest am nordöstlichen Ende ist schlechtes Kopfsteinpflaster, das westliche Ende ist asphaltiert)	? 29238,97789 29960,97778 30545,97656 30752,98302 30935,98315 31301,98168 31520,98339 31764,98266 31946,98379
 Klein Sperrenwalde - Gollmitz: Qualität? (zumindest das Gollmitzer Ende ist asphaltiert)	? 30752,98302 30630,98619 30225,98927 29850,99017
 Ellingen - Uckerfeld: Qualität, wahrscheinlich asphaltiert?	? 37437,105478 38034,105319
-Weg entlang der U-Bahn-Betriebswerkstatt: Qualität (laut ADFC-Karte gut geeignet)?	? 13162,3576 13356,3467 13624,3355 13740,3252
 Britzer Park - Weg entlang der U-Bahn-Betriebswerkstatt: Qualität (laut ADFC-Karte gut geeignet)?	? 13350,3518 13356,3467
 Johannisthaler Chaussee - Lipschitzallee: Qualität (laut ADFC-Karte gut geeignet)?	? 13931,2579 13988,2614 14087,2494 14224,2368 14324,2298 14621,2147
 Hier führt die Route Sanssouci entlang: wie geht es weiter, Qualität, Straßennamen?	? -15557,809 -15440,1121 -15251,1200
@@ -1268,7 +1273,7 @@ Preußenstr.: Qualität?	? 21047,927 20971,1046 20850,1217
 Preußenstr.: Qualität?	? 21297,651 21202,727
 Wongrowitzer Steig: Qualität (laut ADFC-Karte gut geeignet)?	? 22785,6984 22663,7014 22474,7065 22240,7122 22132,7148 22035,7146
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20050810.1640.28623.html:
-Fürstenwalder Damm: existieren zwischen Stillerzeile und Müggelseedamm Radwege?	? 25012,5754 23950,5342
+Fürstenwalder Damm: existieren zwischen Stillerzeile und Müggelseedamm Radwege?	? 25012,5754 24700,5633 23950,5342
 #: Verlauf aus goyello - Daniel Weber nach der Qualität fragen [AM]
 (Lilienthalpark): beleuchtet, Fußgängerfrequenz?	? 5503,575 5571,614 5671,637 5615,735 5576,800 5584,808 5571,864 5540,919
 (Lilienthalpark): beleuchtet, Fußgängerfrequenz?	? 5578,936 5540,919 5345,816
@@ -1529,3 +1534,11 @@ Mandelstr.: Qualität der Straße nördlich der Ostseestr.?	? 12911,15708 12979,158
 Alvenslebenplatz: Qualität der Straße (wahrscheinlich Kopfsteinppflaster?)	? 10789,-2451 10833,-2509 10874,-2449
 Am Kornfeld: Qualität?	? 23648,11265 23679,11372 23714,11477 23799,11646 23851,11748 23896,11862 23942,11975
 Am Pfingstberg: Qualität (wahrscheinlich Asphalt oder Beton)?	? 3311,24150 3271,24283 3225,24431 3187,24491 3157,24489 3125,24533 3122,24571 3131,24614
+#: XXX: unsicherer Eintrag von anonymous: Kopfsteinppflaster?
+Buhrowstr.: Qualität?	? 7091,4760 7032,4635 6889,4332
+#: XXX: unsicherer Eintrag von anonymous: mäßiger Asphalt?
+Geschwister-Scholl-Str. (Neu-Zittau): Qualität?	? 34242,-1784 33628,-1509
+#: XXX: unsicherer Eintrag von anonymous: schlechtes Kopfsteinppflaster, enge Straße q2
+Dornröschenstr.: Qualität?	? 22748,6714 22888,6712 23034,6719 23086,6730 23164,6753 23217,6779 23284,6819 23372,6896 23444,6980
+#: XXX: unklarer Eintrag von anonymous: Asphalt ohne weitere Angabe
+Mühlweg: Qualität?	? 24629,5831 24666,5726 24700,5633
