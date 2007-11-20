@@ -366,15 +366,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Simon-Dach-Str./Wühlischstr.: Bauarbeiten, Ausweichen auf Gehweg',
-         'from' => undef,
-         'id' => 999,
-         'data' => 'userdel	q4::inwork 13981,11746 13954,11647
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1001,24 +993,15 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        {
          'source_id' => 'IM_007189',
-         'until' => undef,
-         'text' => 'Bahnhofstr. (Blankenfelde) in beiden Richtungen Baustelle, Straße vollständig gesperrt',
-         'from' => undef,
+         'until' => 1196549999,
+         'text' => 'Bahnhofstr. (Blankenfelde) in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis Anfang 12.2007)',
+         'from' => 1195515878,
          'id' => 1241,
          'data' => 'userdel	2::inwork 8909,23506 8803,23478 8626,23432 8584,23421 8132,23478
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_007201',
-         'until' => 1195444800,
-         'text' => 'Baumschulenstr. (Treptow) in beiden Richtungen Höhe S-Bahnbrücke Baustelle, Straße vollständig gesperrt ist ausgeschildert (bis 19.11. 05 Uhr)',
-         'from' => 1195308071,
-         'id' => 1242,
-         'data' => 'userdel	2::inwork 16286,6946 16323,6998
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_007190',
          'until' => 1195858800,
@@ -1029,15 +1012,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1195513200,
-         'text' => 'B 096 Hauptstr., Zossener Str. OD Baruth Einbau Deckschicht Vollsperrung 15.11.2007-19.11.2007 ',
-         'from' => 1194994800,
-         'id' => 1244,
-         'data' => 'userdel	2::inwork 18272,-39512 18433,-38781
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1198278000,
          'text' => 'L 015 Hardenbeck - Fürstenberg OD Lychen, Prenzlauer Str. Kanal- und Straßenbau Vollsperrung 19.11.2007-21.12.2007 ',
@@ -1062,6 +1037,25 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'from' => undef,
          'id' => 1247,
          'data' => 'userdel	2::inwork 10170,12261 10083,12442
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_007211',
+         'until' => 1196031600,
+         'text' => 'Chausseestr. (Mitte) Richtung Müllerstr. zwischen Invalidenstr. und Zinnowitzer Str. Baustelle, Fahrtrichtung gesperrt (bis 25.11.2007) ',
+         'from' => 1195515915,
+         'id' => 1248,
+         'data' => 'userdel	1::inwork 8935,13844 8879,13913
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1196204400,
+         'text' => 'B 167 Liebenberg - Löwenberg Bahnübergang in Neulöwenberg Gleisbauarbeiten Vollsperrung 21.11.2007-27.11.2007 ',
+         'from' => 1195513200,
+         'id' => 1249,
+         'data' => 'userdel	2::inwork -6342,54585 -5037,54561 -4176,54548
 ',
          'type' => 'gesperrt'
        }

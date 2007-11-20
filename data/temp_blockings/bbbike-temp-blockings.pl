@@ -8410,8 +8410,8 @@ EOF
 userdel	1::inwork 9000,11727 8837,11676 8553,11638
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX last_checked: 2007-08-04
+     { from  => 1195515804, #  undef
+       until => 1195515809, # XXX last_checked: 2007-08-04
        text  => 'Simon-Dach-Str./Wühlischstr.: Bauarbeiten, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
@@ -10464,9 +10464,9 @@ EOF
 userdel	2::inwork 16109,76100 16048,75165 17001,73315
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Bahnhofstr. (Blankenfelde) in beiden Richtungen Baustelle, Straße vollständig gesperrt',
+     { from  => 1195515878, # 2007-11-20 00:44
+       until => 1196549999, # 2007-12-01 23:59
+       text  => 'Bahnhofstr. (Blankenfelde) in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis Anfang 12.2007)',
        type  => 'gesperrt',
        source_id => 'IM_007189',
        data  => <<EOF,
@@ -10521,6 +10521,23 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 10170,12261 10083,12442
+EOF
+     },
+     { from  => 1195515915, # 2007-11-20 00:45
+       until => 1196031600, # 2007-11-26 00:00
+       text  => 'Chausseestr. (Mitte) Richtung Müllerstr. zwischen Invalidenstr. und Zinnowitzer Str. Baustelle, Fahrtrichtung gesperrt (bis 25.11.2007) ',
+       type  => 'gesperrt',
+       source_id => 'IM_007211',
+       data  => <<EOF,
+userdel	1::inwork 8935,13844 8879,13913
+EOF
+     },
+     { from  => 1195513200, # 2007-11-20 00:00
+       until => 1196204400, # 2007-11-28 00:00
+       text  => 'B 167 Liebenberg - Löwenberg Bahnübergang in Neulöwenberg Gleisbauarbeiten Vollsperrung 21.11.2007-27.11.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -6342,54585 -5037,54561 -4176,54548
 EOF
      },
     );
