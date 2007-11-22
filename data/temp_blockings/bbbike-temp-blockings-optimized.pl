@@ -195,8 +195,8 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        {
-         'until' => 1196031600,
-         'text' => 'B 273 Havelstr. OD Oranienburg, zw. Breite Str. und Gartenstr. Straßenbauarbeiten Vollsperrung 23.07.2007-25.11.2007 ',
+         'until' => 1196463600,
+         'text' => 'B 273 Havelstr. OD Oranienburg, zw. Breite Str. und Gartenstr. Straßenbauarbeiten Vollsperrung 23.07.2007-30.11.2007 ',
          'from' => 1185055200,
          'id' => 871,
          'data' => 'userdel	q4::inwork -1618,38293 -1709,38275 -1720,38268 -1764,38237 -1796,38203 -1832,38148
@@ -512,9 +512,9 @@ push @temp_blocking,
        undef,
        {
          'source_id' => 'IM_006159',
-         'until' => 1196463599,
-         'text' => 'Persiusstr. (Friedrichshain) in beiden Richtungen bei Markgrafendamm Baustelle, Straße vollständig gesperrt (bis Ende 11.2007)',
-         'from' => 1188588474,
+         'until' => 1197759599,
+         'text' => 'Persiusstr. (Friedrichshain) in beiden Richtungen bei Markgrafendamm Baustelle, Straße vollständig gesperrt, Radfahrer können aber passieren (bis Mitte 12.2007)',
+         'from' => 1195686296,
          'id' => 1084,
          'data' => 'userdel	2::inwork 14641,10552 14488,10603
 ',
@@ -581,16 +581,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_006274',
-         'until' => 1196463599,
-         'text' => 'Gitschiner Str. (Kreuzberg) in Richtung Kottbusser Tor zwischen Lobeckstr. und Prinzenstr. wegen einer geplatzten Wasserleitung gesperrt, Radfahrer können auf dem Gehweg passieren (bis Ende 11.2007)',
-         'from' => 1194897338,
-         'id' => 1122,
-         'data' => 'userdel	q4::inwork; 10340,10301 10605,10312
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1058,6 +1049,33 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	2::inwork -6342,54585 -5037,54561 -4176,54548
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1196118000,
+         'text' => 'B 107 Jeserig-Wiesenburg Bahnübergang in der OD Wiesenburg Gleisbauarbeiten Vollsperrung 24.11.2007-26.11.2007 ',
+         'from' => 1195772400,
+         'id' => 1250,
+         'data' => 'userdel	2::inwork -54890,-35286 -54891,-35326 -54881,-35591
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1196809200,
+         'text' => 'B 273 Breite Str. OD Oranienburg, zw. Berliner Str. und Havelstr. Deckschichteinbau Vollsperrung 28.11.2007-04.12.2007 ',
+         'from' => 1196118000,
+         'id' => 1251,
+         'data' => 'userdel	q4::inwork -1595,38315 -1571,38406 -1553,38501 -1517,38543
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1196463600,
+         'text' => 'L 233 Bahnhofstr. OD Rehfelde, zw. Bahnübergang und E.-Thälmann-Str. Deckenschluss halbseitig gesperrt; Einbahnstraße 21.11.2007-30.11.2007 ',
+         'from' => 1195513200,
+         'id' => 1252,
+         'data' => 'userdel	q4::inwork 45754,14207 45856,14437
+',
+         'type' => 'handicap'
        }
      
 );
