@@ -731,15 +731,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1195772400,
-         'text' => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 01.10.2007-22.11.2007 ',
-         'from' => 1191103200,
-         'id' => 1183,
-         'data' => 'userdel	2::inwork 10115,-8276 11019,-8435
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_006088',
@@ -873,15 +865,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        undef,
-       {
-         'until' => 1195858800,
-         'text' => 'B 112 Beeskower Str. OD Eisenhüttenstadt, zw. F.-Heckert-Str. und K.-Marx-Str. Straßenbauarbeiten Vollsperrung 04.11.2007-23.11.2007 ',
-         'from' => 1194044400,
-         'id' => 1225,
-         'data' => 'userdel	q4::inwork 94796,-26727 95218,-26861
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1262300400,
@@ -993,16 +977,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_007190',
-         'until' => 1195858800,
-         'text' => 'Buchholzer Str. (Niederschönhausen) in Richtung Nord, zwischen Charlottenstr. und Grumbkowstr. Baustelle, Fahrtrichtung gesperrt (bis 23.11.07)',
-         'from' => 1195308150,
-         'id' => 1243,
-         'data' => 'userdel	1::inwork 10802,20240 10843,20301 11004,20526 11269,20667
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1198278000,
@@ -1031,16 +1006,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_007211',
-         'until' => 1196031600,
-         'text' => 'Chausseestr. (Mitte) Richtung Müllerstr. zwischen Invalidenstr. und Zinnowitzer Str. Baustelle, Fahrtrichtung gesperrt (bis 25.11.2007) ',
-         'from' => 1195515915,
-         'id' => 1248,
-         'data' => 'userdel	1::inwork 8935,13844 8879,13913
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1196204400,
          'text' => 'B 167 Liebenberg - Löwenberg Bahnübergang in Neulöwenberg Gleisbauarbeiten Vollsperrung 21.11.2007-27.11.2007 ',
