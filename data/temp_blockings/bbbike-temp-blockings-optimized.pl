@@ -94,16 +94,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_004587',
-         'until' => 1196463599,
-         'text' => 'Gürtelstr. (Friedrichshain) Richtung Boxhagener Str. zwischen Frankfurter Allee und Oderstr. Baustelle, Fahrtrichtung gesperrt (bis 11.2007)',
-         'from' => 1191532790,
-         'id' => 796,
-         'data' => 'userdel	q4::inwork; 15349,12073 15288,11968 15243,11881 15203,11807 15091,11596
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -194,15 +185,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1196463600,
-         'text' => 'B 273 Havelstr. OD Oranienburg, zw. Breite Str. und Gartenstr. Straßenbauarbeiten Vollsperrung 23.07.2007-30.11.2007 ',
-         'from' => 1185055200,
-         'id' => 871,
-         'data' => 'userdel	q4::inwork -1618,38293 -1709,38275 -1720,38268 -1764,38237 -1796,38203 -1832,38148
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_004994',
@@ -250,15 +233,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1196463600,
-         'text' => 'L 024 AS Pfingstberg-Gerswalde OD Suckow grundhafter Straßenbau Vollsperrung 10.04.2007-30.11.2007 ',
-         'from' => 1176069600,
-         'id' => 910,
-         'data' => 'userdel	q4::inwork 39125,83492 38986,84365
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -543,15 +518,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1196463600,
-         'text' => 'L 029 Oderberg-Liepe OD Oderberg Straßenbauarbeiten Vollsperrung 06.08.2007-30.11.2007 ',
-         'from' => 1186264800,
-         'id' => 1108,
-         'data' => 'userdel	2::inwork 52671,51846 51496,51542
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1210370400,
          'text' => 'L 171 Schönfließer Str. Brücke über die DB in der OD Hohen Neuendorf Brückenersatzneubau Vollsperrung 06.08.2007-09.05.2008 ',
@@ -570,15 +537,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1196463600,
-         'text' => 'B 167 Lebus-Seelow OD Dolgelin Kanal-,Straßen- u. Radwegbau Vollsperrung 27.09.2007-30.11.2007 ',
-         'from' => 1190757600,
-         'id' => 1119,
-         'data' => 'userdel	q4::inwork 78194,11798 78753,11368 78805,11331
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -651,8 +610,8 @@ push @temp_blocking,
        },
        undef,
        {
-         'until' => 1197068400,
-         'text' => 'L 026 Landesgrenze - AS Prenzlau-Ost (BAB A11) zw. OA Wollschow u. OE Brüssow Straßen-/Radwegebau Vollsperrung 10.09.2007-07.12.2007 ',
+         'until' => 1198364400,
+         'text' => 'L 026 Landesgrenze - AS Prenzlau-Ost (BAB A11) zw. OA Wollschow u. OE Brüssow grundhafter Straßenbau, Radweg Vollsperrung 10.09.2007-22.12.2007 ',
          'from' => 1189288800,
          'id' => 1159,
          'data' => 'userdel	2::inwork 61502,112547 60639,112544 58357,111700 57995,111657
@@ -718,31 +677,22 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
-         'until' => 1196463600,
-         'text' => 'B 122 zw. Dierberg und Zippelsförde Deckenerneuerung Vollsperrung 01.10.2007-30.11.2007 ',
+         'until' => 1198364400,
+         'text' => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 01.10.2007-22.12.2007 ',
          'from' => 1191103200,
-         'id' => 1178,
-         'data' => 'userdel	2::inwork -22589,66989 -24436,65301
+         'id' => 1183,
+         'data' => 'userdel	2::inwork 10115,-8276 11019,-8435
 ',
          'type' => 'gesperrt'
        },
        undef,
        undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       {
-         'source_id' => 'IM_006088',
-         'until' => 1196463599,
-         'text' => 'Simon-Bolivar-Str. (Hohenschönhausen) in beiden Richtungen zwischen Konrad-Wolf-Str. und Küstriner Str. Baustelle, Straße vollständig gesperrt (bis Ende 11.2007)',
-         'from' => 1193776679,
-         'id' => 1185,
-         'data' => 'userdel	2::inwork 15763,15003 16025,14753
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        {
@@ -841,8 +791,8 @@ push @temp_blocking,
        },
        undef,
        {
-         'until' => 1196463600,
-         'text' => 'L 037 Eisenhüttenstadt-Müllrose Durchlass in der OD Pohlitz Ersatzneubau Vollsperrung 29.10.2007-30.11.2007 ',
+         'until' => 1197673200,
+         'text' => 'L 037 Eisenhüttenstadt-Müllrose Durchlass in der OD Pohlitz Ersatzneubau Vollsperrung 29.10.2007-14.12.2007 ',
          'from' => 1193526000,
          'id' => 1217,
          'data' => 'userdel	q4::inwork 90982,-23216 91107,-23410
@@ -896,15 +846,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1196463600,
-         'text' => 'L 088 Klaistow-Lehnin OD Emstal Straßenbauarbeiten Vollsperrung 08.11.2007-30.11.2007 ',
-         'from' => 1194390000,
-         'id' => 1231,
-         'data' => 'userdel	q4::inwork -32394,-12207 -32010,-12375 -31776,-12438 -31585,-12330
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_002956',
          'until' => 1199141999,
@@ -957,25 +899,8 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        undef,
        undef,
-       {
-         'until' => 1196204400,
-         'text' => 'L 216 Gollin-Templin zw. Vietmannsdorf und Templin Straßenbauarbeiten Vollsperrung 13.11.2007-27.11.2007 ',
-         'from' => 1194822000,
-         'id' => 1240,
-         'data' => 'userdel	2::inwork 16109,76100 16048,75165 17001,73315
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_007189',
-         'until' => 1196549999,
-         'text' => 'Bahnhofstr. (Blankenfelde) in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis Anfang 12.2007)',
-         'from' => 1195515878,
-         'id' => 1241,
-         'data' => 'userdel	2::inwork 8909,23506 8803,23478 8626,23432 8584,23421 8132,23478
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -1007,24 +932,8 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1196204400,
-         'text' => 'B 167 Liebenberg - Löwenberg Bahnübergang in Neulöwenberg Gleisbauarbeiten Vollsperrung 21.11.2007-27.11.2007 ',
-         'from' => 1195513200,
-         'id' => 1249,
-         'data' => 'userdel	2::inwork -6342,54585 -5037,54561 -4176,54548
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1196118000,
-         'text' => 'B 107 Jeserig-Wiesenburg Bahnübergang in der OD Wiesenburg Gleisbauarbeiten Vollsperrung 24.11.2007-26.11.2007 ',
-         'from' => 1195772400,
-         'id' => 1250,
-         'data' => 'userdel	2::inwork -54890,-35286 -54891,-35326 -54881,-35591
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1196809200,
          'text' => 'B 273 Breite Str. OD Oranienburg, zw. Berliner Str. und Havelstr. Deckschichteinbau Vollsperrung 28.11.2007-04.12.2007 ',
@@ -1034,14 +943,60 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
+       undef,
        {
-         'until' => 1196463600,
-         'text' => 'L 233 Bahnhofstr. OD Rehfelde, zw. Bahnübergang und E.-Thälmann-Str. Deckenschluss halbseitig gesperrt; Einbahnstraße 21.11.2007-30.11.2007 ',
-         'from' => 1195513200,
-         'id' => 1252,
-         'data' => 'userdel	q4::inwork 45754,14207 45856,14437
+         'until' => 1196809200,
+         'text' => 'B 087 Luckauer Str. Bahnübergang in der OD Langengrassau Sanierung Bahnübergang Vollsperrung 01.12.2007-04.12.2007 ',
+         'from' => 1196377200,
+         'id' => 1253,
+         'data' => 'userdel	2::inwork 28150,-63424 27995,-63503 27033,-64026
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1198278000,
+         'text' => 'K 6419 Ernst-Thälmann-Str. OD Rehfelde, zw. Bahnhofstr. und Lindenstr. Straßenbauarbeiten Vollsperrung 04.12.2007-21.12.2007 ',
+         'from' => 1196636400,
+         'id' => 1254,
+         'data' => 'userdel	q4::inwork 45856,14437 44121,14615
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1225494000,
+         'text' => 'L 073 Beelitzer Str. OL Luckenwalde, zw. Puschkinstr. u. Woltersdorfer Str. Straßenausbau Vollsperrung 24.09.2007-31.10.2008 ',
+         'from' => 1190498400,
+         'id' => 1255,
+         'data' => 'userdel	q4::inwork -4725,-34957 -5019,-34814
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1225494000,
+         'text' => 'L 080 Bahnhofstr. OL Luckenwalde, Einmünd. Beelitzer Str. Straßenausbau Vollsperrung 24.09.2007-31.10.2008 ',
+         'from' => 1190498400,
+         'id' => 1256,
+         'data' => 'userdel	q4::inwork -4725,-34957 -4888,-34952
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1198278000,
+         'text' => 'L 090 Potsdamer Str. OL Werder (Havel), zw. Berliner Str. und Grüner Weg Kanalarbeiten halbseitig gesperrt; Einbahnstraße 04.12.2007-21.12.2007 ',
+         'from' => 1196636400,
+         'id' => 1257,
+         'data' => 'userdel	q4::inwork -20851,-4878 -20696,-5198
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1196809200,
+         'text' => 'L 096 Milow - Rathenow zw. Eisenbahnbrücke und B188 Rathenow Straßenbauarbeiten Vollsperrung 04.12.2007-04.12.2007 ',
+         'from' => 1196636400,
+         'id' => 1258,
+         'data' => 'userdel	2::inwork -65141,19165 -65165,19674 -65134,20143
+',
+         'type' => 'gesperrt'
        }
      
 );

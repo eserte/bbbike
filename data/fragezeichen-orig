@@ -278,7 +278,10 @@ Käthe-Kollwitz-Str., Hohen Neuendorf: schlechtes Kopfsteinpflaster, Q3	? 2177,29
 #: by: anonymous:
 Kantstr. (Neuenhagen): mäßiges Kopfsteinpflaster, Q2	? 31471,12224 31566,11907 31669,11678
 #: by: ??? (siehe Mail...)
-Rudolf-Breitscheid-Str. (Vogelsdorf): mäßiger fester Sandweg, Q2	? 33982,11496 34067,11751 34128,11843
+Rudolf-Breitscheid-Str. (Vogelsdorf): mäßiger fester Sandweg, Q2	? 33982,11496 34007,11572 34067,11751 34128,11843
+#: by: anonymous:
+#: note: PLZ 15370
+Adolf-Hoffmann-Str. (Vogelsdorf): mäßiger fester Sandweg, Q2	? 34007,11572 34149,11511 34229,11535
 #: by: lesz...:
 Bulgenbachweg: gutes Kopfsteinpflaster, Q1, Sandbanketten	? 3439,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
 #: by: Peter Loth:
@@ -438,7 +441,7 @@ B109n bei Großbeeren: ist diese Streckenführung temporär?	? 2715,-6365 2890,-617
 bei Großbeeren: zurzeit wird die Hauptstraße noch weiter nördlich geführt, aber die künftige (?) Trasse ist bereits befahrbar	? 3242,-6330 3653,-6050
 Ernst-Thälmann-Str. in Fürstenwalde umbenannt in Eisenbahnstr.?	? 55447,-4247 55374,-3621
 Ist eine Verbindung nach Seeberg vorhanden (westliche Seite des Ortes)?	? 28569,16324 28775,16193 29459,16348
-Wetzlarer Str (Potsdam): Qualität etc.	? -9306,-4259 -9646,-4906 -9975,-5578
+An der Wetzlarer Bahn (Potsdam): unbefestigter Weg, bei Regen große Pfützen. Ist der Weg durchgängig befahrbar oder gesperrt?	? -9306,-4259 -9642,-4916 -9981,-5563
 Glambeck - Wolletz: Qualität etc.	? 37575,69168 38096,68983 38424,69181 38858,69287 39460,69325 39566,69493 39782,69398 41050,69362 41478,69500 42400,69523 42794,69450 43065,69453
 Wolletz - Blumberger Mühle: Qualität etc.	? 43116,69546 44629,70044 45374,70764 45562,70856 45812,70909
 Blumberger Mühle - Gorlsdorf: Qualität etc.	? 45812,70909 45584,72614
@@ -1135,7 +1138,7 @@ Saalburgstr./Cafeastr.: Qualität (wahrscheinlich Kopfsteinpflaster, zumindestens
 # XXX: unklare Angaben von Nils Fiedler, leider keine Rückfrage möglich: Q1 (Asphalt); q2 (Fußgängerzone); RW1 (Radweg); Gefälle "5°"? #Mühlenfeldstr.: Steigung, wenn ja, wo genau?	? 3727,22868 3739,22693 3743,22642 3753,22534 3728,22507 3601,22484 3531,22440 3353,22348 3243,22311 3134,22292 3046,22292 2757,22310 2587,22332
 #Dorfstr. (Malchow): seit November 2005 Bauarbeiten für neuen Radweg, bereits fertig?	? 15606,19839 15656,19946 15686,20100 15778,20350 15900,20531 16025,20631
 #: XXX: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0506/nachricht1941.html
-Rad- und Fußwegverbindung zwischen Wuhle und Hönow durch Hellersdorf: genauer Verlauf? Qualität? bereits komplett fertiggestellt?	? 22579,15416 23057,15458 23240,15472 23368,15469 23484,15485 23629,15498 23643,15389 23895,15450 24169,15497 24303,15766 25003,15617 25984,15415 25936,15335 25990,15301 25985,15080 26014,15039
+Rad- und Fußwegverbindung zwischen Wuhle und Hönow durch Hellersdorf: genauer Verlauf? Qualität? bereits komplett fertiggestellt?	? 22579,15416 22743,15414 23057,15458 23240,15472 23368,15469 23484,15485 23629,15498 23643,15389 23895,15450 24169,15497 24303,15766 25003,15617 25984,15415 25936,15335 25990,15301 25985,15080 26014,15039
 Niederlehme Anschlussstelle - Niederlehme: Qualität (wahrscheinlich Asphalt)? Radweg?	? 28485,-10143 28272,-10277 28168,-10289 27949,-10283 27906,-10191 27827,-10082 27535,-10033
 Fürstenwalder Str. (Zernsdorf): Qualität?	? 27966,-11585 28150,-11380 28235,-11227 28388,-11093 28839,-10831 29192,-10630
 Am Möllenberg (Zernsdorf): Qualität?	? 27949,-10283 28016,-10429 28241,-10904 28388,-11093
@@ -1187,7 +1190,6 @@ Ingwäonenweg - Am Luchgraben, Teil des Barnimer Dörferwegs: Qualität (laut ADFC-
 Straße 70 - Am Luchgraben: Qualität?	? 16298,22221 16508,22215
 Barnimer Dörferweg im Bereich Falkenberg: Qualität (laut ADFC-Karte teilweise gut, mäßig und schlecht geeignet)?	? 19971,18785 20356,18659 20377,18753 20694,18857
 Am Gehrensee, Teil des Barnimer Dörferwegs: Qualität (laut ADFC-Karte überwiegend gut geeignet)?	? 20855,19299 21322,19049 21278,18786
-B102, Ortsumfahrung Belzig: wo liegt diese Umfahrung genau? Kann sie von Radfahrern benutzt werden?	? -42655,-30968 -42908,-28770
 B96, Ortsumfahrung Greifswald: Kann sie von Radfahrern benutzt werden oder ist es eine Kraftfahrzeugstraße?	? 5170,183994 2903,185164 2659,185700 2830,187236 2733,187723 2245,188942 2635,189917 3398,190528
 Klosterwalde - Herzfelde: Qualität?	? 19706,85931 20429,86157 21477,87145 21691,87730 22154,87985 22550,88053 22562,87961
 Herzfelde - Sternthal: Qualität?	? 22562,87961 22647,87918 23043,88022 23324,89314 23263,89990 23683,90984
@@ -1228,8 +1230,6 @@ Prieroser Str.: Qualität?	? 28540,-19744 29524,-19715
 Neubrücker Str.: Qualität?	? 28231,-19792 28336,-19948 28363,-19964 28514,-20071
 Postenweg: Qualität zwischen Rudower Chaussee und B179 (wahrscheinlich guter Beton)?	? 17234,-685 17806,-561 18177,-449
 Gerlinger Str. - Mauerweg: Qualität (wahrscheinlich guter fester Sandweg)?	? 12007,877 12017,777 11924,594
-#: by: http://berlinforen.de/viewtopic.php?t=511
-Kirchstr.: Asphalt oder Kopfsteinpflaster?	? 22312,4593 22263,4671 22243,4710 22234,4789 22196,4847
 Bellevuepark: ist ein Weg für Radfahrer offiziell freigegeben?	? 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340
 Idsteiner Str.: Qualität (laut ADFC-Karte zwischen Königsweg und Hegauer Weg mäsig, danach bis Ludwigsfelder Str. gut geeignet)?	? -163,1564 -284,2009 -319,2212 -393,2521
 Hegauer Weg: Qualität (laut ADFC-Karte ist der westliche Abschnitt gut, der östliche Abschnitt mäßig geeignet)?	? -371,2187 -319,2212 -165,2303 -6,2434
@@ -1292,7 +1292,7 @@ Pegnitring oder Str. 136? beleuchtet? fester Sandweg	? -8050,5560 -7969,5453 -79
 (Wasserwerk Wuhlheide - An der Wuhlheide): Qualität? (zumindest an der südlichen Seite Kopfsteinpflaster)	? 19338,7148 19223,7189 19084,7009 19069,6928
 Bau einer Ampel, voraussichtlich im Frühjahr 2007	? 16669,25373
 Semnonenweg: voraussichtlich 2006-12-01 mit einer neuen Asphaltdecke versehen	? -4482,10914 -4536,10670
-Wassermannstr.: Qualität zwischen Radickestr. und Glienicker Weg?	? 21055,3415 20938,3560 20776,3753
+Wassermannstr.: Qualität zwischen Radickestr. und Glienicker Weg?	? 21055,3415 20992,3493 20924,3577 20776,3753
 # XXX del (keine Bestätigung durch Michael Bona) Alexanderstr./Alexa: Ampel in Vorbereitung	? 11207,12706
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20061025.0935.49339.html, aber ganz klar ist es nicht, ob nur die Straßenanbindung oder die gesamte Straße gemeint ist, und welcher Radweg?
 Hackenbergstr.: Qualität? Gibt es hier einen Radweg?	? 20429,3792 20280,3996 20253,4034 20248,4040
@@ -1441,6 +1441,8 @@ Freest - Peenemünde: Daten zur Fähre	? 28887,192995 29771,193403 30100,193330 30
 Niederschlemaer Weg: Qualität?	? 18447,1727 18444,1782 18425,1831
 #: XXX Eintrag von Frauke (goenner) (Q3 Kopfsteinpflaster whole, Radstreifen RW4) korrespondiert nicht zum Luftbild
 Brusebergstr.: Qualität? (Kopfsteinpflaster bis Lübener Weg, danach betoniert oder asphaltiert?) Gibt es Radwege für Radfahrer?	? 6383,18033 6307,18039 6145,18016 6115,18042 6086,18162 6045,18305 6060,18534
+#: XXX Eintrag von baeskow (RW) korrespondiert nicht zum Luftbild?
+Klenzepfad: Gibt es Radwege für Radfahrer	? 6086,18162 6304,18197 6314,18295 6339,18638 6329,18663 6306,18673
 Lorenzstr./Parallelstr.: Ampel?	? 5720,2081
 Parallelstr.: endet die Parallelstr. am südwestlichen oder am nordöstlichen Teil der Luisenstr.?	? 5807,2117 5825,2125
 #: XXX unklarer anonymer Eintrag:
@@ -1533,3 +1535,6 @@ Mühlweg: Qualität?	? 24629,5831 24666,5726 24700,5633
 Rudower Str.: Qualität?	? 19031,5316 18999,5237 18942,5236 18820,5275 18659,5330 18307,5440
 #: XXX: unklarer Eintrag von anonymous: guter Asphalt, viele Fußgänger???, Radweg???
 Rodenkirchener Str.: Qualität?	? 19974,-317 19971,-234 19960,-158 19943,-118 19909,-75
+Flottsteller Str. (Michendorf): Qualität (wahrscheinlich asphaltiert)?	? -15891,-10464 -15769,-10534 -15613,-10667 -15182,-10981 -15018,-11070 -14861,-11221
+Stieleichenstr. (Schönfließ): Qualität (wahrscheinlich asphaltiert oder betoniert)?	? 4424,26240 4387,26270 4340,26311 4302,26352 4287,26368 4262,26415 4239,26458 4213,26461 4182,26463 4136,26489 4105,26533 4095,26547
+Gürtelstr.: existieren Radstreifen zwischen Oderstr. und Scharnweberstr.?	? 15091,11596 15203,11807 15243,11881

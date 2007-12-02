@@ -760,8 +760,8 @@ schlechte Straße oder Kopfsteinpflaster	Q2 26850,42000 27062,43000 27862,43625 2
 	Q0 31562,48012 31972,48575
 	Q0 31972,48575 31395,48670
 	Q0 31972,48575 31543,48918 31455,49067 31507,49193 31575,49512 31612,49975 32100,50562 32400,50687 33069,51424
-schlechte Straße oder Kopfsteinpflaster	Q2 3758,24936 4327,25981
-	Q0 5612,27750 5665,27401 5515,27039 4904,26836 4415,26303 4352,26155 4327,25981
+schlechte Straße oder Kopfsteinpflaster	Q2 3758,24936 4276,25978
+	Q0 5612,27750 5665,27401 5515,27039 4904,26836 4424,26240 4366,26160 4276,25978
 	Q0 5612,27750 5384,28338
 schlechte Straße oder Kopfsteinpflaster	Q2 5384,28338 5298,28530 5471,29678 5407,29954 5535,30422
 	Q0 5535,30422 5753,30866 6351,31738
@@ -1073,7 +1073,8 @@ Freundschaftsinsel: Parkweg	Q1 -12260,-1503 -12253,-1589 -12396,-1681 -12567,-18
 Schlaatzstr.: Kopfsteinpflaster	Q2 -11681,-2256 -11506,-2368
 Schlaatzstr. - Horstweg: asphaltiert	Q0 -11506,-2368 -11425,-2384 -11431,-2425 -11240,-2525 -10903,-2700 -10624,-2957
 Horstweg - Stern: Parkweg	Q2 -10553,-2859 -10071,-3321 -9756,-3648 -9425,-3990
-Horstweg - Stern: meist mäßiger Asphalt	Q2 -9425,-3990 -9375,-4159 -9306,-4259 -9234,-4190 -9009,-3837
+Horstweg - Stern: meist mäßiger Asphalt	Q2 -9425,-3990 -9375,-4159 -9306,-4259
+Nuthe - Wetzlarer Str.: Asphalt	Q1 -9306,-4259 -9234,-4190 -9088,-3962
 Am Pfingstberg: mäßiges Kopfsteinpflaster (Bankette etwas besser)	Q2 -12334,1324 -12513,1400
 Stücken: Kopfsteinpflaster, teilweise Ausweichen auf Gehweg möglich	Q2 -11025,-18450 -11050,-18262 -11190,-18168
 Gellmersdorf - Stolpe: unpassierbar	Q3 53712,61950 54874,63371 57125,64812 57722,64554
@@ -1260,9 +1261,9 @@ An der Pirschheide: Asphalt	Q0 -16179,-5354 -16084,-5140
 An der Pirschheide: Asphalt	Q0 -16435,-5680 -16809,-5662
 Am Gaisberg (Geltow): Asphalt	Q0 -17469,-5685 -17383,-5692 -17053,-5807 -16975,-5724 -16849,-5673 -16809,-5662
 Am Petzinsee (Geltow): Asphalt	Q0 -18014,-6027 -17743,-5934 -17469,-5685
-Beelitz-Heilstätten - Petzow: hauptsächlich gut geeigneter, asphaltierter Radweg	Q0 -21642,-16531 -21421,-16696 -21187,-16509 -21468,-15641 -22031,-15477 -22922,-14422 -22922,-13719 -22734,-12969 -22758,-11984 -22476,-11163 -22734,-11163 -22438,-10456 -21773,-9616 -21590,-9622
-Beelitz-Heilstätten - Borkheide: asphaltierter Radweg	Q0 -21642,-16531 -22773,-17588 -26312,-20250
-Borkheide - Neuendorf: asphaltierter Radweg	Q0 -26140,-20772 -26338,-21122 -27908,-22935 -28547,-22981 -29244,-23127
+Beelitz-Heilstätten - Petzow: hauptsächlich gut geeigneter, asphaltierter Radweg	Q0 -21587,-16648 -21421,-16696 -21187,-16509 -21468,-15641 -22031,-15477 -22922,-14422 -22922,-13719 -22734,-12969 -22758,-11984 -22476,-11163 -22734,-11163 -22438,-10456 -21773,-9616 -21590,-9622
+Beelitz-Heilstätten - Borkheide: asphaltierter Radweg	Q0 -21587,-16648 -22617,-17483 -25293,-19426 -26249,-20121
+Borkheide - Neuendorf: asphaltierter Radweg	Q0 -26240,-20161 -26270,-20176 -26560,-20828 -27908,-22935 -28547,-22981 -29244,-23127
 Trebitz - Baitz: asphaltiert	Q0 -34244,-26997 -34581,-26927 -34810,-26859 -35083,-26912
 Trebitz - Baitz: asphaltierter Radweg	Q0 -35083,-26912 -35860,-26653 -36180,-26455 -36592,-26333
 Trebitz - Baitz: asphaltierter Wirtschaftsweg	Q0 -36592,-26333 -38130,-26607 -38249,-26861
@@ -1538,6 +1539,10 @@ Am Alten Markt: gepflastert	Q2 -12583,-1552 -12773,-1544
 Schwertfegerstr.: teils schlechtes Kopfsteinpflaster	Q3 -12795,-1499 -12870,-1493
 Am Neuen Markt: teils schlechtes Kopfsteinpflaster	Q3 -12882,-1565 -12870,-1493 -12865,-1462 -12913,-1451
 Siefertstr.: teils schlechtes Kopfsteinpflaster	Q3 -12913,-1451 -12975,-1363 -12976,-1356
+Trautmannstr. (Köthen): schlechtes Kopfsteinpflaster	Q3 -85671,-75212 -85737,-75043 -85790,-74925 -85847,-74803
+Brunnenstr. (Köthen): Asphalt	Q0 -85635,-75173 -85519,-75117 -85386,-75079 -85278,-75071
+Wallstr. (Köthen): Kopfsteinpflaster	Q2 -85248,-74234 -85326,-74308 -85280,-74524 -85265,-74683
+Bahnstr. (Michendorf): Asphalt	Q0 -14364,-10176 -14439,-10186 -14456,-10266 -14543,-10366 -14605,-10440 -14705,-10543 -14831,-10652 -15012,-10820 -15137,-10935 -15182,-10981
 Finkenschlag (Ladeburg): gut geeignet	Q0 22106,32178 22527,32200
 Zepernicker Landweg: schlechter Asphalt, extrem löchrig	Q2 22106,32178 22500,32911 22512,33312
 Max-Eyth-Allee: guter Asphalt	Q0 -16295,2475 -16288,2512 -16267,2916 -16196,2987 -16128,3052 -16089,3090

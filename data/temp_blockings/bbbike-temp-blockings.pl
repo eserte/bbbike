@@ -593,7 +593,7 @@ EOF
        text  => 'L 88; (Beelitz-Lehnin); Bahnübergang zw. Beelitz u. AS Beelitz-Heilstätten Einbau Hilfsbrücke Vollsperrung 17.09.2004-20.09.2004 ',
        type  => 'gesperrt',
       data  => <<EOF,
-userdel	2 -21642,-16531 -21341,-17172
+userdel	2 -21587,-16648 -21341,-17172
 EOF
      },
      { from  => 1095717600, # 2004-09-21 00:00
@@ -601,7 +601,7 @@ EOF
        text  => 'L 88; (Beelitz-Lehnin); Bahnübergang zw. Beelitz u. AS Beelitz-Heilstätten Einbau Hilfsbrücke Vollsperrung 22.09.2004-25.09.2004 ',
        type  => 'gesperrt',
       data  => <<EOF,
-userdel	2 -21642,-16531 -21341,-17172
+userdel	2 -21587,-16648 -21341,-17172
 EOF
      },
      { from  => 1092866435, # 2004-08-19 00:00
@@ -2633,7 +2633,7 @@ EOF
        text  => 'Glienicker Straße zwischen Grünauer Straße und Nipkowstraße Richtung Adlergestell wegen Bauarbeiten gesperrt bis 15.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 21823,4210 21690,4057 21498,3837 21442,3774 21316,3662 21227,3549 21198,3522 21136,3482 21055,3415 20967,3343 20818,3182
+userdel	q4; 21823,4210 21690,4057 21498,3837 21442,3774 21316,3662 21227,3549 21198,3522 21153,3484 21055,3415 20967,3343 20818,3182
 EOF
      },
      { from  => 1125351382, # 2005-08-29 23:36
@@ -7139,7 +7139,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004803',
        data  => <<EOF,
-userdel	1::inwork 8900,20601 9476,20647 9655,20703 9737,20728 9848,20764
+userdel	1::inwork 8900,20601 9025,20611 9476,20647 9655,20703 9737,20728 9848,20764
 EOF
      },
      { from  => 1172642400, # 2007-02-28 07:00
@@ -9010,7 +9010,7 @@ EOF
        text  => 'B 246 Ernst-Thälmann-Str. OL Belzig, Höhe Gymnasium Kanalarbeiten Vollsperrung 19.07.2007-19.07.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -44441,-30214 -44165,-30318
+userdel	q4::inwork -44441,-30214 -44189,-30306
 EOF
      },
      { from  => 1184222221, # 2007-07-12 08:37
@@ -9770,8 +9770,8 @@ userdel	2::inwork -579,33145 -409,33522 103,33971
 EOF
      },
      { from  => 1189288800, # 2007-09-09 00:00
-       until => 1197068400, # 2007-12-08 00:00
-       text  => 'L 026 Landesgrenze - AS Prenzlau-Ost (BAB A11) zw. OA Wollschow u. OE Brüssow Straßen-/Radwegebau Vollsperrung 10.09.2007-07.12.2007 ',
+       until => 1198364400, # 2007-12-23 00:00
+       text  => 'L 026 Landesgrenze - AS Prenzlau-Ost (BAB A11) zw. OA Wollschow u. OE Brüssow grundhafter Straßenbau, Radweg Vollsperrung 10.09.2007-22.12.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 61502,112547 60639,112544 58357,111700 57995,111657
@@ -9980,8 +9980,8 @@ userdel	2::inwork 24186,26271 24204,25870 24244,25405 24242,25066 24281,24622 24
 EOF
      },
      { from  => 1191103200, # 2007-09-30 00:00
-       until => 1195772400, # 2007-11-23 00:00
-       text  => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 01.10.2007-22.11.2007 ',
+       until => 1198364400, # 2007-12-23 00:00
+       text  => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 01.10.2007-22.12.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 10115,-8276 11019,-8435
@@ -10262,8 +10262,8 @@ userdel	q4::inwork 94796,-26727 95218,-26861
 EOF
      },
      { from  => 1193526000, # 2007-10-28 01:00
-       until => 1196463600, # 2007-12-01 00:00
-       text  => 'L 037 Eisenhüttenstadt-Müllrose Durchlass in der OD Pohlitz Ersatzneubau Vollsperrung 29.10.2007-30.11.2007 ',
+       until => 1197673200, # 2007-12-15 00:00
+       text  => 'L 037 Eisenhüttenstadt-Müllrose Durchlass in der OD Pohlitz Ersatzneubau Vollsperrung 29.10.2007-14.12.2007 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 90982,-23216 91107,-23410
@@ -10562,6 +10562,54 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 45754,14207 45856,14437
+EOF
+     },
+     { from  => 1196377200, # 2007-11-30 00:00
+       until => 1196809200, # 2007-12-05 00:00
+       text  => 'B 087 Luckauer Str. Bahnübergang in der OD Langengrassau Sanierung Bahnübergang Vollsperrung 01.12.2007-04.12.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 28150,-63424 27995,-63503 27033,-64026
+EOF
+     },
+     { from  => 1196636400, # 2007-12-03 00:00
+       until => 1198278000, # 2007-12-22 00:00
+       text  => 'K 6419 Ernst-Thälmann-Str. OD Rehfelde, zw. Bahnhofstr. und Lindenstr. Straßenbauarbeiten Vollsperrung 04.12.2007-21.12.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 45856,14437 44121,14615
+EOF
+     },
+     { from  => 1190498400, # 2007-09-23 00:00
+       until => 1225494000, # 2008-11-01 00:00
+       text  => 'L 073 Beelitzer Str. OL Luckenwalde, zw. Puschkinstr. u. Woltersdorfer Str. Straßenausbau Vollsperrung 24.09.2007-31.10.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -4725,-34957 -5019,-34814
+EOF
+     },
+     { from  => 1190498400, # 2007-09-23 00:00
+       until => 1225494000, # 2008-11-01 00:00
+       text  => 'L 080 Bahnhofstr. OL Luckenwalde, Einmünd. Beelitzer Str. Straßenausbau Vollsperrung 24.09.2007-31.10.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -4725,-34957 -4888,-34952
+EOF
+     },
+     { from  => 1196636400, # 2007-12-03 00:00
+       until => 1198278000, # 2007-12-22 00:00
+       text  => 'L 090 Potsdamer Str. OL Werder (Havel), zw. Berliner Str. und Grüner Weg Kanalarbeiten halbseitig gesperrt; Einbahnstraße 04.12.2007-21.12.2007 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -20851,-4878 -20696,-5198
+EOF
+     },
+     { from  => 1196636400, # 2007-12-03 00:00
+       until => 1196809200, # 2007-12-05 00:00
+       text  => 'L 096 Milow - Rathenow zw. Eisenbahnbrücke und B188 Rathenow Straßenbauarbeiten Vollsperrung 04.12.2007-04.12.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -65141,19165 -65165,19674 -65134,20143
 EOF
      },
     );
