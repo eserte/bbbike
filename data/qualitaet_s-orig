@@ -2709,7 +2709,7 @@ Promenade am Teltowkanal: gut befahrbar	Q0 6645,4254 6224,4307
 Am Eichgarten: gut befahrbar	Q0 6224,4307 6144,4315 6013,4327
 #: by: ^^^
 #: by: juergen V. Leitner:
-Seecktstr.: Asphalt	Q0 -4281,13310 -4017,13167
+Seecktstr.: Asphalt	Q0 -4299,13304 -4017,13167
 #: by: Reinhard Schinkel: vvv
 # alle Straßen in der Gegend sind asphaltiert
 Budsiner Str.: asphaltiert	Q0 19790,11445 20126,11356
@@ -3341,8 +3341,9 @@ Neukirchstr.: Kopfsteinpflaster	Q2 12751,18401 12562,18483
 #: note: ^^^
 #: by: ^^^
 #: by: Christof (keuter): vvv
-Markelstr.: asphaltiert	Q0 4528,6711 4588,6675 4679,6620
-Markelstr.: Kopfsteinpflaster	Q1 4679,6620 4901,6505
+#removed: Markelstr.: asphaltiert	Q0 4528,6711 4588,6675
+#: corrected_by: Fédele Simshäuser (was partially also "asphaltiert"):
+Markelstr.: Kopfsteinpflaster	Q1 4588,6675 4679,6620 4901,6505
 Markelstr.: asphaltiert	Q0 4901,6505 5034,6425 5268,6305
 #: by: ^^^
 #: by: René Hartmann:
@@ -3368,7 +3369,7 @@ Klistostr.: guter Beton	Q0 407,1481 475,1202 538,944
 #: by: Gudrun Henne:
 Marienstr.: mäßiges Kopfsteinpflaster	Q2 5252,3059 5311,3169 5375,3287 5466,3312
 #: by: Chriss (thetimeisnow):
-Emmichstr.: Asphalt	Q0 7282,2386 7426,2409 7625,2362
+Emmichstr.: Asphalt	Q0 7282,2386 7370,2400 7426,2409 7625,2362
 #: by: yasmine benhadj...:
 Paul-Robeson-Str.: Kopfsteinpflaster	Q2 10254,16363 10438,16340 10606,16319 10754,16305 11013,16278
 #: by: Michael Heinrichs:
@@ -5690,6 +5691,9 @@ Bergrutenpfad: fester Sandweg mit Schlaglöchern	Q2 8886,21014 8942,21039 8967,21
 Bergrutenpfad: gutes Verbundsteinpflaster	Q1 8967,21031 9008,21124 9050,21223
 Eigene Scholle: guter Beton	Q0- 8912,21308 8825,21246 8729,21185 8726,21171
 Eigene Scholle: schlechtes Kopfsteinpflaster	Q3 8726,21171 8670,21102 8752,21034 8796,20964 8906,20755 8971,20775
+Eigene Scholle: mäßig befahrbarer fester Sandweg	Q2 8971,20775 8996,20792 9178,21072
+#: add_fragezeichen: Ist der Privatweg tatsächlich mit Verbundsteinen gepflastert?
+Eigene Scholle - Schönhauer Str.: Verbundsteinpflaster	Q1+ 9178,21072 9221,21145
 #: by: ^^^
 #: by: antje weiss dorn: vvv
 Am Graben (Malchow): Asphalt	Q0 14858,18886 14743,18839 14745,18827 14570,18763 14499,18738 14459,18731 14429,18719 14399,18713 14354,18694 14283,18669 14277,18684 14222,18666 14179,18649 14106,18623 14057,18606 14011,18589 13950,18567
@@ -5701,8 +5705,10 @@ Freiherr-vom-Stein-Str. (Hermsdorf): schlechtes Kopfsteinpflaster	Q3 3732,23113 
 Hilssteig: Asphalt	Q0 -146,4814 -190,4878 -225,4949 -254,5056
 #: by: baeskow:
 Klenzepfad: guter Asphalt	Q0 6086,18162 6304,18197 6314,18295 6339,18638 6329,18663 6306,18673
-#: by: Carola Rückwardt:
+#: by: Carola Rückwardt: vvv
 Grünhofer Weg: guter Asphalt	Q0 -4290,14025 -4314,13828
+Grünhofer Weg: betoniert, große Platten	Q0 -4314,13828 -4319,13791 -4332,13734 -4349,13567
+#: by: ^^^
 #: by: Thomas Müller:
 Otto-Franke-Str.: guter Asphalt	Q0 20289,3033 20388,3100 20478,3156 20717,3310 20808,3374 20906,3433 20992,3493 21119,3572
 #: by: Kathy (eichholtz):
@@ -5715,6 +5721,8 @@ Popperstr.: guter Asphalt	Q0 8828,2841 8895,3094 8969,3074
 Waldschützpfad: schlechtes Kopfsteinpflaster	Q3 30020,4273 30082,4506 30124,4664
 #: by: mario (bockmann):
 Weg P: schlechter Sandweg	Q3 28512,704 28651,859 28689,886
+#: by: Alain Hugonnet:
+Mudrastr.: mäßiger Beton	Q1- 7489,2787 7384,2763 7308,2734 7289,2699 7324,2559 7370,2400
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
