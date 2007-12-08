@@ -1144,11 +1144,12 @@ userdel	q4 38264,50086 38035,49183
 userdel	q4 38264,50086 38845,51258
 EOF
      },
-     { from  => 1101942000, # 2004-12-03 06:00
-       until => 1102287540, # 2004-12-05 23:59
-       file  => 'rixdorfer_weihnachtsmarkt.bbd',
-       text  => 'Rixdorfer Weihnachtsmarkt, 03.12.2004-05.12.2004',
+     { from  => 1196895600, # 2007-12-06 00:00
+       until => 1197154800, # 2007-12-09 00:00
+       text  => 'Richardplatz Neukölln Straßensperrung Weihnachtsmarkt 7.12.2007-8.12.2007 ',
        type  => 'gesperrt',
+       source_id => 'IM_007405',
+       file  => 'rixdorfer_weihnachtsmarkt.bbd',
      },
      { from  => 1100038749, # 2004-11-09 23:19
        until => 1100559600, # 2004-11-16 00:00
@@ -7860,13 +7861,11 @@ userdel	2::inwork 9654,5738 9341,5612 9147,5534
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX by Andreas Mühlhausen; last-checked 2007-08-29
-       text  => 'Linienstr.: Baustelle zwischen Koppenplatz (östliche Straße) und Rosenthaler Str., Einbahnstraße, Abbiegen in Kleine Auguststr. und Joachimstr. nicht möglich',
+       until => undef, # last-checked 2007-11-28 # war, ist nicht mehr: Abbiegen in Kleine Auguststr. und Joachimstr. nicht möglich;	3 10020,13669 10081,13673 10142,13556; 	3 10142,13556 10081,13673 10214,13680
+       text  => 'Linienstr.: Baustelle zwischen Koppenplatz (östliche Straße) und Rosenthaler Str., Einbahnstraße',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1::inwork 10214,13680 10081,13673 10020,13669 9964,13665
-	3 10020,13669 10081,13673 10142,13556
-	3 10142,13556 10081,13673 10214,13680
 EOF
      },
      { from  => 1177625221, # 
@@ -10610,6 +10609,64 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -65141,19165 -65165,19674 -65134,20143
+EOF
+     },
+     { from  => 1197062386, # 2007-12-07 22:19
+       until => 1197673199, # 2007-12-14 23:59
+       text  => 'Leuthener Str. (Schöneberg) in beiden Richtungen zwischen Leberstr. und Gotenstr. geplatzte Wasserleitung, Straße vollständig gesperrt (bis 14.12.)',
+       type  => 'gesperrt',
+       source_id => 'IM_007404',
+       data  => <<EOF,
+userdel	2::inwork 7578,8358 7494,8364
+EOF
+     },
+     { from  => 1197062453, # 2007-12-07 22:20
+       until => 1197219600, # 2007-12-09 18:00
+       text  => 'Torstr. (Mitte) Richtung Rosenthaler Platz zwischen Straßburger Str. und Schönhauser Allee Baustelle, Fahrtrichtung gesperrt (bis 09.12. 18 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_007387',
+       data  => <<EOF,
+userdel	1::inwork 10902,13604 10746,13673
+EOF
+     },
+     { from  => 1197500400, # 2007-12-13 00:00
+       until => 1198105200, # 2007-12-20 00:00
+       text  => 'K 6907 Bahnübergang Ferch-Lienewitz Gleisbauarbeiten Vollsperrung 14.12.2007-19.12.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -18640,-11826 -19043,-11944 -19150,-11976
+EOF
+     },
+     { from  => 1197154800, # 2007-12-09 00:00
+       until => 1198278000, # 2007-12-22 00:00
+       text  => 'L 029 Hohenfinow - Heckelberg zw. Heckelberg und Kruge Fahrbahninstandsetzung Vollsperrung 10.12.2007-21.12.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 39917,38037 40666,38512 42062,39651
+EOF
+     },
+     { from  => 1197154800, # 2007-12-09 00:00
+       until => 1197759600, # 2007-12-16 00:00
+       text  => 'L 030 Lindenstr. Bahnübergang zur Bahnhof- u. Bruchmühler Str. in Petershagen Gleisbauarbeiten Vollsperrung 10.12.2007-15.12.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 35386,13954 35427,13624
+EOF
+     },
+     { from  => 1197154800, # 2007-12-09 00:00
+       until => 1198278000, # 2007-12-22 00:00
+       text  => 'L 238 Eberswalde-ASWerbellin Brücke der A 11 zw. Lichterfelde u. Altenhof Straßenanbindung Vollsperrung 10.12.2007-21.12.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 31076,54246 30773,54731
+EOF
+     },
+     { from  => 1196982000, # 2007-12-07 00:00
+       until => 1197759600, # 2007-12-16 00:00
+       text  => 'L 792 Groß Schulzendorf-Mahlow OD Blankenfelde, Kno. Zossener-/Potsdamer Damm Deckeneinbau Vollsperrung 08.12.2007-15.12.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 10023,-8859 10115,-8276
 EOF
      },
     );

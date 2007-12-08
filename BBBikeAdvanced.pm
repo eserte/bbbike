@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.191 2007/11/24 17:22:44 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.192 2007/12/07 20:43:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2007 Slaven Rezic. All rights reserved.
@@ -3139,6 +3139,7 @@ sub search_anything {
 	    $s_munged = lc $s;
 	} else {
 	    $s_rx = $s;
+	    $s_rx =~ s{([sS])traße}{(\1traße|\1tr\\.)};
 	}
 	my $need_utf8_upgrade = $] >= 5.008 && ((defined $s_munged && eval { require Encode; Encode::is_utf8($s_munged) }) ||
 						(defined $s_rx     && eval { require Encode; Encode::is_utf8($s_rx) }));
@@ -3149,7 +3150,7 @@ sub search_anything {
 	eval {
 	    my %found_in;
 	    my %title;
-	    my $has_grep = is_in_path("grep");
+	    my $has_egrep = is_in_path("egrep");
 	    foreach my $search_file (@search_files) {
 		my @matches;
 		my $pid;
@@ -3158,7 +3159,7 @@ sub search_anything {
 		#                  no String::Similarity support
 		#                                        direct grep cannot handle utf-8
 		#                                                                                        do we have grep at all?
-		if ($devel_host && !defined $s_munged && (!$need_utf8_upgrade || $may_utf8_downgrade) && $has_grep) {
+		if ($devel_host && !defined $s_munged && (!$need_utf8_upgrade || $may_utf8_downgrade) && $has_egrep) {
 		    my $s_rx = $s_rx;
 		    if ($may_utf8_downgrade) {
 			$s_rx = Encode::encode("iso-8859-1", $s_rx);
@@ -3166,7 +3167,7 @@ sub search_anything {
 		    $pid = open(GREP, "-|");
 		    if (!$pid) {
 			require POSIX;
-			exec("grep", "-i", $s_rx, $search_file) || warn "Can't exec program grep with $search_file: $!";
+			exec("egrep", "-i", $s_rx, $search_file) || warn "Can't exec program grep with $search_file: $!";
 			POSIX::_exit();
 		    }
 		} else {
