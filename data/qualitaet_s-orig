@@ -2076,6 +2076,7 @@ Heerstr.: Beton	Q0- 22129,9702 21986,9760 21749,9856 21686,9876 21611,9893
 Heesestr.: Asphalt	Q0- 21611,9893 21526,9904 21371,9923 21156,9970
 Parchimer Str.: guter Beton	Q1 22310,12637 22271,12623 22253,12570 22256,12489 22212,12422 22212,12349 22228,12274 22292,12198 22304,12157
 Arberstr.: mäßiger Beton	Q1 19400,9110 19407,9232 19424,9502 19437,9653 19450,9728
+#: confirmed_by: http://www.berlin.de/ba-spandau/presse/archiv/20071109.1320.88651.html bestätigt den Abschnitt Falkenseer Chaussee und Germersheimer Platz
 Zweibrücker Str.: guter Asphalt	Q0 -4489,15014 -4460,15007 -4352,15063 -4338,15137 -4332,15179 -4317,15298 -4308,15411 -4294,15525 -4283,15639 -4254,15813
 Ulricistr.: schlechtes Kopfsteinpflaster	Q3 -7714,529 -7556,542 -7437,603 -7330,641
 Büchsenweg: Asphalt	Q0 8066,18754 8045,18804 7917,18834 7693,18781 7690,18716 7758,18535
@@ -4529,8 +4530,9 @@ Bohnstedtstr.: betoniert	Q0 11249,-1628 11509,-1602
 #: by: Benjamin (Zielke):
 Wernickestr.: gutes Kopfsteinpflaster	Q1 3735,22755 3849,22794
 #: by: Klaus-Peter Müller-Fiedler: vvv
-Ungewitterweg: mäßiger geflickter Asphalt	Q1 -6570,14875 -6806,14964 -6881,14975 -7033,14984 -7119,14971 -7209,14937 -7350,14879 -7390,14881
-Ungewitterweg: mäßiger geflickter Asphalt	Q1 -7116,15053 -7234,15003 -7356,14952 -7387,14951
+#: corrected_by: http://www.berlin.de/ba-spandau/presse/archiv/20071106.0900.88417.html (vorher: mäßig geflickter Asphalt, Q1)
+Ungewitterweg: Asphalt	Q0 -6570,14875 -6806,14964 -6881,14975 -7033,14984 -7119,14971 -7209,14937 -7350,14879 -7390,14881
+Ungewitterweg: Asphalt	Q0 -7116,15053 -7234,15003 -7356,14952 -7387,14951
 #: by: ^^^
 #: by: Barbara (thekla1707@...)
 Altmarkstr.: guter Asphalt	Q0 6338,6312 6323,6270 6310,6121 6318,6002 6326,5912 6333,5819
@@ -5725,6 +5727,8 @@ Waldschützpfad: schlechtes Kopfsteinpflaster	Q3 30020,4273 30082,4506 30124,4664
 Weg P: schlechter Sandweg	Q3 28512,704 28651,859 28689,886
 #: by: Alain Hugonnet:
 Mudrastr.: mäßiger Beton	Q1- 7489,2787 7384,2763 7308,2734 7289,2699 7324,2559 7370,2400
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20071018.1430.87166.html
+Alfons-Loewe-Str.: befestigte Fahrbahn	Q0 -8072,15582 -7975,15904
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

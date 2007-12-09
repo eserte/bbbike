@@ -10669,4 +10669,12 @@ EOF
 userdel	2::inwork 10023,-8859 10115,-8276
 EOF
      },
+     { from  => 1197233736, # 
+       until => undef, # XXX last_checked: 2007-12-09 XXX nach den Bauarbeiten asphaltiert?
+       text  => 'Holteistraße: Bauarbeiten zwischen Sonntagstr. und Wühlischstr., Fahrbahn ist nicht benutzbar',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 14535,11327 14575,11407
+EOF
+     },
     );

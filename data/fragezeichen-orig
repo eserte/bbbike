@@ -23,6 +23,7 @@ Mollstr.	?; 11446,13294 11557,13228 11681,13161 11723,13139 11739,13131 11839,13
 Alt-Moabit zwischen Kirch- und Paulstraße	? 7192,13036 7000,13067 6882,13088 6757,13112 6661,13130
 #: last_checked: 2007-08-04
 #: note: nach den Bauarbeiten wird es Radspuren in der Breiten Str. geben:
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0709/nachricht2788.html
 Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 10109,12238 10084,12228 9972,12184
 #: last_checked: 2007-08-04
 Köpenicker Str.	? 11574,11594 11807,11479 11943,11398 12026,11348
@@ -80,7 +81,16 @@ Aroser Allee, Fertigstellung bis 2007-10-01	? 6720,18616 6704,18462 6694,18351 6
 #  STRASSEN IN BAU UND PLANUNG
 #
 #: section ignorieren vvv
-#: section Straßen in Planung vvv
+#: section Straßen in Planung vvv#
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0710/nachricht2827.html vvv
+Fußgängerampel in Planung, bis 2008-12-31	?::inwork 9220,11781
+Ampel in Planung, bis 2008-12-31	?::inwork 9183,12076
+Bauarbeiten, danach neu asphaltiert, bis 2008-12-31	?::inwork 9220,11781 9208,11872 9201,11968 9183,12076
+#: by: ^^^
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20071015.1025.86938.html
+Radweg durch den Münsigerpark: bis spätestens 2011-01-01 realisiert	?::inwork -3552,14082 -3776,14419
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20070906.1125.84785.html
+Neue Schönholzer Straße: ab 2007-09-06 asphaltiert	?::inwork 10089,18180 10140,18080 10179,17772
 #: last_checked: 2007-10-03
 Pankebrücke: in Bau	?::inwork 13554,23123 13567,23101 13551,23072
 #: last_checked: 2007-10-03 vvv
@@ -221,8 +231,9 @@ Raddusch: entfällt der Regionalbahnhof?	? 54813,-65044
 Eichhorster Str.: Radweg? Laut Eintrag von housemeister ja, laut Luftbild fraglich	? 21446,18405 21481,18474 21526,18558 21545,18595 21552,18607 21678,18648 21825,18689 21853,18700
 (Eichhorstr. - Schorfheidestr.): Qualität?	? 21825,18689 21828,18701 21860,18718 21875,18717
 (Eichhorstr. - Klandorfer Str.): Qualität?	? 21828,18701 21826,18727 21785,18861
-#: by: http://morgenpost.berlin1.de/content/2006/05/19/berlin/830131.html, Datum ist schon längst verstrichen
-Hildegard-Knef-Platz: Benennung geplant	? 7854,7572
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20071126.1010.89670.html
+#: XXX: welcher der beiden Plätze ist es: östlich oder westlich?
+Hildegard-Knef-Platz: Benennung am 2007-12-17	? 7854,7572 7772,7610
 nördlicher Radweg auf der Bulgarischen Str.: siehe Message-ID: <1kl0p5nkwlmb1.dlg@tebe.my-fqdn.de>	? 15166,8489 15383,8662 15580,8839
 Route Lychen - Feldberg: wie sieht der Routenverlauf aus? Qualität?	? 627,89430 551,89619
 Route Lychen - Templin: wie sieht der Routenverlauf aus? Qualität?	? 2480,89399 2468,89293
@@ -248,6 +259,7 @@ Am Schlangenfenn (Potsdam): guter Asphalt, Q0	? -10516,-5498 -10585,-5528 -10630
 Am Schlangenfenn (Potsdam): guter Asphalt, Q0	? -10585,-5528 -10630,-5440 -10652,-5393 -10804,-5464
 #: by: ^^^
 #: by: connie zipser:
+#: note: laut http://www.berlin.de/ba-spandau/presse/archiv/20071129.1255.89932.html ab 2008-02-01 neu asphaltiert, Q0, nicht mehr eng
 Am Kinderdorf: mäßiger Asphalt, Belag stark beschädigt, Q2+, enge Straße, Baustellen, q1	? -5093,8398 -5106,8534 -5103,8614 -5089,8701 -5074,8761 -5071,8864
 #: by: Bernd Honsa
 Arthur-Müller-Str.: Asphalt, Q0; enge Straße, q4 (->q3?)	? 17834,3125 17941,3176 18021,3167 18199,2960 18057,2852
