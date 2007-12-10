@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: trafficlightgraph.pl,v 1.6 2007/10/14 20:21:04 eserte Exp $
+# $Id: trafficlightgraph.pl,v 1.7 2007/12/10 21:48:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -35,12 +35,14 @@ my @v_test_kmh;
 my $green_s = 20;
 my $cycle_s = 70;
 my($canvas_w,$canvas_h)=(800,500);
+my $reversed = 0;
 GetOptions("velocity=s"         => \$v_kmh,
 	   'testvelocity|tv=s@' => \@v_test_kmh,
 	   "green=i"            => \$green_s,
 	   "cycle=i"            => \$cycle_s,
 	   "canvasw|cw=i"       => \$canvas_w,
 	   "canvash|ch=i"       => \$canvas_h,
+	   "reversed!"          => \$reversed,
 	  ) or die "usage?";
 my $v_ms = kmh2ms($v_kmh);
 if (!@v_test_kmh) {
@@ -165,32 +167,9 @@ for my $def (@labels) {
 
 my @print_status;
 
-for my $v_test_ms (@v_test_ms) {
-    my $last_time = 0;
-    my $last_length = 0;
-    for my $def_i (0 .. $#labels) {
-	my $def = $labels[$def_i];
-	my($cx,$cy) = w2c($last_time, $last_length);
-	my($this_length, $trafficlight) = @{$def}{qw(length trafficlight)};
-	my $hop_time = ($this_length-$last_length)/$v_test_ms;
-	my($cx2,$cy2) = w2c($last_time+$hop_time, $this_length);
-	($last_time, $last_length) = ($last_time+$hop_time, $this_length);
-	$c->createLine($cx,$cy,$cx2,$cy2);
-	if ($def_i < $#labels) {
-	    if ($trafficlight) {
-		my $tl_state = trafficlight_state($last_time, $this_length);
-		if ($tl_state->{state} eq 'red') {
-		    my($cx3,$cy3) = w2c($tl_state->{to}, $this_length);
-		    $c->createLine($cx2,$cy2,$cx2,$cy3);
-		    $last_time = $tl_state->{to};
-		}
-	    }
-	}
-    }
-    my $status_text = ms2kmh($v_test_ms)."km/h: " . s2ms($last_time);
-    $c->createText(w2c($last_time,$last_length),-anchor => "s",
-		   -text => $status_text);
-    push @print_status, $status_text;
+draw_voyage();
+if ($reversed) {
+    draw_voyage(reversed => 1);
 }
 
 # legend:
@@ -213,6 +192,53 @@ $c->Subwidget("scrolled")->lower("lsabg");
 
 print join("\n", @print_status), "\n";
 MainLoop;
+
+sub draw_voyage {
+    my(%args) = @_;
+    my $reversed = delete $args{reversed};
+    die "Extra arguments" if %args;
+
+    my @labels_i = (0 .. $#labels);
+    if ($reversed) {
+	@labels_i = reverse @labels_i;
+	shift @labels_i;
+    }
+    for my $v_test_ms (@v_test_ms) {
+	my $last_time = 0;
+	if ($reversed) {
+	    $last_time = $length/$v_test_ms;
+	}
+	my $last_length = 0;
+	$last_length = $length if $reversed;
+	for my $def_i (@labels_i) {
+	    my $def = $labels[$def_i];
+	    my($cx,$cy) = w2c($last_time, $last_length);
+	    my($this_length, $trafficlight) = @{$def}{qw(length trafficlight)};
+	    my $hop_length = abs($this_length-$last_length);
+	    my $hop_time = $hop_length/$v_test_ms;
+	    my($cx2,$cy2) = w2c($last_time+$hop_time, $this_length);
+	    ($last_time, $last_length) = ($last_time+$hop_time, $this_length);
+	    $c->createLine($cx,$cy,$cx2,$cy2);
+	    if ($def_i < $#labels) {
+		if ($trafficlight) {
+		    my $tl_state = trafficlight_state($last_time, $this_length);
+		    if ($tl_state->{state} eq 'red') {
+			my($cx3,$cy3) = w2c($tl_state->{to}, $this_length);
+			$c->createLine($cx2,$cy2,$cx2,$cy3);
+			$last_time = $tl_state->{to};
+		    }
+		}
+	    }
+	}
+	my $status_text = ms2kmh($v_test_ms)."km/h: " . s2ms($last_time);
+	if ($reversed) {
+	    $status_text .= " (reversed)";
+	}
+	$c->createText(w2c($last_time,$last_length),-anchor => "s",
+		       -text => $status_text);
+	push @print_status, $status_text;
+    }
+}
 
 sub w2c {
     my($x,$y) = @_;

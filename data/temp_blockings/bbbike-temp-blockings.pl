@@ -10087,7 +10087,7 @@ userdel	1::inwork 16861,5935 16987,5838 17331,5571 17586,5374
 EOF
      },
      { from  => 1191708000, # 2007-10-07 00:00
-       until => 1197673200, # 2007-12-15 00:00
+       until => 1197325825, # 2007-12-15 00:00 1197673200
        text  => 'L 238 AS Werbellin-Joachimsthal OD Altenhof Kanal- und Straßenbau Vollsperrung 08.10.2007-14.12.2007 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -10560,7 +10560,7 @@ EOF
        text  => 'L 233 Bahnhofstr. OD Rehfelde, zw. Bahnübergang und E.-Thälmann-Str. Deckenschluss halbseitig gesperrt; Einbahnstraße 21.11.2007-30.11.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 45754,14207 45856,14437
+userdel	q4::inwork 45732,14245 45740,14260 45856,14437
 EOF
      },
      { from  => 1196377200, # 2007-11-30 00:00
@@ -10675,6 +10675,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 14535,11327 14575,11407
+EOF
+     },
+     { from  => 1197327600, # 2007-12-11 00:00
+       until => 1197673200, # 2007-12-15 00:00
+       text  => 'L 233 Bahnhofstr. OD Rehfelde, zw. Friedrich-Engels-Str. und Bahnübergang Straßenbauarbeiten Vollsperrung 12.12.2007-14.12.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 45732,14245 45740,14260 45856,14437
 EOF
      },
     );

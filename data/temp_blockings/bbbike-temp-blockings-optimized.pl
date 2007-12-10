@@ -726,15 +726,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1197673200,
-         'text' => 'L 238 AS Werbellin-Joachimsthal OD Altenhof Kanal- und Straßenbau Vollsperrung 08.10.2007-14.12.2007 ',
-         'from' => 1191708000,
-         'id' => 1196,
-         'data' => 'userdel	q4::inwork 30762,56847 30526,56720 30056,56665 30137,56487
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_006754',
@@ -1028,6 +1020,15 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork 14535,11327 14575,11407
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1197673200,
+         'text' => 'L 233 Bahnhofstr. OD Rehfelde, zw. Friedrich-Engels-Str. und Bahnübergang Straßenbauarbeiten Vollsperrung 12.12.2007-14.12.2007 ',
+         'from' => 1197327600,
+         'id' => 1267,
+         'data' => 'userdel	2::inwork 45732,14245 45740,14260 45856,14437
+',
+         'type' => 'gesperrt'
        }
      
 );
