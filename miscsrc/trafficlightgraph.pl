@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: trafficlightgraph.pl,v 1.7 2007/12/10 21:48:06 eserte Exp $
+# $Id: trafficlightgraph.pl,v 1.8 2007/12/11 21:47:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -36,6 +36,7 @@ my $green_s = 20;
 my $cycle_s = 70;
 my($canvas_w,$canvas_h)=(800,500);
 my $reversed = 0;
+my $ignorelsa = "";
 GetOptions("velocity=s"         => \$v_kmh,
 	   'testvelocity|tv=s@' => \@v_test_kmh,
 	   "green=i"            => \$green_s,
@@ -43,10 +44,14 @@ GetOptions("velocity=s"         => \$v_kmh,
 	   "canvasw|cw=i"       => \$canvas_w,
 	   "canvash|ch=i"       => \$canvas_h,
 	   "reversed!"          => \$reversed,
+	   "ignorelsa=s"        => \$ignorelsa,
 	  ) or die "usage?";
 my $v_ms = kmh2ms($v_kmh);
 if (!@v_test_kmh) {
     @v_test_kmh = ($default_test_kmh);
+} else {
+    # expand
+    @v_test_kmh = map { split /,/ } @v_test_kmh;
 }
 my @v_test_ms;
 for (@v_test_kmh) {
@@ -58,6 +63,16 @@ my $route = Route::load($route_file);
 
 my $ampeln_s = Strassen->new("$FindBin::RealBin/../data/ampeln");
 my %ampeln = %{ $ampeln_s->get_hashref_by_cat };
+{
+    my @ignorelsa = split /[; |]/, $ignorelsa;
+    for (@ignorelsa) {
+	if (exists $ampeln{$_}) {
+	    delete $ampeln{$_};
+	} else {
+	    warn "LSA $_ not found\n";
+	}
+    }
+}
 
 my $s = Strassen->new("$FindBin::RealBin/../data/strassen");
 my $crossings = $s->all_crossings(RetType => "hash",
@@ -105,7 +120,7 @@ my $min_v_test_ms = min @v_test_ms;
 my($scale_x,$scale_y) = ($canvas_w/(1.7*$length/$min_v_test_ms),$canvas_h/$length);
 
 $c->createLine(w2c(0,0), w2c(0,$length), -arrow => 'last');
-$c->createLine(w2c(0,0), w2c($canvas_w/$scale_x,0), -arrow => 'last');
+$c->createLine(w2c(0,0), w2c($canvas_w/$scale_x*2,0), -arrow => 'last');
 
 for my $def (@labels) {
     my($label,$length,$image,$trafficlight) = @{$def}{qw(label length image trafficlight)};
@@ -115,7 +130,7 @@ for my $def (@labels) {
     }
     $c->createText($cx-7,$cy, -text => $label, -anchor => 'e');
     if (defined $trafficlight) {
-	$c->createLine($cx,$cy,$canvas_w,$cy, -dash => "..");
+	$c->createLine($cx,$cy,$canvas_w*2,$cy, -dash => "..");
     }
 }
 
