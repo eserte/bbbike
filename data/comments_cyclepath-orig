@@ -20,7 +20,7 @@ Schönerlinde - Schönwalde: asphaltierter Radweg auf der östlichen Seite	RW 12931
 ##Storkow - Wendisch-Rietz: parallel zur Straße führender Radweg	RW E7884,6428 E7931,6473 E7987,6509 E7990,6517 E8039,6565 E8069,6596 E8123,6628
 Berliner Str. (Woltersdorf)	RW 33943,5568 33445,5731 32806,5934 32192,5915
 Baumschulenstr. (Woltersdorf)	RW 33943,5568 34028,6053 34132,6174
-Rudolf-Breitscheid-Str.: Suggestivstreifen	RW -10446,-1947 -10559,-1901 -10678,-1860 -10773,-1828 -10973,-1764
+Rudolf-Breitscheid-Str.: Suggestivstreifen	RW -10446,-1947 -10559,-1901 -10678,-1860 -10702,-1851 -10773,-1828 -10973,-1764
 B101: Zweirichtungsradweg auf der östlichen Seite	RW 7168,-509 7110,-596
 B101: Zweirichtungsradweg auf der östlichen Seite	RW 5943,-2117 5836,-2309 5627,-2671 5394,-3053
 Potsdam - Teltow: enger Zweirichtungsradweg auf der nördlichen Seite	RW -5736,-3629 -5156,-3192 -4885,-3087 -4456,-2968 -3950,-2743 -3650,-2609 -3521,-2552 -2984,-2184 -2831,-1956 -2477,-1717
@@ -72,7 +72,7 @@ Suggestivstreifen	RW -11507,-2130 -10995,-2108 -10793,-2157 -10673,-2128
 Radweg auf Gehweg	RW -12098,-2173 -11681,-2256 -11601,-2197 -11507,-2130
 Radstreifen (?)	RW -10673,-2128 -10634,-2159 -10528,-2196 -10426,-2231 -10327,-2262
 #: add_fragezeichen: genauer spezifizieren:
-Radwege unterschiedlicher Form und Qualtität	RW -9723,-2451 -9700,-2459 -9534,-2515 -9462,-2540 -9075,-2664 -8865,-2732 -8500,-2856 -8428,-2886 -8283,-2917 -7873,-3094 -7060,-3124 -6810,-3151
+Radwege unterschiedlicher Form und Qualtität	RW -9723,-2451 -9700,-2459 -9534,-2515 -9462,-2540 -9118,-2649 -9075,-2664 -8865,-2732 -8500,-2856 -8428,-2886 -8283,-2917 -7873,-3094 -7487,-3097 -7060,-3124 -6810,-3151
 Seitenstreifen, als Radstreifen benutzbar	RW -6285,-3363 -6553,-3235 -6810,-3151
 Güterfelde: Zweirichtungsradweg, Verbundsteinpflaster	RW -3368,-4430 -2534,-4606
 #: note: von rjoop bestätigt:
@@ -122,13 +122,13 @@ Kurfürstenstr.: Radstreifen	RW; -12265,-418 -12306,-496
 Kurfürstenstr: Radweg auf Gehweg	RW; -12306,-496 -12571,-581 -12730,-627 -12878,-665
 Kurfürstenstr: Radstreifen	RW; -12878,-665 -12730,-627 -12571,-581
 Hebbelstr.: Radstreifen	RW; -12531,-790 -12545,-698 -12571,-581
-Hebbelstr.: Radstreifen	RW -12575,-1031 -12531,-790
+Hebbelstr.: Radstreifen	RW -12575,-1031 -12512,-911 -12515,-889 -12531,-790
 Hebbelstr.: Radweg	RW; -12878,-665 -13067,-706 -13137,-728 -13231,-763 -13433,-831 -13468,-847 -13625,-902
 Hans-Thoma-Str.: sehr schlechter Radweg, nicht benutzungspflichtig	RW; -12306,-496 -12262,-612 -12219,-726
 Gutenbergstr.: gemeinsamer Rad- und Gehweg, asphaltiert	RW -12045,-757 -12219,-726
 B1: gemeinsamer Rad- und Gehweg, teilweise sehr eng	RW -13556,-1182 -13643,-1220 -13727,-1300 -13879,-1445 -14115,-1678 -14141,-1700 -14279,-1820 -14351,-1882 -14369,-1898 -14485,-1998 -14500,-2012 -14859,-2384
 #: by: Lars Krüger:
-B1, Zeppelinstr.: teilweise Radweg, teilweise Radspur	RW -14859,-2384 -15060,-2626 -15431,-3043 -15501,-3122 -15669,-3311
+B1, Zeppelinstr.: teilweise Radweg, teilweise Radspur	RW -14859,-2384 -15060,-2626 -15276,-2868 -15431,-3043 -15501,-3122 -15669,-3311
 Geschwister-Scholl-Str.: Radweg	RW; -14115,-1678 -14151,-1656
 Zehlendorfer Str.: Radweg auf Gehweg	RW 1460,-372 1473,-420 1457,-470 1378,-676 1346,-762
 Oderstr.: Verbundsteinpflasterradweg, teilweise Zweirichtungsradweg, oft wechselnde Seite	RW 595,-310 -425,-935 -882,-1220
@@ -146,12 +146,12 @@ Menz - Neuglobsow: Radweg (überwiegend auf altem Bahndamm, asphaltiert, einige k
 Neuglobsow - Fürstenberg: straßenbegleitender asphaltierter Radweg	RW -14354,81575 -12625,81350 -11971,81450 -11849,81547 -10516,83471 -10281,83899 -10109,84134 -10054,84256 -10085,84390 -9850,84800
 Großwoltersdorf - Menu: straßenbegleitender asphaltierter Radweg	RW -12250,73762 -12381,74147 -12575,74512 -13537,75287 -13950,75662 -14862,76637
 #: by: thomas (kara.)
-Heinrich-Mann-Allee: parallele Nebenstraße	;RW -11153,-3534 -11667,-3047
+Heinrich-Mann-Allee: parallele Nebenstraße	;RW -11153,-3534 -11438,-3179 -11656,-2944
 #: by: Arne Grein:
-Heinrich-Mann-Allee: Radweg (auf Gehweg)	RW -11667,-3047 -11781,-2729 -12318,-2192
+Heinrich-Mann-Allee: Radweg (auf Gehweg)	RW -11656,-2944 -11781,-2729 -11912,-2587 -11995,-2500 -12318,-2192
 Amundsenstr.: Richtung Norden Radspur, Richtung Süden asphaltierter Radweg	RW -15581,444 -15589,578 -15527,795
-B273: Gemeinsamer Geh- und Radweg, Verbundsteinpflaster, benutzungspflichtig	RW; -15527,795 -15557,809 -16640,1304 -16905,1503 -16782,1767 -16706,1911
-B273: Radweg, Betonplatten, benutzungspflichtig	RW;  -16640,1304 -15557,809 -15527,795
+B273: Gemeinsamer Geh- und Radweg, Verbundsteinpflaster, benutzungspflichtig	RW; -15527,795 -15557,809 -16023,1042 -16640,1304 -16766,1399 -16905,1503 -16897,1518 -16782,1767 -16706,1911
+B273: Radweg, Betonplatten, benutzungspflichtig	RW;  -16640,1304 -16023,1042 -15557,809 -15527,795
 Am Neuen Palais: Radspuren	RW -15757,-1758 -15799,-1352
 Geschwister-Scholl-Str.: Gehweg für Radfahrer freigegeben	RW; -14909,-1818 -15757,-1758
 #: XXX Dresden vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -239,8 +239,8 @@ Bargischow - Anklam: Radweg, teilweise als Zweirichtungsradweg	RW 28473,161345 2
 #: note: vom Zug aus gesehen
 #: add_fragezeichen: wie weit geht der Radweg in Dahlewitz?
 Dahlewitz: Zweirichtungsradweg auf Gehweg, südlichen Seite	RW 11875,-8728 11555,-8625
-Jägerallee: Radspur	RW; -13111,-136 -13142,-303 -13182,-515
-Jägerallee: Gehweg für Radfahrer freigegeben	RW; -13182,-515 -13142,-303 -13111,-136
+Jägerallee: Radspur	RW; -13111,-136 -13137,-278 -13142,-303 -13182,-515
+Jägerallee: Gehweg für Radfahrer freigegeben	RW; -13182,-515 -13142,-303 -13137,-278 -13111,-136
 Jägerallee: Gehweg für Radfahrer freigegeben	RW -13182,-515 -13231,-763
 Geltow: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW -18025,-6370 -18014,-6027 -18144,-5817
 B1: kombinierte Geh- und Radwege auf beiden Straßenseiten, Verbundsteinpflasterradweg	RW -19012,-5346 -18515,-5282 -17806,-5251 -17682,-5054
@@ -248,7 +248,7 @@ B1: asphaltierte Radwege auf beiden Seiten	RW -17682,-5054 -17564,-4895 -17434,-
 B1: betonierte Radwege auf beiden Seiten	RW -16161,-3777 -16039,-3697 -15669,-3311
 #: by: http://www.mir.brandenburg.de/cms/detail.php?id=290488&_siteid=74
 Radweg zwischen Wandlitz und Klosterfelde: 2m breiter Zweirichtungsradweg	RW 13556,37493 13938,38028 14437,38712 14498,38870 14551,39291 14713,40426 14877,41623 14962,42702
-Wetzlarer Str.: gemeinsamer Geh- und Zweirichtungsradweg auf der westlichen Seite	RW -9088,-3962 -9003,-3826 -8943,-3646 -8500,-2856
+Wetzlarer Str.: gemeinsamer Geh- und Zweirichtungsradweg auf der westlichen Seite	RW -9088,-3962 -9015,-3831 -8997,-3762 -8943,-3646 -8500,-2856
 Bahnstr. (Michendorf): gemeinsamer Geh- und Zweirichtungsradweg auf der westlichen Seite	RW -14705,-10543 -14831,-10652 -15012,-10820 -15137,-10935 -15182,-10981
 Borkheide - Borkwalde: Zweirichtungsradweg auf der westlichen Seite	RW -26258,-20094 -26809,-18383
 ######################### User Contributions #################################
