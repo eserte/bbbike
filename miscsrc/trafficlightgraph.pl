@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: trafficlightgraph.pl,v 1.8 2007/12/11 21:47:55 eserte Exp $
+# $Id: trafficlightgraph.pl,v 1.10 2007/12/14 23:01:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -37,6 +37,7 @@ my $cycle_s = 70;
 my($canvas_w,$canvas_h)=(800,500);
 my $reversed = 0;
 my $ignorelsa = "";
+my($scale_x,$scale_y);
 GetOptions("velocity=s"         => \$v_kmh,
 	   'testvelocity|tv=s@' => \@v_test_kmh,
 	   "green=i"            => \$green_s,
@@ -45,6 +46,8 @@ GetOptions("velocity=s"         => \$v_kmh,
 	   "canvash|ch=i"       => \$canvas_h,
 	   "reversed!"          => \$reversed,
 	   "ignorelsa=s"        => \$ignorelsa,
+	   "scalex=f"           => \$scale_x,
+	   "scaley=f"           => \$scale_y,
 	  ) or die "usage?";
 my $v_ms = kmh2ms($v_kmh);
 if (!@v_test_kmh) {
@@ -117,7 +120,12 @@ my $length = 0;
 
 my($origin_x, $origin_y) = (70,20);
 my $min_v_test_ms = min @v_test_ms;
-my($scale_x,$scale_y) = ($canvas_w/(1.7*$length/$min_v_test_ms),$canvas_h/$length);
+if (!$scale_x) {
+    $scale_x = $canvas_w/(1.7*$length/$min_v_test_ms);
+}
+if (!$scale_y) {
+    $scale_y = $canvas_h/$length;
+}
 
 $c->createLine(w2c(0,0), w2c(0,$length), -arrow => 'last');
 $c->createLine(w2c(0,0), w2c($canvas_w/$scale_x*2,0), -arrow => 'last');
@@ -136,17 +144,19 @@ for my $def (@labels) {
 
 {
     my $x = 0;
+    my $last_cx;
     while() {
 	my($cx,$cy)=w2c($x,-3);
+	$last_cx = $cx if !defined $last_cx;
 	last if $cx > $c->cget(-width)*2; # XXX can vary if resizing...
 	my($cx2,$cy2)=w2c($x,3);
 	$c->createLine($cx,$cy,$cx2,$cy2);
 	if ($x%60==0 || $scale_x >= 2) {
-	    my $label = $x;
-	    if ($scale_x < 2) {
-		$label = s2ms($x);
+	    if ($cx-$last_cx > 30) {
+		my $label = s2ms($x);
+		$c->createText($cx,$cy,-text => $label, -anchor => "n");
+		$last_cx = $cx;
 	    }
-	    $c->createText($cx,$cy,-text => int($x/60), -anchor => "n");
 	}
 	if ($x%60==0) {
 	    $c->createLine($cx,$cy,$cx,0,-dash => "..");
