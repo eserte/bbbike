@@ -772,15 +772,7 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1197673200,
-         'text' => 'L 037 Eisenhüttenstadt-Müllrose Durchlass in der OD Pohlitz Ersatzneubau Vollsperrung 29.10.2007-14.12.2007 ',
-         'from' => 1193526000,
-         'id' => 1217,
-         'data' => 'userdel	q4::inwork 90982,-23216 91107,-23410
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -956,16 +948,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_007404',
-         'until' => 1197673199,
-         'text' => 'Leuthener Str. (Schöneberg) in beiden Richtungen zwischen Leberstr. und Gotenstr. geplatzte Wasserleitung, Straße vollständig gesperrt (bis 14.12.)',
-         'from' => 1197062386,
-         'id' => 1259,
-         'data' => 'userdel	2::inwork 7578,8358 7494,8364
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1198105200,
@@ -1020,15 +1003,6 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork 14535,11327 14575,11407
 ',
          'type' => 'handicap'
-       },
-       {
-         'until' => 1197673200,
-         'text' => 'L 233 Bahnhofstr. OD Rehfelde, zw. Friedrich-Engels-Str. und Bahnübergang Straßenbauarbeiten Vollsperrung 12.12.2007-14.12.2007 ',
-         'from' => 1197327600,
-         'id' => 1267,
-         'data' => 'userdel	2::inwork 45732,14245 45740,14260 45856,14437
-',
-         'type' => 'gesperrt'
        }
      
 );

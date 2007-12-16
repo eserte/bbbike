@@ -1912,7 +1912,8 @@ sollte es auch eine Möglichkeit geben, die privaten Fragezeichen im
 Nicht-Edit-Modus anzuschauen)
 
 =item last_checked/next_check mit relativen Datum: diese könnten
-automatisch als öffentliche Fragezeichen erzeugt werden
+automatisch als öffentliche Fragezeichen erzeugt werden (falls nicht
+ausdrücklich als privat gekennzeichnet)
 
 =item Datensätze mit add_fragezeichen-Direktiven versehen: diese sind
 in fragezeichen-orig nicht sichtbar, dafür aber in fragezeichen
@@ -1923,53 +1924,49 @@ in fragezeichen nicht sichtbar
 =item Es gibt Fragezeichen, die das Abfahren einer Strecke verlangen
 sowie Fragezeichen, die durch andere Recherchemöglichkeiten aufgelöst
 werden (z.B. Ortsteilfragen, nicht ausgeschilderte offizielle
-Straßennamen ...)
+Straßennamen ...) -> indoor vs. outdoor
+
+=item Es gibt Fragezeichen, die durch eine technische Änderung
+aufgelöst werden können (z.B. durch das Einführen von neuen
+Straßenattributen)
 
 =back
 
-Die öffentlichen Fragezeichen können bleiben wie bislang; evtl.
-könnten die last_checked/next_check-Datensätze automatisch aufgenommen
-werden.
-
-Im Editier-Modus muss zusätzlich sichtbar sein:
-- die add_fragezeichen-Datensätze
-- die XXX-Datensätze (vielleicht zwei Varianten hier erzeugen?)
-
--> Pragmatischer Ansatz: im edit-mode werden einfach noch die
-fragezeichen-Strecken zusätzlich zu fragezeichen-orig angezeigt.
-
-*** Neuer Versuch ***
-
-Es gibt drei fragezeichen-Dateien am Ende:
+Es gibt folgende fragezeichen-Dateien am Ende:
 
  - fragezeichen-public (weiterhin nur E<quot>fragezeichenE<quot>
-   genannt) 
- - fragezeichen-private-vorort (für alles, was E<quot>vor OrtE<quot>
+   genannt, einzige Datei, die in die Distribution wandert)
+ - fragezeichen-private-outdoor (für alles, was E<quot>vor OrtE<quot>
    recherchiert werden kann; falls es eine
    nextcheck/lastcheck-Direktive gibt, wird diese beachtet)
- - fragezeichen-private-office (für alles, was im Internet oder
+ - fragezeichen-private-indoor (für alles, was im Internet oder
    sonstwo recherchiert werden kann)
  - fragezeichen-checklater (ebenso Sachen, die
    E<quot>vor OrtE<quot> recherchiert werden können, aber die später
    überprüft werden sollen --- wegen einer
    nextcheck/lastcheck-Direktive. Hier können sich öffentliche und
    private Fragezeichen befinden)
+ - fragezeichen-tech (Sachen, die durch technische Änderungen
+   aufgelöst werden können)
+
+XXX.bbd wird nicht mehr benötigt. Alle fragezeichen-*-Dateien außer
+-public kommen nach bbbike/tmp.
 
 Ungefähre Einordnung der jetzigen Daten:
 
  - geplante Straßen und Radstreifen: sofern nicht durch nextcheck
    oder ein Fertigstellungsdatum im Text abgedeckt, können diese ruhig
    nach fragezeichen-public (aber genauer prüfen!)
- - section private Fragezeichen: bleibt so
+ - section private Fragezeichen -> fragezeichen-private-indoor oder -outdoor
  - Aufnahme in DB fraglich: dieser Abschnitt sollte entfernt werden
- - Isolierte Einträge: fragezeichen-private-vorort
- - öffentliche Fragezeichen: bleibt so
- - XXX -> fragezeichen-private-vorort
+ - Isolierte Einträge: fragezeichen-private-outdoor
+ - öffentliche Fragezeichen: fragezeichen-public
+ - XXX (alternativ: XXX-outdoor) -> fragezeichen-private-outdoor
  - add_fragezeichen -> fragezeichen-public
- - weiterhin wird eine neue Direktive für fragezeichen-private-office
-   benötigt 
-
-Übrigens: vor/am Ort -> on-scene, on-site
+ - eine neue Direktive für fragezeichen-private-indoor:
+   XXX-indoor
+ - eine neue Direktive für fragezeichen-tech:
+   XXX-tech
 
 =item * (H4)
 
@@ -2493,7 +2490,7 @@ Im Umland sollte statt Kreuzungen bevorzugt der Ortsname verwendet
 werden. Der Code dazu ist teilweise schon vorbereitet (siehe
 get_kreuzung, if (0)).
 
-=item * (E5)
+=item * (M5)
 
 $g_str muss wissen, welcher Scope verwendet wurde. Und jeder Zugriff
 auf get_streets muss ggfs. get_streets_rebuild_dependents aufrufen,
