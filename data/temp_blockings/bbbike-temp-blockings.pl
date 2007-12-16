@@ -9801,8 +9801,8 @@ userdel	q4::inwork 36000,45950 35743,45915
 EOF
      },
      { from  => 1188684000, # 2007-09-02 00:00
-       until => 1199142000, # 2008-01-01 00:00
-       text  => 'L 035 Dr. W.-Külz-Str. OL Fü.-walde zw. Sembritzki- u. Eisenbahnstr. Abwasserkanalbau Vollsperrung 03.09.2007-31.12.2007 ',
+       until => 1209592800, # 2008-05-01 00:00
+       text  => 'L 035 Dr. W.-Külz-Str. OL Fü.-walde zw. Sembritzki- u. Eisenbahnstr. Abwasserkanalbau Vollsperrung 03.09.2007-30.04.2008 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 55447,-4585 55447,-4432 55447,-4247
@@ -10387,7 +10387,7 @@ userdel	q4::inwork -32394,-12207 -32010,-12375 -31776,-12438 -31585,-12330
 EOF
      },
      { from  => 1193957489, # 2007-11-01 23:51
-       until => 1199141999, # 2007-12-31 23:59
+       until => 1197837567, # 2007-12-31 23:59 1199141999
        text  => 'Askanierring (Spandau) in Richtung Fehrbelliner Tor ab Eckschanze Baustelle, Fahrtrichtung gesperrt (bis Ende 2007)',
        type  => 'gesperrt',
        source_id => 'IM_002956',
@@ -10638,7 +10638,7 @@ userdel	2::inwork -18640,-11826 -19043,-11944 -19150,-11976
 EOF
      },
      { from  => 1197154800, # 2007-12-09 00:00
-       until => 1198278000, # 2007-12-22 00:00
+       until => 1197838145, # 2007-12-22 00:00 1198278000
        text  => 'L 029 Hohenfinow - Heckelberg zw. Heckelberg und Kruge Fahrbahninstandsetzung Vollsperrung 10.12.2007-21.12.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -10683,6 +10683,30 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 45732,14245 45740,14260 45856,14437
+EOF
+     },
+     { from  => 1188165600, # 2007-08-27 00:00
+       until => 1197838127, # 2007-12-21 00:00 1198191600
+       text  => 'B 168 zw. Friedland und Beeskow Straßenbauarbeiten Vollsperrung 28.08.2007-20.12.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 69461,-27572 69160,-25724
+EOF
+     },
+     { from  => 1197327600, # 2007-12-11 00:00
+       until => 1197932400, # 2007-12-18 00:00
+       text  => 'B 189 Wittstocker Chaussee Bahnübergang in der OD Pritzwalk Gleissanierungsarbeiten Vollsperrung 12.12.2007-17.12.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -73222,81222 -72939,81204
+EOF
+     },
+     { from  => 1197759600, # 2007-12-16 00:00
+       until => 1198105200, # 2007-12-20 00:00
+       text  => 'L 283 Parstein - B 2 Schmargendorf Bahnübergang in der OD Herzsprung Bauarbeiten am BÜ Vollsperrung 17.12.2007-19.12.2007 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 49004,64047 48516,64085 48151,64245
 EOF
      },
     );

@@ -27,7 +27,7 @@ Alt-Moabit zwischen Kirch- und Paulstraße	? 7192,13036 7000,13067 6882,13088 675
 Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 10109,12238 10084,12228 9972,12184
 #: last_checked: 2007-08-04
 Köpenicker Str.	? 11574,11594 11807,11479 11943,11398 12026,11348
-#: last_checked: 2007-09-16
+#: last_checked: 2007-12-10
 Gitschiner Str.	? 9948,10280 10122,10294 10340,10301 10605,10312 10859,10333 10962,10340 11117,10326
 #: last_checked: 2007-10-03
 Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 12188,14321 12338,14532 12384,14600 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941 12628,14962 12722,15105 12743,15138 12880,15335 12966,15478 13098,15592 13316,15758
@@ -1304,7 +1304,7 @@ Pegnitring oder Str. 136? beleuchtet? fester Sandweg	? -8050,5560 -7969,5453 -79
 (Wasserwerk Wuhlheide - An der Wuhlheide): Qualität? (zumindest an der südlichen Seite Kopfsteinpflaster)	? 19338,7148 19223,7189 19084,7009 19069,6928
 Bau einer Ampel, voraussichtlich im Frühjahr 2007	? 16669,25373
 Semnonenweg: voraussichtlich 2006-12-01 mit einer neuen Asphaltdecke versehen	? -4482,10914 -4536,10670
-Wassermannstr.: Qualität zwischen Radickestr. und Glienicker Weg?	? 21055,3415 20992,3493 20924,3577 20776,3753
+Wassermannstr.: Qualität zwischen Radickestr. und Büchnerweg?	? 20924,3577 20776,3753
 # XXX del (keine Bestätigung durch Michael Bona) Alexanderstr./Alexa: Ampel in Vorbereitung	? 11207,12706
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20061025.0935.49339.html, aber ganz klar ist es nicht, ob nur die Straßenanbindung oder die gesamte Straße gemeint ist, und welcher Radweg?
 Hackenbergstr.: Qualität? Gibt es hier einen Radweg?	? 20429,3792 20280,3996 20253,4034 20248,4040
@@ -1453,8 +1453,6 @@ Freest - Peenemünde: Daten zur Fähre	? 28887,192995 29771,193403 30100,193330 30
 Niederschlemaer Weg: Qualität?	? 18447,1727 18444,1782 18425,1831
 #: XXX Eintrag von Frauke (goenner) (Q3 Kopfsteinpflaster whole, Radstreifen RW4) korrespondiert nicht zum Luftbild
 Brusebergstr.: Qualität? (Kopfsteinpflaster bis Lübener Weg, danach betoniert oder asphaltiert?) Gibt es Radwege für Radfahrer?	? 6383,18033 6307,18039 6145,18016 6115,18042 6086,18162 6045,18305 6060,18534
-#: XXX Eintrag von baeskow (RW) korrespondiert nicht zum Luftbild?
-Klenzepfad: Gibt es Radwege für Radfahrer	? 6086,18162 6304,18197 6314,18295 6339,18638 6329,18663 6306,18673
 Lorenzstr./Parallelstr.: Ampel?	? 5720,2081
 Parallelstr.: endet die Parallelstr. am südwestlichen oder am nordöstlichen Teil der Luisenstr.?	? 5807,2117 5825,2125
 #: XXX unklarer anonymer Eintrag:
@@ -1520,8 +1518,6 @@ Treptower Str. (Neubrandenburg): Qualität?	? -1703,127871 -1806,127864 -1950,127
 Brüssow - Wollschow: nach den Bauarbeiten (2007-12-20) mit Radweg?	? 57995,111657 58357,111700 60639,112544 61502,112547
 #: note: suggested by LBVS Meldenummer: 72301100
 Spechthausen - Eberswalde: existiert hier ein Radweg?	? 35066,45479 35484,45412 35743,45915 36000,45950 36318,46378 36950,46950
-Kuhligkshofstr.: Qualität? Einbahnstraße?	? 4991,5531 4911,5428
-Kuhligkshofstr.: Qualität? Einbahnstraße?	?; 4911,5428 4869,5386 4741,5309
 Sonnenweg: Qualität?	? 34046,155 34267,94 34309,59 34451,109 34606,-92 34905,-188 34972,-239 35100,-95
 Fürstenwalde: Qualität? Straßennamen?	? 55447,-4432 55677,-4489 55754,-4521 55793,-4521 55787,-4468 55740,-4453 55746,-4408 55888,-4384 56147,-4494 56517,-4606 56495,-4732
 Falkenberg - Wilmersdorf: Qualität?	? 67223,-1765 67432,-1337 67874,-787 67931,-717 68094,-376 68205,-201 68275,102 68336,222 68475,377 68583,444 68936,594 69213,658 69364,652
@@ -1557,3 +1553,5 @@ Grüner Weg von Kielingerstraße bis Buschkrugallee: existiert hier ein Radweg?	? 
 Fritz-Reuter-Allee: existiert hier ein Radweg?	? 13600,5240 13675,4855 13680,4715 13659,4489 13626,4304 13522,4158 13453,4043 13476,3857 13526,3519
 #: note: siehe http://www.berlin.de/ba-neukoelln/presse/archiv/20071108.1600.88578.html, Luftbild ist nicht immer eindeutig
 Kornradenstr.: existiert hier ein Radweg?	? 16182,2200 16302,2168 16518,2122 16570,2113 16809,2091
+#: XXX: unklarer Eintrag von Carsten (honda ntv): fester Sandweg Q2 (nicht klar im Luftbild), Schrittgeschwindigkeit ohne Begründung
+Springerzeile: Qualität? Spielstraße?	? -5877,13375 -6035,13333 -6220,13289 -6595,13198

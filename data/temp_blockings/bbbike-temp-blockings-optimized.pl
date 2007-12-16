@@ -475,16 +475,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_006159',
-         'until' => 1197759599,
-         'text' => 'Persiusstr. (Friedrichshain) in beiden Richtungen bei Markgrafendamm Baustelle, Straße vollständig gesperrt, Radfahrer können aber passieren (bis Mitte 12.2007)',
-         'from' => 1195686296,
-         'id' => 1084,
-         'data' => 'userdel	2::inwork 14641,10552 14488,10603
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -620,8 +611,8 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        {
-         'until' => 1199142000,
-         'text' => 'L 035 Dr. W.-Külz-Str. OL Fü.-walde zw. Sembritzki- u. Eisenbahnstr. Abwasserkanalbau Vollsperrung 03.09.2007-31.12.2007 ',
+         'until' => 1209592800,
+         'text' => 'L 035 Dr. W.-Külz-Str. OL Fü.-walde zw. Sembritzki- u. Eisenbahnstr. Abwasserkanalbau Vollsperrung 03.09.2007-30.04.2008 ',
          'from' => 1188684000,
          'id' => 1163,
          'data' => 'userdel	q4::inwork 55447,-4585 55447,-4432 55447,-4247
@@ -821,16 +812,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_002956',
-         'until' => 1199141999,
-         'text' => 'Askanierring (Spandau) in Richtung Fehrbelliner Tor ab Eckschanze Baustelle, Fahrtrichtung gesperrt (bis Ende 2007)',
-         'from' => 1193957489,
-         'id' => 1232,
-         'data' => 'userdel	1::inwork -3972,15639 -3985,15770 -3942,15926 -3735,16205 -3631,16224
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_007023',
          'until' => 1214863200,
@@ -851,16 +833,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_007063',
-         'until' => 1197759599,
-         'text' => 'Schlichtallee (Lichtenberg) in beiden Richtungen zwischen Hauptstr. und Lückstr. Baustelle, Straße vollständig gesperrt (bis Mitte 12.2007)',
-         'from' => 1194301150,
-         'id' => 1236,
-         'data' => 'userdel	2::inwork 15751,10582 15629,10481
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_007093',
          'until' => 1198277999,
@@ -959,24 +932,8 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1198278000,
-         'text' => 'L 029 Hohenfinow - Heckelberg zw. Heckelberg und Kruge Fahrbahninstandsetzung Vollsperrung 10.12.2007-21.12.2007 ',
-         'from' => 1197154800,
-         'id' => 1262,
-         'data' => 'userdel	2::inwork 39917,38037 40666,38512 42062,39651
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1197759600,
-         'text' => 'L 030 Lindenstr. Bahnübergang zur Bahnhof- u. Bruchmühler Str. in Petershagen Gleisbauarbeiten Vollsperrung 10.12.2007-15.12.2007 ',
-         'from' => 1197154800,
-         'id' => 1263,
-         'data' => 'userdel	2::inwork 35386,13954 35427,13624
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1198278000,
          'text' => 'L 238 Eberswalde-ASWerbellin Brücke der A 11 zw. Lichterfelde u. Altenhof Straßenanbindung Vollsperrung 10.12.2007-21.12.2007 ',
@@ -986,15 +943,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1197759600,
-         'text' => 'L 792 Groß Schulzendorf-Mahlow OD Blankenfelde, Kno. Zossener-/Potsdamer Damm Deckeneinbau Vollsperrung 08.12.2007-15.12.2007 ',
-         'from' => 1196982000,
-         'id' => 1265,
-         'data' => 'userdel	2::inwork 10023,-8859 10115,-8276
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Holteistraße: Bauarbeiten zwischen Sonntagstr. und Wühlischstr., Fahrbahn ist nicht benutzbar',
@@ -1003,6 +952,26 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork 14535,11327 14575,11407
 ',
          'type' => 'handicap'
+       },
+       undef,
+       undef,
+       {
+         'until' => 1197932400,
+         'text' => 'B 189 Wittstocker Chaussee Bahnübergang in der OD Pritzwalk Gleissanierungsarbeiten Vollsperrung 12.12.2007-17.12.2007 ',
+         'from' => 1197327600,
+         'id' => 1269,
+         'data' => 'userdel	2::inwork -73222,81222 -72939,81204
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1198105200,
+         'text' => 'L 283 Parstein - B 2 Schmargendorf Bahnübergang in der OD Herzsprung Bauarbeiten am BÜ Vollsperrung 17.12.2007-19.12.2007 ',
+         'from' => 1197759600,
+         'id' => 1270,
+         'data' => 'userdel	2::inwork 49004,64047 48516,64085 48151,64245
+',
+         'type' => 'gesperrt'
        }
      
 );
