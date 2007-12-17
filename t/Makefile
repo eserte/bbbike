@@ -8,10 +8,7 @@ PERL?=	perl
 
 test:
 	LANG=C $(PERL) -w -I.. -I../lib -MTest::Harness -e \
-	    'BEGIN { if (!eval q{ use List::Util qw(shuffle); 1 }) { \
-			*shuffle = sub { @_ }; \
-		     } \
-	     } runtests(shuffle @ARGV)' *.t
+	    'BEGIN { if (!eval q{ use List::Util qw(shuffle); 1 }) { *shuffle = sub { @_ }; } } runtests(shuffle @ARGV)' *.t
 
 interactive:
 	./cgi2.pl -v -netscape -today
