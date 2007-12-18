@@ -955,21 +955,23 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        undef,
        undef,
-       {
-         'until' => 1197932400,
-         'text' => 'B 189 Wittstocker Chaussee Bahnübergang in der OD Pritzwalk Gleissanierungsarbeiten Vollsperrung 12.12.2007-17.12.2007 ',
-         'from' => 1197327600,
-         'id' => 1269,
-         'data' => 'userdel	2::inwork -73222,81222 -72939,81204
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1198105200,
          'text' => 'L 283 Parstein - B 2 Schmargendorf Bahnübergang in der OD Herzsprung Bauarbeiten am BÜ Vollsperrung 17.12.2007-19.12.2007 ',
          'from' => 1197759600,
          'id' => 1270,
          'data' => 'userdel	2::inwork 49004,64047 48516,64085 48151,64245
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_007457',
+         'until' => 1198278000,
+         'text' => 'Fürstenwalder Damm (Köpenick) Richtung Salvador-Allende-Str. zwischen Bölschestr. und Ahornallee Baustelle, Fahrtrichtung gesperrt (bis 21.12.2007)',
+         'from' => 1197933378,
+         'id' => 1271,
+         'data' => 'userdel	1::inwork 25579,5980 25121,5799
 ',
          'type' => 'gesperrt'
        }

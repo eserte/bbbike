@@ -10709,4 +10709,13 @@ EOF
 userdel	2::inwork 49004,64047 48516,64085 48151,64245
 EOF
      },
+     { from  => 1197933378, # 2007-12-18 00:16
+       until => 1198278000, # 2007-12-22 00:00
+       text  => 'Fürstenwalder Damm (Köpenick) Richtung Salvador-Allende-Str. zwischen Bölschestr. und Ahornallee Baustelle, Fahrtrichtung gesperrt (bis 21.12.2007)',
+       type  => 'gesperrt',
+       source_id => 'IM_007457',
+       data  => <<EOF,
+userdel	1::inwork 25579,5980 25121,5799
+EOF
+     },
     );

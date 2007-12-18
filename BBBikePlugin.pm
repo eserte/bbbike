@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePlugin.pm,v 1.15 2007/04/23 22:01:46 eserte Exp $
+# $Id: BBBikePlugin.pm,v 1.15 2007/04/23 22:01:46 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2006 Slaven Rezic. All rights reserved.
@@ -187,8 +187,8 @@ sub place_menu_button {
 	add_to_global_plugins_menu(-topmenu   => $topmenu,
 				   -menuitems => $menuitems,
 				   -title     => $title,
+				   -advertisedname => $advertised_name,
 				  );
-	$advertised_name_to_title{$advertised_name} = $title;
     }
 }
 
@@ -198,6 +198,7 @@ sub add_to_global_plugins_menu {
     my $topmenu   = delete $args{-topmenu}; # maybe be single or multiple menu items
     my $menuitems = delete $args{-menuitems} || [];
     my $title     = delete $args{-title};
+    my $advertised_name = delete $args{-advertisedname};
 
     if (Tk::Exists($BBBike::Menubar::plugins_menu)) {
 	my $m = $BBBike::Menubar::plugins_menu;
@@ -222,6 +223,9 @@ sub add_to_global_plugins_menu {
 	$m->cascade(-label => $title,
 		    -menuitems => \@menuitems,
 		   );
+	if ($advertised_name) {
+	    $advertised_name_to_title{$advertised_name} = $title;
+	}
     }
 }
 
@@ -244,6 +248,11 @@ sub remove_menu_button {
 	    $other_mb->place(-x => $other_place_info{"-x"} - $mb_w);
 	}
     }
+    remove_from_global_plugins_menu($advertised_name);
+}
+
+sub remove_from_global_plugins_menu {
+    my($advertised_name) = @_;
     if (Tk::Exists($BBBike::Menubar::plugins_menu) and
 	my $title = $advertised_name_to_title{$advertised_name}) {
 	my $m = $BBBike::Menubar::plugins_menu;
