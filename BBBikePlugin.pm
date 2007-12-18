@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePlugin.pm,v 1.15 2007/04/23 22:01:46 eserte Exp eserte $
+# $Id: BBBikePlugin.pm,v 1.16 2007/12/18 07:47:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2006 Slaven Rezic. All rights reserved.
@@ -257,7 +257,9 @@ sub remove_from_global_plugins_menu {
 	my $title = $advertised_name_to_title{$advertised_name}) {
 	my $m = $BBBike::Menubar::plugins_menu;
 	for my $m_inx (0 .. $m->index("end")) {
-	    if (eval { $m->entrycget($m_inx, '-label') } eq $title) {
+	    my $entry_label = eval { $m->entrycget($m_inx, '-label') };
+	    $entry_label = "" if !defined $entry_label;
+	    if ($entry_label eq $title) {
 		$m->delete($m_inx);
 		last;
 	    }

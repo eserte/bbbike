@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GeocoderPlugin.pm,v 1.3 2007/12/18 00:27:22 eserte Exp $
+# $Id: GeocoderPlugin.pm,v 1.4 2007/12/18 07:48:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 require Karte::Standard;
 require Karte::Polar;
@@ -116,6 +116,20 @@ sub geocoder_dialog {
 				 $location->{address} . ", " . $location->{city} . ", " . $location->{state} . "\n" .
 				     $location->{longitude} . "," . $location->{latitude};
 			     },
+			     'fix_result' => sub {
+				 my $location = shift;
+				 if ($Yahoo::Search::XML::VERSION le '20060729.004') {
+				     # utf-8 not flagged correctly, trying to fix
+				     # See http://rt.cpan.org/Ticket/Display.html?id=31618
+				     if (eval { require Data::Rmap;
+						require Encode;
+					    }) {
+					 Data::Rmap::rmap(sub { $_ = Encode::decode("utf-8", $_) }, $location);
+				     } else {
+					 warn "Cannot repair Yahoo response: $@";
+				     }
+				 }
+			     },
 			   },
 	       );
     for my $_api (sort keys %apis) {
@@ -140,6 +154,7 @@ sub geocoder_dialog {
 			my $gc = $apis{$geocoder_api};
 			my $geocoder = $gc->{new}->();
 			my $location = $geocoder->geocode(location => $loc);
+			$gc->{fix_result}->($location) if $gc->{fix_result};
 			require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$location],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 			if ($location) {
 			    $res->delete("1.0", "end");
