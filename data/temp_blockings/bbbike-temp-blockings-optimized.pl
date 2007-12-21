@@ -397,15 +397,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1198191600,
-         'text' => 'L 235 Gielsdorf-Werneuchen OD Werneuchen Straßenausbau Vollsperrung 29.08.2007-20.12.2007 ',
-         'from' => 1188252000,
-         'id' => 1040,
-         'data' => 'userdel	q4::inwork 32766,25156 33511,24201
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -464,8 +456,8 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        {
-         'until' => 1199142000,
-         'text' => 'L 023 Herzfelde-Strausberg OD Hennickendorf, unterhalb Wachtelberg Instandsetzung Stützwand Vollsperrung 23.07.2007-31.12.2007 ',
+         'until' => 1198278000,
+         'text' => 'L 023 Herzfelde-Strausberg OD Hennickendorf, unterhalb Wachtelberg Instandsetzung Stützwand Vollsperrung 23.07.2007-21.12.2007 ',
          'from' => 1185055200,
          'id' => 1080,
          'data' => 'userdel	2::inwork 40565,12409 40362,12087
@@ -590,15 +582,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1198364400,
-         'text' => 'L 026 Landesgrenze - AS Prenzlau-Ost (BAB A11) zw. OA Wollschow u. OE Brüssow grundhafter Straßenbau, Radweg Vollsperrung 10.09.2007-22.12.2007 ',
-         'from' => 1189288800,
-         'id' => 1159,
-         'data' => 'userdel	2::inwork 61502,112547 60639,112544 58357,111700 57995,111657
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -676,18 +660,10 @@ push @temp_blocking,
        undef,
        undef,
        undef,
+       undef,
        {
-         'until' => 1198191600,
-         'text' => 'L 141 Havelberger Str. OD Breddin Kanal- u. Straßenbauarbeiten Vollsperrung 04.10.2007-20.12.2007 ',
-         'from' => 1191362400,
-         'id' => 1188,
-         'data' => 'userdel	q4::inwork -70922,51604 -70980,51154 -71053,49770
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1203116400,
-         'text' => 'L 314 Zepernicker Chaussee OD Bernau grundhafter Straßenbau Vollsperrung 04.10.2007-15.02.2008 ',
+         'until' => 1198278000,
+         'text' => 'L 314 Zepernicker Chaussee OD Bernau grundhafter Straßenbau Vollsperrung 04.10.2007-21.12.2007 ',
          'from' => 1191362400,
          'id' => 1189,
          'data' => 'userdel	q4::inwork 22178,30343 21872,30139 21561,30131 21172,29984
@@ -731,15 +707,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1199055600,
-         'text' => 'L 030 Börnicker Chaussee OD Bernau, zw. Gernotstr. und Eberswalder Str. grundhater Straßenbau Vollsperrung 16.10.2007-30.12.2007 ',
-         'from' => 1192399200,
-         'id' => 1201,
-         'data' => 'userdel	2::inwork 23113,30450 23368,30409 23631,30262
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -852,8 +820,8 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        {
-         'until' => 1198278000,
-         'text' => 'L 015 Hardenbeck - Fürstenberg OD Lychen, Prenzlauer Str. Kanal- und Straßenbau Vollsperrung 19.11.2007-21.12.2007 ',
+         'until' => 1201820400,
+         'text' => 'L 015 Hardenbeck - Fürstenberg OD Lychen, Prenzlauer Str. Kanal- und Straßenbau Vollsperrung 19.11.2007-31.01.2008 ',
          'from' => 1195340400,
          'id' => 1245,
          'data' => 'userdel	q4::inwork 2940,90332 2565,89990 2745,89716
@@ -923,15 +891,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        undef,
-       {
-         'until' => 1198105200,
-         'text' => 'K 6907 Bahnübergang Ferch-Lienewitz Gleisbauarbeiten Vollsperrung 14.12.2007-19.12.2007 ',
-         'from' => 1197500400,
-         'id' => 1261,
-         'data' => 'userdel	2::inwork -18640,-11826 -19043,-11944 -19150,-11976
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -956,15 +916,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        undef,
-       {
-         'until' => 1198105200,
-         'text' => 'L 283 Parstein - B 2 Schmargendorf Bahnübergang in der OD Herzsprung Bauarbeiten am BÜ Vollsperrung 17.12.2007-19.12.2007 ',
-         'from' => 1197759600,
-         'id' => 1270,
-         'data' => 'userdel	2::inwork 49004,64047 48516,64085 48151,64245
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_007457',
          'until' => 1198278000,
@@ -972,6 +924,33 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'from' => 1197933378,
          'id' => 1271,
          'data' => 'userdel	1::inwork 25579,5980 25121,5799
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1209592800,
+         'text' => 'L 023 Herzfelde-Strausberg OD Hennickendorf, unterhalb Wachtelberg Instandsetzung Stützwand Vollsperrung 07.01.2008-30.04.2008 ',
+         'from' => 1199574000,
+         'id' => 1272,
+         'data' => 'userdel	2::inwork 40565,12409 40362,12087
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1212271200,
+         'text' => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, zw. A.-Bebel-Str. und R.-Breitscheid Straßenbau, Entwässerung Vollsperrung 21.12.2007-31.05.2008 ',
+         'from' => 1198105200,
+         'id' => 1273,
+         'data' => 'userdel	q4::inwork 34511,4787 34535,5319
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1198278000,
+         'text' => 'L 085 Brück-Golzow zw. OA Golzow und OE Cammer Straßenbau Vollsperrung 19.12.2007-21.12.2007 ',
+         'from' => 1197932400,
+         'id' => 1274,
+         'data' => 'userdel	2::inwork -42483,-15134 -41439,-15493 -41352,-15664 -39523,-16953
 ',
          'type' => 'gesperrt'
        }

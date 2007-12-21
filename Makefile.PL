@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.140 2007/10/18 21:18:00 eserte Exp $
+# $Id: Makefile.PL,v 1.141 2007/12/20 22:25:49 eserte Exp eserte $
 
 use 5.005;
 
@@ -74,6 +74,8 @@ my @req_table =
   [qw/Tk::PNG		0	all	0|4	gui/,
    'Für Icons mit besserer Alpha-Unterstützung'],
   [qw/Tk::NumEntry	2.06	all	0|4	gui/],
+  [qw/X11::Protocol	0	unix	0	gui/,
+   'Rotated text support'],
 
   [qw/LWP::UserAgent	0	all	2|4	www,gui/,
    'für die WWW-Verbindungen (z.B. Wetterbericht); in der Perl/Tk-GUI empfohlen für Daten-Updates über das Internet (ansonsten wird Http.pm verwendet)'],
@@ -198,6 +200,13 @@ my @req_table =
   [qw/Sort::Naturally	0	all	0	base/,
    'Für natürliches Sortieren von bbd-Dateien'],
 
+  [qw/WWW::Search::Google	0	all	0	plugin/,
+   'Suche in luise-berlin'],
+  [qw/Geo::Coder::Google	0	all	0	plugin/,
+   'Geocoding über Googlemaps'],
+  [qw/Geo::Coder::Yahoo	0	all	0	plugin/,
+   'Geocoding über Yahoo'],
+
   [qw/Image::Info	0	all	0	test/],
   [qw/Test::More	0	all	0	test/],
   [qw/Test::Differences	0	all	0	test/],
@@ -207,6 +216,11 @@ my @req_table =
   [qw/Devel::Leak	0	all	0	test/,
    'Für Memory-Leak-Tests'],
   [qw/Text::Table	0	all	0	devel/],
+
+  ## Maybe in future:
+  # DBD::Pg - Strassen::Pg
+  # Text::LevenshteinXS - PLZ::Levenshtein
+  # Tk::Wizard - BBBikeImportWizard
  );
 
 # EXE corequisites ####################################################
