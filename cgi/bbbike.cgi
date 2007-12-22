@@ -1,11 +1,9 @@
 #!/usr/bin/env perl
-## Use this shebang on cs.tu-berlin.de:
-#!/usr/perl5/5.00503/bin/perl
 #!/usr/local/bin/perl
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.72 2007/10/14 20:28:51 eserte Exp $
+# $Id: bbbike.cgi,v 8.73 2007/12/22 21:15:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -68,7 +66,7 @@ use Strassen::Dataset;
 #use Strassen::Lazy; # XXX mal sehen...
 use BBBikeCalc;
 use BBBikeVar;
-use BBBikeUtil qw(is_in_path min max);
+use BBBikeUtil qw(is_in_path min max kmh2ms);
 use BBBikeCGIUtil;
 use File::Basename qw(dirname);
 use CGI;
@@ -708,7 +706,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.72 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.73 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -3514,8 +3512,7 @@ sub search_coord {
 	    @path = $r->path_list;
 	}
 
-	my($next_entf, $ges_entf_s, $next_winkel, $next_richtung, $next_extra);
-	($next_entf, $ges_entf_s, $next_winkel, $next_richtung, $next_extra)
+	my($next_entf, $ges_entf_s, $next_winkel, $next_richtung, $next_extra)
 	    = (0, "", undef, "", undef);
 
 	my $ges_entf = 0;
@@ -3523,7 +3520,7 @@ sub search_coord {
 	    my $strname;
 	    my $etappe_comment = '';
 	    my $fragezeichen_comment = '';
-	    my $entf_s;
+	    my $entf_s = '';
 	    my $raw_direction;
 	    my $route_inx;
 	    my($entf, $winkel, $richtung, $extra)
@@ -3643,24 +3640,26 @@ sub search_coord {
 		$fragezeichen_comment = join("; ", @comments) if @comments;
 	    }
 
-	    push @out_route, {
-			      Dist => $entf,
-			      DistString => $entf_s,
-			      TotalDist => $ges_entf,
-			      TotalDistString => $ges_entf_s,
-			      Direction => $raw_direction,
-			      DirectionString => $richtung,
-			      Angle => $winkel,
-			      Strname => $strname,
-			      ($with_comments && $comments_net ?
-			       (Comment => $etappe_comment) : ()
-			      ),
-			      ($has_fragezeichen_routelist ?
-			       (FragezeichenComment => $fragezeichen_comment) : () # XXX key label may change!
-			      ),
-			      Coord => join(",", @{$r->path->[$route_inx->[0]]}),
-			      PathIndex => $route_inx->[0],
-			     };
+	    my $hop_info =
+		{
+		 Dist => $entf,
+		 DistString => $entf_s,
+		 TotalDist => $ges_entf,
+		 TotalDistString => $ges_entf_s,
+		 Direction => $raw_direction,
+		 DirectionString => $richtung,
+		 Angle => $winkel,
+		 Strname => $strname,
+		 ($with_comments && $comments_net ?
+		  (Comment => $etappe_comment) : ()
+		 ),
+		 ($has_fragezeichen_routelist ?
+		  (FragezeichenComment => $fragezeichen_comment) : () # XXX key label may change!
+		 ),
+		 Coord => join(",", @{$r->path->[$route_inx->[0]]}),
+		 PathIndex => $route_inx->[0],
+		};
+	    push @out_route, $hop_info;
 	}
 	$ges_entf += $next_entf;
 	$ges_entf_s = sprintf "%.1f km", $ges_entf/1000;
@@ -3672,6 +3671,7 @@ sub search_coord {
 			  TotalDistString => $ges_entf_s,
 			  DirectionString => M("angekommen") . "!",
 			  Strname => $zielname,
+			  Comment => '',
 			  Coord => join(",", @{$r->path->[-1]}),
 			  PathIndex => $#{$r->path},
 			 };
@@ -3817,12 +3817,22 @@ sub search_coord {
 		print qq{<center><form name="Ausweichroute" action="} . #XXX del BBBikeCGIUtil::my_self_url($q)
 		    BBBikeCGIUtil::my_url($q) . qq{" } . (@affecting_blockings > 1 ? qq{onSubmit="return test_temp_blockings_set()"} : "") . qq{>};
 		print $hidden;
+		if ($sess) {
+		    print $q->hidden(-name    => 'oldcs',
+				     -default => $sess->{_session_id},
+				    );
+		}
 		print M("Ereignisse, die die Route betreffen k&ouml;nnen") . ":<br>";
 		for my $tb (@affecting_blockings) {
+		    my $lost_time_info = lost_time($r, $tb, $velocity_kmh);
 		    print "<input type=\"" .
 			(@affecting_blockings > 1 ? "checkbox" : "hidden") .
 			    "\" name=\"custom\" value=\"temp-blocking-$tb->{'index'}\"> ";
-		    print "$tb->{text}<br>";
+		    print "$tb->{text}";
+		    if ($lost_time_info && $lost_time_info->{lost_time_string_de}) {
+			print " ($lost_time_info->{lost_time_string_de})";
+		    }
+		    print "<br>";
 		}
 		print <<EOF;
 <input type=submit value="@{[ M("Ausweichroute suchen") ]}"><hr>
@@ -3831,7 +3841,15 @@ EOF
             }
 	}
 	if (@custom && !$printmode) {
-	    print "<center>" . M("Mögliche Ausweichroute") . "</center>\n";
+	    print "<center>";
+	    my $diff_info = diff_from_old_route($r);
+	    if ($diff_info->{different}) {
+		print M("Mögliche Ausweichroute ");
+		print $diff_info->{difference_de} if $diff_info->{difference_de};
+	    } else {
+		print M("Eine bessere Ausweichroute wurde nicht gefunden");
+	    }
+	    print "</center>\n";
 	}
 
     ROUTE_TABLE:
@@ -4284,6 +4302,10 @@ EOF
 		    close SESS;
 		}
 		untie %$sess;
+		if (defined $q->param('oldcs')) {
+		    print $q->hidden(-name    => 'oldcs',
+				     -default => $q->param('oldcs'));
+		}
  	    } else {
 		print "<input type=hidden name=coords value=\"$string_rep\">";
 	    }
@@ -4615,6 +4637,11 @@ sub draw_route {
 	(my $sess = tie_session($q->param('coordssession')))) {
 	$q->param(coords => $sess->{routestringrep});
 	$route = $sess->{route};
+    }
+
+    if (defined $q->param('oldcs') &&
+	(my $oldsess = tie_session($q->param('oldcs')))) {
+	$q->param(oldcoords => $oldsess->{routestringrep});
     }
 
     my $cookie;
@@ -6317,6 +6344,86 @@ sub nice_crossing_name {
     return join("/", @c_street) . ($unique_cityparts ne "" ? " ($unique_cityparts)" : "");
 }
 
+sub lost_time {
+    my($r, $tb, $velocity_kmh) = @_;
+    return if $tb->{type} ne 'handicap';
+    my $lost_time_s = 0;
+    my $ms = kmh2ms($velocity_kmh);
+    my(@path) = $r->path_list;
+    for(my $i = 0; $i < $#path; $i++) {
+	my($x1, $y1) = @{$path[$i]};
+	my($x2, $y2) = @{$path[$i+1]};
+	my $cat = $tb->{net}{Net}{"$x1,$y1"}{"$x2,$y2"};
+	if ($cat && $handicap_speed{$cat}) {
+	    my $handicap_speed_ms = kmh2ms($handicap_speed{$cat});
+	    if ($handicap_speed_ms < $ms) {
+		my $len = Strassen::Util::strecke([$x1,$y1],[$x2,$y2]);
+		my $normal_time = $len / $ms;
+		my $handicapped_time = $len / $handicap_speed_ms;
+		$lost_time_s += ($handicapped_time - $normal_time);
+	    }
+	}
+    }
+    my $lost_time_string_de = "";
+    if ($lost_time_s >= 5) {
+	my $rounded_lost_time_s = $lost_time_s;
+	my $mod;
+	if ($lost_time_s < 55) {
+	    $mod = 15;
+	} else {
+	    $mod = 60;
+	}
+	$rounded_lost_time_s += $mod/2;
+	$rounded_lost_time_s /= $mod;
+	$rounded_lost_time_s = int $rounded_lost_time_s;
+	$rounded_lost_time_s *= $mod;
+	if ($rounded_lost_time_s < 60) {
+	    $lost_time_string_de = sprintf "Zeitverlust ca. %d Sekunden", $rounded_lost_time_s;
+	} else {
+	    my $rounded_lost_time_min = int($rounded_lost_time_s/60);
+	    $lost_time_string_de = sprintf "Zeitverlust ca. %d Minute%s", $rounded_lost_time_min, $rounded_lost_time_min==1?"":"n";
+	}
+    }
+    if (!$lost_time_s) {
+	$lost_time_string_de = "kein Zeitverlust zu erwarten";
+    } elsif ($lost_time_s < 5) {
+	$lost_time_string_de = "kaum Zeitverlust";
+    }
+    return { lost_time_s         => $lost_time_s,
+	     lost_time_string_de => $lost_time_string_de,
+	   };
+}
+
+sub diff_from_old_route {
+    my($r) = @_;
+    my $diff = { different => 1, old_session_not_found => 1 };
+    return $diff if !$q->param('oldcs');
+    my $sess = tie_session($q->param('oldcs'));
+    return $diff if !$sess; # could not find old coords session, assume old one was different
+    delete $diff->{old_session_not_found};
+    my @path = $r->path_list;
+    my $old_r = Route->new_from_cgi_string($sess->{routestringrep});
+    my @old_path = $old_r->path_list;
+    my $len = $r->len;
+    my $old_len = $old_r->len;
+    if (int($old_len) == int($len)) {
+	$diff->{difference_de} = "(kein Unterschied in der Entfernung)";
+    } elsif (abs($old_len - $len) < 20) {
+	$diff->{difference_de} = "(unbedeutender Unterschied in der Entfernung)";
+    } elsif ($old_len < $len) {
+	$diff->{difference_de} = sprintf "(um %d Meter länger)", int($len - $old_len);
+    } elsif ($old_len >= $len) {
+	$diff->{difference_de} = sprintf "(um %d Meter kürzer)", int($len - $old_len);
+    }
+    return $diff if @path != @old_path;
+    for my $i (0 .. $#path) {
+	return $diff if $path[$i][0] != $old_path[$i][0];
+	return $diff if $path[$i][1] != $old_path[$i][1];
+    }
+    $diff->{different} = 0;
+    return $diff;
+}
+
 ######################################################################
 #
 # Information
@@ -6523,7 +6630,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/10/14 20:28:51 $';
+    my $cgi_date = '$Date: 2007/12/22 21:15:25 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

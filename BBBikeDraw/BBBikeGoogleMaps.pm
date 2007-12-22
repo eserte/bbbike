@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGoogleMaps.pm,v 1.3 2007/05/04 20:39:34 eserte Exp $
+# $Id: BBBikeGoogleMaps.pm,v 1.5 2007/12/22 21:09:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -16,16 +16,20 @@ package BBBikeDraw::BBBikeGoogleMaps;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(BBBikeDraw);
 
 use vars qw($bbbike_googlemaps_url $maptype);
 if (!defined $bbbike_googlemaps_url) {
-    # Unfortunately I cannot use $BBBIKE_GOOGLEMAP_URL from BBBikeVar.pm here,
-    # because it seems that POSTs content is not sent through the rewriting
-    # rules...
-    $bbbike_googlemaps_url = "http://bbbike.radzeit.de/cgi-bin/bbbikegooglemap.cgi";
+    if ($ENV{SERVER_NAME} && $ENV{SERVER_NAME} eq 'www.herceg.de' && $ENV{REMOTE_ADDR} eq '192.168.1.5') {
+	$bbbike_googlemaps_url = "http://localhost/~eserte/bbbike/cgi/bbbikegooglemap.cgi";
+    } else {
+	# Unfortunately I cannot use $BBBIKE_GOOGLEMAP_URL from BBBikeVar.pm here,
+	# because it seems that POSTs content is not sent through the rewriting
+	# rules...
+	$bbbike_googlemaps_url = "http://bbbike.radzeit.de/cgi-bin/bbbikegooglemap.cgi";
+    }
 }
 
 $maptype = "hybrid" unless $maptype;
@@ -42,6 +46,7 @@ sub pre_draw {
     $self->{PreDrawCalled}++;
 }
 
+# Without the need to POST:
 sub flush_direct_redirect {
     my $self = shift;
     my $q = $self->{CGI} || CGI->new;
@@ -66,6 +71,10 @@ sub flush {
     my $self = shift;
     my $q = $self->{CGI} || CGI->new;
     my $coords = join "!", @{ $self->{Coords} || [] };
+    my $oldcoords =
+	@{ $self->{OldCoords} || [] }
+	    ? join "!", @{ $self->{OldCoords} }
+		: undef;
     my @wpt;
     if ($self->{BBBikeRoute}) {
 	for my $wpt (@{ $self->{BBBikeRoute} }) {
@@ -87,6 +96,7 @@ EOF
     print $fh start_form(-action => $bbbike_googlemaps_url,
 			 -method => "POST");
     print $fh hidden("coords", $coords);
+    print $fh hidden("oldcoords", $oldcoords) if $oldcoords;
     print $fh hidden("maptype", $maptype);
     for my $wpt (@wpt) {
 	print $fh hidden("wpt", $wpt);

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.48 2007/10/13 12:31:04 eserte Exp eserte $
+# $Id: cgi-mechanize.t,v 1.49 2007/12/22 21:27:31 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -19,7 +19,6 @@ BEGIN {
 	use Test::More;
 	1;
     }) {
-warn $@;
 	print "1..0 # skip: no Test::More, URI::URL and/or WWW::Mechanize modules\n";
 	exit;
     }
@@ -51,7 +50,7 @@ if (!@browsers) {
 }
 @browsers = map { "$_ BBBikeTest/1.0" } @browsers;
 
-my $tests = 101;
+my $tests = 103;
 plan tests => $tests * @browsers;
 
 ######################################################################
@@ -229,7 +228,7 @@ for my $browser (@browsers) {
     ######################################################################
     # A street in Potsdam but not in "landstrassen"
 
- XXX: {
+    {
 
 	$get_agent->();
 
@@ -359,10 +358,11 @@ for my $browser (@browsers) {
     ######################################################################
     # Test custom blockings
 
-    {
+ XXX:    {
 
 	# Hier wird eine temporäre baustellenbedingte Einbahnstraße in
 	# der Rixdorfer Str. getestet.
+	# Diese Einschränkung hat das Attribut "handicap" gesetzt.
 
 	$get_agent->();
 
@@ -395,6 +395,7 @@ for my $browser (@browsers) {
 
 	my_tidy_check($agent);
 	$like_long_data->(qr{Ereignisse, die die Route betreffen}, "Found temp blocking hit");
+	$like_long_data->(qr{\(Zeitverlust ca\. \d+ Minuten\)}, "Found Zeitverlust for handicap-typed blocking");
 	$like_long_data->(qr{Ausweichroute suchen}, "Found Ausweichroute button");
 	my $form = $agent->form_name("Ausweichroute");
 	isa_ok($form, "HTML::Form");
@@ -407,6 +408,7 @@ for my $browser (@browsers) {
 
 	my_tidy_check($agent);
 	$like_long_data->(qr{M.*gliche Ausweichroute}, "Using Ausweichroute");
+	$like_long_data->(qr{\(um \d+ Meter l.*nger\)}, "Info: längere Route");
 	if (get_ct($agent) =~ /L.*?nge:.*([\d\.]+)\s*km/) {
 	    my $length = $1;
 	    cmp_ok($length, ">=", 1, "Longer path ($length km)");

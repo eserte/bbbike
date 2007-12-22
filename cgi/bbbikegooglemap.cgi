@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 2.3 2007/10/07 18:43:30 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 2.4 2007/12/22 21:09:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006,2007 Slaven Rezic. All rights reserved.
@@ -42,6 +42,7 @@ sub run {
     local $CGI::POST_MAX = 2_000_000;
 
     my @polylines_polar;
+    my @polylines_polar_feeble;
     my @wpt;
 
     my $coordsystem = param("coordsystem") || "bbbike";
@@ -105,13 +106,19 @@ sub run {
 	}
     }
 
-    for my $coords (param("coords")) {
-	my(@coords) = split /[!;]/, $coords;
-	my(@coords_polar) = map {
-	    my($x,$y) = split /,/, $_;
-	    join ",", $converter->($x,$y);
-	} @coords;
-	push @polylines_polar, \@coords_polar;
+    for my $def (['coords',    \@polylines_polar],
+		 ['oldcoords', \@polylines_polar_feeble],
+		) {
+	my($cgiparam, $polylines_ref) = @$def;
+
+	for my $coords (param($cgiparam)) {
+	    my(@coords) = split /[!;]/, $coords;
+	    my(@coords_polar) = map {
+		my($x,$y) = split /,/, $_;
+		join ",", $converter->($x,$y);
+	    } @coords;
+	    push @$polylines_ref, \@coords_polar;
+	}
     }
 
     for my $wpt (param("wpt")) {
@@ -142,7 +149,7 @@ sub run {
     $self->{coordsystem} = $coordsystem;
 
     print header;
-    print $self->get_html(\@polylines_polar, \@wpt, $zoom);
+    print $self->get_html(\@polylines_polar, \@polylines_polar_feeble, \@wpt, $zoom);
 }
 
 sub bbbike_converter {
@@ -154,7 +161,7 @@ sub bbbike_converter {
 sub polar_converter { @_[0,1] }
 
 sub get_html {
-    my($self, $paths_polar, $wpts, $zoom) = @_;
+    my($self, $paths_polar, $feeble_paths_polar, $wpts, $zoom) = @_;
 
     my $converter = $self->{converter};
     my $coordsystem = $self->{coordsystem};
@@ -542,22 +549,32 @@ sub get_html {
     });
 
 EOF
-    for my $path_polar (@$paths_polar) {
-	my $route_js_code = <<EOF;
+    for my $def ([$feeble_paths_polar, '#ff00ff', 5,  0.4],
+		 [$paths_polar,        '#ff0000', 10, undef],
+		) {
+	my($paths_polar, $color, $width, $opacity) = @$def;
+
+	for my $path_polar (@$paths_polar) {
+	    my $route_js_code = <<EOF;
     var route = new GPolyline([
 EOF
-	$route_js_code .= join(",\n",
-			       map {
-				   my($x,$y) = split /,/, $_;
-				   sprintf 'new GPoint(%.5f, %.5f)', $x, $y;
-			       } @$path_polar
-			      );
-	$route_js_code .= q{], "#ff0000", 10);};
+	    $route_js_code .= join(",\n",
+				   map {
+				       my($x,$y) = split /,/, $_;
+				       sprintf 'new GPoint(%.5f, %.5f)', $x, $y;
+				   } @$path_polar
+				  );
+	    $route_js_code .= qq{], "$color", $width};
+	    if (defined $opacity) {
+		$route_js_code .= qq{, $opacity};
+	    }
+	    $route_js_code .= qq{);};
 
-	$html .= <<EOF;
+	    $html .= <<EOF;
 $route_js_code
     map.addOverlay(route);
 EOF
+	}
     }
 
     for my $wpt (@$wpts) {

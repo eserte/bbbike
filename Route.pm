@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Route.pm,v 1.24 2006/08/29 22:37:01 eserte Exp $
+# $Id: Route.pm,v 1.25 2007/12/22 21:09:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2001 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ use strict;
 use vars qw($coords_ref $realcoords_ref $search_route_points_ref
 	    @EXPORT @ISA $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.25 $ =~ /(\d+)\.(\d+)/);
 
 require Exporter;
 @ISA    = qw(Exporter);
@@ -131,6 +131,11 @@ sub transpose        { $_[0]->{Transpose} }
 # erstellt eine String-Repräsentation der Route: x1,y1;x2,y2;...
 sub as_string        { $_[0]->_as_string(";") }
 sub as_cgi_string    { $_[0]->_as_string("!") } # ; ist schlecht bei CGI.pm
+
+sub new_from_cgi_string {
+    my($class, $cgi_string) = @_;
+    $class->new_from_realcoords([ map { [ split /,/ ] } split(/!/, $cgi_string) ]);
+}
 
 sub _as_string {
     my($self, $sep) = @_;

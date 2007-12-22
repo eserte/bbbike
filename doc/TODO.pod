@@ -2652,7 +2652,7 @@ anzeigen, sowie ein Diff zwischen den beiden Routen anzeigen.
 
 Implementationsmöglichkeit: Die alte Route wird per CGI-Parameter
 E<quot>oldcsE<quot> und als Wert die Session-ID der alten Route
-referenziert. Daraus kann man zumindest die Länge herausholen (die
+referenziert (done). Daraus kann man zumindest die Länge herausholen (die
 anderen Parameter sind vielleicht nicht so wichtig). Außerdem könnte
 man ein primitives Diff erstellen: einfach den ersten Unterschied am
 Anfang und am Ende nehmen und mit E<quot>Beginn der

@@ -10742,4 +10742,13 @@ EOF
 userdel	2::inwork -42483,-15134 -41439,-15493 -41352,-15664 -39523,-16953
 EOF
      },
+     { from  => 1198328869, # 2007-12-22 14:07
+       until => 1212271200, # 2008-06-01 00:00
+       text  => 'Körtestr. (Kreuzberg) in beiden Richtungen zwischen Südstern und Urbanstr. Baustelle, Straße vollständig gesperrt, Gehweg ist passierbar (bis Mai 2008)',
+       type  => 'handicap',
+       source_id => 'IM_007458',
+       data  => <<EOF,
+userdel	q4::inwork 10747,9326 10719,9259
+EOF
+     },
     );

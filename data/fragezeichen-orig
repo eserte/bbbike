@@ -10,7 +10,7 @@
 #: section projektierte Radstreifen der Verkehrsverwaltung vvv
 #: by: http://archiv.tagesspiegel.de/archiv/16.03.2007/3142959.asp
 Wintersteinstr.	? 3763,12279 3759,12362 3748,12472 3741,12607 3738,12639
-#: last_checked: 2007-09-02
+#: last_checked: 2007-12-22
 Wilhelmstr. (Kreuzberg)	? 9376,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
 Wisbyer Str.	?; 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 11448,16398 11397,16405 11289,16423 11033,16464
 #: by http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2004/1103/lokales/0030/ vvv
@@ -81,7 +81,9 @@ Aroser Allee, Fertigstellung bis 2007-10-01	? 6720,18616 6704,18462 6694,18351 6
 #  STRASSEN IN BAU UND PLANUNG
 #
 #: section ignorieren vvv
-#: section Straßen in Planung vvv#
+#: section Straßen in Planung vvv
+Ampel in Bau	?::inwork 15243,11881
+Ampel in Bau	?::inwork 13919,10583
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0710/nachricht2827.html vvv
 Fußgängerampel in Planung, bis 2008-12-31	?::inwork 9220,11781
 Ampel in Planung, bis 2008-12-31	?::inwork 9183,12076
@@ -142,7 +144,7 @@ Havelfähre - Brandenburg: Planung des Havelradwegs, genaue Strecke, Realisierung
 #: last_checked: 2006-10-14
 Lichterfeld - Besucherbergwerk F60: Radweg in Bau	? 37870,-89814 37883,-89858 37885,-89996 37960,-90233 38002,-90351 38101,-90412
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20061103.1420.49764.html
-#: last_checked: 2007-09-10
+#: last_checked: 2007-12-22
 Frankfurter Allee am S-Bhf. Richtung Westen: Radstreifen soll Radweg ablösen (zurzeit ist bereits ein provisorischer Radstreifen angelegt)	?; 15349,12073 15117,12106
 Neue Straßen an der Rummelsburger Bucht: Name: Erich-Müller-Straße. Straße ist asphaltiert, aber noch nicht ganz fertig	? 16045,9817 15831,9968
 Neuer Weg an der Rummelsburger Bucht: Name? Weg ist asphaltiert	? 16011,9777 16045,9817
@@ -169,7 +171,7 @@ Bertinistr./Bertiniweg: hier soll demnächst die Mauerweg-Alternative verlaufen	?
 Einige Radweg-Abschnitte der Perleberger Str. sind mittlerweile gesperrt, welche genau? Oder alle?	? 6230,13596 6366,13716 6493,13822 6649,13947 6730,14021 6807,14093 6992,14251 7132,14375 7180,14419
 ## by: http://www.stadtentwicklung.berlin.de/verkehr/radverkehrsanlagen/de/hellersdorf/route.shtml: Marx-Engels-Forum: wird die RR8 hier durchgeführt? wo genau? -> Nein, keine Ausschilderung zu sehen; alle Radrouten werden an der Spandauer Str. nach SE geführt	? 10300,12587 10355,12551 10411,12471 10596,12517
 B87: im Bereich von Müllrose und Beeskow Umgehungsstraßen; bereits fertiggestellt?	? 86488,-7562 85598,-8331 84692,-9145 84255,-9991 83672,-10601 83389,-11087 82740,-11887 81786,-12568 81278,-13886 80317,-15604 80143,-15900 79825,-16575 79718,-16658 79714,-16872 79650,-16999 79542,-17061 78297,-17788 76631,-18359 74920,-18929 74707,-18991 73222,-20567 71815,-22343 70984,-23637 70075,-24862 69290,-25534 68467,-25032 68208,-25518 67864,-25691 66943,-26530 65386,-29479 64853,-30986 63609,-34428 63520,-34874 63095,-34910 62112,-36752 60430,-38587 58111,-41188 57451,-41866 55628,-43569 53268,-45117 52695,-45345 50425,-46001 49708,-46344 48300,-48609 47500,-49275 47037,-49675 46312,-50912 45914,-51087 45475,-51090 44856,-51015
-#: last_checked: 2007-09-10
+#: last_checked: 2007-12-18
 #: by: Message-ID: <4mfe1bF5vae4U1@uni-berlin.de>
 Warschauer Str.: Radwegbenutzungspflicht wird aufgehoben	?; 13546,11352 13476,11174 13454,11119 13409,11004 13332,10832
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html
@@ -231,9 +233,6 @@ Raddusch: entfällt der Regionalbahnhof?	? 54813,-65044
 Eichhorster Str.: Radweg? Laut Eintrag von housemeister ja, laut Luftbild fraglich	? 21446,18405 21481,18474 21526,18558 21545,18595 21552,18607 21678,18648 21825,18689 21853,18700
 (Eichhorstr. - Schorfheidestr.): Qualität?	? 21825,18689 21828,18701 21860,18718 21875,18717
 (Eichhorstr. - Klandorfer Str.): Qualität?	? 21828,18701 21826,18727 21785,18861
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20071126.1010.89670.html
-#: XXX: welcher der beiden Plätze ist es: östlich oder westlich?
-Hildegard-Knef-Platz: Benennung am 2007-12-17	? 7854,7572 7772,7610
 nördlicher Radweg auf der Bulgarischen Str.: siehe Message-ID: <1kl0p5nkwlmb1.dlg@tebe.my-fqdn.de>	? 15166,8489 15383,8662 15580,8839
 Route Lychen - Feldberg: wie sieht der Routenverlauf aus? Qualität?	? 627,89430 551,89619
 Route Lychen - Templin: wie sieht der Routenverlauf aus? Qualität?	? 2480,89399 2468,89293
@@ -1545,7 +1544,6 @@ Rudower Str.: Qualität?	? 19031,5316 18999,5237 18942,5236 18820,5275 18659,5330
 Rodenkirchener Str.: Qualität?	? 19974,-317 19971,-234 19960,-158 19943,-118 19909,-75
 Flottsteller Str. (Michendorf): Qualität (wahrscheinlich asphaltiert)?	? -15891,-10464 -15769,-10534 -15613,-10667 -15182,-10981 -15018,-11070 -14861,-11221
 Stieleichenstr. (Schönfließ): Qualität (wahrscheinlich asphaltiert oder betoniert)?	? 4424,26240 4387,26270 4340,26311 4302,26352 4287,26368 4262,26415 4239,26458 4213,26461 4182,26463 4136,26489 4105,26533 4095,26547
-Gürtelstr.: existieren Radstreifen zwischen Oderstr. und Scharnweberstr.?	? 15091,11596 15203,11807 15243,11881
 Albert-Brodersen-Allee: Qualität?	? 20863,12041 20836,11768
 #: note: siehe http://www.berlin.de/ba-neukoelln/presse/archiv/20071108.1600.88578.html, aber im Luftbild sieht man nichts
 Grüner Weg von Kielingerstraße bis Buschkrugallee: existiert hier ein Radweg?	? 14100,4166 14164,4271 14223,4369 14289,4378

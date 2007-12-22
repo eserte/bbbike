@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.54 2007/04/13 20:32:52 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.55 2007/12/22 21:09:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION $bahn_bau_rx);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.54 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.55 $ =~ /(\d+)\.(\d+)/);
 
 $bahn_bau_rx = qr{^[SRU](0|Bau|G|P)$}; # auch ignorieren: Güterbahnen, Parkbahnen
 
@@ -35,6 +35,7 @@ sub new {
     $self->{Geometry}  = delete $args{Geometry};
     $self->{Coords}    = delete $args{Coords}; # route coordinates
     $self->{MultiCoords} = delete $args{MultiCoords}; # same for interrupted routes
+    $self->{OldCoords}   = delete $args{OldCoords}; # optional for an alternative route
     $self->{MarkerPoint} = delete $args{MarkerPoint};
     $self->{BBBikeRoute} = delete $args{BBBikeRoute}; # route as from bbbike.cgi
     $self->{Draw}      = delete $args{Draw};
@@ -124,6 +125,8 @@ sub new_from_cgi {
     } elsif (@coords > 1) {
 	$args{MultiCoords} = [ map { [ split(/[!; ]/, $_) ] } @coords ];
     }
+    my @oldcoords = $q->param('oldcoords');
+    $args{OldCoords} = [ split(/[!; ]/, $oldcoords[0]) ] if @oldcoords;
     $args{MarkerPoint} = $q->param('markerpoint')
       if defined $q->param('markerpoint');
     $args{Draw}      = [ $q->param('draw') ]
@@ -528,6 +531,7 @@ sub set_category_colors {
 	      '?' => $black,
 	      '??' => $black,
 	      Route => $red,
+	      OldRoute => $grey_bg, # XXX check!
 	     );
 EOF
     eval $code;
@@ -619,6 +623,7 @@ sub set_category_widths {
 	      W2 => 4*$m,
 	      Z  => 1*$m,
 	      Route => 3*$m,
+	      OldRoute => 3*$m, # XXX check
 	     );
 EOF
     eval $code;

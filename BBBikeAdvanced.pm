@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.192 2007/12/07 20:43:41 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.192 2007/12/07 20:43:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2007 Slaven Rezic. All rights reserved.
@@ -3139,7 +3139,7 @@ sub search_anything {
 	    $s_munged = lc $s;
 	} else {
 	    $s_rx = $s;
-	    $s_rx =~ s{([sS])traße}{(\1traße|\1tr\\.)};
+	    $s_rx =~ s{([sS])traße}{($1traße|$1tr\\.)};
 	}
 	my $need_utf8_upgrade = $] >= 5.008 && ((defined $s_munged && eval { require Encode; Encode::is_utf8($s_munged) }) ||
 						(defined $s_rx     && eval { require Encode; Encode::is_utf8($s_rx) }));

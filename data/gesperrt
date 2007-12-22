@@ -864,26 +864,26 @@ Thielallee -> Hittorfstr.: nicht passierbarer Mittelstreifens	3 2615,4885 2587,4
 Hittorfstr. -> Thielallee: nicht passierbarer Mittelstreifens	3 2516,4936 2587,4965 2560,5044
 Mollstr. -> Mendelssohnstr.: Straßenbahntrasse	3 11275,13407 11300,13390 11322,13421
 Mendelssohnstr. -> Mollstr.: Straßenbahntrasse	3 11322,13421 11300,13390 11446,13294
-Wohngebiet Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3 11613,13570 11646,13546 11723,13630
-Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Straßenbahntrasse	3 11550,13427 11646,13546 11613,13570
+Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3 11613,13570 11646,13546 11723,13630
+Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3 11550,13427 11646,13546 11613,13570
 Barnimstr. -> Otto-Braun-Str.: Straßenbahntrasse	3 11605,13387 11550,13427 11535,13411
 Otto-Braun-Str. -> Barnimstr.: Straßenbahntrasse	3 11646,13546 11550,13427 11605,13387
 Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3 11511,13429 11535,13411 11550,13427
 Otto-Braun-Str. -> Mendelssohnstr.: Straßenbahntrasse	3 11464,13321 11535,13411 11511,13429
-Wohngebiet Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3 11444,13335 11464,13321 11535,13411
-Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Straßenbahntrasse	3 11446,13294 11464,13321 11444,13335
+Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3 11444,13335 11464,13321 11535,13411
+Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3 11446,13294 11464,13321 11444,13335
 Otto-Braun-Str. -> Berolinastr.: Mittelstreifen	3 11368,13170 11298,13063 11440,12976
 Berolinastr. -> Otto-Braun-Str.: Mittelstreifen	3 11440,12976 11298,13063 11275,13026
 Otto-Braun-Str. -> Str.nbahntrasse: Mittelstreifen	3 11228,12951 11275,13026 11191,13080
 Str.nbahntrasse -> Otto-Braun-Str.: Mittelstreifen	3 11191,13080 11275,13026 11298,13063
-Wohngebiet Mendelssohnstr. -> Otto-Braun-Str.: Mittelstreifen	3 11444,13335 11464,13321 11535,13411
-Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Mittelstreifen	3 11446,13294 11464,13321 11444,13335
+Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Mittelstreifen	3 11444,13335 11464,13321 11535,13411
+Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Mittelstreifen	3 11446,13294 11464,13321 11444,13335
 Mendelssohnstr. -> Otto-Braun-Str.: Mittelstreifen	3 11511,13429 11535,13411 11550,13427
 Otto-Braun-Str. -> Mendelssohnstr.: Mittelstreifen	3 11464,13321 11535,13411 11511,13429
 Barnimstr. -> Otto-Braun-Str.: Mittelstreifen	3 11605,13387 11550,13427 11535,13411
 Otto-Braun-Str. -> Barnimstr.: Mittelstreifen	3 11646,13546 11550,13427 11605,13387
-Wohngebiet Mendelssohnstr. -> Otto-Braun-Str.: Mittelstreifen	3 11613,13570 11646,13546 11723,13630
-Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Mittelstreifen	3 11550,13427 11646,13546 11613,13570
+Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Mittelstreifen	3 11613,13570 11646,13546 11723,13630
+Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Mittelstreifen	3 11550,13427 11646,13546 11613,13570
 Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3 11228,12951 11295,12915 11362,12964
 Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3 11362,12964 11295,12915 11589,12768
 Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3 11295,12915 11589,12768 11600,12857

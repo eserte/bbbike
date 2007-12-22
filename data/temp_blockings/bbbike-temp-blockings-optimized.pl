@@ -455,15 +455,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1198278000,
-         'text' => 'L 023 Herzfelde-Strausberg OD Hennickendorf, unterhalb Wachtelberg Instandsetzung Stützwand Vollsperrung 23.07.2007-21.12.2007 ',
-         'from' => 1185055200,
-         'id' => 1080,
-         'data' => 'userdel	2::inwork 40565,12409 40362,12087
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -521,30 +513,14 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1198278000,
-         'text' => 'B 096 Brücke über den Seichgraben zw. Zützen u. Golßen Brückenbauarbeiten Vollsperrung 03.09.2007-21.12.2007 ',
-         'from' => 1188684000,
-         'id' => 1130,
-         'data' => 'userdel	2::inwork 27428,-49936 26648,-49177
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
        undef,
        undef,
        undef,
-       {
-         'until' => 1198278000,
-         'text' => 'K 7302 zwischen Dobberzin und Stolpe Straßenneubau Vollsperrung 27.08.2007-21.12.2007 ',
-         'from' => 1188079200,
-         'id' => 1137,
-         'data' => 'userdel	2::inwork 57050,65287 56712,66112 56200,66475
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -585,15 +561,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1198278000,
-         'text' => 'B2 zw. Spechthausen u.Eberswalde Brücke Leuenberger Wiesengraben Brückenneubau Vollsperrung, Radfahrer können wahrscheinlich passieren 31.08.2007-21.12.2007 ',
-         'from' => 1188424800,
-         'id' => 1162,
-         'data' => 'userdel	q4::inwork 36000,45950 35743,45915
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1209592800,
          'text' => 'L 035 Dr. W.-Külz-Str. OL Fü.-walde zw. Sembritzki- u. Eisenbahnstr. Abwasserkanalbau Vollsperrung 03.09.2007-30.04.2008 ',
@@ -661,15 +629,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1198278000,
-         'text' => 'L 314 Zepernicker Chaussee OD Bernau grundhafter Straßenbau Vollsperrung 04.10.2007-21.12.2007 ',
-         'from' => 1191362400,
-         'id' => 1189,
-         'data' => 'userdel	q4::inwork 22178,30343 21872,30139 21561,30131 21172,29984
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1214863200,
          'text' => 'L 315 Prenden-Klosterfelde OD Klosterfelde grundhafter Straßenbau Vollsperrung 04.10.2007-30.06.2008 ',
@@ -802,16 +762,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_007093',
-         'until' => 1198277999,
-         'text' => 'Lückstr. (Lichtenberg) Richtung Nöldnerplatz zwischen Emanuelstr.und Schlichtallee Baustelle, Fahrtrichtung gesperrt (bis 21.12.)',
-         'from' => 1194897448,
-         'id' => 1237,
-         'data' => 'userdel	1::inwork 16316,10755 16153,10818 16032,10842
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -852,15 +803,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        undef,
-       {
-         'until' => 1198278000,
-         'text' => 'K 6419 Ernst-Thälmann-Str. OD Rehfelde, zw. Bahnhofstr. und Lindenstr. Straßenbauarbeiten Vollsperrung 04.12.2007-21.12.2007 ',
-         'from' => 1196636400,
-         'id' => 1254,
-         'data' => 'userdel	q4::inwork 45856,14437 44121,14615
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1225494000,
          'text' => 'L 073 Beelitzer Str. OL Luckenwalde, zw. Puschkinstr. u. Woltersdorfer Str. Straßenausbau Vollsperrung 24.09.2007-31.10.2008 ',
@@ -879,30 +822,14 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1198278000,
-         'text' => 'L 090 Potsdamer Str. OL Werder (Havel), zw. Berliner Str. und Grüner Weg Kanalarbeiten halbseitig gesperrt; Einbahnstraße 04.12.2007-21.12.2007 ',
-         'from' => 1196636400,
-         'id' => 1257,
-         'data' => 'userdel	q4::inwork -20851,-4878 -20696,-5198
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
        undef,
        undef,
        undef,
        undef,
-       {
-         'until' => 1198278000,
-         'text' => 'L 238 Eberswalde-ASWerbellin Brücke der A 11 zw. Lichterfelde u. Altenhof Straßenanbindung Vollsperrung 10.12.2007-21.12.2007 ',
-         'from' => 1197154800,
-         'id' => 1264,
-         'data' => 'userdel	2::inwork 31076,54246 30773,54731
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        {
          'until' => undef,
@@ -917,16 +844,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_007457',
-         'until' => 1198278000,
-         'text' => 'Fürstenwalder Damm (Köpenick) Richtung Salvador-Allende-Str. zwischen Bölschestr. und Ahornallee Baustelle, Fahrtrichtung gesperrt (bis 21.12.2007)',
-         'from' => 1197933378,
-         'id' => 1271,
-         'data' => 'userdel	1::inwork 25579,5980 25121,5799
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1209592800,
          'text' => 'L 023 Herzfelde-Strausberg OD Hennickendorf, unterhalb Wachtelberg Instandsetzung Stützwand Vollsperrung 07.01.2008-30.04.2008 ',
@@ -945,14 +863,16 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
+       undef,
        {
-         'until' => 1198278000,
-         'text' => 'L 085 Brück-Golzow zw. OA Golzow und OE Cammer Straßenbau Vollsperrung 19.12.2007-21.12.2007 ',
-         'from' => 1197932400,
-         'id' => 1274,
-         'data' => 'userdel	2::inwork -42483,-15134 -41439,-15493 -41352,-15664 -39523,-16953
+         'source_id' => 'IM_007458',
+         'until' => 1212271200,
+         'text' => 'Körtestr. (Kreuzberg) in beiden Richtungen zwischen Südstern und Urbanstr. Baustelle, Straße vollständig gesperrt, Gehweg ist passierbar (bis Mai 2008)',
+         'from' => 1198328869,
+         'id' => 1275,
+         'data' => 'userdel	q4::inwork 10747,9326 10719,9259
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
        }
      
 );
