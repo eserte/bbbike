@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.55 2007/12/22 21:09:21 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.56 2007/12/23 16:19:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION $bahn_bau_rx);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.55 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.56 $ =~ /(\d+)\.(\d+)/);
 
 $bahn_bau_rx = qr{^[SRU](0|Bau|G|P)$}; # auch ignorieren: Güterbahnen, Parkbahnen
 
@@ -197,6 +197,7 @@ sub pre_draw {
 
 sub _set_c1 {
     my $self = shift;
+
     if ($self->{MultiCoords}) {
 	my @multi_c1;
 	for my $elem (@{ $self->{MultiCoords} }) {
@@ -217,6 +218,15 @@ sub _set_c1 {
 	}
 	$self->{C1} = \@c1;
 	$self->{MultiC1} = [ $self->{C1} ];
+    }
+
+    if ($self->{OldCoords}) {
+	my @oldcoords_c1;
+	foreach (@{ $self->{OldCoords} }) {
+	    my($x, $y) = split(/,/, $_);
+	    push @oldcoords_c1, [$x,$y];
+	}
+	$self->{OldCoordsC1} = \@oldcoords_c1;
     }
 }
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-gpx.t,v 1.10 2007/08/12 19:24:01 eserte Exp $
+# $Id: strassen-gpx.t,v 1.14 2007/12/23 15:56:11 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -14,6 +14,7 @@ use lib ("$FindBin::RealBin/../lib",
 	 $FindBin::RealBin,
 	);
 use Data::Dumper;
+use File::Spec qw();
 use File::Temp qw(tempfile);
 use Getopt::Long;
 
@@ -33,8 +34,9 @@ use Route;
 
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
-my $tests_per_variant = 26;
-my $bbdfile = "obst";
+my $tests_per_variant = 37;
+my $do_long_tests = !!$ENV{BBBIKE_LONG_TESTS};
+my $bbdfile;
 
 GetOptions("v" => \$v,
 	   "libxml!" => sub {
@@ -47,11 +49,14 @@ GetOptions("v" => \$v,
 		   @variants = grep {!/XML::Twig/} @variants;
 	       }
 	   },
-	   "long!" => sub {
-	       $bbdfile = "strassen";
-	   },
+	   "long!" => \$do_long_tests,
+	   "bbdfile=s" => \$bbdfile,
 	  )
     or die "usage!";
+
+if (!defined $bbdfile) {
+    $bbdfile = $do_long_tests ? "strassen": "obst";
+}
 
 plan tests => 6 + scalar(@variants) * $tests_per_variant;
 
@@ -61,7 +66,7 @@ isa_ok($s, "Strassen::GPX");
 isa_ok($s, "Strassen");
 
 my %parsed_rte;
-my $do_not_compare_variants = 0;
+my $do_not_compare_variants = @variants != 2;
 
 for my $use_xml_module (@variants) {
  SKIP: {
@@ -72,6 +77,8 @@ for my $use_xml_module (@variants) {
 	$Strassen::GPX::use_xml_module = $Strassen::GPX::use_xml_module if 0; # peacify -w
 	$Strassen::GPX::use_xml_module = $use_xml_module;
 
+	pass("****** Trying $use_xml_module backend ******");
+
 	# Track file
 	{
 	    # Parsing from string
@@ -80,7 +87,7 @@ for my $use_xml_module (@variants) {
 	    $s->gpxdata2bbd($gpx_sample);
 	    $s->init;
 	    my $r = $s->next;
-	    is($r->[Strassen::NAME()], "0723", "Check name from track - $use_xml_module");
+	    is($r->[Strassen::NAME()], "0723", "Check name from track");
 	    is(scalar(@{ $r->[Strassen::COORDS()] }), 2);
 
 	    my $xml_res = $s->bbd2gpx;
@@ -168,13 +175,85 @@ for my $use_xml_module (@variants) {
 	}
 
 	{
-	    my $data_file = "$FindBin::RealBin/../data/$bbdfile";
+	    my $data_file = File::Spec->file_name_is_absolute($bbdfile) ? $bbdfile : "$FindBin::RealBin/../data/$bbdfile";
 	    my $s0 = Strassen->new($data_file);
 	    my $s = Strassen::GPX->new($s0);
 	    isa_ok($s, "Strassen::GPX");
 	    my $xml_res = $s->Strassen::GPX::bbd2gpx;
 	    like($xml_res, qr{^<(\?xml|gpx)}, "Looks like XML");
+
+	    local $TODO;
+	    if ($Strassen::GPX::use_xml_module eq 'XML::Twig' && $XML::Twig::VERSION <= 3.32) {
+		$TODO = "Possible XML::Twig problem, missing preamble or missing encoding of data";
+	    }
 	    xmllint_string($xml_res, "xmllint for bbd2gpx output ($bbdfile)");
+	}
+
+	{
+	    # unicode data > codepoint 128
+	    my $s0 = Strassen->new_from_data_string(<<EOF);
+fooäöü	X 1,1 2,2
+EOF
+	    my $s = Strassen::GPX->new($s0);
+	    isa_ok($s, "Strassen::GPX");
+	    my $xml_res = $s->Strassen::GPX::bbd2gpx;
+	    like($xml_res, qr{^<(\?xml|gpx)}, "Looks like XML");
+
+	    local $TODO;
+	    if ($Strassen::GPX::use_xml_module eq 'XML::Twig' && $XML::Twig::VERSION <= 3.32) {
+		$TODO = "Possible XML::Twig problem, missing preamble or missing encoding of data";
+	    }
+	    xmllint_string($xml_res, "xmllint for bbd2gpx output (string data with unicode > 128 < 256)");
+	SKIP: {
+		skip("No XML::LibXML parser available for checking", 1)
+		    if !eval { require XML::LibXML; 1 };
+		my $p = XML::LibXML->new;
+		my $doc = eval { $p->parse_string($xml_res) };
+		ok($doc, "XML::LibXML was available to parse result");
+		if ($doc) {
+		    my $name = $doc->findvalue("//*[local-name(.)='name']");
+		    is($name, 'fooäöü', "Unicode parsed correctly");
+		} else {
+		    fail("Document was not parsed correctly...");
+		}
+	    }
+	}
+
+	{
+	    # unicode data > codepoint 255
+	    my $data = <<EOF;
+#: encoding: utf-8
+foo\x{20ac}\x{0107}	X 1,1 2,2
+EOF
+	    if (eval { require Encode; 1 }) {
+		$data = Encode::encode("utf-8", $data);
+	    } else {
+		diag "Following failures are expected, because Encode is not available";
+	    }
+	    my $s0 = Strassen->new_from_data_string($data);
+	    my $s = Strassen::GPX->new($s0);
+	    isa_ok($s, "Strassen::GPX");
+	    my $xml_res = $s->Strassen::GPX::bbd2gpx;
+	    like($xml_res, qr{^<(\?xml|gpx)}, "Looks like XML");
+
+	    local $TODO;
+	    if ($Strassen::GPX::use_xml_module eq 'XML::Twig' && $XML::Twig::VERSION <= 3.32) {
+		$TODO = "Possible XML::Twig problem, missing preamble or missing encoding of data";
+	    }
+	    xmllint_string($xml_res, "xmllint for bbd2gpx output (string data with unicode > 255)");
+	SKIP: {
+		skip("No XML::LibXML parser available for checking", 1)
+		    if !eval { require XML::LibXML; 1 };
+		my $p = XML::LibXML->new;
+		my $doc = eval { $p->parse_string($xml_res) };
+		ok($doc, "XML::LibXML was available to parse result");
+		if ($doc) {
+		    my $name = $doc->findvalue("//*[local-name(.)='name']");
+		    is($name, "foo\x{20ac}\x{0107}", "Unicode parsed correctly");
+		} else {
+		    fail("Document was not parsed correctly...");
+		}
+	    }
 	}
 
 	# Problematic file

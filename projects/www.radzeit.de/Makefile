@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.104 2007/10/15 23:08:32 eserte Exp $
+# $Id: Makefile,v 1.105 2007/12/23 12:54:28 eserte Exp $
 #
 
 # Targets:
@@ -253,7 +253,7 @@ rsync-mapserver:	check-rsync-ok check-rsync-mapserver /tmp/mapserver.rsync.exclu
 	${RSYNC_PROG} ${RSYNC_ARGS_MS} ${CURDIR}/public/mapserver/ ${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_SSH_HOST}:${BBBIKE_RADZEIT_APACHE_DIR}/${HTDOCS}/mapserver/
 
 rsync-tests:
-	${RSYNC_PROG} ${RSYNC_ARGS} ${BBBIKE_ROOT_DIR}/t/ ${RSYNC_DEST}/BBBike/t/
+	${RSYNC_PROG} ${RSYNC_ARGS} --exclude tmp/ ${BBBIKE_ROOT_DIR}/t/ ${RSYNC_DEST}/BBBike/t/
 
 /tmp/mapserver.rsync.exclude: .rsync.exclude
 	perl -pe 's{^public/mapserver/}{}' $> > $@

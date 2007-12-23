@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.pl,v 1.21 2005/01/16 22:02:49 eserte Exp $
+# $Id: bbbikedraw.pl,v 1.22 2007/12/23 13:06:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -128,13 +128,6 @@ if (defined $use_module) {
     }
     if ($use_mapserver) {
 	push @extra_args, Module => "MapServer";
-	require BBBikeDraw::MapServer;
-	# XXX what about other configurations?
-	my $conf = ($ipaq
-		    ? BBBikeDraw::MapServer::Conf->ipaq_vran_default
-		    : BBBikeDraw::MapServer::Conf->vran_default
-		   );
-	push @extra_args, Conf => $conf;
     }
 }
 if (defined $minplacecat) {

@@ -2644,7 +2644,7 @@ Titel geändert auf E<quot>BBBike: <startname> (als Start)E<quot> bzw.
 das Gleiche mit E<quot>zielE<quot>. Hintergrund: wenn dieses auftritt,
 handelt es sich höchstwahrscheinlich um eine Bookmark-URL.
 
-=item * (M4)
+=item * (M3)
 
 Idea by Andreas Mühlhausen: beim Anzeigen der Ausweichroute auch die
 Basisdaten (Länge, Fahrzeit, Ampeln) der ursprünglichen Route
@@ -2663,6 +2663,9 @@ Weiterhin könnte man feststellen, ob sich alte und Ausweichroute
 überhaupt unterscheiden und einen Erklärungstext anzeigen.
 
 Das geht natürlich nur, wenn Apache::Session* installiert ist.
+
+Note: Einiges ist bereits implementiert: Anzeige der vorherigen Länge,
+grafisches Diff bei der googlemaps-Darstellung.
 
 =item * (E3)
 

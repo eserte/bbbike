@@ -10,14 +10,18 @@ use Getopt::Long;
 use Strassen::Core;
 use Strassen::GPX;
 
+$Strassen::GPX::use_xml_module = $Strassen::GPX::use_xml_module if 0; # cease -w
+
 sub usage {
     die <<EOF;
-usage: $0 [-as route] bbdfile
+usage: $0 [-as route] [-xmlmod module] bbdfile
 EOF
 }
 
 my $as = "track";
-GetOptions("as=s" => \$as) or usage();
+GetOptions("as=s" => \$as,
+	   "xmlmod=s" => \$Strassen::GPX::use_xml_module,
+	  ) or usage();
 
 my $file = shift || usage();
 my $s = Strassen->new($file);

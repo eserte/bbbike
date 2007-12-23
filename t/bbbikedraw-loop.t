@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw-loop.t,v 1.5 2005/04/05 22:52:52 eserte Exp $
+# $Id: bbbikedraw-loop.t,v 1.6 2007/12/23 13:08:51 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -28,7 +28,7 @@ my $tests = @dists + @dists_region;
 plan tests => $tests;
 
 use Getopt::Long;
-my $doit = 0;
+my $doit = !!$ENV{BBBIKE_LONG_TESTS};
 my %skip;
 my $custom_center;
 GetOptions("doit" => \$doit,
@@ -39,7 +39,7 @@ GetOptions("doit" => \$doit,
 	   'center=s' => \$custom_center,
 	  ) or die $!;
 SKIP: {
-    skip("No -doit option specified on command line", $tests)
+    skip("Neither -doit cmdline option specified nor is the env var BBBIKE_LONG_TESTS set", $tests)
 	if !$doit;
 
     my $bbbikedraw = "$FindBin::RealBin/../miscsrc/bbbikedraw.pl";
@@ -62,14 +62,16 @@ SKIP: {
 			$centerx+$dist/2, $centery+$dist/2);
 	    my $scale = int($dist/$width_in_m);
 	    my $o_file = sprintf "/tmp/bbbikedraw-mapserver-%s-%08d.png", $scopelabel, $scale;
-	    system($bbbikedraw,
-		   "-mapserver",
-		   "-outline",
-		   "-drawtypes", "ampel,berlin,wasser,faehren,flaechen,ubahn,sbahn,rbahn,str,ort,strname,ubahnname,sbahnname,blocked,radwege",
-		   "-geometry" => $width."x".$width,
-		   "-bbox", join(",",@bbox),
-		   "-o", $o_file,
-		  ) == 0 or die;
+	    my @cmd = ($^X,
+		       $bbbikedraw,
+		       "-mapserver",
+		       "-outline",
+		       "-drawtypes", "ampel,berlin,wasser,faehren,flaechen,ubahn,sbahn,rbahn,str,ort,strname,ubahnname,sbahnname,blocked,radwege",
+		       "-geometry" => $width."x".$width,
+		       "-bbox", join(",",@bbox),
+		       "-o", $o_file,
+		      );
+	    system(@cmd) == 0 or die "Died with status code=$? while executing: @cmd";
 	    pass("scale 1:$scale -> $o_file");
 	}
     };

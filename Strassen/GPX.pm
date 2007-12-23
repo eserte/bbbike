@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GPX.pm,v 1.11 2007/07/20 20:13:51 eserte Exp $
+# $Id: GPX.pm,v 1.12 2007/12/23 13:59:11 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,26 +16,36 @@ package Strassen::GPX;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Core;
 
 use vars qw($use_xml_module);
 
+sub _require_XML_LibXML () {
+    eval {
+	require XML::LibXML;
+	1;
+    };
+}
+
+sub _require_XML_Twig () {
+    eval {
+	require XML::Twig;
+	XML::Twig->VERSION("3.26"); # set_root
+	1;
+    };
+}
+
 BEGIN {
     my @errs;
-    if (!eval {
-	require XML::LibXML;
+    if (_require_XML_LibXML) {
 	$use_xml_module = "XML::LibXML";
-	1;
-    }) {
+    } else {
 	push @errs, $@;
-	if (!eval {
-	    require XML::Twig;
-	    XML::Twig->VERSION("3.26"); # set_root
+	if (_require_XML_Twig) {
 	    $use_xml_module = "XML::Twig";
-	    1;
-	}) {
+	} else {
 	    push @errs, $@;
 	    die "No XML::LibXML or XML::Twig 3.26 installed: @errs";
 	}
@@ -72,10 +82,12 @@ sub gpx2bbd {
     my($self, $file, %args) = @_;
     
     if ($use_xml_module eq 'XML::LibXML') {
+	_require_XML_LibXML;
 	my $p = XML::LibXML->new;
 	my $doc = $p->parse_file($file);
 	$self->_gpx2bbd_libxml($doc, %args);
     } else {
+	_require_XML_Twig;
 	my $twig = XML::Twig->new;
 	$twig->parsefile($file);
 	$self->_gpx2bbd_twig($twig, %args);
@@ -86,10 +98,12 @@ sub gpxdata2bbd {
     my($self, $data, %args) = @_;
 
     if ($use_xml_module eq 'XML::LibXML') {
+	_require_XML_LibXML;
 	my $p = XML::LibXML->new;
 	my $doc = $p->parse_string($data);
 	$self->_gpx2bbd_libxml($doc, %args);
     } else {
+	_require_XML_Twig;
 	my $twig = XML::Twig->new;
 	$twig->parse($data);
 	$self->_gpx2bbd_twig($twig, %args);
@@ -233,8 +247,10 @@ sub _gpx2bbd_twig {
 sub bbd2gpx {
     my($self, %args) = @_;
     if ($use_xml_module eq 'XML::LibXML') {
+	_require_XML_LibXML;
 	$self->_bbd2gpx_libxml(%args);
     } else {
+	_require_XML_Twig;
 	$self->_bbd2gpx_twig(%args);
     }
 }
@@ -245,20 +261,28 @@ sub _bbd2gpx_libxml {
     if (!$has_encode) {
 	warn "WARN: No Encode.pm module available, non-ascii characters could be broken...";
     }
+    my $has_utf8_upgrade = $] >= 5.008;
+
     $self->init;
     my @wpt;
     my @trkseg;
     while(1) {
 	my $r = $self->next;
 	last if !@{ $r->[Strassen::COORDS] };
+	my $name = $r->[Strassen::NAME];
+	if ($has_utf8_upgrade) {
+	    utf8::upgrade($name); # This smells like an XML::LibXML bug
+	}
 	if (@{ $r->[Strassen::COORDS] } == 1) {
-	    push @wpt, { name => $has_encode ? Encode::decode("iso-8859-1", $r->[Strassen::NAME]) : $r->[Strassen::NAME],
-			 coords => [ xy2longlat($r->[Strassen::COORDS][0]) ],
-		       };
+	    push @wpt,
+		{
+		 name => $name,
+		 coords => [ xy2longlat($r->[Strassen::COORDS][0]) ],
+		};
 	} else {
 	    push @trkseg,
 		{
-		 name => $has_encode ? Encode::decode("iso-8859-1", $r->[Strassen::NAME]) : $r->[Strassen::NAME],
+		 name => $name,
 		 coords => [ map { [ xy2longlat($_) ] } @{ $r->[Strassen::COORDS] } ],
 		};
 	}
@@ -302,7 +326,7 @@ sub _bbd2gpx_libxml {
 	    }
 	}
     }
-    if ($has_encode) {
+    if ($XML::LibXML::VERSION < 1.63 && $has_encode) {
 	Encode::encode("utf-8", $dom->toString);
     } else {
 	$dom->toString;

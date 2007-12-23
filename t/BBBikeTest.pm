@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.23 2007/08/12 19:23:38 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.24 2007/12/23 12:44:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006 Slaven Rezic. All rights reserved.
@@ -252,12 +252,20 @@ sub xmllint_string {
 
 	open(my $XMLLINT, "| xmllint - 2>&1 >/dev/null")
 	    or die "Error while opening xmllint: $!";
-	print $XMLLINT $content
-	    or die $!;
-	close $XMLLINT
-	    or die $!;
-	Test::More::is($?, 0, $test_name)
-		or diag $content;
+	print $XMLLINT $content; # do not check for die
+	close $XMLLINT; # do not check for die, check $? later
+	Test::More::is($?, 0, $test_name) or do {
+	    if (length($content) > 1024) {
+		require File::Temp;
+		my($tempfh,$tempfile) = File::Temp::tempfile(SUFFIX => ".xml",
+							     UNLINK => 0);
+		print $tempfh $content;
+		close $tempfh;
+		Test::More::diag("Please look at <$tempfile> for the tested XML content");
+	    } else {
+		Test::More::diag($content);
+	    }
+	};
     }
 }
 

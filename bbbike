@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.329 2007/10/24 21:59:33 eserte Exp $
+# $Id: bbbike,v 3.329 2007/10/24 21:59:33 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -18080,7 +18080,8 @@ sub show_logo { # und About
 	     -font => $font{'bold'},
 	     -padx => 5,
 	     -pady => 0,
-	     -highlightthickness => 0,
+	     -highlightthickness => 1,
+	     -highlightbackground => 'white',
 	     -relief => 'flat',
 	     -borderwidth => 0,
 	     ($as_about ?
@@ -18096,7 +18097,8 @@ sub show_logo { # und About
 	$f->$Button_or_Label
 	    (-text => M"Siehe auch die Datei COPYING",
 	     -padx => 5,
-	     -highlightthickness => 0,
+	     -highlightthickness => 1,
+	     -highlightbackground => 'white',
 	     -relief => "flat",
 	     -borderwidth => 0,
 	     ($as_about ?
@@ -18135,7 +18137,8 @@ sub show_logo { # und About
 	     -pady => 0,
 	     -relief => 'flat',
 	     -borderwidth => 0,
-	     -highlightthickness => 0,
+	     -highlightthickness => 1,
+	     -highlightbackground => 'white',
 	     ($as_about ?
 	      (-command => sub {
 		   if ($^O eq 'MSWin32') {
@@ -18157,6 +18160,7 @@ sub show_logo { # und About
 	my $okb = $logotop->Button(Name => 'ok',
 				   -command => sub { hide_logo($as_about) },
 				  )->pack(-anchor => 'c', -pady => 4);
+	$okb->focus;
 	$logotop->bind('<Return>' => sub { $okb->invoke });
     } else {
 	$logotop->transient($top);

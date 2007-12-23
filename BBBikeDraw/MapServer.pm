@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.37 2007/06/14 22:24:40 eserte Exp $
+# $Id: MapServer.pm,v 1.38 2007/12/23 13:06:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.37 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -237,7 +237,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.37 $ =~ /(\d+)\.(\d+)/);
 	    $self->{ImageType} = $_[0];
 	}
 	if (!defined $self->{ImageType}) {
-	    my $suffix = shift->ImageSuffix;
+	    my $suffix = $self->ImageSuffix;
 	    uc($suffix);
 	} else {
 	    uc($self->{ImageType});
@@ -667,7 +667,7 @@ sub empty_image_error {
 sub msImageType {
     my($self) = @_;
     my $imagetype = $self->imagetype;
-    if ($imagetype eq 'jpeg') {
+    if (defined $imagetype && $imagetype eq 'jpeg') {
 	$imagetype = "jpg";
     }
     $imagetype;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.57 2007/05/31 21:44:53 eserte Exp $
+# $Id: GD.pm,v 1.58 2007/12/23 16:20:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -40,7 +40,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.57 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.58 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush, %thickness, %outline_thickness);
 
@@ -867,9 +867,44 @@ sub draw_route {
 	}
     }
 
-    my $brush; # should be *outside* the next block!!!
     my $line_style;
     my $width;
+
+    my $draw_route_polyline = sub {
+	my($c1) = @_;
+	# Route
+	# Don't use setThickness here, because the dashed effect looks
+	# strange (schraffiert).
+	for(my $i = 0; $i < $#$c1; $i++) {
+	    my($x1, $y1, $x2, $y2) = (@{$c1->[$i]}, @{$c1->[$i+1]});
+	    my($tx1,$ty1, $tx2,$ty2) = (&$transpose($x1, $y1),
+					&$transpose($x2, $y2));
+	    $im->line($tx1,$ty1, $tx2,$ty2, $line_style);
+	    if (defined $width) {
+		my $alpha = atan2($ty2-$ty1, $tx2-$tx1);
+		my $beta  = $alpha - pi()/2;
+		for my $delta (-int($width/2) .. int($width/2)) {
+		    next if $delta == 0;
+		    my($dx, $dy) = ($delta*cos($beta), $delta*sin($beta));
+		    $im->line($tx1+$dx,$ty1+$dy,$tx2+$dx,$ty2+$dy,
+			      $line_style);
+		}
+	    }
+	}
+    };
+
+    if (@{ $self->{OldCoordsC1} || [] }) {
+	$im->setStyle(($red)x2,
+		      ($self->{GD}->gdTransparent)x6
+		     );
+	$line_style = $self->{GD}->gdStyled();
+	$width = 1;
+	$draw_route_polyline->($self->{OldCoordsC1});
+	undef $line_style;
+	undef $width;
+    }
+
+    my $brush; # should be *outside* the next block!!!
     if ($self->{RouteDotted}) {
 	# gepunktete Routen für die WAP-Ausgabe (B/W)
 	$im->setStyle(($white)x$self->{RouteDotted},
@@ -898,25 +933,7 @@ sub draw_route {
 	$width = $width{Route};
     }
 
-    # Route
-    # Don't use setThickness here, because the dashed effect looks
-    # strange (schraffiert).
-    for(my $i = 0; $i < $#c1; $i++) {
-	my($x1, $y1, $x2, $y2) = (@{$c1[$i]}, @{$c1[$i+1]});
-	my($tx1,$ty1, $tx2,$ty2) = (&$transpose($x1, $y1),
-				    &$transpose($x2, $y2));
-	$im->line($tx1,$ty1, $tx2,$ty2, $line_style);
-	if (defined $width) {
-	    my $alpha = atan2($ty2-$ty1, $tx2-$tx1);
-	    my $beta  = $alpha - pi()/2;
-	    for my $delta (-int($width/2) .. int($width/2)) {
-		next if $delta == 0;
-		my($dx, $dy) = ($delta*cos($beta), $delta*sin($beta));
-		$im->line($tx1+$dx,$ty1+$dy,$tx2+$dx,$ty2+$dy,
-			  $line_style);
-	    }
-	}
-    }
+    $draw_route_polyline->(\@c1);
 
     # Flags
     if (@c1 > 1) {

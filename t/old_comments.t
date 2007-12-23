@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: old_comments.t,v 1.11 2007/05/09 20:55:15 eserte Exp $
+# $Id: old_comments.t,v 1.12 2007/12/23 15:32:57 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -61,12 +61,12 @@ my @tests = (
 	     ["7603,8911", "7497,8916", <<EOF, "CP;"],
 - {}
 - Als Julius-Leber-Brücke ausgeschildert: 1
-- ~
+- {}
 EOF
 	     ["7497,8916", "7603,8911", <<EOF, "CP; Rückweg"],
 - {}
 - {}
-- ~
+- {}
 EOF
 
 	     # Hagelberger/Yorck
@@ -74,21 +74,21 @@ EOF
 - Kopfsteinpflaster: 1
   Straßenseite bei der Fußgängerampel Yorckstr./Katzbachstr. wechseln: 1
 - {}
-- ~
+- {}
 EOF
 	     ["8777,9601", "8595,9495", <<EOF, "No PI, starting point outside"],
 - {}
-- ~
+- {}
 EOF
 	     ["8648,9526", "8595,9495", <<EOF, "No PI, starting point inside"],
 - {}
-- ~
+- {}
 EOF
 
 	     # Bergmannstr.
 	     ["9248,9350", "10533,9240", <<EOF, "CS (was Route, now no route here)"],
 - Kopfsteinpflaster (Teilstrecke): 1
-- ~
+- {}
 EOF
 
 ## cannot use because of YAML bug in 0.62, rt bug number will follow...
@@ -97,34 +97,34 @@ EOF
 # 	     ["7315,9156", "6977,8934", <<EOF, "CS (Route)"],
 # - 'RR1 (Schloßplatz - Wannsee)': 1
 #   'mäßiges, teilweise holpriges Kopfsteinpflaster (Teilstrecke)': 1
-# - ~
+# - {}
 # EOF
 
 	     # Rathenauplatz
 	     [qw(2392,9715 2379,9665), <<EOF, "CP2; am Startpunkt"],
 - Als Rathenauplatz ausgeschildert: 1
-- ~
+- {}
 EOF
 	     [qw(2379,9665 2392,9715), <<EOF, "Rückweg ohne Kommentare"],
 - {}
-- ~
+- {}
 EOF
 	     # Bismarckplatz
 	     [qw(2316,9400 2380,9402), <<EOF, "Hubertusallee als Teilstrecke"],
 - als Hubertusallee ausgeschildert (Teilstrecke): 1
-- ~
+- {}
 EOF
 
 	     # Bismarckplatz
 	     ["2947,9367", "2348,9398", <<EOF, "CP2; ohne Teilstrecke"],
 - {}
 - als Caspar-Theyß-Str. ausgeschildert: 1
-- ~
+- {}
 EOF
 	     ["2348,9398", "2947,9367", <<EOF, "Rückweg"],
 - als Hubertusallee ausgeschildert: 1
 - {}
-- ~
+- {}
 EOF
 
 	     # Lützowplatz
@@ -135,7 +135,7 @@ EOF
 - R1: 1
   RR2: 1
   RR3: 1
-- ~
+- {}
 EOF
 	     ["6642,12010", "6732,10754", <<EOF, "Rückweg"],
 - R1: 1
@@ -144,7 +144,7 @@ EOF
 - {}
 - {}
 - Als Lützowplatz ausgeschildert (Teilstrecke): 1
-- ~
+- {}
 EOF
 	    );
 
@@ -168,11 +168,7 @@ for my $cgiurl (@urls) {
 	ok($res->is_success, "Index $inx, $from - $to");
 	my $got = YAML::Load($res->content);
 	my $comments = [ map {
-	    if (defined $_->{Comment}) {
-		+{ map { ($_,1) } split /;\s+/, $_->{Comment} };
-	    } else {
-		undef;
-	    }
+	    +{ map { ($_,1) } split /;\s+/, $_->{Comment} };
 	} @{$got->{Route}} ];
 	is_deeply($comments, YAML::Load("--- #YAML:1.0\n$expected"), $desc) or do {
 	    if ($v) {

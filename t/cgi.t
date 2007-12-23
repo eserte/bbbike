@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.51 2007/10/14 22:01:08 eserte Exp $
+# $Id: cgi.t,v 1.52 2007/12/23 21:18:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -79,7 +79,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (172 + $ortsuche_tests) * scalar @urls;
+plan tests => (176 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -347,7 +347,7 @@ for my $cgiurl (@urls) {
 	}
     }
 
- XXX: {
+    {
 	my $content;
 
 	# optimal route crosses Berlin border
@@ -730,6 +730,28 @@ for my $cgiurl (@urls) {
 	BBBikeTest::like_long_data($resp->content, qr{zielname.*Seumestr});
 	BBBikeTest::like_long_data($resp->content, qr{Genaue Kreuzung angeben});
     }
+
+ XXX: {
+	# Check if Umlaute are correctly preserved. This breaks with
+	# the CGI.pm in perl 5.10.0 and must be seen as a CGI.pm
+	# problem.
+	my $resp;
+
+	# Do not use CGI.pm here, because it is known to have issues!
+	my %params = (startc=>"9322,11487",
+		      zielc=>"9126,12413",
+		      startname=>"Mauerstr. (Mitte)/Krausenstr.",
+		      zielname=>"Neustädtische Kirchstr./Mittelstr. (Mitte)",
+		      pref_seen=>1,
+		     );
+	$resp = $ua->get($cgiurl . "?" . join("&", map { "$_=" . my_uri_escape($params{$_}) } keys %params));
+	ok($resp->is_success, "Request with latin1")
+	    or diag $resp->as_string;
+	my $content = uncompr($resp);
+	BBBikeTest::like_long_data($content, qr{Neust%e4dtische}i, "Found iso-8859-1 encoding");
+	BBBikeTest::unlike_long_data($content, qr{Neust%C3%A4dtische}i, "No single encoded utf-8");
+	BBBikeTest::unlike_long_data($content, qr{Neust%C3%83%C2%A4dtische}i, "No double encoded utf-8");
+    }
 }
 
 sub display {
@@ -810,3 +832,9 @@ sub is_in_path {
 }
 # REPO END
 
+sub my_uri_escape {
+    my $toencode = shift;
+    return undef unless defined($toencode);
+    $toencode=~s/([^a-zA-Z0-9_.~-])/uc sprintf("%%%02x",ord($1))/eg;
+    return $toencode;
+}

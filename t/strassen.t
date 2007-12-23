@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen.t,v 1.15 2007/08/12 21:35:44 eserte Exp $
+# $Id: strassen.t,v 1.16 2007/12/23 21:18:58 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -34,7 +34,9 @@ BEGIN {
 }
 
 my $datadir = "$FindBin::RealBin/../data";
-my $doit;
+my $doit; # Note that the -doit tests currently fail, because the
+          # roundtrip produces correct data which is not exact like
+          # the original data
 GetOptions(get_std_opts("xxx"),
 	   "doit!" => \$doit,
 	  ) or die "usage";
@@ -217,6 +219,7 @@ EOF
 }
 
 {
+    # See comment above (-doit)
  SKIP: {
 	skip("Enable more tests with -doit option", $doit_tests) if !$doit;
 	skip("No diff", $doit_tests) if !is_in_path("diff");

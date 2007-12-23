@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.66 2007/10/19 20:39:00 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.67 2007/12/23 15:22:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.
@@ -841,7 +841,7 @@ install-debian-perlmods-for-cgi:
 
 test-with-protocol: permission
 	-$(MAKE) ext
-	DATE=`date +%Y%m%d`; export HARNESS_NOTTY=1; script $(HOME)/trash/bbbike-test-$$DATE $(MAKE) test
+	DATE=`date +%Y%m%d`; export HARNESS_NOTTY=1; export BBBIKE_LONG_TESTS=1; script $(HOME)/trash/bbbike-test-$$DATE $(MAKE) test
 	DATE=`date +%Y%m%d`; cd data && script $(HOME)/trash/bbbike-test-data-$$DATE $(MAKE) all slow-checks really-slow-checks
 
 EOF
