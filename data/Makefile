@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.162 2007/10/14 20:29:40 eserte Exp $
+# $Id: Makefile,v 2.165 2007/12/24 00:14:08 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -19,8 +19,6 @@ MISCSRCDIR=		$(BBBIKEDIR)/miscsrc
 DATADIR=		.
 PERSISTENTTMPDIR=	$(BBBIKEDIR)/tmp
 
-#XXX del:
-#BERLINMAP2HAFAS=	${MISCSRCDIR}/berlinmap2hafas -strict
 HAFAS2HAFAS=		${MISCSRCDIR}/hafas2hafas -strict
 CONVERT2HAFAS=		${MISCSRCDIR}/convert2hafas -strict
 CONVERT_ORIG=		${MISCSRCDIR}/convert_orig_to_bbd
@@ -165,7 +163,7 @@ strassen:	.strassen.tmp plaetze
 	-@$(READONLY) $@
 
 .strassen.tmp: strassen-orig
-	$(CONVERT2HAFAS) strassen-orig > $@~
+	$(CONVERT_ORIG) strassen-orig > $@~
 	cp $@~ $@
 	rm $@~
 
@@ -183,12 +181,12 @@ $f:	${_f_raw_${f}} inaccessible_landstrassen
 
 plaetze: plaetze-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) plaetze-orig > plaetze
+	$(CONVERT_ORIG) plaetze-orig > plaetze
 	-@$(READONLY) $@
 
 ${PERSISTENTTMPDIR}/non-faked-plaetze: plaetze-orig
 	-@$(WRITEABLE) $@
-	${GREPSTRASSEN} -v -section "faked_plaetze" plaetze-orig | $(CONVERT2HAFAS) -map H > $@~
+	${GREPSTRASSEN} -v -section "faked_plaetze" plaetze-orig | $(CONVERT_ORIG) > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
@@ -226,19 +224,19 @@ inaccessible_landstrassen: strassen landstrassen landstrassen2 gesperrt
 # sortbycat does not change the sort order of islands
 wasserstrassen: wasserstrassen-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) wasserstrassen-orig | $(SORTBYCAT) -ignore F:I > $@ \
+	$(CONVERT_ORIG) wasserstrassen-orig | $(SORTBYCAT) -ignore F:I > $@ \
 	    || (rm -f $@; false)
 	-@$(READONLY) $@
 
 wasserumland: wasserumland-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) wasserumland-orig | $(SORTBYCAT) -ignore F:I > $@ \
+	$(CONVERT_ORIG) wasserumland-orig | $(SORTBYCAT) -ignore F:I > $@ \
 	    || (rm -f $@; false)
 	-@$(READONLY) $@
 
 wasserumland2: wasserumland2-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) -unutf8ify wasserumland2-orig | $(SORTBYCAT) -ignore F:I > $@~
+	$(CONVERT_ORIG) -unutf8ify wasserumland2-orig | $(SORTBYCAT) -ignore F:I > $@~
 	[ -s $@~ ]
 	mv $@~ $@
 	-@$(READONLY) $@
@@ -259,26 +257,26 @@ wasserstrassen-lowres:  wasserstrassen wasserumland wasserumland2 \
 
 flaechen: flaechen-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) flaechen-orig > flaechen~
+	$(CONVERT_ORIG) flaechen-orig > flaechen~
 	cp $@~ $@
 	rm $@~
 	-@$(READONLY) $@
 
 green:	green-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) $> > $@~
+	$(CONVERT_ORIG) $> > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
 brunnels:	brunnels-orig
 	-@$(WRITEABLE) $@
-	${GREPSTRASSEN} -v -preserveglobaldirectives -section 'S-Bahn' $> | $(CONVERT2HAFAS) -map H > $@~
+	${GREPSTRASSEN} -v -preserveglobaldirectives -section 'S-Bahn' $> | $(CONVERT_ORIG) > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
 landstrassen: landstrassen-orig plaetze
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) landstrassen-orig > $@~
+	$(CONVERT_ORIG) landstrassen-orig > $@~
 	${GREPSTRASSEN} --namerx ' \(Potsdam\)' plaetze >> $@~
 	cp $@~ $@
 	rm $@~
@@ -287,7 +285,7 @@ landstrassen: landstrassen-orig plaetze
 
 landstrassen2: landstrassen2-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) landstrassen2-orig > $@~
+	$(CONVERT_ORIG) landstrassen2-orig > $@~
 	cp $@~ $@
 	rm $@~
 	-rm -f landstrassen2-cooked
@@ -297,7 +295,7 @@ strassen_bab: strassen_bab-orig
 	-@$(WRITEABLE) $@
 	cat strassen_bab-orig |\
 		${GREPSTRASSEN} -v -sectionrx "Autobahnen in Planung" -preserveglobaldirectives |\
-	    $(CONVERT2HAFAS) -basefile strassen_bab-orig > $@~
+	    $(CONVERT_ORIG) > $@~
 	cp $@~ $@
 	rm $@~
 	-@$(READONLY) $@
@@ -318,7 +316,7 @@ sbahn: sbahn-orig $(CONVERT_ORIG)
 
 sbahnhof:	sbahnhof-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) sbahnhof-orig > sbahnhof~
+	$(CONVERT_ORIG) sbahnhof-orig > sbahnhof~
 	mv sbahnhof~ sbahnhof
 	-@$(READONLY) $@
 
@@ -342,7 +340,7 @@ rbahn: rbahn-orig Makefile $(CONVERT_ORIG)
 
 rbahnhof:	rbahnhof-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) rbahnhof-orig > rbahnhof~
+	$(CONVERT_ORIG) rbahnhof-orig > rbahnhof~
 	mv rbahnhof~ rbahnhof
 	-@$(READONLY) $@
 
@@ -354,7 +352,7 @@ ubahn: ubahn-orig $(CONVERT_ORIG)
 
 ubahnhof:	ubahnhof-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) ubahnhof-orig > ubahnhof~
+	$(CONVERT_ORIG) ubahnhof-orig > ubahnhof~
 	mv ubahnhof~ ubahnhof
 	-@$(READONLY) $@
 
@@ -390,39 +388,39 @@ $(i)bahnhof_bg:	$(i)bahnhof-orig
 
 faehren: faehren-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) faehren-orig > faehren~
+	$(CONVERT_ORIG) faehren-orig > faehren~
 	mv faehren~ faehren
 	-@$(READONLY) $@
 
 hoehe: hoehe-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) hoehe-orig > hoehe~
+	$(CONVERT_ORIG) hoehe-orig > hoehe~
 	mv hoehe~ hoehe
 	-@$(READONLY) $@
 
 orte: orte-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) -unutf8ify orte-orig | $(SORTBYCAT) > orte~
+	$(CONVERT_ORIG) -unutf8ify orte-orig | $(SORTBYCAT) > orte~
 	[ -s orte~ ]
 	mv orte~ orte
 	-@$(READONLY) $@
 
 orte2: orte2-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) -unutf8ify orte2-orig | $(SORTBYCAT) > orte2~
+	$(CONVERT_ORIG) -unutf8ify orte2-orig | $(SORTBYCAT) > orte2~
 	[ -s orte2~ ]
 	mv orte2~ orte2
 	-@$(READONLY) $@
 
 orte_city: orte_city-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) orte_city-orig | $(SORTBYCAT) > orte_city~
+	$(CONVERT_ORIG) orte_city-orig | $(SORTBYCAT) > orte_city~
 	mv orte_city~ orte_city
 	-@$(READONLY) $@
 
 ampeln:	ampeln-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) ampeln-orig > ampeln~
+	$(CONVERT_ORIG) ampeln-orig > ampeln~
 	mv ampeln~ ampeln
 	-@$(READONLY) $@
 
@@ -912,10 +910,10 @@ check-fragezeichen:	/tmp/check-fragezeichen.bbd \
 force_check: remove_checks check
 
 remove_checks:
-	rm -f .check_* .create_*
+	rm -f .check_* .create_* .doublecheck_*
 
 # checks
-check:	report-checks do-checks
+check:	report-checks do-checks do-doublechecks
 
 report-checks:
 	@echo Now doing checks...
@@ -1497,6 +1495,110 @@ ${CGPSMAPPER}:
 	wget http://www.cgpsmapper.com/download/cgpsmapper-static.gz -O /tmp/cgpsmapper-static.gz
 	gunzip /tmp/cgpsmapper-static.gz
 	sudo install /tmp/cgpsmapper-static ${CGPSMAPPER}
+
+######################################################################
+# This will be removed someday if convert_orig_to_bbd is good enough
+
+do-doublechecks:	.doublecheck_strassen.tmp \
+			.doublecheck_plaetze \
+			.doublecheck_non-faked-plaetze \
+			.doublecheck_wasserstrassen \
+			.doublecheck_wasserumland \
+			.doublecheck_wasserumland2 \
+			.doublecheck_flaechen \
+			.doublecheck_green \
+			.doublecheck_brunnels \
+			.doublecheck_landstrassen \
+			.doublecheck_landstrassen2 \
+			.doublecheck_strassen_bab \
+			.doublecheck_sbahnhof \
+			.doublecheck_rbahnhof \
+			.doublecheck_ubahnhof \
+			.doublecheck_faehren \
+			.doublecheck_hoehe \
+			.doublecheck_orte \
+			.doublecheck_orte2 \
+			.doublecheck_orte_city \
+			.doublecheck_ampeln \
+
+.for file in flaechen green plaetze landstrassen2 sbahnhof rbahnhof ubahnhof faehren hoehe ampeln
+.doublecheck_$(file): $(file)
+	-rm /tmp/$(file)-XXX
+	$(CONVERT2HAFAS) $(file)-orig > /tmp/$(file)-XXX
+	diff -u $(file) /tmp/$(file)-XXX
+	rm /tmp/$(file)-XXX
+	touch $@
+.endfor
+
+.doublecheck_strassen.tmp:	.strassen.tmp
+	-rm /tmp/strassen-XXX
+	$(CONVERT2HAFAS) strassen-orig > /tmp/strassen-XXX
+	diff -u .strassen.tmp /tmp/strassen-XXX
+	rm /tmp/strassen-XXX
+	touch $@
+
+.doublecheck_non-faked-plaetze: ${PERSISTENTTMPDIR}/non-faked-plaetze
+	-rm /tmp/non-faked-plaetze-XXX
+	${GREPSTRASSEN} -v -section "faked_plaetze" plaetze-orig | $(CONVERT2HAFAS) -map H > /tmp/non-faked-plaetze-XXX
+	diff -u ${PERSISTENTTMPDIR}/non-faked-plaetze /tmp/non-faked-plaetze-XXX
+	rm /tmp/non-faked-plaetze-XXX
+	touch $@
+
+.for file in wasserstrassen wasserumland
+.doublecheck_$(file): $(file)
+	-rm /tmp/$(file)-XXX
+	$(CONVERT2HAFAS) $(file)-orig | $(SORTBYCAT) -ignore F:I > /tmp/$(file)-XXX
+	diff -u $(file) /tmp/$(file)-XXX
+	rm /tmp/$(file)-XXX
+	touch $@
+.endfor
+
+.doublecheck_wasserumland2: wasserumland2
+	-rm /tmp/wasserumland2-XXX
+	$(CONVERT2HAFAS) -unutf8ify wasserumland2-orig | $(SORTBYCAT) -ignore F:I > /tmp/wasserumland2-XXX
+	diff -u wasserumland2 /tmp/wasserumland2-XXX
+	rm /tmp/wasserumland2-XXX
+	touch $@
+
+.doublecheck_brunnels: brunnels
+	-rm /tmp/brunnels-XXX
+	${GREPSTRASSEN} -v -preserveglobaldirectives -section 'S-Bahn' $> | $(CONVERT2HAFAS) -map H > /tmp/brunnels-XXX
+	diff -u brunnels /tmp/brunnels-XXX
+	rm /tmp/brunnels-XXX
+	touch $@
+
+.doublecheck_landstrassen: landstrassen plaetze
+	-rm /tmp/landstrassen-XXX
+	$(CONVERT2HAFAS) landstrassen-orig > /tmp/landstrassen-XXX
+	${GREPSTRASSEN} --namerx ' \(Potsdam\)' plaetze >> /tmp/landstrassen-XXX
+	diff -u landstrassen /tmp/landstrassen-XXX
+	rm /tmp/landstrassen-XXX
+	touch $@
+
+.doublecheck_strassen_bab: strassen_bab
+	-rm /tmp/strassen_bab-XXX
+	cat strassen_bab-orig |\
+		${GREPSTRASSEN} -v -sectionrx "Autobahnen in Planung" -preserveglobaldirectives |\
+	    $(CONVERT2HAFAS) -basefile strassen_bab-orig > /tmp/strassen_bab-XXX
+	diff -u strassen_bab /tmp/strassen_bab-XXX
+	rm /tmp/strassen_bab-XXX
+	touch $@
+
+.for file in orte orte2
+.doublecheck_$(file): $(file)
+	-rm /tmp/$(file)-XXX
+	$(CONVERT2HAFAS) -unutf8ify $(file)-orig | $(SORTBYCAT) > /tmp/$(file)-XXX
+	diff -u $(file) /tmp/$(file)-XXX
+	rm /tmp/$(file)-XXX
+	touch $@
+.endfor
+
+.doublecheck_orte_city: orte_city
+	-rm /tmp/orte_city-XXX
+	$(CONVERT2HAFAS) orte_city-orig | $(SORTBYCAT) > /tmp/orte_city-XXX
+	diff -u orte_city /tmp/orte_city-XXX
+	rm /tmp/orte_city-XXX
+	touch $@
 
 ######################################################################
 

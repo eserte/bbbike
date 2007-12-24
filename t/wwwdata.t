@@ -2,14 +2,16 @@
 # -*- perl -*-
 
 #
-# $Id: wwwdata.t,v 1.2 2007/12/23 21:18:28 eserte Exp $
+# $Id: wwwdata.t,v 1.3 2007/12/23 21:54:57 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
 
 use FindBin;
-use lib "$FindBin::RealBin/..";
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
 
 BEGIN {
     if (!eval q{

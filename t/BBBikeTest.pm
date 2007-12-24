@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.24 2007/12/23 12:44:16 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.25 2007/12/23 21:43:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006 Slaven Rezic. All rights reserved.
@@ -250,11 +250,18 @@ sub xmllint_string {
 
 	$test_name = "xmllint check" if !$test_name;
 
-	open(my $XMLLINT, "| xmllint - 2>&1 >/dev/null")
+	require File::Temp;
+	my($errfh,$errfile) = File::Temp::tempfile(SUFFIX => ".log",
+						   UNLINK => 1);
+	open(my $XMLLINT, "| xmllint -noout - 2>$errfile")
 	    or die "Error while opening xmllint: $!";
+	binmode $XMLLINT;
 	print $XMLLINT $content; # do not check for die
 	close $XMLLINT; # do not check for die, check $? later
 	Test::More::is($?, 0, $test_name) or do {
+	    seek($errfh,0,0);
+	    my $errorcontent = do { local $/; <$errfh> };
+	    $content = "Errors:\n$errorcontent\nXML:\n$content";
 	    if (length($content) > 1024) {
 		require File::Temp;
 		my($tempfh,$tempfile) = File::Temp::tempfile(SUFFIX => ".xml",

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.105 2007/12/23 12:54:28 eserte Exp $
+# $Id: Makefile,v 1.106 2007/12/23 21:30:50 eserte Exp $
 #
 
 # Targets:
@@ -49,12 +49,14 @@ CGI_FILES=		bbbike.cgi \
 			mapserver_address.cgi \
 			mapserver_comment.cgi \
 			mapserver_setcoord.cgi
-TESTS_ON_REMOTE?=	basic.t
+TESTS_ON_REMOTE?=	basic.t \
+			strassen-gpx.t
 TESTS_FROM_LOCAL=	cgihead.t \
 			cgi-mechanize.t \
 			cgi.t \
 			radzeit.t \
-			wapcgi.t
+			wapcgi.t \
+			wwwdata.t
 TESTS=			$(TESTS_ON_REMOTE) $(TESTS_FROM_LOCAL)
 TESTS_ADD=		BBBikeTest.pm
 HTDOCS=			public

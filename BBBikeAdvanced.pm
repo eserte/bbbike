@@ -3177,6 +3177,7 @@ sub search_anything {
 		    }
 		}
 		binmode GREP;
+	    BBD_LINE:
 		while(<GREP>) {
 		    chomp;
 		    utf8::upgrade($_) if $need_utf8_upgrade;
@@ -3194,7 +3195,19 @@ sub search_anything {
 			    if (/^#:\s*encoding:\s*(.*)/) {
 				Strassen::switch_encoding(\*GREP, $1);
 			    }
-			    next unless /$s_rx.*\t/i;
+			    if (/^#:\s*alias:?\s*($s_rx.*)$/) {
+				my $alias = $1;
+				while(<GREP>) {
+				    next if /^#/;
+				    my $non_aliased_rec = Strassen::parse($_);
+				    $non_aliased_rec->[Strassen::NAME()] .= " ($1)";
+				    $non_aliased_rec->[3] = [];
+				    push @matches, $non_aliased_rec;
+				    next BBD_LINE;
+				}
+			    } else {
+				next unless /$s_rx.*\t/i;
+			    }
 			}
 			next if /^\#/;
 			push @matches, Strassen::parse($_);

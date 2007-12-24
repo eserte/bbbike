@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: grepstrassen,v 1.20 2007/05/03 21:02:46 eserte Exp $
+# $Id: grepstrassen,v 1.22 2007/12/23 23:47:18 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -141,7 +141,7 @@ if ($preserveglobaldirectives) {
     my $global_directives = $s->get_global_directives;
     if ($global_directives && keys %$global_directives) {
 	for my $global_directive (keys %$global_directives) {
-	    print join("", map { "#: $global_directive $_\n" } @{ $global_directives->{$global_directive} });
+	    print join("", map { "#: $global_directive: $_\n" } @{ $global_directives->{$global_directive} });
 	    if ($global_directive eq 'encoding') {
 		binmode STDOUT, ":encoding(" . $global_directives->{$global_directive}->[0] . ")";
 	    }
@@ -150,14 +150,20 @@ if ($preserveglobaldirectives) {
     }
 } else {
     # Only preserve some importing global directives:
+    my $need_global_directive_separator;
     my $comment_directives = $s->get_global_directives->{'#'};
     if ($comment_directives) {
-	print join("", map { "#:# $_\n" } @$comment_directives);
+	print join("", map { "#: #: $_\n" } @$comment_directives);
+	$need_global_directive_separator++;
     }
     my $encoding_directive = $s->get_global_directives->{'encoding'}->[0];
     if ($encoding_directive) {
 	print "#: encoding: $encoding_directive\n";
 	binmode STDOUT, ":encoding($encoding_directive)";
+	$need_global_directive_separator++;
+    }
+    if ($need_global_directive_separator) {
+	print "#:\n";
     }
 }
 

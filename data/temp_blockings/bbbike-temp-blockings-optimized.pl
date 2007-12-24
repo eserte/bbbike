@@ -615,15 +615,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1198364400,
-         'text' => 'L 040 Zossener Damm OD Blankenfelde, zw. Jühnsdorfer Weg u. A.-Dürer-Str. Kanal- und Straßenbau Vollsperrung 01.10.2007-22.12.2007 ',
-         'from' => 1191103200,
-         'id' => 1183,
-         'data' => 'userdel	2::inwork 10115,-8276 11019,-8435
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

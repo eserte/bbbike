@@ -96,12 +96,6 @@ selection (this needs the relatively slow -fixedfont option of
 FontDialog). Otherwise, if FontDialog is not available, the chosen
 fonts should be made immediately visible using set_fonts().
 
-=item * (H5)
-
-Stacked tooltips: letzte Probleme (zu spätes Aktualisieren der Anzeige
-beim <Motion>, cyclepath im Edit-Mode wird falsch angezeigt) beheben
-und dann veröffentlichen.
-
 =item * (H3)
 
 Im Edit-Mode auch Direktiven zu Strecken zeigen, soweit sie

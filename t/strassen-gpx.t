@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-gpx.t,v 1.14 2007/12/23 15:56:11 eserte Exp eserte $
+# $Id: strassen-gpx.t,v 1.15 2007/12/23 21:30:16 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -34,7 +34,8 @@ use Route;
 
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
-my $tests_per_variant = 37;
+my $new_strassen_gpx_tests = 5;
+my $tests_per_variant = 32 + $new_strassen_gpx_tests;
 my $do_long_tests = !!$ENV{BBBIKE_LONG_TESTS};
 my $bbdfile;
 
@@ -205,7 +206,7 @@ EOF
 	    }
 	    xmllint_string($xml_res, "xmllint for bbd2gpx output (string data with unicode > 128 < 256)");
 	SKIP: {
-		skip("No XML::LibXML parser available for checking", 1)
+		skip("No XML::LibXML parser available for checking", 2)
 		    if !eval { require XML::LibXML; 1 };
 		my $p = XML::LibXML->new;
 		my $doc = eval { $p->parse_string($xml_res) };
@@ -219,7 +220,10 @@ EOF
 	    }
 	}
 
-	{
+    SKIP: {
+	    skip("Too old version of Strassen::GPX", $new_strassen_gpx_tests)
+		if $Strassen::GPX::VERSION < 1.13;
+
 	    # unicode data > codepoint 255
 	    my $data = <<EOF;
 #: encoding: utf-8
@@ -242,7 +246,7 @@ EOF
 	    }
 	    xmllint_string($xml_res, "xmllint for bbd2gpx output (string data with unicode > 255)");
 	SKIP: {
-		skip("No XML::LibXML parser available for checking", 1)
+		skip("No XML::LibXML parser available for checking", 2)
 		    if !eval { require XML::LibXML; 1 };
 		my $p = XML::LibXML->new;
 		my $doc = eval { $p->parse_string($xml_res) };
