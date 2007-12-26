@@ -100,8 +100,13 @@ fonts should be made immediately visible using set_fonts().
 
 Im Edit-Mode auch Direktiven zu Strecken zeigen, soweit sie
 interessant sind. Evtl. könnte man einige Direktiven (Aliase) auch im
-Normal-Mode zeigen. Außerdem sollten einige Direktiven auch suchbar
-sein.
+Normal-Mode zeigen.
+
+=item * (M3)
+
+Aliase sollten suchbar sein: implementiert in search_anything für
+nicht-Similarity-Suchen und nicht-egrep-Suchen. Der Rest muss
+untersucht werden (brauche ich egrep überhaupt?)
 
 =item * (H2)
 
@@ -284,8 +289,8 @@ Detect computer speed on linux:
 
     perl -e '($bogomips)=`grep bogomips /proc/cpuinfo` =~ /:\s*([\d\.]+)/; print $bogomips,"\n"'
 
-How to get CPU/hardware speed on other OSes: FreeBSD (sysctl?),
-Windows?
+How to get CPU/hardware speed on other OSes: FreeBSD (sysctl?,
+/compat/linux/proc/cpuinfo?), Windows?
 
 E<quot>Optionen für langsame RechnerE<quot>: z.B. E<quot>Überlappungen
 vermeidenE<quot> etc.
@@ -2920,9 +2925,10 @@ Straßenbeschreibung: Labels intelligent positionieren. Das
 potentielle Text-BBBox wird dagegen geprüft. Auch prüfen, ob man sich
 innerhalb der PageBBox befindet. Falls kein Platz ist, werden zunächst
 die Himmerlsrichtungen versucht und dann per Verbindungslinie eine
-entferntere Position. Kann man Texte auch rotieren? Besser:
-feststellen, wo sich die Route befindet (Pseudo-BBox dafür erstellen?)
-und Überlappungen der Route somit vermeiden.
+entferntere Position. Kann man Texte auch rotieren? (Ja, mit
+L<http://sourceforge.net/tracker/index.php?func=detail&aid=1857255&group_id=2464&atid=302464>!)
+Besser: feststellen, wo sich die Route befindet (Pseudo-BBox dafür
+erstellen?) und Überlappungen der Route somit vermeiden.
 
 Oder ganz alternativ: wie sieht die PDF-Unterstützung des Mapservers
 aus?

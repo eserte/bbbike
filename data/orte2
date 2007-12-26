@@ -2,7 +2,7 @@
 #: encoding: iso-8859-1
 #: title.de: Orte im weiteren Umland
 #: title.en: Places far away
-#: version: $Id: orte2-orig,v 4.45 2007/12/24 00:03:18 eserte Exp $
+#: version: $Id: orte2-orig,v 4.46 2007/12/24 00:47:57 eserte Exp $
 #:
 Hannover	6 -238396,-7589
 Hamburg	6 -224299,122800
@@ -13,6 +13,7 @@ Dresden	6 36012,-150175
 Halle	6 -84779,-105018
 Magdeburg	6 -108962,-31703
 Braunschweig	6 -184186,-18956
+#: alias: Stettin
 Szczecin	6 86292,115232
 Rostock	5 -79160,185302
 Schwerin	5 -127134,133359
@@ -40,6 +41,7 @@ Schwedt|/Oder	4 69238,73315
 Wolgast	4 31756,183490
 Wittstock|a.d. Dosse	4 -53744,82975
 Pritzwalk	4 -74653,81289
+#: alias: Ückermünde
 Ueckermünde	4 50947,149040
 Bergen|auf Rügen	4 7796,223783
 Waren|(Müritz)	4 -41163,123047
@@ -99,6 +101,7 @@ Uelzen	4 -183516,58937
 Güstrow	4 -76655,153557
 Northeim	4 -219144,-82630
 Gryfino	4 82440,95463
+#: alias: Swinemünde
 Swinoujscie	4 64415,168163
 Police	4 87325,128182
 Ostseebad Rerik	3 -114327,186494
@@ -259,6 +262,7 @@ Elbingerode|(Harz)	3 -164748,-74000
 Ilsenburg|(Harz)	3 -173296,-63682
 Eggesin	3 53539,142834
 Chojna	3 78918,63251
+#: alias: Wollin
 Wolin	3 89294,161267
 Miedzyzdroje	3 78052,170681
 Kamien Pomorski	3 99437,175872
@@ -678,6 +682,9 @@ Woltersdorf|b. Luckenwalde	1 -2319,-32806
 Gentha	1 -22474,-62608
 Weixdorf	1 40431,-139079
 Reinhardtsdorf-Schöna	1 68144,-167790
+#: alias: Rathen
+#: alias: Kurort Rathen
+#: alias: Luftkurort Rathen
 Niederrathen	1 60088,-160112
 Porschdorf	1 63561,-162184
 Dorf Wehlen	1 54689,-159888

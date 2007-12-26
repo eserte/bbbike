@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GPX.pm,v 1.13 2007/12/23 21:27:31 eserte Exp $
+# $Id: GPX.pm,v 1.14 2007/12/25 22:08:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::GPX;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Core;
 
@@ -259,7 +259,7 @@ sub _bbd2gpx_libxml {
     my($self, %args) = @_;
     my $has_encode = eval { require Encode; 1 };
     if (!$has_encode) {
-	warn "WARN: No Encode.pm module available, non-ascii characters could be broken...";
+	warn "WARN: No Encode.pm module available, non-ascii characters may be broken...\n";
     }
     my $has_utf8_upgrade = $] >= 5.008;
 
@@ -404,7 +404,16 @@ sub _bbd2gpx_twig {
 	    }
 	}
     }
-    $twig->sprint;
+    my $xml = $twig->sprint;
+    if (eval { require Encode; 1 }) {
+	# assume xml preamble is missing or set to defaul encoding:
+	# XXX This is just a workaround, I think XML::Twig should do
+	# it right.
+	Encode::encode("utf-8", $xml);
+    } else {
+	warn "WARN: No Encode.pm module available, non-ascii characters may be broken...\n";
+	$xml;
+    }
 }
 
 ######################################################################

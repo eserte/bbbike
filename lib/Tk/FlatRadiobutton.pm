@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: FlatRadiobutton.pm,v 1.1 2007/10/13 21:36:16 eserte Exp $
+# $Id: FlatRadiobutton.pm,v 1.3 2007/10/19 20:55:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2007 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ use strict;
 use vars qw($VERSION @ISA);
 Construct Tk::Widget 'FlatRadiobutton';
 
-$VERSION = '0.06';
+$VERSION = '0.07';
 
 sub Populate {
     my($w,$args) = @_;
@@ -46,3 +46,34 @@ sub invoke {
 1;
 
 __END__
+
+=head1 NAME
+
+Tk::FlatRadiobutton - an alternative radiobutton implementation for perl/Tk
+
+=head1 SYNOPSIS
+
+    use Tk::FlatRadiobutton;
+    $mw->FlatRadiobutton->pack;
+
+=head1 DESCRIPTION
+
+B<Tk::FlatRadiobutton> is an alternative radiobutton implementation.
+Please refer to the L<Tk::FlatCheckbox> documentation for a list of
+valid options.
+
+=head1 SEE ALSO
+
+L<Tk::FlatCheckbox>, L<Tk::Radiobutton>
+
+=head1 AUTHOR
+
+Slaven ReziE<0x107> <srezic@cpan.org>
+
+=head1 COPYRIGHT
+
+Copyright (c) 2001,2007 Slaven ReziE<0x107>. All rights reserved.
+This module is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut

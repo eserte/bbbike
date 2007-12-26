@@ -2,7 +2,7 @@
 #: encoding: utf-8
 #: title.de: Orte im weiteren Umland
 #: title.en: Places far away
-#: version: $Id: orte2-orig,v 4.45 2007/12/24 00:03:18 eserte Exp $
+#: version: $Id: orte2-orig,v 4.46 2007/12/24 00:47:57 eserte Exp $
 #:
 # Mecklenburg-Vorpommern, Brandenburg
 Rostock	5 -79160,185302
@@ -1150,10 +1150,13 @@ Chojna	3 78918,63251
 Ognica	1 74774,76230
 Widuchowa	2 75847,81483
 Gryfino	4 82440,95463
+#: alias: Swinemünde
 Świnoujście	4 64415,168163
 Police	4 87325,128182
+#: alias: Wollin
 Wolin	3 89294,161267
 Międzyzdroje	3 78052,170681
+#: alias: Stettin
 Szczecin	6 86292,115232
 Dąbie	0 94357,111566
 Stepnica	2 90980,140464

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.330 2007/12/23 21:55:35 eserte Exp $
+# $Id: bbbike,v 3.331 2007/12/26 23:29:52 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -19,7 +19,11 @@ package main;
 ## NOTE: This list is not maintained anymore.
 #perl2exe_include Tk/Checkbutton.pm
 
-eval q{ use open ':locale' }; if ($] >= 5.008 && $@) { warn $@ }
+# This works theoretically with 5.8.x, but there's a possible
+# endless loop which is solved in 5.10.0, see rt perl #41442
+if ($] >= 5.010 || $] >= 5.008009) {
+    eval q{ use open ':locale' }; if ($] >= 5.008 && $@) { warn $@ }
+}
 
 BEGIN { $Devel::Trace::TRACE = 0 }
 
@@ -212,7 +216,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.330 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.331 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related

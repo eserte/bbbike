@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2polish,v 1.21 2007/08/25 21:11:37 eserte Exp $
+# $Id: bbd2polish,v 1.22 2007/12/26 11:43:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -64,11 +64,13 @@ my $name = {"b"    => "BBBike map",
 	    "brb"  => "BBBike BRB map",
 	    "wide" => "BBBike wide map",
 	    "fragezeichen" => "BBBike Fragezeichen",
+	    "all"  => "BBBike complete map",
 	   }->{$mapset};
 my $id   = {"b"    => $base_id,
 	    "brb"  => $base_id+1,
 	    "wide" => $base_id+2,
 	    "fragezeichen" => $base_id+3,
+	    "all"  => $base_id+4,
 	   }->{$mapset};
 die "Cannot set name and/or id for <$mapset>"
     if !defined $name || !defined $id;
@@ -178,6 +180,20 @@ if (defined $layer) {
 	@files = qw(orte2 landstrassen2 wasserumland2 deutschland);
     } elsif ($mapset eq 'fragezeichen') {
 	@files = qw(fragezeichen);
+    } elsif ($mapset eq 'all') {
+	@files = qw(strassen wasserstrassen flaechen sbahn sbahnhof ubahn ubahnhof berlin faehren kneipen
+		    orte landstrassen wasserumland rbahn rbahnhof potsdam
+		    orte2 landstrassen2 wasserumland2 deutschland
+		    fragezeichen
+		  );
+	for my $i (0 .. $#files) {
+	    if ($files[$i] eq 'strassen' && -r "$FindBin::RealBin/../tmp/non-faked-strassen") {
+	        $files[$i] = "$FindBin::RealBin/../tmp/non-faked-strassen";
+	        warn "Using non-faked-strassen instead of strassen...\n";
+	    }
+	}
+    } else {
+	die "Unknown mapset <$mapset>";
     }
 }
 

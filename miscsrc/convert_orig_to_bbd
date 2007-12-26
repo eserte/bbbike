@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: convert_orig_to_bbd,v 1.7 2007/12/23 23:36:36 eserte Exp $
+# $Id: convert_orig_to_bbd,v 1.8 2007/12/24 00:21:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -29,13 +29,18 @@ use Strassen::Core;
 my $do_strip_tendencies;
 my $do_strip_future_categories;
 my $un_utf8_ify = 0;
+my @keep_directive;
 
 if (!GetOptions("strip-tendencies!"        => \$do_strip_tendencies,
 		"strip-future-categories!" => \$do_strip_future_categories,
 		"unutf8ify!"               => \$un_utf8_ify,
+		'keep-directive=s@'	   => \@keep_directive,
 	       )) {
-    die "usage: $0 [-strip-tendencies] [-strip-future-categories] [-unutf8ify]
-	origbbd > bbd";
+    die <<EOF;
+usage: $0 [-strip-tendencies] [-strip-future-categories] [-unutf8ify]
+          [-keep-directive dir [-keep-directive ...]]
+	origbbd > bbd
+EOF
 }
 
 my $f = shift || "-";
@@ -83,11 +88,22 @@ while(1) {
 	$r->[Strassen::NAME] .= " ($dir->{append_comment}->[0])";
     }
 
-    if ($un_utf8_ify) {
-	$r->[Strassen::NAME] = unidecode_any($r->[Strassen::NAME], "iso-8859-1");
-    }
+    unutf8ify($r->[Strassen::NAME]);
 
     $new_s->push($r);
+
+    {
+	my %copied_dir;
+	for my $_dir (@keep_directive) {
+	    if ($dir->{$_dir}) {
+		$copied_dir{$_dir} = $dir->{$_dir};
+	    }
+	}
+	if (%copied_dir) {
+	    $new_s->set_directive_for_current(\%copied_dir);
+	}
+    }
+
 }
 
 my $glob_dir = $s->get_global_directives;
@@ -99,6 +115,11 @@ if ($un_utf8_ify && $glob_dir->{encoding}) {
 }
 $new_s->set_global_directives($glob_dir);
 print $new_s->as_string;
+
+sub unutf8ify {
+    return if !$un_utf8_ify;
+    $_[0] = unidecode_any($_[0], "iso-8859-1");
+}
 
 # REPO BEGIN
 # REPO NAME unidecode_any /home/e/eserte/work/srezic-repository 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.35 2007/09/30 20:19:09 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.36 2007/12/24 00:48:35 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -671,7 +671,15 @@ sub sort_by_cat {
     }
     my %ignore;
     %ignore = map { ($_,1) } @{ $args{-ignore} } if $args{-ignore};
-    @{ $self->{Data} } =
+
+    my $data = $self->{Data};
+    my $directives = $self->{Directives} || [];
+    my @data_and_directives;
+    for my $i (0 .. $#$data) {
+	CORE::push @data_and_directives, [$data->[$i], $directives->[$i]];
+    }
+
+    @data_and_directives =
 	map  { $_->[1] }
 	sort {
 	    if (exists $ignore{$a->[2][CAT]} || exists $ignore{$b->[2][CAT]}) {
@@ -680,12 +688,19 @@ sub sort_by_cat {
 		$a->[0] <=> $b->[0];
 	    }
 	}
-	map  { my $l = parse($_);
+	map  { my $l = parse($_->[0]);
 	       [exists $catval{$l->[CAT]} ? $catval{$l->[CAT]} : 9999,
 		$_,
 		$l
 	       ]
-	} @{ $self->{Data} };
+	} @data_and_directives;
+
+    $self->{Data} = [];
+    $self->{Directives} = [];
+    for my $i (0 .. $#data_and_directives) {
+	CORE::push @{ $self->{Data} }, $data_and_directives[$i]->[0];
+	CORE::push @{ $self->{Directives} }, $data_and_directives[$i]->[1];
+    }
 }
 
 sub sort_records_by_cat {

@@ -1,14 +1,14 @@
 # -*- perl -*-
 
 #
-# $Id: Enscript.pm,v 1.8 2005/10/10 20:21:10 eserte Exp $
+# $Id: Enscript.pm,v 1.10 2007/10/29 22:57:00 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2007 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
+# Mail: srezic@cpan.org
 # WWW:  http://www.sourceforge.net/projects/srezic
 #
 
@@ -24,7 +24,7 @@ use vars qw(%media %postscript_to_x11_font
 @ISA = qw(Exporter);
 @EXPORT = qw(enscript);
 
-$VERSION = sprintf "%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/;
+$VERSION = sprintf "%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/;
 
 parse_cfg();
 
@@ -151,6 +151,7 @@ sub _read_file {
 
 sub parse_cfg {
     my $cfg_file = shift;
+    my @cfg_files = (Tk->findINC('enscript.cfg'));
     if (!defined $cfg_file) {
 	my $home_dir = eval { local $SIG{__DIE__};
 			      (getpwuid($<))[7];
@@ -158,36 +159,39 @@ sub parse_cfg {
 	my $pers_cfg_file = "$home_dir/.enscriptrc";
 	if (-f $pers_cfg_file && -r $pers_cfg_file) {
 	    $cfg_file = $pers_cfg_file;
-	} else {
-	    $cfg_file = Tk->findINC('enscript.cfg');
 	}
     }
-    if (!defined $cfg_file) {
-	die "Can't found the configuration file enscript.cfg.";
+    if (defined $cfg_file) {
+	push @cfg_files, $cfg_file;
+    }
+    if (!@cfg_files) {
+	die "Can't found any configuration enscript.cfg.";
     }
 
     %media = ();
     %postscript_to_x11_font = ();
 
-    open(CFG, $cfg_file)
-      or die "Can't open config file <$cfg_file>: $!";
-    while(<CFG>) {
-	s/\s*\#.*//;
-	next if /^\s*$/;
-	if (/^\s*Media:\s*(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)/) {
-	    $media{$1} = {Width  => $2,
-			  Height => $3,
-			  LLX    => $4,
-			  LLY    => $5,
-			  URX    => $6,
-			  URY    => $7};
-	} elsif (/^\s*FontMap:\s*(\S+)\s+(.*)/) {
-	    $postscript_to_x11_font{$1} = $2;
-	} else {
-	    #warn "Can't parse $_";
+    for my $cfg_file (@cfg_files) {
+	open(CFG, $cfg_file)
+	    or die "Can't open config file <$cfg_file>: $!";
+	while(<CFG>) {
+	    s/\s*\#.*//;
+	    next if /^\s*$/;
+	    if (/^\s*Media:\s*(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)/) {
+		$media{$1} = {Width  => $2,
+			      Height => $3,
+			      LLX    => $4,
+			      LLY    => $5,
+			      URX    => $6,
+			      URY    => $7};
+	    } elsif (/^\s*FontMap:\s*(\S+)\s+(.*)/) {
+		$postscript_to_x11_font{$1} = $2;
+	    } else {
+		#warn "Can't parse $_";
+	    }
 	}
+	close CFG;
     }
-    close CFG;
 }
 
 sub postscript_to_x11_font {
@@ -328,7 +332,7 @@ Tk::Enscript - a text-to-postscript converter using Tk::Canvas
 
 =head1 AUTHOR
 
-Slaven Rezic <eserte@cs.tu-berlin.de>
+Slaven Rezic <srezic@cpan.org>
 
 =head1 COPYRIGHT
 
@@ -338,7 +342,7 @@ it under the same terms as Perl itself.
 
 =head1 SEE ALSO
 
-enscript(1), a2ps(1), Tk::Canvas(3)
+L<enscript(1)>, L<a2ps(1)>, L<Tk::Canvas>
 
 =cut
 

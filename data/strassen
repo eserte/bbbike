@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Strassen-Koordinaten (standard coords)
-#: version: $Id: strassen-orig,v 4.238 2007/10/03 15:20:03 eserte Exp eserte $
+#: version: $Id: strassen-orig,v 4.239 2007/12/24 00:51:29 eserte Exp eserte $
 #: title.de: Straßen und Plätze in Berlin
 #: title.en: Streets and places in Berlin
 #:
@@ -147,7 +147,9 @@ An der Kolonnade	N 8823,11765 8975,11802
 (Mohrenstr.)	N 9047,11822 9076,11743
 Mohrenstr.	N 9000,11727 9076,11743 9173,11770 9220,11781 9410,11803 9538,11818 9672,11833 9878,11857 9925,11947
 Taubenstr.	N 9144,11866 9208,11872 9396,11899 9526,11911
+#: alias: Gendarmenmarkt [Taubenstr.]
 Gendarmenmarkt	NN 9526,11911 9663,11927
+#: alias: Gendarmenmarkt [Jägerstr.]
 Gendarmenmarkt	NN 9516,12010 9651,12020
 Taubenstr.	N 9663,11927 9859,11941 9925,11947
 Jägerstr. (Mitte)	N 9108,11961 9201,11968 9386,11995 9516,12010
@@ -662,6 +664,7 @@ Innsbrucker Str.	N 6118,9078 6171,8886 6195,8793 6219,8694 6244,8597
 Innsbrucker Str.	NN 6244,8597 6271,8458
 Innsbrucker Str.	N 6271,8458 6325,8259 6350,8177 6386,8085
 Innsbrucker Str.	NN 6386,8085 6409,8026
+#: alias: Innsbrucker Platz [Ebertstr. - Eisackstr.]
 Innsbrucker Platz	NN 6515,8016 6429,7876
 Eisackstr.	N 6429,7876 6464,7739 6499,7690
 Ceciliengärten	N 6274,7751 6258,7669 6255,7469 6249,7219
@@ -3082,6 +3085,7 @@ Freiheit (Köpenick)	N 22377,4836 22196,4847
 Futranplatz	N 22377,4836 22439,4838
 Katzengraben	N 22452,4689 22445,4758 22439,4838
 Katzengraben	NN 22439,4838 22433,4887
+#: alias: Katzengrabenbrücke
 Katzengrabensteg	NN 22433,4887 22484,4868 22581,4932
 (Katzengrabensteg - Bellevuepark)	NN 22581,4932 22632,4958 22726,5332
 Am Krusenick	N 22726,5332 22754,4893 22673,4812
@@ -5178,6 +5182,7 @@ Margaretenstr. (Lichtenberg)	N 16649,11497 16723,11470 16852,11430 16936,11409 1
 Metastr.	N 17006,11386 17056,11497 17103,11606
 Friedastr.	N 17056,11497 16887,11545
 (Wohnanlage Friedastr.)	NN 16887,11545 16759,11582
+#: alias: Schwarzer Weg
 (Buchberger Str. - Nöldnerplatz)	NN 15731,11270 15735,11201 15779,10970 15756,10966 15738,10962
 (An der Müggelspree)	NN 23441,4956 23468,5075 23620,5096 23776,5040 23982,5030 24233,4878 24398,4842 24834,4541 25023,4441 25102,4408 25427,4482 25479,4540 25565,4549
 Kalischer Str.	N 3964,8559 3982,8750 4006,8967
@@ -7559,8 +7564,8 @@ Am Zirkus	N 9118,13070 9145,13020
 Am Zirkus	N 9089,13004 9145,13020 9192,13032 9226,12909
 Bertolt-Brecht-Platz	N 9157,12843 9132,12939
 Charitéstr.	N 8671,12945 8628,13033
-Margarete-Steffin-Str.	N 8525,12958 8559,12912 8631,12848 8700,12810
-Margarethe-Steffin-Str.	NN 8700,12810 8730,12804
+Margarete-Steffin-Str.	N 8292,13205 8406,13127 8525,12958 8559,12912 8631,12848 8700,12810
+Margarete-Steffin-Str.	NN 8700,12810 8730,12804
 (Otto-Bismark-Str. - Rahel-Hirsch-Str.)	NN 8124,12742 8124,12840 8116,12938
 (Parkweg Spreebogenpark)	NN 8275,12742 8275,12936
 (südliches Spreeufer - Gustav-Heinemann-Brücke)	NN 8032,12889 8053,12871 8116,12938

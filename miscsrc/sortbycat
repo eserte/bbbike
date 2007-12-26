@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: sortbycat,v 2.10 2004/12/28 22:54:59 eserte Exp $
+# $Id: sortbycat,v 2.11 2007/12/24 00:29:29 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -56,7 +56,7 @@ if ($reverse) {
     }
 }
 
-my $s = new Strassen $datafile;
+my $s = new Strassen $datafile, UseLocalDirectives => 1;
 my %args;
 if ($ignoreref) {
     $args{-ignore} = $ignoreref;

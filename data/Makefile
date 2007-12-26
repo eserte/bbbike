@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.165 2007/12/24 00:14:08 eserte Exp $
+# $Id: Makefile,v 2.168 2007/12/26 19:54:36 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -163,7 +163,7 @@ strassen:	.strassen.tmp plaetze
 	-@$(READONLY) $@
 
 .strassen.tmp: strassen-orig
-	$(CONVERT_ORIG) strassen-orig > $@~
+	$(CONVERT_ORIG) -keep-directive alias strassen-orig > $@~
 	cp $@~ $@
 	rm $@~
 
@@ -224,19 +224,19 @@ inaccessible_landstrassen: strassen landstrassen landstrassen2 gesperrt
 # sortbycat does not change the sort order of islands
 wasserstrassen: wasserstrassen-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) wasserstrassen-orig | $(SORTBYCAT) -ignore F:I > $@ \
+	$(CONVERT_ORIG) -keep-directive alias wasserstrassen-orig | $(SORTBYCAT) -ignore F:I > $@ \
 	    || (rm -f $@; false)
 	-@$(READONLY) $@
 
 wasserumland: wasserumland-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) wasserumland-orig | $(SORTBYCAT) -ignore F:I > $@ \
+	$(CONVERT_ORIG) -keep-directive alias wasserumland-orig | $(SORTBYCAT) -ignore F:I > $@ \
 	    || (rm -f $@; false)
 	-@$(READONLY) $@
 
 wasserumland2: wasserumland2-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) -unutf8ify wasserumland2-orig | $(SORTBYCAT) -ignore F:I > $@~
+	$(CONVERT_ORIG) -keep-directive alias -unutf8ify wasserumland2-orig | $(SORTBYCAT) -ignore F:I > $@~
 	[ -s $@~ ]
 	mv $@~ $@
 	-@$(READONLY) $@
@@ -400,21 +400,21 @@ hoehe: hoehe-orig
 
 orte: orte-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) -unutf8ify orte-orig | $(SORTBYCAT) > orte~
+	$(CONVERT_ORIG) -keep-directive alias -unutf8ify orte-orig | $(SORTBYCAT) > orte~
 	[ -s orte~ ]
 	mv orte~ orte
 	-@$(READONLY) $@
 
 orte2: orte2-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) -unutf8ify orte2-orig | $(SORTBYCAT) > orte2~
+	$(CONVERT_ORIG) -keep-directive alias -unutf8ify orte2-orig | $(SORTBYCAT) > orte2~
 	[ -s orte2~ ]
 	mv orte2~ orte2
 	-@$(READONLY) $@
 
 orte_city: orte_city-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) orte_city-orig | $(SORTBYCAT) > orte_city~
+	$(CONVERT_ORIG) -keep-directive alias orte_city-orig | $(SORTBYCAT) > orte_city~
 	mv orte_city~ orte_city
 	-@$(READONLY) $@
 
@@ -452,10 +452,11 @@ gesperrt_$(i):	gesperrt_$(i)-orig $(i)bahn
 	-@$(READONLY) $@
 .endfor
 
-gesperrt_car:	gesperrt_car-orig strassen landstrassen landstrassen2
+gesperrt_car:	gesperrt_car-orig strassen landstrassen landstrassen2 ${PERSISTENTTMPDIR}/gesperrt-without-nocross
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) -specsperre=strassen,landstrassen,landstrassen2 \
-	    gesperrt_car-orig > gesperrt_car~
+	    gesperrt_car-orig |\
+	${RESOLVE_STARS} -sperrefile ${PERSISTENTTMPDIR}/gesperrt-without-nocross ${ALL_STREETS} - > gesperrt_car~
 	mv gesperrt_car~ gesperrt_car
 	-@$(READONLY) $@
 
@@ -1450,7 +1451,7 @@ GPSPORT?=	/dev/ttyS0
 
 BBD2POLISH?=	${MISCSRCDIR}/bbd2polish
 
-CGPSMAPPER_FILES=	bbbike brb wide fragezeichen
+CGPSMAPPER_FILES=	bbbike brb wide fragezeichen bbbikeall
 CGPSMAPPER_MP_FILES=	${CGPSMAPPER_FILES:S/$/.mp/:S/^/${PERSISTENTTMPDIR}\//}
 CGPSMAPPER_IMG_FILES=	${CGPSMAPPER_FILES:S/$/.img/:S/^/${PERSISTENTTMPDIR}\//}
 
@@ -1480,6 +1481,12 @@ ${PERSISTENTTMPDIR}/wide.mp:	${BBD2POLISH} \
 ${PERSISTENTTMPDIR}/fragezeichen.mp:	${BBD2POLISH} \
 				fragezeichen
 	${BBD2POLISH} -mapset fragezeichen > $@
+
+${PERSISTENTTMPDIR}/bbbikeall.mp:	${BBD2POLISH} \
+					strassen wasserstrassen flaechen sbahn ubahn berlin faehren fragezeichen \
+					orte landstrassen wasserumland rbahn potsdam \
+					orte2 landstrassen2 wasserumland2 deutschland
+	${BBD2POLISH} -mapset all > $@
 
 .for i in ${CGPSMAPPER_FILES}
 ${PERSISTENTTMPDIR}/$i.img: ${CGPSMAPPER} ${PERSISTENTTMPDIR}/$i.mp
@@ -1533,7 +1540,7 @@ do-doublechecks:	.doublecheck_strassen.tmp \
 .doublecheck_strassen.tmp:	.strassen.tmp
 	-rm /tmp/strassen-XXX
 	$(CONVERT2HAFAS) strassen-orig > /tmp/strassen-XXX
-	diff -u .strassen.tmp /tmp/strassen-XXX
+	diff -I '#: alias:' -u .strassen.tmp /tmp/strassen-XXX
 	rm /tmp/strassen-XXX
 	touch $@
 
@@ -1548,7 +1555,7 @@ do-doublechecks:	.doublecheck_strassen.tmp \
 .doublecheck_$(file): $(file)
 	-rm /tmp/$(file)-XXX
 	$(CONVERT2HAFAS) $(file)-orig | $(SORTBYCAT) -ignore F:I > /tmp/$(file)-XXX
-	diff -u $(file) /tmp/$(file)-XXX
+	diff -I '#: alias:' -u $(file) /tmp/$(file)-XXX
 	rm /tmp/$(file)-XXX
 	touch $@
 .endfor
@@ -1556,7 +1563,7 @@ do-doublechecks:	.doublecheck_strassen.tmp \
 .doublecheck_wasserumland2: wasserumland2
 	-rm /tmp/wasserumland2-XXX
 	$(CONVERT2HAFAS) -unutf8ify wasserumland2-orig | $(SORTBYCAT) -ignore F:I > /tmp/wasserumland2-XXX
-	diff -u wasserumland2 /tmp/wasserumland2-XXX
+	diff -I '#: alias:' -u wasserumland2 /tmp/wasserumland2-XXX
 	rm /tmp/wasserumland2-XXX
 	touch $@
 
@@ -1588,7 +1595,7 @@ do-doublechecks:	.doublecheck_strassen.tmp \
 .doublecheck_$(file): $(file)
 	-rm /tmp/$(file)-XXX
 	$(CONVERT2HAFAS) -unutf8ify $(file)-orig | $(SORTBYCAT) > /tmp/$(file)-XXX
-	diff -u $(file) /tmp/$(file)-XXX
+	diff -I '#: alias:' -u $(file) /tmp/$(file)-XXX
 	rm /tmp/$(file)-XXX
 	touch $@
 .endfor
@@ -1596,7 +1603,7 @@ do-doublechecks:	.doublecheck_strassen.tmp \
 .doublecheck_orte_city: orte_city
 	-rm /tmp/orte_city-XXX
 	$(CONVERT2HAFAS) orte_city-orig | $(SORTBYCAT) > /tmp/orte_city-XXX
-	diff -u orte_city /tmp/orte_city-XXX
+	diff -I '#: alias:' -u orte_city /tmp/orte_city-XXX
 	rm /tmp/orte_city-XXX
 	touch $@
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: FlatCheckbox.pm,v 1.1 2007/10/13 21:35:31 eserte Exp $
+# $Id: FlatCheckbox.pm,v 1.3 2007/10/19 20:55:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2002,2007 Slaven Rezic. All rights reserved.
@@ -22,7 +22,7 @@ use vars qw($VERSION @ISA);
 @ISA = qw(Tk::Derived Tk::Canvas);
 Construct Tk::Widget 'FlatCheckbox';
 
-$VERSION = '0.07';
+$VERSION = '0.08';
 
 my %trace;
 my %trace_rev;
@@ -274,3 +274,77 @@ sub Leave {
 }
 
 1;
+
+__END__
+
+=head1 NAME
+
+Tk::FlatCheckbox - an alternative checkbutton implementation for perl/Tk
+
+=head1 SYNOPSIS
+
+    use Tk::FlatCheckbox;
+    $mw->FlatCheckbox->pack;
+
+=head1 DESCRIPTION
+
+B<Tk::FlatCheckbox> is an alternative checkbutton implementation.
+Unlike L<Tk::Checkbutton>, it uses a small square in the corner of the
+widget to indicate the on/off state. This can be used for instance for
+checkbuttons with images in a flat reliefed layout.
+
+=head1 WIDGET-SPECIFIC OPTIONS
+
+B<Tk::FlatCheckbox> supports some of L<Tk::Checkbutton> options. These
+are:
+
+=over
+
+=item -borderwidth
+
+=item -image
+
+=item -variable
+
+=item -command
+
+=item -state
+
+=item -text
+
+=item -font
+
+=item -onvalue
+
+=item -offvalue
+
+=back
+
+Please refer to the L<Tk::Checkbutton> documentation for these options.
+
+Additionaly, these options are supported:
+
+=over
+
+=item -raiseonenter => BOOL
+
+Indicate whether a border should be raised if moving the mouse over
+the widget.
+
+=back
+
+=head1 SEE ALSO
+
+L<Tk::CheckButton>, L<Tk::FlatRadiobutton>
+
+=head1 AUTHOR
+
+Slaven ReziE<0x107> <srezic@cpan.org>
+
+=head1 COPYRIGHT
+
+Copyright (c) 1998,2001,2002,2007 Slaven ReziE<0x107>. All rights reserved.
+This module is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut

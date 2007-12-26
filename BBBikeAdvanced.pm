@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.192 2007/12/07 20:43:41 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.193 2007/12/24 00:49:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2007 Slaven Rezic. All rights reserved.
@@ -3195,7 +3195,7 @@ sub search_anything {
 			    if (/^#:\s*encoding:\s*(.*)/) {
 				Strassen::switch_encoding(\*GREP, $1);
 			    }
-			    if (/^#:\s*alias:?\s*($s_rx.*)$/) {
+			    if (/^#:\s*alias:?\s*($s_rx.*)$/i) {
 				my $alias = $1;
 				while(<GREP>) {
 				    next if /^#/;
