@@ -22,6 +22,13 @@ Legend:
 
 =over
 
+=item * (M3) (feature)
+
+Introduce GPS device types for the GPS card in the option editor. This
+would set the waypoint number, name length and charset automatically.
+A E<quot>customE<quot> setting will still be available to set these
+values manually.
+
 =item * (H3) (feature)
 
 Create a small toolbar in the footer bar which displays the

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.55 2007/09/15 20:59:10 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.56 2007/12/27 00:18:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.55 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.56 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -168,7 +168,7 @@ use vars qw($hs_check $plzmcmd $ampelstatus_label_text
 	    $mark_color $initial_plugins $initial_layers
 	    %info_plugins);
 use vars qw($export_txt_mode $export_txt_min_angle $gps_waypoints
-	    $gps_waypointlength $gps_waypointsymbol);
+	    $gps_waypointlength $gps_waypointsymbol $gps_waypointcharset);
 use vars qw($www_is_slow $do_www $really_no_www $no_map
 	    %save_route $multistrassen
 	    @coords @names @rbahn_coords

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.21 2007/09/01 10:43:43 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.22 2007/12/27 00:18:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -91,6 +91,7 @@ sub BBBikeGPS::gps_interface {
 	     -wptsuffixexisting => $gps_route_info->{WptSuffixExisting},
 	     -waypointlength => $gps_waypointlength,
 	     -waypointsymbol => $gps_waypointsymbol,
+	     -waypointcharset => $gps_waypointcharset,
 	     -gpsdevice   => $gps_device,
 	     %extra_args,
 	    );

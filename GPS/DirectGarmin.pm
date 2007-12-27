@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.35 2007/09/01 10:44:31 eserte Exp $
+# $Id: DirectGarmin.pm,v 1.36 2007/12/27 00:18:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -265,6 +265,7 @@ sub simplify_route {
 	$obj->standard2map(@_);
     };
     my $waypointlength = $args{-waypointlength} || 10;
+    my $waypointcharset = $args{-waypointcharset} || 'simpleascii';
 
     my %crossings;
     if ($str) {
@@ -380,7 +381,9 @@ sub simplify_route {
 	    while($level <= 3) {
 		# XXX the "+" character is not supported by all Garmin devices
 		$short_crossing = join("+", map { s/\s+\(.*\)\s*$//; Strasse::short($_, $level, "nodot") } grep { defined } @cross_streets);
-		$short_crossing = _eliminate_umlauts($short_crossing);
+		if ($waypointcharset ne 'latin1') {
+		    $short_crossing = _eliminate_umlauts($short_crossing);
+		}
 		last
 #		    if (length($short_crossing) + length($comment) <= MAX_COMMENT);
 		    if (length($short_crossing) + length($comment) <= $waypointlength);
@@ -400,7 +403,12 @@ sub simplify_route {
 		} else {
 		    $suffix_in_use = "";
 		}
-		uc($name); # Garmin etrex venture supports only uppercase chars
+		if ($waypointlength eq 'simpleascii') {
+		    uc($name); # Garmin etrex venture supports only uppercase chars
+		} else {
+		    # keep lowercase characters
+		    $name;
+		}
 	    };
 	TRY: {
 		if ($wptsuffix ne "" && $wptsuffixexisting) {

@@ -443,6 +443,7 @@ $map_mode = MM_SEARCH;
 $mark_color    = 'red'; # Farbe der Markierung in mark_street et al.
 $gps_waypoints = 50;
 $gps_waypointlength = 10;
+$gps_waypointcharset = 'ascii';
 
 ### Fonts
 $standard_height = 12;
@@ -4784,15 +4785,24 @@ dazu verwendet wird",
 	  longhelp => M"Minimalwinkel in Grad bei der Vereinfachung von Routen\n",
 	  var => \$export_txt_min_angle],
 	 ['gpswaypoints','=i',50,
-	  choices => [20,50],
+	  choices => [20,50,100,200],
 	  label => M"Maximale Anzahl der GPS-Waypoints",
-	  longhelp => M"Moderne Garmin-Geräte können 50 Waypoints pro Route verwenden,\nwährend ältere nur 20 Waypoints laden können\n",
+	  longhelp => M"Moderne Garmin-Geräte wie der eTrex Vista HCx können anscheinend beliebig viele Waypoints pro Route verwenden,\netwas ältere wie der eTrex Vista 50 Waypoints,\nwährend noch ältere nur 20 Waypoints laden können\n",
 	  var => \$gps_waypoints,
 	 ],
 	 ['gpswaypointlength','=i',10,
 	  label => M"Maximale Länge von GPS-Waypoint-Namen",
-	  longhelp => M"Typischerweise 10 bei Garmin-Geräten, aber neuere Geräte können längere Namen verwenden",
+	  longhelp => M"Typischerweise 10 bei Garmin-Geräten, aber neuere Geräte können längere Namen verwenden (eTrex Vista HCx z.B. 14 Zeichen)",
 	  var => \$gps_waypointlength,
+	 ],
+	 ['gpswaypointcharset','=s','simpleascii',
+	  label => 'Zeichensatz für Waypoints',
+	  strict => 1,
+	  choices => [['Nur Großbuchstaben' => 'simpleascii'],
+		      ['Groß/Kleinbuchstaben' => 'ascii'],
+		      ['Groß/Kleinbuchstaben, Umlaute' => 'latin1'],
+		     ],
+	  var => \$gps_waypointcharset,
 	 ],
 	 ['gpswaypointsymbol','=i','',
 	  label => M"Waypointsymbol",
