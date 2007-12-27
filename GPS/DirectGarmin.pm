@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.36 2007/12/27 00:18:17 eserte Exp $
+# $Id: DirectGarmin.pm,v 1.37 2007/12/27 15:02:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -55,9 +55,15 @@ sub transfer {
 	%maxdist_ret = $self->dump;
     }
 
+    if ($main::devel_host) {
+	require File::Temp;
+	require Storable;
+	my($fh,$file) = File::Temp::tempfile(SUFFIX => "_gpsupload.gps");
+	warn "Writing data to $file, suitable for upload using examples/upload-test.pl in perl-GPS...\n";
+	Storable::nstore($data, $file);
+    }
+
     if ($args{-test}) {
-	require Data::Dumper;
-	print STDERR Data::Dumper->new([$data],["gps_data"])->Useqq(1)->Dump . "\n";
 	my $wpt = 0;
 	foreach (@$data) {
 	    $wpt++ if ($_->[0] eq $gps->GRMN_RTE_WPT_DATA);
@@ -107,13 +113,6 @@ sub transfer {
 		printf STDERR "%3d%%\r", 100*$i/scalar @$data;
 	    };
 	    warn "About to start upload...\n";
-	}
-	if (1) {
-	    require File::Temp;
-	    require Storable;
-	    my($fh,$file) = File::Temp::tempfile(SUFFIX => "_gpsupload.gps");
-	    warn "Writing data to $file...\n";
-	    Storable::nstore($data, $file);
 	}
 	$gps->upload_data($data, $cb);
 	if ($gps->{serial}) {
@@ -237,7 +236,6 @@ sub reset_waypoint_cache {
 #      @res;
 #  }
 
-# der eTrex kann 50 Punkte pro Route aufzeichnen
 # XXX
 # ideas:
 #  wichtigkeitspunkte für jeden (möglichen) punkt vergeben:
@@ -490,14 +488,14 @@ sub convert_from_route {
 				  die Mfmt("Verbindung zum GPS-Gerät <%s> fehlgeschlagen", $gps_device);
     } else {
 	$gps = bless {}, 'GPS::Garmin::Dummy';
+	$gps->{handler} = eval { GPS::Garmin::Handler::EtrexVistaHCx->new($gps) } || # newer perl-GPS
+	                  eval { GPS::Garmin::Handler::Generic->new($gps) }; # older
+	if (!$gps->{handler}) {
+	    die "Cannot setup handler for GPS::Garmin::Dummy object. Maybe a newer perl-GPS is needed?";
+	}
 	{
 	    package GPS::Garmin::Dummy;
-	    *handler      = sub { bless {}, 'GPS::Garmin::Dummy' };
-	    *dummy        = sub { 0 };
-	    *AUTOLOAD     = sub { goto &dummy };
-	    # more dummy definition
-	    *GRMN_RTE_LINK_DATA = sub { 1 };
-	    *GRMN_RTE_WPT_DATA = sub { 2 };
+	    use base qw(GPS::Garmin);
 	}
     }
 

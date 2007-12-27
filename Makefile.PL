@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.141 2007/12/20 22:25:49 eserte Exp eserte $
+# $Id: Makefile.PL,v 1.142 2007/12/27 11:47:11 eserte Exp $
 
 use 5.005;
 
@@ -115,8 +115,10 @@ my @req_table =
    'zum On-the-fly-Erzeugen von Grafiken beim CGI-Programm'],
   [qw/Chart::ThreeD::Pie	0	all	0	base/,
    'Tortendiagramme in der Statistik'],
+  [qw/Algorithm::Permute	0.08	all	0|4	base/,
+   'Für das Problem des Handlungsreisenden (schnellerer Permutor)'],
   [qw/List::Permutor	0	all	0|4	base/,
-   'Für das Problem des Handlungsreisenden'],
+   'Für das Problem des Handlungsreisenden (langsamerer Permutor)'],
 #  [qw/PDF::Create	0.06	all	2|4	base/,
 #   'Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)'],
   [qw/PDF::Image::GIFImage	0	all	2|4	base/,

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Salesman.pm,v 1.18 2006/09/09 16:08:47 eserte Exp $
+# $Id: Salesman.pm,v 1.19 2007/12/27 11:46:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2003,2006 Slaven Rezic. All rights reserved.
@@ -12,23 +12,26 @@
 # WWW:  http://bbbike.sourceforge.net/
 #
 
+# Maybe Algorithm::Permute 0.08 is reliable? Try it...
 #
-# Algorithm::Permute seems to be slightly faster, but dumps core
-# if "die"ing in the permute { } loop. This seems only to happen within
-# Tk callbacks.
+# Older notes:
 #
-# This seems to happen randomly, see the test reports at
-#  http://cpantesters.perl.org/show/Algorithm-Permute.html#Algorithm-Permute-0.06
-#
-# So prefer List::Permutor over Algorithm::Permute.
+# | Algorithm::Permute seems to be slightly faster, but dumps core
+# | if "die"ing in the permute { } loop. This seems only to happen within
+# | Tk callbacks.
+# | 
+# | This seems to happen randomly, see the test reports at
+# |  http://cpantesters.perl.org/show/Algorithm-Permute.html#Algorithm-Permute-0.06
+# | 
+# | So prefer List::Permutor over Algorithm::Permute.
 #
 
 package Salesman;
 BEGIN {
-    eval 'use List::Permutor;';
+    eval 'use Algorithm::Permute 0.08;';
     if ($@) {
-	warn "$@, fallback to Algorithm::Permute";
-	eval 'use Algorithm::Permute 0.06;';
+	warn "$@, fallback to List::Permutor";
+	eval 'use List::Permutor;';
 	if ($@) {
 	    die $@;
 	}
