@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.25 2007/12/23 21:43:16 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.26 2007/12/28 21:50:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ BEGIN {
 use strict;
 use vars qw(@EXPORT);
 use vars (@opt_vars);
-use vars qw($can_tidy $can_xmllint);
+use vars qw($can_tidy $can_xmllint $shown_gpx_schema_warning);
 
 use vars qw($BBBIKE_TEST_CGIDIR
 	    $BBBIKE_TEST_CGIURL
@@ -40,7 +40,8 @@ use File::Spec     qw();
 
 use BBBikeUtil qw(is_in_path);
 
-@EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check xmllint_string
+@EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check
+	      xmllint_string gpxlint_string
 	      eq_or_diff is_long_data like_long_data unlike_long_data),
 	   @opt_vars);
 
@@ -240,6 +241,7 @@ sub tidy_check {
 # only usable with Test::More, generates one test
 sub xmllint_string {
     my($content, $test_name, %args) = @_;
+    my $schema = delete $args{-schema};
     local $Test::Builder::Level = $Test::Builder::Level+1;
  SKIP: {
 	my $no_of_tests = 1;
@@ -253,7 +255,13 @@ sub xmllint_string {
 	require File::Temp;
 	my($errfh,$errfile) = File::Temp::tempfile(SUFFIX => ".log",
 						   UNLINK => 1);
-	open(my $XMLLINT, "| xmllint -noout - 2>$errfile")
+	my $cmd = "xmllint --noout";
+	if ($schema) {
+	    $cmd .= " --schema $schema";
+	}
+	$cmd .= " - 2>$errfile";
+	warn $cmd if $debug;
+	open(my $XMLLINT, "| $cmd")
 	    or die "Error while opening xmllint: $!";
 	binmode $XMLLINT;
 	print $XMLLINT $content; # do not check for die
@@ -273,6 +281,24 @@ sub xmllint_string {
 		Test::More::diag($content);
 	    }
 	};
+    }
+}
+
+# only usable with Test::More, generates one test
+sub gpxlint_string {
+    my($content, $test_name, %args) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
+    my $gpx_schema = File::Spec->catfile(dirname(dirname(File::Spec->rel2abs(__FILE__))),
+					 "misc",
+					 "gpx.xsd");
+    if (!-r $gpx_schema) {
+	if (!$shown_gpx_schema_warning) {
+	    Test::More::diag("GPX schema file <$gpx_schema> not found or not readable, continue with schema-less checks...");
+	    $shown_gpx_schema_warning = 1;
+	}
+	xmllint_string($content, $test_name, %args);
+    } else {
+	xmllint_string($content, $test_name, %args, -schema => $gpx_schema);
     }
 }
 

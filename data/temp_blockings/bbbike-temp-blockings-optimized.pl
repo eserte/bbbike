@@ -583,16 +583,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_006663',
-         'until' => 1199141999,
-         'text' => 'Sterndamm (Treptow) Richtung Michael-Brückner-Str. zwischen Lindhorstweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2007)',
-         'from' => 1190067574,
-         'id' => 1168,
-         'data' => 'userdel	1::inwork 17053,3971 17387,4446 17428,4503
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -720,16 +711,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_006788',
-         'until' => 1199141999,
-         'text' => 'Birkenstr. (Tiergarten) beide Richtungen, zwischen Stromstr. und Lübecker Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 12.2007)',
-         'from' => 1193776707,
-         'id' => 1229,
-         'data' => 'userdel	q4::inwork 6227,13938 6365,13879
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -865,6 +847,17 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork 10747,9326 10719,9259
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_007479',
+         'until' => 1199314800,
+         'text' => 'Straße des 17. Juni Mitte, zwischen Großer Stern und Brandenburger Tor, Ebertstr., Y.-Rabin-Str.: Silvesterparty am Brandenburger Tor, Straßen vollständig gesperrt (bis 03.01.2008 morgens)',
+         'from' => 1198881536,
+         'id' => 1276,
+         'data' => 'userdel	2::inwork 8600,12165 8515,12242 8214,12205 8089,12186
+userdel	2::inwork 6828,12031 7383,12095 7816,12150 8063,12182 8119,12414
+',
+         'type' => 'gesperrt'
        }
      
 );

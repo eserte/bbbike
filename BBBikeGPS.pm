@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.22 2007/12/27 00:18:03 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.23 2007/12/28 21:07:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -1331,6 +1331,39 @@ sub tk_interface {
 	    $gd->push_waypoint($gpsman_wpt);
 	}
 	$gd->as_string;
+    }
+
+}
+
+{
+    package GPS::BBBikeGPS::GPXRoute;
+    require GPS;
+    push @GPS::BBBikeGPS::GPXRoute::ISA, 'GPS';
+    
+    sub default_extension { ".gpx" }
+
+    sub has_gps_settings { 0 }
+
+    sub ok_label { "Speichern der Route" } # XXX M/Mfmt
+
+    sub tk_interface {
+	my($self, %args) = @_;
+	BBBikeGPS::tk_interface($self, %args);
+    }
+
+    sub convert_from_route {
+	my($self, $route, %args) = @_;
+	require GPS::DirectGarmin;
+	require Strassen::Core;
+	require Strassen::GPX;
+	my $dg = GPS::DirectGarmin->new; # only for simplify_route
+	my $simplified_route = $dg->simplify_route($route, %args);
+	my $s = Strassen::GPX->new;
+	$s->set_global_directives({ map => ["polar"] });
+	for my $wpt (@{ $simplified_route->{wpt} }) {
+	    $s->push([$wpt->{ident}, [ join(",", $wpt->{lon}, $wpt->{lat}) ], "X" ]);
+	}
+	$s->bbd2gpx(-as => "route");
     }
 
 }

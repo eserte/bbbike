@@ -1,0 +1,150 @@
+# Found at:
+#   http://postneo.com/schemas/gpx.rng.txt
+# See also:
+#   http://www.postneo.com/2007/01/16/all-i-want-to-do-is-convert-my-schema
+namespace local = ""
+default namespace ns1 = "http://www.topografix.com/GPX/1/1"
+
+start =
+  notAllowed
+  | element gpx {
+      attribute creator { xsd:string },
+      attribute version { xsd:string "1.1" },
+      element metadata {
+        element name { \string }?,
+        element desc { \string }?,
+        element author {
+          element name { \string }?,
+          element email {
+            attribute domain { xsd:string },
+            attribute id { xsd:string }
+          }?,
+          element link { linkType }?
+        }?,
+        element copyright {
+          attribute author { xsd:string },
+          element year { xsd:gYear }?,
+          element license { xsd:anyURI }?
+        }?,
+        element link { linkType }*,
+        element time { dateTime }?,
+        element keywords { \string }?,
+        element bounds {
+          attribute maxlon {
+            xsd:decimal { minInclusive = "-180" maxExclusive = "180" }
+          },
+          attribute maxlat {
+            xsd:decimal { minInclusive = "-90" maxInclusive = "90" }
+          },
+          attribute minlon {
+            xsd:decimal { minInclusive = "-180" maxExclusive = "180" }
+          },
+          attribute minlat {
+            xsd:decimal { minInclusive = "-90" maxInclusive = "90" }
+          }
+        }?,
+        element extensions { extensionsType }?
+      }?,
+      element wpt { wptType }*,
+      element rte {
+        element name { \string }?,
+        element cmt { \string }?,
+        element desc { \string }?,
+        element src { \string }?,
+        element link { linkType }*,
+        element number { nonNegativeInteger }?,
+        element type { \string }?,
+        element extensions { extensionsType }?,
+        element rtept { wptType }*
+      }*,
+      element trk {
+        element name { \string }?,
+        element cmt { \string }?,
+        element desc { \string }?,
+        element src { \string }?,
+        element link { linkType }*,
+        element number { nonNegativeInteger }?,
+        element type { \string }?,
+        element extensions { extensionsType }?,
+        element trkseg {
+          element trkpt { wptType }*,
+          element extensions { extensionsType }?
+        }*
+      }*,
+      element extensions { extensionsType }?
+    }
+any =
+  element * - (local:* | ns1:*) {
+    mixed {
+      (attribute * { text }
+       | any)*
+    }
+  }
+linkType =
+  (attribute href { xsd:anyURI },
+   (notAllowed
+    | element text { \string })?,
+   (notAllowed
+    | element type { \string })?),
+  empty
+\string = xsd:string
+nonNegativeInteger = xsd:nonNegativeInteger
+extensionsType = any*, empty
+decimal = xsd:decimal
+dateTime = xsd:dateTime
+wptType =
+  (attribute lon {
+     xsd:decimal { minInclusive = "-180" maxExclusive = "180" }
+   },
+   attribute lat {
+     xsd:decimal { minInclusive = "-90" maxInclusive = "90" }
+   },
+   (notAllowed
+    | element ele { decimal })?,
+   (notAllowed
+    | element time { dateTime })?,
+   (notAllowed
+    | element magvar {
+        xsd:decimal { minInclusive = "0" maxExclusive = "360" }
+      })?,
+   (notAllowed
+    | element geoidheight { decimal })?,
+   (notAllowed
+    | element name { \string })?,
+   (notAllowed
+    | element cmt { \string })?,
+   (notAllowed
+    | element desc { \string })?,
+   (notAllowed
+    | element src { \string })?,
+   (notAllowed
+    | element link { linkType })*,
+   (notAllowed
+    | element sym { \string })?,
+   (notAllowed
+    | element type { \string })?,
+   (notAllowed
+    | element fix {
+        xsd:string "pps"
+        | xsd:string "dgps"
+        | xsd:string "3d"
+        | xsd:string "none"
+        | xsd:string "2d"
+      })?,
+   (notAllowed
+    | element sat { nonNegativeInteger })?,
+   (notAllowed
+    | element hdop { decimal })?,
+   (notAllowed
+    | element vdop { decimal })?,
+   (notAllowed
+    | element pdop { decimal })?,
+   (notAllowed
+    | element ageofdgpsdata { decimal })?,
+   (notAllowed
+    | element dgpsid {
+        xsd:integer { minInclusive = "0" maxInclusive = "1023" }
+      })?,
+   (notAllowed
+    | element extensions { extensionsType })?),
+  empty

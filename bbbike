@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.332 2007/12/27 00:52:29 eserte Exp $
+# $Id: bbbike,v 3.332 2007/12/27 00:52:29 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -3304,6 +3304,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
     foreach my $fmt (
 		     # GPS
 		     ['GPX (Track)', 'GPX/track'],
+		     'GPX (Route)',
 		     #['GPX (Route)', 'GPX/route'], # not yet, support not ready
 		     ($advanced ? ['KML (GoogleEarth)', 'KML/track'] : ()),
 		     ['GPSMAN (Track)', 'GpsmanData'],
@@ -3381,6 +3382,12 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		(-label => $fmt,
 		 -command => sub {
 		     gps_interface('GPSMAN (Route)', 'BBBikeGPS::GpsmanRoute', -noloading => 1);
+		 });
+	} elsif ($fmt eq 'GPX (Route)') {
+	    $svm->command
+		(-label => $fmt,
+		 -command => sub {
+		     gps_interface('GPSMAN (Route)', 'BBBikeGPS::GPXRoute', -noloading => 1);
 		 });
 	} elsif ($fmt =~ /^esri/i) {
 	    if (-x "$FindBin::RealBin/miscsrc/bbd2esri" &&

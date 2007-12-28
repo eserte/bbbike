@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GPX.pm,v 1.14 2007/12/25 22:08:30 eserte Exp $
+# $Id: GPX.pm,v 1.16 2007/12/28 22:07:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::GPX;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Core;
 
@@ -56,6 +56,8 @@ use Karte::Polar;
 use Karte::Standard;
 
 @ISA = 'Strassen';
+
+my @COMMON_META_ATTRS = qw(name cmt desc src link number type); # common for rte and trk
 
 sub new {
     my($class, $filename_or_object, %args) = @_;
@@ -246,6 +248,14 @@ sub _gpx2bbd_twig {
 #
 sub bbd2gpx {
     my($self, %args) = @_;
+
+    my $xy2longlat = \&xy2longlat;
+    my $map = $self->get_global_directive("map");
+    if ($map && $map eq 'polar') {
+	$xy2longlat = \&longlat2longlat;
+    }
+    $args{xy2longlat} = $xy2longlat;
+
     if ($use_xml_module eq 'XML::LibXML') {
 	_require_XML_LibXML;
 	$self->_bbd2gpx_libxml(%args);
@@ -257,6 +267,9 @@ sub bbd2gpx {
 
 sub _bbd2gpx_libxml {
     my($self, %args) = @_;
+    my $xy2longlat = delete $args{xy2longlat};
+    my $meta = delete $args{-meta} || {};
+
     my $has_encode = eval { require Encode; 1 };
     if (!$has_encode) {
 	warn "WARN: No Encode.pm module available, non-ascii characters may be broken...\n";
@@ -277,15 +290,19 @@ sub _bbd2gpx_libxml {
 	    push @wpt,
 		{
 		 name => $name,
-		 coords => [ xy2longlat($r->[Strassen::COORDS][0]) ],
+		 coords => [ $xy2longlat->($r->[Strassen::COORDS][0]) ],
 		};
 	} else {
 	    push @trkseg,
 		{
 		 name => $name,
-		 coords => [ map { [ xy2longlat($_) ] } @{ $r->[Strassen::COORDS] } ],
+		 coords => [ map { [ $xy2longlat->($_) ] } @{ $r->[Strassen::COORDS] } ],
 		};
 	}
+    }
+
+    if (!defined $meta->{name} && @trkseg) {
+	$meta->{name} = make_name_from_trkseg(\@trkseg);
     }
 
     my $dom = XML::LibXML::Document->new('1.0', 'utf-8');
@@ -299,6 +316,7 @@ sub _bbd2gpx_libxml {
 
     if ($args{-as} && $args{-as} eq 'route') {
 	my $rtexml = $gpx->addNewChild(undef, "rte");
+	_add_meta_attrs_libxml($rtexml, $meta);
 	for my $wpt (@wpt) {
 	    my $rteptxml = $rtexml->addNewChild(undef, "rtept");
 	    $rteptxml->setAttribute("lat", $wpt->{coords}[1]);
@@ -314,8 +332,7 @@ sub _bbd2gpx_libxml {
 	}
 	if (@trkseg) {
 	    my $trkxml = $gpx->addNewChild(undef, "trk");
-	    my $name = make_name_from_trkseg(\@trkseg);
-	    $trkxml->appendTextChild("name", $name);
+	    _add_meta_attrs_libxml($trkxml, $meta);
 	    for my $trkseg (@trkseg) {
 		my $trksegxml = $trkxml->addNewChild(undef, "trkseg");
 		for my $wpt (@{ $trkseg->{coords} }) {
@@ -335,6 +352,9 @@ sub _bbd2gpx_libxml {
 
 sub _bbd2gpx_twig {
     my($self, %args) = @_;
+    my $xy2longlat = delete $args{xy2longlat};
+    my $meta = delete $args{-meta} || {};
+
     $self->init;
     my @wpt;
     my @trkseg;
@@ -343,22 +363,26 @@ sub _bbd2gpx_twig {
 	last if !@{ $r->[Strassen::COORDS] };
 	if (@{ $r->[Strassen::COORDS] } == 1) {
 	    push @wpt, { name => $r->[Strassen::NAME],
-			 coords => [ xy2longlat($r->[Strassen::COORDS][0]) ],
+			 coords => [ $xy2longlat->($r->[Strassen::COORDS][0]) ],
 		       };
 	} else {
 	    push @trkseg,
 		{
 		 name => $r->[Strassen::NAME],
-		 coords => [ map { [ xy2longlat($_) ] } @{ $r->[Strassen::COORDS] } ],
+		 coords => [ map { [ $xy2longlat->($_) ] } @{ $r->[Strassen::COORDS] } ],
 		};
 	}
+    }
+
+    if (!defined $meta->{name} && @trkseg) {
+	$meta->{name} = make_name_from_trkseg(\@trkseg);
     }
 
     my $twig = XML::Twig->new;
     my $gpx = XML::Twig::Elt->new(gpx => { version => "1.1",
 					   creator => "Strassen::GPX $VERSION (XML::Twig $XML::Twig::VERSION) - http://www.bbbike.de",
+					   xmlns => "http://www.topografix.com/GPX/1/1",
 					   #$gpx->setNamespace("http://www.w3.org/2001/XMLSchema-instance","xsi");
-					   #$gpx->setNamespace("http://www.topografix.com/GPX/1/1");
 					   #"xsi:schemaLocation" => "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd",
 					 },
 				 );
@@ -367,6 +391,7 @@ sub _bbd2gpx_twig {
     if ($args{-as} && $args{-as} eq 'route') {
 	my $rtexml = XML::Twig::Elt->new("rte");
 	$rtexml->paste(last_child => $gpx);
+	_add_meta_attrs_twig($rtexml, $meta);
 	for my $wpt (@wpt) {
 	    my $rteptxml = XML::Twig::Elt->new("rtept", {lat => $wpt->{coords}[1],
 							 lon => $wpt->{coords}[0],
@@ -389,9 +414,7 @@ sub _bbd2gpx_twig {
 	if (@trkseg) {
 	    my $trkxml = XML::Twig::Elt->new("trk");
 	    $trkxml->paste(last_child => $gpx);
-	    my $name = make_name_from_trkseg(\@trkseg);
-	    my $namexml = XML::Twig::Elt->new("name", {}, $name);
-	    $namexml->paste(last_child => $trkxml);
+	    _add_meta_attrs_twig($trkxml, $meta);
 	    for my $trkseg (@trkseg) {
 		my $trksegxml = XML::Twig::Elt->new("trkseg");
 		$trksegxml->paste(last_child => $trkxml);
@@ -441,6 +464,12 @@ sub xy2longlat {
     ($lon, $lat);
 }
 
+sub longlat2longlat {
+    my($c) = @_;
+    my($lon, $lat) = split /,/, $c;
+    ($lon, $lat);
+}
+
 sub make_name_from_trkseg {
     my($trkseg_ref) = @_;
 
@@ -451,6 +480,51 @@ sub make_name_from_trkseg {
 	$name .= " - $name_to";
     }
     $name;
+}
+
+sub _add_meta_attrs_libxml {
+    my($node, $meta) = @_;
+    for my $attr (@COMMON_META_ATTRS) {
+	if (defined $meta->{$attr}) {
+	    if ($attr eq 'link') {
+		if (!defined $meta->{link}{href}) {
+		    die "meta->link->href is required if meta->link is given";
+		}
+		my $linknode = $node->addNewChild(undef, "link");
+		$linknode->appendTextChild("text", $meta->{link}{text}) if defined $meta->{link}{text};
+		$linknode->appendTextChild("type", $meta->{link}{type}) if defined $meta->{link}{type};
+		$linknode->setAttribute("href", $meta->{link}{href});
+	    } else {
+		$node->appendTextChild($attr, $meta->{$attr});
+	    }
+	}
+    }
+}
+
+sub _add_meta_attrs_twig {
+    my($node, $meta) = @_;
+    for my $attr (@COMMON_META_ATTRS) {
+	if (defined $meta->{$attr}) {
+	    if ($attr eq 'link') {
+		if (!defined $meta->{link}{href}) {
+		    die "meta->link->href is required if meta->link is given";
+		}
+		my $linknode = XML::Twig::Elt->new("link", {href => $meta->{link}{href}});
+		$linknode->paste(last_child => $node);
+		if (defined $meta->{link}{text}) {
+		    my $textnode = XML::Twig::Elt->new("text", {}, $meta->{link}{text});
+		    $textnode->paste(last_child => $linknode);
+		}
+		if (defined $meta->{link}{type}) {
+		    my $typenode = XML::Twig::Elt->new("type", {}, $meta->{link}{type});
+		    $typenode->paste(last_child => $linknode);
+		}
+	    } else {
+		my $newnode = XML::Twig::Elt->new($attr, {}, $meta->{$attr});
+		$newnode->paste(last_child => $node);
+	    }
+	}
+    }
 }
 
 1;

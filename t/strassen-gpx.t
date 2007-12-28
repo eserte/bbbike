@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-gpx.t,v 1.15 2007/12/23 21:30:16 eserte Exp $
+# $Id: strassen-gpx.t,v 1.19 2007/12/28 22:11:24 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -28,14 +28,14 @@ BEGIN {
     }
 }
 
-use BBBikeTest qw(xmllint_string);
+use BBBikeTest qw(gpxlint_string);
 
 use Route;
 
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
 my $new_strassen_gpx_tests = 5;
-my $tests_per_variant = 32 + $new_strassen_gpx_tests;
+my $tests_per_variant = 60 + $new_strassen_gpx_tests;
 my $do_long_tests = !!$ENV{BBBIKE_LONG_TESTS};
 my $bbdfile;
 
@@ -93,7 +93,7 @@ for my $use_xml_module (@variants) {
 
 	    my $xml_res = $s->bbd2gpx;
 	    like($xml_res, qr{^<(\?xml|gpx)}, "Looks like XML");
-	    xmllint_string($xml_res, "xmllint for bbd2gpx output (track)");
+	    gpxlint_string($xml_res, "xmllint for bbd2gpx output (track)");
 
 	    my $s2 = Strassen::GPX->new;
 	    $s2->gpxdata2bbd($xml_res);
@@ -136,7 +136,7 @@ for my $use_xml_module (@variants) {
 
 	    my $xml_res = $s->bbd2gpx;
 	    like($xml_res, qr{^<(\?xml|gpx)}, "Looks like XML");
-	    xmllint_string($xml_res, "xmllint for bbd2gpx output (waypoint)");
+	    gpxlint_string($xml_res, "xmllint for bbd2gpx output (waypoint)");
 
 	    my $s2 = Strassen::GPX->new;
 	    $s2->gpxdata2bbd($xml_res);
@@ -187,7 +187,7 @@ for my $use_xml_module (@variants) {
 	    if ($Strassen::GPX::use_xml_module eq 'XML::Twig' && $XML::Twig::VERSION <= 3.32) {
 		$TODO = "Possible XML::Twig problem, missing preamble or missing encoding of data";
 	    }
-	    xmllint_string($xml_res, "xmllint for bbd2gpx output ($bbdfile)");
+	    gpxlint_string($xml_res, "xmllint for bbd2gpx output ($bbdfile)");
 	}
 
 	{
@@ -204,7 +204,7 @@ EOF
 	    if ($Strassen::GPX::use_xml_module eq 'XML::Twig' && $XML::Twig::VERSION <= 3.32) {
 		$TODO = "Possible XML::Twig problem, missing preamble or missing encoding of data";
 	    }
-	    xmllint_string($xml_res, "xmllint for bbd2gpx output (string data with unicode > 128 < 256)");
+	    gpxlint_string($xml_res, "xmllint for bbd2gpx output (string data with unicode > 128 < 256)");
 	SKIP: {
 		skip("No XML::LibXML parser available for checking", 2)
 		    if !eval { require XML::LibXML; 1 };
@@ -244,7 +244,7 @@ EOF
 	    if ($Strassen::GPX::use_xml_module eq 'XML::Twig' && $XML::Twig::VERSION <= 3.32) {
 		$TODO = "Possible XML::Twig problem, missing preamble or missing encoding of data";
 	    }
-	    xmllint_string($xml_res, "xmllint for bbd2gpx output (string data with unicode > 255)");
+	    gpxlint_string($xml_res, "xmllint for bbd2gpx output (string data with unicode > 255)");
 	SKIP: {
 		skip("No XML::LibXML parser available for checking", 2)
 		    if !eval { require XML::LibXML; 1 };
@@ -273,6 +273,72 @@ EOF
 	    is(scalar(@{ $rec->[Strassen::COORDS()] }), 1, "Found a coord in second record");
 	}
 
+	# polar map (WGS84, DDD)
+	{
+	    my $s0 = Strassen->new_from_data_string(<<EOF);
+#: map: polar
+#:
+Brandenburger Tor	X 52.516216,13.377315
+EOF
+	    my $s = Strassen::GPX->new($s0);
+	    isa_ok($s, "Strassen::GPX");
+	    my $xml_res = $s->Strassen::GPX::bbd2gpx;
+	    like($xml_res, qr{^<(\?xml|gpx)}, "Looks like XML");
+	    gpxlint_string($xml_res, "xmllint for bbd2gpx output (with polar map)");
+	    like($xml_res, qr{lat="13\.377315"}, "Found unchanged latitude");
+	    like($xml_res, qr{lon="52\.516216"}, "Found unchanged longitude");
+
+	    my $s_gpx = Strassen::GPX->new;
+	    $s_gpx->Strassen::GPX::gpxdata2bbd($xml_res);
+	    pass("gpxdata2bbd back was successful");
+
+	    my $conv = $s->get_conversion;
+	    my($sx,$sy) = split /,/, $conv->($s->get(0)->[Strassen::COORDS()]->[0]);
+	    my($gotx,$goty) = split /,/, $s_gpx->get(0)->[Strassen::COORDS()]->[0];
+	    cmp_ok(abs($sx-$gotx), "<", 2, "Back conversion with expected x coordinate")
+		or diag("Got $gotx/$goty");
+	    cmp_ok(abs($sy-$goty), "<", 2, "Back conversion with expected y coordinate")
+		or diag("Got $gotx/$goty");
+	}
+
+	# Generate route/track with many meta data
+	{
+	    my $route_data = <<EOF;
+Start	X 100,100
+Via	X 200,200
+Goal	X 300,300
+EOF
+	    my $track_data = <<EOF;
+Start - Goal	X 100,100 200,200 300,300
+EOF
+	    for my $def (['track', $track_data],
+			 ['route', $route_data],
+			) {
+		my($as, $data) = @$def;
+		my $s0 = Strassen->new_from_data_string($data);
+		my $s = Strassen::GPX->new($s0);
+		isa_ok($s, "Strassen::GPX");
+		my $xml_res = $s->Strassen::GPX::bbd2gpx(-as => $as,
+							 -meta => { name   => "Name of route",
+								    cmt	   => "Some comment",
+								    desc   => "Description",
+								    src	   => "Source?",
+								    link   => { text => "web page", href => "http://bbbike.de" },
+								    number => 1,
+								    type   => "type",
+								  },
+							);
+		pass("Created as $as");
+		gpxlint_string($xml_res, "xmllint for bbd2gpx route output");
+		like($xml_res, qr{<name>Name of route}, "Found name element");
+		like($xml_res, qr{<cmt>Some comment}, "Found comment element");
+		like($xml_res, qr{<desc>Description}, "Found description element");
+		like($xml_res, qr{<src>Source}, "Found src element");
+		like($xml_res, qr{<link href="http://bbbike.de"><text>web page}, "Found link element + href attribute");
+		like($xml_res, qr{<number>1}, "Found number element");
+		like($xml_res, qr{<type>type}, "Found type element");
+	    }
+	}
     }
 }
 
