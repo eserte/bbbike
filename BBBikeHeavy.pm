@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.37 2007/07/22 20:41:00 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.38 2007/12/29 13:17:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.37 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -1624,6 +1624,14 @@ sub BBBikeHeavy::save_route_as_kml {
 
 	unlink $tmpfile;
     }
+}
+
+sub BBBikeHeavy::restart_bbbike_hint {
+    my(%args) = @_;
+    my $bag = $args{bag} || {};
+    return if $bag->{restart_bbbike_hint_seen};
+    status_message(M"Einige der geänderten Optionen benötigen einen Neustart von BBBike, um effektiv zu werden.", 'infodlg');
+    $bag->{restart_bbbike_hint_seen} = 1;
 }
 
 1;

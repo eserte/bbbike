@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.23 2007/07/23 07:10:28 eserte Exp $
+# $Id: Util.pm,v 1.23 2007/07/23 07:10:28 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -53,6 +53,7 @@ if (!defined $tmpdir) {
     if (!-d $tmpdir || !-w $tmpdir) { undef $tmpdir }
 }
 
+# XXX Should probably prefer ~/.bbbike/cache, see main bbbike program
 if (!defined $cachedir) {
     $cachedir = (defined $FindBin::RealBin &&
 		 -d "$FindBin::RealBin/cache" &&

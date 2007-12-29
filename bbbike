@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.332 2007/12/27 00:52:29 eserte Exp eserte $
+# $Id: bbbike,v 3.333 2007/12/29 13:19:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -96,6 +96,7 @@ BEGIN {
 		show_calories check_available_memory
 		reload_all make_temp make_unique_temp
 		save_route_as_gpx save_route_as_kml
+		restart_bbbike_hint
 	      )],
 	 #XXX problems with autouse! -> what problems?
 	 'BBBikeEdit'
@@ -216,7 +217,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.332 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.333 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -249,6 +250,13 @@ if ($Tk::VERSION <= 402.004) {
 if ($os eq 'unix' && $Tk::VERSION >= 804.027001) {
     require Tk::MsgBox;
     import Tk::MsgBox 'as_default';
+}
+
+# OS compat
+if ($os eq 'win') {
+    require Win32Util;
+} elsif ($^O eq 'darwin') {
+    require MacOSXUtil;
 }
 
 my $terminal_encoding;
@@ -543,36 +551,18 @@ $ps_color    = 'color';
 $ps_rotate   = 1;
 $ps_scale_a4 = 1;
 $ps_fixed_font = "Courier7";
-
 $nr = -1; # number of points in route (XXX correct???)
-{
-    my $cachedir = catfile($FindBin::RealBin, "cache");
-    $cache_root = (-d $cachedir && -w $cachedir
-		   ? $cachedir
-		   : $tmpdir);
-    $Karte::cache_root = $cache_root;
-}
 
-Karte::preload('Berlinmap2000');
-$do_wwwmap = (! $Karte::Berlinmap2000::obj ||
-	      ! -e $Karte::Berlinmap2000::obj->fs_dir);
-if ($devel_host) {
-    $Karte::cache_root = "/usr/www/berlin";
-}
-
+# User directories (~/.bbbike, route directory, cache)
+my $home = $ENV{HOME};
 if ($os eq 'win') {
-    require Win32Util;
-    my $home = Win32Util::get_user_folder();
+    $home = Win32Util::get_user_folder();
     if (-d $home) {
         $bbbike_configdir = catfile($home, "BBBike");
     }
 }
-if ($^O eq 'darwin') {
-    require MacOSXUtil;
-}
 if (!defined $bbbike_configdir) {
-    $bbbike_configdir = defined $ENV{HOME} ? catfile($ENV{HOME}, ".bbbike")
-    		        		   : "/bbbike.cfg";
+    $bbbike_configdir = defined $home ? catfile($home, ".bbbike") : "/bbbike.cfg";
 }
 if (!-d $bbbike_configdir) {
     mkdir $bbbike_configdir, 0700;
@@ -584,7 +574,28 @@ if (-d $bbbike_configdir) {
     }
 }
 $oldpath = $bbbike_routedir;
-$save2_path = $ENV{HOME};
+$save2_path = $home;
+
+{
+    die "\$bbbike_configdir is not set" if !defined $bbbike_configdir;
+    my $cachedir = catfile($bbbike_configdir, "cache");
+    if (!-d $cachedir) {
+	mkdir $cachedir, 0700;
+    }
+    $cache_root = (-d $cachedir && -w $cachedir
+		   ? $cachedir
+		   : $tmpdir);
+    $Karte::cache_root = $cache_root;
+    $Strassen::Util::cachedir = $cache_root;
+}
+
+# XXX $do_wwwmap stuff is sort-of obsolete. Remove completely?
+Karte::preload('Berlinmap2000');
+$do_wwwmap = (! $Karte::Berlinmap2000::obj ||
+	      ! -e $Karte::Berlinmap2000::obj->fs_dir);
+if ($devel_host) {
+    $Karte::cache_root = "/usr/www/berlin";
+}
 
 # Hook init
 foreach (qw(before_plot after_plot new_route del_route after_resize
@@ -4619,9 +4630,13 @@ sub handle_options {
 
 	 M"GUI",
 	 ['menu','!',1,	# XXX hier stand mal "menu|stdmenu|standardmenu" => aber Aliase werden anscheinend von Tk::GetOpt nicht unterstützt?!
-	  label => M"Standard-Menü", var => \$standard_menubar],
+	  label => M"Standard-Menü", var => \$standard_menubar,
+	 'callback-interactive' => \&restart_bbbike_hint,
+	 ],
 	 ['balloon','!',1,
-	  label => M"Balloons", var => \$use_balloon],
+	  label => M"Balloons", var => \$use_balloon,
+	 'callback-interactive' => \&restart_bbbike_hint,
+	 ],
 	 ['cballoon','=i',2,    # 0 = nie, 1 = auf der Route, 2 = immer
 	  strict => 1,
 	  choices => [[M"nie" => 0],
@@ -4792,9 +4807,9 @@ dazu verwendet wird",
 	  longhelp => M"Minimalwinkel in Grad bei der Vereinfachung von Routen\n",
 	  var => \$export_txt_min_angle],
 	 ['gpswaypoints','=i',50,
-	  choices => [20,50,100,200],
+	  choices => [20,50,100,250],
 	  label => M"Maximale Anzahl der GPS-Waypoints",
-	  longhelp => M"Moderne Garmin-Geräte wie der eTrex Vista HCx können anscheinend beliebig viele Waypoints pro Route verwenden,\netwas ältere wie der eTrex Vista 50 Waypoints,\nwährend noch ältere nur 20 Waypoints laden können\n",
+	  longhelp => M"Moderne Garmin-Geräte wie der eTrex Vista HCx können 250 Waypoints pro Route verwenden,\netwas ältere wie der eTrex Vista 50 Waypoints,\nwährend noch ältere nur 20 Waypoints laden können\n",
 	  var => \$gps_waypoints,
 	 ],
 	 ['gpswaypointlength','=i',10,
@@ -4927,7 +4942,7 @@ speicherplatzsparender.",
 
     eval {
 	require Tk::Getopt;
-	Tk::Getopt->VERSION(0.4950);
+	Tk::Getopt->VERSION(0.4951);
     };
     if ($@) {			# XXX
 	die "Please report to author: use opttable_to_getopt!!!! XXX";

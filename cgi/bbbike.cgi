@@ -6344,6 +6344,7 @@ sub nice_crossing_name {
     return join("/", @c_street) . ($unique_cityparts ne "" ? " ($unique_cityparts)" : "");
 }
 
+# XXX This could be refactored and partially go to Route::Heavy
 sub lost_time {
     my($r, $tb, $velocity_kmh) = @_;
     return if $tb->{type} ne 'handicap';
@@ -6394,6 +6395,7 @@ sub lost_time {
 	   };
 }
 
+# XXX This could be refactored and partially go to Route::Heavy
 sub diff_from_old_route {
     my($r) = @_;
     my $diff = { different => 1, old_session_not_found => 1 };

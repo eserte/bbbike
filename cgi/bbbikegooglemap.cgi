@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 2.4 2007/12/22 21:09:59 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 2.12 2007/12/29 20:31:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006,2007 Slaven Rezic. All rights reserved.
@@ -210,7 +210,11 @@ sub get_html {
     <title>BBBike data presented with Googlemap</title>
     <link rel="stylesheet" type="text/css" href="$bbbikeroot/html/bbbike.css"><!-- XXX only for radzeit -->
     <link type="image/gif" rel="shortcut icon" href="$bbbikeroot/images/bbbike_google.gif"><!-- XXX only for radzeit -->
-    <script src="http://maps.google.com/maps?file=api&v=2&key=$google_api_key" type="text/javascript"></script>
+<!--    <script src="http://maps.google.com/maps?file=api&v=2&key=$google_api_key" type="text/javascript"></script>-->
+    <script src="http://maps.google.com/jsapi?key=$google_api_key" type="text/javascript"></script>
+    <script type="text/javascript">
+      google.load("maps", "2");
+    </script>
     <script src="$bbbikeroot/html/sprintf.js" type="text/javascript"></script>
     <script src="$bbbikeroot/html/bbbike_util.js" type="text/javascript"></script>
     <style type="text/css"><!--
@@ -218,23 +222,33 @@ sub get_html {
 	#permalink    { color:red; }
 	#addroutelink { color:blue; }
 	.boxed	      { border:1px solid black; padding:3px; }
+	body.nonWaitMode * { }
+	body.waitMode *    { cursor:wait; }
     --></style>
   </head>
-  <body onload="init()" onunload="GUnload()">
+  <body onload="init()" onunload="GUnload()" class="nonWaitMode">
     <div id="map" style="width: 100%; height: 500px"></div>
     <script type="text/javascript">
     //<![CDATA[
 
     var routeLinkLabel = "Link to route: ";
     var routeLabel = "Route: ";
+    var commonSearchParams = "&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&scope=;output_as=xml;referer=bbbikegooglemap";
 
     var addRoute = [];
     var addRouteOverlay;
 
-    var startIcon = new GIcon(G_DEFAULT_ICON, "http://bbbike.radzeit.de/BBBike/images/flag2_bl_centered.png");
-    startIcon.iconAnchor = new GPoint(10,10);
-    var goalIcon = new GIcon(G_DEFAULT_ICON, "http://bbbike.radzeit.de/BBBike/images/flag_ziel_centered.png");
-    goalIcon.iconAnchor = new GPoint(10,10);
+    var searchStage = 0;
+
+    var isGecko = navigator && navigator.product == "Gecko" ? true : false;
+    var dragCursor = isGecko ? '-moz-grab' : 'url("$bbbikeroot/images/moz_grab.gif"), auto';
+
+    // XXX Icons are still a little bit off, but this may be
+    // an issue with the point calculated in the click callback?
+    var startIcon = new GIcon(G_DEFAULT_ICON, "$bbbikeroot/images/flag2_bl_centered.png");
+    startIcon.iconAnchor = new GPoint(16,16);
+    var goalIcon = new GIcon(G_DEFAULT_ICON, "$bbbikeroot/images/flag_ziel_centered.png");
+    goalIcon.iconAnchor = new GPoint(16,16);
     var currentPointMarker = null;
 
     function createMarker(point, html_name) {
@@ -278,6 +292,20 @@ sub get_html {
 	    }
 	}
 	return "browse"; // fallback
+    }
+
+    function currentModeChange() {
+        var currentMode = getCurrentMode();
+	var dragObj = map.getDragObject();
+        if (currentMode == "search") {
+	    if (searchStage == 0) {
+		dragObj.setDraggableCursor('url("$bbbikeroot/images/start_ptr.png"), url("$bbbikeroot/images/flag2_bl.png"), ' + dragCursor);
+	    } else {
+		dragObj.setDraggableCursor('url("$bbbikeroot/images/ziel_ptr.png"), url("$bbbikeroot/images/flag_ziel.png"), ' + dragCursor);
+	    }
+        } else {
+	    dragObj.setDraggableCursor(dragCursor);
+        }
     }
 
     function addCoordsToRoute(point) {
@@ -368,6 +396,8 @@ sub get_html {
 		wptHTML += "<a href='#map' onclick='setwptAndMark(" + xy[0] + "," + xy[1] + ");return true;'>" + pe.getElementsByTagName("DistString")[0].textContent + " " + pe.getElementsByTagName("DirectionString")[0].textContent + " " + pe.getElementsByTagName("Strname")[0].textContent + "</a><br />\\n";
 	    }
 	}
+	wptHTML += "Gesamtlänge: " + pointElements[pointElements.length-1].getElementsByTagName("TotalDistString")[0].textContent + "<br />\\n";
+	wptHTML += "<a href=\\"javascript:wayBack()\\">Rückweg</a><br />\\n";
 	document.getElementById("wpt").innerHTML = wptHTML;
     }
 
@@ -418,19 +448,29 @@ sub get_html {
 	document.upload.zoom.value = map.getZoomLevel();
     }
 
+    function waitMode() {
+	document.getElementsByTagName("body")[0].className = "waitMode";
+    }
+
+    function nonWaitMode() {
+        document.getElementsByTagName("body")[0].className = "nonWaitMode";
+    }
+
     function searchRoute(startPoint, goalPoint) {
 	var requestLine =
-	    "@{[ $cgi_reldir ]}/bbbike.cgi?startpolar=" + startPoint.x + "x" + startPoint.y + "&zielpolar=" + goalPoint.x + "x" + goalPoint.y + "&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&scope=;output_as=xml;referer=bbbikegooglemap";
+	    "@{[ $cgi_reldir ]}/bbbike.cgi?startpolar=" + startPoint.x + "x" + startPoint.y + "&zielpolar=" + goalPoint.x + "x" + goalPoint.y + commonSearchParams;
 	var routeRequest = GXmlHttp.create();
 	routeRequest.open("GET", requestLine, true);
 	routeRequest.onreadystatechange = function() {
 	    showRouteResult(routeRequest);
 	};
+	waitMode();
 	routeRequest.send(null);
     }
 
     function showRouteResult(request) {
 	if (request.readyState == 4) {
+	    nonWaitMode();
 	    if (request.status != 200) {
 	        alert("Error calculating route: " + request.statusText);
 	        return;
@@ -451,7 +491,6 @@ sub get_html {
 	}
     }
 
-    var searchStage = 0;
     var startOverlay = null;
     var startPoint = null;
     var goalOverlay = null;
@@ -463,24 +502,51 @@ sub get_html {
 	    return;
 	}
 	if (searchStage == 0) { // set start
-	    if (startOverlay) {
-		map.removeOverlay(startOverlay);
-		startOverlay = null;
-	    }
-	    if (goalOverlay) {
-		map.removeOverlay(goalOverlay);
-		goalOverlay = null;
-	    }
-	    startPoint = point;
-	    startOverlay = new GMarker(startPoint, startIcon);
-	    map.addOverlay(startOverlay);
+	    removeGoalMarker();
+	    setStartMarker(point);
 	    searchStage = 1;
+	    currentModeChange();
 	} else if (searchStage == 1) { // set goal
-	    goalPoint = point;
-	    goalOverlay = new GMarker(goalPoint, goalIcon);
-	    map.addOverlay(goalOverlay);
+	    setGoalMarker(point);
 	    searchStage = 0;
+	    currentModeChange();
 	    searchRoute(startPoint, goalPoint);
+	}
+    }
+
+    function wayBack() {
+        var tmp = startPoint;
+	startPoint = goalPoint;
+	goalPoint = tmp;
+	tmp = startOverlay;
+	startOverlay = goalOverlay;
+	goalOverlay = tmp;
+        setStartMarker(startPoint);
+	setGoalMarker(goalPoint);
+	searchRoute(startPoint, goalPoint);
+    }
+
+    function setStartMarker(point) {
+        if (startOverlay) {
+	    map.removeOverlay(startOverlay);
+	    startOverlay = null;
+	}
+	startPoint = point;
+	startOverlay = new GMarker(startPoint, startIcon);
+	map.addOverlay(startOverlay);
+    }
+
+    function setGoalMarker(point) {
+	removeGoalMarker();
+	goalPoint = point;
+	goalOverlay = new GMarker(goalPoint, goalIcon);
+	map.addOverlay(goalOverlay);
+    }
+
+    function removeGoalMarker() {
+	if (goalOverlay) {
+	    map.removeOverlay(goalOverlay);
+	    goalOverlay = null;
 	}
     }
 
@@ -527,6 +593,29 @@ sub get_html {
 	close_answerbox();
         var commentformDiv = document.getElementById("commentform");
         commentformDiv.style.visibility = "visible";
+    }
+
+    function doGeocode() {
+        var address = document.geocode.geocodeAddress.value;
+        if (address == "") {
+            alert("Bitte Adresse angeben");
+            return false;
+        }
+	var geocoder = new GClientGeocoder();
+	geocoder.setViewport(map.getBounds());
+	geocoder.setBaseCountryCode("de");
+	waitMode();
+	geocoder.getLatLng(address, geocodeResult);
+        return false;
+    }
+
+    function geocodeResult(point) {
+	nonWaitMode();
+	if (!point) {
+	    alert("Adresse nicht gefunden");
+	} else {
+	    setwptAndMark(point.x, point.y);
+	}
     }
 
     if (GBrowserIsCompatible() ) {
@@ -620,17 +709,20 @@ EOF
 <form name="mapmode" class="boxed" method="get">
  <table border="0">
    <tr style="vertical-align:top;">
-    <td><input id="mapmode_browse"
+    <td><input onchange="currentModeChange()" 
+	       id="mapmode_browse"
                type="radio" name="mapmode" value="browse" checked /></td>
     <td><label for="mapmode_browse">Scrollen/Bewegen/Zoomen</label></td>
    </tr>
    <tr style="vertical-align:top;">
-    <td><input id="mapmode_search"
+    <td><input onchange="currentModeChange()" 
+	       id="mapmode_search"
                type="radio" name="mapmode" value="search" /></td>
     <td><label for="mapmode_search">Mit Maus-Klicks Start- und Zielpunkt festlegen</label></td>
    </tr>
    <tr style="vertical-align:top;">
-    <td><input id="mapmode_addroute"
+    <td><input onchange="currentModeChange()" 
+	       id="mapmode_addroute"
                type="radio" name="mapmode" value="addroute" /></td>
     <td><label for="mapmode_addroute">Mit Maus-Doppelklicks eine Route erstellen</label><br/>
         <a href="javascript:deleteLastPoint()">Letzten Punkt löschen</a>
@@ -655,7 +747,11 @@ EOF
 
 </div>
 
-<form name="googlemap" onsubmit='return checkSetCoordForm()' class="boxed" style="margin-top:0.5cm; margin-left:10px; width:45%; float:left;">
+<form name="geocode" onsubmit='return doGeocode()' class="boxed" style="margin-top:0.5cm; margin-left:10px; width:45%; float:left;">
+  Adresse: <input name="geocodeAddress" /> <button>Zeigen</button>
+</form>
+ 
+<form name="googlemap" onsubmit='return checkSetCoordForm()' class="boxed" style="margin-top:0.3cm; margin-left:10px; width:45%; float:left;">
   <input type="hidden" name="zoom" value="@{[ $zoom ]}" />
   <input type="hidden" name="autosel" value="@{[ $self->{autosel} ]}" />
   <input type="hidden" name="maptype" value="@{[ $self->{maptype} ]}" />

@@ -1,15 +1,15 @@
 # -*- perl -*-
 
 #
-# $Id: Getopt.pm,v 1.57 2007/12/17 20:42:57 eserte Exp $
+# $Id: Getopt.pm,v 1.57 2007/12/17 20:42:57 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1997,1998,1999,2000,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1997,1998,1999,2000,2003,2007 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: srezic@cpan.org
+# WWW:  http://www.rezic.de/eserte/
 #
 
 package Tk::Getopt;
@@ -24,7 +24,7 @@ use constant OPTTYPE  => 1;
 use constant DEFVAL   => 2;
 use constant OPTEXTRA => 3;
 
-$VERSION = '0.49_50';
+$VERSION = '0.49_51';
 $VERSION = eval $VERSION;
 
 $DEBUG = 0;
@@ -373,16 +373,16 @@ sub usage {
 
 sub process_options {
     my($self, $former, $fromgui) = @_;
-    my $options = $self->{'options'};
-    foreach ($self->_opt_array) {
-	my $opt = $_->[OPTNAME];
+    my $bag = {};
+    foreach my $optdef ($self->_opt_array) {
+	my $opt = $optdef->[OPTNAME];
 
 	my $callback;
 	if ($fromgui) {
-	    $callback = $_->[OPTEXTRA]{'callback-interactive'};
+	    $callback = $optdef->[OPTEXTRA]{'callback-interactive'};
 	}
 	if (!$callback) {
-	    $callback = $_->[OPTEXTRA]{'callback'};
+	    $callback = $optdef->[OPTEXTRA]{'callback'};
 	}
 	if ($callback) {
 	    # no warnings here ... it would be too complicated to catch
@@ -392,17 +392,17 @@ sub process_options {
 	    # execute callback if value has changed
 	    if (!(defined $former
 		  && (!exists $former->{$opt}
-		      || $ {$self->_varref($_)} eq $former->{$opt}))) {
+		      || $ {$self->_varref($optdef)} eq $former->{$opt}))) {
 		local($^W) = $old_w; # fall back to original value
-		&$callback;
+		&$callback(optdef => $optdef, bag => $bag);
 	    }
 	}
-	if ($_->[OPTEXTRA]{'strict'} &&
-	    UNIVERSAL::isa($_->[OPTEXTRA]{'choices'},'ARRAY')) {
+	if ($optdef->[OPTEXTRA]{'strict'} &&
+	    UNIVERSAL::isa($optdef->[OPTEXTRA]{'choices'},'ARRAY')) {
 	    # check for valid values (valid are: choices and default value)
-	    my $v = $ {$self->_varref($_)};
-	    my @choices = @{$_->[OPTEXTRA]{'choices'}};
-	    push(@choices, $_->[DEFVAL]) if defined $_->[DEFVAL];
+	    my $v = $ {$self->_varref($optdef)};
+	    my @choices = @{$optdef->[OPTEXTRA]{'choices'}};
+	    push(@choices, $optdef->[DEFVAL]) if defined $optdef->[DEFVAL];
 	    my $seen;
 	    for my $choice (@choices) {
 		my $value = (ref $choice eq 'ARRAY' ? $choice->[1] : $choice);
@@ -413,12 +413,12 @@ sub process_options {
 	    }
 	    if (!$seen) {
 		if (defined $former) {
-		    warn "Not allowed: " . $ {$self->_varref($_)}
+		    warn "Not allowed: " . $ {$self->_varref($optdef)}
 		       . " for -$opt. Using old value $former->{$opt}";
-		    $ {$self->_varref($_)} = $former->{$opt};
+		    $ {$self->_varref($optdef)} = $former->{$opt};
 		} else {
 		    die "Not allowed: "
-		      . $ {$self->_varref($_)} . " for -$opt\n"
+		      . $ {$self->_varref($optdef)} . " for -$opt\n"
 		      . "Allowed is only: " . join(", ", @choices);
 		}
 	    }
@@ -1707,7 +1707,21 @@ An array of aliases also accepted by F<Getopt::Long>.
 =item callback
 
 Call a subroutine every time the option changes (e.g. after pressing
-on Apply, Ok or after loading).
+on Apply, Ok or after loading). The callback will get a hash with the
+following keys as argument:
+
+=over
+
+=item optdef
+
+The opttable item definition for this option.
+
+=item bag
+
+A hash reference which is persistent for this L</process_options>
+call. This can be used to share state between multiple callbacks.
+
+=back
 
 =item callback-interactive
 

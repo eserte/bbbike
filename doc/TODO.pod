@@ -2671,7 +2671,7 @@ Weiterhin könnte man feststellen, ob sich alte und Ausweichroute
 Das geht natürlich nur, wenn Apache::Session* installiert ist.
 
 Note: Einiges ist bereits implementiert: Anzeige der vorherigen Länge,
-grafisches Diff bei der googlemaps-Darstellung.
+grafisches Diff bei der googlemaps- und BBBikeDraw::GD-Darstellung.
 
 =item * (E3)
 
@@ -2689,7 +2689,7 @@ Use the suggest AJAX funktion for bbbikegooglemaps.cgi. Possible
 alternatives: just for searching for streets (and user has to use the
 existing function to set start/goal) or to set start+goal or both.
 
-=item * (H2)
+=item * (H2) (feature)
 
 Use the googlemaps clone on mapserver basis.
 
@@ -2705,17 +2705,34 @@ last via, whole) from a computed route.
 
 =over
 
- - Missing: Advanced form: another step for choosing search
-   preferences
- - using temp_blockings should be automatic (wap searches are normally
-   E<quot>nowE<quot> searches) (could be problematic for test suite?)
+=item * (M3) (feature)
 
- - Nokia Series 40: lange Straßennamen werden im Select abgeschnitten
- - <b>bla</b> als <b> bla </b> umbauen
- - keine Tabelle für Nokia40/60 für das Ergebnis verwenden
- - XHTML-Lösung?
- - Nokia 6650 in Browserinfo.pm aufnehmen (ca. 120x160, nachmessen!)
- - width=/height= in BBBike Karte angeben, damit Platz reserviert wird
+Missing: Advanced form: another step for choosing search preferences
+
+=item * (M3) (improvement)
+
+Using temp_blockings should be automatic (wap searches are normally
+E<quot>nowE<quot> searches) (could be problematic for test suite?)
+
+=item * (M3)
+
+Nokia Series 40: lange Straßennamen werden im Select abgeschnitten
+
+=item * (M3)
+
+<b>bla</b> als <b> bla </b> umbauen
+
+=item * (M3)
+
+keine Tabelle für Nokia40/60 für das Ergebnis verwenden
+
+=item * (H3) (feature)
+
+XHTML-Lösung?
+
+=item * (M3)
+
+width=/height= in BBBike Karte angeben, damit Platz reserviert wird
 
 =back
 
@@ -2786,6 +2803,9 @@ from start and goal point of route
 Output-agnostic simplifier of routes. Should take coords, net, already
 used waypoints and some gpx* parameters and return a simplified coord
 list with generated shorter waypoint names
+
+-> GPS::DirectGarmin::simplify_route ist vielleicht schon allgemein
+genug, um in ein anderes Modul herausgebrochen werden zu können
 
 =head2 BBBikeDraw
 
@@ -3315,11 +3335,6 @@ install.pl: Should be tested on another system.
 FreeBSD-Port anpassen, so daß install.pl verwendet wird. PLIST
 von install.pl abhängig machen. -kdeinstall in
 Abhängigkeit von HAVE_KDE angeben.
-
-=item * (M1)
-
-copy-cvs-to-stick-Makeregel: cache-Verzeichnis sollte nicht auf dem
-Stick existieren
 
 =item * (H1)
 
