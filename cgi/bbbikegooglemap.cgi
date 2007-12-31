@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 2.12 2007/12/29 20:31:42 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 2.16 2007/12/31 00:35:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006,2007 Slaven Rezic. All rights reserved.
@@ -243,13 +243,14 @@ sub get_html {
     var isGecko = navigator && navigator.product == "Gecko" ? true : false;
     var dragCursor = isGecko ? '-moz-grab' : 'url("$bbbikeroot/images/moz_grab.gif"), auto';
 
-    // XXX Icons are still a little bit off, but this may be
-    // an issue with the point calculated in the click callback?
     var startIcon = new GIcon(G_DEFAULT_ICON, "$bbbikeroot/images/flag2_bl_centered.png");
     startIcon.iconAnchor = new GPoint(16,16);
+    startIcon.iconSize = new GSize(32,32);
     var goalIcon = new GIcon(G_DEFAULT_ICON, "$bbbikeroot/images/flag_ziel_centered.png");
     goalIcon.iconAnchor = new GPoint(16,16);
+    goalIcon.iconSize = new GSize(32,32);
     var currentPointMarker = null;
+    var currentTempBlockingMarkers = [];
 
     function createMarker(point, html_name) {
 	var marker = new GMarker(point);
@@ -258,6 +259,13 @@ sub get_html {
 	    marker.openInfoWindowHtml(html);
 	});
 	return marker;
+    }
+
+    function removeTempBlockingMarkers() {
+	for(var i = 0; i < currentTempBlockingMarkers.length; i++) {
+	    map.removeOverlay(currentTempBlockingMarkers[i]);
+	}
+	currentTempBlockingMarkers = [];
     }
 
     function setwpt(x,y) {
@@ -304,7 +312,12 @@ sub get_html {
 		dragObj.setDraggableCursor('url("$bbbikeroot/images/ziel_ptr.png"), url("$bbbikeroot/images/flag_ziel.png"), ' + dragCursor);
 	    }
         } else {
-	    dragObj.setDraggableCursor(dragCursor);
+	    if (currentMode == "addroute") {
+		dragObj.setDraggableCursor("default");
+	    } else {
+	        dragObj.setDraggableCursor(dragCursor);
+	    }
+	    document.getElementById("wpt").innerHTML = "";
         }
     }
 
@@ -332,6 +345,7 @@ sub get_html {
     function resetRoute() {
 	addRoute = [];
 	updateRoute();
+	removeTempBlockingMarkers();
     }
 
     function updateRoute() {
@@ -376,6 +390,29 @@ sub get_html {
 	   return;
 	addRouteOverlay = new GPolyline(addRoute);
 	map.addOverlay(addRouteOverlay);
+    }
+
+    function updateTempBlockings(resultXml) {
+	removeTempBlockingMarkers()
+        var affectingBlockings = resultXml.documentElement.getElementsByTagName("AffectingBlocking");
+	if (affectingBlockings && affectingBlockings.length) {
+            for(var i = 0; i < affectingBlockings.length; i++) {
+		var affectingBlocking = affectingBlockings[i];
+	        var llhs = affectingBlocking.getElementsByTagName("LongLatHop")
+		if (llhs && llhs.length) {
+		    var xy = llhs[0].getElementsByTagName("XY")[0].textContent.split(",");
+		    var text = "";
+		    var textElements = affectingBlocking.getElementsByTagName("Text");
+		    if (textElements && textElements.length) {
+			text = textElements[0].textContent;
+		    }
+		    var point = new GPoint(xy[0], xy[1]);
+	    	    var marker = createMarker(point, text);
+		    map.addOverlay(marker);
+		    currentTempBlockingMarkers[currentTempBlockingMarkers.length] = marker;
+		}
+	    }
+        }
     }
 
     function updateWptDiv(resultXml) {
@@ -487,6 +524,7 @@ sub get_html {
             }
 	    //updateRouteDiv();
 	    updateRouteOverlay();
+	    updateTempBlockings(xml);
 	    updateWptDiv(xml);
 	}
     }
@@ -498,6 +536,12 @@ sub get_html {
 
     function onClick(overlay, point) {
 	var currentMode = getCurrentMode();
+	if (currentMode == "addroute") {
+	    showCoords(point, 'Center of map: ');
+	    showLink(point, 'Link to map center: ');
+	    addCoordsToRoute(point,true);
+	    // XXX should the point also be centered or not?
+	}
 	if (currentMode != "search") {
 	    return;
 	}
@@ -631,10 +675,11 @@ sub get_html {
     }
 
     GEvent.addListener(map, "moveend", function() {
+	var currentMode = getCurrentMode();
         var center = map.getCenterLatLng();
 	showCoords(center, 'Center of map: ');
 	showLink(center, 'Link to map center: ');
-	addCoordsToRoute(center,true);
+	// addCoordsToRoute(center,true);
     });
 
 EOF
@@ -718,13 +763,13 @@ EOF
     <td><input onchange="currentModeChange()" 
 	       id="mapmode_search"
                type="radio" name="mapmode" value="search" /></td>
-    <td><label for="mapmode_search">Mit Maus-Klicks Start- und Zielpunkt festlegen</label></td>
+    <td><label for="mapmode_search">Mit Mausklicks Start- und Zielpunkt festlegen</label></td>
    </tr>
    <tr style="vertical-align:top;">
     <td><input onchange="currentModeChange()" 
 	       id="mapmode_addroute"
                type="radio" name="mapmode" value="addroute" /></td>
-    <td><label for="mapmode_addroute">Mit Maus-Doppelklicks eine Route erstellen</label><br/>
+    <td><label for="mapmode_addroute">Mit Maus<span style="color:red;">klicks</span> eine Route erstellen</label><br/><!-- XXX remove colored "klicks" some time -->
         <a href="javascript:deleteLastPoint()">Letzten Punkt löschen</a>
         <a href="javascript:resetRoute()">Route löschen</a></td>
    </tr>

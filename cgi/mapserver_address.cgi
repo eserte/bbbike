@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.31 2007/07/14 15:30:13 eserte Exp $
+# $Id: mapserver_address.cgi,v 1.32 2007/12/30 11:01:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -438,7 +438,11 @@ sub redirect_to_google2brb {
 sub redirect_to_ms {
     my($coord, %args) = @_;
     if (!$args{-scope}) {
-	$args{-scope} = scope(split /,/, $coord);
+	if ($coord) {
+	    $args{-scope} = scope(split /,/, $coord);
+	} else {
+	    $args{-scope} = "city";
+	}
     }
     $args{-scope} = "all," . $args{-scope};
 

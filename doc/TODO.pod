@@ -1603,9 +1603,10 @@ L<http://www.perlmonks.org/index.pl?node_id=355073>
 
 =item * (H4) (improvement)
 
-S- und U-Bahnlinien mit den neuen Attributen Em und Cu versehen. Diese
-sollten dann dafür verwendet werden, um das Layering anzupassen.
-Außerdem U-Bahntunnelstrecken als solche markieren.
+S- und U-Bahnlinien mit den neuen Attributen Em (embankment=Damm, z.B.
+U6 nach Tegel) und Cu (cut=Einschnitt, z.B. U nach Krumme Lanke)
+versehen. Diese sollten dann dafür verwendet werden, um das Layering
+anzupassen. Außerdem U-Bahntunnelstrecken als solche markieren.
 
 =back
 
@@ -1902,6 +1903,46 @@ das erst einmal ignorieren, weil der gesperrt-Layer sowieso nur in
 bbbike Perl/Tk gezeichnet wird und spezielle gesperrt-Kategorien beim
 MapServer noch ignoriert werden?
 
+=item * (H5)
+
+Einbahnstraßen-Reorganisation: Die derzeitigen Typen von
+Einbahnstraßen 1 und 1s sollen noch feiner aufgeschlüsselt werden.
+Beispiele: 
+
+ * Neue Schönhauser Str.: die Straßenbahn darf in beide Richtungen
+   fahren, d.h. die Fahrbahn ist breit genug und normalerweise sollte
+   es keine Konflikte mit dem Gegenverkehr geben. Höchste Kategorie
+   (= 25 km/h?) (+ Achtung, Einbahnstraße!)
+
+ * Am Treptower Park: teilweise Gehweg, teilweise Nebenfahrbahn zum
+   Parken. Eher niedriges Konfliktpotenzial, vielleicht mittlere
+   Kategorie (= 18 km/h?) (kein Achtung?)
+
+ * Bayernring, Schulenburgring: sehr wenig Verkehr, aber enge Straße.
+   Deshalb niedrige Kategorie. (= 13 km/h?) (+ Achtung, Einbahnstraße!)
+
+ * Jahnstr.: etwas mehr Verkehr, aber auch etwas breitere Straße.
+   Zusammengenommen auch niedrige Kategorie. (+ Achtung, Einbahnstraße!)
+
+ * Landwehrkanalstraßen: gegen die Richtung mit nur 5 km/h erlauben
+   (Gehwege) (+ Achtung, Einbahnstraße -> Gehweg!)
+
+ * Großer Stern: gegen die Richtung mit vielleicht 13 km/h erlauben?
+   Eher wenig Fußgängerverkehr, kurze Strecken, relativ breite
+   Gehwege. (+ Achtung, Einbahnstraße -> Gehweg!)
+
+ * Mangerstr.: Radfahren auf dem schmalen Gehweg erlaubt? (+ Achtung,
+   Einbahnstraße -> Gehweg!)
+
+ * Flughafen Tegel: striktes Einbahnstraßenverbot (keine durchgängigen
+   Gehwege, starker Verkehr)
+
+Vielleicht mal einige Realworldbeispiele mit Stoppuhr messen?
+
+Weiterhin sollte in der CGI-Version angezeigt werden, dass man gegen
+die Einbahnstraße fährt bzw. schiebt (aber vielleicht nicht immer,
+siehe Beispiele oben).
+
 =item * (H3)
 
 Fragezeichen-Reorganisation: Es gibt mehrere Typen von Fragezeichen:
@@ -2042,7 +2083,10 @@ Douglas-Peucker polyline simplification algorithm?
 =item * (H4)
 
 Ich brauche eine spezielle handicap-Kategorie für Abbiegevorgänge
-(z.B. q\d3 oder q\d::3), sowohl für Anzeige als auch für das Routing.
+(z.B. q\d3 oder q\d::3 oder q\d::dir (für directed)), sowohl für
+Anzeige als auch für das Routing.
+
+Datenbeispiel: Am Volkspark/Bundesallee
 
 =item * (H3)
 
@@ -2698,6 +2742,54 @@ Use the googlemaps clone on mapserver basis.
 Make it possible to add points to a computed route in
 bbbikegooglemaps.cgi. Also make it possible to delete points (last, to
 last via, whole) from a computed route.
+
+=item * (H5) (feature)
+
+Routingpräferenzen sollten eingebbar sein. Das kann ruhig das gleiche
+Formular wie bei bbbike.cgi sein, und die gleichen Cookies sollten
+verwendet werden. Am besten als eingeblendetes Fenster.
+
+=item * (H3) (improvement)
+
+Neben der Anzeige der temp-blockings sollte auch ein Re-routing
+möglich sein (Link im info-Fenster). Die alte Route kann dann als
+old_coords-Route weiterhin sichtbar sein.
+
+=item * (M3) (improvement)
+
+Info-Fenster für temp-blockings: weitere Informationen anzeigen,
+insbesondere die ungefähre verlorene Zeit
+
+=item * (H3) (improvement)
+
+Die gesamte Länge von temp-blockings sollte markiert werden, nicht nur
+der erste Punkt. Benötigt eine Änderung in bbbike.cgi (alle Punkte
+müssen in LongLatHop erhältlich sein; da diese unterbrochen sein
+könnte, müsste die Datenstruktur entsprechend angepasst werden, evtl.
+durch ein <separator>-Element und bei der YAML-Ausgabe mit mehreren
+Arrays).
+
+=item * (H3) (external bug)
+
+Manchmal geht die Höhe der map im Seamonkey verloren. Dann erzeugt
+Googlemaps Routenbilder mit Höhe=NaN, die natürlich kaputt sind. Die
+Frage ist, ob ich hier etwas machen kann (außer den Bug zu reporten).
+
+=item * (M1) (improvement)
+
+Die verwendeten Bilder (Start/Zielflagge/pointer) könnten etwas
+Antialiasing vertragen.
+
+=item * (H2) (feature)
+
+Die Attribute an der Strecke sollten irgendwie visualisiert werden
+können (Kopfsteinpflaster, Radwege...). Dazu müsste bbbike.cgi erst
+einmal die entsprechenden Datenstrukturen bereitstellen.
+
+=item * (H2) (feature)
+
+Zusatzdownloads (GPX, Palm) bereitsstellen, vielleicht auch die
+Verlinkung zur Printversion, PDF-Generierung und Mapserver.
 
 =back
 

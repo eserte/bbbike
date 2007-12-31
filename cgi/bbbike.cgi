@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.73 2007/12/22 21:15:25 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.74 2007/12/30 15:07:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -706,7 +706,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.73 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.74 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -3216,12 +3216,10 @@ sub search_coord {
 	    }
 	}
 	if (@current_temp_blocking) {
+	    local @Strassen::datadirs = @Strassen::datadirs;
 	    push @Strassen::datadirs,
 		"$FindBin::RealBin/../BBBike/data/temp_blockings",
 		"$FindBin::RealBin/../data/temp_blockings",
-		# XXX obsolete locations
-		"$FindBin::RealBin/../BBBike/misc/temp_blockings",
-		"$FindBin::RealBin/../misc/temp_blockings",
 		;
 	    for(my $i = 0; $i <= $#current_temp_blocking; $i++) {
 		my $tb = $current_temp_blocking[$i];
@@ -3677,10 +3675,31 @@ sub search_coord {
 			 };
     }
 
+    my @affecting_blockings;
+    if (@current_temp_blocking && !@custom && !$printmode) {
+    TEMP_BLOCKING:
+	for my $tb (@current_temp_blocking) {
+	    my(@path) = $r->path_list;
+	    for(my $i = 0; $i < $#path; $i++) {
+		my($x1, $y1) = @{$path[$i]};
+		my($x2, $y2) = @{$path[$i+1]};
+		if ($tb->{net}{Net}{"$x1,$y1"}{"$x2,$y2"}) {
+		    push @affecting_blockings, $tb;
+		    $tb->{lost_time}{$velocity_kmh} = lost_time($r, $tb, $velocity_kmh);
+		    $tb->{hop} = ["$x1,$y1", "$x2,$y2"];
+		    next TEMP_BLOCKING;
+		}
+	    }
+	}
+    }
+
  OUTPUT_DISPATCHER:
     if (defined $output_as && $output_as =~ /^(xml|yaml|yaml-short|perldump|gpx-route)$/ && $r && $r->path) {
 	require Karte;
 	Karte::preload(qw(Polar Standard));
+	for my $tb (@affecting_blockings) {
+	    $tb->{longlathop} = [ map { join ",", $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_)) } @{ $tb->{hop} || [] } ];
+	}
 	my $res = {
 		   Route => \@out_route,
 		   Len   => $r->len, # in meters
@@ -3692,6 +3711,7 @@ sub search_coord {
 		   LongLatPath => [ map {
 		       join ",", $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(@$_))
 		   } @{ $r->path }],
+		   AffectingBlockings => \@affecting_blockings,
 		  };
 	if ($output_as eq 'perldump') {
 	    require Data::Dumper;
@@ -3745,6 +3765,15 @@ sub search_coord {
 		    $new_res->{$k} = { XY => $v };
 		} elsif ($k eq 'Route') {
 		    $new_res->{$k} = { Point => $v };
+		} elsif ($k eq 'AffectingBlockings') {
+		    $new_res->{"AffectingBlocking"} = [ map {
+			+{
+			  Text => $_->{text},
+			  Index => $_->{index},
+			  Type => $_->{type},
+			  LongLatHop => { XY => $_->{longlathop} },
+			 }
+		    } @$v ]
 		} else {
 		    $new_res->{$k} = $v;
 		}
@@ -3794,51 +3823,36 @@ sub search_coord {
 	print M("Keine Route gefunden").".\n";
 	warn "Fehler: keine Route zwischen <$startname>" . ($vianame ? ", <$vianame>" : "") . " und <$zielname> gefunden, sollte niemals passieren!";
     } else {
-	if (@current_temp_blocking && !@custom && !$printmode) {
-	    my @affecting_blockings;
-	TEMP_BLOCKING:
-	    for my $tb (@current_temp_blocking) {
-		my(@path) = $r->path_list;
-		for(my $i = 0; $i < $#path; $i++) {
-		    my($x1, $y1) = @{$path[$i]};
-		    my($x2, $y2) = @{$path[$i+1]};
-		    if ($tb->{net}{Net}{"$x1,$y1"}{"$x2,$y2"}) {
-			push @affecting_blockings, $tb;
-			next TEMP_BLOCKING;
-		    }
-		}
+	if (@affecting_blockings) {
+	    my $hidden = "";
+	    foreach my $key ($q->param) {
+		$hidden .= $q->hidden(-name => $key,
+				      -default => [$q->param($key)]);
 	    }
-	    if (@affecting_blockings) {
-		my $hidden = "";
-		foreach my $key ($q->param) {
-		    $hidden .= $q->hidden(-name => $key,
-					  -default => [$q->param($key)]);
+	    print qq{<center><form name="Ausweichroute" action="} .
+		BBBikeCGIUtil::my_url($q) . qq{" } . (@affecting_blockings > 1 ? qq{onSubmit="return test_temp_blockings_set()"} : "") . qq{>};
+	    print $hidden;
+	    if ($sess) {
+		print $q->hidden(-name    => 'oldcs',
+				 -default => $sess->{_session_id},
+				);
+	    }
+	    print M("Ereignisse, die die Route betreffen k&ouml;nnen") . ":<br>";
+	    for my $tb (@affecting_blockings) {
+		my $lost_time_info = $tb->{lost_time}{$velocity_kmh};
+		print "<input type=\"" .
+		    (@affecting_blockings > 1 ? "checkbox" : "hidden") .
+			"\" name=\"custom\" value=\"temp-blocking-$tb->{'index'}\"> ";
+		print "$tb->{text}";
+		if ($lost_time_info && $lost_time_info->{lost_time_string_de}) {
+		    print " ($lost_time_info->{lost_time_string_de})";
 		}
-		print qq{<center><form name="Ausweichroute" action="} . #XXX del BBBikeCGIUtil::my_self_url($q)
-		    BBBikeCGIUtil::my_url($q) . qq{" } . (@affecting_blockings > 1 ? qq{onSubmit="return test_temp_blockings_set()"} : "") . qq{>};
-		print $hidden;
-		if ($sess) {
-		    print $q->hidden(-name    => 'oldcs',
-				     -default => $sess->{_session_id},
-				    );
-		}
-		print M("Ereignisse, die die Route betreffen k&ouml;nnen") . ":<br>";
-		for my $tb (@affecting_blockings) {
-		    my $lost_time_info = lost_time($r, $tb, $velocity_kmh);
-		    print "<input type=\"" .
-			(@affecting_blockings > 1 ? "checkbox" : "hidden") .
-			    "\" name=\"custom\" value=\"temp-blocking-$tb->{'index'}\"> ";
-		    print "$tb->{text}";
-		    if ($lost_time_info && $lost_time_info->{lost_time_string_de}) {
-			print " ($lost_time_info->{lost_time_string_de})";
-		    }
-		    print "<br>";
-		}
-		print <<EOF;
+		print "<br>";
+	    }
+	    print <<EOF;
 <input type=submit value="@{[ M("Ausweichroute suchen") ]}"><hr>
 </form></center><p>
 EOF
-            }
 	}
 	if (@custom && !$printmode) {
 	    print "<center>";
@@ -6632,7 +6646,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/12/22 21:15:25 $';
+    my $cgi_date = '$Date: 2007/12/30 15:07:38 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

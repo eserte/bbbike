@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.333 2007/12/29 13:19:06 eserte Exp $
+# $Id: bbbike,v 3.334 2007/12/31 00:36:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -217,7 +217,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.333 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.334 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -12744,10 +12744,9 @@ sub show_info {
 	    }
 	}
 
-	my @bbbike_cgi_def = ([$BBBike::BBBIKE_DIRECT_WWW,
-			       "BBBike im WWW"]);
+	my @bbbike_cgi_def = ([$BBBike::BBBIKE_DIRECT_WWW, "BBBike im WWW"]);
 	if ($devel_host) {
-	    push @bbbike_cgi_def, [defined $ENV{BBBIKE_TEST_CGIDIR} ? "$ENV{BBBIKE_TEST_CGIDIR}/bbbike.cgi" : "http://www/~eserte/bbbike/cgi/bbbike.cgi", "BBBike im WWW, lokal"];
+	    push @bbbike_cgi_def, [defined $ENV{BBBIKE_TEST_CGIDIR} ? "$ENV{BBBIKE_TEST_CGIDIR}/bbbike.cgi" : "http://www/~eserte/bbbike/cgi/bbbike.cgi", "lokal: BBBike im WWW"];
 	}
 
 	my $zielname = "";
@@ -12832,43 +12831,51 @@ sub show_info {
 	}
 
 	{
-	    my $need_indentation;
-	    if ($bbbike_google_photo) {
-		$info_text->imageCreate("end", -image => $bbbike_google_photo,
-					-align => "bottom", -padx => 2, -pady => 1);
-	    } else {
-		$need_indentation = 1;
+	    my @bbbike_google_map_defs = (($devel_host
+					   ? ["lokal: Google Maps (BBBike)", "http://localhost/bbbike/cgi/bbbikegooglemap.cgi"]
+					   : ()
+					  ),
+					  ["Google Maps (BBBike)", $BBBike::BBBIKE_GOOGLEMAP_URL],
+					 );
+	    for my $def (@bbbike_google_map_defs) {
+		my($label, $baseurl) = @$def;
+		my $need_indentation;
+		if ($bbbike_google_photo) {
+		    $info_text->imageCreate("end", -image => $bbbike_google_photo,
+					    -align => "bottom", -padx => 2, -pady => 1);
+		} else {
+		    $need_indentation = 1;
+		}
+		$info_text->insert("end", $label,
+				   ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
+		$show_url->($linkcount, sub {
+				my $zielname = $zielname;
+				if ($Tk::VERSION >= 804) {
+				    $zielname = Encode::encode("iso-8859-1", $zielname);
+				}
+				require CGI;
+				my $wpt = "$zielname!$sx,$sy";
+				my $zoom;
+				if ($mapscale_scale < 4000) {
+				    $zoom = 0;
+				} elsif ($mapscale_scale < 8000) {
+				    $zoom = 1;
+				} elsif ($mapscale_scale < 16000) {
+				    $zoom = 2;
+				} else {
+				    $zoom = 3;
+				}
+				my $q2 = CGI->new({ wpt => $wpt,
+						    zoom => $zoom,
+						    autosel => 1,
+						    maptype => "hybrid",
+						  });
+				my $url = $baseurl . "?" . $q2->query_string;
+				$url;
+			    });
+		$info_text->insert("end", "\n");
+		$linkcount++;
 	    }
-
-	    $info_text->insert("end", "Google Maps (BBBike)", # . ($good_quality ? " (hohe Auflösung)" : " (niedrige/unbekannte Auflösung)"),
-			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-	    $show_url->($linkcount, sub {
-			    my $zielname = $zielname;
-			    if ($Tk::VERSION >= 804) {
-				$zielname = Encode::encode("iso-8859-1", $zielname);
-			    }
-			    require CGI;
-			    my $wpt = "$zielname!$sx,$sy";
-			    my $zoom;
-			    if ($mapscale_scale < 4000) {
-				$zoom = 0;
-			    } elsif ($mapscale_scale < 8000) {
-				$zoom = 1;
-			    } elsif ($mapscale_scale < 16000) {
-				$zoom = 2;
-			    } else {
-				$zoom = 3;
-			    }
-			    my $q2 = CGI->new({ wpt => $wpt,
-						zoom => $zoom,
-						autosel => 1,
-						maptype => "hybrid",
-					      });
-			    my $url = $BBBike::BBBIKE_GOOGLEMAP_URL . "?" . $q2->query_string;
-			    $url;
-			});
-	    $info_text->insert("end", "\n");
-	    $linkcount++;
 	}
 
 	{

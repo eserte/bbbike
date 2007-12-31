@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.52 2007/12/23 21:18:58 eserte Exp $
+# $Id: cgi.t,v 1.53 2007/12/31 00:37:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -29,7 +29,7 @@ use lib ($FindBin::RealBin,
 	 "$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
-use BBBikeTest qw(xmllint_string);
+use BBBikeTest qw(xmllint_string gpxlint_string);
 
 eval { require Compress::Zlib };
 
@@ -193,19 +193,12 @@ for my $cgiurl (@urls) {
 		is($res->content_type, "text/html",
 		   "Expected content-type for $output_as");
 	    }
-	} elsif ($output_as =~ m{^( xml
-				 |  gpx-track
+	} elsif ($output_as eq 'xml') {
+	    xmllint_string($content, "xmllint check for $output_as");
+	} elsif ($output_as =~ m{^( gpx-track
 				 |  gpx-route
 				    )$}x) {
-	    xmllint_string($content, "xmllint check for $output_as");
-# 	SKIP: {
-# 		skip("No xmllint in PATH", 1) if !is_in_path('xmllint');
-
-# 		open(XMLLINT, "| xmllint - 2>&1 >/dev/null");
-# 		print XMLLINT $content;
-# 		close XMLLINT;
-# 		is($?, 0, "xmllint check for $output_as") or diag $content;
-# 	    }
+	    gpxlint_string($content, "xmllint check with gpx schema for $output_as");
 	}
     }
 

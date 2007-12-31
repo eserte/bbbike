@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.49 2007/12/22 21:27:31 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.50 2007/12/30 15:08:15 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -50,7 +50,7 @@ if (!@browsers) {
 }
 @browsers = map { "$_ BBBikeTest/1.0" } @browsers;
 
-my $tests = 103;
+my $tests = 110;
 plan tests => $tests * @browsers;
 
 ######################################################################
@@ -397,6 +397,7 @@ for my $browser (@browsers) {
 	$like_long_data->(qr{Ereignisse, die die Route betreffen}, "Found temp blocking hit");
 	$like_long_data->(qr{\(Zeitverlust ca\. \d+ Minuten\)}, "Found Zeitverlust for handicap-typed blocking");
 	$like_long_data->(qr{Ausweichroute suchen}, "Found Ausweichroute button");
+	my $ausweichroute_choose_url = $agent->uri;
 	my $form = $agent->form_name("Ausweichroute");
 	isa_ok($form, "HTML::Form");
 	for my $input ($form->inputs) {
@@ -421,6 +422,29 @@ for my $browser (@browsers) {
 	$agent->click_button(value => "Rückweg");
 
 	$unlike_long_data->(qr{Ausweichroute}, "Keine Ausweichroute mehr");
+
+	{
+	    my $url = $ausweichroute_choose_url . ";output_as=xml";
+	    my $resp = $agent->get($url);
+	    ok($resp->is_success, "Success for $url")
+		or diag $resp->status_line;
+	    my $xml = $resp->content; # using decoded_content seems to be problematic
+	    xmllint_string($xml, "XML output OK");
+	SKIP: {
+		skip("Needs XML::LibXML for further XML tests", 5)
+		    if !eval { require XML::LibXML; 1 };
+		my $p = XML::LibXML->new;
+		my $doc = $p->parse_string($xml);
+		my $root = $doc->documentElement;
+		my($affBlockNode) = $root->findnodes("/BBBikeRoute/AffectingBlocking");
+		ok($affBlockNode, "Found AffectingBlocking node");
+		my($xy) = $affBlockNode->findvalue("./LongLatHop/XY[position()=1]");
+		like($xy, qr{^13\.\d+,52\.\d+$}, "XY looks like long/lat in Berlin");
+		is($affBlockNode->findvalue("./Text"), 'Rixdorfer Str. (Treptow) in beiden Richtungen zwischen Südostallee und Schnellerstr. Baustelle, Straße vollständig gesperrt (bis 07.08.2006 5 Uhr)', "temp blockings text");
+		is($affBlockNode->findvalue("./Index"), 631, "temp blockings id");
+		is($affBlockNode->findvalue("./Type"), "handicap", "temp blockings type");
+	    }
+	}
     }
 
     ######################################################################
