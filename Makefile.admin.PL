@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.67 2007/12/23 15:22:45 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.68 2007/12/31 13:55:07 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003,2004,2005,2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2004,2005,2006,2007 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -23,6 +23,9 @@ $bbbike_makefile_admin = "";
 # the 0.31 version has some bugs (it cannot handle umlauts and
 # entities correctly, see
 # http://rt.cpan.org/Ticket/Display.html?id=25123)
+# 0.34 has additional problems: it depends on Syntax::Highlight::Universal,
+# which fails nearly everywhere, and the Pod-ProjectsDocs tarball is
+# broken because of some additional dot files from MacOSX
 
 my $bbbike_html_rule;
 my $pod2html = is_in_path("mpod2html");

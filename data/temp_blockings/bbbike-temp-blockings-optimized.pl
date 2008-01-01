@@ -112,15 +112,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1199142000,
-         'text' => 'L 060 Schipkau-Lichterfeld zw. Lichterfeld und Lauchhammer-Nord grundhafter Straßenbau Vollsperrung 03.01.2007-31.12.2007 ',
-         'from' => 1167692400,
-         'id' => 814,
-         'data' => 'userdel	2::inwork 37419,-91709 37675,-92038 37809,-92300 37918,-93202
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -419,16 +411,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20070703.1505.81257.html',
-         'until' => 1199142000,
-         'text' => 'Straßen- und Leitungsbauarbeiten in der Pistoriusstraße zwischen Hamburger Platz (Gustav-Adolf-Straße) und Am Steinberg, Einbahnstraße Richtung Hamburger Platz (09.07.2007 bis Anfang 2008) ',
-         'from' => 1183495734,
-         'id' => 1062,
-         'data' => 'userdel	1::inwork 12693,16700 12486,16791 12257,16876 12241,16900
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -591,15 +574,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1199142000,
-         'text' => 'K 6947 Wenzlow-Mahlenzien OD Wenzlow Straßenbauarbeiten Vollsperrung 08.10.2007-31.12.2007 ',
-         'from' => 1191708000,
-         'id' => 1176,
-         'data' => 'userdel	q4::inwork -53700,-13146 -53945,-12911 -54243,-12956
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -638,16 +613,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_006754',
-         'until' => 1199142000,
-         'text' => 'Drakestr. (Lichterfelde) in beiden Richtungen bei der Bahnunterführung geplatzte Wasserleitung, Straße vollständig gesperrt (bis Anfang 2008)',
-         'from' => 1195307982,
-         'id' => 1198,
-         'data' => 'userdel	2::inwork 3259,4002 3128,4190
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -753,24 +719,8 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1199141999,
-         'text' => 'Weihnachtsmarkt ',
-         'from' => undef,
-         'id' => 1246,
-         'data' => 'userdel	2::inwork 9700,12234 9681,12382
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1199141999,
-         'text' => 'Weihnachtsmarkt',
-         'from' => undef,
-         'id' => 1247,
-         'data' => 'userdel	2::inwork 10170,12261 10083,12442
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,

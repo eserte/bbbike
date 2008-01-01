@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 2.16 2007/12/31 00:35:31 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 2.16 2007/12/31 00:35:31 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006,2007 Slaven Rezic. All rights reserved.
@@ -670,6 +670,7 @@ sub get_html {
         map.addControl(new GOverviewMapControl ());
  	map.setMapType($self->{maptype});
         map.centerAndZoom(new GPoint($centerx, $centery), $zoom);
+	new GKeyboardHandler(map);
     } else {
         document.getElementById("map").innerHTML = '<p class="large-error">Sorry, your browser is not supported by <a href="http://maps.google.com/support">Google Maps</a></p>';
     }

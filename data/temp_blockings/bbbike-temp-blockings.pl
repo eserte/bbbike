@@ -2950,7 +2950,7 @@ EOF
        text  => 'Drakestraße zwischen Hans-Sachs-Straße und Knesebeckstraße in beiden Richtungen Brückenabriss, Straße gesperrt, Dauer: 12.10.2005 02:00 Uhr bis 14.10.2005 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 3259,4002 3128,4190
+userdel	2 3259,4002 3228,4046 3128,4190
 EOF
      },
      { from  => 1128808800, # 2005-10-09 00:00
@@ -8441,7 +8441,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_86792',
        data  => <<EOF,
-userdel	2::inwork 3048,4305 3128,4190 3259,4002
+userdel	2::inwork 3048,4305 3128,4190 3228,4046 3259,4002
 EOF
      },
      { from  => 1181253600, # 2007-06-08 00:00
@@ -8711,7 +8711,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005823',
        data  => <<EOF,
-userdel	2::inwork 3048,4305 3128,4190 3259,4002
+userdel	2::inwork 3048,4305 3128,4190 3228,4046 3259,4002
 EOF
      },
      { from  => undef, # 
@@ -9210,7 +9210,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005823',
        data  => <<EOF,
-userdel	2::inwork 3048,4305 3128,4190 3259,4002
+userdel	2::inwork 3048,4305 3128,4190 3228,4046 3259,4002
 EOF
      },
      { from  => 1185833871, # 2007-07-31 00:17
@@ -9490,7 +9490,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_006754', # IM_005516
        data  => <<EOF,
-userdel	q4::inwork 3048,4305 3128,4190 3259,4002
+userdel	q4::inwork 3048,4305 3128,4190 3228,4046 3259,4002
 EOF
      },
      { from  => 1187989232, # 2007-08-24 23:00
@@ -10108,7 +10108,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006754',
        data  => <<EOF,
-userdel	2::inwork 3259,4002 3128,4190
+userdel	2::inwork 3259,4002 3228,4046 3128,4190
 EOF
      },
      { from  => 1192140000, # 2007-10-12 00:00
