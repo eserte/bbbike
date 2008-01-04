@@ -2,16 +2,19 @@
 # -*- tcl -*-
 
 #
-# $Id: bbbike.tcl,v 1.3 2007/03/31 20:04:27 eserte Exp $
+# $Id: bbbike.tcl,v 1.5 2008/01/04 23:49:30 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2007 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Tcl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
+
+# Note that this script is *much* faster with 8.5 than with 8.4, it
+# seems.
 
 source strassen.tcl
 
@@ -165,10 +168,14 @@ for {set i 0} {$i < $argc} {incr i 2} {
     }
 }
 
+puts "Load strassen..."
 strassenNew strassen
+puts "Generate crossings..."
 set all_crossings_l [strassenAllCrossings]
+puts "Create net..."
 strassenNetzNew
 strassenNetzMakeNet
+puts "... done"
 
 set all_crossings_l [lsort -command _cmp2str $all_crossings_l]
 set all_crossings {}
@@ -275,4 +282,6 @@ grid .t.hscroll -in .t -padx 1 -pady 1 \
 grid .t.l -in .t -padx 1 -pady 1 \
     -row 2 -column 0 -rowspan 1 -columnspan 2 -sticky news
 
+puts "Draw net..."
 draw_net
+puts "... done"
