@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePluginLister.pm,v 1.6 2007/03/04 10:17:29 eserte Exp $
+# $Id: BBBikePluginLister.pm,v 1.9 2008/01/04 23:01:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikePluginLister;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 require Tk::ItemStyle;
 
@@ -64,9 +64,31 @@ sub plugin_lister {
     $header->Label(-font => defined $main::font{large} ? $main::font{large} : "Helvetica 12 bold",
 		   -text => "BBBike-Plugins")->pack(-anchor => "e");
     
-    my $hl = $outer->Scrolled("HList",
-			      -scrollbars => 'se',
-			      -header => 1,-columns => 4)->pack(-fill => "both", -expand => 1);
+    my $sel_bg = '#4a6984';
+    my $cur_sel_widget;
+    my $hl;
+    $hl = $outer->Scrolled("HList",
+			   -scrollbars => 'se',
+			   -selectbackground => $sel_bg,
+			   -selectmode => 'browse',
+			   -browsecmd => sub {
+			       # This is wrong if the user really
+			       # browses over items: the checkbutton
+			       # bg changes while the other bg stay
+			       # the same.
+			       my($path_i) = @_;
+			       my $new_cur_sel_widget = $hl->itemCget($path_i, 0, '-widget');
+			       if (Tk::Exists($cur_sel_widget) && $cur_sel_widget != $new_cur_sel_widget) {
+				   $cur_sel_widget->configure(-bg => $hl->cget('-background'));
+			       }
+			       if (Tk::Exists($new_cur_sel_widget)) {
+				   $new_cur_sel_widget->configure(-bg => $sel_bg);
+			       }
+			       $cur_sel_widget = $new_cur_sel_widget;
+			   },
+			   -header => 1,-columns => 4,
+			  )->pack(-fill => "both", -expand => 1);
+    $hl->anchorClear;
 
     if (eval {
 	local $SIG{__DIE__};
@@ -79,6 +101,8 @@ sub plugin_lister {
 	my $i = 0;
 	for my $title (qw(Laden Name Zusammenfassung Dateipfad)) {
 	    my $ii = $i;
+	    # XXX Buttons should not react on click and motion, because
+	    # no sorting is implemented yet. Or fix the sorting.
 	    my $header = $hl->ResizeButton(-text => $title,
 					   -relief => "flat",
 					   -padx => 0, -pady => 0,
@@ -110,7 +134,9 @@ sub plugin_lister {
     @p = sort { $a->Name cmp $b->Name } @p;
 
     require Tk::ItemStyle;
-
+    my $sel_is = $hl->ItemStyle("text",
+				-selectforeground => 'white',
+			      );
     my $path_i = 0;
     for my $plugin_def (@p) {
 	my $is = $hl->ItemStyle("window", -pady => 0, -padx => 0);
@@ -123,9 +149,9 @@ sub plugin_lister {
 					     -highlightthickness => 0,
 					    ),
 		);
-	$hl->itemCreate($path_i, 1, -text => $plugin_def->Name);
-	$hl->itemCreate($path_i, 2, -text => $plugin_def->Description);
-	$hl->itemCreate($path_i, 3, -text => $plugin_def->File);
+	$hl->itemCreate($path_i, 1, -text => $plugin_def->Name, -style => $sel_is);
+	$hl->itemCreate($path_i, 2, -text => $plugin_def->Description, -style => $sel_is);
+	$hl->itemCreate($path_i, 3, -text => $plugin_def->File, -style => $sel_is);
 	$path_i++;
     }
 
@@ -190,10 +216,11 @@ sub toggle_plugin {
     } else {
 	require File::Basename;
 	my($mod) = File::Basename::fileparse($plugin_def->File, '\..*');
-	if ($mod->can("deregister")) {
-	    $mod->deregister;
+	if ($mod->can("unregister")) {
+	    $mod->unregister;
 	} else {
-	    main::status_message("Das Plugin kann nicht deregistriert werden. Beim nächsten Starten von BBBike wird es nicht mehr verfügbar sein.", "warn");
+	    # XXX M(...)!
+	    main::status_message("Das Plugin kann nicht deregistriert werden. Falls die Pluginliste permanent gemacht wird, wird das Plugin beim nächsten Starten von BBBike nicht mehr verfügbar sein.", "warn");
 	}
     }
 }

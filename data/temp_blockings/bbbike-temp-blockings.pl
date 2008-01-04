@@ -9490,7 +9490,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_006754', # IM_005516
        data  => <<EOF,
-userdel	q4::inwork 3048,4305 3128,4190 3228,4046 3259,4002
+userdel	q4::inwork 3048,4305 3128,4190 3228,4046
 EOF
      },
      { from  => 1187989232, # 2007-08-24 23:00
@@ -10102,13 +10102,13 @@ EOF
 userdel	2::inwork 17910,-6981 17480,-7498 17278,-7925 16437,-8257
 EOF
      },
-     { from  => 1195307982, # 2007-11-17 14:59
-       until => 1199142000, # 2008-01-01 00:00
-       text  => 'Drakestr. (Lichterfelde) in beiden Richtungen bei der Bahnunterführung geplatzte Wasserleitung, Straße vollständig gesperrt (bis Anfang 2008)',
+     { from  => 1199434005, # 2008-01-04 09:06
+       until => 1201820399, # 2008-01-31 23:59
+       text  => 'Drakestr. (Lichterfelde) in beiden Richtungen bei der Bahnunterführung geplatzte Wasserleitung, Straße vollständig gesperrt (bis 01/2008)',
        type  => 'gesperrt',
        source_id => 'IM_006754',
        data  => <<EOF,
-userdel	2::inwork 3259,4002 3228,4046 3128,4190
+userdel	2::inwork 3228,4046 3128,4190
 EOF
      },
      { from  => 1192140000, # 2007-10-12 00:00
