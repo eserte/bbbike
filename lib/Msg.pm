@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Msg.pm,v 1.7 2003/11/11 23:09:10 eserte Exp $
+# $Id: Msg.pm,v 1.8 2008/01/05 20:44:13 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,12 +18,12 @@ use FindBin;
 use File::Basename;
 
 use vars qw($messages $lang $lang_messages $VERSION @EXPORT @EXPORT_OK
-	    $caller_file $frommain $DEBUG);
+	    $caller_file $frommain $noautosetup $DEBUG);
 use base qw(Exporter);
 @EXPORT = qw(M Mfmt);
-@EXPORT_OK = qw(frommain);
+@EXPORT_OK = qw(frommain noautosetup);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if ($ENV{PERL_MSG_DEBUG}) {
@@ -61,6 +61,7 @@ sub import {
     my(%routines);
     grep($routines{$_}++,@_,@EXPORT);
     $frommain++ if $routines{'frommain'};
+    $noautosetup++ if $routines{'noautosetup'};
     my($oldlevel) = $Exporter::ExportLevel;
     $Exporter::ExportLevel = 1;
     Exporter::import($pkg,keys %routines);
@@ -78,7 +79,7 @@ value of "C" or "POSIX" is ignored. [XXX yet unspecified for Win32?].
 =cut
 
 sub setup_file (;$$) {
-    my $default_dir = dirname($caller_file) . "/msg/" . basename($caller_file) . "/";
+    my $default_dir = dirname($caller_file) . "/msg/" . basename($caller_file);
     my %ignore = (C => 1, POSIX => 1);
     # Argument handling
     my $base = shift || $default_dir; #$FindBin::RealBin . "/msg/";
@@ -105,7 +106,7 @@ sub setup_file (;$$) {
     %$messages = ();
 
  TRY: {
-	my @candidates = ("$base$lang");
+	my @candidates = ("$base/$lang");
 	foreach my $f (@candidates) {
 	    if ($DEBUG) {
 		warn "Try candidate message file $f...\n";
@@ -145,7 +146,7 @@ sub Mfmt {
     sprintf M(shift), @_;
 }
 
-setup_file();
+setup_file() unless $noautosetup;
 
 1;
 

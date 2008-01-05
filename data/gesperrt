@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.176 2007/10/01 18:57:37 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.177 2008/01/05 14:22:02 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -1022,6 +1022,8 @@ tragen (Treppe)	0:30:-118 -7418,181
 tragen (Treppe)	0:30:-64 -6933,14317
 tragen (Treppe)	0:30:2 -6934,14291
 tragen (Treppe)	0:30:-237 20673,7260
+Drängelgitter	BNP:3:44 7245,8583
+Drängelgitter	BNP:3:48 7292,8631
 Schranke	BNP:3:61 8251,20927
 Schranke	BNP:5:-174 21297,12748
 Drängelgitter	BNP:5:7 22061,15168

@@ -1,4 +1,3 @@
-@temp_blocking = ();
 $#temp_blocking = 872;
 push @temp_blocking,
 (

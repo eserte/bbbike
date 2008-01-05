@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: wettermeldung2,v 1.66 2006/02/16 00:05:21 eserte Exp $
+# $Id: wettermeldung2,v 1.67 2008/01/05 12:50:22 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1997, 1998, 1999, 2000, 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 1997, 1998, 1999, 2000, 2002, 2007 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,6 +17,9 @@ package wettermeldung2;
 {
 local(%ENV) = %ENV;
 
+@lt = localtime;
+$year = $lt[5]+1900;
+
 ### CONFIG VARS #########################################################
 # PATH for executables and the "socket" program				#
 $ENV{PATH} = "/usr/bin:/bin:/usr/ucb:/usr/local/bin:/sbin:/usr/sbin:/usr/etc:/usr/local/etc:/usr/gnu/bin:/home/e/eserte/bin/sh:$ENV{HOME}/bin:$ENV{HOME}/bin/sh:$ENV{PATH}:/home/pub/bin";					      #
@@ -26,9 +29,9 @@ $logfile               = "$ENV{HOME}/Mail/wetter-errorlog";		#
 									#
 # destination directory for weather data				#
 $destdir_met            = "$ENV{HOME}/doc/met";				#
-$destfile{'dahlem1'}    = "$destdir_met/wetter-full";			#
-$destfile{'dahlem2'}    = "$destdir_met/wetter";			#
-$destfile{'tempelhof'}  = "$destdir_met/wetter-tempelhof";		#
+$destfile{'dahlem1'}    = "$destdir_met/wetter-full-$year";		#
+$destfile{'dahlem2'}    = "$destdir_met/wetter-$year";			#
+$destfile{'tempelhof'}  = "$destdir_met/wetter-tempelhof-$year";	#
 $cksumdir               = "$ENV{HOME}/Mail";                            #
 $cksumfile{'dahlem1'}   = "$cksumdir/wetter-cksum-dahlem1"; 		#
 $cksumfile{'dahlem2'}   = "$cksumdir/wetter-cksum-dahlem2"; 		#
@@ -80,7 +83,7 @@ $FIELD_WIND_AVG      = 7;
 $FIELD_PRECIPITATION = 8;
 $FIELD_WEATHER       = 9;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.66 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.67 $ =~ /(\d+)\.(\d+)/);
 
 $mailto = 'eserte@cs.tu-berlin.de';
 $user_agent = "wettermeldung2/$VERSION";

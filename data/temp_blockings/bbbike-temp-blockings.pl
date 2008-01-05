@@ -9638,7 +9638,7 @@ EOF
        text  => 'L 213 B167 Liebenwalde-Nassenheide zw. B167 über Neuholland nach Freienhagen Deckenerneuerung Vollsperrung 15.08.2007-30.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 4693,50925 4689,50170 4709,49765 4412,49281
+userdel	2::inwork 4412,49281 4701,49782 4701,49975 4646,50318 4690,50532 4693,50925
 EOF
      },
      { from  => 1187906400, # 2007-08-24 00:00

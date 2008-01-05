@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.176 2007/10/01 18:57:37 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.177 2008/01/05 14:22:02 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -879,6 +879,10 @@ tragen (Treppe)	0:30 20673,7260
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+#: by: Steini: vvv
+Drängelgitter	BNP:3 7245,8583
+Drängelgitter	BNP:3 7292,8631
+#: by: ^^^
 Schranke	BNP:3 8251,20927
 #: by: Sorven (xbs9):
 Schranke	BNP:5 21297,12748
