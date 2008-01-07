@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.334 2007/12/31 00:36:18 eserte Exp $
+# $Id: bbbike,v 3.335 2008/01/06 19:40:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -217,7 +217,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.334 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.335 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4920,7 +4920,23 @@ speicherplatzsparender.",
 	  }],
 	 ['plugins','=s',undef,
 	  label => M"Plugins beim Starten laden", var => \$initial_plugins,
-	  longhelp => M"Kommaseparierte Liste von Plugins, z.B. BBBikeThunder,BBBikeSalesman,BBBikeRuler"], # XXX Auf den PluginLister verweisen, wenn er fertig ist.
+	  longhelp => M"Kommaseparierte Liste von Plugins, z.B. BBBikeThunder,BBBikeSalesman,BBBikeRuler", # XXX Auf den PluginLister verweisen, wenn er fertig ist.
+	  widget => sub {
+	      my $self = shift;
+	      my $frame = shift;
+	      my(@args) = @_;
+	      my $f = $frame->Frame;
+	      $self->_string_widget($f, @args)->pack(-side => "left");
+	      $f->Button(-text => M"Plugin-Lister",
+			 -padx => 1,
+			 -pady => 1,
+			 -command => sub {
+			     require BBBikePluginLister;
+			     BBBikePluginLister::plugin_lister($top, $FindBin::RealBin);
+			 })->pack(-side => "left");
+	      $f;
+	  },
+	 ],
 	 ['layers','=s',undef,
 	  label => M"Zusätzliche Layer zeichnen", var => \$initial_layers],
 	 ['algorithm','=s','A*', var => \$global_search_args{Algorithm},

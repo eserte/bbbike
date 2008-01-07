@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.68 2007/12/31 13:55:07 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.68 2007/12/31 13:55:07 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006,2007 Slaven Rezic. All rights reserved.
@@ -752,6 +752,9 @@ permission:
 # stick. The USB stick will be automatically mounted on FreeBSD, if
 # necessary, and optionally unmounted after copying.
 # The camcontrol commands were not necessary for 4.9, but are for 4.11
+# Removed for 6.x, here for documentation:
+#	    sudo camcontrol reset all;
+#	    sudo camcontrol rescan all;
 # FreeBSD 6.x names the old mount_msdos now mount_msdosfs
 #
 # The correct rsync seems to be tricky. -a does not seem to work well,
@@ -766,8 +769,6 @@ copy-cvs-to-stick:	copy-to-cvs
 	    sudo mkdir /mnt/stick; \
 	) || true
 	-(mount | grep -q /mnt/stick) || ( \
-	    sudo camcontrol reset all; \
-	    sudo camcontrol rescan all; \
 	    sudo mount_msdosfs -u eserte /dev/da$(USB_STICK_NUMBER)s1 /mnt/stick \
 	)
 	mount | grep -q /mnt/stick

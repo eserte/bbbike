@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePlugin.pm,v 1.16 2007/12/18 07:47:39 eserte Exp $
+# $Id: BBBikePlugin.pm,v 1.17 2008/01/06 19:39:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2006 Slaven Rezic. All rights reserved.
@@ -36,9 +36,10 @@ sub find_all_plugins {
 
     my @p;
     eval {
-	if (1||$^O eq 'MSWin32') {
+	if (1) {
 	    @p = _find_all_plugins_perl($topdir);
 	} else {
+	    # XXX may be removed some day
 	    @p = _find_all_plugins_unix($topdir);
 	}
     };
@@ -92,21 +93,26 @@ sub _find_all_plugins_perl {
 	    && $File::Find::name !~ m{/(CVS|RCS|\.svn)/}
 	    && open(PM, $_)) {
 	    my $curr_file = $_;
-	    my $descr;
+	    my $descr_lang;
+	    my $descr_fallback;
 	    my $is_plugin;
 	    local $_;
 	    while(<PM>) {
 		chomp;
 		if (/BBBikePlugin/) {
 		    $is_plugin++;
-		    last if $descr;
+		    last if $descr_lang;
 		}
-		if (/Description\s+\(de\)\s*[:=]\s*\"?([^\"]+)/) {#XXX english?
-		    $descr = $1;
+		if ($Msg::lang && /Description\s+\($Msg::lang\)\s*[:=]\s*\"?([^\"]+)/) {
+		    $descr_lang = $1;
+		    last if $is_plugin;
+		} elsif (/Description\s+\(de\)\s*[:=]\s*\"?([^\"]+)/) { # fallback to german
+		    $descr_fallback = $1;
 		    last if $is_plugin;
 		}
 	    }
 	    close PM;
+	    my $descr = $descr_lang || $descr_fallback;
 
 	    if ($is_plugin) {
 		my $p = BBBikePlugin::Plugin->new;
@@ -127,6 +133,7 @@ sub _find_all_plugins_perl {
 }
 
 # only for Unix with modern grep
+# XXX This may be removed, as it lacks some feature like description parsing
 sub _find_all_plugins_unix {
     my $topdir = shift;
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePluginLister.pm,v 1.9 2008/01/04 23:01:38 eserte Exp $
+# $Id: BBBikePluginLister.pm,v 1.10 2008/01/06 19:39:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -16,7 +16,18 @@ package BBBikePluginLister;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+
+BEGIN {
+    if (!eval '
+use Msg qw(frommain);
+1;
+') {
+	warn $@ if $@;
+	eval 'sub M ($) { $_[0] }';
+	eval 'sub Mfmt { sprintf(shift, @_) }';
+    }
+}
 
 require Tk::ItemStyle;
 
@@ -52,7 +63,7 @@ sub plugin_lister {
 	main::status_message($err, "die");
     }
 
-    my $tl = $w->Toplevel(-title => "Plugins");
+    my $tl = $w->Toplevel(-title => M"Plugins");
     main::set_as_toolwindow($tl);
     %main::toplevel = %main::toplevel if 0; # cease -w
     $main::toplevel{BBBikePluginLister} = $tl;
@@ -99,16 +110,17 @@ sub plugin_lister {
 	my $headerstyle = $hl->ItemStyle('window', -padx => 0, -pady => 0);
 	my $real_hl  = $hl->Subwidget('scrolled');
 	my $i = 0;
-	for my $title (qw(Laden Name Zusammenfassung Dateipfad)) {
+	for my $column (qw(Laden Name Zusammenfassung Dateipfad)) {
+	    my $label = M($column);
 	    my $ii = $i;
 	    # XXX Buttons should not react on click and motion, because
 	    # no sorting is implemented yet. Or fix the sorting.
-	    my $header = $hl->ResizeButton(-text => $title,
+	    my $header = $hl->ResizeButton(-text => $label,
 					   -relief => "flat",
 					   -padx => 0, -pady => 0,
 					   -widget => \$real_hl,
 					   ## XXX Sorting does not work reliable, checkbuttons vanish
-					   #($title ne "Laden" ? (-command => sub { BBBikeTkUtil::sort_hlist($real_hl, $ii) }) : ()),
+					   #($column ne "Laden" ? (-command => sub { BBBikeTkUtil::sort_hlist($real_hl, $ii) }) : ()),
 					   -column => $i,
 					   -anchor => 'w',
 					  );
@@ -121,10 +133,10 @@ sub plugin_lister {
 	}
     } else {
 	warn $@;
-	$hl->headerCreate(0, -text => "Laden");
-	$hl->headerCreate(1, -text => "Name");
-	$hl->headerCreate(2, -text => "Zusammenfassung");
-	$hl->headerCreate(3, -text => "Dateipfad");
+	$hl->headerCreate(0, -text => M"Laden");
+	$hl->headerCreate(1, -text => M"Name");
+	$hl->headerCreate(2, -text => M"Zusammenfassung");
+	$hl->headerCreate(3, -text => M"Dateipfad");
     }
 
     $hl->columnWidth(0, 50);
@@ -158,7 +170,7 @@ sub plugin_lister {
     my $footer = $outer->Frame->pack(-fill => "x");
     $footer->Button(Name => "close",
 		    -command => sub { $tl->destroy })->pack(-anchor => 'e', -side => "right");
-    $footer->Button(-text => "Plugins permanent machen",
+    $footer->Button(-text => M"Plugins permanent machen",
 		    -command => sub {
 			eval {
 			    local $SIG{__DIE__};
@@ -204,7 +216,7 @@ sub plugin_lister {
 			if ($@) {
 			    main::status_message($@, "die");
 			} else {
-			    main::status_message("Ausgewählte Plugins sind jetzt permanent", "infodlg");
+			    main::status_message(M"Ausgewählte Plugins sind jetzt permanent", "infodlg");
 			}
 		    })->pack(-anchor => 'e', -side => "right");
 }
@@ -220,7 +232,7 @@ sub toggle_plugin {
 	    $mod->unregister;
 	} else {
 	    # XXX M(...)!
-	    main::status_message("Das Plugin kann nicht deregistriert werden. Falls die Pluginliste permanent gemacht wird, wird das Plugin beim nächsten Starten von BBBike nicht mehr verfügbar sein.", "warn");
+	    main::status_message(M"Das Plugin kann nicht deregistriert werden. Falls die Pluginliste permanent gemacht wird, wird das Plugin beim nächsten Starten von BBBike nicht mehr verfügbar sein.", "warn");
 	}
     }
 }

@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Getopt.pm,v 1.57 2007/12/17 20:42:57 eserte Exp eserte $
+# $Id: Getopt.pm,v 1.61 2008/01/06 18:35:49 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1997,1998,1999,2000,2003,2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 1997,1998,1999,2000,2003,2007,2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -24,7 +24,7 @@ use constant OPTTYPE  => 1;
 use constant DEFVAL   => 2;
 use constant OPTEXTRA => 3;
 
-$VERSION = '0.49_51';
+$VERSION = '0.49_53';
 $VERSION = eval $VERSION;
 
 $DEBUG = 0;
@@ -154,7 +154,7 @@ sub _opt_array {
 }
 
 # Return a reference to the option variable given by $opt
-sub _varref {
+sub varref {
     my($self, $opt) = @_;
     if($opt->[OPTEXTRA]{'var'}) {
 	$opt->[OPTEXTRA]{'var'};
@@ -168,6 +168,13 @@ sub _varref {
 	eval q{\$} . $self->{'caller'} . q{::opt_} . $v; # XXX @, %
     }
 }
+# Formerly the varref method was private:
+sub _varref { shift->varref(@_) }
+
+sub optextra {
+    my($self, $opt, $arg) = @_;
+    $opt->[OPTEXTRA]{$arg};
+}
 
 sub _is_separator {
     my $opt = shift;
@@ -180,13 +187,13 @@ sub set_defaults {
     my $opt;
     foreach $opt ($self->_opt_array) {
 	if (defined $opt->[DEFVAL]) {
-	    my $ref = ref $self->_varref($opt);
+	    my $ref = ref $self->varref($opt);
 	    if      ($ref eq 'ARRAY') {
-		@ {$self->_varref($opt)} = @{ $opt->[DEFVAL] };
+		@ {$self->varref($opt)} = @{ $opt->[DEFVAL] };
 	    } elsif ($ref eq 'HASH') {
-		% {$self->_varref($opt)} = %{ $opt->[DEFVAL] };
+		% {$self->varref($opt)} = %{ $opt->[DEFVAL] };
 	    } elsif ($ref eq 'SCALAR') {
-		$ {$self->_varref($opt)} = $opt->[DEFVAL];
+		$ {$self->varref($opt)} = $opt->[DEFVAL];
 	    } else {
 		die "Invalid reference type for option $opt->[OPTNAME] while setting the default value (maybe you should specify <undef> as the default value)";
 	    }
@@ -217,16 +224,16 @@ sub load_options {
     my $opt;
     foreach $opt ($self->_opt_array) {
 	if (exists $loadoptions->{$opt->[OPTNAME]}) {
-	    if (ref $self->_varref($opt) eq 'CODE') {
-		$self->_varref($opt)->($opt, $loadoptions->{$opt->[OPTNAME]}) if $loadoptions->{$opt->[OPTNAME]};
-	    } elsif (ref $self->_varref($opt) eq 'ARRAY' &&
+	    if (ref $self->varref($opt) eq 'CODE') {
+		$self->varref($opt)->($opt, $loadoptions->{$opt->[OPTNAME]}) if $loadoptions->{$opt->[OPTNAME]};
+	    } elsif (ref $self->varref($opt) eq 'ARRAY' &&
 		     ref $loadoptions->{$opt->[OPTNAME]} eq 'ARRAY') {
-		@{ $self->_varref($opt) } = @{ $loadoptions->{$opt->[OPTNAME]} };
-	    } elsif (ref $self->_varref($opt) eq 'HASH' &&
+		@{ $self->varref($opt) } = @{ $loadoptions->{$opt->[OPTNAME]} };
+	    } elsif (ref $self->varref($opt) eq 'HASH' &&
 		     ref $loadoptions->{$opt->[OPTNAME]} eq 'HASH') {
-		%{ $self->_varref($opt) } = %{ $loadoptions->{$opt->[OPTNAME]} };
+		%{ $self->varref($opt) } = %{ $loadoptions->{$opt->[OPTNAME]} };
 	    } else {
-		$ {$self->_varref($opt)} = $loadoptions->{$opt->[OPTNAME]};
+		$ {$self->varref($opt)} = $loadoptions->{$opt->[OPTNAME]};
 	    }
 	}
     }
@@ -251,7 +258,7 @@ sub save_options {
 		    if ($opt->[OPTEXTRA]{'savevar'}) {
 			$ref = $opt->[OPTEXTRA]{'savevar'};
 		    } else {
-			$ref = $self->_varref($opt);
+			$ref = $self->varref($opt);
 		    }
 		    if (ref($ref) eq 'SCALAR') {
 			$saveoptions{$opt->[OPTNAME]} = $$ref;
@@ -287,11 +294,11 @@ sub get_options {
     my $opt;
     foreach $opt ($self->_opt_array) {
 	$getopt{_getopt_long_string($opt->[OPTNAME], $opt->[OPTTYPE])} =
-	  $self->_varref($opt);
+	  $self->varref($opt);
 	# process aliases
 	foreach (@{$opt->[OPTEXTRA]{'alias'}}) {
 	    $getopt{_getopt_long_string($_, $opt->[OPTTYPE])} =
-	      $self->_varref($opt);
+	      $self->varref($opt);
 	}
     }
     require Getopt::Long;
@@ -392,7 +399,7 @@ sub process_options {
 	    # execute callback if value has changed
 	    if (!(defined $former
 		  && (!exists $former->{$opt}
-		      || $ {$self->_varref($optdef)} eq $former->{$opt}))) {
+		      || $ {$self->varref($optdef)} eq $former->{$opt}))) {
 		local($^W) = $old_w; # fall back to original value
 		&$callback(optdef => $optdef, bag => $bag);
 	    }
@@ -400,7 +407,7 @@ sub process_options {
 	if ($optdef->[OPTEXTRA]{'strict'} &&
 	    UNIVERSAL::isa($optdef->[OPTEXTRA]{'choices'},'ARRAY')) {
 	    # check for valid values (valid are: choices and default value)
-	    my $v = $ {$self->_varref($optdef)};
+	    my $v = $ {$self->varref($optdef)};
 	    my @choices = @{$optdef->[OPTEXTRA]{'choices'}};
 	    push(@choices, $optdef->[DEFVAL]) if defined $optdef->[DEFVAL];
 	    my $seen;
@@ -413,12 +420,12 @@ sub process_options {
 	    }
 	    if (!$seen) {
 		if (defined $former) {
-		    warn "Not allowed: " . $ {$self->_varref($optdef)}
+		    warn "Not allowed: " . $ {$self->varref($optdef)}
 		       . " for -$opt. Using old value $former->{$opt}";
-		    $ {$self->_varref($optdef)} = $former->{$opt};
+		    $ {$self->varref($optdef)} = $former->{$opt};
 		} else {
 		    die "Not allowed: "
-		      . $ {$self->_varref($optdef)} . " for -$opt\n"
+		      . $ {$self->varref($optdef)} . " for -$opt\n"
 		      . "Allowed is only: " . join(", ", @choices);
 		}
 	    }
@@ -444,7 +451,7 @@ sub _fix_layout {
 sub _boolean_widget {
     my($self, $frame, $opt) = @_;
     ($self->_fix_layout($frame, "Checkbutton",
-			-variable => $self->_varref($opt)))[0];
+			-variable => $self->varref($opt)))[0];
 }
 
 sub _boolean_checkmark_widget {
@@ -452,7 +459,7 @@ sub _boolean_checkmark_widget {
     my($self, $frame, $opt) = @_;
     _create_checkmarks($frame);
     ($self->_fix_layout($frame, "Checkbutton",
-			-variable => $self->_varref($opt),
+			-variable => $self->varref($opt),
 			-image => $CHECKMARK_OFF,
 			-selectimage => $CHECKMARK_ON,
 			-indicatoron => 0,
@@ -467,7 +474,7 @@ sub _number_widget {
 			-to => $opt->[OPTEXTRA]{'range'}[1],
 			-showvalue => 1,
 			-resolution => ($opt->[OPTTYPE] =~ /f/ ? 0 : 1),
-			-variable => $self->_varref($opt)
+			-variable => $self->varref($opt)
 		       ))[0];
 }
 
@@ -501,7 +508,7 @@ sub _list_widget {
 sub _browseentry_widget {
     my($self, $frame, $opt) = @_;
     require Tk::BrowseEntry;
-    my %args = (-variable => $self->_varref($opt));
+    my %args = (-variable => $self->varref($opt));
     if ($opt->[OPTEXTRA]{'strict'}) {
 	$args{-state} = "readonly";
     }
@@ -523,7 +530,7 @@ sub _browseentry_widget {
 sub _optionmenu_widget {
     my($self, $frame, $opt) = @_;
     require Tk::Optionmenu;
-    my $varref = $self->_varref($opt);
+    my $varref = $self->varref($opt);
     # Have to remember value, otherwise Optionmenu would overwrite it...
     my $value = $$varref;
     my %args = (-variable => $varref,
@@ -551,7 +558,7 @@ sub _string_widget {
 	    ($frame, "Entry",
 	     (defined $opt->[OPTEXTRA]{'length'}
 	      ? (-width => $opt->[OPTEXTRA]{'length'}) : ()),
-	     -textvariable => $self->_varref($opt));
+	     -textvariable => $self->varref($opt));
 	if ($args{-restrict} || defined $opt->[OPTEXTRA]{'maxsize'}) {
 	    my $restrict_int   = sub { $_[0] =~ /^([+-]?\d+|)$/ };
 	    my $restrict_float = sub {
@@ -579,6 +586,10 @@ sub _string_widget {
 
 sub _dir_select {
     my($top, $curr_dir) = @_;
+
+    if ($top->can("chooseDirectory")) {
+	return $top->chooseDirectory(-initialdir => $curr_dir);
+    }
 
     if (eval { require Tk::DirSelect; Tk::DirSelect->VERSION("1.03"); 1 }) {
 	return $top->DirSelect(-directory => $curr_dir)->Show;
@@ -639,7 +650,7 @@ sub _filedialog_widget {
     my $e;
     if (exists $opt->[OPTEXTRA]{'choices'}) {
 	require Tk::BrowseEntry;
-	$e = $topframe->BrowseEntry(-variable => $self->_varref($opt));
+	$e = $topframe->BrowseEntry(-variable => $self->varref($opt));
 	my @optlist = @{$opt->[OPTEXTRA]{'choices'}};
 	unshift(@optlist, $opt->[DEFVAL]) if defined $opt->[DEFVAL];
 	my $o;
@@ -651,13 +662,13 @@ sub _filedialog_widget {
                use Tk::PathEntry;
                my $real_e;
                ($e, $real_e) = $self->_fix_layout($topframe, "PathEntry",
-                                                  -textvariable => $self->_varref($opt));
+                                                  -textvariable => $self->varref($opt));
                # XXX Escape is already used for cancelling Tk::Getopt
                $real_e->bind("<$_>" => sub { $real_e->Finish }) for (qw/Return/);
                1;
            ') {
 	    ($e) = $self->_fix_layout($topframe, "Entry",
-				      -textvariable => $self->_varref($opt));
+				      -textvariable => $self->varref($opt));
 	}
     }
     $e->pack(-side => 'left');
@@ -696,7 +707,7 @@ sub _filedialog_widget {
 	       }
 	   }
 	   my($dir, $base, $file);
-	   my $act_val = $ {$self->_varref($opt)};
+	   my $act_val = $ {$self->varref($opt)};
 	   if ($act_val) {
 	       $dir  = File::Basename::dirname($act_val);
 	       $base = File::Basename::basename($act_val);
@@ -738,7 +749,7 @@ sub _filedialog_widget {
 	       }
 	   }
 	   if (defined $file && $file ne "") {
-	       $ {$self->_varref($opt)} = $file;
+	       $ {$self->varref($opt)} = $file;
 	   }
        });
     $b->pack(-side => 'left');
@@ -752,7 +763,7 @@ sub _geometry_widget {
 	 'Entry',
 	 (defined $opt->[OPTEXTRA]{'length'}
 	  ? (-width => $opt->[OPTEXTRA]{'length'}) : ()),
-	 -textvariable => $self->_varref($opt));
+	 -textvariable => $self->varref($opt));
     $topframe->Button(_get_curr_geometry_args($topframe),
 		      -command => sub {
 			  my $mw = $frame->MainWindow;
@@ -773,7 +784,7 @@ sub _color_widget {
 	 'Entry',
 	 (defined $opt->[OPTEXTRA]{'length'}
 	  ? (-width => $opt->[OPTEXTRA]{'length'}) : ()),
-	 -textvariable => $self->_varref($opt));
+	 -textvariable => $self->varref($opt));
     if ($frame->can("chooseColor")) {
 	$topframe->Button(-text => "...",
 			  -padx => 0, -pady => 0,
@@ -796,7 +807,7 @@ sub _font_widget {
 	 'Entry',
 	 (defined $opt->[OPTEXTRA]{'length'}
 	  ? (-width => $opt->[OPTEXTRA]{'length'}) : ()),
-	 -textvariable => $self->_varref($opt));
+	 -textvariable => $self->varref($opt));
     if (eval {require Tk::Font; require Tk::FontDialog; 1}) {
 	$topframe->Button(-text => "...",
 			  -padx => 0, -pady => 0,
@@ -934,24 +945,33 @@ sub _do_undo {
     foreach $opt ($self->_opt_array) {
 	next if $opt->[OPTEXTRA]{'nogui'};
 	if (exists $undo_options->{$opt->[OPTNAME]}) {
-	    my $ref = ref $self->_varref($opt);
+	    my $ref = ref $self->varref($opt);
 	    if      ($ref eq 'ARRAY') {
-		my @swap = @ {$self->_varref($opt)};
-		@ {$self->_varref($opt)} = @{ $undo_options->{$opt->[OPTNAME]} };
+		my @swap = @ {$self->varref($opt)};
+		@ {$self->varref($opt)} = @{ $undo_options->{$opt->[OPTNAME]} };
 		@{ $undo_options->{$opt->[OPTNAME]}} = @swap;
 	    } elsif ($ref eq 'HASH') {
-		my %swap = % {$self->_varref($opt)};
-		% {$self->_varref($opt)} = %{ $undo_options->{$opt->[OPTNAME]} };
+		my %swap = % {$self->varref($opt)};
+		% {$self->varref($opt)} = %{ $undo_options->{$opt->[OPTNAME]} };
 		%{ $undo_options->{$opt->[OPTNAME]}} = %swap;
 	    } elsif ($ref eq 'SCALAR') {
-		my $swap = $ {$self->_varref($opt)};
-		$ {$self->_varref($opt)} = $undo_options->{$opt->[OPTNAME]};
+		my $swap = $ {$self->varref($opt)};
+		$ {$self->varref($opt)} = $undo_options->{$opt->[OPTNAME]};
 		$undo_options->{$opt->[OPTNAME]} = $swap;
 	    } else {
 		die "Invalid reference type for option $opt->[OPTNAME]";
 	    }
 	}
     }
+}
+
+sub option_dialog {
+    my($self, $top, %a) = @_;
+    my $button_pressed;
+    $a{'-buttonpressed'} = \$button_pressed;
+    $a{'-wait'} = 1;
+    $self->option_editor($top, %a);
+    $button_pressed;
 }
 
 sub option_editor {
@@ -969,6 +989,16 @@ sub option_editor {
 			     ? delete $a{'-delaypagecreate'}
 			     : 1);
     my $page      = delete $a{'-page'};
+    my $button_pressed;
+    if (exists $a{'-buttonpressed'}) {
+	if (ref $a{'-buttonpressed'} ne "SCALAR") {
+	    die "The value for the -buttonpressed option has to be a SCALAR reference, not a " . ref($a{'-buttonpressed'}) . "\n";
+	}
+	$button_pressed = delete $a{'-buttonpressed'};
+    } else {
+	# dummy
+	$button_pressed = \do { my $dummy };
+    }
     {
 	my %defaults = ('optedit'    => 'Option editor',
 			'undo'       => 'Undo',
@@ -997,13 +1027,13 @@ sub option_editor {
     my $opt;
     foreach $opt ($self->_opt_array) {
 	next if $opt->[OPTEXTRA]{'nogui'};
-	my $ref = ref $self->_varref($opt);
+	my $ref = ref $self->varref($opt);
 	if      ($ref eq 'ARRAY') {
-	    @{ $undo_options{$opt->[OPTNAME]} } = @ {$self->_varref($opt)};
+	    @{ $undo_options{$opt->[OPTNAME]} } = @ {$self->varref($opt)};
 	} elsif ($ref eq 'HASH') {
-	    %{ $undo_options{$opt->[OPTNAME]} } = % {$self->_varref($opt)};
+	    %{ $undo_options{$opt->[OPTNAME]} } = % {$self->varref($opt)};
 	} elsif ($ref eq 'SCALAR') {
-	    $undo_options{$opt->[OPTNAME]}      = $ {$self->_varref($opt)};
+	    $undo_options{$opt->[OPTNAME]}      = $ {$self->varref($opt)};
 	} else {
 	    die "Invalid reference type for option $opt->[OPTNAME]";
 	}
@@ -1151,6 +1181,7 @@ sub option_editor {
                                  $self->{'raised'} = $opt_notebook->raised();
                              }
                              $opt_editor->destroy;
+			     $$button_pressed = 'ok';
                          }
                         );
         push @tiler_b, $ok_button;
@@ -1175,6 +1206,7 @@ sub option_editor {
 				 die $err;
 			     }
                              $opt_editor->destroy;
+			     $$button_pressed = 'ok';
                          }
                         );
         push @tiler_b, $ok_button;
@@ -1200,6 +1232,7 @@ sub option_editor {
 				 $self->{'raised'} = $opt_notebook->raised();
 			     }
 			     $opt_editor->destroy;
+			     $$button_pressed = 'cancel';
 			 }
 			);
 	push @tiler_b, $cancel_button;
@@ -1554,6 +1587,9 @@ Pops the option editor up. The editor provides facilitied for editing
 options, undoing, restoring to their default valued and saving to the
 default options file.
 
+The option editor is non-modal. For a modal dialog, see below for the
+L</option_dialog> method.
+
 The first argument is the parent widget. Further optional arguments are
 passed as a hash:
 
@@ -1691,6 +1727,12 @@ B<FileDialog> if B<subtype> is set to B<file>.
 
 =back
 
+=item B<option_dialog(>I<widget>, [I<arguments ...>]B<)>
+
+This method works like L</option_editor>, but it shows the option
+editor as a modal dialog. Additionaly, the return value is either
+B<ok> or B<cancel> depending on how the user quits the editor.
+
 =back
 
 =head1 OPTTABLE ARGUMENTS
@@ -1771,11 +1813,13 @@ match either the choices or the range.
 Valid subtypes are I<file>, I<savefile>, I<dir>, I<geometry>, I<font>
 and I<color>. These can be used with string options. For I<file> and
 I<savefile>, the GUI interface will pop up a file dialog, using
-C<getOpenFile> for the former and C<getSaveFile> for the latter. For
-I<dir>, the GUI interface will pop up dialog for selecting
-directories. If the I<geometry> subtype is specified, the user can set
-the current geometry of the main window. The I<color> subtype is not
-yet implemented.
+L<getOpenFile|Tk::getOpenFile> for the former and
+L<getSaveFile|Tk::getOpenFile/getSaveFile> for the latter. For I<dir>,
+the GUI interface will pop up a dialog for selecting directories
+(using either L<Tk::chooseDirectory>, L<Tk::DirSelect>, or a custom
+dialog built on top of L<Tk::DirTree>). If the I<geometry> subtype is
+specified, the user can set the current geometry of the main window.
+The I<color> subtype is not yet implemented.
 
 =item var
 
@@ -1797,10 +1841,33 @@ Restrict the maximum number of characters in entries.
 =item widget
 
 This should be a reference to a subroutine for creating an own widget.
-Folowing arguments will be passed to this subroutine:
-a reference to the F<Tk::Getopt> object, Frame object, options entry.
-The subroutine should create a widget in the frame (packing is not
-necessary!) and should return a reference to the created widget.
+Folowing arguments will be passed to this subroutine: a reference to
+the F<Tk::Getopt> object, Frame object, and the options entry. The
+options entry should be used to get the variable reference with the
+C<_varref> method. The subroutine should create a widget in the frame
+(packing is not necessary!) and should return a reference to the
+created widget.
+
+A sample with an opttable entry for a custom numeric entry using the
+CPAN module L<Tk::NumEntry>:
+
+   ['numentry', '=i', 50,
+    range => [0, 100],
+    widget => sub { numentry_widget(@_) },
+   ],
+
+And C<numentry_widget> defined as:
+
+    use Tk::NumEntry;
+    sub numentry_widget {
+        my($self, $frame, $opt) = @_;
+        my $v = $self->varref($opt);
+	$frame->NumEntry(-minvalue => $opt->[3]{range}[0],
+    			 -maxvalue => $opt->[3]{range}[1],
+			 -variable => $v,
+    			 -value => $$v,
+    		        );
+    }
 
 =back
 
@@ -1841,6 +1908,23 @@ Here is an example for using a complex opttable description:
           longhelp => 'And this is a slightly longer help'
           # longer help displayed in the GUI's help window
           ]);
+
+=head1 OPTION ENTRY METHODS
+
+These methods operate on option entries:
+
+=over
+
+=item B<varref(>I<optentry>B<)>
+
+Return the variable reference for this entry.
+
+=item B<optextra(>I<optentry>, I<optarg>B<)>
+
+Return the value for the specified I<optarg> argument. See the
+L<OPTTABLE ARGUMENTS> section above for a list of possible arguments.
+
+=back
 
 =head1 COMPATIBILITY
 
