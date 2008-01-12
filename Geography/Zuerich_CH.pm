@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Zuerich_CH.pm,v 1.5 2008/01/12 21:34:49 eserte Exp $
+# $Id: Zuerich_CH.pm,v 1.7 2008/01/12 22:55:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Geography::Zuerich_CH;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 sub new { bless {}, shift }
 
@@ -77,11 +77,25 @@ After converting, some additional steps are necessary:
     cd ~/src/bbbike/data_zuerich_ch
     ../miscsrc/convert_radwege -noconv < radwege_exact | ../miscsrc/combine_streets.pl - > radwege
 
-Patch the bbbike script. Replace
+Preparing a windows distribution:
 
-		 "$FindBin::RealBin/images/bbbike_splash.xpm",
+    cd ~/src/bbbike/ports/windows
+    make BBBIKEVER=3.16-DEVEL
+    cd /tmp/BBBike-3.16-DEVEL-Windows/bbbike
+    rsync -a ~/src/bbbike/data_zuerich_ch/ data_zuerich_ch/
+    cp -f ~/src/bbbike/misc/zuerich_splash.xpm images/bbbike_splash.xpm
+    cp -f ~/src/bbbike/Geography/Zuerich_CH.pm Geography
+    chmod -R o+r data
+    chmod 644 images/bbbike_splash.xpm
+    chmod 644 Geography/Zuerich_CH.pm
 
-with
-		 "$FindBin::RealBin/misc/zuerich_splash.xpm",
+Add a new file bbbike/bbbike_0.config with the content:
+
+    $city = "zuerich";
+    $init_str_draw{"w"} = 1;
+    $init_str_draw{"f"} = 1;
+    $init_str_draw{"r"} = 1;
+
+(Only the first line is really mandatory)
 
 =cut

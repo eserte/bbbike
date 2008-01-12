@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.68 2007/12/31 13:55:07 eserte Exp eserte $
+# $Id: Makefile.admin.PL,v 1.69 2008/01/12 22:38:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006,2007 Slaven Rezic. All rights reserved.
@@ -567,8 +567,8 @@ winbindist-copy:
 	mv $(WINBINDISTDIR)/BBBike-$(VERSION) $(WINBINDISTDIR)/bbbike
 	umask 022; cp -p cdrom/windows/autorun.inf \
 	      cdrom/windows/bbbike.bat \
-	      cdrom/windows/setup.bat \
-	      cdrom/windows/setup.pl \
+	      cdrom/windows/oldsetup.bat \
+	      cdrom/windows/oldsetup.pl \
 	    $(WINBINDISTDIR)
 # put this again to the distribution if it really works!
 #	      cdrom/windows/setup.exe
