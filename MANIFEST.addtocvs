@@ -361,6 +361,7 @@ miscsrc/cvsdiffbbd
 miscsrc/datachangelog2bbd
 miscsrc/dcwtobbd.pl
 miscsrc/diffbbd
+miscsrc/downloadosm
 miscsrc/e00_to_bbd.pl
 miscsrc/filter_version.pl
 miscsrc/flood_search.pl
@@ -383,6 +384,7 @@ miscsrc/newstreetform_data.pl
 miscsrc/opengeodbgeocode
 miscsrc/opengeodbmysql2bbd
 miscsrc/opengeodborte2bbd
+miscsrc/osm2bbd
 miscsrc/parse_mapbender_plz.pl
 miscsrc/polizei-faxabruf-diff.pl
 miscsrc/reduce_streets
@@ -459,3 +461,4 @@ vbbbike/vbbbikecnv.h
 vbbbike/vbbbikedlg.cpp
 vbbbike/vbbbikedlg.h
 vbbbike/vconfig.pl
+Geography/Zuerich_CH.pm

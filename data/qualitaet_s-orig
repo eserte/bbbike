@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.217 2008/01/05 14:22:07 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.217 2008/01/05 14:22:07 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -370,7 +370,8 @@ Garnisonkirchplatz: Kopfsteinpflaster, OK	Q1 10309,12854 10255,12959
 Am Schwarzen Graben: Querrillen	Q1 4849,15875 5017,16764 5017,16994 4993,17067
 #: note: seit ca. 2007-08
 Holteistr.: Asphalt	Q0 14535,11327 14495,11261 14459,11200
-Holteistr.: Kopfsteinpflaster, OK	Q1 14575,11407 14535,11327
+#: note: seit ca. 2008-01
+Holteistr.: Asphalt	Q0 14575,11407 14535,11327
 Brehmestr.: Kopfsteinpflaster	Q2 9904,17347 9966,17355 10085,17370 10215,17386
 Heynstr.: Kopfsteinpflaster	Q2 10215,17386 10211,17432 10205,17506
 Maximilianstr.: Kopfsteinpflaster	Q2 10305,17299 10509,17289 10774,17277

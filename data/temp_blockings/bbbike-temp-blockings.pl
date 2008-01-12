@@ -6003,7 +6003,7 @@ userdel	2::temp 7587,17532 7500,17796 7487,17836 7466,17904 7350,18262 7232,1857
 EOF
      },
      { from  => undef, # 
-       until => 1199227362, # 2008-01-01 23:42
+       until => Time::Local::timelocal(reverse(2008-1900,3-1,1,0,0,0)), # 2008-01-01 23:42
        text  => 'Bau der O2-World, bis 2008',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -10670,7 +10670,7 @@ userdel	2::inwork 10023,-8859 10115,-8276
 EOF
      },
      { from  => 1197233736, # 
-       until => undef, # XXX last_checked: 2007-12-09 XXX nach den Bauarbeiten asphaltiert?
+       until => 1199903161, # XXX last_checked: 2007-12-09 XXX nach den Bauarbeiten asphaltiert?
        text  => 'Holteistraße: Bauarbeiten zwischen Sonntagstr. und Wühlischstr., Fahrbahn ist nicht benutzbar',
        type  => 'handicap',
        data  => <<EOF,
@@ -10759,6 +10759,15 @@ EOF
        data  => <<EOF,
 userdel	2::inwork 8600,12165 8515,12242 8214,12205 8089,12186
 userdel	2::inwork 6828,12031 7383,12095 7816,12150 8063,12182 8119,12414
+EOF
+     },
+     { from  => 1199891609, # 2008-01-09 16:13
+       until => 1209592800, # 2008-05-01 00:00
+       text  => 'Sterndamm (Treptow) Richtung Schöneweide zwischen J.-Werner.Str und Lindhorstweg Baustelle, Fahrtrichtung gesperrt (bis April 2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_007543',
+       data  => <<EOF,
+userdel	1::inwork 17053,3971 17387,4446
 EOF
      },
     );

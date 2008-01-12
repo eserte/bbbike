@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.335 2008/01/06 19:40:44 eserte Exp $
+# $Id: bbbike,v 3.338 2008/01/12 21:40:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -53,6 +53,7 @@ BEGIN {
 	    }
 	    $splash_screen = Tk::ProgressSplash->Show
 		(-splashtype => $splashtype,
+#		 "$FindBin::RealBin/misc/zuerich_splash.xpm",
 		 "$FindBin::RealBin/images/bbbike_splash.xpm",
 		 240, 90, "BBBike", 1);
 	}; warn $@ if $@;
@@ -217,7 +218,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.335 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.338 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -313,13 +314,9 @@ $small_scale  = 0.0625;    # map scale for overview window (region mode)
 $medium_scale = 0.13;      # map scale for overview window (city/Berlin mode)
 $small_scale_edit  = 0.01;         # dasselbe für den Edit-Mode XXX remove?
 $medium_scale_edit = 0.02;
-set_canvas_scale(DEFAULT_SCALE);
+set_canvas_scale(DEFAULT_SCALE); # sets $scale
 Karte::preload('Standard');
 my $init_scale_massstab; # in 1:x form
-$init_scrollregion = $Karte::Standard::init_scrollregion;
-$normal_scrollregion = $init_scrollregion*$scale;
-@scrollregion = ((-$normal_scrollregion) x 2,
-		 ($normal_scrollregion)  x 2);
 $bbbike_route_ext = 'bbr';
 $map_bg = 'grey85';
 use vars qw($balloon_info_from_all_tags_closeenough);
@@ -621,6 +618,7 @@ if ($lowmem) {
 #mymstat("after getopt processing");
 ## DEBUG_END
 
+my %skip_features;
 use vars qw($city_obj);
 if (!defined $city && !defined $datadir) {
     $city = "Berlin";
@@ -634,6 +632,14 @@ if (defined $city) {
 	%global_search_args = $city_obj->search_args
 	    if $city_obj->can("search_args");
 	$no_original_datadir = $city ne "Berlin"; # XXX Was bedeutet das genau?
+	if ($city_obj->can("scrollregion") && $city_obj->scrollregion) {
+	    @scrollregion = $city_obj->scrollregion;
+	    $normal_scrollregion = $scrollregion[2]-$scrollregion[0];
+	    for (@scrollregion) { $_ *= $scale };
+	}
+	if ($city_obj->can("skip_features")) {
+	    %skip_features = map{($_,1)} $city_obj->skip_features;
+	}
     } else {
 	die Mfmt("Kann keine passende Datei für Stadt=%s und Land=%s finden",
 		 $city, (defined $country ? $country : M("(unbestimmt)")));
@@ -646,6 +652,14 @@ if (defined $city) {
     # default (Berlin)
     set_datadir("$FindBin::RealBin/data");
 }
+
+if (!@scrollregion) {
+    my $init_scrollregion = $Karte::Standard::init_scrollregion;
+    $normal_scrollregion = $init_scrollregion*$scale;
+    @scrollregion = ((-$normal_scrollregion) x 2,
+		     ($normal_scrollregion)  x 2);
+}
+
 # XXX Henne-und-Ei-Problem: ich würde gerne Plotting-Defaults anhand der
 # -city-Option setzen (z.B. Zeichnen der Landstraßen für OR). Problem:
 # das initiale Setzen von %init_str geschieht auch während handle_options
@@ -1748,8 +1762,17 @@ sub do_iconframe {
     $misc_frame->gridColumnconfigure(999, -weight => 1); # force buttons to the left
     $col = 0;
 ##### Straßen #####
+my $strasse_check;
+my $strcm;
+my $radwege_check_index;
+my $qualitaet_check_index;
+my $handicap_check_index;
+my $sperre_check_index;
+my $ampeln_check_index;
+my $fragezeichen_check_index;
+unless($skip_features{"strassen"}) {
     $strasse_photo = load_photo($misc_frame, 'strasse'); # XXX .' . $default_img_fmt);
-    my $strasse_check = $misc_frame->$Checkbutton
+    $strasse_check = $misc_frame->$Checkbutton
       (image_or_text($strasse_photo, 'Str'),
        -variable => \$str_draw{'s'},
        -command => $check_sub{'s'},
@@ -1759,7 +1782,7 @@ sub do_iconframe {
 
     my $strcmb = $misc_frame->Menubutton;
     $strcmb->focus;
-    my $strcm = $strcmb->Menu(-title => M("Straßen"));
+    $strcm = $strcmb->Menu(-title => M("Straßen"));
     menu_entry_choose_ort
 	($strcm, 's',
 	 -accelerator => 'S',
@@ -1839,16 +1862,18 @@ sub do_iconframe {
 	}
 
     }
-    $strcm->checkbutton(-label => M"Höhenangaben",
-			-variable => \$p_draw{'hoehe'},
-			-command => sub { plot('p','hoehe') });
+    unless ($skip_features{"hoehe"}) {
+	$strcm->checkbutton(-label => M"Höhenangaben",
+			    -variable => \$p_draw{'hoehe'},
+			    -command => sub { plot('p','hoehe') });
+    }
 
     $strcm->checkbutton(-label => M"Radwege",
 			-variable => \$str_draw{'rw'},
 			-command => sub { plot('str','rw')},
 			-accelerator => 'Shift-R',
 		       );
-    my $radwege_check_index = $strcm->index('last');
+    $radwege_check_index = $strcm->index('last');
     $strcm->cascade(-label => M"Radwegekategorien");
     {
 	my $rkm = $strcm->Menu(-title => M"Radwegekategorien");
@@ -1871,7 +1896,7 @@ sub do_iconframe {
 			-command => sub { plot_sperre() },
 			-accelerator => 'G',
 		       );
-    my $sperre_check_index = $strcm->index('last');
+    $sperre_check_index = $strcm->index('last');
     $strcm->checkbutton(-label => M"Fähren",
 			-variable => \$str_draw{'e'},
 			-command => sub { plot('str','e') });
@@ -1880,7 +1905,7 @@ sub do_iconframe {
 			-command => sub { plot('p','lsa') },
 			-accelerator => 'A',
 		       );
-    my $ampeln_check_index = $strcm->index('last');
+    $ampeln_check_index = $strcm->index('last');
     $strcm->checkbutton(-label => M"Outline zeichnen",
 			-variable => \$str_outline{'s'},
 			-command => sub {
@@ -1901,7 +1926,7 @@ sub do_iconframe {
 			-command => sub { plot('str','qs') },
 			-accelerator => 'Shift-Q',
 		       );
-    my $qualitaet_check_index = $strcm->index('last');
+    $qualitaet_check_index = $strcm->index('last');
     $strcm->cascade(-label => M"Qualitätskategorien");
     {
 	my $qm = $strcm->Menu(-title => M"Qualitätskategorien");
@@ -1925,20 +1950,25 @@ sub do_iconframe {
 			-variable => \$str_draw{'hs'},
 			-command => sub { plot('str','hs') },
 		       );
-    my $handicap_check_index = $strcm->index('last');
-    $strcm->checkbutton(-label => M"Unbeleuchtete Straßen",
-			-variable => \$str_draw{'nl'},
-			-command => sub { plot('str','nl') },
-		       );
-    $strcm->checkbutton(-label => M"Grüne Wege",
-			-variable => \$str_draw{'gr'},
-			-command => sub { plot('str','gr') },
-		       );
-    $strcm->checkbutton(-label => M"Vorfahrt",
-			-variable => \$p_draw{'vf'},
-			-command => sub { plot('p','vf') },
-		       );
-    my $fragezeichen_check_index;
+    $handicap_check_index = $strcm->index('last');
+    unless ($skip_features{"nolighting"}) {
+	$strcm->checkbutton(-label => M"Unbeleuchtete Straßen",
+			    -variable => \$str_draw{'nl'},
+			    -command => sub { plot('str','nl') },
+			   );
+    }
+    unless ($skip_features{"green"}) {
+	$strcm->checkbutton(-label => M"Grüne Wege",
+			    -variable => \$str_draw{'gr'},
+			    -command => sub { plot('str','gr') },
+			   );
+    }
+    unless ($skip_features{"vorfahrt"}) {
+	$strcm->checkbutton(-label => M"Vorfahrt",
+			    -variable => \$p_draw{'vf'},
+			    -command => sub { plot('p','vf') },
+			   );
+    }
     if ($advanced) {
 	$strcm->checkbutton(-label => M"Fragezeichen",
 			    -variable => \$str_draw{'fz'},
@@ -1962,12 +1992,14 @@ sub do_iconframe {
 	    );
     };
 
-    $create_comment_layers_cb->($strcm, "route");
-    $strcm->command(-label => M"Radroute auswählen",
-		    -command => sub {
-			choose_ort(qw(s comm-route),
-				   -markstartifactive => 1);
-		    });
+    unless ($skip_features{"radroute"}) {
+	$create_comment_layers_cb->($strcm, "route");
+	$strcm->command(-label => M"Radroute auswählen",
+			-command => sub {
+			    choose_ort(qw(s comm-route),
+				       -markstartifactive => 1);
+			});
+    }
 
     $strcm->cascade(-label => M"Sonstige");
     {
@@ -1994,11 +2026,18 @@ sub do_iconframe {
     menu_entry_up_down($strcm, $tag_group{'str_s'});
     menuright($strasse_check, $strcm);
     menuarrow($strcmb, $strcm, $col++, -special => 'LAYER');
-
+}
 ##### Landstraßen #####
+my $landstrasse_check;
+my $lstrcm;
+my $radwege_l_check_index;
+my $qualitaet_l_check_index;
+my $handicap_l_check_index;
+my $land_jwd_check_index;
+unless ($skip_features{"landstrassen"}) {
     $landstrasse_photo =
       load_photo($misc_frame, 'landstrasse'); # XXX .' . $default_img_fmt);
-    my $landstrasse_check = $misc_frame->$Checkbutton
+    $landstrasse_check = $misc_frame->$Checkbutton
       (image_or_text($landstrasse_photo, 'LStr'),
        -variable => \$str_draw{'l'},
        -command => $check_sub{'l'},
@@ -2007,7 +2046,7 @@ sub do_iconframe {
     $ch->attach($landstrasse_check, -pod => "^\\s*Landstraßen-Symbol");
 
     my $lstrcmb = $misc_frame->Menubutton;
-    my $lstrcm = $lstrcmb->Menu(-title => M"Landstraßen");
+    $lstrcm = $lstrcmb->Menu(-title => M"Landstraßen");
     menu_entry_choose_ort($lstrcm, 'l',
 			  -accelerator => 'L',
 			  -strchooseortargs => {'-markstartifactive' => 1});
@@ -2025,7 +2064,7 @@ sub do_iconframe {
 			 },
 			 -accelerator => 'Shift-L',
 			);
-    my $land_jwd_check_index = $lstrcm->index('last');
+    $land_jwd_check_index = $lstrcm->index('last');
     $lstrcm->checkbutton(-label => M"Straßennamen",
 			 -variable => \$str_name_draw{'l'},
 			 -command => sub {
@@ -2043,12 +2082,12 @@ sub do_iconframe {
 			 -command => sub { plot('str','ql') },
 			 -accelerator => 'Shift-Q',
 			);
-    my $qualitaet_l_check_index = $lstrcm->index('last');
+    $qualitaet_l_check_index = $lstrcm->index('last');
     $lstrcm->checkbutton(-label => M"Sonstige Beeinträchtigungen",
 			 -variable => \$str_draw{'hl'},
 			 -command => sub { plot('str','hl') },
 			);
-    my $handicap_l_check_index = $lstrcm->index('last');
+    $handicap_l_check_index = $lstrcm->index('last');
     $lstrcm->checkbutton(-label => M"Radwege im Umland",
 			-variable => \$str_draw{'comm-cyclepath'},
 			 -command => sub {
@@ -2057,14 +2096,19 @@ sub do_iconframe {
 			 },
 			 -accelerator => 'Shift-R',
 			);
-    my $radwege_l_check_index = $lstrcm->index('last');
+    $radwege_l_check_index = $lstrcm->index('last');
     menu_entry_up_down($lstrcm, $tag_group{'str_l'});
     menuright($landstrasse_check, $lstrcm);
     menuarrow($lstrcmb, $lstrcm, $col++, -special => 'LAYER');
+}
 
 ##### Orte #####
+my $ort_check;
+my $ocm;
+my $ort_jwd_check_index;
+unless ($skip_features{"orte"}) {
     $ort_photo = load_photo($misc_frame, 'ort'); # XXX .' . $default_img_fmt);
-    my $ort_check = $misc_frame->$Checkbutton
+    $ort_check = $misc_frame->$Checkbutton
       (image_or_text($ort_photo, 'Ort'),
        -variable => \$p_draw{'o'},
        -command => $check_sub{'o'},
@@ -2073,7 +2117,7 @@ sub do_iconframe {
     $ch->attach($ort_check, -pod => "^\\s*Ort-Symbol");
 
     my $ocmb = $misc_frame->Menubutton;
-    my $ocm = $ocmb->Menu(-title => M"Orte");
+    $ocm = $ocmb->Menu(-title => M"Orte");
     menu_entry_choose_ort($ocm, 'o', -accelerator_p => 'O',
 			  -pchooseortargs => {'-markstartifactive' => 1});
     $ocm->separator;
@@ -2105,7 +2149,7 @@ sub do_iconframe {
 		      },
 		      -accelerator => 'Shift-O',
 		     );
-    my $ort_jwd_check_index = $ocm->index('last');
+    $ort_jwd_check_index = $ocm->index('last');
     $ocm->separator;
     $ocm->cascade(-label => M"Schriftgröße");
     {
@@ -2142,10 +2186,13 @@ sub do_iconframe {
     menu_entry_up_down($ocm, $tag_group{'p_o'});
     menuright($ort_check, $ocm);
     menuarrow($ocmb, $ocm, $col++, -special => 'LAYER');
+}
 
 ##### U-Bahn #####
+my $ubahn_check;
+unless ($skip_features{"u-bahn"}) {
     $ubahn_photo = load_photo($misc_frame, 'ubahn'); # XXX .' . $default_img_fmt);
-    my $ubahn_check = $misc_frame->$Checkbutton
+    $ubahn_check = $misc_frame->$Checkbutton
       (image_or_text($ubahn_photo, 'U'),
        -variable => \$str_draw{'u'},
        -command => $check_sub{'u'},
@@ -2178,8 +2225,10 @@ sub do_iconframe {
 		       },
 		      );
     $ubcm->separator;
-    foreach ([M"VBB-Zone Berlin A", 'UA'],
-	     [M"VBB-Zone Berlin B", 'UB'],
+    foreach ($skip_features{"vbb"} ? ["Strecken in Betrieb", "UA"] :
+	     ([M"VBB-Zone Berlin A", 'UA'],
+	      [M"VBB-Zone Berlin B", 'UB'],
+	     ),
 	     [M"in Bau", 'UBau'],
 	     [M"stillgelegt", 'U0'],
 	    ) {
@@ -2198,10 +2247,12 @@ sub do_iconframe {
     menuright($ubahn_check, $ubcm);
     menuarrow($ubcmb, $ubcm, $col++,
 	      -menulabel => M"U-Bahn", -special => 'LAYER');
-
+}
 ##### S-Bahn #####
+my $sbahn_check;
+unless ($skip_features{"s-bahn"}) {
     $sbahn_photo = load_photo($misc_frame, 'sbahn'); # XXX .' . $default_img_fmt);
-    my $sbahn_check = $misc_frame->$Checkbutton
+    $sbahn_check = $misc_frame->$Checkbutton
       (image_or_text($sbahn_photo, 'S'),
        -variable => \$str_draw{'b'},
        -command => $check_sub{'b'},
@@ -2233,9 +2284,11 @@ sub do_iconframe {
 		       },
 		      );
     $sbcm->separator;
-    foreach ([M"VBB-Zone Berlin A", 'SA'],
-	     [M"VBB-Zone Berlin B", 'SB'],
-	     [M"VBB-Zone Berlin C", 'SC'],
+    foreach ($skip_features{"vbb"} ? ["Strecken in Betrieb", "SA"] :
+	     ([M"VBB-Zone Berlin A", 'SA'],
+	      [M"VBB-Zone Berlin B", 'SB'],
+	      [M"VBB-Zone Berlin C", 'SC'],
+	     ),
 	     [M"in Bau", 'SBau'],
 	     [M"stillgelegt", 'S0'],
 	    ) {
@@ -2254,10 +2307,12 @@ sub do_iconframe {
     menuright($sbahn_check, $sbcm);
     menuarrow($sbcmb, $sbcm, $col++,
 	      -menulabel => M"S-Bahn", -special => 'LAYER');
-
+}
 ##### RB #####
+my $rbahn_check;
+unless ($skip_features{"r-bahn"}) {
     $rbahn_photo = load_photo($misc_frame, 'rbahn'); # XXX .' . $default_img_fmt);
-    my $rbahn_check = $misc_frame->$Checkbutton
+    $rbahn_check = $misc_frame->$Checkbutton
       (image_or_text($rbahn_photo, 'RB'),
        -variable => \$str_draw{'r'},
        -command => $check_sub{'r'},
@@ -2283,9 +2338,11 @@ sub do_iconframe {
 		       },
 		      );
     $rbcm->separator;
-    foreach ([M"VBB-Zonen Berlin A und B", 'RB'],
-	     [M"VBB-Zone Berlin C", 'RC'],
-	     [M"außerhalb Berlin ABC", 'R'],
+    foreach ($skip_features{"vbb"} ? ["Strecken in Betrieb", "R"] :
+	     ([M"VBB-Zonen Berlin A und B", 'RB'],
+	      [M"VBB-Zone Berlin C", 'RC'],
+	      [M"außerhalb Berlin ABC", 'R'],
+	     ),
 	     [M"stillgelegt", 'R0'],
 	     [M"in Bau", 'RBau'],
 	     [M"Güterbahnen/Verbindungsstrecken", 'RG'],
@@ -2306,10 +2363,14 @@ sub do_iconframe {
     menuright($rbahn_check, $rbcm);
     menuarrow($rbcmb, $rbcm, $col++,
 	      -menulabel => M"R-Bahn", -special => 'LAYER');
-
+}
 ##### Gewässer #####
+my $wasser_check;
+my $wasserumland_check_index;
+my $wcm;
+unless ($skip_features{"wasser"}) {
     $wasser_photo = load_photo($misc_frame, 'wasser'); # XXX .' . $default_img_fmt);
-    my $wasser_check = $misc_frame->$Checkbutton
+    $wasser_check = $misc_frame->$Checkbutton
       (image_or_text($wasser_photo, 'H20'),
        -variable => \$str_draw{'w'},
        -command => $check_sub{'w'},
@@ -2317,7 +2378,7 @@ sub do_iconframe {
     $balloon->attach($wasser_check, -msg => M"Gewässer");
     $ch->attach($wasser_check, -pod => "^\\s*Gewässer-Symbol");
     my $wcmb = $misc_frame->Menubutton;
-    my $wcm = $wcmb->Menu(-title => M"Gewässer");
+    $wcm = $wcmb->Menu(-title => M"Gewässer");
     menu_entry_choose_ort($wcm, 'w', -accelerator => 'W');
     $wcm->separator;
     $wcm->checkbutton(-label => M"Outline zeichnen",
@@ -2339,27 +2400,31 @@ sub do_iconframe {
 			  pending(1, 'replot-str-w');
 		      },
 		     );
-    $wcm->checkbutton(-label => M"Gewässer im Umland zeichnen",
-		      -variable => \$wasserumland,
-		      -command => sub {
-			  pending(1, 'replot-str-w');
-		      },
-		      -accelerator => 'Shift-W',
-		     );
-    my $wasserumland_check_index = $wcm->index('last');
-    $wcm->checkbutton(-label => M"Gewässer jwd zeichnen",
-		      -variable => \$str_far_away{'w'},
-		      -command => sub {
-			  pending(1, 'replot-str-w');
-		      },
-		     );
+    unless ($skip_features{"wasserumland"}) {
+	$wcm->checkbutton(-label => M"Gewässer im Umland zeichnen",
+			  -variable => \$wasserumland,
+			  -command => sub {
+			      pending(1, 'replot-str-w');
+			  },
+			  -accelerator => 'Shift-W',
+			 );
+	$wasserumland_check_index = $wcm->index('last');
+	$wcm->checkbutton(-label => M"Gewässer jwd zeichnen",
+			  -variable => \$str_far_away{'w'},
+			  -command => sub {
+			      pending(1, 'replot-str-w');
+			  },
+			 );
+    }
     menu_entry_up_down($wcm, $tag_group{'str_w'});
     menuright($wasser_check, $wcm);
     menuarrow($wcmb, $wcm, $col++, -special => 'LAYER');
-
+}
 ##### Flächen #####
+my $flaechen_check;
+unless ($skip_features{"flaechen"}) {
     $flaechen_photo = load_photo($misc_frame, 'flaechen'); # XXX .' . $default_img_fmt);
-    my $flaechen_check = $misc_frame->$Checkbutton
+    $flaechen_check = $misc_frame->$Checkbutton
       (image_or_text($flaechen_photo, 'Fl'),
        -variable => \$str_draw{'f'},
        -command => $check_sub{'f'},
@@ -2381,25 +2446,27 @@ sub do_iconframe {
 	menu_entry_choose_ort($fcm, 'z');
 	$fcm->separator;
     }
-    $fcm->checkbutton(-label => M"Grenzen von Berlin",
+    $fcm->checkbutton(-label => $city eq 'Berlin' ? M"Grenzen von Berlin" : M"Ortsgrenzen",
 		      -variable => \$str_draw{'g'},
 		      -command => sub { plot('str','g') });
     if ($advanced && $devel_host) {
-	$fcm->checkbutton(-label => M"Berliner Ortsteile",
+	$fcm->checkbutton(-label => $city eq 'Berlin' ? M"Berliner Ortsteile" : M"Ortsteilgrenzen",
 			  -variable => \$str_draw{'gBO'},
 			  -command => sub { plot('str', 'gBO') });
 	$str_name_draw{"gBO"} = 1; # force drawing of labels
-	$fcm->checkbutton(-label => M"Berliner Ortsteilnamen",
+	$fcm->checkbutton(-label => $city eq 'Berlin' ? M"Berliner Ortsteilnamen" : M"Ortsteilnamen",
 			  -variable => \$str_name_draw{'gBO'},
 			  -command => sub {
 			      pending(1, 'replot-str-gBO');
 			  },
 			 );
     }
-    $fcm->checkbutton(-label => M"Grenzen von Potsdam",
-		      -variable => \$str_draw{'gP'},
-		      -command => sub { plot('str','gP') });
-    $fcm->checkbutton(-label => M"Staatsgrenzen", # Deutschland
+    if ($city eq 'Berlin') {
+	$fcm->checkbutton(-label => M"Grenzen von Potsdam",
+			  -variable => \$str_draw{'gP'},
+			  -command => sub { plot('str','gP') });
+    }
+    $fcm->checkbutton(-label => M"Staatsgrenzen",
 		      -variable => \$str_draw{'gD'},
 		      -command => sub { plot('str','gD') });
     $fcm->checkbutton(-label => M"Grenzübergänge",
@@ -2410,9 +2477,11 @@ sub do_iconframe {
     menu_entry_up_down($fcm, $tag_group{'str_f'});
     menuright($flaechen_check, $fcm);
     menuarrow($fcmb, $fcm, $col++, -special => 'LAYER');
-
+}
 ##### Sehenswürdigkeiten, Kneipen etc. #####
-    my $sehenswuerdigkeiten_check = $misc_frame->$Checkbutton
+my $sehenswuerdigkeiten_check;
+unless ($skip_features{"sehenswuerdigkeiten"}) {
+    $sehenswuerdigkeiten_check = $misc_frame->$Checkbutton
       (image_or_text($star_photo, '*'),
        -variable => \$str_draw{'v'},
        -command => sub { plot('str','v') },
@@ -2481,7 +2550,7 @@ sub do_iconframe {
     #XXXX menu_entry_up_down($knm, $tag_group{'str_f'});
     menuright($sehenswuerdigkeiten_check, $knm);
     menuarrow($knmb, $knm, $col++, -special => 'LAYER');
-
+}
 ##### Zusätzliche Kartenebenen #####
     my $newlayer_label = $misc_frame->Label
       (image_or_text($newlayer_photo, '*'),
@@ -2823,8 +2892,10 @@ sub do_iconframe {
 	$sbm->separator;
     }
 
-    $sbm->checkbutton(-label => M"Steigungen/Gefälle zeigen",
-		      -variable => \$show_grade);
+    unless ($skip_features{"hoehe"}) {
+	$sbm->checkbutton(-label => M"Steigungen/Gefälle zeigen",
+			  -variable => \$show_grade);
+    }
     $sbm->cascade(-label => M('Einfärben der Route').' ...');
     {
 	my $fbm = $sbm->Menu(-title => M('Einfärben der Route').' ...');
@@ -3057,7 +3128,7 @@ sub do_iconframe {
 			   }
 		       }
 		      );
-    {
+    unless ($skip_features{"green"}) {
 	$sb2m->cascade(-label => M("Grüne Wege")."...");
 	my $gwm = $sb2m->Menu(-title => M"Grüne Wege");
 	$sb2m->entryconfigure('last', -menu => $gwm);
@@ -3074,12 +3145,16 @@ sub do_iconframe {
 			  -value => 2,
 			 );
     }
-    $sb2m->checkbutton(-label => M"Unbeleuchtete Straßen meiden",
-		       -variable => \$unlit_streets_optimization,
-		      );
-    $sb2m->checkbutton(-label => M"Steigungsoptimierung",
-		      -variable => \$steigung_optimierung,
-		     );
+    unless ($skip_features{"nolighting"}) {
+	$sb2m->checkbutton(-label => M"Unbeleuchtete Straßen meiden",
+			   -variable => \$unlit_streets_optimization,
+			  );
+    }
+    unless ($skip_features{"hoehe"}) {
+	$sb2m->checkbutton(-label => M"Steigungsoptimierung",
+			   -variable => \$steigung_optimierung,
+			  );
+    }
     if ($advanced && $devel_host) {
 	# sowieso vorerst sinnlos...
 	$sb2m->checkbutton(-label => M"Abbiege-Optimierung",
@@ -3887,36 +3962,36 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 ## DEBUG_BEGIN
 #mymstat("before iconframe: bindings");
 ## DEBUG_END
-    bind_nomod($top, "<s>" => sub { $strasse_check->invoke });
-    bind_nomod($top, "<l>" => sub { $landstrasse_check->invoke });
-    bind_nomod($top, "<o>" => sub { $ort_check->invoke });
-    bind_nomod($top, "<u>" => sub { $ubahn_check->invoke });
-    bind_nomod($top, "<b>" => sub { $sbahn_check->invoke });
-    bind_nomod($top, "<r>" => sub { $rbahn_check->invoke });
-    bind_nomod($top, "<w>" => sub { $wasser_check->invoke });
-    bind_nomod($top, "<f>" => sub { $flaechen_check->invoke });
+    bind_nomod($top, "<s>" => sub { $strasse_check->invoke}) if $strasse_check;
+    bind_nomod($top, "<l>" => sub { $landstrasse_check->invoke }) if $landstrasse_check;
+    bind_nomod($top, "<o>" => sub { $ort_check->invoke }) if $ort_check;
+    bind_nomod($top, "<u>" => sub { $ubahn_check->invoke }) if $ubahn_check;
+    bind_nomod($top, "<b>" => sub { $sbahn_check->invoke }) if $sbahn_check;
+    bind_nomod($top, "<r>" => sub { $rbahn_check->invoke }) if $rbahn_check;
+    bind_nomod($top, "<w>" => sub { $wasser_check->invoke }) if $wasser_check;
+    bind_nomod($top, "<f>" => sub { $flaechen_check->invoke }) if $flaechen_check;
     bind_nomod($top, "<p>" => sub { $hs_check->invoke }) if $hs_check;
 
     bind_nomod($top, "<R>" => sub {
 		   # Same problems as in <Q>, see below.
 		   if ($str_draw{'l'} || $str_draw{'comm-cyclepath'}) {
-		       $lstrcm->invoke($radwege_l_check_index);
+		       $lstrcm->invoke($radwege_l_check_index) if $lstrcm && defined $radwege_l_check_index;
 		   }
 		   if ($str_draw{'s'} || $str_draw{'rw'} || !$str_draw{'l'}) {
-		       $strcm->invoke($radwege_check_index);
+		       $strcm->invoke($radwege_check_index) if $strcm && defined $radwege_check_index;
 		   }
 	       });
-    bind_nomod($top, "<a>" => sub { $strcm->invoke($ampeln_check_index) });
-    bind_nomod($top, "<g>" => sub { $strcm->invoke($sperre_check_index) });
+    bind_nomod($top, "<a>" => sub { $strcm->invoke($ampeln_check_index) }) if $strcm && defined $ampeln_check_index;
+    bind_nomod($top, "<g>" => sub { $strcm->invoke($sperre_check_index) }) if $strcm && defined $sperre_check_index;
     bind_nomod($top, "<Q>" => sub {
 		   # XXX hmmm... nicht gerade ideal. Beispiel: Landstraßen
 		   # sind aktiv, Q, Straßen werden aktiv gemacht, Q
 		   # togglet jetzt genau entgegengesetzt...
 		   if ($str_draw{'l'} || $str_draw{'ql'}) {
-		       $lstrcm->invoke($qualitaet_l_check_index);
+		       $lstrcm->invoke($qualitaet_l_check_index) if $lstrcm && defined $qualitaet_l_check_index;
 		   }
 		   if ($str_draw{'s'} || $str_draw{'qs'} || !$str_draw{'l'}) {
-		       $strcm->invoke($qualitaet_check_index);
+		       $strcm->invoke($qualitaet_check_index) if $strcm && defined $qualitaet_check_index;
 		   }
 	       });
     bind_nomod($top, "<H>" => sub {
@@ -3924,25 +3999,26 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		   # sind aktiv, H, Straßen werden aktiv gemacht, H
 		   # togglet jetzt genau entgegengesetzt...
 		   if ($str_draw{'l'} || $str_draw{'hl'}) {
-		       $lstrcm->invoke($handicap_l_check_index);
+		       $lstrcm->invoke($handicap_l_check_index) if $lstrcm && defined $handicap_l_check_index;
 		   }
 		   if ($str_draw{'s'} || $str_draw{'hs'} || !$str_draw{'l'}) {
-		       $strcm->invoke($handicap_check_index);
+		       $strcm->invoke($handicap_check_index) if $strcm && defined $handicap_check_index;
 		   }
 	       });
     bind_nomod($top, "<question>" => sub {
 	$strcm->invoke($fragezeichen_check_index) })
 	if defined $fragezeichen_check_index;
 
-    bind_nomod($top, "<L>" => sub { $lstrcm->invoke($land_jwd_check_index) });
-    bind_nomod($top, "<O>" => sub { $ocm->invoke($ort_jwd_check_index) });
-    bind_nomod($top, "<W>" => sub { $wcm->invoke($wasserumland_check_index) });
+    bind_nomod($top, "<L>" => sub { $lstrcm->invoke($land_jwd_check_index) }) if $lstrcm && defined $land_jwd_check_index;
+    bind_nomod($top, "<O>" => sub { $ocm->invoke($ort_jwd_check_index) }) if $ocm && defined $ort_jwd_check_index;
+    bind_nomod($top, "<W>" => sub { $wcm->invoke($wasserumland_check_index) }) if $wcm && defined $wasserumland_check_index;
     bind_nomod($top, "<B>" => sub { $strlist_button->invoke });
 
     # XXX restliche Widgets fehlen noch
     for my $w ($strasse_check, $landstrasse_check, $ort_check,
 	       $ubahn_check, $sbahn_check, $rbahn_check, $wasser_check,
 	       $flaechen_check) {
+	next if !$w;
 	enter_leave_bind_for_help($w, [M"Option umschalten", '', M"Menü"]);
     }
 
@@ -9223,6 +9299,7 @@ sub plotstr {
 	    !exists $args{Canvas} &&
 	    !$p_draw{'pp'} &&
 	    ($abk eq 'l' || $abk eq 's') &&
+	    #$city eq 'Berlin' && # wegen map!?
 	    defined &BBBike::fast_plot_str) {
 	    eval {
 		die if $str->isa("Strassen::Storable");
@@ -9278,7 +9355,7 @@ sub plotstr {
 	my $conv = $str->get_conversion(%conv_args);
 
 	my $draw_sub = eval $plotstr_draw_sub;
-	string_eval_die($@, $plotstr_draw_sub) if $@; #die $@ if $@;
+	string_eval_die($@, $plotstr_draw_sub) if $@;
 
 	my $bench = Tk::Time_So_Far();
 	while (1) {
@@ -9504,6 +9581,12 @@ sub plot_sperre {
 	    }
 	}
 
+	my %conv_args;
+	if ($args{-map}) {
+	    $conv_args{Map} = $args{-map};
+	}
+	my $conv = $gesperrt->get_conversion(%conv_args);
+
 	$gesperrt->init;
 	my $real_pos = -1;
 	while (1) {
@@ -9512,6 +9595,8 @@ sub plot_sperre {
 	    my $ret = $gesperrt->next;
 	    my @kreuzungen = @{$ret->[Strassen::COORDS]};
 	    last if !@kreuzungen;
+            @kreuzungen = map { $conv->($_) } @kreuzungen
+		if $conv;
 
 	    my($icon_x, $icon_y, $icon_anchor);
 	    my $sub_cat;
@@ -9717,7 +9802,7 @@ sub line_shorten {
 }
 
 sub get_temp_blockings_files {
-    my $temp_blockings_dir = "$FindBin::RealBin/data/temp_blockings";
+    my $temp_blockings_dir = "$datadir/temp_blockings";
     my $file = "$temp_blockings_dir/bbbike-temp-blockings.pl";
     my $optimized_file = "$temp_blockings_dir/bbbike-temp-blockings-optimized.pl";
     return { dir            => $temp_blockings_dir,
@@ -10280,6 +10365,7 @@ sub plot_point {
 #XXX?       !$edit_normal_mode &&
 	    $abk eq 'lsa' &&
 	    !$diffed_str &&
+	    #$city eq 'Berlin' && # wegen map!?
 	    defined &BBBike::fast_plot_point) {
 	    eval {
 		die if $bhf->isa("Strassen::Storable");
@@ -10329,7 +10415,7 @@ sub plot_point {
 	my $conv = $bhf->get_conversion(%conv_args);
 
 	my $draw_sub = eval $plotpoint_draw_sub;
-	string_eval_die($@, $plotpoint_draw_sub) if $@; #die $@ if $@;
+	string_eval_die($@, $plotpoint_draw_sub) if $@;
 
 	while(1) {
 	    my $ret = $bhf->next;
@@ -12459,7 +12545,12 @@ sub show_info {
     require Karte::UTM;
     require Karte::ETRS89;
     my($sx,$sy) = $Karte::Standard::obj->trim_accuracy(anti_transpose($coords[0], $coords[1]));
-    my($px,$py) = $Karte::Polar::obj->trim_accuracy($coord_system_obj->map2map($Karte::Polar::obj, $sx, $sy));
+    my($px,$py);
+    if ($city_obj && $city_obj->can("standard_to_polar")) {
+	($px,$py) = $city_obj->standard_to_polar($sx,$sy);
+    } else {
+	($px,$py) = $Karte::Polar::obj->trim_accuracy($coord_system_obj->map2map($Karte::Polar::obj, $sx, $sy));
+    }
     my @polarcoord = (Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($py)),
 		      Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($px)));
     my @polarcoord2 = (Karte::Polar::dmm_human_readable("lat", Karte::Polar::ddd2dmm($py)),
@@ -12870,7 +12961,7 @@ sub show_info {
 				    $zielname = Encode::encode("iso-8859-1", $zielname);
 				}
 				require CGI;
-				my $wpt = "$zielname!$sx,$sy";
+				my $wpt = "$zielname!$px,$py";
 				my $zoom;
 				if ($mapscale_scale < 4000) {
 				    $zoom = 0;
@@ -12885,6 +12976,7 @@ sub show_info {
 						    zoom => $zoom,
 						    autosel => 1,
 						    maptype => "hybrid",
+						    coordsystem => "polar",
 						  });
 				my $url = $baseurl . "?" . $q2->query_string;
 				$url;
