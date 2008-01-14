@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.107 2008/01/14 21:25:36 eserte Exp $
+# $Id: Makefile,v 1.108 2008/01/14 21:31:02 eserte Exp $
 #
 
 # Targets:
@@ -37,6 +37,7 @@ STERNFAHRT_YEAR?=	2007
 KREISFAHRT_YEAR?=	2007
 
 EXTRA_MISCSRC_FILES=	bbd2esri winter_optimization.pl
+EXTRA_MISC_FILES=	gpx.xsd
 EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html \
 			opensearch/bbbike-opensearch.tpl.src \
 			opensearch/bbbike-opensearch.tpl.xml \
@@ -374,6 +375,7 @@ prepare-bbbike-dist-prog-bbbike:	\
 				prepare-bbbike-dist-prog-bbbike-tmp \
 				prepare-bbbike-dist-prog-bbbike-t \
 				prepare-bbbike-dist-prog-bbbike-miscsrc \
+				prepare-bbbike-dist-prog-bbbike-misc \
 				prepare-bbbike-dist-prog-bbbike-html \
 				prepare-bbbike-dist-prog-bbbike-images
 
@@ -433,6 +435,15 @@ prepare-bbbike-dist-prog-bbbike-miscsrc:
 .for f in ${EXTRA_MISCSRC_FILES}
 	if [ ! -e ${CURDIR}/BBBike/miscsrc/$f -o ${BBBIKE_ROOT_DIR}/miscsrc/$f -nt ${CURDIR}/BBBike/miscsrc/$f ] ; then \
 	    cp -pf ${BBBIKE_ROOT_DIR}/miscsrc/$f ${CURDIR}/BBBike/miscsrc/$f; \
+	fi
+.endfor
+
+prepare-bbbike-dist-prog-bbbike-misc:
+	[ -d ${CURDIR}/BBBike/misc ] || \
+	    mkdir ${CURDIR}/BBBike/misc
+.for f in ${EXTRA_MISC_FILES}
+	if [ ! -e ${CURDIR}/BBBike/misc/$f -o ${BBBIKE_ROOT_DIR}/misc/$f -nt ${CURDIR}/BBBike/misc/$f ] ; then \
+	    cp -pf ${BBBIKE_ROOT_DIR}/misc/$f ${CURDIR}/BBBike/misc/$f; \
 	fi
 .endfor
 
