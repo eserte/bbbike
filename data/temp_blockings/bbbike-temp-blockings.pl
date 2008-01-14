@@ -6565,7 +6565,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_003984',
        data  => <<EOF,
-userdel	q4::inwork 7360,8918 7320,8939 7275,8960
+userdel	q4::inwork 7360,8918 7325,8936 7320,8939 7275,8960
 EOF
      },
      { from  => 1162681200, # 2006-11-05 00:00
@@ -10768,6 +10768,14 @@ EOF
        source_id => 'IM_007543',
        data  => <<EOF,
 userdel	1::inwork 17053,3971 17387,4446
+EOF
+     },
+     { from  => undef, # 
+       until => 1204239599, # 2008-02-28 23:59
+       text  => 'Einbahnstraße Richtung Westen wegen Bauarbeiten',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 5154,7006 5251,6949 5374,6932
 EOF
      },
     );

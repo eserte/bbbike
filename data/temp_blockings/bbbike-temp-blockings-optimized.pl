@@ -808,6 +808,15 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	1::inwork 17053,3971 17387,4446
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1204239599,
+         'text' => 'Einbahnstraße Richtung Westen wegen Bauarbeiten',
+         'from' => undef,
+         'id' => 1278,
+         'data' => 'userdel	1::inwork 5154,7006 5251,6949 5374,6932
+',
+         'type' => 'gesperrt'
        }
      
 );

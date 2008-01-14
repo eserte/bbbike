@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd,v 1.12 2008/01/12 22:02:09 eserte Exp $
+# $Id: osm2bbd,v 1.12 2008/01/12 22:02:09 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -19,9 +19,11 @@ use lib "$FindBin::RealBin/..";
 
 use Data::Dumper;
 use Getopt::Long;
+use IO::File;
 use XML::LibXML;
 
 sub epoch2isodate (;$);
+sub touch ($);
 
 my $o;
 my $f;
@@ -439,29 +441,31 @@ EOF
 }
 
 # required files:
-system("touch gesperrt");
-system("touch wasserumland");
-system("touch wasserumland2");
-system("touch hoehe");
-system("touch orte");
-system("touch orte2");
-system("touch qualitaet_l");
-system("touch handicap_l");
-system("touch berlin");
-system("touch deutschland");
-system("touch orte_city");
+for my $file (qw(gesperrt wasserumland wasserumland2 hoehe
+		 orte orte2 qualitaet_l handicap_l
+		 berlin deutschland orte_city)) {
+    touch $file;
+}
 for (qw(cyclepath misc path route tram kfzverkehr scenic)) {
-    system("touch comments_$_");
+    touch "comments_$_";
 }
 if (!-d "temp_blockings") {
     mkdir "temp_blockings";
 }
-system("touch temp_blockings/bbbike-temp-blockings.pl");
+touch "temp_blockings/bbbike-temp-blockings.pl";
 
 if (%unhandled) {
     print "Unhandled categories:\n";
     local $Data::Dumper::Sortkeys = 1;
     print Dumper (\%unhandled);
+}
+
+sub touch ($) {
+    my $file = shift;
+    sysopen my $fh, $file, O_WRONLY|O_CREAT|O_NONBLOCK|O_NOCTTY
+	or die "Can't create $file: $!";
+    close $fh
+	or die "Can't close $file: $!";
 }
 
 # REPO BEGIN
