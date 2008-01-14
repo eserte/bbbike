@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.106 2007/12/23 21:30:50 eserte Exp $
+# $Id: Makefile,v 1.107 2008/01/14 21:25:36 eserte Exp $
 #
 
 # Targets:
@@ -416,6 +416,7 @@ prepare-bbbike-dist-prog-bbbike-htdocs:
 
 prepare-bbbike-dist-prog-bbbike-images:	prepare-sternfahrt2005-dist-images \
 					prepare-sternfahrt${STERNFAHRT_YEAR}-dist-images \
+					prepare-additional-dist-images \
 					prepare-favicon
 
 prepare-favicon:
@@ -577,6 +578,11 @@ prepare-sternfahrt${STERNFAHRT_YEAR}-dist-data:
 # Call once kreisfahrt files have changed:
 prepare-kreisfahrt-dist:
 	rsync --cvs-exclude -a ${BBBIKE_ROOT_DIR}/misc/kreisfahrt_${KREISFAHRT_YEAR}/ ${CURDIR}/BBBike/misc/kreisfahrt_${KREISFAHRT_YEAR}/
+
+prepare-additional-dist-images:
+	cp -pf ${BBBIKE_ROOT_DIR}/images/logo-fahrradstadt_75.png \
+	    ${CURDIR}/BBBike/images/
+	chmod ugo+r ${CURDIR}/BBBike/images/logo-fahrradstadt_75.png
 
 test:	test-on-remote test-from-local
 

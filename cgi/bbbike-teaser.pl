@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.24 2007/09/22 20:02:20 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.24 2007/09/22 20:02:20 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005,2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2006,2008 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -31,6 +31,7 @@ sub teaser {
 				teaser_perltk(),
 				teaser_beta(),
 				teaser_mapserver(),
+				teaser_fahrradstadt(),
 				#teaser_collecting_tracks(),
 				#teaser_sternfahrt(),
 				#teaser_kreisfahrt(),
@@ -174,6 +175,22 @@ sub teaser_beta {
     if (!$is_beta) {
 	<<EOF;
 <div class="teaser">Was gibt es in der <a href="$bbbike_url?info=1#beta" style="font-weight:bold;">nächsten Version</a> von www.bbbike.de?</div>
+EOF
+    } else {
+	();
+    }
+}
+
+sub teaser_fahrradstadt {
+    my @l = localtime; $l[4]++;$l[5]+=1900;
+    my $out_of_date = $l[5]>=2009 || $l[4]>=5;
+    if (!$out_of_date) {
+	<<EOF;
+<div class="teaser">
+BBBike: Auszeichnung "<b>FahrradStadtBerlin 2007</b>" für Verdienste um die Förderung des Radverkehrs<br/>
+<a href="http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0801/nachricht2936.html">Pressemitteilung</a><br/>
+<img src="$bbbike_images/logo-fahrradstadt_75.png"><br/>
+</div>
 EOF
     } else {
 	();
