@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: FahrinfoRealtime.pm,v 1.3 2006/09/17 20:20:13 eserte Exp $
+# $Id: FahrinfoRealtime.pm,v 1.4 2008/01/15 21:02:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -15,12 +15,16 @@
 # Description (de): Interface zu ÖPNV-Ist-Fahrzeiten bei Fahrinfo
 package FahrinfoRealtime;
 
-use BBBikePlugin;
-push @ISA, 'BBBikePlugin';
+## Die URL existiert nicht mehr.
+## Umschreiben zu aufwändig --- das Plugin wird ja eigentlich nicht genutzt.
+return 1;
+__END__
+use BBBike#Plugin;
+push @ISA, 'BBBike#Plugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($icon);
 
