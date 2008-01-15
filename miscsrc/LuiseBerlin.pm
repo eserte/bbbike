@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.21 2008/01/15 21:26:19 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.23 2008/01/15 22:27:47 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!caller(2)) {
@@ -35,11 +35,11 @@ use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
 BEGIN {
-    if (!eval q{ use WWW::Search::Google; 1 }) {
-	require BBBikeHeavy;
-	BBBikeHeavy::perlmod_install_advice("WWW::Search::Google");
-	return;
-    }
+#     if (!eval q{ use WWW::Search::Google; 1 }) {
+# 	require BBBikeHeavy;
+# 	BBBikeHeavy::perlmod_install_advice("WWW::Search::Google");
+# 	return;
+#     }
     if (!eval q{ use String::Similarity; 1 }) {
 	require BBBikeHeavy;
 	BBBikeHeavy::perlmod_install_advice("String::Similarity");
@@ -70,11 +70,12 @@ sub register {
 ## http://google-code-updates.blogspot.com/2006/12/beyond-soap-search-api.html
 ## and related pages.
 ## 
-#     $main::info_plugins{__PACKAGE__ . ""} =
-# 	{ name => "Luise-Berlin, Straßenlexikon",
-# 	  callback => sub { launch_street_url(@_) },
-# 	  icon => $icon,
-# 	};
+## Haha: I just construct the search and redirect to Google. Smart solution.
+    $main::info_plugins{__PACKAGE__ . ""} =
+	{ name => "Luise-Berlin, Straßenlexikon",
+	  callback => sub { launch_street_url(@_) },
+	  icon => $icon,
+	};
     $main::info_plugins{__PACKAGE__ . "_bezlex"} =
 	{ name => "Luise-Berlin, Bexirkslexikon",
 	  callback => sub { launch_bezlex_url(@_) },
@@ -201,32 +202,33 @@ sub launch_street_url {
     } elsif ($@) {
 	main::status_message($@, "err");
     } else {
-	main::status_message("Die Straße <$street> konnte über Google nicht gefunden werden.", "err");
+	main::status_message("Die Straße <$street> konnte über die Google-Such-API nicht gefunden werden.", "info");
+	my $fallback_url = "http://www.google.com/search?";
+	require CGI;
+	CGI->import('-oldstyle_urls');
+	my @queries = construct_queries(street => $street, cityparts => $cityparts);
+	my $qs = CGI->new({ q => $queries[0]->{query} })->query_string;
+	start_browser($fallback_url . $qs);
     }
 }
 
-sub do_google_search {
+sub construct_queries {
     my(%args) = @_;
-    my $my_api_key = $api_key;
-    my $google_api_key_file = "$ENV{HOME}/.googleapikey";
-    if (open(APIKEY, $google_api_key_file)) {
-	$my_api_key = <APIKEY>;
-	$my_api_key =~ s{[\r\n\s+]}{}g;
-	close APIKEY;
-	warn "Loaded Google API key from $google_api_key_file...\n" if $DEBUG;
-    }
-    my $search = WWW::Search->new("Google", key => $my_api_key);
+    my @queries;
     my $street = $args{street};
     my @cityparts = @{ $args{cityparts} };
     $street =~ s{(s)tr\.}{$1traße}ig;
     $street =~ s{-}{ }g;
-    my @results;
     for my $citypart (@cityparts) {
 	my $street_citypart = "$street in $citypart";
 	# Unfortunately there seems to be a lot of encoding issues
 	# Maybe best to use the ersatz notation for umlauts?
 	my $query = qq{allintitle:"}. $street_citypart . qq{" } .
-	    join(" OR ", map { ("site:$_", "site:www.$_") }
+	    ## Adding "www." does not help but seems to make things
+	    ## worse. E.g. did not find Baerwaldstraße in Kreuzberg, maybe
+	    ## because the search string was too long?
+	    #join(" OR ", map { ("site:$_", "site:www.$_") }
+	    join(" OR ", map { "site:$_" }
 		 qw(luise-berlin.de
 		    berlinchronik.de
 		    berlin-chronik.de
@@ -240,6 +242,26 @@ sub do_google_search {
 		    berlin-ehrungen.de
 		    berlinhistory.de
 		  ));
+	push @queries, { query => $query, street_citypart => $street_citypart };
+    }
+    @queries;
+}
+
+sub do_google_search {
+    my(%args) = @_;
+    my $my_api_key = $api_key;
+    my $google_api_key_file = "$ENV{HOME}/.googleapikey";
+    if (open(APIKEY, $google_api_key_file)) {
+	$my_api_key = <APIKEY>;
+	$my_api_key =~ s{[\r\n\s+]}{}g;
+	close APIKEY;
+	warn "Loaded Google API key from $google_api_key_file...\n" if $DEBUG;
+    }
+    my $search = WWW::Search->new("Google", key => $my_api_key);
+    my @queries = construct_queries(%args);
+    my @results;
+    for my $query_def (@queries) {
+	my($query, $street_citypart) = @{$query_def}{qw(query street_citypart)};
 	if ($DEBUG) {
 	    use Devel::Peek; Dump $query;
 	}
