@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiMap.pm,v 1.16 2007/10/13 12:37:53 eserte Exp $
+# $Id: MultiMap.pm,v 1.17 2008/01/15 21:51:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006,2007 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%images);
 
@@ -70,12 +70,13 @@ sub register {
 	  callback_3_std => sub { showmap_url_bvgstadtplan(@_) },
 	  ($images{BvgStadtplan} ? (icon => $images{BvgStadtplan}) : ()),
 	};
-    $main::info_plugins{__PACKAGE__ . "_LiveCom"} =
-	{ name => "maps.live.com",
-	  callback => sub { showmap_livecom(@_) },
-	  callback_3_std => sub { showmap_url_livecom(@_) },
-	  ($images{LiveCom} ? (icon => $images{LiveCom}) : ()),
-	};
+## Does not work anymore: URL gets redirected to http://intl.local.live.com/ page.
+#     $main::info_plugins{__PACKAGE__ . "_LiveCom"} =
+# 	{ name => "maps.live.com",
+# 	  callback => sub { showmap_livecom(@_) },
+# 	  callback_3_std => sub { showmap_url_livecom(@_) },
+# 	  ($images{LiveCom} ? (icon => $images{LiveCom}) : ()),
+# 	};
     $main::info_plugins{__PACKAGE__ . "_BikeMapDe"} =
 	{ name => "bikemap.de",
 	  callback => sub { showmap_bikemapde(@_) },

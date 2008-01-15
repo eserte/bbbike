@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.20 2007/09/29 21:10:39 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.21 2008/01/15 21:26:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!caller(2)) {
@@ -62,11 +62,19 @@ use vars qw($icon);
 
 sub register {
     _create_image();
-    $main::info_plugins{__PACKAGE__ . ""} =
-	{ name => "Luise-Berlin, Straßenlexikon",
-	  callback => sub { launch_street_url(@_) },
-	  icon => $icon,
-	};
+## This became unreliable and useless. At 2008-01, I made 
+## a test with about ten streets, with and without umlaut:
+## no hits! One or two of the search terms were successful
+## when entered in Google's search box. So the API seems
+## really to be dead. See also
+## http://google-code-updates.blogspot.com/2006/12/beyond-soap-search-api.html
+## and related pages.
+## 
+#     $main::info_plugins{__PACKAGE__ . ""} =
+# 	{ name => "Luise-Berlin, Straßenlexikon",
+# 	  callback => sub { launch_street_url(@_) },
+# 	  icon => $icon,
+# 	};
     $main::info_plugins{__PACKAGE__ . "_bezlex"} =
 	{ name => "Luise-Berlin, Bexirkslexikon",
 	  callback => sub { launch_bezlex_url(@_) },
@@ -365,6 +373,8 @@ sub batch {
 			     "debug!" => sub { $DEBUG = 2 },
 			    )
 	    or die <<EOF;
+NOTE that the Google Search API does not seem to work anymore!!!
+
 usage: $0 [-q] [-debug] [-f file | street cityparts]
 
 -f file: batch processing, where file is a Berlin.coords.data-styled
