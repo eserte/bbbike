@@ -10,7 +10,7 @@ use strict;
 use vars qw($x_delta $y_delta);
 
 use Test::More;
-plan tests => 12;
+plan tests => 14;
 
 BEGIN {
     eval {
@@ -57,6 +57,8 @@ ok(defined &main::set_canvas_scale_XS, "Subroutine definitions...");
 ok(defined &main::transpose_ls_XS);
 ok(defined &Strassen::to_koord1_XS);
 ok(defined &Strassen::to_koord_XS);
+ok(defined &Strassen::to_koord_f1_XS);
+ok(defined &Strassen::to_koord_f_XS);
 ok(defined &StrassenNetz::make_net_XS);
 ok(defined &BBBike::fast_plot_str);
 ok(defined &BBBike::fast_plot_point);

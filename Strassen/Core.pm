@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.83 2007/08/12 21:35:05 eserte Exp $
+# $Id: Core.pm,v 1.85 2008/01/17 22:50:52 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.83 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.85 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -938,6 +938,8 @@ sub to_koord1_slow {
 
 *to_koord = \&to_koord_slow;
 *to_koord1 = \&to_koord1_slow;
+*to_koord_f = \&to_koord_slow;
+*to_koord_f1 = \&to_koord_slow;
 
 # Return crossings as an array or hash reference.
 # Argumente:
@@ -1417,6 +1419,8 @@ if (0) { # peacify -w
     $Strassen::Util::VERBOSE = $Strassen::Util::VERBOSE;
     *to_koord = *to_koord;
     *to_koord1 = *to_koord1;
+    *to_koord_f = *to_koord_f;
+    *to_koord_f1 = *to_koord_f1;
 }
 
 1;

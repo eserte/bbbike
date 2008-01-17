@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.338 2008/01/12 21:40:40 eserte Exp $
+# $Id: bbbike,v 3.338 2008/01/12 21:40:40 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -5292,6 +5292,7 @@ sub define_item_attribs {
 	 'q3' => 'red',
 	 'q4' => '#c00000',
 	 # sonstiges
+	 'S'  => 'green3',	# S-Bahn
 	 'SA' => 'green3',	# S-Bahn, Zone A
 	 'SB' => 'green3',	# S-Bahn, Zone B
 	 'SC' => '#008000', 	# S-Bahn, Zone C
@@ -9289,6 +9290,12 @@ sub plotstr {
 		    (defined $filename ? (-label => $filename) : ()),
 		   );
 
+    my %conv_args;
+    if ($args{-map}) {
+	$conv_args{Map} = $args{-map};
+    }
+    my $conv = $str->get_conversion(%conv_args);
+
     eval {
 	# XXX Experiment
 	if ($orientation eq 'landscape' &&
@@ -9299,7 +9306,7 @@ sub plotstr {
 	    !exists $args{Canvas} &&
 	    !$p_draw{'pp'} &&
 	    ($abk eq 'l' || $abk eq 's') &&
-	    #$city eq 'Berlin' && # wegen map!?
+	    !$conv &&
 	    defined &BBBike::fast_plot_str) {
 	    eval {
 		die if $str->isa("Strassen::Storable");
@@ -9347,12 +9354,6 @@ sub plotstr {
 	$str->init;
 	$escape = 0;
 	my @extra_tags = ($abk =~ /^L\d+/ ? ("$abk-s") : ());
-
-	my %conv_args;
-	if ($args{-map}) {
-	    $conv_args{Map} = $args{-map};
-	}
-	my $conv = $str->get_conversion(%conv_args);
 
 	my $draw_sub = eval $plotstr_draw_sub;
 	string_eval_die($@, $plotstr_draw_sub) if $@;
@@ -10359,13 +10360,19 @@ sub plot_point {
 	    }
 	}
 
+	my %conv_args;
+	if ($args{-map}) {
+	    $conv_args{Map} = $args{-map};
+	}
+	my $conv = $bhf->get_conversion(%conv_args);
+
 	# XXX Experiment!!!
 	if ($orientation eq 'landscape' &&
 	    !$edit_mode &&
 #XXX?       !$edit_normal_mode &&
 	    $abk eq 'lsa' &&
 	    !$diffed_str &&
-	    #$city eq 'Berlin' && # wegen map!?
+	    !$conv &&
 	    defined &BBBike::fast_plot_point) {
 	    eval {
 		die if $bhf->isa("Strassen::Storable");
@@ -10407,12 +10414,6 @@ sub plot_point {
 	my $xadd_anchor = $xadd_anchor_type->{'u'};
 	my $yadd_anchor = $yadd_anchor_type->{'u'};
 	my $label_spaceadd = $label_spaceadd{'u'};
-
-	my %conv_args;
-	if ($args{-map}) {
-	    $conv_args{Map} = $args{-map};
-	}
-	my $conv = $bhf->get_conversion(%conv_args);
 
 	my $draw_sub = eval $plotpoint_draw_sub;
 	string_eval_die($@, $plotpoint_draw_sub) if $@;
@@ -16606,6 +16607,10 @@ sub make_net {
 		}
 		if ($is_restricted) {
 		    my $restr_str = new Strassen;
+		    # XXX Copy at least the map global directive
+		    if ($str_obj{'s'}->{GlobalDirectives}{map}) {
+			@{ $restr_str->{GlobalDirectives}{map} } = @{ $str_obj{'s'}->{GlobalDirectives}{map} };
+		    }
 		    $str_obj{'s'}->init;
 		    while(1) {
 			my $ret = $str_obj{'s'}->next;

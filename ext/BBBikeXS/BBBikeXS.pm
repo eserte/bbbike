@@ -30,6 +30,8 @@ package Strassen;
     local($^W) = 0;
     *to_koord = \&to_koord_XS;
     *to_koord1 = \&to_koord1_XS;
+    *to_koord_f = \&to_koord_f_XS;
+    *to_koord_f1 = \&to_koord_f1_XS;
 }
 
 {

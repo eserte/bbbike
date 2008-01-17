@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.57 2007/05/31 20:04:55 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.58 2008/01/17 22:40:01 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -29,7 +29,7 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =cut
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.57 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.58 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz;
 use strict;
@@ -804,6 +804,7 @@ sub build_search_code {
     my $net = $self->{Net};
     my $wegfuehrung = $self->{Wegfuehrung};
     my $penalty = $self->{Penalty};
+    local *strecke_s = $self->{strecke_s_sub} || \&Strassen::Util::strecke_s;
 ';
 
     # Use_2_Init
@@ -866,7 +867,7 @@ sub build_search_code {
 '; } else { $code .= '
     my %OPEN = ($from => 1);
 '; } $code .= '
-    my %NODES = ($from => [undef, 0, Strassen::Util::strecke_s($from, $to), undef]);
+    my %NODES = ($from => [undef, 0, strecke_s($from, $to), undef]);
     my %CLOSED;
     while (1) {
 #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@OPEN],[])->Indent(1)->Useqq(1)->Dump; # XXX
@@ -909,7 +910,7 @@ sub build_search_code {
                 push @path, $min_node;
                 my $prev_node = $NODES{$min_node}->[PREDECESSOR];
                 if (defined $prev_node) {
-                    $len += Strassen::Util::strecke_s($min_node, $prev_node);
+                    $len += strecke_s($min_node, $prev_node);
                     $min_node = $prev_node;
                 } else {
                     last;
@@ -987,7 +988,7 @@ sub build_search_code {
 	    $code .= $penalty_code;
 	} $code .= '
             my $g = $NODES_min_node->[DIST] + ' . "\$" . $len_pen . ';
-            my $f = $g + Strassen::Util::strecke_s($successor, $to);
+            my $f = $g + strecke_s($successor, $to);
 	    #printf STDERR "x,y=%s\nthis=%d f=%d g=%d\n", $successor, $' . $len_pen . ', $f, $g; # DEBUG_SUCC
             # !exists in OPEN and !exists in CLOSED:
             if (!exists $NODES{$successor}) {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.23 2007/07/23 07:10:28 eserte Exp eserte $
+# $Id: Util.pm,v 1.24 2008/01/17 22:40:11 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Util;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
 
 use strict;
 use Config;

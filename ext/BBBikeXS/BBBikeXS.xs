@@ -97,54 +97,62 @@ typedef SV* StrassenNetz;
 
 double canvas_scale = 1;
 
-__inline__ static void
-to_koord1(s, x, y)
-char *s;
-SV **x, **y;
-{
-    char *p;
-
-    p = s;
-    while(*p != ',' && *p != 0) p++;
-    if (*p == 0) {
-      warn("%s is expected to be of the format x,y\n", s);
-      *x = newSVsv(&PL_sv_undef);
-      *y = newSVsv(&PL_sv_undef);
-      return;
+#define TO_KOORD1(func_name,newsv_func,ato_func) \
+    __inline__ static void					\
+    func_name(s, x, y)						\
+    char *s;							\
+    SV **x, **y;						\
+    {								\
+        char *p;						\
+    								\
+        p = s;							\
+        while(*p != ',' && *p != 0) p++;			\
+        if (*p == 0) {						\
+          warn("%s is expected to be of the format x,y\n", s);	\
+          *x = newSVsv(&PL_sv_undef);				\
+          *y = newSVsv(&PL_sv_undef);				\
+          return;						\
+        }							\
+    								\
+        p++;							\
+    								\
+        *x = newsv_func(ato_func(s));				\
+        *y = newsv_func(ato_func(p));				\
     }
-	
-    p++;
 
-    *x = newSViv(atoi(s));
-    *y = newSViv(atoi(p));
-}
+TO_KOORD1(to_koord1,newSViv,atoi)
+TO_KOORD1(to_koord_f1,newSVnv,atof)
 
-__inline__ static AV*
-to_koord(raw_coords)
-AV* raw_coords;
-{
-    int i = 0;
-    int len = av_len(raw_coords);
-    AV *res = newAV();
-
-    for(; i<=len; i++) {
-      SV **tmp;
-      SV *x, *y;
-      AV *elem;
-      char *s;
-
-      tmp = av_fetch(raw_coords, i, 0);
-      s = SvPV(*tmp, PL_na);
-
-      to_koord1(s, &x, &y);
-      elem = newAV();
-      av_extend(elem, 2);
-      av_store(elem, 0, x);
-      av_store(elem, 1, y);
-      av_push(res, newRV_noinc((SV*)elem));
+#define TO_KOORD(func_name,to_koord1_func) \
+    __inline__ static AV*			\
+    func_name(raw_coords)			\
+    AV* raw_coords;				\
+    {						\
+        int i = 0;				\
+        int len = av_len(raw_coords);		\
+        AV *res = newAV();			\
+    						\
+        for(; i<=len; i++) {			\
+          SV **tmp;				\
+          SV *x, *y;				\
+          AV *elem;				\
+          char *s;				\
+    						\
+          tmp = av_fetch(raw_coords, i, 0);	\
+          s = SvPV(*tmp, PL_na);		\
+    						\
+          to_koord1_func(s, &x, &y);		\
+          elem = newAV();			\
+          av_extend(elem, 2);			\
+          av_store(elem, 0, x);			\
+          av_store(elem, 1, y);			\
+          av_push(res, newRV_noinc((SV*)elem));	\
+        }					\
+        return res;				\
     }
-    return res;
-}
+
+TO_KOORD(to_koord,to_koord1)
+TO_KOORD(to_koord_f,to_koord_f1)
 
 static int
 strecke(kreuz_coord, i)
@@ -346,6 +354,37 @@ to_koord_XS(raw)
 	if (!SvROK(raw) || SvTYPE(SvRV(raw)) != SVt_PVAV)
             croak("argument to to_koord_XS should be a ref to an array.\n");
 	RETVAL = newRV_noinc((SV*)to_koord(SvRV(raw)));
+
+        OUTPUT:
+	RETVAL
+
+SV*
+to_koord_f1_XS(s)
+	char *s;
+
+	PREINIT:
+	AV *elem;
+	SV *x, *y;
+
+	CODE:
+	to_koord_f1(s, &x, &y);
+	elem = newAV();
+	av_extend(elem, 2);
+	av_store(elem, 0, x);
+	av_store(elem, 1, y);
+	RETVAL = newRV_noinc((SV*)elem);
+
+	OUTPUT:
+	RETVAL
+
+SV*
+to_koord_f_XS(raw)
+	SV *raw;
+
+	CODE:
+	if (!SvROK(raw) || SvTYPE(SvRV(raw)) != SVt_PVAV)
+            croak("argument to to_koord_f_XS should be a ref to an array.\n");
+	RETVAL = newRV_noinc((SV*)to_koord_f(SvRV(raw)));
 
         OUTPUT:
 	RETVAL

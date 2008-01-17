@@ -16,6 +16,28 @@ sub make_net_slow_1 {
         return if $self->net_read_cache_1;
     }
 
+    $self->{strecke_sub} = \&Strassen::Util::strecke;
+    $self->{strecke_s_sub} = \&Strassen::Util::strecke_s;
+    $self->{to_koord_sub} = \&Strassen::to_koord;
+    if ($self->{Strassen}{GlobalDirectives} && $self->{Strassen}{GlobalDirectives}{map} && $self->{Strassen}{GlobalDirectives}{map}[0] eq 'polar') {
+	require Math::Trig;
+        $self->{strecke_sub} = sub {
+            my($s1,$s2) = @_;
+            my $lon0 = Math::Trig::deg2rad($s1->[0]);
+	    my $lat0 = Math::Trig::deg2rad(90 - $s1->[1]);
+            my $lon1 = Math::Trig::deg2rad($s2->[0]);
+	    my $lat1 = Math::Trig::deg2rad(90 - $s2->[1]);
+            Math::Trig::great_circle_distance($lon0, $lat0,
+                                              $lon1, $lat1, 6372795);
+        };
+	$self->{strecke_s_sub} = sub {
+        $self->{strecke_sub}->([split /,/, $_[0]], [split /,/, $_[1]]);
+        };
+        $self->{to_koord_sub} = \&Strassen::to_koord_f;
+    }
+    local *strecke = $self->{strecke_sub};
+    local *to_koord = $self->{to_koord_sub};
+
     if ($VERBOSE) {
 	warn "Using slow (type 1) version of make_net\n";
     }
@@ -33,13 +55,12 @@ sub make_net_slow_1 {
 	my $ret = $strassen->next;
 	my @kreuzungen = @{$ret->[Strassen::COORDS()]};
 	last if @kreuzungen == 0;
-	my @kreuz_coord = @{Strassen::to_koord(\@kreuzungen)};
+	my @kreuz_coord = @{to_koord(\@kreuzungen)};
 
 
 	for(my $i = 0; $i < $#kreuzungen; $i++) {
 	    # Integer reicht vollkommen aus, da die Angaben sowieso in m sind
-	    my $entf = int(Strassen::Util::strecke($kreuz_coord[$i],
-						   $kreuz_coord[$i+1]));
+	    my $entf = int(strecke($kreuz_coord[$i], $kreuz_coord[$i+1]));
  	    $net->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $entf;
  	    $net->{$kreuzungen[$i+1]}{$kreuzungen[$i]} = $entf;
 # XXX not yet, but maybe someday necessary:
@@ -117,6 +138,28 @@ sub make_net_slow_2 {
         return if $self->net_read_cache_2;
     }
 
+    $self->{strecke_sub} = \&Strassen::Util::strecke;
+    $self->{strecke_s_sub} = \&Strassen::Util::strecke_s;
+    $self->{to_koord_sub} = \&Strassen::to_koord;
+    if ($self->{Strassen}{GlobalDirectives} && $self->{Strassen}{GlobalDirectives}{map} && $self->{Strassen}{GlobalDirectives}{map}[0] eq 'polar') {
+	require Math::Trig;
+        $self->{strecke_sub} = sub {
+            my($s1,$s2) = @_;
+            my $lon0 = Math::Trig::deg2rad($s1->[0]);
+	    my $lat0 = Math::Trig::deg2rad(90 - $s1->[1]);
+            my $lon1 = Math::Trig::deg2rad($s2->[0]);
+	    my $lat1 = Math::Trig::deg2rad(90 - $s2->[1]);
+            Math::Trig::great_circle_distance($lon0, $lat0,
+                                              $lon1, $lat1, 6372795);
+        };
+	$self->{strecke_s_sub} = sub {
+        $self->{strecke_sub}->([split /,/, $_[0]], [split /,/, $_[1]]);
+        };
+        $self->{to_koord_sub} = \&Strassen::to_koord_f;
+    }
+    local *strecke = $self->{strecke_sub};
+    local *to_koord = $self->{to_koord_sub};
+
     if ($VERBOSE) {
 	warn "Using slow (type 2) version of make_net\n";
     }
@@ -139,7 +182,7 @@ sub make_net_slow_2 {
 	my $ret = $strassen->next;
 	my @kreuzungen = @{$ret->[Strassen::COORDS()]};
 	last if @kreuzungen == 0;
-	my @kreuz_coord = @{Strassen::to_koord(\@kreuzungen)};
+	my @kreuz_coord = @{to_koord(\@kreuzungen)};
 
 
 	my @k_i;
@@ -155,8 +198,7 @@ sub make_net_slow_2 {
 
 	for (my $i = 0; $i < $#k_i; $i++) {
 	    my $entf = pack("l",
-			    int(Strassen::Util::strecke($kreuz_coord[$i],
-							$kreuz_coord[$i+1])));
+			    int(strecke($kreuz_coord[$i], $kreuz_coord[$i+1])));
 	    my $k_i_u  = unpack("l", $k_i[$i]);
 	    my $k_i1_u = unpack("l", $k_i[$i+1]);
 	    $net->[$k_i_u]  .= $k_i[$i+1] . $entf;
@@ -228,7 +270,7 @@ sub net_write_cache_2 {
     }
 }
 
-# line 225 Generated_src.pm
+# line 245 Generated_src.pm
 sub route_to_name_1 {
     my($self, $route_ref, %args) = @_;
     my @strname;
@@ -237,6 +279,7 @@ sub route_to_name_1 {
     require Route;
     require Strassen::Util;
     require Strassen::Strasse;
+    local *strecke = $self->{strecke_sub} || \&Strassen::Util::strecke;
     my $i;
     for($i = 0; $i < $#{$route_ref}; $i++) {
 
@@ -341,7 +384,7 @@ sub route_to_name_1 {
 
     @strname;
 }
-# line 225 Generated_src.pm
+# line 245 Generated_src.pm
 sub route_to_name_2 {
     my($self, $route_ref, %args) = @_;
     my @strname;
@@ -350,6 +393,7 @@ sub route_to_name_2 {
     require Route;
     require Strassen::Util;
     require Strassen::Strasse;
+    local *strecke = $self->{strecke_sub} || \&Strassen::Util::strecke;
     my $i;
     for($i = 0; $i < $#{$route_ref}; $i++) {
 
@@ -464,7 +508,7 @@ sub route_to_name_2 {
 
     @strname;
 }
-# line 378 Generated_src.pm
+# line 399 Generated_src.pm
 sub reachable_1 {
     my($self, $coord) = @_;
     if (!exists $self->{Net}{$coord}) {
@@ -475,7 +519,7 @@ sub reachable_1 {
 	1;
     }
 }
-# line 378 Generated_src.pm
+# line 399 Generated_src.pm
 sub reachable_2 {
     my($self, $coord) = @_;
     if (!defined $self->{Net}[$self->{Coord2Index}{$coord}]) {
