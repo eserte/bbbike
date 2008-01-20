@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 2.16 2007/12/31 00:35:31 eserte Exp eserte $
+# $Id: bbbikegooglemap.cgi,v 2.22 2008/01/19 17:52:52 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2006,2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2006,2007,2008 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -145,6 +145,9 @@ sub run {
 			$maptype =~ /normal/i ? 'G_NORMAL_MAP' :
 			'G_SATELLITE_MAP');
 
+    ($self->{initial_mapmode}) = param("mapmode") =~ m{^(search|addroute|browse)$};
+    $self->{initial_mapmode} ||= "";
+
     $self->{converter} = $converter;
     $self->{coordsystem} = $coordsystem;
 
@@ -219,6 +222,7 @@ sub get_html {
     <script src="$bbbikeroot/html/bbbike_util.js" type="text/javascript"></script>
     <style type="text/css"><!--
         .sml          { font-size:x-small; }
+	.rght	      { text-align:right; }
 	#permalink    { color:red; }
 	#addroutelink { color:blue; }
 	.boxed	      { border:1px solid black; padding:3px; }
@@ -236,7 +240,9 @@ sub get_html {
     var commonSearchParams = "&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&scope=;output_as=xml;referer=bbbikegooglemap";
 
     var addRoute = [];
+    var undoRoute = [];
     var addRouteOverlay;
+    var addRouteOverlay2;
 
     var searchStage = 0;
 
@@ -343,9 +349,34 @@ sub get_html {
     }
 
     function resetRoute() {
+	undoRoute = addRoute;
 	addRoute = [];
 	updateRoute();
 	removeTempBlockingMarkers();
+    }
+
+    function doUndoRoute() {
+	addRoute = undoRoute;
+	undoRoute = [];
+	updateRoute();
+	removeTempBlockingMarkers();
+    }
+
+    function resetOrUndoRoute() {
+        if (addRoute.length == 0 && undoRoute.length != 0) {
+	    doUndoRoute();
+	} else {
+	    resetRoute();
+	}
+    }
+
+    function setDeleteRouteLabel() {
+	var routeDelLink = document.getElementById("routedellink");
+	if (addRoute.length == 0 && undoRoute.length != 0) {
+	    routeDelLink.innerHTML = "Route wiederherstellen";
+	} else {
+	    routeDelLink.innerHTML = "Route löschen"; // see also HTML label!
+	}
     }
 
     function updateRoute() {
@@ -354,6 +385,7 @@ sub get_html {
 	if ($self->{autosel}) {
 	    updateRouteSel();
 	}
+	setDeleteRouteLabel();
     }
 
     function updateRouteDiv() {
@@ -386,10 +418,28 @@ sub get_html {
 	    map.removeOverlay(addRouteOverlay);
 	    addRouteOverlay = null;
 	}
-	if (!addRoute.length)
+	if (!addRoute.length) {
 	   return;
-	addRouteOverlay = new GPolyline(addRoute);
+	}
+	if (addRoute.length == 1) {
+	    addRouteOverlay = new GMarker(addRoute[0]);
+	} else {
+	    var opts = {}; // GPolylineOptions
+	    opts.clickable = false;
+	    addRouteOverlay = new GPolyline(addRoute, null, null, null, opts);
+	}
 	map.addOverlay(addRouteOverlay);
+
+	if (false) { // experiment: draw geodesic lines
+	    if (addRouteOverlay2) {
+		map.removeOverlay(addRouteOverlay2);
+		addRouteOverlay2 = null;
+	    }
+	    var opts = {}; // GPolylineOptions
+	    opts.geodesic = true;
+	    addRouteOverlay2 = new GPolyline(addRoute, '#ff0000', null, null, opts);
+	    map.addOverlay(addRouteOverlay2);
+	}
     }
 
     function updateTempBlockings(resultXml) {
@@ -526,6 +576,7 @@ sub get_html {
 	    updateRouteOverlay();
 	    updateTempBlockings(xml);
 	    updateWptDiv(xml);
+	    setDeleteRouteLabel();
 	}
     }
 
@@ -576,14 +627,16 @@ sub get_html {
 	    startOverlay = null;
 	}
 	startPoint = point;
-	startOverlay = new GMarker(startPoint, startIcon);
+	var startOpts = {icon:startIcon, clickable:false}; // GMarkerOptions
+	startOverlay = new GMarker(startPoint, startOpts);
 	map.addOverlay(startOverlay);
     }
 
     function setGoalMarker(point) {
 	removeGoalMarker();
 	goalPoint = point;
-	goalOverlay = new GMarker(goalPoint, goalIcon);
+	var goalOpts = {icon:goalIcon, clickable:false}; // GMarkerOptions
+	goalOverlay = new GMarker(goalPoint, goalOpts);
 	map.addOverlay(goalOverlay);
     }
 
@@ -597,6 +650,14 @@ sub get_html {
     function init() {
         var frm = document.forms.commentform;
         get_and_set_email_author_from_cookie(frm);
+        var initial_mapmode = "$self->{initial_mapmode}";
+	if (initial_mapmode) {
+	    var elem = document.getElementById("mapmode_" + initial_mapmode);
+	    if (elem) {
+		elem.checked = true;
+		currentModeChange();
+	    }
+	}
     }
 
     function send_via_post() {
@@ -772,7 +833,7 @@ EOF
                type="radio" name="mapmode" value="addroute" /></td>
     <td><label for="mapmode_addroute">Mit Maus<span style="color:red;">klicks</span> eine Route erstellen</label><br/><!-- XXX remove colored "klicks" some time -->
         <a href="javascript:deleteLastPoint()">Letzten Punkt löschen</a>
-        <a href="javascript:resetRoute()">Route löschen</a></td>
+        <a href="javascript:resetOrUndoRoute()" id="routedellink">Route löschen</a></td>
    </tr>
  </table>
 </form>
@@ -794,27 +855,36 @@ EOF
 </div>
 
 <form name="geocode" onsubmit='return doGeocode()' class="boxed" style="margin-top:0.5cm; margin-left:10px; width:45%; float:left;">
-  Adresse: <input name="geocodeAddress" /> <button>Zeigen</button>
+  <table style="width:100%;">
+    <colgroup><col width="0*" /><col width="1*" /><col width="0*" /></colgroup>
+    <tr>
+      <td>Adresse:</td>
+      <td><input style="width:100%;" name="geocodeAddress" /></td>
+      <td><button>Zeigen</button></td>
+    </tr>
+  </table>
 </form>
  
 <form name="googlemap" onsubmit='return checkSetCoordForm()' class="boxed" style="margin-top:0.3cm; margin-left:10px; width:45%; float:left;">
   <input type="hidden" name="zoom" value="@{[ $zoom ]}" />
   <input type="hidden" name="autosel" value="@{[ $self->{autosel} ]}" />
   <input type="hidden" name="maptype" value="@{[ $self->{maptype} ]}" />
-  Koordinatensystem:<br />
-  <label><input type="radio" name="coordsystem" value="bbbike" @{[ $coordsystem eq 'bbbike' ? 'checked' : '' ]} /> BBBike</label><br />
-  <label><input type="radio" name="coordsystem" value="polar" @{[ $coordsystem eq 'polar' ? 'checked' : '' ]} /> WGS84-Koordinaten (DDD)</label><br />
-  <br />
-  <label>Koordinate(n) (x,y bzw. lon,lat): <input name="wpt_or_trk" size="15" /></label><br />
-  <br />
+  <label>Koordinate(n) (x,y bzw. lon,lat): <input name="wpt_or_trk" size="17" /></label>
   <button>Zeigen</button>
+  <br />
+  <div class="sml">
+    Koordinatensystem:<br />
+    <label><input type="radio" name="coordsystem" value="polar" @{[ $coordsystem eq 'polar' ? 'checked' : '' ]} /> WGS84-Koordinaten (DDD)</label>
+    <label><input type="radio" name="coordsystem" value="bbbike" @{[ $coordsystem eq 'bbbike' ? 'checked' : '' ]} /> BBBike</label>
+  </div>
+  
 </form>
 
 <form id="commentform" style="position:absolute; top:20px; left: 20px; border:1px solid black; padding:4px; background:white; visibility:hidden;">
   <table>
     <tr><td>Kommentar:</td><td> <textarea cols="40" rows="4" name="comment"></textarea></td></tr>
-    <tr><td>Name:</td><td><input name="author"></td></tr>
-    <tr><td>E-Mail:</td><td> <input name="email"></td></tr>
+    <tr><td>Dein Name:</td><td><input name="author"></td></tr>
+    <tr><td>Deine E-Mail:</td><td> <input name="email"></td></tr>
     <tr><td></td><td><a href="#" onclick="send_via_post(); return false;">Senden</a>
                      <a href="#" onclick="close_commentform(); return false;">Abbrechen</a>
                  </td></tr>

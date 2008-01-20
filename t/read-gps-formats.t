@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: read-gps-formats.t,v 1.8 2007/07/20 19:33:38 eserte Exp $
+# $Id: read-gps-formats.t,v 1.9 2008/01/19 19:41:56 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -54,6 +54,7 @@ my @gps_formats       = (
 			 # TODO: ["$miscdir/ovl_resources/various_from_net/10_um_die_hohe_reuth.ovl", "Ovl", "Binary 4.0"],
 			);
 my @strassen_formats  = (
+			 ["$gpsmandir/19.wpt", "GPSman waypoints and group"],
 			 ["$gpsmandir/20040114.trk", "GPSman track"],
 			 ["$gpsmandir/20040123.wpt", "GPSman waypoints"],
 			 ["$isdir/IS_strassen.MID", "MapInfo"],

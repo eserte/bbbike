@@ -33,8 +33,7 @@ Gitschiner Str.	? 9948,10280 10122,10294 10340,10301 10605,10312 10859,10333 109
 Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 12188,14321 12338,14532 12384,14600 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941 12628,14962 12722,15105 12743,15138 12880,15335 12966,15478 13098,15592 13316,15758
 #: last_checked: 2007-09-07
 Vulkanstraße	? 15912,13153 15892,13534
-#: last_checked: 2006-06-16 (von Corinna):
-Gorkistr.	? 2995,20487 2615,20421
+# XXX laut Luftbild fertig: last_checked: 2006-06-16 (von Corinna):Gorkistr.	? 2998,20487 2974,20483 2615,20421
 Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 17966,11730 17746,11748 17436,11791 17249,11802
 #: last_checked: 2007-07-15
 Löhleinstraße	? 2717,5578 2499,5144 2454,5067 2288,4932
@@ -93,8 +92,7 @@ Bauarbeiten, danach neu asphaltiert, bis 2008-12-31	?::inwork 9220,11781 9208,11
 Radweg durch den Münsigerpark: bis spätestens 2011-01-01 realisiert	?::inwork -3552,14082 -3776,14419
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20070906.1125.84785.html
 Neue Schönholzer Straße: ab 2007-09-06 asphaltiert	?::inwork 10089,18180 10140,18080 10179,17772
-#: last_checked: 2007-10-03
-Pankebrücke: in Bau	?::inwork 13554,23123 13567,23101 13551,23072
+# XXX fertig, laut frank huth: : last_checked: 2007-10-03 Pankebrücke: in Bau	?::inwork 13554,23123 13567,23101 13551,23072
 #: last_checked: 2007-10-03 vvv
 Viehtrift: Straße in Bau (asphaltiert)	?::inwork 14130,12926 13997,12969
 Zur Börse: Straße in Bau (asphaltiert)	?::inwork 14163,13025 14032,13068
@@ -255,6 +253,10 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet; in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: Susanne Rau:
+Sawallstr. (Erkner): mäßiges Kopfsteinpflaster, Q2	? 34024,1360 34181,1349
+#: by: anonymous:
+Nidecksteig: guter Asphalt, Q0	? -8126,14740 -8099,14771 -8059,15014 -8041,15132
 #: by: Ramona Hesse vvv
 Am Schlangenfenn (Potsdam): guter Asphalt, Q0	? -10516,-5498 -10585,-5528 -10630,-5553 -10712,-5594 -10758,-5502 -10630,-5440
 Am Schlangenfenn (Potsdam): guter Asphalt, Q0	? -10585,-5528 -10630,-5440 -10652,-5393 -10804,-5464
@@ -555,7 +557,7 @@ Werder - zum Plessower See: genaue Wegführung? Qualität?	? -22042,-2060 -22734,-
 Alt-Brieselang - Brieselang: Qualität? genaue Wegführung?	? -16914,22393 -18103,22064 -17978,21602 -18415,21465 -18378,20766 -18817,19637
 Marquardt, Hauptstr.: Laut mobil-potsdam.de: Asphaltiert	? -18811,4782
 Goetheplatz: Einbahnstraßenregelung auch für Radfahrer? Qualität?	? -9809,-1435 -9902,-1445 -9922,-1395 -9809,-1435
-Goethestr./Fontanestr.: laut "mobil-potsdam.de" asphaltiert	? -9809,-1435 -9506,-1431 -9215,-1431 -9219,-1590 -9224,-1727
+Goethestr./Fontanestr.: laut "mobil-potsdam.de" asphaltiert	? -9809,-1435 -9506,-1431 -9429,-1430 -9215,-1431 -9219,-1590 -9224,-1727
 Strausberg - Garzau: Qualität (laut "Berliner Umland" teilweise witterungsabhängige Strecke, auf Garzauer Seite anscheinend nur Feldweg)?	? 42578,15750 43850,15737 45536,15438 46035,15042 46421,14990
 Waldsieversdorf: laut "Berliner Umland" geeignete Strecke	? 54751,15669 55000,15887 55225,15862 55875,16287 56487,16825
 Waldsieversdorf - Münchehofe: laut "Berliner Umland" witterungsabhängige Strecke	? 56487,16825 56907,17041 57839,18016 58223,18144 58345,18388
@@ -927,7 +929,8 @@ Vergissmeinnichtweg: Qualität?	? 21608,85 21582,185
 #: note: laut anonymen Eintrag guter Asphalt und Einbahnstraße
 Wünsdorf: steht hier mittlerweile eine Eisenbahnbrücke?	? 15229,-27157 15682,-26971 15960,-26906
 Sandgrasweg: Qualität?	? 2840,21141 2866,21103 2896,21031
-Sandgrasweg - Havelmüllerweg: Qualität?	? 2896,21031 2914,20944 2916,20870
+Sandgrasweg - Nordgraben: Qualität?	? 2896,21031 2915,20932 2919,20910
+Nordgraben - Bollestr.: Qualität?	? 2919,20910 2915,20875
 Tornower Weg - Mauerweg am Nordgraben: Durchfahrt für Radfahrer möglich, Qualität?	? 6461,20642 6488,20505
 Radewege - Brielow: Qualität?	? -46098,7170 -46447,6966 -46675,6078 -47386,5139 -47804,5025 -48365,5136
 Brielow - Hohenferchesar: Qualität?	? -48390,5412 -49416,7055 -49898,7487 -50089,8223 -50533,8629 -50660,8921 -50856,8901 -51205,9530 -51535,9758 -51829,10290
@@ -1189,7 +1192,6 @@ Schillerstr. (Zeuthen): Qualität?	? 25763,-4283 25839,-5179 26259,-5681
 #: note: unklarer Eintrag von anonymous: "mäßig", "kein Radweg" existiert
 Turmstr. (Potsdam): Qualität?	? -8081,-4396 -8111,-4396 -8259,-4119
 Turmstr. (Potsdam): Qualität?	? -8294,-4022 -8404,-3824 -8510,-3616
-Kronprinzessinenweg/Havelchaussee - Schlachtensse: existiert ein für Radfahrer befahrbarer Weg? Qualität?	? -3296,3686 -3324,3382
 Neue Straße (Phöben): Qualität?	? -26488,2783 -26183,2902 -26070,2911 -25847,2835 -25664,2840
 Baumgartenbrück - B1: Rampe oder Treppe?	? -19189,-5754 -19181,-5732 -19201,-5714
 Fähre Ketzin - Paretz: Qualität des Radwegs? Nur für Radfahrer oder auch für Autofahrer befahrbar? Führt hier die Route F3 entlang?	? -26785,5851 -26526,5882 -26360,5950 -26214,5988 -26121,6011 -26141,6106 -26010,6122 -25973,6078 -25933,6081 -25921,6058 -25629,5996 -25569,6220 -25516,6282 -25444,6326
@@ -1260,7 +1262,7 @@ Herrenweg: Qualität? Vom nördlichen Ende aus ein Feldweg, vom südlichen Ende aus
 Brüssow - Caselow: Qualität (wahrscheinlich schlechtes Kopfsteinpflaster, vom südlichen Ende aus gesehen)?	? 55605,112935 55723,114036 56123,116226 55986,116675 56317,117060 56355,117304 56496,117228 57586,117220
 Bahnübergang	? 19302,-734
 Bohnsdorfer Chaussee/Gartenstr.: Qualität?	? 19704,-490 19302,-734 18773,-1095 18892,-1273
-Waldstr.: Qualität?	? 24539,-3298 24872,-3095 24987,-3015 25182,-2915 25580,-2673 25958,-2455
+Waldstr.: Qualität?	? 24456,-3327 24539,-3292 24553,-3281 24872,-3095 24987,-3015 25182,-2915 25580,-2673 25958,-2455
 Bahnhofstr.: Qualität in diesem Abschnitt (ostl. d. Bergstr.)?	? -2657,-2907 -2720,-2937 -2817,-2967 -2878,-3004
 Scharnweberstr. (Friedrichshagen): Qualität?	? 25706,4723 25720,4832
 #: by: Sarah Hemmelmann - q3
@@ -1459,7 +1461,7 @@ Perwenitzer Weg: Qualität der Straße? Existiert hier ein Radweg? Ist es möglich,
 #: XXX unklarer anonymer Eintrag (gutes Kopfsteinpflaster), Teile der Straße sehen tatsächlich nach Kopfsteinpflaster aus, Teile sind anscheinend asphaltiert oder unbefestigt; Netzanbindung fehlt
 Elfenallee: Qualität? (möglicherweise Kopfsteinpflaster?)	? 12260,21583 12249,21626 12312,21762 12332,21910 12362,22131 12393,22332 12397,22429
 #: XXX genaue Wegführung?
-Am Pankepark: Qualität?	? 8184,14052 8246,14088 8200,14160 8152,14130
+Am Pankepark: Qualität nach den Bauarbeiten (z.Zt. noch Baustraße)?	? 8184,14052 8246,14088 8200,14160 8152,14130
 Bernöwe - Zehdenick: Qualität?	? 5475,45590 5987,46492 7047,47102 8254,47126 9204,48003 9825,48275
 Großstr.: Qualität (östlicher Abschnitt Kopfsteinpflaster, wie sieht der Abschnitt zur Griechischen Allee hin aus?)?	? 18574,6401 18483,6460 18457,6490 18429,6582
 Hildegard-Marcusson-Straße/Haupstr.: Ampel in Bau	? 16004,10204
@@ -1484,6 +1486,7 @@ Darwinbogen (Königs Wusterhausen): Qualität (betoniert?)? Mit Radweg oder Radspu
 #: by: Ditmar Grote:
 Selchow - Rotberg, am Bauzaun des Großflughafens entlang: unbefestigter Weg, genaue Wegführung?	? 16190,-6406 18301,-6019
 #: XXX: anonymer Eintrag meint "gutes Kopfsteinpflaster", aber die Straße erscheint auf dem Luftbild anders
+#: XXX: annette.kretschmer meint "schlechtes Kopfsteinpflaster Q3" von Waldstr. bis Genossenschaftsstr., aber sie führt nur bis zur Hackenbergstr.?
 Friedlander Str.: Qualität?	? 20253,4034 20305,4096 20312,4123 20410,4192 20540,4285 20574,4317 20594,4342 20614,4381 20684,4596 20716,4691 20765,4839 20852,5106
 #: XXX: anonymer Eintrag meint "Asphalt":
 Limburger Str.: Qualität (möglicherweise Asphalt)? Gibt es Abschnitte, die für den Autoverkehr gesperrt sind (möglicherweise an der TFH und vor der Müllerstr.)? Gibt es andere Einschränkungen, z.B. Schranken?	? 6562,15177 6727,15319 6803,15386 6835,15412 6889,15452 6950,15514 7012,15571 7129,15717
@@ -1518,24 +1521,24 @@ Sonnenweg: Qualität?	? 34046,155 34267,94 34309,59 34451,109 34606,-92 34905,-18
 Fürstenwalde: Qualität? Straßennamen?	? 55447,-4432 55677,-4489 55754,-4521 55793,-4521 55787,-4468 55740,-4453 55746,-4408 55888,-4384 56147,-4494 56517,-4606 56495,-4732
 Falkenberg - Wilmersdorf: Qualität?	? 67223,-1765 67432,-1337 67874,-787 67931,-717 68094,-376 68205,-201 68275,102 68336,222 68475,377 68583,444 68936,594 69213,658 69364,652
 #: by: Uwe Metzler:
-Lichterfelder Weg: unklare Wegführung; mäßige Qualität: am Anfang (Goerzallee?) Kopfsteinppflaster, danach loser Sandweg	? 3140,1412 3140,1411 3147,1391 3106,1344 3082,1333 3071,1346 2849,1248
+Lichterfelder Weg: unklare Wegführung; mäßige Qualität: am Anfang (Goerzallee?) Kopfsteinpflaster, danach loser Sandweg	? 3140,1412 3140,1411 3147,1391 3106,1344 3082,1333 3071,1346 2849,1248
 St. Galler Str.: Qualität?	? 6418,18491 6584,18474 6597,18473 6704,18462
 #: XXX: unklarer Eintrag von anonymous: Asphalt Q0, einige Fußgänger q2, Radweg???
 Maßliebweg: Qualität?	? 15356,2499 15593,2495
 Hielscherstr.: Qualität?	? 7522,19804 7556,19882 7604,19988 7695,20175 7735,20262 7809,20420 7866,20556 7937,20778
 Mandelstr.: Qualität der Straße nördlich der Ostseestr.?	? 12911,15708 12979,15822 12911,15865
-Alvenslebenplatz: Qualität der Straße (wahrscheinlich Kopfsteinppflaster?)	? 10789,-2451 10833,-2509 10874,-2449
+Alvenslebenplatz: Qualität der Straße (wahrscheinlich Kopfsteinpflaster?)	? 10789,-2451 10833,-2509 10874,-2449
 Am Kornfeld: Qualität?	? 23648,11265 23679,11372 23714,11477 23799,11646 23851,11748 23896,11862 23942,11975
 Am Pfingstberg: Qualität (wahrscheinlich Asphalt oder Beton)?	? 3311,24150 3271,24283 3225,24431 3187,24491 3157,24489 3125,24533 3122,24571 3131,24614
-#: XXX: unsicherer Eintrag von anonymous: Kopfsteinppflaster?
+#: XXX: unsicherer Eintrag von anonymous: Kopfsteinpflaster?
 Buhrowstr.: Qualität?	? 7091,4760 7032,4635 6889,4332
 #: XXX: unsicherer Eintrag von anonymous: mäßiger Asphalt?
 Geschwister-Scholl-Str. (Neu-Zittau): Qualität?	? 34242,-1784 33628,-1509
-#: XXX: unsicherer Eintrag von anonymous: schlechtes Kopfsteinppflaster, enge Straße q2
+#: XXX: unsicherer Eintrag von anonymous: schlechtes Kopfsteinpflaster, enge Straße q2
 Dornröschenstr.: Qualität?	? 22748,6714 22888,6712 23034,6719 23086,6730 23164,6753 23217,6779 23284,6819 23372,6896 23444,6980
 #: XXX: unklarer Eintrag von anonymous: Asphalt ohne weitere Angabe
 Mühlweg: Qualität?	? 24629,5831 24666,5726 24700,5633
-#: XXX: unklarer Eintrag von anonymous: mäßiges Kopfsteinppflaster (aber ich Parklinien im Luftbild), Bordsteinkanten/Schrittgeschwindigkeit???
+#: XXX: unklarer Eintrag von anonymous: mäßiges Kopfsteinpflaster (aber ich Parklinien im Luftbild), Bordsteinkanten/Schrittgeschwindigkeit???
 Rudower Str.: Qualität?	? 19031,5316 18999,5237 18942,5236 18820,5275 18659,5330 18307,5440
 #: XXX: unklarer Eintrag von anonymous: guter Asphalt, viele Fußgänger???, Radweg???
 Rodenkirchener Str.: Qualität?	? 19974,-317 19971,-234 19960,-158 19943,-118 19909,-75
@@ -1554,3 +1557,13 @@ Schonacher Str.: Qualität der Straße zwischen Benekendorffstr. und Zehntwerderwe
 Prausestr.: Qualität der Straße zwischen Kyllmannstr. und Tietzenwegbrücke? Gibt es zur Brücke einen Zugang, z.B. eine Treppe?	? 3467,4247 3575,4306
 Sittestr.: Qualität der Straße?	? 5810,19244 5787,19326 5751,19443 5730,19519
 TODO: Uferweg mit Verbundsteinpflasterradweg (by: wosch)	? 8389,16214 8543,16364
+#: XXX: Eintrag von anonymous teilweise unklar: Fußgängerzone (war verkehrsberuhigt gemeint?); Asphalt Q0; außerdem fehlt die Verbindung zum Netz
+Heckenweg: Qualität? verkehrsberuhigt?	? 24553,-3281 24506,-3205
+Bollestr.: Qualität zwischen Tile-Brügge-Weg und Gorkistr.?	? 2982,20587 2998,20487
+Bollestr.: Qualität südlich der Gorkistr.?	? 2974,20483 2995,20386
+#: XXX: Eintrag von henrikwillborn meint "Kopfsteinpflaster Q3", aber so schlecht sieht das auf dem Luftbild nicht aus? Und westliche der Piesporter ist es eindeutig asphaltiert:
+Feldtmannstr.: Qualität zwischen Hansastr. und Piesporter Str.?	? 16460,17214 16418,17311 16380,17356 16326,17407 16302,17439 16070,17472 15827,17509 15810,17512 15239,17599
+#: note: Luftbild
+Fritz-Reuter-Str.: Qualität der Straße zwischen Waldowstr. und Körnerstr.? Ist die Durchfahrt für Autos zwischen Waldowstr. und Waldemarstr. gesperrt?	? 10383,20295 10421,20313 10431,20318 10478,20345 10597,20410
+#: XXX: Eintrag von anonymous ist unklar: Kopfsteinpflaster Q2, aber auf dem Luftbild sieht es eher wie Beton aus; q4 ohne weitere Begründung
+Ötztaler Str.: Qualität?	? 10690,17420 10630,17421 10629,17450 10609,17460 10545,17458 10543,17421 10502,17419

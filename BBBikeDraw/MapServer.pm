@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.38 2007/12/23 13:06:54 eserte Exp $
+# $Id: MapServer.pm,v 1.39 2008/01/20 09:58:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.39 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -31,6 +31,16 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
     __PACKAGE__->mk_accessors(qw(BbbikeDir MapserverMapDir MapserverBinDir
 				 MapserverRelurl MapserverUrl TemplateMap
 				 ImageSuffix FontsList));
+
+    use Carp qw(carp);
+    use vars qw(%warn_once);
+    sub warn_once {
+	my $warn = join(" ", @_);
+	return if exists $warn_once{$warn};
+	$warn_once{$warn}++;
+	carp $warn;
+    }
+
     sub new { bless {}, shift }
 
     sub MapserverCgiBinDir {
@@ -68,10 +78,10 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
 	my $self = shift->vran_default;
 	require Config;
 	if ($Config::Config{archname} =~ /amd64/) {
-	    warn "Use latest CVS version (amd64)...";
+	    warn_once "Use latest CVS version (amd64)...";
 	    $self->MapserverBinDir("/usr/local/src/work/mapserver-amd64");
 	} else {
-	    warn "Use latest CVS version...";
+	    warn_once "Use latest CVS version...";
 	    $self->MapserverBinDir("/usr/local/src/work/mapserver");
 	}
 	## use mapserver from ports
@@ -136,7 +146,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
 	#$self->MapserverBinDir("$apache_root/cgi-bin");
 	#$self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
 	if ($Config::Config{archname} =~ /amd64/) {
-	    warn "Use latest CVS version (amd64)...";
+	    warn_once "Use latest CVS version (amd64)...";
 	    $self->MapserverBinDir("/usr/local/src/work/mapserver-amd64");
 	} else {
 	    $self->MapserverBinDir("/usr/local/src/work/mapserver");

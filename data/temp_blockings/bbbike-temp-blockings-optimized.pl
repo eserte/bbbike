@@ -770,9 +770,9 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        {
-         'until' => 1209592800,
-         'text' => 'L 023 Herzfelde-Strausberg OD Hennickendorf, unterhalb Wachtelberg Instandsetzung Stützwand Vollsperrung 07.01.2008-30.04.2008 ',
-         'from' => 1199574000,
+         'until' => 1201820400,
+         'text' => 'L 023 Herzfelde-Strausberg OD Hennickendorf, unterhalb Wachtelberg Instandsetzung Stützwand Vollsperrung 14.01.2008-31.01.2008 ',
+         'from' => 1200178800,
          'id' => 1272,
          'data' => 'userdel	2::inwork 40565,12409 40362,12087
 ',

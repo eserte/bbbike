@@ -1,20 +1,21 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePalm.pm,v 1.10 2003/11/18 23:37:20 eserte Exp $
+# $Id: BBBikePalm.pm,v 1.11 2008/01/19 23:02:40 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
 
 # Palm-Routinen für BBBike
 
 # in main muss definiert sein: is_in_path
+# wenn in main folgendes definiert ist, wird es verwendet: status_message
 
 use strict;
 # main bbbike variables
@@ -156,9 +157,14 @@ sub BBBikePalm::to_top {
 }
 
 sub BBBikePalm::hot_sync_message {
-    my $top = shift;
-    $top->messageBox(-title => "Hotsync",
-		     -text => "Hotsync-Button drücken!");
+    my $msg = "Hotsync-Button drücken!";
+    if (defined &main::status_message) {
+	main::status_message($msg, "infodlg");
+    } else {
+	my $top = shift;
+	$top->messageBox(-title => "Hotsync",
+			 -text => $msg);
+    }
 }
 
 ######################################################################

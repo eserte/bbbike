@@ -10718,9 +10718,9 @@ EOF
 userdel	1::inwork 25579,5980 25121,5799
 EOF
      },
-     { from  => 1199574000, # 2008-01-06 00:00
-       until => 1209592800, # 2008-05-01 00:00
-       text  => 'L 023 Herzfelde-Strausberg OD Hennickendorf, unterhalb Wachtelberg Instandsetzung Stützwand Vollsperrung 07.01.2008-30.04.2008 ',
+     { from  => 1200178800, # 2008-01-13 00:00
+       until => 1201820400, # 2008-02-01 00:00
+       text  => 'L 023 Herzfelde-Strausberg OD Hennickendorf, unterhalb Wachtelberg Instandsetzung Stützwand Vollsperrung 14.01.2008-31.01.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 40565,12409 40362,12087
@@ -10776,6 +10776,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1::inwork 5154,7006 5251,6949 5374,6932
+EOF
+     },
+     { from  => 1200438000, # 2008-01-16 00:00
+       until => 1200697200, # 2008-01-19 00:00
+       text  => 'B 246 Beelitz - Brück Bahnübergang Brück-Ausbau Gleisbauarbeiten Vollsperrung 17.01.2008-18.01.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -29244,-23127 -30149,-22937 -30811,-22899
 EOF
      },
     );

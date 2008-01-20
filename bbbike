@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.338 2008/01/12 21:40:40 eserte Exp eserte $
+# $Id: bbbike,v 3.340 2008/01/19 22:59:46 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -218,7 +218,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.338 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.340 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4547,7 +4547,7 @@ sub handle_options {
 	  label => M"R-Bahnlinien",	var => \$init_str_draw{'r'}],
 	 ['rbahnhof','!',0,
 	  label => M"R-Bahnhöfe",	var => \$init_p_draw{'r'}],
-	 ['wasser','!',0,	alias=>[qw(gewaesser)],
+	 ['wasser','!',1,	alias=>[qw(gewaesser)],
 	  label => M"Gewässer",	var =>\$init_str_draw{'w'}],
 	 ['wasserstadt','!',1,
 	  label => M"Gewässer in der Stadt", var => \$wasserstadt],
@@ -4557,7 +4557,7 @@ sub handle_options {
 	  label => M"Gewässer jwd", var => \$str_far_away{'w'}],
 	 ['faehre','!',0,	alias=>[qw(faehren)],
 	  label => M"Fähren",	var => \$init_str_draw{'e'}],
-	 ['flaeche','!',0,	alias=>[qw(flaechen)],
+	 ['flaeche','!',1,	alias=>[qw(flaechen)],
 	  label => M"Flächen",	var => \$init_str_draw{'f'}],
 	 ['ort','!',0,	alias=>[qw(orte)],
 	  label => M"Orte",		var => \$init_p_draw{'o'}],
@@ -11800,6 +11800,7 @@ sub draw_text_intelligent {
 			   : 0);
   LOOP:
     foreach my $anchor (qw(w e nw n sw s)) {
+warn "$anchor @ct_args\n";
 	my $item = $canvas->createText
 	  ($tx+$xadd->{$anchor}, $ty+$yadd->{$anchor},
 	   @ct_args,
@@ -11815,20 +11816,23 @@ sub draw_text_intelligent {
 		next if !@tags;
 		if ($check_tag_index eq 'all') {
 		    foreach my $tag (@tags) {
+warn "  $tag <-> $abkrx\n";
 			if ($tag =~ /$abkrx/) {
-			    $canvas->delete($item);
+warn "    *** conflict\n";
+#			    $canvas->delete($item);
 			    next LOOP;
 			}
 		    }
 		} else {
 		    next if !defined $tags[$check_tag_index];
 		    if ($tags[$check_tag_index] =~ /$abkrx/) {
-			$canvas->delete($item);
+#			$canvas->delete($item);
 			next LOOP;
 		    }
 		}
 	    }
 	}
+my$xxx=$canvas->createRectangle(@bbox,-fill=>"red");$c->lower($xxx,$item);
 	$ {$args{-returnanchor}} = $anchor
 	    if ref $args{-returnanchor} eq 'SCALAR';
 	if ($args{-outline}) {
@@ -17703,6 +17707,11 @@ sub status_message {
 
 	    my $Dialog = LongOrNormalDialog();
 	    $status_message_dialog = $top->$Dialog(%args);
+	    # KDE's window manager seems to have a bug (?)
+	    # that the dialog might be behind other
+	    # transients. Fix the situation by forcing the dialog
+	    # on top.
+	    $kde->keep_on_top($status_message_dialog) if $kde;
 	    $status_message_dialog->Show;
 	}
     }

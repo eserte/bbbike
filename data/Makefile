@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.168 2007/12/26 19:54:36 eserte Exp $
+# $Id: Makefile,v 2.169 2008/01/19 13:50:01 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -914,7 +914,9 @@ remove_checks:
 	rm -f .check_* .create_* .doublecheck_*
 
 # checks
-check:	report-checks do-checks do-doublechecks
+check:	report-checks do-checks
+
+check-harder: check do-doublechecks
 
 report-checks:
 	@echo Now doing checks...

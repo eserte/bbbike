@@ -2,6 +2,15 @@
 
 =head2 Allgemeine Benutzung der Perl/Tk-GUI
 
+=head3 Vorbereitend
+
+I<X11>: es empfiehlt sich, eine E<quot>StandardE<quot>-Desktopumgebung
+wie KDE oder GNOME+Metacity zu verwenden, wenn notwendig in einem
+Xnest-Fenster.
+
+I<Windows>: es empfiehlt sich, das automatische Ausblenden der
+Taskleiste(n) zu unterdrücken.
+
 =head3 BBBike mit C<bbbike -public> starten
 
 (bzw. unter Windows mit C<bbbike.bat -public> starten)
@@ -14,10 +23,10 @@ Hauptfenster öffnet sich. Das Fenster sollte möglichst groß sein,
 eventuelle Taskleisten aber nicht verdecken.
 
 Das Straßennetz erscheint und weitere Layer: U- und S-Bahn (sowohl
-Linien als auch Bahnhöfe mit Benamung) und Ampeln. Zentriert wird auf
-das Brandenburger Tor. Falls die Datenbasis nicht zu alt ist, ist es
-sehr wahrscheinlich, dass temporäre Sperrungen erscheinen (mit
-Baustellen- oder Kalendarsymbol).
+Linien als auch Bahnhöfe mit Benamung), Flächen (z.B. Parks), Gewässer
+und Ampeln. Zentriert wird auf das Brandenburger Tor. Falls die
+Datenbasis nicht zu alt ist, ist es sehr wahrscheinlich, dass
+temporäre Sperrungen erscheinen (mit Baustellen- oder Kalendarsymbol).
 
 Straßenauswahlliste erscheint. Die A-Z-Leiste sollte vollständig sein
 und die Schrift sollte gut lesbar sein.
@@ -36,7 +45,8 @@ und Standard-X11, noch nicht unter MacOSX).
 I<X11>: Im Terminalfenster sollte nichts Kryptisches stehen.
 
 I<Windows>: Das Programm wird mit C<wperl> gestartet und hinterlässt
-damit nichts im Terminalfenster.
+damit nichts im Terminalfenster und öffnet auch kein neues
+Terminalfenster.
 
 =head3 Im Auswahlfenster einen weiter hinten stehenden Buchstaben
 wählen
@@ -66,7 +76,7 @@ angezeigt.
 =head3 Return drücken
 
 Die Karte wird so gescrollt, dass die Seumestraße sichtbar wird. Die
-Markierung blink für einige Sekunden.
+Markierung blinkt für einige Sekunden.
 
 =head3 Auf E<quot>ZielE<quot> klicken
 
@@ -87,10 +97,16 @@ wird in diesem Fenster angezeigt.
 
 Ein Dateiselektor erscheint. Beliebigen Dateinamen ohne Extension in
 einem temporären Verzeichnis eingeben und mit E<quot>SaveE<quot> oder
-E<quot>OkE<quot> bestätigen. Die erzeugte Datei sollte eine
-E<quot>.txtE<quot> besitzen und mit einem üblichen Texteditor/-viewer
-zu öffnen und zu lesen sein. Umlaute sollten möglichst korrekt
-dargestellt sein. Die Datei sollte die Routenliste enthalten.
+E<quot>OkE<quot> bestätigen.
+
+I<Windows>: Die erzeugte Datei sollte eine E<quot>.txtE<quot> besitzen
+und mit einem üblichen Texteditor/-viewer zu öffnen und zu lesen sein.
+
+I<X11>: Die Datei sollte mit einem Texteditor/-viewer zu öffnen und zu
+lesen sein. Es wird keine Defaultextension erzwungen.
+
+Umlaute sollten möglichst korrekt dargestellt sein (noch: als
+iso-8859-1). Die Datei sollte die Routenliste enthalten.
 
 =head3 Auf E<quot>PalmE<quot> klicken
 
@@ -120,6 +136,9 @@ Vielleicht Mail-Button entfernen???)
 
 B<KNOWN ISSUE>: Standard-Postfix-Installation unter MacOSX (?) reicht
 nicht aus, um Mails zu versenden (-> Vielleicht Mail-Button entfernen???)
+
+B<KNOWN ISSUE>: Bei KDE kann das Mail-Fenster B<hinter> dem
+Routenlistenfenster oder anderen Toplevels erscheinen.
 
 B<NOTE>: 
 

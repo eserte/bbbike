@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Gpsman.pm,v 1.8 2005/12/28 19:24:11 eserte Exp $
+# $Id: Gpsman.pm,v 1.9 2008/01/19 19:41:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2004 Slaven Rezic. All rights reserved.
@@ -87,6 +87,8 @@ sub _read_gpsman {
 		    $self->push([$name, \@coords, $cat]);
 		}
 	    }
+	} elsif ($chunk->Type eq GPS::GpsmanData::TYPE_GROUP()) {
+	    # ignore this chunk
 	} else {
 	    my @coords;
 	    for my $wpt (@{ $chunk->Track }) {

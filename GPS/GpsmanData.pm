@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.50 2007/10/14 20:27:32 eserte Exp $
+# $Id: GpsmanData.pm,v 1.51 2008/01/19 19:41:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005,2007 Slaven Rezic. All rights reserved.
@@ -44,15 +44,16 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.50 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.51 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
 use constant TYPE_TRACK    => 1;
 use constant TYPE_ROUTE    => 2;
+use constant TYPE_GROUP    => 3;
 
 use base qw(Exporter);
-@EXPORT_OK = qw(TYPE_WAYPOINT TYPE_TRACK TYPE_ROUTE);
+@EXPORT_OK = qw(TYPE_WAYPOINT TYPE_TRACK TYPE_ROUTE TYPE_GROUP);
 
 use GPS::Util; # for eliminate_umlauts
 
@@ -468,6 +469,7 @@ sub parse {
 	(TYPE_WAYPOINT() => 'parse_waypoint',
 	 TYPE_TRACK()    => 'parse_track',
 	 TYPE_ROUTE()    => 'parse_route',
+	 TYPE_GROUP()    => 'parse_group',
 	);
 
     my @data;
@@ -533,8 +535,12 @@ sub parse {
 		$self->Type(TYPE_ROUTE);
 		$type = TYPE_ROUTE;
 		$parse_method = $parse{$type};
-	    } elsif (/^!G/) {
+	    } elsif (/^!G:/) {
+		$self->Type(TYPE_GROUP);
+		$type = TYPE_GROUP;
 		$parse_method = 'parse_group';
+	    } elsif (/^!GW/) {
+		# ignore
 	    } else {
 		# ignore
 	    }

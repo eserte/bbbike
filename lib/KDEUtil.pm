@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: KDEUtil.pm,v 2.21 2007/07/07 17:30:27 eserte Exp $
+# $Id: KDEUtil.pm,v 2.25 2008/01/19 22:58:24 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2004,2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -177,15 +177,67 @@ sub get_property {
 
 =head2 keep_on_top($tkwin)
 
-Arrange the Tk window $tkwin to stay on top. This works with KDE 2 and
-3. Alias method name: stays_on_top.
+Arrange the Tk window $tkwin to stay on top. This works best with Tk
+804.028, otherwise you need X11::Protocol, otherwise it will only work
+with older KDE window managers (version 2 or so).
+
+Return true on success. You cannot trust the success value, as KDE 3.5
+(for example) defines the old _NET_WM_STATE_STAYS_ON_TOP property, but
+does not handle it anymore.
+
+Note that this method might actually overwrite a <Map> binding on
+$tkwin's toplevel. This actually happens if
+
+=over
+
+=item * the Tk version is too old and X11::Protocol must be used and
+
+=item * $tkwin is withdrawn when calling this method
+
+=back
+
+Alias method name: stays_on_top.
 
 =cut
 
 sub keep_on_top {
     shift;
     my $w = shift;
-    my($wrapper) = $w->toplevel->wrapper;
+    my $toplevel = $w->toplevel;
+
+    if ($Tk::VERSION >= 804.027501 && $w->toplevel->can('attributes')) {
+	$toplevel->attributes(-topmost => 1);
+	# this was easy
+	return 3;
+    }
+
+    my($wrapper) = $toplevel->wrapper;
+
+    if (eval {
+	require X11::Protocol;
+	my $x = X11::Protocol->new($toplevel->screen);
+	my $_NET_WM_STATE_ADD = 1;
+	my $data = pack("LLLLL", $_NET_WM_STATE_ADD, $w->InternAtom('_NET_WM_STATE_ABOVE'), 0, 0, 0);
+	my $send_event = sub {
+	    $x->SendEvent($x->{'root'}, 0,
+			  $x->pack_event_mask('SubstructureNotify', 'SubstructureRedirect'),
+			  $x->pack_event(name   => 'ClientMessage',
+					 window => $wrapper,
+					 type   => $w->InternAtom('_NET_WM_STATE'),
+					 format => 32,
+					 data   => $data));
+	};
+	if ($toplevel->state eq 'withdrawn') {
+	    $toplevel->bind('<Map>' => sub { $send_event->(); $toplevel->bind('<Map>', undef) });
+	} else {
+	    $send_event->();
+	}
+	1;
+    }) {
+	return 2;
+    }
+    warn $@ if $@;
+
     eval {
 	if (!grep { $_ eq '_NET_WM_STATE_STAYS_ON_TOP' } $w->property('get', '_NET_SUPPORTED', 'root')) {
 	    die "_NET_WM_STATE_STAYS_ON_TOP not supported";

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.19 2007/03/15 22:12:33 eserte Exp $
+# $Id: Makefile,v 1.20 2008/01/19 19:42:35 eserte Exp $
 #
 
 # läuft nicht mit 5.004 oder älter
