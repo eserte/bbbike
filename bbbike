@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.340 2008/01/19 22:59:46 eserte Exp eserte $
+# $Id: bbbike,v 3.344 2008/01/20 21:39:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
@@ -218,7 +218,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.340 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.344 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -1030,37 +1030,63 @@ if (defined $init_scale_massstab) {
     }
 }
 
-$srtbike_photo = load_photo($top, 'srtbike_solid'); # XXX.' . $default_img_fmt);
+$top->title("$progname $VERSION");
+
+my $has_icon = 0;
+my $set_toplevel_icon;
+$srtbike_photo = load_photo($top, 'srtbike_solid');
+$srtbike16_icon = load_photo($top, 'srtbike16'); # used in info window
 if ($os eq 'win' || $^O eq 'cygwin') {
-    # srtbike32.* looks broken on Win98,
-    # and srtbike16.* looks broken on WinXP
-    if ($ENV{OS} && $ENV{OS} eq 'Windows_NT') { # this seems to be the case for XP
-	$srtbike_icon = load_photo($top, 'srtbike32'); # XXX.' . $default_img_fmt);
+    # Prefer .ico
+    my $icon;
+    if ($Tk::VERSION >= 804.027 and 
+	$icon = $FindBin::RealBin.'/images/srtbike.ico' and
+	-r $icon and
+	eval {
+	    $top->iconbitmap($icon);
+	    1;
+	}) {
+	$has_icon = 1;
+	$set_toplevel_icon = sub {
+	    my $self = shift;
+	    eval {
+		$self->iconbitmap($icon);
+	    };
+	};
     } else {
-	#XXX what does this mean? # $srtbike_icon is also used in info window, so stick to 16x16 in every case.
-	$srtbike_icon = load_photo($top, 'srtbike16'); # XXX.' . $default_img_fmt);
+	# srtbike32.* looks broken on Win98 and Vista,
+	# and srtbike16.* looks broken on WinXP and Vista
+	if ($ENV{OS} && $ENV{OS} eq 'Windows_NT') { # this seems to be the case for XP
+	    $srtbike_icon = load_photo($top, 'srtbike32');
+	} else {
+	    $srtbike_icon = $srtbike16_icon;
+	}
     }
-#XXX Produces funny colors --- Tk problem?!
-#    if ($srtbike_icon) {
-#	$top->iconmask('@' . $FindBin::RealBin . '/images/srtbike32_mask.xbm');
-#    }
 } else {
     # 16x16 is the preferred size for mini-icons in KDE
     # works also for twm (however, a little bit tiny)
-    # $srtbike_icon is also used in info window, so stick to 16x16 in every case.
-    $srtbike_icon = load_photo($top, 'srtbike16'); # XXX .' . $default_img_fmt);
+    $srtbike_icon = $srtbike16_icon;
     if ($srtbike_icon) {
 	$top->iconmask('@' . $FindBin::RealBin . '/images/srtbike16_mask.xbm');
     }
 }
 
-$top->title("$progname $VERSION");
+if (!$has_icon) {
+    # In ->Icon wird auch ein ->update durchgeführt:
+    # XXX Unter Unix vielleicht darauf verzichten und iconimage stattdessen verwenden?
+    # XXX Also set icon according to freedesktop specs.
+    if (defined $srtbike_icon) {
+	$top->Icon(-image => $srtbike_icon);
+	$set_toplevel_icon = sub {
+	    my $self = shift;
+	    eval {
+		$self->iconimage($main::srtbike_icon);
+	    };
+	};
+    }
+}
 
-# In ->Icon wird auch ein ->update durchgeführt:
-# XXX Unter Unix vielleicht darauf verzichten und iconimage stattdessen verwenden?
-# XXX Also set icon according to freedesktop specs.
-$top->Icon(-image => $srtbike_icon) if defined $srtbike_icon;
-if ($devel_host && defined $srtbike_icon) {
+if ($devel_host && $set_toplevel_icon) {
     # every toplevel in app should get bbbike icon
     require Tk::Toplevel; # make sure it's loaded
     package Tk::Toplevel;
@@ -1068,8 +1094,8 @@ if ($devel_host && defined $srtbike_icon) {
     *InitObject = sub {
 	my($self,$args) = @_;
 	$self->SUPER::InitObject($args);
-	# setting icon may fail in other mainwindows
-	$self->afterIdle(sub{ eval { $self->iconimage($main::srtbike_icon) } });
+	    # setting icon may fail in other mainwindows
+	    $self->afterIdle(sub { $set_toplevel_icon->($self) });
     };
 }
 
@@ -5151,36 +5177,35 @@ sub standard_selection_handle {
 }
 
 sub load_photos {
-    $flag_photo{'start'} = load_photo($top, 'flag2_bl_centered'); # XXX .' . $default_img_fmt);
-    $flag_photo{'via'}   = load_photo($top, 'flag_via_centered'); # XXX .' . $default_img_fmt);
-    $flag_photo{'ziel'}  = load_photo($top, 'flag_ziel_centered'); # XXX .' . $default_img_fmt);
-    $ampel_photo         = load_photo($top, 'ampel'); # XXX .' . $default_img_fmt);
-    $ampel_klein2_photo  = load_photo($top, 'ampel_klein2'); # XXX .' . $default_img_fmt);
-    $ampelf_photo        = load_photo($top, 'ampelf'); # XXX .' . $default_img_fmt);
-    $ampelf_klein_photo  = load_photo($top, 'ampelf_klein'); # XXX .' . $default_img_fmt);
-    $ampelf_klein2_photo = load_photo($top, 'ampelf_klein2'); # XXX .' . $default_img_fmt);
-    $andreaskr_klein_photo = load_photo($top,
-					'andreaskr_klein'); # XXX .' . $default_img_fmt);
-    $andreaskr_klein2_photo= load_photo($top,
-					'andreaskr_klein2'); # XXX .' . $default_img_fmt);
-    $andreaskr_photo     = load_photo($top, 'andreaskr'); # XXX .' . $default_img_fmt);
-    $vorfahrt_photo      = load_photo($top, 'vorfahrt'); # XXX .' . $default_img_fmt);
-    $vorfahrt_klein_photo= load_photo($top, 'vorfahrt_klein'); # XXX .' . $default_img_fmt);
-    $windrose2_photo     = load_photo($top, 'windrose2'); # XXX .' . $default_img_fmt);
-    $kneipen_photo       = load_photo($top, 'glas'); # XXX .' . $default_img_fmt);
-    $kneipen_klein_photo = load_photo($top, 'glas_klein'); # XXX .' . $default_img_fmt);
-    $essen_photo         = load_photo($top, 'essen'); # XXX .' . $default_img_fmt);
-    $essen_klein_photo   = load_photo($top, 'essen_klein'); # XXX .' . $default_img_fmt);
-    $kino_klein_photo    = load_photo($top, 'kino_klein'); # XXX .' . $default_img_fmt);
-    $steigung_photo      = load_photo($top, 'steigung'); # XXX .' . $default_img_fmt);
-    $gefaelle_photo      = load_photo($top, 'gefaelle'); # XXX .' . $default_img_fmt);
-    $inwork_photo        = load_photo($top, 'inwork'); # XXX .' . $default_img_fmt);
-    $cal_photo           = load_photo($top, 'cal'); # XXX .' . $default_img_fmt);
-    $ferry_photo         = load_photo($top, 'ferry'); # XXX .' . $default_img_fmt);
-    $ferry_klein_photo   = load_photo($top, 'ferry_klein'); # XXX .' . $default_img_fmt);
-    $zugbruecke_photo    = load_photo($top, 'zugbruecke'); # XXX .' . $default_img_fmt);
+    $flag_photo{'start'} = load_photo($top, 'flag2_bl');
+    $flag_photo{'via'}   = load_photo($top, 'flag_via');
+    $flag_photo{'ziel'}  = load_photo($top, 'flag_ziel');
+    @flag_offset         = (4, 15);
+    $ampel_photo         = load_photo($top, 'ampel');
+    $ampel_klein2_photo  = load_photo($top, 'ampel_klein2');
+    $ampelf_photo        = load_photo($top, 'ampelf');
+    $ampelf_klein_photo  = load_photo($top, 'ampelf_klein');
+    $ampelf_klein2_photo = load_photo($top, 'ampelf_klein2');
+    $andreaskr_klein_photo = load_photo($top, 'andreaskr_klein');
+    $andreaskr_klein2_photo= load_photo($top, 'andreaskr_klein2');
+    $andreaskr_photo     = load_photo($top, 'andreaskr');
+    $vorfahrt_photo      = load_photo($top, 'vorfahrt');
+    $vorfahrt_klein_photo= load_photo($top, 'vorfahrt_klein');
+    $windrose2_photo     = load_photo($top, 'windrose2');
+    $kneipen_photo       = load_photo($top, 'glas');
+    $kneipen_klein_photo = load_photo($top, 'glas_klein');
+    $essen_photo         = load_photo($top, 'essen');
+    $essen_klein_photo   = load_photo($top, 'essen_klein');
+    $kino_klein_photo    = load_photo($top, 'kino_klein');
+    $steigung_photo      = load_photo($top, 'steigung');
+    $gefaelle_photo      = load_photo($top, 'gefaelle');
+    $inwork_photo        = load_photo($top, 'inwork');
+    $cal_photo           = load_photo($top, 'cal');
+    $ferry_photo         = load_photo($top, 'ferry');
+    $ferry_klein_photo   = load_photo($top, 'ferry_klein');
+    $zugbruecke_photo    = load_photo($top, 'zugbruecke');
     $zugbruecke_klein_photo
-	= load_photo($top, 'zugbruecke_klein'); # XXX .' . $default_img_fmt);
+	= load_photo($top, 'zugbruecke_klein');
 #XXX not yet necessary:
 #    $blocked_photo       = load_photo($top, 'redcross.' . $default_img_fmt);
 }
@@ -11800,7 +11825,6 @@ sub draw_text_intelligent {
 			   : 0);
   LOOP:
     foreach my $anchor (qw(w e nw n sw s)) {
-warn "$anchor @ct_args\n";
 	my $item = $canvas->createText
 	  ($tx+$xadd->{$anchor}, $ty+$yadd->{$anchor},
 	   @ct_args,
@@ -11816,23 +11840,20 @@ warn "$anchor @ct_args\n";
 		next if !@tags;
 		if ($check_tag_index eq 'all') {
 		    foreach my $tag (@tags) {
-warn "  $tag <-> $abkrx\n";
 			if ($tag =~ /$abkrx/) {
-warn "    *** conflict\n";
-#			    $canvas->delete($item);
+			    $canvas->delete($item);
 			    next LOOP;
 			}
 		    }
 		} else {
 		    next if !defined $tags[$check_tag_index];
 		    if ($tags[$check_tag_index] =~ /$abkrx/) {
-#			$canvas->delete($item);
+			$canvas->delete($item);
 			next LOOP;
 		    }
 		}
 	    }
 	}
-my$xxx=$canvas->createRectangle(@bbox,-fill=>"red");$c->lower($xxx,$item);
 	$ {$args{-returnanchor}} = $anchor
 	    if ref $args{-returnanchor} eq 'SCALAR';
 	if ($args{-outline}) {
@@ -12868,8 +12889,8 @@ sub show_info {
 		my $bbbike_cgi_url = $def->[0];
 
 		my $need_indentation;
-		if ($srtbike_icon) {
-		    $info_text->imageCreate("end", -image => $srtbike_icon,
+		if ($srtbike16_icon) {
+		    $info_text->imageCreate("end", -image => $srtbike16_icon,
 					    -align => "bottom", -padx => 2, -pady => 1);
 		} else {
 		    $need_indentation = 1;
@@ -13716,7 +13737,9 @@ sub set_flag {
 	    return;
 	}
 	# XXX $nr may or may not be meaningful here
-	$c->createImage($x, $y, -image => $flag_photo{$type},
+	$c->createImage($x - $flag_offset[0], $y - $flag_offset[1],
+			-anchor => "nw",
+			-image => $flag_photo{$type},
 			-tags => ['route', "route-$nr", $type . 'flag']);
     }
 }
@@ -15960,25 +15983,31 @@ sub route_strname_on_map {
 	my(@tags) = ('route',
 		     "route-" . $inx,
 		     'routename');
-	my $returnanchor;
-	if (draw_text_intelligent
-	    ($c, $x, $y,
-	     -text => $str,
-	     -tags => [@tags],
-	     -abk => ['route','routename'],
-	     -checktagindex => 'all',
-	     -xadd => $xadd_anchor,
-	     -yadd => $yadd_anchor,
-	     -returnanchor => \$returnanchor,
-	    )) {
-	    Tk::StippleLine::create
-	      ($c, $x, $y,
-	       $x+$xadd_anchor->{$returnanchor},
-	       $y+$yadd_anchor->{$returnanchor},
-	       -fill => 'black',
-	       -width => 2,
-	       -tags => [@tags]);
-	} else {
+    TRY: {
+	    for my $check_against (['route', 'routename'],
+				   ['routename'],
+				  ) {
+		my $returnanchor;
+		if (draw_text_intelligent
+		    ($c, $x, $y,
+		     -text => $str,
+		     -tags => [@tags],
+		     -abk => $check_against,
+		     -checktagindex => 'all',
+		     -xadd => $xadd_anchor,
+		     -yadd => $yadd_anchor,
+		     -returnanchor => \$returnanchor,
+		    )) {
+		    Tk::StippleLine::create
+			    ($c, $x, $y,
+			     $x+$xadd_anchor->{$returnanchor},
+			     $y+$yadd_anchor->{$returnanchor},
+			     -fill => 'black',
+			     -width => 2,
+			     -tags => [@tags]);
+		    last TRY;
+		}
+	    }
 	    $c->createText($x, $y, -text => $str,
 			   -anchor => 'w',
 			   -tags => [@tags]);
@@ -16325,7 +16354,7 @@ sub show_route_strname {
 	   my($file) = $bf->getSaveFile
 	       (($os eq 'win' ? (-defaultextension => '.TXT') : ()),
 		-title => M"Route sichern",
-		-initialdir => $tmpdir,
+		-initialdir => $home,
 	       );
 	   return if !defined $file;
 	   if ($os eq 'win' and $file !~ /\.txt$/i) {

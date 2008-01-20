@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMail.pm,v 1.20 2007/06/04 20:57:50 eserte Exp $
+# $Id: BBBikeMail.pm,v 1.21 2008/01/20 22:43:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -52,11 +52,13 @@ sub enter_send_anything {
 	return;
     }
 
-    if ($type eq 'mail') {
-	if ($^O eq 'MSWin32' || !$can_send_mail_via_Mail_Mailer) {
-	    send_mail_via_browser($args{-to}, $subject, $args{-data});
-	    return;
-	}
+    if ($type eq 'mail' && $args{-to}) {
+	# Note that send_mail_via_browser does not always work very
+	# well if -to is missing.
+ 	if ($^O eq 'MSWin32' || !$can_send_mail_via_Mail_Mailer) {
+ 	    send_mail_via_browser($args{-to}, $subject, $args{-data});
+ 	    return;
+ 	}
     }
 
     my $t = redisplay_top($top, $type, -title => $typename);

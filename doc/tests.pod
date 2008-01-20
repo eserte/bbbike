@@ -131,16 +131,11 @@ danach wird die Datei direkt zum Drucker geschickt.
 
 =head3 Auf E<quot>MailE<quot> klicken
 
-B<KNOWN ISSUE>: Zu alte Version von Mail::Mailer bei Windows. (->
-Vielleicht Mail-Button entfernen???)
-
 B<KNOWN ISSUE>: Standard-Postfix-Installation unter MacOSX (?) reicht
 nicht aus, um Mails zu versenden (-> Vielleicht Mail-Button entfernen???)
 
 B<KNOWN ISSUE>: Bei KDE kann das Mail-Fenster B<hinter> dem
 Routenlistenfenster oder anderen Toplevels erscheinen.
-
-B<NOTE>: 
 
 Ein Fenster mit den Eingabefeldern E<quot>Mail anE<quot>,
 E<quot>SubjectE<quot>, E<quot>zusätzlicher TextE<quot> erscheint.
@@ -148,6 +143,9 @@ E<quot>Mail anE<quot> mit der eigenen Adresse füllen.
 E<quot>SubjectE<quot> sollte mit der kurzen Routenbeschreibung
 (E<quot>BBBike-Route Von - BisE<quot>) initialisiert sein. Beliebigen
 zusätzlichen Text eingeben. Mit E<quot>OKE<quot> bestätigen.
+
+I<Windows>: Typischerweise wird ein externes Mailprogramm geöffnet, auf
+dem man die Angaben nochmal sieht und bestätigen kann.
 
 Die Mail sollte als Text-E-Mail ankommen. Vor dem zusätzlichen Text
 sollte sich die Routenliste befinden.
@@ -215,7 +213,8 @@ E<quot>Keine RouteE<quot>
 
 Nach einiger Zeit erscheint ein Balloon mit dem Namen der Straße.
 B<NYI>: Weitere Eigenschaften (Straßenqualität etc.) werden ebenfalls
-im Balloon angezeigt.
+im Balloon angezeigt (sie werden aber angezeigt, falls der jeweilige
+Layer eingeschaltet ist).
 
 =head3 Mit dem linken Mauszeiger auf eine Straße klicken
 
@@ -230,7 +229,9 @@ durchgeführt.
 
 =head3 Linke Maustaste auf der Karte gedrückt halten und bewegen
 
-Die Karte wird (langsam) in der gleichen Richtung gescrollt.
+Der Mauszeiger ändert sich zu einer Hand (I<X11>) oder zu einem Kreuz
+(I<Windows>) und die Karte wird (langsam)
+in der gleichen Richtung gescrollt.
 
 =head3 Mittlere Maustaste (Mac: Alt+Maustaste) auf der Karte gedrückt
 halten und langsam bewegen
@@ -445,17 +446,7 @@ erzeugte PDF-Datei sollte aus zwei Seiten bestehen: die erste Seite
 mit der Straßenkarte und einer roten Route; die zweite Seite mit der
 tabellarischen Routenbeschreibung.
 
-=head3 Datei > Exportieren > Xfig
-
-B<NOTE>: Erzeugung dauert etwas länger.
-
-Die erzeugte Datei sollte F<test.fig> heißen. Sie kann beispielsweise
-mit xfig angesehen werden oder mit einem Programm aus der
-fig2*-Sammlung konvertiert werden.
-
-I<Windows>: In der BBBike-Distribution ist kein fig-Viewer dabei.
-
-=head3 Kartenebenen > Straßen > Erweitere Auswahl > Volltextsuche
+=head3 Datei > Volltextsuche
 
 Ein Fenster mit einem Eingabefeld für E<quot>NachE<quot> und weiteren
 Elementen erscheint.
@@ -583,6 +574,16 @@ Unter Unix würde sofort angefangen werden zu drucken (vielleicht).
       anzeigen.
 
 =head2 Unwichtige Tests
+
+=head3 Datei > Exportieren > Xfig
+
+B<NOTE>: Erzeugung dauert etwas länger.
+
+Die erzeugte Datei sollte F<test.fig> heißen. Sie kann beispielsweise
+mit xfig angesehen werden oder mit einem Programm aus der
+fig2*-Sammlung konvertiert werden.
+
+I<Windows>: In der BBBike-Distribution ist kein fig-Viewer dabei.
 
 =head3 Datei > Exportieren > 36 dpi
 

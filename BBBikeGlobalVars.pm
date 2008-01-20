@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.57 2008/01/12 22:56:15 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.60 2008/01/20 22:57:17 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2007,2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.57 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.60 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -212,14 +212,14 @@ use vars qw($bbbike_configdir $bbbike_routedir $oldpath $save2_path);
 # $opt: Tk::Getopt object
 use vars qw($opt $preload_file @opttable @getopt);
 use vars qw(@extra_args);
-use vars qw($srtbike_icon $srtbike_photo);
+use vars qw($srtbike_icon $srtbike16_icon $srtbike_photo);
 use vars qw($capstyle_round);
 use vars qw($rot_font_sub $rot_bold_font_sub);
 use vars qw(%category_rot_font);
 use vars qw($frame $ctrl_frame);
 use vars qw($hs_label $str_label);
 use vars qw($misc_frame $misc_frame2 $DockFrame $Checkbutton $Radiobutton);
-use vars qw(%flag_photo);
+use vars qw(%flag_photo @flag_offset);
 use vars qw($berlin_overview_photo); # wird bei Bedarf nachgeladen
 ##### Statuszeile/Progress Bar #####
 use vars qw($status_label $status_button $status_button_column

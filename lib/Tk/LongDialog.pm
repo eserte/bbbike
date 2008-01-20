@@ -1,7 +1,7 @@
 package Tk::LongDialog;
 
 use vars qw($VERSION);
-$VERSION = '4.004'; # $Id: LongDialog.pm,v 1.3 2005/12/10 21:49:45 eserte Exp $
+$VERSION = '4.005'; # $Id: LongDialog.pm,v 1.4 2008/01/04 21:26:14 eserte Exp $
 
 # Dialog - a translation of `tk_dialog' from Tcl/Tk to TkPerl (based on
 # John Stoffel's idea).
@@ -20,6 +20,16 @@ use base qw(Tk::DialogBox);
 Construct Tk::Widget 'LongDialog';
 
 use Tk::ROText;
+
+sub import {
+    if (defined $_[1] and $_[1] eq 'as_default') {
+	local $^W = 0;
+	package Tk;
+	*tk_messageBox = sub {
+	    Tk::LongDialog::_tk_messageBox(@_);
+	};
+    }
+}
 
 sub Populate
 {
@@ -68,6 +78,7 @@ sub Populate
                       -bitmap     => ['bitmap',undef,undef,undef],
                       -font       => ['message','font','Font', '-*-Times-Medium-R-Normal--*-180-*-*-*-*-*-*'],
 		      -text	  => ['METHOD'],
+		      -message    => '-text',
                       DEFAULT     => ['message',undef,undef,undef]
                      );
 }
@@ -106,6 +117,42 @@ sub Wait {
 	$cw->{'selected_button'} = undef;
     } else {
 	$cw->Callback(-command => $cw->{'selected_button'});
+    }
+}
+
+# Partially taken from Tk::messageBox
+sub _tk_messageBox {
+    my(%args) = @_;
+
+    if (exists $args{'-text'}) {
+	warn "The -text option is deprecated. Please use -message instead";
+	if (!exists $args{'-message'}) {
+	    $args{'-message'} = delete $args{'-text'};
+	}
+    }
+    $args{'-type'} = (exists $args{'-type'}) ? lc($args{'-type'}) : 'ok';
+    $args{'-default_button'} = lc(delete $args{'-default'}) if (exists $args{'-default'});
+
+    $args{-type} = 'OK' unless defined $args{-type};
+
+    my $type;
+    if (defined($type = delete $args{-type})) {
+	delete $args{-type};
+	my @buttons = grep($_,map(ucfirst($_),
+                      split(/(abort|retry|ignore|yes|no|cancel|ok)/,
+                            lc($type))));
+	$args{-buttons} = [@buttons];
+	$args{-default_button} = ucfirst(delete $args{-default}) if
+	    defined $args{-default};
+	if (not defined $args{-default_button} and scalar(@buttons) == 1) {
+	   $args{-default_button} = $buttons[0];
+	}
+
+	my $parent = delete $args{-parent};
+	my $md = $parent->LongDialog(%args);
+	my $an = $md->Show;
+	$md->destroy if Tk::Exists($md);
+	return ucfirst $an;
     }
 }
 

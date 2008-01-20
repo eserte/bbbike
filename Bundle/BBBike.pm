@@ -43,6 +43,8 @@ Tk::PNG	- Für Icons mit besserer Alpha-Unterstützung
 
 Tk::NumEntry 2.06
 
+X11::Protocol	- Rotated text support
+
 LWP::UserAgent	- für die WWW-Verbindungen (z.B. Wetterbericht); in der Perl/Tk-GUI empfohlen für Daten-Updates über das Internet (ansonsten wird Http.pm verwendet)
 
 Image::Magick	- für Bildmanipulationen beim Radar-Bild der FU
@@ -79,9 +81,11 @@ GD 1.18	- zum On-the-fly-Erzeugen von Grafiken beim CGI-Programm
 
 Chart::ThreeD::Pie	- Tortendiagramme in der Statistik
 
-List::Permutor	- Für das Problem des Handlungsreisenden
+Algorithm::Permute 0.08	- Für das Problem des Handlungsreisenden (schnellerer Permutor)
 
-PDF::Create 0.06	- Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)
+List::Permutor	- Für das Problem des Handlungsreisenden (langsamerer Permutor)
+
+PDF::Image::GIFImage	- Erzeugung der Route als PDF-Dokument --- das ist die neueste Version wie auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)
 
 Font::Metrics::Helvetica	- Für die Reparatur der Zeichenbreitentabellen in PDF::Create
 
@@ -103,7 +107,7 @@ Pod::Usage	- für das Ausgeben der 'Usage' in einigen Entwicklungs-Tools
 
 Palm::PalmDoc	- für das Erzeugen von palmdoc-Dateien mit der Routenbeschreibung
 
-Astro::Sunrise	- Anzeige des Sonnenuntergangs/-aufgangs im Info-Fenster
+Astro::Sunrise 0.85	- Anzeige des Sonnenuntergangs/-aufgangs im Info-Fenster
 
 WWW::Shorten	- Kürzen der langen Mapserver-Links im Info-Fenster
 
@@ -147,6 +151,18 @@ GPS::Garmin	- für GPS-Upload
 
 Geo::SpaceManager 0.91	- Intelligentere Labelplatzierung, bei der PDF-Ausgabe verwendet
 
+Tk::ExecuteCommand	- Bessere Fehlerberichte im temp_blockings-Editor
+
+Algorithm::Diff	- Unterschiede im temp_blockings-Editor anzeigen
+
+Sort::Naturally	- Für natürliches Sortieren von bbd-Dateien
+
+WWW::Search::Google	- Suche in luise-berlin
+
+Geo::Coder::Google	- Geocoding über Googlemaps
+
+Geo::Coder::Yahoo	- Geocoding über Yahoo
+
 Image::Info
 
 Test::More
@@ -158,6 +174,8 @@ Test::NoWarnings
 WWW::Mechanize	- Für Testen des CGI-Interfaces
 
 Devel::Leak	- Für Memory-Leak-Tests
+
+Text::Table
 
 
 =head1 DESCRIPTION

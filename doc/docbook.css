@@ -23,7 +23,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $FreeBSD: doc/share/misc/docbook.css,v 1.9 2007/04/12 16:10:21 blackend Exp $
+ * $FreeBSD: doc/share/misc/docbook.css,v 1.12 2007/09/02 22:52:01 chinsan Exp $
  */
 
 BODY ADDRESS {
@@ -91,6 +91,9 @@ BODY H6 {
 
 BODY HR {
 	margin: .6em;
+	border-width: 0 0 1px 0;
+	border-style: solid;
+	border-color: #cecece;
 }
 
 BODY IMG.NAVHEADER {
@@ -105,7 +108,7 @@ OL {
 BODY PRE {
 	margin: .75em 0;
 	line-height: 1.0;
-	color: #461b7e;
+	font-family: monospace;
 }
 
 BODY TD, BODY TH {
@@ -131,9 +134,14 @@ BODY P B.APPLICATION {
 }
 
 .GUIMENU, .GUIMENUITEM, .GUISUBMENU,
-.GUILABEL, .INTERFACE, .GUIBUTTON,
+.GUILABEL, .INTERFACE,
 .SHORTCUT, .SHORTCUT .KEYCAP {
-	background-color: #F0F0F0;
+	font-weight: bold;
+}
+
+.GUIBUTTON {
+	background-color: #CFCFCF;
+	padding: 2px;
 }
 
 .ACCEL {
@@ -142,5 +150,10 @@ BODY P B.APPLICATION {
 } 
 
 .PROGRAMLISTING, .SCREEN {
-	margin-left: 3ex;
+	background-color: #DEE3E7;
+	padding: 4px;
+}
+
+@media screen {  /* hide from IE3 */
+	a[href]:hover { background: #ffa }
 }

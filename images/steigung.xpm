@@ -2,9 +2,9 @@
 static char *steigung[] = {
 /* columns rows colors chars-per-pixel */
 "16 16 4 1",
-"  c opaque",
+"  c black",
 ". c red",
-"X c white",
+"X c gray100",
 "o c None",
 /* pixels */
 "oooooooo.ooooooo",

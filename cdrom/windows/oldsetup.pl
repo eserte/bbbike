@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: setup.pl,v 1.7 2005/03/27 18:08:26 eserte Exp $
+# $Id: oldsetup.pl,v 1.7 2005/03/27 18:08:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2002 Slaven Rezic. All rights reserved.

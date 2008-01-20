@@ -53,9 +53,11 @@ Storable	- für das Caching beim CGI-Programm
 
 MLDBM
 
-List::Permutor	- Für das Problem des Handlungsreisenden
+Algorithm::Permute 0.08	- Für das Problem des Handlungsreisenden (schnellerer Permutor)
 
-PDF::Create 0.06	- Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)
+List::Permutor	- Für das Problem des Handlungsreisenden (langsamerer Permutor)
+
+PDF::Image::GIFImage	- Erzeugung der Route als PDF-Dokument --- das ist die neueste Version wie auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)
 
 Win32::API	- Für das Ermitteln der verfügbaren Desktop-Größe
 

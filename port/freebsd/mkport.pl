@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mkport.pl,v 1.28 2005/12/13 00:51:12 eserte Exp $
+# $Id: mkport.pl,v 1.30 2008/01/20 23:19:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2004 Slaven Rezic. All rights reserved.
@@ -181,30 +181,43 @@ if (keys %insert_after) {
     die "Following insert afters were unhandled: " . keys(%insert_after);
 }
 
-warn "Get MD5 of $bbbike_archiv_dir/$bbbike_archiv:\n";
-my $md5 = `cd $bbbike_archiv_dir; md5 $bbbike_archiv`;
-my $md5_qr = qr/^(MD5)\s*(\(.*\))\s*(=)\s*(.*)$/;
-if (!defined $md5 || $md5 !~ $md5_qr) {
-    # try md5sum:
-    $md5 = `cd $bbbike_archiv_dir; md5sum $bbbike_archiv`;
-    if (!$md5) {
-	die "Couldn't get MD5 of $bbbike_archiv, tried md5 and md5sum";
-    } else {
-	$md5 = (split /\s+/, $md5)[0];
-	$md5 = "MD5 ($bbbike_archiv) = $md5";
-	if ($md5 !~ $md5_qr) {
-	    die "$md5 does not match the proper MD5 pattern";
+my $md5;
+my $sha256;
+{
+    warn "Get MD5 and SHA256 of $bbbike_archiv_dir/$bbbike_archiv:\n";
+    $md5 = `cd $bbbike_archiv_dir; md5 $bbbike_archiv`;
+    $sha256 = `cd $bbbike_archiv_dir; sha256 $bbbike_archiv`;
+    my $md5_sha256_qr = qr/^(MD5|SHA256)\s*(\(.*\))\s*(=)\s*(.*)$/;
+
+    if (!defined $md5 || $md5 !~ $md5_sha256_qr) {
+	# try md5sum:
+	$md5 = `cd $bbbike_archiv_dir; md5sum $bbbike_archiv`;
+	if (!$md5) {
+	    die "Couldn't get MD5 of $bbbike_archiv, tried md5 and md5sum";
+	} else {
+	    $md5 = (split /\s+/, $md5)[0];
+	    $md5 = "MD5 ($bbbike_archiv) = $md5";
+	    if ($md5 !~ $md5_sha256_qr) {
+		die "$md5 does not match the proper MD5 pattern";
+	    }
+	    $md5 = "$1 $2 $3 $4"; # reformat md5 value
 	}
+    } else {
 	$md5 = "$1 $2 $3 $4"; # reformat md5 value
     }
-} else {
-    $md5 = "$1 $2 $3 $4"; # reformat md5 value
+
+    if (!defined $sha256 || $sha256 !~ $md5_sha256_qr) {
+	die "Sorry: no fallback mode for SHA256 calculation available!";
+    } else {
+	$sha256 = "$1 $2 $3 $4"; # reformat md5 value
+    }
 }
 
 my $distsize = (stat("$bbbike_archiv_dir/$bbbike_archiv"))[7];
 
 open(DISTINFO, ">$portdir/distinfo") or die "Can't write distinfo file: $!";
 print DISTINFO $md5, "\n";
+print DISTINFO $sha256, "\n";
 print DISTINFO "SIZE ($bbbike_archiv) = $distsize\n";
 close DISTINFO;
 
@@ -213,6 +226,7 @@ substitute("pkg-message", "$portdir/pkg-message");
 if ($do_fast) {
     system("cd $tmpdir/BBBike && portlint -a -b -c -t");
 } else {
+    # "port" is part of porttools package
     system("cd $tmpdir/BBBike && port test");
     unlink "$tmpdir/BBBike/BBBike-${bbbike_version}.tgz"; # created by "port test"
 }

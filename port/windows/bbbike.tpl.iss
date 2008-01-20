@@ -7,12 +7,15 @@
 [% PROCESS "../../BBBikeVar.tpl" -%]
 [% PROCESS "BBBikeWinDistFiles.tpl" -%]
 [% SET wperl_exe = "{app}\\windows\\5.6.1\\bin\\MSWin32-x86\\wperl.exe" -%]
+[% USE date %]
 
 [Setup]
 AppName=BBBike
 AppVerName=BBBike version [% VERSION %]
 AppVersion=[% VERSION %]
 AppPublisherURL=http://bbbike.sourceforge.net
+AppCopyright=Copyright (c) 1995-[% date.format(date.now, "%Y")%] Slaven Rezic
+AppPublisher=Slaven Rezic
 ChangesAssociations=yes
 DefaultDirName={pf}\BBBike
 DefaultGroupName=BBBike

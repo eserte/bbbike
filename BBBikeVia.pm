@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVia.pm,v 1.18 2007/09/20 22:24:35 eserte Exp $
+# $Id: BBBikeVia.pm,v 1.19 2008/01/20 10:28:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeVia;
 
 use strict;
 use vars qw($VERSION $move_index $add_point);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use BBBikeGlobalVars;
@@ -118,7 +118,9 @@ sub BBBikeVia::show_via_flags {
 	    $p1->[SRP_TYPE] eq POINT_SEARCH()
 	   ) {
 	    my($x,$y) = transpose(split(/,/, $p1->[SRP_COORD]));
-	    $c->createImage($x, $y, -image => $flag_photo{"via"},
+	    $c->createImage($x - $flag_offset[0], $y - $flag_offset[1],
+			    -anchor => "nw",
+			    -image => $flag_photo{"via"},
 			    -tags => ['route', "", "viaflag", "via-$i"],
 			   );
 	}
