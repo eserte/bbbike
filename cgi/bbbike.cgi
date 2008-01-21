@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.74 2007/12/30 15:07:38 eserte Exp $
+# $Id: bbbike.cgi,v 8.75 2008/01/21 20:30:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -93,7 +93,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $graphic_format $use_mysql_db $use_exact_streetchooser
 	    $use_module
 	    $cannot_gif_png $cannot_jpeg $cannot_pdf $cannot_svg $can_gif
-	    $can_wbmp $can_palmdoc $can_gpx $can_berliner_stadtplan_post
+	    $can_wbmp $can_palmdoc $can_gpx $can_kml $can_berliner_stadtplan_post
 	    $can_google_maps
 	    $can_mapserver $mapserver_address_url
 	    $mapserver_init_url $no_berlinmap $max_plz_streets $with_comments
@@ -381,6 +381,15 @@ L<XML::LibXML>. Default: false.
 =cut
 
 $can_gpx = 0;
+
+=item $can_kml
+
+Set this to a true value if you can produce KML documents (needs
+L<XML::LibXML>. Default: false.
+
+=cut
+
+$can_kml = 0;
 
 =item $can_mapserver
 
@@ -706,7 +715,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.74 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.75 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -3307,6 +3316,21 @@ sub search_coord {
 	return;
     }
 
+    if (defined $output_as && $output_as eq 'kml-track') {
+	require Strassen::KML;
+	my $filename = filename_from_route($startname, $zielname, "track") . ".kml";
+	http_header
+	    (-type => "application/vnd.google-earth.kml+xml",
+	     -Content_Disposition => "attachment; filename=$filename",
+	    );
+	my $s = Strassen->new_from_data("$startname - $zielname\tX " .
+					join(" ", map { "$_->[0],$_->[1]" }
+					     @{ $r->path }) . "\n");
+	my $s_kml = Strassen::KML->new($s);
+	print $s_kml->bbd2kml;
+	return;
+    }
+
     if (defined $output_as && $output_as eq 'mapserver') {
 	if ($r->path) {
 	    $q->param('coords', join("!", map { "$_->[0],$_->[1]" }
@@ -4174,17 +4198,25 @@ EOF
 		}
 		if ($can_gpx) {
 		    {
-			my $qq2 = new CGI $q->query_string;
+			my $qq2 = CGI->new($q->query_string);
 			$qq2->param('output_as', "gpx-route");
 			my $href = $bbbike_script;
 			print qq{<a style="padding:0 0.5cm 0 0.5cm;" href="$href?} . $qq2->query_string . qq{">GPX (Route)</a>};
 		    }
 		    {
-			my $qq2 = new CGI $q->query_string;
+			my $qq2 = CGI->new($q->query_string);
 			$qq2->param('output_as', "gpx-track");
 			my $href = $bbbike_script;
 			print qq{<a style="padding:0 0.5cm 0 0.5cm;" href="$href?} . $qq2->query_string . qq{">GPX (Track)</a>};
 		    }
+		}
+		if ($can_kml) {
+		    my $qq2 = CGI->new($q->query_string);
+		    $qq2->param('output_as', "kml-track");
+		    my $href = $bbbike_script;
+		    print qq{<a style="padding:0 0.5cm 0 0.5cm;" href="$href?} . $qq2->query_string . qq{">KML</a>};
+		}
+		if ($can_gpx || $can_kml) {
 		    print qq{<span class="experimental">} . M("Experimentell") . qq{</span>};
 		}
 		if (0) { # XXX not yet
@@ -6646,7 +6678,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2007/12/30 15:07:38 $';
+    my $cgi_date = '$Date: 2008/01/21 20:30:40 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

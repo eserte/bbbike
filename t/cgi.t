@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.53 2007/12/31 00:37:29 eserte Exp $
+# $Id: cgi.t,v 1.54 2008/01/21 22:08:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -29,7 +29,7 @@ use lib ($FindBin::RealBin,
 	 "$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
-use BBBikeTest qw(xmllint_string gpxlint_string);
+use BBBikeTest qw(xmllint_string gpxlint_string kmllint_string);
 
 eval { require Compress::Zlib };
 
@@ -79,7 +79,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (176 + $ortsuche_tests) * scalar @urls;
+plan tests => (179 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -156,7 +156,7 @@ for my $cgiurl (@urls) {
     }
 
     # search_coord
-    for my $output_as ("", qw(xml gpx-track gpx-route print perldump
+    for my $output_as ("", qw(xml gpx-track gpx-route kml-track print perldump
 			      yaml yaml-short palmdoc mapserver)) {
 	$req = new HTTP::Request
 	    ('GET', "$action?startname=Dudenstr.&startplz=10965&startc=9222%2C8787&zielname=Grimmstr.+%28Kreuzberg%29&zielplz=10967&zielc=11036%2C9592&pref_seen=1&output_as=$output_as", $hdrs);
@@ -197,8 +197,11 @@ for my $cgiurl (@urls) {
 	    xmllint_string($content, "xmllint check for $output_as");
 	} elsif ($output_as =~ m{^( gpx-track
 				 |  gpx-route
-				    )$}x) {
+				 )$}x) {
 	    gpxlint_string($content, "xmllint check with gpx schema for $output_as");
+	} elsif ($output_as eq 'kml-track') {
+	    is($res->content_type, 'application/vnd.google-earth.kml+xml', "The KML mime type");
+	    kmllint_string($content, "xmllint check for $output_as");
 	}
     }
 

@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.26 2007/12/28 21:50:28 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.29 2008/01/21 21:00:08 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2006,2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -24,7 +24,7 @@ BEGIN {
 use strict;
 use vars qw(@EXPORT);
 use vars (@opt_vars);
-use vars qw($can_tidy $can_xmllint $shown_gpx_schema_warning);
+use vars qw($can_tidy $can_xmllint $shown_gpx_schema_warning $shown_kml_schema_warning);
 
 use vars qw($BBBIKE_TEST_CGIDIR
 	    $BBBIKE_TEST_CGIURL
@@ -41,7 +41,7 @@ use File::Spec     qw();
 use BBBikeUtil qw(is_in_path);
 
 @EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check
-	      xmllint_string gpxlint_string
+	      xmllint_string gpxlint_string kmllint_string
 	      eq_or_diff is_long_data like_long_data unlike_long_data),
 	   @opt_vars);
 
@@ -300,6 +300,23 @@ sub gpxlint_string {
     } else {
 	xmllint_string($content, $test_name, %args, -schema => $gpx_schema);
     }
+}
+
+# only usable with Test::More, generates one test
+sub kmllint_string {
+    my($content, $test_name, %args) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
+    my $kml_schema = File::Spec->catfile(dirname(dirname(File::Spec->rel2abs(__FILE__))),
+ 					 "misc",
+ 					 "kml21.xsd");
+    if (!-r $kml_schema) {
+	if (!$shown_kml_schema_warning) {
+	    Test::More::diag("Local KML schema $kml_schema, fallback to remote schema...");
+	    $shown_kml_schema_warning = 1;
+	}
+	$kml_schema = "http://code.google.com/apis/kml/schema/kml21.xsd";
+    }
+    xmllint_string($content, $test_name, %args, -schema => $kml_schema);
 }
 
 sub failed_long_data {

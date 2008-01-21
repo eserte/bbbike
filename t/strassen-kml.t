@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-kml.t,v 1.5 2007/09/09 15:10:07 eserte Exp $
+# $Id: strassen-kml.t,v 1.6 2008/01/21 20:35:38 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -53,7 +53,7 @@ isa_ok($s, "Strassen");
     is($data[0], "Route\tX @sample_coords\n", "Expected translated coordinates");
 
     my $kml = $s->bbd2kml;
-    xmllint_string($kml, "bbd2kml produced XML");
+    kmllint_string($kml, "bbd2kml produced KML");
     my($fh2,$file2) = tempfile(SUFFIX => '.kml',
 			       UNLINK => 1);
     print $fh2 $kml;
