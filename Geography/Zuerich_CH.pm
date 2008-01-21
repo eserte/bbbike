@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Zuerich_CH.pm,v 1.7 2008/01/12 22:55:58 eserte Exp $
+# $Id: Zuerich_CH.pm,v 1.8 2008/01/21 23:23:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Geography::Zuerich_CH;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 sub new { bless {}, shift }
 
@@ -45,6 +45,8 @@ sub skip_features {
 {
     require Karte::Polar;
     require Karte::Standard;
+
+    $Karte::Standard::obj = $Karte::Standard::obj if 0; # cease -w
 
     my($c_lon,$c_lat) = (8.54488,47.37006);
     my($dx,$dy) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($c_lon,$c_lat));

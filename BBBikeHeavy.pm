@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.38 2007/12/29 13:17:25 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.39 2008/01/21 23:21:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.39 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -1606,8 +1606,12 @@ sub BBBikeHeavy::save_route_as_kml {
 	return unless defined $file;
 	my $tmpfile = "$tmpdir/bbbike-$<-$$.bbr";
 	load_save_route(1, $tmpfile);
+	my $route_name = "Route";
+	if (@route_strnames) {
+	    $route_name = "$route_strnames[0][0] - $route_strnames[-1][0]";
+	}
 	my $s = Route::as_strassen($tmpfile,
-				   name => "Route",
+				   name => $route_name,
 				   cat => "X",
 				   fuzzy => 0,
 				  );
