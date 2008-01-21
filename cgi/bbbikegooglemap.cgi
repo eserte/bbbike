@@ -145,7 +145,8 @@ sub run {
 			$maptype =~ /normal/i ? 'G_NORMAL_MAP' :
 			'G_SATELLITE_MAP');
 
-    ($self->{initial_mapmode}) = param("mapmode") =~ m{^(search|addroute|browse)$};
+    my $mapmode = param("mapmode") || "";
+    ($self->{initial_mapmode}) = $mapmode =~ m{^(search|addroute|browse)$};
     $self->{initial_mapmode} ||= "";
 
     $self->{converter} = $converter;
@@ -203,7 +204,12 @@ sub get_html {
     } elsif ($host =~ m{srand\.de}) {
 	$bbbikeroot = dirname(dirname($full->path));
     } elsif ($host eq 'localhost') {
-	$bbbikeroot = "/~eserte/bbbike";
+	require Sys::Hostname;
+	if (Sys::Hostname::hostname() =~ /\.herceg\.de/) {
+	    $bbbikeroot = "/~eserte/bbbike";
+	} else {
+	    $bbbikeroot = "/bbbike";
+	}
     }
 
     my $html = <<EOF;
