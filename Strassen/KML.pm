@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: KML.pm,v 1.6 2007/08/12 18:50:58 eserte Exp $
+# $Id: KML.pm,v 1.8 2008/01/21 23:11:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -16,13 +16,15 @@ package Strassen::KML;
 
 use strict;
 use vars qw($VERSION $TEST_SET_NAMESPACE_DECL_URI_HACK);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Strassen);
 
 use XML::LibXML;
 use Karte::Polar;
 use Karte::Standard;
+use Strassen::Util;
+use BBBikeUtil qw(m2km);
 
 sub new {
     my($class, $filename_or_object, %args) = @_;
@@ -113,37 +115,70 @@ sub xml { shift } # XXX impl missing!
 
 sub bbd2kml {
     my($self, %args) = @_;
-    my @coords;
-    my $title;
+    my $document_name = delete $args{documentname} || 'BBBike-Route';
+    my $document_description = delete $args{documentdescription} || "";
+
+    my @routes;
+    my %colors;
     $self->init;
     while(1) {
 	my $r = $self->next;
-	last if !@{ $r->[Strassen::COORDS] };
-	$title = $r->[Strassen::NAME] if !defined $title; # XXX better heuristic? use %args?
-	push @coords, map {
-	    join(",", xy2longlat($_))
-	} @{ $r->[Strassen::COORDS] };
+	my @c = @{ $r->[Strassen::COORDS] };
+	last if !@c;
+
+	my $color;
+	if ($r->[Strassen::CAT] =~ m{^\#(......)$}) {
+	    $color = lc($1) . "ff";
+	} else {
+	    $color = 'ff0000ff';
+	}
+	$colors{$color}++;
+
+	my $dist = 0;
+	for(my $i = 1; $i<=$#c; $i++) {
+	    $dist += Strassen::Util::strecke_s($c[$i-1], $c[$i]);
+	}
+
+	push @routes, { name => $r->[Strassen::NAME],
+			coords => join("\n", map {
+			    join(",", xy2longlat($_))
+			} @c),
+			color => $color,
+			dist => $dist,
+		      };
     }
-    my $coords = join("\n", @coords);
     my $kml_tmpl = <<EOF;
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.1">
   <Document>
-    <name>Paths</name>
-    <description>@{[ xml($title) ]}</description>
-    <Style id="yellowLineGreenPoly">
+    <name>@{[ $document_name ]}</name>
+    <description>@{[ xml($document_description) ]}</description>
+EOF
+    my %styles;
+    my $style_id = 1;
+    for my $color (keys %colors) {
+	$styles{$color} = "style" . $style_id++;
+	$kml_tmpl .= <<EOF;
+    <Style id="@{[ xml($styles{$color}) ]}">
       <LineStyle>
-        <color>ff0000ff</color>
+        <color>@{[ $color ]}</color>
         <width>4</width>
       </LineStyle>
       <PolyStyle>
-        <color>ff0000ff</color>
+        <color>@{[ $color ]}</color>
       </PolyStyle>
     </Style>
+EOF
+    }
+    for my $route (@routes) {
+	my($name, $coords, $color, $dist) = @{$route}{qw(name coords color dist)};
+	my $dist_km = m2km($dist);
+	my $style = $styles{$color};
+	$kml_tmpl .= <<EOF;
     <Placemark>
-      <name>Tour</name>
-      <description>enable/disable</description>
-      <styleUrl>#yellowLineGreenPoly</styleUrl> 
+      <name>@{[ xml($name) ]}</name>
+      <description>@{[ xml($dist_km) ]}</description>
+      <styleUrl>#@{[ xml($styles{$color}) ]}</styleUrl> 
       <LineString>
         <extrude>1</extrude>
         <tessellate>1</tessellate>
@@ -153,6 +188,9 @@ sub bbd2kml {
         </coordinates>
       </LineString>
     </Placemark>
+EOF
+    }
+    $kml_tmpl .= <<EOF;
   </Document>
 </kml>
 EOF

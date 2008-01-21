@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-kml.t,v 1.6 2008/01/21 20:35:38 eserte Exp $
+# $Id: strassen-kml.t,v 1.9 2008/01/21 23:13:45 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -32,7 +32,7 @@ BEGIN {
 
 use BBBikeTest;
 
-plan tests => 17;
+plan tests => 22;
 
 use_ok("Strassen::KML");
 my $s = Strassen::KML->new;
@@ -121,6 +121,19 @@ isa_ok($s, "Strassen");
     is_deeply($s0->data, $s->data, "No difference between Strassen and Strassen::KML loading");
 }
 
+{
+    my @sample_coords1 = get_sample_coordinates_1();
+    my @sample_coords2 = get_sample_coordinates_2();
+    my $s = Strassen->new_from_data("Route1\t#00ff00 @sample_coords1", "Route2\t#0000ff @sample_coords2");
+    my $s_kml = Strassen::KML->new($s);
+    my $kml_string = $s_kml->bbd2kml;
+    kmllint_string($kml_string, "KML OK");
+    like($kml_string, qr{<Placemark.*<Placemark}s, "Two routes in KML");
+    like($kml_string, qr{<color>00ff00ff}, "Found green color");
+    like($kml_string, qr{<color>0000ffff}, "Found blue color");
+    like($kml_string, qr{<description>14\.[123]\s+km}, "Found distance of first route");
+}
+
 sub get_sample_kml_1 {
     <<'EOF';
 <?xml version="1.0" encoding="UTF-8"?>
@@ -167,6 +180,16 @@ sub get_sample_coordinates_1 {
      '13531,23052', '13532,23052', '13563,23059', '13653,23030',
      '13801,22931',
     );
+}
+
+sub get_sample_coordinates_2 { # Brandenburger Tor - Alexanderplatz
+    ('8515,12242', '8610,12254', '8804,12280', '9028,12307',
+     '9141,12320', '9349,12344', '9394,12351', '9476,12359',
+     '9603,12372', '9681,12382', '9754,12389', '9782,12393',
+     '9853,12402', '9918,12411', '9987,12421', '10025,12428',
+     '10083,12442', '10173,12492', '10244,12544', '10300,12587',
+     '10352,12627', '10440,12696', '10519,12768', '10699,12929',
+     '10740,12960', '10781,13002');
 }
 
 __END__
