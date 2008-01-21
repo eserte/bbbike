@@ -1,4 +1,4 @@
-CGI_SCRIPTS=	bbbike.cgi mapserver_address.cgi mapserver_comment.cgi mapserver_setcoord.cgi wapbbbike.cgi
+CGI_SCRIPTS=	bbbike.cgi bbbikegooglemap.cgi mapserver_address.cgi mapserver_comment.cgi mapserver_setcoord.cgi wapbbbike.cgi
 ROOT_URL?=	/bbbike
 # Set this to "cgi" or "Apache::Registry"
 CGI_TYPE?=	cgi
@@ -17,6 +17,7 @@ httpd.conf: httpd.conf.tpl Makefile
 	@echo Please add
 	@echo "    Include ${.CURDIR}/httpd.conf"
 	@echo to your Apache\'s httpd.conf
+	@echo
 
 alt-httpd.conf:	httpd.conf.st
 	@perl -I../lib -MText::ScriptTemplate -MCwd -MFile::Spec -e '$$st=Text::ScriptTemplate->new;$$st->load("httpd.conf.st"); chdir ".." or die; $$st->setq(rootdir=>File::Spec->rel2abs(cwd));print $$st->fill'
