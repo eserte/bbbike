@@ -2,8 +2,8 @@ $#temp_blocking = 711;
 push @temp_blocking,
 (
        {
-         'until' => 1204326000,
-         'text' => 'Bau der O2-World, bis 2008',
+         'until' => 1221256800,
+         'text' => 'Bau der O2-World, bis 13. September 2008',
          'from' => undef,
          'id' => 712,
          'data' => 'userdel	2::inwork 13056,11329 13240,11279 13150,11101

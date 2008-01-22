@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.23 2008/01/15 22:27:47 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.24 2008/01/22 21:44:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2008 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!caller(2)) {
@@ -35,11 +35,11 @@ use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
 BEGIN {
-#     if (!eval q{ use WWW::Search::Google; 1 }) {
-# 	require BBBikeHeavy;
-# 	BBBikeHeavy::perlmod_install_advice("WWW::Search::Google");
-# 	return;
-#     }
+    if (!eval q{ use WWW::Search::Google; 1 }) {
+	require BBBikeHeavy;
+	BBBikeHeavy::perlmod_install_advice("WWW::Search::Google");
+	return;
+    }
     if (!eval q{ use String::Similarity; 1 }) {
 	require BBBikeHeavy;
 	BBBikeHeavy::perlmod_install_advice("String::Similarity");

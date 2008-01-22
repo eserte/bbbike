@@ -6003,8 +6003,8 @@ userdel	2::temp 7587,17532 7500,17796 7487,17836 7466,17904 7350,18262 7232,1857
 EOF
      },
      { from  => undef, # 
-       until => Time::Local::timelocal(reverse(2008-1900,3-1,1,0,0,0)), # 2008-01-01 23:42
-       text  => 'Bau der O2-World, bis 2008',
+       until => Time::Local::timelocal(reverse(2008-1900,9-1,13,0,0,0)), # laut Tsp vom 2008-01-22
+       text  => 'Bau der O2-World, bis 13. September 2008',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 13056,11329 13240,11279 13150,11101

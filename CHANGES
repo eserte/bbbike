@@ -1,21 +1,31 @@
 BBBike RELEASE 3.16 (in the future)
 
-XXX CHECKED CHANGELOG UNTIL 2007-03-03 XXX
+XXX CHECKED CHANGELOG 2008-01-22 - 2005-12-11 XXX
 
 bbbike (ptk)
 - info window: better organization of external links (now with right click
   menu), new link to Wikipedia Mapsources
 - new export formats: GPSman route (as opposed to GPSman track), KML
+- GPX route output is now "intelligent" (limit max. number of points
+  in route, shorten waypoint names etc.)
 - nicer bridge and tunnel drawings
 - label visibility fixes while zooming (but still not perfect)
 - balloon info now with information for all layers below
+- dragging is now more natural, no extra mode needed
 - alarm feature with bluetooth transfer (e.g. for mobile phones, only Linux and
   FreeBSD)
 - full text search now callable from "File" menu
+- full text search also uses aliases
+- overview map with routes
 - new option -texteditor
 - fixes for forthcoming perl version 5.10.0
 - fixes for 64bit platforms
-- bug fixes (e.g. font size now always correct, better Win32 icon)
+- bug fixes (e.g. font size now always correct, better Win32 icon - up
+  to 64x64 pixels)
+- fixes for KDE support
+- fixes and more support for MacOSX
+- use current locale for console messages (only with very new perls)
+- cache directory is now per-user (better for root installs)
 
 Data
 - thanks to Andreas Titz Oranienburg is now nearly complete
@@ -25,24 +35,37 @@ Data
 - new map data: border crossings (between Germany and Poland)
 - new map signatures: theater, museum, road numbers (Bundesstraße,
   Autobahn ...)
-- more map images for sights (some orginals contributed by Robert Joop)
+- more map images for sights (some originals contributed by Robert Joop)
 - some map signatures are now in PNG rather than GIF (better alpha support)
 - some source data files are now in utf-8, allowing for real
   Polish names, though generated data files are still iso-8859-1
 - cafes/bars layer marked as unsupported
 - more bbd directives like listing_sort, corrected_by, category_color ...
-- bbd: category tendencies (Q1+ ...) used in source files
+- bbd: category tendencies (Q1+ ...) used in source files (but not in cooked
+  data files yet)
+- sbahn and other layers with tunnel signatures
+- rbahn now with more subcategories: Güterbahn, Parkbahn, inaktiv, in Bau
+- using better convert from source files which can preserve some
+  directives like aliases (see above for full text search)
+- beginning support for WGS84 in data files
 
 Modules
 - new BBBikeDraw module for BBBikeGoogleMaps
 - new: PLZ::Levenshtein (but not yet used)
 - new: MacOSXUtil
+- PDF output:
+  better labelling
+  support for compressing prepared (needs pdftk)
 
 Plugins
 - nicer and more comfortable plugin lister
 - new Plugins for accessing Multimap, GoYellow.de, Luise-Berlin,
-  geocaching.com, dein-plan.de, BVG, OpenStreetMap (only in CVS)
+  geocaching.com, dein-plan.de, BVG, OpenStreetMap, WikiMapia (only in CVS)
+- new Plugin for geocoding (using Yahoo or Google)
 - new features for ViewImages plugin (only in CVS)
+- new TransparentCanvas plugin (only in CVS)
+- some plugins are not functional anymore and disabled for now:
+  FahrinfoRealtime, maps.live.com
 
 Install
 - updated installer for newer KDE/GNOME
@@ -52,15 +75,23 @@ CGI
 - english translation of the website (expect info page)
 - better Google Maps support
   comments may be send via an ajax form
+  no more doubleclicks necessary for creating route manually
+  use nicer icons and cursors
+  show temporary blockings
+  may show both current and former route simultaneously
+  geocoding field
 - opensearch support (initial work by Wolfram Schneider)
 - removed www.berliner-stadtplan24.com support because the route transfer
   does not work anymore
 - slightly more modern HTML (e.g. better CSS)
 - Mapserver interface polishing
+- KML export (only in beta)
 
 Misc
+- script for converting openstreetmap (osm) data to bbbike format (CVS only)
 - support for converting data to cgpsmapper (CVS only)
 - new script for converting anything to bbd (CVS only)
+- script for geocoding photos (CVS only)
 - included some new documentation files (HOWTO_edit_bbbike_data.html,
   qualitaetskategorien.html)
 

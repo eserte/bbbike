@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.218 2008/01/20 22:59:54 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.219 2008/01/22 20:24:41 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -294,7 +294,7 @@ Sakrower Kirchweg: stellenweise schlechter Asphalt	Q1 -8439,3913 -8401,3894 -830
 Kalischer Str.: gutes Kopfsteinpflaster	Q1 3964,8559 3982,8750 4006,8967
 Mannheimer Str. (Wilmersdorf): Kopfsteinpflaster, (enge) Gehwege sind für Radfahrer freigegeben	Q2 4456,8584 4319,8584
 Mannheimer Str. (Wilmersdorf): Kopfsteinpflaster	Q2 4456,8703 4456,8584
-Thulestr.: Kopfsteinpflaster	Q2 11645,16616 11534,16614 11278,16609 11042,16605
+Thulestr.: Kopfsteinpflaster	Q2 11645,16616 11534,16614 11441,16612 11278,16609 11042,16605
 #: note: ADFC-Karte sagt hier: mäßig geeignet
 Granitzstr.: Asphalt	Q0 10859,17854 10907,17884 11253,18168 11320,18218 11492,18347 11581,18398 11606,18416 11698,18446 11796,18482 11950,18529
 #: note: ADFC-Karte, Joern (js) widerspricht nicht:
@@ -1882,7 +1882,7 @@ Margarete-Steffin-Str.: Asphalt	Q0 8292,13205 8406,13127 8525,12958
 #: note: Luftbild
 Feldtmannstr.: asphaltiert	Q0 15239,17599 14754,17673
 #: note: using average velocity in GPS track 20020811
-(Kronprinzessinenweg/Havelchaussee - Schlachtensse): Waldweg	Q3 -3296,3686 -3199,3592 -3398,3321 -3353,3298
+(Kronprinzessinenweg/Havelchaussee - Schlachtensse): Waldweg, ca. 50m lange sandige Stelle, Wurzeln	Q3 -3296,3686 -3199,3592 -3398,3321 -3353,3298
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -5793,12 +5793,24 @@ Mistelweg: Beton	Q0 17102,2420 17175,2498 17230,2556 17284,2636
 Straße Y: Asphalt	Q0 -629,16546 -671,16488
 #: by: Manfred Kohla:
 Petitweg: guter Asphalt	Q0 11025,22504 10939,22384 10924,22343 10994,22289 11069,22242
-#: by: Stephan Vogel:
+#: by: Stephan Vogel: vvv
 Fritz-Reuter-Str. (Niederschönhausen): schlechtes Kopfsteinpflaster	Q3 10597,20410 10703,20464 10802,20516
+Fritz-Reuter-Str. (Niederschönhausen): asphaltiert	Q0 10478,20345 10597,20410
+Fritz-Reuter-Str. (Niederschönhausen): unbefestigter Weg	Q2 10421,20313 10431,20318 10478,20345
+#: by: ^^^
 #: by: Gunnar (mopedfahrer):
 Schulstr. (Lankwitz): mäßiges Kopfsteinpflaster	Q2 7143,3508 6989,3433 6878,3379 6787,3348 6698,3336
 #: by: Detlef Lechner:
 Klosterheider Weg: Betondecke in schlechtem Zustand	Q2 2842,23482 2742,23513 2621,23609 2490,23720 2522,23761 2582,23814 2663,23875
+#: by: Karsten Blumenau vvv
+Baumbachstr.: guter Beton	Q0 11448,16398 11450,16490 11441,16612
+Baumbachstr.: schlechtes Kopfsteinpflaster	Q3 11441,16612 11441,16745
+#: by: ^^^
+#: by: henrikwillborn:
+Feldtmannstr.: schlechtes Kopfsteinpflaster	Q3 16460,17214 16418,17311 16380,17356 16326,17407 16302,17439 16070,17472 15827,17509 15810,17512 15239,17599
+#: by: Andreas Jähn:
+#: note: ein anonymer Benutzer meinte hierzu "Kopfsteinpflaster"
+Petersallee: guter Asphalt	Q0 5444,16528 5602,16718 5791,16910
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
