@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.178 2008/01/20 22:59:48 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.179 2008/01/24 19:07:55 eserte Exp $
 #:
 ###################################################################
 #
@@ -993,6 +993,9 @@ Schranke (Thyssenstr. - Sittestr.)	BNP:3 5856,19204
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #
+#: note: genaue Wegführung von Diethard Mager:
+Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011, dann als Fußgänger/Radweg konzipiert	2:inwork 8184,14052 8290,14119
+Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011	2:inwork 8290,14119 8246,14201 8138,14148
 #: last_checked: 2007-10-03
 Otto-Ostrowski-Str.: Straße in Bau	2:inwork 13708,13623 13769,13487
 #XXX del: last_checked: 2007-09-15; laut http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20071129.1410.89942.html fertiggestellt: Zum Anhalter Steg: Bauarbeiten bis 2007-10-31	2:inwork 8773,10429 8776,10548

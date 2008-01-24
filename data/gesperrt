@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.178 2008/01/20 22:59:48 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.179 2008/01/24 19:07:55 eserte Exp $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -1103,6 +1103,8 @@ enges Drängelgitter	BNP:5:90 100,3
 Drosselbartweg: Drängelgitter	BNP:4:-242 13899,18833
 Drosselbartweg: Drängelgitter	BNP:3:71 14222,18666
 Schranke (Thyssenstr. - Sittestr.)	BNP:3:67 5856,19204
+Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011, dann als Fußgänger/Radweg konzipiert	2:inwork 8184,14052 8290,14119
+Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011	2:inwork 8290,14119 8246,14201 8138,14148
 Otto-Ostrowski-Str.: Straße in Bau	2:inwork 13708,13623 13769,13487
 Margarte-Steffin-Str.: Baurabeiten	2:inwork 8700,12810 8730,12804
 Hedwigskirchgasse: Bauarbeiten	2:inwork 9743,12239 9756,12139

@@ -719,9 +719,9 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        {
-         'until' => 1201820400,
-         'text' => 'L 015 Hardenbeck - Fürstenberg OD Lychen, Prenzlauer Str. Kanal- und Straßenbau Vollsperrung 19.11.2007-31.01.2008 ',
-         'from' => 1195340400,
+         'until' => 1209592800,
+         'text' => 'L 015 Hardenbeck - Fürstenberg OD Lychen, Prenzlauer Str. Kanal- und Straßenbau Vollsperrung 19.11.2007-30.04.2008 ',
+         'from' => 1195426800,
          'id' => 1245,
          'data' => 'userdel	q4::inwork 2940,90332 2565,89990 2745,89716
 ',

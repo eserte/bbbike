@@ -10498,9 +10498,9 @@ EOF
 userdel	2::inwork 18272,-39512 18433,-38781
 EOF
      },
-     { from  => 1195340400, # 2007-11-18 00:00
-       until => 1201820400, # 2008-02-01 00:00
-       text  => 'L 015 Hardenbeck - Fürstenberg OD Lychen, Prenzlauer Str. Kanal- und Straßenbau Vollsperrung 19.11.2007-31.01.2008 ',
+     { from  => Time::Local::timelocal(reverse(2007-1900,11-1,19,0,0,0)),
+       until => 1209592800, # 2008-05-01 00:00
+       text  => 'L 015 Hardenbeck - Fürstenberg OD Lychen, Prenzlauer Str. Kanal- und Straßenbau Vollsperrung 19.11.2007-30.04.2008 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 2940,90332 2565,89990 2745,89716

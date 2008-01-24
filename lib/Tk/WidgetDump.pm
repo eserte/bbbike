@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: WidgetDump.pm,v 1.35 2007/09/23 08:15:29 eserte Exp $
+# $Id: WidgetDump.pm,v 1.37 2008/01/23 21:50:47 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2008 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ package Tk::WidgetDump;
 use vars qw($VERSION);
 use strict;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.35 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.37 $ =~ /(\d+)\.(\d+)/);
 
 package # hide from CPAN indexer
   Tk::Widget;
@@ -1037,7 +1037,15 @@ package # hide from CPAN indexer
   Tk::Toplevel;
 sub _WD_Characteristics {
     my $w = shift;
-    Tk::WidgetDump::_crop($w->title) . " (" . $w->geometry . ")";
+    my $characteristics = eval {
+	Tk::WidgetDump::_crop($w->title) . " (" . $w->geometry . ")";
+    };
+    if ($@) {
+	# A "toplevel" which is not a real toplevel: this is true
+	# for Tk::DragDrop, see the comments there.
+	$characteristics = Tk::WidgetDump::_crop("toplevel-ish $w");
+    }
+    $characteristics;
 }
 
 package # hide from CPAN indexer
