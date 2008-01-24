@@ -23,7 +23,7 @@
 ## perlreplace #HTTPCVS#    $BBBike::BBBIKE_CVS_HTTP
 ## perlreplace #CVSREPO#    $BBBike::BBBIKE_CVS_ANON_REPOSITORY
 ## dnl
-## dnl $Id: README.spp,v 2.42 2007/05/31 22:27:05 eserte Exp $
+## dnl $Id: README.spp,v 2.43 2008/01/24 20:12:02 eserte Exp $
 ## dnl strpp source of README
 ## dnl
 =head1 README
@@ -133,11 +133,11 @@ Next step is to extract the BBBike distribution:
 
 
 ## only DE
-Falls perl/Tk (eine möglichst neue Version, z.B. 804.027 or 800.025) nicht
+Falls perl/Tk (eine möglichst neue Version, z.B. 804.028 or 800.025) nicht
 installiert ist: in das Verzeichnis C<BBBike-#BBBIKEVER#>
 wechseln und als Superuser
 ## but DE
-If perl/Tk (the recommended version is 804.027 or 800.025) is not installed:
+If perl/Tk (the recommended version is 804.028 or 800.025) is not installed:
 change to the directory
 C<BBBike-#BBBIKEVER#> and type as super user:
 ## yes
@@ -248,13 +248,13 @@ This requires the perl module L<Inline::C>.
 
 
 ## only DE
-Mac OS X enthält bereits perl 5.6.0 oder 5.8.x. Um BBBike zum Laufen zu bringen
+Mac OS X enthält bereits 5.8.x. Um BBBike zum Laufen zu bringen
 werden noch XDarwin und Perl/Tk benötigt. Eine Anleitung zum Aufsetzen
 von Perl/Tk auf Mac OS X bekommt man in der comp.lang.perl.tk Newsgroup
 (siehe L<http://groups.google.com>).
 
 ## but DE
-Mac OS X comes already with perl 5.6.0 oder 5.8.x. Now you just need XDarwin and Perl/Tk
+Mac OS X comes already with perl 5.8.x. Now you just need XDarwin and Perl/Tk
 to get BBBike running. For instructions how to setup Perl/Tk on Mac OS X
 refer to the comp.lang.perl.tk newsgroup (see
 L<http://groups.google.com>).

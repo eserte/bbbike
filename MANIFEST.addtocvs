@@ -431,6 +431,7 @@ port/rpm/mkrpm.pl
 port/windows/BBBikeWinDistFiles.tpl
 port/windows/Makefile
 port/windows/bbbike.tpl.iss
+port/windows/patches/3.16/bbbike_0.config
 projects/www.radzeit.de/.last/.keep_me
 projects/www.radzeit.de/Makefile
 projects/www.radzeit.de/etc/httpd.conf

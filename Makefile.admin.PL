@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.69 2008/01/12 22:38:27 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.69 2008/01/12 22:38:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006,2007 Slaven Rezic. All rights reserved.
@@ -536,7 +536,8 @@ fbsdport-pkg-plist-check: fbsdport
 	(cd ${VARPORTDIR} && find -d * -type d) | comm -13 ${TMPDIR}/OLD-DIRS - | sed -e 's#^#@dirrm #' | perl -le 'print join "", sort { (length($$b) <=> length($$a)) || ($$b cmp $$a) } <>' >> ${TMPDIR}/pkg-plist
 	diff -u ${TMPPORTDIR}/pkg-plist ${TMPDIR}/pkg-plist
 
-WINBINDISTDIR=$(TMPDIR)/BBBike-$(VERSION)-Windows
+BBBIKE_WINDOWS_VERSION=$(VERSION)
+WINBINDISTDIR=$(TMPDIR)/BBBike-$(BBBIKE_WINDOWS_VERSION)-Windows
 # XXX use another bbbike.bat/setup.bat if activeperl-613 would be used...
 WINPERLBIN=$(HOME)/src/binperl/sieperl-5.6.1
 # XXX the bbbike version should not be hardcoded here!!!
@@ -555,16 +556,17 @@ winbindist-copy:
 	umask 022; cp -Rp $(WINPERLBIN) $(WINBINDISTDIR)
 	mv $(WINBINDISTDIR)/`basename $(WINPERLBIN)` $(WINBINDISTDIR)/windows
 	umask 022; cp -Rpf $(PATCHBINPERLROOT)/* $(WINBINDISTDIR)/windows
-	umask 022; if [ -r distfiles/BBBike-$(VERSION).tar.gz ] ; then \
-	    cat distfiles/BBBike-$(VERSION).tar.gz | (cd $(WINBINDISTDIR) && tar xfvz - ); \
-	elif [ -r BBBike-$(VERSION).tar.gz ]; then \
-	    cat BBBike-$(VERSION).tar.gz | (cd $(WINBINDISTDIR) && tar xfvz - ); \
+	umask 022; if [ -r distfiles/BBBike-$(BBBIKE_WINDOWS_VERSION).tar.gz ] ; then \
+	    cat distfiles/BBBike-$(BBBIKE_WINDOWS_VERSION).tar.gz | (cd $(WINBINDISTDIR) && tar xfvz - ); \
+	elif [ -r BBBike-$(BBBIKE_WINDOWS_VERSION).tar.gz ]; then \
+	    cat BBBike-$(BBBIKE_WINDOWS_VERSION).tar.gz | (cd $(WINBINDISTDIR) && tar xfvz - ); \
 	else \
 	    $(MAKE) distdir; \
-	    cp -Rp BBBike-$(VERSION) $(WINBINDISTDIR); \
-	    chmod ugo+rx $(WINBINDISTDIR)/BBBike-$(VERSION); \
+	    cp -Rp BBBike-$(BBBIKE_WINDOWS_VERSION) $(WINBINDISTDIR); \
+	    chmod ugo+rx $(WINBINDISTDIR)/BBBike-$(BBBIKE_WINDOWS_VERSION); \
 	fi
-	mv $(WINBINDISTDIR)/BBBike-$(VERSION) $(WINBINDISTDIR)/bbbike
+	mv $(WINBINDISTDIR)/BBBike-$(BBBIKE_WINDOWS_VERSION) $(WINBINDISTDIR)/bbbike
+	find $(WINBINDISTDIR)/bbbike -type d -print0 | xargs -0 chmod ugo+r
 	umask 022; cp -p cdrom/windows/autorun.inf \
 	      cdrom/windows/bbbike.bat \
 	      cdrom/windows/oldsetup.bat \

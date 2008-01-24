@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.7 2007/07/28 22:22:11 eserte Exp $
+# $Id: Makefile,v 1.8 2008/01/24 21:05:07 eserte Exp $
 #
 
 BBBIKEVER!=		perl -I../.. -MBBBikeVar -e 'print $$BBBike::WINDOWS_VERSION'
@@ -31,14 +31,20 @@ winbindist-clean:
 	-cd ../.. && $(MAKE) winbindist-clean
 
 make-winbindist:
-	-cd ../.. && $(MAKE) winbindist-copy
+	-cd ../.. && $(MAKE) winbindist-copy BBBIKE_WINDOWS_VERSION=$(BBBIKEVER)
 # This is useful for testing directly on the /tmp directory
 	-mkdir -p /tmp/BBBike-$(BBBIKEVER)-Windows/bbbike/tmp
 	chmod 777 /tmp/BBBike-$(BBBIKEVER)-Windows/bbbike/tmp
 	-mkdir -p /tmp/BBBike-$(BBBIKEVER)-Windows/bbbike/cache
 	chmod 777 /tmp/BBBike-$(BBBIKEVER)-Windows/bbbike/cache
 
-bbbike.iss: make-BBBikeVar.tpl make-winbindist bbbike.tpl.iss
+patch-winbindist:
+	-@if [ "$(BBBIKEVER)" = "3.16" ] ; then \
+	    cp -p patches/3.16/bbbike_0.config /tmp/BBBike-$(BBBIKEVER)-Windows/bbbike/bbbike_0.config; \
+	    chmod 644 /tmp/BBBike-$(BBBIKEVER)-Windows/bbbike/bbbike_0.config; \
+	fi
+
+bbbike.iss: make-BBBikeVar.tpl make-winbindist patch-winbindist bbbike.tpl.iss
 	tpage --debug=undef --define VERSION=$(BBBIKEVER) --eval_perl bbbike.tpl.iss > bbbike.iss
 
 make-windows-installer: bbbike.iss
