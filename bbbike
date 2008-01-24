@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.344 2008/01/20 21:39:25 eserte Exp $
+# $Id: bbbike,v 3.344 2008/01/20 21:39:25 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2007 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -6619,13 +6619,21 @@ sub try_image_suffix {
     for my $suffix (@image_type_order) {
 	if (!defined $can_handle_image{$suffix}) {
 	    if ($suffix eq 'png') {
-		if (eval { require Tk::PNG; 1 }) {
+		if (eval {
+		    die "Probably corrupt in my SiePerl distribution" if $os eq 'win' && $Tk::VERSION < 804;
+		    require Tk::PNG;
+		    1;
+		}) {
 		    $can_handle_image{$suffix} = 1;
 		} else {
 		    $can_handle_image{$suffix} = 0;
 		}
 	    } elsif ($suffix eq 'jpg') {
-		if (eval { require Tk::JPEG; 1 }) {
+		if (eval {
+		    die "Probably corrupt in my SiePerl distribution" if $os eq 'win' && $Tk::VERSION < 804;
+		    require Tk::JPEG;
+		    1;
+		}) {
 		    $can_handle_image{$suffix} = 1;
 		} else {
 		    $can_handle_image{$suffix} = 0;
@@ -18269,7 +18277,7 @@ sub show_logo { # und About
 	     "$progname $VERSION\n" .
 	     "(File Rev $PROG_REVISION)\n\n" .
 	     M("Ein Informationssystem für Radfahrer in Berlin") .
-	     "\n\n© 1995-2007 Slaven Rezic",
+	     "\n\n© 1995-2008 Slaven Rezic",
 	     -wraplength => 230,
 	     -font => $font{'bold'},
 	     -padx => 5,

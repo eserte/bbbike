@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.7 2005/12/17 00:34:14 eserte Exp $
+# $Id: Makefile,v 1.8 2008/01/24 21:53:33 eserte Exp $
 #
 
 # Run on a Debian system
@@ -68,9 +68,13 @@ debian-symlinks:
 	umask 022; mkdir -p $(BUILDDIR)/usr/bin
 	umask 022; ln -sf ../lib/BBBike/bbbike $(BUILDDIR)/usr/bin/bbbike
 	umask 022; mkdir -p $(BUILDDIR)$(BBBIKEDOCDIR)
-	umask 022; for i in README README.english README.english.html README.html bbbike.html bbbike_internals.html bbd.html podindex.html; do \
+	umask 022; for i in README README.english; do \
 	    echo "Symlink $(BBBIKETARGETDIR)/$$i ..."; \
 	    ln -sf ../../../lib/BBBike/$$i $(BUILDDIR)$(BBBIKEDOCDIR)/$$i; \
+	done
+	umask 022; for i in README.english.html README.html bbbike.html bbbike_internals.html bbd.html podindex.html; do \
+	    echo "Symlink $(BBBIKETARGETDIR)/$$i ..."; \
+	    ln -sf ../../../lib/BBBike/doc/$$i $(BUILDDIR)$(BBBIKEDOCDIR)/$$i; \
 	done
 
 debian-menu:
