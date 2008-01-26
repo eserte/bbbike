@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.169 2008/01/19 13:50:01 eserte Exp $
+# $Id: Makefile,v 2.170 2008/01/25 23:48:39 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -82,6 +82,9 @@ COMPUTED_TARGETS+=	fragezeichen-cooked
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COMPUTED_TARGETS} ${COOKED_TARGETS}
 
+XXX_NON_OTHER=	indoor outdoor prog checklater
+XXX_TARGETS=	other ${XXX_NON_OTHER}
+
 ALL_STREETS=		strassen landstrassen landstrassen2
 
 TARGETS_DISABLED=	label relation_gps 
@@ -144,6 +147,10 @@ persistent-tmp:	${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
 		${PERSISTENTTMPDIR}/XXX.bbd \
 		${PERSISTENTTMPDIR}/plz-b.bbd \
 		persistent-tmp-from-opengeodb
+
+.for i in $(XXX_TARGETS)
+persistent-tmp:	${PERSISTENTTMPDIR}/XXX-$(i).bbd
+.endfor
 
 # even slower (about four minutes)
 really-slow-checks:	check-crossings-important \
@@ -704,10 +711,17 @@ fragezeichen-cooked:	fragezeichen strassen landstrassen landstrassen2
 ######################################################################
 # PERSISTENT TEMPORARY DIRECTORY TARGETS
 
+# Targets ../tmp/.XXX-{other,indoor,...}-{strassen,landstrassen,...}
 .for i in ${SOURCE_TARGETS}
-${PERSISTENTTMPDIR}/.XXX-$(i):	$(i)-orig
-	${GREPSTRASSEN} -adddirectives XXX ${DATADIR}/$(i)-orig > /dev/null
-	cp -f /tmp/XXX_$(i)-orig.bbd $@
+${XXX_TARGETS:C/^/${PERSISTENTTMPDIR}\/.XXX-/:C/$/-$(i)/}:	$(i)-orig
+	${GREPSTRASSEN} \
+	    -adddirectives XXX \
+	    ${XXX_NON_OTHER:C/^/-adddirectives XXX_/} \
+	    ${DATADIR}/$(i)-orig > /dev/null
+	cp -f /tmp/XXX_$(i)-orig.bbd ${PERSISTENTTMPDIR}/.XXX-other-$(i)
+.for xxxtype in ${XXX_NON_OTHER}
+	cp -f /tmp/XXX_${xxxtype}_$(i)-orig.bbd ${PERSISTENTTMPDIR}/.XXX-${xxxtype}-$(i)
+.endfor
 .endfor
 
 ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd:	\
@@ -741,16 +755,24 @@ ${PERSISTENTTMPDIR}/strassen_in_planung.bbd:	fragezeichen-orig
 # XXX Hmmm, die "temporary"-Einträge könnten eigentlich nach fragezeichen wandern,
 # aber nur, wenn sie nicht zusätzlich mit einer next_check/last_checked-Direktive
 # versehen wurden... Siehe auch das TODO "Fragezeichen-Reorganisation"
-${PERSISTENTTMPDIR}/XXX.bbd:	${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.XXX-|} \
-				handicap_s-orig gesperrt-orig
+#
+# Target ../tmp/XXX-{other,indoor,...}.bbd
+.for xxxtype in ${XXX_TARGETS:C/^/XXX-/}
+${PERSISTENTTMPDIR}/${xxxtype}.bbd:	${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.${xxxtype}-|} \
+					handicap_s-orig gesperrt-orig
 	echo -n > $@~
 	echo "#: line_dash: 8, 5" >> $@~
 	echo "#:" >> $@~
 .for i in ${SOURCE_TARGETS}
 	echo "############################################################" >> $@~
 	echo "# source: $(i)" >> $@~
-	cat ${i:S|^|${PERSISTENTTMPDIR}/.XXX-|} >> $@~
+	cat ${i:S|^|${PERSISTENTTMPDIR}/.${xxxtype}-|} >> $@~
 .endfor
+	mv $@~ $@
+.endfor
+
+${PERSISTENTTMPDIR}/XXX.bbd: ${PERSISTENTTMPDIR}/XXX-other.bbd
+	cat ${PERSISTENTTMPDIR}/XXX-other.bbd > $@~
 	@echo "# source: handicap_s-orig and gesperrt-orig" >> $@~
 	${MISCSRCDIR}/grepstrassen -directive temporary= \
 	    ${DATADIR}/handicap_s-orig ${DATADIR}/gesperrt-orig | \

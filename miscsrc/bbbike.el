@@ -197,8 +197,8 @@
   (make-local-variable 'font-lock-keywords)
   (setq font-lock-keywords
 	'(t
+	  ("^\\(#[^:].*\\)" (1 font-lock-comment-face))                 ;; comments
 	  ("\\(#:.*\\)"  (1 font-lock-warning-face))	            ;; directives
-	  ("^\\(#.*\\)" (1 font-lock-comment-face))                 ;; comments
 	  ("^\\([^\t\n]+\\)" (1 font-lock-constant-face))           ;; name
 	  ("^[^#][^\t\n:]+: \\([^\t\n]+\\)" (1 font-lock-string-face t)) ;; colon separated part of name
 	  ("\t\\([^ \n]+ \\)" (1 font-lock-keyword-face))            ;; category

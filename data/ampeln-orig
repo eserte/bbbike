@@ -1,6 +1,7 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.133 2008/01/20 22:58:19 eserte Exp $
+#: version: $Id: ampeln-orig,v 4.134 2008/01/26 00:21:03 eserte Exp $
+#: note: XXX_* categorization done 2008-01-26
 #:
 	X 9222,8787
 	X 8982,8781
@@ -1483,7 +1484,6 @@ nur Richtung O	X 8142,7221
 	X 10453,-2133
 	X 10747,-2129
 	X 17874,5
-# XXX del: in der Luftaufnahme nicht mehr sichtbar:	X 21683,906
 	X 17384,775
 	X 17518,564
 	X 16201,880
@@ -1544,7 +1544,6 @@ nur Richtung O	X 8142,7221
 	X 18492,6893
 	F 17925,6976
 	X 17518,4644
-#XXX del does not exist?	X 15190,6243
 	X 13659,4489
 	X 13305,4504
 	X 12789,5612
@@ -1865,7 +1864,7 @@ Industriebahn	B0 -2410,13746
 	F 12532,11008
 	X 4828,10356
 	F 11273,14495
-#: XXX: Baustellenampel
+#: XXX_checklater: Baustellenampel
 	X 10632,13199
 	F 11906,15462
 	X 7880,13315
@@ -1991,7 +1990,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8626,23432
 	B0 -5716,14829
 #: section: ^^^
 	X 9183,15909
-#: XXX: Ampel nur in Richtung Norden
+#: XXX_prog: Ampel nur in Richtung Norden
 	X 9242,15843
 	X 12653,11672
 	F 6058,10988

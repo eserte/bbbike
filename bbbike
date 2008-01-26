@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.344 2008/01/20 21:39:25 eserte Exp eserte $
+# $Id: bbbike,v 3.345 2008/01/26 00:25:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -127,7 +127,18 @@ BEGIN {
 #BEGIN{mymstat("before Tk");}
 ## DEBUG_END
 
-use Tk;
+BEGIN {
+    eval q{ use Tk; };
+    if ($@) {
+	warn $@;
+	if ($^O eq 'MSWin32' || -t STDIN) {
+	    warn "Please enter RETURN to exit.\n";
+	    <STDIN>;
+	}
+	CORE::exit(1);
+    }
+}
+
 #XXX for now disabled ... still too many bugs floating around -> what bugs?
 #use Tk::ErrorDialog; # XXX is this OK?
 use Tk::Canvas;
@@ -218,7 +229,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.344 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.345 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related

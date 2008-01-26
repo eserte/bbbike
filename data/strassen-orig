@@ -1,8 +1,9 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Strassen-Koordinaten (standard coords)
-#: version: $Id: strassen-orig,v 4.244 2008/01/24 19:08:02 eserte Exp $
+#: version: $Id: strassen-orig,v 4.245 2008/01/26 00:22:55 eserte Exp $
 #: title.de: Straßen und Plätze in Berlin
 #: title.en: Streets and places in Berlin
+#: note: XXX_* categorization done 2008-01-26
 #:
 Dudenstr.	H 9222,8787 9050,8783 8982,8781 8755,8776 8594,8773 8472,8772 8425,8771 8293,8768 8209,8769
 Methfesselstr.	N 8982,8781 9057,8936 9106,9038 9141,9142 9163,9209 9211,9354
@@ -1052,7 +1053,7 @@ Cantianstr.	N 10896,15250 10786,15544 10759,15622 10713,15746
 Rhinower Str.	N 10722,15921 10713,15746
 Eberswalder Str.	H 10889,15045 10618,15076 10516,15039 10351,14981
 Bernauer Str. (Wedding)	H 10351,14981 10336,14975 10176,14896 10094,14847 10011,14810 9877,14749 9805,14717 9621,14624 9472,14478 9410,14410 9400,14400 9267,14202 9224,14169 9192,14145
-#: XXX nach Freigabe des Innenstadtrings: H
+#: XXX_checklater nach Freigabe des Innenstadtrings: H
 Julie-Wolfthorn-Str.	N 9192,14145 9061,14050 9006,14005
 Feldstr. (Wedding)	N 8953,14528 9003,14608
 Feldstr. (Wedding)	NN 9003,14608 9048,14681
@@ -1076,7 +1077,6 @@ Schönfließer Str. (Prenzlauer Berg)	N 10593,16037 10603,16158 10606,16319 10613,
 Stavanger Str.	N 10620,16497 10632,16644 10635,16706 10638,16770 10783,16760 10862,16754 10892,16821 10905,16893
 Björnsonstr. (Prenzlauer Berg)	N 10197,16528 10209,16674
 (Kolonie Bornholm 1 und 2)	NN 10209,16674 10198,16929
-# XXX del: laut Jessica Mai und Google-Luftbild nicht mehr existent #: by: Olaf Schulz (korrigiert by SRT): (Stavanger Str. - Esplanade)	NN 10635,16706 10576,16824 10569,16910
 Esplanade	N 10986,16897 10905,16893 10655,16904 10569,16910 10498,16913 10198,16929 10013,16972
 Finnländische Str.	N 9975,16425 10225,16436
 Czarnikauer Str.	N 10225,16436 10449,16415 10613,16403
@@ -1224,7 +1224,7 @@ Hobrechtstr.	N 11998,8872 12003,9105 11993,9211 11954,9415 11934,9538 11918,9659
 Sanderstr.	N 11715,9635 11918,9659 12081,9680
 Wissmannstr. (Neukölln)	N 11767,9026 11769,8515
 Mainzer Str. (Neukölln)	N 12063,8826 12057,8529 12068,8409 12096,8300 12139,8128
-Falkstr.	N 12139,8128 12162,8055 12179,7979
+Falkstr.	N 12139,8128 12162,8055 12178,7985 12179,7979
 Falkstr.	NN 12179,7979 12220,7822
 Hans-Schiftan-Str.	N 12541,8140 12528,8205
 Biebricher Str.	N 11884,8492 12057,8529
@@ -7325,10 +7325,10 @@ Zehdenicker Str.	N 10593,13765 10466,13855 10237,13947
 Templiner Str.	N 10612,14001 10679,14110 10725,14189 10751,14229
 Bregenzer Str.	N 4278,10262 4227,10014
 Am Bäkequell	N 4593,5235 4656,5101
-#: XXX nach Freigabe des Innenstadtrings teilweise H vvv
+#: XXX_checklater nach Freigabe des Innenstadtrings teilweise H vvv
 Caroline-Michaelis-Str.	N 8810,14373 9061,14050 9125,13973
 Caroline-Michaelis-Str.	NN 9125,13973 9151,13941
-#: XXX ^^^
+#: XXX_checklater ^^^
 Seelbuschring	N 8242,4648 8432,4712 8473,4614
 Machonstr.	N 9025,4871 9032,4791 9047,4686 9066,4512 9080,4371
 Strelitzstr.	N 9259,4815 9032,4791
@@ -7704,7 +7704,7 @@ Bonhoefferweg	N 8538,13388 8487,13351 8434,13310
 Sauerbruchweg	N 8487,13351 8631,13159
 (Luisenstr. - Hufelandweg)	NN 8665,13353 8582,13355
 Promenade Schiffbauerdamm	NN 8245,13016 8315,13005 8396,12968 8465,12887 8478,12867
-#: XXX: nach Fertigstellung ebenfalls mit dem Namen "Promenade Schiffbauerdamm"?
+#: XXX: hat dieser Weg ebenfalls den Namen "Promenade Schiffbauerdamm"?
 (nördliches Spreeufer / Schiffbauerdamm)	NN 8478,12867 8529,12757 8566,12661 8587,12642 8635,12629 8754,12622
 (nördliches Spreeufer - Schiffbauerdamm)	NN 8529,12757 8536,12758 8545,12760
 (nördliches Spreeufer - Schiffbauerdamm)	NN 8478,12867 8490,12869 8508,12874

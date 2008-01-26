@@ -2,7 +2,8 @@
 #: encoding: utf-8
 #: title.de: Orte im weiteren Umland
 #: title.en: Places far away
-#: version: $Id: orte2-orig,v 4.47 2007/12/31 00:35:01 eserte Exp $
+#: version: $Id: orte2-orig,v 4.48 2008/01/26 00:21:48 eserte Exp $
+#: note: XXX_* categorization done 2008-01-26
 #:
 # Mecklenburg-Vorpommern, Brandenburg
 Rostock	5 -79160,185302
@@ -153,7 +154,7 @@ Hammelstall|(Brüssow)	0 56821,109071
 Woddow	1 61054,109046
 Bagemühl	1 62612,106709
 Damme|(Uckermark)	1 49971,99565
-#: XXX: Randowtal: besteht aus Eickstedt, Schmölln und Ziemkendorf.
+#: XXX_prog: Randowtal: besteht aus Eickstedt, Schmölln und Ziemkendorf.
 Eickstedt	1 51860,100659
 Warnitz	2 40978,86915
 Neuhof|(Warnitz)	0 42210,88596
@@ -701,6 +702,7 @@ Reinhardtsdorf-Schöna	1 68144,-167790
 Königstein	3 59506,-164614
 Gohrisch	2 61879,-165414
 Kleinhennersdorf|(Gohrisch)	0 64463,-165889
+#: XXX_prog: beide Rathens zusammenfassen
 #: alias: Rathen
 #: alias: Kurort Rathen
 #: alias: Luftkurort Rathen
@@ -1082,7 +1084,7 @@ Altreetzer Losse	0 62066,41901
 Neuküstrinchen	1 60992,43905
 Neurüdnitz	1 62672,43860
 Neuranft	1 59375,45180
-#: XXX: beides zusammen ist Wustrow:
+#: XXX_prog: beides zusammen ist Wustrow:
 Altwustrow	0 64808,40619
 Neuwustrow	0 63767,41025
 Friedrichshof|(Oderbruch)	0 64567,42168

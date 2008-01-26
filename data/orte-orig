@@ -2,6 +2,7 @@
 #: encoding: utf-8
 #: title.de: Orte in Brandenburg
 #: title.en: Places in Brandenburg
+#: note: XXX_* categorization done 2008-01-26
 #
 # Kategorisierung (siehe .../misc/ort_kategorien.gif)
 # 6 Berlin			(ca. mehr als 200000 EW)
@@ -70,7 +71,7 @@ Werneuchen	3 32444,25291
 Bernau|b. Berlin	4 22541,30476
 Buckow|(Märkische Schweiz)	3 55786,18881
 Seelow	3 76771,15413
-#: XXX Großgemeinde ohne Ortskern?
+#: XXX_prog Großgemeinde ohne Ortskern?
 Vierlinden	1 73372,12848
 Diedersdorf (Vierlinden)	1 73372,12848
 Müncheberg	3 60197,12001
@@ -311,7 +312,7 @@ Treskow	0 -31101,53235
 Bollersdorf	1 54169,20358
 Grunow	1 53014,23097
 Klosterdorf	1 47334,21218
-#: XXX: zugehörige Großgemeinde: Garzau-Garzin
+#: XXX_prog: zugehörige Großgemeinde: Garzau-Garzin
 Garzau	1 47381,14731
 Garzin	1 49437,16565
 Hohenstein	1 48709,18618
@@ -338,7 +339,7 @@ Platkow	2 72513,20819
 Wulkow	1 66523,19497
 Hermersdorf	1 63286,18968
 Obersdorf	1 62416,15883
-#: XXX: Schreibweise (laut opengeodb) Alt Rosenthal, andere Quellen nennen Altrosenthal. Siehe auch: http://www.vierlinden.org/gemeinde/altrosenthal.htm
+#: note: Schreibweise (laut opengeodb) Alt Rosenthal, andere Quellen nennen Altrosenthal. Siehe auch: http://www.vierlinden.org/gemeinde/altrosenthal.htm
 #: alias: Altrosenthal
 Alt Rosenthal	0 69731,16901
 Gusow	2 74810,19707
@@ -348,7 +349,7 @@ Friedersdorf|b. Seelow	1 77759,12767
 Dolgelin	2 78805,11331
 Lietzen	1 74262,8140
 Libbenichen	1 80731,9206
-#: XXX: Großgemeinde ohne Ortskern?
+#: XXX_prog: Großgemeinde ohne Ortskern?
 Fichtenhöhe	1 79462,7750
 Alt Mahlisch	1 79462,7750
 Neu Mahlisch	1 77250,9375
@@ -465,7 +466,7 @@ Mixdorf	1 79281,-22168
 Merz	1 74961,-21982
 Ragow	1 72241,-22306
 # westlich von Berlin
-#: XXX: zugehörige Großgemeinde: Dallgow-Döberitz
+#: XXX_prog: zugehörige Großgemeinde: Dallgow-Döberitz
 Dallgow	2 -11237,13995
 Döberitz	0 -13330,13857
 Seeburg	1 -8906,11139
@@ -479,7 +480,7 @@ Töplitz	2 -23207,2284
 Leest	0 -21028,2527
 Grube	1 -20009,2396
 Bornim	0 -16905,1503
-#: XXX: zugehörige Großgemeinde: Uetz-Paaren
+#: XXX_prog: zugehörige Großgemeinde: Uetz-Paaren
 Uetz	0 -21057,6524
 Paaren	1 -21480,8422
 Göttin|(Töplitz)	0 -24100,4331
@@ -948,7 +949,7 @@ Raßmannsdorf	0 68961,-15535
 Tauche	1 62742,-27242
 Giesensdorf	1 60565,-29039
 Stremmen	1 62837,-29785
-#: XXX zugehörige Großgemeinde: Dahlwitz-Hoppegarten
+#: XXX_prog zugehörige Großgemeinde: Dahlwitz-Hoppegarten
 Dahlwitz	2 27036,11142
 Hoppegarten|(Mark)	2 28510,12507
 Münchehofe|b. Dahlwitz	1 28660,9920

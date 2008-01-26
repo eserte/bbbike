@@ -1,12 +1,12 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.161 2008/01/20 22:59:48 eserte Exp $
+#: version: $Id: handicap_s-orig,v 4.162 2008/01/26 00:23:17 eserte Exp $
+#: note: XXX_* categorization done 2008-01-26
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-# XXX hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
+# XXX_prog hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
 #: last_checked: 2007-08-04
 Behrenstr./Bebelplatz: Einbahnstraße	q3::inwork; 9626,12227 9700,12234 9743,12239
-#XXX del Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
 Bodestr.: Bauarbeiten	q4::inwork 9912,12623 9943,12642
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
@@ -321,7 +321,7 @@ Teltowkanalpromenade: enge und kurvige Unterführung	q2 4261,2703 4247,2652 4193,
 Heinrich-Laehr-Park: Fußgänger	q1 1527,574 1258,1674
 #: note: Luftbild
 (Unterführung): Rampen	q2 -8334,14461 -8238,14436 -8256,14418 -8227,14408 -8287,14411
-#: XXX eigentlich nach comments_mount:
+#: XXX_prog eigentlich nach comments_mount:
 Viktoriapark: starke Steigung, Fußgänger	q4; 8598,9061 8694,9067 8884,9078
 Viktoriapark: starkes Gefälle, Fußgänger	q2; 8884,9078 8694,9067 8598,9061
 Viktoriapark: Steigung, Fußgänger	q3; 9106,9038 8962,9048
@@ -494,7 +494,7 @@ Holwedestr.: schmale Straße	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,
 (Fußgängertunnel Bahnhof Lichterfelde Ost): Fußgänger	q4 5367,2528 5413,2436
 #: by: garci
 Am Schloßpark: eng bei Autoverkehr	q1 10775,19054 10712,18975 10625,18831 10496,18704
-#: XXX von wen?
+#: by: anonymous
 (Karl-Bonhoeffer-Nervenklinik zwischen Hermann-Piper-Str. und U-Bahnhof): Krankenhausgelände	q1 5001,19832 5079,19635 5124,19634 5228,19320 5246,19244 5429,19165
 #: by: Daniel (dan.berlin):
 Poschingerstr.: enge Straße	q1 5697,6276 5754,6238 5824,6240 5875,6262 5925,6311 5971,6343 6095,6358 6261,6391
@@ -529,7 +529,7 @@ Nordufer: teilweise sehr schmaler Radweg	q1 7231,14749 7467,14633
 (Weg am Nordgraben): schmaler Weg, mäßiger Fußgängerverkehr	q2 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3152,20852 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
 #: by: Hans-Reiner Padberg: vvv
 (Weg am Waldfriedhof Dahlem): Kurven	q2 1051,5525 825,5420 626,5322
-#: XXX das gehört eigentlich nach comments_mount...
+#: XXX_prog das gehört eigentlich nach comments_mount...
 (Waldweg parallel zur Flanaganstr. zwischen Hüttenweg und Im Jagen): starke Steigungen und Gefälle	q2 1051,5525 1697,5938
 (Altvaterstr./Breisgauer Str. - Salzachstr.): schmaler Fußweg	q3 -2295,3523 -2122,3593
 #: by: ^^^
@@ -559,8 +559,6 @@ Hünensteig: Fußgänger	q2 6396,5125 6406,5223 6108,5253
 Mühlenbecker Weg: Fußgänger	q1 20150,15678 20334,16043
 #: by: Marijke Maij
 (Nordmannzeile - Vorarlberger Damm): Fußgänger, Kleingartenweg	q1 6807,7262 7231,7394
-# #: by: Felix Ihlefeld, aber von Skander Morgenthaler aufgehoben (zu kurzes Stück)
-# XXX del: Groß-Berliner Damm: teilweise noch Baustelle	q3::inwork 17645,5328 17700,5272 17778,5077 18058,4627
 #: by: Michael C.:
 Herschelstr.: enge Wohnstraße	q1 3222,13252 3262,13406 3276,13481 3292,13622
 #: by: Skander Morgenthaler:
@@ -635,7 +633,6 @@ Kamminer Str.: unübersichtliche Kreuzungen, parkende PKWs	q1 3248,12954 3292,131
 (Bad Kissingen): Fußgänger	q2 3639,7590 3652,7795
 (Kolonieweg a. d. Forkenbeckstr.): Fußgänger, teilweise eng 	q3 3218,8233 3230,8194 3635,8099 3709,8082 3753,8073 3779,8105
 Claire-Waldoff-Weg: Fußgänger	q2 3635,8099 3596,7550
-#XXX del: Elisabethkirchstr.: schieben auf schmalem Gehweg wg. Bauarbeiten	q4::inwork 9864,14181 9737,14126
 Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 8000,10879 8135,10784
 (Volkspark Friedrichshain, parallel zur Friedenstr.):Fußgänger	q1 12386,13085 12387,13107 12344,13157 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11772,13624
 (Weydemeyerstr.): Fußgänger	q1 11905,12765 11873,12778 11851,12729
@@ -670,7 +667,6 @@ Alice-Salomon-Park: getrennte Wege für Radfahrer und Fußgänger, Bordsteine	q2 68
 (zum Bayernring): Fußgänger	q1 8437,8557 8525,8396
 Bautzener Platz: Fußgänger, Bordsteine	q2 8182,9240 8100,9240
 Bautzener Platz: Fufgänger, Bordsteine	q2 8102,9262 8183,9260
-# del XXX wahrscheinlich out-of-date # last_checked: 2006-09-28 General-Pape-Str.: schieben; wg. Bauarbeiten nur enger Fußweg	q4::inwork 7959,7609 7931,7746 7945,7789
 (Danziger Str. - Lilli-Henoch-Str.): Fußgänger	q2 12128,14640 12201,14770 12258,14779 12298,14846 12277,14859 12381,15034
 (Prenzlauer Allee - Lilli-Henoch-Str.): Fußgänger	q2 11882,15384 11952,15374 12107,15229 12215,15115 12381,15034
 (Prenzlauer Allee - Lilly-Henoch-Str.): Fußgänger	q2 11860,15309 11919,15314 11952,15374
@@ -704,7 +700,6 @@ Vereinsweg (Steglitz): Fußgänger, Privatstraße, Radfahren nicht erlaubt	q4 5347,
 (Volkspark Friedrichshain): Fußgänger	q2 12128,13604 12024,13581 12052,13687
 (Zufahrt Landsberger Allee): Fußgänger	q2 13433,13346 13397,13426 13574,13505
 Otto-Ostrowski-Str.: Fußgänger	q1 13708,13623 13769,13487
-#del XXX: Otto-Ostrowski-Str.: Fahrbahn wg. Bauarbeiten gesperrt, auf Gehweg ausweichen	q2::inwork 13862,13262 13930,13100
 (Verlängerte Wallenbergstr.): Fußgänger, schmal	q3 4139,8485 4029,8482
 (Zufahrt zur Kolonie Hohenzollerndamm): Fußgänger, Poller	q2 3775,8771 3868,8759
 Apeldorner Weg: Fußgänger	q1 3848,8689 3868,8759 3932,8989

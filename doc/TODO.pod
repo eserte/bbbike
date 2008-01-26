@@ -1507,6 +1507,40 @@ the hwnd parameter.
 
 =over
 
+=item * (H5)
+
+Move distribution to Strawberry Perl 5.10.0.
+
+Prerequisite: have a Strawberry Perl which can actually compile
+programs under Vista. Alternative path: use Strawberry Perl + PPMs
+from free PPM repositories.
+
+If this is solved, then do the following steps:
+
+=over
+
+=item * The distribution should contain all modules from
+Bundle/BBBike_windist.pm. Learn how to create a custom Perl
+distribution.
+
+=item * Create the infrastructure to run a specific set of tests (e.g.
+everything but cgi, everything interesting for the windows
+distribution).
+
+=item * Define a test set for a windows distribution
+
+=item * For a intermediate time, it should be possible to create both
+a SiePerl and a Strawberry Perl-based BBBike distribution. This means
+the bbbike.tpl.iss needs some switches or there should be another
+template file for the Strawberry-based distribution.
+
+=item * It should be possible to have something like a sub-version for
+the distribution (like PORTREVISION in FreeBSD or the _<number> bit in
+Debian). It's likely that 3.16_2 for Windows will come out before
+3.17.
+
+=back
+
 =item * (M1)
 
 Try Win32::GUI::SplashScreen as splash alternative.

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: grepstrassen,v 1.22 2007/12/23 23:47:18 eserte Exp $
+# $Id: grepstrassen,v 1.23 2008/01/25 23:17:35 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -39,7 +39,7 @@ GetOptions("v" => \$v,
 	       my $type = $_[1];
 	       $special_init{$type} = 1;
 	   },
-	   "adddirectives=s" => sub {
+	   'adddirectives=s@' => sub {
 	       my $type = $_[1];
 	       init_directive_handler($type);
 	   },

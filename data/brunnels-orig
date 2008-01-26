@@ -1,6 +1,7 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title.de: Brücken und Tunnel
 #: title.en: Bridges and tunnels
+#: note: XXX_* categorization done 2008-01-26
 #:
 Kurfürstendammbrücke	Br 2590,9949 2694,10002 2702,10006
 Oberbaumbrücke	Br 13206,10651 13305,10789
@@ -43,7 +44,7 @@ Baumschulenbrücke	Br 15584,5946 15628,6009
 #: add_fragezeichen: kommt nur im RV-Plan so vor:
 Heidekampbrücke	Br 15335,6146 15396,6125
 Brücke über den Nördlicher Heidekampgraben	Br 15070,8584 15079,8575
-#: XXX berliner-stadtplan sagt hierzu "Britzer Brücke", aber das dürfte falsch sein, da sie schon anderswo existiert
+#: XXX_indoor berliner-stadtplan sagt hierzu "Britzer Brücke", aber das dürfte falsch sein, da sie schon anderswo existiert
 Britzer-Allee-Brücke	Br 15146,6054 15143,5936
 Späthstraßenbrücke	Br 14437,5080 14535,5137
 Hertabrücke	Br 12664,7013 12689,6905
@@ -123,7 +124,7 @@ Böckmannbrücke	Br -7145,-961 -7210,-1060
 Nathanbrücke	Br -6928,-1076 -6991,-1159
 Alsenbrücke	Br -7070,227 -7053,129
 Wannseebrücke	Br -5253,1395 -5161,1387
-#: XXX Tunnel und Brücke genauer auflösen
+#: XXX_indoor Tunnel und Brücke genauer auflösen
 Kreuz Zehlendorf (Tunnel und Brücke)	TuBr -4003,1215 -3691,1299 -3130,1669
 Alemannenstr., Autobahnbrücke	Br -3899,2002 -3818,2101
 Borussenstr., Autobahnbrücke	Br -3907,2416 -3780,2523
@@ -272,7 +273,7 @@ Bendlerbrücke	Br 7595,11086 7579,11032
 Herkulesbrücke	Br 6880,11110 6882,11061 6873,11011
 Corneliusbrücke	Br 6582,11202 6606,11222 6630,11247
 Charlottenburger Brücke	Br 5383,11834 5475,11846
-#: XXX eigentlich zwei Brücken
+#: XXX_indoor eigentlich zwei Brücken
 Brücken zur Schleuseninsel	Br 5794,11624 5835,11768
 Marchbrücke	Br 5018,12322 4999,12289 4981,12252
 Dovebrücke	Br 4653,12550 4631,12520 4602,12488
@@ -359,7 +360,7 @@ Lange Brücke (Potsdam)	Br -12493,-1896 -12567,-1817
 Lange Brücke (Potsdam)	Br -12567,-1817 -12659,-1700 -12719,-1661
 Inselbrücke (Potsdam)	Br -12256,-1456 -12260,-1503
 Brüssower Str. (Prenzlau)	Br 39830,101921 40025,101987
-#: XXX was ist mit Bahnstrecken? Noch kein check_neighbors vvv
+#: XXX_prog was ist mit Bahnstrecken? Noch kein check_neighbors vvv
 #	Br 7399,-7001 7558,-7093
 #	Br 2735,-6109 2459,-7518
 Oder-Havel-Kanal über Bahnstrecke	Br 36800,50200 36936,50206
@@ -370,7 +371,7 @@ Rammrathbrücke	Br -551,-731 -502,-803
 Knesebeckbrücke	Br 1453,-306 1460,-372
 Wublitzbrücke	Br -21300,767 -21221,764
 B101 (Elsterwerda)	Br 20772,-104623 20533,-104646
-#: XXX ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#: XXX_prog ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ## wieder Berlin ...
 (Güterbahnhof Greifswalder Str.)	Br 12540,15063 12734,14943
 Hermann-Blankenstein-Str.	Tu 13886,13668 13858,13719
@@ -406,10 +407,8 @@ Hugo-Heimann-Brücke	Br 9140,17921 9182,17918
 (Brücke über die Panke)	Br 8567,16429 8592,16406
 (Brücke über die Panke)	Br 9131,17664 9084,17678
 (Brücke über die Panke)	Br 13567,23101 13554,23123
-#: XXX vielleicht "Alexandersteg"?
-(Brücke über den Tegeler Hafen)	Br 1756,20405 1736,20441
-#: XXX vielleicht "Wilhelmsteg"?
-(Brücke über den Tegeler Hafen)	Br 1742,20464 1762,20505
+Alexandersteg	Br 1756,20405 1736,20441
+Wilhelmsteg	Br 1742,20464 1762,20505
 Badbrücke	Br 8543,16364 8516,16393
 Pankstraßenbrücke	Br 8156,15614 8176,15635
 Schönstedtstraßenbrücke	Br 8278,16043 8236,16071
@@ -421,8 +420,7 @@ Gerichtstraßenbrücke	Br 8290,15304 8268,15312
 (Heubudenbrücke)	Br 9027,17290 8977,17297
 Karolinensteg	Br 1762,20505 1761,20539
 Mühlensteg	Br 1721,20603 1697,20623
-#: XXX vielleicht "Gabrielensteg"?
-(Brücke über den Tegeler Fließ)	Br 1687,20645 1668,20670
+Gabrielensteg	Br 1687,20645 1668,20670
 (Brücke über den Tegeler Fließ)	Br 2361,21512 2336,21546
 (Brücke über den Tegeler Fließ)	Br 4619,22934 4626,22914
 Egidysteg	Br 3124,22198 3134,22153

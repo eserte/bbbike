@@ -1,6 +1,7 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.220 2008/01/24 19:07:58 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.221 2008/01/26 00:23:06 eserte Exp $
+#: note: XXX_* categorization done 2008-01-26
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -33,7 +34,7 @@ Berliner Str. (Blankenfelde): mäßiges Kopfsteinpflaster	Q2 9490,23531 9528,23240
 B96a: Radweg Richtung N, OK	Q0 9228,23643 9146,23843 8984,24078 8891,24330 8686,24872 8659,24959 8493,25378
 Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15589,27116 15231,26587 14859,26029 14472,25449 14314,25193 14219,25013
 Hobrechtsfelder Chaussee (ab Kurve): schlechtes Kopfsteinpflaster, 13 km/h	Q3 15589,27116 15709,27984 15757,28054
-#: XXX Bauarbeiten ab August 2006 bis Stahlheimer Str., danach asphaltiert (http://www.berlin.de/ba-pankow/presse/archiv/20060717.1325.44287.html)
+#: XXX_checklater Bauarbeiten ab August 2006 bis Stahlheimer Str., danach asphaltiert (http://www.berlin.de/ba-pankow/presse/archiv/20060717.1325.44287.html)
 Wisbyer Str.: mäßiges Kopfsteinpflaster	Q2; 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 11448,16398 11397,16405 11289,16423 11033,16464
 Wisbyer Str.: Asphalt	Q0; 11033,16464 11289,16423 11397,16405 11448,16398 11470,16393 11542,16384 11632,16373 11688,16365 11727,16358
 Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege	Q1 11888,9203 11993,9211 12074,9217 12148,9209
@@ -394,7 +395,7 @@ Boddinstr.: teilweise Asphalt auf der Fahrbahn	Q1 12096,8300 12217,8320
 Boddinstr.: Kopfsteinpflaster	Q2 12217,8320 12368,8356 12582,8408
 Rollbergstr.: Asphalt	Q0 11960,8090 12139,8128
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12407,8177 12528,8205 12714,8249
-Falkstr.: Asphalt	Q0 12139,8128 12162,8055 12179,7979 12220,7822
+Falkstr.: Asphalt	Q0 12139,8128 12162,8055 12178,7985 12179,7979 12220,7822
 Schillerpromenade: Kopfsteinpflaster	Q2 11665,8130 11695,8005
 Schillerpromenade: Kopfsteinpflaster	Q2 11717,7895 11736,7801 11755,7704 11779,7582 11797,7492
 Säntisstr.: Kopfsteinpflaster	Q2 8892,802 8743,681 8533,512
@@ -764,7 +765,7 @@ Maxstr.: mäßiges Kopfsteinpflaster	Q2 7786,15785 7744,15831
 Maxstr.: gutes Kopfsteinpflaster	Q1 7744,15831 7673,15897
 Maxstr.: Asphalt	Q0 7673,15897 7622,15946
 Maxstr.: mäßiges Kopfsteinpflaster	Q2 7622,15946 7543,16016 7491,16072
-#: XXX korrekte Bezeichnung?
+#: XXX_indoor korrekte Bezeichnung?
 Nazarethkirchstr.: einige Straßenwellen	Q0 7543,16016 7441,15909 7354,15817 7198,15656
 Genter Str.: mäßiges Kopfsteinpflaster	Q2 7270,15307 7148,15447 7012,15571 6926,15675 6809,15798 6681,15928
 Am Walde: Asphalt	Q0 17775,7874 17678,7850 17527,7812
@@ -1632,7 +1633,7 @@ Alice-und-Hella-Hirsch-Ring: Asphalt	Q0 15818,10296 15788,10252 15709,10145 1574
 Charlotte-Salomon-Hain: Kopfsteinpflaster	Q2 15749,10112 15716,10065
 Paula-Fürst-Str.: Asphalt	Q0 15775,10092 15874,10025
 Clara-Grunwald-Str.: Asphalt	Q0 15652,10348 15578,10250 15567,10235
-#: XXX teilweise noch in Bau:
+#: XXX_checklater teilweise noch in Bau:
 Hildegard-Marcusson-Straße: Asphalt	Q0 16004,10204 15952,10134 15874,10025 15831,9968
 (Hildegard-Marcusson-Straße - Uferweg): Parkweg	Q1 15831,9968 15811,9957 15786,9957
 Sven-Hedin-Str.: asphaltierte Fahrbahn, asphaltierter Radweg	Q0 458,3697 394,3694 271,3772
@@ -1670,8 +1671,9 @@ Kiehnwerderallee: asphaltiert	Q0 16395,8816 16534,8182 16602,7810 16620,7574 166
 #: by: http://www.radzeit.de/gallery2/v/Radfahren+in+der+Stadt/Treptow-Koepenick/Luisenhain_001.JPG.html
 Luisenhain: glattes Pflaster	Q0 22196,4847 22147,4831 22043,4562 22071,4501
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20070111.1600.71028.html
-#: XXX: im ersten Quartal 2007 wird die Straße mit einer bituminösen Befestigung versehen
-Melonensteig: unbefestigte Fahrbahn	Q2 -7908,14955 -7808,14939 -7715,14924 -7624,14910
+#: note: im ersten Quartal 2007 wird die Straße mit einer bituminösen Befestigung versehen
+#: note: vorher: unbefestigte Fahrbahn, Q2
+Melonensteig: asphaltiert	Q0 -7908,14955 -7808,14939 -7715,14924 -7624,14910
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20061218.1520.70094.html
 Viersener Str.: asphaltiert	Q0 -5263,14656 -5228,14750 -5199,14835
 Klosterstr.: Kopfsteinpflaster	Q2 10946,12241 10945,12150

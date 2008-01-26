@@ -1,6 +1,7 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.220 2008/01/24 19:07:58 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.221 2008/01/26 00:23:06 eserte Exp $
+#: note: XXX_* categorization done 2008-01-26
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
@@ -379,7 +380,7 @@ Boddinstr.: teilweise Asphalt auf der Fahrbahn	Q1 12096,8300 12217,8320
 Boddinstr.: Kopfsteinpflaster	Q2 12217,8320 12368,8356 12582,8408
 Rollbergstr.: Asphalt	Q0 11960,8090 12139,8128
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12407,8177 12528,8205 12714,8249
-Falkstr.: Asphalt	Q0 12139,8128 12162,8055 12179,7979 12220,7822
+Falkstr.: Asphalt	Q0 12139,8128 12162,8055 12178,7985 12179,7979 12220,7822
 Schillerpromenade: Kopfsteinpflaster	Q2 11665,8130 11695,8005
 Schillerpromenade: Kopfsteinpflaster	Q2 11717,7895 11736,7801 11755,7704 11779,7582 11797,7492
 Säntisstr.: Kopfsteinpflaster	Q2 8892,802 8743,681 8533,512
@@ -1521,7 +1522,7 @@ Umfahrung Spreepark: fester Sandweg	Q2 16023,8860 16084,8833 16161,8852
 Kiehnwerderallee: asphaltiert	Q0 16395,8816 16534,8182 16602,7810 16620,7574 16633,7434
 (Fähre - Kiehnwerderallee): asphaltiert	Q0 16649,7570 16620,7574
 Luisenhain: glattes Pflaster	Q0 22196,4847 22147,4831 22043,4562 22071,4501
-Melonensteig: unbefestigte Fahrbahn	Q2 -7908,14955 -7808,14939 -7715,14924 -7624,14910
+Melonensteig: asphaltiert	Q0 -7908,14955 -7808,14939 -7715,14924 -7624,14910
 Viersener Str.: asphaltiert	Q0 -5263,14656 -5228,14750 -5199,14835
 Klosterstr.: Kopfsteinpflaster	Q2 10946,12241 10945,12150
 Jordanstr.: teils schlechtes Kopfsteinpflaster	Q2 13645,9621 13464,9762
