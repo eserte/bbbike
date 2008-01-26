@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.59 2007/06/19 22:21:55 eserte Exp $
+# $Id: Makefile,v 1.60 2008/01/26 22:34:42 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -120,7 +120,7 @@ BBBIKE_IMAGES_RELURL=	/bbbike/images					# ***
 .endif
 BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
 # Which kind of images should be generated:
-IMAGE_SUFFIX=		png # was: gif					# ***
+IMAGE_SUFFIX=		gif # was: png					# ***
 # File with the font mapping for this host:
 #FONTS_LIST?=		fonts-vran.list					# ***
 FONTS_LIST?=		fonts-biokovo.list					# ***
@@ -173,7 +173,7 @@ BBBIKE_HTML_RELURL=	/BBBike/html
 BBBIKE_CGI_RELURL=	/cgi-bin
 BBBIKE_IMAGES_RELURL=	/BBBike/images
 BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
-IMAGE_SUFFIX=		png
+IMAGE_SUFFIX=		gif
 
 .if ${TARGET} == "radzeit" || ${TARGET} == "radzeit-old"
 WWW_USER=		www

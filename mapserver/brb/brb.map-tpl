@@ -12,11 +12,13 @@ SHAPEPATH "[% MAPSERVER_DIR %]/data"
 IMAGECOLOR [% IMAGECOLOR %]
 FONTSET "[% MAPSERVER_DIR %]/[% FONTS_LIST %]"
 
+[%# NOTE: IMAGE_SUFFIX => type of *input* images -%]
+[%#       IMAGE_TYPE   => type of *output* image -%]
 [% IF 1 %]
 # you may need to change this to match your MapServer build
 [% UNLESS IMAGE_TYPE.defined; IMAGE_TYPE = "png"; END -%]
 [%# some (all?) GD versions cannot handle alpha channels well ... -%]
-[% IF IMAGE_TYPE == "png"; SET NOALPHA = "_noalpha"; ELSE; SET NOALPHA = ""; END -%]
+[% IF IMAGE_SUFFIX == "png"; SET NOALPHA = "_noalpha"; ELSE; SET NOALPHA = ""; END -%]
 IMAGETYPE [% IMAGE_TYPE %]
 
 [% ELSE %]
@@ -282,6 +284,12 @@ SYMBOL
 END
 
 SYMBOL
+  NAME 'cemetery'
+  TYPE PIXMAP
+  IMAGE "[% IMAGE_DIR %]/cemetery_bg.[% IMAGE_SUFFIX %]"
+END
+
+SYMBOL
   NAME 'startflag'
   TYPE PIXMAP
   IMAGE "[% IMAGE_DIR %]/flag2_bl_centered.[% IMAGE_SUFFIX %]"
@@ -360,6 +368,39 @@ SYMBOL
   CHARACTER "[% RIGHTARROW %]"
 END
 
+SYMBOL
+  NAME 'point'
+  TYPE ELLIPSE
+  POINTS
+    1 1
+  END
+  FILLED TRUE
+END
+
+SYMBOL
+  NAME 'rectangle-train'
+  TYPE VECTOR
+  POINTS
+    0 0
+    0 0.6
+    1 0.6
+    1 0
+    0 0
+  END
+  FILLED TRUE
+  STYLE
+    8 12 8 12
+  END
+END
+
+SYMBOL   
+  NAME "cartoline_round"
+  TYPE cartoline
+  LINECAP round
+  LINEJOIN miter
+  LINEJOINMAXSIZE 3
+END
+
 #
 # Start of layer definitions
 #
@@ -398,9 +439,30 @@ LAYER
   
   CLASSITEM 'CAT'
   CLASS
-    EXPRESSION /^F:(P|Forest|Cemetery|Green|Orchard|Sport)$/
-    NAME "Park, Wald, Friedhof, Grünanlagen"
+    EXPRESSION "F:Forest"
+    NAME "Wald"
+    COLOR 102 180 123
+  END
+  CLASS
+    EXPRESSION "F:Orchard"
+    NAME "Kleingärten"
+    COLOR 232 248 200
+  END
+  CLASS
+    EXPRESSION /^F:(P|Green)$/
+    NAME "Park, Grünanlagen"
+    COLOR 118 196 139
+  END
+  CLASS
+    EXPRESSION "F:Sport"
+    NAME "Sportanlagen"
+    COLOR 200 216 152
+  END
+  CLASS
+    EXPRESSION "F:Cemetery"
+    NAME "Friedhof"
     COLOR [% COLOR_MIDDLE_GREEN %]
+    SYMBOL "cemetery"
   END
   CLASS
     EXPRESSION "F:Ae" 
@@ -721,7 +783,7 @@ LAYER
     EXPRESSION /./
 #XXX core dump with symbol?!
 #    SYMBOL '[% IMAGE_DIR %]/star.[% IMAGE_SUFFIX %]'
-    COLOR 225 0 0
+    COLOR 150 150 150
   END
 
   TEMPLATE "query.html"
@@ -787,6 +849,78 @@ END
 	{size=>20, minscale=>undef,  maxscale=>1000,    legend=>0, outline=>1, lblsize=>14},
    ];
 -%]
+
+LAYER
+  NAME "Autobahnen"
+  TYPE LINE
+  STATUS [% ON_STRASSEN_BAB %]
+  DATA strassen_bab
+  GROUP strassen_bab
+
+  DUMP TRUE # allow GML export
+
+  LABELITEM "NAME"
+  CLASSITEM 'CAT'
+
+[% BLOCK CLASS_BAB -%]
+  CLASS
+    EXPRESSION /^BAB/
+[% IF p.legend -%]
+    NAME "Autobahn/Kfz-Straße"
+[% END -%]
+    LABEL
+      MINFEATURESIZE 40
+      MINDISTANCE 50
+      POSITION auto
+      TYPE truetype
+      FONT "street"
+      MINSIZE [% p.lblsize %]
+      COLOR 0 0 0
+      OUTLINECOLOR 225 225 225
+      ANGLE AUTO
+    END
+    STYLE
+      SYMBOL "cartoline_round"
+      COLOR 255 255 255
+      SIZE [% p.size + 4 %] # was 8
+      ANTIALIAS TRUE
+    END
+    STYLE
+      SYMBOL "cartoline_round"
+      COLOR 0 0 128
+      SIZE [% p.size + 2 %] # was 6
+      ANTIALIAS TRUE
+    END
+    STYLE
+      SYMBOL "cartoline_round"
+      COLOR 255 255 255
+      SIZE 1
+    END
+#    COLOR 0 0 128
+#    SYMBOL 'width'
+#    SIZE [% p.size %]
+    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
+  END
+[% END -%]
+[% FOR i = SIZES_B; # reuse B for BAB
+      PROCESS CLASS_BAB p=i;
+   END
+-%]
+
+  CLASS # should not happen
+    EXPRESSION /./ 
+    COLOR 200 200 200
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Autobahnen"
+    WMS_ABSTRACT "Autobahnen und Kfz-Straßen"
+    WMS_SRS "EPSG:4326"
+  END
+END
 
 LAYER
   NAME "Straßen (Outline)"
@@ -1277,6 +1411,50 @@ END
 ### END AFTER UBAHN
 
 LAYER
+  NAME "Regionalbahn"
+  GROUP bahn
+  TYPE LINE
+  STATUS [% ON_R_BAHN %]
+  DATA rbahn
+  
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /^R[ABC]?$/
+    COLOR 0 128 0
+    MINSCALE 20000
+  END
+  CLASS
+    EXPRESSION /^R[ABC]?$/
+    MAXSCALE 20000
+    STYLE
+#      COLOR 102 102 102
+      COLOR 0 128 0
+      SYMBOL 'point'
+      SIZE 4
+    END
+    STYLE
+      COLOR 255 255 255
+      SYMBOL 'rectangle-train'
+      SIZE 2
+    END
+#    COLOR 0 128 0
+#    SYMBOL 'width'
+#    SIZE 2
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Regionalbahnlinien"
+    WMS_ABSTRACT "Regionalbahnlinien"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+### BEGIN AFTER REGIONALBAHN
+### END AFTER REGIONALBAHN
+
+LAYER
   NAME "S-Bahn"
   GROUP bahn
   TYPE LINE
@@ -1308,39 +1486,6 @@ END
 
 ### BEGIN AFTER SBAHN
 ### END AFTER SBAHN
-
-LAYER
-  NAME "Regionalbahn"
-  GROUP bahn
-  TYPE LINE
-  STATUS [% ON_R_BAHN %]
-  DATA rbahn
-  
-  CLASSITEM 'CAT'
-  CLASS
-    EXPRESSION /^R[ABC]?$/
-    COLOR 0 128 0
-    MINSCALE 20000
-  END
-  CLASS
-    EXPRESSION /^R[ABC]?$/
-    COLOR 0 128 0
-    SYMBOL 'width'
-    SIZE 2
-    MAXSCALE 20000
-  END
-  TEMPLATE "query.html"
-  HEADER "query_header2.html"
-  FOOTER "query_footer2.html"
-  METADATA
-    WMS_TITLE "Regionalbahnlinien"
-    WMS_ABSTRACT "Regionalbahnlinien"
-    WMS_SRS "EPSG:4326"
-  END
-END
-
-### BEGIN AFTER REGIONALBAHN
-### END AFTER REGIONALBAHN
 
 LAYER
   NAME "Radrouten"
@@ -2004,21 +2149,30 @@ LAYER
   
   LABELITEM "NAME"
 
-  CLASSITEM "CAT"  
+  CLASSITEM "CAT"
+[% FOR symbol = [
+		 ["church", "Kirche"],
+		 ["synagogue", "Synagoge"],
+		 ["mosque", "Moschee"],
+		 ["monument", "Denkmal, Mahnmal"],
+		 ["museum", "Museum"],
+		 ["theater", "Theater"],
+		] -%]
   CLASS
-    EXPRESSION 'SW|IMG:church.[% IMAGE_SUFFIX %]'
-    NAME "Kirche"
-    SYMBOL '[% IMAGE_DIR %]/church.[% IMAGE_SUFFIX %]'
+    EXPRESSION 'SW|IMG:[% symbol.0 %]'
+    NAME "[% symbol.1 %]"
+    SYMBOL '[% IMAGE_DIR %]/[% symbol.0 %].[% IMAGE_SUFFIX %]'
   END
+[% END -%]
 ## XXX Erst aktivieren, wenn sehenswuerdigkeit_polygon auch ..._point für den Mittelpunkt erzeugt
 #  CLASS
-#    EXPRESSION 'SW|IMG:hospital.[% IMAGE_SUFFIX %]'
+#    EXPRESSION 'SW|IMG:hospital'
 #    NAME "Krankenhaus"
 #    SYMBOL '[% IMAGE_DIR %]/hospital.[% IMAGE_SUFFIX %]'
 #  END
   CLASS
     EXPRESSION /./
-    NAME "Sehenswürdigkeit"
+    NAME "sonstige Sehenswürdigkeit"
     SYMBOL '[% IMAGE_DIR %]/star.[% IMAGE_SUFFIX %]'
   END
   TEMPLATE "query.html"

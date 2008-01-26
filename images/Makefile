@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.40 2007/09/15 19:35:17 eserte Exp $
+# $Id: Makefile,v 1.41 2008/01/26 19:35:01 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -103,6 +103,7 @@ png-to-gif:	\
 		apfel.gif \
 		birne.gif \
 		cal.gif \
+		cemetery_bg.gif \
 		church.gif \
 		ferry.gif \
 		ferry_klein.gif \

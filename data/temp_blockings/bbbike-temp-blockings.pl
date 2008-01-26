@@ -10719,8 +10719,8 @@ userdel	1::inwork 25579,5980 25121,5799
 EOF
      },
      { from  => 1200178800, # 2008-01-13 00:00
-       until => 1201820400, # 2008-02-01 00:00
-       text  => 'L 023 Herzfelde-Strausberg OD Hennickendorf, unterhalb Wachtelberg Instandsetzung Stützwand Vollsperrung 14.01.2008-31.01.2008 ',
+       until => 1201561200, # 2008-01-29 00:00
+       text  => 'L 023 Herzfelde-Strausberg OD Hennickendorf, unterhalb Wachtelberg Instandsetzung Stützwand Vollsperrung 14.01.2008-28.01.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 40565,12409 40362,12087
@@ -10784,6 +10784,23 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -29244,-23127 -30149,-22937 -30811,-22899
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Anna-Louisa-Karsch (Mitte) in Richtung Friedrichsbrücke Bauarbeiten, Fahrtrichtung gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_007651',
+       data  => <<EOF,
+userdel	1::inwork 10309,12854 10171,12769
+EOF
+     },
+     { from  => 1198018800, # 2007-12-19 00:00
+       until => 1206918000, # 2008-03-31 01:00
+       text  => 'L 030 Börnicker Chaussee OD Bernau, zw. Gernotstr. und Schönfelder Weg Straßenbau Wintersicherung Vollsperrung 20.12.2007-30.03.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 23113,30450 23368,30409 23631,30262
 EOF
      },
     );

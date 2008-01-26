@@ -107,6 +107,7 @@
       <label><input type="checkbox" name="layer" value="comments_route" [% t('comments_route_check') %]> <a href="[% MAPSERVER_URL %]/radroute.html">Radrouten</a> (in der Regel ausgeschildert)</label><br>
       <label><input type="checkbox" name="layer" value="blocked" [% t('blocked_check') %]> gesperrte Straßen</label><br>
       <label><input type="checkbox" name="layer" value="bahn" [% t('bahn_check') %]> Bahnlinien und Bahnhöfe</label><br>
+      <label><input type="checkbox" name="layer" value="strassen_bab" [% t('strassen_bab_check') %]> Autobahnen/Kfz-Straßen</label><br>
       <label><input type="checkbox" name="layer" value="gewaesser" [% t('gewaesser_check') %]> Gewässer</label><br>
       <label><input type="checkbox" name="layer" value="faehren" [% t('faehren_check') %]> Fähren</label><br>
       <label><input type="checkbox" name="layer" value="flaechen" [% t('flaechen_check') %]> Parks, Wälder</label><br>

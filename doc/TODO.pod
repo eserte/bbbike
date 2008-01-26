@@ -1393,6 +1393,12 @@ der E<quot># sourceE<quot>-Mechanismus benutzt wird und vielleicht
 durch Zeilennummern ergänzt wird. Dann kann eindeutig auf die
 entsprechende Originaldatei verwiesen wird.
 
+=item * (E3)
+
+Sehenswürdigkeiten vielleicht grau statt rot einfärben wie beim
+Mapserver? Das sieht nicht so aufdringlich aus. Auch bei anderen
+Ausgabeformaten (BBBikeDraw) überlegen.
+
 =back
 
 =head2 Plugins
@@ -1506,40 +1512,6 @@ the hwnd parameter.
 =head2 Windows specific
 
 =over
-
-=item * (H5)
-
-Move distribution to Strawberry Perl 5.10.0.
-
-Prerequisite: have a Strawberry Perl which can actually compile
-programs under Vista. Alternative path: use Strawberry Perl + PPMs
-from free PPM repositories.
-
-If this is solved, then do the following steps:
-
-=over
-
-=item * The distribution should contain all modules from
-Bundle/BBBike_windist.pm. Learn how to create a custom Perl
-distribution.
-
-=item * Create the infrastructure to run a specific set of tests (e.g.
-everything but cgi, everything interesting for the windows
-distribution).
-
-=item * Define a test set for a windows distribution
-
-=item * For a intermediate time, it should be possible to create both
-a SiePerl and a Strawberry Perl-based BBBike distribution. This means
-the bbbike.tpl.iss needs some switches or there should be another
-template file for the Strawberry-based distribution.
-
-=item * It should be possible to have something like a sub-version for
-the distribution (like PORTREVISION in FreeBSD or the _<number> bit in
-Debian). It's likely that 3.16_2 for Windows will come out before
-3.17.
-
-=back
 
 =item * (M1)
 
@@ -3259,32 +3231,16 @@ LANG gesetzt) lösen.
 
 =over
 
-=item * (M4)
+=item * (H4)
 
-Missing stipples for Cemetery etc.
-
-=item * (M5)
-
-Ich sehe 404 für /cgi-bin/radroute.html und .../help.html mit Firefox
-2.0.0.3 unter Windows. Wird <base> hier nicht korrekt erkannt? ->
-confirmed: ich sehe Probleme mit Firefox 1.0.7, 1.5, 1.5.0.1,
-1.5.0.2, 1.5.0.3, 1.5.0.4, 1.5.0.5, 1.5.0.6, 1.5.0.7, 1.5.0.9, 2.0,
-2.0.0.1, 2.0.0.2, 2.0.0.3 (verschiedene OS) und einigen Java- und
-anderen Bots. -> Workaround durch absolute URLs, aber vielleicht gibt
-es eine bessere Lösung?
+Cartography, symbols and Mapserver:
+L<http://mapserver.gis.umn.edu/docs/howto/cartosymbols>
 
 =item * (M5)
 
 Funktioniert coordset=start mit dem MapServer unter MSIE6.0? Ich sehe
 Warnings im errorlog, das mit dieser Konstellation img.x/img.y fehlt
 und somit eine Suche in MapServer gar nicht möglich ist.
-
-=item * (E3)
-
-Sehenswürdigkeiten vielleicht grau statt rot einfärben wie auf
-http://de.wikipedia.org/wiki/Bild:Berliner_freifunk_netz_03-01-2007.jpg
-? Das sieht nicht so aufdringlich aus. Auch bei allen anderen
-Ausgabeformaten (BBBikeDraw, bbbike/Tk) überlegen.
 
 =item * (M5)
 
@@ -3322,11 +3278,6 @@ Verbleibende Issues mit mapserver 4.4.1:
    Bugreports auf Bugzilla. Aber die *noalpha*png-Bilder funktionieren
    nun.
 
-=item * (E4)
-
-Nebenstraßen und Flughäfen sollten nicht die gleiche Farben (siehe
-Flughafen Tegel) oder Straßen sollten Outlines besitzen.
-
 =item * (M4)
 
 Ich sollte maptemplate durch TT oder ähnliches ersetzen können. Ein
@@ -3356,7 +3307,9 @@ bundesstrasse_table_32.png auch hier verwenden.
 
 Legend: start/goal flags are to high and may overlap the
 E<quot>MarkierungE<quot> circle. Maybe a mapserver problem, fixed in a
-new version?
+new version? Or is the flag simply to large, so it is overflowing? To
+solve this, probably I can build my own legend with
+L<http://mapserver.gis.umn.edu/docs/howto/html_legend/>.
 
 =item * (H3)
 
@@ -3367,7 +3320,8 @@ miscsrc/bbd2mapservhtml.pl
 =item * (M2)
 
 Zurzeit werden innerhalb Berlin Radroutennummern angezeigt. Soll das
-so bleiben?
+so bleiben? Vielleicht maßstabsabhängig? Leider muss ich in Berlin
+(eng) und Brandenburg (viel Platz) unterschiedliche Regeln anwenden.
 
 =item * (H4)
 
@@ -3397,6 +3351,40 @@ Java version does not compile anymore with Java 1.5
 =head1 Distribution/Installation/other development
 
 =over
+
+=item * (H5)
+
+Move Windows distribution to Strawberry Perl 5.10.0.
+
+Prerequisite: have a Strawberry Perl which can actually compile
+programs under Vista. Alternative path: use Strawberry Perl + PPMs
+from free PPM repositories.
+
+If this is solved, then do the following steps:
+
+=over
+
+=item * The distribution should contain all modules from
+Bundle/BBBike_windist.pm. Learn how to create a custom Perl
+distribution.
+
+=item * Create the infrastructure to run a specific set of tests (e.g.
+everything but cgi, everything interesting for the windows
+distribution).
+
+=item * Define a test set for a windows distribution
+
+=item * For a intermediate time, it should be possible to create both
+a SiePerl and a Strawberry Perl-based BBBike distribution. This means
+the bbbike.tpl.iss needs some switches or there should be another
+template file for the Strawberry-based distribution.
+
+=item * It should be possible to have something like a sub-version for
+the distribution (like PORTREVISION in FreeBSD or the _<number> bit in
+Debian). It's likely that 3.16_2 for Windows will come out before
+3.17.
+
+=back
 
 =item * (M1)
 

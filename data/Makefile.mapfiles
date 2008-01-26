@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.37 2007/10/14 20:29:51 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.39 2008/01/26 19:33:42 eserte Exp $
 #
 
 .ifndef COMMENTS_PARTIAL
@@ -166,33 +166,43 @@ $(MAPFILES_IMG_DIR)/reference-p.png: strassen landstrassen berlin orte wasserstr
 
 $(MAPFILES_IMG_DIR)/reference.gif:	$(MAPFILES_IMG_DIR)/reference.png
 	convert $> $@
+	chmod ugo+r $@
 
 $(MAPFILES_IMG_DIR)/reference-b.gif:	$(MAPFILES_IMG_DIR)/reference-b.png
 	convert $> $@
+	chmod ugo+r $@
 
 $(MAPFILES_IMG_DIR)/reference-inner-b.gif:	$(MAPFILES_IMG_DIR)/reference-inner-b.png
 	convert $> $@
+	chmod ugo+r $@
 
 $(MAPFILES_IMG_DIR)/reference-wide.gif:	$(MAPFILES_IMG_DIR)/reference-wide.png
 	convert $> $@
+	chmod ugo+r $@
 
 $(MAPFILES_IMG_DIR)/reference-p.gif:	$(MAPFILES_IMG_DIR)/reference-p.png
 	convert $> $@
+	chmod ugo+r $@
 
 $(MAPFILES_IMG_DIR)/reference.xpm:	$(MAPFILES_IMG_DIR)/reference.png
 	convert $> $@
+	chmod ugo+r $@
 
 $(MAPFILES_IMG_DIR)/reference-b.xpm:	$(MAPFILES_IMG_DIR)/reference-b.png
 	convert $> $@
+	chmod ugo+r $@
 
 $(MAPFILES_IMG_DIR)/reference-inner-b.xpm:	$(MAPFILES_IMG_DIR)/reference-inner-b.png
 	convert $> $@
+	chmod ugo+r $@
 
 $(MAPFILES_IMG_DIR)/reference-wide.xpm:	$(MAPFILES_IMG_DIR)/reference-wide.png
 	convert $> $@
+	chmod ugo+r $@
 
 $(MAPFILES_IMG_DIR)/reference-p.xpm:	$(MAPFILES_IMG_DIR)/reference-p.png
 	convert $> $@
+	chmod ugo+r $@
 
 # This variable is not used anymore because of difficulties to translate some
 # BSD make constructs for GNU make
@@ -201,6 +211,7 @@ RADWEGE_DELTA=	5 10 20
 #			${RADWEGE_DELTA:C/[0-9]+/$(MAPFILES_DATA_DIR)\/radwege&.shp/g}
 # XXX comments_.*.shp generieren?
 MAPFILES=		$(MAPFILES_DATA_DIR)/strassen.shp \
+			$(MAPFILES_DATA_DIR)/strassen_bab.shp \
 			$(MAPFILES_DATA_DIR)/wasserstrassen.shp \
 			$(MAPFILES_DATA_DIR)/orte.shp \
 			$(MAPFILES_DATA_DIR)/orte_city.shp \
@@ -259,6 +270,9 @@ $(MAPFILES_DATA_DIR)/strassen.shp:	\
 	    $(MAPFILES_TEMP_PREFIX)strassen-sorted \
 	    $(MAPFILES_TEMP_PREFIX)landstrassen-sorted \
 	    $(MAPFILES_TEMP_PREFIX)landstrassen2-sorted
+
+$(MAPFILES_DATA_DIR)/strassen_bab.shp:	strassen_bab
+	$(BBD2ESRI) -type street -o $(MAPFILES_DATA_DIR)/strassen_bab strassen_bab
 
 $(MAPFILES_DATA_DIR)/qualitaet.shp:	qualitaet_s qualitaet_l
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/qualitaet -qualityshack \

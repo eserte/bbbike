@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.193 2007/12/24 00:49:57 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.194 2008/01/26 20:40:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2007 Slaven Rezic. All rights reserved.
@@ -119,7 +119,10 @@ sub advanced_option_menu {
 		   -command => \&destroy_all_toplevels);
     $opbm->command(-label => 'Re-call some subs',
 		   -command => \&recall_some_subs,
-		   );
+		  );
+    $opbm->command(-label => 'Reload photos',
+		   -command => sub { %photo = (); load_photos() },
+		  );
     $opbm->command(-label => M"Datenverzeichnis ändern ...",
 		   -command => \&change_datadir);
 
