@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.180 2008/01/26 00:23:27 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.180 2008/01/26 00:23:27 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 ###################################################################
@@ -84,7 +84,7 @@ Seestr.	1 5062,14681 5233,14753 5440,14840
 Seestr.	1 5440,14840 5264,14671 5071,14614
 Waidmannsluster Damm	1 2142,20849 1835,21427 1882,21468 2205,20885
 Flughafen Tegel	1 2819,16141 2757,16194 2713,16286 2756,16344 2832,16343 2863,16280 2819,16141
-Jakob-Kaiser-Platz	1 2816,14145 2839,14205 2873,14213 2906,14172 2873,14112 2816,14145
+Jakob-Kaiser-Platz	1 2806,14156 2839,14205 2873,14213 2896,14187 2902,14142 2873,14112 2838,14116 2806,14156
 Kurt-Schumacher-Damm (Süd)	1 2839,14205 2803,14288 2766,14381 2861,14731
 Kurt-Schumacher-Damm (Süd)	1 3006,14724 2881,14307 2873,14213
 Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437
@@ -530,7 +530,7 @@ Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s 52431,94119 52422,94028 5235
 Lindenstr. (Frankfurt/Oder)	1 88960,-6639 88836,-6002
 Carthausplatz (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88960,-6639
 Gubener Str. (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88881,-6462 88775,-6151 88759,-5911
-B5 (paralleler Radweg existiert)	2 -8973,13293 -9586,13296 -10071,13353 -11250,13690
+B5 (paralleler Radweg existiert)	2 -9005,13354 -9586,13296 -10071,13353 -11250,13690
 Niemegk	1 -37263,-37723 -37263,-37584 -37216,-37587 -37188,-37728 -37263,-37723
 Bahnhofstr. (Fürstenberg)	1 -8839,86313 -8711,86273
 Fürstenberg	1 -8777,85887 -8680,85652

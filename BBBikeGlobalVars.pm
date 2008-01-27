@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.60 2008/01/20 22:57:17 eserte Exp eserte $
+# $Id: BBBikeGlobalVars.pm,v 1.62 2008/01/27 22:33:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2007,2008 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.60 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.62 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -36,7 +36,7 @@ use vars
      %sperre %sperre_tragen %sperre_narrowpassage $sperre_file $use_faehre
      $do_activate_temp_blockings $show_active_temp_blockings $current_temp_blockings_ms
      $coord_system $coord_system_obj $scale_coeff $scale %scalecommand
-     $default_img_fmt %can_handle_image @image_type_order $register_window_adjust
+     %can_handle_image @image_type_order $register_window_adjust
      $ampel_count $kopfstein_count $ampel_count_button $kopfstein_count_button
     );
 
@@ -55,7 +55,7 @@ use vars qw(
      $kneipen_photo $kneipen_klein_photo
      $essen_photo $essen_klein_photo $kino_klein_photo
      $search_photo $search_pref_photo $steigung_photo $gefaelle_photo
-     $inwork_photo $cal_photo $star_photo $newlayer_photo
+     $inwork_photo $achtung_photo $cal_photo $star_photo $newlayer_photo
      $menuarrow_photo $ferry_photo $ferry_klein_photo $blocked_photo
      $google_photo $bbbike_google_photo $wikipedia_photo
      %photo

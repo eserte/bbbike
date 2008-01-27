@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Telefonbuch.pm,v 1.33 2005/04/05 22:34:30 eserte Exp $
+# $Id: Telefonbuch.pm,v 1.34 2008/01/27 22:14:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,1999 Slaven Rezic. All rights reserved.
@@ -22,7 +22,7 @@ use BBBikeUtil;
 use Karte::GIS;
 use strict;
 use vars qw($VERBOSE $cdromdir $maxrec_str $maxrec_tel @EXPORT_OK @ISA
-	    $no_start_ziel $force $default_img_fmt
+	    $no_start_ziel $force
 
 	    $cgi_host $cgi_port $cgi_path
 	   );
@@ -356,9 +356,7 @@ sub show_tk_map {
 						  -fill => 'both');
 	$map_canvas->createImage(0,0,-anchor => 'nw', -tags => 'map');
 	eval {
-	    my $Photo = ($main::default_img_fmt eq 'xpm' ? "Pixmap" : "Photo");
-	    my $flag = $map_canvas->$Photo
-	      (-file => Tk::findINC("images/flag2_bl." . $main::default_img_fmt));
+	    my $flag = main::load_photo($map_canvas, 'flag2_bl');
 	    $map_canvas->createImage($mapxx-5, $mapyy-16, -anchor => 'nw',
 				     -image => $flag, -tags => 'flag')
 		if defined $mapxx and defined $mapyy;
@@ -1099,7 +1097,7 @@ use Tk;
 use strict;
 # Hier stehen die "emulierten" Variablen, die auch im BBBike-Hauptprogramm
 # vorkommen.
-use vars qw($advanced $os $transient $devel_host $default_img_fmt);
+use vars qw($advanced $os $transient $devel_host);
 use Getopt::Long;
 
 $os = ($^O eq 'MSWin32' ? 'win' : 'unix');
@@ -1107,7 +1105,6 @@ $advanced = 1;
 $transient = 1;
 $devel_host = 1;
 $Telefonbuch::cgi_host = "localhost"; # weil $cgi_host schon gesetzt ist
-$default_img_fmt = "gif";
 
 GetOptions("maproot=s" => \$Karte::map_root,
 	   "force!"    => \$Telefonbuch::force);

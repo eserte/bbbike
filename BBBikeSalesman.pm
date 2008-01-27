@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeSalesman.pm,v 1.9 2007/03/04 10:18:35 eserte Exp $
+# $Id: BBBikeSalesman.pm,v 1.10 2008/01/27 22:30:58 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -37,9 +37,7 @@ sub register {
     $BBBikePlugin::plugins{$pkg} = $pkg;
 
     if (!defined $button_image) {
-	# ruler image is from tkruler
-	$button_image = main::load_photo
-	    ($main::top, 'salesman.'.$main::default_img_fmt);
+	$button_image = main::load_photo($main::top, 'salesman');
     }
 
     $main::map_mode_callback{$pkg} = \&map_mode_activate;
@@ -75,7 +73,6 @@ sub add_button {
     return unless defined $mf;
 
     my $Radiobutton = $main::Radiobutton;
-    my $salesman_photo = main::load_photo($mf, 'salesman.' . $main::default_img_fmt);
     my $salesman_check;
     my %radio_args =
 	(-variable => \$main::map_mode,
@@ -83,7 +80,7 @@ sub add_button {
 	 -command  => \&main::set_map_mode,
 	);
     $salesman_check = $mf->$Radiobutton
-	(main::image_or_text($salesman_photo, 'Salesman'),
+	(main::image_or_text($button_image, 'Salesman'),
 	 %radio_args,
 	);
     BBBikePlugin::replace_plugin_widget($mf, $salesman_check,

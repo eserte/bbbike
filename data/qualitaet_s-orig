@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.221 2008/01/26 00:23:06 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.221 2008/01/26 00:23:06 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
@@ -492,7 +492,7 @@ Kinzigstr.: mäßiger Asphalt	Q1 14589,11975 14471,11782
 Waldeyerstr.: Kopfsteinpflaster	Q2 15054,12323 14997,12243
 #: by: Carsten (kcdr):
 Am Heidekampgraben: asphaltiert	Q0 15053,7966 14992,7578 15042,7513 15062,7458 15127,7402 15176,7315 15163,7245 15185,7234 15242,7177 15318,7052 15361,7014 15606,6639 15595,6564 15578,6471 15516,6357 15504,6328 15496,6314 15437,6227 15403,6145 15396,6125 15393,6112 15358,6022
-An der Güterbahn: Parkweg	Q1 15330,1658 15205,1670 15110,1732 14968,1835 14845,1866 14705,1836 14630,1795
+An der Güterbahn: Parkweg	Q1 15330,1658 15205,1670 15110,1732 14968,1835 14845,1866 14705,1836 14621,1798
 Falkensteinstr.: etwas besseres Kopfsteinpflaster	Q2 12911,10156 13031,10366 13135,10551
 Görlitzer Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q2; 13221,10005 13053,10088 12911,10156 12779,10232 12689,10273 12603,10312 12328,10442
 Görlitzer Str.: Kopfsteinpflaster	Q2; 12328,10442 12603,10312 12689,10273 12779,10232 12911,10156
@@ -1942,8 +1942,11 @@ Renate-Privatstr.: mäßiger Asphalt mit Schlaglöchern	Q1 8686,5536 8710,5735
 Spiekermannstr.: Kopfsteinpflaster	Q2 11673,16456 11844,16483 11919,16495 12054,16517
 #: by: Klaus Feuerstein
 Kirschweg: Beton	Q1 13869,2658 13931,2579 13953,2551 13948,2418 14078,2390
-#: by: Daniel Küstner (and verified)
+#: by: Daniel Küstner: vvv
+#: confirmed_by: srt:
 Krachtstr.: Asphalt	Q0 14817,10031 14844,10088 14920,10225
+Zimbelstr.: mäßiger Asphalt	Q1- 11959,20365 11924,20399 11879,20466 11840,20528 11797,20601 11732,20693 11633,20792 11569,20845 11518,20894
+#: by: ^^^
 #: by: Andre Köhler
 Wittekindstr.: Asphalt	Q0 8366,5428 8365,5502 8374,5598 8375,5766 8385,5907 8385,6034 8388,6322
 #: by: a.grund
@@ -1982,6 +1985,8 @@ Würmseestr.: guter Asphalt	Q0 22095,1572 22178,1589 22300,1627
 (Hanns-Eisler-Str. - Thomas-Mann-Str.): asphaltiert	Q0 13550,14973 13324,15109 13328,15127 13132,15239
 ######################################################################
 #: by: anonymous vvv
+Landreiterweg: guter Asphalt	Q0 14062,1846 14050,1904 13857,1975 13739,2004 13674,2011 13567,2008 13485,2007 13362,2000 13240,1993 13227,1974
+Wiesenweg (Spandau): guter Beton	Q0 -7595,13399 -7585,13388 -7595,13214 -7597,13159 -7592,13107
 Schädestr.: guter Asphalt	Q0 495,2133 556,2126 585,2129 668,2143 751,2172 824,2210
 Franzburger Str.: Beton	Q0 23382,11760 23390,11792 23403,11841 23432,11948
 Georgstr.: mäßiges Kopfsteinpflaster	Q2 22886,11776 22734,11662
@@ -2797,7 +2802,7 @@ Schreinerstr.: Kopfsteinpflaster	Q2 14776,12418 14570,12478 14304,12552
 Seestr. (Rahnsdorf): Asphalt	Q0 29850,4288 29660,4093 29593,4057 29350,3862
 #: by: Sandra (sweetydream...)
 #: corrected_by: rjoop (jetzt neuer Asphalt):
-Schulstr. (Spandau): Asphalt	Q0 -7580,13420 -7769,13468 -7931,13469 -8180,13444
+Schulstr. (Spandau): Asphalt	Q0 -7584,13421 -7769,13468 -7931,13469 -8180,13444
 #: by: Michael Ebert:
 #: note: ebenso aus der S-Bahn gesehen, auch die ADFC-Karte sagt "gut geeignet"
 Eichbuschallee: guter Asphalt	Q0 16136,7886 15920,7697 15765,7567 15557,7388
@@ -4680,7 +4685,7 @@ Wackenbergstr.: Betonplatten	Q1 11007,20112 11285,20260 11419,20327 11535,20383
 Wackenbergstr.: unbefestigt (Schlagloch-Sandpiste)	Q2- 11535,20383 11558,20414 11630,20476 11718,20551 11797,20601
 #: by: ^^^
 #: by: Marlen Caemmerer 
-Okarinastr.: Schotter, Mulden in der Straße	Q3 11558,20414 11434,20643 11678,20882
+Okarinastr.: Schotter, Mulden in der Straße	Q3 11558,20414 11506,20507 11424,20653 11421,20674 11435,20709 11502,20781 11569,20845 11657,20915
 #: by: Christian (chriskeys):
 Friedrich-Franz-Str.: gutes Kopfsteinpflaster	Q1 8767,5571 8787,5727 8801,5844 8815,5974 8830,6145 8846,6303
 #: by: Susanne Kuby:
@@ -5814,6 +5819,8 @@ Feldtmannstr.: schlechtes Kopfsteinpflaster	Q3 16460,17214 16418,17311 16380,173
 #: by: Andreas Jähn:
 #: note: ein anonymer Benutzer meinte hierzu "Kopfsteinpflaster"
 Petersallee: guter Asphalt	Q0 5444,16528 5602,16718 5791,16910
+#: by: Velodoom:
+Verlängerte Koloniestr.: mäßiges Kopfsteinpflaster	Q2 8944,17961 8957,18124 8918,18159
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

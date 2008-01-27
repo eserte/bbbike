@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.170 2008/01/25 23:48:39 eserte Exp $
+# $Id: Makefile,v 2.171 2008/01/27 12:21:46 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -48,7 +48,7 @@ SED=			env LANG=C sed
 GREPSTRASSEN_UTF8=	${PERL_UTF8} ${MISCSRCDIR}/grepstrassen
 COMBINE_STREETS=	${MISCSRCDIR}/combine_streets.pl
 
-COMMENTS_PARTIAL=	comments_cyclepath comments_ferry comments_misc \
+COMMENTS_PARTIAL=	comments_cyclepath comments_danger comments_ferry comments_misc \
 			comments_mount comments_path comments_route \
 			comments_tram comments_kfzverkehr comments_scenic
 

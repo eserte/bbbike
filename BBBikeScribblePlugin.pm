@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeScribblePlugin.pm,v 1.8 2007/03/04 10:18:00 eserte Exp $
+# $Id: BBBikeScribblePlugin.pm,v 1.9 2008/01/27 22:21:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -28,7 +28,7 @@ sub register {
 #      if (!defined $button_image) {
 #  	# ruler image is from tkruler
 #  	$button_image = main::load_photo
-#  	    ($main::top, 'salesman.'.$main::default_img_fmt);
+#  	    ($main::top, 'salesman');
 #      }
 
     $main::map_mode_callback{main::MM_SCRIBBLE()} = \&map_mode_activate;
@@ -78,7 +78,7 @@ sub add_button {
     return unless defined $mf;
 
     my $Radiobutton = $main::Radiobutton;
-#    my $salesman_photo = main::load_photo($mf, 'salesman.' . $main::default_img_fmt);
+#    my $salesman_photo = main::load_photo($mf, 'salesman');
     my %radio_args =
 	(-variable => \$main::map_mode,
 	 -value => main::MM_SCRIBBLE(),

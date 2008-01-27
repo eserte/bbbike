@@ -1,0 +1,23 @@
+/* XPM */
+static char *eisenbahn_mini[] = {
+/* columns rows colors chars-per-pixel */
+"5 5 12 1",
+"  c black",
+". c gray2",
+"X c #101010",
+"o c #282828",
+"O c #323232",
+"+ c gray22",
+"@ c gray28",
+"# c gray32",
+"$ c #585858",
+"% c gray37",
+"& c #808080",
+"* c None",
+/* pixels */
+"*****",
+"*#***",
+"%&+**",
+"oXO$@",
+"    ."
+};

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.41 2008/01/26 19:35:01 eserte Exp $
+# $Id: Makefile,v 1.44 2008/01/27 23:03:45 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -93,6 +93,7 @@ bbbike_splash_tkbabybike.xpm: srtbike.xpm
 #    mosque.gif
 #
 png-to-gif:	\
+		achtung.gif \
 		airport.gif \
 		ampelf.gif \
 		ampelf_klein.gif \
@@ -105,11 +106,15 @@ png-to-gif:	\
 		cal.gif \
 		cemetery_bg.gif \
 		church.gif \
+		eisenbahn.gif \
+		eisenbahn_klein.gif \
+		eisenbahn_mini.gif \
 		ferry.gif \
 		ferry_klein.gif \
 		flag2_bl.gif \
 		flag_via.gif \
 		flag_ziel.gif \
+		gefaelle.gif \
 		hatched_ring.gif \
 		hospital.gif \
 		kino_klein.gif \
@@ -135,6 +140,7 @@ png-to-gif:	\
 		usercross.gif \
 		redcross.gif \
 		vorfahrt_klein.gif \
+		vorfahrt.gif \
 		abc.gif \
 		abc_hi.gif \
 		newlayer.gif \
@@ -163,6 +169,7 @@ png-to-gif:	\
 		theater.gif \
 
 png-to-xpm:	\
+		achtung.xpm \
 		ampel.xpm \
 		ampelf.xpm \
 		ampelf_klein.xpm \
@@ -173,6 +180,9 @@ png-to-xpm:	\
 		birne.xpm \
 		cal.xpm \
 		church.xpm \
+		eisenbahn.xpm \
+		eisenbahn_klein.xpm \
+		eisenbahn_mini.xpm \
 		ferry.xpm \
 		ferry_klein.xpm \
 		flag2_bl.xpm \
@@ -189,6 +199,7 @@ png-to-xpm:	\
 		ubahn_mini.xpm \
 		zugbruecke.xpm \
 		zugbruecke_klein.xpm \
+		gefaelle.xpm \
 		hatched_ring.xpm \
 		flag2_bl_centered.xpm \
 		flag_via_centered.xpm \
@@ -196,6 +207,7 @@ png-to-xpm:	\
 		usercross.xpm \
 		redcross.xpm \
 		vorfahrt_klein.xpm \
+		vorfahrt.xpm \
 		abc.xpm \
 		abc_hi.xpm \
 		newlayer.xpm \

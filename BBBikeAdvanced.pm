@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.194 2008/01/26 20:40:34 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.196 2008/01/27 22:10:56 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -324,6 +324,11 @@ sub custom_draw {
     if (defined $coord_input && $coord_input ne "Standard") {
 	$args{-map} = $coord_input;
 	$retargs->{-map} = $coord_input;
+    }
+    if ($linetype eq 'p') {
+	delete $p_obj{$abk};
+    } else {
+	delete $str_obj{$abk};
     }
     plot($linetype, $abk, %args);
 
@@ -761,12 +766,14 @@ sub delete_layer_without_hooks {
 	plot('str',$abk);
 	plot('str',$abk,Canvas => $overview_canvas,-draw => 0) if $overview_canvas;
 	delete $str_file{$abk};
+	delete $str_obj{$abk};
     }
     if ($p_draw{$abk}) {
 	$p_draw{$abk} = 0;
 	plot('p',$abk);
 	# XXX overview canvas?
 	delete $p_file{$abk};
+	delete $p_obj{$abk};
     }
     if ($p_draw{"$abk-sperre"}) {
 	$p_draw{"$abk-sperre"} = 0;
@@ -4008,7 +4015,7 @@ sub reset_map_adjusted_tag {
 sub map_button {
     my($misc_frame, $curr_row, $col_ref) = @_;
 
-    my $map_photo = load_photo($misc_frame, 'map.' . $default_img_fmt);
+    my $map_photo = load_photo($misc_frame, 'map');
     my $karte_check = $misc_frame->$Checkbutton
 	(image_or_text($map_photo, 'Map'),
 	 -variable => \$map_draw,

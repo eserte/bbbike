@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.39 2008/01/27 00:06:18 eserte Exp eserte $
+# $Id: SRTShortcuts.pm,v 1.40 2008/01/27 13:19:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.39 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.40 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -569,7 +569,12 @@ sub mark_layer {
     my $abk = shift;
     my $s = $main::str_obj{$abk};
     if (!$s) {
-	main::status_message("Cannot get street object for <$abk>", "die");
+	if ($main::str_file{$abk}) {
+	    $s = Strassen->new($main::str_file{$abk});
+	}
+	if (!$s) {
+	    main::status_message("Cannot get street object for <$abk>", "die");
+	}
     }
     my @mc;
     $s->init;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.43 2007/05/24 22:53:00 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.44 2008/01/27 22:22:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003,2006 Slaven Rezic. All rights reserved.
@@ -688,7 +688,7 @@ sub draw_legend {
 			     [narrowpassage => M"Drängelgitter"]
 			    ) {
 		my($f, $text) = @$def;
-		$legend_photo{$f} = load_photo($mw, "legend_$f.gif") # XXX use $default_img_fmt
+		$legend_photo{$f} = load_photo($mw, "legend_$f")
 		    if !$legend_photo{$f};
 		if ($legend_photo{$f}) {
 		    $c->createImage($left+$start_symbol, $top+$height,
