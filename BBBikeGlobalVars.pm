@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.60 2008/01/20 22:57:17 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.60 2008/01/20 22:57:17 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2007,2008 Slaven Rezic. All rights reserved.
@@ -32,7 +32,7 @@ use vars
      @scrollregion $normal_scrollregion $scrollre
      $K2Listbox
      $dataset %str_obj %str_cache_attr %p_obj $net $no_make_net
-     %str_file %p_file %ampeln %hoehe %custom_net_str
+     %str_file %p_file %ampeln %hoehe %custom_net_str $most_recent_str_layer $most_recent_p_layer
      %sperre %sperre_tragen %sperre_narrowpassage $sperre_file $use_faehre
      $do_activate_temp_blockings $show_active_temp_blockings $current_temp_blockings_ms
      $coord_system $coord_system_obj $scale_coeff $scale %scalecommand

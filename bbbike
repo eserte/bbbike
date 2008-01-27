@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.345 2008/01/26 00:25:55 eserte Exp $
+# $Id: bbbike,v 3.345 2008/01/26 00:25:55 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -9048,6 +9048,11 @@ sub plot_layer {
 	$str_file{$abk} = $file if defined $file;
     }
     plot($type, $abk, %args);
+    if ($type eq 'p') {
+	$most_recent_p_layer = $abk;
+    } else {
+	$most_recent_str_layer = $abk;
+    }
     $abk;
 }
 
@@ -11269,7 +11274,7 @@ sub mark_street {
 	my($vx,$vy);
 	if ($args{'-scrollto'}) {
 	    ($vx,$vy) = @{ $args{'-scrollto'} };
-	} else {
+	} elsif (!$args{'-dont_scroll'}) {
 	    # Prefer an already visible point to scroll to
 	    ($vx,$vy) = find_visible_point(\@all_coords);
 	    if (!defined $vx) {
@@ -17679,6 +17684,8 @@ sub menuarrow_unmanaged {
     if (defined $menulabel and $menulabel ne '') {
 	(my $balloonlabel = $menulabel) =~ s/~//;
 	$balloon->attach($b, -msg => M("Menü")." $balloonlabel...");
+	# No balloon for actual menu:
+	$balloon->attach($menu, -msg => []);
     }
     $menu->{BBBike_Menulabel} = $menulabel if !defined $menu->{BBBike_Menulabel};
     $menu->{BBBike_Special}   = $args{-special};

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePlugin.pm,v 1.17 2008/01/06 19:39:18 eserte Exp $
+# $Id: BBBikePlugin.pm,v 1.18 2008/01/26 23:52:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2006 Slaven Rezic. All rights reserved.
@@ -173,6 +173,7 @@ sub place_menu_button {
     my $title = delete $args{-title};
     my $addglobalmenu = exists $args{-noaddglobalmenu} ? !delete $args{-noaddglobalmenu} : 1;
     my $topmenu = delete $args{-topmenu};
+    my $subtitlehack = delete $args{-subtitlehack};
     $refwidget->idletasks;    # XXX idletasks needed?
     my($x,$width) = ($refwidget->x, $refwidget->width);
     # If $refwidget is not yet mapped:
@@ -183,6 +184,8 @@ sub place_menu_button {
     my $menu = $menubutton->Menu(-menuitems => $menuitems,
 				 (defined $title ? (-title => $title) : ()),
 				);
+    ## XXX Does not work, reason unclear
+    #$menu->configure(-disabledforeground => $menubutton->cget(-foreground)) if $subtitlehack;
     main::menuarrow_unmanaged($menubutton, $menu);
     if ($old_w) {
 	$old_w->destroy;
@@ -195,6 +198,7 @@ sub place_menu_button {
 				   -menuitems => $menuitems,
 				   -title     => $title,
 				   -advertisedname => $advertised_name,
+				   -subtitlehack => $subtitlehack,
 				  );
     }
 }
@@ -206,6 +210,7 @@ sub add_to_global_plugins_menu {
     my $menuitems = delete $args{-menuitems} || [];
     my $title     = delete $args{-title};
     my $advertised_name = delete $args{-advertisedname};
+    my $subtitlehack = delete $args{-subtitlehack};
 
     if (Tk::Exists($BBBike::Menubar::plugins_menu)) {
 	my $m = $BBBike::Menubar::plugins_menu;
@@ -227,9 +232,14 @@ sub add_to_global_plugins_menu {
 		unshift @menuitems, $topmenu;
 	    }
 	}
-	$m->cascade(-label => $title,
-		    -menuitems => \@menuitems,
-		   );
+	my $menu = $m->cascade(-label => $title,
+			       -menuitems => \@menuitems,
+			      );
+## Does not work, there's no -disabledforeground option for cascades:
+# 	if ($subtitlehack) {
+# 	    $menu->configure(-disabledforeground => 'black'); # XXX?
+# 	}
+
 	if ($advertised_name) {
 	    $advertised_name_to_title{$advertised_name} = $title;
 	}

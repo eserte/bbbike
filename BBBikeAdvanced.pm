@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.194 2008/01/26 20:40:34 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.194 2008/01/26 20:40:34 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2007 Slaven Rezic. All rights reserved.
@@ -720,25 +720,7 @@ sub delete_additional_layer {
 		$f->Button
 		    (-text => "Layer $abk $files",
 		     -command => sub {
-			 if ($str_draw{$abk}) {
-			     $str_draw{$abk} = 0;
-			     plot('str',$abk);
-			     plot('str',$abk,Canvas => $overview_canvas,-draw => 0) if $overview_canvas;
-			     delete $str_file{$abk};
-			 }
-			 if ($p_draw{$abk}) {
-			     $p_draw{$abk} = 0;
-			     plot('p',$abk);
-			     # XXX overview canvas?
-			     delete $p_file{$abk};
-			 }
-			 if ($p_draw{"$abk-sperre"}) {
-			     $p_draw{"$abk-sperre"} = 0;
-			     plot('p',"$abk-sperre");
-			     # XXX overview canvas?
-			     delete $p_file{"$abk-sperre"};
-			     # XXX This should also undo the net changes
-			 }
+			 delete_layer_without_hooks($abk);
 			 $f->after(20, sub {
 				       $delete_pane->();
 				       $fill_pane->();
@@ -770,6 +752,35 @@ sub delete_additional_layer {
 	     }
 	 });
 
+}
+
+sub delete_layer_without_hooks {
+    my($abk) = @_;
+    if ($str_draw{$abk}) {
+	$str_draw{$abk} = 0;
+	plot('str',$abk);
+	plot('str',$abk,Canvas => $overview_canvas,-draw => 0) if $overview_canvas;
+	delete $str_file{$abk};
+    }
+    if ($p_draw{$abk}) {
+	$p_draw{$abk} = 0;
+	plot('p',$abk);
+	# XXX overview canvas?
+	delete $p_file{$abk};
+    }
+    if ($p_draw{"$abk-sperre"}) {
+	$p_draw{"$abk-sperre"} = 0;
+	plot('p',"$abk-sperre");
+	# XXX overview canvas?
+	delete $p_file{"$abk-sperre"};
+	# XXX This should also undo the net changes
+    }
+}
+
+sub delete_layer {
+    my($abk) = @_;
+    delete_layer_without_hooks($abk);
+    Hooks::get_hooks("after_delete_layer")->execute;
 }
 
 sub tk_draw_layer_in_overview {

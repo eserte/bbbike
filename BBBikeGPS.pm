@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.23 2007/12/28 21:07:56 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.23 2007/12/28 21:07:56 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -482,6 +482,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
     my $draw_gpsman_data_p = exists $args{-drawpoints} ? $args{-drawpoints} : $global_draw_gpsman_data_p;
     my $accuracy_level = exists $args{-accuracylevel} ? $args{-accuracylevel} : 3;
     my $do_center_begin = $args{-centerbegin} || 0;
+    my $plotted_layer_info = $args{-plottedlayerinfo} || {};
 
     my $base;
     my $s;
@@ -685,7 +686,8 @@ foreach my $chunk (@{ $gps->Chunks }) {
 	    $real_speed_outfile = $speed_outfile . "-orig";
 	}
 	$s_speed->write($real_speed_outfile);
-	main::plot_layer('str',$speed_outfile);
+	my $abk = main::plot_layer('str',$speed_outfile);
+	$plotted_layer_info->{"str-$abk"}++ if defined $abk;
 	Hooks::get_hooks("after_new_layer")->execute;
     }
 
@@ -724,7 +726,8 @@ foreach my $chunk (@{ $gps->Chunks }) {
 	if ($draw_point_names) {
 	    $args{NameDraw} = 1;
 	}
-	main::plot_layer('p',$outfile, %args);
+	my $abk = main::plot_layer('p',$outfile, %args);
+	$plotted_layer_info->{"p-$abk"}++ if defined $abk;
     }
 }
 

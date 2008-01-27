@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.36 2007/09/27 23:01:16 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.39 2008/01/27 00:06:18 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.36 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.39 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -65,6 +65,53 @@ sub add_button {
     $main::balloon->attach($b, -msg => "SRT Shortcuts")
 	if $main::balloon;
 
+    my $rare_or_old_menu = $mmf->Menu
+	(-disabledforeground => "black",
+	 -menuitems =>
+	 [
+	  [Button => 'GPS downloads (not on biokovo)',
+	   -state => 'disabled',
+	   -font => $main::font{'bold'},
+	  ],
+	  [Button => "Standard download all",
+	   -command => sub { make_gps_target("download") },
+	  ],
+	  [Button => "Standard download trk only",
+	   -command => sub { make_gps_target("download-trk") },
+	  ],
+	  [Button => "Standard download wpt only",
+	   -command => sub { make_gps_target("download-wpt") },
+	  ],
+	  [Button => 'Not working anymore',
+	   -state => 'disabled',
+	   -font => $main::font{'bold'},
+	  ],
+	  [Button => "Edit with new GPS trk",
+	   -command => sub {
+	       require BBBikeEdit;
+	       require BBBikeAdvanced;
+	       require BBBikeLazy;
+	       require File::Basename;
+	       main::plot("str","s", -draw => 0);
+	       #XXX del? main::switch_edit_berlin_mode();
+	       main::bbbikelazy_clear();
+	       main::bbbikelazy_setup();
+	       
+	       main::bbbikelazy_init();
+	       add_new_layer("str", $orig_streets_track);
+	       
+	       my $file = main::draw_gpsman_data($main::top);
+	       if (defined $file) {
+		   BBBikeEdit::edit_gps_track(File::Basename::basename($file));
+		   BBBikeEdit::set_edit_gpsman_waypoint();
+		   BBBikeEdit::editmenu($main::top);
+	       } else {
+		   main::status_message("No file from draw_gpsman_data", "warn");
+	       }
+	       main::plot('str','fz', -draw => 1);
+	   }],
+	 ]);
+
     BBBikePlugin::place_menu_button
 	    ($mmf,
 	     [
@@ -74,73 +121,8 @@ sub add_button {
 	      [Button => "Default penalty (fragezeichen)",
 	       -command => \&default_penalty_fragezeichen,
 	      ],
-	      [Button => "Edit with new GPS trk",
-	       -command => sub {
-		   require BBBikeEdit;
-		   require BBBikeAdvanced;
-		   require BBBikeLazy;
-		   require File::Basename;
-		   main::plot("str","s", -draw => 0);
-		   main::switch_edit_berlin_mode();
-		   main::bbbikelazy_clear();
-		   main::bbbikelazy_setup();
-
-		   main::bbbikelazy_init();
-		   add_new_layer("str", $orig_streets_track);
-
-		   my $file = main::draw_gpsman_data($main::top);
-		   if (defined $file) {
-		       BBBikeEdit::edit_gps_track(File::Basename::basename($file));
-		       BBBikeEdit::set_edit_gpsman_waypoint();
-		       BBBikeEdit::editmenu($main::top);
-		   } else {
-		       main::status_message("No file from draw_gpsman_data", "warn");
-		   }
-		   main::plot('str','fz', -draw => 1);
-	       }],
 	      [Button => "Tracks in region",
-	       -command => sub {
-		   require BBBikeEdit;
-		   require BBBikeGPS;
-		   if (@main::coords != 2) {
-		       main::status_message("Expecting exactly two points forming a region", "die");
-		   }
-		   my @region_corners = map { @$_ } @main::coords;
-		   my %seen_track;
-		   my @tracks = sort grep {
-		       if (!$seen_track{$_}) {
-			   $seen_track{$_}++;
-			   1;
-		       } else {
-			   0;
-		       }
-		   } grep { /\.trk$/ }
-		       map { ($main::c->gettags($_))[1] }
-			   $main::c->find(overlapping => @region_corners);
-		   my $t = $main::top->Toplevel(-title => "Tracks in region");
-		   $t->transient($main::top) if $main::transient;
-		   my $lb = $t->Scrolled("Listbox", -scrollbars => "osoe")->pack(-fill => "both", -expand => 1);
-		   $lb->insert("end", @tracks);
-		   $lb->bind("<1>" => sub {
-				 my $base = $lb->get(($lb->curselection)[0]);
-				 my $file = BBBikeEdit::find_gpsman_file($base);
-				 if (!$file) {
-				     main::status_message(M("Keine Datei zu $base gefunden"));
-				     return;
-				 }
-				 BBBikeGPS::do_draw_gpsman_data($main::top, $file, -solidcoloring => 1);
-			     });
-		   $t->Button(Name => "close",
-			      -command => sub { $t->destroy })->pack;
-	       }],
-	      [Button => "Standard download all",
-	       -command => sub { make_gps_target("download") },
-	      ],
-	      [Button => "Standard download trk only",
-	       -command => sub { make_gps_target("download-trk") },
-	      ],
-	      [Button => "Standard download wpt only",
-	       -command => sub { make_gps_target("download-wpt") },
+	       -command => sub { tracks_in_region() },
 	      ],
 	      [Button => "Update tracks and matches.bbd",
 	       -command => sub { make_gps_target("tracks develtracks ../../tmp/unique-matches.bbd") },
@@ -223,8 +205,13 @@ sub add_button {
 	      ],
 	      ($main::devel_host ? [Cascade => "Karte"] : ()),
 	      [Button => "Mark Layer",
-	       -command => sub { mark_layer() },
+	       -command => sub { mark_layer_dialog() },
 	      ],
+	      [Button => "Mark most recent Layer",
+	       -command => sub { mark_most_recent_layer() },
+	      ],
+	      "-",
+	      [Cascade => "Rare or old", -menu => $rare_or_old_menu],
 	      "-",
 	      [Button => "Delete this menu",
 	       -command => sub {
@@ -243,6 +230,97 @@ sub add_button {
 	$menu->entryconfigure($map_menuitem,
 			      -menu => main::get_map_button_menu($menu));
     }
+}
+
+sub tracks_in_region {
+    require BBBikeEdit;
+    require BBBikeGPS;
+    if (@main::coords != 2) {
+	main::status_message("Expecting exactly two points forming a region", "die");
+    }
+    my @region_corners = map { @$_ } @main::coords;
+    my $parse_tag = sub {
+	my($tag) = @_;
+	$tag =~ s{(\.trk)(?:\s+\((.*)\))?$}{$1}; # strip comment part
+	my $comment = $2;
+	($tag, $comment);
+    };
+
+    my %seen_track;
+    my %file_to_comment;
+    my @tracks = sort grep {
+	if (!$seen_track{$_}) {
+	    $seen_track{$_}++;
+	    1;
+	} else {
+	    0;
+	}
+    } grep {
+	/\.trk($|\s)/
+    } map {
+	my($file, $comment) = $parse_tag->(($main::c->gettags($_))[1]);
+	if ($comment) {
+	    $file_to_comment{$file}->{$comment}++;
+	}
+	$file;
+    } $main::c->find(overlapping => @region_corners);
+    @tracks = map {
+	my @comments;
+	if ($file_to_comment{$_}) {
+	    @comments = keys %{ $file_to_comment{$_} };
+	}
+	if (@comments) {
+	    $_ . " (" . join(", ", @comments) . ")";
+	} else {
+	    $_;
+	}
+    } @tracks;
+
+    my $t = $main::top->Toplevel(-title => "Tracks in region");
+    $t->transient($main::top) if $main::transient;
+    my $lb = $t->Scrolled("Listbox",
+			  -selectmode => 'multiple',
+			  -scrollbars => "osoe",
+			  -exportselection => 0,
+			 )->pack(-fill => "both", -expand => 1);
+    $lb->insert("end", @tracks);
+    my %old_selection;
+    my %index_to_layers;
+    $lb->bind("<<ListboxSelect>>" => sub {
+		  my %new_selection = map{($_,1)} $lb->curselection;
+		  my @add = grep { !$old_selection{$_} } keys %new_selection;
+		  my @del = grep { !$new_selection{$_} } keys %old_selection;
+		  for my $index (@del) {
+		      my @layers = @{ $index_to_layers{$index} || [] };
+		      for my $layer (@layers) {
+			  my($type, $abk) = split /-/, $layer;
+			  main::delete_layer($abk);
+		      }
+		  }
+		  my @errors;
+		  for my $index (@add) {
+		      my $base = $lb->get($index);
+		      ($base, undef) = $parse_tag->($base);
+		      my $file = BBBikeEdit::find_gpsman_file($base);
+		      if (!$file) {
+			  push @errors, M("Keine Datei zu $base gefunden");
+			  next;
+		      }
+		      my %plotted_layer_info;
+		      BBBikeGPS::do_draw_gpsman_data($main::top, $file,
+						     -solidcoloring => 1,
+						     -plottedlayerinfo => \%plotted_layer_info,
+						    );
+		      eval { mark_most_recent_layer() }; warn $@ if $@;
+		      $index_to_layers{$index} = [keys %plotted_layer_info];
+		  }
+		  %old_selection = %new_selection;
+		  if (@errors) {
+		      main::status_message(join("\n", @errors));
+		  }
+	      });
+    $t->Button(Name => "close",
+	       -command => sub { $t->destroy })->pack;
 }
 
 sub make_gps_target {
@@ -479,32 +557,38 @@ sub add_coords_data {
     add_new_layer("p", $f, NameDraw => $namedraw);
 }
 
-sub mark_layer {
+sub mark_layer_dialog {
     main::additional_layer_dialog
 	    (-title => "Layer markieren",
-	     -cb => sub {
-		 my $abk = shift;
-		 my $s = $main::str_obj{$abk};
-		 if (!$s) {
-		     main::status_message("Cannot get street object for <$abk>", "die");
-		 }
-		 my @mc;
-		 $s->init;
-		 while(1) {
-		     my $r = $s->next;
-		     last if !@{ $r->[Strassen::COORDS()] };
-		     push @mc, [ map { [ main::transpose(split /,/) ] } @{ $r->[Strassen::COORDS()] }];
-		 }
-		 if (@mc) {
-		     main::mark_street(-coords => [@mc]);
-		 } else {
-		     main::status_message("No points found in street object", "info");
-		 }
-	     },
+	     -cb => \&mark_layer,
 	     -token => 'mark_additional_layer',
 	    );
 }
 
+sub mark_layer {
+    my $abk = shift;
+    my $s = $main::str_obj{$abk};
+    if (!$s) {
+	main::status_message("Cannot get street object for <$abk>", "die");
+    }
+    my @mc;
+    $s->init;
+    while(1) {
+	my $r = $s->next;
+	last if !@{ $r->[Strassen::COORDS()] };
+	push @mc, [ map { [ main::transpose(split /,/) ] } @{ $r->[Strassen::COORDS()] }];
+    }
+    if (@mc) {
+	main::mark_street(-coords => [@mc], -dont_scroll => 1, -dont_center => 1);
+    } else {
+	main::status_message("No points found in street object", "info");
+    }
+}
+
+sub mark_most_recent_layer {
+    mark_layer($main::most_recent_str_layer)
+	if defined $main::most_recent_str_layer;
+}
 
 1;
 
