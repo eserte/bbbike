@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.75 2008/01/21 20:30:40 eserte Exp $
+# $Id: bbbike.cgi,v 8.76 2008/01/27 23:53:42 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -715,7 +715,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.75 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.76 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1295,11 +1295,11 @@ sub choose_form {
 	    print "<p>\n";
 	}
     };
-    my $tbl_center = sub {
+    my $tbl_center_under_inputs = sub {
 	my $text = shift;
 	my $align = shift || "center";
 	if ($bi->{'can_table'}) {
-	    print "<tr><td colspan=4 align=$align>$text</td></tr>\n";
+	    print "<tr><td colspan=2 align=$align>$text</td></tr>\n";
 	} else {
 	    print "<center>$text</center>\n";
 	}
@@ -1656,7 +1656,7 @@ sub choose_form {
 
     my $onloadscript = "";
     if ($nice_berlinmap || $nice_abcmap) {
-	$onloadscript .= "init_hi(); window.onResize = init_hi; "
+	$onloadscript .= "init_hi(); window.onresize = init_hi; "
     }
     $onloadscript .= "focus_first(); ";
     if ($nice_berlinmap || $nice_abcmap) {
@@ -2108,7 +2108,7 @@ function " . $type . "char_init() {}
 	    $button_str .= qq{ onclick='cleanup_special_click()'};
 	}
 	$button_str .= qq{ type=submit value="} . M("Weiter") . qq{ &gt;&gt;"></a>};
-	$tbl_center->($button_str);
+	$tbl_center_under_inputs->($button_str);
     }
 
     print "</table>\n" if $bi->{'can_table'};
@@ -2122,10 +2122,12 @@ function " . $type . "char_init() {}
     print "<hr>";
 
     if (!$smallform) {
+	print q{<div style="text-align:right;">};
 	print window_open("$bbbike_script?all=1", "BBBikeAll",
 			  "dependent,height=500,resizable," .
 			  "screenX=500,screenY=30,scrollbars,width=250")
 	    . M("Liste aller bekannten Stra&szlig;en") . "</a> (ca. 100 kB)";
+	print q{</div>};
 	print "<hr>";
     }
 
@@ -5649,22 +5651,22 @@ sub header {
     # XXX check the standards:
     push @$head, $q->meta({-name => 'revisit-after',
 			   -content => "7 days"});
-    # For http://geourl.org/: vvv
+    # For http://geourl.org/: vvv --- seems to be dead
     my($my_lat, $my_long) = (52.507377, 13.460589);
     push @$head, $q->meta({-name => 'ICBM',
 			   -content => "$my_lat, $my_long"});
     push @$head, $q->meta({-name => 'DC.title',
 			   -content => "BBBike - Routenplaner für Radfahrer in Berlin und Brandenburg"});
     # ^^^
-    # Another one: http://geotags.com/geobot/add-tags.html --- seems to be dead
+    # Another one: http://geotags.com/geobot/add-tags.html --- is up again
     push @$head, $q->meta({-name => "geo.position",
 			   -content => "$my_lat;$my_long"});
     push @$head, "<base target='_top'>"; # Can't use -target option here
     push @$head, cgilink({-rel  => "shortcut icon",
-#  			  -href => "$bbbike_images/favicon.ico",
-#  			  -type => "image/ico",
-			  -href => "$bbbike_images/srtbike16.gif",
-			  -type => "image/gif",
+  			  -href => "$bbbike_images/srtbike.ico",
+  			  -type => "image/ico",
+#			  -href => "$bbbike_images/srtbike16.gif",
+#			  -type => "image/gif",
 			 });
     my($bbbike_de_script, $bbbike_en_script);
     if ($lang eq 'en') {
@@ -6678,7 +6680,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/01/21 20:30:40 $';
+    my $cgi_date = '$Date: 2008/01/27 23:53:42 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

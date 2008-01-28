@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.196 2008/01/27 22:10:56 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.196 2008/01/27 22:10:56 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2008 Slaven Rezic. All rights reserved.
@@ -3104,7 +3104,7 @@ sub search_anything {
 
     # XXX do a dump, blocking, unix-only search in datadir
     my @search_files = (@str_file{qw/s l u b r w f v e/},
-			@p_file  {qw/u b r o pl kn ki rest/},
+			@p_file  {qw/u b r o pl/},
 			# additional scoped files XXX
 			"brunnels",
 			"wasserumland", "wasserumland2", "landstrassen2",
@@ -3112,7 +3112,13 @@ sub search_anything {
 		       );
     if ($advanced) {
 	push @search_files, $str_file{fz};
+	# kn(eipen) is outdated, do it only here
+	push @search_files, $p_file{kn};
     }
+    if ($devel_host) {
+	push @search_files, map { defined } @p_file{qw(/ki rest/)};
+    }
+
     @search_files = map {
 	file_name_is_absolute($_) && -r $_ ? $_ :
 	    "$datadir/$_" ? "$datadir/$_" : ()

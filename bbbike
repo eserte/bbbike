@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.350 2008/01/27 23:30:07 eserte Exp $
+# $Id: bbbike,v 3.350 2008/01/27 23:30:07 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -19173,7 +19173,7 @@ sub load_photo {
 		if (defined $path && -r $path) {
 		    $photo = $top->Photo(@name, -file => $path);
 		} else {
-		    warn "Could not find <$path>, try <$file> in some \@INC dirs...\n"; # XXX should never happen?
+		    warn "Could not find photo, try <$file> in some \@INC dirs...\n"; # XXX should never happen?
 		    $photo = $top->Photo(@name, -file => Tk::findINC($file));
 		}
 	    }
