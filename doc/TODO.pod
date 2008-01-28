@@ -1513,6 +1513,12 @@ the hwnd parameter.
 
 =over
 
+=item * (H4)
+
+USB support for uploading GPS tracks is missing for Windows. (It's
+only available for Linux with the special Garmin module; it would be
+nice if there was a common solution for other Unices, too)
+
 =item * (M1)
 
 Try Win32::GUI::SplashScreen as splash alternative.

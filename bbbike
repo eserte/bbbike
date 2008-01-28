@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.350 2008/01/27 23:30:07 eserte Exp eserte $
+# $Id: bbbike,v 3.351 2008/01/28 19:36:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -229,7 +229,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.350 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.351 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -721,7 +721,8 @@ if (!grep($_, values %wetter_source) and $do_www and !$really_no_www) {
     $wetter_source{'www'} = 1;
 }
 
-my $XXX_use_old_R_symbol = !$devel_host; # Old ugly R symbol or "eisenbahn"
+use vars qw($XXX_use_old_R_symbol);
+$XXX_use_old_R_symbol = !$devel_host; # Old ugly R symbol or "eisenbahn"
 
 if ($net_type ne 's' && $coloring eq 'wind') {
     $coloring = 'black';
