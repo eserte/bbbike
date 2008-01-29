@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-gpx.t,v 1.19 2007/12/28 22:11:24 eserte Exp $
+# $Id: strassen-gpx.t,v 1.22 2008/01/28 22:52:07 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -15,7 +15,7 @@ use lib ("$FindBin::RealBin/../lib",
 	);
 use Data::Dumper;
 use File::Spec qw();
-use File::Temp qw(tempfile);
+use File::Temp qw(tempfile tempdir);
 use Getopt::Long;
 
 BEGIN {
@@ -32,12 +32,16 @@ use BBBikeTest qw(gpxlint_string);
 
 use Route;
 
+sub keep_file ($$);
+
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
 my $new_strassen_gpx_tests = 5;
-my $tests_per_variant = 60 + $new_strassen_gpx_tests;
+my $tests_per_variant = 69 + $new_strassen_gpx_tests;
 my $do_long_tests = !!$ENV{BBBIKE_LONG_TESTS};
 my $bbdfile;
+my $bbdfile_with_lines = "comments_scenic";
+my $do_keep_files;
 
 GetOptions("v" => \$v,
 	   "libxml!" => sub {
@@ -52,8 +56,11 @@ GetOptions("v" => \$v,
 	   },
 	   "long!" => \$do_long_tests,
 	   "bbdfile=s" => \$bbdfile,
+	   "keepfiles!" => \$do_keep_files,
 	  )
-    or die "usage!";
+    or die <<EOF;
+usage: $0 [-v] [-[no]libxml] [-[no]twig] [-long] [-bbdfile file] [-keepfiles]
+EOF
 
 if (!defined $bbdfile) {
     $bbdfile = $do_long_tests ? "strassen": "obst";
@@ -65,6 +72,11 @@ use_ok("Strassen::GPX");
 my $s = Strassen::GPX->new;
 isa_ok($s, "Strassen::GPX");
 isa_ok($s, "Strassen");
+
+my $tempdir;
+if ($do_keep_files) {
+    $tempdir = tempdir(CLEANUP => 0);
+}
 
 my %parsed_rte;
 my $do_not_compare_variants = @variants != 2;
@@ -176,7 +188,24 @@ for my $use_xml_module (@variants) {
 	}
 
 	{
+	    # Data file with points only
 	    my $data_file = File::Spec->file_name_is_absolute($bbdfile) ? $bbdfile : "$FindBin::RealBin/../data/$bbdfile";
+	    my $s0 = Strassen->new($data_file);
+	    my $s = Strassen::GPX->new($s0);
+	    isa_ok($s, "Strassen::GPX");
+	    my $xml_res = $s->Strassen::GPX::bbd2gpx;
+	    like($xml_res, qr{^<(\?xml|gpx)}, "Looks like XML");
+
+	    local $TODO;
+	    if ($Strassen::GPX::use_xml_module eq 'XML::Twig' && $XML::Twig::VERSION <= 3.32) {
+		$TODO = "Possible XML::Twig problem, missing preamble or missing encoding of data";
+	    }
+	    gpxlint_string($xml_res, "xmllint for bbd2gpx output ($bbdfile)");
+	}
+
+	{
+	    # Data file with also lines
+	    my $data_file = File::Spec->file_name_is_absolute($bbdfile_with_lines) ? $bbdfile_with_lines : "$FindBin::RealBin/../data/$bbdfile_with_lines";
 	    my $s0 = Strassen->new($data_file);
 	    my $s = Strassen::GPX->new($s0);
 	    isa_ok($s, "Strassen::GPX");
@@ -337,6 +366,12 @@ EOF
 		like($xml_res, qr{<link href="http://bbbike.de"><text>web page}, "Found link element + href attribute");
 		like($xml_res, qr{<number>1}, "Found number element");
 		like($xml_res, qr{<type>type}, "Found type element");
+		if ($as eq 'route') {
+		    like($xml_res, qr{<name>$_}, "Found '$_' text") for (qw(Start Via Goal));
+		} else {
+		    unlike($xml_res, qr{<name>$_}, "Expected no occurence of '$_' text") for (qw(Start Via Goal));
+		}
+		keep_file("as_${as}_with_${use_xml_module}.xml", $xml_res);
 	    }
 	}
     }
@@ -359,6 +394,10 @@ SKIP: {
     my $route = Route::load($file, {}, -fuzzy => 1);
     is($route->{Type}, "GPX", "Route recognized as GPX");
     is(scalar(@{$route->{RealCoords}}), 2, "Two coordinates found");
+}
+
+if ($tempdir) {
+    warn "*** Result files are in $tempdir.\n";
 }
 
 sub deep_strassen_check {
@@ -494,6 +533,19 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
 </trk>
 </gpx>
 EOF
+}
+
+sub keep_file ($$) {
+    return if !$tempdir;
+    my($file_name, $data) = @_;
+    $file_name =~ s{:}{_}g; # invalid under Windows
+    my $outfile = File::Spec->catfile($tempdir, $file_name);
+    if (open FH, "> " . $outfile) {
+	print FH $data;
+	close FH;
+    } else {
+	warn "Cannot write to $outfile: $!";
+    }
 }
 
 __END__

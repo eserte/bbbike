@@ -4116,6 +4116,19 @@ sub get_map_button_menu {
     $kcm;
 }
 
+sub special_raise_taggroup {
+    my($tags, $delay) = @_;
+    for my $tag (@$tags) { special_raise($tag, 1) }
+    restack() unless $delay;
+}
+
+sub special_lower_taggroup {
+    my($tags, $delay) = @_;
+    for my $tag (reverse @$tags) { special_lower($tag, 1) }
+    restack() unless $delay;
+}
+
+
 # REPO BEGIN
 # REPO NAME module_exists /home/e/eserte/work/srezic-repository 
 # REPO MD5 c80b6d60e318450d245a0f78d516153b

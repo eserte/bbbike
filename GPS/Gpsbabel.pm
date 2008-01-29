@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Gpsbabel.pm,v 1.5 2006/08/29 21:43:52 eserte Exp $
+# $Id: Gpsbabel.pm,v 1.6 2008/01/29 22:17:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -17,8 +17,9 @@ require GPS;
 push @ISA, 'GPS';
 
 use strict;
-use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+use vars qw($VERSION $GPSBABEL);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$GPSBABEL = "gpsbabel" unless defined $GPSBABEL;
 
 use BBBikeUtil qw(is_in_path);
 
@@ -33,8 +34,8 @@ sub magics {
 
 sub convert_to_route {
     my($self, $file, %args) = @_;
-    if (!is_in_path("gpsbabel")) {
-	die "gpsbabel ist nicht installiert"; # Msg.pm
+    if (!$self->gpsbabel_available) {
+	die "$GPSBABEL ist nicht installiert"; # Msg.pm
     }
 
     my($fh, $lines_ref) = $self->overread_trash($file, %args);
@@ -64,10 +65,11 @@ sub convert_to_route {
     close $fh;
     close $ofh;
 
-    my $s = $self->run_gpsbabel($ofilename,
-				title => undef, # XXX
-				input_format => $input_format,
-			       );
+    my $s = $self->convert_to_strassen_using_gpsbabel
+	($ofilename,
+	 title => undef, # XXX
+	 input_format => $input_format,
+	);
     unlink $ofilename;
 
     my @coords;
@@ -81,14 +83,14 @@ sub convert_to_route {
     @coords;
 }
 
-sub run_gpsbabel {
+sub convert_to_strassen_using_gpsbabel {
     my($self, $file, %args) = @_;
     my $title = $args{title} || $file;
     my $input_format = $args{input_format} || die "input_format is missing";
     require File::Temp;
     my($ofh,$ofilename) = File::Temp::tempfile(UNLINK => 1);
     # XXX need a patched gpsbabel (gpsbabel by default only outputs waypoint files, not tracks)
-    system("gpsbabel", "-t",
+    system($GPSBABEL, "-t",
 	   "-i", $input_format, "-f", $file,
 	   "-o", "gpsman", "-F", $ofilename);
     # Hack: set track name
@@ -108,6 +110,47 @@ sub run_gpsbabel {
     unlink $o2filename;
 
     $s;
+}
+
+sub strassen_to_gpsbabel {
+    my($self, $s, $otype, $ofile, %args) = @_;
+    my $as = delete $args{'as'} || 'track';
+    die "Unhandled arguments: " . join(" ", %args) if %args;
+
+    require File::Temp;
+    require Strassen::GPX;
+
+    my $s_gpx = Strassen::GPX->new($s);
+    my $xml_res = $s_gpx->Strassen::GPX::bbd2gpx(-as => $as);
+
+    my($ifh,$ifile) = File::Temp::tempfile(SUFFIX => ".gpx",
+					   UNLINK => 1);
+    print $ifh $xml_res
+	or die "While writing to $ifile: $!";
+    close $ifh
+	or die "While closing $ifile: $!";
+
+    my @cmd = ($GPSBABEL,
+	       "-i", "gpx", "-f", $ifile,
+	       "-o", $otype, "-F", $ofile,
+	      );
+    system @cmd;
+    $? == 0
+	or die "A problem occurred when running <@cmd>: exit code=$?";
+}
+
+sub gpsbabel_available {
+    my($self, $new_gpsbabel) = @_;
+    if ($new_gpsbabel) {
+	if (is_in_path($new_gpsbabel)) {
+	    $GPSBABEL = $new_gpsbabel;
+	    return $GPSBABEL;
+	} else {
+	    return 0;
+	}
+    } else {
+	return is_in_path($GPSBABEL);
+    }
 }
 
 1;

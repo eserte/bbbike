@@ -1282,6 +1282,7 @@ misc/gps_correction_all.dat
 misc/gps_data/Makefile
 misc/gpx.xsd
 misc/gpx.rnc
+misc/gpx10.xsd
 misc/kreisfahrt_2007/Makefile
 misc/kreisfahrt_2007/kreisfahrt2007.bbr
 misc/kreisfahrt_2007/kreisfahrt2007_titel.png
@@ -1482,6 +1483,7 @@ t/cmdbbbike.t
 t/dataset.t
 t/geography.t
 t/gfxlogfile.t
+t/gpsbabel.t
 t/insert_points.t
 t/karte_etrs89.t
 t/karte_utm.t

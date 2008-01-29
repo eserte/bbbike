@@ -89,6 +89,17 @@ Aufräumen des Options-Editors.
 Sobald Tk::Getopt es unterstützt, vertikalen Listenview statt Tabs
 verwenden.
 
+=item * (M5)
+
+Der Optionseditor sollte auch Layer wie qualitaet, handicap etc.
+unterstützen, eigentlich alles.
+
+Es wäre auch schön, wenn der aktuelle Layereinschaltzustand auf
+Knopfdruck als initialer Zustand übernommen werden könnte, oder der
+letzte Zustand auf Wunsch immer wiederhergestellt wird. Man könnte
+sogar beim *Start* fragen, ob der letzte Zustand wiederhergestellt
+werden soll.
+
 =item * (M3) (feature)
 
 Routenliste: gewünschte Attribute für die Kommentare sollten über den
@@ -1399,6 +1410,31 @@ Sehenswürdigkeiten vielleicht grau statt rot einfärben wie beim
 Mapserver? Das sieht nicht so aufdringlich aus. Auch bei anderen
 Ausgabeformaten (BBBikeDraw) überlegen.
 
+=item * (H4)
+
+Bahnlinien wie in Deutschland (Europa?) üblich zeichnen. Das könnte
+man mit drei Linien schaffen:
+
+    $c->createLine($c->get_corners,-width=>6,-fill=>"black");
+    $c->createLine($c->get_corners,-width=>4,-fill=>"white");
+    $c->createLine($c->get_corners,-width=>4,-fill=>"black",-dash=>"-");
+
+Reales Beispiel: dreimal die Ebene R-Bahn laden und dann folgendes
+ausführen:
+
+    $c->itemconfigure("L3",-width=>6,-fill=>"black");
+    $c->itemconfigure("L4",-width=>4,-fill=>"white");
+    $c->itemconfigure("L5",-width=>4,-fill=>"black",-dash=>"-");
+    $tag_group{"newbahn"}=[qw(L3 L4 L5)];
+
+special_raise/lower_taggroup kann verwendet werden. Um Bahnlinien im
+Bau oder im Tunnel zu zeichnen, kann man folgendes nehmen:
+
+    $c->itemconfigure("L5",-dash=>[1,16])
+
+Für Bahnhöfe könnte man ein weißes Rechteck mit schwarzem Rand nehmen,
+welches im parallel zur Bahnstrecke gedreht ist.
+
 =back
 
 =head2 Plugins
@@ -1518,6 +1554,14 @@ the hwnd parameter.
 USB support for uploading GPS tracks is missing for Windows. (It's
 only available for Linux with the special Garmin module; it would be
 nice if there was a common solution for other Unices, too)
+
+Possibilities under Windows:
+
+- Interface gpsbabel (but then gpsbabel has to be bundled...)
+
+- Use Device::USB and try to make it work with LibUsb-Win32
+(L<http://sourceforge.net/projects/libusb-win32/>). But I have yet to
+get Device::USB working with the garmin...
 
 =item * (M1)
 
@@ -2355,6 +2399,24 @@ L<http://www.bradculberson.com/cc/map.html> erzeugt werden.
 =head1 Routing (BBBikeRouting.pm, Strassen::StrassenNetz)
 
 =over
+
+=item * (H4)
+
+Alberne Route: Route auf der Bergmannstraße mit "Hauptstraßen ohne
+Radwege vermeiden" und Ampeloptimierung suchen. BBBike schlägt einen
+Umweg über die Arndtstr. vor. Prüfen, ob die Ampelschaltung
+tatsächlich "doppelt" zählen muss oder man die beiden Ampeln als
+einzige zählen soll.
+
+=item * (H3)
+
+Ungünstige Beschreibung: Endpunkt ist Pariser Str./Bundesallee, man
+kommt von Osten und wird auf der Regensburger Str. geroutet. Natürlich
+befindet man sich jetzt nicht auf der Pariser Str., sondern muss
+umständlich zur Kreuzung Nachodstr., die Bundesallee überqueren, und
+dann wieder den Weg zur Pariser zurückfahren. Besser wäre es
+wahrscheinlich gewesen, gleich eine Route über die Nachodstr. zu
+wählen.
 
 =item * (H3)
 

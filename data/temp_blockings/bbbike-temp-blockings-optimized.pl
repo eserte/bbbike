@@ -769,15 +769,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        undef,
-       {
-         'until' => 1201561200,
-         'text' => 'L 023 Herzfelde-Strausberg OD Hennickendorf, unterhalb Wachtelberg Instandsetzung St¸tzwand Vollsperrung 14.01.2008-28.01.2008 ',
-         'from' => 1200178800,
-         'id' => 1272,
-         'data' => 'userdel	2::inwork 40565,12409 40362,12087
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1212271200,
          'text' => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, zw. A.-Bebel-Str. und R.-Breitscheid Straﬂenbau, Entw‰sserung Vollsperrung 21.12.2007-31.05.2008 ',

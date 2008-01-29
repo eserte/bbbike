@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GPX.pm,v 1.16 2007/12/28 22:07:37 eserte Exp $
+# $Id: GPX.pm,v 1.18 2008/01/28 23:52:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::GPX;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Core;
 
@@ -156,6 +156,7 @@ sub _gpx2bbd_libxml {
 		    push @c, "$x,$y";
 		}
 		if (@c) {
+		    local $^W = 0;
 		    $self->push([$name, [@c], $def_cat]);
 		}
 	    }
@@ -175,6 +176,7 @@ sub _gpx2bbd_libxml {
 	    }
 	}
 	if (@c) {
+	    local $^W = 0;
 	    $self->push([$name, [@c], $def_cat]);
 	}
     }
@@ -398,7 +400,7 @@ sub _bbd2gpx_twig {
 							},
 					      );
 	    $rteptxml->paste(last_child => $rtexml);
-	    my $namexml = XML::Twig::Elt->new("name", undef, $wpt->{name});
+	    my $namexml = XML::Twig::Elt->new("name", {}, $wpt->{name});
 	    $namexml->paste(last_child => $rteptxml);
 	}
     } else {

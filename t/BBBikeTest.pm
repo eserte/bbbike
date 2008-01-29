@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.29 2008/01/21 21:00:08 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.30 2008/01/29 22:16:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006,2008 Slaven Rezic. All rights reserved.
@@ -41,7 +41,7 @@ use File::Spec     qw();
 use BBBikeUtil qw(is_in_path);
 
 @EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check
-	      xmllint_string gpxlint_string kmllint_string
+	      xmllint_string xmllint_file gpxlint_string gpxlint_file kmllint_string
 	      eq_or_diff is_long_data like_long_data unlike_long_data),
 	   @opt_vars);
 
@@ -285,12 +285,22 @@ sub xmllint_string {
 }
 
 # only usable with Test::More, generates one test
+sub xmllint_file {
+    my($file, $test_name, %args) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
+    my $string = do { open my $fh, $file or die "Can't open $file: $!"; local $/; <$fh> };
+    xmllint_string($string, $test_name, %args);
+}
+
+# only usable with Test::More, generates one test
 sub gpxlint_string {
     my($content, $test_name, %args) = @_;
+    my $schema_version = delete $args{schema_version} || '1.1';
     local $Test::Builder::Level = $Test::Builder::Level+1;
     my $gpx_schema = File::Spec->catfile(dirname(dirname(File::Spec->rel2abs(__FILE__))),
 					 "misc",
-					 "gpx.xsd");
+					 ($schema_version eq '1.1' ? 'gpx.xsd' : 'gpx10.xsd')
+					);
     if (!-r $gpx_schema) {
 	if (!$shown_gpx_schema_warning) {
 	    Test::More::diag("GPX schema file <$gpx_schema> not found or not readable, continue with schema-less checks...");
@@ -300,6 +310,14 @@ sub gpxlint_string {
     } else {
 	xmllint_string($content, $test_name, %args, -schema => $gpx_schema);
     }
+}
+
+# only usable with Test::More, generates one test
+sub gpxlint_file {
+    my($file, $test_name, %args) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
+    my $string = do { open my $fh, $file or die "Can't open $file: $!"; local $/; <$fh> };
+    gpxlint_string($string, $test_name, %args);
 }
 
 # only usable with Test::More, generates one test
