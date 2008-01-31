@@ -1650,6 +1650,48 @@ L<http://www.perlmonks.org/index.pl?node_id=355073>
 
 =over
 
+=item * (H3) (feature)
+
+Introduce new types Roundabout and MiniRoundabout in comments_misc:
+
+  - render point Roundabouts with a "kreisverkehr" sign
+  - don't render lined Roundabouts at all
+  - in routing text, add something like "zweite Straﬂe im
+    Kreisverkehr"
+  - make sure that all existing roundabouts have all crossing streets
+    recorded
+  - document in edit doc that roundabouts need to have all crossing
+    streets recorded
+
+Related: it would be nice to have a function situation_at_point which
+takes a route and a point and return information like:
+
+  - is it a crossing or a roundabout or nothing of both
+  - if a roundabout, which street use to leave
+  - if a crossing, determine direction of turn (left, right, straight) and angle
+  - if in a crossing changing between higher-level street to lower-level, 
+    then add extra information (show straights nevertheless)
+  - maybe some "priority" of information: points without crossing are
+    lowest, points where street name just changes next, crossing with
+    straight direction next, turns highest (or so)
+
+=item * (H4) (improvement)
+
+Do layer stacking for bridges and tunnels right. Some idea: we need
+additional tags <abk>-L<level> to signalize special layer levels. The
+normal layer order would be something like (L0=below, L1=normal
+(typically missing), L2=above):
+
+     "u/r/b-L0" "s/l-L0" "u/r/b" "s/l" "u/r/b-L1" "s/l-L1"
+
+Have to find out where to put outlines, radwege, bahnhoefe and such
+into the layer stack.
+
+=item * (H3) (feature)
+
+Combine traffic lights with same cycle times for routing calculations
+and display.
+
 =item * (H4) (improvement)
 
 S- und U-Bahnlinien mit den neuen Attributen Em (embankment=Damm, z.B.
