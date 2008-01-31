@@ -1249,14 +1249,6 @@ geht ein import?
 
   CHECK AGAIN:
 
-  * M5: GPS::DirectGarnim fehlt in der dist?
-    => Kann ich nicht reproduzieren (MANIFEST ist OK). Nochmal testen
-    => Jetzt kann ich es reproduzieren --- perl-GPS hat in SiePerl gefehlt.
-       => Geht es jetzt?
-       => Bessere (weniger irreführende) Fehlermeldung erzeugen
-    => Garnim anschliessen und mit sieperl testen (brauche ich
-       Win32::Serial dazu?)
-
   * M1 ->postscript is slow (sieperl). Warn before calling any export
     and print function? COMBINED WITH:
   * M1 PNG-Export: first check for all dependencies, then try to export
@@ -2509,7 +2501,7 @@ Vorbeifahrmöglichkeit (Parkweg) (ca. 2 Sekunden Zeitverlust)
 In der Routenliste problematische Kreuzungen anzeigen, zum Beispiel
 eine abknickende Straße mit dem gleichen Straßennamen (das Abbiegen
 wird nirgendwo angezeigt) oder bei Kreuzungen mit abknickender
-Vorfahrt.
+Vorfahrt. Siehe oben: situation_at_point()
 
 =item * (H4)
 
@@ -2602,6 +2594,8 @@ Analyse einer Kreuzung:
 
 Z<>=E<gt> nicht unbedingt notwendig, die jetzige Lösung reicht erst
 einmal aus...
+
+Siehe oben: situation_at_point()
 
 =item * (H3)
 
@@ -3007,6 +3001,18 @@ list with generated shorter waypoint names
 
 -> GPS::DirectGarmin::simplify_route ist vielleicht schon allgemein
 genug, um in ein anderes Modul herausgebrochen werden zu können
+
+=head2 GPS
+
+=over
+
+=item * (M5)
+
+Routenbeschreibung für GPS: Falls das gerät Sonderzeichen wie <, > und
+^ unterstützt, sollten die Waypoints diese Zeichen zum Anzeigen eines
+Abbiegevorgangs verwendet werden.
+
+=back
 
 =head2 BBBikeDraw
 
