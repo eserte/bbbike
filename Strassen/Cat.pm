@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Cat.pm,v 1.11 2007/09/17 22:36:06 eserte Exp $
+# $Id: Cat.pm,v 1.12 2008/01/31 21:05:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
 
 use File::Basename qw(basename);
 
@@ -60,7 +60,7 @@ use vars qw(%filetype_to_cat %file_to_cat);
      "comments_cyclepath"	=> $filetype_to_cat{"radwege"},
      "comments_ferry"		=> [qw(CS)],
      "comments_kfzverkehr"	=> [qw(-2 -1 +1 +2)],
-     "comments_misc"		=> [qw(CP CP2 CS)],
+     "comments_misc"		=> [qw(CP CP2 CS Roundabout MiniRoundabout)],
      "comments_mount"		=> $filetype_to_cat{"mount"},
      "comments_path"		=> [qw(CP CP2 CS PI)],
      "comments_route"		=> [qw(CS)],

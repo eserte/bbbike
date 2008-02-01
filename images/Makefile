@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.44 2008/01/27 23:03:45 eserte Exp $
+# $Id: Makefile,v 1.45 2008/01/31 21:05:36 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -121,6 +121,7 @@ png-to-gif:	\
 		kirsche.gif \
 		kopfstein_klein.gif \
 		kopfstein_klein_grey.gif \
+		kreisverkehr.gif \
 		monument.gif \
 		movehand.gif \
 		pflaume.gif \
@@ -188,6 +189,7 @@ png-to-xpm:	\
 		flag2_bl.xpm \
 		flag_ziel.xpm \
 		kirsche.xpm \
+		kreisverkehr.xpm \
 		pflaume.xpm \
 		sbahn.xpm \
 		sbahn_klein.xpm \

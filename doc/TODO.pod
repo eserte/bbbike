@@ -1527,14 +1527,6 @@ inside the region would move.
 
 More ideas: copy polygons, rotate polygons.
 
-=item * (M1)
-
-Use Imager::Screenshot for screenshots instead of xwd etc. tricks.
-Note: I should explicitely supply the display parameter because one
-cannot rely on $ENV{DISPLAY} (the application could be started with
--display parameter). Also, I need to support both the id parameter and
-the hwnd parameter.
-
 =back
 
 =head2 Windows specific
@@ -1646,17 +1638,24 @@ L<http://www.perlmonks.org/index.pl?node_id=355073>
 
 Introduce new types Roundabout and MiniRoundabout in comments_misc:
 
-  - render point Roundabouts with a "kreisverkehr" sign
-  - don't render lined Roundabouts at all
+  - don't render lined Roundabouts at all (see XXX_prog in comments_misc-orig)
+    -> Hmmm, there's
+       $str_ignore{"comm-misc"}->{Roundabout} = 1
+       but this would falsely ignore the point roundabouts. Maybe I also need something like
+       %str_line_ignore and %str_point_ignore??? Or different categories depending on point or line?
   - in routing text, add something like "zweite Straﬂe im
-    Kreisverkehr"
+    Kreisverkehr"; but: ignore paths and unshiny streets (e.g. Groﬂe Sternallee am Groﬂen Stern)
   - make sure that all existing roundabouts have all crossing streets
     recorded
   - document in edit doc that roundabouts need to have all crossing
     streets recorded
 
-Related: it would be nice to have a function situation_at_point which
-takes a route and a point and return information like:
+Related the next feature:
+
+=item * (H4) (feature)
+
+It would be nice to have a function situation_at_point which takes a
+route and a point and return information like:
 
   - is it a crossing or a roundabout or nothing of both
   - if a roundabout, which street use to leave

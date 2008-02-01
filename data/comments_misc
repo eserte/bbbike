@@ -57,13 +57,13 @@ Paralleler Uferweg an der Spree nur über zwei Treppen erreichbar	CS 10300,12587 
 unter der S-Bahnbrücke: Glassplitter	CS 6184,20550 6298,20599
 Brandenburger Str.: im Volksmund auch Broadway genannt	CS -12784,-956 -12894,-977 -13005,-1002 -13173,-1039 -13289,-1071 -13410,-1101 -13556,-1140
 Hegelstr.: Ausweichmöglichkeit auf Nebenstraße mit Kopfsteinpflaster oder grünen Mittelstreifen mit Parkweg	CS -13625,-902 -13468,-847 -13433,-831 -13231,-763 -13137,-728 -13067,-706 -12878,-665
-Kreisverkehr	CP 60197,12001
-Kreisverkehr	CP 61156,11478
-Kreisverkehr	CP 33787,7828
-Kreisverkehr	CP 30290,8562
-Kreisverkehr	CP -2545,-1614
-Kreisverkehr	CP -11793,104246
-Kreisverkehr	CP 18452,2641
+Kreisverkehr	Roundabout 60197,12001
+Kreisverkehr	Roundabout 61156,11478
+Kreisverkehr	Roundabout 33787,7828
+Kreisverkehr	Roundabout 30290,8562
+Kreisverkehr	Roundabout -2545,-1614
+Kreisverkehr	Roundabout -11793,104246
+Kreisverkehr	Roundabout 18452,2641
 (Waldweg über den Beyschlagtunnel): bei Regen Rutschgefahr	CS 332,22372 742,22666
 Beim Überqueren der Blaschkoallee müssen Bordsteine überwunden werden	CP 13162,5382 13112,5253 13039,5122
 Privatstraße der DB	CS 5710,7820 6275,7847
@@ -108,7 +108,7 @@ Radfahren durch den Park erlaubt	CS 6542,1674 6679,1734 6848,1809
 Kein MIV-Durchgangsverkehr, nur Anlieger	CS -13050,337 -12947,106 -12855,-72
 Teltower Weg: nicht ausgeschildert	CP2; -107,5880 -174,5941
 Naumannstr./Marlene-Dietrich-Str.: nicht ausgeschildert	CS 7699,7571 7716,7625 7757,7682
-Kreisverkehr	CP 19907,12501
+Kreisverkehr	Roundabout 19907,12501
 Röntgentaler Weg: durch den Schloßpark	CS 16166,25767 16532,26174
 (Autobahnzubringer): Fahrbahn ist Kfz-Straße	CS 18036,2531 18503,2449
 (In den Gärten - Hochspannungsweg): Privatweg	CS 11713,1622 11689,1687 11709,1761 11659,1943
@@ -155,3 +155,4 @@ Drosselbartweg: Radfahren erlaubt	CS 13899,18833 13953,18842 13967,18842 13993,1
 Straße R: Privatstraße, Höchstgeschwindigkeit 20 km/h	CS -198,16187 -629,16546 -698,16603 -786,16666
 Straße Y: Privatstraße, Höchstgeschwindigkeit 20 km/h	CS -629,16546 -671,16488
 Zur Pariser Str.: Hausdurchfahrt benutzen	CS; 5475,9914 5416,9928
+Kreisverkehr	Roundabout 11370,10398

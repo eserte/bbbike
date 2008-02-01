@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.62 2008/01/27 22:33:53 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.63 2008/01/31 21:05:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2007,2008 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.62 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.63 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -46,7 +46,7 @@ use vars qw(
      $ampel_klein2_photo $ampelf_klein2_photo
      $ampel_klein_grey_photo $zugbruecke_photo $zugbruecke_klein_photo
      $kopfstein_klein_photo $kopfstein_klein_grey_photo
-     $vorfahrt_photo $vorfahrt_klein_photo
+     $vorfahrt_photo $vorfahrt_klein_photo $kreisverkehr_photo
      $andreaskr_photo $andreaskr_klein_photo $andreaskr_klein2_photo
      %obst_photo
      $windrose2_photo $usercross_photo
@@ -125,7 +125,7 @@ use vars qw($mapscale $default_mapscale);
 use vars qw($small_scale $medium_scale $small_scale_edit $medium_scale_edit);
 use vars qw($zoomrect_after $showmark_after $bbbike_route_ext);
 use vars qw(%active_speed_power);
-use vars qw(%str_restrict %str_ignore $tunnel_qr);
+use vars qw(%str_restrict %str_ignore $tunnel_qr $roundabout_qr);
 use vars qw(%tag_group);
 use vars qw(@route_strnames);
 use vars qw($net_type %add_net);

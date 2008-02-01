@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.171 2008/01/27 12:21:46 eserte Exp $
+# $Id: Makefile,v 2.172 2008/01/31 21:05:57 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -454,7 +454,7 @@ ${PERSISTENTTMPDIR}/gesperrt-without-nocross:	gesperrt-orig strassen landstrasse
 .for i in u s r
 gesperrt_$(i):	gesperrt_$(i)-orig $(i)bahn
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) gesperrt_$(i)-orig | $(MISCSRCDIR)/check_dates -filter > $@~
+	$(CONVERT_ORIG) gesperrt_$(i)-orig | $(MISCSRCDIR)/check_dates -filter > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 .endfor
@@ -1551,6 +1551,9 @@ do-doublechecks:	.doublecheck_strassen.tmp \
 			.doublecheck_orte2 \
 			.doublecheck_orte_city \
 			.doublecheck_ampeln \
+			.doublecheck_gesperrt_u \
+			.doublecheck_gesperrt_s \
+			.doublecheck_gesperrt_r \
 
 .for file in flaechen green plaetze landstrassen2 sbahnhof rbahnhof ubahnhof faehren hoehe ampeln
 .doublecheck_$(file): $(file)
@@ -1630,6 +1633,14 @@ do-doublechecks:	.doublecheck_strassen.tmp \
 	diff -I '#: alias:' -u orte_city /tmp/orte_city-XXX
 	rm /tmp/orte_city-XXX
 	touch $@
+
+.for i in u s r
+.doublecheck_gesperrt_$(i):	gesperrt_$(i)-orig $(i)bahn
+	-rm /tmp/gesperrt_$(i)-XXX
+	$(CONVERT2HAFAS) gesperrt_$(i)-orig | $(MISCSRCDIR)/check_dates -filter > /tmp/gesperrt_$(i)-XXX
+	diff -I '#: alias:' -u gesperrt_$(i) /tmp/gesperrt_$(i)-XXX
+	touch $@
+.endfor
 
 ######################################################################
 

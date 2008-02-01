@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.143 2008/01/24 19:26:28 eserte Exp $
+# $Id: Makefile.PL,v 1.144 2008/01/31 22:31:59 eserte Exp $
 
 use 5.005;
 
@@ -162,8 +162,10 @@ my @req_table =
    'Erzeugen der Mapserver- oder anderer ESRI-Dateien'],
   [qw/IPC::Run		0	all	0|4	base/,
    'hilft bei der sicheren Ausführung von externen Kommandos (insbesondere für Win32)'],
-  [qw/Imager	0	all	0	devel/,
+  [qw/Imager	0	all	0	devel,gui/,
    'additional optional BBBikeDraw backend for PNG graphics'],
+  [qw/Imager::Screenshot	0	all	0	devel,gui/,
+   'better screenshot module'],
   [qw/Image::ExifTool	0	all	0	devel/,
    'für geocode_images'],
   [qw/SVG	0	all	2	cgi/,
