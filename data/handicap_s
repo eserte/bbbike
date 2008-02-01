@@ -1,9 +1,8 @@
-#:# -*- coding: iso-8859-1 -*-
+#: #: -*- coding: iso-8859-1 -*-
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.162 2008/01/26 00:23:17 eserte Exp eserte $
+#: version: $Id: handicap_s-orig,v 4.163 2008/02/01 23:39:31 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
-#: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Behrenstr./Bebelplatz: Einbahnstraﬂe	q3::inwork; 9626,12227 9700,12234 9743,12239
 Bodestr.: Bauarbeiten	q4::inwork 9912,12623 9943,12642
 Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
@@ -838,3 +837,25 @@ Kuhligkshofstr.: eng und kurvig	q1 4911,5428 4869,5386 4821,5345
 Pankeweg und -br¸cke: eng und kurvig	q3 13554,23123 13567,23101 13551,23072
 Klosterheider Weg: enge Straﬂe	q1 2842,23482 2742,23513 2621,23609 2490,23720 2522,23761 2582,23814 2663,23875
 Landreiterweg: enge Straﬂe	q1 14062,1846 14050,1904 13857,1975 13739,2004 13674,2011 13567,2008 13485,2007 13362,2000 13240,1993 13227,1974
+#:
+Zionskirchstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 10389,14274 10426,14262
+Czeminskistr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 7615,8927 7570,8863
+Stallschreiberstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 10489,11405 10620,11244 10678,11172
+Jahnstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11493,9128 11509,9392
+Bayernring: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 8616,8595 8437,8557 8371,8543
+Schulenburgring: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9019,8434 9013,8594
+Neue Schˆnhauser Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 10528,13243 10441,13195 10305,13211
+Alte Schˆnhauser Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 10718,13625 10746,13673
+Kirchhofstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13188,7590 13117,7471 13027,7368
+Niemannstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 14252,11368 14211,11229
+Bjˆrnsonstr: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 10209,16674 10197,16528
+Eichhornstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 8232,11414 8258,11254
+Paul-Junius-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 15084,12975 15085,13105
+Ahornallee: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 1589,11483 1574,11379
+Lindenallee: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 1429,11523 1403,11428
+Alt-Tegel: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 1668,20156 1753,20191 1907,20265
+Alt-Tegel: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 1668,20156 1529,20131 1543,20060 1668,20156
+Groebenufer: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 13206,10651 13077,10747
+Atzpodienstr. (Umgehung auf Gehweg mˆglich): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 16485,12384 16509,12518 16564,12513
+(Los-Angeles-Platz): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 5681,10696 5822,10609
+Weidenweg (Friedrichshain): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 13678,12571 13608,12547

@@ -759,6 +759,11 @@ The map item is in a cutting (Einschnitt). This means that the map
 item is typically under other map items. The attribute is not used
 yet.
 
+=item igndisp
+
+Ignore display. Item will not be rendered, but may be used for other
+purposes (i.e. routing).
+
 =item
 
 =back

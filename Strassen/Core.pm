@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.85 2008/01/17 22:50:52 eserte Exp $
+# $Id: Core.pm,v 1.86 2008/02/01 22:26:06 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.85 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.86 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -717,6 +717,11 @@ sub push_ext {
     $self->push($arg);
 }
 
+sub push_unparsed {
+    my($self, $comment) = @_;
+    CORE::push(@{$self->{Dara}}, $comment);
+}
+
 sub delete_current { # funktioniert in init/next-Schleifen
     my($self) = @_;
     return if $self->{Pos} < 0;
@@ -845,12 +850,13 @@ sub next_obj {
     $self->get_obj(++($self->{Pos}));
 }
 
-#del?
-#  # XXX wird das hier verwendet? Schönerer Ersatz für !@{$ret->[COORDS]} ?
-#  sub at_end {
-#      my $self = shift;
-#      $self->{Pos} >= $#{$self->{Data}};
-#  }
+# Return next comment or undef, if it's not a comment
+sub next_comment {
+    my $self = shift;
+    return undef if $self->{Pos}+1 > $#{$self->{Data}};
+    return undef if $self->{Data}[$self->{Pos}+1] !~ /^#/;
+    return $self->{Data}[$self->{Pos}++];
+}
 
 sub count {
     my $self = shift;

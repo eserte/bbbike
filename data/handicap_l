@@ -1,6 +1,6 @@
-#:# -*- coding: iso-8859-1 -*-
+#: #: -*- coding: iso-8859-1 -*-
 #: title: Sonstige Behinderungen (Brandenburg und weiteres Umland)
-#: version: $Id: handicap_l-orig,v 4.42 2008/01/05 14:22:03 eserte Exp $
+#: version: $Id: handicap_l-orig,v 4.43 2008/02/01 23:35:45 eserte Exp $
 #:
 Brandenburger Str.: Fuﬂg‰ngerzone	q4 -12894,-977 -13005,-1002 -13173,-1039 -13289,-1071 -13410,-1101 -13556,-1140
 Neuer Garten: Schiebestrecke	q3 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12115,1331
@@ -83,3 +83,7 @@ Weidensteig:Z235	q4 -5453,37632 -5443,37670
 Stadtheide: enge Straﬂe	q1 -15432,-2763 -15504,-2984 -15537,-3091 -15501,-3122
 Merkurstr.: enge Straﬂe	q1 -8484,-2710 -8432,-2713 -8411,-2699 -8359,-2582
 Merkurstr.: enge Straﬂe	q1 -8328,-2586 -8359,-2582 -8380,-2580 -8469,-2576
+#:
+L¸tzlow: Gehweg auf gleichem Niveau wie Fahrbahn: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 52431,94119 52422,94028 52350,93856
+Gramzow (Dorfstr.?): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 49779,90206 49841,90479
+Am Poetensteig, Gramzow: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 50043,90187 50109,89725

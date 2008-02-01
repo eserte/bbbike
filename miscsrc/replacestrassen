@@ -1,0 +1,116 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: replacestrassen,v 1.5 2008/02/01 23:39:18 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2008 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+# grepstrassen    <-> grep
+# replacestrassen <-> map
+
+use strict;
+
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../data",
+	 "$FindBin::RealBin/../lib",
+	);
+
+use Getopt::Long;
+use Storable qw(dclone);
+
+use Strassen::Core;
+
+my @nameexpr;
+my @catexpr;
+my @coordsexpr;
+my $revcoords;
+my $do_global_directives = 1;
+GetOptions('nameexpr=s@'   => \@nameexpr,
+	   'catexpr=s@'    => \@catexpr,
+	   'coordsexpr=s@' => \@coordsexpr,
+	   'revcoords'     => \$revcoords,
+	   'globaldirectives!' => \$do_global_directives
+	  ) or die <<EOF;
+usage: $0 [-nameexpr ... [-nameexpr ...]]
+          [-catexpr ... [-catexpr ...]]
+          [-coordsexpr ... [-coordsexpr ...]]
+          [-revcoords] [-[no]globaldirectives]
+EOF
+
+my $datafile = shift || "-";
+
+my $s = Strassen->new($datafile, UseLocalDirectives => 1, PreserveLineInfo => 1, PreserveComments => 1);
+my $new_s = Strassen->new;
+
+for my $def (['-nameexpr',   \@nameexpr],
+	     ['-catexpr',    \@catexpr],
+	     ['-coordsexpr', \@coordsexpr],
+	    ) {
+    my($opt, $exprs) = @$def;
+    for my $expr (@$exprs) {
+	my $code = 'sub { local $_ = shift; ' . $expr . '; $_ }';
+	$expr = eval $code;
+	die "Failed compiling $opt:\n$code\n$@" if $@;
+    }
+}
+
+$s->init;
+my @errors;
+while(1) {
+    while(defined(my $comment = $s->next_comment)) {
+	$new_s->push_unparsed($comment);
+    }
+
+    my $r = $s->next;
+    last if !@{ $r->[Strassen::COORDS] };
+
+    {
+	my $name = $r->[Strassen::NAME];
+	for my $nameexpr (@nameexpr) {
+	    $name = $nameexpr->($name);
+	}
+	$r->[Strassen::NAME] = $name;
+    }
+
+    {
+	my $cat = $r->[Strassen::CAT];
+	for my $catexpr (@catexpr) {
+	    $cat = $catexpr->($cat);
+	}
+	$r->[Strassen::CAT] = $cat;
+    }
+
+    {
+	my @coords = @{ $r->[Strassen::COORDS] };
+	if ($revcoords) {
+	    @coords = reverse @coords;
+	}
+	if (@coordsexpr) {
+	    my $coords = join " ", @coords;
+	    for my $coordsexpr (@coordsexpr) {
+		$coords = $coordsexpr->($coords);
+	    }
+	    @coords = split /\s+/, $coords;
+	}
+	$r->[Strassen::COORDS] = \@coords;
+    }
+
+    my $dir = $s->get_directive;
+    $new_s->push_ext($r, $dir);
+}
+
+if ($do_global_directives) {
+    $new_s->set_global_directives(dclone $s->get_global_directives);
+}
+print $new_s->as_string;
+
+__END__

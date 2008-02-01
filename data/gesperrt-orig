@@ -1,6 +1,6 @@
-#:# -*- coding: iso-8859-1 -*-
+#: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.180 2008/01/26 00:23:27 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.181 2008/02/01 23:41:03 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
 ###################################################################
@@ -526,7 +526,7 @@ Elisenau - Börnicke: Privatgelände?	2 24360,26503 24427,26841
 Weg nach Altlandsberg: Privatstraße, gesperrt	2 28159,19037 28715,18500
 Bernhard-Kellermann-Str. (Werder)	1 -21112,-3787 -21179,-3628 -21266,-3604
 Vorfahrt Flughafen Schönefeld	1 18417,-1453 18531,-1745 18368,-1801 18271,-1506
-Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s 52431,94119 52422,94028 52350,93856
+Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s:q1 52431,94119 52422,94028 52350,93856
 Lindenstr. (Frankfurt/Oder)	1 88960,-6639 88836,-6002
 Carthausplatz (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88960,-6639
 Gubener Str. (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88881,-6462 88775,-6151 88759,-5911
@@ -567,42 +567,46 @@ Helbigstr.	1s 20109,4087 20339,3779 20362,3750
 Friedrich-Wilhelm-Str.	1s 8385,5907 8282,5909
 Sophie-Taeuber-Arp-Weg	1s 3302,2471 3293,2218
 Seelbuschring	1s 8473,4614 8432,4712 8242,4648
-Zionskirchstr.	1s 10389,14274 10426,14262
+#: note: die Straßenbahn fährt hier auch lang
+Zionskirchstr.	1s:q1 10389,14274 10426,14262
 Walsroder Str.	1s 6396,5125 6295,5132 6203,5138 6089,5145
 Hünensteig	1s 6415,5028 6393,5028 6396,5125
+#: note: hier keine "1s"-Einschränkung notwendig, Radfahren auf dem Uferweg ist wohl Sitte
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s 12119,9823 11946,9913 11735,10022 11512,10105
-Czeminskistr.	1s 7615,8927 7570,8863
-Stallschreiberstr.	1s 10489,11405 10620,11244 10678,11172
-Jahnstr.	1s 11493,9128 11509,9392
-Bayernring	1s 8616,8595 8437,8557 8371,8543
+Czeminskistr.	1s:q3 7615,8927 7570,8863
+Stallschreiberstr.	1s:q1 10489,11405 10620,11244 10678,11172
+Jahnstr.	1s:q3 11493,9128 11509,9392
+Bayernring	1s:q3 8616,8595 8437,8557 8371,8543
 Waldweg	1s 25496,2429 24972,2583
-Schulenburgring	1s 9019,8434 9013,8594
-Neue Schönhauser Str.	1s 10528,13243 10441,13195 10305,13211
-Alte Schönhauser Str.	1s 10718,13625 10746,13673
-Kirchhofstr.	1s 13188,7590 13117,7471 13027,7368
-Niemannstr.	1s 14252,11368 14211,11229
-Björnsonstr	1s 10209,16674 10197,16528
+Schulenburgring	1s:q3 9019,8434 9013,8594
+#: note: die Straßenbahn fährt hier auch lang
+Neue Schönhauser Str.	1s:q1 10528,13243 10441,13195 10305,13211
+Alte Schönhauser Str.	1s:q2 10718,13625 10746,13673
+Kirchhofstr.	1s:q3 13188,7590 13117,7471 13027,7368
+Niemannstr.	1s:q3 14252,11368 14211,11229
+Björnsonstr	1s:q1 10209,16674 10197,16528
 #Eichhornstr.	1s 8226,11458 8258,11254
-Eichhornstr.	1s 8232,11414 8258,11254
-Paul-Junius-Str.	1s 15084,12975 15085,13105
-Ahornallee	1s 1589,11483 1574,11379
-Lindenallee	1s 1429,11523 1403,11428
-Gramzow (Dorfstr.?)	1s 49779,90206 49841,90479
+Eichhornstr.	1s:q3 8232,11414 8258,11254
+Paul-Junius-Str.	1s:q2 15084,12975 15085,13105
+Ahornallee	1s:q3 1589,11483 1574,11379
+Lindenallee	1s:q3 1429,11523 1403,11428
+Gramzow (Dorfstr.?)	1s:q1 49779,90206 49841,90479
 Billerbecker Weg	1s 1230,18698 1229,18750
-Alt-Tegel	1s 1668,20156 1753,20191 1907,20265
-Alt-Tegel	1s 1668,20156 1529,20131 1543,20060 1668,20156
+Alt-Tegel	1s:q3 1668,20156 1753,20191 1907,20265
+Alt-Tegel	1s:q3 1668,20156 1529,20131 1543,20060 1668,20156
 Am Treptower Park	1s 14529,9141 14382,9299 14242,9448 14179,9515 14089,9610
-Groebenufer	1s 13206,10651 13077,10747
+Groebenufer	1s:q1 13206,10651 13077,10747
 Jahnstr. (KW)	1s 26243,-12300 26028,-12312
 Seestr. (Potsdam)	1s -11581,559 -11584,452
 Tizianstr. (Potsdam)	1s -11424,542 -11480,621 -11581,559
 Spitzmühlenweg	1s 41728,17918 41668,17984 41556,18146
+#: note: Umgehung ist offiziell möglich, glaube ich
 Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -12265,-418
 Stephanstr.	1s 6526,4475 6366,4500
-Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
+Am Poetensteig, Gramzow	1s:q1 50043,90187 50109,89725
 # by: David Greve:# note: removed by srt: Ringbahnstr.	1s 8717,6965 8447,6964
 #: by: Juliane Bölker:
-Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
+Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,12513
 #
 ####################################################################
 #
@@ -1057,7 +1061,7 @@ Bozener Str.	1 5904,8906 5995,8926 6049,8916
 Bozener Str.	1 5995,8926 5995,9098
 Kleiststr.: schwierig zu querender Mittelstreifen	3nocross 6536,10520 6636,10485 6753,10446
 Bundesallee: Queren nicht möglich	3nocross 5360,8197 5359,8140 5357,8005
-(Los-Angeles-Platz)	1s 5681,10696 5822,10609
+(Los-Angeles-Platz)	1s:q3 5681,10696 5822,10609
 Bregenzer Str.	1 4278,10262 4227,10014
 Mollstr.: Straßenbahn	3nocross 11839,13083 11867,13076 11905,13069
 Mollstr.: Straßenbahn	3nocross 11867,13076 11839,13083 11739,13131 11723,13139
@@ -1097,7 +1101,8 @@ tragen (ca. 5 x 9 Stufen)	0:120 13858,13709
 Danziger Str.: Straßenbahnschienen	3nocross 12912,14084 12975,13990 13037,13897 13100,13803
 Danziger Str.: Straßenbahnschienen	3nocross 13100,13803 13166,13707 13225,13620 13228,13615
 Pintschstr.	1 13342,13185 13438,12965
-Weidenweg (Friedrichshain)	1s 13678,12571 13608,12547
+#: XXX Einbahnstraßenregelung genauer anschauen
+Weidenweg (Friedrichshain)	1s:q1 13678,12571 13608,12547
 Landsberger Allee	3nocross 12386,13085 12582,13128 12727,13159
 Landsberger Allee	3nocross 20551,15582 20641,15622 20796,15667
 Landsberger Allee: Straßenbahntrasse	3nocross 13640,13597 13708,13623 13862,13688

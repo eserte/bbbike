@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.39 2008/01/26 19:33:42 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.40 2008/02/01 21:14:14 eserte Exp $
 #
 
 .ifndef COMMENTS_PARTIAL
@@ -22,11 +22,11 @@ BBBIKEDRAW=		${MISCSRCDIR}/bbbikedraw.pl
 SORTBYCAT=		${MISCSRCDIR}/sortbycat
 # Specify encoding in case some non-latin1 unicode characters need to be
 # converted 
-BBD2ESRI=		${MISCSRCDIR}/bbd2esri -dbfencoding iso-8859-1
+BBD2ESRI=		${MISCSRCDIR}/bbd2esri -igndisp -dbfencoding iso-8859-1
 # Some sample encoding variations
-#BBD2ESRI=		${MISCSRCDIR}/bbd2esri -dbfencoding ascii
-#BBD2ESRI=		${MISCSRCDIR}/bbd2esri -dbfencoding utf-8
-#BBD2ESRI=		${MISCSRCDIR}/bbd2esri -dbfencoding html
+#BBD2ESRI=		${MISCSRCDIR}/bbd2esri -igndisp -dbfencoding ascii
+#BBD2ESRI=		${MISCSRCDIR}/bbd2esri -igndisp -dbfencoding utf-8
+#BBD2ESRI=		${MISCSRCDIR}/bbd2esri -igndisp -dbfencoding html
 
 CONVERT_RADWEGE=	${MISCSRCDIR}/convert_radwege
 

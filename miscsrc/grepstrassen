@@ -2,23 +2,27 @@
 # -*- perl -*-
 
 #
-# $Id: grepstrassen,v 1.23 2008/01/25 23:17:35 eserte Exp $
+# $Id: grepstrassen,v 1.25 2008/02/01 23:35:14 eserte Exp $
 # Author: Slaven Rezic
 #
 
 # Strassen-Dateien filtern
 # Similar to Strassen::CoreHeavy::grepstreets
 
+use strict;
+
 use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../data",
 	 "$FindBin::RealBin/../lib",
 	);
-use Strassen::Core;
-use Strassen::Stat;
-use strict;
 
 use Getopt::Long;
+use Storable qw(dclone);
+
+use Strassen::Core;
+use Strassen::Stat;
+
 my($v, $cat, $catrx, $name, $namerx, $section, $sectionrx, @directive_def, @directive, @directiverx);
 my($minarea, $minlength);
 my $preserveglobaldirectives;
@@ -27,6 +31,8 @@ my %special_init;
 my %special_end;
 my %special_data;
 my %type_s;
+my @inner;
+my @outer;
 GetOptions("v" => \$v,
 	   "cat=s" => \$cat,
 	   "catrx=s" => \$catrx,
@@ -46,6 +52,8 @@ GetOptions("v" => \$v,
 	   "preserveglobaldirectives!" => \$preserveglobaldirectives,
 	   "minarea=f" => \$minarea,
 	   "minlength=f" => \$minlength,
+	   'inner=s@' => \@inner,
+	   'outer=s@' => \@outer,
 	  ) or die <<EOF;
 usage: $0 [-v] [-cat category] [-catrx regexp]
        [-name name] [-namerx regexp]
@@ -53,6 +61,7 @@ usage: $0 [-v] [-cat category] [-catrx regexp]
        [-directive key=val|key~val [-directive ...]]
        [-special name] [-minarea ...km²] [-minlength ...km]
        [-preserveglobaldirectives]
+       [-inner file [-inner ...]] [-outer file [-outer ...]]
 
 section is a region marked with the "section" directive in a bbd file.
 
@@ -81,6 +90,23 @@ my $datafile = shift || "-";
 
 my $s = Strassen->new($datafile, UseLocalDirectives => 1, PreserveLineInfo => 1);
 my $new_s = Strassen->new;
+
+my(@inner_s, @outer_s);
+for my $inner (@inner) {
+    my $s = Strassen->new($inner);
+    die "Record count of $inner is not 1" if $s->count != 1;
+    $s->init;
+    push @inner_s, [ map { [split /,/] } @{ $s->next->[Strassen::COORDS()] } ];
+}
+for my $outer (@outer) {
+    my $s = Strassen->new($outer);
+    die "Record count of $outer is not 1" if $s->count != 1;
+    $s->init;
+    push @outer_s, [ map { [split /,/] } @{ $s->next->[Strassen::COORDS()] } ];
+}
+if (@inner_s || @outer_s) {
+    require VectorUtil;
+}
 
 for my $type (keys %special_init) {
     no strict 'refs';
@@ -122,6 +148,34 @@ LOOP_STREETS: while(1) {
     # Match length/area
     if (defined $minarea && $r->[2] =~ /^F:/) { if (Strassen::area($r) >= $minarea) { next if $v } else { next unless $v } }
     if (defined $minlength && $r->[2] !~ /^F:/ && @{$r->[1]} > 1) { if (Strassen::total_len($r) >= $minlength) { next if $v } else { next unless $v } }	
+    # Match inner/outer
+    # XXX using point_in_polygon is somewhat rough, probably should use something like line_in_polygon
+    # XXX no -v support here!
+    my @c;
+    if (@inner_s || @outer_s) {
+	@c = map { [ split /,/ ] } @{ $r->[Strassen::COORDS] };
+    }
+ INNER: {
+	if (@inner_s) {
+	    for my $inner (@inner_s) {
+		for my $c (@c) {
+		    if (VectorUtil::point_in_polygon($c,$inner)) {
+			last INNER;
+		    }
+		}
+	    }
+	    next LOOP_STREETS;
+	}
+    }
+    if (@outer_s) {
+	for my $outer (@outer_s) {
+	    for my $c (@c) {
+		if (VectorUtil::point_in_polygon($c,$outer)) {
+		    next LOOP_STREETS;
+		}
+	    }
+	}
+    }
     # Special matches
     while(my($k,$v) = each %special) {
 	next if !$v->($r, $dir);
@@ -138,16 +192,18 @@ while(my($k,$v) = each %special_end) {
 }
 
 if ($preserveglobaldirectives) {
-    my $global_directives = $s->get_global_directives;
-    if ($global_directives && keys %$global_directives) {
-	for my $global_directive (keys %$global_directives) {
-	    print join("", map { "#: $global_directive: $_\n" } @{ $global_directives->{$global_directive} });
-	    if ($global_directive eq 'encoding') {
-		binmode STDOUT, ":encoding(" . $global_directives->{$global_directive}->[0] . ")";
-	    }
-	}
-	print "#:\n"; # end
-    }
+    $new_s->set_global_directives(dclone $s->get_global_directives);
+#XXX del:
+#     my $global_directives = $s->get_global_directives;
+#     if ($global_directives && keys %$global_directives) {
+# 	for my $global_directive (keys %$global_directives) {
+# 	    print join("", map { "#: $global_directive: $_\n" } @{ $global_directives->{$global_directive} });
+# 	    if ($global_directive eq 'encoding') {
+# 		binmode STDOUT, ":encoding(" . $global_directives->{$global_directive}->[0] . ")";
+# 	    }
+# 	}
+# 	print "#:\n"; # end
+#     }
 } else {
     # Only preserve some importing global directives:
     my $need_global_directive_separator;
@@ -165,11 +221,13 @@ if ($preserveglobaldirectives) {
     if ($need_global_directive_separator) {
 	print "#:\n";
     }
+    # XXX del:
+    # XXX The "# filtered" is a hack to prevent the first line being interpreted
+    # as a global directive.
+    #print "# filtered\n" . 
 }
 
-# XXX The "# filtered" is a hack to prevent the first line being interpreted
-# as a global directive.
-print "# filtered\n" . $new_s->as_string;
+print $new_s->as_string;
 
 ######################################################################
 

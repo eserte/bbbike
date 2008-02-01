@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Cat.pm,v 1.12 2008/01/31 21:05:19 eserte Exp $
+# $Id: Cat.pm,v 1.13 2008/02/01 23:34:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 use File::Basename qw(basename);
 
@@ -28,9 +28,12 @@ use vars qw(%filetype_to_cat %file_to_cat);
 %filetype_to_cat =
     (
      "borders"	      => [qw(Z)],
-     "gesperrt"	      => [qw(1 1s 2 3 3nocross),
+     # XXX Information duplicated in data/Makefile
+     "gesperrt"	      => [qw(1 2 3 3nocross),
 			  sub { /^0:\d+(:-?\d+)?$/ },
-			  sub { /^BNP:\d+(:-?\d+)?$/} ],
+			  sub { /^BNP:\d+(:-?\d+)?$/ },
+			  sub { /^1s(:q\d)?$/ },
+			 ],
      "fragezeichen"   => [qw(? ?? F:? F:??)],
      "handicap"	      => [qw(q0 q1 q2 q3 q4)],
      "landstrassen"   => [qw(B HH H N NN Pl)],
@@ -56,8 +59,10 @@ use vars qw(%filetype_to_cat %file_to_cat);
 %file_to_cat =
     ("ampeln"			=> [qw(? B B0 F X Zbr)],
      "berlin"			=> $filetype_to_cat{"borders"},
+     "berlin_ortsteile"		=> $filetype_to_cat{"borders"},
      "brunnels"			=> [qw(Br Tu TuBr)],
      "comments_cyclepath"	=> $filetype_to_cat{"radwege"},
+     "comments_danger"		=> [qw(CP CS)],
      "comments_ferry"		=> [qw(CS)],
      "comments_kfzverkehr"	=> [qw(-2 -1 +1 +2)],
      "comments_misc"		=> [qw(CP CP2 CS Roundabout MiniRoundabout)],

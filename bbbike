@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.353 2008/01/31 22:32:24 eserte Exp $
+# $Id: bbbike,v 3.355 2008/02/01 23:40:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -148,7 +148,7 @@ use File::Basename;
 #BEGIN{mymstat("before BBBikeUtil");}
 ## DEBUG_END
 use BBBikeUtil;
-use BBBikeUtil qw(min max);
+use BBBikeUtil qw(min max first);
 use BBBikeVar;
 use BBBikeCalc;
 use BBBikeTrans;
@@ -229,7 +229,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.353 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.355 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -5902,6 +5902,7 @@ sub generate_plot_functions {
 # coord list. But nevertheless $ignore and $restrict won't work correctly.
 	    return if defined $ignore and $cat_hin =~ /$ignore/;
 	    return if defined $restrict and $cat_hin !~ /$restrict/;
+	    return if first { $_ eq "igndisp" } @addinfo_hin;
 	    my $this_color_hin = $cat_hin =~ /^\#/ ? $cat_hin :
 		($layer_category_color{$abk} && $layer_category_color{$abk}{$cat_hin})
 		|| $category_color{$cat_hin}
@@ -6423,6 +6424,7 @@ EOF
 	    my $ret = shift;
 	    my $category = $ret->[Strassen::CAT];
 	    return if defined $restrict and $category !~ /$restrict/;
+	    return if index($category, "::igndisp") >= 0;
 	    my $pointname = $ret->[Strassen::NAME];
 	    my $koord = $ret->[Strassen::COORDS][0]; # erste Koordinate
             $koord = $conv->($koord) if $conv;
@@ -19530,6 +19532,7 @@ sub export_visible_map {
     }
     $top->raise;
     $top->update;
+    $top->tk_sleep(1); # make sure the update was really done
 
     my $imager_fmt = $fmt eq 'ppm' ? 'pnm' : $fmt;
     if ($devel_host && eval {
@@ -19545,6 +19548,8 @@ sub export_visible_map {
 	eval {
 	    ## This should work, but does not, because $widget->can("frame") seems
 	    ## to be always true
+	    ## XXX for Version 0.006 this will work:
+	    #$img = Imager::Screenshot::screenshot(widget => $c);
 	    #my $img = Imager::Screenshot::screenshot(widget => $c, decor => 0);
 	    $img = Imager::Screenshot::screenshot(($Tk::platform eq 'MSWin32' ? 'hwnd' : 'id'),
 						  hex $c->id);
@@ -20032,6 +20037,33 @@ sub balloon_info_from_all_tags {
 	}
     }
 }
+
+# REPO BEGIN
+# REPO NAME tk_sleep /home/e/eserte/work/srezic-repository 
+# REPO MD5 6e344458a3a154eefaf7b82d5f9bb576
+
+=head2 tk_sleep
+
+=for category Tk
+
+    $top->tk_sleep($s);
+
+Sleep $s seconds (fractions are allowed). Use this method in Tk
+programs rather than the blocking sleep function. The difference to
+$top->after($s/1000) is that refrsh events are still handled in the
+sleeping time.
+
+=cut
+
+sub Tk::Widget::tk_sleep {
+    my($top, $s) = @_;
+    my $sleep_dummy = 0;
+    $top->after($s*1000,
+                sub { $sleep_dummy++ });
+    $top->waitVariable(\$sleep_dummy)
+	unless $sleep_dummy;
+}
+# REPO END
 
 ## DEBUG_BEGIN
 #BEGIN{mymstat("100% BEGIN");}

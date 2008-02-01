@@ -612,16 +612,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_006754',
-         'until' => 1201820399,
-         'text' => 'Drakestr. (Lichterfelde) in beiden Richtungen bei der Bahnunterführung geplatzte Wasserleitung, Straße vollständig gesperrt (bis 01/2008)',
-         'from' => 1199434005,
-         'id' => 1198,
-         'data' => 'userdel	2::inwork 3228,4046 3128,4190
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

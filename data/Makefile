@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.172 2008/01/31 21:05:57 eserte Exp $
+# $Id: Makefile,v 2.174 2008/02/01 23:49:43 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -36,6 +36,7 @@ SORTBYCAT=		${MISCSRCDIR}/sortbycat
 SEARCH_INACCESSIBLE=	${MISCSRCDIR}/search_inaccessible_points
 STEIGUNG_STAT=		${MISCSRCDIR}/steigung_stat
 GREPSTRASSEN=		${MISCSRCDIR}/grepstrassen
+REPLACESTRASSEN=	${MISCSRCDIR}/replacestrassen
 # perl5.8.0 has utf8 bugs
 .if ${HOSTNAME} == "devpc01.iconmobile.de"
 PERL_UTF8=		perl5.8.7
@@ -72,7 +73,7 @@ SOURCE_TARGETS+=	gesperrt_$(i)
 SOURCE_TARGETS+=	${COMMENTS_PARTIAL} fragezeichen exits multi_bez_str
 
 # These do not have a -orig file of their own, or another type of source file
-COMPUTED_TARGETS=	sbahnhof_bg ubahnhof_bg berlin
+COMPUTED_TARGETS=	sbahnhof_bg ubahnhof_bg berlin berlin_ortsteile
 COMPUTED_TARGETS+=	radwege_exact mount
 COMPUTED_TARGETS+=	temp_blockings/bbbike-temp-blockings-optimized.pl
 COMPUTED_TARGETS+=	wasserstrassen-lowres
@@ -128,7 +129,8 @@ targets-clean:
 
 # Useful checks, but normally too slow for a quick build
 # XXX merge with sort-Berlin.coords.data rule below?
-slow-checks:	check-categories \
+slow-checks:	do-doublechecks \
+		check-categories \
 		inaccessible_strassen inaccessible_landstrassen \
 		check-line-lengths check-dates \
 		check-coords.data \
@@ -437,12 +439,13 @@ ampelschaltung:	ampelschaltung-orig
 	mv ampelschaltung~ ampelschaltung
 	-@$(READONLY) $@
 
-gesperrt:	gesperrt-orig strassen landstrassen landstrassen2 comments_path
-	-@$(WRITEABLE) $@
+gesperrt .gesperrt.tmp:	gesperrt-orig strassen landstrassen landstrassen2 comments_path
+	-@$(WRITEABLE) gesperrt
 	$(CONVERT2HAFAS) -specsperre=strassen,landstrassen,landstrassen2 \
-	    -specsperre-exceptions=comments_path gesperrt-orig > $@~
-	mv $@~ $@
-	-@$(READONLY) $@
+	    -specsperre-exceptions=comments_path gesperrt-orig > .gesperrt.tmp
+	$(REPLACESTRASSEN) -catexpr 's/:q\d//' < .gesperrt.tmp > gesperrt~
+	mv gesperrt~ gesperrt
+	-@$(READONLY) gesperrt
 
 ${PERSISTENTTMPDIR}/gesperrt-without-nocross:	gesperrt-orig strassen landstrassen landstrassen2
 	-@$(WRITEABLE) $@
@@ -477,7 +480,6 @@ plz berlin:	plz-orig
 	mv -f plz~ plz
 	-@$(READONLY) plz berlin
 
-# Not a default rule yet:
 berlin_ortsteile:	plz-orig
 	-@$(WRITEABLE) $@
 	cat plz-orig | \
@@ -544,15 +546,27 @@ qualitaet_l:	qualitaet_l-orig
 	mv qualitaet_l~ qualitaet_l
 	-@$(READONLY) $@
 
-handicap_s:	handicap_s-orig
+handicap_s:	handicap_s-orig berlin .gesperrt.tmp
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) handicap_s-orig > handicap_s~
+	$(PERL) $(CONVERT_ORIG) handicap_s-orig > handicap_s~
+	$(GREPSTRASSEN) -catrx ':q\d' < .gesperrt.tmp |\
+	    $(GREPSTRASSEN) -inner berlin |\
+	    $(REPLACESTRASSEN) -noglobaldirectives \
+		-catexpr 's/.*:(q\d)/$$1::igndisp;/' \
+		-nameexpr 's/(.*)/$$1: gegen die Einbahnstraßenrichtung, ggfs. schieben/' \
+		>> handicap_s~
 	mv handicap_s~ handicap_s
 	-@$(READONLY) $@
 
-handicap_l:	handicap_l-orig
+handicap_l:	handicap_l-orig berlin .gesperrt.tmp
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) handicap_l-orig > handicap_l~
+	$(PERL) $(CONVERT_ORIG) handicap_l-orig > handicap_l~
+	$(GREPSTRASSEN) -catrx ':q\d' < .gesperrt.tmp |\
+	    $(GREPSTRASSEN) -outer berlin |\
+	    $(REPLACESTRASSEN) -noglobaldirectives \
+		-catexpr 's/.*:(q\d)/$$1::igndisp;/' \
+		-nameexpr 's/(.*)/$$1: gegen die Einbahnstraßenrichtung, ggfs. schieben/' \
+		>> handicap_l~
 	mv handicap_l~ handicap_l
 	-@$(READONLY) $@
 
@@ -688,7 +702,7 @@ fragezeichen-cooked:	fragezeichen strassen landstrassen landstrassen2
 	-@$(WRITEABLE) $@
 	cat fragezeichen-orig |\
 	        ${GREPSTRASSEN} -v -sectionrx "ignorieren" |\
-	    ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@~
+	    ${CONVERT_ORIG} > $@~
 	@echo "# added from ampeln-orig" >> $@~
 	grep '?' ${DATADIR}/ampeln-orig | \
 	    $(SED) -e 's/	\([^ ]*\)/ (\1)	?/' | \
@@ -960,7 +974,8 @@ do-checks:	.check_empty_lines \
 	.check_housenumbers .check_sehenswuerdigkeit .check_green \
 	.check_brunnels .check_comments_ferry \
 	.check_exits \
-	.check_temp_blockings .check_grenzuebergaenge\
+	.check_temp_blockings .check_grenzuebergaenge \
+	.check_berlin .check_potsdam
 
 .check_empty_lines:	*-orig
 	for i in *-orig; do $(PERL) -nle '$$_ eq q{} and die $$ARGV' $$i; done
@@ -1022,7 +1037,8 @@ check-disabled:	.check_label
 	$(CHECK_POINTS) -ampelschaltung ampelschaltung-orig ampeln-orig
 	@touch $@
 
-GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s|2|3|BNP:\d+(:-?\d+)?)(:inwork)?$$'
+# XXX Information duplicated in Strassen::Cat
+GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|BNP:\d+(:-?\d+)?)(:inwork)?$$'
 
 .check_gesperrt1:	gesperrt .strassen.tmp landstrassen landstrassen2
 	$(CHECK_POINTS) -catrx $(GESPERRT_CATRX) gesperrt .strassen.tmp landstrassen landstrassen2
@@ -1193,6 +1209,12 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s|2|3|BNP:\d+(:-?\d+)?)(:inwork)?$$'
 	$(CHECK_POINTS) -catrx '^GU$$' grenzuebergaenge .strassen.tmp landstrassen landstrassen2 fragezeichen
 	$(CHECK_POINTS) grenzuebergaenge deutschland
 	@touch $@
+
+.for city in berlin potsdam
+.check_$(city):	$(city)
+	grep -v '^#' $(city) | perl -nle '$$line++; END { die "Expected exactly one line" if $$line != 1 }'
+	@touch $@
+.endfor
 
 .check_add_str:	strassen add_str Berlin.coords.data
 	false
@@ -1554,6 +1576,8 @@ do-doublechecks:	.doublecheck_strassen.tmp \
 			.doublecheck_gesperrt_u \
 			.doublecheck_gesperrt_s \
 			.doublecheck_gesperrt_r \
+			.doublecheck_handicap_s \
+			.doublecheck_handicap_l \
 
 .for file in flaechen green plaetze landstrassen2 sbahnhof rbahnhof ubahnhof faehren hoehe ampeln
 .doublecheck_$(file): $(file)
@@ -1639,6 +1663,15 @@ do-doublechecks:	.doublecheck_strassen.tmp \
 	-rm /tmp/gesperrt_$(i)-XXX
 	$(CONVERT2HAFAS) gesperrt_$(i)-orig | $(MISCSRCDIR)/check_dates -filter > /tmp/gesperrt_$(i)-XXX
 	diff -I '#: alias:' -u gesperrt_$(i) /tmp/gesperrt_$(i)-XXX
+	touch $@
+.endfor
+
+.for i in s l
+.doublecheck_handicap_$(i):	handicap_$(i)-orig
+	-rm /tmp/handicap_$(i)-XXX
+	$(CONVERT2HAFAS) handicap_$(i)-orig > /tmp/handicap_$(i)-XXX
+	diff -I '#:.*temporary' -u handicap_$(i) /tmp/handicap_$(i)-XXX
+	rm /tmp/handicap_$(i)-XXX
 	touch $@
 .endfor
 
