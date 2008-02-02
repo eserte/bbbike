@@ -41,7 +41,7 @@ Danach kann BBBike ausgepackt werden:
 
 	zcat BBBike-3.16.tar.gz | tar xfv -
 
-Falls perl/Tk (eine möglichst neue Version, z.B. 804.027 or 800.025) nicht
+Falls perl/Tk (eine möglichst neue Version, z.B. 804.028 or 800.025) nicht
 installiert ist: in das Verzeichnis C<BBBike-3.16>
 wechseln und als Superuser
 
@@ -95,7 +95,7 @@ ausgeführt werden. Dazu ist das Perl-Modul L<Inline::C> notwendig.
 
 =head3 Mac OS X
 
-Mac OS X enthält bereits perl 5.6.0 oder 5.8.x. Um BBBike zum Laufen zu bringen
+Mac OS X enthält bereits 5.8.x. Um BBBike zum Laufen zu bringen
 werden noch XDarwin und Perl/Tk benötigt. Eine Anleitung zum Aufsetzen
 von Perl/Tk auf Mac OS X bekommt man in der comp.lang.perl.tk Newsgroup
 (siehe L<http://groups.google.com>).
@@ -151,7 +151,7 @@ Mac OS Classic wird nicht unterstützt.
 
 BBBike und Perl benötigen ca. 32 MB an Festplattenspeicher.
 
-Einfach die Datei L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.15-Windows.exe> laden und starten.
+Einfach die Datei L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.16-Windows.exe> laden und starten.
 Damit wird das Installationsprogramm gestartet.
 
 =head3 Alternative Windows Installation (1)
@@ -181,13 +181,13 @@ enthalten und muss nicht separat installiert werden.
 
 =item *
 
-L<BBBike-3.15.tar.gz|http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.15-Windows.exe>
+L<BBBike-3.16.tar.gz|http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.16-Windows.exe>
 downloaden und mit WinZip auspacken. Das
 ausgepackte Verzeichnis wird später nicht mehr verschoben.
 
 =item *
 
-In der Eingabeaufforderung oder im Explorer zum Verzeichnis BBBike-3.15
+In der Eingabeaufforderung oder im Explorer zum Verzeichnis BBBike-3.16
 wechseln und
 
 

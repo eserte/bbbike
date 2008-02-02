@@ -41,7 +41,7 @@ Next step is to extract the BBBike distribution:
 
 	zcat BBBike-3.16.tar.gz | tar xfv -
 
-If perl/Tk (the recommended version is 804.027 or 800.025) is not installed:
+If perl/Tk (the recommended version is 804.028 or 800.025) is not installed:
 change to the directory
 C<BBBike-3.16> and type as super user:
 
@@ -93,7 +93,7 @@ This requires the perl module L<Inline::C>.
 
 =head3 Mac OS X
 
-Mac OS X comes already with perl 5.6.0 oder 5.8.x. Now you just need XDarwin and Perl/Tk
+Mac OS X comes already with perl 5.8.x. Now you just need XDarwin and Perl/Tk
 to get BBBike running. For instructions how to setup Perl/Tk on Mac OS X
 refer to the comp.lang.perl.tk newsgroup (see
 L<http://groups.google.com>).
@@ -148,7 +148,7 @@ Mac OS Classic is not supported.
 BBBike and Perl need approx. 32 MB hard disk space.
 
 Download the file
-L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.15-Windows.exe> and just start it for the installation
+L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.16-Windows.exe> and just start it for the installation
 program.
 
 =head3 Alternative Windows Installation (1)
@@ -178,7 +178,7 @@ does not need to be installed.
 =item *
 
 Download
-C<BBBike-3.15.tar.gz|http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.15-Windows.exe>
+C<BBBike-3.16.tar.gz|http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.16-Windows.exe>
 and extract this file with 
 WinZip. The unpacked directory will not move in the later
 installation.
@@ -311,7 +311,7 @@ C<lib/Text/ScriptTemplate.pm> by Taisuke Yamada, C<lib/enum.pm> by
 Zenin, C<ext/Strassen-Inline/heap.[ch]> by Internet Software
 Consortium, C<ext/BBBikeXS/sqrt.c> by Eyal Lebedinsky.
 
-C<BBBike-3.15-Windows.zip> contains a partial C<SiePerl>
+C<BBBike-3.16-Windows.zip> contains a partial C<SiePerl>
 distribution, see
 L<http://www.cpan.org/authors/id/G/GR/GRAHAMC/>
 

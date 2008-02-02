@@ -10787,8 +10787,8 @@ userdel	2::inwork -29244,-23127 -30149,-22937 -30811,-22899
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Anna-Louisa-Karsch (Mitte) in Richtung Friedrichsbrücke Bauarbeiten, Fahrtrichtung gesperrt',
+       until => 1204239600, # 2008-02-29 00:00
+       text  => 'Anna-Louisa-Karsch Str. (Mitte) in Richtung Friedrichsbrücke zwischen An der Spandauer Brücke und Burgstr. Bauarbeiten, Fahrtrichtung gesperrt (bis Ende Feb 2008)',
        type  => 'gesperrt',
        source_id => 'IM_007651',
        data  => <<EOF,
@@ -10801,6 +10801,23 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 23113,30450 23368,30409 23631,30262
+EOF
+     },
+     { from  => undef, # 
+       until => 1214863200, # 2008-07-01 00:00
+       text  => 'Pistoriusstr. (Weißensee) Richtung Berliner Str. zwischen Gustav-Adolf-Str. und Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2008) (09:04) ',
+       type  => 'gesperrt',
+       source_id => 'IM_006024',
+       data  => <<EOF,
+userdel	1::inwork 12486,16791 12693,16700
+EOF
+     },
+     { from  => 1201647600, # 2008-01-30 00:00
+       until => 1208556000, # 2008-04-19 00:00
+       text  => 'L 314 Zepernicker Chaussee OD Bernau grundhafter Straßenbau Vollsperrung 31.01.2008-18.04.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 22178,30343 21872,30139 21561,30131 21172,29984
 EOF
      },
     );
