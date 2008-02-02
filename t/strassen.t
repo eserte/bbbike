@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen.t,v 1.16 2007/12/23 21:18:58 eserte Exp $
+# $Id: strassen.t,v 1.17 2008/02/02 22:41:38 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -15,7 +15,6 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin",
 	);
 use File::Temp qw(tempfile);
-use File::Compare qw(compare);
 use Getopt::Long;
 
 use Strassen;
@@ -320,7 +319,9 @@ EOF
     my($tmpfh2,$tmpfile2) = tempfile(SUFFIX => ".bbd",
 				     UNLINK => 1);
     $s2->write($tmpfile2);
-    is(compare($tmpfile2, $tmpfile), 0, "File the same after write");
+    my $tmpcontent  = do { open my $fh, $tmpfile  or die $!; local $/; <$fh> };
+    my $tmpcontent2 = do { open my $fh, $tmpfile2 or die $!; local $/; <$fh> };
+    eq_or_diff($tmpcontent2, $tmpcontent, "File contents from $tmpfile the same after write ($tmpfile2)");
 
     my $ms = MultiStrassen->new($s, $s2);
     my $global_dirs_multi = $ms->get_global_directives;

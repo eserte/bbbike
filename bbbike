@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.355 2008/02/01 23:40:05 eserte Exp $
+# $Id: bbbike,v 3.355 2008/02/01 23:40:05 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -3433,7 +3433,6 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		     # GPS
 		     ['GPX (Track)', 'GPX/track'],
 		     'GPX (Route)',
-		     #['GPX (Route)', 'GPX/route'], # not yet, support not ready
 		     ($advanced ? ['KML (GoogleEarth)', 'KML/track'] : ()),
 		     ['GPSMAN (Track)', 'GpsmanData'],
 		     'GPSMAN (Route)',
@@ -3454,6 +3453,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		     'GPS direkt',
 		     [M('Route zu einem Garmin senden'), 'DirectGarmin'],
 		     [M('Senden der Route zu einem Garmin simulieren'), 'DirectGarmin_Test'],
+		     ($devel_host ? [M("Route mit gpsbabel senden"), "GpsbabelSend"] : ()),
 		    ) {
 	if ($fmt eq '-') {
 	    $svm->separator;
@@ -3509,13 +3509,13 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 	    $svm->command
 		(-label => $fmt,
 		 -command => sub {
-		     gps_interface('GPSMAN (Route)', 'BBBikeGPS::GpsmanRoute', -noloading => 1);
+		     gps_interface('BBBikeGPS::GpsmanRoute', -noloading => 1);
 		 });
 	} elsif ($fmt eq 'GPX (Route)') {
 	    $svm->command
 		(-label => $fmt,
 		 -command => sub {
-		     gps_interface('GPSMAN (Route)', 'BBBikeGPS::GPXRoute', -noloading => 1);
+		     gps_interface('BBBikeGPS::GPXRoute', -noloading => 1);
 		 });
 	} elsif ($fmt =~ /^esri/i) {
 	    if (-x "$FindBin::RealBin/miscsrc/bbd2esri" &&
@@ -3540,10 +3540,21 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		    (-label => $label,
 		     -command => sub { save_route_as_kml(-as => $as) },
 		    );
+	    } elsif ($module eq 'GpsbabelSend') {
+		$svm->command
+		    (-label => $label,
+		     -command => sub {
+			 gps_interface('BBBikeGPS::GpsbabelSend', -noloading => 1);
+		     });
+	    } elsif ($module eq 'DirectGarmin') {
+		$svm->command
+		    (-label => $label,
+		     -command => sub { send_route_to_gps() },
+		    );
 	    } else {
 		$svm->command
 		    (-label => $label,
-		     -command => sub { gps_interface(@$fmt) },
+		     -command => sub { gps_interface($module) },
 		    );
 	    }
 	} else {
@@ -4950,7 +4961,7 @@ dazu verwendet wird",
 	  var => \$gps_waypointsymbol,
 	 ],
 	 ['gpsdevice','=s',($os eq 'win' ? "COM1" : ($os_bsd ? '/dev/cuaa0' : '/dev/ttyS0')),
-	  choices => (  $os eq 'win' ? [map {  "COM$_" 			       } (1..4) ]
+	  choices => (  $os eq 'win' ? [(map {  "COM$_" 			       } (1..4)), "USB" ]
 		      : $os_bsd      ? [map {  "/dev/cuaa$_"		       } (0..3) ]
 		      :                [map { ("/dev/ttyS$_", "/dev/ttyUSB$_") } (0..3) ]
 		     ),
@@ -8965,6 +8976,18 @@ sub save_route_as_esri {
     }; warn $@ if $@;
     unlink $tmpfile2;
     unlink $tmpfile1;
+}
+
+### AutoLoad Sub
+sub send_route_to_gps {
+    if ($os eq 'win' && $gps_device eq 'USB') {
+	if ($devel_host) {
+	    status_message("NOTE: Fallback to gpsbabel, because there's no USB support in perl-GPS", "infodlg");
+	}
+	gps_interface('BBBikeGPS::GpsbabelSend', -noloading => 1);
+    } else {
+	gps_interface('DirectGarmin');
+    }
 }
 
 # weiter zur Druckfunktion...
@@ -16400,6 +16423,10 @@ sub show_route_strname {
 	   }
        },
       )->pack(-side => 'left');
+    $bf->Button
+      (-text => M("GPS (nur Garmin)"),
+       -command => sub { send_route_to_gps() },
+      )->pack(-side => 'left');
     # If there is a txt => palm converter and a palm transfer program,
     # then show this button:
     require BBBikePalm;
@@ -16468,21 +16495,6 @@ sub show_route_strname {
 		  -data => route_info_to_text());
 	   }
        })->pack(-side => 'left');
-    if ($advanced && $devel_host) {
-	# Fax::Send is only a private unsupported module...
-	$bf->Button
-	    (-text => M"Fax",
-	     -command => sub {
-		 if (@route_info) {
-		     $show_route_start = "???" unless $show_route_start;
-		     $show_route_ziel  = "???" unless $show_route_ziel;
-		     enter_send_fax
-			 (Mfmt("BBBike-Route von %s bis %s",
-			       $show_route_start, $show_route_ziel),
-			  -data => route_info_to_text());
-		 }
-	     })->pack(-side => 'left');
-    }
     $t->bind('<Up>'   => sub { $route_strname_lbox->yview(scroll => -1,
 							  'units') });
     $t->bind("<Down>" => sub { $route_strname_lbox->yview(scroll => 1,

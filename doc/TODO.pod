@@ -1994,17 +1994,19 @@ Beispiele:
  * Neue Schönhauser Str.: die Straßenbahn darf in beide Richtungen
    fahren, d.h. die Fahrbahn ist breit genug und normalerweise sollte
    es keine Konflikte mit dem Gegenverkehr geben. Höchste Kategorie
-   (= 25 km/h?) (+ Achtung, Einbahnstraße!)
+   (= 25 km/h?) (+ Achtung, Einbahnstraße!) -> DONE
 
  * Am Treptower Park: teilweise Gehweg, teilweise Nebenfahrbahn zum
    Parken. Eher niedriges Konfliktpotenzial, vielleicht mittlere
    Kategorie (= 18 km/h?) (kein Achtung?)
 
  * Bayernring, Schulenburgring: sehr wenig Verkehr, aber enge Straße.
-   Deshalb niedrige Kategorie. (= 13 km/h?) (+ Achtung, Einbahnstraße!)
+   Deshalb niedrige Kategorie. (= 13 km/h?) (+ Achtung,
+   Einbahnstraße!) -> DONE
 
  * Jahnstr.: etwas mehr Verkehr, aber auch etwas breitere Straße.
    Zusammengenommen auch niedrige Kategorie. (+ Achtung, Einbahnstraße!)
+   -> DONE
 
  * Landwehrkanalstraßen: gegen die Richtung mit nur 5 km/h erlauben
    (Gehwege) (+ Achtung, Einbahnstraße -> Gehweg!)
@@ -2023,7 +2025,7 @@ Vielleicht mal einige Realworldbeispiele mit Stoppuhr messen?
 
 Weiterhin sollte in der CGI-Version angezeigt werden, dass man gegen
 die Einbahnstraße fährt bzw. schiebt (aber vielleicht nicht immer,
-siehe Beispiele oben).
+siehe Beispiele oben). -> DONE
 
 =item * (H3)
 
@@ -2466,22 +2468,6 @@ Routing-only-Informationen ablegen zu können. Z.B.
 In diesem Beispiel würde die Straße als Einbahnstraße dargestellt
 werden, aber im Routing als Schrittgeschwindigkeitstraße behandelt
 werden. Siehe auch nächstes Item.
-
-=item * (H5)
-
-Es sollte eine weitere Abgrenzung bei den Kategorien 1 (Einbahnstraße)
-und 2 (gesperrte Straße) geben, und zwar Einbahnstraßen/gesperrte
-Straßen, die man mit Schrittgeschwindigkeit passieren kann.
-Darstellung wäre also als Einbahnstraße, vielleicht mit einem
-speziellen Symbol dazu, und im Routing würde es als q4 angesehen
-werden. Dann könnte ich vielleicht auch die E<quot>1sE<quot>-Kategorie
-entfernen.
-
-In der Routingliste (bbbike.cgi und Perl/Tk) sollte ein entsprechender
-Text (E<quot>gegen die Einbahnstraße schiebenE<quot>) auftauchen.
-
-Ganz wichtig: Straßen wie B96a/Adlergestell, die wirklich nicht
-passierbar sind, sollen es auch bleiben! Be careful...
 
 =item * (H5)
 

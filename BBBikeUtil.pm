@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeUtil.pm,v 1.25 2008/02/01 21:13:48 eserte Exp $
+# $Id: BBBikeUtil.pm,v 1.27 2008/02/02 17:02:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeUtil;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.25 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
 
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
@@ -35,22 +35,32 @@ use constant STAT_MODTIME => 9;
 # REPO BEGIN
 # REPO NAME is_in_path /home/e/eserte/src/repository 
 # REPO MD5 ccab6618d5af7a1e314eb8e0e448ff2c
-
 sub is_in_path {
     my($prog) = @_;
-    return $prog if (file_name_is_absolute($prog) and -f $prog and -x $prog);
+    if (file_name_is_absolute($prog)) {
+	if ($^O eq 'MSWin32') {
+	    return $prog       if (-f $prog && -x $prog);
+	    return "$prog.bat" if (-f "$prog.bat" && -x "$prog.bat");
+	    return "$prog.com" if (-f "$prog.com" && -x "$prog.com");
+	    return "$prog.exe" if (-f "$prog.exe" && -x "$prog.exe");
+	    return "$prog.cmd" if (-f "$prog.cmd" && -x "$prog.cmd");
+	} else {
+	    return $prog if -f $prog and -x $prog;
+	}
+    }
     require Config;
-    # This does not work! %Config::Config = %Config::Config; # cease -w
-    my $foo = $Config::Config{'path_sep'}; # cease -w ...
+    %Config::Config = %Config::Config if 0; # cease -w
     my $sep = $Config::Config{'path_sep'} || ':';
     foreach (split(/$sep/o, $ENV{PATH})) {
 	if ($^O eq 'MSWin32') {
-	    return "$_\\$prog"
-		if (-x "$_\\$prog.bat" ||
-		    -x "$_\\$prog.com" ||
-		    -x "$_\\$prog.exe");
+	    # maybe use $ENV{PATHEXT} like maybe_command in ExtUtils/MM_Win32.pm?
+	    return "$_\\$prog"     if (-f "$_\\$prog" && -x "$_\\$prog");
+	    return "$_\\$prog.bat" if (-f "$_\\$prog.bat" && -x "$_\\$prog.bat");
+	    return "$_\\$prog.com" if (-f "$_\\$prog.com" && -x "$_\\$prog.com");
+	    return "$_\\$prog.exe" if (-f "$_\\$prog.exe" && -x "$_\\$prog.exe");
+	    return "$_\\$prog.cmd" if (-f "$_\\$prog.cmd" && -x "$_\\$prog.cmd");
 	} else {
-	    return "$_/$prog" if (-x "$_/$prog");
+	    return "$_/$prog" if (-x "$_/$prog" && !-d "$_/$prog");
 	}
     }
     undef;

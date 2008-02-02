@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: old_comments.t,v 1.12 2007/12/23 15:32:57 eserte Exp $
+# $Id: old_comments.t,v 1.13 2008/02/02 10:45:24 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -16,10 +16,10 @@ BEGIN {
     if (!eval q{
 	use Test::More;
 	use LWP::UserAgent;
-	use YAML;
+	use YAML::Syck qw(Load Dump);
 	1;
     }) {
-	print "1..0 # skip: no Test::More, LWP::UserAgent and/or YAML modules\n";
+	print "1..0 # skip: no Test::More, LWP::UserAgent and/or YAML::Syck modules\n";
 	exit;
     }
 }
@@ -59,7 +59,7 @@ if (!@urls) {
 my @tests = (
 	     # Czeminskistr. -> Julius-Leber-Brücke 
 	     ["7603,8911", "7497,8916", <<EOF, "CP;"],
-- {}
+- 'gegen die Einbahnstraßenrichtung, ggfs. schieben': 1
 - Als Julius-Leber-Brücke ausgeschildert: 1
 - {}
 EOF
@@ -91,14 +91,12 @@ EOF
 - {}
 EOF
 
-## cannot use because of YAML bug in 0.62, rt bug number will follow...
-# 	     # Belziger Str.
-# 	     # XXX Reordered first hash, because otherwise YAML 0.39 would fail!
-# 	     ["7315,9156", "6977,8934", <<EOF, "CS (Route)"],
-# - 'RR1 (Schloßplatz - Wannsee)': 1
-#   'mäßiges, teilweise holpriges Kopfsteinpflaster (Teilstrecke)': 1
-# - {}
-# EOF
+ 	     # Belziger Str.
+	     ["7315,9156", "6977,8934", <<EOF, "CS (Route)"],
+- 'RR1': 1
+  'mäßiges, teilweise holpriges Kopfsteinpflaster (Teilstrecke)': 1
+- {}
+EOF
 
 	     # Rathenauplatz
 	     [qw(2392,9715 2379,9665), <<EOF, "CP2; am Startpunkt"],
@@ -166,15 +164,15 @@ for my $cgiurl (@urls) {
 	my $url = "$cgiurl?$qs";
 	my $res = $ua->get($url);
 	ok($res->is_success, "Index $inx, $from - $to");
-	my $got = YAML::Load($res->content);
+	my $got = Load($res->content);
 	my $comments = [ map {
 	    +{ map { ($_,1) } split /;\s+/, $_->{Comment} };
 	} @{$got->{Route}} ];
-	is_deeply($comments, YAML::Load("--- #YAML:1.0\n$expected"), $desc) or do {
+	is_deeply($comments, Load("--- #YAML:1.0\n$expected"), $desc) or do {
 	    if ($v) {
 		diag Dumper $got;
 	    }
-	    diag YAML::Dump($comments);
+	    diag Dump($comments);
 	};
     }
 }

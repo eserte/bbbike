@@ -1,14 +1,19 @@
 #
-# $Id: Makefile,v 1.20 2008/01/19 19:42:35 eserte Exp $
+# $Id: Makefile,v 1.24 2008/02/02 22:11:33 eserte Exp $
 #
 
 # läuft nicht mit 5.004 oder älter
 
-PERL?=	perl
+PERL?=		perl
+TEST_FILES=	*.t
 
 test:
 	LANG=C $(PERL) -w -I.. -I../lib -MTest::Harness -e \
-	    'BEGIN { if (!eval q{ use List::Util qw(shuffle); 1 }) { *shuffle = sub { @_ }; } } runtests(shuffle @ARGV)' *.t
+	    'BEGIN { if (!eval q{ use List::Util qw(shuffle); 1 }) { *shuffle = sub { @_ }; } } runtests(shuffle @ARGV)' $(TEST_FILES)
+
+test-no-cgi:
+	LANG=C $(PERL) -w -I.. -I../lib -MTest::Harness -e \
+	    'runtests(grep { !/^cgi/ && !/^wapcgi/ && !/^radzeit/ && !/^wwwdata/ } @ARGV)' $(TEST_FILES)
 
 interactive:
 	./cgi2.pl -v -netscape -today
@@ -22,6 +27,7 @@ sgmlindex:
 	(echo '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">'; (lynx -source http://www/~eserte/bbbike/cgi/bbbike.cgi | tail +2)) > /tmp/bla.html
 	nsgmls -m /usr/www/informatik/hypermedia/html/html4.0/sgml/CATALOG /tmp/bla.html 2>/tmp/errors >/dev/null
 
+######################################################################
 # Test BBBikeSOAP
 # There are four stages
 # * bbbikesoap-devel is for development
@@ -49,4 +55,11 @@ bbbikesoap-intern:
 # XXX noch nicht aktiv...
 bbbikesoap-intern-new:
 	./bbbikesoap.t -proxy http://localhost:8080/soapbbbike
+
+######################################################################
+
+# only for kira-pc:
+kira-test:
+	env BBBIKE_TEST_DRAW_ONLY_MODULES=GD/png,GD/jpeg,Imager/png,Imager/jpeg,SVG,PDF,BBBikeGoogleMaps \
+	    $(MAKE) test-no-cgi PERL=/cygdrive/c/Perl/bin/perl
 

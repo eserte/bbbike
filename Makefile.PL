@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.144 2008/01/31 22:31:59 eserte Exp $
+# $Id: Makefile.PL,v 1.145 2008/02/02 18:34:51 eserte Exp $
 
 use 5.005;
 
@@ -98,6 +98,8 @@ my @req_table =
    'alternativ für das Parsen und Erzeugen von GPX-Dateien, benötigt XML::Parser'],
   [qw/YAML	0	all	2	cgi/,
    'optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings'],
+  [qw/YAML::Syck	0	all	0	devel/,
+   'optional für die Testsuite, könnte auch YAML.pm in Zukunft ersetzen'],
 
   [qw/Mail::Mailer	1.53	unix	0	mail/,
    'falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will'],
@@ -193,6 +195,9 @@ my @req_table =
    'Für die alternative A*-Optimierung in XS/C'],
   [qw/DB_File::Lock	0	all	0	base/,
    'Same DB_File operations, used in Strassen::Index'],
+  # NOTE: perl-GPS is broken in ActivePerl 5.8.8, because
+  # Win32::SerialPort is not specified as a dependency
+  # in the ppm and also not available in ActivePerl at all
   [qw/GPS::Garmin	0	all	4	base/,
    'für GPS-Upload'],
   [qw/Geo::SpaceManager 0.91	all	2	base/,

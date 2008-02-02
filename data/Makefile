@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.174 2008/02/01 23:49:43 eserte Exp $
+# $Id: Makefile,v 2.175 2008/02/02 22:12:30 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -669,6 +669,7 @@ make_misc:
 storable:
 	for i in $(TARGETS); do \
 	    $(PERL) -I.. -I../lib ../Strassen/Storable.pm -v -u -f $$i $$i.st; \
+	    $(READABLE) $$i.st; \
 	done
 
 ######################################################################

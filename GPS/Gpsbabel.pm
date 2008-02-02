@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Gpsbabel.pm,v 1.6 2008/01/29 22:17:24 eserte Exp $
+# $Id: Gpsbabel.pm,v 1.11 2008/02/02 22:33:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -17,9 +17,8 @@ require GPS;
 push @ISA, 'GPS';
 
 use strict;
-use vars qw($VERSION $GPSBABEL);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
-$GPSBABEL = "gpsbabel" unless defined $GPSBABEL;
+use vars qw($VERSION $GPSBABEL $DEBUG);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(is_in_path);
 
@@ -35,7 +34,7 @@ sub magics {
 sub convert_to_route {
     my($self, $file, %args) = @_;
     if (!$self->gpsbabel_available) {
-	die "$GPSBABEL ist nicht installiert"; # Msg.pm
+	die "gpsbabel ist nicht installiert"; # Msg.pm
     }
 
     my($fh, $lines_ref) = $self->overread_trash($file, %args);
@@ -70,7 +69,7 @@ sub convert_to_route {
 	 title => undef, # XXX
 	 input_format => $input_format,
 	);
-    unlink $ofilename;
+    unlink $ofilename unless $File::Temp::KEEP_ALL;
 
     my @coords;
     $s->init;
@@ -88,8 +87,9 @@ sub convert_to_strassen_using_gpsbabel {
     my $title = $args{title} || $file;
     my $input_format = $args{input_format} || die "input_format is missing";
     require File::Temp;
-    my($ofh,$ofilename) = File::Temp::tempfile(UNLINK => 1);
+    my(undef,$ofilename) = File::Temp::tempfile(UNLINK => 1);
     # XXX need a patched gpsbabel (gpsbabel by default only outputs waypoint files, not tracks)
+    # XXX use run_gpsbabel
     system($GPSBABEL, "-t",
 	   "-i", $input_format, "-f", $file,
 	   "-o", "gpsman", "-F", $ofilename);
@@ -106,8 +106,8 @@ sub convert_to_strassen_using_gpsbabel {
     require Strassen::Gpsman;
     my $s = Strassen::Gpsman->new($o2filename, cat => "#000080");
 
-    unlink $ofilename;
-    unlink $o2filename;
+    unlink $ofilename unless $File::Temp::KEEP_ALL;
+    unlink $o2filename unless $File::Temp::KEEP_ALL;
 
     $s;
 }
@@ -130,26 +130,56 @@ sub strassen_to_gpsbabel {
     close $ifh
 	or die "While closing $ifile: $!";
 
-    my @cmd = ($GPSBABEL,
-	       "-i", "gpx", "-f", $ifile,
-	       "-o", $otype, "-F", $ofile,
-	      );
-    system @cmd;
-    $? == 0
-	or die "A problem occurred when running <@cmd>: exit code=$?";
+    $self->run_gpsbabel([($as eq 'track' ? '-t' : '-r'),
+			 "-i", "gpx", "-f", $ifile,
+			 "-o", $otype, "-F", $ofile,
+			]);
+    unlink $ifile unless $File::Temp::KEEP_ALL;
 }
 
 sub gpsbabel_available {
     my($self, $new_gpsbabel) = @_;
+    $new_gpsbabel = "gpsbabel" if !$new_gpsbabel && !$GPSBABEL;
+    local $ENV{PATH} = $ENV{PATH};
+    if ($^O eq 'MSWin32') {
+	# There's no fixed installation location for gpsbabel under Windows:
+	$ENV{PATH} .= ";C:\\Program files\\gpsbabel-1.3.4";
+    }
     if ($new_gpsbabel) {
-	if (is_in_path($new_gpsbabel)) {
-	    $GPSBABEL = $new_gpsbabel;
+	my $found_new_gpsbabel = is_in_path($new_gpsbabel);
+	if ($found_new_gpsbabel) {
+	    $GPSBABEL = $found_new_gpsbabel;
 	    return $GPSBABEL;
 	} else {
-	    return 0;
+	    return undef;
 	}
     } else {
 	return is_in_path($GPSBABEL);
+    }
+}
+
+sub run_gpsbabel {
+    my($self, $cmdargs) = @_;
+    $self->gpsbabel_available; # make sure it is available
+    my @cmd = ($GPSBABEL, @$cmdargs);
+    warn "Run\n    @cmd\n    ...\n" if $DEBUG;
+    my $stderr;
+    if (eval { require IPC::Run; 1 }) {
+	my($stdout,$stdin);
+	my $disable_tk_stderr = defined &Tk::Exists && Tk::Exists($main::top) && $main::top->can("RedirectStderr") && Tk::Exists($main::top->StderrWindow);
+	$main::top->RedirectStderr(0) if $disable_tk_stderr;
+	IPC::Run::run(\@cmd, \$stdin, \$stdout, \$stderr);
+	$main::top->RedirectStderr(1) if $disable_tk_stderr;
+    } else {
+	system @cmd;
+    }
+    if ($? != 0) {
+	my $msg = "A problem occurred when running <@cmd>:\n$stderr\nExit code=$?";
+	if (defined &main::status_message) {
+	    main::status_message($msg, "die");
+	} else {
+	    die $msg;
+	}
     }
 }
 

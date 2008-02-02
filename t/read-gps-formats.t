@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: read-gps-formats.t,v 1.9 2008/01/19 19:41:56 eserte Exp $
+# $Id: read-gps-formats.t,v 1.11 2008/02/02 22:09:30 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -72,7 +72,7 @@ for my $def (@gps_formats) {
     print STDERR "$file ($fmt)...\n" if $v;
  SKIP: {
 	my $tests = 2;
-	skip("File $file not available", $tests) if !-f $file;
+	skip("File $file not available or readable", $tests) if !-f $file || !open my($fh), $file;
 	my $ret = Route::load($file);
 	ok($ret && $ret->{RealCoords} &&
 	   ref $ret->{RealCoords} eq 'ARRAY' &&
@@ -93,7 +93,7 @@ for my $def (@strassen_formats) {
     print STDERR "$file ($fmt)...\n" if $v;
  SKIP: {
 	my $tests = 1;
-	skip("File $file not available", $tests) if !-f $file;
+	skip("File $file not available or readable", $tests) if !-f $file || !open my($fh), $file;
 	my $s = eval { Strassen->new($file) };
 	my $err = $@;
 	ok($s && scalar @{ $s->data }, "Format $fmt with file $file (Strassen)")

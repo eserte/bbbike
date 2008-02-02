@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: UAProf.pm,v 1.6 2007/10/14 20:30:39 eserte Exp $
+# $Id: UAProf.pm,v 1.7 2008/02/02 17:26:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BrowserInfo::UAProf;
 
 use strict;
 use vars qw($VERSION $DEBUG);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($class, %args) = @_;
@@ -63,13 +63,14 @@ sub get_cap {
     }
     
     $self->{uaprofdb} = $path . ".db";
-    if (-r $self->{uaprofdb}) {
-	require DB_File;
-	tie my %db, "DB_File", $self->{uaprofdb}, &Fcntl::O_RDONLY, 0644
-	    or die "Can't open $self->{uaprofdb}: $!";
-	if (exists $db{$cap}) {
-	    $self->{cached}{$cap} = $db{$cap};
-	    return $self->{cached}{$cap};
+    if (-r $self->{uaprofdb} && eval { require DB_File; 1 }) {
+	if (tie my %db, "DB_File", $self->{uaprofdb}, &Fcntl::O_RDONLY, 0644) {
+	    if (exists $db{$cap}) {
+		$self->{cached}{$cap} = $db{$cap};
+		return $self->{cached}{$cap};
+	    }
+	} else {
+	    warn "Can't open $self->{uaprofdb}: $!, cannot use cached value...";
 	}
     }
 
@@ -217,6 +218,7 @@ my $uaprof = __PACKAGE__->new
      uaprofdir => File::Spec->rel2abs(File::Basename::dirname(__FILE__)) . "/../../tmp/uaprof",
     );
 my $ret = eval { $uaprof->get_cap($cap) };
+warn $@ if $DEBUG && $@;
 if (!defined $ret) {
     $ret = "<undefined>";
 }

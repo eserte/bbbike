@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.33 2007/06/18 21:06:26 eserte Exp $
+# $Id: plz.t,v 1.34 2008/02/02 22:41:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004,2006,2007 Slaven Rezic. All rights reserved.
@@ -592,19 +592,22 @@ sub do_file {
 	    require File::Path;
 	    File::Path::mkpath([$tmpdir]);
 	}
-	open(T, ">$tmpdir/$file") or die "Can't create $tmpdir/$file: $!";
+	my $outfile = "$tmpdir/$file";
+	open(T, "> $outfile") or die "Can't create $outfile: $!";
 	print T $res;
 	close T;
+	chmod 0644, $outfile;
 	1;
     } else {
-	if (open(T, "$tmpdir/$file")) {
+	my $infile = "$tmpdir/$file";
+	if (open(T, $infile)) {
 	    my $buf = join '', <T>;
 	    close T;
 
 	    my $label = "Compare results with file $file";
 	    eq_or_diff($res, $buf, $label);
 	} else {
-	    warn "Can't open $tmpdir/$file: $!. Please use the -create option first and check the results in $tmpdir!\n";
+	    warn "Can't open $infile: $!. Please use the -create option first and check the results in $tmpdir!\n";
 	    ok(0);
 	}
     }

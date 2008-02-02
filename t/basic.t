@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: basic.t,v 1.18 2007/09/11 21:15:19 eserte Exp $
+# $Id: basic.t,v 1.20 2008/02/02 22:41:09 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -93,6 +93,8 @@ for my $f (@files) {
 	    if $f eq 'lib/Tk/RotX11Font.pm' && !eval { require X11::Protocol };
 	myskip "$f needs XML::LibXML", $tests_per_file
 	    if $f =~ m{^( Strassen/Touratech.pm
+			| Strassen/KML.pm
+			| GPS/KML.pm
 			)$}x && !eval { require XML::LibXML };
 	myskip "$f needs XML::LibXML or XML::Twig", $tests_per_file
 	    if $f =~ m{^( Strassen/GPX.pm
@@ -108,6 +110,9 @@ for my $f (@files) {
 		        | Strassen/ESRI.pm
 		        | ESRI/esri2bbd.pl
 		      )$}x && !eval { require Class::Accessor };
+	myskip "$f needs Template (Toolkit)", $tests_per_file
+	    if $f =~ m{^( BBBikeDraw/MapServer.pm
+		      )$}x && !eval { require Template; 1 };
 	myskip "$f needs Archive::Zip", $tests_per_file
 	    if $f =~ m{^( cgi/bbbike-data.cgi
 		      )$}x && !eval { require Archive::Zip; 1 };
@@ -224,6 +229,8 @@ for my $f (@files) {
 	    my $warn = "";
 	    for (split /\n/, $diag) {
 		next if / syntax OK/;
+		# This one seen with ActivePerl 5.8.8
+		next if $^O eq 'MSWin32' && /\QSet up gcc environment - 3.4.4 (cygming special, gdc 0.12, using dmd 0.125)/;
 		$warn .= $_;
 	    }
 	    is($warn, "", "Warnings " . ($can_w ? "" : "(only mandatory) ") . "in $f");

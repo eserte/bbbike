@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-gpsman.t,v 1.7 2006/08/04 06:21:28 eserte Exp $
+# $Id: strassen-gpsman.t,v 1.10 2008/02/02 22:11:16 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -56,12 +56,21 @@ SKIP: {
     my $trk = $trk[rand @trk];
     my $wpt = $wpt[rand @wpt];
 
-    my $s1 = Strassen->new($trk);
-    isa_ok($s1, "Strassen");
-    isa_ok($s1, "Strassen::Gpsman");
-    my $s2 = Strassen->new($wpt);
-    isa_ok($s2, "Strassen");
-    isa_ok($s2, "Strassen::Gpsman");
+ SKIP: {
+	skip("Permission denied for $trk", 2)
+	    if !open my($fh), $trk;
+	my $s1 = Strassen->new($trk);
+	isa_ok($s1, "Strassen");
+	isa_ok($s1, "Strassen::Gpsman");
+    }
+
+ SKIP: {
+	skip("Permission denied for $wpt", 2)
+	    if !open my($fh), $wpt;
+	my $s2 = eval { Strassen->new($wpt) };
+	isa_ok($s2, "Strassen");
+	isa_ok($s2, "Strassen::Gpsman");
+    }
 
     #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$s1, $s2],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 

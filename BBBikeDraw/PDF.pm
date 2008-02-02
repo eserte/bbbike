@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.45 2007/05/31 21:44:54 eserte Exp $
+# $Id: PDF.pm,v 2.47 2008/02/02 21:59:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.45 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.47 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -484,14 +484,15 @@ sub get_8bit_gif {
     eval {
 	require File::Basename;
 	require GD;
-	my $file_8bit = "/tmp/bbbikedraw_" . $< . "_pdf_8bit_" . File::Basename::basename($file);
+	my $tmpdir = eval { require File::Spec; File::Spec->tmpdir } || "/tmp";
+	my $file_8bit = "$tmpdir/bbbikedraw_" . $< . "_pdf_8bit_" . File::Basename::basename($file);
 	if (-r $file_8bit) {
 	    $file = $file_8bit;
 	} else {
 	    my $img = GD::Image->newFromGif($file)
 		or die "Can't read $file as image: $!";
 	    for my $i ($img->colorsTotal .. 256) {
-		$img->colorAllocate(0,0,0);
+		$img->colorAllocate(0,0,$i>255?255:$i);
 	    }
 	    open(OFH, ">$file_8bit")
 		or die "Can't write to $file_8bit: $!";

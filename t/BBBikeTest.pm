@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.30 2008/01/29 22:16:56 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.32 2008/02/02 20:10:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006,2008 Slaven Rezic. All rights reserved.
@@ -217,24 +217,29 @@ sub tidy_check {
 	require File::Temp;
 	my($fh, $filename) = File::Temp::tempfile(SUFFIX => ".html",
 						  UNLINK => 1);
+	my(undef, $errfilename) = File::Temp::tempfile(SUFFIX => "_tidy.err",
+						       UNLINK => 1);
 	if ($args{-charset}) {
 	    eval 'binmode($fh, ":encoding($args{-charset})");';
 	    warn $@ if $@;
 	}
 	print $fh $content;
-	system("tidy", "-f", "/tmp/tidy.err", "-q", "-e", $filename);
+	system("tidy", "-f", $errfilename, "-q", "-e", $filename);
 	Test::More::cmp_ok($?>>8, "<", 2, $test_name)
 		or do {
 		    my $diag = "";
 		    if ($args{-uri}) {
 			$diag .= "$args{-uri}: ";
 		    }
-		    open(DIAG, "/tmp/tidy.err") or die;
+		    open(DIAG, $errfilename)
+			or die "Can't $errfilename: $!";
 		    local $/ = undef;
 		    $diag .= <DIAG>;
 		    close DIAG;
 		    Test::More::diag($diag);
 		};
+	unlink $filename;
+	unlink $errfilename;
     }
 }
 
@@ -259,7 +264,10 @@ sub xmllint_string {
 	if ($schema) {
 	    $cmd .= " --schema $schema";
 	}
-	$cmd .= " - 2>$errfile";
+	$cmd .= " - ";
+	if ($^O ne 'MSWin32') {
+	    $cmd .= "2>$errfile";
+	}
 	warn $cmd if $debug;
 	open(my $XMLLINT, "| $cmd")
 	    or die "Error while opening xmllint: $!";
@@ -281,6 +289,7 @@ sub xmllint_string {
 		Test::More::diag($content);
 	    }
 	};
+	unlink $errfile;
     }
 }
 
@@ -353,6 +362,7 @@ sub failed_long_data {
     }
     print $fh $dump;
     close $fh;
+    unlink $filename;
     0;
 }
 

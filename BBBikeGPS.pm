@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.24 2008/01/27 13:18:36 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.25 2008/02/02 20:45:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -31,7 +31,7 @@ use Msg; # This call has to be in bbbike!
 }
 
 sub BBBikeGPS::gps_interface {
-    my($label, $mod, %args) = @_;
+    my($mod, %args) = @_;
 
     my $noloading = delete $args{-noloading};
 
@@ -1367,6 +1367,50 @@ sub tk_interface {
 	    $s->push([$wpt->{ident}, [ join(",", $wpt->{lon}, $wpt->{lat}) ], "X" ]);
 	}
 	$s->bbd2gpx(-as => "route");
+    }
+
+}
+
+{
+    package GPS::BBBikeGPS::GpsbabelSend;
+    require GPS;
+    push @GPS::BBBikeGPS::GpsbabelSend::ISA, 'GPS';
+    
+    sub has_gps_settings { 1 }
+
+    sub transfer_to_file { 0 }
+
+    sub ok_label { "Upload zum Garmin" } # M/Mfmt XXX
+
+    sub tk_interface {
+	my($self, %args) = @_;
+	BBBikeGPS::tk_interface($self, %args);
+    }
+
+    sub convert_from_route {
+	my($self, $route, %args) = @_;
+	require File::Temp;
+	require GPS::Gpsbabel;
+	require GPS::DirectGarmin;
+	require Strassen::Core;
+	require Strassen::GPX;
+	my $dg = GPS::DirectGarmin->new; # only for simplify_route
+	my $simplified_route = $dg->simplify_route($route, %args);
+	my $s = Strassen::GPX->new;
+	$s->set_global_directives({ map => ["polar"] });
+	for my $wpt (@{ $simplified_route->{wpt} }) {
+	    $s->push([$wpt->{ident}, [ join(",", $wpt->{lon}, $wpt->{lat}) ], "X" ]);
+	}
+	my($ofh,$ofile) = File::Temp::tempfile(SUFFIX => ".gpx",
+					       UNLINK => 1);
+	main::status_message("Could not create temporary file: $!", "die") if !$ofh;
+	print $ofh $s->bbd2gpx(-as => "route");
+	close $ofh;
+	my $gpsb = GPS::Gpsbabel->new;
+	my $dev = !$args{'-gpsdevice'} || $args{'-gpsdevice'} =~ /usb/i ? "usb:" : $args{'-gpsdevice'};
+	$gpsb->run_gpsbabel(["-i", "gpx", "-f", $ofile,
+			     "-o", "garmin", "-F", $dev,
+			    ]);
     }
 
 }

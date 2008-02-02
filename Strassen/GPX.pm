@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GPX.pm,v 1.18 2008/01/28 23:52:49 eserte Exp $
+# $Id: GPX.pm,v 1.19 2008/02/02 22:40:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::GPX;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Core;
 
@@ -271,12 +271,14 @@ sub _bbd2gpx_libxml {
     my($self, %args) = @_;
     my $xy2longlat = delete $args{xy2longlat};
     my $meta = delete $args{-meta} || {};
+    my $as = delete $args{-as} || 'track';
 
     my $has_encode = eval { require Encode; 1 };
     if (!$has_encode) {
 	warn "WARN: No Encode.pm module available, non-ascii characters may be broken...\n";
     }
     my $has_utf8_upgrade = $] >= 5.008;
+
 
     $self->init;
     my @wpt;
@@ -294,6 +296,15 @@ sub _bbd2gpx_libxml {
 		 name => $name,
 		 coords => [ $xy2longlat->($r->[Strassen::COORDS][0]) ],
 		};
+	} elsif ($as eq 'route') {
+	    my $i = 0;
+	    push @wpt,
+		map {
+		    +{
+		      name => $name.$i++,
+		      coords => [ $xy2longlat->($_) ]
+		     }
+		} @{ $r->[Strassen::COORDS] };
 	} else {
 	    push @trkseg,
 		{
@@ -316,7 +327,7 @@ sub _bbd2gpx_libxml {
     $gpx->setNamespace("http://www.topografix.com/GPX/1/1");
     $gpx->setAttribute("xsi:schemaLocation", "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd");
 
-    if ($args{-as} && $args{-as} eq 'route') {
+    if ($as eq 'route') {
 	my $rtexml = $gpx->addNewChild(undef, "rte");
 	_add_meta_attrs_libxml($rtexml, $meta);
 	for my $wpt (@wpt) {

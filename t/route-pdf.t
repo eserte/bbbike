@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: route-pdf.t,v 1.11 2005/04/06 21:03:03 eserte Exp $
+# $Id: route-pdf.t,v 1.12 2008/02/02 22:41:38 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -27,9 +27,10 @@ use BBBikeTest;
 BEGIN {
     if (!eval q{
 	use Test::More;
+	use File::Temp qw(tempfile);
 	1;
     }) {
-	print "1..0 # skip: no Test::More module\n";
+	print "1..0 # skip: no Test::More and/or File::Temp module(s)\n";
 	exit;
     }
 }
@@ -41,7 +42,8 @@ if (!GetOptions(get_std_opts(qw(display pdfprog)))) {
     die "usage: $0 [-pdfprog pdfviewer] [-display]";
 }
 
-my $pdffile = "/tmp/test.pdf";
+my(undef, $pdffile) = tempfile(SUFFIX => "_test.pdf",
+			       UNLINK => 1);
 
 my @arg;
 # if ($do_display && $pdf_prog eq 'gv') {

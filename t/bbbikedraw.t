@@ -2,9 +2,16 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.28 2007/04/13 20:33:02 eserte Exp $
+# $Id: bbbikedraw.t,v 1.30 2008/02/02 20:51:27 eserte Exp $
 # Author: Slaven Rezic
 #
+
+# ActivePerl 5.8.8 information
+# * GD not available
+# * Imager available, but built without png and jpeg support,
+#   so basically useless
+# * Image::Magick not available
+# * MapServer backend needs mapserver binary
 
 use strict;
 
@@ -82,6 +89,10 @@ my $do_multiroute = 0;
 
 my @only_modules;
 
+if ($ENV{BBBIKE_TEST_DRAW_ONLY_MODULES}) {
+    @only_modules = split /,/, $ENV{BBBIKE_TEST_DRAW_ONLY_MODULES};
+}
+
 if (!GetOptions(get_std_opts("display"),
 		"displayall!" => \$do_display_all,
 		"save!" => \$do_save,
@@ -116,6 +127,8 @@ if (!GetOptions(get_std_opts("display"),
 		  possible.
 -noroute:	  Do not draw route, so using just the bbox.
 -geometry wxh:    Default is $geometry.
+-only module:     Test only the given module (may be set multiple times).
+                  Can also be set with the environment variable BBBIKE_TEST_DRAW_ONLY_MODULES
 ";
 }
 

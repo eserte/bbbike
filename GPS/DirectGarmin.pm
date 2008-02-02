@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.37 2007/12/27 15:02:43 eserte Exp $
+# $Id: DirectGarmin.pm,v 1.38 2008/02/02 17:06:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -282,10 +282,11 @@ sub simplify_route {
 
     my @path;
     my $obj_type;
-    if ($args{-routetoname}) {
+    my $routetoname = $args{-routetoname};
+    if ($routetoname) {
 	@path = map {
 	    $route->path->[$_->[&StrassenNetz::ROUTE_ARRAYINX][0]]
-	} @{$args{-routetoname}};
+	} @$routetoname;
 	push @path, $route->path->[-1]; # add goal node
 	$obj_type = 'routetoname';
     } else {
@@ -314,9 +315,21 @@ sub simplify_route {
 	    @cross_streets = @{ $crossings{$xy_string} };
 	}
 
+	my $short_dir   = '';
 	if ($obj_type eq 'routetoname') {
-	    my $main_street = $args{-routetoname}->[$n][&StrassenNetz::ROUTE_NAME];
-	    my $prev_street = $args{-routetoname}->[$n-1][&StrassenNetz::ROUTE_NAME] if $n > 0;
+	    my $this_street_info = $routetoname->[$n];
+	    my $prev_street_info = $routetoname->[$n-1];
+	    my $main_street = $this_street_info->[&StrassenNetz::ROUTE_NAME];
+	    my $prev_street = $prev_street_info->[&StrassenNetz::ROUTE_NAME] if $n > 0;
+	    # The < or > prefix for showing the direction
+	    # XXX should use a better "situation_at_point" function
+	    if ($waypointcharset eq 'latin1' && ($prev_street_info->[&StrassenNetz::ROUTE_ANGLE]||0) >= 30) {
+		if      ($prev_street_info->[&StrassenNetz::ROUTE_DIR] eq 'l') {
+		    $short_dir = '<';
+		} elsif ($prev_street_info->[&StrassenNetz::ROUTE_DIR] eq 'r') {
+		    $short_dir = '>';
+		}
+	    }
 
 	    # test for simplify_route_to_name output:
 	    if (ref $main_street eq 'ARRAY') {
@@ -378,7 +391,7 @@ sub simplify_route {
 	    my $level = 0;
 	    while($level <= 3) {
 		# XXX the "+" character is not supported by all Garmin devices
-		$short_crossing = join("+", map { s/\s+\(.*\)\s*$//; Strasse::short($_, $level, "nodot") } grep { defined } @cross_streets);
+		$short_crossing = $short_dir . join("+", map { s/\s+\(.*\)\s*$//; Strasse::short($_, $level, "nodot") } grep { defined } @cross_streets);
 		if ($waypointcharset ne 'latin1') {
 		    $short_crossing = _eliminate_umlauts($short_crossing);
 		}

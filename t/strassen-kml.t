@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-kml.t,v 1.9 2008/01/21 23:13:45 eserte Exp $
+# $Id: strassen-kml.t,v 1.10 2008/02/02 20:37:47 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -34,7 +34,8 @@ use BBBikeTest;
 
 plan tests => 22;
 
-use_ok("Strassen::KML");
+use_ok("Strassen::KML")
+    or exit 1; # avoid recursive calls to Strassen::new
 my $s = Strassen::KML->new;
 isa_ok($s, "Strassen::KML");
 isa_ok($s, "Strassen");

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-dbfile-btree.t,v 1.3 2004/03/21 23:10:55 eserte Exp $
+# $Id: strassen-dbfile-btree.t,v 1.4 2008/02/02 22:41:38 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -15,18 +15,20 @@ use lib ("$FindBin::RealBin/..",
 
 BEGIN {
     if (!eval q{
+	use File::Temp qw(tempfile);
 	use Test;
 	use Strassen::DB_File_Btree;
 	1;
     }) {
-	print "1..0 # skip: no Test/DB_File modules\n";
+	print "1..0 # skip: no Test/DB_File/File::Temp modules\n";
 	exit;
     }
 }
 
 BEGIN { plan tests => 17 }
 
-my $tmpfile = "/tmp/test-dbfile-btree.db";
+my(undef, $tmpfile) = tempfile(SUFFIX => "test-dbfile-btree.db",
+			       UNLINK => 1);
 
 my $s = Strassen->new("strassen");
 Strassen::DB_File_Btree::convert($s, $tmpfile);

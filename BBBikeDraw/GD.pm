@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.58 2007/12/23 16:20:06 eserte Exp $
+# $Id: GD.pm,v 1.59 2008/02/02 21:47:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -40,7 +40,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.58 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.59 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush, %thickness, %outline_thickness);
 
@@ -676,6 +676,7 @@ sub draw_map {
 	(defined &GD::Image::stringFT || defined &GD::Image::stringTTF)) {
 	eval {
 	    my $ttf = $TTF_STREET;
+	    local $^W = -r $ttf; # no warnings if ttf could not be found...
 
 	    my $fontsize = 10;
 	    $Tk::RotFont::NO_X11 = 1;
