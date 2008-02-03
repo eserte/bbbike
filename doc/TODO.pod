@@ -2621,6 +2621,26 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (M3) (bug)
+
+Wenn man in der Straﬂenlistenauswahl die E<quot>Potsdamer Str.
+(Potsdam)E<quot> ausw‰hlt, so erscheint ein Fehler
+
+    [Sun Feb  3 23:29:41 2008] bbbike.cgi: Fehler: Ziel <Potsdamer Str. (Potsdam)/position > kann nicht zugeordnet werden.
+
+im error_log, aber das System scheint sich doch zu fangen und geht zum
+n‰chsten Formular ¸ber. Meine Vermutung: die Straﬂe existiert in
+landstrassen als E<quot>Potsdamer Str. (B273) (Potsdam)E<quot>, aber
+in Potsdam.coords.data ohne die Bundesstraﬂenbezeichnung. Vielleicht
+muss ich die richtige strip_*-Funktion an der richtigen Stelle
+anwenden.
+
+Vielleicht auch systematisch mal schauen: 
+
+    grep "kann nicht zugeord" /var/www/logs/radzeit.de-error_log
+
+Kam 100x in den letzten 12 Monaten vor.
+
 =item * (M5) (bug)
 
 Wenn auf der ‹bersichtskarte eine Straﬂe auﬂerhalb Berlins aber in der
