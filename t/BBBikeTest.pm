@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.32 2008/02/02 20:10:37 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.34 2008/02/03 20:33:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006,2008 Slaven Rezic. All rights reserved.
@@ -216,7 +216,7 @@ sub tidy_check {
 	}
 	require File::Temp;
 	my($fh, $filename) = File::Temp::tempfile(SUFFIX => ".html",
-						  UNLINK => 1);
+						  UNLINK => 0);
 	my(undef, $errfilename) = File::Temp::tempfile(SUFFIX => "_tidy.err",
 						       UNLINK => 1);
 	if ($args{-charset}) {
@@ -225,21 +225,25 @@ sub tidy_check {
 	}
 	print $fh $content;
 	system("tidy", "-f", $errfilename, "-q", "-e", $filename);
-	Test::More::cmp_ok($?>>8, "<", 2, $test_name)
-		or do {
-		    my $diag = "";
-		    if ($args{-uri}) {
-			$diag .= "$args{-uri}: ";
-		    }
-		    open(DIAG, $errfilename)
-			or die "Can't $errfilename: $!";
-		    local $/ = undef;
-		    $diag .= <DIAG>;
-		    close DIAG;
-		    Test::More::diag($diag);
-		};
-	unlink $filename;
+	my $ok = Test::More::cmp_ok($?>>8, "<", 2, $test_name)
+	    or do {
+		my $diag = "";
+		if ($args{-uri}) {
+		    $diag .= "$args{-uri}: ";
+		}
+		open(DIAG, $errfilename)
+		    or die "Can't $errfilename: $!";
+		local $/ = undef;
+		$diag .= <DIAG>;
+		close DIAG;
+		$diag .= "\nHTML file is in: $filename\n";
+		Test::More::diag($diag);
+	    };
+	if ($ok) {
+	    unlink $filename;
+	}
 	unlink $errfilename;
+	$ok;
     }
 }
 
@@ -274,7 +278,7 @@ sub xmllint_string {
 	binmode $XMLLINT;
 	print $XMLLINT $content; # do not check for die
 	close $XMLLINT; # do not check for die, check $? later
-	Test::More::is($?, 0, $test_name) or do {
+	my $ok = Test::More::is($?, 0, $test_name) or do {
 	    seek($errfh,0,0);
 	    my $errorcontent = do { local $/; <$errfh> };
 	    $content = "Errors:\n$errorcontent\nXML:\n$content";
@@ -290,6 +294,7 @@ sub xmllint_string {
 	    }
 	};
 	unlink $errfile;
+	$ok;
     }
 }
 
@@ -338,7 +343,7 @@ sub kmllint_string {
  					 "kml21.xsd");
     if (!-r $kml_schema) {
 	if (!$shown_kml_schema_warning) {
-	    Test::More::diag("Local KML schema $kml_schema, fallback to remote schema...");
+	    Test::More::diag("Local KML schema $kml_schema cannot be found, fallback to remote schema...");
 	    $shown_kml_schema_warning = 1;
 	}
 	$kml_schema = "http://code.google.com/apis/kml/schema/kml21.xsd";
@@ -362,7 +367,6 @@ sub failed_long_data {
     }
     print $fh $dump;
     close $fh;
-    unlink $filename;
     0;
 }
 

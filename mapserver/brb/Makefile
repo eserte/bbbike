@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.60 2008/01/26 22:34:42 eserte Exp $
+# $Id: Makefile,v 1.61 2008/02/03 22:18:44 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -691,3 +691,6 @@ dist-spiff:
 # 32 bit system does not seem to be compatible on a 64 bit system. Be
 # cautious when deploying the mapserver data files to the radzeit server!
 
+# To configure the current (2008-02) SVN version on FreeBSD use
+#     ./configure --with-gd=/usr/local --with-pdf=/usr/local --with-png=/usr/local --with-jpeg=/usr/local --with-freetype=/usr/local --with-xpm=/usr/X11R6
+# Still problems with PNGs with alpha channels.

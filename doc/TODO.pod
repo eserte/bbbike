@@ -22,6 +22,33 @@ Legend:
 
 =over
 
+=item * (H4) (feature)
+
+The default street might appear by default in the street chooser (only
+for streets!).
+
+=item * (H4) (feature)
+
+Better interface for the center coordinate configuration entry, e.g.
+choosing the current map center, or letting the user choose the coord
+in the map.
+
+=item * (H4) (feature)
+
+Better interface for the center street configuration entry, i.e. use
+some kind of street chooser functionality (maybe browseentry style? or
+as a dialog?) Also, it is not clear what has currently precedence:
+center coordinate or center street?
+
+Question: let the user only choose Berlin streets or also streets
+outer Berlin?
+
+=item * (M4) (feature)
+
+GPS-Dialog: show a pre-generated route name. And check if the route
+number is useful for something (GPX may handle this, but maybe it's
+not worth the hassle i.e. could overwrite existing routes).
+
 =item * (M3) (feature)
 
 Introduce GPS device types for the GPS card in the option editor. This
@@ -3331,6 +3358,14 @@ LANG gesetzt) lösen.
 =head1 MapServer
 
 =over
+
+=item * (M3)
+
+Use new mapserver features like ANTIALIAS TRUE, WIDTH ... and probably
+more.
+
+But: this needs the newest mapserver (4.x, probably 5.x). That means:
+I probably need to switch to debian first.
 
 =item * (H4)
 

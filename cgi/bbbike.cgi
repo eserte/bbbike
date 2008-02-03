@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.76 2008/01/27 23:53:42 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.77 2008/02/03 20:41:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -715,7 +715,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.76 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.77 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -3992,9 +3992,10 @@ EOF
 		$line_fmt = "%s %s %s (ges.:%s)\n";
 	    } else {
 		$line_fmt = "%-13s %-24s %-31s %-8s";
-		if ($has_fragezeichen_routelist && !$printmode) {
-		    $line_fmt .= " %s";
-		}
+##XXX does not work:
+# 		if ($has_fragezeichen_routelist && !$printmode) {
+# 		    $line_fmt .= " %s";
+# 		}
 		$line_fmt .= "\n";
 	    }
 	    print "<pre>";
@@ -4049,7 +4050,7 @@ EOF
 	    }
 	    if (!$bi->{'can_table'}) {
 		printf $line_fmt,
-		  $entf, $richtung, string_kuerzen($strname, 31), $ges_entf_s;
+		    $entf, $richtung, string_kuerzen($strname, 31), $ges_entf_s;
 	    } else {
 		## XXX rechter Pfeil, sieht eigentlich schöner aus, aber wo ist es unterstützt?
 		#$richtung =~ s/=>/&#x2192;/g;
@@ -6680,7 +6681,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/01/27 23:53:42 $';
+    my $cgi_date = '$Date: 2008/02/03 20:41:39 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

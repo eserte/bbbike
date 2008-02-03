@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.175 2008/02/02 22:12:30 eserte Exp $
+# $Id: Makefile,v 2.176 2008/02/03 19:45:15 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1671,7 +1671,7 @@ do-doublechecks:	.doublecheck_strassen.tmp \
 .doublecheck_handicap_$(i):	handicap_$(i)-orig
 	-rm /tmp/handicap_$(i)-XXX
 	$(CONVERT2HAFAS) handicap_$(i)-orig > /tmp/handicap_$(i)-XXX
-	diff -I '#:.*temporary' -u handicap_$(i) /tmp/handicap_$(i)-XXX
+	diff -I '#:.*temporary' -I '::igndisp' -I '^#:$$' -u handicap_$(i) /tmp/handicap_$(i)-XXX
 	rm /tmp/handicap_$(i)-XXX
 	touch $@
 .endfor

@@ -850,6 +850,7 @@ END
    ];
 -%]
 
+[% IF MAPSERVER_VERSION >= 5 -%]
 LAYER
   NAME "Autobahnen"
   TYPE LINE
@@ -921,6 +922,7 @@ LAYER
     WMS_SRS "EPSG:4326"
   END
 END
+[% END -%]
 
 LAYER
   NAME "Straﬂen (Outline)"
@@ -1426,6 +1428,11 @@ LAYER
   CLASS
     EXPRESSION /^R[ABC]?$/
     MAXSCALE 20000
+[% IF MAPSERVER_VERSION < 5 -%]
+    COLOR 0 128 0
+    SYMBOL 'width'
+    SIZE 2
+[% ELSE -%]
     STYLE
 #      COLOR 102 102 102
       COLOR 0 128 0
@@ -1437,9 +1444,7 @@ LAYER
       SYMBOL 'rectangle-train'
       SIZE 2
     END
-#    COLOR 0 128 0
-#    SYMBOL 'width'
-#    SIZE 2
+[% END -%]
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
