@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: basic.t,v 1.20 2008/02/02 22:41:09 eserte Exp $
+# $Id: basic.t,v 1.20 2008/02/02 22:41:09 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -231,6 +231,7 @@ for my $f (@files) {
 		next if / syntax OK/;
 		# This one seen with ActivePerl 5.8.8
 		next if $^O eq 'MSWin32' && /\QSet up gcc environment - 3.4.4 (cygming special, gdc 0.12, using dmd 0.125)/;
+		next if $^O eq 'MSWin32' && /\QSet up gcc environment - 3.4.5 (mingw special)/;
 		$warn .= $_;
 	    }
 	    is($warn, "", "Warnings " . ($can_w ? "" : "(only mandatory) ") . "in $f");

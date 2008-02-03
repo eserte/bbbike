@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.25 2008/02/02 20:45:42 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.26 2008/02/03 18:59:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -1356,11 +1356,10 @@ sub tk_interface {
 
     sub convert_from_route {
 	my($self, $route, %args) = @_;
-	require GPS::DirectGarmin;
+	require Route::Simplify;
 	require Strassen::Core;
 	require Strassen::GPX;
-	my $dg = GPS::DirectGarmin->new; # only for simplify_route
-	my $simplified_route = $dg->simplify_route($route, %args);
+	my $simplified_route = $route->simplify_for_gps(%args);
 	my $s = Strassen::GPX->new;
 	$s->set_global_directives({ map => ["polar"] });
 	for my $wpt (@{ $simplified_route->{wpt} }) {
@@ -1391,11 +1390,10 @@ sub tk_interface {
 	my($self, $route, %args) = @_;
 	require File::Temp;
 	require GPS::Gpsbabel;
-	require GPS::DirectGarmin;
+	require Route::Simplify;
 	require Strassen::Core;
 	require Strassen::GPX;
-	my $dg = GPS::DirectGarmin->new; # only for simplify_route
-	my $simplified_route = $dg->simplify_route($route, %args);
+	my $simplified_route = $route->simplify_for_gps(%args);
 	my $s = Strassen::GPX->new;
 	$s->set_global_directives({ map => ["polar"] });
 	for my $wpt (@{ $simplified_route->{wpt} }) {
@@ -1408,7 +1406,8 @@ sub tk_interface {
 	close $ofh;
 	my $gpsb = GPS::Gpsbabel->new;
 	my $dev = !$args{'-gpsdevice'} || $args{'-gpsdevice'} =~ /usb/i ? "usb:" : $args{'-gpsdevice'};
-	$gpsb->run_gpsbabel(["-i", "gpx", "-f", $ofile,
+	$gpsb->run_gpsbabel(["-r",
+			     "-i", "gpx", "-f", $ofile,
 			     "-o", "garmin", "-F", $dev,
 			    ]);
     }

@@ -3227,7 +3227,7 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
     my $strlist_button = $misc_frame2->$Checkbutton
 	(image_or_text($strlist_photo, 'StrL'),
 	 -variable => \$show_strlist,
-	 -command => \&show_route_strname,
+	 -command => sub { show_route_strname() },
 	 )->grid(-row => $curr_row, -column => $col, -sticky => 's');
     $balloon->attach($strlist_button,
 		     -msg => M"Beschreibung der aktuellen Route");
@@ -3239,7 +3239,8 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 	(-label    => M"Routenliste",
 	 -accelerator => "Shift-B",
 	 -variable => \$show_strlist,
-	 -command  => \&show_route_strname);
+	 -command  => sub { show_route_strname() },
+	);
     $slbm->checkbutton
 	(-label    => M"Automatisches Anzeigen",
 	 -variable => \$auto_show_list,
@@ -3514,9 +3515,8 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 	} elsif ($fmt eq 'GPX (Route)') {
 	    $svm->command
 		(-label => $fmt,
-		 -command => sub {
-		     gps_interface('BBBikeGPS::GPXRoute', -noloading => 1);
-		 });
+		 -command => sub { save_route_as_optimized_gpx() },
+		);
 	} elsif ($fmt =~ /^esri/i) {
 	    if (-x "$FindBin::RealBin/miscsrc/bbd2esri" &&
 		-x "$FindBin::RealBin/miscsrc/bbr2bbd"
@@ -8976,6 +8976,11 @@ sub save_route_as_esri {
     }; warn $@ if $@;
     unlink $tmpfile2;
     unlink $tmpfile1;
+}
+
+### AutoLoad Sub
+sub save_route_as_optimized_gpx {
+    gps_interface('BBBikeGPS::GPXRoute', -noloading => 1);
 }
 
 ### AutoLoad Sub
@@ -16381,19 +16386,19 @@ sub show_route_strname {
 
     $f1->Checkbutton(-text => M"Kompakt",
 		     -variable => \$do_route_strnames_compact,
-		     -command => \&show_route_strname,
+		     -command => sub { show_route_strname() },
 		     -font => $font{'small'},
 		    )->pack(-side => 'left');
     if ($advanced) { # XXX funktioniert noch nicht so schoen intuitiv...
 	$f1->Checkbutton(-text => M"Orte einbinden",
 			 -variable => \$do_route_strnames_orte,
-			 -command => \&show_route_strname,
+			 -command => sub { show_route_strname() },
 			 -font => $font{'small'},
 			)->pack(-side => 'left');
     }
     $f1->Checkbutton(-text => M"Kommentare",
 		     -variable => \$do_route_strnames_comments,
-		     -command => \&show_route_strname,
+		     -command => sub { show_route_strname() },
 		     -font => $font{'small'},
 		    )->pack(-side => 'left');
 
@@ -16424,7 +16429,11 @@ sub show_route_strname {
        },
       )->pack(-side => 'left');
     $bf->Button
-      (-text => M("GPS (nur Garmin)"),
+      (-text => M"Sichern (GPX)",
+       -command => sub { save_route_as_optimized_gpx() },
+      )->pack(-side => "left");
+    $bf->Button
+      (-text => M("GPS (Garmin)"),
        -command => sub { send_route_to_gps() },
       )->pack(-side => 'left');
     # If there is a txt => palm converter and a palm transfer program,
@@ -19518,7 +19527,8 @@ sub export_visible_map {
     my $redisplay_toplevels;
     {
 	my %withdrawn_toplevels;
-	my @stackorder = $top->stackorder;
+	# $top->stackorder did not work under MSWin32 before Tk 804.028 (but ->can returned true!)
+	my @stackorder = $Tk::platform ne "MSWin32" || $Tk::VERSION >= 804.028 ? $top->stackorder : ();
 	$top->Walk(sub {
 		       my($w) = @_;
 		       if (Tk::Exists($w) && $w->isa("Tk::Wm") && eval { $w->state } eq 'normal') {
