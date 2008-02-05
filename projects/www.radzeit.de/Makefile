@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.108 2008/01/14 21:31:02 eserte Exp $
+# $Id: Makefile,v 1.108 2008/01/14 21:31:02 eserte Exp eserte $
 #
 
 # Targets:
@@ -181,7 +181,7 @@ TARGET=radzeit.herceg.de
       make(deploy-ixls-de)          || \
       make(rsync-ixls-de)
 TARGET=radzeit
-.elif make(rule-slaven1)
+.elif make(rule-slaven)
 # This is just a dummy:
 TARGET=radzeit
 .else
@@ -339,8 +339,8 @@ test-makefile:
 	${MAKE} -n deploy-local > /tmp/test-makefile.cmd
 	perl -e 'while(<ARGV>) {print STDERR "\a$$_> "; <STDIN>; system($$_) and warn $$?}' /tmp/test-makefile.cmd
 
-rule-slaven1:
-	${MAKE} ${.MAKEFLAGS} ${RULE} SSH_PROG_AND_ARGS="ssh -2 -p 5025" BBBIKE_RADZEIT_HOST=slaven1.radzeit.de
+rule-slaven:
+	${MAKE} ${.MAKEFLAGS} ${RULE} SSH_PROG_AND_ARGS="ssh -2 -p 22" BBBIKE_RADZEIT_HOST=slaven.radzeit.de
 
 ######################################################################
 # Sub targets

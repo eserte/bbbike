@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.77 2008/02/03 20:41:39 eserte Exp $
+# $Id: bbbike.cgi,v 8.78 2008/02/04 21:42:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -715,7 +715,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.77 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.78 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -6681,7 +6681,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/02/03 20:41:39 $';
+    my $cgi_date = '$Date: 2008/02/04 21:42:06 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
@@ -6736,7 +6736,7 @@ EOF
     print <<EOF;
 Verwendete Software:
 <ul>
-<li><a href="$perl_url">perl $]</a><a href="$perl_url"><img border=0 align=right src="http://www.perlfoundation.org/images/perl_powered.png" alt="Perl"></a>
+<li><a href="$perl_url">perl $]</a><a href="$perl_url"><img border=0 align=right src="http://www.perlfoundation.org//data/workspaces/perlfoundation/attachments/perl_trademark:20061112062117-1-29352/files/perl_powered-1.png" alt="Perl"></a>
 <li>perl-Module:<a href="$cpan"><img border=0 align=right src="http://theoryx5.uwinnipeg.ca/images/cpan.jpg" alt="CPAN"></a>
 <ul>
 <li><a href="${scpan}CGI">CGI $CGI::VERSION</a>

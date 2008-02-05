@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.221 2008/01/26 00:23:06 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.222 2008/02/05 20:33:08 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10392,-2980 10475,-3174
@@ -1323,9 +1323,9 @@ Lindenstr.: äußere Fahrstreifen mit Kopfsteinpflaster	Q2 22101,5064 22196,4847
 Lienhardweg: asphaltiert	Q0 23104,2014 23330,2061 23433,2085 23535,2111
 Bendigstr.: Kopfsteinpflaster	Q2 23433,2085 23494,1799
 Logauweg: Kopfsteinpflaster	Q2 23393,1777 23494,1799 23592,1817
-(Walter-Nicklisch-Promenade): glattes Verbundsteinpflaster	Q0 8290,15304 8321,15386
+(Walter-Nicklitz-Promenade): glattes Verbundsteinpflaster	Q0 8290,15304 8321,15386
 Pankebrücke: Holzbohlen	Q1 8321,15386 8290,15406
-(Walter-Nicklisch-Promenade): glattes Verbundsteinpflaster	Q0 8290,15406 8310,15449 8156,15614
+(Walter-Nicklitz-Promenade): glattes Verbundsteinpflaster	Q0 8290,15406 8310,15449 8156,15614
 Parkstr.: Asphalt mit Straßenschäden	Q1 9909,18333 10075,18472 10202,18579 10496,18704
 Eintrachtstr.: Asphalt mit Straßenschäden	Q1 10710,18393 10650,18544
 Hiddenseer Str.: Asphalt mit leichten Schäden	Q0 11655,15253 11822,15193
@@ -1338,7 +1338,7 @@ Zugang zum Pankeweg: Parkweg und kleinteiliges Kopfsteinpflaster	Q1 8486,16425 8
 Travemünder Str.: Kopfsteinpflaster, Uferweg Parkweg	Q1 8543,16364 8592,16406
 Travemünder Str.: Parkweg	Q1 8592,16406 8659,16494
 Travemünder Str.: Kopfsteinpflaster, Uferweg Parkweg	Q1 8659,16494 8759,16684
-(Pankeweg, teilweise als Walter-Nicklisch-Promenade gekennzeichnet): wechselnder Belag: asphaltiert, Verbundsteinpflaster, Parkweg	Q1 8759,16684 8776,16718 8836,16867 8904,17059 9027,17290 9131,17664 9084,17678 9140,17921
+(Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet): wechselnder Belag: asphaltiert, Verbundsteinpflaster, Parkweg	Q1 8759,16684 8776,16718 8836,16867 8904,17059 9027,17290 9131,17664 9084,17678 9140,17921
 (Pankeweg): Parkweg	Q1 8721,16689 8804,16881 8866,17075
 Hohenschönhausener Weg: asphaltiert	Q0 15611,18547 16317,18020
 Wuhlgartenweg: asphaltiert	Q0 20627,12162 20771,12149 21145,12116 21278,12131
@@ -1697,6 +1697,9 @@ Wassermannstr.: Asphaltbetondecke	Q0 21055,3415 20992,3493 20924,3577
 Margarete-Steffin-Str.: Asphalt	Q0 8292,13205 8406,13127 8525,12958
 Feldtmannstr.: asphaltiert	Q0 15239,17599 14754,17673
 (Kronprinzessinenweg/Havelchaussee - Schlachtensse): Waldweg, ca. 50m lange sandige Stelle, Wurzeln	Q3 -3296,3686 -3199,3592 -3398,3321 -3353,3298
+Am Schweizer Garten: Asphalt	Q0 11868,13646 12001,13863
+(Volkspark Friedrichshain): Parkweg	Q1 12161,13711 12141,13609 12115,13540
+Kadiner Str.: Asphalt	Q0 13520,11963 13599,12253
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 364,4829 319,4906 168,5092 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2240,6904 2116,6861 2054,6840 1975,6818
@@ -4088,10 +4091,10 @@ Weinbergstr.: Asphalt	Q0 22829,5920 22766,5840
 (Volkspark Friedrichshain): Asphalt	Q0 12771,13603 12737,13593 12727,13571 12582,13519 12483,13418
 (Volkspark Friedrichshain): Kopfsteinpflaster	Q2 12483,13418 12605,13356
 Ernst-Zinna-Weg: Kopfsteinpflaster	Q2 12605,13356 12622,13328 12614,13300 12572,13248 12564,13216 12582,13128
-(Volkspark Friedrichshain): Kopfsteinpflaster	Q2 12438,13387 12344,13320 12248,13254
-(Volkspark Friedrichshain): Kopfsteinpflaster	Q2 12382,13262 12344,13320 12290,13356 12176,13366 12148,13348
-(Volkspark Friedrichshain): Asphalt	Q0 12128,13604 12024,13581
-(Volkspark Friedrichshain): Kopfsteinpflaster	Q2 12024,13581 12052,13687
+(Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1 12325,13148 12344,13157 12372,13198 12382,13262 12344,13320 12290,13356 12176,13366 12148,13348
+(Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1 12438,13387 12344,13320 12248,13254
+(Volkspark Friedrichshain): Asphalt	Q0 12336,13646 12141,13609 12023,13598
+(Volkspark Friedrichshain): Kopfsteinpflaster	Q2 12023,13598 12038,13685
 (Zufahrt Landsberger Allee): Gehwegplatten, Beton	Q0 13433,13346 13397,13426 13574,13505
 Weisbachstr.: Asphalt	Q1 13562,13278 13610,13169
 Otto-Ostrowski-Str.: Asphalt	Q0 13708,13623 13769,13487
@@ -4120,7 +4123,7 @@ Hektorstr.: Asphalt	Q1 3189,10141 3206,10458
 Walter-Benjamin-Platz: Gehwegplatten	Q0 4256,10583 4381,10583
 Bregenzer Str.: Asphalt	Q1 4278,10262 4227,10014
 Maxdorfer Steig: Kopfsteinpflaster	Q1 4325,8998 4449,8999
-Am Friedrichshain: Asphalt	Q2 12052,13687 12022,13755 12046,13913
+Am Friedrichshain: Asphalt	Q2 12038,13685 12022,13755 12126,13893
 Vopeliuspfad: Kopfsteipflaster	Q2 1318,3009 1208,3211
 (Parkweg Dreipfuhlpark): Asphalt mit Löchern	Q1 1590,4309 1548,4168 1524,4054 1520,4006 1523,3904 1536,3780
 Westhafenstr.: Kopfsteinpflaster	Q2 6299,14660 6146,14656

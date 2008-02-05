@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.18 2007/11/12 22:58:42 eserte Exp $
+# $Id: cgihead2.t,v 1.19 2008/02/05 22:38:00 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -46,7 +46,8 @@ push @var, (qw(
 	       $BBBike::SF_DISTFILE_SOURCE
 	       $BBBike::SF_DISTFILE_WINDOWS
 	       $BBBike::SF_DISTFILE_DEBIAN
-	       $BBBike::DISTFILE_FREEBSD
+	       $BBBike::DISTFILE_FREEBSD_I386
+	       $BBBike::DISTFILE_FREEBSD_ALL
 	      ),
 	   );
 # Not HEADable:
