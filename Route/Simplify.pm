@@ -110,9 +110,11 @@ sub Route::simplify_for_gps {
 	    # XXX should use a better "situation_at_point" function
 	    if ($waypointcharset eq 'latin1' && ($prev_street_info->[&StrassenNetz::ROUTE_ANGLE]||0) >= 30) {
 		if      ($prev_street_info->[&StrassenNetz::ROUTE_DIR] eq 'l') {
-		    $short_dir = '<';
+		    #$short_dir = '<';
+		    $short_dir = "(-";
 		} elsif ($prev_street_info->[&StrassenNetz::ROUTE_DIR] eq 'r') {
-		    $short_dir = '>';
+		    #$short_dir = '>';
+		    $short_dir = "-)";
 		}
 	    }
 
