@@ -7,6 +7,7 @@ IF EXIST "c:\program files\bbbike\windows\5.6.1\bin\MSWin32-x86\perl" GOTO Siepe
 IF EXIST c:\perl\bin\perl GOTO Activeperl
 IF EXIST c:\strawberry\perl\bin\perl GOTO Strawberry
 echo "Cannot find any perl, fall through..."
+GOTO Sieperlold
 
 Sieperlold:
 c:\programme\bbbike\windows\5.6.1\bin\MSWin32-x86\perl -Ic:\programme\bbbike\windows\5.6.1\lib -Ic:\programme\bbbike\windows\site\5.6.1\lib bbbike %1 %2 %3 %4 %5 %6 %7 %8 %9
