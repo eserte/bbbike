@@ -273,8 +273,8 @@ Bendlerbrücke	Br 7595,11086 7579,11032
 Herkulesbrücke	Br 6880,11110 6882,11061 6873,11011
 Corneliusbrücke	Br 6582,11202 6606,11222 6630,11247
 Charlottenburger Brücke	Br 5383,11834 5475,11846
-#: XXX_indoor eigentlich zwei Brücken
-Brücken zur Schleuseninsel	Br 5794,11624 5835,11768
+Brücke zur Schleuseninsel	Br 5780,11622 5802,11672
+Schleuseninselbrücke	Br 5818,11722 5835,11768
 Marchbrücke	Br 5018,12322 4999,12289 4981,12252
 Dovebrücke	Br 4653,12550 4631,12520 4602,12488
 Röntgenbrücke	Br 4302,12664 4292,12545
@@ -360,9 +360,7 @@ Lange Brücke (Potsdam)	Br -12493,-1896 -12567,-1817
 Lange Brücke (Potsdam)	Br -12567,-1817 -12659,-1700 -12719,-1661
 Inselbrücke (Potsdam)	Br -12256,-1456 -12260,-1503
 Brüssower Str. (Prenzlau)	Br 39830,101921 40025,101987
-#: XXX_prog was ist mit Bahnstrecken? Noch kein check_neighbors vvv
-#	Br 7399,-7001 7558,-7093
-#	Br 2735,-6109 2459,-7518
+	Br 7399,-7001 7558,-7093
 Oder-Havel-Kanal über Bahnstrecke	Br 36800,50200 36936,50206
 Neppermin	Br 50574,171409 50615,171529
 Machnower Schleuse	Br -2632,-1358 -2614,-1434
@@ -371,7 +369,6 @@ Rammrathbrücke	Br -551,-731 -502,-803
 Knesebeckbrücke	Br 1453,-306 1460,-372
 Wublitzbrücke	Br -21300,767 -21221,764
 B101 (Elsterwerda)	Br 20772,-104623 20533,-104646
-#: XXX_prog ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ## wieder Berlin ...
 (Güterbahnhof Greifswalder Str.)	Br 12540,15063 12734,14943
 Hermann-Blankenstein-Str.	Tu 13886,13668 13858,13719

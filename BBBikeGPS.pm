@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.26 2008/02/03 18:59:29 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.27 2008/02/06 20:06:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -411,8 +411,9 @@ EOF
 	my $f = $cfc_top->Frame->pack(-anchor => "e");
 	$f->Button(Name => "ok",
 		   -command => sub { $weiter = 1 })->pack(-side => "left");
-	$f->Button(Name => "close",
-		   -command => sub { $weiter = -1 })->pack(-side => "left");
+	my $cb = $f->Button(Name => "close",
+			    -command => sub { $weiter = -1 })->pack(-side => "left");
+	$cfc_top->bind('<<CloseWin>>' => sub { $cb->invoke });
     }
 
     $cfc_top->OnDestroy(sub { $weiter = -1 });
@@ -1274,14 +1275,16 @@ sub tk_interface {
     my $weiter = 0;
     {
 	my $f = $t->Frame->grid(-columnspan => 2, -sticky => "ew");
+	my $cb;
 	Tk::grid($f->Button(-text => ($args{-test} ?
 				      $self->ok_test_label :
 				      $self->ok_label),
 			    -command => sub { $weiter = 1 }),
-		 $f->Button(Name => "cancel",
-			    -text => M"Abbruch",
-			    -command => sub { $weiter = -1 }),
+		 $cb = $f->Button(Name => "cancel",
+				  -text => M"Abbruch",
+				  -command => sub { $weiter = -1 }),
 		);
+	$t->bind('<<CloseWin>>' => sub { $cb->invoke });
     }
     $t->gridColumnconfigure($_, -weight => 1) for (0..1);
     $t->OnDestroy(sub { $weiter = -1 });

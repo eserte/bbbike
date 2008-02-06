@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.63 2008/01/31 21:05:02 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.63 2008/01/31 21:05:02 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2007,2008 Slaven Rezic. All rights reserved.
@@ -83,7 +83,7 @@ use vars qw(
      %p_regions %str_regions
      $init_from $init_to $coloring $route_dashed $route_arrowed $route_below
      $last_route_below
-     $public $public_config $want_wind $winddir $wind
+     $public $public_config $config_file $want_wind $winddir $wind
      $wind_v $wind_v_max $winddate
      $bp_obj $ua $proxy
      $orientation $wasserstadt $wasserumland $init_scope %act_value

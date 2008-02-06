@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Gpsbabel.pm,v 1.11 2008/02/02 22:33:32 eserte Exp $
+# $Id: Gpsbabel.pm,v 1.13 2008/02/06 20:03:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ push @ISA, 'GPS';
 
 use strict;
 use vars qw($VERSION $GPSBABEL $DEBUG);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(is_in_path);
 
@@ -88,11 +88,12 @@ sub convert_to_strassen_using_gpsbabel {
     my $input_format = $args{input_format} || die "input_format is missing";
     require File::Temp;
     my(undef,$ofilename) = File::Temp::tempfile(UNLINK => 1);
-    # XXX need a patched gpsbabel (gpsbabel by default only outputs waypoint files, not tracks)
-    # XXX use run_gpsbabel
-    system($GPSBABEL, "-t",
-	   "-i", $input_format, "-f", $file,
-	   "-o", "gpsman", "-F", $ofilename);
+    my @cmd = ("-t",
+	       "-i", $input_format, "-f", $file,
+	       "-o", "gpsman", "-F", $ofilename,
+	      );
+    warn "Run\n    @cmd\n    ...\n" if $DEBUG;
+    $self->run_gpsbabel([@cmd]);
     # Hack: set track name
     my($o2fh,$o2filename) = File::Temp::tempfile(UNLINK => 1);
     open(F, $ofilename) or die $!;
@@ -137,13 +138,16 @@ sub strassen_to_gpsbabel {
     unlink $ifile unless $File::Temp::KEEP_ALL;
 }
 
+# May be called also as a static method
 sub gpsbabel_available {
     my($self, $new_gpsbabel) = @_;
     $new_gpsbabel = "gpsbabel" if !$new_gpsbabel && !$GPSBABEL;
     local $ENV{PATH} = $ENV{PATH};
     if ($^O eq 'MSWin32') {
 	# There's no fixed installation location for gpsbabel under Windows:
-	$ENV{PATH} .= ";C:\\Program files\\gpsbabel-1.3.4";
+	$ENV{PATH} .= ";" . $self->gpsbabel_recommended_path;
+    } else {
+	$ENV{PATH} .= ";" . $self->gpsbabel_recommended_path;
     }
     if ($new_gpsbabel) {
 	my $found_new_gpsbabel = is_in_path($new_gpsbabel);
@@ -156,6 +160,20 @@ sub gpsbabel_available {
     } else {
 	return is_in_path($GPSBABEL);
     }
+}
+
+# May be called also as a static method
+sub gpsbabel_recommended_path {
+    if ($^O eq 'MSWin32') {
+	"C:\\Program files\\gpsbabel-1.3.4"
+    } else {
+	"$ENV{HOME}/.bbbike/external/gpsbabel-1.3.4";
+    }
+}
+
+# May be called also as a static method
+sub gpsbabel_download_location {
+    "http://sourceforge.net/project/showfiles.php?group_id=58972";
 }
 
 sub run_gpsbabel {

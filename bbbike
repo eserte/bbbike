@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.355 2008/02/01 23:40:05 eserte Exp eserte $
+# $Id: bbbike,v 3.358 2008/02/06 20:32:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -229,7 +229,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.355 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.358 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -3550,6 +3550,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		$svm->command
 		    (-label => $label,
 		     -command => sub { send_route_to_gps() },
+		     -accelerator => 'Ctrl-G',
 		    );
 	    } else {
 		$svm->command
@@ -5037,6 +5038,7 @@ speicherplatzsparender.",
 	  var => \&_set_public],
 	 ['publicconfig','!',undef, nogui => 1,
 	  var => \&_set_public],
+	 ['configfile','=s',undef, nogui => 1], # used only in pre_check_arguments
 	 ['v','!',0,	alias => [qw(verbose)],
 	  label => M"Verbose", var => \$verbose,
 	  longhelp => M"Die Variable \$verbose kann manuell auf 2 oder höher gesetzt werden, um die Anwendung wortreicher zu machen"],
@@ -5112,7 +5114,7 @@ speicherplatzsparender.",
 	     -filename => catfile($bbbike_configdir, ($public ? "config_publictest" : "config")),
 	    );
 	$opt->set_defaults;
-	$opt->load_options if !$public || $public_config; # force defaults
+	$opt->load_options($config_file) if !$public || $public_config; # force defaults
 	if (!$opt->get_options) {
 	    print $opt->usage;
 	    exit 1;
@@ -5151,12 +5153,17 @@ sub c_balloon_update {
 # Check for -public and -publicconfig options --- in this case do not
 # load the config file.
 sub pre_check_arguments {
-    foreach my $arg (@ARGV) {
+    for(my $arg_i=0; $arg_i<=$#ARGV; $arg_i++) {
+	my $arg = $ARGV[$arg_i];
 	if ($arg eq '-public') {
 	    $public = 1;
 	} elsif ($arg eq '-publicconfig') {
 	    $public = 1;
 	    $public_config = 1;
+	} elsif ($arg eq '-configfile') {
+	    $config_file = $ARGV[$arg_i+1];
+	    die "Expected argument for -configfile option" if !$config_file;
+	    $arg_i++;
 	}
     }
 }
@@ -6948,6 +6955,7 @@ sub set_bindings {
 		   search_anything();
 	       })
 	for ('<Control-Key-f>', '<Key-slash>');
+    $top->bind('<Control-g>' => sub { send_route_to_gps() });
     $top->bind('<Key-colon>' => sub {  my $e = $c->XEvent;
 				       my(%args);
 				       if ($e) {
@@ -8985,9 +8993,27 @@ sub save_route_as_optimized_gpx {
 
 ### AutoLoad Sub
 sub send_route_to_gps {
+    if (!@{ get_act_search_route() }) {
+	status_message(M"Keine Route", "infodlg");
+	return;
+    }
     if ($os eq 'win' && $gps_device eq 'USB') {
 	if ($devel_host) {
 	    status_message("NOTE: Fallback to gpsbabel, because there's no USB support in perl-GPS", "infodlg");
+	}
+	require GPS::Gpsbabel;
+	if (!GPS::Gpsbabel->gpsbabel_available) {
+	    my $recommended_path = GPS::Gpsbabel->gpsbabel_recommended_path;
+	    my $download_location = GPS::Gpsbabel->gpsbabel_download_location;
+	    # XXX use hypertext_widget
+	    status_message(<<EOF, "die");
+Das Programm gpsbabel wird zur Übertragung zum GPS-Gerät benötigt und muss noch installiert werden. gpsbabel gibt es hier zum Download:
+$download_location
+
+Die heruntergeladene .zip-Datei sollte im Verzeichnis
+$recommended_path
+ausgepackt werden.
+EOF
 	}
 	gps_interface('BBBikeGPS::GpsbabelSend', -noloading => 1);
     } else {
@@ -12734,30 +12760,7 @@ sub show_info {
 				    );
 	if (defined $info_top) {
 	    require Tk::ROText;
-	    $info_text = $info_top->Scrolled('ROText',
-					     -wrap => 'word',
-					     -scrollbars => 'osoe',
-					     -highlightthickness => 0,
-					     -borderwidth => 0,
-					     -width => 40,
-					     -height => 30,
-					     )->pack(-expand => 1, -fill => "both");
-	    # Hack as described in http://wiki.tcl.tk/6101
-	    my $info_real_text = $info_text->Subwidget("scrolled");
-	    $info_real_text->bindtags(["myTextTag", $info_real_text->bindtags]);
-	    $info_real_text->bind
-		("myTextTag",
-		 "<Button-3>",
-		 [sub {
-		      my($w,$x,$y) = @_;
-		      if (grep { /^link/ } $w->tagNames("\@$x,$y")) {
-			  Tk->break;
-		      }
-		  }, Ev("x"), Ev("y")]);
-
-	    $info_text->tagConfigure("bold", -font => $font{'bold'});
-	    $info_text->tagConfigure("fixed", -font => $font{'fixed'});
-	    $info_text->tagConfigure("iconindent", -lmargin1 => 16 + 2);
+	    $info_text = hypertext_widget($info_top);
 	    $info_top->Button(Name => 'close',
 			      -command => sub { $info_top->destroy },
 			     )->pack(-fill => "x");
@@ -13350,6 +13353,38 @@ EOF
 	    }
 	}
     }
+}
+
+sub hypertext_widget {
+    my($t, %args) = @_;
+
+    require Tk::ROText;
+    my $info_text = $t->Scrolled('ROText',
+				 -wrap => 'word',
+				 -scrollbars => 'osoe',
+				 -highlightthickness => 0,
+				 -borderwidth => 0,
+				 -width => 40,
+				 -height => 30,
+				)->pack(-expand => 1, -fill => "both");
+    # Hack as described in http://wiki.tcl.tk/6101
+    my $info_real_text = $info_text->Subwidget("scrolled");
+    $info_real_text->bindtags(["myTextTag", $info_real_text->bindtags]);
+    $info_real_text->bind
+	("myTextTag",
+	 "<Button-3>",
+	 [sub {
+	      my($w,$x,$y) = @_;
+	      if (grep { /^link/ } $w->tagNames("\@$x,$y")) {
+		  Tk->break;
+	      }
+	  }, Ev("x"), Ev("y")]);
+
+    $info_text->tagConfigure("bold", -font => $font{'bold'});
+    $info_text->tagConfigure("fixed", -font => $font{'fixed'});
+    $info_text->tagConfigure("iconindent", -lmargin1 => 16 + 2);
+
+    $info_text;    
 }
 
 ### AutoLoad Sub
@@ -16436,6 +16471,7 @@ sub show_route_strname {
       (-text => M("GPS (Garmin)"),
        -command => sub { send_route_to_gps() },
       )->pack(-side => 'left');
+    $t->bind('<Control-g>' => sub { send_route_to_gps() }); # XXX re-use toplevel binding?
     # If there is a txt => palm converter and a palm transfer program,
     # then show this button:
     require BBBikePalm;

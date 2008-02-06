@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsbabel.t,v 1.5 2008/02/02 22:32:58 eserte Exp $
+# $Id: gpsbabel.t,v 1.6 2008/02/06 19:42:12 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -31,7 +31,7 @@ BEGIN {
     }
 }
 
-my $real_tests = 6;
+my $real_tests = 9;
 plan tests => 2 + $real_tests;
 
 my $do_usb_test;
@@ -97,5 +97,29 @@ SKIP: {
 	$gpsb->strassen_to_gpsbabel($s, "garmin", "usb:", as => "route");
 	pass("Sent route...");
     }
+
+    {
+	my(undef, $gpxfile) = tempfile(UNLINK => 1,
+				       SUFFIX => ".gpx");
+	$gpsb->strassen_to_gpsbabel($s, "gpx", $gpxfile, as => "track");
+	my $s2 = $gpsb->convert_to_strassen_using_gpsbabel($gpxfile, title => "test title", input_format => "gpx");
+	isa_ok($s2, "Strassen", "Converted data is a Strassen object");
+	is_point_near($s2->get(0)->[Strassen::COORDS]->[0],
+		      $s->get(0)->[Strassen::COORDS]->[0], "Expected first coordinate");
+	is_point_near($s2->get($s2->count-1)->[Strassen::COORDS]->[-1],
+		      $s->get($s->count-1)->[Strassen::COORDS]->[-1], "Expected last coordinate");
+
+	unlink $gpxfile unless $keep;
+    }
+
 }
+
+sub is_point_near {
+    my($p1,$p2,$testname) = @_;
+    my($x1,$y1) = split /,/, $p1;
+    my($x2,$y2) = split /,/, $p2;
+    ok(abs($x1-$x2) <= 1 && abs($y1-$y2) <= 1, $testname)
+	or diag("$p1 is not near $p2");
+}
+
 __END__

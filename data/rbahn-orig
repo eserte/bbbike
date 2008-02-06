@@ -212,7 +212,8 @@ RE10,RB43	R 1833,-91339 2065,-92085 2337,-92297 2589,-92063 3238,-91701 5165,-91
 # Genshagener Kreuz - Ludwigsfelde
 RE4,RE5	RC 2162,-8565 1875,-10129 1617,-12044
 # Teltow - Birkengrund (bis Verbindungskurve)
-RE3,RE4,RE5	RC 3620,-2183 2735,-6109 2613,-6544
+RE3,RE4,RE5	RC 3620,-2183 2735,-6109
+RE3,RE4,RE5	RC::Br 2735,-6109 2613,-6544
 # Teltow - Birkengrund (ab Verbindungskurve)
 RE4,RE5	RC 2613,-6544 2459,-7518 2162,-8565
 # Teltow - Lichterfelde Ost
