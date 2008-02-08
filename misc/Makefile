@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.19 2007/03/31 20:10:11 eserte Exp $
+# $Id: Makefile,v 1.19 2007/03/31 20:10:11 eserte Exp eserte $
 #
 
 BBBIKEDIR?=		..
@@ -51,3 +51,5 @@ update-from-andreasm:
 	@echo "Are there any .rej files?"
 	cd $(HOME)/src/bbbike/data && make check all
 
+rsync-uaprof:
+	rsync -avz root@bbbike.radzeit.de:/var/www/domains/radzeit.de/www/BBBike/tmp/uaprof/ ../tmp/uaprof/

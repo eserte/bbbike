@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeUtil.pm,v 1.27 2008/02/02 17:02:43 eserte Exp $
+# $Id: BBBikeUtil.pm,v 1.29 2008/02/08 23:33:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeUtil;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
 
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
@@ -28,7 +28,7 @@ require Exporter;
 	     cp850_iso iso_cp850 nil
 	     kmh2ms
 	     STAT_MODTIME);
-@EXPORT_OK = qw(min max first ms2kmh);
+@EXPORT_OK = qw(min max first ms2kmh clone);
 
 use constant STAT_MODTIME => 9;
 
@@ -291,6 +291,24 @@ sub umlauts_to_german {
     $s =~ s/($uml_keys_rx)/$uml{$1}/go;
     $s;
 }
+
+BEGIN {
+    if (eval { require Storable; 1 }) {
+	*clone = sub ($) {
+	    my $o = shift;
+	    local $Storable::Deparse = $Storable::Deparse = 1;
+	    local $Storable::Eval = $Storable::Eval = 1;
+	    Storable::dclone($o);
+	};
+    } else {
+	*clone = sub ($) {
+	    my $o = shift;
+	    require Data::Dumper;
+	    eval Data::Dumper::Dumper($o);
+	};
+    }
+}
+    
 
 1;
 
