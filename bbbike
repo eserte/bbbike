@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.358 2008/02/06 20:32:27 eserte Exp eserte $
+# $Id: bbbike,v 3.359 2008/02/07 23:00:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -229,7 +229,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.358 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.359 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -293,30 +293,6 @@ if ($terminal_encoding && $] >= 5.008) {
 
 # enable DnD
 use Tk::DropSite;
-
-$tmpdir = $ENV{TMPDIR} || $ENV{TEMP} || "/tmp";
-if (! -d $tmpdir || ! -w $tmpdir) {
-    undef $tmpdir;
-    for my $fallback ('__SPEC__', "/temp", catfile($FindBin::RealBin, "tmp")) {
-	if ($fallback eq '__SPEC__') {
-	    if (eval { require File::Spec; 1 }) {
-		$fallback = File::Spec->tmpdir;
-	    } else {
-		warn $@;
-		next;
-	    }
-	}
-	if (-d $fallback && -w $fallback) {
-	    $tmpdir = $fallback;
-	    print STDERR Mfmt("Verwende Verzeichnis '%s' als temporäres Verzeichnis.", $tmpdir) . "\n";
-	    last;
-	}
-    }
-    if (!$tmpdir) {
-	$tmpdir = "/tmp";
-	print STDERR M("Achtung: es konnte kein schreibbares temporäres Verzeichnis gefunden werden. Unter Umständen sind einige Operationen nicht möglich.") . "\n";
-    }
-}
 
 # Var section: map scales and orientation
 set_landscape();
@@ -588,6 +564,7 @@ $oldpath = $bbbike_routedir;
 $save2_path = $home;
 
 {
+    # Hopefully robust determination of temporary directory
     die "\$bbbike_configdir is not set" if !defined $bbbike_configdir;
     my $cachedir = catfile($bbbike_configdir, "cache");
     if (!-d $cachedir) {
@@ -598,6 +575,37 @@ $save2_path = $home;
 		   : $tmpdir);
     $Karte::cache_root = $cache_root;
     $Strassen::Util::cachedir = $cache_root;
+}
+
+{
+    for my $_testdir ('__SPEC__',
+		      $ENV{TMPDIR},
+		      ($^O eq 'MSWin32' ? ($ENV{TEMP}, $ENV{TMP}) : ()),
+		      "/tmp",
+		      "/temp",
+		      '__CONFIG__',
+		     ) {
+	my $testdir = $_testdir;
+	next if !defined $testdir;
+	if ($_testdir eq '__SPEC__') {
+	    $testdir = eval { require File::Spec; File::Spec->tmpdir };
+	    next if !defined $testdir;
+	} elsif ($_testdir eq '__CONFIG__') {
+	    $testdir = catfile($bbbike_configdir, "tmp");
+	    if (!-d $testdir) {
+		mkdir $testdir, 0700;
+	    }
+	}
+
+	if (-d $testdir && -w $testdir) {
+	    $tmpdir = $testdir;
+	    last;
+	}
+    }
+    if (!defined $tmpdir) {
+	$tmpdir = "/tmp";
+	print STDERR M("Achtung: es konnte kein schreibbares temporäres Verzeichnis gefunden werden. Unter Umständen sind einige Operationen nicht möglich.") . "\n";
+    }
 }
 
 # XXX $do_wwwmap stuff is sort-of obsolete. Remove completely?
@@ -4904,17 +4912,21 @@ sub handle_options {
 	 M"WWW",
 	 ['www','!',0, # 1, wenn Wetterdaten vom Web geholt werden sollen
 	  label => M"WWW verwenden", var => \$do_www],
-	 ['wwwmap','!',undef,
-	  label => M"Karten übers WWW holen", var => \$do_wwwmap],
-	 ['wwwcache','!',0,
-	  label => M"Cache für WWW-Karten verwenden", var => \$use_wwwcache],
+	 (0&&$devel_host ?
+	  (
+	   ['wwwmap','!',undef,
+	    label => M"Karten übers WWW holen", var => \$do_wwwmap],
+	   ['wwwcache','!',0,
+	    label => M"Cache für WWW-Karten verwenden", var => \$use_wwwcache],
+	  ) : ()
+	 ),
+	 ['wwwslow','!',1,
+	  label => M"WWW ist langsam", var => \$www_is_slow],
+	 ['proxy','=s', undef,
+	  label => M"HTTP-Proxy (Format: http://host:port/)", var => \$proxy],
 	 ['cachedir','=s',undef,
 	  label => M"Cacheverzeichnis", subtype => 'dir',
 	  var => \$cache_root],
-	 ['wwwslow','!',1,
-	  label => M"WWW ist langsam", var => \$www_is_slow],
-	 ['proxy','=s',undef,
-	  label => M"HTTP-Proxy (Format: http://host:port/)", var => \$proxy],
 
 	 M"GPS",
 	 ['exporttxtmode','=i',EXPORT_TXT_SIMPLIFY_AUTO,
