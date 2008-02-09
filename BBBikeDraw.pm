@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.56 2007/12/23 16:19:49 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.57 2008/02/09 20:52:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION $bahn_bau_rx);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.56 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.57 $ =~ /(\d+)\.(\d+)/);
 
 $bahn_bau_rx = qr{^[SRU](0|Bau|G|P)$}; # auch ignorieren: Güterbahnen, Parkbahnen
 
@@ -853,7 +853,7 @@ sub is_in_map {
 }
 
 sub make_default_title {
-    my $self = shift;
+    my($self, %args) = @_;
     my $start = $self->{Startname};
     $start = $self->patch_string($start) if $self->can("patch_string");
     my $ziel  = $self->{Zielname};
@@ -867,7 +867,7 @@ sub make_default_title {
 	}
 	$$s = join("/", @s);
     }
-    my $s =  "$start -> $ziel";
+    my $s =  "$start " . ($args{Unicode} ? chr(0x2190) : "->") . " $ziel";
     $s;
 }
 

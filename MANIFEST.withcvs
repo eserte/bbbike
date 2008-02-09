@@ -1458,6 +1458,7 @@ port/windows/patches/3.16/bbbike_0.config
 projects/www.radzeit.de/.last/.keep_me
 projects/www.radzeit.de/Makefile
 projects/www.radzeit.de/etc/httpd.conf
+projects/www.radzeit.de/t/bbbikedraw_radzeit.t
 t/cgi-masstest.pl
 t/cgi2.pl
 t/makenet-bench.pl

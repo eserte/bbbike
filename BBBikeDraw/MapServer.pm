@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.39 2008/01/20 09:58:26 eserte Exp $
+# $Id: MapServer.pm,v 1.40 2008/02/09 16:49:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.39 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.40 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -233,7 +233,8 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.39 $ =~ /(\d+)\.(\d+)/);
 		    OnAmpeln OnOrte OnFaehren OnGrenzen OnFragezeichen OnObst
 		    OnRoute OnStartFlag OnGoalFlag OnMarkerPoint OnTitle
 		    OnRadwege OnQualitaet OnHandicap OnBlocked OnMount
-		    StartFlagPoints GoalFlagPoints MarkerPoint TitleText RouteCoords
+		    StartFlagPoints GoalFlagPoints MarkerPoint TitleText
+		    RouteCoords MultiRouteCoords
 		    MapserverDir MapserverRelurl MapserverUrl
 		    BbbikeDir ImageDir ImageSuffix FontsList
 		   );
@@ -567,10 +568,12 @@ sub draw_route {
     $im->OnRoute(1);
     $im->OnStartFlag(1);
     $im->OnGoalFlag(1);
-    my(@c1) = @{ $self->{C1} };
-    $im->RouteCoords(join " ", map { @$_ } @c1);
-    $im->StartFlagPoints(join " ", @{ $c1[0] });
-    $im->GoalFlagPoints(join " ", @{ $c1[-1] });
+    my @multi_c1 = @{ $self->{MultiC1} };
+    $im->MultiRouteCoords([map { join " ", map { @$_ } @$_ } @{ $self->{MultiC1} }]);
+    if (@multi_c1 > 1 || ($multi_c1[0] && @{$multi_c1[0]} > 1)) {
+	$im->StartFlagPoints(join " ", @{ $multi_c1[0][0] });
+	$im->GoalFlagPoints(join " ", @{ $multi_c1[-1][-1] });
+    }
     if ($self->{MarkerPoint}) {
 	$im->OnMarkerPoint(1);
 	$im->MarkerPoint(join " ", split /,/, $self->{MarkerPoint});

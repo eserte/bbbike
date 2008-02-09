@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.59 2008/02/02 21:47:23 eserte Exp $
+# $Id: GD.pm,v 1.62 2008/02/09 21:38:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Strassen;
 use Carp qw(confess);
 
 use vars qw($gd_version $VERSION $DEBUG @colors %color %outline_color %width
-	    $TTF_STREET $TTF_CITY);
+	    $TTF_STREET $TTF_CITY $TTF_TITLE);
 BEGIN { @colors =
          qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
 	    $darkblue $lightblue $rose $black $darkgrey $lightgreen);
@@ -40,7 +40,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.59 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.62 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush, %thickness, %outline_thickness);
 
@@ -54,40 +54,6 @@ sub init {
     my $self = shift;
 
     $self->SUPER::init();
-
- SEARCH_TTF_STREET: {
-	if (!defined $TTF_STREET) {
-	    for my $font (
-			  '/usr/X11R6/lib/X11/fonts/ttf/LucidaSansRegular.ttf',
-			  '/usr/X11R6/lib/X11/fonts/bitstream-vera/Vera.ttf',
-			  '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
-			  '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # found on Debian
-			 ) {
-		if (-r $font) {
-		    $TTF_STREET = $font;
-		    last SEARCH_TTF_STREET;
-		}
-	    }
-	    warn "Cannot find street font TTF_FONT" if $^W;
-	}
-    }
-
- SEARCH_TTF_CITY: {
-	if (!defined $TTF_CITY) {
-	    for my $font (
-			  '/usr/X11R6/lib/X11/fonts/Type1/lcdxsr.pfa',
-			  '/usr/X11R6/lib/X11/fonts/bitstream-vera/Vera.ttf',
-			  '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
-			  '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # found on Debian
-			 ) {
-		if (-r $font) {
-		    $TTF_CITY = $font;
-		    last SEARCH_TTF_CITY;
-		}
-	    }
-	    warn "Cannot find city font TTF_CITY" if $^W;
-	}
-    }
 
     local $^W = 0;
 
@@ -171,6 +137,32 @@ sub init {
     warn $@ if $@;
     return undef if ($@);
 
+    {
+	local $^W = 1;
+	$TTF_STREET ||= $self->search_ttf_font
+	    ([
+	      '/usr/X11R6/lib/X11/fonts/ttf/LucidaSansRegular.ttf',
+	      '/usr/X11R6/lib/X11/fonts/bitstream-vera/Vera.ttf',
+	      '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
+	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # found on Debian
+	     ]);
+
+	$TTF_CITY ||= $self->search_ttf_font
+	    ([
+	      '/usr/X11R6/lib/X11/fonts/Type1/lcdxsr.pfa',
+	      '/usr/X11R6/lib/X11/fonts/bitstream-vera/Vera.ttf',
+	      '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
+	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # found on Debian
+	     ]);
+
+	$TTF_TITLE ||= $self->search_ttf_font
+	    ([
+	      '/usr/X11R6/lib/X11/fonts/TTF/luxisb.ttf',
+	      '/usr/X11R6/lib/X11/fonts/bitstream-vera/VeraBd.ttf',
+	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed-Bold.ttf', # found on Debian
+	     ]);
+    }
+
     eval q{local $SIG{'__DIE__'};
 	   $gd_version = $GD::VERSION;
        };
@@ -181,7 +173,7 @@ sub init {
     if ($self->{OldImage}) {
 	$im = $self->{OldImage};
     } else {
-	my $use_truecolor = 0; # with 1 segfaults!!!
+	my $use_truecolor = 0; # XXX with 1 segfaults (still with 2.0.33, seen on amd64-freebsd). Also, background color is not set correctly.
 	$im = $self->{GD_Image}->new($self->{Width},$self->{Height},
  				     $use_truecolor);
     }
@@ -386,10 +378,23 @@ sub draw_map {
 		    $im->setAntiAliased($color);
 		    $color = $self->{GD}->gdAntiAliased();
 		}
-		my @txy = map { $transpose->(split/,/, $_) } @{ $s->[Strassen::COORDS] };
-		next if @txy < 4; # ignore points
-		for my $i (0 .. $#txy/2-1) {
-		    $im->line(@txy[$i*2 .. $i*2+3], $color);
+		if (0) { # XXX no visible change using unclosedPolygon (with gd 2.0.33)
+		    # But it seems to be 20% slower than ->line, measured with bbbikedraw.t -slow
+		    my $poly = $self->{GD_Polygon}->new;
+		    for my $coord (@{ $s->[Strassen::COORDS] }) {
+			$poly->addPt($transpose->(split /,/, $coord));
+		    }
+		    $im->unclosedPolygon($poly, $color);
+		} else {
+		    my @txy = map { $transpose->(split/,/, $_) } @{ $s->[Strassen::COORDS] };
+		    next if @txy < 4; # ignore points
+		    if (0) { # no visible results without using a truecolor image, but see above...
+			$im->setAntiAliased($color);
+			$color = $self->{GD}->gdAntiAliased();
+		    }
+		    for my $i (0 .. $#txy/2-1) {
+			$im->line(@txy[$i*2 .. $i*2+3], $color);
+		    }
 		}
 	    }
 	}
@@ -618,7 +623,7 @@ sub draw_map {
 						$x1+$pad_left, $y1,
 						$self->patch_string($name),
 						$darkblue, $grey_bg,
-#						$white, $darkblue
+						-anchor => "cw",
 					       );
 			    $seen_bahnhof{$name}++;
 			}
@@ -638,7 +643,7 @@ sub draw_map {
 						$x+$pad_left, $y,
 						$self->patch_string($name),
 						$darkgreen, $grey_bg,
-#						$white, $darkgreen
+						-anchor => "w",
 					       );
 			    $seen_bahnhof{$name}++;
 			}
@@ -742,7 +747,7 @@ sub get_ort_font_mapping {
 
     my %ort_font;
     my $ttf = $TTF_CITY;
-    if (defined $ttf && defined &GD::Image::stringFT && -r $ttf) {
+    if (defined $ttf) {
 	my $sc = $self->{FontSizeScale} ||
 	    ($self->{Xk} < 0.1 ? 1 :
 	     $self->{Xk} < 0.2 ? 1.2 :
@@ -859,7 +864,7 @@ sub draw_route {
 
     my $im        = $self->{Image};
     my $transpose = $self->{Transpose};
-    my(@c1)       = @{ $self->{C1} };
+    my @multi_c1 = @{ $self->{MultiC1} };
     my $strnet; # StrassenNetz-Objekt
 
     foreach (@{$self->{Draw}}) {
@@ -934,10 +939,12 @@ sub draw_route {
 	$width = $width{Route};
     }
 
-    $draw_route_polyline->(\@c1);
+    for my $c1 (@multi_c1) {
+	$draw_route_polyline->($c1);
+    }
 
     # Flags
-    if (@c1 > 1) {
+    if (@multi_c1 > 1 || ($multi_c1[0] && @{$multi_c1[0]} > 1)) {
 	if ($self->{UseFlags} &&
 	    $self->{GD_Image}->can("copyMerge") &&
 	    $self->imagetype ne 'wbmp') {
@@ -950,7 +957,7 @@ sub draw_route {
 		close GIF;
 		if ($start_flag) {
 		    my($w, $h) = $start_flag->getBounds;
-		    my($x, $y) = &$transpose(@{ $c1[0] });
+		    my($x, $y) = &$transpose(@{ $multi_c1[0][0] });
 		    # workaround: newFromPNG vergisst die Transparency-Information
 		    #$start_flag->transparent($start_flag->colorClosest(192,192,192));
 		    $im->copyMerge($start_flag, $x-5, $y-15,
@@ -969,7 +976,7 @@ sub draw_route {
 		close GIF;
 		if ($end_flag) {
 		    my($w, $h) = $end_flag->getBounds;
-		    my($x, $y) = &$transpose(@{ $c1[-1] });
+		    my($x, $y) = &$transpose(@{ $multi_c1[-1][-1] });
 		    # workaround: newFromPNG vergisst die Transparency-Information
 		    #$end_flag->transparent($end_flag->colorClosest(192,192,192));
 		    $im->copyMerge($end_flag, $x-5, $y-15,
@@ -982,7 +989,7 @@ sub draw_route {
 	    }
 	} elsif ($self->{UseFlags} && $self->imagetype eq 'wbmp' &&
 		 $self->{RouteWidth}) {
-	    my($x, $y) = &$transpose(@{ $c1[0] });
+	    my($x, $y) = &$transpose(@{ $multi_c1[0][0] });
 	    for my $w ($self->{RouteWidth}+5 .. $self->{RouteWidth}+6) {
 		$im->arc($x,$y,$w,$w,0,360,$black);
 	    }
@@ -993,11 +1000,6 @@ sub draw_route {
     if ($strnet) {
 	my %ort_font = %{ $self->get_ort_font_mapping };
 	my($text_inner, $text_outer);
-#  	if ($self->{Bg} eq 'white') {
-#  	    ($text_inner, $text_outer) = ($darkblue, $white);
-#  	} else {
-#  	    ($text_inner, $text_outer) = ($white, $darkblue);
-#  	}
 	($text_inner, $text_outer) = ($black, $grey_bg);
 	my(@strnames) = $strnet->route_to_name
 	    ([ map { [split ','] } @{ $self->{Coords} } ]);
@@ -1029,23 +1031,23 @@ sub draw_route {
     }
 
     if ($self->{TitleDraw}) {
-	my $s = $self->make_default_title;
+	# XXX It's difficult to decide if the font may display -> or not
+	my $s = $self->make_default_title(); # Unicode => defined $TTF_TITLE);
 
 	my $gdfont;
-	if (7*length($s) <= $self->{Width}) {
-	    $gdfont = $self->{GD_Font}->MediumBold;
-	} elsif (6*length($s) <= $self->{Width}) {
-	    $gdfont = $self->{GD_Font}->Small;
+	if (defined $TTF_TITLE) {
+	    $gdfont = [$TTF_TITLE, 10];
 	} else {
-	    $gdfont = $self->{GD_Font}->Tiny;
+	    if (7*length($s) <= $self->{Width}) {
+		$gdfont = $self->{GD_Font}->MediumBold;
+	    } elsif (6*length($s) <= $self->{Width}) {
+		$gdfont = $self->{GD_Font}->Small;
+	    } else {
+		$gdfont = $self->{GD_Font}->Tiny;
+	    }
 	}
-#  	my $inner = $white;
-#  	my $outer = $darkblue;
-#  	if ($self->{Bg} =~ /^white/) {
-#  	    ($inner, $outer) = ($outer, $inner);
-#  	}
 	my($inner, $outer) = ($darkblue, $grey_bg);
-	$self->outline_text($gdfont, 1, 1, $s, $inner, $outer);
+	$self->outline_text($gdfont, 1, 1, $s, $inner, $outer, -anchor => "nw");
     }
 }
 
@@ -1111,6 +1113,8 @@ sub _adjust_anchor {
 	$y -= ($dy + $pady);
     } elsif ($anchor =~ /^s/) {
 	$y += $pady;
+    } else {
+	$y -= ($dy/4 + $pady);
     }
 #XXX this is not quite right: anchor !~ /e$/ should be -= $dx/2, however,
 #all calls to outline_text should specify -anchor => "w" then
@@ -1343,6 +1347,17 @@ sub read_image {
 	close GIF;
     }
     ($img, $w, $h);
+}
+
+sub search_ttf_font {
+    my($self, $candidates) = @_;
+    return if !defined &GD::Image::stringFT;
+    for my $font (@$candidates) {
+	if (-r $font) {
+	    return $font;
+	}
+    }
+    warn "Cannot find font in candidates @$candidates" if $^W;
 }
 
 # To avoid loading of GDHeavy

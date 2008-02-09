@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SVG.pm,v 1.22 2007/05/31 21:44:54 eserte Exp $
+# $Id: SVG.pm,v 1.24 2008/02/09 17:44:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -28,7 +28,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -213,8 +213,13 @@ sub draw_map {
     }
 
     if ($str_draw{'Route'}) {
-	push @netz, Strassen->new_from_data
-	    ("Route\tRoute " . join(" ", @{$self->{Coords}}));
+	if (@{ $self->{MultiCoords} || [] }) {
+	    push @netz, Strassen->new_from_data
+		(map { "Route\tRoute " . join(" ", @$_) . "\n" } @{ $self->{MultiCoords} });
+	} else {
+	    push @netz, Strassen->new_from_data
+		("Route\tRoute " . join(" ", @{$self->{Coords}}));
+	}
     }
 
     my $restrict;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.34 2008/02/03 20:33:36 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.35 2008/02/09 17:44:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006,2008 Slaven Rezic. All rights reserved.
@@ -182,9 +182,28 @@ sub do_display {
 	    warn "Can't display $filename";
 	}
     } elsif ($imagetype =~ /http\.html$/) { # very pseudo image type
-	# XXX strip HTTP header from $filename!
 	if (eval { require WWWBrowser; 1}) {
-	    WWWBrowser::start_browser("file:$filename");
+	    require File::Temp;
+	    my($ofh,$ofilename) = File::Temp::tempfile(SUFFIX => ".html",
+						       UNLINK => !$debug,
+						      );
+	    {
+		open my $ifh, $filename or die "Can't open $filename: $!";
+		my $in_http_header = 1;
+		while(<$ifh>) {
+		    if ($in_http_header) {
+			if (/^\r?$/) {
+			    $in_http_header = 0;
+			    local $/ = \8192;
+			}
+			next;
+		    }
+		    print $ofh $_;
+		}
+	    }
+	    close $ofh
+		or die "While closing $ofilename: $!";
+	    WWWBrowser::start_browser("file:$ofilename");
 	} else {
 	    warn "Can't find a browser to display $filename";
 	}

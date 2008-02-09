@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.47 2008/02/02 21:59:08 eserte Exp $
+# $Id: PDF.pm,v 2.49 2008/02/09 16:36:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.47 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.49 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -51,15 +51,20 @@ sub init {
     if ($self->{Compress}) {
 	require BBBikeUtil;
 	if (BBBikeUtil::is_in_path("pdftk")) {
+	    $self->{_CompressTool} = "pdftk";
+	} elsif (eval { require CAM::PDF; require File::Temp; 1 }) {
+	    $self->{_CompressTool} = "CAM::PDF";
+	} else {
+	    warn "No pdftk in PATH available, don't compress...";
+	    undef $self->{Compress};
+	}
+	if ($self->{_CompressTool}) {
 	    require File::Temp;
 	    my($fh,$filename) = File::Temp::tempfile(SUFFIX => ".pdf", UNLINK => 1);
 	    die "Cannot create temporary file: $!" if !$filename;
 	    $self->{_CompressOriginalFilename} = $self->{Filename};
 	    $self->{_CompressTemporaryFilename} = $filename;
 	    $self->{Filename} = $filename;
-	} else {
-	    warn "No pdftk in PATH available, don't compress...";
-	    undef $self->{Compress};
 	}
     }
 
@@ -592,7 +597,6 @@ sub draw_route {
 
     my $im        = $self->{Image};
     my $transpose = $self->{Transpose};
-    #my(@c1)       = @{ $self->{C1} };
     my @multi_c1 = @{ $self->{MultiC1} };
     my $strnet; # StrassenNetz-Objekt
 
@@ -640,7 +644,6 @@ sub draw_route {
     }
 
     # Flags
-    #if (@c1 > 1) {
     if (@multi_c1 > 1 || ($multi_c1[0] && @{$multi_c1[0]} > 1)) {
 $self->{UseFlags} = 0; # XXX don't use this because of missing transparency information in .jpg
 	if ($self->{UseFlags}) {
@@ -850,30 +853,54 @@ sub flush {
     if ($self->{Compress}) {
 	my $compress_message = sub {
 	    my($before, $after) = @_;
-	    "Compressed " . (100-int(100*(-s $after)/(-s $before))) .
-		"% (original " . (-s $before) . " bytes, compressed " . (-s $after) . " bytes)...\n";
+	    $before = ref $before ? $$before : -s $before;
+	    $after  = ref $after  ? $$after  : -s $after;
+	    "Compressed " . (100-int(100*($after)/($before))) .
+		"% (original " . ($before) . " bytes, compressed " . ($after) . " bytes)...\n";
 	};
 
-	if (defined $self->{_CompressOriginalFilename}) {
-	    system("pdftk", $self->{Filename}, "output", $self->{_CompressOriginalFilename}, "compress");
-	    warn eval { $compress_message->($self->{Filename}, $self->{_CompressOriginalFilename}) }
-		if $VERBOSE;
+	if ($self->{_CompressTool} eq 'pdftk') {
+	    if (defined $self->{_CompressOriginalFilename}) {
+		system("pdftk", $self->{Filename}, "output", $self->{_CompressOriginalFilename}, "compress");
+		warn eval { $compress_message->($self->{Filename}, $self->{_CompressOriginalFilename}) }
+		    if $VERBOSE;
+		unlink $self->{_CompressTemporaryFilename};
+	    } else {
+		require File::Temp;
+		my($fh,$filename) = File::Temp::tempfile(SUFFIX => ".pdf", UNLINK => 1);
+		system("pdftk", $self->{Filename}, "output", $filename, "compress");
+		seek $fh, 0, 0;
+		local $/ = \4096;
+		my $ofh = $self->{Fh};
+		while(<$fh>) {
+		    print $ofh $_;
+		}
+		close $fh;
+		warn eval { $compress_message->($self->{Filename}, $filename) }
+		    if $VERBOSE;
+		unlink $filename;
+		unlink $self->{_CompressTemporaryFilename};
+	    }
+	} elsif ($self->{_CompressTool} eq 'CAM::PDF') {
+	    my $pdf = CAM::PDF->new($self->{Filename});
+	    # XXX It's purely coincidence that the map drawing is objnum=3
+	    # XXX But how to get it reliably?
+	    $pdf->encodeObject(3, 'FlateDecode');
+	    $pdf->clean;
+	    if (defined $self->{_CompressOriginalFilename}) {
+		$pdf->output($self->{_CompressOriginalFilename});
+		warn eval { $compress_message->($self->{Filename}, $self->{_CompressOriginalFilename}) }
+		    if $VERBOSE;
+	    } else {
+		my $ofh = $self->{Fh};
+		my $pdf_contents = $pdf->toPDF;
+		print $ofh $pdf_contents;
+		warn eval { $compress_message->($self->{Filename}, \length $pdf_contents) }
+		    if $VERBOSE;
+	    }
 	    unlink $self->{_CompressTemporaryFilename};
 	} else {
-	    require File::Temp;
-	    my($fh,$filename) = File::Temp::tempfile(SUFFIX => ".pdf", UNLINK => 1);
-	    system("pdftk", $self->{Filename}, "output", $filename, "compress");
-	    seek $fh, 0, 0;
-	    local $/ = \4096;
-	    my $ofh = $self->{Fh};
-	    while(<$fh>) {
-		print $ofh $_;
-	    }
-	    close $fh;
-	    warn eval { $compress_message->($self->{Filename}, $filename) }
-		if $VERBOSE;
-	    unlink $filename;
-	    unlink $self->{_CompressTemporaryFilename};
+	    die "Unhandled compression tool <$self->{_CompressTool}>";
 	}
     }
 }

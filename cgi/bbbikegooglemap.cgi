@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 2.24 2008/01/28 23:49:42 eserte Exp eserte $
+# $Id: bbbikegooglemap.cgi,v 2.24 2008/01/28 23:49:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006,2007,2008 Slaven Rezic. All rights reserved.
@@ -74,9 +74,8 @@ sub run {
 	if (!$fh) {
 	    $self->{errormessageupload} = "Upload-Datei fehlt!";
 	} else {
-	    my($tmpfh,$tmpfile) = File::Temp::tempfile(#UNLINK => 1, # XXX for debugging...
+	    my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1,
 						       SUFFIX => $ext);
-	    warn "*** NOTE *** file $tmpfile uploaded...";
 	    while (<$fh>) {
 		print $tmpfh $_;
 	    }

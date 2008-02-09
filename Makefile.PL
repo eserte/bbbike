@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.145 2008/02/02 18:34:51 eserte Exp $
+# $Id: Makefile.PL,v 1.146 2008/02/09 21:35:02 eserte Exp $
 
 use 5.005;
 
@@ -172,7 +172,8 @@ my @req_table =
    'für geocode_images'],
   [qw/SVG	0	all	2	cgi/,
    'additional optional BBBikeDraw backend for SVG graphics'],
-  # also: GD::SVG, but this module currently doesn't even pass tests!
+  [qw/GD::SVG	0	all	0	devel/,
+   'another SVG alternative, not used yet in production'],
   [qw/Object::Iterate	0	all	2|4	base/,
    'Notwendig für die bbd2-esri-Konvertierung'],
   [qw/Object::Realize::Later	0	all	0	base/,

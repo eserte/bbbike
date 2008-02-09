@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.108 2008/01/14 21:31:02 eserte Exp eserte $
+# $Id: Makefile,v 1.109 2008/02/09 16:52:59 eserte Exp $
 #
 
 # Targets:
@@ -58,8 +58,9 @@ TESTS_FROM_LOCAL=	cgihead.t \
 			radzeit.t \
 			wapcgi.t \
 			wwwdata.t
-TESTS=			$(TESTS_ON_REMOTE) $(TESTS_FROM_LOCAL)
-TESTS_ADD=		BBBikeTest.pm
+TESTS_RADZEIT_ON_REMOTE=bbbikedraw_radzeit.t
+TESTS=			$(TESTS_ON_REMOTE) $(TESTS_RADZEIT_ON_REMOTE) $(TESTS_FROM_LOCAL)
+TESTS_ADD=		BBBikeTest.pm bbbikedraw.t
 HTDOCS=			public
 
 # XXX maybe use test-on-remote-and-send-mail (after tests)
@@ -450,9 +451,14 @@ prepare-bbbike-dist-prog-bbbike-misc:
 prepare-bbbike-dist-prog-bbbike-t:
 	[ -d ${CURDIR}/BBBike/t ] || \
 	    mkdir ${CURDIR}/BBBike/t
-.for f in ${TESTS} ${TESTS_ADD}
+.for f in ${TESTS_ON_REMOTE} ${TESTS_FROM_LOCAL} ${TESTS_ADD}
 	if [ ! -e ${CURDIR}/BBBike/t/$f -o ${BBBIKE_ROOT_DIR}/t/$f -nt ${CURDIR}/BBBike/t/$f ] ; then \
 	    cp -pf ${BBBIKE_ROOT_DIR}/t/$f ${CURDIR}/BBBike/t/$f; \
+	fi
+.endfor
+.for f in ${TESTS_RADZEIT_ON_REMOTE}
+	if [ ! -e ${CURDIR}/BBBike/t/$f -o ${CURDIR}/t/$f -nt ${CURDIR}/BBBike/t/$f ] ; then \
+	    cp -pf ${CURDIR}/t/$f ${CURDIR}/BBBike/t/$f; \
 	fi
 .endfor
 
@@ -606,7 +612,7 @@ test-on-remote:
 	BBBIKE_TEST_WAPURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/wapbbbike.cgi \
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
-		${TESTS_ON_REMOTE} \
+		${TESTS_ON_REMOTE} ${TESTS_RADZEIT_ON_REMOTE} \
 	'
 	-@date >> .last/test-on-remote
 

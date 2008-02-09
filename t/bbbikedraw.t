@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.30 2008/02/02 20:51:27 eserte Exp $
+# $Id: bbbikedraw.t,v 1.33 2008/02/09 21:28:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -43,19 +43,19 @@ BEGIN {
 	exit;
     }
 
-    @modules = qw(GD/png GD/gif GD/jpeg GD::SVG SVG PDF PDF2
+    @modules = qw(GD/png GD/gif GD/jpeg
+		  GD::SVG SVG
+		  PDF PDF2
 		  Imager/png Imager/jpeg
 		  MapServer MapServer;noroute MapServer/pdf
 		  ImageMagick/png ImageMagick/jpeg
 		  BBBikeGoogleMaps
 		 );
 
-    if (eval { require BBBikeDraw::BerlinerStadtplan; 1 }) {
-	push @modules, "BerlinerStadtplan";
-    }
-
-    if (!eval { require GD::SVG; 1 }) { # Module does not pass tests anymore
-	@modules = grep { $_ ne "GD::SVG" } @modules;
+    if (0) { # berliner-stadtplan.com support for BBBike got lost somewhen in 2007 or so...
+	if (eval { require BBBikeDraw::BerlinerStadtplan; 1 }) {
+	    push @modules, "BerlinerStadtplan";
+	}
     }
 }
 
@@ -73,9 +73,7 @@ BEGIN {
 # ImageMagick: 23s
 
 my @drawtypes = qw(all);
-my $width = 640;
-my $height = 480;
-my $geometry = $width."x".$height;
+my $geometry = "640x480";
 my $verbose = 0;
 my $debug   = 0;
 my $do_slow = 0;
@@ -84,13 +82,35 @@ my @bbox = (8134,8581,9450,9718);
 my $do_display_all;
 my $flush_to_filename;
 my $do_compress = 1;
-my $do_route = 0;
-my $do_multiroute = 0;
+my $route_type = 'multi'; # or none or single
+my $start_name = 'Start';
+my $goal_name = 'Goal';
 
 my @only_modules;
 
 if ($ENV{BBBIKE_TEST_DRAW_ONLY_MODULES}) {
     @only_modules = split /,/, $ENV{BBBIKE_TEST_DRAW_ONLY_MODULES};
+}
+
+sub usage {
+    die "usage $0: [-display|-displayall] [-save] [-v|-verbose] [-debug] [-slow] [-only module]
+		   [-drawtypes type,type,...] [-bbox x0,y0,x1,y1] [-geometry wxh] [-noroute]
+		   [-flushtofilename] [-[no]compress] [-start name] [-goal name] ...
+
+-flushtofilename: Normally the internal flush will be done to a filehandle.
+                  Change it to flush to a filename.
+-displayall:      Display generated image with all available viewers for
+		  this type.
+-debug:		  In debug mode, all created files will be kept.
+-nocompress:	  Do not compress output. Default is to compress where
+		  possible.
+-route none|single|multi:  Draw a sample route. May supercede a specified bbox.
+-geometry wxh:    Default is $geometry.
+-only module:     Test only the given module (may be set multiple times).
+                  Can also be set with the environment variable BBBIKE_TEST_DRAW_ONLY_MODULES
+-start name
+-goal name:       Set name for start and goal
+";
 }
 
 if (!GetOptions(get_std_opts("display"),
@@ -101,8 +121,7 @@ if (!GetOptions(get_std_opts("display"),
 		"slow!" => \$do_slow,
 		"flushtofilename" => \$flush_to_filename,
 		"compress!" => \$do_compress,
-		"route!" => \$do_route,
-		"multiroute!" => \$do_multiroute,
+		"route=s" => \$route_type,
 		"geometry=s" => \$geometry,
 		'only=s@' => sub {
 		    push @only_modules, $_[1]; # Tests will fail with -only.
@@ -113,24 +132,18 @@ if (!GetOptions(get_std_opts("display"),
 		'bbox=s' => sub {
 		    @bbox = split /,/, $_[1];
 		},
+		'start=s' => \$start_name,
+		'goal=s'  => \$goal_name,
 	       )) {
-    die "usage $0: [-display|-displayall] [-save] [-v|-verbose] [-debug] [-slow] [-only module]
-		   [-drawtypes type,type,...] [-bbox x0,y0,x1,y1] [-geometry wxh] [-noroute]
-		   [-flushtofilename] [-[no]compress] ...
-
--flushtofilename: Normally the internal flush will be done to a filehandle.
-                  Change it to flush to a filename.
--displayall:      Display generated image with all available viewers for
-		  this type.
--debug:		  In debug mode, all created files will be kept.
--nocompress:	  Do not compress output. Default is to compress where
-		  possible.
--noroute:	  Do not draw route, so using just the bbox.
--geometry wxh:    Default is $geometry.
--only module:     Test only the given module (may be set multiple times).
-                  Can also be set with the environment variable BBBIKE_TEST_DRAW_ONLY_MODULES
-";
+    usage();
 }
+
+if ($route_type !~ m{^(none|single|multi)$}) {
+    warn "-route may only take none, single or multi.\n";
+    usage();
+}
+
+my($width, $height) = split /x/, $geometry;
 
 @modules = @only_modules if @only_modules;
 
@@ -176,6 +189,7 @@ sub draw_map {
     warn "Module $module...\n" if $verbose;
 
     my $t0 = [gettimeofday];
+    my $cput0 = [times];
 
     ($module, my @attributes) = split /;/, $module;
     my %attributes = map {($_,1)} @attributes;
@@ -204,16 +218,17 @@ sub draw_map {
     if ($debug) {
 	$BBBikeDraw::DEBUG = $BBBikeDraw::DEBUG = $debug;
 	$BBBikeDraw::MapServer::DEBUG = $BBBikeDraw::MapServer::DEBUG = $debug;
+	$BBBikeDraw::PDF::VERBOSE = $BBBikeDraw::PDF::VERBOSE = $debug;
 	# XXX more to come...
     }
 
     my @coords;
     my @multicoords;
     my @pseudo_route;
-    if ($do_route || $do_multiroute) {
+    if ($route_type ne 'none') {
 	no warnings 'qw';
 	@coords = qw(8209,8769 8293,8768 8425,8771 8472,8772 8480,9071 8598,9061 8594,8773 8770,8777 8982,8781 9050,8783 9222,8787 9227,8890 9235,9051 9235,9111 9248,9350 9280,9476 8994,9509 9043,9745);
-	if ($do_multiroute) {
+	if ($route_type eq 'multi') {
 	    @multicoords = ([@coords],
 			    [qw(8595,9495 8598,9264)],
 			   );
@@ -237,8 +252,8 @@ sub draw_map {
         Scope      => "city",
         ImageType  => $imagetype,
 	Module     => $module,
-	Startname  => "Start",
-	Zielname   => "Goal",
+	Startname  => $start_name,
+	Zielname   => $goal_name,
 	(@coords ? (Coords => [@coords]) : ()),
 	(@multicoords ? (MultiCoords => [@multicoords]) : ()),
 	UseFlags   => 1,
@@ -259,7 +274,7 @@ sub draw_map {
     $draw->init;
     $draw->create_transpose(-asstring => 1);
     $draw->draw_map if $draw->can("draw_map");
-    if (!$attributes{noroute} && ($do_route || $do_multiroute)) {
+    if (!$attributes{noroute} && ($route_type ne 'none')) {
 	$draw->draw_route if $draw->can("draw_route");
     }
     $draw->draw_wind if $draw->can("draw_wind");
@@ -267,8 +282,10 @@ sub draw_map {
     close $fh;
 
     my $elapsed = tv_interval ( $t0, [gettimeofday]);
+    my $elapsed_cpu = eval { require List::Util; List::Util::sum(times) - List::Util::sum(@$cput0) };
     if ($verbose) {
-	warn sprintf "... drawing time: %.2fs\n", $elapsed;
+	warn sprintf("... drawing time: %.2fs (wall clock)", $elapsed) .
+	    ($elapsed_cpu ? sprintf(" %.2fs (cpu)", $elapsed_cpu) : "") . "\n";
     }
 
     if ($do_display) {

@@ -328,16 +328,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_004688',
-         'until' => 1204325999,
-         'text' => 'Hultschiner Damm (Mahlsdorf) Richtung Alt-Mahlsdorf zwischen Rüsternallee und Levensauer Str. Baustelle, Fahrtrichtung gesperrt (bis 02.2008)',
-         'from' => 1181240753,
-         'id' => 1005,
-         'data' => 'userdel	1::inwork 23891,8780 24051,9156 24149,9387 24337,9835
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1220220000,
          'text' => 'B 168 zw. Fürstenwalde und Trebus Grundhafter Straßenbau Vollsperrung 25.06.2007-31.08.2008 ',

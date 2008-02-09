@@ -8461,7 +8461,7 @@ userdel	2::inwork 50732,-71705 51374,-71361 51440,-71337
 EOF
      },
      { from  => 1181240753, # 2007-06-07 20:25
-       until => 1204325999, # 2008-02-29 23:59
+       until => 1202597127, # 2008-02-29 23:59 1204325999
        text  => 'Hultschiner Damm (Mahlsdorf) Richtung Alt-Mahlsdorf zwischen Rüsternallee und Levensauer Str. Baustelle, Fahrtrichtung gesperrt (bis 02.2008)',
        type  => 'gesperrt',
        source_id => 'IM_004688',

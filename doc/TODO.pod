@@ -3062,16 +3062,7 @@ MapServer/pdf sagen.
 
 =over
 
-=item * (M3)
-
-TitleDraw: sollte nach Möglichkeit auch mit einem TTF-Font passieren.
-
-=item * (M3)
-
-unclosedPolygon anstelle von mehreren line-Aufrufen verwenden
-(benötigt gd 2.0.33!), aber nur, wenn es sich als effizienter erweist.
-
-=item * (M3)
+=item * (M2)
 
 In BBBikeDraw/GD.pm nach Kommentar bei AREA suchen: Probleme mit den
 verschiedenen Netscape-Versionen. Beim Galeon scheint man nicht auf
@@ -3089,12 +3080,8 @@ syncen kompilieren!)
 =item * (M1)
 
 Titel: E<quot>->E<quot> schöner E<quot>malenE<quot> statt Text
-verwenden
-
-=item * (M3)
-
-Bahnhofsnamenpositionierung: vertikal zentrieren (ist zurzeit nicht,
-sieht man, wenn die Schrift groß wird).
+verwenden. Theoretisch ginge es auch mit einem Unicode-Pfeil, aber
+erst einmal einen TTF-Font mit passendem Glyph finden...
 
 =item * (H2)
 
@@ -3104,7 +3091,8 @@ nicht so schön zu klappen) Ebenfalls zu übelegen bei BBBikeDraw::PDF.
 
 =item * (E2)
 
-E<quot>(A -) BE<quot> zu E<quot>-> BE<quot> optimieren
+E<quot>(A -) BE<quot> zu E<quot>-> BE<quot> optimieren -> konkretes
+Beispiel finden?
 
 =item * (H2) (external bug)
 
@@ -3124,21 +3112,29 @@ Die nördliche Begrenzung der Yorckstr. scheint zu dick gezeichnet zu
 sein (2 Pixel statt 1 Pixel?). Möglicherweise ein GD-Problem. Nicht
 bei der SVG-Variante.
 
-=item * (H3) (bug)
-
-Das Straßen-Labeling ist noch nicht perfekt. Siehe E<quot>Platz der
-LuftbrückeE<quot>. Bei der SVG-Variante fehlt das Labeling komplett.
-
 =item * (H1) (bug)
 
 GD/gif und GD/jpeg können mit Transparenzen in Bildern nichts
-anfangen.
+anfangen. S-Bahnhofssymbole und Start/Zielsymbole haben einen
+quadratischen Rahmen, halbtransparenten Rahmen. Ein Workaround könnte
+sein, immer PNG zu rendern und zum Schluss eine Konvertierung PNG ->
+GIF/JPEG durchzuführen.
 
 =item * (H2) (external feature)
 
 GD::SVG kann nicht externe Images einbinden, deshalb fehlt das
 Zeichnen von S- und (echten) U-Bahnhöfen bei der SVG-Variante, ebenso
 die Flaggen.
+
+=item * (H3) (bug)
+
+Straßenlabels werden nicht immer schön gezeichnet, wenn die Straße
+nicht geradlinig verläuft. Siehe E<quot>Platz der LuftbrückeE<quot> in
+t/bbbikedraw.t -display.
+
+=item * (H2) (feature)
+
+Bei der SVG-Variante fehlt das Labeling komplett.
 
 =back
 
@@ -3161,6 +3157,18 @@ auf (schön zu sehen: bbbikedraw.t, Hochkirchstr.).
 
 Draw street outlines above areas. Siehe
 Viktoria-Park/Kreuzbergstr./Katzbachstr.
+
+=item * (M3) (feature)
+
+Draw (multi)route.
+
+=item * (M3) (feature)
+
+Draw U/S stations.
+
+=item * (H3) (feature)
+
+Draw street labels.
 
 =back
 
@@ -3295,6 +3303,27 @@ Implement street labeling.
 
 Draw street outlines above areas. Siehe
 Viktoria-Park/Kreuzbergstr./Katzbachstr.
+
+=back
+
+=head2 BBBikeDraw::SVG
+
+=over
+
+=item * (H2) (bug)
+
+U/S train stations look strange. See t/bbbikedraw.t -display for an
+example.
+
+=item * (M2) (feature)
+
+In smaller map scales, streets should be broader, like in the GD
+output.
+
+=item * (M2) (feature)
+
+The route should be drawn differently, e.g. as a dashed red/blue line,
+like in the GD output.
 
 =back
 
@@ -3595,7 +3624,7 @@ install.pl: Falls Tk nicht installiert ist und PPM vorhanden ist, mit
 PPM nachinstallieren. Bei Bedarf eine Reihe weiterer Module
 nachinstallieren (siehe Bundle::BBBike).
 
-=item * (#M5)
+=item * (M5)
 
 install.pl: Should be tested on another system.
 

@@ -23,6 +23,7 @@ patch\.gz$
 ^pm_to_blib$
 \.ppd$
 ^_Inline/
+(^|/)cover_db/
 # private common files
 \.ok2cgi$
 \.copynewer.SKIP$

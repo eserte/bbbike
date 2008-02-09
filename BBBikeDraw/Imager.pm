@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Imager.pm,v 1.23 2007/05/31 23:05:48 eserte Exp $
+# $Id: Imager.pm,v 1.24 2008/02/09 22:51:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -45,7 +45,7 @@ use vars @colors;
 #      }
 #  }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -664,7 +664,7 @@ sub draw_route {
 
     my $im        = $self->{Image};
     my $transpose = $self->{Transpose};
-    my(@c1)       = @{ $self->{C1} };
+    my @multi_c1 = @{ $self->{MultiC1} };
     my $strnet; # StrassenNetz-Objekt
 
     foreach (@{$self->{Draw}}) {
@@ -706,11 +706,11 @@ sub draw_route {
     my $fill = Imager::Fill->new(hatch=> "check4x4", fg=>$darkblue, bg=>$red);
 
     # Route
-    {
+    for my $c1 (@multi_c1) {
 	my $points_x = [];
 	my $points_y = [];
-	for(my $i = 0; $i <= $#c1; $i++) {
-	    my($x, $y) = &$transpose(@{$c1[$i]});
+	for(my $i = 0; $i <= $#$c1; $i++) {
+	    my($x, $y) = &$transpose(@{$c1->[$i]});
 	    push @$points_x, $x;
 	    push @$points_y, $y;
 	}
@@ -739,7 +739,7 @@ sub draw_route {
     if (0) {
 
     # Flags
-    if (@c1 > 1) {
+    if (@multi_c1 > 1 || ($multi_c1[0] && @{$multi_c1[0]} > 1)) {
 	if ($self->{UseFlags} &&
 	    defined &GD::Image::copyMerge &&
 	    $self->imagetype ne 'wbmp') {
@@ -752,7 +752,7 @@ sub draw_route {
 		close GIF;
 		if ($start_flag) {
 		    my($w, $h) = $start_flag->getBounds;
-		    my($x, $y) = &$transpose(@{ $c1[0] });
+		    my($x, $y) = &$transpose(@{ $multi_c1[0][0] });
 		    # workaround: newFromPNG vergisst die Transparency-Information
 		    $start_flag->transparent($start_flag->colorClosest(192,192,192));
 		    $im->copyMerge($start_flag, $x-5, $y-15,
@@ -769,7 +769,7 @@ sub draw_route {
 		close GIF;
 		if ($end_flag) {
 		    my($w, $h) = $end_flag->getBounds;
-		    my($x, $y) = &$transpose(@{ $c1[-1] });
+		    my($x, $y) = &$transpose(@{ $multi_c1[-1][-1] });
 		    # workaround: newFromPNG vergisst die Transparency-Information
 		    $end_flag->transparent($end_flag->colorClosest(192,192,192));
 		    $im->copyMerge($end_flag, $x-5, $y-15,
@@ -780,7 +780,7 @@ sub draw_route {
 	    }
 	} elsif ($self->{UseFlags} && $self->imagetype eq 'wbmp' &&
 		 $self->{RouteWidth}) {
-	    my($x, $y) = &$transpose(@{ $c1[0] });
+	    my($x, $y) = &$transpose(@{ $multi_c1[0][0] });
 	    for my $w ($self->{RouteWidth}+5 .. $self->{RouteWidth}+6) {
 		$im->arc($x,$y,$w,$w,0,360,$black);
 	    }

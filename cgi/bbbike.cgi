@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.78 2008/02/04 21:42:06 eserte Exp $
+# $Id: bbbike.cgi,v 8.78 2008/02/04 21:42:06 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -105,7 +105,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $use_apache_session $apache_session_module $cookiename
 	    $bbbike_temp_blockings_file $bbbike_temp_blockings_optimized_file
 	    @temp_blocking $temp_blocking_epoch
-	    $use_cgi_compress_gzip $max_matches
+	    $use_cgi_compress_gzip $use_bbbikedraw_compress $max_matches
 	    $use_winter_optimization
 	    $with_fullsearch_radio
 	    $with_lang_switch
@@ -4437,7 +4437,7 @@ EOF
 #  	    }
 	    print "</table>\n";
 	    print qq{<div class="graphfootnote">};
-	    printf M(<<EOF), 15, 50, 100, 2000;
+	    printf M(<<EOF), 15, 50, ($use_bbbikedraw_compress ? (100, 500) : (100, 3000));
 Die Dateigr&ouml;&szlig;e der Grafik beträgt je nach
 Bildgr&ouml;&szlig;e, Bildformat und Detailreichtum %s bis %s kB. PDFs sind %s bis %s kB groß.
 EOF
@@ -4826,6 +4826,10 @@ sub draw_route {
 
     if (defined $use_module && !$bbbikedraw_args{Module}) {
 	$bbbikedraw_args{Module} = $use_module;
+    }
+
+    if ($use_bbbikedraw_compress) {
+	$bbbikedraw_args{Compress} = 1;
     }
 
     eval {

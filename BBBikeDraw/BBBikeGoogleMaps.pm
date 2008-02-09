@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGoogleMaps.pm,v 1.5 2007/12/22 21:09:35 eserte Exp $
+# $Id: BBBikeGoogleMaps.pm,v 1.7 2008/02/09 18:59:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeDraw::BBBikeGoogleMaps;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(BBBikeDraw);
 
@@ -50,16 +50,17 @@ sub pre_draw {
 sub flush_direct_redirect {
     my $self = shift;
     my $q = $self->{CGI} || CGI->new;
-    my $coords = join "!", @{ $self->{Coords} || [] };
     my @wpt;
     if ($self->{BBBikeRoute}) {
 	for my $wpt (@{ $self->{BBBikeRoute} }) {
 	    push @wpt, join "!", $wpt->{Strname}, $wpt->{Coord};
 	}
     }
-    my $q2 = CGI->new({coords  => $q->param("coords"),
+    my @multi_c = @{ $self->{MultiCoords} || [] } ? @{ $self->{MultiCoords} } : @{ $self->{Coords} || [] } ? [ @{ $self->{Coords} } ] : ();
+    my $q2 = CGI->new({coords  => [map { join "!", @$_ } @multi_c],
 		       maptype => $maptype,
 		       (@wpt ? (wpt => \@wpt) : ()),
+		       (!@multi_c && !@wpt ? (wpt => join(",", $self->get_map_center)) : ()),
 		      });
     print $q->redirect($bbbike_googlemaps_url . "?" . $q2->query_string);
     return;
@@ -70,7 +71,7 @@ sub mimetype { "text/html" }
 sub flush {
     my $self = shift;
     my $q = $self->{CGI} || CGI->new;
-    my $coords = join "!", @{ $self->{Coords} || [] };
+    my @multi_c = @{ $self->{MultiCoords} || [] } ? @{ $self->{MultiCoords} } : @{ $self->{Coords} || [] } ? [ @{ $self->{Coords} } ] : ();
     my $oldcoords =
 	@{ $self->{OldCoords} || [] }
 	    ? join "!", @{ $self->{OldCoords} }
@@ -95,7 +96,13 @@ function init() {
 EOF
     print $fh start_form(-action => $bbbike_googlemaps_url,
 			 -method => "POST");
-    print $fh hidden("coords", $coords);
+    for my $c (@multi_c) {
+	my $coords = join "!", @$c;
+	print $fh hidden("coords", $coords);
+    }
+    if (!@multi_c) {
+	print $fh hidden("wpt", join(",", $self->get_map_center));
+    }
     print $fh hidden("oldcoords", $oldcoords) if $oldcoords;
     print $fh hidden("maptype", $maptype);
     for my $wpt (@wpt) {
@@ -105,6 +112,13 @@ EOF
     print $fh submit("Weiterleitung auf bbbikegooglemaps");
     print $fh "</noscript>";
     print $fh end_form, end_html;
+}
+
+sub get_map_center {
+    my($self) = @_;
+    my $x = int(($self->{Max_x} - $self->{Min_x})/2 + $self->{Min_x});
+    my $y = int(($self->{Max_y} - $self->{Min_y})/2 + $self->{Min_y});
+    ($x, $y);
 }
 
 1;
