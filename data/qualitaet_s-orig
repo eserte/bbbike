@@ -1353,7 +1353,7 @@ Brommystr.: Kopfsteinpflaster	Q2 12509,11025 12567,11115
 (Uferweg): Parkweg	Q1 15819,9430 15787,9321
 (Fischzug - Uferweg): Holzbohlenweg	Q1 15219,10079 15260,10048
 (Strela-Park): Parkweg	Q1 15400,9742 15465,9860
-#: add_fragezeichen: ist der Abschnitt zwischen Fischerhüttenstr. und Beerenstr. auch Kopfsteinpflaster?
+#: confirmed_by: anonymous (for Fischerhüttenstr. und Beerenstr., "zeimlich schlecht", but q1?)
 Busseallee: Kopfsteinpflaster	Q2 161,3062 71,3179 -266,3648
 Hallesches Tor: Beton	Q0 9593,10238 9592,10174
 Bebelplatz: Kopfsteinpflaster, OK	Q1 9801,12245 9875,12254
@@ -2360,9 +2360,9 @@ Sprengelstr. (Wedding): Asphalt	Q0 6739,14969 6945,15045 7131,15109 7303,15173
 #: by: Inez Renkwitz:
 Zum Großen Windkanal: Asphalt	Q0 19162,3087 19348,3253
 #: by: Florian Dietze-Römkens:
-Elly-Heuss-Knapp-Str.: Asphalt	Q0 17475,-53 17565,-201 17639,-320
+Elly-Heuss-Knapp-Str.: Asphalt	Q0 17489,-16 17599,-187 17736,-391
 #: by: Christian von Gelieu:
-Friederike-Nadig-Str.: Asphalt	Q0 17229,-215 17318,-353 17384,-477
+Friederike-Nadig-Str.: Asphalt	Q0 17250,-175 17359,-345 17426,-446
 #: by: Torre:
 Mellenseestr.: Beton	Q0 17523,9886 17618,9887 17958,10012
 #: by: Benjamin Pauli:
@@ -5829,6 +5829,10 @@ Feldtmannstr.: schlechtes Kopfsteinpflaster	Q3 16460,17214 16418,17311 16380,173
 Petersallee: guter Asphalt	Q0 5444,16528 5602,16718 5791,16910
 #: by: Velodoom:
 Verlängerte Koloniestr.: mäßiges Kopfsteinpflaster	Q2 8944,17961 8957,18124 8918,18159
+#: by: Thomas Plischka:
+Knollstr.: Kopfsteinpflaster	Q2 17242,-80 17558,126
+#: by: Ingo Henning:
+Mareyzeile: guter Beton	Q0 -6013,12009 -6013,12041 -5880,12209 -5872,12235
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
