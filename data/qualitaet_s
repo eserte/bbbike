@@ -114,7 +114,8 @@ Nymphenufer: teilweise etwas Kopfsteinpflaster, sonst mäßiger Asphalt	Q1 -4165,1
 Lyckallee: Asphalt	Q0 368,11051 251,11039 37,11014 -50,11003 -225,10981 -328,10971
 Lyckallee: mäßiges bis gutes Kopfsteinpflaster	Q1 -328,10971 -428,10956 -526,10985 -617,10990 -679,10934 -753,10918 -865,10906 -901,10901 -1021,10889
 Lyckallee: Beton	Q0 -1021,10889 -1167,10873 -1318,10854 -1490,10834
-Trakehner Allee: gutes Kopfsteinpflaster	Q1 -157,11943 -285,11828 -490,11718 -708,11602
+Trakehner Allee: gutes Kopfsteinpflaster	Q1 -157,11943 -285,11828 -496,11714
+Trakehner Allee: Asphalt	Q0 -496,11714 -708,11602
 Crellestr.: gutes Kopfsteinpflaster	Q1 7320,8939 7491,9061 7535,9087 7583,9115 7655,9188
 Crellestr.: Kopfsteinpflaster	Q2 7655,9188 7770,9336
 Helmstr.: gutes Kopfsteinpflaster	Q1 7535,9087 7490,9116 7441,9139 7381,9165
@@ -643,7 +644,7 @@ Fischerhüttenweg: Waldweg, mäßig (Wurzeln, eng) bis OK	Q2 -2235,5128 -2834,5578 
 Fischerhüttenweg: Waldweg, sandig	Q3 -3723,6254 -3443,6036
 Curtiusstr.: Asphalt	Q0 2194,3169 2272,3188 2297,3322 2326,3478 2457,3547 2746,3699 2962,3827 3024,3863
 Curtiusstr.: Kopfsteinpflaster	Q2 3024,3863 3201,3968 3259,4002
-Rominter Allee: Kopfsteinpflaster (Q2, vielleicht aber Q1?)	Q2 -99,12019 -95,12038 -125,12173 -163,12303 -287,12460 -328,12654 -396,12749 -410,12792 -472,12961 -435,12997 -426,13030 -421,13050
+Rominter Allee: Kopfsteinpflaster	Q2 -99,12019 -95,12038 -145,12151 -153,12183 -155,12198 -181,12304 -199,12341 -232,12380 -287,12460 -328,12654 -396,12749 -410,12792 -472,12961 -435,12997 -426,13030 -421,13050
 Waldemarstr.: teilweise Kopfsteinpflaster/Asphalt	Q1 12180,10604 12145,10618 12056,10655
 Eichgestell: Asphalt	Q0 19986,6404 19590,6590 19407,6660 19052,6823
 Eichgestell: Parkweg, OK	Q1 19052,6823 18186,7200 18052,7148 18003,7144
@@ -1210,7 +1211,7 @@ Katzengraben, Schüßlerplatz: Kopfsteinpflaster	Q2 22439,4838 22445,4758 22452,46
 Futranplatz: Kopfsteinpflaster	Q2 22445,4758 22381,4752
 Steinstr.: Kopfsteinpflaster	Q2 -7909,-2375 -7978,-2309
 (zum Anhalter Steg): teils asphaltiert, teils Bohlenweg	Q1 8659,10239 8685,10317 8726,10351
-(Anhalter Steg): Holzbohlen	Q1 8726,10351 8773,10429
+(Anhalter Steg): Holzbohlen	Q1 8726,10351 8760,10408 8773,10429
 (Anhalter Steg - Anhalter Bahnhof): Parkweg, wassergebundener Belag	Q1 8773,10429 8776,10548 8854,10712 8912,10846 8938,10872
 Erich-Lodemann-Str.: Betonstraße	Q1 15765,7567 15429,7948
 Erich-Lodemann-Str.: Betonstraße	Q1 15447,7965 15295,8141
@@ -1700,6 +1701,8 @@ Feldtmannstr.: asphaltiert	Q0 15239,17599 14754,17673
 Am Schweizer Garten: Asphalt	Q0 11868,13646 12001,13863
 (Volkspark Friedrichshain): Parkweg	Q1 12161,13711 12141,13609 12115,13540
 Kadiner Str.: Asphalt	Q0 13520,11963 13599,12253
+Südtorweg: wassergebundene Decke	Q1 -503,11782 -750,11740
+Südtorweg: asphaltiert	Q0 -750,11740 -794,11732 -940,11708
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 364,4829 319,4906 168,5092 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2240,6904 2116,6861 2054,6840 1975,6818
@@ -4423,7 +4426,7 @@ Sensburger Allee: Asphalt	Q0 456,11233 326,11391 200,11428 59,11479 -33,11517 -3
 Coubertin-Platz: Asphalt	Q0 -708,11602 -750,11740
 Friedrich-Friesen-Allee: Asphalt	Q0 -1359,11741 -1362,11807 -1345,11864
 Tharauer Allee: Asphalt	Q0 -1483,11283 -1634,11346 -1731,11425 -1829,11337
-Gutsmuthsweg: Asphalt	Q0 -496,11884 -490,11718
+Gutsmuthsweg: Asphalt	Q0 -505,11882 -503,11782 -496,11714
 Glockenturmstr.: Beton	Q0 -2209,11222 -1966,11466 -1863,11559 -1792,11625
 Glockenturmstr.: Kopfsteinpflaster	Q2 -1792,11625 -1694,11716 -1409,11774
 Glockenturmstr.: Asphalt	Q0 -1409,11774 -1396,11757
@@ -4518,13 +4521,13 @@ Kleine Markusstr.: Beton	Q2 12037,12092 11974,12110 11969,12054 12021,12037
 (nördliches Spreeufer): Parkweg mit Kanten	Q2 5676,12323 5667,12287
 Machandelweg: Asphalt	Q0 -426,13030 -332,12981
 Machandelweg: Asphalt	Q1 -332,12981 -233,12872 -185,12822 -87,12720
-Machandelweg: Kopfsteinpflaster	Q2 -87,12720 99,12273 77,12260
+Machandelweg: Kopfsteinpflaster	Q2 -87,12720 90,12277 -45,12243
 Jasminweg: Asphalt	Q1 -435,12997 -365,12788
 Wacholderweg: Beton	Q0 -233,12872 -365,12788
 Wacholderweg: Verbundsteine	Q1 -365,12788 -286,12663 -264,12656 -247,12667 -238,12689 -248,12718
 Machandelweg: Kleinpflaster	Q1 -248,12718 -217,12778 -185,12822
 (Wacholderweg - Rominterallee): Asphalt, Bordsteine	Q0 -365,12788 -396,12749
-(Machandelweg - Rossiter Weg): Verbundsteine	Q1 77,12260 -125,12173
+(Rossiter Platz - Machandelweg): Gitterbrücke	Q2 -107,12220 -76,12236 -45,12243
 Rüsternallee (Charlottenburg): rauher Asphalt	Q1 738,12025 789,12053 863,12039
 Rüsternallee (Charlottenburg): rauher Asphalt mit Löchern	Q2 941,12020 1105,11973 1307,11916 1519,11853 1673,11814
 Ratzeburger Allee: rauher Asphalt	Q1 783,12162 789,12053

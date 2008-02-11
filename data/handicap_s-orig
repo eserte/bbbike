@@ -655,7 +655,7 @@ Weinstr.: Fußgänger	q1 11953,13437 11982,13471
 (Mollstr. - Barnimstr.): Fußgänger	q1 11723,13139 11754,13199
 Brüder-Grimm-Gasse: Fußgänger	q2 8351,11163 8343,11133
 (zum Anhalter Steg): eng, Fußgänger	q2 8659,10239 8685,10317 8726,10351
-(Anhalter Steg): Fußgänger	q1 8726,10351 8773,10429
+(Anhalter Steg): Fußgänger	q1 8726,10351 8760,10408 8773,10429
 (Anhalter Steg - Anhalter Bahnhof): Fußgänger	q1 8773,10429 8776,10548 8854,10712 8912,10846 8938,10872
 (Linkstr. - Alte Potsdamer Str.): Fußgänger, schmal	q3 8474,11350 8389,11378
 Voxstr.: Fußgänger	q3 8309,11390 8375,11368
@@ -753,7 +753,9 @@ Uferweg an der Kongreßhalle: noch im Bau	q2::inwork 7782,12623 7745,12603 7710,1
 (Parkweg Kranzallee): Fußgänger	q1 -526,10985 -535,11096
 (Teufelsseechaussee - Waldschulallee): Fußgänger	q1 194,10846 355,10740
 (Teufelsseechaussee - Maikäferpfad): Fußgänger	q1 573,10109 460,10193 332,10286 41,10501
-Gutsmuthsweg: Fußgänger (nur bei Veranstaltungen ein Problem)	q1 -496,11884 -490,11718
+Gutsmuthsweg: Fußgänger (nur bei Veranstaltungen ein Problem)	q1 -505,11882 -503,11782 -496,11714
+Südtorweg: Fußgänger (nur bei Veranstaltungen ein Problem)	q1 -503,11782 -750,11740
+Rossiter Weg: Fußgänger (nur bei Veranstaltungen ein Problem)	q0 -107,12220 -122,12197 -212,12126 -272,12039
 (Fußgängertunnel S-Bhf Jungfernheide): Fußgänger	q3 3320,13796 3365,13695
 (Olbestr. - Lamberstr.): Fußgänger	q2 3292,13622 3304,13685 3365,13695
 (Goslaer Ufer - Am Bahnhof Jungfernheide): Fußgänger	q1 4195,13695 4156,13914 4151,13961 4076,14203 4011,14245
@@ -777,7 +779,7 @@ Merowingerweg: Fußgänger, schmal	q2 1041,11169 1065,11216
 Wandalenallee: Fußgänger	q1 736,11206 711,11199
 Flinsberger Platz: Fußgänger	q1 2919,8582 2973,8569
 (Wacholderweg - Rominterallee): Fußgänger	q1 -365,12788 -396,12749
-(Machandelweg - Rossiter Weg): Fußgänger	q2 77,12260 -125,12173
+(Machandelweg - Rossiter Weg): Fußgänger	q2 -45,12243 -76,12236 -107,12220
 Frauenburger Pfad: Fußgänger, schmal	q2 474,10869 579,10864 677,10864 775,10864
 Willenburger Pfad: Fußgänger, schmal	q2 576,10729 673,10724
 (Uferweg Hubertussee): Fußgänger, schmal	q3 2190,8903 2170,8841 2155,8793 2214,8752 2268,8746 2298,8712 2279,8674 2233,8670 2153,8693 1949,8788 1902,8814 1834,8893 1809,8916 1761,8936
@@ -823,7 +825,8 @@ Bootshausweg: Fußgänger, eng	q2 -1073,16610 -1067,16635 -1092,16659 -1156,16689 
 #: by: Karin Millonig:
 Rufacher Weg: enge Straße	q2 12207,1704 12179,1758 12160,1817 12255,2058 12582,2129 12738,2162
 #: by: Benno Koch [AM]
-Nelly-Sachs-Str.: Verkehrsberuhigter Bereich	q4 23993,14797 24253,14888 24349,14922
+#: corrected_by: srt (q4 -> q2) (common sense!)
+Nelly-Sachs-Str.: Verkehrsberuhigter Bereich	q2 23993,14797 24253,14888 24349,14922
 #: by: torsten albrecht [AM]
 Karl-Pokern-Str.: spielende Kinder	q1 26079,5057 26034,5056 25984,5070 25860,5067 25732,5065
 #: by: ingo [AM]

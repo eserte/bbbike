@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.361 2008/02/08 23:12:41 eserte Exp eserte $
+# $Id: bbbike,v 3.363 2008/02/10 23:07:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -229,7 +229,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.361 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.363 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -5219,6 +5219,7 @@ sub standard_selection_handle {
 	(sub {
 	     my($offset, $maxbytes) = @_;
 	     my($inslauf) = join(" ", @inslauf_selection);
+	     return undef if $offset > length($inslauf);
 	     substr($inslauf, $offset, $maxbytes);
 	 });
 }
@@ -12399,70 +12400,24 @@ sub leavepoint {
 sub enterstr {
     my $c = shift;
 
-    if ($devel_host) { # new code XXX
-	my @balloon_info = balloon_info_from_all_tags($c);
-	if (@balloon_info) {
-	    $act_value{Strasse} = $balloon_info[0];
-	    $str_label->configure(-fg => 'black');
-	    if (defined $c_balloon) {
-	    TRY_BALLOON:
-		{
-		    if ($use_c_balloon >= 2) {
-			if ($leave_after) {
-			    $leave_after->cancel;
-			    undef $leave_after;
-			}
-			my $str = balloon_info_from_all_tags($c);
-			if (defined $str) {
-			    $c_balloon->Popup($str);
-			    last TRY_BALLOON;
-			}
-		    }
-		    $c_balloon->Deactivate;
-		}
-	    }
-	}
-	return;
-    } else { # XXX old code 
-	my(@tags) = $c->gettags('current');
-	my @l;
-	if (grep { $_ eq 'rw' } @tags) {
-	    # Special handling for cyclepaths
-	    (my $rw_code) = $tags[2] =~ /^rw-(RW\d+)/;
-	    my $name = Radwege::code2name($rw_code);
-	    if (defined $name) {
-		push @l, $name;
-	    }
-	} else {
-	    $act_value{Strasse} = $tags[1];
-	    $act_value{Strasse} =~ s/\|.*$//; # Teil hinter "|" abschneiden
-	    if (($edit_mode || $edit_normal_mode) and defined $tags[3] and $tags[3] =~ /-(\d+)$/) {
-		$act_value{Strasse} .= " [" . ($1+1) . "]"; # Zeilennummer
-	    }
-	    $str_label->configure(-fg => 'black');
-
-	    if ($hs_label->cget(-fg) eq 'black') {
-		push @l, $act_value{Haltestelle};
-	    }
-	    if (defined $act_value{Strasse} && $act_value{Strasse} ne '') {
-		push @l, $act_value{Strasse};
-	    }
-	}
-
+    my @balloon_info = balloon_info_from_all_tags($c);
+    if (@balloon_info) {
+	$act_value{Strasse} = $balloon_info[0];
+	$str_label->configure(-fg => 'black');
 	if (defined $c_balloon) {
-	    if (@l && $use_c_balloon >= 2) {
-		if ($leave_after) {
-		    $leave_after->cancel; undef $leave_after;
+	TRY_BALLOON:
+	    {
+		if ($use_c_balloon >= 2) {
+		    if ($leave_after) {
+			$leave_after->cancel;
+			undef $leave_after;
+		    }
+		    my $str = balloon_info_from_all_tags($c);
+		    if (defined $str) {
+			$c_balloon->Popup($str);
+			last TRY_BALLOON;
+		    }
 		}
-		my $str;
-		if (1) {
-		    $str = balloon_info_from_all_tags($c);
-		}
-		if (!defined $str) {
-		    $str = join(" / ", @l);
-		}
-		$c_balloon->Popup($str);
-	    } else {
 		$c_balloon->Deactivate;
 	    }
 	}
@@ -12663,7 +12618,24 @@ sub show_info {
 	#warn $index;
     }
     my $strname = $tags[1];
-    if ($tags[0] =~ /^[ub]-fg/) {
+    my $good_link_for_strname = 1;
+    my $outside_berlin = 0; # XXX works only for landstrassen, but not for wasser, flaechen, s/rbahn, sehenswuerdigkeiten ... outside berlin
+    if ($tags[0] =~ m{^(?:
+			(?:[ub]|kn)-fg
+		       )
+		    }x) {
+	$strname = $tags[2];
+    } elsif ($tags[0] =~ m{^sperre}) {
+	$strname = $tags[2];
+	$good_link_for_strname = 0;
+    } elsif ($tags[0] =~ m{^(?:qs|hs|ql|hl)}) {
+	$good_link_for_strname = 0;
+    } elsif ($tags[0] =~ m{^l$}) {
+	$outside_berlin = 1;
+    } elsif ($tags[0] =~ /^lsa/) {
+	undef $strname; # no meaningful name
+    } elsif ($tags[0] =~ m{^o$}) {
+	$outside_berlin = 1;
 	$strname = $tags[2];
     }
 
@@ -12717,7 +12689,9 @@ sub show_info {
 		$comments_pos_net->{"${first}_${second}"}) {
 		foreach my $pos (@{$comments_pos_net->{"${first}_${second}"}}) {
 		    my $r = $str_obj{"comm"}->get($pos);
-		    push @comments, $r->[Strassen::NAME];
+		    if ($r->[Strassen::NAME] ne $strname) {
+			push @comments, $r->[Strassen::NAME];
+		    }
 		}
 	    }
 	}; warn $@ if $@;
@@ -12757,7 +12731,7 @@ sub show_info {
     }
 
     my $show_info_sub = sub {
-	my(@txt_and_tag) = @_;
+	my($name, $good_link_for_strname, $outside_berlin, $important_txt_and_tag, $unimportant_txt_and_tag) = @_;
 	#my $tl_tag = "info-$base_tag"; # one window per canvas type
 	my $tl_tag = "info"; # one window for all
 	my $info_top = redisplay_top($top, $tl_tag,
@@ -12778,16 +12752,23 @@ sub show_info {
 	my $current_link_url;
 	my $link_menu = $info_text->Menu(-title => M"Linkmenü",
 					 -tearoff => 0);
+
+	my $copy_link = sub {
+	    my($url) = @_;
+	    $url = $current_link_url if !defined $url;
+
+	    # Primary selection (for emacs, only works 1st time for xterm/mozilla...)
+	    $info_top->SelectionOwn;
+	    $info_top->SelectionHandle(sub {
+					   my($offset,$maxbytes) = @_;
+					   return undef if $offset > length($url);
+					   substr($url, $offset, $maxbytes);
+				       });
+	};
 	$link_menu->command
 	    (-label => M"Link kopieren",
-	     -command => sub {
-		 # Primary selection (for emacs, only works 1st time for xterm/mozilla...)
-		 $info_top->SelectionOwn;
-		 $info_top->SelectionHandle(sub {
-						my($offset,$maxbytes) = @_;
-						substr($current_link_url, $offset, $maxbytes);
-					    });
-	     });
+	     -command => sub { $copy_link->() },
+	    );
 	my $show_url = sub {
 	    my($linkcount, $url, $my_link_menu) = @_;
 	    $info_text->tagBind
@@ -12816,64 +12797,87 @@ sub show_info {
 	$info_text->delete("1.0", "end");
 	my $linkcount = 1;
 
-	for(my $i=0; $i<=$#txt_and_tag; $i+=2) {
-	    my($txt, $tag) = @txt_and_tag[$i, $i+1];
-	    for my $txtline (split /\n/, $txt) {
-		my $pos = 0;
-		while ($txtline =~ m{^(.*?)((?:ftp|https?)://\S+)}g) {
-		    my($pre_text, $link_text) = ($1, $2);
-		    $info_text->insert("end", $pre_text, $tag);
-		    $info_text->insert("end", $link_text, "link$linkcount");
-		    $show_url->($linkcount, $link_text);
-		    $linkcount++;
-		    $pos = pos($txtline);
-		}
-		$info_text->insert("end", substr($txtline, $pos), $tag);
+	if (defined $name && $name !~ m{^\s*$}) {
+	    $info_text->insert("end", M("Name")."\n", "bold");
+	    if (!$good_link_for_strname) {
+		$info_text->insert("end", "$name\n");
+	    } else {
+		$info_text->insert("end", $name, "link$linkcount");
+
+		my $google_url = "http://www.google.com/search?";
+		require CGI;
+		CGI->import('-oldstyle_urls');
+		(my $name = $name) =~ s{(str)\.}{$1aße}gi;
+		($name, my @cityparts) = Strasse::split_street_citypart($name);
+		my $common_q = ($outside_berlin ? '' : qq{Berliner }) .
+		    qq{"$name"} . (@cityparts ? " ".join(" ",@cityparts) : "");
+		my $url        = $google_url . CGI->new({ q => qq{site:de.wikipedia.org $common_q} })->query_string;
+		my $common_url = $google_url . CGI->new({ q => $common_q })->query_string;
+
+		my $www_link_menu = $info_text->Menu(-title => M"Linkmenü",
+						     -tearoff => 0);
+		$www_link_menu->command
+		    (-label => M"Link kopieren",
+		     -command => sub { $copy_link->($url) },
+		    );
+		$www_link_menu->command
+		    (-label => M"Allgemeine Google-Suche",
+		     -command => sub {
+			 require WWWBrowser;
+			 main::status_message("URL: $common_url", "info");
+			 WWWBrowser::start_browser($common_url);
+		     }
+		    );
+
+		$show_url->($linkcount, $url, $www_link_menu);
+		$linkcount++;
 		$info_text->insert("end", "\n");
 	    }
+	    $info_text->insert("end", "\n");
 	}
+
+	my $write_txt_and_tag = sub {
+	    my(@txt_and_tag) = @_;
+	    for (my $i=0; $i<=$#txt_and_tag; $i+=2) {
+		my($txt, $tag) = @txt_and_tag[$i, $i+1];
+		for my $txtline (split /\n/, $txt) {
+		    my $pos = 0;
+		    while ($txtline =~ m{^(.*?)((?:ftp|https?)://\S+)}g) {
+			my($pre_text, $link_text) = ($1, $2);
+			$info_text->insert("end", $pre_text, $tag);
+			$info_text->insert("end", $link_text, "link$linkcount");
+			$show_url->($linkcount, $link_text);
+			$linkcount++;
+			$pos = pos($txtline);
+		    }
+		    $info_text->insert("end", substr($txtline, $pos), $tag);
+		    $info_text->insert("end", "\n");
+		}
+	    }
+	    if (@txt_and_tag) {
+		$info_text->insert("end", "\n\n");
+	    }
+	};
+
+	$write_txt_and_tag->(@$important_txt_and_tag) if @{ $important_txt_and_tag || [] };
 
 	my $comment_label_end_index;
 	if (@comments) {
-	    $info_text->insert("end", "\n\n" . M("Kommentare").": ", "bold");
+	    $info_text->insert("end", M("Kommentare").": ", "bold");
 	    $comment_label_end_index = $info_text->index("end - 1c");
 	    $info_text->insert("end", "\t" . join("\n\t", @comments), "comments_text");
+	    $info_text->insert("end", "\n\n");
 	}
 	if (defined $area) {
-	    $info_text->insert("end",
-			       "\n\n" . M("Fläche") . ":", "bold",
+	    $info_text->insert("end", M("Fläche") . ":", "bold",
 			       sprintf("\t%.2f km²", $area) . M(" (dieses Teilstück)"), undef); # XXX Msg
+	    $info_text->insert("end", "\n\n");
 	}
 	if (defined $total_len) {
-	    $info_text->insert("end",
-			       "\n\n" . M("Länge") . ":", "bold",
+	    $info_text->insert("end", M("Länge") . ":", "bold",
 			       sprintf("\t%.2f km", $total_len) . M(" (dieses Teilstück)"), undef); # XXX Msg
+	    $info_text->insert("end", "\n\n");
 	}
-
-	$info_text->insert("end", "\n\n" . M("Koordinaten") . "\n", "bold");
-	if (@polarcoord) {
-	    $info_text->insert("end", M("Polar (DMS)") . ":\t$polarcoord[0]\n\t$polarcoord[1]\n");
-	}
-	if (@polarcoord2) {
-	    $info_text->insert("end", M("Polar (DMM)") . ":\t$polarcoord2[0]\n\t$polarcoord2[1]\n");
-	}
-	if (defined $px && defined $py) {
-	    $info_text->insert("end", M("Polar (DDD)") . ":\t$py\n\t$px\n");
-	}
-	if (defined $gkk_zone_potsdam) {
-	    $info_text->insert("end", "GKK (Potsdam):\t[$gkk_zone_potsdam] $gkk_easting_potsdam/$gkk_northing_potsdam\n");
-	}
-	if (defined $gkk_zone_wgs84) {
-	    $info_text->insert("end", "GKK (WGS 84):\t[$gkk_zone_wgs84] $gkk_easting_wgs84/$gkk_northing_wgs84\n");
-	}
-	if (defined $utm_ze) {
-	    $info_text->insert("end", "UTM (WGS 84):\t[$utm_ze/$utm_zn] $utm_x/$utm_y\n");
-	}
-	if (defined $etrs_east) {
-	    $info_text->insert("end", "ETRS 89:\t$etrs_east/$etrs_north\n");
-	}
-	$info_text->insert("end", "BBBike:\t$sx,$sy\n");
-	$info_text->insert("end", "\n");
 
 	$info_text->insert("end", "Links\n", "bold");
 	# Mapserver XXX move to function for creating URL
@@ -12931,6 +12935,8 @@ sub show_info {
 	# XXX maybe use Karte::trim_accuracy instead of int?
 	my $real_coords = join(",", map { int } anti_transpose($coords[0], $coords[1]));
 
+	my $mapserver_logo_photo = load_photo($top, 'mapserver_logo', -persistent => 1);
+	my $need_indentation = !$mapserver_logo_photo;
 	for my $def (@mapserver_def) {
 	    my($mapserver_url, $mapserver_label, $is_local) = @$def;
 	    my $url = "$mapserver_url/coords=" . $real_coords;
@@ -12938,14 +12944,22 @@ sub show_info {
 	    if (@layers) {
 		$url .= "/" . join("/", map { "layer=$_" } @layers);
 	    }
-	    $info_text->insert("end", $mapserver_label, ["link$linkcount", "iconindent"]);
+	    if ($mapserver_logo_photo) {
+		$info_text->imageCreate("end", -image => $mapserver_logo_photo,
+					-align => "bottom", -padx => 2, -pady => 2);
+	    }
+	    $info_text->insert("end", $mapserver_label, ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
 	    $show_url->($linkcount, $url);
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
 
 	    if ($advanced && !$is_local) {
+		if ($mapserver_logo_photo) {
+		    $info_text->imageCreate("end", -image => $mapserver_logo_photo,
+					    -align => "bottom", -padx => 2, -pady => 2);
+		}
 		$info_text->insert("end", $mapserver_label . " (kurzer Link)",
-				   ["link$linkcount", "iconindent"]);
+				   ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
 		$show_url->($linkcount, sub {
 				if (exists $long_url_to_short_url{$url}) {
 				    return $long_url_to_short_url{$url};
@@ -12996,17 +13010,14 @@ sub show_info {
 						     -tearoff => 0);
 		$www_link_menu->command
 		    (-label => M"Link kopieren als Ziel",
-		     -command => sub {
-			 $info_top->SelectionOwn;
-			 $info_top->SelectionHandle(sub { $current_link_url });
-		     });
+		     -command => sub { $copy_link->() },
+		    );
 		$www_link_menu->command
 		    (-label => M"Link kopieren als Start",
 		     -command => sub {
 			 my $current_start_link_url = $current_link_url;
 			 $current_start_link_url =~ s{ziel}{start}g;
-			 $info_top->SelectionOwn;
-			 $info_top->SelectionHandle(sub { $current_start_link_url });
+			 $copy_link->($current_start_link_url);
 		     });
 		$www_link_menu->command
 		    (-label => M"Link kopieren als Start und Ziel",
@@ -13014,8 +13025,7 @@ sub show_info {
 			 my $current_start_link_url = $current_link_url;
 			 $current_start_link_url =~ s{ziel}{start}g;
 			 my $complete_link_url = "$current_start_link_url\n$current_link_url";
-			 $info_top->SelectionOwn;
-			 $info_top->SelectionHandle(sub { $complete_link_url });
+			 $copy_link->($complete_link_url);
 		     });
 
 		$show_url->($linkcount, sub {
@@ -13207,6 +13217,33 @@ sub show_info {
 				});
 	}
 
+	{
+	    $info_text->insert("end", "\n\n" . M("Koordinaten") . "\n", "bold");
+	    if (@polarcoord) {
+		$info_text->insert("end", M("Polar (DMS)") . ":\t$polarcoord[0]\n\t$polarcoord[1]\n");
+	    }
+	    if (@polarcoord2) {
+		$info_text->insert("end", M("Polar (DMM)") . ":\t$polarcoord2[0]\n\t$polarcoord2[1]\n");
+	    }
+	    if (defined $px && defined $py) {
+		$info_text->insert("end", M("Polar (DDD)") . ":\t$py\n\t$px\n");
+	    }
+	    if (defined $gkk_zone_potsdam) {
+		$info_text->insert("end", "GKK (Potsdam):\t[$gkk_zone_potsdam] $gkk_easting_potsdam/$gkk_northing_potsdam\n");
+	    }
+	    if (defined $gkk_zone_wgs84) {
+		$info_text->insert("end", "GKK (WGS 84):\t[$gkk_zone_wgs84] $gkk_easting_wgs84/$gkk_northing_wgs84\n");
+	    }
+	    if (defined $utm_ze) {
+		$info_text->insert("end", "UTM (WGS 84):\t[$utm_ze/$utm_zn] $utm_x/$utm_y\n");
+	    }
+	    if (defined $etrs_east) {
+		$info_text->insert("end", "ETRS 89:\t$etrs_east/$etrs_north\n");
+	    }
+	    $info_text->insert("end", "BBBike:\t$sx,$sy\n");
+	    $info_text->insert("end", "\n");
+	}
+
 	eval {
 	    require Astro::Sunrise;
 	    Astro::Sunrise->VERSION(0.85);
@@ -13232,21 +13269,23 @@ sub show_info {
 
 	    $info_text->insert("end", "\nSonnenaufgang/-untergang\n", "bold");
 	    $info_text->insert("end", <<EOF);
-Sonnenaufgang:   $sunrise_real
+Sonnenaufgang:\t$sunrise_real
 Dämmerung ab:
-  bürgerliche:   $sunrise_civil
-  nautische:     $sunrise_nautical
-  astronomische: $sunrise_astro
+  bürgerliche:\t$sunrise_civil
+  nautische:\t$sunrise_nautical
+  astronomische:\t$sunrise_astro
 
-Sonnenuntergang: $sunset_real
+Sonnenuntergang:\t$sunset_real
 Dämmerung bis:
-  bürgerliche:   $sunset_civil
-  nautische:     $sunset_nautical
-  astronomische: $sunset_astro
+  bürgerliche:\t$sunset_civil
+  nautische:\t$sunset_nautical
+  astronomische:\t$sunset_astro
 
 EOF
 	};
 	warn $@ if $@;
+
+	$write_txt_and_tag->(@$unimportant_txt_and_tag) if @{ $unimportant_txt_and_tag || [] };
 
 	if (defined &show_info_ext) {
 	    eval {
@@ -13268,97 +13307,108 @@ EOF
 	}
     };
 
-    # XXX zu viel Code dupliziert!
-    my(%info, $info_file);
-    if (defined $str_file{$base_tag} && $str_file{$base_tag} =~ /\.shp$/) {
-	(my $dbf_file = $str_file{$base_tag}) =~ s/\.shp$/.dbf/;
-	require BBBikeAdvanced;
-	my $index;
-	for (@tags) {
-	    if (/^$base_tag-(\d+)/) {
-		$index = $1;
-		last;
-	    }
-	}
-	if (defined $index) {
-	    my $dbf_info = get_dbf_info($dbf_file, $index);
-	    if (defined $dbf_info) {
-		if (@tags > 3) {
-		    my $text = splice @tags, 2, 1;
-		    unshift @tags, $text, "";
+    my @important_txt_and_tag;
+    my @info_txt_and_tag;
+    my @internal_canvas_tags;
+
+ FIND_INFO: {
+	if (defined $str_file{$base_tag} && $str_file{$base_tag} =~ /\.shp$/) {
+	    (my $dbf_file = $str_file{$base_tag}) =~ s/\.shp$/.dbf/;
+	    require BBBikeAdvanced;
+	    my $index;
+	    for (@tags) {
+		if (/^$base_tag-(\d+)/) {
+		    $index = $1;
+		    last;
 		}
-		$show_info_sub->("$dbf_info\n", undef,
-				 "\nInterne Canvas-Tags:\n", "bold",
-				 join("\n", @tags), undef);
-		return;
 	    }
-	}
-    }
-
-    eval {
-	require DB_File;
-	require Fcntl;
-	if (!$is_p) {
-	    if ($str_file{$base_tag} !~ m|^/|) {
-		$str_file{$base_tag} = "$datadir/$str_file{$base_tag}";
-	    }
-	    $info_file = $str_file{$base_tag} . "-info";
-	} else {
-	    if ($p_file{$base_tag} !~ m|^/|) {
-		$p_file{$base_tag} = "$datadir/$p_file{$base_tag}";
-	    }
-	    $info_file = $p_file{$base_tag} . "-info";
-	}
-    };warn $@ if $@;
-
-    if ($info_file && tie %info, 'DB_File', $info_file, &Fcntl::O_RDONLY) {
-	warn "Use $info_file ...\n";
-      TRY:
-	{
-	    foreach my $i (1 .. 4) {
-		if (defined $tags[$i]) {
-		    if (defined $info{$tags[$i]}) {
-			$show_info_sub->("Info:\n", "bold",
-					 $info{$tags[$i]});
-			last TRY;
+	    if (defined $index) {
+		my $dbf_info = get_dbf_info($dbf_file, $index);
+		if (defined $dbf_info) {
+		    if (@tags > 3) {
+			my $text = splice @tags, 2, 1;
+			unshift @tags, $text, "";
 		    }
-		    if ($tags[$i] =~ /^L\d+-(\d+)/) {
-			my $id = $1;
-			foreach my $type (qw(s p)) {
-			    if (defined $info{"$type-$id"}) {
-				$show_info_sub->("Info:\n", "bold",
-						 $info{"$type-$id"});
+		    push @important_txt_and_tag, "$dbf_info\n", undef;
+		    push @internal_canvas_tags, join("\n", @tags), undef;
+		    last FIND_INFO;
+		}
+	    }
+	}
+
+	my(%info, $info_file);
+	eval {
+	    require DB_File;
+	    require Fcntl;
+	    if (!$is_p) {
+		if ($str_file{$base_tag} !~ m|^/|) {
+		    $str_file{$base_tag} = "$datadir/$str_file{$base_tag}";
+		}
+		$info_file = $str_file{$base_tag} . "-info";
+	    } else {
+		if ($p_file{$base_tag} !~ m|^/|) {
+		    $p_file{$base_tag} = "$datadir/$p_file{$base_tag}";
+		}
+		$info_file = $p_file{$base_tag} . "-info";
+	    }
+	}; warn $@ if $@;
+
+	if ($info_file && tie %info, 'DB_File', $info_file, &Fcntl::O_RDONLY) {
+	    warn "Use $info_file ...\n";
+	TRY: {
+		foreach my $i (1 .. 4) {
+		    if (defined $tags[$i]) {
+			if (defined $info{$tags[$i]}) {
+			    push @info_txt_and_tag, $info{$tags[$i]}, undef;
+			    last TRY;
+			}
+			if ($tags[$i] =~ /^L\d+-(\d+)/) {
+			    my $id = $1;
+			    foreach my $type (qw(s p)) {
+				if (defined $info{"$type-$id"}) {
+				    push @info_txt_and_tag, $info{"$type-$id"}, undef;
+				    last TRY;
+				}
+			    }
+			    if (defined $info{$id}) {
+				push @info_txt_and_tag, $info{$id}, undef;
 				last TRY;
 			    }
 			}
-			if (defined $info{$id}) {
-			    $show_info_sub->("Info:\n", "bold",
-					     $info{$id});
-			    last TRY;
-			}
 		    }
 		}
 	    }
-	    $show_info_sub->("Interne Canvas-Tags:\n", "bold",
-			     join("\n", @tags), undef);
+	    push @internal_canvas_tags, join("\n", @tags), undef;
+	    untie %info;
+	    last FIND_INFO;
 	}
-	untie %info;
-    } else {
+
 	if ($advanced) {
 	    if (@tags > 3) {
 		my $text = splice @tags, 2, 1;
 		unshift @tags, $text, "";
 	    }
-	    $show_info_sub->("Interne Canvas-Tags:\n", "bold",
-			     join("\n", @tags), undef);
-	} else {
-	    if ($tags[0] =~ /^L\d+-(fg|img)$/) {
-		$show_info_sub->($tags[2]); # show name
-	    } else { # maybe more special cases?
-		$show_info_sub->($tags[1]); # show name
-	    }
+	    push @internal_canvas_tags, join("\n", @tags), undef;
 	}
     }
+
+    if (@internal_canvas_tags) {
+	unshift @internal_canvas_tags, M("Interne Canvas-Tags").":\n", "bold";
+    }
+    if (@info_txt_and_tag) {
+	unshift @info_txt_and_tag, M("Info").":\n", "bold";
+    }
+    $show_info_sub->($strname,
+		     $good_link_for_strname,
+		     $outside_berlin,
+		     [
+		      @important_txt_and_tag,
+		      @info_txt_and_tag,
+		     ],
+		     [
+		      @internal_canvas_tags,
+		     ],
+		    );
 }
 
 sub hypertext_widget {
@@ -16172,7 +16222,12 @@ sub show_route_strname {
     if (defined $t) {
 	$t->SelectionOwn;
 	# XXX maxbytes beachten
-	$t->SelectionHandle(sub { route_info_to_text() });
+	$t->SelectionHandle(sub {
+				my($offset, $maxbytes) = @_;
+				my $res = route_info_to_text();
+				return undef if $offset > length($res);
+				$res;
+			    });
     }
 
     my($bf, $f1);

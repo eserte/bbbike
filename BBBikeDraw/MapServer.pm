@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.40 2008/02/09 16:49:34 eserte Exp $
+# $Id: MapServer.pm,v 1.41 2008/02/11 21:45:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.40 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.41 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -330,6 +330,9 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.40 $ =~ /(\d+)\.(\d+)/);
 		$v = ($v ? 'ON' : 'OFF');
 	    }
 	    $vars->{$k2} = $v;
+	}
+	if ($vars->{MULTI_ROUTE_COORDS}) {
+	    $vars->{HAS_MULTI_ROUTE_COORDS} = 1; # for Template 2.14 compatibility
 	}
 
 	$t->process("$mapserver_dir/" . $conf->TemplateMap,

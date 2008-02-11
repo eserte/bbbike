@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.24 2007/04/01 18:39:16 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.25 2008/02/11 22:38:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -27,6 +27,7 @@ use vars qw(%lazy_str_drawn %lazy_str
 	    %lazy_known_grids $lazy_master);
 use vars qw($xadd_anchor $yadd_anchor @extra_tags $ignore);
 use BBBikeGlobalVars;
+use vars qw($XXX_use_old_R_symbol);
 
 # @defs_p_o @defs_p_o_abk
 use vars qw(@defs_str @defs_p
@@ -505,7 +506,7 @@ sub BBBikeLazy::plotstr_on_demand {
 	    my $no_overlap_label;
 
 	    # XXX Duplikate in plot_point:
-	    my $rbahn_length = ($abk eq 'r'
+	    my $rbahn_length = ($abk eq 'r' && $XXX_use_old_R_symbol
 				? do { my(%a) = get_symbol_scale('r');
 				       $a{-width}/2 }
 				: 0);

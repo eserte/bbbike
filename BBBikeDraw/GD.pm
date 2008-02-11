@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.62 2008/02/09 21:38:54 eserte Exp $
+# $Id: GD.pm,v 1.64 2008/02/11 21:29:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -40,7 +40,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.62 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.64 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush, %thickness, %outline_thickness);
 
@@ -145,6 +145,7 @@ sub init {
 	      '/usr/X11R6/lib/X11/fonts/bitstream-vera/Vera.ttf',
 	      '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # found on Debian
+	      '/var/www/domains/radzeit.de/www/public/mapserver/brb/fonts/LucidaSansRegular.ttf', # private @ radzeit
 	     ]);
 
 	$TTF_CITY ||= $self->search_ttf_font
@@ -153,6 +154,7 @@ sub init {
 	      '/usr/X11R6/lib/X11/fonts/bitstream-vera/Vera.ttf',
 	      '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # found on Debian
+	      '/var/www/domains/radzeit.de/www/public/mapserver/brb/fonts/luxisr.ttf' # private @ radzeit
 	     ]);
 
 	$TTF_TITLE ||= $self->search_ttf_font
@@ -160,6 +162,7 @@ sub init {
 	      '/usr/X11R6/lib/X11/fonts/TTF/luxisb.ttf',
 	      '/usr/X11R6/lib/X11/fonts/bitstream-vera/VeraBd.ttf',
 	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed-Bold.ttf', # found on Debian
+	      $TTF_CITY,
 	     ]);
     }
 
@@ -1353,11 +1356,13 @@ sub search_ttf_font {
     my($self, $candidates) = @_;
     return if !defined &GD::Image::stringFT;
     for my $font (@$candidates) {
+	next if !$font;
 	if (-r $font) {
 	    return $font;
 	}
     }
     warn "Cannot find font in candidates @$candidates" if $^W;
+    undef;
 }
 
 # To avoid loading of GDHeavy

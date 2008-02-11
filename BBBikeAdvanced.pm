@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.197 2008/02/02 20:46:43 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.198 2008/02/10 16:55:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2008 Slaven Rezic. All rights reserved.
@@ -3835,13 +3835,16 @@ use vars qw(%xbase);
 sub get_dbf_info {
     my($dbf_file, $index) = @_;
     if (!$xbase{$dbf_file}) {
-	require XBase;
+	if (!eval { require XBase; 1 }) {
+	    perlmod_install_advice("XBase");
+	    return;
+	}
 	$xbase{$dbf_file} = XBase->new($dbf_file) or do {
 	    warn XBase->errstr;
 	    return undef;
 	};
     }
-    join(":", $xbase{$dbf_file}->get_record($index-1));
+    join(":", $xbase{$dbf_file}->get_record($index));
 }
 
 sub build_text_cursor {

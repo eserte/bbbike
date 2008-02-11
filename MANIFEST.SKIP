@@ -117,6 +117,7 @@ data/inaccessible_strassen$
 data/inaccessible_landstrassen$
 data/Potsdam.coords.data$
 data/\.strassen\.tmp
+data/\.gesperrt\.tmp
 # XXX warum geht das hier nicht?
 data/kinos-info$
 data/ampeln-info$
@@ -230,6 +231,7 @@ cgi/gridserv.cgi$
 ^data/kneipen.yml$
 ^data/exits$
 ^data/Makefile$
+^data/comments_danger$
 ^Strassen/QuadTree.pm$
 ^Strassen/StrassenNetzNew.pm$
 ^Strassen/Touratech.pm$
@@ -288,6 +290,21 @@ cgi/gridserv.cgi$
 ^images/behindertengerecht.gif$
 ^images/behindertengerecht_klein.gif$
 ^images/behindertengerecht_klein2.gif$
+^images/achtung.gif
+^images/achtung.png
+^images/achtung.xpm
 ^doc/links.html$
 ^doc/snippets.pod$
 ^doc/watchsites.html$
+^images/bbbike_splash.svg
+^images/eisenbahn.gif
+^images/eisenbahn.png
+^images/eisenbahn.xpm
+^images/eisenbahn15.png
+^images/eisenbahn_klein.gif
+^images/eisenbahn_klein.png
+^images/eisenbahn_klein.xpm
+^images/eisenbahn_mini.gif
+^images/eisenbahn_mini.png
+^images/eisenbahn_mini.xpm
+^images/monument.svg

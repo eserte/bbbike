@@ -31,7 +31,20 @@ for streets!).
 
 Better interface for the center coordinate configuration entry, e.g.
 choosing the current map center, or letting the user choose the coord
-in the map.
+in the map. -> use Tk::Getopt's custom E<quot>widgetE<quot>
+functionality; this would set a new map mode with a new cursor (what
+text next to the pointer?),maybe show also a help dialog with a cancel
+button. The user may click on the map, or hit escape/cancel, or close
+the getopt window, everything restoring the old map mode and in the
+first case setting the new coords.
+
+(This feature request was already in the list:)
+
+Option -centerc auch schöner zugänglich machen. Eine Möglichkeit
+wäre, im Optionseditor einen Button neben der Option anzubieten, der
+in den set-coord-mode geht, cursor aendert, das tk-getopt-fenster
+withdraw-t, und darauf wartet, dass der benutzer auf die karte klickt
+oder E<quot>cancelE<quot> drückt.
 
 =item * (H4) (feature)
 
@@ -43,18 +56,26 @@ center coordinate or center street?
 Question: let the user only choose Berlin streets or also streets
 outer Berlin?
 
+Also here: use Tk::Getopt's custom widget functionality.
+
 =item * (M4) (feature)
 
 GPS-Dialog: show a pre-generated route name. And check if the route
 number is useful for something (GPX may handle this, but maybe it's
-not worth the hassle i.e. could overwrite existing routes).
+not worth the hassle i.e. could overwrite existing routes). Currently
+the meaningless name E<quot>TRACBACKE<quot> is generated if the route
+name is left empty.
 
 =item * (M3) (feature)
 
 Introduce GPS device types for the GPS card in the option editor. This
 would set the waypoint number, name length and charset automatically.
 A E<quot>customE<quot> setting will still be available to set these
-values manually.
+values manually. How to get for the device types? Maybe something like
+etrex b/w series, etrex color series, gpsmap etc.
+
+Related: the charset for the etrex color series does not include some
+characters like <, > ...
 
 =item * (H3) (feature)
 
@@ -69,6 +90,11 @@ balloon_info_from_all_tags should also deal with E<quot>pointE<quot>
 values (Haltestellen, Einbahnstraßen...). Then enterpoint could be
 replaced by an universal enterstr. Also, enterroute should be probably
 replaced by an extended enterstr.
+
+Related: do I then still need the distinction between Ort/Bahnhof and
+Straße/Strecke? But this is useful to quickly get to the chooser
+(although I think this is not known to the public, and I also do not
+use this functionality at all)
 
 =item * (M1) (feature)
 
@@ -509,13 +535,16 @@ E<quot>OkE<quot>, besseren Msgcat-Support (eigene Module dafür?)).
 choose_ort, S- und U-Bahnen: neben dem Bahnhof die zugehörige(n)
 Linien anzeigen
 
-=item * (M2)
+=item * (M1) (bug)
 
-Option -centerc auch schöner zugänglich machen. Eine Möglichkeit
-wäre, im Optionseditor einen Button neben der Option anzubieten, der
-in den set-coord-mode geht, cursor aendert, das tk-getopt-fenster
-withdraw-t, und darauf wartet, dass der benutzer auf die karte klickt
-oder E<quot>cancelE<quot> drückt.
+choose_ort, Orte: the E<quot>E<verbar>E<quot> is visible in the list.
+Not nice. Easy to replace with a space or so?
+
+=item * (H1) (feature)
+
+choose_ort, Orte: maybe have some other sorting possibilities, e.g. by
+category, or by state. In this case the A..Z bar has to be removed,
+probably.
 
 =item * (M2)
 
