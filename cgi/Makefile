@@ -11,7 +11,8 @@ httpd.conf: httpd.conf.tpl Makefile
 	      --define ROOT_DIR=$(ROOT_DIR) \
 	      --define CGI_SCRIPTS="$(CGI_SCRIPTS)" \
 	      --define CGI_TYPE="$(CGI_TYPE)" \
-	      httpd.conf.tpl > httpd.conf
+	      httpd.conf.tpl > httpd.conf~
+	mv httpd.conf~ httpd.conf
 	chmod 644 httpd.conf
 	@echo
 	@echo Please add
@@ -23,7 +24,8 @@ alt-httpd.conf:	httpd.conf.st
 	@perl -I../lib -MText::ScriptTemplate -MCwd -MFile::Spec -e '$$st=Text::ScriptTemplate->new;$$st->load("httpd.conf.st"); chdir ".." or die; $$st->setq(rootdir=>File::Spec->rel2abs(cwd));print $$st->fill'
 
 GNUmakefile:	Makefile ../miscsrc/b2gmake
-	../miscsrc/b2gmake < Makefile > GNUmakefile
+	../miscsrc/b2gmake < Makefile > GNUmakefile~
+	mv GNUmakefile~ GNUmakefile
 	chmod ugo+r GNUmakefile
 
 rights:
