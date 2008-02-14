@@ -58,13 +58,16 @@ outer Berlin?
 
 Also here: use Tk::Getopt's custom widget functionality.
 
-=item * (M4) (feature)
+=item * (M3) (feature)
 
 GPS-Dialog: show a pre-generated route name. And check if the route
 number is useful for something (GPX may handle this, but maybe it's
 not worth the hassle i.e. could overwrite existing routes). Currently
 the meaningless name E<quot>TRACBACKE<quot> is generated if the route
-name is left empty.
+name is left empty. -> Route::Simplify now generates a route name if
+not supplied. Though the created name could be better, and it is also
+not shown yet in the route dialog. Question: what about the old name?
+Store it for later reuse? Maybe only if the user entered his own name?
 
 =item * (M3) (feature)
 
@@ -1598,14 +1601,11 @@ nice if there was a common solution for other Unices, too)
 Possibilities under Windows:
 
 - Interface gpsbabel (but then gpsbabel has to be bundled...)
+  -> Already implemented, and seems to work. Bundling is missing, though...
 
 - Use Device::USB and try to make it work with LibUsb-Win32
 (L<http://sourceforge.net/projects/libusb-win32/>). But I have yet to
 get Device::USB working with the garmin...
-
-=item * (M1)
-
-Try Win32::GUI::SplashScreen as splash alternative.
 
 =item * (M2)
 
@@ -1649,8 +1649,9 @@ Verzeichnis installieren lasse. -> So:
 
 =item * (M1)
 
-Langfristig auf Strawberry Perl umsteigen, sobald ich alle Module 
-aus Bundle/BBBike_windist.pm erzeugen kann.
+Langfristig auf Strawberry Perl umsteigen, sobald ich alle Module aus
+Bundle/BBBike_windist.pm erzeugen kann. Und sobald Strawberry Perl mit
+Windows Vista funktioniert.
 
 =item * (M5)
 
