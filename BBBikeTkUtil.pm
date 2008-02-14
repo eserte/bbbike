@@ -4,7 +4,7 @@
 # $Id: BBBikeTkUtil.pm,v 1.2 2006/09/11 22:17:11 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2008 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,8 +14,11 @@
 
 package BBBikeTkUtil;
 use strict;
-use vars qw($VERSION);
+use vars qw($VERSION @EXPORT_OK);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+
+use base 'Exporter';
+@EXPORT_OK = qw(sort_hlist pack_buttonframe);
 
 # Sort HList by index $inx. Only toplevel children are sorted, and only
 # hlists with text items will work at all. Styles get lost.
@@ -66,6 +69,22 @@ sub sort_hlist {
 	       (defined $p->{Widget}[$j]   ? (-widget   => $p->{Widget}[$j])   : ()),
 	       (defined $p->{Style}[$j]    ? (-style    => $p->{Style}[$j])    : ()),
 	      );
+	}
+    }
+}
+
+sub pack_buttonframe {
+    my($w,$buttons) = @_;
+    if ($Tk::VERSION >= 804) {
+	my $column = 0;
+	for my $cw (@$buttons) {
+	    $cw->grid(-row => 0, -column => $column, -sticky => "ew", -padx => 2);
+	    $w->gridColumnconfigure($column, -uniform => 1);
+	    $column++;
+	}
+    } else {
+	for my $cw (@$buttons) {
+	    $cw->pack(-side => "left");
 	}
     }
 }
