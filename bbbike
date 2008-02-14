@@ -149,6 +149,7 @@ use File::Basename;
 ## DEBUG_END
 use BBBikeUtil;
 use BBBikeUtil qw(min max first clone);
+use BBBikeTkUtil qw(pack_buttonframe);
 use BBBikeVar;
 use BBBikeCalc;
 use BBBikeTrans;
@@ -3949,6 +3950,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 			         my $pod = $top->Pod(-file => $full_path,
 						     -title => $label);
 				 set_as_toolwindow($pod);
+				 $toplevel{"pod-$label"} = $pod;
 			     };
 			     if ($@) {
 				 status_message($@, "die");
@@ -7063,6 +7065,39 @@ sub set_bindings {
     $top->bind("<Shift-KP_1>" => sub { $c->xview(scroll => -5, 'units');
 				       $c->yview(scroll =>  5, 'units') });
 
+    # Cycling through toplevels
+    $top->bind("all", "<Control-Tab>" => sub { focus_next_toplevel(); Tk->break });
+    $top->bind(".", "<Control-Tab>" => sub { });
+    $top->bind("all", "<Control-Shift-Tab>" => sub { focus_prev_toplevel(); Tk->break });
+    $top->bind(".", "<Control-Shift-Tab>" => sub { });
+
+}
+
+sub focus_next_toplevel { _focus_nextprev_toplevel(+1) }
+sub focus_prev_toplevel { _focus_nextprev_toplevel(-1) }
+
+sub _focus_nextprev_toplevel {
+    my($dir) = @_;
+    my @all_toplevels = grep { $_->state eq "normal" } ($top, values(%toplevel));
+    my $current_toplevel = $top->focusCurrent->toplevel;
+    my $new_i;
+    for(my $i=0; $i<=$#all_toplevels;$i++) {
+	if ($all_toplevels[$i] == $current_toplevel) {
+	    $new_i = $i + $dir;
+	    last;
+	}
+    }
+    if (!defined $new_i) {
+	$new_i = 0;
+	warn "cannot find current toplevel <$current_toplevel> in list <@all_toplevels>, fallback to main window <$top>";
+    } else {
+	if ($new_i < 0) {
+	    $new_i = $#all_toplevels;
+	} elsif ($new_i > $#all_toplevels) {
+	    $new_i = 0;
+	}
+    }
+    $all_toplevels[$new_i]->focus;
 }
 
 sub set_map_mode {
@@ -11085,9 +11120,11 @@ sub choose_ort {
 			      )->pack(-side => 'left');
 	    }
 
+	    my @bfb;
 	    $showb  = $f->Button(Name => 'show',
 				 -command => sub { $show_sub->() },
-				)->pack(-side => 'left');
+				);
+	    push @bfb, $showb;
 	    $showb->bind("<2>" => sub { $show_sub->(-zoom_view => 1) });
 	    $showb->bind("<3>" => sub { $show_sub->(-dont_center => 1) });
 	    $closeb = $f->Button(Name => 'close',
@@ -11102,7 +11139,9 @@ sub choose_ort {
 					 }
 				     }
 				 },
-				)->pack(-side => 'left');
+				);
+	    push @bfb, $closeb;
+	    pack_buttonframe($f, \@bfb);
 
 	    $t->bind('<<CloseWin>>' => sub { $closeb->invoke });
 	    for (qw(Return Double-1 2)) {
@@ -11615,15 +11654,16 @@ sub choose_from_plz {
 	$e->bind('<Return>' => $search_window);
 	$srchb->configure(-command => $search_window);
 	$t->bind('<<CloseWin>>' => $close_window);
+	my @bfb;
 	$showb = $bf->Button
 	  (Name => 'show',
 	   -state => 'disabled',
-	   -command => $show_sub_lb)->grid(-row => 0, -column => 1,
-					   -sticky => 'ew');
+	   -command => $show_sub_lb);
+	push @bfb, $showb;
 	$lb->bind('<Return>' => $show_sub_lb);
-	$bf->Button(Name => 'close',
-		    -command => $close_window)->grid(-row => 0, -column => 2,
-						     -sticky => 'ew');
+	push @bfb, $bf->Button(Name => 'close',
+		    	       -command => $close_window);
+	pack_buttonframe($bf, \@bfb);
 	#$t->Popup(@popup_style);
 	my($x,$y) = ($c->rootx+10, $c->rooty+10);
 	$t->geometry("+$x+$y");
@@ -16503,10 +16543,12 @@ sub show_route_strname {
 		     -font => $font{'small'},
 		    )->pack(-side => 'left');
 
+    my @bfb;
     my $endb = $bf->Button(Name => 'end',
 			   -command => $withdraw_sub,
-			  )->pack(-side => 'left');
-    $bf->Button
+			  );
+    push @bfb, $endb;
+    push @bfb, $bf->Button
       (-text => M"Sichern",
        -command => sub {
 	   my($file) = $bf->getSaveFile
@@ -16528,21 +16570,21 @@ sub show_route_strname {
 		    'err');
 	   }
        },
-      )->pack(-side => 'left');
-    $bf->Button
+      );
+    push @bfb, $bf->Button
       (-text => M"Sichern (GPX)",
        -command => sub { save_route_as_optimized_gpx() },
-      )->pack(-side => "left");
-    $bf->Button
+      );
+    push @bfb, $bf->Button
       (-text => M("GPS (Garmin)"),
        -command => sub { send_route_to_gps() },
-      )->pack(-side => 'left');
+      );
     $t->bind('<Control-g>' => sub { send_route_to_gps() }); # XXX re-use toplevel binding?
     # If there is a txt => palm converter and a palm transfer program,
     # then show this button:
     require BBBikePalm;
     if (can_create_and_transfer_palm_docs()) {
-	create_palm_button($bf)->pack(-side => 'left');
+	push @bfb, create_palm_button($bf);
     }
     my $print_text_sub = sub {
 	my $font = shift;
@@ -16589,12 +16631,11 @@ sub show_route_strname {
 	    }
 	}
     };
-    my $db;
-    $db = $bf->Button
+    push @bfb, $bf->Button
       (-text => M"Drucken",
        -command => sub { $print_text_sub->($ps_fixed_font||"Courier7") },
-      )->pack(-side => 'left');
-    $bf->Button
+      );
+    push @bfb, $bf->Button
       (-text => M"Mail",
        -command => sub {
 	   if (@route_info) {
@@ -16605,11 +16646,12 @@ sub show_route_strname {
 		       $show_route_start, $show_route_ziel),
 		  -data => route_info_to_text());
 	   }
-       })->pack(-side => 'left');
+       });
     $t->bind('<Up>'   => sub { $route_strname_lbox->yview(scroll => -1,
 							  'units') });
     $t->bind("<Down>" => sub { $route_strname_lbox->yview(scroll => 1,
 							  'units') });
+    pack_buttonframe($bf, \@bfb);
     $endb->focus;
     #$t->Popup(@popup_style);
 
