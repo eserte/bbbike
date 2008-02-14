@@ -409,10 +409,13 @@ EOF
     $cfc_top->Ruler->rulerPack;
     {
 	my $f = $cfc_top->Frame->pack(-anchor => "e");
-	$f->Button(Name => "ok",
-		   -command => sub { $weiter = 1 })->pack(-side => "left");
+	my @bfb;
+	push @bfb, $f->Button(Name => "ok",
+			      -command => sub { $weiter = 1 });
 	my $cb = $f->Button(Name => "close",
-			    -command => sub { $weiter = -1 })->pack(-side => "left");
+			    -command => sub { $weiter = -1 });
+	push @bfb, $cb;
+	pack_buttonframe($f, \@bfb);
 	$cfc_top->bind('<<CloseWin>>' => sub { $cb->invoke });
     }
 
@@ -1171,6 +1174,8 @@ BEGIN {
     *Mfmt = \&main::Mfmt;
 }
 
+use BBBikeTkUtil qw(pack_buttonframe);
+
 # From Tk::Plot (mine)
 sub make_tics {
     my($tmin, $tmax, $logscale, $base_log) = @_;
@@ -1275,15 +1280,16 @@ sub tk_interface {
     my $weiter = 0;
     {
 	my $f = $t->Frame->grid(-columnspan => 2, -sticky => "ew");
-	my $cb;
-	Tk::grid($f->Button(-text => ($args{-test} ?
-				      $self->ok_test_label :
-				      $self->ok_label),
-			    -command => sub { $weiter = 1 }),
-		 $cb = $f->Button(Name => "cancel",
-				  -text => M"Abbruch",
-				  -command => sub { $weiter = -1 }),
-		);
+	my @bfb;
+	push @bfb, $f->Button(-text => ($args{-test} ?
+					$self->ok_test_label :
+					$self->ok_label),
+			      -command => sub { $weiter = 1 });
+	my $cb = $f->Button(Name => "cancel",
+			    -text => M"Abbruch",
+			    -command => sub { $weiter = -1 });
+	push @bfb, $cb;
+	pack_buttonframe($f, \@bfb);
 	$t->bind('<<CloseWin>>' => sub { $cb->invoke });
     }
     $t->gridColumnconfigure($_, -weight => 1) for (0..1);
