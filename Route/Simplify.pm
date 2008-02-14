@@ -37,7 +37,7 @@ sub Route::simplify_for_gps {
     my $obj = $Karte::Polar::obj;
     $Karte::Polar::obj = $Karte::Polar::obj if 0; # cease -w
 
-    my $routename = sprintf("%-8s", $args{-routename} || "TRACBACK");
+    my $routename = $args{-routename};
     my $routenumber = $args{-routenumber} || 1;
     my $str       = $args{-streetobj};
     my $net       = $args{-netobj};
@@ -49,6 +49,7 @@ sub Route::simplify_for_gps {
     my $waypointlength = $args{-waypointlength} || 10;
     my $waypointcharset = $args{-waypointcharset} || 'simpleascii';
     my $waypointscache = $args{-waypointscache} || {};
+    my $routenamelength = $args{-routenamelength} || 13;
 
     my %crossings;
     if ($str) {
@@ -62,7 +63,6 @@ sub Route::simplify_for_gps {
     use constant MAX_COMMENT => 45;
 
     my $simplified_route = { routenumber => $routenumber,
-			     routename   => $routename,
 			   };
 
     my @path;
@@ -180,7 +180,7 @@ sub Route::simplify_for_gps {
 		# XXX the "+" character is not supported by all Garmin devices
 		$short_crossing = $short_dir . join("+", map { s/\s+\(.*\)\s*$//; Strasse::short($_, $level, "nodot") } grep { defined } @cross_streets);
 		if ($waypointcharset ne 'latin1') {
-		    $short_crossing = Route::Simplify::_eliminate_umlauts($short_crossing);
+		    $short_crossing = Route::Simplify::_eliminate_umlauts_and_shorten($short_crossing);
 		}
 		last
 #		    if (length($short_crossing) + length($comment) <= MAX_COMMENT);
@@ -255,12 +255,29 @@ sub Route::simplify_for_gps {
     } continue {
 	$n++;
     }
+    
+    if (!$routename) {
+	if ($routetoname) {
+	    $routename = join("-",
+			      map {
+				  my $street = $routetoname->[$_][&StrassenNetz::ROUTE_NAME];
+				  $street = $street->[0] if ref $street eq 'ARRAY';
+				  substr(Route::Simplify::_eliminate_umlauts_and_shorten($street), 0, int($routenamelength/2))
+			      } (0, -1)
+			     );
+	} else {
+	    my @l = localtime;
+	    $l[5]+=1900; $l[4]++;
+	    $routename = "Route" . sprintf("%04d%02d%02d",@l[5,4,3]);
+	}
+    }
+    $simplified_route->{routename} = $routename;
 
     $simplified_route;
 }
 
 # ... and more
-sub _eliminate_umlauts {
+sub _eliminate_umlauts_and_shorten {
     my $s = shift;
     $s = GPS::Util::eliminate_umlauts($s);
     # And more shortenings:
