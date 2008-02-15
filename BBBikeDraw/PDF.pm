@@ -4,7 +4,7 @@
 # $Id: PDF.pm,v 2.49 2008/02/09 16:36:15 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2004,2008 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -52,6 +52,8 @@ sub init {
 	require BBBikeUtil;
 	if (BBBikeUtil::is_in_path("pdftk")) {
 	    $self->{_CompressTool} = "pdftk";
+	} elsif (0 && eval { require PDF::API2; require File::Temp; 1 }) {# XXX does not work, see below XXX
+	    $self->{_CompressTool} = "PDF::API2";
 	} elsif (eval { require CAM::PDF; require File::Temp; 1 }) {
 	    $self->{_CompressTool} = "CAM::PDF";
 	} else {
@@ -881,6 +883,26 @@ sub flush {
 		unlink $filename;
 		unlink $self->{_CompressTemporaryFilename};
 	    }
+	} elsif ($self->{_CompressTool} eq 'PDF::API2') {
+	    # XXX Does not work!!!
+	    my $pdf = PDF::API2->open($self->{Filename});
+ 	    my $page = $pdf->openpage(1)
+ 		or die "Cannot open page 1";
+	    $page->fixcontents;
+	    # XXX Especially this part does not work
+ 	    warn("compressing"),$_->compressFlate for $page->{Contents}->elementsof;
+	    if (defined $self->{_CompressOriginalFilename}) {
+		$pdf->saveas($self->{_CompressOriginalFilename});
+		warn eval { $compress_message->($self->{Filename}, $self->{_CompressOriginalFilename}) }
+		    if $VERBOSE;
+	    } else {
+		my $ofh = $self->{Fh};
+		my $pdf_contents = $pdf->stringify;
+		print $ofh $pdf_contents;
+		warn eval { $compress_message->($self->{Filename}, \length $pdf_contents) }
+		    if $VERBOSE;
+	    }
+	    unlink $self->{_CompressTemporaryFilename};
 	} elsif ($self->{_CompressTool} eq 'CAM::PDF') {
 	    my $pdf = CAM::PDF->new($self->{Filename});
 	    # XXX It's purely coincidence that the map drawing is objnum=3
