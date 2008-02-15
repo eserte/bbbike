@@ -7097,6 +7097,8 @@ sub _focus_nextprev_toplevel {
 	    $new_i = 0;
 	}
     }
+    $all_toplevels[$new_i]->raise;
+    # ->focus between toplevels does not seem to work under cygwin/x
     $all_toplevels[$new_i]->focus;
 }
 
