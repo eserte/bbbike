@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.70 2008/01/26 00:24:43 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.71 2008/02/17 20:04:25 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006,2007 Slaven Rezic. All rights reserved.
@@ -12,7 +12,15 @@
 # WWW:  http://bbbike.sourceforge.net
 #
 
+use BBBikeVar qw();
+
 $bbbike_makefile_admin = "";
+
+$bbbike_makefile_admin .= <<EOF;
+BBBIKE_STABLE_VERSION=	$BBBike::STABLE_VERSION
+BBBIKE_DISTFILE_SOURCE=	distfiles/BBBike-\$(BBBIKE_STABLE_VERSION).tar.gz
+
+EOF
 
 ######################################################################
 # POD files
@@ -295,7 +303,8 @@ rsync-cvs-repository-from-sourceforge:
 	cd $(HOME)/trash/bbbike-cvsroot && \
 	    rsync -av rsync://bbbike.cvs.sourceforge.net/cvsroot/bbbike/ ./
 
-# DISTRIBUTIONS ##########################################################
+######################################################################
+# DISTRIBUTIONS
 
 TMPDIR?=	/tmp
 BBBIKE_TMP=     $(TMPDIR)/$(DISTNAME)
@@ -465,7 +474,8 @@ predist:
 	${MAKE} bundles
 	@echo check bbbike in BBBike-$(VERSION) directory
 
-# DOCUMENTATION ##########################################################
+######################################################################
+# DOCUMENTATION
 
 CLEAN_AFTER_POD2HTML=$(RM_F) pod2html-*cache pod2htm?.?~~
 
@@ -496,7 +506,11 @@ clean_cache:
 pod-projdocs:
 	pod2projdocs -title BBBike -desc "Der Fahrradroutenplaner für Berlin und Brandenburg" -verbose -charset "iso-8859-1" -out /tmp/pods/ -lib `pwd`
 
-# PORTS, BINDISTS...####################################################
+######################################################################
+# PORTS, BINDISTS...
+
+######################################################################
+# FreeBSD
 
 fbsdport:
 	cd port/freebsd && env TMPDIR=$(TMPDIR) ./mkport.pl
@@ -535,6 +549,9 @@ fbsdport-pkg-plist-check: fbsdport
 	(cd ${VARPORTDIR} && find -d * \! -type d) | sort > ${TMPDIR}/pkg-plist
 	(cd ${VARPORTDIR} && find -d * -type d) | comm -13 ${TMPDIR}/OLD-DIRS - | sed -e 's#^#@dirrm #' | perl -le 'print join "", sort { (length($$b) <=> length($$a)) || ($$b cmp $$a) } <>' >> ${TMPDIR}/pkg-plist
 	diff -u ${TMPPORTDIR}/pkg-plist ${TMPDIR}/pkg-plist
+
+######################################################################
+# Windows
 
 BBBIKE_WINDOWS_VERSION=$(VERSION)
 WINBINDISTDIR=$(TMPDIR)/BBBike-$(BBBIKE_WINDOWS_VERSION)-Windows
@@ -580,6 +597,60 @@ winbindist: winbindist-pre
 	chmod 644 $(WINBINDIST)
 
 #XXX	[ -d /usr/ports/distfiles -a ! -l /usr/ports/distfiles/BBBike-$(VERSION)-Windows.zip ] && ln -s 
+
+######################################################################
+# Debian
+
+# Debian packages needed for (subparts of) BBBike, loosely
+# categorized:
+DEB_DEVEL=	cvs bison byacc flex g++ apt-show-versions pmake gcc \
+		libc6-dev libinline-perl strace rsync less make
+DEB_TEST=	libimage-info-perl libwww-mechanize-perl
+DEB_DRAW=	libgd2-xpm libgd2-xpm-dev perlmagick libimager-perl \
+		pdftk netpbm imagemagick libgd-gd2-perl ttf-bitstream-vera
+DEB_MAIL=	libmime-lite-perl libmailtools-perl
+DEB_DATA=	libstring-approx-perl libdbd-xbase-perl libxml-parser-perl \
+		libxml-twig-perl libdbi-perl libtie-ixhash-perl \
+		libobject-realize-later-perl libmldbm-perl \
+		libclass-accessor-perl libarchive-zip-perl \
+		libtemplate-perl libxml-libxml-perl libxml-simple-perl \
+		libyaml-perl libtext-unidecode-perl
+DEB_MISC=	libdate-calc-perl
+DEB_CGI=	libapache-session-perl apache-perl
+DEB_MAPSERVER=	mapserver-bin cgi-mapserver
+
+# All packages needed for full-flavoured Web server operation:
+DEB_ALL_CGI=	$(DEB_DEVEL)      \
+		$(DEB_TEST)       \
+		$(DEB_DRAW)       \
+		$(DEB_MAIL)       \
+		$(DEB_DATA)       \
+		$(DEB_MISC)       \
+		$(DEB_CGI)        \
+		$(DEB_MAPSERVER)  
+
+install-debian-for-cgi:	install-debian-packages-for-cgi \
+			install-debian-perlmods-for-cgi
+
+install-debian-packages-for-cgi:
+	apt-get install ${DEB_ALL_CGI}
+
+install-debian-perlmods-for-cgi:
+	cpan CPAN
+	cpan PDF::Image::GIFImage Apache::Session::Counted \
+	     Object::Iterate Palm::PalmDoc SVG WWW::Mechanize::FormFiller
+# Manchmal scheint hier -f (force) notwendig zu sein...
+	cpan CDB_File
+
+######################################################################
+# par
+
+pardist:
+	test -f $(BBBIKE_DISTFILE_SOURCE)
+	zcat $(BBBIKE_DISTFILE_SOURCE) | (cd /tmp && tar xfv -)
+	$(PERL) -MExtUtils::Manifest=maniread -e 'print join("\n", sort keys %{ maniread() })' | grep -v '^bbbike$$' > /tmp/bbbike-MANIFEST
+	cd /tmp/BBBike-$(BBBIKE_STABLE_VERSION) && \
+	    pp -A /tmp/bbbike-MANIFEST -vv -o /tmp/bbbike-$(BBBIKE_STABLE_VERSION)-$(OSNAME) bbbike
 
 ########################################################################
 
@@ -795,49 +866,8 @@ clean-cache:
 	-rm -f tmp/m_de_*
 	-rm -f tmp/*.cache
 
-# Debian packages needed for (subparts of) BBBike, loosely
-# categorized:
-DEB_DEVEL=	cvs bison byacc flex g++ apt-show-versions pmake gcc \
-		libc6-dev libinline-perl strace rsync less make
-DEB_TEST=	libimage-info-perl libwww-mechanize-perl
-DEB_DRAW=	libgd2-xpm libgd2-xpm-dev perlmagick libimager-perl \
-		pdftk netpbm imagemagick libgd-gd2-perl ttf-bitstream-vera
-DEB_MAIL=	libmime-lite-perl libmailtools-perl
-DEB_DATA=	libstring-approx-perl libdbd-xbase-perl libxml-parser-perl \
-		libxml-twig-perl libdbi-perl libtie-ixhash-perl \
-		libobject-realize-later-perl libmldbm-perl \
-		libclass-accessor-perl libarchive-zip-perl \
-		libtemplate-perl libxml-libxml-perl libxml-simple-perl \
-		libyaml-perl libtext-unidecode-perl
-DEB_MISC=	libdate-calc-perl
-DEB_CGI=	libapache-session-perl apache-perl
-DEB_MAPSERVER=	mapserver-bin cgi-mapserver
-
-# All packages needed for full-flavoured Web server operation:
-DEB_ALL_CGI=	$(DEB_DEVEL)      \
-		$(DEB_TEST)       \
-		$(DEB_DRAW)       \
-		$(DEB_MAIL)       \
-		$(DEB_DATA)       \
-		$(DEB_MISC)       \
-		$(DEB_CGI)        \
-		$(DEB_MAPSERVER)  
-
-install-debian-for-cgi:	install-debian-packages-for-cgi \
-			install-debian-perlmods-for-cgi
-
-install-debian-packages-for-cgi:
-	apt-get install ${DEB_ALL_CGI}
-
-install-debian-perlmods-for-cgi:
-	cpan CPAN
-	cpan PDF::Image::GIFImage Apache::Session::Counted \
-	     Object::Iterate Palm::PalmDoc SVG WWW::Mechanize::FormFiller
-# Manchmal scheint hier -f (force) notwendig zu sein...
-	cpan CDB_File
-
 ######################################################################
-# Tests
+# TESTS
 
 # Why this does not work with -j 2? Empty script files, immeditaly finished?
 #test-with-protocol:	test-with-protocol-code \

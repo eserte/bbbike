@@ -3567,6 +3567,21 @@ Java version does not compile anymore with Java 1.5
 
 =over
 
+=item * (M3)
+
+Try to build a PAR-based distribution. There seem to be some pitfalls,
+e.g. I rely on a working $FindBin for getting the data files, which
+does not work under PAR. And somehow X11 does not work at all on my
+system, I get a
+
+    couldn't connect to display ":0.0" at Tk/MainWindow.pm line 55.
+
+failure.
+
+Also some decisions have to be done, e.g.: which modules should be
+additionally included into the .par, include additional external
+programs like ghostview, netpbm, gpsbabel.
+
 =item * (H5)
 
 Move Windows distribution to Strawberry Perl 5.10.0.
