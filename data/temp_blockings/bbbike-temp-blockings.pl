@@ -10820,4 +10820,79 @@ EOF
 userdel	2::inwork 22178,30343 21872,30139 21561,30131 21172,29984
 EOF
      },
+     { from  => 1203374035, # 2008-02-18 23:33
+       until => 1207346400, # 2008-04-05 00:00
+       text  => 'Behrenstr. (Mitte) Richtung Bebelplatz zwischen Glinkastr. und Freidrichstr. Baustelle, Fahrtrichtung gesperrt (bis 04.04.08)',
+       type  => 'gesperrt',
+       source_id => 'IM_007843',
+       data  => <<EOF,
+userdel	1::inwork 9164,12172 9365,12196
+EOF
+     },
+     { from  => 1203374075, # 2008-02-18 23:34
+       until => 1203721200, # 2008-02-23 00:00
+       text  => 'Hultschiner Damm (Mahlsdorf) Richtung Köpenick zwischen Alt-Mahlsdorf und Elsenstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 22.02.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_007852',
+       data  => <<EOF,
+userdel	1::inwork 24658,11293 24735,11021 24637,10807
+EOF
+     },
+     { from  => 1203374120, # 2008-02-18 23:35
+       until => 1209592799, # 2008-04-30 23:59
+       text  => 'Oranienburger Str. (Mitte) Richtung Friedrichstr. zwischen Linienstr. und Friedrichstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 04.2008)',
+       type  => 'handicap',
+       source_id => 'IM_007850',
+       data  => <<EOF,
+userdel	q4::inwork; 9281,13374 9215,13392
+EOF
+     },
+     { from  => 1203202800, # 2008-02-17 00:00
+       until => 1230764400, # 2009-01-01 00:00
+       text  => 'B 001 Brandenburger Str. OD Jeserig Straßenbau Vollsperrung 18.02.2008-31.12.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -36720,-272 -37086,-305 -37725,-398 -38151,-616
+EOF
+     },
+     { from  => 1203289200, # 2008-02-18 00:00
+       until => 1209592800, # 2008-05-01 00:00
+       text  => 'B 103 Kyritz - Pritzwalk OD Buchholz, zw. Eggersdorfer Damm und OA Kanal- und Straßenbau Vollsperrung 19.02.2008-30.04.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -73678,77438 -73946,77861 -74038,78181
+EOF
+     },
+     { from  => 1206313200, # 2008-03-24 00:00
+       until => 1216850400, # 2008-07-24 00:00
+       text  => 'B 168 Prötzel - Tiefensee zw. Prötzel und Kreisgrenze Deckenerneuerung Vollsperrung 25.03.2008-23.07.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 48953,26802 48260,27132 46629,27232 44331,27632 44074,27889 41563,28973
+EOF
+     },
+     { from  => 1203462000, # 2008-02-20 00:00
+       until => 1203721200, # 2008-02-23 00:00
+       text  => 'B 246 Beelitz - Brück Bahnübergang Brück-Ausbau Gleisbauarbeiten Vollsperrung 21.02.2008-22.02.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -30811,-22899 -30149,-22937 -29244,-23127
+EOF
+     },
+     { from  => 1203202800, # 2008-02-17 00:00
+       until => 1220133600, # 2008-08-31 00:00
+       text  => 'L 029 Zehlendorf - Schmachtenhagen Brücke über die Bäke in der OD Schmachtenhagen Brückenneubau Vollsperrung 18.02.2008-30.08.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 4659,40821 4562,40526
+EOF
+     },
+     { from  => 1202598000, # 2008-02-10 00:00
+       until => 1212271200, # 2008-06-01 00:00
+       text  => 'L 141 Havelberger Str. OD Breddin Kanal- u. Straßenbauarbeiten Vollsperrung * 11.02.2008-31.05.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -70922,51604 -70980,51154 -71053,49770
+EOF
+     },
     );

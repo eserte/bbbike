@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.35 2008/02/09 17:44:01 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.38 2008/02/20 23:04:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006,2008 Slaven Rezic. All rights reserved.
@@ -143,7 +143,8 @@ sub set_user_agent {
 
 # $filename_or_scalar: may be a filename or a scalar ref to the image contents
 # $imagetype: the image type like "svg" or "pdf". May be omitted if supplying a filename
-# with proper extension.
+# with proper extension or if the fallback viewer (display or xv) may determine the type
+# by magic.
 # The pseudo image format "http.html" can be used to start a WWW browser.
 sub do_display {
     my($filename_or_scalar, $imagetype) = @_;
@@ -152,7 +153,7 @@ sub do_display {
     if (ref $filename_or_scalar eq 'SCALAR') {
 	require File::Temp;
 	my $fh;
-	($fh, $filename) = File::Temp::tempfile(SUFFIX => ".$imagetype",
+	($fh, $filename) = File::Temp::tempfile(SUFFIX => (defined $imagetype ? ".$imagetype" : ".image"),
 						UNLINK => !$debug,
 					       );
 	print $fh $$filename_or_scalar;
@@ -163,6 +164,7 @@ sub do_display {
     if (!defined $imagetype && $filename =~ m{\.([^\.]+)}) {
 	$imagetype = $1;
     }
+    $imagetype = "" if !defined $imagetype; # avoid warnings
 
     if ($imagetype eq 'svg') {
 	# prefer ImageMagick (needs at least version 6) over Mozilla
@@ -208,7 +210,7 @@ sub do_display {
 	    warn "Can't find a browser to display $filename";
 	}
     } else {
-	if (is_in_path("xv")) {
+	if (is_in_path("xv") && $imagetype ne "wbmp") {
 	    system("xv $filename &");
 	} elsif (is_in_path("display")) {
 	    system("display $filename &");

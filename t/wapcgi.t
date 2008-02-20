@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.22 2007/07/13 07:20:48 eserte Exp $
+# $Id: wapcgi.t,v 1.23 2008/02/20 23:06:36 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -14,7 +14,7 @@ use File::Temp qw(tempfile);
 use URI;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!eval q{
@@ -27,6 +27,10 @@ BEGIN {
 
     eval q{ use Image::Info qw(image_info) };
 }
+
+use FindBin;
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin");
+use BBBikeTest qw(get_std_opts $do_display do_display);
 
 # XXX Missing:
 # a test with a "real" user agent and a profile setting
@@ -44,9 +48,11 @@ if (defined $ENV{BBBIKE_TEST_WAPURL}) {
     push @wap_url, $ENV{BBBIKE_TEST_CGIDIR} . "/wapbbbike.cgi";
 }
 
-if (!GetOptions("wapurl=s" => sub { @wap_url = $_[1] },
+if (!GetOptions(get_std_opts("display"),
+		"wapurl=s" => sub { @wap_url = $_[1] },
+		"keep!" => \$File::Temp::KEEP_ALL,
 	       )) {
-    die "usage: $0 [-wapurl url]";
+    die "usage: $0 [-wapurl url] [-display] [-keep]";
 }
 
 if (!@wap_url) {
@@ -55,6 +61,7 @@ if (!@wap_url) {
 if (!@hdrs) {
     @hdrs = (["wbmp", Accept => "text/vnd.wap.wml"],
 	     ["gif",  Accept => "text/vnd.wap.wml, image/gif"],
+	     ["png",  Accept => "text/vnd.wap.wml, image/png"],
 	    );
 }
 
@@ -158,11 +165,13 @@ sub check_image {
     my($resp, $url) = @_;
     if ($resp->header('Content_Type') eq 'image/vnd.wap.wbmp') {
 	check_wbmp($resp->content, $url);
+	do_display(\($resp->content), "wbmp") if $do_display;
     } else {
     SKIP: {
 	    skip("image_info not defined", 1) unless defined &image_info;
 	    is(image_info(\$resp->content)->{file_media_type},
 	       $resp->header('Content_Type'), "Validate image in $url");
+	    do_display(\($resp->content)) if $do_display;
 	}
     }
 }

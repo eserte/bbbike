@@ -716,14 +716,14 @@ POE verwenden.
 XXX Stimmt das noch immer, auch mit Http.pm? Unter Unix scheint es gut
 zu laufen.
 
-=item * (M2)
+=item * (M1) (feature)
 
 Für das Drucken von Text: evtl. auch Netscape und print-Methode
 verwenden (?). Für Unix könnte man eine start netscape,
 netscape remote openFile/print-Kombination verwenden. Bei Windows?
 Netscape könnte man auch zum Mailabschicken verwenden,
 über mailto. Evtl. ein Modul für Netscape schreiben,
-daß die ganzen remote-Kommandos verwendet. Hier eine Liste:
+daß die ganzen remote-Kommandos verwendet. Hier eine alte Liste:
 
  %s: usage: OpenURL(url [ , new-window|window-name ] )
  %s: usage: OpenFile(file)
@@ -735,14 +735,20 @@ daß die ganzen remote-Kommandos verwendet. Hier eine Liste:
  %s: usage: addBookmark(url, title)
  %s: usage: htmlHelp(map-file, id, search-text)
 
+Die neuen Mozillas unterstützen weniger Kommandos. Siehe
+L<http://www.mozilla.org/unix/remote.html>. print() ist nicht mehr
+dabei, und funktioniert tatsächlich auch nicht mehr mit Seamonkey.
+mail() ist relativ uninteressant, weil man anscheinend nur To: angeben
+kann, aber weder Subject noch Body.
+
 Mit Xprt für X11 experimentieren (doc lesen).
 
-=item * (H1)
+=item * (H1) (feature)
 
 Ein LightWeight-Modul (CanvasMap) schreiben. Vielleicht irgendwann
 alles auf dieses Modul umschreiben.
 
-=item * (H1)
+=item * (H1) (feature)
 
 PerlPlusPlugin ausprobieren und BBBike dafür portieren. Sachen,
 die mir dafür einfallen: Ich brauche ein open(), das über
@@ -756,10 +762,6 @@ hyperrequire. Z.B.
 
 Irgendwo habe ich so etwas schon implementiert gesehen ... suchen!
 
-=item * (M2)
-
-Bei einem Resize muß auch das Progress-Canvas angepasst werden.
-
 =item * (H1)
 
 BBBikeContext.pm schreiben: gibt alles aus, was ich so brauche: $os,
@@ -771,16 +773,7 @@ Z<>=E<gt> Teilweise erledigt BBBikeRouting.pm einige dieser Sachen...
 
 =item * (H1)
 
-Speicheroptimierung.
-
-Folgende Symbole kommen im Dump von Devel::Symdump vor und
-bedürfen Klärung (warum, woher, benötigt?):
-
-    * English::* => in irgendeinem Tk-Modul
-    * DB::args
-    * Tk::Pretty::*
-    * re::*
-    * DirHandle::*
+Speicheroptimierung für kleine Systeme.
 
 Ein minimales System kann auf Folgendes verzichten:
 
@@ -806,7 +799,7 @@ Evtl. auch:
     * Tk::SRTProgress::*
     * Tk::UnderlineAll::*
 
-=item * (H1)
+=item * (H1) (feature)
 
 3D-Darstellung von Berlin (z.B. vier versetzte Flächen, die
 oberste in der Hintergrundfarbe und die anderen in der Schattenfarbe).
@@ -814,7 +807,7 @@ oberste in der Hintergrundfarbe und die anderen in der Schattenfarbe).
 Z<>=> Wo verwenden: overview-Fenster, overview-Button oder im CanvasMap
 anstelle der normalen Grenzen?
 
-=item * (H2)
+=item * (H2) (feature)
 
 Bike+Ride integrieren. Das würde in eine unterbrochene Route
 resultieren, deren Fahrzeiten addiert würden. Zusätzlich

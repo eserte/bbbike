@@ -1028,8 +1028,16 @@ LAYER
   GROUP route
   TYPE LINE
   STATUS ON
-#  DATA "### ROUTESHAPEFILE ###"
+[% IF ROUTE_COORDS.defined -%]
   FEATURE POINTS [% ROUTE_COORDS %] END END
+[% ELSIF HAS_MULTI_ROUTE_COORDS || MULTI_ROUTE_COORDS.defined -%][%# .defined does not work with older Template.pm -%]
+[%   FOR route_coords IN MULTI_ROUTE_COORDS -%]
+  FEATURE POINTS [% route_coords %] END END
+[%   END -%]
+[% ELSE -%]
+  DATA "### ROUTESHAPEFILE ###"
+  FEATURE POINTS ### ROUTECOORDS ### END END
+[% END -%]
 
 #TRANSPARENCY 50##XXX Wie am geschicktesten verwenden?
 

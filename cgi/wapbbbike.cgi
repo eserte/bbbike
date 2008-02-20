@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapbbbike.cgi,v 2.25 2007/05/24 22:50:19 eserte Exp $
+# $Id: wapbbbike.cgi,v 2.27 2008/02/20 23:04:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003,2004 Slaven Rezic. All rights reserved.
@@ -336,7 +336,8 @@ sub _any_image {
 	if ($convert_to eq 'gif') {
 	    $cmd = "pngtopnm $temp | ppmquant 256 | ppmtogif $temp2cmd";
 	} else { # wbmp
-	    $cmd = "pngtopnm $temp | ppmtopgm | pgmtopbm | pbmtowbmp $temp2cmd";
+	    # with the default pgmtopbm the resulting image is just white
+	    $cmd = "pngtopnm $temp | ppmtopgm | pgmtopbm -d8 | pbmtowbmp $temp2cmd";
 	}
 	#warn $cmd;
 	system($cmd);
@@ -719,8 +720,8 @@ sub tie_session {
     return \%sess;
 }
 
-return 1 if ((caller() and (caller())[0] ne 'Apache::Registry')
-	     or keys %Devel::Trace::); # XXX Tracer bug
+return 1 if ((caller() and (caller())[0] ne 'Apache::Registry'));
+#	     or keys %Devel::Trace::); # XXX Tracer bug XXX del, not anymore
 
 ######################################################################
 
