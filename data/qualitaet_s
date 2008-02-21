@@ -1762,6 +1762,13 @@ Grässeweg: guter Beton	Q0 -5510,13326 -5295,13415 -5217,13446
 Polkwitzer Str.: schlechtes Kopfsteinpflaster	Q3 21367,-420 21463,-434 21618,-456
 Würmseestr.: guter Asphalt	Q0 22095,1572 22178,1589 22300,1627
 (Hanns-Eisler-Str. - Thomas-Mann-Str.): asphaltiert	Q0 13550,14973 13324,15109 13328,15127 13132,15239
+Mönchsheimer Str.: guter Asphalt	Q0 30950,3985 30854,3947 30821,3951 30687,3999 30605,4028 30530,4053
+Mönchsheimer Str.: guter Asphalt	Q0 30526,4041 30394,4085
+Mönchsheimer Str.: guter Asphalt	Q0 30398,4095 30240,4144
+Siegmarstr.: guter Asphalt	Q0 21853,13784 21870,13852 21885,13954 21918,14219 21940,14413 21948,14501
+Heinrich-Böll-Str.: Asphalt	Q0 10178,20525 10251,20252 10225,20225 10068,20188
+Galileistr.: Beton	Q0 15698,8191 15443,8458
+Granatenstr.: mäßiges Kopfsteinpflaster	Q2 8589,18105 8918,18159
 Landreiterweg: guter Asphalt	Q0 14062,1846 14050,1904 13857,1975 13739,2004 13674,2011 13567,2008 13485,2007 13362,2000 13240,1993 13227,1974
 Wiesenweg (Spandau): guter Beton	Q0 -7595,13399 -7585,13388 -7595,13214 -7597,13159 -7592,13107
 Schädestr.: guter Asphalt	Q0 495,2133 556,2126 585,2129 668,2143 751,2172 824,2210
@@ -2090,7 +2097,7 @@ Wolliner Str.: Asphalt	Q0 10405,14425 10320,14608 10277,14691 10242,14765 10218,
 Am Pichelssee: Kopfsteinpflaster	Q2 -3370,11425 -3528,11100 -3537,10903
 Haderslebener Str.: mäßiges Kopfsteinpflaster	Q2 3899,6411 3893,6333 3878,6110
 Brentanostr.: schlechtes Kopfsteinpflaster	Q3 4096,6632 4058,6602 4054,6565 4050,6506 4045,6402 4039,6321 4028,6099 4006,5876
-Am Schonungsberg: Asphalt	Q0 30518,3753 30655,4186 30696,4314
+Am Schonungsberg: Asphalt	Q0 30518,3753 30605,4028 30655,4186 30696,4314
 Körnerstr.: schlechtes Kopfsteinpflaster	Q3 10653,20200 10597,20410 10537,20633 10521,20750
 Koserstr.: Kopfsteinpflaster	Q2 3403,6331 3309,6270 3209,6206 3118,6140 3112,6090 2950,6141
 Bartschiner Str.: schlechtes Kopfsteinpflaster	Q3 16878,859 16925,631 16946,487 17037,378 17003,337
@@ -2185,8 +2192,9 @@ Holsteinische Str.: Asphalt	Q0 5070,9720 5066,9645 5065,9407 5053,8979
 Dörfelweg	Q0 9730,-33 9578,-92 9500,-115
 Eisnerstr.: Asphalt	Q0 9500,-115 9693,-621
 Eisnerstr. - S.Bhf Buckower Chaussee: asphaltiert, allerdings an einigen Stellen Beschädigungen durch Baumwurzeln	Q0 9500,-115 9178,556
-(Unter dem S-Bhf. Schichauweg): Verbundsteinpflaster	Q1 9693,-621 9518,-668
-Miethepfad: Verbundsteinpflaster	Q1 9518,-668 9547,-754 9585,-859
+(unter der S-Bahn): Verbundsteinpflaster	Q1 9693,-621 9518,-668
+Miethepfad: Verbundsteinpflaster	Q1 9518,-668 9547,-754
+Miethepfad: Beton	Q0 9547,-754 9585,-859
 Schulzendorfer Str.: Asphalt	Q0 -596,23009 -915,22935 -1103,22889 -1299,22842 -1538,22800
 Schulzendorfer Str.: Fahrbahn Kopfsteinpflaster, guter Radweg	Q1 -1538,22800 -2024,22899 -2131,22810 -2176,22789
 Schulzendorfer Str.: Fahrbahn Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q1 -2176,22789 -2263,22748 -2348,22704 -2377,22689 -2504,22626
@@ -2493,7 +2501,7 @@ Alter Bernauer Heerweg: Kopfsteinpflaster	Q2 6668,22746 7072,22905 7782,23172 79
 Alter Bernauer Heerweg: wassergebundene Decke	Q1 8203,23321 8584,23421
 Alte Fasanerie: Sandweg, Spurrillen, mäßig bis gut	Q1 7416,22349 8015,22512
 Freizeitpark Lübars: befestigter Sandweg mittlerer Güte	Q1 8015,22512 8062,22631 7782,23172
-Schillerstr.: Betonplatten	Q1 10063,20493 10326,20566 10537,20633 10635,20693 10743,20764
+Schillerstr.: Betonplatten	Q1 10063,20493 10178,20525 10326,20566 10537,20633 10635,20693 10743,20764
 Beuthstr.: Asphalt mit Löchern	Q1 10843,20301 10786,20272 10653,20200 10452,20109 10309,20032 10137,19993
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2 14934,15860 14802,15857 14720,15905 14619,15920
 Friedhofstr.: sehr guter Asphalt	Q0 15534,15675 15598,15793
