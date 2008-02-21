@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.363 2008/02/10 23:07:42 eserte Exp $
+# $Id: bbbike,v 3.364 2008/02/21 20:31:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -230,7 +230,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.363 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.364 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4975,10 +4975,14 @@ dazu verwendet wird",
 	  longhelp => M"Garmin-Symbol-ID. Falls leer gelassen, wird das Summit-Symbol verwendet",
 	  var => \$gps_waypointsymbol,
 	 ],
-	 ['gpsdevice','=s',($os eq 'win' ? "COM1" : ($os_bsd ? '/dev/cuaa0' : '/dev/ttyS0')),
-	  choices => (  $os eq 'win' ? [(map {  "COM$_" 			       } (1..4)), "USB" ]
+	 ['gpsdevice','=s',($os eq 'win'   ? "COM1" :
+			    $os_bsd        ? '/dev/cuaa0' :
+			    $^O eq 'linux' ? '/dev/ttyUSB0' 
+				           : '/dev/ttyS0'
+			   ),
+	  choices => (  $os eq 'win' ? ["USB", (map {  "COM$_" 			       } (1..4))]
 		      : $os_bsd      ? [map {  "/dev/cuaa$_"		       } (0..3) ]
-		      :                [map { ("/dev/ttyS$_", "/dev/ttyUSB$_") } (0..3) ]
+		      :                [map { ($_."0", $_."1", $_."2", $_."3") } ("/dev/ttyUSB", "/dev/usb/ttyUSB", "/dev/tts/USB", "/dev/ttyS") ]
 		     ),
 	  label => M"GPS-Device", var => \$gps_device],
 
@@ -18702,7 +18706,10 @@ sub IncBusy {
     return if !Tk::Exists($top);
 
     if (!$top->{'Busy'}) {
-	if (eval q{ require Tk::InputO; 1 }) {
+	# Explicitely check for Windows - Tk::InputO might be install e.g.
+	# in a cygwin install for Tk/X11 and fail then if Tk/MSWin32 is
+	# used.
+	if ($Tk::platform ne 'MSWin32' && eval q{ require Tk::InputO; 1 }) {
 	    for my $t ($top, values(%toplevel)) {
 		next if !Tk::Exists($t);
 		next if $args{-except} && $args{-except}{$t};
