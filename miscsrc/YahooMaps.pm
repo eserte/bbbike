@@ -4,7 +4,7 @@
 # $Id: YahooMaps.pm,v 1.2 2007/09/01 12:46:48 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -108,6 +108,13 @@ sub show_map_at_point {
 
 return 1 if caller;
 
-YahooMaps->show_map_at_point(longitude => $ARGV[0], latitude => $ARGV[1]);
+if (@ARGV < 2) {
+    die "usage: $^X @{[__FILE__]} longitude latitude options...
+
+For example:
+$^X @{[__FILE__]} 13.5 52.5 zoom 4 image_height 320 image_width 240
+";
+}
+YahooMaps->show_map_at_point(longitude => $ARGV[0], latitude => $ARGV[1], @ARGV[2..$#ARGV]);
 
 __END__
