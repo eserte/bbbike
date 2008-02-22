@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.109 2008/02/09 16:52:59 eserte Exp $
+# $Id: Makefile,v 1.109 2008/02/09 16:52:59 eserte Exp eserte $
 #
 
 # Targets:
@@ -45,6 +45,7 @@ EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html \
 			opensearch/opensearch.js
 CGI_FILES=		bbbike.cgi \
 			bbbike-data.cgi \
+			bbbike-snapshot.cgi \
 			bbbikegooglemap.cgi \
 			wapbbbike.cgi \
 			mapserver_address.cgi \

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetzHeavy.pm,v 1.25 2007/03/27 21:34:32 eserte Exp $
+# $Id: StrassenNetzHeavy.pm,v 1.25 2007/03/27 21:34:32 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -315,8 +315,7 @@ sub make_net_cyclepath {
 	my @kreuzungen = @{$ret->[Strassen::COORDS()]};
 	last if @kreuzungen == 0;
 	my $cat = $ret->[Strassen::CAT()];
-	my $i;
-	for($i = 0; $i < $#kreuzungen; $i++) {
+	for my $i (0 .. $#kreuzungen-1) {
 	    my $str_cat   = ($cat =~ /^(H|HH|B)$/ ? 'H' : 'N');
 	    if (exists $c_net->{$kreuzungen[$i]}{$kreuzungen[$i+1]}) {
 		$net->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $str_cat."_RW";

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.176 2008/02/03 19:45:15 eserte Exp $
+# $Id: Makefile,v 2.177 2008/02/22 21:07:25 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -173,8 +173,7 @@ strassen:	.strassen.tmp plaetze
 
 .strassen.tmp: strassen-orig
 	$(CONVERT_ORIG) -keep-directive alias strassen-orig > $@~
-	cp $@~ $@
-	rm $@~
+	mv $@~ $@
 
 .for f in ${COOKED_TARGETS}
 _f_raw_${f}:=${f:S/-cooked$//}
@@ -267,8 +266,7 @@ wasserstrassen-lowres:  wasserstrassen wasserumland wasserumland2 \
 flaechen: flaechen-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) flaechen-orig > flaechen~
-	cp $@~ $@
-	rm $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 
 green:	green-orig
@@ -287,16 +285,14 @@ landstrassen: landstrassen-orig plaetze
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) landstrassen-orig > $@~
 	${GREPSTRASSEN} --namerx ' \(Potsdam\)' plaetze >> $@~
-	cp $@~ $@
-	rm $@~
+	mv $@~ $@
 	-rm -f landstrassen-cooked
 	-@$(READONLY) $@
 
 landstrassen2: landstrassen2-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) landstrassen2-orig > $@~
-	cp $@~ $@
-	rm $@~
+	mv $@~ $@
 	-rm -f landstrassen2-cooked
 	-@$(READONLY) $@
 
@@ -305,8 +301,7 @@ strassen_bab: strassen_bab-orig
 	cat strassen_bab-orig |\
 		${GREPSTRASSEN} -v -sectionrx "Autobahnen in Planung" -preserveglobaldirectives |\
 	    $(CONVERT_ORIG) > $@~
-	cp $@~ $@
-	rm $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 
 # Get categories with:
@@ -522,16 +517,16 @@ obst:	obst-orig
 
 radwege:	radwege-orig
 	-@$(WRITEABLE) $@
-	${MISCSRCDIR}/convert_radwege < radwege-orig > radwege-orig~
-	cat radwege-orig~ | $(COMBINE_STREETS) - > $@ \
-	    || (rm -f $@; false)
-	rm -f radwege-orig~
+	${MISCSRCDIR}/convert_radwege < radwege-orig | \
+	    $(COMBINE_STREETS) - > $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 
 radwege_exact:	radwege-orig
 	-@$(WRITEABLE) $@
-	${MISCSRCDIR}/convert_radwege -exact < radwege-orig > $@ \
-	    || (rm -f $@; false)
+	${MISCSRCDIR}/convert_radwege -exact < radwege-orig | \
+	    $(COMBINE_STREETS) - > $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 
 qualitaet_s:	qualitaet_s-orig

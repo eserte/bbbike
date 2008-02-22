@@ -12845,11 +12845,12 @@ sub show_info {
 
 	if (defined $name && $name !~ m{^\s*$}) {
 	    $info_text->insert("end", M("Name")."\n", "bold");
-	    if (!$good_link_for_strname) {
-		$info_text->insert("end", "$name\n");
-	    } else {
-		$info_text->insert("end", $name, "link$linkcount");
 
+	    my $url;
+	    my $common_url;
+	    if ($name =~ m{(https?://\S+)}) {
+		$url = $1;
+	    } elsif ($good_link_for_strname) {
 		my $google_url = "http://www.google.com/search?";
 		require CGI;
 		CGI->import('-oldstyle_urls');
@@ -12857,8 +12858,14 @@ sub show_info {
 		($name, my @cityparts) = Strasse::split_street_citypart($name);
 		my $common_q = ($outside_berlin ? '' : qq{Berliner }) .
 		    qq{"$name"} . (@cityparts ? " ".join(" ",@cityparts) : "");
-		my $url        = $google_url . CGI->new({ q => qq{site:de.wikipedia.org $common_q} })->query_string;
-		my $common_url = $google_url . CGI->new({ q => $common_q })->query_string;
+		$url        = $google_url . CGI->new({ q => qq{site:de.wikipedia.org $common_q} })->query_string;
+		$common_url = $google_url . CGI->new({ q => $common_q })->query_string;
+	    }
+
+	    if (!$url) {
+		$info_text->insert("end", "$name\n");
+	    } else {
+		$info_text->insert("end", $name, "link$linkcount");
 
 		my $www_link_menu = $info_text->Menu(-title => M"Linkmenü",
 						     -tearoff => 0);
@@ -12866,14 +12873,16 @@ sub show_info {
 		    (-label => M"Link kopieren",
 		     -command => sub { $copy_link->($url) },
 		    );
-		$www_link_menu->command
-		    (-label => M"Allgemeine Google-Suche",
-		     -command => sub {
-			 require WWWBrowser;
-			 main::status_message("URL: $common_url", "info");
-			 WWWBrowser::start_browser($common_url);
-		     }
-		    );
+		if ($common_url) {
+		    $www_link_menu->command
+			(-label => M"Allgemeine Google-Suche",
+			 -command => sub {
+			     require WWWBrowser;
+			     main::status_message("URL: $common_url", "info");
+			     WWWBrowser::start_browser($common_url);
+			 }
+		     );
+		}
 
 		$show_url->($linkcount, $url, $www_link_menu);
 		$linkcount++;

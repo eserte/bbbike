@@ -2,16 +2,27 @@
 # -*- perl -*-
 
 #
-# $Id: convert_radwege,v 1.25 2007/01/23 21:57:15 eserte Exp $
+# $Id: convert_radwege,v 1.29 2008/02/22 21:21:35 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2008 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven.rezic@berlin.de
-# WWW:  http://www.rezic.de/eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
+
+# This script is primarily used for converting radwege data.
+# There are two modes:
+#   -exact: exact conversion for data used for routing
+#   -noexact: radwege are displaced by a delta for drawing the
+#             cyclepaths next to the street (using the -delta option)
+#
+# The script may also be misused for creating an area around a
+# path, e.g. for creating an entry for weblinks.bbd. Use the
+#   -join -delta ...
+# options.
 
 use strict;
 use File::Basename;
@@ -21,13 +32,14 @@ use Karte;
 use Radwege;
 use Getopt::Long;
 
-use constant PI => 3.141592653;
+use constant PI => 4 * atan2(1, 1); # 3.141592653
 
 # mit -exact wird keine Versetzung der Radwege durchgeführt
 # somit kann die erzeugte Datei für ein Optimierungs-Netz (siehe Strassen.pm,
 # Package StrassenNetz) verwendet werden.
 my $exact = 0;
-my $inmap; # = "Berlinmap1996";
+my $join = 1; # XXX join lines not implemented yet!
+my $inmap;
 my $outmap = "Standard";
 my $conv;
 my $conv_code;
@@ -36,6 +48,7 @@ my $delta = 20;
 my $datadir = $ENV{BBBIKE_DATADIR} || "$FindBin::RealBin/../data";
 
 if (!GetOptions("exact!" => \$exact,
+		"join!" => \$join, # XXX document!
 		"inmap=s" => \$inmap,
 		"outmap=s" => \$outmap,
 		"conv=s" => \$conv_code,
@@ -122,18 +135,23 @@ my %rev_category_code;
 	if (@{ $r->[Strassen::COORDS()] } < 2) {
 	    die "Sollte mindestens zwei Koordinaten enthalten, Position " . $s->pos;
 	}
-	my @l;
+	my($cat_hin, $cat_rueck);
 	if ($r->[Strassen::CAT()] =~ /;/) {
 	    my($hin,$rueck) = split /;/, $r->[Strassen::CAT()];
-	    push @l, $rev_category_code{$hin} || "kein";
-	    push @l, $rev_category_code{$rueck} || "kein";
+	    $cat_hin   = $rev_category_code{$hin} || "kein";
+	    $cat_rueck = $rev_category_code{$rueck} || "kein";
 	} else {
-	    push @l, $rev_category_code{$r->[Strassen::CAT()]};
-	    push @l, $rev_category_code{$r->[Strassen::CAT()]};
+	    $cat_hin   = $rev_category_code{$r->[Strassen::CAT()]};
+	    $cat_rueck = $rev_category_code{$r->[Strassen::CAT()]};
 	}
-	push @l, @{$r->[Strassen::COORDS()]}[$rci-1, $rci];
+	my @coords;
+	if ($join) {
+	    @coords = @{$r->[Strassen::COORDS()]}; $rci = @{$r->[Strassen::COORDS()]}-1;
+	} else {
+	    @coords = @{$r->[Strassen::COORDS()]}[$rci-1, $rci];
+	}	
 	$rci++;
-	@l;
+	($cat_hin, $cat_rueck, @coords);
     };
 }
 
@@ -164,9 +182,18 @@ while(1) {
 	}
 	$dx[$i] = $dx;
 	$dy[$i] = $dy;
+	if ($i == 1) {
+	    $dx[0] = $dx[1];
+	    $dy[0] = $dy[1];
+	}
+	if (!$exact && $join && $i < $#l) {
+	    #XXX implementation missing!
+	    # This would try to join adjacent lines
+	    # note that this is only useful if the streets are
+	    # actually combined (which can be accomplished
+	    # by calling combined_streets before)
+	}
     }
-    $dx[0] = $dx[1];
-    $dy[0] = $dy[1];
 
     if ($do_hin) {
 	print "\t" . $Radwege::category_code{$hin};
@@ -182,59 +209,6 @@ while(1) {
 	}
 	print "\n";
     }
-}
-
-# XXX Dieser Code funktioniert nicht, weil die Richtung nicht
-# richtig berücksichtigt wird. Deshalb erst einmal auskommentiert.
-
-# XXX Hier wird versucht, längere Streckenstücke festzustellen. Leider
-# werden die Stücke durch das Verschieben mit dx/dy versetzt, so dass
-# kaum eine lange Strecke generiert werden kann. Siehe auch die
-# Vergrößerung von Radwegen in bbbike.
-
-if (0) {
-my @res;
-my @res_cat;
-my %res;
-for(my $i=0; $i<=$#radweg; $i++) {
-    my($cat, $p1, $p2) = @{ $radweg[$i] };
-    if (exists $res{$p1} and $cat eq $res_cat[$res{$p1}]) {
-	my $i = $res{$p1};
-	if ($res[$i]->[0] eq $p1) {
-	    delete $res{$p1};
-	    unshift @{ $res[$i] }, $p2;
-	    $res{$p2} = $i;
-	} elsif ($res[$i]->[$#{$res[$i]}] eq $p1) {
-	    push @{ $res[$i] }, $p2;
-	    delete $res{$p1};
-	    $res{$p2} = $i;
-	} else {
-	    die;
-	}
-    } elsif (exists $res{$p2} and $cat eq $res_cat[$res{$p2}]) {
-	my $i = $res{$p2};
-	if ($res[$i]->[0] eq $p2) {
-	    unshift @{ $res[$i] }, $p1;
-	    delete $res{$p2};
-	    $res{$p1} = $i;
-	} elsif ($res[$i]->[$#{$res[$i]}] eq $p2) {
-	    push @{ $res[$i] }, $p1;
-	    delete $res{$p2};
-	    $res{$p1} = $i;
-	} else {
-	    die;
-	}
-    } else {
-	push @res, [$p1, $p2];
-	push @res_cat, $cat;
-	$res{$p1} = $#res;
-	$res{$p2} = $#res;
-    }
-}
-
-for(my $i=0; $i<=$#res; $i++) {
-    print "\t" . $res_cat[$i] . " " . join(" ", @{ $res[$i] }) . "\n";
-}
 }
 
 __END__
