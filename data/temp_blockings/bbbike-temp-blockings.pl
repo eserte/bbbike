@@ -962,7 +962,7 @@ EOF
        text  => 'L 78; (Potsdamer Str.); OD Saarmund, Eisenbahnbrücke Brückensanierung Vollsperrung 04.10.2004-15.10.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -9626,-6603 -8492,-9628 -8331,-9887
+userdel	2 -9626,-6603 -9301,-7466 -8492,-9628 -8331,-9887
 EOF
      },
      { from  => 1096754400, # 2004-10-03 00:00

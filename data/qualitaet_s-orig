@@ -155,7 +155,7 @@ Mittenwalder Str.: Kopfsteinpflaster	Q2 9915,9480 9944,9691 9968,9847 10002,9948
 Tiergartenufer: mäßiges Kopfsteinpflaster	Q2 6478,11338 6292,11427
 Tiergarten: Kopfsteinpflaster	Q2 5835,11768 5771,11887
 Garibaldistr.: schlechtes Kopfsteinpflaster	Q3 7333,19911 7341,19974 7405,20019 7468,20009 7604,19988 7716,19954 7838,19884
-Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 6737,23290 6779,23392 6819,23549 6744,23695
+Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 6727,23287 6770,23417 6819,23549 6744,23695
 Alt-Lübars: Kopfsteinpflaster	Q2 6744,23695 6817,23760
 Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 6817,23760 6879,23816 6992,23814 7111,23873 7185,23749
 Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 7111,23873 7051,23924 6879,23816
@@ -529,7 +529,7 @@ Bärenlauchstr.: gut geeignet	Q0 19722,5179 19745,4972 19760,4875
 Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9355,19789 9300,19949 9266,20048 9149,20336 9119,20399 8900,20601
 Friedrich-Engels-Str.: Kopfsteinpflaster, Radweg auf asphaltierter Nebenfahrbahn	Q0- 8900,20601 8789,20763 8698,20897 8610,21000 8513,21099 8316,21240 8277,21257
 Quickborner Str.: Kopfsteinpflaster	Q2 8170,21304 8022,21476
-Quickborner Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7072,22905 6779,23392
+Quickborner Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7072,22905 6770,23417
 Marheinekeplatz: Kopfsteinpflaster	Q2 9759,9307 9882,9287 9991,9267
 Schleiermacherstr.: Kopfsteinpflaster	Q2 9987,9238 9991,9267 10019,9451 10053,9671 10135,9806
 Bergmannstr.: Kopfsteinpflaster	Q2 9962,9237 9987,9238
@@ -1541,7 +1541,7 @@ Gelnitzstr.: schlechtes Kopfsteinpflaster	Q3 22897,5740 22882,5834
 Mayschweg: gut geeignet	Q0 23368,3894 23316,3778 23243,3702
 #: by: Johannes (behrens)
 #: corrected_by: srt (Q1 -> Q0)
-Köpenzeile: Beton	Q0 23194,3791 23243,3702 23324,3523 23452,3205 23481,3107 23541,2841 23567,2739 23552,2512 23513,2326
+Köpenzeile: Beton	Q0 23194,3791 23243,3702 23324,3523 23444,3217 23481,3107 23541,2841 23567,2739 23552,2512 23513,2326
 Feldblumenweg: gut geeignet	Q0 23513,2326 23485,2271 23535,2111
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20060801.0810.44858.html
 Dörbeckweg: asphaltiert	Q0 -6250,13396 -6425,13347
@@ -5855,14 +5855,37 @@ Schwalbenweg: mäßiger Beton	Q1- 20205,-548 20172,-533 19940,-610 19724,-703 1961
 Hohenzollernstr. (Wannsee): mäßiger Beton	Q1 -6430,478 -6448,539 -6506,729 -6610,1081 -6619,1113
 #: by: Thomas (brachial...):
 Wetterseestr.: mäßiges Kopfsteinpflaster	Q2 11499,16883 11504,16746
-#: by: ute wiek:
+#: by: ute wiek: vvv
 Kreuzritterstr.: mäßiges Kopfsteinpflaster	Q2 2252,24700 2297,24682 2359,24677 2402,24687 2471,24709 2531,24702 2586,24678 2621,24638 2640,24608
+Kreuzritterstr.: mäßiges Kopfsteinpflaster	Q2 2586,24678 2624,24710
+Kreuzritterstr.: Asphalt	Q0 2624,24710 2690,24751
+Askaloner Weg: Kleinpflaster, wellig	Q2 2402,24687 2407,24657 2384,24603 2311,24546 2262,24505
+#: by: ^^^
 #: by: Harald Koglin: vvv
 Neuwerker Weg: guter Beton	Q0 2050,1976 2027,1965 1981,1713
 Neuwerker Weg: guter Beton	Q0 1970,1708 2043,1538
 #: by: ^^^
-#: by: Robert Fueting:
+#: by: Robert Fueting: vvv
 Gartenstr. (Französisch Buchholz): schlechtes Kopfsteinpflaster	Q3 12040,22519 11950,22162 11934,22108 11886,21924
+Im Vogtland: gutes Verbundsteinpflaster	Q1+ 6727,23287 6684,23308 6657,23334 6601,23412
+#: by: ^^^
+#: by: tobias (oridstraum):
+#: note: anonymer Eintrag meint "gutes Kopfsteinpflaster", aber die Straße erscheint auf dem Luftbild anders
+#: note: annette.kretschmer meint "schlechtes Kopfsteinpflaster Q3" von Waldstr. bis Genossenschaftsstr., aber sie führt nur bis zur Hackenbergstr.?
+Friedlander Str.: mäßiger Asphalt und Kopfsteinpflaster	Q2 20253,4034 20305,4096 20312,4123 20410,4192 20540,4285 20574,4317 20594,4342 20614,4381 20684,4596 20716,4691 20765,4839 20852,5106
+#: by: Desiree Kretzschmar:
+Pritstabelstr.: mäßiges Kopfsteinpflaster	Q2 22811,3037 22928,3057 23065,3089 23338,3173 23444,3217 23564,3283 23641,3342 23680,3371 23734,3423
+#: by: Sebastian Worel:
+Juttastr.: Asphalt	Q0 1072,4542 949,4366
+#: by: Veit Böhnke:
+#: confirmed_by: anonymous ("gemäßigt")
+Herbert-Baum-Str.: gemischt Asphalt und Kopfsteinpflaster	Q2 13826,16026 13869,15912 13904,15818 13943,15717 13964,15656 13989,15589
+#: by: Hartmut Lachmann:
+Schneewittchenstr.: mäßiges Kopfsteinpflaster	Q2 22893,6835 22970,6834 23112,6867 23214,6925 23270,6978
+#: by: Petra (schulz):
+Am Rollberg: mäßiger Asphalt mit vielen Löchern	Q2+ 10129,21251 9852,21151 9529,21045 9462,21025
+#: by: Bernd Mahrin:
+Sendener Weg: guter Beton	Q0 964,18321 1040,18283 1144,18237 1189,18246 1221,18327 1281,18487 1346,18662
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

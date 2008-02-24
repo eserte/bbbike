@@ -1625,7 +1625,7 @@ do-doublechecks:	.doublecheck_strassen.tmp \
 	-rm /tmp/landstrassen-XXX
 	$(CONVERT2HAFAS) landstrassen-orig > /tmp/landstrassen-XXX
 	${GREPSTRASSEN} --namerx ' \(Potsdam\)' plaetze >> /tmp/landstrassen-XXX
-	diff -u landstrassen /tmp/landstrassen-XXX
+	diff -I '#: alias:' -u landstrassen /tmp/landstrassen-XXX
 	rm /tmp/landstrassen-XXX
 	touch $@
 
