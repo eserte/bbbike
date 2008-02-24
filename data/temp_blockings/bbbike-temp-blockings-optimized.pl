@@ -841,16 +841,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_007852',
-         'until' => 1203721200,
-         'text' => 'Hultschiner Damm (Mahlsdorf) Richtung Köpenick zwischen Alt-Mahlsdorf und Elsenstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 22.02.2008)',
-         'from' => 1203374075,
-         'id' => 1285,
-         'data' => 'userdel	1::inwork 24658,11293 24735,11021 24637,10807
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_007850',
          'until' => 1209592799,
@@ -888,15 +879,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1203721200,
-         'text' => 'B 246 Beelitz - Brück Bahnübergang Brück-Ausbau Gleisbauarbeiten Vollsperrung 21.02.2008-22.02.2008 ',
-         'from' => 1203462000,
-         'id' => 1290,
-         'data' => 'userdel	2::inwork -30811,-22899 -30149,-22937 -29244,-23127
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1220133600,
          'text' => 'L 029 Zehlendorf - Schmachtenhagen Brücke über die Bäke in der OD Schmachtenhagen Brückenneubau Vollsperrung 18.02.2008-30.08.2008 ',

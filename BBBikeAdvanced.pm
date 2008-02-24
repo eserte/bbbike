@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.198 2008/02/10 16:55:04 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.199 2008/02/24 11:14:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2008 Slaven Rezic. All rights reserved.
@@ -3181,12 +3181,15 @@ sub search_anything {
 	    foreach my $search_file (@search_files) {
 		my @matches;
 		my $pid;
+		#XXX grep is now completely disabled because:
+		# * better testing of the public release (non $devel_host)
+		# * no support for alias matching
 		# Restrictions because of:
 		#   possible fork problems
 		#                  no String::Similarity support
 		#                                        direct grep cannot handle utf-8
 		#                                                                                        do we have grep at all?
-		if ($devel_host && !defined $s_munged && (!$need_utf8_upgrade || $may_utf8_downgrade) && $has_egrep) {
+		if (0 && $devel_host && !defined $s_munged && (!$need_utf8_upgrade || $may_utf8_downgrade) && $has_egrep) {
 		    my $s_rx = $s_rx;
 		    if ($may_utf8_downgrade) {
 			$s_rx = Encode::encode("iso-8859-1", $s_rx);

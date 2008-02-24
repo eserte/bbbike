@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.34 2008/02/02 22:41:38 eserte Exp $
+# $Id: plz.t,v 1.35 2008/02/24 11:47:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004,2006,2007 Slaven Rezic. All rights reserved.
@@ -61,7 +61,7 @@ my @approx_tests = (
 		    # Ku'damm => Kurfürstendamm, fails, maybe an extra rule?
 		   );
 		    
-plan tests => 152 + scalar(@approx_tests)*4;
+plan tests => 156 + scalar(@approx_tests)*4;
 
 my $tmpdir = "$FindBin::RealBin/tmp/plz";
 my $create;
@@ -404,6 +404,15 @@ for my $noextern (@extern_order) {
 	   "U+S-Bahnhof, long form (unusual order)")
 	    or diag $dump->(\@res);
 
+	{
+	    local $TODO = "Does not work yet";
+	    @res = $plz->look_loop("u+s bahnhof friedrichstr.",
+				   @standard_look_loop_args);
+	    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Friedrichstr.' } @{$res[0]}), 1,
+	       "U+S Bahnhof, long form with space (unusual order)")
+		or diag $dump->(\@res);
+	}
+
 	@res = $plz->look_loop("s-bahnhof heerstr",
 			       @standard_look_loop_args);
 	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Heerstr.' } @{$res[0]}), 1,
@@ -415,6 +424,15 @@ for my $noextern (@extern_order) {
 	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Grunewald' } @{$res[0]}), 1,
 	   "S-Bahnhof (Grunewald), long form")
 	    or diag $dump->(\@res);
+
+	{
+	    local $TODO = "Does not work yet";
+	    @res = $plz->look_loop("s bahnhof grunewald",
+				   @standard_look_loop_args);
+	    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Grunewald' } @{$res[0]}), 1,
+	       "S Bahnhof (Grunewald), long form with space")
+		or diag $dump->(\@res);
+	}
 
 	# A complaint by alh (but obsolete now):
 	@res = $plz->look_loop("lehrter bahnhof",

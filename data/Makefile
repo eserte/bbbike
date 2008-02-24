@@ -283,7 +283,7 @@ brunnels:	brunnels-orig
 
 landstrassen: landstrassen-orig plaetze
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) landstrassen-orig > $@~
+	$(CONVERT_ORIG) -keep-directive alias landstrassen-orig > $@~
 	${GREPSTRASSEN} --namerx ' \(Potsdam\)' plaetze >> $@~
 	mv $@~ $@
 	-rm -f landstrassen-cooked
@@ -291,7 +291,7 @@ landstrassen: landstrassen-orig plaetze
 
 landstrassen2: landstrassen2-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) landstrassen2-orig > $@~
+	$(CONVERT_ORIG) -keep-directive alias landstrassen2-orig > $@~
 	mv $@~ $@
 	-rm -f landstrassen2-cooked
 	-@$(READONLY) $@

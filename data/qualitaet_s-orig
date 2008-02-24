@@ -1578,7 +1578,7 @@ Jungfernheideweg: Kopfsteinpflaster	Q2 1238,15705 1293,15559
 (Grenzweg): Verbundsteinpflaster	Q1+ 3735,14419 3768,14730
 Koloniestr.: Kopfsteinpflaster	Q2 8503,16716 8583,16914 8601,16960 8677,17154 8983,17748
 Selma-Lagerlöf-Str.: Asphalt	Q0 11782,17222 11729,17499
-Eschengraben: Wechsel zwischen Asphalt und Kopfsteinpflaster	Q2 11621,16749 11441,16745 11281,16743 11018,16730
+Eschengraben: Wechsel zwischen Asphalt und Kopfsteinpflaster	Q2 11621,16749 11504,16746 11441,16745 11281,16743 11018,16730
 #: note: es gab widersprüchliche Angaben: mäßiger Beton Q1 (by anonymous) und guter Asphalt Q0 (by openbc...), die verkehrsberuhigte Zone hat sich wahrscheinlich erledigt
 Tiroler Str.: schlechter Asphalt	Q1- 10862,17087 10654,17091 10508,17094 10128,17100
 #: note: laut ADFC-Karte/neu schlecht geeignet:
@@ -3086,7 +3086,7 @@ Gustav-Müller-Str.: asphaltiert	Q0 7642,8583 7642,8815
 #: by: Uwe Beckert:
 Rotkopfweg: Asphalt	Q0 10966,3712 10917,3367
 #: by: Sven Dreißig:
-Hallandstr.: Kopfsteinpflaster	Q2 11598,16878 11270,16890 10999,16830
+Hallandstr.: Kopfsteinpflaster	Q2 11598,16878 11499,16883 11270,16890 10999,16830
 #: by: Jan (Smile...)
 Kornburger Weg: schlechter Asphalt	Q1 -3309,17153 -3326,16553
 #: by: Martin Dittmar: vvv
@@ -3150,7 +3150,7 @@ Ufnaustr.: guter Asphalt	Q0 4425,13785 4455,13567
 #: by: Johannes Schubert:
 Gewerbehof: Asphalt	Q0 -2669,13488 -2393,13414
 #: by: Roland Höpfner: vvv
-Pinnauweg: Asphalt	Q0 2219,1612 1943,1496 1975,1413
+Pinnauweg: Asphalt	Q0 2219,1612 2043,1538 1943,1496 1975,1413
 #: by: ^^^
 #: by: Michaela (G.):
 Kurfürstenstr. (Lankwitz): Asphalt	Q0 6271,1684 6176,1876 6021,2071 5951,2182 5909,2307 5812,2604
@@ -4366,7 +4366,7 @@ Minheimer Str.: schlechtes Kopfsteinpflaster	Q3 2397,25362 2283,25358 2123,25606
 #: by: Peter Koethe:
 Glasberger Str.: guter Asphalt	Q0 22132,7148 22172,7384 22190,7475 22244,7609 22279,7672
 #: by: sven (wesuma):
-Petzower Str.: Asphalt	Q0 -6601,1063 -6581,1066 -6515,1011 -6407,987 -6229,1005 -6175,957
+Petzower Str.: Asphalt	Q0 -6610,1081 -6581,1066 -6515,1011 -6407,987 -6229,1005 -6175,957
 #: by: Carolin (schnattente):
 #: note: ein anonymer Eintrag war zweifelhaft: asphaltiert und Radstreifen?!
 Mahlower Str. (Köpenick): Beton	Q0 21442,3774 21521,3734 21762,3992 21690,4057
@@ -5851,6 +5851,18 @@ Gottschalkstr.: Asphalt	Q0 9399,17496 9265,17585 9160,17656
 Großenhainer Weg: schlechtes Kopfsteinpflaster	Q3 15758,1179 15831,1227 15880,1291
 #: by: Frank- R. Hoffmann:
 Schwalbenweg: mäßiger Beton	Q1- 20205,-548 20172,-533 19940,-610 19724,-703 19619,-746 19550,-775 19366,-845 19309,-885
+#: by: Carmen Midle:
+Hohenzollernstr. (Wannsee): mäßiger Beton	Q1 -6430,478 -6448,539 -6506,729 -6610,1081 -6619,1113
+#: by: Thomas (brachial...):
+Wetterseestr.: mäßiges Kopfsteinpflaster	Q2 11499,16883 11504,16746
+#: by: ute wiek:
+Kreuzritterstr.: mäßiges Kopfsteinpflaster	Q2 2252,24700 2297,24682 2359,24677 2402,24687 2471,24709 2531,24702 2586,24678 2621,24638 2640,24608
+#: by: Harald Koglin: vvv
+Neuwerker Weg: guter Beton	Q0 2050,1976 2027,1965 1981,1713
+Neuwerker Weg: guter Beton	Q0 1970,1708 2043,1538
+#: by: ^^^
+#: by: Robert Fueting:
+Gartenstr. (Französisch Buchholz): schlechtes Kopfsteinpflaster	Q3 12040,22519 11950,22162 11934,22108 11886,21924
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

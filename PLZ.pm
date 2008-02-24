@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.70 2007/07/10 00:19:54 eserte Exp $
+# $Id: PLZ.pm,v 1.71 2008/02/23 21:17:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ use locale;
 use BBBikeUtil;
 use Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.70 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.71 $ =~ /(\d+)\.(\d+)/);
 
 use constant FMT_NORMAL  => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED => 1; # ./data/Berlin.small.data (does not exist anymore)
@@ -562,27 +562,20 @@ sub _strip_hnr {
 sub _expand_strasse {
     my $str = shift;
     my $replaced = 0;
-    if ($str =~ /^([US])\s+/i) {
-	$str =~ s/^([US])\s+/uc($1)."-Bhf "/ie;
+    if      ($str =~ s/^([US])\s+/uc($1)."-Bhf "/ie) {
 	$replaced++;
-    } elsif ($str =~ /^(U\+S|S\+U)\s+/i) {
-	$str =~ s/^(U\+S|S\+U)\s+/S-Bhf /i; # Choose one
+    } elsif ($str =~ s/^(U\+S|S\+U)\s+/S-Bhf /i) { # Choose one
 	$replaced++;
-    } elsif ($str =~ /^([US])-Bahnhof\s+/i) {
-	$str =~ s/^([US])-Bahnhof\s+/uc($1)."-Bhf "/ie;
+    } elsif ($str =~ s/^([US])[- ]Bahnhof\s+/uc($1)."-Bhf "/ie) {
 	$replaced++;
-    } elsif ($str =~ /^(U\+S|S\+U)-Bahnhof\s+/i) {
-	$str =~ s/^(U\+S|S\+U)-Bahnhof\s+/S-Bhf /i; # Choose one
+    } elsif ($str =~ s/^(U\+S|S\+U)[- ]Bahnhof\s+/S-Bhf /i) { # Choose one
 	$replaced++;
-    } elsif ($str =~ /^(U\+S|S\+U)-Bhf\.?\s+/i) {
-	$str =~ s/^(U\+S|S\+U)-Bhf\.?\s+/S-Bhf /i; # Choose one
+    } elsif ($str =~ s/^(U\+S|S\+U)[- ]Bhf\.?\s+/S-Bhf /i) { # Choose one
 	$replaced++;
     }
-    if ($str =~ /^(k)l\.?\s+.*str/i) {
-	$str =~ s/^(k)l\.?\s+/$1leine /i;
+    if      ($str =~ s/^(k)l\.?\s+(.*str)/$1leine $2/i) {
 	$replaced++;
-    } elsif ($str =~ /^(g)r\.?\s+.*str/i) {
-	$str =~ s/^(g)r\.?\s+/$1roﬂe /i;
+    } elsif ($str =~ s/^(g)r\.?\s+(.*str)/$1roﬂe $2/i) {
 	$replaced++;
     }
     if ($str =~ /^\s*str\.(\S)?/i) {
@@ -593,8 +586,7 @@ sub _expand_strasse {
 	}
 	$replaced++;
 	$str;
-    } elsif ($str =~ /^\s*strasse/i) {
-	$str =~ s/^\s*(s)trasse/$1traﬂe/i;
+    } elsif ($str =~ s/^\s*(s)trasse/$1traﬂe/i) {
 	$replaced++;
 	$str;
     } elsif ($replaced) {

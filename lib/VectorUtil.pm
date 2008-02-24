@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: VectorUtil.pm,v 1.17 2005/12/13 22:43:26 eserte Exp $
+# $Id: VectorUtil.pm,v 1.18 2008/02/23 13:11:57 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2004,2008 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,13 +16,15 @@ package VectorUtil;
 
 use strict;
 use vars qw($VERSION $VERBOSE @ISA @EXPORT_OK);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
 
 require Exporter;
 @ISA = 'Exporter';
 
 @EXPORT_OK = qw(vector_in_grid distance_point_line get_polygon_center
-		point_in_grid point_in_polygon);
+		point_in_grid point_in_polygon move_point_orthogonal);
+
+sub pi () { 4 * atan2(1, 1) } # 3.141592653
 
 # Diese Funktion testet, ob sich ein Vektor innerhalb eines Gitters
 # befindet. Für Vektoren, bei denen mindestens einer der Punkte innerhalb
@@ -298,6 +300,18 @@ sub point_in_polygon {
     }
 
     return $status;
+}
+
+# Move point $p1/$p2 by $delta points orthogonal to the line $x1/$y1 -
+# $x2/$y2. In Tk::Canvas-like coordinate systems (y grows to bottom),
+# positive $delta means move to the right, negative to the left.
+sub move_point_orthogonal {
+    die "Needs exactly seven arguments" if @_ != 7;
+    my($p1,$p2, $x1,$y1,$x2,$y2, $delta) = @_;
+    my $alpha = atan2($y2-$y1, $x2-$x1);
+    my $beta  = $alpha + pi/2;
+    my($dx, $dy) = ($delta*cos($beta), $delta*sin($beta));
+    ($p1+$dx, $p2+$dy);
 }
 
 # REPO BEGIN
