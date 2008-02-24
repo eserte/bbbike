@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.78 2008/02/04 21:42:06 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.79 2008/02/24 23:50:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -715,7 +715,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.78 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.79 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1691,7 +1691,7 @@ EOF
 	print <<EOF if ($bi->{'can_table'});
 <td valign="top">@{[ blind_image(420,1) ]}<br>
 EOF
-	my($bln_str, $all_bln_str, $pdm_str) = (6500, 10000, 250);
+	my($bln_str, $all_bln_str, $pdm_str) = (6800, 10000, 280);
 	# XXX Use format number to get a comma in between.
 	if ($lang eq 'en') {
 	    print <<EOF;
@@ -6594,7 +6594,12 @@ Es gibt eine wesentlich komplexere Version von BBBike mit interaktiver Karte, me
 <a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">Hier</a>
 bekommt man dazu mehr Informationen. Als Beispiel kann man sich
 <a href="@{[ $BBBike::BBBIKE_SF_WWW ]}/screenshots.de.html">Screenshots</a> der Perl/Tk-Version angucken.
-<h4 id="beta">Beta-Version</h4>
+<p>
+Die aktuellen Daten für die Perl/Tk-Version können <a href="@{[ $BBBike::BBBIKE_UPDATE_DATA_CGI ]}">hier</a> heruntergeladen werden oder über den Menüpunkt <i>Einstellungen</i> &gt; <i>Daten-Update über das Internet</i> aus dem Programm heraus.
+<p>
+Der aktuellen Snapshot der Perl/Tk-Version kann <a href="@{[ $BBBike::BBBIKE_UPDATE_DIST_CGI ]}">hier</a> heruntergeladen werden. <b>Achtung</b>: es ist möglich, dass die Snapshotversion nicht lauffähig ist oder Fehler enthält.
+
+<h4 id="beta">Beta-Version von bbbike.de</h4>
 Zukünftige BBBike-Features können <a href="$bbbike2_url">hier</a> getestet werden.
 <h4 id="pda">PDA-Version für iPAQ/Linux</h4>
 Für iPAQ-Handhelds mit Familiar Linux gibt es eine kleine Version von BBBike: <a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">tkbabybike</a>.
@@ -6685,7 +6690,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/02/04 21:42:06 $';
+    my $cgi_date = '$Date: 2008/02/24 23:50:00 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

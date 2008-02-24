@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.57 2008/02/05 20:56:19 eserte Exp $
+# $Id: BBBikeVar.pm,v 1.58 2008/02/24 23:41:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000-2008 Slaven Rezic. All rights reserved.
@@ -47,6 +47,8 @@ $BBBIKE_UPDATE_DIRECT_WWW = "http://bbbike.radzeit.de/BBBike";
 $BBBIKE_UPDATE_WWW = "http://www.bbbike.de/BBBike";
 $BBBIKE_UPDATE_DATA_DIRECT_CGI = "http://bbbike.radzeit.de/cgi-bin/bbbike-data.cgi";
 $BBBIKE_UPDATE_DATA_CGI = "http://www.bbbike.de/cgi-bin/bbbike-data.cgi";
+$BBBIKE_UPDATE_DIST_DIRECT_CGI = "http://bbbike.radzeit.de/cgi-bin/bbbike-snapshot.cgi";
+$BBBIKE_UPDATE_DIST_CGI = "http://www.bbbike.de/cgi-bin/bbbike-snapshot.cgi";
 #$BBBIKE_UPDATE_RSYNC = 'rsync://www.radzeit.de/bbbike/'; # not yet XXX
 #$BBBIKE_UPDATE_DATA_RSYNC = 'rsync://www.radzeit.de/bbbike_data/'; # XXX not yet
 
@@ -74,7 +76,7 @@ $SF_DISTDIR	      = 'http://prdownloads.sourceforge.net/bbbike';
 $SF_DISTFILE_SOURCE   = "$SF_DISTDIR/BBBike-$STABLE_VERSION.tar.gz?download";
 $SF_DISTFILE_WINDOWS  = "$SF_DISTDIR/BBBike-$WINDOWS_VERSION-Windows.exe?download";
 $SF_DISTFILE_DEBIAN   = "$SF_DISTDIR/bbbike_${DEBIAN_VERSION}_i386.deb?download";
-$DISTFILE_FREEBSD_I386 = "ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-stable/All/de-BBBike-3.15_1.tbz";
+$DISTFILE_FREEBSD_I386 = "ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-stable/All/de-BBBike-3.16_1.tbz";
 *DISTFILE_FREEBSD = \$DISTFILE_FREEBSD_I386; # compatibility
 $DISTFILE_FREEBSD_ALL  = "http://portsmon.freebsd.org/portoverview.py?category=german&portname=BBBike";
 

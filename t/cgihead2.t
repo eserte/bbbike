@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.19 2008/02/05 22:38:00 eserte Exp $
+# $Id: cgihead2.t,v 1.20 2008/02/24 23:54:18 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -33,6 +33,7 @@ push @var, (qw(
 	       $BBBike::BBBIKE_SF_WWW
 	       $BBBike::BBBIKE_UPDATE_WWW
 	       $BBBike::BBBIKE_UPDATE_DATA_CGI
+	       $BBBike::BBBIKE_UPDATE_DIST_CGI
 	       $BBBike::BBBIKE_WAP
 	       $BBBike::BBBIKE_DIRECT_WAP
 	       $BBBike::DISTFILE_SOURCE
@@ -126,6 +127,7 @@ sub check_url {
 	    or diag $resp->status_line . " " . $resp->content;
 	my $content_type = $resp->content_type;
 	if ($url eq $BBBike::BBBIKE_UPDATE_DATA_CGI ||
+	    $url eq $BBBike::BBBIKE_UPDATE_DIST_CGI ||
 	    $url =~ m{\.zip$}) {
 	    is($content_type, "application/zip", "Expected type (zip)") or diag("For URL $url $redir_url");
 	} elsif ($url =~ m{\.tar\.gz$}) {
