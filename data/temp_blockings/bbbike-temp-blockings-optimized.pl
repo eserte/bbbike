@@ -841,7 +841,16 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'source_id' => 'IM_007852',
+         'until' => 1204326000,
+         'text' => 'Hultschiner Damm (Mahlsdorf) Richtung Köpenick zwischen Alt-Mahlsdorf und Elsenstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 29.02.2008)',
+         'from' => 1203897664,
+         'id' => 1285,
+         'data' => 'userdel	1::inwork 24658,11293 24735,11021 24637,10807
+',
+         'type' => 'gesperrt'
+       },
        {
          'source_id' => 'IM_007850',
          'until' => 1209592799,
@@ -871,9 +880,9 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'handicap'
        },
        {
-         'until' => 1216850400,
-         'text' => 'B 168 Prötzel - Tiefensee zw. Prötzel und Kreisgrenze Deckenerneuerung Vollsperrung 25.03.2008-23.07.2008 ',
-         'from' => 1206313200,
+         'until' => 1212184800,
+         'text' => 'B 168 Prötzel - Tiefensee zw. Prötzel und Kreisgrenze Deckenerneuerung Vollsperrung 03.03.2008-30.05.2008 ',
+         'from' => 1204412400,
          'id' => 1289,
          'data' => 'userdel	2::inwork 48953,26802 48260,27132 46629,27232 44331,27632 44074,27889 41563,28973
 ',

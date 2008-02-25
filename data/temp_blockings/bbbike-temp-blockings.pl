@@ -10829,9 +10829,9 @@ EOF
 userdel	1::inwork 9164,12172 9365,12196
 EOF
      },
-     { from  => 1203374075, # 2008-02-18 23:34
-       until => 1203721200, # 2008-02-23 00:00
-       text  => 'Hultschiner Damm (Mahlsdorf) Richtung Köpenick zwischen Alt-Mahlsdorf und Elsenstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 22.02.2008)',
+     { from  => 1203897664, # 2008-02-25 01:01
+       until => 1204326000, # 2008-03-01 00:00
+       text  => 'Hultschiner Damm (Mahlsdorf) Richtung Köpenick zwischen Alt-Mahlsdorf und Elsenstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 29.02.2008)',
        type  => 'gesperrt',
        source_id => 'IM_007852',
        data  => <<EOF,
@@ -10863,9 +10863,9 @@ EOF
 userdel	q4::inwork -73678,77438 -73946,77861 -74038,78181
 EOF
      },
-     { from  => 1206313200, # 2008-03-24 00:00
-       until => 1216850400, # 2008-07-24 00:00
-       text  => 'B 168 Prötzel - Tiefensee zw. Prötzel und Kreisgrenze Deckenerneuerung Vollsperrung 25.03.2008-23.07.2008 ',
+     { from  => 1204412400, # 2008-03-02 00:00
+       until => 1212184800, # 2008-05-31 00:00
+       text  => 'B 168 Prötzel - Tiefensee zw. Prötzel und Kreisgrenze Deckenerneuerung Vollsperrung 03.03.2008-30.05.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 48953,26802 48260,27132 46629,27232 44331,27632 44074,27889 41563,28973
