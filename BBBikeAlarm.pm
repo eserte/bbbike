@@ -754,7 +754,7 @@ sub create_vcalendar_entry {
     if (!defined $descr && @search_route) {
 	require BBBikeUtil;
 	require Strassen::Strasse;
-	$descr = join(" - ", map {
+	$descr = join("\n", map {
 	    my $hop = Strasse::strip_bezirk($_->[StrassenNetz::ROUTE_NAME()]);
 	    $hop .= " [" . BBBikeUtil::m2km($_->[StrassenNetz::ROUTE_DIST()]);
 	    if (defined $_->[StrassenNetz::ROUTE_ANGLE()] && $_->[StrassenNetz::ROUTE_ANGLE()] >= 30) {
@@ -770,6 +770,8 @@ sub create_vcalendar_entry {
     my $this_host = _get_host();
     my $uid = POSIX::strftime("%Y%m%d%H%M%S-$this_host", localtime);
 
+    #(my $descr_escaped = $descr) =~ s{\n}{\\N}g; # XXX Does not work with my N95, neither with \n nor with \N
+    (my $descr_escaped = $descr) =~ s{\n}{ - }g;
     <<EOF;
 BEGIN:VCALENDAR
 VERSION:1.0
@@ -780,7 +782,7 @@ DALARM:$alarm
 DTSTART:$dtstart
 DTEND:$dtend
 SUMMARY:$subject
-DESCRIPTION:$descr
+DESCRIPTION:$descr_escaped
 END:VEVENT
 END:VCALENDAR
 EOF
