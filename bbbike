@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.365 2008/02/24 23:53:49 eserte Exp $
+# $Id: bbbike,v 3.365 2008/02/24 23:53:49 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -17390,18 +17390,35 @@ sub set_cursor {
 
 ### AutoLoad Sub
 sub set_cursor_data {
-    my($data, $persistent) = @_;
+    my($data, $persistent, $cur_data) = @_;
     my $tmpfile = "$tmpdir/cursor.$<-$$";
     if ($persistent) {
 	$tmpfile .= "_" . $persistent;
     }
-    $tmpfile .= ".xbm";
+    if ($os eq 'win') {
+	if ($cur_data) {
+	    $tmpfile .= ".cur";
+	} else {
+	    $c->set_cursor(undef);
+	    return;
+	}
+    } else {
+	$tmpfile .= ".xbm";
+    }
     if (open(C, ">$tmpfile")) {
-        print C $data;
+        print C ($os eq 'win' ? $cur_data : $data);
 	close C;
 	#$c->configure(-cursor => ['@' . $tmpfile, 'black']);
-	$c->set_cursor(['@' . $tmpfile, 'black']);
-	unlink $tmpfile if !$persistent;
+	if ($os eq 'win') {
+	    $c->set_cursor(['@' . $tmpfile]);
+	} else {
+	    $c->set_cursor(['@' . $tmpfile, 'black']);
+	}
+	if (!$persistent) {
+	    unlink $tmpfile;
+	} else {
+	    $tmpfiles{$tmpfile}++;
+	}
     } else {
 	warn "Can't set cursor data with file $tmpfile: $!";
 	#$c->configure(-cursor => undef);

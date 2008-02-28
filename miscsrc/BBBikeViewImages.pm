@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.16 2007/08/25 21:38:53 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.17 2008/02/28 23:13:34 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2007,2008 Slaven Rezic. All rights reserved.
 #
 
 # Description (en): View images in bbd files
@@ -16,7 +16,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $geometry $viewer_menu);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(file_name_is_absolute);
 use File::Basename qw(dirname);
@@ -102,16 +102,21 @@ sub add_button {
 	       -value => "_internal",
 	       -command => sub { viewer_change() },
 	      ],
-	      [Radiobutton => "xv",
-	       -variable => \$viewer,
-	       -value => "xv",
-	       -command => sub { viewer_change() },
-	      ],
-	      [Radiobutton => "ImageMagick (display)",
-	       -variable => \$viewer,
-	       -value => "display",
-	       -command => sub { viewer_change() },
-	      ],
+	      ($^O eq 'MSWin32' ? () :
+	       (# xv is not surely not available ...
+		[Radiobutton => "xv",
+	         -variable => \$viewer,
+		 -value => "xv",
+		 -command => sub { viewer_change() },
+	        ],
+		# ... display might be available, but forking (see below) does not work
+	        [Radiobutton => "ImageMagick (display)",
+	         -variable => \$viewer,
+	         -value => "display",
+	         -command => sub { viewer_change() },
+	        ],
+	       )
+	      ),
 	      [Radiobutton => "WWW-Browser",
 	       -variable => \$viewer,
 	       -value => "_wwwbrowser",
@@ -226,8 +231,17 @@ sub show_image_viewer {
 	    SEARCH_FOR_ABS_FILE: {
 		    for my $hash (\%main::str_file, \%main::p_file) {
 			for my $tag (@tags) {
+			    my $str_p_file;
 			    if (exists $hash->{$tag}) {
-				my $try_file = dirname($hash->{$tag}) . "/" . $abs_file;
+				$str_p_file = $hash->{$tag};
+			    } else {
+				$tag =~ s{-img}{};
+				if (exists $hash->{$tag}) {
+				    $str_p_file = $hash->{$tag};
+				}
+			    }
+			    if ($str_p_file) {
+				my $try_file = dirname($str_p_file) . "/" . $abs_file;
 				if (-r $try_file) {
 				    $abs_file = $try_file;
 				    last SEARCH_FOR_ABS_FILE;
@@ -404,7 +418,7 @@ sub show_image_viewer {
 		    $image_viewer_toplevel->Subwidget("LastButton")->configure(-state => "disabled");
 		}
 
-		$image_viewer_toplevel->Subwidget("OrigButton")->configure(-command => [\&viewer_display, $abs_file]);
+		$image_viewer_toplevel->Subwidget("OrigButton")->configure(-command => [\&orig_viewer, $abs_file]);
 
 		$image_viewer_toplevel->Subwidget("NOfMLabel")->configure(-text => $this_index_in_array->() . "/" . @$all_image_inx);
 
@@ -440,8 +454,7 @@ sub show_image_viewer {
 	    }
 	    viewer_display(@display_args, $abs_file);
 	} elsif ($viewer eq '_wwwbrowser') {
-	    require WWWBrowser;
-	    WWWBrowser::start_browser("file://$abs_file", -oldwindow => 1);
+	    viewer_browser($abs_file);
 	} else {
 	    my $cmd = "$viewer $abs_file";
 	    warn "Try $cmd...\n";
@@ -478,6 +491,20 @@ sub viewer_display {
 	exec @cmd;
 	warn $!;
 	CORE::exit(1);
+    }
+}
+
+sub viewer_browser {
+    my($abs_file) = @_;
+    require WWWBrowser;
+    WWWBrowser::start_browser("file://$abs_file", -oldwindow => 1);
+}
+
+sub orig_viewer {
+    if ($^O eq 'MSWin32') {
+	viewer_browser(@_);
+    } else {
+	viewer_display(@_);
     }
 }
 

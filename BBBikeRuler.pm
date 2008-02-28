@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRuler.pm,v 1.20 2008/02/28 20:52:50 eserte Exp $
+# $Id: BBBikeRuler.pm,v 1.20 2008/02/28 20:52:50 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2008 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ use BBBikePlugin;
 @BBBikeRuler::ISA = qw(BBBikePlugin);
 
 use strict;
-use vars qw($button_image $ruler_cursor $old_motion
+use vars qw($button_image $ruler_cursor $ruler_cursor_win $old_motion
 	    $c_x $c_y $m_x $m_y $real_x $real_y $real_height
 	    $aftertask $circle $mode $gpsman_track_tag $old_message
 	   );
@@ -90,6 +90,16 @@ static unsigned char ruler_bits[] = {
 EOF
     }
 
+    if (!defined $ruler_cursor_win && eval { require MIME::Base64; 1 }) {
+	# This is generated using "convert bla.xbm bla.cur"
+	# where bla.xbm consists of $ruler_cursor data
+	$ruler_cursor_win = MIME::Base64::decode_base64(<<EOF);
+AAABAAEAEQgCAAEAAQBQAAAAFgAAACgAAAARAAAACAAAAAEAAQAAAAAAIAAAABILAAASCwAA
+AgAAAAIAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAACAAIAAiIiAAIiIgAD//4AA//8BAQH/
+/wEBAf//AQEB//8BAQH//wEBAf//AQEB//8BAQH//wEBAQ==
+EOF
+    }
+
     if (!defined $mode) {
 	$mode = MODE_NORMAL;
     }
@@ -121,7 +131,7 @@ sub unregister {
 
 sub activate {
     $main::map_mode = __PACKAGE__;
-    main::set_cursor_data($ruler_cursor);
+    main::set_cursor_data($ruler_cursor, "BBBikeRuler", $ruler_cursor_win);
     main::status_message(M("Cursor bewegen"), "info");
     $old_motion = $main::c->CanvasBind("<Motion>");
     $main::c->CanvasBind("<Motion>" => \&motion);

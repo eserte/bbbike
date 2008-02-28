@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.24 2008/01/22 21:44:16 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.25 2008/02/28 21:23:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2008 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.25 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!caller(2)) {
@@ -34,19 +34,6 @@ EOF
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
-BEGIN {
-    if (!eval q{ use WWW::Search::Google; 1 }) {
-	require BBBikeHeavy;
-	BBBikeHeavy::perlmod_install_advice("WWW::Search::Google");
-	return;
-    }
-    if (!eval q{ use String::Similarity; 1 }) {
-	require BBBikeHeavy;
-	BBBikeHeavy::perlmod_install_advice("String::Similarity");
-	return;
-    }
-}
-
 use Encode;
 
 use PLZ;
@@ -55,7 +42,7 @@ use WWWBrowser;
 
 my $api_key = "pqCq16BQFHJ5jvhg6osutPlLWeSkd9ke";
 
-use vars qw($DEBUG);
+use vars qw($DEBUG $already_tried_WWW_Search_Google $already_tried_String_Similarity);
 $DEBUG = 1;
 
 use vars qw($icon);
@@ -249,6 +236,22 @@ sub construct_queries {
 
 sub do_google_search {
     my(%args) = @_;
+
+    if (!eval q{ use WWW::Search::Google; 1 }) {
+	return if $already_tried_WWW_Search_Google;
+	$already_tried_WWW_Search_Google = 1;
+	require BBBikeHeavy;
+	BBBikeHeavy::perlmod_install_advice("WWW::Search::Google");
+	return;
+    }
+    if (!eval q{ use String::Similarity; 1 }) {
+	return if $already_tried_String_Similarity;
+	$already_tried_String_Similarity = 1;
+	require BBBikeHeavy;
+	BBBikeHeavy::perlmod_install_advice("String::Similarity");
+	return;
+    }
+
     my $my_api_key = $api_key;
     my $google_api_key_file = "$ENV{HOME}/.googleapikey";
     if (open(APIKEY, $google_api_key_file)) {
@@ -280,7 +283,7 @@ sub do_google_search {
 	    push @results, { title        => $result->title,
 			     url          => $result->url,
 			     cooked_title => $cooked_title,
-			     similarity   => similarity $cooked_title, $street_citypart,
+			     similarity   => String::Similarity::similarity($cooked_title, $street_citypart),
 			   };
 	}
 	
