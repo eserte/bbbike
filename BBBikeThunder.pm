@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeThunder.pm,v 1.14 2007/04/23 21:45:44 eserte Exp $
+# $Id: BBBikeThunder.pm,v 1.15 2008/02/28 21:06:04 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -32,6 +32,17 @@ use constant MAX_TIME => 30;
 
 use Hooks;
 use BBBikeUtil;
+
+BEGIN {
+    if (!eval '
+use Msg qw(frommain);
+1;
+') {
+	warn $@ if $@;
+	eval 'sub M ($) { $_[0] }';
+	eval 'sub Mfmt { sprintf(shift, @_) }';
+    }
+}
 
 sub register {
     my $pkg = __PACKAGE__;
@@ -98,7 +109,7 @@ sub activate {
     $stage = STAGE_POSITION;
     my $cursorfile = defined &main::build_text_cursor ? main::build_text_cursor("Curr Pos") : undef;
     $main::c->configure(-cursor => $cursorfile);
-    main::status_message("Derzeitige Position markieren", "info");
+    main::status_message(M("Derzeitige Position markieren"), "info");
     Hooks::get_hooks("after_resize")->add
 	    (sub {
 		 if (defined $real_x) {
@@ -133,14 +144,14 @@ sub add_button {
 	 %radio_args,
 	);
     BBBikePlugin::replace_plugin_widget($mf, $b, __PACKAGE__.'_on');
-    $main::balloon->attach($b, -msg => "Lightning/Thunder")
+    $main::balloon->attach($b, -msg => M("Blitz/Donner"))
 	if $main::balloon;
 
     BBBikePlugin::place_menu_button
 	    ($mmf,
-	     [[Button => "~Reset", -command => sub { thunder_reset() }],
+	     [[Button => M("~Zurücksetzen"), -command => sub { thunder_reset() }],
 	      "-",
-	      [Button => "Delete this menu",
+	      [Button => M("Dieses Menü löschen"),
 	       -command => sub {
 		   $mmf->after(100, sub {
 				   unregister();
@@ -149,8 +160,8 @@ sub add_button {
 	     ],
 	     $b,
 	     __PACKAGE__."_menu",
-	     -title => "Thunder",
-	     -topmenu => [Radiobutton => 'Thunder mode',
+	     -title => M("Blitz/Donner"),
+	     -topmenu => [Radiobutton => M('Blitz/Donner-Modus'),
 			  %radio_args,
 			 ],
 	    );
@@ -161,7 +172,7 @@ sub button {
 	position(@_);
 	main::set_cursor_data($lightning_cursor);
 	$stage = STAGE_LIGHTNING;
-	main::status_message("Auf einen Blitz warten...", "info");
+	main::status_message(M("Auf einen Blitz warten..."), "info");
     } elsif ($stage == STAGE_LIGHTNING) {
 	lightning(@_);
     } elsif ($stage == STAGE_THUNDER) {
@@ -223,14 +234,14 @@ sub lightning {
     $c->lower($ci);
     $lightning_repeat = $c->repeat(50, [\&lightning_circle, $c]);
     $stage = STAGE_THUNDER_DIRECTION;
-    main::status_message("Auf den zugehörigen Donner warten...", "info");
+    main::status_message(M("Auf den zugehörigen Donner warten..."), "info");
     main::set_cursor_data($thunder_cursor);
 }
 
 sub thunder {
     stop_circle();
     $stage = STAGE_LIGHTNING;
-    main::status_message("Auf einen Blitz warten...", "info");
+    main::status_message(M("Auf einen Blitz warten..."), "info");
     main::set_cursor_data($lightning_cursor);
 }
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePlugin.pm,v 1.18 2008/01/26 23:52:05 eserte Exp $
+# $Id: BBBikePlugin.pm,v 1.20 2008/02/28 20:52:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2006 Slaven Rezic. All rights reserved.
@@ -19,6 +19,17 @@ $VERSION = 0.02;
 
 use Class::Struct;
 struct('BBBikePlugin::Plugin' => [Name => "\$", File => "\$", Description => "\$", Active => "\$"]);
+
+BEGIN {
+    if (!eval '
+use Msg qw(frommain);
+1;
+') {
+	warn $@ if $@;
+	eval 'sub M ($) { $_[0] }';
+	eval 'sub Mfmt { sprintf(shift, @_) }';
+    }
+}
 
 use vars qw(%advertised_name_to_title);
 
@@ -72,7 +83,7 @@ sub find_all_plugins {
 	    $main::balloon->attach($lb->Subwidget("scrolled"),
 				   -msg => [map { $_->Description || $_->File } @p]);
 	}
-	$t->Button(-text => "Laden", # XXX Msg.pm
+	$t->Button(-text => M("Laden"),
 		   -command => $doit)->pack(-fill => "x");
 	$t->Button(Name => "close",
 		   -command => sub { $t->destroy })->pack(-fill => "x");
@@ -186,7 +197,9 @@ sub place_menu_button {
 				);
     ## XXX Does not work, reason unclear
     #$menu->configure(-disabledforeground => $menubutton->cget(-foreground)) if $subtitlehack;
-    main::menuarrow_unmanaged($menubutton, $menu);
+    main::menuarrow_unmanaged($menubutton, $menu,
+			      (defined $title ? (-menulabel => $title) : ()),
+			     );
     if ($old_w) {
 	$old_w->destroy;
     }

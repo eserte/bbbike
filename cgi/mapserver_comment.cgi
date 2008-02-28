@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.44 2007/09/03 20:37:20 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.45 2008/02/25 22:19:25 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003-2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003-2008 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,9 +15,12 @@
 
 use strict;
 use vars qw($realbin);
-use FindBin;
+use Cwd qw(realpath);
+use File::Basename;
 BEGIN { # taint fixes
-    ($realbin) = $FindBin::RealBin =~ /^(.*)$/;
+    ## FindBin does not work with modperl
+    #($realbin) = $FindBin::RealBin =~ /^(.*)$/;
+    $realbin = dirname(realpath($0));
     $ENV{PATH} = "/usr/bin:/usr/sbin:/bin:/sbin";
 }
 # from bbbike.cgi
@@ -32,7 +35,6 @@ use BBBikeVar;
 use BBBikeCGIUtil qw();
 use Data::Dumper;
 use MIME::Lite;
-use File::Basename;
 use CGI qw(:standard -no_xhtml);
 use CGI::Carp;
 use vars qw($debug $bbbike_url $bbbike_root $bbbike_html $use_cgi_bin_layout
@@ -177,7 +179,8 @@ eval {
 			 # bbbikecss => "cid:bbbike.css", # XXX see below
 		       };
 	    $need_bbbike_css = 1;
-	    my $htmltpl = "$FindBin::RealBin/../html/newstreetform.tpl.html";
+	    #my $htmltpl = "$FindBin::RealBin/../html/newstreetform.tpl.html";
+	    my $htmltpl = "$realbin/../html/newstreetform.tpl.html";
 	    #warn $htmltpl;
 	    die "Can't read <$htmltpl>" if !-r $htmltpl;
 	    $t->process($htmltpl, $vars, \$add_html_body)
@@ -253,7 +256,7 @@ eval {
 ## Unfortunately, this does not work with Mozilla Mail:
 # 	if ($need_bbbike_css) {
 # 	    $msg->attach(Type => "text/css",
-# 			 Path => "$FindBin::RealBin/../html/bbbike.css",
+# 			 Path => "$realbin/../html/bbbike.css",
 # 			 Id => "bbbike.css",
 # 			);
 # 	}
@@ -278,10 +281,25 @@ eval {
     if (param("formtype") && param("formtype") =~ /^(newstreetform|fragezeichenform)$/) {
 	my $dir = defined $bbbike_html ? $bbbike_html : "..";
 	my $url = "$dir/newstreetform.html";
+	my $bbbikegoolemapsurl;
+	if (param("supplied_coord")) {
+	    $bbbikegoolemapsurl = "$BBBike::BBBIKE_GOOGLEMAP_URL?" .
+		CGI->new({
+		    wpt         => param("supplied_coord"),
+		    coordsystem => "bbbike",
+		    maptype     => "hybrid",
+		    mapmode     => "addroute",
+		    zoom        => 1,
+		})->query_string;
+	}
 	print header(-cookie => $cookie),
 	    start_html(-title=>"Neue Straﬂe f¸r BBBike",
 		       -style=>{'src'=>"$bbbike_html/bbbike.css"}),
-	    "Danke, die Angaben wurden an $to gesendet:",br(),br(),
+	    "Danke, die Angaben wurden an ", a({-href => "mailto:$to"}, $to), " gesendet.",br(),br(),
+	    (defined $bbbikegoolemapsurl ?
+	     (a({-href => $bbbikegoolemapsurl}, "Weitere Kommentare zu dieser Straﬂe auf einer Karte eintragen"),br(),br()) :
+	     ()
+	    ),
 	    a({-href => $url}, "Weitere Straﬂe eintragen"),
 	    end_html;
     } else {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePluginLister.pm,v 1.10 2008/01/06 19:39:29 eserte Exp $
+# $Id: BBBikePluginLister.pm,v 1.11 2008/02/28 20:32:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikePluginLister;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!eval '
@@ -231,7 +231,6 @@ sub toggle_plugin {
 	if ($mod->can("unregister")) {
 	    $mod->unregister;
 	} else {
-	    # XXX M(...)!
 	    main::status_message(M"Das Plugin kann nicht deregistriert werden. Falls die Pluginliste permanent gemacht wird, wird das Plugin beim nächsten Starten von BBBike nicht mehr verfügbar sein.", "warn");
 	}
     }

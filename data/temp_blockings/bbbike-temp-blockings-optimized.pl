@@ -906,6 +906,15 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork -70922,51604 -70980,51154 -71053,49770
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1214863200,
+         'text' => 'B 122 Berliner Str. OD Rheinsberg, zw. Schloßstr. und Paulshorster Str. Kanalarbeiten Vollsperrung 03.03.2008-30.06.2008 ',
+         'from' => 1204412400,
+         'id' => 1293,
+         'data' => 'userdel	q4::inwork -25508,76444 -25411,76258
+',
+         'type' => 'handicap'
        }
      
 );

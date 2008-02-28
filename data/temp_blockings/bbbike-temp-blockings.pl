@@ -3498,7 +3498,7 @@ EOF
        text  => 'B 122 Schloßstr. OD Rheinsberg, zw. Königstr. und Lange Str. Kanalarbeiten halbseitige Sperrung; 02.11.2005-30.06.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -25679,76561 -25764,76324
+userdel	q4 -25801,76494 -25728,76368 -25728,76256
 EOF
      },
      { from  => 1134702000, # 2005-12-16 04:00
@@ -7583,7 +7583,7 @@ EOF
        text  => 'L 015 Mühlenstr. OD Rheinsberg, zw. Schloßstr. u. Rhinstr. Kanalarbeiten Vollsperrung 02.04.2007-31.05.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -25679,76561 -25764,76324
+userdel	q4::inwork -25801,76494 -25728,76368 -25728,76256
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
@@ -10893,6 +10893,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -70922,51604 -70980,51154 -71053,49770
+EOF
+     },
+     { from  => 1204412400, # 2008-03-02 00:00
+       until => 1214863200, # 2008-07-01 00:00
+       text  => 'B 122 Berliner Str. OD Rheinsberg, zw. Schloßstr. und Paulshorster Str. Kanalarbeiten Vollsperrung 03.03.2008-30.06.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -25508,76444 -25411,76258
 EOF
      },
     );

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeSalesman.pm,v 1.10 2008/01/27 22:30:58 eserte Exp $
+# $Id: BBBikeSalesman.pm,v 1.11 2008/02/28 20:56:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2008 Slaven Rezic. All rights reserved.
@@ -65,7 +65,7 @@ sub unregister {
 sub activate {
     $main::map_mode = __PACKAGE__;
     main::set_cursor_data($salesman_cursor);
-    main::status_message("Punkte auswählen", "info");
+    main::status_message(M("Punkte auswählen"), "info");
 }
 
 sub add_button {
@@ -86,8 +86,8 @@ sub add_button {
     BBBikePlugin::replace_plugin_widget($mf, $salesman_check,
 					__PACKAGE__ . '_on');
     BBBikePlugin::add_to_global_plugins_menu
-	    (-title   => "Salesman",
-	     -topmenu => [Radiobutton => 'Salesman mode',
+	    (-title   => M("Kürzeste Rundreise"),
+	     -topmenu => [Radiobutton => M('Kürzester Rundreisen-Modus'),
 			  %radio_args,
 			 ],
 	    );
@@ -110,7 +110,7 @@ sub map_mode_activate {
 	require Salesman;
     };
     if ($@) {
-	if (!main::perlmod_install_advice('List::Permutor')) {
+	if (!main::perlmod_install_advice('List::Permutor')) { # This is pure-perl, easier to install...
 	    warn $@;
 	    $cant_salesman = 1;
 	    $reset->();
@@ -129,13 +129,13 @@ sub map_mode_activate {
     main::set_cursor('salesman');
 
     my $t = main::redisplay_top($main::top, "salesman-end",
-				-title => "Salesman");
+				-title => M("Kürzeste Rundreise"));
     return if !defined $t;
     $main::map_mode_deactivate =
 	sub { $t->destroy if Tk::Exists($t) };
     $t->OnDestroy($reset);
     my $b;
-    Tk::grid($t->Label(-text => "Stationen:"),
+    Tk::grid($t->Label(-text => M("Stationen").":"),
 	     $t->Label(-textvariable => \$salesman->{NumberOfPoints}),
 	     $b = $t->Button
 	     (-text => M"Berechnen",

@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.79 2008/02/24 23:50:00 eserte Exp $
+# $Id: bbbike.cgi,v 8.80 2008/02/25 22:19:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
@@ -715,7 +715,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.79 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.80 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -4150,6 +4150,7 @@ EOF
 
 			my $qs = CGI->new({strname => $fragezeichen_comment,
 					   strname_html => CGI::escapeHTML($fragezeichen_comment),
+					   supplied_coord => join(",", @{$r->path->[$path_index]}),
 					  })->query_string;
 			print qq{<td>$fontstr<a target="newstreetform" href="$bbbike_html/fragezeichenform${newstreetform_encoding}.html?$qs">};
 			if ($is_unknown) {
@@ -6690,7 +6691,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/02/24 23:50:00 $';
+    my $cgi_date = '$Date: 2008/02/25 22:19:50 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

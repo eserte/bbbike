@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRuler.pm,v 1.19 2007/04/23 21:45:50 eserte Exp $
+# $Id: BBBikeRuler.pm,v 1.20 2008/02/28 20:52:50 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,7 +13,7 @@
 #
 
 # Description (en): measure distances and angles
-# Description (de): Entfernungen und Winkel messen
+# Description (de): Entfernungen und Winkel messen (Lineal)
 package BBBikeRuler;
 use BBBikePlugin;
 @BBBikeRuler::ISA = qw(BBBikePlugin);
@@ -23,6 +23,18 @@ use vars qw($button_image $ruler_cursor $old_motion
 	    $c_x $c_y $m_x $m_y $real_x $real_y $real_height
 	    $aftertask $circle $mode $gpsman_track_tag $old_message
 	   );
+
+BEGIN {
+    if (!eval '
+use Msg qw(frommain);
+1;
+') {
+	warn $@ if $@;
+	eval 'sub M ($) { $_[0] }';
+	eval 'sub Mfmt { sprintf(shift, @_) }';
+    }
+}
+
 use constant MODE_NORMAL => 0;
 use constant MODE_GPSMAN_TRACKS => 1;
 use constant MODE_GRADE_GPSMAN_TRACKS => 2;
@@ -110,7 +122,7 @@ sub unregister {
 sub activate {
     $main::map_mode = __PACKAGE__;
     main::set_cursor_data($ruler_cursor);
-    main::status_message("Cursor bewegen", "info");
+    main::status_message(M("Cursor bewegen"), "info");
     $old_motion = $main::c->CanvasBind("<Motion>");
     $main::c->CanvasBind("<Motion>" => \&motion);
     undef $real_height;
@@ -145,23 +157,22 @@ sub add_button {
 
     BBBikePlugin::place_menu_button
 	    ($mmf,
-	     # XXX Msg.pm
-	     [[Checkbutton => "~Kreis",
+	     [[Checkbutton => M("~Kreis"),
 	       -variable => \$circle, -command => sub { toggle_circle() }],
-	      [Radiobutton => "~Normal vermessen",
+	      [Radiobutton => M("~Normal vermessen"),
 	       -variable => \$mode,
 	       -value => MODE_NORMAL,
 	      ],
-	      [Radiobutton => "~GPSMan-Tracks vermessen",
+	      [Radiobutton => M("~GPSMan-Tracks vermessen"),
 	       -variable => \$mode,
 	       -value => MODE_GPSMAN_TRACKS,
 	      ],
-	      [Radiobutton => "~Steigungen von GPSMan-Tracks",
+	      [Radiobutton => M("~Steigungen von GPSMan-Tracks"),
 	       -variable => \$mode,
 	       -value => MODE_GRADE_GPSMAN_TRACKS,
 	      ],
 	      "-",
-	      [Button => "Dieses Menü löschen",
+	      [Button => M("Dieses Menü löschen"),
 	       -command => sub {
 		   $mmf->after(100, sub {
 				   unregister();
@@ -170,8 +181,8 @@ sub add_button {
 	     ],
 	     $b,
 	     __PACKAGE__."_menu",
-	     -title => "Ruler",
-	     -topmenu => [Radiobutton => 'Ruler mode',
+	     -title => M("Lineal"),
+	     -topmenu => [Radiobutton => M('Lineal-Modus'),
 			  %radio_args,
 			 ],
 	    );
@@ -270,6 +281,7 @@ sub motion {
 		if ($time2 != $time1 && $abstime2 != $abstime1) {
 		    $abstime1 = _hms2sec($abstime1);
 		    if ($abstime2 < $abstime1) { $abstime2 += 86400 }
+		    # XXX Msg.pm
 		    $message  = "Zeit: " . _fmt_time($time2-$time1) . "; ";
 		    $message .= sprintf "Dist: %.3fkm; ", $dist2-$dist1;
 		    $message .= sprintf "Speed: %.1fkm/h; ", ((($dist2-$dist1)*1000/($time2-$time1))*3.6);
@@ -307,7 +319,7 @@ sub motion {
 	    }
 	}
     } else {
-	$message = sprintf("Winkel: %d°; Dist: %dm",
+	$message = sprintf(M("Winkel").": %d°; Dist: %dm",
 			   rad2deg($deg)%360, $dist);
 	if (@main::speed) {
 	    for my $speed (@main::speed) {
@@ -325,7 +337,7 @@ sub motion {
 
 	# misc:
 	if (defined $real_height) {
-	    $message .= sprintf ", Höhe: %.1fm", $real_height;
+	    $message .= sprintf ", " . M("Höhe") . ": %.1fm", $real_height;
 	}
     }
 
@@ -351,7 +363,7 @@ sub show_height {
     if (defined $real_height && defined $height && $dist) {
 	my $delta = abs($real_height-$height);
 	my $message = $message;
-	$message .= sprintf(", Höhenunterschied: -> %.1fm = %.1fm (%.1f%%)",
+	$message .= sprintf(", " . M("Höhenunterschied") . ": -> %.1fm = %.1fm (%.1f%%)",
 			    $height, $delta,
 			    $delta/$dist*100
 			   );

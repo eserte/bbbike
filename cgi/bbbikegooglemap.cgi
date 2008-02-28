@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 2.24 2008/01/28 23:49:42 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 2.25 2008/02/25 22:20:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006,2007,2008 Slaven Rezic. All rights reserved.
@@ -199,6 +199,9 @@ sub get_html {
     my $cgi_reldir = dirname($full->path);
 
     my $bbbikeroot = "/BBBike";
+    my $get_public_link = sub {
+	BBBikeCGIUtil::my_url(CGI->new(), -full => 1);
+    };
     if ($host eq 'bbbike.dyndns.org') {
 	$bbbikeroot = "/bbbike";
     } elsif ($host =~ m{srand\.de}) {
@@ -210,6 +213,11 @@ sub get_html {
 	} else {
 	    $bbbikeroot = "/bbbike";
 	}
+	$get_public_link = sub {
+	    my $link = BBBikeCGIUtil::my_url(CGI->new(), -full => 1);
+	    $link =~ s{localhost$bbbikeroot/cgi}{bbbike.radzeit.de/cgi-bin};
+	    $link;
+	};
     }
 
     my $html = <<EOF;
@@ -520,7 +528,7 @@ sub get_html {
 
     function showLink(point, message) {
 	var mapType = mapTypeToString();
-        var latLngStr = message + "@{[ BBBikeCGIUtil::my_url(CGI->new(), -full => 1) ]}?zoom=" + map.getZoomLevel() + "&wpt=" + formatPoint(point) + "&coordsystem=polar" + "&maptype=" + mapType;
+        var latLngStr = message + "@{[ $get_public_link->() ]}?zoom=" + map.getZoomLevel() + "&wpt=" + formatPoint(point) + "&coordsystem=polar" + "&maptype=" + mapType;
         document.getElementById("permalink").innerHTML = latLngStr;
     }
 
