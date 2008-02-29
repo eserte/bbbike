@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRuler.pm,v 1.20 2008/02/28 20:52:50 eserte Exp eserte $
+# $Id: BBBikeRuler.pm,v 1.21 2008/02/28 23:36:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2008 Slaven Rezic. All rights reserved.
@@ -93,6 +93,7 @@ EOF
     if (!defined $ruler_cursor_win && eval { require MIME::Base64; 1 }) {
 	# This is generated using "convert bla.xbm bla.cur"
 	# where bla.xbm consists of $ruler_cursor data
+	# XXX This looks UGLY!
 	$ruler_cursor_win = MIME::Base64::decode_base64(<<EOF);
 AAABAAEAEQgCAAEAAQBQAAAAFgAAACgAAAARAAAACAAAAAEAAQAAAAAAIAAAABILAAASCwAA
 AgAAAAIAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAACAAIAAiIiAAIiIgAD//4AA//8BAQH/

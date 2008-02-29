@@ -783,26 +783,9 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1204239599,
-         'text' => 'Einbahnstraße Richtung Westen wegen Bauarbeiten',
-         'from' => undef,
-         'id' => 1278,
-         'data' => 'userdel	1::inwork 5154,7006 5251,6949 5374,6932
-',
-         'type' => 'gesperrt'
-       },
        undef,
-       {
-         'source_id' => 'IM_007651',
-         'until' => 1204239600,
-         'text' => 'Anna-Louisa-Karsch Str. (Mitte) in Richtung Friedrichsbrücke zwischen An der Spandauer Brücke und Burgstr. Bauarbeiten, Fahrtrichtung gesperrt (bis Ende Feb 2008)',
-         'from' => undef,
-         'id' => 1280,
-         'data' => 'userdel	1::inwork 10309,12854 10171,12769
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1206918000,
          'text' => 'L 030 Börnicker Chaussee OD Bernau, zw. Gernotstr. und Schönfelder Weg Straßenbau Wintersicherung Vollsperrung 20.12.2007-30.03.2008 ',
@@ -843,9 +826,9 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        {
          'source_id' => 'IM_007852',
-         'until' => 1204326000,
-         'text' => 'Hultschiner Damm (Mahlsdorf) Richtung Köpenick zwischen Alt-Mahlsdorf und Elsenstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 29.02.2008)',
-         'from' => 1203897664,
+         'until' => 1204758000,
+         'text' => 'Hultschiner Damm (Mahlsdorf) Richtung Köpenick zwischen Alt-Mahlsdorf und Elsenstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 05.03.2008)',
+         'from' => 1204328757,
          'id' => 1285,
          'data' => 'userdel	1::inwork 24658,11293 24735,11021 24637,10807
 ',
@@ -915,6 +898,34 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork -25508,76444 -25411,76258
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_007944',
+         'until' => 1204513200,
+         'text' => 'Karlshorster Str. (Lichtenberg) Richtung Hauptstr. nach Marktstr. Baustelle, Fahrtrichtung gesperrt (bis 03.03., 04 Uhr)',
+         'from' => 1204328798,
+         'id' => 1294,
+         'data' => 'userdel	1::inwork 15267,10865 15266,10791 15255,10751
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1215208800,
+         'text' => 'B 168 zw. Abzw. Zeust und Beeskow Straßenbauarbeiten Vollsperrung 03.03.2008-04.07.2008 ',
+         'from' => 1204412400,
+         'id' => 1295,
+         'data' => 'userdel	2::inwork 69461,-27572 69160,-25724
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1206572400,
+         'text' => 'L 256 B109 - LG - Milow - B104 Bahnübergang bei Nechlin Gleisbauarbeiten Vollsperrung 17.03.2008-26.03.2008 ',
+         'from' => 1205622000,
+         'id' => 1296,
+         'data' => 'userdel	2::inwork 42905,115846 42250,115925 42222,115929
+',
+         'type' => 'gesperrt'
        }
      
 );

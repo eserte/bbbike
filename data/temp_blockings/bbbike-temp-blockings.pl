@@ -10829,9 +10829,9 @@ EOF
 userdel	1::inwork 9164,12172 9365,12196
 EOF
      },
-     { from  => 1203897664, # 2008-02-25 01:01
-       until => 1204326000, # 2008-03-01 00:00
-       text  => 'Hultschiner Damm (Mahlsdorf) Richtung Köpenick zwischen Alt-Mahlsdorf und Elsenstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 29.02.2008)',
+     { from  => 1204328757, # 2008-03-01 00:45
+       until => 1204758000, # 2008-03-06 00:00
+       text  => 'Hultschiner Damm (Mahlsdorf) Richtung Köpenick zwischen Alt-Mahlsdorf und Elsenstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 05.03.2008)',
        type  => 'gesperrt',
        source_id => 'IM_007852',
        data  => <<EOF,
@@ -10901,6 +10901,31 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -25508,76444 -25411,76258
+EOF
+     },
+     { from  => 1204328798, # 2008-03-01 00:46
+       until => 1204513200, # 2008-03-03 04:00
+       text  => 'Karlshorster Str. (Lichtenberg) Richtung Hauptstr. nach Marktstr. Baustelle, Fahrtrichtung gesperrt (bis 03.03., 04 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_007944',
+       data  => <<EOF,
+userdel	1::inwork 15267,10865 15266,10791 15255,10751
+EOF
+     },
+     { from  => 1204412400, # 2008-03-02 00:00
+       until => 1215208800, # 2008-07-05 00:00
+       text  => 'B 168 zw. Abzw. Zeust und Beeskow Straßenbauarbeiten Vollsperrung 03.03.2008-04.07.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 69461,-27572 69160,-25724
+EOF
+     },
+     { from  => 1205622000, # 2008-03-16 00:00
+       until => 1206572400, # 2008-03-27 00:00
+       text  => 'L 256 B109 - LG - Milow - B104 Bahnübergang bei Nechlin Gleisbauarbeiten Vollsperrung 17.03.2008-26.03.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 42905,115846 42250,115925 42222,115929
 EOF
      },
     );
