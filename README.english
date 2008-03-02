@@ -265,8 +265,11 @@ C<cbbbike> and C<cmdbbbike> are simpler command line versions of the program.
 
 =head1 DEVELOPMENT
 
-The current BBBike development may be tracked via CVS. Look at
-L<http://sourceforge.net/cvs/?group_id=19142> for instructions on how to use CVS.
+The current BBBike development may be tracked via CVS. It is also
+possible to download a current snapshot using the URL
+L<http://www.bbbike.de/cgi-bin/bbbike-snapshot.cgi>.
+
+Look at L<http://sourceforge.net/cvs/?group_id=19142> for instructions on how to use CVS.
 
 To use the CVS repository from command line type the following:
 

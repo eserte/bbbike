@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.199 2008/02/24 11:14:27 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.199 2008/02/24 11:14:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2008 Slaven Rezic. All rights reserved.
@@ -1882,6 +1882,16 @@ sub stderr_menu {
 }
 
 sub stderr_window_command {
+    if ($stderr_window && defined $Devel::Trace::TRACE) {
+	warn <<EOF;
+**********************************************************************
+* NOTE: It seems that -d:Trace is requested. It's a bad idea
+*       to use this together with Tk::Stderr, so the latter
+*       is disabled.
+**********************************************************************
+EOF
+	return;
+    }
     if ($stderr_window) {
 	if (!eval { require Tk::Stderr; Tk::Stderr->VERSION(1.2); }) {
 	    if (!perlmod_install_advice("Tk::Stderr")) {

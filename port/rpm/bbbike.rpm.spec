@@ -1,15 +1,15 @@
 ### DO NOT EDIT! CREATED AUTOMATICALLY! ###
 %define __prefix        %{_prefix}
 Name: BBBike
-Version: 3.15
-Release: 5
+Version: 3.16
+Release: 3
 Copyright: GPL
 Group: Applications/Productivity
 Requires: perl >= 5.005, perl-tk >= 800
 Prefix: %{__prefix}
 URL: http://bbbike.sourceforge.net
 Packager: slaven@rezic.de
-Source: http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.15.tar.gz
+Source: http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.16.tar.gz
 Summary: A route-finder for cyclists in Berlin and Brandenburg
 
 %description
@@ -33,10 +33,12 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/Ampelschaltung.pm
 %{__prefix}/BBBike/BBBikeAdvanced.pm
 %{__prefix}/BBBike/BBBikeAlarm.pm
+%{__prefix}/BBBike/BBBikeCGIUtil.pm
 %{__prefix}/BBBike/BBBikeCalc.pm
 %{__prefix}/BBBike/BBBikeCrosshairs.pm
 %{__prefix}/BBBike/BBBikeDebug.pm
 %{__prefix}/BBBike/BBBikeDraw.pm
+%{__prefix}/BBBike/BBBikeDraw/BBBikeGoogleMaps.pm
 %{__prefix}/BBBike/BBBikeDraw/GD.pm
 %{__prefix}/BBBike/BBBikeDraw/GDHeavy.pm
 %{__prefix}/BBBike/BBBikeDraw/ImageMagick.pm
@@ -59,6 +61,7 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/BBBikePalm.pm
 %{__prefix}/BBBike/BBBikePersonal.pm
 %{__prefix}/BBBike/BBBikePlugin.pm
+%{__prefix}/BBBike/BBBikePluginLister.pm
 %{__prefix}/BBBike/BBBikePrint.pm
 %{__prefix}/BBBike/BBBikeProfil.pm
 %{__prefix}/BBBike/BBBikeRouting.pm
@@ -70,6 +73,7 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/BBBikeServer.pm
 %{__prefix}/BBBike/BBBikeStats.pm
 %{__prefix}/BBBike/BBBikeThunder.pm
+%{__prefix}/BBBike/BBBikeTkUtil.pm
 %{__prefix}/BBBike/BBBikeTrans.pm
 %{__prefix}/BBBike/BBBikeUtil.pm
 %{__prefix}/BBBike/BBBikeVar.pm
@@ -88,7 +92,6 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/ESRI/esri2bbd.pl
 %{__prefix}/BBBike/ESRI/t/shapefile.t
 %{__prefix}/BBBike/FURadar.pm
-%{__prefix}/BBBike/Fahrinfo.pm
 %{__prefix}/BBBike/GIS/Globe.pm
 %{__prefix}/BBBike/GIS/NSD.pm
 %{__prefix}/BBBike/GIS/globe_to_bbd.pl
@@ -96,10 +99,12 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/GPS/DirectGarmin.pm
 %{__prefix}/BBBike/GPS/G7toWin_2.pm
 %{__prefix}/BBBike/GPS/G7toWin_ASCII.pm
+%{__prefix}/BBBike/GPS/GPX.pm
 %{__prefix}/BBBike/GPS/Gardown.pm
 %{__prefix}/BBBike/GPS/Gpsbabel.pm
 %{__prefix}/BBBike/GPS/GpsmanConn.pm
 %{__prefix}/BBBike/GPS/GpsmanData.pm
+%{__prefix}/BBBike/GPS/KML.pm
 %{__prefix}/BBBike/GPS/MPS.pm
 %{__prefix}/BBBike/GPS/MyNMEA.pm
 %{__prefix}/BBBike/GPS/Ovl.pm
@@ -112,6 +117,8 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/Geography/Berlin_DE.pm
 %{__prefix}/BBBike/Geography/Brandenburg_DE.pm
 %{__prefix}/BBBike/Geography/Muenchen_DE.pm
+%{__prefix}/BBBike/Geography/Oranienburg_DE.pm
+%{__prefix}/BBBike/Geography/Zuerich_CH.pm
 %{__prefix}/BBBike/GfxConvert.pm
 %{__prefix}/BBBike/Hooks.pm
 %{__prefix}/BBBike/HouseNumbers.pm
@@ -126,6 +133,7 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/Karte/Berlinmap2003.pm
 %{__prefix}/BBBike/Karte/Berlinmap2004.pm
 %{__prefix}/BBBike/Karte/Cityinfo.pm
+%{__prefix}/BBBike/Karte/Deinplan.pm
 %{__prefix}/BBBike/Karte/Demap2002.pm
 %{__prefix}/BBBike/Karte/ETRS89.pm
 %{__prefix}/BBBike/Karte/FURadar.pm
@@ -153,12 +161,11 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/MasterPunkte.pm
 %{__prefix}/BBBike/MasterStrassen.pm
 %{__prefix}/BBBike/PLZ.pm
+%{__prefix}/BBBike/PLZ/Levenshtein.pm
 %{__prefix}/BBBike/PLZ/Multi.pm
 %{__prefix}/BBBike/PointEdit.pm
 %{__prefix}/BBBike/README
 %{__prefix}/BBBike/README.english
-%{__prefix}/BBBike/README.english.html
-%{__prefix}/BBBike/README.html
 %{__prefix}/BBBike/Radwege.pm
 %{__prefix}/BBBike/Route.pm
 %{__prefix}/BBBike/Route/Descr.pm
@@ -168,6 +175,8 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/Strassen.pm
 %{__prefix}/BBBike/Strassen/Build.pm
 %{__prefix}/BBBike/Strassen/CDB.pm
+%{__prefix}/BBBike/Strassen/Cat.pm
+%{__prefix}/BBBike/Strassen/Combine.pm
 %{__prefix}/BBBike/Strassen/Core.pm
 %{__prefix}/BBBike/Strassen/CoreHeavy.pm
 %{__prefix}/BBBike/Strassen/DB_File.pm
@@ -185,6 +194,7 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/Strassen/Generated_src.pm
 %{__prefix}/BBBike/Strassen/Gpsman.pm
 %{__prefix}/BBBike/Strassen/Heavy.pm
+%{__prefix}/BBBike/Strassen/KML.pm
 %{__prefix}/BBBike/Strassen/Kreuzungen.pm
 %{__prefix}/BBBike/Strassen/Lazy.pm
 %{__prefix}/BBBike/Strassen/MapInfo.pm
@@ -200,7 +210,6 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/Strassen/Tie.pm
 %{__prefix}/BBBike/Strassen/Util.pm
 %{__prefix}/BBBike/Strassen/WaypointPlus.pm
-%{__prefix}/BBBike/TODO.pod
 %{__prefix}/BBBike/Telefonbuch.pm
 %{__prefix}/BBBike/Telefonbuch2001.pm
 %{__prefix}/BBBike/Telefonbuch98.pm
@@ -213,14 +222,9 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/bbbike
 %{__prefix}/BBBike/bbbike-fast.bat
 %{__prefix}/BBBike/bbbike.bat
-%{__prefix}/BBBike/bbbike.html
 %{__prefix}/BBBike/bbbike.pod
-%{__prefix}/BBBike/bbbike_internals.html
-%{__prefix}/BBBike/bbbike_internals.pod
 %{__prefix}/BBBike/bbbikeapplet
 %{__prefix}/BBBike/bbbikeclient
-%{__prefix}/BBBike/bbd.html
-%{__prefix}/BBBike/bbd.pod
 %{__prefix}/BBBike/cbbbike
 %{__prefix}/BBBike/cbbbike.bat
 %{__prefix}/BBBike/cgi/README
@@ -230,12 +234,14 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/cgi/bbbikegooglemap.cgi
 %{__prefix}/BBBike/cgi/berlinmap.cgi
 %{__prefix}/BBBike/cgi/configure-bbbike.cgi
+%{__prefix}/BBBike/cgi/httpd.conf.st
 %{__prefix}/BBBike/cgi/httpd.conf.tpl
 %{__prefix}/BBBike/cgi/httpi
 %{__prefix}/BBBike/cgi/mapserver_address.cgi
 %{__prefix}/BBBike/cgi/mapserver_comment.cgi
 %{__prefix}/BBBike/cgi/mapserver_setcoord.cgi
 %{__prefix}/BBBike/cgi/mksymlinks
+%{__prefix}/BBBike/cgi/msg/en
 %{__prefix}/BBBike/cgi/redirect-bbbike.cgi
 %{__prefix}/BBBike/cgi/runbbbikecgi
 %{__prefix}/BBBike/cgi/tinyhttpd
@@ -249,6 +255,7 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/data/ampeln
 %{__prefix}/BBBike/data/ampelschaltung
 %{__prefix}/BBBike/data/berlin
+%{__prefix}/BBBike/data/berlin_ortsteile
 %{__prefix}/BBBike/data/brunnels
 %{__prefix}/BBBike/data/comments_cyclepath
 %{__prefix}/BBBike/data/comments_ferry
@@ -269,6 +276,7 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/data/gesperrt_s
 %{__prefix}/BBBike/data/gesperrt_u
 %{__prefix}/BBBike/data/green
+%{__prefix}/BBBike/data/grenzuebergaenge
 %{__prefix}/BBBike/data/handicap_l
 %{__prefix}/BBBike/data/handicap_s
 %{__prefix}/BBBike/data/hoehe
@@ -300,10 +308,20 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/data/sbahnhof
 %{__prefix}/BBBike/data/sbahnhof_bg
 %{__prefix}/BBBike/data/sehenswuerdigkeit
+%{__prefix}/BBBike/data/sehenswuerdigkeit_img/berliner_dom.gif
+%{__prefix}/BBBike/data/sehenswuerdigkeit_img/bodemuseum.png
+%{__prefix}/BBBike/data/sehenswuerdigkeit_img/bodemuseum_klein.gif
+%{__prefix}/BBBike/data/sehenswuerdigkeit_img/bodemuseum_klein.png
 %{__prefix}/BBBike/data/sehenswuerdigkeit_img/brandenburger_tor.gif
+%{__prefix}/BBBike/data/sehenswuerdigkeit_img/einsteinturm.gif
 %{__prefix}/BBBike/data/sehenswuerdigkeit_img/fernsehturm.gif
+%{__prefix}/BBBike/data/sehenswuerdigkeit_img/friedrichswerdersche_kirche.png
+%{__prefix}/BBBike/data/sehenswuerdigkeit_img/friedrichswerdersche_kirche_klein.gif
+%{__prefix}/BBBike/data/sehenswuerdigkeit_img/friedrichswerdersche_kirche_klein.png
 %{__prefix}/BBBike/data/sehenswuerdigkeit_img/funkturm.gif
 %{__prefix}/BBBike/data/sehenswuerdigkeit_img/gedaechtniskirche.gif
+%{__prefix}/BBBike/data/sehenswuerdigkeit_img/heilandskirche_sacrow.gif
+%{__prefix}/BBBike/data/sehenswuerdigkeit_img/heilandskirche_sacrow.png
 %{__prefix}/BBBike/data/sehenswuerdigkeit_img/luftbrueckendenkmal.gif
 %{__prefix}/BBBike/data/sehenswuerdigkeit_img/oberbaumbruecke.gif
 %{__prefix}/BBBike/data/sehenswuerdigkeit_img/oberbaumcity.gif
@@ -311,8 +329,12 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/data/sehenswuerdigkeit_img/schultheiss.gif
 %{__prefix}/BBBike/data/sehenswuerdigkeit_img/siegessaeule.gif
 %{__prefix}/BBBike/data/sehenswuerdigkeit_img/viktoriaparkdenkmal.gif
+%{__prefix}/BBBike/data/sehenswuerdigkeit_img/wasserturm_jungfernheide.gif
+%{__prefix}/BBBike/data/sehenswuerdigkeit_img/wasserturm_ostkreuz.gif
+%{__prefix}/BBBike/data/sehenswuerdigkeit_img/wasserturm_ostkreuz.png
 %{__prefix}/BBBike/data/strassen
 %{__prefix}/BBBike/data/strassen_bab
+%{__prefix}/BBBike/data/temp_blockings/bbbike-temp-blockings-optimized.pl
 %{__prefix}/BBBike/data/ubahn
 %{__prefix}/BBBike/data/ubahnhof
 %{__prefix}/BBBike/data/ubahnhof_bg
@@ -321,6 +343,22 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/data/wasserstrassen
 %{__prefix}/BBBike/data/wasserumland
 %{__prefix}/BBBike/data/wasserumland2
+%{__prefix}/BBBike/doc/HOWTO_edit_bbbike_data.html
+%{__prefix}/BBBike/doc/README.english.html
+%{__prefix}/BBBike/doc/README.html
+%{__prefix}/BBBike/doc/TODO.pod
+%{__prefix}/BBBike/doc/authors.pod
+%{__prefix}/BBBike/doc/bbbike.html
+%{__prefix}/BBBike/doc/bbbike_internals.html
+%{__prefix}/BBBike/doc/bbbike_internals.pod
+%{__prefix}/BBBike/doc/bbd.html
+%{__prefix}/BBBike/doc/bbd.pod
+%{__prefix}/BBBike/doc/docbook.css
+%{__prefix}/BBBike/doc/links.pod
+%{__prefix}/BBBike/doc/podindex.html
+%{__prefix}/BBBike/doc/qualitaetskategorien.html
+%{__prefix}/BBBike/doc/tests.pod
+%{__prefix}/BBBike/doc/watchsites.pod
 %{__prefix}/BBBike/ext/BBBikeXS/BBBikeXS.pm
 %{__prefix}/BBBike/ext/BBBikeXS/BBBikeXS.xs
 %{__prefix}/BBBike/ext/BBBikeXS/MANIFEST
@@ -385,14 +423,34 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/html/bbbike_small.en.html
 %{__prefix}/BBBike/html/bbbike_small.html
 %{__prefix}/BBBike/html/bbbike_start.js
+%{__prefix}/BBBike/html/bbbike_util.js
 %{__prefix}/BBBike/html/bbbikepod.css
 %{__prefix}/BBBike/html/bbbikeprint.css
 %{__prefix}/BBBike/html/empty.html
+%{__prefix}/BBBike/html/error404.html
 %{__prefix}/BBBike/html/fragezeichenform.html
+%{__prefix}/BBBike/html/fragezeichenform.utf8.html
 %{__prefix}/BBBike/html/help.html
 %{__prefix}/BBBike/html/legende.html
 %{__prefix}/BBBike/html/newstreetform.html
 %{__prefix}/BBBike/html/newstreetform.tpl.html
+%{__prefix}/BBBike/html/newstreetform.utf8.html
+%{__prefix}/BBBike/html/opensearch/bbbike-opensearch-de-simple.gif
+%{__prefix}/BBBike/html/opensearch/bbbike-opensearch-de-simple.src
+%{__prefix}/BBBike/html/opensearch/bbbike-opensearch-de-simple.xml
+%{__prefix}/BBBike/html/opensearch/bbbike-opensearch-de.gif
+%{__prefix}/BBBike/html/opensearch/bbbike-opensearch-de.src
+%{__prefix}/BBBike/html/opensearch/bbbike-opensearch-de.xml
+%{__prefix}/BBBike/html/opensearch/bbbike-opensearch-en-simple.gif
+%{__prefix}/BBBike/html/opensearch/bbbike-opensearch-en-simple.src
+%{__prefix}/BBBike/html/opensearch/bbbike-opensearch-en-simple.xml
+%{__prefix}/BBBike/html/opensearch/bbbike-opensearch-en.gif
+%{__prefix}/BBBike/html/opensearch/bbbike-opensearch-en.src
+%{__prefix}/BBBike/html/opensearch/bbbike-opensearch-en.xml
+%{__prefix}/BBBike/html/opensearch/bbbike-opensearch.tpl.src
+%{__prefix}/BBBike/html/opensearch/bbbike-opensearch.tpl.xml
+%{__prefix}/BBBike/html/opensearch/opensearch.html
+%{__prefix}/BBBike/html/opensearch/opensearch.js
 %{__prefix}/BBBike/html/pleasewait.html
 %{__prefix}/BBBike/html/presse.html
 %{__prefix}/BBBike/html/sprintf.js
@@ -445,18 +503,36 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/images/apfel.gif
 %{__prefix}/BBBike/images/apfel.png
 %{__prefix}/BBBike/images/apfel.xpm
+%{__prefix}/BBBike/images/aufzug.gif
+%{__prefix}/BBBike/images/aufzug.png
+%{__prefix}/BBBike/images/aufzug.xpm
+%{__prefix}/BBBike/images/aufzug_klein.gif
+%{__prefix}/BBBike/images/aufzug_klein.png
+%{__prefix}/BBBike/images/aufzug_klein.xpm
+%{__prefix}/BBBike/images/aufzug_klein2.gif
+%{__prefix}/BBBike/images/aufzug_klein2.png
+%{__prefix}/BBBike/images/aufzug_klein2.xpm
+%{__prefix}/BBBike/images/bab_table_16.gif
+%{__prefix}/BBBike/images/bab_table_16.png
+%{__prefix}/BBBike/images/bab_table_32.gif
+%{__prefix}/BBBike/images/bab_table_32.png
+%{__prefix}/BBBike/images/bbbike_google.gif
+%{__prefix}/BBBike/images/bbbike_google.png
+%{__prefix}/BBBike/images/bbbike_google.xpm
 %{__prefix}/BBBike/images/bbbike_splash.gif
 %{__prefix}/BBBike/images/bbbike_splash.xpm
-%{__prefix}/BBBike/images/behindertenfreundlich.gif
-%{__prefix}/BBBike/images/behindertengerecht.gif
-%{__prefix}/BBBike/images/behindertengerecht_klein.gif
-%{__prefix}/BBBike/images/behindertengerecht_klein2.gif
 %{__prefix}/BBBike/images/berlin_overview_small.gif
 %{__prefix}/BBBike/images/berlin_overview_small.xpm
 %{__prefix}/BBBike/images/berlin_small.gif
 %{__prefix}/BBBike/images/berlin_small.xpm
+%{__prefix}/BBBike/images/berlin_small_280x240.gif
+%{__prefix}/BBBike/images/berlin_small_280x240.png
+%{__prefix}/BBBike/images/berlin_small_280x240.xpm
 %{__prefix}/BBBike/images/berlin_small_hi.gif
 %{__prefix}/BBBike/images/berlin_small_hi.xpm
+%{__prefix}/BBBike/images/berlin_small_hi_280x240.gif
+%{__prefix}/BBBike/images/berlin_small_hi_280x240.png
+%{__prefix}/BBBike/images/berlin_small_hi_280x240.xpm
 %{__prefix}/BBBike/images/bg.gif
 %{__prefix}/BBBike/images/bg.jpg
 %{__prefix}/BBBike/images/bicycle.gif
@@ -464,11 +540,19 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/images/birne.gif
 %{__prefix}/BBBike/images/birne.png
 %{__prefix}/BBBike/images/birne.xpm
+%{__prefix}/BBBike/images/bluedot.png
+%{__prefix}/BBBike/images/bundesstrasse_table_16.gif
+%{__prefix}/BBBike/images/bundesstrasse_table_16.png
+%{__prefix}/BBBike/images/bundesstrasse_table_32.gif
+%{__prefix}/BBBike/images/bundesstrasse_table_32.png
 %{__prefix}/BBBike/images/bw_hleft.wbmp
 %{__prefix}/BBBike/images/bw_hright.wbmp
 %{__prefix}/BBBike/images/bw_left.wbmp
 %{__prefix}/BBBike/images/bw_right.wbmp
 %{__prefix}/BBBike/images/bw_straight.wbmp
+%{__prefix}/BBBike/images/cal.gif
+%{__prefix}/BBBike/images/cal.png
+%{__prefix}/BBBike/images/cal.xpm
 %{__prefix}/BBBike/images/car.gif
 %{__prefix}/BBBike/images/car.png
 %{__prefix}/BBBike/images/car.xpm
@@ -482,11 +566,18 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/images/cross.gif
 %{__prefix}/BBBike/images/cross.xpm
 %{__prefix}/BBBike/images/crosses.xbm
+%{__prefix}/BBBike/images/de_flag.png
 %{__prefix}/BBBike/images/delete_ovl.gif
 %{__prefix}/BBBike/images/delnet_ptr.xbm
 %{__prefix}/BBBike/images/delnet_ptr_mask.xbm
+%{__prefix}/BBBike/images/dest.gif
+%{__prefix}/BBBike/images/dest.png
 %{__prefix}/BBBike/images/dest_ptr.xbm
 %{__prefix}/BBBike/images/dest_ptr_mask.xbm
+%{__prefix}/BBBike/images/droga_krajowa_table_16.gif
+%{__prefix}/BBBike/images/droga_krajowa_table_16.png
+%{__prefix}/BBBike/images/droga_krajowa_table_32.gif
+%{__prefix}/BBBike/images/droga_krajowa_table_32.png
 %{__prefix}/BBBike/images/essen.gif
 %{__prefix}/BBBike/images/essen.xpm
 %{__prefix}/BBBike/images/essen_klein.gif
@@ -522,12 +613,18 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/images/flag_ziel_centered.gif
 %{__prefix}/BBBike/images/flag_ziel_centered.png
 %{__prefix}/BBBike/images/flag_ziel_centered.xpm
+%{__prefix}/BBBike/images/gb_flag.png
 %{__prefix}/BBBike/images/gefaelle.gif
 %{__prefix}/BBBike/images/gefaelle.xpm
 %{__prefix}/BBBike/images/glas.gif
 %{__prefix}/BBBike/images/glas.xpm
 %{__prefix}/BBBike/images/glas_klein.gif
 %{__prefix}/BBBike/images/glas_klein.xpm
+%{__prefix}/BBBike/images/google.gif
+%{__prefix}/BBBike/images/grenzuebergang_16.gif
+%{__prefix}/BBBike/images/grenzuebergang_16.png
+%{__prefix}/BBBike/images/grenzuebergang_32.gif
+%{__prefix}/BBBike/images/grenzuebergang_32.png
 %{__prefix}/BBBike/images/haltestelle.gif
 %{__prefix}/BBBike/images/haltestelle.xpm
 %{__prefix}/BBBike/images/hatched_ring.gif
@@ -584,6 +681,10 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/images/movehand.xpm
 %{__prefix}/BBBike/images/movehand_ptr.xbm
 %{__prefix}/BBBike/images/movehand_ptr_mask.xbm
+%{__prefix}/BBBike/images/moz_grab.gif
+%{__prefix}/BBBike/images/museum.gif
+%{__prefix}/BBBike/images/museum.png
+%{__prefix}/BBBike/images/museum.xpm
 %{__prefix}/BBBike/images/newlayer.gif
 %{__prefix}/BBBike/images/newlayer.png
 %{__prefix}/BBBike/images/newlayer.xpm
@@ -602,12 +703,16 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/images/ptr.xbm
 %{__prefix}/BBBike/images/px_1t.gif
 %{__prefix}/BBBike/images/radrouten.gif
+%{__prefix}/BBBike/images/rampe.gif
+%{__prefix}/BBBike/images/rampe.png
+%{__prefix}/BBBike/images/rampe.xpm
 %{__prefix}/BBBike/images/rbahn.gif
 %{__prefix}/BBBike/images/rbahn.xpm
 %{__prefix}/BBBike/images/redcross.gif
 %{__prefix}/BBBike/images/redcross.png
 %{__prefix}/BBBike/images/redcross.xpm
 %{__prefix}/BBBike/images/reddot.gif
+%{__prefix}/BBBike/images/reddot.png
 %{__prefix}/BBBike/images/rueckweg.gif
 %{__prefix}/BBBike/images/rueckweg.xpm
 %{__prefix}/BBBike/images/salesman.gif
@@ -654,7 +759,9 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/images/star.png
 %{__prefix}/BBBike/images/star.xpm
 %{__prefix}/BBBike/images/start.gif
+%{__prefix}/BBBike/images/start.png
 %{__prefix}/BBBike/images/start.xpm
+%{__prefix}/BBBike/images/start_ptr.png
 %{__prefix}/BBBike/images/start_ptr.xbm
 %{__prefix}/BBBike/images/start_ptr_mask.xbm
 %{__prefix}/BBBike/images/steigung.gif
@@ -669,6 +776,9 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/images/synagogue.gif
 %{__prefix}/BBBike/images/synagogue.png
 %{__prefix}/BBBike/images/synagogue.xpm
+%{__prefix}/BBBike/images/theater.gif
+%{__prefix}/BBBike/images/theater.png
+%{__prefix}/BBBike/images/theater.xpm
 %{__prefix}/BBBike/images/thunder_cursor.xbm
 %{__prefix}/BBBike/images/touristinfo.gif
 %{__prefix}/BBBike/images/touristinfo.png
@@ -689,6 +799,7 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/images/usercross.png
 %{__prefix}/BBBike/images/usercross.xpm
 %{__prefix}/BBBike/images/via.gif
+%{__prefix}/BBBike/images/via.png
 %{__prefix}/BBBike/images/via.xpm
 %{__prefix}/BBBike/images/via_add_nb1_ptr.xbm
 %{__prefix}/BBBike/images/via_add_nb1_ptr_mask.xbm
@@ -715,6 +826,7 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/images/wasser.xpm
 %{__prefix}/BBBike/images/watch_ptr.xbm
 %{__prefix}/BBBike/images/watch_ptr_mask.xbm
+%{__prefix}/BBBike/images/wikipedia.gif
 %{__prefix}/BBBike/images/windrose.gif
 %{__prefix}/BBBike/images/windrose.xpm
 %{__prefix}/BBBike/images/windrose2.gif
@@ -724,24 +836,30 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/images/xy_ptr.xbm
 %{__prefix}/BBBike/images/xy_ptr_mask.xbm
 %{__prefix}/BBBike/images/ziel.gif
+%{__prefix}/BBBike/images/ziel.png
 %{__prefix}/BBBike/images/ziel.xpm
+%{__prefix}/BBBike/images/ziel_ptr.png
 %{__prefix}/BBBike/images/ziel_ptr.xbm
 %{__prefix}/BBBike/images/ziel_ptr_mask.xbm
 %{__prefix}/BBBike/images/zugbruecke.gif
 %{__prefix}/BBBike/images/zugbruecke.png
 %{__prefix}/BBBike/images/zugbruecke.xpm
 %{__prefix}/BBBike/images/zugbruecke_klein.gif
+%{__prefix}/BBBike/images/zugbruecke_klein.jpg
 %{__prefix}/BBBike/images/zugbruecke_klein.png
 %{__prefix}/BBBike/images/zugbruecke_klein.xpm
 %{__prefix}/BBBike/install.bat
 %{__prefix}/BBBike/install.pl
-%{__prefix}/BBBike/install.pl.config
-%{__prefix}/BBBike/kde/BBBike.kdelnk.tmpl
-%{__prefix}/BBBike/kde/BBBikeDoc.kdelnk.tmpl
-%{__prefix}/BBBike/kde/BBBikeWWW.kdelnk.tmpl
-%{__prefix}/BBBike/kde/x-bbbike-data.kdelnk
-%{__prefix}/BBBike/kde/x-bbbike-route.kdelnk
-%{__prefix}/BBBike/kde/x-gpstrack.kdelnk
+%{__prefix}/BBBike/install.sh
+%{__prefix}/BBBike/kde/BBBike.desktop.tmpl
+%{__prefix}/BBBike/kde/BBBikeDoc.desktop.tmpl
+%{__prefix}/BBBike/kde/BBBikeWWW.desktop.tmpl
+%{__prefix}/BBBike/kde/Cartography.directory.tmpl
+%{__prefix}/BBBike/kde/bbbike-mime-info.xml
+%{__prefix}/BBBike/kde/bbbike.menu
+%{__prefix}/BBBike/kde/x-bbbike-data.desktop.tmpl
+%{__prefix}/BBBike/kde/x-bbbike-route.desktop.tmpl
+%{__prefix}/BBBike/kde/x-gpstrack.desktop.tmpl
 %{__prefix}/BBBike/lib/AutoInstall/Tk.pm
 %{__prefix}/BBBike/lib/BikePower.pm
 %{__prefix}/BBBike/lib/BikePower/HTML.pm
@@ -762,6 +880,7 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/lib/Geometry.pm
 %{__prefix}/BBBike/lib/Http.pm
 %{__prefix}/BBBike/lib/KDEUtil.pm
+%{__prefix}/BBBike/lib/MacOSXUtil.pm
 %{__prefix}/BBBike/lib/Met/Wind.pm
 %{__prefix}/BBBike/lib/Msg.pm
 %{__prefix}/BBBike/lib/MyFile.pm
@@ -793,6 +912,7 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/lib/Tk/Placement.pm
 %{__prefix}/BBBike/lib/Tk/ProgressSplash.pm
 %{__prefix}/BBBike/lib/Tk/RaisedButton.pm
+%{__prefix}/BBBike/lib/Tk/ResizeButton.pm
 %{__prefix}/BBBike/lib/Tk/RotFont.pm
 %{__prefix}/BBBike/lib/Tk/RotX11Font.pm
 %{__prefix}/BBBike/lib/Tk/Ruler.pm
@@ -814,7 +934,6 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/lib/Tk/grid090.xbm
 %{__prefix}/BBBike/lib/Tk/grid135.xbm
 %{__prefix}/BBBike/lib/Tk/layereye.gif
-%{__prefix}/BBBike/lib/Tk/resizeButton.pm
 %{__prefix}/BBBike/lib/TkChange.pm
 %{__prefix}/BBBike/lib/TkCompat.pm
 %{__prefix}/BBBike/lib/UnixUtil.pm
@@ -828,12 +947,12 @@ WWW: @BBBIKE_SF_WWW@
 %{__prefix}/BBBike/lib/enum.pm
 %{__prefix}/BBBike/lib/get_and_store_synop
 %{__prefix}/BBBike/lib/parse_synop
+%{__prefix}/BBBike/lib/parse_wetterkarte
 %{__prefix}/BBBike/lib/savevars.pm
 %{__prefix}/BBBike/lib/wettermeldung2
 %{__prefix}/BBBike/lib/your.pm
 %{__prefix}/BBBike/msg/bbbike/en
 %{__prefix}/BBBike/msg/install/en
-%{__prefix}/BBBike/podindex.html
 %{__prefix}/BBBike/smsbbbike
 %{__prefix}/BBBike/tkbikepwr
 %{__prefix}/BBBike/tmp/.keep_me

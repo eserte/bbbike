@@ -1270,7 +1270,7 @@ EOF
        text  => 'Bahnhofstr. zwischen Goltzstr. und Steinstraße Weihnachstsmarkt, in beiden Richtungen gesperrt. Dauer: 04.12.2004, 06:00 Uhr bis 05.12.2004, 01:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 10453,-2133 10747,-2129
+userdel	2 10453,-2133 10631,-2130 10747,-2129
 EOF
      },
      { from  => 1101337200, # 2004-11-25 00:00
@@ -3458,7 +3458,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004172',
        data  => <<EOF,
-userdel	q4 10310,-2136 10453,-2133 10747,-2129 10945,-2124
+userdel	q4 10310,-2136 10453,-2133 10631,-2130 10747,-2129 10945,-2124
 EOF
      },
      { from  => 1134255600, # 2005-12-11 00:00

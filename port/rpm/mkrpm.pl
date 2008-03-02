@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mkrpm.pl,v 1.8 2005/12/17 00:33:58 eserte Exp $
+# $Id: mkrpm.pl,v 1.9 2008/03/01 21:30:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.
@@ -62,21 +62,21 @@ if (!defined $release) {
 }
 
 open(RPM, ">bbbike.rpm.spec") or die $!;
-print RPM "### DO NOT EDIT! CREATED AUTOMATICALLY! ###\n";
-#print RPM "%define __prefix        /usr/local\n";
-print RPM "%define __prefix        %{_prefix}\n";
-print RPM "Name: BBBike\n";
-print RPM "Version: $bbbike_version\n";
-print RPM "Release: $release\n";
-print RPM "Copyright: GPL\n";
-print RPM "Group: Applications/Productivity\n";
-print RPM "Requires: perl >= 5.005, perl-tk >= 800\n";
-print RPM "Prefix: %{__prefix}\n";
-print RPM "URL: $BBBike::BBBIKE_SF_WWW\n";
-print RPM "Packager: $BBBike::EMAIL\n";
-print RPM "Source: $BBBike::DISTDIR/BBBike-$bbbike_version.tar.gz\n";
-print RPM "Summary: $bbbike_comment";
-print RPM "\n";
+print RPM <<EOF;
+### DO NOT EDIT! CREATED AUTOMATICALLY! ###
+%define __prefix        %{_prefix}
+Name: BBBike
+Version: $bbbike_version
+Release: $release
+Copyright: GPL
+Group: Applications/Productivity
+Requires: perl >= 5.005, perl-tk >= 800
+Prefix: %{__prefix}
+URL: $BBBike::BBBIKE_SF_WWW
+Packager: $BBBike::EMAIL
+Source: $BBBike::DISTFILE_SOURCE
+Summary: $bbbike_comment
+EOF
 
 print RPM "%description\n";
 if (open(COMMENT, "$bbbike_descr")) {

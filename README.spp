@@ -22,8 +22,9 @@
 ## perlreplace #DIRECTCGIURL#     $BBBike::BBBIKE_DIRECT_WWW
 ## perlreplace #HTTPCVS#    $BBBike::BBBIKE_CVS_HTTP
 ## perlreplace #CVSREPO#    $BBBike::BBBIKE_CVS_ANON_REPOSITORY
+## perlreplace #HTTPSNAPSHOT#     $BBBike::BBBIKE_UPDATE_DIST_CGI
 ## dnl
-## dnl $Id: README.spp,v 2.43 2008/01/24 20:12:02 eserte Exp $
+## dnl $Id: README.spp,v 2.44 2008/03/01 00:02:09 eserte Exp $
 ## dnl strpp source of README
 ## dnl
 =head1 README
@@ -657,14 +658,20 @@ DEVELOPMENT
 
 ## only DE
 Der aktuelle Entwicklungsstand von BBBike kann über CVS
-verfolgt werden. Eine ausführliche Anleitung dazu befindet sich unter
+verfolgt werden. Der aktuelle Stand kann aber auch
+von der Adresse L<#HTTPSNAPSHOT#> downgeloadet werden.
+
+Eine ausführliche CVS-Anleitung befindet sich unter
 L<#HTTPCVS#>.
 
 Von der Kommandozeile muss folgendes eingegeben werden:
 
 ## only EN
-The current BBBike development may be tracked via CVS. Look at
-L<#HTTPCVS#> for instructions on how to use CVS.
+The current BBBike development may be tracked via CVS. It is also
+possible to download a current snapshot using the URL
+L<#HTTPSNAPSHOT#>.
+
+Look at L<#HTTPCVS#> for instructions on how to use CVS.
 
 To use the CVS repository from command line type the following:
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 2.25 2008/02/25 22:20:15 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 2.26 2008/03/02 11:11:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006,2007,2008 Slaven Rezic. All rights reserved.
@@ -207,12 +207,7 @@ sub get_html {
     } elsif ($host =~ m{srand\.de}) {
 	$bbbikeroot = dirname(dirname($full->path));
     } elsif ($host eq 'localhost') {
-	require Sys::Hostname;
-	if (Sys::Hostname::hostname() =~ /\.herceg\.de/) {
-	    $bbbikeroot = "/~eserte/bbbike";
-	} else {
-	    $bbbikeroot = "/bbbike";
-	}
+	$bbbikeroot = "/bbbike";
 	$get_public_link = sub {
 	    my $link = BBBikeCGIUtil::my_url(CGI->new(), -full => 1);
 	    $link =~ s{localhost$bbbikeroot/cgi}{bbbike.radzeit.de/cgi-bin};

@@ -25,7 +25,20 @@ if ($] >= 5.010 || $] >= 5.008009) {
     eval q{ use open ':locale' }; if ($] >= 5.008 && $@) { warn $@ }
 }
 
-BEGIN { $Devel::Trace::TRACE = 0 }
+BEGIN {
+    if ($Devel::Trace::TRACE) {
+	$Devel::Trace::TRACE = 0;
+	warn <<EOF;
+**********************************************************************
+* NOTE: Turning -d:Trace off
+*       You can turn it again on in the ptksh using
+* 
+*         \$Devel::Trace::TRACE = 1;
+*
+**********************************************************************
+EOF
+    }
+}
 
 use FindBin;
 use lib ("$FindBin::RealBin",
@@ -10877,7 +10890,7 @@ sub choose_ort {
 			   )->pack;
 	    }
 	    if ($additionalframe) {
-		my $ff = $f->Frame->pack(-fill => "both");
+		my $ff = $t->Frame->pack(-side => "bottom", -fill => "both");
 		$additionalframe->($t, $ff);
 	    }
 
