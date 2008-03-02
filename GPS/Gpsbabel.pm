@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Gpsbabel.pm,v 1.13 2008/02/06 20:03:37 eserte Exp $
+# $Id: Gpsbabel.pm,v 1.14 2008/03/02 21:13:07 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@ push @ISA, 'GPS';
 
 use strict;
 use vars qw($VERSION $GPSBABEL $DEBUG);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(is_in_path);
 
@@ -182,7 +182,7 @@ sub run_gpsbabel {
     my @cmd = ($GPSBABEL, @$cmdargs);
     warn "Run\n    @cmd\n    ...\n" if $DEBUG;
     my $stderr;
-    if (eval { require IPC::Run; 1 }) {
+    if (eval { require IPC::Run; defined &IPC::Run::run }) {
 	my($stdout,$stdin);
 	my $disable_tk_stderr = defined &Tk::Exists && Tk::Exists($main::top) && $main::top->can("RedirectStderr") && Tk::Exists($main::top->StderrWindow);
 	$main::top->RedirectStderr(0) if $disable_tk_stderr;

@@ -87,6 +87,9 @@ function init() {
     if (search.match(/bezirk=([^;&]*)/)) {
       frm.supplied_bezirk.value = RegExp.$1;
     }
+    if (search.match(/ort=([^;&]*)/)) {
+      frm.supplied_ort.value = RegExp.$1;
+    }
     if (search.match(/plz=([^;&]*)/)) {
       frm.supplied_plz.value = RegExp.$1;
     }
@@ -145,6 +148,7 @@ function init() {
   <input type="hidden" name="formtype" value="[% IF is_fragezeichen_form %]fragezeichenform[% ELSE %]newstreetform[% END %]" />
   <input type="hidden" name="supplied_strname" value="" />
   <input type="hidden" name="supplied_bezirk" value="" />
+  <input type="hidden" name="supplied_ort" value="" />
   <input type="hidden" name="supplied_plz" value="" />
   <input type="hidden" name="supplied_coord" value="" />
 [% IF encoding -%]
@@ -184,7 +188,7 @@ function init() {
    <tr>
     <td class="newstrattrhead">Straﬂenname</td>
     <td><input name="strname" [% INCLUDE text_default inputname="strname" %] size="30"/>
-        (ggfs. mit Bezirk oder Ortsteil)</td>
+        (ggfs. mit Bezirk, Ort oder Ortsteil)</td>
    </tr>
 
    <tr><td colspan="3"><hr /></td></tr>

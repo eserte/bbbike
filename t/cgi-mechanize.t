@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.50 2007/12/30 15:08:15 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.51 2008/03/02 22:46:33 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -50,7 +50,8 @@ if (!@browsers) {
 }
 @browsers = map { "$_ BBBikeTest/1.0" } @browsers;
 
-my $tests = 110;
+my $outer_berlin_tests = 13;
+my $tests = 110 + $outer_berlin_tests;
 plan tests => $tests * @browsers;
 
 ######################################################################
@@ -103,6 +104,13 @@ for my $browser (@browsers) {
 	local $Test::Builder::Level = $Test::Builder::Level+1;
 	unlike_long_data(get_ct($agent), $expected, $testname, $suffix)
 	    or diag("URL is <" . $agent->uri . ">");
+    };
+
+    my $known_on_2nd_page = sub {
+	local $Test::Builder::Level = $Test::Builder::Level+1;
+	$unlike_long_data->(qr/ist nicht bekannt/i, "Known street");
+	$unlike_long_data->(qr/genaue kreuzung w.*hlen/i, "Exact match, no crossings");
+	$like_long_data->(qr/Bevorzugte Geschwindigkeit/i, "Einstellungen page");
     };
 
     if ($do_xxx) {
@@ -676,13 +684,42 @@ for my $browser (@browsers) {
 	;
 	$agent->submit();
 	my_tidy_check($agent);
-	$unlike_long_data->(qr/ist nicht bekannt/i, "Known street");
-	$unlike_long_data->(qr/genaue kreuzung w.*hlen/i, "Exact match, no crossings");
-	$like_long_data->(qr/Bevorzugte Geschwindigkeit/i, "Einstellungen page");
+	$known_on_2nd_page->();
 	$like_long_data->(qr/scope.*region/i, "Scope is set to region");
 	$agent->submit();
 	my_tidy_check($agent);
 	$like_long_data->(qr/Route/, "On the result page");
+    }
+
+    ######################################################################
+    # outer Berlin
+
+ SKIP: {
+	skip("Outer Berlin feature needs bbbike2.cgi", $outer_berlin_tests)
+	    if $cgiurl !~ /bbbike2\.cgi/;
+
+	$get_agent->();
+	$agent->get($cgiurl);
+	my $form = $agent->current_form;
+	$form->value('start', 'kirchsteig');
+	$form->value('startort', 'Königs Wusterhausen');
+	$form->value('via', 'kalkberger');
+	$form->value('viaort', 'Schöneiche b. Berlin');
+	$form->value('ziel', 'flora');
+	$form->value('zielort', 'Hohen Neuendorf');
+	$agent->submit;
+	my_tidy_check($agent);
+	$known_on_2nd_page->();
+	$like_long_data->(qr/scope.*region/i, "Scope is set to region");
+	$like_long_data->(qr/Wernsdorf/, "Crossing for start");
+	$like_long_data->(qr/Woltersdorfer Str/, "Crossing for via");
+	$like_long_data->(qr/Invalidensiedlung/, "Crossing for goal");
+	$agent->submit();
+	my_tidy_check($agent);
+	$like_long_data->(qr/Route/, "On the result page");
+	for my $expected_place (qw(Erkner Woltersdorf Dahlwitz-Hoppegarten)) {
+	    $like_long_data->(qr/$expected_place/, "Expected place on route ($expected_place)");
+	}
     }
 
 } # for

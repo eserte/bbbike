@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.27 2008/02/06 20:06:49 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.28 2008/03/02 20:55:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -1419,6 +1419,51 @@ sub tk_interface {
 			     "-i", "gpx", "-f", $ofile,
 			     "-o", "garmin", "-F", $dev,
 			    ]);
+    }
+
+}
+
+{
+    package GPS::BBBikeGPS::MapSourceSend;
+    require GPS;
+    push @GPS::BBBikeGPS::MapSourceSend::ISA, 'GPS';
+    
+    sub transfer_to_file { 0 }
+
+    sub mapsource_path {
+	# XXX Look into registry
+	# (HKEY_LOCAL_MACHINE\SOFTWARE\Garmin\Applications\MapSource,
+	# InstallDir)?
+	'C:\Garmin\MapSource.exe'
+    }
+
+    sub has_mapsource {
+	-e shift->mapsource_path;
+    }
+
+    sub convert_from_route {
+	my($self, $route, %args) = @_;
+	require File::Temp;
+	require Route::Simplify;
+	require Strassen::Core;
+	require Strassen::GPX;
+	my $simplified_route = $route->simplify_for_gps(%args);
+	my $s = Strassen::GPX->new;
+	$s->set_global_directives({ map => ["polar"] });
+	for my $wpt (@{ $simplified_route->{wpt} }) {
+	    $s->push([$wpt->{ident}, [ join(",", $wpt->{lon}, $wpt->{lat}) ], "X" ]);
+	}
+	my($ofh,$ofile) = File::Temp::tempfile(SUFFIX => ".gpx",
+					       UNLINK => 1);
+	main::status_message("Could not create temporary file: $!", "die") if !$ofh;
+	print $ofh $s->bbd2gpx(-as => "route");
+	close $ofh;
+
+	system(1, $self->mapsource_path, $ofile);
+    }
+
+    sub transfer {
+	# nothing to do...
     }
 
 }

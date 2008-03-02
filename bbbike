@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.365 2008/02/24 23:53:49 eserte Exp eserte $
+# $Id: bbbike,v 3.366 2008/03/02 20:55:54 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -243,7 +243,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.365 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.366 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -3477,6 +3477,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		     [M('Route zu einem Garmin senden'), 'DirectGarmin'],
 		     [M('Senden der Route zu einem Garmin simulieren'), 'DirectGarmin_Test'],
 		     ($devel_host ? [M("Route mit gpsbabel senden"), "GpsbabelSend"] : ()),
+		     ($devel_host ? [M("Route mit MapSource senden"), "MapSourceSend"] : ()),
 		    ) {
 	if ($fmt eq '-') {
 	    $svm->separator;
@@ -3562,11 +3563,11 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		    (-label => $label,
 		     -command => sub { save_route_as_kml(-as => $as) },
 		    );
-	    } elsif ($module eq 'GpsbabelSend') {
+	    } elsif ($module =~ m{^(GpsbabelSend|MapSourceSend)$}) {
 		$svm->command
 		    (-label => $label,
 		     -command => sub {
-			 gps_interface('BBBikeGPS::GpsbabelSend', -noloading => 1);
+			 gps_interface('BBBikeGPS::'.$module, -noloading => 1);
 		     });
 	    } elsif ($module eq 'DirectGarmin') {
 		$svm->command
@@ -9067,14 +9068,18 @@ sub send_route_to_gps {
     }
     if ($os eq 'win' && $gps_device eq 'USB') {
 	if ($devel_host) {
-	    status_message("NOTE: Fallback to gpsbabel, because there's no USB support in perl-GPS", "infodlg");
+	    status_message("NOTE: Fallback to gpsbabel or MapSource, because there's no USB support in perl-GPS", "infodlg");
 	}
 	require GPS::Gpsbabel;
 	if (!GPS::Gpsbabel->gpsbabel_available) {
-	    my $recommended_path = GPS::Gpsbabel->gpsbabel_recommended_path;
-	    my $download_location = GPS::Gpsbabel->gpsbabel_download_location;
-	    # XXX use hypertext_widget
-	    status_message(<<EOF, "die");
+	    require BBBikeGPS;
+	    if (GPS::BBBikeGPS::MapSourceSend->has_mapsource) {
+		gps_interface('BBBikeGPS::MapSourceSend', -noloading => 1);
+	    } else {
+		my $recommended_path = GPS::Gpsbabel->gpsbabel_recommended_path;
+		my $download_location = GPS::Gpsbabel->gpsbabel_download_location;
+		# XXX use hypertext_widget
+		status_message(<<EOF, "die");
 Das Programm gpsbabel wird zur Übertragung zum GPS-Gerät benötigt und muss noch installiert werden. gpsbabel gibt es hier zum Download:
 $download_location
 
@@ -9082,8 +9087,10 @@ Die heruntergeladene .zip-Datei sollte im Verzeichnis
 $recommended_path
 ausgepackt werden.
 EOF
+	    }
+	} else {
+	    gps_interface('BBBikeGPS::GpsbabelSend', -noloading => 1);
 	}
-	gps_interface('BBBikeGPS::GpsbabelSend', -noloading => 1);
     } else {
 	gps_interface('DirectGarmin');
     }

@@ -3,10 +3,10 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.80 2008/02/25 22:19:50 eserte Exp $
+# $Id: bbbike.cgi,v 9.4 2008/03/02 22:30:16 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -83,7 +83,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $ampeln $qualitaet_net $handicap_net
 	    $strcat_net $radwege_strcat_net $radwege_net $routen_net $comments_net
 	    $comments_points $green_net $unlit_streets_net
-	    $crossings $kr $plz $net $multi_bez_str
+	    $crossings $kr %cached_plz $net $multi_bez_str
 	    $overview_map $city
 	    $use_umland $use_umland_jwd $use_special_destinations
 	    $use_fragezeichen $use_fragezeichen_routelist
@@ -111,6 +111,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $with_lang_switch
 	    $newstreetform_encoding
 	    $use_region_image
+	    $include_outer_region @outer_berlin_places $outer_berlin_qr
 	   );
 # XXX This may be removed one day
 use vars qw($use_cooked_street_data);
@@ -659,6 +660,11 @@ $max_matches = 20;
 
 $newstreetform_encoding = "";
 
+@outer_berlin_places = (qw(Potsdam Oranienburg Kleinmachnow Stahnsdorf Teltow Bernau Strausberg Falkensee Mahlow Erkner
+			   Dahlwitz-Hoppegarten Woltersdorf Rüdersdorf Werder Hennigsdorf Schwanebeck Hönow Ahrensfelde
+		          ), "Hohen Neuendorf", "Königs Wusterhausen", "Schöneiche b. Berlin");
+$outer_berlin_qr = "^(?:" . join("|", map { quotemeta } @outer_berlin_places) . ")\$"; $outer_berlin_qr = qr{$outer_berlin_qr};
+
 ####################################################################
 
 unshift(@Strassen::datadirs,
@@ -715,7 +721,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.80 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 9.4 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1166,7 +1172,7 @@ if ($modperl_lowmem) {
     undef $orte;
     undef $orte2;
     undef $multiorte;
-    undef $plz;
+    %cached_plz = ();
     undef $net;
     undef $multi_bez_str;
 }
@@ -1235,27 +1241,29 @@ sub fullsearch_radio {
 EOF
 }
 
-sub _potsdam_hack {
-    my $street = shift;
-    my $potsdam_file = "$tmp_dir/" . $Strassen::Util::cacheprefix . "_" . $< . "_potsdam_strassen";
-    my $potsdam_str = eval { Strassen->new($potsdam_file) };
-    if (!$potsdam_str) {
-	$potsdam_str = Strassen->new;
+sub _outer_berlin_hack {
+    my($street, $bezirk) = @_;
+    (my $normalized_bezirk = $bezirk) =~ s{[^A-Za-z]}{_}g;
+    $normalized_bezirk = lc $normalized_bezirk;
+    my $outer_berlin_file = "$tmp_dir/" . $Strassen::Util::cacheprefix . "_" . $< . "_" . $normalized_bezirk . "_strassen";
+    my $outer_berlin_str = eval { Strassen->new($outer_berlin_file) };
+    if (!$outer_berlin_str) {
+	$outer_berlin_str = Strassen->new;
 	my $landstr = MultiStrassen->new("landstrassen", "plaetze");
 	$landstr->init;
 	while(1) {
 	    my $r = $landstr->next;
 	    last if !@{ $r->[Strassen::COORDS] };
-	    if ($r->[Strassen::NAME] =~ /\s+\(Potsdam\)/) {
-		$potsdam_str->push($r);
+	    if ($r->[Strassen::NAME] =~ /\s+\(\Q$bezirk\E\)/) {
+		$outer_berlin_str->push($r);
 	    }
 	}
-	$potsdam_str->write($potsdam_file);
+	$outer_berlin_str->write($outer_berlin_file);
     }
-    my $pos = $potsdam_str->choose_street($street, "Potsdam");
+    my $pos = $outer_berlin_str->choose_street($street, $bezirk);
     my $name;
     if (defined $pos) {
-	$name = $potsdam_str->get($pos)->[Strassen::NAME];
+	$name = $outer_berlin_str->get($pos)->[Strassen::NAME];
 	upgrade_scope("region");
 #XXX del?
 # 	my $scope = $q->param("scope");
@@ -1273,6 +1281,7 @@ sub choose_form {
     my $startplz  = $q->param('startplz')  || '';
     my $starthnr  = $q->param('starthnr')  || '';
     my $startc    = $q->param('startc')    || '';
+    my $startort  = $q->param('startort')  || '';
 
     my $vianame   = $q->param('vianame')   || '';
     my $via2      = $q->param('via2')      || '';
@@ -1280,6 +1289,7 @@ sub choose_form {
     my $viaplz    = $q->param('viaplz')    || '';
     my $viahnr    = $q->param('viahnr')    || '';
     my $viac      = $q->param('viac')      || '';
+    my $viaort    = $q->param('viaort')    || '';
 
     my $zielname  = $q->param('zielname')  || '';
     my $ziel2     = $q->param('ziel2')     || '';
@@ -1287,6 +1297,7 @@ sub choose_form {
     my $zielplz   = $q->param('zielplz')   || '';
     my $zielhnr   = $q->param('zielhnr')   || '';
     my $zielc     = $q->param('zielc')     || '';
+    my $zielort   = $q->param('zielort')   || '';
 
     my $nl = sub {
 	if ($bi->{'can_table'}) {
@@ -1312,7 +1323,8 @@ sub choose_form {
     undef $ziel  if $zielc;
 
     # Namen und Koordinaten der Start...orte
-    my($startort, $viaort, $zielort,
+    # XXX This is currently broken, and probably I should remove it...
+    my($startoldort, $viaoldort, $zieloldort,
        $startortc, $viaortc, $zielortc);
 
     # Leerzeichen am Anfang und Ende löschen
@@ -1327,9 +1339,9 @@ sub choose_form {
 	$ziel  =~ s/^\s+//; $ziel  =~ s/\s+$//; $ziel  =~ s/\s{2,}/ /g;
     }
 
-    foreach ([\$startname, \$start2, \$startort, \$startortc, 'start'],
-	     [\$vianame,   \$via2,   \$viaort,   \$viaortc,   'via'],
-	     [\$zielname,  \$ziel2,  \$zielort,  \$zielortc,  'ziel'],
+    foreach ([\$startname, \$start2, \$startoldort, \$startortc, 'start'],
+	     [\$vianame,   \$via2,   \$viaoldort,   \$viaortc,   'via'],
+	     [\$zielname,  \$ziel2,  \$zieloldort,  \$zielortc,  'ziel'],
 	) {
 	my  (  $nameref,    $tworef,  $ortref,    $ortcref,   $type) = @$_;
 	# Überprüfen, ob eine in PLZ vorhandene Straße auch in
@@ -1343,8 +1355,8 @@ sub choose_form {
 	    } else {
 		my($strasse, $bezirk, $plz) = @s;
 		warn "Wähle $type-Straße für $strasse/$bezirk (1st)\n" if $debug;
-		if ($bezirk eq "Potsdam") {
-		    my $name = _potsdam_hack($strasse);
+		if ($bezirk =~ $outer_berlin_qr) {
+		    my $name = _outer_berlin_hack($strasse, $bezirk);
 		    if ($name) {
 			$$nameref = $name;
 			$q->param($type . 'plz', $plz);
@@ -1373,17 +1385,17 @@ sub choose_form {
     # Es ist alles vorhanden, keine Notwendigkeit für ein Formular.
   TRY: {
 	if (((defined $startname && $startname ne '') ||
-	     (defined $startort  && $startort ne '')) &&
+	     (defined $startoldort  && $startoldort ne '')) &&
 	    ((defined $zielname  && $zielname ne '') ||
-	     (defined $zielort   && $zielort ne ''))) {
+	     (defined $zieloldort   && $zieloldort ne ''))) {
 	    last TRY if (((defined $via2 && $via2 ne '') ||
 			  (defined $via  && $via  ne '' && $via ne 'NO')) &&
 			 ((!defined $vianame || $vianame eq '') &&
-			  (!defined $viaort  || $viaort eq '')));
+			  (!defined $viaoldort  || $viaoldort eq '')));
 
-	    foreach ([\$startort, \$startortc, \$startname, 'start'],
-		     [\$viaort,   \$viaortc,   \$vianame,   'via'],
-		     [\$zielort,  \$zielortc,  \$zielname,  'ziel']) {
+	    foreach ([\$startoldort, \$startortc, \$startname, 'start'],
+		     [\$viaoldort,   \$viaortc,   \$vianame,   'via'],
+		     [\$zieloldort,  \$zielortc,  \$zielname,  'ziel']) {
 		my $ortref  = $_->[0];
 		my $ortcref = $_->[1];
 		my $nameref = $_->[2];
@@ -1441,11 +1453,11 @@ sub choose_form {
 
     my(@start_matches, @via_matches, @ziel_matches);
  MATCH_STREET:
-    foreach ([\$startname,\$start,\$start2,\@start_matches,'start',\$startplz],
-	     [\$vianame,  \$via,  \$via2,  \@via_matches,  'via',  \$viaplz],
-	     [\$zielname, \$ziel, \$ziel2, \@ziel_matches, 'ziel', \$zielplz],
+    foreach ([\$startname,\$start,\$start2,\@start_matches,'start',\$startplz, $startort],
+	     [\$vianame,  \$via,  \$via2,  \@via_matches,  'via',  \$viaplz,   $viaort],
+	     [\$zielname, \$ziel, \$ziel2, \@ziel_matches, 'ziel', \$zielplz,  $zielort],
 	    ) {
-	my  (  $nameref,  $oneref,$tworef, $matchref,      $type,  $zipref)=@$_;
+	my  (  $nameref,  $oneref,$tworef, $matchref,      $type,  $zipref,    $ort)=@$_;
 	local $^W = 0; # too many defined checks missing...
 
 	# Darstellung eines Vias nicht erwünscht
@@ -1453,10 +1465,8 @@ sub choose_form {
 
 	# Überprüfen, ob eine Straße in PLZ vorhanden ist.
 	if ($$nameref eq '' && $$oneref ne '') {
-	    if (!$plz) {
-		$plz = init_plz();
-	    }
-	    if (!$plz) {
+	    my $plz_obj = init_plz(scope => (defined $ort && $ort =~ $outer_berlin_qr ? $ort : "Berlin/Potsdam"));
+	    if (!$plz_obj) {
 		# Notbehelf. PLZ sollte möglichst installiert sein.
 		my $str = get_streets();
 		my @res = $str->agrep($$oneref);
@@ -1485,8 +1495,8 @@ sub choose_form {
 				  MultiZIP => 1, # introduced because of Hauptstr./Friedenau vs. Hauptstr./Schöneberg problem
 				  MultiCitypart => 1, # works good with the new combine method
 				  Agrep => 'default');
-	    #warn "\$plz->look_loop(@look_loop_args)\n";
-	    my($retref, $matcherr) = $plz->look_loop(@look_loop_args);
+	    #warn "\$plz_obj->look_loop(@look_loop_args)\n";
+	    my($retref, $matcherr) = $plz_obj->look_loop(@look_loop_args);
 	    #require Data::Dumper; warn Data::Dumper->new([$retref, $matcherr],[qw()])->Indent(1)->Useqq(1)->Dump;
 
 	    @$matchref = grep { defined $_->[PLZ::LOOK_COORD()] && $_->[PLZ::LOOK_COORD()] ne "" } @$retref;
@@ -1494,7 +1504,7 @@ sub choose_form {
 	    # except in the cases, where the same street has different coordinates
 	    # see Ackerstr. Mitte/Wedding
 	    # solution: use multi_bez_str!
-	    @$matchref = map { $plz->combined_elem_to_string_form($_) } $plz->combine(@$matchref);
+	    @$matchref = map { $plz_obj->combined_elem_to_string_form($_) } $plz_obj->combine(@$matchref);
 
 	    if (@$matchref == 0) {
 		# Nichts gefunden. In der Plätze-Datei nachschauen.
@@ -1602,8 +1612,8 @@ sub choose_form {
 					 $matchref->[0][1]);
 		warn "Wähle $type-Straße für $strasse/$bezirk (2nd)\n"
 		    if $debug;
-		if ($bezirk eq "Potsdam") {
-		    my $name = _potsdam_hack($strasse);
+		if ($bezirk =~ $outer_berlin_qr) {
+		    my $name = _outer_berlin_hack($strasse, $bezirk);
 		    if ($name) {
 			$$nameref = $name;
 			$q->param($type . 'plz', $matchref->[0][2]);
@@ -1766,14 +1776,14 @@ EOF
     my $shown_unknown_street_helper = 0;
 
     foreach
-      ([\$startname, \$start, \$start2, \$startort, \@start_matches, 'start',
-	$start_bgcolor],
-       [\$vianame,   \$via,   \$via2,   \$viaort,   \@via_matches,   'via',
-	$via_bgcolor],
-       [\$zielname,  \$ziel,  \$ziel2,  \$zielort,  \@ziel_matches,  'ziel',
-	$ziel_bgcolor]) {
-	my($nameref,  $oneref, $tworef,  $ortref,    $matchref,       $type,
-	   $bgcolor) = @$_;
+      ([\$startname, \$start, \$start2, \$startoldort, \@start_matches, 'start',
+	$start_bgcolor, \$startort],
+       [\$vianame,   \$via,   \$via2,   \$viaoldort,   \@via_matches,   'via',
+	$via_bgcolor,   \$viaort],
+       [\$zielname,  \$ziel,  \$ziel2,  \$zieloldort,  \@ziel_matches,  'ziel',
+	$ziel_bgcolor,  \$zielort]) {
+	my($nameref,  $oneref, $tworef,  $oldortref,    $matchref,       $type,
+	   $bgcolor,    $ortref) = @$_;
 	my $bgcolor_s = $bgcolor ne '' ? "bgcolor=$bgcolor" : '';
 	my $coord     = $q->param($type . "c");
 	my $has_init_map_js;
@@ -1838,16 +1848,20 @@ EOF
 		print "</td>";
 	    }
 
-	} elsif (defined $$ortref and $$ortref ne '') {
+	} elsif (defined $$oldortref and $$oldortref ne '') {
 	    print "<td valign=middle>$fontstr" if $bi->{'can_table'};
-	    print "$$ortref\n";
+	    print "$$oldortref\n";
 	    print "<input type=hidden name=" . $type . "2 value=\""
 		  . $$tworef . "\">\n";
 	    print "</td>" if $bi->{'can_table'};
 	    print "<input type=hidden name=" . $type . "isort value=1>\n";
 	} elsif ($$oneref ne '' && @$matchref == 0) {
 	    print "<td>$fontstr" if $bi->{'can_table'};
-	    print "<i>$$oneref</i> " . M("ist nicht bekannt") . ".<br>\n";
+	    print "<i>$$oneref</i> ";
+	    if ($$ortref && $$ortref ne 'Berlin/Potsdam') {
+		print "in <i>$$ortref</i> ";
+	    }
+	    print M("ist nicht bekannt") . ".<br>\n";
 	    if (!$shown_unknown_street_helper) {
 		if ($lang eq 'en') {
 		    print <<EOF;
@@ -1879,7 +1893,9 @@ EOF
 		$shown_unknown_street_helper = 1;
 	    }
 
-	    my $qs = CGI->new({strname => $$oneref})->query_string;
+	    my $qs = CGI->new({strname => $$oneref,
+			       ($$ortref ? (ort => $$ortref) : ()),
+			      })->query_string;
 	    print qq{<a target="newstreetform" href="$bbbike_html/newstreetform${newstreetform_encoding}.html?$qs">} . M("Diese Straße neu in die BBBike-Datenbank eintragen") . qq{</a><br><br>\n};
 	    print M(qq{Oder einen anderen Straßennamen versuchen}) . qq{:<br>\n};
 	    $no_td = 1;
@@ -2017,7 +2033,21 @@ EOF
 		print "<td align=left>" if $bi->{'can_table'};
 	    }
 	    print "<input type=text name=$type>";
-	    if ($use_mysql_db) {
+	    if ($include_outer_region) {
+		print <<EOF;
+ <select name="${type}ort">
+  <option value="">Berlin/Potsdam</option>
+EOF
+		for my $place (sort @outer_berlin_places) {
+		    next if $place eq 'Potsdam'; # special case, Potsdam dualism
+		    print <<EOF;
+  <option value="$place">$place</option>
+EOF
+		}
+		print <<EOF;
+ </select>
+EOF
+	    } elsif ($use_mysql_db) {
 		print "&nbsp;<input type=text name=${type}hnr size=4>";
 	    }
 	    print "<br>";
@@ -2126,7 +2156,7 @@ function " . $type . "char_init() {}
 	print window_open("$bbbike_script?all=1", "BBBikeAll",
 			  "dependent,height=500,resizable," .
 			  "screenX=500,screenY=30,scrollbars,width=250")
-	    . M("Liste aller bekannten Stra&szlig;en") . "</a> (ca. 100 kB)";
+	    . M("Liste aller bekannten Stra&szlig;en in Berlin und Potsdam") . "</a> (ca. 120 kB)";
 	print q{</div>};
 	print "<hr>";
     }
@@ -5288,20 +5318,58 @@ sub new_trafficlights {
     $ampeln;
 }
 
+# XXX scope => "all" is wrongly implemented
+# XXX but it is not yet used at all
 sub init_plz {
+    my(%args) = @_;
+    my $scope = $args{scope} || "all";
+    return $cached_plz{$scope} if $cached_plz{$scope};
+
     if (1) { # XXX introduce flag? (i.e. for other cities!!!)
-	require PLZ::Multi;
-	$plz = PLZ::Multi->new("Berlin.coords.data",
-			       "Potsdam.coords.data",
-			       Strassen->new("plaetze"), # because there are also some "sehenswuerdigkeiten" in
-			       -cache => 1,
-			      );
+	my $other_place_coords_data;
+	if ($scope eq 'all' || $scope =~ $outer_berlin_qr) {
+	    (my $file_scope = $scope) =~ s{[^A-Za-z]}{_}g;
+	    $other_place_coords_data = "$tmp_dir/" . $Strassen::Util::cacheprefix . "_" . $< . "_" . $file_scope . ".coords.data";
+	    if (!-r $other_place_coords_data) { # XXX check for recentness!
+		if (open(OFH, "> $other_place_coords_data")) {
+		    my $landstr = Strassen->new("landstrassen");
+		    $landstr->init;
+		    while(1) {
+			my $ret = $landstr->next;
+			last if !@{$ret->[1]};
+			my $name = $ret->[0];
+			next if $name !~ m{(.*)\s+\(($scope(?:-[^\)]+)?)\)};
+			print OFH join("|", $1, $2, "", $ret->[1][0]), "\n";
+		    }
+		    close OFH;
+		} else {
+		    warn "Cannot write to $other_place_coords_data: $!";
+		}
+	    }
+	}
+	my @files = (
+	    ($scope eq 'all' || $scope eq 'Berlin/Potsdam' ?
+	     ("Berlin.coords.data",
+	      "Potsdam.coords.data",
+	      Strassen->new("plaetze"), # because there are also some "sehenswuerdigkeiten" in
+	     ) : ()),
+	    (($scope eq 'all' || $scope =~ $outer_berlin_qr) &&
+	     $other_place_coords_data && -r $other_place_coords_data ?
+	      $other_place_coords_data : ()),
+	);
+	if (@files) {
+	    require PLZ::Multi;
+	    $cached_plz{$scope} = PLZ::Multi->new(@files, -cache => 1);
+	} else {
+	    warn "No input files";
+	    return;
+	}
     } else {
 	require PLZ;
 	PLZ->VERSION(1.26);
-	$plz = new PLZ;
+	$cached_plz{$scope} = new PLZ;
     }
-    $plz;
+    $cached_plz{$scope};
 }
 
 sub load_temp_blockings {
@@ -5727,7 +5795,7 @@ sub header {
 	     -BGCOLOR => '#ffffff',
 	     ($use_background_image && !$printmode ? (-BACKGROUND => "$bbbike_images/bg.jpg") : ()),
 	     -meta=>{'keywords'=>'berlin fahrrad route bike karte suche cycling route routing routenplaner routenplanung fahrradroutenplaner radroutenplaner',
-		     'copyright'=>'(c) 1998-2007 Slaven Rezic',
+		     'copyright'=>'(c) 1998-2008 Slaven Rezic',
 		    },
 	     -author => $BBBike::EMAIL,
 	    );
@@ -5908,9 +5976,9 @@ sub bikepwr_get_v { # Resultat in m/s
 
 sub choose_street_html {
     my($strasse, $plz_number, $type) = @_;
-    $plz = init_plz();
-    my $plz_re = $plz->make_plz_re($plz_number);
-    my @res = $plz->look($plz_re, Noquote => 1);
+    my $plz_obj = init_plz(scope => "all");
+    my $plz_re = $plz_obj->make_plz_re($plz_number);
+    my @res = $plz_obj->look($plz_re, Noquote => 1);
     my $str = get_streets();
     my @strres = $str->union(\@res);
     if (!@strres) {
@@ -6691,7 +6759,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/02/25 22:19:50 $';
+    my $cgi_date = '$Date: 2008/03/02 22:30:16 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
@@ -6719,6 +6787,11 @@ EOF
 	    print "<a href=\"http://www.linux.org/\"><img align=right src=\"";
 	    print "http://lwn.net/images/linuxpower2.png";
 	    print "\" border=0 alt='Linux'></a>";
+	    if (-e "/etc/debian_version" || -e "/etc/debian-release") {
+		print "<a href=\"http://www.debian.org/\"><img align=right src=\"";
+		print "http://www.debian.org/logos/openlogo-nd-25.png";
+		print "\" border=0 alt='Debian'></a>";
+	    }
 	}
         print "<p>";
     }
@@ -6842,7 +6915,7 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (C) 1998-2007 Slaven Rezic. All rights reserved.
+Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
 This is free software; you can redistribute it and/or modify it under the
 terms of the GNU General Public License, see the file COPYING.
 

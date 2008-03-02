@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.45 2008/02/25 22:19:25 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.46 2008/03/02 18:19:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003-2008 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ use File::Basename;
 BEGIN { # taint fixes
     ## FindBin does not work with modperl
     #($realbin) = $FindBin::RealBin =~ /^(.*)$/;
-    $realbin = dirname(realpath($0));
+    ($realbin) = dirname(realpath($0)) =~ /^(.*)$/;
     $ENV{PATH} = "/usr/bin:/usr/sbin:/bin:/sbin";
 }
 # from bbbike.cgi

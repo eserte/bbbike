@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.109 2008/02/09 16:52:59 eserte Exp eserte $
+# $Id: Makefile,v 1.110 2008/03/02 19:41:49 eserte Exp $
 #
 
 # Targets:
@@ -218,6 +218,10 @@ BBBIKECGI=		bbbike.cgi
 BBBIKECGI=		bbbike2.cgi
 .endif
 
+.ifndef TARGET_OS_DIST
+TARGET_OS_DIST=		unknown
+.endif
+
 .include "${BBBIKE_ROOT_DIR}/mapserver/brb/Makefile.${TARGET}.inc"
 
 all:
@@ -342,7 +346,10 @@ test-makefile:
 	perl -e 'while(<ARGV>) {print STDERR "\a$$_> "; <STDIN>; system($$_) and warn $$?}' /tmp/test-makefile.cmd
 
 rule-slaven:
-	${MAKE} ${.MAKEFLAGS} ${RULE} SSH_PROG_AND_ARGS="ssh -2 -p 22" BBBIKE_RADZEIT_HOST=slaven.radzeit.de
+	${MAKE} ${.MAKEFLAGS} ${RULE} \
+	    SSH_PROG_AND_ARGS="ssh -2 -p 22" \
+	    BBBIKE_RADZEIT_HOST=slaven.radzeit.de \
+	    TARGET_OS_DIST=linux-debian
 
 ######################################################################
 # Sub targets
@@ -531,6 +538,10 @@ prepare-mapserver-dist-pre:
 prepare-mapserver-dist-main:
 	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
 	    ${MAKE} dist-any TARGET=${TARGET}
+.if ${TARGET_OS_DIST} == "linux-debian"
+	perl -i -pe 's{^(\S+\s+)(.*)}{$$1/usr/share/fonts/truetype/ttf-bitstream-vera/Vera.ttf}' \
+	    /tmp/radzeit_mapserver_dist/fonts-radzeit.list
+.endif
 	cp -Rpf /tmp/radzeit_mapserver_dist/* ${CURDIR}/$(HTDOCS)/mapserver/brb/
 	rm -f ${CURDIR}/.not_rsyncable
 

@@ -30,6 +30,9 @@ function init() {
     if (search.match(/bezirk=([^;&]*)/)) {
       frm.supplied_bezirk.value = RegExp.$1;
     }
+    if (search.match(/ort=([^;&]*)/)) {
+      frm.supplied_ort.value = RegExp.$1;
+    }
     if (search.match(/plz=([^;&]*)/)) {
       frm.supplied_plz.value = RegExp.$1;
     }
@@ -41,6 +44,7 @@ function init() {
     }
   }
 
+  // NOTE: this is duplicated in get_and_set_email_author_from_cookie in bbbike_util.js
   if (document.cookie) {
     var cookies = document.cookie.split(/;\s*/);
     for (var i=0; i<cookies.length; i++) {
@@ -73,6 +77,7 @@ function init() {
   <input type="hidden" name="formtype" value="newstreetform" />
   <input type="hidden" name="supplied_strname" value="" />
   <input type="hidden" name="supplied_bezirk" value="" />
+  <input type="hidden" name="supplied_ort" value="" />
   <input type="hidden" name="supplied_plz" value="" />
   <input type="hidden" name="supplied_coord" value="" />
   <input type="hidden" name="encoding" value="utf-8" />
@@ -83,7 +88,7 @@ function init() {
    <tr>
     <td class="newstrattrhead">Straßenname</td>
     <td><input name="strname"  size="30"/>
-        (ggfs. mit Bezirk oder Ortsteil)</td>
+        (ggfs. mit Bezirk, Ort oder Ortsteil)</td>
    </tr>
 
    <tr><td colspan="3"><hr /></td></tr>
@@ -439,7 +444,7 @@ function init() {
         <input id="RWcat_1_RW6" style="margin-right:1em;" type="radio" name="RWcat_1" value="RW6"
  /></td>
        <td><label for="RWcat_1_RW6">Spielstraße</label>
-        <a class="yellowbox" style="text-decoration:none" target="newstreetform_help" href="http://de.wikipedia.org/wiki/Spielstraße">?</a>
+        <a class="yellowbox" style="text-decoration:none" target="newstreetform_help" href="http://de.wikipedia.org/wiki/Verkehrsberuhigter_Bereich">?</a>
 
        </td>
       </tr>

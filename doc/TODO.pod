@@ -22,6 +22,32 @@ Legend:
 
 =over
 
+=item * (M3) (bug)
+
+Einen Workaround finden, damit die Comboboxen auch einen weißen
+Hintegrund bekommen (z.B. im Tk::Getopt-Fenster).
+
+Lösungsansatz: Tk::MyBrowseEntry definieren, welches
+ConfigSpecs(-foreground=>['SELF'],-background=>['SELF']) macht
+Dann müsste die Definition
+$top->optionAdd("*MyBrowseEntry.LabEntry.background", "grey95", ...)
+funktionieren
+Erschwerend kommt hinzu, dass diese MyBrowseEntry *überall* verwendet
+werden müsste. Oder BrowseEntry::Populate wird direkt gepatcht? So:
+*oldPopulate = \&Tk::BrowseEntry::Populate;
+*Tk::BrowseEntry::Populate = sub { my $w = shift; oldPopulate($w, @_); $w->ConfigSpecs(-background=>['SELF'],...)};
+
+=item * (M3) (improvement)
+
+Da es unter Windows im Gegensatz zu Unix eigentlich keinen Grund
+gibt, eine editierbare Combobox für das GPS-Device anzubieten,
+sollte ich das in eine nicht editierbare umwandeln.
+
+=item * (M3) (improvement)
+
+Unter Unix kann ich dort noch einen File-Selector mit Default auf
+/dev anbieten, das Geräte immer dort anzufinden sind.
+
 =item * (H4) (feature)
 
 The default street might appear by default in the street chooser (only
