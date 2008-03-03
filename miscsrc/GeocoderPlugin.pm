@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: GeocoderPlugin.pm,v 1.4 2007/12/18 07:48:09 eserte Exp $
+# $Id: GeocoderPlugin.pm,v 1.5 2008/03/03 22:38:07 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,7 +21,20 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+
+BEGIN {
+    if (!eval '
+use Msg qw(frommain);
+1;
+') {
+	warn $@ if $@;
+	eval 'sub M ($) { $_[0] }';
+	eval 'sub Mfmt { sprintf(shift, @_) }';
+    }
+}
+
+use BBBikeTkUtil qw(pack_buttonframe);
 
 require Karte::Standard;
 require Karte::Polar;
@@ -43,10 +56,10 @@ sub unregister {
 sub add_button {
     my($pkg) = @_;
     BBBikePlugin::add_to_global_plugins_menu
-	    (-menuitems => [[Button => 'Show dialog',
+	    (-menuitems => [[Button => M("Dialog zeigen"),
 			     -command => \&geocoder_dialog,
 			    ],
-			    [Button => "Delete this menu",
+			    [Button => M('Dieses Menü löschen'),
 			     -command => sub {
 				 $main::top->after(100, sub {
 						       unregister();
@@ -144,7 +157,7 @@ sub geocoder_dialog {
     my $res = $geocoder_toplevel->Scrolled("Text", -scrollbars => 'oe', -width => 40, -height => 3
 					  )->pack(-expand => 1, -fill => "both");
     my $okb =
-	$bf->Button(-text => "OK",
+	$bf->Button(Name => "ok",
 		    -command => sub {
 			my $mod = 'Geo::Coder::' . $geocoder_api;
 			eval "require $mod";
@@ -167,12 +180,14 @@ sub geocoder_dialog {
 			} else {
 			    main::status_message("No result", "warn");
 			}
-		    })->pack(-side => "left");
+		    });
     $e->bind("<Return>" => sub { $okb->invoke });
-    $bf->Button(-text => "Close",
-		-command => sub {
-		    destroy_geocoder_dialog();
-		})->pack(-side => "left");
+    my $cancelb =
+	$bf->Button(Name => "close",
+		    -command => sub {
+			destroy_geocoder_dialog();
+		    })->pack(-side => "left");
+    pack_buttonframe($bf, [$okb, $cancelb]);
 }
 
 1;

@@ -1069,7 +1069,7 @@ if (defined $init_scale_massstab) {
     }
 }
 
-$top->title("$progname $VERSION");
+$top->title("$progname $VERSION" . ($VERSION =~ /devel/i ? " [$PROG_REVISION]" : ""));
 
 my $has_icon = 0;
 my $set_toplevel_icon;

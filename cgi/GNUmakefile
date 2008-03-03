@@ -3,17 +3,21 @@ CGI_SCRIPTS=	bbbike.cgi bbbikegooglemap.cgi mapserver_address.cgi mapserver_comm
 ROOT_URL?=	/bbbike
 # Set this to "cgi" or "Apache::Registry"
 CGI_TYPE?=	cgi
-ROOT_DIR=	$(shell perl -MFindBin='$$RealBin' -MCwd=cwd -le 'chdir("$$RealBin/..") or die; print cwd')
+ifndef ROOT_DIR
+ROOT_DIR=	$(shell perl -MFindBin='$$RealBin' -MCwd=realpath -le 'print realpath("$$RealBin/..")')
+endif
 
-all:	httpd.conf rights
+all:	rights
+	@echo "You may run $(MAKE) httpd.conf to create a default apache configuration for inclusion"
 
 httpd.conf: httpd.conf.tpl Makefile
 	tpage --define ROOT_URL=$(ROOT_URL) \
 	      --define ROOT_DIR=$(ROOT_DIR) \
 	      --define CGI_SCRIPTS="$(CGI_SCRIPTS)" \
 	      --define CGI_TYPE="$(CGI_TYPE)" \
-	      httpd.conf.tpl > httpd.conf
-	chmod 644 httpd.conf
+	      httpd.conf.tpl > httpd.conf~
+	chmod 644 httpd.conf~
+	mv httpd.conf~ httpd.conf
 	@echo
 	@echo Please add
 	@echo "    Include ${.CURDIR}/httpd.conf"
@@ -24,7 +28,8 @@ alt-httpd.conf:	httpd.conf.st
 	@perl -I../lib -MText::ScriptTemplate -MCwd -MFile::Spec -e '$$st=Text::ScriptTemplate->new;$$st->load("httpd.conf.st"); chdir ".." or die; $$st->setq(rootdir=>File::Spec->rel2abs(cwd));print $$st->fill'
 
 GNUmakefile:	Makefile ../miscsrc/b2gmake
-	../miscsrc/b2gmake < Makefile > GNUmakefile
+	../miscsrc/b2gmake < Makefile > GNUmakefile~
+	mv GNUmakefile~ GNUmakefile
 	chmod ugo+r GNUmakefile
 
 rights:
