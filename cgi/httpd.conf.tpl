@@ -14,6 +14,9 @@
 ScriptAlias [% ROOT_URL %]/cgi/[% cgi %] [% ROOT_DIR %]/cgi/[% cgi %]
 [% END -%]
 [% END -%]
+# The development versions:
+ScriptAlias [% ROOT_URL %]/cgi/bbbike2.cgi [% ROOT_DIR %]/cgi/bbbike2.cgi
+ScriptAlias [% ROOT_URL %]/cgi/bbbikegoolemap2.cgi [% ROOT_DIR %]/cgi/bbbikegooglemap2.cgi
 Alias [% ROOT_URL %]  [% ROOT_DIR %]
 [%
 	BLOCK preload_modules
