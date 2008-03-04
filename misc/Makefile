@@ -1,12 +1,14 @@
 #
-# $Id: Makefile,v 1.19 2007/03/31 20:10:11 eserte Exp eserte $
+# $Id: Makefile,v 1.20 2008/03/04 21:03:22 eserte Exp $
 #
+
+PERL=			perl
 
 BBBIKEDIR?=		..
 MISCSRCDIR?=		${BBBIKEDIR}/miscsrc
 DATADIR?=		${BBBIKEDIR}/data
 CONVERT2HAFAS=		${MISCSRCDIR}/convert2hafas
-CHECK_POINTS=		${MISCSRCDIR}/check_points
+CHECK_POINTS=		${PERL} ${MISCSRCDIR}/check_points
 GREPSTRASSEN=		${MISCSRCDIR}/grepstrassen
 
 TARGETS=	ampelschaltung.txt

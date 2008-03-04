@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_bbbike_temp_blockings,v 1.31 2008/01/05 14:34:56 eserte Exp $
+# $Id: check_bbbike_temp_blockings,v 1.32 2008/03/04 20:39:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003, 2004, 2007 Slaven Rezic. All rights reserved.
@@ -135,17 +135,17 @@ sub run_checks {
 	if ($o->{file}) {
 	    $full_path = "$temp_blockings_dir/$o->{file}";
 	    if (!-e $full_path) {
-		die "File $full_path is missing: " . Dumper($o);
+		die "ERROR: File $full_path is missing: " . Dumper($o);
 	    }
 	    if (!((stat($full_path))[2] & 0004)) {
-		warn "File $full_path is not readable for world";
+		warn "WARNING: File $full_path is not readable for world\n";
 	    }
 	} elsif ($o->{data}) {
 	    eval { 
 		$str_obj = Strassen->new_from_data_string($o->{data});
 	    };
 	    if ($@) {
-		warn "Corrupt data for $o->{from} - $o->{until}";
+		warn "WARNING: Corrupt data for $o->{from} - $o->{until}\n";
 	    }
 	}
 

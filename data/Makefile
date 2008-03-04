@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.177 2008/02/22 21:07:25 eserte Exp eserte $
+# $Id: Makefile,v 2.179 2008/03/04 21:02:55 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -19,24 +19,6 @@ MISCSRCDIR=		$(BBBIKEDIR)/miscsrc
 DATADIR=		.
 PERSISTENTTMPDIR=	$(BBBIKEDIR)/tmp
 
-HAFAS2HAFAS=		${MISCSRCDIR}/hafas2hafas -strict
-CONVERT2HAFAS=		${MISCSRCDIR}/convert2hafas -strict
-CONVERT_ORIG=		${MISCSRCDIR}/convert_orig_to_bbd
-CHECK_POINTS=		${MISCSRCDIR}/check_points
-CHECK_STR_PLZ=		${MISCSRCDIR}/check_str_plz
-CHECK_CONT=		${MISCSRCDIR}/check_cont
-CHECK_DOUBLE=           ${MISCSRCDIR}/check_double
-CHECK_NEIGHBOUR=	${MISCSRCDIR}/check_neighbour
-CHECK_COUNT=		${MISCSRCDIR}/check_count
-CHECK_HOUSENUMBERS=	${MISCSRCDIR}/check_housenumbers
-CHECK_IMAGES=		${MISCSRCDIR}/check_images
-CHECK_STATION_CATEGORY=	${MISCSRCDIR}/check_station_category
-RESOLVE_STARS=		${MISCSRCDIR}/resolve_stars
-SORTBYCAT=		${MISCSRCDIR}/sortbycat
-SEARCH_INACCESSIBLE=	${MISCSRCDIR}/search_inaccessible_points
-STEIGUNG_STAT=		${MISCSRCDIR}/steigung_stat
-GREPSTRASSEN=		${MISCSRCDIR}/grepstrassen
-REPLACESTRASSEN=	${MISCSRCDIR}/replacestrassen
 # perl5.8.0 has utf8 bugs
 .if ${HOSTNAME} == "devpc01.iconmobile.de"
 PERL_UTF8=		perl5.8.7
@@ -46,8 +28,27 @@ PERL_UTF8=		perl
 .endif
 PERL=			perl
 SED=			env LANG=C sed
+
+HAFAS2HAFAS=		${MISCSRCDIR}/hafas2hafas -strict
+CONVERT2HAFAS=		${MISCSRCDIR}/convert2hafas -strict
+CONVERT_ORIG=		${MISCSRCDIR}/convert_orig_to_bbd
+CHECK_POINTS=		${PERL} ${MISCSRCDIR}/check_points
+CHECK_STR_PLZ=		${MISCSRCDIR}/check_str_plz
+CHECK_CONT=		${PERL} ${MISCSRCDIR}/check_cont
+CHECK_DOUBLE=           ${MISCSRCDIR}/check_double
+CHECK_NEIGHBOUR=	${MISCSRCDIR}/check_neighbour
+CHECK_COUNT=		${MISCSRCDIR}/check_count
+CHECK_HOUSENUMBERS=	${MISCSRCDIR}/check_housenumbers
+CHECK_IMAGES=		${MISCSRCDIR}/check_images
+CHECK_STATION_CATEGORY=	${PERL} ${MISCSRCDIR}/check_station_category
+RESOLVE_STARS=		${MISCSRCDIR}/resolve_stars
+SORTBYCAT=		${MISCSRCDIR}/sortbycat
+SEARCH_INACCESSIBLE=	${PERL} ${MISCSRCDIR}/search_inaccessible_points
+STEIGUNG_STAT=		${PERL} ${MISCSRCDIR}/steigung_stat
+GREPSTRASSEN=		${MISCSRCDIR}/grepstrassen
+REPLACESTRASSEN=	${MISCSRCDIR}/replacestrassen
 GREPSTRASSEN_UTF8=	${PERL_UTF8} ${MISCSRCDIR}/grepstrassen
-COMBINE_STREETS=	${MISCSRCDIR}/combine_streets.pl
+COMBINE_STREETS=	${PERL} ${MISCSRCDIR}/combine_streets.pl
 
 COMMENTS_PARTIAL=	comments_cyclepath comments_danger comments_ferry comments_misc \
 			comments_mount comments_path comments_route \
@@ -129,8 +130,7 @@ targets-clean:
 
 # Useful checks, but normally too slow for a quick build
 # XXX merge with sort-Berlin.coords.data rule below?
-slow-checks:	do-doublechecks \
-		check-categories \
+slow-checks:	check-categories \
 		inaccessible_strassen inaccessible_landstrassen \
 		check-line-lengths check-dates \
 		check-coords.data \

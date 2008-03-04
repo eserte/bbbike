@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.134 2008/01/26 00:21:03 eserte Exp eserte $
+#: version: $Id: ampeln-orig,v 4.136 2008/03/04 21:06:45 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
 	X 9222,8787
@@ -2166,7 +2166,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 #: note: Luftbild
 	F 4920,9029
 	B 51081,-73709
-	B 52989,-21777
+	B 52982,-21800
 #: note: Luftbild
 	B -13357,37176
 	B 18101,-35914
@@ -2407,4 +2407,6 @@ Friedrichsthaler Str. / nGAR (nördl. Kurve)	B0 -4,41437
 # außerhalb Oranienburgs
 Borgsdorfer Kreuzung	X 103,33971
 Kreuzbruch - Rehmate / NEB	B0 10095,45368
+OE36 bei Wendisch-Rietz	B 52043,-21065
+Hubertushöhe	B 49195,-18448
 #: by: ^^^

@@ -899,16 +899,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_007944',
-         'until' => 1204513200,
-         'text' => 'Karlshorster Str. (Lichtenberg) Richtung Hauptstr. nach Marktstr. Baustelle, Fahrtrichtung gesperrt (bis 03.03., 04 Uhr)',
-         'from' => 1204328798,
-         'id' => 1294,
-         'data' => 'userdel	1::inwork 15267,10865 15266,10791 15255,10751
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1215208800,
          'text' => 'B 168 zw. Abzw. Zeust und Beeskow Straßenbauarbeiten Vollsperrung 03.03.2008-04.07.2008 ',
@@ -924,6 +915,15 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'from' => 1205622000,
          'id' => 1296,
          'data' => 'userdel	2::inwork 42905,115846 42250,115925 42222,115929
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1219096799,
+         'text' => 'Neubau der Bäkebrücke',
+         'from' => 1203202800,
+         'id' => 1297,
+         'data' => 'userdel	2::inwork 4659,40821 4562,40526
 ',
          'type' => 'gesperrt'
        }

@@ -7253,7 +7253,7 @@ EOF
        text  => 'L 035 Pieskower Chaussee OD Bad Saarow, zw. R.-Koch-Str. und Einfahrt Klinikum Straßenbauarbeiten Vollsperrung 19.03.2007-30.06.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 55928,-13163 55790,-11816
+userdel	q4::inwork 55904,-13109 55800,-12487 55750,-12045 55729,-11868
 EOF
      },
      { from  => 1173567600, # 2007-03-11 00:00
@@ -7840,7 +7840,7 @@ EOF
        text  => 'B 246 Bahnübergang in der OD Storkow Gleisbauarbeiten Vollsperrung 27.04.2007-30.04.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 46813,-16595 47038,-17056 47086,-17195
+userdel	2::inwork 46737,-16548 47038,-17056 47112,-17150
 EOF
      },
      { from  => 1177192800, # 2007-04-22 00:00
@@ -9421,7 +9421,7 @@ EOF
        text  => 'B 246 Bahnübergang Wendisch Rietz Siedlung, OT Neue Mühle Gleiserneuerung Vollsperrung 13.08.2007-28.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 53048,-21761 52989,-21777 52964,-21796
+userdel	2::inwork 53048,-21761 52992,-21793 52982,-21800 52932,-21834
 EOF
      },
      { from  => 1187301600, # 2007-08-17 00:00
@@ -10926,6 +10926,30 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 42905,115846 42250,115925 42222,115929
+EOF
+     },
+     { from  => 1203202800, # 2008-02-17 00:00
+       until => 1219096799, # 2008-08-18 23:59
+       text  => 'Neubau der Bäkebrücke',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 4659,40821 4562,40526
+EOF
+     },
+     { from  => 1204758000, # 2008-03-06 00:00
+       until => 1205276400, # 2008-03-12 00:00
+       text  => 'L 066 Möglenz - Burxdorf Bahnübergang in der OD Neuburxdorf Gleisbauarbeiten Vollsperrung 07.03.2008-11.03.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 5491,-104300 5180,-104502
+EOF
+     },
+     { from  => 1205190000, # 2008-03-11 00:00
+       until => 1205535600, # 2008-03-15 00:00
+       text  => 'L 066 Mühlberg-B182 (Torgau-Riesa) zw. Mühlberg und Fähre Brückenschluss Vollsperrung 12.03.2008-14.03.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -1224,-107827 -1061,-107847
 EOF
      },
     );
