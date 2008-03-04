@@ -33,7 +33,7 @@
 [%
     FOR cgi = DEVEL_CGI_SCRIPTS.split(" +");
 	SET url       = ROOT_URL _ "/cgi/" _ cgi;
-        SET targetcgi = ROOT_DIR _ "/cgi/" _ cgi.replace(".cgi", "2.cgi");
+        SET targetcgi = ROOT_DIR _ "/cgi/" _ cgi.replace("2.cgi", ".cgi");
 -%]
 [% ScriptAlias %] [% url %] [% targetcgi %]
 [%
