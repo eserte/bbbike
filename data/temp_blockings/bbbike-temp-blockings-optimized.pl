@@ -926,6 +926,24 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	2::inwork 4659,40821 4562,40526
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1205276400,
+         'text' => 'L 066 Möglenz - Burxdorf Bahnübergang in der OD Neuburxdorf Gleisbauarbeiten Vollsperrung 07.03.2008-11.03.2008 ',
+         'from' => 1204758000,
+         'id' => 1298,
+         'data' => 'userdel	2::inwork 5491,-104300 5180,-104502
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1205535600,
+         'text' => 'L 066 Mühlberg-B182 (Torgau-Riesa) zw. Mühlberg und Fähre Brückenschluss Vollsperrung 12.03.2008-14.03.2008 ',
+         'from' => 1205190000,
+         'id' => 1299,
+         'data' => 'userdel	2::inwork -1224,-107827 -1061,-107847
+',
+         'type' => 'gesperrt'
        }
      
 );
