@@ -824,16 +824,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_007852',
-         'until' => 1204758000,
-         'text' => 'Hultschiner Damm (Mahlsdorf) Richtung Köpenick zwischen Alt-Mahlsdorf und Elsenstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 05.03.2008)',
-         'from' => 1204328757,
-         'id' => 1285,
-         'data' => 'userdel	1::inwork 24658,11293 24735,11021 24637,10807
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_007850',
          'until' => 1209592799,
