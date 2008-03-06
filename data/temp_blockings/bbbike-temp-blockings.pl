@@ -1116,7 +1116,7 @@ EOF
        text  => 'L 792; Trebbiner Str.-Glasower Damm: Straßenbau, Vollsperrung, 25.10.2004-30.11.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 11186,-5297 10994,-5361
+userdel	q4 11186,-5297 11077,-5335 10994,-5361
 EOF
      },
      { from  => 1098914007, # 2004-10-27 23:53

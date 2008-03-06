@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.136 2008/03/04 21:06:45 eserte Exp $
+#: version: $Id: ampeln-orig,v 4.136 2008/03/04 21:06:45 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 	X 9222,8787
@@ -2244,6 +2244,8 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	X -9005,13354
 	X 3103,14187
 	F 8953,10366
+#: note: Luftbild:
+	B 11077,-5335
 ################################################################################
 # note: Potsdam vvv
 	X -12839,-1342
