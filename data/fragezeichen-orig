@@ -111,7 +111,7 @@ Blankenfelde, Berliner Str. und Hauptstr: nach Bauarbeiten (bis 2009-04-01) viel
 #: XXX Name der Straße? Der Pharus-Verlag meint "Wilhelm-Kabus-Str."
 Kolonnenstr. - Südkreuz: Bauarbeiten beginnen 2007, die Naumannstr. wird später verkehrsberuhigt	? 7716,8048 7826,8049 7949,8385 8077,8768
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
-Blanckertzweg: Radwege in Planung (ebenso östlicher Teil der Hildburghauser Str.)	? 4793,1344 4542,1188
+Blanckertzweg: Radwege in Planung (ebenso östlicher Teil der Hildburghauser Str.)	? 4793,1344 4634,1245 4542,1188
 Aalemannkanal: laut ADFC-Karte/neu Brücke geplant	? -2053,18375 -2156,18310
 Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	? 29192,-10630 29088,-10386 28918,-10301 28723,-10326 28485,-10143
 # : by: http://www.eyth16.de/weblog/2005/11/04/145/
@@ -253,6 +253,8 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet; in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: Michael Lawatsch:
+Jänickendorfer Weg: Asphalt,Q0	? -8449,15189 -8363,15558
 #: by: Susanne Rau:
 Sawallstr. (Erkner): mäßiges Kopfsteinpflaster, Q2	? 34024,1360 34181,1349
 #: by: anonymous:
@@ -470,7 +472,7 @@ Zachow - Trebelsee: Qualität (Betonplatten?)?	? -31583,7939 -31087,7275
 Gutenpaaren - Trebelsee: Qualität?	? -32754,7349 -32587,6112 -32200,5825
 Am Trebelsee: Deich, Qualität?	? -32200,5825 -31812,6387 -31525,6962 -31087,7275
 Am Havelufer: teilweise sehr sandige Stellen, Q3	? -4072,5227 -3956,4875 -4062,4487 -4693,4431 -4881,4093 -4964,4100
-Waldbühne - Havelchaussee: Qualität (wahrscheinlich Waldwege, Q2 bis Q3)? noch immer durchgängig befahrbar?	? -1356,12093 -1531,12043 -2050,12675 -1950,12925 -2220,13014
+Waldbühne - Havelchaussee: Qualität (wahrscheinlich Waldwege, Q2 bis Q3)? noch immer durchgängig befahrbar?	? -1356,12093 -1531,12043 -2050,12675 -1950,12925 -2076,13060
 Fährweg - Niederneuendorfer Allee: Kleingartenanlage, Qualität?	? -1864,17785 -1854,17805 -1871,17842 -1914,17899 -2011,17986 -2039,18049 -2066,18097 -2105,18119 -2143,18153 -2166,18199 -2177,18279 -2197,18307 -2229,18312 -2750,18333
 Steinhöfel - Poratz - Ringenwalde: Qualität?	? 37482,74476 37025,74400 36800,74137 36612,74162 35775,73750 35469,73594 35125,73487 33687,73037 33075,72750 32750,72787 32600,73062 31862,73112 30712,72625 30244,72598
 Glambeck - Templin: ist das hier die in Glambeck ausgeschilderte Strecke? Qualität?	? 37292,68602 36000,69075 35962,70325 35600,70962 35112,70912 35080,71176
@@ -1561,3 +1563,9 @@ Rohrwebereck: Sind da noch Stichstraßen oder sind das nur Garagenzufahrten?	? -1
 #: by: http://www.morgenpost.de/content/2008/02/03/berlin/944972.html
 Teufelsseechaussee: Ist die Teufelsseechaussee mittlerweile eine ausgeschilderte Fahrradstraße? Wenn ja, welcher Abschnitt genau?	? 194,10846 96,10701 41,10501 -57,10103 -75,10017 -103,9934 -153,9854 -232,9768 -324,9701 -471,9647 -697,9598 -817,9533 -886,9447
 (Celsiusstr. - Müllerstr.): Ist zwischen Bahnbrücke und Fürstenstr./Müllerstr. eine Rampe?	? 4311,746 4250,763
+#: XXX Eintrag von Bernd Lamour: "gute Qualität". Note: die Zufahrt zur Hellersdorfer ist nicht für Autos möglich, wie es im Luftbild aussieht
+Hertwigswalder Steig: Art der Fahrbahn (Beton, Asphalt ...)?	? 22812,12129 22917,12239 23019,12356 23033,12367
+#: XXX Eintrag von sini_bodemer war nicht ganz klar: "sehr gut" + "hinterer Bereich Kopfsteinpflaster"
+Elsgrabenweg: Qualität?	? -2220,13014 -2076,13060 -2017,13177
+#: XXX Eintrag von Michael Lawatsch nur zwischen Str. 339 und Jänickendorfer Weg: Asphalt, Q0
+Zeestower Weg: Qualität zwischen Jänickendorfer Weg und Isenburger Weg? Existiert eine Durchfahrt für Radfahrer zwischen Isenburger Weg und Finkenkruger Weg? Wie ist die Qualität dort?	? -8479,15609 -8363,15558 -8229,15505 -8078,15449 -7819,15342 -7752,15324 -7673,15304 -7521,15265 -7408,15219 -7371,15201
