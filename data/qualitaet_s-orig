@@ -860,7 +860,7 @@ Dunckerstr.: Kopfsteinpflaster	Q2 11337,14946 11450,15173 11480,15229 11603,1545
 Raumerstr.: Kopfsteinpflaster	Q2 11450,15173 11334,15248 11236,15312 11119,15385
 Berliner Str. (Pankow): außen Kopfsteinpflaster, innen betoniert	Q2 10846,17992 10829,18083 10755,18231 10680,18380
 Schudomastr.: Kopfsteinpflaster, OK	Q1 13884,7425 13798,7507 13781,7524
-Wilskistr.: Kopfsteinpflaster, OK	Q1 -234,4136 21,4434 207,4575 301,4643 418,4696 639,4754 798,4766
+Wilskistr.: Kopfsteinpflaster, OK	Q1 -219,4149 21,4434 207,4575 301,4643 418,4696 639,4754 798,4766
 Im Fischtal: Kopfsteinpflaster, OK	Q1 798,4766 744,4567
 Ihnestr.: mäßiges Kopfsteinpflaster	Q2 1870,4558 1831,4428 1781,4254 1759,4185 1704,3979 1683,3909
 Spilstr.: Kopfsteinpflaster, OK	Q1 3836,6550 3826,6656 3865,6758
@@ -1640,7 +1640,7 @@ Clara-Grunwald-Str.: Asphalt	Q0 15652,10348 15578,10250 15567,10235
 Hildegard-Marcusson-Straße: Asphalt	Q0 16004,10204 15952,10134 15874,10025 15831,9968
 (Hildegard-Marcusson-Straße - Uferweg): Parkweg	Q1 15831,9968 15811,9957 15786,9957
 Sven-Hedin-Str.: asphaltierte Fahrbahn, asphaltierter Radweg	Q0 458,3697 394,3694 271,3772
-Sven-Hedin-Str.: asphaltierte Fahrbahn, Verbundsteinpflasterradweg	Q0 271,3772 -141,3715 -266,3648 -364,3584 -461,3522 -548,3467 -800,3383 -1022,3443
+Sven-Hedin-Str.: asphaltierte Fahrbahn, Verbundsteinpflasterradweg	Q0 271,3772 16,3744 -141,3715 -266,3648 -364,3584 -461,3522 -548,3467 -800,3383 -1022,3443
 #: note: Q2 von Dominik Seelow hochgestuft
 Schützallee: kleinteiliges Kopfsteinpflaster auf der Fahrbahn, Radweg mit unebenen Pflaster	Q1 2230,3823 2160,3854 1968,3892 1908,3898
 Schützallee: asphaltierte Fahrbahn, Radweg mit unebenen Pflaster	Q0 1908,3898 1819,3907 1791,3907 1741,3907 1683,3909 1570,3907 1523,3904 1471,3909 1389,3898 1276,3892 1136,3878 891,3828 627,3749 458,3697
@@ -3186,7 +3186,7 @@ Dammbrücke: Kopfsteinpflaster	Q2 -3029,14656 -3054,14704
 Kolk: Kopfsteinpflaster	Q2 -2939,14585 -3010,14612 -3029,14656
 Heidetor: Kopfsteinpflaster	Q2 -3110,14698 -3106,14731
 Oranienburger Tor (Spandau): Kopfsteinpflaster	Q2 -3054,14704 -3110,14698
-Goebelplatz: Asphalt	Q0 1898,14640 1996,14643
+Goebelplatz: Asphalt	Q0 1898,14640 1974,14646 1974,14565
 Toeplerstr.: Asphalt	Q0 2374,14583 2081,14570 2009,14567 1974,14565 1893,14559
 Goebelstr.: Asphalt	Q0 1893,14559 1732,14553 1423,14679 1282,14710 1134,14721 1060,14726
 Popitzweg: sehr guter Asphalt	Q0 1361,14431 1897,14408
@@ -5926,6 +5926,10 @@ Rotdornweg: mäßiger Asphalt	Q1- 2810,2439 3009,2429
 Monschauer Weg: guter Asphalt	Q0 8959,4686 8929,4882
 #: by: blasz
 Schenkestr.: mäßiges Kopfsteinpflaster	Q2 17961,8312 17794,8429
+#: by: Horst Ginzel:
+Geitelsteig: Asphalt	Q0 1974,14646 1977,14751 1988,14870
+#: by: Tweety87...:
+Hartmannsweilerweg: gutes Kopfsteinpflaster	Q1 17,3471 41,3510 16,3744 -1,3857 -36,3924 -219,4149
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
