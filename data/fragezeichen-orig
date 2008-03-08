@@ -219,12 +219,12 @@ Pappelstr. -> Kastanienallee: hier verliert man durchaus 2 1/2 Minuten bei der Ü
 Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 8934,5095 9025,4871
 #: note: laut Marko Preuss kann man hier höchstens Slalom fahren:
 Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 9080,4371 9099,4204
-Tempelhofer Veloroutenpläne: Grauwackeweg, Muschelkalkweg, Str. 482: genaue Lage, Qualität?	? 11193,1684 11146,1413 11120,1384 10718,1220 10759,1112
+Tempelhofer Veloroutenpläne: Grauwackeweg, Muschelkalkweg, Str. 482: genaue Lage, Qualität?	? 11193,1684 11190,1622 11146,1413 11120,1384 10868,1281 10718,1220 10759,1112
 #: by: ^^^
 #: XXX Eintrag von Torsten Fleischmann:
 Radweg in Zepernick, beidseitig, auf der südöstlichen Seite: genauer Beginn- und Endpunkt?	? 18292,26726 19364,27415 19475,27877
 Hinckeldeybrücke: genaue Koordinaten der Schleife?	? 3358,15794 3336,15644 3332,15587
-Uferpromenade Tegelort/Heiligensee: genaueres zur Qualität und zur Fußgängerfrequenz!	? -2285,19053 -2251,19216 -2236,19331 -2279,19503 -2266,19692 -2248,19849 -2149,19966 -2144,20100 -2011,20534
+Uferpromenade Tegelort/Heiligensee: genaueres zur Qualität und zur Fußgängerfrequenz!	? -2285,19053 -2251,19216 -2236,19331 -2279,19503 -2266,19692 -2248,19849 -2216,20003 -2205,20141 -2146,20345 -2044,20524
 Stintgraben und See	? 1584,39467 1930,39739 1864,40227 2186,40991 2056,41586 1860,42350
 Viktoriapark: 40m Höhe	? 9007,9264
 #: by: Message-ID: <2re0fqF1987v6U1@uni-berlin.de>
@@ -253,12 +253,15 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet; in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
-#: by: Michael Lawatsch:
-Jänickendorfer Weg: Asphalt,Q0	? -8449,15189 -8363,15558
+#: by: Verena (ohne email):
+#: XXX Die Bordsteinkanten,q4 (Gehweg???) ignoriere ich mal
+Kastanienallee (Blankenburg): mäßiges Kopfsteinpflaster, Q2	? 13951,21086 14005,21262 14069,21471 14120,21645 14156,21753
+#: by: Janssen:
+Gustave-Courbet-Str.: Asphalt, Q0	? 3645,16308 3839,16273 3881,16259 3992,16198
+#: by: Kerstin Seppik:
+Goethestr. (Neuenhagen): guter Asphalt, Q0	? 30848,12259 30757,12428 30677,12576 30554,12762
 #: by: Susanne Rau:
 Sawallstr. (Erkner): mäßiges Kopfsteinpflaster, Q2	? 34024,1360 34181,1349
-#: by: anonymous:
-Nidecksteig: guter Asphalt, Q0	? -8126,14740 -8099,14771 -8059,15014 -8041,15132
 #: by: Ramona Hesse vvv
 Am Schlangenfenn (Potsdam): guter Asphalt, Q0	? -10516,-5498 -10585,-5528 -10630,-5553 -10712,-5594 -10758,-5502 -10630,-5440
 Am Schlangenfenn (Potsdam): guter Asphalt, Q0	? -10585,-5528 -10630,-5440 -10652,-5393 -10804,-5464
@@ -283,6 +286,8 @@ Waldschluchtpfad: mäßiger Beton, Q2+, enge Straße, q0	? -4741,7003 -4995,7042 -5
 Birnenpfad: loser Sandweg, Q3	? -7850,14555 -7762,14542 -7663,14532 -7553,14518
 #: by: anonymous
 Erna-Sack-Str.: sehr gutes Verbundsteinpflaster, Q0, enge Straße	? -7486,13321 -7496,13214
+#: by: Christian Liening:
+Lautentaler Str.: mäßiger Asphalt, Q1	? 13624,21057 13709,21334 13825,21730
 #: by: Monika Kaiser:
 Thaler Str.: Asphalt, Q0	? 13744,21067 13817,21304 13884,21524 13938,21700
 #: by: sandra (dries):
@@ -324,8 +329,6 @@ Widosteig: gutes Kopfsteinpflaster, Q1	? 19876,984 19934,1102
 Heimgartenstraße: Asphalt, Q0	? 23537,4238 23657,4255 23880,4280 24107,4309
 #: by: anonymous
 Männertreuweg: guter Asphalt, Q0 (wobei es im Luftbild eher wie Beton aussieht), eng, parkende Autos (q1); existiert eine Verbindung zum Weg zum Teltowkanal?	? 16631,3292 16599,3316 16473,3417 16340,3517
-#: by: Heinz Langhans:
-Am Buchenberg: schlechtes Kopfsteinpflaster, Q3	? 2827,23059 2810,23069 2801,23107 2827,23132 2854,23129 2917,23089
 #: by: Ludwig Ortmann:
 Sonnenhag/Kleinmachnow: mäßiger Beton,Q1	? -833,1406 -789,1220 -758,1098
 #: by: Claudia Schulz-Rosenbach:
@@ -340,7 +343,8 @@ Schwarzkoppenstr.: Beton, Q0	? 19823,357 19937,246
 Oehlertplatz: Asphalt, Q0	? 6871,5328 6900,5309 6940,5314 6943,5351 6921,5360 6890,5357
 #: by: Peter Sautier 
 Sollingzeile: Asphalt, Q0	? -5329,16032 -5232,16001
-#: by: Anke Terzer und Kati13125 
+#: by: Anke Terzer und Kati13125
+#: note: anonymous meint "mäßiger Asphalt"
 Nettestr.: Asphalt, Q0	? 14307,22262 14464,22485
 #: by: Ulrich Dalkmann 
 Saint-Exupéry-Str.: Verbundsteinpflaster, Q1, Spielstraße, RW6	? -8164,6987 -7992,6735
@@ -546,7 +550,10 @@ Mauerweg am Griebnitzsee: Qualität - vermutlich wassergebundene Decke?	? -8128,-
 Mauerweg in Schildow: Qualität? Wegführung? einzelne Straßen benennen?	? 7653,24412 7568,24527 6814,24593 6542,24466 6261,24462 6029,24562 5848,24609 5585,24606 5390,24604 5265,24642 5204,24496 5140,24338 4958,24418 4898,24351 4825,24328
 Langohrzeile: Qualität?	? 3462,24702 3490,24846 3490,24887
 Mauerweg in Frohnau: Verlauf weitgehend unklar, Qualität?	? 3490,24887 3603,24968 3306,25259 3200,25429 3211,25484 3273,25516 3473,25618 3662,25618 3615,25890 3428,25979 3362,26046 3390,26225 3448,26315 3540,26465 3450,26503 3403,26668
-Mauerweg in Frohnau: laut "Berliner Umland" teilweise gut geeignet, teilweise witterungsabhängige Strecken	? 3403,26668 3081,27368 3706,27812 3512,28053 3078,28028 2162,28077 1937,28118 1871,28131 1741,27539
+Mauerweg in Frohnau: laut "Berliner Umland" teilweise gut geeignet, teilweise witterungsabhängige Strecken	? 3403,26668 3081,27368 3706,27812 3512,28053 3118,27972
+#: XXX laut anonymen Kommentar "mäßiger Asphalt"
+Mauerweg in Frohnau (Utestr.): laut "Berliner Umland" teilweise gut geeignet, teilweise witterungsabhängige Strecken	? 3118,27972 2969,28021 2576,28008 2381,28057 2340,28043 2162,28077
+Mauerweg in Frohnau: laut "Berliner Umland" teilweise gut geeignet, teilweise witterungsabhängige Strecken	? 2162,28077 1937,28118 1871,28131 1741,27539
 Rehbrücke - Langerwisch: Qualität? genaue Wegführung?	? -9626,-6603 -9541,-6955 -9753,-7192 -9953,-7604 -10067,-8165 -10302,-8515 -10364,-8839 -10726,-9726 -11737,-10275 -12382,-10517
 Blankensee - Stangenhagen: laut "Berliner Umland" witterungsabhängige Strecke	? -6860,-20736 -7519,-21034 -8005,-21334 -9578,-21920 -9710,-22155
 Stangenhagen - Hennickendorf: Qualität? genaue Wegführung?	? -9710,-22155 -9815,-22769 -9453,-23518 -9291,-23955 -9853,-25278 -9403,-26688 -9375,-27159
@@ -588,7 +595,7 @@ Gellmersdorf - Lüderitz: Qualität?	? 54874,63371 54975,63187 54712,63012 54662,6
 Pinnow - Schönermark: Qualität? (das südliche Ende bei Pinnow sah gut aus, asphaltiert) 	? 55164,74111 55006,74618 54837,75112 54975,75812 54875,76587 54887,78437
 Grillenweg: Qualität? Stimmt der Straßen/Wegname? Ausschilderung vorhanden? nachts beleuchtet?	? 24236,5594 24225,5619 24216,5748 24197,5791 24150,5854 24126,5874 24111,5922 24122,6007
 #: note: Siehe auch http://www.pds-fraktion-treptow-koepenick.de/drucksache-5-908.html. Jupiterstr./Altglienicke aus der Datenbank herausnehmen.
-Str. 125a in "Kleine Usedomstr." umbenannt?	? 19497,1035 19571,1239
+Str. 125a in "Kleine Usedomstr." umbenannt?	? 19497,1035 19575,1239
 #: note: Siehe http://www.pds-fraktion-treptow-koepenick.de/drucksache-5-871.html
 Umbenenunng zu "Zu den Gosener Bergen"?	? 30640,-2803 30721,-2321
 Casekow - Luckow: Qualität? (Anfang in Casekow war gut asphaltiert)	? 63299,90673 63800,91275 63362,92337 63712,93412 63938,93631
@@ -1133,7 +1140,6 @@ Hebbelstr.: Qualität zwischen Behlertstr. und Bettina-Suttner-Str.?	? -12607,-43
 Bettina-von-Suttner-Str.: Qualität des westlichen Abschnitts (wahrscheinlich schlechtes Kopfsteinpflaster)?	? -12633,-311 -12744,-306
 Eisenhartstr.: Qualität des südlichen Abschnitts (asphaltiert?)?	? -12813,-480 -12744,-306
 Reiterweg: Verlängerung! Qualität?	? -12961,-136 -12857,-168
-Helene-Lange-Str.: Qualität?	? -12863,-364 -13142,-303
 Joliot-Curie-Str.: existiert für Radfahrer eine Verlängerung zu "Am Alten Markt"? Qualität?	? -12614,-1471 -12582,-1460
 Wall am Kiez: Qualität zwischen Kiezstr. und Dortustr.?	? -13478,-1585 -13479,-1624 -13453,-1656 -13459,-1718 -13397,-1729 -13394,-1771 -13328,-1790
 Schloßstr.: Qualität zwischen Breite Str., und Werner-Seelenbinder-Str.?	? -12940,-1625 -12927,-1576 -12923,-1558
@@ -1509,11 +1515,9 @@ Lichterfelder Weg: unklare Wegführung; mäßige Qualität: am Anfang (Goerzallee?) 
 St. Galler Str.: Qualität?	? 6418,18491 6584,18474 6597,18473 6704,18462
 #: XXX: unklarer Eintrag von anonymous: Asphalt Q0, einige Fußgänger q2, Radweg???
 Maßliebweg: Qualität?	? 15356,2499 15593,2495
-Hielscherstr.: Qualität?	? 7522,19804 7556,19882 7604,19988 7695,20175 7735,20262 7809,20420 7866,20556 7937,20778
 Mandelstr.: Qualität der Straße nördlich der Ostseestr.?	? 12911,15708 12979,15822 12911,15865
 Alvenslebenplatz: Qualität der Straße (wahrscheinlich Kopfsteinpflaster?)	? 10789,-2451 10833,-2509 10874,-2449
 Am Kornfeld: Qualität?	? 23648,11265 23679,11372 23714,11477 23799,11646 23851,11748 23896,11862 23942,11975
-Am Pfingstberg: Qualität (wahrscheinlich Asphalt oder Beton)?	? 3311,24150 3271,24283 3225,24431 3187,24491 3157,24489 3125,24533 3122,24571 3131,24614
 #: XXX: unsicherer Eintrag von anonymous: Kopfsteinpflaster?
 Buhrowstr.: Qualität?	? 7091,4760 7032,4635 6889,4332
 #: XXX: unsicherer Eintrag von anonymous: mäßiger Asphalt?
@@ -1563,14 +1567,12 @@ Teufelsseechaussee: Ist die Teufelsseechaussee mittlerweile eine ausgeschilderte
 (Celsiusstr. - Müllerstr.): Ist zwischen Bahnbrücke und Fürstenstr./Müllerstr. eine Rampe?	? 4311,746 4250,763
 #: XXX Eintrag von Bernd Lamour: "gute Qualität". Note: die Zufahrt zur Hellersdorfer ist nicht für Autos möglich, wie es im Luftbild aussieht
 Hertwigswalder Steig: Art der Fahrbahn (Beton, Asphalt ...)?	? 22812,12129 22917,12239 23019,12356 23033,12367
-#: XXX Eintrag von sini_bodemer war nicht ganz klar: "sehr gut" + "hinterer Bereich Kopfsteinpflaster"
-Elsgrabenweg: Qualität?	? -2220,13014 -2076,13060 -2017,13177
-#: XXX Eintrag von Michael Lawatsch nur zwischen Str. 339 und Jänickendorfer Weg: Asphalt, Q0
-Zeestower Weg: Qualität zwischen Jänickendorfer Weg und Isenburger Weg? Existiert eine Durchfahrt für Radfahrer zwischen Isenburger Weg und Finkenkruger Weg? Wie ist die Qualität dort?	? -8479,15609 -8363,15558 -8229,15505 -8078,15449 -7819,15342 -7752,15324 -7673,15304 -7521,15265 -7408,15219 -7371,15201
+Zeestower Weg: Qualität zwischen Jänickendorfer Weg und Isenburger Weg? Existiert eine Durchfahrt für Radfahrer zwischen Isenburger Weg und Finkenkruger Weg? Wie ist die Qualität dort?	? -8363,15558 -8229,15505 -8078,15449 -7819,15342 -7752,15324 -7673,15304 -7521,15265 -7408,15219 -7371,15201
 Geitelsteig: Ist der Geitelsteig eine Einbahnstraße? Wenn ja, gilt die Einbahnstraße auch für Radfahrer oder nur für Autos?	? 1974,14646 1977,14751 1988,14870
 Goebelplatz: Ist der Goebelplatz zwischen Toeplerstraße und Geitelsteig eine Einbahnstraße?	? 1974,14565 1974,14646
 Hartmannsweilerweg: Ist der Hartmannsweilerweg (abschnittsweise) eine Einbahnstraße? Nur für Autofahrer oder auch für Radfahrer?	? 17,3471 41,3510 16,3744
-#: XXX Auf dem Luftbild sah as asphaltiert aus:
-#: XXX Eintrag von Dagmar Schilka: Verbundsteinpflaster, Q2, enge Straße, q1
-#: XXX Eintrag von ccp.blume...: Kopfsteinpflaster Q2, enge Straße q3
-Spießweg: Qualität des Spießwegs zwischen Eichborndamm und Techowpromenade?	? 5030,20752 5095,20716 5170,20673 5284,20603
+Hielscherstr.: ist der Abschnitt südlich der Hertzstr. asphaltiert?	? 7522,19804 7556,19882
+#: XXX Angaben von unklar: Marc (michgibsnich): Kopfsteinpflaster, Q2, aber Busspur? Bordsteinkanten?
+Sperberstr. (Konradshöhe): Qualität?	? -1681,19955 -1869,19974 -2073,19990 -2216,20003
+Eisvogelweg: Ist der Eisvogelweg eine Einbahnstraße Richtung Norden? Nur für Autos oder auch für Radfahrer?	? 691,4474 661,4492 635,4524 595,4594 542,4699 528,4747
+Menckenstr.: Qualität zwischen Tiburtiusbrücke und Lothar-Bucher-Str.?	? 5567,5864 5570,5913 5593,5965 5664,6082

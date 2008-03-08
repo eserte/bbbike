@@ -5110,7 +5110,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_84234_COPY_14',
        data  => <<EOF,
-userdel	1::inwork 5481,5721 5601,5732
+userdel	1::inwork 5465,5726 5581,5741
 EOF
      },
      { from  => 1153738269, # 2006-07-24 12:51
@@ -7857,7 +7857,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005266',
        data  => <<EOF,
-userdel	2::inwork 9654,5738 9341,5612 9147,5534
+userdel	2::inwork 9670,5728 9457,5641 9357,5601 9147,5534
 EOF
      },
      { from  => undef, # 
@@ -9271,7 +9271,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006204',
        data  => <<EOF,
-userdel	2::inwork 9341,5612 9147,5534
+userdel	2::inwork 9357,5601 9147,5534
 EOF
      },
      { from  => 1186869600, # 2007-08-12 00:00

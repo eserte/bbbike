@@ -143,7 +143,7 @@ Schuckertdamm	1 746,14817 1109,14911 1343,14972 1488,14952
 Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
 Oberhofer Platz	1 5495,1964 5469,1949 5437,1941 5431,1956 5382,2080 5411,2098 5443,2109 5489,1981 5495,1964
 Scheelestr.	1 5740,1227 5697,1098 5556,984 5424,882 5337,829
-Tibertius-Brücke: Kfz-Straße	2 5681,5743 5593,5803 5414,5939 5330,6001 4903,6221
+Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5414,5939 5330,6001 4903,6221
 An der Schillingbrücke	1 12056,11390 12055,11331
 An der Schillingbrücke	1 12026,11348 12056,11390
 Schulze-Delitzsch-Platz	1 11155,11750 11048,11745 11022,11782
@@ -196,7 +196,7 @@ Atzpodienstr.	1 16485,12384 16445,12193 16415,11926
 #: by: Robert Joop:
 Alt-Lietzow	1 4219,12324 4116,12349 4066,12368 4079,12411 4137,12411 4250,12390
 Martin-Wagner-Ring	1 12796,3821 12895,3991 12941,4015 12995,4003 13007,3949 12913,3743
-Wilskistr.	1 -402,4012 -219,4149 21,4434 207,4575 301,4643 418,4696 639,4754 798,4766
+Wilskistr.	1 -402,4012 -219,4149 21,4434 207,4575 301,4643 418,4696 528,4747 636,4765 798,4766
 Grazer Platz	1 6445,6769 6530,6786 6679,6816 6802,6816
 Grazer Platz	1 6811,6737 6686,6735 6546,6720 6517,6717 6451,6710
 Goltzstr. (Spandau)	1 -2843,16947 -3031,16807
@@ -471,6 +471,11 @@ Rossiter Platz - Machandelweg: verschlossene Türen	2 -107,12220 -76,12236 -45,12
 Stockholmer Str.	1 8977,17297 8950,17219 8866,17075
 #: by: Arlt:
 Schulenburgstr. (Reinickendorf)	1 5345,18675 5547,18665
+#: by: müller-list:
+Becherweg	1 6227,18299 6232,18435 6226,18590 6217,18619
+#: by: Oliver Kunze:
+Hirschhorner Weg	1 -760,4542 -741,4660 -793,4754 -820,4772
+Feldspatweg	1 11190,1622 11369,1585 11407,1592
 ######################################################################
 #
 # Potsdam
@@ -620,6 +625,7 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
+Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
 Schloßstr.: Mittelstreifen	3nocross 4741,5309 4748,5357 4861,5581
 #: note: Luftbild
 Blumberger Damm: Mittelstreifen	3nocross 21381,14506 21408,14591 21521,14943
@@ -772,6 +778,8 @@ Adlergestell: Mittelstreifen	3nocross 20565,2754 20289,3033 20207,3115 20053,327
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+#: by: Moritz (acros):
+tragen (Treppe)	0:30 2827,23059 2854,23062 2886,23045
 tragen (Treppe)	0:30 8773,10399
 tragen (Treppe)	0:30 -18702,4551
 tragen (Treppe)	0:20 -12681,-1726
@@ -1094,7 +1102,7 @@ tragen (3 einzelne Stufen)	0:15 13079,14320
 Achtung schlecht sichtbare Kette!!	BNP:5 13446,14030
 Treppe	0:20 12867,14648
 2 Treppen o. schmale Rampen	0:10 12969,14672
-tragen (Treppe)	0:15 5595,5781 5593,5803
+tragen (Treppe)	0:15 5574,5791 5574,5819
 Althoffplatz	1 5687,5586 5609,5584 5573,5622 5613,5672 5683,5672
 Elisenstr.: tragen (3 Stufen)	0:15 5808,5332
 tragen (9 Stufen)	0:30 5822,5388

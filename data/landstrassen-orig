@@ -356,7 +356,7 @@ Waßmannsdorf - Kleinziethen	H 15708,-3731 15538,-3644 15345,-3752 15175,-3731 14
 Kleinziethen - Großziethen	H 13289,-4660 13348,-3283 13506,-2809 13540,-2681 13537,-2608 13321,-1778 13309,-1268 13225,-681 13090,205 12984,1011
 Kleinziethen - Mahlow	N 13348,-3283 12543,-3442 11800,-3698
 Königs Wusterhausen - Dahlewitz	H 25859,-11559 25618,-11642 24561,-12007 24201,-12099 23580,-12074 23272,-12123 21186,-12619 20843,-12781 20484,-12547 20127,-12521 19918,-12381 19116,-11575 18330,-11054 17687,-10765 17474,-10614 17053,-10621 16500,-10734 16059,-10500 15053,-10171 13878,-9818 13576,-9738
-Ragow	H 19494,-13746 19800,-13610 20134,-13333 20408,-13031 20528,-12859 20843,-12781
+Gartenstr. (Ragow)	H 19494,-13746 19800,-13610 20134,-13333 20408,-13031 20528,-12859 20843,-12781
 Großmachnow - Mittenwalde	N 15088,-14222 16194,-14883 16916,-14881 17342,-14988 18900,-14720 19501,-15106 19761,-15368
 #: alias: Lichtenrader Chaussee (Großziethen)
 Großziethen - Lichtenrade	N 13309,-1268 12493,-1193 12078,-1170
@@ -623,8 +623,6 @@ Heinrich-Heine-Allee (Waldesruh)	N 25175,7953 25115,8033 25047,8086 24953,8152 2
 Geschwister-Scholl-Str. (Fichtenau)	H 30735,5795 30870,6184 30835,6355 30791,6600 30798,6953 30832,7072 30903,7088
 Schöneiche - Neuenhagen	N 30290,8562 30207,8665 30179,8740 30168,8893 30173,9140 30184,9378 30253,9642 30415,10023 30557,10626 30678,10923 30973,11526 30971,11749 31037,12174 31059,12471 31146,12747 30975,12918 30815,13170 30795,13191 30179,13667 29743,14143
 Neuenhagen - Hönow	N 29743,14143 28832,14269 28362,14611 27678,15125 26821,15609 26459,15811 26246,15811
-Platanenstr. (Vogelsdorf)	N 34139,13113 34183,13746
-Lindenallee (Fredersdorf)	N 34183,13746 34276,14308
 Vogelsdorf - Petershagen	N 31871,10926 32194,11221 32535,11591 33128,11823 33192,11993 33644,12458 34139,13113 34896,13562 35213,13540
 Ernst-Thälmann-Str. (Eggersdorf)	N 38881,14606 38637,14790 38545,14865 38425,14850
 Bahnhofstr. (Eggersdorf)	N 38340,15153 38425,14850
@@ -964,14 +962,6 @@ Blankenfelder Weg (Glasow)	N 12635,-6905 12209,-7078
 Karl-Marx-Str. (Blankenfelde)	N 12209,-7078 11787,-7495 11601,-7560 11494,-7647 11427,-7836
 Heinrich-Heine-Str. (Blankenfelde)	N 11427,-7836 11226,-7833 10427,-7665
 Erich-Klausener-Str. (Blankenfelde)	N 11019,-8435 11226,-7833 11360,-7324 11191,-6560
-#: alias: Rosa-Luxemburg-Damm
-Neuenhagen - Fredersdorf	N 31146,12747 31338,12576
-#: alias: Fredersdorfer Str.
-Neuenhagen - Fredersdorf	N 31338,12576 32515,12616
-#: alias: Bollensdorfer Allee
-Neuenhagen - Fredersdorf	N 32515,12616 32939,12631 33644,12458
-Dorfstr. (Bollensdorf)	N 31059,12471 31338,12576
-#XXX removed by Andreas Titz, check! (XXX should have spaces around the dash anyway): Oranienburg-Tiergarten	N -3134,39392 -3222,39923 -3999,40431 -4129,40792 -4303,41811 -4758,42618
 Lindow - Rheinsberg (Radwanderweg)	NN -19149,63031 -19500,63114 -19771,63564 -20202,63969 -21039,64348 -21237,64885 -21287,65075 -21372,65337 -22477,67059 -23160,68048 -24230,69736 -24381,69736 -24598,69905 -24838,70204 -24753,70483 -24687,71412 -24614,72854 -24748,73644 -25029,74117 -25164,74947 -25534,75586
 Am Jungfernsee	NN -10711,1819 -10990,1904 -11310,1860 -11632,2243 -12019,2412 -12362,2838 -12750,3370 -12238,3842 -12025,3949
 (Am Pätzer Hintersee)	NN 27971,-20182 27826,-20437 27698,-20639 27335,-20882 27070,-21248 27012,-21700 27092,-22114 27104,-22453 27593,-22582 27658,-22729
@@ -1057,7 +1047,7 @@ Karlshof - Rotberg	N 20255,-7591 19990,-7539 19817,-7484 18977,-7233 18776,-7117
 Umfahrung Karlshof	N 19817,-7484 19911,-7681 20201,-7713
 Karlshof - Ragow	N 20255,-7591 20201,-7713 20000,-8121 19124,-9290 19092,-9677 19259,-9712 19928,-9616
 Karlshof - Ragow	N 19092,-9677 19259,-9712 19928,-9616 19958,-11180 20127,-12521
-Ragow (Köpenicker Str.)	N 20127,-12521 20408,-13031
+Köpenicker Str. (Ragow)	N 20127,-12521 20408,-13031
 Rudow - Kleinziethen	NN 15655,-245 15118,-970
 Wolziger Zeile - B101	NN 9608,-2642 9529,-2628 9159,-2590 8100,-2471 7090,-1651 6684,-1325 6606,-1598 6427,-1856
 #
@@ -1233,6 +1223,7 @@ Friedrich-Ebert-Str. (B1)	B -12719,-1661 -12755,-1585 -12773,-1544 -12795,-1499 
 Friedrich-Ebert-Str.	N -12839,-1342 -12854,-1243 -12870,-1149 -12881,-1092 -12894,-977 -12886,-869 -12884,-769 -12879,-691
 Friedrich-Ebert-Str.	NN -12879,-691 -12878,-665
 Friedrich-Ebert-Str.	N -12878,-665 -12868,-493 -12863,-364 -12857,-168 -12855,-72
+Helene-Lange-Str.	N -12863,-364 -13142,-303
 Am Schragen	N -13157,394 -13050,337
 Am Schragen (B2)	B -13050,337 -13091,-8
 Jägerallee (B2)	B -13091,-8 -13111,-136
@@ -1862,6 +1853,30 @@ Fontanestr.	N 41668,18165 41771,18431 41909,18884 41968,19040 42087,19134
 Weinbergstr.	N 42087,19134 42354,19026
 Segelfliegerdamm	N 45545,21723 45603,20993 45596,20840
 Provinzialsiedlung	N 45603,20993 46084,21006 46234,21009 46537,21003
+#: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#
+#
+#: append_comment Neuenhagen bei Berlin-Bollersdorfvvvvvvvvvvvvvvvvvv
+#: alias: Neuenhagen - Fredersdorf
+Rosa-Luxemburg-Damm	N 31146,12747 31338,12576
+#: alias: Neuenhagen - Fredersdorf
+Fredersdorfer Str.	N 31338,12576 32515,12616
+Dorfstr.	N 31059,12471 31338,12576
+#: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#
+#
+#: append_comment Fredersdorf vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+#: XXX_indoor: eigentlich Fredersdorf-Vogelsdorf, Fredersdorf
+#: XXX_indoor: Fredersdorf Süd oder Nord?
+#: alias: Neuenhagen - Fredersdorf
+Bollensdorfer Allee	N 32515,12616 32939,12631 33644,12458
+Lindenallee	N 34183,13746 34276,14308
+#: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#
+#
+#: append_comment Vogelsdorf vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+#: XXX_indoor: eigentlich Fredersdorf-Vogelsdorf, Vogelsdorf
+Platanenstr.	N 34139,13113 34183,13746
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #
 #

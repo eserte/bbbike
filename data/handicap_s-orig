@@ -9,6 +9,8 @@
 Behrenstr./Bebelplatz: Einbahnstraﬂe	q3::inwork; 9626,12227 9700,12234 9743,12239
 Bodestr.: Bauarbeiten	q4::inwork 9912,12623 9943,12642
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Wuhlewanderweg: steiler Anstieg	q4; 21998,12204 21970,12153
+Wuhlewanderweg: steiles Gef‰lle	q4; 21970,12153 21998,12204
 Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
 Pappelplatz (Mitte): gemeinsamer Fuﬂ- und Radweg	q2 9737,14126 9663,14036
 (Frankfurter Allee - Liebigstr.): Fuﬂg‰nger	q2 13885,12279 13905,12374
@@ -432,7 +434,7 @@ Begasstr.: eng	q1 6275,7004 6414,7009
 #: by: Martina Urban: vvv
 Friedrichsruher Str.: sehr eng	q1 6637,5952 6522,5933 6326,5912 6134,5894 6018,5884 5851,5863 5694,5845 5679,5853
 Schˆnhauser Str.: eng	q1 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5838,5761
-Jeverstr.: eng	q1 5681,5743 5681,5768 5679,5853 5670,5889 5699,5949 5748,6051 5776,6118 5834,6142
+Jeverstr.: eng	q1 5681,5743 5681,5768 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5834,6142
 #: by: ^^^
 #: by: Hanswalter Schramm:
 Friedrichstr. (Lichterfelde): Fuﬂ- und Radweg	q1 2890,3561 2712,3602
@@ -616,7 +618,7 @@ Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3326,16553
 #: by: Sini Bodemer:
 Retzdorffpromenade: Fuﬂg‰nger	q2 4893,6812 4993,6812
 #: by: Michael Meixner:
-Lothar-Bucher-Str.: enge Straﬂe	q1 5598,6136 5748,6051 5845,6049 6008,6067
+Lothar-Bucher-Str.: enge Straﬂe	q1 5598,6136 5664,6082 5748,6051 5845,6049 6008,6067
 #: by: Julie:
 #: XXX hier hat sie "Schrittgeschwindigkeit" angegeben?!
 Albestr.: enge Straﬂe	q1 5422,7461 5448,7436 5640,7435 5811,7433
@@ -1114,3 +1116,21 @@ Hartmannsweilerweg: enge Straﬂe	q1 17,3471 41,3510 16,3744 -1,3857 -36,3924 -219
 #: by: Susanna (wells):
 Zietenstr. (Lankwitz): enge Straﬂe	q1 6196,2204 6108,2326 6065,2443 5971,2691
 (Hˆhensteig - Buntzelstr.): Fuﬂg‰nger	q1 21835,242 21996,268 22168,327
+#: by: Knappe:
+Jenny-Lind-Str.: enge Straﬂe	q1 11531,17250 11645,17271 11768,17296
+#: by: Katjana Brennecke: vvv
+Sandhofweg: enge Straﬂe	q1 5848,272 5795,371 5757,434 5688,402
+Sandhofweg: Fuﬂg‰nger	q1 5688,402 5636,377
+#: by: ^^^
+#: by: Moritz (acros): vvv
+Calvinstr.: Bordsteinkante, Fuﬂg‰nger	q2 2982,22893 2942,22914
+Melanchthonstr.: Bordsteinkante, Fuﬂg‰nger	q2 2889,22741 2857,22756
+#: by: ^^^
+#: by: Jens Gieseke:
+Rabenhorststr.: enge Straﬂe	q1 -1726,19725 -1739,19803 -1681,19955 -1630,20086 -1596,20184 -1578,20228
+#: by: Reinhard Graeff:
+Sch‰ferstr. (Spandau): enge Straﬂe	q1 -2915,15994 -2798,16005 -2638,16026
+#: by: anonymous
+Feldspatweg: enge Straﬂe	q1 11407,1592 11369,1585 11190,1622 11025,1657 10981,1665 10943,1661 10907,1651 10860,1620 10831,1585 10810,1533 10807,1497 10816,1411 10868,1281
+#: by: anonymous
+Peenestr.: enge Straﬂe	q1 19328,1149 19434,1265 19575,1239 19737,1204
