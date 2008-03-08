@@ -1830,7 +1830,7 @@ EOF
        text  => 'Berliner Allee Richtung stadtauwärts, zwischen Langhanstr. und Lindenallee Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 13540,15928 13630,15956 13753,16000 13826,16026 14014,16106 14067,16127 14371,16252
+userdel	q4; 13540,15928 13630,15956 13753,16000 13826,16026 14014,16106 14067,16127 14248,16202 14371,16252
 EOF
      },
      { from  => 1138319749, # 2006-01-27 00:55

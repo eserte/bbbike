@@ -2001,9 +2001,10 @@ Heidekrautweg: Asphalt	Q0 21982,10874 22053,10911
 #: note: ^^^
 ######################################################################
 #: by: anonymous vvv
+Lindenallee (Weißensee): guter Asphalt	Q0 14366,15877 14330,15978 14296,16065 14248,16202
+Liningstr.: guter Beton	Q0 13534,5111 13574,4862
 Peenestr.: Asphalt	Q0 19328,1149 19434,1265 19575,1239 19737,1204
 Feldspatweg: Asphalt	Q0 11407,1592 11369,1585 11190,1622 11025,1657 10981,1665 10943,1661 10907,1651 10860,1620 10831,1585 10810,1533 10807,1497 10816,1411 10868,1281
-Mertensstr.: guter Asphalt	Q0 -2959,17507 -2517,17431 -1928,17341
 Barkenhof: guter Asphalt	Q0 -1892,1732 -1921,1826
 Lobelienweg: Asphalt	Q0 21902,11055 21975,11089
 Nidecksteig: guter Asphalt	Q0 -8126,14740 -8099,14771 -8059,15014
@@ -5717,6 +5718,7 @@ Jean-Paul-Weg: Verbundsteinpflaster	Q0+ 9652,196 9762,155
 #: by: henning (hirschgarten):
 Königswalder Str.: mäßiger Asphalt	Q1- 16951,17055 16832,17039 16723,17004 16550,16914 16480,16873
 #: by: Julia (Annahab): vvv
+Mertensstr.: guter Asphalt	Q0 -2959,17507 -2517,17431 -1928,17341
 Grützmacherweg: Asphalt	Q0 -1511,15127 -1631,15164 -1709,15188 -1783,15208 -1870,15233
 #: note: für die folgenden Straßen gilt der Kommentar "sieht ähnlich aus": vvv
 Romy-Schneider-Str.: Asphalt	Q0 -1870,15233 -1829,15394 -1794,15517
@@ -5897,10 +5899,12 @@ Neuwerker Weg: guter Beton	Q0 1970,1708 2043,1538
 Gartenstr. (Französisch Buchholz): schlechtes Kopfsteinpflaster	Q3 12040,22519 11950,22162 11934,22108 11886,21924
 Im Vogtland: gutes Verbundsteinpflaster	Q1+ 6727,23287 6684,23308 6657,23334 6601,23412
 #: by: ^^^
-#: by: tobias (oridstraum):
+#: by: tobias (oridstraum): vvv
 #: note: anonymer Eintrag meint "gutes Kopfsteinpflaster", aber die Straße erscheint auf dem Luftbild anders
 #: note: annette.kretschmer meint "schlechtes Kopfsteinpflaster Q3" von Waldstr. bis Genossenschaftsstr., aber sie führt nur bis zur Hackenbergstr.?
-Friedlander Str.: mäßiger Asphalt und Kopfsteinpflaster	Q2 20253,4034 20305,4096 20312,4123 20410,4192 20540,4285 20574,4317 20594,4342 20614,4381 20684,4596 20716,4691 20765,4839 20852,5106
+Friedlander Str.: Kopfsteinpflaster	Q2 20253,4034 20305,4096 20312,4123 20410,4192 20540,4285
+Friedlander Str.: mäßiger Asphalt	Q1 20540,4285 20574,4317 20594,4342 20614,4381 20684,4596 20716,4691 20765,4839 20852,5106
+#: by: ^^^
 #: by: Desiree Kretzschmar:
 Pritstabelstr.: mäßiges Kopfsteinpflaster	Q2 22811,3037 22928,3057 23065,3089 23338,3173 23444,3217 23564,3283 23641,3342 23680,3371 23734,3423
 #: by: Sebastian Worel:
@@ -6043,6 +6047,12 @@ Schäferstr. (Spandau): guter Asphalt	Q0 -2915,15994 -2798,16005 -2638,16026
 Eisvogelweg: Kopfsteinpflaster	Q2 691,4474 661,4492 635,4524 595,4594 542,4699 528,4747
 #: by: Klaus Plottke:
 Külzer Str.: Asphalt	Q0 5674,5901 5659,5871 5642,5851 5601,5826
+#: by: Andrea (winnie puh):
+Frankenwaldstr.: guter Asphalt	Q0 -5473,15742 -5452,15804 -5426,15856 -5377,16017 -5356,16064 -5292,16239
+#: by: Peter Sautier 
+Sollingzeile: Asphalt	Q0 -5356,16064 -5252,16025
+#: by: Salmanzig:
+Forstweg (Frohnau): Kopfsteinpflaster	Q2 1051,24390 1195,24384 1252,24370 1302,24348 1419,24290 1484,24268 1561,24267 1736,24300 1859,24346 1963,24400 2081,24470 2146,24535
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

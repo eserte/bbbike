@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.110 2008/03/02 19:41:49 eserte Exp $
+# $Id: Makefile,v 1.111 2008/03/08 23:50:05 eserte Exp $
 #
 
 # Targets:
@@ -236,8 +236,8 @@ clean-cache-files-on-remote:
 	    rm /tmp/b_de_\*
 
 RSYNC_RULES=		check-rsync-ok \
-			clean-cache-files-on-remote \
 			do-rsync \
+			clean-cache-files-on-remote \
 			show-rsync-message \
 			post-rsync-bbbike-data
 .ORDER:	$(RSYNC_RULES)	
@@ -286,8 +286,8 @@ check-rsync-data-ok:
 	true
 
 RSYNC_BBBIKE_DATA_RULES=check-rsync-data-ok \
-			clean-cache-files-on-remote \
 			do-rsync-bbbike-data \
+			clean-cache-files-on-remote \
 			show-rsync-message \
 			post-rsync-bbbike-data
 .ORDER:			$(RSYNC_BBBIKE_DATA_RULES)

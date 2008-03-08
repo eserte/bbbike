@@ -662,7 +662,9 @@ $newstreetform_encoding = "";
 
 @outer_berlin_places = (qw(Potsdam Oranienburg Kleinmachnow Stahnsdorf Teltow Bernau Strausberg Falkensee Mahlow Erkner
 			   Dahlwitz-Hoppegarten Woltersdorf Rüdersdorf Werder Hennigsdorf Schwanebeck Hönow Ahrensfelde
-		          ), "Hohen Neuendorf", "Königs Wusterhausen", "Schöneiche b. Berlin", "Neuenhagen bei Berlin");
+		          ), "Hohen Neuendorf", "Königs Wusterhausen", "Schöneiche bei Berlin", "Neuenhagen bei Berlin",
+			"Petershagen bei Berlin",
+		       );
 $outer_berlin_qr = "^(?:" . join("|", map { quotemeta } @outer_berlin_places) . ")\$"; $outer_berlin_qr = qr{$outer_berlin_qr};
 
 ####################################################################
@@ -6537,7 +6539,7 @@ sub diff_from_old_route {
     } elsif ($old_len < $len) {
 	$diff->{difference_de} = sprintf "(um %d Meter länger)", int($len - $old_len);
     } elsif ($old_len >= $len) {
-	$diff->{difference_de} = sprintf "(um %d Meter kürzer)", int($len - $old_len);
+	$diff->{difference_de} = sprintf "(um %d Meter kürzer)", int($old_len - $len);
     }
     return $diff if @path != @old_path;
     for my $i (0 .. $#path) {
