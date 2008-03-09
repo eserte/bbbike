@@ -478,6 +478,10 @@ Hirschhorner Weg	1 -760,4542 -741,4660 -793,4754 -820,4772
 Feldspatweg	1 11190,1622 11369,1585 11407,1592
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Liningstr.	1 13574,4862 13534,5111
+#: by: Werner Braun:
+Eisvogelweg	1 528,4747 542,4699 595,4594 635,4524 661,4492 691,4474
+#: by: Katharina Achazi:
+Kreutzerweg	1 4834,4102 4848,4069 4836,4041 4629,3916
 ######################################################################
 #
 # Potsdam
@@ -626,7 +630,8 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,
 #
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
-#
+# 
+Bahntrasse	3nocross 15868,1790 15835,1736 15639,1422
 Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
 Schloßstr.: Mittelstreifen	3nocross 4741,5309 4748,5357 4861,5581
 #: note: Luftbild

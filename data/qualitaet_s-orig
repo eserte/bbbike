@@ -1610,12 +1610,12 @@ Hauptstr.: Asphalt	Q0 -7360,13409 -7263,13347
 (Am Bullengraben): wassergebundene Decke	Q1 -7522,13651 -7529,13657 -7503,13742 -7592,13713 -7656,13723 -7717,13720 -7801,13697 -7843,13663 -7851,13606
 (Seecktstr. - Wilhelmstr.): kleinteiliges Kopfsteinpflaster	Q1 -4017,13167 -3886,13120
 Krumme Gärten: Asphalt	Q0 -4011,13407 -3994,13301 -4017,13167
-(Spekteweg - Galenstr.): kleinteiliges Pflaster	Q1 -4303,14960 -4200,14928 -4035,14779
+(Spekteweg - Galenstr.): kleinteiliges Pflaster	Q1 -4303,14960 -4284,14937 -4200,14928 -4035,14779
 (Spekteweg - Galenstr.): Parkweg	Q1 -4035,14779 -3906,14517 -3776,14419
 (Falkenseer Chaussee - Spektelake): Asphalt	Q0 -7183,16250 -7237,16057 -7359,15939 -7314,15924 -7279,15964 -7221,15921 -7233,15810 -7173,15693 -7160,15534
 (An der Spektelake): Asphalt	Q0 -7160,15534 -7035,15432 -6922,15394 -6802,15376
 (Spektewiesen): Asphalt	Q0 -5680,15112 -5769,14992 -5969,15040 -6118,15135 -6181,15161 -6197,15188 -6252,15228 -6498,15301 -6824,15274 -6802,15376
-Spekteweg: Asphalt	Q0 -4061,15164 -4303,14960 -4481,14808 -4663,14820 -5033,15059 -5146,15059 -5680,15112
+Spekteweg: Asphalt	Q0 -4061,15164 -4303,14960 -4481,14808 -4598,14817 -4663,14820 -5033,15059 -5146,15059 -5680,15112
 Koloniewege: asphaltiert	Q0 -2434,17638 -2408,17716 -2114,17878 -2154,17917 -2419,17955 -2539,18109 -2728,18149
 (Am Hohenzollernkanal): Verbundsteinpflaster bzw. Schotterweg	Q1 4971,15263 4469,15711 4273,15740 4212,15787 4369,15950 4136,16023 4078,15961 4049,15776 3775,15768
 #: last_checked: 2006-09-10
@@ -2001,6 +2001,7 @@ Heidekrautweg: Asphalt	Q0 21982,10874 22053,10911
 #: note: ^^^
 ######################################################################
 #: by: anonymous vvv
+Feuchtwangerweg: mäßiger Asphalt	Q1 15620,1764 15642,1747 15788,1747
 Lindenallee (Weißensee): guter Asphalt	Q0 14366,15877 14330,15978 14296,16065 14248,16202
 Liningstr.: guter Beton	Q0 13534,5111 13574,4862
 Peenestr.: Asphalt	Q0 19328,1149 19434,1265 19575,1239 19737,1204
@@ -2612,7 +2613,7 @@ Korsörer Str.: mäßiges Kopfsteinpflaster	Q2 10101,15751 10398,15797
 #: by: Sonja Wienert:
 Roennebergstr.: Asphalt	Q0 5374,6932 5533,6753
 #: by: Werner (p.f.):
-Stephanstr.: schlechtes Kopfsteinpflaster	Q3 6366,4500 6526,4475 6840,4456
+Stephanstr.: schlechtes Kopfsteinpflaster	Q3 6366,4500 6526,4475 6826,4472
 #: by: Lucy (g.77):
 Herderstr. (Steglitz): Kopfsteinpflaster	Q2 4697,6118 4472,6242 4386,6288
 #: by: Dennis Riesche:
@@ -2707,7 +2708,7 @@ Koblenzer Str.: Kopfsteinpflaster	Q2 4874,8347 4874,8140 4873,7994 4873,7967
 #: by: Stefan Wietstock:
 (Livländische Str. - Schoelerpark): Steinpflasterweg	Q1 5170,8449 5223,8611
 #: by: Max Hoffmann:
-Undinestr.: Kopfsteinpflaster	Q2 4788,4074 4681,4537 4568,4789 4517,4853
+Undinestr.: Kopfsteinpflaster	Q2 4760,4075 4681,4537 4568,4789 4517,4853
 #: by: Erik Thon: vvv
 #: XXX: diese Straße nochmal überprüfen, vielleicht schlechtes Kopfsteinpflaster?
 Vogelbeerstr.: mäßiges Kopfsteinpflaster	Q2 19693,4130 19896,4098 19996,4143
@@ -2748,15 +2749,15 @@ Mühlenweg: Waldweg	Q1 -1978,20928 -1843,20925 -1700,20971 -1559,20931 -1040,2096
 Försterweg: Waldweg, etwas holprig	Q2 -1978,20928 -1968,20850 -1400,20615 -1253,20546 -1243,20471 -1050,20281 -871,20225 -823,20184
 #: by: ^^^
 #: by: hoffmannbeck:
-Rüdnitzer Zeile: mäßiger Beton	Q1 3581,20008 3513,19961 3412,20105 3342,20050
+Rüdnitzer Zeile: mäßiger Beton	Q1 3581,20008 3513,19961 3402,20109 3331,20056
 #: by: Rita:
 Johann-Sigismund-Str.: mäßiges Kopfsteinpflaster	Q2 2898,9794 2938,9935 2963,10078
 #: by: S Breddermann:
 Ueckermünder Str.: Asphalt	Q0 9996,16328
 #: by: Werner Braun: vvv
-Am Rohrgarten: geteert	Q0 -2137,1796 -2005,1812 -1948,1819 -1921,1826 -1843,1852 -1768,1882 -1737,1904 -1698,1927 -1654,1954 -1590,1985 -1463,2080
-Quendelsteig: gut befahrbares Verbundsteinpflaster	Q1 -2165,1862 -2003,1913
-Himbeersteig: gut befahrbares Verbundsteinpflaster	Q1 -1948,1819 -2003,1913 -2064,2078
+Am Rohrgarten: geteert	Q0 -2124,1780 -2005,1812 -1948,1819 -1921,1826 -1843,1852 -1768,1882 -1737,1904 -1698,1927 -1654,1954 -1590,1985 -1463,2080
+Quendelsteig: gut befahrbares Verbundsteinpflaster	Q1 -2174,1933 -2014,1981
+Himbeersteig: gut befahrbares Verbundsteinpflaster	Q1 -1948,1819 -2014,1981 -2046,2070 -2060,2105
 #: confirmed_by: srt
 Schopenhauerstr.: asphaltiert 	Q0 -1899,3298 -2038,3252 -2167,3161
 #: confirmed_by: srt
@@ -2773,7 +2774,7 @@ Seelingstr.: Asphalt	Q0 3091,12071 2924,12047 2703,12015 2504,11990
 #: by: Tim Büttner:
 Claszeile: Kopfsteinpflaster	Q2 786,979 653,1540 644,1578 614,1576 530,1893
 #: by: Benjamin Hersch: vvv
-Borstellstr.: mäßiges Kopfsteinpflaster	Q2 6244,4331 6311,4319 6410,4302 6505,4363 6544,4392 6526,4475 6655,4617 6780,4751 6862,4735
+Borstellstr.: mäßiges Kopfsteinpflaster	Q2 6244,4331 6311,4319 6410,4302 6505,4363 6544,4392 6526,4475 6635,4639 6780,4751 6862,4735
 Promenade am Teltowkanal: gut befahrbar	Q0 6645,4254 6224,4307
 Am Eichgarten: gut befahrbar	Q0 6224,4307 6144,4315 6013,4327
 #: by: ^^^
@@ -3371,7 +3372,7 @@ Philippistr.: Kopfsteinpflaster	Q2 2583,11613 2512,11602
 #: by: Thomas Heuving: vvv
 #: note: beides wird durch die ADFC-Karte bestätigt:
 Ernststr.: Kopfsteinpflaster	Q2 2497,19503 2700,19527
-Ernststr.: Asphalt	Q0 3645,19921 3429,19786 3343,19727 3252,19658 3167,19597 3010,19572 2852,19546
+Ernststr.: Asphalt	Q0 3645,19921 3504,19849 3429,19786 3343,19727 3252,19658 3167,19597 3010,19572 2852,19546
 Thurgauer Str.: kleinteiliges Kopfsteinpflaster	Q1 7147,18149 7108,18199 7071,18232 7026,18267 6971,18299 6887,18330 6694,18351
 #: by: ^^^
 #: by: Claudia Skowronnek: vvv
@@ -5958,12 +5959,12 @@ Geitelsteig: Asphalt	Q0 1974,14646 1977,14751 1988,14870
 Hartmannsweilerweg: gutes Kopfsteinpflaster	Q1 17,3471 41,3510 16,3744 -1,3857 -36,3924 -219,4149
 #: by: Frank Wogatzki:
 Sachsenstr. (Niederschönhausen): schlechtes Kopfsteinpflaster	Q3 8268,19558 8374,19652 8573,19766
-#: by: Daniel Blume: vvv
-Spießweg: mäßiges Kopfsteinpflaster	Q2 5030,20752 4827,20862
-#: note: Auf dem Luftbild sah as asphaltiert aus:
+#: by: Claudia (ccp blume) und Daniel Blume: vvv
 #: note: Eintrag von Dagmar Schilka: Verbundsteinpflaster, Q2, enge Straße, q1
-#: note: Eintrag von ccp.blume...: Kopfsteinpflaster Q2, enge Straße q3
-Spießweg: feste Straße mit einzelnen, mehr oder weniger großen Rissen	Q1 5030,20752 5095,20716 5170,20673 5284,20603
+Spießweg: mäßiges Kopfsteinpflaster	Q2 5030,20752 4827,20862
+#: note: Daniel Blume meint: feste Straße mit einzelnen, mehr oder weniger großen Rissen
+#: note: Kopfsteinpflaster im Abschnitt am Eichborndamm ("vorderer Teil")
+Spießweg: Kopfsteinpflaster sowie Asphalt in schlechtem Zustand (mit Schlaglöchern)	Q2+ 5030,20752 5095,20716 5170,20673 5284,20603
 (Spießweg - Hermsdorfer Str.): gut befahrbarer fester Sandweg	Q1 4827,20862 4644,20952
 #: by: ^^^
 #: by: peter w.:
@@ -6053,6 +6054,22 @@ Frankenwaldstr.: guter Asphalt	Q0 -5473,15742 -5452,15804 -5426,15856 -5377,1601
 Sollingzeile: Asphalt	Q0 -5356,16064 -5252,16025
 #: by: Salmanzig:
 Forstweg (Frohnau): Kopfsteinpflaster	Q2 1051,24390 1195,24384 1252,24370 1302,24348 1419,24290 1484,24268 1561,24267 1736,24300 1859,24346 1963,24400 2081,24470 2146,24535
+#: by: Christiane Müller:
+Straße 31 (Heinersdorf): mäßiger fester Sandweg	Q2 13008,18984 13054,18977 13103,18957 13118,19018 13129,19104
+#: by: Heidi (...mary):
+Borkzeile: guter Asphalt	Q0 -4220,14311 -4207,14473 -4203,14515 -4154,14677
+#: by: Ralf Nikisch:
+Benzmannstr.: mäßiges Kopfsteinpflaster	Q2 6826,4500 6795,4507 6635,4639 6540,4715 6464,4779
+#: by: Katharina Achazi:
+Kreutzerweg: schlechtes Kopfsteinpflaster	Q3 4629,3916 4836,4041 4848,4069 4834,4102
+#: by: Steinert:
+Klinnerweg: guter Beton	Q0- 3277,20122 3331,20056 3377,19998 3440,19924 3504,19849 3695,19595
+#: by: Lutz Moser:
+Topeliusweg: guter Beton	Q0 -7153,5462 -7120,5405 -7085,5359 -6982,5237
+#: by: Reinhard Stenzel:
+Singener Weg: guter Asphalt	Q0 -505,2456 -425,2154 -326,2177
+#: by: Mareike Biggam:
+Schlehdornsteig: gutes Verbundsteinpflaster	Q1 -2046,2070 -2208,2010
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
@@ -7159,7 +7176,7 @@ Gielower Str.: Beton mit asphaltierten Ausbesserungen	Q2 13394,4373 13626,4304 1
 Traberweg.: fester Sandweg	Q2 18570,8025 18490,8104 18416,8163 18351,8222 18283,8273 18135,8404 18072,8470 18013,8529 17935,8581
 #: by: ^^^
 #: by: Mona [AM]
-Brahmsstr.: Kopfsteinpflaster	Q2 4785,4557 4933,4140 4967,4067
+Brahmsstr.: Kopfsteinpflaster	Q2 4785,4557 4932,4152 4967,4067
 #: by: Christine Ziegler [AM]
 Gertraudstr.: Kopfsteinpflaster	Q2 196,1657 79,1992
 #: by: Elke Reinecke [AM]

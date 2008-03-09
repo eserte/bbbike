@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 2.26 2008/03/02 11:11:08 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 2.28 2008/03/09 20:05:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006,2007,2008 Slaven Rezic. All rights reserved.
@@ -146,7 +146,7 @@ sub run {
 			'G_SATELLITE_MAP');
 
     my $mapmode = param("mapmode") || "";
-    ($self->{initial_mapmode}) = $mapmode =~ m{^(search|addroute|browse)$};
+    ($self->{initial_mapmode}) = $mapmode =~ m{^(search|addroute|browse|addwpt)$};
     $self->{initial_mapmode} ||= "";
 
     $self->{converter} = $converter;
@@ -197,6 +197,7 @@ sub get_html {
     my $host = eval { $full->host } || $fallback_host;
     my $google_api_key = $google_api_keys{$host} || $google_api_keys{$fallback_host};
     my $cgi_reldir = dirname($full->path);
+    my $is_beta = $full =~ m{bbikegooglemap2.cgi};
 
     my $bbbikeroot = "/BBBike";
     my $get_public_link = sub {
@@ -247,11 +248,14 @@ sub get_html {
     var routeLinkLabel = "Link to route: ";
     var routeLabel = "Route: ";
     var commonSearchParams = "&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&scope=;output_as=xml;referer=bbbikegooglemap";
+    var routePostParam = "";
 
     var addRoute = [];
     var undoRoute = [];
     var addRouteOverlay;
     var addRouteOverlay2;
+
+    var userWpts = [];
 
     var searchStage = 0;
 
@@ -327,7 +331,7 @@ sub get_html {
 		dragObj.setDraggableCursor('url("$bbbikeroot/images/ziel_ptr.png"), url("$bbbikeroot/images/flag_ziel.png"), ' + dragCursor);
 	    }
         } else {
-	    if (currentMode == "addroute") {
+	    if (currentMode == "addroute" || currentMode == "addwpt") {
 		dragObj.setDraggableCursor("default");
 	    } else {
 	        dragObj.setDraggableCursor(dragCursor);
@@ -400,6 +404,7 @@ sub get_html {
     function updateRouteDiv() {
 	var addRouteText = "";
 	var addRouteLink = "";
+	routePostParam = "";
 	for(var i = 0; i < addRoute.length; i++) {
 	    if (i == 0) {
 		addRouteText = routeLabel;
@@ -407,18 +412,33 @@ sub get_html {
 	    } else if (i > 0) {
 		addRouteText += " ";
 		addRouteLink += "+";
+		routePostParam += " ";
 	    }
-	    addRouteText += formatPoint(addRoute[i]);
-	    addRouteLink += formatPoint(addRoute[i]);
+	    var formattedPoint = formatPoint(addRoute[i]);
+	    addRouteText += formattedPoint;
+	    addRouteLink += formattedPoint;
+	    routePostParam += formattedPoint;
 	}
 
 	document.getElementById("addroutelink").innerHTML = addRouteLink;
         document.getElementById("addroutetext").innerHTML = addRouteText;
 
-	if (addRoute.length > 0) {
+	updateCommentlinkVisibility();
+    }
+
+    function updateCommentlinkVisibility() {
+	// XXX To be precise, this should also check if any of the userWpts
+	// XXX is non-null.
+	if (addRoute.length > 0 || userWpts.length > 0) {
 	  document.getElementById("commentlink").style.display = "block";
 	} else {
 	  document.getElementById("commentlink").style.display = "none";
+	}
+
+	if (userWpts.length > 0) {
+	  document.getElementById("hasuserwpts").style.visibility = "inherit";
+	} else {
+	  document.getElementById("hasuserwpts").style.visibility = "hidden";
 	}
     }
 
@@ -507,6 +527,46 @@ sub get_html {
 	var s = window.getSelection();
 	s.removeAllRanges();
 	s.addRange(range);
+    }
+
+    function addUserWpt(point) {
+	var userWpt = { index:userWpts.length };
+	var marker = new GMarker(point);
+	var preHtml = '<form>Kommentar:<br/><textarea id="userWptComment" cols="25" rows=4">';
+	var postHtml = '</textarea></form><br/><a href="javascript:deleteUserWpt(' + userWpt.index + ')">Waypoint löschen</a>';
+	var html = preHtml + postHtml;
+	var htmlElem = document.createElement("div");
+	htmlElem.innerHTML = html;
+	var textarea = htmlElem.getElementsByTagName("textarea")[0];
+	userWpt.textarea = textarea;
+	marker.bindInfoWindow(htmlElem);
+	map.addOverlay(marker);
+	userWpt.overlay = marker;
+	userWpt.latLng = marker.getLatLng();
+	userWpts[userWpts.length] = userWpt;
+	updateCommentlinkVisibility();
+    }
+
+    function deleteUserWpt(i) {
+        var userWpt = userWpts[i];
+	if (userWpt) {
+	    var overlay = userWpt.overlay;
+	    if (overlay) {
+	        map.removeOverlay(overlay);
+	        userWpt.overlay = null;
+	    }
+            userWpts[i] = null;
+	}
+	// XXX should call updateCommentlinkVisibility()
+	// XXX once it can handle single deleted waypoints
+    }
+
+    function deleteAllUserWpts() {
+	for(var i in userWpts) {
+	    deleteUserWpt(i);
+	}
+	userWpts = [];
+	updateCommentlinkVisibility();
     }
 
     function mapTypeToString() {
@@ -601,8 +661,11 @@ sub get_html {
 	    showLink(point, 'Link to map center: ');
 	    addCoordsToRoute(point,true);
 	    // XXX should the point also be centered or not?
-	}
-	if (currentMode != "search") {
+	    return;
+	} else if (currentMode == "addwpt") {
+	    addUserWpt(point);
+	    return;
+	} else if (currentMode != "search") {
 	    return;
 	}
 	if (searchStage == 0) { // set start
@@ -675,11 +738,26 @@ sub get_html {
         http.open('POST', "@{[ $cgi_reldir ]}/mapserver_comment.cgi", false);
         http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         var comment = frm.comment.value;
-        comment += "\\n\\n" + document.getElementById("addroutelink").innerHTML;
-        http.send("author="+encodeURIComponent(frm.author.value)+"&"+
-                  "email="+encodeURIComponent(frm.email.value)+"&"+
-      	    "comment="+encodeURIComponent(comment)+"&"+
-      	    "encoding=utf-8");
+	var postContent = "author="+encodeURIComponent(frm.author.value)+"&"+
+                          "email="+encodeURIComponent(frm.email.value)+"&"+
+      	                  "comment="+encodeURIComponent(comment)+"&"+
+			  "routelink="+encodeURIComponent(document.getElementById("addroutelink").innerHTML)+"&"+
+      	                  "encoding=utf-8";
+	for(var u_i in userWpts) {
+	    var userWpt = userWpts[u_i];
+	    if (userWpt) {
+		var wptComment = "";
+		if (userWpt.textarea) {
+		    wptComment = userWpt.textarea.value;
+		    wptComment = wptComment.replace(/!/, "."); // XXX hackish...
+		}
+		postContent += "&" + "wpt." + u_i + "=" + encodeURIComponent(wptComment + "!" + userWpt.latLng.lng() + "," + userWpt.latLng.lat());
+	    }
+	}
+	if (routePostParam != "") {
+	    postContent += "&" + "route=" + encodeURIComponent(routePostParam);
+	}
+        http.send(postContent);
         var strResult=http.responseText;
         if (http.status != 200) {
           strResult = "Die Übertragung ist mit dem Fehlercode <" + http.status + "> fehlgeschlagen.\\n\\n" + strResult;
@@ -746,11 +824,9 @@ sub get_html {
     }
 
     GEvent.addListener(map, "moveend", function() {
-	var currentMode = getCurrentMode();
         var center = map.getCenterLatLng();
 	showCoords(center, 'Center of map: ');
 	showLink(center, 'Link to map center: ');
-	// addCoordsToRoute(center,true);
     });
 
 EOF
@@ -817,7 +893,7 @@ EOF
     </div>
 
 <div id="commentlink" class="boxed" class="boxed" style="display:none;">
-  <a href="#" onclick="show_comment(); return false;">Kommentar zu dieser Route senden</a>
+  <a href="#" onclick="show_comment(); return false;">Kommentar zu Route und Waypoints senden</a>
 </div>
 
 <div style="float:left; width:45%; margin-top:0.5cm; ">
@@ -844,6 +920,19 @@ EOF
         <a href="javascript:deleteLastPoint()">Letzten Punkt löschen</a>
         <a href="javascript:resetOrUndoRoute()" id="routedellink">Route löschen</a></td>
    </tr>
+EOF
+    if ($is_beta) {
+	$html .= <<EOF;
+   <tr style="vertical-align:top;">
+    <td><input onchange="currentModeChange()" 
+	       id="mapmode_addwpt"
+               type="radio" name="mapmode" value="addwpt" /></td>
+    <td><label for="mapmode_addwpt">Waypoints erstellen</label><br/>
+        <a href="javascript:deleteAllUserWpts()">Alle Waypoints löschen</a></td>
+   </tr>
+EOF
+    }
+    $html .= <<EOF;
  </table>
 </form>
 
@@ -891,7 +980,8 @@ EOF
 
 <form id="commentform" style="position:absolute; top:20px; left: 20px; border:1px solid black; padding:4px; background:white; visibility:hidden;">
   <table>
-    <tr><td>Kommentar:</td><td> <textarea cols="40" rows="4" name="comment"></textarea></td></tr>
+    <tr><td>Kommentar zur Route:</td><td> <textarea cols="40" rows="4" name="comment"></textarea></td></tr>
+    <tr id="hasuserwpts" style="visibility:hidden;"><td colspan="2">(Kommentare für Waypoints werden angehängt)</td></tr>
     <tr><td>Dein Name:</td><td><input name="author"></td></tr>
     <tr><td>Deine E-Mail:</td><td> <input name="email"></td></tr>
     <tr><td></td><td><a href="#" onclick="send_via_post(); return false;">Senden</a>

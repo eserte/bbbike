@@ -253,6 +253,10 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet; in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: Kerstin Werner:
+Hoppegartener Str. (Neuenhagen b. Berlin): Kopfsteinpflaster, Q3	? 29497,12770 29220,12830
+#: by: Dirk (no email):
+Falkenstr. (Hennigsdorf): Verbundsteinpflaster, Q0-	? -3881,25882 -3910,25724 -3929,25637 -3951,25538
 #: by: Verena (ohne email):
 #: XXX Die Bordsteinkanten,q4 (Gehweg???) ignoriere ich mal
 Kastanienallee (Blankenburg): mäßiges Kopfsteinpflaster, Q2	? 13951,21086 14005,21262 14069,21471 14120,21645 14156,21753
@@ -1242,8 +1246,8 @@ Neubrücker Str.: Qualität?	? 28231,-19792 28336,-19948 28363,-19964 28514,-20071
 Postenweg: Qualität zwischen Rudower Chaussee und B179 (wahrscheinlich guter Beton)?	? 17234,-685 17806,-561 18177,-449
 Gerlinger Str. - Mauerweg: Qualität (wahrscheinlich guter fester Sandweg)?	? 12007,877 12017,777 11924,594
 Bellevuepark: ist ein Weg für Radfahrer offiziell freigegeben?	? 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340
-Idsteiner Str.: Qualität (laut ADFC-Karte zwischen Königsweg und Hegauer Weg mäsig, danach bis Ludwigsfelder Str. gut geeignet)?	? -163,1564 -284,2009 -319,2212 -393,2521
-Hegauer Weg: Qualität (laut ADFC-Karte ist der westliche Abschnitt gut, der östliche Abschnitt mäßig geeignet)?	? -371,2187 -319,2212 -165,2303 -6,2434
+Idsteiner Str.: Qualität (laut ADFC-Karte zwischen Königsweg und Hegauer Weg mäsig, danach bis Ludwigsfelder Str. gut geeignet)?	? -163,1564 -284,2009 -326,2177 -393,2521
+Hegauer Weg: Qualität (laut ADFC-Karte ist der westliche Abschnitt gut, der östliche Abschnitt mäßig geeignet)?	? -326,2177 -165,2303 -6,2434
 #: note: schien mir auch von der S-Bahn so auszusehen:
 Bülowstr. (Zehlendorf): Qualität (laut ADFC-Karte bis auf einen kleinen Abschnitt am Mexikoplatz gut geeignet)?	? -426,2978 -662,2998 -872,3133 -1052,3276 -1054,3328
 Kirchweg: Qualität? (laut ADFC-Karte zwischen B1 und Beskidenstr. gut geeignet, westlicher Abschnitt ungeeignet, wahrscheinlich wegen Kopfsteinpflaster)	? -2903,1818 -2981,1925 -3019,1998 -3031,2184 -3030,2266 -3109,2306 -3211,2405 -3244,2436 -3235,2496 -3280,2507
@@ -1572,5 +1576,8 @@ Hartmannsweilerweg: Ist der Hartmannsweilerweg (abschnittsweise) eine Einbahnstr
 Hielscherstr.: ist der Abschnitt südlich der Hertzstr. asphaltiert?	? 7522,19804 7556,19882
 #: XXX Angaben von unklar: Marc (michgibsnich): Kopfsteinpflaster, Q2, aber Busspur? Bordsteinkanten?
 Sperberstr. (Konradshöhe): Qualität?	? -1681,19955 -1869,19974 -2073,19990 -2216,20003
-Eisvogelweg: Ist der Eisvogelweg eine Einbahnstraße Richtung Norden? Nur für Autos oder auch für Radfahrer?	? 691,4474 661,4492 635,4524 595,4594 542,4699 528,4747
 Menckenstr.: Qualität zwischen Tiburtiusbrücke und Lothar-Bucher-Str.?	? 5567,5864 5570,5913 5593,5965 5664,6082
+Borkzeile - Spekteweg: Qualität des Parkwegs?	? -4154,14677 -4167,14729 -4234,14792 -4257,14888 -4284,14937
+Borkzeile - Spekteweg/Zeppelinstr.: Qualität des Parkwegs?	?  -4154,14677 -4203,14688 -4255,14709 -4296,14707 -4333,14726 -4382,14733 -4439,14727 -4473,14734 -4496,14767 -4546,14800 -4586,14805 -4598,14817
+#: XXX unklarer Eintrag von anonymous: Asphalt, Q0, aber warum q4?
+Hochfeilerweg: Qualität?	? 10170,2158 10108,2174 10043,2351 9973,2541 9993,2551 10015,2651

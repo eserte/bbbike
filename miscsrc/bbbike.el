@@ -202,7 +202,7 @@
 	  ("^\\([^\t\n]+\\)" (1 font-lock-constant-face))           ;; name
 	  ("^[^#][^\t\n:]+: \\([^\t\n]+\\)" (1 font-lock-string-face t)) ;; colon separated part of name
 	  ("\t\\([^ \n]+ \\)" (1 font-lock-keyword-face))            ;; category
-	  ("\\([-+]?[0-9]+,[-+]?[0-9]+\\)" (1 font-lock-type-face)) ;; coords
+	  ("\\([-+]?[0-9.]+,[-+]?[0-9.]+\\)" (1 font-lock-type-face)) ;; coords
 	  ))
   (make-local-variable 'comment-use-syntax)
   (setq comment-use-syntax nil)

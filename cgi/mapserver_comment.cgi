@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.46 2008/03/02 18:19:39 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.48 2008/03/09 20:05:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003-2008 Slaven Rezic. All rights reserved.
@@ -77,8 +77,10 @@ eval {
 	if (Sys::Hostname::hostname() =~ /herceg\.de$/) {
 	    require Config;
 	    if ($Config::Config{archname} =~ /amd64/) {
-		$to = "slaven\@rezic.de";
-		$cc = "slaven\@rezic.de";
+		#$to = "slaven\@rezic.de";
+		#$cc = "slaven\@rezic.de";
+		$to = "eserte";
+		$cc = "eserte";
 	    } else {
 		$to = "eserte\@smtp.herceg.de";
 		$cc = "slaven\@smtp.herceg.de";
@@ -132,9 +134,14 @@ eval {
 	    $link2 = "$msadrcgi_local?coords=$coords_esc";
 	}
     }
+    if (param("routelink")) {
+	$link1 = param("routelink");
+	($link2 = $link1) =~ s{http://[^/]+}{http://radzeit}; # guess local link, may be wrong
+    }
 
     my $plain_body = "";
     my $add_html_body;
+    my $add_bbd;
     my $need_bbbike_css = 0;
 
     if (param("formtype") && param("formtype") =~ /^(newstreetform|fragezeichenform)$/) {
@@ -214,9 +221,44 @@ eval {
 	$plain_body .= "Remote: " . $link1 . "\n" if defined $link1;
 	$plain_body .= "Lokal:  " . $link2 . "\n" if defined $link2;
 	$plain_body .= "\n" . Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
+	if (request_method eq 'POST') {
+	    $plain_body .= "\nPOST Vars:\n";
+	    for my $key (param) {
+		$plain_body .= Data::Dumper->new([param($key)],[$key])->Indent(1)->Useqq(1)->Dump;
+	    }
+	}
     }
 
-    my $is_multipart = defined $add_html_body && $add_html_body ne "";
+    {
+	my @add_bbd;
+	for my $key (param) {
+	    if ($key =~ m{^wpt\.\d+}) {
+		my($comment, $xy) = split /!/, param($key);
+		$comment =~ s{[\t\n]}{ }g;
+		push @add_bbd, "$comment\tWpt $xy";
+	    }
+	}
+	if (param("route")) {
+	    my(@points) = split / /, param("route");
+	    my $bbd_comment = param("comment") || "<no comment>";
+	    $bbd_comment =~ s{[\t\n]}{ }g;
+	    push @add_bbd, "$bbd_comment\tRte @points";
+	}
+	unshift @add_bbd,
+	    ("#: map: polar",
+	     "#: encoding: utf-8",
+	     "#: category_color.Wpt: #ff0000",
+	     "#: category_color.Rte: #0000ff",
+	     "#:",
+	     "#: by: $by_long vvv",
+	    );
+	push @add_bbd,
+	    ("#: by: ^^^");
+	$add_bbd = join("\n", @add_bbd) . "\n";
+    }
+
+    my $is_multipart = ((defined $add_html_body && $add_html_body ne "") ||
+			(defined $add_bbd       && $add_bbd ne ""));
     $subject = substr($subject, 0, 70) . "..." if length $subject > 70;
 
     my($subject_mime, $to_mime, $cc_mime, $email_mime) =
@@ -246,13 +288,22 @@ eval {
     }
 
     if ($is_multipart) {
-	$msg->attach(Type => "text/html; charset=iso-8859-1",
-		     Data => $add_html_body,
-		     Filename => "newstreetform.html",
-		    );
+	if (defined $add_html_body && $add_html_body ne "") {
+	    $msg->attach(Type => "text/html; charset=iso-8859-1",
+			 Data => $add_html_body,
+			 Filename => "newstreetform.html",
+			);
+	}
 	$msg->attach(Type => "text/plain; charset=iso-8859-1",
 		     Data => $plain_body,
 		    );
+	if (defined $add_bbd && $add_bbd ne "") {
+	    $msg->attach(Type => "application/x-bbbike-data",
+			 Data => $add_bbd,
+			 Filename => "comment.bbd",
+			 Encoding => "quoted-printable",
+			);
+	}
 ## Unfortunately, this does not work with Mozilla Mail:
 # 	if ($need_bbbike_css) {
 # 	    $msg->attach(Type => "text/css",
