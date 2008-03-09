@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.51 2008/03/02 22:46:33 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.52 2008/03/09 00:17:20 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -50,7 +50,7 @@ if (!@browsers) {
 }
 @browsers = map { "$_ BBBikeTest/1.0" } @browsers;
 
-my $outer_berlin_tests = 13;
+my $outer_berlin_tests = 16;
 my $tests = 110 + $outer_berlin_tests;
 plan tests => $tests * @browsers;
 
@@ -366,7 +366,7 @@ for my $browser (@browsers) {
     ######################################################################
     # Test custom blockings
 
- XXX:    {
+    {
 
 	# Hier wird eine temporäre baustellenbedingte Einbahnstraße in
 	# der Rixdorfer Str. getestet.
@@ -694,9 +694,10 @@ for my $browser (@browsers) {
     ######################################################################
     # outer Berlin
 
+ XXX: { ; }
  SKIP: {
-	skip("Outer Berlin feature needs bbbike2.cgi", $outer_berlin_tests)
-	    if $cgiurl !~ /bbbike2\.cgi/;
+	skip("XXX Outer Berlin feature needs bbbike2.cgi", $outer_berlin_tests)
+	    if $cgiurl !~ /bbbike2\.cgi/ && $cgiurl ne 'http://localhost/bbbike/cgi/bbbike.cgi';
 
 	$get_agent->();
 	$agent->get($cgiurl);
@@ -704,7 +705,7 @@ for my $browser (@browsers) {
 	$form->value('start', 'kirchsteig');
 	$form->value('startort', 'Königs Wusterhausen');
 	$form->value('via', 'kalkberger');
-	$form->value('viaort', 'Schöneiche b. Berlin');
+	$form->value('viaort', 'Schöneiche bei Berlin');
 	$form->value('ziel', 'flora');
 	$form->value('zielort', 'Hohen Neuendorf');
 	$agent->submit;
@@ -719,6 +720,20 @@ for my $browser (@browsers) {
 	$like_long_data->(qr/Route/, "On the result page");
 	for my $expected_place (qw(Erkner Woltersdorf Dahlwitz-Hoppegarten)) {
 	    $like_long_data->(qr/$expected_place/, "Expected place on route ($expected_place)");
+	}
+
+	{
+	    $get_agent->();
+	    $agent->get($cgiurl);
+	    my $form = $agent->current_form;
+	    $form->value('start', 'bahnhofstr');
+	    $form->value('startort', 'Erkner');
+	    $form->value('ziel', 'bahnhofstr');
+	    $form->value('zielort', 'Schwanebeck');
+	    $agent->submit;
+	    my_tidy_check($agent);
+	    $like_long_data->(qr/\QBahnhofstr. (Erkner)/, "Start known");
+	    $like_long_data->(qr{\Q<i>bahnhofstr</i> in <i>Schwanebeck</i> ist nicht bekannt}, "Unknown goal");
 	}
     }
 

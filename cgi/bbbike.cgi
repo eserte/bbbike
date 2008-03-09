@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.4 2008/03/02 22:30:16 eserte Exp eserte $
+# $Id: bbbike.cgi,v 9.5 2008/03/09 00:18:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -723,7 +723,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 9.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 9.5 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1467,7 +1467,8 @@ sub choose_form {
 
 	# Überprüfen, ob eine Straße in PLZ vorhanden ist.
 	if ($$nameref eq '' && $$oneref ne '') {
-	    my $plz_obj = init_plz(scope => (defined $ort && $ort =~ $outer_berlin_qr ? $ort : "Berlin/Potsdam"));
+	    my $plz_scope = (defined $ort && $ort =~ $outer_berlin_qr ? $ort : "Berlin/Potsdam");
+	    my $plz_obj = init_plz(scope => $plz_scope);
 	    if (!$plz_obj) {
 		# Notbehelf. PLZ sollte möglichst installiert sein.
 		my $str = get_streets();
@@ -1508,8 +1509,8 @@ sub choose_form {
 	    # solution: use multi_bez_str!
 	    @$matchref = map { $plz_obj->combined_elem_to_string_form($_) } $plz_obj->combine(@$matchref);
 
-	    if (@$matchref == 0) {
-		# Nichts gefunden. In der Plätze-Datei nachschauen.
+	    if (@$matchref == 0 && $plz_scope eq 'Berlin/Potsdam') {
+		# Nichts gefunden. In der Plätze-Datei nachschauen (aber nur für Berlin/Potsdam).
 		if (my $platz = new Strassen "plaetze") {
 		    warn "Suche $$oneref in der Plätze-Datei.\n" if $debug;
 		    my @res = $platz->agrep($$oneref);
@@ -6761,7 +6762,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/03/02 22:30:16 $';
+    my $cgi_date = '$Date: 2008/03/09 00:18:13 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
