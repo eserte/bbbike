@@ -111,6 +111,7 @@ Blankenfelde, Berliner Str. und Hauptstr: nach Bauarbeiten (bis 2009-04-01) viel
 #: XXX Name der Straße? Der Pharus-Verlag meint "Wilhelm-Kabus-Str."
 Kolonnenstr. - Südkreuz: Bauarbeiten beginnen 2007, die Naumannstr. wird später verkehrsberuhigt	? 7716,8048 7826,8049 7949,8385 8077,8768
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
+#: last_checked (by steffi silvermidi): 2008-03
 Blanckertzweg: Radwege in Planung (ebenso östlicher Teil der Hildburghauser Str.)	? 4793,1344 4634,1245 4542,1188
 Aalemannkanal: laut ADFC-Karte/neu Brücke geplant	? -2053,18375 -2156,18310
 Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	? 29192,-10630 29088,-10386 28918,-10301 28723,-10326 28485,-10143
@@ -253,6 +254,10 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet; in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: Katja Böttge:
+Hornblendeweg: Asphalt, Q0, Einbahnstraße offen Richtung Westen	? 10659,1370 10638,1442 10594,1468 10510,1441 10425,1400 10402,1362 10415,1323 10440,1283
+#: by: Anne Jordan:
+Am Kringel: gutes Verbundsteinpflaster, Q1	? 1316,24924 1309,24955 1309,24995 1323,25041 1370,25085
 #: by: Kerstin Werner:
 Hoppegartener Str. (Neuenhagen b. Berlin): Kopfsteinpflaster, Q3	? 29497,12770 29220,12830
 #: by: Dirk (no email):
@@ -260,8 +265,6 @@ Falkenstr. (Hennigsdorf): Verbundsteinpflaster, Q0-	? -3881,25882 -3910,25724 -3
 #: by: Verena (ohne email):
 #: XXX Die Bordsteinkanten,q4 (Gehweg???) ignoriere ich mal
 Kastanienallee (Blankenburg): mäßiges Kopfsteinpflaster, Q2	? 13951,21086 14005,21262 14069,21471 14120,21645 14156,21753
-#: by: Janssen:
-Gustave-Courbet-Str.: Asphalt, Q0	? 3645,16308 3839,16273 3881,16259 3992,16198
 #: by: Kerstin Seppik:
 Goethestr. (Neuenhagen): guter Asphalt, Q0	? 30848,12259 30757,12428 30677,12576 30554,12762
 #: by: Susanne Rau:
@@ -1246,8 +1249,7 @@ Neubrücker Str.: Qualität?	? 28231,-19792 28336,-19948 28363,-19964 28514,-20071
 Postenweg: Qualität zwischen Rudower Chaussee und B179 (wahrscheinlich guter Beton)?	? 17234,-685 17806,-561 18177,-449
 Gerlinger Str. - Mauerweg: Qualität (wahrscheinlich guter fester Sandweg)?	? 12007,877 12017,777 11924,594
 Bellevuepark: ist ein Weg für Radfahrer offiziell freigegeben?	? 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340
-Idsteiner Str.: Qualität (laut ADFC-Karte zwischen Königsweg und Hegauer Weg mäsig, danach bis Ludwigsfelder Str. gut geeignet)?	? -163,1564 -284,2009 -326,2177 -393,2521
-Hegauer Weg: Qualität (laut ADFC-Karte ist der westliche Abschnitt gut, der östliche Abschnitt mäßig geeignet)?	? -326,2177 -165,2303 -6,2434
+Idsteiner Str.: Qualität (laut ADFC-Karte zwischen Königsweg und Hegauer Weg mäsig, danach bis Ludwigsfelder Str. gut geeignet)?	? -163,1564 -284,2009 -326,2177 -409,2510
 #: note: schien mir auch von der S-Bahn so auszusehen:
 Bülowstr. (Zehlendorf): Qualität (laut ADFC-Karte bis auf einen kleinen Abschnitt am Mexikoplatz gut geeignet)?	? -426,2978 -662,2998 -872,3133 -1052,3276 -1054,3328
 Kirchweg: Qualität? (laut ADFC-Karte zwischen B1 und Beskidenstr. gut geeignet, westlicher Abschnitt ungeeignet, wahrscheinlich wegen Kopfsteinpflaster)	? -2903,1818 -2981,1925 -3019,1998 -3031,2184 -3030,2266 -3109,2306 -3211,2405 -3244,2436 -3235,2496 -3280,2507
@@ -1581,3 +1583,7 @@ Borkzeile - Spekteweg: Qualität des Parkwegs?	? -4154,14677 -4167,14729 -4234,14
 Borkzeile - Spekteweg/Zeppelinstr.: Qualität des Parkwegs?	?  -4154,14677 -4203,14688 -4255,14709 -4296,14707 -4333,14726 -4382,14733 -4439,14727 -4473,14734 -4496,14767 -4546,14800 -4586,14805 -4598,14817
 #: XXX unklarer Eintrag von anonymous: Asphalt, Q0, aber warum q4?
 Hochfeilerweg: Qualität?	? 10170,2158 10108,2174 10043,2351 9973,2541 9993,2551 10015,2651
+#: XXX anonymous meint mäßiger Asphalt, aber auf dem Luftbild sieht es teilweise unbefestigt aus:
+Schrobsdorffstr.: Ist die Straße durchgängig asphaltiert oder gibt es unbefestigte Abschnitte?	? 24102,8772 24156,8904 24207,9035 24261,9168 24315,9302 24360,9411 24404,9527
+#: XXX Eintrag von Reinhard Stenzel ohne Kommentierung:
+Fischer-Dieskau-Weg: Qualität? Für Radfahrer befahrbar?	? -151,2975 -81,2699

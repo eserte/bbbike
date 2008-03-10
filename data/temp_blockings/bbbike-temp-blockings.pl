@@ -6153,7 +6153,7 @@ EOF
        text  => 'Ehrlichstraße zwischen Trautenauerstraße und Blockdammweg gesperrt. Dauer 07.10.2006 06:00 Uhr bis 20.10.2006 18:00 Uhr. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 17729,8850 18080,8626 18147,8583
+userdel	2::inwork 17729,8850 17879,8773 18080,8626 18147,8583
 EOF
      },
      { from  => 1160107200, # 2006-10-06 06:00

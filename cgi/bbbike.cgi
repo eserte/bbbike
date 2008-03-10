@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.5 2008/03/09 00:18:13 eserte Exp $
+# $Id: bbbike.cgi,v 9.6 2008/03/10 20:16:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -723,7 +723,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 9.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 9.6 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -6571,7 +6571,7 @@ sub show_info {
   <ul>
    <li><a href="#perltk">Perl/Tk-Version</a>
    <li><a href="#beta">Beta-Version</a>
-   <li><a href="#pda">PDA-Version</a>
+<!--   <li><a href="#pda">PDA-Version</a>-->
    <li><a href="#wap">WAP</a>
    <li><a href="#gpsupload">GPS-Upload</a>
    <li><a href="#opensearch">Suchplugin für Firefox und IE</a>
@@ -6673,8 +6673,9 @@ Der aktuellen Snapshot der Perl/Tk-Version kann <a href="@{[ $BBBike::BBBIKE_UPD
 
 <h4 id="beta">Beta-Version von bbbike.de</h4>
 Zukünftige BBBike-Features können <a href="$bbbike2_url">hier</a> getestet werden.
-<h4 id="pda">PDA-Version für iPAQ/Linux</h4>
+<!--<h4 id="pda">PDA-Version für iPAQ/Linux</h4>
 Für iPAQ-Handhelds mit Familiar Linux gibt es eine kleine Version von BBBike: <a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">tkbabybike</a>.
+-->
 <h4 id="wap">WAP</h4>
 BBBike kann man per WAP-Handy unter der Adresse <a href="@{[ $BBBike::BBBIKE_WAP ]}">@{[ $BBBike::BBBIKE_WAP ]}</a> nutzen.
 <p>
@@ -6762,7 +6763,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/03/09 00:18:13 $';
+    my $cgi_date = '$Date: 2008/03/10 20:16:37 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

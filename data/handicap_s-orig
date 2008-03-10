@@ -1092,24 +1092,24 @@ Askaloner Weg: enge Straﬂe	q1 2402,24687 2407,24657 2384,24603 2311,24546 2262,2
 #: corrected_by: srt (angegeben q3, wegen Luftbild korrigiert zu q1)
 Pritstabelstr.: enge Straﬂe	q1 22811,3037 22928,3057 23065,3089 23338,3173 23444,3217 23564,3283 23641,3342 23680,3371 23734,3423
 #: by: Sebastian Worel:
-#: corrected_by: srt (angegeben q2, wegen Policy korrigiert zu q1)
+#: corrected_by: srt/policy (q2 -> q1))
 Juttastr.: enge Straﬂe	q1 1072,4542 949,4366
 #: by: Veit Bˆhnke:
 Herbert-Baum-Str.: enge Straﬂe	q1 13826,16026 13869,15912 13904,15818 13943,15717 13964,15656 13989,15589
 #: by: Bernd Mahrin:
 Sendener Weg: enge Straﬂe	q1 964,18321 1040,18283 1144,18237 1189,18246 1221,18327 1281,18487 1346,18662
 #: by: Bernd Honsa:
-#: corrected_by: srt (q4 -> q2, q4 gibt es nicht)
+#: corrected_by: srt/policy (q4 -> q2, q4 gibt es nicht)
 Arthur-M¸ller-Str.: enge Straﬂe	q2 17834,3125 17941,3176 18021,3167 18199,2960 18057,2852
 #: by: henning (hirschgarten):
-#: corrected_by: srt (q2 -> q1)
+#: corrected_by: srt/policy (q2 -> q1)
 Gilgenburger Str.: enge Straﬂe	q1 24387,5672 24434,5645 24666,5726
 #: by: Steffi (silver midi):
 Blochmannstr.: enge Straﬂe	q1 5097,988 5036,949 4986,959 4925,961 4862,975 4788,1023 4702,1147 4634,1245
 #: by: blasz
 Schenkestr.: enge Straﬂe	q1 17961,8312 17794,8429
 #: by: anonymous
-#: corrected_by: srt (q2 -> q1)
+#: corrected_by: srt/policy (q2 -> q1)
 Knˆterichpfad: enge Straﬂe, Gartensiedlung	q1 -7842,14683 -7808,14939 -7783,15059
 #: by: Tweety87...:
 Hartmannsweilerweg: enge Straﬂe	q1 17,3471 41,3510 16,3744 -1,3857 -36,3924 -219,4149
@@ -1137,5 +1137,10 @@ Peenestr.: enge Straﬂe	q1 19328,1149 19434,1265 19575,1239 19737,1204
 #: by: Heidi (...mary):
 Borkzeile: enge Straﬂe	q1 -4220,14311 -4207,14473 -4203,14515 -4154,14677
 #: by: Katharina Achazi:
-#: corrected_by: srt (q3 -> q1)
+#: corrected_by: srt/policy (q3 -> q1)
 Kreutzerweg: enge Straﬂe	q1 4629,3916 4836,4041 4848,4069 4834,4102
+#: by: Tinka:
+Am Forstacker: enge Straﬂe	q1 -3676,17131 -3671,17202 -3648,17250 -3612,17280 -3532,17333 -3491,17381 -3418,17525
+#: by: David (dh):
+#: corrected_by: srt/policy (q2 -> q1)
+Brandenburgische Str. (Steglitz): enge Straﬂe	q1 6889,4334 6820,4347 6532,4422
