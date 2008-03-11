@@ -873,9 +873,9 @@ Wuhlewanderweg: guter Beton	Q0 22323,13533 22359,13599 22516,13799 22607,13890 2
 Wuhlewanderweg: guter Beton	Q0 22806,14631 22741,14761 22550,15087 22449,15127
 Wuhlewanderweg: Beton/Verbundsteinpflaster	Q1 22359,13599 22259,13508
 Wuhlewanderweg: guter Beton	Q0 22259,13508 22191,13414 22221,13027 22199,12955
-#: add_fragezeichen: der Abschnitt nördlich des Bahnhofs Wuhletal ist noch nicht fertiggestellt:
+#: XXX: der Abschnitt nördlich des Bahnhofs Wuhletal ist noch nicht fertiggestellt:
 #: note: last_checked by srt: 2007-03-24
-#: last_checked (by rene kielmann): 2008-03
+#: last_checked (by rene kielmann, alexandra trash): 2008-03
 Wuhlewanderweg: unbefestiger Weg/Schotterweg	Q2 22199,12955 22036,12367 21998,12204 21970,12153
 #: by: Peter
 entlang der S-Bahn: asphaltiert	Q1 15337,24593 15490,24848 15648,25084
@@ -1548,7 +1548,7 @@ Feldblumenweg: gut geeignet	Q0 23513,2326 23485,2271 23535,2111
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20060801.0810.44858.html
 Dörbeckweg: asphaltiert	Q0 -6250,13396 -6425,13347
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20051025.0840.31524.html
-Moritzstr.: Asphalt	Q0 -3637,14628 -3481,14523
+Moritzstr.: Asphalt	Q0 -3637,14628 -3598,14587 -3481,14523
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20051020.1545.31341.html
 #: confirmed_by: rjoop
 Möthlower Str.: Asphalt	Q0 -7736,15460 -7664,15601 -7588,15656
@@ -2001,6 +2001,7 @@ Heidekrautweg: Asphalt	Q0 21982,10874 22053,10911
 #: note: ^^^
 ######################################################################
 #: by: anonymous vvv
+Lobitzweg: guter Asphalt	Q0 23177,2742 23112,2943 23065,3089 23028,3216 22999,3342 22954,3584
 Wiecker Str.: guter Beton	Q0- 16589,18075 16526,18164 16459,18257
 (Wiecker Str. - Ribnitzer Str.): guter Beton	Q0- 16459,18257 16491,18278 16470,18307
 Trampenauer Steig: gutes Verbundsteinpflaster	Q1 -1755,22975 -1660,23225
@@ -2389,7 +2390,7 @@ Tannenweg: mäßig	Q2 -3023,17889 -3012,17940 -3028,18024 -3038,18063 -3041,18090
 #: by: Harald Widmann:
 Klüberstr.: Beton	Q0 7912,2690 7943,2834
 #: by: Michi Kastner:
-Dregerhoffstr.: Beton	Q0 22904,2675 23427,2812 23541,2841 24050,2968 24084,2925 24190,2987
+Dregerhoffstr.: Beton	Q0 22904,2675 23177,2742 23427,2812 23541,2841 24050,2968 24084,2925 24190,2987
 # XXX Michi hat auch RW1 eingetragen, aber laut ADFC-Karte kein Radweg!
 #: by: c. ecker:
 Sprengelstr. (Wedding): Asphalt	Q0 6739,14969 6945,15045 7131,15109 7303,15173
@@ -3200,7 +3201,7 @@ Paradiesstr: schlechtes Kopfsteinpflaster	Q3 21355,-309 21371,-374 21367,-420 21
 #: by: Timo (fette ma): vvv
 Reisstr.: guter Asphalt	Q0 1314,14207 1360,14375
 Hoher Steinweg: Kopfsteinpflaster	Q2 -3132,14607 -3115,14642 -3029,14656
-Neuendorfer Str.: Kopfsteinpflaster	Q2 -3106,14731 -3093,14801 -3135,14846
+Neuendorfer Str.: Kopfsteinpflaster	Q2 -3106,14731 -3093,14801 -3153,14868
 Möllentordamm: Kopfsteinpflaster	Q2 -3029,14656 -2992,14667 -2920,14637
 Behnitz: Kopfsteinpflaster	Q2 -2920,14637 -2939,14585
 Neue Brücke: Kopfsteinpflaster	Q2 -3115,14642 -3110,14698
@@ -4271,7 +4272,7 @@ Sigmund-Bergmann-Str.: gutes Verbundsteinpflaster	Q0 -2312,16770 -2173,16741 -21
 (Parkplatz Kaufland - Am Steinberg): gepflasterter Fußweg	Q1 12981,17557 13011,17470
 #: by: ^^^
 #: by: Babsi (barmul3):
-Hasenmark: mäßiges Kopfsteinpflaster	Q2 -3681,14731 -3563,14870
+Hasenmark: mäßiges Kopfsteinpflaster	Q2 -3694,14744 -3563,14870
 #: by: Ulrich Rautenberg: vvv
 Cantorsteig: gute Qualität	Q0 9192,4389 9172,4521
 Königstr. (Mariendorf): guter Asphalt	Q0 8868,4498 9066,4512 9172,4521 9294,4536

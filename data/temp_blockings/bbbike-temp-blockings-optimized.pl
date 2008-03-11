@@ -935,6 +935,15 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	2::inwork -1224,-107827 -1061,-107847
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1221167001,
+         'text' => 'Das letzte Ende (zur Schönhauser Allee) der Saarbrücker Str. ist momentan wg. Baustelle gesperrt. Es ist zu vermuten, dass dort das Kopfsteinpflaster entfernt wird.',
+         'from' => undef,
+         'id' => 1300,
+         'data' => 'userdel	q4::inwork 10969,13914 10924,13940
+',
+         'type' => 'handicap'
        }
      
 );

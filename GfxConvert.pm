@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GfxConvert.pm,v 1.18 2006/04/16 19:08:10 eserte Exp $
+# $Id: GfxConvert.pm,v 1.19 2008/03/11 21:24:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -536,7 +536,7 @@ sub run_command {
 		   @cmd
 		  );
     print STDERR "Executing $cmd " if $VERBOSE;
-    if (eval { require IPC::Run; 1 }) {
+    if (eval { require IPC::Run; defined &IPC::Run::run }) {
 	print STDERR " using IPC::Run...\n" if $VERBOSE;
 	IPC::Run::run(@cmd);
     } else {

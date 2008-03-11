@@ -869,6 +869,11 @@ Liniengruppe), um Umsteigen zu erkennen.
 
 =item *
 
+GfxConvert: add more search paths on Windows machines like
+C:/Programme/gs/gs8.14/lib;C:/Programme/GnuWin32/bin
+
+=item *
+
 GfxConvert evtl. mit Tk::WinPhoto/Tk::Photo-Funktionen implementieren,
 wenn die externen Programme nicht verfügbar sind. Am besten
 wäre natürlich noch immer ein NetPBM-Modul.

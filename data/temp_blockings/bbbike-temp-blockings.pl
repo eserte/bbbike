@@ -10952,4 +10952,12 @@ EOF
 userdel	2::inwork -1224,-107827 -1061,-107847
 EOF
      },
+     { from  => undef, # this entry is by Lutz Epperlein
+       until => 1221167001, # 2008-09-11 23:03 , end guessed!
+       text  => 'Das letzte Ende (zur Schönhauser Allee) der Saarbrücker Str. ist momentan wg. Baustelle gesperrt. Es ist zu vermuten, dass dort das Kopfsteinpflaster entfernt wird.',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 10969,13914 10924,13940
+EOF
+     },
     );

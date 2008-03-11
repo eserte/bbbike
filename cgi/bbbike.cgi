@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.6 2008/03/10 20:16:37 eserte Exp $
+# $Id: bbbike.cgi,v 9.6 2008/03/10 20:16:37 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -663,7 +663,7 @@ $newstreetform_encoding = "";
 @outer_berlin_places = (qw(Potsdam Oranienburg Kleinmachnow Stahnsdorf Teltow Bernau Strausberg Falkensee Mahlow Erkner
 			   Dahlwitz-Hoppegarten Woltersdorf Rüdersdorf Werder Hennigsdorf Schwanebeck Hönow Ahrensfelde
 		          ), "Hohen Neuendorf", "Königs Wusterhausen", "Schöneiche bei Berlin", "Neuenhagen bei Berlin",
-			"Petershagen bei Berlin",
+			"Petershagen bei Berlin", 'Dallgow-Döberitz',
 		       );
 $outer_berlin_qr = "^(?:" . join("|", map { quotemeta } @outer_berlin_places) . ")\$"; $outer_berlin_qr = qr{$outer_berlin_qr};
 
