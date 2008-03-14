@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.120 2007/07/28 22:46:28 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.120 2007/07/28 22:46:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -1865,7 +1865,7 @@ if (!defined $tmpdir) {
 }
 
 use vars qw($auto_reload);
-$auto_reload = 0 if !defined $auto_reload;
+$auto_reload = 1 if !defined $auto_reload;
 
 use vars qw($crosshairs_activated);
 

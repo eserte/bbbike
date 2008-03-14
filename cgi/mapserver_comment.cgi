@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.48 2008/03/09 20:05:17 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.49 2008/03/13 22:00:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003-2008 Slaven Rezic. All rights reserved.
@@ -244,17 +244,19 @@ eval {
 	    $bbd_comment =~ s{[\t\n]}{ }g;
 	    push @add_bbd, "$bbd_comment\tRte @points";
 	}
-	unshift @add_bbd,
-	    ("#: map: polar",
-	     "#: encoding: utf-8",
-	     "#: category_color.Wpt: #ff0000",
-	     "#: category_color.Rte: #0000ff",
-	     "#:",
-	     "#: by: $by_long vvv",
-	    );
-	push @add_bbd,
-	    ("#: by: ^^^");
-	$add_bbd = join("\n", @add_bbd) . "\n";
+	if (@add_bbd) {
+	    unshift @add_bbd,
+		("#: map: polar",
+		 "#: encoding: utf-8",
+		 "#: category_color.Wpt: #ff0000",
+		 "#: category_color.Rte: #0000ff",
+		 "#:",
+		 "#: by: $by_long vvv",
+		);
+	    push @add_bbd,
+		("#: by: ^^^");
+	    $add_bbd = join("\n", @add_bbd) . "\n";
+	}
     }
 
     my $is_multipart = ((defined $add_html_body && $add_html_body ne "") ||

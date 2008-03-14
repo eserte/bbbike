@@ -254,10 +254,8 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet; in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
-#: by: Katja Böttge:
-Hornblendeweg: Asphalt, Q0, Einbahnstraße offen Richtung Westen	? 10659,1370 10638,1442 10594,1468 10510,1441 10425,1400 10402,1362 10415,1323 10440,1283
-#: by: Anne Jordan:
-Am Kringel: gutes Verbundsteinpflaster, Q1	? 1316,24924 1309,24955 1309,24995 1323,25041 1370,25085
+#: by: junga:
+Rieppelstr.: Kopfsteinpflaster, Q2, Einbahnstraße offen Richtung Süden	? 763,15527 768,15486 772,15460 794,15362 780,15358 851,15155
 #: by: Kerstin Werner:
 Hoppegartener Str. (Neuenhagen b. Berlin): Kopfsteinpflaster, Q3	? 29497,12770 29220,12830
 #: by: Dirk (no email):
@@ -314,7 +312,7 @@ Adolf-Hoffmann-Str. (Vogelsdorf): mäßiger fester Sandweg, Q2	? 34007,11572 34149
 Bulgenbachweg: gutes Kopfsteinpflaster, Q1, Sandbanketten	? 3439,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
 #: by: Peter Loth:
 #: confirmed_by: S.Knaack (allerdings: "guter Beton")
-Hornblendeweg: Asphalt, Q0, Einbahnstraße Richtung Westen	? 10659,1369 10641,1442 10594,1468 10504,1438 10408,1387 10406,1337 10441,1281
+Hornblendeweg: Asphalt, Q0, Einbahnstraße Richtung Westen	? 10659,1370 10641,1442 10594,1468 10504,1438 10408,1387 10406,1337 10440,1283
 #: by: anonymous:
 #: note: weitere Frage: genaue Streckenführung (Stadtpläne und Luise widersprechen sich)? (anonymous meint: kurvenreich)
 Kronstadter Weg: Beton, Q0, RW6	? 06809,-152 6867,-126 6963,-82 7061,-38 7161,6 7181,-15 7231,25
@@ -362,7 +360,8 @@ Drenziger Zeile: mäßiger Asphalt, Q1	? 2937,19753 2800,19894
 #: by: Sascha (saschajana@...)
 Narzissenweg (Altglienicke): Asphalt Q1	? 20246,553 20206,464 20214,375
 #: by: Oliver 
-Im Heidewinkel: Kopfsteinpflaster Q3	? 768,15457 877,15474 981,15490 968,15576
+#: add_fragezeichen: Ist die Straße eine Einbahnstraße?
+Im Heidewinkel: Kopfsteinpflaster Q3	? 772,15460 877,15474 981,15490 968,15576
 #: by: Ines Junge:
 Im Eichengrund: NN, Kopfsteinpflaster Q1, enger Weg mit Bäumen mitten auf dem Weg q3	? 976,15195 921,15359 901,15386 885,15435 877,15474
 Im Heidewinkel: Kopfsteinpflaster Q3, Einbahnstr.	? 1065,15229 981,15490
@@ -427,7 +426,7 @@ Rudow - Kleinziethen: Qualität?	? 15118,-970 15100,-1008 14652,-1410 14341,-1751
 Mauerweg Rudow: Qualität (laut "Berliner Umland" gut geeigneter Radweg)?	? 18127,-367 18609,375 18668,1021 18610,1077
 Mauerweg Rudow: Existiert hier ein Verbindung vom Niederschlemaer Weg aus? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 18677,1249 18614,1453 18584,1575 18447,1727
 # hier ist wirklich kein Weg, aber bald etwas parallel zur Autobahn: Mauerweg Rudow: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 18365,1914 18378,2246
-Grüner Weg in Marienfelde: Qualität? laut ADFC-Karte gut befahrbar	? 7781,-182 7633,-20 7491,61 7235,205 7032,533 7040,686 7058,844
+Grüner Weg in Marienfelde: Qualität? laut ADFC-Karte gut befahrbar	? 7781,-182 7633,-20 7491,61 7235,205 7032,533 7023,694 7058,844
 Märchenweg/Rübezahlweg: Qualität?	? 14288,19459 14248,19370 14044,19502 13297,19987
 # ansonsten gleiche Wegbeschaffenheit wie der kreuzende Weg:
 Am Marderberg, kreuzender Weg: genaue Wegführung?	? 14288,19459 14328,19527 14201,19946
@@ -656,7 +655,6 @@ Voltaireweg in diese Fahrtrichtung gesperrt?	?; -14034,-571 -13795,-407 -13636,-
 Rübelandstr.: Qualität?	? 12787,7546 12818,7403
 Fürstenwalder Damm/Müggelseedamm: Vorfahrtsregelung?	? 28195,5141
 Dahlwitzer Landstraße/Schöneicher Str.: Vorfahrtsregelung?	? 25585,6050
-Erbendorfer Weg: Qualität? Für Radfahrer bis zum Lichterfelde Ring passierbar (laut ADFC-Karte ja und gut befahrbar)?	? 7319,665 7133,667 7040,686 6945,657
 Battenheimer Weg: Qualität?	? 11754,1021 11681,1031 11393,1243
 Teerofenweg: Waldweg? Qualität?	? -7067,-36 -6395,-887
 #XXX Koordinaten stimmen nicht mehr! Darßer Str.: beidseitiger Radweg ja, eintragen!	? B24943,-13819 B23513,-13631
@@ -785,7 +783,7 @@ Melzow - Gramzow, Autobahnbrücke: wegen Bauarbeiten gesperrt, Qualität könnte mä
 Melzow - Meichow: Qualität (zumindest am westlichen Ende asphaltiert)?	? 43567,87443 44323,87544 45024,87474 45751,87363 46178,87310 46360,87391 46483,87364 47128,87233 47671,87099 48195,87137 48307,87186
 Niklasstr. zwischen Lindenthaler Allee und Potsdamer Chaussee: Qualität?	? -1269,2892 -1070,2924 -928,2900 -791,2819 -740,2771
 #: XXX unklarer Eintrag von Jörg Nickisch, Rückfrage nicht möglich:
-Dachsteinweg: verkehrsberuhigt?	? 10481,2549 10446,2373 10493,2318
+Dachsteinweg: verkehrsberuhigt?	? 10481,2549 10466,2366 10504,2321
 #: XXX Martin Barghoorn hat KS angegeben, aber gleichzeitig "nur Fußweg" eingetragen
 Lückhoffstr.: Qualität (Kopfsteinpflaster?)?	? -2847,2893 -3022,2696 -3162,2564 -3190,2467 -3211,2405
 Nauener Str. zur Altonaer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? -4759,13992 -4776,13869
@@ -1310,7 +1308,7 @@ Semnonenweg: voraussichtlich 2006-12-01 mit einer neuen Asphaltdecke versehen	? 
 Wassermannstr.: Qualität zwischen Radickestr. und Büchnerweg?	? 20924,3577 20776,3753
 # XXX del (keine Bestätigung durch Michael Bona) Alexanderstr./Alexa: Ampel in Vorbereitung	? 11207,12706
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20061025.0935.49339.html, aber ganz klar ist es nicht, ob nur die Straßenanbindung oder die gesamte Straße gemeint ist, und welcher Radweg?
-Hackenbergstr.: Qualität? Gibt es hier einen Radweg?	? 20429,3792 20280,3996 20253,4034 20248,4040
+Hackenbergstr.: Qualität? Gibt es hier einen Radweg?	? 20428,3786 20280,3996 20253,4034 20248,4040
 #: note: laut Message-ID: <e3o6lb$grb$1@hahn.informatik.hu-berlin.de> noch immer nicht fertig
 Peetzig - Greiffenberg: westlich der Bahnstrecke mittlerweile asphaltiert?	? 44200,74890 45817,75966
 Putenweg: Qualität?	? 16491,517 16372,312 16281,156 16244,86 16192,24 16118,-51 16106,-94 16154,-230 16198,-339 16259,-368 16346,-394
@@ -1401,8 +1399,6 @@ Pasewalk - Krugsdorf: Qualität?	? 51456,122864 52188,123497 53255,124438 53938,1
 Krugsdorf - Koblentz: Qualität?	? 57864,125082 57736,125319 57711,125655 57622,126012 57525,126374
 #: note: ein anonymer Kommentar war nicht klar genug ("gute Qualität")
 Hoffmannstr. (Adlershof): Qualität?	? 20280,3996 20467,4122 20623,4227
-#: note: ein anonymer Kommentar war nicht ganz klar ("kein Autoverkehr?")
-Wilhelm-Gericke-Str.: Qualität? (wahrscheinlich guter Beton)	? 5700,19510 5592,19888 5612,19929 5804,20047 5925,20118
 Grieben - Vielitz: Qualität?	? -14966,56468 -15237,56681 -15453,56959 -15676,57044 -15819,57248 -15984,57315 -16206,57373 -16608,57867 -16755,57921 -16860,58002
 Vielitz - B167: Qualität?	? -16206,57373 -16069,57172 -15773,56724 -15697,55703 -15581,55353 -15335,54980 -15127,54664
 #: note: ein anonymer Kommentar war nicht klar genug ("gute Qualität")
@@ -1540,7 +1536,7 @@ Albert-Brodersen-Allee: Qualität?	? 20863,12041 20836,11768
 #: note: siehe http://www.berlin.de/ba-neukoelln/presse/archiv/20071108.1600.88578.html, aber im Luftbild sieht man nichts
 Grüner Weg von Kielingerstraße bis Buschkrugallee: existiert hier ein Radweg?	? 14100,4166 14164,4271 14223,4369 14289,4378
 #: note: siehe http://www.berlin.de/ba-neukoelln/presse/archiv/20071108.1600.88578.html, Luftbild ist nicht immer eindeutig
-Fritz-Reuter-Allee: existiert hier ein Radweg?	? 13600,5240 13675,4855 13680,4715 13659,4489 13626,4304 13522,4158 13453,4043 13476,3857 13526,3519
+Fritz-Reuter-Allee: existiert hier ein Radweg?	? 13600,5240 13675,4855 13680,4715 13659,4489 13626,4304 13531,4152 13453,4043 13476,3857 13526,3519
 #: note: siehe http://www.berlin.de/ba-neukoelln/presse/archiv/20071108.1600.88578.html, Luftbild ist nicht immer eindeutig
 Kornradenstr.: existiert hier ein Radweg?	? 16182,2200 16302,2168 16518,2122 16570,2113 16809,2091
 #: XXX: unklarer Eintrag von Carsten (honda ntv): fester Sandweg Q2 (nicht klar im Luftbild), Schrittgeschwindigkeit ohne Begründung
@@ -1579,8 +1575,6 @@ Hielscherstr.: ist der Abschnitt südlich der Hertzstr. asphaltiert?	? 7522,19804
 #: XXX Angaben von unklar: Marc (michgibsnich): Kopfsteinpflaster, Q2, aber Busspur? Bordsteinkanten?
 Sperberstr. (Konradshöhe): Qualität?	? -1681,19955 -1869,19974 -2073,19990 -2216,20003
 Menckenstr.: Qualität zwischen Tiburtiusbrücke und Lothar-Bucher-Str.?	? 5567,5864 5570,5913 5593,5965 5664,6082
-Borkzeile - Spekteweg: Qualität des Parkwegs?	? -4154,14677 -4167,14729 -4234,14792 -4257,14888 -4284,14937
-Borkzeile - Spekteweg/Zeppelinstr.: Qualität des Parkwegs?	?  -4154,14677 -4203,14688 -4255,14709 -4296,14707 -4333,14726 -4382,14733 -4439,14727 -4473,14734 -4496,14767 -4546,14800 -4586,14805 -4598,14817
 #: XXX unklarer Eintrag von anonymous: Asphalt, Q0, aber warum q4?
 Hochfeilerweg: Qualität?	? 10170,2158 10108,2174 10043,2351 9973,2541 9993,2551 10015,2651
 #: XXX anonymous meint mäßiger Asphalt, aber auf dem Luftbild sieht es teilweise unbefestigt aus:
@@ -1589,3 +1583,6 @@ Schrobsdorffstr.: Ist die Straße durchgängig asphaltiert oder gibt es unbefestig
 Fischer-Dieskau-Weg: Qualität? Für Radfahrer befahrbar?	? -151,2975 -81,2699
 #: XXX anonymous meint mäßiger Asphalt, stimmt das?
 Bismarckstr. (Spandau): Qualität?	? -3153,14868 -3360,14974 -3572,15082
+#: XXX anonymous meint Asphalt ohne weitere Angaben und erwähnt keine Einbahnstraße
+Zellerfelder Str.: Qualität? Einbahnstraße? Auch für Radfahrer?	? 11468,19106 11526,18929
+Oranienburger Str. - Wilhelm-Gericke-Str.: kann man als Radfahrer direkt von der Oranienburger Str. in die Wilhelm-Gericke-Str. gelangen	? 5545,19909 5598,19912

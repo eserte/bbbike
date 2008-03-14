@@ -1525,7 +1525,7 @@ EOF
        text  => 'Ringstr. (Steglitz) Richtung Finkensteinallee zwischen Drakestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 12.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 3507,3635 3375,3544 3228,3455 3184,3427 3050,3333 3011,3303 2781,3122 2701,3064 2639,2989 2638,2843
+userdel	q4; 3507,3635 3375,3544 3228,3455 3184,3427 3050,3333 3011,3303 2781,3122 2701,3064 2661,3021 2637,2973 2638,2843
 EOF
      },
      { from  => 1110917391, # 2005-03-15 21:09
@@ -5203,7 +5203,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003129',
        data  => <<EOF,
-userdel	1::inwork 2639,2989 2638,2843
+userdel	1::inwork 2661,3021 2637,2973 2638,2843
 EOF
      },
      { from  => 1160591740, # 2006-10-11 20:35
@@ -10953,11 +10953,84 @@ userdel	2::inwork -1224,-107827 -1061,-107847
 EOF
      },
      { from  => undef, # this entry is by Lutz Epperlein
-       until => 1221167001, # 2008-09-11 23:03 , end guessed!
+       until => Time::Local::timelocal(reverse(2008-1900,6-1,1,0,0,0)), # end guessed!
        text  => 'Das letzte Ende (zur Schönhauser Allee) der Saarbrücker Str. ist momentan wg. Baustelle gesperrt. Es ist zu vermuten, dass dort das Kopfsteinpflaster entfernt wird.',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 10969,13914 10924,13940
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Sophienstr. (Mitte) in beiden Richtungen zwischen Große Hamburger Str. und Rosenthaler Str. Bauarbeiten, Straße vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_008076',
+       data  => <<EOF,
+userdel	2::inwork 9982,13411 10312,13231
+EOF
+     },
+     { from  => 1205622000, # 2008-03-16 00:00
+       until => 1212184800, # 2008-05-31 00:00
+       text  => 'B 087 Leipziger Str. OD FFO, zw. Biegener- u. Krz.Kopernikus-/Müllroser-/EHS Str. Straßenausbau halbseitig gesperrt; Einbahnstraße 17.03.2008-30.05.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 87829,-6485 87655,-6717
+EOF
+     },
+     { from  => 1206486000, # 2008-03-26 00:00
+       until => 1206831600, # 2008-03-30 00:00
+       text  => 'K 6160 Friedensstr. Bahnübergang in der OD Eichwalde Gleisbauarbeiten Vollsperrung 27.03.2008-29.03.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 25187,-8934 25140,-9125
+EOF
+     },
+     { from  => 1207087200, # 2008-04-02 00:00
+       until => 1207346400, # 2008-04-05 00:00
+       text  => 'L 054 Calau - Vetschau Bahnübergang Calauer Str. in der OD Saßleben Gleisumbauarbeiten Vollsperrung 03.04.2008-04.04.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 50732,-71705 51374,-71361 51440,-71337
+EOF
+     },
+     { from  => 1207519200, # 2008-04-07 00:00
+       until => 1207864800, # 2008-04-11 00:00
+       text  => 'L 054 Calau - Vetschau Bahnübergang Calauer Str. in der OD Saßleben Gleisumbauarbeiten Vollsperrung 08.04.2008-10.04.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 50732,-71705 51374,-71361 51440,-71337
+EOF
+     },
+     { from  => 1207778400, # 2008-04-10 00:00
+       until => 1208210400, # 2008-04-15 00:00
+       text  => 'L 055 Calau - Lübbenau Bahnübergang in der OD Bischdorf Instandsetzung BÜ Vollsperrung 11.04.2008-14.04.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 49836,-67419 50143,-67035 50318,-65825
+EOF
+     },
+     { from  => 1206313200, # 2008-03-24 00:00
+       until => 1214949600, # 2008-07-02 00:00
+       text  => 'L 075 Tollkrug - Selchow - Waßmannsdorf OD Selchow Straßenbauarbeiten Vollsperrung 25.03.2008-01.07.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 15355,-5280 15568,-5323 15771,-5575 15987,-6248 16190,-6406
+EOF
+     },
+     { from  => 1205017200, # 2008-03-09 00:00
+       until => 1220220000, # 2008-09-01 00:00
+       text  => 'L 232 Möllensee-Lichtenow Brücke über den Verbindungsgraben in der OD Kagel Brückenbauarbeiten Vollsperrung 10.03.2008-31.08.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 44914,6791 44912,6613
+EOF
+     },
+     { from  => 1205017200, # 2008-03-09 00:00
+       until => 1210456800, # 2008-05-11 00:00
+       text  => 'L 235 Gielsdorf-Werneuchen OD Werneuchen Straßenausbau Vollsperrung 10.03.2008-10.05.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 32766,25156 33511,24201
 EOF
      },
     );
