@@ -929,16 +929,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_008076',
-         'until' => undef,
-         'text' => 'Sophienstr. (Mitte) in beiden Richtungen zwischen Große Hamburger Str. und Rosenthaler Str. Bauarbeiten, Straße vollständig gesperrt',
-         'from' => undef,
-         'id' => 1301,
-         'data' => 'userdel	2::inwork 9982,13411 10312,13231
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1212184800,
          'text' => 'B 087 Leipziger Str. OD FFO, zw. Biegener- u. Krz.Kopernikus-/Müllroser-/EHS Str. Straßenausbau halbseitig gesperrt; Einbahnstraße 17.03.2008-30.05.2008 ',

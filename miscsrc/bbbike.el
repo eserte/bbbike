@@ -1,5 +1,17 @@
 (setq bbbike-el-file-name load-file-name)
 
+(defvar bbbike-font-lock-keywords
+  '(("^\\(#[^:].*\\)" (1 font-lock-comment-face))                 ;; comments
+    ("\\(#:.*\\)"  (1 font-lock-warning-face))	            ;; directives
+    ("^\\([^\t\n]+\\)" (1 font-lock-constant-face))           ;; name
+    ("^[^#][^\t\n:]+: \\([^\t\n]+\\)" (1 font-lock-string-face t)) ;; colon separated part of name
+    ("\t\\([^ \n]+ \\)" (1 font-lock-keyword-face))            ;; category
+    ("\\([-+]?[0-9.]+,[-+]?[0-9.]+\\)" (1 font-lock-type-face)) ;; coords
+    ))
+
+(defconst bbbike-font-lock-defaults
+  '(bbbike-font-lock-keywords t nil nil nil (font-lock-multiline . nil)))
+  
 ;;; reverses the current region
 (defun bbbike-reverse-street ()
   (interactive)
@@ -192,24 +204,15 @@
 	major-mode 'bbbike-mode)
   (set-syntax-table bbbike-syntax-table)
   (run-hooks 'bbbike-mode-hook)
-  (make-local-variable 'font-lock-keywords-only)
-  (setq font-lock-keywords-only t)
-  (make-local-variable 'font-lock-keywords)
-  (setq font-lock-keywords
-	'(t
-	  ("^\\(#[^:].*\\)" (1 font-lock-comment-face))                 ;; comments
-	  ("\\(#:.*\\)"  (1 font-lock-warning-face))	            ;; directives
-	  ("^\\([^\t\n]+\\)" (1 font-lock-constant-face))           ;; name
-	  ("^[^#][^\t\n:]+: \\([^\t\n]+\\)" (1 font-lock-string-face t)) ;; colon separated part of name
-	  ("\t\\([^ \n]+ \\)" (1 font-lock-keyword-face))            ;; category
-	  ("\\([-+]?[0-9.]+,[-+]?[0-9.]+\\)" (1 font-lock-type-face)) ;; coords
-	  ))
-  (make-local-variable 'comment-use-syntax)
-  (setq comment-use-syntax nil)
-  (make-local-variable 'comment-start)
-  (setq comment-start "#")
-  (make-local-variable 'comment-padding)
-  (setq comment-padding " ")
+
+  (if (string-match "^2[01]\\." emacs-version)
+      (progn
+	(set (make-local-variable 'font-lock-keyword-only) t)
+	(set (make-local-variable 'font-lock-keywords) bbbike-font-lock-keywords))
+    (set (make-local-variable 'font-lock-defaults) bbbike-font-lock-defaults)
+    (set (make-local-variable 'comment-use-syntax) nil)
+    (set (make-local-variable 'comment-start) "#")
+    (set (make-local-variable 'comment-padding) " "))
 
   (setq bbbike-imenu-generic-expression '((nil "^#: \\(append_comment\\|section\\):? *\\(.*\\) +vvv+" 2)))
   (setq imenu-generic-expression bbbike-imenu-generic-expression)
@@ -218,6 +221,9 @@
   ;; a bbd file:
   (make-local-variable 'revert-without-query)
   (setq revert-without-query (list (buffer-file-name)))
+
+  ;; In emacs 22, tab is something else
+  (local-set-key "\t" 'self-insert-command)
   )
 
 (fset 'bbbike-cons25-format-answer

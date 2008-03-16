@@ -2001,6 +2001,7 @@ Heidekrautweg: Asphalt	Q0 21982,10874 22053,10911
 #: note: ^^^
 ######################################################################
 #: by: anonymous vvv
+Birnhornweg: guter Beton	Q0 9281,1790 9342,1818 9470,1863 9585,1899 9731,1956 9876,2007 10012,2055
 Trachenbergring: guter Asphalt	Q0 8030,2423 8102,2647 8136,2787 8208,2771 8235,2768 8257,2775 8308,2629 8348,2524 8164,2381 8129,2390
 Benediktinerstr.: Kopfsteinpflaster	Q2 968,24815 1041,24812 1112,24821 1211,24871 1316,24924 1414,24945 1495,24950 1633,24939 1750,24942 1943,24984 2056,25035
 Im Lesachtal: Asphalt	Q0 10349,2188 10466,2071 10549,2257
@@ -2236,7 +2237,7 @@ Kurpromenade: mäßiger Asphalt	Q1 -8917,5986 -8864,6289 -8862,6375 -8860,6439 -88
 #: note: ein weiteres Mal von anonymous bestätigt:
 Schriftsetzerweg: Asphalt	Q0 15868,1790 16200,1499
 Wodanstr.: Kopfsteinpflaster	Q2 8821,19331 8739,19475 8704,19534 8621,19683 8573,19766 8522,19852 8494,19899 8415,19910
-Tödiweg: Asphalt	Q0 9418,2038 9450,1846 9486,1662
+Tödiweg: Asphalt	Q0 9431,2059 9470,1863 9503,1693 9493,1661
 Ledebourstr.: mäßiger Asphalt	Q1 24448,10098 24827,9968 25262,9740 25312,9704 25413,9613 25476,9561
 Seelbuschring: Betonplatten, OK	Q1 8242,4648 8432,4712 8473,4614
 Tschudistr.: Asphalt	Q0 23584,13661 23705,13636 23817,13613 23936,13589 24119,13556
@@ -4194,7 +4195,7 @@ Streustr.: asphaltiert	Q0- 12285,16392 12512,16291 12673,16209 12885,16115 13139
 #: by: Manfred Schasler:
 Waldhüterpfad: Kopfsteinpflaster, uneben	Q2 510,4202 371,4453 301,4643
 #: by: Claudia Maruhn:
-Goldenes Horn: guter Asphalt	Q0 10561,3748 10587,4046 10613,4308
+Goldenes Horn: guter Asphalt	Q0 10561,3748 10587,4046 10601,4185 10613,4308
 #: by: Rüdiger Steinke:
 Aubertstr.: guter Asphalt	Q0 10994,22526 11188,22742 11240,22803 11273,22838
 #: by: ladzik:
@@ -5521,7 +5522,7 @@ Aprikosensteig: guter Beton	Q0 15445,4878 15474,4845 15558,4758 15558,4757 15608
 Aprikosensteig: guter Beton	Q0 15474,4845 15364,4748
 #: by: ^^^
 #: by: Randi:
-Brandaustr.: guter Asphalt	Q0 9391,1235 9370,1262 9367,1296 9411,1406 9513,1651
+Brandaustr.: guter Asphalt	Q0 9391,1235 9370,1262 9367,1296 9411,1406 9519,1650
 #: by: Daniela (glasband):
 Glaschkestr.: schlechtes Kopfsteinpflaster	Q3 16159,12301 16144,12388 16147,12424
 #: by: Ulrich Siegmann:
@@ -6159,6 +6160,8 @@ Schmohlstr.: schlechtes Kopfsteinpflaster	Q3 13064,17124 13196,17223 13239,17269
 Wegscheider Str.: guter Asphalt	Q0 -3046,16548 -3214,16561 -3319,16572 -3343,16573 -3444,16576 -3563,16581
 #: by: Michael Zieske:
 Zingster Str. (Wedding): guter Asphalt	Q0 9307,16190 9277,16154 9265,16109 9276,16032
+#: by: Hermann Kühne:
+Brussaer Weg: guter Asphalt	Q0 10236,3777 10248,3897 10260,4107 10269,4136
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
@@ -6718,10 +6721,10 @@ Heubnerweg: Asphalt	Q0 2546,12821 2545,12974
 Pulsstr.: Asphalt	Q0 2545,12974 2453,12994 2379,12992 2317,12968
 Ernst-Bumm-Weg: Asphalt	Q0 2397,12513 2467,12525
 Am Bahnhof Westend: Kopfsteinpflaster	Q3 2427,12334 2321,12309 2339,12209 2454,12208
-Klausener Platz: Kopfsteinpflaster	Q1 2788,12447 2804,12326 2662,12306
+Klausener Platz: Kopfsteinpflaster	Q1 2786,12473 2804,12326 2662,12306
 Neufertstr.: Asphalt mit Verbundsteinflächen	Q0 2804,12326 2889,12278 3061,12300
 Gardes-du-Corps-Str.: Asphalt mit Verbundsteinflächen	Q0 2439,12275 2662,12306
-Nithackstr.: Asphalt	Q0 3191,12502 3204,12416 3215,12322 3232,12210
+Nithackstr.: Asphalt	Q0 3189,12519 3204,12416 3215,12322 3232,12210
 Wulfsheinstr.: Asphalt	Q0 3061,12300 3215,12322
 Stallstr.: Asphalt	Q0 3050,12394 3204,12416
 Saldernstr.: Asphalt	Q0 2390,11468 2405,11587 2422,11700
@@ -6790,7 +6793,7 @@ Meerscheidtstr.: Asphalt	Q0 1979,11277 1962,11417 1948,11537
 #: corrected_by: srt (Q2 -> Q2+)
 Fredericiastr.: etwas besseres Kopfsteinpflaster	Q2+ 1799,11517 1948,11537 2097,11556 2190,11569 2314,11581
 Haeselerstr.: Kopfsteinpflaster	Q2 1779,11835 2056,11874
-Lerschpfad: Asphalt	Q0 2198,12178 2181,12276 2160,12370
+Lerschpfad: Asphalt	Q0 2198,12178 2181,12276 2157,12389
 Crusiusstr.: Asphalt	Q1 2198,12178 2112,12187 2013,12209
 Kollatzstr.: Asphalt	Q0 2112,12187 2127,12249 2181,12276
 Stülpnagelstr.: Asphalt	Q0 2191,11451 2190,11569 2185,11701

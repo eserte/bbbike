@@ -2089,10 +2089,10 @@ EOF
        text  => '300 Jahre Charlottenburg, 17.06.2005 bis 19.06.2005',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 3076,12192 3061,12300 3050,12394 3038,12482
+userdel	2 3076,12192 3061,12300 3050,12394 3034,12502
 userdel	2 3076,12192 3091,12071
-userdel	2 3038,12482 2788,12447 2647,12427
-userdel	2 3038,12482 3191,12502 3280,12512
+userdel	2 3034,12502 2786,12473 2745,12467 2717,12463 2643,12453
+userdel	2 3034,12502 3189,12519 3280,12512
 userdel	2 3103,11968 3091,12071
 userdel auto	3 3365,12231 3232,12210 3076,12192 2902,12165 2898,12197
 userdel auto	3 2898,12197 2902,12165 3076,12192 3232,12210 3365,12231
@@ -10961,7 +10961,7 @@ userdel	q4::inwork 10969,13914 10924,13940
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1205673255, # XXX
        text  => 'Sophienstr. (Mitte) in beiden Richtungen zwischen Große Hamburger Str. und Rosenthaler Str. Bauarbeiten, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_008076',

@@ -637,8 +637,8 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 # 
-#: note: Luftbild
-Streitstr.: Mittelstreifen	3nocross -3043,16601 -3046,16548 -3050,16429
+#: by: Jörg Böhmer
+Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3nocross -3043,16601 -3046,16548 -3050,16429
 #: note: Luftbild
 Marienfelder Chaussee: Mittelstreifen	3nocross 10759,1112 10827,1140 11002,1211
 Oranienburger Str.: Mittelstreifen	3nocross 5517,20120 5545,19909 5533,19811
@@ -1199,13 +1199,13 @@ Heerstr.	3nocross -68,11156 21,11167 232,11190 439,11228 456,11233
 tragen (20 Stufen)	0:30 23,11137
 Oldenburgallee	1 454,11670 461,11455
 Brixplatz	1 419,12397 335,12343 215,12307
-Lerschpfad	1 2181,12276 2160,12370
+Lerschpfad	1 2181,12276 2157,12389
 Gottfried-Keller-Str.	1 1697,11911 1792,11889
 tragen (5 Stufen)	0:20 3795,13541
 Schranke	BNP:5 3981,13292
 Tor (meist offen, sonst Fußgängerweg nehmen)	BNP:5 3822,14195
 Wiebestr.: (Privatweg)	2 4547,13232 4490,12990
-Spandauer Damm: queren nur mit tragen möglich	3nocross 3038,12482 3191,12502 3280,12512
+Spandauer Damm: queren nur mit tragen möglich	3nocross 3034,12502 3189,12519 3280,12512
 Bonhoefferufer	1 3216,12994 3154,12936 3194,12830 3324,12784
 tragen (16 Stufen)	0:40 4135,12685
 tragen (16 Stufen)	0:40 4140,12594
