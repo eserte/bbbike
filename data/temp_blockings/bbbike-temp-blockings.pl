@@ -4656,7 +4656,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002839',
        data  => <<EOF,
-userdel	2::temp 8119,12414 8017,12359 7875,12363 7437,12368 7215,12295 7039,12314
+userdel	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7514,12387 7437,12368 7215,12295 7039,12314
 EOF
      },
      { from  => 1149976800, # 2006-06-11 00:00
@@ -6259,7 +6259,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003834',
        data  => <<EOF,
-userdel	2::inwork 5916,499 5584,452
+userdel	2::inwork 5907,519 5836,509 5584,475
 EOF
      },
      { from  => 1157234400, # 2006-09-03 00:00
@@ -9950,7 +9950,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006771',
        data  => <<EOF,
-userdel	2::temp 7875,12363 8017,12359 8119,12414 8374,12416 8400,12417 8540,12420
+userdel	2::temp 7875,12363 8017,12359 8070,12409 8119,12414 8374,12416 8400,12417 8540,12420
 EOF
      },
      { from  => 1191269068, # 2007-10-01 22:04
@@ -10249,7 +10249,7 @@ EOF
        text  => 'L 232 Möllensee-Lichtenow OD Kagel Straßenbauarbeiten Vollsperrung 22.10.2007-31.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 44634,7400 44774,6962 44914,6791 44912,6613 44835,6310
+userdel	q4::inwork 44634,7400 44774,6962 44914,6791 44933,6625 44835,6310
 EOF
      },
      { from  => 1192917600, # 2007-10-21 00:00
@@ -11022,7 +11022,7 @@ EOF
        text  => 'L 232 Möllensee-Lichtenow Brücke über den Verbindungsgraben in der OD Kagel Brückenbauarbeiten Vollsperrung 10.03.2008-31.08.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 44914,6791 44912,6613
+userdel	2::inwork 44914,6791 44933,6625
 EOF
      },
      { from  => 1205017200, # 2008-03-09 00:00

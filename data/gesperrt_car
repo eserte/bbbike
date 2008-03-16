@@ -493,3 +493,11 @@ Jenny-Lind-Str. -> Neumannstr.: Mittelstreifen	3 11645,17271 11531,17250 11549,1
 Lindenallee -> Berliner Allee: Straßenbahn	3 14296,16065 14248,16202 14067,16127
 Berliner Allee -> Lindenallee: Straßenbahn	3 14371,16252 14248,16202 14296,16065
 Talsandweg: Einbahnstraße	1 3206,21179 3138,21372
+Lichtenrader Damm -> Reichnerweg: Mittelstreifen	3 10471,802 10524,655 10726,739
+Reichnerweg -> Lichtenrader Damm: Mittelstreifen	3 10726,739 10524,655 10573,519
+Lichtenrader Damm -> Baldersheimer Weg: Mittelstreifen	3 10411,966 10471,802 10674,882
+Baldersheimer Weg -> Lichtenrader Damm: Mittelstreifen	3 10674,882 10471,802 10524,655
+Lichtenrader Damm -> Lichtenrader Damm: Mittelstreifen	3 10599,445 10573,519 10524,655
+Lichtenrader Damm -> Dielingsgrund: Mittelstreifen	3 10599,445 10573,519 10782,587
+Lichtenrader Damm -> Dielingsgrund: Mittelstreifen	3 10524,655 10573,519 10782,587
+Dielingsgrund -> Lichtenrader Damm: Mittelstreifen	3 10782,587 10573,519 10599,445

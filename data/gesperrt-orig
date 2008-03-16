@@ -142,7 +142,7 @@ Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
 Schuckertdamm	1 746,14817 1109,14911 1343,14972 1488,14952
 Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
 Oberhofer Platz	1 5495,1964 5469,1949 5437,1941 5431,1956 5382,2080 5411,2098 5443,2109 5489,1981 5495,1964
-Scheelestr.	1 5740,1227 5697,1098 5556,984 5424,882 5337,829
+Scheelestr.	1 5740,1227 5697,1098 5556,984 5424,882 5342,845
 Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5414,5939 5330,6001 4903,6221
 An der Schillingbrücke	1 12056,11390 12055,11331
 An der Schillingbrücke	1 12026,11348 12056,11390
@@ -484,6 +484,10 @@ Eisvogelweg	1 528,4747 542,4699 595,4594 635,4524 661,4492 691,4474
 Kreutzerweg	1 4834,4102 4848,4069 4836,4041 4629,3916
 #: by: Katja Böttge:
 Hornblendeweg	1 10440,1283 10415,1323 10402,1362 10425,1400 10510,1441 10594,1468 10638,1442 10659,1370
+#: by: Lutz Moser:
+Sibeliusweg	1 -6811,4893 -6787,5076 -6762,5133 -6747,5169
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
+Zingster Str. (Wedding)	1 9276,16032 9265,16109 9277,16154 9307,16190
 ######################################################################
 #
 # Potsdam
@@ -633,6 +637,10 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 # 
+#: note: Luftbild
+Streitstr.: Mittelstreifen	3nocross -3043,16601 -3046,16548 -3050,16429
+#: note: Luftbild
+Marienfelder Chaussee: Mittelstreifen	3nocross 10759,1112 10827,1140 11002,1211
 Oranienburger Str.: Mittelstreifen	3nocross 5517,20120 5545,19909 5533,19811
 Bahntrasse	3nocross 15868,1790 15835,1736 15639,1422
 Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594

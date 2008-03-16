@@ -283,8 +283,6 @@ Kartoffelsteig: mäßiger Asphalt, Q1	? 8905,24573 8826,24787 8751,24988 8736,2503
 Friedrich-Steinwachs-Weg (Teltow): Verbundsteinpflaster, Q1, RW6	? 2148,-962 2153,-940 2160,-805
 #: by: D (anonymous)
 Argoallee: guter Asphalt, Q0	? 26715,-6276 26962,-6074 27036,-6064
-#: by: anonymous
-Lönnrotweg: mäßiger Asphalt, Q1-, Fußgängerzone??? (wahrscheinlich verkehrsberuhigter Bereich?)	? -6916,5509 -6943,5484 -6981,5452 -7085,5359
 #: by: Kurt Kratz:
 Waldschluchtpfad: mäßiger Beton, Q2+, enge Straße, q0	? -4741,7003 -4995,7042 -5050,7058 -5127,7090 -5163,7090
 #: by: Tom Noack:
@@ -1279,8 +1277,8 @@ Wongrowitzer Steig: Qualität (laut ADFC-Karte gut geeignet)?	? 22785,6984 22663,
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20050810.1640.28623.html:
 Fürstenwalder Damm: existieren zwischen Stillerzeile und Müggelseedamm Radwege?	? 25012,5754 24700,5633 23950,5342
 #: Verlauf aus goyello - Daniel Weber nach der Qualität fragen [AM]
-(Lilienthalpark): beleuchtet, Fußgängerfrequenz?	? 5503,575 5571,614 5671,637 5615,735 5576,800 5584,808 5571,864 5540,919
-(Lilienthalpark): beleuchtet, Fußgängerfrequenz?	? 5578,936 5540,919 5345,816
+(Lilienthalpark): beleuchtet, Fußgängerfrequenz?	? 5514,580 5571,614 5671,637 5615,735 5576,800 5584,808 5571,864 5540,919
+(Lilienthalpark): beleuchtet, Fußgängerfrequenz?	? 5578,936 5540,919 5358,822
 (Lilienthalpark): beleuchtet, Fußgängerfrequenz?	? 5533,663 5485,751 5499,771 5539,773 5590,719 5593,679 5575,660 5533,663
 (Lilienthalpark): beleuchtet, Fußgängerfrequenz?	? 5571,614 5533,663
 (Lilienthalpark): beleuchtet, Fußgängerfrequenz?	? 5539,773 5576,800
@@ -1329,8 +1327,6 @@ Sparnecker Weg: Qualität? Teile der Straße noch gesperrt?	? -8125,6184 -7984,625
 Am ehem. Flugplatz Gatow: Qualität? Für Autos gesperrt?	? -7984,6256 -7888,6218 -7824,6208 -7652,6130 -7559,6218 -7374,6416 -7345,6430 -7288,6499 -7285,6535 -7306,6572 -7219,6650
 Am Golfplatz: Qualität? Für Autos gesperrt?	? -7559,6218 -6977,5851
 Am Golfplatz: Qualität? Für Autos gesperrt?	? -6846,6049 -6444,5798 -6420,5771
-#: by: http://www.berlin.de/ba-spandau/presse/archiv/20061201.0900.51333.html
-Eichelmatenweg: Qualität (zumindest zwischen Porthanweg und Am Ritterholz wahrscheinlich gut)?	? -7184,5118 -7166,5138 -7182,5440 -7182,5498 -7161,5560 -7045,5745 -6977,5851 -6846,6049
 Wuhletalstr. - Eichenallee: Qualität?	? 20728,17670 20801,17821 20804,17848
 Grüne Trift - Lindenberger Str.: Qualität? Straßennamen?	? 19579,18933 19381,19003 19157,19122 19125,19130 19061,19145 18997,19157 18947,19168 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18074,19227
 Str. 10, entlang des Hechtgrabens: Qualität?	? 18121,19390 18025,19433 17838,19501 17679,19532 17015,19287 16768,19191 16736,19193
@@ -1536,8 +1532,6 @@ Albert-Brodersen-Allee: Qualität?	? 20863,12041 20836,11768
 #: note: siehe http://www.berlin.de/ba-neukoelln/presse/archiv/20071108.1600.88578.html, aber im Luftbild sieht man nichts
 Grüner Weg von Kielingerstraße bis Buschkrugallee: existiert hier ein Radweg?	? 14100,4166 14164,4271 14223,4369 14289,4378
 #: note: siehe http://www.berlin.de/ba-neukoelln/presse/archiv/20071108.1600.88578.html, Luftbild ist nicht immer eindeutig
-Fritz-Reuter-Allee: existiert hier ein Radweg?	? 13600,5240 13675,4855 13680,4715 13659,4489 13626,4304 13531,4152 13453,4043 13476,3857 13526,3519
-#: note: siehe http://www.berlin.de/ba-neukoelln/presse/archiv/20071108.1600.88578.html, Luftbild ist nicht immer eindeutig
 Kornradenstr.: existiert hier ein Radweg?	? 16182,2200 16302,2168 16518,2122 16570,2113 16809,2091
 #: XXX: unklarer Eintrag von Carsten (honda ntv): fester Sandweg Q2 (nicht klar im Luftbild), Schrittgeschwindigkeit ohne Begründung
 Springerzeile: Qualität? Spielstraße?	? -5877,13375 -6035,13333 -6220,13289 -6595,13198
@@ -1586,3 +1580,44 @@ Bismarckstr. (Spandau): Qualität?	? -3153,14868 -3360,14974 -3572,15082
 #: XXX anonymous meint Asphalt ohne weitere Angaben und erwähnt keine Einbahnstraße
 Zellerfelder Str.: Qualität? Einbahnstraße? Auch für Radfahrer?	? 11468,19106 11526,18929
 Oranienburger Str. - Wilhelm-Gericke-Str.: kann man als Radfahrer direkt von der Oranienburger Str. in die Wilhelm-Gericke-Str. gelangen	? 5545,19909 5598,19912
+Rackebüller Weg: Qualität?	? 10658,-406 10586,-220 10512,83 10463,251 10414,373 10332,607 10281,749
+Lenaustr.: Qualität?	? 10380,757 10281,749 10237,749 10179,744 10021,741
+Glaserweg: Qualität?	? 10187,872 10237,749
+Feldstedter Weg: Qualität?	? 10524,655 10423,636 10332,607 10242,572 10099,524
+Humboldtstr.: Qualität?	? 10469,-52 10353,-94 10214,-142
+Rudolf-Pechel-Str.: Qualität?	? 9991,-413 9913,-432 9920,-513 10018,-494
+Fontanestr.: Qualität?	? 10508,-519 10450,-528 10374,-552 10280,-578 10182,-601 10064,-628
+Simpsonweg: Qualität?	? 10082,-671 9937,-693 9913,-705 9899,-732 9907,-812 9884,-860
+Werfelstr.: Qualität?	? 10126,-834 9907,-812
+Ekensunder Weg: Qualität?	? 10481,-995 10365,-996 10260,-993 10143,-987 10082,-986
+Lutherstr.: Qualität?	? 10692,-804 10726,-1166
+Lutherstr. - Barnetstr.: Qualität? Für Radfahrer befahrbar?	? 10726,-1166 10728,-1198 10720,-1340
+Dossestr.: Qualität?	? 10082,-986 10030,-1066 9925,-1106
+Rhinstr. (Lichtenrade): Qualität?	? 10030,-1066 10134,-1138 10147,-1273 10155,-1320 10181,-1348 10248,-1346
+Bodmerstr.: Qualität?	? 10258,-1474 10099,-1482
+Hendonstr.: Qualität?	? 10531,-1633 10449,-1646 10421,-1681 10409,-1954
+Gerstnerweg: Qualität?	? 10513,-1954 10409,-1954 10297,-1955
+Ostheimer Str.: Qualität?	? 10662,1072 10738,906
+Wingerter Str.: Qualität?	? 10827,1140 10845,1026 10851,929
+Freiertweg: Qualität? Kann der Lichtenrader Damm in Höhe Freiertweg überquert werden?	? 10619,395 10827,467 10955,501 11086,516
+Soldiner Str. (Lichtenrade): Qualität?	? 11086,516 11222,483 11281,454 11343,405 11407,324 11442,232 11453,228
+Kraatzweg: Qualität?	? 10660,293 10866,364
+Schwebelstr.: Qualität? Kann der Lichtenrader Damm in Höhe Schwebelstr überquert werden?	? 10700,193 10903,263
+Schwebelstr.: Qualität?	? 10895,284 10987,306 11079,317
+Landsberger Str.: Qualität?	? 11079,317 11215,313 11232,309 11258,289 11337,190 11369,117 11375,82
+Gessepfad: Qualität?	? 10955,501 10987,306
+Küstriner Str.: Qualität?	? 11232,309 11343,405 11488,531
+Oranienburger Str. (Lichtenrade): Qualität?	? 11343,405 11381,574 11372,706
+Rademeierweg: Qualität?	? 11372,706 11237,773 11074,818
+Gaudacher Str.: Qualität?	? 11372,706 11419,789
+Ringelnatzstr.: Qualität?	? 10971,-499 10868,-539 10955,-769
+Happestr.: Qualität?	? 10955,-769 10953,-812 10968,-987 10976,-1070
+Schumpeterstr.: Qualität?	? 10979,-1093 10993,-1256 11003,-1303
+Happestr. - Schumpeterstr.: Gibt es für Radfahrer eine Verbindung?	? 10976,-1070 10979,-1093
+Weißenthurmstr.: Qualität?	? 10968,-987 11120,-976
+Weilburgstr.: Qualität?	? 11120,-976 11305,-952 11503,-926 11598,-915 11695,-906 11790,-894 11878,-885
+Kronbergstr.: Qualität?	? 11099,-857 11291,-834 11490,-809 11680,-792 11844,-773
+#: XXX der anonyme Eintrag meinte bestimmt die in Kreuzberg
+Großbeerenstr. (Lichterfelde): Qualität?	? 4939,1148 5050,1133 5167,1116
+#: XXX anonym: "gute" Qualität, aber keine weiteren Angaben
+Am Kornfeld: Qualität?	? 23648,11265 23665,11334 23680,11374 23717,11477 23896,11862 23942,11975

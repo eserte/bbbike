@@ -625,7 +625,7 @@ push @temp_blocking,
          'text' => 'L 232 Möllensee-Lichtenow OD Kagel Straßenbauarbeiten Vollsperrung 22.10.2007-31.12.2008 ',
          'from' => 1192917600,
          'id' => 1215,
-         'data' => 'userdel	q4::inwork 44634,7400 44774,6962 44914,6791 44912,6613 44835,6310
+         'data' => 'userdel	q4::inwork 44634,7400 44774,6962 44914,6791 44933,6625 44835,6310
 ',
          'type' => 'handicap'
        },
@@ -919,15 +919,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1205535600,
-         'text' => 'L 066 Mühlberg-B182 (Torgau-Riesa) zw. Mühlberg und Fähre Brückenschluss Vollsperrung 12.03.2008-14.03.2008 ',
-         'from' => 1205190000,
-         'id' => 1299,
-         'data' => 'userdel	2::inwork -1224,-107827 -1061,-107847
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1212271200,
          'text' => 'Das letzte Ende (zur Schönhauser Allee) der Saarbrücker Str. ist momentan wg. Baustelle gesperrt. Es ist zu vermuten, dass dort das Kopfsteinpflaster entfernt wird.',
@@ -1006,7 +998,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'text' => 'L 232 Möllensee-Lichtenow Brücke über den Verbindungsgraben in der OD Kagel Brückenbauarbeiten Vollsperrung 10.03.2008-31.08.2008 ',
          'from' => 1205017200,
          'id' => 1308,
-         'data' => 'userdel	2::inwork 44914,6791 44912,6613
+         'data' => 'userdel	2::inwork 44914,6791 44933,6625
 ',
          'type' => 'gesperrt'
        },

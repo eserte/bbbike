@@ -5222,7 +5222,7 @@ sub get_streets {
 	};
 	if ($@) {
 	    if ($use_cooked_street_data) {
-		warn 'Maybe the "cooked" version for <@f> is missing? Try again the normal version...';
+		warn qq{Maybe the "cooked" version for <@f> is missing? Try again the normal version...};
 		$use_cooked_street_data = 0;
 		next;
 	    } else {
