@@ -1001,6 +1001,24 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork 32766,25156 33511,24201
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1214863200,
+         'text' => 'L 029 Oderberg-Liepe OD Oderberg Straßenbauarbeiten Vollsperrung 17.03.2008-30.06.2008 ',
+         'from' => 1205622000,
+         'id' => 1310,
+         'data' => 'userdel	q4::inwork 52671,51846 51496,51542
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1206831600,
+         'text' => 'L 062 Elsterwerda - Hohenleipisch Bahnübergang bei Elsterwerda Gleisbauarbeiten Vollsperrung 25.03.2008-29.03.2008 ',
+         'from' => 1206313200,
+         'id' => 1311,
+         'data' => 'userdel	2::inwork 22654,-103425 22256,-103785
+',
+         'type' => 'gesperrt'
        }
      
 );

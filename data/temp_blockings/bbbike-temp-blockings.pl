@@ -10775,7 +10775,7 @@ EOF
        text  => 'Einbahnstraße Richtung Westen wegen Bauarbeiten',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 5154,7006 5251,6949 5374,6932
+userdel	1::inwork 5149,7012 5251,6949 5374,6932
 EOF
      },
      { from  => 1200438000, # 2008-01-16 00:00
@@ -11031,6 +11031,22 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 32766,25156 33511,24201
+EOF
+     },
+     { from  => 1205622000, # 2008-03-16 00:00
+       until => 1214863200, # 2008-07-01 00:00
+       text  => 'L 029 Oderberg-Liepe OD Oderberg Straßenbauarbeiten Vollsperrung 17.03.2008-30.06.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 52671,51846 51496,51542
+EOF
+     },
+     { from  => 1206313200, # 2008-03-24 00:00
+       until => 1206831600, # 2008-03-30 00:00
+       text  => 'L 062 Elsterwerda - Hohenleipisch Bahnübergang bei Elsterwerda Gleisbauarbeiten Vollsperrung 25.03.2008-29.03.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 22654,-103425 22256,-103785
 EOF
      },
     );

@@ -488,6 +488,10 @@ Hornblendeweg	1 10440,1283 10415,1323 10402,1362 10425,1400 10510,1441 10594,146
 Sibeliusweg	1 -6811,4893 -6787,5076 -6762,5133 -6747,5169
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Zingster Str. (Wedding)	1 9276,16032 9265,16109 9277,16154 9307,16190
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
+Neufahrwasserweg	1 20390,15307 20550,15551
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
+Rotdornstr.	1 5085,7109 5121,7132 5141,7158 5139,7206
 ######################################################################
 #
 # Potsdam
@@ -637,6 +641,11 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 # 
+#: note: Luftbild vvv
+Allee der Kosmonauten: Straßenbahntrasse	3nocross 20269,14256 20241,14016 20210,13776
+Allee der Kosmonauten: Straßenbahntrasse	3nocross 20474,14442 20657,14446 20727,14467
+Landsberger Allee: Mittelstreifen	3nocross 20260,15434 20525,15571 20641,15622
+#: by: ^^^
 #: by: Jörg Böhmer
 Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3nocross -3043,16601 -3046,16548 -3050,16429
 #: note: Luftbild
@@ -646,7 +655,7 @@ Bahntrasse	3nocross 15868,1790 15835,1736 15639,1422
 Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
 Schloßstr.: Mittelstreifen	3nocross 4741,5309 4748,5357 4861,5581
 #: note: Luftbild
-Blumberger Damm: Mittelstreifen	3nocross 21381,14506 21408,14591 21521,14943
+Blumberger Damm: Mittelstreifen	3nocross 21378,14490 21408,14591 21521,14943
 #: note: Luftbild
 Blumberger Damm: Straßenbahntrasse	3nocross 21232,15465 21187,15350 21163,15289
 Schönholzer Str.: Straßenbahn auf der Fahrbahn	3nocross 10089,18180 10054,18210 9909,18333
@@ -692,7 +701,7 @@ Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061
 Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3906,10035 3930,9919
 # XXX del: Treskowallee: Straßenbahntrasse	3nocross 18628,10177 18690,10016 18698,9996 18737,9901
 Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5474,9961 5475,9914 5472,9850
-Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19694,15149 19735,15155 20266,15456
+Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19694,15149 19735,15155 20260,15434
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19582,15221 19506,15002 19466,14910 19422,14793
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9851,10219 9849,10202 9827,10120
 Grunerstr.: Straßentunnelrampe	3nocross 10878,12560 10954,12635 11057,12715 11134,12793
@@ -1138,7 +1147,7 @@ Pintschstr.	1 13342,13185 13438,12965
 #: XXX Einbahnstraßenregelung genauer anschauen
 Weidenweg (Friedrichshain)	1s:q1 13678,12571 13608,12547
 Landsberger Allee	3nocross 12386,13085 12582,13128 12727,13159
-Landsberger Allee	3nocross 20551,15582 20641,15622 20796,15667
+Landsberger Allee	3nocross 20525,15571 20641,15622 20796,15667
 Landsberger Allee: Straßenbahntrasse	3nocross 13640,13597 13708,13623 13862,13688
 #: by: jörg (schalkau):
 Landsberger Allee	3nocross 17254,14451 17402,14468 17848,14523
