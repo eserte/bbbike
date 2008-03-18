@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.40 2008/01/27 13:19:59 eserte Exp $
+# $Id$
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.40 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision$ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -172,6 +172,11 @@ sub add_button {
 	       -command => sub {
 		   local $main::lazy_plot = 0; # lazy mode does not support bbd images yet
 		   add_new_nonlazy_layer("p", "$bbbike_rootdir/misc/zebrastreifen");
+	       }
+	      ],
+	      [Button => "Add Abdeckung",
+	       -command => sub {
+		   add_new_layer("str", "$bbbike_rootdir/misc/abdeckung.bbd");
 	       }
 	      ],
 	      [Cascade => 'Berlin/Potsdam coords', -menuitems =>

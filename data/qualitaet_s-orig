@@ -572,7 +572,9 @@ Sembritzkistr.: mäßiges Kopfsteinpflaster	Q2 6872,4940 6945,5060 7186,5453 7203,
 Sembritzkistr.: Asphalt	Q0 6860,4799 6872,4940
 Clauertstr.: Kopfsteinpflaster	Q2 -1082,2140 -763,1976 -613,1949
 Hanstedter Weg: Kopfsteinpflaster	Q2 6751,4985 6882,5027 6945,5060
-Alboinstr.: Kopfsteinpflaster (auf Fahrbahn)	Q2 8176,6065 8181,6341 8196,6775 8204,6958
+Alboinstr.: Kopfsteinpflaster (auf Fahrbahn)	Q2 8176,6065 8181,6341 8183,6386 8189,6577 8192,6668
+#: note: Luftbild
+Alboinstr.: Asphalt	Q0 8192,6668 8196,6775 8204,6958 8319,7084
 Sredzkistr.: Kopfsteinpflaster	Q2 11436,14741 11526,14693 11642,14625
 Hochspannungsweg: Asphalt	Q0 12694,2514 12648,2494
 Hochspannungsweg: fester feiner Kies bzw. Verbundsteine	Q1 12648,2494 12390,2379 12363,2367 11747,2091
@@ -1012,7 +1014,7 @@ Samariterstr.: Kopfsteinpflaster	Q2 14488,12189 14538,12371 14570,12478 14589,12
 #: XXX: laut Juliane (no email), mein Eintrag war "Kopfsteinpflaster" mit einem Fragezeichen
 Fanningerstr.: Asphalt	Q0 16261,12224 16359,12207 16445,12193 16556,12180 16657,12168 16794,12144 16890,12135 16994,12122 17092,12107 17139,12100
 #: add_fragezeichen: mäßiges oder schlechtes Kopfsteinpflaster?
-Marienhöher Weg: Kopfsteinpflaster	Q2 8353,5188 8185,5209 8009,5000 7913,4996 7861,5029 7851,5125 7929,5250
+Marienhöher Weg: Kopfsteinpflaster	Q2 8353,5188 8185,5195 8009,5000 7913,4996 7873,5024 7851,5125 7944,5237
 Maulbronner Ufer: Parkweg	Q1 7161,4091 6904,4162
 (Luckeweg - Hildburghauser Str.): Parkweg	Q1 7531,581 7599,725
 Voigtstr.: Kopfsteinpflaster	Q2 14702,12157 14748,12314 14776,12418 14798,12502 14800,12514 14814,12626 14842,12826
@@ -1943,7 +1945,7 @@ Stolbergstr.: Asphalt	Q0 8831,6780 8834,6639
 Stolbergstr.: Kopfsteinpflaster	Q2 8834,6639 8850,6421
 Richnowstr.: mäßiger Asphalt	Q1 8850,6421 8946,6501
 Bosepark: kleinteiliges Kopfsteinpflaster, OK	Q1 8850,6421 8697,6455
-Bosestr.: Asphalt mit Asphaltflicken	Q1 8181,6341 8388,6322 8546,6307 8546,6329 8680,6322
+Bosestr.: Asphalt mit Asphaltflicken	Q1 8181,6341 8292,6331 8388,6322 8546,6307 8546,6329 8680,6322
 Bosestr.: schlechtes Kopfsteinpflaster	Q3 8680,6322 8846,6303 8943,6292
 #: corrected_by: Kowaliczek Larissa (Kopfsteinpflaster Q2 -> Asphalt), auch hatte ich den Eindruck, dass sie asphaltiert ist
 Borussiastr.: Asphalt	Q0 9241,6791 9511,6797 9706,6802
@@ -1959,7 +1961,7 @@ Krachtstr.: Asphalt	Q0 14817,10031 14844,10088 14920,10225
 Zimbelstr.: mäßiger Asphalt	Q1- 11959,20365 11924,20399 11879,20466 11840,20528 11797,20601 11732,20693 11633,20792 11569,20845 11518,20894
 #: by: ^^^
 #: by: Andre Köhler
-Wittekindstr.: Asphalt	Q0 8366,5428 8365,5502 8374,5598 8375,5766 8385,5907 8385,6034 8388,6322
+Wittekindstr.: Asphalt	Q0 8365,5418 8365,5502 8374,5598 8375,5766 8385,5907 8385,6034 8388,6322
 #: by: a.grund
 Kneippstr.: Kopfsteinpflaster	Q2 2621,23609 2711,23694 2817,23756 3034,23910
 #: by: truediger vvv
@@ -2604,7 +2606,7 @@ Wielandstr. (Friedenau): sehr guter Asphalt	Q0 6083,7582 6081,7215 6082,7066 608
 Fregestr.: guter Asphalt	Q0 5897,6799 5957,6889 5957,6970 5958,7220 5955,7406
 #: by: ^^^
 #: by: Thomas (dobr@...) vvv
-(Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Asphalt	Q0 7921,4451 7935,4466 8162,4725
+(Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Asphalt	Q0 7921,4451 7935,4466 8027,4571 8162,4725
 (Gersdorfstr. - Wulfilaufer): fester sandiger Parkweg	Q1 8162,4725 8249,4769
 #: by: ^^^
 #: by: Andrea Beu: vvv
@@ -7449,7 +7451,7 @@ Neukirchstr.: Asphalt	Q1 12562,18483 12014,18771
 Aalemannufer: Asphalt	Q0 -1989,18378 -2053,18375 -2535,18391 -2678,18396 -2759,18400
 #: by: anonymous [AM] vvv
 Westendstr.: Asphalt	Q1 21389,4635 21371,4437
-Theodor-Francke-Str.: Beton	Q1 9221,6179 9328,6164
+Theodor-Francke-Str.: Beton	Q1 9221,6179 9341,6163
 Am Tegeler Hafen: Asphalt	Q0 1968,20417 1708,20314 1445,20219
 Ibsenstr.: Kopfsteinpflaster	Q1 10209,16674 10295,16667 10382,16661 10465,16656 10549,16650 10632,16644 10774,16634
 Schützenstr. (Mariendorf): Asphalt	Q0 8581,4342 8569,4459 8561,4535 8546,4629
