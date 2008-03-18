@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi2.pl,v 1.8 2005/03/12 08:00:02 eserte Exp $
+# $Id: cgi2.pl,v 1.9 2008/03/18 21:31:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -39,6 +39,7 @@ my $filter;
 my $only_result;
 my %add_param;
 my $backwards;
+my $browser = "seamonkey";
 
 GetOptions('seek=i'       => \$seek,
 	   'v|verbose!'   => \$verbose,
@@ -58,6 +59,7 @@ GetOptions('seek=i'       => \$seek,
 	   "addparam=s"   => \%add_param,
 	   "onlyresult!"  => \$only_result,
 	   "r"            => \$backwards,
+	   "browser=s"    => \$browser,
 	  ) or die <<EOF;
 usage: $0 [many options]
 -addparam key=value: add a key-value CGI parameter to all requests, e.g. pref_fragezeichen=yes
@@ -175,8 +177,12 @@ while(defined($_ = $nextline->())) {
 	if ($verbose) {
 	    print $tee $check_text;
 	}
-	if ($netscape) {
-	    system("netscape -remote 'openURL($full_url, main)' &");
+	if ($browser || $netscape) {
+	    if ($browser) {
+		system("$browser -remote 'openURL($full_url, main)' &");
+	    } elsif ($netscape) {
+		system("netscape -remote 'openURL($full_url, main)' &");
+	    }
 	    my $q = new CGI {};
 	    $q->param('reqline', $req_line);
 	    #	system("netscape -remote 'openURL($cgiinfourl?" . $q->query_string .

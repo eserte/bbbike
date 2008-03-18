@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.35 2008/02/24 11:47:31 eserte Exp $
+# $Id: plz.t,v 1.36 2008/03/18 21:31:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004,2006,2007 Slaven Rezic. All rights reserved.
@@ -61,7 +61,7 @@ my @approx_tests = (
 		    # Ku'damm => Kurfürstendamm, fails, maybe an extra rule?
 		   );
 		    
-plan tests => 156 + scalar(@approx_tests)*4;
+plan tests => 158 + scalar(@approx_tests)*4;
 
 my $tmpdir = "$FindBin::RealBin/tmp/plz";
 my $create;
@@ -535,6 +535,15 @@ for my $noextern (@extern_order) {
 	my $hits = scalar @{$res[0]};
 	cmp_ok($hits, "<=", 4, "not too much hits ($hits)")
 	    or diag $dump->(\@res);
+
+	{
+	    local $TODO = "Should get all four Eichenstr. in Berlin";
+
+	    @res = $plz->look_loop("Eichenstraße 1 A", @standard_look_loop_args);
+	    my $hits = scalar @{$res[0]};
+	    cmp_ok($hits, ">=", 4, "Should get not only Eichenstraße in Mahlsdorf (hits=$hits)")
+		or diag $dump->(\@res);
+	}
 
     }
 }

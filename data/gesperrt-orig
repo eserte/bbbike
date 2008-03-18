@@ -139,7 +139,7 @@ Bersarinplatz	1 13742,12538 13698,12544 13678,12571 13686,12611 13710,12633 1374
 Petersburger Platz	1 13467,12978 13558,12766
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
 #Anscheinend hier keine Einbahnstraße, vielleicht weiter nördlich auch nicht: Burgstr.	1 10171,12769 10132,12941
-Schuckertdamm	1 746,14817 1109,14911 1343,14972 1488,14952
+Schuckertdamm	1 746,14817 1024,14889 1109,14911 1202,14935 1343,14972 1465,14963
 Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
 Oberhofer Platz	1 5495,1964 5469,1949 5437,1941 5431,1956 5382,2080 5411,2098 5443,2109 5489,1981 5495,1964
 Scheelestr.	1 5740,1227 5697,1098 5556,984 5424,882 5342,845
@@ -492,6 +492,8 @@ Zingster Str. (Wedding)	1 9276,16032 9265,16109 9277,16154 9307,16190
 Neufahrwasserweg	1 20390,15307 20550,15551
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Rotdornstr.	1 5085,7109 5121,7132 5141,7158 5139,7206
+#: by: HGinzel:
+Goebelplatz	1 1974,14646 1974,14565
 ######################################################################
 #
 # Potsdam
@@ -646,6 +648,7 @@ Alt Tempelhof: Mittelstreifen	3nocross 9056,6648 9156,6655 9248,6662
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20269,14256 20241,14016 20210,13776
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20474,14442 20657,14446 20727,14467
 Landsberger Allee: Mittelstreifen	3nocross 20260,15434 20525,15571 20641,15622
+Siemensdamm: Mittelstreifen	3nocross 1133,14387 1057,14389 999,14390 937,14391 889,14392
 #: by: ^^^
 #: by: Jörg Böhmer
 Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3nocross -3043,16601 -3046,16548 -3050,16429

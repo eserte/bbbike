@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.71 2008/02/23 21:17:33 eserte Exp $
+# $Id: PLZ.pm,v 1.72 2008/03/18 20:09:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ use locale;
 use BBBikeUtil;
 use Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.71 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.72 $ =~ /(\d+)\.(\d+)/);
 
 use constant FMT_NORMAL  => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED => 1; # ./data/Berlin.small.data (does not exist anymore)
@@ -277,7 +277,7 @@ sub look {
 	    unshift @grep_args, "-$args{Agrep}";
 	}
 	my @cmd = ($grep_type, @grep_args);
-	#warn "@cmd";
+	warn "About to call <@cmd>" if $VERBOSE;
 	CORE::open(PLZ, "-|") or do {
 	    exec @cmd;
 	    warn "While doing @cmd: $!";

@@ -1657,7 +1657,7 @@ Semperstr.: Asphalt	Q0 6081,7215 6155,7216 6249,7219 6277,7220
 #: note: die ADFC-Karte lag hier kräftig daneben: gut geeignet
 Matthäifriedhofsweg: mäßiges Kopfsteinpflaster, teilweise welliger Asphalt	Q2+ 7230,7264 7305,7221 7477,7122 7563,7113
 Matthäifriedhofsweg: kleinteiliges Kopfsteinpflaster	Q1 7563,7113 7605,7109
-Motardstr.: Beton	Q0 990,14062 19,14186 -269,14178
+Motardstr.: Beton	Q0 990,14062 386,14162 19,14186 -269,14178
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20061006.1320.48492.html vvv
 Mozartstr. (Köpenick): asphaltiert	Q0 21679,6580 21700,6700 21709,6791 21774,6880
 Mozartstr. (Köpenick): sandige Straße	Q2- 21774,6880 21864,6928
@@ -2804,7 +2804,7 @@ Budsiner Str.: asphaltiert	Q0 19790,11445 20126,11356
 Schlochauer Str.: asphaltiert	Q0 19778,11260 19790,11445 19810,11585 19881,11591
 #: by: ^^^
 #: by: Dieter Wolf: vvv
-Arnold-Zweig-Str.: Asphalt	Q0 11870,17522 11729,17499 11492,17460 11243,17421 11100,17396
+Arnold-Zweig-Str.: Asphalt	Q0 11870,17522 11729,17499 11604,17478 11492,17460 11243,17421 11100,17396
 #: note: ebenfalls erwähnt: teilweise kaum existente Radwege:
 Binzstr.: holprige Pflasterstraße	Q2 11854,17656 11596,17610 11468,17586 11088,17511 10892,17491
 #: by: ^^^
@@ -3224,9 +3224,9 @@ Kolk: Kopfsteinpflaster	Q2 -2939,14585 -3010,14612 -3029,14656
 Heidetor: Kopfsteinpflaster	Q2 -3110,14698 -3106,14731
 Oranienburger Tor (Spandau): Kopfsteinpflaster	Q2 -3054,14704 -3110,14698
 Goebelplatz: Asphalt	Q0 1898,14640 1974,14646 1974,14565
-Toeplerstr.: Asphalt	Q0 2374,14583 2081,14570 2009,14567 1974,14565 1893,14559
-Goebelstr.: Asphalt	Q0 1893,14559 1732,14553 1423,14679 1282,14710 1134,14721 1060,14726
-Popitzweg: sehr guter Asphalt	Q0 1361,14431 1897,14408
+Toeplerstr.: Asphalt	Q0 2374,14583 2207,14576 2142,14573 2081,14570 2009,14567 1974,14565 1893,14559
+Goebelstr.: Asphalt	Q0 1893,14559 1732,14553 1423,14679 1282,14710 1226,14714 1134,14721 1042,14721 994,14721
+Popitzweg: sehr guter Asphalt	Q0 1361,14431 1881,14425
 Dahrendorfzeile: Asphalt	Q0 2597,14288 2709,14284
 Hofackerzeile: Asphalt	Q0 2664,14470 2743,14468
 Habermannzeile: Asphalt	Q0 2671,14653 2806,14645
@@ -4237,6 +4237,7 @@ Trarbacher Str.: Beton	Q1 14671,17214 14672,17085 14673,17003 14673,16895
 #: by: Karin Hoffmann: vvv
 Amalienpark: mäßiges Kopfsteinpflaster	Q2 10860,18650 10950,18499
 Amalienpark: mäßiges Kopfsteinpflaster	Q2 10950,18499 10905,18671
+#: confirmed_by: albrecht_martina:
 Eichenstr. (Niederschönhausen): guter Asphalt	Q0 9300,19949 9408,19968 9788,20035 10095,20090
 #: note: laut ADFC-Karte gut geeignet
 Treskowstr. (Niederschönhausen): asphaltiert	Q0 9978,19512 9809,19529 9714,19615 9677,19651 9565,19751 9489,19826 9408,19968 9372,20065 9360,20152 9357,20213
@@ -6170,6 +6171,11 @@ Brussaer Weg: guter Asphalt	Q0 10236,3777 10248,3897 10260,4107 10269,4136
 Neufahrwasserweg: gut zu fahrender Asphalt	Q0 20550,15551 20390,15307
 #: by: Michael van Laak:
 Biberacher Weg: schlechtes Kopfsteinpflaster	Q3 7532,4605 7382,4503
+#: by: Lutz Kortmann:
+#: note: anonymous meinte auch "Kopfsteinpflaster"
+Buhrowstr.: schlechtes Kopfsteinpflaster	Q3 7091,4760 7032,4635 6889,4334
+#: by: gabriela brossmann:
+Asta-Nielsen-Str.: mäßiges Kopfsteinpflaster	Q2 11645,17271 11604,17478
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
