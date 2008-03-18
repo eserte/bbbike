@@ -787,8 +787,8 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        {
-         'until' => 1206918000,
-         'text' => 'L 030 Börnicker Chaussee OD Bernau, zw. Gernotstr. und Schönfelder Weg Straßenbau Wintersicherung Vollsperrung 20.12.2007-30.03.2008 ',
+         'until' => 1209592800,
+         'text' => 'L 030 Börnicker Chaussee OD Bernau, zw. Gernotstr. und Schönfelder Weg Straßenbau Vollsperrung 20.12.2007-30.04.2008 ',
          'from' => 1198018800,
          'id' => 1281,
          'data' => 'userdel	q4::inwork 23113,30450 23368,30409 23631,30262
@@ -1017,6 +1017,43 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'from' => 1206313200,
          'id' => 1311,
          'data' => 'userdel	2::inwork 22654,-103425 22256,-103785
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_008131',
+         'until' => undef,
+         'text' => 'Stresowstr. (Spandau) in beiden Richtungen am Stresowplatz Baustelle, Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1312,
+         'data' => 'userdel	2::inwork -3001,13877 -3049,13959 -3072,14040
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1206399600,
+         'text' => 'B 113 B 2 - Damitzow - BG Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 21.03.2008-24.03.2008 ',
+         'from' => 1205967600,
+         'id' => 1313,
+         'data' => 'userdel	2::inwork 72960,97477 73017,97449 73031,97443
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1207432800,
+         'text' => 'L 222 Gransee - Menz zw. Menz und Kreuz. Zernickow Straßeninstandsetzung Vollsperrung 31.03.2008-05.04.2008 ',
+         'from' => 1206828000,
+         'id' => 1314,
+         'data' => 'userdel	2::inwork -13537,75287 -13950,75662 -14862,76637
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1206918000,
+         'text' => 'L 222 Gransee - Menz zw. OA Großwoltersdorf und Kreuz. Zernickow Straßeninstandsetzung Vollsperrung 18.03.2008-30.03.2008 ',
+         'from' => 1205708400,
+         'id' => 1315,
+         'data' => 'userdel	2::inwork -12250,73762 -12381,74147 -12575,74512 -13537,75287
 ',
          'type' => 'gesperrt'
        }
