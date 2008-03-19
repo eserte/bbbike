@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: KML.pm,v 1.8 2008/01/21 23:11:00 eserte Exp $
+# $Id: KML.pm,v 1.9 2008/03/19 23:02:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::KML;
 
 use strict;
 use vars qw($VERSION $TEST_SET_NAMESPACE_DECL_URI_HACK);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Strassen);
 
@@ -111,7 +111,12 @@ sub xy2longlat {
     ($lon, $lat);
 }
 
-sub xml { shift } # XXX impl missing!
+sub xml {
+    my $s = shift;
+    $s =~ s{([<>&"])}{"&#".ord($1).";"}ge;
+    $s =~ s{([\x80-\x{ffff}])}{"&#".ord($1).";"}ge;
+    $s;
+}
 
 sub bbd2kml {
     my($self, %args) = @_;
@@ -151,7 +156,7 @@ sub bbd2kml {
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.1">
   <Document>
-    <name>@{[ $document_name ]}</name>
+    <name>@{[ xml($document_name) ]}</name>
     <description>@{[ xml($document_description) ]}</description>
 EOF
     my %styles;

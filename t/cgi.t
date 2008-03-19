@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.54 2008/01/21 22:08:09 eserte Exp $
+# $Id: cgi.t,v 1.55 2008/03/19 23:12:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -728,9 +728,15 @@ for my $cgiurl (@urls) {
     }
 
  XXX: {
-	# Check if Umlaute are correctly preserved. This breaks with
-	# the CGI.pm in perl 5.10.0 and must be seen as a CGI.pm
-	# problem.
+	if ($CGI::VERSION == 3.33) {
+	    diag <<EOF;
+Check if Umlaute are correctly preserved. This breaks with
+the CGI.pm in perl 5.10.0 (3.33) and must be seen as a CGI.pm
+problem. It seems to be solved with CGI 3.34, so please
+upgrade!
+EOF
+	}
+
 	my $resp;
 
 	# Do not use CGI.pm here, because it is known to have issues!

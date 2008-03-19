@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-kml.t,v 1.10 2008/02/02 20:37:47 eserte Exp $
+# $Id: strassen-kml.t,v 1.11 2008/03/19 23:03:01 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -32,7 +32,7 @@ BEGIN {
 
 use BBBikeTest;
 
-plan tests => 22;
+plan tests => 24;
 
 use_ok("Strassen::KML")
     or exit 1; # avoid recursive calls to Strassen::new
@@ -133,6 +133,16 @@ isa_ok($s, "Strassen");
     like($kml_string, qr{<color>00ff00ff}, "Found green color");
     like($kml_string, qr{<color>0000ffff}, "Found blue color");
     like($kml_string, qr{<description>14\.[123]\s+km}, "Found distance of first route");
+}
+
+{
+    my @sample_coords1 = get_sample_coordinates_1();
+    my @sample_coords2 = get_sample_coordinates_2();
+    my $s = Strassen->new_from_data(">evil<\t#00ff00 @sample_coords1", "\"characters & ümläüt stuff\t#0000ff @sample_coords2");
+    my $s_kml = Strassen::KML->new($s);
+    my $kml_string = $s_kml->bbd2kml;
+    kmllint_string($kml_string, "KML OK with evil characters");
+    like($kml_string, qr{&#\d+;}s, "escaped entities found");
 }
 
 sub get_sample_kml_1 {
