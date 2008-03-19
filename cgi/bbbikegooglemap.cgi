@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 2.28 2008/03/09 20:05:41 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 2.28 2008/03/09 20:05:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006,2007,2008 Slaven Rezic. All rights reserved.
@@ -408,7 +408,7 @@ sub get_html {
 	for(var i = 0; i < addRoute.length; i++) {
 	    if (i == 0) {
 		addRouteText = routeLabel;
-		addRouteLink = routeLinkLabel + "@{[ BBBikeCGIUtil::my_url(CGI->new(), -full => 1) ]}?zoom=" + map.getZoomLevel() + "&coordsystem=polar" + "&maptype=" + mapTypeToString() + "&wpt_or_trk=";
+		addRouteLink = routeLinkLabel + "@{[ $get_public_link->() ]}?zoom=" + map.getZoomLevel() + "&coordsystem=polar" + "&maptype=" + mapTypeToString() + "&wpt_or_trk=";
 	    } else if (i > 0) {
 		addRouteText += " ";
 		addRouteLink += "+";

@@ -779,7 +779,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'text' => 'Sterndamm (Treptow) Richtung Schöneweide zwischen J.-Werner.Str und Lindhorstweg Baustelle, Fahrtrichtung gesperrt (bis April 2008)',
          'from' => 1199891609,
          'id' => 1277,
-         'data' => 'userdel	1::inwork 17053,3971 17387,4446
+         'data' => 'userdel	1::inwork 17053,3971 17108,4049 17244,4242 17261,4267 17290,4308 17387,4446
 ',
          'type' => 'gesperrt'
        },

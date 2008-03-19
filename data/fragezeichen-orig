@@ -256,8 +256,6 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet; in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
-#: by: junga:
-Rieppelstr.: Kopfsteinpflaster, Q2, Einbahnstraße offen Richtung Süden	? 763,15527 768,15486 772,15460 794,15362 780,15358 851,15155
 #: by: Kerstin Werner:
 Hoppegartener Str. (Neuenhagen b. Berlin): Kopfsteinpflaster, Q3	? 29497,12770 29220,12830
 #: by: Dirk (no email):
@@ -359,12 +357,6 @@ Vietzer Zeile: guter Asphalt, Q0	? 2818,19606 2937,19753
 Drenziger Zeile: mäßiger Asphalt, Q1	? 2937,19753 2800,19894
 #: by: Sascha (saschajana@...)
 Narzissenweg (Altglienicke): Asphalt Q1	? 20246,553 20206,464 20214,375
-#: by: Oliver 
-#: add_fragezeichen: Ist die Straße eine Einbahnstraße?
-Im Heidewinkel: Kopfsteinpflaster Q3	? 772,15460 877,15474 981,15490 968,15576
-#: by: Ines Junge:
-Im Eichengrund: NN, Kopfsteinpflaster Q1, enger Weg mit Bäumen mitten auf dem Weg q3	? 976,15195 921,15359 901,15386 885,15435 877,15474
-Im Heidewinkel: Kopfsteinpflaster Q3, Einbahnstr.	? 1065,15229 981,15490
 #: by: Katharina Undisz [AM]
 Helmut-Just-Str. (Hohen Neuendorf): Asphalt Q1	? 4054,29959 4132,29954 4487,29996
 #: section ^^^
@@ -1679,11 +1671,25 @@ Grammestr.: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 1057,14389 1058
 Halskesteig: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 1166,14458 1058,14459
 #: XXX: Einbahn (Teilabschnitt!) offen Richtung Norden
 Lenther Steig: Qualität? Einbahnstraße zwischen Goebelstr. und Schuckertdamm auch für Radfahrer gültig?	? 1037,14515 1042,14721 1037,14814 1024,14889
-#: XXX: Einbahn offen Richtung Westen
-Dihlmannstr.: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 1065,15229 976,15195 851,15155 755,15123 651,15091
+(Wilhelm-von-Siemens-Park): Qualität? "grüner" Weg? Nachts beleuchtet?	? 755,15123 822,15105 979,15124 1243,15187 1415,15190
 Am Laubwald: Qualität?	? 981,15490 1078,15524
-#: XXX: Einbahn offen Richtung Osten
-Harriesstr.: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 525,15435 659,15469 768,15486
 Buolstr.: Qualität?	? 559,15342 429,15284 283,15237
 Köttgenstr.: Qualität?	? 473,15169 556,15175 613,15195
 Sternfelder Str.: Qualität?	? 386,14162 367,13991 371,13863 182,13878 169,13851
+Johannes-Werner-Str.: Qualität?	? 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
+Vereinsstr.: Qualität?	? 17180,3997 17244,4084 17297,4159 17405,4151 17503,4148
+Mühlbergstr: Qualität?	? 17187,3988 17288,4026 17341,4046
+Mühlbergstr: Qualität?	? 17346,4031 17402,4050 17405,4151
+Lindhorstweg: Qualität?	? 16674,4096 16742,4098 16852,4105 16887,4105 17027,4090 17108,4049 17180,3997 17187,3988 17228,3936 17245,3895
+Heinrich-Mirbach-Str.: Qualität? Für Autofahrer gesperrt?	? 17288,4026 17244,4084
+Köpenicker Str. (Johannisthal): Qualität?	? 17507,4216 17638,4224 17660,4204
+Adolfstr.: Qualität?	? 22756,11268 22743,11540 22734,11662 22633,11769
+Leopoldstr.: Qualität?	? 23032,11729 23072,11758 23269,11767
+Zernsdorfer Str.: Qualität?	? 22260,11742 22314,11787 22333,11846 22394,11895 22408,11940
+Senziger Str.: Qualität?	? 22191,11999 22224,11963 22263,11911 22301,11879 22333,11846
+Münsterberger Weg: Qualität?	? 22216,12019 22266,11995 22408,11940 22531,11899 22659,11852 22687,11828
+Münsterberger Weg zwischen Brodauer und Myslowitzer Str.: Qualität? Nachts beleuchtet?	? 22687,11828 22886,11776 23032,11729 23225,11649
+Münsterberger Weg zwischen Myslowitzer Str. und Alt-Mahlsdorf: Qualität?	? 23225,11649 23430,11576 23526,11541 23621,11511 23714,11477 23883,11416 24034,11363 24018,11320 24017,11275
+Ringstr. (Kaulsdorf): Qualität?	? 22402,11751 22461,11790 22503,11841 22531,11899 22544,12001
+Waplitzer Str.: Qualität?	? 22402,11751 22455,11686 22469,11627
+Wallstr. (Kaulsdorf): Qualität?	? 22544,12001 22836,11994
