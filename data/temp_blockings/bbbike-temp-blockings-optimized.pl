@@ -1057,16 +1057,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_008152',
-         'until' => 1206039600,
-         'text' => 'Sophienstr. (Mitte) zwischen Rosenthaler Str. und Große Hamburger Str. Kraneinsatz, Straße vollständig gesperrt (bis 20.03.2008 ca. 20 Uhr)',
-         'from' => 1205966138,
-         'id' => 1316,
-         'data' => 'userdel	2::inwork 9982,13411 10312,13231
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1206831600,
          'text' => 'L 098 Brandenburg - Rathenow zw. Siedlung Radewege und Marzahne Neubau Durchlass Vollsperrung 25.03.2008-29.03.2008 ',

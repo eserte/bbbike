@@ -647,8 +647,8 @@ Vulkanstr.: Asphalt	Q0 15912,13153 15892,13534 15897,13942 15838,14319
 Vulkanstr.: Asphalt	Q0 15912,13153 15950,12886 15953,12753 15952,12679 15947,12626 15926,12478 15904,12340 15896,12273 15879,12131 15863,11992
 Sandinostr.: Kopfsteinpflaster	Q2 15883,14606 15830,14647 15685,14757
 Orankeweg: holpriger Feldweg	Q2 14934,15860 15305,15858 15439,15859
-Orankestr.: schlechtes Kopfsteinpflaster	Q3 16331,15486 15665,15765
-Orankestrand: guter Parkweg	Q1 15871,16399 15664,16115 15599,16077 15479,16072
+Orankestr.: schlechtes Kopfsteinpflaster	Q3 16331,15486 15996,15620 15877,15673 15801,15706 15665,15765
+Orankestrand: guter Parkweg	Q1 15871,16399 15782,16277 15731,16208 15664,16115 15599,16077 15479,16072
 Degnerstr.: Wechsel zwischen mäßigen Asphalt und Kopfsteinpflaster	Q2 16801,16501 16849,16551 17017,16716
 Genslerstr.: Kopfsteinpflaster	Q2 16898,15453 16849,15263 16799,15007 16783,14927 16765,14842
 #: corrected_by: srt
@@ -1128,7 +1128,7 @@ Akeleiweg: Kopfsteinpflaster	Q2 17631,3200 17603,3240
 Winckelmannstr.: Kopfsteinpflaster Richtung Norden	Q2; 17465,3768 17468,3979
 Winckelmannstr.: Kopfsteinpflaster Richtung Süden	Q2; 17428,4503 17476,4337 17507,4216 17503,4148 17468,3979
 Zwiestädter Str.: Asphalt	Q0 13510,7535 13400,7642
-Am Orankesee: Parkweg	Q1 15845,15930 15703,15953 15581,15846 15484,15909 15479,16072
+Am Orankesee: Parkweg	Q1 15856,15924 15703,15953 15581,15846 15484,15909 15479,16072
 Vorfahrt Reichstagsgebäude: Kopfsteinpflaster, OK	Q1 8400,12417 8399,12601
 Hagenauer Str.: Kopfsteinpflaster	Q2 11154,14985 11187,14763
 Kolmarer Str.: Kopfsteinpflaster	Q2 11299,14112 11354,14187 11418,14290
@@ -2595,7 +2595,7 @@ Goeckestr.: mäßiges Kopfsteinpflaster	Q2 16128,14685 16256,14828 16514,15092 165
 Simon-Bolivar-Str.: geteert, guter Zustand	Q0 15763,15003 16025,14753 16128,14685 16284,14601
 Freienwalder Str.: Kopfsteinpflaster (einigermaßen gut)	Q2 16849,15263 16651,15345 16618,15356 16331,15486
 Wriezener Str.: Kopfsteinpflaster	Q2 16597,15228 16522,15258 16208,15379
-Roedernstr.: geteert	Q0 16208,15379 15534,15675
+Roedernstr.: geteert	Q0 16208,15379 15825,15547 15534,15675
 Prießnitzstr.: Asphalt	Q0 11351,19169 11407,19186 11549,19258
 #: by: ^^^
 #: by: Christoph Sachsenmaier:
@@ -5450,7 +5450,7 @@ Grunowstr. (Pankow): Kopfsteinpflaster	Q2 10705,17931 10636,18013 10582,18159
 #: by: Hans Rumprecht:
 Auguste-Viktoria-Str. (Hermsdorf): guter Asphalt	Q0 3939,23345 3953,23401 3941,23486 3947,23547 3960,23647 3979,23675 4007,23709 4098,23761 4163,23845
 #: by: micha hoffmann:
-Manetstr.: mäßiger Asphalt	Q1- 16412,15559 15753,15845
+Manetstr.: mäßiger Asphalt	Q1- 16412,15559 16251,15629 16036,15722 15840,15806 15761,15840
 #: by: Holger Niermann: vvv
 Am Rosenanger: Asphalt	Q0 2914,24751 2995,24672 3053,24640 3131,24614 3228,24613 3462,24702 3570,24763 3651,24788
 Der Zwinger: guter Asphalt	Q0 2542,24945 2647,25018
@@ -6182,7 +6182,8 @@ Asta-Nielsen-Str.: mäßiges Kopfsteinpflaster	Q2 11645,17271 11604,17478
 Rieppelstr.: Kopfsteinpflaster	Q2 763,15527 768,15486 772,15460 794,15362 780,15358 851,15155
 Harriesstr.: Kopfsteinpflaster	Q2 525,15435 659,15469 768,15486
 Rapsstr.: Kopfsteinpflaster	Q2 755,15123 702,15274 693,15335 665,15414 659,15469
-Dihlmannstr.: Kopfsteinpflaster	Q2 1065,15229 976,15195 851,15155 755,15123 651,15091
+Dihlmannstr.: Fahrbahn Kopfsteinpflaster, paralleler Radweg glatt gepflaster	Q1 1065,15229 976,15195 851,15155 755,15123 651,15091
+(Dihlmannstr. - Jungfernheideweg): glatt gepflasterter Weg	Q1 1065,15229 1372,15313
 #: by: ^^^
 #: by: Ines Junge: vvv
 Im Eichengrund: gutes Kopfsteinpflaster	Q1 976,15195 921,15359 901,15386 885,15435 877,15474
@@ -6190,6 +6191,10 @@ Im Eichengrund: gutes Kopfsteinpflaster	Q1 976,15195 921,15359 901,15386 885,154
 Im Heidewinkel: schlechtes Kopfsteinpflaster	Q3 1065,15229 981,15490
 Im Heidewinkel: schlechtes Kopfsteinpflaster	Q3 772,15460 877,15474 981,15490 968,15576
 #: by: ^^^
+#: by: Holger Schübler:
+Torgauer Str. (Hellersdorf): Asphalt	Q0 25348,15152 25361,15266 25370,15348 25243,15364 25126,15380 25127,15412 24982,15433
+#: by: Ingo Granitza:
+Scharnweberstr. (Hohenschönhausen): schlechtes Kopfsteinpflaster	Q3 15996,15620 16036,15722 16080,15830
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

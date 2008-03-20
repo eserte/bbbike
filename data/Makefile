@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.179 2008/03/04 21:02:55 eserte Exp $
+# $Id: Makefile,v 2.179 2008/03/04 21:02:55 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -31,7 +31,8 @@ SED=			env LANG=C sed
 
 HAFAS2HAFAS=		${MISCSRCDIR}/hafas2hafas -strict
 CONVERT2HAFAS=		${MISCSRCDIR}/convert2hafas -strict
-CONVERT_ORIG=		${MISCSRCDIR}/convert_orig_to_bbd
+CONVERT_ORIG_FILE=	${MISCSRCDIR}/convert_orig_to_bbd
+CONVERT_ORIG=		${PERL} ${CONVERT_ORIG_FILE}
 CHECK_POINTS=		${PERL} ${MISCSRCDIR}/check_points
 CHECK_STR_PLZ=		${MISCSRCDIR}/check_str_plz
 CHECK_CONT=		${PERL} ${MISCSRCDIR}/check_cont
@@ -308,9 +309,9 @@ strassen_bab: strassen_bab-orig
 # perl -nle '/\t(\S+)/ && print $1' sbahn-orig | sort -u
 SBAHN_CATEGORIES=	SA SB SC S0 SBau
 
-sbahn: sbahn-orig $(CONVERT_ORIG)
+sbahn: sbahn-orig $(CONVERT_ORIG_FILE)
 	-@$(WRITEABLE) $@
-	$(PERL) $(CONVERT_ORIG) -strip-future-categories sbahn-orig > /tmp/sbahn
+	$(CONVERT_ORIG) -strip-future-categories sbahn-orig > /tmp/sbahn
 .for cat in $(SBAHN_CATEGORIES)
 	$(GREPSTRASSEN) -catrx ^$(cat).* /tmp/sbahn | $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/sbahn-$(cat)
 .endfor
@@ -332,9 +333,9 @@ sbahnhof:	sbahnhof-orig
 # See SBAHN_CATEGORIES comment
 RBAHN_CATEGORIES=	RA RB RC R R0 RBau RG RP
 
-rbahn: rbahn-orig Makefile $(CONVERT_ORIG)
+rbahn: rbahn-orig Makefile $(CONVERT_ORIG_FILE)
 	-@$(WRITEABLE) $@
-	$(PERL) $(CONVERT_ORIG) -strip-future-categories rbahn-orig > /tmp/rbahn
+	$(CONVERT_ORIG) -strip-future-categories rbahn-orig > /tmp/rbahn
 .for cat in $(RBAHN_CATEGORIES)
 	$(GREPSTRASSEN) -catrx ^$(cat).* /tmp/rbahn | $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/rbahn-$(cat)
 .endfor
@@ -348,9 +349,9 @@ rbahnhof:	rbahnhof-orig
 	mv rbahnhof~ rbahnhof
 	-@$(READONLY) $@
 
-ubahn: ubahn-orig $(CONVERT_ORIG)
+ubahn: ubahn-orig $(CONVERT_ORIG_FILE)
 	-@$(WRITEABLE) $@
-	$(PERL) $(CONVERT_ORIG) -strip-future-categories ubahn-orig > ubahn~
+	$(CONVERT_ORIG) -strip-future-categories ubahn-orig > ubahn~
 	mv ubahn~ ubahn
 	-@$(READONLY) $@
 
@@ -531,19 +532,19 @@ radwege_exact:	radwege-orig
 
 qualitaet_s:	qualitaet_s-orig
 	-@$(WRITEABLE) $@
-	$(PERL) $(CONVERT_ORIG) -strip-tendencies qualitaet_s-orig > qualitaet_s~
+	$(CONVERT_ORIG) -strip-tendencies qualitaet_s-orig > qualitaet_s~
 	mv qualitaet_s~ qualitaet_s
 	-@$(READONLY) $@
 
 qualitaet_l:	qualitaet_l-orig
 	-@$(WRITEABLE) $@
-	$(PERL) $(CONVERT_ORIG) -strip-tendencies qualitaet_l-orig > qualitaet_l~
+	$(CONVERT_ORIG) -strip-tendencies qualitaet_l-orig > qualitaet_l~
 	mv qualitaet_l~ qualitaet_l
 	-@$(READONLY) $@
 
 handicap_s:	handicap_s-orig berlin .gesperrt.tmp
 	-@$(WRITEABLE) $@
-	$(PERL) $(CONVERT_ORIG) handicap_s-orig > handicap_s~
+	$(CONVERT_ORIG) handicap_s-orig > handicap_s~
 	$(GREPSTRASSEN) -catrx ':q\d' < .gesperrt.tmp |\
 	    $(GREPSTRASSEN) -inner berlin |\
 	    $(REPLACESTRASSEN) -noglobaldirectives \
@@ -555,7 +556,7 @@ handicap_s:	handicap_s-orig berlin .gesperrt.tmp
 
 handicap_l:	handicap_l-orig berlin .gesperrt.tmp
 	-@$(WRITEABLE) $@
-	$(PERL) $(CONVERT_ORIG) handicap_l-orig > handicap_l~
+	$(CONVERT_ORIG) handicap_l-orig > handicap_l~
 	$(GREPSTRASSEN) -catrx ':q\d' < .gesperrt.tmp |\
 	    $(GREPSTRASSEN) -outer berlin |\
 	    $(REPLACESTRASSEN) -noglobaldirectives \

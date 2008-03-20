@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.6 2008/03/10 20:16:37 eserte Exp eserte $
+# $Id: bbbike.cgi,v 9.7 2008/03/20 22:32:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -723,7 +723,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 9.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 9.7 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1704,6 +1704,8 @@ EOF
 	print <<EOF if ($bi->{'can_table'});
 <td valign="top">@{[ blind_image(420,1) ]}<br>
 EOF
+	# Eine Addition aller aktuellen Straßen, die bei luise-berlin
+	# aufgeführt sind, ergibt als Summe 10129
 	my($bln_str, $all_bln_str, $pdm_str) = (6800, 10000, 280);
 	# XXX Use format number to get a comma in between.
 	if ($lang eq 'en') {
@@ -6763,7 +6765,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/03/10 20:16:37 $';
+    my $cgi_date = '$Date: 2008/03/20 22:32:01 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

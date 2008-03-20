@@ -328,12 +328,19 @@ One way street. The blocking is in the direction of the polyline.
 
 =item * C<1s>:
 
-One way street, but not strictly for cyclists (means: it is
-non-legally possible to pass the street in the wrong direction).
+One way street (read E<quot>one softE<quot>), but not strictly for
+cyclists (means: It is non-legally possible to pass the street in the
+wrong direction. Typically this will cause the routing to add a
+handicap of class C<q4> for the wrong direction.).
+
+=item * C<1h>:
+
+One way street 8read E<quot>one hardE<quot>), and there's no
+possibility for a cyclist to use the street in wrong direction.
 
 =item * C<2>:
 
-Blocked street (in both directions).
+Blocked street in both directions.
 
 =item * C<0>:
 
@@ -762,7 +769,12 @@ yet.
 =item igndisp
 
 Ignore display. Item will not be rendered, but may be used for other
-purposes (i.e. routing).
+purposes (i.e. routing). See L</ignrte>.
+
+=item ignrte
+
+Ignore in routing. Item will not be used in routing, but may be used
+for other purposes (i.e. display). See L</igndisp>.
 
 =item
 
