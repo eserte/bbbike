@@ -1630,7 +1630,8 @@ Possibilities under Windows:
 - Interface gpsbabel (but then gpsbabel has to be bundled...)
   -> Already implemented, and seems to work. Bundling is missing, though...
   -> gpsbabel does not have an installer. maybe file an bug report and ask the
-     author to use innosetup?
+     author to use innosetup? -> DONE. There's an unmaintained .iss
+     script in the gpsbabel distro. Maybe just use it and do it myself?
 
 - Use Device::USB and try to make it work with LibUsb-Win32
 (L<http://sourceforge.net/projects/libusb-win32/>). But I have yet to

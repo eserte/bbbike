@@ -389,7 +389,6 @@ Sandgrasweg	1 2851,21089 2819,21128
 Sandgrasweg	1 2840,21141 2866,21103
 Max-Eyth-Str.	1 2506,6606 2566,6531 2611,6495
 (IKEA-Zufahrt)	1 8204,6958 8229,7154
-Schweiggerweg	1 2081,14570 2079,14704 2099,14852
 Neumarkplan	1 12483,3929 12569,3764 12572,3731 12560,3697 12530,3669 12485,3658 12445,3674 12420,3707 12415,3743 12421,3767 12483,3929
 Mudrastr.	1 7370,2400 7324,2559 7289,2699 7308,2734 7384,2763 7489,2787
 Heiligental	1 5803,19874 5858,19761 5897,19668 5929,19574
@@ -563,7 +562,11 @@ Cecilienstr. -> Allee der Kosmonauten: Straßenbahntrasse	3 20281,14012 20241,140
 Allee der Kosmonauten -> Cecilienstr.: Straßenbahntrasse	3 20269,14256 20241,14016 20281,14012
 Rebhuhnweg -> Landsberger Allee: Mittelstreifen	3 20550,15551 20525,15571 20260,15434
 Landsberger Allee -> Rebhuhnweg: Mittelstreifen	3 20641,15622 20525,15571 20550,15551
+Suermondtstr. -> Hedwigstr.: Straßenbahntrasse	3 16654,16167 16515,16207 16505,16096
 Am Faulen See -> Suermondtstr.: Straßenbahntrasse	3 16546,16308 16515,16207 16654,16167
+Am Faulen See -> Hedwigstr.: Straßenbahntrasse	3 16546,16308 16515,16207 16505,16096
+Hedwigstr. -> Am Faulen See: Straßenbahntrasse	3 16505,16096 16515,16207 16546,16308
+Hedwigstr. -> Suermondtstr.: Straßenbahntrasse	3 16505,16096 16515,16207 16416,16236
 Suermondtstr. -> Am Faulen See: Straßenbahntrasse	3 16416,16236 16515,16207 16546,16308
 Streitstr. -> Wegscheider Str.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3 -3050,16429 -3046,16548 -3214,16561
 Wegscheider Str. -> Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3 -3214,16561 -3046,16548 -3043,16601

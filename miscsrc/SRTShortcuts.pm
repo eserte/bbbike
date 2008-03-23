@@ -176,6 +176,7 @@ sub add_button {
 	      ],
 	      [Button => "Add Abdeckung",
 	       -command => sub {
+		   local $main::p_draw{'pp-all'} = 1;
 		   add_new_layer("str", "$bbbike_rootdir/misc/abdeckung.bbd");
 	       }
 	      ],

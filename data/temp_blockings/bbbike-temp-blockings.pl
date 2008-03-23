@@ -5010,7 +5010,7 @@ EOF
        text  => 'L 171 Karl-Marx-Str. OD Hohen Neuendorf, Kno.K.-Tucholsky-Str. Straßensanierung halbseitig gesperrt; Einbahnstraße 08.07.2006-11.07.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 1379,29410 1611,29359
+userdel	q4::inwork; 1366,29416 1611,29359
 EOF
      },
      { from  => 1152828000, # 2006-07-14 00:00
@@ -8993,7 +8993,7 @@ EOF
        text  => 'L 171 Karl-Marx-Str. OD Hohen Neuendorf, Krz. K.-Tucholsky-Str. grundh.Straßenbau, Kreisverk. Vollsperrung 09.07.2007-02.11.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 1379,29410 1611,29359
+userdel	q4::inwork 1366,29416 1611,29359
 EOF
      },
      { from  => 1186264800, # 2007-08-05 00:00
