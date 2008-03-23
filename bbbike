@@ -6172,7 +6172,7 @@ sub generate_plot_functions {
 		if ($cat_hin =~ /^F:(.*)$/) { # Fläche, no $cat_rueck handling here
 		    $category = $1;
 		    my($color, $rest) = split(/\|/, $category);
-		    my $stipple = ($layer_category_stipple{$abk} && $layer_category_stipple{$abk}{$category}) || $category_stipple{$category};
+		    my $stipple = ($layer_category_stipple{$abk} && $layer_category_stipple{$abk}{$category}) || $layer_stipple{$abk} || $category_stipple{$category};
 		    if (defined $rest && $rest ne "") {
 			if ($rest =~ /^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/) {
 			    $image = $1;
@@ -6183,8 +6183,7 @@ sub generate_plot_functions {
 		    }
 		    if ($color eq 'I') { $abk = 'i' } # Inseln
 		    $color = ($layer_category_color{$abk} && $layer_category_color{$abk}{$color}) || $category_color{$color} || $color;
-		    $stipple = Tk::findINC($stipple) if $stipple;
-		    $stipple = '@' . $stipple if $stipple;
+		    $stipple = load_stipple($stipple) if $stipple;
 		    if ($str_outline{$abk} && @coordlist > 2) {
 			$item = $c->createPolygon
 			  (@coordlist,
@@ -6287,6 +6286,8 @@ sub generate_plot_functions {
 		    } else { # lines
 			my @std_tags = ($abk, $strname,"$abk-$cat_hin","$abk-" . $i);
 			my $line_dash = ($layer_category_dash{$abk} && $layer_category_dash{$abk}{$cat_hin}) || $layer_line_dash{$abk} || $category_dash{$cat_hin} || $line_dash{$abk};
+			my $stipple = ($layer_category_stipple{$abk} && $layer_category_stipple{$abk}{$category}) || $layer_stipple{$abk} || $category_stipple{$category};
+			$stipple = load_stipple($stipple) if $stipple;
 		        if (@addinfo_hin) { # ignore @addinfo_rueck for now
 			    for my $addinfo_hin (@addinfo_hin) {
 			        if ($addinfo_hin =~ $tunnel_qr) {
@@ -6310,6 +6311,7 @@ sub generate_plot_functions {
 			       -tags      => ["$abk-out",
 					      "$abk-$cat_hin-out"],
                                ($line_dash ? (-dash => $line_dash) : ()),
+			       ($stipple ? (-stipple => $stipple) : ()),
 			       (exists $layer_line_arrow{$abk}{$cat_hin} ? (-arrow => $layer_line_arrow{$abk}{$cat_hin})
 				: exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
 			      );
@@ -6356,6 +6358,7 @@ sub generate_plot_functions {
 				     -tags  => [@std_tags,
 						@extra_tags],
 				     ($line_dash ? (-dash => $line_dash) : ()),
+				     ($stipple ? (-stipple => $stipple) : ()),
 				     #(exists $line_arrow{$cat} ? (-arrow => $line_arrow{$cat}) : ()),
 				     -arrow => "last",
 				    );
@@ -6385,6 +6388,7 @@ sub generate_plot_functions {
 				 -joinstyle => 'bevel',
 				 -tags      => [@std_tags,
 						@extra_tags],
+				 ($stipple ? (-stipple => $stipple) : ()),
 				 ($line_dash ? (-dash => $line_dash) : ()),
 				 (exists $layer_line_arrow{$abk}{$cat_hin} ? (-arrow => $layer_line_arrow{$abk}{$cat_hin})
 				: exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
@@ -13588,6 +13592,7 @@ sub reset_free_layer {
     delete $layer_line_width{$abk};
     delete $layer_line_length{$abk};
     delete $layer_line_arrow{$abk};
+    delete $layer_stipple{$abk};
     delete $layer_line_dash{$abk};
     delete $layer_category_size{$abk};
     delete $layer_category_color{$abk};
@@ -16268,18 +16273,20 @@ sub show_route_strname {
 	    $toplevel{strlist}->withdraw;
 	} else {
 	    my $was_withdrawn = $toplevel{strlist}->state ne "normal";
-	    $toplevel{strlist}->deiconify;
-	    # raise nur ausführen, wenn es wirklich was zu sehen gibt
-	    #$toplevel{strlist}->raise;
-
 	    #XXX maybe combine with code below
-	    if ($was_withdrawn && eval {require Tk::Placement; 1; }) {
-		# XXX use placer also for other toplevels --- replace
-		# all Popup(@popup_style) calls?
-		warn "Use Tk::Placement, yet experimental..." if $devel_host;
-		Tk::Placement::placer($toplevel{strlist}, -screen => $c,
-				      -addx => 20, -addy => 25, # XXX for fvwm
-				     );
+	    if ($was_withdrawn) {
+		if (eval {require Tk::Placement; 1; }) {
+		    # XXX use placer also for other toplevels --- replace
+		    # all Popup(@popup_style) calls?
+		    warn "Use Tk::Placement, yet experimental..." if $devel_host;
+		    Tk::Placement::placer($toplevel{strlist}, -screen => $c,
+					  -addx => 20, -addy => 25, # XXX for fvwm
+					  );
+		} else {
+		    $toplevel{strlist}->deiconify;
+		    # raise nur ausführen, wenn es wirklich was zu sehen gibt
+		    #$toplevel{strlist}->raise;
+		}
 	    }
 
 	}
@@ -19451,6 +19458,20 @@ sub load_cursor {
 	    $cursor_mask{$key} = $mask;
 	}
     }
+}
+
+sub load_stipple {
+    my($def) = @_;
+    return $stipple{$def} if exists $stipple{$def};
+    if ($def =~ m{^gray(?:25|50|75)$}) { # some builtins
+	$stipple{$def} = $def;
+    } else {
+	$stipple{$def} = Tk::findINC($def);
+	if ($stipple{$def}) {
+	    $stipple{$def} = '@' . $stipple{$def};
+	}
+    }
+    $stipple{$def};
 }
 
 # do a correct isa call on scrolled widgets

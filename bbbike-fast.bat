@@ -1,1 +1,2 @@
-perl bbbike -fast
+@echo off
+bbbike.bat -fast

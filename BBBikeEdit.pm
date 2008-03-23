@@ -2347,7 +2347,7 @@ sub editmenu {
     my $sample_b;
     {
 	my $f0 = $t->Frame->pack(-fill => 'x');
-	$sample_b = $f0->Button(-text => "Reload",
+	$sample_b = $f0->Button(-text => M("Neu laden"),
 		    -command => sub { main::reload_all() },
 		    -anchor => "w",
 		   )->pack(-side => "left", -fill => "x", -expand => 1);
@@ -2355,7 +2355,7 @@ sub editmenu {
 				    -variable => \$auto_reload,
 				    -anchor => "w",
 				   )->pack(-side => "left");
-	my $chb = $f0->Checkbutton(-text => "Crosshairs",
+	my $chb = $f0->Checkbutton(-text => "Crosshairs", # XXX translation?
 				   -variable => \$crosshairs_activated,
 				   -command => sub {
 				       require BBBikeCrosshairs;
@@ -2368,8 +2368,8 @@ sub editmenu {
 				   -anchor => "w",
 				  )->pack(-side => "left");
 	if (Tk::Exists($main::balloon)) {
-	    $main::balloon->attach($auto, -msg => "Automatic Reload after each change");
-	    $main::balloon->attach($chb, -msg => M(<<EOF));
+	    $main::balloon->attach($auto, -msg => M('Automatisches Neuladen nach jeder Änderung'));
+	    $main::balloon->attach($chb, -msg => M(<<EOF)); # XXX translation
 F4: rotate crosshairs to left
 F5: rotate crosshairs to right
 Shift-F4: make crosshairs right-angled
@@ -2382,7 +2382,7 @@ EOF
     my $insert_point_mode = 0;
     my $old_mode;
     my $cb = $t->Checkbutton
-	(-text => "Insert point",
+	(-text => M("Punkt einfügen"),
 	 -indicatoron => 0,
 	 -variable => \$insert_point_mode,
 	 -command => sub {
@@ -2403,7 +2403,7 @@ EOF
 	 -anchor => "w", 
 	)->pack(-fill => "x");
     $cb->configure(-pady => ($sample_b->reqheight-$cb->reqheight)/2);
-    $t->Button(-text => "Insert multiple points",
+    $t->Button(-text => M("Mehrere Punkte einfügen"),
 	       -command => sub {
 		   if (main::insert_multi_points() && $auto_reload) {
 		       main::reload_all();
@@ -2416,7 +2416,7 @@ EOF
 	$f->gridColumnconfigure($_, -weight => 29) for (0, 1);
 
 	my $row = 0;
-	$f->Button(-text => "Move point (F3)",
+	$f->Button(-text => M("Punkt bewegen (F3)"),
 		   -command => sub {
 		       if (main::change_points() && $auto_reload) {
 			   main::reload_all();
@@ -2424,7 +2424,7 @@ EOF
 		   },
 		   -anchor => "w",
 		  )->grid(-column => 0, -row => $row, -sticky => "nesw");
-	$f->Button(-text => "Move line",
+	$f->Button(-text => M("Linie bewegen"),
 		   -command => sub {
 		       if (main::change_line() && $auto_reload) {
 			   main::reload_all();
@@ -2435,11 +2435,11 @@ EOF
 
 	$row++;
 
-	$f->Button(-text => "Grep point",
+	$f->Button(-text => M("Punkt suchen"),
 		   -command => \&main::grep_point, # never reload necessary
 		   -anchor => "w",
 		  )->grid(-column => 0, -row => $row, -sticky => "nesw");
-	$f->Button(-text => "Grep line",
+	$f->Button(-text => M("Linie suchen"),
 		   -command => \&main::grep_line, # never reload necessary
 		   -anchor => "w",
 		  )->grid(-column => 1, -row => $row, -sticky => "nesw");
@@ -2451,11 +2451,11 @@ EOF
 		     : BBBikeEditUtil::get_orig_files()
 		    );
 	if (!@files) {
-	    main::status_message("No files in $main::datadir found", "err");
+	    main::status_message(Mfmt("Keine Dateien in %s gefunden", $main::datadir), "err");
 	    return;
 	}
 	my $f = $t->Frame->pack(-anchor => "w");
-	$f->Button(-text => "Add new to: ",
+	$f->Button(-text => M("Neu hinzufügen zu: "),
 		   -command => sub {
 		       my $file = $sel_file;
 		       if ($file !~ m|^/|) { # XXX use file_name_is_absolute
@@ -2475,17 +2475,17 @@ EOF
 	$be->Subwidget("slistbox")->configure(-exportselection => 0);
 	$be->insert("end", @files);
     }
-    $t->Button(-text => "Delete point",
+    $t->Button(-text => M("Punkt löschen"),
 	       -command => \&main::delete_point,
 	       -anchor => "w",
 	      )->pack(-fill => "x");
 ##XXX not yet:
-#     $t->Button(-text => "Delete lines",
+#     $t->Button(-text => M("Linien löschen"),
 # 	       -command => \&main::delete_lines,
 # 	       -anchor => "w",
 # 	      )->pack(-fill => "x");
     $t->Label(-justify => "left",
-	      -text => "Use F8 to edit element under mouse cursor.\nAlternatively use F2 for insert point.",
+	      -text => M("F8 zum Editieren des Elements unter dem Mauszeiger.\nF2 zum Einfügen eines Punktes."),
 	     )->pack(-anchor => "w");
     $t->update;
     if (!$geometry) {
@@ -2499,7 +2499,7 @@ EOF
 sub addnew {
     my($top, $file) = @_;
     if (!@main::inslauf_selection) {
-	main::status_message("No points to add", "err");
+	main::status_message(M("Keine Punkte zum Einfügen"), "err");
 	return;
     }
     return if !BBBikeEdit::ask_for_co($top, $file);
@@ -2508,7 +2508,7 @@ sub addnew {
     if ($main::coord_system_obj->coordsys ne $std_prefix) {
 	$prefix = $main::coord_system_obj->coordsys;
     }
-    my $t = $top->Toplevel(-title => "Add new");
+    my $t = $top->Toplevel(-title => M("Neu hinzufügen"));
     $t->transient($top) unless defined $main::transient && !$main::transient;
     $t->Popup(@main::popup_style);
     my($name, $cat, $coords);

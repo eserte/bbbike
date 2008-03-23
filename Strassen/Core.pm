@@ -1407,6 +1407,7 @@ sub switch_encoding {
     my($fh, $value) = @_;
     # The encoding directive is executed immediately
     eval q{
+	die "No UTF-8 support with this perl version ($])" if $] < 5.008;
 	die "UTF-8 bugs with perl 5.8.0" if $] < 5.008001;
 	binmode($fh, ":encoding($value)")
     };

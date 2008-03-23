@@ -2565,7 +2565,7 @@ sub buttonpoint {
     if (defined $x) {
 	my $coord = sprintf "$prefix%s,%s", $coord_output_sub->($x, $y);
 	push(@inslauf_selection, $coord);
-	$c->clipboardAppend(" $coord") if $use_clipboard;
+	clipboardAppendToken($coord);
 	my $ext = prepare_selection_line
 	    (-name => "?",
 	     -coord1 => Route::_coord_as_string([$x,$y]),
@@ -2612,7 +2612,7 @@ sub buttonpoint {
 		     -coord2 => Route::_coord_as_string([$x,$y]));
 		my $str = ($use_prefix ? $prefix : "") . Route::_coord_as_string([$x,$y]);
 		push(@inslauf_selection, $str);
-		$c->clipboardAppend(" $str") if $use_clipboard;
+		clipboardAppendToken($str);
 		push_ext_selection($s);
 	    } elsif ($tags[0] eq 'o' ||
 		     $tags[0] eq 'fz') {
@@ -2634,7 +2634,7 @@ sub buttonpoint {
 		   -coord2 => Route::_coord_as_string([$x,$y]));
 		my $str = $prefix . Route::_coord_as_string([$x,$y]);
 		push(@inslauf_selection, $str);
-		$c->clipboardAppend(" $str") if $use_clipboard;
+		clipboardAppendToken($str);
 		push_ext_selection($s);
 	    } else {
 		die "Tag $tags[0] wird für das Aufzeichnen von Punkten nicht unterstützt";
@@ -2644,6 +2644,17 @@ sub buttonpoint {
 	}
     }
     ($rx,$ry);
+}
+
+### AutoLoad Sub
+sub clipboardAppendToken {
+    if ($use_clipboard) {
+	my($token) = @_;
+	if (eval { $c->clipboard('get') } ne '') {
+	    $c->clipboardAppend(" ");
+	}
+	$c->clipboardAppend($token);
+    }
 }
 
 ### AutoLoad Sub

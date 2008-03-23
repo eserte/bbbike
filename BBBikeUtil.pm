@@ -293,7 +293,7 @@ sub umlauts_to_german {
 }
 
 BEGIN {
-    if (eval { require Storable; 1 }) {
+    if (eval { require Storable; $Storable::VERSION >= 2 }) { # need the ability to clone CODE items XXX determine correct Storable version
 	*clone = sub ($) {
 	    my $o = shift;
 	    local $Storable::Deparse = $Storable::Deparse = 1;
@@ -304,6 +304,7 @@ BEGIN {
 	*clone = sub ($) {
 	    my $o = shift;
 	    require Data::Dumper;
+	    # Seems to segfault with Sieperl 5.6.1 when cloning in show_overview_populate
 	    eval Data::Dumper::Dumper($o);
 	};
     }

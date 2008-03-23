@@ -1307,7 +1307,8 @@ and modules.
 =item Turn all comments in Strassen/*.pm into Pod.
 
 =item Waypoint+ besorgen. geht der export ueberhaupt? gibt es extensions?
-geht ein import?
+geht ein import? -> export geht (txt only), import geht nicht (binary!), will ich
+auch nicht implementieren
 => Programm ist downgeloaded und in distfiles/windows, install and check
 
 =back
@@ -1594,6 +1595,8 @@ example:
  http://el-tramo.be/guides/fancy-dmg/
  http://el-tramo.be/files/fancy-dmg/Makefile
 
+-> Wolfram did something. Make it available!
+
 =item * (H1)
 
 Drawing custom category images seems to not work in lazy mode (try:
@@ -1626,6 +1629,8 @@ Possibilities under Windows:
 
 - Interface gpsbabel (but then gpsbabel has to be bundled...)
   -> Already implemented, and seems to work. Bundling is missing, though...
+  -> gpsbabel does not have an installer. maybe file an bug report and ask the
+     author to use innosetup?
 
 - Use Device::USB and try to make it work with LibUsb-Win32
 (L<http://sourceforge.net/projects/libusb-win32/>). But I have yet to

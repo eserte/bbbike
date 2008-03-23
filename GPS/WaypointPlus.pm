@@ -85,9 +85,10 @@ sub convert_from_route {
 
     my $obj = $Karte::Polar::obj;
 
+    # need explicite DOS newlines!
     my $s = <<EOF;
-Datum,WGS84,WGS84,0,0,0,0,0
-
+Datum,WGS84,WGS84,0,0,0,0,0\r
+\r
 EOF
     my @path;
     if ($args{-simplify}) {
@@ -100,7 +101,7 @@ EOF
     my $is_first = 1;
     foreach my $xy (@path) {
 	my($polar_x, $polar_y) = $obj->standard2map(@$xy);
-	$s .= sprintf "TP,D,%.5f,%.5f,00/00/00,00:00:00,%d\n", $polar_y, $polar_x, $is_first;
+	$s .= sprintf "TP,D,%.5f,%.5f,00/00/00,00:00:00,%d\r\n", $polar_y, $polar_x, $is_first;
 	$is_first = 0 if $is_first;
     }
 

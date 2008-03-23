@@ -69,7 +69,7 @@ use vars qw(
      $default_line_width %line_shorten
      %layer_category_size %category_size %outline_color
      %layer_category_color %category_color
-     %layer_category_stipple %category_stipple
+     %layer_category_stipple %layer_stipple %category_stipple
      %str_color %p_color %p_width
      %category_font_color %category_font
      %layer_category_width %category_width
@@ -226,7 +226,7 @@ use vars qw($status_label $status_button $status_button_column
 	    $edit_mode_type $edit_mode_indicator
 	    $indicator_frame);
 
-use vars qw(%cursor %cursor_mask);
+use vars qw(%cursor %cursor_mask %stipple);
 use vars qw(%busy_watch_args);
 use vars qw($pp_color);
 use vars qw($xadd_anchor_type $yadd_anchor_type %label_spaceadd);

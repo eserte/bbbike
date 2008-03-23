@@ -1066,6 +1066,15 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	2::inwork -48765,8671 -48756,8604
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1262300399,
+         'text' => 'Rückbau der Fr.-Ebert-Str. zwischen Breiter Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Unter Umständen Umfahrung über Alten Markt notwendig. ',
+         'from' => 1206305145,
+         'id' => 1318,
+         'data' => 'userdel	2::inwork -12719,-1661 -12755,-1585 -12773,-1544
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -11099,4 +11099,12 @@ EOF
 userdel	2::inwork -48765,8671 -48756,8604
 EOF
      },
+     { from  => 1206305145, # 2008-03-23 21:45
+       until => 1262300399, # 2009-12-31 23:59
+       text  => 'Rückbau der Fr.-Ebert-Str. zwischen Breiter Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Unter Umständen Umfahrung über Alten Markt notwendig. ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -12719,-1661 -12755,-1585 -12773,-1544
+EOF
+     },
     );
