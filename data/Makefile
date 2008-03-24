@@ -632,7 +632,9 @@ kneipen:	kneipen.yml
 SEHENSWUERDIGKEIT_IMG_PNG_SRC=	bodemuseum_klein \
 				wasserturm_ostkreuz \
 				friedrichswerdersche_kirche_klein \
-				heilandskirche_sacrow
+				heilandskirche_sacrow \
+				sanssouci \
+				chinesisches_haus
 data-images:	${SEHENSWUERDIGKEIT_IMG_PNG_SRC:S/^/sehenswuerdigkeit_img\//:S/$/.gif/}
 
 .for img in ${SEHENSWUERDIGKEIT_IMG_PNG_SRC}
