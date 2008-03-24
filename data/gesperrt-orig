@@ -160,8 +160,8 @@ Griechische Allee	1 17962,6674 18005,6681 18046,6687 18146,6703 18339,6660 18494
 Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18080,6670 18049,6671 18008,6672 17962,6674
 Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5590,11118 5542,11075
 (Waterlooufer - Zossener Str.)	1 9849,10202 9812,10211
-Greinerstr.	1 8340,3365 8327,2975
-Dederingstr.	1 8457,2965 8472,3395
+Greinerstr.	1 8347,3382 8327,2975
+Dederingstr.	1 8457,2965 8478,3414
 # hmmm?
 #Corneliusstr.	1 7762,7796 7847,7852 7863,7854
 Weserstr. (Friedrichshain)	1 14416,11815 14471,11782
@@ -604,7 +604,7 @@ Helbigstr.	1s 20109,4087 20339,3779 20362,3750
 #: by Andreas (johnnyyen):
 Friedrich-Wilhelm-Str.	1s 8385,5907 8282,5909
 Sophie-Taeuber-Arp-Weg	1s 3302,2471 3293,2218
-Seelbuschring	1s 8473,4614 8432,4712 8242,4648
+Seelbuschring	1s 8485,4619 8432,4712 8242,4648
 #: note: die Straßenbahn fährt hier auch lang
 Zionskirchstr.	1s:q1 10389,14274 10426,14262
 Walsroder Str.	1s 6396,5125 6295,5132 6203,5138 6089,5145
@@ -661,13 +661,14 @@ Alt-Kaulsdorf: Mittelstreifen	3nocross 22484,11270 22756,11268 22937,11265
 Alt-Mahlsdorf: Mittelstreifen	3nocross 24173,11279 24017,11275 23648,11265
 Suermondtstr: Straßenbahntrasse	3nocross 15918,16383 16095,16331 16260,16282 16416,16236
 Suermondtstr: Straßenbahntrasse	3nocross 16416,16236 16515,16207 16654,16167
+Marienfelder Chaussee: Mittelstreifen	3nocross 11002,1211 11155,1273 11198,1291
 #: by: ^^^
 #: by: Jörg Böhmer
 Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3nocross -3043,16601 -3046,16548 -3050,16429
 #: note: Luftbild
 Marienfelder Chaussee: Mittelstreifen	3nocross 10759,1112 10827,1140 11002,1211
 Oranienburger Str.: Mittelstreifen	3nocross 5517,20120 5545,19909 5533,19811
-Bahntrasse	3nocross 15868,1790 15835,1736 15639,1422
+Bahntrasse	3nocross 15875,1796 15835,1736 15729,1573 15639,1422
 Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
 Schloßstr.: Mittelstreifen	3nocross 4741,5309 4748,5357 4861,5581
 #: note: Luftbild
@@ -983,7 +984,7 @@ Drängelgitter	BNP:5 24815,11329
 Drängelgitter	BNP:5 7935,4466
 Drängelgitter	BNP:5 6560,21084
 Drängelgitter	BNP:5 6613,21116
-Drängelgitter/Schranke	BNP:5 9998,5210
+Drängelgitter/Schranke	BNP:5 10012,5210
 Schranke (Kopfstr.)	BNP:5 12571,7899
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:2 14562,10079
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:2 14600,10128

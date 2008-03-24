@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.25 2008/02/28 21:23:18 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.25 2008/02/28 21:23:18 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2008 Slaven Rezic. All rights reserved.
@@ -110,6 +110,7 @@ sub find_street {
 	return;
     }
     $strname =~ s{\[.*\]}{}g; # remove special [...] parts
+    $strname =~ s{:\s+.*}{}g; # also remove everything after ":"
     my($street, @subcityparts) = Strasse::split_street_citypart($strname);
     if (!@subcityparts) {
 	my $plz = PLZ->new;

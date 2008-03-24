@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.58 2008/02/24 23:41:15 eserte Exp $
+# $Id: BBBikeVar.pm,v 1.58 2008/02/24 23:41:15 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000-2008 Slaven Rezic. All rights reserved.
@@ -63,7 +63,7 @@ $SF_BBBIKE_LATEST_RELEASE_ID = 377515; # change for new releases
 
 # Distribution directory for scripts. Unfortunately there's no directory
 # index available anymore at sourceforge...
-$DISTDIR	   = 'http://heanet.dl.sourceforge.net/sourceforge/bbbike';
+$DISTDIR	   = 'http://dfn.dl.sourceforge.net/sourceforge/bbbike';
 $DISTFILE_SOURCE   = "$DISTDIR/BBBike-$STABLE_VERSION.tar.gz";
 $DISTFILE_WINDOWS  = "$DISTDIR/BBBike-$WINDOWS_VERSION-Windows.exe";
 # Distribution directory for humans (link to 'show files' at sourceforge, and restricted to BBBike)

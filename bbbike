@@ -5514,10 +5514,11 @@ sub define_item_attribs {
 	$category_font{$_} = $category_font{'P'};
     }
 
-    #$pp_color = '#008000'; # worse contrast with rbahn, not good with Bundesstraﬂe, but better with fragezeichen
+    #$pp_color = '#008000'; # bad contrast with rbahn, not good with Bundesstraﬂe, but better with fragezeichen
     # second element is color for real crossing, but not yet activated
     #$pp_color = ['#800000', 'blue'];
-    $pp_color = '#800000';
+    #$pp_color = '#800000'; # bad contrast with fragezeichen
+    $pp_color = '#000080';
 
     for my $nr (0, 1, 2) {
 	$category_color{'W' . $nr}      = $category_color{'W'};
@@ -12879,6 +12880,9 @@ sub show_info {
 		require CGI;
 		CGI->import('-oldstyle_urls');
 		(my $name = $name) =~ s{(str)\.}{$1aﬂe}gi;
+		# XXX duplicated in LuiseBerlin.pm
+		$name =~ s{\[.*\]}{}g; # remove special [...] parts
+		$name =~ s{:\s+.*}{}g; # also remove everything after ":"
 		($name, my @cityparts) = Strasse::split_street_citypart($name);
 		my $common_q = ($outside_berlin ? '' : qq{Berliner }) .
 		    qq{"$name"} . (@cityparts ? " ".join(" ",@cityparts) : "");
