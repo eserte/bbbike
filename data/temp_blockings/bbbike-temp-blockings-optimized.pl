@@ -1030,15 +1030,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1206399600,
-         'text' => 'B 113 B 2 - Damitzow - BG Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 21.03.2008-24.03.2008 ',
-         'from' => 1205967600,
-         'id' => 1313,
-         'data' => 'userdel	2::inwork 72960,97477 73017,97449 73031,97443
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1207432800,
          'text' => 'L 222 Gransee - Menz zw. Menz und Kreuz. Zernickow Straßeninstandsetzung Vollsperrung 31.03.2008-05.04.2008 ',

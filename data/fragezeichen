@@ -271,7 +271,7 @@ Zühlen - Rheinsberg: Qualität?	? -30695,73610 -30112,73900 -27371,75722
 Zühlen - Binenwalde: Qualität?	? -30695,73610 -30962,73512 -31387,73037 -31537,72225 -31787,71700 -32112,71377
 Beerenbusch - Zechlinerhütte: Qualität?	? -22787,81662 -23550,82037 -24975,82587 -26520,83231
 Neuglobsow - Rheinsberg: laut http://www.ruppin.de/rheinsberg/freizeit/sport/radw_neuglobsow.html teilweise Waldweg, teilweise Radweg?	? -14354,81575 -14795,81699 -14946,81614 -15229,81572 -15596,81274 -15943,81207 -16224,80970 -16961,80707 -17299,80205 -17707,79391 -17901,79432 -18074,79390 -18050,79047 -18179,78812 -18200,78576 -18350,78427 -18393,78235 -18544,78020
-Hasselwerderstr.: Einbahnstraße, auch für Radfahrer?	? 18268,5739 18023,5623
+Hasselwerderstr.: Einbahnstraße, auch für Radfahrer?	? 18268,5739 18164,5701 18023,5623
 Mittelweg (Altglienicke, Bohnsdorf): Qualität (laut ADFC-Karte mäßig geeignet)?	? 20265,858 20171,698 20035,348
 Neubrandenburg: Hinterste Mühle - Stadt (Waldweg), wie geht es weiter?	? -78,126443 -112,126528 -62,126684 -96,126768 -231,126900 -428,127368 -493,127450 -671,127478
 Eichbuschallee: Teil der Eichbuschallee im Plänterwald: Qualität?	? 16136,7886 16534,8182
@@ -911,7 +911,7 @@ Am Kornfeld: Qualität?	? 23648,11265 23679,11372 23714,11477 23799,11646 23851,1
 Geschwister-Scholl-Str. (Neu-Zittau): Qualität?	? 34242,-1784 33628,-1509
 Dornröschenstr.: Qualität?	? 22748,6714 22888,6712 23034,6719 23086,6730 23164,6753 23217,6779 23284,6819 23372,6896 23444,6980
 Mühlweg: Qualität?	? 24629,5831 24666,5726 24700,5633
-Rudower Str.: Qualität?	? 19031,5316 18999,5237 18942,5236 18820,5275 18659,5330 18307,5440
+Köllnische Str.: Qualität?	? 19031,5316 18999,5237 18942,5236 18820,5275 18659,5330 18307,5440
 Rodenkirchener Str.: Qualität?	? 19974,-317 19971,-234 19960,-158 19943,-118 19909,-75
 Flottsteller Str. (Michendorf): Qualität (wahrscheinlich asphaltiert)?	? -15891,-10464 -15769,-10534 -15613,-10667 -15182,-10981 -15018,-11070 -14861,-11221
 Stieleichenstr. (Schönfließ): Qualität (wahrscheinlich asphaltiert oder betoniert)?	? 4424,26240 4387,26270 4340,26311 4302,26352 4287,26368 4262,26415 4239,26458 4213,26461 4182,26463 4136,26489 4105,26533 4095,26547
@@ -1215,11 +1215,43 @@ Marientaler Str.: Qualität?	? 13716,5441 13919,5547
 Zaandamer Str.: Qualität?	? 13625,5646 13829,5740
 Tilburger Str.: Qualität?	? 13870,5436 13893,5374
 Willstätterstr.: Qualität?	? 14193,6556 14360,6689
+Moosstr.: Qualität?	? 18918,4971 18924,5057 18945,5082 19173,5139 19210,5150 19255,5164 19328,5188 19424,5217 19445,5271
+Moosstr., Wohngebiet: Qualität? Einbahnstraße Richtung Süden, auch für Radfahrer?	? 19255,5164 19294,5033 19306,4969 19312,4940
+Moosstr., Wohngebiet: Qualität? Einbahnstraße Richtung Norden, auch für Radfahrer?	? 19245,4931 19241,4958 19236,5025 19233,5076 19210,5150
+Moosstr., Wohngebiet: Qualität?	? 19294,5033 19236,5025
+Moosstr., Wohngebiet: Qualität?	? 19306,4969 19241,4958
+Farnstr.: Qualität?	? 19402,4900 19384,5010 19328,5188
+Erikastr.: Qualität?	? 19500,4919 19477,5048 19424,5217
+Eisblumensteig: Qualität?	? 19579,4931 19576,4986 19553,5079 19541,5100 19520,5176 19524,5201 19534,5242
+Weiderichstr.: Qualität?	? 19744,5063 19814,5056 19838,5048 19901,5015
+Weiderichplatz: Qualität? Einbahnstraße?	? 19814,5056 19805,5025 19816,5015 19830,5019 19838,5048
+Silbergrasweg: Qualität? Existiert für Radfahrer eine Durchfahrt zur Oberspreestr.?	? 19686,4894 19760,4907 19858,4960 19901,5015 19926,5055 19940,5090
+Johanna-Tesch-Str.: Qualität?	? 19715,5185 19743,5271 19756,5313 19928,5365 20030,5334 19998,5226 19930,5247 19919,5214 19743,5271
+Hainstr.: Qualität?	? 18370,5511 18370,5647 18349,5744 18314,5825
+Fließstr.: Qualität?	? 18164,5701 18017,5783 17877,5860
+Flutstr.: Qualität?	? 18017,5783 17980,5721 17931,5695 17916,5675
+Allmersweg: Qualität?	? 17855,5236 17789,5189
+Greifstr.: Qualität?	? 17906,5170 17854,5131 17780,5086
+Am Grünen Anger: Qualität?	? 17854,5131 17959,4955 18031,4831
+Pilotenstr.: Qualität?	? 18116,4898 18031,4831 17956,4787 17868,4742 17826,4730
+Nieberstr.: Qualität?	? 18030,5010 17959,4955 17885,4912 17792,4875 17760,4867
+Engelhardstr.: Qualität?	? 17774,4966 17792,4875 17826,4730 17881,4521
+Pietschkerstr.: Qualität?	? 17770,5108 17729,5091 17652,5082 17601,5090
+Am Haselbusch: Qualität? Durchfahrt für Autos möglich?	? 17463,4964 17349,5000 17291,5045
+Redwitzgang: Qualität?	? 17266,4720 17225,4568
+Redwitzgang nördlich des Königsheidewegs: Offizieller Straßenname? Qualität? Durchfahrt möglich?	? 17266,4720 17303,4824
+Haushoferstr.: Qualität?	? 17115,4757 17106,4701 17111,4643 17125,4565 17173,4392
+Hoevelstr.: Qualität?	? 17290,4308 17173,4392 17111,4414 17025,4462 16954,4501
+Fielitzstr.: Qualität?	? 17276,4539 17173,4392 17113,4295 17095,4208 17066,4149 17027,4090
+Megedestr.: Qualität?	? 17244,4242 17113,4295 17092,4297 17001,4307 16909,4309
+Koschatweg: Qualität?	? 17111,4643 17053,4622 17020,4588 16954,4501 16814,4315 16659,4109 16674,4096
+Rollettweg: Qualität?	? 16814,4315 16878,4268 16966,4191
+Draesekestr.: Qualität?	? 16887,4105 16966,4191 17092,4297
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
 # added from other sources: (strassen plaetze landstrassen landstrassen2 strassen_bab flaechen wasserstrassen wasserumland wasserumland2 sbahn sbahnhof rbahn rbahnhof ubahn ubahnhof faehren hoehe orte orte2 orte_city ampeln ampelschaltung plz potsdam deutschland grenzuebergaenge sehenswuerdigkeit obst radwege qualitaet_s qualitaet_l handicap_s handicap_l vorfahrt nolighting housenumbers green brunnels gesperrt gesperrt_car gesperrt_u gesperrt_s gesperrt_r comments_cyclepath comments_danger comments_ferry comments_misc  comments_mount comments_path comments_route  comments_tram comments_kfzverkehr comments_scenic fragezeichen exits multi_bez_str)
-Bärenlauchstr.: gut geeignet (laut ADFC-Karte)	? 19722,5179 19745,4972 19760,4875
+Bärenlauchstr.: gut geeignet (laut ADFC-Karte)	? 19737,5176 19744,5063 19751,4961 19760,4907 19760,4875
 (Benekendorffstr - Lübars): mäßig geeignet (laut ADFC-Karte)	? 6606,23655 6674,23683 6744,23695
 (Alt-Hermsdorf - Zehntwerderweg): mäßig geeignet (laut ADFC-Karte)	? 4582,23035 4619,22934 4626,22914 4679,22766
 Grumbkowstr.: mäßig geeignet (laut ADFC-Karte)	? 11269,20667 11419,20327 11563,20048 11730,19684
