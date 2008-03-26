@@ -11107,4 +11107,13 @@ EOF
 userdel	2::inwork -12719,-1661 -12755,-1585 -12773,-1544
 EOF
      },
+     { from  => 1206490011, # 2008-03-26 01:06
+       until => 1211579999, # 2008-05-23 23:59
+       text  => 'Gormannstr. (Mitte) Kreuzung Linienstr. Baustelle, Straße vollständig gesperrt (bis 23.05.)',
+       type  => 'handicap',
+       source_id => 'IM_008182',
+       data  => <<EOF,
+userdel	q4::inwork 10385,13548 10432,13678 10445,13752
+EOF
+     },
     );
