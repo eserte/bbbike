@@ -12967,7 +12967,7 @@ sub show_info {
 	my @mapserver_def = ([$BBBike::BBBIKE_MAPSERVER_ADDRESS_URL,
 			      "Mapserver"]);
 	if ($devel_host) {
-	    push @mapserver_def, [defined $ENV{BBBIKE_TEST_CGIDIR} ? "$ENV{BBBIKE_TEST_CGIDIR}/mapserver_address.cgi" : "http://www/~eserte/bbbike/cgi/mapserver_address.cgi", "Lokaler Mapserver", "is_local"];
+	    push @mapserver_def, [defined $ENV{BBBIKE_TEST_CGIDIR} ? "$ENV{BBBIKE_TEST_CGIDIR}/mapserver_address.cgi" : "http://localhost/bbbike/cgi/mapserver_address.cgi", "Lokaler Mapserver", "is_local"];
 	}
 
 	my @mapext = $c->get_corners;
@@ -13061,7 +13061,7 @@ sub show_info {
 
 	my @bbbike_cgi_def = ([$BBBike::BBBIKE_DIRECT_WWW, "BBBike im WWW"]);
 	if ($devel_host) {
-	    push @bbbike_cgi_def, [defined $ENV{BBBIKE_TEST_CGIDIR} ? "$ENV{BBBIKE_TEST_CGIDIR}/bbbike.cgi" : "http://www/~eserte/bbbike/cgi/bbbike.cgi", "lokal: BBBike im WWW"];
+	    push @bbbike_cgi_def, [defined $ENV{BBBIKE_TEST_CGIDIR} ? "$ENV{BBBIKE_TEST_CGIDIR}/bbbike.cgi" : "http://localhost/bbbike/cgi/bbbike.cgi", "lokal: BBBike im WWW"];
 	}
 
 	my $zielname = "";
