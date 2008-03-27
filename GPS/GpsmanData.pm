@@ -961,6 +961,7 @@ sub as_gpx {
 	    }
 	}
     }
+    require Encode;
     Encode::encode("utf-8", $dom->toString);
 }
 
