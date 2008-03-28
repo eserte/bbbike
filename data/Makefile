@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.179 2008/03/04 21:02:55 eserte Exp eserte $
+# $Id: Makefile,v 2.180 2008/03/27 00:45:35 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1504,12 +1504,22 @@ cgpsmapper-output:	${CGPSMAPPER_MP_FILES}
 
 cgpsmapper-images:	${CGPSMAPPER_IMG_FILES}
 
-cgpsmapper-upload:	${SENDMAP} cgpsmapper-images do-cgpsmapper-upload
+cgpsmapper-upload:	${SENDMAP} cgpsmapper-images cgpsmapper-upload-instructions
+
+## Formerly:
+#cgpsmapper-upload:	${SENDMAP} cgpsmapper-images do-cgpsmapper-upload
 
 do-cgpsmapper-upload:
 	@echo "Approx. upload time: half an hour for 1,7 MB data"
 	@echo "                     35 minutes   for 1,94 MB data"
 	-${SENDMAP} ${GPSPORT} ${SENDMAP_ARGS} ${CGPSMAPPER_IMG_FILES}
+
+cgpsmapper-upload-instructions:
+	@echo "Please mount the garmin device e.g. to /mnt/garmin"
+	@echo "and then do:"
+	@echo ""
+	@echo "    cp ../tmp/bbbikeall.img /mnt/garmin/garmin/gmapsupp.img"
+	@echo ""
 
 ${PERSISTENTTMPDIR}/bbbike.mp:	${BBD2POLISH} \
 				strassen wasserstrassen flaechen sbahn ubahn berlin faehren fragezeichen
