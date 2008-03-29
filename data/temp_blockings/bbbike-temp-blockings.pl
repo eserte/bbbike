@@ -11049,9 +11049,9 @@ EOF
 userdel	2::inwork 22654,-103425 22256,-103785
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Stresowstr. (Spandau) in beiden Richtungen am Stresowplatz Baustelle, Straße vollständig gesperrt',
+     { from  => 1206832625, # 2008-03-30 00:17
+       until => 1207346400, # 2008-04-05 00:00
+       text  => 'Stresowstr. (Spandau) in beiden Richtungen am Stresowplatz Baustelle, Straße vollständig gesperrt (bis 04.04.2008)',
        type  => 'gesperrt',
        source_id => 'IM_008131',
        data  => <<EOF,
@@ -11114,6 +11114,22 @@ EOF
        source_id => 'IM_008182',
        data  => <<EOF,
 userdel	q4::inwork 10385,13548 10432,13678 10445,13752
+EOF
+     },
+     { from  => 1207000800, # 2008-04-01 00:00
+       until => 1209160800, # 2008-04-26 00:00
+       text  => 'B 101 Jüterbog u.Hohenahlsdorf Deckenerneuerung Vollsperrung 02.04.2008-25.04.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -7465,-53204 -7723,-51946 -8071,-50478 -8343,-49645 -8733,-48657 -9039,-47752
+EOF
+     },
+     { from  => 1206828000, # 2008-03-29 23:00
+       until => 1213480800, # 2008-06-15 00:00
+       text  => 'K 6814 OD Zechlinerhütte ,Luhmer Str. zw. Zechlinerstr.u.B 122 Ersatzneubau Jagowbrücke Vollsperrung 31.03.2008-14.06.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -27053,82717 -27141,82696 -27184,82772 -27346,82842
 EOF
      },
     );

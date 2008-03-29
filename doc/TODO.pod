@@ -2681,6 +2681,28 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (M4) (feature)
+
+Radrouten auch als Routenliste bereitstellen. Das könnte man hier
+L<http://bbbike.radzeit.de/mapserver/brb/radroute.html> als zweiten
+Button bereitstellen. Die Verlinkung würde dann auf bbbike.cgi mit
+einer Variation des localroutefilelist-Parameters gehen. Detail ist
+noch unklar: entweder bereite ich pro Radroute eine .bbr-Datei vor
+(wie kann man diese am besten automatisch erstellen?) oder ich bringe
+bbbike.cgi bei, auch mit einem POST von Koordinaten umzugehen. Dann
+müsste ich aber Javascript ins Spiel bringen, weil das submit entweder
+auf mapserver oder auf bbbike gehen müsste (ein paar hidden-Variablen
+umsetzen). Oder ich doppele alle Formulare, aber das wäre Overkill
+(sind jetzt schon >100kB). 
+
+Weitere Probleme:
+
+Wie behandelt man unterbrochene Routen?
+
+Wie behandelt man Alternativen?
+
+Soll man auch den Rückweg bzw. die andere Richtung bereitstellen? Wie?
+
 =item * (M3) (bug)
 
 Wenn man in der Straßenlistenauswahl die E<quot>Potsdamer Str.
@@ -2708,13 +2730,6 @@ Nähe der Grenze angeklickt wird, dann wird häufig eine Straßenkreuzung
 in Berlin gewählt, auch wenn es eine bessere Kreuzung außerhalb
 Berlins gäbe. Lösung: zuerst prüfen, ob sich der Klickpunkt innerhalb
 Berlins befindet, ansonsten sofort den Scope erhöhen.
-
-=item * (H5) (bug)
-
-Zwischen Rudow und Lichtenrade wird man nicht über Großziethen
-geroutet. Lösung: Luftlinie zwischen Start-(Via)-Ziel legen, falls
-diese die Berliner Grenze kreuzt, muss der Scope von city auf region
-erhöht werden.
 
 =item * (M4) (improvement)
 

@@ -900,15 +900,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1206572400,
-         'text' => 'L 256 B109 - LG - Milow - B104 Bahnübergang bei Nechlin Gleisbauarbeiten Vollsperrung 17.03.2008-26.03.2008 ',
-         'from' => 1205622000,
-         'id' => 1296,
-         'data' => 'userdel	2::inwork 42905,115846 42250,115925 42222,115929
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1219096799,
          'text' => 'Neubau der Bäkebrücke',
@@ -939,15 +931,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1206831600,
-         'text' => 'K 6160 Friedensstr. Bahnübergang in der OD Eichwalde Gleisbauarbeiten Vollsperrung 27.03.2008-29.03.2008 ',
-         'from' => 1206486000,
-         'id' => 1303,
-         'data' => 'userdel	2::inwork 25187,-8934 25140,-9125
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1207346400,
          'text' => 'L 054 Calau - Vetschau Bahnübergang Calauer Str. in der OD Saßleben Gleisumbauarbeiten Vollsperrung 03.04.2008-04.04.2008 ',
@@ -1011,20 +995,12 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1206831600,
-         'text' => 'L 062 Elsterwerda - Hohenleipisch Bahnübergang bei Elsterwerda Gleisbauarbeiten Vollsperrung 25.03.2008-29.03.2008 ',
-         'from' => 1206313200,
-         'id' => 1311,
-         'data' => 'userdel	2::inwork 22654,-103425 22256,-103785
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_008131',
-         'until' => undef,
-         'text' => 'Stresowstr. (Spandau) in beiden Richtungen am Stresowplatz Baustelle, Straße vollständig gesperrt',
-         'from' => undef,
+         'until' => 1207346400,
+         'text' => 'Stresowstr. (Spandau) in beiden Richtungen am Stresowplatz Baustelle, Straße vollständig gesperrt (bis 04.04.2008)',
+         'from' => 1206832625,
          'id' => 1312,
          'data' => 'userdel	2::inwork -3001,13877 -3049,13959 -3072,14040
 ',
@@ -1050,21 +1026,41 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1206831600,
-         'text' => 'L 098 Brandenburg - Rathenow zw. Siedlung Radewege und Marzahne Neubau Durchlass Vollsperrung 25.03.2008-29.03.2008 ',
-         'from' => 1206313200,
-         'id' => 1317,
-         'data' => 'userdel	2::inwork -48765,8671 -48756,8604
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1262300399,
          'text' => 'Rückbau der Fr.-Ebert-Str. zwischen Breiter Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Unter Umständen Umfahrung über Alten Markt notwendig. ',
          'from' => 1206305145,
          'id' => 1318,
          'data' => 'userdel	2::inwork -12719,-1661 -12755,-1585 -12773,-1544
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_008182',
+         'until' => 1211579999,
+         'text' => 'Gormannstr. (Mitte) Kreuzung Linienstr. Baustelle, Straße vollständig gesperrt (bis 23.05.)',
+         'from' => 1206490011,
+         'id' => 1319,
+         'data' => 'userdel	q4::inwork 10385,13548 10432,13678 10445,13752
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1209160800,
+         'text' => 'B 101 Jüterbog u.Hohenahlsdorf Deckenerneuerung Vollsperrung 02.04.2008-25.04.2008 ',
+         'from' => 1207000800,
+         'id' => 1320,
+         'data' => 'userdel	2::inwork -7465,-53204 -7723,-51946 -8071,-50478 -8343,-49645 -8733,-48657 -9039,-47752
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1213480800,
+         'text' => 'K 6814 OD Zechlinerhütte ,Luhmer Str. zw. Zechlinerstr.u.B 122 Ersatzneubau Jagowbrücke Vollsperrung 31.03.2008-14.06.2008 ',
+         'from' => 1206828000,
+         'id' => 1321,
+         'data' => 'userdel	2::inwork -27053,82717 -27141,82696 -27184,82772 -27346,82842
 ',
          'type' => 'gesperrt'
        }

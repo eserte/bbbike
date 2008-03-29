@@ -165,7 +165,7 @@ use vars qw($hs_check $plzmcmd $ampelstatus_label_text
 	    $zoom_new_route $zoom_new_route_chooseort
 	    $set_mode $init_with_edittools $texteditor
 	    $ps_image_res $point_editor $info_text
-	    $mark_color $initial_plugins $initial_layers
+	    $mark_color $mark_color_overview $initial_plugins $initial_layers
 	    %info_plugins);
 use vars qw($export_txt_mode $export_txt_min_angle $gps_waypoints
 	    $gps_waypointlength $gps_waypointsymbol $gps_waypointcharset);

@@ -451,6 +451,7 @@ $map_mode = MM_SEARCH;
 		);
 # Default ist rot, weil das Orange von power oder wind schlecht zu erkennen ist
 $mark_color    = 'red'; # Farbe der Markierung in mark_street et al.
+$mark_color_overview = 'blue'; # better than red because it does not conflict with Bundesstraßen
 $gps_waypoints = 50;
 $gps_waypointlength = 10;
 $gps_waypointcharset = 'ascii';
@@ -11271,17 +11272,18 @@ sub mark_point {
 	    }
 	}
 	my @common_args = (-capstyle => $capstyle_round,
-			   -fill => $mark_color,
 			   -tags => \@tags,
 			  );
 	$c->createLine($tx, $ty, $tx, $ty,
 		       -width => $width,
+		       -fill => $mark_color,
 		       @common_args,
 		      );
 	if ($do_also_overview_canvas) {
 	    my($otx,$oty) = _convert_transposed_to_overview_coord($tx, $ty);
 	    $overview_canvas->createLine($otx,$oty,$otx,$oty,
 					 -width => 2,
+					 -fill => $mark_color_overview,
 					 @common_args,
 					);
 	}
@@ -11370,8 +11372,7 @@ sub mark_street {
 	push @all_coords, @res_coords;
 	unless ($args{'-dont_mark'}) {
 	    my $label = shift @labels;
-	    my @common_args = (-fill => $mark_color,
-			       -tags => ['show', (defined $label ? $label : ())],
+	    my @common_args = (-tags => ['show', (defined $label ? $label : ())],
 			      );
 	    if ($args{'-polygon'}) {
 		if (@res_coords == 2) {
@@ -11379,6 +11380,7 @@ sub mark_street {
 		}
 		$c->createPolygon(@res_coords,
 				  -width => 5,
+				  -fill => $mark_color,
 				  @common_args,
 				 );
 		if ($do_also_overview_canvas) {
@@ -11388,6 +11390,7 @@ sub mark_street {
 		    }
 		    $c->createPolygon(@overview_coords,
 				      -width => 1,
+				      -fill => $mark_color_overview,
 				      @common_args,
 				     );
 		}

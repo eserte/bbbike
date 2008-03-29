@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Route.pm,v 1.25 2007/12/22 21:09:04 eserte Exp $
+# $Id: Route.pm,v 1.26 2008/03/29 21:26:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2001 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ use strict;
 use vars qw($coords_ref $realcoords_ref $search_route_points_ref
 	    @EXPORT @ISA $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.25 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.26 $ =~ /(\d+)\.(\d+)/);
 
 require Exporter;
 @ISA    = qw(Exporter);
@@ -51,8 +51,8 @@ sub new_from_realcoords {
     my $realcoords_ref = shift;
     my $obj = $class->new;
     $obj->{Path} = [ @$realcoords_ref ];
-    $obj->{From} = $obj->{Path}[0];
-    $obj->{To}   = $obj->{Path}[-1];
+    $obj->{From} = join ",", @{$obj->{Path}[0]};
+    $obj->{To}   = join ",", @{$obj->{Path}[-1]};
 
     require Strassen::Util;
     my $len = 0;

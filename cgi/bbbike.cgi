@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.7 2008/03/20 22:32:01 eserte Exp eserte $
+# $Id: bbbike.cgi,v 9.10 2008/03/29 21:37:39 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -68,7 +68,7 @@ use BBBikeCalc;
 use BBBikeVar;
 use BBBikeUtil qw(is_in_path min max kmh2ms);
 use BBBikeCGIUtil;
-use File::Basename qw(dirname);
+use File::Basename qw(dirname basename);
 use CGI;
 use CGI::Carp; # Nur zum Debuggen verwenden --- manche Web-Server machen bei den kleinsten Kleinigkeiten Probleme damit: qw(fatalsToBrowser);
 use BrowserInfo 1.47;
@@ -723,7 +723,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 9.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 9.10 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1108,13 +1108,20 @@ if (defined $q->param('begin')) {
     open(FH, $local_route_file)
 	or die "Can't open $local_route_file: $!";
     draw_route_from_fh(\*FH);
+} elsif (defined $q->param('localroutefilelist') &&
+	 defined $local_route_dir) {
+    (my $local_route_file = $q->param('localroutefilelist')) =~ s/[^A-Za-z0-9._-]//g;
+    $local_route_file = "$local_route_dir/$local_route_file";
+    show_routelist_from_file($local_route_file);
 } elsif (defined $q->param('coords') || defined $q->param('coordssession')) {
     draw_route(-cache => []);
 } elsif (defined $q->param('create_all_maps')) {
-    # XXX Der Apache 1.3.9/FreeBSD 3.3 lässt den Prozess nach
-    # ungefähr fünf Karten mit "Profiling timer expired" sterben.
-    # Mit thttpd gibt es zwar auch mysteriöse kills, aber es geht im
-    # Großen und Ganzen.
+    # XXX Der Apache 1.3.9/FreeBSD 3.3 lässt den Prozess nach ungefähr
+    # fünf Karten mit "Profiling timer expired" sterben. Mit thttpd
+    # gibt es zwar auch mysteriöse kills, aber es geht im Großen und
+    # Ganzen.
+    #
+    # Mit dem Apache auf bbbike.radzeit.de gibt es keine Probleme.
     http_header(-type => 'text/plain',
 		@no_cache,
 	       );
@@ -2940,18 +2947,8 @@ sub search_coord {
     my $startcoord  = $q->param('startc');
     my $viacoord    = $q->param('viac');
     my $zielcoord   = $q->param('zielc');
-    my $startname   = name_from_cgi($q, 'start');
-    my $vianame     = name_from_cgi($q, 'via');
-    my $zielname    = name_from_cgi($q, 'ziel');
-    my $starthnr    = $q->param('starthnr');
-    my $viahnr      = $q->param('viahnr');
-    my $zielhnr     = $q->param('zielhnr');
     my(@custom)     = $q->param('custom');
     my %custom      = map { ($_ => 1) } @custom;
-    my $output_as   = $q->param('output_as');
-    my $printmode   = defined $output_as && $output_as eq 'print';
-
-    my $printwidth  = 400;
 
     my $via_array = (defined $viacoord && $viacoord ne ''
 		     ? [$viacoord]
@@ -2968,8 +2965,8 @@ sub search_coord {
 
     make_netz();
 
-    ($startcoord, $viacoord, $zielcoord)
-      = fix_coords($startcoord, $viacoord, $zielcoord);
+    ($startcoord, $zielcoord, @$via_array)
+	= fix_coords($startcoord, $zielcoord, @$via_array);
 
     my %extra_args;
     if (@$via_array) {
@@ -3324,6 +3321,50 @@ sub search_coord {
     my($r) = $net->search($startcoord, $zielcoord,
 			  AsObj => 1,
 			  %extra_args);
+    display_route($r, -custom => { custom		 => \@custom,
+				   custom_s		 => \%custom_s,
+				   current_temp_blocking => \@current_temp_blocking,
+				 });
+}
+
+sub display_route {
+    my($r, %args) = @_;
+
+    my $startcoord = $r->{From};
+    my $viacoord   = $r->{Via} && @{ $r->{Via} } ? $r->{Via}[0] : undef;
+    my $zielcoord  = $r->{To};
+
+    # XXX may calculate start and ziel from route if none is provided
+    my $startname   = name_from_cgi($q, 'start');
+    my $vianame     = name_from_cgi($q, 'via');
+    my $zielname    = name_from_cgi($q, 'ziel');
+
+    my $starthnr    = $q->param('starthnr');
+    my $viahnr      = $q->param('viahnr');
+    my $zielhnr     = $q->param('zielhnr');
+
+    my $output_as   = $q->param('output_as');
+    my $printmode   = defined $output_as && $output_as eq 'print';
+
+    my $scope = $q->param("scope") || "city";
+
+    my $velocity_kmh = $q->param("pref_speed") || $speed_default;
+
+    my $printwidth  = 400;
+
+    my @custom;
+    my %custom_s;
+    my @current_temp_blocking;
+    if ($args{-custom}) {
+	@custom                = @{ $args{-custom}->{custom} };
+	%custom_s              = %{ $args{-custom}->{custom_s} };
+	@current_temp_blocking = @{ $args{-custom}->{current_temp_blocking} };
+    }
+
+    my $show_settings = !$args{-hidesettings};
+    my $show_wayback  = !$args{-hidewayback};
+
+    make_netz();
 
     if (defined $output_as && $output_as eq 'palmdoc') {
 	require BBBikePalm;
@@ -3934,32 +3975,42 @@ EOF
 	    print " width=$printwidth";
 	}
 	my $can_jslink = $can_mapserver && !$printmode && $bi->{'can_javascript'};
-	print "><tr><td>${fontstr}" . M("Route von") . " <b>" .
-	    coord_or_stadtplan_link($startname, $startcoord,
-				    $q->param('startplz')||"",
-				    $q->param('startisort')?1:0,
-				    (defined $starthnr && $starthnr ne '' ? $starthnr : undef),
-				    -jslink => $can_jslink,
-				   )
-		. "</b> ";
-	if (defined $vianame && $vianame ne '') {
-	    print M("&uuml;ber") . " <b>" .
-		coord_or_stadtplan_link($vianame, $viacoord,
-					$q->param('viaplz')||"",
-					$q->param('viaisort')?1:0,
-					(defined $viahnr && $viahnr ne '' ? $viahnr : undef),
+	print "><tr><td>$fontstr";
+	if (!$zielname) {
+	    if (!$startname) {
+		print "<b>" . M("Route") . "</b>";
+	    } else {
+		print "<b>" . $startname . "</b>";
+	    }
+	} else {
+	    print M("Route von") . " <b>" .
+		coord_or_stadtplan_link($startname, $startcoord,
+					$q->param('startplz')||"",
+					$q->param('startisort')?1:0,
+					(defined $starthnr && $starthnr ne '' ? $starthnr : undef),
 					-jslink => $can_jslink,
 				       )
 		    . "</b> ";
+	    if (defined $vianame && $vianame ne '') {
+		print M("&uuml;ber") . " <b>" .
+		    coord_or_stadtplan_link($vianame, $viacoord,
+					    $q->param('viaplz')||"",
+					    $q->param('viaisort')?1:0,
+					    (defined $viahnr && $viahnr ne '' ? $viahnr : undef),
+					    -jslink => $can_jslink,
+					   )
+			. "</b> ";
+	    }
+	    print M("bis") . " <b>" .
+		coord_or_stadtplan_link($zielname, $zielcoord,
+					$q->param('zielplz')||"",
+					$q->param('zielisort')?1:0,
+					(defined $zielhnr && $zielhnr ne '' ? $zielhnr : undef),
+					-jslink => $can_jslink,
+				       )
+		    . "</b>";
 	}
-	print M("bis") . " <b>" .
-	    coord_or_stadtplan_link($zielname, $zielcoord,
-				    $q->param('zielplz')||"",
-				    $q->param('zielisort')?1:0,
-				    (defined $zielhnr && $zielhnr ne '' ? $zielhnr : undef),
-				    -jslink => $can_jslink,
-				   )
-		. "</b>$fontend</td></tr></table><br>\n";
+	print "$fontend</td></tr></table><br>\n";
 	print "<table";
 	if ($printmode) {
 	    print " width=$printwidth";
@@ -4489,96 +4540,100 @@ EOF
 	print "</form>\n";
 	print qq{</div>};
 
-	#print "<hr>";
-	print qq{<div class="box">};
-	print "<form name=settings action=\"" . BBBikeCGIUtil::my_self_url($q) . "\">\n";
-	foreach my $key ($q->param) {
-	    next if $key =~ /^(pref_.*)$/;
-	    print $q->hidden(-name=>$key,
-			     -default=>[$q->param($key)])
-	}
-	print "<b>" . M("Einstellungen") . ":</b>";
-	reset_html();
-	print "<p>\n";
-	settings_html();
-	print qq{<input type=submit value="} . M("Route mit ge&auml;nderten Einstellungen") . qq{">\n};
-	print "</form>\n";
-	print qq{</div>};
-
-	#print "<hr>";
-	print qq{<div class="box">};
-	print "<form name='search' action=\"$bbbike_script\">\n";
-	print "<input type=hidden name=startc value=\"$zielcoord\">";
-	print "<input type=hidden name=zielc value=\"$startcoord\">";
-	print "<input type=hidden name=startname value=\"$zielname\">";
-	print "<input type=hidden name=zielname value=\"$startname\">";
-	if (defined $viacoord && $viacoord ne '') {
-	    print "<input type=hidden name=viac value=\"$viacoord\">";
-	    print "<input type=hidden name=vianame value=\"$vianame\">";
-	}
-	for my $param ($q->param) {
-	    if ($param =~ /^pref_/) {
-		print "<input type=hidden name='$param' value=\"".
-		    $q->param($param) ."\">";
+	if ($show_settings) {
+	    #print "<hr>";
+	    print qq{<div class="box">};
+	    print "<form name=settings action=\"" . BBBikeCGIUtil::my_self_url($q) . "\">\n";
+	    foreach my $key ($q->param) {
+		next if $key =~ /^(pref_.*)$/;
+		print $q->hidden(-name=>$key,
+				 -default=>[$q->param($key)])
 	    }
+	    print "<b>" . M("Einstellungen") . ":</b>";
+	    reset_html();
+	    print "<p>\n";
+	    settings_html();
+	    print qq{<input type=submit value="} . M("Route mit ge&auml;nderten Einstellungen") . qq{">\n};
+	    print "</form>\n";
+	    print qq{</div>};
 	}
-	print qq{<input type=submit value="} . M("R&uuml;ckweg") . qq{"><br>};
-	hidden_smallform();
 
-	my $button = sub {
-	    my($label, $query) = @_;
-	    my $url = $bbbike_script."?".$query;
-	    if ($bi->{'can_javascript'} >= 1.1) {
-		print "<input type=button value=\"$label\" " .
-		    "onclick=\"location.href='$url';\"> ";
-	    } else {
-		print "<a href=\"$url\">$label</a> ";
+	if ($show_wayback) {
+	    #print "<hr>";
+	    print qq{<div class="box">};
+	    print "<form name='search' action=\"$bbbike_script\">\n";
+	    print "<input type=hidden name=startc value=\"$zielcoord\">";
+	    print "<input type=hidden name=zielc value=\"$startcoord\">";
+	    print "<input type=hidden name=startname value=\"$zielname\">";
+	    print "<input type=hidden name=zielname value=\"$startname\">";
+	    if (defined $viacoord && $viacoord ne '') {
+		print "<input type=hidden name=viac value=\"$viacoord\">";
+		print "<input type=hidden name=vianame value=\"$vianame\">";
 	    }
-	};
+	    for my $param ($q->param) {
+		if ($param =~ /^pref_/) {
+		    print "<input type=hidden name='$param' value=\"".
+			$q->param($param) ."\">";
+		}
+	    }
+	    print qq{<input type=submit value="} . M("R&uuml;ckweg") . qq{"><br>};
+	    hidden_smallform();
 
-	if ($show_start_ziel_url) {
-	    my $qq = new CGI $q->query_string;
-	    foreach (qw(viac vianame)) {
-		$qq->delete($_);
-	    }
-	    foreach ($qq->param) {
-		if (/^pref_/) {
+	    my $button = sub {
+		my($label, $query) = @_;
+		my $url = $bbbike_script."?".$query;
+		if ($bi->{'can_javascript'} >= 1.1) {
+		    print "<input type=button value=\"$label\" " .
+			"onclick=\"location.href='$url';\"> ";
+		} else {
+		    print "<a href=\"$url\">$label</a> ";
+		}
+	    };
+
+	    if ($show_start_ziel_url) {
+		my $qq = new CGI $q->query_string;
+		foreach (qw(viac vianame)) {
 		    $qq->delete($_);
 		}
-	    }
-
-	    print " " . M("Neue Anfrage") . ": ";
-
-	    my $qqq = new CGI $qq->query_string;
-	    foreach ($qqq->param) {
-		if (/^ziel/) {
-		    $qqq->delete($_);
+		foreach ($qq->param) {
+		    if (/^pref_/) {
+			$qq->delete($_);
+		    }
 		}
-	    }
-	    $button->(M("Start beibehalten"), $qqq->query_string);
 
-	    $qqq = new CGI $qq->query_string;
-	    foreach ($qqq->param) {
-		if (/^start/) {
-		    $qqq->delete($_);
+		print " " . M("Neue Anfrage") . ": ";
+
+		my $qqq = new CGI $qq->query_string;
+		foreach ($qqq->param) {
+		    if (/^ziel/) {
+			$qqq->delete($_);
+		    }
 		}
+		$button->(M("Start beibehalten"), $qqq->query_string);
+
+		$qqq = new CGI $qq->query_string;
+		foreach ($qqq->param) {
+		    if (/^start/) {
+			$qqq->delete($_);
+		    }
+		}
+		$button->(M("Ziel beibehalten"), $qqq->query_string);
+
+		$button->(M("Start und Ziel neu eingeben"), "begin=1");
+
+		$qqq = new CGI $qq->query_string;
+		foreach (qw(c name plz)) {
+		    $qqq->param("start$_", $qqq->param("ziel$_"));
+		    $qqq->delete("ziel$_");
+		}
+		$button->(M("Ziel als Start"), $qqq->query_string);
+
+		print "<br>";
 	    }
-	    $button->(M("Ziel beibehalten"), $qqq->query_string);
 
-	    $button->(M("Start und Ziel neu eingeben"), "begin=1");
-
-	    $qqq = new CGI $qq->query_string;
-	    foreach (qw(c name plz)) {
-		$qqq->param("start$_", $qqq->param("ziel$_"));
-		$qqq->delete("ziel$_");
-	    }
-	    $button->(M("Ziel als Start"), $qqq->query_string);
-
-	    print "<br>";
+	    print "</form>\n";
+	    print qq{</div>};
 	}
-
-	print "</form>\n";
-	print qq{</div>};
 
     }
 
@@ -5544,9 +5599,9 @@ sub adjust_scope_for_search {
 # falls die Koordinaten nicht exakt existieren, wird der nächste Punkt
 # gesucht und gesetzt
 sub fix_coords {
-    my($startcoord, $viacoord, $zielcoord) = @_;
+    my(@coords) = @_;
 
-    foreach my $varref (\$startcoord, \$viacoord, \$zielcoord) {
+    foreach my $varref (\ (@coords)) { # the space is for emacs
 	next if (!defined $$varref or
 		 $$varref eq ''    or
 		 exists $net->{Net}{$$varref});
@@ -5612,7 +5667,7 @@ sub fix_coords {
 	    warn "Can't find nearest for $$varref. Either try to enlarge search space or add some grids for nearest_coord searching";
 	}
     }
-    ($startcoord, $viacoord, $zielcoord);
+    @coords;
 }
 
 sub start_weather_proc {
@@ -6238,6 +6293,24 @@ sub get_nearest_crossing_coords {
     $xy;
 }
 
+sub show_routelist_from_file {
+    my $file = shift;
+
+    require Route;
+    my $res = eval { Route::load($file, { }, -fuzzy => 1) };
+    my $err = $@;
+    if ($res->{RealCoords}) {
+	my $r = Route->new_from_realcoords($res->{RealCoords});
+	if (!$q->param("startname")) {
+	    my $base = basename($file);
+	    $base =~ s{\.[^.]+$}{};
+	    $q->param("startname", $base);
+	}
+	return display_route($r, -hidesettings => 1, -hidewayback => 1);
+    }
+    die $err;
+}
+
 sub draw_route_from_fh {
     my $fh = shift;
 
@@ -6765,7 +6838,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/03/20 22:32:01 $';
+    my $cgi_date = '$Date: 2008/03/29 21:37:39 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

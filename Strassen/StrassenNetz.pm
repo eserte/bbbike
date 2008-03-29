@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.58 2008/01/17 22:40:01 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.58 2008/01/17 22:40:01 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -1335,6 +1335,7 @@ EOF
 	my $new_res = new Route(Path    => $res[RES_PATH],
 				Len     => $res[RES_LEN],
 				From    => $from,
+				Via	=> $args{Via},
 				To      => $to,
 				Penalty => $res[RES_PENALTY],
 				Ampeln  => $res[RES_TRAFFICLIGHTS],
