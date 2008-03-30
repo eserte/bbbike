@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.366 2008/03/02 20:55:54 eserte Exp eserte $
+# $Id: bbbike,v 3.367 2008/03/30 19:11:18 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -243,7 +243,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.366 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.367 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -347,6 +347,8 @@ $str_ignore{'temp_sperre_s'} = {0 => 1, 1 => 1, 2 => 1, 3 => 1}; # XXX BNP auch?
 # Should maybe go to Strassen::Cat?
 $tunnel_qr = qr{^_?Tu_?$};
 $roundabout_qr = qr{^(Mini)?Roundabout$};
+# no $cat_rueck handling here
+$complex_IMG_qr = qr/^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/;
 
 # do not draw Steigung and Gefälle at the same time:
 $str_ignore{'comm'} = {'Gf' => 1}; # XXX with ";"???
@@ -5446,6 +5448,7 @@ sub define_item_attribs {
 	 'RW9' => 'SlateBlue',
 	 'RW10' => 'green',
 	 'RW'  => 'SlateBlue',
+	 'RW?' => 'SlateBlue',
 
 	 'sperre0' => 'red',	# Tragen
 	 'sperre1' => 'blue',	# Einbahnstraßen
@@ -6176,7 +6179,7 @@ sub generate_plot_functions {
 		    my($color, $rest) = split(/\|/, $category);
 		    my $stipple = ($layer_category_stipple{$abk} && $layer_category_stipple{$abk}{$category}) || $layer_stipple{$abk} || $category_stipple{$category};
 		    if (defined $rest && $rest ne "") {
-			if ($rest =~ /^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/) {
+			if ($rest =~ $complex_IMG_qr) {
 			    $image = $1;
 			    $anchor = $2 if $2;
 			} else {
@@ -6224,7 +6227,7 @@ sub generate_plot_functions {
 			$sight_draw->();
 		    }
 
-		} elsif ($cat_hin =~ /^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/) { # Bild, no $cat_rueck handling here
+		} elsif ($cat_hin =~ $complex_IMG_qr) {
 		    my $img = maybe_expand_image_file($1, $str_file{$abk}, "data");
 		    my $anchor = ($2 ? $2 : "c");
 		    my $p = image_from_file($top, $img);
@@ -6497,7 +6500,7 @@ EOF
 	    } elsif (defined $category_image{$category}) {
 		$category = "IMG:$category_image{$category}";
 	    }
-	    if ($category =~ /^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/) {
+	    if ($category =~ $complex_IMG_qr) {
 		my $photo = $1;
 		my $anchor = ($2 ? $2 : "c");
 		my($base) = ($photo =~ m|/| ? $photo =~ /([^\/]+)$/ : $photo);
@@ -20162,13 +20165,39 @@ sub get_image {
 
 sub get_image_for_p {
     my($base, $file, $abk) = @_;
-    my $p = get_image($base, $file);
+    my $images = ($top->{'MapImages'} ||= {});
+    my $key = $base." ".$file." p ".$abk;
+    my $p = $images->{$key};
     if (!$p) {
-	eval {
-	    my $dir = dirname($p_file{$abk});
-	    warn "Try $dir/$file...\n";
-	    $p = $c->Photo(-file => "$dir/$file");
-	};
+	$p = get_image($base, $file);
+	if (!$p) {
+	    eval {
+		my $dir = dirname($p_file{$abk});
+		# XXX move svg stuff to some general-purpose function or module
+		if ($file =~ m{(.*\.svg)(?::(\d+)x(\d+))?$}) {
+		    ($file,my($w),my($h)) = ($1,$2,$3);
+		    if (!defined $w) {
+			($w,$h) = (100,100); # some hardcoded default
+		    }
+		    warn "Try to convert from svg to png, geometry ${w}x${h}...\n";
+		    require File::Temp;
+		    require Tk::PNG;
+		    my(undef,$tmpfile) = File::Temp::tempfile(SUFFIX => ".png", UNLINK => 1);
+		    my @cmd = ("convert", "-geometry", "${w}x${h}", "$dir/$file", $tmpfile);
+		    system(@cmd) == 0
+			or die "Error while converting: @cmd, status=$?";
+		    $p = $c->Photo(-file => $tmpfile);
+		    unlink $tmpfile;
+		} else {
+		    warn "Try $dir/$file...\n";
+		    $p = $c->Photo(-file => "$dir/$file");
+		}
+	    };
+	    warn $@ if $@;
+	}
+	if ($p) {
+	    $images->{$key} = $p;
+	}
     }
     $p;
 }
@@ -20221,7 +20250,7 @@ sub balloon_info_from_all_tags {
 	if ($tags[0] =~ m{^(s|sBAB|l|$comments_rx|qs|ql|hs|hl|fz|u|b|r|f|w|rw|e|v|v-fg|temp_sperre|temp_sperre_s|L\d+|L\d+-fg)$}) {
 	    my $label = $tags[1];
 	    if ($tags[0] eq 'rw') { # Special handling for cyclepaths
-		(my $rw_code) = $tags[2] =~ /^rw-(RW\d+)/;
+		(my $rw_code) = $tags[2] =~ /^rw-(RW(?:\d*|\?))/; # XXX should probably use $Radwege::rw_qr without the anchors?
 		my $name = Radwege::code2name($rw_code);
 		if (defined $name) {
 		    $label = $name;

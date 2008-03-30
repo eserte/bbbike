@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Radwege.pm,v 1.18 2004/08/21 23:10:47 eserte Exp $
+# $Id: Radwege.pm,v 1.18 2004/08/21 23:10:47 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -29,7 +29,7 @@ use Msg qw(frommain);
 
 use strict;
 use vars qw(%category_code %code_category %category_name %category_plural
-	    %bez @category_order @bbbike_category_order);
+	    %bez @category_order @bbbike_category_order $rw_qr);
 
 my @category =
   ("radweg"    => ["RW1", M"Radweg", M"Radwege"],
@@ -44,7 +44,13 @@ my @category =
    "neben"     => ["RW10", M"Nebenstraße vorhanden", M"Nebenstraßen vorhanden"],
    "kein"      => ["RW0", M"kein Radweg", M"keine Radwege"],
    "nichtkat"  => ["RW", M"Radweg (ohne Kategorisierung)", M"Radwege (ohne Kategorisierung)"],
+   "unknown"   => ["RW?", M"Radweg (unbekannte Kategorie)", M"Radwege (unbekannte Kategorie)"],
+   # Der Unterschied zwischen RW und RW?: bei RW? sollte ein User
+   # explizit nach der Kategorisierung gefragt werden, bei RW kann der
+   # User gefragt werden.
   );
+
+$rw_qr = qr{^RW(?:\d*|\?)$};
 
 %category_code = ();		# "radweg" => "RW0"
 %code_category = ();		# "RW0" => "radweg"

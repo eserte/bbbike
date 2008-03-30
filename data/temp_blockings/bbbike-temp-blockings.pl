@@ -11132,4 +11132,12 @@ EOF
 userdel	2::inwork -27053,82717 -27141,82696 -27184,82772 -27346,82842
 EOF
      },
+     { from  => 1199574000, # 2008-01-06 00:00
+       until => 1222811999, # 2008-09-30 23:59
+       text  => 'Bauarbeiten am nordwestlichen Bereich der Elsenbrücke von 7. Januar 2008 bis September 2008; kein Zugang zum Spreeufer. ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 14383,10036 14405,10027
+EOF
+     },
     );

@@ -61,8 +61,8 @@ Fußgängerampel links benutzen	CP; 6033,10403 6020,10351 6147,10383
 Fußgängerampel links benutzen	CP; 15323,16774 14619,16682 14619,16672 14621,16563
 Fußgängerampel vor der Passauer Str. benutzen	CP; 6147,10383 6020,10351 5997,10286
 Münchener Str., über Hohenstaufenstr.: Fußgängerampel auf der linken Seite verwenden	PI; 6219,9891 6210,9833 6209,9772 6227,9531
-Münchener Str., Richtung Martin-Luther-Str.: Fußgängerampel auf der linken Seite verwenden	PI; 6219,9891 6210,9833 6209,9772 6241,9772 6514,9775
-Hohenstaufenstr. zur Münchener Str.: frühzeitig Fußgängerampel nach links benutzen	PI; 6514,9775 6241,9772 6209,9772 6227,9531
+Münchener Str., Richtung Martin-Luther-Str.: Fußgängerampel auf der linken Seite verwenden	PI; 6219,9891 6210,9833 6209,9772 6241,9772 6502,9782
+Hohenstaufenstr. zur Münchener Str.: frühzeitig Fußgängerampel nach links benutzen	PI; 6502,9782 6241,9772 6209,9772 6227,9531
 Thomas-Dehler-Str. => Stülerstr.: nach dem Abbiegen zunächst auf dem linken Gehweg bleiben	PI; 6654,11460 6716,11439 6825,11486
 Gervinusstr./Lewishamstr.: Gehweg zur Ampel benutzen	PI; 3839,10904 3631,10784 3644,10759
 Tiergarten: rechts des Neuen Sees halten	CP; 5901,11902 5890,11865 5870,11842
@@ -245,7 +245,7 @@ An den Haselbüschen: Sackgasse, kein Durchgang zur Daumstr.	CS; -1273,15539 -129
 Am Hohenzollernkanal: keine Unterquerung der Bernauer Brücke möglich	CP 364,15810 44,15897 -226,16086 -910,16608
 #: by: Isabel [AM]
 Roonstr.: Hindenburgdamm kann über Fußgängerfurt gequert werden	CS 4265,4484 4515,4581 *
-Hausdurchfahrt benutzen	CP2; 6514,9775 6571,9712
+Hausdurchfahrt benutzen	CP2; 6502,9782 6571,9712
 Nach dem Steg kann man zunächst nur in der Mitte direkt am Ufer fahren, da Leitplanken das Übequeren verhindern, erst auf Höhe der Genthiner Str. kann man die Straße überquert werden	CS; 7251,11202 7251,11181 7248,11143 7461,11051
 Lützowufer - Hiroshimasteg: frühzeitig auf den linken Gehweg wechseln, Leitplanken verhindern das Überqueren	CS; 7002,11034 7248,11143 7251,11181
 Alexanderstr. - Schillingstr.: bereits an der Ampel die Straßenseite wechseln	CP2; 11323,12484 11333,12437 11462,12384

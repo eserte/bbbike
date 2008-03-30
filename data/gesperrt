@@ -417,6 +417,7 @@ Rieppelstr.	1 851,15155 780,15358 794,15362 772,15460 768,15486
 Harriesstr.	1 768,15486 659,15469 525,15435
 Rapsstr.	1 755,15123 702,15274 693,15335 665,15414 659,15469
 Im Heidewinkel	1 1065,15229 981,15490 877,15474 772,15460
+Teufelsseestr.	1 454,11159 439,11228
 Humboldtring -> Hans-Marwitza-Ring: Hochstraße	3 -11399,-1339 -11461,-1424 -11358,-1491
 Hans-Marwitza-Ring -> Humboldtring: Hochstraße	3 -11358,-1491 -11461,-1424 -11540,-1543
 Merkurstr.	1 -8469,-2576 -8380,-2580 -8359,-2582 -8411,-2699 -8432,-2713 -8484,-2710
@@ -665,11 +666,11 @@ Andersenstr. -> Bornholmer Str.: Straßenbahntrasse	3 10295,16667 10282,16522 103
 Bornholmer Str. -> Andersenstr.: Straßenbahntrasse	3 10197,16528 10282,16522 10295,16667
 Karl-Liebknecht-Str. -> Rosenstr.: Straßenbahntrasse	3 10440,12696 10519,12768 10489,12803
 Rosenstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3 10489,12803 10519,12768 10699,12929
-Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen	3 6514,9775 6520,9867 6463,9862
 Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen	3 6522,9948 6520,9867 6611,9879
 Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen	3 6463,9862 6520,9867 6522,9948
-Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen	3 6611,9879 6520,9867 6514,9775
 Luitpoldstr. -> Luitpoldstr.: Mittelstreifen	3 6611,9879 6520,9867 6463,9862
+Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen	3 6611,9879 6520,9867 6502,9782
+Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen	3 6502,9782 6520,9867 6463,9862
 Rodenbergstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3 11268,16113 11003,16196 10994,16120
 Schönhauser Allee -> Rodenbergstr.: U-Bahnviadukt und Straßenbahn	3 11013,16278 11003,16196 11268,16113
 Flemmingstr. -> Oberspreestr.: Straßenbahntrasse	3 21845,4875 21726,4537 21796,4517
@@ -1379,7 +1380,6 @@ Heerstr. -> Insterburgallee: Heerstr.	3 439,11228 232,11190 251,11039
 Insterburgallee -> Insterburgallee: Heerstr.	3 251,11039 232,11190 200,11428
 Insterburgallee -> Heerstr.: Heerstr.	3 251,11039 232,11190 21,11167
 Heerstr. -> Teufelsseestr.: Heerstr.	3 456,11233 439,11228 454,11159
-Teufelsseestr. -> Heerstr.: Heerstr.	3 454,11159 439,11228 232,11190
 tragen (20 Stufen)	0:30:-186 23,11137
 Oldenburgallee	1 454,11670 461,11455
 Brixplatz	1 419,12397 335,12343 215,12307

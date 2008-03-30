@@ -1,6 +1,7 @@
 #: emacs-mode: -*- bbbike -*-
 #: title: Zebrastreifen in Berlin
-#: category_image.Zs: verkehrszeichen/42_350.gif
+#: category_image.Zs: verkehrszeichen/Zeichen_350.svg:24x24
+#: XXX_category_image.Zs: verkehrszeichen/42_350.gif
 #:
 # Die Sammlung hier ist bei weiten nicht vollst‰ndig und wird
 # nicht im BBBike-Routing verwendet.
@@ -142,6 +143,7 @@ Am Freibad/Am Vierrutenberg	Zs 5809,23420
 # - Ruppiner Chaussee / Stolpm¸nder Weg. 
 #: by: ^^^
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20070625.1140.80710.html vvv
+#: confirmed_by: srt
 Badensche Straﬂe/Babelsberger Str.	Zs 5801,8815
 Sophie-Charlotten-Straﬂe/Christstraﬂe	Zs 2472,12137
 Sophie-Charlotten-Straﬂe/Seelingstraﬂe	Zs 2504,11990
@@ -205,3 +207,5 @@ Zittauer Str./Groﬂ-Ziethener Chaussee	Zs 16346,943
 Quarzweg/Bernsteinring	Zs 11351,1823
 #: note: Luftbild
 Kˆnigsheideweg/Haushoferstr.	Zs 17129,4753
+Saalestr./S-Bhf. Sonnenallee	Zs 13954,7531
+Westf‰lische Str./Johann-Sigismund-Str.	Zs 2955,9929
