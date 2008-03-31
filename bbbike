@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.367 2008/03/30 19:11:18 eserte Exp eserte $
+# $Id: bbbike,v 3.368 2008/03/31 20:54:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -243,7 +243,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.367 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.368 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4436,19 +4436,9 @@ if ($ENV{BBBIKE_GUI_TEST}) {
     warn $@ if $@;
 }
 
-# if (defined $set_mode && $set_mode eq 'edit') {
-#     # XXX workaround for BBBikeLazy bug
-# #     if ($lazy_plot) {
-# # 	$lazy_plot = 0;
-# #     }
-# }
-
 if ($init_with_edittools) {
-    require BBBikeAdvanced;
-    set_line_coord_interactive(-geometry => "-0+0");
-    coord_to_markers_dialog(-geometry => "-0+120");
     require BBBikeEdit;
-    BBBikeEdit::editmenu($top, -geometry => "-0-0");
+    BBBikeEdit::init_with_edittools();
 }
 
 $booting = 0;
@@ -6289,22 +6279,30 @@ sub generate_plot_functions {
 						 @extra_tags],
 				      );
 		    } else { # lines
-			my @std_tags = ($abk, $strname,"$abk-$cat_hin","$abk-" . $i);
-			my $line_dash = ($layer_category_dash{$abk} && $layer_category_dash{$abk}{$cat_hin}) || $layer_line_dash{$abk} || $category_dash{$cat_hin} || $line_dash{$abk};
+			my @std_tags_hin = ($abk, $strname,"$abk-$cat_hin","$abk-" . $i);
+			my @std_tags_rueck;
+			my $line_dash_hin = ($layer_category_dash{$abk} && $layer_category_dash{$abk}{$cat_hin}) || $layer_line_dash{$abk} || $category_dash{$cat_hin} || $line_dash{$abk};
+			my $line_dash_rueck;
+			if ($cat_rueck) {
+			    @std_tags_rueck = @std_tags_hin;
+			    $std_tags_rueck[2] = "$abk-$cat_rueck";
+			    $line_dash_rueck = ($layer_category_dash{$abk} && $layer_category_dash{$abk}{$cat_rueck}) || $layer_line_dash{$abk} || $category_dash{$cat_rueck} || $line_dash{$abk};
+			}
 			my $stipple = ($layer_category_stipple{$abk} && $layer_category_stipple{$abk}{$category}) || $layer_stipple{$abk} || $category_stipple{$category};
 			$stipple = load_stipple($stipple) if $stipple;
 		        if (@addinfo_hin) { # ignore @addinfo_rueck for now
 			    for my $addinfo_hin (@addinfo_hin) {
 			        if ($addinfo_hin =~ $tunnel_qr) {
-				    $line_dash = $line_dash{"Tu"};
-				    draw_tunnel_entrance(\@coordlist, width => $this_width_hin+4, tags => \@std_tags, mounds => $addinfo_hin);
+				    $line_dash_hin = $line_dash{"Tu"};
+				    $line_dash_rueck = $line_dash_hin if defined $line_dash_hin;
+				    draw_tunnel_entrance(\@coordlist, width => $this_width_hin+4, tags => \@std_tags_hin, mounds => $addinfo_hin);
 				} elsif ($addinfo_hin eq 'Br') {
-				    draw_bridge(\@coordlist, width => $this_width_hin+4, tags => \@std_tags);
+				    draw_bridge(\@coordlist, width => $this_width_hin+4, tags => \@std_tags_hin);
 				}
 			    }
 			}
 			if (!$use_stippleline) {
-			    undef $line_dash;
+			    undef $line_dash_hin;
 			}
 			if ($str_outline{$abk}) {
 			    # XXX no $cat_rueck support yet for outlines
@@ -6315,7 +6313,7 @@ sub generate_plot_functions {
 			       -joinstyle => 'bevel',
 			       -tags      => ["$abk-out",
 					      "$abk-$cat_hin-out"],
-                               ($line_dash ? (-dash => $line_dash) : ()),
+                               ($line_dash_hin ? (-dash => $line_dash_hin) : ()),
 			       ($stipple ? (-stipple => $stipple) : ()),
 			       (exists $layer_line_arrow{$abk}{$cat_hin} ? (-arrow => $layer_line_arrow{$abk}{$cat_hin})
 				: exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
@@ -6324,12 +6322,14 @@ sub generate_plot_functions {
 			if (defined $cat_rueck) {
 			    my %side_coordlist;
 			    for my $dir (1, -1) {
-				my($cl, $this_color, $this_width, $cat);
+				my($cl, $this_color, $this_width, $cat, $std_tags, $line_dash);
 				if ($dir == 1 && $cat_hin ne '') {
 				    $this_color = $this_color_hin;
 				    $this_width = $this_width_hin/2;
 				    $cat        = $cat_hin;
-				    $cl         = [@coordlist],
+				    $cl         = [@coordlist];
+				    $std_tags   = \@std_tags_hin;
+				    $line_dash  = $line_dash_hin;
 				} elsif ($dir == -1 && $cat_rueck ne '') {
 				    $this_color = $this_color_rueck;
 				    $this_width = $this_width_rueck/2;
@@ -6338,6 +6338,8 @@ sub generate_plot_functions {
 				    for(my $cl_i = $#coordlist-1; $cl_i >= 0; $cl_i-=2) {
 					push @$cl, @coordlist[$cl_i, $cl_i+1];
 				    }
+				    $std_tags   = \@std_tags_rueck;
+				    $line_dash  = $line_dash_rueck;
 				} else {
 				    next;
 				}
@@ -6360,7 +6362,7 @@ sub generate_plot_functions {
 				     -fill  => $this_color,
 				     -width => $this_width,
 				     -joinstyle => 'bevel',
-				     -tags  => [@std_tags,
+				     -tags  => [@$std_tags,
 						@extra_tags],
 				     ($line_dash ? (-dash => $line_dash) : ()),
 				     ($stipple ? (-stipple => $stipple) : ()),
@@ -6369,13 +6371,13 @@ sub generate_plot_functions {
 				    );
 			    }
 			} elsif ($cat_hin eq 'Br') {
-			    draw_bridge(\@coordlist, width => $this_width_hin+4, tags => \@std_tags);
+			    draw_bridge(\@coordlist, width => $this_width_hin+4, tags => \@std_tags_hin);
 			} elsif ($cat_hin =~ $roundabout_qr) {
 			    if ($edit_normal_mode) {
 				$c->createLine(@coordlist,
 					       -fill  => 'blue',
 					       -width => 2,
-					       -tags  => [@std_tags, @extra_tags],
+					       -tags  => [@std_tags_hin, @extra_tags],
 					       -dash  => [1,4],
 					      );
 				$draw_street_photo->($kreisverkehr_photo, "c");
@@ -6384,17 +6386,17 @@ sub generate_plot_functions {
 				return;
 			    }
 			} elsif ($cat_hin =~ $tunnel_qr) {
-			    draw_tunnel_entrance(\@coordlist, width => $this_width_hin+4, tags => \@std_tags, mounds => $cat_hin);
+			    draw_tunnel_entrance(\@coordlist, width => $this_width_hin+4, tags => \@std_tags_hin, mounds => $cat_hin);
 			} else {
 			    $item = $c->createLine
 				(@coordlist,
 				 -fill      => $this_color_hin,
 				 -width     => $this_width_hin,
 				 -joinstyle => 'bevel',
-				 -tags      => [@std_tags,
+				 -tags      => [@std_tags_hin,
 						@extra_tags],
 				 ($stipple ? (-stipple => $stipple) : ()),
-				 ($line_dash ? (-dash => $line_dash) : ()),
+				 ($line_dash_hin ? (-dash => $line_dash_hin) : ()),
 				 (exists $layer_line_arrow{$abk}{$cat_hin} ? (-arrow => $layer_line_arrow{$abk}{$cat_hin})
 				: exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
 				);

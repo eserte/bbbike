@@ -1016,15 +1016,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1206918000,
-         'text' => 'L 222 Gransee - Menz zw. OA Großwoltersdorf und Kreuz. Zernickow Straßeninstandsetzung Vollsperrung 18.03.2008-30.03.2008 ',
-         'from' => 1205708400,
-         'id' => 1315,
-         'data' => 'userdel	2::inwork -12250,73762 -12381,74147 -12575,74512 -13537,75287
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {

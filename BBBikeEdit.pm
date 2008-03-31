@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.120 2007/07/28 22:46:28 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.121 2008/03/31 20:53:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2332,6 +2332,14 @@ sub send_comment {
 	$f->Button(Name => 'cancel',
 		   -command => sub { $t->destroy })->pack(-side => "left");
     }
+}
+
+sub init_with_edittools {
+    require BBBikeAdvanced;
+    main::set_line_coord_interactive(-geometry => "-0+0");
+    ## I don't use this anymore:
+    #main::coord_to_markers_dialog(-geometry => "-0+120");
+    editmenu($main::top, -geometry => "-0-0");
 }
 
 sub editmenu {
