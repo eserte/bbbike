@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Radwege.pm,v 1.19 2008/03/31 20:54:50 eserte Exp $
+# $Id: Radwege.pm,v 1.20 2008/04/01 18:36:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package Radwege;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!eval '
@@ -47,7 +47,8 @@ my @category =
    "unknown"   => ["RW?", M"Radweg (unbekannte Kategorie)", M"Radwege (unbekannte Kategorie)"],
    # Der Unterschied zwischen RW und RW?: bei RW? sollte ein User
    # explizit nach der Kategorisierung gefragt werden, bei RW kann der
-   # User gefragt werden.
+   # User gefragt werden. Könnte eigentlich auch mit einer
+   # add_fragezeichen-Direktive gemacht werden
   );
 
 $rw_qr = qr{^RW(?:\d*|\?)$};

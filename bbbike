@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.368 2008/03/31 20:54:34 eserte Exp $
+# $Id: bbbike,v 3.368 2008/03/31 20:54:34 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -20255,7 +20255,11 @@ sub balloon_info_from_all_tags {
 		(my $rw_code) = $tags[2] =~ /^rw-(RW(?:\d*|\?))/; # XXX should probably use $Radwege::rw_qr without the anchors?
 		my $name = Radwege::code2name($rw_code);
 		if (defined $name) {
-		    $label = $name;
+		    if (defined $label && $label ne "") {
+			$label = "$name ($label)";
+		    } else {
+			$label = $name;
+		    }
 		}
 	    } elsif ($tags[0] eq 'temp_sperre') {
 		$label = $tags[2];
