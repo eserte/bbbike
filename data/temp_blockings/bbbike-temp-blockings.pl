@@ -4421,7 +4421,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002776',
        data  => <<EOF,
-userdel	1 15388,16502 15134,16499 14621,16563
+userdel	1 15388,16502 15134,16499 14809,16525 14621,16563
 EOF
      },
      { from  => 1147721063, # 2006-05-15 21:24
@@ -5084,7 +5084,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_84063',
        data  => <<EOF,
-userdel	1::inwork 14621,16563 15134,16499 15388,16502
+userdel	1::inwork 14621,16563 14809,16525 15134,16499 15388,16502
 EOF
      },
      { from  => 1152566231, # 2006-07-10 23:17
@@ -5533,7 +5533,7 @@ EOF
        text  => 'Berlin Weißensee, Buschallee, Weißensee Richtung Ahrensfelde Zwischen Einmündung Berliner Allee und Kreuzung Hansastraße Baustelle, gesperrt bis 15.09.2006 18:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 14621,16563 15134,16499 15388,16502 15432,16500
+userdel	1::inwork 14621,16563 14809,16525 15134,16499 15388,16502 15432,16500
 EOF
      },
      { from  => 1156478400, # 2006-08-25 06:00
@@ -5999,7 +5999,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003701',
        data  => <<EOF,
-userdel	2::temp 7587,17532 7500,17796 7487,17836 7466,17904 7350,18262 7232,18572
+userdel	2::temp 7587,17532 7500,17796 7487,17836 7466,17904 7445,17968 7439,17985 7350,18262 7232,18572
 EOF
      },
      { from  => undef, # 
@@ -10174,7 +10174,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006852',
        data  => <<EOF,
-userdel	2::temp 7350,18262 7466,17904 7487,17836 7500,17796 7587,17532
+userdel	2::temp 7350,18262 7439,17985 7445,17968 7466,17904 7487,17836 7500,17796 7587,17532
 EOF
      },
      { from  => 1192489272, # 2007-10-16 01:01
@@ -11138,6 +11138,46 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 14383,10036 14405,10027
+EOF
+     },
+     { from  => 1206914400, # 2008-03-31 00:00
+       until => 1212271200, # 2008-06-01 00:00
+       text  => 'B 096 Brücke über den Seichgraben zw. Zützen u. Golßen Brückenbauarbeiten Vollsperrung 01.04.2008-31.05.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 27428,-49936 26648,-49177
+EOF
+     },
+     { from  => 1206313200, # 2008-03-24 00:00
+       until => 1208728800, # 2008-04-21 00:00
+       text  => 'B 109 Schönwalde - Wandlitz OD Wandlitz, zw. Kreisel und Berliner Weg Kanalarbeiten Vollsperrung 25.03.2008-20.04.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 13556,37493 12887,36543
+EOF
+     },
+     { from  => 1207173600, # 2008-04-03 00:00
+       until => 1207432800, # 2008-04-06 00:00
+       text  => 'L 040 Potsdamer Damm OD Blankenfelde, zw. H.-von-Hülsen-Weg und Dorfstr. Deckeneinbau Vollsperrung 04.04.2008-05.04.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 9828,-8106 10115,-8276
+EOF
+     },
+     { from  => 1206914400, # 2008-03-31 00:00
+       until => 1207346400, # 2008-04-05 00:00
+       text  => 'L 233 Bahnhofstraße Bahnübergang OD Rehfelde Arbeiten Bahnübergang Vollsperrung 01.04.2008-04.04.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 45856,14437 45740,14260
+EOF
+     },
+     { from  => 1207346400, # 2008-04-05 00:00
+       until => 1207519200, # 2008-04-07 00:00
+       text  => 'L 601 Berliner Str. OL Finsterwalde, zw. Leipziger Str. und Friedensstr. Trödelmarkt Vollsperrung 06.04.2008-06.04.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 33060,-85292 33101,-85749
 EOF
      },
     );

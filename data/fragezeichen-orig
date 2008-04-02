@@ -303,8 +303,9 @@ Rudolf-Breitscheid-Str. (Vogelsdorf): mäßiger fester Sandweg, Q2	? 33982,11496 3
 #: by: anonymous:
 #: note: PLZ 15370
 Adolf-Hoffmann-Str. (Vogelsdorf): mäßiger fester Sandweg, Q2	? 34007,11572 34149,11511 34229,11535
-#: by: lesz...:
-Bulgenbachweg: gutes Kopfsteinpflaster, Q1, Sandbanketten	? 3439,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
+#: by: Siegfried Wernik:
+#: note: widersprüchliche Angabe von lesz...: gutes Kopfsteinpflaster, Q1, Sandbanketten
+Bulgenbachweg: mäßiges Verbundsteinpflaster, Q2+, kein Gehweg	? 3439,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
 #: by: Peter Loth:
 #: confirmed_by: S.Knaack (allerdings: "guter Beton")
 Hornblendeweg: Asphalt, Q0, Einbahnstraße Richtung Westen	? 10659,1370 10641,1442 10594,1468 10504,1438 10408,1387 10406,1337 10440,1283
@@ -1317,7 +1318,6 @@ Sachtlebenstr.: Qualität der Fahrbahn zwischen Kleinmachnower Weg und Südende de
 #: XXX: Aber Bauarbeiten, die bis 2008-05-01 fertig werden... dann besser geeignet?
 Hamburger Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? -8010,16486 -8080,16150 -8197,15622
 Mondsteinpfad: Qualität?	? 11181,1884 11182,1976
-Albulaweg: Qualität?	? 10123,1996 10341,1936 10473,1900 10591,1870
 Asbestweg: Qualität?	? 11207,1737 11309,1718 11362,1723
 Barkhausenstr.: Qualität?	? -10530,16281 -10744,16241
 Barkhausenstr.: Qualität?	? -10853,16230 -10970,16232 -11136,16247 -11296,16308 -11549,16413 -11783,16506
@@ -1531,7 +1531,7 @@ Teufelsseechaussee: Ist die Teufelsseechaussee mittlerweile eine ausgeschilderte
 (Celsiusstr. - Müllerstr.): Ist zwischen Bahnbrücke und Fürstenstr./Müllerstr. eine Rampe?	? 4311,746 4250,763
 #: XXX Eintrag von Bernd Lamour: "gute Qualität". Note: die Zufahrt zur Hellersdorfer ist nicht für Autos möglich, wie es im Luftbild aussieht
 Hertwigswalder Steig: Art der Fahrbahn (Beton, Asphalt ...)?	? 22812,12129 22917,12239 23019,12356 23033,12367
-Zeestower Weg: Qualität zwischen Jänickendorfer Weg und Isenburger Weg? Existiert eine Durchfahrt für Radfahrer zwischen Isenburger Weg und Finkenkruger Weg? Wie ist die Qualität dort?	? -8363,15558 -8229,15505 -8078,15449 -7819,15342 -7752,15324 -7673,15304 -7521,15265 -7408,15219 -7371,15201
+Zeestower Weg: Qualität zwischen Jänickendorfer Weg und Isenburger Weg? Existiert eine Durchfahrt für Radfahrer zwischen Isenburger Weg und Finkenkruger Weg? Wie ist die Qualität dort?	? -7819,15342 -7752,15324 -7673,15304 -7521,15265 -7408,15219 -7371,15201
 Hartmannsweilerweg: Ist der Hartmannsweilerweg (abschnittsweise) eine Einbahnstraße? Nur für Autofahrer oder auch für Radfahrer?	? 17,3471 41,3510 16,3744
 Hielscherstr.: ist der Abschnitt südlich der Hertzstr. asphaltiert?	? 7522,19804 7556,19882
 #: XXX Angaben von unklar: Marc (michgibsnich): Kopfsteinpflaster, Q2, aber Busspur? Bordsteinkanten?
@@ -1567,7 +1567,7 @@ Hendonstr.: Qualität?	? 10531,-1633 10449,-1646 10421,-1681 10409,-1954
 Gerstnerweg: Qualität?	? 10513,-1954 10409,-1954 10297,-1955
 Ostheimer Str.: Qualität?	? 10662,1072 10738,906
 Wingerter Str.: Qualität?	? 10827,1140 10845,1026 10851,929
-Freiertweg: Qualität? Kann der Lichtenrader Damm in Höhe Freiertweg überquert werden?	? 10619,395 10827,467 10955,501 11086,516
+Freiertweg: Kann der Lichtenrader Damm in Höhe Freiertweg überquert werden?	? 10619,395 10827,467
 Soldiner Str. (Lichtenrade): Qualität?	? 11086,516 11222,483 11281,454 11343,405 11407,324 11442,232 11453,228
 Kraatzweg: Qualität?	? 10660,293 10866,364
 Schwebelstr.: Qualität? Kann der Lichtenrader Damm in Höhe Schwebelstr überquert werden?	? 10700,193 10903,263
@@ -1858,3 +1858,31 @@ Koschatweg: Qualität?	? 17111,4643 17053,4622 17020,4588 16954,4501 16814,4315 1
 Rollettweg: Qualität?	? 16814,4315 16878,4268 16966,4191
 #: note: wrong name in Pharus-Plan!
 Draesekestr.: Qualität?	? 16887,4105 16966,4191 17092,4297
+Flurweg: Qualität?	? 15736,2593 15779,2649 15870,2768 15911,2821 15989,2923 16090,3079 16155,3160 16221,3248 16281,3339 16325,3401
+Minzeweg: Qualität?	? 16556,3258 16420,3353 16365,3396 16325,3401 16315,3430 16225,3512 16003,3652 15838,3754 15603,3905
+Sauerdornweg: Qualität?	? 16420,3353 16473,3417 16496,3448
+Sauerdornweg - Uferweg am Teltowkanal: existiert eine Durchfahrt für Radfahrer? Qualität?	? 16496,3448 16510,3473
+Frauenschuhweg: Qualität?	? 16599,3316 16556,3258 16504,3184
+Trollblumenweg: Qualität?	? 16041,3718 15860,3838 15647,3977
+Schneeballenweg: Qualität?	? 16043,3374 15983,3290 15921,3215 15808,3063
+Rudower Str. - Girlitzweg: existiert eine Durchfahrt für Radfahrer? Qualität?	? 15176,3136 15273,3269
+Girlitzweg: Qualität?	? 15273,3269 15321,3332 15373,3403
+Kernbeißerweg: Qualität?	? 15321,3332 15253,3383
+Rudower Str. - Angelikaweg: existiert eine Durchfahrt für Radfahrer? Qualität?	? 15459,2921 15537,3026
+Angelikaweg: Qualität?	? 15537,3026 15602,3099 15660,3177
+Windenweg: Qualität?	? 16306,2364 16106,2514 16012,2592 15923,2667 15870,2768 15785,2900 15751,2936 15602,3099
+Rudower Str. - Primelweg: existiert eine Durchfahrt für Radfahrer? Kann die Rudower Chaussee in Höhe des Primelwegs überquert werden? Qualität?	? 15804,2512 15862,2588
+Primelweg: Qualität?	? 15862,2588 15923,2667
+Levkoienweg: Qualität?	? 16012,2592 16093,2696 16164,2790
+Goldlackweg: Qualität?	? 16093,2696 15911,2821
+Mohnweg: Qualität?	? 16242,2279 16114,2377 16045,2434 15862,2588 15779,2649
+#: XXX NN
+Ampferweg: Qualität?	? 16114,2377 16042,2280
+#: XXX N
+Ampferweg: Qualität?	? 16042,2280 16028,2261
+Goldrautenweg: Qualität?	? 16382,2464 16183,2615
+Krumme Str. (Lichterfelde): Qualität?	? 4366,3513 4305,3572 4357,3625
+#: XXX unklarer Eintrag von anonymous: Asphalt, Q2, aber auf dem Luftbild scheint es teilweise wie Kopfsteinpflaster auszusehen?
+Raschdorffstr.: Qualität?	? 7439,17985 7680,18106 7888,18208 7954,18251 8096,18456 8174,18565 8261,18689
+Ribbeweg: Qualität? Gibt es für Radfahrer eine Durchfahrt zur Amendestr.?	? 7888,18208 7913,18156
+Blumenbachweg: in welche Richtung steigt die Straße: zur Blenheimstr. oder zur Pekrunstr.?	? 20460,15115 20565,15271

@@ -1064,6 +1064,51 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	2::inwork 14383,10036 14405,10027
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1212271200,
+         'text' => 'B 096 Brücke über den Seichgraben zw. Zützen u. Golßen Brückenbauarbeiten Vollsperrung 01.04.2008-31.05.2008 ',
+         'from' => 1206914400,
+         'id' => 1323,
+         'data' => 'userdel	2::inwork 27428,-49936 26648,-49177
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1208728800,
+         'text' => 'B 109 Schönwalde - Wandlitz OD Wandlitz, zw. Kreisel und Berliner Weg Kanalarbeiten Vollsperrung 25.03.2008-20.04.2008 ',
+         'from' => 1206313200,
+         'id' => 1324,
+         'data' => 'userdel	q4::inwork 13556,37493 12887,36543
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1207432800,
+         'text' => 'L 040 Potsdamer Damm OD Blankenfelde, zw. H.-von-Hülsen-Weg und Dorfstr. Deckeneinbau Vollsperrung 04.04.2008-05.04.2008 ',
+         'from' => 1207173600,
+         'id' => 1325,
+         'data' => 'userdel	q4::inwork 9828,-8106 10115,-8276
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1207346400,
+         'text' => 'L 233 Bahnhofstraße Bahnübergang OD Rehfelde Arbeiten Bahnübergang Vollsperrung 01.04.2008-04.04.2008 ',
+         'from' => 1206914400,
+         'id' => 1326,
+         'data' => 'userdel	2::inwork 45856,14437 45740,14260
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1207519200,
+         'text' => 'L 601 Berliner Str. OL Finsterwalde, zw. Leipziger Str. und Friedensstr. Trödelmarkt Vollsperrung 06.04.2008-06.04.2008 ',
+         'from' => 1207346400,
+         'id' => 1327,
+         'data' => 'userdel	q4::temp 33060,-85292 33101,-85749
+',
+         'type' => 'handicap'
        }
      
 );

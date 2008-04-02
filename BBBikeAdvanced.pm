@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.200 2008/03/09 20:08:21 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.201 2008/04/02 20:52:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2008 Slaven Rezic. All rights reserved.
@@ -359,6 +359,10 @@ sub custom_draw {
 	    my $r = $obj->{$abk}->get(0);
 	    if ($r) {
 		$coord = $r->[Strassen::COORDS()]->[0];
+		my $conv = $obj->{$abk}->get_conversion; # XXX %conv_args???
+		if ($conv) {
+		    $coord = $conv->($coord);
+		}
 	    }
 	}
     }

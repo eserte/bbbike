@@ -315,8 +315,8 @@ Lindower Str. -> Lynarstr.: Müllerstr./Lindower Str.	3 7953,15362 7754,15160 762
 Lindower Str. -> Müllerstr.: Müllerstr./Lindower Str.	3 7953,15362 7754,15160 7929,15006
 Adolfstr.	1 7796,15590 7817,15418
 Mimosenweg	2 17668,2187 17657,2213
-Falkenberger Str. -> Berliner Allee: Straßenbahntrasse	3 15323,16774 14619,16682 14619,16672
-Berliner Allee -> Falkenberger Str.: Straßenbahntrasse	3 14559,16912 14619,16682 15323,16774
+Berliner Allee -> Falkenberger Str.: Straßenbahntrasse	3 14559,16912 14619,16682 14836,16701
+Falkenberger Str. -> Berliner Allee: Straßenbahntrasse	3 14836,16701 14619,16682 14619,16672
 Sredzkistr. (ab Parkhaus Kulturbrauerei)	1 11101,14768 10909,14710
 Bahnübergang nur für Fußgänger/Radfahrer	3 20627,12162 20624,12133 20613,12064
 Bahnübergang nur für Fußgänger/Radfahrer	3 20613,12064 20624,12133 20627,12162
@@ -393,7 +393,7 @@ Donaustr.	1 12150,8891 12202,8895
 Altstadt Köpenick: nur für Busse frei	2 22381,4752 22383,4703
 Trojanstr. -> Köpenicker Landstr.: Mittelstreifen	3 16290,7160 16353,7226 15920,7697
 Köpenicker Landstr. -> Trojanstr.: Mittelstreifen	3 16428,7144 16353,7226 16290,7160
-Sulzfelder Str. -> Buschallee: Straßenbahntrasse	3 15120,16349 15134,16499 14621,16563
+Sulzfelder Str. -> Buschallee: Straßenbahntrasse	3 15120,16349 15134,16499 14809,16525
 Buschallee -> Sulzfelder Str.: Straßenbahntrasse	3 15388,16502 15134,16499 15120,16349
 Alt-Mahlsdorf -> Theodorstr.: Mittelstreifen	3 25115,11244 24890,11268 24907,11186
 Theodorstr. -> Alt-Mahlsdorf: Mittelstreifen	3 24907,11186 24890,11268 24822,11275
@@ -510,3 +510,4 @@ Zwickauer Damm -> Schriftsetzerweg: Bahntrasse	3 16002,1964 15875,1796 15967,171
 Bürgerstr. -> Buschkrugallee: Mittelstreifen	3 13239,6344 13307,6359 13294,6386
 Buschkrugallee -> Bürgerstr.: Mittelstreifen	3 13323,6322 13307,6359 13239,6344
 Gieselerstr.	1 4606,9023 4619,9200
+Wiener Str., Görlitzer Ufer	1 12932,9900 13086,9825 13150,9900 13221,10005
