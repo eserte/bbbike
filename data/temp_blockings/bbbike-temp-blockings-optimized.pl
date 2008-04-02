@@ -1109,6 +1109,15 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::temp 33060,-85292 33101,-85749
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1208556000,
+         'text' => 'L 026 zw. OA Wollschow u. OE Brüssow Einbau Deckschicht Vollsperrung 07.04.2008-18.04.2008 ',
+         'from' => 1207432800,
+         'id' => 1328,
+         'data' => 'userdel	2::inwork 61502,112547 60639,112544 58357,111700 57995,111657
+',
+         'type' => 'gesperrt'
        }
      
 );

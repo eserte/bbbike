@@ -11180,4 +11180,12 @@ EOF
 userdel	q4::temp 33060,-85292 33101,-85749
 EOF
      },
+     { from  => 1207432800, # 2008-04-06 00:00
+       until => 1208556000, # 2008-04-19 00:00
+       text  => 'L 026 zw. OA Wollschow u. OE Brüssow Einbau Deckschicht Vollsperrung 07.04.2008-18.04.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 61502,112547 60639,112544 58357,111700 57995,111657
+EOF
+     },
     );
