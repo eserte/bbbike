@@ -1118,6 +1118,24 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	2::inwork 61502,112547 60639,112544 58357,111700 57995,111657
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1207605600,
+         'text' => 'B 158 Berliner Str. OD Leuenberg Einbau Trag- und Binderschicht Vollsperrung 07.04.2008-07.04.2008 ',
+         'from' => 1207432800,
+         'id' => 1329,
+         'data' => 'userdel	q4::inwork 42781,33687 43093,33781
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1219269600,
+         'text' => 'L 233 Berliner Str. OD Hennickendorf Böschungssanierung Vollsperrung 26.05.2008-20.08.2008 ',
+         'from' => 1211666400,
+         'id' => 1330,
+         'data' => 'userdel	q4::inwork 38574,10226 39548,11243 39824,11264
+',
+         'type' => 'handicap'
        }
      
 );

@@ -11188,4 +11188,20 @@ EOF
 userdel	2::inwork 61502,112547 60639,112544 58357,111700 57995,111657
 EOF
      },
+     { from  => 1207432800, # 2008-04-06 00:00
+       until => 1207605600, # 2008-04-08 00:00
+       text  => 'B 158 Berliner Str. OD Leuenberg Einbau Trag- und Binderschicht Vollsperrung 07.04.2008-07.04.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 42781,33687 43093,33781
+EOF
+     },
+     { from  => 1211666400, # 2008-05-25 00:00
+       until => 1219269600, # 2008-08-21 00:00
+       text  => 'L 233 Berliner Str. OD Hennickendorf Böschungssanierung Vollsperrung 26.05.2008-20.08.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 38574,10226 39548,11243 39824,11264
+EOF
+     },
     );
