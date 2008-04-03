@@ -251,6 +251,10 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet; in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: beate köster:
+Schachtelhalmweg: guter Asphalt, Q0, enge Straße, q0	? 20918,2218 20836,2150 20797,2123 20734,2103 20591,2060 20360,1987
+#: by: Bartsch, Christel:
+Cimbernring (Rangsdorf): Kopfsteinpflaster, Q2	? 13781,-12483 13713,-12490 13573,-12500 13545,-12303 13552,-12003
 #: by: anonymous:
 Korbmacherweg: guter Asphalt, Q0	? 16352,1226 16375,1313
 #: by: Kerstin Werner:
@@ -408,7 +412,44 @@ Skandinavische Str.: auf der westlichen Seite Suggestivstreifen (laut Radzeit)?	
 Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
 Fähre Liepnitzsee zum Großen Werder: wo genau?	? 16050,38181 16455,37790
 Sputendorfer Str.: laut http://home.arcor.de/hoge-online/std_tlw/std_tlw00.htm sieht die Straße gut aus, wie sieht es weiter südlich Richtung Sputendorf aus?	? -2049,-2165 -1853,-2412 -1834,-3968 -1812,-4210
-Bismarckplatz. - Kurstr./Lynarstr.: Qualität? Ist es möglich, als Radfahrer durch den Koeltzepark zu fahren?	? -3216,15155 -3041,15434 -3006,15534 -2980,15675
+Müllerstr. (Spandau): Qualität?	? -3216,15155 -3138,15259
+#: by: Joerg Boehmer: für Radfahrer befahrbar (Radweg), gute Qualität, genauere Kategorisierung folgt
+(Kurstr. - Müllerstr. (durch den Koeltzepark): Beschaffenheit des Wegs?	? -3138,15259 -3077,15367
+Kurstr.: Qualität?	? -3077,15367 -3041,15434 -3006,15534 -2980,15675
+Kirchhofstr.: Qualität?	? -3034,15217 -3138,15259 -3235,15307 -3295,15356
+Kirchhofstr. - Schönwalder Str. (am Koeltzepark): Existiert eine Durchfahrt für Radfahrer? Qualität?	? -3295,15356 -3359,15426
+Lasiuszeile - Schönwalder Str. (am Koeltzepark): Existiert eine Durchfahrt für Radfahrer? Qualität?	? -3293,15481 -3359,15426 -3384,15404
+Lasiuszeile: Qualität?	? -3260,15550 -3293,15481
+Lutherstr.: Qualität?	? -3248,15543 -3234,15567 -3179,15574 -3134,15578 -3006,15534 -2908,15498
+Lutherplatz: Qualität?	? -3296,15563 -3306,15644
+Neumeisterstr.: Qualität?	? -3296,15563 -3461,15544
+Am Koeltzepark: Qualität?	? -3077,15367 -3293,15481
+Predigergarten: Qualität?	? -3235,15307 -3250,15281 -3285,15258
+Hedwigstr.: Qualität?	? -3293,15645 -3302,15787
+Schülerbergstr.: Qualität?	? -3559,15952 -3444,15978
+Eiswerderufer: Qualität?	? -2853,15127 -2835,15168 -2830,15208
+Krienickesteig: Qualität?	? -2903,15237 -2878,15304
+#: note: http://www.luise-berlin.de/strassen/Bez08a/F639.htm
+Frieda-Arnheim-Promenade: Qualität? Für Radfahrer befahrbar? Geht es jenseits der Eiswerderstr. schon weiter?	? -2830,15208 -2801,15280 -2751,15380 -2732,15377 -2701,15473 -2715,15519
+Brauereihof: Qualität?	? -2783,15538 -2809,15459 -2858,15475 -2886,15393 -2856,15383 -2801,15365 -2775,15446 -2809,15459
+Rosa-Reinglass-Steig: Qualität? Für Autos gesperrt?	? -2878,15304 -2856,15383
+Paula-Hirschfeld-Steig: Qualität? Für Autos gesperrt?	? -2968,15333 -2878,15304 -2801,15280
+Uferweg im Wröhmännerpark: Für Radfahrer befahrbar? Qualität?	? -3066,14718 -3006,14774 -2992,14850 -3008,14910 -3008,14992 -2965,15053 -2929,15082 -2955,15129
+Parkstr. (Spandau): Qualität?	? -2856,15687 -2744,15690
+Feldstr. (Spandau): Qualität?	? -3177,15053 -3258,15100 -3368,15170 -3534,15219
+Feldstr. (Spandau): Abschnitt an der Flankenschanze für Autos gesperrt?	? -3534,15219 -3585,15221
+Feldstr. (Spandau): Qualität?	? -3585,15221 -3635,15222 -3658,15218
+Blumenstr. (Spandau): Qualität?	? -3534,15219 -3582,15244 -3630,15268 -3804,15358
+Ackerstr. (Spandau): Qualität? Zufahrt zum Falkenseer Damm für Autos gesperrt?	? -3937,15299 -3869,15333 -3804,15358 -3696,15463 -3660,15618 -3650,15661 -3637,15717
+Hospitalstr.: Qualität?	? -3650,15661 -3727,15695
+Emdenzeile: Qualität?	? -3720,15717 -3637,15717 -3514,15726
+Golmer Str.: Qualität?	? -3720,15717 -3866,15775 -3995,15832
+Barnewitzer Weg: Qualität?	? -3866,15775 -3829,15868 -3793,15949
+Glöwener Str.: Qualität?	? -3896,15999 -3793,15949 -3697,15918
+Marschallstr.: Qualität?	? -3708,15831 -3542,15871
+Stadtheidestr.: Qualität? Einbahnstraße?	? -3573,16006 -3684,15982
+Eckschanze: Qualität?	? -3684,15982 -3707,15987 -3828,16118
+Friedrichstr. (Spandau): Qualität?	? -3322,14814 -3244,14828
 #: XXX von anima43 folgende Einträge (aber nicht sicher für diesen Abschnitt): fester Sandweg, Q2, viele Fußgänger, viele Hunde q4 (aber ich würde wahrscheinlich eher q2 nehmen):
 Mauerweg zwischen Drusenheimer Weg und Buckower Damm: existiert eine Strecke, wie ist die Qualität? Vielleicht geht es auch weiter Richtung Rudow? (laut "Berliner Umland" witterungsabhängige Strecke)	? 11794,550 11924,594 12519,794 12984,1011
 Mauerweg Rudow: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 14996,1564 15272,778 15403,416 15655,-245
@@ -1884,3 +1925,22 @@ Krumme Str. (Lichterfelde): Qualität?	? 4366,3513 4305,3572 4357,3625
 #: XXX unklarer Eintrag von anonymous: Asphalt, Q2, aber auf dem Luftbild scheint es teilweise wie Kopfsteinpflaster auszusehen?
 Raschdorffstr.: Qualität?	? 7439,17985 7680,18106 7888,18208 7954,18251 8096,18456 8174,18565 8261,18689
 Ribbeweg: Qualität? Gibt es für Radfahrer eine Durchfahrt zur Amendestr.?	? 7888,18208 7913,18156
+Thurbrucher Steig: Qualität?	? -921,23546 -1075,23690 -1174,23770 -1213,23811 -1283,23906 -1303,23924
+Sagemühler Steig: Qualität?	? -861,23598 -1009,23754 -1106,23851 -1165,23944 -1224,24012 -1252,24033 -1270,24019
+Deeper Pfad: Qualität?	? -800,23651 -957,23810
+Kiefheider Weg: Qualität?	? -736,23707 -799,23777
+Sonnenwalder Weg: Qualität?	? -673,23763 -833,23935 -998,24096 -1059,24155 -1194,24295
+Gambiner Weg: Qualität?	? -603,23825 -769,24019
+Randower Weg: Qualität?	? -684,24095 -769,24019 -796,23994
+Darsiner Weg: Qualität?	? -758,24172 -867,24066
+Altdammer Weg: Qualität?	? -833,24244 -925,24150 -946,24123
+Zanower Weg: Qualität?	? -1039,24363 -1013,24331 -1002,24297 -1005,24254 -993,24211 -925,24150
+Polziner Weg: Qualität?	? -1112,24331 -1102,24309 -1077,24300 -1050,24241
+Baaber Weg: Qualität?	? -1278,24259 -1324,24357
+Büssower Weg: Qualität?	? -1324,24357 -1620,24229
+Lobber Steig: Qualität?	? -1620,24229 -1546,24143
+Neuwarper Pfad: Qualität?	? -1546,24143 -1437,24015 -1347,24096
+Ziegenorter Pfad: Qualität?	? -1434,24191 -1347,24096 -1297,24049 -1270,24019 -1303,23924 -1367,23853
+Labeser Weg: Qualität?	? -1224,24012 -1131,24107 -1059,24155
+Freester Weg: Qualität?	? -1165,23944 -1111,23987 -1059,24033 -998,24096
+Karwitzer Pfad: Qualität?	? -833,23935 -896,23872 -957,23810 -1009,23754

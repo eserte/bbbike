@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.10 2008/03/29 21:37:39 eserte Exp eserte $
+# $Id: bbbike.cgi,v 9.11 2008/04/03 21:13:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -723,7 +723,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 9.10 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 9.11 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -5390,7 +5390,10 @@ sub init_plz {
 	if ($scope eq 'all' || $scope =~ $outer_berlin_qr) {
 	    (my $file_scope = $scope) =~ s{[^A-Za-z]}{_}g;
 	    $other_place_coords_data = "$tmp_dir/" . $Strassen::Util::cacheprefix . "_" . $< . "_" . $file_scope . ".coords.data";
-	    if (!-r $other_place_coords_data) { # XXX check for recentness!
+	    my $landstr0 = Strassen->new("landstrassen", NoRead => 1);
+	    if (!-r $other_place_coords_data ||
+		(-r $other_place_coords_data && -M $other_place_coords_data > -M $landstr0->file)
+	       ) {
 		if (open(OFH, "> $other_place_coords_data")) {
 		    my $landstr = Strassen->new("landstrassen");
 		    $landstr->init;
@@ -6838,7 +6841,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/03/29 21:37:39 $';
+    my $cgi_date = '$Date: 2008/04/03 21:13:52 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
