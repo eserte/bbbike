@@ -814,16 +814,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_007843',
-         'until' => 1207346400,
-         'text' => 'Behrenstr. (Mitte) Richtung Bebelplatz zwischen Glinkastr. und Freidrichstr. Baustelle, Fahrtrichtung gesperrt (bis 04.04.08)',
-         'from' => 1203374035,
-         'id' => 1284,
-         'data' => 'userdel	1::inwork 9164,12172 9365,12196
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_007850',
@@ -932,15 +923,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1207346400,
-         'text' => 'L 054 Calau - Vetschau Bahnübergang Calauer Str. in der OD Saßleben Gleisumbauarbeiten Vollsperrung 03.04.2008-04.04.2008 ',
-         'from' => 1207087200,
-         'id' => 1304,
-         'data' => 'userdel	2::inwork 50732,-71705 51374,-71361 51440,-71337
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1207864800,
          'text' => 'L 054 Calau - Vetschau Bahnübergang Calauer Str. in der OD Saßleben Gleisumbauarbeiten Vollsperrung 08.04.2008-10.04.2008 ',
@@ -996,16 +979,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_008131',
-         'until' => 1207346400,
-         'text' => 'Stresowstr. (Spandau) in beiden Richtungen am Stresowplatz Baustelle, Straße vollständig gesperrt (bis 04.04.2008)',
-         'from' => 1206832625,
-         'id' => 1312,
-         'data' => 'userdel	2::inwork -3001,13877 -3049,13959 -3072,14040
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1207432800,
@@ -1092,15 +1066,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1207346400,
-         'text' => 'L 233 Bahnhofstraße Bahnübergang OD Rehfelde Arbeiten Bahnübergang Vollsperrung 01.04.2008-04.04.2008 ',
-         'from' => 1206914400,
-         'id' => 1326,
-         'data' => 'userdel	2::inwork 45856,14437 45740,14260
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1207519200,
          'text' => 'L 601 Berliner Str. OL Finsterwalde, zw. Leipziger Str. und Friedensstr. Trödelmarkt Vollsperrung 06.04.2008-06.04.2008 ',
