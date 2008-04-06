@@ -1642,7 +1642,7 @@ EOF
        text  => 'Pistoriusstr. (Weissensee) Richtung Berliner Allee zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt (bis 30.06.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 13400,16395 13632,16305 13652,16297 13679,16286 13797,16237
+userdel	1 13400,16395 13485,16362 13544,16339 13632,16305 13652,16297 13679,16286 13797,16237
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -1830,7 +1830,7 @@ EOF
        text  => 'Berliner Allee Richtung stadtauwärts, zwischen Langhanstr. und Lindenallee Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 13540,15928 13630,15956 13753,16000 13826,16026 14014,16106 14067,16127 14248,16202 14371,16252
+userdel	q4; 13540,15928 13623,15954 13630,15956 13753,16000 13826,16026 14014,16106 14067,16127 14248,16202 14371,16252
 EOF
      },
      { from  => 1138319749, # 2006-01-27 00:55
@@ -8959,7 +8959,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20070703.1505.81257.html',
        data  => <<EOF,
-userdel	1::inwork 12693,16700 12486,16791 12257,16876 12241,16900
+userdel	1::inwork 12693,16700 12604,16731 12486,16791 12257,16876 12241,16900
 EOF
      },
      { from  => 1183704492, # 2007-07-06 08:48
@@ -10345,7 +10345,7 @@ userdel	2::inwork -15344,63638 -14811,64192 -13924,65015 -13695,65213 -13104,654
 EOF
      },
      { from  => undef, # 
-       until => Time::Local::timelocal(reverse(2010-1900,1-1,1,0,0,0)), #
+       until => 1207493624, # Time::Local::timelocal(reverse(2010-1900,1-1,1,0,0,0))
        text  => 'Bauarbeiten am Ostkreuz, Verbindungsstraße könnte für die Durchfahrt gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -10809,7 +10809,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006024',
        data  => <<EOF,
-userdel	1::inwork 12486,16791 12693,16700
+userdel	1::inwork 12486,16791 12604,16731 12693,16700
 EOF
      },
      { from  => 1201647600, # 2008-01-30 00:00
@@ -10820,9 +10820,9 @@ EOF
 userdel	2::inwork 22178,30343 21872,30139 21561,30131 21172,29984
 EOF
      },
-     { from  => 1203374035, # 2008-02-18 23:33
-       until => 1207346400, # 2008-04-05 00:00
-       text  => 'Behrenstr. (Mitte) Richtung Bebelplatz zwischen Glinkastr. und Freidrichstr. Baustelle, Fahrtrichtung gesperrt (bis 04.04.08)',
+     { from  => 1207420756, # 2008-04-05 20:39
+       until => 1210888799, # 2008-05-15 23:59
+       text  => 'Behrenstr. (Mitte) Richtung Bebelplatz zwischen Glinkastr. und Friedrichstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 05.2008)',
        type  => 'gesperrt',
        source_id => 'IM_007843',
        data  => <<EOF,
@@ -11066,9 +11066,9 @@ EOF
 userdel	2::inwork 72960,97477 73017,97449 73031,97443
 EOF
      },
-     { from  => 1206828000, # 2008-03-29 23:00
-       until => 1207432800, # 2008-04-06 00:00
-       text  => 'L 222 Gransee - Menz zw. Menz und Kreuz. Zernickow Straßeninstandsetzung Vollsperrung 31.03.2008-05.04.2008 ',
+     { from  => 1207432800, # 2008-04-06 00:00
+       until => 1210370400, # 2008-05-10 00:00
+       text  => 'L 222 Gransee - Menz zw. Menz und Kreuz. Zernickow Straßeninstandsetzung Vollsperrung 07.04.2008-09.05.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -13537,75287 -13950,75662 -14862,76637
@@ -11202,6 +11202,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 38574,10226 39548,11243 39824,11264
+EOF
+     },
+     { from  => 1207421155, # 2008-04-05 20:45
+       until => 1207519200, # 2008-04-07 00:00
+       text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung, Straße vollständig gesperrt (bis 06.04.2008 nachts)',
+       type  => 'gesperrt',
+       source_id => 'IM_008238',
+       data  => <<EOF,
+userdel	2::temp 7277,15586 7198,15656 7129,15717 7043,15793
 EOF
      },
     );

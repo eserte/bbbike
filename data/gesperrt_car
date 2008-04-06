@@ -315,8 +315,8 @@ Lindower Str. -> Lynarstr.: Müllerstr./Lindower Str.	3 7953,15362 7754,15160 762
 Lindower Str. -> Müllerstr.: Müllerstr./Lindower Str.	3 7953,15362 7754,15160 7929,15006
 Adolfstr.	1 7796,15590 7817,15418
 Mimosenweg	2 17668,2187 17657,2213
-Berliner Allee -> Falkenberger Str.: Straßenbahntrasse	3 14559,16912 14619,16682 14836,16701
-Falkenberger Str. -> Berliner Allee: Straßenbahntrasse	3 14836,16701 14619,16682 14619,16672
+Berliner Allee -> Falkenberger Str.: Straßenbahntrasse	3 14608,16772 14619,16682 14723,16691
+Falkenberger Str. -> Berliner Allee: Straßenbahntrasse	3 14723,16691 14619,16682 14619,16672
 Sredzkistr. (ab Parkhaus Kulturbrauerei)	1 11101,14768 10909,14710
 Bahnübergang nur für Fußgänger/Radfahrer	3 20627,12162 20624,12133 20613,12064
 Bahnübergang nur für Fußgänger/Radfahrer	3 20613,12064 20624,12133 20627,12162
@@ -367,7 +367,7 @@ Ella-Trebe-Str.: nur für Taxis	2 7938,13135 7938,13302
 Nixenstr. -> An der Wuhlheide: Straßenbahntrasse	3 20371,5753 20428,5841 20352,5877
 An der Wuhlheide -> Nixenstr.: Straßenbahntrasse	3 20536,5789 20428,5841 20371,5753
 Gürtelstr. - Lehderstr.: nur rechts abbiegen erlaubt	3 13409,15687 13316,15758 13214,15830
-Gürtelstr. - Greifswalder Str.: nur rechts abbiegen erlaubt	3 13409,15687 13316,15758 13098,15592
+Gürtelstr. - Greifswalder Str.: nur rechts abbiegen erlaubt	3 13409,15687 13316,15758 13229,15692 13098,15592
 Jochen-Nüßler-Str.	1 13571,4493 13589,4681
 Jochen-Nüßler-Str. -> Parchimer Allee: Parchimer Allee	3 13589,4681 13571,4493 13659,4489
 Engelmannweg -> Scharnweberstr.: Mittelstreifen	3 4492,18013 4429,17763 4584,17704
@@ -410,8 +410,8 @@ Mörchinger Str. -> Berliner Str.: Mittelstreifen	3 1358,3257 1334,3305 1208,3211
 Berliner Str. -> Mörchinger Str.: Mittelstreifen	3 1415,3362 1334,3305 1358,3257
 Biesenthaler Str. -> Prinzenallee: Mittelstreifen	3 9245,16758 9024,16855 8939,16668
 Prinzenallee -> Biesenthaler Str.: Mittelstreifen	3 9028,16864 9024,16855 9245,16758
-Berliner Allee -> Tassostr.: Straßenbahntrasse	3 13540,15928 13630,15956 13621,15990
 Tassostr. -> Berliner Allee: Straßenbahntrasse	3 13621,15990 13630,15956 13753,16000
+Berliner Allee -> Tassostr.: Straßenbahntrasse	3 13623,15954 13630,15956 13621,15990
 Zeppelinstr. -> Helmholtzstr.: Straßenbahntrasse	3 18053,6920 17924,6967 17845,6986
 Zeppelinstr. -> Edisonstr.: Straßenbahntrasse	3 18053,6920 17924,6967 17962,6674
 Edisonstr. -> Zeppelinstr.: Straßenbahntrasse	3 17925,6976 17924,6967 18053,6920
@@ -492,6 +492,8 @@ Neumannstr. -> Jenny-Lind-Str.: Mittelstreifen	3 11519,17316 11531,17250 11645,1
 Jenny-Lind-Str. -> Neumannstr.: Mittelstreifen	3 11645,17271 11531,17250 11549,17154
 Lindenallee -> Berliner Allee: Straßenbahn	3 14296,16065 14248,16202 14067,16127
 Berliner Allee -> Lindenallee: Straßenbahn	3 14371,16252 14248,16202 14296,16065
+Tassostr. -> Berliner Allee: Straßenbahn	3 13621,15990 13630,15956 13753,16000
+Berliner Allee -> Tassostr.: Straßenbahn	3 13623,15954 13630,15956 13621,15990
 Talsandweg: Einbahnstraße	1 3206,21179 3138,21372
 Lichtenrader Damm -> Reichnerweg: Mittelstreifen	3 10471,802 10524,655 10726,739
 Reichnerweg -> Lichtenrader Damm: Mittelstreifen	3 10726,739 10524,655 10573,519
@@ -512,3 +514,4 @@ Buschkrugallee -> Bürgerstr.: Mittelstreifen	3 13323,6322 13307,6359 13239,6344
 Gieselerstr.	1 4606,9023 4619,9200
 Wiener Str., Görlitzer Ufer	1 12932,9900 13086,9825 13150,9900 13221,10005
 Freiertweg - Lichtenrader Damm	3 10827,467 10619,395 10660,293
+Glasbläserallee: Tore versperren die Durchfahrt, Radfahrer können passieren	2 14893,10359 14839,10271

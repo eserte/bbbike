@@ -649,15 +649,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        undef,
-       {
-         'until' => 1262300400,
-         'text' => 'Bauarbeiten am Ostkreuz, Verbindungsstraße könnte für die Durchfahrt gesperrt sein',
-         'from' => undef,
-         'id' => 1227,
-         'data' => 'userdel	2::inwork 14802,10505 14836,10524 14843,10621 14882,10732
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1262300400,
          'text' => 'Bauarbeiten am Ostkreuz, Durchfahrt nicht mehr möglich',
@@ -801,7 +793,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'text' => 'Pistoriusstr. (Weißensee) Richtung Berliner Str. zwischen Gustav-Adolf-Str. und Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2008) (09:04) ',
          'from' => undef,
          'id' => 1282,
-         'data' => 'userdel	1::inwork 12486,16791 12693,16700
+         'data' => 'userdel	1::inwork 12486,16791 12604,16731 12693,16700
 ',
          'type' => 'gesperrt'
        },
@@ -814,7 +806,16 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'source_id' => 'IM_007843',
+         'until' => 1210888799,
+         'text' => 'Behrenstr. (Mitte) Richtung Bebelplatz zwischen Glinkastr. und Friedrichstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 05.2008)',
+         'from' => 1207420756,
+         'id' => 1284,
+         'data' => 'userdel	1::inwork 9164,12172 9365,12196
+',
+         'type' => 'gesperrt'
+       },
        undef,
        {
          'source_id' => 'IM_007850',
@@ -982,9 +983,9 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        {
-         'until' => 1207432800,
-         'text' => 'L 222 Gransee - Menz zw. Menz und Kreuz. Zernickow Straßeninstandsetzung Vollsperrung 31.03.2008-05.04.2008 ',
-         'from' => 1206828000,
+         'until' => 1210370400,
+         'text' => 'L 222 Gransee - Menz zw. Menz und Kreuz. Zernickow Straßeninstandsetzung Vollsperrung 07.04.2008-09.05.2008 ',
+         'from' => 1207432800,
          'id' => 1314,
          'data' => 'userdel	2::inwork -13537,75287 -13950,75662 -14862,76637
 ',
@@ -1057,15 +1058,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1207432800,
-         'text' => 'L 040 Potsdamer Damm OD Blankenfelde, zw. H.-von-Hülsen-Weg und Dorfstr. Deckeneinbau Vollsperrung 04.04.2008-05.04.2008 ',
-         'from' => 1207173600,
-         'id' => 1325,
-         'data' => 'userdel	q4::inwork 9828,-8106 10115,-8276
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1207519200,
@@ -1102,6 +1095,16 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork 38574,10226 39548,11243 39824,11264
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_008238',
+         'until' => 1207519200,
+         'text' => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung, Straße vollständig gesperrt (bis 06.04.2008 nachts)',
+         'from' => 1207421155,
+         'id' => 1331,
+         'data' => 'userdel	2::temp 7277,15586 7198,15656 7129,15717 7043,15793
+',
+         'type' => 'gesperrt'
        }
      
 );

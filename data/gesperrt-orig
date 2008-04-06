@@ -361,7 +361,6 @@ Parchimer Str.	1 22292,12198 22228,12274 22212,12349 22212,12422 22256,12489 222
 Ringbahnstr.	1 12934,6967 13081,7014
 #: by: Robert J.
 Stiftsweg/Bleicheroder Str.	1 11025,18531 11268,18851 11439,18890 11526,18929 11620,18971 11725,19007 11805,19071
-Glasbläserallee: Tore versperren die Durchfahrt	2 14893,10359 14839,10271
 Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
 Quitzowstr.	1 7132,14375 7091,14401
 Quitzowstr.	1 7091,14401 7180,14419
@@ -420,7 +419,7 @@ Kreuzstr.	1 9832,17925 9902,18180 9909,18333
 #: note: war mal "1s", aber ich wurde dafür zu oft getadelt...
 Vorbergstr.	1 7022,9211 7137,9216 7315,9156
 Wederstr.	1 12981,6366 12813,6334 12597,6293
-DGZ-Ring	1 12989,16921 12911,17021 12877,17039 12853,17024 12810,16994 12789,16977 12783,16925 12858,16825
+DGZ-Ring	1 12989,16921 12911,17021 12877,17039 12853,17024 12810,16994 12789,16977 12783,16925 12837,16853 12858,16825
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Riensbergstr.	1 -740,15306 -764,15480
 Saganer Str.: Bahngelände	2 16654,9748 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159
@@ -1059,6 +1058,7 @@ Schranke (Thyssenstr. - Sittestr.)	BNP:3 5856,19204
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #
+(Untere Kynaststr.): In Bau	2:inwork 14802,10505 14836,10524 14843,10621 14882,10732 14890,10824
 #: note: genaue Wegführung von Diethard Mager:
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011, dann als Fußgänger/Radweg konzipiert	2:inwork 8184,14052 8290,14119
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011	2:inwork 8290,14119 8246,14201 8138,14148
@@ -1147,6 +1147,8 @@ Rumeyplan	1 8682,7714 8799,7741 8894,7783 8940,7835
 Rumeyplan	1 8967,7821 8902,7763 8815,7722 8684,7688
 Greifswalder Str.	3nocross 12338,14532 12384,14600 12437,14680
 Greifswalder Str.	3nocross 12437,14680 12488,14753 12536,14827
+#: note: Luftbild:
+Greifswalder Str.: Straßenbahntrasse	3nocross 13098,15592 13229,15692 13316,15758
 Dietrich-Bonhoeffer-Str.	1 12578,14237 12285,14458
 tragen (3 einzelne Stufen)	0:15 13079,14320
 Achtung schlecht sichtbare Kette!!	BNP:5 13446,14030
