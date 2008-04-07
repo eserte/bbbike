@@ -1060,15 +1060,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        undef,
        undef,
-       {
-         'until' => 1207519200,
-         'text' => 'L 601 Berliner Str. OL Finsterwalde, zw. Leipziger Str. und Friedensstr. Trödelmarkt Vollsperrung 06.04.2008-06.04.2008 ',
-         'from' => 1207346400,
-         'id' => 1327,
-         'data' => 'userdel	q4::temp 33060,-85292 33101,-85749
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1208556000,
          'text' => 'L 026 zw. OA Wollschow u. OE Brüssow Einbau Deckschicht Vollsperrung 07.04.2008-18.04.2008 ',
@@ -1095,16 +1087,6 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork 38574,10226 39548,11243 39824,11264
 ',
          'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_008238',
-         'until' => 1207519200,
-         'text' => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung, Straße vollständig gesperrt (bis 06.04.2008 nachts)',
-         'from' => 1207421155,
-         'id' => 1331,
-         'data' => 'userdel	2::temp 7277,15586 7198,15656 7129,15717 7043,15793
-',
-         'type' => 'gesperrt'
        }
      
 );
