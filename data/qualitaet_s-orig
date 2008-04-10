@@ -204,7 +204,7 @@ Am Kupfergraben: Kopfsteinpflaster	Q2 9754,12775 9661,12876
 Geschwister-Scholl-Str.: Kopfsteinpflaster	Q2 9529,12925 9550,12760
 Marchlewskistr.: Kopfsteinpflaster	Q2 13226,11934 13280,11834 13303,11791
 Pillauer Str.: Kopfsteinpflaster	Q2 13377,11644 13290,11581
-Wriezener Karree: Beton	Q1 12686,11737 12778,11691 12819,11764 12726,11851
+Wriezener Karree: Asphalt	Q0 12726,11851 12959,11631
 #: by: Roland Maier vvv
 Prenzlauer Promenade: Asphalt	Q0 12012,16752 12046,16568 12054,16517 12077,16380 12097,16263 12091,16209
 Straﬂe 59: fester Sandweg, sehr uneben	Q2 12459,21010 12524,20863
@@ -252,7 +252,7 @@ Schubertstr.: Asphalt	Q0 21806,6545 21833,6418 21978,6330
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20061128.1350.51122.html
 Pablo-Neruda-Str: asphaltiert	Q0 22967,4144 23435,4179
 Flemingstr.: Kopfsteinpflaster	Q2 7315,12723 7126,12721
-Werftstr.: Kopfsteinpflaster	Q2 7369,13013 7340,12870 7315,12723
+Werftstr.: Kopfsteinpflaster	Q2 7363,13023 7340,12870 7315,12723
 Melanchthonstr.: Kopfsteinpflaster	Q2 7126,12721 6941,12760 6818,12786
 Albrechtstr.: Kopfsteinpflaster	Q2 6366,4500 6416,4452 6492,4387
 Rembrandtstr.: Kopfsteinpflaster	Q2 6051,6758 6121,6851 6143,6853
@@ -1901,6 +1901,7 @@ Erkstr.: Asphalt mit Sch‰den	Q0- 12598,8390 12771,8439 12925,8494
 Straﬂe 645: Asphalt	Q0 11416,8283 11415,8113 11450,7921 11472,7899
 Oderstr.: Asphalt	Q0 11472,7899 11498,7750 11515,7654 11536,7533 11553,7437 11562,7393 11601,7362 11615,7284 11606,7260 11593,7237 11607,7145
 Jollenseglerstr.: Verbundsteinpflaster	Q0- 14921,10047 14882,9966
+Am J¸dischen Museum: wassergebundene Decke	Q1 9757,10589 9966,10600
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -6463,8 +6464,8 @@ Havelberger Str.: Kopfsteinpflaster	Q2 6476,14277 6492,14142
 Havelberger Str.: Asphalt mit gepflasterten Bodenschwellen	Q1 6492,14142 6504,14043 6518,13859
 Stendaler Str. (Tiergarten): Asphalt mit gepflasterten Bodenschwellen	Q1 6719,14047 6504,14043
 Otto-Dix-Str.: Asphalt und Kopfsteipflasterabschnitte	Q1 7207,13118 7370,13204 7496,13272
-Lesser-Ury-Weg: Asphalt und Kopfsteipflasterabschnitte	Q1 7574,13128 7496,13272 7430,13396
-Claire-Waldoff-Promenade: Asphalt und Kopfsteipflasterabschnitte	Q1 7448,13058 7370,13204 7303,13330
+Lesser-Ury-Weg: Asphalt und Kopfsteipflasterabschnitte	Q1 7567,13143 7496,13272 7430,13396
+Claire-Waldoff-Promenade: Asphalt und Kopfsteipflasterabschnitte	Q1 7440,13073 7370,13204 7303,13330
 Bahrfeldtstr.: Kopfsteinpflaster	Q2 14844,10088 14921,10047 15071,9967 15142,9931
 Fanny-Zobel-Str.: Asphalt	Q0 13928,10053 13971,10182 14053,10157 14012,10029
 Fanny-Zobel-Str.: Asphalt	Q0 13971,10182 13891,10208
@@ -6992,7 +6993,6 @@ Kleine J‰gerstr.: Asphalt	Q0 9995,11910 10050,11942 10071,11957
 Alte Leipziger Str.: Asphalt	Q0 10076,11840 10118,11907
 Kleine Gertraudenstr.: Gehwegplatten	Q1 10332,11929 10364,11896 10387,11901
 Am Wriezener Bahnhof: Beton	Q1 12744,11904 12794,11893 12953,11727
-Am Wriezener Bahnhof: unbefestigter Weg	Q2 12947,11608 12953,11727
 Tharauer Allee: Asphalt	Q0 -1483,11283 -1634,11346 -1731,11425 -1829,11337
 (Scottweg - Tharauer Allee): buckliger Asphalt	Q2 -1403,11279 -1483,11283
 Plathweg: Beton	Q1 -3669,11766 -3696,11771 -3714,11782 -3732,11809 -3786,11913
