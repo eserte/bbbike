@@ -43,8 +43,7 @@ Pacelliallee	? 2659,6499 2711,6698 2714,6857 2723,7029
 #: by Berliner Kurier: vvv
 Max-Beer-Str.: Fahrradstraße geplant (2005, aber noch nichts passiert)	? 10632,13199 10703,13467 10740,13621
 #: note: laut http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0511/nachricht2119.html Fertigstellung bis 2007-11-30
-#: last_checked: 2007-04-25
-#: next_check: 2007-11-30
+#: last_checked: 2008-04
 Linienstr.: Fahrradstraße geplant (nach der Sanierung)?	? 9903,13646 9944,13665 9964,13665 10020,13669 10081,13673 10214,13680 10308,13679 10432,13678 10597,13647 10718,13625
 #: by ^^^
 #: by: http://www.reinickendorf.de/index_6280_de.html
@@ -249,6 +248,8 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet; in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: Renate Braun:
+Schmückertstr.: Asphalt,Q0	? -80,1682 -117,1836
 #: by: Bartsch, Christel:
 Cimbernring (Rangsdorf): Kopfsteinpflaster, Q2	? 13781,-12483 13713,-12490 13573,-12500 13545,-12303 13552,-12003
 #: by: anonymous:
@@ -1503,6 +1504,7 @@ Neuwieder Str.: Qualität?	? 19206,9243 19221,9517 19236,9710 19242,9815
 #: note: für Autofahrer ist die Überfahrt über die Straßenbahntrasse nicht möglich
 Hans-Jürgen-Str.: Qualität?	? 11799,20224 11839,20176 11870,20154 11939,20140 11963,20136
 #: note: http://www.berlin.de/ba-pankow/presse/archiv/20070808.1610.83262.html
+#: next_check: 2008-06-01
 Wisbyer Str.: sind die Radspuren in der Wisbyer Str. zwischen Prenzlauer Allee und Stahlheimer Str. auf beiden Seiten fertig gestellt?	? 12091,16209 12026,16247 11887,16320 11828,16335 11807,16340 11727,16358
 Ladiusstr.: Qualität?	? 1224,481 1108,465 1078,443 1042,406 935,391 924,405
 Oderbruchbahnradweg: Asphaltierter Radweg, wie verläuft er weiter?	? 62452,935 63110,1642 63391,1898 63586,2044 64707,2739 65073,2934 65780,3348
@@ -1964,3 +1966,8 @@ Rudolf-Baschant-Str.: Qualität? Einbahnstraße, auch für Radfahrer?	? 12898,16898
 Frieda-Seidlitz-Str.: Qualität? Einbahnstraße, auch für Radfahrer?	? 12761,16862 12613,16749 12604,16731
 Schmohlstr.: Ist die Straße eine Einbahnstraße? Auch für Radfahrer?	? 13064,17124 13196,17223 13239,17269
 Möckernstr.: Ist die Möckernstr. zwischen Hallesches Ufer und Stresemannstr. eine Vorfahrtsstraße?	? 9022,10857 8939,10657 8922,10618 8878,10514 8824,10366
+Thaliaweg: Qualität?	? 6638,3138 6482,3004
+Mittelstr. (Hohenschönhausen): Qualität?	? 15543,14491 15647,14693 15706,14752 15769,14815 15856,14915
+Mittelstr./Alternhofer Str. - Landsberger Allee: Qualität?	? 15520,14444 15511,14409 15468,14430 15428,14341 15430,14262
+#: XXX by: Lars Brückner: guter Asphalt, aber tatsächlich die gesamte Straße?
+Grenzstr. (Potsdam): Qualität?	? -10616,-1089 -10505,-1166 -10324,-1270

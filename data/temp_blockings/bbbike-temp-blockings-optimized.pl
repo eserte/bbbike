@@ -925,15 +925,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        undef,
        undef,
-       {
-         'until' => 1207864800,
-         'text' => 'L 054 Calau - Vetschau Bahnübergang Calauer Str. in der OD Saßleben Gleisumbauarbeiten Vollsperrung 08.04.2008-10.04.2008 ',
-         'from' => 1207519200,
-         'id' => 1305,
-         'data' => 'userdel	2::inwork 50732,-71705 51374,-71361 51440,-71337
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1208210400,
          'text' => 'L 055 Calau - Lübbenau Bahnübergang in der OD Bischdorf Instandsetzung BÜ Vollsperrung 11.04.2008-14.04.2008 ',

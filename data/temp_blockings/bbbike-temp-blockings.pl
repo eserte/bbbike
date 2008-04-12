@@ -9060,7 +9060,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006088',
        data  => <<EOF,
-userdel	2::inwork 15763,15003 16025,14753
+userdel	2::inwork 15763,15003 15856,14915 16025,14753
 EOF
      },
      { from  => 1184450400, # 2007-07-15 00:00
@@ -10000,7 +10000,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006088',
        data  => <<EOF,
-userdel	2::inwork 15763,15003 16025,14753
+userdel	2::inwork 15763,15003 15856,14915 16025,14753
 EOF
      },
      { from  => 1191532907, # 2007-10-04 23:21

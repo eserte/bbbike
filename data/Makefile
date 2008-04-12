@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.180 2008/03/27 00:45:35 eserte Exp eserte $
+# $Id: Makefile,v 2.181 2008/04/11 20:39:44 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -926,7 +926,7 @@ ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd:	fragezeichen ${DATADIR}/strassen $
 check-forever:
 	-nice forever -30 -i make check all
 	@-alarm -nicedown
-	@-xterm-config -deiconify -raise
+	@-xterm-conf -deiconify -raise
 	xmessage "check-forever failed"
 
 .OPTIONAL: .check_bbbike-temp-blockings-optimized
