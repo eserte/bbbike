@@ -666,13 +666,14 @@ Alt-Mahlsdorf: Mittelstreifen	3nocross 24173,11279 24017,11275 23648,11265
 Suermondtstr: Straßenbahntrasse	3nocross 15918,16383 16095,16331 16260,16282 16416,16236
 Suermondtstr: Straßenbahntrasse	3nocross 16416,16236 16515,16207 16654,16167
 Marienfelder Chaussee: Mittelstreifen	3nocross 11002,1211 11155,1273 11198,1291
+Mahlsdorfer Str.: Straßenbahntrasse	3nocross 22539,6258 22645,6431 22682,6495
 #: by: ^^^
 #: by: Jörg Böhmer
 Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3nocross -3043,16601 -3046,16548 -3050,16429
 #: note: Luftbild
 Marienfelder Chaussee: Mittelstreifen	3nocross 10759,1112 10827,1140 11002,1211
 Oranienburger Str.: Mittelstreifen	3nocross 5517,20120 5545,19909 5533,19811
-Bahntrasse	3nocross 15875,1796 15835,1736 15729,1573 15639,1422
+Bahntrasse	3nocross 15875,1796 15835,1747 15799,1690 15729,1573 15639,1422
 Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
 Schloßstr.: Mittelstreifen	3nocross 4741,5309 4748,5357 4861,5581
 #: note: Luftbild
@@ -720,7 +721,7 @@ Martin-Luther-Str.: Mittelstreifen	3nocross 6502,9782 6520,9867 6522,9948
 Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 11013,16278 11003,16196 10994,16120
 Oberspreestr.: Straßenbahntrasse	3nocross 21579,4579 21726,4537 21796,4517
 Oberspreestr.: Straßenbahntrasse	3nocross 21332,4655 21389,4635 21494,4605
-Hermannstr.: Gitter auf Mittelstreifen	3nocross 11892,8372 11920,8252 11931,8206 11933,8198
+Hermannstr.: Gitter auf Mittelstreifen	3nocross 11892,8372 11920,8252 11931,8206
 Bundesplatztunnel	3nocross 5360,7554 5359,7619 5358,7681 5358,7746 5356,7862
 Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061 6873,11011 6824,10904
 Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3906,10035 3930,9919
@@ -948,6 +949,10 @@ tragen (Treppe)	0:30 20673,7260
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+#: note: Luftbild vvv
+Drängelgitter am Bahnübergang	BNP:3 13552,2204
+Drängelgitter am Bahnübergang	BNP:3 13568,2208
+#: note: ^^^
 Drängelgitter	BNP:5 7509,8929
 #: by: Steini: vvv
 Drängelgitter	BNP:3 7245,8583

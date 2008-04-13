@@ -572,8 +572,8 @@ Hedwigstr. -> Suermondtstr.: Straßenbahntrasse	3 16505,16096 16515,16207 16416,1
 Suermondtstr. -> Am Faulen See: Straßenbahntrasse	3 16416,16236 16515,16207 16546,16308
 Streitstr. -> Wegscheider Str.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3 -3050,16429 -3046,16548 -3214,16561
 Wegscheider Str. -> Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3 -3214,16561 -3046,16548 -3043,16601
-Zwickauer Damm -> Feuchtwangerweg: Bahntrasse	3 15729,1573 15835,1736 15788,1747
-Feuchtwangerweg -> Zwickauer Damm: Bahntrasse	3 15788,1747 15835,1736 15875,1796
+Zwickauer Damm -> Feuchtwangerweg: Bahntrasse	3 15799,1690 15835,1747 15788,1747
+Feuchtwangerweg -> Zwickauer Damm: Bahntrasse	3 15788,1747 15835,1747 15875,1796
 Klausdorfer Str. -> Zossener Str.: Straßenbahntrasse	3 23243,15820 23218,15671 23411,15632
 Zossener Str. -> Klausdorfer Str.: Straßenbahntrasse	3 23080,15700 23218,15671 23243,15820
 Zossener Str. -> Mittenwalder Str.: Straßenbahntrasse	3 23218,15671 23411,15632 23441,15780
@@ -1076,6 +1076,8 @@ tragen (Treppe)	0:30:-118 -7418,181
 tragen (Treppe)	0:30:-64 -6933,14317
 tragen (Treppe)	0:30:2 -6934,14291
 tragen (Treppe)	0:30:-237 20673,7260
+Drängelgitter am Bahnübergang	BNP:3:-96 13552,2204
+Drängelgitter am Bahnübergang	BNP:3:-108 13568,2208
 Drängelgitter	BNP:5:42 7509,8929
 Drängelgitter	BNP:3:44 7245,8583
 Drängelgitter	BNP:3:48 7292,8631

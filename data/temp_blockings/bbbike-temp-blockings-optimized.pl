@@ -1090,15 +1090,6 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork 20510,-106314 20444,-106435 20435,-106770
 ',
          'type' => 'handicap'
-       },
-       {
-         'until' => 1208037600,
-         'text' => 'L 040 Potsdamer Damm OD Blankenfelde, am OA Ri. Diedersdorf Deckeneinbau Vollsperrung 12.04.2008-12.04.2008 ',
-         'from' => 1207864800,
-         'id' => 1334,
-         'data' => 'userdel	q4::inwork; 10115,-8276 9828,-8106
-',
-         'type' => 'handicap'
        }
      
 );
