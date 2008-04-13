@@ -11213,4 +11213,28 @@ EOF
 userdel	2::temp 7277,15586 7198,15656 7129,15717 7043,15793
 EOF
      },
+     { from  => 1209506400, # 2008-04-30 00:00
+       until => 1209679200, # 2008-05-02 00:00
+       text  => 'B 112 Frankfurter Str., Bahnhofstr. OD Neuzelle 15. Bibulibustag Vollsperrung 01.05.2008-01.05.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 96003,-33078 96017,-33547 96014,-33803
+EOF
+     },
+     { from  => 1207692000, # 2008-04-09 00:00
+       until => 1210370400, # 2008-05-10 00:00
+       text  => 'K 6206 B101, Elsterwerda - Stolzenhain OD Elsterwerda, Höhe Abzw. Kotschka Straßenbauarbeiten Vollsperrung 10.04.2008-09.05.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 20510,-106314 20444,-106435 20435,-106770
+EOF
+     },
+     { from  => 1207864800, # 2008-04-11 00:00
+       until => 1208037600, # 2008-04-13 00:00
+       text  => 'L 040 Potsdamer Damm OD Blankenfelde, am OA Ri. Diedersdorf Deckeneinbau Vollsperrung 12.04.2008-12.04.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 10115,-8276 9828,-8106
+EOF
+     },
     );

@@ -304,11 +304,11 @@ Gabriel-Max-Str.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2 14102,11715 14065,
 Kurf¸rstenstr.: Kopfsteinpflaster	Q2 7633,10394 7744,10372 7850,10351 8061,10310
 (Im Jagen, Verl‰ngerung): Waldweg	Q1 1375,6138 1057,6461 909,6584 905,6631
 Jahnstr: Kopfsteinpflaster	Q2 11509,9392 11493,9128
-Mauerweg: teilweise nur m‰ﬂiger Asphalt	Q1 7725,21247 7289,20618 7083,20584 6601,20542 6488,20505 6372,20467
+Mauerweg: teilweise nur m‰ﬂiger Asphalt	Q1 7725,21247 7289,20618 7083,20584 6601,20542 6487,20512 6436,20477 6365,20452
 An der Nordbahn: m‰ﬂiges Pflaster (?)	Q1 6669,20129 6374,20394 6289,20468
 An der Nordbahn: teilweise m‰ﬂiger Asphalt (Wellen, Schlaglˆcher)	Q1 8665,18570 8476,18773
 An der Nordbahn: teilweise m‰ﬂiger Asphalt (Wellen, Schlaglˆcher)	Q1 8361,18778 7528,19469
-An der Nordbahn: m‰ﬂiges Pflaster (?)	Q1 7528,19469 6694,20164 6410,20406 6368,20440 6372,20467
+An der Nordbahn: m‰ﬂiges Pflaster (?)	Q1 7528,19469 6694,20164 6398,20401 6364,20431 6365,20452
 Pestalozzistr.: Kopfsteinpflaster	Q2 4433,11213 4556,11206 4728,11195 4782,11192
 Pestalozzistr.: Kopfsteinpflaster	Q2 4173,11225 4077,11226 3981,11226
 Goethestr.: teilweise Kopfsteinpflaster, teilweise Verbundsteine	Q2 4312,11341 4092,11338 3986,11337
@@ -3023,7 +3023,7 @@ Oststr.: m‰ﬂiger Asphalt	Q1 17428,4792 17463,4964 17484,5073 17493,5112 17495,52
 Am Alten Fenn: m‰ﬂiger Asphalt	Q1 17309,5100 17362,5086 17484,5073
 Staudenweg: m‰ﬂiger Asphalt	Q1 17493,5112 17601,5090
 Birkenwerderstr.: Asphalt/Beton	Q0 6470,20761 6945,20805
-Tornower Weg: Asphalt/Beton	Q0 6461,20642 6457,20717 6470,20761 6496,20869 6523,20987 6544,21083
+Tornower Weg: Asphalt/Beton	Q0 6452,20637 6457,20717 6470,20761 6496,20869 6523,20987 6544,21083
 Borgsdorfer Str.: Asphalt/Beton	Q0 6496,20869 6962,20895
 Germendorfer Str.: Asphalt/Beton	Q0 6383,20975 6523,20987 6982,21013 7036,21017
 Wentowsteig: Asphalt/Beton	Q0 6924,20695 6945,20805 6955,20859 6962,20895 6982,21013
@@ -4153,6 +4153,7 @@ Albulaweg: guter Beton	Q0 10123,1996 10341,1936 10473,1900 10591,1870
 Faulhornweg: guter Beton	Q0 10341,1936 10383,2088
 Weilburgstr.: Asphalt	Q0 11120,-976 11305,-952 11503,-926 11598,-915 11695,-906 11790,-894 11878,-885
 Kasinoweg: guter Asphalt	Q0 2624,24710 2444,24950 2364,24886
+Knappenpfad: Kleinsteinpflaster, gut zu fahren	Q1 2471,24709 2410,24837 2364,24886 2340,24884
 Balzerstr.: schlechtes Kopfsteinpflaster	Q3 20938,9293 21097,9288 21241,9287 21354,9259
 Blumenbachweg: guter Asphalt	Q0 20565,15271 20465,15125 20337,14933
 Phˆbener Steig: guter Asphalt	Q0 -8132,15191 -8078,15449
@@ -4168,6 +4169,8 @@ Bergfelder Weg: guter Beton	Q0 2773,26215 2758,26278 2697,26275 2632,26259 2531,
 Auerhahnbalz: schlechtes Kopfsteinpflaster	Q3 636,4765 650,4712 668,4653 697,4605 723,4572
 Bergmannstr. (Zehlendorf): m‰ﬂiges Kopfsteinpflaster	Q2 71,3179 251,3325
 Warnem¸nder Str. (Hohenschˆnhausen): Asphalt	Q0 17183,19003 17176,18901 17190,18884 17220,18842 17246,18813 17285,18764 17337,18708 17426,18695
+Am Vierling: m‰ﬂiger Beton	Q1 -561,4428 -595,4385 -590,4349 -575,4319 -479,4200
+(Durchfahrt am Rundling): Verbundsteinpflaster	Q1 6408,20603 6413,20582 6408,20543 6421,20519 6423,20500 6436,20477
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953
