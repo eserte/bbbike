@@ -926,15 +926,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        undef,
-       {
-         'until' => 1208210400,
-         'text' => 'L 055 Calau - L¸bbenau Bahn¸bergang in der OD Bischdorf Instandsetzung B‹ Vollsperrung 11.04.2008-14.04.2008 ',
-         'from' => 1207778400,
-         'id' => 1306,
-         'data' => 'userdel	2::inwork 49836,-67419 50143,-67035 50318,-65825
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1214949600,
          'text' => 'L 075 Tollkrug - Selchow - Waﬂmannsdorf OD Selchow Straﬂenbauarbeiten Vollsperrung 25.03.2008-01.07.2008 ',
