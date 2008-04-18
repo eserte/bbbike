@@ -604,7 +604,7 @@ Köthen	1 -85091,-74261 -85089,-74420 -85057,-74512
 # Einbahnstraßen, die man als Radfahrer halbwegs ignorieren kann:
 # 
 #: by: Ilona Lange (man fährt auf dem Gehweg, sowieso)
-Helbigstr.	1s 20109,4087 20339,3779 20362,3750
+Helbigstr.	1s:q3 20109,4087 20339,3779 20362,3750
 #: by Andreas (johnnyyen):
 Friedrich-Wilhelm-Str.	1s 8385,5907 8282,5909
 Sophie-Taeuber-Arp-Weg	1s 3302,2471 3293,2218
@@ -613,8 +613,8 @@ Seelbuschring	1s 8485,4619 8432,4712 8242,4648
 Zionskirchstr.	1s:q1 10389,14274 10426,14262
 Walsroder Str.	1s 6396,5125 6295,5132 6203,5138 6089,5145
 Hünensteig	1s 6415,5028 6393,5028 6396,5125
-#: note: hier keine "1s"-Einschränkung notwendig, Radfahren auf dem Uferweg ist wohl Sitte
-Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s 12119,9823 11946,9913 11735,10022 11512,10105
+#: note: Radfahren auf dem Uferweg ist wohl Sitte
+Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s:q2 12119,9823 11946,9913 11735,10022 11512,10105
 Czeminskistr.	1s:q3 7615,8927 7570,8863
 Stallschreiberstr.	1s:q1 10489,11405 10620,11244 10678,11172
 Jahnstr.	1s:q3 11493,9128 11509,9392
@@ -627,7 +627,6 @@ Alte Schönhauser Str.	1s:q2 10718,13625 10746,13673
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13027,7368
 Niemannstr.	1s:q3 14252,11368 14211,11229
 Björnsonstr	1s:q1 10209,16674 10197,16528
-#Eichhornstr.	1s 8226,11458 8258,11254
 Eichhornstr.	1s:q3 8232,11414 8258,11254
 Paul-Junius-Str.	1s:q2 15084,12975 15085,13105
 Ahornallee	1s:q3 1589,11483 1574,11379
@@ -668,8 +667,9 @@ Suermondtstr: Straßenbahntrasse	3nocross 15918,16383 16095,16331 16260,16282 164
 Suermondtstr: Straßenbahntrasse	3nocross 16416,16236 16515,16207 16654,16167
 Marienfelder Chaussee: Mittelstreifen	3nocross 11002,1211 11155,1273 11198,1291
 Mahlsdorfer Str.: Straßenbahntrasse	3nocross 22539,6258 22645,6431 22682,6495
-Berliner Allee: Straßenbahntrasse	3nocross 14499,16341 14556,16391 14610,16522
 #: by: ^^^
+#: by: Vicky (senchi):
+Berliner Allee: Straßenbahntrasse	3nocross 14499,16341 14556,16391 14610,16522
 #: by: Jörg Böhmer
 Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3nocross -3043,16601 -3046,16548 -3050,16429
 #: note: Luftbild

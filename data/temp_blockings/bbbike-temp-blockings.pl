@@ -9768,9 +9768,9 @@ EOF
 userdel	2::inwork -579,33145 -409,33522 103,33971
 EOF
      },
-     { from  => 1189288800, # 2007-09-09 00:00
-       until => 1198193335, # 2007-12-23 00:00 1198364400
-       text  => 'L 026 Landesgrenze - AS Prenzlau-Ost (BAB A11) zw. OA Wollschow u. OE Brüssow grundhafter Straßenbau, Radweg Vollsperrung 10.09.2007-22.12.2007 ',
+     { from  => 1208210400, # 2008-04-15 00:00
+       until => 1209247200, # 2008-04-27 00:00
+       text  => 'L 026 Landesgrenze - AS Prenzlau-Ost (BAB A11) zw. OA Wollschow u. OE Brüssow Straßen-/Radwegebau Vollsperrung 16.04.2008-26.04.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 61502,112547 60639,112544 58357,111700 57995,111657
@@ -11235,6 +11235,58 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork; 10115,-8276 9828,-8106
+EOF
+     },
+     { from  => 1208462457, # 2008-04-17 22:00
+       until => 1208815200, # 2008-04-22 00:00
+       text  => 'Röblingstr. (Tempelhof) in beiden Richtungen zwischen Arnulfstr. und Attilastr. geplatzte Wasserleitung, Straße vollständig gesperrt (bis ca. 21.04.2008)',
+       type  => 'handicap',
+       source_id => 'IM_008378',
+       data  => <<EOF,
+userdel	q4::inwork 7497,5610 7599,5553 7816,5519 8038,5521
+EOF
+     },
+     { from  => 1208546801, # 2008-04-18 21:26
+       until => 1208750400, # 2008-04-21 06:00
+       text  => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Brandenburger Tor und Y.-Rabin-Str. Veranstaltung, Straße vollständig gesperrt (bis 21.04. ca. 6 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_008397',
+       data  => <<EOF,
+userdel	2::temp 8610,12254 8515,12242 8214,12205 8089,12186 8063,12182
+EOF
+     },
+     { from  => 1209160800, # 2008-04-26 00:00
+       until => 1209333600, # 2008-04-28 00:00
+       text  => 'L 086 Golzow - Damsdorf OD Lehnin Fläming-Frühlingsfest Vollsperrung 27.04.2008-27.04.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp -34063,-10552 -33914,-10466 -33873,-10337
+EOF
+     },
+     { from  => 1209160800, # 2008-04-26 00:00
+       until => 1209333600, # 2008-04-28 00:00
+       text  => 'L 088 Emstal - Netzen OD Lehnin Fläming-Frühlingsfest Vollsperrung 27.04.2008-27.04.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp -34063,-10552 -34488,-10578
+EOF
+     },
+     { from  => 1208546772, # 2008-04-18 21:26
+       until => 1208750400, # 2008-04-21 06:00
+       text  => 'Ebertstr. (MItte) in beiden Richtungen zwischen Behrenstr. und Dorotheenstr. Veranstaltung,Straße vollständig gesperrt (bis 21.04. ca. 6 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_008398',
+       data  => <<EOF,
+userdel	2::temp 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
+EOF
+     },
+     { from  => 1208460517, # 2008-04-17 21:28
+       until => 1208728800, # 2008-04-21 00:00
+       text  => 'Turmstraße (Wedding) in beiden Richtungen, zwischen Stromstraße und Oldenburger Str. Veranstaltung, Straße gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_008375',
+       data  => <<EOF,
+userdel	2::temp 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6240,13324
 EOF
      },
     );

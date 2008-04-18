@@ -5438,7 +5438,6 @@ sub define_item_attribs {
 	 'RW9' => 'SlateBlue',
 	 'RW10' => 'green',
 	 'RW'  => 'SlateBlue',
-	 'RW?' => 'SlateBlue',
 
 	 'sperre0' => 'red',	# Tragen
 	 'sperre1' => 'blue',	# Einbahnstraﬂen
@@ -5486,6 +5485,9 @@ sub define_item_attribs {
     for (qw(Q0 Q1 Q2 Q3)) { # same colors for tendencies
 	$category_color{$_."-"} = $category_color{$_};
 	$category_color{$_."+"} = $category_color{$_};
+    }
+    for (1 .. 10) {
+	$category_color{"RW".$_."?"} = $category_color{"RW".$_};
     }
     %category_font_color =
 	(

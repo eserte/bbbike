@@ -10,8 +10,7 @@
 #: section projektierte Radstreifen der Verkehrsverwaltung vvv
 #: by: http://archiv.tagesspiegel.de/archiv/16.03.2007/3142959.asp
 Wintersteinstr.	? 3763,12279 3759,12362 3748,12472 3741,12607 3738,12639
-#: last_checked: 2008-04-08
-Wilhelmstr. (Kreuzberg)	? 9376,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
+# Hier scheint nichts mehr zu passieren: #: last_checked: 2008-04-08 Wilhelmstr. (Kreuzberg)	? 9376,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
 Wisbyer Str.	?; 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 11448,16398 11397,16405 11289,16423 11033,16464
 #: by http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2004/1103/lokales/0030/ vvv
 # (alte URL http://www.berlinonline.de/berliner-zeitung/berlin/327989.html?2004-03-26 gilt nicht mehr)
@@ -247,6 +246,8 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet; in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: Martina Albrecht
+Passower Str.: glatter Straßenbelag, Q0	? 18967,18015 19079,17999 19071,17874 18965,17789 18888,17881
 #: by: Renate Braun:
 Schmückertstr.: Asphalt,Q0	? -80,1682 -117,1836
 #: by: Bartsch, Christel:
@@ -1958,7 +1959,6 @@ Hedwigstr. (Weißensee): Qualität?	? 13315,16548 13376,16600
 Herbert-Bayer-Str.: Qualität?	? 12923,16873 12898,16898 12846,16971 12911,17021
 Rudolf-Baschant-Str.: Qualität? Einbahnstraße, auch für Radfahrer?	? 12898,16898 12837,16853
 Frieda-Seidlitz-Str.: Qualität? Einbahnstraße, auch für Radfahrer?	? 12761,16862 12613,16749 12604,16731
-Möckernstr.: Ist die Möckernstr. zwischen Hallesches Ufer und Stresemannstr. eine Vorfahrtsstraße?	? 9022,10857 8939,10657 8922,10618 8878,10514 8824,10366
 Thaliaweg: Qualität?	? 6638,3138 6482,3004
 Mittelstr. (Hohenschönhausen): Qualität?	? 15543,14491 15647,14693 15706,14752 15769,14815 15856,14915
 Mittelstr./Alternhofer Str. - Landsberger Allee: Qualität?	? 15520,14444 15511,14409 15468,14430 15428,14341 15430,14262
@@ -1983,3 +1983,12 @@ Pflanzgartenstr.: Qualität?	? 23008,7295 22880,7351 22765,7428 22685,7480 22627,
 Pflanzgartenplatz: Qualität?	? 22656,7412 22685,7480
 Dammheidestr.: Qualität?	? 22880,7351 22745,7388 22656,7412 22554,7437
 Hranitzkystr.: Qualität?	? 8686,1664 8661,1649 8578,1692 8471,1741 8342,1803 8286,1830 8217,1866 8129,1911 8048,1945 8009,1959 7960,1977
+#: XXX und auch Zebrastreifen?
+Annenstr.: steht zwischen Heinrich-Heine-Str. und Heinrich-Heine-Platz eine Ampel?	? 11254,11286 11095,11389
+Wartiner Str.: Qualität?	? 18811,18404 18886,18300 18985,18180 18967,18015 18959,17940 18888,17881 18809,17820 18740,17900
+Herbert-Tschäpe-Str.: Qualität? Einbahnstraße, auch für Radfahrer gültig?	? 14710,14185 14510,14104 14481,14095 14358,14155
+Chrysanthemenstr.: Qualität? Kann man als Radfahrer zur Oderbruchstr. gelangen?	? 14137,13987 14241,13941 14262,13935
+Süderbrockweg: Qualität?	? 13933,14622 13940,14654 13990,14729 14051,14822 14080,14862 14103,14853
+Steengravenweg: Qualität?	? 13733,14813 13795,14876 13856,14944
+Ochtumweg: Qualität?	? 13990,14729 13795,14876
+Altenescher Weg: Qualität? Kann die Kniprodestr. in Höhe des Altenescher Wegs überquert werden?	? 14051,14822 13856,14944 13749,15013
