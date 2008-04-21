@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeCrosshairs.pm,v 1.6 2006/02/16 20:46:28 eserte Exp $
+# $Id: BBBikeCrosshairs.pm,v 1.7 2008/04/21 19:33:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeCrosshairs;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(@old_bindings $angle $pd $angle_steps $pd_steps $show_info);
 $angle = 0       if !defined $angle;
@@ -25,7 +25,7 @@ $angle_steps = 1 if !defined $angle_steps;
 $pd_steps = 2    if !defined $pd_steps;
 $show_info = 1	 if !defined $show_info;
 
-use BBBikeUtil qw(pi deg2rad rad2deg);
+use BBBikeUtil qw(pi deg2rad rad2deg schnittwinkel);
 use Strassen::Util;
 
 sub activate {
@@ -105,7 +105,19 @@ sub activate {
 			       if ($show_info) {
 				   my($rx,$ry) = main::anti_transpose($x,$y);
 				   my $dist = int Strassen::Util::strecke($main::realcoords[-1],[$rx,$ry]);
-				   main::status_message("Distance: ${dist}m", "info");
+				   my $angle;
+				   if (@main::realcoords >= 2) {
+				       ($angle, my($direction)) = schnittwinkel(@{$main::realcoords[-2]},
+										@{$main::realcoords[-1]},
+										$rx, $ry);
+				       $angle = rad2deg($angle);
+				       if ($direction eq 'r') {
+					   $angle *= -1;
+				       }
+				   }
+				   main::status_message("Distance: ${dist}m" .
+							(defined $angle ? sprintf(", Angle: %.1f°", $angle) : ""),
+							"info");
 			       }
 			   } else {
 			       $c->coords($chlp,0,0,0,0);

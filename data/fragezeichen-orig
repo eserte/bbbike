@@ -75,6 +75,7 @@ Aroser Allee, Fertigstellung bis 2007-10-01	? 6720,18616 6704,18462 6694,18351 6
 #
 #: section ignorieren vvv
 #: section Straßen in Planung vvv
+Markgrafendamm: Radspuren sind anscheinend angelegt, genauer anschauen, insbesondere auf Zeichen 237 achten	? 14641,10552 14675,10693 14680,10758 14681,10847 14794,10844
 Ampel in Bau	?::inwork 15243,11881
 Ampel in Bau	?::inwork 13919,10583
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0710/nachricht2827.html vvv
@@ -246,6 +247,8 @@ Achenbachpromenade: Parkweg Q1, green1, unbeleuchtet; in die Datenbank aufnehmen
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: anonymous:
+Barbara-McClintock-Str.: guter Asphalt, Q0	? 18802,2993 18651,3148 18519,3283
 #: by: Martina Albrecht
 Passower Str.: glatter Straßenbelag, Q0	? 18967,18015 19079,17999 19071,17874 18965,17789 18888,17881
 #: by: Renate Braun:
@@ -1992,3 +1995,12 @@ Süderbrockweg: Qualität?	? 13933,14622 13940,14654 13990,14729 14051,14822 14080
 Steengravenweg: Qualität?	? 13733,14813 13795,14876 13856,14944
 Ochtumweg: Qualität?	? 13990,14729 13795,14876
 Altenescher Weg: Qualität? Kann die Kniprodestr. in Höhe des Altenescher Wegs überquert werden?	? 14051,14822 13856,14944 13749,15013
+Einsteinstr.: Qualität?	? 13596,14934 13537,14835 13507,14822 13235,14888 13185,14912
+Storkower Str. - Einsteinstr.: Qualität? Einbahnstraße? Überqueren der Storkower Str. möglich?	? 13151,14855 13185,14912 13143,14935 13110,14879
+Bayernring: Ist der Bayernring zwischen Te-Damm und Kaiserkorso eine Einbahnstraße? Nur für Autofahrer oder auch für Radfahrer?	? 9223,8409 9122,8414
+Johann-Hittorf-Str.: Qualität?	? 18951,3069 18802,2993 18757,2966 18716,2966 18628,2968
+Abram-Joffé-Str.: Qualität?	? 18951,3069 19015,3129 19079,3190 19167,3287 19242,3366
+Karl-Ziegler-Str.: Qualität?	? 18951,3069 18766,3260 18634,3398
+Ernst-Lau-Str.: Qualität?	? 18766,3260 18651,3148 18546,3045
+#: XXX: anonymous meint "gute Qualität"
+Hangelsberger Gang: Qualität?	? 31186,4341 31258,4560 31311,4742

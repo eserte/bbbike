@@ -153,6 +153,7 @@ sub rad2deg { ($_[0]*180)/pi }
 # Berechnet den Schnittwinkel
 # Eingabe: $p1(x|y) und $p2(x|y): ‰uﬂere Punkte
 #          $pm(x|y): Punkt in der Mitte (Schnittpunkt)
+# Ausgabe: (Winkel in radians, Richtung l oder r)
 sub schnittwinkel {
     my($p1x, $p1y, $pmx, $pmy, $p2x, $p2y) = @_;
     my $acos;

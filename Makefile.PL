@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.146 2008/02/09 21:35:02 eserte Exp $
+# $Id: Makefile.PL,v 1.148 2008/04/19 11:37:10 eserte Exp $
 
 use 5.005;
 
@@ -210,7 +210,7 @@ my @req_table =
   [qw/Sort::Naturally	0	all	0	base/,
    'Für natürliches Sortieren von bbd-Dateien'],
 
-  [qw/WWW::Search::Google	0	all	0	plugin/,
+  [qw/Yahoo::Search	0	all	0	plugin/,
    'Suche in luise-berlin'],
   [qw/Geo::Coder::Google	0	all	0	plugin/,
    'Geocoding über Googlemaps'],

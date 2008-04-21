@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: match_bbd_data,v 1.16 2004/06/23 06:08:12 eserte Exp $
+# $Id: match_bbd_data,v 1.18 2008/04/19 12:48:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -59,7 +59,7 @@ my %seen;
 $incat_rx = qr/$incat_rx/;
 
 Strassen::set_verbose($v);
-if ($v > 1) {
+if ($v && $v > 1) {
     require Data::Dumper;
 }
 
@@ -89,6 +89,10 @@ if (!$gridwidth) {
     } elsif ($optimize eq 'medium') {
 	$gridwidth = 500;
     }
+}
+
+if ($v) {
+    warn "Match @gpsfile against @files...\n";
 }
 
 # Creates a huge grid and is slow, but the matching afterwards is faster

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.46 2008/02/10 18:39:54 eserte Exp $
+# $Id: Makefile,v 1.48 2008/04/19 12:20:36 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -93,28 +93,46 @@ bbbike_splash_tkbabybike.xpm: srtbike.xpm
 #    mosque.gif
 #
 png-to-gif:	\
+		abc.gif \
+		abc_hi.gif \
 		achtung.gif \
 		airport.gif \
+		ampel_klein2_rahmen.gif \
 		ampelf.gif \
 		ampelf_klein.gif \
 		ampelf_klein2.gif \
-		ampel_klein2_rahmen.gif \
 		andreaskr.gif \
 		andreaskr_klein.gif \
 		apfel.gif \
+		aufzug.gif \
+		aufzug_klein.gif \
+		aufzug_klein2.gif \
+		bab_table_16.gif \
+		bab_table_32.gif \
+		bbbike_google.gif \
 		birne.gif \
+		bundesstrasse_table_16.gif \
+		bundesstrasse_table_32.gif \
 		cal.gif \
+		car.gif \
 		cemetery_bg.gif \
 		church.gif \
+		droga_krajowa_table_16.gif \
+		droga_krajowa_table_32.gif \
 		eisenbahn.gif \
 		eisenbahn_klein.gif \
 		eisenbahn_mini.gif \
 		ferry.gif \
 		ferry_klein.gif \
 		flag2_bl.gif \
+		flag2_bl_centered.gif \
 		flag_via.gif \
+		flag_via_centered.gif \
 		flag_ziel.gif \
+		flag_ziel_centered.gif \
 		gefaelle.gif \
+		grenzuebergang_16.gif \
+		grenzuebergang_32.gif \
 		hatched_ring.gif \
 		hospital.gif \
 		kino_klein.gif \
@@ -122,65 +140,56 @@ png-to-gif:	\
 		kopfstein_klein.gif \
 		kopfstein_klein_grey.gif \
 		kreisverkehr.gif \
-		mapserver_logo.gif \
-		monument.gif \
-		movehand.gif \
-		pflaume.gif \
-		sbahn.gif \
-		sbahn_klein.gif \
-		sbahn_mini.gif \
-		search_pref.gif \
-		steigung.gif \
-		ubahn_klein.gif \
-		ubahn_mini.gif \
-		zugbruecke.gif \
-		zugbruecke_klein.gif \
-		opt.gif \
-		flag2_bl_centered.gif \
-		flag_via_centered.gif \
-		flag_ziel_centered.gif \
-		usercross.gif \
-		redcross.gif \
-		vorfahrt_klein.gif \
-		vorfahrt.gif \
-		abc.gif \
-		abc_hi.gif \
-		newlayer.gif \
-		car.gif \
-		touristinfo.gif \
 		legend_blocked.gif \
 		legend_blockedroute.gif \
 		legend_carry.gif \
 		legend_narrowpassage.gif \
 		legend_oneway.gif \
-		synagogue.gif \
-		bundesstrasse_table_32.gif \
-		bundesstrasse_table_16.gif \
-		bab_table_32.gif \
-		bab_table_16.gif \
-		droga_krajowa_table_32.gif \
-		droga_krajowa_table_16.gif \
-		bbbike_google.gif \
-		rampe.gif \
-		aufzug_klein2.gif \
-		aufzug_klein.gif \
-		aufzug.gif \
-		grenzuebergang_32.gif \
-		grenzuebergang_16.gif \
+		mapserver_logo.gif \
+		monument.gif \
+		movehand.gif \
 		museum.gif \
+		newlayer.gif \
+		opt.gif \
+		pflaume.gif \
+		printer.gif \
+		printer_narrow.gif \
+		rampe.gif \
+		redcross.gif \
+		sbahn.gif \
+		sbahn_klein.gif \
+		sbahn_mini.gif \
+		search_pref.gif \
+		steigung.gif \
+		synagogue.gif \
 		theater.gif \
+		touristinfo.gif \
+		ubahn_klein.gif \
+		ubahn_mini.gif \
+		usercross.gif \
+		vorfahrt.gif \
+		vorfahrt_klein.gif \
+		zugbruecke.gif \
+		zugbruecke_klein.gif \
 
 png-to-xpm:	\
+		abc.xpm \
+		abc_hi.xpm \
 		achtung.xpm \
 		ampel.xpm \
+		ampel_klein2_rahmen.xpm \
 		ampelf.xpm \
 		ampelf_klein.xpm \
 		ampelf_klein2.xpm \
-		ampel_klein2_rahmen.xpm \
 		andreaskr.xpm \
 		apfel.xpm \
+		aufzug.xpm \
+		aufzug_klein.xpm \
+		aufzug_klein2.xpm \
+		bbbike_google.xpm \
 		birne.xpm \
 		cal.xpm \
+		car.xpm \
 		church.xpm \
 		eisenbahn.xpm \
 		eisenbahn_klein.xpm \
@@ -188,58 +197,53 @@ png-to-xpm:	\
 		ferry.xpm \
 		ferry_klein.xpm \
 		flag2_bl.xpm \
+		flag2_bl_centered.xpm \
+		flag_via_centered.xpm \
 		flag_ziel.xpm \
+		flag_ziel_centered.xpm \
+		gefaelle.xpm \
+		hatched_ring.xpm \
 		kirsche.xpm \
 		kreisverkehr.xpm \
 		mapserver_logo.xpm \
+		mosque.xpm \
+		museum.xpm \
+		newlayer.xpm \
 		pflaume.xpm \
+		printer.xpm \
+		printer_narrow.xpm \
+		rampe.xpm \
+		redcross.xpm \
 		sbahn.xpm \
 		sbahn_klein.xpm \
 		sbahn_mini.xpm \
 		search_pref.xpm \
+		star.xpm \
 		steigung.xpm \
+		synagogue.xpm \
+		theater.xpm \
+		touristinfo.xpm \
 		ubahn.xpm \
 		ubahn_klein.xpm \
 		ubahn_mini.xpm \
+		usercross.xpm \
+		vorfahrt.xpm \
+		vorfahrt_klein.xpm \
 		zugbruecke.xpm \
 		zugbruecke_klein.xpm \
-		gefaelle.xpm \
-		hatched_ring.xpm \
-		flag2_bl_centered.xpm \
-		flag_via_centered.xpm \
-		flag_ziel_centered.xpm \
-		usercross.xpm \
-		redcross.xpm \
-		vorfahrt_klein.xpm \
-		vorfahrt.xpm \
-		abc.xpm \
-		abc_hi.xpm \
-		newlayer.xpm \
-		car.xpm \
-		touristinfo.xpm \
-		synagogue.xpm \
-		mosque.xpm \
-		bbbike_google.xpm \
-		rampe.xpm \
-		aufzug_klein2.xpm \
-		aufzug_klein.xpm \
-		aufzug.xpm \
-		museum.xpm \
-		star.xpm \
-		theater.xpm \
 
 png-to-wbmp:	\
 		flag2_bl.wbmp \
 
 png-to-jpg:	\
 		andreaskr_klein.jpg \
-		zugbruecke_klein.jpg \
-		ubahn.jpg \
 		sbahn.jpg \
-		ubahn_klein.jpg \
 		sbahn_klein.jpg \
-		ubahn_mini.jpg \
 		sbahn_mini.jpg \
+		ubahn.jpg \
+		ubahn_klein.jpg \
+		ubahn_mini.jpg \
+		zugbruecke_klein.jpg \
 
 # .PHONY: star.gif
 

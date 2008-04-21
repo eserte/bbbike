@@ -2681,6 +2681,34 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (H4) (feature)
+
+Sehenswürdigkeiten auswählbar machen. Prinzipiell geht das schon, wenn
+man "sehenswuerdigkeit_bp" in @b_and_p_plz_multi_files einbindet.
+Aber:
+
+ * Bei der Suche nach E<quot>GesundbrunnenE<quot> bekommt man nun auch
+   E<quot>Gesundbrunnen-CenterE<quot> angeboten. Möchte ich das?
+   (Abgesehen davon, dass ein cgi.t-Test deswegen bricht)
+
+ * Zurzeit wird eine Sehenswürdigkeit (und auch schon immer
+   U/S-Bahnhöfe) in die jeweilige Kreuzung übersetzt, was etwas
+   hässliche aussieht (insbesondere beim Beispiel
+   Gesundbrunnen-Center). Sollte hier vielleicht die
+   Sehenswürdigkeit/der Bahnhof genommen werden? Abwägen?
+
+ * Was passiert mit den Sehenswürdigkeiten, die sich bereits in
+   plaetze befinden? Herausnehmen?
+
+ * Zurzeit wird alles in Klammern als Bezirk angenommen. In
+   sehenswuerdigkeit gibt es aber viele Klammern in anderer Bedeutung,
+   z.B. E<quot>Belvedere (Pfingstberg)E<quot>. Wie soll ich damit
+   verfahren?
+
+ * Theoretisch könnte ich eine Checkboxreihe im Eingabeinterface
+   anbieten: Straßen/Plätze; Bahnhöfe; Sehenswürdigkeiten/öffentliche
+   Gebäude. Ja/Nein?
+
 =item * (M4) (feature)
 
 Radrouten auch als Routenliste bereitstellen. Das könnte man hier

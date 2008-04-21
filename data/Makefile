@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.181 2008/04/11 20:39:44 eserte Exp $
+# $Id: Makefile,v 2.183 2008/04/19 21:21:28 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -506,7 +506,7 @@ grenzuebergaenge:	grenzuebergaenge-orig
 
 sehenswuerdigkeit:	sehenswuerdigkeit-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) sehenswuerdigkeit-orig > sehenswuerdigkeit~
+	$(CONVERT_ORIG) -keep-directive alias -keep-directive section sehenswuerdigkeit-orig > sehenswuerdigkeit~
 	mv sehenswuerdigkeit~ sehenswuerdigkeit
 	-@$(READONLY) $@
 
@@ -1587,6 +1587,7 @@ do-doublechecks:	.doublecheck_strassen.tmp \
 			.doublecheck_gesperrt_r \
 			.doublecheck_handicap_s \
 			.doublecheck_handicap_l \
+			.doublecheck_sehenswuerdigkeit
 
 .for file in flaechen green plaetze landstrassen2 sbahnhof rbahnhof ubahnhof faehren hoehe ampeln
 .doublecheck_$(file): $(file)
@@ -1607,7 +1608,7 @@ do-doublechecks:	.doublecheck_strassen.tmp \
 .doublecheck_non-faked-plaetze: ${PERSISTENTTMPDIR}/non-faked-plaetze
 	-rm /tmp/non-faked-plaetze-XXX
 	${GREPSTRASSEN} -v -section "faked_plaetze" plaetze-orig | $(CONVERT2HAFAS) -map H > /tmp/non-faked-plaetze-XXX
-	diff -u ${PERSISTENTTMPDIR}/non-faked-plaetze /tmp/non-faked-plaetze-XXX
+	diff -I '^#: *$$' -u ${PERSISTENTTMPDIR}/non-faked-plaetze /tmp/non-faked-plaetze-XXX
 	rm /tmp/non-faked-plaetze-XXX
 	touch $@
 
@@ -1683,6 +1684,13 @@ do-doublechecks:	.doublecheck_strassen.tmp \
 	rm /tmp/handicap_$(i)-XXX
 	touch $@
 .endfor
+
+.doublecheck_sehenswuerdigkeit: sehenswuerdigkeit
+	-rm /tmp/sehenswuerdigkeit-XXX
+	${CONVERT2HAFAS} sehenswuerdigkeit-orig > /tmp/sehenswuerdigkeit-XXX
+	diff -I '#: alias:' -I '#: section:' -u sehenswuerdigkeit /tmp/sehenswuerdigkeit-XXX
+	rm /tmp/sehenswuerdigkeit-XXX
+	touch $@
 
 ######################################################################
 

@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.11 2008/04/03 21:13:52 eserte Exp $
+# $Id: bbbike.cgi,v 9.13 2008/04/19 22:43:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -723,7 +723,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 9.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 9.13 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -787,6 +787,20 @@ $detailwidth  = 500; # muﬂ quadratisch sein!
 $detailheight = 500;
 $nice_berlinmap = 0;
 $nice_abcmap    = 0;
+
+use vars qw(@b_and_p_plz_multi_files %is_usable_without_strassen %same_single_point_optimization);
+@b_and_p_plz_multi_files = 
+    #  File                   Data fmt   Usable without being in strassen
+    #                                        same single point optimization
+    (["Berlin.coords.data",   "PLZ",      0, 0],
+     ["Potsdam.coords.data",  "PLZ",      0, 0],
+     ["plaetze",              "Strassen", 0, 1], # because there are also some "sehenswuerdigkeiten" in
+     # not yet: ["sehenswuerdigkeit_bp", "Strassen", 1, 1], # generated, see below
+    );
+for my $i (0 .. $#b_and_p_plz_multi_files) {
+    $is_usable_without_strassen{$i}     = $b_and_p_plz_multi_files[$i]->[2];
+    $same_single_point_optimization{$i} = $b_and_p_plz_multi_files[$i]->[3];
+}
 
 $start_bgcolor = '';
 $via_bgcolor   = '';
@@ -1515,38 +1529,46 @@ sub choose_form {
 	    # see Ackerstr. Mitte/Wedding
 	    # solution: use multi_bez_str!
 	    @$matchref = map { $plz_obj->combined_elem_to_string_form($_) } $plz_obj->combine(@$matchref);
-
+	    {
+		my %seen;
+		@$matchref = grep {
+		    if ($same_single_point_optimization{$_->[PLZ::LOOK_INDEX()]||""}) {
+			if ($seen{$_->[PLZ::LOOK_COORD()]}) {
+			    0;
+			} else {
+			    $seen{$_->[PLZ::LOOK_COORD()]}++;
+			    1;
+			}
+		    } else {
+			1;
+		    }
+		} @$matchref;
+	    }
 	    if (@$matchref == 0 && $plz_scope eq 'Berlin/Potsdam') {
-		# Nichts gefunden. In der Pl‰tze-Datei nachschauen (aber nur f¸r Berlin/Potsdam).
-		if (my $platz = new Strassen "plaetze") {
-		    warn "Suche $$oneref in der Pl‰tze-Datei.\n" if $debug;
-		    my @res = $platz->agrep($$oneref);
-		    if (@res) {
-			my $ret = $platz->get_by_name($res[0]);
-			if ($ret) {
-			    $$nameref = $res[0];
-			    $q->param($type . 'c', $ret->[1][0]);
+		# Nichts gefunden. In folgenden Dateien nachschauen (aber nur f¸r Berlin/Potsdam)
+		#   Pl‰tze-Datei
+		#   Strassen-Datei (weil einige Straﬂen nicht in der PLZ-Datei stehen)
+		#
+		for my $def (
+			     [sub { Strassen->new("plaetze") }, "Pl‰tze-Datei"],
+			     [sub { get_streets() }, "Straﬂen-Datei"],
+			    ) {
+		    my($producer, $label) = @$def;
+		    if (my $str = $producer->()) {
+			warn "Suche $$oneref in der $label.\n" if $debug;
+			my @res = $str->agrep($$oneref);
+			if (@res) {
+			    my $ret = $str->get_by_name($res[0]);
+			    if ($ret) {
+				$$nameref = $res[0];
+				$q->param($type . 'c', $ret->[1][0]);
+				last;
+			    }
 			}
 		    }
 		}
 
-		if (@$matchref == 0 && !defined $$nameref) {
-		    # Noch immer ohne Erfolg. In der Strassen-Datei
-		    # nachschauen, weil einige Straﬂen nicht in der PLZ-Datei
-		    # stehen.
-		    warn "Suche $$oneref in der Straﬂen-Datei.\n" if $debug;
-		    my $str = get_streets();
-		    my @res = $str->agrep($$oneref);
-		    if (@res) {
-			my $ret = $str->get_by_name($res[0]);
-			if ($ret) {
-			    $$nameref = $res[0];
-			    $q->param($type . 'c', $ret->[1][0]);
-			}
-		    }
-		}
-
-		next;
+		next MATCH_STREET;
 	    }
 
 	    # If this is a crossing, then get the exact point, but don't fail
@@ -1612,23 +1634,28 @@ sub choose_form {
 	    if ($multiorte) {
 		my @orte = $multiorte->agrep($$oneref, Agrep => $matcherr);
 		if (@orte) {
-		    use constant MATCHREF_ISORT_INDEX => 4;
-		    push @$matchref, map { [$_, undef, undef, undef, 1] } @orte;
+		    use constant MATCHREF_ISORT_INDEX => 5;
+		    push @$matchref, map { [$_, undef, undef, undef, undef, 1] } @orte;
 		}
 	    }
 
-	    if (@$matchref == 1) {
-		my($strasse, $bezirk) = ($matchref->[0][0],
-					 $matchref->[0][1]);
+	    if (@$matchref == 1 && $is_usable_without_strassen{$matchref->[0][PLZ::LOOK_INDEX()]||""}) {
+		$$nameref = $matchref->[0][PLZ::LOOK_NAME()];
+		$$tworef = join($delim, @{$matchref->[0]});
+		$q->param($type . 'c', $matchref->[0][PLZ::LOOK_COORD()]);
+	    } elsif (@$matchref == 1) {
+		my $match = $matchref->[0];
+		my($strasse, $bezirk) = ($match->[PLZ::LOOK_NAME()],
+					 $match->[PLZ::LOOK_CITYPART()]);
 		warn "W‰hle $type-Straﬂe f¸r $strasse/$bezirk (2nd)\n"
 		    if $debug;
 		if ($bezirk =~ $outer_berlin_qr) {
 		    my $name = _outer_berlin_hack($strasse, $bezirk);
 		    if ($name) {
 			$$nameref = $name;
-			$q->param($type . 'plz', $matchref->[0][2]);
+			$q->param($type . 'plz', $match->[PLZ::LOOK_ZIP()]);
 		    } else {
-			$$tworef = join($delim, @{ $matchref->[0] });
+			$$tworef = join($delim, @$match);
 		    }
 		} else {
 		    my $str = get_streets();
@@ -1644,9 +1671,9 @@ sub choose_form {
 		    }
 		    if (defined $pos) {
 			$$nameref = $str->get($pos)->[0];
-			$q->param($type . 'plz', $matchref->[0][2]);
+			$q->param($type . 'plz', $match->[PLZ::LOOK_ZIP()]);
 		    } else {
-			$$tworef = join($delim, @{ $matchref->[0] });
+			$$tworef = join($delim, @$match);
 		    }
 		}
 	    }
@@ -1913,7 +1940,7 @@ EOF
 	    $no_td = 1;
 	    $tryempty = 1;
 	} elsif ($$tworef ne '') {
-	    my($strasse, $bezirk, $plz, $xy) = split(/$delim/o, $$tworef);
+	    my($strasse, $bezirk, $plz, $xy, $index) = split(/$delim/o, $$tworef);
 	    if ($bezirk eq 'Potsdam') {
 		upgrade_scope("region");
 	    }
@@ -1927,7 +1954,7 @@ EOF
 				   plz => $plz,
 				   coord => $xy,
 				  })->query_string;
-		my $report_nearest = $strasse !~ /^[su]-bhf/i;
+		my $report_nearest = $strasse !~ /^[su]-bhf/i && !$is_usable_without_strassen{$index||""};
 		if ($report_nearest) {
 		    print qq{<i>$strasse</i> } . M("ist nicht bekannt") . qq{ (<a target="newstreetform" href="$bbbike_html/newstreetform${newstreetform_encoding}.html?$qs">} . M("diese Straﬂe eintragen") . qq{</a>).<br>\n};
 		} else {
@@ -2011,8 +2038,13 @@ EOF
 		    $checked++;
 		}
 		print "> $s->[0]";
-		if (defined $s->[1] && defined $s->[2]) {
-		    print " (<font size=-1>$s->[1]" . ($s->[2] ne "" ? ", $s->[2]" : "") . "</font>)";
+		if ((defined $s->[1] && $s->[1] ne "") ||
+		    (defined $s->[2] && $s->[2] ne "")) {
+		    my @cp;
+		    for (1, 2) {
+			push @cp, $s->[$_] if (defined $s->[$_] && $s->[$_] ne "");
+		    }
+		    print " (<font size=-1>" . join(", ", @cp) . "</font>)";
 		}
 		print "</label>";
 		print "<br>\n";
@@ -2191,7 +2223,7 @@ sub berlinmap_with_choices {
     foreach my $s (@$matchref) {
 	last if ++$out_i > $max_matches;
 	$match_nr++;
-	next if $s->[MATCHREF_ISORT_INDEX];
+ 	next if $s->[MATCHREF_ISORT_INDEX];
 	my $xy = $s->[PLZ::LOOK_COORD()];
 	next if !defined $xy;
 	my($tx,$ty) = map { int $_ } overview_map()->{Transpose}->(split /,/, $xy);
@@ -3350,7 +3382,11 @@ sub display_route {
 
     my $velocity_kmh = $q->param("pref_speed") || $speed_default;
 
-    my $printwidth  = 400;
+    my $printwidth      = 400;
+    my $printtablewidth = 400;
+    if ($printmode && $q->param("printvariant") && $q->param("printvariant") eq 'normal') {
+	$printtablewidth = '100%';
+    }
 
     my @custom;
     my %custom_s;
@@ -3972,7 +4008,7 @@ EOF
 	print "<center>" unless $printmode;
 	print qq{<table id="routehead" bgcolor="#ffcc66"};
 	if ($printmode) {
-	    print " width=$printwidth";
+	    print " width='$printwidth'";
 	}
 	my $can_jslink = $can_mapserver && !$printmode && $bi->{'can_javascript'};
 	print "><tr><td>$fontstr";
@@ -4013,7 +4049,7 @@ EOF
 	print "$fontend</td></tr></table><br>\n";
 	print "<table";
 	if ($printmode) {
-	    print " width=$printwidth";
+	    print " width='$printwidth'";
 	}
 	print ">\n";
 	printf "<tr><td>${fontstr}@{[ M('L&auml;nge') ]}:$fontend</td><td>${fontstr}%.2f km$fontend</td>\n", $r->len/1000;
@@ -4099,7 +4135,7 @@ EOF
 	    if ($printmode) {
 #		print ' style="border: 1px solid black;"';
 #		print " border=1"; # XXX ohne geht's leider nicht
-		print " width=$printwidth";
+		print " width='$printtablewidth'";
 	    } else {
 		print " align=center";
 		if (1 || !$bi->{'can_css'}) { # XXX siehe Kommentar oben (css...)
@@ -4255,8 +4291,12 @@ EOF
 
 	if ($bi->{'can_table'}) {
 	    if (!$bi->{'text_browser'} && !$printmode) {
-		my $qq = new CGI $q->query_string;
-		$qq->param('output_as', "print");
+		my $qq_narrow = CGI->new($q->query_string);
+		$qq_narrow->param('output_as', "print");
+		my $qq_normal = CGI->new($q->query_string);
+		$qq_normal->param('output_as', "print");
+		$qq_normal->param('printvariant', "normal");
+
 		print qq{<tr bgcolor="white">};
 		#print qq{<td tyle="text-align:left">Route als ...</td>};
 		print qq{<td colspan="};
@@ -4272,9 +4312,13 @@ EOF
 		}
 		print qq{$cols" style="background-color:white; text-align:right;">};
 		print
-		    "<a title=Druckvorlage target=printwindow href=\"$bbbike_script?" . $qq->query_string . "\">" .
+		    "<a style='padding:0 0.2cm 0 0.2cm;' title='Druckvorlage normal' target=printwindow href=\"$bbbike_script?" . $qq_normal->query_string . "\">" .
 		    "<img src=\"$bbbike_images/printer.gif\" " .
-		    "width=16 height=16 border=0 alt=Druckvorlage></a>";
+		    "width=16 height=16 border=0 alt='Druckvorlage normal'></a>";
+		print
+		    "<a style='padding:0 0.2cm 0 0.2cm;' title='Druckvorlage schmal' target=printwindow href=\"$bbbike_script?" . $qq_narrow->query_string . "\">" .
+		    "<img src=\"$bbbike_images/printer_narrow.gif\" " .
+		    "width=16 height=16 border=0 alt='Druckvorlage schmal'></a>";
 		if ($can_palmdoc) {
 		    my $qq2 = new CGI $q->query_string;
 		    $qq2->param('output_as', "palmdoc");
@@ -5410,19 +5454,51 @@ sub init_plz {
 		}
 	    }
 	}
-	my @files = (
-	    ($scope eq 'all' || $scope eq 'Berlin/Potsdam' ?
-	     ("Berlin.coords.data",
-	      "Potsdam.coords.data",
-	      Strassen->new("plaetze"), # because there are also some "sehenswuerdigkeiten" in
-	     ) : ()),
-	    (($scope eq 'all' || $scope =~ $outer_berlin_qr) &&
-	     $other_place_coords_data && -r $other_place_coords_data ?
-	      $other_place_coords_data : ()),
-	);
+	my @files;
+	if ($scope eq 'all' || $scope eq 'Berlin/Potsdam') {
+	    for my $def (@b_and_p_plz_multi_files) {
+		my($name, $type) = @$def;
+		if ($name eq 'sehenswuerdigkeit_bp') {
+		    my $sehenswuerdigkeit_bp_file = "$tmp_dir/" . $Strassen::Util::cacheprefix . "_" . $< . "_" . "sehenswuerdigkeit_bp";
+		    my $sehenswuerdigkeit = Strassen->new("sehenswuerdigkeit", NoRead => 1);
+		    if (!(-r $sehenswuerdigkeit_bp_file &&
+			  -M $sehenswuerdigkeit_bp_file < -M $sehenswuerdigkeit->file)) {
+			my $new_s = Strassen->new;
+			$sehenswuerdigkeit->read_data(UseLocalDirectives => 1);
+			$sehenswuerdigkeit->init;
+			while(1) {
+			    my $r = $sehenswuerdigkeit->next;
+			    last if !@{ $r->[Strassen::COORDS()] };
+			    my $dir = $sehenswuerdigkeit->get_directives;
+			    my $section = $dir->{"section"};
+			    next if $section && $section->[0] !~ m{^(Berlin|Potsdam)$};
+			    my $aliases = $dir->{"alias"};
+			    if ($aliases) {
+				for my $alias (@$aliases) {
+				    $new_s->push([$alias, $r->[Strassen::COORDS()], $r->[Strassen::CAT()]]);
+				}
+			    }
+			    $new_s->push($r);
+			}
+			$new_s->write("$sehenswuerdigkeit_bp_file~");
+			rename "$sehenswuerdigkeit_bp_file~", $sehenswuerdigkeit_bp_file
+			    or die "Can't rename to $sehenswuerdigkeit_bp_file: $!";
+		    }
+		    push @files, Strassen->new($sehenswuerdigkeit_bp_file);
+		} elsif ($type eq 'Strassen') {
+		    push @files, Strassen->new($name);
+		} else {
+		    push @files, $name;
+		}
+	    }
+	}
+	if (($scope eq 'all' || $scope =~ $outer_berlin_qr) &&
+	    $other_place_coords_data && -r $other_place_coords_data) {
+	    push @files, $other_place_coords_data;
+	}
 	if (@files) {
 	    require PLZ::Multi;
-	    $cached_plz{$scope} = PLZ::Multi->new(@files, -cache => 1);
+	    $cached_plz{$scope} = PLZ::Multi->new(@files, -cache => 1, -addindex => 1, -preferfirst => 1);
 	} else {
 	    warn "No input files";
 	    return;
@@ -6841,7 +6917,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/04/03 21:13:52 $';
+    my $cgi_date = '$Date: 2008/04/19 22:43:15 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

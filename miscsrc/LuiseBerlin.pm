@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.25 2008/02/28 21:23:18 eserte Exp eserte $
+# $Id: LuiseBerlin.pm,v 1.27 2008/04/19 11:36:05 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2008 Slaven Rezic. All rights reserved.
@@ -15,9 +15,13 @@
 # Description (de): Straßen- und Bezirkslexikon des Luisenstädtischen Bildungsvereins (Luise-Berlin.de)
 package LuiseBerlin;
 
+# Note that the Google API does not work anymore. I would like the
+# Yahoo API, but it does not really work. See
+# http://rt.cpan.org/Ticket/Display.html?id=35213
+
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.25 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!caller(2)) {
@@ -42,7 +46,11 @@ use WWWBrowser;
 
 my $api_key = "pqCq16BQFHJ5jvhg6osutPlLWeSkd9ke";
 
-use vars qw($DEBUG $already_tried_WWW_Search_Google $already_tried_String_Similarity);
+use vars qw($DEBUG
+	    $already_tried_String_Similarity
+	    $already_tried_WWW_Search_Google
+	    $already_tried_Yahoo_Search
+	   );
 $DEBUG = 1;
 
 use vars qw($icon);
@@ -182,20 +190,20 @@ sub launch_street_url {
     }
 
     my $url = eval {
-	do_google_search(street => $street,
-			 cityparts => $cityparts);
+	do_yahoo_search(street => $street,
+			cityparts => $cityparts);
     };
     if ($url) {
 	start_browser($url);
     } elsif ($@) {
 	main::status_message($@, "err");
     } else {
-	main::status_message("Die Straße <$street> konnte über die Google-Such-API nicht gefunden werden.", "info");
+	#main::status_message("Die Straße <$street> konnte über die Google-Such-API nicht gefunden werden.", "info");
 	my $fallback_url = "http://www.google.com/search?";
 	require CGI;
 	CGI->import('-oldstyle_urls');
 	my @queries = construct_queries(street => $street, cityparts => $cityparts);
-	my $qs = CGI->new({ q => $queries[0]->{query} })->query_string;
+	my $qs = CGI->new({ 'q' => $queries[0]->{query} })->query_string;
 	start_browser($fallback_url . $qs);
     }
 }
@@ -235,7 +243,57 @@ sub construct_queries {
     @queries;
 }
 
+sub do_yahoo_search {
+    my(%args) = @_;
+
+    if (!eval q{ use Yahoo::Search; 1 }) {
+	return if $already_tried_Yahoo_Search;
+	$already_tried_Yahoo_Search = 1;
+	require BBBikeHeavy;
+	BBBikeHeavy::perlmod_install_advice("Yahoo::Search");
+	return;
+    }
+    if (!eval q{ use String::Similarity; 1 }) {
+	return if $already_tried_String_Similarity;
+	$already_tried_String_Similarity = 1;
+	require BBBikeHeavy;
+	BBBikeHeavy::perlmod_install_advice("String::Similarity");
+	return;
+    }
+
+    my @queries = construct_queries(%args);
+    my @results;
+    for my $query_def (@queries) {
+	my($query, $street_citypart) = @{$query_def}{qw(query street_citypart)};
+	if ($DEBUG) {
+	    use Devel::Peek; Dump $query;
+	}
+	my @raw_results = Yahoo::Search->Results(Doc => $query,
+						 AppId => "BBBike_LuiseBerlin_" . $BBBike::VERSION,
+						);
+	for my $result (@raw_results) {
+	    my $cooked_title = $result->Title; # XXX strip HTML entities
+	    push @results, { title        => $result->Title,
+			     cooked_title => $cooked_title,
+			     url          => $result->Url,
+			     similarity   => String::Similarity::similarity($cooked_title, $street_citypart),
+			   };
+	}
+    }
+    @results = sort { $b->{similarity} <=> $a->{similarity} } @results;
+    if ($DEBUG && $DEBUG >= 2) {
+        require Data::Dumper;
+	print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@results],[qw()])->Indent(1)->Useqq(1)->Dump;
+    }
+
+    $results[0]->{url};
+}
+
+# Google no longer provides an API
+# See also http://search.cpan.org/~lbrocard/WWW-Search-Google-0.23/Google.pm
 sub do_google_search {
+    return;
+
     my(%args) = @_;
 
     if (!eval q{ use WWW::Search::Google; 1 }) {
@@ -394,12 +452,17 @@ sub batch {
     };
 
     my $file;
+    my $disclaimer = <<EOF;
+NOTE that the Google Search API does not work anymore
+and the Yahoo Search API (or the perl module Yahoo::Search)
+has serious problems with umlauts.
+EOF
     Getopt::Long::GetOptions("f|file=s" => \$file,
 			     "q" => sub { $DEBUG = 0 },
 			     "debug!" => sub { $DEBUG = 2 },
 			    )
 	    or die <<EOF;
-NOTE that the Google Search API does not seem to work anymore!!!
+$disclaimer
 
 usage: $0 [-q] [-debug] [-f file | street cityparts]
 
@@ -409,11 +472,12 @@ EOF
     if ($file) {
 	batch($file);
     } else {
+	warn $disclaimer;
 	my $street = shift @ARGV;
 	my @cityparts = @ARGV;
-	my $url = do_google_search(street => $street,
-				   cityparts => [@cityparts],
-				  );
+	my $url = do_yahoo_search(street => $street,
+				  cityparts => [@cityparts],
+				 );
 	print "$url\n";
     }
 }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Multi.pm,v 1.18 2007/02/06 22:46:14 eserte Exp $
+# $Id: Multi.pm,v 1.19 2008/04/21 21:28:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package PLZ::Multi;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 
 use Getopt::Long qw(GetOptions);
 BEGIN {
@@ -41,9 +41,10 @@ sub new {
     my($class, @files_and_args) = @_;
     local @ARGV = @files_and_args;
     my %args;
-    if (!GetOptions(\%args, "cache=i")) {
+    if (!GetOptions(\%args, "cache=i", "addindex=i", "preferfirst=i")) {
 	die "usage!";
     }
+    my $preferfirst = $args{preferfirst};
     my @in = @ARGV;
     if (!@in) {
 	die "No files or strassen objects specified";
@@ -108,16 +109,16 @@ sub new {
 	    while(1) {
 		my $r = $s->next;
 		last if !@{ $r->[Strassen::COORDS()] };
-		my $middle = $r->[Strassen::COORDS()]->[$#{ $r->[Strassen::COORDS()] }/2];
+		my $markant_point = $r->[Strassen::COORDS()]->[$preferfirst ? 0 : $#{ $r->[Strassen::COORDS()] }/2];
 		my($str, @cityparts) = Strasse::split_street_citypart($r->[Strassen::NAME()]);
 		if (!@cityparts) {
 		    if (!$seen{$str}) {
-			print $fh "$str|||$middle\n";
+			print $fh "$str|||$markant_point\n";
 		    }
 		} else {
 		    for my $citypart (@cityparts) {
 			if (!$seen{$str}{$citypart}) {
-			    print $fh "$str|$citypart||$middle\n";
+			    print $fh "$str|$citypart||$markant_point\n";
 			}
 		    }
 		}
@@ -130,7 +131,7 @@ sub new {
     if (!defined $combined) {
 	my($fh, $temp) = tempfile(UNLINK => 1);
 	#system("cat @in | sort -u > $temp"); # XXX what on non-Unix?
-	merge_and_sort(-src => \@in, -dest => $temp);
+	merge_and_sort(-src => \@in, -dest => $temp, -addindex => $args{addindex});
 	close $fh; # needed for Windows
 	if ($args{cache}) {
 	    $combined = $cachefile;
@@ -148,13 +149,21 @@ sub merge_and_sort {
     my(%args) = @_;
     my @in_files = @{ $args{-src} };
     my $out_file =    $args{-dest};
+    my $addindex =    $args{-addindex};
     my @lines;
-    for my $in_file (@in_files) {
-	open(IN, $in_file) or die "Can't open $in_file: $!";
-	while (<IN>) {
-	    push @lines, $_;
+    {
+	my $in_file_i = -1;
+	for my $in_file (@in_files) {
+	    $in_file_i++;
+	    open(IN, $in_file) or die "Can't open $in_file: $!";
+	    while (<IN>) {
+		if ($addindex) {
+		    s{$}{|$in_file_i};
+		}
+		push @lines, $_;
+	    }
+	    close IN;
 	}
-	close IN;
     }
     my %seen;
     for my $line (@lines) {

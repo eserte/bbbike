@@ -10953,7 +10953,7 @@ userdel	2::inwork -1224,-107827 -1061,-107847
 EOF
      },
      { from  => undef, # this entry is by Lutz Epperlein
-       until => Time::Local::timelocal(reverse(2008-1900,6-1,1,0,0,0)), # end guessed!
+       until => 1208806827, # end guessed! Time::Local::timelocal(reverse(2008-1900,6-1,1,0,0,0))
        text  => 'Das letzte Ende (zur Schönhauser Allee) der Saarbrücker Str. ist momentan wg. Baustelle gesperrt. Es ist zu vermuten, dass dort das Kopfsteinpflaster entfernt wird.',
        type  => 'handicap',
        data  => <<EOF,

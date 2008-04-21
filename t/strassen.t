@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen.t,v 1.17 2008/02/02 22:41:38 eserte Exp $
+# $Id: strassen.t,v 1.18 2008/04/21 21:28:57 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -278,7 +278,7 @@ SKIP: {
     my $s = Strassen->new($f, NoRead => 1);
     $s->read_data(ReadOnlyGlobalDirectives => 1);
     my $glob_dir = Strassen->get_global_directives($f);
-    is($glob_dir->{"category_image.Zs"}->[0], "verkehrszeichen/42_350.gif");
+    is($glob_dir->{"category_image.Zs"}->[0], "verkehrszeichen/Zeichen_350.svg:24x24");
     is($glob_dir->{"title"}->[0], "Zebrastreifen in Berlin");
     is($glob_dir->{"emacs-mode"}->[0], "-*- bbbike -*-", "Test the emacs-mode hack");
 }

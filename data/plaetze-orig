@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Plätze in Berlin und Potsdam
-#: version: $Id: plaetze-orig,v 4.97 2008/03/09 00:07:55 eserte Exp eserte $
+#: version: $Id: plaetze-orig,v 4.98 2008/04/19 22:40:55 eserte Exp $
 #:
 Hackescher Markt	Pl 10264,13097
 Rosenthaler Platz	Pl 10177,13766
@@ -181,12 +181,6 @@ Zoologischer Garten	Pl 5542,11075
 Tierpark	Pl 18628,10177
 Reichstag	Pl 8400,12417
 Mettmannplatz	Pl 7467,14633
-# In den Daten gibt es nur "Gendarmenmarkt [Jägerstr.]" und "... [Mauerstr.]",
-# das wird aber nicht von bbbike.cgi gefunden.
-# XXX Problematisch, wieder herausgenommen. Plaetze sollten keine
-# Straßenzüge darstellen, da diese in der Straßenbeschreibung
-# vorkommen könnte.
-#Gendarmenmarkt	Pl 9516,12010 9651,12020 9663,11927 9526,11911
 Funkturm	Pl 2016,11034
 Olympiastadion	Pl -514,11991
 Schloß Charlottenburg	Pl 3034,12502

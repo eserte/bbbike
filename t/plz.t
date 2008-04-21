@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.36 2008/03/18 21:31:28 eserte Exp $
+# $Id: plz.t,v 1.37 2008/04/21 21:28:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004,2006,2007 Slaven Rezic. All rights reserved.
@@ -241,10 +241,10 @@ for my $noextern (@extern_order) {
 	is($friedenau_schoeneberg->[PLZ::LOOK_ZIP], "10827, 12159", "Check PLZ");
 
 	@res = grep { defined $_->[PLZ::LOOK_COORD] } $plz->look("Am Nordgraben", MultiCitypart => 1, MultiZIP => 1);
-	is(scalar @res, 2, "Hits for Am Nordgraben. with MultiCitypart")
+	is(scalar @res, 3, "Hits for Am Nordgraben. with MultiCitypart")
 	    or diag $dump->(\@res);
 	@res = map { $plz->combined_elem_to_string_form($_) } $plz->combine(@res);
-	is(scalar @res, 1, "Combine hits")
+	is(scalar @res, 2, "Combine hits")
 	    or diag $dump->(\@res);
 
 	@res = $plz->look("friedrichstr", Citypart => "mitte");

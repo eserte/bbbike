@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.55 2008/03/19 23:12:58 eserte Exp $
+# $Id: cgi.t,v 1.56 2008/04/21 21:28:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -79,7 +79,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (179 + $ortsuche_tests) * scalar @urls;
+plan tests => (183 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -205,9 +205,24 @@ for my $cgiurl (@urls) {
 	}
     }
 
+ XXX: 
     {
 	my $content;
 	my $route;
+
+	# Combine places with same coordinates
+	$req = new HTTP::Request
+	    (GET => "$action?start=zoo");
+	$res = $ua->request($req);
+	ok($res->is_success, "Zoo")
+	    or diag $res->as_string;
+	$content = uncompr($res);
+	BBBikeTest::like_long_data($content, qr/Start.*Zoologischer Garten/,
+				   "Start is Zoologischer Garten", ".html");
+	BBBikeTest::unlike_long_data($content, qr/\bZoo\b/,
+				     "Zoo not found (same point optimization)", ".html");
+	BBBikeTest::unlike_long_data($content, qr/\(\)/,
+				     "No empty parenthesis", ".html");
 
 	# Start and goal are in plaetze
 	$req = new HTTP::Request
@@ -727,7 +742,7 @@ for my $cgiurl (@urls) {
 	BBBikeTest::like_long_data($resp->content, qr{Genaue Kreuzung angeben});
     }
 
- XXX: {
+    {
 	if ($CGI::VERSION == 3.33) {
 	    diag <<EOF;
 Check if Umlaute are correctly preserved. This breaks with

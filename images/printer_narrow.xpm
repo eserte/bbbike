@@ -1,5 +1,5 @@
 /* XPM */
-static char *printer[] = {
+static char *printer_narrow[] = {
 /* columns rows colors chars-per-pixel */
 "16 16 6 1",
 "  c black",
@@ -9,14 +9,14 @@ static char *printer[] = {
 "O c gray100",
 "+ c None",
 /* pixels */
-"oo            oo",
-"oo OOOOOOOOOO oo",
-"oo O X X XOOO oo",
-"oo OOOOOOOOOO oo",
-"oo O X X XOOO oo",
-"oo OOOOOOOOOO oo",
-"oo O X X X XO oo",
-"oo OOOOOOOOOO oo",
+"ooooo      ooooo",
+"ooooo OOOO ooooo",
+"ooooo O XO ooooo",
+"ooooo OOOO ooooo",
+"ooooo O XO ooooo",
+"ooooo OOOO ooooo",
+"ooooo O XO ooooo",
+"ooooo OOOO ooooo",
 "                ",
 " OOOOOOOOOOOOOO ",
 " O..+++++++++++ ",

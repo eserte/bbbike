@@ -805,15 +805,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1208556000,
-         'text' => 'L 314 Zepernicker Chaussee OD Bernau grundhafter Straßenbau Vollsperrung 31.01.2008-18.04.2008 ',
-         'from' => 1201647600,
-         'id' => 1283,
-         'data' => 'userdel	2::inwork 22178,30343 21872,30139 21561,30131 21172,29984
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_007843',
          'until' => 1210888799,
@@ -912,15 +904,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        undef,
        undef,
-       {
-         'until' => 1212271200,
-         'text' => 'Das letzte Ende (zur Schönhauser Allee) der Saarbrücker Str. ist momentan wg. Baustelle gesperrt. Es ist zu vermuten, dass dort das Kopfsteinpflaster entfernt wird.',
-         'from' => undef,
-         'id' => 1300,
-         'data' => 'userdel	q4::inwork 10969,13914 10924,13940
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1212184800,
@@ -1041,27 +1025,11 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1208728800,
-         'text' => 'B 109 Schönwalde - Wandlitz OD Wandlitz, zw. Kreisel und Berliner Weg Kanalarbeiten Vollsperrung 25.03.2008-20.04.2008 ',
-         'from' => 1206313200,
-         'id' => 1324,
-         'data' => 'userdel	q4::inwork 13556,37493 12887,36543
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
        undef,
-       {
-         'until' => 1208556000,
-         'text' => 'L 026 zw. OA Wollschow u. OE Brüssow Einbau Deckschicht Vollsperrung 07.04.2008-18.04.2008 ',
-         'from' => 1207432800,
-         'id' => 1328,
-         'data' => 'userdel	2::inwork 61502,112547 60639,112544 58357,111700 57995,111657
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        {
          'until' => 1219269600,
@@ -1102,16 +1070,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_008397',
-         'until' => 1208750400,
-         'text' => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Brandenburger Tor und Y.-Rabin-Str. Veranstaltung, Straße vollständig gesperrt (bis 21.04. ca. 6 Uhr)',
-         'from' => 1208546801,
-         'id' => 1336,
-         'data' => 'userdel	2::temp 8610,12254 8515,12242 8214,12205 8089,12186 8063,12182
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1209333600,
          'text' => 'L 086 Golzow - Damsdorf OD Lehnin Fläming-Frühlingsfest Vollsperrung 27.04.2008-27.04.2008 ',
@@ -1129,26 +1088,6 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::temp -34063,-10552 -34488,-10578
 ',
          'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_008398',
-         'until' => 1208750400,
-         'text' => 'Ebertstr. (MItte) in beiden Richtungen zwischen Behrenstr. und Dorotheenstr. Veranstaltung,Straße vollständig gesperrt (bis 21.04. ca. 6 Uhr)',
-         'from' => 1208546772,
-         'id' => 1339,
-         'data' => 'userdel	2::temp 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_008375',
-         'until' => 1208728800,
-         'text' => 'Turmstraße (Wedding) in beiden Richtungen, zwischen Stromstraße und Oldenburger Str. Veranstaltung, Straße gesperrt',
-         'from' => 1208460517,
-         'id' => 1340,
-         'data' => 'userdel	2::temp 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6240,13324
-',
-         'type' => 'gesperrt'
        }
      
 );

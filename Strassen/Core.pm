@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.87 2008/02/02 17:35:43 eserte Exp $
+# $Id: Core.pm,v 1.88 2008/04/19 21:21:46 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.87 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.88 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -587,23 +587,31 @@ sub get {
     parse($line);
 }
 
-sub get_directive {
+sub get_directives {
     my($self, $pos) = @_;
     $pos = $self->{Pos} if !defined $pos;
     return {} if !$self->{Directives};
     $self->{Directives}[$pos] || {};
 }
 
-sub set_directive_for_current {
+sub set_directives_for_current {
     my($self, $directives) = @_;
     my $pos = $#{ $self->{Data} };
     $self->{Directives}[$pos] = $directives;
 }
 
-sub get_directive_for_iterator {
+sub get_directives_for_iterator {
     my($self, $iterator) = @_;
     my $pos = $self->{"Pos_Iterator_$iterator"};
-    $self->get_directive($pos);
+    $self->get_directives($pos);
+}
+
+BEGIN {
+    # These are misnomers (singular vs. plural), but kept for
+    # backward compatibility.
+    *get_directive              = \&get_directives;
+    *set_directive_for_current  = \&set_directives_for_current;
+    *get_directive_for_iterator = \&get_directives_for_iterator;
 }
 
 # Returns a list of all elements in the streets database

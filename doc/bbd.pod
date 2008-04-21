@@ -714,6 +714,53 @@ B<Zbr> for drawbridges, otherwise not used.
 File with elevation points. The C<Name> fields denotes the elevation
 in meters, the category is not used.
 
+=item sehenswuerdigkeit
+
+File with sights, public buildings and other E<quot>interestingE<quot>
+points. Possible categories are
+
+=over
+
+=item C<SW>
+
+Unspecified sight. Use if nothing else applies.
+
+=item C<Shop>
+
+A shopping center.
+
+=back
+
+The category has usually an image attribute. The following standard
+images are available in bbbike:
+
+=over
+
+=item C<museum>
+
+=item C<theater>
+
+=item C<church>
+
+=item C<synagogue>
+
+=item C<mosque>
+
+=item C<airport>
+
+=item C<hospital>
+
+=item C<monument>
+
+=item C<touristinfo>
+
+=back
+
+The pseudo image C<px_1t> may be used for invisible areas.
+
+In area records, it is advisable to use the main entrance as the first
+point.
+
 =back
 
 XXX To be continued

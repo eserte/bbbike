@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.72 2008/03/18 20:09:50 eserte Exp $
+# $Id: PLZ.pm,v 1.73 2008/04/19 22:40:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -24,11 +24,12 @@ use locale;
 use BBBikeUtil;
 use Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.72 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.73 $ =~ /(\d+)\.(\d+)/);
 
-use constant FMT_NORMAL  => 0; # /usr/www/soc/plz/Berlin.data
-use constant FMT_REDUCED => 1; # ./data/Berlin.small.data (does not exist anymore)
-use constant FMT_COORDS  => 2; # ./data/Berlin.coords.data
+use constant FMT_NORMAL            => 0; # /usr/www/soc/plz/Berlin.data
+use constant FMT_REDUCED           => 1; # ./data/Berlin.small.data (does not exist anymore)
+use constant FMT_COORDS            => 2; # ./data/Berlin.coords.data
+use constant FMT_COORDS_WITH_INDEX => 3; # PLZ::Multi with -addindex option
 
 # agrep says that 32 is the max length, but experiments show something else:
 use constant AGREP_LONGEST_RX => 29;
@@ -51,6 +52,7 @@ use constant FILE_NAME     => 0;
 use constant FILE_CITYPART => 1;
 use constant FILE_ZIP      => 2; # this is not valid for FMT_NORMAL
 use constant FILE_COORD    => 3;
+use constant FILE_INDEX    => 4;
 
 use constant FILE_ZIP_FMT_NORMAL => 4; # this is only valid for FMT_NORMAL
 
@@ -105,6 +107,9 @@ sub new {
     } elsif (@l == 4) {
 	$self->{DataFmt}  = FMT_COORDS;
 	$self->{FieldPLZ} = FILE_ZIP;
+    } elsif (@l == 5) {
+	$self->{DataFmt}  = FMT_COORDS_WITH_INDEX;
+	$self->{FieldPLZ} = FILE_ZIP;
     } else {
 	$self->{DataFmt} = FMT_NORMAL;
 	$self->{FieldPLZ} = FILE_ZIP_FMT_NORMAL;
@@ -139,6 +144,9 @@ EOF
 	} elsif ($self->{DataFmt} == FMT_COORDS) {
 	    $push_code = q{push @data,
 			   [@l[FILE_NAME, FILE_CITYPART, FILE_ZIP, FILE_COORD]]};
+	} elsif ($self->{DataFmt} == FMT_COORDS_WITH_INDEX) {
+	    $push_code = q{push @data,
+			   [@l[FILE_NAME, FILE_CITYPART, FILE_ZIP, FILE_COORD, FILE_INDEX]]};
 	} else {
 	    $push_code = q{push @data,
 			   [@l[FILE_NAME, FILE_CITYPART, FILE_ZIP_FMT_NORMAL]]};
@@ -158,7 +166,8 @@ EOF
 sub make_plz_re {
     my($self, $plz) = @_;
     if ($self->{DataFmt} == FMT_REDUCED ||
-	$self->{DataFmt} == FMT_COORDS) {
+	$self->{DataFmt} == FMT_COORDS ||
+	$self->{DataFmt} == FMT_COORDS_WITH_INDEX) {
 	'^[^|]*|[^|]*|' . $plz;
     } else {
 	'^[^|]*|[^|]*|[^|]*|[^|]*|' . $plz . '|';
@@ -170,6 +179,7 @@ use constant LOOK_NAME     => 0;
 use constant LOOK_CITYPART => 1;
 use constant LOOK_ZIP      => 2;
 use constant LOOK_COORD    => 3;
+use constant LOOK_INDEX    => 4;
 
 # XXX make gzip-aware
 # Argumente: (Beschreibung fehlt XXX)
@@ -202,6 +212,8 @@ sub look {
 	@push_inx = (FILE_NAME, FILE_CITYPART, $self->{FieldPLZ});
     } elsif ($self->{DataFmt} == FMT_REDUCED) {
 	@push_inx = (FILE_NAME, FILE_CITYPART, FILE_ZIP);
+    } elsif ($self->{DataFmt} == FMT_COORDS_WITH_INDEX) {
+	@push_inx = (FILE_NAME, FILE_CITYPART, FILE_ZIP, FILE_COORD, FILE_INDEX);
     } else {
 	@push_inx = (FILE_NAME, FILE_CITYPART, FILE_ZIP, FILE_COORD);
     }
@@ -369,6 +381,10 @@ sub look {
 sub combine {
     my($self, @in) = @_;
     my %out;
+    my @copy_indexes = (LOOK_NAME, LOOK_COORD);
+    if ($self->{DataFmt} eq FMT_COORDS_WITH_INDEX) {
+	push @copy_indexes, LOOK_INDEX;
+    }
  CHECK:
     foreach my $s (@in) {
 	if (exists $out{$s->[LOOK_NAME]}) {
@@ -387,7 +403,7 @@ sub combine {
 	}
 	# does not exist or is a new citypart/zip combination
 	my $r = [];
-	$r->[$_] = $s->[$_] for (LOOK_NAME, LOOK_COORD);
+	$r->[$_] = $s->[$_] for (@copy_indexes);
 	$r->[LOOK_CITYPART] = [ $s->[LOOK_CITYPART] ];
 	$r->[LOOK_ZIP] = [ $s->[LOOK_ZIP ] ];
 	push @{ $out{$s->[LOOK_NAME]} }, $r;
@@ -401,8 +417,12 @@ sub combine {
 #    ["Hauptstr.", "Friedenau, Schoeneberg", "10827,12159", $coord]
 sub combined_elem_to_string_form {
     my($self, $elem) = @_;
+    my @copy_indexes = (LOOK_NAME, LOOK_COORD);
+    if ($self->{DataFmt} eq FMT_COORDS_WITH_INDEX) {
+	push @copy_indexes, LOOK_INDEX;
+    }
     my $r = [];
-    $r->[$_] = $elem->[$_] for (LOOK_NAME, LOOK_COORD);
+    $r->[$_] = $elem->[$_] for (@copy_indexes);
     $r->[LOOK_CITYPART] = join(", ", @{$elem->[LOOK_CITYPART]});
     $r->[LOOK_ZIP]      = join(", ", @{$elem->[LOOK_ZIP]});
     $r;

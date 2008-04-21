@@ -1,12 +1,13 @@
-#:# -*- coding: iso-8859-1 -*-
+#: #: -*- coding: iso-8859-1 -*-
 #: title.de: Sehenswürdigkeiten und andere wichtige Gebäude
 #: title.en: Sights and points of interest
-#: version: $Id: sehenswuerdigkeit-orig,v 4.99 2008/03/04 20:44:51 eserte Exp eserte $
+#: version: $Id: sehenswuerdigkeit-orig,v 4.101 2008/04/19 22:43:31 eserte Exp eserte $
 #:
 ######################################################################
 #
 #  BERLIN
 #
+#: section: Berlin vvv
 Brandenburger Tor	IMG:sehenswuerdigkeit_img/brandenburger_tor|ANCHOR:s 8593,12243
 Akademie der Künste	F:SW 8650,12196 8665,12098 8718,12114 8700,12204
 Russische Botschaft	SW 8973,12240
@@ -14,7 +15,8 @@ Ackerhalle	F:Shop 9901,14043 9840,14040 9840,14014 9898,14012
 Philharmonie	F:SW 8030,11514 8109,11496 8124,11569 8071,11588 8037,11561
 Kammermusiksaal der Philharmonie	F:SW 7995,11491 7984,11453 8048,11418 8065,11477 8027,11496
 Neue Nationalgalerie	F:SW|IMG:museum 7911,11241 7891,11174 7952,11159 7972,11223
-Staatsbibliothek	F:SW 8190,11336 8159,11306 8109,11219 8077,11228 8063,11203 8088,11198 8084,11159 8150,11149 8191,11231
+#: alias: Stabi
+Staatsbibliothek	F:SW 8077,11228 8063,11203 8088,11198 8084,11159 8150,11149 8191,11231 8190,11336 8159,11306 8109,11219
 Martin-Gropius-Bau	F:SW 8923,11238 8931,11168 8862,11161 8854,11230
 Abgeordnetenhaus	F:SW 8903,11378 8913,11289 8819,11278 8811,11367
 Schauspielhaus	F:SW|IMG:theater 9541,12000 9573,12001 9589,11937 9550,11934
@@ -22,8 +24,9 @@ Französischer Dom	F:SW|IMG:church 9552,12062 9610,12073 9618,12044 9550,12035
 Deutscher Dom	F:SW|IMG:church 9644,11894 9647,11855 9583,11851 9578,11890
 Staatsoper	F:SW|IMG:theater 9731,12356 9743,12261 9777,12264 9766,12361
 Neue Wache	F:SW 9781,12453 9784,12428 9819,12433 9816,12458
-#: oldname: Zeughaus
+#: alias: Zeughaus
 Deutsches Historisches Museum	F:SW|IMG:museum 9849,12501 9860,12412 9976,12427 9942,12512
+#: alias: Pei-Bau
 Pei-Bau (Deutsches Historisches Museum)	F:SW|IMG:museum 9850,12514 9936,12526 9909,12605 9845,12551
 #: note: Rückbau bis 2008-12-31
 Palast der Republik	F:SW 10185,12489 10271,12319 10346,12357 10256,12533
@@ -47,12 +50,13 @@ Jüdisches Museum (ehem. Berlin-Museum)	F:SW|IMG:museum 9830,10739 9854,10730 986
 Jüdisches Museum	F:SW|IMG:museum 9779,10690 9775,10673 9794,10673 9780,10665 9778,10644 9812,10642 9826,10655 9866,10611 9872,10631 9890,10618 9901,10623 9866,10652 9862,10633 9827,10674 9806,10654 9806,10653 9790,10652 9792,10660 9809,10668 9810,10682 9785,10683 9787,10689
 #: alias: Denkmal für die ermordeten Juden Europas:
 Holocaust-Denkmal	F:SW 8608,12056 8596,11919 8759,11973 8735,12081
-Amerika-Gedenkbibliothek	F:SW 9696,10072 9574,10043 9568,10092 9567,10092 9677,10113
+#: alias: AGB
+Amerika-Gedenkbibliothek	F:SW 9677,10113 9696,10072 9574,10043 9568,10092 9567,10092
 Friedenssäule	SW 9581,10350
 #: alias: Technisches Informationszentrum Berlin
 Patentamt	F:SW 9876,10299 10102,10302 10128,10358 10099,10368 10081,10332 10030,10331 10028,10392 9969,10394 9969,10393 9968,10409 9954,10408 9956,10379 10010,10378 10012,10364 9936,10358 9910,10363 9923,10391 9908,10397 9873,10315
 #: oldname: -1996: Museum für Verkehr und Technik
-Deutsches Technikmuseum Berlin	F:SW|IMG:museum 8659,10353 8670,10346 8654,10300 8654,10254 8617,10239 8596,10210 8540,10215 8525,10240
+Deutsches Technikmuseum Berlin	F:SW|IMG:museum 8586,10288 8659,10353 8670,10346 8654,10300 8654,10254 8617,10239 8596,10210 8540,10215 8525,10240
 #: section: Deutsches Technikmuseum Berlin vvv
 Lokschuppen 1	F:SW|IMG:px_1t 8532,10145 8521,10157 8518,10178 8535,10196 8564,10203 8576,10195 8570,10184 8557,10190 8540,10184 8535,10170 8545,10154
 Lokschuppen 2	F:SW|IMG:px_1t 8485,10071 8468,10076 8460,10090 8465,10114 8485,10135 8509,10134 8507,10118 8490,10115 8482,10103 8500,10081
@@ -66,7 +70,8 @@ Spektrum	F:SW 8771,10287 8789,10285 8775,10170 8756,10173
 Lokschuppen Betriebsbahnhof Schöneweide	F:SW 18400,4790 18440,4800 18481,4787 18502,4754 18502,4727 18500,4727 18492,4699 18470,4715 18476,4750 18476,4748 18445,4768 18419,4762
 Bauhaus-Archiv	F:SW 7124,11170 7130,11150 7103,11132 7090,11159
 Siegessäule	IMG:sehenswuerdigkeit_img/siegessaeule|ANCHOR:s 6749,12015
-Haus der Kulturen der Welt (Kongreßhalle)	F:SW 7688,12557 7688,12490 7774,12489 7773,12557
+#: alias: Kongreßhalle
+Haus der Kulturen der Welt	F:SW 7688,12557 7688,12490 7774,12489 7773,12557
 Schloß Bellevue	F:SW 6976,12317 6953,12342 6907,12299 6930,12275 6917,12263 6883,12301 6950,12365 6988,12328
 Gedenkstätte Deutscher Widerstand	F:SW 7492,11306 7566,11276 7545,11228 7471,11256
 Friedrichstadtpalast	F:SW 9275,13134 9282,13072 9381,13080 9368,13141
@@ -82,6 +87,7 @@ Bundesratsgebäude	F:SW 8809,11524 8815,11491 8868,11496 8865,11529 8894,11532 88
 Spittelkolonnaden	SW 10014,11667 10023,11650 10042,11646 10061,11656 10064,11678
 Deutsches Theater	F:SW|IMG:theater 8894,13136 8814,13116 8806,13144 8887,13165
 Grips-Theater	SW|IMG:theater 6124,12460
+#: alias: Naturkundemuseum
 Museum für Naturkunde und Zoologisches Museum	F:SW|IMG:museum 8713,13790 8667,13762 8646,13801 8605,13785 8582,13832 8676,13876 8687,13849 8723,13857 8729,13842 8697,13827
 Humboldt-Universität, Landwirtschaftlich-Gärtnerische Fakultät	F:SW 8729,13815 8750,13779 8810,13800 8782,13846
 Bundesministerium Bauen und Verkehr	F:SW 8656,13737 8591,13706 8547,13793 8522,13780 8487,13835 8544,13868 8578,13812 8567,13806 8586,13767 8631,13789
@@ -89,7 +95,7 @@ Bundesministerium Bauen und Verkehr	F:SW 8479,13850 8516,13871 8484,13927 8448,1
 Neue Synagoge	SW|IMG:synagogue 9736,13221
 Synagoge Fraenkelufer	SW|IMG:synagogue 11301,10037
 #: internal_note: Reihenfolge Flughafen -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
-Flughafen Tempelhof	F:SW|IMG:airport 9297,8095 9352,8244 9437,8377 9377,8445 9331,8429 9262,8420 9261,8560 9327,8574 9403,8492 9468,8550 9385,8625 9401,8692 9531,8675 9523,8618 9504,8571 9582,8496 9723,8546 9884,8562 10027,8548 10020,8526 9875,8542 9733,8519 9590,8459 9481,8378 9391,8255 9333,8130 9303,8019 9274,8021 9301,8115
+Flughafen Tempelhof	F:SW|IMG:airport 9468,8550 9385,8625 9401,8692 9531,8675 9523,8618 9504,8571 9582,8496 9723,8546 9884,8562 10027,8548 10020,8526 9875,8542 9733,8519 9590,8459 9481,8378 9391,8255 9333,8130 9303,8019 9274,8021 9301,8115 9352,8244 9437,8377 9377,8445 9331,8429 9262,8420 9261,8560 9327,8574 9403,8492
 Touristeninformation Berlin im Flughafen Tempelhof: Eingang Haupthalle	SW|IMG:touristinfo 9459,8503
 Columbiahaus	F:SW 9247,8857 9247,8812 9312,8802 9377,8757 9562,8733 9574,8863 9552,8865 9546,8757 9464,8765 9466,8859 9440,8861 9440,8774 9385,8776 9318,8824 9271,8828 9269,8869
 Columbiahaus	F:SW 9249,8871 9568,8877 9572,8855 9249,8851
@@ -100,15 +106,17 @@ Touristeninformation Berlin im Flughafen Schönefeld: Terminal B, EG, Mitte	SW|IM
 Flughafen Tegel	F:SW|IMG:airport 2752,16408 2770,16371 2721,16343 2695,16308 2694,16274 2704,16244 2671,16278 2552,16258 2478,16353 2513,16459 2632,16482 2710,16395
 Touristeninformation Berlin im Flughafen Tegel: Gate 3	SW|IMG:touristinfo 2675,16393
 Luftbrückendenkmal	IMG:sehenswuerdigkeit_img/luftbrueckendenkmal|ANCHOR:s 9317,8702
+Rosinenbomber	SW 10645,8496
 Schinkeldenkmal	IMG:sehenswuerdigkeit_img/viktoriaparkdenkmal|ANCHOR:s 8911,9073
 Rathaus Schöneberg	F:SW 6419,8754 6421,8667 6358,8654 6353,8757
 Amerika-Haus	SW 5436,11107
 Ludwig-Erhard-Haus	F:SW 5271,11195 5263,11092 5322,11093 5324,11131 5301,11194
+#: alias: Gedächtniskirche
 Kaiser-Wilhelm-Gedächtniskirche	IMG:sehenswuerdigkeit_img/gedaechtniskirche|ANCHOR:s 5754,10934
 #: internal_note: Reihenfolge Europa-Center -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
 #: alias: i-Punkt
-Europa-Center	F:Shop 5882,10925 5868,10875 5992,10809 6020,10864 6021,10930 5984,10937 5941,10921
-Touristeninformation Berlin im Europa-Center	SW|IMG:touristinfo 6137,10595
+Europa-Center	F:Shop 5868,10875 5992,10809 6020,10864 6021,10930 5984,10937 5941,10921 5882,10925
+# XXX: warum ist das hier im KaDeWe???? Touristeninformation Berlin im Europa-Center	SW|IMG:touristinfo 6137,10595
 Aquarium	F:SW 6177,11089 6187,11062 6105,11026 6085,11053 6148,11074
 Elefantentor (Zoologischer Garten)	SW 6046,11028
 Theater des Westens	F:SW|IMG:theater 5304,11072 5298,11008 5341,11000 5344,11072
@@ -132,7 +140,8 @@ Forsthaus Nikolskoe	F:SW -8866,1633 -8843,1604 -8821,1621 -8844,1645
 Zitadelle	F:SW -2740,14858 -2722,14841 -2608,14861 -2582,14903 -2557,14911 -2549,14887 -2576,14859 -2551,14761 -2595,14718 -2640,14682 -2699,14666 -2726,14695 -2715,14720 -2729,14818 -2769,14822 -2767,14855
 Rathaus Spandau	F:SW -3525,14082 -3452,14171 -3413,14142 -3484,14055
 Villa Borsig	F:SW 477,19900 472,19885 443,19889 447,19906
-Schloß Tegel (Humboldtschloß)	F:SW 1648,20912 1661,20876 1639,20870 1624,20905
+#: alias: Humboldtschloß
+Schloß Tegel	F:SW 1648,20912 1661,20876 1639,20870 1624,20905
 #: oldname: (DDR-Zeit): Schloß Niederschönhausen
 Schloß Schönhausen	F:SW 10367,19217 10385,19178 10399,19183 10386,19222
 Planetarium	F:SW 11952,15310 11938,15300 11943,15275 11970,15274 11972,15298
@@ -145,6 +154,7 @@ Zeiss-Planetarium	F:SW 6818,5711 6821,5657 6841,5657 6837,5717
 Schloß Friedrichsfelde	F:SW 18495,11141 18501,11127 18551,11139 18543,11154
 Marstall	F:SW 10375,12325 10312,12282 10390,12204 10440,12242
 Stadtbibliothek	F:SW 10390,12204 10395,12199 10435,12158 10464,12184 10421,12227
+#: alias: HU
 Humboldt-Universität	F:SW 9600,12568 9615,12436 9603,12435 9608,12385 9639,12388 9634,12438 9714,12446 9719,12396 9751,12400 9745,12449 9735,12448 9720,12581 9696,12579 9706,12482 9630,12474 9620,12571
 Universitäts-Bibliothek	F:SW 9659,12319 9657,12282 9672,12252 9643,12247 9633,12276 9639,12326
 Corbusier-Haus	F:SW -455,11457 -457,11428 -444,11423 -440,11458
@@ -155,19 +165,20 @@ Gedenkstätte Plötzensee	F:SW 4796,14941 4787,14912 4740,14930 4759,14960
 Jagdschloß Grunewald	SW 831,6656
 Marienkirche	F:SW|IMG:church 10620,12769 10620,12745 10578,12746 10580,12766
 Nikolaikirche	F:SW|IMG:church 10636,12355 10639,12338 10595,12335 10595,12347
-Russisch-Orthodoxe-Kirche	F:SW|IMG:church 3911,9024
+Russisch-Orthodoxe Kirche	F:SW|IMG:church 3911,9024
 Moschee	SW|IMG:mosque 4168,8973
 # Krankenhäuser
 #früher: Königin-Elisabeth-Hospital	SW|IMG:hospital 18097,7472
 St.-Hedwig-Krankenhaus	SW|IMG:hospital 9922,13369
 Krankenhaus Neukölln	F:SW|IMG:hospital 14225,3747 14277,3721 14178,3457 14121,3481
 #: alias: Krankenhaus Am Urban
-Klinikum Am Urban	F:SW|IMG:hospital 10838,9782 10788,9801 10792,9811 10763,9819 10727,9781 10726,9781 10706,9788 10710,9830 10687,9835 10676,9807 10645,9819 10664,9869 10642,9876 10659,9915 10722,9893 10725,9897 10793,9874 10792,9864 10816,9855 10820,9861 10855,9850 10837,9808 10845,9801
+Klinikum Am Urban	F:SW|IMG:hospital 10759,9885 10793,9874 10792,9864 10816,9855 10820,9861 10855,9850 10837,9808 10845,9801 10838,9782 10788,9801 10792,9811 10763,9819 10727,9781 10726,9781 10706,9788 10710,9830 10687,9835 10676,9807 10645,9819 10664,9869 10642,9876 10659,9915 10722,9893 10725,9897
 Klinikum Am Urban	F:SW|IMG:hospital 11069,9741 10932,9798 10914,9759 10877,9774 10843,9686 11014,9622
 Universitätsklinikum Rudolf Virchow	F:SW|IMG:hospital 6092,15135 6106,15072 6392,15108 6385,15172
 Universitätsklinikum Rudolf Virchow	F:SW|IMG:hospital 6132,15008 6138,14949 6407,14985 6401,15039
 Klinikum Benjamin Franklin	F:SW|IMG:hospital 4845,3923 4903,3831 5066,3921 5094,3966 5046,4044
 #: section Charite-Krankenhaus vvv
+#: alias: Charité
 Charité-Krankenhaus	F:SW|IMG:hospital 8673,13474 8690,13365 8734,13371 8717,13472
 	F:SW|IMG:hospital 8595,13106 8552,13166 8564,13174 8503,13257 8491,13249 8448,13308 8465,13318 8492,13276 8516,13300 8531,13281 8512,13265 8518,13258 8523,13261 8529,13251 8535,13256 8530,13266 8539,13273 8590,13206 8579,13198 8572,13207 8566,13203 8572,13194 8567,13188 8574,13182 8594,13195 8609,13173 8595,13163 8591,13169 8577,13160 8608,13115
 	F:SW|IMG:hospital 8412,13262 8434,13281 8401,13322 8388,13313 8358,13360 8334,13337 8342,13324 8329,13314 8336,13304 8367,13322 8377,13306 8347,13284 8338,13294 8330,13288 8335,13275 8328,13268 8335,13256 8380,13284 8397,13302 8412,13280 8406,13274
@@ -187,9 +198,12 @@ Auguste-Viktoria-Krankenhaus	F:SW|IMG:hospital 6584,6183 6585,6145 6595,6124 661
 Krankenhaus Waldfriede	SW|IMG:hospital -598,4091
 St.-Josef-Krankenhaus	F:SW|IMG:hospital 8437,8051 8439,7965 8422,7957 8419,7977 8392,7981 8394,8001 8418,8004 8418,8029 8374,8025 8379,7986 8291,7984 8292,8053
 Karl-Bonhoeffer-Nervenklinik	SW|IMG:hospital 5167,19386
-Hauptgebäude der TU	F:SW 5047,11759 5059,11675 5271,11703 5257,11785 5236,11782 5242,11756 5217,11753 5207,11788 5181,11785 5181,11748 5071,11735 5068,11762
+#: alias: Technische Univerität Berlin
+#: alias: TU
+Hauptgebäude der TU	F:SW 5181,11748 5071,11735 5068,11762 5047,11759 5059,11675 5271,11703 5257,11785 5236,11782 5242,11756 5217,11753 5207,11788 5181,11785
 Ernst-Reuter-Haus	F:SW 5635,11936 5481,11910 5481,11935 5630,11953
 Versuchsanstalt für Wasserbau	F:SW 5701,11755 5692,11720 5593,11745 5604,11782
+#: alias: UdK
 Universität der Künste	F:SW 5204,11364 5142,11404 5179,11521 5275,11474
 Renaissance-Theater	F:SW|IMG:theater 4933,11538 4931,11511 4953,11519
 Schiller-Theater	F:SW|IMG:theater 4544,11691 4570,11633 4614,11654 4581,11709
@@ -206,7 +220,8 @@ Haus des Rundfunks	F:SW 1810,11254 1836,11183 1828,11131 1698,11204 1732,11235
 Kongreßhalle	F:SW 11214,12756 11234,12800 11193,12821 11175,12773
 Haus des Lehrers	SW 11250,12887
 Freilichtbühne Wuhlheide	F:SW 20107,6416 20116,6451 20140,6456 20155,6437 20144,6405 20171,6378 20188,6408 20192,6458 20147,6494 20098,6475 20077,6423
-Freizeit- und Erholungszentrum (FEZ)	F:SW 20453,6274 20362,6308 20361,6328 20342,6333 20344,6343 20272,6383 20281,6425 20293,6420 20315,6441 20345,6422 20343,6404 20362,6397 20368,6370 20383,6363 20387,6371 20415,6364 20428,6416 20468,6397 20454,6365 20432,6372 20432,6354 20454,6345 20452,6335 20432,6345 20435,6327 20455,6315 20455,6311 20438,6315 20436,6300 20458,6286
+#: alias: FEZ
+Freizeit- und Erholungszentrum	F:SW 20453,6274 20362,6308 20361,6328 20342,6333 20344,6343 20272,6383 20281,6425 20293,6420 20315,6441 20345,6422 20343,6404 20362,6397 20368,6370 20383,6363 20387,6371 20415,6364 20428,6416 20468,6397 20454,6365 20432,6372 20432,6354 20454,6345 20452,6335 20432,6345 20435,6327 20455,6315 20455,6311 20438,6315 20436,6300 20458,6286
 Naturtheater Hasenheide	F:SW|IMG:theater 11323,8695 11324,8663 11302,8665 11277,8684 11301,8702
 SEZ	F:SW 13225,13585 13258,13526 13256,13514 13276,13494 13267,13455 13240,13462 13204,13426 13156,13403 13136,13427 13172,13450 13169,13460 13196,13473 13188,13512 13210,13518 13179,13581 13218,13589
 Städtisches Krankenhaus Friedrichshain	F:SW|IMG:hospital 12811,13535 12971,13267 12807,13183 12726,13161 12625,13347 12622,13501 12687,13546
@@ -223,7 +238,8 @@ Gethsemane-Kirche	SW|IMG:church 11176,15771
 #: oldname: ?: Allierter Kontrollrat
 Kammergericht	F:SW 7255,9633 7243,9502 7273,9500 7275,9520 7299,9521 7302,9615 7280,9619 7280,9634
 Lilienthal-Gedenkstätte	SW 5518,773
-Velodrom ("Berlin Arena")	F:SW 13608,13857 13554,13856 13514,13877 13498,13926 13514,13981 13575,14005 13631,13989 13657,13935 13646,13898
+#: note: "Berlin Arena" ist nicht durchgekommen
+Velodrom	F:SW 13608,13857 13554,13856 13514,13877 13498,13926 13514,13981 13575,14005 13631,13989 13657,13935 13646,13898
 Musical-Theater	F:SW|IMG:theater 8196,11176 8243,11195 8231,11398 8220,11392
 debis	F:SW 8265,11044 8306,11032 8332,11120 8280,11140
 Sony Center	F:Shop 8197,11652 8233,11500 8470,11513
@@ -256,7 +272,7 @@ Columbiahalle	F:SW 9689,8757 9687,8730 9699,8731 9701,8758
 Metropol	F:SW 6987,10301 7009,10296 7005,10267 6983,10271
 Komische Oper	F:SW|IMG:theater 9201,12267 9208,12203 9271,12211 9260,12280
 Wasserturm Fidicinstr.	SW 9483,9041
-Bezirksamt Kreuzberg	F:SW 9122,9749 9137,9745 9140,9759 9154,9756 9152,9750 9210,9725 9240,9716 9243,9728 9226,9732 9250,9806 9232,9812 9232,9813 9232,9812 9223,9783 9224,9783 9183,9795 9199,9821 9184,9824 9150,9770 9144,9770 9145,9778 9133,9782
+Bezirksamt Kreuzberg	F:SW 9210,9725 9240,9716 9243,9728 9226,9732 9250,9806 9232,9812 9232,9813 9232,9812 9223,9783 9224,9783 9183,9795 9199,9821 9184,9824 9150,9770 9144,9770 9145,9778 9133,9782 9122,9749 9137,9745 9140,9759 9154,9756 9152,9750
 Gasometer	SW 11043,9370
 Ruine des Anhalter Bahnhofs	SW 8953,10842
 Haus Bethanien	F:SW 11731,11028 11820,10988 11783,10896 11702,10919 11709,10936 11766,10918 11796,10982 11724,11010
@@ -269,6 +285,7 @@ Abtei Zenner	F:SW 15720,9192 15702,9158 15721,9146 15727,9156 15713,9165 15720,9
 Jungfernbrücke	F:SW 10235,12011 10191,11988 10191,11995 10232,12023
 Akademie der Künste	F:SW 6501,12483 6483,12399 6447,12388 6452,12363 6503,12382 6505,12409 6546,12422 6547,12400 6559,12395 6561,12427 6531,12434 6533,12479
 Henry-Ford-Bau (FU Berlin)	F:SW 2051,4456 1994,4496 2008,4519 2031,4507 2047,4532 2032,4542 2037,4557 2084,4528 2080,4511 2060,4520 2045,4502 2063,4483
+#: alias: FU
 Freie Universität Berlin	F:SW 2678,4847 2616,4967 2635,4987 2617,5038 2677,5109 2785,5175 2811,5121 2852,5147 2900,5079 2879,5064 2907,5025
 Gaswerk Schöneberg	SW 7294,8348
 Alte Berliner Stadtmauer	F:SW 11042,12436 11079,12326
@@ -280,6 +297,7 @@ Hebbel am Ufer (HAU 3)	SW|IMG:theater 9172,10153
 Finanzamt Kreuzberg	F:SW 9339,9796 9414,9948 9401,9954 9323,9805
 St.-Bonifatius-Kirche	F:SW|IMG:church 9214,9663 9201,9619 9180,9622 9191,9667
 St.-Clemens-Kirche	SW|IMG:church 9142,10807
+#: alias: Kaufhaus des Westens
 KaDeWe	F:SW 6136,10630 6203,10599 6173,10512 6102,10530
 Sowjetisches Ehrenmal (Tiergarten)	SW|IMG:monument 8210,12296
 Rathaus Köpenick	F:SW 22151,4646 22180,4649 22177,4580 22126,4574
@@ -374,7 +392,7 @@ Kirche Alt-Lietzow	SW|IMG:church 4180,12368
 Herz-Jesu-Kirche (Lietzow)	SW|IMG:church 3996,12400
 Lok Borsig 8	SW 2358,21491
 Denkmal Friedrich Wilhelm I.	SW 13292,7760
-Postbahnhof	F:SW 12692,11450 12687,11433 12646,11444 12594,11474 12604,11493 12656,11462
+Postbahnhof	F:SW 12594,11474 12604,11493 12656,11462 12692,11450 12687,11433 12646,11444
 Panke-Museum	SW|IMG:museum 10166,17656
 Mies-van-der-Rohe-Haus	SW 16212,16063
 Fort Hahneberg	SW -7710,12621
@@ -412,6 +430,7 @@ Eliaskirche	SW 11601,15007
 Markuskirche	SW|IMG:church 6299,4754
 Bethanienkirche	SW|IMG:church 13377,16401
 #: section Erholungspark Marzahn vvv
+#: alias: Erholungspark Marzahn
 Chinesischer Garten	SW 22090,14750
 Japanischer Garten	SW 22297,14957
 #: alias Koreanischer Garten
@@ -436,187 +455,6 @@ Berolinahaus	F:SW 10930,12915 10929,12915 10909,12901 10962,12841 10981,12859
 Ehemaliger Grenzwachturm	SW 13609,10057
 Krankenhaus Hedwigshöhe	SW|IMG:hospital 21895,189
 Krankenhaus Spandau	SW|IMG:hospital -3161,15738
-######################################################################
-#
-#  POTSDAM
-#
-Schloß Babelsberg	F:SW -10482,-195 -10488,-242 -10515,-242 -10511,-193
-Neues Palais	SW -15737,-1011
-Schloß Charlottenhof	SW -15039,-1590
-Römische Bäder	SW -14923,-1387
-Chinesisches Haus	IMG:sehenswuerdigkeit_img/chinesisches_haus -14650,-1071
-Communs (Universität Potsdam)	SW -15950,-1032
-Kaiserbahnhof	SW -15925,-1565
-Schloß Sanssouci	IMG:sehenswuerdigkeit_img/sanssouci -14221,-686
-Nikolaikirche (Potsdam)	SW|IMG:church -12650,-1489
-Schloß Cecilienhof	SW -12076,1047
-Ruinenberg (Potsdam)	SW -14203,-45
-Historische Mühle (Potsdam)	SW -14425,-643
-Orangerie (Sanssouci)	SW -14861,-580
-Belvedere (Sanssouci)	SW -15549,-305
-Drachenhaus (Sanssouci)	SW -15398,-433
-Brandenburger Tor (Potsdam)	F:SW -13556,-1107
-Jägertor	SW -13231,-763
-Nauener Tor	SW -12897,-705
-Holländisches Viertel	F:SW -12871,-688 -12876,-762 -12717,-729 -12729,-660
-Holländisches Viertel	F:SW -12705,-726 -12551,-692 -12569,-611 -12717,-658
-Holländisches Viertel	F:SW -12877,-774 -12879,-861 -12699,-822 -12715,-741
-Holländisches Viertel	F:SW -12703,-740 -12686,-818 -12538,-784 -12549,-706
-St.-Peter und Paul-Kirche	SW|IMG:church -12766,-998
-Französische Kirche	SW|IMG:church -12511,-955
-Friedenskirche	SW|IMG:church -13856,-963
-Belvedere (Pfingstberg)	SW -12825,1046
-Pomonatempel	SW -12775,978
-Russ.-Orth. Kirche/Kapellenberg	SW|IMG:church -12943,670
-Flatowturm (Babelsberg)	SW -10933,-679
-Berliner Gerichtslaube (Park Babelsbweg)	SW -10858,-476
-Kleines Schloß (Park Babelsbweg)	SW -10809,-208
-Heilandskirche (Sacrow)	IMG:sehenswuerdigkeit_img/heilandskirche_sacrow -10369,1692
-Sacrower Schloß	SW -10540,1969
-Orangerie (Neuer Garten)	F:SW -12361,286 -12291,254 -12295,240 -12365,271
-Gothische Bibliothek (Neuer Garten, Potsdam)	SW -12277,-327
-Grünes Haus (Neuer Garten)	SW -11788,1003
-Rotes Haus (Neuer Garten)	SW -11975,711
-Meierei (Neuer Garten)	SW -12112,1409
-Marmorpalais (Neuer Garten, Potsdam)	SW -12095,345
-Krongut Bornstedt	SW -14714,-196
-Bornstedter Kirche	SW|IMG:church -14822,-89
-Rathaus Potsdam	SW -12920,-491
-Rathaus Babelsberg	SW -10591,-1872
-Medienstadt und Filmpark Babelsberg	F:SW -8458,-1969 -8515,-2805 -9070,-2636 -8859,-1999
-Sternwarte Babelsberg	SW -9719,-457
-Persiusturm	SW -16118,3329
-Gutsgarten	SW -16143,3261
-Klinikum Ernst-von-Bergmann	F:SW|IMG:hospital -12334,-1023
-St.-Josef-Krankenhaus	SW|IMG:hospital -13856,-1118
-Einsteinturm (Potsdam)	IMG:sehenswuerdigkeit_img/einsteinturm|ANCHOR:s -12419,-3407
-Großer Refraktor (Potsdam, Telegrafenberg)	SW -12390,-3313
-Landtag (Potsdam)	SW -12587,-2495
-Pumpwerk (Moschee)	SW -13793,-1540
-Hans-Otto-Theater	SW|IMG:theater -11695,-703
-Hans-Marchwitza-Haus	SW -12580,-1502
-Filmmuseum Potsdam	SW|IMG:museum -12775,-1618
-#: alias: Villa am Erlenkamp
-Truman-Villa (Babelsberg)	SW -8490,-1403
-Biosphäre	SW -13484,1093
-Schloß Lindstedt	SW -16106,-16
-Friedrichskirche	SW|IMG:church -10296,-1673
-Erlöserkirche	SW|IMG:church -14357,-1535
-######################################################################
-#
-#  BRANDENBURG
-#
-Schloß Rheinsberg	SW -25852,76666
-Schloß Diedersdorf	SW 7420,-7598
-Denkmal (?) 	SW|IMG:monument -29249,39712
-Schloß Oranienburg	SW -1559,38608
-Schloß Teupitz (?)	SW 24950,-29407
-Schloß Branitz	SW 77500,-72834
-Otto-Spreeauenpark (Buga Cottbus)	SW 76496,-72220
-Tierpark Cottbus	SW 76618,-72671
-Dom St. Peter und Paul (Brandenburg)	SW|IMG:church -46277,8
-Marienberg Brandenburg	SW -47601,38
-Pulverturm Bernau	SW 22217,30605
-Kantorhaus Bernau	SW 22304,30562
-Henkerhaus Bernau	SW 22261,30732
-St. Marien Bernau	F:SW|IMG:church 22390,30710
-Steintor Bernau	SW 22778,30561
-Stadtmauer Bernau	SW 22261,30413 22217,30605 22283,30775 22606,30879 22799,30539 22692,30412 22367,30328
-Schiffshebewerk Niederfinow	SW 46113,49913
-Alte Schleusentreppe	SW 46287,50187
-Kloster Chorin	SW 41912,54746
-Windradpark bei Güstow	SW 33239,102263
-Schloss Boitzenburg	SW 22157,95365
-Schloss Kröchlendorff	SW 28206,96884
-Neogotische Kirche	SW|IMG:church 28292,96834
-Kirche (Fürstenberg)	SW|IMG:church -8747,86389
-Marienkirche Prenzlau	SW|IMG:church 39331,101515
-St. Maria Magdalena Prenzlau	SW|IMG:church 39247,101968
-Mitteltorturm (Prenzlau)	SW 39162,101424
-Bindower Torturm (Prenzlau)	SW 39709,101910
-Stadtmauer Prenzlau	SW 39689,101916 39588,101934
-Schleuse Große Tränke	SW 50927,-3539
-Jagdschloß Königs Wusterhausen	SW 25953,-11628
-Kinderbauernhof Roter Hof (Strausberg)	SW 44211,21646
-Machnower Schleuse	SW -2625,-1334
-Schleuse Schönwalde	SW -11427,22041
-Flughafen Finow	F:SW|IMG:airport 29800,47050
-#: add_fragezeichen: genaue Bezeichnung? vvv
-Müncheberg, Turm	SW 60803,11559
-Müncheberg, Turm	SW 60306,11906
-#: add_fragezeichen ^^^
-#: XXX genaue Position? vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-Schloss Steinhöfel	SW 62739,317
-Schloss Neuhardenberg	SW 67024,22301
-Schloss Wulkow 	SW 66684,19478
-Schloss Trebnitz	SW 65639,15551
-Sauener Herrenhaus	SW 66048,-15160
-Schloss Groß Rietz	SW 65864,-20329
-Schloss Kossenblatt	SW 57796,-30982
-#: XXX ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Eisenbahnmuseum Gramzow	SW|IMG:museum 50691,90514
-Cargolifter-Halle Brand (Tropical Island)	SW 34937,-40443
-Schloss Paretz	SW -25365,6328
-Obelisk Döberitzer Heide	SW -11654,12720
-Schloss Elsterwerda	SW 20939,-105687
-F60 (Lichterfeld)	SW 37955,-90789
-Kirche in Straupitz (von Schinkel)	SW|IMG:church 60502,-54146
-Rathaus Finsterwalde	SW 33127,-85930
-Schloss Finsterwalde	F:SW 33255,-86191 33278,-86169 33254,-86144 33230,-86091 33196,-86106 33214,-86143
-Kirche Finsterwalde	SW|IMG:church 33138,-86003
-Schloss Meseberg (Gästehaus der Bundesregierung)	SW -11221,62653
-######################################################################
-#
-#  AUSSERHALB BRANDENBURGS
-#
-Brocken	SW -177603,-70746
-Schloß Wernigerode	SW -165459,-67258
-Wesendahler Mühle	SW 39431,21380
-Eisenbahnhubbrücke Karnin	SW 38039,160491
-Schloß Mellenthin	SW 48860,169621
-Mahnmal bei Kamminke	SW 61911,165656
-Steintor (Anklam)	SW 26895,161556
-Kirche (Morgenitz)	SW|IMG:church 45268,169789
-Seebrücke Bansin	SW 57292,175411 57518,175569
-Seebrücke Heringsdorf	SW 59119,173336 59578,173654
-Seebrücke Ahlbeck	SW 60606,171864 60837,172192
-Festung Königstein	F:SW 58500,-164718 58353,-164649 58290,-164542 58363,-164424 58443,-164390 58587,-164460 58788,-164634
-Bastei	SW 59352,-159795
-Basteibrücke	SW 59413,-159792
-Hockstein	SW 61308,-157745
-Brand	SW 63080,-160370
-Eisenbahnwelten Rathen	SW 59824,-160414
-Schloss Annaburg	SW -11971,-75633
-######################################################################
-#
-#  HAMBURG
-#
-Alte Pianofabrik (Hamburg)	F:SW -225919,124330 -225915,124324 -225899,124332 -225892,124320 -225902,124315 -225908,124328 -225915,124324 -225906,124303 -225895,124309 -225890,124302 -225852,124323 -225843,124309 -225878,124290 -225885,124304 -225890,124301 -225874,124276 -225822,124309 -225846,124345 -225880,124326 -225887,124341 -225864,124352 -225857,124338 -225846,124345 -225861,124367
-Planten un Blomen (Hamburg)	SW -224478,124390
-Schleusenbrücke (Hamburg)	SW -223924,123281
-Hamburger Rathaus	SW -223906,123150
-St. Nikolai (Hamburg, Ruine)	SW|IMG:church -223976,122848
-#: alias: Michel
-St. Michaelis (Hamburg)	SW|IMG:church -224832,122912
-St. Katharinen (Hamburg)	SW|IMG:church -223720,122656
-Schaartorschleuse (Hamburg)	SW -224485,122629
-Miniatur Wunderland (Hamburg)	SW -224049,122449
-Alter Elbtunnel (Hamburg, nördlicher Eingang)	SW -225600,122626
-Alter Elbtunnel (Hamburg, südlicher Eingang)	SW -225594,122163
-St. Pauli Landungsbrücken	SW -225463,122571
-Hagenbecks Tierpark (Hamburg)	SW -227437,128064
-######################################################################
-#
-#  DRESDEN
-#
-Deutsches Hygienemuseum	SW|IMG:museum 37068,-151040
-Frauenkirche	SW|IMG:church 36709,-150153
-Zwinger	SW 36206,-150134
-Zoologischer Garten Dresden	SW 37456,-151803
-######################################################################
-#
-#  UNSORTIERT
-#
 Stadtbad Wilmersdorf II	SW 3478,8782
 #: oldname: -200010: Eisstadion Wilmersdorf
 Horst-Dohm-Eisstadion	F:SW 3448,8719 3405,8633 3405,8619 3423,8607 3442,8614 3486,8701 3482,8719 3466,8727
@@ -685,8 +523,8 @@ Britische St.-Georg-Kirche	SW|IMG:church 509,11662
 Neu-Westend-Kirche	SW|IMG:church 718,12337
 Epiphanienkirche	SW|IMG:church 2270,11787
 Georg-Kolbe-Museum	SW|IMG:museum 240,11379
-Maltheser Krankenhaus	SW|IMG:hospital 50,11198
-Paulinen Krankenhaus	SW|IMG:hospital -1240,11165
+Maltheser-Krankenhaus	SW|IMG:hospital 50,11198
+Paulinen-Krankenhaus	SW|IMG:hospital -1240,11165
 U-Bahn-Museum	SW|IMG:museum 85,12232
 Stalin-Villa (Babelsberg)	SW -9392,-611
 Churchill-Villa (Babelsberg)	SW -8947,-882
@@ -703,3 +541,200 @@ Auguste-Viktoria-Krankenhaus (Pflege- und Wohnheim)	SW|IMG:hospital 6358,4130
 Pfefferberg	F:SW 10773,14072 10758,14043 10776,14032 10752,13975 10810,13942 10840,14008 10907,13981 10920,14032 10813,14089 10792,14063
 Kulturbrauerei	F:SW 11101,14768 10964,14726 10959,14774 10912,14773 10907,14833 10973,14837 10964,14955 11030,14979
 Herz-Jesu-Kirche (Prenzlauer Berg)	SW|IMG:church 10734,13882
+#: section ^^^
+######################################################################
+#
+#  POTSDAM
+#
+#: section: Potsdam vvv
+Schloß Babelsberg	F:SW -10482,-195 -10488,-242 -10515,-242 -10511,-193
+Neues Palais	SW -15737,-1011
+Schloß Charlottenhof	SW -15039,-1590
+Römische Bäder	SW -14923,-1387
+#: alias: Chinesisches Teehaus
+Chinesisches Haus	IMG:sehenswuerdigkeit_img/chinesisches_haus -14650,-1071
+Communs (Universität Potsdam)	SW -15950,-1032
+Kaiserbahnhof	SW -15925,-1565
+Schloß Sanssouci	IMG:sehenswuerdigkeit_img/sanssouci -14221,-686
+Nikolaikirche (Potsdam)	SW|IMG:church -12650,-1489
+Schloß Cecilienhof	SW -12076,1047
+Ruinenberg (Potsdam)	SW -14203,-45
+Historische Mühle (Potsdam)	SW -14425,-643
+Orangerie (Sanssouci)	SW -14861,-580
+Belvedere (Sanssouci)	SW -15549,-305
+Drachenhaus (Sanssouci)	SW -15398,-433
+Brandenburger Tor (Potsdam)	F:SW -13556,-1107
+Jägertor	SW -13231,-763
+Nauener Tor	SW -12897,-705
+Holländisches Viertel	F:SW -12871,-688 -12876,-762 -12717,-729 -12729,-660
+Holländisches Viertel	F:SW -12705,-726 -12551,-692 -12569,-611 -12717,-658
+Holländisches Viertel	F:SW -12877,-774 -12879,-861 -12699,-822 -12715,-741
+Holländisches Viertel	F:SW -12703,-740 -12686,-818 -12538,-784 -12549,-706
+St.-Peter und Paul-Kirche	SW|IMG:church -12766,-998
+Französische Kirche	SW|IMG:church -12511,-955
+Friedenskirche	SW|IMG:church -13856,-963
+#: alias: Pfingstberg
+Belvedere (Pfingstberg)	SW -12825,1046
+Pomonatempel	SW -12775,978
+Russ.-Orth. Kirche/Kapellenberg	SW|IMG:church -12943,670
+Flatowturm (Babelsberg)	SW -10933,-679
+Berliner Gerichtslaube (Park Babelsbweg)	SW -10858,-476
+Kleines Schloß (Park Babelsbweg)	SW -10809,-208
+Heilandskirche (Sacrow)	IMG:sehenswuerdigkeit_img/heilandskirche_sacrow -10369,1692
+Sacrower Schloß	SW -10540,1969
+Orangerie (Neuer Garten)	F:SW -12361,286 -12291,254 -12295,240 -12365,271
+Gothische Bibliothek (Neuer Garten, Potsdam)	SW -12277,-327
+Grünes Haus (Neuer Garten)	SW -11788,1003
+Rotes Haus (Neuer Garten)	SW -11975,711
+Meierei (Neuer Garten)	SW -12112,1409
+Marmorpalais (Neuer Garten, Potsdam)	SW -12095,345
+Krongut Bornstedt	SW -14714,-196
+Bornstedter Kirche	SW|IMG:church -14822,-89
+Rathaus Potsdam	SW -12920,-491
+Rathaus Babelsberg	SW -10591,-1872
+Medienstadt und Filmpark Babelsberg	F:SW -8458,-1969 -8515,-2805 -9070,-2636 -8859,-1999
+Sternwarte Babelsberg	SW -9719,-457
+Persiusturm	SW -16118,3329
+Gutsgarten	SW -16143,3261
+Klinikum Ernst-von-Bergmann	F:SW|IMG:hospital -12334,-1023
+St.-Josef-Krankenhaus	SW|IMG:hospital -13856,-1118
+Einsteinturm (Potsdam)	IMG:sehenswuerdigkeit_img/einsteinturm|ANCHOR:s -12419,-3407
+Großer Refraktor (Potsdam, Telegrafenberg)	SW -12390,-3313
+Landtag (Potsdam)	SW -12587,-2495
+Pumpwerk (Moschee)	SW -13793,-1540
+Hans-Otto-Theater	SW|IMG:theater -11695,-703
+Hans-Marchwitza-Haus	SW -12580,-1502
+Filmmuseum Potsdam	SW|IMG:museum -12775,-1618
+#: alias: Villa am Erlenkamp
+Truman-Villa (Babelsberg)	SW -8490,-1403
+Biosphäre	SW -13484,1093
+Schloß Lindstedt	SW -16106,-16
+Friedrichskirche	SW|IMG:church -10296,-1673
+Erlöserkirche	SW|IMG:church -14357,-1535
+#: section: ^^^
+######################################################################
+#
+#  BRANDENBURG
+#
+#: section: Brandenburg vvv
+Schloß Rheinsberg	SW -25852,76666
+Schloß Diedersdorf	SW 7420,-7598
+Denkmal (?) 	SW|IMG:monument -29249,39712
+Schloß Oranienburg	SW -1559,38608
+Schloß Teupitz (?)	SW 24950,-29407
+Schloß Branitz	SW 77500,-72834
+Otto-Spreeauenpark (Buga Cottbus)	SW 76496,-72220
+Tierpark Cottbus	SW 76618,-72671
+Dom St. Peter und Paul (Brandenburg)	SW|IMG:church -46277,8
+Marienberg Brandenburg	SW -47601,38
+Pulverturm Bernau	SW 22217,30605
+Kantorhaus Bernau	SW 22304,30562
+Henkerhaus Bernau	SW 22261,30732
+St. Marien Bernau	F:SW|IMG:church 22390,30710
+Steintor Bernau	SW 22778,30561
+Stadtmauer Bernau	SW 22261,30413 22217,30605 22283,30775 22606,30879 22799,30539 22692,30412 22367,30328
+Schiffshebewerk Niederfinow	SW 46113,49913
+Alte Schleusentreppe	SW 46287,50187
+Kloster Chorin	SW 41912,54746
+Windradpark bei Güstow	SW 33239,102263
+Schloss Boitzenburg	SW 22157,95365
+Schloss Kröchlendorff	SW 28206,96884
+Neogotische Kirche	SW|IMG:church 28292,96834
+Kirche (Fürstenberg)	SW|IMG:church -8747,86389
+Marienkirche Prenzlau	SW|IMG:church 39331,101515
+St. Maria Magdalena Prenzlau	SW|IMG:church 39247,101968
+Mitteltorturm (Prenzlau)	SW 39162,101424
+Bindower Torturm (Prenzlau)	SW 39709,101910
+Stadtmauer Prenzlau	SW 39689,101916 39588,101934
+Schleuse Große Tränke	SW 50927,-3539
+Jagdschloß Königs Wusterhausen	SW 25953,-11628
+Kinderbauernhof Roter Hof (Strausberg)	SW 44211,21646
+Machnower Schleuse	SW -2625,-1334
+Schleuse Schönwalde	SW -11427,22041
+Flughafen Finow	F:SW|IMG:airport 29800,47050
+#: add_fragezeichen: genaue Bezeichnung? vvv
+Müncheberg, Turm	SW 60803,11559
+Müncheberg, Turm	SW 60306,11906
+#: add_fragezeichen ^^^
+#: XXX genaue Position? vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Schloss Steinhöfel	SW 62739,317
+Schloss Neuhardenberg	SW 67024,22301
+Schloss Wulkow 	SW 66684,19478
+Schloss Trebnitz	SW 65639,15551
+Sauener Herrenhaus	SW 66048,-15160
+Schloss Groß Rietz	SW 65864,-20329
+Schloss Kossenblatt	SW 57796,-30982
+#: XXX ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Eisenbahnmuseum Gramzow	SW|IMG:museum 50691,90514
+#: alias: Tropical Island
+Cargolifter-Halle Brand	SW 34937,-40443
+Schloss Paretz	SW -25365,6328
+Obelisk Döberitzer Heide	SW -11654,12720
+Schloss Elsterwerda	SW 20939,-105687
+F60 (Lichterfeld)	SW 37955,-90789
+#: note: von Schinkel:
+Kirche in Straupitz	SW|IMG:church 60502,-54146
+Rathaus Finsterwalde	SW 33127,-85930
+Schloss Finsterwalde	F:SW 33255,-86191 33278,-86169 33254,-86144 33230,-86091 33196,-86106 33214,-86143
+Kirche Finsterwalde	SW|IMG:church 33138,-86003
+#: note: Gästehaus der Bundesregierung
+Schloss Meseberg	SW -11221,62653
+#: section: ^^^
+######################################################################
+#
+#  AUSSERHALB BRANDENBURGS
+#
+#: section: Außerhalb Brandenburgs vvv
+Brocken	SW -177603,-70746
+Schloß Wernigerode	SW -165459,-67258
+Wesendahler Mühle	SW 39431,21380
+Eisenbahnhubbrücke Karnin	SW 38039,160491
+Schloß Mellenthin	SW 48860,169621
+Mahnmal bei Kamminke	SW 61911,165656
+Steintor (Anklam)	SW 26895,161556
+Kirche (Morgenitz)	SW|IMG:church 45268,169789
+Seebrücke Bansin	SW 57292,175411 57518,175569
+Seebrücke Heringsdorf	SW 59119,173336 59578,173654
+Seebrücke Ahlbeck	SW 60606,171864 60837,172192
+Festung Königstein	F:SW 58500,-164718 58353,-164649 58290,-164542 58363,-164424 58443,-164390 58587,-164460 58788,-164634
+Bastei	SW 59352,-159795
+Basteibrücke	SW 59413,-159792
+Hockstein	SW 61308,-157745
+Brand	SW 63080,-160370
+Eisenbahnwelten Rathen	SW 59824,-160414
+Schloss Annaburg	SW -11971,-75633
+#: section ^^^
+######################################################################
+#
+#  HAMBURG
+#
+#: section: Hamburg vvv
+Alte Pianofabrik (Hamburg)	F:SW -225919,124330 -225915,124324 -225899,124332 -225892,124320 -225902,124315 -225908,124328 -225915,124324 -225906,124303 -225895,124309 -225890,124302 -225852,124323 -225843,124309 -225878,124290 -225885,124304 -225890,124301 -225874,124276 -225822,124309 -225846,124345 -225880,124326 -225887,124341 -225864,124352 -225857,124338 -225846,124345 -225861,124367
+Planten un Blomen (Hamburg)	SW -224478,124390
+Schleusenbrücke (Hamburg)	SW -223924,123281
+Hamburger Rathaus	SW -223906,123150
+St. Nikolai (Hamburg, Ruine)	SW|IMG:church -223976,122848
+#: alias: Michel
+St. Michaelis (Hamburg)	SW|IMG:church -224832,122912
+St. Katharinen (Hamburg)	SW|IMG:church -223720,122656
+Schaartorschleuse (Hamburg)	SW -224485,122629
+Miniatur Wunderland (Hamburg)	SW -224049,122449
+Alter Elbtunnel (Hamburg, nördlicher Eingang)	SW -225600,122626
+Alter Elbtunnel (Hamburg, südlicher Eingang)	SW -225594,122163
+St. Pauli Landungsbrücken	SW -225463,122571
+Hagenbecks Tierpark (Hamburg)	SW -227437,128064
+#: section ^^^
+######################################################################
+#
+#  DRESDEN
+#
+#: section: Dresden vvv
+Deutsches Hygienemuseum	SW|IMG:museum 37068,-151040
+Frauenkirche	SW|IMG:church 36709,-150153
+Zwinger	SW 36206,-150134
+Zoologischer Garten Dresden	SW 37456,-151803
+#: section ^^^
+######################################################################
+#
+#  UNSORTIERT
+#
