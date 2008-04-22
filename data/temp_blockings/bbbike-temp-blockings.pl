@@ -11289,4 +11289,13 @@ EOF
 userdel	2::temp 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6240,13324
 EOF
      },
+     { from  => 1208892535, # 2008-04-22 21:28
+       until => 1222811999, # 2008-09-30 23:59
+       text  => 'Schillerstr. (Wilhelmsruh) Richtung Schönholzer Weg zwischen Hauptstr. und Schönholzer Weg Baustelle, Fahrtrichtung gesperrt (bis 09.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_008423',
+       data  => <<EOF,
+userdel	1::inwork 7832,20219 7957,20182 8062,20133 8196,20096
+EOF
+     },
     );

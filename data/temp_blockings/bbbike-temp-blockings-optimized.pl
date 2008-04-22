@@ -1060,16 +1060,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_008378',
-         'until' => 1208815200,
-         'text' => 'Röblingstr. (Tempelhof) in beiden Richtungen zwischen Arnulfstr. und Attilastr. geplatzte Wasserleitung, Straße vollständig gesperrt (bis ca. 21.04.2008)',
-         'from' => 1208462457,
-         'id' => 1335,
-         'data' => 'userdel	q4::inwork 7497,5610 7599,5553 7816,5519 8038,5521
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1209333600,
@@ -1088,6 +1079,18 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::temp -34063,-10552 -34488,-10578
 ',
          'type' => 'handicap'
+       },
+       undef,
+       undef,
+       {
+         'source_id' => 'IM_008423',
+         'until' => 1222811999,
+         'text' => 'Schillerstr. (Wilhelmsruh) Richtung Schönholzer Weg zwischen Hauptstr. und Schönholzer Weg Baustelle, Fahrtrichtung gesperrt (bis 09.2008)',
+         'from' => 1208892535,
+         'id' => 1341,
+         'data' => 'userdel	1::inwork 7832,20219 7957,20182 8062,20133 8196,20096
+',
+         'type' => 'gesperrt'
        }
      
 );
