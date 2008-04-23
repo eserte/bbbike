@@ -701,9 +701,9 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        {
-         'until' => 1209592800,
-         'text' => 'L 015 Hardenbeck - Fürstenberg OD Lychen, Prenzlauer Str. Kanal- und Straßenbau Vollsperrung 19.11.2007-30.04.2008 ',
-         'from' => 1195426800,
+         'until' => 1209160800,
+         'text' => 'L 015 Hardenbeck - Fürstenberg OD Lychen, Prenzlauer Str. Kanal- und Straßenbau Vollsperrung 01.02.2008-25.04.2008 ',
+         'from' => 1201734000,
          'id' => 1245,
          'data' => 'userdel	q4::inwork 2940,90332 2565,89990 2745,89716
 ',
@@ -990,8 +990,8 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'handicap'
        },
        {
-         'until' => 1209160800,
-         'text' => 'B 101 Jüterbog u.Hohenahlsdorf Deckenerneuerung Vollsperrung 02.04.2008-25.04.2008 ',
+         'until' => 1208988000,
+         'text' => 'B 101 zw. Jüterbog und Hohenahlsdorf Deckenerneuerung Vollsperrung 02.04.2008-23.04.2008 ',
          'from' => 1207000800,
          'id' => 1320,
          'data' => 'userdel	2::inwork -7465,-53204 -7723,-51946 -8071,-50478 -8343,-49645 -8733,-48657 -9039,-47752

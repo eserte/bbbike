@@ -10498,9 +10498,9 @@ EOF
 userdel	2::inwork 18272,-39512 18433,-38781
 EOF
      },
-     { from  => Time::Local::timelocal(reverse(2007-1900,11-1,19,0,0,0)),
-       until => 1209592800, # 2008-05-01 00:00
-       text  => 'L 015 Hardenbeck - Fürstenberg OD Lychen, Prenzlauer Str. Kanal- und Straßenbau Vollsperrung 19.11.2007-30.04.2008 ',
+     { from  => 1201734000, # 2008-01-31 00:00
+       until => 1209160800, # 2008-04-26 00:00
+       text  => 'L 015 Hardenbeck - Fürstenberg OD Lychen, Prenzlauer Str. Kanal- und Straßenbau Vollsperrung 01.02.2008-25.04.2008 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 2940,90332 2565,89990 2745,89716
@@ -11117,8 +11117,8 @@ userdel	q4::inwork 10385,13548 10432,13678 10445,13752
 EOF
      },
      { from  => 1207000800, # 2008-04-01 00:00
-       until => 1209160800, # 2008-04-26 00:00
-       text  => 'B 101 Jüterbog u.Hohenahlsdorf Deckenerneuerung Vollsperrung 02.04.2008-25.04.2008 ',
+       until => 1208988000, # 2008-04-24 00:00
+       text  => 'B 101 zw. Jüterbog und Hohenahlsdorf Deckenerneuerung Vollsperrung 02.04.2008-23.04.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -7465,-53204 -7723,-51946 -8071,-50478 -8343,-49645 -8733,-48657 -9039,-47752
