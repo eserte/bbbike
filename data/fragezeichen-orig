@@ -983,7 +983,7 @@ Stille Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10184,18875 10128,19110
 Schloßallee - Blankenburger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10661,19307 10481,19344 10393,19587
 #: XXX: zumindestens für den südlichen Abschnitt bestätigt, aber auf dem Luftbild sieht es so aus, als ob ein kleiner Abschnitt asphaltiert sein könnte:
 Blaubeerweg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 10932,22184 10979,21977 10993,21948 11000,21858 11060,21694
-Mazetstr.: Qualität (laut ADFC-Karte überwiegend gut geeignet)? Ist der Abschnitt östlich der Blankenfelder Str. für Autofahrer gesperrt?	? 10979,21977 11026,21997 11329,22138 11437,22198 11566,22350
+Mazetstr.: Qualität (laut ADFC-Karte überwiegend gut geeignet)? Ist der Abschnitt östlich der Blankenfelder Str. für Autofahrer gesperrt?	? 10979,21977 11026,21997 11329,22138 11437,22198 11504,22277 11566,22350
 (Mönchmühler Str. - Blankenfelder Chaussee): Qualität (laut ADFC-Karte gut geeignet)?	? 8903,23349 9156,23424 9296,23468
 Revierförsterei Blankenfelde - Mönchmühler Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 9747,22694 9473,22591
 Revierförsterei Blankenfelde - Mönchmühler Str.: Qualität (laut ADFC-Karte mäßig geeignet)? Existiert überhaupt eine Verbindung zur Mönchmühler Str.?	? 9473,22591 8811,22338 8569,22444
@@ -1382,6 +1382,7 @@ Oderfähre: ab 2007-06-30 in Betrieb	? 71946,40655 72361,41057
 Gerlindeweg: Qualität des Abschnitts zwischen Beatestr. und Friederikestr.?	? -1484,18545 -1517,18580 -1572,18673 -1642,18679
 Gerlindeweg: Qualität des Abschnitts zwischen Luisenstr. und Helgaweg?	? -1846,18778 -1907,18810 -2029,18822 -2102,18840
 #: note: ein anonymer Kommentar war nicht klar genug. Laut Luftbild scheinen Autofahrer nicht auf die Daumstr. fahren zu können
+#: note: ein weiterer anonymer Kommentar meint "guter Asphalt" und sagt nichts über eine Einbahnstraße
 Burscheider Weg: Qualität (möglicherweise gutes Kopfsteinpflaster)? Einbahnstraßenregelung: gibt es eine, wo und in welche Richtung?	? -1345,15060 -1322,15079 -934,15254 -862,15283 -740,15306
 Markomannenstr. - Preußenstr.: existiert eine für Radfahrer befahrbare Verbindung zwischen Markomannenstr. und Preußenstr.?	? 20700,1363 20711,1406
 Bootshausweg - An den Rohrbruchwiesen: Qualität des Weges? (wahrscheinlich asphaltiert?) für Autofahrer gesperrt?	? -1229,16773 -1316,16729 -1359,16737 -1421,16751 -1452,16728
@@ -1474,7 +1475,6 @@ Breitenbachstr. - Soltauer Str.: besteht eine Verbindung für Radfahrer entlang d
 Schillerstr. (Lichterfelde): Qualität?	? 4429,2396 4568,2424 4721,2449 4868,2370 5033,2279
 Ulmenstr.: Qualität?	? 3996,23012 3750,23363
 Waldseeweg: Qualität?	? 3750,23363 3621,23548 3587,23584
-Schloßstr. (Hermsdorf): Qualität?	? 4058,23342 3953,23401 3632,23563 3587,23584 3563,23609 3461,23741
 Schulzendorfer Str.: Ist die Schulzendorfer Straße eine Vorfahrtsstraße?	? 22222,156 22303,67 22312,48 22382,-87 22418,-181 23037,-1076
 #: XXX unvollständiger Eintrag von anonymous: "gut"
 Am Bogen: Qualität?	? -6607,15816 -6510,15804 -6497,15817 -6485,15915 -6476,15944 -6449,15965 -6419,15965 -6330,15941 -6243,15902 -6244,15902 -6224,15876 -6209,15842 -6155,15818
@@ -1743,7 +1743,6 @@ Bansiner Weg: Qualität?	? 1901,1188 1840,1229
 Bansiner Weg - Dahlemer Weg: Durchfahrt für Radfahrer möglich? Qualität?	? 1840,1229 1768,1242
 Darser Str.: Qualität?	? 2333,1003 2239,1104 2199,1179 2166,1256 2129,1336 2077,1460
 Floyd-L.-Parks-Weg: Qualität?	? 2336,1111 2408,1144 2504,1186
-Harry-S.-Truman-Allee: Qualität?	? 2527,1136 2504,1186 2331,1572
 Frank-L.-Howley-Weg: Qualität?	? 2408,1144 2233,1528
 Dollartstr.: Qualität?	? 1854,1677 1884,1671 1970,1708 1981,1713 2140,1782
 Beizerweg: Qualität?	? 16375,1313 16276,1371 16165,1468
@@ -1876,7 +1875,7 @@ Flutstr.: Qualität?	? 18017,5783 17980,5721 17931,5695 17916,5675
 Allmersweg: Qualität?	? 17855,5236 17789,5189
 Greifstr.: Qualität?	? 17906,5170 17854,5131 17780,5086
 Am Grünen Anger: Qualität?	? 17854,5131 17959,4955 18031,4831
-Pilotenstr.: Qualität?	? 18116,4898 18031,4831 17956,4787 17868,4742 17826,4730
+Pilotenstr.: Qualität zwischen Groß-Berliner Damm und Hagedornstr?	? 18116,4898 18031,4831 17956,4787
 Nieberstr.: Qualität?	? 18030,5010 17959,4955 17885,4912 17792,4875 17760,4867
 Engelhardstr.: Qualität?	? 17774,4966 17792,4875 17826,4730 17881,4521
 Pietschkerstr.: Qualität?	? 17770,5108 17729,5091 17652,5082 17601,5090
@@ -1954,8 +1953,6 @@ Goyastr.: Qualität? Einbahnstraße, auch für Radfahrer?	? 12859,16255 12900,16341
 Scharnweberstr. (Weißensee): Qualität? Einbahnstraße, auch für Radfahrer?	? 12797,16285 12841,16366
 Eilveser Str.: Qualität? Einbahnstraße, auch für Radfahrer?	? 12900,16341 12875,16350 12841,16366
 Ettersburger Weg: Qualität? Einbahnstraße, auch für Radfahrer?	? 12875,16350 12907,16432
-Pistoriusplatz: Qualität?	? 13404,16212 13430,16231 13485,16362
-Pistoriusplatz: Qualität?	? 13479,16182 13544,16339
 Paul-Oestreich-Str.: Qualität?	? 13706,16535 13630,16629
 Gäblerstr.: Qualität?	? 13347,16447 13315,16548 13272,16672
 Hedwigstr. (Weißensee): Qualität?	? 13315,16548 13376,16600

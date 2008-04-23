@@ -1515,6 +1515,7 @@ Altvaterstr.: Beton	Q0 -3223,3034 -3225,2902
 (Am Britzer Verbindungskanal): feiner Schotter, OK	Q1 15358,6022 15166,6019
 (Am Britzer Verbindungskanal): Asphalt	Q0 15143,5936 15099,5978 14319,5993
 #: add_fragezeichen: wahrscheinlich wird das noch nicht asphaltierte Teilstück bis 2006-09-01 fertiggestellt:
+#: XXX by: Andreas Marwinski: Eintrag war nicht ganz klar: mittlerweile möglicherweise asphaltiert?
 (Am Britzer Verbindungskanal): holpriger Feldweg	Q3 14319,5993 14212,6000
 (Am Britzer Verbindungskanal): Asphalt	Q0 14212,6000 14112,6009
 #: note: zumindest die westliche Seite sah gut aus, im Gegensatz zum ADFC-Karteneintrag: "mäßig geeignet"
@@ -2008,6 +2009,8 @@ Heidekrautweg: Asphalt	Q0 21982,10874 22053,10911
 #: note: ^^^
 ######################################################################
 #: by: anonymous vvv
+Pistoriusplatz: guter Asphalt	Q0 13404,16212 13430,16231 13485,16362
+Pistoriusplatz: guter Asphalt	Q0 13479,16182 13544,16339
 Tabbertstr.: Asphalt	Q0 17352,7051 17258,6992 17359,6799 17418,6702 17530,6496
 Auersbergstr.: Asphalt	Q0 20745,14852 20743,15039 20809,15046 20811,15175
 Lüdeckestr.: guter Asphalt	Q0 7663,2494 7681,2536 7692,2634 7668,2656 7597,2647
@@ -3869,7 +3872,7 @@ Seelower Str.: Kopfsteinpflaster	Q2 10765,16486 10754,16305 10753,16144 10750,16
 #: by: by: Stephan Fleischer:
 Semliner Str.: Beton	Q0 22196,6957 22240,7122 22272,7242 22303,7361
 #: by: Susanne Zöller:
-Gärtnereiring: Asphalt	Q0 -6675,12632 -6692,12669 -7141,12821 -7237,12848 -7195,13216 -7183,13324
+Gärtnereiring: Asphalt	Q0 -6675,12632 -6692,12669 -7048,12790 -7141,12821 -7237,12848 -7195,13216 -7183,13324
 #: by: Thilo Czerwonka:
 Hennensteig: Kopfsteinpflaster	Q2 15837,156 15723,274 15586,522
 #: by: Hans-Reiner Padberg: vvv
@@ -6285,6 +6288,20 @@ Bleichertstr.: guter Asphalt	Q0 8383,1311 8455,1280 8494,1293 8530,1379 8569,145
 Pfannschmidtstr.: guter Asphalt	Q0 15906,24088 15829,24138 15745,24194 15661,24250 15579,24305 15498,24362 15414,24418
 #: by: Heiko Selber:
 Sohnreystr.: Asphalt	Q0 7052,4911 6854,4931
+#: by: Roland (tre-kronor):
+Harry-S.-Truman-Allee: guter Asphalt	Q0 2527,1136 2504,1186 2331,1572
+#: by: Andra Eisenmann:
+Schweizer Tal: guter Asphalt	Q0 11743,22096 11504,22277 11383,22369 11176,22526
+#: by: Harald Krause:
+Schloßstr. (Hermsdorf): Asphalt mit Schlaglöchern	Q2+ 4058,23342 3953,23401 3632,23563 3587,23584 3563,23609 3461,23741
+#: by: Jörg Weixelbraun:
+Pilotenstr.: Asphalt	Q0 17956,4787 17868,4742 17826,4730
+#: by: Christine Ziegler:
+Millöckerweg: guter Asphalt	Q0 18284,1099 18220,1278
+#: by: Monique Schmoock:
+Richard-Münch-Str.: Verbundsteinpflaster	Q0- -7048,12790 -6961,12967 -6951,13141 -6956,13268
+#: by: Ailine:
+Debussystr.: Beton	Q0 8350,20150 8293,20303 8282,20329 8242,20434
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
@@ -7326,7 +7343,7 @@ Weddigenweg: schlechtes Kopfsteinpflaster	Q3 2701,3064 3026,3058 3174,3052 3318,
 #: corrected_by: srt (from Q1 to Q0)
 Straße am Wald: Asphalt	Q0 21475,7500 21341,7487 21025,7349
 #: by: Robert Wagner [AM]
-Kalvinistenweg: Asphalt	Q0 11693,22482 11807,22395 11785,22290 11718,21978 11659,21611
+Kalvinistenweg: Asphalt	Q0 11693,22482 11807,22395 11785,22290 11743,22096 11718,21978 11659,21611
 #: by: christel lehmann vvv
 Wittenberger Str.: Beton	Q1 21009,18055 21073,18023 21217,17953 21303,17909 21403,17859 21450,17837 21415,17765 21553,17701 21614,17823 21560,17853 21590,17918 21654,18048 21751,18079 21767,18114 21634,18187
 Wittenberger Str. (Einkaufzentrum): Beton	Q1 21614,17823 21647,17889 21719,18017 21751,18079
