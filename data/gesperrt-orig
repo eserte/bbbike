@@ -502,6 +502,10 @@ Auerhahnbalz	1 723,4572 697,4605 668,4653 650,4712 636,4765
 #: by: Marco (mar-bet):
 Schmohlstr.	1 13239,17269 13196,17223 13064,17124
 Flughafen Tempelhof	1 9364,8640 9451,8548 9401,8510 9321,8607
+Zufahrt zu Germaniagarten/Oberlandgarten	1 11240,6350 11205,6358 11200,6372 11211,6384 11244,6379 11272,6374 11278,6359 11266,6347 11240,6350
+Germaniagarten	1 11224,6244 11206,6252 11220,6323 11237,6326 11252,6319 11243,6246 11224,6244
+Oberlandgarten	1 11246,6403 11230,6413 11238,6470 11253,6473 11269,6466 11264,6409 11246,6403
+Alt-Tempelhof	1 9512,6652 9249,6642 9154,6638 9054,6631 8949,6644 9052,6664 9247,6687 9338,6694 9512,6652
 ######################################################################
 #
 # Potsdam
@@ -656,7 +660,6 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 # 
 #: note: Luftbild vvv
-Alt Tempelhof: Mittelstreifen	3nocross 9056,6648 9156,6655 9248,6662
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20269,14256 20241,14016 20210,13776
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20474,14442 20611,14445 20657,14446 20727,14467
 Landsberger Allee: Mittelstreifen	3nocross 20260,15434 20525,15571 20641,15622
@@ -952,6 +955,7 @@ tragen (Treppe)	0:30 20673,7260
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+Schranke	BNP:5 11162,6379
 #: note: Luftbild vvv
 Drängelgitter am Bahnübergang	BNP:3 13552,2204
 Drängelgitter am Bahnübergang	BNP:3 13568,2208

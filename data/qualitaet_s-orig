@@ -8,8 +8,8 @@ Eiswerder (Br¸cken, Straﬂen): schlecht, viel Kopfsteinpflaster	Q3 -2672,15521 -2
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20051011.1220.31015.html
 Eiswerderstr.: Asphalt	Q0 -2883,15571 -2783,15538 -2715,15519 -2672,15521
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7376,-1226 -7498,-1355 -7592,-1402
-Markgrafendamm: Asphalt	Q0 14641,10552 14675,10693 14680,10758 14681,10847
-Markgrafendamm/Hauptstr.: asphaltiert	Q0 14681,10847 14794,10844 14890,10824
+Markgrafendamm: Asphalt	Q0 14641,10552 14675,10693 14680,10758 14674,10811
+Markgrafendamm/Hauptstr.: asphaltiert	Q0 14674,10811 14717,10855 14794,10844 14890,10824
 Hauptstr.: m‰ﬂiges Kopfsteinpflaster	Q2 14890,10824 15034,10795
 Hauptstr.: m‰ﬂiges Kopfsteinpflaster	Q2; 15255,10751 15181,10766 15034,10795
 Hauptstr.: Betonplatten	Q1; 15034,10795 15181,10766 15255,10751
@@ -1904,6 +1904,16 @@ Straﬂe 645: Asphalt	Q0 11416,8283 11415,8113 11450,7921 11472,7899
 Oderstr.: Asphalt	Q0 11472,7899 11498,7750 11515,7654 11536,7533 11553,7437 11562,7393 11601,7362 11615,7284 11606,7260 11593,7237 11607,7145
 Jollenseglerstr.: Verbundsteinpflaster	Q0- 14921,10047 14882,9966
 Am J¸dischen Museum: wassergebundene Decke	Q1 9757,10589 9966,10600
+(Zufahrtstraﬂe zu Oberlandgarten/Germaniagarten): Asphalt	Q0 11148,6381 11162,6379 11200,6372 11205,6358 11240,6350 11266,6347 11278,6359 11339,6351
+(Zufahrtstraﬂe zu Oberlandgarten/Germaniagarten): Asphalt	Q0 11278,6359 11272,6374 11244,6379 11211,6384 11200,6372
+Oberlandgarten: Beton	Q0- 11244,6379 11246,6403 11264,6409 11269,6466 11253,6473 11238,6470 11230,6413 11246,6403
+Germaniagarten: Beton	Q0- 11240,6350 11237,6326 11220,6323 11206,6252 11224,6244 11243,6246 11252,6319 11237,6326
+Rohrbeckstr.: Asphalt	Q0 11339,6341 11432,6325 11479,6319
+Schwanheimer Str.: Asphalt	Q0 11404,6141 11432,6325
+(Holzmannstr. - Nackenheimer Weg): kleinteiliges Kopfsteinpflaster, wellig	Q2+ 11487,6276 11619,6300
+Bambachstr.: Kopfsteinpflaster	Q2 12044,6707 12052,6660
+Edmundstr.: Kopfsteinpflaster	Q2 12981,6689 12949,6830
+R¸belandstr.: Asphalt	Q0 12787,7546 12818,7403
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -4134,9 +4144,12 @@ Culemeyerstr.: asphaltiert	Q0 9847,1274 9808,1264 9734,1235
 Raabestr.: Kopfsteinpflaster	Q2 9762,155 9789,150 9892,188 9984,222 10063,251 10192,296 10321,341 10414,373 10506,405 10602,438
 #: by: Ingrid Beese:
 Teltower Weg: Waldweg	Q1 -739,6838 -813,6755 -439,6255 -359,6181 -288,6101 -174,5941 -107,5880
-#: by: Helm Dirk:
+#: by: Helm Dirk: vvv
 #: confirmed_by: srt
-Holzmannstr.: Kopfsteinpflaster	Q2 11436,6588 11479,6319 11487,6276 11502,6194 11522,6160
+Holzmannstr.: Kopfsteinpflaster	Q2 11436,6588 11479,6319 11487,6276 11502,6194
+#: corrected_by: srt
+Holzmannstr.: Asphalt	Q0 11502,6194 11522,6160
+#: by: ^^^
 #: by: Bernd (webworld):
 Filehner Str.: Asphalt	Q0 22391,6815 22428,6874 22448,6957 22474,7065 22501,7192 22528,7314 22554,7437
 #: by: Olaf (hoehne):

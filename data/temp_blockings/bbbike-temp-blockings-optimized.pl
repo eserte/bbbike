@@ -989,15 +989,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1208988000,
-         'text' => 'B 101 zw. Jüterbog und Hohenahlsdorf Deckenerneuerung Vollsperrung 02.04.2008-23.04.2008 ',
-         'from' => 1207000800,
-         'id' => 1320,
-         'data' => 'userdel	2::inwork -7465,-53204 -7723,-51946 -8071,-50478 -8343,-49645 -8733,-48657 -9039,-47752
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1213480800,
          'text' => 'K 6814 OD Zechlinerhütte ,Luhmer Str. zw. Zechlinerstr.u.B 122 Ersatzneubau Jagowbrücke Vollsperrung 31.03.2008-14.06.2008 ',
