@@ -366,7 +366,7 @@ push @temp_blocking,
          'text' => 'Homburger Str.: Einbahnstraße wegen Baustelle zw. Ahrweile Str. und Assmannshauser Str., Durchfahrt Richtung Osten möglich',
          'from' => 1186170676,
          'id' => 1030,
-         'data' => 'userdel	1::inwork 4628,7470 4403,7498
+         'data' => 'userdel	1::inwork 4599,7474 4403,7498
 ',
          'type' => 'gesperrt'
        },

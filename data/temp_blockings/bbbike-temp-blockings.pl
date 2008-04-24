@@ -3181,7 +3181,7 @@ EOF
        source_id => 'LMS_1129024102795',
        data  => <<EOF,
 userdel	q4; 7713,8600 7709,8770
-userdel	q4; 7716,8048 7716,8356 7712,8560
+userdel	q4; 7716,8048 7716,8356
 EOF
      },
      { from  => 1130792769, # 2005-10-31 22:06
@@ -3762,7 +3762,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003889',
        data  => <<EOF,
-userdel	q4::inwork; 4391,7258 4618,7231 4743,7212
+userdel	q4::inwork; 4391,7258 4571,7239 4743,7212
 userdel	q4::inwork; 4534,7015 4462,7137 4391,7258
 EOF
      },
@@ -8674,7 +8674,7 @@ EOF
        text  => 'Homburger Str.: Einbahnstraße wegen Baustelle zw. Ahrweile Str. und Assmannshauser Str., Durchfahrt Richtung Osten möglich',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 4628,7470 4403,7498
+userdel	1::inwork 4599,7474 4403,7498
 EOF
      },
      { from  => undef, # 
