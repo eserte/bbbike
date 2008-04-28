@@ -531,15 +531,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1209247200,
-         'text' => 'L 026 Landesgrenze - AS Prenzlau-Ost (BAB A11) zw. OA Wollschow u. OE Brüssow Straßen-/Radwegebau Vollsperrung 16.04.2008-26.04.2008 ',
-         'from' => 1208210400,
-         'id' => 1159,
-         'data' => 'userdel	2::inwork 61502,112547 60639,112544 58357,111700 57995,111657
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -700,15 +692,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        undef,
-       {
-         'until' => 1209160800,
-         'text' => 'L 015 Hardenbeck - Fürstenberg OD Lychen, Prenzlauer Str. Kanal- und Straßenbau Vollsperrung 01.02.2008-25.04.2008 ',
-         'from' => 1201734000,
-         'id' => 1245,
-         'data' => 'userdel	q4::inwork 2940,90332 2565,89990 2745,89716
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1054,24 +1038,8 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        undef,
-       {
-         'until' => 1209333600,
-         'text' => 'L 086 Golzow - Damsdorf OD Lehnin Fläming-Frühlingsfest Vollsperrung 27.04.2008-27.04.2008 ',
-         'from' => 1209160800,
-         'id' => 1337,
-         'data' => 'userdel	q4::temp -34063,-10552 -33914,-10466 -33873,-10337
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1209333600,
-         'text' => 'L 088 Emstal - Netzen OD Lehnin Fläming-Frühlingsfest Vollsperrung 27.04.2008-27.04.2008 ',
-         'from' => 1209160800,
-         'id' => 1338,
-         'data' => 'userdel	q4::temp -34063,-10552 -34488,-10578
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        undef,
        {
