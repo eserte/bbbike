@@ -299,8 +299,8 @@ Berlinickestr.	1 5088,5495 5016,5401
 #: by: Lea:
 Florapromenade	1 10211,17432 10321,17453 10311,17764
 Takustr.	1 3321,5212 3209,5214 3079,5411 2953,5606 2909,5674
-Schönerlinder Str.	1 21799,4319 21640,4368
-Mentzelstr.	1 21579,4579 21535,4457
+Schönerlinder Str.	1 21799,4319 21633,4355
+Mentzelstr.	1 21579,4579 21546,4457
 Amalienstr.	1 13814,16759 13589,16965
 Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
 Reiherbeize	1 444,4498 593,4262
@@ -957,6 +957,8 @@ tragen (Treppe)	0:30 20673,7260
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+#: by: rupnor@...
+Drängelgitter	BNP:3 6908,5053
 Schranke	BNP:5 11162,6379
 #: note: Luftbild vvv
 Drängelgitter am Bahnübergang	BNP:3 13552,2204

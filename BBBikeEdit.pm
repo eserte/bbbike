@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.121 2008/03/31 20:53:41 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.121 2008/03/31 20:53:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3352,28 +3352,29 @@ sub show_gps_track_mode {
     $main::customchoosecmd = sub {
 	my($c,$e) = @_;
 	my(@tags) = $c->gettags("current");
+	my $base;
 	for (@tags) {
 	    if (/(.*\.trk)/) {
-		my $base = $1;
-		my $file = find_gpsman_file($base);
-		if (!$file) {
-		    main::status_message(M("Keine Datei zu $base gefunden"));
-		    return;
-		}
-		BBBikeGPS::do_draw_gpsman_data($main::top, $file, -solidcoloring => 1);
-
-		if (defined $remember_map_mode_for_edit_gps_track) {
-		    undef $main::customchoosecmd;
-		    main::set_map_mode($remember_map_mode_for_edit_gps_track);
-		    undef $remember_map_mode_for_edit_gps_track;
-		}
-
+		$base = $1;
 		last;
 	    } elsif (/^(L\d+)$/ && exists $main::str_file{$1} &&
 		     $main::str_file{$1} =~ /(\d+\.trk)/) {
-		#edit_gps_track($1);
-		warn "$_: not yet!!!";
+		$base = $1;
 		last;
+	    }
+	}
+	if ($base) {
+	    my $file = find_gpsman_file($base);
+	    if (!$file) {
+		main::status_message(M("Keine Datei zu $base gefunden"));
+		return;
+	    }
+	    BBBikeGPS::do_draw_gpsman_data($main::top, $file, -solidcoloring => 1);
+
+	    if (defined $remember_map_mode_for_edit_gps_track) {
+		undef $main::customchoosecmd;
+		main::set_map_mode($remember_map_mode_for_edit_gps_track);
+		undef $remember_map_mode_for_edit_gps_track;
 	    }
 	}
     };

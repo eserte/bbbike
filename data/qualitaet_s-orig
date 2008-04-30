@@ -568,11 +568,11 @@ Maienwerderweg: teils Waldweg (OK), teils mäßiger Asphalt	Q1 2239,18225 1549,177
 #: by: Thomas Heuving
 #: note: laut ADFC-Karte mäßig befahrbar
 (Uferweg): gut befahrbarer Waldweg	Q1 -389,17140 -280,17229 -266,17335 -215,17385 -141,17377 61,17495 110,17489 151,17537 187,17663 235,17704 260,17788 258,17880 381,18186 416,18386 448,18476 496,18514 586,18540 680,18631 757,18673 768,18742 970,18919 1006,18972 1122,19036 1189,19018 1200,18969 1369,18958 1457,18969 1490,18950
-Sembritzkistr.: mäßiges Kopfsteinpflaster	Q2 6854,4931 6945,5060 7186,5453 7203,5488 7252,5583 7230,5696
+Sembritzkistr.: mäßiges Kopfsteinpflaster	Q2 6854,4931 6856,4963 6923,5057 7186,5453 7203,5488 7252,5583 7230,5696
 #: by: Benjamin Hersch:
 Sembritzkistr.: Asphalt	Q0 6860,4799 6854,4931
 Clauertstr.: Kopfsteinpflaster	Q2 -1082,2140 -763,1976 -613,1949
-Hanstedter Weg: Kopfsteinpflaster	Q2 6751,4985 6882,5027 6945,5060
+Hanstedter Weg: Kopfsteinpflaster	Q2 6747,5010 6783,5011 6908,5053 6923,5057
 Alboinstr.: Kopfsteinpflaster (auf Fahrbahn)	Q2 8176,6065 8181,6341 8183,6386 8189,6577 8192,6668
 #: note: Luftbild
 Alboinstr.: Asphalt	Q0 8192,6668 8196,6775 8204,6958 8319,7084
@@ -2607,7 +2607,7 @@ Am Springebruch: Verbundsteinpflaster	Q1 6130,23062 6258,22899
 #: by: Patrik Marschalik: vvv
 Worpsweder Str.: gute Qualität	Q0 6191,4923 6203,5138
 Wilseder Str.: Asphalt	Q0 6295,5132 6288,4906
-Immenweg: Asphalt	Q0 6751,4985 6415,5028 6383,4890
+Immenweg: Asphalt	Q0 6744,4983 6415,5028 6383,4890
 Hünensteig: Verbundsteinpflaster	Q1 6415,5028 6393,5028 6396,5125 6406,5223 6108,5253
 #: by: ^^^
 #: by: Jan Voigt: vvv
@@ -3579,7 +3579,7 @@ Knesebeckstr. (Zehlendorf): Kopfsteinpflaster	Q2 1104,2328 1209,2371
 Knesebeckstr. (Zehlendorf): Asphalt	Q0 1209,2371 1320,2418 1392,2606
 #: by: ^^^
 #: by: anna/peters (grieschen): vvv
-Schönerlinder Str.: Asphalt	Q0 21799,4319 21640,4368
+Schönerlinder Str.: Asphalt	Q0 21799,4319 21633,4355
 Wolfshagener Str.: mäßiger Beton	Q1 11233,18981 10905,18671 10860,18650 10825,18634
 #: corrected_by: ??? (teilweise korrigiert, bis zumindest Crusemarkstr.)
 Wolfshagener Str.: Kopfsteinpflaster	Q2 10825,18634 10721,18575 10650,18544 10565,18507 10439,18443
@@ -4132,7 +4132,7 @@ Gotlandstr.: mäßiges Kopfsteinpflaster	Q2 10765,16486 10774,16634 10783,16760
 #: by: Johannes (butt):
 Glaßbrennerstr.: Kopfsteinpflaster	Q2 11543,16207 11632,16373
 #: by: Frida (juliane):
-Grabertstr.: Asphalt	Q0 7091,4760 7058,4890 7052,4911 7030,4937 6945,5060
+Grabertstr.: Asphalt	Q0 7091,4760 7058,4890 7052,4911 7030,4937 6923,5057
 #: by: christian (czorr):
 Tulpenstr.: Kopfsteinpflaster	Q2 3584,4504 3785,4637 3991,4773 4210,4907
 #: by: koschulz:
@@ -4448,7 +4448,7 @@ Glasberger Str.: guter Asphalt	Q0 22132,7148 22172,7384 22190,7475 22244,7609 22
 Petzower Str.: Asphalt	Q0 -6610,1081 -6581,1066 -6515,1011 -6407,987 -6229,1005 -6175,957
 #: by: Carolin (schnattente):
 #: note: ein anonymer Eintrag war zweifelhaft: asphaltiert und Radstreifen?!
-Mahlower Str. (Köpenick): Beton	Q0 21442,3774 21521,3734 21762,3992 21690,4057
+Mahlower Str. (Köpenick): Beton	Q0 21434,3777 21521,3734 21762,3992 21679,4059
 #: by: Thomas Thomas: vvv
 Thiloweg: Beton	Q0 4450,20388 4526,20362 4591,20342
 Thiloweg: Kopfsteinpflaster	Q2 4591,20342 4622,20292
@@ -7595,7 +7595,7 @@ Neukirchstr.: Asphalt	Q1 12562,18483 12014,18771
 #: by: Geske, Anselm [AM]
 Aalemannufer: Asphalt	Q0 -1989,18378 -2053,18375 -2535,18391 -2678,18396 -2759,18400
 #: by: anonymous [AM] vvv
-Westendstr.: Asphalt	Q1 21389,4635 21371,4437
+Westendstr.: Asphalt	Q1 21389,4635 21370,4442
 Theodor-Francke-Str.: Beton	Q1 9221,6179 9341,6163
 Am Tegeler Hafen: Asphalt	Q0 1968,20417 1708,20314 1445,20219
 Ibsenstr.: Kopfsteinpflaster	Q1 10209,16674 10295,16667 10382,16661 10465,16656 10549,16650 10632,16644 10774,16634

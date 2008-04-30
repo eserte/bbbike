@@ -271,8 +271,8 @@ Markelstr.	1 5268,6305 5034,6425
 Berlinickestr.	1 5088,5495 5016,5401
 Florapromenade	1 10211,17432 10321,17453 10311,17764
 Takustr.	1 3321,5212 3209,5214 3079,5411 2953,5606 2909,5674
-Schönerlinder Str.	1 21799,4319 21640,4368
-Mentzelstr.	1 21579,4579 21535,4457
+Schönerlinder Str.	1 21799,4319 21633,4355
+Mentzelstr.	1 21579,4579 21546,4457
 Amalienstr.	1 13814,16759 13589,16965
 Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
 Reiherbeize	1 444,4498 593,4262
@@ -686,8 +686,8 @@ Rodenbergstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3 11268,16113 
 Schönhauser Allee -> Rodenbergstr.: U-Bahnviadukt und Straßenbahn	3 11013,16278 11003,16196 11268,16113
 Flemmingstr. -> Oberspreestr.: Straßenbahntrasse	3 21845,4875 21726,4537 21796,4517
 Oberspreestr. -> Flemmingstr.: Straßenbahntrasse	3 21579,4579 21726,4537 21845,4875
-Westendstr. -> Oberspreestr.: Straßenbahntrasse	3 21371,4437 21389,4635 21332,4655
-Oberspreestr. -> Westendstr.: Straßenbahntrasse	3 21494,4605 21389,4635 21371,4437
+Westendstr. -> Oberspreestr.: Straßenbahntrasse	3 21370,4442 21389,4635 21332,4655
+Oberspreestr. -> Westendstr.: Straßenbahntrasse	3 21494,4605 21389,4635 21370,4442
 Mahlower Str. -> Boddinstr.: Gitter auf Mittelstreifen	3 11773,8231 11920,8252 12096,8300
 Mahlower Str. -> Hermannstr.: Gitter auf Mittelstreifen	3 11773,8231 11920,8252 11892,8372
 Hermannstr. -> Mahlower Str.: Gitter auf Mittelstreifen	3 11931,8206 11920,8252 11773,8231
@@ -1086,6 +1086,7 @@ tragen (Treppe)	0:30:-118 -7418,181
 tragen (Treppe)	0:30:-64 -6933,14317
 tragen (Treppe)	0:30:2 -6934,14291
 tragen (Treppe)	0:30:-237 20673,7260
+Drängelgitter	BNP:3:-108 6908,5053
 Schranke	BNP:5:-81 11162,6379
 Drängelgitter am Bahnübergang	BNP:3:-96 13552,2204
 Drängelgitter am Bahnübergang	BNP:3:-108 13568,2208

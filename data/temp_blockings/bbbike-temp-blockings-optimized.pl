@@ -363,7 +363,7 @@ push @temp_blocking,
        undef,
        {
          'until' => undef,
-         'text' => 'Homburger Str.: Einbahnstraße wegen Baustelle zw. Ahrweile Str. und Assmannshauser Str., Durchfahrt Richtung Osten möglich',
+         'text' => 'Homburger Str.: Einbahnstraße wegen Baustelle zw. Ahrweiler Str. und Assmannshauser Str., Durchfahrt Richtung Osten möglich',
          'from' => 1186170676,
          'id' => 1030,
          'data' => 'userdel	1::inwork 4599,7474 4403,7498
@@ -634,16 +634,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1214863200,
-         'text' => 'L 793 Alfred-Kühne-Str. Ludwigsfelde, Kreuzung Am Birkengrund/ Ludwigsfelder Str. Bau Kreisverkehr Vollsperrung 29.10.2007-30.06.2008 ',
-         'from' => 1193526000,
-         'id' => 1221,
-         'data' => 'userdel	q4::inwork 3257,-10374 2629,-10301 2580,-11069
-userdel	q4::inwork 1867,-10228 2629,-10301
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -801,16 +792,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_007850',
-         'until' => 1209592799,
-         'text' => 'Oranienburger Str. (Mitte) Richtung Friedrichstr. zwischen Linienstr. und Friedrichstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 04.2008)',
-         'from' => 1203374120,
-         'id' => 1286,
-         'data' => 'userdel	q4::inwork; 9281,13374 9215,13392
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1230764400,
          'text' => 'B 001 Brandenburger Str. OD Jeserig Straßenbau Vollsperrung 18.02.2008-31.12.2008 ',
@@ -1049,6 +1031,62 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'from' => 1208892535,
          'id' => 1341,
          'data' => 'userdel	1::inwork 7832,20219 7957,20182 8062,20133 8196,20096
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_008483',
+         'until' => 1210370399,
+         'text' => 'Malchower Weg (Hohenschönhausen) in beiden Richtungen zwischen Degnerstr. und Gembitzer Str. Baustelle, Straße vollständig gesperrt (bis 09. Mai 2008)',
+         'from' => 1209496288,
+         'id' => 1342,
+         'data' => 'userdel	2::inwork 17017,16716 17059,16560
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_008562',
+         'until' => 1216159199,
+         'text' => 'Siemensstr. (Oberschöneweide) Richtung Edisonstr. zwischen Wilhelminenhofstr. und Edisonstr. Baustelle, Fahrbahn auf einen Fahrstreifen verengt bzw. gesperrt, eine Umleitung ist eingerichtet (bis Mitte 07.2008)',
+         'from' => 1209496325,
+         'id' => 1343,
+         'data' => 'userdel	q4::inwork; 17614,6571 17766,6616 17962,6674
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1217541600,
+         'text' => 'B 168 Prötzel - Tiefensee zw. Abzw. Gielsdorf und KG, Höhe Gamensee Deckenerneuerung Vollsperrung 13.05.2008-31.07.2008 ',
+         'from' => 1210543200,
+         'id' => 1344,
+         'data' => 'userdel	2::inwork 41326,28975 40337,28961 40135,28824 39921,28733 39155,29093
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1215900000,
+         'text' => 'K 7318 Blankenburg - Potzlow zw. Potzlow und Seehausen Straßenbauarbeiten Vollsperrung 05.05.2008-12.07.2008 ',
+         'from' => 1209852000,
+         'id' => 1345,
+         'data' => 'userdel	2::inwork 39375,90456 39870,90079 40230,90006 40938,90213 41085,90590
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1211234400,
+         'text' => 'L 030 Friedrichstr. OD Erkner, zw. Kreisverkehr und Beuststr. 16. Heimatfest Vollsperrung 15.05.2008-19.05.2008 ',
+         'from' => 1210716000,
+         'id' => 1346,
+         'data' => 'userdel	q4::temp 34443,1951 34250,2546
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1210197600,
+         'text' => 'L 256 B109 - Werbelow Bahnübergang Nechlin Gleisbauarbeiten Vollsperrung 05.05.2008-07.05.2008 ',
+         'from' => 1209852000,
+         'id' => 1347,
+         'data' => 'userdel	2::inwork 42905,115846 42250,115925 42222,115929
 ',
          'type' => 'gesperrt'
        }

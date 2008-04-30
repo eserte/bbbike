@@ -2634,7 +2634,7 @@ EOF
        text  => 'Glienicker Straße zwischen Grünauer Straße und Nipkowstraße Richtung Adlergestell wegen Bauarbeiten gesperrt bis 15.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 21823,4210 21690,4057 21498,3837 21442,3774 21316,3662 21227,3549 21198,3522 21153,3484 21055,3415 20967,3343 20818,3182
+userdel	q4; 21823,4210 21679,4059 21492,3845 21434,3777 21316,3662 21227,3549 21198,3522 21153,3484 21055,3415 20967,3343 20818,3182
 EOF
      },
      { from  => 1125351382, # 2005-08-29 23:36
@@ -8671,7 +8671,7 @@ EOF
      },
      { from  => 1186170676, # 
        until => undef, # XXX (reported by: thuki@...) (Haus wird gebaut, kann eine Weile dauern)
-       text  => 'Homburger Str.: Einbahnstraße wegen Baustelle zw. Ahrweile Str. und Assmannshauser Str., Durchfahrt Richtung Osten möglich',
+       text  => 'Homburger Str.: Einbahnstraße wegen Baustelle zw. Ahrweiler Str. und Assmannshauser Str., Durchfahrt Richtung Osten möglich',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1::inwork 4599,7474 4403,7498
@@ -10293,7 +10293,7 @@ userdel	q4::inwork 22507,95722 22233,95712
 EOF
      },
      { from  => 1193526000, # 2007-10-28 01:00
-       until => 1214863200, # 2008-07-01 00:00
+       until => 1209496734, # 2008-07-01 00:00 1214863200
        text  => 'L 793 Alfred-Kühne-Str. Ludwigsfelde, Kreuzung Am Birkengrund/ Ludwigsfelder Str. Bau Kreisverkehr Vollsperrung 29.10.2007-30.06.2008 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -10839,7 +10839,7 @@ userdel	1::inwork 24658,11293 24735,11021 24637,10807
 EOF
      },
      { from  => 1203374120, # 2008-02-18 23:35
-       until => 1209592799, # 2008-04-30 23:59
+       until => 1209496368, # 2008-04-30 23:59 1209592799
        text  => 'Oranienburger Str. (Mitte) Richtung Friedrichstr. zwischen Linienstr. und Friedrichstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 04.2008)',
        type  => 'handicap',
        source_id => 'IM_007850',
@@ -11296,6 +11296,56 @@ EOF
        source_id => 'IM_008423',
        data  => <<EOF,
 userdel	1::inwork 7832,20219 7957,20182 8062,20133 8196,20096
+EOF
+     },
+     { from  => 1209496288, # 2008-04-29 21:11
+       until => 1210370399, # 2008-05-09 23:59
+       text  => 'Malchower Weg (Hohenschönhausen) in beiden Richtungen zwischen Degnerstr. und Gembitzer Str. Baustelle, Straße vollständig gesperrt (bis 09. Mai 2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_008483',
+       data  => <<EOF,
+userdel	2::inwork 17017,16716 17059,16560
+EOF
+     },
+     { from  => 1209496325, # 2008-04-29 21:12
+       until => 1216159199, # 2008-07-15 23:59
+       text  => 'Siemensstr. (Oberschöneweide) Richtung Edisonstr. zwischen Wilhelminenhofstr. und Edisonstr. Baustelle, Fahrbahn auf einen Fahrstreifen verengt bzw. gesperrt, eine Umleitung ist eingerichtet (bis Mitte 07.2008)',
+       type  => 'handicap',
+       source_id => 'IM_008562',
+       data  => <<EOF,
+userdel	q4::inwork; 17614,6571 17766,6616 17962,6674
+EOF
+     },
+     { from  => 1210543200, # 2008-05-12 00:00
+       until => 1217541600, # 2008-08-01 00:00
+       text  => 'B 168 Prötzel - Tiefensee zw. Abzw. Gielsdorf und KG, Höhe Gamensee Deckenerneuerung Vollsperrung 13.05.2008-31.07.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 41326,28975 40337,28961 40135,28824 39921,28733 39155,29093
+EOF
+     },
+     { from  => 1209852000, # 2008-05-04 00:00
+       until => 1215900000, # 2008-07-13 00:00
+       text  => 'K 7318 Blankenburg - Potzlow zw. Potzlow und Seehausen Straßenbauarbeiten Vollsperrung 05.05.2008-12.07.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 39375,90456 39870,90079 40230,90006 40938,90213 41085,90590
+EOF
+     },
+     { from  => 1210716000, # 2008-05-14 00:00
+       until => 1211234400, # 2008-05-20 00:00
+       text  => 'L 030 Friedrichstr. OD Erkner, zw. Kreisverkehr und Beuststr. 16. Heimatfest Vollsperrung 15.05.2008-19.05.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 34443,1951 34250,2546
+EOF
+     },
+     { from  => 1209852000, # 2008-05-04 00:00
+       until => 1210197600, # 2008-05-08 00:00
+       text  => 'L 256 B109 - Werbelow Bahnübergang Nechlin Gleisbauarbeiten Vollsperrung 05.05.2008-07.05.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 42905,115846 42250,115925 42222,115929
 EOF
      },
     );

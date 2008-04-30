@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman2bbd.pl,v 2.12 2007/10/14 20:20:25 eserte Exp $
+# $Id: gpsman2bbd.pl,v 2.12 2007/10/14 20:20:25 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -245,11 +245,13 @@ EOF
 
 		$brand = $gps->TrackAttrs->{"srt:brand"};
 		if (!$brand) {
-		    if ($brand{$vehicle}) {
+		    if (defined $vehicle && $brand{$vehicle}) {
 			$brand = $brand{$vehicle}; # remember from last
 		    }
 		} else {
-		    $brand{$vehicle} = $brand;
+		    if (defined $vehicle and defined $brand) {
+			$brand{$vehicle} = $brand;
+		    }
 		}
 
 		if ($gps->TrackAttrs->{"srt:event"}) {
