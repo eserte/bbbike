@@ -1318,7 +1318,7 @@ EOF
        text  => 'Johannisthaler Chaussee Zwischen Rudower Straße und Königsheideweg beidseitig Brückenarbeiten, gesperrt ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 15573,4122 15594,4152 15618,4189
+userdel	2 15585,4139 15594,4152 15618,4189
 userdel	2 15669,4266 15640,4222 15618,4189
 EOF
      },
@@ -8190,7 +8190,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005511',
        data  => <<EOF,
-userdel	2::inwork 16354,-494 16515,31
+userdel	2::inwork 16373,-496 16515,31
 EOF
      },
      { from  => 1179698400, # 2007-05-21 00:00

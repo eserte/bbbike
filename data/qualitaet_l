@@ -54,7 +54,6 @@ Kremmen - Fehrbellin: OK	Q0 -16160,38503 -16858,37991 -17114,37670 -18768,37659 
 Fehrbellin - Neuruppin: OK	Q0 -33790,44573 -33807,44932 -33506,45278 -32778,47235 -33036,47338 -32995,48857 -33107,50053 -33002,50632 -32597,51254 -31915,52627 -31766,53120 -31767,53525 -31706,53974 -31532,54747 -31514,55283
 Neuruppin - Wuthenow - Gnewikow - Wustrau-Altfriesack: teilweise gut, teilweise mäßiges Kopfsteinpflaster	Q2 -29902,57202 -29816,57117 -29490,56714 -29243,56187 -29198,55801 -29109,55374 -28677,55014 -28288,54212 -28911,54055 -29276,53427 -29210,52915 -28736,52387 -28368,51517 -28001,50966 -27421,50349 -27196,50015 -27035,49829 -25968,49631 -25719,49500 -25060,48842
 Kleinziethen: Kopfsteinpflaster	Q2 13348,-3283 13506,-2809 13540,-2681 13537,-2608
-Großziethen: Kopfsteinpflaster nur Richtung Süden	Q2; 12984,1011 13090,205 13225,-681 13309,-1268
 Brusendorf: schlechtes Kopfsteinpflaster	Q3 18213,-10597 17474,-10614
 Mittenwalde: relativ glattes Kopfsteinpflaster	Q2 19893,-15274 19878,-15336 19943,-15530 20056,-15810 20238,-16009
 Jühnsdorf: Asphalt	Q0 9792,-12090 9345,-11425 9472,-11297 9578,-10891
@@ -64,7 +63,8 @@ Jühnsdorf - Mahlow: mäßiges Kopfsteinpflaster, Richtung Süden besser	Q2 10115,-8
 Löwenbruch: Kopfsteinpflaster	Q2 5044,-12402 5002,-12551 4555,-12852
 Diedersdorf: Pflastersteine, OK	Q1 7558,-7093 7390,-7184 7378,-7406 7309,-7482 7506,-7471
 Diedersdorf: Kopfsteinpflaster, OK	Q1 7506,-7471 7981,-7165
-Arcostr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 10323,-3150 10242,-3345 10184,-3499 10088,-3740
+Arcostr.: Asphalt	Q0 10323,-3150 10309,-3191
+Arcostr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 10309,-3191 10242,-3345 10184,-3499 10088,-3740
 Arcostr.: Asphalt	Q0 10088,-3740 10070,-3790 9971,-3985
 Groß-Kienitz: schlechtes Kopfsteinpflaster	Q3 14702,-8736 14875,-9062 15109,-8950
 Am Fängersee: Feld- und Waldwege, größtenteils gut befahrbar (20 km/h), einige Stellen mit tiefen Sand	Q2 38908,19853 38889,20172 39128,20574 39130,20957 39431,21380 39367,21528 39251,21678 39439,21968 39372,22521
@@ -144,7 +144,7 @@ KW: Kopfsteinpflaster	Q2 26177,-11648 25859,-11559 25618,-11642
 Ragow: Asphalt	Q0 20843,-12781 20528,-12859 20408,-13031 20134,-13333 19800,-13610 19494,-13746
 Ragow (Köpenicker Str.): Asphalt	Q0 20127,-12521 20408,-13031
 Trebbiner Str.: Kopfsteinpflaster, aber glatter Radweg vorhanden	Q2 11186,-5297 11291,-4485
-Trebbiner Str.: mäßiges Kopfsteinpflaster	Q2 11377,-4015 11684,-3361
+Trebbiner Str.: mäßiges Kopfsteinpflaster	Q2 11377,-4015 11670,-3380
 Schöneicher Str.: Kopfsteinpflaster	Q2 30587,8490 30700,8462 31221,8312
 Schöneiche: Kopfsteinpflaster	Q2 30587,8490 30409,8500 30290,8562
 Neuenhagen: Kopfsteinpflaster	Q2 30815,13170 30975,12918 31146,12747 31059,12471 31037,12174
@@ -1187,7 +1187,9 @@ Bahnhofstr.: Kopfsteinpflaster	Q2 -4032,-1937 -3917,-2146 -3895,-2189 -3650,-260
 An der Parforceheide: gutes Verbundsteinpflaster	Q0 -7421,-2487 -7421,-2428 -7510,-2276 -7610,-2245 -7651,-2262 -7708,-2437
 Postenweg Parforceheide: Asphalt mit groben Fugen	Q1 -7610,-2245 -7798,-1990 -7800,-1956
 Postenweg Parforceheide: feiner Schotter	Q2 -7800,-1956 -7821,-1890
-Mauerweg: sehr guter Asphalt	Q0 3232,803 3045,707 2789,482 1993,-275 1926,-301 1510,-423 1473,-420
+Mauerweg: sehr guter Asphalt	Q0 3232,803 3045,707 2795,471 2275,-13
+Mauerweg: dauerhafte Überschwemmung, Umfahrung über einen sehr holprigen Weg	Q3 2275,-13 2166,-131
+Mauerweg: sehr guter Asphalt	Q0 2166,-131 1993,-275 1929,-308 1659,-401 1510,-423 1473,-420
 Berliner Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 1453,-746 1378,-676 1268,-618
 Breite Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 1268,-618 1118,-548
 Marktplatz: mäßiges bis schlechtes Kopfsteinpflaster	Q3 1118,-548 1132,-498
@@ -1398,10 +1400,10 @@ Schulweg: Verbundsteinpflaster	Q1 28363,-19964 28398,-19911 28421,-19768
 Pätz (Groß Köriser Str.): Verbundsteinpflaster	Q1 28540,-19744 28514,-20071 28505,-20243
 Pätz (Groß Köriser Str.): Asphalt	Q0 28540,-19744 28615,-19431
 Zeesen - Königs Wusterhausen: holpriger Waldweg, teilweise sehr sandig	Q3 26889,-12953 26825,-12765 26797,-12589 26814,-12271
-Postenweg Schönefeld: guter Beton	Q0 17234,-685 16191,-975 15796,-1112 15801,-1168
+Postenweg Schönefeld: guter Beton	Q0 17234,-685 16205,-969 15796,-1112 15801,-1168
 Schönefelder Weg: Feldweg	Q2 15118,-970 15801,-1168 16074,-1240
-Rudower Str.: Kleinteiliges, unebenes Kopfsteinpflaster	Q2; 16191,-975 16074,-1240 15933,-1592 15289,-2873
-Rudower Str.: Kopfsteinpflaster, aber schmale asphaltierte Bankette	Q0; 15289,-2873 15933,-1592 16074,-1240 16191,-975
+Rudower Str.: Kleinteiliges, unebenes Kopfsteinpflaster	Q2; 16205,-969 16074,-1240 15933,-1592 15289,-2873
+Rudower Str.: Kopfsteinpflaster, aber schmale asphaltierte Bankette	Q0; 15289,-2873 15933,-1592 16074,-1240 16205,-969
 Rudower Str.: Asphalt	Q0 15289,-2873 14977,-3505 14878,-3602
 Selchow - Kiekebusch: zweispuriger Plattenweg, teilweise mit kleinen tiefen Löchern	Q1 15490,-4709 15539,-4658 15685,-4645 15964,-4817 16261,-4683 17742,-5179 18411,-5428 18764,-5531
 Diepensee - Rotberg: Asphalt	Q0 18618,-4248 18411,-5428 18301,-6019 18037,-6627 18005,-6959
@@ -1575,6 +1577,10 @@ Werner-Seelenbinder-Str.: Beton	Q0 -12927,-1576 -13092,-1538
 (Am Alten Markt - Joliot-Curie-Str.): Verbundsteinpflaster	Q1 -12614,-1471 -12582,-1460
 (Wohngebiet Joliot-Curie-Str.): Asphalt	Q0 -12500,-1437 -12537,-1447 -12562,-1367 -12606,-1379 -12582,-1460 -12537,-1447
 Am Kanal, Nebenstraße: Asphalt	Q0 -12542,-1305 -12311,-1238
+August-Bebel-Str.: Kopfsteinpflaster	Q2 -8463,-1549 -8485,-1445
+Paul-Gerhard-Str.: Asphalt	Q0 3232,803 3271,745 3417,524
+Alte B101-Trasse: feiner Schotter	Q1 7098,-523 6959,-743
+(Postenweg): guter Beton	Q0 17234,-685 17806,-561 18177,-449
 Finkenschlag (Ladeburg): gut geeignet	Q0 22106,32178 22527,32200
 Zepernicker Landweg: schlechter Asphalt, extrem löchrig	Q2 22106,32178 22500,32911 22512,33312
 Max-Eyth-Allee: guter Asphalt	Q0 -16295,2475 -16288,2512 -16267,2916 -16196,2987 -16128,3052 -16089,3090
@@ -1592,8 +1598,8 @@ Bodelschwinghstr. (Lobetal): Asphalt	Q0 23688,35880 23232,36004 22760,36135 2240
 Asta-Nielsen-Str.: Asphalt	Q0 -7227,-4341 -7175,-4264 -7207,-4223 -7192,-4166
 Zum Schloss Hubertusstock: asphaltiert	Q0 27359,56787 27142,57108 27080,57520
 Schloss Hubertusstock - Joachimsthal: Waldweg	Q2 27080,57520 27472,58075 28062,58011 29644,59192 30784,60950
-Marlene-Dietrich-Allee: guter Asphalt	Q0 -8423,-2038 -8548,-2035 -8721,-2041 -8791,-2071 -8810,-2131 -8802,-2239 -8793,-2315
-Hannemannstr. (Teltow): Asphalt	Q0 2789,482 2947,220 3137,-67 3315,-360
+Marlene-Dietrich-Allee: guter Asphalt	Q0 -8423,-2038 -8548,-2035 -8721,-2041 -8791,-2071 -8810,-2131 -8818,-2213 -8793,-2315
+Hannemannstr. (Teltow): Asphalt	Q0 2795,471 2947,220 3137,-67 3315,-360
 Handelshof (Potsdam): Asphalt	Q0 -9166,-5603 -9550,-5383
 Ahornweg (Großziethen): Beton	Q0 13225,-681 13080,-719 13042,-615
 Prenden - Sophienstädt - Marienwerder: Asphalt	Q0 20100,42837 20306,43093 20418,43368 20943,43393 21685,44057 21882,44123 22271,44578 23018,45612 23062,46171 22947,46423 22712,46718 22781,47737 23009,48053 23056,48378 22912,48759
@@ -1610,8 +1616,8 @@ Feuerbachstr.: geteert, aber mit Straßenschäden	Q1 -14362,-1323 -14243,-1371 -14
 Damaschkeweg: guter Asphalt	Q0 -11022,-3662 -11181,-3800 -11393,-3868
 Grenzstr. (Eichwalde): holprige Straße	Q2 26337,-3101 26186,-2832 25958,-2455
 Mühlenweg (Zühlsdorf): fester Sandweg	Q2 8800,36186 8752,36262 8575,36292 8325,36399 8001,36643 7957,36668 7837,36726 7732,36864 7670,36910 7529,36946
-An der Stammbahn: Asphalt	Q0 -1515,1380 -1689,1326 -2965,668 -3165,565
-Grenzweg zwischen Kleinmachnow/Düppel und Europarc Dreilinden: mäßiger Weg	Q2 -1525,1453 -3348,592 -3440,254 -3663,-91
+An der Stammbahn: Asphalt	Q0 -1527,1375 -1689,1326 -2965,668 -3165,565
+Grenzweg zwischen Kleinmachnow/Düppel und Europarc Dreilinden: mäßiger Weg	Q2 -1544,1448 -3348,592 -3440,254 -3663,-91
 Zepernick: Asphalt	Q0 20472,28570 20017,28297 19475,27877 19364,27415
 Wulkow - Hermersdorf: grobes Kopfsteinpflaster und Sand	Q3 66523,19497 66171,19651 65424,19367 64570,19169 63456,18965 63286,18968
 An der Sternwarte (Babelsberg): mäßiger Asphalt	Q1 -9648,-524 -9721,-554 -9773,-601 -9983,-621
@@ -1688,14 +1694,17 @@ Stadtpark Prenzlau: asphaltierter Parkweg	Q0 39928,101357 39884,101572 39873,101
 Prenzlau, Friedhofstr.: Asphalt	Q0 39806,101019 39856,100762 39918,100434
 Prenzlau, Bergstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 39856,100762 39671,100750
 Gransee: asphaltiert	Q0 -6422,66247 -6557,66279 -7071,66471
-Virchowstr.: Asphalt	Q0 -8559,-1378 -8573,-1296 -8857,-1000 -8928,-912 -8993,-865 -9085,-829 -9107,-832 -9146,-867
-Robert-Koch-Str.: Asphalt (Kopfsteine kommen hervor)	Q1 -9062,-1293 -8903,-1089 -8862,-1037 -8857,-1000
+Virchowstr.: Asphalt	Q0 -8559,-1378 -8595,-1284 -8756,-1056 -8884,-949 -8947,-867 -9085,-829 -9107,-832 -9146,-867
+Robert-Koch-Str.: Asphalt (Kopfsteine kommen hervor)	Q1 -9062,-1293 -8903,-1089 -8862,-1037 -8884,-949
 August-Bier-Str.: Asphalt	Q0 -9170,-1171 -9024,-984
 Sauerbruchstr.: Asphalt	Q0 -9146,-867 -9270,-1028 -9350,-1128
 Behringstr.: Asphalt	Q0 -9419,-575 -9445,-765
 Johann-Strauß-Platz: Asphalt	Q0 -9410,-815 -9318,-714
-(Mauerweg am Griebnitzsee): Asphalt mit Fugen	Q2 -9365,-610 -9337,-668 -9239,-739 -9103,-813 -8934,-871 -8846,-993 -8693,-1115 -8646,-1206 -8449,-1389 -8385,-1451
-(Mauerweg am Griebnitzsee): wassergebundene Decke	Q1 -8385,-1451 -8250,-1503 -8128,-1490
+(Mauerweg am Griebnitzsee): Asphalt mit Fugen, teilweise wassergebundene Decke	Q1 -9365,-610 -9337,-668 -9239,-739 -9103,-813 -8913,-813 -8813,-933 -8700,-997 -8625,-1176 -8503,-1278 -8413,-1398 -8397,-1422
+(Mauerweg am Griebnitzsee): wassergebundene Decke	Q1 -8397,-1422 -8306,-1454 -8151,-1470 -8087,-1453
+(Mauerweg am Griebnitzsee): Asphalt mit Fugen	Q1 -8087,-1453 -7984,-1415 -7805,-1260
+(Mauerweg am Griebnitzsee): wassergebundene Decke	Q1 -7805,-1260 -7618,-1140 -7518,-1175
+Stubenrauchstr.: Asphalt	Q0 -7895,-1464 -7518,-1175
 Rudolf-Breitscheid-Str. [Bahnhofsvorfahrt]: Asphalt	Q0 -8112,-1512 -8100,-1575 -8023,-1565 -8038,-1495
 Baumgartenbrück (Geltow): rauer Asphalt mit Löchern 	Q2 -18025,-6370 -18410,-6286 -18966,-5945
 Russische Kolonie (Potsdam): Kopfsteinpflaster	Q2 -13068,-115 -13091,-8
