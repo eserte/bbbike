@@ -1048,6 +1048,15 @@ push @temp_blocking,
          'data' => 'userdel	2::inwork 42905,115846 42250,115925 42222,115929
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1211752800,
+         'text' => 'L 055 Calau - Boblitz Bahnübergang in der OD Bischdorf Instandsetzungsarbeiten Vollsperrung 23.05.2008-25.05.2008 ',
+         'from' => 1211407200,
+         'id' => 1348,
+         'data' => 'userdel	2::inwork 49836,-67419 50143,-67035 50318,-65825
+',
+         'type' => 'gesperrt'
        }
      
 );

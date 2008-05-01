@@ -696,8 +696,10 @@ $self->{UseFlags} = 0; # XXX don't use this because of missing transparency info
 		}
 	    }
 	    $im->set_fill_color(@$white);
+$im->{'pdf'}->add(" 0.5 ca");
 	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
 	    $im->fill;
+$im->{'pdf'}->add(" 1.0 ca");
 	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
 	    $im->stroke;
 	    $im->set_fill_color(@$black);

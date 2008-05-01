@@ -11348,4 +11348,12 @@ EOF
 userdel	2::inwork 42905,115846 42250,115925 42222,115929
 EOF
      },
+     { from  => 1211407200, # 2008-05-22 00:00
+       until => 1211752800, # 2008-05-26 00:00
+       text  => 'L 055 Calau - Boblitz Bahnübergang in der OD Bischdorf Instandsetzungsarbeiten Vollsperrung 23.05.2008-25.05.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 49836,-67419 50143,-67035 50318,-65825
+EOF
+     },
     );

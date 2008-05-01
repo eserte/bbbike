@@ -3304,8 +3304,20 @@ innerhalb der PageBBox befindet. Falls kein Platz ist, werden zunächst
 die Himmerlsrichtungen versucht und dann per Verbindungslinie eine
 entferntere Position. Kann man Texte auch rotieren? (Ja, mit
 L<http://sourceforge.net/tracker/index.php?func=detail&aid=1857255&group_id=2464&atid=302464>!)
+
 Besser: feststellen, wo sich die Route befindet (Pseudo-BBox dafür
-erstellen?) und Überlappungen der Route somit vermeiden.
+erstellen?) und Überlappungen der Route somit vermeiden. Der
+Algorithmus für Pseudo-Boxes könnte so aussehen: Box um einen
+Linienabschnitt zeichnen. Falls der Linienabschnitt genau horizontal
+oder vertikal ist, wird die Breite/Höhe der Box auf 1 gesetzt. Jetzt
+muss es eine Entscheidungsfunktion geben, die ausgibt, ob die Box
+klein genug ist (Area darf nicht n% größer als die minimal mögliche
+Area sein?). Falls nicht, wird die Linie in der Mitte geteilt und der
+Prozess wird wiederholt.
+
+Weiterhin sollten Labels immer von Osten nach Westen positioniert
+werden, jedenfalls bei links-nach-rechts-Schreibweise. Dadurch wird
+die Wahrscheinlichkeit einer Kollision niedriger gehalten, glaube ich.
 
 Oder ganz alternativ: wie sieht die PDF-Unterstützung des Mapservers
 aus?
@@ -3382,6 +3394,60 @@ sollte angeben, welche Komprimierer man bevorzugt. Falls alles gut
 läuft (Testsuite mit vielen automatisch generierten PDFs und
 anschließendem Aufruf von xpdf/acroread?) kann ich es auf radzeit
 aktivieren.
+
+=item * (H3) (feature)
+
+Ein User hat sich halbtransparente Labels gewünscht, damit man die
+Route immer sehen kann.
+
+Folgendes habe ich durch manuelles Manipulieren einer erzeugten
+PDF-Datei geschafft. Zuerst GStates für halbtransparent und opak
+erzeugen:
+
+    4711 0 obj
+    << /Type /ExtGState /ca 0.6 /CA 0.6 >>
+    endobj
+    4712 0 obj
+    << /Type /ExtGState /ca 1 /CA 1 >>
+    endobj
+
+Diese müssen nun referenziert werden. Aus dem Objekt:
+
+    3 0 obj
+    <</XObject <</Image5 6 0 R
+    /Image4 7 0 R
+    /Image1 8 0 R
+    >>
+    /Font <</F2 9 0 R
+    /F1 10 0 R
+    >>
+    /ProcSet [/PDF /Text]
+    >>
+    endobj
+    
+habe ich das Objekt:
+
+    3 0 obj
+    <</ExtGState<</GS3 4711 0 R /GS1 4712 0 R>>
+    /XObject <</Image5 6 0 R
+    /Image4 7 0 R
+    /Image1 8 0 R
+    >>
+    /Font <</F2 9 0 R
+    /F1 10 0 R
+    >>
+    /ProcSet [/PDF /Text]
+    >>
+    endobj
+
+gemacht. Nun stehen /GS3 und /GS1 zur Verfügung. Verwendet werden sie,
+um den Rechteckhintergrund halbtransparent zu zeichnen:
+
+    42.9182584753054 79.8199105145409 55.12 10 re
+    /GS3 gs f /GS1 gs
+
+Leider scheint es nicht möglich zu sein, dass mit PDF::Create
+hinzukriegen. Und auch Monkeypatching scheint kompliziert zu sein.
 
 =back
 

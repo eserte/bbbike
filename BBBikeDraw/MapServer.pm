@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.42 2008/02/20 18:37:10 eserte Exp $
+# $Id: MapServer.pm,v 1.42 2008/02/20 18:37:10 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -78,11 +78,11 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.42 $ =~ /(\d+)\.(\d+)/);
 	my $self = shift->vran_default;
 	require Config;
 	if ($Config::Config{archname} =~ /amd64/) {
-	    warn_once "Use latest CVS version (amd64)...";
 	    $self->MapserverBinDir("/usr/local/src/work/mapserver-amd64");
+	    warn_once "Use latest subversion version (amd64) from " . $self->MapserverBinDir . " ...";
 	} else {
-	    warn_once "Use latest CVS version...";
 	    $self->MapserverBinDir("/usr/local/src/work/mapserver");
+	    warn_once "Use latest subversion version from " . $self->MapserverBinDir . " ...";
 	}
 	## use mapserver from ports
 	#$self->MapserverBinDir("/usr/local/bin");
