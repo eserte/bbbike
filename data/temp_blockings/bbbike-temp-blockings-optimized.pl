@@ -521,29 +521,13 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1209592800,
-         'text' => 'K 6422 Eggersdorfer Str. Petershagen, zw.Trift- u. Lessingstr.,Bahn Straßenbau Vollsperrung 12.09.2007-30.04.2008 ',
-         'from' => 1189461600,
-         'id' => 1157,
-         'data' => 'userdel	2::inwork 36666,14172 36677,14087 36654,13977 35900,13643
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
        undef,
        undef,
-       {
-         'until' => 1209592800,
-         'text' => 'L 035 Dr. W.-Külz-Str. OL Fü.-walde zw. Sembritzki- u. Eisenbahnstr. Abwasserkanalbau Vollsperrung 03.09.2007-30.04.2008 ',
-         'from' => 1188684000,
-         'id' => 1163,
-         'data' => 'userdel	q4::inwork 55447,-4585 55447,-4432 55447,-4247
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        {
          'until' => 1603753200,
@@ -748,28 +732,11 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_007543',
-         'until' => 1209592800,
-         'text' => 'Sterndamm (Treptow) Richtung Schöneweide zwischen J.-Werner.Str und Lindhorstweg Baustelle, Fahrtrichtung gesperrt (bis April 2008)',
-         'from' => 1199891609,
-         'id' => 1277,
-         'data' => 'userdel	1::inwork 17053,3971 17108,4049 17244,4242 17261,4267 17290,4308 17387,4446
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
-       {
-         'until' => 1209592800,
-         'text' => 'L 030 Börnicker Chaussee OD Bernau, zw. Gernotstr. und Schönfelder Weg Straßenbau Vollsperrung 20.12.2007-30.04.2008 ',
-         'from' => 1198018800,
-         'id' => 1281,
-         'data' => 'userdel	q4::inwork 23113,30450 23368,30409 23631,30262
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_006024',
          'until' => 1214863200,
@@ -802,15 +769,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1209592800,
-         'text' => 'B 103 Kyritz - Pritzwalk OD Buchholz, zw. Eggersdorfer Damm und OA Kanal- und Straßenbau Vollsperrung 19.02.2008-30.04.2008 ',
-         'from' => 1203289200,
-         'id' => 1288,
-         'data' => 'userdel	q4::inwork -73678,77438 -73946,77861 -74038,78181
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1212184800,
          'text' => 'B 168 Prötzel - Tiefensee zw. Prötzel und Kreisgrenze Deckenerneuerung Vollsperrung 03.03.2008-30.05.2008 ',
