@@ -2720,12 +2720,17 @@ noch unklar: entweder bereite ich pro Radroute eine .bbr-Datei vor
 bbbike.cgi bei, auch mit einem POST von Koordinaten umzugehen. Dann
 müsste ich aber Javascript ins Spiel bringen, weil das submit entweder
 auf mapserver oder auf bbbike gehen müsste (ein paar hidden-Variablen
-umsetzen). Oder ich doppele alle Formulare, aber das wäre Overkill
-(sind jetzt schon >100kB). 
+umsetzen, und sicherheitshalber den zweiten Submit-Button in <script>
+einschließen, damit nicht javascript-fähige Browser nur einen Button
+sehen). Oder ich doppele alle Formulare, aber das wäre Overkill (sind
+jetzt schon >100kB).
 
 Weitere Probleme:
 
 Wie behandelt man unterbrochene Routen?
+
+Wie behandelt man Abschnitte, in denen die Hin- und Rückstrecke nicht
+gleich ist (Beispiel: E<quot>CS;E<quot>, z.B. Großer Stern)?
 
 Wie behandelt man Alternativen?
 

@@ -462,7 +462,7 @@ push @temp_blocking,
          'text' => 'L 171 Schönfließer Str. Brücke über die DB in der OD Hohen Neuendorf Brückenersatzneubau Vollsperrung 06.08.2007-09.05.2008 ',
          'from' => 1186264800,
          'id' => 1109,
-         'data' => 'userdel	2::inwork 2353,29078 2071,29185
+         'data' => 'userdel	2::inwork 2033,29198 2176,29143
 ',
          'type' => 'gesperrt'
        },
@@ -958,15 +958,7 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1209679200,
-         'text' => 'B 112 Frankfurter Str., Bahnhofstr. OD Neuzelle 15. Bibulibustag Vollsperrung 01.05.2008-01.05.2008 ',
-         'from' => 1209506400,
-         'id' => 1332,
-         'data' => 'userdel	q4::temp 96003,-33078 96017,-33547 96014,-33803
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1210370400,
          'text' => 'K 6206 B101, Elsterwerda - Stolzenhain OD Elsterwerda, Höhe Abzw. Kotschka Straßenbauarbeiten Vollsperrung 10.04.2008-09.05.2008 ',

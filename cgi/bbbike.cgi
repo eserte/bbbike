@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.13 2008/04/19 22:43:15 eserte Exp $
+# $Id: bbbike.cgi,v 9.13 2008/04/19 22:43:15 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -1118,6 +1118,7 @@ if (defined $q->param('begin')) {
 } elsif (defined $q->param('localroutefile') &&
 	 defined $local_route_dir) {
     (my $local_route_file = $q->param('localroutefile')) =~ s/[^A-Za-z0-9._-]//g;
+    die "No \$local_route_dir specified in bbbike.cgi.config" if !defined $local_route_dir;
     $local_route_file = "$local_route_dir/$local_route_file";
     open(FH, $local_route_file)
 	or die "Can't open $local_route_file: $!";

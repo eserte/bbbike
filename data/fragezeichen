@@ -189,8 +189,8 @@ Mauerweg in Schildow: Qualität? Wegführung? einzelne Straßen benennen?	? 7653,24
 Langohrzeile: Qualität?	? 3462,24702 3490,24846 3490,24887
 Mauerweg in Frohnau: Verlauf weitgehend unklar, Qualität?	? 3490,24887 3603,24968 3306,25259 3200,25429 3211,25484 3273,25516 3473,25618 3662,25618 3615,25890 3428,25979 3362,26046 3390,26225 3448,26315 3540,26465 3450,26503 3403,26668
 Mauerweg in Frohnau: laut "Berliner Umland" teilweise gut geeignet, teilweise witterungsabhängige Strecken	? 3403,26668 3081,27368 3706,27812 3512,28053 3118,27972
-Mauerweg in Frohnau (Utestr.): laut "Berliner Umland" teilweise gut geeignet, teilweise witterungsabhängige Strecken	? 3118,27972 2969,28021 2576,28008 2381,28057 2340,28043 2162,28077
-Mauerweg in Frohnau: laut "Berliner Umland" teilweise gut geeignet, teilweise witterungsabhängige Strecken	? 2162,28077 1937,28118 1871,28131 1741,27539
+Mauerweg in Frohnau (Utestr.): laut "Berliner Umland" teilweise gut geeignet, teilweise witterungsabhängige Strecken	? 3118,27972 2969,28021 2576,28008 2381,28057 2340,28043 2159,28096
+Mauerweg in Frohnau: laut "Berliner Umland" teilweise gut geeignet, teilweise witterungsabhängige Strecken	? 2159,28096 1937,28118 1871,28131 1741,27539
 Rehbrücke - Langerwisch: Qualität? genaue Wegführung?	? -9626,-6603 -9541,-6955 -9753,-7192 -9953,-7604 -10067,-8165 -10302,-8515 -10364,-8839 -10726,-9726 -11737,-10275 -12382,-10517
 Blankensee - Stangenhagen: laut "Berliner Umland" witterungsabhängige Strecke	? -6860,-20736 -7519,-21034 -8005,-21334 -9578,-21920 -9710,-22155
 Stangenhagen - Hennickendorf: Qualität? genaue Wegführung?	? -9710,-22155 -9815,-22769 -9453,-23518 -9291,-23955 -9853,-25278 -9403,-26688 -9375,-27159
@@ -880,7 +880,6 @@ Lorenzstr./Parallelstr.: Ampel?	? 5720,2081
 Parallelstr.: endet die Parallelstr. am südwestlichen oder am nordöstlichen Teil der Luisenstr.?	? 5807,2117 5825,2125
 Perwenitzer Weg: Qualität der Straße? Existiert hier ein Radweg? Ist es möglich, auf den Askanierring zu gelangen?	? -3708,15831 -3829,15868 -3924,15915
 Elfenallee: Qualität? (möglicherweise Kopfsteinpflaster?)	? 12260,21583 12249,21626 12312,21762 12332,21910 12362,22131 12393,22332 12397,22429
-Bernöwe - Zehdenick: Qualität?	? 5475,45590 5987,46492 7047,47102 8254,47126 9204,48003 9825,48275
 Großstr.: Qualität (östlicher Abschnitt Kopfsteinpflaster, wie sieht der Abschnitt zur Griechischen Allee hin aus?)?	? 18574,6401 18483,6460 18457,6490 18429,6582
 Hildegard-Marcusson-Straße/Haupstr.: Ampel in Bau	? 16004,10204
 Eupener Str.: Qualität nördlich des Uhlenwegs?	? 16384,26726 16432,26829
@@ -1356,6 +1355,8 @@ Hangelsberger Gang: Qualität?	? 31186,4341 31258,4560 31311,4742
 Schnellerstr./Michael-Brückner-Str.: Existiert ein Radweg zwischen Karlshorster Str. und S-Bhf. Schöneweide?	? 17962,5498 17884,5577 17779,5694 17726,5747 17290,6228
 Rudower Str.: Qualität?	? 21370,4442 21546,4457 21585,4459 21775,4470
 Adlershofer Str.: Qualität? Einbahnstraße? Wenn ja, in welche Richtung und auch für Radfahrer gültig?	? 21585,4459 21633,4355 21649,4111 21655,4091 21679,4059
+genauer Verlauf der Kurve?	? 2496,29450 2353,29471
+stimmt der Name? - dieser Straßenteil liegt in Hohen Neuendorf!	? 2229,30785 2254,30707 2317,30696
 Straße 3a: Qualität?	? 16689,3056 16740,3131 16793,3176
 Weg am Heidekampgraben - Kiefholzstr. (entlang der S-Bahn): Qualität (wahrscheinlich asphaltiert)?	? 15185,7234 15601,7340
 Paplitzer Str.: Qualität zwischen Saalower Str. und Goltzstr.? Sind einige Abschnitte als Einbahnstraße ausgewiesen, und falls ja, gilt die Einbahnstraßenregelung auch für Radfahrer?	? 10735,-3142 10767,-3064 10783,-3033 10831,-2919 10884,-2795 10900,-2756 10927,-2687 10949,-2635 10989,-2543 11021,-2464 11027,-2448 11063,-2025
@@ -1501,6 +1502,7 @@ Seeburger Chaussee: mäßig, teils Kopfsteinpflaster, teils Asphalt (kann sich mit
 Reichenberg: grobes Kopfsteinpflaster (genauer Abschnitt fehlt)	? 58453,24209 58429,23868 58340,23653
 Rollwitz - Damerow: Kopfsteinpflaster/Feldweg (genauere Qualitätsbeschreibung fehlt)	? 46872,118656 46914,117945 47156,116507 47087,115725
 Heckmannstr.: Kopfsteinpflaster und teilweise Sandweg (Wo genau sind die Kopfsteinpflaster- und Sandwegabschnitte?)	? -11853,16437 -11760,16401 -11662,16363 -11581,16330 -11497,16296 -11415,16263 -11326,16228 -11160,16162 -10962,16143 -10840,16133
+Schmalkaldener Str.: Sandweg (zumindest ein Teil ist asphaltiert!)	? -1773,36707 -1782,36753 -1786,36771 -1821,36902 -1825,36914 -1873,37093
 Marzahner Promenade - Mühlenbecker Weg: Fußgänger (Stimmt das?)	? 20222,15519 20181,15658 20150,15678
 Barsekowstr. (unbeleuchtet?)	? 5344,4672 5417,4647 5476,4626 5589,4617
 Stadtpark Steglitz (unbeleuchtet?)	? 5589,4617 5747,4697 5765,4693 5931,4659 6114,4709

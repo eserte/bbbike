@@ -2351,10 +2351,10 @@ EOF
      },
      { from  => 1121724000, # 2005-07-19 00:00
        until => 1128204000, # 2005-10-02 00:00
-       text  => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarerstr. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 20.07.2005-01.10.2005 ',
+       text  => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarer Str. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 20.07.2005-01.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 1741,31299 1771,31319 2135,31205 2259,31165
+userdel	2 1762,31318 1918,31279 2126,31207
 EOF
      },
      { from  => 1121724000, # 2005-07-19 00:00
@@ -7681,7 +7681,7 @@ EOF
        text  => 'L 171 Schönfließer Str. OD Hohen Neuendorf grundhafter Straßenbau Vollsperrung 10.04.2007-31.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 2853,28918 2353,29078 2071,29185
+userdel	q4::inwork 1611,29359 2033,29198
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
@@ -9354,7 +9354,7 @@ EOF
        text  => 'L 171 Schönfließer Str. Brücke über die DB in der OD Hohen Neuendorf Brückenersatzneubau Vollsperrung 06.08.2007-09.05.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 2353,29078 2071,29185
+userdel	2::inwork 2033,29198 2176,29143
 EOF
      },
      { from  => 1186869600, # 2007-08-12 00:00

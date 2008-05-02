@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.183 2008/03/04 21:06:51 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.185 2008/05/02 06:10:51 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
 ###################################################################
@@ -1615,6 +1615,13 @@ Durchgang neben Schranke	BNP:5 -840,40618
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
 # (Pinnower Schleuse)
 Durchgang neben Schranke	BNP:5 -1335,34371
+#
+#
+#: append_comment Hohen Neuendorf vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Treppe (17 Stufen)	BNP:30 2262,30691
+#: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#
+#
 #: append_comment Wendisch Rietz vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 An den Kanalwiesen	1 51857,-20420 51900,-20326 51916,-20240
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
