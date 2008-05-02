@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.184 2008/05/02 05:43:56 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.185 2008/05/02 06:10:51 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
@@ -731,10 +731,10 @@ Littenstr. -> Grunerstr.: Straßentunnelrampe	3 11056,12461 10954,12635 10878,125
 Grunerstr. -> Littenstr.: Straßentunnelrampe	3 11057,12715 10954,12635 11056,12461
 Dircksenstr. -> Grunerstr.: Straßentunnelrampe	3 11156,12581 11057,12715 10954,12635
 Dircksenstr. -> Dircksenstr.: Straßentunnelrampe	3 11156,12581 11057,12715 11030,12741
-Grunerstr. -> Dircksenstr.: Straßentunnelrampe	3 11134,12793 11057,12715 11156,12581
 Grunerstr. -> Dircksenstr.: Straßentunnelrampe	3 10954,12635 11057,12715 11030,12741
+Grunerstr. -> Dircksenstr.: Straßentunnelrampe	3 11105,12764 11057,12715 11156,12581
 Dircksenstr. -> Dircksenstr.: Straßentunnelrampe	3 11030,12741 11057,12715 11156,12581
-Dircksenstr. -> Grunerstr.: Straßentunnelrampe	3 11030,12741 11057,12715 11134,12793
+Dircksenstr. -> Grunerstr.: Straßentunnelrampe	3 11030,12741 11057,12715 11105,12764
 Wilhelmsaue -> Bundesallee: Straßentunnelrampe	3 5346,8720 5510,8709 5505,8832
 Bundesallee -> Wilhelmsaue: Straßentunnelrampe	3 5513,8588 5510,8709 5346,8720
 Goßlerstr. -> Unter den Eichen: Straßentunnelrampe	3 2858,4372 2944,4241 3048,4305
@@ -1444,7 +1444,6 @@ Mittelstr.	1 9465,12460 9384,12448 9335,12442
 Friedrichstr. [Zufahrt]	1 9384,12448 9394,12351
 Museumstr.	2:inwork 9943,12642 9884,12712
 Bauhofstr.	1 9810,12712 9671,12644
-Kleine Kurstr.	2:inwork 10182,11758 10249,11821
 (Verlängerte Französische Str.): Tor kann verschlossen sein	2 8901,12008 9076,12054
 Hollmannstr.	2 9979,10639 9757,10708
 Nordsternstr.	1s 6268,8884 6281,8914

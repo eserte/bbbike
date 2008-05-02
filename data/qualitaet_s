@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.225 2008/05/02 05:44:01 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.225 2008/05/02 05:44:01 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10257,-2654 10392,-2980 10475,-3174
@@ -1761,6 +1761,7 @@ Seidelbastweg: Asphalt	Q0 16779,2993 16689,3056 16556,3148 16504,3184 16281,3339
 Seidelbastweg: Beton	Q0 16281,3339 15793,3679 15574,3856
 Schwertlilienweg: Asphalt	Q0 15574,3856 15603,3905 15647,3977 15695,4051
 (Heideläuferweg - Stuthirtenweg): unbefestigt	Q2 13109,1071 13109,1061
+(Niederwallstr. - Kurstr.): Asphalt	Q0 10196,11788 10227,11836
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 364,4829 319,4906 168,5092 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2240,6904 2116,6861 2054,6840 1975,6818
@@ -4972,7 +4973,7 @@ Eiergasse: Gehwegplatten	Q0 10671,12356 10700,12315
 Am Nußbaum: Verbundsteine	Q1 10644,12469 10626,12455 10611,12444 10597,12405 10611,12378
 (Am Nußbaum): Verbundsteine	Q1 10597,12405 10536,12355
 Jägerstr. (Mitte): Asphalt	Q0 9651,12020 9913,12068 9961,12094 10003,12113
-Kleine Kurstr.: Asphalt	Q0 10182,11758 10249,11821 10275,11856
+Kleine Kurstr.: Asphalt	Q0 10249,11821 10275,11856
 Kreuzstr.: Asphalt	Q0 10231,11940 10209,11918
 Kleine Jägerstr.: Asphalt	Q0 9995,11910 10050,11942 10071,11957
 Alte Leipziger Str.: Asphalt	Q0 10076,11840 10118,11907

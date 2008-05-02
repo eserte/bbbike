@@ -12,10 +12,6 @@
 Wintersteinstr.	? 3763,12279 3759,12362 3748,12472 3741,12607 3738,12639
 # Hier scheint nichts mehr zu passieren: #: last_checked: 2008-04-08 Wilhelmstr. (Kreuzberg)	? 9376,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
 Wisbyer Str.	?; 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 11448,16398 11397,16405 11289,16423 11033,16464
-#: by http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2004/1103/lokales/0030/ vvv
-# (alte URL http://www.berlinonline.de/berliner-zeitung/berlin/327989.html?2004-03-26 gilt nicht mehr)
-#: last_checked: 2008-04-22
-Leipziger Straﬂe zwischen Leipziger Platz und Wilhelmstraﬂe: Angebotsstreifen werden zurzeit markiert	?; 8733,11524 9058,11564
 #: last_checked: 2007-11-28
 Mollstr.	?; 11446,13294 11557,13228 11681,13161 11723,13139 11739,13131 11839,13083 11867,13076 11905,13069
 #: last_checked: 2006-10-25
@@ -75,6 +71,8 @@ Aroser Allee, Fertigstellung bis 2007-10-01	? 6720,18616 6704,18462 6694,18351 6
 #
 #: section ignorieren vvv
 #: section Straﬂen in Planung vvv
+#: last_checked: 2008-05-02
+Verl‰ngerung der Niederwallstr. zum Spittelmarkt	?::inwork 10124,11806 10196,11788 10252,11752
 Ampel in Bau	?::inwork 15243,11881
 Ampel in Bau	?::inwork 13919,10583
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0710/nachricht2827.html vvv
@@ -227,8 +225,6 @@ nˆrdlicher Radweg auf der Bulgarischen Str.: siehe Message-ID: <1kl0p5nkwlmb1.dl
 Route Lychen - Feldberg: wie sieht der Routenverlauf aus? Qualit‰t?	? 627,89430 551,89619
 Route Lychen - Templin: wie sieht der Routenverlauf aus? Qualit‰t?	? 2480,89399 2468,89293
 Potsdamer Str. oder Hauptstr.: anscheinend gehˆren die H‰user auf der westlichen Straﬂenseite ersterer, auf der ˆstlichen Seite letzterer Straﬂe. Wie ist ausgeschildert?	? 7478,9340 7517,9454
-#: XXX:
-Zieten- und Wilhelmplatz: diese Pl‰tze sind nicht ausgeschildert (2007-08-04)	? 9000,11727 9076,11743 9173,11770
 #: by: Lutz Moser
 Runebergweg/Sibeliusweg: Runebergweg hat starkes Gef‰lle und Sibeliusweg hat leichtes Gef‰lle, aber laut hm96.dat sieht es andersrum aus --- da muss ich mit Hˆhenmesser langfahren	? -6904,5175 -6747,5169 -6787,5076
 #: XXX_prog: Dr‰ngelgitter auch auf dem Mittelstreifen Sonnenallee. Kann zurzeit nicht dargestellt werden.

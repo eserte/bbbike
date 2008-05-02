@@ -5324,7 +5324,7 @@ EOF
        source_id => 'IM_003144',
        data  => <<EOF,
 userdel	1::inwork 11323,12484 11209,12430 11092,12375 11056,12461 10954,12635
-userdel	1::inwork 10954,12635 11057,12715 11134,12793
+userdel	1::inwork 10954,12635 11057,12715 11105,12764 11134,12793
 EOF
      },
      { from  => 1154786970, # 2006-08-05 16:09
@@ -10070,11 +10070,11 @@ EOF
      },
      { from  => 1191967812, # 2007-10-10 00:10
        until => 1230764399, # 2008-12-31 23:59
-       text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Mohrenstr. und Leipziger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2008)',
+       text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Französische Str. und Leipziger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2008)',
        type  => 'gesperrt',
        source_id => 'IM_006819',
        data  => <<EOF,
-userdel	1::inwork 9220,11781 9234,11683 9268,11590
+userdel	1::inwork 9183,12076 9201,11968 9208,11872 9220,11781 9234,11683 9268,11590
 EOF
      },
      { from  => 1191967853, # 2007-10-10 00:10
@@ -11354,6 +11354,46 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 49836,-67419 50143,-67035 50318,-65825
+EOF
+     },
+     { from  => 1209754023, # 2008-05-02 20:47
+       until => 1230764399, # 2008-12-31 23:59 XXX Ende geraten
+       text  => 'Mohrenstr. zwischen Mauerstr. und Glinkastr. gesperrt ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 9220,11781 9173,11770
+EOF
+     },
+     { from  => 1209754154, # 2008-05-02 20:49
+       until => 1230764399, # 2008-12-31 23:59 XXX Ende geraten
+       text  => 'Oberwallstr. Einbahnstraße zum Hausvogteiplatz',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 9925,11947 9913,12068
+EOF
+     },
+     { from  => 1209667815, # 2008-05-01 20:50
+       until => 1230764399, # 2008-12-31 23:59 XXX Ende geraten
+       text  => 'Mohrenstr. am Gendarmenmarkt: Einbahnstraße Richtung Osten',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 9672,11833 9538,11818
+EOF
+     },
+     { from  => 1209754240, # 2008-05-02 20:50
+       until => 1230764399, # 2008-12-31 23:59 XXX Ende geraten
+       text  => 'Markgrafenstr. am Gendarmenmarkt: Einbahnstraße Richtung Norden',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 9663,11927 9672,11833
+EOF
+     },
+     { from  => 1209754714, # 2008-05-02 20:58
+       until => 1230764399, # 2008-12-31 23:59
+       text  => 'Kleine Gertraudenstr. - Gertraudenstr.: Bauarbeiten, gesperrt ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 10387,11901 10364,11896
 EOF
      },
     );

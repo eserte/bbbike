@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.185 2008/05/02 06:10:51 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.185 2008/05/02 06:10:51 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 ###################################################################
@@ -738,7 +738,7 @@ Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5474,9961 5475,9914 5
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19694,15149 19735,15155 20260,15434
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19582,15221 19506,15002 19466,14910 19422,14793
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9851,10219 9849,10202 9827,10120
-Grunerstr.: Straßentunnelrampe	3nocross 10878,12560 10954,12635 11057,12715 11134,12793
+Grunerstr.: Straßentunnelrampe	3nocross 10878,12560 10954,12635 11057,12715 11105,12764
 Bundesallee: Straßentunnelrampe	3nocross 5505,8832 5510,8709 5513,8588
 Unter den Eichen: Straßentunnelrampe	3nocross 2817,4158 2944,4241 3048,4305
 Bundesallee: Absperrung auf dem Mittelstreifen	3nocross 5510,8709 5513,8588 5481,8506 5444,8406 5421,8337
@@ -1288,7 +1288,6 @@ Friedrichstr. [Zufahrt]	1 9384,12448 9394,12351
 #: last_checked: 2007-05-31
 Museumstr.	2:inwork 9943,12642 9884,12712
 Bauhofstr.	1 9810,12712 9671,12644
-Kleine Kurstr.	2:inwork 10182,11758 10249,11821
 (Verlängerte Französische Str.): Tor kann verschlossen sein	2 8901,12008 9076,12054
 Hollmannstr.	2 9979,10639 9757,10708
 Nordsternstr.	1s 6268,8884 6281,8914

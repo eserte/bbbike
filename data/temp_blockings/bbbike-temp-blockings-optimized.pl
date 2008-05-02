@@ -577,10 +577,10 @@ push @temp_blocking,
        {
          'source_id' => 'IM_006819',
          'until' => 1230764399,
-         'text' => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Mohrenstr. und Leipziger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2008)',
+         'text' => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Französische Str. und Leipziger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2008)',
          'from' => 1191967812,
          'id' => 1194,
-         'data' => 'userdel	1::inwork 9220,11781 9234,11683 9268,11590
+         'data' => 'userdel	1::inwork 9183,12076 9201,11968 9208,11872 9220,11781 9234,11683 9268,11590
 ',
          'type' => 'gesperrt'
        },
@@ -1047,6 +1047,51 @@ push @temp_blocking,
          'from' => 1211407200,
          'id' => 1348,
          'data' => 'userdel	2::inwork 49836,-67419 50143,-67035 50318,-65825
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1230764399,
+         'text' => 'Mohrenstr. zwischen Mauerstr. und Glinkastr. gesperrt ',
+         'from' => 1209754023,
+         'id' => 1349,
+         'data' => 'userdel	q4::inwork 9220,11781 9173,11770
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1230764399,
+         'text' => 'Oberwallstr. Einbahnstraße zum Hausvogteiplatz',
+         'from' => 1209754154,
+         'id' => 1350,
+         'data' => 'userdel	1::inwork 9925,11947 9913,12068
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1230764399,
+         'text' => 'Mohrenstr. am Gendarmenmarkt: Einbahnstraße Richtung Osten',
+         'from' => 1209667815,
+         'id' => 1351,
+         'data' => 'userdel	1::inwork 9672,11833 9538,11818
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1230764399,
+         'text' => 'Markgrafenstr. am Gendarmenmarkt: Einbahnstraße Richtung Norden',
+         'from' => 1209754240,
+         'id' => 1352,
+         'data' => 'userdel	1::inwork 9663,11927 9672,11833
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1230764399,
+         'text' => 'Kleine Gertraudenstr. - Gertraudenstr.: Bauarbeiten, gesperrt ',
+         'from' => 1209754714,
+         'id' => 1353,
+         'data' => 'userdel	2::inwork 10387,11901 10364,11896
 ',
          'type' => 'gesperrt'
        }
