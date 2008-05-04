@@ -739,9 +739,9 @@ push @temp_blocking,
        undef,
        {
          'source_id' => 'IM_006024',
-         'until' => 1214863200,
-         'text' => 'Pistoriusstr. (Weißensee) Richtung Berliner Str. zwischen Gustav-Adolf-Str. und Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2008) (09:04) ',
-         'from' => undef,
+         'until' => 1222811999,
+         'text' => 'Pistoriusstr. (Weißensee) Richtung Berliner Str. zwischen Gustav-Adolf-Str. und Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2008)',
+         'from' => 1209758305,
          'id' => 1282,
          'data' => 'userdel	1::inwork 12486,16791 12604,16731 12693,16700
 ',

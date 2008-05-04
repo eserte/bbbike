@@ -10803,9 +10803,9 @@ EOF
 userdel	q4::inwork 23113,30450 23368,30409 23631,30262
 EOF
      },
-     { from  => undef, # 
-       until => 1214863200, # 2008-07-01 00:00
-       text  => 'Pistoriusstr. (Weißensee) Richtung Berliner Str. zwischen Gustav-Adolf-Str. und Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2008) (09:04) ',
+     { from  => 1209758305, # 2008-05-02 21:58
+       until => 1222811999, # 2008-09-30 23:59
+       text  => 'Pistoriusstr. (Weißensee) Richtung Berliner Str. zwischen Gustav-Adolf-Str. und Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2008)',
        type  => 'gesperrt',
        source_id => 'IM_006024',
        data  => <<EOF,

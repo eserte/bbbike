@@ -2880,10 +2880,20 @@ EOF
     print <<EOF;
 <tr><td>@{[ M("Ampeln vermeiden") ]}:</td><td><input type=checkbox name="pref_ampel" value="yes" @{[ $default_ampel?"checked":"" ]}></td>
 EOF
+    if ($include_outer_region) {
+	print <<EOF;
+<td style="font-size:smaller;">(nur in Berlin/Potsdam erfasst)</td>
+EOF
+    }
     if (1) {
 	print <<EOF;
 <tr><td>@{[ M("Unbeleuchtete Wege vermeiden") ]}:</td><td><input type=checkbox name="pref_unlit" value="NL" @{[ $default_unlit?"checked":"" ]}></td>
 EOF
+	if ($include_outer_region) {
+	    print <<EOF;
+<td style="font-size:smaller;">(nur in Berlin/Potsdam erfasst)</td>
+EOF
+	}
     } else {
 	print <<EOF;
 <input type="hidden" name="pref_unlit" value="">

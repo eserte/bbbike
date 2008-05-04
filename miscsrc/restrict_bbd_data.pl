@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: restrict_bbd_data.pl,v 2.3 2004/12/28 22:57:28 eserte Exp $
+# $Id: restrict_bbd_data.pl,v 2.5 2008/05/04 20:08:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -38,6 +38,12 @@ Stdin/out operation with:
 It is possible to specify multiple -bbox options. In this case the
 points should be at least in one of the bounding boxes.
 
+bbd files specified with C<-in>/C<-notin> may be used to restrict by
+points (not) contained in these files.
+
+C<-polygon> takes an option in the format "x1,y1 x2,y2 ...". Note that
+the spaces in the option value must be quoted for the shell.
+
 =cut
 
 use strict;
@@ -54,6 +60,7 @@ eval 'use BBBikeXS';
 @Strassen::datadirs = ();
 
 my @bbox_s;
+my @contains_polygons_s;
 my @in;
 my @notin;
 my $scope = "city";
@@ -68,6 +75,7 @@ sub usage {
 }
 
 if (!GetOptions('bbox=s@' => \@bbox_s,
+		'polygon=s@' => \@contains_polygons_s,
 		"scope=s" => \$scope,
 		"datadir=s@" => \@Strassen::datadirs,
 		"str|strdata=s" => \$strdata,
@@ -82,7 +90,7 @@ if (!GetOptions('bbox=s@' => \@bbox_s,
     usage();
 }
 
-usage() if (!@bbox_s && !@in && !@notin);
+usage() if (!@bbox_s && !@contains_polygons_s && !@in && !@notin);
 my @bboxes;
 if (@bbox_s) {
     for my $bbox_s (@bbox_s) {
@@ -93,6 +101,13 @@ if (@bbox_s) {
 	if ($bbox[1] > $bbox[3]) { @bbox[1,3] = @bbox[3,1] }
 	push @bboxes, \@bbox;
     }
+}
+my @contains_polygons;
+if (@contains_polygons_s) {
+    for (@contains_polygons_s) {
+	push @contains_polygons, [map { [split /,/] } split / /];
+    }
+    require VectorUtil;
 }
 
 my($in_net, $notin_net);
@@ -168,6 +183,12 @@ while(1) {
 	    for my $bbox (@bboxes) {
 		if ($x >= $bbox->[0] && $x <= $bbox->[2] &&
 		    $y >= $bbox->[1] && $y <= $bbox->[3]) {
+		    $in = 1;
+		    last;
+		}
+	    }
+	    for my $polygon (@contains_polygons) {
+		if (VectorUtil::point_in_polygon([$x,$y], $polygon)) {
 		    $in = 1;
 		    last;
 		}
