@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.49 2008/02/09 16:36:15 eserte Exp $
+# $Id: PDF.pm,v 2.50 2008/05/05 19:59:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004,2008 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.49 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.50 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -696,10 +696,8 @@ $self->{UseFlags} = 0; # XXX don't use this because of missing transparency info
 		}
 	    }
 	    $im->set_fill_color(@$white);
-$im->{'pdf'}->add(" 0.5 ca");
 	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
 	    $im->fill;
-$im->{'pdf'}->add(" 1.0 ca");
 	    $im->rectangle($x-$pad, $y-$pad, $s_width+$pad*2, $size+$pad);
 	    $im->stroke;
 	    $im->set_fill_color(@$black);
