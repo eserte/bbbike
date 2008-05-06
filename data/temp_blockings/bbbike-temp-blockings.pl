@@ -8112,7 +8112,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005473',
        data  => <<EOF,
-userdel	2::temp 25512,4842 25539,5237 25568,5763 25572,5842 25579,5980
+userdel	2::temp 25512,4842 25539,5237 25553,5486 25568,5763 25572,5842 25579,5980
 EOF
      },
      { from  => 1178874938, # 2007-05-11 11:15
@@ -11398,11 +11398,11 @@ EOF
      },
      { from  => 1210019166, # 2008-05-05 22:26
        until => 1229381999, # 2008-12-15 23:59
-       text  => 'Königsheideweg (Treptow) Richtung Sterndamm zwischen Haushoferstr. und Sterndamm Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2008)',
-       type  => 'gesperrt',
+       text  => 'Königsheideweg (Treptow) Richtung Sterndamm zwischen Haushoferstr. und Sterndamm Baustelle, Fahrtrichtung gesperrt, Radfahrer können langsam passieren (eng!) (bis Mitte 12.2008)',
+       type  => 'handicap',
        source_id => 'IM_008688',
        data  => <<EOF,
-userdel	1::inwork 17115,4757 17266,4720 17518,4644
+userdel	q4; 17115,4757 17266,4720 17518,4644
 EOF
      },
      { from  => 1211580000, # 2008-05-24 00:00

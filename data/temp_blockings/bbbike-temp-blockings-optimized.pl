@@ -1094,6 +1094,25 @@ push @temp_blocking,
          'data' => 'userdel	2::inwork 10387,11901 10364,11896
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_008688',
+         'until' => 1229381999,
+         'text' => 'Königsheideweg (Treptow) Richtung Sterndamm zwischen Haushoferstr. und Sterndamm Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2008)',
+         'from' => 1210019166,
+         'id' => 1354,
+         'data' => 'userdel	1::inwork 17115,4757 17266,4720 17518,4644
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1211925600,
+         'text' => 'L 054 Calau - Vetschau Bahnübergang bei Saßleben Gleisumbauarbeiten Vollsperrung 25.05.2008-27.05.2008 ',
+         'from' => 1211580000,
+         'id' => 1355,
+         'data' => 'userdel	2::inwork 50732,-71705 51374,-71361 51440,-71337
+',
+         'type' => 'gesperrt'
        }
      
 );

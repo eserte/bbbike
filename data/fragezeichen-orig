@@ -274,6 +274,8 @@ Am Schlangenfenn (Potsdam): guter Asphalt, Q0	? -10585,-5528 -10630,-5440 -10652
 #: note: laut http://www.berlin.de/ba-spandau/presse/archiv/20071129.1255.89932.html ab 2008-02-01 neu asphaltiert, Q0, nicht mehr eng
 Am Kinderdorf: mäßiger Asphalt, Belag stark beschädigt, Q2+, enge Straße, Baustellen, q1	? -5093,8398 -5106,8534 -5103,8614 -5089,8701 -5074,8761 -5071,8864
 #: by: anonymous
+Am Berghang: guter Asphalt, Q0, enge Straße, q0	? -5246,8751 -5169,8749 -5150,8766 -5074,8761 -4891,8752 -4853,8735 -4793,8675 -4705,8671
+#: by: anonymous
 Am Upstall, Fahrland: Asphalt, Q0	? -16009,7063 -16011,7252 -16010,7299 -15998,7329 -15967,7362 -15929,7375 -15891,7375 -15815,7375
 #: by: anonymous
 #: XXX: Widerspruch von einem anderen anonymous: "fester Sandweg, wassergebundene Decke, Q2, enge Straße, q1"
@@ -1268,7 +1270,8 @@ Herrenweg: Qualität? Vom nördlichen Ende aus ein Feldweg, vom südlichen Ende aus
 Brüssow - Caselow: Qualität (wahrscheinlich schlechtes Kopfsteinpflaster, vom südlichen Ende aus gesehen)?	? 55605,112935 55723,114036 56123,116226 55986,116675 56317,117060 56355,117304 56496,117228 57586,117220
 Bahnübergang	? 19302,-734
 #: XXX Zumindest in Höhe des S-Bahnübergangs asphaltiert; dort existiert für wenige Meter ein benutzungspflichtiger Zweirichtungsradweg auf der Südostseite
-Bohnsdorfer Chaussee/Gartenstr.: Qualität?	? 19704,-490 19302,-734 18773,-1095 18892,-1273
+Bohnsdorfer Chaussee: Qualität?	? 19704,-490 19422,-655 19333,-714 19302,-734 19248,-771 19054,-903 18773,-1095
+Gartenstr.: Qualität?	? 18773,-1095 18892,-1273
 Waldstr.: Qualität?	? 24456,-3327 24539,-3292 24553,-3281 24872,-3095 24987,-3015 25182,-2915 25580,-2673 25958,-2455
 Bahnhofstr.: Qualität in diesem Abschnitt (ostl. d. Bergstr.)?	? -2657,-2907 -2720,-2937 -2817,-2967 -2878,-3004
 Scharnweberstr. (Friedrichshagen): Qualität?	? 25706,4723 25720,4832
@@ -1601,7 +1604,6 @@ Landsberger Str.: Qualität?	? 11079,317 11215,313 11232,309 11258,289 11337,190 
 Gessepfad: Qualität?	? 10955,501 10987,306
 Küstriner Str.: Qualität?	? 11232,309 11343,405 11488,531
 Oranienburger Str. (Lichtenrade): Qualität?	? 11343,405 11381,574 11372,706
-Rademeierweg: Qualität?	? 11372,706 11237,773 11074,818
 Gaudacher Str.: Qualität?	? 11372,706 11419,789
 Ringelnatzstr.: Qualität?	? 10971,-499 10868,-539 10955,-769
 Happestr.: Qualität?	? 10955,-769 10953,-812 10968,-987 10976,-1070
@@ -2002,3 +2004,9 @@ Klettenberger Str.: Qualität?	? 20590,-120 20555,15 20507,196 20470,319 20453,39
 Nippeser Str.: Qualität?	? 19894,-247 19894,-210 19882,-166 19854,-126
 Bernulfstr.: Qualität?	? 19988,928 19876,984 19757,1042 19694,1074
 Lyonel-Feiniger-Str.: Qualität?	? 24131,15109 24139,15046 24151,14982 24160,14931 24191,14866
+#: XXX ein anonymer Eintrag war nicht ganz klar: mäßiges Kopfsteinpflaster, enge Straße; aber auf dem Luftbild sieht es fast asphaltiert aus
+Kreuzgraben: Qualität? Können Radfahrer zur Heinrich-Böll-Str. fahren?	? 10309,20032 10264,20209 10251,20252
+Martinstr.: Qualität?	? 4956,5121 5102,5031
+Suchlandstr.: Qualität?	? 4906,5052 5050,4959
+Seppenrader Weg: Qualität, wahrscheinlich betoniert?	? 1153,18359 1225,18508
+Dülmener Pfad: Qualität, wahrscheinlich betoniert?	? 1198,18520 1290,18679
