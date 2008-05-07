@@ -24,7 +24,7 @@
 ## perlreplace #CVSREPO#    $BBBike::BBBIKE_CVS_ANON_REPOSITORY
 ## perlreplace #HTTPSNAPSHOT#     $BBBike::BBBIKE_UPDATE_DIST_CGI
 ## dnl
-## dnl $Id: README.spp,v 2.44 2008/03/01 00:02:09 eserte Exp $
+## dnl $Id: README.spp,v 2.44 2008/03/01 00:02:09 eserte Exp eserte $
 ## dnl strpp source of README
 ## dnl
 =head1 README
@@ -702,14 +702,14 @@ To use the CVS repository from command line type the following:
 Das CVS wird fast täglich aktualisiert und enthält auch die aktuellen
 Daten. B<Achtung>: die Adresse des Repositorys hat sich im Mai 2006
 geändert! Es ist notwendig, ein frisches Checkout (co) zu machen,
-falls das Repository bereits ausgecheckt wurde.
+falls das Repository vor diesem Datum ausgecheckt wurde.
 
 
 ## only EN
 The CVS repository is always up-to-date and also contains the current
 data. B<Warning>: address of the CVS repository changed in May 2006. You
-have to make a fresh checkout (co) if you have an old repository
-checked out.
+have to make a fresh checkout (co) if you have a checked-out repository
+which is older.
 
 ## yes
 

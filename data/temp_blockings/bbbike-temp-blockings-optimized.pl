@@ -1098,12 +1098,12 @@ push @temp_blocking,
        {
          'source_id' => 'IM_008688',
          'until' => 1229381999,
-         'text' => 'Königsheideweg (Treptow) Richtung Sterndamm zwischen Haushoferstr. und Sterndamm Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2008)',
+         'text' => 'Königsheideweg (Treptow) Richtung Sterndamm zwischen Haushoferstr. und Sterndamm Baustelle, Fahrtrichtung gesperrt, Radfahrer können langsam passieren (eng!) (bis Mitte 12.2008)',
          'from' => 1210019166,
          'id' => 1354,
-         'data' => 'userdel	1::inwork 17115,4757 17266,4720 17518,4644
+         'data' => 'userdel	q4; 17115,4757 17266,4720 17518,4644
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
        },
        {
          'until' => 1211925600,
