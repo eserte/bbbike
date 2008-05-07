@@ -11413,4 +11413,21 @@ EOF
 userdel	2::inwork 50732,-71705 51374,-71361 51440,-71337
 EOF
      },
+     { from  => 1209852000, # 2008-05-04 00:00
+       until => undef, # XXX
+       text  => 'Alt-Rudow: von Krokusstraße bis Köpenicker Straße Einbahnstraße in Richtung Neudecker Weg',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 16849,1437 16610,1715
+EOF
+     },
+     { from  => 1205622000, # 2008-03-16 00:00
+       until => 1214863200, # 2008-07-01 00:00
+       text  => 'L 793 Alfred-Kühne-Str. Ludwigsfelde, Kreuzung Am Birkengrund/ Ludwigsfelder Str. Bau Kreisverkehr Vollsperrung 17.03.2008-30.06.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 3257,-10374 2629,-10301 2580,-11069
+userdel	q4::inwork 1867,-10228 2629,-10301
+EOF
+     },
     );

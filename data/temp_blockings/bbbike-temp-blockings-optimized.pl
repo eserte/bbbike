@@ -1032,15 +1032,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1210197600,
-         'text' => 'L 256 B109 - Werbelow Bahnübergang Nechlin Gleisbauarbeiten Vollsperrung 05.05.2008-07.05.2008 ',
-         'from' => 1209852000,
-         'id' => 1347,
-         'data' => 'userdel	2::inwork 42905,115846 42250,115925 42222,115929
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1211752800,
          'text' => 'L 055 Calau - Boblitz Bahnübergang in der OD Bischdorf Instandsetzungsarbeiten Vollsperrung 23.05.2008-25.05.2008 ',
@@ -1113,6 +1105,25 @@ push @temp_blocking,
          'data' => 'userdel	2::inwork 50732,-71705 51374,-71361 51440,-71337
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Alt-Rudow: von Krokusstraße bis Köpenicker Straße Einbahnstraße in Richtung Neudecker Weg',
+         'from' => 1209852000,
+         'id' => 1356,
+         'data' => 'userdel	1::inwork 16849,1437 16610,1715
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1214863200,
+         'text' => 'L 793 Alfred-Kühne-Str. Ludwigsfelde, Kreuzung Am Birkengrund/ Ludwigsfelder Str. Bau Kreisverkehr Vollsperrung 17.03.2008-30.06.2008 ',
+         'from' => 1205622000,
+         'id' => 1357,
+         'data' => 'userdel	q4::inwork 3257,-10374 2629,-10301 2580,-11069
+userdel	q4::inwork 1867,-10228 2629,-10301
+',
+         'type' => 'handicap'
        }
      
 );
