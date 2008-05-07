@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: restrict_bbd_data.pl,v 2.6 2008/05/04 20:50:17 eserte Exp $
+# $Id: restrict_bbd_data.pl,v 2.6 2008/05/04 20:50:17 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -20,7 +20,8 @@ restrict_bbd_data.pl - Restrict bbd data to a given bounding box
 =head1 SYNOPSIS
 
     restrict_bbd_data.pl
-        [ -bbox x1,y1,x2,y2 | -in file1,... | -notin file1,... ]
+        [ -bbox x1,y1,x2,y2 | -in file1,... | -notin file1,... |
+          -polygon "x1,y1 x2,y2 ..."]
         -scope [city|region|wideregion] | -strdata file1,file2,...
         -o outputfile
 

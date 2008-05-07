@@ -470,7 +470,7 @@ Schloßstr.: asphaltiert	Q0 3117,11852 3103,11968
 Zillestr.: Kopfsteinpflaster	Q2 3268,11834 3117,11852
 Am Graben: Kopfsteinpflaster	Q2 -4755,7736 -4839,7791
 Imchenallee: holpriger Weg	Q1 -6879,4775 -6990,4531 -7102,4246 -7195,4194 -7263,4214 -7561,4191 -7693,4234 -7714,4279
-Tegeler Weg: Kopfsteinpflaster	Q2 7467,14633 7263,14873
+Tegeler Weg: Kopfsteinpflaster	Q2 7498,14658 7263,14873
 Tegeler Weg: Kopfsteinpflaster	Q0 7199,14978 7131,15109 7085,15226
 Lynarstr.: Kopfsteinpflaster	Q2 7152,14779 7263,14873 7436,14964 7629,15078 7754,15160
 Kiautschoustr.: Kopfsteinpflaster	Q2 7199,14978 7020,14897 6976,14879
@@ -645,7 +645,7 @@ Zwieseler Str.: Kopfsteinpflaster	Q2 19510,9035 19629,9094
 Köpenicker Allee: wechselnd: holpriger Fahrweg, mäßiger Asphalt	Q2 19907,8407 20213,7872 20280,7757
 #: by: Roy Fischer [AM]
 #: confirmed_by: srt
-Vulkanstr.: Asphalt	Q0 15912,13153 15892,13534 15897,13942 15838,14319
+Vulkanstr.: Asphalt	Q0 15912,13153 15897,13512 15896,13547 15897,13942 15838,14319
 Vulkanstr.: Asphalt	Q0 15912,13153 15950,12886 15953,12753 15952,12679 15947,12626 15926,12478 15904,12340 15896,12273 15879,12131 15863,11992
 Sandinostr.: Kopfsteinpflaster	Q2 15883,14606 15830,14647 15706,14752
 #: corrected_by: Ralf Bressel (früher holpriger Feldweg -> mittlerweile asphaltiert, seit ca. 2007)
@@ -1328,7 +1328,7 @@ Heinrich-Lassen-Park: wassergebundener Belag	Q1 6664,8787 6740,8682 6815,8691 69
 Am Berlin-Spandauer Schiffahrtskanal: Kopfsteinpflaster	Q2 8337,13541 8248,13659
 Am Berlin-Spandauer Schiffahrtskanal: glatter Belag	Q0 8248,13659 8101,13901 8114,13921
 Uferweg: Asphalt für Radfahrer, Kopfsteinpflaster für Fußgänger	Q0 8015,14109 7993,14114 7954,14187 7828,14405 7807,14441
-(Uferweg am Nordhafen): Asphalt	Q0 7753,14528 7695,14545 7467,14633
+(Uferweg am Nordhafen): Asphalt	Q0 7753,14528 7695,14545 7498,14658
 Gabrielenstr.: überwiegend mäßiger Asphalt	Q1 1715,20766 1684,20773 1630,20731 1518,20615 1127,20434 1060,20403
 An der Malche: fester Waldweg	Q1 1127,20434 1060,20557 995,20590 921,20562 864,20646 673,20800
 Avenue Jean Mermoz: asphaltiert	Q0 3333,18034 3248,17921 3213,17858 3159,17780 3080,17634
@@ -3830,7 +3830,7 @@ Räuschstr.: Asphalt	Q0 3098,19867 3252,19658 3455,19389
 Maximilianstr. (Lichtenberg): mäßiges Kopfsteinpflaster	Q2 16334,10958 16381,11080 16424,11188 16468,11297
 #: by: Felix Beutler: vvv
 Unterbaumstr.: Kopfsteinpflaster	Q2 8486,12918 8502,12935 8525,12958 8581,13013
-Nordufer: Verbundsteinpflaster	Q1 7231,14749 7467,14633
+Nordufer: Verbundsteinpflaster	Q1 7231,14749 7498,14658
 Mönkeberger Str.: asphaltiert	Q0 9475,16307 9582,16296 9725,16281
 Ellerbeker Str.: Kopfsteinpflaster	Q2 9725,16281 9727,16188
 #: by: ^^^
@@ -4322,6 +4322,7 @@ Amalienpark: mäßiges Kopfsteinpflaster	Q2 10950,18499 10905,18671
 #: confirmed_by: albrecht_martina:
 Eichenstr. (Niederschönhausen): guter Asphalt	Q0 9300,19949 9408,19968 9788,20035 10095,20090
 #: note: laut ADFC-Karte gut geeignet
+#: confirmed_by: mianos@...
 Treskowstr. (Niederschönhausen): asphaltiert	Q0 9978,19512 9809,19529 9714,19615 9677,19651 9565,19751 9489,19826 9408,19968 9372,20065 9360,20152 9357,20213
 #: by: ^^^
 #: by: Stephan Fleischer:
@@ -4407,7 +4408,7 @@ Eisenhammerweg: Kopfsteinpflaster	Q2 1640,19645 1603,19782 1585,19862 1563,19960
 #: note: auch laut ADFC-Karte/neu gut geeignet:
 Wustrower Str.: guter Beton	Q0 16882,18619 17014,18435 17215,18153 17341,17990 17289,17952 17356,17856
 #: by: Ulrich Wegener: vvv
-Waldseeweg: mäßiges Kopfsteinpflaster	Q2 4259,23973 4128,23880 3985,23814
+Waldseeweg: mäßiges Kopfsteinpflaster	Q2 4240,23985 4237,23964 4128,23880 3985,23814
 Waldseeweg: Asphalt	Q0 3985,23814 3860,23767 3791,23730 3698,23657 3632,23563 3621,23548
 #: by: ^^^
 #: by: Volker (vheusing):
@@ -6386,6 +6387,8 @@ Bocholter Weg: guter Beton	Q0 964,18321 1015,18419 1117,18557 1230,18698
 Polsumer Pfad: guter Beton	Q0 1082,18389 1169,18533
 Selmer Pfad: guter Beton	Q0 1117,18557 1169,18533 1198,18520 1225,18508 1281,18487
 Dattelner Weg: guter Beton	Q0 1015,18419 1082,18389 1153,18359 1221,18327
+Seppenrader Weg: betoniert	Q0 1153,18359 1225,18508
+Dülmener Pfad: betoniert	Q0 1198,18520 1290,18679
 #: by: ^^^
 #: by: Mario Lorco:
 Drachholzstr.: schlechtes Kopfsteinpflaster	Q3 25553,5486 25754,5485
@@ -6395,6 +6398,11 @@ Prinz-Friedrich-Leopold-Str.: Kopfsteinpflaster	Q2 -3692,2549 -3634,2488
 #: note: laut ADFC-Karte gut geeignet:
 Prinz-Friedrich-Leopold-Str.: guter Asphalt	Q0 -3634,2488 -3568,2382 -3532,2189 -3503,1988 -3501,1826 -3559,1760
 #: by: ^^^
+#: by: Eva Erbach:
+Am Waldpark: mäßiges Kopfsteinpflaster	Q2 4240,23985 4226,24037 4154,24112 4156,24168 4136,24200 4034,24181
+#: by: Frank Zieps:
+#: note: "25 km/h ohne Begründung" ignoriert
+Rackebüller Weg: Beton	Q0 10658,-406 10586,-220 10512,83 10463,251 10414,373 10332,607 10281,749
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

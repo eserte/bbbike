@@ -1839,7 +1839,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_77420',
        data  => <<EOF,
-userdel	q4; 15838,14319 15897,13942 15892,13534
+userdel	q4; 15838,14319 15897,13942 15896,13547
 EOF
      },
      { from  => 1114466400, # 2005-04-26 00:00
@@ -4070,7 +4070,7 @@ EOF
        text  => 'Herzbergstraße, zwischen Siegfriedstraße und Vulkanstraße gesperrt, die Gegenrichtung ist als Einbahnstraße ausgeschildert, Straße am Wasserwerk, zwischen Herzbergstraße und Landsberger Allee gesperrt, Baustelle. Dauer: 07.04.2006 , 18:00 Uhr bis 27.05.2006, 18:00 Uhr. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 16866,13532 16629,13532 15892,13534
+userdel	1 16866,13532 16629,13532 15896,13547
 EOF
      },
      { from  => 1144483509, # 2006-04-08 10:05

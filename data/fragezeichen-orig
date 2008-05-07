@@ -23,7 +23,7 @@ Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 
 # Hier scheint nichts mehr zu passieren: #: last_checked: 2008-02-22 Gitschiner Str.	? 9948,10280 10122,10294 10340,10301 10605,10312 10859,10333 10962,10340 11117,10326
 # Hier scheint nichts mehr zu passieren: #: last_checked: 2008-04-13 Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 12188,14321 12338,14532 12384,14600 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941 12628,14962 12722,15105 12743,15138 12880,15335 12966,15478 13098,15592 13229,15692 13316,15758
 #: last_checked: 2007-09-07
-Vulkanstraße	? 15912,13153 15892,13534
+Vulkanstraße	? 15912,13153 15897,13512 15896,13547
 # XXX laut Luftbild fertig: last_checked: 2006-06-16 (von Corinna):Gorkistr.	? 2998,20487 2974,20483 2615,20421
 Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 17966,11730 17746,11748 17436,11791 17249,11802
 #: last_checked: 2007-07-15
@@ -329,7 +329,7 @@ Sophienwerderweg: Asphalt, Q0	? -1188,13988 -1575,14098 -2396,14245
 Am Wall (Kleinmachnow): guter Beton, Q0	? -3395,-880 -3322,-894 -3191,-914 -3060,-933 -2926,-955 -2795,-978 -2742,-987
 Promenadenweg (Kleinmachnow): Asphalt, Q0, q4(???), Frage: Gehwegverbindung zum Stahnsdorfer Damm?	? -3391,-1155 -3288,-1153 -3221,-1154 -3087,-1155 -2953,-1156 -2819,-1157 -2720,-1159 -2683,-1160
 #: by: Uwe Haeseler:
-#: XXX: bei einem weiteren Eintrag von ihm nur "mäßige Qualität":
+#: XXX: bei einem weiteren Eintrag von ihm nur "mäßige Qualität" und q3 ohne weitere Erklärung:
 Widosteig: gutes Kopfsteinpflaster, Q1	? 19876,984 19934,1102
 #: by: Thomas Kunz:
 Heimgartenstraße: Asphalt, Q0	? 23537,4238 23657,4255 23880,4280 24107,4309
@@ -1576,7 +1576,6 @@ Bismarckstr. (Spandau): Qualität?	? -3153,14868 -3360,14974 -3572,15082
 #: XXX anonymous meint Asphalt ohne weitere Angaben und erwähnt keine Einbahnstraße
 Zellerfelder Str.: Qualität? Einbahnstraße? Auch für Radfahrer?	? 11468,19106 11526,18929
 Oranienburger Str. - Wilhelm-Gericke-Str.: kann man als Radfahrer direkt von der Oranienburger Str. in die Wilhelm-Gericke-Str. gelangen	? 5545,19909 5598,19912
-Rackebüller Weg: Qualität?	? 10658,-406 10586,-220 10512,83 10463,251 10414,373 10332,607 10281,749
 Lenaustr.: Qualität?	? 10380,757 10281,749 10237,749 10179,744 10021,741
 Glaserweg: Qualität?	? 10187,872 10237,749
 Feldstedter Weg: Qualität?	? 10524,655 10423,636 10332,607 10242,572 10099,524
@@ -2007,5 +2006,5 @@ Lyonel-Feiniger-Str.: Qualität?	? 24131,15109 24139,15046 24151,14982 24160,1493
 Kreuzgraben: Qualität? Können Radfahrer zur Heinrich-Böll-Str. fahren?	? 10309,20032 10264,20209 10251,20252
 Martinstr.: Qualität?	? 4956,5121 5102,5031
 Suchlandstr.: Qualität?	? 4906,5052 5050,4959
-Seppenrader Weg: Qualität, wahrscheinlich betoniert?	? 1153,18359 1225,18508
-Dülmener Pfad: Qualität, wahrscheinlich betoniert?	? 1198,18520 1290,18679
+#: XXX ein anonymer Eintrag hat nur "gute Qualität" eingetragen:
+Paul-Zobel-Str.: Qualität?	? 15724,13544 15724,13298 15846,13297 15851,13511 15897,13512
