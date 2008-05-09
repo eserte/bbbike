@@ -985,16 +985,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_008483',
-         'until' => 1210370399,
-         'text' => 'Malchower Weg (Hohenschönhausen) in beiden Richtungen zwischen Degnerstr. und Gembitzer Str. Baustelle, Straße vollständig gesperrt (bis 09. Mai 2008)',
-         'from' => 1209496288,
-         'id' => 1342,
-         'data' => 'userdel	2::inwork 17017,16716 17059,16560
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_008562',
          'until' => 1216159199,
@@ -1124,6 +1115,29 @@ push @temp_blocking,
 userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_008714',
+         'until' => 1210629600,
+         'text' => 'Straßen um den Blücherplatz Kreuzberg Blücherplatz, Waterlooufer: Mehringdamm - Zossener Str., Blücherstr.: Mehringdamm - Zossener Str., Zossener Str.: Waterlooufer-Blücherstr. gesperrt (bis 12.05.08, 24:00 Uhr)',
+         'from' => 1210313171,
+         'id' => 1358,
+         'data' => 'userdel	2::temp 9522,10017 9444,10000
+userdel	2::temp 9849,10202 9827,10120 9811,10055 9522,10017 9536,10064 9579,10122 9592,10174 9812,10211 9851,10219
+userdel	2::temp 9401,10199 9592,10174
+userdel	2::temp 9579,10122 9689,10124 9811,10055
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_008707',
+         'until' => undef,
+         'text' => 'Voßstr. (Mitte) in beiden Richtungen zwischen Wilhelmstr. und Gertrud-Kolmar-Str. Fahrbahnunterspülung, Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1359,
+         'data' => 'userdel	2::inwork 9000,11727 8837,11676
+',
+         'type' => 'gesperrt'
        }
      
 );
