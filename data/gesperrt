@@ -196,7 +196,7 @@ Schottstr.	1 16276,12273 16389,12394
 Rüdigerstr.	1 16389,12394 16485,12384
 Alfredstr.	1 16211,11951 16261,12224 16276,12273
 Fanningerstr.	1 17139,12100 17092,12107 16994,12122 16890,12135 16794,12144
-Gierkeplatz	1 3450,12240 3460,12270 3484,12280 3516,12273 3531,12252 3524,12222 3495,12209 3463,12216 3450,12240
+Gierkeplatz	1 3447,12269 3456,12296 3478,12306 3510,12301 3528,12276 3521,12243 3493,12228 3463,12237 3447,12269
 Knaackstr.	1 11056,15009 11030,14979 11101,14768
 Hagenplatz	1 1149,8538 1094,8398
 Branitzer Platz	1 1346,12053 1311,12084 1311,12122 1334,12152 1374,12164 1407,12134 1414,12091 1386,12058 1346,12053
@@ -210,7 +210,7 @@ Bayerische Str.	1 4296,10004 4349,10247
 Knorrpromenade	1 14417,11640 14362,11493
 Hoppestr.	1 8617,18310 8482,18284
 Herbststr.	1 8465,18365 8634,18401
-Ruhwaldweg: Schranke gesperrt	2 830,13353 801,13323
+Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
 Alt-Reinickendorf	1 7003,18715 6734,18728 6567,18812 6766,18794 7003,18715
 Lauterstr.	1 5817,7223 5810,7337
 Friedrich-Wilhelm-Platz	1 5318,7424 5310,7325 5324,7205
@@ -422,6 +422,8 @@ Zufahrt zu Germaniagarten/Oberlandgarten	1 11240,6350 11205,6358 11200,6372 1121
 Germaniagarten	1 11224,6244 11206,6252 11220,6323 11237,6326 11252,6319 11243,6246 11224,6244
 Oberlandgarten	1 11246,6403 11230,6413 11238,6470 11253,6473 11269,6466 11264,6409 11246,6403
 Alt-Tempelhof	1 9512,6652 9249,6642 9154,6638 9054,6631 8949,6644 9052,6664 9247,6687 9338,6694 9512,6652
+Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2 21677,6952 21498,7153 21475,7500 21497,7597 21546,7635
+Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2 21475,7500 21341,7487 21025,7349
 Humboldtring -> Hans-Marwitza-Ring: Hochstraße	3 -11399,-1339 -11461,-1424 -11358,-1491
 Hans-Marwitza-Ring -> Humboldtring: Hochstraße	3 -11358,-1491 -11461,-1424 -11540,-1543
 Merkurstr.	1 -8469,-2576 -8380,-2580 -8359,-2582 -8411,-2699 -8432,-2713 -8484,-2710
@@ -565,6 +567,8 @@ Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -
 Stephanstr.	1s 6523,4491 6366,4500
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
+Köpenicker Landstr. -> Güldenhofer Ufer: Mittelstreifen	3 16713,6839 16674,6885 16630,6800
+Güldenhofer Ufer -> Köpenicker Landstr.: Mittelstreifen	3 16630,6800 16674,6885 16568,7009
 Cecilienstr. -> Allee der Kosmonauten: Straßenbahntrasse	3 20281,14012 20241,14016 20210,13776
 Allee der Kosmonauten -> Cecilienstr.: Straßenbahntrasse	3 20269,14256 20241,14016 20281,14012
 Fichtelbergstr. -> Allee der Kosmonauten: Straßenbahntrasse	3 20609,14480 20611,14445 20657,14446
@@ -971,8 +975,8 @@ Gehweg Gelieustr. -> Wolfensteindamm: Linksabbiegen in den Wolfensteindamm gefäh
 Wolfensteindamm -> Gehweg Gelieustr.: Linksabbiegen in den Wolfensteindamm gefährlich / unbequem	3 4692,4997 4675,4983 4725,4876
 Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3 6815,8691 6912,8617 6990,8685
 Hauptstr. -> Parkweg Heinrich-Lassen-Park: Mittelstreifen	3 6765,8480 6912,8617 6815,8691
-Am Tierpark -> Otto-Schmirgal-Str.: Straßenbahntrasse	3 18628,10177 18554,10354 18512,10337
 Otto-Schmirgal-Str. -> Am Tierpark: Straßenbahntrasse	3 18512,10337 18554,10354 18446,10620
+Am Tierpark -> Otto-Schmirgal-Str.: Straßenbahntrasse	3 18631,10167 18554,10354 18512,10337
 Mühlenstr. -> Anschutz-Gelände: Mittelstreifen ohne Überquerungshilfe	3 12504,11464 12539,11416 12594,11467
 Anschutz-Gelände -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3 12594,11467 12539,11416 12576,11375
 Mühlenstr. -> Anschutz-Gelände: Mittelstreifen ohne Überquerungshilfe	3 12539,11416 12576,11375 12638,11433
@@ -1059,7 +1063,7 @@ tragen (Treppe)	0:30:83 9508,12991
 tragen (Treppe)	0:30:-226 9983,16561
 tragen (Treppe)	0:30:38 9982,16527
 tragen (Treppe)	0:30:-115 3756,12614
-tragen (Treppe)	0:30:87 4331,12538
+tragen (Treppe)	0:30:-267 4334,12551
 tragen (Jungfernbrücke, ungefähr 10 Stufen auf jeder Seite)	0:30:54 10213,12003
 tragen (Treppe)	0:30 10583,12206
 tragen (Treppe und Rampe)	0:30:-154 39281,17353
@@ -1408,9 +1412,9 @@ Tor (meist offen, sonst Fußgängerweg nehmen)	BNP:5:75 3822,14195
 Wiebestr.: (Privatweg)	2 4547,13232 4490,12990
 Nithackstr. -> Spandauer Damm: queren nur mit tragen möglich	3 3204,12416 3189,12519 3034,12502
 Spandauer Damm -> Nithackstr.: queren nur mit tragen möglich	3 3280,12512 3189,12519 3204,12416
-Bonhoefferufer	1 3216,12994 3154,12936 3194,12830 3324,12784
-tragen (16 Stufen)	0:40:-183 4135,12685
-tragen (16 Stufen)	0:40:-188 4140,12594
+Bonhoefferufer	1 3216,12994 3154,12936 3193,12857 3327,12818
+tragen (16 Stufen)	0:40:-183 4124,12706
+tragen (16 Stufen)	0:40:-183 4128,12637
 Kaiserdamm -> Stülpnagelstr.: queren schlecht möglich	3 2109,11441 2191,11451 2190,11569
 Stülpnagelstr. -> Kaiserdamm: queren schlecht möglich	3 2190,11569 2191,11451 2282,11463
 Riehlstr. -> Saldernstr.: queren schlecht möglich	3 2393,11381 2390,11468 2405,11587

@@ -8,8 +8,6 @@
 #
 #: section ignorieren vvv
 #: section projektierte Radstreifen der Verkehrsverwaltung vvv
-#: by: http://archiv.tagesspiegel.de/archiv/16.03.2007/3142959.asp
-Wintersteinstr.	? 3763,12279 3759,12362 3748,12472 3741,12607 3738,12639
 # Hier scheint nichts mehr zu passieren: #: last_checked: 2008-04-08 Wilhelmstr. (Kreuzberg)	? 9376,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20080117.1150.92278.html: Bauarbeiten sind 2008-06-15 (Mitte des Jahres) beendet
 Wisbyer Str.	?; 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 11448,16398 11397,16405 11289,16423 11033,16464
@@ -226,7 +224,7 @@ Raddusch: entfällt der Regionalbahnhof?	? 54813,-65044
 Eichhorster Str.: Radweg? Laut Eintrag von housemeister ja, laut Luftbild fraglich	? 21446,18405 21481,18474 21526,18558 21545,18595 21552,18607 21678,18648 21825,18689 21853,18700
 (Eichhorstr. - Schorfheidestr.): Qualität?	? 21825,18689 21828,18701 21860,18718 21875,18717
 (Eichhorstr. - Klandorfer Str.): Qualität?	? 21828,18701 21826,18727 21785,18861
-nördlicher Radweg auf der Bulgarischen Str.: siehe Message-ID: <1kl0p5nkwlmb1.dlg@tebe.my-fqdn.de>	? 15166,8489 15383,8662 15580,8839
+#XXX del: nördlicher Radweg auf der Bulgarischen Str.: siehe Message-ID: <1kl0p5nkwlmb1.dlg@tebe.my-fqdn.de>	? 15166,8489 15383,8662 15580,8839
 Route Lychen - Feldberg: wie sieht der Routenverlauf aus? Qualität?	? 627,89430 551,89619
 Route Lychen - Templin: wie sieht der Routenverlauf aus? Qualität?	? 2480,89399 2468,89293
 Potsdamer Str. oder Hauptstr.: anscheinend gehören die Häuser auf der westlichen Straßenseite ersterer, auf der östlichen Seite letzterer Straße. Wie ist ausgeschildert?	? 7478,9340 7517,9454
@@ -328,8 +326,6 @@ Schützenstr. (Bohnsdorf): Beton, Q0	? 19725,-857 19773,-837 19897,-783 19896,-74
 Schützenstr. (Bohnsdorf): Beton, Q0	? 19465,-907 19529,-1061
 Schützenstr. (Bohnsdorf): Beton, Q0	? 19599,-885 19588,-860 19550,-775
 #: by: ^^^
-#: by: anonymous:
-Sophienwerderweg: Asphalt, Q0	? -1188,13988 -1575,14098 -2396,14245
 #: by: ThomasDob:
 Am Wall (Kleinmachnow): guter Beton, Q0	? -3395,-880 -3322,-894 -3191,-914 -3060,-933 -2926,-955 -2795,-978 -2742,-987
 Promenadenweg (Kleinmachnow): Asphalt, Q0, q4(???), Frage: Gehwegverbindung zum Stahnsdorfer Damm?	? -3391,-1155 -3288,-1153 -3221,-1154 -3087,-1155 -2953,-1156 -2819,-1157 -2720,-1159 -2683,-1160
@@ -723,7 +719,8 @@ Hasselwerderstr.: Einbahnstraße, auch für Radfahrer?	? 18268,5739 18164,5701 180
 #: XXX ein anonymer Eintrag hat einen (diesen?) Mittelweg mit "loser Sandweg" attributiert:
 Mittelweg (Altglienicke, Bohnsdorf): Qualität (laut ADFC-Karte mäßig geeignet)?	? 20265,858 20171,698 20035,348
 Neubrandenburg: Hinterste Mühle - Stadt (Waldweg), wie geht es weiter?	? -78,126443 -112,126528 -62,126684 -96,126768 -231,126900 -428,127368 -493,127450 -671,127478
-Eichbuschallee: Teil der Eichbuschallee im Plänterwald: Qualität?	? 16136,7886 16534,8182
+#: note: Ausgeschildert "zum Sportplatz", zumindest am Anfang Waldweg/Schotter, Q2+
+Eichbuschallee - Plänterwald: Qualität?	? 16136,7886 16534,8182
 Hof Sternhagen - Lindenhagen: Qualität? (Deckenerneuerung 5/2005)	? 35466,92211 34375,92125 33537,92937 33412,93612 33342,94000
 Beenz - Kröchlendorff: Qualität? (zumindest die Kröchlendorffer Seite ist asphaltiert)	? 30850,95280 30813,95463 30179,95743 29814,96060 28388,96768
 Lindenhagen - Beenz: Qualität?	? 32388,94460 31922,94902 31069,95292 30850,95280 30510,95193 30216,94987
@@ -753,7 +750,7 @@ Rauschendorf - Neulögow: Qualität?	? -10466,69247 -10399,69296 -10393,69338 -103
 Neulögow - Seilershof: Qualität?	? -8775,72512 -8174,72513 -8034,72635 -7937,72970 -7851,73171 -7839,73769 -7486,74341 -7455,74445
 #: XXX laut anonymen Eintrag Radweg; keine Verbindung zum restlichen Netz:
 Hermsdorfer Str. (Hohen Neuendorf): Qualität?	? 621,29356 625,29868
-(Dorfstr. (Tiefwerder) - Heerstr.): Qualität?	? -2878,12193 -2953,12015 -2918,11678 -2835,11467
+(Dorfstr. (Tiefwerder) - Heerstr.): Qualität?	? -2916,12195 -2953,12015 -2918,11678 -2835,11467
 Försterweg: Qualität (wahrscheinlich ein holpriger Waldweg)?	? -823,20184 -571,19834 -475,19746 -384,19740 -250,19815 -146,19806 6,19817
 Berlin - Kopenhagen zwischen Liebenwalde und Zehdenick: Qualität? Nur für Radfahrer?	? 8574,51776 8510,52025 8083,52074 8001,52273 8081,53068 7981,54068 7918,54093 7925,54743 8083,55925 7827,56669 7962,57318 7937,57706 7581,58350 7568,58668 7681,59556 7587,60006 7481,60368 7475,60393 7075,60862 6362,61350 5993,61743 5437,63156 5318,63337 5112,63250 4948,63424
 Berlin - Kopenhagen: Zehdenick - Burgwall/Marienthal: Qualität? Nur für Radfahrer?	? 3500,63893 3731,65818 3212,66343 3350,67075 3187,67481 2656,68100 2831,68281 2925,69200 2850,69212 2850,69618 2737,69975 2731,70156 2406,70381 2387,70443 2412,70506 2350,70775 2200,70818 2037,71025 1918,71193 1912,71400 1712,71537 650,71562
@@ -914,21 +911,20 @@ Carl-Ludwig-Schleich-Promenade: neu	? 2279,8638 2317,8616 2353,8636
 (Zum Hubertussee): neu	? 2190,8903 2170,8841 2155,8793 2214,8752 2268,8746 2298,8712
 (Am Hubertussee): neu	? 2299,8675 2279,8674 2233,8670 2153,8693 1949,8788 1902,8814 1807,8893
 #: section ^^^
-Quellenweg: Qualität? Existiert tatsächlich eine Verbindung für Radfahrer zwischen Ruhwaldweg und Fürstenbrunner Weg?	? 1551,13377 1506,13376 1301,13338 1219,13310 1171,13320 1070,13309 919,13281 755,13281
+Quellenweg: Qualität? Existiert tatsächlich eine Verbindung für Radfahrer zwischen Ruhwaldweg und Fürstenbrunner Weg?	? 1610,13380 1551,13377 1506,13376 1301,13338 1219,13310 1171,13320 1070,13309 919,13281 783,13275 738,13277 721,13296
 Heinrich-Zille-Weg: Qualität?	? 815,12653 1070,13309
-(Spandauer Damm - Fürstenbrunnerweg): Qualität?	? 1459,12475 1601,12908 1551,13377 1545,13418
+(Spandauer Damm - Fürstenbrunnerweg): Qualität?	? 1459,12475 1601,12908 1551,13377
+#: note: der nördliche Abschnitt ist Verbundsteinpflaster, Radfahren erlaubt (by rjoop)
+(Spandauer Damm - Fürstenbrunnerweg): Qualität?	? 1301,13338 1311,13210 1336,12967 1335,12921 1242,12535
 #: by: Karsta Prielipp:
 Marinesteig - Schlachtensee: Zugang zum See, wo genau? Evtl. offiziell für Radfahrer verboten	? -2699,3529 -2716,3566
-(Sömmeringstr. - Bonhoefferufer): vorhanden?	? 3735,12705 3588,12754 3511,12763 3528,12849 3517,12874 3487,12876 3422,12770
 #: next_check: 2005-12-01
 Tharauer Allee: Bauarbeiten erledigt?	? -1483,11283 -1634,11346 -1731,11425 -1829,11337
 wohin führt hier der Parkweg, derzeit im Bau?	? 4449,12985 4490,12990 4533,12990
-Hier ist doch ein Uferweg parallel zur Kaiserin-Augusta-Allee, wo genau?	? 5185,13078 5166,13034 4947,13130 4717,13118 4608,13218
 #: XXX: unklarer Beitrag von anonymous (guter Asphalt, kurvenreich?), Einbahnstraßenfrage ist nicht beantwortet
 Pasewalker Str. (Wedding): Qualität (wahrscheinlich Asphalt)? Einbahnstraße auch für Radfahrer?	? 7891,15417 7881,15577
 Verbindung Stülpnagelstr. - Knobelsdorffstr. vorh.?	? 2185,11701 2154,11762
 Greifswalder Str./Lilli-Henoch-Str.: gibt es hier eine Überquerungsmöglichkeit über die Straßenbahntrasse?	? 12614,14941
-Trendelenburgstr.: Qualität (vermutlich Asphalt), Behinderungen?	? 2740,11076 2845,10840
 #: next_check: 2005-11-01
 Caputh - Michendorf: Asphaltierter Zweiwegeradweg im Bau, fertig vorausichtlich Nov. 2005	?::inwork -14279,-9832 -14518,-9621 -14790,-9271 -15120,-8806 -15805,-7964 -15951,-7768
 #XXX del (erst interessant, wenn neue Straßen entstehen...) hier entsteht ein neues Wohngebiet	F:? 897,9056 957,8982 1677,9588 1551,9722
@@ -1373,7 +1369,6 @@ Gartenstr. (Elstal): Qualität?	? -18164,14194 -18123,14276 -18017,14480 -17979,1
 Spechthausener Str. (Eberswalde): Qualität?	? 34356,48775 34378,48552 34354,48308 34372,48205 34451,47693 34518,47449 34475,47425
 Zoostr. (Eberswalde): Qualität?	? 34475,47425 34603,47145 34622,46834 34939,46907 35030,47010 35180,47123
 Falkenberger Chaussee - Pablo-Picasso-Str.: Weg asphaltiert oder betoniert? (laut ADFC-Karte "gut geeignet") Fußgängerfrequenz?	? 17703,17990 17906,17746 17973,17772
-Werkring: Qualität?	? -990,13502 -975,13574 -978,13665 -1000,13764 -1084,13933 -1188,13988
 Krottnaurerstr.: Qualität? (direkt südlich der Spanischen Allee wahrscheinlich Kopfsteinpflaster)	? -2390,2539 -2708,2439 -2749,2548 -2776,2660 -2804,2762 -2847,2893
 Krottnaurerstr.: Qualität unter der S-Bahnbrücke?	? -2920,3246 -2948,3290
 Oderfähre: ab 2007-06-30 in Betrieb	? 71946,40655 72361,41057
@@ -1409,8 +1404,6 @@ Krugsdorf - Koblentz: Qualität?	? 57864,125082 57736,125319 57711,125655 57622,1
 Hoffmannstr. (Adlershof): Qualität?	? 20280,3996 20467,4122 20623,4227
 Grieben - Vielitz: Qualität?	? -14966,56468 -15237,56681 -15453,56959 -15676,57044 -15819,57248 -15984,57315 -16206,57373 -16608,57867 -16755,57921 -16860,58002
 Vielitz - B167: Qualität?	? -16206,57373 -16069,57172 -15773,56724 -15697,55703 -15581,55353 -15335,54980 -15127,54664
-#: note: ein anonymer Kommentar war nicht klar genug ("gute Qualität")
-Gerhart-Hauptmann-Str.: Qualität? (möglicherweise asphaltiert?)	? 22988,8952 23071,9151
 Salzmannstr. - Betriebsbhf. Rummelsburg: existiert eine für Radfahrer befahrbare Verbindung? Qualität?	? 16847,10092 16839,10064 16828,10027 16841,9995 16811,9937
 #: XXX: by Ilka "Kopfsteinpflaster, alte Bahngleise, Q3". Aber wo genau?
 Hönower Wiesenweg: Qualität? Teile für den Autoverkehr gesperrt? Teile komplett gesperrt (Bahngelände)?	? 17852,8155 17803,8203 17751,8284 17708,8316 17624,8353 17554,8458 17483,8644 17416,8767 17375,8847 17335,8971 17308,9090 17271,9159
@@ -1623,8 +1616,6 @@ Bosporusstr.: Qualität?	? 10363,4183 10455,4189 10505,4194 10601,4185 10724,4168
 Gallipoliweg: Qualität? Existiert für Radfahrer eine Verbindung zum Dardanellenweg?	? 10455,4189 10460,4272 10462,4326
 Rätikonweg: Qualität?	? 9671,2145 9731,1956 9805,1711 9821,1692
 Hollabergweg: Qualität?	? 9342,1818 9336,2009
-#: note: laut Tsp vom 2008-03-15 offiziell für Radfahrer freigegeben; green:2
-(Schloßpark Charlottenburg, westlicher Weg): Beschaffenheit des Weges? Nachts beleuchtet?	? 2877,13552 2865,13537 2848,13485 2827,13435 2781,13401 2743,13399 2690,13379 2609,13375 2717,12463
 Annenstr.: Qualität?	? 20269,14256 20376,14244
 Annenstr.: Qualität?	? 20371,14204 20467,14196
 Annenstr.: Qualität?	? 20631,14221 20878,14198 21087,14183 21287,14163
@@ -2019,3 +2010,7 @@ Rügenwalder Weg: Qualität, wahrscheinlich Beton mit Wurzelschäden, vielleicht sc
 Straße zwischen Wissenschaftspark Golm und Universität Potsdam: wo genau verläuft diese Straße?	? -18849,301 -18624,99
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20080325.1450.96925.html
 Elkartstr.: führt der Radweg Berlin-Kopenhagen hier entlang?	? -2158,17613 -2119,17647 -2103,17670 -2102,17714
+Am Plänterwald: Qualität zwischen Orionstr. und Köpenicker Landstraße?	? 15543,8525 15443,8458 15303,8343
+Güldenhofer Ufer: Qualität zwischen Scheiblerstr. und Glanzstr.?	? 16630,6800 16588,6724
+#: by: http://archiv.tagesspiegel.de/archiv/16.03.2007/3142959.asp
+Wintersteinstr.: sind bereits Radstreifen zwischen Brauhofstr. und Otto-Suhr-Allee markiert?	? 3763,12279 3759,12362 3748,12472

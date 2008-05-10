@@ -809,7 +809,7 @@ EOF
        text  => 'Lückstr. Richtung stadteinwärts zwischen Schlichtallee und Wönnichstr. Baustelle, Straße gesperrt (bis Mitte 10.2004) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 16655,10622 16585,10650 16460,10699 16316,10755 16153,10818 16032,10842
+userdel	1 16666,10628 16588,10655 16460,10699 16316,10755 16153,10818 16032,10842
 EOF
      },
      { from  => 1094627730, # 2004-09-08 09:15
@@ -1748,7 +1748,7 @@ EOF
        text  => 'Zimmermannstr. (Marzahn) Richtung Osten zwischen Köpenicker Str. und Lindenstr. Baustelle, Fahrtrichtung gesperrt (bis 30.05.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 21093,9179 21206,9130 21351,9066
+userdel	q4; 21088,9175 21206,9130 21351,9066
 EOF
      },
      { from  => 1123452000, # 2005-08-08 00:00
@@ -2089,13 +2089,13 @@ EOF
        text  => '300 Jahre Charlottenburg, 17.06.2005 bis 19.06.2005',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 3076,12192 3061,12300 3050,12394 3034,12502
-userdel	2 3076,12192 3091,12071
+userdel	2 3072,12222 3060,12311 3050,12394 3034,12502
+userdel	2 3072,12222 3091,12071
 userdel	2 3034,12502 2786,12473 2745,12467 2717,12463 2643,12453
 userdel	2 3034,12502 3189,12519 3280,12512
 userdel	2 3103,11968 3091,12071
-userdel auto	3 3365,12231 3232,12210 3076,12192 2902,12165 2898,12197
-userdel auto	3 2898,12197 2902,12165 3076,12192 3232,12210 3365,12231
+userdel auto	3 3358,12258 3217,12239 3072,12222 2899,12200 2895,12217
+userdel auto	3 2895,12217 2899,12200 3072,12222 3217,12239 3358,12258
 EOF
      },
      { from  => 1120180333, # undef XXX 2005-07-07 00:00
@@ -3239,7 +3239,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002866',
        data  => <<EOF,
-userdel	q4; 17766,6616 17962,6674
+userdel	q4; 17766,6616 17860,6644 17962,6674
 EOF
      },
      { from  => 1132097451, # 2005-11-16 00:30
@@ -3275,7 +3275,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002441',
        data  => <<EOF,
-userdel	1 17614,6571 17766,6616 17962,6674
+userdel	1 17614,6571 17766,6616 17860,6644 17962,6674
 EOF
      },
      { from  => 1130799600, # 2005-11-01 00:00
@@ -8723,7 +8723,7 @@ EOF
 userdel	2::inwork 1971,12368 1935,12761 1901,13061
 userdel	2::inwork 1858,13231 1610,13380 1545,13418
 userdel	2::inwork 929,14261 990,14062 1053,13790 1124,13599
-userdel	2::inwork 1159,13541 1193,13485 1488,13454
+userdel	2::inwork 1159,13541 1175,13513 1193,13485 1488,13454
 EOF
      },
      { from  => undef, # 
@@ -10743,7 +10743,7 @@ userdel	2::inwork -42483,-15134 -41439,-15493 -41352,-15664 -39523,-16953
 EOF
      },
      { from  => 1198328869, # 2007-12-22 14:07
-       until => 1212271200, # 2008-06-01 00:00
+       until => 1210356689, # 2008-06-01 00:00 1212271200
        text  => 'Körtestr. (Kreuzberg) in beiden Richtungen zwischen Südstern und Urbanstr. Baustelle, Straße vollständig gesperrt, Gehweg ist passierbar (bis Mai 2008)',
        type  => 'handicap',
        source_id => 'IM_007458',
@@ -11313,7 +11313,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_008562',
        data  => <<EOF,
-userdel	q4::inwork; 17614,6571 17766,6616 17962,6674
+userdel	q4::inwork; 17614,6571 17766,6616 17860,6644 17962,6674
 EOF
      },
      { from  => 1210543200, # 2008-05-12 00:00

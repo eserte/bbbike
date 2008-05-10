@@ -221,7 +221,7 @@ Schottstr.	1 16276,12273 16389,12394
 Rüdigerstr.	1 16389,12394 16485,12384
 Alfredstr.	1 16211,11951 16261,12224 16276,12273
 Fanningerstr.	1 17139,12100 17092,12107 16994,12122 16890,12135 16794,12144
-Gierkeplatz	1 3450,12240 3460,12270 3484,12280 3516,12273 3531,12252 3524,12222 3495,12209 3463,12216 3450,12240
+Gierkeplatz	1 3447,12269 3456,12296 3478,12306 3510,12301 3528,12276 3521,12243 3493,12228 3463,12237 3447,12269
 Knaackstr.	1 11056,15009 11030,14979 11101,14768
 Hagenplatz	1 1149,8538 1094,8398
 Branitzer Platz	1 1346,12053 1311,12084 1311,12122 1334,12152 1374,12164 1407,12134 1414,12091 1386,12058 1346,12053
@@ -236,7 +236,7 @@ Bayerische Str.	1 4296,10004 4349,10247
 Knorrpromenade	1 14417,11640 14362,11493
 Hoppestr.	1 8617,18310 8482,18284
 Herbststr.	1 8465,18365 8634,18401
-Ruhwaldweg: Schranke gesperrt	2 830,13353 801,13323
+Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
 Alt-Reinickendorf	1 7003,18715 6734,18728 6567,18812 6766,18794 7003,18715
 Lauterstr.	1 5817,7223 5810,7337
 # laut Dominik hier keine Einbahnstraße: Friedrich-Wilhelm-Platz	1 5361,7423 5318,7424
@@ -506,6 +506,12 @@ Zufahrt zu Germaniagarten/Oberlandgarten	1 11240,6350 11205,6358 11200,6372 1121
 Germaniagarten	1 11224,6244 11206,6252 11220,6323 11237,6326 11252,6319 11243,6246 11224,6244
 Oberlandgarten	1 11246,6403 11230,6413 11238,6470 11253,6473 11269,6466 11264,6409 11246,6403
 Alt-Tempelhof	1 9512,6652 9249,6642 9154,6638 9054,6631 8949,6644 9052,6664 9247,6687 9338,6694 9512,6652
+#: XXX_prog: Vielleicht sollte das beim Routing einstellbar sein? vvv
+#: note: Sperrung bestätigt von Stefan (s.sms): vvv
+Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2 21677,6952 21498,7153 21475,7500 21497,7597 21546,7635
+Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2 21475,7500 21341,7487 21025,7349
+#: note: ^^^
+#: XXX_prog: ^^^
 ######################################################################
 #
 # Potsdam
@@ -660,6 +666,7 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 # 
+Schnellerstr.: Mittelstreifen	3nocross 16713,6839 16674,6885 16568,7009
 #: note: Luftbild vvv
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20269,14256 20241,14016 20210,13776
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20474,14442 20611,14445 20657,14446 20727,14467
@@ -732,7 +739,7 @@ Hermannstr.: Gitter auf Mittelstreifen	3nocross 11892,8372 11920,8252 11931,8206
 Bundesplatztunnel	3nocross 5360,7554 5359,7619 5358,7681 5358,7746 5356,7862
 Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061 6873,11011 6824,10904
 Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3906,10035 3930,9919
-# XXX del: Treskowallee: Straßenbahntrasse	3nocross 18628,10177 18690,10016 18698,9996 18737,9901
+# XXX del: Treskowallee: Straßenbahntrasse	3nocross 18631,10167 18690,10016 18698,9996 18737,9901
 Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5474,9961 5475,9914 5472,9850
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19694,15149 19735,15155 20260,15434
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19582,15221 19506,15002 19466,14910 19422,14793
@@ -822,7 +829,7 @@ Linksabbiegen in den Wolfensteindamm gefährlich / unbequem	3nocross 4789,5079 46
 #: by ^^^
 Hauptstr.: Mittelstreifen	3nocross 6687,8385 6765,8480 6912,8617 6990,8685
 #: by: Jirka Klaue:
-Am Tierpark: Straßenbahntrasse	3nocross 18628,10177 18554,10354 18446,10620
+Am Tierpark: Straßenbahntrasse	3nocross 18631,10167 18554,10354 18446,10620
 Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3nocross 12504,11464 12539,11416 12576,11375 12641,11288
 Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3nocross 13001,11000 13080,10956 13144,10921
 Klingelhöferstr.: Mittelstreifen	3 6683,11367 6853,11336 6880,11110
@@ -913,7 +920,7 @@ tragen (Treppe)	0:30 9983,16561
 #: by: rjoop
 tragen (Treppe)	0:30 9982,16527
 tragen (Treppe)	0:30 3756,12614
-tragen (Treppe)	0:30 4331,12538
+tragen (Treppe)	0:30 4334,12551
 tragen (Jungfernbrücke, ungefähr 10 Stufen auf jeder Seite)	0:30 10213,12003
 tragen (Treppe)	0:30 10583,12206
 tragen (Treppe und Rampe)	0:30 39281,17353
@@ -1258,9 +1265,9 @@ Schranke	BNP:5 3981,13292
 Tor (meist offen, sonst Fußgängerweg nehmen)	BNP:5 3822,14195
 Wiebestr.: (Privatweg)	2 4547,13232 4490,12990
 Spandauer Damm: queren nur mit tragen möglich	3nocross 3034,12502 3189,12519 3280,12512
-Bonhoefferufer	1 3216,12994 3154,12936 3194,12830 3324,12784
-tragen (16 Stufen)	0:40 4135,12685
-tragen (16 Stufen)	0:40 4140,12594
+Bonhoefferufer	1 3216,12994 3154,12936 3193,12857 3327,12818
+tragen (16 Stufen)	0:40 4124,12706
+tragen (16 Stufen)	0:40 4128,12637
 Kaiserdamm: queren schlecht möglich	3nocross 2109,11441 2191,11451 2282,11463
 Kaiserdamm: queren schlecht möglich	3nocross 2282,11463 2390,11468 2612,11491
 Kleine Markusstr.	1 12037,12092 11974,12110 11969,12054 12021,12037

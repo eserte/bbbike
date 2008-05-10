@@ -457,15 +457,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1210370400,
-         'text' => 'L 171 Schönfließer Str. Brücke über die DB in der OD Hohen Neuendorf Brückenersatzneubau Vollsperrung 06.08.2007-09.05.2008 ',
-         'from' => 1186264800,
-         'id' => 1109,
-         'data' => 'userdel	2::inwork 2033,29198 2176,29143
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -721,16 +713,7 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_007458',
-         'until' => 1212271200,
-         'text' => 'Körtestr. (Kreuzberg) in beiden Richtungen zwischen Südstern und Urbanstr. Baustelle, Straße vollständig gesperrt, Gehweg ist passierbar (bis Mai 2008)',
-         'from' => 1198328869,
-         'id' => 1275,
-         'data' => 'userdel	q4::inwork 10747,9326 10719,9259
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -883,15 +866,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1210370400,
-         'text' => 'L 222 Gransee - Menz zw. Menz und Kreuz. Zernickow Straßeninstandsetzung Vollsperrung 07.04.2008-09.05.2008 ',
-         'from' => 1207432800,
-         'id' => 1314,
-         'data' => 'userdel	2::inwork -13537,75287 -13950,75662 -14862,76637
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -959,15 +934,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1210370400,
-         'text' => 'K 6206 B101, Elsterwerda - Stolzenhain OD Elsterwerda, Höhe Abzw. Kotschka Straßenbauarbeiten Vollsperrung 10.04.2008-09.05.2008 ',
-         'from' => 1207692000,
-         'id' => 1333,
-         'data' => 'userdel	q4::inwork 20510,-106314 20444,-106435 20435,-106770
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -992,7 +959,7 @@ push @temp_blocking,
          'text' => 'Siemensstr. (Oberschöneweide) Richtung Edisonstr. zwischen Wilhelminenhofstr. und Edisonstr. Baustelle, Fahrbahn auf einen Fahrstreifen verengt bzw. gesperrt, eine Umleitung ist eingerichtet (bis Mitte 07.2008)',
          'from' => 1209496325,
          'id' => 1343,
-         'data' => 'userdel	q4::inwork; 17614,6571 17766,6616 17962,6674
+         'data' => 'userdel	q4::inwork; 17614,6571 17766,6616 17860,6644 17962,6674
 ',
          'type' => 'handicap'
        },
