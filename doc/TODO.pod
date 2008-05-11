@@ -2053,6 +2053,14 @@ L<http://www.adfc-frankfurt-oder.de/radtour/>
 
 =over
 
+=item * (M3)
+
+"Modersohnbrücke" wird nicht gefunden, weil brunnels nicht in strassen
+enthalten ist. Sollte bei einer Brücke, die in Berlin.coords.data
+gefunden wurde, aber die nicht in strassen enthalten ist, in brunnels
+nachgeschaut werden? Würde nicht allzuviele Brücken betreffen, wie es
+aussieht.
+
 =item * (M5) (bug)
 
 Bei Verwendung von PreserveComments=>1 sollte $s->next die Kommentare
