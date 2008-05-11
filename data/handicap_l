@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Sonstige Behinderungen (Brandenburg und weiteres Umland)
-#: version: $Id: handicap_l-orig,v 4.44 2008/05/02 05:43:57 eserte Exp $
+#: version: $Id: handicap_l-orig,v 4.44 2008/05/02 05:43:57 eserte Exp eserte $
 #:
 Brandenburger Str.: Fußgängerzone	q4 -12894,-977 -13005,-1002 -13173,-1039 -13289,-1071 -13410,-1101 -13556,-1140
 Neuer Garten: Schiebestrecke	q3 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12115,1331
@@ -86,11 +86,12 @@ Merkurstr.: enge Straße	q1 -8484,-2710 -8432,-2713 -8411,-2699 -8359,-2582
 Merkurstr.: enge Straße	q1 -8328,-2586 -8359,-2582 -8380,-2580 -8469,-2576
 Kantstr. (Teltow): enge Straße	q1 3689,182 3471,87 3137,-67 2507,-446
 (Uferweg): Bäume auf dem Weg	q1 -13497,-1723 -13543,-1602
-Reiterweg (Potsdam): Bordsteine	q1 -12961,-136 -12857,-168
+Reiterweg (Potsdam): Bordsteine	q1 -12961,-136 -12846,-164
 An den Gärten (Potsdam): enge Straße	q1 -13499,-85 -13432,1
 Hochlandstr.: enge Straße	q1 2054,30388 1846,30408 1689,30431
 Bergholzer Str. (Potsdam): enge Straße	q1 -11579,-2333 -11635,-2414 -11679,-2408
 Bahnhof Schönefeld - Flughafen Schönefeld: Fußgänger	q3 18175,-1570 18234,-1645 18368,-1801
+(Friedrich-Klausing-Str. - Vogelweide): enger Weg	q1 -12960,1684 -12928,1686
 #:
 Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 52431,94119 52422,94028 52350,93856
 Gramzow (Dorfstr.?): gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 49779,90206 49841,90479

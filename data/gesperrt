@@ -87,7 +87,7 @@ Breite Str. Pankow	1 10240,18193 10281,18241 10562,18387 10609,18384
 Breite Str. Pankow	1 10680,18380 10669,18336 10327,18177 10240,18193
 Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
 Edelweißstr.	1 8251,19937 7966,19968 7885,19975 7755,20059
-Angerburger Allee	1 -1524,11108 -1608,11133 -1829,11337 -1895,11400 -1966,11466
+Angerburger Allee	1 -1524,11108 -1608,11133 -1885,11392 -1931,11437 -1986,11487
 Edelhofdamm	1 3200,25429 2938,25317 2702,25223 2730,25298 2907,25363 3211,25484
 Antonienstr./Eichborndamm	1 3930,17920 3970,18126 4009,18322 4085,18694 4098,18762 4162,18891 4240,19019 4210,18878 4171,18677 4102,18298 4059,18107 4015,17912
 Spreestr.	1 17898,6049 17939,5968 17877,5860 17816,5733 17812,5726 17779,5694
@@ -476,12 +476,12 @@ Zimmerstr.	1 -13646,-1168 -13883,-1227
 Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
 Puschkinallee	1 -13052,775 -12922,762 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
-Friedrich-Ebert-Str. (B1) -> Schloßstr.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3 -12719,-1661 -12755,-1585 -12882,-1565
-Schloßstr. -> Friedrich-Ebert-Str. (B1): Straßenbahntrasse, nur für Fußgänger bequem passierbar	3 -12882,-1565 -12755,-1585 -12773,-1544
-Friedrich-Ebert-Str. (B1) -> Am Alten Markt: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3 -12795,-1499 -12773,-1544 -12583,-1552
-Am Alten Markt -> Friedrich-Ebert-Str. (B1): Straßenbahntrasse, nur für Fußgänger bequem passierbar	3 -12583,-1552 -12773,-1544 -12755,-1585
-Friedrich-Ebert-Str. (B1) -> Schwertfegerstr.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3 -12773,-1544 -12795,-1499 -12870,-1493
-Schwertfegerstr. -> Friedrich-Ebert-Str. (B1): Straßenbahntrasse, nur für Fußgänger bequem passierbar	3 -12870,-1493 -12795,-1499 -12833,-1365
+Friedrich-Ebert-Str. -> Schloßstr.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3 -12719,-1661 -12755,-1585 -12882,-1565
+Schloßstr. -> Friedrich-Ebert-Str.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3 -12882,-1565 -12755,-1585 -12773,-1544
+Friedrich-Ebert-Str. -> Am Alten Markt: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3 -12795,-1499 -12773,-1544 -12583,-1552
+Am Alten Markt -> Friedrich-Ebert-Str.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3 -12583,-1552 -12773,-1544 -12755,-1585
+Friedrich-Ebert-Str. -> Schwertfegerstr.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3 -12773,-1544 -12795,-1499 -12870,-1493
+Schwertfegerstr. -> Friedrich-Ebert-Str.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3 -12870,-1493 -12795,-1499 -12833,-1365
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13733,-722 -13772,-623
 Brücke mittlerweile gesperrt	2 -19183,7299 -19150,7320
 Prof.-Dr.-Helmert-Str.: Schranke	BNP:3:-93 -7969,-1659
@@ -1004,6 +1004,7 @@ tragen (ca. 30 Stufen)	0:30:-246 -13802,-1856
 tragen (ca. 30 Stufen)	0:30:-90 -13733,-1856
 tragen (Treppe)	0:30:-127 15091,21172
 tragen (Treppe)	0:30:-267 1471,-311
+tragen (ca. 20 Stufen)	0:30:-221 730,13286
 tragen (Treppe)	0:30:-90 3281,15792
 tragen (Treppe)	0:30:-235 3361,15784
 tragen (ca. 40 Stufen)	0:30:56 1761,3208
