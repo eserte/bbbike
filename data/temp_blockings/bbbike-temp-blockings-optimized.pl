@@ -678,15 +678,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1225494000,
-         'text' => 'L 080 Bahnhofstr. OL Luckenwalde, Einmünd. Beelitzer Str. Straßenausbau Vollsperrung 24.09.2007-31.10.2008 ',
-         'from' => 1190498400,
-         'id' => 1256,
-         'data' => 'userdel	q4::inwork -4725,-34957 -4888,-34952
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -754,9 +746,9 @@ push @temp_blocking,
        },
        undef,
        {
-         'until' => 1212184800,
-         'text' => 'B 168 Prötzel - Tiefensee zw. Prötzel und Kreisgrenze Deckenerneuerung Vollsperrung 03.03.2008-30.05.2008 ',
-         'from' => 1204412400,
+         'until' => 1210716000,
+         'text' => 'B 168 Prötzel - Tiefensee zw. Prötzel und Abzw. Gielsdorf Deckenerneuerung Vollsperrung 05.03.2008-13.05.2008 ',
+         'from' => 1204585200,
          'id' => 1289,
          'data' => 'userdel	2::inwork 48953,26802 48260,27132 46629,27232 44331,27632 44074,27889 41563,28973
 ',
@@ -845,15 +837,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1210456800,
-         'text' => 'L 235 Gielsdorf-Werneuchen OD Werneuchen Straßenausbau Vollsperrung 10.03.2008-10.05.2008 ',
-         'from' => 1205017200,
-         'id' => 1309,
-         'data' => 'userdel	q4::inwork 32766,25156 33511,24201
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1214863200,
          'text' => 'L 029 Oderberg-Liepe OD Oderberg Straßenbauarbeiten Vollsperrung 17.03.2008-30.06.2008 ',
@@ -963,15 +947,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1217541600,
-         'text' => 'B 168 Prötzel - Tiefensee zw. Abzw. Gielsdorf und KG, Höhe Gamensee Deckenerneuerung Vollsperrung 13.05.2008-31.07.2008 ',
-         'from' => 1210543200,
-         'id' => 1344,
-         'data' => 'userdel	2::inwork 41326,28975 40337,28961 40135,28824 39921,28733 39155,29093
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1215900000,
          'text' => 'K 7318 Blankenburg - Potzlow zw. Potzlow und Seehausen Straßenbauarbeiten Vollsperrung 05.05.2008-12.07.2008 ',
@@ -1096,13 +1072,40 @@ userdel	2::temp 9579,10122 9689,10124 9811,10055
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'source_id' => 'IM_008707',
-         'until' => undef,
-         'text' => 'Voßstr. (Mitte) in beiden Richtungen zwischen Wilhelmstr. und Gertrud-Kolmar-Str. Fahrbahnunterspülung, Straße vollständig gesperrt',
-         'from' => undef,
-         'id' => 1359,
-         'data' => 'userdel	2::inwork 9000,11727 8837,11676
+         'until' => 1225494000,
+         'text' => 'L 171 Schönfließer Str. Brücke über die DB in der OD Hohen Neuendorf Brückenersatzneubau Vollsperrung 06.08.2007-31.10.2008 ',
+         'from' => 1186264800,
+         'id' => 1360,
+         'data' => 'userdel	2::inwork 2033,29198 2176,29143
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1225407600,
+         'text' => 'B 168 Fürstenwalde - Müncheberg zw. Schönfelde und OU Müncheberg Vollsperrung 19.05.2008-30.10.2008 ',
+         'from' => 1211061600,
+         'id' => 1361,
+         'data' => 'userdel	2::inwork 54299,7265 55908,9038
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1217541600,
+         'text' => 'L 023 Strausberg - B168 - Eberswalde Abzw. Tiefensee-Prötzel aus Ri. Gielsdorf Deckenerneuerung Vollsperrung 13.05.2008-31.07.2008 ',
+         'from' => 1210543200,
+         'id' => 1362,
+         'data' => 'userdel	2::inwork 41300,28061 41326,28975
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1212789600,
+         'text' => 'L 082 Marzahna - Niemegk zw. Marzahna und Zeuden Straßenbauarbeiten Vollsperrung 13.05.2008-06.06.2008 ',
+         'from' => 1210543200,
+         'id' => 1363,
+         'data' => 'userdel	2::inwork -31201,-45781 -32661,-44144 -33582,-43378 -33576,-43159
 ',
          'type' => 'gesperrt'
        }

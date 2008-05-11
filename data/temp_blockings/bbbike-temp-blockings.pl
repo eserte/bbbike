@@ -10588,7 +10588,7 @@ userdel	q4::inwork -4725,-34957 -5019,-34814
 EOF
      },
      { from  => 1190498400, # 2007-09-23 00:00
-       until => 1225494000, # 2008-11-01 00:00
+       until => 1210485588, # 2008-11-01 00:00 1225494000
        text  => 'L 080 Bahnhofstr. OL Luckenwalde, Einmünd. Beelitzer Str. Straßenausbau Vollsperrung 24.09.2007-31.10.2008 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -10863,9 +10863,9 @@ EOF
 userdel	q4::inwork -73678,77438 -73946,77861 -74038,78181
 EOF
      },
-     { from  => 1204412400, # 2008-03-02 00:00
-       until => 1212184800, # 2008-05-31 00:00
-       text  => 'B 168 Prötzel - Tiefensee zw. Prötzel und Kreisgrenze Deckenerneuerung Vollsperrung 03.03.2008-30.05.2008 ',
+     { from  => 1204585200, # 2008-03-04 00:00
+       until => 1210716000, # 2008-05-14 00:00
+       text  => 'B 168 Prötzel - Tiefensee zw. Prötzel und Abzw. Gielsdorf Deckenerneuerung Vollsperrung 05.03.2008-13.05.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 48953,26802 48260,27132 46629,27232 44331,27632 44074,27889 41563,28973
@@ -11316,9 +11316,9 @@ EOF
 userdel	q4::inwork; 17614,6571 17766,6616 17860,6644 17962,6674
 EOF
      },
-     { from  => 1210543200, # 2008-05-12 00:00
-       until => 1217541600, # 2008-08-01 00:00
-       text  => 'B 168 Prötzel - Tiefensee zw. Abzw. Gielsdorf und KG, Höhe Gamensee Deckenerneuerung Vollsperrung 13.05.2008-31.07.2008 ',
+     { from  => undef, # 2008-05-12 00:00 1210543200
+       until => 1210485554, # 2008-08-01 00:00 1217541600
+       text  => 'B 168 Prötzel - Tiefensee zw. Prötzel, Stadtstelle und KG, Höhe Gamensee Deckenerneuerung Vollsperrung 13.05.2008-31.07.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 41326,28975 40337,28961 40135,28824 39921,28733 39155,29093
@@ -11443,12 +11443,44 @@ userdel	2::temp 9579,10122 9689,10124 9811,10055
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1210484837, # XXX undef
        text  => 'Voßstr. (Mitte) in beiden Richtungen zwischen Wilhelmstr. und Gertrud-Kolmar-Str. Fahrbahnunterspülung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_008707',
        data  => <<EOF,
 userdel	2::inwork 9000,11727 8837,11676
+EOF
+     },
+     { from  => 1186264800, # 2007-08-05 00:00
+       until => 1225494000, # 2008-11-01 00:00
+       text  => 'L 171 Schönfließer Str. Brücke über die DB in der OD Hohen Neuendorf Brückenersatzneubau Vollsperrung 06.08.2007-31.10.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 2033,29198 2176,29143
+EOF
+     },
+     { from  => 1211061600, # 2008-05-18 00:00
+       until => 1225407600, # 2008-10-31 00:00
+       text  => 'B 168 Fürstenwalde - Müncheberg zw. Schönfelde und OU Müncheberg Vollsperrung 19.05.2008-30.10.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 54299,7265 55908,9038
+EOF
+     },
+     { from  => 1210543200, # 2008-05-12 00:00
+       until => 1217541600, # 2008-08-01 00:00
+       text  => 'L 023 Strausberg - B168 - Eberswalde Abzw. Tiefensee-Prötzel aus Ri. Gielsdorf Deckenerneuerung Vollsperrung 13.05.2008-31.07.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 41300,28061 41326,28975
+EOF
+     },
+     { from  => 1210543200, # 2008-05-12 00:00
+       until => 1212789600, # 2008-06-07 00:00
+       text  => 'L 082 Marzahna - Niemegk zw. Marzahna und Zeuden Straßenbauarbeiten Vollsperrung 13.05.2008-06.06.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -31201,-45781 -32661,-44144 -33582,-43378 -33576,-43159
 EOF
      },
     );
