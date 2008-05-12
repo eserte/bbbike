@@ -264,7 +264,7 @@ push @temp_blocking,
          'text' => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05/2008)',
          'from' => 1180567227,
          'id' => 944,
-         'data' => 'userdel	1::inwork 2821,18831 2643,18738 2602,18737 2175,18740 1659,18747 1405,18749 1229,18750
+         'data' => 'userdel	1::inwork 2821,18831 2643,18738 2602,18737 2175,18740 1967,18743 1659,18747 1405,18749 1229,18750
 ',
          'type' => 'gesperrt'
        },
