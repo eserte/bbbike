@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.368 2008/03/31 20:54:34 eserte Exp eserte $
+# $Id: bbbike,v 3.369 2008/05/12 17:52:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -243,7 +243,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.368 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.369 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -16296,11 +16296,10 @@ sub show_route_strname {
 		    Tk::Placement::placer($toplevel{strlist}, -screen => $c,
 					  -addx => 20, -addy => 25, # XXX for fvwm
 					  );
-		} else {
-		    $toplevel{strlist}->deiconify;
-		    # raise nur ausführen, wenn es wirklich was zu sehen gibt
-		    #$toplevel{strlist}->raise;
 		}
+		$toplevel{strlist}->deiconify;
+		# raise nur ausführen, wenn es wirklich was zu sehen gibt
+		#$toplevel{strlist}->raise;
 	    }
 
 	}
@@ -16795,7 +16794,7 @@ EOF
 	join(" & ", map { s/=>/\$\\rightarrow{}\$/g; $_ } @$_) . "\\\\\n"
     } @route_info;
     $latex .= <<'EOF';
-\end{tabular}
+\end{supertabular}
 \end{document}
 EOF
     $latex;

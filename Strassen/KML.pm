@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: KML.pm,v 1.9 2008/03/19 23:02:52 eserte Exp $
+# $Id: KML.pm,v 1.10 2008/05/12 16:04:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::KML;
 
 use strict;
 use vars qw($VERSION $TEST_SET_NAMESPACE_DECL_URI_HACK);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Strassen);
 
@@ -86,9 +86,18 @@ sub kmz2bbd {
     unless ($zip->read($file) == Archive::Zip::AZ_OK()) {
 	die "Can't read kmz file <$file>";
     }
-    my $docMember = $zip->memberNamed('doc.kml');
+    my $docMember;
+    for my $m ($zip->members) {
+	if ($m->fileName =~ m{\.kml$}) {
+	    if ($docMember) {
+		warn "Multiple .kml files in .kmz found, using only the first one!";
+	    } else {
+		$docMember = $m;
+	    }
+	}
+    }
     if (!$docMember) {
-	die "Can't find expected file <doc.kml> in <$file>";
+	die "Can't find any file <*.kml> in <$file>";
     }
     my($contents, $status) = $docMember->contents;
     if ($status != Archive::Zip::AZ_OK()) {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.44 2008/01/27 22:22:30 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.45 2008/05/12 16:31:23 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003,2006 Slaven Rezic. All rights reserved.
@@ -323,7 +323,8 @@ sub BBBikePrint::print_text_postscript {
 
 sub BBBikePrint::print_text_pdflatex {
     my($text, %args) = @_;
-    my $basename = "$progname" . "_$$.tex";
+    my $base_wo_ext = $progname . "_$$";
+    my $basename = "$base_wo_ext.tex";
     my $tmpfile = "$tmpdir/$basename";
     my $pdffile = make_temp("pdf");
     unlink $tmpfile;
@@ -341,7 +342,14 @@ sub BBBikePrint::print_text_pdflatex {
 	$ret = 1;
 	BBBikePrint::view_pdf($pdffile);
     }
-    unlink $tmpfile;
+    # For easier debugging, until tex-related problems are settled,
+    # not deleting on development hosts:
+    if (!$main::devel_host) {
+	unlink $tmpfile;
+	for my $ext ("aux", "log") {
+	    unlink "$tmpdir/$base_wo_ext.$ext";
+	}
+    }
     $ret;
 }
 
@@ -370,11 +378,14 @@ sub BBBikePrint::view_pdf {
     if ($os eq 'win') {
 	Win32Util::start_any_viewer($file);
     } else {
-	for my $prog (qw(xpdf nautilus acroread acroread5 acroread4 gv ggv)) {
-	    if (is_in_path($prog)) {
-		system("$prog $file &");
-		last;
+    TRY: {
+	    for my $prog (qw(xpdf nautilus acroread acroread5 acroread4 gv ggv)) {
+		if (is_in_path($prog)) {
+		    system("$prog $file &");
+		    last TRY;
+		}
 	    }
+	    status_message(Mfmt("Es konnte kein PDF-Viewer gefunden werden. Die PDF-Datei befindet sich in %s.", $file), "err");
 	}
     }
 }
