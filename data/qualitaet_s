@@ -1021,7 +1021,7 @@ Blumenthalstr.: Kopfsteinpflaster	Q2 8961,6126 8990,5950
 Kaiserin-Augusta-Str.: Kopfsteinpflaster	Q2 8990,5950 9192,5921
 (Teltowkanal, Nordufer): Parkweg	Q2 8750,5173 9118,5328 9145,5323 9182,5332
 Selkestr.: Kopfsteinpflaster	Q2 12685,7497 12703,7370
-(Kynaststr. - Uferwanderweg): Parkweg	Q1 14828,10628 14843,10621 14906,10587
+(Kynaststr. - Uferwanderweg): Parkweg	Q1 14843,10621 14906,10587
 (Kynaststr. - Paul-und-Paula-Ufer): Parkweg	Q1 14795,10473 14864,10451
 Paul-und-Paula-Ufer: Kleinteiliges Kopfsteinpflaster	Q1 15314,10121 15261,10167
 Paul-und-Paula-Ufer: Parkweg, teilweise auch Asphalt/Beton	Q1 15261,10167 15204,10201 15134,10243 15085,10272 15044,10297 14903,10403 14864,10451 14884,10508 14906,10587 14937,10598 14990,10581 15100,10637 15248,10562
@@ -1036,7 +1036,10 @@ Uferweg: Parkweg	Q1 15545,9818 15583,9779 15626,9710
 Tunnelstr. - Bartholomäusufer: Parkweg	Q1 15502,9693 15583,9779
 Am Rummelsburger See: glatt gepflastert	Q0 15248,10562 15453,10415
 Am Rummelsburger See: Parkweg	Q2 15453,10415 15469,10329 15496,10277 15518,10234 15604,10204 15601,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15931,9846
-Am Rummelsburger See: Betonweg	Q0 15931,9846 16011,9777 16046,9746 16262,9925
+Am Rummelsburger See: Betonweg	Q0 15931,9846 16011,9777 16046,9746
+Am Rummelsburger See: asphaltiert	Q0 16046,9746 16118,9704
+Am Rummelsburger See - Hauptstr.: Betonweg	Q0 16046,9746 16262,9925
+Gustav-Holzmann-Str.: asphaltiert	Q0 16118,9704 16302,9865
 (Rummelsburger Ufer - An den Knabenhäusern): Parkweg	Q1 15604,10204 15621,10214
 Tauchersteig: guter Asphalt	Q0 22074,2666 21770,2535
 Am Kanal: guter Asphalt	Q0 21750,2593 21131,2454
@@ -1791,6 +1794,10 @@ Gerhart-Hauptmann-Str.: Asphalt	Q0 22988,8952 23071,9151
 Roedernstr.: Asphalt	Q0 23289,8993 23176,9037 23071,9151 23018,9226
 Klara-Schabbel-Str.: Asphalt mit Schäden	Q1 20705,9979 20527,9961 20337,9948 20208,9932
 Lissaer Str.: unbefestigte Straße	Q2 20349,10239 20536,10233 20711,10230
+Georg-Löwenstein-Str.: Asphalt	Q0 16045,9817 16156,9980 16191,10035
+(Rummelsburger Bucht - Georg-Löwenstein-Str.): Asphalt	Q0 16011,9777 16045,9817
+Karl-Wilker-Str.: Asphalt	Q0 15952,10134 16156,9980
+Erich-Müller-Str.: Asphalt	Q0 16045,9817 15831,9968
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 364,4829 319,4906 168,5092 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2240,6904 2116,6861 2054,6840 1975,6818
@@ -4303,6 +4310,8 @@ Straße 17: mäßiger Sandweg	Q2 7305,7221 7311,7425
 Grunowstr.: Kopfsteinpflaster	Q2 25678,9821 25614,9853 25448,9945 24984,10204 24801,10308 24558,10358
 Mehringer Str.: mäßiger Beton	Q1 2615,25634 2667,25730 2840,25899 2910,25994 2934,26048 2944,26099 2947,26169 2939,26239
 Pflanzgartenstr.: schlechtes Kopfsteinpflaster	Q3 23008,7295 22880,7351 22765,7428 22685,7480 22627,7516
+Nordhellesteig: guter Asphalt	Q0 1805,18606 1831,18424 1843,18315 1848,18199
+Baumgartensteg: Kopfsteinpflaster	Q2 -2937,13399 -2882,13474
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953
@@ -5068,7 +5077,7 @@ Brüderstr. (Spandau): Kopfsteinpflaster	Q2 -3937,12898 -3835,12856 -3713,12860
 Brüderstr. (Spandau): Asphalt	Q0 -3713,12860 -3641,12861
 Brüderstr. (Spandau): Kopfsteinpflaster	Q2 -3641,12861 -3372,12935
 Konkordiastr.: Kopfsteinpflaster	Q2 -4065,12382 -4069,12558 -4039,12641 -4009,12735
-Weißenburger Str.: Asphalt	Q0 -3151,12966 -3202,12912 -3274,12879 -3437,12834 -3629,12781
+Schulenburgstr.: Asphalt	Q0 -3159,12962 -3210,12913 -3274,12879 -3437,12834 -3629,12781
 Weißenburger Str.: Kopfsteinpflaster	Q2 -3629,12781 -3724,12773 -3854,12764 -3984,12812
 Weißenburger Str.: Gehwegplatten	Q1 -3984,12812 -4043,12833
 Wilhelmstr. [Parallelstraße] (Spandau): Kopfsteinpflaster	Q2 -3952,12866 -3937,12898 -3907,12958

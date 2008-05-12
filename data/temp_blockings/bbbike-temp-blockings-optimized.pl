@@ -617,15 +617,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1262300400,
-         'text' => 'Bauarbeiten am Ostkreuz, Durchfahrt nicht mehr möglich',
-         'from' => undef,
-         'id' => 1228,
-         'data' => 'userdel	2::inwork 14906,10587 14843,10621 14828,10628
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1106,6 +1098,15 @@ userdel	2::temp 9579,10122 9689,10124 9811,10055
          'from' => 1210543200,
          'id' => 1363,
          'data' => 'userdel	2::inwork -31201,-45781 -32661,-44144 -33582,-43378 -33576,-43159
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. gesperrt sein',
+         'from' => undef,
+         'id' => 1364,
+         'data' => 'userdel	2::inwork 14802,10505 14836,10524 14843,10621 14882,10732 14890,10824
 ',
          'type' => 'gesperrt'
        }

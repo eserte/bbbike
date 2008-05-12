@@ -10353,11 +10353,11 @@ userdel	2::inwork 14802,10505 14836,10524 14843,10621 14882,10732
 EOF
      },
      { from  => undef, # 
-       until => Time::Local::timelocal(reverse(2010-1900,1-1,1,0,0,0)), #
+       until => 1210598963, # Time::Local::timelocal(reverse(2010-1900,1-1,1,0,0,0))
        text  => 'Bauarbeiten am Ostkreuz, Durchfahrt nicht mehr möglich',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14906,10587 14843,10621 14828,10628
+userdel	2::inwork 14906,10587 14843,10621
 EOF
      },
      { from  => 1193776707, # 2007-10-30 21:38
@@ -11481,6 +11481,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -31201,-45781 -32661,-44144 -33582,-43378 -33576,-43159
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 14802,10505 14836,10524 14843,10621 14882,10732 14890,10824
 EOF
      },
     );
