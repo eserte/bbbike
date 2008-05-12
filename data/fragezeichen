@@ -1371,7 +1371,6 @@ Elkartstr.: führt der Radweg Berlin-Kopenhagen hier entlang?	? -2158,17613 -2119
 Am Plänterwald: Qualität zwischen Orionstr. und Köpenicker Landstraße?	? 15543,8525 15443,8458 15303,8343
 Güldenhofer Ufer: Qualität zwischen Scheiblerstr. und Glanzstr.?	? 16630,6800 16588,6724
 Wintersteinstr.: sind bereits Radstreifen zwischen Brauhofstr. und Otto-Suhr-Allee markiert?	? 3763,12279 3759,12362 3748,12472
-Straße 17: Kann man vom Vorarlberger Damm auf die Straße 17 fahren?	? 7311,7425 7314,7451
 Straße 265: Qualität? Für Autos gesperrt?	? -4751,9033 -4771,9033 -5638,9465 -6306,9794 -6324,9778
 Ascherberger Weg: Qualität?	? 1411,18447 1448,18436 1501,18429 1510,18429 1557,18421 1603,18418 1612,18417 1686,18419 1758,18421 1831,18424 1903,18429 1975,18431 2162,18452 2244,18465
 Kreuztaler Weg: Qualität?	? 2220,18554 2416,18598
@@ -1381,7 +1380,6 @@ Erndtebrücker Weg: Qualität?	? 2419,18572 2501,18594 2498,18657
 Oelder Weg: Qualität?	? 1967,18743 1965,18686 1965,18651 1974,18616
 Finnentroper Weg: Qualität?	? 2117,18632 2162,18452 2199,18304 2210,18262
 Betzdorfer Pfad: Qualität?	? 2199,18304 2278,18335
-Coesfelder Weg: Qualität?	? 1658,18693 1761,18693 1782,18689 1965,18686
 Attendorner Weg: Qualität?	? 1932,18610 1975,18431 2022,18225 2031,18184
 Plettenberger Pfad: Qualität?	? 1869,18608 1903,18429 1924,18311 1936,18209
 Herscheider Weg: Qualität?	? 1743,18604 1758,18421 1771,18303 1760,18200
@@ -1423,6 +1421,8 @@ Klosterfelder Weg: Qualität?	? 2988,20214 3174,19986
 Eichstädter Weg: Qualität?	? 3125,19918 2928,20155
 Letschiner Weg: Qualität?	? 3075,19850 2881,20086
 Heidereuterstr.: Qualität?	? -3002,13442 -2950,13513 -2882,13474 -2699,13359 -2580,13321
+Hüttigpfad: Qualität?	? 5107,14781 5057,14824 4887,14931 4810,15000 4724,15055 4668,15066 4598,15057 4459,15066
+Westerlandstr.: Gibt es hier einen Radweg?	? -5039,15618 -5023,15688 -5000,15769 -5010,15787 -5056,15800 -5066,15820 -5036,15923 -5019,15970 -4962,16099
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -1440,6 +1440,7 @@ Freiheitsweg (ausgeschilderte Radroute - welche?)	? 6558,18947 6715,18918 6753,1
 Jugendplatz (Qualität?)	? 1191,14513 1262,14510
 (Grünhofer Weg - Bullengraben) (Art der Pflasterung: Kopfsteinpflaster oder Verbundsteinpflaster?)	? -4349,13567 -4357,13415
 (Weg zur Krampenburg) (ist das ein offizieller Name mit Ausschilderung?)	? 27609,305 27571,262 27171,155 27273,-106 27407,-401 27552,-741 27559,-1365 27357,-1545 27323,-1671
+Stadtrandstr. (Qualität?)	? -6755,15682 -6766,15741 -6719,16111
 (Allee der Kosmonauten - Biesdorfer Promenade) (Qualität? (laut ADFC-Karte gut geeignet))	? 19837,13531 19826,13444 19835,13152 20076,13034
 Ferdinand-Buisson-Str. (Qualität der Straße?)	? 12331,20963 12459,21010 12570,21058 12762,21140 12837,21229 12885,21282 12939,21345 12948,21421 12953,21502 12994,21719 13008,21783 13050,21994
 Grimmingweg (Qualität des Grimmingweges? (sowohl zwischen Säntisstr. und Föttingerzeile als auch des Fußwegabschnittes))	? 9978,1854 10001,1814 10004,1787 10003,1768 9943,1543 9931,1502 9908,1416
@@ -1586,7 +1587,7 @@ Rotdornstr. (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Aut
 Baumgartensteg (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? -2882,13474 -2937,13399
 tragen (zwei kurze Treppen) (wo sind die Treppen genau?)	? 9453,6415
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position ist vielleicht nicht ganz genau)	? -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9046,22376
-Radwege unterschiedlicher Form und Qualtität (genauer spezifizieren)	? -9723,-2451 -9700,-2459 -9534,-2515 -9462,-2540 -9118,-2649 -9075,-2664 -8865,-2732 -8500,-2856 -8428,-2886 -8283,-2917 -7873,-3094 -7487,-3097 -7060,-3124 -6810,-3151
+Radwege unterschiedlicher Form und Qualtität (genauer spezifizieren)	? -9723,-2451 -9700,-2459 -9534,-2515 -9462,-2540 -9118,-2649 -9075,-2664 -8865,-2732 -8500,-2856 -8428,-2886 -8283,-2917 -7873,-3094 -7497,-3096 -7487,-3097 -7060,-3124 -6810,-3151
 Zweirichtungsradweg auf der östlichen Seite (laut "Berliner Umland" entnommen)	? -18356,4783 -18233,4501 -18025,4018
 Zweirichtungsradweg auf der östlichen Seite (laut "Berliner Umland" entnommen)	? -17588,2815 -17309,2517 -16706,1911
 Radweg (andere Straßenseite auch?)	? 37093,-151665 37375,-151190
