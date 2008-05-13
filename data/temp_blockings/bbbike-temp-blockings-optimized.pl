@@ -1051,19 +1051,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_008714',
-         'until' => 1210629600,
-         'text' => 'Straßen um den Blücherplatz Kreuzberg Blücherplatz, Waterlooufer: Mehringdamm - Zossener Str., Blücherstr.: Mehringdamm - Zossener Str., Zossener Str.: Waterlooufer-Blücherstr. gesperrt (bis 12.05.08, 24:00 Uhr)',
-         'from' => 1210313171,
-         'id' => 1358,
-         'data' => 'userdel	2::temp 9522,10017 9444,10000
-userdel	2::temp 9849,10202 9827,10120 9811,10055 9522,10017 9536,10064 9579,10122 9592,10174 9812,10211 9851,10219
-userdel	2::temp 9401,10199 9592,10174
-userdel	2::temp 9579,10122 9689,10124 9811,10055
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1225494000,

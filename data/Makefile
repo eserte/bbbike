@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.184 2008/05/02 06:10:51 eserte Exp $
+# $Id: Makefile,v 2.186 2008/05/13 19:13:07 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -824,7 +824,7 @@ fetch-opengeodb:	${OPENGEODB_D_ORTE_FILE}
 
 # NOTE: This will only fetch one version. To fetch a newer one, remove
 # the old first.
-${OPENGEODB_D_ORTE_FILE}:
+${OPENGEODB_D_ORTE_PATH}:
 	@echo -n "Should I fetch ${OPENGEODB_D_ORTE_DISTURL} to ${OPENGEODB_D_ORTE_PATH}? (CTRL-C to abort) "
 # && true only for bugs in old pmake
 	@read yn && true
@@ -1391,7 +1391,7 @@ do-check-nearest:	.check-do-check-nearest
 	$(PERL) -I${BBBIKEDIR} -I${BBBIKEDIR}/lib \
 	    -MStrassen -MObject::Iterate=iterate -e \
 	    '$$s = Strassen->new($$ARGV[0]);\
-	     iterate { ($$dist) = $$_->[Strassen::NAME] =~ /^\S+\s+(\d+)/; die "Distance $$dist m found" if $$dist < 20 } $$s' ${PERSISTENTTMPDIR}/check_nearest.bbd
+	     iterate { ($$dist) = $$_->[Strassen::NAME] =~ /^\S+\s+(\d+)/; if ( $$dist < 20 ) { system "head", "${PERSISTENTTMPDIR}/check_nearest.bbd"; die "Distance $$dist m found"; }; } $$s' ${PERSISTENTTMPDIR}/check_nearest.bbd
 
 .if 0
 GNUmakefile: Makefile $(MISCRSRCDIR)/b2gmake

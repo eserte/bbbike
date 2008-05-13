@@ -2354,7 +2354,7 @@ EOF
        text  => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarer Str. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 20.07.2005-01.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 1762,31318 1918,31279 2126,31207
+userdel	2 1762,31318 1918,31279 1931,31275 2126,31207
 EOF
      },
      { from  => 1121724000, # 2005-07-19 00:00
