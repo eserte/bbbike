@@ -1496,7 +1496,10 @@ GPSPORT?=	/dev/ttyS0
 
 BBD2POLISH?=	${MISCSRCDIR}/bbd2polish
 
-CGPSMAPPER_FILES=	bbbike brb wide fragezeichen bbbikeall
+## The old and unused multi images. Nowadays only one image may be
+## uploaded at one time (bbbikeall)
+#CGPSMAPPER_FILES=	bbbike brb wide fragezeichen
+CGPSMAPPER_FILES=	bbbikeall
 CGPSMAPPER_MP_FILES=	${CGPSMAPPER_FILES:S/$/.mp/:S/^/${PERSISTENTTMPDIR}\//}
 CGPSMAPPER_IMG_FILES=	${CGPSMAPPER_FILES:S/$/.img/:S/^/${PERSISTENTTMPDIR}\//}
 
@@ -1504,7 +1507,7 @@ cgpsmapper-output:	${CGPSMAPPER_MP_FILES}
 
 cgpsmapper-images:	${CGPSMAPPER_IMG_FILES}
 
-cgpsmapper-upload:	${SENDMAP} cgpsmapper-images cgpsmapper-upload-instructions
+cgpsmapper-upload:	cgpsmapper-images cgpsmapper-upload-instructions
 
 ## Formerly:
 #cgpsmapper-upload:	${SENDMAP} cgpsmapper-images do-cgpsmapper-upload
