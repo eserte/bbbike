@@ -7936,9 +7936,9 @@ EOF
 userdel	2::temp 23952,15086 23960,15021 23993,14797
 EOF
      },
-     { from  => 1180567227, # 2007-05-31 01:20
-       until => 1212271199, # 2008-05-31 23:59
-       text  => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05/2008)',
+     { from  => 1210715191, # 2008-05-13 23:46
+       until => 1214863199, # 2008-06-30 23:59
+       text  => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 06.2008)',
        type  => 'gesperrt',
        source_id => 'IM_005465',
        data  => <<EOF,
@@ -11461,7 +11461,7 @@ EOF
      },
      { from  => 1211061600, # 2008-05-18 00:00
        until => 1225407600, # 2008-10-31 00:00
-       text  => 'B 168 Fürstenwalde - Müncheberg zw. Schönfelde und OU Müncheberg Vollsperrung 19.05.2008-30.10.2008 ',
+       text  => 'B 168 Fürstenwalde - Müncheberg zw. Schönfelde und Kreisgrenze Deckenerneuerung Vollsperrung 19.05.2008-30.10.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 54299,7265 55908,9038

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: restrict_bbd_data.pl,v 2.6 2008/05/04 20:50:17 eserte Exp eserte $
+# $Id: restrict_bbd_data.pl,v 2.8 2008/05/13 19:32:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -91,6 +91,7 @@ if (!GetOptions('bbox=s@' => \@bbox_s,
     usage();
 }
 
+usage() if @ARGV;
 usage() if (!@bbox_s && !@contains_polygons_s && !@in && !@notin);
 my @bboxes;
 if (@bbox_s) {

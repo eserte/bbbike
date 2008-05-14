@@ -22,6 +22,16 @@ Legend:
 
 =over
 
+=item * (H4) (improvement)
+
+Unification of plot streets and plot points. Eigentlich nicht so
+schwierig: alles, was einen Punkt hat, wird wie bei plot_point
+gezeichnet, und alles andere wie bei plot_street. Der Teufel steckt
+wohl im Detail: am Ende wird ein itemconfigure über alle neu
+gezeichneten Elemente gemacht, evtl. muss es hier Unterschiede geben.
+Vielleicht gibt es Konflikte bei den Kategorien. Vielleicht reicht es,
+wenn man den zu evaluierenden Code ein bisschen zusammenfasst.
+
 =item * (M3) (bug)
 
 Einen Workaround finden, damit die Comboboxen auch einen weißen

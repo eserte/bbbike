@@ -260,9 +260,9 @@ push @temp_blocking,
        undef,
        {
          'source_id' => 'IM_005465',
-         'until' => 1212271199,
-         'text' => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05/2008)',
-         'from' => 1180567227,
+         'until' => 1214863199,
+         'text' => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 06.2008)',
+         'from' => 1210715191,
          'id' => 944,
          'data' => 'userdel	1::inwork 2821,18831 2643,18738 2602,18737 2175,18740 1967,18743 1659,18747 1405,18749 1229,18750
 ',
@@ -737,15 +737,7 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1210716000,
-         'text' => 'B 168 Prötzel - Tiefensee zw. Prötzel und Abzw. Gielsdorf Deckenerneuerung Vollsperrung 05.03.2008-13.05.2008 ',
-         'from' => 1204585200,
-         'id' => 1289,
-         'data' => 'userdel	2::inwork 48953,26802 48260,27132 46629,27232 44331,27632 44074,27889 41563,28973
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1220133600,
@@ -1064,7 +1056,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        {
          'until' => 1225407600,
-         'text' => 'B 168 Fürstenwalde - Müncheberg zw. Schönfelde und OU Müncheberg Vollsperrung 19.05.2008-30.10.2008 ',
+         'text' => 'B 168 Fürstenwalde - Müncheberg zw. Schönfelde und Kreisgrenze Deckenerneuerung Vollsperrung 19.05.2008-30.10.2008 ',
          'from' => 1211061600,
          'id' => 1361,
          'data' => 'userdel	2::inwork 54299,7265 55908,9038
