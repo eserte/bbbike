@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeCrosshairs.pm,v 1.7 2008/04/21 19:33:13 eserte Exp $
+# $Id: BBBikeCrosshairs.pm,v 1.8 2008/05/14 20:59:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -12,11 +12,16 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
+# Some strangeness in the Shift-F... bindings: these do not seem to
+# work anymore on my system (X.Org version: 6.8.99.903), but they
+# clearly worked with older X servers. Nowadays it seems that
+# <XF86_Switch_VT_...> is fired instead.
+
 package BBBikeCrosshairs;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(@old_bindings $angle $pd $angle_steps $pd_steps $show_info);
 $angle = 0       if !defined $angle;
@@ -39,6 +44,12 @@ sub activate {
     for my $event (qw(F4 F5 Shift-F4 F6 F7 Shift-F6)) {
 	my $old_binding = $top->bind("<$event>");
 	push @old_bindings, sub { $top->bind("<$event>" => $old_binding) };
+    }
+    for my $event (qw(XF86_Switch_VT_4 XF86_Switch_VT_6)) {
+	eval {
+	    my $old_binding = $top->bind("<$event>");
+	    push @old_bindings, sub { $top->bind("<$event>" => $old_binding) };
+	};
     }
 
     if (!$c->find("withtag", "crosshairs")) {
@@ -126,11 +137,15 @@ sub activate {
 			       }
 			   }
 		       });
-	$top->bind("<Shift-F4>" => sub {
-		       $angle = 0;
-		       $crosshair_angle_dist_changed++;
-		       $change_coords_with_pointerxy->();
-		   });
+	for my $ev (qw(XF86_Switch_VT_4 Shift-F4)) {
+	    eval {
+		$top->bind("<$ev>" => sub {
+			       $angle = 0;
+			       $crosshair_angle_dist_changed++;
+			       $change_coords_with_pointerxy->();
+			   });
+	    };
+	}
 	$top->bind("<F4>" => sub {
 		       $angle += deg2rad($angle_steps);
 		       $crosshair_angle_dist_changed++;
@@ -142,11 +157,15 @@ sub activate {
 		       $change_coords_with_pointerxy->();
 		   });
 
-	$top->bind("<Shift-F6>" => sub {
-		       $pd = 0;
-		       $crosshair_angle_dist_changed++;
-		       $change_coords_with_pointerxy->();
-		   });
+	for my $ev (qw(XF86_Switch_VT_6 Shift-F6)) {
+	    eval {
+		$top->bind("<$ev>" => sub {
+			       $pd = 0;
+			       $crosshair_angle_dist_changed++;
+			       $change_coords_with_pointerxy->();
+			   });
+	    };
+	}
 	$top->bind("<F6>" => sub {
 		       $pd += $pd_steps;
 		       $crosshair_angle_dist_changed++;

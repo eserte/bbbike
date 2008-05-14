@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.226 2008/05/13 19:07:01 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.226 2008/05/13 19:07:01 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10257,-2654 10392,-2980 10475,-3174
@@ -325,7 +325,7 @@ Jahnstr: Kopfsteinpflaster	Q2 11509,9392 11493,9128
 Mauerweg: teilweise nur mäßiger Asphalt	Q1 7725,21247 7289,20618 7083,20584 6601,20542 6487,20512 6436,20477 6365,20452
 An der Nordbahn: mäßiges Pflaster (?)	Q1 6669,20129 6374,20394 6289,20468
 An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q1 8665,18570 8476,18773
-An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q1 8361,18778 7528,19469
+An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q1 8361,18778 8237,18880 7528,19469
 An der Nordbahn: mäßiges Pflaster (?)	Q1 7528,19469 6694,20164 6398,20401 6364,20431 6365,20452
 Pestalozzistr.: Kopfsteinpflaster	Q2 4433,11213 4556,11206 4728,11195 4782,11192
 Pestalozzistr.: Kopfsteinpflaster	Q2 4173,11225 4077,11226 3981,11226
@@ -620,7 +620,7 @@ Wuhlewanderweg: guter Asphalt	Q0 22025,6612 22099,6401 22150,6324 22214,6271 222
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22240,6118 22135,5882 22079,5873
 Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1 22079,5873 21846,5856 21744,5804
 Wuhlewanderweg, Zufahrt: Schotter	Q2 21744,5804 21630,5671
-Hämmerlingstr.: mäßiger Asphalt	Q1 22084,5774 22095,5585
+Hämmerlingstr.: mäßiger Asphalt	Q1 22084,5774 22090,5673 22095,5585
 Dorfstr.: Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2 30370,3571 30183,3377 30158,3275 29902,3104 29954,3037
 Rialtoring: teilweise Kopfsteinpflaster, sonst Asphalt	Q1 31078,3372 31012,3146
 Biberpelzstr.: teilweise Kopfsteinpflaster	Q1 31463,2748 31546,2768
@@ -1334,7 +1334,7 @@ Färberstr. - Uferweg: wassergebundener Belag	Q1 21675,4989 21735,5003
 Glanzstr.: Asphalt	Q0 16323,6998 16430,6880 16588,6724
 Heinrich-Lassen-Park: wassergebundener Belag	Q1 6664,8787 6740,8682 6815,8691 6912,8617
 Am Berlin-Spandauer Schiffahrtskanal: Kopfsteinpflaster	Q2 8337,13541 8248,13659
-Am Berlin-Spandauer Schiffahrtskanal: glatter Belag	Q0 8248,13659 8101,13901 8114,13921
+Am Berlin-Spandauer Schiffahrtskanal: glatter Belag	Q0 8248,13659 8101,13901 8137,13925
 Uferweg: Asphalt für Radfahrer, Kopfsteinpflaster für Fußgänger	Q0 8015,14109 7993,14114 7954,14187 7828,14405 7807,14441
 (Uferweg am Nordhafen): Asphalt	Q0 7753,14528 7695,14545 7498,14658
 Gabrielenstr.: überwiegend mäßiger Asphalt	Q1 1715,20766 1684,20773 1630,20731 1518,20615 1407,20563 1127,20434 1060,20403
@@ -3618,7 +3618,7 @@ Rue Diderot: Asphalt	Q0 4559,21681 4625,21595
 #: note: auch laut ADFC-Karte gut befahrbar
 (Weg parallel zur S-Bahn): Asphalt	Q0 27068,5723 27096,5828 30021,5322
 #: by: David wolff:
-Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q2 12993,21112 13065,21267 13107,21357 13136,21419 13158,21471 13235,21740 13315,21969 13609,22143 13682,22139 13762,22064
+Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q2 12993,21112 13065,21267 13107,21357 13136,21419 13158,21471 13235,21740 13315,21969 13392,22014 13609,22143 13682,22139 13762,22064
 #: by: Andreas Aurenz: vvv
 Am Breiten Luch: Asphalt	Q0 17531,17802 17650,17605 17729,17448 17907,17161
 #: XXX: aber 25 km/h Geschwindigkeit?
@@ -3640,7 +3640,7 @@ Flaischlenstr.: asphaltiert	Q0 13497,22623 13458,22519
 Flaischlenstr.: schlechtes Kopfsteinpflaster, Ausweichen auf den Fußweg (Rasenflächen mit Trampelpfad) möglich	Q3 13458,22519 13395,22365 13354,22327 13267,22090 13249,22003
 Frankenstr.: schlechtes Kopfsteinpflaster	Q3 13267,22090 13534,22225 13565,22271 13646,22387 13707,22468
 #: confirmed_by: srt (von der Bahnstrecke aus gesehen)
-Rudelsburgstr.: Asphalt	Q0 12814,20648 12835,20670 12865,20684 13165,21144 13204,21203 13255,21282 13371,21462 13601,21826 13762,22064 13845,22231
+Rudelsburgstr.: Asphalt	Q0 12814,20648 12835,20670 12865,20684 13165,21144 13204,21203 13255,21282 13371,21462 13601,21826 13649,21896 13762,22064 13845,22231
 Frankensteinstr.: schlechtes Kopfsteinpflaster	Q3 13845,22231 13646,22387 13458,22519
 #: XXX: "glaube ich":
 Wolkensteinstr.: fester Sandweg	Q2 13707,22468 13497,22623
@@ -4630,8 +4630,10 @@ Siemenswerderweg: sehr schlechtes Kopfsteinpflaster	Q3 -2850,11423 -2938,11244 -
 #: by: ronald (rwarsow):
 Buchsteinweg: guter Asphalt	Q0 9805,2196 9876,2007 9922,1896
 #: by: Marek Bänsch: vvv
-(Am Invalidenfriedhof - Scharnhorststr.): gut befahrbarer Schotterweg	Q1 8114,13921 8216,13987
-Invalidenfriedhof: Asphalt mit tiefen Querrillen, parallel gut befahrbarer Schotterweg	Q1 8114,13921 8015,14109
+(Am Invalidenfriedhof - Scharnhorststr.): gut befahrbarer Schotterweg	Q1 8137,13925 8216,13987
+#: XXX: by wosch, Nachfrage pending:
+#: add_fragezeichen: was für eine Qualität hat der provisorischer Weg am Invalidenfriedhof?
+Invalidenfriedhof: Asphalt mit tiefen Querrillen, parallel gut befahrbarer Schotterweg	Q1 8137,13925 8015,14109
 #: by: ^^^
 #: by: ust.becker:
 Am Steinbergpark: guter Asphalt	Q0 4130,20765 3912,21090
@@ -6446,7 +6448,7 @@ Am Waldpark: mäßiges Kopfsteinpflaster	Q2 4240,23985 4226,24037 4154,24112 4156,
 #: by: Frank Zieps:
 #: note: "25 km/h ohne Begründung" ignoriert
 Rackebüller Weg: Beton	Q0 10658,-406 10586,-220 10512,83 10463,251 10414,373 10332,607 10281,749
-#: by: uwe  timm:
+#: by: uwe timm:
 Lauberhornweg: guter Asphalt	Q0 10492,2852 10520,3001 10533,3001
 #: die3muehlis:
 Lilienstr.: Kopfsteinpflaster	Q2 3929,4863 3991,4773 4031,4707
@@ -6478,6 +6480,29 @@ Hirschkäferweg: guter Asphalt	Q0 -6982,16403 -6953,16395 -6859,16369 -6767,16343
 Westerlandstr.: Asphalt	Q0 -5039,15618 -5023,15688 -5000,15769 -5010,15787 -5056,15800 -5066,15820 -5036,15923 -5019,15970 -4962,16099
 #: by: sonja.burg:
 Coesfelder Weg: guter Asphalt	Q0 1658,18693 1761,18693 1782,18689 1965,18686
+#: by: Falk Hübner:
+Oberonstr.: schlechtes Kopfsteinpflaster, Ausweichen auf Fußweg mit ebenfalls schlechter Qualität möglich	Q3 13649,21896 13392,22014
+#: by: Peter Born: vvv
+Ehrenfelder Platz: guter Asphalt	Q0 20052,-239 20148,-236
+Ehrenfelder Str.: guter Asphalt	Q0 20148,-236 20228,-235 20308,-234
+Kalker Str.: guter Asphalt	Q0 20348,-380 20327,-305 20308,-234 20302,-51
+#: by: ^^^
+#: by: Holger Pochert:
+Nackthalsweg: gutes Kopfsteinpflaster	Q1 16068,525 16135,473
+#: by: Jan Lehmann:
+Müngersdorfer Str.: guter Asphalt	Q2 20390,137 20351,287 20326,374
+#: by: Olf Neuse:
+#: note "Gehweg ist aus Zuckersand"
+Keltensteig: schlechtes Kopfsteinpflaster	Q3 20302,1613 20362,1480
+#: by: Dieter Sobkowski: vvv
+#: note: "einige Fußgänger" ignoriert
+Fährallee: guter Asphalt	Q0 27190,-6165 27058,-6150 26863,-6318 26710,-6404
+Jackyallee: guter Asphalt	Q0 27058,-6150 27036,-6064
+#: confirmed_by: D (anonymous) (der gleiche???)
+Argoallee: guter Asphalt	Q0 26715,-6276 26962,-6074 27036,-6064
+#: by: ^^^
+#: by: Patrizia Bock:
+Muschelkalkweg: Asphalt	Q0 10718,1220 10868,1281 10950,1315 11042,1352 11120,1384 11155,1273
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

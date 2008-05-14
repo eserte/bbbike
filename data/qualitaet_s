@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.226 2008/05/13 19:07:01 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.226 2008/05/13 19:07:01 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10257,-2654 10392,-2980 10475,-3174
@@ -313,7 +313,7 @@ Jahnstr: Kopfsteinpflaster	Q2 11509,9392 11493,9128
 Mauerweg: teilweise nur mäßiger Asphalt	Q1 7725,21247 7289,20618 7083,20584 6601,20542 6487,20512 6436,20477 6365,20452
 An der Nordbahn: mäßiges Pflaster (?)	Q1 6669,20129 6374,20394 6289,20468
 An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q1 8665,18570 8476,18773
-An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q1 8361,18778 7528,19469
+An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q1 8361,18778 8237,18880 7528,19469
 An der Nordbahn: mäßiges Pflaster (?)	Q1 7528,19469 6694,20164 6398,20401 6364,20431 6365,20452
 Pestalozzistr.: Kopfsteinpflaster	Q2 4433,11213 4556,11206 4728,11195 4782,11192
 Pestalozzistr.: Kopfsteinpflaster	Q2 4173,11225 4077,11226 3981,11226
@@ -589,7 +589,7 @@ Wuhlewanderweg: guter Asphalt	Q0 22025,6612 22099,6401 22150,6324 22214,6271 222
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22240,6118 22135,5882 22079,5873
 Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1 22079,5873 21846,5856 21744,5804
 Wuhlewanderweg, Zufahrt: Schotter	Q2 21744,5804 21630,5671
-Hämmerlingstr.: mäßiger Asphalt	Q1 22084,5774 22095,5585
+Hämmerlingstr.: mäßiger Asphalt	Q1 22084,5774 22090,5673 22095,5585
 Dorfstr.: Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2 30370,3571 30183,3377 30158,3275 29902,3104 29954,3037
 Rialtoring: teilweise Kopfsteinpflaster, sonst Asphalt	Q1 31078,3372 31012,3146
 Biberpelzstr.: teilweise Kopfsteinpflaster	Q1 31463,2748 31546,2768
@@ -1239,7 +1239,7 @@ Färberstr. - Uferweg: wassergebundener Belag	Q1 21675,4989 21735,5003
 Glanzstr.: Asphalt	Q0 16323,6998 16430,6880 16588,6724
 Heinrich-Lassen-Park: wassergebundener Belag	Q1 6664,8787 6740,8682 6815,8691 6912,8617
 Am Berlin-Spandauer Schiffahrtskanal: Kopfsteinpflaster	Q2 8337,13541 8248,13659
-Am Berlin-Spandauer Schiffahrtskanal: glatter Belag	Q0 8248,13659 8101,13901 8114,13921
+Am Berlin-Spandauer Schiffahrtskanal: glatter Belag	Q0 8248,13659 8101,13901 8137,13925
 Uferweg: Asphalt für Radfahrer, Kopfsteinpflaster für Fußgänger	Q0 8015,14109 7993,14114 7954,14187 7828,14405 7807,14441
 (Uferweg am Nordhafen): Asphalt	Q0 7753,14528 7695,14545 7498,14658
 Gabrielenstr.: überwiegend mäßiger Asphalt	Q1 1715,20766 1684,20773 1630,20731 1518,20615 1407,20563 1127,20434 1060,20403
@@ -2866,7 +2866,7 @@ Avenue Charles de Gaulle: Asphalt	Q0 4139,21782 4314,21614 4373,21561 4559,21681
 Rue Montesquieu: Asphalt	Q0 4683,21905 4314,21614
 Rue Diderot: Asphalt	Q0 4559,21681 4625,21595
 (Weg parallel zur S-Bahn): Asphalt	Q0 27068,5723 27096,5828 30021,5322
-Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q2 12993,21112 13065,21267 13107,21357 13136,21419 13158,21471 13235,21740 13315,21969 13609,22143 13682,22139 13762,22064
+Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q2 12993,21112 13065,21267 13107,21357 13136,21419 13158,21471 13235,21740 13315,21969 13392,22014 13609,22143 13682,22139 13762,22064
 Am Breiten Luch: Asphalt	Q0 17531,17802 17650,17605 17729,17448 17907,17161
 Blumenweg: schlechtes Kopfsteinpflaster	Q3 8418,4432 8336,4378 8179,4381 8159,4354
 Streckfußstr.: Asphalt	Q0 13903,22720 13976,22813 14050,22912 14148,23040 14351,23200 14442,23339 14651,23653
@@ -2879,7 +2879,7 @@ Neustädter Str.: Beton	Q1 14338,22885 14276,22914 14148,23040 14050,23106
 Flaischlenstr.: asphaltiert	Q0 13497,22623 13458,22519
 Flaischlenstr.: schlechtes Kopfsteinpflaster, Ausweichen auf den Fußweg (Rasenflächen mit Trampelpfad) möglich	Q3 13458,22519 13395,22365 13354,22327 13267,22090 13249,22003
 Frankenstr.: schlechtes Kopfsteinpflaster	Q3 13267,22090 13534,22225 13565,22271 13646,22387 13707,22468
-Rudelsburgstr.: Asphalt	Q0 12814,20648 12835,20670 12865,20684 13165,21144 13204,21203 13255,21282 13371,21462 13601,21826 13762,22064 13845,22231
+Rudelsburgstr.: Asphalt	Q0 12814,20648 12835,20670 12865,20684 13165,21144 13204,21203 13255,21282 13371,21462 13601,21826 13649,21896 13762,22064 13845,22231
 Frankensteinstr.: schlechtes Kopfsteinpflaster	Q3 13845,22231 13646,22387 13458,22519
 Wolkensteinstr.: fester Sandweg	Q2 13707,22468 13497,22623
 Amboßweg: Asphalt	Q0 6034,20551 5760,20837 5673,20941 5609,20968 5598,21032
@@ -3377,8 +3377,8 @@ Hentigstr.: Asphalt mit Löchern	Q3 18514,8773 18548,8942
 Jostweg: schlechtes Kopfsteinpflaster	Q3 3423,25733 3356,25725 3216,25778
 Siemenswerderweg: sehr schlechtes Kopfsteinpflaster	Q3 -2850,11423 -2938,11244 -3078,11157 -2934,11078 -2894,11025 -2970,10748
 Buchsteinweg: guter Asphalt	Q0 9805,2196 9876,2007 9922,1896
-(Am Invalidenfriedhof - Scharnhorststr.): gut befahrbarer Schotterweg	Q1 8114,13921 8216,13987
-Invalidenfriedhof: Asphalt mit tiefen Querrillen, parallel gut befahrbarer Schotterweg	Q1 8114,13921 8015,14109
+(Am Invalidenfriedhof - Scharnhorststr.): gut befahrbarer Schotterweg	Q1 8137,13925 8216,13987
+Invalidenfriedhof: Asphalt mit tiefen Querrillen, parallel gut befahrbarer Schotterweg	Q1 8137,13925 8015,14109
 Am Steinbergpark: guter Asphalt	Q0 4130,20765 3912,21090
 Galenstr.: Asphalt	Q0 -3851,14174 -3819,14302 -3776,14419 -3721,14495 -3637,14628 -3499,14806
 Neue Heimat (Lichtenrade): gute Betonstraße	Q0 10737,-807 10737,-741 10709,-624 10680,-609 10556,-659
@@ -4319,6 +4319,17 @@ Reichenberger Str. (Hohenschönhausen): Verbundsteinpflaster	Q1 15926,15140 16075
 Hirschkäferweg: guter Asphalt	Q0 -6982,16403 -6953,16395 -6859,16369 -6767,16343 -6664,16314 -6557,16283 -6455,16254 -6354,16224 -6239,16190
 Westerlandstr.: Asphalt	Q0 -5039,15618 -5023,15688 -5000,15769 -5010,15787 -5056,15800 -5066,15820 -5036,15923 -5019,15970 -4962,16099
 Coesfelder Weg: guter Asphalt	Q0 1658,18693 1761,18693 1782,18689 1965,18686
+Oberonstr.: schlechtes Kopfsteinpflaster, Ausweichen auf Fußweg mit ebenfalls schlechter Qualität möglich	Q3 13649,21896 13392,22014
+Ehrenfelder Platz: guter Asphalt	Q0 20052,-239 20148,-236
+Ehrenfelder Str.: guter Asphalt	Q0 20148,-236 20228,-235 20308,-234
+Kalker Str.: guter Asphalt	Q0 20348,-380 20327,-305 20308,-234 20302,-51
+Nackthalsweg: gutes Kopfsteinpflaster	Q1 16068,525 16135,473
+Müngersdorfer Str.: guter Asphalt	Q2 20390,137 20351,287 20326,374
+Keltensteig: schlechtes Kopfsteinpflaster	Q3 20302,1613 20362,1480
+Fährallee: guter Asphalt	Q0 27190,-6165 27058,-6150 26863,-6318 26710,-6404
+Jackyallee: guter Asphalt	Q0 27058,-6150 27036,-6064
+Argoallee: guter Asphalt	Q0 26715,-6276 26962,-6074 27036,-6064
+Muschelkalkweg: Asphalt	Q0 10718,1220 10868,1281 10950,1315 11042,1352 11120,1384 11155,1273
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953

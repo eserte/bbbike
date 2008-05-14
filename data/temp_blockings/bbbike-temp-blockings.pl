@@ -3691,7 +3691,7 @@ EOF
        text  => 'L 401 Richard-Sorge-Str./ Bergstr. OL Wildau, Bahnübergang Bergstr. Gleisbauarbeiten Einmünd. gesp. 05.03.2006-10.03.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 26381,-9962 25700,-9502
+userdel	2 26381,-9962 26339,-9943 25700,-9502
 EOF
      },
      { from  => 1141254000, # 2006-03-02 00:00
@@ -4359,7 +4359,7 @@ EOF
        text  => 'L 401 R.-Sorge-/ Bergstr. Bahnübergang Bergstraße Gleisbauarbeiten Zufahrt gesperrt 07.05.2006-12.05.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 26381,-9962 25700,-9502
+userdel	2 26381,-9962 26339,-9943 25700,-9502
 EOF
      },
      { from  => 1146897090, # 2006-05-06 08:31
@@ -5756,7 +5756,7 @@ EOF
        text  => 'L 401 R.-Sorge-Str./ Bergstr. Bahnübergang Bergstr. in OL Wildau Arbeiten am BÜ Vollsperrung; Umleitung 04.09.2006-06.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 26381,-9962 25700,-9502
+userdel	2::inwork 26381,-9962 26339,-9943 25700,-9502
 EOF
      },
      { from  => 1157576473, # 2006-09-06 23:01
@@ -7937,7 +7937,7 @@ userdel	2::temp 23952,15086 23960,15021 23993,14797
 EOF
      },
      { from  => 1210715191, # 2008-05-13 23:46
-       until => 1214863199, # 2008-06-30 23:59
+       until => 1210801933, # 2008-06-30 23:59 1214863199
        text  => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 06.2008)',
        type  => 'gesperrt',
        source_id => 'IM_005465',
@@ -10396,7 +10396,7 @@ userdel	1::inwork -3997,15664 -4012,15780 -3995,15832 -3942,15926 -3896,15999 -3
 EOF
      },
      { from  => undef, # 
-       until => 1214863200, # 2008-07-01 00:00
+       until => 1210801999, # 2008-07-01 00:00 1214863200
        text  => 'Holländerstr. (Reinickendorf) Richtung Markstr., zwischen Aroser Allee und Markstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2008) (08:51) ',
        type  => 'gesperrt',
        source_id => 'IM_007023',
@@ -10821,7 +10821,7 @@ userdel	2::inwork 22178,30343 21872,30139 21561,30131 21172,29984
 EOF
      },
      { from  => 1207420756, # 2008-04-05 20:39
-       until => 1210888799, # 2008-05-15 23:59
+       until => 1210801866, # 2008-05-15 23:59 1210888799
        text  => 'Behrenstr. (Mitte) Richtung Bebelplatz zwischen Glinkastr. und Friedrichstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 05.2008)',
        type  => 'gesperrt',
        source_id => 'IM_007843',
@@ -11108,7 +11108,7 @@ userdel	2::inwork -12719,-1661 -12755,-1585 -12773,-1544
 EOF
      },
      { from  => 1206490011, # 2008-03-26 01:06
-       until => 1211579999, # 2008-05-23 23:59
+       until => 1210801965, # 2008-05-23 23:59 1211579999
        text  => 'Gormannstr. (Mitte) Kreuzung Linienstr. Baustelle, Straße vollständig gesperrt (bis 23.05.)',
        type  => 'handicap',
        source_id => 'IM_008182',
@@ -11308,7 +11308,7 @@ userdel	2::inwork 17017,16716 17059,16560
 EOF
      },
      { from  => 1209496325, # 2008-04-29 21:12
-       until => 1216159199, # 2008-07-15 23:59
+       until => 1210802123, # 2008-07-15 23:59 1216159199
        text  => 'Siemensstr. (Oberschöneweide) Richtung Edisonstr. zwischen Wilhelminenhofstr. und Edisonstr. Baustelle, Fahrbahn auf einen Fahrstreifen verengt bzw. gesperrt, eine Umleitung ist eingerichtet (bis Mitte 07.2008)',
        type  => 'handicap',
        source_id => 'IM_008562',
@@ -11489,6 +11489,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 14802,10505 14836,10524 14843,10621 14882,10732 14890,10824
+EOF
+     },
+     { from  => undef, # 
+       until => Time::Local::timelocal(reverse(2008-1900,5-1,14+2,0,0,0)), # XXX endtime guessed
+       text  => 'Papierlager brennt, Köpenicker Str. ist zwischen Manteuffelstr. und Engeldamm gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 12055,11331 12307,11169
 EOF
      },
     );

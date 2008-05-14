@@ -258,16 +258,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_005465',
-         'until' => 1214863199,
-         'text' => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 06.2008)',
-         'from' => 1210715191,
-         'id' => 944,
-         'data' => 'userdel	1::inwork 2821,18831 2643,18738 2602,18737 2175,18740 1967,18743 1659,18747 1405,18749 1229,18750
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -622,16 +613,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_007023',
-         'until' => 1214863200,
-         'text' => 'Holländerstr. (Reinickendorf) Richtung Markstr., zwischen Aroser Allee und Markstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2008) (08:51) ',
-         'from' => undef,
-         'id' => 1233,
-         'data' => 'userdel	1::inwork 6878,17315 6995,17322 7031,17323 7131,17329 7308,17306 7379,17295 7602,17399
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1220220000,
          'text' => 'B 167 OD Alt Ruppin, zw. Brückenstr. und Neumühler Weg Straßen- u. Brückenbauarbeiten Vollsperrung 05.11.2007-31.08.2008 ',
@@ -715,16 +697,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_007843',
-         'until' => 1210888799,
-         'text' => 'Behrenstr. (Mitte) Richtung Bebelplatz zwischen Glinkastr. und Friedrichstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 05.2008)',
-         'from' => 1207420756,
-         'id' => 1284,
-         'data' => 'userdel	1::inwork 9164,12172 9365,12196
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -847,16 +820,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_008182',
-         'until' => 1211579999,
-         'text' => 'Gormannstr. (Mitte) Kreuzung Linienstr. Baustelle, Straße vollständig gesperrt (bis 23.05.)',
-         'from' => 1206490011,
-         'id' => 1319,
-         'data' => 'userdel	q4::inwork 10385,13548 10432,13678 10445,13752
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1213480800,
@@ -921,16 +885,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_008562',
-         'until' => 1216159199,
-         'text' => 'Siemensstr. (Oberschöneweide) Richtung Edisonstr. zwischen Wilhelminenhofstr. und Edisonstr. Baustelle, Fahrbahn auf einen Fahrstreifen verengt bzw. gesperrt, eine Umleitung ist eingerichtet (bis Mitte 07.2008)',
-         'from' => 1209496325,
-         'id' => 1343,
-         'data' => 'userdel	q4::inwork; 17614,6571 17766,6616 17860,6644 17962,6674
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1215900000,
@@ -1087,6 +1042,15 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'from' => undef,
          'id' => 1364,
          'data' => 'userdel	2::inwork 14802,10505 14836,10524 14843,10621 14882,10732 14890,10824
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1210888800,
+         'text' => 'Papierlager brennt, Köpenicker Str. ist zwischen Manteuffelstr. und Engeldamm gesperrt',
+         'from' => undef,
+         'id' => 1365,
+         'data' => 'userdel	2::inwork 12055,11331 12307,11169
 ',
          'type' => 'gesperrt'
        }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiMap.pm,v 1.17 2008/01/15 21:51:49 eserte Exp $
+# $Id: MultiMap.pm,v 1.18 2008/05/14 17:20:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006,2007 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%images);
 
@@ -94,6 +94,12 @@ sub register {
 	  callback => sub { showmap_geocaching(@_) },
 	  callback_3_std => sub { showmap_geocaching(@_) },
 	  ($images{Geocaching} ? (icon => $images{Geocaching}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . "_Panoramio"} =
+	{ name => "panoramio.com",
+	  callback => sub { showmap_panoramio(@_) },
+	  callback_3_std => sub { showmap_panoramio(@_) },
+	  ($images{Panoramio} ? (icon => $images{Panoramio}) : ()),
 	};
 }
 
@@ -308,6 +314,37 @@ QAQfSx7i6yDhQ5x9PzwQyahxRQYDA8zsG2KDpEZ8Jja02adkBhOSMHLqhDGnzpMnQn7+DAQA
 Ow==
 EOF
     }
+
+    if (!defined $images{Panoramio} && eval { require Tk::PNG; 1 }) {
+	# Fetched logo:
+	#   wget http://www.panoramio.com/favicon.v1.ico
+	# Converted:
+	#   convert 'favicon.v1.ico[0]' favicon.png
+	# Created base64:
+	#   mmencode -b favicon.png
+	$images{Panoramio} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAA
+CXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAQAAAAEABcxq3DAAAC7klEQVQ4y22Tf2jU
+dRjHX5/P93s3d+M2GLrF3Ji3mbVK591Wa0ambM4CaXptERH1jwUVhP2RKExhiEQkqJM0xPK/
+EdXl0tb+8ERF8tfa5Z2sWOfG5m21I/Viv9zte9/v0x+D4bW9/3p4ePN+Ht7P81YsgSM/RSUc
+HWUwOQGAr8jL5mdW8sl2v/o/N6vxRc9taeu8SWo6vZQu3lwX+1trs4QWio++uiId3bfRStEU
+KCdYv5qq0kIUEBn6h3D0Lt29Q9iOsLOxilMfbFZZkwkel/y3Tsnpy4NyN5WW8Yk5uTdlyemL
+f8qZ3hEZ/Tct31wblsJ3vhaCx+WzMxEB0ABtnTfRSnH03U00rS/Fm2OQv8zA41YcPvsbLg3e
+HINNT5fw5fsNmIbmwHd9AOiO7pikptM0+ctpWFeGx2WQ59bkujQ9kRFiI/exLJs8t8bj1rxQ
+9RjNdZVMzVocDPWJeSE2CsDLNav4NT6OS4PjONiOcPD7CAACGFqxzNTMZYSWDasJXY1zPprA
+vDM+f6pq3wrio/c5eu4W/YkHWe4fPhelwONm41MlmFpRVVaIVoqh5MS8BwCGgmB9Jb2ftxDa
+vRW/b/mCwJU//qax/Swv7esiHEss9EXA9BV76U88YGAsxRMlBWilCdZVMD2b4e2OCzy/ppjd
+2/0A2I6gtSI2fA9HhIrifHTjulIAuq4PMmcL6YxgO4LbnF9uX2sNO+p8ND/n45WaVdQ/WcLP
+fcMANKwtRe/aVq0KPG56IsNc7h9jxnKYthy01gQqVrCluoyMIzy0HGbmbG7Ek4R+iZPrNtn/
+eq3SAO1vPIvjCB+euMil/r+YStsIil2vrmfGEiZmbSbTNlcHkuw8FsayHfbs8Ge/8nsnLsnJ
+879jaEVzXSVbA+UEKoswlGJgLEXX9UFC1+6QsR3efPFxOj/eohaF6dCPt6T9214mH1pLhikv
+x2TvawHaWmoXh+lRfPpDRMLRBEPJSQTBV5RPw9qVtLXWLuL/B6D3MZolV9/dAAAAAElFTkSu
+QmCC
+EOF
+    }
+
 }
 
 ######################################################################
@@ -584,6 +621,26 @@ sub showmap_url_geocaching {
 sub showmap_geocaching {
     my(%args) = @_;
     my $url = showmap_url_geocaching(%args);
+    start_browser($url);
+}
+
+######################################################################
+# panoramio
+
+sub showmap_url_panoramio {
+    my(%args) = @_;
+
+    my $px = $args{px};
+    my $py = $args{py};
+
+    my $scale = log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "http://www.panoramio.com/map/#lt=%s&ln=%s&z=%d&k=2",
+	$py, $px, $scale
+}
+
+sub showmap_panoramio {
+    my(%args) = @_;
+    my $url = showmap_url_panoramio(%args);
     start_browser($url);
 }
 

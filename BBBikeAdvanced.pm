@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.201 2008/04/02 20:52:24 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.202 2008/05/14 17:20:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2008 Slaven Rezic. All rights reserved.
@@ -1228,6 +1228,9 @@ sub parse_url_for_coords {
 	$x_ddd = $1;
 	$y_ddd = $2;
     } elsif ($url =~ /cp=([0-9.]+)~([0-9.]+)&/) { # e.g. maps.live.com
+	$x_ddd = $2;
+	$y_ddd = $1;
+    } elsif ($url =~ /lt=([0-9.]+)&ln=([0-9.]+)/) { # e.g. www.panoramio.com
 	$x_ddd = $2;
 	$y_ddd = $1;
     }

@@ -29,7 +29,7 @@ my $zip = Archive::Zip->new;
 for my $file (@files) {
     $zip->addFile($file, ($do_snapshot ? "BBBike-snapshot-$date/$file" : ()));
 }
-my(undef, $filename) = tempfile(SUFFIX => ".zip",
+my(undef, $filename) = tempfile(SUFFIX => "-bbbike-" . ($do_snapshot ? "snapshot" : "data") .  ".zip",
 				UNLINK => 1);
 # I can use writeToFileNamed and have Content-Length set,
 # but the transfer starts some seconds later, or I

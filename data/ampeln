@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.138 2008/05/13 19:06:56 eserte Exp $
+#: version: $Id: ampeln-orig,v 4.138 2008/05/13 19:06:56 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 	X 9222,8787
@@ -1474,7 +1474,7 @@ nur Richtung O	X 8142,7221
 	X 17879,-3
 	X 17384,775
 	X 17518,564
-	X 16201,880
+	F 16096,803
 	X 11778,829
 	X 11407,113
 	X 11162,-1273
@@ -1747,6 +1747,7 @@ UBB, halbstündlich	B 50741,179789
 	B 48147,70935
 	B 2519,62026
 	B -8016,54305
+	B 26339,-9943
 	X 12523,12942
 	X 9454,12558
 	F 7702,10146

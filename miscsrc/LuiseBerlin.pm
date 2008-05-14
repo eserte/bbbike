@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.27 2008/04/19 11:36:05 eserte Exp eserte $
+# $Id: LuiseBerlin.pm,v 1.28 2008/05/14 19:20:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2008 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!caller(2)) {
@@ -69,6 +69,7 @@ sub register {
     $main::info_plugins{__PACKAGE__ . ""} =
 	{ name => "Luise-Berlin, Straßenlexikon",
 	  callback => sub { launch_street_url(@_) },
+	  callback_3 => sub { show_street_menu(@_) },
 	  icon => $icon,
 	};
     $main::info_plugins{__PACKAGE__ . "_bezlex"} =
@@ -183,7 +184,12 @@ sub launch_bezlex_url {
 
 sub launch_street_url {
     my(%args) = @_;
-    my($street, $cityparts) = find_street($args{street});
+    my($street, $cityparts);
+    if ($args{cityparts}) {
+	($street, $cityparts) = ($args{street}, $args{cityparts});
+    } else {
+	($street, $cityparts) = find_street($args{street});
+    }
 
     if (!defined $street) {
 	return;
@@ -376,6 +382,41 @@ sub kill_umlauts {
     my $left_part = join "", keys %$kill_umlauts;
     $s =~ s{([$left_part])}{$kill_umlauts->{$1}}ge;
     $s;
+}
+
+sub show_street_menu {
+    my(%args) = @_;
+    my $w = $args{widget};
+    if (Tk::Exists($w->{"LuiseBerlinStreetMenu"})) {
+	$w->{"LuiseBerlinStreetMenu"}->destroy;
+    }
+    my $link_menu = $w->Menu(-title => "Luise-Berlin",
+			     -tearoff => 0);
+    $link_menu->command
+	(-label => "Straßeneingabe",
+	 -command => sub {
+	     enter_dialog();
+	 }
+	);
+    $w->{"LuiseBerlinStreetMenu"} = $link_menu;
+
+    my $e = $w->XEvent;
+    $link_menu->Post($e->X, $e->Y);
+    Tk->break;
+}
+
+sub enter_dialog {
+    my $tl = $main::top->Toplevel(-title => "Straßeneingabe Luise-Berlin");
+    my $str;
+    my $citypart;
+    $tl->LabEntry(-label => "Straße", -labelPack => [-side => "left"], -textvariable => \$str)->pack;
+    $tl->LabEntry(-label => "Bezirk (optional)", -labelPack => [-side => "left"], -textvariable => \$citypart)->pack;
+    $tl->Button(-text => "Suche",
+		-command => sub {
+		    launch_street_url(street => $str,
+				      cityparts => [$citypart],
+				     );
+		})->pack;
 }
 
 return 1 if caller;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead.t,v 1.18 2007/04/01 18:39:23 eserte Exp $
+# $Id: cgihead.t,v 1.19 2008/05/14 22:01:55 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -46,6 +46,7 @@ my @prog = qw(
 	      mapserver_comment.cgi
 	      wapbbbike.cgi
 	      bbbike-data.cgi
+	      bbbike-snapshot.cgi
 	      bbbikegooglemap.cgi
 	     );
 if ($cgi_dir !~ m{\Qradzeit.herceg.de}) {
@@ -76,7 +77,7 @@ if (defined $mapserver_prog_url) {
     diag("No URL for mapserv defined");
 }
 
-my $extra_tests = 2;
+my $extra_tests = 4;
 plan tests => scalar(@prog) + scalar(@static) + $extra_tests;
 
 delete $ENV{PERL5LIB}; # override Test::Harness setting
@@ -110,6 +111,9 @@ sub check_url {
     if ($url =~ /bbbike-data.cgi/) {
 	is($resp->content_type, "application/zip", "Expected mime-type for bbbike-data.cgi");
 	like($resp->header("content-disposition"), qr{^attachment;\s*filename=bbbike_data.*\.zip$}, "Expected attachment marker");
+    } elsif ($url =~ /bbbike-snapshot.cgi/) {
+	is($resp->content_type, "application/zip", "Expected mime-type for bbbike-shapshot.cgi");
+	like($resp->header("content-disposition"), qr{^attachment;\s*filename=bbbike_snapshot_\d+\.zip$}, "Expected attachment marker");
     }
 }
 
