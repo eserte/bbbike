@@ -856,9 +856,9 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1219269600,
-         'text' => 'L 233 Berliner Str. OD Hennickendorf Böschungssanierung Vollsperrung 26.05.2008-20.08.2008 ',
-         'from' => 1211666400,
+         'until' => 1220220000,
+         'text' => 'L 233 Berliner Str. OD Hennickendorf Böschungssanierung Vollsperrung 19.05.2008-31.08.2008 ',
+         'from' => 1211061600,
          'id' => 1330,
          'data' => 'userdel	q4::inwork 38574,10226 39548,11243 39824,11264
 ',

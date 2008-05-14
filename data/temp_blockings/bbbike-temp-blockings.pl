@@ -11196,9 +11196,9 @@ EOF
 userdel	q4::inwork 42781,33687 43093,33781
 EOF
      },
-     { from  => 1211666400, # 2008-05-25 00:00
-       until => 1219269600, # 2008-08-21 00:00
-       text  => 'L 233 Berliner Str. OD Hennickendorf Böschungssanierung Vollsperrung 26.05.2008-20.08.2008 ',
+     { from  => 1211061600, # 2008-05-18 00:00
+       until => 1220220000, # 2008-09-01 00:00
+       text  => 'L 233 Berliner Str. OD Hennickendorf Böschungssanierung Vollsperrung 19.05.2008-31.08.2008 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 38574,10226 39548,11243 39824,11264
