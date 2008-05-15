@@ -2,7 +2,7 @@
 #: encoding: iso-8859-1
 #: title.de: Orte im weiteren Umland
 #: title.en: Places far away
-#: version: $Id: orte2-orig,v 4.50 2008/05/13 19:07:00 eserte Exp $
+#: version: $Id: orte2-orig,v 4.50 2008/05/13 19:07:00 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Hannover	6 -238396,-7589
@@ -12,7 +12,7 @@ Kiel	6 -215604,208878
 Leipzig	6 -57083,-119556
 Dresden	6 36012,-150175
 Halle	6 -84779,-105018
-Magdeburg	6 -108962,-31703
+Magdeburg	6 -109192,-32688
 Braunschweig	6 -184186,-18956
 #: alias: Stettin
 Szczecin	6 86292,115232
@@ -89,7 +89,7 @@ Wurzen	4 -32262,-116410
 Halberstadt	4 -148351,-60196
 Quedlinburg	4 -141338,-71221
 Stassfurt	4 -111971,-63365
-Zerbst	4 -78034,-50355
+Zerbst	4 -78035,-50401
 Schönebeck	4 -101869,-44835
 Burg|bei Magdeburg	4 -94356,-16746
 Haldensleben	4 -122840,-14896
@@ -389,6 +389,8 @@ Lindau	2 -76907,-42769
 Tucheim	2 -72304,-14275
 Görzke	2 -58799,-27258
 Leitzkau	2 -87426,-40487
+Elbenau	2 -99975,-42059
+Plotzky	2 -97381,-41332
 Möser	2 -98297,-23053
 Parey	2 -85686,-4539
 Wiesenburg	2 -53191,-33648
@@ -700,6 +702,14 @@ Brinnis	1 -52872,-100139
 Hohenroda	1 -53606,-102338
 Kletzen	1 -54319,-107262
 Elend	1 -172721,-76657
+Pechau	1 -103431,-37806
+Calenberge	1 -101621,-39969
+Pretzien	1 -95892,-41945
+Dornburg	1 -92077,-43102
+Prödel	1 -89299,-42835
+Lübs	1 -87870,-44640
+Gehrden	1 -86670,-45979
+Güterglück	1 -84237,-48234
 Reetz	1 -58829,-34179
 Viesen	1 -58228,-10328
 Wenzlow	1 -53700,-13146

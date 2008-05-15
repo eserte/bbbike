@@ -41,11 +41,11 @@ sub activate {
 	my $old_binding = $c->CanvasBind("<$event>");
 	push @old_bindings, sub { $c->CanvasBind("<$event>" => $old_binding) };
     }
-    for my $event (qw(F4 F5 Shift-F4 F6 F7 Shift-F6)) {
+    for my $event (qw(F4 F5 Shift-F4 Shift-F5 F6 F7 Shift-F6)) {
 	my $old_binding = $top->bind("<$event>");
 	push @old_bindings, sub { $top->bind("<$event>" => $old_binding) };
     }
-    for my $event (qw(XF86_Switch_VT_4 XF86_Switch_VT_6)) {
+    for my $event (qw(XF86_Switch_VT_4 XF86_Switch_VT_5 XF86_Switch_VT_6)) {
 	eval {
 	    my $old_binding = $top->bind("<$event>");
 	    push @old_bindings, sub { $top->bind("<$event>" => $old_binding) };
@@ -156,6 +156,21 @@ sub activate {
 		       $crosshair_angle_dist_changed++;
 		       $change_coords_with_pointerxy->();
 		   });
+
+	for my $ev (qw(XF86_Switch_VT_5 Shift-F5)) {
+	    eval {
+		$top->bind("<$ev>" => sub {
+			       # XXX implement the following:
+			       # - get canvas item below
+			       # - if it's a line, get the two adjacent points
+			       # - if there are any, then calculate angle and set $angle
+			       # - if not, then warn or info
+			       # XXX
+			       $crosshair_angle_dist_changed++;
+			       $change_coords_with_pointerxy->();
+			   });
+	    };
+	}
 
 	for my $ev (qw(XF86_Switch_VT_6 Shift-F6)) {
 	    eval {

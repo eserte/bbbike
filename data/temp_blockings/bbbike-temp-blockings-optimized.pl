@@ -857,8 +857,8 @@ push @temp_blocking,
        undef,
        {
          'until' => 1220220000,
-         'text' => 'L 233 Berliner Str. OD Hennickendorf Böschungssanierung Vollsperrung 19.05.2008-31.08.2008 ',
-         'from' => 1211061600,
+         'text' => 'L 233 Berliner Str. OD Hennickendorf Böschungssanierung Vollsperrung 20.05.2008-31.08.2008 ',
+         'from' => 1211148000,
          'id' => 1330,
          'data' => 'userdel	q4::inwork 38574,10226 39548,11243 39824,11264
 ',
@@ -1042,15 +1042,6 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'from' => undef,
          'id' => 1364,
          'data' => 'userdel	2::inwork 14802,10505 14836,10524 14843,10621 14882,10732 14890,10824
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1210888800,
-         'text' => 'Papierlager brennt, Köpenicker Str. ist zwischen Manteuffelstr. und Engeldamm gesperrt',
-         'from' => undef,
-         'id' => 1365,
-         'data' => 'userdel	2::inwork 12055,11331 12307,11169
 ',
          'type' => 'gesperrt'
        }
