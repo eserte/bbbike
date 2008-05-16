@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.25 2008/02/11 22:38:23 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.26 2008/05/16 20:35:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -381,6 +381,9 @@ sub BBBikeLazy::bbbikelazy_clear {
 # rebuilding the grids would be so costly, that bbbikelazy_reload would
 # be no faster than deleting and adding the whole layer. Still
 # searching for a good solution...
+#
+# Which could be: use a diff (e.g. a modified Strassen::Core::diff_orig).
+# The diff output should be used to add/delete items from the grids.
 sub BBBikeLazy::bbbikelazy_reload {
     my $redraw_needed = 0;
 

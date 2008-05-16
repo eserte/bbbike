@@ -1422,7 +1422,7 @@ Wilhelmsbrücker Str.: Asphalt	Q0 20519,11152 20370,11168
 Brachfelder Str.: Asphalt	Q0 20370,11168 20356,11020 20426,10854
 Gladauer Weg: Asphalt	Q0 20351,11473 20346,11337 20342,11250 20370,11168
 Langer Weg: fester Sand, 20 km/h und mehr möglich	Q2 20688,9856 20690,9546
-Langer Weg: Schotter, 20 km/h und mehr möglich	Q2 20690,9546 20676,8685
+Langer Weg: Schotter, 20 km/h und mehr möglich	Q2 20690,9546 20686,9297 20676,8685
 Langer Weg: Asphalt	Q0 20676,8685 20677,8446
 Hadubrandweg: Sandweg	Q2 20573,8444 20677,8446
 Hadubrandweg: Asphalt	Q0 20677,8446 20821,8438 20918,8383
@@ -1864,6 +1864,7 @@ Aurikelweg: Asphalt	Q0 21878,11112 21951,11144
 Alpenveilchenweg: Asphalt	Q0 21953,10936 22028,10968
 Heidekrautweg: Asphalt	Q0 21982,10874 22053,10911
 Petkusser Str.: schlechtes Kopfsteinpflaster	Q3 10506,-2642 10606,-3017 10655,-3135
+Edeltrautweg: guter Asphalt	Q0 -1809,18413 -1846,18778
 Axenstr.: guter Asphalt	Q0 13894,18121 13802,18230 13704,18364 13595,18523 13557,18575
 Seebadstr. (Kaulsdorf): Kopfsteinpflaster	Q2 22111,8800 22268,8718 22310,8700 22394,8734 22532,8807 22700,8867 22786,8940 22886,9017 22918,9148 22947,9277
 Rießerseestr.: Kopfsteinpflaster	Q2 22570,1607 22662,1638 22732,1668
@@ -3266,7 +3267,7 @@ Im Amseltal: schlechtes Kopfsteinpflaster	Q3 1983,25097 1962,25214 1939,25294 18
 Im Amseltal: große Betonplatten, gut befahrbar	Q0 1828,25478 1726,25712 1684,25964
 Gralsburgsteig: glattes Pflaster	Q1 2164,25190 2210,25251 2038,25531 1950,25763 1924,26013
 Hausotterstr.: mäßiges Kopfsteinpflaster	Q2 8592,18128 8348,18071 8139,18020 7957,17967 7772,17915 7487,17836
-Liebfrauenweg: guter Asphalt	Q0 2917,21205 2830,21378 2740,21592 2696,21648
+Liebfrauenweg: guter Asphalt	Q0 2917,21205 2830,21378 2816,21410 2740,21592 2696,21648
 Herrnholzweg: Verbundsteinpflaster	Q1 6279,23170 6491,22915
 Marienfelder Str.: Kopfsteinpflaster	Q2 10853,-1475 10981,-1564 11068,-1574
 Altonaer Str.: guter Asphalt	Q0 -4932,13887 -4776,13869 -4314,13828 -3989,13785 -3875,13762 -3701,13719
@@ -3778,7 +3779,7 @@ Eitel-Fritz-Str.: schlechtes Kopfsteinpflaster	Q3 -1710,3319 -1633,3104 -1575,29
 César-Franck-Str.: Asphalt	Q0 8344,20548 8351,20492 8359,20449 8372,20411 8400,20339 8458,20201
 William-H.-Tunner-Str.: Asphalt	Q0 2372,1043 2336,1111 2163,1499
 Wilkestr.: mäßiges Kopfsteinpflaster	Q2 1457,20159 1445,20219 1425,20301
-Harzgeroder Str.: guter Asphalt	Q0 11397,18720 11462,18743
+Harzgeroder Str.: guter Asphalt	Q0 11397,18720 11442,18736 11462,18743
 Frankenstr. (Altglienicke): schlechtes Kopfsteinpflaster	Q3 20262,1072 20295,1200 20318,1281 20365,1393
 Cimbernstr. (Altglienicke): schlechtes Kopfsteinpflaster	Q3 19843,1375 19907,1404 19981,1397 20196,1325 20318,1281 20517,1209
 Haberstr.: asphaltiert	Q0 14366,6337 14564,6496 14639,6577 14724,6668
@@ -4327,7 +4328,9 @@ Ehrenfelder Platz: guter Asphalt	Q0 20052,-239 20148,-236
 Ehrenfelder Str.: guter Asphalt	Q0 20148,-236 20228,-235 20308,-234
 Kalker Str.: guter Asphalt	Q0 20348,-380 20327,-305 20308,-234 20302,-51
 Nackthalsweg: gutes Kopfsteinpflaster	Q1 16068,525 16135,473
-Müngersdorfer Str.: guter Asphalt	Q2 20390,137 20351,287 20326,374
+Müngersdorfer Str.: guter Asphalt	Q0 20390,137 20351,287 20326,374
+Müngersdorfer Str.: mäßiges Kopfsteinpflaster	Q2 20390,137 20430,-17
+Müngersdorfer Str.: teils guter, teils mäßiger Asphalt	Q1 20430,-17 20479,-196 20505,-217
 Keltensteig: schlechtes Kopfsteinpflaster	Q3 20302,1613 20362,1480
 Fährallee: guter Asphalt	Q0 27190,-6165 27058,-6150 26863,-6318 26710,-6404
 Jackyallee: guter Asphalt	Q0 27058,-6150 27036,-6064
@@ -4337,6 +4340,14 @@ Honsfelder Str.: guter Beton	Q0 21935,10318 21830,10342 21717,10371 21654,10390
 Büllinger Str.: guter Beton	Q0 21935,10318 22030,10467
 Anton-von-Werner-Str.: guter Beton	Q0 22030,10467 22125,10451
 Anton-von-Werner-Str.: mäßiges Kopfsteinpflaster	Q2 22125,10451 22257,10428
+Großstr.: schlechtes Kopfsteinpflaster	Q3 18574,6401 18483,6460 18457,6490 18429,6582
+Balzerweg: Asphalt	Q0 20514,9299 20592,9298 20598,9298 20686,9297 20802,9297 20938,9293
+Balzerplatz: Asphalt	Q0 20937,9229 21092,9223
+Seestr. (Hermsdorf): schlechtes Kopfsteinpflaster	Q3 4768,23045 4742,23078 4728,23100 4684,23156 4619,23235
+Barnabasstr.: mäßiger Beton	Q1 2816,21410 2944,21464 3058,21530 3155,21572
+Goethestr. (Weißensee): mäßiger Beton	Q1 12564,16399 12642,16555
+Radenzer Str.: guter Beton	Q0 15994,6138 16012,6177 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374
+Bogenstr. (Hessenwinkel): Asphalt	Q0 32334,2224 32268,2229 32203,2254 32142,2304 32035,2435
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953
