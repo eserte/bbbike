@@ -3699,7 +3699,7 @@ EOF
        text  => 'L 090 Phöbener Str. Bahnübergang in OL Werder Gleisbauarbeiten Vollsperrung; Umleitung 03.03.2006-06.03.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -22206,-1693 -22042,-2060
+userdel	2 -22206,-1693 -22146,-1832 -22146,-1832 -22042,-2060 -22042,-2060
 EOF
      },
      { from  => 1142118000, # 2006-03-12 00:00
@@ -6639,7 +6639,7 @@ EOF
        text  => 'L 086 Groß Kreutz-Schmergow Bahnübergang in der OL Groß Kreutz Instandsetzungsarbeiten Vollsperrung 13.11.2006-14.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -31993,-726 -32125,-130
+userdel	2::inwork -31993,-726 -32143,-211 -32163,-143
 EOF
      },
      { from  => 1163480400, # 2006-11-14 06:00
@@ -9092,7 +9092,7 @@ EOF
        text  => 'L 086 B 1 Groß Kreutz-Schmergow OD Groß Kreutz Kanal- und Straßenbau Vollsperrung 19.07.2007-03.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -32125,-130 -31993,-726 -31991,-1024
+userdel	q4::inwork -32163,-143 -32143,-211 -31993,-726 -31991,-1024
 EOF
      },
      { from  => undef, # 

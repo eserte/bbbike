@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: combine_streets.pl,v 1.15 2006/05/10 19:30:28 eserte Exp $
+# $Id: combine_streets.pl,v 1.16 2008/05/18 16:01:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001,2002,2003 Slaven Rezic. All rights reserved.
@@ -48,7 +48,9 @@ my $combine_same_streets;
 if (!GetOptions("closedpolygon!" => \$make_closed_polygon,
 		"samestreets!" => \$combine_same_streets,
 	       )) {
-    die "usage";
+    die <<EOF;
+    usage: $0 [-closedpolygon] [-samestreets] bbdfile
+EOF
 }
 
 my $strfile = shift;

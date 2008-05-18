@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.186 2008/05/13 19:13:07 eserte Exp $
+# $Id: Makefile,v 2.187 2008/05/16 21:05:41 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1298,7 +1298,7 @@ ${PERSISTENTTMPDIR}/crossings_bahn.bbd:	strassen sbahn rbahn brunnels
 ${PERSISTENTTMPDIR}/crossings_gewaesser.bbd:	\
 					strassen wasserstrassen brunnels
 	${MISCSRCDIR}/check_crossings -v \
-	    -ignore "Fasaneriegraben,Packereigraben,Tränkegraben,Teufelsseekanal,(See im Tiergarten),,Luiseninsel,Fennpfuhl,Heidekampgraben,Karpfenteich,Panke,Nordgraben,Tegeler Fließ,Hermsdorfer See,Wuhle,Neue Wuhle,Flutgraben,Kreuzgraben,Zingergraben,Iderfenngraben,Bäke,Bullengraben,Spektegraben,Bruchstückengraben,Fredersdorfer Mühlenfließ,Neuenhagener Mühlenfließ,Plumpengraben" \
+	    -ignore "Fasaneriegraben,Packereigraben,Tränkegraben,Teufelsseekanal,(See im Tiergarten),,Luiseninsel,Fennpfuhl,Heidekampgraben,Karpfenteich,Panke,Nordgraben,Tegeler Fließ,Hermsdorfer See,Wuhle,Neue Wuhle,Flutgraben,Kreuzgraben,Zingergraben,Iderfenngraben,Bäke,Bullengraben,Spektegraben,Bruchstückengraben,Fredersdorfer Mühlenfließ,Neuenhagener Mühlenfließ,Plumpengraben,Kleiner Jürgengraben,Rudower Fließ" \
 	    -o $@~ -against brunnels \
 	    strassen wasserstrassen
 	mv $@~ $@

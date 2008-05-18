@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.28 2008/03/02 20:55:00 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.30 2008/05/18 14:52:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -474,6 +474,43 @@ sub BBBikeGPS::get_cfc_file {
     "$main::bbbike_configdir/speed_color_mapping.cfc";
 }
 
+use vars qw($symbol_to_img);
+use File::Glob qw();
+use File::Temp qw();
+
+sub BBBikeGPS::make_symbol_to_img {
+    my $must_recreate = 1;
+    if ($symbol_to_img) {
+	$must_recreate = 0;
+	for my $file (values %$symbol_to_img) {
+	    if (!-f $file) {
+		$must_recreate = 1;
+		last;
+	    }
+	}
+    }
+    return if !$must_recreate;
+
+    $symbol_to_img = {};
+    my $userdef_symbol_dir = "$FindBin::RealBin/misc/garmin_userdef_symbols";
+    if (!-d $userdef_symbol_dir) {
+	warn "NOTE: directory <$userdef_symbol_dir> with userdefined garmin symbols not found.\n";
+	return;
+    }
+    for my $f (File::Glob::bsd_glob("$userdef_symbol_dir/*.bmp")) {
+	my($inx) = $f =~ m{(\d+)};
+	next if !defined $inx; # non parsable bmp filename
+	if ($f =~ m{\s}) {
+	    # bbd: IMG:... syntax cannot handle whitespace, so create a symlink
+	    my($tmpnam) = File::Temp::tmpnam() . ".bmp";
+	    symlink $f, $tmpnam
+		or die "Can't create symlink $tmpnam -> $f: $!";
+	    $f = $tmpnam;
+	}
+	$symbol_to_img->{"user:" . (7680 + $inx)} = $f;
+    }
+}
+
 use vars qw($global_draw_gpsman_data_s $global_draw_gpsman_data_p);
 $global_draw_gpsman_data_s = 1 if !defined $global_draw_gpsman_data_s;
 $global_draw_gpsman_data_p = 1 if !defined $global_draw_gpsman_data_p;
@@ -495,6 +532,8 @@ sub BBBikeGPS::do_draw_gpsman_data {
                          # tracks" menu
 	BBBikeGPS::load_cfc_mapping();
     }
+
+    BBBikeGPS::make_symbol_to_img();
 
     require GPS::GpsmanData;
 
@@ -534,129 +573,133 @@ sub BBBikeGPS::do_draw_gpsman_data {
     my $last_wpt;
     my $last_accurate_wpt;
     my $is_new_chunk;
-foreach my $chunk (@{ $gps->Chunks }) {
-    $is_new_chunk = 1;
-    foreach my $wpt (@{ $chunk->Points }) {
-	my($x,$y) = map { int } $Karte::map{"polar"}->map2map($main::coord_system_obj, $wpt->Longitude, $wpt->Latitude);
-	my($x0,$y0) = ($main::coord_system eq 'standard' ? ($x,$y) : map { int } $Karte::map{"polar"}->map2standard($wpt->Longitude, $wpt->Latitude));
-	my $alt = $wpt->Altitude;
-	my $acc = $wpt->Accuracy;
-	my $pointname;
-	if ($draw_point_names) {
-	    $pointname = $wpt->Ident;
-	    if (defined $wpt->Comment && $wpt->Comment ne "") {
-		$pointname .= "/" . $wpt->Comment;
+    foreach my $chunk (@{ $gps->Chunks }) {
+	$is_new_chunk = 1;
+	foreach my $wpt (@{ $chunk->Points }) {
+	    my($x,$y) = map { int } $Karte::map{"polar"}->map2map($main::coord_system_obj, $wpt->Longitude, $wpt->Latitude);
+	    my($x0,$y0) = ($main::coord_system eq 'standard' ? ($x,$y) : map { int } $Karte::map{"polar"}->map2standard($wpt->Longitude, $wpt->Latitude));
+	    my $alt = $wpt->Altitude;
+	    my $acc = $wpt->Accuracy;
+	    my $pointname;
+	    if ($draw_point_names) {
+		$pointname = $wpt->Ident;
+		if (defined $wpt->Comment && $wpt->Comment ne "") {
+		    $pointname .= "/" . $wpt->Comment;
+		}
+	    } else {
+		$pointname =
+		    $base . "/" . $wpt->Ident . "/" . $wpt->Comment .
+			(defined $alt ? " alt=".sprintf("%.1fm",$alt) : "") .
+			    " long=" . Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($wpt->Longitude)) .
+				" lat=" . Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($wpt->Latitude));
 	    }
-	} else {
-	    $pointname =
-		$base . "/" . $wpt->Ident . "/" . $wpt->Comment .
-		    (defined $alt ? " alt=".sprintf("%.1fm",$alt) : "") .
-			" long=" . Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($wpt->Longitude)) .
-			    " lat=" . Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($wpt->Latitude));
-	}
-	my $l = [$pointname, ["$x,$y"], "#0000a0"];
-	$s->push($l);
-	if ($s_speed) {
-	    my $time = $wpt->Comment_to_unixtime;
-	    if (defined $time) {
-		if ($last_wpt) {
-		    my($last_x,$last_y,$last_x0,$last_y0,$last_time,$last_alt,$last_acc) = @$last_wpt;
-		    my $legtime = $time-$last_time;
-		    # Do not check for $legtime==0 --- saved tracks do not
-		    # have any time at all!
-		    if (abs($legtime) < 60*$max_gap && !$is_new_chunk) {
-			my $dist = sqrt(($x0-$last_x0)**2 + ($y0-$last_y0)**2);
-			if ($last_accurate_wpt && $acc <= $accuracy_level) {
-			    my(undef,undef,$last_acc_x0,$last_acc_y0) = @$last_wpt;
-			    my $acc_dist = sqrt(($x0-$last_acc_x0)**2 + ($y0-$last_acc_y0)**2);
-			    $whole_dist += $acc_dist;
-			}
-			#$whole_dist += $dist;
-			$whole_time += $legtime;
-			my @l = localtime $time;
-			my $speed;
-			if ($legtime) {
-			    $speed = $dist/($legtime)*3.6;
-			}
-			my $grade;
-			if ($dist != 0 && defined $alt) {
-			    $grade = 100*(($alt-$last_alt)/$dist);
-			    if (abs($grade) > 10) { # XXX too many wrong values... XXX more intelligent solution
-				undef $grade;
+	    my $cat = "#0000a0";
+	    if ($symbol_to_img && $wpt->Symbol && exists $symbol_to_img->{$wpt->Symbol}) {
+		$cat = "IMG:$symbol_to_img->{$wpt->Symbol}";
+	    }
+	    my $l = [$pointname, ["$x,$y"], $cat];
+	    $s->push($l);
+	    if ($s_speed) {
+		my $time = $wpt->Comment_to_unixtime;
+		if (defined $time) {
+		    if ($last_wpt) {
+			my($last_x,$last_y,$last_x0,$last_y0,$last_time,$last_alt,$last_acc) = @$last_wpt;
+			my $legtime = $time-$last_time;
+			# Do not check for $legtime==0 --- saved tracks do not
+			# have any time at all!
+			if (abs($legtime) < 60*$max_gap && !$is_new_chunk) {
+			    my $dist = sqrt(($x0-$last_x0)**2 + ($y0-$last_y0)**2);
+			    if ($last_accurate_wpt && $acc <= $accuracy_level) {
+				my(undef,undef,$last_acc_x0,$last_acc_y0) = @$last_wpt;
+				my $acc_dist = sqrt(($x0-$last_acc_x0)**2 + ($y0-$last_acc_y0)**2);
+				$whole_dist += $acc_dist;
 			    }
-			}
-
-			my $max_acc = max($acc, $last_acc);
-			my $path_graph_elem = new PathGraphElem;
-			$path_graph_elem->wholedist($whole_dist);
-			$path_graph_elem->wholetime($whole_time);
-			$path_graph_elem->dist($dist);
-			$path_graph_elem->time($time);
-			$path_graph_elem->legtime($legtime);
-			$path_graph_elem->speed($speed)
-			    if defined $speed;
-			$path_graph_elem->alt($alt);
-			$path_graph_elem->grade($grade);
-			$path_graph_elem->coord("$x,$y");
-			$path_graph_elem->accuracy($max_acc);
-			push @add_wpt_prop, $path_graph_elem;
-
- 			my $color = "#000000";
-			if ($max_acc <= $accuracy_level) {
-			    if (defined $speed) {
-				if (!defined $max_speed || $max_speed < $speed) {
-				    $max_speed = $speed;
-				}
-				if (!$solid_coloring) {
-				    $color = $cfc_mapping->{int($speed)};
+			    #$whole_dist += $dist;
+			    $whole_time += $legtime;
+			    my @l = localtime $time;
+			    my $speed;
+			    if ($legtime) {
+				$speed = $dist/($legtime)*3.6;
+			    }
+			    my $grade;
+			    if ($dist != 0 && defined $alt) {
+				$grade = 100*(($alt-$last_alt)/$dist);
+				if (abs($grade) > 10) {	# XXX too many wrong values... XXX more intelligent solution
+				    undef $grade;
 				}
 			    }
-			    if (!defined $color) {
-				my(@sorted) = sort { $a <=> $b } keys %$cfc_mapping;
-				if (defined $speed && $speed <= $sorted[0]) {
-				    $color = $cfc_mapping->{$sorted[0]};
-				} else {
-				    $color = $cfc_mapping->{$sorted[-1]};
-				}
-			    }
-			} elsif ($max_acc >= 2) {
-			    #$color = "#e4c8e4"; # GPSs~~ from bbbike
-			    $color = "#e2e2e2";
-			} else {
-			    #$color = "#f4c0f4"; # GPSs~
-			    $color = "#eeeeee"; # GPSs~
-			}
 
-			{
-			    my $name = "";
-			    if (defined $speed) {
-				$name .= int($speed) . " km/h ";
+			    my $max_acc = max($acc, $last_acc);
+			    my $path_graph_elem = new PathGraphElem;
+			    $path_graph_elem->wholedist($whole_dist);
+			    $path_graph_elem->wholetime($whole_time);
+			    $path_graph_elem->dist($dist);
+			    $path_graph_elem->time($time);
+			    $path_graph_elem->legtime($legtime);
+			    $path_graph_elem->speed($speed)
+				if defined $speed;
+			    $path_graph_elem->alt($alt);
+			    $path_graph_elem->grade($grade);
+			    $path_graph_elem->coord("$x,$y");
+			    $path_graph_elem->accuracy($max_acc);
+			    push @add_wpt_prop, $path_graph_elem;
+
+			    my $color = "#000000";
+			    if ($max_acc <= $accuracy_level) {
+				if (defined $speed) {
+				    if (!defined $max_speed || $max_speed < $speed) {
+					$max_speed = $speed;
+				    }
+				    if (!$solid_coloring) {
+					$color = $cfc_mapping->{int($speed)};
+				    }
+				}
+				if (!defined $color) {
+				    my(@sorted) = sort { $a <=> $b } keys %$cfc_mapping;
+				    if (defined $speed && $speed <= $sorted[0]) {
+					$color = $cfc_mapping->{$sorted[0]};
+				    } else {
+					$color = $cfc_mapping->{$sorted[-1]};
+				    }
+				}
+			    } elsif ($max_acc >= 2) {
+				#$color = "#e4c8e4"; # GPSs~~ from bbbike
+				$color = "#e2e2e2";
+			    } else {
+				#$color = "#f4c0f4"; # GPSs~
+				$color = "#eeeeee"; # GPSs~
 			    }
-			    $name .= "[dist=" . BBBikeUtil::m2km($whole_dist,2) .
-				",time=" . BBBikeUtil::s2ms($whole_time) . "min" . sprintf(", abstime=%02d:%02d:%02d", @l[2,1,0]) .
-				    (defined $grade ? ", grade=" . sprintf("%.1f%%", $grade) : "") .
-					(defined $alt ? ", alt=" . sprintf("%.1fm", $alt) : "") .
-					"]";
-			    my $c1 = "$last_x,$last_y";
-			    my $c2 = "$x,$y";
-			    if ($main::use_current_coord_prefix) {
-				$c1 =  $main::coord_system_obj->coordsys . $c1;
-				$c2 =  $main::coord_system_obj->coordsys . $c2;
+
+			    {
+				my $name = "";
+				if (defined $speed) {
+				    $name .= int($speed) . " km/h ";
+				}
+				$name .= "[dist=" . BBBikeUtil::m2km($whole_dist,2) .
+				    ",time=" . BBBikeUtil::s2ms($whole_time) . "min" . sprintf(", abstime=%02d:%02d:%02d", @l[2,1,0]) .
+					(defined $grade ? ", grade=" . sprintf("%.1f%%", $grade) : "") .
+					    (defined $alt ? ", alt=" . sprintf("%.1fm", $alt) : "") .
+						"]";
+				my $c1 = "$last_x,$last_y";
+				my $c2 = "$x,$y";
+				if ($main::use_current_coord_prefix) {
+				    $c1 =  $main::coord_system_obj->coordsys . $c1;
+				    $c2 =  $main::coord_system_obj->coordsys . $c2;
+				}
+				$s_speed->push([$name, [$c1, $c2], $color]);
 			    }
-			    $s_speed->push([$name, [$c1, $c2], $color]);
 			}
 		    }
-		}
-		$last_wpt = [$x,$y,$x0,$y0,$time,$alt,$acc];
-		if ($acc <= $accuracy_level) {
-		    $last_accurate_wpt = [@$last_wpt];
+		    $last_wpt = [$x,$y,$x0,$y0,$time,$alt,$acc];
+		    if ($acc <= $accuracy_level) {
+			$last_accurate_wpt = [@$last_wpt];
+		    }
 		}
 	    }
+	} continue {
+	    $is_new_chunk = 0;
 	}
-    } continue {
-	$is_new_chunk = 0;
     }
-}
 
     if ($s_speed) {
 	my $msg = "";
