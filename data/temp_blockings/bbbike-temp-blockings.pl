@@ -7936,8 +7936,8 @@ EOF
 userdel	2::temp 23952,15086 23960,15021 23993,14797
 EOF
      },
-     { from  => 1210715191, # 2008-05-13 23:46
-       until => 1210801933, # 2008-06-30 23:59 1214863199
+     { from  => 1211228320, # 2008-05-19 22:18
+       until => 1214863199, # 2008-06-30 23:59
        text  => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 06.2008)',
        type  => 'gesperrt',
        source_id => 'IM_005465',
@@ -10396,8 +10396,8 @@ userdel	1::inwork -3997,15664 -4012,15780 -3995,15832 -3942,15926 -3896,15999 -3
 EOF
      },
      { from  => undef, # 
-       until => 1210801999, # 2008-07-01 00:00 1214863200
-       text  => 'Holländerstr. (Reinickendorf) Richtung Markstr., zwischen Aroser Allee und Markstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2008) (08:51) ',
+       until => 1216072800, # 2008-07-15 00:00
+       text  => 'Holländerstr. (Reinickendorf) Richtung Markstr., zwischen Aroser Allee und Markstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2008) ',
        type  => 'gesperrt',
        source_id => 'IM_007023',
        data  => <<EOF,
@@ -10761,9 +10761,9 @@ userdel	2::inwork 8600,12165 8515,12242 8214,12205 8089,12186
 userdel	2::inwork 6828,12031 7383,12095 7816,12150 8063,12182 8119,12414
 EOF
      },
-     { from  => 1199891609, # 2008-01-09 16:13
-       until => 1209592800, # 2008-05-01 00:00
-       text  => 'Sterndamm (Treptow) Richtung Schöneweide zwischen J.-Werner.Str und Lindhorstweg Baustelle, Fahrtrichtung gesperrt (bis April 2008)',
+     { from  => 1211228504, # 2008-05-19 22:21
+       until => 1214863199, # 2008-06-30 23:59
+       text  => 'Sterndamm (Treptow) Richtung Schöneweide zwischen J.-Werner.Str und Lindhorstweg Baustelle, Fahrtrichtung gesperrt (bis Ende Juni 2008)',
        type  => 'gesperrt',
        source_id => 'IM_007543',
        data  => <<EOF,
@@ -11107,8 +11107,8 @@ EOF
 userdel	2::inwork -12719,-1661 -12755,-1585 -12773,-1544
 EOF
      },
-     { from  => 1206490011, # 2008-03-26 01:06
-       until => 1210801965, # 2008-05-23 23:59 1211579999
+     { from  => 1211228399, # 2008-05-19 22:19
+       until => 1211579999, # 2008-05-23 23:59
        text  => 'Gormannstr. (Mitte) Kreuzung Linienstr. Baustelle, Straße vollständig gesperrt (bis 23.05.)',
        type  => 'handicap',
        source_id => 'IM_008182',
@@ -11307,8 +11307,8 @@ EOF
 userdel	2::inwork 17017,16716 17059,16560
 EOF
      },
-     { from  => 1209496325, # 2008-04-29 21:12
-       until => 1210802123, # 2008-07-15 23:59 1216159199
+     { from  => 1211228484, # 2008-05-19 22:21
+       until => 1216159199, # 2008-07-15 23:59
        text  => 'Siemensstr. (Oberschöneweide) Richtung Edisonstr. zwischen Wilhelminenhofstr. und Edisonstr. Baustelle, Fahrbahn auf einen Fahrstreifen verengt bzw. gesperrt, eine Umleitung ist eingerichtet (bis Mitte 07.2008)',
        type  => 'handicap',
        source_id => 'IM_008562',
@@ -11497,6 +11497,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 12055,11331 12307,11169
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Gersdorfstraße (Tempelhof) Richtung Lichtenrade zwischen Kaiserstraße und Ringstraße Baustelle, Fahrtrichtung gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_008845',
+       data  => <<EOF,
+userdel	2::inwork 8496,4331 8618,4187 8605,4138
 EOF
      },
     );
