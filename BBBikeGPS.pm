@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.31 2008/05/19 19:56:49 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.32 2008/05/19 21:24:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2008 Slaven Rezic. All rights reserved.
@@ -500,7 +500,7 @@ sub BBBikeGPS::make_symbol_to_img {
 	return;
     }
     for my $f (File::Glob::bsd_glob("$userdef_symbol_dir/*.bmp")) {
-	my($inx) = $f =~ m{(\d+)};
+	my($inx) = $f =~ m{(\d+)\.bmp$};
 	next if !defined $inx; # non parsable bmp filename
 	if ($f =~ m{\s}) {
 	    # bbd: IMG:... syntax cannot handle whitespace, so create a symlink
