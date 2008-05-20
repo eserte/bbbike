@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeCrosshairs.pm,v 1.8 2008/05/14 20:59:14 eserte Exp eserte $
+# $Id: BBBikeCrosshairs.pm,v 1.9 2008/05/20 22:44:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ package BBBikeCrosshairs;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(@old_bindings $angle $pd $angle_steps $pd_steps $show_info);
 $angle = 0       if !defined $angle;
@@ -116,18 +116,18 @@ sub activate {
 			       if ($show_info) {
 				   my($rx,$ry) = main::anti_transpose($x,$y);
 				   my $dist = int Strassen::Util::strecke($main::realcoords[-1],[$rx,$ry]);
-				   my $angle;
+				   my $out_angle;
 				   if (@main::realcoords >= 2) {
-				       ($angle, my($direction)) = schnittwinkel(@{$main::realcoords[-2]},
-										@{$main::realcoords[-1]},
-										$rx, $ry);
-				       $angle = rad2deg($angle);
+				       ($out_angle, my($direction)) = schnittwinkel(@{$main::realcoords[-2]},
+										    @{$main::realcoords[-1]},
+										    $rx, $ry);
+				       $out_angle = rad2deg($out_angle);
 				       if ($direction eq 'r') {
-					   $angle *= -1;
+					   $out_angle *= -1;
 				       }
 				   }
 				   main::status_message("Distance: ${dist}m" .
-							(defined $angle ? sprintf(", Angle: %.1f°", $angle) : ""),
+							(defined $out_angle ? sprintf(", Angle: %.1f°", $out_angle) : ""),
 							"info");
 			       }
 			   } else {
@@ -160,14 +160,18 @@ sub activate {
 	for my $ev (qw(XF86_Switch_VT_5 Shift-F5)) {
 	    eval {
 		$top->bind("<$ev>" => sub {
-			       # XXX implement the following:
-			       # - get canvas item below
-			       # - if it's a line, get the two adjacent points
-			       # - if there are any, then calculate angle and set $angle
-			       # - if not, then warn or info
-			       # XXX
-			       $crosshair_angle_dist_changed++;
-			       $change_coords_with_pointerxy->();
+			       my(undef, undef, $p1, $p2) = main::nearest_line_points_mouse($c);
+			       if ($p1 && $p2 && "@$p1" ne "@$p2") {
+				   my $p3 = [$p2->[0], $p2->[1]-100];
+				   ($angle, my($direction)) = schnittwinkel(@$p1, @$p2, @$p3);
+				   if ($direction eq 'l') {
+				       $angle *= -1;
+				   }
+				   $crosshair_angle_dist_changed++;
+				   $change_coords_with_pointerxy->();
+			       } else {
+				   main::status_message("Not over line?", "warn");
+			       }
 			   });
 	    };
 	}

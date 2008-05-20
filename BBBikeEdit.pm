@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.121 2008/03/31 20:53:41 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.122 2008/05/20 22:45:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2381,6 +2381,7 @@ sub editmenu {
 F4: rotate crosshairs to left
 F5: rotate crosshairs to right
 Shift-F4: make crosshairs right-angled
+Shift-F5: align with street under
 F6: enlarge additional rectangle
 F7: shrink additional rectangle
 Shift-F7: turn off additional rectangle
