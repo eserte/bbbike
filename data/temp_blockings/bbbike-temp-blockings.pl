@@ -1173,7 +1173,7 @@ EOF
        text  => 'L 401; (Lindenallee, Fontaneallee); OL Zeuthen, zw. Forstweg und Fährstr. grundhafter Straßenbau Vollsperrung 01.11.2004-12.08.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 26581,-7087 26146,-6218
+userdel	q4 26609,-7136 26146,-6218
 EOF
      },
      { from  => 1089496800, # 2004-07-11 00:00
@@ -3049,7 +3049,7 @@ EOF
        text  => 'L 401; (Lindenallee); OD Zeuthen, zw. OE und An der Eisenbahn grundhafter Straßenbau Vollsperrung 30.06.2005-30.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 26790,-7918 26700,-7334 26581,-7087
+userdel	q4 26790,-7918 26700,-7334 26609,-7136
 EOF
      },
      { from  => undef, # 

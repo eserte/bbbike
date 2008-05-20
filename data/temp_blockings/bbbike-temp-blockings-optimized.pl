@@ -941,15 +941,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1211234400,
-         'text' => 'L 030 Friedrichstr. OD Erkner, zw. Kreisverkehr und Beuststr. 16. Heimatfest Vollsperrung 15.05.2008-19.05.2008 ',
-         'from' => 1210716000,
-         'id' => 1346,
-         'data' => 'userdel	q4::temp 34443,1951 34250,2546
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1211752800,

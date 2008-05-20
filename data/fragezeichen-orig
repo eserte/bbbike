@@ -527,16 +527,16 @@ Neue Trasse der B167: für Radfahrer benutzbar? Alte Trasse nicht mehr Bundesstra
 Neue Trasse der B167: für Radfahrer benutzbar? Alte Trasse nicht mehr Bundesstraße, sondern K6436?	? 58206,37275 58206,37675 58225,37959 58087,38231 57734,38743 57612,39937 57403,40340 56862,40818 56659,41179 56381,41675 56087,41956 55506,42350 54895,43268 54515,43803 53987,44157 53425,44300 53187,44262 52400,43239
 Wendisch-Rietz - Radlow: Qualität?	? 54370,-20977 55509,-18644
 Lianenweg: Qualität? Durchfahrt möglich?	? 19686,1542 19955,1509
-Freiheitstr., Wildau: Qualität?	? 25187,-8934 25875,-8746 26568,-8593 26755,-8553
+Freiheitstr., Wildau: Qualität?	? 25187,-8934 25875,-8746 26563,-8522 26749,-8475
 Str. der Freiheit, Zeuthen: Qualität?	? 25281,-6921 25981,-7196
-Westkorso, Zeuthen: Qualität?	? 25981,-7196 26244,-7147 26581,-7087
+Westkorso, Zeuthen: Qualität?	? 25981,-7196 26244,-7147 26609,-7136
 Jahnstr., Wildau: Qualität?	? 25875,-8746 25700,-9502
 Forstallee, Miersdorf: Qualität?	? 24528,-7126 24743,-6606 25624,-6363
 Waltersdorf - Karlshof: laut "Berliner Umland" witterungsabhängige Strecke; Schlenker um See notwendig? Möglicherweise wegen der neuen A113 unterbrochen?	? 21084,-4728 20532,-4674 20580,-4985 20075,-5417 19866,-5382 19809,-5557 19945,-5661 19915,-6315 19907,-6772 19951,-6902 19817,-7484
 Kiekebusch - Karlshof: laut "Berliner Umland" geeignete Strecke auf Straßen	? 20892,-6636 20577,-6982 20255,-7591
 Karlshof - Brusendorf: laut "Berliner Umland" geeigneter Radweg (möglicherweise asphaltiert)	? 19092,-9677 18847,-9629 18205,-10432
 Eichwalde - Zeuthen: laut "Berliner Umland" witterungsabhängige Strecke	? 25185,-3955 25550,-5174
-Friesenstr. - Bahnstr. - Rheinstr. - Birkenstr. (Eichwalde, Zeuthen, Wildau): laut "Berliner Umland" geeignete Strecke auf Straßen	? 25550,-5174 25595,-5527 25835,-5983 25907,-6063 26001,-6257 26089,-6584 26048,-6587 26244,-7147 26359,-7450 26568,-8593
+Friesenstr. - Bahnstr. - Rheinstr. - Birkenstr. (Eichwalde, Zeuthen, Wildau): laut "Berliner Umland" geeignete Strecke auf Straßen	? 25550,-5174 25595,-5527 25835,-5983 25907,-6063 26001,-6257 26089,-6584 26048,-6587 26244,-7147 26359,-7450 26563,-8522
 Günterberg - Biesenbrow: laut "Regio-Cart" gut geeignet	? 47124,77624 48203,79315 49700,79603 50088,79574 50477,80139 50593,80084
 Biesenbrow - Polßen: laut "Regio-Cart" gut geeignet	? 50477,80139 50700,81437 50287,82637 48700,84137 48600,84500 48177,84989
 Biesenbrow - Briest: hier wahrscheinlich auch nur der mäßige Betonweg	? 52771,81718 54508,82572 54307,83141
@@ -664,7 +664,8 @@ Trappenfelder Pfad: Qualität laut ADFC-Karte gut	? 22092,15610 22101,15601 22076
 Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23279,14785 23379,14514
 #: note: Die Beilsteiner ist eine Einbahnstraße in diesem Abschnitt: 18852,13269 18832,13099 18749,12413 (Merler - Marzahner, offen Richtung Marzahner)
-Beilsteiner Str.: Qualität (laut ADFC-Karte im südlichen Abschnitt gut geeignet; zumindest in Höhe Allee der Kosmonauten asphaltiert)	? 18749,12413 18832,13099 18852,13269 18875,13473 18859,14048 18998,14089 19025,14037
+#: XXX: ein anonymer Eintrag meint: Asphalt, Q0, enge Straße, q0, aber leider keine Hinweise zur Einbahnstraße
+Beilsteiner Str.: Qualität (laut ADFC-Karte im südlichen Abschnitt gut geeignet; zumindest in Höhe Allee der Kosmonauten asphaltiert)	? 18749,12413 18832,13099 18852,13269 18875,13473 18871,13796 18859,14048 18998,14089 19025,14037
 Bleicheroder Str. - Pasewalker Str.: existiert eine Verbindung für Radfahrer entlang der Tram-Trasse?	? 11805,19071 11937,19175
 Birkenallee (Pankow): Qualität?	? 9739,20508 9655,20703
 #: XXX: ein anonymer Eintrag: eng schlechter straßenbelag, Q2
@@ -1629,7 +1630,6 @@ Magirusstr.: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 8189,6577 7997
 #: XXX: Einbahn offen Richtung Westen
 Egelingzeile: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 8183,6386 7992,6414
 Burchardstr: Qualität?	? 8192,6668 8553,6665 8722,6656
-Rothariweg: Qualität?	? 8292,6331 8290,6191 8291,6048
 Reglinstr.: Qualität?	? 7523,5749 7659,5735 7817,5719
 Reinhardtstr.: Qualität?	? 9154,6638 9131,6553 9134,6467 9143,6415
 Ingostr.: Qualität?	? 7901,4726 7970,4640
@@ -1772,7 +1772,6 @@ Markgrafenstr. (Mariendorf): Qualität?	? 8827,4874 8929,4882 9020,4890 9248,4904
 Upstallweg: Qualität?	? 9275,3753 9261,3791 9264,3874
 Illzacher Weg: Qualität?	? 9583,4190 9564,4305 9561,4404
 Kollostr.: Qualität?	? 9665,4392 9677,4518 9695,4638
-Kosleckweg: Qualität?	? 9995,4375 10010,4606
 Didostr.: Qualität?	? 10176,4376 10178,4477 10183,4583
 Äneasstr.: Qualität?	? 10178,4477 10257,4471 10270,4571
 Schwalbenweg: Qualität?	? 9382,4826 9507,4838
@@ -2083,3 +2082,5 @@ B1 - Ihleburg: Qualität, Straßennamen?	? -93421,-16587 -93643,-16580 -93694,-162
 B107 - Genthin: Qualität, Straßennamen?	? -74405,-4546 -74389,-4087 -74205,-3127 -74261,-2272 -74301,-1982 -74506,-1982
 Genthin, westliche Umgehungsstraße: für Radfahrer befahrbar (Radweg?)?	? -75035,-2620 -75024,-2462 -75157,-2161 -75200,-1964 -75171,-1774 -74945,-1477 -74684,-1348 -74426,-1230 -74390,-1183
 Aken - Mennewitz: hinter der Abbiegung nach Micheln fängt der Asphalt, durchgängig bis Mennewitz?	? -82075,-64262 -83089,-64250 -83286,-64330 -83794,-64295 -83875,-64288 -84563,-64090
+#: XXX ein anonymer Kommentar war nicht klar genug ("Asphalt" ohne weitere Qualitätsbestimmung)
+Brigittenstr.: Qualität? Können Radfahrer zur Kaiser-Wilhelm-Straße durchfahren?	? 6044,3110 6138,3022 6208,2954 6226,2936

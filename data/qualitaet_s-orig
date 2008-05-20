@@ -2103,6 +2103,8 @@ Heidekrautweg: Asphalt	Q0 21982,10874 22053,10911
 Petkusser Str.: schlechtes Kopfsteinpflaster	Q3+ 10506,-2642 10606,-3017 10655,-3135
 ######################################################################
 #: by: anonymous vvv
+Maxie-Wander-Str.: Asphalt	Q0 23352,13655 23397,13905 23424,14045 23581,14154 23644,14199 23718,14236 23826,14292
+Kosleckweg: schlechtes Kopfsteinpflaster	Q3 9995,4375 10010,4606
 Edeltrautweg: guter Asphalt	Q0 -1809,18413 -1846,18778
 Axenstr.: guter Asphalt	Q0 13894,18121 13802,18230 13704,18364 13595,18523 13557,18575
 Seebadstr. (Kaulsdorf): Kopfsteinpflaster	Q2 22111,8800 22268,8718 22310,8700 22394,8734 22532,8807 22700,8867 22786,8940 22886,9017 22918,9148 22947,9277
@@ -3609,7 +3611,7 @@ Lübarser Str.: Asphalt	Q0 5326,21407 5589,21799
 Peter-Huchel-Str.: Asphalt	Q0 22960,13298 23007,13509 23275,13459 23460,13454
 (Carola-Neher-Str - Kastanienallee): Asphalt	Q0 23393,14356 23769,14609
 #: note: "auch für Rennräder befahrbar"
-(Heinrich-Grüber-Str. - Grottkauer Str.): fester Ascheweg	Q0 23330,12734 23397,13102 23460,13454 23490,13611 23543,13890 23553,13931 23635,13916 23751,13858
+(Heinrich-Grüber-Str. - Grottkauer Str.): fester Ascheweg	Q0 23330,12734 23397,13102 23460,13454 23490,13611 23542,13880 23553,13931 23635,13916 23751,13858
 #: XXX: "kurzes Stück am Ende holpriger Siedlungsweg"
 (Heinrich-Grüber-Str. - Hönower Str.): überwiegend fester Ascheweg	Q0 24622,13919 24762,13890 24979,13753 25120,13803 25449,14032
 #: by: ^^^
@@ -4024,7 +4026,7 @@ Suttnerstr.: Asphalt	Q0 7659,5735 7667,5813 7728,5866 7730,5921 7730,5958
 #: by: Isa:
 Wunsiedeler Weg: Asphalt	Q0 7589,4008 7576,3774 7573,3698 7501,3432
 #: by: Ulf Sawallisch:
-Charlottenstr.: Asphalt	Q0 5763,2795 5929,2982 6218,3302 6538,3491
+Charlottenstr.: Asphalt	Q0 5763,2795 5929,2982 6044,3110 6218,3302 6538,3491
 #: by: Sandra (sspp):
 Magdalenenstr.: Kopfsteinpflaster	Q2 16129,11961 16159,12301
 #: by: Sebastian Scheller: vvv
@@ -4522,7 +4524,7 @@ Luisenstr. (Köpenick): guter Beton	Q0 22348,4177 22319,4197 22273,4216
 #: by: David Brehme:
 Langerhansstr.: Kopfsteinpflaster	Q2 22154,5659 22200,5776 22234,5921
 #: by: Maren Hühn:
-Elisabethstr. (Lankwitz): Asphalt	Q0 5763,2795 5933,2859 6022,2901 6224,3112 6308,3204
+Elisabethstr. (Lankwitz): Asphalt	Q0 5763,2795 5933,2859 6022,2901 6138,3022 6224,3112 6308,3204
 #: by: doris (zubraegel):
 Wachsmuthstr.: Kopfsteinpflaster, nur 13km/h	Q3 3750,23363 3939,23345 4021,23330 4058,23342 4201,23397
 #: by: André Maier:
@@ -6526,6 +6528,7 @@ Balzerplatz: Asphalt	Q0 20937,9229 21092,9223
 #: by: Rudolf Krois:
 Seestr. (Hermsdorf): schlechtes Kopfsteinpflaster	Q3 4768,23045 4742,23078 4728,23100 4684,23156 4619,23235
 #: by: Rhalgaln:
+#: note: anonymous meint "guter Beton"
 Barnabasstr.: mäßiger Beton	Q1- 2816,21410 2944,21464 3058,21530 3155,21572
 #: by: Jana Noltsch:
 Goethestr. (Weißensee): mäßiger Beton	Q1 12564,16399 12642,16555
@@ -6533,6 +6536,16 @@ Goethestr. (Weißensee): mäßiger Beton	Q1 12564,16399 12642,16555
 Radenzer Str.: guter Beton	Q0 15994,6138 16012,6177 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374
 #: by: Ralf Schimke:
 Bogenstr. (Hessenwinkel): Asphalt	Q0 32334,2224 32268,2229 32203,2254 32142,2304 32035,2435
+#: by: René (refan):
+Lindenstr. (Schmöckwitz): gepflastert	Q1- 27022,-2761 26931,-2871
+#: by: Freioun:
+Rothariweg: guter Asphalt	Q0 8292,6331 8290,6191 8291,6048
+#: by: Peter Heurich:
+Beiersdorfer Weg: Asphalt	Q0 30775,4318 30837,4521 30913,4766
+#: by: Hannes Ducke:
+Kinzerallee: gutes Kopfsteinpflaster	Q1 22090,5673 22154,5659 22236,5633 22375,5613
+#: by: alex (undstasi):
+Küselstr.: mäßiger Beton	Q1- 12299,15463 12221,15514 12158,15556 12094,15598 12058,15621
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
