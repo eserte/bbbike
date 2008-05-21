@@ -688,9 +688,9 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1212271200,
-         'text' => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, zw. A.-Bebel-Str. und R.-Breitscheid Straßenbau, Entwässerung Vollsperrung 21.12.2007-31.05.2008 ',
-         'from' => 1198105200,
+         'until' => 1214863200,
+         'text' => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, zw. A.-Bebel-Str. und R.-Breitscheid Straßenbau, Entwässerung Vollsperrung 21.05.2008-30.06.2008 ',
+         'from' => 1211234400,
          'id' => 1273,
          'data' => 'userdel	q4::inwork 34511,4787 34535,5319
 ',
@@ -1075,7 +1075,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        {
          'until' => undef,
-         'text' => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. gesperrt sein',
+         'text' => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. bis zum 2.6.2008 gesperrt sein',
          'from' => undef,
          'id' => 1364,
          'data' => 'userdel	2::inwork 14802,10505 14836,10524 14843,10621 14882,10732 14890,10824
@@ -1090,6 +1090,24 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'from' => undef,
          'id' => 1366,
          'data' => 'userdel	2::inwork 8496,4331 8618,4187 8605,4138
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Kynaststraße wird ab 2.6.2008 gesperrt. Unter Umständen wird dann die Untere Kynaststraße befahrbar sein.',
+         'from' => 1212098400,
+         'id' => 1367,
+         'data' => 'userdel	2::inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1211752800,
+         'text' => 'L 023 Hennickendorfer Chaussee OL Strausberg, Bahnübergang Gleisarbeiten Vollsperrung 24.05.2008-25.05.2008 ',
+         'from' => 1211493600,
+         'id' => 1368,
+         'data' => 'userdel	2::inwork 39721,13668 40248,14503 40266,14531
 ',
          'type' => 'gesperrt'
        }

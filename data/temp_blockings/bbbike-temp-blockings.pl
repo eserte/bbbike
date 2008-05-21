@@ -10726,9 +10726,9 @@ EOF
 userdel	2::inwork 40565,12409 40362,12087
 EOF
      },
-     { from  => 1198105200, # 2007-12-20 00:00
-       until => 1212271200, # 2008-06-01 00:00
-       text  => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, zw. A.-Bebel-Str. und R.-Breitscheid Straßenbau, Entwässerung Vollsperrung 21.12.2007-31.05.2008 ',
+     { from  => 1211234400, # 2008-05-20 00:00
+       until => 1214863200, # 2008-07-01 00:00
+       text  => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, zw. A.-Bebel-Str. und R.-Breitscheid Straßenbau, Entwässerung Vollsperrung 21.05.2008-30.06.2008 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 34511,4787 34535,5319
@@ -11485,7 +11485,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. gesperrt sein',
+       text  => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. bis zum 2.6.2008 gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 14802,10505 14836,10524 14843,10621 14882,10732 14890,10824
@@ -11506,6 +11506,22 @@ EOF
        source_id => 'IM_008845',
        data  => <<EOF,
 userdel	2::inwork 8496,4331 8618,4187 8605,4138
+EOF
+     },
+     { from  => 1212098400, # 2008-05-30 00:00
+       until => undef, # XXX
+       text  => 'Kynaststraße wird ab 2.6.2008 gesperrt. Unter Umständen wird dann die Untere Kynaststraße befahrbar sein.',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505
+EOF
+     },
+     { from  => 1211493600, # 2008-05-23 00:00
+       until => 1211752800, # 2008-05-26 00:00
+       text  => 'L 023 Hennickendorfer Chaussee OL Strausberg, Bahnübergang Gleisarbeiten Vollsperrung 24.05.2008-25.05.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 39721,13668 40248,14503 40266,14531
 EOF
      },
     );
