@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.369 2008/05/12 17:52:36 eserte Exp $
+# $Id: bbbike,v 3.369 2008/05/12 17:52:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -331,7 +331,7 @@ if ($devel_host && !grep { "danger" eq $_ } @Strassen::Dataset::comments_types) 
 $str_draw{'s'} = 1;      # draw streets by default
 $p_draw{'pp'}  = 0;      # do not draw crossings by default
 $p_draw{"pp-all"} = 0;   # pp drawing only for the tag types below:
-for (qw(s l r b u w f v e z fz)) { $p_draw{"pp-$_"} = 1} # this list should cover most keys of %str_file (but not the dependent ones like "comm" or "qs")
+for (qw(s l r b u w f v e z fz sBAB)) { $p_draw{"pp-$_"} = 1} # this list should cover most keys of %str_file (but not the dependent ones like "comm" or "qs")
 $p_draw{'lsa'} = 1;
 $p_far_away{'o'} = 0;
 $str_restrict{'s'}  = {qw(BAB 0 B 1 HH 1 H 1 N 1 NN 1 Pl 0 Br 0)}; # Pl = places, Br = bridges
