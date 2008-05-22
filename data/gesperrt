@@ -426,6 +426,7 @@ Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende g
 Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende gesperrt	2 21475,7500 21341,7487 21025,7349
 Baumgartensteg	1 -2882,13474 -2937,13399
 Geisenheimer Str.	1 4391,7258 4462,7137 4534,7015
+Teutonenstr. (Nikolassee):	1 -3519,2180 -3610,2237 -3689,2267 -3742,2287
 Humboldtring -> Hans-Marwitza-Ring: Hochstraße	3 -11399,-1339 -11461,-1424 -11358,-1491
 Hans-Marwitza-Ring -> Humboldtring: Hochstraße	3 -11358,-1491 -11461,-1424 -11540,-1543
 Merkurstr.	1 -8469,-2576 -8380,-2580 -8359,-2582 -8411,-2699 -8432,-2713 -8484,-2710
@@ -571,6 +572,8 @@ Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
 Köpenicker Landstr. -> Güldenhofer Ufer: Mittelstreifen	3 16713,6839 16674,6885 16630,6800
 Güldenhofer Ufer -> Köpenicker Landstr.: Mittelstreifen	3 16630,6800 16674,6885 16568,7009
+Falkenseer Chaussee -> Remscheider Str.: Mittelstreifen	3 -5039,15618 -5154,15651 -5192,15517
+Remscheider Str. -> Falkenseer Chaussee: Mittelstreifen	3 -5192,15517 -5154,15651 -5473,15742
 Cecilienstr. -> Allee der Kosmonauten: Straßenbahntrasse	3 20281,14012 20241,14016 20210,13776
 Allee der Kosmonauten -> Cecilienstr.: Straßenbahntrasse	3 20269,14256 20241,14016 20281,14012
 Fichtelbergstr. -> Allee der Kosmonauten: Straßenbahntrasse	3 20609,14480 20611,14445 20657,14446
@@ -862,6 +865,12 @@ Prenzlauer Allee -> Stubbenkammerstr.: Mittelstreifen mit Straßenbahn, aber Ampe
 Stubbenkammerstr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3 11643,15189 11798,15133 11822,15193
 Chodowieckistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3 11992,14599 11681,14759 11662,14695
 Prenzlauer Allee -> Chodowieckistr.: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3 11712,14868 11681,14759 11992,14599
+Prenzlauer Allee -> Zelterstr.: Straßenbahntrasse	3 11941,15586 11967,15700 11849,15760
+Zelterstr. -> Prenzlauer Allee: Straßenbahntrasse	3 11849,15760 11967,15700 11997,15834
+Zelterstr. -> Küselstr.: Straßenbahntrasse	3 11849,15760 11967,15700 12058,15621
+Prenzlauer Allee -> Küselstr.: Straßenbahntrasse	3 11997,15834 11967,15700 12058,15621
+Küselstr. -> Prenzlauer Allee: Straßenbahntrasse	3 12058,15621 11967,15700 11941,15586
+Küselstr. -> Zelterstr.: Straßenbahntrasse	3 12058,15621 11967,15700 11849,15760
 Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3 11526,14693 11610,14886 11545,14897
 Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3 11712,14868 11610,14886 11526,14693
 Angermünder Str. -> Torstr.: Mittelstreifen mit Straßenbahn	3 10703,13832 10640,13700 10746,13673

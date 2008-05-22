@@ -246,8 +246,10 @@ Achenbachpromenade: Parkweg Q1, q1 Fußgänger (Radfahren erlaubt), green1, unbele
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
-#: by: Frank Soukup:
-Heidebergplan: guter Asphalt, Q0	? -7121,14711 -7136,14742 -7149,14768
+#: by: Sara Köhler:
+Am Koeltzepark: Asphalt und Beton, Q0	? -3077,15367 -3293,15481
+#: by: eisenach ronald:
+Pelzlakeweg: gute Qualität, Q0	? 29163,1329 29074,1410
 #: by: anonymous:
 Barbara-McClintock-Str.: guter Asphalt, Q0	? 18802,2993 18651,3148 18519,3283
 #: by: Renate Braun:
@@ -410,12 +412,13 @@ Müllerstr. (Spandau): Qualität?	? -3216,15155 -3138,15259
 (Kurstr. - Müllerstr. (durch den Koeltzepark): Beschaffenheit des Wegs?	? -3138,15259 -3077,15367
 Kurstr.: Qualität?	? -3077,15367 -3041,15434 -3006,15534 -2980,15675
 Kirchhofstr.: Qualität?	? -3034,15217 -3138,15259 -3235,15307 -3295,15356
+#: note: by Sara Köhler: für Radfahrer freigegeben, "gut befahrbar"
 Kirchhofstr. - Schönwalder Str. (am Koeltzepark): Existiert eine Durchfahrt für Radfahrer? Qualität?	? -3295,15356 -3359,15426
-Lasiuszeile - Schönwalder Str. (am Koeltzepark): Existiert eine Durchfahrt für Radfahrer? Qualität?	? -3293,15481 -3359,15426 -3384,15404
+#: note: by Sara Köhler: für Radfahrer freigegeben, "gut befahrbar"
+Lasiuszeile - Schönwalder Str. (am Koeltzepark): Qualität?	? -3293,15481 -3359,15426 -3384,15404
 Lasiuszeile: Qualität?	? -3260,15550 -3293,15481
 Lutherplatz: Qualität?	? -3296,15563 -3306,15644
 Neumeisterstr.: Qualität?	? -3296,15563 -3461,15544
-Am Koeltzepark: Qualität?	? -3077,15367 -3293,15481
 Predigergarten: Qualität?	? -3235,15307 -3250,15281 -3285,15258
 Hedwigstr.: Qualität?	? -3293,15645 -3302,15787
 Schülerbergstr.: Qualität?	? -3559,15952 -3444,15978
@@ -431,7 +434,6 @@ Parkstr. (Spandau): Qualität?	? -2856,15687 -2744,15690
 Feldstr. (Spandau): Qualität?	? -3177,15053 -3258,15100 -3368,15170 -3534,15219
 Feldstr. (Spandau): Abschnitt an der Flankenschanze für Autos gesperrt?	? -3534,15219 -3585,15221
 Feldstr. (Spandau): Qualität?	? -3585,15221 -3635,15222 -3658,15218
-Ackerstr. (Spandau): Qualität? Zufahrt zum Falkenseer Damm für Autos gesperrt?	? -3937,15299 -3869,15333 -3804,15358 -3696,15463 -3660,15618 -3650,15661 -3637,15717
 Hospitalstr.: Qualität?	? -3650,15661 -3727,15695
 Emdenzeile: Qualität?	? -3720,15717 -3637,15717 -3514,15726
 Golmer Str.: Qualität?	? -3720,15717 -3866,15775 -3995,15832
@@ -965,7 +967,6 @@ Beelitz - Schlunkendorf - Kähnsdorf: Qualität? Nur für Radfahrer offen (von Schl
 Siedlung Schönwalde - Wansdorf/Pausin: Qualität?	? -10313,21144 -10336,21462 -10425,22139 -10425,22503 -10564,22896 -10590,23112 -10559,23255
 Schildower Weg, Teil des Barnimer Dörferwegs: Qualität? (laut ADFC-Karte mäßig oder schlecht geeignet)	? 8415,24361 8212,24258 8198,24225 7956,24083 7887,24043 7874,24035
 Möllersfelder Weg - Schillingweg: Qualität (möglicherweise guter Feldweg)? Teil des Barnimer Dörferwegs?	? 10799,24194 11147,23778
-Goethestr. (Weißensee): Qualität zwischen Ostseestr. und Langhansstr. (laut ADFC-Karte teilweise gut, teilweise mäßig geeignet)?	? 12384,16029 12423,16109 12466,16198 12512,16291 12564,16399
 Stille Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10184,18875 10128,19110
 (Am Schloss Schönhausen): Qualität, für Autofahrer befahrbar?	? 10390,19069 10322,19046 10278,19072 10249,19148 10223,19223 10243,19267 10308,19297
 Schloßallee - Blankenburger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10661,19307 10481,19344 10393,19587
@@ -1258,7 +1259,7 @@ Beskidenstr.: Qualität? (laut ADFC-Karte gut geeignet)	? -3030,2266 -3030,2349 -
 Jochen-Klepper-Weg: Qualität (laut ADFC-Karte teilweise gut geeignet)?	? -3030,2266 -2784,2358 -2372,2477
 Gerkrathstr.: Qualität (laut ADFC-Karte ungeeignet)?	? -3280,2507 -3246,2606 -3260,2675 -3225,2902
 Rehsprung: Qualität? Für den Autoverkehr gesperrt (Teile davon?)? Existiert eine Treppe an der Autobahnunterführung?	? -3280,2507 -3309,2400 -3284,2306 -3156,2134 -3107,2068 -3098,1922 -3133,1802 -3234,1751 -3264,1645 -3502,1581 -3557,1652 -3609,1602 -3654,1539 -3764,1446
-An der Rehwiese: Qualität?	? -3559,1760 -3557,1652 -3511,1686 -3389,1703 -3299,1753 -3299,1838 -3223,2020 -3284,2041 -3420,2224 -3395,2403 -3372,2704 -3360,2917
+An der Rehwiese: Qualität?	? -3559,1760 -3557,1652 -3511,1686 -3389,1703 -3299,1753 -3299,1838 -3233,1960 -3223,2020 -3284,2041 -3420,2224 -3395,2403 -3372,2704 -3360,2917
 #: XXX war ein anonymer Eintrag, als Spielstraße ausgewiesen:
 Roßweiner Ring: Qualität?	? 25007,13951 25146,13901 25120,13803 24975,13848
 Herrenweg: Qualität? Vom nördlichen Ende aus ein Feldweg, vom südlichen Ende aus ein Plattenweg	? 52614,175530 52111,175700 51953,175932 51931,176070 51988,176229 51980,176400 51802,176486 51605,176575 51425,176773 51462,177105 51695,177545 51694,177711 51555,178051 51558,178115 51627,178336
@@ -1630,7 +1631,6 @@ Magirusstr.: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 8189,6577 7997
 Egelingzeile: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 8183,6386 7992,6414
 Burchardstr: Qualität?	? 8192,6668 8553,6665 8722,6656
 Reglinstr.: Qualität?	? 7523,5749 7659,5735 7817,5719
-Reinhardtstr.: Qualität?	? 9154,6638 9131,6553 9134,6467 9143,6415
 Ingostr.: Qualität?	? 7901,4726 7970,4640
 Ingostr. - Am Teltowkanal: Durchfahrt für Radfahrer möglich? Qualität?	? 7970,4640 8027,4571
 Tejastr.: Qualität?	? 7830,4667 7897,4585
