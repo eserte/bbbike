@@ -331,7 +331,7 @@ if ($devel_host && !grep { "danger" eq $_ } @Strassen::Dataset::comments_types) 
 $str_draw{'s'} = 1;      # draw streets by default
 $p_draw{'pp'}  = 0;      # do not draw crossings by default
 $p_draw{"pp-all"} = 0;   # pp drawing only for the tag types below:
-for (qw(s l r b u w f v e z fz sBAB)) { $p_draw{"pp-$_"} = 1} # this list should cover most keys of %str_file (but not the dependent ones like "comm" or "qs")
+for (qw(s l r b u w f v e z g gP gD gBO sBAB fz wr)) { $p_draw{"pp-$_"} = 1} # this list should cover most keys of %str_file (but not the dependent ones like "comm" or "qs")
 $p_draw{'lsa'} = 1;
 $p_far_away{'o'} = 0;
 $str_restrict{'s'}  = {qw(BAB 0 B 1 HH 1 H 1 N 1 NN 1 Pl 0 Br 0)}; # Pl = places, Br = bridges
@@ -5652,7 +5652,8 @@ sub define_item_attribs {
 	 'i' => 'blue4',
 	);
     %str_file =
-	('s'  => 'strassen',
+	(# "primary"
+	 's'  => 'strassen',
 	 'l'  => 'landstrassen', # this is really scoped
 	 'u'  => 'ubahn',
 	 'b'  => 'sbahn',
@@ -5666,6 +5667,7 @@ sub define_item_attribs {
 	 'gD' => "deutschland",
 	 'gBO'=> "berlin_ortsteile",
 	 'e'  => 'faehren',
+	 # dependent
 	 'rw' => 'radwege',
 	 'qs' => 'qualitaet_s',
 	 'ql' => 'qualitaet_l',
@@ -5675,6 +5677,7 @@ sub define_item_attribs {
 	 'gr' => 'green',
 	 'comm' => 'comments', # this is splitted into multiple files
 	 'mount' => 'mount',
+	 # special
 	 'fz' => "fragezeichen",
 	 'wr' => "wasserrouten",
 	);

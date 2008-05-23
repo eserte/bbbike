@@ -139,13 +139,27 @@ This global directive introduces an RCS/CVS Id string.
 Treat this file as encoded in the given encoding (all names accepted
 by Perl/Encode may be used). If not set, then iso-8859-1 is assumed.
 
-=item C<listing_sort>: I<sort_method>>
+=item C<listing_sort: I<sort_method>>
 
 Define a sorting method for street/point listings. Normally listings
 will be sorted alphabetically (sort method B<alphabetic>). If the
 listing should appear as in the bbd file, specify B<unsorted>.
 B<natural> should be used for E<quot>naturalE<quot> sorting (see
 L<Sort::Naturally>).
+
+=item C<line_dash: I<x, y, ...>>
+
+Define the default dash pattern for line items. See L<Tk::Canvas/DASH
+PATTERNS> for the list integer syntax.
+
+=item C<category_dash.I<category>: I<x, y, ...>>
+
+Define the dash pattern for line items with the category I<category>.
+
+=item C<category_color.I<category>: I<color>>
+
+Define the color for line items with the category I<category>.
+I<color> should be in the form C<#rrggbb>.
 
 =back
 
@@ -169,6 +183,11 @@ Used after a C<by> directive for a correction. It is advisable to put
 the previous a small note of the previous and current entry after the
 I<source>.
 
+=item C<confirmed_by: I<source>>
+
+Denotes that the information in the next block or line was confirmed
+by I<source>.
+
 =item C<unverified_by: I<source>>
 
 Same as E<quot>by:E<quot> for unverified data.
@@ -189,6 +208,26 @@ starting and an end date).
 The next block or line is unsure or unclear information. The I<why>
 text specifies an additional comment. This note should not appear in
 the processed data. C<XXX> is an alias for C<unsure:>.
+
+=item C<XXX_checklater: I<why>>
+
+Like C<XXX>, and additionally attach the E<quot>checklaterE<quot>
+attribute.
+
+=item C<XXX_prog: I<why>>
+
+The next block or line contains problematic information due to
+problems in the using programs, i.e. bbbike and bbbike.cgi.
+
+=item C<XXX_indoor: I<why>>
+
+The unclear information can only be researched E<quot>indoorE<quot>,
+but usually not on-site.
+
+=item C<XXX_outdoor: I<why>>
+
+The unclear information can only be researched on-site. Usually this
+is the same as C<XXX>.
 
 =item C<alias: I<name>>
 
