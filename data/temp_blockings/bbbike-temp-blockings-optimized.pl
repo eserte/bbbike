@@ -847,16 +847,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_008182',
-         'until' => 1211579999,
-         'text' => 'Gormannstr. (Mitte) Kreuzung Linienstr. Baustelle, Straße vollständig gesperrt (bis 23.05.)',
-         'from' => 1211228399,
-         'id' => 1319,
-         'data' => 'userdel	q4::inwork 10385,13548 10432,13678 10445,13752
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1213480800,
@@ -1021,7 +1012,7 @@ push @temp_blocking,
          'text' => 'Alt-Rudow: von Krokusstraße bis Köpenicker Straße Einbahnstraße in Richtung Neudecker Weg',
          'from' => 1209852000,
          'id' => 1356,
-         'data' => 'userdel	1::inwork 16849,1437 16610,1715
+         'data' => 'userdel	1::inwork 16849,1437 16805,1488 16610,1715
 ',
          'type' => 'gesperrt'
        },

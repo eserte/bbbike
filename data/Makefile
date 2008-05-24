@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.187 2008/05/16 21:05:41 eserte Exp $
+# $Id: Makefile,v 2.187 2008/05/16 21:05:41 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1405,6 +1405,12 @@ GNUmakefile.mapfiles: Makefile.mapfiles $(MISCRSRCDIR)/b2gmake
 GNUmakefile: Makefile
 	$(PERL) -e 'print qq{all:\n\t\@echo "*** Sorry, your make program is not supported."\n\t\@echo "*** Please try pmake from the BSD project."\n\t\@echo "*** You can get it from http://www.sourceforge.net/projects/srezic"\n\t\@echo "*** Debian users may install the pmake package."\n\t\@echo ""\n\t\@false\n}' > $@
 .endif
+
+######################################################################
+# Misc helpers
+
+show-used-directives:
+	perl -nle '/^#: ([^\s:]+)/ and print $$1' *-orig | sort -u
 
 ######################################################################
 # Berlin.coords.data etc. targets

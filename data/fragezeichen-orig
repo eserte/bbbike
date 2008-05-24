@@ -70,6 +70,10 @@ Aroser Allee, Fertigstellung bis 2007-10-01	? 6720,18616 6704,18462 6694,18351 6
 #
 #: section ignorieren vvv
 #: section Straßen in Planung vvv
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0803/nachricht2984.html
+Eberswalder Str.: Neubau von Radwegen bis 2009-12-01	?::inwork 10336,14975 10351,14981 10516,15039 10618,15076 10889,15045
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2961.html
+B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstreifen dann aufgehoben (bis 2010-01-01)	?::inwork 9228,23643 9146,23843 8984,24078 8891,24330 8686,24872 8659,24959 8493,25378
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20080327.1225.97044.html
 Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20624,18485 20915,18601 21143,18704 21278,18786 21332,18819
 #: by: http://www.reinickendorf.de/index_8368_de.html
@@ -161,6 +165,8 @@ Prinzregentenstr. soll Fahrradstraße werden	? 5630,7875 5634,8004 5641,8137 5669
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 #
+#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20080519.1325.100767.html
+Schönefelder Str.: Einbahnstraßenregelung nur für Autos: wo genau, in welche Richtung?	? 17222,-606 17222,-426 17199,-196 17193,-109
 #: XXX ein anonymer bbbikegooglemaps-Kommentar --- aber auf dem Luftbild sieht die Kreuzung ganz normal aus?!
 Kreuzungsüberquerung umständlich?	? 26453,-12128
 Umgehungsstraße Michendorf (B2): GPS-genaue Lage?	? -13997,-8760 -13973,-8969 -13902,-9177 -13637,-9546 -13440,-9933 -13407,-10162 -13433,-10557 -13536,-11215 -13719,-11627 -13963,-11970 -14187,-12070 -14371,-12085 -14768,-12092 -14822,-12132
@@ -1270,7 +1276,7 @@ Preußenstr.: Qualität?	? 21297,651 21202,727
 Wongrowitzer Steig: Qualität (laut ADFC-Karte gut geeignet)?	? 22785,6984 22663,7014 22474,7065 22358,7093 22240,7122 22132,7148 22035,7146
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20050810.1640.28623.html:
 Fürstenwalder Damm: existieren zwischen Stillerzeile und Müggelseedamm Radwege?	? 25012,5754 24700,5633 23950,5342
-#: Verlauf aus goyello - Daniel Weber nach der Qualität fragen [AM]
+#: note: Verlauf aus goyello - Daniel Weber nach der Qualität fragen [AM]
 (Lilienthalpark): beleuchtet, Fußgängerfrequenz?	? 5514,580 5571,614 5671,637 5615,735 5576,800 5584,808 5571,864 5540,919
 (Lilienthalpark): beleuchtet, Fußgängerfrequenz?	? 5578,936 5540,919 5358,822
 (Lilienthalpark): beleuchtet, Fußgängerfrequenz?	? 5533,663 5485,751 5499,771 5539,773 5590,719 5593,679 5575,660 5533,663
@@ -2065,4 +2071,7 @@ Aken - Mennewitz: hinter der Abbiegung nach Micheln fängt der Asphalt, durchgäng
 Brigittenstr.: Qualität? Können Radfahrer zur Kaiser-Wilhelm-Straße durchfahren?	? 6044,3110 6138,3022 6208,2954 6226,2936
 Hintersee - Ahlbeck: Qualität?	? 66135,136956 66005,137087 65889,137419 65809,137545 65797,137678 65701,137799 65666,138036 65599,138296 65357,138798 65158,138985 65161,139048 64864,139559 64220,140595 64147,140739 63881,141088 63850,141191 63843,141267 63825,141282 63767,141332 63780,141553 63741,141644 63294,142022 62897,142175 62583,142213 62200,142145 61593,141874 61512,141859 61297,141889 61245,141840 61213,141745 61083,141649 60993,141629 60885,141524
 Ueckermünde: Qualität? Radwege?	? 53773,148858 53226,148833 52892,148819 52724,148719 52574,148662 52427,148565 52087,148346 52032,148357
-Lahmertstr. - Bohnsdorfer Str.: Qualität?	? 22130,1961 21997,1869
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2958.html
+Oranienburger Str.: Existieren zwischen Linienstraße und Friedrichstraße auf beiden Seiten Radspuren?	? 9281,13374 9215,13392
+#: note: laut http://www.berlin.de/ba-neukoelln/presse/archiv/20080516.1245.100630.html ist die Einbahnstraßenregelung bis Ende 2010 gedreht
+Am Hanffgraben: Qualität? Gilt die Einbahnstraßenregelung auch für Radfahrer?	? 16698,1392 16805,1488

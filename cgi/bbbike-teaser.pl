@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.26 2008/01/24 21:55:40 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.28 2008/05/24 17:39:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005,2006,2008 Slaven Rezic. All rights reserved.
@@ -27,8 +27,9 @@ sub teaser {
 				#'teaser_dobli',
 			       ];
     $teasers_mandatory{"de"} = [
-				teaser_perltk_newrelease(),
-				#teaser_perltk(),
+				teaser_sternfahrt_adfc(),
+				#teaser_perltk_newrelease(),
+				teaser_perltk(),
 				teaser_beta(),
 				teaser_mapserver(),
 				teaser_fahrradstadt(),
@@ -66,6 +67,21 @@ sub teaser {
 	    defined $t ? $t : (),
 	   )
 	);
+}
+
+sub teaser_sternfahrt_adfc {
+    my $year = (localtime)[5]+1900;
+    my @l = localtime; $l[4]++;$l[5]+=1900;
+    my $today = sprintf "%04d%02d%02d", $l[5], $l[4], $l[3];
+    my $out_of_date = $today gt "20080607";
+    if (!$out_of_date) {
+	my $url = "http://www.adfc-berlin.de/home/sternfahrt$year";
+	<<EOF
+<div class="teaser" style="font-size:larger;"><a href="$url"><b>Sternfahrt ${year}</b></a> am 1.&nbsp;Juni&nbsp;2008</div>
+EOF
+    } else {
+	();
+    }
 }
 
 sub teaser_sternfahrt {

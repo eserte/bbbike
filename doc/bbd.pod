@@ -161,6 +161,16 @@ Define the dash pattern for line items with the category I<category>.
 Define the color for line items with the category I<category>.
 I<color> should be in the form C<#rrggbb>.
 
+=item C<category_image.I<category>: I<image_name>>
+
+Define an image for point items. The image name is usually without
+suffix and will be searched in the default bbbike image directories,
+if specified relative.
+
+=item C<category_stipple.I<category>: I<image_name>>
+
+Define an stipple (which is usually an xbm image) for area items.
+
 =back
 
 =head3 Line/block directives
