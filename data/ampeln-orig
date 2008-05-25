@@ -1240,7 +1240,7 @@
 	X 14067,16127
 	X 13797,16237
 	X 13131,16525
-	X 12693,16700
+# Ampel wurde ca. 2008-05-20 außer Betrieb genommen und abgebaut (by: Gordon Charles; http://www.berlin.de/ba-pankow/presse/archiv/20080508.0705.100069.html)	X 12693,16700
 	X 10620,16497
 	X 14272,12446
 	X 5272,4535
@@ -1849,12 +1849,13 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 #: section ^^^
 #: section Parkeisenbahn Wuhlheide vvv
 #: note: Fährt nur am Wochenende tagsüber während des Sommers im 15-30-Minutentakt: vvv
-	B0 20619,6133
+	B0 20623,6136
 	B0 20561,7229
 	B0 19590,6590
-	B0 20300,6837
+	B0 20313,6841
 	B0 19937,5995
 	B0 19986,6404
+	B0 20593,6082
 #: note: ^^^
 #: section ^^^
 	B0 16684,3325
@@ -2307,6 +2308,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	X 21088,9175
 #: note: Luftbild:
 	F 4650,18817
+	X 16004,10204
 ################################################################################
 # note: Potsdam vvv
 	X -12839,-1342

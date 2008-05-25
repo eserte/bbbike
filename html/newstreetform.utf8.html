@@ -56,6 +56,7 @@ function init() {
 	  val = val.replace(/%40/g, "@");
 	  val = val.replace(/%20/g, " ");
   	  if (key == "email" || key == "author") {
+	    val = unescape(val);
 	    frm.elements[key].value = val;
 	  }
   	}

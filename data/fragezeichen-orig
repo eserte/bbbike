@@ -75,7 +75,7 @@ Eberswalder Str.: Neubau von Radwegen bis 2009-12-01	?::inwork 10336,14975 10351
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2961.html
 B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstreifen dann aufgehoben (bis 2010-01-01)	?::inwork 9228,23643 9146,23843 8984,24078 8891,24330 8686,24872 8659,24959 8493,25378
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20080327.1225.97044.html
-Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20624,18485 20915,18601 21143,18704 21278,18786 21332,18819
+Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420 20624,18485 20915,18601 21143,18704 21278,18786 21332,18819
 #: by: http://www.reinickendorf.de/index_8368_de.html
 Wittenauer Str.: Ausbau zum verkehrsberuhigten Bereiche, außerdem Ersetzen des Pflasters durch eine Betonpflasterfahrbahn (Verbundsteinpflaster?), bis 2009-03-01 (Frühjahr 2009)	? 6690,22968 6639,23063 6727,23287 6770,23417
 #: last_checked: 2008-05-02
@@ -252,6 +252,12 @@ Achenbachpromenade: Parkweg Q1, q1 Fußgänger (Radfahren erlaubt), green1, unbele
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: Axel Giesow:
+Pietschkerstr. (Potsdam): guter Beton, Q0, enge Straße, q1	? -8098,-3680 -8096,-3596 -8077,-3486 -8025,-3348
+#: by: arndt rimpler:
+Ochtumweg: mäßiger Beton	Q2+ 13990,14729 13795,14876
+#: by: Volker (retzlaff):
+Burghardweg: guter Beton, Q1, aber q2 ohne weitere Angabe	? 21533,14009 21561,14257 21584,14459
 #: by: eisenach ronald:
 Pelzlakeweg: gute Qualität, Q0	? 29163,1329 29074,1410
 #: by: anonymous:
@@ -508,8 +514,8 @@ Kohlhasenbrücker Str.: Qualität (beidseitig der Großbeerenstr. Asphalt, sonst Wa
 Ziolkowskistr.: Qualität?	? -7971,-3373 -7814,-3419 -7481,-3396 -6969,-3582 -6808,-3642
 Stern - Potsdamer Damm/Potsdamer Str.: Durchfahrt möglich? Qualität?	? -6808,-3642 -5736,-3629
 Gaußstr.: Einbahnstraße? Qualität?	? -6969,-3582 -6968,-3678 -6983,-3886 -7113,-3884 -7118,-3678
-Galileistr.: Qualität? Name westl. der Neuendorfer Str. noch immer Galileistr?	? -6968,-3678 -7118,-3678 -8032,-3710 -8114,-3675
-Im Schäferfeld: Qualität?	? -8114,-3675 -8404,-3824 -8475,-3861
+Galileistr.: Qualität? Name westl. der Neuendorfer Str. noch immer Galileistr?	? -6968,-3678 -7118,-3678 -8032,-3710 -8098,-3680
+Im Schäferfeld: Qualität?	? -8098,-3680 -8404,-3824 -8475,-3861
 Im Schäferfeld - Nuthe: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)? genaue Wegführung? Durchfahrt möglich?	? -8475,-3861 -8813,-3912 -8915,-4069 -9306,-4259
 Stern - Nudow: Durchfahrt möglich? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? -6983,-3886 -7077,-4186 -6902,-4397 -6775,-4326 -6671,-6390 -6516,-6520 -6508,-6969 -6183,-7600 -6319,-7823 -5766,-8911 -5387,-8896
 F3 nach Marquardt: genaue Wegführung? Qualität?	? -19309,4359 -19403,4631 -18701,4578
@@ -636,7 +642,7 @@ Luckow - Sommersdorf: Qualität?	? 63930,93685 63800,94250 62800,96175 62912,9680
 Storkow - Büssow: Qualität? zumindest die östliche Ende asphaltiert	? 68928,100165 68714,99911 68107,99606 67815,99673
 Büssow - Penkun: Qualität? Feldweg!	? 68107,99606  67712,99425 66026,99515
 Büssow - Penkun: Qualität? (zumindest das westliche Ende wahrscheinlich asphaltiert)	? 67815,99673 67833,99771 67413,100429 66654,100131 66523,99936 66096,99655 66026,99515 65831,99460 65115,99600
-#: last_checked: 2007-07-19
+#: last_checked: 2008-05-25 (von der Treskowallee aus)
 Laut "Berliner Umland" verläuft die R1 hier entlang, aber es gibt (noch) keine Ausschilderung	? 17527,7812 17678,7850 17775,7874 17987,7973 18387,7742
 #: XXX Genaue Wegführung?
 Eberswalde - Spechthausen: Qualität? Straßennamen?	? 35362,48503 35312,48225 35485,48132 35428,47961
@@ -1202,7 +1208,7 @@ Barnimer Dörferweg in Blankenfelde: Qualität?	? 7956,24083 8132,23896 8502,23877
 Barnimer Dörferweg in Blankenfelde: Qualität (laut ADFC-Karte schlecht geeignet)?	? 8535,23753 8984,24078 9344,24262 9555,23933 9828,24149
 Ingwäonenweg - Am Luchgraben, Teil des Barnimer Dörferwegs: Qualität (laut ADFC-Karte schlecht geeignet)?	? 16500,22465 16508,22215 16675,22168
 Straße 70 - Am Luchgraben: Qualität?	? 16298,22221 16508,22215
-Barnimer Dörferweg im Bereich Falkenberg: Qualität (laut ADFC-Karte teilweise gut, mäßig und schlecht geeignet)?	? 19971,18785 20356,18659 20377,18753 20694,18857
+Barnimer Dörferweg im Bereich Falkenberg: Qualität (laut ADFC-Karte teilweise gut, mäßig und schlecht geeignet)?	? 19971,18785 20356,18659 20377,18753 20586,18822 20694,18857
 Am Gehrensee, Teil des Barnimer Dörferwegs: Qualität (laut ADFC-Karte überwiegend gut geeignet)?	? 20855,19299 21322,19049 21278,18786
 B96, Ortsumfahrung Greifswald: Kann sie von Radfahrern benutzt werden oder ist es eine Kraftfahrzeugstraße?	? 5170,183994 2903,185164 2659,185700 2830,187236 2733,187723 2245,188942 2635,189917 3398,190528
 Klosterwalde - Herzfelde: Qualität?	? 19706,85931 20429,86157 21477,87145 21691,87730 22154,87985 22550,88053 22562,87961
@@ -1303,9 +1309,6 @@ Pegnitring oder Str. 136? beleuchtet? fester Sandweg	? -8050,5560 -7969,5453 -79
 Bau einer Ampel, voraussichtlich im Frühjahr 2007	? 16669,25373
 Semnonenweg: voraussichtlich 2006-12-01 mit einer neuen Asphaltdecke versehen	? -4482,10914 -4536,10670
 Wassermannstr.: Qualität zwischen Radickestr. und Büchnerweg?	? 20924,3577 20776,3753
-# XXX del (keine Bestätigung durch Michael Bona) Alexanderstr./Alexa: Ampel in Vorbereitung	? 11207,12706
-#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20061025.0935.49339.html, aber ganz klar ist es nicht, ob nur die Straßenanbindung oder die gesamte Straße gemeint ist, und welcher Radweg?
-Hackenbergstr.: Qualität? Gibt es hier einen Radweg?	? 20428,3786 20280,3996 20253,4034 20248,4040
 #: note: laut Message-ID: <e3o6lb$grb$1@hahn.informatik.hu-berlin.de> noch immer nicht fertig
 Peetzig - Greiffenberg: westlich der Bahnstrecke mittlerweile asphaltiert?	? 44200,74890 45817,75966
 Putenweg: Qualität?	? 16491,517 16372,312 16281,156 16244,86 16192,24 16118,-51 16106,-94 16154,-230 16198,-339 16259,-368 16346,-394
@@ -1339,7 +1342,6 @@ Fortsetzung des Heinrich-Laehr-Parks: Qualität (scheint ein Parkweg zu sein)? Fü
 #: XXX: Aber Bauarbeiten, die bis Ende Mai 2008 (2008-05-31) fertig werden... dann besser geeignet? (siehe http://www.berlin.de/ba-spandau/presse/archiv/20080325.1455.96926.html)
 Hamburger Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? -8010,16486 -8080,16150 -8197,15622
 Mondsteinpfad: Qualität?	? 11181,1884 11182,1976
-Asbestweg: Qualität?	? 11207,1737 11309,1718 11362,1723
 Barkhausenstr.: Qualität?	? -10530,16281 -10744,16241
 Barkhausenstr.: Qualität?	? -10853,16230 -10970,16232 -11136,16247 -11296,16308 -11549,16413 -11783,16506
 K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen: Qualität (bis Ende 2005 bei der LBVS als "schlechte Straße" gekennzeichnet)	? -50149,24689 -50048,24475 -49883,24097 -50010,23562 -50201,23411 -50255,22794 -50938,21256
@@ -1362,7 +1364,8 @@ Gerlindeweg: Qualität des Abschnitts zwischen Beatestr. und Friederikestr.?	? -1
 Gerlindeweg: Qualität des Abschnitts zwischen Luisenstr. und Helgaweg?	? -1846,18778 -1907,18810 -2029,18822 -2102,18840
 #: note: ein anonymer Kommentar war nicht klar genug. Laut Luftbild scheinen Autofahrer nicht auf die Daumstr. fahren zu können
 #: note: ein weiterer anonymer Kommentar meint "guter Asphalt" und sagt nichts über eine Einbahnstraße
-Burscheider Weg: Qualität (möglicherweise gutes Kopfsteinpflaster)? Einbahnstraßenregelung: gibt es eine, wo und in welche Richtung?	? -1345,15060 -1322,15079 -934,15254 -862,15283 -740,15306
+#: note: laut skpromotions... gibt es einen Radweg, laut Luftbild nur Richtung Osten (nachfragen!). Keine Einbahnstraßenregelung erwähnt. Kopfsteinpflaster Q2.
+Burscheider Weg: Qualität (möglicherweise gutes Kopfsteinpflaster)?	? -1345,15060 -1322,15079 -934,15254 -862,15283 -740,15306
 Markomannenstr. - Preußenstr.: existiert eine für Radfahrer befahrbare Verbindung zwischen Markomannenstr. und Preußenstr.?	? 20700,1363 20711,1406
 Bootshausweg - An den Rohrbruchwiesen: Qualität des Weges? (wahrscheinlich asphaltiert?) für Autofahrer gesperrt?	? -1229,16773 -1316,16729 -1359,16737 -1421,16751 -1452,16728
 Am Flugplatz (Strausberg): Qualität?	? 44596,21287 44661,21139 44631,21051 44692,20886 44686,20822 44536,20408 44527,19890 44085,19049
@@ -1439,7 +1442,6 @@ Parallelstr.: endet die Parallelstr. am südwestlichen oder am nordöstlichen Teil
 Perwenitzer Weg: Qualität der Straße? Existiert hier ein Radweg? Ist es möglich, auf den Askanierring zu gelangen?	? -3708,15831 -3829,15868 -3924,15915
 #: XXX unklarer anonymer Eintrag (gutes Kopfsteinpflaster), Teile der Straße sehen tatsächlich nach Kopfsteinpflaster aus, Teile sind anscheinend asphaltiert oder unbefestigt; Netzanbindung fehlt
 Elfenallee: Qualität? (möglicherweise Kopfsteinpflaster?)	? 12260,21583 12249,21626 12312,21762 12332,21910 12362,22131 12393,22332 12397,22429
-Hildegard-Marcusson-Straße/Haupstr.: Ampel in Bau	? 16004,10204
 Eupener Str.: Qualität nördlich des Uhlenwegs?	? 16384,26726 16432,26829
 Breitenbachstr. - Soltauer Str.: besteht eine Verbindung für Radfahrer entlang der S-Bahn? Qualität?	? 3909,19002 3756,19003 3749,19031
 Schillerstr. (Lichterfelde): Qualität?	? 4429,2396 4568,2424 4721,2449 4868,2370 5033,2279
@@ -1680,7 +1682,6 @@ Gropiusstr.: Qualität?	? 15877,15673 15825,15547
 Käthestr.: Qualität?	? 16369,16003 16349,15935 16351,15914 16360,15889 16393,15868 16491,15874
 Gertrudstr.: Qualität?	? 15891,16041 15869,16078 15793,16162 15731,16208
 Bertastr.: Qualität?	? 15894,16189 15840,16246 15782,16277
-Sabinensteig: Qualität?	? 16442,15926 16395,16099 16416,16236
 Elsastr.: Qualität?	? 16395,16099 16360,16150 16316,16173 16234,16203 16154,16227 16075,16249 15997,16272 15956,16299 15929,16342
 Marie-Luise-Str.: Qualität?	? 15968,16133 15976,16220 15997,16272
 Annemariestr.: Qualität?	? 16046,16134 16075,16249 16095,16331
@@ -1933,7 +1934,6 @@ Herbert-Tschäpe-Str.: Qualität? Einbahnstraße, auch für Radfahrer gültig?	? 1471
 Chrysanthemenstr.: Qualität? Kann man als Radfahrer zur Oderbruchstr. gelangen?	? 14137,13987 14241,13941 14262,13935
 Süderbrockweg: Qualität?	? 13933,14622 13940,14654 13990,14729 14051,14822 14080,14862 14103,14853
 Steengravenweg: Qualität?	? 13733,14813 13795,14876 13856,14944
-Ochtumweg: Qualität?	? 13990,14729 13795,14876
 Altenescher Weg: Qualität? Kann die Kniprodestr. in Höhe des Altenescher Wegs überquert werden?	? 14051,14822 13856,14944 13749,15013
 Einsteinstr.: Qualität?	? 13596,14934 13537,14835 13507,14822 13235,14888 13185,14912
 Storkower Str. - Einsteinstr.: Qualität? Einbahnstraße? Überqueren der Storkower Str. möglich?	? 13151,14855 13185,14912 13143,14935 13110,14879
