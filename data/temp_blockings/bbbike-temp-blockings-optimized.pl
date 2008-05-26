@@ -934,15 +934,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1211752800,
-         'text' => 'L 055 Calau - Boblitz Bahnübergang in der OD Bischdorf Instandsetzungsarbeiten Vollsperrung 23.05.2008-25.05.2008 ',
-         'from' => 1211407200,
-         'id' => 1348,
-         'data' => 'userdel	2::inwork 49836,-67419 50143,-67035 50318,-65825
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1230764399,
          'text' => 'Mohrenstr. zwischen Mauerstr. und Glinkastr. gesperrt ',
@@ -1093,14 +1085,15 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'until' => 1211752800,
-         'text' => 'L 023 Hennickendorfer Chaussee OL Strausberg, Bahnübergang Gleisarbeiten Vollsperrung 24.05.2008-25.05.2008 ',
-         'from' => 1211493600,
-         'id' => 1368,
-         'data' => 'userdel	2::inwork 39721,13668 40248,14503 40266,14531
+         'until' => 1230764400,
+         'text' => 'B 246 Ernst-Thälmann-Straße OL Storkow, zw. Burgstraße u. Am Bahnhof Deckenerneuerung Vollsperrung 26.05.2008-31.12.2008 ',
+         'from' => 1211666400,
+         'id' => 1369,
+         'data' => 'userdel	q4::inwork 46518,-16240 46409,-16251 46042,-16433
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
        }
      
 );

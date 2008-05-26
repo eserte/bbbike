@@ -11524,4 +11524,12 @@ EOF
 userdel	2::inwork 39721,13668 40248,14503 40266,14531
 EOF
      },
+     { from  => 1211666400, # 2008-05-25 00:00
+       until => 1230764400, # 2009-01-01 00:00
+       text  => 'B 246 Ernst-Thälmann-Straße OL Storkow, zw. Burgstraße u. Am Bahnhof Deckenerneuerung Vollsperrung 26.05.2008-31.12.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 46518,-16240 46409,-16251 46042,-16433
+EOF
+     },
     );
