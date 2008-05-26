@@ -10727,7 +10727,7 @@ userdel	2::inwork 40565,12409 40362,12087
 EOF
      },
      { from  => 1211234400, # 2008-05-20 00:00
-       until => 1214863200, # 2008-07-01 00:00
+       until => 1211828204, # 2008-07-01 00:00 1214863200
        text  => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, zw. A.-Bebel-Str. und R.-Breitscheid Straßenbau, Entwässerung Vollsperrung 21.05.2008-30.06.2008 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -11499,13 +11499,13 @@ EOF
 userdel	2::inwork 12055,11331 12307,11169
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1211828060, # 
+       until => 1211828064, # XXX
        text  => 'Gersdorfstraße (Tempelhof) Richtung Lichtenrade zwischen Kaiserstraße und Ringstraße Baustelle, Fahrtrichtung gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_008845',
        data  => <<EOF,
-userdel	2::inwork 8496,4331 8618,4187 8605,4138
+userdel	1::inwork 8496,4331 8618,4187 8605,4138
 EOF
      },
      { from  => 1212098400, # 2008-05-30 00:00
@@ -11530,6 +11530,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 46518,-16240 46409,-16251 46042,-16433
+EOF
+     },
+     { from  => 1211234400, # 2008-05-20 00:00
+       until => 1214863200, # 2008-07-01 00:00
+       text  => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, ab A.-Bebel-Str. in Ri. Erkner Straßenbau, Entwässerung Vollsperrung 21.05.2008-30.06.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 34511,4787 34574,4552
 EOF
      },
     );

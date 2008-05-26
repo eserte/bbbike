@@ -324,7 +324,7 @@ Haßfurter Weg	1 11796,18482 11835,18301
 Kattegatstr.	1 9331,17658 9475,17557
 Waldhüterpfad	1 510,4202 371,4453 301,4643
 Amalienpark	1 10905,18671 10950,18499 10860,18650
-Im Amseltal	1 1962,25214 1983,25097
+Im Amseltal	1 1962,25214 1982,25108
 Gundelfinger Str.	1 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18778,8895
 Fehmarner Str. 	1 6710,14776 6528,15000
@@ -709,6 +709,8 @@ Schloßstr.: Mittelstreifen	3nocross 4741,5309 4748,5357 4861,5581
 #: note: Luftbild
 Blumberger Damm: Mittelstreifen	3nocross 21378,14490 21408,14591 21521,14943
 #: note: Luftbild
+Blumberger Damm: Mittelstreifen	3nocross 21694,15802 21670,15646 21647,15496
+#: note: Luftbild
 Blumberger Damm: Straßenbahntrasse	3nocross 21232,15465 21187,15350 21163,15289
 Schönholzer Str.: Straßenbahn auf der Fahrbahn	3nocross 10089,18180 10054,18210 9909,18333
 #: by: stefan: (sw-...)
@@ -982,6 +984,8 @@ tragen (Treppe)	0:30 20673,7260
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+#: by: Wolfhard Schleese:
+Schranke, kann von Fahrrädern umfahren werden	BNP:3 668,25047
 #: by: rupnor@...
 Drängelgitter	BNP:3 6908,5053
 Schranke	BNP:5 11162,6379

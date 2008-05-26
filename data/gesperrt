@@ -293,7 +293,7 @@ Haßfurter Weg	1 11796,18482 11835,18301
 Kattegatstr.	1 9331,17658 9475,17557
 Waldhüterpfad	1 510,4202 371,4453 301,4643
 Amalienpark	1 10905,18671 10950,18499 10860,18650
-Im Amseltal	1 1962,25214 1983,25097
+Im Amseltal	1 1962,25214 1982,25108
 Gundelfinger Str.	1 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18778,8895
 Fehmarner Str. 	1 6710,14776 6528,15000
@@ -608,6 +608,8 @@ Wrangelstr. -> Schloßstr.: Mittelstreifen	3 4682,5388 4748,5357 4861,5581
 Schloßstr. -> Wrangelstr.: Mittelstreifen	3 4741,5309 4748,5357 4682,5388
 Blumberger Damm -> Fridolinweg: Mittelstreifen	3 21521,14943 21408,14591 21450,14576
 Fridolinweg -> Blumberger Damm: Mittelstreifen	3 21450,14576 21408,14591 21378,14490
+Pöhlbergstr. -> Blumberger Damm: Mittelstreifen	3 21497,15639 21670,15646 21694,15802
+Blumberger Damm -> Pöhlbergstr.: Mittelstreifen	3 21647,15496 21670,15646 21497,15639
 Allee der Kosmonauten -> Alt-Marzahn: Straßenbahntrasse	3 21163,15289 21187,15350 21139,15376
 Alt-Marzahn -> Allee der Kosmonauten: Straßenbahntrasse	3 21139,15376 21187,15350 21232,15465
 Schönholzer Str. -> Wollankstr.: Straßenbahn auf der Fahrbahn	3 10089,18180 10054,18210 10027,18165
@@ -1108,6 +1110,7 @@ tragen (Treppe)	0:30:-118 -7418,181
 tragen (Treppe)	0:30:-64 -6933,14317
 tragen (Treppe)	0:30:2 -6934,14291
 tragen (Treppe)	0:30:-237 20673,7260
+Schranke, kann von Fahrrädern umfahren werden	BNP:3:-259 668,25047
 Drängelgitter	BNP:3:-108 6908,5053
 Schranke	BNP:5:-81 11162,6379
 Drängelgitter am Bahnübergang	BNP:3:-96 13552,2204

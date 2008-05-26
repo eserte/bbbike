@@ -687,15 +687,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1214863200,
-         'text' => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, zw. A.-Bebel-Str. und R.-Breitscheid Straßenbau, Entwässerung Vollsperrung 21.05.2008-30.06.2008 ',
-         'from' => 1211234400,
-         'id' => 1273,
-         'data' => 'userdel	q4::inwork 34511,4787 34535,5319
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1066,16 +1058,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_008845',
-         'until' => undef,
-         'text' => 'Gersdorfstraße (Tempelhof) Richtung Lichtenrade zwischen Kaiserstraße und Ringstraße Baustelle, Fahrtrichtung gesperrt',
-         'from' => undef,
-         'id' => 1366,
-         'data' => 'userdel	2::inwork 8496,4331 8618,4187 8605,4138
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Kynaststraße wird ab 2.6.2008 gesperrt. Unter Umständen wird dann die Untere Kynaststraße befahrbar sein.',
@@ -1092,6 +1075,15 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'from' => 1211666400,
          'id' => 1369,
          'data' => 'userdel	q4::inwork 46518,-16240 46409,-16251 46042,-16433
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1214863200,
+         'text' => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, ab A.-Bebel-Str. in Ri. Erkner Straßenbau, Entwässerung Vollsperrung 21.05.2008-30.06.2008 ',
+         'from' => 1211234400,
+         'id' => 1370,
+         'data' => 'userdel	q4::inwork 34511,4787 34574,4552
 ',
          'type' => 'handicap'
        }
