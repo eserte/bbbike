@@ -982,15 +982,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1211925600,
-         'text' => 'L 054 Calau - Vetschau Bahnübergang bei Saßleben Gleisumbauarbeiten Vollsperrung 25.05.2008-27.05.2008 ',
-         'from' => 1211580000,
-         'id' => 1355,
-         'data' => 'userdel	2::inwork 50732,-71705 51374,-71361 51440,-71337
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Alt-Rudow: von Krokusstraße bis Köpenicker Straße Einbahnstraße in Richtung Neudecker Weg',
