@@ -740,15 +740,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1212271200,
-         'text' => 'L 141 Havelberger Str. OD Breddin Kanal- u. Straßenbauarbeiten Vollsperrung * 11.02.2008-31.05.2008 ',
-         'from' => 1202598000,
-         'id' => 1292,
-         'data' => 'userdel	q4::inwork -70922,51604 -70980,51154 -71053,49770
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1214863200,
          'text' => 'B 122 Berliner Str. OD Rheinsberg, zw. Schloßstr. und Paulshorster Str. Kanalarbeiten Vollsperrung 03.03.2008-30.06.2008 ',
@@ -782,15 +774,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1212184800,
-         'text' => 'B 087 Leipziger Str. OD FFO, zw. Biegener- u. Krz.Kopernikus-/Müllroser-/EHS Str. Straßenausbau halbseitig gesperrt; Einbahnstraße 17.03.2008-30.05.2008 ',
-         'from' => 1205622000,
-         'id' => 1302,
-         'data' => 'userdel	q4::inwork 87829,-6485 87655,-6717
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -841,15 +825,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1213480800,
-         'text' => 'K 6814 OD Zechlinerhütte ,Luhmer Str. zw. Zechlinerstr.u.B 122 Ersatzneubau Jagowbrücke Vollsperrung 31.03.2008-14.06.2008 ',
-         'from' => 1206828000,
-         'id' => 1321,
-         'data' => 'userdel	2::inwork -27053,82717 -27141,82696 -27184,82772 -27346,82842
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1222811999,
          'text' => 'Bauarbeiten am nordwestlichen Bereich der Elsenbrücke von 7. Januar 2008 bis September 2008; kein Zugang zum Spreeufer. ',
@@ -859,15 +835,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1212271200,
-         'text' => 'B 096 Brücke über den Seichgraben zw. Zützen u. Golßen Brückenbauarbeiten Vollsperrung 01.04.2008-31.05.2008 ',
-         'from' => 1206914400,
-         'id' => 1323,
-         'data' => 'userdel	2::inwork 27428,-49936 26648,-49177
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1031,35 +999,11 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1212789600,
-         'text' => 'L 082 Marzahna - Niemegk zw. Marzahna und Zeuden Straßenbauarbeiten Vollsperrung 13.05.2008-06.06.2008 ',
-         'from' => 1210543200,
-         'id' => 1363,
-         'data' => 'userdel	2::inwork -31201,-45781 -32661,-44144 -33582,-43378 -33576,-43159
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => undef,
-         'text' => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. bis zum 2.6.2008 gesperrt sein',
-         'from' => undef,
-         'id' => 1364,
-         'data' => 'userdel	2::inwork 14802,10505 14836,10524 14843,10621 14882,10732 14890,10824
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Kynaststraße wird ab 2.6.2008 gesperrt. Unter Umständen wird dann die Untere Kynaststraße befahrbar sein.',
-         'from' => 1212098400,
-         'id' => 1367,
-         'data' => 'userdel	2::inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
        undef,
        {
          'until' => 1230764400,

@@ -11484,7 +11484,7 @@ userdel	2::inwork -31201,-45781 -32661,-44144 -33582,-43378 -33576,-43159
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1213716727, # XXX undef -> offen
        text  => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. bis zum 2.6.2008 gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -11509,7 +11509,7 @@ userdel	1::inwork 8496,4331 8618,4187 8605,4138
 EOF
      },
      { from  => 1212098400, # 2008-05-30 00:00
-       until => undef, # XXX
+       until => 1213716709, # XXX undef -> nach gesperrt-orig gewandert
        text  => 'Kynaststraße wird ab 2.6.2008 gesperrt. Unter Umständen wird dann die Untere Kynaststraße befahrbar sein.',
        type  => 'gesperrt',
        data  => <<EOF,
