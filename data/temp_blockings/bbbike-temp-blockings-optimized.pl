@@ -741,15 +741,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1214863200,
-         'text' => 'B 122 Berliner Str. OD Rheinsberg, zw. Schloßstr. und Paulshorster Str. Kanalarbeiten Vollsperrung 03.03.2008-30.06.2008 ',
-         'from' => 1204412400,
-         'id' => 1293,
-         'data' => 'userdel	q4::inwork -25508,76444 -25411,76258
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1215208800,
@@ -779,15 +771,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1214949600,
-         'text' => 'L 075 Tollkrug - Selchow - Waßmannsdorf OD Selchow Straßenbauarbeiten Vollsperrung 25.03.2008-01.07.2008 ',
-         'from' => 1206313200,
-         'id' => 1307,
-         'data' => 'userdel	q4::inwork 15355,-5280 15568,-5323 15771,-5575 15987,-6248 16190,-6406
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1220220000,
          'text' => 'L 232 Möllensee-Lichtenow Brücke über den Verbindungsgraben in der OD Kagel Brückenbauarbeiten Vollsperrung 10.03.2008-31.08.2008 ',
@@ -961,8 +945,8 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        {
-         'until' => 1214863200,
-         'text' => 'L 793 Alfred-Kühne-Str. Ludwigsfelde, Kreuzung Am Birkengrund/ Ludwigsfelder Str. Bau Kreisverkehr Vollsperrung 17.03.2008-30.06.2008 ',
+         'until' => 1220220000,
+         'text' => 'L 793 Alfred-Kühne-Str. Ludwigsfelde, Kreuzung Am Birkengrund/ Ludwigsfelder Str. Bau Kreisverkehr Vollsperrung 17.03.2008-31.08.2008 ',
          'from' => 1205622000,
          'id' => 1357,
          'data' => 'userdel	q4::inwork 3257,-10374 2629,-10301 2580,-11069
@@ -1020,6 +1004,165 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'from' => 1211234400,
          'id' => 1370,
          'data' => 'userdel	q4::inwork 34511,4787 34574,4552
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_009124',
+         'until' => 1214690400,
+         'text' => 'B1 Frankfurter Chaussee (Vogelsdorf) in beiden Richtungen zwischen Grünerlinde und Anschlussstelle Berlin-Hellersdorf Baustelle, Straße vollständig gesperrt (bis 28.06.2008)',
+         'from' => 1213736980,
+         'id' => 1371,
+         'data' => 'userdel	2::inwork 58237,11268 58056,11318
+userdel	2::inwork 33475,10842 32900,10962 31871,10926 30678,10923
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009134',
+         'until' => undef,
+         'text' => 'Gersdorfstr. (Tempelhof) in beiden Richtungen zwischen Kurfürstenstr. und Kaiserstr. Baustelle, Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1372,
+         'data' => 'userdel	2::inwork 8318,4558 8418,4432 8496,4331
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009127',
+         'until' => undef,
+         'text' => 'Hauptstr. (Friedrichshain-Kreuzberg) in beiden Richtungen zwischen Markgrafendamm und untere Kynaststr. Baustelle, Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1373,
+         'data' => 'userdel	q4::inwork 14890,10824 15034,10795 15181,10766 15255,10751
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_008984',
+         'until' => 1220306399,
+         'text' => 'Ritterstr. (Kreuzberg) Richtung Kottbusser Tor zwischen Lobeckstr. und Prinzenstr. Baustelle, Fahrtrichtung gesperrt (bis 01.09.)',
+         'from' => 1213737230,
+         'id' => 1374,
+         'data' => 'userdel	1::inwork 10572,10773 10768,10686
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009042',
+         'until' => undef,
+         'text' => 'Zeltinger Str. (Reinickendorf) in beiden Richtungen, zwischen Weislingenstr. und Schönfließer Str. Fahrbahnunterspülung, Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1375,
+         'data' => 'userdel	2::inwork 2994,25873 3145,26256
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1214863200,
+         'text' => 'B 112 Lebus - Manschnow OD Rathstock Erneuerung Durchlass Vollsperrung 16.06.2008-30.06.2008 ',
+         'from' => 1213480800,
+         'id' => 1376,
+         'data' => 'userdel	2::inwork 87843,13999 87889,14339
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1213999200,
+         'text' => 'B 188 Berliner Str. OD Rathenow, zw. Goethestr. und F.-Ebert-Ring Sanierung Fahrbahndecke halbseitig gesperrt; Einbahnstraße 16.06.2008-20.06.2008 ',
+         'from' => 1213480800,
+         'id' => 1377,
+         'data' => 'userdel	q4::inwork -61212,20700 -61627,20789 -62285,21020
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1229727600,
+         'text' => 'K 6425 Lindenallee OD Hoppegarten, zw. Kreisverkehr und An der Zoche Brücken-, Straßen-, Gehwegbau Vollsperrung 10.06.2008-19.12.2008 ',
+         'from' => 1212962400,
+         'id' => 1378,
+         'data' => 'userdel	q4::inwork 28510,12507 28287,12471 27490,11678
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1220220000,
+         'text' => 'L 016 Brücke ü.d. A 10 zw. Perwenitz u. Paaren, sowie AS Falkensee Brückenbauarbeiten Vollsperrung 23.06.2008-31.08.2008 ',
+         'from' => 1214085600,
+         'id' => 1379,
+         'data' => 'userdel	2::inwork -17102,26468 -17545,26647
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1249077600,
+         'text' => 'L 030 Bahnhofstr. Eisenbahnbrücke in der OD Erkner Brückenerneuerung Vollsperrung 09.06.2008-31.07.2009 ',
+         'from' => 1212876000,
+         'id' => 1380,
+         'data' => 'userdel	2::inwork 34326,2915 34142,2742
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1214085600,
+         'text' => 'L 033 Wriezen - Prötzel zw. Wriezen und Schulzendorf Deckenerneuerung Vollsperrung 10.06.2008-21.06.2008 ',
+         'from' => 1212962400,
+         'id' => 1381,
+         'data' => 'userdel	2::inwork 59114,34559 58750,34221
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1215640800,
+         'text' => 'L 037 Müllrose - B 5, Petershagen Bahnübergang in der OD Jacobsdorf Gleisbauarbeiten Vollsperrung 23.06.2008-09.07.2008 ',
+         'from' => 1214085600,
+         'id' => 1382,
+         'data' => 'userdel	2::inwork 75272,-7514 75394,-6991 75402,-6910
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1215208800,
+         'text' => 'L 070 Herzberger Chaussee OD Dahme, zw. Mehlsdorfer Weg und OA Straßenbauarbeiten Vollsperrung 18.06.2008-04.07.2008 ',
+         'from' => 1213653600,
+         'id' => 1383,
+         'data' => 'userdel	q4::inwork 12928,-59868 12708,-60813
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1213912800,
+         'text' => 'L 145 B 103, Kolrep - Wittstock Bahnübergang in der OD Blumenthal Gleisbauarbeiten Vollsperrung 17.06.2008-19.06.2008 ',
+         'from' => 1213567200,
+         'id' => 1384,
+         'data' => 'userdel	2::inwork -63503,72951 -63227,73339
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1217023200,
+         'text' => 'L 338 Schöneiche - Hönow OD Neuenhagen, zw. BÜ und Jahnstr. Einbau von Querungshilfen Vollsperrung 02.06.2008-25.07.2008 ',
+         'from' => 1212271200,
+         'id' => 1385,
+         'data' => 'userdel	q4::inwork 30795,13191 30179,13667
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1213999200,
+         'text' => 'L 601 Leipziger Str. OL Finsterwalde, Nr. 76-78 Grundsteinlegung Vollsperrung 20.06.2008-20.06.2008 ',
+         'from' => 1213826400,
+         'id' => 1386,
+         'data' => 'userdel	q4::temp 32865,-86269 32963,-85912
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1229727600,
+         'text' => 'L 794 Ruhlsdorfer Str. OD Teltow. zw. Schenkendorfer Weg und Ruhlsdorfer Platz Kanalarbeiten Vollsperrung 29.05.2008-19.12.2008 ',
+         'from' => 1211925600,
+         'id' => 1387,
+         'data' => 'userdel	q4::inwork 1222,-1732 1276,-1268
 ',
          'type' => 'handicap'
        }
