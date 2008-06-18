@@ -730,8 +730,7 @@ sub write {
     close F;
 }
 
-# XXX not complete, only waypoints/tracks
-sub as_string {
+sub header_as_string {
     my $self = shift;
     my $s = "% Written by $0 [" . __PACKAGE__ . "]\n\n";
     # XXX:
@@ -742,6 +741,13 @@ sub as_string {
 !Creation: no
 
 ";
+    $s;
+}
+
+# XXX not complete, only waypoints/tracks
+sub body_as_string {
+    my $self = shift;
+    my $s = "";
     if ($self->Type == TYPE_WAYPOINT) {
 	$s .= "!W:\n";
 	foreach my $wpt (@{ $self->Waypoints }) {
@@ -787,6 +793,13 @@ sub as_string {
     } else {
 	die "NYI!";
     }
+    $s;
+}
+
+sub as_string {
+    my $self = shift;
+    my $s = $self->header_as_string;
+    $s .= $self->body_as_string;
     $s;
 }
 
@@ -971,6 +984,15 @@ sub has_track {
 	return 1 if ($chunk->Type eq $chunk->TYPE_TRACK);
     }
     0;
+}
+
+sub as_string {
+    my $self = shift;
+    my $s = $self->Chunks->[0]->header_as_string;
+    for my $chunk (@{ $self->Chunks }) {
+	$s .= $chunk->body_as_string;
+    }
+    $s;
 }
 
 1;
