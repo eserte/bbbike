@@ -1034,7 +1034,7 @@ userdel	2::inwork 33475,10842 32900,10962 31871,10926 30678,10923
          'text' => 'Hauptstr. (Friedrichshain-Kreuzberg) in beiden Richtungen zwischen Markgrafendamm und untere Kynaststr. Baustelle, Straße vollständig gesperrt',
          'from' => undef,
          'id' => 1373,
-         'data' => 'userdel	q4::inwork 14890,10824 15034,10795 15181,10766 15255,10751
+         'data' => 'userdel	q4::inwork 14890,10824 14794,10844
 ',
          'type' => 'handicap'
        },

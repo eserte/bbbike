@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.13 2008/04/19 22:43:15 eserte Exp eserte $
+# $Id: bbbike.cgi,v 9.14 2008/06/17 21:29:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -723,7 +723,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 9.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 9.14 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -6928,7 +6928,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/04/19 22:43:15 $';
+    my $cgi_date = '$Date: 2008/06/17 21:29:06 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
@@ -7046,7 +7046,7 @@ Autor: Slaven Rezic<br>
 <a href="mailto:@{[ $BBBike::EMAIL ]}?subject=BBBike">E-Mail:</a> <a href="mailto:@{[ $BBBike::EMAIL ]}?subject=BBBike">@{[ $BBBike::EMAIL ]}</a><br>
 <a href="@{[ $BBBike::HOMEPAGE ]}">Homepage:</a> <a href="@{[ $BBBike::HOMEPAGE ]}">@{[ $BBBike::HOMEPAGE ]}</a><br>
 Telefon: @{[ CGI::escapeHTML("+49-172-1661969") ]}<br>
-Donji Crna&#x10d; 81, BiH-88220 &#x160;iroki Brijeg<br>
+Slaven Rezi&#x107; (Tomi&#x107;), Donji Crna&#x10d;, BiH-88220 &#x160;iroki Brijeg<br>
 </center>
 <p>
 EOF
