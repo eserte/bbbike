@@ -1067,15 +1067,7 @@ userdel	2::inwork 33475,10842 32900,10962 31871,10926 30678,10923
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1213999200,
-         'text' => 'B 188 Berliner Str. OD Rathenow, zw. Goethestr. und F.-Ebert-Ring Sanierung Fahrbahndecke halbseitig gesperrt; Einbahnstraße 16.06.2008-20.06.2008 ',
-         'from' => 1213480800,
-         'id' => 1377,
-         'data' => 'userdel	q4::inwork -61212,20700 -61627,20789 -62285,21020
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1229727600,
          'text' => 'K 6425 Lindenallee OD Hoppegarten, zw. Kreisverkehr und An der Zoche Brücken-, Straßen-, Gehwegbau Vollsperrung 10.06.2008-19.12.2008 ',
@@ -1130,15 +1122,7 @@ userdel	2::inwork 33475,10842 32900,10962 31871,10926 30678,10923
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1213912800,
-         'text' => 'L 145 B 103, Kolrep - Wittstock Bahnübergang in der OD Blumenthal Gleisbauarbeiten Vollsperrung 17.06.2008-19.06.2008 ',
-         'from' => 1213567200,
-         'id' => 1384,
-         'data' => 'userdel	2::inwork -63503,72951 -63227,73339
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1217023200,
          'text' => 'L 338 Schöneiche - Hönow OD Neuenhagen, zw. BÜ und Jahnstr. Einbau von Querungshilfen Vollsperrung 02.06.2008-25.07.2008 ',
@@ -1148,15 +1132,7 @@ userdel	2::inwork 33475,10842 32900,10962 31871,10926 30678,10923
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1213999200,
-         'text' => 'L 601 Leipziger Str. OL Finsterwalde, Nr. 76-78 Grundsteinlegung Vollsperrung 20.06.2008-20.06.2008 ',
-         'from' => 1213826400,
-         'id' => 1386,
-         'data' => 'userdel	q4::temp 32865,-86269 32963,-85912
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1229727600,
          'text' => 'L 794 Ruhlsdorfer Str. OD Teltow. zw. Schenkendorfer Weg und Ruhlsdorfer Platz Kanalarbeiten Vollsperrung 29.05.2008-19.12.2008 ',

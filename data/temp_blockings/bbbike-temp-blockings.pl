@@ -11655,7 +11655,7 @@ EOF
        text  => 'L 145 B 103, Kolrep - Wittstock Bahnübergang in der OD Blumenthal Gleisbauarbeiten Vollsperrung 17.06.2008-19.06.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -63503,72951 -63227,73339
+userdel	2::inwork -63533,72983 -63431,73201 -63417,73223 -63329,73307 -63286,73362
 EOF
      },
      { from  => 1212271200, # 2008-06-01 00:00

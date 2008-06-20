@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.32 2008/05/19 21:24:28 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.32 2008/05/19 21:24:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2008 Slaven Rezic. All rights reserved.
@@ -255,6 +255,7 @@ sub BBBikeGPS::draw_gpsman_data {
 			       (defined $columnspan ? (-columnspan => $columnspan) : ()),
 			      );
 	    if ($can_dateentry) {
+		# XXX check also for .gpx, but again prefer .trk
 		my $dmy2file = sub {
 		    my($day,$month,$year) = @_;
 		    "$gpsman_data_dir/" . sprintf("%04d%02d%02d", $year, $month, $day) . ".trk";
@@ -292,6 +293,7 @@ sub BBBikeGPS::draw_gpsman_data {
 	    }
 	}
 	$row++;
+	# XXX Should also check for .gpx (but prefer .trk)
 	$ff->Button(-text => M"Track heute",
 		    (!-r "$heute.trk" ? (-state => "disabled") : ()),
 		    -command => sub { $file = "$heute.trk";
@@ -299,6 +301,7 @@ sub BBBikeGPS::draw_gpsman_data {
 				      $draw_gpsman_data_p = 0;
 				  }
 		   )->grid(-row => $row, -column => 0, -sticky => "ew");
+	# XXX Should also check for .gpx (but prefer .trk)
 	$ff->Button(-text => M"Track gestern",
 		    (!-r "$gestern.trk" ? (-state => "disabled") : ()),
 		    -command => sub { $file = "$gestern.trk";
@@ -538,9 +541,12 @@ sub BBBikeGPS::do_draw_gpsman_data {
     BBBikeGPS::make_symbol_to_img();
 
     require GPS::GpsmanData;
+    # XXX require GPS::GpsmanData::GPX --- to be written using code from gpx2gpsman XXX
+    # XXX or maybe better: require GPS::GpsmanData::Any, see below
 
     main::IncBusy($top);
     eval {
+    # XXX this code should go to GPS::Gpsman::MPS, see above for ...::GPX
     if ($file =~ /\.mps$/i) { # XXX Hack: check for mps files first
 	require File::Temp;
 	require GPS::MPS;
@@ -554,6 +560,9 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	close $tmpfh;
 	$file = $tmpfile;
     }
+    # XXX Here probably GPS::GpsmanData::Any->new should be used, which is a factory method
+    # XXX to get the right thing. Probably by just checking the suffix in ->load and
+    # XXX use the real module (...::GPX, ...::MPS, GpsmanMultiData)
     my $gps = GPS::GpsmanMultiData->new;
     $gps->load($file);
 #XXX not necessary?    $gps->convert_all("DDD");

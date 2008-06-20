@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.73 2008/04/19 22:40:47 eserte Exp $
+# $Id: PLZ.pm,v 1.74 2008/06/19 22:01:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ use locale;
 use BBBikeUtil;
 use Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.73 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.74 $ =~ /(\d+)\.(\d+)/);
 
 use constant FMT_NORMAL            => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED           => 1; # ./data/Berlin.small.data (does not exist anymore)
@@ -586,11 +586,9 @@ sub _expand_strasse {
 	$replaced++;
     } elsif ($str =~ s/^(U\+S|S\+U)\s+/S-Bhf /i) { # Choose one
 	$replaced++;
-    } elsif ($str =~ s/^([US])[- ]Bahnhof\s+/uc($1)."-Bhf "/ie) {
+    } elsif ($str =~ s/^([US])[- ](?:Bahnhof|Bhf\.)\s+/uc($1)."-Bhf "/ie) {
 	$replaced++;
-    } elsif ($str =~ s/^(U\+S|S\+U)[- ]Bahnhof\s+/S-Bhf /i) { # Choose one
-	$replaced++;
-    } elsif ($str =~ s/^(U\+S|S\+U)[- ]Bhf\.?\s+/S-Bhf /i) { # Choose one
+    } elsif ($str =~ s/^(U\+S|S\+U)[- ](?:Bahnhof|Bhf\.?)\s+/S-Bhf /i) { # Choose one
 	$replaced++;
     }
     if      ($str =~ s/^(k)l\.?\s+(.*str)/$1leine $2/i) {

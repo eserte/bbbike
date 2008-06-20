@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.37 2008/04/21 21:28:57 eserte Exp $
+# $Id: plz.t,v 1.38 2008/06/20 23:01:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004,2006,2007 Slaven Rezic. All rights reserved.
@@ -61,7 +61,7 @@ my @approx_tests = (
 		    # Ku'damm => Kurfürstendamm, fails, maybe an extra rule?
 		   );
 		    
-plan tests => 158 + scalar(@approx_tests)*4;
+plan tests => 162 + scalar(@approx_tests)*4;
 
 my $tmpdir = "$FindBin::RealBin/tmp/plz";
 my $create;
@@ -362,6 +362,21 @@ for my $noextern (@extern_order) {
 	   "U-Bahnhof")
 	    or diag $dump->(\@res);
 
+    XXX:
+	@res = $plz->look_loop("S-Bhf. Grünau",
+			       @standard_look_loop_args);
+	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Grünau' } @{$res[0]}), 1,
+	   "S-Bhf with dot, should find Grünau")
+	    or diag $dump->(\@res);
+	{
+	    local $TODO = <<EOF;
+The S-Bhf. -> S-Bhf translation exists in PLZ.pm, but is called to late.
+Maybe unambiguous translations (= normalizations) should be done quite
+early?
+EOF
+	    is(scalar(@res), 1, "S-Bhf with dot, should be exact");
+	}
+
 	@res = $plz->look_loop("u weberwiese",
 			       @standard_look_loop_args);
 	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'U-Bhf Weberwiese' } @{$res[0]}), 1,
@@ -454,7 +469,6 @@ for my $noextern (@extern_order) {
 	   "Should find Brandenburger Tor in Potsdam")
 	    or diag $dump->(\@res);
 
-    XXX:
 	@res = $plz_multi->look_loop("lennestr.",
 				     @standard_look_loop_args);
 	is(scalar(grep { $_->[PLZ::LOOK_CITYPART] eq 'Tiergarten' } @{$res[0]}), 1,
