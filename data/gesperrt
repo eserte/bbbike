@@ -431,6 +431,7 @@ Straße zum FEZ	1 20716,6029 20593,6082 20428,6157 20453,6211 20623,6136 20708,60
 Malchiner Str.	1 13866,4481 13869,4626 13836,4759
 Paul-Franke-Str.	1 9916,18610 9994,18595 10013,18545 10006,18502 9901,18522
 Zellerfelder Str.	1 11526,18929 11468,19106
+Storkower - Einsteinstr.	1 13110,14879 13143,14935 13185,14912 13151,14855
 Humboldtring -> Hans-Marwitza-Ring: Hochstraße	3 -11399,-1339 -11461,-1424 -11358,-1491
 Hans-Marwitza-Ring -> Humboldtring: Hochstraße	3 -11358,-1491 -11461,-1424 -11540,-1543
 Merkurstr.	1 -8469,-2576 -8380,-2580 -8359,-2582 -8411,-2699 -8432,-2713 -8484,-2710
@@ -872,6 +873,12 @@ Prenzlauer Allee -> Stubbenkammerstr.: Mittelstreifen mit Straßenbahn, aber Ampe
 Stubbenkammerstr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3 11643,15189 11798,15133 11822,15193
 Chodowieckistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3 11992,14599 11681,14759 11662,14695
 Prenzlauer Allee -> Chodowieckistr.: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3 11712,14868 11681,14759 11992,14599
+Prenzlauer Allee -> Kuglerstr.: Mittelstreifen mit Straßenbahn	3 12076,16129 12030,15968 12154,15902
+Prenzlauer Allee -> Kuglerstr.: Mittelstreifen mit Straßenbahn	3 11997,15834 12030,15968 11961,16002
+Kuglerstr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3 12154,15902 12030,15968 11997,15834
+Kuglerstr. -> Kuglerstr.: Mittelstreifen mit Straßenbahn	3 12154,15902 12030,15968 11961,16002
+Kuglerstr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3 11961,16002 12030,15968 12076,16129
+Kuglerstr. -> Kuglerstr.: Mittelstreifen mit Straßenbahn	3 11961,16002 12030,15968 12154,15902
 Prenzlauer Allee -> Zelterstr.: Straßenbahntrasse	3 11941,15586 11967,15700 11849,15760
 Zelterstr. -> Prenzlauer Allee: Straßenbahntrasse	3 11849,15760 11967,15700 11997,15834
 Zelterstr. -> Küselstr.: Straßenbahntrasse	3 11849,15760 11967,15700 12058,15621
@@ -1197,7 +1204,6 @@ Schranke (Thyssenstr. - Sittestr.)	BNP:3:67 5856,19204
 Kynaststraße: Abriss und Neubau bis ca. 2010-03-01	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011, dann als Fußgänger/Radweg konzipiert	2:inwork 8184,14052 8290,14119
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011	2:inwork 8290,14119 8246,14201 8138,14148
-Otto-Ostrowski-Str.: Straße in Bau	2:inwork 13708,13623 13769,13487
 Margarte-Steffin-Str.: Baurabeiten	2:inwork 8700,12810 8730,12804
 Hedwigskirchgasse: Bauarbeiten	2:inwork 9743,12239 9756,12139
 Schloßplatz (Bauarbeiten am Palast der Republik)	2:inwork 10267,12305 10173,12492
@@ -1316,6 +1322,8 @@ Ernst-Zinna-Weg -> Landsberger Allee: Landsberger Allee	3 12564,13216 12582,1312
 Landsberger Allee -> Ernst-Zinna-Weg: Landsberger Allee	3 12386,13085 12582,13128 12564,13216
 Landsberger Allee -> Alt-Marzahn: Landsberger Allee	3 20796,15667 20641,15622 20658,15589
 Alt-Marzahn -> Landsberger Allee: Landsberger Allee	3 20658,15589 20641,15622 20525,15571
+Landsberger Allee -> Otto-Ostrowski-Str.: Straßenbahntrasse	3 13862,13688 13708,13623 13769,13487
+Otto-Ostrowski-Str. -> Landsberger Allee: Straßenbahntrasse	3 13769,13487 13708,13623 13640,13597
 Schalkauer Str. -> Landsberger Allee: Landsberger Allee	3 17389,14599 17402,14468 17848,14523
 Landsberger Allee -> Schalkauer Str.: Landsberger Allee	3 17254,14451 17402,14468 17389,14599
 Kalkhorster Weg (10 Stufen)	0:40:-175 3931,8638

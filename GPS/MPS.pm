@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MPS.pm,v 1.8 2007/07/20 22:24:36 eserte Exp $
+# $Id: MPS.pm,v 1.8 2007/07/20 22:24:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2005 Slaven Rezic. All rights reserved.
@@ -26,6 +26,11 @@ use vars qw($magic);
 $magic = qr{^MsRc[df]\0};
 
 #$DEBUG=100;#XXXX
+
+sub new {
+    my($class) = @_;
+    bless {}, $class;
+}
 
 sub check {
     my $self = shift;

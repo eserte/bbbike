@@ -255,10 +255,13 @@ sub BBBikeGPS::draw_gpsman_data {
 			       (defined $columnspan ? (-columnspan => $columnspan) : ()),
 			      );
 	    if ($can_dateentry) {
-		# XXX check also for .gpx, but again prefer .trk
 		my $dmy2file = sub {
 		    my($day,$month,$year) = @_;
 		    "$gpsman_data_dir/" . sprintf("%04d%02d%02d", $year, $month, $day) . ".trk";
+		};
+		my $dmy2file_gpx = sub {
+		    my($day,$month,$year) = @_;
+		    "$gpsman_data_dir/" . sprintf("%04d%02d%02d", $year, $month, $day) . ".gpx";
 		};
 		my $date;
 		my $de = $ff->DateEntry
@@ -269,6 +272,12 @@ sub BBBikeGPS::draw_gpsman_data {
 		     -formatcmd => sub {
 			 my($year,$month,$day) = @_;
 			 $file = $dmy2file->($day,$month,$year);
+			 if (!-r $file) {
+			     $file = $dmy2file_gpx->($day,$month,$year);
+			     if (!-r $file) {
+				 $file = undef;
+			     }
+			 }
 			 "$year/$month/$day";
 		     },
 		     -configcmd => sub {
@@ -278,6 +287,11 @@ sub BBBikeGPS::draw_gpsman_data {
 			     my $file = $dmy2file->($d,$m,$y);
 			     if (-r $file) {
 				 $args{-datewidget}->configure(-bg => "red");
+			     } else {
+				 $file = $dmy2file_gpx->($d,$m,$y);
+				 if (-r $file) {
+				     $args{-datewidget}->configure(-bg => "red");
+				 }
 			     }
 			 }
 		     },
@@ -293,18 +307,22 @@ sub BBBikeGPS::draw_gpsman_data {
 	    }
 	}
 	$row++;
-	# XXX Should also check for .gpx (but prefer .trk)
 	$ff->Button(-text => M"Track heute",
-		    (!-r "$heute.trk" ? (-state => "disabled") : ()),
+		    (!-r "$heute.trk" && !-r "$heute.gpx" ? (-state => "disabled") : ()),
 		    -command => sub { $file = "$heute.trk";
+				      if (!-r $file && -r "$heute.gpx") {
+					  $file = "$heute.gpx";
+				      }					  
 				      $draw_gpsman_data_s = 1;
 				      $draw_gpsman_data_p = 0;
 				  }
 		   )->grid(-row => $row, -column => 0, -sticky => "ew");
-	# XXX Should also check for .gpx (but prefer .trk)
 	$ff->Button(-text => M"Track gestern",
-		    (!-r "$gestern.trk" ? (-state => "disabled") : ()),
+		    (!-r "$gestern.trk" && !-r "$gestern.gpx" ? (-state => "disabled") : ()),
 		    -command => sub { $file = "$gestern.trk";
+				      if (!-r $file && -r "$gestern.gpx") {
+					  $file = "$gestern.gpx";
+				      }
 				      $draw_gpsman_data_s = 1;
 				      $draw_gpsman_data_p = 0;
 				  }
@@ -541,31 +559,13 @@ sub BBBikeGPS::do_draw_gpsman_data {
     BBBikeGPS::make_symbol_to_img();
 
     require GPS::GpsmanData;
-    # XXX require GPS::GpsmanData::GPX --- to be written using code from gpx2gpsman XXX
-    # XXX or maybe better: require GPS::GpsmanData::Any, see below
 
     main::IncBusy($top);
     eval {
-    # XXX this code should go to GPS::Gpsman::MPS, see above for ...::GPX
-    if ($file =~ /\.mps$/i) { # XXX Hack: check for mps files first
-	require File::Temp;
-	require GPS::MPS;
-	my $mps = bless {}, 'GPS::MPS'; # XXX no new?
-	open MPSFH, $file or die "Can't open $file: $!";
-	my $gpsman_data = $mps->convert_to_gpsman(\*MPSFH);
-	close MPSFH;
-	my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1,
-						   SUFFIX => ".trk");
-	print $tmpfh $gpsman_data;
-	close $tmpfh;
-	$file = $tmpfile;
-    }
-    # XXX Here probably GPS::GpsmanData::Any->new should be used, which is a factory method
-    # XXX to get the right thing. Probably by just checking the suffix in ->load and
-    # XXX use the real module (...::GPX, ...::MPS, GpsmanMultiData)
-    my $gps = GPS::GpsmanMultiData->new;
-    $gps->load($file);
-#XXX not necessary?    $gps->convert_all("DDD");
+
+    require GPS::GpsmanData::Any;
+    my $gps = GPS::GpsmanData::Any->load($file);
+
     require Karte;
     Karte::preload(qw(Polar));
     require Strassen;

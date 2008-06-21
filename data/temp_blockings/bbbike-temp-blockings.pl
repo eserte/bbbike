@@ -3198,7 +3198,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 14363,12749 14336,12758
-userdel	q4 13960,12866 14096,12827
+userdel	q4 13960,12866 13979,12861 14096,12827
 userdel	q4 13960,12866 13844,12900
 userdel	q4 14096,12827 14336,12758
 EOF
@@ -11561,7 +11561,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hauptstr. (Friedrichshain-Kreuzberg) in beiden Richtungen zwischen Markgrafendamm und untere Kynaststr. Baustelle, Straße vollständig gesperrt',
+       text  => 'Hauptstr. (Friedrichshain-Kreuzberg) in beiden Richtungen zwischen Markgrafendamm und untere Kynaststr. Baustelle, Straße vollständig gesperrt, Radfahrer können schiebend passieren',
        type  => 'handicap',
        source_id => 'IM_009127',
        data  => <<EOF,

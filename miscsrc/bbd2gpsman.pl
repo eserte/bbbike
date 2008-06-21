@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2gpsman.pl,v 1.5 2004/12/29 23:29:19 eserte Exp $
+# $Id: bbd2gpsman.pl,v 1.6 2008/06/21 16:54:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -102,7 +102,6 @@ iterate {
 	    next if Strassen::Util::strecke([$x,$y],[$lastx,$lasty]) < $filter_nearby;
 	}
 	my($long,$lat) = $Karte::Polar::obj->standard2map($x,$y);
-	($lat,$long) = GPS::GpsmanData::convert_lat_long_to_gpsman($lat,$long);
 	my $wpt = GPS::Gpsman::Waypoint->new;
 
     TRY_PREFIX: {

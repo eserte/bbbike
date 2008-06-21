@@ -237,11 +237,11 @@ John-Schehr-Str. -> Greifswalder Str.: Straßenbahn	3 12573,14581 12437,14680 123
 Greifswalder Str. -> John-Schehr-Str.: Straßenbahn	3 12488,14753 12437,14680 12573,14581
 Naugarder Str. -> Greifswalder Str.: Straßenbahntrasse	3 12693,15225 12743,15138 12880,15335
 Greifswalder Str. -> Naugarder Str.: Straßenbahntrasse	3 12722,15105 12743,15138 12693,15225
-Hausburgstr. -> Landsberger Allee: Straßenbahn	3 13700,13459 13640,13597 13550,13560
-Hausburgstr. -> Fritz-Riedel-Str.: Straßenbahn	3 13700,13459 13640,13597 13517,13778
+Hausburgstr. -> Landsberger Allee: Straßenbahn	3 13706,13460 13640,13597 13550,13560
+Hausburgstr. -> Fritz-Riedel-Str.: Straßenbahn	3 13706,13460 13640,13597 13517,13778
 Landsberger Allee -> Fritz-Riedel-Str.: Straßenbahn	3 13550,13560 13640,13597 13517,13778
-Landsberger Allee -> Hausburgstr.: Straßenbahn	3 13708,13623 13640,13597 13700,13459
-Fritz-Riedel-Str. -> Hausburgstr.: Straßenbahn	3 13517,13778 13640,13597 13700,13459
+Landsberger Allee -> Hausburgstr.: Straßenbahn	3 13708,13623 13640,13597 13706,13460
+Fritz-Riedel-Str. -> Hausburgstr.: Straßenbahn	3 13517,13778 13640,13597 13706,13460
 Fritz-Riedel-Str. -> Landsberger Allee: Straßenbahn	3 13517,13778 13640,13597 13708,13623
 Landsberger Allee -> Pöhlbergstr: Straßenbahn	3 21694,15802 21475,15705 21491,15671
 Pöhlbergstr -> Landsberger Allee: Straßenbahn	3 21491,15671 21475,15705 21398,15671
@@ -555,3 +555,5 @@ An der Wuhlheide -> Fontanestr.: Brückenauffahrt	3 18492,6893 18225,7004 18240,6
 Sansibarstr. -> Müllerstr.: Mittelstreifen	3 6106,16433 6208,16546 6110,16630
 Müllerstr. -> Sansibarstr.: Mittelstreifen	3 6311,16457 6208,16546 6106,16433
 B110 nach Swinoujscie: kein Grenzübergang für Autos	2 62279,166179 62213,166173
+Einsteinstr. -> Storkower Str.: Mittelstreifen	3 13143,14935 13110,14879 13151,14855
+Storkower Str. -> Einsteinstr.: Mittelstreifen	3 12812,15053 13110,14879 13143,14935

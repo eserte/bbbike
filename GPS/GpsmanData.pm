@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.51 2008/01/19 19:41:26 eserte Exp $
+# $Id: GpsmanData.pm,v 1.52 2008/06/21 11:24:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005,2007 Slaven Rezic. All rights reserved.
@@ -44,7 +44,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.51 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.52 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -735,7 +735,7 @@ sub header_as_string {
     my $s = "% Written by $0 [" . __PACKAGE__ . "]\n\n";
     # XXX:
     $s .= "!Format: " . join(" ",
-			     $self->PositionFormat, 
+			     "DMS", # always hardcoded # $self->PositionFormat, 
 			     $self->Version,
 			     $self->DatumFormat) . "
 !Creation: no
@@ -754,7 +754,7 @@ sub body_as_string {
 	    $s .= join("\t",
 		       $wpt->Ident,
 		       (defined $wpt->Comment ? $wpt->Comment : ""),
-		       $wpt->Latitude, $wpt->Longitude,
+		       convert_lat_long_to_gpsman($wpt->Latitude, $wpt->Longitude),
 		       (defined $wpt->Altitude ? "alt=".$wpt->Altitude : ()),
 		       (defined $wpt->Symbol ? "symbol=".$wpt->Symbol : ()),
 		       (defined $wpt->DisplayOpt ? "dispopt=".$wpt->DisplayOpt : ()),
@@ -772,7 +772,7 @@ sub body_as_string {
 		       (defined $wpt->Ident ? $wpt->Ident : ""),
 		       (defined $wpt->DateTime ? $wpt->DateTime :
 			defined $wpt->Comment ? $wpt->Comment : ""),
-		       $wpt->Latitude, $wpt->Longitude,
+		       convert_lat_long_to_gpsman($wpt->Latitude, $wpt->Longitude),
 		       (defined $wpt->Altitude ? $wpt->Altitude : ""))
 		. "\n";
 	}
@@ -786,7 +786,7 @@ sub body_as_string {
 	    $s .= join("\t",
 		       $wpt->Ident,
 		       (defined $wpt->Comment ? $wpt->Comment : ""),
-		       $wpt->Latitude, $wpt->Longitude,
+		       convert_lat_long_to_gpsman($wpt->Latitude, $wpt->Longitude),
 		      )
 		. "\n";
 	}
@@ -993,6 +993,13 @@ sub as_string {
 	$s .= $chunk->body_as_string;
     }
     $s;
+}
+
+sub write {
+    my($self, $file) = @_;
+    open(F, ">$file") or die "Can't write to $file: $!";
+    print F $self->as_string;
+    close F;
 }
 
 1;
