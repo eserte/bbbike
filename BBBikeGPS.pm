@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.32 2008/05/19 21:24:28 eserte Exp eserte $
+# $Id: BBBikeGPS.pm,v 1.33 2008/06/22 19:33:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2008 Slaven Rezic. All rights reserved.
@@ -448,6 +448,12 @@ EOF
     }
 
     $gpsman_last_dir = $file;
+    my $encoded_file = $file;
+    # Hack XXX: force result into bytes for later use:
+    if ($^O ne 'MSWin32' && eval { require Encode; 1 }) {
+	$encoded_file = Encode::encode("iso-8859-1", $file);
+    }
+
     $cfc_mapping = $cfc->get_mapping;
     if (open(D, "> " . BBBikeGPS::get_cfc_file())) {
 	print D Data::Dumper->Dumpxs([$cfc_mapping], ['cfc_mapping']);
@@ -473,13 +479,13 @@ EOF
 	my $serialized = MIME::Base64::encode_base64(Storable::nfreeze(\%draw_args));
 	$serialized =~ s{\n}{}g;
 	my $add_def = "\t" . join("\t", -serialized => $serialized);
-	main::add_last_loaded($file, $main::last_loaded_tracks_obj, $add_def);
+	main::add_last_loaded($encoded_file, $main::last_loaded_tracks_obj, $add_def);
 	main::save_last_loaded($main::last_loaded_tracks_obj);
     } else {
 	warn "Cannot store draw args: $@";
     }
 
-    BBBikeGPS::do_draw_gpsman_data($top, $file, %draw_args);
+    BBBikeGPS::do_draw_gpsman_data($top, $encoded_file, %draw_args);
 
     $file;
 }

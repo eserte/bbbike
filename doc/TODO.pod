@@ -3524,6 +3524,14 @@ like in the GD output.
 
 =over
 
+=item * (M5)
+
+The behaviour of PreserveComments in Strassen->new is currently
+broken. Comments are handled as normal data and occur also if used in
+init/next. Better approach: rename PreserveComments into
+PreserveCommentsInData and adjust existing scripts. The new
+PreserveComments should work like preserving the directives.
+
 =item * (M4)
 
 Weiteres KML-Feature: die wichtigsten Kategorien an einer Route per

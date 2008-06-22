@@ -3,12 +3,6 @@
 #: version: $Id: handicap_s-orig,v 4.167 2008/05/13 19:06:59 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
-#: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-# XXX_prog hier br‰uchte man keine zus‰tzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
-#: last_checked: 2007-08-04
-Behrenstr./Bebelplatz: Einbahnstraﬂe	q3::inwork; 9626,12227 9700,12234 9743,12239
-Bodestr.: Bauarbeiten	q4::inwork 9912,12623 9943,12642
-#: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Wuhlewanderweg: steiler Anstieg	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gef‰lle	q4; 21970,12153 21998,12204
 Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
@@ -158,7 +152,7 @@ Fuggerstr.: Gehweg	q2 6128,10319 6020,10351
 Pfalzburger Str.: Gehweg	q2 4905,10069 4909,10119
 (Tilla-Durieux-Park): Fuﬂg‰nger	q2 8467,11125 8410,11143
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3288,12700 3383,12720 3582,12704 3763,12624 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
-Spreeufer: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 10171,12769 10100,12876 9977,12912 9895,12936 9784,12953 9707,12974
+Spreeufer: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 10171,12769 10105,12855 9977,12912 9935,12939 9910,12938 9714,12995
 Spreeufer: Fuﬂg‰nger	q1 9707,12974 9557,12992 9533,12994 9508,12991 9271,12952
 Monbijoupark - Henriette-Herz-Platz: Fuﬂg‰nger	q1 9977,12912 10132,12941
 Monbijoubr¸cke: Fuﬂg‰nger	q1 9707,12974 9680,12916 9661,12876
@@ -391,6 +385,8 @@ Mauerweg: Fuﬂg‰nger	q1 12984,1011 12557,799 12246,706 11922,586 11794,550 11698,
 Mauerweg: Fuﬂg‰nger	q1 4406,-910 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3417,524
 Bayernring: enge Straﬂe	q1 8371,8543 8437,8557 8616,8595
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15580,8839 15383,8662 15166,8489
+Hedwigskirchgasse: Bordsteine, Fuﬂg‰nger	q2 9743,12239 9756,12139
+Zufahrt Franz-Mehring-Platz: Bordstein	q1 12739,12124 12699,12041
 ######################### User Contributions #################################
 #: by: Steini
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
@@ -748,7 +744,7 @@ Strahlsunder Str.: Fuﬂg‰nger	q2 9918,14986 9843,14949 9718,14888
 Vineta Platz: Fuﬂg‰nger	q2 9942,14936 10029,14974 10111,15018
 Vineta Platz: Fuﬂg‰nger	q2 9904,15014 9988,15057 10071,15096
 Ruppiner Str.: Fuﬂg‰nger	q1 9904,15014 9918,14986 9942,14936
-Swinem¸nder Str.: Fuﬂg‰nger	q1 10094,14847 10029,14974 9988,15057 9934,15167 9859,15318 9734,15579
+Swinem¸nder Str.: Fuﬂg‰nger	q1 10085,14863 10029,14974 9988,15057 9934,15167 9859,15318 9734,15579
 (Unterf¸hrung Schloﬂbr¸cke): Fuﬂg‰nger, teilweise eng	q2 3383,12720 3326,12730 3263,12720
 Sesenheimer Str.: Fuﬂg‰nger, Bordsteine	q2 3866,11473 3874,11380
 (s¸dliches Spreeufer): Fuﬂg‰nger	q2 5186,12843 5173,12973 5128,13012 4973,13083 4837,13091 4733,13076 4711,13055 4644,13003 4627,12951 4599,12789 4759,12681

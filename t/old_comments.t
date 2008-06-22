@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: old_comments.t,v 1.13 2008/02/02 10:45:24 eserte Exp $
+# $Id: old_comments.t,v 1.14 2008/06/22 16:42:08 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -94,6 +94,7 @@ EOF
  	     # Belziger Str.
 	     ["7315,9156", "6977,8934", <<EOF, "CS (Route)"],
 - 'RR1': 1
+  'RR12': 1
   'mäßiges, teilweise holpriges Kopfsteinpflaster (Teilstrecke)': 1
 - {}
 EOF

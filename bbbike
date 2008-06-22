@@ -5570,6 +5570,7 @@ sub define_item_attribs {
 	 'sperre1'  => [0, 0, 2, 3, 4, 6],
 	 'sperre2'  => [0, 0, 2, 3, 5, 8],
 	 'sperre3'  => [0, 0, 1, 2, 4, 6],
+	 'sperre3nocross' => [0, 0, 1, 1, 2, 3],
 	 'w'        => [1, 1, 2, 2, 4, 7],
 	 'w-W0'     => [0, 1, 1, 1, 3, 5],
 	 'w-W1'     => [2, 2, 3, 5, 7, 11],
@@ -9765,6 +9766,7 @@ sub plot_sperre {
 	my $width1  = get_line_width('sperre1');
 	my $width2  = get_line_width('sperre2');
 	my $width3  = get_line_width('sperre3');
+	my $width3_nocross = get_line_width('sperre3nocross');
 	my $length1 = get_line_length('sperre1');
 	my $length2 = get_line_length('sperre2');
 
@@ -9837,6 +9839,7 @@ sub plot_sperre {
 	    my $sub_cat;
 	    my($cat,$addinfo) = $ret->[Strassen::CAT] =~ m{^(.*?)(?:::?(.*))?$};
 	    my @addinfo = $addinfo ? split(':', $addinfo): ();
+	    next if first { $_ eq "igndisp" } @addinfo;
 	    if ($cat eq StrassenNetz::BLOCKED_CARRY) {
 		if ($width0) { # größer 0
 		    $sub_cat = 'sperre0';
@@ -9917,7 +9920,7 @@ sub plot_sperre {
 
 		$c->createLine
 		    (@c,
-		     -width => $width3,
+		     -width => (!$is_nocross ? $width3 : $width3_nocross),
 		     (!$is_nocross ? (-arrow => 'last',
 				      -arrowshape => [4,6,3],
 				      -smooth => 1,

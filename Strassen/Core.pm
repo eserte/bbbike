@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.88 2008/04/19 21:21:46 eserte Exp $
+# $Id: Core.pm,v 1.89 2008/06/21 21:27:51 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.88 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.89 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -726,7 +726,7 @@ sub push_ext {
 
 sub push_unparsed {
     my($self, $comment) = @_;
-    CORE::push(@{$self->{Dara}}, $comment);
+    CORE::push(@{$self->{Data}}, $comment);
 }
 
 sub delete_current { # funktioniert in init/next-Schleifen

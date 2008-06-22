@@ -1095,15 +1095,7 @@ userdel	2::inwork 33475,10842 32900,10962 31871,10926 30678,10923
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1214085600,
-         'text' => 'L 033 Wriezen - Prötzel zw. Wriezen und Schulzendorf Deckenerneuerung Vollsperrung 10.06.2008-21.06.2008 ',
-         'from' => 1212962400,
-         'id' => 1381,
-         'data' => 'userdel	2::inwork 59114,34559 58750,34221
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1215640800,
          'text' => 'L 037 Müllrose - B 5, Petershagen Bahnübergang in der OD Jacobsdorf Gleisbauarbeiten Vollsperrung 23.06.2008-09.07.2008 ',

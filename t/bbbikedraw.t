@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.34 2008/02/09 22:52:06 eserte Exp $
+# $Id: bbbikedraw.t,v 1.35 2008/06/22 17:30:19 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -59,6 +59,9 @@ BEGIN {
     }
 }
 
+# Generate timings with:
+#    perl bbbikedraw.t -only MapServer -only GD/png -only Imager -only ImageMagick -slow -v
+
 # Timings are (on my 466MHz machine) with -slow:
 # GD: 9s
 # Imager: 37s
@@ -71,6 +74,13 @@ BEGIN {
 # Imager: 37s
 # MapServer: 4s
 # ImageMagick: 23s
+
+# Later (2008-06) on the same AMD Athlon, but this time i386 mode,
+#   different software versions etc.:
+# GD/png: 8s
+# Imager: 50s
+# MapServer: 5s
+# ImageMagick: 41s
 
 my @drawtypes = qw(all);
 my $geometry = "640x480";

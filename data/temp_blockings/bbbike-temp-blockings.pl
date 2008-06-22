@@ -1343,8 +1343,8 @@ EOF
        text  => 'Weihnachtsmarkt am Opernpalais, bis 25.12.2004',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9890,12161 9875,12254 9853,12402
-userdel	2 9801,12245 9782,12393
+userdel	2 9890,12161 9869,12297 9853,12402
+userdel	2 9801,12245 9795,12293 9782,12393
 EOF
      },
      { from  => undef, #
@@ -1724,7 +1724,7 @@ EOF
        text  => 'L 711; (Krausnick-AS Stakow); zw. Krausnick u. Bahnhof Brand Einschränkung Tragfähigkeit Vollsperrung, Dauer unbekannt ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 35178,-41015 37450,-41050 37950,-41275 38512,-41000 40398,-40989
+userdel	2 35178,-41015 37450,-41050 37950,-41275 38512,-41000 40390,-41069
 EOF
      },
      { from  => 1113256800, # 2005-04-12 00:00
@@ -5631,7 +5631,7 @@ EOF
        text  => 'L 071 B179-Krausnick zw. Hauptstr., OL Leibsch u. Groß Wasserburg Deckenerneuerung Vollsperrung 01.09.2006-02.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 42175,-37437 42793,-36256 43200,-36012
+userdel	2::inwork 42023,-37573 42768,-36320 43112,-36134 43262,-35804
 EOF
      },
      { from  => 1164236400, # 2006-11-23 00:00
@@ -6647,10 +6647,10 @@ EOF
        text  => 'Bereich Oberwallstr., Niederlagstr., Hinter der Katholischen Kirche, Am Schinkelplatz gesperrt Grund : Veranstaltung (Weihnachtsmarkt am Opernpalais) Dauer: 15.11.2006 06:00 Uhr bis 29.12.2006 24:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 9890,12161 9875,12254 9801,12245 9782,12393
-userdel	2::temp 9875,12254 9853,12402
+userdel	2::temp 9890,12161 9869,12297 9795,12293 9782,12393
+userdel	2::temp 9869,12297 9853,12402
 userdel	2::temp 9801,12245 9812,12145
-userdel	2::temp 10008,12378 9926,12368 9972,12184
+userdel	2::temp 9986,12375 9926,12368 9972,12184
 userdel	2::temp 9918,12411 9926,12368
 EOF
      },
@@ -9378,9 +9378,9 @@ EOF
        text  => '17. Berliner Gauklerfest, 3. bis 12. August 2007, einige Straßen am Opernpalais sind vollständig gesperrt ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 9890,12161 9875,12254 9801,12245 9782,12393
-userdel	2::temp 9875,12254 9853,12402
-userdel	2::temp 10008,12378 9926,12368 9972,12184
+userdel	2::temp 9890,12161 9869,12297 9795,12293 9782,12393
+userdel	2::temp 9869,12297 9853,12402
+userdel	2::temp 9986,12375 9926,12368 9972,12184
 userdel	2::temp 9918,12411 9926,12368
 EOF
      },

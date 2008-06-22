@@ -8,10 +8,13 @@
 #
 #: section ignorieren vvv
 #: section projektierte Radstreifen der Verkehrsverwaltung vvv
+#: last_checked: 2008-06-21
+Wisbyer Str.: Radstreifen sind noch provisorisch	? 12091,16209 12026,16247 11887,16320 11828,16335 11807,16340 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 11448,16398 11397,16405 11289,16423 11033,16464
+Frankfurter Allee: Radstreifen ist noch provisorisch	?; 15349,12073 15117,12106
 # Hier scheint nichts mehr zu passieren: #: last_checked: 2008-04-08 Wilhelmstr. (Kreuzberg)	? 9376,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
 #: last_checked: 2006-10-25
 Alt-Moabit zwischen Kirch- und Paulstraße	? 7195,13046 7000,13067 6882,13088 6757,13112 6661,13130
-#: last_checked: 2008-05-28
+#: last_checked: 2008-06-22
 #: note: nach den Bauarbeiten wird es Radspuren in der Breiten Str. geben:
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0709/nachricht2788.html
 Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 10109,12238 10084,12228 9972,12184
@@ -44,7 +47,6 @@ Aroser Allee, Fertigstellung bis 2007-10-01	? 6720,18616 6704,18462 6694,18351 6
 # Aroser Allee (Reinickendorf)
 # Neuendorfer Straße (Spandau)
 # Vulkanstraße (Lichtenberg) (ein Stück fehlt noch)
-# Markgrafendamm (Friedrichshain) (der sanierte Bereich ist bereits markiert)
 # Konrad-Wolf-Straße (Hohenschönh.)
 ## bereits realisiert:
 # Engeldamm (Kreuzberg)
@@ -54,6 +56,7 @@ Aroser Allee, Fertigstellung bis 2007-10-01	? 6720,18616 6704,18462 6694,18351 6
 # Hochstraße (Wedding)
 # Alexanderufer (am Hauptbahnhof)
 # Gertraudenstraße (Spittelmarkt, Mitte) (nur Richtung Westen)
+# Markgrafendamm (Friedrichshain) (der sanierte Bereich ist bereits markiert)
 #
 ######################################################################
 #
@@ -69,7 +72,7 @@ B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstre
 Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420 20624,18485 20915,18601 21143,18704 21278,18786 21332,18819
 #: by: http://www.reinickendorf.de/index_8368_de.html
 Wittenauer Str.: Ausbau zum verkehrsberuhigten Bereiche, außerdem Ersetzen des Pflasters durch eine Betonpflasterfahrbahn (Verbundsteinpflaster?), bis 2009-03-01 (Frühjahr 2009)	? 6690,22968 6639,23063 6727,23287 6770,23417
-#: last_checked: 2008-05-02
+#: last_checked: 2008-06-22
 Verlängerung der Niederwallstr. zum Spittelmarkt	?::inwork 10124,11806 10196,11788 10252,11752
 Ampel in Bau	?::inwork 15243,11881
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0710/nachricht2827.html vvv
@@ -156,7 +159,7 @@ Umgehungsstraße Michendorf (B2): GPS-genaue Lage?	? -13997,-8760 -13973,-8969 -1
 #: by: anonymous (geschlossen):
 Einige Radweg-Abschnitte der Perleberger Str. sind mittlerweile gesperrt, welche genau? Oder alle?	? 6230,13596 6366,13716 6493,13822 6649,13947 6730,14021 6807,14093 6992,14251 7132,14375 7180,14419
 ## by: http://www.stadtentwicklung.berlin.de/verkehr/radverkehrsanlagen/de/hellersdorf/route.shtml: Marx-Engels-Forum: wird die RR8 hier durchgeführt? wo genau? -> Nein, keine Ausschilderung zu sehen; alle Radrouten werden an der Spandauer Str. nach SE geführt	? 10300,12587 10355,12551 10411,12471 10596,12517
-B87: im Bereich von Müllrose und Beeskow Umgehungsstraßen; bereits fertiggestellt?	? 86488,-7562 85598,-8331 84692,-9145 84255,-9991 83672,-10601 83389,-11087 82740,-11887 81786,-12568 81278,-13886 80317,-15604 80143,-15900 79825,-16575 79718,-16658 79714,-16872 79650,-16999 79542,-17061 78297,-17788 76631,-18359 74920,-18929 74707,-18991 73222,-20567 71815,-22343 70984,-23637 70075,-24862 69290,-25534 68467,-25032 68208,-25518 67864,-25691 66943,-26530 65386,-29479 64853,-30986 63609,-34428 63520,-34874 63095,-34910 62112,-36752 60430,-38587 58111,-41188 57451,-41866 55628,-43569 53268,-45117 52695,-45345 50425,-46001 49708,-46344 48300,-48609 47500,-49275 47037,-49675 46312,-50912 45914,-51087 45475,-51090 44856,-51015
+B87: im Bereich von Müllrose und Beeskow Umgehungsstraßen; bereits fertiggestellt?	? 86488,-7562 85598,-8331 84692,-9145 84255,-9991 83672,-10601 83389,-11087 82740,-11887 81786,-12568 81278,-13886 80317,-15604 80143,-15900 79825,-16575 79718,-16658 79714,-16872 79650,-16999 79542,-17061 78297,-17788 76631,-18359 74920,-18929 74707,-18991 73222,-20567 71815,-22343 70984,-23637 70075,-24862 69290,-25534 68467,-25032 68208,-25518 67864,-25691 66943,-26530 65386,-29479 64853,-30986 63609,-34428 63520,-34874 63095,-34910 62112,-36752 60430,-38587 58111,-41188 57451,-41866 55628,-43569 53268,-45117 52695,-45345 50425,-46001 49759,-46355 48305,-48668 47500,-49275 47037,-49675 46312,-50912 45914,-51087 45475,-51090 44856,-51015
 # Hier scheint nichts mehr zu passieren... : last_checked: 2008-01-25 #: by: Message-ID: <4mfe1bF5vae4U1@uni-berlin.de> Warschauer Str.: Radwegbenutzungspflicht wird aufgehoben	?; 13546,11352 13476,11174 13454,11119 13409,11004 13332,10832
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20060629.1530.43277.html
 R1: geänderte Ausschilderung steht noch aus	? 22967,4144 23435,4179 24135,4264 24181,4270 25396,4417 25347,4320 25373,4266 25318,4204 25238,3842 25251,3590 25261,3253 25275,3181 25346,2956 25474,2848 25819,2658 26006,2615 25948,2474
@@ -751,10 +754,10 @@ Spreeradweg: Fürstenwalde - ...: Qualität?	? 55549,-4992 56050,-5037 56725,-5300
 Spreeradweg: Raßmannsdorf - Beeskow: Qualität?	? 68832,-15661 68725,-15912 68837,-16362 68837,-16687 68937,-16912 69112,-17475 69150,-18437 69000,-18562 68962,-19137 69300,-19425 69750,-20150 69862,-20487 70000,-20537 69977,-20717 69887,-21300 68725,-24375 68537,-24400
 Spreeradweg: Beeskow - Ranzig: Qualität?	? 67864,-25691 65675,-26512 65562,-27012 65037,-27312 64887,-27712 63887,-28687 63350,-29387 63362,-29687 63887,-30462 64853,-30986
 Spreeradweg: Trebatsch - Alt Schadow: Qualität?	? 63095,-34910 61300,-34362 61250,-34250 59650,-33375 59962,-33025 59925,-32687 60200,-32350 59973,-32331 59512,-32275 59237,-32125 58950,-32100 58137,-32200 57850,-32300 57425,-32237 56875,-31837 54712,-32300 54200,-32512 53912,-32262 54112,-32025 53825,-31700 53906,-31539 53787,-31237 53250,-31150 52737,-30700 52400,-30587 52425,-30275 52112,-30475 51487,-31037 51075,-30925 49650,-30912 49312,-30662 48875,-30837 48700,-31000 48393,-31006
-Spreeradweg/Gurkenradweg: Alt Schadow - Leibsch: Qualität?	? 48393,-31006 48200,-30437 48000,-30262 47812,-29750 47750,-29162 47587,-29137 47400,-29412 47025,-29575 46662,-29937 46387,-29937 45887,-30287 45862,-31150 45662,-31325 45287,-32475 45106,-32618 44687,-32975 44175,-33112 43887,-33112 43200,-33487 42875,-34425 42907,-34842
+Spreeradweg/Gurkenradweg: Alt Schadow - Leibsch: Qualität?	? 48393,-31006 48140,-30425 48000,-30262 47812,-29750 47750,-29162 47587,-29137 47400,-29412 47025,-29575 46662,-29937 46387,-29937 45887,-30287 45862,-31150 45662,-31325 45287,-32475 45106,-32618 44687,-32975 44175,-33112 43887,-33112 43434,-33326 43200,-33487 43119,-33913 42875,-34425 42854,-34816
 Köthener See: Qualität?	? 40118,-36709 40012,-36612 39500,-36487 39312,-36212 38975,-36275 38775,-36150
 Groß Wasserburg - Krausnick (Hofjagdradweg): Qualität?	? 41687,-38100 41462,-38325 41475,-38750 41700,-39425 41012,-40575 41000,-40763
-Köthen - Krausnick (Gurkenradweg): Qualität?	? 39070,-36825 38750,-37212 38087,-37775 37875,-38037 39187,-38325 39625,-38175 40125,-38275 40337,-38625 40150,-39037 40500,-40325 40763,-40888
+Köthen - Krausnick (Gurkenradweg): Qualität?	? 39087,-36914 38750,-37212 38087,-37775 37875,-38037 39187,-38325 39625,-38175 40125,-38275 40337,-38625 40150,-39037 40500,-40325 40677,-40682 40813,-40775 40863,-40904
 #An den Rohrbruchwiesen: Qualität? Teilstrecke nur für Radfahrer geöffnet?	? -1655,16813 -1467,16753 -1434,16609 -1351,16587 -1321,16564
 Fabrikstr. (Hennigsdorf): Qualität? Hauptstraße?	? -3018,25556 -3020,25628 -3099,25732 -3057,26034 -3209,26317
 Maurerstr. (Hennigsdorf): Qualität? Hauptstraße?	? -3209,26317 -3297,26805 -3334,27381 -3473,27393
@@ -987,7 +990,7 @@ Wriezen - Altlewin: Qualität?	? 62879,36334 64090,35965 64745,35846 65849,35579 
 #: XXX: laut Aktiv Regional gut geeignet
 Thöringswerder - Beauregard: Qualität?	? 64745,35846 64960,36531 64960,37179 65271,37400 64841,37778
 #: XXX: laut Aktiv Regional sehr gut bis gut geeignet
-Thöringswerder - Bliesdorf: Qualität?	? 64745,35846 64618,35503 63240,35001 63081,34703 63043,34144 62332,33446 61971,33056 61556,32854 61313,32867 61241,32838 60231,32427
+Thöringswerder - Bliesdorf: Qualität?	? 64745,35846 64618,35503 63240,35001 63081,34703 63043,34144 62332,33446 61971,33056 61556,32854 61313,32867 61241,32838 60213,32415
 #: XXX: laut Aktiv Regional gut geeignet
 Neulewin - Heinrichsdorf: Qualität?	? 68705,35895 68617,36595 67665,36810 66522,38029 66413,38217
 #: XXX: laut Aktiv Regional gut geeignet
@@ -1358,9 +1361,9 @@ Tantow - Rossow: Qualität? (wahrscheinlich Feldweg oder Plattenweg)	? 73031,9744
 Zufahrtstraße zur Brücke am Nottekanal: Wo genau verläuft die Zufahrtstraße? Qualität? Radwege? Laut Berliner Zeitung ist die Brücke mittlerweile fertig	? 26418,-10758 27031,-10349 27012,-10751 27081,-10851 26895,-11124
 Hafenstr. (KW): Qualität?	? 26895,-11124 26815,-11398 26767,-11721 26713,-11908
 #: note: laut Tagesspiegel (2007-05-12) ist die Strecke rund 45km lang, ich komme hier nur auf 37,6km. Laut Tsp durchgehend asphaltiert. Teile der Strecke gehören zur "Tour Brandenburg" (ca. Strausberg - Wriezen).
-Strausberg-Nord - Bienenwerder (Abschnitt bis Reichenow): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 48040,21721 49101,24195 49466,24652 51276,25176 51587,25613 51867,25572 54549,27273 55042,27230 55360,27703
-Strausberg-Nord - Bienenwerder (Abschnitt Reichenow - Möglin): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 55981,27193 56288,27602 56867,27964 57370,28680 57708,29375 57870,29552
-Strausberg-Nord - Bienenwerder (Abschnitt Möglin - Bliesdorf): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 57978,29316 58692,29655 58924,29923 59448,30258 59588,30478 60057,30667 60441,30728 60557,30819 61051,30959 61173,31087 61255,31127 61294,32550 61241,32838
+Strausberg-Nord - Bienenwerder (Abschnitt bis Reichenow): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 48040,21721 48846,23226 49101,24195 49466,24652 51276,25176 51587,25613 51867,25572 54549,27273 55042,27230 55360,27703
+Strausberg-Nord - Bienenwerder (Abschnitt Reichenow - Möglin): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 55981,27193 56288,27602 56867,27964 57370,28680 57681,29300 57824,29253 57978,29316
+Strausberg-Nord - Bienenwerder (Abschnitt Möglin - Bliesdorf): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 57978,29316 58692,29655 58924,29923 59448,30258 59588,30478 60057,30667 60441,30728 60557,30819 61051,30959 61173,31087 61255,31127 61194,31842 61294,32550 61241,32838
 Strausberg-Nord - Bienenwerder (Abschnitt Bliesdorf - Wriezen): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 61313,32867 60212,36154
 Strausberg-Nord - Bienenwerder (Abschnitt Wrizen - Oder): genaue Lage des Radwegs? Ist der Radweg komplett asphaltiert?	? 60212,36154 60368,36566 61522,38715 62690,40886 63689,42714 64609,44963 64972,45813 65076,45984 65286,46173
 Am Luftschiffhafen - R1/Uferweg: existiert eine Verbindung für Radfahrer? Qualität?	? -15729,-3566 -15556,-3770
@@ -1900,8 +1903,6 @@ Eitelsdorfer Str.: Qualität?	? 22869,7095 22810,7120 22690,7146 22501,7192 22272
 Pflanzgartenplatz: Qualität?	? 22656,7412 22685,7480
 Dammheidestr.: Qualität?	? 22880,7351 22745,7388 22656,7412 22554,7437
 Hranitzkystr.: Qualität?	? 8686,1664 8661,1649 8578,1692 8471,1741 8342,1803 8286,1830 8217,1866 8129,1911 8048,1945 8009,1959 7960,1977
-#: XXX und auch Zebrastreifen?
-Annenstr.: steht zwischen Heinrich-Heine-Str. und Heinrich-Heine-Platz eine Ampel?	? 11254,11286 11095,11389
 Herbert-Tschäpe-Str.: Qualität? Einbahnstraße, auch für Radfahrer gültig?	? 14710,14185 14510,14104 14481,14095 14358,14155
 Chrysanthemenstr.: Qualität? Kann man als Radfahrer zur Oderbruchstr. gelangen?	? 14137,13987 14241,13941 14262,13935
 Süderbrockweg: Qualität?	? 13933,14622 13940,14654 13990,14729 14051,14822 14080,14862 14103,14853
@@ -1923,7 +1924,8 @@ Paplitzer Str.: Qualität zwischen Saalower Str. und Goltzstr.? Sind einige Absch
 Deutschtaler Str.: Qualität?	? 17344,1060 17492,843 17640,626 17811,374 17854,314 17946,179 18011,83 18077,-13 18230,-233
 Großziethen: wie weit in Richtung Süden gehen die Radwege?	? 13090,205 13225,-681 13309,-1268
 #: XXX etwas widersprüchlich: Snoopsoul schreibt "schlechtes Kopfsteinpflaster", die ADFC-Karte vergibt für den nördlichen Abschnitt "gut befahrbar", außerdem werden Teilstücke vom Bus befahren
-Pilgramer Str.: Qualität: Asphalt oder Kopfsteinpflaster?	? 25144,11228 25150,10555 25148,10483 25135,10449 25112,10415 25107,10407 25048,10317 24984,10204 24923,10097 24854,9975 24793,9860 24713,9715 24617,9545 24566,9456 24519,9349 24471,9241 24412,9103 24358,8976 24294,8827 24239,8701 24217,8521 24195,8348 24167,8196 24137,8038 24112,7907 24087,7776 24070,7685
+#: note: Harry Marschke meint: "Guter Zustand, weitgehend neu asphaltiert. Tempo-30-Zone, teilweise keine ausgebauten Bürgersteige (Einfamilienhaus-Bebauung mit Siedlungscharakter). Lediglich der zur B1 gelegene Teil ist in etwas schlechterem Zustand (teilweise DDR-Beton, "Schleichverkehr"). "
+Pilgramer Str.: Asphalt/Beton. Welcher Abschnitt ist betoniert, welcher asphaltiert?	? 25144,11228 25150,10555 25148,10483 25135,10449 25112,10415 25107,10407 25048,10317 24984,10204 24923,10097 24854,9975 24793,9860 24713,9715 24617,9545 24566,9456 24519,9349 24471,9241 24412,9103 24358,8976 24294,8827 24239,8701 24217,8521 24195,8348 24167,8196 24137,8038 24112,7907 24087,7776 24070,7685
 Coloniallee: Qualität? Existiert hier ein Radweg?	? 20051,-344 20052,-239 20046,-160 20036,-122 20010,-71 19972,-19
 Weidenweg: Qualität?	? 19780,-407 19794,-409 19879,-378 19941,-353 19974,-348 20051,-344 20327,-305 20476,-279
 Weidenweg: Qualität?	? 19775,-437 19761,-438 19704,-490

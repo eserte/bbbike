@@ -1037,7 +1037,7 @@ check-disabled:	.check_label
 	@touch $@
 
 # XXX Information duplicated in Strassen::Cat
-GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|BNP:\d+(:-?\d+)?)(:inwork)?$$'
+GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+)?)(:inwork)?(::(igndisp|ignrte))?$$'
 
 .check_gesperrt1:	gesperrt .strassen.tmp landstrassen landstrassen2
 	$(CHECK_POINTS) -catrx $(GESPERRT_CATRX) gesperrt .strassen.tmp landstrassen landstrassen2

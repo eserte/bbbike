@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Any.pm,v 1.3 2008/06/21 13:02:43 eserte Exp $
+# $Id: Any.pm,v 1.3 2008/06/21 13:02:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -79,15 +79,45 @@ sub load_gpx {
 	($lat, $lon);
     };
 
+    my $gpsman_time_to_time = sub {
+	my $time = shift;
+	my($Y,$M,$D,$h,$m,$s) = $time =~ m{^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})Z$};
+	if (!defined $Y) {
+	    die "Cannot parse time <$time>";
+	}
+	# XXX timezone?!
+	my $gpsman_time = sprintf "%02d-%s-%04d %02d:%02d:%02d", $D, $number_to_monthabbrev{$M+0}, $Y, $h, $m, $s;
+    };
+
     require XML::Twig;
 
     my $twig = XML::Twig->new;
     $twig->parsefile($file);
 
+    my @wpts;
+
     my($root) = $twig->children;
     for my $wpt_or_trk ($root->children) {
 	if ($wpt_or_trk->name eq 'wpt') {
-	    die "No support for wpt in gpx files yet";
+	    my $wpt = $wpt_or_trk;
+	    my $name;
+	    my $gpsman_time;
+	    for my $wpt_child ($wpt->children) {
+		if ($wpt_child->name eq 'name') {
+		    $name = $wpt_child->children_text;
+		} elsif ($wpt_child->name eq 'time') {
+		    my $time = $wpt_child->children_text;
+		    $gpsman_time = $gpsman_time_to_time->($time);
+		}
+	    }
+	    my($lat, $lon) = $latlong2xy_twig->($wpt);
+	    my $wpt = GPS::Gpsman::Waypoint->new;
+	    $wpt->Ident($name);
+	    $wpt->Accuracy(0);
+	    $wpt->Latitude($lat);
+	    $wpt->Longitude($lon);
+	    $wpt->Comment($gpsman_time) if $gpsman_time;
+	    push @wpts, $wpt;
 	} elsif ($wpt_or_trk->name eq 'trk') {
 	    my $trk = $wpt_or_trk;
 	    my $name;
@@ -117,12 +147,7 @@ sub load_gpx {
 				$wpt->Altitude($trkpt_child->children_text);
 			    } elsif ($trkpt_child->name eq 'time') {
 				my $time = $trkpt_child->children_text;
-				my($Y,$M,$D,$h,$m,$s) = $time =~ m{^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})Z$};
-				if (!defined $Y) {
-				    die "Cannot parse time <$time>";
-				}
-				# XXX timezone?!
-				my $gpsman_time = sprintf "%02d-%s-%04d %02d:%02d:%02d", $D, $number_to_monthabbrev{$M+0}, $Y, $h, $m, $s;
+				my $gpsman_time = $gpsman_time_to_time->($time);
 				$wpt->Comment($gpsman_time);
 			    }
 			}
@@ -138,9 +163,18 @@ sub load_gpx {
 		push @{ $gpsman->{Chunks} }, $trkseg;
 		undef $trkseg;
 	    }
+	} elsif ($wpt_or_trk->name eq 'metadata') {
+	    # ignore
 	} else {
 	    die "No support for " . $wpt_or_trk->name . " planned";
 	}
+    }
+
+    if (@wpts) {
+	my $wpts = GPS::GpsmanData->new;
+	$wpts->Type(GPS::GpsmanData::TYPE_WAYPOINT);
+	$wpts->Waypoints(\@wpts);
+	push @{ $gpsman->{Chunks} }, $wpts;
     }
 
     $gpsman;
