@@ -438,9 +438,9 @@ userdel	2 13082,10634 13178,10623
 userdel	2 13178,10623 13206,10651
 EOF
      },
-     { from  => 1181192400, # 2007-06-07 07:00
-       until => 1181512800, # 2007-06-11 00:00
-       text  => 'Bergmannstraßenfest, Bergmannstr. zwischen Mehringdamm und Zossener Str. gesperrt, 08.06.2007, 7.00 Uhr bis 10.06.2007, 24.00 Uhr ',
+     { from  => Time::Local::timelocal(reverse(2008-1900,6-1,27,7,0,0)), #
+       until => Time::Local::timelocal(reverse(2008-1900,6-1,30,0,0,0)), #
+       text  => 'Bergmannstraßenfest, Bergmannstr. zwischen Mehringdamm und Zossener Str. gesperrt, 27.06.2007, 7.00 Uhr bis 29.06.2007, 24.00 Uhr ',
        type  => 'gesperrt',
        file  => 'bergmannstr.bbd',
      },
@@ -8852,8 +8852,8 @@ EOF
 userdel	2::temp 9648,15027 9718,14888
 EOF
      },
-     { from  => 1183193764, # 2007-06-30 10:56
-       until => 1183327199, # 2007-07-01 23:59
+     { from  => Time::Local::timelocal(reverse(2008-1900,6-1,29,0,0,0)), #
+       until => Time::Local::timelocal(reverse(2008-1900,6-1,30,0,0,0)), #
        text  => 'Mehringdamm (Kreuzberg) in Richtung Tempelhof, zwischen Kreuzbergstr. und Dudenstr. Veranstaltung (Seifenkistenrennen), Fahrtrichtung gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005931',
@@ -11680,6 +11680,34 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 1222,-1732 1276,-1268
+EOF
+     },
+     { from  => 1214257294, # 2008-06-23 23:41
+       until => 1215208799, # 2008-07-04 23:59
+       text  => 'Grumbkowstr. (Pankow) stadtauswärts zwischen Blankenburger Str. und Buchholzer Str. Baustelle, Fahrtrichtung gesperrt (bis 04.07.)',
+       type  => 'gesperrt',
+       source_id => 'IM_009192',
+       data  => <<EOF,
+userdel	1::inwork 11563,20048 11419,20327 11269,20667
+EOF
+     },
+     { from  => 1214257459, # 2008-06-23 23:44
+       until => 1215035999, # 2008-07-02 23:59
+       text  => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Großer Stern und Brandenburger Tor und Eberststr. zwischen Scheidemannstr. und Behrenstr. Veranstaltung, Straßen vollständig gesperrt (bis 02.07. 22 Uhr)',
+       type  => 'handicap',
+       source_id => 'IM_009181',
+       data  => <<EOF,
+userdel	q4::temp 6828,12031 7383,12095 7816,12150 8063,12182 8089,12186 8214,12205 8515,12242 8539,12286 8560,12326 8540,12420
+userdel	q4::temp 8595,12066 8600,12165 8515,12242
+userdel	q4::temp 8542,11502 8548,11552
+EOF
+     },
+     { from  => 1215036000, # 2008-07-03 00:00
+       until => 1215468000, # 2008-07-08 00:00
+       text  => 'B 087 Herzberger Str. OD Schlieben, zw. Lindenstr. u. Abzw. Oelsig 415. Moienmarkt Vollsperrung 04.07.2008-07.07.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 10533,-76130 10891,-76066 11354,-75979
 EOF
      },
     );

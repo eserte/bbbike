@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Any.pm,v 1.3 2008/06/21 13:02:43 eserte Exp eserte $
+# $Id: Any.pm,v 1.4 2008/06/23 21:46:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GPS::GpsmanData::Any;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 use GPS::GpsmanData;
 
@@ -99,10 +99,10 @@ sub load_gpx {
     my($root) = $twig->children;
     for my $wpt_or_trk ($root->children) {
 	if ($wpt_or_trk->name eq 'wpt') {
-	    my $wpt = $wpt_or_trk;
+	    my $wpt_in = $wpt_or_trk;
 	    my $name;
 	    my $gpsman_time;
-	    for my $wpt_child ($wpt->children) {
+	    for my $wpt_child ($wpt_in->children) {
 		if ($wpt_child->name eq 'name') {
 		    $name = $wpt_child->children_text;
 		} elsif ($wpt_child->name eq 'time') {
@@ -110,7 +110,7 @@ sub load_gpx {
 		    $gpsman_time = $gpsman_time_to_time->($time);
 		}
 	    }
-	    my($lat, $lon) = $latlong2xy_twig->($wpt);
+	    my($lat, $lon) = $latlong2xy_twig->($wpt_in);
 	    my $wpt = GPS::Gpsman::Waypoint->new;
 	    $wpt->Ident($name);
 	    $wpt->Accuracy(0);
