@@ -1419,6 +1419,11 @@ Ueckermünde: Qualität? Radwege?	? 53773,148858 53226,148833 52892,148819 52724,1
 Am Hanffgraben: Qualität? Gilt die Einbahnstraßenregelung auch für Radfahrer?	? 16698,1392 16805,1488
 Fangschleuser Weg: Qualität?	? 30927,4328 30896,4196 30871,4111
 Tieflandstr.: Qualität?	? 21860,9046 21849,9145 21840,9253 21806,9550 21822,9681 21842,9829
+Geranienstr.: Qualität?	? 4514,5082 4344,4975 4231,4922 4210,4907
+Begonienplatz: Qualität?	? 4132,4988 4193,4897
+Begonienplatz: Qualität?	? 4173,5013 4231,4922
+Nelkenstr.: Qualität?	? 4210,4907 4274,4808
+Resedenstr.: Qualität?	? 4274,4808 4332,4819 4515,4966
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -1433,6 +1438,8 @@ Hohenschönhausener Weg: asphaltiert (laut Radzeit 3/2006)	? 15611,18547 16317,18
 (Uferpromenade Spreebogenpark) (hat dieser Weg einen Namen (Ludwig-Erhard-Ufer?)?)	? 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871
 Korkedamm (ist der Korkedamm im Mittelteil für Autos gesperrt?)	? 19375,2341 19654,2325 19962,2277
 Rue Charles Calmette (Qualität (womöglich Beton)?)	? 3753,16638 3711,16670 3684,16788
+(Kolonie Dreieck - Klemkepark) (nachts beleuchtet?)	? 8260,18765 8188,18819 8101,18846 7988,18861 7850,18881 7794,18881 7793,18894 7710,18902 7621,18894 7574,18874
+(Klemkepark - Kopenhagener Str./Freiheitsweg) (nachts beleuchtet?)	? 7574,18874 7576,18837 7480,18828 7394,18820 7332,18818 7313,18781 7248,18793
 Freiheitsweg (ausgeschilderte Radroute - welche?)	? 6558,18947 6715,18918 6753,18909 6829,18887 6910,18861 7157,18810
 Vereinssteg (Qualität des Weges?)	? 8396,19071 8340,18984 8321,18954
 Jugendplatz (Qualität?)	? 1191,14513 1262,14510
@@ -1443,7 +1450,6 @@ Stadtrandstr. (Qualität?)	? -6755,15682 -6766,15741 -6719,16111
 Ferdinand-Buisson-Str. (Qualität der Straße?)	? 12331,20963 12459,21010 12570,21058 12762,21140 12837,21229 12885,21282 12939,21345 12948,21421 12953,21502 12994,21719 13008,21783 13050,21994
 Grimmingweg (Qualität des Grimmingweges? (sowohl zwischen Säntisstr. und Föttingerzeile als auch des Fußwegabschnittes))	? 9978,1854 10001,1814 10004,1787 10003,1768 9943,1543 9931,1502 9908,1416
 Grimmingweg (Qualität des Grimmingweges? (sowohl zwischen Säntisstr. und Föttingerzeile als auch des Fußwegabschnittes))	? 9908,1416 9832,1380
-(Görlitzer Ufer - Am Flutgraben) (Qualität? Einschränkungen durch Fußgänger? Existieren hier Treppen?)	? 13253,10046 13306,10006 13371,9974
 Roßlauer Str. (das letzte Stück zum Blumberger Damm nicht passierbar?)	? 20656,12415 20853,12388 20943,12376 21031,12364 21123,12352 21163,12347
 Ahornstr. (Hessenwinkel) (Qualität der Straße?)	? 32998,2827 32952,2786 32952,2743 32888,2717 32801,2710 32643,2695
 Kulmseestr. (Qualität zwischen Luise-Zietz-Str. und Otto-Nagel-Str.?)	? 20001,12368 20062,12353 20156,12311
@@ -1493,7 +1499,6 @@ Müncheberg, Turm (genaue Bezeichnung?)	? 60803,11559
 Müncheberg, Turm (genaue Bezeichnung?)	? 60306,11906
  (Radwegbenutzungspflicht in der Waldschulallee?)	? 799,10410 643,10524 574,10577 452,10669
  (Radwegbenutzungspflicht in der Lötzener Allee?)	? 452,10669 474,10869 503,11104 454,11159
- (Am Dennewitzplatz in beide Richtungen Busspuren?)	? 7813,10112 7866,9918
 gemeinsamer Rad- und Fußweg  (Clara-Jaschke-Str. bis Katharina-Paulus-Str.: ist hier ein Radweg?)	? 7764,13236 7768,13175 7779,13012 7866,13009 7863,12927
 Gemeinsamer Rad- und Gehweg parallel zur Straße (Ist der Radweg ein Zweirichtungsradweg? Auf welcher Seite führt der Radweg?)	? 30390,-3443 29780,-3563 28499,-3409 28073,-3255 27906,-3136
 Rominter Allee: Kopfsteinpflaster (ist das Kopfsteinpflaster in der Rominter Allee eher mäßig oder eher gut?)	? -99,12019 -95,12038 -145,12151 -153,12183 -155,12198 -181,12304 -199,12341 -232,12380 -287,12460 -328,12654 -396,12749 -410,12792 -472,12961 -435,12997 -426,13030 -421,13050

@@ -90,17 +90,17 @@ Radweg durch den Münsigerpark: bis spätestens 2011-01-01 realisiert	?::inwork -3
 Neue Schönholzer Straße: ab 2007-09-06 asphaltiert	?::inwork 10089,18180 10140,18080 10179,17772
 # XXX fertig, laut frank huth: : last_checked: 2007-10-03 Pankebrücke: in Bau	?::inwork 13554,23123 13567,23101 13551,23072
 Neppermin - Mellenthin - B110: Radweg in Planung, Fertigstellung 2008	?::inwork 50574,171409 50283,171077 50168,170868 49835,170038 49737,169837 49114,169212 49028,168646 48954,167870
-#: last_checked: 2008-04-04 vvv
-Columbiadamm: Bauarbeiten (neue Radwege)	?::inwork; 10796,8498 10598,8563
-Columbiadamm: Bauarbeiten (neue Radwege)	?::inwork; 11416,8283 11271,8325 10911,8457 10796,8498
-Columbiadamm: Bauarbeiten (neue Radwege)	?::inwork 11416,8283 11632,8302
+#: last_checked: 2008-06-24 vvv
+Columbiadamm: Bauarbeiten (neue Radwege)	?::inwork; 10796,8498 10598,8563 10213,8665
+Columbiadamm: Bauarbeiten (neue Radwege)	?::inwork; 11632,8302 11416,8283 11271,8325 10911,8457 10796,8498
 #: last_checked: ^^^
 Blankenfelde, Berliner Str. und Hauptstr: nach Bauarbeiten (bis 2009-04-01) vielleicht bessere Fahrbahnqualität?	?::inwork 9528,23240 9490,23531 9425,23693 9625,23781 9774,23936
 #: by: http://www.berliner-stadtplan.com/topic/bln/str/x_wgs/22.04/y_wgs/28.92/from/form.html
 #: by: http://www.morgenpost.de/content/2006/09/20/bezirke/855150.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20060915.1800.47562.html
 #: XXX Name der Straße? Der Pharus-Verlag meint "Wilhelm-Kabus-Str."
-Kolonnenstr. - Südkreuz: Bauarbeiten beginnen 2007, die Naumannstr. wird später verkehrsberuhigt	? 7716,8048 7826,8049 7949,8385 8077,8768
+Kolonnenstr. - Südkreuz: Bauarbeiten beginnen 2007, die Naumannstr. wird später verkehrsberuhigt	?::projected 7716,8048 7844,8049 7861,8217 7893,8327 7942,8380 8077,8768
+Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer, Realisierung bis 2010-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283 8264,8289
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
 #: last_checked (by steffi silvermidi): 2008-03
 Blanckertzweg: Radwege in Planung (ebenso östlicher Teil der Hildburghauser Str.)	? 4793,1344 4634,1245 4542,1188
@@ -116,9 +116,7 @@ Mauerweg am Nordbahnhof: wo genau?	?::inwork 9221,13992 8907,14398
 #: by: http://www.berlinonline.de/berliner-kurier/archiv/.bin/dump.fcgi/2005/1110/berlin/0033/index.html
 #: next_check: 2009-01-01
 Grenzweg: Brücke über die Spree bzw. Straßenverbindung zwischen Rummelsburger Landstraße und Schnellerstr. soll 2009 fertig werden	?::inwork 17082,7189 16954,7096
-#: next_check: 2006-08-01
-Uferweg an der Kongreßhalle: laut Tsp im Frühjahr 2005 fertig (aber noch nicht fertig geworden)	?::inwork 7753,12578
-Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
+# XXX del laut http://www.berlin.lsvd.de/cms/index.php?option=com_content&task=view&id=184&Itemid=175 nicht mehr in Planung, keine weiteren Treffer im Web! Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
 #: next_check: 2005-11-25
 Gramzow: nach Abschluss der Bauarbeiten kein Kopfsteinpflaster mehr?	? 50109,89725 49930,89857
 # XXX del next_check: 2005-11-30 Großziethen: Kopfsteinpflaster nur Richtung Süden, nach den Arbeiten kein Kopfsteinpflaster mehr?	?; 12984,1011 13090,205 13225,-681 13309,-1268
@@ -234,6 +232,7 @@ Drängelgitter	? 15496,6314 15504,6328 15516,6357
 # Keine Fragezeichen wegen der Daten (die sind bekannt), sondern
 # ob und wie diese in die DB aufgenommen werden sollen
 #: XXX Wegen der knappen Öffnungszeiten nicht interessant: vvv
+#: XXX_prog: Könnte man aufnehmen, wenn man bei der Routensuche eine Zeit angeben würde
 Kleistpark: im Sommer bis 21 Uhr geöffnet, im Winter bis 18 Uhr	? 7192,9508 7246,9504 7415,9503 7453,9553 7520,9572
 #: XXX ^^^
 Achenbachpromenade: Parkweg Q1, q1 Fußgänger (Radfahren erlaubt), green1, unbeleuchtet; in die Datenbank aufnehmen? Gilt der Name auch jenseits des Bayernringes?	? 8755,8776 8737,8573 8696,8453
@@ -2052,3 +2051,8 @@ Am Hanffgraben: Qualität? Gilt die Einbahnstraßenregelung auch für Radfahrer?	? 
 Fangschleuser Weg: Qualität?	? 30927,4328 30896,4196 30871,4111
 #: XXX: unklarer Eintrag von anonymous: gute Qualität, keine weitere Qualitätsbestimmung; auf dem Luftbild sieht es asphaltiert aus
 Tieflandstr.: Qualität?	? 21860,9046 21849,9145 21840,9253 21806,9550 21822,9681 21842,9829
+Geranienstr.: Qualität?	? 4514,5082 4344,4975 4231,4922 4210,4907
+Begonienplatz: Qualität?	? 4132,4988 4193,4897
+Begonienplatz: Qualität?	? 4173,5013 4231,4922
+Nelkenstr.: Qualität?	? 4210,4907 4274,4808
+Resedenstr.: Qualität?	? 4274,4808 4332,4819 4515,4966

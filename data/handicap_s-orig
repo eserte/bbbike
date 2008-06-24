@@ -387,6 +387,10 @@ Bayernring: enge Straße	q1 8371,8543 8437,8557 8616,8595
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15580,8839 15383,8662 15166,8489
 Hedwigskirchgasse: Bordsteine, Fußgänger	q2 9743,12239 9756,12139
 Zufahrt Franz-Mehring-Platz: Bordstein	q1 12739,12124 12699,12041
+Am Flutgraben: Fußgänger	q1 13506,10146 13371,9974 13333,9929
+(Uferweg zum Ernst-Heilmann-Steg): kurze steile Rampe, Fußgänger	q2 13221,10005 13237,9995
+(Uferweg zum Ernst-Heilmann-Steg): sanfte Rampe, Fußgänger	q2 13237,9995 13267,10036
+(Ernst-Heilmann-Steg): Fußgänger	q1 13267,10036 13306,10006 13371,9974
 ######################### User Contributions #################################
 #: by: Steini
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
@@ -1225,3 +1229,8 @@ Saalmannsteig: Fußgänger	q2 5410,19050 5284,19043 5181,19037
 Jägerstr. (Köpenick): enge Straße	q1 22383,4703 22355,4660 22312,4593
 #: by: Roger Menge:
 (Swakopmunder Str. - Charles-Corcelle-Ring): Fußgänger	q2 5223,16783 5141,16799 5091,16810 5035,16819 5000,16826
+#: by: catrin (ruehl) vvv
+#: corrected_by: srt/policy (q2 -> q1)
+Kolonie Dreieck - Klemkepark: Hunde	q1 8260,18765 8188,18819 8101,18846 7988,18861 7850,18881 7794,18881 7793,18894 7710,18902 7621,18894 7574,18874
+Klemkepark - Kopenhagener Str./Freiheitsweg: Hunde	q1 7574,18874 7576,18837 7480,18828 7394,18820 7332,18818 7313,18781 7248,18793
+#: by: ^^^
