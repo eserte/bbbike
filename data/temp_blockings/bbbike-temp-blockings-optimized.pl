@@ -1806,18 +1806,7 @@ userdel	2::inwork 33475,10842 32900,10962 31871,10926 30678,10923
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_009181',
-         'until' => 1215035999,
-         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Großer Stern und Brandenburger Tor und Eberststr. zwischen Scheidemannstr. und Behrenstr. Veranstaltung, Straßen vollständig gesperrt (bis 02.07. 22 Uhr)',
-         'from' => 1214257459,
-         'id' => 1389,
-         'data' => 'userdel	q4::temp 6828,12031 7383,12095 7816,12150 8063,12182 8089,12186 8214,12205 8515,12242 8539,12286 8560,12326 8540,12420
-userdel	q4::temp 8595,12066 8600,12165 8515,12242
-userdel	q4::temp 8542,11502 8548,11552
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1215468000,
          'text' => 'B 087 Herzberger Str. OD Schlieben, zw. Lindenstr. u. Abzw. Oelsig 415. Moienmarkt Vollsperrung 04.07.2008-07.07.2008 ',
@@ -1826,6 +1815,26 @@ userdel	q4::temp 8542,11502 8548,11552
          'data' => 'userdel	q4::temp 10533,-76130 10891,-76066 11354,-75979
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1214812800,
+         'text' => 'Fanmeile, Straße des 17. Juni gesperrt, bis 30.6.2008 ',
+         'from' => 1214430640,
+         'id' => 1391,
+         'data' => 'userdel	2::temp 8063,12182 8089,12186 8214,12205 8215,12156 8222,11881
+userdel	2::temp 8214,12205 8515,12242 8522,12187
+userdel	2::temp 7383,12095 7816,12150 8063,12182 8048,12135 8034,12093
+userdel	2::temp 8515,12242 8490,12192 8215,12156 8107,12145 8048,12135 8018,12131 7827,12105 7460,12054
+userdel	2::temp 8089,12041 8107,12145
+userdel	2::temp 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
+userdel auto	3 8539,12286 8515,12242 8600,12165
+userdel auto	3 8539,12286 8515,12242 8610,12254
+userdel auto	3 8600,12165 8515,12242 8539,12286
+userdel auto	3 8600,12165 8515,12242 8610,12254
+userdel auto	3 8610,12254 8515,12242 8539,12286
+userdel auto	3 8610,12254 8515,12242 8600,12165
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -11692,7 +11692,7 @@ userdel	1::inwork 11563,20048 11419,20327 11269,20667
 EOF
      },
      { from  => 1214257459, # 2008-06-23 23:44
-       until => 1215035999, # 2008-07-02 23:59
+       until => 1214430604, # 2008-07-02 23:59 1215035999, see below
        text  => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Großer Stern und Brandenburger Tor und Eberststr. zwischen Scheidemannstr. und Behrenstr. Veranstaltung, Straßen vollständig gesperrt (bis 02.07. 22 Uhr)',
        type  => 'handicap',
        source_id => 'IM_009181',
@@ -11708,6 +11708,25 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::temp 10533,-76130 10891,-76066 11354,-75979
+EOF
+     },
+     { from  => 1214430640, # 
+       until => 1214812800, # 2008-06-30 10:00
+       text  => 'Fanmeile, Straße des 17. Juni gesperrt, bis 30.6.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 8063,12182 8089,12186 8214,12205 8215,12156 8222,11881
+userdel	2::temp 8214,12205 8515,12242 8522,12187
+userdel	2::temp 7383,12095 7816,12150 8063,12182 8048,12135 8034,12093
+userdel	2::temp 8515,12242 8490,12192 8215,12156 8107,12145 8048,12135 8018,12131 7827,12105 7460,12054
+userdel	2::temp 8089,12041 8107,12145
+userdel	2::temp 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
+userdel auto	3 8539,12286 8515,12242 8600,12165
+userdel auto	3 8539,12286 8515,12242 8610,12254
+userdel auto	3 8600,12165 8515,12242 8539,12286
+userdel auto	3 8600,12165 8515,12242 8610,12254
+userdel auto	3 8610,12254 8515,12242 8539,12286
+userdel auto	3 8610,12254 8515,12242 8600,12165
 EOF
      },
     );
