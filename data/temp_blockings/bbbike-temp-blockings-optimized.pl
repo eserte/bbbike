@@ -894,15 +894,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Linienstr.: Baustelle zwischen Koppenplatz (östliche Straße) und Rosenthaler Str., Einbahnstraße',
-         'from' => undef,
-         'id' => 935,
-         'data' => 'userdel	1::inwork 10214,13680 10081,13673 10020,13669 9964,13665
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
