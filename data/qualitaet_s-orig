@@ -2122,6 +2122,8 @@ Bachstr. (Bohnsdorf): guter Beton	Q0 22749,-969 22918,-903 23329,-732
 Fontanestr. (Oberschöneweide): guter Asphalt	Q0 18225,7004 18240,6845 18254,6679 18273,6606
 ######################################################################
 #: by: anonymous vvv
+Kopernikusstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 3459,2944 3644,2937
+Windhuker Str.: mäßiges Kopfsteinpflaster	Q2 5426,16539 5228,16738
 Hertastr. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 1015,3858 949,4055
 Schwabstedter Weg: gutes Verbundsteinpflaster	Q1 -1786,21928 -2082,21963 -2246,21983
 Wallstr. (Kaulsdorf): guter Asphalt	Q0 22544,12001 22836,11994
@@ -3310,7 +3312,7 @@ Straßburger Str.: Kopfsteinpflaster	Q2 10902,13604 11060,13865 11160,14002 11262
 #: by: ^^^
 #: by: betti (grafik@...):
 #: XXX Eintrag war "gutes" Kopfsteinpflaster. Wie gut?
-Potsdamer Str. (Lichterfelde): Kopfsteinpflaster	Q2 3193,3793 3375,3544 3492,3371 3646,3154 3646,3034 3641,2827
+Potsdamer Str. (Lichterfelde): Kopfsteinpflaster	Q2 3193,3793 3375,3544 3492,3371 3646,3154 3646,3034 3644,2937 3641,2827
 #: by: harald kuendgen:
 Dessauerstr.: mäßiges Kopfsteinpflaster	Q2 6725,2494 6651,2479 6465,2356 6232,2201 6196,2204 6021,2071 5865,1975
 #: by: funda: vvv
@@ -5000,8 +5002,10 @@ Hatzfeldtallee: guter Asphalt	Q1 2353,20577 2448,20592 2585,20608 2762,20648
 Siverstorpstr.: guter Asphalt	Q0 16499,22789 16389,22860 16330,22898 16289,22924 16227,22963 16152,23014 16107,23043 16049,23082 16002,23113 15958,23142 15838,23222 15799,23248
 #: by: Britta Weiß:
 Am Stand: guter Asphalt	Q0 7492,18699 7484,18778
-#: by: Stefan (xms): vvv
-Deutschhofer Allee: guter Asphalt	Q0 21480,8578 21680,8400 21940,8158
+#: by: Stefan (xms) (St.Ullrich): vvv
+Deutschhofer Allee: guter Asphalt	Q0 21480,8578 21680,8400
+#: note: 2006 war dieser Teil noch ein schlechter fester Sandweg
+Deutschhofer Allee: guter Asphalt	Q0 21680,8400 21940,8158
 Feuersteiner Str.: guter Asphalt	Q0 21708,7981 21759,7985 21800,8036 21851,8075 21940,8158
 Druschiner Str.: guter Asphalt	Q0 21788,8133 21851,8075 21994,7949 22138,7830 22173,7806
 Mühltaler Str.: guter Asphalt	Q0 21759,7985 21914,7862 22070,7726 22244,7609 22353,7562
@@ -6061,6 +6065,7 @@ Schererstr.: mäßiges Kopfsteinpflaster 	Q2 7786,15785 7960,15801
 #: by: HWSchramm:
 Prausestr.: Asphalt	Q0 3228,4046 3382,4146 3360,4177 3467,4247
 #: by: Loris: vvv
+#: note: Tobias Miller meint: mäßiges Kopfsteinpflaster und enge Straße ohne weitere Differenzierung, go with Loris
 Karl-Fischer-Weg: guter Asphalt	Q0 7030,4937 7202,5016 7213,5062
 Karl-Fischer-Weg: schlechtes Kopfsteinpflaster	Q3 7213,5062 7238,5171 7266,5292 7290,5399
 #: by: ^^^
@@ -6093,7 +6098,7 @@ Baumbachstr.: schlechtes Kopfsteinpflaster	Q3 11441,16612 11441,16745
 Feldtmannstr.: schlechtes Kopfsteinpflaster	Q3 16460,17214 16418,17311 16380,17356 16326,17407 16302,17439 16070,17472 15827,17509 15810,17512 15239,17599
 #: by: Andreas Jähn:
 #: note: ein anonymer Benutzer meinte hierzu "Kopfsteinpflaster"
-Petersallee: guter Asphalt	Q0 5444,16528 5602,16718 5791,16910
+Petersallee: guter Asphalt	Q0 5426,16539 5602,16718 5791,16910
 #: by: Velodoom:
 Verlängerte Koloniestr.: mäßiges Kopfsteinpflaster	Q2 8944,17961 8957,18124 8918,18159
 #: by: Thomas Plischka:
@@ -6722,9 +6727,11 @@ Homuthstr.: guter Asphalt	Q0 4979,7205 4983,7062
 #: by: Frauke Weiß:
 Pölitzer Str.: Asphalt	Q0 23430,11576 23495,11753 23540,11943
 #: by: Volker (retzlaff): vvv
+Diethelmweg: gutes Verbundsteinpflaster	Q1 21649,13995 21677,14241 21696,14430
+Ingeweg: guter Asphalt	Q0 21764,13981 21649,13995 21533,14009 21412,14023 21362,14028
+Christelweg: guter Asphalt	Q0 21439,14273 21561,14257 21677,14241 21794,14229
 Alwineweg: guter Beton	Q0 21456,14491 21584,14459 21696,14430 21814,14407
-#: note: "Siedlungsgebiet, q2" ignoriert
-Burghardweg: guter Beton	Q0 21533,14009 21561,14257 21584,14459
+Burghardweg: gutes Verbundsteinpflaster	Q1 21533,14009 21561,14257 21584,14459
 #: by: ^^^
 #: by: Danim Shin:
 Brinkmannstr.: schlechtes Kopfsteinpflaster, sehr holprig	Q3 7095,5317 7216,5303 7266,5292
@@ -6747,6 +6754,23 @@ Königsteinstr. (Blankenburg): asphaltiert	Q0 13395,22365 13476,22345 13541,22300
 #: by: catrin (ruehl) vvv
 Kolonie Dreieck - Klemkepark: wassergebundene Decke	Q1 8260,18765 8188,18819 8101,18846 7988,18861 7850,18881 7794,18881 7793,18894 7710,18902 7621,18894 7574,18874
 Klemkepark - Kopenhagener Str./Freiheitsweg: wassergebundene Decke	Q1 7574,18874 7576,18837 7480,18828 7394,18820 7332,18818 7313,18781 7248,18793
+#: by: ^^^
+#: by: Ilka vvv
+#: note: erlaubte Höchstgeschwindigkeit 10 km/h
+Hönower Wiesenweg: Kopfsteinpflaster, alte Bahngleise	Q3 17375,8847 17416,8767 17483,8644 17554,8458 17624,8353 17708,8316 17751,8284
+Hönower Wiesenweg: Kopfsteinpflaster und Sandweg mit tiefen Schlaglöchern	Q3 17751,8284 17803,8203 17852,8155
+#: by: ^^^
+#: by: martin (noisee)
+Frank-Zappa-Str.: guter Beton	Q0 18598,14575 18896,14649 18868,14745 18938,14768
+#: by: Detlef Liebe:
+Bosporusstr.: guter Beton	Q0 10363,4183 10455,4189 10505,4194 10601,4185 10724,4168
+#: by: Lutz Jungnickel ("sehr gut"):
+#: confirmed_by: Dominik (germanredsquad) ("gut"):
+Birkhuhnweg: Asphalt	Q0 15150,3470 15042,3527 14991,3547 14911,3568 14854,3587 14811,3597 14761,3580
+#: by: Michael Weihrauch: vvv
+Ammerseestr.: guter Asphalt	Q0 22372,1224 22280,1351 22247,1409
+Ammerseestr.: schlechtes Kopfsteinpflaster	Q3 22247,1409 22218,1463 22204,1496
+Ammerseestr.: guter Asphalt	Q0 22204,1496 22178,1589 22166,1636
 #: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)

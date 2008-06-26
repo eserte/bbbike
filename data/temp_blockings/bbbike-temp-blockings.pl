@@ -1591,7 +1591,7 @@ EOF
        text  => 'Wassersportallee - Regattastraße, Zwischen Kreuzung Adlergestell und Kreuzung Wassersportallee in beiden Richtungen gesperrt, Baustelle, Dauer: 14.03.2005 03:00 Uhr bis 15.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 22449,1281 22217,1108
+userdel	q4 22449,1281 22372,1224 22217,1108
 userdel	q4 22449,1281 22663,1441
 userdel	q4 22217,1108 22162,1067
 EOF
