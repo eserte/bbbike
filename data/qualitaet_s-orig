@@ -2726,6 +2726,7 @@ Am Springebruch: Verbundsteinpflaster	Q1 6130,23062 6258,22899
 #: by: Patrik Marschalik: vvv
 Worpsweder Str.: gute Qualität	Q0 6191,4923 6203,5138
 Wilseder Str.: Asphalt	Q0 6295,5132 6288,4906
+#: confirmed_by: Norbert Rupsch ("asphaltiert")
 Immenweg: Asphalt	Q0 6744,4983 6415,5028 6383,4890
 Hünensteig: Verbundsteinpflaster	Q1 6415,5028 6393,5028 6396,5125 6406,5223 6108,5253
 #: by: ^^^
@@ -5502,9 +5503,14 @@ Hasselfelder Weg: guter Asphalt	Q0 5045,1675 4942,1649 4855,1616 4800,1582
 #: by: ^^^
 #: by: Thomas Biederbick:
 Glindowseestr.: Asphalt	Q0 -1710,16735 -1553,16695 -1443,16676
-#: by: Olaf (gonxo):
-#: add_fragezeichen: gilt das "schlechte Kopfsteinpflaster" für die gesamte Straße oder nur für einen Abschnitt?
-Planetenstr.: schlechtes Kopfsteinpflaster	Q3 14567,6810 14620,6876 14751,7007 14803,7056 14902,7148 14951,7163 15056,7198 15175,7221 15185,7234
+#: by: Olaf (gonxo): vvv
+#: corrected_by: where_are_you_between (vorher war alles Q3)
+Planetenstr.: mäßiger bis guter Asphalt	Q1 14567,6810 14620,6876 14751,7007 14803,7056
+#: corrected_by: where_are_you_between (vorher war alles Q3)
+Planetenstr.: mäßiges Kopfsteinpflaster, teilweise asphaltiert	Q2+ 14803,7056 14902,7148 14951,7163
+#: corrected_by: where_are_you_between ("sehr" added)
+Planetenstr.: sehr schlechtes Kopfsteinpflaster	Q3 14951,7163 15056,7198 15175,7221 15185,7234
+#: by: ^^^
 #: by: Manfred (pussehl):
 Rue Hyancinte Vincent: guter Asphalt	Q0 3456,16713 3455,16659 3401,16582 3382,16553 3347,16534 3292,16553
 #: by: Rainer Prüfert:
@@ -6772,6 +6778,24 @@ Ammerseestr.: guter Asphalt	Q0 22372,1224 22280,1351 22247,1409
 Ammerseestr.: schlechtes Kopfsteinpflaster	Q3 22247,1409 22218,1463 22204,1496
 Ammerseestr.: guter Asphalt	Q0 22204,1496 22178,1589 22166,1636
 #: by: ^^^
+#: by: Manuela (berlin): vvv
+Ehm-Welk-Str.: guter Beton	Q0 22608,13442 22745,13386 22776,13468 22775,13482 22723,13638 22640,13619
+Kummerower Ring: guter Beton	Q0 22594,13408 22608,13442 22647,13545 22640,13619 22615,13734 22527,13708 22523,13680 22544,13602 22503,13489 22608,13442
+#: by: ^^^
+#: by: where_are_you_between: vvv
+Hainstr.: guter Asphalt	Q0 18370,5511 18370,5647 18349,5744 18314,5825
+Fließstr.: mäßiges Kopfsteinpflaster	Q2 18164,5701 18017,5783
+Fließstr.: guter Asphalt	Q0 18017,5783 17877,5860
+Flutstr.: am Rand mäßiges Kopfsteinpflaster, in der Mitte eine gute asphaltierte Spur	Q1 18017,5783 17980,5721 17931,5695 17916,5675
+(Weg am Heidekampgraben - Kiefholzstr., entlang der S-Bahn): sehr gut asphaltiert	Q0+ 15185,7234 15379,7283
+(Weg am Heidekampgraben - Kiefholzstr., entlang der S-Bahn): mäßig asphaltiert (viele Unebenheiten durch Baumwurzeln)	Q1- 15379,7283 15601,7340
+#: by: ^^^
+#: by: Norbert Rupsch: vvv
+Rudower Str. (Köpenick): größtenteils gutes Kopfsteinpflaster	Q1- 21370,4442 21546,4457 21585,4459 21775,4470
+#: by: ^^^
+#: by: Reinhard Stenzel: vvv
+Salemer Steig: mäßiger Beton	Q1- -441,4354 -459,4422 -472,4476 -493,4529 -531,4599 -558,4639 -581,4662
+#: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
@@ -7838,9 +7862,11 @@ Schorfheidestr. (Marzahn)	Q1 21933,18521 22079,18565
 Schorfheidestr. (Marzahn)	Q1 21946,18415 21965,18410 21978,18373 21900,18215 21864,18230
 Hohenwalder Str.: Beton	Q1 21880,18866 21945,18832 21993,18800 22023,18743 22039,18693 22071,18593 22079,18565 22125,18418
 Hohenwalder Str.: Beton	Q1 21875,18700 22023,18743
+#: confirmed_by: Dirk (diggler): vvv
 Golliner Str.: Beton	Q1 21978,18373 22069,18401 22125,18418 22207,18441 22250,18292 22255,18277 22213,18193 22191,18150 22139,18050
 Golliner Str.: Beton	Q1 22075,18114 22191,18150
 Golliner Str.: Beton	Q1 22217,17989 22276,18107 22191,18150
+#: confirmed_by: ^^^
 Kölpiner Str.: Beton	Q1 22069,18401 22114,18244 22213,18193
 Döllner Str.: fester Sandweg mit Löchern	Q2 22313,18595 22071,18593
 (Radweg an der Straßenbahn): Beton	Q0 21843,18198 21804,18125 21726,17974 21698,17920 21639,17803 21576,17678 21559,17617 21555,17546 21539,17442 21510,17329 21484,17205 21484,17189 21470,17117 21453,17041 21441,16973 21417,16896

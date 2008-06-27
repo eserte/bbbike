@@ -238,8 +238,6 @@ Achenbachpromenade: Parkweg Q1, q1 Fußgänger (Radfahren erlaubt), green1, unbele
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
-#: by: Manuela (berlin):
-Ehm-Welk-Str.: guter Beton, Q0	? 22608,13442 22745,13386 22776,13468 22775,13482 22723,13638 22640,13619
 #: by: Axel Giesow:
 Pietschkerstr. (Potsdam): guter Beton, Q0, enge Straße, q1	? -8098,-3680 -8096,-3596 -8077,-3486 -8025,-3348
 #: by: arndt rimpler:
@@ -697,7 +695,6 @@ Zühlen - Binenwalde: Qualität?	? -30695,73610 -30962,73512 -31387,73037 -31537,7
 #: unverified_by: http://www.ruppin.de/rheinsberg/freizeit/sport/radw_zechlh.html
 Beerenbusch - Zechlinerhütte: Qualität?	? -22787,81662 -23550,82037 -24975,82587 -26520,83231
 Neuglobsow - Rheinsberg: laut http://www.ruppin.de/rheinsberg/freizeit/sport/radw_neuglobsow.html teilweise Waldweg, teilweise Radweg?	? -14354,81575 -14795,81699 -14946,81614 -15229,81572 -15596,81274 -15943,81207 -16224,80970 -16961,80707 -17299,80205 -17707,79391 -17901,79432 -18074,79390 -18050,79047 -18179,78812 -18200,78576 -18350,78427 -18393,78235 -18544,78020
-Hasselwerderstr.: Einbahnstraße, auch für Radfahrer?	? 18268,5739 18164,5701 18023,5623
 #: XXX ein anonymer Eintrag hat einen (diesen?) Mittelweg mit "loser Sandweg" attributiert:
 Mittelweg (Altglienicke, Bohnsdorf): Qualität (laut ADFC-Karte mäßig geeignet)?	? 20265,858 20171,698 20035,348
 Neubrandenburg: Hinterste Mühle - Stadt (Waldweg), wie geht es weiter?	? -78,126443 -112,126528 -62,126684 -96,126768 -231,126900 -428,127368 -493,127450 -671,127478
@@ -1532,6 +1529,8 @@ Hochfeilerweg: Qualität?	? 10170,2158 10108,2174 10043,2351 9973,2541 9993,2551 
 Schrobsdorffstr.: Ist die Straße durchgängig asphaltiert oder gibt es unbefestigte Abschnitte?	? 24102,8772 24156,8904 24207,9035 24261,9168 24315,9302 24360,9411 24404,9527
 #: XXX Eintrag von Reinhard Stenzel ohne Kommentierung:
 Fischer-Dieskau-Weg: Qualität? Für Radfahrer befahrbar?	? -151,2975 -81,2699
+#: XXX Eintrag von Reinhard Stenzel ("Q2") fraglich: die Straße führt laut luise-berlin nicht zum Königsweg
+Radolfzeller Weg: Qualität?	? -35,2434 -4,2413 23,2356
 #: XXX anonymous meint mäßiger Asphalt, stimmt das?
 Bismarckstr. (Spandau): Qualität?	? -3153,14868 -3360,14974 -3572,15082
 #: XXX anonymous meint Asphalt ohne weitere Angaben und erwähnt keine Einbahnstraße
@@ -1796,9 +1795,6 @@ Weiderichstr.: Qualität?	? 19744,5063 19814,5056 19838,5048 19901,5015
 Weiderichplatz: Qualität? Einbahnstraße?	? 19814,5056 19805,5025 19816,5015 19830,5019 19838,5048
 Silbergrasweg: Qualität? Existiert für Radfahrer eine Durchfahrt zur Oberspreestr.?	? 19686,4894 19760,4907 19858,4960 19901,5015 19926,5055 19940,5090
 Johanna-Tesch-Str.: Qualität?	? 19715,5185 19743,5271 19756,5313 19928,5365 20030,5334 19998,5226 19930,5247 19919,5214 19743,5271
-Hainstr.: Qualität?	? 18370,5511 18370,5647 18349,5744 18314,5825
-Fließstr.: Qualität?	? 18164,5701 18017,5783 17877,5860
-Flutstr.: Qualität?	? 18017,5783 17980,5721 17931,5695 17916,5675
 Allmersweg: Qualität?	? 17855,5236 17789,5189
 Greifstr.: Qualität?	? 17906,5170 17854,5131 17780,5086
 Am Grünen Anger: Qualität?	? 17854,5131 17959,4955 18031,4831
@@ -1917,12 +1913,10 @@ Karl-Ziegler-Str.: Qualität?	? 18951,3069 18766,3260 18634,3398
 Ernst-Lau-Str.: Qualität?	? 18766,3260 18651,3148 18546,3045
 #: XXX: anonymous meint "gute Qualität"
 Hangelsberger Gang: Qualität?	? 31186,4341 31258,4560 31311,4742
-Rudower Str.: Qualität?	? 21370,4442 21546,4457 21585,4459 21775,4470
-Adlershofer Str.: Qualität? Einbahnstraße? Wenn ja, in welche Richtung und auch für Radfahrer gültig?	? 21585,4459 21633,4355 21649,4111 21655,4091 21679,4059
 genauer Verlauf der Kurve?	? 2496,29450 2353,29471
 stimmt der Name? - dieser Straßenteil liegt in Hohen Neuendorf!	? 2229,30785 2254,30707 2317,30696
 Straße 3a: Qualität?	? 16689,3056 16740,3131 16793,3176
-Weg am Heidekampgraben - Kiefholzstr. (entlang der S-Bahn): Qualität (wahrscheinlich asphaltiert)?	? 15185,7234 15601,7340
+Weg am Heidekampgraben - Kiefholzstr. (entlang der S-Bahn): Qualität (wahrscheinlich asphaltiert)?	? 15185,7234 15379,7283 15601,7340
 Paplitzer Str.: Qualität zwischen Saalower Str. und Goltzstr.? Sind einige Abschnitte als Einbahnstraße ausgewiesen, und falls ja, gilt die Einbahnstraßenregelung auch für Radfahrer?	? 10735,-3142 10767,-3064 10783,-3033 10831,-2919 10884,-2795 10900,-2756 10927,-2687 10949,-2635 10989,-2543 11021,-2464 11027,-2448 11063,-2025
 Deutschtaler Str.: Qualität?	? 17344,1060 17492,843 17640,626 17811,374 17854,314 17946,179 18011,83 18077,-13 18230,-233
 Großziethen: wie weit in Richtung Süden gehen die Radwege?	? 13090,205 13225,-681 13309,-1268
@@ -2058,5 +2052,5 @@ Nelkenstr.: Qualität?	? 4210,4907 4274,4808
 Resedenstr.: Qualität?	? 4274,4808 4332,4819 4515,4966
 Irmfriedstr.: Qualität?	? 21737,13844 21758,13934 21764,13981 21766,13995 21794,14229 21814,14407 21822,14480
 Mettlacher Str.: Qualität?	? 21794,14229 21918,14219 22007,14209 22050,14212
-Kummerower Ring: Qualität?	? 22594,13408 22608,13442 22647,13545 22640,13619 22615,13734 22527,13708 22523,13680 22544,13602 22503,13489 22608,13442
 Am Nuthetal - Wetzlarer Str.: Weg entlang der Straßenbahnstrecke für Radfahrer vorhanden? Qualität?	? -9544,-3913 -9531,-3917 -9461,-3879 -9440,-3872 -9391,-3864 -9328,-3871 -9276,-3891 -9240,-3912 -9217,-3897 -9186,-3853 -9157,-3842 -9134,-3851 -9114,-3846 -9064,-3866 -9047,-3889
+Adlershofer Str.: Qualität?	? 21585,4459 21633,4355 21649,4111 21655,4091 21679,4059
