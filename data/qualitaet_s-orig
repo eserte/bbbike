@@ -2012,6 +2012,16 @@ Preußstr.: Asphalt	Q0 12327,15333 12367,15396
 Wisbyer Str. 9-11: Asphalt	Q0 11289,16423 11253,16296
 Niederlagstr.: mäßiger Asphalt	Q1 9926,12368 9972,12184
 Müncheberger Str.: mäßiger Asphalt, Bodenschwellen	Q1 12446,11983 12617,11888
+Theodorstr. (Tempelhof): Asphalt	Q0 9321,6079 9291,5908
+Kolonie Albrechtshöhe: wassergebundene Decke	Q1 10260,5953 9931,5985
+Wussowstr.: Asphalt	Q0 12798,5580 12702,5553
+Buschrosensteig: Asphalt	Q0 12812,5526 12986,5564
+Buschrosenplatz: Asphalt	Q0 13075,5470 13054,5556 13002,5548 12986,5564
+Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15211,4923 15245,4843 15364,4748 15548,4623 15797,4456
+Heideweg: Beton	Q1 15797,4456 15851,4424
+Heideweg: Asphalt	Q0 15851,4424 16234,4171
+Am Buckersberg: Schotter	Q2 16048,3978 16234,4171 16547,4590
+Am Buckersberg: zweispuriger Verbundsteinpflasterweg	Q1+ 16547,4590 16784,4913
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -2180,7 +2190,6 @@ Lobelienweg: Asphalt	Q0 21902,11055 21975,11089
 Nidecksteig: guter Asphalt	Q0 -8126,14740 -8099,14771 -8059,15014
 #: corrected_by: anonymous (vorher auch guter Asphalt wie der Rest der Straße)
 Nidecksteig: schlechter Sandweg	Q3 -8059,15014 -8041,15132
-Hippelstr.: guter Asphalt	Q0 12965,5653 12986,5564
 Hirtsieferzeile: guter Asphalt	Q0 15086,2856 15086,2881 15172,2971
 Kröpeliner Str.: guter Beton	Q0 18010,18648 17999,18540 18006,18525 18049,18471 18040,18448
 Neumagener Str.: guter Asphalt	Q0 14923,16914 14910,17010 14897,17093 14881,17209
@@ -4311,9 +4320,15 @@ Fritz-Reuter-Str.: guter Asphalt	Q0 24739,11968 24578,11928
 #: by: Jörg Rother:
 #: note: laut ADFC-Karte "gut geeignet"
 Tiniusstr.: guter Asphalt	Q0 12570,18351 11984,18650
-#: by: rainer Kühling:
+#: by: rainer Kühling: vvv
 #: note: laut radzeit 3/2006 ebenfalls asphaltiert worden
-Hannemannstr.: guter Asphalt	Q0 12789,5402 12841,5416 13011,5455 13075,5470 13158,5490 13265,5519 13441,5553 13646,5598
+Hannemannstr.: guter Asphalt	Q0 12789,5402 12841,5416 13011,5455 13075,5470
+#: corrected_by: srt (Asphalt -> Kopfsteinpflaster)
+Hannemannstr.: Kopfsteinpflaster	Q2 13075,5470 13158,5490
+Hannemannstr.: guter Asphalt	Q0 13158,5490 13265,5519
+#: corrected_by: srt (Asphalt -> Kopfsteinpflaster)
+Hannemannstr.: Kopfsteinpflaster	Q2 13265,5519 13441,5553 13646,5598
+#: by: ^^^
 #: by: Sabine Stock: vvv
 Brombeerweg - Murellenweg: Fußweg gepflastert/geteert	Q0 -1106,12539 -1084,12644
 Brombeerweg (Charlottenburg): gutes Verbundsteinpflaster	Q1 -1106,12539 -976,12608 -827,12669 -647,12754
@@ -4598,8 +4613,11 @@ Rosentreterpromenade: sehr grobes Kopfsteinpflaster, der Fußweg ist etwas besser
 #: by: ^^^
 #: by: Nicole Knaup:
 Rethelstr.: guter Asphalt	Q0 14739,8919 14676,8852 14619,8794
-#: by: Karin Ziebell:
-Holzmindener Str.: guter Asphalt	Q0 12205,5545 12256,5591 12490,5680 12632,5684 12702,5553 12773,5248
+#: by: Karin Ziebell: vvv
+#: corrected_by: srt (Asphalt -> Beton)
+Holzmindener Str.: guter Beton	Q0 12205,5545 12256,5591 12490,5680 12632,5684 12702,5553
+Holzmindener Str.: guter Asphalt	Q0 12702,5553 12773,5248
+#: by: ^^^
 #: by: Siegfried Heiber
 #: note: Zar3 widerspricht hier: mäßiges Verbundsteinpflaster
 Heinitzweg: guter Asphalt	Q0 10269,906 10220,1034 10329,1077
@@ -6631,8 +6649,11 @@ Lindenstr. (Schmöckwitz): gepflastert	Q1- 27022,-2761 26931,-2871
 Rothariweg: guter Asphalt	Q0 8292,6331 8290,6191 8291,6048
 #: by: Peter Heurich:
 Beiersdorfer Weg: Asphalt	Q0 30775,4318 30837,4521 30913,4766
-#: by: Hannes Ducke:
-Kinzerallee: gutes Kopfsteinpflaster	Q1 22090,5673 22154,5659 22236,5633 22375,5613
+#: by: Hannes Ducke: vvv
+Kinzerallee: gutes Kopfsteinpflaster	Q1 22090,5673 22154,5659 22236,5633
+#: corrected_by: srt (gutes Kopfsteinpflaster -> Kopfsteinpflaster)
+Kinzerallee: Kopfsteinpflaster	Q2 22236,5633 22375,5613
+#: by: ^^^
 #: by: alex (undstasi):
 Küselstr.: mäßiger Beton	Q1- 12299,15463 12221,15514 12158,15556 12094,15598 12058,15621
 #: by: rainer (scheunemann):
@@ -6727,7 +6748,8 @@ Asbestweg: guter Asphalt	Q0 11207,1737 11309,1718 11362,1723
 #: note: Martin Barghoorn hat in einem anderen Eintrag KS angegeben, aber gleichzeitig "nur Fußweg" eingetragen
 Lückhoffstr.: extremes Kopfsteinpflaster	Q3 -2847,2893 -3022,2696 -3162,2564 -3190,2467 -3211,2405
 #: by: Björn (baerchen):
-Marientaler Str. (Britz): mäßiges Kopfsteinpflaster	Q2 13716,5441 13919,5547
+#: corrected_by: srt (Q2 -> Q2-)
+Marientaler Str. (Britz): mäßiges Kopfsteinpflaster	Q2- 13716,5441 13919,5547
 #: by: Joachim Lührs:
 Homuthstr.: guter Asphalt	Q0 4979,7205 4983,7062
 #: by: Frauke Weiß:

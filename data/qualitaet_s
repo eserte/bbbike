@@ -1818,6 +1818,16 @@ Preußstr.: Asphalt	Q0 12327,15333 12367,15396
 Wisbyer Str. 9-11: Asphalt	Q0 11289,16423 11253,16296
 Niederlagstr.: mäßiger Asphalt	Q1 9926,12368 9972,12184
 Müncheberger Str.: mäßiger Asphalt, Bodenschwellen	Q1 12446,11983 12617,11888
+Theodorstr. (Tempelhof): Asphalt	Q0 9321,6079 9291,5908
+Kolonie Albrechtshöhe: wassergebundene Decke	Q1 10260,5953 9931,5985
+Wussowstr.: Asphalt	Q0 12798,5580 12702,5553
+Buschrosensteig: Asphalt	Q0 12812,5526 12986,5564
+Buschrosenplatz: Asphalt	Q0 13075,5470 13054,5556 13002,5548 12986,5564
+Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15211,4923 15245,4843 15364,4748 15548,4623 15797,4456
+Heideweg: Beton	Q1 15797,4456 15851,4424
+Heideweg: Asphalt	Q0 15851,4424 16234,4171
+Am Buckersberg: Schotter	Q2 16048,3978 16234,4171 16547,4590
+Am Buckersberg: zweispuriger Verbundsteinpflasterweg	Q1 16547,4590 16784,4913
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 364,4829 319,4906 168,5092 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2240,6904 2116,6861 2054,6840 1975,6818
@@ -1939,7 +1949,6 @@ Barkenhof: guter Asphalt	Q0 -1892,1732 -1921,1826
 Lobelienweg: Asphalt	Q0 21902,11055 21975,11089
 Nidecksteig: guter Asphalt	Q0 -8126,14740 -8099,14771 -8059,15014
 Nidecksteig: schlechter Sandweg	Q3 -8059,15014 -8041,15132
-Hippelstr.: guter Asphalt	Q0 12965,5653 12986,5564
 Hirtsieferzeile: guter Asphalt	Q0 15086,2856 15086,2881 15172,2971
 Kröpeliner Str.: guter Beton	Q0 18010,18648 17999,18540 18006,18525 18049,18471 18040,18448
 Neumagener Str.: guter Asphalt	Q0 14923,16914 14910,17010 14897,17093 14881,17209
@@ -3238,7 +3247,10 @@ An der Schule: guter Beton	Q0 24747,11929 24769,11819 24759,11666
 An der Schule: schlechter holpriger Sandweg	Q3 24759,11666 24760,11503 24815,11329 24822,11275
 Fritz-Reuter-Str.: guter Asphalt	Q0 24739,11968 24578,11928
 Tiniusstr.: guter Asphalt	Q0 12570,18351 11984,18650
-Hannemannstr.: guter Asphalt	Q0 12789,5402 12841,5416 13011,5455 13075,5470 13158,5490 13265,5519 13441,5553 13646,5598
+Hannemannstr.: guter Asphalt	Q0 12789,5402 12841,5416 13011,5455 13075,5470
+Hannemannstr.: Kopfsteinpflaster	Q2 13075,5470 13158,5490
+Hannemannstr.: guter Asphalt	Q0 13158,5490 13265,5519
+Hannemannstr.: Kopfsteinpflaster	Q2 13265,5519 13441,5553 13646,5598
 Brombeerweg - Murellenweg: Fußweg gepflastert/geteert	Q0 -1106,12539 -1084,12644
 Brombeerweg (Charlottenburg): gutes Verbundsteinpflaster	Q1 -1106,12539 -976,12608 -827,12669 -647,12754
 Brombeerweg (Charlottenburg): Trampelpfad	Q2 -617,12807 -647,12754
@@ -3381,7 +3393,8 @@ Am Packereigraben: gut befahrbar, eigene Radspur, fester Sand	Q1 4208,21159 3979
 Waldpark Steinberg: gut befahrbar, eigene Radspur, fester Sand	Q1 3979,21211 3718,21489 3624,21590 3545,21677
 Rosentreterpromenade: sehr grobes Kopfsteinpflaster, der Fußweg ist etwas besser befahrbar	Q2 4423,20848 4226,21133 4208,21159
 Rethelstr.: guter Asphalt	Q0 14739,8919 14676,8852 14619,8794
-Holzmindener Str.: guter Asphalt	Q0 12205,5545 12256,5591 12490,5680 12632,5684 12702,5553 12773,5248
+Holzmindener Str.: guter Beton	Q0 12205,5545 12256,5591 12490,5680 12632,5684 12702,5553
+Holzmindener Str.: guter Asphalt	Q0 12702,5553 12773,5248
 Heinitzweg: guter Asphalt	Q0 10269,906 10220,1034 10329,1077
 Otto-Nagel-Str.: guter Asphalt	Q0 20364,12216 20387,12445 20414,12663 20435,12869 20446,12941 20482,13241 20508,13497 20532,13708 20536,13741 20540,13773 20565,13976
 Blesener Zeile - Am Nordgraben: fester Sandweg	Q1 3395,20660 3458,20671 3470,20683
@@ -4418,7 +4431,8 @@ Bogenstr. (Hessenwinkel): Asphalt	Q0 32334,2224 32268,2229 32203,2254 32142,2304
 Lindenstr. (Schmöckwitz): gepflastert	Q1 27022,-2761 26931,-2871
 Rothariweg: guter Asphalt	Q0 8292,6331 8290,6191 8291,6048
 Beiersdorfer Weg: Asphalt	Q0 30775,4318 30837,4521 30913,4766
-Kinzerallee: gutes Kopfsteinpflaster	Q1 22090,5673 22154,5659 22236,5633 22375,5613
+Kinzerallee: gutes Kopfsteinpflaster	Q1 22090,5673 22154,5659 22236,5633
+Kinzerallee: Kopfsteinpflaster	Q2 22236,5633 22375,5613
 Küselstr.: mäßiger Beton	Q1 12299,15463 12221,15514 12158,15556 12094,15598 12058,15621
 Habsheimer Str.: Beton	Q0 22032,10150 21939,10179 21868,10202 21825,10198 21679,10186 21619,10181
 Korkedamm: guter Asphalt	Q0 19244,2141 19296,2257 19327,2288 19375,2341 19654,2325 19962,2277 20100,2247

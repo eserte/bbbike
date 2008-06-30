@@ -1491,8 +1491,8 @@ EOF
        text  => 'Späthstraße (Treptow) In beiden Richtungen zwischen A113 und Königsheideweg Störungen durch geplatzte Wasserleitung, Straße gesperrt (bis 28.02.2005) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 14687,5215 14994,5193
-userdel	2 14994,5193 15174,5463
+userdel	2 14694,5230 14744,5211 14988,5214
+userdel	2 14988,5214 15038,5235 15174,5463
 userdel	2 15174,5463 15382,5687
 EOF
      },
@@ -2733,7 +2733,7 @@ EOF
        text  => 'B 198 Günterberg-Gramzow bei Schmiedeberg, Brücke über Mühlengraben Brückenersatzneubau Vollsperrung 15.09.2005-15.03.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 46677,82770 47081,83093
+userdel	2 46661,82722 46743,82844 47081,83093
 userdel	2 47081,83093 47137,83456
 EOF
      },
@@ -3341,7 +3341,7 @@ EOF
        text  => 'B 198 Greiffenberger Str. OD Kerkow grundhafter Straßenbau Vollsperrung * 17.10.2005-30.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 48929,70947 48996,71176
+userdel	q4 48929,70947 48982,71121 48996,71176
 EOF
      },
      { from  => 1127599200, # 2005-09-25 00:00
@@ -3873,7 +3873,7 @@ EOF
        text  => 'B 198 OD Kerkow Greiffenbg.Str. Kerkow Neubau Straße Vollsperrung 22.03.2006-31.05.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 48929,70947 48996,71176
+userdel	q4 48929,70947 48982,71121 48996,71176
 EOF
      },
      { from  => 1143575024, # 2006-03-28 21:43
@@ -3924,7 +3924,7 @@ EOF
        text  => 'B 198 bei Schmiedeberg Neubau Brücke Vollsperrung 16.03.2006-30.06.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 46677,82770 47081,83093
+userdel	2 46661,82722 46743,82844 47081,83093
 EOF
      },
      { from  => 1133046000, # 2005-11-27 00:00
@@ -6371,7 +6371,7 @@ EOF
        text  => 'B 198 Polßen-Gramzow zw. Meichow und Neumeichow Straßeninstandsetzung Vollsperrung 16.10.2006-20.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 48676,87452 48856,87456 49525,88337
+userdel	2::inwork 48624,87416 48856,87456 49112,87743 49525,88337
 EOF
      },
      { from  => 1161468000, # 2006-10-22 00:00
@@ -6379,7 +6379,7 @@ EOF
        text  => 'B 198 Polßen-Gramzow zw. Neimeichow und B166 OL Gramzow grundhafter Ausbau Vollsperrung 23.10.2006-30.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 49525,88337 49932,88969 49930,89857
+userdel	2::inwork 49525,88337 49743,88576 49932,88969 49930,89857
 EOF
      },
      { from  => 1162249200, # 2006-10-31 00:00
