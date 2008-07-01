@@ -335,7 +335,7 @@ Delphinstr.: guter Asphalt, Q1	? 14555,6936 14686,7070
 #: by: Wilde (thwila) 
 Schwarzkoppenstr.: Beton, Q0	? 19823,357 19937,246
 #: by: Doreen Platz 
-Oehlertplatz: Asphalt, Q0	? 6871,5328 6900,5309 6940,5314 6943,5351 6921,5360 6890,5357
+Oehlertplatz: Asphalt, Q0	? 6892,5330 6932,5311 6950,5320 6951,5338 6939,5352 6896,5347
 #: by: Anke Terzer und Kati13125
 #: note: anonymous meint "mäßiger Asphalt"
 Nettestr.: Asphalt, Q0	? 14307,22262 14464,22485
@@ -1374,8 +1374,6 @@ Hoffmannstr. (Adlershof): Qualität?	? 20280,3996 20467,4122 20623,4227
 Grieben - Vielitz: Qualität?	? -14966,56468 -15237,56681 -15453,56959 -15676,57044 -15819,57248 -15984,57315 -16206,57373 -16608,57867 -16755,57921 -16860,58002
 Vielitz - B167: Qualität?	? -16206,57373 -16069,57172 -15773,56724 -15697,55703 -15581,55353 -15335,54980 -15127,54664
 Salzmannstr. - Betriebsbhf. Rummelsburg: existiert eine für Radfahrer befahrbare Verbindung? Qualität?	? 16847,10092 16839,10064 16828,10027 16841,9995 16811,9937
-#: XXX: by Ilka "Kopfsteinpflaster, alte Bahngleise, Q3". Aber wo genau?
-Hönower Wiesenweg: Qualität? Teile für den Autoverkehr gesperrt? Teile komplett gesperrt (Bahngelände)?	? 17852,8155 17803,8203 17751,8284 17708,8316 17624,8353 17554,8458 17483,8644 17416,8767 17375,8847 17335,8971 17308,9090 17271,9159
 Kraatzgraben/Kleingärten: besteht hier ein befahrbarer Weg für Radfahrer? Qualität?	? 16839,10064 16666,10219 16464,10467 16297,10636 16246,10641 16187,10587
 Dubrowplatz: Qualität (wahrscheinlich schlechtes Kopfsteinpflaster)? Hat der Dubrowplatz auch eine nördliche Fahrbahn?	? -1945,2975 -1814,3021
 Ilsensteinweg: Qualität?	? -1885,3319 -1899,3298 -1819,3042 -1814,3021 -1724,2743 -1622,2426
@@ -1740,6 +1738,7 @@ Didostr.: Qualität?	? 10176,4376 10178,4477 10183,4583
 Äneasstr.: Qualität?	? 10178,4477 10257,4471 10270,4571
 Schwalbenweg: Qualität?	? 9382,4826 9507,4838
 Finkenweg: Qualität?	? 9360,4996 9482,5012
+Finkenweg - Mariendorfer Damm: Für Radfahrer offen? Qualität? Kann der Mariendorfer Damm in Höhe Finkenweg überquert werden?	? 9360,4996 9239,4980
 Gajusstr.: Qualität?	? 10929,4442 10931,4521
 Am Hellespont: Qualität?	? 10879,4358 10869,4233
 Tacitusstr.: Qualität?	? 11092,4433 11115,4430 11215,4521
@@ -1940,7 +1939,7 @@ Rügenwalder Weg: Qualität, wahrscheinlich Beton mit Wurzelschäden, vielleicht sc
 Straße zwischen Wissenschaftspark Golm und Universität Potsdam: wo genau verläuft diese Straße?	? -18849,301 -18624,99
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20080325.1450.96925.html
 Elkartstr.: führt der Radweg Berlin-Kopenhagen hier entlang?	? -2158,17613 -2119,17647 -2103,17670 -2102,17714
-Am Plänterwald: Qualität zwischen Orionstr. und Köpenicker Landstraße?	? 15543,8525 15443,8458 15303,8343
+Am Plänterwald: Qualität zwischen Orionstr. und Köpenicker Landstraße?	? 15543,8525 15499,8496 15443,8458 15303,8343
 Güldenhofer Ufer: Qualität zwischen Scheiblerstr. und Glanzstr.?	? 16630,6800 16588,6724
 Straße 265: Qualität? Für Autos gesperrt?	? -4751,9033 -4771,9033 -5638,9465 -6306,9794 -6324,9778
 Ascherberger Weg: Qualität?	? 1411,18447 1448,18436 1501,18429 1510,18429 1557,18421 1603,18418 1612,18417 1686,18419 1758,18421 1831,18424 1903,18429 1975,18431 2162,18452 2244,18465
@@ -2051,3 +2050,34 @@ Adlershofer Str.: Qualität?	? 21585,4459 21633,4355 21649,4111 21655,4091 21679,
 #: XXX: anonymous meinte Asphalt, Q0, aber mir war so, als ob da Kopfsteinpflaster war?!
 Hippelstr.: Qualität	? 12965,5653 12986,5564
 Mündeseerundweg: Qualität? Wie geht's weiter Richtung Südosten?	? 50403,70708 50497,70796 50594,70755 50678,70738 50758,70752 50871,70761 50974,70635 51004,70617 51078,70609 51223,70542 51343,70458 51421,70384 51551,70236 51732,69987
+Deitmerstr.: Qualität? Können Radfahrer zur Schloßstr. gelangen und den dortigen Mittelstreifen überqueren?	? 5191,5826 5078,5889 5048,5904
+Hermesweg: Qualität?	? 6116,4707 6072,4606
+Gurlittstr.: Qualität?	? 7213,5062 6949,5096
+Oehlertring: Qualität?	? 7238,5171 7018,5201 6925,5215 6885,5237 6868,5262 6865,5311 6892,5330 6896,5347 6882,5389 6889,5431 6922,5449 7157,5418 7290,5399
+Kottesteig: Qualität? Für Autofahrer gesperrt? Kann der Munsterdamm in Höhe Kottesteig überquert werden?	? 6868,5262 6806,5230 6767,5233
+Kelchstr.: Qualität?	? 7386,4692 7424,4821 7437,4855 7456,4934
+Doldenweg: Qualität? Für Autofahrer gesperrt?	? 7424,4821 7487,4802
+Zwillingestr.: Qualität?	? 14620,6876 14555,6936 14531,6959
+Siriusstr.: Qualität?	? 14751,7007 14686,7070
+Heinrich-Schlusnus-Str.: Qualität?	? 15026,6391 15056,6431 15054,6526 15054,6589 15070,6621 15146,6690
+Joseph-Schmidt-Str.: Qualität?	? 15260,6310 15255,6531 15275,6554
+Leo-Slezak-Str.: Qualität?	? 15054,6526 15153,6526 15158,6313
+Drosselbartstr.: Qualität?	? 15188,6908 15024,7083 14951,7163
+Rübezahlstr.: Wie ist die Qualität der Straße? Gibt es hier eine Einbahnstraßenregelung, und wenn ja, gilt sie für die gesamte Straße oder nur einen Teilabschnitt und gilt sie auch für Radfahrer?	? 15024,7083 15058,7115 15115,7128 15136,7106 15222,7162
+Wegastr.: Qualität? Einbahnstraße, auch für Radfahrer?	? 15222,7162 15175,7221
+Gretelstr.: Qualität?	? 15136,7106 15178,7065 15250,6970
+Nernstweg: Qualität? Ist die Zufahrt zur Dieselstr. für Autofahrer gesperrt?	? 14652,7507 14782,7638 14798,7747 14796,7801 14766,7903 14777,7921
+Hans-Thoma-Str.: Qualität?	? 14443,9233 14327,9117
+Schwindstr.: Qualität?	? 14733,8688 14793,8623
+Bergaustr.: Qualität?	? 15348,7882 15464,7757 15576,7636 15696,7507
+Pappelallee (Treptow): Qualität? Ist die Zufahrt zur Straße "Am Plänterwald" für Autofahrer möglich?	? 15383,8662 15471,8533 15499,8496
+Platanenweg: Qualität?	? 15968,7739 15840,7876 15717,8011
+Dammweg: Ist der (gesamte) Dammweg eine Vorfahrtsstraße?	? 14617,7243 14708,7325 14758,7373 14775,7385 14853,7451 14992,7578 15229,7785 15348,7882 15429,7948 15447,7965 15561,8072 15698,8191 15758,8243 15874,8345
+Lakegrund: Qualität? Für Autos gesperrt? Kann die Köpenicker Landstraße in Höhe Lakegrund überquert werden?	? 16397,7429 16195,7398
+Eschenbachstr.: Qualität?	? 16290,7160 16375,7070
+Stormstr.: Qualität?	? 16323,6998 16234,7100
+Elbeweg: Qualität? Für Autofahrer gesperrt?	? 17211,7265 17135,7223 17061,7323 16949,7484 16934,7570 16902,7652 16869,7713
+Otto-Krüger-Zeile: Qualität?	? 17453,7136 17484,7087 17552,6959 17574,6908
+#: XXX nur dreimal bei einer Googlesuche erwähnt!
+Kuhnheimstr.: Qualität? Existiert dieser Straßenname tatsächlich?	? 17514,6754 17418,6702
+Fuststr.: Qualität?	? 17934,7029 17743,7328

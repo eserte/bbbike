@@ -66,7 +66,7 @@ Weserstr.	1 12074,9217 11993,9211 11888,9203
 Friedenstr.	1 12325,13148 12386,13085
 Fasanenstr.	1 5223,9810 5209,9978
 Kopfstr.	1 12478,7878 12327,7847 12220,7822 12176,7811 12041,7788
-Am Treptower Park	1 15166,8489 15079,8575 15070,8584 15002,8651 14934,8717 14852,8799 14739,8919 14614,9052 14563,9106 14529,9141 14382,9299 14242,9448 14179,9515 14089,9610
+Am Treptower Park	1 15166,8489 15079,8575 15070,8584 15002,8651 14934,8717 14852,8799 14739,8919 14614,9052 14563,9106 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
 Hagelberger - Yorck	3nocross::ignrte 8595,9495 8648,9526 8777,9601
 Hagelberger Str. -> Yorckstr.: Hagelberger - Yorck	3::igndisp 8773,9524 8648,9526 8595,9495
 Yorckstr. -> Hagelberger Str.: Hagelberger - Yorck	3::igndisp 8777,9601 8648,9526 8773,9524
@@ -444,8 +444,8 @@ Gregor-Mendel-Str. (Potsdam)	1 -13596,-508 -13415,-506 -13257,-512 -13182,-515
 Reinhardtstr. - Luisenstr.	3 8671,12945 8715,12956 8726,12861
 Donaustr.	1 12150,8891 12202,8895
 Altstadt Köpenick: nur für Busse frei	2 22381,4752 22383,4703
-Mittelstreifen	3nocross::ignrte 16428,7144 16353,7226 15920,7697
-Trojanstr. -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16290,7160 16353,7226 15920,7697
+Mittelstreifen	3nocross::ignrte 16428,7144 16353,7226 16195,7398 15920,7697
+Trojanstr. -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16290,7160 16353,7226 16195,7398
 Köpenicker Landstr. -> Trojanstr.: Mittelstreifen	3::igndisp 16428,7144 16353,7226 16290,7160
 Straßenbahntrasse	3nocross::ignrte 14809,16525 15134,16499 15388,16502
 Sulzfelder Str. -> Buschallee: Straßenbahntrasse	3::igndisp 15120,16349 15134,16499 14809,16525
@@ -647,3 +647,5 @@ Mittelstreifen	3nocross::ignrte 13151,14855 13110,14879 12812,15053
 Einsteinstr. -> Storkower Str.: Mittelstreifen	3::igndisp 13143,14935 13110,14879 13151,14855
 Storkower Str. -> Einsteinstr.: Mittelstreifen	3::igndisp 12812,15053 13110,14879 13143,14935
 Hönower Wiesenweg: nur für Anlieger und Radfahrer offen	2 17375,8847 17416,8767 17483,8644 17554,8458 17624,8353 17708,8316 17751,8284
+Mittelstreifen	3nocross::ignrte 6787,5459 6767,5233 6747,5010
+Mittelstreifen	3nocross::ignrte 9248,4904 9239,4980 9213,5187

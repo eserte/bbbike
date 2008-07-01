@@ -575,7 +575,7 @@ Gramzow (Dorfstr.?)	1s 49779,90206 49841,90479
 Billerbecker Weg	1s 1230,18698 1229,18750
 Alt-Tegel	1s 1668,20156 1753,20191 1907,20265
 Alt-Tegel	1s 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
-Am Treptower Park	1s 14529,9141 14382,9299 14242,9448 14179,9515 14089,9610
+Am Treptower Park	1s 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
 Groebenufer	1s 13206,10651 13077,10747
 Jahnstr. (KW)	1s 26243,-12300 26028,-12312
 Seestr. (Potsdam)	1s -11581,559 -11584,452
@@ -589,6 +589,7 @@ Behrenstr./Bebelplatz	1s 9801,12245 9743,12239 9700,12234 9626,12227
 Mittelstreifen	3nocross::ignrte 16713,6839 16674,6885 16568,7009
 Köpenicker Landstr. -> Güldenhofer Ufer: Mittelstreifen	3::igndisp 16713,6839 16674,6885 16630,6800
 Güldenhofer Ufer -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16630,6800 16674,6885 16568,7009
+Straßenbahn	3nocross::ignrte 18003,7144 17934,7029 17925,6976
 Mittelstreifen	3nocross::ignrte -5039,15618 -5154,15651 -5473,15742
 Falkenseer Chaussee -> Remscheider Str.: Mittelstreifen	3::igndisp -5039,15618 -5154,15651 -5192,15517
 Remscheider Str. -> Falkenseer Chaussee: Mittelstreifen	3::igndisp -5192,15517 -5154,15651 -5473,15742
@@ -732,10 +733,10 @@ Straßenbahntrasse	3nocross::ignrte 24120,14526 24097,14575 24020,14737
 Heidenauer Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24146,14594 24097,14575 24120,14526
 Riesaer Str. -> Heidenauer Str.: Straßenbahntrasse	3::igndisp 24020,14737 24097,14575 24146,14594
 wegen Überführung nicht überquerbar	3nocross::ignrte 17527,7812 17686,7589 17839,7365 18003,7144
-Rummelsburger Str. -> Wattstr.: wegen Überführung nicht überquerbar	3::igndisp 17839,7365 17686,7589 17633,7286
-Wattstr. -> Rummelsburger Str.: wegen Überführung nicht überquerbar	3::igndisp 17633,7286 17686,7589 17527,7812
-Rummelsburger Str. -> Mentelinstr.: wegen Überführung nicht überquerbar	3::igndisp 18003,7144 17839,7365 17633,7286
-Mentelinstr. -> Rummelsburger Str.: wegen Überführung nicht überquerbar	3::igndisp 17633,7286 17839,7365 17686,7589
+Wattstr. -> Rummelsburger Str.: wegen Überführung nicht überquerbar	3::igndisp 17647,7280 17686,7589 17527,7812
+Rummelsburger Str. -> Wattstr.: wegen Überführung nicht überquerbar	3::igndisp 17839,7365 17686,7589 17647,7280
+Mentelinstr. -> Rummelsburger Str.: wegen Überführung nicht überquerbar	3::igndisp 17743,7328 17839,7365 17686,7589
+Rummelsburger Str. -> Mentelinstr.: wegen Überführung nicht überquerbar	3::igndisp 18003,7144 17839,7365 17743,7328
 Mittelstreifen nicht passierbar	3nocross::ignrte 4469,8037 4659,7982 4793,7992
 Detmolder Str. -> Aachener Str.: Mittelstreifen nicht passierbar	3::igndisp 4572,7936 4659,7982 4609,8013
 Aachener Str. -> Detmolder Str.: Mittelstreifen nicht passierbar	3::igndisp 4609,8013 4659,7982 4793,7992
