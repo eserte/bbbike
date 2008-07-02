@@ -509,7 +509,7 @@ EOF
        text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Londoner Str. und Transvaalstr. Veranstaltung, Straße vollständig gesperrt (bis 17.07.2005 24 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 6019,16712 5791,16910
+userdel	2 6019,16712 5777,16924
 userdel	2 6019,16712 6110,16630
 userdel	2 6110,16630 6208,16546 6311,16457
 EOF
@@ -1839,7 +1839,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_77420',
        data  => <<EOF,
-userdel	q4; 15838,14319 15897,13942 15896,13547
+userdel	q4; 15838,14319 15871,14106 15897,13942 15896,13594 15896,13547
 EOF
      },
      { from  => 1114466400, # 2005-04-26 00:00
@@ -2950,7 +2950,7 @@ EOF
        text  => 'Drakestraße zwischen Hans-Sachs-Straße und Knesebeckstraße in beiden Richtungen Brückenabriss, Straße gesperrt, Dauer: 12.10.2005 02:00 Uhr bis 14.10.2005 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 3259,4002 3228,4046 3128,4190
+userdel	2 3259,4002 3228,4046 3214,4066 3151,4160 3142,4173
 EOF
      },
      { from  => 1128808800, # 2005-10-09 00:00
@@ -3466,7 +3466,7 @@ EOF
        text  => 'Tietzenweg zwischen Margaretenstraße und Unter den Eichen, Baustelle, Straße gesperrt. Dauer: 12.12.2005 bis 20.01.2006,18.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 3490,4449 3425,4541
+userdel	2 3501,4435 3425,4541
 EOF
      },
      { from  => 1134428400, # 2005-12-13 00:00
@@ -4618,7 +4618,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_83663',
        data  => <<EOF,
-userdel	2::inwork 5791,16910 6042,17189 6118,17327 6154,17438
+userdel	2::inwork 5777,16924 6042,17189 6118,17327 6154,17438
 EOF
      },
      { from  => 1149976800, # 2006-06-11 00:00
@@ -6397,7 +6397,7 @@ EOF
        source_id => 'IM_003850',
        data  => <<EOF,
 userdel	q4::temp 8481,16136 8582,16052 8437,15894 8271,15734
-userdel	q4::temp 8437,15894 8278,16043 8236,16071
+userdel	q4::temp 8437,15894 8338,15987 8278,16043 8236,16071
 EOF
      },
      { from  => 1161326842, # 2006-10-20 08:47
@@ -8397,7 +8397,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005655',
        data  => <<EOF,
-userdel	2::temp 6311,16457 6208,16546 6110,16630 6019,16712 5791,16910
+userdel	2::temp 6311,16457 6208,16546 6110,16630 6019,16712 5777,16924
 EOF
      },
      { from  => 1180783165, # 2007-06-02 13:19
@@ -8441,7 +8441,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_86792',
        data  => <<EOF,
-userdel	2::inwork 3048,4305 3128,4190 3228,4046 3259,4002
+userdel	2::inwork 3048,4305 3142,4173 3151,4160 3214,4066 3228,4046 3259,4002
 EOF
      },
      { from  => 1181253600, # 2007-06-08 00:00
@@ -8711,7 +8711,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005823',
        data  => <<EOF,
-userdel	2::inwork 3048,4305 3128,4190 3228,4046 3259,4002
+userdel	2::inwork 3048,4305 3142,4173 3151,4160 3214,4066 3228,4046 3259,4002
 EOF
      },
      { from  => undef, # 
@@ -9210,7 +9210,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005823',
        data  => <<EOF,
-userdel	2::inwork 3048,4305 3128,4190 3228,4046 3259,4002
+userdel	2::inwork 3048,4305 3142,4173 3151,4160 3214,4066 3228,4046 3259,4002
 EOF
      },
      { from  => 1185833871, # 2007-07-31 00:17
@@ -9490,7 +9490,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_006754', # IM_005516
        data  => <<EOF,
-userdel	q4::inwork 3048,4305 3128,4190 3228,4046
+userdel	q4::inwork 3048,4305 3142,4173 3151,4160 3214,4066 3228,4046
 EOF
      },
      { from  => 1187989232, # 2007-08-24 23:00
@@ -10108,7 +10108,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006754',
        data  => <<EOF,
-userdel	2::inwork 3228,4046 3128,4190
+userdel	2::inwork 3228,4046 3214,4066 3151,4160 3142,4173
 EOF
      },
      { from  => 1192140000, # 2007-10-12 00:00
@@ -11468,7 +11468,7 @@ userdel	2::inwork 54299,7265 55908,9038
 EOF
      },
      { from  => 1210543200, # 2008-05-12 00:00
-       until => 1217541600, # 2008-08-01 00:00
+       until => 1215030582, # 2008-08-01 00:00 1217541600
        text  => 'L 023 Strausberg - B168 - Eberswalde Abzw. Tiefensee-Prötzel aus Ri. Gielsdorf Deckenerneuerung Vollsperrung 13.05.2008-31.07.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -11550,8 +11550,8 @@ userdel	2::inwork 58237,11268 58056,11318
 userdel	2::inwork 33475,10842 32900,10962 31871,10926 30678,10923
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1215030350, # 
+       until => 1215030354, # XXX
        text  => 'Gersdorfstr. (Tempelhof) in beiden Richtungen zwischen Kurfürstenstr. und Kaiserstr. Baustelle, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_009134',
@@ -11658,9 +11658,9 @@ EOF
 userdel	2::inwork -63533,72983 -63431,73201 -63417,73223 -63329,73307 -63286,73362
 EOF
      },
-     { from  => 1212271200, # 2008-06-01 00:00
+     { from  => 1214690400, # 2008-06-29 00:00
        until => 1217023200, # 2008-07-26 00:00
-       text  => 'L 338 Schöneiche - Hönow OD Neuenhagen, zw. BÜ und Jahnstr. Einbau von Querungshilfen Vollsperrung 02.06.2008-25.07.2008 ',
+       text  => 'L 338 Schöneiche - Hönow OD Neuenhagen, zw. BÜ und Eisenbahnstr. Straßenbau Vollsperrung 30.06.2008-25.07.2008 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 30795,13191 30179,13667
@@ -11806,6 +11806,48 @@ userdel auto	3 8804,12280 8861,12125 8901,12008
 userdel auto	3 7291,10506 7037,10359 6729,10212
 userdel auto	3 7291,10506 7037,10359 7060,10221
 userdel auto	3 7291,10506 7037,10359 7003,10513
+EOF
+     },
+     { from  => 1215030238, # 2008-07-02 22:23
+       until => 1217541599, # 2008-07-31 23:59
+       text  => 'An der Spandauer Brücke (Mitte) Richtung Spandauer Str. zwischen Rosenthaler Str. und Spandauer Str. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Ende 07.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_009262',
+       data  => <<EOF,
+userdel	1::inwork 10294,13070 10336,13037 10371,13006 10342,12936 10309,12854
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Tempelhofer Damm (Tempelhof) stadtauswärts zwischen AS Tempelhofer Damm und Ringbahnstr. Straßenschäden, Fahrtrichtung gesperrt, Radfahrer können unter Umständen passieren',
+       type  => 'handicap',
+       source_id => 'IM_009276',
+       data  => <<EOF,
+userdel	q4::inwork; 9235,7146 9237,7045 9242,6962
+EOF
+     },
+     { from  => 1216159200, # 2008-07-16 00:00
+       until => 1216764000, # 2008-07-23 00:00
+       text  => 'B 101 Weststr. OD Elsterwerda, zw. Thiemigstr. und Netto Umverlegung Versorgungsleit. Vollsperrung 17.07.2008-22.07.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 20504,-105143 20635,-105714
+EOF
+     },
+     { from  => 1215900000, # 2008-07-13 00:00
+       until => 1219442400, # 2008-08-23 00:00
+       text  => 'K 6160 Chausseestr. OD Wildau, zw. KVK und Am Kleingewerbegebiet Bau Kreisverkehr halbseitig gesperrt; Einbahnstraße 14.07.2008-22.08.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 25140,-9125 24478,-9578
+EOF
+     },
+     { from  => 1216332000, # 2008-07-18 00:00
+       until => 1216591200, # 2008-07-21 00:00
+       text  => 'L 060 Langennaundorf - Falkenberg OD Uebigau, Marktbereich Historische Nacht Vollsperrung 19.07.2008-20.07.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 5148,-90524 5358,-90502 5798,-90075
 EOF
      },
     );

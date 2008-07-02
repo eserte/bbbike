@@ -546,15 +546,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1214863200,
-         'text' => 'L 315 Prenden-Klosterfelde OD Klosterfelde grundhafter Straßenbau Vollsperrung 04.10.2007-30.06.2008 ',
-         'from' => 1191362400,
-         'id' => 1190,
-         'data' => 'userdel	q4::inwork 14941,42957 15632,43100 15783,43227 16258,43457
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -765,15 +757,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1214863200,
-         'text' => 'L 029 Oderberg-Liepe OD Oderberg Straßenbauarbeiten Vollsperrung 17.03.2008-30.06.2008 ',
-         'from' => 1205622000,
-         'id' => 1310,
-         'data' => 'userdel	q4::inwork 52671,51846 51496,51542
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -957,15 +941,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1217541600,
-         'text' => 'L 023 Strausberg - B168 - Eberswalde Abzw. Tiefensee-Prötzel aus Ri. Gielsdorf Deckenerneuerung Vollsperrung 13.05.2008-31.07.2008 ',
-         'from' => 1210543200,
-         'id' => 1362,
-         'data' => 'userdel	2::inwork 41300,28061 41326,28975
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -981,26 +957,9 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1214863200,
-         'text' => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, ab A.-Bebel-Str. in Ri. Erkner Straßenbau, Entwässerung Vollsperrung 21.05.2008-30.06.2008 ',
-         'from' => 1211234400,
-         'id' => 1370,
-         'data' => 'userdel	q4::inwork 34511,4787 34574,4552
-',
-         'type' => 'handicap'
-       },
        undef,
-       {
-         'source_id' => 'IM_009134',
-         'until' => undef,
-         'text' => 'Gersdorfstr. (Tempelhof) in beiden Richtungen zwischen Kurfürstenstr. und Kaiserstr. Baustelle, Straße vollständig gesperrt',
-         'from' => undef,
-         'id' => 1372,
-         'data' => 'userdel	2::inwork 8318,4558 8418,4432 8496,4331
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_009127',
          'until' => undef,
@@ -1022,15 +981,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1214863200,
-         'text' => 'B 112 Lebus - Manschnow OD Rathstock Erneuerung Durchlass Vollsperrung 16.06.2008-30.06.2008 ',
-         'from' => 1213480800,
-         'id' => 1376,
-         'data' => 'userdel	2::inwork 87843,13999 87889,14339
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1229727600,
@@ -1081,8 +1032,8 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        {
          'until' => 1217023200,
-         'text' => 'L 338 Schöneiche - Hönow OD Neuenhagen, zw. BÜ und Jahnstr. Einbau von Querungshilfen Vollsperrung 02.06.2008-25.07.2008 ',
-         'from' => 1212271200,
+         'text' => 'L 338 Schöneiche - Hönow OD Neuenhagen, zw. BÜ und Eisenbahnstr. Straßenbau Vollsperrung 30.06.2008-25.07.2008 ',
+         'from' => 1214690400,
          'id' => 1385,
          'data' => 'userdel	q4::inwork 30795,13191 30179,13667
 ',
@@ -1118,25 +1069,54 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
+       undef,
+       undef,
        {
-         'until' => 1215028800,
-         'text' => 'Fanmeile, Straße des 17. Juni gesperrt, bis 2.7.2008 ',
-         'from' => 1214430640,
-         'id' => 1391,
-         'data' => 'userdel	2::temp 8063,12182 8089,12186 8214,12205 8215,12156 8222,11881
-userdel	2::temp 8214,12205 8515,12242 8522,12187
-userdel	2::temp 7383,12095 7816,12150 8063,12182 8048,12135 8034,12093
-userdel	2::temp 8515,12242 8490,12192 8215,12156 8107,12145 8048,12135 8018,12131 7827,12105 7460,12054
-userdel	2::temp 8089,12041 8107,12145
-userdel	2::temp 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
-userdel auto	3 8539,12286 8515,12242 8600,12165
-userdel auto	3 8539,12286 8515,12242 8610,12254
-userdel auto	3 8600,12165 8515,12242 8539,12286
-userdel auto	3 8600,12165 8515,12242 8610,12254
-userdel auto	3 8610,12254 8515,12242 8539,12286
-userdel auto	3 8610,12254 8515,12242 8600,12165
+         'source_id' => 'IM_009262',
+         'until' => 1217541599,
+         'text' => 'An der Spandauer Brücke (Mitte) Richtung Spandauer Str. zwischen Rosenthaler Str. und Spandauer Str. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Ende 07.2008)',
+         'from' => 1215030238,
+         'id' => 1393,
+         'data' => 'userdel	1::inwork 10294,13070 10336,13037 10371,13006 10342,12936 10309,12854
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009276',
+         'until' => undef,
+         'text' => 'Tempelhofer Damm (Tempelhof) stadtauswärts zwischen AS Tempelhofer Damm und Ringbahnstr. Straßenschäden, Fahrtrichtung gesperrt, Radfahrer können unter Umständen passieren',
+         'from' => undef,
+         'id' => 1394,
+         'data' => 'userdel	q4::inwork; 9235,7146 9237,7045 9242,6962
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1216764000,
+         'text' => 'B 101 Weststr. OD Elsterwerda, zw. Thiemigstr. und Netto Umverlegung Versorgungsleit. Vollsperrung 17.07.2008-22.07.2008 ',
+         'from' => 1216159200,
+         'id' => 1395,
+         'data' => 'userdel	q4::inwork 20504,-105143 20635,-105714
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1219442400,
+         'text' => 'K 6160 Chausseestr. OD Wildau, zw. KVK und Am Kleingewerbegebiet Bau Kreisverkehr halbseitig gesperrt; Einbahnstraße 14.07.2008-22.08.2008 ',
+         'from' => 1215900000,
+         'id' => 1396,
+         'data' => 'userdel	q4::inwork; 25140,-9125 24478,-9578
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1216591200,
+         'text' => 'L 060 Langennaundorf - Falkenberg OD Uebigau, Marktbereich Historische Nacht Vollsperrung 19.07.2008-20.07.2008 ',
+         'from' => 1216332000,
+         'id' => 1397,
+         'data' => 'userdel	q4::inwork 5148,-90524 5358,-90502 5798,-90075
+',
+         'type' => 'handicap'
        }
      
 );

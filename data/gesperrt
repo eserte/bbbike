@@ -589,6 +589,9 @@ Behrenstr./Bebelplatz	1s 9801,12245 9743,12239 9700,12234 9626,12227
 Mittelstreifen	3nocross::ignrte 16713,6839 16674,6885 16568,7009
 Köpenicker Landstr. -> Güldenhofer Ufer: Mittelstreifen	3::igndisp 16713,6839 16674,6885 16630,6800
 Güldenhofer Ufer -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16630,6800 16674,6885 16568,7009
+Mittelstreifen	3nocross::ignrte 7263,4281 7310,4308 7368,4342
+Ludwigsburger Weg -> Attilastr.: Mittelstreifen	3::igndisp 7254,4396 7310,4308 7368,4342
+Attilastr. -> Ludwigsburger Weg: Mittelstreifen	3::igndisp 7263,4281 7310,4308 7254,4396
 Straßenbahn	3nocross::ignrte 18003,7144 17934,7029 17925,6976
 Mittelstreifen	3nocross::ignrte -5039,15618 -5154,15651 -5473,15742
 Falkenseer Chaussee -> Remscheider Str.: Mittelstreifen	3::igndisp -5039,15618 -5154,15651 -5192,15517
@@ -708,11 +711,11 @@ Königsberger Str. -> Teltowkanalpromenade: Mittelstreifen nicht passierbar	3::ig
 Königsberger Str. -> Paul-Schwarz-Promenade: Mittelstreifen nicht passierbar	3::igndisp 4164,2717 4212,2675 4261,2703
 Teltowkanalpromenade -> Paul-Schwarz-Promenade: Mittelstreifen nicht passierbar	3::igndisp 4193,2616 4212,2675 4261,2703
 Teltowkanalpromenade -> Königsberger Str.: Mittelstreifen nicht passierbar	3::igndisp 4193,2616 4212,2675 4164,2717
-Straßenbahntrasse	3nocross::ignrte 10911,17275 10906,17331 10900,17397 10892,17491
+Straßenbahntrasse	3nocross::ignrte 10911,17275 10906,17331 10900,17397 10894,17470 10892,17491
 Max-Lingner-Str. -> Berliner Str.: Straßenbahntrasse	3::igndisp 11107,17340 10906,17331 10911,17275
 Berliner Str. -> Max-Lingner-Str.: Straßenbahntrasse	3::igndisp 10900,17397 10906,17331 11107,17340
-Berliner Str. -> Masurenstr.: Straßenbahntrasse	3::igndisp 10906,17331 10900,17397 10706,17391
-Masurenstr. -> Berliner Str.: Straßenbahntrasse	3::igndisp 10706,17391 10900,17397 10892,17491
+Berliner Str. -> Samländische Str.: Straßenbahntrasse	3::igndisp 10906,17331 10900,17397 10706,17391
+Samländische Str. -> Berliner Str.: Straßenbahntrasse	3::igndisp 10706,17391 10900,17397 10894,17470
 Straßenbahntrasse	3nocross::ignrte 13753,16000 13826,16026 14014,16106
 Berliner Allee -> Herbert-Baum-Str.: Straßenbahntrasse	3::igndisp 14014,16106 13826,16026 13869,15912
 Herbert-Baum-Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13869,15912 13826,16026 13753,16000

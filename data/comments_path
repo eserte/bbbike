@@ -243,7 +243,7 @@ Straßenbahnhaltestelle überqueren oder umfahren	CP; 9215,13392 9281,13374 9607,1
 Kulmer Str./Goebenstr.: Fußgängerampel an der linken Seite zum Überqueren der Goebenstr. benutzen	CP; 7771,9479 7829,9723 7866,9902
 zur Kietzer Str.: gegenüber der Mauritiuskirchstr. in die Grünanlage einfahren	CP2; 15339,11912 15298,11892
 Zufahrt zum Gartenbauamt	CS; 9141,9142 8973,9171
-Ellwanger Str. - Attilastr.: Attilastr. in Höhe der Neckarsulmer Str. überqueren	CP; 7382,4503 7450,4397 7601,4485
+Ellwanger Str. - Attilastr.: Attilastr. in Höhe der Neckarsulmer Str. überqueren	CP; 7382,4503 7450,4397 7482,4416 7601,4485
 Attilastr. - Ellwanger Str.: bereits an der Rottweiler Str. die Straßenseite wechseln	CP2; 7368,4342 7410,4373 7450,4397 7382,4503
 Wuhlewanderweg/Landsberger Allee: den linken Bürgersteig bis zur Ampel benutzen	CP; 22657,16287 22631,16215 22696,16208
 Wuhlewanderweg/Landsberger Allee: bereits an der Ringenwalder Str. die Landsberger Allee überqueren	CP; 22495,16165 22631,16215 22657,16287
@@ -288,3 +288,7 @@ Allee der Kosmonauten - Annenstr.: Zebrastreifen zum Überqueren der Straßenbahnt
 Annenstr. - Allee der Kosmonauten.: Zebrastreifen zum Überqueren der Straßenbahntrasse benutzen	CP; 20376,14244 20269,14256 20241,14016
 Bohnsdorfer Str. (Waldweg): Die Einfahrt ist sehr zugewachsen	CP2; 22012,2150 21997,1869
 Wassersportallee - Bohnsdorfer Str.: über Zufahrt zur Tankstelle und zum Parkplatz	CP2; 22217,1108 22161,1193
+Berliner Str. - Masurenstr.: Entweder bereits an der Samländischen Str. die Straßenseite wechseln oder die Straßenbahntrasse in Höhe Binzstr. überqueren und zurückfahren	PI; 10900,17397 10894,17470 10670,17458
+Masurenstr. - Berliner Str.: zunächst auf dem linken Gehweg bis zur Höhe Binzstr. fahren	PI; 10670,17458 10894,17470 10892,17491
+Kongostr. - Müllerstr.: zunächst auf dem linken Gehweg bis zur Türkenstr. oder bis zur Fußgängerampel fahren	PI; 6349,16213 6450,16325 6444,16331
+Müllerstr. - Kongostr.: an der Türkenstr. oder an der Fußgängerampel die Straßenseite wechseln und zurückfahren	PI; 6608,16180 6450,16325 6349,16213
