@@ -571,6 +571,9 @@ Berliner Allee -> Lindenallee: Straßenbahn	3::igndisp 14371,16252 14248,16202 14
 Straßenbahn	3nocross::ignrte 13540,15928 13623,15954 13630,15956 13753,16000
 Tassostr. -> Berliner Allee: Straßenbahn	3::igndisp 13621,15990 13630,15956 13753,16000
 Berliner Allee -> Tassostr.: Straßenbahn	3::igndisp 13623,15954 13630,15956 13621,15990
+Straßenbahn	3nocross::ignrte 13401,15821 13432,15843 13540,15928
+Streustr. -> Berliner Allee: Straßenbahn	3::igndisp 13269,15927 13432,15843 13540,15928
+Berliner Allee -> Streustr.: Straßenbahn	3::igndisp 13401,15821 13432,15843 13269,15927
 Talsandweg: Einbahnstraße	1 3206,21179 3138,21372
 Mittelstreifen	3nocross::ignrte 10047,813 10187,872 10269,906
 Mittelstreifen	3nocross::ignrte 10471,802 10524,655 10573,519

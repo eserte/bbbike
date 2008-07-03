@@ -8670,7 +8670,7 @@ userdel	2::inwork 38357,51575 38111,51856
 EOF
      },
      { from  => 1186170676, # 
-       until => undef, # XXX (reported by: thuki@...) (Haus wird gebaut, kann eine Weile dauern)
+       until => 1215120478, # XXX (reported by: thuki@...) (Haus wird gebaut, kann eine Weile dauern) (Die Baustelle ist jetzt aufgehoben!)
        text  => 'Homburger Str.: Einbahnstraße wegen Baustelle zw. Ahrweiler Str. und Assmannshauser Str., Durchfahrt Richtung Osten möglich',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -9060,7 +9060,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006088',
        data  => <<EOF,
-userdel	2::inwork 15763,15003 15856,14915 16025,14753
+userdel	2::inwork 15774,14992 15856,14915 15941,14834 16037,14747
 EOF
      },
      { from  => 1184450400, # 2007-07-15 00:00
@@ -10000,7 +10000,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006088',
        data  => <<EOF,
-userdel	2::inwork 15763,15003 15856,14915 16025,14753
+userdel	2::inwork 15774,14992 15856,14915 15941,14834 16037,14747
 EOF
      },
      { from  => 1191532907, # 2007-10-04 23:21
@@ -11610,9 +11610,9 @@ EOF
 userdel	q4::inwork 28510,12507 28287,12471 27490,11678
 EOF
      },
-     { from  => 1214085600, # 2008-06-22 00:00
+     { from  => 1215295200, # 2008-07-06 00:00
        until => 1220220000, # 2008-09-01 00:00
-       text  => 'L 016 Brücke ü.d. A 10 zw. Perwenitz u. Paaren, sowie AS Falkensee Brückenbauarbeiten Vollsperrung 23.06.2008-31.08.2008 ',
+       text  => 'L 016 Brücke ü.d. A 10 zw. Perwenitz u. Paaren, sowie AS Falkensee Brückenbauarbeiten Vollsperrung 07.07.2008-31.08.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -17102,26468 -17545,26647
@@ -11817,8 +11817,8 @@ EOF
 userdel	1::inwork 10294,13070 10336,13037 10371,13006 10342,12936 10309,12854
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1215112739, # 
+       until => 1215112742, # XXX
        text  => 'Tempelhofer Damm (Tempelhof) stadtauswärts zwischen AS Tempelhofer Damm und Ringbahnstr. Straßenschäden, Fahrtrichtung gesperrt, Radfahrer können unter Umständen passieren',
        type  => 'handicap',
        source_id => 'IM_009276',

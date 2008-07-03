@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2polish,v 1.22 2007/12/26 11:43:20 eserte Exp $
+# $Id: bbd2polish,v 1.23 2008/07/02 21:05:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -168,12 +168,7 @@ if (defined $layer) {
 } else {
     if ($mapset eq 'b') {
 	@files = qw(strassen wasserstrassen flaechen sbahn sbahnhof ubahn ubahnhof berlin faehren kneipen);
-	for my $i (0 .. $#files) {
-	    if ($files[$i] eq 'strassen' && -r "$FindBin::RealBin/../tmp/non-faked-strassen") {
-	        $files[$i] = "$FindBin::RealBin/../tmp/non-faked-strassen";
-	        warn "Using non-faked-strassen instead of strassen...\n";
-	    }
-	}
+	using_non_faked_strassen(\@files);
     } elsif ($mapset eq 'brb') {
 	@files = qw(orte landstrassen wasserumland rbahn rbahnhof potsdam);
     } elsif ($mapset eq 'wide') {
@@ -185,13 +180,8 @@ if (defined $layer) {
 		    orte landstrassen wasserumland rbahn rbahnhof potsdam
 		    orte2 landstrassen2 wasserumland2 deutschland
 		    fragezeichen
-		  );
-	for my $i (0 .. $#files) {
-	    if ($files[$i] eq 'strassen' && -r "$FindBin::RealBin/../tmp/non-faked-strassen") {
-	        $files[$i] = "$FindBin::RealBin/../tmp/non-faked-strassen";
-	        warn "Using non-faked-strassen instead of strassen...\n";
-	    }
-	}
+		   );
+	using_non_faked_strassen(\@files);
     } else {
 	die "Unknown mapset <$mapset>";
     }
@@ -435,6 +425,23 @@ sub make_polygon_coords {
 	"(" . $_->[0] . "," . $_->[1]  . ")"
     } @$c) . "\n";
     "Data0=" . $data0;
+}
+
+sub using_non_faked_strassen {
+    my($files_ref) = @_;
+    for my $i (0 .. $#$files_ref) {
+	if ($files_ref->[$i] eq 'strassen') {
+	    my $non_faked_strassen = "$FindBin::RealBin/../tmp/non-faked-strassen";
+	    if (-r $non_faked_strassen) {
+		if (-M $non_faked_strassen > -M "$FindBin::RealBin/../data/strassen") {
+		    warn "WARN: Cannot use non-faked-strassen; it is older than strassen!\n";
+		} else {
+		    $files_ref->[$i] = $non_faked_strassen;
+		    warn "NOTE: Using non-faked-strassen instead of strassen...\n";
+		}
+	    }
+	}
+    }
 }
 
 __END__

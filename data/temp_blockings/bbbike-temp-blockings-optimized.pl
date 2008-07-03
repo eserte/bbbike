@@ -353,15 +353,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Homburger Str.: Einbahnstraße wegen Baustelle zw. Ahrweiler Str. und Assmannshauser Str., Durchfahrt Richtung Osten möglich',
-         'from' => 1186170676,
-         'id' => 1030,
-         'data' => 'userdel	1::inwork 4599,7474 4403,7498
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -994,8 +986,8 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        {
          'until' => 1220220000,
-         'text' => 'L 016 Brücke ü.d. A 10 zw. Perwenitz u. Paaren, sowie AS Falkensee Brückenbauarbeiten Vollsperrung 23.06.2008-31.08.2008 ',
-         'from' => 1214085600,
+         'text' => 'L 016 Brücke ü.d. A 10 zw. Perwenitz u. Paaren, sowie AS Falkensee Brückenbauarbeiten Vollsperrung 07.07.2008-31.08.2008 ',
+         'from' => 1215295200,
          'id' => 1379,
          'data' => 'userdel	2::inwork -17102,26468 -17545,26647
 ',
@@ -1081,16 +1073,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_009276',
-         'until' => undef,
-         'text' => 'Tempelhofer Damm (Tempelhof) stadtauswärts zwischen AS Tempelhofer Damm und Ringbahnstr. Straßenschäden, Fahrtrichtung gesperrt, Radfahrer können unter Umständen passieren',
-         'from' => undef,
-         'id' => 1394,
-         'data' => 'userdel	q4::inwork; 9235,7146 9237,7045 9242,6962
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1216764000,
          'text' => 'B 101 Weststr. OD Elsterwerda, zw. Thiemigstr. und Netto Umverlegung Versorgungsleit. Vollsperrung 17.07.2008-22.07.2008 ',

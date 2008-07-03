@@ -254,7 +254,7 @@ Zichow-Lindenwegsiedlung: Qualität? Am westlichen Ende als "Lindenweg" ausgeschi
 Prötzeler Ring: Qualität laut ADFC-Karte gut	? 21951,15918 21980,15857 22055,15698 22092,15610
 Trappenfelder Pfad: Qualität laut ADFC-Karte gut	? 22092,15610 22101,15601 22076,15276 22061,15168 22059,15153
 Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
-Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23279,14785 23379,14514
+Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23297,14772 23379,14514
 Beilsteiner Str.: Qualität (laut ADFC-Karte im südlichen Abschnitt gut geeignet; zumindest in Höhe Allee der Kosmonauten asphaltiert)	? 18749,12413 18832,13099 18852,13269 18875,13473 18871,13796 18859,14048 18998,14089 19025,14037
 Bleicheroder Str. - Pasewalker Str.: existiert eine Verbindung für Radfahrer entlang der Tram-Trasse?	? 11805,19071 11937,19175
 Birkenallee (Pankow): Qualität?	? 9739,20508 9655,20703
@@ -701,7 +701,7 @@ Bahnhofstr.: Qualität in diesem Abschnitt (ostl. d. Bergstr.)?	? -2657,-2907 -27
 Scharnweberstr. (Friedrichshagen): Qualität?	? 25706,4723 25720,4832
 Ahornallee (Pankow) Qualität?	? 9737,20728 9859,20542
 Pankeweg: Qualität?	? 16635,26118 16712,26192 16890,26334 16937,26354 16979,26401 17104,26478 17279,26582 17101,26701
-Janusz-Korczak-Str.: Qualität, Radwege?	? 24303,15070 24232,15060 24139,15046 23960,15021 23778,14995 23798,14826 23815,14721
+Janusz-Korczak-Str.: Qualität, Radwege?	? 24303,15070 24232,15060 24139,15046 23960,15021 23841,15004 23778,14995 23787,14919 23798,14826 23815,14721
 Marwitzer Str.: Radwege, aber von wo bis wo genau?	? -3700,26625 -4048,26914 -4293,27146 -4750,27667
 Preußenstr.: Qualität?	? 21047,927 20971,1046 20850,1217
 Preußenstr.: Qualität?	? 21297,651 21202,727
@@ -1497,6 +1497,25 @@ Usambarastr.: Qualität?	? 5538,16919 5565,16923 5684,16815
 Klever Str.: Qualität?	? 9475,16307 9390,16362 9293,16447
 Brunnenplatz: Qualität?	? 8481,16136 8454,16115 8411,16099 8377,16065 8366,16029 8338,15987
 Weddingstr.: Qualität? Kann die Reinickendorfer Str. in Höhe Weddingstr. überquert werden?	? 8066,15610 8053,15598 7974,15634
+Lunder Str.: Qualität?	? 11357,16610 11351,16744
+Upsalaer Str.: Qualität? Gibt es hier eine Einbahnstraßenregelung, und wenn ja, gilt diese auch für Radfahrer?	? 11369,16744 11364,16887
+Gemündener Str.: Qualität?	? 11395,18274 11495,18129 11514,18101 11586,18126 11622,18006
+Kissingenplatz: Qualität? Können Radfahrer direkt zur Kreuzung Neumannstr./Kissingenstr. gelangen?	? 11489,17980 11448,18051 11405,17985 11398,17962
+Rossinistr.: Qualität?	? 13456,15760 13401,15821
+Berkenbrücker Steig: Qualität?	? 15647,14693 15532,14718 15383,14759
+Küstriner Str.: Qualität?	? 15799,14674 15853,14734 15878,14761 15941,14834 16123,15025 16211,15105 16319,15229 16354,15323 16406,15452
+Verdener Gasse: Qualität? Durchfahrt zur Große-Leege-Str. für Radfahrer möglich? Überquerung der Große-Leege-Str. in Höhe Verdener Gasse möglich?	? 15878,14761 15946,14702 15977,14676
+Strausberger Str.: Qualität?	? 16377,14952 16295,15024 16211,15105 16152,15164 16028,15218
+Heiligenstadter Str.: Qualität?	? 16738,14695 16835,14676
+Joachimsthaler Str. (Hohenschönhausen): Qualität? Einbahnstraßenregelung, auch für Radfahrer gültig?	? 16918,14901 16943,14785 17063,14797 17129,14804 17117,14885
+Biesenthaler Str. (Hohenschönhausen): Qualität? Einbahnstraßenregelung, auch für Radfahrer gültig?	? 17063,14797 17074,14704 17239,14719
+Lössauer Str.: Qualität?	? 16816,15092 17230,15083
+Lichtenauer Str.: Qualität?	? 16835,15188 17221,15181
+Lil-Dagover-Gasse: Qualität? Für Autos gesperrt?	? 23960,15021 23871,14914
+Fritz-Lang-Platz: Qualität? Für Autos gesperrt? Einbahnstraße?	? 23871,14914 23846,14931 23820,14896 23856,14868 23882,14904 23871,14914
+Kurt-Weill-Gasse: Qualität? Für Autos gesperrt?	? 23820,14896 23787,14919
+Fritz-Lang-Str.: Qualität? Für Autos gesperrt?	? 23841,15004 23846,14931
+Fritz-Lang-Str.: Qualität? Für Autos gesperrt?	? 23856,14868 23878,14748
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -1594,7 +1613,6 @@ Miethepfad: Verbundsteinpflaster (Miethepfad zwischen Poleigrund und Weg unter d
 Alter Bernauer Heerweg: Kopfsteinpflaster (Alter Bernauer Heerweg westlich des Mauerwegs: Kopfsteinpflaster oder wassergebundene Decke?)	? 6668,22746 7072,22905 7782,23172 7923,23225 8203,23321
 Dohlengrund: Asphalt (wie ist die Qualität zwischen Grabensprung und Köpenicker Str.?)	? 20716,10434 21017,10423 21288,10431
 Salzachstr.: unbefestigt, fester Erdboden (wo genau sind die Kopfsteinpflaster-/Asphaltabschnitte?)	? -2122,3593 -1998,3610
-Invalidenfriedhof: Asphalt mit tiefen Querrillen, parallel gut befahrbarer Schotterweg (was für eine Qualität hat der provisorischer Weg am Invalidenfriedhof?)	? 8137,13925 8015,14109
 Schrimmer Weg: schlechtes Kopfsteinpflaster (gilt das "schlechte Kopfsteinpflaster" auch für den Gehweg-Abschnitt Richtung Waltersdorfer Chaussee?)	? 17879,127 17818,93
 Amalienhofstr.: schlechtes Kopfsteinpflaster (wie ist die Qualität zwischen Ulrikenstr. und Lutoner Str.?)	? -5118,13053 -5100,13081 -5073,13097 -4871,13178 -4771,13214
 Eigene Scholle - Schönhauer Str.: Verbundsteinpflaster (Ist der Privatweg tatsächlich mit Verbundsteinen gepflastert?)	? 9178,21072 9221,21145

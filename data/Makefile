@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.187 2008/05/16 21:05:41 eserte Exp eserte $
+# $Id: Makefile,v 2.188 2008/07/02 21:06:36 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1531,7 +1531,7 @@ cgpsmapper-upload-instructions:
 	@echo ""
 
 ${PERSISTENTTMPDIR}/bbbike.mp:	${BBD2POLISH} \
-				strassen wasserstrassen flaechen sbahn ubahn berlin faehren fragezeichen
+				${PERSISTENTTMPDIR}/non-faked-strassen wasserstrassen flaechen sbahn ubahn berlin faehren fragezeichen
 	${BBD2POLISH} -mapset b > $@
 
 ${PERSISTENTTMPDIR}/brb.mp:	${BBD2POLISH} \
@@ -1547,7 +1547,8 @@ ${PERSISTENTTMPDIR}/fragezeichen.mp:	${BBD2POLISH} \
 	${BBD2POLISH} -mapset fragezeichen > $@
 
 ${PERSISTENTTMPDIR}/bbbikeall.mp:	${BBD2POLISH} \
-					strassen wasserstrassen flaechen sbahn ubahn berlin faehren fragezeichen \
+					${PERSISTENTTMPDIR}/non-faked-strassen wasserstrassen flaechen sbahn ubahn berlin \
+					faehren fragezeichen \
 					orte landstrassen wasserumland rbahn potsdam \
 					orte2 landstrassen2 wasserumland2 deutschland
 	${BBD2POLISH} -mapset all > $@
