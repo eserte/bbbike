@@ -1,0 +1,56 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: check_bbd,v 1.1 2008/07/03 21:57:47 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2008 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+
+use Strassen::Core;
+
+my $file = shift || die "bbd file?";
+
+my $s = Strassen->new($file);
+$s->init;
+while(1) {
+    my $r = $s->next;
+    my @c = @{ $r->[Strassen::COORDS] };
+    if (!@c) {
+	if ($s->pos != @{ $s->data }) {
+	    die "$file: Mismatch in position " . $s->pos . " != " . @{ $s->data } . "\n";
+	} else {
+	    last;
+	}
+    }
+
+    my $coord_errors = 0;
+    for my $c (@c) {
+	if ($c !~ m{^[-+]?\d+(?:\.\d+)?,[-+]?\d+(?:\.\d+)?$}) {
+	    if ($coord_errors == 0) {
+		warn "$file: Error in coordinate $c, position " . $s->pos . "\n";
+	    } elsif ($coord_errors == 1) {
+		warn "$file: More than one coordinate error, do not report any more...\n";
+	    }
+	    $coord_errors++;
+	}
+    }
+
+    die "$file: Found $coord_errors coordinate error(s)\n" if $coord_errors;
+}
+
+print "$file: OK\n";
+
+__END__

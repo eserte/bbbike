@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.188 2008/07/02 21:06:36 eserte Exp $
+# $Id: Makefile,v 2.189 2008/07/03 22:07:51 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -84,6 +84,7 @@ COMPUTED_TARGETS+=	fragezeichen-cooked
 
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COMPUTED_TARGETS} ${COOKED_TARGETS}
+BBD_TARGETS=	${TARGETS:S/^ampelschaltung$//:S/^multi_bez_str$//:S/^temp_blockings\/bbbike-temp-blockings-optimized.pl//}
 
 XXX_NON_OTHER=	indoor outdoor prog checklater
 XXX_TARGETS=	other ${XXX_NON_OTHER}
@@ -132,6 +133,7 @@ targets-clean:
 # Useful checks, but normally too slow for a quick build
 # XXX merge with sort-Berlin.coords.data rule below?
 slow-checks:	check-categories \
+		.check_targets \
 		inaccessible_strassen inaccessible_landstrassen \
 		check-line-lengths check-dates \
 		check-coords.data \
@@ -980,6 +982,10 @@ do-checks:	.check_empty_lines \
 	for i in *-orig; do $(PERL) -nle '$$_ eq q{} and die $$ARGV' $$i; done
 
 check-disabled:	.check_label
+
+.check_targets:	${BBD_TARGETS}
+	for f in ${BBD_TARGETS}; do ${MISCSRCDIR}/check_bbd $$f; done
+	@touch $@
 
 .check_strassen1:	.strassen.tmp add_str multi_bez_str-orig Berlin.coords.data
 	$(CHECK_STR_PLZ) -data .strassen.tmp
