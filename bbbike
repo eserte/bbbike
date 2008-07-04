@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.369 2008/05/12 17:52:36 eserte Exp eserte $
+# $Id: bbbike,v 3.370 2008/07/04 20:53:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -243,7 +243,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.369 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.370 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4271,6 +4271,20 @@ $splash_screen->Update(0.4) if $splash_screen;
 #BEGIN{mymstat("before init draw BEGIN");} mymstat("before init draw");
 ## DEBUG_END
 $progress->InitGroup;
+
+######################################################################
+# Custom Cursors
+# Load it before possible use, e.g. in set_edit_mode
+foreach my $def (qw(start watch ziel addnet delnet info salesman xy
+		    movehand www)) {
+    load_cursor($def);
+}
+if ($cursor{"watch"}) {
+    $busy_watch_args{-cursor} = ['@' . $cursor{"watch"}, $cursor_mask{"watch"},
+				 'black', 'white'];
+}
+######################################################################
+
 if (defined $set_mode && $set_mode eq 'edit') {
     require BBBikeAdvanced;
     set_edit_mode(1);
@@ -4315,7 +4329,7 @@ if ($net_type =~ /^(us|r|rus|wr)$/) {
     make_net();
 }
 
-if (!$search_route_flag) {
+if (!$search_route_flag && !(defined $set_mode && $set_mode eq 'edit')) {
     search_route_mouse(1);
 }
 
@@ -4327,16 +4341,6 @@ $progress->FinishGroup;
 $splash_screen->Update(0.7) if $splash_screen;
 
 set_bindings();
-
-foreach my $def (qw(start watch ziel addnet delnet info salesman xy
-		    movehand www)) {
-    load_cursor($def);
-}
-
-if ($cursor{"watch"}) {
-    $busy_watch_args{-cursor} = ['@' . $cursor{"watch"}, $cursor_mask{"watch"},
-				 'black', 'white'];
-}
 
 $splash_screen->Update(0.8) if $splash_screen;
 
