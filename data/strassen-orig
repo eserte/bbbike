@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Strassen-Koordinaten (standard coords)
-#: version: $Id: strassen-orig,v 4.252 2008/07/02 20:56:19 eserte Exp eserte $
+#: version: $Id: strassen-orig,v 4.254 2008/07/04 19:42:38 eserte Exp $
 #: title.de: Straßen und Plätze in Berlin
 #: title.en: Streets and places in Berlin
 #: note: XXX_* categorization done 2008-01-26
@@ -1923,8 +1923,8 @@ Hasselfelder Weg	N 5045,1675 4942,1649 4855,1616 4800,1582
 Sondershauser Str.	N 6403,569 6358,795 6360,825 6386,1051 6392,1135 6406,1218 6441,1444 6491,1658
 Resselsteig	N 5309,1130 5364,1049 5327,1026 5424,882
 Schwatlostr.	NN 4375,1414 4341,1406
-Schwatlostr.	N 4341,1406 3993,1169
-Lindenstr. (Lichterfelde)	N 3879,1211 3993,1169 4349,1031
+Schwatlostr.	N 4341,1406 4306,1382 4233,1333 4148,1275 3993,1169
+Lindenstr. (Lichterfelde)	N 3879,1211 3993,1169 4138,1113 4194,1091 4256,1067 4349,1031
 Nahmitzer Damm	H 7789,651 8247,375 8469,319 8584,327 8736,337 8906,392 9002,471
 Friedenfelser Str.	H 7715,684 7758,821 7744,1008
 Buckower Chaussee	N 8742,475 8972,498 9002,471
@@ -6128,7 +6128,7 @@ Johannaplatz	N 2193,9195 2163,9244 2130,9260 2077,9212 2098,9173 2165,9155 2193,
 Gensinger Str.	N 18597,12162 19086,12134 19143,12078 19144,11859 19147,11701 19121,11681 19035,11671 19005,11705 19005,11796
 (Gensinger Str. - Alt-Friedrichsfelde)	N 19144,11859 19005,11796
 (Alt-Friedrichsfelde - Gensinger Str.)	N 19283,11785 19144,11859
-Müllerstr. (Lichterfelde)	N 3993,1169 3899,1095 4092,815 4155,794 4219,772 4250,763
+Müllerstr. (Lichterfelde)	N 3993,1169 3899,1095 3942,1032 4057,866 4092,815 4155,794 4219,772 4250,763
 (Celsiusstr. - Müllerstr.)	NN 4367,725 4311,746 4250,763
 Fürstenstr. (Lichterfelde)	N 4122,421 4136,505 4168,591 4219,772
 Fürstenstr. (Lichterfelde)	N 4250,763 4349,1031
@@ -9233,3 +9233,10 @@ Ibisweg	N 14806,4125 14573,3843
 Wendehalsweg	N 14550,3625 14594,3712 14619,3759 14911,4009
 (Parkweg am Laubsängerweg)	NN 14484,3796 14507,3820 14540,3821 14568,3731
 (Ibisweg - Laubsängerweg)	NN 14573,3843 14540,3821
+Briloner Weg	N 4306,1382 4401,1232
+Zimmerstr. (Lichterfelde)	N 4233,1333 4342,1173
+Wiedenbrücker Weg	N 4148,1275 4220,1175 4223,1136 4206,1107 4194,1091
+Soester Str.	N 4138,1113 4057,866 4003,831 3951,798
+Blücherstr. (Lichterfelde)	N 4256,1067 4155,794 4069,734 4018,699
+Müllerstr. (Lichterfelde)	N 3899,1095 3849,1116
+Boninstr. (Lichterfelde)	N 3942,1032 3892,999 3840,964

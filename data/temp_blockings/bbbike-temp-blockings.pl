@@ -11850,4 +11850,13 @@ EOF
 userdel	q4::inwork 5148,-90524 5358,-90502 5798,-90075
 EOF
      },
+     { from  => 1215067855, # 2008-07-03 08:50
+       until => 1215208800, # 2008-07-05 00:00
+       text  => 'Eröffnung der US-Botschaft am Pariser Platz; Sperrungen rund um das Brandenburger Tor (4.7.2008) ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 8539,12286 8515,12242 8214,12205 8089,12186
+userdel	2::temp 8610,12254 8515,12242 8600,12165 8595,12066 8737,12098 8861,12125
+EOF
+     },
     );

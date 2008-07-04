@@ -1100,6 +1100,16 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork 5148,-90524 5358,-90502 5798,-90075
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1215208800,
+         'text' => 'Eröffnung der US-Botschaft am Pariser Platz; Sperrungen rund um das Brandenburger Tor (4.7.2008) ',
+         'from' => 1215067855,
+         'id' => 1398,
+         'data' => 'userdel	2::temp 8539,12286 8515,12242 8214,12205 8089,12186
+userdel	2::temp 8610,12254 8515,12242 8600,12165 8595,12066 8737,12098 8861,12125
+',
+         'type' => 'gesperrt'
        }
      
 );
