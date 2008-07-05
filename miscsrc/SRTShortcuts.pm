@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.41 2008/05/23 19:17:47 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.41 2008/05/23 19:17:47 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -583,14 +583,22 @@ sub mark_layer_dialog {
 
 sub mark_layer {
     my $abk = shift;
-    my $s = $main::str_obj{$abk};
-    if (!$s) {
+    my $s;
+ TRY_LAYER: {
+	$s = $main::str_obj{$abk};
+	last TRY_LAYER if $s;
 	if ($main::str_file{$abk}) {
 	    $s = Strassen->new($main::str_file{$abk});
+	    last TRY_LAYER if $s;
 	}
-	if (!$s) {
-	    main::status_message("Cannot get street object for <$abk>", "die");
+
+	$s = $main::p_obj{$abk};
+	last TRY_LAYER if $s;
+	if ($main::p_file{$abk}) {
+	    $s = Strassen->new($main::p_file{$abk});
+	    last TRY_LAYER if $s;
 	}
+	main::status_message("Cannot get street or point object for <$abk>", "die");
     }
     my @mc;
     $s->init;

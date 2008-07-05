@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSDialog.pm,v 1.14 2007/10/14 20:28:30 eserte Exp $
+# $Id: BBBikeGPSDialog.pm,v 1.15 2008/07/05 17:24:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002, 2003 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeGPSDialog;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Tk::Toplevel);
 Construct Tk::Widget 'BBBikeGPSDialog';
@@ -295,7 +295,7 @@ sub display_selected {
 		my $last_time;
 		foreach my $wpt (@{ $gps->Points }) {
 		    my($cx,$cy) = $transpose->(map { int } $Karte::Polar::obj->map2standard($wpt->Longitude, $wpt->Latitude));
-		    my $time = $wpt->Comment_to_unixtime;
+		    my $time = $wpt->Comment_to_unixtime($gps);
 		    if (defined $last_time && $time-$last_time > 60) {
 			push @p, [];
 		    }

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman2bbd.pl,v 2.12 2007/10/14 20:20:25 eserte Exp eserte $
+# $Id: gpsman2bbd.pl,v 2.13 2008/07/05 17:25:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -319,7 +319,7 @@ EOF
 		}
 
 	        if ($curr_s eq $s) {
-		    my $time = $wpt->Comment_to_unixtime;
+		    my $time = $wpt->Comment_to_unixtime($gps);
 		    if (defined $time && $last_wpt) {
 			my($last_x,$last_y,$last_time) = @$last_wpt;
 		        my $legtime = $time-$last_time;

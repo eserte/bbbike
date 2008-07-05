@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.52 2008/06/21 11:24:24 eserte Exp $
+# $Id: GpsmanData.pm,v 1.53 2008/07/05 17:24:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005,2007 Slaven Rezic. All rights reserved.
@@ -30,7 +30,7 @@ BEGIN {
 	    Type Name
 	    Waypoints WaypointsHash
 	    Track CurrentConverter
-	    Version TrackAttrs
+	    TimeOffset TrackAttrs
 	   )) {
 	my $acc = $_;
 	*{$acc} = sub {
@@ -44,7 +44,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.52 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.53 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -66,25 +66,35 @@ struct('GPS::Gpsman::Waypoint' =>
 {
     package GPS::Gpsman::Waypoint;
 
+    use vars qw($_container_warning);
+
     sub Comment_to_unixtime {
-	my $wpt = shift;
+	my($wpt, $container) = @_;
+	if (!defined $container && !$_container_warning) {
+	    require Carp;
+	    Carp::carp("*** Please specify container object in Comment_to_unixtime for correct timezone information");
+	    $_container_warning++;
+	}
 	my $datetime = $wpt->DateTime;
 	if (!defined $datetime || $datetime eq '') {
 	    $datetime = $wpt->Comment;
 	}
+	my $epoch;
 	if ($datetime =~ /^(\d{4})-(\d{2})-(\d{2})\s+(\d{1,2}):(\d{2}):(\d{2})/) {
 	    my($y,$m,$d, $H,$M,$S) = ($1,$2,$3,$4,$5,$6);
 	    require Time::Local;
-	    Time::Local::timelocal($S,$M,$H,$d,$m-1,$y-1900);
+	    $epoch = Time::Local::timegm($S,$M,$H,$d,$m-1,$y-1900);
 	} elsif ($datetime =~ /^(\d{1,2})-([^-]{3})-(\d{4})\s+(\d{1,2}):(\d{2}):(\d{2})/) {
 	    my($d,$m_name,$y, $H,$M,$S) = ($1,$2,$3,$4,$5,$6);
 	    my $m = GPS::GpsmanData::monthabbrev_number($m_name);
 	    return undef if !defined $m;
 	    require Time::Local;
-	    Time::Local::timelocal($S,$M,$H,$d,$m-1,$y-1900);
-	} else {
-	    undef;
+	    $epoch = Time::Local::timegm($S,$M,$H,$d,$m-1,$y-1900);
 	}
+	if (defined $epoch && defined $container) {
+	    $epoch -= $container->TimeOffset*3600;
+	}
+	$epoch;
     }
 
 }
@@ -97,11 +107,11 @@ sub check {
     my $check = 0;
     while(<F>) {
 	next if /^%/ || /^\s*$/;
-	if (/!Format: (DMS|DDD) ([12]) (WGS 84)/) {
+	if (/!Format: (DMS|DDD) (-?\d+(?:\.\d+)) (WGS 84)/) {
 	    if (ref $self) {
-		my($pos_format, $version, $datum_format) = ($1, $2, $3);
+		my($pos_format, $time_offset, $datum_format) = ($1, $2, $3);
 		$self->change_position_format($pos_format);
-		$self->Version($version);
+		$self->TimeOffset($time_offset);
 		$self->DatumFormat($datum_format);
 	    }
 	    $check = 1;
@@ -317,7 +327,7 @@ sub new {
     # some defaults:
     #$self->PositionFormat("DMS");
     $self->change_position_format("DMS");
-    $self->Version(1);
+    $self->TimeOffset(0);
     $self->DatumFormat("WGS 84");
 
     $self;
@@ -383,7 +393,6 @@ sub parse_waypoint {
     $wpt->Ident($f[$f_i++]);
     $wpt->Comment($f[$f_i++]);
 
-    # Here used to be a Version 1/2 check, but did not work?!
     if ($self->_is_datetime($f[$f_i])) {
 	$wpt->DateTime($f[$f_i++]);
     }
@@ -481,9 +490,9 @@ sub parse {
 	if (defined $parse_method && !/^!/) {
 	    push @data, $self->$parse_method();
 	} elsif (/^!Format:\s+(\S+)\s+(\S+)\s+(.*)$/) {
-	    my($pos_format, $version, $datum_format) = ($1, $2, $3);
+	    my($pos_format, $time_offset, $datum_format) = ($1, $2, $3);
 	    $self->change_position_format($pos_format);
-	    $self->Version($version);
+	    $self->TimeOffset($time_offset);
 	    $self->DatumFormat($datum_format);
 	} elsif (/^!Position:\s+(\S+)$/) {
 	    my $pos_format = $1;
@@ -736,7 +745,7 @@ sub header_as_string {
     # XXX:
     $s .= "!Format: " . join(" ",
 			     "DMS", # always hardcoded # $self->PositionFormat, 
-			     $self->Version,
+			     $self->TimeOffset,
 			     $self->DatumFormat) . "
 !Creation: no
 
@@ -910,7 +919,7 @@ sub parse {
 	my $gps_o = GPS::GpsmanData->new;
 	if ($old_gps_o) {
 	    # "sticky" attributes
-	    for my $member (qw(DatumFormat Version PositionFormat Creation CurrentConverter)) {
+	    for my $member (qw(DatumFormat TimeOffset PositionFormat Creation CurrentConverter)) {
 		$gps_o->$member($old_gps_o->$member());
 	    }
 	}

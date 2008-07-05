@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.17 2008/02/28 23:13:34 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.18 2008/07/05 23:00:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2007,2008 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $geometry $viewer_menu);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(file_name_is_absolute);
 use File::Basename qw(dirname);
@@ -227,6 +227,10 @@ sub show_image_viewer {
 	$name = $tags[$tag_index];
 	if ($name =~ /^Image:\s*\"([^\"]+)\"/) {
 	    $abs_file = $1;
+	    # Hack XXX: force result into bytes for later use:
+	    if ($^O ne 'MSWin32' && eval { require Encode; 1 }) {
+		$abs_file = Encode::encode("iso-8859-1", $abs_file);
+	    }
 	    if (!file_name_is_absolute($abs_file)) {
 	    SEARCH_FOR_ABS_FILE: {
 		    for my $hash (\%main::str_file, \%main::p_file) {
@@ -263,6 +267,7 @@ sub show_image_viewer {
 	    main::IncBusy($main::top);
 	    eval {
 		my($date) = $name =~ $iso_date_rx;
+		my($delta) = $name =~ m{\(delta=(\d+:\d+)\)};
 		my $image_viewer_toplevel = main::redisplay_top($main::top,
 								"BBBikeViewImages_Viewer",
 								-raise => 1,
@@ -293,9 +298,13 @@ sub show_image_viewer {
 		    my $n_of_m_label = $f->Label->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(NOfMLabel => $n_of_m_label);
 
-		    my $date_label = $f->Label->pack(-side => "left", -padx => 4);
+		    my $date_label = $f->Label->pack(-side => "left", -padx => 2);
 		    $image_viewer_toplevel->Advertise(DateLabel => $date_label);
 		    $main::balloon->attach($date_label, -msg => "Datum aus dem EXIF") if ($main::balloon);
+
+		    my $delta_label = $f->Label->pack(-side => "left");
+		    $image_viewer_toplevel->Advertise(DeltaLabel => $delta_label);
+		    $main::balloon->attach($delta_label, -msg => "Abstand zur Geolocation (hh:mm)") if ($main::balloon);
 
 		    my $close_button = $f->Button(Name => "close",
 						  -class => "SmallBut",
@@ -423,6 +432,8 @@ sub show_image_viewer {
 		$image_viewer_toplevel->Subwidget("NOfMLabel")->configure(-text => $this_index_in_array->() . "/" . @$all_image_inx);
 
 		$image_viewer_toplevel->Subwidget("DateLabel")->configure(-text => $date);
+
+		$image_viewer_toplevel->Subwidget("DeltaLabel")->configure(-text => chr(0x03B4)."=".$delta);
 
 		$image_viewer_toplevel->{"photo"} = $p;
 		$image_viewer_toplevel->deiconify;

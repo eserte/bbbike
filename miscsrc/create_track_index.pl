@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: create_track_index.pl,v 1.4 2007/05/03 20:35:46 eserte Exp $
+# $Id: create_track_index.pl,v 1.5 2008/07/05 17:25:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -65,7 +65,7 @@ for my $file (@files) {
     $gpsman->load($absfile);
     for my $chunk (@{ $gpsman->Chunks }) {
 	for my $wpt (@{ $chunk->Points }) {
-	    my $unixtime = $wpt->Comment_to_unixtime;
+	    my $unixtime = $wpt->Comment_to_unixtime($chunk);
 	    my $isodate = strftime("%Y-%m-%dT%H%M%S", localtime $unixtime);
 	    next if $isodate lt "1990-01-01T000000";
 

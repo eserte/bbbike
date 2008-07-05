@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Radwege.pm,v 1.20 2008/04/01 18:36:46 eserte Exp eserte $
+# $Id: Radwege.pm,v 1.21 2008/07/05 10:34:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package Radwege;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!eval '
@@ -33,7 +33,7 @@ use vars qw(%category_code %code_category %category_name %category_plural
 
 my @category =
   ("radweg"    => ["RW1", M"Radweg", M"Radwege"],
-   "pflicht"   => ["RW2", M"benutzungspflichtig", M"benutzungspflichtige Radwege"],
+   "pflicht"   => ["RW2", M"benutzungspflichtiger Radweg", M"benutzungspflichtige Radwege"],
    "suggestiv" => ["RW3", M"Schutzstreifen"], # auch "Angebotsstreifen" oder "Suggestivstreifen" genannt
    "spur"      => ["RW4", M"Radstreifen"],
    "bus"       => ["RW5", M"Busspur", M"Busspuren"],

@@ -4,7 +4,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
 
 use File::Spec;
 use File::Basename;
@@ -36,6 +36,20 @@ my $date_db;
 my $v;
 my $relative_paths;
 
+sub usage (;$) {
+    my $msg = shift;
+    warn "$msg\n" if $msg;
+    die <<EOF;
+usage: $0
+          [-gpsdatadir directory] [-thumbnaildir directory]
+          [-clockgps HH:MM:SS -clockcamera HH:MM:SS]
+	  [-anchor nw|n|ne|e|se|s|sw] [-thumbnailsize pixels]
+          [-converter Image::GD::Thumbnail|ImageMagick|ImageMagick+exiftool|best|fast]
+	  [-recreatethumbnails] [-rel|-relativepaths]
+          [-v] image ...
+EOF
+}
+
 GetOptions("gpsdatadir=s" => \$gps_data_dir,
 	   "dateindex=s" => \$date_index_file,
 	   "thumbnaildir=s" => \$thumbnail_dir,
@@ -47,15 +61,12 @@ GetOptions("gpsdatadir=s" => \$gps_data_dir,
 	   "recreatethumbnails" => \$recreate_thumbnails,
 	   "rel|relativepaths!" => \$relative_paths,
 	   "v!" => \$v,
-	  ) or die <<EOF;
-usage: $0
-          [-gpsdatadir directory] [-thumbnaildir directory]
-          [-clockgps HH:MM:SS -clockcamera HH:MM:SS]
-	  [-anchor nw|n|ne|e|se|s|sw] [-thumbnailsize pixels]
-          [-converter Image::GD::Thumbnail|ImageMagick|ImageMagick+exiftool|best|fast]
-	  [-recreatethumbnails] [-rel|-relativepaths]
-          [-v] image ...
-EOF
+	  ) or usage;
+
+my @images = @ARGV;
+if (!@images) {
+    usage "Please specify at least one image";
+}
 
 mkdir $thumbnail_dir if !-d $thumbnail_dir;
 if (!-d $thumbnail_dir) {
@@ -141,14 +152,16 @@ sub get_image_location {
 	    my $date = $lines[2];
 	    my $time = $lines[3];
 
-	    if (!defined $date || $date !~ /^(\d+)-(\d+)-(\d{4})$/) {
-		warn "Can't parse date $date (file $file)";
+	    if (!defined $date || $date !~ m{^(\d+)[/-](\d+)[/-](\d{4})$}) {
+		local $^W = 0;
+		warn "Can't parse date <$date> in file <$file>, cannot geolocate, skipping...\n";
 		return;
 	    }
 	    ($y,$m,$d) = ($3,$2,$1);
 
-	    if (!defined $date || $time !~ /^(\d+)\.(\d+)\.(\d+)$/) {
-		warn "Can't parse time $time (file $file)";
+	    if (!defined $date || $time !~ m{^(\d+)[:\.](\d+)[:\.](\d+)$}) {
+		local $^W = 0;
+		warn "Can't parse time <$time> in file <$file>, cannot geolocate, skipping...\n";
 		return;
 	    }
 	    ($H,$M,$S) = ($1,$2,$3);
@@ -249,10 +262,10 @@ sub get_image_location {
 	my $last_wpt;
 	my $interval;
 	for my $wpt (@{ $gps->Track }) {
-	    my $wpt_epoch = $wpt->Comment_to_unixtime;
+	    my $wpt_epoch = $wpt->Comment_to_unixtime($gps);
 	    if ($wpt_epoch > $epoch) {
 		if ($last_wpt &&
-		    abs($last_wpt->Comment_to_unixtime - $epoch) <
+		    abs($last_wpt->Comment_to_unixtime($gps) - $epoch) <
 		    abs($wpt_epoch - $epoch)) {
 		    $got_wpt = $last_wpt;
 		} else {
@@ -265,7 +278,7 @@ sub get_image_location {
 	if (!$got_wpt) {
 	    $got_wpt = $gps->Track->[-1];
 	}
-	$interval = abs($got_wpt->Comment_to_unixtime - $epoch);
+	$interval = abs($got_wpt->Comment_to_unixtime($gps) - $epoch);
 	if ($got_wpt) {
 	    return { Latitude  => $got_wpt->Latitude,
 		     Longitude => $got_wpt->Longitude,
@@ -284,7 +297,25 @@ if ($date_index_file) {
     
 }
 
-for my $file (@ARGV) {
+for my $file (@images) {
+    if (-d $file) {
+	require File::Find;
+	my @files;
+	File::Find::find(sub {
+			     if (-f $_ && -r $_) {
+				 push @files, $File::Find::name;
+			     }
+			 }, $file);
+	for my $file (@files) {
+	    handle_file($file);
+	}
+    } else {
+	handle_file($file);
+    }
+}
+
+sub handle_file {
+    my $file = shift;
     my $ret = get_image_location($file);
     if (defined $ret) {
 	my($lat, $long, $interval, $date) = @{$ret}{qw(Latitude Longitude Interval Date)};
@@ -296,8 +327,8 @@ for my $file (@ARGV) {
 	    $thumb_file = File::Spec->abs2rel($thumb_file);
 	}
 	if (defined $thumb_file) {
-	    my $hm = s2hm($interval);
-	    print qq{Image: "$file_in_bbd" ($lat/$long) ($date) ($hm)\tIMG:$thumb_file};
+	    my $interval_hm = s2hm($interval);
+	    print qq{Image: "$file_in_bbd" ($date) (delta=$interval_hm) ($lat/$long)\tIMG:$thumb_file};
 	    if ($anchor) {
 		print qq{|ANCHOR:$anchor};
 	    }

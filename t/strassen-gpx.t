@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-gpx.t,v 1.22 2008/01/28 22:52:07 eserte Exp $
+# $Id: strassen-gpx.t,v 1.23 2008/07/05 09:19:01 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -196,10 +196,11 @@ for my $use_xml_module (@variants) {
 	    my $xml_res = $s->Strassen::GPX::bbd2gpx;
 	    like($xml_res, qr{^<(\?xml|gpx)}, "Looks like XML");
 
-	    local $TODO;
-	    if ($Strassen::GPX::use_xml_module eq 'XML::Twig' && $XML::Twig::VERSION <= 3.32) {
-		$TODO = "Possible XML::Twig problem, missing preamble or missing encoding of data";
-	    }
+## Cannot reproduce this anymore, neither with perl5.8.8/XML::Twig 3.26 nor with perl5.10.0/XML::Twig 3.32
+# 	    local $TODO;
+# 	    if ($Strassen::GPX::use_xml_module eq 'XML::Twig' && $XML::Twig::VERSION <= 3.32) {
+# 		$TODO = "Possible XML::Twig problem, missing preamble or missing encoding of data";
+# 	    }
 	    gpxlint_string($xml_res, "xmllint for bbd2gpx output ($bbdfile)");
 	}
 
@@ -212,10 +213,11 @@ for my $use_xml_module (@variants) {
 	    my $xml_res = $s->Strassen::GPX::bbd2gpx;
 	    like($xml_res, qr{^<(\?xml|gpx)}, "Looks like XML");
 
-	    local $TODO;
-	    if ($Strassen::GPX::use_xml_module eq 'XML::Twig' && $XML::Twig::VERSION <= 3.32) {
-		$TODO = "Possible XML::Twig problem, missing preamble or missing encoding of data";
-	    }
+## See above
+# 	    local $TODO;
+# 	    if ($Strassen::GPX::use_xml_module eq 'XML::Twig' && $XML::Twig::VERSION <= 3.32) {
+# 		$TODO = "Possible XML::Twig problem, missing preamble or missing encoding of data";
+# 	    }
 	    gpxlint_string($xml_res, "xmllint for bbd2gpx output ($bbdfile)");
 	}
 
@@ -229,10 +231,11 @@ EOF
 	    my $xml_res = $s->Strassen::GPX::bbd2gpx;
 	    like($xml_res, qr{^<(\?xml|gpx)}, "Looks like XML");
 
-	    local $TODO;
-	    if ($Strassen::GPX::use_xml_module eq 'XML::Twig' && $XML::Twig::VERSION <= 3.32) {
-		$TODO = "Possible XML::Twig problem, missing preamble or missing encoding of data";
-	    }
+## See above
+# 	    local $TODO;
+# 	    if ($Strassen::GPX::use_xml_module eq 'XML::Twig' && $XML::Twig::VERSION <= 3.32) {
+# 		$TODO = "Possible XML::Twig problem, missing preamble or missing encoding of data";
+# 	    }
 	    gpxlint_string($xml_res, "xmllint for bbd2gpx output (string data with unicode > 128 < 256)");
 	SKIP: {
 		skip("No XML::LibXML parser available for checking", 2)
@@ -269,10 +272,11 @@ EOF
 	    my $xml_res = $s->Strassen::GPX::bbd2gpx;
 	    like($xml_res, qr{^<(\?xml|gpx)}, "Looks like XML");
 
-	    local $TODO;
-	    if ($Strassen::GPX::use_xml_module eq 'XML::Twig' && $XML::Twig::VERSION <= 3.32) {
-		$TODO = "Possible XML::Twig problem, missing preamble or missing encoding of data";
-	    }
+## See above
+# 	    local $TODO;
+# 	    if ($Strassen::GPX::use_xml_module eq 'XML::Twig' && $XML::Twig::VERSION <= 3.32) {
+# 		$TODO = "Possible XML::Twig problem, missing preamble or missing encoding of data";
+# 	    }
 	    gpxlint_string($xml_res, "xmllint for bbd2gpx output (string data with unicode > 255)");
 	SKIP: {
 		skip("No XML::LibXML parser available for checking", 2)

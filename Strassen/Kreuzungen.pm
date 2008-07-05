@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Kreuzungen.pm,v 1.16 2006/06/15 23:10:40 eserte Exp $
+# $Id: Kreuzungen.pm,v 1.17 2008/07/05 11:37:40 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Kreuzungen;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
 
 package Kreuzungen;
 use strict;
@@ -312,6 +312,70 @@ sub draw {
 			    -width => 4,
 			   );
     }
+}
+
+sub situation_at_point {
+    my($self, $coord, $before_coord, $after_coord) = @_;
+
+    require BBBikeUtil;
+
+    my($before_coord_x, $before_coord_y) = split /,/, $before_coord;
+    my($coord_x,        $coord_y)        = split /,/, $coord;
+    my($angle, $dir) = BBBikeUtil::schnittwinkel($before_coord_x, $before_coord_y,
+						 $coord_x,        $coord_y,
+						 (split /,/, $after_coord)
+						);
+
+    my @records = @{ $self->get_records($coord) };
+    my $before_street;
+    my $after_street;
+    my @neighbors;
+    for my $record (@records) {
+	my $coords = $record->[Strassen::COORDS()];
+
+	for my $def ([\$before_street, $before_coord],
+		     [\$after_street,  $after_coord],
+		    ) {
+	    my($other_street_ref, $other_coord) = @$def;
+	    if (!defined $$other_street_ref) {
+		for my $c_i (0 .. $#$coords) {
+		    if ($coords->[$c_i] eq $other_coord &&
+			(($c_i < $#$coords && $coords->[$c_i+1] eq $coord) ||
+			 ($c_i > 0         && $coords->[$c_i-1] eq $coord))
+		       ) {
+			$$other_street_ref = $record;
+			last;
+		    }
+		}
+	    }
+	}
+
+ 	for my $c_i (0 .. $#$coords) {
+ 	    if ($coords->[$c_i] eq $coord) {
+ 		if ($c_i > 0) {
+ 		    my($angle,$dir) = BBBikeUtil::schnittwinkel($before_coord_x, $before_coord_y,
+								$coord_x,        $coord_y,
+								(split /,/, $coords->[$c_i-1]),
+							       );
+		    push @neighbors, [$record, $angle, $dir];
+		}
+		if ($c_i < $#$coords) {
+ 		    my($angle,$dir) = BBBikeUtil::schnittwinkel($before_coord_x, $before_coord_y,
+								$coord_x,        $coord_y,
+								(split /,/, $coords->[$c_i+1]),
+							       );
+		    push @neighbors, [$record, $angle, $dir];
+		}
+ 	    }
+	}
+    }
+
+    (before_street => $before_street, # The street before the crossing
+     after_street  => $after_street,  # The street after the crossing
+     angle         => $angle,         # The angle in radians at point
+     dir           => $dir,           # Direction: l or r
+     neighbors     => \@neighbors,    # a list of [neighbors (Strassen records), angle and dir]
+    );
 }
 
 1;

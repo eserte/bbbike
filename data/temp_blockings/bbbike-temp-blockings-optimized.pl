@@ -710,15 +710,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1215208800,
-         'text' => 'B 168 zw. Abzw. Zeust und Beeskow Straßenbauarbeiten Vollsperrung 03.03.2008-04.07.2008 ',
-         'from' => 1204412400,
-         'id' => 1295,
-         'data' => 'userdel	2::inwork 69461,-27572 69160,-25724
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1219096799,
@@ -1012,15 +1004,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1215208800,
-         'text' => 'L 070 Herzberger Chaussee OD Dahme, zw. Mehlsdorfer Weg und OA Straßenbauarbeiten Vollsperrung 18.06.2008-04.07.2008 ',
-         'from' => 1213653600,
-         'id' => 1383,
-         'data' => 'userdel	q4::inwork 12928,-59868 12708,-60813
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1217023200,
@@ -1041,16 +1025,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_009192',
-         'until' => 1215208799,
-         'text' => 'Grumbkowstr. (Pankow) stadtauswärts zwischen Blankenburger Str. und Buchholzer Str. Baustelle, Fahrtrichtung gesperrt (bis 04.07.)',
-         'from' => 1214257294,
-         'id' => 1388,
-         'data' => 'userdel	1::inwork 11563,20048 11419,20327 11269,20667
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1215468000,
@@ -1100,16 +1075,6 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork 5148,-90524 5358,-90502 5798,-90075
 ',
          'type' => 'handicap'
-       },
-       {
-         'until' => 1215208800,
-         'text' => 'Eröffnung der US-Botschaft am Pariser Platz; Sperrungen rund um das Brandenburger Tor (4.7.2008) ',
-         'from' => 1215067855,
-         'id' => 1398,
-         'data' => 'userdel	2::temp 8539,12286 8515,12242 8214,12205 8089,12186
-userdel	2::temp 8610,12254 8515,12242 8600,12165 8595,12066 8737,12098 8861,12125
-',
-         'type' => 'gesperrt'
        }
      
 );

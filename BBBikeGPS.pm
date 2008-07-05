@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.33 2008/06/22 19:33:20 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.34 2008/07/05 17:24:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2008 Slaven Rezic. All rights reserved.
@@ -617,7 +617,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	    my $l = [$pointname, ["$x,$y"], $cat];
 	    $s->push($l);
 	    if ($s_speed) {
-		my $time = $wpt->Comment_to_unixtime;
+		my $time = $wpt->Comment_to_unixtime($chunk);
 		if (defined $time) {
 		    if ($last_wpt) {
 			my($last_x,$last_y,$last_x0,$last_y0,$last_time,$last_alt,$last_acc) = @$last_wpt;

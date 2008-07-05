@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.202 2008/05/14 17:20:14 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.203 2008/07/05 20:23:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2008 Slaven Rezic. All rights reserved.
@@ -440,7 +440,7 @@ sub enlarge_transposed_scrollregion {
 
 sub _layer_tag_expr {
     my $abk = shift;
-    "$abk || $abk-fg";
+    "$abk || $abk-fg || $abk-img";
 }
 
 sub enlarge_scrollregion_for_layer {
