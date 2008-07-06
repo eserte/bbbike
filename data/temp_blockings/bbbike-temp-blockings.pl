@@ -10395,8 +10395,8 @@ EOF
 userdel	1::inwork -3997,15664 -4012,15780 -3995,15832 -3942,15926 -3896,15999 -3828,16118 -3735,16205 -3631,16224
 EOF
      },
-     { from  => undef, # 
-       until => 1216072800, # 2008-07-15 00:00
+     { from  => 1215381132, # 
+       until => 1215381137, # 2008-07-15 00:00 undef
        text  => 'Holländerstr. (Reinickendorf) Richtung Markstr., zwischen Aroser Allee und Markstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 2008) ',
        type  => 'gesperrt',
        source_id => 'IM_007023',
@@ -11857,6 +11857,38 @@ EOF
        data  => <<EOF,
 userdel	2::temp 8539,12286 8515,12242 8214,12205 8089,12186
 userdel	2::temp 8610,12254 8515,12242 8600,12165 8595,12066 8737,12098 8861,12125
+EOF
+     },
+     { from  => 1215900000, # 2008-07-13 00:00
+       until => 1238194800, # 2009-03-28 00:00
+       text  => 'B 002 Wittenberg - LG - Treuenbrietzen OD Marzahna Kanal- und Straßenbau Vollsperrung 14.07.2008-27.03.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -31201,-45781 -30976,-45652
+EOF
+     },
+     { from  => 1215554400, # 2008-07-09 00:00
+       until => 1215727200, # 2008-07-11 00:00
+       text  => 'L 051 Burg - Straupitz zw. Byhleguhre und Burg Montage von Brückenelementen Vollsperrung 10.07.2008-10.07.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 62695,-60612 63083,-59893
+EOF
+     },
+     { from  => 1215900000, # 2008-07-13 00:00
+       until => 1238194800, # 2009-03-28 00:00
+       text  => 'L 082 Marzahna - Zeuden OD Marzahna Kanal- und Straßenbau Vollsperrung 14.07.2008-27.03.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -32661,-44144 -31201,-45781
+EOF
+     },
+     { from  => 1216159200, # 2008-07-16 00:00
+       until => 1220133600, # 2008-08-31 00:00
+       text  => 'L 141 Breddin - Kümmernitz OD Breddin Straßenneubau Vollsperrung 17.07.2008-30.08.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -70100,51862 -70753,51862 -70922,51604
 EOF
      },
     );
