@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.48 2008/04/19 12:20:36 eserte Exp $
+# $Id: Makefile,v 1.49 2008/07/06 19:20:38 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -122,6 +122,9 @@ png-to-gif:	\
 		eisenbahn.gif \
 		eisenbahn_klein.gif \
 		eisenbahn_mini.gif \
+		eisenbahn_stillg.gif \
+		eisenbahn_stillg_klein.gif \
+		eisenbahn_stillg_mini.gif \
 		ferry.gif \
 		ferry_klein.gif \
 		flag2_bl.gif \
@@ -194,6 +197,9 @@ png-to-xpm:	\
 		eisenbahn.xpm \
 		eisenbahn_klein.xpm \
 		eisenbahn_mini.xpm \
+		eisenbahn_stillg.xpm \
+		eisenbahn_stillg_klein.xpm \
+		eisenbahn_stillg_mini.xpm \
 		ferry.xpm \
 		ferry_klein.xpm \
 		flag2_bl.xpm \
