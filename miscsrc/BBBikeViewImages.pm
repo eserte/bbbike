@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.18 2008/07/05 23:00:30 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.19 2008/07/06 11:21:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2007,2008 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $geometry $viewer_menu);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(file_name_is_absolute);
 use File::Basename qw(dirname);
@@ -433,7 +433,7 @@ sub show_image_viewer {
 
 		$image_viewer_toplevel->Subwidget("DateLabel")->configure(-text => $date);
 
-		$image_viewer_toplevel->Subwidget("DeltaLabel")->configure(-text => chr(0x03B4)."=".$delta);
+		$image_viewer_toplevel->Subwidget("DeltaLabel")->configure(-text => chr(0x0394)."=".$delta);
 
 		$image_viewer_toplevel->{"photo"} = $p;
 		$image_viewer_toplevel->deiconify;

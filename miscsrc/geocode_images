@@ -4,8 +4,9 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
 
+use Cwd qw(realpath);
 use File::Spec;
 use File::Basename;
 use Getopt::Long;
@@ -35,6 +36,7 @@ my $date_index_file;
 my $date_db;
 my $v;
 my $relative_paths;
+my $out_file;
 
 sub usage (;$) {
     my $msg = shift;
@@ -45,7 +47,7 @@ usage: $0
           [-clockgps HH:MM:SS -clockcamera HH:MM:SS]
 	  [-anchor nw|n|ne|e|se|s|sw] [-thumbnailsize pixels]
           [-converter Image::GD::Thumbnail|ImageMagick|ImageMagick+exiftool|best|fast]
-	  [-recreatethumbnails] [-rel|-relativepaths]
+	  [-recreatethumbnails] [-rel|-relativepaths] [-o file]
           [-v] image ...
 EOF
 }
@@ -60,6 +62,7 @@ GetOptions("gpsdatadir=s" => \$gps_data_dir,
 	   "converter=s" => \$converter,
 	   "recreatethumbnails" => \$recreate_thumbnails,
 	   "rel|relativepaths!" => \$relative_paths,
+	   "o=s" => \$out_file,
 	   "v!" => \$v,
 	  ) or usage;
 
@@ -152,7 +155,7 @@ sub get_image_location {
 	    my $date = $lines[2];
 	    my $time = $lines[3];
 
-	    if (!defined $date || $date !~ m{^(\d+)[/-](\d+)[/-](\d{4})$}) {
+	    if (!defined $date || $date !~ m{^(\d+)[/.-](\d+)[/.-](\d{4})$}) {
 		local $^W = 0;
 		warn "Can't parse date <$date> in file <$file>, cannot geolocate, skipping...\n";
 		return;
@@ -297,11 +300,25 @@ if ($date_index_file) {
     
 }
 
+my $ofh;
+if (defined $out_file) {
+    $out_file = realpath $out_file;
+    open $ofh, ">", "$out_file.$$"
+	or die "Cannot write to $out_file.$$: $!";
+    select $ofh;
+}
+
 for my $file (@images) {
     if (-d $file) {
 	require File::Find;
+	$File::Find::name = $File::Find::name if 0; # cease -w
+	$File::Find::prune = $File::Find::prune if 0; # cease -w
 	my @files;
 	File::Find::find(sub {
+			     if ($_ eq '.xvpics') {
+				 $File::Find::prune = 1;
+				 return;
+			     }
 			     if (-f $_ && -r $_) {
 				 push @files, $File::Find::name;
 			     }
@@ -314,6 +331,14 @@ for my $file (@images) {
     }
 }
 
+if ($ofh) {
+    close $ofh
+	or die "While closing filehandle: $!";
+    rename "$out_file.$$", $out_file
+	or die "Can't rename $out_file.$$ to $out_file: $!";
+    select STDOUT;
+}
+
 sub handle_file {
     my $file = shift;
     my $ret = get_image_location($file);
@@ -321,10 +346,21 @@ sub handle_file {
 	my($lat, $long, $interval, $date) = @{$ret}{qw(Latitude Longitude Interval Date)};
 	my($x, $y) = $Karte::Standard::obj->trim_accuracy
 	    ($Karte::Polar::obj->map2standard($long, $lat));
-	my $file_in_bbd = $relative_paths ? $file : File::Spec->rel2abs($file);
+	my $file_in_bbd;
+	if ($relative_paths) {
+	    if ($out_file) {
+		$file_in_bbd = File::Spec->abs2rel(File::Spec->rel2abs($file), dirname($out_file));
+	    } else {
+		$file_in_bbd = $file;
+	    }
+	} else {
+	    $file_in_bbd = File::Spec->rel2abs($file);
+	}
 	my $thumb_file = create_thumbnail($file);
 	if ($relative_paths) {
-	    $thumb_file = File::Spec->abs2rel($thumb_file);
+	    $thumb_file = File::Spec->abs2rel(realpath($thumb_file),
+					      (defined $out_file ? dirname($out_file) : ())
+					     );
 	}
 	if (defined $thumb_file) {
 	    my $interval_hm = s2hm($interval);
@@ -380,10 +416,12 @@ sub create_thumbnail_Image_GD_Thumbnail {
 	warn $@;
 	return undef;
     } else {
-	open my $OUT, ">", $dest or die "Could not save $dest: $!";
+	open my $OUT, ">", "$dest.$$" or die "Could not save $dest: $!";
 	binmode $OUT;
 	print $OUT $thumb->jpeg;
 	close $OUT;
+	rename "$dest.$$", $dest
+	    or die "Cannot rename $dest.$$ to $dest: $!";
 	return $dest;
     }
 }
@@ -487,6 +525,13 @@ I<YYYY-MM-DD.trk>.
 
 =head1 EXAMPLES
 
+Assuming photos are located in files and subdirectories of the
+directory ~/images and the generated bbd should go to /tmp:
+
+    ~/src/bbbike/miscsrc/geocode_images -o /tmp/geocoded_images.bbd ~/images
+
+Or using a "find" before:
+
     find ~/images/scans/Baltikum-02/baltics-bestof/ -name "*.jpg" -print0 | xargs -0 ~/src/bbbike/miscsrc/geocode_images -v -gpsdatadir ~/src/bbbike/misc/gps_data/polen_baltikum/ > /tmp/5.bbd
 
     cd ~/images/from_handy/Fotos/ && find . -name "*.jpg" -print0 | xargs -0 ~/src/bbbike/miscsrc/geocode_images > /tmp/1.bbd
@@ -526,10 +571,17 @@ plugin is located in the F<miscsrc> subdirectory of bbbike.
 
 =item * If necessary, then adjust the scrollregion (in the same menu)
 
-=item * If the plugin was loaded, then it is possible to click on the
-thumbnails to get the larger version
+=item * If the plugin was loaded and activated ("View Images mode"),
+then it is possible to click on the thumbnails to get the larger
+version
 
 =back
+
+=head1 TODO
+
+ * There could be an -update switch
+ * Instructions needed on how to create
+   a bundle suitable for sharing with other people
 
 =head1 SEE ALSO
 
