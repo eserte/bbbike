@@ -113,7 +113,7 @@ EOF
 	$bbbike_html_rule .= <<EOF
 $poddef->[POD_HTML]: $poddef->[POD_POD]
 	$pod2html --title "$poddef->[POD_TITLE]" $poddef->[POD_POD] > $poddef->[POD_HTML]
-	\$(CLEAN_ADTER_POD2HTML)
+	\$(CLEAN_AFTER_POD2HTML)
 
 EOF
     }
