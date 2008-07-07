@@ -742,7 +742,9 @@ früher vorhandene Radwege abgesperrt	RW0;RW0 6230,13596 6366,13716 6493,13822 66
 #: XXX_prog: absichtliche Bruchstelle wegen schlechten Renderings
 	RW6;RW6 8988,9783 8779,9851
 asphaltiert	RW1; 10213,8665 10598,8563
-asphaltiert	RW1; 10598,8563 10796,8498 10911,8457 11271,8325 11416,8283 11632,8302
+asphaltiert	RW1; 10598,8563 10796,8498 10911,8457 11271,8325
+asphaltiert; Zweirichtungsradweg	RW2; 11271,8325 11416,8283
+asphaltiert	RW1; 11416,8283 11632,8302
 Gehweg ist für Radfahrer freigegeben, aber schlechte Qualität (unbefestigt)	RW0; 11632,8302 11416,8283 11271,8325 10911,8457 10796,8498 10598,8563
 Gehweg ist für Radfahrer freigegeben, aber schlechte Qualität (unbefestigt), nur die letzten ca. 100 Meter sind asphaltierter Radweg	RW0; 10598,8563 10213,8665
 	RW1;RW1 11632,8302 11763,8337 11892,8372
@@ -834,7 +836,6 @@ Die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14564,10262
 	RW4;RW4 14674,10811 14717,10855
 	RW1;RW2 14656,10197 14747,10108 14817,10031
 	RW1;RW1 13829,9905 13884,9882 13976,9840 14189,9748
-#: XXX für Radfahrer freigegeben? Stimmen die Zeiten
 Busspur ist Mo-Fr 6-20 Uhr und Sa 8-14 Uhr gültig	RW5; 13929,9401 13977,9462
 Busspur ist Mo-Fr 6-20 Uhr und Sa 8-14 Uhr gültig; die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW5; 13977,9462 14089,9610
 Radwegauffahrt abgesperrt (dahinter kommt auch nichts)	RW0; 14089,9610 13977,9462

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.189 2008/07/03 22:07:51 eserte Exp $
+# $Id: Makefile,v 2.190 2008/07/07 19:39:13 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1511,7 +1511,7 @@ BBD2POLISH?=	${MISCSRCDIR}/bbd2polish
 ## The old and unused multi images. Nowadays only one image may be
 ## uploaded at one time (bbbikeall)
 #CGPSMAPPER_FILES=	bbbike brb wide fragezeichen
-CGPSMAPPER_FILES=	bbbikeall
+CGPSMAPPER_FILES=	bbbikeall bbbikequal
 CGPSMAPPER_MP_FILES=	${CGPSMAPPER_FILES:S/$/.mp/:S/^/${PERSISTENTTMPDIR}\//}
 CGPSMAPPER_IMG_FILES=	${CGPSMAPPER_FILES:S/$/.img/:S/^/${PERSISTENTTMPDIR}\//}
 
@@ -1552,12 +1552,16 @@ ${PERSISTENTTMPDIR}/fragezeichen.mp:	${BBD2POLISH} \
 				fragezeichen
 	${BBD2POLISH} -mapset fragezeichen > $@
 
-${PERSISTENTTMPDIR}/bbbikeall.mp:	${BBD2POLISH} \
-					${PERSISTENTTMPDIR}/non-faked-strassen wasserstrassen flaechen sbahn ubahn berlin \
-					faehren fragezeichen \
-					orte landstrassen wasserumland rbahn potsdam \
-					orte2 landstrassen2 wasserumland2 deutschland
+BBB2POLISH_MAPSET_ALL_SOURCES=	${PERSISTENTTMPDIR}/non-faked-strassen wasserstrassen flaechen sbahn ubahn berlin \
+				faehren fragezeichen \
+				orte landstrassen wasserumland rbahn potsdam \
+				orte2 landstrassen2 wasserumland2 deutschland
+
+${PERSISTENTTMPDIR}/bbbikeall.mp:	${BBD2POLISH} ${BBB2POLISH_MAPSET_ALL_SOURCES}
 	${BBD2POLISH} -mapset all > $@
+
+${PERSISTENTTMPDIR}/bbbikequal.mp:	${BBD2POLISH} ${BBB2POLISH_MAPSET_ALL_SOURCES}
+	${BBD2POLISH} -mapset all -strcatqual > $@
 
 .for i in ${CGPSMAPPER_FILES}
 ${PERSISTENTTMPDIR}/$i.img: ${CGPSMAPPER} ${PERSISTENTTMPDIR}/$i.mp

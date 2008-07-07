@@ -2386,19 +2386,10 @@ next_check/last_checked beachten. Auch alle XXX-Strecken aufnehmen.
 temporaries aufnehmen (es sei denn, mit next_check/last_checked
 versehen).
 
-=item * (M3)
+=item * (M1)
 
-Das Strippen des Bezirk-Parts im Straßennamen: nicht für fragezeichen,
-da hier oft ein ergänzender Kommentar steht.
-
-=item * (M4)
-
-Nach Kategorien sortieren (HH -> H -> ...). Evtl. werden die Labels
-von zuerst genannten Straßen zuerst gezeichnet.
-
-=item * (M3)
-
-zwischen Wäldern und Parks, und Seen und Meer unterscheiden
+zwischen Seen und Meer unterscheiden (benötigt Support in
+wasserstrassen/wasserumland)
 
 =item * (M3)
 
@@ -2413,16 +2404,18 @@ Straßennummern - wie?
 
 Images oder Prozess veröffentlichen
 
-=item * (M3)
+=item * (M1)
 
 Eisenbahnen werden zurzeit nur bis 200m angezeigt. Für RB hochgehen
 auf 3 km oder mehr, bei S-Bahn auf ca. 800m, bei U-Bahn auf ca. 500m
-(falls es überhaupt geht).
+(falls es überhaupt geht). -> Ich glaube, dass ist beim Garmin so
+eingebaut. Nicht zu ändern. Vielleicht mal per Googlen überprüfen.
 
 =item * (H3)
 
-Friedhof-POI (flaechen), scenic-POI (comments-scenic), bank-POI (falls
-ich noch sparkassen/citibank-Daten habe), sonst. Sehenswürdigkeiten ->
+Friedhof-POI (als Punkt zusätzlich zu der Fläche, z.B. in der Nähe des
+Eingangs oder in der Mitte), bank-POI (falls ich noch
+sparkassen/citibank-Daten habe), sonst. Sehenswürdigkeiten ->
 building-POI, church-poi, hospital-poi, theater, museum, stadium, tall
 tower (Fernsehturm, Funkturm, Schäferbergturm), Zoo-POIs, igraliste
 (PVRT?)

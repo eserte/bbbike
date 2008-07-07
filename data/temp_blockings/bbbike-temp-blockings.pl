@@ -11559,8 +11559,8 @@ EOF
 userdel	2::inwork 8318,4558 8418,4432 8496,4331
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1215452791, # 
+       until => 1215452799, # XXX -> now in gesperrt-orig
        text  => 'Hauptstr. (Friedrichshain-Kreuzberg) in beiden Richtungen zwischen Markgrafendamm und untere Kynaststr. Baustelle, Straße vollständig gesperrt, Radfahrer können schiebend passieren',
        type  => 'handicap',
        source_id => 'IM_009127',
