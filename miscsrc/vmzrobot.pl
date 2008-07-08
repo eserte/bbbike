@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.25 2007/02/03 11:07:27 eserte Exp $
+# $Id: vmzrobot.pl,v 1.26 2008/07/08 19:12:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -27,6 +27,10 @@ use URI::Escape qw(uri_unescape);
 use Text::Balanced qw(extract_delimited);
 use Data::Compare qw(Compare);
 use Storable qw(dclone);
+
+require Karte;
+Karte::preload(qw(Standard Polar));
+use Strassen::Util;
 
 my $test;
 my $inputfile;
@@ -138,8 +142,6 @@ if (exists $output_as{'text'}) {
 
 if (exists $output_as{'bbd'}) {
     my $fh = file_or_stdout($output_as{bbd});
-    require Karte;
-    Karte::preload(qw(Standard Polar));
 
     print $fh <<EOF;
 #: title: VMZ
@@ -283,11 +285,21 @@ sub diff {
 		$$textref =~ s{\s*\(\d{1,2}:\d{2}\)\s*$}{}; # remove the superfluous timestamp
 	    }
 	    if (Compare($cmp_detail_link, $old_detail_link) == 0) {
-		push @{ $detail_link->{_state} }, "CHANGED";
 		if (Compare($cmp_detail_link->{text}, $old_detail_link->{text}) == 0) {
-		    push @{ $detail_link->{_state} }, "(text)";
+		    push @{ $detail_link->{_state} }, "CHANGED", "(text)";
 		} else {
-		    push @{ $detail_link->{_state} }, "(coords)";
+		    my($sx1_old,$sy1_old) = $Karte::Polar::obj->map2standard($old_detail_link->{x1},$old_detail_link->{y1});
+		    my($sx2_old,$sy2_old) = $Karte::Polar::obj->map2standard($old_detail_link->{x2},$old_detail_link->{y2});
+		    my($sx1_cmp,$sy1_cmp) = $Karte::Polar::obj->map2standard($cmp_detail_link->{x1},$cmp_detail_link->{y1});
+		    my($sx2_cmp,$sy2_cmp) = $Karte::Polar::obj->map2standard($cmp_detail_link->{x2},$cmp_detail_link->{y2});
+		    my $diff1 = sprintf "%.1f", Strassen::Util::strecke([$sx1_old, $sy1_old], [$sx1_cmp, $sy1_cmp]);
+		    my $diff2 = sprintf "%.1f", Strassen::Util::strecke([$sx2_old, $sy2_old], [$sx2_cmp, $sy2_cmp]);
+		    if ($diff1 < 10 && $diff2 < 10) {
+			push @{ $detail_link->{_state} }, "UNCHANGED";
+		    } else {
+			push @{ $detail_link->{_state} }, "CHANGED";
+		    }
+		    push @{ $detail_link->{_state} }, "(coords $diff1/$diff2)";
 		}
 	    } else {
 		push @{ $detail_link->{_state} }, "UNCHANGED";

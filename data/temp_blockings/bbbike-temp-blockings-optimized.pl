@@ -252,9 +252,9 @@ push @temp_blocking,
        undef,
        {
          'source_id' => 'IM_005465',
-         'until' => 1230764399,
-         'text' => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2008)',
-         'from' => 1214588331,
+         'until' => 1220219999,
+         'text' => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende August 2008)',
+         'from' => 1215543240,
          'id' => 944,
          'data' => 'userdel	1::inwork 2821,18831 2643,18738 2602,18737 2175,18740 1967,18743 1659,18747 1405,18749 1229,18750
 ',
@@ -1009,15 +1009,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        undef,
        undef,
-       {
-         'until' => 1215468000,
-         'text' => 'B 087 Herzberger Str. OD Schlieben, zw. Lindenstr. u. Abzw. Oelsig 415. Moienmarkt Vollsperrung 04.07.2008-07.07.2008 ',
-         'from' => 1215036000,
-         'id' => 1390,
-         'data' => 'userdel	q4::temp 10533,-76130 10891,-76066 11354,-75979
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {

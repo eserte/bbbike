@@ -2966,7 +2966,7 @@ EOF
        text  => 'Ehrlichstr. (Lichtenberg) zwischen Wildensteiner Str. und Treskowallee Baustelle, gesperrt (bis 23.10.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 18147,8583 18225,8532 18391,8425 18461,8377 18528,8331 18615,8269 18683,8232
+userdel	q4 18147,8583 18225,8532 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269 18683,8232
 EOF
      },
      { from  => undef, # 
@@ -7936,9 +7936,9 @@ EOF
 userdel	2::temp 23952,15086 23960,15021 23993,14797
 EOF
      },
-     { from  => 1214588331, # 2008-06-27 19:38
-       until => 1230764399, # 2008-12-31 23:59
-       text  => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2008)',
+     { from  => 1215543240, # 2008-07-08 20:54
+       until => 1220219999, # 2008-08-31 23:59
+       text  => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende August 2008)',
        type  => 'gesperrt',
        source_id => 'IM_005465',
        data  => <<EOF,
