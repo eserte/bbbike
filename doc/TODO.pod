@@ -2416,15 +2416,9 @@ eingebaut. Nicht zu ändern. Vielleicht mal per Googlen überprüfen.
 Friedhof-POI (als Punkt zusätzlich zu der Fläche, z.B. in der Nähe des
 Eingangs oder in der Mitte), bank-POI (falls ich noch
 sparkassen/citibank-Daten habe), sonst. Sehenswürdigkeiten ->
-building-POI, church-poi, hospital-poi, theater, museum, stadium, tall
-tower (Fernsehturm, Funkturm, Schäferbergturm), Zoo-POIs, igraliste
+building-POI, stadium, tall tower (Fernsehturm, Funkturm,
+Schäferbergturm -> müsste gekennzeichnet sein), Zoo-POIs, igraliste
 (PVRT?)
-
-=item * (H3)
-
-Regionenübergreifende Dateien: feststellen, ob in Berlin oder nicht
-und dementsprechend in der richtigen Karte zeichnen (mittels
-line/point_in_polygon).
 
 =item * (H3)
 

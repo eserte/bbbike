@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2polish,v 1.28 2008/07/07 19:55:29 eserte Exp $
+# $Id: bbd2polish,v 1.29 2008/07/07 20:36:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -413,6 +413,13 @@ sub cat2type {
     return 3 if $cat =~ m{^H$anyquality$}; # Principal HWY - medium
     return 4 if $cat =~ m{^N$anyquality$}; # Arterial Road - medium
     return 6 if $cat =~ m{^NN$anyquality$}; # Road - thin
+
+    # Thickness of lines:
+    #   1
+    #   2, 3
+    #   4, 5
+    #   6         unfortunately in small scales *thicker* than 4, 5!
+    #   7, 10
 
     if ($file =~ /[rus]bahnhof$/) {
         return 2816 if $cat =~ /^[RUS][ABCGP]?$/; # namedpoint
