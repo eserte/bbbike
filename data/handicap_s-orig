@@ -568,7 +568,7 @@ Wilseder Str.: eng mit ein- und ausparkenden Autos	q1 6295,5132 6288,4906
 Hünensteig: Fußgänger	q2 6396,5125 6406,5223 6108,5253
 #: by: ^^^
 #: by: Thomas (dobr@...) vvv
-(Götzstr. - Albrechtstr.): Fußgänger	q2 9460,6519 9453,6415 9389,6348 9367,6160 9349,6075
+(Götzstr. - Albrechtstr.): Fußgänger	q2 9460,6519 9453,6415 9389,6348 9381,6277 9367,6160 9349,6075
 #: note: ähnliche Angaben von Christian (chrispan), nach Mailverkehr mit ihm (Message-Id: <E1EtpOe-0001ZH-IJ@www.radzeit.de>) von q2 auf q4 degradiert:
 (Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Kleingartenanlage, Fußgänger (schieben!), tiefe Steinregenabläufe quer zum Weg	q4 7921,4451 7935,4466 8027,4571 8162,4725
 #: by: ^^^
@@ -957,7 +957,7 @@ Sodtkestr.: enge Straße	q1 12221,15514 12302,15664 12382,15802 12423,15875
 #: by: Dennis (jansen):
 Glauberstr.: viele parkende Autos, daher eng	q1 5556,984 5455,1150 5421,1205 5411,1259
 #: by: Mario (saric):
-(Templerzeile - Götzstr.): Parkweg, Fußgänger, teilweise mit Radweg	q1 9681,6180 9708,6493
+(Templerzeile - Götzstr.): Parkweg, Fußgänger, teilweise mit Radweg	q1 9681,6180 9683,6199 9708,6493
 #: by: Florian (berlin):
 (Darbystr. - Falkenseer Chaussee): schmal, aber auch mit Hänger passierbar	q1 -5505,15859 -5526,15757
 #: by: Pythagoras:
@@ -1211,7 +1211,7 @@ Am Heideberg: enge Straße	q1 -7149,14768 -7156,14813 -7169,14849 -7209,14937 -72
 #: by: Maria (ferrusac):
 Reinhardtstr. (Tempelhof): enge Straße	q1 9154,6638 9131,6553 9134,6467 9143,6415
 #: by: Thomas Behle:
-Hackenbergstr.: enge Straße	q1 20428,3786 20280,3996 20253,4034 20248,4040
+Hackenbergstr.: enge Straße	q1 20428,3786 20380,3855 20280,3996 20253,4034 20248,4040
 #: by: Manon Pfaff:
 Breestpromenade: enge Straße	q1 25761,5613 26059,5631 26199,5643
 #: by: Theo Schallon:
@@ -1247,3 +1247,13 @@ Immenweg: eng (einspurig)	q1 6744,4983 6415,5028 6383,4890
 #: by: Ralf Pilgrim:
 #: corrected_by: srt/policy (q2 -> q1)
 Albtalweg: enge Straße	q1 5374,22664 5338,22753 5297,22830 5243,22896
+#: by: Christion Bräuniger:
+Franckepark: einige Fußgänger	q1 9381,6277 9426,6239 9463,6232 9683,6199
+#: by: Carola Becker
+#: corrected_by: srt/policy (q4 -> q2)
+Straße 78: enge Straße	q2 7715,19408 7797,19580
+#: by: Chris (razorbacky):
+#: corrected_by: srt/policy (q2 -> q1)
+Tankredstr.: enge Straße	q1 8264,5383 8328,5417 8365,5418 8394,5412 8484,5347
+#: by: Thomas Penski:
+Battenheimer Weg: enge Straße	q1 11754,1021 11681,1031 11393,1243

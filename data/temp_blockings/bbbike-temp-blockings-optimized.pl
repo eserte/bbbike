@@ -1086,6 +1086,25 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork -70100,51862 -70753,51862 -70922,51604
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_009340',
+         'until' => undef,
+         'text' => 'Heinrich-Mann-Str. (Pankow) in beiden Richtungen zwischen Heinrich-Mann-Platz und Hermann-Hesse-Str. Baustelle, Straße vollständig gesperrt ',
+         'from' => undef,
+         'id' => 1403,
+         'data' => 'userdel	2::inwork 9457,18612 9301,18722
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1220133600,
+         'text' => 'L 793 Schönhagen - Ludwigsfelde Brücke über den Faulen Graben bei Blankensee Brückenneubau Vollsperrung 17.07.2008-30.08.2008 ',
+         'from' => 1216159200,
+         'id' => 1404,
+         'data' => 'userdel	2::inwork -7219,-19011 -7172,-19223
+',
+         'type' => 'gesperrt'
        }
      
 );

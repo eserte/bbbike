@@ -11891,4 +11891,21 @@ EOF
 userdel	q4::inwork -70100,51862 -70753,51862 -70922,51604
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Heinrich-Mann-Str. (Pankow) in beiden Richtungen zwischen Heinrich-Mann-Platz und Hermann-Hesse-Str. Baustelle, Straße vollständig gesperrt ',
+       type  => 'gesperrt',
+       source_id => 'IM_009340',
+       data  => <<EOF,
+userdel	2::inwork 9457,18612 9301,18722
+EOF
+     },
+     { from  => 1216159200, # 2008-07-16 00:00
+       until => 1220133600, # 2008-08-31 00:00
+       text  => 'L 793 Schönhagen - Ludwigsfelde Brücke über den Faulen Graben bei Blankensee Brückenneubau Vollsperrung 17.07.2008-30.08.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -7219,-19011 -7172,-19223
+EOF
+     },
     );

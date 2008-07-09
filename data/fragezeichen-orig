@@ -223,7 +223,6 @@ Potsdamer Str. oder Hauptstr.: anscheinend gehören die Häuser auf der westlichen
 Runebergweg/Sibeliusweg: Runebergweg hat starkes Gefälle und Sibeliusweg hat leichtes Gefälle, aber laut hm96.dat sieht es andersrum aus --- da muss ich mit Höhenmesser langfahren	? -6904,5175 -6747,5169 -6787,5076
 #: XXX_prog: Drängelgitter auch auf dem Mittelstreifen Sonnenallee. Kann zurzeit nicht dargestellt werden.
 Drängelgitter	? 15496,6314 15504,6328 15516,6357
-Tempelhofer Damm - Templerzeile: Schranke bei der Einfahrt, Parkplatz?, dann wassergebundene Decke, Q1, einige Fußgänger (q2->q1), aber wie ist die genaue Wegführung?	? 9245,6362 9389,6348 9686,6229
 ######################################################################
 #
 #  AUFNAHME IN DB FRAGLICH
@@ -239,8 +238,6 @@ Achenbachpromenade: Parkweg Q1, q1 Fußgänger (Radfahren erlaubt), green1, unbele
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
-#: by: Carola Becker
-Straße 78: mäßiger loser Sandweg, Q2, enge Straße (q4->q2)	? 7715,19408 7797,19580
 #: by: anonymous:
 Druckerkehre: guter Beton, Q1 (note: q3 wegen "kurzer Straße/Sackgasse" ignoriert)	? 16657,1124 16669,1166 16698,1198
 #: by: Sarah (sweetblngirl):
@@ -263,9 +260,6 @@ Korbmacherweg: guter Asphalt, Q0	? 16352,1226 16375,1313
 Hoppegartener Str. (Neuenhagen b. Berlin): Kopfsteinpflaster, Q3	? 29497,12770 29220,12830
 #: by: Dirk (no email):
 Falkenstr. (Hennigsdorf): Verbundsteinpflaster, Q0-	? -3881,25882 -3910,25724 -3929,25637 -3951,25538
-#: by: Verena (ohne email):
-#: XXX Die Bordsteinkanten,q4 (Gehweg???) ignoriere ich mal
-Kastanienallee (Blankenburg): mäßiges Kopfsteinpflaster, Q2	? 13951,21086 14005,21262 14069,21471 14120,21645 14156,21753
 #: by: anonymous:
 Harzburger Str. (Blankenburg): guter Asphalt, Q0	? 13709,21334 13817,21304 13910,21280 14005,21262 14096,21243 14134,21235
 #: by: Kerstin Seppik:
@@ -296,8 +290,6 @@ Birnenpfad: loser Sandweg, Q3	? -7850,14555 -7762,14542 -7663,14532 -7553,14518
 Erna-Sack-Str.: sehr gutes Verbundsteinpflaster, Q0, enge Straße	? -7486,13321 -7496,13214
 #: by: Christian Liening:
 Lautentaler Str.: mäßiger Asphalt, Q1	? 13624,21057 13709,21334 13825,21730
-#: by: Monika Kaiser:
-Thaler Str.: Asphalt, Q0	? 13744,21067 13817,21304 13884,21524 13938,21700
 #: by: sandra (dries):
 #: XXX: Widerspruch von anonymous: fester Sandweg, Q2:
 Tongrubenweg: guter Asphalt, Q0, enge Fahrbahn, q1	? 28493,2315 28415,2233 28308,2120 28278,2068 28257,1991 28241,1857 28205,1630
@@ -444,7 +436,7 @@ Märchenweg/Rübezahlweg: Qualität?	? 14288,19459 14248,19370 14044,19502 13297,19
 # ansonsten gleiche Wegbeschaffenheit wie der kreuzende Weg:
 Am Marderberg, kreuzender Weg: genaue Wegführung?	? 14288,19459 14328,19527 14201,19946
 #: note: laut anonymen Eintrag "fester Sandweg", "für Autoverkehr gesperrt":
-Am Fließ: befahrbar, Qualität?	? 14751,19882 14268,20313 13979,20407 13938,20548 13584,20621
+Am Fließ: befahrbar, Qualität?	? 14751,19882 14386,20237 14268,20313 13979,20407 13938,20548 13584,20621
 Schönerlinder Str.: ist die Radwegbenutzungspflicht nördlich der Autobahnbrücke (Berliner Ring) auch aufgehoben?	? 12957,26186 13192,26628 13267,26891
 Parforceweg: Qualität? (das östliche Ende sieht nur mäßig aus)	? -643,7252 -728,7310 -1008,7427 -1142,7493 -1308,7558 -1328,7597 -1787,7932 -1843,8128 -2028,8270 -2078,8217 -2117,8204 -2156,8208 -2294,8232 -2386,8282
 Verlängerung Verbindungschaussee: Qualität?	? -2834,5578 -3605,4520
@@ -579,6 +571,7 @@ Alt-Brieselang - Brieselang: Qualität? genaue Wegführung?	? -16914,22393 -18103,
 Marquardt, Hauptstr.: Laut mobil-potsdam.de: Asphaltiert	? -18811,4782
 Goetheplatz: Einbahnstraßenregelung auch für Radfahrer? Qualität?	? -9809,-1435 -9902,-1445 -9922,-1395 -9809,-1435
 Fontanestr.: laut "mobil-potsdam.de" asphaltiert	? -9215,-1431 -9219,-1590 -9224,-1727
+#: XXX: könnte aber laut Sarah (sweetblngirl) mittlerweile asphaltiert sein:
 Strausberg - Garzau: Qualität (laut "Berliner Umland" teilweise witterungsabhängige Strecke, auf Garzauer Seite anscheinend nur Feldweg)?	? 42578,15750 43666,15719 43839,15716 45536,15438 46035,15042 46421,14990
 Waldsieversdorf: laut "Berliner Umland" geeignete Strecke	? 54751,15669 55000,15887 55225,15862 55875,16287 56487,16825
 Waldsieversdorf - Münchehofe: laut "Berliner Umland" witterungsabhängige Strecke	? 56487,16825 56907,17041 57839,18016 58223,18144 58345,18388
@@ -666,7 +659,6 @@ Laut <cp6net$f0g$1@zeppelin.rz.uni-potsdam.de> ist die Eisenbahnbrücke für Fußgä
 Weg entlang der Elbe: Qualität?	? -91387,-49350 -91150,-49775 -90062,-50750 -89709,-51230
 Fürstenwalder Damm/Müggelseedamm: Vorfahrtsregelung?	? 28195,5141
 Dahlwitzer Landstraße/Schöneicher Str.: Vorfahrtsregelung?	? 25585,6050
-Battenheimer Weg: Qualität?	? 11754,1021 11681,1031 11393,1243
 Teerofenweg: Waldweg? Qualität?	? -7067,-36 -6411,-868
 #XXX Koordinaten stimmen nicht mehr! Darßer Str.: beidseitiger Radweg ja, eintragen!	? B24943,-13819 B23513,-13631
 #XXX Koordinaten stimmen nicht mehr! Granitzstr.: wenigstens teilweise Radweg Richtung Osten? (Richtung Westen definitiv kein Radweg)	? B14908,-13452 B15798,-14098
@@ -832,7 +824,7 @@ Gutengermendorf - Häsen: Qualität? am Bahnübergang anscheinend Feldweg (Q2)	? -6
 Seilershof - B96: Qualität? am Bahnübergang anscheinend asphaltiert	? -7455,74445 -6794,74226 -6517,74079 -6100,73876 -6037,73865
 Heylstr: Qualität?	? 6459,8281 6552,8281
 #: XXX Eintrag von Gabriel (glaeser) existiert, aber ist tatsächlich diese Mühlenstr. gemeint?
-Mühlenstr. (Blankenburg): Asphalt, Radweg?	? 14389,20254 14460,20406 14499,20649 14589,20988
+Mühlenstr. (Blankenburg): Asphalt, Radweg?	? 14402,20250 14460,20406 14499,20649 14589,20988
 Beelitz - Schönefeld: laut "Berliner Umland" wurde die Straße etwas nach Süden verlegt	? -18265,-20481 -18031,-20502 -17867,-20681
 Thyrow - Kerzendorf (ehem. B101): laut "Berliner Umland" am Bahnübergang unterbrochen, B101n stattdessen benutzen! 	? 1090,-16407 1773,-15712 1856,-15356
 Umfahrung Nauen: auch für Radfahrer benutzbar?	? -24421,19803 -24681,20018 -24904,20093 -25871,20229 -26745,20437 -27095,20987 -27689,21958 -28075,22250
@@ -1607,7 +1599,6 @@ Ingostr. - Am Teltowkanal: Durchfahrt für Radfahrer möglich? Qualität?	? 7970,46
 Tejastr.: Qualität?	? 7830,4667 7897,4585
 Gerdsmeyerweg: Qualität?	? 8165,5444 8161,5399 8130,5353 8036,5309
 Gerdsmeyerweg - Marienhöher Weg: Durchfahrt für Radfahrer möglich? Qualität?	? 8036,5309 7944,5237
-Tankredstr.: Qualität?	? 8264,5383 8328,5417 8365,5418 8394,5412 8484,5347
 Heinickeweg: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 2207,14576 2210,14696 2224,14825
 Haeftenzeile: Qualität?	? 2134,14440 2142,14573
 Popitzweg - Halemweg: ist der Weg über der U-Bahn auch für Radfahrer befahrbar? Qualität? Geht es über den Halemweg noch weiter?	? 1881,14425 2126,14392 2254,14387 2380,14392
@@ -1747,7 +1738,6 @@ Am Britzer Garten: Qualität?	? 11159,3730 11135,3838 11162,3844 11131,3973 11189
 Walnußweg: Qualität?	? 11264,3767 11214,3939 11196,3963 11189,3986 11187,3999 11187,4075 11258,4273
 Windröschenweg: Qualität?	? 11375,3807 11314,4026
 Seerosensteig: Qualität?	? 11187,3999 11271,4021 11314,4026 11374,4041 11567,4085
-Teichrosenpfad: Qualität?	? 11374,4041 11371,4111 11401,4198 11381,4267 11376,4331
 Wochenendweg: Qualität?	? 11401,4198 11444,4153 11547,4127
 Im Rosengrund: Qualität?	? 11576,4339 11601,4242 11619,4146 11633,4117 11684,3919
 Straße 214A: Qualität? Für Autos gesperrt?	? 11563,4099 11633,4117
@@ -2049,7 +2039,6 @@ Mündeseerundweg: Qualität? Wie geht's weiter Richtung Südosten?	? 50403,70708 50
 Deitmerstr.: Qualität? Können Radfahrer zur Schloßstr. gelangen und den dortigen Mittelstreifen überqueren?	? 5191,5826 5078,5889 5048,5904
 Hermesweg: Qualität?	? 6116,4707 6072,4606
 Gurlittstr.: Qualität?	? 7213,5062 6949,5096
-Oehlertring: Qualität?	? 7238,5171 7018,5201 6925,5215 6885,5237 6868,5262 6865,5311 6892,5330 6896,5347 6882,5389 6889,5431 6922,5449 7157,5418 7290,5399
 Kottesteig: Qualität? Für Autofahrer gesperrt? Kann der Munsterdamm in Höhe Kottesteig überquert werden?	? 6868,5262 6806,5230 6767,5233
 Kelchstr.: Qualität?	? 7386,4692 7424,4821 7437,4855 7456,4934
 Doldenweg: Qualität? Für Autofahrer gesperrt?	? 7424,4821 7487,4802
@@ -2152,8 +2141,7 @@ Fritz-Lang-Platz: Qualität? Für Autos gesperrt? Einbahnstraße?	? 23871,14914 238
 Kurt-Weill-Gasse: Qualität? Für Autos gesperrt?	? 23820,14896 23787,14919
 Fritz-Lang-Str.: Qualität? Für Autos gesperrt?	? 23841,15004 23846,14931
 Fritz-Lang-Str.: Qualität? Für Autos gesperrt?	? 23856,14868 23878,14748
-Am Dorfanger - Parkanlage: Qualität des Fußwegs? Nachts beleuchtet?	? 4803,20529 4790,20493
-Triftstr. - Eichborndamm: Qualität des Parkwegs? Nachts beleuchtet?	? 4538,20621 4661,20559 4790,20493 4885,20444
+Triftstr. - Eichborndamm: Ist der Parkweg nachts beleuchtet?	? 4538,20621 4661,20559 4790,20493 4885,20444
 #: XXX unklarer Eintrag von Sabine (3113sf): guter Asphalt von Ehrlichstr. bis Ende, aber welches Ende? vvv
 Lehndorffstr.: Qualität?	? 18401,8636 18397,8611 18407,8592 18428,8588 18448,8602
 Lehndorffstr.: Qualität?	? 18407,8592 18322,8470 18221,8328 18215,8316 18269,8161 18333,8059 18412,7985
@@ -2162,6 +2150,17 @@ Lehndorffstr.: Qualität?	? 18407,8592 18322,8470 18221,8328 18215,8316 18269,816
 #: XXX: unklarer Eintrag von anonymous: Asphalt, Q2, aber auf dem Luftbild scheint es teilweise wie Kopfsteinpflaster auszusehen?
 #: XXX: pwegner1 meint: mäßiger Asphalt, Bordsteinkanten, Radstreifen???
 #: XXX: Ich glaube, ich weiß, warum es Widersprüche gibt: auf einem Teilabschnitt scheint es einen radwegähnlichen Seitenstreifen oder so zu geben.
-Raschdorffstr.: Qualität?	? 7439,17985 7680,18106 7888,18208 7954,18251 8096,18456 8174,18565 8261,18689
-#: XXX siehe Luftbild
-Albtalweg: ist der Mittelteil für Autos gesperrt?	? 5338,22753 5297,22830
+#: XXX: Robert nochmal: schlechte Qualität 1-60, der Rest ist besser
+Raschdorffstr.: Qualität?	? 7439,17985 7680,18106 7888,18208 7954,18251
+#: XXX: das ist der Rest:
+Raschdorffstr.: Qualität?	? 7954,18251 8096,18456 8174,18565 8261,18689
+Stechapfelweg: Qualität?	? 20668,1524 20671,1568 20689,1613 20732,1702 20766,1752 20790,1797
+Tollkirscheweg: Qualität?	? 20689,1613 20609,1654 20539,1722
+Strohblumenweg: Qualität?	? 20716,1860 20618,1781 20539,1722 20525,1713 20478,1681 20456,1639 20440,1588
+Genossenschaftssteg: Qualität zwischen Straße 33 und Ende?	? 7920,19471 7911,19449 8029,19353 8105,19286 8099,19276 8122,19252 8194,19193
+#: XXX laut Lydia Weitmann besser geeignet als z.B. der Teichrosenpfad: vvv
+Parkweg am Britzer Garten: Qualität? Für Autofahrer gesperrt?	? 11135,3838 11107,3946 11104,3962
+(Am Britzer Garten - Straße 229): Qualität?	? 11104,3962 11111,4055 11141,4214 11152,4316
+#: XXX ^^^
+Pichelswerderstr. (Pankow): Qualität?	? 9791,17877 9723,17920
+Stavenhagener Str.: Qualität? Einbahnstraße, auch für Radfahrer gültig?	? 13634,5126 13534,5111 13444,5097 13359,5086
