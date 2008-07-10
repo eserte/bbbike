@@ -11908,28 +11908,4 @@ EOF
 userdel	2::inwork -7219,-19011 -7172,-19223
 EOF
      },
-     { from  => 1215900000, # 2008-07-13 00:00
-       until => 1220997600, # 2008-09-10 00:00
-       text  => 'B 320 Lieberose - Lamsfeld OD Lamsfeld Grundhafter Ausbau Vollsperrung 14.07.2008-09.09.2008 ',
-       type  => 'handicap',
-       data  => <<EOF,
-userdel	q4::inwork 66964,-46059 67237,-46233
-EOF
-     },
-     { from  => 1216504800, # 2008-07-20 00:00
-       until => 1217628000, # 2008-08-02 00:00
-       text  => 'L 014 Kyritz - Wittstock Brücke über die A 24 zw. Herzsprung und Wittstock Brückenteilsanierung Vollsperrung 21.07.2008-01.08.2008 ',
-       type  => 'gesperrt',
-       data  => <<EOF,
-userdel	2::inwork -53403,76884 -53483,76327
-EOF
-     },
-     { from  => 1216159200, # 2008-07-16 00:00
-       until => 1219960800, # 2008-08-29 00:00
-       text  => 'L 064 Riesaer Str. OD Bad Liebenwerda, zw. Baumschulenweg u. Südring Neubau Durchlass Vollsperrung 17.07.2008-28.08.2008 ',
-       type  => 'handicap',
-       data  => <<EOF,
-userdel	q4::inwork 11862,-99775 11974,-99110
-EOF
-     },
     );
