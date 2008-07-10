@@ -11891,13 +11891,13 @@ EOF
 userdel	q4::inwork -70100,51862 -70753,51862 -70922,51604
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Heinrich-Mann-Str. (Pankow) in beiden Richtungen zwischen Heinrich-Mann-Platz und Hermann-Hesse-Str. Baustelle, Straße vollständig gesperrt ',
+     { from  => 1215723261, # 2008-07-10 22:54
+       until => 1216159199, # 2008-07-15 23:59
+       text  => 'Heinrich-Mann-Str. (Pankow) in Richtung Kreuzstr. zwischen Hermann-Hesse-Str. und Heinrich-Mann-Platz Baustelle, Fahrtrichtung gesperrt (bis Mitte 07.2008)',
        type  => 'gesperrt',
        source_id => 'IM_009340',
        data  => <<EOF,
-userdel	2::inwork 9457,18612 9301,18722
+userdel	1::inwork 9301,18722 9457,18612
 EOF
      },
      { from  => 1216159200, # 2008-07-16 00:00
@@ -11906,6 +11906,30 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -7219,-19011 -7172,-19223
+EOF
+     },
+     { from  => 1215900000, # 2008-07-13 00:00
+       until => 1220997600, # 2008-09-10 00:00
+       text  => 'B 320 Lieberose - Lamsfeld OD Lamsfeld Grundhafter Ausbau Vollsperrung 14.07.2008-09.09.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 66964,-46059 67237,-46233
+EOF
+     },
+     { from  => 1216504800, # 2008-07-20 00:00
+       until => 1217628000, # 2008-08-02 00:00
+       text  => 'L 014 Kyritz - Wittstock Brücke über die A 24 zw. Herzsprung und Wittstock Brückenteilsanierung Vollsperrung 21.07.2008-01.08.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -53403,76884 -53483,76327
+EOF
+     },
+     { from  => 1216159200, # 2008-07-16 00:00
+       until => 1219960800, # 2008-08-29 00:00
+       text  => 'L 064 Riesaer Str. OD Bad Liebenwerda, zw. Baumschulenweg u. Südring Neubau Durchlass Vollsperrung 17.07.2008-28.08.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 11862,-99775 11974,-99110
 EOF
      },
     );

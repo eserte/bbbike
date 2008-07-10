@@ -977,15 +977,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1215640800,
-         'text' => 'L 037 Müllrose - B 5, Petershagen Bahnübergang in der OD Jacobsdorf Gleisbauarbeiten Vollsperrung 23.06.2008-09.07.2008 ',
-         'from' => 1214085600,
-         'id' => 1382,
-         'data' => 'userdel	2::inwork 75272,-7514 75394,-6991 75402,-6910
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1089,11 +1081,11 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        {
          'source_id' => 'IM_009340',
-         'until' => undef,
-         'text' => 'Heinrich-Mann-Str. (Pankow) in beiden Richtungen zwischen Heinrich-Mann-Platz und Hermann-Hesse-Str. Baustelle, Straße vollständig gesperrt ',
-         'from' => undef,
+         'until' => 1216159199,
+         'text' => 'Heinrich-Mann-Str. (Pankow) in Richtung Kreuzstr. zwischen Hermann-Hesse-Str. und Heinrich-Mann-Platz Baustelle, Fahrtrichtung gesperrt (bis Mitte 07.2008)',
+         'from' => 1215723261,
          'id' => 1403,
-         'data' => 'userdel	2::inwork 9457,18612 9301,18722
+         'data' => 'userdel	1::inwork 9301,18722 9457,18612
 ',
          'type' => 'gesperrt'
        },
@@ -1105,6 +1097,33 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	2::inwork -7219,-19011 -7172,-19223
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1220997600,
+         'text' => 'B 320 Lieberose - Lamsfeld OD Lamsfeld Grundhafter Ausbau Vollsperrung 14.07.2008-09.09.2008 ',
+         'from' => 1215900000,
+         'id' => 1405,
+         'data' => 'userdel	q4::inwork 66964,-46059 67237,-46233
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1217628000,
+         'text' => 'L 014 Kyritz - Wittstock Brücke über die A 24 zw. Herzsprung und Wittstock Brückenteilsanierung Vollsperrung 21.07.2008-01.08.2008 ',
+         'from' => 1216504800,
+         'id' => 1406,
+         'data' => 'userdel	2::inwork -53403,76884 -53483,76327
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1219960800,
+         'text' => 'L 064 Riesaer Str. OD Bad Liebenwerda, zw. Baumschulenweg u. Südring Neubau Durchlass Vollsperrung 17.07.2008-28.08.2008 ',
+         'from' => 1216159200,
+         'id' => 1407,
+         'data' => 'userdel	q4::inwork 11862,-99775 11974,-99110
+',
+         'type' => 'handicap'
        }
      
 );
