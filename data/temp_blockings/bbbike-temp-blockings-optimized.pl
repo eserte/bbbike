@@ -1052,15 +1052,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1215727200,
-         'text' => 'L 051 Burg - Straupitz zw. Byhleguhre und Burg Montage von Brückenelementen Vollsperrung 10.07.2008-10.07.2008 ',
-         'from' => 1215554400,
-         'id' => 1400,
-         'data' => 'userdel	2::inwork 62695,-60612 63083,-59893
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1238194800,
          'text' => 'L 082 Marzahna - Zeuden OD Marzahna Kanal- und Straßenbau Vollsperrung 14.07.2008-27.03.2009 ',
@@ -1097,6 +1089,33 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	2::inwork -7219,-19011 -7172,-19223
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1220997600,
+         'text' => 'B 320 Lieberose - Lamsfeld OD Lamsfeld Grundhafter Ausbau Vollsperrung 14.07.2008-09.09.2008 ',
+         'from' => 1215900000,
+         'id' => 1405,
+         'data' => 'userdel	q4::inwork 66964,-46059 67237,-46233
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1217628000,
+         'text' => 'L 014 Kyritz - Wittstock Brücke über die A 24 zw. Herzsprung und Wittstock Brückenteilsanierung Vollsperrung 21.07.2008-01.08.2008 ',
+         'from' => 1216504800,
+         'id' => 1406,
+         'data' => 'userdel	2::inwork -53403,76884 -53483,76327
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1219960800,
+         'text' => 'L 064 Riesaer Str. OD Bad Liebenwerda, zw. Baumschulenweg u. Südring Neubau Durchlass Vollsperrung 17.07.2008-28.08.2008 ',
+         'from' => 1216159200,
+         'id' => 1407,
+         'data' => 'userdel	q4::inwork 11862,-99775 11974,-99110
+',
+         'type' => 'handicap'
        }
      
 );

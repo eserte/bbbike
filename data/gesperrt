@@ -438,6 +438,8 @@ Adlershofer Str.	1 21633,4355 21585,4459
 Adlershofer Str.	1 21633,4355 21649,4111 21655,4091 21679,4059
 Alt-Wittenau	1 4597,20778 4649,20771 4953,20624 5117,20517 4935,20574 4726,20690 4597,20778
 Miningstr.	1 13444,5097 13455,4995 13432,4900 13466,4889 13503,4846
+Dörchläuchtingstr.	1 13511,4695 13486,4650 13485,4496
+Küsterstr.	1 -624,15494 -593,15300 -569,15167
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
 Humboldtring -> Hans-Marwitza-Ring: Hochstraße	3::igndisp -11399,-1339 -11461,-1424 -11358,-1491
 Hans-Marwitza-Ring -> Humboldtring: Hochstraße	3::igndisp -11358,-1491 -11461,-1424 -11540,-1543
@@ -841,6 +843,10 @@ Wilhelmsaue -> Bundesallee: Straßentunnelrampe	3::igndisp 5346,8720 5510,8709 55
 Bundesallee -> Wilhelmsaue: Straßentunnelrampe	3::igndisp 5513,8588 5510,8709 5346,8720
 Straßentunnelrampe	3nocross::ignrte 2817,4158 2944,4241 3048,4305
 Goßlerstr. -> Unter den Eichen: Straßentunnelrampe	3::igndisp 2858,4372 2944,4241 3048,4305
+Goßlerstr. -> Knesebeckstr.: Straßentunnelrampe	3::igndisp 2858,4372 2944,4241 3033,4113
+Unter den Eichen -> Knesebeckstr.: Straßentunnelrampe	3::igndisp 3048,4305 2944,4241 3033,4113
+Knesebeckstr. -> Goßlerstr.: Straßentunnelrampe	3::igndisp 3033,4113 2944,4241 2858,4372
+Knesebeckstr. -> Unter den Eichen: Straßentunnelrampe	3::igndisp 3033,4113 2944,4241 2817,4158
 Unter den Eichen -> Goßlerstr.: Straßentunnelrampe	3::igndisp 2817,4158 2944,4241 2858,4372
 Absperrung auf dem Mittelstreifen	3nocross::ignrte 5510,8709 5513,8588 5481,8506 5444,8406 5421,8337
 Bundesallee -> Waghäuseler Str.: Absperrung auf dem Mittelstreifen	3::igndisp 5510,8709 5513,8588 5660,8591
@@ -1270,6 +1276,7 @@ tragen (Treppe)	0:30:-118 -7418,181
 tragen (Treppe)	0:30:-64 -6933,14317
 tragen (Treppe)	0:30:2 -6934,14291
 tragen (Treppe)	0:30:-237 20673,7260
+Cafeastr. - Gradestr.: Drängelgitter am Bahnübergang	BNP:3:-21 11612,5253
 Schranke	BNP:3:-81 9265,6361
 Schranke, kann von Fahrrädern umfahren werden	BNP:3:-259 668,25047
 Drängelgitter	BNP:3:-108 6908,5053

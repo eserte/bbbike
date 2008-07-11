@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiMap.pm,v 1.18 2008/05/14 17:20:02 eserte Exp $
+# $Id: MultiMap.pm,v 1.18 2008/05/14 17:20:02 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006,2007 Slaven Rezic. All rights reserved.
@@ -92,14 +92,20 @@ sub register {
     $main::info_plugins{__PACKAGE__ . "_Geocaching"} =
 	{ name => "geocaching.com",
 	  callback => sub { showmap_geocaching(@_) },
-	  callback_3_std => sub { showmap_geocaching(@_) },
+	  callback_3_std => sub { showmap_url_geocaching(@_) },
 	  ($images{Geocaching} ? (icon => $images{Geocaching}) : ()),
 	};
     $main::info_plugins{__PACKAGE__ . "_Panoramio"} =
 	{ name => "panoramio.com",
 	  callback => sub { showmap_panoramio(@_) },
-	  callback_3_std => sub { showmap_panoramio(@_) },
+	  callback_3_std => sub { showmap_url_panoramio(@_) },
 	  ($images{Panoramio} ? (icon => $images{Panoramio}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . "_YahooDe"} =
+	{ name => "yahoo.de",
+	  callback => sub { showmap_yahoo_de(@_) },
+	  callback_3_std => sub { showmap_url_yahoo_de(@_) },
+	  ($images{YahooDe} ? (icon => $images{YahooDe}) : ()),
 	};
 }
 
@@ -641,6 +647,36 @@ sub showmap_url_panoramio {
 sub showmap_panoramio {
     my(%args) = @_;
     my $url = showmap_url_panoramio(%args);
+    start_browser($url);
+}
+
+######################################################################
+# Yahoo (de.routenplaner)
+
+sub showmap_url_yahoo_de {
+    my(%args) = @_;
+
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = $args{mapscale_scale};
+    my @allowed_scales = (undef, 4500, 15000, 50000, 125000);
+ TRY: {
+	for my $i (1 .. $#allowed_scales) {
+	    if ($scale < ($allowed_scales[$i]+$allowed_scales[$i+1])/2) {
+		$scale = $i;
+		last TRY;
+	    }
+	}
+	$scale = $#allowed_scales;
+    }
+
+    sprintf "http://de.routenplaner.yahoo.com/maps_result?ds=n&name=Hallo&desc=&lat=%s&lon=%s&zoomin=yes&mag=%d",
+	$py, $px, $scale;
+}
+
+sub showmap_yahoo_de {
+    my(%args) = @_;
+    my $url = showmap_url_yahoo_de(%args);
     start_browser($url);
 }
 

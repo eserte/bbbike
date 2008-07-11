@@ -418,8 +418,10 @@ An der Wuhlheide -> Nixenstr.: Straßenbahntrasse	3::igndisp 20536,5789 20428,584
 Gürtelstr. - Lehderstr.: nur rechts abbiegen erlaubt	3 13409,15687 13316,15758 13214,15830
 Gürtelstr. - Greifswalder Str.: nur rechts abbiegen erlaubt	3 13409,15687 13316,15758 13229,15692 13098,15592
 Jochen-Nüßler-Str.	1 13571,4493 13589,4681
-Parchimer Allee	3nocross::ignrte 13659,4489 13571,4493 13394,4500
+Parchimer Allee	3nocross::ignrte 13659,4489 13571,4493 13485,4496 13394,4500
 Jochen-Nüßler-Str. -> Parchimer Allee: Parchimer Allee	3::igndisp 13589,4681 13571,4493 13659,4489
+Dörchläuchtingstr. -> Parchimer Allee: Parchimer Allee	3::igndisp 13486,4650 13485,4496 13571,4493
+Parchimer Allee -> Dörchläuchtingstr.: Parchimer Allee	3::igndisp 13394,4500 13485,4496 13486,4650
 Mittelstreifen	3nocross::ignrte 4392,17777 4429,17763 4584,17704
 Engelmannweg -> Scharnweberstr.: Mittelstreifen	3::igndisp 4462,17892 4429,17763 4584,17704
 Scharnweberstr. -> Engelmannweg: Mittelstreifen	3::igndisp 4392,17777 4429,17763 4462,17892

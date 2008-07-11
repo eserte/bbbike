@@ -1634,7 +1634,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002500',
        data  => <<EOF,
-userdel	1 -8784,13321 -8756,13356 -8358,13340 -8034,13339
+userdel	1 -8784,13321 -8756,13356 -8358,13340 -8049,13332
 EOF
      },
      { from  => 1111524913, # 2005-03-22 21:55
@@ -4858,7 +4858,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_64281_COPY_1',
        data  => <<EOF,
-userdel	2 20692,3951 21100,4192 21137,4221 21174,4250 21182,4336 21332,4655
+userdel	2 20692,3951 20834,4035 21100,4192 21137,4221 21174,4250 21182,4336 21332,4655
 EOF
      },
      { from  => 1151101431, # 2006-06-24 00:23
@@ -6878,7 +6878,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004443',
        data  => <<EOF,
-userdel	1::inwork -8784,13321 -8756,13356 -8358,13340 -8034,13339 -7693,13330
+userdel	1::inwork -8784,13321 -8756,13356 -8358,13340 -8049,13332 -8022,13332 -7693,13330
 EOF
      },
      { from  => 1178865859, # 2007-05-11 08:44
@@ -8829,7 +8829,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004443',
        data  => <<EOF,
-userdel	1::inwork -8784,13321 -8756,13356 -8358,13340 -8034,13339
+userdel	1::inwork -8784,13321 -8756,13356 -8358,13340 -8049,13332
 EOF
      },
      { from  => 1183280053, # 2007-07-01 10:54
@@ -11906,6 +11906,30 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -7219,-19011 -7172,-19223
+EOF
+     },
+     { from  => 1215900000, # 2008-07-13 00:00
+       until => 1220997600, # 2008-09-10 00:00
+       text  => 'B 320 Lieberose - Lamsfeld OD Lamsfeld Grundhafter Ausbau Vollsperrung 14.07.2008-09.09.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 66964,-46059 67237,-46233
+EOF
+     },
+     { from  => 1216504800, # 2008-07-20 00:00
+       until => 1217628000, # 2008-08-02 00:00
+       text  => 'L 014 Kyritz - Wittstock Brücke über die A 24 zw. Herzsprung und Wittstock Brückenteilsanierung Vollsperrung 21.07.2008-01.08.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -53403,76884 -53483,76327
+EOF
+     },
+     { from  => 1216159200, # 2008-07-16 00:00
+       until => 1219960800, # 2008-08-29 00:00
+       text  => 'L 064 Riesaer Str. OD Bad Liebenwerda, zw. Baumschulenweg u. Südring Neubau Durchlass Vollsperrung 17.07.2008-28.08.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 11862,-99775 11974,-99110
 EOF
      },
     );

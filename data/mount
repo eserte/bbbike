@@ -126,11 +126,13 @@ Steigung 3.6% (Wilhelmstr. (Spandau))	St; -5440,11325 -5488,11257
 Steigung 3.6% (Rollbergstr.)	St; 12528,8205 12407,8177
 Steigung 3.6% (Sakrower Kirchweg)	St; -7792,4249 -7990,4086
 Steigung 3.6% (Thomasstr.)	St; 12787,7546 12685,7497
+Steigung 3.5% ((Rossiner Platz - Rominter Allee))	St; -133,12217 -153,12183
 Steigung 3.5% (Badstr.)	St; 9059,16038 9134,15953
 Steigung 3.5% (Rominter Allee)	St; -328,12654 -287,12460
 Steigung 3.5% (Crusiusstr.)	St; 2198,12178 2112,12187
 Steigung 3.5% (Kurfürstendamm)	St; 2770,10024 2702,10006
 Steigung 3.5% (Scheringstr.)	St; 8686,14934 8900,15146
+Steigung 3.5% ((Rossiner Platz - Rominter Allee))	St; -107,12220 -133,12217
 Steigung 3.5% ((Parkweg Reichsstr.))	St; -264,13009 -208,12938
 Steigung 3.5% (Rominter Allee)	St; -287,12460 -232,12380
 Steigung 3.5% (Langenscheidtstr.)	St; 7655,9188 7735,9121
@@ -331,11 +333,14 @@ Steigung 2.3% (Verlängerte Uferpromenade)	St; -9063,5946 -9075,5893
 Steigung 2.3% (Fredericiastr.)	St; 2190,11569 2097,11556
 Steigung 2.3% (Hermannstr. (Neukölln))	St; 11882,8519 11882,8527
 Steigung 2.3% (Koenigsallee)	St; 864,8110 857,8205
+Steigung 2.2% (Machandelweg)	St; 90,12277 -45,12243
 Steigung 2.2% (Havelchaussee)	St; -3379,8590 -3277,8728
 Steigung 2.2% (Brodauer Str.)	St; 22469,11627 22554,11681
 Steigung 2.2% (Boddinstr.)	St; 12217,8320 12096,8300
 Steigung 2.2% (Alemannenstr. (Nikolassee))	St; -4044,1841 -3899,2002
 Steigung 2.2% (Strelitzer Str.)	St; 9800,14306 9679,14511
+Steigung 2.2% ((Machandelweg - Rossiter Weg))	St; -76,12236 -107,12220
+Steigung 2.2% ((Machandelweg - Rossiter Weg))	St; -45,12243 -76,12236
 Steigung 2.2% (Heerstr. (Spandau, Charlottenburg))	St; -731,11073 -776,11067
 Steigung 2.2% (Weinbergsweg)	St; 10370,14158 10426,14262
 Steigung 2.2% (Heiligendammer Str.)	St; 3314,7269 3189,7249
@@ -522,6 +527,7 @@ Steigung 1.7% (Reichsstr.)	St; -112,12866 23,12739
 Steigung 1.7% (Friedrich-Karl-Str. (Tempelhof))	St; 8955,5549 8870,5557
 Steigung 1.7% (Kopfstr.)	St; 12220,7822 12176,7811
 Steigung 1.6% (Feuerbachstr.)	St; 5390,6299 5560,6344
+Steigung 1.6% (Olympischer Platz)	St; -272,12039 -514,11991
 Steigung 1.6% (Lahrer Pfad)	St; 5044,22739 5148,22568
 Steigung 1.6% (Walterstr.)	St; 12983,6904 12934,6967
 Steigung 1.6% (Grabertstr.)	St; 7052,4911 7058,4890
@@ -554,7 +560,6 @@ Steigung 1.6% (Teltower Damm)	St; 749,2616 803,2435
 Steigung 1.6% ((Machandelweg - Reichsstr.))	St; -112,12866 -142,12850
 Steigung 1.6% (Grabertstr.)	St; 7058,4890 7091,4760
 Steigung 1.6% (Königin-Luise-Str.)	St; 3707,5758 3850,5801
-Steigung 1.5% ((Rossiner Platz - Rominter Allee))	St; -133,12217 -153,12183
 Steigung 1.5% (Bergmannstr. (Kreuzberg))	St; 9300,9341 9248,9350
 Steigung 1.5% (Gartenstadtweg)	St; 21543,673 21536,603
 Steigung 1.5% (Albrechtstr. (Steglitz))	St; 4991,5531 4861,5581
@@ -562,19 +567,14 @@ Steigung 1.5% (Kronprinzessinnenweg)	St; -4261,2557 -4171,2659
 Steigung 1.5% (Erdener Str.)	St; 1782,9270 1757,9271
 Steigung 1.5% (Spreetalallee)	St; 715,13126 729,12972
 Steigung 1.5% (Hünefeldzeile)	St; 7363,4700 7324,4582
-Steigung 1.5% (Machandelweg)	St; 90,12277 -45,12243
 Steigung 1.5% (Pappelplatz (Grunewald))	St; 297,8894 197,8973
 Steigung 1.5% (Gartenstadtweg)	St; 21683,906 21543,673
 Steigung 1.5% (Anklamer Str.)	St; 10101,14455 10150,14525
 Steigung 1.5% (Kurfürstendamm)	St; 3111,10116 2963,10078
 Steigung 1.5% (Schöneberger Str. (Steglitz))	St; 5370,6486 5470,6423
-Steigung 1.5% (Rominter Allee: Kopfsteinpflaster (ist das Kopfsteinpflaster in der Rominter Allee eher mäßig oder eher gut?))	St; -199,12341 -232,12380
 Steigung 1.5% (Thüringer Allee)	St; 1541,11271 1518,11250
 Steigung 1.5% (Bismarckallee)	St; 1554,8638 1577,8655
 Steigung 1.5% (Oraniendamm)	St; 4348,22744 4629,22466
-Steigung 1.5% ((Machandelweg - Rossiter Weg))	St; -76,12236 -107,12220
-Steigung 1.5% (Rominter Allee: Kopfsteinpflaster (ist das Kopfsteinpflaster in der Rominter Allee eher mäßig oder eher gut?))	St; -181,12304 -199,12341
-Steigung 1.5% ((Machandelweg - Rossiter Weg))	St; -45,12243 -76,12236
 Steigung 1.5% (Spreetalallee)	St; 729,12972 657,12697
 Steigung 1.5% (Masurenallee)	St; 1883,11070 1541,11271
 Steigung 1.5% (Imchenallee)	St; -7693,4234 -7714,4279
@@ -587,7 +587,6 @@ Steigung 1.5% (Delbrückstr. (Grunewald))	St; 1623,8923 1767,8853
 Steigung 1.5% (Karl-Marx-Str.)	St; 12500,8504 12540,8458
 Steigung 1.5% (Flughafenstr.)	St; 12500,8504 12349,8464
 Steigung 1.5% (Franklinstr.)	St; 5018,12322 4999,12289
-Steigung 1.5% ((Rossiner Platz - Rominter Allee))	St; -107,12220 -133,12217
 Steigung 1.5% (Gatower Str.)	St; -4760,9343 -4758,9689
 Steigung 1.5% (Saarbrücker Str.)	St; 11257,13647 11060,13865
 Steigung 1.5% (Trabener Str.)	St; 1141,9078 1312,9220
@@ -616,8 +615,6 @@ Steigung 1.5% (Bamberger Str. (Schöneberg, Wilmersdorf))	St; 5891,9341 5896,9209
 Steigung 1.5% (Anklamer Str.)	St; 10037,14379 10101,14455
 Steigung 1.5% (Machnower Str. (Zehlendorf))	St; 749,2616 653,2557
 Steigung 1.5% (Petersburger Str.)	St; 13744,12529 13742,12538
-Steigung 1.5% (Rominter Allee: Kopfsteinpflaster (ist das Kopfsteinpflaster in der Rominter Allee eher mäßig oder eher gut?))	St; -153,12183 -155,12198
-Steigung 1.5% (Rominter Allee: Kopfsteinpflaster (ist das Kopfsteinpflaster in der Rominter Allee eher mäßig oder eher gut?))	St; -155,12198 -181,12304
 Steigung 1.5% (Weinbergsweg)	St; 10193,13816 10237,13947
 Steigung 1.5% (Petersburger Str.)	St; 13792,12292 13744,12529
 Steigung 1.4% (Schönagelstr.)	St; 21640,16279 21617,16061
@@ -845,7 +842,6 @@ Steigung 1.1% (Havelchaussee)	St; -4072,5227 -3947,5129
 Steigung 1.1% (Hultschiner Damm)	St; 24735,11021 24658,11293
 Steigung 1.1% (Mecklenburgische Str.)	St; 4457,8345 4325,8229
 Steigung 1.0% (Harbigstr.)	St; 854,10475 968,10510
-Steigung 1.0% (Olympischer Platz)	St; -272,12039 -514,11991
 Steigung 1.0% (Nikolskoer Weg)	St; -9500,827 -9443,1035
 Steigung 1.0% ((Mauerweg Spandau))	St; -5738,11326 -6002,11475
 Steigung 1.0% (Max-Urich-Str.)	St; 8953,14758 9041,14896
