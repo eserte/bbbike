@@ -11307,9 +11307,9 @@ EOF
 userdel	2::inwork 17017,16716 17059,16560
 EOF
      },
-     { from  => 1211228484, # 2008-05-19 22:21
-       until => 1216159199, # 2008-07-15 23:59
-       text  => 'Siemensstr. (Oberschöneweide) Richtung Edisonstr. zwischen Wilhelminenhofstr. und Edisonstr. Baustelle, Fahrbahn auf einen Fahrstreifen verengt bzw. gesperrt, eine Umleitung ist eingerichtet (bis Mitte 07.2008)',
+     { from  => 1215811936, # 2008-07-11 23:32
+       until => 1217541599, # 2008-07-31 23:59
+       text  => 'Siemensstr. (Oberschöneweide) Richtung Edisonstr. zwischen Wilhelminenhofstr. und Edisonstr. Baustelle, Fahrbahn auf einen Fahrstreifen verengt bzw. gesperrt, eine Umleitung ist eingerichtet (bis Ende 07.2008)',
        type  => 'handicap',
        source_id => 'IM_008562',
        data  => <<EOF,
