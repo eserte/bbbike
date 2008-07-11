@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiMap.pm,v 1.18 2008/05/14 17:20:02 eserte Exp eserte $
+# $Id: MultiMap.pm,v 1.19 2008/07/11 21:40:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006,2007 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%images);
 
@@ -351,6 +351,24 @@ QmCC
 EOF
     }
 
+    if (!defined $images{YahooDe}) {
+	# Fetched logo:
+	#   wget http://l.yimg.com/a/i/ww/beta/y3.gif
+	# Manually cropped the Y and resized to 16x16
+	# Created base64:
+	#   mmencode -b ...
+	$images{YahooDe} = $main::top->Photo
+	    (-format => 'gif',
+	     -data => <<EOF);
+R0lGODlhEAAQAKU2AM0DLcwELbgOMeYAL+MCMOkAL/IAMfgAMvkAMvAFMv0AM/8AM/gGNf8D
+NeESO+YSOoVEU546T/4NPNkfRuoZQeUbRP0QP/0RPv4VQfcYRf4fR/wgSbhBV/8fTLlEXPEq
+UP4lTv0nT7ZJX6JUZdI/XP4vWYlob4lqcadebsFZarVfbvw/ZPRFaY56f/pHav1KbJJ+g6OA
+iJ+Ditl5ia6qq7Kwsf///////////////////////////////////////yH+FUNyZWF0ZWQg
+d2l0aCBUaGUgR0lNUAAh+QQBCgA/ACwAAAAAEAAQAAAGXcCfcEgsGo/I5PDTaWIoE1VSRlos
+ODThquTqumbDyuIwTHkYCEEERrQsEkMWAVI7ShaP3wZgUjYUGQEtSj8hCwYnhD8aCwOKiwsF
+hC8gFwsIDgtJIiMonp4xj6JJQQA7
+EOF
+    }
 }
 
 ######################################################################

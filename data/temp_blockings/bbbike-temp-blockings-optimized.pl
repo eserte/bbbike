@@ -800,9 +800,9 @@ push @temp_blocking,
        undef,
        {
          'source_id' => 'IM_008562',
-         'until' => 1216159199,
-         'text' => 'Siemensstr. (Oberschöneweide) Richtung Edisonstr. zwischen Wilhelminenhofstr. und Edisonstr. Baustelle, Fahrbahn auf einen Fahrstreifen verengt bzw. gesperrt, eine Umleitung ist eingerichtet (bis Mitte 07.2008)',
-         'from' => 1211228484,
+         'until' => 1217541599,
+         'text' => 'Siemensstr. (Oberschöneweide) Richtung Edisonstr. zwischen Wilhelminenhofstr. und Edisonstr. Baustelle, Fahrbahn auf einen Fahrstreifen verengt bzw. gesperrt, eine Umleitung ist eingerichtet (bis Ende 07.2008)',
+         'from' => 1215811936,
          'id' => 1343,
          'data' => 'userdel	q4::inwork; 17614,6571 17766,6616 17860,6644 17962,6674
 ',
@@ -1116,6 +1116,15 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork 11862,-99775 11974,-99110
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1219010400,
+         'text' => 'L 029 Lanke - Zehlendorf nördl. Wandlitz, zw. B109 und Bahnübergang Bau Kreisverkehr Vollsperrung 17.07.2008-17.08.2008 ',
+         'from' => 1216159200,
+         'id' => 1408,
+         'data' => 'userdel	2::inwork 15403,40364 14713,40426
+',
+         'type' => 'gesperrt'
        }
      
 );

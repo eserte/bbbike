@@ -11932,4 +11932,12 @@ EOF
 userdel	q4::inwork 11862,-99775 11974,-99110
 EOF
      },
+     { from  => 1216159200, # 2008-07-16 00:00
+       until => 1219010400, # 2008-08-18 00:00
+       text  => 'L 029 Lanke - Zehlendorf nördl. Wandlitz, zw. B109 und Bahnübergang Bau Kreisverkehr Vollsperrung 17.07.2008-17.08.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 15403,40364 14713,40426
+EOF
+     },
     );
