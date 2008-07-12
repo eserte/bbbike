@@ -2,11 +2,13 @@
 # -*- perl -*-
 
 #
-# $Id: old_comments.t,v 1.14 2008/06/22 16:42:08 eserte Exp $
+# $Id: old_comments.t,v 1.16 2008/07/12 19:45:13 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
+use FindBin;
+use lib ("$FindBin::RealBin/..", $FindBin::RealBin);
 
 use Getopt::Long;
 use CGI qw();
@@ -23,6 +25,8 @@ BEGIN {
 	exit;
     }
 }
+
+use BBBikeTest qw(eq_or_diff);
 
 BEGIN {
     if ($] < 5.006) {
@@ -72,8 +76,7 @@ EOF
 	     # Hagelberger/Yorck
 	     ["8773,9524", "8595,9495", <<EOF, "PI"],
 - Kopfsteinpflaster: 1
-  Straßenseite bei der Fußgängerampel Yorckstr./Katzbachstr. wechseln: 1
-- {}
+- Straßenseite bei der Fußgängerampel Yorckstr./Katzbachstr. wechseln: 1
 - {}
 EOF
 	     ["8777,9601", "8595,9495", <<EOF, "No PI, starting point outside"],
@@ -169,7 +172,7 @@ for my $cgiurl (@urls) {
 	my $comments = [ map {
 	    +{ map { ($_,1) } split /;\s+/, $_->{Comment} };
 	} @{$got->{Route}} ];
-	is_deeply($comments, Load("--- #YAML:1.0\n$expected"), $desc) or do {
+	eq_or_diff($comments, Load("--- #YAML:1.0\n$expected"), $desc) or do {
 	    if ($v) {
 		diag Dumper $got;
 	    }

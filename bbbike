@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.371 2008/07/06 19:26:38 eserte Exp $
+# $Id: bbbike,v 3.372 2008/07/12 19:41:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -243,7 +243,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.371 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.372 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -2074,6 +2074,7 @@ unless($skip_features{"strassen"}) {
     {
 	my $c_bpcm = $strcm->Menu(-title => M"Sonstige");
 	$strcm->entryconfigure("last", -menu => $c_bpcm);
+	my @used_types;
 	foreach my $type (@comments_types) {
 	    next if $type =~ /^(cyclepath|mount|route)$/; # handled elsewhere
 	    if (!$advanced) {
@@ -2082,6 +2083,25 @@ unless($skip_features{"strassen"}) {
 		next if $type =~ /^(kfzverkehr|scenic)$/;
 	    }
 	    $create_comment_layers_cb->($c_bpcm, $type);
+	    push @used_types, $type;
+	}
+	if ($advanced) {
+	    $c_bpcm->separator;
+	    my $str_draw_all = 0;
+	    $c_bpcm->checkbutton
+		(-label => M("Alle"),
+		 -variable => \$str_draw_all,
+		 -command => sub {
+		     my $onoff = $str_draw_all;
+		     $progress->InitGroup;
+		     for my $type (@used_types) {
+			 my $def = 'comm-' . $type;
+			 $str_draw{$def} = $onoff;
+			 plot('str', $def, Filename => get_strassen_file("comments_" . $type));
+		     }
+		     $progress->FinishGroup;
+		 },
+		);
 	}
     }
 
@@ -5638,8 +5658,10 @@ sub define_item_attribs {
 	);
     %line_shorten =
 	('CP'  => 1,
-	 'CP2' => 1,
 	 'P0'  => 1,
+	);
+    %line_shorten_end =
+	('CP2' => 1,
 	 'PI'  => 1,
 	);
     # Label size per category
@@ -6038,7 +6060,9 @@ sub generate_plot_functions {
 
 		if (exists $line_shorten{$cat_hin}) { # XXX no $cat_rueck handling
 		    line_shorten(\@coordlist);
-		}
+		} elsif (exists $line_shorten_end{$cat_hin}) { # XXX no $cat_rueck handling
+		    line_shorten_end(\@coordlist);
+		} 
 
 		my $sight_draw = sub {
 		    # speciality for sights: draw a star
@@ -6331,7 +6355,6 @@ sub generate_plot_functions {
 			      );
 			}
 			if (defined $cat_rueck) {
-			    my %side_coordlist;
 			    for my $dir (1, -1) {
 				my($cl, $this_color, $this_width, $cat, $std_tags, $line_dash);
 				if ($dir == 1 && $cat_hin ne '') {
@@ -6380,6 +6403,17 @@ sub generate_plot_functions {
 				     #(exists $line_arrow{$cat} ? (-arrow => $line_arrow{$cat}) : ()),
 				     -arrow => "last",
 				    );
+
+				# Draw an extra point indicating the point of action for CP/CP2 items
+				if ($cat_hin =~ m{^( CP | CP2 | PI )$}x) {
+				    my @center = $cat_hin eq 'CP' ? @{$cl}[2,3] : @{$cl}[0,1];
+				    $c->createOval((map { $_-5 } @center), (map { $_+5 } @center), # XXX skalieren
+					-outline => $this_color_hin,
+					-width => 2,
+					-tags => [@$std_tags, @extra_tags],
+				    );
+				}
+
 			    }
 			} elsif ($cat_hin eq 'Br') {
 			    draw_bridge(\@coordlist, width => $this_width_hin+4, tags => \@std_tags_hin);
@@ -10028,21 +10062,37 @@ sub plot_sperre {
     Hooks::get_hooks("after_plot")->execute;
 }
 
-sub line_shorten {
-    my($cref) = @_;
-    if (@$cref > 4) { # else should never happen
+sub _line_shorten {
+    my($cref, $begin, $end) = @_;
+    if (@$cref <= 2) {
+	warn "Coordinate list too short for shortening either begin or end\n";
+	return;
+    }
+    if ($begin && $end && @$cref <= 4) {
+	warn "Coordinate list too short for shortening begin and end (@$cref)\n";
+	return;
+    }
+
+    if ($begin) {
 	my $len1 = Strassen::Util::strecke([@{$cref}[0,1]], [@{$cref}[2,3]]);
 	my $whole_len1 = $len1 > 20 ? 20 : $len1;
-	my $len2 = Strassen::Util::strecke([@{$cref}[-4,-3]], [@{$cref}[-2,-1]]);
-	my $whole_len2 = $len2 > 20 ? 20 : $len2;
-	@{$cref}[0,1, -2,-1] =
+	@{$cref}[0,1] =
 	    (($cref->[0]-$cref->[2])/$len1*$whole_len1+$cref->[2],
 	     ($cref->[1]-$cref->[3])/$len1*$whole_len1+$cref->[3],
-	     ($cref->[-2]-$cref->[-4])/$len2*$whole_len2+$cref->[-4],
+	    );
+    }
+    if ($end) {
+	my $len2 = Strassen::Util::strecke([@{$cref}[-4,-3]], [@{$cref}[-2,-1]]);
+	my $whole_len2 = $len2 > 20 ? 20 : $len2;
+	@{$cref}[-2,-1] =
+	    (($cref->[-2]-$cref->[-4])/$len2*$whole_len2+$cref->[-4],
 	     ($cref->[-1]-$cref->[-3])/$len2*$whole_len2+$cref->[-3],
 	    );
     }
 }
+
+sub line_shorten     { _line_shorten(shift, 1, 1) }
+sub line_shorten_end { _line_shorten(shift, 0, 1) }
 
 sub get_temp_blockings_files {
     my $temp_blockings_dir = "$datadir/temp_blockings";

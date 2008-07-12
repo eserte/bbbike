@@ -13,6 +13,10 @@ td,th,p,h2,li,input {
 table.desc {
   vertical-align:top;
 }
+table.routelist th {
+  padding-left:3px;
+  padding-right:3px;
+}
 table.routelist td {
   vertical-align:top;
   padding:2px 3px 2px 3px;

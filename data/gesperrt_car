@@ -552,14 +552,6 @@ Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5888,6520
 Augustenburger Platz: nur für Taxen und Anlieger	2 6561,15041 6537,15156 6562,15177
 Zinnowitzer Str. - Friedrichstr.:	3 9006,14005 8879,13913 8935,13844
 (Kastanienallee - Friedrich-Engels-Str.)	1 8789,20763 8692,20698 8717,20584
-Schloßstr. - Friedrich-Ebert-Str.: Poller	3 -12882,-1565 -12755,-1585 -12773,-1544
-Schloßstr. - Friedrich-Ebert-Str.: Poller	3 -12882,-1565 -12755,-1585 -12719,-1661
-Friedrich-Ebert-Str. - Schloßstr.: Poller	3 -12773,-1544 -12755,-1585 -12882,-1565
-Friedrich-Ebert-Str. - Schloßstr.: Poller	3 -12719,-1661 -12755,-1585 -12882,-1565
-Schwertfegerstr. - Friedrich-Ebert-Str.: Poller	3 -12870,-1493 -12795,-1499 -12773,-1544
-Schwertfegerstr. - Friedrich-Ebert-Str.: Poller	3 -12870,-1493 -12795,-1499 -12833,-1365
-Friedrich-Ebert-Str. - Schwertfegerstr.: Poller	3 -12773,-1544 -12795,-1499 -12870,-1493
-Friedrich-Ebert-Str. - Schwertfegerstr.: Poller	3 -12833,-1365 -12795,-1499 -12870,-1493
 Zimbelstr.: Poller	3 11959,20365 11924,20399 11879,20466
 Zimbelstr.: Poller	3 11879,20466 11924,20399 11959,20365
 Knollstr.: Poller	3 17609,164 17558,126 17242,-80
@@ -663,3 +655,11 @@ Berliner Str. -> Masurenstr.: Straßenbahntrasse	3::igndisp 10900,17397 10894,174
 Mittelstreifen	3nocross::ignrte 6608,16180 6450,16325 6444,16331
 Mittelstreifen	3nocross::ignrte 7960,15801 7974,15634 7979,15569
 Zeisigweg	1 5178,1499 5153,1534 5148,1559 5145,1611 5132,1672 5087,1807
+Nollendorfplatz	1 7033,10328 6971,10346
+Mittelstreifen	3nocross::ignrte 5902,9083 5995,9098 6063,9106
+Stübbenstr. -> Bozener Str.: Mittelstreifen	3::igndisp 5993,9128 5995,9098 5995,8926
+Stübbenstr. -> Grunewaldstr.: Mittelstreifen	3::igndisp 5993,9128 5995,9098 6063,9106
+Bozener Str. -> Stübbenstr.: Mittelstreifen	3::igndisp 5995,8926 5995,9098 5993,9128
+Bozener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 5995,8926 5995,9098 5902,9083
+Grunewaldstr. -> Bozener Str.: Mittelstreifen	3::igndisp 6063,9106 5995,9098 5995,8926
+Grunewaldstr. -> Stübbenstr.: Mittelstreifen	3::igndisp 5902,9083 5995,9098 5993,9128

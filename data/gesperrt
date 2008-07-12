@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.186 2008/05/13 19:06:58 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.187 2008/07/12 20:07:03 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
@@ -441,6 +441,8 @@ Miningstr.	1 13444,5097 13455,4995 13432,4900 13466,4889 13503,4846
 Dörchläuchtingstr.	1 13511,4695 13486,4650 13485,4496
 Küsterstr.	1 -624,15494 -593,15300 -569,15167
 Biesenthaler Str. (Hohenschönhausen)	1 17239,14719 17074,14704 17063,14797
+Nollendorfplatz	1 6851,10416 7033,10396 7131,10331 7033,10328
+Nollendorfplatz	1 6971,10346 6937,10363 6851,10416
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
 Humboldtring -> Hans-Marwitza-Ring: Hochstraße	3::igndisp -11399,-1339 -11461,-1424 -11358,-1491
 Hans-Marwitza-Ring -> Humboldtring: Hochstraße	3::igndisp -11358,-1491 -11461,-1424 -11540,-1543
@@ -498,10 +500,7 @@ Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
 Puschkinallee	1 -13052,775 -12922,762 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
 Straßenbahntrasse, nur für Fußgänger bequem passierbar	3nocross::ignrte -12719,-1661 -12755,-1585 -12773,-1544 -12795,-1499 -12833,-1365
-Friedrich-Ebert-Str. -> Schloßstr.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3::igndisp -12719,-1661 -12755,-1585 -12882,-1565
-Schloßstr. -> Friedrich-Ebert-Str.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3::igndisp -12882,-1565 -12755,-1585 -12773,-1544
 Friedrich-Ebert-Str. -> Am Alten Markt: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3::igndisp -12795,-1499 -12773,-1544 -12583,-1552
-Am Alten Markt -> Friedrich-Ebert-Str.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3::igndisp -12583,-1552 -12773,-1544 -12755,-1585
 Friedrich-Ebert-Str. -> Schwertfegerstr.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3::igndisp -12773,-1544 -12795,-1499 -12870,-1493
 Schwertfegerstr. -> Friedrich-Ebert-Str.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3::igndisp -12870,-1493 -12795,-1499 -12833,-1365
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13733,-722 -13772,-623
@@ -771,7 +770,6 @@ Rosenstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 10489,12803 1051
 Mittelstreifen	3nocross::ignrte 6502,9782 6520,9867 6522,9948
 Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen	3::igndisp 6522,9948 6520,9867 6611,9879
 Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6463,9862 6520,9867 6522,9948
-Luitpoldstr. -> Luitpoldstr.: Mittelstreifen	3::igndisp 6611,9879 6520,9867 6463,9862
 Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6611,9879 6520,9867 6502,9782
 Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen	3::igndisp 6502,9782 6520,9867 6463,9862
 U-Bahnviadukt und Straßenbahn	3nocross::ignrte 11013,16278 11003,16196 10994,16120
@@ -1367,6 +1365,7 @@ Kynaststraße: Abriss und Neubau bis ca. 2010-03-01	2:inwork 14988,11130 14897,10
 Hauptstr. (Friedrichshain-Kreuzberg) in beiden Richtungen zwischen Markgrafendamm und untere Kynaststr. Baustelle, Straße vollständig gesperrt, Radfahrer und Fußgänger können NICHT passieren (bis 2008-10-31)	2:inwork 14890,10824 14794,10844
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01, dann als Fußgänger/Radweg konzipiert	2:inwork 8184,14052 8290,14119
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01	2:inwork 8290,14119 8246,14201 8138,14148
+Rückbau der Fr.-Ebert-Str. zwischen Breiter Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	2:inwork -12719,-1661 -12755,-1585 -12773,-1544
 Brücke über den Torfgraben/Phöben gesperrt, Neubau voraussichtlich bis 2006-12-31	2:inwork -25539,2641 -25453,2418
 Behlertstr.	1 -12370,-354 -12500,-339 -12621,-359 -12821,-417 -12865,-425
 tragen (Treppe)	0:30:-73 2247,5068
@@ -1456,7 +1455,7 @@ Greifswalder Str. -> Olga-Benario-Prestes-Str.: Greifswalder Str.	3::igndisp 125
 Straßenbahntrasse	3nocross::ignrte 13098,15592 13229,15692 13316,15758
 Dietrich-Bonhoeffer-Str.	1 12578,14237 12285,14458
 tragen (3 einzelne Stufen)	0:15:-233 13079,14320
-Achtung schlecht sichtbare Kette!!	BNP:5:-121 13446,14030
+Achtung schlecht sichtbare Kette!!	BNP:5:-121 13485,14054
 Treppe	0:20:-62 12867,14648
 2 Treppen o. schmale Rampen	0:10:-229 12969,14672
 tragen (Treppe)	0:15 5574,5791 5574,5819

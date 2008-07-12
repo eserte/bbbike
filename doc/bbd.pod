@@ -649,9 +649,18 @@ ausgeschilderte Fahrradrouten), F<comments_tram> (tramway on street).
 Only for records with three points. Comment is valid for point B if
 driving from A to C.
 
+=item C<CP2;>
+
+Only for records with two points. Comment is valid for point A if
+driving from A to B.
+
 =item C<CP>
 
 Same as C<CP;>, but valid for both directions.
+
+=item C<CP2>
+
+Same as C<CP2;>, but valid for both directions.
 
 =item C<CS;>
 
@@ -661,14 +670,18 @@ Comment is valid for the whole route in this direction.
 
 Comment is valid for the whole route in both directions.
 
-=item C<PI>
+=item C<PI;>
 
-Path instruction (genauere Wegbeschreibung).
+Path instruction (genauere Wegbeschreibung). (This is in fact a
+generalisation of C<CP2;> allowing more than two points)
 
 =item C<P0>
 
 Dieser Weg ist gesperrt (z.B. Abbiegen nicht möglich), aber eine
 Umfahrung ist möglich ... siehe auch Kategorie C<3> in L</BLOCKINGS>.
+
+NB: Diese Kategorie wird bislang noch nicht verwendet und bedarf
+deswegen einer Überprüfung.
 
 =item C<-2> relativ ruhiger Kfz-Verkehr
 

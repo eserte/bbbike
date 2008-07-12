@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.138 2008/05/13 19:06:56 eserte Exp eserte $
+#: version: $Id: ampeln-orig,v 4.139 2008/07/12 20:07:57 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
 	X 9222,8787
@@ -192,7 +192,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7539,9970
 	X 7579,10183
 	X 7633,10394
-	X 7037,10359
+	X 7033,10328
+	X 7033,10396
 	X 6494,10440
 	X 6536,10520
 	X 6484,10847
@@ -1841,7 +1842,7 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	X 14179,9515
 Industriebahn	B0 -2410,13746
 	X 16779,2993
-	F 6931,10391
+	F 6937,10363
 	F 12532,11008
 	X 4828,10356
 	F 11273,14495

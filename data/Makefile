@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.190 2008/07/07 19:39:13 eserte Exp $
+# $Id: Makefile,v 2.191 2008/07/12 20:05:58 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -971,7 +971,7 @@ do-checks:	.check_empty_lines \
 	.check_qualitaet_s .check_qualitaet_l \
 	.check_handicap_s .check_handicap_l \
 	.check_vorfahrt \
-	.check_comments1 .check_comments2 .check_nolighting \
+	.check_comments1 .check_comments2 .check_comments3 .check_nolighting \
 	.check_housenumbers .check_sehenswuerdigkeit .check_green \
 	.check_brunnels .check_comments_ferry \
 	.check_exits \
@@ -1153,6 +1153,21 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+)?)(:inw
 	    -against strassen -against landstrassen -against landstrassen2 \
 	    -against faehren -against fragezeichen \
 	    ${COMMENTS_PARTIAL:S/^/-data /g}
+	@touch $@
+
+.check_comments3:	$(COMMENTS_PARTIAL);
+	@$(PERL) -I../lib -I.. -MStrassen::Core -MObject::Iterate=iterate -e '\
+	for $$file (@ARGV) {\
+	    $$s=Strassen->new($$file);\
+	    iterate {\
+		$$_->[Strassen::CAT] =~ m{^CP2;} and @{$$_->[Strassen::COORDS]} != 2 and push @errors, "*** $$file ($$_->[Strassen::NAME]): CP2; != 2 coordinates";\
+		$$_->[Strassen::CAT] =~ m{^PI;} and @{$$_->[Strassen::COORDS]} < 3 and push @errors, "*** $$file ($$_->[Strassen::NAME]): PI; too few coordinates";\
+		$$_->[Strassen::CAT] =~ m{^CP(;|$$)} and @{$$_->[Strassen::COORDS]} == 2 and push @errors, "*** $$file ($$_->[Strassen::NAME]): CP; too few coordinates";\
+		$$_->[Strassen::CAT] =~ m{^P0} and push @errors, "*** $$file ($$_->[Strassen::NAME]): P0 is unsupported";\
+	    } $$s;\
+        }\
+	die join "", @errors if @errors;\
+	' $(COMMENTS_PARTIAL)
 	@touch $@
 
 .check_comments_ferry:	comments_ferry faehren

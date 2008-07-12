@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: YahooMaps.pm,v 1.2 2007/09/01 12:46:48 eserte Exp $
+# $Id: YahooMaps.pm,v 1.3 2008/07/12 20:09:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007,2008 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package YahooMaps;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 use CGI;
 use LWP::UserAgent;
