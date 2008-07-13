@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.372 2008/07/12 19:41:57 eserte Exp $
+# $Id: bbbike,v 3.373 2008/07/13 07:52:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -243,7 +243,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.372 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.373 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -16964,7 +16964,8 @@ sub make_net {
 		    while(1) {
 			my $ret = $str_obj{'s'}->next;
 			last if !@{$ret->[Strassen::COORDS]};
-			next if !$str_restrict{'s'}->{$ret->[Strassen::CAT]};
+			my($cat) = $ret->[Strassen::CAT] =~ m{^([^:]+)}; # strip attributes
+			next if !$str_restrict{'s'}->{$cat};
 			$restr_str->push($ret);
 		    }
 		    $restr_str->{File} = $str_obj{'s'}->file;

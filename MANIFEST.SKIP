@@ -24,6 +24,8 @@ patch\.gz$
 \.ppd$
 ^_Inline/
 (^|/)cover_db/
+^nytprof\.out$
+^profiler/
 # private common files
 \.ok2cgi$
 \.copynewer.SKIP$
@@ -137,6 +139,7 @@ data/check_nearest_ignore$
 data/GNUmakefile$
 data/wasserstrassen-lowres$
 data_zuerich_ch/
+^data_[^/]+_osm.*/
 ext/.*/blib/
 ext/.*/pm_to_blib$
 ext/.*/.*\.inl$

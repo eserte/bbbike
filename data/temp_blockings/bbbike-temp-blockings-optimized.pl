@@ -801,15 +801,7 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1215900000,
-         'text' => 'K 7318 Blankenburg - Potzlow zw. Potzlow und Seehausen Straßenbauarbeiten Vollsperrung 05.05.2008-12.07.2008 ',
-         'from' => 1209852000,
-         'id' => 1345,
-         'data' => 'userdel	2::inwork 39375,90456 39870,90079 40230,90006 40938,90213 41085,90590
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

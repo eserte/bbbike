@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: downloadosm,v 1.1 2008/01/12 17:04:40 eserte Exp $
+# $Id: downloadosm,v 1.7 2008/07/13 20:48:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -13,37 +13,100 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
+# Download a data from openstreetmap into the
+# current directory. The dataset may be used by osm2bbd for
+# further conversion.
+
+# Call script without arguments for usage.
+
 use strict;
+use Getopt::Long;
 use LWP::UserAgent;
 
 my $ua = LWP::UserAgent->new;
 
-my @bbox = @ARGV;
-if (@bbox != 4) {
-    die "Please specify a bbox (four parameters)";
+sub usage () {
+    die <<EOF;
+usage: $0 -o directory x0 y0 x1 y1
+       $0 -reload existing.osm
+
+First form:  specify a bbox (four parameters, x0 y0 x1 y1)
+Second form: refresh an existing osm file downloaded with this tool
+
+-n: no exec
+
+For all of Berlin use:
+    $0 13.010982 52.337651 13.761388 52.675354
+EOF
 }
 
-my($x1,$y1,$x2,$y2) = @bbox;
+my $reload;
+my $n;
+my $o;
 my $xstep = 0.01;
 my $ystep = 0.01;
+GetOptions("reload=s" => \$reload,
+	   "o=s" => \$o,
+	   "n" => \$n,
+	   "xstep=f" => \$xstep,
+	   "ystep=f" => \$ystep,
+	   "step=f" => sub {
+	       $xstep = $ystep = $_[1];
+	   },
+	  )
+    or usage;
 
-die "ERROR: x1 > x2" if $x1 > $x2;
-die "ERROR: y1 > y2" if $y1 > $y2;
+if ($reload) {
+    if (!-r $reload) {
+	die "The file <$reload> does not exist or is not readable.\n";
+    }
+    my $ltlnqr = qr{[-+]?\d+\.\d+};
+    if ($reload !~ m{($ltlnqr),($ltlnqr),($ltlnqr),($ltlnqr)\.osm$}) {
+	die "The file name <$reload> does not look correct, i.e. created by this tool.\n";
+    }
+    my($x,$y,$xend,$yend) = ($1,$2,$3,$4);
+    download_osm_tile($x,$y,$xend,$yend, 1);
+} else {
+    my @bbox = @ARGV;
+    if (@bbox != 4) {
+	usage;
+    }
+    if (!$o) {
+	warn "-o option is missing\n";
+	usage;
+    }
+    chdir $o
+	or die "Cannot change to directory $o: $!\n";
 
-for(my $x = $x1; $x <= $x2; $x+=$xstep) {
-    for(my $y = $y1; $y <= $y2; $y+=$ystep) {
-	my $xend = $x+$xstep;
-	my $yend = $y+$ystep;
-	my $url = "http://www.openstreetmap.org/api/0.5/map?bbox=$x,$y,$xend,$yend";
-	my $dest = "download_$x,$y,$xend,$yend.osm";
-	if (-s $dest) {
-	    warn "$dest already exists, skipping...\n";
+    my($x1,$y1,$x2,$y2) = @bbox;
+
+    ($x1,$x2) = ($x2,$x1) if $x1 > $x2;
+    ($y1,$y2) = ($y2,$y1) if $y1 > $y2;
+
+    for(my $x = $x1; $x <= $x2; $x+=$xstep) {
+	for(my $y = $y1; $y <= $y2; $y+=$ystep) {
+	    my $xend = $x+$xstep;
+	    my $yend = $y+$ystep;
+	    download_osm_tile($x,$y,$xend,$yend, 0);
+	} 
+    }
+}
+
+sub download_osm_tile {
+    my($x,$y,$xend,$yend, $reload) = @_;
+    my $url = "http://www.openstreetmap.org/api/0.5/map?bbox=$x,$y,$xend,$yend";
+    my $dest = "download_$x,$y,$xend,$yend.osm";
+    if (-s $dest && !$reload) {
+	warn "$dest already exists, skipping...\n";
+    } else {
+	my @cmd = ('wget', '--verbose', '-O', $dest, $url);
+	if ($n) {
+	    warn "Would: @cmd\n";
 	} else {
-	    my @cmd = ('wget', '--verbose', '-O', $dest, $url);
-	    #warn "@cmd\n";
-	    system @cmd;
+	    system(@cmd) == 0
+		or die "Failed while running <@cmd>: $?";
 	}
-    } 
+    }
 }
 
 __END__
