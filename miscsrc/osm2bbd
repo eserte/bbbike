@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd,v 1.26 2008/07/13 22:07:40 eserte Exp $
+# $Id: osm2bbd,v 1.28 2008/07/14 20:54:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -40,7 +40,7 @@ sub usage () {
     <<EOF;
 usage: $0 [-v] [-f] [-encoding enc] [-map bbbike [-center lon,lat]] -o directory osmfile ...
 
--v:              Show what is parsed
+-v:              Show parser progress
 -f:              Force overwriting existing output directory
 -enc ...:        Specify different encoding, standard is utf-8
 -map bbbike:     Use BBBike coordinates instead of WGS 84 coordinates in the
@@ -158,14 +158,14 @@ my $do_unhandled = sub {
     my($node, $name_ref) = @_;
 
     for my $tag ($node->findnodes('./tag')) {
-	my($key,$val) = ($tag->findvalue('./@k'),
-			 $tag->findvalue('./@v'));
+	my $key = $tag->getAttribute('k');
 	next if $key =~ m{^(
 			    name
 			  | created_by
 			  | source
 			  | url
 			 )$}x;
+	my $val = $tag->getAttribute('v');
 	if ($$name_ref) { $$name_ref .= "; " }
 	$$name_ref .= "$key:$val";
     }
@@ -216,7 +216,7 @@ my $tp;
 eval {
     require Time::Progress;
     $tp = Time::Progress->new;
-    $tp->attr(min => 0, max => $#osm_files);
+    $tp->attr(min => 0, max => 2 * $#osm_files + 1);
     $tp->restart;
 };
 
@@ -225,25 +225,45 @@ eval {
 my %node2ll;
 my $osm_file_i = 0;
 for my $osm_file (@osm_files) {
-    print STDERR $tp->report("\rdone %p elapsed: %L (%l sec), ETA %E (%e sec)", $osm_file_i++) if $tp;
-    warn "Parse $osm_file for nodes...\n" if $v;
+    if ($v) {
+	if ($tp) {
+	    print STDERR $tp->report("\rdone %p elapsed: %L (%l sec), ETA %E (%e sec)", $osm_file_i++);
+	} else {
+	    warn "Parse $osm_file for nodes...\n";
+	}
+    }
     my $root = $p->parse_file($osm_file)->documentElement;
     for my $node ($root->findnodes("/osm/node")) {
-	my $id = $node->findvalue('./@id');
+	my $id = $node->getAttribute('id');
 	next if exists $node2ll{$id};
-	my $lat = $node->findvalue('./@lat');
-	my $lon = $node->findvalue('./@lon');
+	my $lat = $node->getAttribute('lat');
+	my $lon = $node->getAttribute('lon');
 	$node2ll{$id} = $conv->($lon,$lat);
 
 	my @or;
 
-	my $name	= $node->findvalue('./tag[@k="name"]/@v');
-	my $railway_cat	= $node->findvalue('./tag[@k="railway"]/@v');
-	my $highway_cat	= $node->findvalue('./tag[@k="highway"]/@v');
-	my $amenity	= $node->findvalue('./tag[@k="amenity"]/@v');
-	my $historic	= $node->findvalue('./tag[@k="historic"]/@v');
-	my $place       = $node->findvalue('./tag[@k="place"]/@v');
-	my $url		= $node->findvalue('./tag[@k="url"]/@v');
+	my $name = "";
+	my $railway_cat;
+	my $highway_cat;
+	my $amenity;
+	my $historic;
+	my $place;
+	my $url;
+
+	for my $tag ($node->findnodes("./tag")) {
+	    my $k = $tag->getAttribute('k');
+	    my $v = $tag->getAttribute('v');
+	    if    ($k eq 'name')        { $name        = $v }
+	    elsif ($k eq 'created_by')  {                    }
+	    elsif ($k eq 'source')      {                    }
+	    elsif ($k eq 'railway')     { $railway_cat = $v }
+	    elsif ($k eq 'highway')     { $highway_cat = $v }
+	    elsif ($k eq 'amenity')     { $amenity     = $v }
+	    elsif ($k eq 'historic')    { $historic    = $v }
+	    elsif ($k eq 'place')       { $place       = $v }
+	    elsif ($k eq 'url')         { $url         = $v }
+	}
+
 	if ($url) {
 	    $name .= ($name ? " " : "") . $url;
 	}
@@ -338,10 +358,16 @@ for my $osm_file (@osm_files) {
 # WAYS
 my %seenway;
 for my $osm_file (@osm_files) {
-    warn "Parse $osm_file for ways...\n" if $v;
+    if ($v) {
+	if ($tp) {
+	    print STDERR $tp->report("\rdone %p elapsed: %L (%l sec), ETA %E (%e sec)", $osm_file_i++);
+	} else {
+	    warn "Parse $osm_file for ways...\n";
+	}
+    }
     my $root = $p->parse_file($osm_file)->documentElement;
     for my $way ($root->findnodes('/osm/way[@visible="true"]')) {
-	my $id = $way->findvalue('./@id');
+	my $id = $way->getAttribute('id');
 	next if exists $seenway{$id};
 	$seenway{$id} = 1;
 
@@ -349,32 +375,63 @@ for my $osm_file (@osm_files) {
 	my @or;
 
 	my @nodes = map { $_->textContent } $way->findnodes('./nd/@ref');
-	my $name = $way->findvalue('./tag[@k="name"]/@v');
-	my $url  = $way->findvalue('./tag[@k="url"]/@v');
+
+	my $name = "";
+	my $url;
+	my $highway_cat;
+	my $waterway_cat;
+	my $railway_cat;
+	my $boundary;
+	my $admin_level;
+	my $natural;
+	my $oneway;
+	my $sport;
+	my $leisure;
+	my $cycleway;
+	my $landuse;
+	my $route;
+	my $amenity;
+	my $historic;
+	my $place;
+	my $tunnel;
+	my $bridge;
+	my $building;
+	my $motorroad;
+
+	for my $tag ($way->findnodes("./tag")) {
+	    my $k = $tag->getAttribute('k');
+	    my $v = $tag->getAttribute('v');
+	    if    ($k eq 'name')         { $name         = $v }
+	    elsif ($k eq 'created_by')   {                    }
+	    elsif ($k eq 'source')       {                    }
+	    elsif ($k eq 'url')          { $url          = $v }
+	    elsif ($k eq 'highway')      { $highway_cat  = $v }
+	    elsif ($k eq 'waterway')     { $waterway_cat = $v }
+	    elsif ($k eq 'railway')      { $railway_cat  = $v }
+	    elsif ($k eq 'boundary')     { $boundary     = $v }
+	    elsif ($k eq 'admin_level')  { $admin_level  = $v }
+	    elsif ($k eq 'natural')      { $natural      = $v }
+	    elsif ($k eq 'oneway')       { $oneway       = $v }
+	    elsif ($k eq 'sport')        { $sport        = $v }
+	    elsif ($k eq 'leisure')      { $leisure      = $v }
+	    elsif ($k eq 'cycleway')     { $cycleway     = $v }
+	    elsif ($k eq 'landuse')      { $landuse      = $v }
+	    elsif ($k eq 'route')        { $route        = $v }
+	    elsif ($k eq 'amenity')      { $amenity      = $v }
+	    elsif ($k eq 'historic')     { $historic     = $v }
+	    elsif ($k eq 'place')        { $place        = $v }
+	    elsif ($k eq 'tunnel')       { $tunnel       = $v }
+	    elsif ($k eq 'bridge')       { $bridge       = $v }
+	    elsif ($k eq 'building')     { $building     = $v }
+	    elsif ($k eq 'motorroad')    { $motorroad    = $v }
+	}
+
 	if ($url) {
 	    $name .= ($name ? " " : "") . $url;
 	}
 	if ($debug) {
 	    $name .= "; id=$id";
 	}
-	my $highway_cat	 = $way->findvalue('./tag[@k="highway"]/@v');
-	my $waterway_cat = $way->findvalue('./tag[@k="waterway"]/@v');
-	my $railway_cat	 = $way->findvalue('./tag[@k="railway"]/@v');
-	my $boundary	 = $way->findvalue('./tag[@k="boundary"]/@v');
-	my $admin_level	 = $way->findvalue('./tag[@k="admin_level"]/@v');
-	my $natural	 = $way->findvalue('./tag[@k="natural"]/@v');
-	my $oneway	 = $way->findvalue('./tag[@k="oneway"]/@v');
-	my $sport	 = $way->findvalue('./tag[@k="sport"]/@v');
-	my $leisure	 = $way->findvalue('./tag[@k="leisure"]/@v');
-	my $cycleway	 = $way->findvalue('./tag[@k="cycleway"]/@v');
-	my $landuse	 = $way->findvalue('./tag[@k="landuse"]/@v');
-	my $route	 = $way->findvalue('./tag[@k="route"]/@v');
-	my $amenity	 = $way->findvalue('./tag[@k="amenity"]/@v');
-	my $historic	 = $way->findvalue('./tag[@k="historic"]/@v');
-	my $place	 = $way->findvalue('./tag[@k="place"]/@v');
-	my $tunnel	 = $way->findvalue('./tag[@k="tunnel"]/@v');
-	my $bridge	 = $way->findvalue('./tag[@k="bridge"]/@v');
-	my $building     = $way->findvalue('./tag[@k="building"]/@v');
 
 	my $do_cycleway = sub {
 	    my @or;
@@ -392,9 +449,7 @@ for my $osm_file (@osm_files) {
 
 	if ($highway_cat) {
 	    my $is_motorway = 0;
-
-	    my $is_motorroad = $way->findvalue('./tag[@k="motorroad"]/@v'); # Kraftfahrzeugstraﬂe
-	    $is_motorroad = $is_motorroad and $is_motorroad eq 'yes' ? 1 : 0;
+	    my $is_motorroad = $motorroad and $motorroad eq 'yes' ? 1 : 0; # Kraftfahrzeugstraﬂe
 
 	    my $addcat = "";
 	    if ($tunnel && $tunnel eq 'yes') {
@@ -760,9 +815,10 @@ With a standard DSL connection, this last about 1:30 hours, totalling
 220 MB of data (as of July 2008).
 
 Now convert the OSM data into a BBBike-readable format. This should
-take 15 minutes or so for the above dataset. Decide on the destination
-directory. Convention: I use C<data_I<region_name>_osm_bbbike>. Note:
-this directory should not exist. For Berlin, this would be:
+take 5 minutes or so (Athlon64, i386-freebsd) for the above dataset.
+Decide on the destination directory. Convention: I use
+C<data_I<region_name>_osm_bbbike>. Note: this directory should not
+exist. For Berlin, this would be:
 
     ./miscsrc/osm2bbd -v -o data_berlin_osm_bbbike/ misc/download/osm/berlin
 

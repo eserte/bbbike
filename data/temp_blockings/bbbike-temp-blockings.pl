@@ -11930,4 +11930,21 @@ EOF
 userdel	2::inwork 15403,40364 14713,40426
 EOF
      },
+     { from  => 1215975468, # 2008-07-13 20:57
+       until => 1216666669, # 2008-07-21 20:57
+       text  => 'Freiheit (Spandau) stadtauswärts zwischen Klärwerkstr. und Am Schlangengraben Baustelle, Fahrtrichtung gesperrt (bis ungefähr 21.07.2008) ',
+       type  => 'gesperrt',
+       source_id => 'IM_009378',
+       data  => <<EOF,
+userdel	1::inwork -1258,13552 -2410,13746
+EOF
+     },
+     { from  => 1215295200, # 2008-07-06 00:00
+       until => 1218232800, # 2008-08-09 00:00
+       text  => 'B 002 zw. Bernau und Stadtgrenze Berlin Deckenerneuerung, Radwegbau Richtungsverkehr 07.07.2008-08.08.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 19658,24589 19565,24028 19393,23690
+EOF
+     },
     );

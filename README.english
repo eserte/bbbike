@@ -283,8 +283,8 @@ To use the CVS repository from command line type the following:
 
 The CVS repository is always up-to-date and also contains the current
 data. B<Warning>: address of the CVS repository changed in May 2006. You
-have to make a fresh checkout (co) if you have an old repository
-checked out.
+have to make a fresh checkout (co) if you have a checked-out repository
+which is older.
 
 To update only the data part of BBBike, just download the current data
 as a ZIP file from L<http://www.bbbike.de/cgi-bin/bbbike-data.cgi>. The ZIP file has to be
