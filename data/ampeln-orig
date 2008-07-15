@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.139 2008/07/12 20:07:57 eserte Exp $
+#: version: $Id: ampeln-orig,v 4.139 2008/07/12 20:07:57 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 	X 9222,8787
@@ -20,8 +20,10 @@
 	F 9571,8706
 	F 9234,9038
 	X 9801,8683
+#: related antidromic vvv
 	X 9793,9241
 	X 9753,9252
+#: related ^^^
 	X 9224,8584
 	X 9221,8732
 	X 8919,8508
@@ -78,8 +80,14 @@
 	X 10213,8665
 	F 10796,8498
 	F 11271,8325
+#: related vvv
 	X 11016,9599
+	X 11083,9573
+#: related ^^^
+#: related antidromic vvv
 	X 11083,9753
+	X 11148,9730
+#: related ^^^
 	X 11266,9496
 	X 11131,9189
 	X 11493,9128
@@ -351,7 +359,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4784,6280
 	X 2823,5672
 	X 2771,5678
-	X 3725,4737
+#: related vvv
+	X 3710,4728
+	X 3754,4755
+#: related ^^^
 	X 4512,5199
 	F 4153,5001
 	X 3048,4305
@@ -1655,8 +1666,6 @@ nur Richtung O	X 8142,7221
 	F 17816,5733
 	X 18737,9901
 	X 10408,9800
-	X 11083,9573
-	X 11148,9730
 	X 9972,12184
 	F 12612,12470
 	X 14449,11742

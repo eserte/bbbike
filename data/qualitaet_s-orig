@@ -792,7 +792,7 @@ Barbarossastr.: Kopfsteinpflaster	Q2 7128,9512 7010,9535
 Pr¸hﬂstr.: Kopfsteinpflaster	Q2 8766,4038 8967,4082 9107,4103 9338,4129 9468,4162 9583,4190 9848,4254
 Marienburger Str.: Kopfsteinpflaster	Q2 11582,14448 11835,14309 12091,14179
 Hufelandstr.: Kopfsteinpflaster	Q2 12091,14179 12199,14102 12380,13975 12478,13903 12567,13839 12573,13792
-Limonenstr.: Kopfsteinpflaster	Q2 3725,4737 3597,4941 3418,5088 3357,5178 3321,5212
+Limonenstr.: Kopfsteinpflaster	Q2 3716,4764 3597,4941 3418,5088 3357,5178 3321,5212
 Willdenowstr.: Kopfsteinpflaster	Q2 3826,4800 3684,4998 3426,5292
 Manteuffelstr.: Kopfsteinpflaster	Q2 4092,4217 4317,4378 4521,4484
 Haydnstr.: Kopfsteinpflaster	Q2 4521,4484 4613,4515 4681,4537 4785,4557 4870,4609 5004,4709 5076,4762
@@ -2515,8 +2515,9 @@ Claudiusstr.: Asphalt	Q0 6396,12607 6400,12662 6354,12870
 #: by: Gerald Grelka
 Walzelstr.: Beton	Q1 -5559,13438 -5254,13542
 #: by: Karina Morgenstern vvv
-Hortensienstr.: schlechtes Kopfsteinpflaster	Q3 3597,4494 3629,4465 3665,4463 3830,4572 4031,4707 4156,4784 4274,4808
-Enzianstr.: m‰ﬂiges Kopfsteinpflaster	Q2 3926,4438 3898,4477 3859,4531 3830,4572 3785,4637
+Hortensienstr.: schlechtes Kopfsteinpflaster	Q3 3597,4494 3629,4465 3665,4463 3839,4577 4031,4707 4156,4784 4274,4808
+Enzianstr.: m‰ﬂiges Kopfsteinpflaster	Q2 3926,4438 3898,4477 3859,4531 3839,4577 3806,4628 3815,4657
+Enzianstr.: m‰ﬂiges Kopfsteinpflaster	Q2 3775,4632 3806,4628
 #: by: ^^^
 #: by: Tilman Gappa:
 Wilhelmshavener Str.: Kopfsteinpflaster	Q2 6089,14197 6111,13979 6095,13724 6104,13522 6112,13327
@@ -3548,6 +3549,8 @@ Schonensche Str.: Kopfsteinpflaster	Q2 11287,16515 11450,16490 11536,16477 11673
 #: by: Oliver Kraft: vvv
 Nelkenstr.: m‰ﬂiges Kopfsteinpflaster	Q2 4210,4907 4274,4808
 Geranienstr.: m‰ﬂiges Kopfsteinpflaster	Q2 4514,5082 4344,4975 4231,4922 4210,4907
+Begonienplatz: m‰ﬂiges Kopfsteinpflaster	Q2 4132,4988 4193,4897
+Begonienplatz: m‰ﬂiges Kopfsteinpflaster	Q2 4173,5013 4231,4922
 Oertzenweg: Asphalt	Q0 -1248,2508 -1021,2595 -845,2664 -693,2720
 Wolzogenstr.: akzeptables Kopfsteinpflaster	Q2 -785,2492 -845,2664
 Wolzogenstr.: geteert	Q0 -845,2664 -867,2722
@@ -4297,7 +4300,7 @@ Glaﬂbrennerstr.: Kopfsteinpflaster	Q2 11543,16207 11632,16373
 #: by: Frida (juliane):
 Grabertstr.: Asphalt	Q0 7091,4760 7058,4890 7052,4911 7030,4937 6923,5057
 #: by: christian (czorr):
-Tulpenstr.: Kopfsteinpflaster	Q2 3587,4514 3785,4637 3991,4773 4193,4897 4210,4907
+Tulpenstr.: Kopfsteinpflaster	Q2 3587,4514 3775,4632 3795,4644 3815,4657 3991,4773 4193,4897 4210,4907
 #: by: koschulz:
 Kanzowstr.: schlechter Asphalt	Q2 11698,15627 11914,15490
 #: by: ulfert030:
