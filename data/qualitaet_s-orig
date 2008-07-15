@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.227 2008/07/12 20:08:14 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.227 2008/07/12 20:08:14 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10257,-2654 10392,-2980 10475,-3174
@@ -2135,6 +2135,7 @@ Bachstr. (Bohnsdorf): guter Beton	Q0 22749,-969 22918,-903 23329,-732
 Fontanestr. (Oberschöneweide): guter Asphalt	Q0 18225,7004 18240,6845 18254,6679 18273,6606
 ######################################################################
 #: by: anonymous vvv
+Beyrodtstr.: guter Asphalt	Q0 7888,1321 7981,1505 8074,1698 8085,1763 8092,1818 8128,1908 8191,2039
 Albersweilerweg: Asphalt	Q0 11763,1879 11951,1901 11978,1921
 #: confirmed_by: rjoop (nördliche Einfahrt)
 Kolonie Bismarckruh: Verbundsteinpflaster	Q1 1301,13338 1311,13210 1336,12967 1335,12921 1242,12535
@@ -4235,7 +4236,7 @@ Olbendorfer Weg: Asphalt	Q0 4497,19539 4590,19493 4690,19446 4742,19428 4904,196
 Hermann-Piper-Str.; Asphalt	Q0 4760,20071 4920,19928 5001,19832
 #: by: ^^^
 #: by: Samer Aburous
-Hanielweg: Asphalt	Q0 8070,1245 7830,1345 7810,1349 7787,1361 7651,1615 7610,1695 7562,1796
+Hanielweg: Asphalt	Q0 8070,1245 7888,1321 7830,1345 7810,1349 7787,1361 7651,1615 7610,1695 7562,1796
 #: by: garci vvv
 #: note: auch laut ADFC-Karte gut geeignet
 Galenusstr.: glatter Asphalt	Q0 11915,19580 11726,19482 11523,19393 11366,19299 11309,19267 11275,19250 11164,19238 11054,19226
@@ -6970,9 +6971,10 @@ Knesebeckstr. (Lichterfelde): guter Asphalt	Q0 3151,4160 3054,4094 3033,4113 294
 Leidener Str.: guter Asphalt	Q0 13742,5383 13870,5436 13954,5471
 Tilburger Str.: guter Asphalt	Q0 13870,5436 13893,5374
 #: by: ^^^
-#: by: Andreas Manlik:
-#: XXX: der südliche Abschnit zwischen Florastr. und Schräger Weg könnte aber besser sein, laut Luftbild:
-Kerkowstr.: schlechtes Kopfsteinpflaster	Q3 14597,22842 14642,23072 14726,23194 14865,23388
+#: by: Andreas Manlik: vvv
+Kerkowstr.: guter Asphalt	Q0 14597,22842 14642,23072
+Kerkowstr.: schlechtes Kopfsteinpflaster	Q3 14642,23072 14726,23194 14865,23388
+#: by: ^^^
 #: by: Martin Müller:
 #: note: auch eingetragen: enge Straße, aber q0
 Hospitalstr.: guter Asphalt	Q0 -3650,15661 -3727,15695
@@ -6989,8 +6991,11 @@ Ingelheimer Str.: Kopfsteinpflaster	Q2 19075,8590 19010,8569 18951,8574 18884,85
 #: by: Katja Rentsch:
 #: confirmed_by: albrecht_martina (mit Q1 statt Q0; enge Straße ignoriert, auf dem Luftbild sieht das nicht so schlimm aus):
 Attendorner Weg: Asphalt	Q0 1932,18610 1975,18431 2022,18225 2031,18184
-#: by: T. Manig:
+#: by: T. Manig: vvv
 Buschower Weg: mäßiger Asphalt	Q1- -8040,13077 -8056,12916 -8078,12647
+Buschower Weg: Kopfsteinpflaster	Q2 -8022,13332 -8033,13204 -8040,13077
+Buschower Weg: unbefestigt	Q2 -8078,12647 -8098,12340 -8110,12160
+#: by: ^^^
 #: by: Martina (mascha...):
 Küsterstr.: Asphalt	Q0 -569,15167 -593,15300 -624,15494
 #: by: Stefanie Töpper
@@ -7000,6 +7005,10 @@ Biesenthaler Str. (Hohenschönhausen): Asphalt	Q0 17063,14797 17074,14704 17239,1
 Kirchbachstr. (Lichtenrade): Kopfsteinpflaster	Q2 11027,-2448 10874,-2449 10789,-2451 10638,-2452 10556,-2429
 #: by: Rainer Ludwig:
 Zeisigweg: schlechtes Kopfsteinpflaster	Q3 5178,1499 5153,1534 5148,1559 5145,1611 5132,1672 5087,1807
+#: by: Katrin Schröder vvv
+#: note: "enge Straße", aber q0
+Paul-Oestreich-Str.: guter Asphalt	Q0 13706,16535 13630,16629
+#: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

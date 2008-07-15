@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Brandenburg und weiterer Umgebung
-#: version: $Id: qualitaet_l-orig,v 4.122 2008/07/12 20:08:34 eserte Exp $
+#: version: $Id: qualitaet_l-orig,v 4.122 2008/07/12 20:08:34 eserte Exp eserte $
 #:
 Basdorf: Kopfsteinpflaster, mäßig bis OK	Q1 11964,35230 12034,35012 12193,34683 12635,32221
 Strausberg Nord - Prötzel: sehr guter Asphalt	Q0 43584,20871 44596,21287 45545,21723 46072,21966 46782,22769 47180,22939 47585,23227 47712,23526 47671,23769 47857,24214 48104,24510 48885,25629 49255,26084 49808,26346 49984,26511
@@ -2715,6 +2715,9 @@ Am Nuthetal: Asphalt	Q0 -10560,-3764 -10504,-3772 -10438,-3818 -10332,-3863 -102
 Am Nuthetal: guter Beton	Q1+ -9752,-3958 -9647,-3958 -9544,-3913
 (Am Nuthetal - Wetzlarer Str.): gut verlegtes Pflaster	Q1+ -9544,-3913 -9531,-3917 -9461,-3879 -9440,-3872 -9391,-3864 -9328,-3871 -9276,-3891 -9240,-3912 -9217,-3897 -9186,-3853 -9157,-3842 -9134,-3851 -9114,-3846 -9064,-3866 -9047,-3889
 (Wetzlarer Str. - Stern-Center): alter Asphalt, Sand und Kies, relativ fest	Q2 -8970,-3923 -8975,-3946 -8708,-4025 -8687,-4015 -8634,-4035 -8579,-4074 -8448,-4098 -8324,-4087 -8096,-4106 -8038,-4093
+#: note: laut "Berliner Umland" witterungsabhängige Strecke:
+#: note: ehemaliger Buga-Weg
+(Im Schäferfeld - Wetzlarer Str.): gut gemachter Sand-Kies-Weg	Q1 -8563,-3805 -8562,-3849 -8661,-3971 -8982,-3860 -9002,-3896 -8970,-3923
 #: by: ^^^
 #: by: Ulrike Orlowski vvv
 Tannenstr.: schlechtes Kopfsteinpflaster	Q3 -9346,176 -9389,170 -9434,164 -9539,147
@@ -2725,3 +2728,5 @@ Louis-Nathan-Allee: fester Sandweg	Q2 -9698,-19 -10097,200
 Kleinziethen - Pechsteinstr. (Lichtenrade): mäßiger fester Sandweg	Q2 13506,-2809 12268,-2294
 #: by: Fiedler Katja:
 Lindenpromenade (Strausberg): loser Sandweg, holprig, viele Schlaglöcher	Q3 39971,14708 40034,14772 40234,15112
+#: by: anonymous (Qualitätskategorie ist geraten)
+Siedlung Schönwalde - Wansdorf/Pausin: Sand, Waldweg	Q2 -10313,21144 -10336,21462 -10425,22139 -10425,22503 -10564,22896 -10590,23112 -10559,23255

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.49 2008/03/13 22:00:26 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.50 2008/07/15 20:14:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003-2008 Slaven Rezic. All rights reserved.
@@ -263,12 +263,17 @@ eval {
 			(defined $add_bbd       && $add_bbd ne ""));
     $subject = substr($subject, 0, 70) . "..." if length $subject > 70;
 
-    my($subject_mime, $to_mime, $cc_mime, $email_mime) =
-	($subject, $to, $cc, $email);
+    my($subject_mime, $to_mime, $cc_mime, $email_mime, $encoded_plain_body) =
+	($subject, $to, $cc, $email, $plain_body);
+    my $charset = "iso-8859-1";
     if (eval { require Encode; 1 }) {
 	for ($subject_mime, $to_mime, $cc_mime, $email_mime) {
 	    $_ = Encode::encode("MIME-B", $_)
 		if defined $_;
+	}
+	if (defined $plain_body) {
+	    $encoded_plain_body = Encode::encode("utf-8", $encoded_plain_body);
+	    $charset = "utf-8";
 	}
     }
 
@@ -278,8 +283,8 @@ eval {
 			      ($email_mime ? ("Reply-To" => $email_mime) : ()),
 			      ($is_multipart
 			       ? (Type => "multipart/mixed")
-			       : (Type => "text/plain; charset=iso-8859-1",
-				  Data => $plain_body,
+			       : (Type => "text/plain; charset=$charset",
+				  Data => $encoded_plain_body,
 				 )
 			      ),
 			      Sender   => $to_mime, # to satisfy some mailers like exim
@@ -296,8 +301,8 @@ eval {
 			 Filename => "newstreetform.html",
 			);
 	}
-	$msg->attach(Type => "text/plain; charset=iso-8859-1",
-		     Data => $plain_body,
+	$msg->attach(Type => "text/plain; charset=$charset",
+		     Data => $encoded_plain_body,
 		    );
 	if (defined $add_bbd && $add_bbd ne "") {
 	    $msg->attach(Type => "application/x-bbbike-data",
@@ -359,13 +364,13 @@ eval {
 	print header(-cookie => $cookie),
 	    start_html(-title=>"Kommentar abgesandt",
 		       -style=>{'src'=>"$bbbike_html/bbbike.css"}),
-	    "Danke, der folgende Kommentar wurde an $to gesendet:",br(),br(),
-	    pre($comment),
+	    "Danke, der folgende Kommentar wurde an " . BBBikeCGIUtil::my_escapeHTML($to) . " gesendet:",br(),br(),
+	    pre(BBBikeCGIUtil::my_escapeHTML($comment)),
 	    end_html;
     }
 };
 if ($@) {
-    warn $@;
+    warn "Could not send mail: $@\nMail content:\n$comment\n";
     error_msg($@);
 }
 
@@ -402,7 +407,7 @@ sub newstreetform_extra_html ($$) {
 $strname: $cat_text\t$cat 
 EOF
 
-    $extra_html .= "<textarea rows='4' cols='80'>" . CGI::escapeHTML($bbd_suggestion) . "</textarea><br>";
+    $extra_html .= "<textarea rows='4' cols='80'>" . BBBikeCGIUtil::my_escapeHTML($bbd_suggestion) . "</textarea><br>";
 
     my $reply_to = $header->{To};
     my $cc = 'newstreet@bbbike.de, ' . $BBBike::EMAIL;

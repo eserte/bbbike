@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikecgiutil.t,v 1.1 2006/10/09 15:35:38 eserte Exp $
+# $Id: bbbikecgiutil.t,v 1.2 2008/07/15 20:11:13 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -23,7 +23,7 @@ BEGIN {
 
 use CGI;
 
-plan tests => 3;
+plan tests => 6;
 
 use_ok("BBBikeCGIUtil");
 
@@ -43,6 +43,12 @@ SKIP: {
     if (!$success && $Encode::VERSION lt "2.08") {
 	diag "Failure expected with this Encode version ($Encode::VERSION)";
     }
+}
+
+{
+    is(BBBikeCGIUtil::my_escapeHTML("ABC<>&DEF"), "ABC&#60;&#62;&#38;DEF", "Escaping classic ones");
+    is(BBBikeCGIUtil::my_escapeHTML("ä"), "&#228;", "Escaping latin1");
+    is(BBBikeCGIUtil::my_escapeHTML("ä\x{20ac}"), "&#228;&#8364;", "Escaping unicode > 255");
 }
 
 __END__
