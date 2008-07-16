@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Simplify.pm,v 1.1 2008/02/03 12:10:54 eserte Exp $
+# $Id: Simplify.pm,v 1.2 2008/07/16 16:22:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Route::Simplify;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 use GPS::Util qw(eliminate_umlauts);
 

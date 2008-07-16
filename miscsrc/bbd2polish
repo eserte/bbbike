@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2polish,v 1.29 2008/07/07 20:36:55 eserte Exp $
+# $Id: bbd2polish,v 1.30 2008/07/16 16:15:59 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -212,6 +212,7 @@ for my $file (@files) {
 	$strname = Strasse::strip_bezirk($strname)
 	    if !$use_full_name;
 	$strname =~ s{[()]}{}g;
+	$strname =~ s{(\s+)-(\s+)}{..}g; # Garmin bug? Street names matching this regexp won't be shown.
 	encode_string($strname);
     };
 
@@ -418,7 +419,7 @@ sub cat2type {
     #   1
     #   2, 3
     #   4, 5
-    #   6         unfortunately in small scales *thicker* than 4, 5!
+    #   6         unfortunately in small scales *thicker* than 4, 5! See below.
     #   7, 10
 
     if ($file =~ /[rus]bahnhof$/) {
@@ -535,3 +536,11 @@ sub using_non_faked_strassen {
 }
 
 __END__
+
+# Problematik mit N vs. NN: im derzeitigen Setting (NN ist 6, N ist 4)
+# erscheint bei groﬂen Maﬂst‰ben bis 800m NN breiter als N. Ab 500m
+# runter sieht es richtig aus. Normalerweise wird cat=6 im Garmin bei
+# groﬂen Maﬂst‰ben nicht gezeichnet und vielleicht ist es deshalb nie
+# aufgefallen. Das gilt f¸r die Einstellung "normale" Details. Bei
+# "vise" ist die Grenze erst bei 1.2km (gut) - 2km (falsch). Bei
+# "najvise" ist es bei 2km (gut) - 3km (falsch).

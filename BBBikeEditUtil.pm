@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEditUtil.pm,v 1.19 2007/08/24 21:07:44 eserte Exp $
+# $Id: BBBikeEditUtil.pm,v 1.20 2008/07/16 19:02:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -54,8 +54,8 @@ sub get_generated_files {
     opendir(DIR, $datadir) or die "Can't opendir $datadir: $!";
     my $f;
     while(defined(my $f = readdir DIR)) {
-	next if $f =~ /^(\.|.*[Mm]akefile.*|README.*|BASE)/;
-	next if $f =~ /(-info|\.coords\.data|\.desc|\.st|~)$/;
+	next if $f =~ /^(\.|.*[Mm]akefile.*|README.*|BASE|datachange\.log)/;
+	next if $f =~ /(-info|\.coords\.data|\.desc|\.st|\.inx|\.inx4|\.lock|~)$/;
 	if (-f "$datadir/$f" && $f !~ /-orig$/) {
 	    push @files, $f;
 	}

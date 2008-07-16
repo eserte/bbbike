@@ -755,11 +755,10 @@ zu laufen.
 =item * (M1) (feature)
 
 Für das Drucken von Text: evtl. auch Netscape und print-Methode
-verwenden (?). Für Unix könnte man eine start netscape,
-netscape remote openFile/print-Kombination verwenden. Bei Windows?
-Netscape könnte man auch zum Mailabschicken verwenden,
-über mailto. Evtl. ein Modul für Netscape schreiben,
-daß die ganzen remote-Kommandos verwendet. Hier eine alte Liste:
+verwenden (?). Für Unix könnte man eine start netscape, netscape
+remote openFile/print-Kombination verwenden. Bei Windows? Evtl. ein
+Modul für Netscape schreiben, daß die ganzen remote-Kommandos
+verwendet. Hier eine alte Liste:
 
  %s: usage: OpenURL(url [ , new-window|window-name ] )
  %s: usage: OpenFile(file)
@@ -779,41 +778,12 @@ kann, aber weder Subject noch Body.
 
 Mit Xprt für X11 experimentieren (doc lesen).
 
-=item * (H1) (feature)
-
-Ein LightWeight-Modul (CanvasMap) schreiben. Vielleicht irgendwann
-alles auf dieses Modul umschreiben.
-
-=item * (H1) (feature)
-
-PerlPlusPlugin ausprobieren und BBBike dafür portieren. Sachen,
-die mir dafür einfallen: Ich brauche ein open(), das über
-LWP funktioniert (vielleicht mit LWPng?). Ich brauche ein hyperuse und
-hyperrequire. Z.B.
-
-    @HYPERINC = qw("http://user.cs.tu-berlin.de/~eserte",
-                   "file://tmp");
-    hyperuse BBBikeEdit;
-    hyperrequire Strassen;
-
-Irgendwo habe ich so etwas schon implementiert gesehen ... suchen!
-
-=item * (H1)
-
-BBBikeContext.pm schreiben: gibt alles aus, was ich so brauche: $os,
-Strassen-Objekte, Crossings, Netze etc. Caching bei Belieben
-einstellen, evtl. mit Ties arbeiten, die sich selbst umwandeln oder
-durchgängig mit Methoden. AutoLoading verwenden.
-
-Z<>=E<gt> Teilweise erledigt BBBikeRouting.pm einige dieser Sachen...
-
 =item * (H1)
 
 Speicheroptimierung für kleine Systeme.
 
 Ein minimales System kann auf Folgendes verzichten:
 
-    * Fahrinfo::*
     * BikePower::*
     * Devel::Peek::*
     * EasySound::*
@@ -877,12 +847,12 @@ Liniengruppe), um Umsteigen zu erkennen.
 
 =back
 
-=item *
+=item * (E1) (improvement)
 
 GfxConvert: add more search paths on Windows machines like
 C:/Programme/gs/gs8.14/lib;C:/Programme/GnuWin32/bin
 
-=item *
+=item * (H1) (improvement)
 
 GfxConvert evtl. mit Tk::WinPhoto/Tk::Photo-Funktionen implementieren,
 wenn die externen Programme nicht verfügbar sind. Am besten
@@ -890,38 +860,17 @@ wäre natürlich noch immer ein NetPBM-Modul.
 
 Photo-Zooming: -zoom x -subsample y == -zoom x/y oder umgekehrt
 
-=item *
+=item * (H3)
 
-Radwegekategorien erweitern: RW(kategorie)(qualitaetskategorie). Also
-heißt dann z.B. RW00: Radweg mit sehr guter Qualität und
-RW13: benutzungspflichtiger Radweg mit sehr schlechter
-Qualität. Bei den restlichen Kategorien kann man sich die
-Erweiterung sparen, da dort die Qualitätskategorie der
-Straße gilt. Default-Qualitätskategorie für Radwege
-sei 1 (gute Qualität).
-
-Problem => ich bin schon bei RW10 angelangt, also brauche ich eine
-andere Kodierung.
-
-=item *
-
-ShAddRecentDoc geht unter Win98 nicht?
-
-=item *
-
-Drag'n'drop und open's sollten vielleicht etwas mit .lnk-Dateien unter
-Win* anfangen können...
-
-=item *
-
-outline_text bei draw_text_intelligent verwenden
+outline_text bei draw_text_intelligent verwenden (maybe already
+implemented? check!)
 
 =item * (M4)
 
 draw_text_intelligent should use the bbox of the central object
 if xaddanchor/yaddanchor is not defined
 
-=item *
+=item * (H4)
 
 Beim intelligenten Zeichen von Ortsnamen bietet sich ein
 Scanline-Vorgang von rechts nach links an. Somit vermeidet man Sachen
@@ -930,16 +879,19 @@ wie
 	      * Frankfurt
 
 Schwierig, wenn gleichzeitig das Ergebnis aus sortbycat beachtet
-werden soll (Multipass? Langsam!)
+werden soll (Multipass? Langsam! Wie macht es Mapserver? Kann ich das
+auch mit Geo::SpaceManager machen, siehe BBBikeDraw::PDF?)
 
-=item *
+Vielleicht auch Andreas' Labeling-Algorithmus verwenden
+
+=item * (H3)
 
 Bei der Ausgabe der Straßennamen an der Route sollte ein aehnlich
 intelligentes Verfahren angewendet werden. Vielleicht kann bei Routen,
 die von W nach O verlaufen, die Strassennamen erstmal links vom Punkt
 eingezeichnet werden und umgekehrt.
 
-=item *
+=item * (M3)
 
 Bei -usbahnnetz sollte folgendes gehen: Routenbeschreibung mit Bahnhöfen
 statt Strecken (davon kann auch die Routenbeschreibung auf dem flachen
@@ -948,38 +900,30 @@ und Straßennetz (für Fußwege bzw. Bike+Ride).
 
 =item *
 
-Optional eine kürzere Beschreibung. Diese würde nur
-folgendes enthalten: Straßen und Abbiegevorgänge. Wenn
-man auf einer Straße nicht abbiegen muss, dann werden
-verschiedene Straßennamen in einer Liste zusammengefasst.
-
-Zusätzlich noch eine Druckausgabe. Auch beim CGI. Wann wird die
-Ausgabe endlich vereinheitlicht?
+Optional eine kürzere Beschreibung. Bei der Tk-Version gibt es das
+schon, aber noch nicht beim CGI. Wann wird die Ausgabe endlich
+vereinheitlicht?
 
 =item *
 
 bei Windows (oder allgemein: bei ClickToFocus) ist es
 unangenehm, dass neue Fenster den Focus klauen. Allerdings ist es ohne
 Maus eher angenehm, dass neue Fenster den Focus bekommen. Wie soll man
-also verfahren?
-
-=item *
-
-Pilot.pm installieren, BBBikePalm dafür erweitern
+also verfahren? -> Ich habe Cycle-Windows mit CTRL-TAB implementiert.
+Vielleicht reicht das schon?
 
 =item *
 
 user editing: negative/positive präferenzen mit b2/b3 lange druecken
 setzen
 
+Vielleicht reicht ein besseres Menü für E<quot>Benutzerdefinierte
+SperrungenE<quot>: handicaps fehlen, Einbahnstraßen fehlen.
+
 =item *
 
 bugfix: optmenu in optimierungseinstellungen korrigieren (Fehler beim
-Tk Widget)
-
-=item *
-
-lange hänger bei vielen Canvas-Elementen ueberpruefen
+Tk Widget) -> schon korrigiert???
 
 =item *
 
@@ -991,14 +935,12 @@ MDI-Interface entwickeln mit:
 Siehe Tk::WindowManager =E<gt> entwickle ich nicht mehr weiter,
 dafür gibt es aber ein neues Tk::MDI-Widget. Aber: MDI is evil!
 
-=item *
-
-Andreas' Labeling-Algorithmus verwenden
-
-=item * (M2)
+=item * (M5)
 
 Tk::Icon (see L<http://www.schmuker.de/perl/modules/>) to optionally
 display the bbbike icon (avoid transparency problem!) (Windows only).
+
+Auf Windows bundlen und prüfen. Oder ist es nicht mehr notwendig?
 
 =back
 
@@ -1144,6 +1086,16 @@ wäre eine Idee für optimize::...: überflüssige
 enter/leave überspringen, wenn in einem Block keine padsv (my)
 oder LVINTRO (local) vorkommen sowie der Block in einem void-Kontext
 steht.)
+
+=item BBBikeGPS
+
+Die Graphendarstellung verallgemeinern und verbessern:
+
+  * Es sollte möglich sein, die Graphen beliebig ein- und
+    auszuschalten (kein Redraw notwendig)
+
+  * Die Graphen könnten besser gelabelt sein, z.B. mit den
+    entsprechenden Straßennamen oder nahe gelegenen Orten/Plätzen.
 
 =item BBBikeEdit
 
@@ -1628,6 +1580,15 @@ More ideas: copy polygons, rotate polygons.
 =head2 Windows specific
 
 =over
+
+=item * (M1)
+
+ShAddRecentDoc geht unter Win98 nicht?
+
+=item * (H1)
+
+Drag'n'drop und open's sollten vielleicht etwas mit .lnk-Dateien unter
+Win* anfangen können...
 
 =item * (H4)
 
@@ -2372,6 +2333,23 @@ But if the only concern is to open multiple layers and to avoid clumsy
 GUI dialogs, then it's probably sufficient to just use the
 BBBike-Server/Client.
 
+=item * (H4)
+
+Radwegekategorien erweitern: RW(kategorie)(qualitaetskategorie). Also
+heißt dann z.B. RW00: Radweg mit sehr guter Qualität und
+RW13: benutzungspflichtiger Radweg mit sehr schlechter
+Qualität. Bei den restlichen Kategorien kann man sich die
+Erweiterung sparen, da dort die Qualitätskategorie der
+Straße gilt. Default-Qualitätskategorie für Radwege
+sei 1 (gute Qualität).
+
+Problem => ich bin schon bei RW10 angelangt, also brauche ich eine
+andere Kodierung.
+
+Ich könnte aber RW(kategorie)::Q(qualitaetskategorie) verwenden (mit
+einem oder zwei Doppelpunkten). Präzedenzfall: in gesperrt gibt es
+1s:q1.
+
 =back
 
 =head2 cgpsmapper
@@ -3040,6 +3018,12 @@ einmal die entsprechenden Datenstrukturen bereitstellen.
 Zusatzdownloads (GPX, Palm) bereitsstellen, vielleicht auch die
 Verlinkung zur Printversion, PDF-Generierung und Mapserver.
 
+=item * (H2) (feature)
+
+Bei kleinen Maßstäben könnte man das angezeigte BBBike-Straßennetz per
+Polyline-Zeichnung zeigen (Qualität, Radwege, Fragezeichen etc.). Bei
+großen Maßstäben wird die Performance des Clients zu schlecht.
+
 =back
 
 =head1 WAP version of BBBike (wapbbbike)
@@ -3139,14 +3123,11 @@ from start and goal point of route
 
 =back
 
-=head3 Route::Simplifier
+=head3 Route::Simplify
 
-Output-agnostic simplifier of routes. Should take coords, net, already
-used waypoints and some gpx* parameters and return a simplified coord
-list with generated shorter waypoint names
-
--> GPS::DirectGarmin::simplify_route ist vielleicht schon allgemein
-genug, um in ein anderes Modul herausgebrochen werden zu können
+-> and <- should only be used if it is really a crossing. See
+Kreuzungen::situation_at_point() for the beginnings of a function
+which will tell this (and more).
 
 =head2 GPS
 
@@ -3908,6 +3889,46 @@ Eine öffentliche FAQ bereitstellen, vielleicht auch ein
 =item *
 
 Alle Anregungen von anderen Leuten (z.B. per Mail) hier eintragen.
+
+=back
+
+=head1 Obskures
+
+=over
+
+=item * (H1) (feature)
+
+PerlPlusPlugin ausprobieren und BBBike dafür portieren. Sachen,
+die mir dafür einfallen: Ich brauche ein open(), das über
+LWP funktioniert (vielleicht mit LWPng?). Ich brauche ein hyperuse und
+hyperrequire. Z.B.
+
+    @HYPERINC = qw("http://user.cs.tu-berlin.de/~eserte",
+                   "file://tmp");
+    hyperuse BBBikeEdit;
+    hyperrequire Strassen;
+
+Irgendwo habe ich so etwas schon implementiert gesehen ... suchen!
+
+=back
+
+=head1 Revolutionen
+
+=over
+
+=item * (H1) (improvement)
+
+Ein Widget zum Kartenrendern (CanvasMap) schreiben und alles darauf
+umstellen.
+
+=item * (H1) (improvement)
+
+BBBikeContext.pm schreiben: gibt alles aus, was ich so brauche: $os,
+Strassen-Objekte, Crossings, Netze etc. Caching bei Belieben
+einstellen, evtl. mit Ties arbeiten, die sich selbst umwandeln oder
+durchgängig mit Methoden. AutoLoading verwenden.
+
+Z<>=E<gt> Teilweise erledigt BBBikeRouting.pm einige dieser Sachen...
 
 =back
 

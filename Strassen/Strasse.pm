@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.33 2007/08/07 22:24:34 eserte Exp $
+# $Id: Strasse.pm,v 1.34 2008/07/16 18:32:03 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.33 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.34 $ =~ /(\d+)\.(\d+)/);
 
 package Strasse;
 use strict;
@@ -228,6 +228,7 @@ sub parse_street_type_nr {
 sub strip_bezirk {
     my $str = shift;
     if ($str !~ /^\s*\(/) {
+	$str =~ s/\s*\(.*\(.*\).*\)\s*$//; # poor solution for parens in parens
 	$str =~ s/\s*\([^\)]+\)\s*$//;
     }
     $str;
