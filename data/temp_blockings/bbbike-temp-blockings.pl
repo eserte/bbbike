@@ -11947,4 +11947,24 @@ EOF
 userdel	1::inwork 19658,24589 19565,24028 19393,23690
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Bereich Mecklenburgische Str. (Wilmersdorf) Rund um den Volkspark Bombenfund, Bereich vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_009394',
+       data  => <<EOF,
+userdel	2::inwork 4280,8188 4325,8229 4457,8345 4623,8457 4783,8557
+userdel	2::inwork 4772,8599 4456,8584
+userdel	2::inwork 4457,8345 4457,8484
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Swinemünder Brücke (Wedding) in beiden Richtungen Straße vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_009388',
+       data  => <<EOF,
+userdel	2::temp 9494,15998 9646,15737
+EOF
+     },
     );

@@ -1055,16 +1055,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_009340',
-         'until' => 1216159199,
-         'text' => 'Heinrich-Mann-Str. (Pankow) in Richtung Kreuzstr. zwischen Hermann-Hesse-Str. und Heinrich-Mann-Platz Baustelle, Fahrtrichtung gesperrt (bis Mitte 07.2008)',
-         'from' => 1215723261,
-         'id' => 1403,
-         'data' => 'userdel	1::inwork 9301,18722 9457,18612
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1220133600,
          'text' => 'L 793 Schönhagen - Ludwigsfelde Brücke über den Faulen Graben bei Blankensee Brückenneubau Vollsperrung 17.07.2008-30.08.2008 ',
@@ -1126,6 +1117,28 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'from' => 1215295200,
          'id' => 1410,
          'data' => 'userdel	1::inwork 19658,24589 19565,24028 19393,23690
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009394',
+         'until' => undef,
+         'text' => 'Bereich Mecklenburgische Str. (Wilmersdorf) Rund um den Volkspark Bombenfund, Bereich vollständig gesperrt',
+         'from' => undef,
+         'id' => 1411,
+         'data' => 'userdel	2::inwork 4280,8188 4325,8229 4457,8345 4623,8457 4783,8557
+userdel	2::inwork 4772,8599 4456,8584
+userdel	2::inwork 4457,8345 4457,8484
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009388',
+         'until' => undef,
+         'text' => 'Swinemünder Brücke (Wedding) in beiden Richtungen Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1412,
+         'data' => 'userdel	2::temp 9494,15998 9646,15737
 ',
          'type' => 'gesperrt'
        }
