@@ -10289,7 +10289,7 @@ EOF
        text  => 'L 243 Wegguner Str. OL Boitzenburg, zw. Puschkinstr. und Goethestr. Reparatur Rohrleitung Vollsperrung 24.10.2007-31.10.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 22507,95722 22233,95712
+userdel	q4::inwork 22507,95722 22471,95721 22233,95712
 EOF
      },
      { from  => 1193526000, # 2007-10-28 01:00
@@ -10803,13 +10803,13 @@ EOF
 userdel	q4::inwork 23113,30450 23368,30409 23631,30262
 EOF
      },
-     { from  => 1209758305, # 2008-05-02 21:58
+     { from  => 1216405512, # 2008-07-18 20:25
        until => 1222811999, # 2008-09-30 23:59
-       text  => 'Pistoriusstr. (Weißensee) Richtung Berliner Str. zwischen Gustav-Adolf-Str. und Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2008)',
+       text  => 'Pistoriusstr. (Weißensee) Richtung Am Steinberg zwischen Gustav-Adolf-Str. und Am Steinberg Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2008)',
        type  => 'gesperrt',
        source_id => 'IM_006024',
        data  => <<EOF,
-userdel	1::inwork 12486,16791 12604,16731 12693,16700
+userdel	1::inwork 12257,16876 12486,16791 12604,16731 12693,16700
 EOF
      },
      { from  => 1201647600, # 2008-01-30 00:00
@@ -11881,9 +11881,9 @@ EOF
 userdel	q4::inwork -70100,51862 -70753,51862 -70922,51604
 EOF
      },
-     { from  => 1215723261, # 2008-07-10 22:54
-       until => 1216159199, # 2008-07-15 23:59
-       text  => 'Heinrich-Mann-Str. (Pankow) in Richtung Kreuzstr. zwischen Hermann-Hesse-Str. und Heinrich-Mann-Platz Baustelle, Fahrtrichtung gesperrt (bis Mitte 07.2008)',
+     { from  => 1216405440, # 2008-07-18 20:24
+       until => 1217627999, # 2008-08-01 23:59
+       text  => 'Heinrich-Mann-Str. (Pankow) in Richtung Kreuzstr. zwischen Hermann-Hesse-Str. und Heinrich-Mann-Platz Baustelle, Fahrtrichtung gesperrt (bis Anfang 08.2008)',
        type  => 'gesperrt',
        source_id => 'IM_009340',
        data  => <<EOF,
@@ -11947,8 +11947,8 @@ EOF
 userdel	1::inwork 19658,24589 19565,24028 19393,23690
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1216321760, # 
+       until => 1216321765, # XXX
        text  => 'Bereich Mecklenburgische Str. (Wilmersdorf) Rund um den Volkspark Bombenfund, Bereich vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_009394',
@@ -11965,6 +11965,72 @@ EOF
        source_id => 'IM_009388',
        data  => <<EOF,
 userdel	2::temp 9494,15998 9646,15737
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Friedrich-Karl-Str., Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Ottokarstr. und Wenckebachstr. Baustelle, Straße vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_009406',
+       data  => <<EOF,
+userdel	2::inwork 9357,5601 9147,5534 8955,5549 8870,5557 8767,5571
+EOF
+     },
+     { from  => 1216504800, # 2008-07-20 00:00
+       until => 1218232800, # 2008-08-09 00:00
+       text  => 'B 087 Luckauer Str. OD Schlieben, Durchlass Instandsetzungsarb. Vollsperrung 21.07.2008-08.08.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 11880,-76020 11354,-75979 10891,-76066
+EOF
+     },
+     { from  => 1216159200, # 2008-07-16 00:00
+       until => 1220133600, # 2008-08-31 00:00
+       text  => 'K 6518 Liebenberg - Bergsdorf OD Liebenberg, zw. B167 und OA Kanal- und Straßenbau Vollsperrung 17.07.2008-30.08.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -386,54165 -588,54317 -667,54494
+EOF
+     },
+     { from  => 1216159200, # 2008-07-16 00:00
+       until => 1220133600, # 2008-08-31 00:00
+       text  => 'K 7221 Bahnhofstr. Brücke über Kreuzfeldgraben in der OD Woltersdorf Brückenneubau Vollsperrung 17.07.2008-30.08.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -2854,-32632 -2701,-32785
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Stendaler Str. (Hellersdorf) stadteinwärts zwischen Janusz-Korczak-Str. und Hellersdorfer Str. Veranstaltung, Fahrtrichtung gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_009398',
+       data  => <<EOF,
+userdel	1::temp 23960,15021 23993,14797
+EOF
+     },
+     { from  => 1216504800, # 2008-07-20 00:00
+       until => 1229727600, # 2008-12-20 00:00
+       text  => 'B 102 Umgehungsstr. Brücke über die Nieplitz in der OD Treuenbrietzen Brückenneubau Vollsperrung 21.07.2008-19.12.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -25322,-35457 -24932,-35664
+EOF
+     },
+     { from  => 1216504800, # 2008-07-20 00:00
+       until => 1225494000, # 2008-11-01 00:00
+       text  => 'L 016 Fehrbellin - AS Neuruppin Brücke über den Schleusengraben zw. Fehrbellin u. Dammkrug Brückenbauarbeiten Vollsperrung 21.07.2008-31.10.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -32778,47235 -33506,45278
+EOF
+     },
+     { from  => 1216504800, # 2008-07-20 00:00
+       until => 1222812000, # 2008-10-01 00:00
+       text  => 'L 243 Wegguner Str. OD Boitzenburg, zw. Goethestr. und Puschkinstr. Kanal- und Straßenbau Vollsperrung 21.07.2008-30.09.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 22455,95876 22471,95721
 EOF
      },
     );

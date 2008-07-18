@@ -1869,7 +1869,7 @@ Krachtstr.: Asphalt	Q0 14817,10031 14844,10088 14920,10225
 Zimbelstr.: mäßiger Asphalt	Q1 11959,20365 11924,20399 11879,20466 11840,20528 11797,20601 11732,20693 11633,20792 11569,20845 11518,20894
 Wittekindstr.: Asphalt	Q0 8365,5418 8365,5502 8374,5598 8375,5766 8385,5907 8385,6034 8388,6322
 Kneippstr.: Kopfsteinpflaster	Q2 2621,23609 2711,23694 2817,23756 3034,23910
-Waldsteg: Asphalt	Q0 8359,19162 7940,19521 7893,19612 7868,19692
+Waldsteg: Asphalt	Q0 8359,19162 8170,19308 7940,19521 7893,19612 7868,19692
 Niederstr.: altes grobes Kopfsteinpflaster	Q3 7868,19692 7769,19736 7660,19810
 Denkstr.: Asphalt	Q0 6865,4659 7032,4635
 Peschkestr.: Asphalt	Q0 5424,6584 5533,6517
@@ -1893,6 +1893,7 @@ Heidekrautweg: Asphalt	Q0 21982,10874 22053,10911
 Petkusser Str.: schlechtes Kopfsteinpflaster	Q3 10506,-2642 10606,-3017 10655,-3135
 Bachstr. (Bohnsdorf): guter Beton	Q0 22749,-969 22918,-903 23329,-732
 Fontanestr. (Oberschöneweide): guter Asphalt	Q0 18225,7004 18240,6845 18254,6679 18273,6606
+Schönstr.: mäßiger Asphalt	Q1 13391,16436 13630,16629 13814,16759 13876,16819 14017,16956 14144,17165
 Beyrodtstr.: guter Asphalt	Q0 7888,1321 7981,1505 8074,1698 8085,1763 8092,1818 8128,1908 8191,2039
 Albersweilerweg: Asphalt	Q0 11763,1879 11951,1901 11978,1921
 Kolonie Bismarckruh: Verbundsteinpflaster	Q1 1301,13338 1311,13210 1336,12967 1335,12921 1242,12535
@@ -4552,7 +4553,9 @@ Thaler Str.: Asphalt	Q0 13744,21067 13817,21304 13884,21524 13938,21700
 Hohensaatener Str.: guter Beton	Q0 21782,16253 21842,16242 22063,16203 22088,16341 22097,16375 22111,16451
 (Franckepark - Templerzeile): Parkweg markiert als Radweg auf Verbundstein und teilweise fester Kies (wassergebunden)	Q1 9381,6277 9426,6239 9463,6232 9683,6199
 (Schachtelhalmweg - Strohblumenweg): Gras- bzw. Schotterweg	Q2 20360,1987 20340,1974 20383,1903 20471,1768 20525,1713
-Genossenschaftssteg: loser Sandweg, z.T. tiefe Schlaglöcher	Q3 7940,19521 7920,19471
+Genossenschaftssteg: Asphalt	Q1 7940,19521 7920,19471
+Genossenschaftssteg: loser Sandweg, z.T. tiefe Schlaglöcher	Q3 7920,19471 7911,19449 8029,19353 8105,19286 8099,19276 8122,19252 8194,19193
+Genossenschaftssteg: loser Sandweg, z.T. tiefe Schlaglöcher	Q3 8122,19252 8170,19308
 Straße 33 (Niederschönhausen): mäßiger Asphalt, Querrille	Q2 7920,19471 7877,19507 7797,19580
 Straße 78: mäßiger loser Sandweg	Q2 7715,19408 7797,19580
 Tankredstr.: Asphalt mit Flicken	Q1 8264,5383 8328,5417 8365,5418 8394,5412 8484,5347
@@ -4593,6 +4596,7 @@ Leidener Str.: guter Asphalt	Q0 13742,5383 13870,5436 13954,5471
 Tilburger Str.: guter Asphalt	Q0 13870,5436 13893,5374
 Kerkowstr.: guter Asphalt	Q0 14597,22842 14642,23072
 Kerkowstr.: schlechtes Kopfsteinpflaster	Q3 14642,23072 14726,23194 14865,23388
+Frundsbergstr.: Asphalt	Q0 15516,23009 15310,23085 15262,23106
 Hospitalstr.: guter Asphalt	Q0 -3650,15661 -3727,15695
 Agavensteig (Baumschulenweg): guter Beton	Q0 15587,4319 15712,4513 15774,4612 15908,4828 16083,5118
 Marmaraweg: mäßiger Beton	Q1 10348,3888 10355,4085 10363,4183 10368,4279
@@ -4608,6 +4612,7 @@ Biesenthaler Str. (Hohenschönhausen): Asphalt	Q0 17063,14797 17074,14704 17239,1
 Kirchbachstr. (Lichtenrade): Kopfsteinpflaster	Q2 11027,-2448 10874,-2449 10789,-2451 10638,-2452 10556,-2429
 Zeisigweg: schlechtes Kopfsteinpflaster	Q3 5178,1499 5153,1534 5148,1559 5145,1611 5132,1672 5087,1807
 Paul-Oestreich-Str.: guter Asphalt	Q0 13706,16535 13630,16629
+Burscheider Weg: Radwege asphaltiert, Fahrbahn Kopfsteinpflaster	Q0 -1345,15060 -1322,15079 -934,15254 -862,15283 -740,15306
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Cat.pm,v 1.13 2008/02/01 23:34:50 eserte Exp $
+# $Id: Cat.pm,v 1.14 2008/07/17 20:41:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 
 use File::Basename qw(basename);
 
@@ -73,7 +73,7 @@ use vars qw(%filetype_to_cat %file_to_cat);
      "comments_tram"		=> [qw(CS)],
      "deutschland"		=> $filetype_to_cat{"borders"},
      "exits"			=> [qw(X)],
-     "faehren"			=> [qw(Q)],
+     "faehren"			=> [qw(Q QQ)], # XXX QQ may be removed again some day
      "flaechen"			=> [qw(F:Ae F:Cemetery F:Forest F:Green
 				       F:Industrial F:Orchard F:Mine
 				       F:P F:Pabove F:Sport)],

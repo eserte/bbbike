@@ -1886,7 +1886,6 @@ Sonderburger Str.: Asphalt	Q0 9617,16590 9603,16468 9594,16384 9582,16296
 Wriezener Str.: Kopfsteinpflaster	Q2 9210,16638 9245,16758 9299,16889 9361,17039
 Louise-Schröder-Platz: Kopfsteinpflaster	Q2 7763,16779 7745,16889
 Indische Str.: Asphalt	Q0 7231,16418 7056,16587
-#: add_fragezeichen: Welche Abschnitte der Frundsbergstr. haben Kopfsteinpflaster?
 Frundsbergstr.: Kopfsteinpflaster	Q2 15262,23106 15021,23280 14865,23388 14761,23453
 Nisbléstr.: überwiegend guter Asphalt	Q0- 11870,21574 11659,21611 11304,21671 11112,21704 11060,21694
 #: note: nur den südlichen Abschnitt gesehen, laut ADFC-Karte "gut geeignet":
@@ -2092,7 +2091,7 @@ Wittekindstr.: Asphalt	Q0 8365,5418 8365,5502 8374,5598 8375,5766 8385,5907 8385
 #: by: a.grund
 Kneippstr.: Kopfsteinpflaster	Q2 2621,23609 2711,23694 2817,23756 3034,23910
 #: by: truediger vvv
-Waldsteg: Asphalt	Q0 8359,19162 7940,19521 7893,19612 7868,19692
+Waldsteg: Asphalt	Q0 8359,19162 8170,19308 7940,19521 7893,19612 7868,19692
 Niederstr.: altes grobes Kopfsteinpflaster	Q3 7868,19692 7769,19736 7660,19810
 #: by ^^^
 #: by: Thomas Dobrzinski
@@ -2135,6 +2134,7 @@ Bachstr. (Bohnsdorf): guter Beton	Q0 22749,-969 22918,-903 23329,-732
 Fontanestr. (Oberschöneweide): guter Asphalt	Q0 18225,7004 18240,6845 18254,6679 18273,6606
 ######################################################################
 #: by: anonymous vvv
+Schönstr.: mäßiger Asphalt	Q1 13391,16436 13630,16629 13814,16759 13876,16819 14017,16956 14144,17165
 Beyrodtstr.: guter Asphalt	Q0 7888,1321 7981,1505 8074,1698 8085,1763 8092,1818 8128,1908 8191,2039
 Albersweilerweg: Asphalt	Q0 11763,1879 11951,1901 11978,1921
 #: confirmed_by: rjoop (nördliche Einfahrt)
@@ -6889,7 +6889,9 @@ Hohensaatener Str.: guter Beton	Q0 21782,16253 21842,16242 22063,16203 22088,163
 (Schachtelhalmweg - Strohblumenweg): Gras- bzw. Schotterweg	Q2 20360,1987 20340,1974 20383,1903 20471,1768 20525,1713
 #: by: ^^^
 #: by: Carola Becker vvv
-Genossenschaftssteg: loser Sandweg, z.T. tiefe Schlaglöcher	Q3 7940,19521 7920,19471
+Genossenschaftssteg: Asphalt	Q1 7940,19521 7920,19471
+Genossenschaftssteg: loser Sandweg, z.T. tiefe Schlaglöcher	Q3 7920,19471 7911,19449 8029,19353 8105,19286 8099,19276 8122,19252 8194,19193
+Genossenschaftssteg: loser Sandweg, z.T. tiefe Schlaglöcher	Q3 8122,19252 8170,19308
 Straße 33 (Niederschönhausen): mäßiger Asphalt, Querrille	Q2+ 7920,19471 7877,19507 7797,19580
 Straße 78: mäßiger loser Sandweg	Q2 7715,19408 7797,19580
 #: by: ^^^
@@ -6977,6 +6979,7 @@ Tilburger Str.: guter Asphalt	Q0 13870,5436 13893,5374
 #: by: Andreas Manlik: vvv
 Kerkowstr.: guter Asphalt	Q0 14597,22842 14642,23072
 Kerkowstr.: schlechtes Kopfsteinpflaster	Q3 14642,23072 14726,23194 14865,23388
+Frundsbergstr.: Asphalt	Q0 15516,23009 15310,23085 15262,23106
 #: by: ^^^
 #: by: Martin Müller:
 #: note: auch eingetragen: enge Straße, aber q0
@@ -7012,6 +7015,12 @@ Zeisigweg: schlechtes Kopfsteinpflaster	Q3 5178,1499 5153,1534 5148,1559 5145,16
 #: note: "enge Straße", aber q0
 Paul-Oestreich-Str.: guter Asphalt	Q0 13706,16535 13630,16629
 #: by: ^^^
+#: by: skpromotions:
+#: note: ein anonymer Kommentar war nicht klar genug. Laut Luftbild scheinen Autofahrer nicht auf die Daumstr. fahren zu können
+#: note: ein weiterer anonymer Kommentar meint "guter Asphalt" und sagt nichts über eine Einbahnstraße
+#: note: laut skpromotions... gibt es einen Radweg, laut Luftbild nur Richtung Osten (nachfragen!). Keine Einbahnstraßenregelung erwähnt. Kopfsteinpflaster Q2.
+#: note: noch ein anonymer Kommentar: guter Asphalt
+Burscheider Weg: Radwege asphaltiert, Fahrbahn Kopfsteinpflaster	Q0 -1345,15060 -1322,15079 -934,15254 -862,15283 -740,15306
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
