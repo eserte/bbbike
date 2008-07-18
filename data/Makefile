@@ -8,6 +8,10 @@
 #
 # (This is a slightly modified version of the original pmake as found in
 # the FreeBSD sources)
+#
+# pmake is also available as a standard Debian package, but a somewhat
+# older version which has some minor problems:
+# * the uppercase construct ${...:U} does not exist
 
 .ifndef HOSTNAME
 HOSTNAME	!= hostname
@@ -697,8 +701,8 @@ fragezeichen-cooked:	fragezeichen strassen landstrassen landstrassen2
 # ::inwork => will maybe change to :inwork
 #XXX in "-orig" transition: handicap_s-orig and gesperrt-orig always need to have the same base map!
 .create_fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
-		.fragezeichen-other-source \
-		${SOURCE_TARGETS:S|^|.fragezeichen-|} \
+		${PERSISTENTTMPDIR}/.fragezeichen-other-source \
+		${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.fragezeichen-|} \
 		Makefile
 	-@$(WRITEABLE) $@
 	cat fragezeichen-orig |\
@@ -709,13 +713,13 @@ fragezeichen-cooked:	fragezeichen strassen landstrassen landstrassen2
 	    $(SED) -e 's/	\([^ ]*\)/ (\1)	?/' | \
 	    ${CONVERT2HAFAS} -basefile ${DATADIR}/ampeln-orig -- - >> $@~
 	@echo "# added from other sources: (${SOURCE_TARGETS})" >> $@~
-	cat .fragezeichen-other-source ${SOURCE_TARGETS:S|^|.fragezeichen-|} >> $@~
+	cat ${PERSISTENTTMPDIR}/.fragezeichen-other-source ${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.fragezeichen-|} >> $@~
 	cmp -s $@~ $@ && rm $@~ || mv $@~ $@
 	touch .create_fragezeichen
 	-@$(READONLY) $@
 
 .for i in ${SOURCE_TARGETS}
-.fragezeichen-$(i):	$(i)-orig
+${PERSISTENTTMPDIR}/.fragezeichen-$(i):	$(i)-orig
 	${GREPSTRASSEN_UTF8} -special fragezeichen ${DATADIR}/$(i)-orig > /dev/null
 	cp -f /tmp/fragezeichen_$(i)-orig.bbd $@
 .endfor
@@ -854,7 +858,7 @@ ${PERSISTENTTMPDIR}/opengeodb-orte-DE.bbd:	${OPENGEODB_D_ORTE_PATH} ${MISCSRCDIR
 # O_RDONLY, otherwise the oneliner will die without an error message.
 # But O_RDWR does not work if the file is read-only, so still use O_RDONLY
 # Now using Tie::File, which works everywhere
-.fragezeichen-other-source:	${DATADIR}/qualitaet_s-orig ${DATADIR}/qualitaet_l-orig
+${PERSISTENTTMPDIR}/.fragezeichen-other-source:	${DATADIR}/qualitaet_s-orig ${DATADIR}/qualitaet_l-orig
 	cd ${DATADIR} && \
 	    $(PERL) -I${BBBIKEDIR} -I${BBBIKEDIR}/lib \
 		-MStrassen::Core -MTie::File -MFcntl=O_RDONLY \
