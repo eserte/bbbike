@@ -252,7 +252,6 @@ Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23297,14772 23379,14514
 Beilsteiner Str.: Qualität (laut ADFC-Karte im südlichen Abschnitt gut geeignet; zumindest in Höhe Allee der Kosmonauten asphaltiert)	? 18749,12413 18832,13099 18852,13269 18875,13473 18871,13796 18859,14048 18998,14089 19025,14037
 Bleicheroder Str. - Pasewalker Str.: existiert eine Verbindung für Radfahrer entlang der Tram-Trasse?	? 11805,19071 11937,19175
-Birkenallee (Pankow): Qualität?	? 9739,20508 9655,20703
 Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11147,23778 10889,23381 10775,23253 10396,23128 9890,22932
 Wriezener/Osloer Str.: ist das Abbiegen wegen der Straßenbahn möglich?	? 9210,16638
 Laut <cp6net$f0g$1@zeppelin.rz.uni-potsdam.de> ist die Eisenbahnbrücke für Fußgänger begehbar, laut <cn2fr0taoncnlu6s84inbhgpo8lq0u0bh2@4ax.com> sogar offizieller Bestandteil des Elbe-Radwegs	? -92087,-49506 -91387,-49350
@@ -807,7 +806,7 @@ Murchin - Daugzin: Qualität?	? 30231,167202 30045,167370 29826,167541 29631,1675
 Libnow - Lassan: Qualität? (möglicherweise nur ein Feldweg)	? 31996,167054 32020,167181 32132,167279 32157,167349 32145,167413 31739,168418
 Freest - Peenemünde: Daten zur Fähre, Telefon 038371-20829 oder 0170-1607371	? 28887,192995 29771,193403 30100,193330 30496,192617 31301,192513 31355,192739
 Niederschlemaer Weg: Qualität?	? 18447,1727 18444,1782 18425,1831
-Brusebergstr.: Qualität? (Kopfsteinpflaster bis Lübener Weg, danach betoniert oder asphaltiert?) Gibt es Radwege für Radfahrer?	? 6383,18033 6307,18039 6145,18016 6115,18042 6086,18162 6045,18305 6060,18534
+Brusebergstr.: Qualität zwischen Lübener Weg und Teichstr.? Ist die Straße hier ebenfalls eng? Gibt es Radwege für Radfahrer?	? 6383,18033 6307,18039 6145,18016 6115,18042 6086,18162 6045,18305
 Lorenzstr./Parallelstr.: Ampel?	? 5720,2081
 Parallelstr.: endet die Parallelstr. am südwestlichen oder am nordöstlichen Teil der Luisenstr.?	? 5807,2117 5825,2125
 Perwenitzer Weg: Qualität der Straße? Existiert hier ein Radweg? Ist es möglich, auf den Askanierring zu gelangen?	? -3708,15831 -3829,15868 -3924,15915
@@ -1216,7 +1215,7 @@ Schönecker Weg: Qualität?	? 22330,6973 22358,7093
 Eitelsdorfer Str.: Qualität?	? 22869,7095 22810,7120 22690,7146 22501,7192 22272,7242
 Pflanzgartenplatz: Qualität?	? 22656,7412 22685,7480
 Dammheidestr.: Qualität?	? 22880,7351 22745,7388 22656,7412 22554,7437
-Hranitzkystr.: Qualität?	? 8686,1664 8661,1649 8578,1692 8471,1741 8342,1803 8286,1830 8217,1866 8129,1911 8048,1945 8009,1959 7960,1977
+Hranitzkystr.: Qualität?	? 8686,1664 8661,1649 8578,1692 8471,1741 8342,1803 8286,1830 8217,1866 8128,1908 8048,1945 8009,1959 7960,1977
 Herbert-Tschäpe-Str.: Qualität? Einbahnstraße, auch für Radfahrer gültig?	? 14710,14185 14510,14104 14481,14095 14358,14155
 Chrysanthemenstr.: Qualität? Kann man als Radfahrer zur Oderbruchstr. gelangen?	? 14137,13987 14241,13941 14262,13935
 Süderbrockweg: Qualität?	? 13933,14622 13940,14654 13990,14729 14051,14822 14080,14862 14103,14853
@@ -1473,8 +1472,12 @@ Am Jägertor: Qualität? Ist der Straßenname offiziell? 	? -13221,-718 -13330,-725
 Kurhausstr.: Qualität zwischen Bergstr. und Wilhelmstr.?	? 2824,24212 2932,24056 3015,23913 3060,23822 3130,23715
 Helweg - Mauerweg: Qualität des Sandwegs?	? 648,24589 575,24601
 Laehrstr. - Heinrich-Laehr-Park: existiert eine Durchfahrt zum Heinrich-Laehr-Park?	? 1142,1350 1312,1383
-Hoffbauerpfad: Qualität zwischen Sachtlebenstr. und Hans-Böhm-Zeile? Für Autos geöffnet?	? 214,969 333,1104
+Hoffbauerpfad: Qualität zwischen Sachtlebenstr. und Hans-Böhm-Zeile?	? 214,969 333,1104
 Hoffbauerpfad: Qualität zwischen Klistostr. und Urbanstr.? Für Autos geöffnet?	? 464,1246 550,1358
+(Am Zingergraben): Qualität nördlich der Straße 134 (evtl. auch ein Schotterweg)?	? 9239,20955 9230,20907 9218,20844 9192,20719
+Glasgower Str.: Qualität?	? 6362,16510 6256,16601 6154,16693 6067,16771 5995,16836
+Ofener Str.: Qualität?	? 6208,16546 6256,16601 6386,16749
+Ruthstr.: Qualität der Ruthstr. zwischen Elisabethstr. und Charlottenstr.?	? 6129,3203 6224,3112
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503

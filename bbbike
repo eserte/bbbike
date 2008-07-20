@@ -13715,10 +13715,15 @@ sub set_coord_output_sub {
 			my(@c) = map { sprintf "%d°%02d'%05.2f\"", Karte::Polar::ddd2dms($_) } $o->can('standard2map')->($o, @_);
 			@c;
 		    };
+		} elsif ($k eq 'standard') {
+		    $coord_output_sub = sub {
+			# force int
+			my(@c) = map { int } $o->can('standard2map')->($o, @_);
+			@c;
+		    };
 		} else {
 		    $coord_output_sub = sub {
-# XXX int oder nicht int?
-			my(@c) = map { int } $o->can('standard2map')->($o, @_);
+			my(@c) = $o->trim_accuracy($o->can('standard2map')->($o, @_));
 			@c;
 		    };
 		}
