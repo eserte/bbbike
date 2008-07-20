@@ -518,8 +518,8 @@ Potsdamer Str. -> Varian-Fry-Str.: Mittelstreifen	3::igndisp 8505,11494 8374,114
 Varian-Fry-Str. -> Potsdamer Str.: Mittelstreifen	3::igndisp 8389,11378 8374,11477 8358,11475
 Potsdamer Pl. -> Alte Potsdamer Str.: Mittelstreifen	3::igndisp 8542,11502 8505,11494 8499,11452
 Alte Potsdamer Str. -> Potsdamer Str.: Mittelstreifen	3::igndisp 8499,11452 8505,11494 8374,11477
-Jägerallee/Hegelallee: Durchfahrt verboten	3 -13182,-515 -13231,-763 -13236,-797
-Jägerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13182,-515
+Jägerallee/Hegelallee: Durchfahrt verboten	3 -13182,-515 -13221,-718 -13231,-763 -13236,-797
+Jägerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13221,-718 -13182,-515
 Straßenbahntrasse	3nocross::ignrte 9455,16609 9331,16624 9210,16638 8939,16668
 Osloer Str. -> Stettiner Str.: Straßenbahntrasse	3::igndisp 9455,16609 9331,16624 9107,16389
 Freienwalder Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9435,16832 9331,16624 9455,16609
