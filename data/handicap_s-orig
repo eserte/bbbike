@@ -82,7 +82,8 @@ Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10336,14975 10238,15316 10186,154
 (Fuﬂg‰ngerbr¸cke Ostkreuz): Fuﬂg‰nger	q3 14798,10985 14787,10972 14764,10877 14794,10844
 Marheinekeplatz: Fuﬂg‰nger, Brunnen	q3 9882,9287 9881,9238
 (Uferweg am Urbanhafen): Fuﬂg‰nger	q1 11177,9935 11052,9935 10923,9925 10522,10056 10490,10080
-Bahnhofsgeb‰ude	q4 7854,7572 7934,7621 7959,7609
+Bahnhofsgeb‰ude	q4 7854,7572 7934,7621
+Treppe oder Rampe	q4 7934,7621 7959,7609
 Marx-Engels-Forum: Fuﬂg‰nger, eigentlich Schiebestrecke	q2 10300,12587 10355,12551 10411,12471 10422,12395
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12325,13148 12344,13157 12372,13198 12382,13262 12474,13311 12438,13387 12483,13418 12446,13570 12336,13646 12403,13755
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12336,13646 12141,13609 12115,13540 12005,13481 11982,13471
@@ -550,7 +551,7 @@ Nordufer: teilweise sehr schmaler Radweg	q1 7231,14749 7498,14658
 (Weg am Waldfriedhof Dahlem): Kurven	q2 1051,5525 825,5420 626,5322
 #: XXX_prog das gehˆrt eigentlich nach comments_mount...
 (Waldweg parallel zur Flanaganstr. zwischen H¸ttenweg und Im Jagen): starke Steigungen und Gef‰lle	q2 1051,5525 1697,5938
-(Altvaterstr./Breisgauer Str. - Salzachstr.): schmaler Fuﬂweg	q3 -2295,3523 -2122,3593
+(Altvaterstr./Breisgauer Str. - Salzachstr.): schmaler Fuﬂweg	q3 -2295,3523 -2133,3591
 #: by: ^^^
 #: by: AndrÈ K‰ding
 Neustrelitzer Str.: kurvenreich	q1 16752,14745 16668,14765 16534,14740 16443,14825 16346,14750 16256,14828
@@ -1280,3 +1281,6 @@ Kolonie Bismarckruh: Fuﬂg‰nger, Radfahren erlaubt	q1 1301,13338 1311,13210 1336,
 Damwildsteig: enge Straﬂe	q1 -482,21392 -777,21455 -1090,21526 -1213,21553
 #: by: anonymous
 Beyrodtstr.: enge Straﬂe	q1 7888,1321 7981,1505 8074,1698 8085,1763 8092,1818 8128,1908 8191,2039
+#: by: Olaf Kr¸ger:
+#: corrected_by: srt/policy (q2 -> q1)
+Egmontstr.: enge Straﬂe	q1 17306,11866 17151,11912

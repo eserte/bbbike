@@ -1904,7 +1904,7 @@ EOF
        text  => 'Rosenfelder Straße Richtung Frankfurter Allee zwischen Skandinavische Straße und Frankfurter Allee Baustelle, Straße gesperrt, Dauer: 09.05.2005, 09.00 Uhr bis 09.06.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 17363,11972 17249,11802
+userdel	q4; 17363,11972 17306,11866 17249,11802
 EOF
      },
      { from  => 1116280800, # 2005-05-17 00:00
@@ -12031,6 +12031,29 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 22455,95876 22471,95721
+EOF
+     },
+     { from  => 1216495649, # 2008-07-19 21:27
+       until => 1216677600, # 2008-07-22 00:00
+       text  => 'Bellevuestr. (Köpenick) in beiden Richtungen zwischen Seelenbinderstr. und Fürstenwalder Damm Baustelle, Straße vollständig gesperrt (bis 21.07.08)',
+       type  => 'gesperrt',
+       source_id => 'IM_009421',
+       data  => <<EOF,
+userdel	2::inwork 23402,5483 23333,5731
+EOF
+     },
+     { from  => 1216461600, # 2008-07-19 12:00
+       until => 1216584000, # 2008-07-20 22:00
+       text  => 'Straße des 17. Juni, John-Foster-Dulles-Allee und andere Straßen im Regierungsviertel am Sonntag von 12 bis 22 Uhr gesperrt (Feierliches Gelöbnis der Bundeswehr)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 8417,12846 8503,12895
+userdel	2::temp 7936,12906 8017,12826
+userdel	2::temp 8737,12757 8596,12748 8551,12746
+userdel	2::temp 7514,12387 7875,12363 8017,12359 8070,12409 8119,12414
+userdel	2::temp 8508,12874 8545,12760
+userdel	2::temp 8775,12457 8540,12420 8560,12326 8539,12286 8515,12242 8214,12205 8089,12186 8063,12182 7816,12150 7383,12095 6828,12031
+userdel	2::temp 8595,12066 8600,12165 8515,12242
 EOF
      },
     );

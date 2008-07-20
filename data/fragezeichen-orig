@@ -666,6 +666,7 @@ Laut <cp6net$f0g$1@zeppelin.rz.uni-potsdam.de> ist die Eisenbahnbrücke für Fußgä
 Weg entlang der Elbe: Qualität?	? -91387,-49350 -91150,-49775 -90062,-50750 -89709,-51230
 Fürstenwalder Damm/Müggelseedamm: Vorfahrtsregelung?	? 28195,5141
 Dahlwitzer Landstraße/Schöneicher Str.: Vorfahrtsregelung?	? 25585,6050
+#: XXX: von der Bahn aus gesehen: ja, ein Waldweg, sah wie ein normaler Waldweg aus:
 Teerofenweg: Waldweg? Qualität?	? -7067,-36 -6411,-868
 #XXX Koordinaten stimmen nicht mehr! Darßer Str.: beidseitiger Radweg ja, eintragen!	? B24943,-13819 B23513,-13631
 #XXX Koordinaten stimmen nicht mehr! Granitzstr.: wenigstens teilweise Radweg Richtung Osten? (Richtung Westen definitiv kein Radweg)	? B14908,-13452 B15798,-14098
@@ -816,7 +817,7 @@ Dewitz - Rosenhagen: laut Aktiv Regional viele Steigungen und Gefälle	? 6502,121
 #: by: anonymous, allerdings mit Q2 ?!
 Johannes-Bobrowski-Str.: Qualität (Asphalt?)	? 24692,14617 24543,14578 24515,14484
 Rösnerstr.: Qualität?	? 4165,5243 4204,5285
-Rudolf-Breitscheid-Str. (Babelsberg): sind zwischen Karl-Liebknecht-Str. und Plantagenstr. (vielleicht auch weiter?) ebenfalls Suggestivstreifen?	? -10446,-1947 -10360,-1934 -9986,-1882 -9735,-1845
+Rudolf-Breitscheid-Str. (Babelsberg): sind zwischen Karl-Liebknecht-Str. und Plantagenstr. (vielleicht auch weiter?) ebenfalls Suggestivstreifen?	? -10446,-1947 -10360,-1934 -10235,-1916 -9986,-1882 -9735,-1845
 #: XXX: von der Bahnstrecke aus gesehen: vvv
 Weg ist neu asphaltiert	? -14277,18001 -14603,18132
 Radweg B-K: Asphalt sieht nicht so gut aus	? -1508,28767 -1262,28964
@@ -1129,11 +1130,9 @@ Langhansstr.: Qualität?	? -12276,831 -12394,870 -12325,1145 -12410,1159
 Kleine Weinmeisterstr.: Qualität?	? -12618,296 -12655,385 -12717,440 -12807,441
 Persiusstr.: Qualität?	? -12519,575 -12659,599 -12744,573 -12811,533
 Hessestr.: Qualität?	? -12655,385 -12649,472 -12744,573 -12781,663
-Bruno-Taut-Str.: Qualität	? -13121,1496 -13067,1506 -12912,1511
-Friedrich-Klausing-Str.: zurzeit (2008-05-11) in Bau, Qualität nach den Bauarbeiten?	? -12960,1684 -12961,1746 -13087,1746
-Angermannstr.: Qualität?	? -13100,1287 -13147,1278 -13189,1368 -13107,1357
-Graf-von-Schwerin-Str.: Qualität?	? -13057,1384 -13067,1506
-Erich-Arendt-Str.: Qualität?	? -13290,1488 -13121,1496
+Bruno-Taut-Str.: Qualität	? -13067,1506 -12912,1511
+Graf-von-Schwerin-Str.: Qualität zwischen Erich-Arendt-Str. und Bruno-Taut-Str.?	? -13125,1508 -13067,1506
+Graf-von-Schwerin-Str.: Qualität zwischen Bruno-Taut-Str. und Am Reiherbusch?	? -13057,1384 -13067,1506
 Wilhelm-Staab-Str./Yorckstr.: Überqueren des Kanals möglich?	? -13001,-1329
 #: XXX unklarer Eintrag in strum2005.pdf (Museumstr. -> Bodestr.)
 Museumstr.: zur "Bodestr." umbenannt?	? 9943,12642 9884,12712
@@ -1228,8 +1227,11 @@ Prieroser Str.: Qualität?	? 28540,-19744 29524,-19715
 Neubrücker Str.: Qualität?	? 28231,-19792 28336,-19948 28363,-19964 28514,-20071
 Bellevuepark: ist ein Weg für Radfahrer offiziell freigegeben?	? 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340
 Idsteiner Str.: Qualität (laut ADFC-Karte zwischen Königsweg und Hegauer Weg mäsig, danach bis Ludwigsfelder Str. gut geeignet)?	? -163,1564 -284,2009 -326,2177 -409,2510
-#: note: schien mir auch von der S-Bahn so auszusehen:
+#: XXX: schien mir auch von der S-Bahn so auszusehen:
+#: XXX: hmmm, bei einem zweiten Blick sah es von Nordwesten bis zum Knick von der S-Bahn weg eher wie normales Kopfsteinpflaster auszusehen? Erst hinter dem Knick schien wieder Asphalt zu sein.
 Bülowstr. (Zehlendorf): Qualität (laut ADFC-Karte bis auf einen kleinen Abschnitt am Mexikoplatz gut geeignet)?	? -426,2978 -662,2998 -872,3133 -1052,3276 -1054,3328
+#: XXX: schien von der S-Bahn aus zu sehen zumindest an der Kreuzung Bülowstr. wie Kopfsteinpflaster auszusehen
+Roonstr.: Qualität?	? -872,3133 -792,3129 -495,3113
 Kirchweg: Qualität? (laut ADFC-Karte zwischen B1 und Beskidenstr. gut geeignet, westlicher Abschnitt ungeeignet, wahrscheinlich wegen Kopfsteinpflaster)	? -2903,1818 -2981,1925 -3019,1998 -3031,2184 -3030,2266 -3109,2306 -3211,2405 -3244,2436 -3235,2496 -3280,2507
 #: XXX: ein anonymer Eintrag widerspricht und meint "mäßiges Kopfsteinpflaster" (für einen nicht weiter bestimmten Teilabschnitt). Luftbild ist nicht eindeutig
 Beskidenstr.: Qualität? (laut ADFC-Karte gut geeignet)	? -3030,2266 -3030,2349 -2989,2440 -2920,2472 -2842,2506 -2749,2548 -2440,2760
@@ -1238,8 +1240,6 @@ Jochen-Klepper-Weg: Qualität (laut ADFC-Karte teilweise gut geeignet)?	? -3030,2
 Gerkrathstr.: Qualität (laut ADFC-Karte ungeeignet)?	? -3280,2507 -3246,2606 -3260,2675 -3225,2902
 Rehsprung: Qualität? Für den Autoverkehr gesperrt (Teile davon?)? Existiert eine Treppe an der Autobahnunterführung?	? -3280,2507 -3309,2400 -3284,2306 -3156,2134 -3107,2068 -3098,1922 -3133,1802 -3234,1751 -3264,1645 -3502,1581 -3557,1652 -3609,1602 -3654,1539 -3764,1446
 An der Rehwiese: Qualität?	? -3559,1760 -3557,1652 -3511,1686 -3389,1703 -3299,1753 -3299,1838 -3233,1960 -3223,2020 -3284,2041 -3420,2224 -3395,2403 -3372,2704 -3360,2917
-#: XXX war ein anonymer Eintrag, als Spielstraße ausgewiesen:
-Roßweiner Ring: Qualität?	? 25007,13951 25146,13901 25120,13803 24975,13848
 Brüssow - Caselow: Qualität (wahrscheinlich schlechtes Kopfsteinpflaster, vom südlichen Ende aus gesehen)?	? 55605,112935 55723,114036 56123,116226 55986,116675 56317,117060 56355,117304 56496,117228 57586,117220
 Bahnübergang	? 19302,-734
 #: XXX Zumindest in Höhe des S-Bahnübergangs asphaltiert; dort existiert für wenige Meter ein benutzungspflichtiger Zweirichtungsradweg auf der Südostseite
@@ -1623,7 +1623,6 @@ Tannenweg (Potsdam): Qualität?	? -9434,164 -9440,193 -9405,204 -9453,425 -9494,4
 Lindenweg: Qualität?	? 16251,15629 16297,15737 16360,15889
 Chamierstr.: Qualität?	? 15840,15806 15801,15706
 Gropiusstr.: Qualität?	? 15877,15673 15825,15547
-Käthestr.: Qualität?	? 16369,16003 16349,15935 16351,15914 16360,15889 16393,15868 16491,15874
 Gertrudstr.: Qualität?	? 15891,16041 15869,16078 15793,16162 15731,16208
 Bertastr.: Qualität?	? 15894,16189 15840,16246 15782,16277
 Elsastr.: Qualität?	? 16395,16099 16360,16150 16316,16173 16234,16203 16154,16227 16075,16249 15997,16272 15956,16299 15929,16342
@@ -1993,7 +1992,6 @@ Am Hanffgraben: Qualität? Gilt die Einbahnstraßenregelung auch für Radfahrer?	? 
 Fangschleuser Weg: Qualität?	? 30927,4328 30896,4196 30871,4111
 #: XXX: unklarer Eintrag von anonymous: gute Qualität, keine weitere Qualitätsbestimmung; auf dem Luftbild sieht es asphaltiert aus
 Tieflandstr.: Qualität?	? 21860,9046 21849,9145 21840,9253 21806,9550 21822,9681 21842,9829
-Resedenstr.: Qualität?	? 4274,4808 4332,4819 4515,4966
 Irmfriedstr.: Qualität?	? 21737,13844 21758,13934 21764,13981 21766,13995 21794,14229 21814,14407 21822,14480
 Mettlacher Str.: Qualität?	? 21794,14229 21918,14219 22007,14209 22050,14212
 Adlershofer Str.: Qualität?	? 21585,4459 21633,4355 21649,4111 21655,4091 21679,4059
@@ -2036,6 +2034,7 @@ Lörracher Str.: Qualität? Hat die Crailsheimer Vorfahrt vor der Lörracher?	? 711
 Hyazinthenstr.: Qualität?	? 3527,4608 3587,4514 3597,4494
 Veilchenstr.: Qualität?	? 3501,4435 3597,4494
 Baseler Str.: Qualität nördlich der Curtiusstr.?	? 3185,3958 3141,4023
+#: note: ja, die Einbahnstraße gilt für alle:
 Hans-Sachs-Str. (Lichterfelde): Qualität? Existiert eine Einbahnstraßenregelung zwischen Drakestr. und Baseler Str., und wenn ja, nur für Autofahrer oder auch für Radfahrer?	? 3214,4066 3141,4023 3049,3966
 Flotowstr. (Lichterfelde): Qualität?	? 4515,4581 4651,4638
 Wüllenweberweg: Qualität?	? 4276,3202 4303,3260 4342,3366
@@ -2043,8 +2042,6 @@ Chlumer Str.: Qualität?	? 4013,4547 4039,4500
 Sophienstr. (Lichterfelde): Qualität?	? 3632,3943 3768,4045
 Gräfenberger Weg: Qualität?	? 2384,2964 2346,3077 2256,3172
 Steinäckerstr.: Qualität?	? 2637,2973 3027,2958
-Marthastr.: Qualität?	? 3450,3142 3599,3242
-Gersauer Weg: Qualität?	? 3972,2785 3932,2660
 Johanna-Spyri-Weg: Qualität?	? 3221,2473 3211,2221
 Churer Zeile: Qualität?	? 3221,2221 3218,2123
 Thuner Str.: Qualität?	? 3293,2218 3286,2006 3286,1912
@@ -2108,7 +2105,6 @@ Triftstr. - Eichborndamm: Ist der Parkweg nachts beleuchtet?	? 4538,20621 4661,2
 Lehndorffstr.: Qualität?	? 18401,8636 18397,8611 18407,8592 18428,8588 18448,8602
 Lehndorffstr.: Qualität?	? 18407,8592 18322,8470 18221,8328 18215,8316 18269,8161 18333,8059 18412,7985
 #: XXX ^^^
-Stechapfelweg: Qualität?	? 20668,1524 20671,1568 20689,1613 20732,1702 20766,1752 20790,1797
 Tollkirscheweg: Qualität?	? 20689,1613 20609,1654 20539,1722
 Strohblumenweg: Qualität?	? 20716,1860 20618,1781 20539,1722 20525,1713 20478,1681 20456,1639 20440,1588
 Pichelswerderstr. (Pankow): Qualität?	? 9791,17877 9723,17920
@@ -2131,6 +2127,7 @@ Waldstr. (Adlershof): Qualität?	? 20834,4035 20790,4114 20694,4177 20623,4227 20
 #: XXX unklarer Eintrag von anonymous: guter Asphalt (sieht eher nach Beton aus), aber Bordsteinkanten?
 Martiusweg: Qualität?	? 9411,1406 9314,1451 9236,1484 9155,1519 9145,1527
 Ingelheimer Str.: Ist die Ingelheimer Str. eine Einbahnstraße? Wenn ja, auch für Radfahrer gültig?	? 19075,8590 19010,8569 18951,8574 18884,8586
+#: XXX: sah von der S-Bahn so aus, evtl. erst 10 Meter nach der Kreuzung:
 Rosenstr.: Ist die Rosenstr. eine Fußgängerzone?	? 10398,12903 10466,12827 10489,12803
 #: XXX anonymous meint nur "gut": vvv
 Am Langen Grund (Großziethen): Qualität?	? 12647,-1187 12652,-1142 12629,-1134 12633,-1095 12622,-1089 12629,-1046
@@ -2140,3 +2137,7 @@ Loddin: Qualität (wahrscheinlich Verbundsteinpflaster oder Kopfsteinpflaster)	? 
 Alte Strandstraße: Qualität? Gibt es hier einen Radweg?	? 40952,186220 40853,186070 40837,185903 40751,185719 40722,185530
 #: XXX: beide Enden sehen gut aus:
 Strecke zwischen Usedom und Abzweig Welzin: Qualität?	? 44868,163300 43477,164369 43370,164591
+#: XXX: zumindest auf der nordöstlichen Seite sieht es so aus, und dort steht auch ein Radwegschild
+Konrad-Adenauer-Str.: Existieren in der Konrad-Adenauer-Str. (bis zu Paul-Löbe-Str.?) und auf der Kronprinzenbrücke Radspuren?	? 8503,12895 8417,12846 8308,12742 8307,12601
+#: XXX doppeldeutiger Beitrag von anonymous meint "fester Sandweg", Q1 und Radweg??? Oder meinte er tatsächlich den Ostpreußendamm?
+Bogenstr.: Qualität?	? 4660,2116 4735,2077 4809,2057 4902,2058 4995,2090

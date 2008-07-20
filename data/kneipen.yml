@@ -1509,22 +1509,23 @@
     voll
 
   name: Bordo; Mulackstraße 29/30
-- cat: X
-  coords:
-    - 9188,12868
-  info: >+
-    Brokers
-    
-    Art: Szenekneipe
-    
-    Musik: alles Mögliche,
-    
-    Adresse: Schiffbauerdamm, 10117 Berlin Mitte
-    
-    Beschreibung: der Bierpreis wird wie an der Wertpapierbörse festgesetzt,
-    Angebot und Nachfrage bestimmen den Preis einer Biersorte
-
-  name: Brokers; Schiffbauerdamm
+## Gibt es nicht mehr (2008-07-12)
+#- cat: X
+#  coords:
+#    - 9188,12868
+#  info: >+
+#    Brokers
+#    
+#    Art: Szenekneipe
+#    
+#    Musik: alles Mögliche,
+#    
+#    Adresse: Schiffbauerdamm, 10117 Berlin Mitte
+#    
+#    Beschreibung: der Bierpreis wird wie an der Wertpapierbörse festgesetzt,
+#    Angebot und Nachfrage bestimmen den Preis einer Biersorte
+#
+#  name: Brokers; Schiffbauerdamm
 - cat: X
   coords:
     - 9001,13065

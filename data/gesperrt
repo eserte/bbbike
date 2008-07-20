@@ -499,12 +499,10 @@ Rudolf-Breitscheid-Str.	2 -11056,-1726 -11142,-1675
 Geschwister-Scholl-Str.	1 -14344,-1748 -14215,-1687 -14151,-1656 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13883,-1227
 Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
-Puschkinallee	1 -13052,775 -12922,762 -12811,533
+Puschkinallee	1 -13044,800 -12922,762 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
 Straßenbahntrasse, nur für Fußgänger bequem passierbar	3nocross::ignrte -12719,-1661 -12755,-1585 -12773,-1544 -12795,-1499 -12833,-1365
 Friedrich-Ebert-Str. -> Am Alten Markt: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3::igndisp -12795,-1499 -12773,-1544 -12583,-1552
-Friedrich-Ebert-Str. -> Schwertfegerstr.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3::igndisp -12773,-1544 -12795,-1499 -12870,-1493
-Schwertfegerstr. -> Friedrich-Ebert-Str.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3::igndisp -12870,-1493 -12795,-1499 -12833,-1365
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13733,-722 -13772,-623
 Brücke mittlerweile gesperrt	2 -19183,7299 -19150,7320
 Prof.-Dr.-Helmert-Str.: Schranke	BNP:3:-93 -7969,-1659
@@ -513,6 +511,7 @@ Mittelstreifen	3nocross::ignrte -13450,-1595 -13374,-1709 -13328,-1790
 Kiezstr. -> Wall am Kiez: Mittelstreifen	3::igndisp -13328,-1790 -13374,-1709 -13397,-1729
 Eisenhartstr.	1 -12625,-4 -12772,-295 -12821,-417
 Ruinenbergstr.	1 -13781,174 -13918,-164
+Brandenburger Str.	1s -12784,-956 -12894,-977
 Straße gesperrt - Baustelle Großflughafen Schönefeld, Durchfahrt nicht möglich	2 18301,-6019 18411,-5428
 Straße gesperrt - Baustelle Großflughafen Schönefeld, Durchfahrt nicht möglich	2 15490,-4709 15539,-4658 15685,-4645 15964,-4817 16261,-4683 17742,-5179 18411,-5428 18764,-5531
 Dallgower Str.	1 -10799,15946 -10853,16230
@@ -1367,7 +1366,9 @@ Kynaststraße: Abriss und Neubau bis ca. 2010-03-01	2:inwork 14988,11130 14897,10
 Hauptstr. (Friedrichshain-Kreuzberg) in beiden Richtungen zwischen Markgrafendamm und untere Kynaststr. Baustelle, Straße vollständig gesperrt, Radfahrer und Fußgänger können NICHT passieren (bis 2008-10-31)	2:inwork 14890,10824 14794,10844
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01, dann als Fußgänger/Radweg konzipiert	2:inwork 8184,14052 8290,14119
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01	2:inwork 8290,14119 8246,14201 8138,14148
+Friedrich-Klausing-Str.: wegen Bauarbeiten gesperrt	2:inwork -12960,1684 -12961,1746 -13087,1746
 Rückbau der Fr.-Ebert-Str. zwischen Breiter Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	2:inwork -12719,-1661 -12755,-1585 -12773,-1544
+Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12795,-1499
 Brücke über den Torfgraben/Phöben gesperrt, Neubau voraussichtlich bis 2006-12-31	2:inwork -25539,2641 -25453,2418
 Behlertstr.	1 -12370,-354 -12500,-339 -12621,-359 -12821,-417 -12865,-425
 tragen (Treppe)	0:30:-73 2247,5068
@@ -1535,8 +1536,8 @@ An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu übe
 Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6253,14184 6230,14184 6226,13951
 An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6230,14184 6234,14247 6209,14245
 Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6209,14245 6234,14247 6237,14309
-schwierig zu querender Mittelstreifen	3nocross::ignrte 7195,13046 7207,13118 7148,13245
-Rathenower Str. -> Otto-Dix-Str.: schwierig zu querender Mittelstreifen	3::igndisp 7148,13245 7207,13118 7370,13204
+schwierig zu querender Mittelstreifen	3nocross::ignrte 7195,13046 7207,13118 7131,13261
+Rathenower Str. -> Otto-Dix-Str.: schwierig zu querender Mittelstreifen	3::igndisp 7131,13261 7207,13118 7370,13204
 Otto-Dix-Str. -> Rathenower Str.: schwierig zu querender Mittelstreifen	3::igndisp 7370,13204 7207,13118 7195,13046
 Eichkatzweg	1 1137,9921 1026,9772 925,9644
 Lärchenweg	1 1046,9989 1093,9952 1137,9921 1157,9907 1238,9869

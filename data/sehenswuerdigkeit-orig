@@ -97,15 +97,15 @@ Bundesministerium Bauen und Verkehr	F:SW 8656,13737 8591,13706 8547,13793 8522,1
 Bundesministerium Bauen und Verkehr	F:SW 8479,13850 8516,13871 8484,13927 8448,13904
 Neue Synagoge	SW|IMG:synagogue 9736,13221
 Synagoge Fraenkelufer	SW|IMG:synagogue 11301,10037
-#: internal_note: Reihenfolge Flughafen -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
+#: XXX_prog: Reihenfolge Flughafen -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
 Flughafen Tempelhof	F:SW|IMG:airport 9468,8550 9385,8625 9401,8692 9531,8675 9523,8618 9504,8571 9582,8496 9723,8546 9884,8562 10027,8548 10020,8526 9875,8542 9733,8519 9590,8459 9481,8378 9391,8255 9333,8130 9303,8019 9274,8021 9301,8115 9352,8244 9437,8377 9377,8445 9331,8429 9262,8420 9261,8560 9327,8574 9403,8492
 Touristeninformation Berlin im Flughafen Tempelhof: Eingang Haupthalle	SW|IMG:touristinfo 9459,8503
 Columbiahaus	F:SW 9247,8857 9247,8812 9312,8802 9377,8757 9562,8733 9574,8863 9552,8865 9546,8757 9464,8765 9466,8859 9440,8861 9440,8774 9385,8776 9318,8824 9271,8828 9269,8869
 Columbiahaus	F:SW 9249,8871 9568,8877 9572,8855 9249,8851
-#: internal_note: Reihenfolge Flughafen -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
+#: XXX_prog: Reihenfolge Flughafen -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
 Flughafen Schönefeld	F:SW|IMG:airport 18581,-1760 18594,-1810 18359,-1889 18335,-1843
 Touristeninformation Berlin im Flughafen Schönefeld: Terminal B, EG, Mitte	SW|IMG:touristinfo 18443,-1787
-#: internal_note: Reihenfolge Flughafen -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
+#: XXX_prog: Reihenfolge Flughafen -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
 Flughafen Tegel	F:SW|IMG:airport 2752,16408 2770,16371 2721,16343 2695,16308 2694,16274 2704,16244 2671,16278 2552,16258 2478,16353 2513,16459 2632,16482 2710,16395
 Touristeninformation Berlin im Flughafen Tegel: Gate 3	SW|IMG:touristinfo 2675,16393
 Luftbrückendenkmal	IMG:sehenswuerdigkeit_img/luftbrueckendenkmal|ANCHOR:s 9317,8702
@@ -116,7 +116,7 @@ Amerika-Haus	SW 5436,11107
 Ludwig-Erhard-Haus	F:SW 5271,11195 5263,11092 5322,11093 5324,11131 5301,11194
 #: alias: Gedächtniskirche
 Kaiser-Wilhelm-Gedächtniskirche	IMG:sehenswuerdigkeit_img/gedaechtniskirche|ANCHOR:s 5754,10934
-#: internal_note: Reihenfolge Europa-Center -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
+#: XXX_prog: Reihenfolge Europa-Center -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
 #: alias: i-Punkt
 Europa-Center	F:Shop 5868,10875 5992,10809 6020,10864 6021,10930 5984,10937 5941,10921 5882,10925
 # XXX: warum ist das hier im KaDeWe???? Touristeninformation Berlin im Europa-Center	SW|IMG:touristinfo 6137,10595
@@ -126,7 +126,7 @@ Theater des Westens	F:SW|IMG:theater 5304,11072 5298,11008 5341,11000 5344,11072
 Kudamm-Karree	Shop 4970,10554
 Schloß Charlottenburg	F:SW 3244,12665 3247,12650 3079,12624 3082,12575 3072,12574 3064,12638 2993,12632 3001,12565 2982,12560 2978,12614 2758,12585 2755,12604 2958,12624 2956,12641 3090,12666 3098,12646
 ICC	F:SW 2031,10935 2085,10922 2043,10721 2030,10630 1973,10685 1997,10824
-#: internal_note: Reihenfolge Messegelände -> Funkturm beibehalten, da sonst das Icon der Information überdeckt wird.
+#: XXX_prog: Reihenfolge Messegelände -> Funkturm beibehalten, da sonst das Icon der Information überdeckt wird.
 Messegelände	F:SW 1202,10707 1292,10640 1261,10595 1333,10550 1383,10605 1565,10484 1661,10607 1730,10571 1797,10654 1727,10709 1774,10779 1888,10737 1917,10743 1968,10986 1924,10990 1887,10784 1788,10824 1820,10948 1917,10955 1924,10987 1802,10972 1705,11024 1707,11039 1667,11058 1653,11031 1537,11070 1310,10818 1202,10907 1174,10874 1187,10821 1209,10846 1239,10822 1196,10766 1202,10707 1310,10818 1348,10801 1378,10835 1413,10826 1496,10936 1464,10960 1540,11045 1627,10998 1608,10963 1675,10930 1696,10972 1775,10947 1761,10831 1586,10561 1356,10726 1325,10681 1295,10712 1364,10797 1310,10818
 Funkturm	IMG:sehenswuerdigkeit_img/funkturm|ANCHOR:s 1877,10888
 Deutschlandhalle	F:SW 1451,10343 1409,10236 1330,10271 1369,10373
@@ -583,7 +583,7 @@ Friedenskirche	SW|IMG:church -13856,-963
 #: alias: Pfingstberg
 Belvedere (Pfingstberg)	SW -12825,1046
 Pomonatempel	SW -12775,978
-Russ.-Orth. Kirche/Kapellenberg	SW|IMG:church -12943,670
+Russ.-Orth. Kirche/Kapellenberg	SW|IMG:church -12921,628
 Flatowturm (Babelsberg)	SW -10933,-679
 Berliner Gerichtslaube (Park Babelsbweg)	SW -10858,-476
 Kleines Schloß (Park Babelsbweg)	SW -10809,-208

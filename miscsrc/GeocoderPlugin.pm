@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GeocoderPlugin.pm,v 1.5 2008/03/03 22:38:07 eserte Exp $
+# $Id: GeocoderPlugin.pm,v 1.6 2008/07/19 18:27:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007,2008 Slaven Rezic. All rights reserved.
@@ -16,12 +16,16 @@
 # Description (de): Geokodierung
 package GeocoderPlugin;
 
+# TODO:
+# * if there are multiple results, then show them all in a list or so
+# * watch from time to time if the Yahoo issues are solved, especially the utf8 problems
+
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!eval '
@@ -83,13 +87,15 @@ sub geocoder_dialog {
     destroy_geocoder_dialog();
     $geocoder_toplevel = $main::top->Toplevel(-title => "Geocode");
     $geocoder_toplevel->transient($main::top) if $main::transient;
-    my $loc = "Berlin, ";
+    #my $loc = "Berlin, ";
+    my $loc = ", Berlin"; # It seems that Yahoo can deal better with the city at the end. Google is fine with both.
     my $e = $geocoder_toplevel->LabEntry(-textvariable => \$loc,
 					 -labelPack => [-side => 'left'],
 					 -label => 'Location:',
 					)->pack(-anchor => 'w');
     $e->focus;
-    $e->icursor("end");
+    #$e->icursor("end");
+    $e->icursor(0);
 
     my $gcf = $geocoder_toplevel->LabFrame(-label => 'Geocoding modules', -labelside => 'acrosstop'
 					  )->pack(-fill => 'x', -expand => 1);
@@ -143,6 +149,7 @@ sub geocoder_dialog {
 				     }
 				 }
 			     },
+			     'label' => 'Yahoo (avoid umlauts)',
 			   },
 	       );
     for my $_api (sort keys %apis) {

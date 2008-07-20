@@ -1213,6 +1213,31 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork 22455,95876 22471,95721
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_009421',
+         'until' => 1216677600,
+         'text' => 'Bellevuestr. (Köpenick) in beiden Richtungen zwischen Seelenbinderstr. und Fürstenwalder Damm Baustelle, Straße vollständig gesperrt (bis 21.07.08)',
+         'from' => 1216495649,
+         'id' => 1421,
+         'data' => 'userdel	2::inwork 23402,5483 23333,5731
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1216584000,
+         'text' => 'Straße des 17. Juni, John-Foster-Dulles-Allee und andere Straßen im Regierungsviertel am Sonntag von 12 bis 22 Uhr gesperrt (Feierliches Gelöbnis der Bundeswehr)',
+         'from' => 1216461600,
+         'id' => 1422,
+         'data' => 'userdel	2::temp 8417,12846 8503,12895
+userdel	2::temp 7936,12906 8017,12826
+userdel	2::temp 8737,12757 8596,12748 8551,12746
+userdel	2::temp 7514,12387 7875,12363 8017,12359 8070,12409 8119,12414
+userdel	2::temp 8508,12874 8545,12760
+userdel	2::temp 8775,12457 8540,12420 8560,12326 8539,12286 8515,12242 8214,12205 8089,12186 8063,12182 7816,12150 7383,12095 6828,12031
+userdel	2::temp 8595,12066 8600,12165 8515,12242
+',
+         'type' => 'gesperrt'
        }
      
 );

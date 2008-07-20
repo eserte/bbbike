@@ -594,7 +594,7 @@ Rudolf-Breitscheid-Str.	2 -11056,-1726 -11142,-1675
 Geschwister-Scholl-Str.	1 -14344,-1748 -14215,-1687 -14151,-1656 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13883,-1227
 Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
-Puschkinallee	1 -13052,775 -12922,762 -12811,533
+Puschkinallee	1 -13044,800 -12922,762 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
 Friedrich-Ebert-Str.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3nocross -12719,-1661 -12755,-1585 -12773,-1544 -12795,-1499 -12833,-1365
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13733,-722 -13772,-623
@@ -605,6 +605,7 @@ Prof.-Dr.-Helmert-Str.: Schranke	BNP:3 -7969,-1659
 Kiezstr.: Mittelstreifen	3nocross -13450,-1595 -13374,-1709 -13328,-1790
 Eisenhartstr.	1 -12625,-4 -12772,-295 -12821,-417
 Ruinenbergstr.	1 -13781,174 -13918,-164
+Brandenburger Str.	1s:q3 -12784,-956 -12894,-977
 ###################################################################### 
 # elsewhere in Brandenburg
 #: by: grote energus: vvv
@@ -1147,7 +1148,10 @@ Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01	2:inwork 8290,1
 #
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+#: last_checked: 2008-07-19
+Friedrich-Klausing-Str.: wegen Bauarbeiten gesperrt	2:inwork -12960,1684 -12961,1746 -13087,1746
 Rückbau der Fr.-Ebert-Str. zwischen Breiter Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	2:inwork -12719,-1661 -12755,-1585 -12773,-1544
+Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12795,-1499
 #: by: http://www.maerkischeallgemeine.de/cms/beitrag/10670763/60889/, auch Tagesspiegel - Märkische Schlösser - Tour 1
 Brücke über den Torfgraben/Phöben gesperrt, Neubau voraussichtlich bis 2006-12-31	2:inwork -25539,2641 -25453,2418
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1262,7 +1266,7 @@ Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocros
 #: by: rjoop
 (Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40 6209,14245
 An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3nocross 6226,13951 6230,14184 6234,14247 6237,14309
-Rathenower Str.: schwierig zu querender Mittelstreifen	3nocross 7195,13046 7207,13118 7148,13245
+Rathenower Str.: schwierig zu querender Mittelstreifen	3nocross 7195,13046 7207,13118 7131,13261
 Eichkatzweg	1 1137,9921 1026,9772 925,9644
 Lärchenweg	1 1046,9989 1093,9952 1137,9921 1157,9907 1238,9869
 schieben - einzelne Stufen	0:20 1412,8033
