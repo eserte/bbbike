@@ -1522,7 +1522,7 @@ Clara-Grunwald-Str.: Asphalt	Q0 15652,10348 15578,10250 15567,10235
 Hildegard-Marcusson-Straße: Asphalt	Q0 16004,10204 15952,10134 15874,10025 15831,9968
 (Hildegard-Marcusson-Straße - Uferweg): Parkweg	Q1 15831,9968 15811,9957 15786,9957
 Sven-Hedin-Str.: asphaltierte Fahrbahn, asphaltierter Radweg	Q0 458,3697 394,3694 271,3772
-Sven-Hedin-Str.: asphaltierte Fahrbahn, Verbundsteinpflasterradweg	Q0 271,3772 16,3744 -141,3715 -266,3648 -364,3584 -461,3522 -548,3467 -745,3401 -800,3383 -1022,3443
+Sven-Hedin-Str.: asphaltierte Fahrbahn, Verbundsteinpflasterradweg	Q0 271,3772 201,3764 16,3744 -141,3715 -266,3648 -364,3584 -461,3522 -548,3467 -745,3401 -800,3383 -1022,3443
 Schützallee: kleinteiliges Kopfsteinpflaster auf der Fahrbahn, Radweg mit unebenen Pflaster	Q1 2230,3823 2160,3854 1968,3892 1908,3898
 Schützallee: asphaltierte Fahrbahn, Radweg mit unebenen Pflaster	Q0 1908,3898 1819,3907 1791,3907 1741,3907 1683,3909 1570,3907 1523,3904 1471,3909 1389,3898 1276,3892 1136,3878 1015,3858 891,3828 732,3780 627,3749 458,3697
 (Robert-W.-Kempner-Str. - Colmarer Weg): Verbundsteinpflasterradweg	Q1 2012,3356 2065,3286
@@ -1894,6 +1894,8 @@ Heidekrautweg: Asphalt	Q0 21982,10874 22053,10911
 Petkusser Str.: schlechtes Kopfsteinpflaster	Q3 10506,-2642 10606,-3017 10655,-3135
 Bachstr. (Bohnsdorf): guter Beton	Q0 22749,-969 22918,-903 23329,-732
 Fontanestr. (Oberschöneweide): guter Asphalt	Q0 18225,7004 18240,6845 18254,6679 18273,6606
+Genfer Str.: guter Beton	Q0 6683,18243 6821,18216 6939,18160 7031,18085 7075,18033
+Schwendyweg: Kopfsteinpflaster	Q2 -3254,16726 -3245,16826 -3238,16948 -3217,17150
 Roßweiner Ring: guter Asphalt	Q0 25007,13951 25146,13901 25120,13803 24975,13848
 Drosselstieg: guter Asphalt	Q0 17747,8107 17683,7958
 Marthastr. (Lichterfelde): mäßiges Kopfsteinpflaster	Q2 3450,3142 3599,3242
@@ -4190,7 +4192,8 @@ Wilckeweg: mit kleinen Pflastersteinen gepflastert	Q1 8536,20702 8539,20744 8554
 (Nordgraben - Wurstmacherweg): mäßiger fester Sandweg	Q2 8219,20870 8311,20840
 Humannstr.: guter Beton	Q0 4311,18454 4324,18523 4340,18636
 Humannstr.: gutes Verbundsteinpflaster	Q1 4340,18636 4346,18853 4353,18986
-(Eichborndamm - General-Woyna-Str.): wassergebundene Decke	Q1 4232,18981 4353,18986 4475,18998
+(Eichborndamm - General-Woyna-Str.): wassergebundene Decke	Q1 4232,18981 4353,18986 4475,18998 4577,19009
+(S-Bahndamm - Waldstr.): wassergebundene Decke	Q1 4577,19009 4570,18822
 Bollestr.: sehr guter Asphalt	Q0 2982,20587 2998,20487
 (Nordgraben - Bollestr.): teilweise fester Sandweg, teilweise kleine Pflastersteine; mäßig befahrbar	Q2 2919,20910 2915,20875
 (Brücke über den Nordgraben): Asphalt	Q0 2919,20910 2915,20932
@@ -4544,7 +4547,7 @@ Altglienicker Grund: guter Beton	Q0 18941,452 19076,420 19225,384 19429,337
 Rehborner Str.: guter Asphalt	Q0 28904,1781 28640,2015
 Bei den Wörden: mäßiger Asphalt	Q1 4391,20297 4274,20425 4210,20504 4147,20642 4048,20744
 Breestpromenade: mäßiges Kopfsteinpflaster	Q2 25761,5613 26059,5631 26199,5643
-Paul-Franke-Str.: Kopfsteinpflaster	Q2 9901,18522 10006,18502 10013,18545 9994,18595 9916,18610
+Paul-Franke-Str.: Verbundsteinpflaster	Q1 9901,18522 10006,18502 10013,18545 9994,18595 9916,18610
 Zellerfelder Str.: Asphalt mit vielen Unebenheiten und Schlaglöchern	Q1 11468,19106 11526,18929
 Glindower Weg: mäßiger Beton	Q1 19422,-655 19411,-553 19400,-471 19448,-473 19451,-452
 Glindower Weg: mäßiger Beton	Q1 19244,-562 19323,-571 19411,-553
@@ -4683,6 +4686,12 @@ Lübener Weg: guter Asphalt	Q0 6403,18289 6353,18292 6314,18295 6227,18299 6131,1
 Brusebergstr.: Kopfsteinpflaster	Q2 6060,18534 6045,18305
 Karl-Hofer-Str.: Kopfsteinpflaster	Q2 -792,3129 -779,3257 -745,3401 -725,3478 -694,3539 -631,3630 -575,3684 -432,3788
 Ruthstr.: gutes Kopfsteinpflaster	Q1 6224,3112 6320,3022
+Plüschowstr.: fester Sandweg	Q1 251,3325 252,3367 242,3459 201,3764
+Feldstr.: Asphalt	Q0 -3177,15053 -3258,15100 -3368,15170 -3534,15219
+Feldstr.: Asphalt	Q0 -3582,15244 -3585,15221 -3635,15222 -3630,15268
+Papierstr.: guter Asphalt	Q0 8522,17634 8651,17616
+Abram-Joffé-Str.: Asphalt	Q0 18951,3069 19015,3129 19079,3190 19167,3287 19242,3366
+Lindenstr. (Biesdorf): schlechtes Kopfsteinpflaster	Q3 21420,11150 21164,11251 21138,11254
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953

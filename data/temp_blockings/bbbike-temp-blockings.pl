@@ -5999,7 +5999,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003701',
        data  => <<EOF,
-userdel	2::temp 7587,17532 7500,17796 7487,17836 7466,17904 7445,17968 7439,17985 7350,18262 7232,18572
+userdel	2::temp 7587,17532 7500,17796 7487,17836 7466,17904 7445,17968 7439,17985 7418,18051 7350,18262 7232,18572
 EOF
      },
      { from  => undef, # 
@@ -10174,7 +10174,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006852',
        data  => <<EOF,
-userdel	2::temp 7350,18262 7439,17985 7445,17968 7466,17904 7487,17836 7500,17796 7587,17532
+userdel	2::temp 7350,18262 7418,18051 7439,17985 7445,17968 7466,17904 7487,17836 7500,17796 7587,17532
 EOF
      },
      { from  => 1192489272, # 2007-10-16 01:01
@@ -11930,9 +11930,9 @@ EOF
 userdel	2::inwork 15403,40364 14713,40426
 EOF
      },
-     { from  => 1215975468, # 2008-07-13 20:57
-       until => 1216666669, # 2008-07-21 20:57
-       text  => 'Freiheit (Spandau) stadtauswärts zwischen Klärwerkstr. und Am Schlangengraben Baustelle, Fahrtrichtung gesperrt (bis ungefähr 21.07.2008) ',
+     { from  => 1216674352, # 2008-07-21 23:05
+       until => 1217541599, # 2008-07-31 23:59
+       text  => 'Freiheit (Spandau) stadtauswärts zwischen Klärwerkstr. und Am Schlangengraben Baustelle, Fahrtrichtung gesperrt (bis Ende 07.2008)',
        type  => 'gesperrt',
        source_id => 'IM_009378',
        data  => <<EOF,
@@ -12054,6 +12054,23 @@ userdel	2::temp 7514,12387 7875,12363 8017,12359 8070,12409 8119,12414
 userdel	2::temp 8508,12874 8545,12760
 userdel	2::temp 8775,12457 8540,12420 8560,12326 8539,12286 8515,12242 8214,12205 8089,12186 8063,12182 7816,12150 7383,12095 6828,12031
 userdel	2::temp 8595,12066 8600,12165 8515,12242
+EOF
+     },
+     { from  => 1216674398, # 2008-07-21 23:06
+       until => 1217282400, # 2008-07-29 00:00
+       text  => 'Greifswalder Str. (Prenzlauer Berg) stadteinwärts zwischen Ostseestr. und Erich-Weinert-Str. Baustelle, Fahrtrichtung gesperrt (bis ca. 28.07.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_009449',
+       data  => <<EOF,
+userdel	1::inwork 13098,15592 12966,15478 12880,15335
+EOF
+     },
+     { from  => 1216591200, # 2008-07-21 00:00
+       until => 1220133600, # 2008-08-31 00:00
+       text  => 'B 115 Baruth - Jüterbog OD Baruth, Kreisverkehr Sanierungsarbeiten Vollsperrung 22.07.2008-30.08.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 18138,-39957 18019,-40241
 EOF
      },
     );

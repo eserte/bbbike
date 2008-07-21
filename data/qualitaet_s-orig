@@ -1669,7 +1669,7 @@ Clara-Grunwald-Str.: Asphalt	Q0 15652,10348 15578,10250 15567,10235
 Hildegard-Marcusson-Straße: Asphalt	Q0 16004,10204 15952,10134 15874,10025 15831,9968
 (Hildegard-Marcusson-Straße - Uferweg): Parkweg	Q1 15831,9968 15811,9957 15786,9957
 Sven-Hedin-Str.: asphaltierte Fahrbahn, asphaltierter Radweg	Q0 458,3697 394,3694 271,3772
-Sven-Hedin-Str.: asphaltierte Fahrbahn, Verbundsteinpflasterradweg	Q0 271,3772 16,3744 -141,3715 -266,3648 -364,3584 -461,3522 -548,3467 -745,3401 -800,3383 -1022,3443
+Sven-Hedin-Str.: asphaltierte Fahrbahn, Verbundsteinpflasterradweg	Q0 271,3772 201,3764 16,3744 -141,3715 -266,3648 -364,3584 -461,3522 -548,3467 -745,3401 -800,3383 -1022,3443
 #: note: Q2 von Dominik Seelow hochgestuft
 Schützallee: kleinteiliges Kopfsteinpflaster auf der Fahrbahn, Radweg mit unebenen Pflaster	Q1 2230,3823 2160,3854 1968,3892 1908,3898
 Schützallee: asphaltierte Fahrbahn, Radweg mit unebenen Pflaster	Q0 1908,3898 1819,3907 1791,3907 1741,3907 1683,3909 1570,3907 1523,3904 1471,3909 1389,3898 1276,3892 1136,3878 1015,3858 891,3828 732,3780 627,3749 458,3697
@@ -2136,6 +2136,8 @@ Bachstr. (Bohnsdorf): guter Beton	Q0 22749,-969 22918,-903 23329,-732
 Fontanestr. (Oberschöneweide): guter Asphalt	Q0 18225,7004 18240,6845 18254,6679 18273,6606
 ######################################################################
 #: by: anonymous vvv
+Genfer Str.: guter Beton	Q0 6683,18243 6821,18216 6939,18160 7031,18085 7075,18033
+Schwendyweg: Kopfsteinpflaster	Q2 -3254,16726 -3245,16826 -3238,16948 -3217,17150
 Roßweiner Ring: guter Asphalt	Q0 25007,13951 25146,13901 25120,13803 24975,13848
 Drosselstieg: guter Asphalt	Q0 17747,8107 17683,7958
 Marthastr. (Lichterfelde): mäßiges Kopfsteinpflaster	Q2 3450,3142 3599,3242
@@ -6136,7 +6138,8 @@ Wilckeweg: mit kleinen Pflastersteinen gepflastert	Q1 8536,20702 8539,20744 8554
 (Nordgraben - Wurstmacherweg): mäßiger fester Sandweg	Q2 8219,20870 8311,20840
 Humannstr.: guter Beton	Q0- 4311,18454 4324,18523 4340,18636
 Humannstr.: gutes Verbundsteinpflaster	Q1 4340,18636 4346,18853 4353,18986
-(Eichborndamm - General-Woyna-Str.): wassergebundene Decke	Q1 4232,18981 4353,18986 4475,18998
+(Eichborndamm - General-Woyna-Str.): wassergebundene Decke	Q1 4232,18981 4353,18986 4475,18998 4577,19009
+(S-Bahndamm - Waldstr.): wassergebundene Decke	Q1 4577,19009 4570,18822
 Bollestr.: sehr guter Asphalt	Q0 2982,20587 2998,20487
 (Nordgraben - Bollestr.): teilweise fester Sandweg, teilweise kleine Pflastersteine; mäßig befahrbar	Q2 2919,20910 2915,20875
 (Brücke über den Nordgraben): Asphalt	Q0 2919,20910 2915,20932
@@ -6857,7 +6860,8 @@ Bei den Wörden: mäßiger Asphalt	Q1 4391,20297 4274,20425 4210,20504 4147,20642 4
 #: by: Manon Pfaff:
 Breestpromenade: mäßiges Kopfsteinpflaster	Q2 25761,5613 26059,5631 26199,5643
 #: by: Butch Coolidge:
-Paul-Franke-Str.: Kopfsteinpflaster	Q2 9901,18522 10006,18502 10013,18545 9994,18595 9916,18610
+#: corrected_by: Tom Urig (Kopfsteinpflaster Q2 -> Verbundsteinpflaster Q1)
+Paul-Franke-Str.: Verbundsteinpflaster	Q1 9901,18522 10006,18502 10013,18545 9994,18595 9916,18610
 #: by: Theo Schallon:
 #: note: laut anonymous Asphalt ohne weitere Angaben
 Zellerfelder Str.: Asphalt mit vielen Unebenheiten und Schlaglöchern	Q1- 11468,19106 11526,18929
@@ -7152,6 +7156,19 @@ Brusebergstr.: Kopfsteinpflaster	Q2 6060,18534 6045,18305
 Karl-Hofer-Str.: Kopfsteinpflaster	Q2 -792,3129 -779,3257 -745,3401 -725,3478 -694,3539 -631,3630 -575,3684 -432,3788
 #: by: Anica Jahning:
 Ruthstr.: gutes Kopfsteinpflaster	Q1 6224,3112 6320,3022
+#: by: Juli (cellicatissimo...)
+Plüschowstr.: fester Sandweg	Q1 251,3325 252,3367 242,3459 201,3764
+#: by: sebastian Wrede: vvv
+Feldstr.: Asphalt	Q0 -3177,15053 -3258,15100 -3368,15170 -3534,15219
+Feldstr.: Asphalt	Q0 -3582,15244 -3585,15221 -3635,15222 -3630,15268
+#: by: ^^^
+#: by: juergen roth:
+Papierstr.: guter Asphalt	Q0 8522,17634 8651,17616
+#: by: Simon (no email):
+Abram-Joffé-Str.: Asphalt	Q0 18951,3069 19015,3129 19079,3190 19167,3287 19242,3366
+#: by: Andreas (ortbandt):
+#: note: "enge Straße", aber q0
+Lindenstr. (Biesdorf): schlechtes Kopfsteinpflaster	Q3 21420,11150 21164,11251 21138,11254
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

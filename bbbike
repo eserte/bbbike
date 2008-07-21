@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.373 2008/07/13 07:52:06 eserte Exp eserte $
+# $Id: bbbike,v 3.374 2008/07/20 21:50:42 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -243,7 +243,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.373 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.374 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -13240,6 +13240,7 @@ sub show_info {
 				}
 				require CGI;
 				my $wpt = "$zielname!$px,$py";
+				my $center = "$px,$py";
 				my $zoom;
 				if ($mapscale_scale < 4000) {
 				    $zoom = 0;
@@ -13250,11 +13251,13 @@ sub show_info {
 				} else {
 				    $zoom = 3;
 				}
-				my $q2 = CGI->new({ wpt => $wpt,
+				my $q2 = CGI->new({ #wpt => $wpt, # XXX wpt or center --- TBD what is better suited
+						    center => $center,
 						    zoom => $zoom,
 						    autosel => 1,
 						    maptype => "hybrid",
 						    coordsystem => "polar",
+						    mapmode => "addroute",
 						  });
 				my $url = $baseurl . "?" . $q2->query_string;
 				$url;

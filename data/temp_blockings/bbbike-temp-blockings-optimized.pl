@@ -1017,15 +1017,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1216591200,
-         'text' => 'L 060 Langennaundorf - Falkenberg OD Uebigau, Marktbereich Historische Nacht Vollsperrung 19.07.2008-20.07.2008 ',
-         'from' => 1216332000,
-         'id' => 1397,
-         'data' => 'userdel	q4::inwork 5148,-90524 5358,-90502 5798,-90075
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1238194800,
@@ -1112,9 +1104,9 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        {
          'source_id' => 'IM_009378',
-         'until' => 1216666669,
-         'text' => 'Freiheit (Spandau) stadtauswärts zwischen Klärwerkstr. und Am Schlangengraben Baustelle, Fahrtrichtung gesperrt (bis ungefähr 21.07.2008) ',
-         'from' => 1215975468,
+         'until' => 1217541599,
+         'text' => 'Freiheit (Spandau) stadtauswärts zwischen Klärwerkstr. und Am Schlangengraben Baustelle, Fahrtrichtung gesperrt (bis Ende 07.2008)',
+         'from' => 1216674352,
          'id' => 1409,
          'data' => 'userdel	1::inwork -1258,13552 -2410,13746
 ',
@@ -1224,20 +1216,25 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'until' => 1216584000,
-         'text' => 'Straße des 17. Juni, John-Foster-Dulles-Allee und andere Straßen im Regierungsviertel am Sonntag von 12 bis 22 Uhr gesperrt (Feierliches Gelöbnis der Bundeswehr)',
-         'from' => 1216461600,
-         'id' => 1422,
-         'data' => 'userdel	2::temp 8417,12846 8503,12895
-userdel	2::temp 7936,12906 8017,12826
-userdel	2::temp 8737,12757 8596,12748 8551,12746
-userdel	2::temp 7514,12387 7875,12363 8017,12359 8070,12409 8119,12414
-userdel	2::temp 8508,12874 8545,12760
-userdel	2::temp 8775,12457 8540,12420 8560,12326 8539,12286 8515,12242 8214,12205 8089,12186 8063,12182 7816,12150 7383,12095 6828,12031
-userdel	2::temp 8595,12066 8600,12165 8515,12242
+         'source_id' => 'IM_009449',
+         'until' => 1217282400,
+         'text' => 'Greifswalder Str. (Prenzlauer Berg) stadteinwärts zwischen Ostseestr. und Erich-Weinert-Str. Baustelle, Fahrtrichtung gesperrt (bis ca. 28.07.2008)',
+         'from' => 1216674398,
+         'id' => 1423,
+         'data' => 'userdel	1::inwork 13098,15592 12966,15478 12880,15335
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1220133600,
+         'text' => 'B 115 Baruth - Jüterbog OD Baruth, Kreisverkehr Sanierungsarbeiten Vollsperrung 22.07.2008-30.08.2008 ',
+         'from' => 1216591200,
+         'id' => 1424,
+         'data' => 'userdel	q4::inwork 18138,-39957 18019,-40241
+',
+         'type' => 'handicap'
        }
      
 );

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 2.28 2008/03/09 20:05:41 eserte Exp eserte $
+# $Id: bbbikegooglemap.cgi,v 2.34 2008/07/21 20:44:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006,2007,2008 Slaven Rezic. All rights reserved.
@@ -149,11 +149,13 @@ sub run {
     ($self->{initial_mapmode}) = $mapmode =~ m{^(search|addroute|browse|addwpt)$};
     $self->{initial_mapmode} ||= "";
 
+    my $center = param("center") || "";
+
     $self->{converter} = $converter;
     $self->{coordsystem} = $coordsystem;
 
     print header;
-    print $self->get_html(\@polylines_polar, \@polylines_polar_feeble, \@wpt, $zoom);
+    print $self->get_html(\@polylines_polar, \@polylines_polar_feeble, \@wpt, $zoom, $center);
 }
 
 sub bbbike_converter {
@@ -165,13 +167,15 @@ sub bbbike_converter {
 sub polar_converter { @_[0,1] }
 
 sub get_html {
-    my($self, $paths_polar, $feeble_paths_polar, $wpts, $zoom) = @_;
+    my($self, $paths_polar, $feeble_paths_polar, $wpts, $zoom, $center) = @_;
 
     my $converter = $self->{converter};
     my $coordsystem = $self->{coordsystem};
 
     my($centerx,$centery);
-    if ($paths_polar && @$paths_polar) {
+    if ($center) {
+	($centerx,$centery) = map { sprintf "%.5f", $_ } split /,/, $center;
+    } elsif ($paths_polar && @$paths_polar) {
 	($centerx,$centery) = map { sprintf "%.5f", $_ } split /,/, $paths_polar->[0][0];
     } elsif ($wpts && @$wpts) {
 	($centerx,$centery) = map { sprintf "%.5f", $_ } $wpts->[0][0], $wpts->[0][1];
@@ -236,6 +240,7 @@ sub get_html {
 	#permalink    { color:red; }
 	#addroutelink { color:blue; }
 	.boxed	      { border:1px solid black; padding:3px; }
+	#commentlink  { background-color:yellow; }
 	body.nonWaitMode * { }
 	body.waitMode *    { cursor:wait; }
     --></style>
@@ -892,7 +897,7 @@ EOF
     $html .= <<EOF;
     </div>
 
-<div id="commentlink" class="boxed" class="boxed" style="display:none;">
+<div id="commentlink" class="boxed" style="display:none;">
   <a href="#" onclick="show_comment(); return false;">Kommentar zu Route und Waypoints senden</a>
 </div>
 
@@ -1019,12 +1024,9 @@ EOF
 # REPO NAME hrefify /home/e/eserte/work/srezic-repository 
 # REPO MD5 10b14ef52873d9c6b53d959919cbcf54
 
-=head2 hrefify($text)
-
-Create <a href="...">...</a> tags around things which look like URLs
-and HTML-escape everything else.
-
-=cut
+# hrefify($text)
+# Create <a href="...">...</a> tags around things which look like URLs
+# and HTML-escape everything else.
 
 sub hrefify {
     my($text) = @_;
@@ -1055,14 +1057,9 @@ sub hrefify {
 # REPO NAME trim /home/e/eserte/work/srezic-repository 
 # REPO MD5 ab2f7dfb13418299d79662fba10590a1
 
-=head2 trim($string)
-
-=for category Text
-
-Trim starting and leading white space and squeezes white space to a
-single space.
-
-=cut
+# trim($string)
+# Trim starting and leading white space and squeezes white space to a
+# single space.
 
 sub trim ($) {
     my $s = shift;
@@ -1083,6 +1080,65 @@ $o->run;
 =head1 NAME
 
 bbbikegooglemap.cgi - show BBBike data through Google maps
+
+=head1 DESCRIPTION
+
+=head2 CGI Parameters
+
+=over
+
+=item C<coordsystem=>I<coordsystem>
+
+Currently only C<bbbike> (standard BBBike coord system, default) and
+C<polar> (WGS84 coordinates) are allowed.
+
+=item C<wpt_or_trk=>I<...>
+
+A waypoint or a track. Track points are separated with spaces. XXX
+
+=item C<wpt=>I<name>C<!>I<lon>C<,>I<lat>
+
+Set waypoint with the specified name on lon/lat and center map to this
+waypoint.
+
+=item C<coords=>I<...>
+
+Display a track XXX
+
+=item C<oldcoords=>I<...>
+
+Display an alternative track with a feeble color XXX
+
+=item C<gpxfile=>I<...>
+
+Upload parameter for a GPX file.
+
+=item C<zoom=>I<...>
+
+Set zoom value (use standard Google Maps zoom values).
+
+=item C<autosel=true>I<|>C<false>
+
+Automatically update the OS selection if set to true. Does not work
+yet!
+
+=item C<maptype=hybrid>I<|>C<normal>I<|>C<satellite>
+
+Set initial type of map (by default: satellite).
+
+=item C<$mapmode=search>I<|>C<addroute>I<|>C<browse>I<|>C<addwpt>
+
+Set initial mapmode to: search (route search mode activated), addroute
+(adding points to routes activated), browse (just browsing the map is
+activated), addwpt (adding waypoint activated). The default is browse.
+
+=item C<center=>I<lon>C<,>I<lat>
+
+Center to map to the specified point. If not set, then the first coord
+from the track, or the first waypoint, or the center of Berlin will be
+used.
+
+=back
 
 =cut
 
