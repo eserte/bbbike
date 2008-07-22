@@ -965,8 +965,8 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        {
-         'until' => 1217023200,
-         'text' => 'L 338 Schöneiche - Hönow OD Neuenhagen, zw. BÜ und Eisenbahnstr. Straßenbau Vollsperrung 30.06.2008-25.07.2008 ',
+         'until' => 1216936800,
+         'text' => 'L 338 Schöneiche - Hönow OD Neuenhagen, zw. BÜ und Eisenbahnstr. Straßenbau Vollsperrung 30.06.2008-24.07.2008 ',
          'from' => 1214690400,
          'id' => 1385,
          'data' => 'userdel	q4::inwork 30795,13191 30179,13667
@@ -1000,8 +1000,8 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        undef,
        {
-         'until' => 1216764000,
-         'text' => 'B 101 Weststr. OD Elsterwerda, zw. Thiemigstr. und Netto Umverlegung Versorgungsleit. Vollsperrung 17.07.2008-22.07.2008 ',
+         'until' => 1216850400,
+         'text' => 'B 101 Weststr. OD Elsterwerda, zw. Thiemigstr. und Netto Umverlegung Versorgungsleit. Vollsperrung 17.07.2008-23.07.2008 ',
          'from' => 1216159200,
          'id' => 1395,
          'data' => 'userdel	q4::inwork 20504,-105143 20635,-105714
@@ -1206,16 +1206,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_009421',
-         'until' => 1216677600,
-         'text' => 'Bellevuestr. (Köpenick) in beiden Richtungen zwischen Seelenbinderstr. und Fürstenwalder Damm Baustelle, Straße vollständig gesperrt (bis 21.07.08)',
-         'from' => 1216495649,
-         'id' => 1421,
-         'data' => 'userdel	2::inwork 23402,5483 23333,5731
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_009449',
@@ -1233,6 +1224,44 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'from' => 1216591200,
          'id' => 1424,
          'data' => 'userdel	q4::inwork 18138,-39957 18019,-40241
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_009457',
+         'until' => 1220219999,
+         'text' => 'Am Friedrichshain (Friedrichshain) Richtung Greifswalder Str. zwischen Einmündung Am Friedrichshain und Friedenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2008)',
+         'from' => 1216755974,
+         'id' => 1425,
+         'data' => 'userdel	q4::inwork; 11772,13624 11723,13630
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_009465',
+         'until' => 1219636800,
+         'text' => 'Straße des 17. Juni (Tiergarten) in Richtung Charlottenburg zwischen Y.-Rabin-Str. und Großer Stern Veranstaltung, Fahrtrichtung gesperrt (bis 25.08.2008 6 Uhr)',
+         'from' => 1216756080,
+         'id' => 1426,
+         'data' => 'userdel	2::temp 7816,12150 7383,12095 6828,12031
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1229900400,
+         'text' => 'L 172 Velten -Germendorf Kreuzung bei Bärenklau-Leegebruch Neubau Kreisverkehr Vollsperrung 17.07.2008-21.12.2008 ',
+         'from' => 1216159200,
+         'id' => 1427,
+         'data' => 'userdel	2::inwork -5375,35118 -5373,35134
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1217455200,
+         'text' => 'L 338 Schöneiche - Hönow OD Neuenhagen, zw. BÜ und Jahnstr. Deckeneinbau, Restarb. Vollsperrung 24.07.2008-30.07.2008 ',
+         'from' => 1216764000,
+         'id' => 1428,
+         'data' => 'userdel	q4::inwork 30815,13170 30795,13191 30179,13667
 ',
          'type' => 'handicap'
        }
