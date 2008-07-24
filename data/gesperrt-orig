@@ -9,7 +9,7 @@
 #
 # die Richtung gibt bei Einbahnstraﬂen die Sperrung an
 #
-Kanalstraﬂen S¸dufer, von Osten bis Kˆthener Br¸cke	1 9851,10219 9812,10211 9592,10174 9401,10199
+Kanalstraﬂen S¸dufer, von Osten bis Kˆthener Br¸cke	1 9851,10219 9812,10211 9687,10180 9592,10174 9401,10199
 Kanalstraﬂen S¸dufer, von Osten bis Kˆthener Br¸cke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
 Kanalstraﬂen S¸dufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
 Kanalstraﬂen Nordufer	1 6880,11110 7118,11209 7160,11225 7251,11202 7333,11179 7595,11086 7687,11096 7873,11142 7993,11137 8092,11092 8241,11024
@@ -327,7 +327,8 @@ Kattegatstr.	1 9331,17658 9475,17557
 Waldh¸terpfad	1 510,4202 371,4453 301,4643
 Amalienpark	1 10905,18671 10950,18499 10860,18650
 Im Amseltal	1 1962,25214 1982,25108
-Gundelfinger Str.	1 18697,9153 18653,8922 18609,8717
+#: by: Josephine Schwuchow:
+Gundelfinger Str.	1 18735,9421 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18778,8895
 Fehmarner Str. 	1 6710,14776 6528,15000
 Alte Sp‰thbr¸cke	2 14437,5080 14535,5137
@@ -558,6 +559,7 @@ Asternplatz	1 3775,4632 3710,4728 3707,4752 3716,4764 3740,4766 3754,4755 3815,4
 Kammgasse	1 1992,24354 2213,24393 2264,24414 2302,24451 2325,24486
 #: by: anonymous
 Herbert-Tsch‰pe-Str.	1 14358,14155 14481,14095 14510,14104 14710,14185
+Strausberger Platz	1 11976,12595 12005,12619 12050,12616 12099,12580 12114,12546 12083,12518 12028,12519 11988,12546 11976,12595
 ######################################################################
 #
 # Potsdam
@@ -711,8 +713,9 @@ Behrenstr./Bebelplatz	1s:q3 9801,12245 9743,12239 9700,12234 9626,12227
 ####################################################################
 #
 # gesperrte Wegf¸hrung (nicht mˆglich zu umgehen --- wenn es eine
-# Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
+# Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Brauhausstr. -> Prenzlauer Promenade: Straﬂenbahntrasse	3 12211,16688 12017,16734 12046,16568
 Schnellerstr.: Mittelstreifen	3nocross 16713,6839 16674,6885 16568,7009
 #: note: Luftbild vvv
 Attilastr.: Mittelstreifen	3nocross 7263,4281 7310,4308 7368,4342
@@ -839,7 +842,7 @@ Prenzlauer Allee: Straﬂenbahntrasse	3nocross 11941,15586 11967,15700 11997,15834
 Danziger Str.: Mittelstreifen mit Straﬂenbahn	3nocross 11712,14868 11610,14886 11545,14897
 Torstr.: Mittelstreifen mit Straﬂenbahn	3nocross 10746,13673 10640,13700 10569,13719 10450,13751 10445,13752
 Yorckstr.: Linksabbiegen verboten (und unbequem)	3nocross 8188,9610 8095,9639 7941,9686
-Lichtenberger Str.: Mittelstreifen	3nocross 12047,12572 12006,12464 11929,12263
+Lichtenberger Str.: Mittelstreifen	3nocross 12028,12519 12006,12464 11929,12263
 Sachsendamm: unbequem passierbarer Mittelstreifen	3nocross 7699,7571 7859,7486 7946,7411
 Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12540,8458
 Karl-Marx-Str.: unbequemes ‹berqueren wegen parkender Autos	3nocross 12830,8031 12865,7923 12898,7832

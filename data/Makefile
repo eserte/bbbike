@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.191 2008/07/12 20:05:58 eserte Exp $
+# $Id: Makefile,v 2.193 2008/07/24 20:39:29 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -584,14 +584,32 @@ vorfahrt:	vorfahrt-orig
 	mv vorfahrt~ vorfahrt
 	-@$(READONLY) $@
 
-.for f in ${COMMENTS_PARTIAL}
+# Old style using convert2hafas. Caution: convert_orig_to_bbd is not
+# able to do some things yet necessary here, for example automatic
+# Gefaelle generation in comments_mount or not combining X;X
+# categories into X
+.for f in ${COMMENTS_PARTIAL:Ncomments_route}
 ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
 	-@$(WRITEABLE) $@
 	cat ${f}-orig | \
 	    ${GREPSTRASSEN} -v -sectionrx "ignorieren" | \
 	    $(CONVERT2HAFAS) -basefile ${f}-orig - | \
 	    ${RESOLVE_STARS} -sperrefile ${PERSISTENTTMPDIR}/gesperrt-without-nocross \
-	    ${ALL_STREETS} - > $@~ && \
+	        ${ALL_STREETS} - > $@~ && \
+	mv $@~ $@
+	-@$(READONLY) $@
+.endfor
+
+# New style using convert_orig_to_bbd. Only comments_route here,
+# because of the need for alias and url directives.
+.for f in comments_route
+${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
+	-@$(WRITEABLE) $@
+	cat ${f}-orig | \
+	    ${GREPSTRASSEN} -v -sectionrx "ignorieren" | \
+	    $(CONVERT_ORIG) -keep-directive url -keep-directive alias - | \
+	    ${RESOLVE_STARS} -sperrefile ${PERSISTENTTMPDIR}/gesperrt-without-nocross \
+	        ${ALL_STREETS} - > $@~ && \
 	mv $@~ $@
 	-@$(READONLY) $@
 .endfor
@@ -934,6 +952,13 @@ check-forever:
 	@-alarm -nicedown
 	@-xterm-conf -deiconify -raise
 	xmessage "check-forever failed"
+
+# Like check-forever, but build first, then check (all calls the check target)
+all-forever:
+	-nice forever -30 -i make all
+	@-alarm -nicedown
+	@-xterm-conf -deiconify -raise
+	xmessage "all-forever failed"
 
 .OPTIONAL: .check_bbbike-temp-blockings-optimized
 

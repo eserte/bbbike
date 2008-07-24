@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.56 2008/04/21 21:28:56 eserte Exp $
+# $Id: cgi.t,v 1.57 2008/07/24 22:10:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -79,7 +79,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (183 + $ortsuche_tests) * scalar @urls;
+plan tests => (187 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -205,7 +205,6 @@ for my $cgiurl (@urls) {
 	}
     }
 
- XXX: 
     {
 	my $content;
 	my $route;
@@ -768,6 +767,23 @@ EOF
 	BBBikeTest::like_long_data($content, qr{Neust%e4dtische}i, "Found iso-8859-1 encoding");
 	BBBikeTest::unlike_long_data($content, qr{Neust%C3%A4dtische}i, "No single encoded utf-8");
 	BBBikeTest::unlike_long_data($content, qr{Neust%C3%83%C2%A4dtische}i, "No double encoded utf-8");
+    }
+
+ XXX: 
+    {
+	my $resp = $ua->get($cgiurl . "?scope=wideregion&detailmapx=2&detailmapy=6&type=start&detailmap.x=200&detailmap.y=226");
+	ok($resp->is_success);
+	my $content = uncompr($resp);
+	BBBikeTest::like_long_data($content, qr{diese Koordinaten konnte keine Kreuzung gefunden werden},
+				   "No crossing for coords in the Döberitzer Heide");
+    }
+
+    {
+	my $resp = $ua->get($cgiurl . "?scope=wideregion&detailmapx=3&detailmapy=8&type=start&detailmap.x=304&detailmap.y=331");
+	ok($resp->is_success);
+	my $content = uncompr($resp);
+	BBBikeTest::like_long_data($content, qr{Rudolf-Breitscheid-Str},
+				   "Crossing in Potsdam near Berlin, should get a street in Potsdam");
     }
 }
 

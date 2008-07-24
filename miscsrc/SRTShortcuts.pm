@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.41 2008/05/23 19:17:47 eserte Exp eserte $
+# $Id: SRTShortcuts.pm,v 1.42 2008/07/24 19:44:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.41 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.42 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -225,6 +225,9 @@ sub add_button {
 	      ],
 	      [Button => "Mark most recent Layer",
 	       -command => sub { mark_most_recent_layer() },
+	      ],
+	      [Button => "Current search in local bbbike.cgi",
+	       -command => sub { current_search_in_bbbike_cgi() },
 	      ],
 	      "-",
 	      [Cascade => "Rare or old", -menu => $rare_or_old_menu],
@@ -617,6 +620,33 @@ sub mark_layer {
 sub mark_most_recent_layer {
     mark_layer($main::most_recent_str_layer)
 	if defined $main::most_recent_str_layer;
+}
+
+sub current_search_in_bbbike_cgi {
+    if (@main::search_route_points < 2) {
+	main::status_message("Not enough points", "die");
+    }
+    if (@main::search_route_points > 3) {
+	main::status_message("Too many points, bbbike.cgi only supports one via", "die");
+    }
+    my $inx = 0;
+    my($start, $via, $goal);
+    $start = $main::search_route_points[$inx++]->[0];
+    if (@main::search_route_points == 3) {
+	$via = $main::search_route_points[$inx++]->[0];
+    }
+    $goal = $main::search_route_points[$inx]->[0];
+
+    require CGI;
+    my $qs = CGI->new({ startc => $start,
+			($via ? (viac => $via) : ()),
+			zielc => $goal,
+			pref_seen => 1, # gelogen
+		      })->query_string;
+    my $url = "http://localhost/bbbike/cgi/bbbike.cgi?$qs";
+    main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
+    require WWWBrowser;
+    WWWBrowser::start_browser($url);
 }
 
 1;

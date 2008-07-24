@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: match_bbd_data,v 1.18 2008/04/19 12:48:20 eserte Exp $
+# $Id: match_bbd_data,v 1.19 2008/07/23 21:55:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -108,8 +108,22 @@ $s2->make_grid(UseCache => 1,
 
 my $iter = 0;
 $s1->init;
+my $tp = eval { 
+    require Time::Progress;
+    my $tp = Time::Progress->new;
+    $tp->attr(min => 0, max => scalar @{$s1->{Data}},
+	      format => "\rdone %p ETA %f %30b",
+	     );
+    $tp->restart;
+    $tp;
+};
+    
 while(1) {
-    printf STDERR " %d%% (%d/%d)   \r", ($iter / @{$s1->{Data}})*100, $iter++, scalar @{$s1->{Data}} if $v;
+    if ($tp) {
+	print STDERR $tp->report(undef, $iter++);
+    } else {
+	printf STDERR " %d%% (%d/%d)   \r", ($iter / @{$s1->{Data}})*100, $iter++, scalar @{$s1->{Data}} if $v;
+    }
     my $r = $s1->next;
     my $coords = $r->[Strassen::COORDS];
     last if !@$coords;

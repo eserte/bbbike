@@ -926,7 +926,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'text' => 'Ritterstr. (Kreuzberg) Richtung Kottbusser Tor zwischen Lobeckstr. und Prinzenstr. Baustelle, Fahrtrichtung gesperrt (bis 01.09.)',
          'from' => 1213737230,
          'id' => 1374,
-         'data' => 'userdel	1::inwork 10572,10773 10768,10686
+         'data' => 'userdel	1::inwork 10585,10766 10768,10686
 ',
          'type' => 'gesperrt'
        },
@@ -999,15 +999,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1216850400,
-         'text' => 'B 101 Weststr. OD Elsterwerda, zw. Thiemigstr. und Netto Umverlegung Versorgungsleit. Vollsperrung 17.07.2008-23.07.2008 ',
-         'from' => 1216159200,
-         'id' => 1395,
-         'data' => 'userdel	q4::inwork 20504,-105143 20635,-105714
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1219442400,
          'text' => 'K 6160 Chausseestr. OD Wildau, zw. KVK und Am Kleingewerbegebiet Bau Kreisverkehr halbseitig gesperrt; Einbahnstraße 14.07.2008-22.08.2008 ',
@@ -1102,16 +1094,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_009378',
-         'until' => 1217541599,
-         'text' => 'Freiheit (Spandau) stadtauswärts zwischen Klärwerkstr. und Am Schlangengraben Baustelle, Fahrtrichtung gesperrt (bis Ende 07.2008)',
-         'from' => 1216674352,
-         'id' => 1409,
-         'data' => 'userdel	1::inwork -1258,13552 -2410,13746
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1218232800,
          'text' => 'B 002 zw. Bernau und Stadtgrenze Berlin Deckenerneuerung, Radwegbau Richtungsverkehr 07.07.2008-08.08.2008 ',
@@ -1239,11 +1222,19 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        {
          'source_id' => 'IM_009465',
-         'until' => 1219636800,
-         'text' => 'Straße des 17. Juni (Tiergarten) in Richtung Charlottenburg zwischen Y.-Rabin-Str. und Großer Stern Veranstaltung, Fahrtrichtung gesperrt (bis 25.08.2008 6 Uhr)',
-         'from' => 1216756080,
+         'until' => 1216958400,
+         'text' => 'Straße des 17. Juni (Tiergarten) und Großer Stern Veranstaltung, gesperrt (bis 25.07.2008 6 Uhr)',
+         'from' => undef,
          'id' => 1426,
-         'data' => 'userdel	2::temp 7816,12150 7383,12095 6828,12031
+         'data' => 'userdel	2::temp 6799,12083 6754,12108 6725,12113 6690,12104 6653,12067
+userdel	2::temp 6178,12387 6653,12067 6642,12010 5901,11902
+userdel	2::temp 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 7383,12095 7816,12150 8063,12182 8089,12186 8214,12205 8515,12242
+userdel	2::temp 6744,11936 6778,11742
+userdel	2::temp 6828,12031 6799,12083 7039,12314
+userdel auto	3 8048,12135 8063,12182 8119,12414
+userdel auto	3 8119,12414 8063,12182 8048,12135
+userdel auto	3 7460,12054 7383,12095 7039,12314
+userdel auto	3 7039,12314 7383,12095 7460,12054
 ',
          'type' => 'gesperrt'
        },
@@ -1264,6 +1255,15 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'data' => 'userdel	q4::inwork 30815,13170 30795,13191 30179,13667
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1217628000,
+         'text' => 'L 283 Parstein - B 2, Schmargendorf Bahnübergang Herzsprung Gleisbauarbeiten Vollsperrung 26.07.2008-01.08.2008 ',
+         'from' => 1216936800,
+         'id' => 1429,
+         'data' => 'userdel	2::inwork 49004,64047 48516,64085 48151,64245
+',
+         'type' => 'gesperrt'
        }
      
 );

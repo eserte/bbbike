@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.58 2008/01/17 22:40:01 eserte Exp eserte $
+# $Id: StrassenNetz.pm,v 1.59 2008/07/24 21:55:21 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -29,7 +29,7 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =cut
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.58 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.59 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz;
 use strict;
@@ -1631,31 +1631,35 @@ sub route_info {
 # XXX flaky.
 # XXX support for ":" in categories missing (except for PI)
 # $args{AsObj} = 1: return a full Strasse object instead of the name
+# $args{AsIndex} = 1: return the index of the Strasse object
 sub get_point_comment {
     my($self, $routeref, $routeinx, $seen, %args) = @_;
     my $as_obj = $args{AsObj};
+    my $as_index = $args{AsIndex};
     return if $routeinx == $#$routeref;
     my $xy1 = join ",", @{ $routeref->[$routeinx] };
     my $xy2 = join ",", @{ $routeref->[$routeinx+1] };
     my @pos;
     my $pos;
+    my $strassen = $self->{Strassen};
+    my $net2name = $self->{Net2Name};
  FIND_POS: {
 	my $h1;
-	$h1 = $self->{Net2Name}{$xy1};
+	$h1 = $net2name->{$xy1};
 	if ($h1) {
 	    $pos = $h1->{$xy2};
 	    push @pos, $pos if defined $pos;
 	    $pos = $h1->{"*"};
 	    push @pos, $pos if defined $pos;
 	}
-	$h1 = $self->{Net2Name}{$xy2};
+	$h1 = $net2name->{$xy2};
 	if ($h1) {
 	    $pos = $h1->{$xy1};
 	    push @pos, $pos if defined $pos;
 	    $pos = $h1->{"*"};
 	    push @pos, $pos if defined $pos;
 	}
-        $h1 = $self->{Net2Name}{"*"};
+        $h1 = $net2name->{"*"};
 	if ($h1) {
 	    $pos = $h1->{$xy1};
 	    push @pos, $pos if defined $pos;
@@ -1678,10 +1682,11 @@ sub get_point_comment {
     @pos = keys %pos;
 
     my @res;
+    my @res_inx;
  POS:
     for my $pos1 (@pos) {
 	next if $seen && $seen->{$pos1};
-	my $r = $self->{Strassen}->get($pos1);
+	my $r = $strassen->get($pos1);
 	if ($r->[Strassen::CAT()] =~ /^(P1|CP;)$/) {
 	    if ($routeinx > 0) {
 		my $xy0 = join ",", @{ $routeref->[$routeinx-1] };
@@ -1689,6 +1694,7 @@ sub get_point_comment {
 		    ($r->[Strassen::COORDS()][1] eq $xy1 || $r->[Strassen::COORDS()][1] eq '*') &&
 		    ($r->[Strassen::COORDS()][2] eq $xy2 || $r->[Strassen::COORDS()][2] eq '*')) {
 		    push @res, $r;
+		    push @res_inx, $pos1;
 		    next POS;
 		}
 	    }
@@ -1702,6 +1708,7 @@ sub get_point_comment {
 		     ($r->[Strassen::COORDS()][1] eq $xy1 || $r->[Strassen::COORDS()][1] eq '*') &&
 		     ($r->[Strassen::COORDS()][2] eq $xy0 || $r->[Strassen::COORDS()][0] eq '*'))) {
 		    push @res, $r;
+		    push @res_inx, $pos1;
 		    next POS;
 		}
 	    }
@@ -1709,6 +1716,7 @@ sub get_point_comment {
 	    if ($r->[Strassen::COORDS()][0] eq $xy1 &&
 		$r->[Strassen::COORDS()][1] eq $xy2) {
 		push @res, $r;
+		push @res_inx, $pos1;
 		next POS;
 	    }
 	} elsif ($r->[Strassen::CAT()] =~ /^CP2$/) {
@@ -1717,6 +1725,7 @@ sub get_point_comment {
 		($r->[Strassen::COORDS()][0] eq $xy2 &&
 		 $r->[Strassen::COORDS()][1] eq $xy1)) {
 		push @res, $r;
+		push @res_inx, $pos1;
 		next POS;
 	    }
 	} elsif ($r->[Strassen::CAT()] =~ /^(S1|CS;)$/) {
@@ -1725,6 +1734,7 @@ sub get_point_comment {
 		    $r->[Strassen::COORDS()][$i+1] eq $xy2) {
 		    $seen->{$pos1}++ if $seen;
 		    push @res, $r;
+		    push @res_inx, $pos1;
 		    next POS;
 		}
 	    }
@@ -1736,6 +1746,7 @@ sub get_point_comment {
 		     $r->[Strassen::COORDS()][$i] eq $xy2)) {
 		    $seen->{$pos1}++ if $seen;
 		    push @res, $r;
+		    push @res_inx, $pos1;
 		    next POS;
 		}
 	    }
@@ -1748,6 +1759,7 @@ sub get_point_comment {
 		}
 		$seen->{$pos1}++ if $seen;
 		push @res, $r;
+		push @res_inx, $pos1;
 		next POS;
 	    }
 	} elsif ($r->[Strassen::CAT()] =~ /^P0;?$/) {
@@ -1776,23 +1788,20 @@ sub get_point_comment {
 		if ($yes) {
 		    $seen->{$pos1}++ if $seen;
 		    push @res, $r;
+		    push @res_inx, $pos1;
 		    next POS;
 		}
 	    }
 	}
     }
 
-    if (!$as_obj) {
-	@res = map { $_->[Strassen::NAME()] } @res;
-    }
-
-    @res;
-#XXX haeh?
-#     if (UNIVERSAL::isa($pos, "ARRAY")) {
-# 	@res;
-#     } else {
-# 	$res[0];
-#     }
+    if ($as_index) {
+	@res_inx;
+    } elsif ($as_obj) {
+	@res;
+    } else {
+	map { $_->[Strassen::NAME()] } @res;
+    } 
 }
 
 # Löscht den Punkt aus dem Straßennetz-Graphen

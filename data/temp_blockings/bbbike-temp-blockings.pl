@@ -29,10 +29,10 @@ require Time::Local;
        data  => <<EOF,
 userdel	2 9522,10017 9811,10055
 userdel	2 9522,10017 9444,10000
-userdel	2 9592,10174 9812,10211
+userdel	2 9592,10174 9687,10180 9812,10211
 userdel	2 9401,10199 9592,10174
 userdel	2 9579,10122 9536,10064
-userdel	2 9579,10122 9689,10124
+userdel	2 9579,10122 9643,10140 9689,10124
 userdel	2 9827,10120 9811,10055
 userdel	2 9827,10120 9849,10202
 userdel auto	3 9593,10238 9592,10174 9579,10122
@@ -4565,9 +4565,9 @@ EOF
        source_id => 'IM_002848',
        data  => <<EOF,
 userdel	2 9522,10017 9444,10000
-userdel	2 9811,10055 9522,10017 9536,10064 9579,10122 9592,10174 9812,10211 9851,10219
+userdel	2 9811,10055 9522,10017 9536,10064 9579,10122 9592,10174 9687,10180 9812,10211 9851,10219
 userdel	2 9401,10199 9592,10174
-userdel	2 9579,10122 9689,10124
+userdel	2 9579,10122 9643,10140 9689,10124
 userdel	2 9811,10055 9827,10120 9849,10202 9851,10219
 EOF
      },
@@ -6887,7 +6887,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004447',
        data  => <<EOF,
-userdel	1::inwork 10572,10773 10673,10975
+userdel	1::inwork 10585,10766 10682,10971
 EOF
      },
      { from  => 1168462111, # 2007-01-10 21:48
@@ -9463,7 +9463,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_006274',
        data  => <<EOF,
-userdel	q4::inwork; 10340,10301 10605,10312
+userdel	q4::inwork; 10363,10303 10605,10312
 EOF
      },
      { from  => 1188059338, # 
@@ -11437,9 +11437,9 @@ EOF
        source_id => 'IM_008714',
        data  => <<EOF,
 userdel	2::temp 9522,10017 9444,10000
-userdel	2::temp 9849,10202 9827,10120 9811,10055 9522,10017 9536,10064 9579,10122 9592,10174 9812,10211 9851,10219
+userdel	2::temp 9849,10202 9827,10120 9811,10055 9522,10017 9536,10064 9579,10122 9592,10174 9687,10180 9812,10211 9851,10219
 userdel	2::temp 9401,10199 9592,10174
-userdel	2::temp 9579,10122 9689,10124 9811,10055
+userdel	2::temp 9579,10122 9643,10140 9689,10124 9811,10055
 EOF
      },
      { from  => undef, # 
@@ -11574,7 +11574,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008984',
        data  => <<EOF,
-userdel	1::inwork 10572,10773 10768,10686
+userdel	1::inwork 10585,10766 10768,10686
 EOF
      },
      { from  => 1214588431, # undef
@@ -11931,7 +11931,7 @@ userdel	2::inwork 15403,40364 14713,40426
 EOF
      },
      { from  => 1216674352, # 2008-07-21 23:05
-       until => 1217541599, # 2008-07-31 23:59
+       until => 1216839957, # 2008-07-31 23:59 1217541599
        text  => 'Freiheit (Spandau) stadtauswärts zwischen Klärwerkstr. und Am Schlangengraben Baustelle, Fahrtrichtung gesperrt (bis Ende 07.2008)',
        type  => 'gesperrt',
        source_id => 'IM_009378',
@@ -12082,13 +12082,21 @@ EOF
 userdel	q4::inwork; 11772,13624 11723,13630
 EOF
      },
-     { from  => 1216756080, # 2008-07-22 21:48
-       until => 1219636800, # 2008-08-25 06:00
-       text  => 'Straße des 17. Juni (Tiergarten) in Richtung Charlottenburg zwischen Y.-Rabin-Str. und Großer Stern Veranstaltung, Fahrtrichtung gesperrt (bis 25.08.2008 6 Uhr)',
+     { from  => undef, # 
+       until => 1216958400, # 2008-07-25 06:00
+       text  => 'Straße des 17. Juni (Tiergarten) und Großer Stern Veranstaltung, gesperrt (bis 25.07.2008 6 Uhr)',
        type  => 'gesperrt',
        source_id => 'IM_009465',
        data  => <<EOF,
-userdel	2::temp 7816,12150 7383,12095 6828,12031
+userdel	2::temp 6799,12083 6754,12108 6725,12113 6690,12104 6653,12067
+userdel	2::temp 6178,12387 6653,12067 6642,12010 5901,11902
+userdel	2::temp 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 7383,12095 7816,12150 8063,12182 8089,12186 8214,12205 8515,12242
+userdel	2::temp 6744,11936 6778,11742
+userdel	2::temp 6828,12031 6799,12083 7039,12314
+userdel auto	3 8048,12135 8063,12182 8119,12414
+userdel auto	3 8119,12414 8063,12182 8048,12135
+userdel auto	3 7460,12054 7383,12095 7039,12314
+userdel auto	3 7039,12314 7383,12095 7460,12054
 EOF
      },
      { from  => 1216159200, # 2008-07-16 00:00
@@ -12105,6 +12113,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 30815,13170 30795,13191 30179,13667
+EOF
+     },
+     { from  => 1216936800, # 2008-07-25 00:00
+       until => 1217628000, # 2008-08-02 00:00
+       text  => 'L 283 Parstein - B 2, Schmargendorf Bahnübergang Herzsprung Gleisbauarbeiten Vollsperrung 26.07.2008-01.08.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 49004,64047 48516,64085 48151,64245
 EOF
      },
     );

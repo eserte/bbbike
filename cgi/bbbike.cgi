@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.15 2008/06/27 19:54:25 eserte Exp $
+# $Id: bbbike.cgi,v 9.17 2008/07/24 21:56:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -112,6 +112,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $newstreetform_encoding
 	    $use_region_image
 	    $include_outer_region @outer_berlin_places $outer_berlin_qr
+	    $warn_message
 	   );
 # XXX This may be removed one day
 use vars qw($use_cooked_street_data);
@@ -681,6 +682,7 @@ undef $msg;
 undef $bbbike_root;
 undef $bbbike_html;
 undef $bbbike_images;
+undef $warn_message;
 
 $config_master = $0;
 $lang = "";
@@ -723,7 +725,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 9.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 9.17 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -830,6 +832,8 @@ eval{BBBikeCGIUtil::encode_possible_utf8_params($q);};warn $@ if $@;
 
 undef $g_str; # XXX because it may already contain landstrassen etc.
 undef $net; # dito
+undef $kr;
+undef $comments_net; # XXX because it may or may not contain qualitaet_l
 
 #$str = new Strassen "strassen" unless defined $str;
 #$str = new Strassen::Lazy "strassen" unless defined $str;
@@ -1023,6 +1027,8 @@ if (defined $q->param('detailmapx') and
 			       $q->param('detailmap.y'));
     if (defined $c) {
 	$q->param($q->param('type') . 'c', $c);
+    } else {
+	$warn_message = M("Für diese Koordinaten konnte keine Kreuzung gefunden werden.");
     }
     $q->delete('detailmapx');
     $q->delete('detailmapy');
@@ -1724,7 +1730,8 @@ sub choose_form {
 			      $start2 eq '' && $ziel2 eq '' &&
 			      $startname eq '' && $zielname eq '' &&
 			      $startc eq '' && $zielc eq '' &&
-			      !$smallform);
+			      !$smallform &&
+			      !$warn_message);
     }
     header(@extra_headers, -from => $show_introduction ? "chooseform-start" : "chooseform");
 
@@ -1797,6 +1804,10 @@ EOF
 
 	print "</td></tr><tr>" if ($bi->{'can_table'});
 
+    }
+
+    if ($warn_message) {
+	print "<div class='error'>".CGI::escapeHTML($warn_message)."</div>\n";
     }
 
     print "<td>" if ($bi->{'can_table'});
@@ -3608,8 +3619,15 @@ sub display_route {
 		for my $s (@comment_files) {
 		    eval {
 			if ($s eq 'comments') {
-			    push @s, MultiStrassen->new
-				(map { "comments_$_" } grep { $_ ne "kfzverkehr" } @Strassen::Dataset::comments_types);
+			    my @ms;
+			    for my $comment_file (map { "comments_$_" } grep { $_ ne "kfzverkehr" } @Strassen::Dataset::comments_types) {
+				if ($comment_file eq 'comments_route') {
+				    push @ms, Strassen->new($comment_file, UseLocalDirectives => 1);
+				} else {
+				    push @ms, Strassen->new($comment_file);
+				}
+			    }
+			    push @s, MultiStrassen->new(@ms);
 			} elsif ($s =~ /^(qualitaet|handicap)/) {
 			    my $old_s = Strassen->new($s);
 			    my $new_s = $old_s->grepstreets
@@ -3666,6 +3684,7 @@ sub display_route {
 	for(my $i = 0; $i <= $#strnames; $i++) {
 	    my $strname;
 	    my $etappe_comment = '';
+	    my $etappe_comment_html = '';
 	    my $fragezeichen_comment = '';
 	    my $entf_s = '';
 	    my $raw_direction;
@@ -3710,12 +3729,17 @@ sub display_route {
 		my %comments_at_beginning;
 		my $is_first = 1;
 		for my $i ($strnames[$i]->[4][0] .. $strnames[$i]->[4][1]) {
-		    my @etappe_comment_objs = $comments_net->get_point_comment(\@path, $i, undef, AsObj => 1);
+		    my @etappe_comment_inxs = $comments_net->get_point_comment(\@path, $i, undef, AsIndex => 1);
+
 		    my %etappe_comments;
-		    if (@etappe_comment_objs) {
-			for (@etappe_comment_objs) {
-			    (my $name = $_->[Strassen::NAME()]) =~ s/^.+?:\s+//; # strip street;
-			    $_ = [$name, $_];
+		    if (@etappe_comment_inxs) {
+			my @etappe_comment_objs;
+			for my $inx (@etappe_comment_inxs) {
+			    my $etappe_comment_obj = $comments_net->{Strassen}->get($inx);
+			    (my $name = $etappe_comment_obj->[Strassen::NAME()]) =~ s/^.+?:\s+//; # strip street;
+			    my $dir = $comments_net->{Strassen}->get_directive($inx);
+			    #                           Name   Object               URL (only first one)
+			    push @etappe_comment_objs, [$name, $etappe_comment_obj, $dir->{url} ? $dir->{url}[0] : undef];
 			}
 			%etappe_comments = map {($_->[0],1)} @etappe_comment_objs;
 			foreach my $etappe_comment_obj (@etappe_comment_objs) {
@@ -3755,6 +3779,13 @@ sub display_route {
 		}
 
 		my @comments = map { $_->[0] } @comment_objs;
+		my @comments_html = map {
+		    if ($_->[2]) {
+			'<a href="' . $_->[2] . '">' . $_->[0] . '</a>';
+		    } else {
+			$_->[0];
+		    }
+		} @comment_objs;
 
 		for my $i ($strnames[$i]->[4][0] .. $strnames[$i]->[4][1]) {
 		    my $point = join ",", @{ $path[$i] };
@@ -3763,11 +3794,13 @@ sub display_route {
 			# XXX not yet: problems with ... Sekunden Zeitverlust
 			#if (!exists $seen_comments_in_this_etappe{$etappe_comment}) {
 			push @comments, $etappe_comment;
+			# XXX missing: push @comments_html, $etappe_comment_html;
 			#} else {
 			#} # XXX better solution for multiple point comments: use (2x), (3x) ...
 		    }
 		}
 		$etappe_comment = join("; ", @comments) if @comments;
+		$etappe_comment_html = join("; ", @comments_html) if @comments_html;
 	    }
 
 	    if ($has_fragezeichen_routelist) {
@@ -3798,7 +3831,9 @@ sub display_route {
 		 Angle => $winkel,
 		 Strname => $strname,
 		 ($with_comments && $comments_net ?
-		  (Comment => $etappe_comment) : ()
+		  (Comment => $etappe_comment,
+		   CommentHtml => $etappe_comment_html,
+		  ) : ()
 		 ),
 		 ($has_fragezeichen_routelist ?
 		  (FragezeichenComment => $fragezeichen_comment) : () # XXX key label may change!
@@ -3819,6 +3854,7 @@ sub display_route {
 			  DirectionString => M("angekommen") . "!",
 			  Strname => $zielname,
 			  Comment => '',
+			  CommentHtml => '',
 			  Coord => join(",", @{$r->path->[-1]}),
 			  PathIndex => $#{$r->path},
 			 };
@@ -3970,7 +4006,7 @@ sub display_route {
  ROUTE_HEADER:
     if (!@out_route) {
 	print M("Keine Route gefunden").".\n";
-	warn "Fehler: keine Route zwischen <$startname>" . ($vianame ? ", <$vianame>" : "") . " und <$zielname> gefunden, sollte niemals passieren!";
+	warn "Fehler: keine Route zwischen <$startname>" . ($vianame ? ", <$vianame>" : "") . " und <$zielname> gefunden, sollte niemals passieren" . (@affecting_blockings ? " (Ausnahme: bei dieser Suche waren temporäre Sperrungen aktiv)" : "");
     } else {
 	if (@affecting_blockings) {
 	    my $hidden = "";
@@ -4175,8 +4211,8 @@ EOF
 	for my $etappe (@out_route) {
 	    $etappe_i++;
 	    my($entf, $richtung, $strname, $ges_entf_s,
-	       $etappe_comment, $fragezeichen_comment, $path_index) =
-		   @{$etappe}{qw(DistString DirectionString Strname TotalDistString Comment FragezeichenComment PathIndex)};
+	       $etappe_comment_html, $fragezeichen_comment, $path_index) =
+		   @{$etappe}{qw(DistString DirectionString Strname TotalDistString CommentHtml FragezeichenComment PathIndex)};
 	    my $last_path_index;
 	    if ($etappe_i < $#out_route) {
 		$last_path_index = $out_route[$etappe_i+1]->{PathIndex} - 1;
@@ -4265,7 +4301,7 @@ EOF
 			    print "<td></td><td></td><td></td>";
 			}
 		    }
-		    print "<td>$fontstr$etappe_comment$fontend</td>";
+		    print "<td>$fontstr$etappe_comment_html$fontend</td>";
 		}
 		if ($has_fragezeichen_routelist && !$printmode) {
 		    if (defined $fragezeichen_comment && $fragezeichen_comment ne "") {
@@ -5279,6 +5315,9 @@ sub detailmap_to_coord {
       ($index_x*$xgridwidth*$xm+$x0 + ($map_x*$xm*$xgridwidth)/$detailwidth,
        $y0-$index_y*$ygridwidth*$ym - ($map_y*$ym*$ygridwidth)/$detailheight,
       );
+    if (outside_berlin("$x,$y")) { # XXX should this be done generally in get_nearest_crossing_coords?
+	upgrade_scope("region");
+    }
     new_kreuzungen(); # XXX needed for munich, here too?
     get_nearest_crossing_coords($x,$y);
 }
@@ -6356,7 +6395,7 @@ sub get_nearest_crossing_coords {
 			my $before_xy = $street_coords[$start_index-$delta];
 			my $after_xy  = $street_coords[$start_index+$delta];
 			if (!$before_xy && !$after_xy) {
-			    warn "Cannot find any real crossing in <@street_coords>";
+			    warn "Harmless? Cannot find any real crossing in <@street_coords>, scope is <@{[ $q->param('scope') ]}>";
 			    last;
 			}
 			if ($before_xy && $kr->crossing_exists($before_xy)) {
@@ -6611,6 +6650,23 @@ sub outside_berlin_and_potsdam {
 	my $p = [split /,/, $c];
 	$result = 1 if (!VectorUtil::point_in_polygon($p,$berlin_border) &&
 			!VectorUtil::point_in_polygon($p,$potsdam_border));
+
+    };
+    warn $@ if $@;
+    $result;
+}
+
+sub outside_berlin {
+    my($c) = @_;
+    my $result = 0;
+    eval {
+	require VectorUtil;
+	my $berlin = Strassen->new("berlin");
+	$berlin->count == 1 or die "Record count of berlin is not 1";
+	$berlin->init;
+	my $berlin_border = [ map { [split /,/] } @{ $berlin->next->[Strassen::COORDS()] } ];
+	my $p = [split /,/, $c];
+	$result = 1 if (!VectorUtil::point_in_polygon($p,$berlin_border));
 
     };
     warn $@ if $@;
@@ -6928,7 +6984,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/06/27 19:54:25 $';
+    my $cgi_date = '$Date: 2008/07/24 21:56:31 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

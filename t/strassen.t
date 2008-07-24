@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen.t,v 1.18 2008/04/21 21:28:57 eserte Exp $
+# $Id: strassen.t,v 1.19 2008/07/24 22:10:28 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -45,8 +45,9 @@ my $doit_tests = 6;
 my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 3;
 my $encoding_tests = 10;
+my $multistrassen_tests = 11;
 
-plan tests => $basic_tests + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $encoding_tests;
+plan tests => $basic_tests + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $encoding_tests + $multistrassen_tests;
 
 goto XXX if $do_xxx;
 
@@ -337,5 +338,57 @@ EOF
     is_deeply($ms2->data, $ms->data, "Data does not differ when loading from file (MultiStrassen)");
 }
 
+{
+    # directive-less
+    my @data;
+    $data[0] = <<EOF;
+Z	Z 0,0
+Y	Y 0,0
+EOF
+    # with directives
+    $data[1] = <<EOF;
+A	A 0,0
+#: local: 1
+B	B 0,0
+EOF
+    # also with
+    $data[2] = <<EOF;
+C	C 0,0
+#: local: 2
+D	D 0,0
+EOF
+    my @s;
+    for my $i (0..2) {
+	push @s, Strassen->new_from_data_string($data[$i], UseLocalDirectives => 1);
+    }
+
+    {
+	my $ms = MultiStrassen->new($s[0], $s[1]);
+	is_deeply($ms->get_directives(0), {}, "No directives in first dataset");
+	is_deeply($ms->get_directives(3), { local => [1] }, "Found directive in second dataset");
+    }
+
+    {
+	my $ms = MultiStrassen->new($s[1], $s[2]);
+	is_deeply($ms->get_directives(0), {});
+	is_deeply($ms->get_directives(1), { local => [1] });
+	is_deeply($ms->get_directives(2), {});
+	is_deeply($ms->get_directives(3), { local => [2] });
+    }
+
+    {
+	my $ms = MultiStrassen->new($s[1], $s[0]);
+	is_deeply($ms->get_directives(1), { local => [1] });
+	is_deeply($ms->get_directives(3), {});
+    }
+
+    {
+	my $ms = MultiStrassen->new($s[1], $s[0], $s[2]);
+	is_deeply($ms->get_directives(1), { local => [1] });
+	is_deeply($ms->get_directives(3), {});
+	is_deeply($ms->get_directives(5), { local => [2] });
+    }
+
+}
     
 __END__

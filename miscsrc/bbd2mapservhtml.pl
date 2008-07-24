@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2mapservhtml.pl,v 1.23 2007/09/22 08:22:04 eserte Exp $
+# $Id: bbd2mapservhtml.pl,v 1.24 2008/07/24 21:54:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -172,6 +172,8 @@ if ($do_linklist) {
 	    }
 	}
 
+	my $link = $s->get_directive->{url}->[0] || undef;
+
 	my $next_r = $s->peek;
 	unless ($next_r && @{$next_r->[Strassen::COORDS]} &&
 		$r->[Strassen::NAME] eq $next_r->[Strassen::NAME]) {
@@ -180,6 +182,7 @@ if ($do_linklist) {
 	    push @html, generate_single_html(coords => \@coords,
 					     (defined $center ? (center => find_nearest_to_center(\@current_lines, $center)) : ()),
 					     label => $current_display_name,
+					     link => $link,
 					     submitlabel => " >> ",
 					    );
 	    @current_lines = ();
@@ -262,6 +265,7 @@ sub generate_single_html {
     my $center = delete $args{center};
     my $label = delete $args{label};
     my $submitlabel = delete $args{submitlabel};
+    my $link = delete $args{link};
 
     die "usage? " . join(" ", %args) if keys %args;
 
@@ -293,7 +297,7 @@ EOF
     }
 
     if (defined $label) {
-	$html .= "\n" . CGI::escapeHTML($label);
+	$html .= "\n" . ($link ? CGI::a({href => $link}, $label) : CGI::escapeHTML($label));
     } 
     $html .= <<EOF;
  <input id="submitbutton" type="submit" value="@{[ CGI::escapeHTML($submitlabel) ]}" />

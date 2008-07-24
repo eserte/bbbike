@@ -637,7 +637,11 @@ Fontanestr. -> An der Wuhlheide: Brückenauffahrt	3::igndisp 18240,6845 18225,700
 An der Wuhlheide -> Fontanestr.: Brückenauffahrt	3::igndisp 18492,6893 18225,7004 18240,6845
 Mittelstreifen	3nocross::ignrte 6311,16457 6208,16546 6103,16635
 Sansibarstr. -> Müllerstr.: Mittelstreifen	3::igndisp 6106,16433 6208,16546 6103,16635
+Sansibarstr. -> Ofener Str.: Mittelstreifen	3::igndisp 6106,16433 6208,16546 6256,16601
 Müllerstr. -> Sansibarstr.: Mittelstreifen	3::igndisp 6311,16457 6208,16546 6106,16433
+Müllerstr. -> Ofener Str.: Mittelstreifen	3::igndisp 6103,16635 6208,16546 6256,16601
+Ofener Str. -> Sansibarstr.: Mittelstreifen	3::igndisp 6256,16601 6208,16546 6106,16433
+Ofener Str. -> Müllerstr.: Mittelstreifen	3::igndisp 6256,16601 6208,16546 6311,16457
 B110 nach Swinoujscie: kein Grenzübergang für Autos	2 62279,166179 62213,166173
 Mittelstreifen	3nocross::ignrte 16643,1460 16698,1392 16815,1278
 Mittelstreifen	3nocross::ignrte 13151,14855 13110,14879 12812,15053
@@ -666,3 +670,21 @@ Grunewaldstr. -> Stübbenstr.: Mittelstreifen	3::igndisp 5902,9083 5995,9098 5993
 Stavenhagener Str.	1 13534,5111 13634,5126
 Küsterstr.	1 -624,15494 -593,15300 -569,15167
 Berliner Allee -> Rossinistr.	3 13432,15843 13401,15821 13456,15760
+Straßenbahntrasse	3nocross::ignrte 12010,16774 12017,16734 12046,16568
+Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3::igndisp 12211,16688 12017,16734 12046,16568
+Prenzlauer Promenade -> Brauhausstr.: Straßenbahntrasse	3::igndisp 12010,16774 12017,16734 12211,16688
+Mittelstreifen	3nocross::ignrte 12114,12546 12134,12540 12360,12505
+Zugang Krautstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12118,12462 12134,12540 12114,12546
+Karl-Marx-Allee -> Zugang Krautstr.: Mittelstreifen	3::igndisp 12360,12505 12134,12540 12118,12462
+Mittelstreifen	3nocross::ignrte 10240,11740 10213,11728 9982,11680
+Niederwallstr. -> Beuthstr.: Mittelstreifen	3::igndisp 10196,11788 10213,11728 10239,11604
+Niederwallstr. -> Spittelmarkt: Mittelstreifen	3::igndisp 10196,11788 10213,11728 10135,11661
+Niederwallstr. -> Gertraudenstr.: Mittelstreifen	3::igndisp 10196,11788 10213,11728 10240,11740
+Beuthstr. -> Niederwallstr.: Mittelstreifen	3::igndisp 10239,11604 10213,11728 10196,11788
+Beuthstr. -> Spittelmarkt: Mittelstreifen	3::igndisp 10239,11604 10213,11728 10135,11661
+Beuthstr. -> Leipziger Str.: Mittelstreifen	3::igndisp 10239,11604 10213,11728 9982,11680
+Spittelmarkt -> Niederwallstr.: Mittelstreifen	3::igndisp 10135,11661 10213,11728 10196,11788
+Spittelmarkt -> Leipziger Str.: Mittelstreifen	3::igndisp 10135,11661 10213,11728 9982,11680
+Leipziger Str. -> Niederwallstr.: Mittelstreifen	3::igndisp 9982,11680 10213,11728 10196,11788
+Gertraudenstr. -> Beuthstr.: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10239,11604
+Gertraudenstr. -> Spittelmarkt: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10135,11661

@@ -14,7 +14,7 @@ Frankfurter Allee: Radstreifen ist noch provisorisch	?; 15349,12073 15117,12106
 # Hier scheint nichts mehr zu passieren: #: last_checked: 2008-04-08 Wilhelmstr. (Kreuzberg)	? 9376,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
 #: last_checked: 2006-10-25
 Alt-Moabit zwischen Kirch- und Paulstraße	? 7195,13046 7000,13067 6882,13088 6757,13112 6661,13130
-#: last_checked: 2008-06-22
+#: last_checked: 2008-07-24
 #: note: nach den Bauarbeiten wird es Radspuren in der Breiten Str. geben:
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0709/nachricht2788.html
 Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 10109,12238 10084,12228 9972,12184
@@ -77,8 +77,9 @@ B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstre
 Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420 20624,18485 20915,18601 21143,18704 21278,18786 21332,18819
 #: by: http://www.reinickendorf.de/index_8368_de.html
 Wittenauer Str.: Ausbau zum verkehrsberuhigten Bereiche, außerdem Ersetzen des Pflasters durch eine Betonpflasterfahrbahn (Verbundsteinpflaster?), bis 2009-03-01 (Frühjahr 2009)	? 6690,22968 6639,23063 6727,23287 6770,23417
-#: last_checked: 2008-06-22
-Verlängerung der Niederwallstr. zum Spittelmarkt	?::inwork 10124,11806 10196,11788 10252,11752
+#: last_checked: 2008-07-22
+#: XXX: die Straße ist bereits asphaltiert, aber noch abgesperrt
+Verlängerung der Niederwallstr. zum Spittelmarkt	?::inwork 10124,11806 10196,11788 10240,11740
 Ampel in Bau	?::inwork 15243,11881
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0710/nachricht2827.html vvv
 Fußgängerampel in Planung, bis 2008-12-31	?::inwork 9220,11781
@@ -223,6 +224,7 @@ Potsdamer Str. oder Hauptstr.: anscheinend gehören die Häuser auf der westlichen
 Runebergweg/Sibeliusweg: Runebergweg hat starkes Gefälle und Sibeliusweg hat leichtes Gefälle, aber laut hm96.dat sieht es andersrum aus --- da muss ich mit Höhenmesser langfahren	? -6904,5175 -6747,5169 -6787,5076
 #: XXX_prog: Drängelgitter auch auf dem Mittelstreifen Sonnenallee. Kann zurzeit nicht dargestellt werden.
 Drängelgitter	? 15496,6314 15504,6328 15516,6357
+Boxhagener Str./Marktstr.: wo ist die Grenze zwischen beiden Straßen: unter der Bahnbrücke oder an der Kreuzung Kynaststr.?	? 14988,11130 14912,11252
 ######################################################################
 #
 #  AUFNAHME IN DB FRAGLICH
@@ -1356,7 +1358,6 @@ Vielitz - B167: Qualität?	? -16206,57373 -16069,57172 -15773,56724 -15697,55703 
 Salzmannstr. - Betriebsbhf. Rummelsburg: existiert eine für Radfahrer befahrbare Verbindung? Qualität?	? 16847,10092 16839,10064 16828,10027 16841,9995 16811,9937
 Kraatzgraben/Kleingärten: besteht hier ein befahrbarer Weg für Radfahrer? Qualität?	? 16839,10064 16666,10219 16464,10467 16297,10636 16246,10641 16187,10587
 Dubrowplatz: Qualität (wahrscheinlich schlechtes Kopfsteinpflaster)? Hat der Dubrowplatz auch eine nördliche Fahrbahn?	? -1945,2975 -1814,3021
-Ilsensteinweg: Qualität?	? -1885,3319 -1899,3298 -1819,3042 -1814,3021 -1724,2743 -1622,2426
 McNair-Promenade: Wie ist die Qualität, die ADFC-Karte meint "schlecht geeignet"?	? 2163,1499 2077,1460 1975,1413 1882,1376 1785,1338
 Hobrechtsfelde - Gorinsee: Qualität (wahrscheinlich fester Sandweg)?	? 16301,29192 15621,29290
 #: note: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0704/nachricht2630.html - Einbahnstraße offen Richtung Süden. Die Regelung bleibt offenbar nicht permanent? Abschluss bis 2007-08-31
@@ -2129,16 +2130,15 @@ Laehrstr. - Heinrich-Laehr-Park: existiert eine Durchfahrt zum Heinrich-Laehr-Pa
 Hoffbauerpfad: Qualität zwischen Sachtlebenstr. und Hans-Böhm-Zeile?	? 214,969 333,1104
 Hoffbauerpfad: Qualität zwischen Klistostr. und Urbanstr.? Für Autos geöffnet?	? 464,1246 550,1358
 (Am Zingergraben): Qualität nördlich der Straße 134 (evtl. auch ein Schotterweg)?	? 9239,20955 9230,20907 9218,20844 9192,20719
-Ofener Str.: Qualität?	? 6208,16546 6256,16601 6386,16749
 Ruthstr.: Qualität der Ruthstr. zwischen Elisabethstr. und Charlottenstr.?	? 6129,3203 6224,3112
 Genfer Str.: Ist die Genfer Str. eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 7031,18085 6939,18160 6821,18216 6683,18243
 Genfer Str. - Deutsche Str.: Existiert eine Verbindung für Radfahrer zwischen Genfer und Deutscher Str.?	? 7075,18033 7089,17990 7148,17999
 Deutsche Str.: Qualität?	? 7148,17999 7227,18010 7418,18051
 #: XXX: auch eintragen: NN zur Rudower Chaussee hin, genauere Abbiegebeschreibung bzw. Sperrung über die Rudower Chaussee (Auto/Radfahrer)
 Walther-Nernst-Str.: Qualität?	? 19602,2956 19498,3054 19475,3074
-Sachtlebenstr. - Grenzweg: Qualität?	? 254,792 207,788 197,775 51,752
-Mewesstr.: Qualität der Straße zwischen Röbellweg und Röntgentaler Weg?	?  17186,26779 17108,26852 16985,26966
-Gartenstr. (Blankenburg): Qualität der Straße zwischen Jungbornstr. und Priesterstege?	? 13875,21077 13744,21067 13624,21057 13524,21053
+Mewesstr.: Qualität der Straße zwischen Röbellweg und Röntgentaler Weg?	? 17186,26779 17108,26852 16985,26966
 Priesterstege: Qualität?	? 13524,21053 13562,20913
 Alt-Blankenburg: Qualität der Nebenstraße Richtung Schäferstege?	? 13562,20913 13487,20887 13491,20869 13493,20847 13576,20849
 Alt-Blankenburg: Qualität der Nebenstraße Richtung Schäferstege?	? 13491,20869 13412,20856 13373,20812
+#: XXX: by Teresa: neu asphalt, herrlich grün
+Weg durch die Spiel- und Parkanlage am Blankenburger Bahnhof: genaue Lage des Weges? 	? 13292,21014 13267,20925 13176,20903 12909,20592

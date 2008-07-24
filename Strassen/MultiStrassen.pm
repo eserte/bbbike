@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiStrassen.pm,v 1.17 2007/07/18 20:19:57 eserte Exp $
+# $Id: MultiStrassen.pm,v 1.18 2008/07/24 20:58:37 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::MultiStrassen;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
 
 package MultiStrassen;
 use strict;
@@ -110,12 +110,17 @@ sub reset_data {
 sub read_data {
     my $self = shift;
     $self->reset_data;
-    for (@{ $self->{SubObj} }) {
-	if (defined $_->{File}) {
-	    push @{$self->{File}}, $_->file;
+    my $last_directives_index = -1;
+    for my $subobj (@{ $self->{SubObj} }) {
+	if (defined $subobj->{File}) {
+	    push @{$self->{File}}, $subobj->file;
 	}
 	push @{$self->{FirstIndex}}, $#{$self->{Data}}+1;
-	push @{$self->{Data}}, @{$_->{Data}};
+	push @{$self->{Data}}, @{$subobj->{Data}};
+	if (exists $subobj->{Directives} && @{ $subobj->{Directives} }) {
+	    $#{$self->{Directives}} = $self->{FirstIndex}[-1]-1;
+	    push @{$self->{Directives}}, @{ $subobj->{Directives} };
+	}
     }
 }
 

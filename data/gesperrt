@@ -3,7 +3,7 @@
 #: version: $Id: gesperrt-orig,v 4.187 2008/07/12 20:07:03 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
-Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
+Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9687,10180 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
 Kanalstraßen Nordufer	1 6880,11110 7118,11209 7160,11225 7251,11202 7333,11179 7595,11086 7687,11096 7873,11142 7993,11137 8092,11092 8241,11024
@@ -296,7 +296,7 @@ Kattegatstr.	1 9331,17658 9475,17557
 Waldhüterpfad	1 510,4202 371,4453 301,4643
 Amalienpark	1 10905,18671 10950,18499 10860,18650
 Im Amseltal	1 1962,25214 1982,25108
-Gundelfinger Str.	1 18697,9153 18653,8922 18609,8717
+Gundelfinger Str.	1 18735,9421 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18778,8895
 Fehmarner Str. 	1 6710,14776 6528,15000
 Alte Späthbrücke	2 14437,5080 14535,5137
@@ -449,6 +449,7 @@ Begonienplatz	1 4173,5013 4231,4922
 Asternplatz	1 3775,4632 3710,4728 3707,4752 3716,4764 3740,4766 3754,4755 3815,4657
 Kammgasse	1 1992,24354 2213,24393 2264,24414 2302,24451 2325,24486
 Herbert-Tschäpe-Str.	1 14358,14155 14481,14095 14510,14104 14710,14185
+Strausberger Platz	1 11976,12595 12005,12619 12050,12616 12099,12580 12114,12546 12083,12518 12028,12519 11988,12546 11976,12595
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
 Humboldtring -> Hans-Marwitza-Ring: Hochstraße	3::igndisp -11399,-1339 -11461,-1424 -11358,-1491
 Hans-Marwitza-Ring -> Humboldtring: Hochstraße	3::igndisp -11358,-1491 -11461,-1424 -11540,-1543
@@ -595,6 +596,7 @@ Stephanstr.	1s 6523,4491 6366,4500
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
 Behrenstr./Bebelplatz	1s 9801,12245 9743,12239 9700,12234 9626,12227
+Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12046,16568
 Mittelstreifen	3nocross::ignrte 16713,6839 16674,6885 16568,7009
 Köpenicker Landstr. -> Güldenhofer Ufer: Mittelstreifen	3::igndisp 16713,6839 16674,6885 16630,6800
 Güldenhofer Ufer -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16630,6800 16674,6885 16568,7009
@@ -1022,13 +1024,13 @@ Christinenstr. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10593,13765
 Linksabbiegen verboten (und unbequem)	3nocross::ignrte 8188,9610 8095,9639 7941,9686
 Yorckstr. -> Katzlerstr.: Linksabbiegen verboten (und unbequem)	3::igndisp 8188,9610 8095,9639 8035,9437
 Katzlerstr. -> Yorckstr.: Linksabbiegen verboten (und unbequem)	3::igndisp 8035,9437 8095,9639 7941,9686
-Mittelstreifen	3nocross::ignrte 12047,12572 12006,12464 11929,12263
+Mittelstreifen	3nocross::ignrte 12028,12519 12006,12464 11929,12263
 Neue Blumenstr. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 12118,12462 12006,12464 11709,12601
 Neue Blumenstr. -> Lichtenberger Str.: Mittelstreifen	3::igndisp 12118,12462 12006,12464 11929,12263
 Neue Blumenstr. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 11709,12601 12006,12464 12118,12462
-Neue Blumenstr. -> Lichtenberger Str.: Mittelstreifen	3::igndisp 11709,12601 12006,12464 12047,12572
-Lichtenberger Str. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 12047,12572 12006,12464 12118,12462
+Neue Blumenstr. -> Lichtenberger Str.: Mittelstreifen	3::igndisp 11709,12601 12006,12464 12028,12519
 Lichtenberger Str. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 11929,12263 12006,12464 11709,12601
+Lichtenberger Str. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 12028,12519 12006,12464 12118,12462
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 7699,7571 7859,7486 7946,7411
 Sachsendamm -> Suadicanistr.: unbequem passierbarer Mittelstreifen	3::igndisp 7699,7571 7859,7486 7854,7572
 Suadicanistr. -> Sachsendamm: unbequem passierbarer Mittelstreifen	3::igndisp 7854,7572 7859,7486 7946,7411
