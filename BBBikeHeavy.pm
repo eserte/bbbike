@@ -1050,11 +1050,17 @@ sub BBBikeHeavy::perlmod_install_advice {
     } else {
 	my $shell = ($os eq 'win' ? M"Eingabeaufforderung" : M"Shell");
 	my $command = "";
+	my $gui_command = "";
 	if ($os eq 'win') {
 	    $command =
 		"    ppm\n" .
 		"    " . join("\n    ", map { "install $_" } @mod) . "\n" .
 		"    quit\n";
+	    require Config;
+	    # Guess recent ActivePerl
+	    if ($] >= 5.008008 && $Config::Config{cf_email} =~ m{activestate}i) {
+		$gui_command = M("Alternativ kann der GUI-Paketmanager kann im Start-Menü unter Programme > ActivePerl > Perl Package Manager verwendet werden.\n")
+	    }
 	} else {
 	    if ($^O eq 'freebsd') {
 		my @pkg;
@@ -1088,8 +1094,8 @@ sub BBBikeHeavy::perlmod_install_advice {
 		   ? "Die fehlenden Perl-Module können aus der %s mit dem Kommando\n"
 		   : "Das fehlende Perl-Modul kann aus der %s mit dem Kommando\n"), $shell) .
 	     $command .
-	     M"aus dem Internet geholt und installiert werden.\n",
-
+	     M"aus dem Internet geholt und installiert werden.\n" .
+	     ($gui_command ? "\n$gui_command" : ""),
 	     "err");
 	0;
     }

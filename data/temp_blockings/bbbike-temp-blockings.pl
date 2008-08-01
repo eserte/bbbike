@@ -3189,7 +3189,7 @@ EOF
        text  => 'Brückensperrung zwischen Seehausen und Potzlow Die Brücke ist ab dem 5.9.2005 bis zum 5.11.2005 auch für Radfahrer nicht passierbar ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 40230,90006 40938,90213
+userdel	2 40230,90006 40583,90157 40938,90213
 EOF
      },
      { from  => 1130831377, # 2005-11-01 08:49
@@ -11329,7 +11329,7 @@ EOF
        text  => 'K 7318 Blankenburg - Potzlow zw. Potzlow und Seehausen Straßenbauarbeiten Vollsperrung 05.05.2008-12.07.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 39375,90456 39870,90079 40230,90006 40938,90213 41085,90590
+userdel	2::inwork 39375,90456 39609,90247 40230,90006 40583,90157 40938,90213 41085,90590
 EOF
      },
      { from  => 1210716000, # 2008-05-14 00:00

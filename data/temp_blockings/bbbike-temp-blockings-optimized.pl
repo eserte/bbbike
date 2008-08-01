@@ -485,15 +485,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1217541600,
-         'text' => 'K 7305 Bahnunterführung bis Welsow Brückenbau u. Straßenneubau Vollsperrung 10.09.2007-31.07.2008 ',
-         'from' => 1189288800,
-         'id' => 1153,
-         'data' => 'userdel	2::inwork 48437,74675 49075,74662 49734,74527
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -790,16 +782,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_008562',
-         'until' => 1217541599,
-         'text' => 'Siemensstr. (Oberschöneweide) Richtung Edisonstr. zwischen Wilhelminenhofstr. und Edisonstr. Baustelle, Fahrbahn auf einen Fahrstreifen verengt bzw. gesperrt, eine Umleitung ist eingerichtet (bis Ende 07.2008)',
-         'from' => 1215811936,
-         'id' => 1343,
-         'data' => 'userdel	q4::inwork; 17614,6571 17766,6616 17860,6644 17962,6674
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -964,15 +947,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        undef,
-       {
-         'until' => 1216936800,
-         'text' => 'L 338 Schöneiche - Hönow OD Neuenhagen, zw. BÜ und Eisenbahnstr. Straßenbau Vollsperrung 30.06.2008-24.07.2008 ',
-         'from' => 1214690400,
-         'id' => 1385,
-         'data' => 'userdel	q4::inwork 30795,13191 30179,13667
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1229727600,
@@ -988,16 +963,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_009262',
-         'until' => 1217541599,
-         'text' => 'An der Spandauer Brücke (Mitte) Richtung Spandauer Str. zwischen Rosenthaler Str. und Spandauer Str. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Ende 07.2008)',
-         'from' => 1215030238,
-         'id' => 1393,
-         'data' => 'userdel	1::inwork 10294,13070 10336,13037 10371,13006 10342,12936 10309,12854
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1191,16 +1157,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_009449',
-         'until' => 1217282400,
-         'text' => 'Greifswalder Str. (Prenzlauer Berg) stadteinwärts zwischen Ostseestr. und Erich-Weinert-Str. Baustelle, Fahrtrichtung gesperrt (bis ca. 28.07.2008)',
-         'from' => 1216674398,
-         'id' => 1423,
-         'data' => 'userdel	1::inwork 13098,15592 12966,15478 12880,15335
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1220133600,
          'text' => 'B 115 Baruth - Jüterbog OD Baruth, Kreisverkehr Sanierungsarbeiten Vollsperrung 22.07.2008-30.08.2008 ',
@@ -1220,24 +1177,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_009465',
-         'until' => 1216958400,
-         'text' => 'Straße des 17. Juni (Tiergarten) und Großer Stern Veranstaltung, gesperrt (bis 25.07.2008 6 Uhr)',
-         'from' => undef,
-         'id' => 1426,
-         'data' => 'userdel	2::temp 6799,12083 6754,12108 6725,12113 6690,12104 6653,12067
-userdel	2::temp 6178,12387 6653,12067 6642,12010 5901,11902
-userdel	2::temp 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 7383,12095 7816,12150 8063,12182 8089,12186 8214,12205 8515,12242
-userdel	2::temp 6744,11936 6778,11742
-userdel	2::temp 6828,12031 6799,12083 7039,12314
-userdel auto	3 8048,12135 8063,12182 8119,12414
-userdel auto	3 8119,12414 8063,12182 8048,12135
-userdel auto	3 7460,12054 7383,12095 7039,12314
-userdel auto	3 7039,12314 7383,12095 7460,12054
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1229900400,
          'text' => 'L 172 Velten -Germendorf Kreuzung bei Bärenklau-Leegebruch Neubau Kreisverkehr Vollsperrung 17.07.2008-21.12.2008 ',
@@ -1247,15 +1187,7 @@ userdel auto	3 7039,12314 7383,12095 7460,12054
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1217455200,
-         'text' => 'L 338 Schöneiche - Hönow OD Neuenhagen, zw. BÜ und Jahnstr. Deckeneinbau, Restarb. Vollsperrung 24.07.2008-30.07.2008 ',
-         'from' => 1216764000,
-         'id' => 1428,
-         'data' => 'userdel	q4::inwork 30815,13170 30795,13191 30179,13667
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1217628000,
          'text' => 'L 283 Parstein - B 2, Schmargendorf Bahnübergang Herzsprung Gleisbauarbeiten Vollsperrung 26.07.2008-01.08.2008 ',

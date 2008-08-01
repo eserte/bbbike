@@ -121,8 +121,15 @@ sub run {
     if (!-e $gpsman2bbd) {
 	main::status_message("$gpsman2bbd does not exist or is not executable", "die");
     }
-    my $persistent_bbd = "/tmp/all_streets.bbd"; # XXX
-    my @cmd = ($gpsman2bbd, "-update", bsd_glob("$dir/*.trk"), "-breakmin", 2,
+    my $persistent_bbd;
+    if ($main::bbbike_configdir) {
+	$persistent_bbd = "$main::bbbike_configdir/all_gps_streets.bbd";
+    } else {
+	require File::Spec;
+	$persistent_bbd = File::Spec->catfile(File::Spec->tmpdir, "all_gps_streets.bbd");
+    }
+    my @cmd = ($^X,
+	       $gpsman2bbd, "-update", bsd_glob("$dir/*.trk"), "-breakmin", 2,
 	       "-destdir", dirname($persistent_bbd), "-deststreets", basename($persistent_bbd),
 	      );
     system @cmd;

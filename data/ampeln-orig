@@ -1743,7 +1743,7 @@ Bahn kommt ca. halbstündlich	B 43081,77252
 Bahn kommt ca. halbstündlich	B 41387,91306
 Bahn kommt ca. halbstündlich oder öfter	B 27154,37315
 Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 42128,79453
-Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 41287,96843
+Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 41323,96820
 Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 41197,98927
 Bahn kommt ca. halbstündlich	B 41840,89712
 Bahn kommt ca. halbstündlich	B 41049,87129
@@ -1776,7 +1776,13 @@ UBB, halbstündlich	B 52830,176128
 UBB, halbstündlich	B 38435,187917
 UBB, halbstündlich	B 48129,182607
 UBB, halbstündlich	B 51899,178200
-UBB, halbstündlich	B 50741,179789
+UBB, halbstündlich	B 50695,179785
+UBB, halbstündlich	B 48925,182039
+UBB, halbstündlich	B 51270,179246
+	B 20981,175541
+	B 26568,178286
+	B 18326,173768
+	B 16716,174712
 	B 32190,64659
 	B -18636,4186
 	X 21823,4210
@@ -2170,8 +2176,9 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 	B 27778,161482
 	B 34308,151439
 	B 37493,125260
+	B 12141,178951
 #: note: Luftbild
-	B 29175,180714
+	B 29147,180773
 	B 27094,12535
 	B 32079,193165
 	B 35705,190879
@@ -2355,6 +2362,8 @@ Modersohnstr. (zurzeit durch eine Ampel ersetzt, wahrscheinlich bis 2010-03-01, 
 	F 2580,24028
 #: note: Luftbild:
 	X 13401,15821
+	B 60676,170842
+	B 44287,133631
 ################################################################################
 # note: Potsdam vvv
 	X -12839,-1342
@@ -2459,6 +2468,10 @@ Modersohnstr. (zurzeit durch eine Ampel ersetzt, wahrscheinlich bis 2010-03-01, 
 	F -13556,-1140
 	F -9872,-4694
 	F -13212,-1356
+#: note: ^^^
+################################################################################
+# note: Ampeln elsewhere vvv
+Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 #: note: ^^^
 ################################################################################
 #: by: Andreas Titz vvv

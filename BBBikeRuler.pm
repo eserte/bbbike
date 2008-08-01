@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRuler.pm,v 1.21 2008/02/28 23:36:24 eserte Exp $
+# $Id: BBBikeRuler.pm,v 1.21 2008/02/28 23:36:24 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2008 Slaven Rezic. All rights reserved.
@@ -311,9 +311,9 @@ sub motion {
     } elsif ($mode eq MODE_GRADE_GPSMAN_TRACKS) {
 	if ($gpsman_track_tag) {
 	    my(@tags) = $c->gettags($c->current_item(-ignorerx => "^ruler\$"));
-	    if ($tags[1] && $tags[1] =~ /dist=([\d\.]+).*alt=([\d\.]+)m/) {
+	    if ($tags[1] && $tags[1] =~ /dist=([\d\.]+).*alt=([-+]?[\d\.]+)m/) {
 		my($dist2,$alt2) = ($1,$2);
-		$gpsman_track_tag =~ /dist=([\d\.]+).*alt=([\d\.]+)m/;
+		$gpsman_track_tag =~ /dist=([\d\.]+).*alt=([-+]?[\d\.]+)m/;
 		my($dist1,$alt1) = ($1,$2);
 		$dist1*=1000; # km2m
 		$dist2*=1000;

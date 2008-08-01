@@ -349,6 +349,7 @@ $tunnel_qr = qr{^_?Tu_?$};
 $roundabout_qr = qr{^(Mini)?Roundabout$};
 # no $cat_rueck handling here
 $complex_IMG_qr = qr/^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/;
+$viewangle_qr = qr{^View:([-+]?\d+):([-+]?\d+)};
 
 # do not draw Steigung and Gefälle at the same time:
 $str_ignore{'comm'} = {'Gf' => 1}; # XXX with ";"???
@@ -2105,13 +2106,15 @@ unless($skip_features{"strassen"}) {
 	}
     }
 
-    if ($devel_host) { # XXX the mount file is very problematic at the moment; do not show it publically until everything's fixed! See StrassenNetz.pm and steigung_stat
+    # XXX the mount file is very problematic at the moment; do not show it to the normal user until everything's fixed! See StrassenNetz.pm and steigung_stat. Also, I think comments_mount is not used for Steigungsoptimierung, so don't puzzle the user about this.
+    if ($devel_host) {
 	$strcm->checkbutton
 	    (-label => M"Steigungen",
 	     -variable => \$str_draw{'mount'},
 	     -command => \&plot_mount,
-	    );
+	     );
     }
+
     menu_entry_up_down($strcm, $tag_group{'str_s'});
     menuright($strasse_check, $strcm);
     menuarrow($strcmb, $strcm, $col++, -special => 'LAYER');
@@ -4740,6 +4743,20 @@ sub handle_options {
 	  label => M"Beim Starten auf Straße zentrieren", var => \$center_on_str],
 	 ['centerc','=s',undef,
 	  label => M"Beim Starten auf Koordinaten zentrieren",
+	  widget => sub {
+	      my($self, $frame, $opt) = @_;
+	      my $vref = $self->varref($opt);
+	      my $f2 = $frame->Frame;
+	      $f2->Entry(-textvariable => $vref)->pack(-side => "left");
+	      $f2->Button(-text => M"Aktueller Kartenausschnitt",
+			  -command => sub {
+			      my(@corner) = $c->get_corners;
+			      my $c_w = ($corner[2]-$corner[0]);
+			      my $c_h = ($corner[3]-$corner[1]);
+			      $$vref = join ",", map { int } anti_transpose($corner[0]+$c_w/2, $corner[1]+$c_h/2);
+			  })->pack(-side => "left");
+	      $f2;
+	  },
 	  var => \$center_on_coord],
 	 ['choosestreet','!',1,
 	  label => M"Beim Starten Straßenauswahl zeigen",
@@ -4788,17 +4805,18 @@ sub handle_options {
 	  label => M"Skalierung", nogui => 1,
 	  var => \$init_scale_massstab,
 	 ],
+	 ['coloring','=s','red',
+	  label => M"Einfärben der Route", var => \$coloring,
+	  choices => [qw(red blue black power wind)]],
+	 ['', '', '-'],
 	 ['overviewwasser','!',1,
 	  label => M"Übersichtskarte mit Gewässern", var => \$overview_draw{'w'}],
 	 ['overviewsbahn','!',0,
 	  label => M"Übersichtskarte mit S-Bahnen", var => \$overview_draw{'b'}],
-	 ['overviewsbahn','!',0,
+	 ['overviewrbahn','!',0,
+	  label => M"Übersichtskarte mit Regionalbahnen", var => \$overview_draw{'r'}],
+	 ['overviewstr','!',0,
 	  label => M"Übersichtskarte mit Hauptstraßen", var => \$overview_draw{'s'}],
-	 ['coloring','=s','red',
-	  label => M"Einfärben der Route", var => \$coloring,
-	  choices => [qw(red blue black power wind)]],
-	 ['handheld','!',undef,
-	  label => M"Handheld", var => \$is_handheld],
 
 	 M"GUI",
 	 ['menu','!',1,	# XXX hier stand mal "menu|stdmenu|standardmenu" => aber Aliase werden anscheinend von Tk::GetOpt nicht unterstützt?!
@@ -5021,6 +5039,8 @@ dazu verwendet wird",
 	 M"Sonstiges",
 	 ['kde','!',undef,
 	  label => M"Für KDE optimieren", var => \$run_under_kde],
+	 ['handheld','!',undef,
+	  label => M"Für Handhelds optimieren", var => \$is_handheld],
 	 ['coordout','=s','standard',
 	  label => M"Koordinatenausgabe", var => \$coord_output],
 	 ['printcmd','=s',undef,
@@ -6302,6 +6322,21 @@ sub generate_plot_functions {
 			    $draw_street_photo->($achtung_photo, "c");
 			} elsif ($cat_hin =~ $roundabout_qr) {
 			    $draw_street_photo->($kreisverkehr_photo, "c");
+			} elsif ($cat_hin =~ $viewangle_qr) {
+			    my($start,$extent) = ($1,$2);
+			    # XXX provisorischer Aussichtspunkt
+			    $c->createArc((map { $_-10 } @coordlist),
+			    		  (map { $_+10 } @coordlist),
+			    		  -outline => "black",
+			    		  -fill => "red",
+			    		  -start => $start,
+			    		  -extent => $extent,
+#XXX fix category from View:...:... to View?
+			    		  -tags => [$abk, $strname,
+						 "$abk-View", "$abk-" . $i,
+						 @extra_tags],
+				         );
+			    return; # next loop
 			}
 
 			# dicken Punkt zeichnen
@@ -7479,6 +7514,9 @@ sub draw_street_numbers {
 	my $draw_sub = sub {
 	    my $coord_i = shift;
 	    my($midx,$midy) = Strassen::Util::middle(@{$coordlist_ref}[$coord_i..$coord_i+3]);
+	    # XXX make public if
+	    # XXX * I find a way of resizing for larger scales
+	    # XXX * I should check the legal status of all these logos
 	    if ($devel_host && defined $image && (my $p = get_image("strnr_$type", $datadir."/comments_route_img/$image"))) {
 		$c->createImage
 		    ($midx,$midy,-image => $p,
@@ -7506,7 +7544,6 @@ sub draw_street_numbers {
 			 -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
 			);
 		} elsif ($type =~ m{^( B | BAB | DK | DW)$}x) {
-		    # XXX make public if it works well (size ok for non-X11-Fonts?)
 		    my $size = $scale < SMALLER_TABLES ? 16 : 32;
 		    my $p;
 		    # prefer png because of alpha
@@ -15633,9 +15670,9 @@ sub show_overview_populate {
 
     my @layer_errors;
 
-    # Zeichnen von Gewässern, S-Bahnen, Straßen in der
-    # Übersichtskarte
-    foreach my $abk (qw(w b s l)) {
+    # Zeichnen von Gewässern, S-Bahnen, Regionalbahnen, Straßen
+    # in der Übersichtskarte
+    foreach my $abk (qw(w b s l r)) {
 	eval {
 	    local %str_outline   = %{ clone \%str_outline };
 	    local %str_name_draw = %{ clone \%str_name_draw };

@@ -19,7 +19,9 @@ Alt-Moabit zwischen Kirch- und Paulstraße	? 7195,13046 7000,13067 6882,13088 675
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0709/nachricht2788.html
 Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 10109,12238 10084,12228 9972,12184
 # Hier scheint nichts mehr zu passieren: #: last_checked: 2008-02-22 Gitschiner Str.	? 9948,10280 10122,10294 10340,10301 10605,10312 10859,10333 10962,10340 11117,10326
-# Hier scheint nichts mehr zu passieren: #: last_checked: 2008-04-13 Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 12188,14321 12338,14532 12384,14600 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941 12628,14962 12722,15105 12743,15138 12880,15335 12966,15478 13098,15592 13229,15692 13316,15758
+#: last_checked: 2008-08-01
+#: XXX: nördlich der Storkower Str. gibt es auf der östlichen Seite die ersten Anzeichen einer Radspur
+Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 12188,14321 12338,14532 12384,14600 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941 12628,14962 12722,15105 12743,15138 12880,15335 12966,15478 13098,15592 13229,15692 13316,15758
 #: last_checked: 2007-09-07
 Vulkanstraße	? 15912,13153 15897,13512 15896,13547
 # XXX laut Luftbild fertig: last_checked: 2006-06-16 (von Corinna):Gorkistr.	? 2998,20487 2974,20483 2615,20421
@@ -90,8 +92,6 @@ Bauarbeiten, danach neu asphaltiert, bis 2008-12-31	?::inwork 9220,11781 9208,11
 Radweg durch den Münsigerpark: bis spätestens 2011-01-01 realisiert	?::inwork -3552,14082 -3776,14419
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20070906.1125.84785.html
 Neue Schönholzer Straße: ab 2007-09-06 asphaltiert	?::inwork 10089,18180 10140,18080 10179,17772
-# XXX fertig, laut frank huth: : last_checked: 2007-10-03 Pankebrücke: in Bau	?::inwork 13554,23123 13567,23101 13551,23072
-Neppermin - Mellenthin - B110: Radweg in Planung, Fertigstellung 2008	?::inwork 50574,171409 50283,171077 50168,170868 49835,170038 49737,169837 49114,169212 49028,168646 48954,167870
 #: last_checked: 2008-07-08
 #: next_check: 2008-10-01
 Columbiadamm: Bauarbeiten (neue Radwege)	?::inwork; 11632,8302 11416,8283 11271,8325 10911,8457 10796,8498 10598,8563 10213,8665
@@ -404,7 +404,9 @@ Martin-Luther-Str. (Falkensee) - Radelandstr.: durchgängige Verbindung vorhanden
 Am Oder-Spree-Kanal, Schwarzer Weg nach Schmöckwitz: Qualtität?	? 30546,-3072 29348,-2798 28923,-2859 28623,-3061 28110,-3047 27906,-3136
 Straßenführung und Straßennamen im Wohnpark an der Buga?	? -13820,1095 -13907,1223 -13801,1414 -14016,1563
 westlich des Sacrower Sees - Försterei Zedlitz: Qualität? (wahrscheinlich Waldweg, Q2)	? -9353,5012 -9395,5025 -9678,4913 -10147,4870 -10616,4399 -10912,3738 -10955,3723
-Schenkenberg - Tornow: Qualität?	? 45406,107350 44745,108948 45265,108797 46428,109624 46174,110110 45810,110576 46075,110850 46272,110976 46317,111103 46685,111038 47335,110888
+#: XXX Straße weiter Richtung Dauer einzeichnen:
+Schenkenberg - Dauer: Qualität? (zumindest in Schenkenberg noch asphaltiert)	? 45454,107247 44745,108948
+Dauer - Tornow: Qualität?	? 44745,108948 45265,108797 46428,109624 46174,110110 45810,110576 46075,110850 46272,110976 46317,111103 46685,111038 47335,110888
 Skandinavische Str.: auf der westlichen Seite Suggestivstreifen (laut Radzeit)?	? 17363,11972 17082,11909 16958,11778
 Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
 Fähre Liepnitzsee zum Großen Werder: wo genau?	? 16050,38181 16455,37790
@@ -639,7 +641,6 @@ Eberswalde - Spechthausen: Qualität? Straßennamen?	? 35362,48503 35312,48225 354
 Eberswalde - Spechthausen: Qualität?	? 35428,47961 35244,47675 35244,47453 35180,47123
 #: XXX Genaue Wegführung?
 Eberswalde - Spechthausen: Qualität? Straßennamen?	? 35339,46996 35149,46710 35168,46488 35218,46368 35149,46126 35066,45479
-Ludwigsburg: Qualität (von Süden aus gesehen: Feldweg; von Norden aus gesehen: Betonplatten/Kopfsteinpflaster)?	? 47587,106693 48762,104987
 Schönfeld - Neuenfeld: im Ort Schönfeld noch Betonplatten mit Spur (Q1), danach den Anschein nach Asphalt (Q0)	? 48060,112975 48800,113000 49137,113325 49537,113375 49887,113837
 Klockow - Neuenfeld: ab Klockow Asphalt, danach ungewiss	? 49412,111409 49887,113837
 Klockow - Kleptow (Feldweg): auf der Nordseite sandiger Feldweg (Q2?)	? 49487,110056 49381,107993
@@ -716,8 +717,6 @@ Porzer Str.: Qualität? Laut ADFC-Karte Radwege, stimmt das? Sind die Radwege ben
 Bohnsdorfer Weg: Qualität? (laut ADFC-Karte mäßig geeignet)	? 20684,105 20668,112 20604,354 20589,403 20543,478 20510,530
 Calau - Werchow: Qualität?	? 48907,-72723 49300,-73237 49437,-74112 49539,-74585 49606,-74713 49618,-75018
 Werchow - Cabel: Qualität?	? 49618,-75018 49412,-75175 49075,-75387 48818,-75806 48692,-75633 48437,-75600 47821,-75451
-Baumgarten - Schenkenberg: Qualität? (von Baumgarten aus gesehen: Asphalt)	? 46581,105900 46275,106262 46200,106787 45512,107075 45406,107350
-Ludwigsburg - Schenkenberg: Qualität? (von Ludwigsburg aus gesehen: Asphalt)	? 47812,106862 47550,107125 45900,107675 45406,107350
 Potzlow - Strehlow: hier ist der Uckerseeweg und BU ausgeschildert, wie ist die genaue Route? (von Süden aus: Betonplatten)	? 39375,90456 39434,91129 39068,91189 39083,91639 38612,91950
 Carmzow - Hedwigshof: im weiteren Verlauf ebenfalls asphaltiert?	? 52635,109881 53437,109825 54050,109712 54450,109425
 Hedwigshof - Moor: existiert eine fahrbare Verbindung?	? 54450,109425 55250,109500 55293,109705
@@ -777,13 +776,16 @@ Theodor-Loos-Weg: Qualität?	? 15325,1720 15460,1764 15620,1764 15671,1923 15781,
 Görke - Bossin: Qualität? (am nördlichen Ende ein Plattenweg)	? 54219,165539 54418,164734 54493,164609
 Stolpe - Bundesstraße: Qualität? Im Süden Fortsetzung des sandigen Feldweges	? 46756,164815 47022,165745 47304,167106
 Welzin - Stolpe: Qualität?	? 45092,161748 45386,161490 46500,161844 46332,162206 46428,162321 46450,162453 46486,162625 46851,162922 46976,163137 47105,163227 47071,163315
+#: XXX laut nordland-Usedom-Karte gut-mittel:
 Wolgast - Neeberg: Qualität?	? 33046,183937 33315,183598 34274,182273 35047,182022
+#: XXX laut nordland-Usedom-Karte gut-mittel:
 Neeberg - Krummin: Qualität?	? 35047,182022 36973,183302
+#: XXX laut nordland-Usedom-Karte gut-mittel:
 Wolgast - Ziemitz: Qualität?	? 33315,183598 32822,181806 32653,180114
+#: XXX laut nordland-Usedom-Karte mittel-schlecht:
 Neeberg - Sauzin: Qualität?	? 35047,182022 34133,181849 33287,181934 32822,181806
 Liepe - Grüssow: Qualität?	? 43381,174089 43570,174347 44258,174855 44494,175213 44795,175507 44838,175686
 Stolpe - Usedom: Qualität des Radweges? In Stolpe wahrscheinlich Asphalt/Verbundsteinpflaster, westlich von Stolpe wahrscheinlich Asphalt? Genaue Koordinaten?	? 47621,163737 47381,163832 46987,163775 45010,164147 43749,164520 43613,164656 43370,164591
-Bansin, Fischerweg: geht es weiter zur Bergstr.?	? 56934,175371 57000,175587
 Friedrich-Wilhelm-Str.: Einbahnstraße nur für Autofahrer oder auch für Radfahrer?	? 8385,5907 8282,5909
 #: last_checked: 2007-03-25
 Melzow - Gramzow, Autobahnbrücke: wegen Bauarbeiten gesperrt, Qualität könnte mäßiger Asphalt sein	? 45082,88685 46529,89125
@@ -1290,6 +1292,7 @@ Werbelow - Brietzig: existiert eine Ausschilderung für die Berlin-Usedom-Alterna
 Werbelow - Brietzig: Qualität? existiert eine Ausschilderung für die Berlin-Usedom-Alternative?	? 40624,117961 41087,118619 41514,119034 41758,119326 41855,119411 42221,119716
 Brietzig - Wilsikow: Qualität?	? 41855,119411 40856,120094 40697,120118 40015,120435 39844,120447 39686,120350
 Demnitz - Altwigshagen: Qualität?	? 35047,144242 35170,144280 35505,144226 35871,144207 35920,144152 36828,144640 36901,144823 37114,144939
+#: XXX zumindest westlich des Bahnübergangs asphaltiert (von der Bahn aus gesehen):
 Altwigshagen - B109: Qualität (möglicherweise Asphalt)?	? 37114,144939 37475,145205 37801,145443
 Neukladower Allee: Qualität?	? -6480,5713 -6319,5606
 (Neukladower Allee - Imchenallee): Qualität? Für Autos gesperrt?	? -6319,5606 -6349,5522 -6355,5449 -6474,5216 -6474,5144
@@ -1365,7 +1368,6 @@ Clara-Jaschke-Str. - Berta-Benz-Str. - Katharina-Paulus-Str.: Einbahnstraßenrege
 B110, Umgehung Anklam: westlicher Teil der Umgehung schon fertig?	? 26264,159478 25880,159605 25185,160127 24733,160839 24722,161235
 Demnitz - L28: nördlicher Teil asphaltiert, Rest auch?	? 34171,142029 34186,141681 34232,141608
 B109 - Gneventhin: Asphalt oder Kopfsteinpflaster?	? 38188,163465 38133,163017 38283,162634
-Zur Reitbahn, Pudagla: Qualität? (wahrscheinlich Asphalt)	? 52064,174635 52129,174507
 Mescherin: Name der Straße?	? 78641,95024 78732,95000 78964,95402 78924,95475 78912,95612 79049,95871
 Staffelde - Neurochlitz	? 78500,96975 78503,97224 78570,97288 78555,97379 78488,97400 78427,97483 78427,97626 78305,97730 78138,97772 77885,97989 77754,98028 77589,97995 77141,98043 76904,98071 76950,98439 76788,98470
 Neurochlitz - Tantow	? 76788,98470 76584,98476 76578,98839 75682,98897 74948,98893 74491,98936 74143,98857 74028,98863
@@ -2142,3 +2144,16 @@ Alt-Blankenburg: Qualität der Nebenstraße Richtung Schäferstege?	? 13562,20913 1
 Alt-Blankenburg: Qualität der Nebenstraße Richtung Schäferstege?	? 13491,20869 13412,20856 13373,20812
 #: XXX: by Teresa: neu asphalt, herrlich grün
 Weg durch die Spiel- und Parkanlage am Blankenburger Bahnhof: genaue Lage des Weges? 	? 13292,21014 13267,20925 13176,20903 12909,20592
+Mellenthin - Gummlin: Qualität?	? 48871,166559 48865,165755 49125,164525 49188,164029 49207,163588
+#: XXX laut nordland-Usedom-Karte mittel-schlecht:
+Bansin-Dorf - Gothen: Qualität?	? 57343,173415 57170,172520 56710,172337 56872,172049
+#: XXX laut nordland-Usedom-Karte mittel-schlecht:
+Neu-Pudagla - Seebad Ückeritz (Fischerstrand): Qualität?	? 51779,178229 52291,179768
+Ückeritz - Neu Pudagla: Qualität (zumindest die westliche Seite ist asphaltiert)? Name der Straße?	? 50716,179002 50942,178863 51122,178797 51487,178569 51611,178406
+Mölschow - B110: Verbundsteinpflasterradweg (westl. Seite) existiert zumindest südlich des Bahnübergangs, die restliche Strecke auch?	? 36165,185728 36210,185140 36312,184835
+Wolgast - Bannemin (B110): asphaltierter Radweg (nördl. Seite) existiert zumindest in der Nähe der Bahnstrecke, die restliche Strecke auch?	? 34287,184375 35184,184693 35885,184713 36312,184835 37064,185034 37278,185225
+Hohendorf - Buddenhagen - Anklam: Qualität?	? 28952,181084 28274,180583 28139,180436 27457,179797 27029,179541 26602,178960 26555,178548 26568,178286 26601,177671 26739,177042 26733,176932 26668,176802 26634,176543 26451,176064 26474,175789 26548,175521 26642,175103 26780,174771 26719,174673 26745,174484 27021,173285 27034,173050 27099,172867 27190,172830 27360,172686 27470,172435 28073,171555 28600,170900
+Nepzin - Karlsburg: Qualität?	? 18050,174486 19366,174320 19944,174236 20736,174042 21004,174168 20994,174411 21090,174433 21123,174526 21226,174515 21277,174433 21380,174418
+Züssow - Nepzin: Qualität?	? 17323,175313 17503,175008 17659,174834 17928,174667 18066,174565 18050,174486 18054,174403 18326,173768 18479,173494 18856,173356
+Groß Kiesow - B109: Qualität?	? 11934,178747 12089,178886
+Groß Kiesow - B109: Qualität?	? 12365,179340 12439,179825 12576,180416 12577,180531 12585,180763 12644,180869 13001,181088 13232,181291 13351,181511 13512,181703 13868,182442

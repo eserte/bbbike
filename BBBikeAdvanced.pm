@@ -41,7 +41,9 @@ sub start_ptksh {
     push @perldirs, dirname(dirname($^X)); # for the SiePerl installation
     my $perldir;
     TRY: {
+	# "local" probably does not work here, we're in a MainLoop...
 	$Data::Dumper::Deparse = 1; # if I need a "ptksh" window, then I need more diagnostics!
+	$Data::Dumper::Sortkeys = 1;
 
         # Find the ptksh script
         for $perldir (@perldirs) {
