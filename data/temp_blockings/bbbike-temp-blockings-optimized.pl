@@ -963,7 +963,16 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_009262',
+         'until' => 1220306399,
+         'text' => 'An der Spandauer Brücke (Mitte) Richtung Spandauer Str. zwischen Rosenthaler Str. und Spandauer Str. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Anfang 09.2008)',
+         'from' => 1217625647,
+         'id' => 1393,
+         'data' => 'userdel	1::inwork 10294,13070 10336,13037 10371,13006 10342,12936 10309,12854
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        {
@@ -1005,16 +1014,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_009340',
-         'until' => 1217627999,
-         'text' => 'Heinrich-Mann-Str. (Pankow) in Richtung Kreuzstr. zwischen Hermann-Hesse-Str. und Heinrich-Mann-Platz Baustelle, Fahrtrichtung gesperrt (bis Anfang 08.2008)',
-         'from' => 1216405440,
-         'id' => 1403,
-         'data' => 'userdel	1::inwork 9301,18722 9457,18612
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1220133600,
          'text' => 'L 793 Schönhagen - Ludwigsfelde Brücke über den Faulen Graben bei Blankensee Brückenneubau Vollsperrung 17.07.2008-30.08.2008 ',
@@ -1157,7 +1157,16 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_009449',
+         'until' => 1217887200,
+         'text' => 'Greifswalder Str. (Prenzlauer Berg) stadteinwärts zwischen Ostseestr. und Erich-Weinert-Str. Baustelle, Fahrtrichtung gesperrt (bis ca. 04.08.2008)',
+         'from' => 1217625690,
+         'id' => 1423,
+         'data' => 'userdel	1::inwork 13098,15592 12966,15478 12880,15335
+',
+         'type' => 'gesperrt'
+       },
        {
          'until' => 1220133600,
          'text' => 'B 115 Baruth - Jüterbog OD Baruth, Kreisverkehr Sanierungsarbeiten Vollsperrung 22.07.2008-30.08.2008 ',
@@ -1194,6 +1203,37 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'from' => 1216936800,
          'id' => 1429,
          'data' => 'userdel	2::inwork 49004,64047 48516,64085 48151,64245
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009501',
+         'until' => 1222811999,
+         'text' => 'Glinkastr. (Mitte) in Richtung Leipziger Str. zwischen Behrenstr. und Jägerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2008)',
+         'from' => 1217625788,
+         'id' => 1430,
+         'data' => 'userdel	1::inwork 9164,12172 9183,12076 9201,11968
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009543',
+         'until' => 1217800800,
+         'text' => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung, Straße vollständig gesperrt (bis 03.08.2008 abends)',
+         'from' => 1217625881,
+         'id' => 1431,
+         'data' => 'userdel	2::temp 6790,16018 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009533',
+         'until' => 1217880000,
+         'text' => 'Str. d. Pariser Kommune und Lebuser Str. in beiden Richtungen zwischen Weidenweg, bzw. Neue Weberstr. und Karl-Marx-Allee Veranstaltung, Straße vollständig gesperrt (bis 04.08.08, 22 Uhr)',
+         'from' => 1217625939,
+         'id' => 1432,
+         'data' => 'userdel	2::temp 12360,12505 12364,12589
+userdel	2::temp 12891,12549 12869,12425
 ',
          'type' => 'gesperrt'
        }

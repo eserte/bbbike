@@ -11798,9 +11798,9 @@ userdel auto	3 8804,12280 8861,12125 8901,12008
 userdel auto	3 7291,10506 7033,10396 7003,10513
 EOF
      },
-     { from  => 1215030238, # 2008-07-02 22:23
-       until => 1217541599, # 2008-07-31 23:59
-       text  => 'An der Spandauer Brücke (Mitte) Richtung Spandauer Str. zwischen Rosenthaler Str. und Spandauer Str. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Ende 07.2008)',
+     { from  => 1217625647, # 2008-08-01 23:20
+       until => 1220306399, # 2008-09-01 23:59
+       text  => 'An der Spandauer Brücke (Mitte) Richtung Spandauer Str. zwischen Rosenthaler Str. und Spandauer Str. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Anfang 09.2008)',
        type  => 'gesperrt',
        source_id => 'IM_009262',
        data  => <<EOF,
@@ -11882,7 +11882,7 @@ userdel	q4::inwork -70100,51862 -70753,51862 -70922,51604
 EOF
      },
      { from  => 1216405440, # 2008-07-18 20:24
-       until => 1217627999, # 2008-08-01 23:59
+       until => 1217625988, # 2008-08-01 23:59 1217627999
        text  => 'Heinrich-Mann-Str. (Pankow) in Richtung Kreuzstr. zwischen Hermann-Hesse-Str. und Heinrich-Mann-Platz Baustelle, Fahrtrichtung gesperrt (bis Anfang 08.2008)',
        type  => 'gesperrt',
        source_id => 'IM_009340',
@@ -12056,9 +12056,9 @@ userdel	2::temp 8775,12457 8540,12420 8560,12326 8539,12286 8515,12242 8214,1220
 userdel	2::temp 8595,12066 8600,12165 8515,12242
 EOF
      },
-     { from  => 1216674398, # 2008-07-21 23:06
-       until => 1217282400, # 2008-07-29 00:00
-       text  => 'Greifswalder Str. (Prenzlauer Berg) stadteinwärts zwischen Ostseestr. und Erich-Weinert-Str. Baustelle, Fahrtrichtung gesperrt (bis ca. 28.07.2008)',
+     { from  => 1217625690, # 2008-08-01 23:21
+       until => 1217887200, # 2008-08-05 00:00
+       text  => 'Greifswalder Str. (Prenzlauer Berg) stadteinwärts zwischen Ostseestr. und Erich-Weinert-Str. Baustelle, Fahrtrichtung gesperrt (bis ca. 04.08.2008)',
        type  => 'gesperrt',
        source_id => 'IM_009449',
        data  => <<EOF,
@@ -12121,6 +12121,34 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 49004,64047 48516,64085 48151,64245
+EOF
+     },
+     { from  => 1217625788, # 2008-08-01 23:23
+       until => 1222811999, # 2008-09-30 23:59
+       text  => 'Glinkastr. (Mitte) in Richtung Leipziger Str. zwischen Behrenstr. und Jägerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_009501',
+       data  => <<EOF,
+userdel	1::inwork 9164,12172 9183,12076 9201,11968
+EOF
+     },
+     { from  => 1217625881, # 2008-08-01 23:24
+       until => 1217800800, # 2008-08-04 00:00
+       text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung, Straße vollständig gesperrt (bis 03.08.2008 abends)',
+       type  => 'gesperrt',
+       source_id => 'IM_009543',
+       data  => <<EOF,
+userdel	2::temp 6790,16018 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
+EOF
+     },
+     { from  => 1217625939, # 2008-08-01 23:25
+       until => 1217880000, # 2008-08-04 22:00
+       text  => 'Str. d. Pariser Kommune und Lebuser Str. in beiden Richtungen zwischen Weidenweg, bzw. Neue Weberstr. und Karl-Marx-Allee Veranstaltung, Straße vollständig gesperrt (bis 04.08.08, 22 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_009533',
+       data  => <<EOF,
+userdel	2::temp 12360,12505 12364,12589
+userdel	2::temp 12891,12549 12869,12425
 EOF
      },
     );
