@@ -169,7 +169,7 @@ Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsab
 Mauerweg am Griebnitzsee: Qualität - vermutlich Asphalt?	? -9656,-285 -9562,-325 -9454,-434 -9365,-610
 Mauerweg in Schildow: Qualität? Wegführung? einzelne Straßen benennen?	? 7653,24412 7568,24527 6814,24593 6542,24466 6261,24462 6029,24562 5848,24609 5585,24606 5390,24604 5265,24642 5204,24496 5140,24338 4958,24418 4898,24351 4825,24328
 Langohrzeile: Qualität?	? 3462,24702 3490,24846 3490,24887
-Mauerweg in Frohnau: Verlauf weitgehend unklar, Qualität?	? 3490,24887 3603,24968 3306,25259 3200,25429 3211,25484 3273,25516 3473,25618 3662,25618 3615,25890 3428,25979 3362,26046 3390,26225 3448,26315 3540,26465 3450,26503 3403,26668
+Mauerweg in Frohnau: Verlauf weitgehend unklar, Qualität?	? 3490,24887 3603,24968 3306,25259 3200,25429 3211,25484 3273,25516 3463,25611 3662,25618 3615,25890 3428,25979 3362,26046 3390,26225 3448,26315 3540,26465 3450,26503 3403,26668
 Mauerweg in Frohnau: laut "Berliner Umland" teilweise gut geeignet, teilweise witterungsabhängige Strecken	? 3403,26668 3081,27368 3706,27812 3512,28053 3118,27972
 Mauerweg in Frohnau (Utestr.): laut "Berliner Umland" teilweise gut geeignet, teilweise witterungsabhängige Strecken	? 3118,27972 2969,28021 2576,28008 2381,28057 2340,28043 2159,28096
 Mauerweg in Frohnau: laut "Berliner Umland" teilweise gut geeignet, teilweise witterungsabhängige Strecken	? 2159,28096 1937,28118 1871,28131 1741,27539
@@ -1453,7 +1453,6 @@ Bogenstr.: Qualität?	? 4660,2116 4735,2077 4809,2057 4902,2058 4995,2090
 Im Französischen Quartier: Qualität?	? -12552,-1097 -12616,-1099
 Am Jägertor: Qualität? Ist der Straßenname offiziell? 	? -13221,-718 -13330,-725 -13375,-632
 Kurhausstr.: Qualität zwischen Bergstr. und Wilhelmstr.?	? 2824,24212 2932,24056 3015,23913 3060,23822 3130,23715
-Helweg - Mauerweg: Qualität des Sandwegs?	? 648,24589 575,24601
 Laehrstr. - Heinrich-Laehr-Park: existiert eine Durchfahrt zum Heinrich-Laehr-Park?	? 1142,1350 1312,1383
 Hoffbauerpfad: Qualität zwischen Sachtlebenstr. und Hans-Böhm-Zeile?	? 214,969 333,1104
 Hoffbauerpfad: Qualität zwischen Klistostr. und Urbanstr.? Für Autos geöffnet?	? 464,1246 550,1358
@@ -1479,6 +1478,7 @@ Nepzin - Karlsburg: Qualität?	? 18050,174486 19366,174320 19944,174236 20736,174
 Züssow - Nepzin: Qualität?	? 17323,175313 17503,175008 17659,174834 17928,174667 18066,174565 18050,174486 18054,174403 18326,173768 18479,173494 18856,173356
 Groß Kiesow - B109: Qualität?	? 11934,178747 12089,178886
 Groß Kiesow - B109: Qualität?	? 12365,179340 12439,179825 12576,180416 12577,180531 12585,180763 12644,180869 13001,181088 13232,181291 13351,181511 13512,181703 13868,182442
+Corker Str.: Qualität? Sind Teilabschnitte für Autos gesperrt?	? 6806,17014 6636,17147 6556,17204 6480,17251
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -1576,7 +1576,6 @@ Dohlengrund: Asphalt (wie ist die Qualität zwischen Grabensprung und Köpenicker 
 Salzachstr.: unbefestigt, fester Erdboden (wo genau sind die Kopfsteinpflaster-/Asphaltabschnitte?)	? -2103,3536 -2014,3564
 Schrimmer Weg: schlechtes Kopfsteinpflaster (gilt das "schlechte Kopfsteinpflaster" auch für den Gehweg-Abschnitt Richtung Waltersdorfer Chaussee?)	? 17879,127 17818,93
 Amalienhofstr.: schlechtes Kopfsteinpflaster (wie ist die Qualität zwischen Ulrikenstr. und Lutoner Str.?)	? -5118,13053 -5100,13081 -5073,13097 -4871,13178 -4771,13214
-Eigene Scholle - Schönhauer Str.: Verbundsteinpflaster (Ist der Privatweg tatsächlich mit Verbundsteinen gepflastert?)	? 9178,21072 9221,21145
 Korkedamm: guter Asphalt (Ist der gesamte Korkedamm asphaltiert?)	? 19244,2141 19296,2257 19327,2288 19375,2341 19654,2325 19962,2277 20100,2247
 Treseburger Str. (Blankenburg): mäßiges Kopfsteinpflaster (welcher Abschnitt ist mit Kopfsteinpflaster versehen, wie sieht der Rest aus?)	? 14509,21337 14461,21372 14304,21399 14157,21442 14069,21471 13978,21496 13884,21524
 Ofener Str.: guter Straßenbelag (asphaltiert oder betoniert?)	? 6208,16546 6256,16601 6262,16608 6386,16749

@@ -10498,6 +10498,8 @@ sub plot_symbol {
 	$c->itemconfigure($tag_label, -font => "$sans_serif_font_family -12");
 	change_label_visibility($c, undef, undef, ["r-label"]);
     } elsif ($abk =~ /^[ubr]$/) {
+require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$abk, get_symbol_scale($abk)],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+
 	$c->itemconfigure($tag_fg, -image => get_symbol_scale($abk));
 	if ($abk eq 'r') {
 	    $c->itemconfigure('r-R0-fg', -image => get_symbol_scale('r-R0'));

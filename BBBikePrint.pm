@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.45 2008/05/12 16:31:23 eserte Exp eserte $
+# $Id: BBBikePrint.pm,v 1.46 2008/08/02 09:16:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003,2006 Slaven Rezic. All rights reserved.
@@ -610,40 +610,11 @@ sub draw_legend {
 	next unless $p_draw{$abk};
 	my $skip_height_add;
 	my($x, $y);
-	if ($abk =~ /^[ub]$/) {
+	if ($abk =~ /^[ubr]$/) {
 	    my($x,$y) = ($left+$start_symbol, $top+$height+2);
 	    my $item_fg = $c->createImage($x+4, $y+3, -tags => "legend");
 	    $add_binding->($item_fg, "p", $abk);
 	    plot_symbol($c, $abk, -tag_fg => $item_fg);
-	} elsif ($abk =~ /^[r]$/) {
-	    my $ubahn_length = ($abk eq 'u'
-				? do { my(%a) = get_symbol_scale('u');
-				       $a{-width}/2 }
-				: 0);
-	    my @str_coords;
-	    if (exists $str_coords{$abk}) {
-		push @str_coords, @{ $str_coords{$abk} };
-		$skip_height_add = 1;
-	    } else {
-		push @str_coords, [$left+$start_symbol, $top+$height];
-	    }
-
-	    foreach my $str_coords (@str_coords) {
-		($x, $y) = @$str_coords;
-
-		my $item_bg = $c->createLine
-		    ($x+4-$ubahn_length, $y+3,
-		     $x+4+$ubahn_length, $y+3,
-		     -tags => 'legend');
-		my $item_fg = $c->createText($x+4, $y+3,
-					     -tags => 'legend');
-		$add_binding->($item_fg, "p", $abk);
-
-		plot_symbol($c, $abk,
-			    -tag_bg => $item_bg, -tag_fg => $item_fg,
-			   );
-	    }
-
 	} elsif ($abk =~ /^(vf|kn|rest|ki)$/) {
 	    # XXX abk xxx und pl fehlen...
 	    my $item_fg = $c->createImage($left+$start_symbol, $top+$height+2,
@@ -886,8 +857,9 @@ sub show_legend {
 	clear_legend($c);
     } else {
 	# 290: $broadest_line + 100 (ca.)
-	$c = $t->Canvas(-height => 550, -width => 290)->pack(-expand => 1,
-							     -fill => "both");
+	$c = $t->Scrolled("Canvas", -scrollbars => "oe",
+			  -height => 550, -width => 290)->pack(-expand => 1,
+							       -fill => "both");
 	if ($balloon) {
 	    $balloon->attach($c, -msg => {"balloon" => "Beispiel mit Klick"});
 	}
@@ -904,9 +876,16 @@ sub show_legend {
 	    $t->OnDestroy(sub { $off_hook->($hook_label) });
 	}
     }
+    my $real_c = $c->Subwidget("scrolled");
     my($left, $top, $width, $height) =
-	draw_legend($c, -fill => 'grey90', %args);
-    $t->geometry(int($width+$left*2) . "x" . int($height+$top*2));
+	draw_legend($real_c, -fill => 'grey90', %args);
+    my $complete_height = $height + $top*2;
+    $real_c->configure(-scrollregion => [0,0,$width,$complete_height]);
+    my $geometry_height = $complete_height;
+    if ($geometry_height + 30 > $t->screenheight) {
+	$geometry_height = $t->screenheight - 30;
+    }
+    $t->geometry(int($width+$left*2) . "x" . int($geometry_height));
 
 }
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlin_DE.pm,v 1.27 2007/05/28 20:21:20 eserte Exp $
+# $Id: Berlin_DE.pm,v 1.28 2008/08/02 10:57:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2006 Slaven Rezic. All rights reserved.
@@ -242,6 +242,10 @@ sub parse_street_type_nr {
 	$image = 'FR.gif';
     } elsif ($strname =~ /l.*wenberger.*land.*radtour/i) {
 	$type = "LLR";
+    } elsif ($strname =~ /haff.*radfernweg/i) {
+	$type = "Haff";
+    } elsif ($strname =~ /ostsee.*radweg/i) {
+	$type = "Ostsee";
     }
     if (defined $type) {
 	$do_round = 1;
