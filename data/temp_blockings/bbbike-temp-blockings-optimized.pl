@@ -1033,15 +1033,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1217628000,
-         'text' => 'L 014 Kyritz - Wittstock Brücke über die A 24 zw. Herzsprung und Wittstock Brückenteilsanierung Vollsperrung 21.07.2008-01.08.2008 ',
-         'from' => 1216504800,
-         'id' => 1406,
-         'data' => 'userdel	2::inwork -53403,76884 -53483,76327
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1219960800,
          'text' => 'L 064 Riesaer Str. OD Bad Liebenwerda, zw. Baumschulenweg u. Südring Neubau Durchlass Vollsperrung 17.07.2008-28.08.2008 ',
@@ -1197,15 +1189,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1217628000,
-         'text' => 'L 283 Parstein - B 2, Schmargendorf Bahnübergang Herzsprung Gleisbauarbeiten Vollsperrung 26.07.2008-01.08.2008 ',
-         'from' => 1216936800,
-         'id' => 1429,
-         'data' => 'userdel	2::inwork 49004,64047 48516,64085 48151,64245
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_009501',
          'until' => 1222811999,

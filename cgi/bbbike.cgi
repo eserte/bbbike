@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.17 2008/07/24 21:56:31 eserte Exp $
+# $Id: bbbike.cgi,v 9.18 2008/08/03 10:30:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -725,7 +725,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 9.17 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 9.18 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -3794,6 +3794,7 @@ sub display_route {
 			# XXX not yet: problems with ... Sekunden Zeitverlust
 			#if (!exists $seen_comments_in_this_etappe{$etappe_comment}) {
 			push @comments, $etappe_comment;
+			push @comments_html, $etappe_comment;
 			# XXX missing: push @comments_html, $etappe_comment_html;
 			#} else {
 			#} # XXX better solution for multiple point comments: use (2x), (3x) ...
@@ -6984,7 +6985,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/07/24 21:56:31 $';
+    my $cgi_date = '$Date: 2008/08/03 10:30:23 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassennetz.t,v 1.18 2007/03/27 21:32:43 eserte Exp $
+# $Id: strassennetz.t,v 1.19 2008/08/03 10:00:19 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -48,8 +48,9 @@ my $s		  = Strassen::Lazy->new("strassen");
 my $s_net	  = StrassenNetz->new($s);
 $s_net->make_net(UseCache => 1);
 
-my $qs            = Strassen::Lazy->new("qualitaet_s");
-my $comments_path = Strassen::Lazy->new("comments_path");
+my $qs              = Strassen::Lazy->new("qualitaet_s");
+my $comments_path   = Strassen::Lazy->new("comments_path");
+my $comments_scenic = Strassen::Lazy->new("comments_scenic");
 
 if ($do_xxx) {
     goto XXX;
@@ -152,13 +153,18 @@ if ($do_xxx) {
 	is($comment, undef, "No CS; comment for last point in route")
 	    or diag $comment;
     }
+}
+
+{
+    my $net = StrassenNetz->new($comments_scenic);
+    $net->make_net_cat(-obeydir => 1, -net2name => 1, -multiple => 1);
 
     {
-	pass("-- CS-Kommentar (beide Richtungen) Jüdenstr. --");
+	pass("-- CS-Kommentar (beide Richtungen) Naturlehrpfad --");
 
 	my $route =
 	    [ map { [ split /,/ ] } split / /,
-	      "10704,12595 10778,12493 10800,12461 10831,12371 10825,12271"
+	      "4911,24299 5216,24157 5535,24016 5645,23968 5693,24037"
 	    ];
 	my $comment;
 
@@ -171,10 +177,10 @@ if ($do_xxx) {
 	    is($comment, undef, "No CS comment for first point in route, pass $pass")
 		or diag $comment;
 	    ($comment) = $net->get_point_comment($route, 1, undef);
-	    like($comment, qr{unbequem}i, "CS comment for first point in feature, pass $pass")
+	    like($comment, qr{Landschaftlich sehr schön}i, "CS comment for first point in feature, pass $pass")
 		or diag $comment;
 	    ($comment) = $net->get_point_comment($route, 2, undef);
-	    like($comment, qr{unbequem}i, "CS comment for second point in feature, pass $pass")
+	    like($comment, qr{Landschaftlich sehr schön}i, "CS comment for second point in feature, pass $pass")
 		or diag $comment;
 	    ($comment) = $net->get_point_comment($route, 3, undef);
 	    is($comment, undef, "No CS comment for last point in feature, pass $pass")

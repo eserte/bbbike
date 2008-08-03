@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsbabel.t,v 1.6 2008/02/06 19:42:12 eserte Exp $
+# $Id: gpsbabel.t,v 1.8 2008/08/03 09:47:38 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -31,7 +31,7 @@ BEGIN {
     }
 }
 
-my $real_tests = 9;
+my $real_tests = 8;
 plan tests => 2 + $real_tests;
 
 my $do_usb_test;
@@ -104,10 +104,37 @@ SKIP: {
 	$gpsb->strassen_to_gpsbabel($s, "gpx", $gpxfile, as => "track");
 	my $s2 = $gpsb->convert_to_strassen_using_gpsbabel($gpxfile, title => "test title", input_format => "gpx");
 	isa_ok($s2, "Strassen", "Converted data is a Strassen object");
-	is_point_near($s2->get(0)->[Strassen::COORDS]->[0],
-		      $s->get(0)->[Strassen::COORDS]->[0], "Expected first coordinate");
-	is_point_near($s2->get($s2->count-1)->[Strassen::COORDS]->[-1],
-		      $s->get($s->count-1)->[Strassen::COORDS]->[-1], "Expected last coordinate");
+
+	# This test used to simply compare the first and last
+	# coordinate in the source and generated file. Unfortunately
+	# gpsbabel does not preserve order when generating the gpx
+	# file and there's a micture of waypoint and track points.
+	# Therefore it is necessary to iterate over the generated file
+	# to check for the coordinates.
+
+	my $test_c1 = $s->get(0)->[Strassen::COORDS]->[0];
+	my $test_c2 = $s->get(0)->[Strassen::COORDS]->[-1];
+
+	my $found_coord1;
+	my $found_coord2;
+
+	$s2->init;
+	while(1) {
+	    my $r = $s2->next;
+	    my @c = @{$r->[Strassen::COORDS]};
+	    last if !@c;
+	    for my $c (@c) {
+		if (is_point_near($c, $test_c1)) {
+		    $found_coord1++;
+		}
+		if (is_point_near($c, $test_c2)) {
+		    $found_coord2++;
+		}
+		last if $found_coord1 && $found_coord2;
+	    }
+	}
+
+	ok($found_coord1 && $found_coord2, "Found first and last coordinate");
 
 	unlink $gpxfile unless $keep;
     }
@@ -115,11 +142,10 @@ SKIP: {
 }
 
 sub is_point_near {
-    my($p1,$p2,$testname) = @_;
+    my($p1,$p2) = @_;
     my($x1,$y1) = split /,/, $p1;
     my($x2,$y2) = split /,/, $p2;
-    ok(abs($x1-$x2) <= 1 && abs($y1-$y2) <= 1, $testname)
-	or diag("$p1 is not near $p2");
+    abs($x1-$x2) <= 1 && abs($y1-$y2) <= 1;
 }
 
 __END__

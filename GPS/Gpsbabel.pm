@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Gpsbabel.pm,v 1.14 2008/03/02 21:13:07 eserte Exp $
+# $Id: Gpsbabel.pm,v 1.15 2008/08/03 09:17:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2008 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ push @ISA, 'GPS';
 
 use strict;
 use vars qw($VERSION $GPSBABEL $DEBUG);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(is_in_path);
 
@@ -173,7 +173,8 @@ sub gpsbabel_recommended_path {
 
 # May be called also as a static method
 sub gpsbabel_download_location {
-    "http://sourceforge.net/project/showfiles.php?group_id=58972";
+    #"http://sourceforge.net/project/showfiles.php?group_id=58972";
+    "http://sourceforge.net/project/platformdownload.php?group_id=58972";
 }
 
 sub run_gpsbabel {

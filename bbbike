@@ -349,7 +349,7 @@ $tunnel_qr = qr{^_?Tu_?$};
 $roundabout_qr = qr{^(Mini)?Roundabout$};
 # no $cat_rueck handling here
 $complex_IMG_qr = qr/^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/;
-$viewangle_qr = qr{^View:([-+]?\d+):([-+]?\d+)};
+$viewangle_qr = qr{^View:([-+]?\d+):([-+]?\d+)}; # XXX duplicated in Strassen::Cat
 
 # do not draw Steigung and Gefälle at the same time:
 $str_ignore{'comm'} = {'Gf' => 1}; # XXX with ";"???

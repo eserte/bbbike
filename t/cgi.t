@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.57 2008/07/24 22:10:28 eserte Exp $
+# $Id: cgi.t,v 1.58 2008/08/03 10:57:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -205,6 +205,7 @@ for my $cgiurl (@urls) {
 	}
     }
 
+ XXX: 
     {
 	my $content;
 	my $route;
@@ -307,7 +308,7 @@ for my $cgiurl (@urls) {
 	ok($res->is_success, "Tragen test") or diag $res->as_string;
 
 	$content = uncompr($res);
-	like($content, qr/Sekunden.*Zeitverlust/, "Zeitverlust in text");
+	BBBikeTest::like_long_data($content, qr/Sekunden.*Zeitverlust/, "Zeitverlust in text", ".html");
 
 	# Test comments_points (category BNP, NARROWPASSAGE) (as part of Bemerkungen)
 	$req = new HTTP::Request
@@ -316,7 +317,7 @@ for my $cgiurl (@urls) {
 	ok($res->is_success, "Drängelgitter test") or diag $res->as_string;
 
 	$content = uncompr($res);
-	like($content, qr/Dr.*ngelgitter.*Sekunden.*Zeitverlust/, "Zeitverlust in text");
+	BBBikeTest::like_long_data($content, qr/Dr.*ngelgitter.*Sekunden.*Zeitverlust/, "Zeitverlust in text", ".html");
 
 	# This is only correct with use_exact_streetchooser=true
 	$req = new HTTP::Request
@@ -366,9 +367,9 @@ for my $cgiurl (@urls) {
 	    or diag $res->as_string;
 	$content = uncompr($res);
 	BBBikeTest::like_long_data($content, qr/\(Lichtenrade -\) Großziethen/,
-				   "Shorter route through Großziethen");
+				   "Shorter route through Großziethen", ".html");
 	BBBikeTest::like_long_data($content, qr/\(Großziethen -\) Rudow/,
-				   "Shorter route through Großziethen");
+				   "Shorter route through Großziethen", ".html");
     }
 
     {
@@ -505,7 +506,7 @@ for my $cgiurl (@urls) {
 	ok($res->is_success, "Click on all streets link")
 	    or diag $res->as_string;
 	my $content = uncompr($res);
-	BBBikeTest::like_long_data($content, qr/B(?:ö|&ouml;)lschestr.*Brachvogelstr.*(?:Ö|&Ouml;)schelbronner.Weg.*Pallasstr/s, "Correct sort order");
+	BBBikeTest::like_long_data($content, qr/B(?:ö|&ouml;)lschestr.*Brachvogelstr.*(?:Ö|&Ouml;)schelbronner.Weg.*Pallasstr/s, "Correct sort order", ".html");
     }
 
  SKIP: {
@@ -769,7 +770,6 @@ EOF
 	BBBikeTest::unlike_long_data($content, qr{Neust%C3%83%C2%A4dtische}i, "No double encoded utf-8");
     }
 
- XXX: 
     {
 	my $resp = $ua->get($cgiurl . "?scope=wideregion&detailmapx=2&detailmapy=6&type=start&detailmap.x=200&detailmap.y=226");
 	ok($resp->is_success);

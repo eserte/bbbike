@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.74 2008/07/24 22:31:45 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.75 2008/08/03 08:59:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006,2007 Slaven Rezic. All rights reserved.
@@ -884,7 +884,8 @@ EOF
 	DATE=`date +%Y%m%d`; export HARNESS_NOTTY=1; export BBBIKE_LONG_TESTS=1; script -c '$(MAKE) test' $(HOME)/trash/bbbike-test-$$DATE
 EOF
    : <<'EOF'
-	DATE=`date +%Y%m%d`; export HARNESS_NOTTY=1; export BBBIKE_LONG_TESTS=1; script $(HOME)/trash/bbbike-test-$$DATE $(MAKE) test
+# The tee /dev/null is used because Test::Harness 3.xx does not understand HARNESS_NOTTY=1
+	DATE=`date +%Y%m%d`; export HARNESS_NOTTY=1; export BBBIKE_LONG_TESTS=1; script $(HOME)/trash/bbbike-test-$$DATE sh -c '$(MAKE) test | tee /dev/null'
 EOF
   )
 . <<'EOF';

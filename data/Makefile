@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.193 2008/07/24 20:39:29 eserte Exp $
+# $Id: Makefile,v 2.194 2008/08/02 21:40:32 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1555,7 +1555,7 @@ BBD2POLISH?=	${MISCSRCDIR}/bbd2polish
 ## The old and unused multi images. Nowadays only one image may be
 ## uploaded at one time (bbbikeall)
 #CGPSMAPPER_FILES=	bbbike brb wide fragezeichen
-CGPSMAPPER_FILES=	bbbikeall bbbikequal
+CGPSMAPPER_FILES=	bbbikequal bbbikeall
 CGPSMAPPER_MP_FILES=	${CGPSMAPPER_FILES:S/$/.mp/:S/^/${PERSISTENTTMPDIR}\//}
 CGPSMAPPER_IMG_FILES=	${CGPSMAPPER_FILES:S/$/.img/:S/^/${PERSISTENTTMPDIR}\//}
 
@@ -1578,6 +1578,14 @@ cgpsmapper-upload-instructions:
 	@echo "and then do:"
 	@echo ""
 	@echo "    cp ../tmp/bbbikeall.img /mnt/garmin/garmin/gmapsupp.img"
+	@echo ""
+	@echo "or currently:"
+	@echo ""
+	@echo "    sudo mount /mnt/garmin/"
+	@echo "    cp ../tmp/bbbikequal.img /mnt/garmin/garmin/"
+	@echo "    cp ../tmp/bbbikequal.img /mnt/garmin/garmin/gmapsupp.img"
+	@echo "    cp ../tmp/bbbikeall.img /mnt/garmin/garmin/"
+	@echo "    sudo umount /mnt/garmin/"
 	@echo ""
 
 ${PERSISTENTTMPDIR}/bbbike.mp:	${BBD2POLISH} \

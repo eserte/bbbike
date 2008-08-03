@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: dataset.t,v 1.3 2006/07/29 21:33:20 eserte Exp $
+# $Id: dataset.t,v 1.4 2008/08/03 10:57:33 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -30,7 +30,7 @@ BEGIN { plan tests => 21 }
 
 my $city_street   = "Dudenstr.";
 my $region_street = "Mövenstr. (Potsdam)";
-my $jwd_street    = "Anklam, Peenedamm";
+my $jwd_street    = "Peenedamm (Anklam)";
 
 # test Strassen::Dataset->get with single scope
 my $ds = Strassen::Dataset->new("berlin"); # XXX arg is ignored for now

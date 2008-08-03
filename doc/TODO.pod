@@ -22,6 +22,22 @@ Legend:
 
 =over
 
+=item * (M3) (feature)
+
+Aussichtspunkte-Signatur. Idee: Ich könnte ein "View"-Symbol wie folgt
+zeichen: stipple mit einem
+vollen Kreis für den Aussichtspunkt für eine feste Größe, z.B. 20x20
+Pixel vorbereiten. Die bbd-Kategorie sieht dann so aus:
+View:start:extent und wird mit createArc gezeichnet. Mögliches
+Problem: beim Zoomen dürfen diese Items nicht angefasst werden oder
+der Stipple muss sich relativ anpassen. Evtl. kann man ab
+bestimmten Zoomstufen auf den Stipple verzichten und nur ein
+Kreissegment zeichnen. (Letzteres ist provisorisch implementiert
+worden)
+
+Zunächst muss ich aber inkscape zum Laufen bekommen, damit ich die
+volle Signatur für das Stipple damit zeichnen kann.
+
 =item * (H4) (improvement)
 
 Unification of plot streets and plot points. Eigentlich nicht so

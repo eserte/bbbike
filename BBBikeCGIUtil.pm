@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeCGIUtil.pm,v 1.8 2008/07/15 20:11:05 eserte Exp $
+# $Id: BBBikeCGIUtil.pm,v 1.9 2008/08/03 10:06:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeCGIUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 sub encode_possible_utf8_params {
     my($q, $from, $to) = @_;
@@ -83,10 +83,21 @@ sub my_server_name {
 
 # CGI::escapeHTML does not escape anything above 0x80. Do it to avoid
 # charset and encoding issues
+BEGIN {
+    if ($] >= 5.008) { # perl5.6.x cannot use [\x{....}] in regexpes
+	eval <<'EOF';
 sub my_escapeHTML {
     my($str) = @_;
     $str =~ s{([<>&\x80-\x{ffff}])}{ "&#" . ord($1) . ";" }eg;
     $str;
+}
+EOF
+	die $@ if $@;
+    } else {
+	# fallback to original escapeHTML
+	require CGI;
+	*my_escapeHTML = \&CGI::escapeHTML;
+    }
 }
 
 1;

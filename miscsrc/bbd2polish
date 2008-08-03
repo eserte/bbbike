@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2polish,v 1.32 2008/07/20 20:18:21 eserte Exp $
+# $Id: bbd2polish,v 1.33 2008/08/02 21:25:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -476,6 +476,7 @@ sub cat2type {
     return 0x1d if $cat eq 'Z' && $file =~ /^(berlin|potsdam)$/; # County Boundary
     return 0x1e if $cat eq 'Z' && $file =~ /^deutschland$/; # International Boundary
     return 0x1a if $cat eq 'Q'; # Ferry
+    return 0x1a if $cat eq 'QQ'; # Ferry
     return 0x01 if $cat =~ /^\?+/; # major highway --- nicht zu übersehen!
     return 0x4500 if $file =~ /kneipen$/; # 0x4500 restaurant, maybe also 0x4600 for bars
     return 0x5200 if $file =~ m{comments_scenic}; # Scenic Area
