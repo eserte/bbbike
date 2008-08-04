@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.374 2008/07/20 21:50:42 eserte Exp eserte $
+# $Id: bbbike,v 3.375 2008/08/04 01:03:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -243,7 +243,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.374 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.375 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -2112,9 +2112,8 @@ unless($skip_features{"strassen"}) {
 	    (-label => M"Steigungen",
 	     -variable => \$str_draw{'mount'},
 	     -command => \&plot_mount,
-	     );
+	    );
     }
-
     menu_entry_up_down($strcm, $tag_group{'str_s'});
     menuright($strasse_check, $strcm);
     menuarrow($strcmb, $strcm, $col++, -special => 'LAYER');
@@ -6195,8 +6194,19 @@ sub generate_plot_functions {
 		};
 
 		my $draw_street_photo = sub {
-			my($street_photo, $anchor) = @_;
+			my($street_photo, $anchor, $delta) = @_;
 			    my($mx,$my) = get_polyline_center(@coordlist);
+
+			    if ($delta) {
+				# atan2(y2-y1, x2-x1)
+				my $ii = 2; # second point
+				my $alpha = atan2($coordlist[$ii+1]-$coordlist[$ii-1], $coordlist[$ii]-$coordlist[$ii-2]);
+				my $beta  = $alpha - pi()/2;
+				my($dx, $dy) = (-$delta*cos($beta), -$delta*sin($beta));
+				$mx += $dx;
+				$my += $dy;
+			    }
+
 			    $c->createImage($mx,$my,
 					    -anchor => $anchor,
 					    -image => $street_photo,
@@ -6511,12 +6521,14 @@ sub generate_plot_functions {
 
 			my $street_photo;
 			my $street_anchor = "nw";
+			my $street_delta;
 			if ($abk eq 'e') {
 			    my $p = get_symbol_scale($abk);
 			    $street_photo = $p if $p;
 			} elsif ($cat_hin eq 'St') {
 			    $street_photo = $steigung_photo if $steigung_photo;
 			    $street_anchor = "s";
+			    $street_delta = $street_photo->width/2+2;
 			} elsif (@addinfo_hin # ignore @addinfo_rueck for now
 				) {
 			    for my $addinfo_hin (@addinfo_hin) {
@@ -6529,7 +6541,7 @@ sub generate_plot_functions {
 			    }
 			}
 			if ($street_photo) {
-			    $draw_street_photo->($street_photo, $street_anchor);
+			    $draw_street_photo->($street_photo, $street_anchor, $street_delta);
 			}
 		    }
 		}
@@ -10498,8 +10510,6 @@ sub plot_symbol {
 	$c->itemconfigure($tag_label, -font => "$sans_serif_font_family -12");
 	change_label_visibility($c, undef, undef, ["r-label"]);
     } elsif ($abk =~ /^[ubr]$/) {
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$abk, get_symbol_scale($abk)],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
-
 	$c->itemconfigure($tag_fg, -image => get_symbol_scale($abk));
 	if ($abk eq 'r') {
 	    $c->itemconfigure('r-R0-fg', -image => get_symbol_scale('r-R0'));
