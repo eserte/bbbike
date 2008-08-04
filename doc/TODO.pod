@@ -2044,6 +2044,36 @@ L<http://www.adfc-frankfurt-oder.de/radtour/>
 
 =back
 
+=head2 Erfassung
+
+=over
+
+=item * (H3)
+
+comments_mount: zurzeit schätze ich mithilfe des Alt-Graphen in
+BBBikeGPS.pm und der Hilfe von BBBikeRuler (Mount of GPSman tracks)
+Steigungen ab. Das ist noch recht ungenau und teilweise problematisch:
+
+ * Wenn Hin- und Rückfahrt übereinander liegen, dann kann BBBikeRuler
+   nicht verwendet werden, weil es mal einen Punkt von einem und den
+   anderen Punkt von dern anderen Fahrt nimmt.
+   Verbesserungsmöglichkeit: nur nahe liegende Punkte verwenden.
+   Außerdem wäre es besser, wenn beide (alle) Steigungen angezeigt
+   würden.
+
+ * Es ist nicht ganz klar, welcher Höhenpunkt genommen wird: der
+   erste, der letzte eines GPS-Trackabschnitts?
+
+ * Es wäre schön, wenn man schon im Alt-Graphen die Steigung ablesen
+   könnte.
+
+ * Es wäre schön, wenn man mehrere Tracks in einem Alt-Graphen
+   zeichnen könnte. Dann müsste man noch horizontal (potenziell
+   verschiedene Startpunkte und Streckenverläufe) und vertikal
+   (potenziell andere Altimeter-Kalibrierung) verschieben können.
+
+=back
+
 =head2 Datenhandling (make, conversion ...)
 
 =over

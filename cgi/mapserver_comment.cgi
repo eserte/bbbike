@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.50 2008/07/15 20:14:26 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.50 2008/07/15 20:14:26 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003-2008 Slaven Rezic. All rights reserved.
@@ -136,7 +136,7 @@ eval {
     }
     if (param("routelink")) {
 	$link1 = param("routelink");
-	($link2 = $link1) =~ s{http://[^/]+}{http://radzeit}; # guess local link, may be wrong
+	($link2 = $link1) =~ s{http://[^/]+/cgi-bin/}{http://localhost/bbbike/cgi/}; # guess local link for bbbikegooglemap, may be wrong
     }
 
     my $plain_body = "";

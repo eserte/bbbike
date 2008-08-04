@@ -318,9 +318,10 @@ sub motion {
 		$dist1*=1000; # km2m
 		$dist2*=1000;
 		if ($dist1 != $dist2) {
-		    my $grade = 100*(($alt2-$alt1)/($dist2-$dist1));
+		    my $delta_dist = $dist2-$dist1;
+		    my $grade = 100*(($alt2-$alt1)/$delta_dist);
 		    $message  = sprintf "Steigung: %.1f%%", $grade;
-		    $message .= sprintf ", (Höhe: %.1fm - %.1fm)", $alt1, $alt2;
+		    $message .= sprintf ", (Höhe: %.1fm - %.1fm; Entfern.: %dm)", $alt1, $alt2, abs($delta_dist);
 		    $old_message = $message;
 		} else {
 		    $message = "(" . $old_message . ")";

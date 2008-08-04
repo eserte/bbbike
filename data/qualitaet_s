@@ -21,7 +21,7 @@ Schönwalder Allee: gutes Kopfsteinpflaster, 2-Richtungs-Radweg mit mäßigen bis g
 Kopenhagener Str.: mäßiger Radweg auf beiden Seiten (gepflastert), Straße OK	Q0 7217,18681 7248,18793 7329,18996 7496,19388 7528,19469 7660,19810
 Hauptstr. (Rosenthal): Asphalt	Q0 7660,19810 7681,19867 7716,19954 7755,20059 7790,20132 7832,20219 7929,20386 7992,20515 8064,20735 8092,20817 8107,20859 8167,21020
 Hauptstr. (Rosenthal): Kopfsteinpflaster auf der Straße, Radwege OK	Q1 8277,21257 8167,21020
-Hauptstr. (Rosenthal)/Mönchmühler Str.: schlechtes Kopfsteinpflaster (12 km/h)	Q3 8277,21257 8460,21602 8591,21906 8426,22015 8504,22281 8569,22444 8900,23274 8903,23349 8909,23506
+Hauptstr. (Rosenthal)/Mönchmühler Str.: schlechtes Kopfsteinpflaster (12 km/h)	Q3 8277,21257 8460,21602 8591,21906 8426,22015 8504,22281 8543,22413 8554,22440 8900,23274 8903,23349 8909,23506
 Bahnhofstr.: schlechtes Kopfsteinpflaster	Q3 8803,23478 8909,23506
 Hauptstr. (Blankenfelde): schlechtes Kopfsteinpflaster	Q3 8909,23506 9186,23625
 Hauptstr. (Blankenfelde): Asphalt	Q0 9186,23625 9228,23643
@@ -2082,7 +2082,6 @@ Langensteiner Weg: gutes Kopfsteinpflaster	Q1 7282,4716 7335,4879 7437,4855
 General-Woyna-Str.: mäßiges Kopfsteinpflaster	Q2 4465,18475 4344,18487 4291,18264 4248,18066 4200,17848
 Wanensteig: mäßiger Asphalt	Q1 14711,18297 14789,18307 14872,18298
 Wildensteiner Str.: guter Asphalt	Q0 18627,8475 18528,8331 18416,8163 18365,8094 18333,8059
-Eginhardstr.: schlechtes Kopfsteinpflaster	Q3 18615,8269 18490,8104 18412,7985
 Mannheimer Str. (Mahlsdorf): guter Asphalt	Q0 24149,9387 23895,9462 23717,9509 23513,9567 23411,9578 23246,9596 23188,9593
 Grenzstr. (Mahlsdorf): Asphalt	Q0 23188,9593 23166,9549 23120,9443 23072,9341 23018,9226
 Eschenstr.: sehr guter Asphalt	Q0 23018,9226 22947,9277 22666,9479 22548,9523 22437,9534 22402,9551 22366,9571
@@ -2764,7 +2763,7 @@ Wuthenowstr.: Verbundsteinpflaster	Q2 5683,5672 5840,5679
 Ufnaustr.: guter Asphalt	Q0 4425,13785 4455,13567
 Gewerbehof: Asphalt	Q0 -2669,13488 -2393,13414
 Pinnauweg: Asphalt	Q0 2219,1612 2043,1538 1943,1496 1975,1413
-Kurfürstenstr. (Lankwitz): Asphalt	Q0 6271,1684 6176,1876 6021,2071 5951,2182 5909,2307 5812,2604
+Kurfürstenstr. (Lankwitz): Asphalt	Q0 6271,1684 6176,1876 6021,2071 5934,2198 5909,2307 5812,2604
 Lansstr.: mäßiges Kopfsteinpflaster	Q2 3054,5677 2953,5606 2858,5535 2785,5482
 Krumme Str. (Bohnsdorf): Beton	Q0 21945,-431 22004,-489 22201,-503 22275,-461
 Prinz-Eugen-Str.: mäßiges Kopfsteinpflaster	Q2 7532,15849 7649,15726 7796,15590
@@ -2970,7 +2969,7 @@ Dohlengrund: Beton	Q0 20272,10448 20357,10445 20395,10444
 Dohlengrund: etwas glatteres Kopfsteinpflaster	Q2 20395,10444 20542,10439 20716,10434
 Dohlengrund: Asphalt	Q0 20716,10434 21017,10423 21288,10431
 Goldammerstr.: Asphalt	Q0 14739,2714 14768,2763 14855,2859 14949,2967 14977,3039 15099,3031 15172,2971 15235,2938
-Am Gemeindepark: guter Asphalt	Q0 7172,2343 7215,2442 7209,2528 7199,2559 7030,2582 6751,2708 6697,2706
+Am Gemeindepark: guter Asphalt	Q0 7172,2343 7215,2442 7209,2528 7199,2559 7030,2582 6751,2708 6679,2701
 Brodowiner Ring: Asphalt	Q0 22215,16343 22192,16165 22290,16146 22400,16226 22406,16309
 Parsteiner Ring: Asphalt	Q0 22406,16309 22428,16462 22321,16553 22250,16468 22215,16343
 Bauhüttenweg: Asphalt	Q0 12703,2454 12835,2470 13064,2499 13238,2521 13302,2554 13339,2611
@@ -4132,6 +4131,15 @@ Telramundweg: guter Asphalt	Q0 5206,4432 5284,4390
 Reimerswalder Steig: guter Beton	Q0 -1870,22999 -1764,23260
 (Weg entlang der U-Bahn-Betriebswerkstatt): teils guter Asphalt, teils schlechte Schotterpiste	Q2 13162,3576 13356,3467 13624,3355 13740,3252
 Attilagarten: Kopfsteinpflaster	Q2 8491,5150 8435,5239
+Straße 151: mäßiger Asphalt	Q1 8973,21271 8932,21192 8860,21051
+Straße 152: guter Beton	Q0 8793,21110 8867,21222
+Straße 152: guter Beton	Q0 8932,21192 8867,21222 8825,21246
+Auffacher Weg: gutes Verbundsteinpflaster	Q1 9130,21187 9093,21090
+Niederauer Weg: gutes Verbundsteinpflaster	Q1 9008,21124 9093,21090 9138,21070
+(Mönchmühler Str. - Blankenfelder Chaussee): gut befahrbar, fester Sand/Schotter	Q1 8903,23349 9152,23410 9296,23468
+(Revierförsterei Blankenfelde - Blankenfelde): gut befahrbar, fester Sand/Schotter	Q1 9469,22606 9388,22812 9392,22934 9333,23075 9251,23156 9152,23410
+(Revierförsterei Blankenfelde - Mönchmühler Str.): gut befahrbar, fester Sand/Schotter	Q1 9469,22606 8801,22341 8566,22434 8554,22440
+(Mönchmühler Str. - Mauerweg): gut befahrbarer Asphalt	Q0 8543,22413 8341,22497
 (Helweg - Mauerweg): mäßig befahrbarer Sandweg	Q2 648,24589 575,24601
 Am Ausblick: sehr guter Asphalt	Q0 1309,24995 1227,25003 1125,25028
 Wiltinger Str.: sehr guter Asphalt	Q0 2387,25271 2397,25362
@@ -4729,14 +4737,22 @@ Mollnerweg: guter Aspahlt	Q0 13336,1162 13307,1265 13300,1359 13292,1505 13263,1
 Zernsdorfer Str.: guter Beton	Q0 22260,11742 22314,11787 22333,11846 22394,11895 22408,11940
 Alice-Salomon-Platz: Beton	Q0 24061,14801 23993,14797 24037,14854
 Glasgower Str.: Asphalt	Q0 6362,16510 6256,16601 6154,16693 6067,16771 5995,16836
-Ofener Str.: guter Straßenbelag	Q0 6208,16546 6256,16601 6262,16608 6386,16749
+Ofener Str.: asphaltiert	Q0 6208,16546 6256,16601 6286,16636 6362,16722 6386,16749
 Gartenstr. (Blankenburg): mittelmäßig gut asphaltiert, geflickte Löcher	Q1 13524,21053 13624,21057 13744,21067 13875,21077
 Gartenstr. (Blankenburg): Kopfsteinpflaster	Q2 13951,21086 13875,21077
 Straße 18 (Blankenburg): mäßiger fester Sandweg, Löcher	Q2 13524,21053 13435,21050 13292,21014 13219,21002
+(Weg durch die Spiel- und Parkanlage am Bahnhof Blankenburg): asphaltiert	Q0 13292,21014 13244,20903 13075,20817 12909,20592
 Veilchenstr.: Kopfsteinpflaster	Q2 3501,4435 3597,4494
 Gundelfinger Str.: schlechtes Kopfsteinpflaster	Q3 18735,9421 18697,9153 18653,8922 18609,8717
 Brauhausstr.: guter Asphalt	Q0 12211,16688 12017,16734
 Ilsensteinweg: Kopfsteinpflaster	Q2 -1885,3319 -1899,3298 -1819,3042 -1814,3021 -1724,2743 -1622,2426
+Schillerstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4429,2396 4568,2424 4721,2449 4868,2370 5033,2279
+Lehndorffstr.: schlechtes Kopfsteinpflaster	Q3 18401,8636 18397,8611 18407,8592 18428,8588 18448,8602
+Lehndorffstr.: schlechtes Kopfsteinpflaster	Q3 18407,8592 18322,8470
+Lehndorffstr.: glatter/ausgebesserter Asphalt	Q0 18322,8470 18221,8328 18215,8316 18269,8161 18333,8059 18412,7985
+Eginhardstr.: schlechtes Kopfsteinpflaster	Q3 18615,8269 18490,8104 18412,7985
+Kösterstr.: mäßiges Kopfsteinpflaster	Q2 -143,2084 -81,1844
+Frobenstr. (Lankwitz): mäßiges Kopfsteinpflaster	Q2 5825,2125 5934,2198 6108,2326 6349,2510 6529,2642 6618,2703 6677,2718
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953
@@ -5754,7 +5770,7 @@ Gielower Str.: Beton mit asphaltierten Ausbesserungen	Q2 13394,4373 13626,4304 1
 (Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): wassergebundene Decke	Q1 13487,3862 13531,3768 13545,3692 13629,3511
 (Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Verbundsteine, wassergebundene Decke	Q1 13944,2708 13904,2787 13807,2863 13778,2987 13740,3252 13748,3301 13629,3511
 Üderseestr.: Kopfsteinpflaster	Q3 18135,8404 18225,8532 18331,8685
-Traberweg.: fester Sandweg	Q2 18570,8025 18490,8104 18416,8163 18351,8222 18283,8273 18221,8328 18135,8404 18072,8470 18013,8529 17935,8581
+Traberweg.: fester Sandweg	Q1 18570,8025 18490,8104 18416,8163 18351,8222 18283,8273 18221,8328 18135,8404 18072,8470 18013,8529 17935,8581
 Brahmsstr.: Kopfsteinpflaster	Q2 4785,4557 4932,4152 4967,4067
 Gertraudstr.: Kopfsteinpflaster	Q2 196,1657 79,1992
 Lerchenweg (Mariendorf): sehr guter Asphalt	Q0 9405,4667 9382,4826 9360,4996 9350,5060

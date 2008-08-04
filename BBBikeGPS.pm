@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.34 2008/07/05 17:24:55 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.45 2008/08/03 23:15:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2008 Slaven Rezic. All rights reserved.
@@ -263,7 +263,19 @@ sub BBBikeGPS::draw_gpsman_data {
 		    my($day,$month,$year) = @_;
 		    "$gpsman_data_dir/" . sprintf("%04d%02d%02d", $year, $month, $day) . ".gpx";
 		};
-		my $date;
+		my $file2ymd = sub {
+		    my($file) = @_;
+		    $file =~ s{\Q$gpsman_data_dir/}{};
+		    if (my($year,$month,$day) = $file =~ m{(\d{4})(\d{2})(\d{2})}) {
+			($year,$month,$day);
+		    } else {
+			my @l = localtime;
+			$l[4]++;
+			$l[5]+=1900;
+			($l[5], $l[4], $l[3]);
+		    }
+		};
+		my $date = join("/", $file2ymd->($file));
 		my $de = $ff->DateEntry
 		    (-dateformat => 2,
 		     -todaybackground => "yellow",
@@ -590,7 +602,26 @@ sub BBBikeGPS::do_draw_gpsman_data {
     my $last_wpt;
     my $last_accurate_wpt;
     my $is_new_chunk;
+    my $vehicle;
+    my $brand;
+    my %brand; # per vehicle
     foreach my $chunk (@{ $gps->Chunks }) {
+	# Code taken from gpsman2bbd.pl:
+	if ($chunk->TrackAttrs->{"srt:vehicle"}) {
+	    $vehicle = $chunk->TrackAttrs->{"srt:vehicle"};
+	}
+
+	$brand = $chunk->TrackAttrs->{"srt:brand"};
+	if (!$brand) {
+	    if (defined $vehicle && $brand{$vehicle}) {
+		$brand = $brand{$vehicle}; # remember from last
+	    }
+	} else {
+	    if (defined $vehicle and defined $brand) {
+		$brand{$vehicle} = $brand;
+	    }
+	}
+
 	$is_new_chunk = 1;
 	foreach my $wpt (@{ $chunk->Points }) {
 	    my($x,$y) = map { int } $Karte::map{"polar"}->map2map($main::coord_system_obj, $wpt->Longitude, $wpt->Latitude);
@@ -693,10 +724,11 @@ sub BBBikeGPS::do_draw_gpsman_data {
 				    $name .= int($speed) . " km/h ";
 				}
 				$name .= "[dist=" . BBBikeUtil::m2km($whole_dist,2) .
-				    ",time=" . BBBikeUtil::s2ms($whole_time) . "min" . sprintf(", abstime=%02d:%02d:%02d", @l[2,1,0]) .
+				    ", time=" . BBBikeUtil::s2ms($whole_time) . "min" . sprintf(", abstime=%02d:%02d:%02d", @l[2,1,0]) .
 					(defined $grade ? ", grade=" . sprintf("%.1f%%", $grade) : "") .
 					    (defined $alt ? ", alt=" . sprintf("%.1fm", $alt) : "") .
-						"]";
+						(defined $vehicle ? ", vehicle=$vehicle" . (defined $brand ? "/$brand" : "") : "") .
+						    "]";
 				my $c1 = "$last_x,$last_y";
 				my $c2 = "$x,$y";
 				if ($main::use_current_coord_prefix) {
@@ -795,6 +827,8 @@ sub BBBikeGPS::do_draw_gpsman_data {
     }
 }
 
+# XXX should be rewritten to just draw ONE graph/toplevel
+# XXX draw_track_all_graphs should just iterate over all types to draw
 sub BBBikeGPS::draw_track_graph {
     my($o) = @_;
     my $top = $o->{-top} || die "-top missing";
@@ -805,7 +839,7 @@ sub BBBikeGPS::draw_track_graph {
     my $peak_ref  = $o->{-peakref};
     my $smooth_ref = $o->{-smoothref};
     my $accuracy_level = $o->{-accuracylevel};
-    my $against = $o->{-against} || "dist";
+    my $against = $o->{-against}; # XXX only to be used if also -type is set!
 
     my %unit = (speed => "km/h",
 		grade => "%",
@@ -895,8 +929,40 @@ sub BBBikeGPS::draw_track_graph {
 	}
     } continue { $inx++ }
 
-    my $whole_what = "whole" . $against;
-    my $max_x = $add_wpt_prop_ref->[-1]->$whole_what();
+    @types = grep {
+	if (defined $min{$_} and defined $max{$_}) {
+	    1;
+	} else {
+	    warn "Cannot draw graph type $_, no suitable data (e.g. gps time was not recorded)";
+	    0;
+	}
+    } @types;
+    return if !@types;
+
+    my %against;
+
+    for my $type (@types) {
+	if ($against) {
+	    $against{$type} = $against;
+	} else {
+	    my $tl_name = "trackgraph-$type";
+	    if (Tk::Exists($main::toplevel{$tl_name})) {
+		my $tl = $main::toplevel{$tl_name};
+		$against{$type} = $tl->{against};
+	    } else {
+		$against{$type} = "dist";
+	    }
+	}
+    }
+
+    my %whole_what;
+    my %max_x;
+
+    for my $type (@types) {
+        $whole_what{$type} = "whole" . $against{$type};
+	my $whole_what = $whole_what{$type};
+	$max_x{$type} = $add_wpt_prop_ref->[-1]->$whole_what();
+    }
 
     if (defined $limit_min{'alt'} || defined $limit_max{'alt'}) {
 	for my $i (1 .. $#$add_wpt_prop_ref) {
@@ -916,8 +982,9 @@ sub BBBikeGPS::draw_track_graph {
 
     my $def_c_h = 300;
     my $def_c_w = 488;
-    my $c_y = 5;
     my $def_c_x = 26;
+    my $def_c_top = 5;
+    my $def_c_bottom = 13;
 
     my(%graph_t, %graph_c, %c_x, %c_h, %c_w, %redraw_cb);
 
@@ -932,18 +999,31 @@ sub BBBikeGPS::draw_track_graph {
 	    $tl->raise;
 
 	    $c_w{$type} = $graph_c{$type}->width - $def_c_x*2;
-	    $c_h{$type} = $graph_c{$type}->height - $c_y*2;
+	    $c_h{$type} = $graph_c{$type}->height - $def_c_top - $def_c_bottom;
+
+	    $tl->{o} = $o;
+	    $tl->{against} = $against{$type};
 	} else {
 	    my $tl = $graph_t{$type} = $top->Toplevel(-title => "Graph $type");
 	    $tl->transient($top)
 		unless defined $main::transient && !$main::transient;
 	    $main::toplevel{$tl_name} = $tl;
 
+	    $tl->{o} = $o;
+	    $tl->{against} = $against{$type};
+
 	    my $f = $tl->Frame->pack(-fill => 'x', -side => "bottom");
+	    my $fg = $tl->Frame->pack(-fill => 'x', -side => "bottom");
 
 	    $c_w{$type} = $def_c_w;
 	    $c_h{$type} = $def_c_h;
-	    $graph_c{$type} = $tl->Canvas(-height => $c_h{$type}+$c_y*2, -width => $c_w{$type}+$def_c_x*2)->pack(-fill => "both", -expand => 1);
+	    $graph_c{$type} = $tl->Canvas(-height => $c_h{$type}+$def_c_top+$def_c_bottom, -width => $c_w{$type}+$def_c_x*2)->pack(-fill => "both", -expand => 1);
+	    if ($main::balloon) {
+		$main::balloon->attach($graph_c{$type}, -balloonposition => 'mouse',
+				       -msg => { "$type-average" => M"Durchschnitt",
+						 "$type-smooth"  => M"geglättete Linie",
+					       });
+	    }
 	    $tl->{Graph} = $graph_c{$type};
 
 	    my($min,$max);
@@ -980,17 +1060,17 @@ sub BBBikeGPS::draw_track_graph {
 	    $redraw_cb{$type} = sub {
 		$limit_ref->{$type} = [$min,$max];
 		$peak_ref->{$type} = [$peak_neg,$peak_pos];
-		$o->{-limitref} = $limit_ref;
-		$o->{-peakref} = $peak_ref;
-		$o->{-smoothref} = $smooth_ref;
-		$o->{-type} = $type;
-		BBBikeGPS::draw_track_graph($o);
+		$tl->{o}->{-limitref} = $limit_ref;
+		$tl->{o}->{-peakref} = $peak_ref;
+		$tl->{o}->{-smoothref} = $smooth_ref;
+		$tl->{o}->{-type} = $type;
+		# Cannot use $o here, probably because of lexical binding issues
+		BBBikeGPS::draw_track_graph($tl->{o});
 	    };
 	    $f->Button(-text => M"Neu zeichnen",
 		       -command => $redraw_cb{$type},
 		      )->pack(-side => "left");
 
-	    my $fg = $tl->Frame->pack(-fill => 'x', -side => "bottom");
 	    $fg->Label(-text => M"Glätten")->pack(-side => "left");
 	    $fg->Entry(-textvariable => \$smooth_ref->{$type}, -width => 4)->pack(-side => "left");
 	    $fg->Button(-text => M"Geglättete oben",
@@ -1009,17 +1089,43 @@ sub BBBikeGPS::draw_track_graph {
 		@conf_time = (-text => M"Nach Zeit plotten",
 			      -command => sub {
 				  $against_b->configure(@conf_dist);
-				  $o->{-against} = "time";
+				  $tl->{o}->{-against} = "time";
 				  $redraw_cb{$type}->();
 			      });
 		@conf_dist = (-text => M"Nach Strecke plotten",
 			      -command => sub {
 				  $against_b->configure(@conf_time);
-				  $o->{-against} = "dist";
+				  $tl->{o}->{-against} = "dist";
 				  $redraw_cb{$type}->();
 			      });
 		$against_b->configure
-		    ($against eq 'dist' ? @conf_time : @conf_dist);
+		    ($against{$type} eq 'dist' ? @conf_time : @conf_dist);
+	    }
+
+	    # Redraw automatically on resize
+	    # Be careful, because <Configure> is fired multiple times on
+	    # a resize, and also on other toplevel-related events like
+	    # repositions or raise/lower events.
+	    {
+		$tl->update; # fix geometry
+		my($tl_w, $tl_h)         = ($tl->width, $tl->height);
+		my($new_tl_w, $new_tl_h) = ($tl_w, $tl_h);
+		my $while_resizing_after;
+		$tl->bind("<Configure>" => sub {
+			      ($new_tl_w, $new_tl_h) = ($tl->width, $tl->height);
+			      return if $while_resizing_after;
+			      $while_resizing_after = $tl->after
+				  (500, sub {
+				       if ($new_tl_w != $tl_w ||
+					   $new_tl_h != $tl_h) {
+					   #warn " geometry changed ... should redraw";
+					   $redraw_cb{$type}->();
+					   $tl->update;
+					   ($tl_w, $tl_h) = ($tl->width, $tl->height);
+				       }
+				       undef $while_resizing_after;
+				   });
+			  });
 	    }
 	}
 
@@ -1035,21 +1141,6 @@ sub BBBikeGPS::draw_track_graph {
 	    $graph_c{$type}->delete($test_item);
 	}
     }
-
-##XXX Geht nicht (zuverlässig?)
-#      for my $_type (@types) {
-#  	my $type = $_type;
-#  	$graph_t{$type}->after
-#  	    (1000, sub {
-#  		 $graph_t{$type}->bind
-#  		     ("<Configure>" => sub {
-#  			  $graph_t{$type}->bind("<Configure>", "");
-#  			  $redraw_cb{$type}->();
-#  		      }
-#  		     );
-#  	     });
-#      }
-
 
     for my $type (@types) {
 	# first the scales
@@ -1069,7 +1160,7 @@ sub BBBikeGPS::draw_track_graph {
 	}
 
 	for my $val (@tics) {
-	    my $y = $c_y + $c_h-( ($c_h/$delta)*($val-$min));
+	    my $y = $def_c_top + $c_h-( ($c_h/$delta)*($val-$min));
 	    $graph_c{$type}->createLine($c_x-2, $y, $c_x+2, $y, -fill => "blue");
 	    $graph_c{$type}->createLine($c_x+2, $y, $c_x+$c_w, $y, -dash => '. ', -fill => "blue");
 	    $graph_c{$type}->createText($c_x-2, $y, -text => $val, -anchor => "e", -fill => "blue");
@@ -1080,15 +1171,15 @@ sub BBBikeGPS::draw_track_graph {
 	# X axis ##################################################
 	my $max_x_cooked;
 	my $x_unit;
-	if ($against eq 'dist') {
-	    $max_x_cooked = $max_x/1000;
+	if ($against{$type} eq 'dist') {
+	    $max_x_cooked = $max_x{$type}/1000;
 	    $x_unit = "km";
 	} else {
-	    if ($max_x < 2*60*60) {
-		$max_x_cooked = $max_x/60;
+	    if ($max_x{$type} < 2*60*60) {
+		$max_x_cooked = $max_x{$type}/60;
 		$x_unit = "min";
 	    } else {
-		$max_x_cooked = $max_x/3600;
+		$max_x_cooked = $max_x{$type}/3600;
 		$x_unit = "h";
 	    }
 	}
@@ -1098,31 +1189,31 @@ sub BBBikeGPS::draw_track_graph {
 	    push @xtics, $val;
 	}
 
+	$graph_c{$type}->createText($c_w+$def_c_x, $c_h+$def_c_top, -anchor => "ne", -text => $x_unit, -fill => "blue");
+
 	for my $val (@xtics) {
 	    my $x = $c_x + ($c_w/($max_x_cooked))*$val;
-	    $graph_c{$type}->createText($x, $c_h, -text => $val, -fill => "blue");
-
+	    last if $x+25 >= $c_w+$def_c_x; # do not overwrite unit label (25 pixels should fit for at least two digits)
+	    $graph_c{$type}->createText($x, $c_h+$def_c_top, -anchor => "n", -text => $val, -fill => "blue");
 	}
-
-	$graph_c{$type}->createText($c_w, $c_h, -anchor => "e", -text => $x_unit, -fill => "blue");
     }
 
-
-    if ($against eq 'dist') { # XXX warum geht es mit "time" nicht?
-	# XXX comment missing
+    for my $type (@types) {
+	next if $type ne "speed";
+	# Draw average line
 	my(%last_x, %last_y);
-	my $type = "speed";
 	foreach (@$add_wpt_prop_ref) {
 	    next if !defined $_->$type(); # below accuracy level
 	    my $time = $_->wholetime;
 	    if ($time) {
-		my $whole = $_->wholedist;
-		my $val = $whole/$time*3.6; # speed
-		next if !$max_x;
-		my $x = $c_x{$type} + ($c_w{$type}/$max_x)*$whole;
+		my $whole_dist = $_->wholedist;
+		my $whole = ($against{$type} eq 'dist' ? $whole_dist : $time); # plot against dist or time
+		my $val = $whole_dist/$time*3.6; # speed
+		next if !$max_x{$type};
+		my $x = $c_x{$type} + ($c_w{$type}/$max_x{$type})*$whole;
 		if (defined $last_x{$type}) {
 		    if (defined $val && $delta{$type}) {
-			my $y = $c_y + $c_h{$type}-( ($c_h{$type}/$delta{$type})*($val-$min{$type}));
+			my $y = $def_c_top + $c_h{$type}-( ($c_h{$type}/$delta{$type})*($val-$min{$type}));
 			if (defined $last_y{$type}) {
 			    $graph_c{$type}->createLine
 				($last_x{$type}, $last_y{$type}, $x, $y,
@@ -1141,15 +1232,16 @@ sub BBBikeGPS::draw_track_graph {
 	# now the graphs
 	my(%last_y, %last_x);
 	foreach (@$add_wpt_prop_ref) {
-	    my $whole = $_->$whole_what();
 	    my $coord = $_->coord;
 	    for my $type (@types) {
+		my $whole_what = $whole_what{$type};
+		my $whole = $_->$whole_what();
 		my $val = $_->$type();
-		my $x = $c_x{$type} + ($c_w{$type}/$max_x)*$whole;
+		my $x = $c_x{$type} + ($c_w{$type}/$max_x{$type})*$whole;
 
 		if (defined $last_x{$type}) {
 		    if (defined $val) {
-			my $y = $c_y + $c_h{$type}-( ($c_h{$type}/$delta{$type})*($val-$min{$type}));
+			my $y = $def_c_top + $c_h{$type}-( ($c_h{$type}/$delta{$type})*($val-$min{$type}));
 			if (defined $last_y{$type}) {
 			    $graph_c{$type}->createLine
 				($last_x{$type}, $last_y{$type}, $x, $y,
@@ -1168,6 +1260,7 @@ sub BBBikeGPS::draw_track_graph {
 	# smooth graphs
 	# XXX use dist and legtime instead!!!
 	for my $type (@types) {
+	    my $whole_what = $whole_what{$type};
 	    my $last;
 	    my $last_x;
 	    my $smooth_i = $smooth_ref->{$type};
@@ -1198,9 +1291,9 @@ sub BBBikeGPS::draw_track_graph {
 		my $whole = $add_wpt_prop_ref->[$inx+$smooth_i/2]->$whole_what();
 		if ($count) {
 		    my $val = $sum/$count;
-		    my $x = $c_x{$type} + ($c_w{$type}/$max_x)*$whole;
+		    my $x = $c_x{$type} + ($c_w{$type}/$max_x{$type})*$whole;
 		    if (defined $last_x) {
-			my $y = $c_y + $c_h{$type}-( ($c_h{$type}/$delta{$type})*($val-$min{$type}));
+			my $y = $def_c_top + $c_h{$type}-( ($c_h{$type}/$delta{$type})*($val-$min{$type}));
 			if (defined $last) {
 			    $graph_c{$type}->createLine($last_x, $last, $x, $y, -fill => 'red', -tags => "$type-smooth");
 			}

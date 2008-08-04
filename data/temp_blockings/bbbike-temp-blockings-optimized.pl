@@ -1200,16 +1200,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_009543',
-         'until' => 1217800800,
-         'text' => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung, Straße vollständig gesperrt (bis 03.08.2008 abends)',
-         'from' => 1217625881,
-         'id' => 1431,
-         'data' => 'userdel	2::temp 6790,16018 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_009533',
          'until' => 1217880000,

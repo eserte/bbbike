@@ -208,8 +208,6 @@ Hinckeldeybrücke: genaue Koordinaten der Schleife?	? 3358,15794 3336,15644 3332,
 Uferpromenade Tegelort/Heiligensee: genaueres zur Qualität und zur Fußgängerfrequenz!	? -2285,19053 -2251,19216 -2250,19361 -2279,19503 -2266,19692 -2248,19849 -2216,20003 -2205,20141 -2146,20345 -2044,20524
 Stintgraben und See	? 1584,39467 1930,39739 1864,40227 2186,40991 2056,41586 1860,42350
 Viktoriapark: 40m Höhe	? 9007,9264
-#: by: Message-ID: <2re0fqF1987v6U1@uni-berlin.de>
-Dann gibt es am Kuhfortdamm den tollen BÜ unter der Eisenbahnbrücke.	? -18148,-1381
 Raddusch: entfällt der Regionalbahnhof?	? 54813,-65044
 Eichhorster Str.: Radweg? Laut Eintrag von housemeister ja, laut Luftbild fraglich	? 21446,18405 21481,18474 21526,18558 21545,18595 21552,18607 21678,18648 21825,18689 21853,18700
 (Eichhorstr. - Schorfheidestr.): Qualität?	? 21825,18689 21828,18701 21860,18718 21875,18717
@@ -237,11 +235,14 @@ Achenbachpromenade: Parkweg Q1, q1 Fußgänger (Radfahren erlaubt), green1, unbele
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
-#: by: Claudia Oll vvv
-#: XXX Schrittgeschwindigkeit? Ist die Straße verkehrsberuhigt?
-Tubaweg: Asphalt, Q0	? 11828,20625 11782,20693 11771,20706
-Tubaweg: Asphalt, Q0	? 11782,20693 11826,20722 11843,20734 11867,20747 11919,20745
-Tubaweg: Asphalt, Q0	? 11843,20734 11822,20769
+#: by: tyohre vvv
+Mühlbergstr.: Kopfsteinpflaster, Q2, enge Straße, q1	? 17187,3988 17288,4026 17341,4046
+Mühlbergstr.: Kopfsteinpflaster, Q2, enge Straße, q1	? 17346,4031 17402,4050 17405,4151
+#: by: ^^^
+#: by: Claudia Oll, franziska.schaefer vvv
+Tubaweg: Asphalt, Q0, RW6	? 11828,20625 11782,20693 11771,20706
+Tubaweg: Asphalt, Q0, RW6	? 11782,20693 11826,20722 11843,20734 11867,20747 11919,20745
+Tubaweg: Asphalt, Q0, RW6	? 11843,20734 11822,20769
 #: by: ^^^
 #: by: H. Schmidt:
 Heribaldstr.: Asphalt, Q0	? 25029,10462 25022,10715
@@ -949,11 +950,8 @@ Schloßallee - Blankenburger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 106
 #: XXX: zumindestens für den südlichen Abschnitt bestätigt, aber auf dem Luftbild sieht es so aus, als ob ein kleiner Abschnitt asphaltiert sein könnte:
 Blaubeerweg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 10932,22184 10979,21977 10993,21948 11000,21858 11060,21694
 Mazetstr.: Qualität (laut ADFC-Karte überwiegend gut geeignet)? Ist der Abschnitt östlich der Blankenfelder Str. für Autofahrer gesperrt?	? 10979,21977 11026,21997 11329,22138 11437,22198 11504,22277 11566,22350
-(Mönchmühler Str. - Blankenfelder Chaussee): Qualität (laut ADFC-Karte gut geeignet)?	? 8903,23349 9156,23424 9296,23468
-Revierförsterei Blankenfelde - Mönchmühler Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 9747,22694 9473,22591
-Revierförsterei Blankenfelde - Mönchmühler Str.: Qualität (laut ADFC-Karte mäßig geeignet)? Existiert überhaupt eine Verbindung zur Mönchmühler Str.?	? 9473,22591 8811,22338 8569,22444
-Revierförsterei Blankenfelde - Blankenfelde: Qualität (laut ADFC-Karte gut geeignet)?	? 9473,22591 9156,23424
-Mönchmühler Str. - Mauerweg: Qualität (laut ADFC-Karte gut geeignet)? Existiert überhaupt eine Verbindung?	? 8569,22444 8331,22485
+Revierförsterei Blankenfelde - Blankenfelder Chaussee: Qualität (laut ADFC-Karte gut geeignet)?	? 9747,22694 9469,22606
+Revierförsterei Blankenfelde - Mönchmühler Str.: Qualität (laut ADFC-Karte mäßig geeignet)? Existiert überhaupt eine Verbindung zur Mönchmühler Str.?	? 9469,22606 8801,22341 8566,22434 8554,22440
 Schildower Weg - Schildower Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? 8415,24361 8547,24437 8891,24330
 Lug - Altdöbern: Qualität? Kategorie (H)?	? 48113,-85526 48562,-85550 49162,-85300 50237,-84450 50962,-84350 52312,-83050 52625,-83050 54112,-83500 54487,-83612 55037,-83500 55162,-83362 55212,-83137 55362,-83125
 #: XXX: laut Aktiv Regional gut geeignet
@@ -1384,14 +1382,12 @@ Libnow - Lassan: Qualität? (möglicherweise nur ein Feldweg)	? 31996,167054 32020
 Freest - Peenemünde: Daten zur Fähre, Telefon 038371-20829 oder 0170-1607371	? 28887,192995 29771,193403 30100,193330 30496,192617 31301,192513 31355,192739
 Niederschlemaer Weg: Qualität?	? 18447,1727 18444,1782 18425,1831
 Lorenzstr./Parallelstr.: Ampel?	? 5720,2081
-Parallelstr.: endet die Parallelstr. am südwestlichen oder am nordöstlichen Teil der Luisenstr.?	? 5807,2117 5825,2125
 #: XXX unklarer anonymer Eintrag:
 Perwenitzer Weg: Qualität der Straße? Existiert hier ein Radweg? Ist es möglich, auf den Askanierring zu gelangen?	? -3708,15831 -3829,15868 -3924,15915
 #: XXX unklarer anonymer Eintrag (gutes Kopfsteinpflaster), Teile der Straße sehen tatsächlich nach Kopfsteinpflaster aus, Teile sind anscheinend asphaltiert oder unbefestigt; Netzanbindung fehlt
 Elfenallee: Qualität? (möglicherweise Kopfsteinpflaster?)	? 12260,21583 12249,21626 12312,21762 12332,21910 12362,22131 12393,22332 12397,22429
 Eupener Str.: Qualität nördlich des Uhlenwegs?	? 16384,26726 16432,26829
 Breitenbachstr. - Soltauer Str.: besteht eine Verbindung für Radfahrer entlang der S-Bahn? Qualität?	? 3909,19002 3756,19003 3749,19031
-Schillerstr. (Lichterfelde): Qualität?	? 4429,2396 4568,2424 4721,2449 4868,2370 5033,2279
 Ulmenstr.: Qualität?	? 4004,23030 3750,23363
 Waldseeweg: Qualität?	? 3750,23363 3621,23548 3587,23584
 Schulzendorfer Str.: Ist die Schulzendorfer Straße eine Vorfahrtsstraße?	? 22222,156 22303,67 22312,48 22382,-87 22418,-181 22918,-903 23037,-1076
@@ -1592,8 +1588,6 @@ Köttgenstr.: Qualität?	? 473,15169 556,15175 613,15195
 Sternfelder Str.: Qualität?	? 386,14162 367,13991 371,13863 182,13878 169,13851
 Johannes-Werner-Str.: Qualität?	? 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
 Vereinsstr.: Qualität?	? 17180,3997 17244,4084 17297,4159 17405,4151 17503,4148
-Mühlbergstr: Qualität?	? 17187,3988 17288,4026 17341,4046
-Mühlbergstr: Qualität?	? 17346,4031 17402,4050 17405,4151
 Lindhorstweg: Qualität?	? 16674,4096 16742,4098 16852,4105 16887,4105 17027,4090 17108,4049 17180,3997 17187,3988 17228,3936 17245,3895
 Heinrich-Mirbach-Str.: Qualität? Für Autofahrer gesperrt?	? 17288,4026 17244,4084
 Köpenicker Str. (Johannisthal): Qualität?	? 17507,4216 17638,4224 17660,4204
@@ -2065,6 +2059,7 @@ Upsalaer Str.: Qualität? Gibt es hier eine Einbahnstraßenregelung, und wenn ja, 
 Gemündener Str.: Qualität?	? 11395,18274 11495,18129 11514,18101 11586,18126 11622,18006
 Kissingenplatz: Qualität? Können Radfahrer direkt zur Kreuzung Neumannstr./Kissingenstr. gelangen?	? 11489,17980 11448,18051 11405,17985 11398,17962
 Berkenbrücker Steig: Qualität?	? 15647,14693 15532,14718 15383,14759
+#: XXX: unklarer Eintrag von SOTAREone: Kopfsteinpflaster Q2 (OK, aber tatsächlich die gesamte Straße?), aber Fußgängerzone q1, Radweg???
 Küstriner Str.: Qualität?	? 15799,14674 15853,14734 15878,14761 15941,14834 16123,15025 16211,15105 16319,15229 16354,15323 16406,15452
 Verdener Gasse: Qualität? Durchfahrt zur Große-Leege-Str. für Radfahrer möglich? Überquerung der Große-Leege-Str. in Höhe Verdener Gasse möglich?	? 15878,14761 15946,14702 15977,14676
 Strausberger Str.: Qualität?	? 16377,14952 16295,15024 16211,15105 16152,15164 16028,15218
@@ -2078,10 +2073,6 @@ Kurt-Weill-Gasse: Qualität? Für Autos gesperrt?	? 23820,14896 23787,14919
 Fritz-Lang-Str.: Qualität? Für Autos gesperrt?	? 23841,15004 23846,14931
 Fritz-Lang-Str.: Qualität? Für Autos gesperrt?	? 23856,14868 23878,14748
 Triftstr. - Eichborndamm: Ist der Parkweg nachts beleuchtet?	? 4538,20621 4661,20559 4790,20493 4885,20444
-#: XXX unklarer Eintrag von Sabine (3113sf): guter Asphalt von Ehrlichstr. bis Ende, aber welches Ende? vvv
-Lehndorffstr.: Qualität?	? 18401,8636 18397,8611 18407,8592 18428,8588 18448,8602
-Lehndorffstr.: Qualität?	? 18407,8592 18322,8470 18221,8328 18215,8316 18269,8161 18333,8059 18412,7985
-#: XXX ^^^
 Tollkirscheweg: Qualität?	? 20689,1613 20609,1654 20539,1722
 Strohblumenweg: Qualität?	? 20716,1860 20618,1781 20539,1722 20525,1713 20478,1681 20456,1639 20440,1588
 Pichelswerderstr. (Pankow): Qualität?	? 9791,17877 9723,17920
@@ -2137,8 +2128,6 @@ Mewesstr.: Qualität der Straße zwischen Röbellweg und Röntgentaler Weg?	? 17186,
 Priesterstege: Qualität?	? 13524,21053 13562,20913
 Alt-Blankenburg: Qualität der Nebenstraße Richtung Schäferstege?	? 13562,20913 13487,20887 13491,20869 13493,20847 13576,20849
 Alt-Blankenburg: Qualität der Nebenstraße Richtung Schäferstege?	? 13491,20869 13412,20856 13373,20812
-#: XXX: by Teresa: neu asphalt, herrlich grün
-Weg durch die Spiel- und Parkanlage am Blankenburger Bahnhof: genaue Lage des Weges? 	? 13292,21014 13267,20925 13176,20903 12909,20592
 Mellenthin - Gummlin: Qualität?	? 48871,166559 48865,165755 49125,164525 49188,164029 49207,163588
 #: XXX laut nordland-Usedom-Karte mittel-schlecht:
 Bansin-Dorf - Gothen: Qualität?	? 57343,173415 57170,172520 56710,172337 56872,172049
@@ -2153,3 +2142,8 @@ Züssow - Nepzin: Qualität?	? 17323,175313 17503,175008 17659,174834 17928,174667
 Groß Kiesow - B109: Qualität?	? 11934,178747 12089,178886
 Groß Kiesow - B109: Qualität?	? 12365,179340 12439,179825 12576,180416 12577,180531 12585,180763 12644,180869 13001,181088 13232,181291 13351,181511 13512,181703 13868,182442
 Corker Str.: Qualität? Sind Teilabschnitte für Autos gesperrt?	? 6806,17014 6636,17147 6556,17204 6480,17251
+#: XXX: Eintrag von warsteiner60 unklar: sehr guter Asphalt (OK), aber Radweg?
+Posthausweg: Qualität? Kann man die Falkenseer Chaussee in Höhe des Posthauswegs überqueren?	? -6073,15925 -6089,15746
+#: XXX: Eintrag von anonymous: Asphalt, Q0; aber die Luftaufnahmen sehen so körnig aus (Kopfsteinpflaster?) und hat anonymous beide Abschnitte mit seinem Eintrag gemeint?
+Dieselstr. (Potsdam): Qualität des östlichen Teilabschnitts? Kann man als Radfahrer durch die Kleingärten zum Horstweg gelangen?	? -10009,-2467 -10109,-2437
+Dieselstr. (Potsdam): Qualität des westlichen Teilabschnitts?	? -10350,-2358 -10454,-2339 -10551,-2310 -10653,-2276
