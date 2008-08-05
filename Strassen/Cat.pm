@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Cat.pm,v 1.15 2008/08/02 21:21:51 eserte Exp $
+# $Id: Cat.pm,v 1.15 2008/08/02 21:21:51 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -80,7 +80,7 @@ use vars qw(%filetype_to_cat %file_to_cat);
      "fragezeichen"		=> $filetype_to_cat{"fragezeichen"},
      "fragezeichen-cooked"	=> $filetype_to_cat{"fragezeichen"},
      "gesperrt"			=> $filetype_to_cat{"gesperrt"},
-     "gesperrt_car"		=> $filetype_to_cat{"gesperrt"},
+     "gesperrt_car"		=> [@{$filetype_to_cat{"gesperrt"}}, "2:Anlieger"], # XXX Anlieger -> TBD
      "gesperrt_r"		=> $filetype_to_cat{"gesperrt"},
      "gesperrt_s"		=> $filetype_to_cat{"gesperrt"},
      "gesperrt_u"		=> $filetype_to_cat{"gesperrt"},

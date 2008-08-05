@@ -450,6 +450,8 @@ Asternplatz	1 3775,4632 3710,4728 3707,4752 3716,4764 3740,4766 3754,4755 3815,4
 Kammgasse	1 1992,24354 2213,24393 2264,24414 2302,24451 2325,24486
 Herbert-Tschäpe-Str.	1 14358,14155 14481,14095 14510,14104 14710,14185
 Strausberger Platz	1 11976,12595 12005,12619 12050,12616 12099,12580 12114,12546 12083,12518 12028,12519 11988,12546 11976,12595
+Magirusstr.	1 8199,6583 7985,6598
+Egelingzeile	1 7976,6403 8194,6384
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
 Humboldtring -> Hans-Marwitza-Ring: Hochstraße	3::igndisp -11399,-1339 -11461,-1424 -11358,-1491
 Hans-Marwitza-Ring -> Humboldtring: Hochstraße	3::igndisp -11358,-1491 -11461,-1424 -11540,-1543
@@ -562,7 +564,6 @@ Köthen	1 -85125,-74513 -85231,-74271
 Köthen	1 -85091,-74261 -85089,-74420 -85057,-74512
 Askanischer Platz	1s 8882,10905 8938,10872 8983,10846 9022,10857
 Helbigstr.	1s 20109,4087 20339,3779 20362,3750
-Friedrich-Wilhelm-Str.	1s 8385,5907 8282,5909
 Sophie-Taeuber-Arp-Weg	1s 3302,2471 3293,2218
 Seelbuschring	1s 8485,4619 8432,4712 8242,4648
 Zionskirchstr.	1s 10389,14274 10426,14262
@@ -587,7 +588,7 @@ Gramzow (Dorfstr.?)	1s 49779,90206 49841,90479
 Billerbecker Weg	1s 1230,18698 1229,18750
 Alt-Tegel	1s 1668,20156 1753,20191 1907,20265
 Alt-Tegel	1s 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
-Am Treptower Park	1s 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
+Am Treptower Park: entgegen der Richtung auf dem Parkstreifen	1s 14739,8919 14614,9052 14563,9106 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
 Groebenufer	1s 13206,10651 13077,10747
 Jahnstr. (KW)	1s 26243,-12300 26028,-12312
 Seestr. (Potsdam)	1s -11581,559 -11584,452
@@ -1272,7 +1273,6 @@ tragen (Treppe)	0:30:-225 8014,12846
 tragen (Treppe)	0:30:-4 8428,12859
 tragen (Treppe)	0:30:77 8445,12747
 tragen (Treppe)	0:30:28 17026,11810
-tragen (zwei kurze Treppen)	0:30:3 9453,6415
 tragen (S-Bhf. Raoul-Wallenberg-Str.)	0:30:-244 20041,16296
 tragen (ca. 40 Stufen)	0:59:-124 1659,3226
 tragen (Treppe)	0:30:-114 1715,3257
@@ -1287,7 +1287,7 @@ tragen (Treppe)	0:30:-64 -6933,14317
 tragen (Treppe)	0:30:2 -6934,14291
 tragen (Treppe)	0:30:-237 20673,7260
 Cafeastr. - Gradestr.: Drängelgitter am Bahnübergang	BNP:3:-21 11612,5253
-Schranke	BNP:3:-81 9265,6361
+Schranke	BNP:0:-81 9265,6361
 Schranke, kann von Fahrrädern umfahren werden	BNP:3:-259 668,25047
 Schranke, kann von Radfahrern umfahren werden	BNP:3:-146 9178,21072
 Drängelgitter	BNP:3:-48 5939,22330

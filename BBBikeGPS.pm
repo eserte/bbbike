@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.45 2008/08/03 23:15:04 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.45 2008/08/03 23:15:04 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2008 Slaven Rezic. All rights reserved.
@@ -607,11 +607,12 @@ sub BBBikeGPS::do_draw_gpsman_data {
     my %brand; # per vehicle
     foreach my $chunk (@{ $gps->Chunks }) {
 	# Code taken from gpsman2bbd.pl:
-	if ($chunk->TrackAttrs->{"srt:vehicle"}) {
-	    $vehicle = $chunk->TrackAttrs->{"srt:vehicle"};
+	my $trackattrs = $chunk->TrackAttrs ? $chunk->TrackAttrs : {};
+	if ($trackattrs->{"srt:vehicle"}) {
+	    $vehicle = $trackattrs->{"srt:vehicle"};
 	}
 
-	$brand = $chunk->TrackAttrs->{"srt:brand"};
+	$brand = $trackattrs->{"srt:brand"};
 	if (!$brand) {
 	    if (defined $vehicle && $brand{$vehicle}) {
 		$brand = $brand{$vehicle}; # remember from last

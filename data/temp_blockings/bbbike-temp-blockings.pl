@@ -12151,4 +12151,12 @@ userdel	2::temp 12360,12505 12364,12589
 userdel	2::temp 12891,12549 12869,12425
 EOF
      },
+     { from  => 1217880521,
+       until => Time::Local::timelocal(reverse(2008-1900,12-1,31,23,59,59)),
+       text  => 'Bautätigkeit bis Ende 2008, daher Einbahnstraße vom Sterndamm in Richtung Haeckelstr.',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	1 17379,3932 17346,4031 17341,4046 17297,4159 17261,4267
+EOF
+     },
     );

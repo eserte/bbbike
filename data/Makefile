@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.194 2008/08/02 21:40:32 eserte Exp $
+# $Id: Makefile,v 2.194 2008/08/02 21:40:32 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1094,8 +1094,9 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+)?)(:inw
 	@touch $@
 .endfor
 
+# no need to check -catrx $(GESPERRT_CATRX) --- this is done elsewhere
 .check_gesperrt_car1:	gesperrt_car .strassen.tmp landstrassen landstrassen2
-	$(CHECK_POINTS) -catrx $(GESPERRT_CATRX) gesperrt_car .strassen.tmp landstrassen landstrassen2
+	$(CHECK_POINTS) gesperrt_car .strassen.tmp landstrassen landstrassen2
 	@touch $@
 
 .check_gesperrt_car2:	gesperrt_car strassen landstrassen landstrassen2

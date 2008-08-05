@@ -400,6 +400,8 @@ Friedrichsbrücke: Fußgänger	q1 10086,12725 10171,12769
 (Hornbach-Parkplatz): Parkplatzbetrieb	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
 Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346
 (Blücherplatz - Waterlooufer): Fußgänger, Bordsteine	q2 9643,10140 9687,10180
+Arenholzsteig: Bordsteine	q2 8481,6900 8496,6919
+Mergenthalerring: Asphaltschwellen, können umfahren werden	q1+ 14382,8058 14563,8243
 ######################### User Contributions #################################
 #: by: Steini
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
@@ -575,7 +577,7 @@ Wilseder Str.: eng mit ein- und ausparkenden Autos	q1 6295,5132 6288,4906
 Hünensteig: Fußgänger	q2 6396,5125 6406,5223 6108,5253
 #: by: ^^^
 #: by: Thomas (dobr@...) vvv
-(Götzstr. - Albrechtstr.): Fußgänger	q2 9460,6519 9453,6415 9389,6348 9381,6277 9367,6160 9349,6075
+(Götzstr. - Albrechtstr.): Fußgänger	q2 9460,6519 9453,6415 9404,6392 9389,6348 9381,6277 9367,6160 9349,6075
 #: note: ähnliche Angaben von Christian (chrispan), nach Mailverkehr mit ihm (Message-Id: <E1EtpOe-0001ZH-IJ@www.radzeit.de>) von q2 auf q4 degradiert:
 (Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Kleingartenanlage, Fußgänger (schieben!), tiefe Steinregenabläufe quer zum Weg	q4 7921,4451 7935,4466 8027,4571 8162,4725
 #: by: ^^^
@@ -1303,3 +1305,8 @@ Brusebergstr.: enge Straße	q1 6060,18534 6045,18305 6086,18162 6115,18042 6145,1
 Hoffbauerpfad: schmaler Pfad	q2 214,969 333,1104
 #: by: Juli (cellicatissimo...)
 Plüschowstr.: einige Fußgänger	q1 242,3459 201,3764
+#: by: tyohre vvv
+Johannes-Werner-Str.: enge Straße	q1 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
+Mühlbergstr.: enge Straße	q1 17187,3988 17288,4026 17341,4046
+Mühlbergstr.: enge Straße	q1 17346,4031 17402,4050 17405,4151
+#: by: ^^^

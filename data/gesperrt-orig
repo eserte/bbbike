@@ -560,6 +560,8 @@ Kammgasse	1 1992,24354 2213,24393 2264,24414 2302,24451 2325,24486
 #: by: anonymous
 Herbert-Tschäpe-Str.	1 14358,14155 14481,14095 14510,14104 14710,14185
 Strausberger Platz	1 11976,12595 12005,12619 12050,12616 12099,12580 12114,12546 12083,12518 12028,12519 11988,12546 11976,12595
+Magirusstr.	1 8199,6583 7985,6598
+Egelingzeile	1 7976,6403 8194,6384
 ######################################################################
 #
 # Potsdam
@@ -668,8 +670,6 @@ Köthen	1 -85091,-74261 -85089,-74420 -85057,-74512
 Askanischer Platz	1s:q2 8882,10905 8938,10872 8983,10846 9022,10857
 #: by: Ilona Lange (man fährt auf dem Gehweg, sowieso)
 Helbigstr.	1s:q3 20109,4087 20339,3779 20362,3750
-#: by Andreas (johnnyyen):
-Friedrich-Wilhelm-Str.	1s 8385,5907 8282,5909
 Sophie-Taeuber-Arp-Weg	1s 3302,2471 3293,2218
 Seelbuschring	1s 8485,4619 8432,4712 8242,4648
 #: note: die Straßenbahn fährt hier auch lang
@@ -697,7 +697,7 @@ Gramzow (Dorfstr.?)	1s:q1 49779,90206 49841,90479
 Billerbecker Weg	1s 1230,18698 1229,18750
 Alt-Tegel	1s:q3 1668,20156 1753,20191 1907,20265
 Alt-Tegel	1s:q3 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
-Am Treptower Park	1s 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
+Am Treptower Park: entgegen der Richtung auf dem Parkstreifen	1s:q1 14739,8919 14614,9052 14563,9106 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
 Groebenufer	1s:q1 13206,10651 13077,10747
 Jahnstr. (KW)	1s 26243,-12300 26028,-12312
 Seestr. (Potsdam)	1s -11581,559 -11584,452
@@ -997,8 +997,6 @@ tragen (Treppe)	0:30 8014,12846
 tragen (Treppe)	0:30 8428,12859
 tragen (Treppe)	0:30 8445,12747
 tragen (Treppe)	0:30 17026,11810
-#: add_fragezeichen: wo sind die Treppen genau?
-tragen (zwei kurze Treppen)	0:30 9453,6415
 #: by: peer.weyrauch, bestätigt durch die neue ADFC-Karte:
 tragen (S-Bhf. Raoul-Wallenberg-Str.)	0:30 20041,16296
 #: by: Katharina Hoffmann: vvv
@@ -1031,7 +1029,8 @@ tragen (Treppe)	0:30 20673,7260
 #: by: Bernd (magneticpole):
 Cafeastr. - Gradestr.: Drängelgitter am Bahnübergang	BNP:3 11612,5253
 #: by: Christian Bräuniger:
-Schranke	BNP:3 9265,6361
+#: confirmed_by: srt (aber nur in westl. Richtung, kann leicht auf der anderen Fahrbahn umfahren werden)
+Schranke	BNP:0 9265,6361
 #: by: Wolfhard Schleese: vvv
 Schranke, kann von Fahrrädern umfahren werden	BNP:3 668,25047
 Schranke, kann von Radfahrern umfahren werden	BNP:3 9178,21072

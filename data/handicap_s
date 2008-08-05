@@ -385,6 +385,8 @@ Friedrichsbrücke: Fußgänger	q1 10086,12725 10171,12769
 (Hornbach-Parkplatz): Parkplatzbetrieb	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
 Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346
 (Blücherplatz - Waterlooufer): Fußgänger, Bordsteine	q2 9643,10140 9687,10180
+Arenholzsteig: Bordsteine	q2 8481,6900 8496,6919
+Mergenthalerring: Asphaltschwellen, können umfahren werden	q1+ 14382,8058 14563,8243
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
 Straße 103 (Niederschönhausen): enge Straße 	q1 10914,20065 11051,19789
 An der Heilandsweide: Fußgänger	q1 8203,1194 8305,1148 8539,1025 8687,950
@@ -477,7 +479,7 @@ Im Jagen: Fußgänger, Hundeauslaufgebiet	q1 905,6631 909,6584 1057,6461 1375,6138
 Worpsweder Str.: eng mit ein- und ausparkenden Autos	q1 6191,4923 6203,5138
 Wilseder Str.: eng mit ein- und ausparkenden Autos	q1 6295,5132 6288,4906
 Hünensteig: Fußgänger	q2 6396,5125 6406,5223 6108,5253
-(Götzstr. - Albrechtstr.): Fußgänger	q2 9460,6519 9453,6415 9389,6348 9381,6277 9367,6160 9349,6075
+(Götzstr. - Albrechtstr.): Fußgänger	q2 9460,6519 9453,6415 9404,6392 9389,6348 9381,6277 9367,6160 9349,6075
 (Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Kleingartenanlage, Fußgänger (schieben!), tiefe Steinregenabläufe quer zum Weg	q4 7921,4451 7935,4466 8027,4571 8162,4725
 Mühlenbecker Weg: Fußgänger	q1 20150,15678 20334,16043
 (Nordmannzeile - Vorarlberger Damm): Fußgänger, Kleingartenweg	q1 6807,7262 7231,7394
@@ -978,6 +980,7 @@ Ahornallee: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1589,1
 Lindenallee: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1429,11523 1403,11428
 Alt-Tegel: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1668,20156 1753,20191 1907,20265
 Alt-Tegel: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
+Am Treptower Park: entgegen der Richtung auf dem Parkstreifen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 14739,8919 14614,9052 14563,9106 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
 Groebenufer: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 13206,10651 13077,10747
 Atzpodienstr. (Umgehung auf Gehweg möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 16485,12384 16509,12518 16564,12513
 Behrenstr./Bebelplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9801,12245 9743,12239 9700,12234 9626,12227
