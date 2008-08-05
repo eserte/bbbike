@@ -1149,16 +1149,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_009449',
-         'until' => 1217887200,
-         'text' => 'Greifswalder Str. (Prenzlauer Berg) stadteinwärts zwischen Ostseestr. und Erich-Weinert-Str. Baustelle, Fahrtrichtung gesperrt (bis ca. 04.08.2008)',
-         'from' => 1217625690,
-         'id' => 1423,
-         'data' => 'userdel	1::inwork 13098,15592 12966,15478 12880,15335
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1220133600,
          'text' => 'B 115 Baruth - Jüterbog OD Baruth, Kreisverkehr Sanierungsarbeiten Vollsperrung 22.07.2008-30.08.2008 ',
@@ -1201,14 +1192,13 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'gesperrt'
        },
        undef,
+       undef,
        {
-         'source_id' => 'IM_009533',
-         'until' => 1217880000,
-         'text' => 'Str. d. Pariser Kommune und Lebuser Str. in beiden Richtungen zwischen Weidenweg, bzw. Neue Weberstr. und Karl-Marx-Allee Veranstaltung, Straße vollständig gesperrt (bis 04.08.08, 22 Uhr)',
-         'from' => 1217625939,
-         'id' => 1432,
-         'data' => 'userdel	2::temp 12360,12505 12364,12589
-userdel	2::temp 12891,12549 12869,12425
+         'until' => 1230764399,
+         'text' => 'Bautätigkeit bis Ende 2008, daher Einbahnstraße vom Sterndamm in Richtung Haeckelstr.',
+         'from' => 1217880521,
+         'id' => 1433,
+         'data' => '	1 17379,3932 17346,4031 17341,4046 17297,4159 17261,4267
 ',
          'type' => 'gesperrt'
        }
