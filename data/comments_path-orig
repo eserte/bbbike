@@ -47,7 +47,7 @@ Potsdamer Str. - Am Karlsbad: auf linken Gehweg wechseln	PI; 7980,11070 7968,110
 Am Karlsbad - Potsdamer Str.: entweder Fußgängerampel am Schöneberger Ufer oder an der Lützowstr. benutzen	CP; 8011,11014 7968,11048 7912,10945
 Otto-Braun-Str. - Wadzeckstr.: bereits am Alexanderplatz die Straßenseite wechseln	PI; 11228,12951 11275,13026 11298,13063 11368,13170 11291,13218
 Wadzeckstr. - Otto-Braun-Str.: zunächst auf linken Gehweg weiter fahren	CP; 11291,13218 11368,13170 11446,13294
-Sachsendamm - Naumannstr.: frühzeitig (z.B. an der Hedwig-Dohm-Str.) auf den linken Radweg wechseln	PI; 7606,7611 7699,7571 7716,7625
+Sachsendamm - Südkreuz: frühzeitig (z.B. an der Hedwig-Dohm-Str.) auf den linken Radweg wechseln	PI; 7606,7611 7699,7571 7716,7625
 Naumannstr. - Sachsendamm: auf dem Sachsendamm zunächst den linken Radweg benutzen	CP; 7716,7625 7699,7571 7859,7486
 # XXX leider geht * nicht
 Fußgängerampel benutzen	CP; 9944,13665 9918,13733 9792,13681
@@ -183,7 +183,7 @@ Kehlheimer/Würzburger: Queren der Lietzenburger über Kfz-Furt möglich	CP; 5900,1
 das Portal des Anhalter Bahnhofs links liegen lassen	CP2; 8938,10872 8912,10846
 (Geßlerstr. - Monumentenstr.): Zufahrt über den Parkplatz an der Sportanlage	CP2; 7970,8886 7964,9060
 (Geßlerstr. - Monumentenstr.): Ausgeschildert als Monumentenstr. 13 a-c	CP2; 8014,9126 8009,9063
-(Wintgensstr. - General-Pape-Str.): Zufahrt durch Tor im Wohnhaus, seitlich am Torgitter vorbei	CP2; 8262,7945 8164,7946
+(Wintgensstr. - General-Pape-Str.): Zufahrt durch Tor im Wohnhaus, seitlich am Torgitter vorbei	CP2; 8260,7911 8207,7909
 rechts an der Tiefgarageneinfart vorbei, Vorsicht Kette!	CP; 13375,13986 13485,14054 13585,14117
 Vorsicht Kette! (auf Höhe der Tiefgarageneinfahrt)	CP; 13585,14117 13485,14054 13375,13986
 bereits an der Kirche auf den Gehweg wechseln	CP; 12635,12629 12483,12682 12594,12866
@@ -237,7 +237,7 @@ Helmholtzstr. - Zeppelinstr.: zum Überqueren der Edisonstr. Fußgängerampel benut
 Zeppelinstr. - Helmholtzstr.: zum Überqueren der Edisonstr. Fußgängerampel benutzen	CP; 18053,6920 17924,6967 17845,6986
 Mariendorfer Damm - Heinitzweg: bereits an der Buckower Chaussee die Straßenseite wechseln	PI; 10411,966 10363,1095 10329,1077
 Heinitzweg - Mariendorfer Damm: zunächst auf dem linken Gehweg/Radweg vorfahren	CP; 10329,1077 10363,1095 10315,1223
-Zum Naturpark Schöneberg: Weg zwischen den Parkhäusern nehmen	CP; 7762,7734 7757,7682 7772,7610
+Zum Naturpark Schöneberg: Weg zwischen den Parkhäusern nehmen	CP2; 7757,7682 7772,7610
 Hochspannungsweg - Buckower Damm: zunächst zur Fußgängerampel links vorfahren	CP; 12648,2494 12694,2514 12694,2544
 Hochspannungsweg: zur Überquerung des Buckower Damms Fußgängerampel links nehmen	CP; 12648,2494 12694,2514 12825,2573
 Hochspannungsweg: zur Überquerung des Buckower Damms Fußgängerampel rechts nehmen	CP; 12825,2573 12694,2514 12648,2494

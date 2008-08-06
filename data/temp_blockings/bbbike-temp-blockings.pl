@@ -4388,7 +4388,7 @@ EOF
        text  => 'Riemenschneiderweg zwischen Vorarlberger Damm und Grazer Platz, Baustelle, in beiden Richtungen gesperrt.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 6802,6816 6781,7030 6773,7116
+userdel	2 6793,6814 6770,7027 6762,7109
 EOF
      },
      { from  => 1147816800, # 2006-05-17 00:00
@@ -7270,7 +7270,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004915',
        data  => <<EOF,
-userdel	2::inwork 8306,8722 8237,8685 8206,8596 7932,7790
+userdel	2::inwork 8306,8722 8237,8685 8206,8596 7950,7840
 EOF
      },
      { from  => 1173913200, # 2007-03-15 00:00

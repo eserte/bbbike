@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Cat.pm,v 1.15 2008/08/02 21:21:51 eserte Exp eserte $
+# $Id: Cat.pm,v 1.16 2008/08/06 21:26:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 use File::Basename qw(basename);
 

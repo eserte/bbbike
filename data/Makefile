@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.194 2008/08/02 21:40:32 eserte Exp eserte $
+# $Id: Makefile,v 2.195 2008/08/06 21:25:13 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -550,7 +550,7 @@ qualitaet_l:	qualitaet_l-orig
 
 handicap_s:	handicap_s-orig berlin .gesperrt.tmp
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) handicap_s-orig > handicap_s~
+	$(CONVERT_ORIG) -strip-tendencies handicap_s-orig > handicap_s~
 	$(GREPSTRASSEN) -catrx ':q\d' < .gesperrt.tmp |\
 	    $(GREPSTRASSEN) -inner berlin |\
 	    $(REPLACESTRASSEN) -noglobaldirectives \
@@ -562,7 +562,7 @@ handicap_s:	handicap_s-orig berlin .gesperrt.tmp
 
 handicap_l:	handicap_l-orig berlin .gesperrt.tmp
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) handicap_l-orig > handicap_l~
+	$(CONVERT_ORIG) -strip-tendencies handicap_l-orig > handicap_l~
 	$(GREPSTRASSEN) -catrx ':q\d' < .gesperrt.tmp |\
 	    $(GREPSTRASSEN) -outer berlin |\
 	    $(REPLACESTRASSEN) -noglobaldirectives \
