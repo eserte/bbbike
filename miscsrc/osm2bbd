@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd,v 1.28 2008/07/14 20:54:49 eserte Exp $
+# $Id: osm2bbd,v 1.29 2008/08/07 04:49:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -214,6 +214,7 @@ if ($map) {
 
 my $tp;
 eval {
+    die "No terminal" if !is_interactive();
     require Time::Progress;
     $tp = Time::Progress->new;
     $tp->attr(min => 0, max => 2 * $#osm_files + 1);
@@ -786,6 +787,27 @@ sub epoch2isodate (;$) {
     sprintf("%04d%02d%02d%02d%02d%02d",
 	    $l[5]+1900, $l[4]+1, $l[3],
 	    $l[2],      $l[1],   $l[0]);
+}
+# REPO END
+
+# REPO BEGIN
+# REPO NAME is_interactive /home/e/eserte/work/srezic-repository 
+# REPO MD5 87e9e2500fbe4a3ffe5f977de8513d47
+sub is_interactive {
+    if ($^O eq 'MSWin32' || !eval { require POSIX; 1 }) {
+	# fallback
+	return -t STDIN && -t STDOUT;
+    }
+
+    # from perlfaq8
+    open(TTY, "/dev/tty") or die $!;
+    my $tpgrp = POSIX::tcgetpgrp(fileno(*TTY));
+    my $pgrp = getpgrp();
+    if ($tpgrp == $pgrp) {
+	1;
+    } else {
+	0;
+    }
 }
 # REPO END
 

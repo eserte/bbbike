@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.42 2008/07/24 19:44:41 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.43 2008/08/07 05:11:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.42 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.43 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -126,7 +126,7 @@ sub add_button {
 	       -command => sub { tracks_in_region() },
 	      ],
 	      [Button => "Update tracks and matches.bbd",
-	       -command => sub { make_gps_target("tracks develtracks ../../tmp/unique-matches.bbd") },
+	       -command => sub { make_gps_target("tracks tracks-accurate tracks-accurate-categorized unique-matches") },
 	      ],
 	      [Button => "Add streets-accurate.bbd (all accurate GPS tracks)",
 	       -command => sub {
