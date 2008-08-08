@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeStats.pm,v 1.12 2005/05/21 11:48:54 eserte Exp $
+# $Id: BBBikeStats.pm,v 1.13 2008/08/07 18:51:21 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ package BBBikeStats;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Util;
 use BBBikeUtil;
@@ -50,7 +50,7 @@ sub calculate {
     $net{Handicap}     = $dataset->get_net("str","h","all",-nettype => "cat");
     $net{Cyclepaths}   = $dataset->get_net("str","rw","all",-nettype => "cat");
     $net{Category}     = $dataset->get_net("str","s","all",-nettype => "cat");
-    #XXX to be continued.... $net{Fragezeichen} = $dataset->get_net("str","fz","all",-nettype => "cat");
+    $net{Fragezeichen} = $dataset->get_net("str","fz","all",-nettype => "cat");
 
     for my $i (0 .. $#path-1) {
 	my $hop_len = Strassen::Util::strecke_s($path[$i], $path[$i+1]);
@@ -58,12 +58,18 @@ sub calculate {
 	for my $def ([Quality => "Q0"],
 		     [Handicap => "q0"],
 		     [Cyclepaths => "RW0"],
-		     [Category => "N"],#XXX better solution? use unknown category?
+		     [Category => "N"],#XXX may the fallback solution ever happen?
 		    ) {
 	    my($member, $fallback) = @$def;
 
-	    my $cat = $net{$member}{Net}{$path[$i]}{$path[$i+1]} || $fallback;
-	    $cat = "RW1" if $cat eq 'RW'; # comments_cyclepath special handling
+	    my $cat = $net{$member}{Net}{$path[$i]}{$path[$i+1]};
+	    if (!defined $cat) {
+		if ($net{Fragezeichen}{Net}{$path[$i]}{$path[$i+1]}) {
+		    $cat = "?";
+		} else {
+		    $cat = $fallback;
+		}
+	    }
 	    $len{$member}->{$cat} += $hop_len;
 	    push @{ $coords{$member}->{$cat} }, [$path[$i], $path[$i+1]];
 	}
@@ -99,6 +105,7 @@ sub tk_display_result {
     if ($args{-reusewindow} &&
 	Tk::Exists($t = $top->Subwidget("Statistics"))) {
 	$_->destroy for ($t->children);
+	$t->raise;
     } else {
 	$t = $top->Toplevel(-title => M("Statistik"));
 	$top->Advertise("Statistics" => $t);
@@ -144,6 +151,22 @@ sub tk_display_result {
     Tk::grid($t->Frame(-height => 1, -background => "black"),
 	     -sticky => "ew", -columnspan => 10);
 
+    my $add_fragezeichen_row = sub {
+	my($type) = @_;
+	my $cat = "?";
+	if ($res->{$type}{$cat} > 0) {
+	    Tk::grid($t->Button(-text => "unbekannt",
+				-bg => $category_color{$cat}||"white",
+				-fg => _readable_fg($t,$category_color{$cat}),
+				-command => [$args{-markcommand}, $res->{$type."Coords"}{$cat}]),
+		     $t->Label(-text => sprintf "%.1f km", ($res->{$type}{$cat}||0)/1000),
+		     $t->Label(-text => sprintf "%d%%", ($res->{$type."%"}{$cat}||0)),
+		     -sticky => "we");
+	}
+    };
+
+    ######################################################################
+    # Quality
     Tk::grid($t->Label(-text => M("Straßenqualität"), -font => $font{"bold"}),
 	     -sticky => "w", -columnspan => 3);
     $grid_row{"Quality1"} = ($t->gridSize)[1]-1;
@@ -156,11 +179,14 @@ sub tk_display_result {
 		 $t->Label(-text => sprintf "%d%%", ($res->{"Quality%"}{$cat}||0)),
 		 -sticky => "we");
     }
+    $add_fragezeichen_row->("Quality");
     $grid_row{"Quality2"} = ($t->gridSize)[1]-1;
 
     Tk::grid($t->Frame(-height => 1, -background => "black"),
 	     -sticky => "ew", -columnspan => 10);
 
+    ######################################################################
+    # Handicap
     Tk::grid($t->Label(-text => M("Sonstige Beeinträchtigungen"), -font => $font{"bold"}),
 	     -sticky => "w", -columnspan => 3);
     $grid_row{"Handicap1"} = ($t->gridSize)[1]-1;
@@ -173,15 +199,24 @@ sub tk_display_result {
 		 $t->Label(-text => sprintf "%d%%", ($res->{"Handicap%"}{$cat}||0)),
 		 -sticky => "we");
     }
+    $add_fragezeichen_row->("Handicap");
     $grid_row{"Handicap2"} = ($t->gridSize)[1]-1;
 
     Tk::grid($t->Frame(-height => 1, -background => "black"),
 	     -sticky => "ew", -columnspan => 10);
 
+    ######################################################################
+    # Cyclepaths
     Tk::grid($t->Label(-text => M("Radwege"), -font => $font{"bold"}),
 	     -sticky => "w", -columnspan => 3);
     $grid_row{"Cyclepaths1"} = ($t->gridSize)[1]-1;
-    for my $cat (sort grep { /^RW\d$/ } keys %$category_attrib) {
+    for my $cat (map {
+	$_->[1];
+    } sort {
+	$a->[0] <=> $b->[0]
+    } map {
+	[$_ =~ m{RW(\d+)} ? $1 : 1, $_ ]
+    } grep { /^RW\d?$/ } keys %$category_attrib) {
 	Tk::grid($t->Button(-text => $category_attrib->{$cat}[0],
 			    -bg => $category_color{$cat}||"white",
 			    -fg => _readable_fg($t,$category_color{$cat}),
@@ -190,11 +225,14 @@ sub tk_display_result {
 		 $t->Label(-text => sprintf "%d%%", ($res->{"Cyclepaths%"}{$cat}||0)),
 		 -sticky => "we");
     }
+    $add_fragezeichen_row->("Cyclepaths");
     $grid_row{"Cyclepaths2"} = ($t->gridSize)[1]-1;
 
     Tk::grid($t->Frame(-height => 1, -background => "black"),
 	     -sticky => "ew", -columnspan => 10);
 
+    ######################################################################
+    # Street categories
     Tk::grid($t->Label(-text => M("Straßenkategorien"), -font => $font{"bold"}),
 	     -sticky => "w", -columnspan => 3);
     $grid_row{"Category1"} = ($t->gridSize)[1]-1;
@@ -207,8 +245,10 @@ sub tk_display_result {
 		 $t->Label(-text => sprintf "%d%%", ($res->{"Category%"}{$cat}||0)),
 		 -sticky => "we");
     }
+    $add_fragezeichen_row->("Category");
     $grid_row{"Category2"} = ($t->gridSize)[1]-1;
 
+    ######################################################################
     if ($args{-updatecommand}) {
 	Tk::grid($t->Frame(-height => 1, -background => "black"),
 		 -sticky => "ew", -columnspan => 10);

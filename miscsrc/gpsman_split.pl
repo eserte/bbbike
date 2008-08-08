@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman_split.pl,v 1.8 2008/05/02 18:43:28 eserte Exp $
+# $Id: gpsman_split.pl,v 1.9 2008/08/08 20:01:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -163,3 +163,19 @@ sub monthabbrev_number {
 # REPO END
 
 __END__
+
+=head1 EXAMPLES
+
+Howto organize your GPS tracks using gpsman and gpsman_split.pl.
+
+    TMPTRACKDIR=$HOME/trash
+    BBBIKEDIR=$HOME/src/bbbike
+    rm -f $TMPTRACKDIR/track.trk $TMPTRACKDIR/trash/wpt.wpt
+    gpsman getwrite TR GPSMan $TMPTRACKDIR/track.trk
+    gpsman getwrite WP GPSMan $TMPTRACKDIR/wpt.wpt
+    $BBBIKEDIR/miscsrc/gpsman_split.pl -bydate $TMPTRACKDIR/track.trk
+    $BBBIKEDIR/miscsrc/gpsman_split.pl -bydate $TMPTRACKDIR/wpt.wpt
+    # now copy the files from /tmp/gpsmansplit manually to your track dir or use tkincorporate
+    tkincorporate /tmp/gpsmansplit $BBBIKEDIR/misc/gps_data
+
+=cut
