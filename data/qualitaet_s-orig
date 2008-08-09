@@ -1437,7 +1437,9 @@ Wattstr. (Oberschöneweide): sehr schlechtes Kopfsteinpflaster	Q3 17620,7260 1764
 Karl-Elsasser-Str.: Asphalt	Q0 11943,5825 12063,5927 12160,5997 12270,6025
 Andreasberger Str.: Kopfsteinpflaster	Q2 12053,6185 12053,6042 12063,5927
 Ellricher Str.: Kopfsteinpflaster	Q2 12246,6227 12128,6201 12053,6185
-Sangeallee: Asphalt, mit einigen schadhaften Stellen	Q1 18124,9056 18247,9158 18319,9218
+#: corrected_by: srt (Asphalt, mit einigen schadhaften Stellen -> Richtung Südwesten Kopfsteinpflaster)
+Sangeallee: Kopfsteinpflaster	Q2; 18457,9343 18319,9218 18247,9158 18124,9056
+Sangeallee: Asphalt	Q0; 18124,9056 18247,9158 18319,9218 18457,9343
 #: by: Dave Wilke
 #: corrected_by: srt (war "gutes Kopfsteinpflaster")
 Dorotheastr.: schlechtes Kopfsteinpflaster	Q3 18319,9218 18347,9145 18406,9052 18471,8957 18548,8942 18653,8922 18778,8895
