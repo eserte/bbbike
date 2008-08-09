@@ -130,14 +130,13 @@ Havelfähre - Brandenburg: Planung des Havelradwegs, genaue Strecke, Realisierung
 #: last_checked: 2006-10-14
 Lichterfeld - Besucherbergwerk F60: Radweg in Bau	? 37870,-89814 37883,-89858 37885,-89996 37960,-90233 38002,-90351 38101,-90412
 # XXX del by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20061103.1420.49764.html #: last_checked: 2007-12-22 Frankfurter Allee am S-Bhf. Richtung Westen: Radstreifen soll Radweg ablösen (zurzeit ist bereits ein provisorischer Radstreifen angelegt)	?; 15349,12073 15117,12106
-#: last_checked: 2008-05-12
-Georg-Löwenstein-Straße/Hauptstr: Ist das Überqueren der Straßenbahntrasse an der Hauptstr. möglich?	? 16156,9980 16191,10035
 #: last_checked: 2007-08
 Bertinistr./Bertiniweg: hier soll demnächst die Mauerweg-Alternative verlaufen	? -12166,1384 -12149,1436 -12181,1526 -12184,1619 -12153,1787 -12164,1834 -12204,1869 -12266,1893 -12335,1928 -12436,2015 -12484,2024 -12515,2067 -12527,2134 -12585,2143 -12676,2088 -12713,2000
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1957
 Radweg von Penkow nach Malchow: beidseitig, asphaltiert, 2,25m breit, 2008-08-01 fertiggestellt	? -54521,116188 -55301,116578 -57151,117294 -57614,117523 -57683,117755 -58208,117685
 #: by: http://www.morgenpost.de/content/2008/02/03/berlin/944972.html
 Prinzregentenstr. soll Fahrradstraße werden	? 5630,7875 5634,8004 5641,8137 5669,8207 5666,8345 5660,8591 5655,8828 5648,9010 5633,9263 5628,9353 5630,9592
+Bergstr. (Wildau): Tunnel statt Bahnübergang in Bau	?::inwork 26381,-9962 26308,-9995 25700,-9502
 #: section ^^^
 #: section ^^^
 #
@@ -364,6 +363,7 @@ Helmut-Just-Str. (Hohen Neuendorf): Asphalt Q1	? 4054,29959 4132,29954 4487,2999
 #
 #  ÖFFENTLICHE FRAGEZEICHEN
 #
+Fischerstr.: Qualität?	? 15982,10765 16080,10743
 Neuenhagen, Richtung Schöneiche: existiert hier ein Radweg (wahrscheinlich ab 2006-12-31)?	? 31146,12747 31059,12471 31037,12174
 Buch - Schwanebeck: existiert hier ein Radweg (wahrscheinlich ab 2006-09-30)?	? 18562,24975 19395,24634
 Bis zum Güterfelder Eck: existiert hier ein Radweg (wahrscheinlich ab 2006-09-26)?	? -6285,-3363 -5736,-3629
@@ -517,12 +517,14 @@ Wendisch-Rietz - Radlow: Qualität?	? 54370,-20977 55509,-18644
 Lianenweg: Qualität? Durchfahrt möglich?	? 19686,1542 19955,1509
 Freiheitstr., Wildau: Qualität?	? 25187,-8934 25875,-8746 26563,-8522 26749,-8475
 Str. der Freiheit, Zeuthen: Qualität?	? 25281,-6921 25981,-7196
+#: XXX von der Bahn aus gesehen: westl. des Bahnübergangs Kopfsteinpflaster
 Westkorso, Zeuthen: Qualität?	? 25981,-7196 26244,-7147 26609,-7136
 Jahnstr., Wildau: Qualität?	? 25875,-8746 25700,-9502
 Forstallee, Miersdorf: Qualität?	? 24528,-7126 24743,-6606 25624,-6363
 Waltersdorf - Karlshof: laut "Berliner Umland" witterungsabhängige Strecke; Schlenker um See notwendig? Möglicherweise wegen der neuen A113 unterbrochen?	? 21084,-4728 20532,-4674 20580,-4985 20075,-5417 19866,-5382 19809,-5557 19945,-5661 19915,-6315 19907,-6772 19951,-6902 19817,-7484
 Kiekebusch - Karlshof: laut "Berliner Umland" geeignete Strecke auf Straßen	? 20892,-6636 20577,-6982 20255,-7591
 Karlshof - Brusendorf: laut "Berliner Umland" geeigneter Radweg (möglicherweise asphaltiert)	? 19092,-9677 18847,-9629 18205,-10432
+#: XXX von der Bahn aus gesehen: asphaltiert (zumindest im mittleren Abschnitt):
 Eichwalde - Zeuthen: laut "Berliner Umland" witterungsabhängige Strecke	? 25185,-3955 25550,-5174
 Friesenstr. - Bahnstr. - Rheinstr. - Birkenstr. (Eichwalde, Zeuthen, Wildau): laut "Berliner Umland" geeignete Strecke auf Straßen	? 25550,-5174 25595,-5527 25835,-5983 25907,-6063 26001,-6257 26089,-6584 26048,-6587 26244,-7147 26359,-7450 26563,-8522
 Günterberg - Biesenbrow: laut "Regio-Cart" gut geeignet	? 47124,77624 48203,79315 49700,79603 50088,79574 50477,80139 50593,80084
@@ -627,7 +629,7 @@ Storkow - Büssow: Qualität? zumindest die östliche Ende asphaltiert	? 68928,1001
 Büssow - Penkun: Qualität? Feldweg!	? 68107,99606  67712,99425 66026,99515
 Büssow - Penkun: Qualität? (zumindest das westliche Ende wahrscheinlich asphaltiert)	? 67815,99673 67833,99771 67413,100429 66654,100131 66523,99936 66096,99655 66026,99515 65831,99460 65115,99600
 #: last_checked: 2008-05-25 (von der Treskowallee aus)
-Laut "Berliner Umland" verläuft die R1 hier entlang, aber es gibt (noch) keine Ausschilderung	? 17527,7812 17678,7850 17775,7874 17987,7973 18387,7742
+Laut "Berliner Umland" verläuft die R1 hier entlang, aber es gibt (noch) keine Ausschilderung	? 17527,7812 17590,7828 17678,7850 17775,7874 17987,7973 18325,7778 18409,7776
 #: XXX Genaue Wegführung?
 Eberswalde - Spechthausen: Qualität? Straßennamen?	? 35362,48503 35312,48225 35485,48132 35428,47961
 #: XXX Genaue Wegführung?
@@ -1210,7 +1212,8 @@ Cimbernstr.: Qualität?	? -3753,2241 -3703,2137 -3503,1988 -3299,1838
 Selchow - Kiekebusch: Qualität zwischen Kreuzung Diepensee-Rotberg und Kreuzung Dahlewitz/Zeuthen (wahrscheinlich Plattenweg)	? 18764,-5531 19915,-6315
 Prieroser Str.: Qualität?	? 28164,-19771 28231,-19792 28421,-19768
 Prieroser Str.: Qualität?	? 28540,-19744 29524,-19715
-Neubrücker Str.: Qualität?	? 28231,-19792 28336,-19948 28363,-19964 28514,-20071
+Neubrücker Str.: Qualität?	? 28231,-19792 28336,-19948
+Neubrücker Str.: Qualität?	? 28363,-19964 28514,-20071
 Bellevuepark: ist ein Weg für Radfahrer offiziell freigegeben?	? 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340
 Idsteiner Str.: Qualität (laut ADFC-Karte zwischen Königsweg und Hegauer Weg mäsig, danach bis Ludwigsfelder Str. gut geeignet)?	? -163,1564 -284,2009 -326,2177 -409,2510
 #: XXX: schien mir auch von der S-Bahn so auszusehen:
@@ -1231,6 +1234,7 @@ Bahnübergang	? 19302,-734
 #: XXX Zumindest in Höhe des S-Bahnübergangs asphaltiert; dort existiert für wenige Meter ein benutzungspflichtiger Zweirichtungsradweg auf der Südostseite
 Bohnsdorfer Chaussee: Qualität?	? 19704,-490 19422,-655 19333,-714 19302,-734 19248,-771 19054,-903 18773,-1095
 Gartenstr.: Qualität?	? 18773,-1095 18892,-1273
+#: XXX von der Bahn aus gesehen sah der westliche Abschnitt asphaltiert aus: 
 Waldstr.: Qualität?	? 24456,-3327 24539,-3292 24553,-3281 24872,-3095 24987,-3015 25182,-2915 25580,-2673 25958,-2455
 Bahnhofstr.: Qualität in diesem Abschnitt (ostl. d. Bergstr.)?	? -2657,-2907 -2720,-2937 -2817,-2967 -2878,-3004
 Scharnweberstr. (Friedrichshagen): Qualität?	? 25706,4723 25720,4832
@@ -1344,8 +1348,6 @@ Krugsdorf - Koblentz: Qualität?	? 57864,125082 57736,125319 57711,125655 57622,1
 Hoffmannstr. (Adlershof): Qualität?	? 20280,3996 20467,4122 20623,4227
 Grieben - Vielitz: Qualität?	? -14966,56468 -15237,56681 -15453,56959 -15676,57044 -15819,57248 -15984,57315 -16206,57373 -16608,57867 -16755,57921 -16860,58002
 Vielitz - B167: Qualität?	? -16206,57373 -16069,57172 -15773,56724 -15697,55703 -15581,55353 -15335,54980 -15127,54664
-Salzmannstr. - Betriebsbhf. Rummelsburg: existiert eine für Radfahrer befahrbare Verbindung? Qualität?	? 16847,10092 16839,10064 16828,10027 16841,9995 16811,9937
-Kraatzgraben/Kleingärten: besteht hier ein befahrbarer Weg für Radfahrer? Qualität?	? 16839,10064 16666,10219 16464,10467 16297,10636 16246,10641 16187,10587
 Dubrowplatz: Qualität (wahrscheinlich schlechtes Kopfsteinpflaster)? Hat der Dubrowplatz auch eine nördliche Fahrbahn?	? -1945,2975 -1814,3021
 McNair-Promenade: Wie ist die Qualität, die ADFC-Karte meint "schlecht geeignet"?	? 2163,1499 2077,1460 1975,1413 1882,1376 1785,1338
 Hobrechtsfelde - Gorinsee: Qualität (wahrscheinlich fester Sandweg)?	? 16301,29192 15621,29290
@@ -2075,7 +2077,6 @@ Stienitzseestr.: Qualität?	? 20329,3928 20522,4056 20694,4177
 Waldstr. (Adlershof): Qualität?	? 20834,4035 20790,4114 20694,4177 20623,4227 20540,4285
 #: XXX unklarer Eintrag von anonymous: guter Asphalt (sieht eher nach Beton aus), aber Bordsteinkanten?
 Martiusweg: Qualität?	? 9411,1406 9314,1451 9236,1484 9155,1519 9145,1527
-Ingelheimer Str.: Ist die Ingelheimer Str. eine Einbahnstraße? Wenn ja, auch für Radfahrer gültig?	? 19075,8590 19010,8569 18951,8574 18884,8586
 #: XXX: sah von der S-Bahn so aus, evtl. erst 10 Meter nach der Kreuzung:
 Rosenstr.: Ist die Rosenstr. eine Fußgängerzone?	? 10398,12903 10466,12827 10489,12803
 #: XXX anonymous meint nur "gut": vvv

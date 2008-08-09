@@ -225,7 +225,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'gesperrt',
        source_id => 'LMS_1134638526559',
        data  => <<EOF,
-userdel	2 15751,10582 16032,10842
+userdel	2 15751,10582 15982,10765 16032,10842
 userdel	2 15751,10582 15629,10481
 EOF
      },
@@ -3154,8 +3154,8 @@ EOF
        text  => 'B 246; (Bauptstr.); Bahnübergang in OL Bestensee Gleisbauarbeiten Vollsperrung 30.10.2005-02.11.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 26639,-17861 26752,-17872
-userdel	2 26832,-17882 26752,-17872
+userdel	2 26639,-17861 26706,-17867
+userdel	2 26832,-17882 26706,-17867
 EOF
      },
      { from  => 1130277600, # 2005-10-26 00:00
@@ -3608,7 +3608,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002885',
        data  => <<EOF,
-userdel	q4; 15629,10481 15751,10582 16032,10842
+userdel	q4; 15629,10481 15751,10582 15982,10765 16032,10842
 EOF
      },
      { from  => undef, # 
@@ -4520,7 +4520,7 @@ EOF
        text  => 'B 179 Spreewaldstr. OD Zeesen, Einmünd. zur K.-Liebknecht-Str. Umbau Knotenpunkt Vollsperrung 29.05.2006-19.06.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 26758,-15727 26699,-15709 26583,-15677
+userdel	q4 26758,-15727 26650,-15695 26583,-15677
 EOF
      },
      { from  => 1148853600, # 2006-05-29 00:00
@@ -4749,7 +4749,7 @@ EOF
        text  => 'B 246 OL Bestensee, Hauptstraße OL Bestensee, Hauptstraße, Bahnübergang Bauarbeiten am Gleiskörper Vollsperrung 30.06.2006-04.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 26639,-17861 26752,-17872 26832,-17882
+userdel	2::inwork 26639,-17861 26706,-17867 26832,-17882
 EOF
      },
      { from  => 1150840800, # 2006-06-21 00:00
@@ -5557,7 +5557,7 @@ EOF
        text  => 'Hegemeisterweg ist vom 7. August 2006 bis zum 30. November 2006 nicht benutzbar. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 17775,7874 17987,7973 18387,7742
+userdel	2::inwork 17775,7874 17987,7973 18325,7778 18387,7742
 EOF
      },
      { from  => 1156975200, # 2006-08-31 00:00
@@ -6450,7 +6450,7 @@ EOF
        text  => 'B 246 Bahnübergang in der OD Bestensee Umbauarbeiten Vollsperrung 06.11.2006-17.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 26639,-17861 26752,-17872 26832,-17882
+userdel	2::inwork 26639,-17861 26706,-17867 26832,-17882
 EOF
      },
      { from  => 1160604000, # 2006-10-12 00:00
