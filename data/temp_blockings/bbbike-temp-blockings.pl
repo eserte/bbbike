@@ -9817,7 +9817,7 @@ userdel	2::inwork -54890,-35286 -54891,-35326 -54881,-35591
 EOF
      },
      { from  => 1189288800, # 2007-09-09 00:00
-       until => 1603753200, # 2020-10-27 00:00
+       until => 1218265600, # 1603753200 FALSCH! 2020-10-27 00:00
        text  => 'B 096 Bahnhofstraße OD Finsterwalde, Kreuzung mit Berliner Str. (L601) Straßenbau Sperrung B96 Ri. Luckau 10.09.2007-26.10.2020 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -11922,9 +11922,9 @@ EOF
 userdel	q4::inwork 11862,-99775 11974,-99110
 EOF
      },
-     { from  => 1216159200, # 2008-07-16 00:00
-       until => 1219010400, # 2008-08-18 00:00
-       text  => 'L 029 Lanke - Zehlendorf nördl. Wandlitz, zw. B109 und Bahnübergang Bau Kreisverkehr Vollsperrung 17.07.2008-17.08.2008 ',
+     { from  => 1218837600, # 2008-08-16 00:00
+       until => 1230764400, # 2009-01-01 00:00
+       text  => 'L 029 Lanke - Zehlendorf nördl. Wandlitz, ab B109 in Ri. Stolzenhagen Bau Kreisverkehr Vollsperrung 17.08.2008-31.12.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 15403,40364 14713,40426
@@ -12057,8 +12057,8 @@ userdel	2::temp 8595,12066 8600,12165 8515,12242
 EOF
      },
      { from  => 1217625690, # 2008-08-01 23:21
-       until => 1217887200, # 2008-08-05 00:00
-       text  => 'Greifswalder Str. (Prenzlauer Berg) stadteinwärts zwischen Ostseestr. und Erich-Weinert-Str. Baustelle, Fahrtrichtung gesperrt (bis ca. 04.08.2008)',
+       until => Time::Local::timelocal(reverse(2008-1900,9-1,15,0,0,0)), # 1217887200, # 2008-08-05 00:00
+       text  => 'Greifswalder Str. (Prenzlauer Berg) stadteinwärts zwischen Ostseestr. und Erich-Weinert-Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte September 2009)',
        type  => 'gesperrt',
        source_id => 'IM_009449',
        data  => <<EOF,
@@ -12157,6 +12157,87 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	1 17379,3932 17346,4031 17341,4046 17297,4159 17261,4267
+EOF
+     },
+     { from  => 1218264643, # 2008-08-09 08:50
+       until => 1218420000, # 2008-08-11 04:00
+       text  => 'Spandauer-Damm-Brücke Baustelle, unter Umständen vollständig gesperrt (bis 11.08.08, 4 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_009598',
+       data  => <<EOF,
+userdel	2::inwork 2157,12389 2224,12397
+EOF
+     },
+     { from  => 1218578400, # 2008-08-13 00:00
+       until => 1219096800, # 2008-08-19 00:00
+       text  => 'B 087 Müllroser Chaussee zw. Brücke A 12 und Siedlung Markendorf Deckenerneuerung Vollsperrung 14.08.2008-18.08.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 84692,-9145 85598,-8331
+EOF
+     },
+     { from  => 1218146400, # 2008-08-08 00:00
+       until => 1218405600, # 2008-08-11 00:00
+       text  => 'B 101 OD Elsterwerda, zw. Bahnunterführ.u. Berliner Str. Deckeneinbau Vollsperrung 09.08.2008-10.08.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 18928,-103699 18887,-104083
+EOF
+     },
+     { from  => 1218232800, # 2008-08-09 00:00
+       until => 1218405600, # 2008-08-11 00:00
+       text  => 'B 168 OD Peitz, zw. Kreisverkehr und Spreewaldstr. 55. Fischerfest Vollsperrung 10.08.2008-10.08.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 80426,-59644 80046,-59594
+EOF
+     },
+     { from  => 1218319200, # 2008-08-10 00:00
+       until => 1220306400, # 2008-09-02 00:00
+       text  => 'B 273 Bernauer Str., Schloßplatz OD Oranienburg Deckeneinbau Vollsperrung 11.08.2008-01.09.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -1553,38501 -1517,38543 -1500,38565
+EOF
+     },
+     { from  => 1218924000, # 2008-08-17 00:00
+       until => 1225494000, # 2008-11-01 00:00
+       text  => 'L 031 Prenden - Zerpenschleuse Graben zw. Abzw. Marienwerder und Zerpenschleuse Brückenneubau Vollsperrung 18.08.2008-31.10.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 20048,48519 20965,48351
+EOF
+     },
+     { from  => 1218319200, # 2008-08-10 00:00
+       until => 1220652000, # 2008-09-06 00:00
+       text  => 'L 033 Strausberg - Berlin zw. AS Berlin-Marzahn und Abzw. Neuenhagen Deckenerneuerung Vollsperrung 11.08.2008-05.09.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 28569,16324 27328,15740
+EOF
+     },
+     { from  => 1218319200, # 2008-08-10 00:00
+       until => 1230073200, # 2008-12-24 00:00
+       text  => 'L 216 Gollin - Templin OD Vietmannsdorf, zw. Golliner Str. und OA Ri. Templin Brücken- und Straßenbau Vollsperrung 11.08.2008-23.12.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 17653,71852 17636,72217 17483,72454
+EOF
+     },
+     { from  => 1218319200, # 2008-08-10 00:00
+       until => 1219701600, # 2008-08-26 00:00
+       text  => 'L 362 Müncheberg - Wulkow OL Wulkow Instandsetzung Durchlass Vollsperrung 11.08.2008-25.08.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 66171,19651 66523,19497
+EOF
+     },
+     { from  => 1219788000, # 2008-08-27 00:00
+       until => 1220306400, # 2008-09-02 00:00
+       text  => 'L 601 Berliner Str. OL Finsterwalde, zw. B 96 Bahnhofstr. und Str. der Jugend Sängerfest Vollsperrung 28.08.2008-01.09.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 33060,-85292 33101,-85749
 EOF
      },
     );
