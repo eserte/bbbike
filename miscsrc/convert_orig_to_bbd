@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: convert_orig_to_bbd,v 1.8 2007/12/24 00:21:02 eserte Exp $
+# $Id: convert_orig_to_bbd,v 1.9 2008/08/10 18:57:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -30,15 +30,17 @@ my $do_strip_tendencies;
 my $do_strip_future_categories;
 my $un_utf8_ify = 0;
 my @keep_directive;
-
+my @special;
 if (!GetOptions("strip-tendencies!"        => \$do_strip_tendencies,
 		"strip-future-categories!" => \$do_strip_future_categories,
 		"unutf8ify!"               => \$un_utf8_ify,
 		'keep-directive=s@'	   => \@keep_directive,
+		'special=s@'		   => \@special,
 	       )) {
     die <<EOF;
 usage: $0 [-strip-tendencies] [-strip-future-categories] [-unutf8ify]
           [-keep-directive dir [-keep-directive ...]]
+	  [-special ... [-special ...]]
 	origbbd > bbd
 EOF
 }
@@ -88,6 +90,11 @@ while(1) {
 	$r->[Strassen::NAME] .= " ($dir->{append_comment}->[0])";
     }
 
+    for my $special (@special) {
+	no strict 'refs';
+	&{"special_".$special."_handler"}($r, $dir);
+    }
+
     unutf8ify($r->[Strassen::NAME]);
 
     $new_s->push($r);
@@ -119,6 +126,19 @@ print $new_s->as_string;
 sub unutf8ify {
     return if !$un_utf8_ify;
     $_[0] = unidecode_any($_[0], "iso-8859-1");
+}
+
+sub special_as_of_handler {
+    my($r, $dir) = @_;
+    if ($dir->{as_of}) {
+	my($y,$m,$d) = $dir->{as_of}->[0] =~ m{^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?$};
+	if (defined $y) {
+	    my $date = (defined $d ? "$d.$m.$y" :
+			defined $m ? "$m/$y" : # with day using ".", without using "/", seems to be natural in German
+			$y);
+	    $r->[Strassen::NAME] .= " (Stand $date)"; # XXX other lang/english version?
+	}
+    }
 }
 
 # REPO BEGIN

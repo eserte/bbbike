@@ -306,6 +306,11 @@ data.
 A free text note, which refers to more information. This should be
 typically a URL.
 
+=item C<as_of: I<date>>
+
+Last verified at the given date. The date should be in a ISO-8601-like
+notation, with possible abbreviations: YYYY-MM-DD or YYYY-MM or YYYY.
+
 =item C<url: I<string>>
 
 An (official) URL referring to more information.

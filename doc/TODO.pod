@@ -1520,6 +1520,21 @@ windchill program in bin/sh or devel. Frage: wie und wo soll die
 Temperatur angezeigt werden? Im CGI? In der Perl/Tk-Version als Plugin
 oder Standard?
 
+=item * (H1) (feature)
+
+New plugin which links to weather data. First, it would be nice to
+automatically find a nearby weather station. One could use the WMO
+worldwide station list (e.g.
+http://www.wetterzentrale.de/klima/stnlst.html or
+http://www.htw-dresden.de/~kleist/wx_stations_ct.html, the latter
+a html-ized version, the former a nearly text-only version).
+
+Second, link to archived or current weather data. Archived weather
+data are useful in conjunction with saved GPS tracks or geocoded
+photos, in which case we have a date to link to. Otherwise use some
+current date. Possible sources: wetteronline (web link possible),
+local archives.
+
 =back
 
 =head2 MacOSX specific

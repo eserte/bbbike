@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.19 2008/07/06 11:21:13 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.20 2008/08/10 21:54:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2007,2008 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $geometry $viewer_menu);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(file_name_is_absolute);
 use File::Basename qw(dirname);
@@ -311,6 +311,9 @@ sub show_image_viewer {
 						  -command => sub { $image_viewer_toplevel->destroy },
 						 )->pack(-side => "right", -anchor => "e");
 		    $main::balloon->attach($close_button, -msg => "Viewer schließen") if ($main::balloon);
+		    for my $key (qw(Escape q)) {
+			$image_viewer_toplevel->bind("<$key>" => sub { $image_viewer_toplevel->destroy });
+		    }
 
 		    my $orig_button = $f->Button(-class => "SmallBut",
 						 -text => "Orig",
@@ -401,33 +404,55 @@ sub show_image_viewer {
 		my $prev_inx = $next_image_index->(-1);
 		my $next_inx = $next_image_index->(+1);
 
-		my @args = (\&show_image_viewer, -canvas => $c, -allimages => $all_image_inx, '-current');
+		my @args     = (-canvas => $c, -allimages => $all_image_inx, '-current');
+		my @cmd_args = (\&show_image_viewer, @args);
+		# First
 		if (@$all_image_inx > 1 && defined $prev_inx) {
-		    $image_viewer_toplevel->Subwidget("FirstButton")->configure(-command => [@args, $all_image_inx->[0]],
+		    $image_viewer_toplevel->Subwidget("FirstButton")->configure(-command => [@cmd_args, $all_image_inx->[0]],
 										-state => "normal");
+		    $image_viewer_toplevel->bind("<Home>" => sub { show_image_viewer(@args, $all_image_inx->[0]) });
 		} else {
 		    $image_viewer_toplevel->Subwidget("FirstButton")->configure(-state => "disabled");
+		    $image_viewer_toplevel->bind("<Home>" => \&Tk::NoOp);
 		}
+		# Prev
 		if (defined $prev_inx) {
-		    $image_viewer_toplevel->Subwidget("PrevButton")->configure(-command => [@args, $prev_inx],
+		    $image_viewer_toplevel->Subwidget("PrevButton")->configure(-command => [@cmd_args, $prev_inx],
 									       -state => "normal");
+		    for my $key ('BackSpace', 'Left') {
+			$image_viewer_toplevel->bind("<$key>" => sub { show_image_viewer(@args, $prev_inx) });
+		    }
 		} else {
 		    $image_viewer_toplevel->Subwidget("PrevButton")->configure(-state => "disabled");
+		    for my $key ('BackSpace', 'Left') {
+			$image_viewer_toplevel->bind("<$key>" => \&Tk::NoOp);
+		    }
 		}
+		# Next
 		if (defined $next_inx) {
-		    $image_viewer_toplevel->Subwidget("NextButton")->configure(-command => [@args, $next_inx],
+		    $image_viewer_toplevel->Subwidget("NextButton")->configure(-command => [@cmd_args, $next_inx],
 									       -state => "normal");
+		    for my $key ('space', 'Right') {
+			$image_viewer_toplevel->bind("<$key>" => sub { show_image_viewer(@args, $next_inx) });
+		    }
 		} else {
 		    $image_viewer_toplevel->Subwidget("NextButton")->configure(-state => "disabled");
+		    for my $key ('space', 'Right') {
+			$image_viewer_toplevel->bind("<$key>" => \&Tk::NoOp);
+		    }
 		}
+		# Last
 		if (@$all_image_inx > 1 && defined $next_inx) {
-		    $image_viewer_toplevel->Subwidget("LastButton")->configure(-command => [@args, $all_image_inx->[-1]],
+		    $image_viewer_toplevel->Subwidget("LastButton")->configure(-command => [@cmd_args, $all_image_inx->[-1]],
 									       -state => "normal");
+		    $image_viewer_toplevel->bind("<End>" => sub { show_image_viewer(@args, $all_image_inx->[-1]) });
 		} else {
 		    $image_viewer_toplevel->Subwidget("LastButton")->configure(-state => "disabled");
+		    $image_viewer_toplevel->bind("<End>" => \&Tk::NoOp);
 		}
 
 		$image_viewer_toplevel->Subwidget("OrigButton")->configure(-command => [\&orig_viewer, $abs_file]);
+		$image_viewer_toplevel->bind("<o>" => sub { orig_viewer($abs_file) });
 
 		$image_viewer_toplevel->Subwidget("NOfMLabel")->configure(-text => $this_index_in_array->() . "/" . @$all_image_inx);
 

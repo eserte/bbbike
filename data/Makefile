@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.195 2008/08/06 21:25:13 eserte Exp $
+# $Id: Makefile,v 2.196 2008/08/10 18:57:42 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -588,7 +588,7 @@ vorfahrt:	vorfahrt-orig
 # able to do some things yet necessary here, for example automatic
 # Gefaelle generation in comments_mount or not combining X;X
 # categories into X
-.for f in ${COMMENTS_PARTIAL:Ncomments_route}
+.for f in ${COMMENTS_PARTIAL:Ncomments_route:Ncomments_ferry}
 ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
 	-@$(WRITEABLE) $@
 	cat ${f}-orig | \
@@ -601,13 +601,14 @@ ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
 .endfor
 
 # New style using convert_orig_to_bbd. Only comments_route here,
-# because of the need for alias and url directives.
-.for f in comments_route
+# because of the need for alias and url directives. comments_ferry
+# needs special as_of handler.
+.for f in comments_route comments_ferry
 ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
 	-@$(WRITEABLE) $@
 	cat ${f}-orig | \
 	    ${GREPSTRASSEN} -v -sectionrx "ignorieren" | \
-	    $(CONVERT_ORIG) -keep-directive url -keep-directive alias - | \
+	    $(CONVERT_ORIG) -keep-directive url -keep-directive alias -special as_of - | \
 	    ${RESOLVE_STARS} -sperrefile ${PERSISTENTTMPDIR}/gesperrt-without-nocross \
 	        ${ALL_STREETS} - > $@~ && \
 	mv $@~ $@

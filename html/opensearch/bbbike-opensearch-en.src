@@ -10,9 +10,9 @@
 	description="BBBike (english, erweitert)"
 	sourceTextEncoding="0"
 	method="GET"
-	action="http://bbbike.radzeit.de/cgi-bin/bbbike.cgi"
+	action="http://bbbike.de/cgi-bin/bbbike.cgi"
 	queryCharset="iso-8859-1"
-	searchForm="http://bbbike.radzeit.de/cgi-bin/bbbike.cgi"
+	searchForm="http://bbbike.de/cgi-bin/bbbike.cgi"
 >
 
 <input name="ossp" user>
@@ -32,7 +32,7 @@
 </search>
 
 <browser
-	update="http://wolfram.schneider.org/tmp/bbbike/opensearch/bbbike-de.src"
-	updateIcon="http://wolfram.schneider.org/tmp/bbbike/opensearch.html"
+	update="http://bbbike.de/BBBike/html/opensearch/bbbike-opensearch-de.src"
+	updateIcon="http://bbbike.de/BBBike/html/opensearch/opensearch.html"
 	updateCheckDays="1"
 >
