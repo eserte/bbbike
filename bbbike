@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.376 2008/08/10 21:44:46 eserte Exp $
+# $Id: bbbike,v 3.376 2008/08/10 21:44:46 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -12818,6 +12818,8 @@ sub show_info {
 			(?:[ub]|kn)-fg
 		       )
 		    }x) {
+	$strname = $tags[2];
+    } elsif ($tags[0] eq 'GU-img') {
 	$strname = $tags[2];
     } elsif ($tags[0] =~ m{^sperre}) {
 	$strname = $tags[2];
