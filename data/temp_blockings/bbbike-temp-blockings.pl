@@ -5010,7 +5010,7 @@ EOF
        text  => 'L 171 Karl-Marx-Str. OD Hohen Neuendorf, Kno.K.-Tucholsky-Str. Straßensanierung halbseitig gesperrt; Einbahnstraße 08.07.2006-11.07.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 1366,29416 1611,29359
+userdel	q4::inwork; 1366,29416 1492,29386 1596,29362
 EOF
      },
      { from  => 1152828000, # 2006-07-14 00:00
@@ -7681,7 +7681,7 @@ EOF
        text  => 'L 171 Schönfließer Str. OD Hohen Neuendorf grundhafter Straßenbau Vollsperrung 10.04.2007-31.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 1611,29359 2033,29198
+userdel	q4::inwork 1596,29362 1810,29283 2033,29198
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
@@ -8985,7 +8985,7 @@ EOF
        text  => 'L 020 Velten-Borgsdorf zw. OL Pinnow, Havelweg und Berliner Ch., Borgsdorf Grundhafter Straßenbau Vollsperrung 11.07.2007-25.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -736,32837 -579,33145 -409,33522
+userdel	2::inwork -736,32837 -579,33145 -529,33240 -503,33339 -454,33489 -440,33503 -406,33512
 EOF
      },
      { from  => 1183845600, # 2007-07-08 00:00
@@ -8993,7 +8993,7 @@ EOF
        text  => 'L 171 Karl-Marx-Str. OD Hohen Neuendorf, Krz. K.-Tucholsky-Str. grundh.Straßenbau, Kreisverk. Vollsperrung 09.07.2007-02.11.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 1366,29416 1611,29359
+userdel	q4::inwork 1366,29416 1492,29386 1596,29362
 EOF
      },
      { from  => 1186264800, # 2007-08-05 00:00
@@ -9765,7 +9765,7 @@ EOF
        text  => 'K 6422 Eggersdorfer Str. Petershagen, zw.Trift- u. Lessingstr.,BahnLandsbg.Str. Straßenbau Vollsperrung 12.09.2007-30.04.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -579,33145 -409,33522 103,33971
+userdel	2::inwork -579,33145 -529,33240 -503,33339 -454,33489 -440,33503 -406,33512 -377,33538 -316,33596 81,33971
 EOF
      },
      { from  => 1208210400, # 2008-04-15 00:00
@@ -9866,7 +9866,7 @@ EOF
        text  => 'L 020 Velten-Borgsdorf zw. OL Pinnow, Havelweg und Berliner Ch., Borgsdorf Grundhafter Straßenbau Vollsperrung 26.08.2007-17.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -579,33145 -409,33522
+userdel	2::inwork -579,33145 -529,33240 -503,33339 -454,33489 -440,33503 -406,33512
 EOF
      },
      { from  => 1190237327, # 

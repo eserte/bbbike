@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd,v 1.29 2008/08/07 04:49:08 eserte Exp $
+# $Id: osm2bbd,v 1.31 2008/08/11 19:34:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -853,6 +853,34 @@ Finally call bbbike with the C<-datadir> option:
 To get the bbox of a bbd file, use:
 
     perl -l -MKarte::Standard -MKarte::Polar -MStrassen -e '$s=Strassen->new("data/strassen"); ($x1,$y1,$x2,$y2) = $s->bbox; print join(",", $Karte::Polar::obj->standard2map($x1,$y1),$Karte::Polar::obj->standard2map($x2,$y2))'
+
+
+=head1 EXAMPLES
+
+To convert data for the San Francisco area:
+
+=over
+
+=item 1. download geo data for San Francisco/SFO from opensteetmaps.org
+
+    ./miscsrc/downloadosm -o ../sfbike/sfo -- -122.527 37.594 -122.351 37.811
+
+=item 2. convert *.osm files to bbbike data
+
+    ./miscsrc/osm2bbd -f -map bbbike -center -122.598,37.6829 -o data-sfo -d ../sfbike/sfo
+
+=item 3. start sfbike, english version
+
+    env LANG=en_US.UTF-8 perl ./bbbike -datadir data-sfo
+
+=back
+
+=head1 BUGS
+
+You should probably specify the -center option, otherwise the map
+apparently won't show up in bbbike (it is there, but not in the active
+visible region). (There could be an -autocenter option calculated from
+the bounding box of the map data)
 
 =cut
 

@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.139 2008/07/12 20:07:57 eserte Exp eserte $
+#: version: $Id: ampeln-orig,v 4.141 2008/08/11 19:21:04 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
 	X 9222,8787
@@ -2496,7 +2496,7 @@ Bernauer Str. / Koblenzer Str. / Mathias-Thesen-Str.	F -25,39151
 Bernauer Str. / Lehnitzstr. / Sachsenhausener Str.	X -1253,38715
 Bernauer Str. / Mittelstr. / Liebigstr.	F -1010,38798
 Bernauer Str. / Stralsunder Str.	X -853,38856
-Breite Str. / Kanalstr. / Blutgasse	F -1571,38406
+#XXX del beim Umbau Schloßplatz entfernt	Breite Str. / Kanalstr. / Blutgasse	F -1571,38406
 Germendorfer Allee / Eichendorffstr.	F -2715,38240
 Havelstr. / Nicolaikirche	F -1720,38268
 Saarlandstr. / Nauener Str.	F -576,36956
@@ -2509,6 +2509,7 @@ Germendorfer Dorfstr. Höhe Am Anger	F -5757,37890
 Germendorfer Dorfstr. / Kremmener Allee / Veltner Str. / Hohenbrucher Str.	X -5903,37885
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: append_comment Oranienburg-Lehnitz vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Am Gutsplatz	X 129,37231
 S-Bf Lehnitz	F 329,37254
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: append_comment Oranienburg-Sachsenhausen vvvvvvvvvvvvvvvvvvvvvvvvv
@@ -2537,7 +2538,7 @@ Wensickendorf - Zehlendorf / nGAR (nur am Wochenende)	B 8218,39700
 Friedrichsthaler Str. / nGAR (südl. Kurve)	B0 -76,41304
 Friedrichsthaler Str. / nGAR (nördl. Kurve)	B0 -4,41437
 # außerhalb Oranienburgs
-Borgsdorfer Kreuzung	X 103,33971
+Borgsdorfer Kreuzung	X 81,33971
 Kreuzbruch - Rehmate / NEB	B0 10095,45368
 OE36 bei Wendisch-Rietz	B 52043,-21065
 Hubertushöhe	B 49195,-18448

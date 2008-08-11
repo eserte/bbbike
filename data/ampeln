@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.139 2008/07/12 20:07:57 eserte Exp eserte $
+#: version: $Id: ampeln-orig,v 4.140 2008/08/11 19:06:29 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
 	X 9222,8787
@@ -2304,7 +2304,6 @@ Bernauer Str. / Koblenzer Str. / Mathias-Thesen-Str. (Oranienburg)	F -25,39151
 Bernauer Str. / Lehnitzstr. / Sachsenhausener Str. (Oranienburg)	X -1253,38715
 Bernauer Str. / Mittelstr. / Liebigstr. (Oranienburg)	F -1010,38798
 Bernauer Str. / Stralsunder Str. (Oranienburg)	X -853,38856
-Breite Str. / Kanalstr. / Blutgasse (Oranienburg)	F -1571,38406
 Germendorfer Allee / Eichendorffstr. (Oranienburg)	F -2715,38240
 Havelstr. / Nicolaikirche (Oranienburg)	F -1720,38268
 Saarlandstr. / Nauener Str. (Oranienburg)	F -576,36956
@@ -2313,6 +2312,7 @@ Schlossplatz (Oranienburg)	X -1517,38543
 Str. der Einheit / Eberswalder Str. / Hans-von-Dohnanyi-Str. (Oranienburg)	F -290,39365
 Germendorfer Dorfstr. Höhe Am Anger (Oranienburg-Germendorf)	F -5757,37890
 Germendorfer Dorfstr. / Kremmener Allee / Veltner Str. / Hohenbrucher Str. (Oranienburg-Germendorf)	X -5903,37885
+Am Gutsplatz (Oranienburg-Lehnitz)	X 129,37231
 S-Bf Lehnitz (Oranienburg-Lehnitz)	F 329,37254
 Chausseestr. / Zum Bahnhof (Oranienburg-Sachsenhausen)	X -882,40723
 Granseer Str. Höhe Post (Oranienburg-Sachsenhausen)	F -1235,41150
@@ -2331,7 +2331,7 @@ Sandstr. / NEB (Mo-Fr Testbetrieb bis 31.12.2007) (Oranienburg-Zehlendorf)	B 923
 Wensickendorf - Zehlendorf / nGAR (nur am Wochenende)	B 8218,39700
 Friedrichsthaler Str. / nGAR (südl. Kurve)	B0 -76,41304
 Friedrichsthaler Str. / nGAR (nördl. Kurve)	B0 -4,41437
-Borgsdorfer Kreuzung	X 103,33971
+Borgsdorfer Kreuzung	X 81,33971
 Kreuzbruch - Rehmate / NEB	B0 10095,45368
 OE36 bei Wendisch-Rietz	B 52043,-21065
 Hubertushöhe	B 49195,-18448

@@ -1187,16 +1187,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_009598',
-         'until' => 1218420000,
-         'text' => 'Spandauer-Damm-Brücke Baustelle, unter Umständen vollständig gesperrt (bis 11.08.08, 4 Uhr)',
-         'from' => 1218264643,
-         'id' => 1434,
-         'data' => 'userdel	2::inwork 2157,12389 2224,12397
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1219096800,
          'text' => 'B 087 Müllroser Chaussee zw. Brücke A 12 und Siedlung Markendorf Deckenerneuerung Vollsperrung 14.08.2008-18.08.2008 ',
@@ -1206,24 +1197,8 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1218405600,
-         'text' => 'B 101 OD Elsterwerda, zw. Bahnunterführ.u. Berliner Str. Deckeneinbau Vollsperrung 09.08.2008-10.08.2008 ',
-         'from' => 1218146400,
-         'id' => 1436,
-         'data' => 'userdel	q4::inwork 18928,-103699 18887,-104083
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1218405600,
-         'text' => 'B 168 OD Peitz, zw. Kreisverkehr und Spreewaldstr. 55. Fischerfest Vollsperrung 10.08.2008-10.08.2008 ',
-         'from' => 1218232800,
-         'id' => 1437,
-         'data' => 'userdel	q4::temp 80426,-59644 80046,-59594
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => 1220306400,
          'text' => 'B 273 Bernauer Str., Schloßplatz OD Oranienburg Deckeneinbau Vollsperrung 11.08.2008-01.09.2008 ',

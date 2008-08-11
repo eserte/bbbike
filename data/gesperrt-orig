@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.187 2008/07/12 20:07:03 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.189 2008/08/11 19:21:05 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
 ###################################################################
@@ -1695,6 +1695,9 @@ Durchgang neben Schranke	BNP:5 -1335,34371
 #
 #: append_comment Hohen Neuendorf vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Treppe (17 Stufen)	BNP:30 2262,30691
+#: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#: append_comment Borgsdorf vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Venedig	1 -460,33067 -529,33240
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #
 #
