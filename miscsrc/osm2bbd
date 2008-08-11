@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd,v 1.31 2008/08/11 19:34:39 eserte Exp $
+# $Id: osm2bbd,v 1.30 2008/08/11 18:32:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -874,13 +874,6 @@ To convert data for the San Francisco area:
     env LANG=en_US.UTF-8 perl ./bbbike -datadir data-sfo
 
 =back
-
-=head1 BUGS
-
-You should probably specify the -center option, otherwise the map
-apparently won't show up in bbbike (it is there, but not in the active
-visible region). (There could be an -autocenter option calculated from
-the bounding box of the map data)
 
 =cut
 
