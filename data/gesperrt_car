@@ -387,10 +387,25 @@ Max-Born-Str. -> Rudower Chaussee: Max-Born-Str./Rudower Chaussee	3::igndisp 190
 Magnusstr./Rudower Chaussee	3nocross::ignrte 19111,2777 19206,2848 19242,2876
 Magnusstr. -> Rudower Chaussee: Magnusstr./Rudower Chaussee	3::igndisp 19268,2784 19206,2848 19111,2777
 Rudower Chaussee -> Magnusstr.: Magnusstr./Rudower Chaussee	3::igndisp 19242,2876 19206,2848 19268,2784
-Gabelberger Str./Frankfurter Allee	3 14451,12396 14381,12205 14434,12196
-Mainzer Str./Frankfurter Allee	3nocross::ignrte 14381,12205 14434,12196 14488,12189
-Frankfurter Allee -> Mainzer Str.: Mainzer Str./Frankfurter Allee	3::igndisp 14488,12189 14434,12196 14357,12011
-Mainzer Str. -> Frankfurter Allee: Mainzer Str./Frankfurter Allee	3::igndisp 14357,12011 14434,12196 14381,12205
+Gabelberger Str./Frankfurter Allee	3 14451,12396 14381,12205 14427,12197
+Mainzer Str./Frankfurter Allee	3nocross::ignrte 14381,12205 14427,12197 14488,12189
+Frankfurter Allee -> Mainzer Str.: Mainzer Str./Frankfurter Allee	3::igndisp 14488,12189 14427,12197 14357,12011
+Mainzer Str. -> Frankfurter Allee: Mainzer Str./Frankfurter Allee	3::igndisp 14357,12011 14427,12197 14381,12205
+Colbestr./Frankfurter Allee	3nocross::ignrte 14488,12189 14523,12183 14621,12168
+Frankfurter Allee -> Colbestr.: Colbestr./Frankfurter Allee	3::igndisp 14621,12168 14523,12183 14468,11992
+Colbestr. -> Frankfurter Allee: Colbestr./Frankfurter Allee	3::igndisp 14468,11992 14523,12183 14488,12189
+Kinzigstr./Frankfurter Allee	3nocross::ignrte 14523,12183 14621,12168 14702,12157
+Kinzigstr. -> Frankfurter Allee: Kinzigstr./Frankfurter Allee	3::igndisp 14589,11975 14621,12168 14523,12183
+Frankfurter Allee -> Kinzigstr.: Kinzigstr./Frankfurter Allee	3::igndisp 14702,12157 14621,12168 14589,11975
+Finowstr.+Weichselstr./Frankfurter Allee	3nocross::ignrte 14702,12157 14840,12140 14919,12130 14994,12121
+Frankfurter Allee -> Finowstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14919,12130 14840,12140 14783,11949
+Finowstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14783,11949 14840,12140 14702,12157
+Weichselstr. -> Waldeyerstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14879,11934 14919,12130 14997,12243
+Weichselstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14879,11934 14919,12130 14840,12140
+Waldeyerstr. -> Weichselstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14997,12243 14919,12130 14879,11934
+Waldeyerstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14997,12243 14919,12130 14994,12121
+Frankfurter Allee -> Weichselstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14994,12121 14919,12130 14879,11934
+Frankfurter Allee -> Waldeyerstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14840,12140 14919,12130 14997,12243
 Friedrichstr. (Straßenbahn)	3nocross::ignrte 9215,13392 9236,13228 9245,13162 9251,13109
 Friedrichstr. -> Claire-Waldoff-Str.: Friedrichstr. (Straßenbahn)	3::igndisp 9245,13162 9236,13228 9114,13217
 Claire-Waldoff-Str. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9114,13217 9236,13228 9215,13392
@@ -693,3 +708,10 @@ Kleineweg: nur für Anlieger	2:Anlieger 9126,8025 9119,7805 9140,7650 9145,7522 9
 Friedrich-Wilhelm-Str.: In die andere Richtung nur für Anlieger	1 8385,5907 8282,5909
 Parkstr.: Durchfahrt gesperrt	3 9143,6415 9184,6413 9250,6414
 Parkstr.: Durchfahrt gesperrt	3 9250,6414 9184,6413 9143,6415
+Mittelstreifen	3nocross::ignrte 13277,8211 13459,8072 13474,8060
+Treptower Str. -> Treptower Str.: Mittelstreifen	3::igndisp 13376,7970 13459,8072 13478,8095
+Treptower Str. -> Sonnenallee: Mittelstreifen	3::igndisp 13376,7970 13459,8072 13277,8211
+Sonnenallee -> Treptower Str.: Mittelstreifen	3::igndisp 13474,8060 13459,8072 13376,7970
+Treptower Str. -> Treptower Str.: Mittelstreifen	3::igndisp 13478,8095 13459,8072 13376,7970
+Treptower Str. -> Sonnenallee: Mittelstreifen	3::igndisp 13478,8095 13459,8072 13474,8060
+Sonnenallee -> Treptower Str.: Mittelstreifen	3::igndisp 13277,8211 13459,8072 13478,8095

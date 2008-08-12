@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.18 2008/08/03 10:30:23 eserte Exp $
+# $Id: bbbike.cgi,v 9.18 2008/08/03 10:30:23 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -3771,7 +3771,7 @@ sub display_route {
 		    # heraus.
 		    if (!exists $comments_in_whole_etappe{$_->[0]}) {
 			my $cat = $_->[1]->[Strassen::CAT()];
-			if (($cat =~ /^CP2/ && !exists $comments_at_beginning{$_->[0]}) ||
+			if (#XXX del: ($cat =~ /^CP2/ && !exists $comments_at_beginning{$_->[0]}) || #XXX this looks simply too ugly (poin comment and (Teilstrecke), but I need to review all of comments_* to have good names instead, esp. including the crossing name at point
 			    $cat !~ /^(CP2|PI|CP$|CP;)/) {
 			    $_->[0] .= " (" . M("Teilstrecke") . ")";
 			}

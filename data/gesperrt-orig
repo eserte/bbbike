@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.189 2008/08/11 19:21:05 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.189 2008/08/11 19:21:05 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 ###################################################################
@@ -713,6 +713,7 @@ Am Poetensteig, Gramzow	1s:q1 50043,90187 50109,89725
 #: by: Juliane Bölker:
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,12513
 Behrenstr./Bebelplatz	1s:q3 9801,12245 9743,12239 9700,12234 9626,12227
+Halenseestr.	1s:q2 2277,9801 2167,10004 2121,10089 1988,10328 1957,10426
 #
 ####################################################################
 #
@@ -828,7 +829,7 @@ Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 9514,16603 9617,16590 9
 Seestr.: Straßenbahntrasse	3nocross 7231,16418 7051,16264 6965,16190
 Föhrer Str.: Mittelstreifen	3nocross 6528,15000 6561,15041 6630,15100
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14208,12235 14291,12220 14381,12205
-Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14381,12205 14434,12196 14488,12189
+Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14381,12205 14427,12197 14488,12189
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 13792,12292 13885,12279 14208,12235
 Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11649 9899,11670 9982,11680
 #Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13241,13405 13334,13459
@@ -902,6 +903,7 @@ Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21158,15885 21220,15741 21235,
 Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21626,15357 21647,15496
 Rudower Chaussee: Mittelstreifen	3nocross 19206,2848 19242,2876 19314,2932
 Adlergestell: Mittelstreifen	3nocross 20565,2754 20289,3033 20207,3115 20053,3272
+Sachsendamm: Mittelstreifen mit Geländer	3nocross 6935,8208 7005,8150 7087,8066
 #
 ####################################################################
 #

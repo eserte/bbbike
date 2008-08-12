@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.189 2008/08/11 19:21:05 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.189 2008/08/11 19:21:05 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9687,10180 9592,10174 9401,10199
@@ -602,6 +602,7 @@ Stephanstr.	1s 6523,4491 6366,4500
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
 Behrenstr./Bebelplatz	1s 9801,12245 9743,12239 9700,12234 9626,12227
+Halenseestr.	1s 2277,9801 2167,10004 2121,10089 1988,10328 1957,10426
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12046,16568
 Mittelstreifen	3nocross::ignrte 16713,6839 16674,6885 16568,7009
 Köpenicker Landstr. -> Güldenhofer Ufer: Mittelstreifen	3::igndisp 16713,6839 16674,6885 16630,6800
@@ -966,9 +967,9 @@ Föhrer Str. -> Augustenburger Pl.: Mittelstreifen	3::igndisp 6528,15000 6561,150
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 14208,12235 14291,12220 14381,12205
 Kreutzigerstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 14285,12190 14291,12220 14208,12235
 Frankfurter Allee -> Kreutzigerstr.: unbequem passierbarer Mittelstreifen	3::igndisp 14381,12205 14291,12220 14285,12190
-unbequem passierbarer Mittelstreifen	3nocross::ignrte 14381,12205 14434,12196 14488,12189
-Frankfurter Allee -> Mainzer Str.: unbequem passierbarer Mittelstreifen	3::igndisp 14488,12189 14434,12196 14357,12011
-Mainzer Str. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 14357,12011 14434,12196 14381,12205
+unbequem passierbarer Mittelstreifen	3nocross::ignrte 14381,12205 14427,12197 14488,12189
+Frankfurter Allee -> Mainzer Str.: unbequem passierbarer Mittelstreifen	3::igndisp 14488,12189 14427,12197 14357,12011
+Mainzer Str. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 14357,12011 14427,12197 14381,12205
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 13792,12292 13885,12279 14208,12235
 Frankfurter Allee -> Liebigstr.: unbequem passierbarer Mittelstreifen	3::igndisp 13792,12292 13885,12279 13905,12374
 Liebigstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 13905,12374 13885,12279 14208,12235
@@ -1194,6 +1195,8 @@ Adlergestell -> Otto-Franke-Str.: Mittelstreifen	3::igndisp 20207,3115 20289,303
 Otto-Franke-Str. -> Adlergestell: Mittelstreifen	3::igndisp 20388,3100 20289,3033 20565,2754
 Büchnerweg -> Adlergestell: Mittelstreifen	3::igndisp 20315,3181 20207,3115 20289,3033
 Adlergestell -> Büchnerweg: Mittelstreifen	3::igndisp 20053,3272 20207,3115 20315,3181
+Mittelstreifen mit Geländer	3nocross::ignrte 6935,8208 7005,8150 7087,8066
+Torgauer Str. -> Sachsendamm: Mittelstreifen mit Geländer	3::igndisp 7268,8225 7005,8150 7087,8066
 tragen (flache Treppe, wenige Stufen)	0:10:-193 6530,6786
 tragen (ca. 10 Stufen)	0:20 26407,161781 26395,161793
 tragen (Treppe oder steile Kinderwagenrampe)	0:30:55 2956,24373
