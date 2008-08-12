@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.196 2008/08/10 18:57:42 eserte Exp $
+# $Id: Makefile,v 2.196 2008/08/10 18:57:42 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1205,8 +1205,8 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+)?)(:inw
 	$(CHECK_NEIGHBOUR) -type standard -against faehren -data comments_ferry
 	@touch $@
 
-.check_nolighting:	nolighting strassen
-	$(CHECK_NEIGHBOUR) -type standard -data nolighting
+.check_nolighting:	nolighting strassen landstrassen
+	$(CHECK_NEIGHBOUR) -type standard -against strassen -against landstrassen -data nolighting
 	@touch $@
 
 .check_housenumbers:	housenumbers-orig housenumbers .strassen.tmp

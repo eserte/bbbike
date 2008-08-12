@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Radwege in Berlin
-#: version: $Id: radwege-orig,v 4.182 2008/08/11 19:06:37 eserte Exp $
+#: version: $Id: radwege-orig,v 4.182 2008/08/11 19:06:37 eserte Exp eserte $
 #: category_dash.RW: 8,5
 #: category_dash.RW?: 4,4
 #: category_dash.RW4?: 4,4
@@ -762,7 +762,7 @@ früher vorhandene Radwege abgesperrt	RW0;RW0 6230,13596 6366,13716 6493,13822 66
 	RW;RW 5311,21495 5149,21721 4937,22004 4849,22190 4718,22384 4629,22466 4348,22744 4251,22829 4208,22866 4163,22907
 #: XXX_prog: absichtliche Bruchstelle wegen schlechten Renderings
 	RW;RW 4163,22907 4159,22954 4214,23052 4245,23152 4256,23288 4201,23397 4169,23451 4007,23709 3985,23814 3960,23966 3902,24266 3848,24546
-	RW2;RW2 3848,24546 3785,24835 3758,24936
+	RW;RW1 3848,24546 3777,24880 3758,24936
 	RW6;RW6 8779,9812 8980,9751
 	RW6;RW6 8980,9751 8988,9783
 #: XXX_prog: absichtliche Bruchstelle wegen schlechten Renderings
@@ -1245,7 +1245,10 @@ Der Radweg beginnt ca. 50m nach der Schillerstr.	RW; 7832,20219 7929,20386
 	RW;RW 3022,24393 2969,24382 2951,24389
 Radweg endet ca. 50m nach der Kurve	RW0; 2951,24389 2690,24751
 	RW; 2690,24751 2951,24389
-	RW; 3337,25931 3423,25733 3463,25611 3551,25387
+#: by: Wolfhard Schleese (RW2)
+	RW2; 3348,25902 3423,25733 3463,25611
+#: by: Wolfhard Schleese
+	RW1; 3463,25611 3551,25387 3711,25100 3758,24936
 	RW4?;RW4? 6720,18616 6704,18462 6694,18351 6683,18243 6671,18132 6662,18019 6689,17911 6739,17749 6878,17315 6928,17154
 #: XXX_prog: absichtliche Bruchstelle wegen schlechten Renderings
 	RW4?;RW4? 6928,17154 6806,17014

@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.141 2008/08/11 19:21:04 eserte Exp $
+#: version: $Id: ampeln-orig,v 4.141 2008/08/11 19:21:04 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 	X 9222,8787
@@ -2370,6 +2370,10 @@ Modersohnstr. (zurzeit durch eine Ampel ersetzt, wahrscheinlich bis 2010-03-01, 
 	F 18409,7776
 	B 26494,-13883
 	X 16191,10035
+#: by: Wolfhard Schleese vvv
+	X 3758,24936
+	X 3777,24880
+#: by: ^^^
 ################################################################################
 # note: Potsdam vvv
 	X -12839,-1342
