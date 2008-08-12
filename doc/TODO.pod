@@ -1723,6 +1723,90 @@ L<http://www.perlmonks.org/index.pl?node_id=355073>
 
 =over
 
+=item * (H4) (improvement)
+
+Normalize comments in bbd files. For example qualitaet*-orig: we could
+introduce abbreviations like +AS (= guter Asphalt) or -KS (schlechtes
+Kopfsteinpflaster) or oBT (= mäßiger Beton), which could be
+automatically translated into German, but also other languages.
+Suggestion: this feature could be mixed with normal comments. Only if
+a comment starts with a E<quot>*E<quot>, then an abbreviation is
+assumed. The describing street name may still precede the comment.
+Examples:
+
+     # old fashioned:
+     Dudenstr.: Asphalt	Q0 X,Y...
+     Methfesselstr.: mäßiges Kopfsteinpflaster	Q2 X,y...
+     Asphalt	Q0 X,Y...
+
+     # new style:
+     Dudenstr.: *AS	Q0
+     Methfesselstr.: *oKS	Q2 X,y...
+     *AS	Q0 X,Y...
+
+Suggested abbreviations:
+
+  adjective (categorization)
+    -- sehr schlecht
+    -  schlecht
+    o  mäßig (maybe E<quot>.E<quot> instead E<quot>oE<quot>?)
+    +  gut
+    ++ sehr gut
+  adjective (better attributization)
+    (abbreviations missing)
+    uneben, wellig (is here a difference?)
+    glatt
+    holprig
+    fest (Waldweg, Sandweg)
+    fein (Schotter)
+    grob (Verbundsteinpflaster, Schotter)
+    Schlaglöcher
+    OK (hmmm....)
+    gut befahrbar (is this the same as +=gut?)
+    mit einigen/leichten Schäden, schadhaft, schadhaft durch Wurzeln
+  substantive:
+    AS  Asphalt, asphaltiert
+    KS  Kopfsteinpflaster
+    KK  Kleinpflaster (Kleinsteinpflaster? Begriff?)
+    VS  Verbundsteinpflaster, Verbundsteine
+    GW  Gehwegpflaster (typisches Berliner Gehwegpflaster)
+    BT  Beton
+    PW  Plattenweg (= Betonweg mit unregelmäßig verlegten Platten; what
+                      about E<quot>BetonplattenE<quot>?)
+    wD  wassergebundene Decke
+    PW  Parkweg (was wäre der Unterschied zu wD?)
+    SW  Sandweg (also: unbefestigter Weg?)
+    FW  Feldweg
+    WW  Waldweg
+    Sch Schotter
+
+Missing:
+
+  teils ..., teils ...
+  Fahrbahn ..., Radweg ..., Gehweg ...
+  bei Trockenheit/Regen/... ...
+  Moabiter Kissen; gepflasterte Bodenschwellen
+  Fahrbahnmitte, Rand
+  Sandbanketten (bei schlechtem Kopfsteinpflaster)
+  n km/h möglich
+
+Also interesting: convert the existing comments back into the
+abbreviations. How many will be left unconverted?
+
+The categorization could go into the category field. So we had in the
+-orig files:
+
+    Dudenstr.	Q0::+AS X,Y...
+    Methfesselstr.	Q2::oKS X,Y...
+
+which would be translated into the non-orig file (German version):
+
+    Dudenstr.: guter Asphalt	Q0 X,Y...
+    Methfesselstr.: mäßiges Kopfsteinpflaster	Q2 X,Y...
+
+This looks better. Categorization to categorization. I could even
+think about dropping the describing street names completely.
+
 =item * (H3) (feature)
 
 Introduce new types Roundabout and MiniRoundabout in comments_misc:
@@ -1885,6 +1969,20 @@ GPS-Tracks zusammenfassen.
 =head2 Fehler, Ergänzungen, ...
 
 =over
+
+=item * (M5)
+
+Reviews: alle bbd-Dateien brauchen Reviews. Konkret:
+
+ * comments_*: CP2, CP etc.-Kategorien sollten in einer Routensuche
+   vernünftige Kommentare ergeben. Mit ~/devel/massbbbike.pl kann man
+   für eine (gefilterte) bbd-Datei HTML-Resultseiten der jeweiligen
+   bbbike.cgi-Suchen anzeigen. Z.B. sollte der Mittelpunkt bei cat=CP;
+   im Kommentar textlich gekennzeichnet sein, z.B. E<quot>beim
+   Überqueren der A-StraßeE<quot>. Das ist aber *nicht* notwendig,
+   wenn man dabei in die Straße einbiegt.
+
+   Siehe auch REVIEW UNTIL HERE in comments_path-orig
 
 =item * (M1)
 
