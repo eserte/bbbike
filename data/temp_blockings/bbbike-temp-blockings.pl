@@ -10579,9 +10579,9 @@ EOF
 userdel	q4::inwork 45856,14437 44121,14615
 EOF
      },
-     { from  => 1190498400, # 2007-09-23 00:00
-       until => 1225494000, # 2008-11-01 00:00
-       text  => 'L 073 Beelitzer Str. OL Luckenwalde, zw. Puschkinstr. u. Woltersdorfer Str. Straßenausbau Vollsperrung 24.09.2007-31.10.2008 ',
+     { from  => 1210543200, # 2008-05-12 00:00
+       until => 1221861600, # 2008-09-20 00:00
+       text  => 'L 073 Neue Beelitzer Str. OL Luckenwalde, zw. Triftstr. und Kleiststr. Straßenausbau Vollsperrung 13.05.2008-19.09.2008 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -4725,-34957 -5019,-34814
@@ -11958,8 +11958,8 @@ userdel	2::inwork 4772,8599 4456,8584
 userdel	2::inwork 4457,8345 4457,8484
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1218739579, # 
+       until => 1218739581, # XXX
        text  => 'Swinemünder Brücke (Wedding) in beiden Richtungen Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_009388',
@@ -12238,6 +12238,47 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::temp 33060,-85292 33101,-85749
+EOF
+     },
+     { from  => 1218739674, # 2008-08-14 20:47
+       until => 1220219999, # 2008-08-31 23:59
+       text  => 'Alt-Buckow (Neukölln) Richtung Marienfelde zwischen Buckower Damm und Rufacher Weg Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_009621',
+       data  => <<EOF,
+userdel	1::inwork 12817,2031 12574,1866 12547,1852 12452,1808 12207,1704
+EOF
+     },
+     { from  => 1218578400, # 2008-08-13 00:00
+       until => 1220133600, # 2008-08-31 00:00
+       text  => 'B 246 Belzig - Wiesenburg OD Klein Glien Straßenbau Vollsperrung 14.08.2008-30.08.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -48903,-31556 -49841,-31648
+EOF
+     },
+     { from  => 1218924000, # 2008-08-17 00:00
+       until => 1246399200, # 2009-07-01 00:00
+       text  => 'B 273 A 11 - Wandlitz zw. Abzw. Bernau und Wandlitz Rückau u. Erneuerung B273 Vollsperrung 18.08.2008-30.06.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 16953,35907 16647,36127 16132,36512 15491,37176 15385,37268 15253,37443 14909,37400 14477,37252 13556,37493
+EOF
+     },
+     { from  => 1218924000, # 2008-08-17 00:00
+       until => 1219788000, # 2008-08-27 00:00
+       text  => 'L 033 Strausberg - Berlin zw. AS Berlin-Marzahn und Hönow, Mahlsdorfer Str. Deckenerneuerung Vollsperrung 18.08.2008-26.08.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 27328,15740 26821,15609 26328,15462
+EOF
+     },
+     { from  => 1219183200, # 2008-08-20 00:00
+       until => 1228086000, # 2008-12-01 00:00
+       text  => 'L 035 B246 Glienicke - Bad Saarow zw. Diensdorf und Pieskow Straßenbauarbeiten Vollsperrung 21.08.2008-30.11.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 56323,-16537 56600,-15729 56415,-14916
 EOF
      },
     );

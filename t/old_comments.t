@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: old_comments.t,v 1.16 2008/07/12 19:45:13 eserte Exp $
+# $Id: old_comments.t,v 1.16 2008/07/12 19:45:13 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -64,7 +64,7 @@ my @tests = (
 	     # Czeminskistr. -> Julius-Leber-Brücke 
 	     ["7603,8911", "7497,8916", <<EOF, "CP;"],
 - 'gegen die Einbahnstraßenrichtung, ggfs. schieben': 1
-- Als Julius-Leber-Brücke ausgeschildert: 1
+- als Julius-Leber-Brücke ausgeschildert: 1
 - {}
 EOF
 	     ["7497,8916", "7603,8911", <<EOF, "CP; Rückweg"],
@@ -76,7 +76,7 @@ EOF
 	     # Hagelberger/Yorck
 	     ["8773,9524", "8595,9495", <<EOF, "PI"],
 - Kopfsteinpflaster: 1
-- Straßenseite bei der Fußgängerampel Yorckstr./Katzbachstr. wechseln: 1
+- Straßenseite an der Fußgängerampel Yorckstr./Katzbachstr. wechseln: 1
 - {}
 EOF
 	     ["8777,9601", "8595,9495", <<EOF, "No PI, starting point outside"],
@@ -104,7 +104,7 @@ EOF
 
 	     # Rathenauplatz
 	     [qw(2392,9715 2379,9665), <<EOF, "CP2; am Startpunkt"],
-- Als Rathenauplatz ausgeschildert: 1
+- als Rathenauplatz ausgeschildert: 1
 - {}
 EOF
 	     [qw(2379,9665 2392,9715), <<EOF, "Rückweg ohne Kommentare"],
@@ -131,7 +131,7 @@ EOF
 
 	     # Lützowplatz
 	     ["6732,10754", "6642,12010", <<EOF, "Mehrere Kommentare am gleichen Abschnitt"],
-- Als Lützowplatz ausgeschildert (Teilstrecke): 1
+- als Lützowplatz ausgeschildert (Teilstrecke): 1
 - {}
 - {}
 - R1: 1
@@ -145,7 +145,7 @@ EOF
   RR3: 1
 - {}
 - {}
-- Als Lützowplatz ausgeschildert (Teilstrecke): 1
+- als Lützowplatz ausgeschildert (Teilstrecke): 1
 - {}
 EOF
 	    );
