@@ -220,6 +220,8 @@ Potsdamer Str. oder Hauptstr.: anscheinend gehören die Häuser auf der westlichen
 Runebergweg/Sibeliusweg: Runebergweg hat starkes Gefälle und Sibeliusweg hat leichtes Gefälle, aber laut hm96.dat sieht es andersrum aus --- da muss ich mit Höhenmesser langfahren	? -6904,5175 -6747,5169 -6787,5076
 #: XXX_prog: Drängelgitter auch auf dem Mittelstreifen Sonnenallee. Kann zurzeit nicht dargestellt werden.
 Drängelgitter	? 15496,6314 15504,6328 15516,6357
+#: XXX unklar von Andreas (schindel), q4!:
+Wörther Str.: Bordsteinkanten? Wahrscheinlich Bodenschwellen?	? 11255,14572 11317,14564
 ######################################################################
 #
 #  AUFNAHME IN DB FRAGLICH
@@ -234,6 +236,10 @@ Kleistpark: im Sommer bis 21 Uhr geöffnet, im Winter bis 18 Uhr	? 7192,9508 7246
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: anonymous
+Ederkopfweg: guter Asphalt, Q0, enge Straße, q1	? -4729,14958 -4761,14961 -4807,14990 -4879,15008
+#: by: Stapel (rowingfriend...):
+Bärdorfer Zeile: guter Beton, Q0, Bordsteinkanten?	? 20917,4261 20822,4571 20818,4610 20827,4655
 #: by: Claudia Oll, franziska.schaefer vvv
 Tubaweg: Asphalt, Q0, RW6	? 11828,20625 11782,20693 11771,20706
 Tubaweg: Asphalt, Q0, RW6	? 11782,20693 11826,20722 11843,20734 11867,20747 11919,20745
@@ -336,7 +342,8 @@ Helene-Nathan-Weg: guter asphaltiert,Q0	? 17681,-178 17726,-251
 #: by: anonymous:
 Erich-Pommer-Str: guter Beton, Q0	? -7464,-4407 -7417,-4323
 #: by: anonymous 
-Delphinstr.: guter Asphalt, Q1	? 14555,6936 14686,7070
+#: confirmed_by: Hasan Hosgel:
+Delphinstr.: guter Asphalt, Q0	? 14555,6936 14686,7070
 #: by: Wilde (thwila) 
 Schwarzkoppenstr.: Beton, Q0	? 19843,357 19937,246
 #: by: anonymous:
@@ -367,7 +374,7 @@ Helmut-Just-Str. (Hohen Neuendorf): Asphalt Q1	? 4054,29959 4132,29954 4487,2999
 Fischerstr.: Qualität?	? 15982,10765 16080,10743
 Neuenhagen, Richtung Schöneiche: existiert hier ein Radweg (wahrscheinlich ab 2006-12-31)?	? 31146,12747 31059,12471 31037,12174
 Buch - Schwanebeck: existiert hier ein Radweg (wahrscheinlich ab 2006-09-30)?	? 18562,24975 19395,24634
-Bis zum Güterfelder Eck: existiert hier ein Radweg (wahrscheinlich ab 2006-09-26)?	? -6285,-3363 -5736,-3629
+Bis zum Güterfelder Eck: existiert hier ein Radweg (wahrscheinlich ab 2006-09-26)?	? -6277,-3348 -5736,-3629
 Biegen - Müllrose: existiert hier ein Radweg (wahrscheinlich ab 2006-10-31)	? 79811,-15315 78364,-14355
 Werderscher Damm: existiert hier ein Radweg in Höhe Kaserne (wahrscheinlich ab 2006-11-30)?	? -18542,-2568 -18733,-2697 -19640,-3173
 B5: existiert ein Radweg in Höhe Wusterhausen (wahrscheinlich ab 2006-09-29)?	? -54140,51565 -54518,51910 -54926,52781
@@ -456,7 +463,7 @@ Sandkrug - Neuendorf: Qualität?	? 49981,54421 51183,55005 51506,55009 51873,5507
 Elisenau - Börnicke: Privatgelände, ist die Durchfahrt uneingeschränkt möglich?	? 24360,26503 24427,26841
 Potzlow - Fergitz: Gilt das hier noch immer: schlechtes Kopfsteinpflaster, breite Sandbanketten (von Potzlow aus sah es letztens gut aus!)	? 38475,90762 37937,90365 37674,90025
 Weg zwischen Tierpark und Bahntrasse: Qualität des Weges (Am westlichen Ende Beton, dann Feldweg Q2?), geht es weiter in Richtung Norden/Osten, vielleicht bis zur B1? Schranke am westlichen Ende	? 18690,10016 19641,10476 19734,10690 19713,10880
-Freystadter Weg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 20949,4775 21100,4192
+Freystadter Weg: Qualität (laut ADFC-Karte mäßig geeignet)? Ist die Straße südlich des Wünschelburger Gangs für Autos gesperrt? Kann man die Dörpfeldstr. in Höhe Freystadter Weg überqueren?	? 20994,4761 20981,4696 20981,4628 21008,4275 21017,4220 21053,4162
 #XXX laut anonymen Eintrag ist hier nichts, jedenfalls an der Grünauer Str.: Dörpfeldstr. - Grünauer: evtl. lohnende Diagonale, Qualität?	? 21132,4184 21316,3662 21350,3526 21840,3144 21951,3189
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20080114.1205.92135.html
 Charlotte-E-Pauly-Str.: Qualität? In der Nähe befindet sich auch die Ingrid Goltzsche-Schwarz-Straße, wo genau?	? 25018,5294 25030,4984 25010,4807
@@ -496,15 +503,15 @@ Am Neuen Garten: Qualität, anscheinend (zumindest im südlichen Abschnitt) Kopfst
 Grenzallee Potsdam: Qualität?	? -13854,2025 -14315,2135
 Verlängerte Amtsstr.: Qualität? 	? -15251,1200 -15161,1780
 Lindenallee: Qualität? laut "Berliner Umland" witterungsabhängige Strecke; laut "mobil-potsdam.de" teils eine "Promenade", teils betoniert 	? -15161,1780 -15132,1992 -15290,2665 -15459,2946
-zur Kohlhasenbrücker Str.: Durchfahrt möglich?	? -6998,-1320 -6996,-1436 -6892,-1492
-Kohlhasenbrücker Str.: Qualität (beidseitig der Großbeerenstr. Asphalt, sonst Waldweg?)?	? -6892,-1492 -6882,-1922 -6815,-3136 -6810,-3151 -6813,-3177 -6813,-3490 -6808,-3642 -6808,-3950
+zur Kohlhasenbrücker Str.: Durchfahrt möglich?	? -6998,-1320 -6946,-1418 -6879,-1504
+Kohlhasenbrücker Str.: Qualität (beidseitig der Großbeerenstr. Asphalt, sonst Waldweg?)?	? -6879,-1504 -6882,-1922 -6827,-2791 -6810,-3151 -6813,-3490 -6808,-3642 -6808,-3950
 Ziolkowskistr.: Qualität?	? -7971,-3373 -7814,-3419 -7481,-3396 -6969,-3582 -6808,-3642
 Stern - Potsdamer Damm/Potsdamer Str.: Durchfahrt möglich? Qualität?	? -6808,-3642 -5736,-3629
 Gaußstr.: Einbahnstraße? Qualität?	? -6969,-3582 -6968,-3678 -6983,-3886 -7113,-3884 -7118,-3678
 Galileistr.: Qualität? Name westl. der Neuendorfer Str. noch immer Galileistr?	? -6968,-3678 -7118,-3678 -8032,-3710 -8098,-3680
 Im Schäferfeld: Qualität?	? -8098,-3680 -8404,-3824 -8475,-3861
 Fichtenallee (Potsdam): Qualität?	? -8563,-3805 -8451,-3728 -8226,-3592
-Stern - Nudow: Durchfahrt möglich? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? -6983,-3886 -7077,-4186 -6902,-4397 -6775,-4326 -6671,-6390 -6516,-6520 -6508,-6969 -6183,-7600 -6319,-7823 -5766,-8911 -5387,-8896
+Stern - Nudow: Durchfahrt möglich? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? -6983,-3886 -7077,-4186 -6902,-4397 -6775,-4326 -6671,-6390 -6516,-6520 -6508,-6969 -6191,-7587 -6319,-7823 -5766,-8911 -5387,-8896
 F3 nach Marquardt: genaue Wegführung? Qualität?	? -19309,4359 -19403,4631 -18701,4578
 #XXX del: F3 nach Marquardt: genaue Wegführung? Laut "mobil-potsdam.de" Kopfsteinpflaster	? -18701,4574 -18722,4681 -18743,4789 -18811,4782
 Joachimsthal - Altkünkendorf: Qualität?	? 35512,66695 38125,66800 39287,67537 39575,67262 39875,66425
@@ -1953,7 +1960,6 @@ Deitmerstr.: Qualität? Können Radfahrer zur Schloßstr. gelangen und den dortigen
 Hermesweg: Qualität?	? 6116,4707 6072,4606
 Gurlittstr.: Qualität?	? 7213,5062 6949,5096
 Kottesteig: Qualität? Für Autofahrer gesperrt? Kann der Munsterdamm in Höhe Kottesteig überquert werden?	? 6868,5262 6806,5230 6767,5233
-Kelchstr.: Qualität?	? 7386,4692 7424,4821 7437,4855 7456,4934
 Doldenweg: Qualität? Für Autofahrer gesperrt?	? 7424,4821 7487,4802
 Zwillingestr.: Qualität?	? 14620,6876 14555,6936 14531,6959
 Siriusstr.: Qualität?	? 14751,7007 14686,7070
@@ -2038,7 +2044,6 @@ Berkenbrücker Steig: Qualität?	? 15647,14693 15532,14718 15383,14759
 #: XXX: unklarer Eintrag von SOTAREone: Kopfsteinpflaster Q2 (OK, aber tatsächlich die gesamte Straße?), aber Fußgängerzone q1, Radweg???
 Küstriner Str.: Qualität?	? 15799,14674 15853,14734 15878,14761 15941,14834 16123,15025 16211,15105 16319,15229 16354,15323 16406,15452
 Verdener Gasse: Qualität? Durchfahrt zur Große-Leege-Str. für Radfahrer möglich? Überquerung der Große-Leege-Str. in Höhe Verdener Gasse möglich?	? 15878,14761 15946,14702 15977,14676
-Strausberger Str.: Qualität?	? 16377,14952 16295,15024 16211,15105 16152,15164 16028,15218
 Heiligenstadter Str.: Qualität?	? 16738,14695 16835,14676
 Joachimsthaler Str. (Hohenschönhausen): Qualität? Einbahnstraßenregelung, auch für Radfahrer gültig?	? 16918,14901 16943,14785 17063,14797 17129,14804 17117,14885
 Lössauer Str.: Qualität?	? 16816,15092 17230,15083
@@ -2125,3 +2130,12 @@ Hubertusweg: Qualität westlich des Jägerstiegs? Für Autofahrer gesperrt? Unbeleu
 Jägerstieg - B96: existiert eine Verbindung? Qualität? Für Autos gesperrt? Unbeleuchtet?	? 2979,27427 2675,27068
 Schwarzkittelweg: Qualität westlich des Geierwegs?	? 3023,26439 3023,26439 3170,26502 3281,26524 3422,26540 3422,26540
 Weg zwischen Goerdelersteg und Beusselstr.: existiert auch ein Weg zwischen Westhafenkanal und Autobahn? Wenn ja, wie ist die Qualität?	? 3619,14183 5086,14536
+Wünschelburger Gang: Qualität?	? 21008,4275 20917,4261 20850,4225 20829,4211
+Bohrauer Pfad: Qualität?	? 20981,4628 20827,4655 20716,4691
+Gartenweg (Kolonie Wendenheide): Qualität? Offizieler Name des Weges? Für Autos gesperrt?	? 20850,4225 20716,4549 20684,4596
+Lohnauer Steig: Qualität?	? 20790,4114 20852,4157 20829,4211 20770,4277 20614,4381
+Travemünder Str.: Qualität?	? 8695,16525 8759,16665 8759,16684
+Stockholmer Str.: Qualität?	? 8759,16684 8783,16710 8844,16863
+#: XXX: nicht vergessen: auch in brunnels eintragen!
+Fußgängerbrücke: Für Radfahrer befahrbar? Existieren Rampen oder Treppen? Qualität?	? 13192,21697 13046,21734 13008,21783
+Blumenthalstr.: Qualität südlich der Uhlandstr. (fängt auch mit Kopfsteinpflaster an)?	? 9120,20015 9159,19818 9177,19745 9195,19644 9214,19533 9231,19440 9249,19351 9258,19290

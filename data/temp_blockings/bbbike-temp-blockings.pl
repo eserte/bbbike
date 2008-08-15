@@ -550,8 +550,8 @@ EOF
      { from  => undef,
        until => 1092439940,
        data => <<EOF,
-userdel	2 9457,18612 9301,18722
-userdel	2 9565,18555 9881,18354
+userdel	2 9457,18612 9279,18724
+userdel	2 9565,18555 9821,18392 9881,18354
 EOF
        text  => 'Heinrich-Mann-Straße Berlin-Reinickendorf Richtung Berlin-Pankow Zwischen Heinrich-Mann-Straße und Grabbeallee Störungen durch geplatzte Wasserleitung, Straße gesperrt',
        type  => 'gesperrt',
@@ -4142,7 +4142,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 21182,4336 21174,4250
-userdel	2 21100,4192 21137,4221 21174,4250
+userdel	2 21053,4162 21137,4221 21174,4250
 EOF
      },
      { from  => 1151002800, # 2006-06-22 21:00
@@ -4151,7 +4151,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 21182,4336 21174,4250
-userdel	2 21100,4192 21137,4221 21174,4250
+userdel	2 21053,4162 21137,4221 21174,4250
 EOF
      },
      { from  => 1145209261, # 2006-04-16 19:41
@@ -4858,7 +4858,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_64281_COPY_1',
        data  => <<EOF,
-userdel	2 20692,3951 20834,4035 21100,4192 21137,4221 21174,4250 21182,4336 21332,4655
+userdel	2 20692,3951 20834,4035 21053,4162 21137,4221 21174,4250 21182,4336 21332,4655
 EOF
      },
      { from  => 1151101431, # 2006-06-24 00:23
@@ -6498,7 +6498,7 @@ EOF
        text  => 'Vollsperrung der Oberspreestraße zwischen Freystadter Weg und Ottomar-Geschke-Straße und Spindlersfelder Straße vom Sonnabend, den 04.11.2006, 5:00 Uhr bis Montag, den 06.11.2006, 5:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 20949,4775 21089,4731 21332,4655
+userdel	2::inwork 20949,4775 20994,4761 21089,4731 21332,4655
 EOF
      },
      { from  => 1163800165, # 2006-11-17 22:49
@@ -11887,7 +11887,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009340',
        data  => <<EOF,
-userdel	1::inwork 9301,18722 9457,18612
+userdel	1::inwork 9279,18724 9457,18612
 EOF
      },
      { from  => 1216159200, # 2008-07-16 00:00

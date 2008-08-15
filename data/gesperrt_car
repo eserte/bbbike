@@ -322,7 +322,7 @@ Skalitzer/Admiralstr.	3nocross::ignrte 11370,10398 11336,10390 11318,10386
 Admiralstr. -> Skalitzer Str.: Skalitzer/Admiralstr.	3::igndisp 11314,10320 11336,10390 11318,10386
 Skalitzer Str. -> Admiralstr.: Skalitzer/Admiralstr.	3::igndisp 11370,10398 11336,10390 11314,10320
 Gutenbergstr.	1 -12045,-757 -12219,-726
-Langhoffstr.	1 19817,14454 19814,14079
+Langhoffstr.	1 19817,14454 19818,14064
 Lintruper Str.	1 10307,922 10380,757
 Edison-/Siemensstr.	3 17992,6436 17962,6674 17860,6644 17766,6616
 Edisonstr.	1 17962,6674 17992,6436
@@ -487,8 +487,10 @@ Märkische Allee -> Klandorfer Str.: Mittelstreifen	3::igndisp 21400,18817 21335,
 Mittelstreifen	3nocross::ignrte 1208,3211 1334,3305 1415,3362
 Mörchinger Str. -> Berliner Str.: Mittelstreifen	3::igndisp 1358,3257 1334,3305 1208,3211
 Berliner Str. -> Mörchinger Str.: Mittelstreifen	3::igndisp 1415,3362 1334,3305 1358,3257
-Mittelstreifen	3nocross::ignrte 8939,16668 9024,16855 9028,16864 9082,16982
-Biesentaler Str. -> Prinzenallee: Mittelstreifen	3::igndisp 9245,16758 9024,16855 8939,16668
+Mittelstreifen	3nocross::ignrte 8939,16668 9000,16803 9024,16855 9028,16864 9082,16982
+Gotenburger Str. -> Prinzenallee: Mittelstreifen	3::igndisp 8844,16863 9000,16803 9024,16855
+Prinzenallee -> Gotenburger Str.: Mittelstreifen	3::igndisp 8939,16668 9000,16803 8844,16863
+Biesentaler Str. -> Prinzenallee: Mittelstreifen	3::igndisp 9245,16758 9024,16855 9000,16803
 Prinzenallee -> Biesentaler Str.: Mittelstreifen	3::igndisp 9028,16864 9024,16855 9245,16758
 Straßenbahntrasse	3nocross::ignrte 13540,15928 13623,15954 13630,15956 13753,16000
 Tassostr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13621,15990 13630,15956 13753,16000
@@ -715,3 +717,4 @@ Sonnenallee -> Treptower Str.: Mittelstreifen	3::igndisp 13474,8060 13459,8072 1
 Treptower Str. -> Treptower Str.: Mittelstreifen	3::igndisp 13478,8095 13459,8072 13376,7970
 Treptower Str. -> Sonnenallee: Mittelstreifen	3::igndisp 13478,8095 13459,8072 13474,8060
 Sonnenallee -> Treptower Str.: Mittelstreifen	3::igndisp 13277,8211 13459,8072 13478,8095
+Bernkastler Str.	1 15334,16961 15208,16939 15015,16908 14923,16901 14923,16914

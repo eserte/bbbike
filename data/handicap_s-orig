@@ -104,9 +104,11 @@ südlicher Uferweg am Schlachtensee: Fußgänger	q2 -3384,3212 -3341,3122 -3273,309
 südlicher Uferweg an der Krummen Lanke: Fußgänger	q2 -1274,4367 -1245,4414 -1185,4450 -1139,4575 -1134,4706 -971,4971 -724,5080 -604,5228 -593,5280 -579,5320
 nördlicher/westlicher Uferweg an der Krummen Lanke: Fußgänger	q2 -579,5320 -603,5317 -676,5323 -731,5291 -795,5233 -888,5172 -1098,5062 -1180,5020 -1243,4939 -1298,4815 -1298,4584 -1287,4486 -1272,4450 -1245,4414
 Krumme Lanke - Parkplatz am Fischerhüttenweg: Fußgänger	q2 -1287,4486 -1304,4450 -1315,4393
-Pankeweg, Bürgerpark: Fußgänger	q2 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9414,18278 9304,18165 9310,18108
+Pankeweg, Bürgerpark: Fußgänger	q2 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9424,18276 9304,18165 9310,18108
 #: XXX geraten:
 Bürgerpark: Fußgänger	q2 9460,18053 9479,18217 9701,18256 9716,18290
+#: XXX geraten:
+Bürgerpark: Fußgänger	q1 9428,18330 9424,18276 9479,18217
 Breite Str.: Fußgängerzone	q3 -3017,14554 -3054,14498 -3155,14340 -3227,14260
 Markt: Fußgängerzone	q3 -3155,14340 -3275,14407
 Carl-Schurz-Str.: Fußgängerzone	q3 -3513,14238 -3445,14226 -3409,14241 -3338,14333 -3275,14407 -3228,14468 -3205,14512 -3185,14556 -3150,14631
@@ -275,7 +277,7 @@ Hildburghauser Str.: Bahnunterführung für Fußgänger und Radfahrer	q1 4582,1374 4
 (zur Pfaueninselfähre): an schönen Tagen viele Fußgänger	q3 -8540,2209 -8561,2236 -8564,2276
 (Unterführung am S-Bhf. Kaulsdorf): Fußgänger	q4 22836,11994 22842,12070
 (Bürgipfad - Jenbacher Weg): Fußgänger	q2 5591,240 5671,118 5702,51
-Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14454 19814,14079
+Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14454 19818,14064
 (Kolonie Friedrichsfelde Nord, entlang der Fernwärmeleitung): Fußgänger	q1 17774,12244 18129,12245 18180,12262 18216,12262
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16553,11921 16514,11911
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
@@ -287,7 +289,7 @@ Pankeweg: Fußgänger	q1 8286,14635 8316,14667 8263,14838 8248,14900 8266,15134
 Pankeweg: Fußgänger	q1 8232,15220 8268,15312
 Pankeweg: Fußgänger	q1 8310,15449 8156,15614 8176,15635 8150,15700 8164,15840 8278,16043 8340,16154 8389,16214
 Pankeweg: Fußgänger	q1 8486,16425 8567,16429 8592,16406 8659,16494
-Pankeweg: Fußgänger	q1 8759,16684 8776,16718 8836,16867 8904,17059 9027,17290 9131,17664 9084,17678 9140,17921
+Pankeweg: Fußgänger	q1 8759,16684 8776,16718 8836,16867 8904,17059 9027,17290 9131,17664 9084,17678 9143,17933
 Pankeweg: Fußgänger	q1 8836,16867 8822,16873 8804,16881
 Pankeweg: Fußgänger	q1 8721,16689 8804,16881 8866,17075
 Uferweg am Tegeler Hafen: Fußgänger	q1 1259,20303 1523,20412 1572,20412 1617,20393 1675,20392 1756,20405
@@ -555,7 +557,7 @@ Wentowsteig: enge Straße mit parkenden Autos	q1 6924,20695 6945,20805 6955,20859
 #: by: Kleinke (honda):
 Havelstr.: Fußgängerzone	q4 -3150,14631 -3122,14557 -3054,14498
 #: by: Johannes Nerger:
-(Schönholzer Heide, parallel zur Friesenstr.): Fußgänger	q1 8765,19288 8784,19253 9446,18855 9475,18862
+(Schönholzer Heide, parallel zur Friesenstr.): Fußgänger	q1 8765,19288 8784,19253 8954,19151 9446,18855 9475,18862
 #: by: Felix Beutler:
 Nordufer: teilweise sehr schmaler Radweg	q1 7231,14749 7498,14658
 #: by: Jörn Busch:
@@ -1318,3 +1320,7 @@ Johannes-Werner-Str.: enge Straße	q1 17261,4267 17297,4159 17341,4046 17346,4031
 Mühlbergstr.: enge Straße	q1 17187,3988 17288,4026 17341,4046
 Mühlbergstr.: enge Straße	q1 17346,4031 17402,4050 17405,4151
 #: by: ^^^
+#: confirmed_by: Daniel Prusseit:
+Hohenschönhausener Weg: Fußgänger haben Vorrang	q1+ 15611,18547 16317,18020
+#: by: anonymous (q1 ohne genauere Kommentierung, aber auf dem Luftbild sieht es eng aus)
+Murtzaner Ring: enge Straße	q1 19593,14472 19593,14405 19595,14348 19599,14273 19634,14171 19692,14082 19731,14061 19770,14060 19818,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20059,14441
