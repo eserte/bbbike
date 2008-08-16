@@ -2,9 +2,11 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-validator.t,v 1.8 2007/03/18 18:45:08 eserte Exp $
+# $Id: cgi-validator.t,v 1.10 2008/08/16 07:52:42 eserte Exp $
 # Author: Slaven Rezic
 #
+
+# In case of problems (test failures) try to update W3C-LogValidator
 
 use strict;
 use Data::Dumper;
@@ -14,7 +16,7 @@ BEGIN {
     if (!eval q{
 	use Test::More;
         use W3C::LogValidator::HTMLValidator;
-        use W3C::LogValidator::CSSValidator;
+        use W3C::LogValidator::CSSValidator 1.021; # possible strange errors with older versions
 	use W3C::LogValidator::LinkChecker 1.005;
 	1;
     }) {
