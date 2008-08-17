@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlin_DE.pm,v 1.28 2008/08/02 10:57:43 eserte Exp $
+# $Id: Berlin_DE.pm,v 1.28 2008/08/02 10:57:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2006 Slaven Rezic. All rights reserved.
@@ -218,6 +218,7 @@ sub parse_street_type_nr {
 	$image = "BK.gif";
     } elsif ($strname =~ /mauer.*weg/i) {
 	$type = 'M';
+	$image = 'M.gif';
     } elsif ($strname =~ /havellandradweg/i) {
 	$type = 'HVL';
 	$image = 'HVL.gif';

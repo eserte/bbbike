@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.203 2008/07/05 20:23:56 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.204 2008/08/16 19:18:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2008 Slaven Rezic. All rights reserved.
@@ -123,7 +123,7 @@ sub advanced_option_menu {
 		   -command => \&recall_some_subs,
 		  );
     $opbm->command(-label => 'Reload photos',
-		   -command => sub { %photo = (); load_photos() },
+		   -command => sub { %photo = (); $top->{MapImages} = {}; load_photos() },
 		  );
     $opbm->command(-label => M"Datenverzeichnis ändern ...",
 		   -command => \&change_datadir);

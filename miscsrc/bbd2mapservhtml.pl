@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2mapservhtml.pl,v 1.24 2008/07/24 21:54:47 eserte Exp $
+# $Id: bbd2mapservhtml.pl,v 1.30 2008/08/16 16:34:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -40,6 +40,8 @@ my $do_center_nearest;
 my $partialhtml;
 my $do_linklist;
 my $do_headlines;
+my $only_one_direction;
+my $do_alternatives_handling;
 my $preferalias;
 my $imagetype = "mapserver";
 my $title = "Mapserver/BBBike";
@@ -74,6 +76,8 @@ if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		'headlines!' => \$do_headlines,
 		'imagetype=s' => \$imagetype,
 		'title=s' => \$title,
+		'onlyonedirection!' => \$only_one_direction,
+		'althandling!' => \$do_alternatives_handling,
 	       )) {
     require Pod::Usage;
     Pod::Usage::pod2usage(2);
@@ -146,12 +150,94 @@ if ($do_linklist) {
     my @html;
     $s->init;
 
+    my $last_route_id;
     my $last_section;
     my $current_display_name;
     my @current_lines;
+    my $current_link;
+    my $current_section;
+    my %current_alternatives;
+    my @current_alternatives_order;
+    my $current_ignore_routelist;
+
+    my $generate_single_html = sub {
+	my @coords = lines_to_coords(@current_lines);
+
+	if ($do_headlines) {
+	    if ($current_section) {
+		if (!defined $last_section || $current_section ne $last_section) {
+		    push @html, "<h2>" . CGI::escapeHTML($current_section) . "</h2>";
+		    $last_section = $current_section;
+		}
+	    }
+	}
+
+	my @common_html_args = (
+				maplabel       => " Karte ",
+				$current_ignore_routelist ? () : (routelistlabel => " Routenliste "),
+			       );
+
+	push @html, generate_single_html(coords => \@coords,
+					 (defined $center ? (center => find_nearest_to_center(\@current_lines, $center)) : ()),
+					 label => $current_display_name,
+					 link => $current_link,
+					 @common_html_args,
+					);
+	if (%current_alternatives) {
+	    for my $alt (@current_alternatives_order) {
+		my $label = $current_alternatives{$alt}->{label};
+		my $label_html = "&#xa0;&#xa0;&#xa0;" . CGI::escapeHTML($label);
+		my @coords = lines_to_coords(@{ $current_alternatives{$alt}->{coords} });
+		push @html, generate_single_html(coords => \@coords,
+						 label => $label,
+						 label_html => $label_html,
+						 @common_html_args,
+						);
+	    }
+	}	
+
+	@current_lines = ();
+	undef $current_display_name;
+	undef $current_link;
+	undef $current_section;
+	undef $current_ignore_routelist;
+	%current_alternatives = ();
+	@current_alternatives_order = ();
+    };
+
     while(1) {
 	my $r = $s->next;
 	last if !@{ $r->[Strassen::COORDS] };
+
+	if ($only_one_direction) {
+	    my($cat_hin,$cat_rueck) = split /;/, $r->[Strassen::CAT];
+	    if ($cat_hin eq '') {
+		warn "Ignore rueckweg in $r->[Strassen::NAME]...\n";
+		next;
+	    }
+	}
+
+	my $route_id = $r->[Strassen::NAME];
+	my $alt_name;
+	if ($do_alternatives_handling) {
+	    if ($route_id =~ s{\s+\[(.*)\]$}{}) {
+		$alt_name = $1;
+		if (!exists $current_alternatives{$alt_name}) {
+		    push @current_alternatives_order, $alt_name;
+		}
+		$current_alternatives{$alt_name}->{label} = $alt_name;
+		push @{ $current_alternatives{$alt_name}->{coords} }, $r->[Strassen::COORDS];
+		warn "XXX handle alternative $r->[Strassen::NAME]...\n";
+		next;
+	    }
+	}
+
+	if (defined $last_route_id && $last_route_id ne $route_id) {
+	    $generate_single_html->();
+	}
+
+	$last_route_id = $route_id;
+
 	push @current_lines, $r->[Strassen::COORDS];
 
 	if (!defined $current_display_name) {
@@ -162,33 +248,20 @@ if ($do_linklist) {
 	    }
 	}
 
-	if ($do_headlines) {
-	    my $current_section = $s->get_directive->{section}->[0];
-	    if ($current_section) {
-		if (!defined $last_section || $current_section ne $last_section) {
-		    push @html, "<h2>" . CGI::escapeHTML($current_section) . "</h2>";
-		    $last_section = $current_section;
-		}
-	    }
+	if (!defined $current_link) {
+	    $current_link = $s->get_directive->{url}->[0] || '';
 	}
 
-	my $link = $s->get_directive->{url}->[0] || undef;
-
-	my $next_r = $s->peek;
-	unless ($next_r && @{$next_r->[Strassen::COORDS]} &&
-		$r->[Strassen::NAME] eq $next_r->[Strassen::NAME]) {
-	    my @coords = lines_to_coords(@current_lines);
-
-	    push @html, generate_single_html(coords => \@coords,
-					     (defined $center ? (center => find_nearest_to_center(\@current_lines, $center)) : ()),
-					     label => $current_display_name,
-					     link => $link,
-					     submitlabel => " >> ",
-					    );
-	    @current_lines = ();
-	    undef $current_display_name;
+	if (!defined $current_section) {
+	    $current_section = $s->get_directive->{section}->[0] || '';
 	}
+
+	if (!defined $current_ignore_routelist) {
+	    $current_ignore_routelist = ($s->get_directive->{XXX_prog}->[0]||'') eq 'no_routelist' ? 1 : 0;
+	}
+
     }
+    $generate_single_html->();
 
     $html = join("\n", @html);
 } else {
@@ -202,7 +275,9 @@ if ($do_linklist) {
     $html = generate_single_html(coords => \@coords,
 				 (defined $center ? (center => find_nearest_to_center(\@lines, $center)) : ()),
 				 label => undef,
-				 submitlabel => "Zum Mapserver",
+				 maplabel       => " Karte ",
+				 routelistlabel => " Routenliste ",
+				 single => 1,
 				);
 				 
 }
@@ -264,8 +339,11 @@ sub generate_single_html {
     my @coords = @{ delete $args{coords} };
     my $center = delete $args{center};
     my $label = delete $args{label};
-    my $submitlabel = delete $args{submitlabel};
+    my $label_html = delete $args{label_html};
+    my $maplabel = delete $args{maplabel};
+    my $routelistlabel = delete $args{routelistlabel};
     my $link = delete $args{link};
+    my $is_single = delete $args{single} || 0;
 
     die "usage? " . join(" ", %args) if keys %args;
 
@@ -296,11 +374,26 @@ EOF
 EOF
     }
 
-    if (defined $label) {
-	$html .= "\n" . ($link ? CGI::a({href => $link}, $label) : CGI::escapeHTML($label));
+    if (defined $label || defined $label_html) {
+	$html .= <<EOF;
+ <input type="hidden" name="routetitle" value="@{[ $label_html || CGI::escapeHTML($label) ]}" />
+EOF
+	$html .= "\n" . ($link ? CGI::a({href => $link, class => "moreinfo"}, $label) : ($label_html || CGI::escapeHTML($label)));
     } 
+    $html .= ' <input';
+    if ($is_single) {
+	$html .= ' id="submitbutton"';
+    }
     $html .= <<EOF;
- <input id="submitbutton" type="submit" value="@{[ CGI::escapeHTML($submitlabel) ]}" />
+ type="submit" onclick='this.form.showroutelist.value="0";' value="@{[ CGI::escapeHTML($maplabel) ]}" />
+ <input type="hidden" name="showroutelist" value="0" />
+EOF
+    if ($routelistlabel) {
+	$html .= <<EOF;
+ <input type="submit" onclick='this.form.showroutelist.value="1";' value="@{[ CGI::escapeHTML($routelistlabel) ]}" />
+EOF
+    }
+    $html .= <<EOF;
 </form>
 EOF
 
@@ -407,6 +500,18 @@ Set title of generated HTML page to I<string>.
 
 Specify another imagetype than the default "mapserver". Examples are
 pdf or png, which would use different backends.
+
+=item -onlyonedirection
+
+Use only street records in the "forward" direction (see
+F<comments_route> for an example; C<< radroute >> vs. C<< radroute; >>
+and C<< ;radroute >>).
+
+=item -althandling
+
+Handling of alternative routes. This option in hand-optimized for
+F<comments_route> and may be changed in future or even vanish
+completely.
 
 =back
 

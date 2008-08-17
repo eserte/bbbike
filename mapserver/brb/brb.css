@@ -9,3 +9,4 @@
 .msg { color:#800000; font-weight:bold; border:#800000 solid 2px; padding:3px; margin:3px 3px 10px 3px; }
 a:visited { color:#0000ee; }
 a { color:#0000ee; }
+a.moreinfo { border-bottom: dotted blue 1px; text-decoration: none; }

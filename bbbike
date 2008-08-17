@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.376 2008/08/10 21:44:46 eserte Exp eserte $
+# $Id: bbbike,v 3.377 2008/08/16 10:54:52 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -243,7 +243,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.376 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.377 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -5526,6 +5526,8 @@ sub define_item_attribs {
 	 'green1' => '#7fbb7f',
 	 'green2' => '#008b00',
 
+	 'radroute' => 'SlateBlue',
+
 	 'X' => "red", # fallback color
 	);
     for (qw(Q0 Q1 Q2 Q3 q0 q1 q2 q3 q4)) { # same colors for tendencies
@@ -5656,7 +5658,10 @@ sub define_item_attribs {
 	('R0'   => [2,5],
 	 'U0'   => [2,5],
 	 'S0'   => [2,5],
+	 'radroute' => [1,15],
 	);
+    %category_capstyle =
+	('radroute' => 'round'); # XXX $capstyle_round not available at this time!
     foreach (qw/gBO gP gD/) {
 	$line_dash{$_} = [@{ $line_dash{"g"}}];
     }
@@ -5900,6 +5905,7 @@ sub define_item_attribs {
 	 'W1' => [M"Gewässer", undef, undef],
 	 'W2' => [M"größeres Gewässer", undef, undef],
 	 'WR' => [M"Wasserroute", M"Wasserrouten", undef],
+	 'radroute' => [M"Radroute", M"Radrouten", undef],
 	);
     foreach (@Radwege::category_order) {
 	if (defined $Radwege::category_code{$_}) {
@@ -6261,7 +6267,7 @@ sub generate_plot_functions {
 			    (@coordlist, @coordlist,
 			     -fill => $color,
 			     -width => 5, # XXX skalieren
-			     -capstyle => 'round',
+			     -capstyle => $capstyle_round,
 			     -tags => [$abk, $strname, $kreuzungen[0],
 				       $abk."-".$i
 				      ],
@@ -6355,7 +6361,7 @@ sub generate_plot_functions {
 			$item = $c->createLine(@coordlist, @coordlist,
 				       -fill => $this_color_hin,
 				       -width => 5, # XXX skalieren
-				       -capstyle => 'round',
+				       -capstyle => $capstyle_round,
 				       -tags => [$abk, $strname,
 						 "$abk-$cat_hin", "$abk-" . $i,
 						 @extra_tags],
@@ -6365,10 +6371,13 @@ sub generate_plot_functions {
 			my @std_tags_rueck;
 			my $line_dash_hin = ($layer_category_dash{$abk} && $layer_category_dash{$abk}{$cat_hin}) || $layer_line_dash{$abk} || $category_dash{$cat_hin} || $line_dash{$abk};
 			my $line_dash_rueck;
+			my $line_capstyle_hin = ($layer_category_capstyle{$abk} && $layer_category_capstyle{$abk}{$cat_hin}) || $layer_line_capstyle{$abk} || $category_capstyle{$cat_hin} || $line_capstyle{$abk};
+			my $line_capstyle_rueck;
 			if ($cat_rueck) {
 			    @std_tags_rueck = @std_tags_hin;
 			    $std_tags_rueck[2] = "$abk-$cat_rueck";
 			    $line_dash_rueck = ($layer_category_dash{$abk} && $layer_category_dash{$abk}{$cat_rueck}) || $layer_line_dash{$abk} || $category_dash{$cat_rueck} || $line_dash{$abk};
+			    $line_capstyle_rueck = ($layer_category_capstyle{$abk} && $layer_category_capstyle{$abk}{$cat_rueck}) || $layer_line_capstyle{$abk} || $category_capstyle{$cat_rueck} || $line_capstyle{$abk};
 			}
 			my $stipple = ($layer_category_stipple{$abk} && $layer_category_stipple{$abk}{$category}) || $layer_stipple{$abk} || $category_stipple{$category};
 			$stipple = load_stipple($stipple) if $stipple;
@@ -6396,6 +6405,7 @@ sub generate_plot_functions {
 			       -tags      => ["$abk-out",
 					      "$abk-$cat_hin-out"],
                                ($line_dash_hin ? (-dash => $line_dash_hin) : ()),
+			       ($line_dash_rueck ? (-capstyle => $line_dash_rueck) : ()),
 			       ($stipple ? (-stipple => $stipple) : ()),
 			       (exists $layer_line_arrow{$abk}{$cat_hin} ? (-arrow => $layer_line_arrow{$abk}{$cat_hin})
 				: exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
@@ -6403,7 +6413,7 @@ sub generate_plot_functions {
 			}
 			if (defined $cat_rueck) {
 			    for my $dir (1, -1) {
-				my($cl, $this_color, $this_width, $cat, $std_tags, $line_dash);
+				my($cl, $this_color, $this_width, $cat, $std_tags, $line_dash, $line_capstyle);
 				if ($dir == 1 && $cat_hin ne '') {
 				    $this_color = $this_color_hin;
 				    $this_width = $this_width_hin/2;
@@ -6411,6 +6421,7 @@ sub generate_plot_functions {
 				    $cl         = [@coordlist];
 				    $std_tags   = \@std_tags_hin;
 				    $line_dash  = $line_dash_hin;
+				    $line_capstyle = $line_capstyle_hin;
 				} elsif ($dir == -1 && $cat_rueck ne '') {
 				    $this_color = $this_color_rueck;
 				    $this_width = $this_width_rueck/2;
@@ -6421,6 +6432,7 @@ sub generate_plot_functions {
 				    }
 				    $std_tags   = \@std_tags_rueck;
 				    $line_dash  = $line_dash_rueck;
+				    $line_capstyle = $line_capstyle_rueck;
 				} else {
 				    next;
 				}
@@ -6446,9 +6458,11 @@ sub generate_plot_functions {
 				     -tags  => [@$std_tags,
 						@extra_tags],
 				     ($line_dash ? (-dash => $line_dash) : ()),
+				     ($line_capstyle ? (-capstyle => $line_capstyle) : ()),
 				     ($stipple ? (-stipple => $stipple) : ()),
 				     #(exists $line_arrow{$cat} ? (-arrow => $line_arrow{$cat}) : ()),
-				     -arrow => "last",
+				     # XXX Tk problem? bad rendering with capstyle=>"round" and arrow=>something
+				     -arrow => ($line_capstyle && $line_capstyle eq 'round' ? "none" : "last"),
 				    );
 
 				# Draw an extra point indicating the point of action for CP/CP2 items
@@ -6489,6 +6503,7 @@ sub generate_plot_functions {
 						@extra_tags],
 				 ($stipple ? (-stipple => $stipple) : ()),
 				 ($line_dash_hin ? (-dash => $line_dash_hin) : ()),
+				 ($line_capstyle_hin ? (-capstyle => $line_capstyle_hin) : ()),
 				 (exists $layer_line_arrow{$abk}{$cat_hin} ? (-arrow => $layer_line_arrow{$abk}{$cat_hin})
 				: exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
 				);
@@ -6684,7 +6699,7 @@ EOF
 		my $color = $category_color{$category} || ($category =~ /^\#/ ? $category : 'red');
 		my $width = $category_width{$category} || $p_width{$abk} || $default_width || 6;
 		$c->createLine($x, $y, $x, $y,
-			       -fill => $color, -capstyle => 'round',
+			       -fill => $color, -capstyle => $capstyle_round,
 			       -width => $width,
 			       -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $i]);
 	    }
@@ -13728,12 +13743,14 @@ sub reset_free_layer {
     delete $layer_line_arrow{$abk};
     delete $layer_stipple{$abk};
     delete $layer_line_dash{$abk};
+    delete $layer_line_capstyle{$abk};
     delete $layer_category_size{$abk};
     delete $layer_category_color{$abk};
     delete $layer_category_width{$abk};
     delete $layer_category_image{$abk};
     delete $layer_category_stipple{$abk};
     delete $layer_category_dash{$abk};
+    delete $layer_category_capstyle{$abk};
     remove_from_stack($abk);
 }
 
@@ -20169,19 +20186,23 @@ sub handle_global_directives {
     my %accept_global_hash_directives = map{($_,1)}
 	qw(category_size category_color
 	   category_width category_image
-	   category_stipple category_dash);
+	   category_stipple category_dash
+	   category_capstyle
+	  );
     my %accept_global_hashref_directives = map{($_,1)}
 	qw(str_attrib p_attrib);
     my %accept_global_catless_directives = map{($_,1)}
 	qw(str_color outline_color);
     my %accept_global_catless_directives_with_layer_prefix = map{($_,1)}
 	qw(line_width line_length
-	   line_dash line_arrow);
+	   line_dash line_arrow
+	   line_capstyle
+	  );
 
     my $get_val = sub {
 	my($key, $vals) = @_;
 	my $val = $vals->[0];
-	if ($key =~ m{(?:_dash|_width|^line_length$)}) { # list of directives using arrays
+	if ($key =~ m{(?:_dash|_capstyle|_width|^line_length$)}) { # list of directives using arrays
 	    $val = [split /\s*,\s*/, $val];
 	}
 	$val;

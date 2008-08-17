@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.122 2008/05/20 22:45:10 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.123 2008/08/16 09:48:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -1886,6 +1886,13 @@ sub ask_for_co {
 	return 0;
     }
     if (!-w $file) {
+	if (!(-e dirname($file)."/RCS/".basename($file.",v") ||
+	      -e $file.",v")) {
+	    $top->messageBox(-title => "Warnung",
+			     -message => "Die Datei $file kann nicht geschrieben werden. Bitte Berechtigungen überprüfen",
+			    );
+	    return 0;
+	}
 	require Tk::Dialog;
 	my $ans = $top->Dialog
 	    (-title => 'Warnung',
@@ -3015,6 +3022,7 @@ sub edit_gpsman_waypoint {
 	main::status_message(Mfmt("Die Datei <%s> konnte nicht im Verzeichnis <%s> oder den Unterverzeichnissen gefunden werden", $basefile, $main::gpsman_data_dir), "err");
 	return;
     }
+    ask_for_co($main::top, $file);
     tie my @gpsman_data, 'DB_File', $file, &Fcntl::O_RDWR, 0644, $DB_File::DB_RECNO
 	or do {
 	    main::status_message(Mfmt("Die Datei <%s> kann nicht geöffnet werden: %s", $file, $!), "err");

@@ -1725,6 +1725,22 @@ L<http://www.perlmonks.org/index.pl?node_id=355073>
 
 =item * (H4) (improvement)
 
+Move abbreviations and icon specifications into comments_route. This
+would obsolete parse_street_type_nr in Geography::* nearly useless
+(the functionality can still be there as a fallback solution for
+highly dynamic mappings). This would require two new directives (e.g.
+E<quot>abbrevE<quot> and E<quot>iconE<quot> or E<quot>imageE<quot>).
+Also, the directives needs to be preserved when converting from the
+-orig into the real file; and the plot* functions need to deal with
+these directives (Performance penalty because a new method
+get_directives is called multiple times? What about fast plotters (XS)
+or the lazy plotter?)
+
+The new feature could also be used in things like radroute.html or in
+the mapserver output.
+
+=item * (H4) (improvement)
+
 Normalize comments in bbd files. For example qualitaet*-orig: we could
 introduce abbreviations like +AS (= guter Asphalt) or -KS (schlechtes
 Kopfsteinpflaster) or oBT (= mäßiger Beton), which could be
@@ -2867,32 +2883,32 @@ Aber:
    anbieten: Straßen/Plätze; Bahnhöfe; Sehenswürdigkeiten/öffentliche
    Gebäude. Ja/Nein?
 
-=item * (M4) (feature)
+=item * (M4) (improvement)
 
-Radrouten auch als Routenliste bereitstellen. Das könnte man hier
-L<http://bbbike.radzeit.de/mapserver/brb/radroute.html> als zweiten
-Button bereitstellen. Die Verlinkung würde dann auf bbbike.cgi mit
-einer Variation des localroutefilelist-Parameters gehen. Detail ist
-noch unklar: entweder bereite ich pro Radroute eine .bbr-Datei vor
-(wie kann man diese am besten automatisch erstellen?) oder ich bringe
-bbbike.cgi bei, auch mit einem POST von Koordinaten umzugehen. Dann
-müsste ich aber Javascript ins Spiel bringen, weil das submit entweder
-auf mapserver oder auf bbbike gehen müsste (ein paar hidden-Variablen
-umsetzen, und sicherheitshalber den zweiten Submit-Button in <script>
-einschließen, damit nicht javascript-fähige Browser nur einen Button
-sehen). Oder ich doppele alle Formulare, aber das wäre Overkill (sind
-jetzt schon >100kB).
-
-Weitere Probleme:
+Radrouten auch als Routenliste bereitstellen. Eine erste
+Implementation existiert schon. Noch vorhandene Probleme:
 
 Wie behandelt man unterbrochene Routen?
 
-Wie behandelt man Abschnitte, in denen die Hin- und Rückstrecke nicht
-gleich ist (Beispiel: E<quot>CS;E<quot>, z.B. Großer Stern)?
+Kann man Abschnitte, in denen die Hin- und Rückstrecke nicht
+gleich ist (Beispiel: E<quot>CS;E<quot>, z.B. Großer Stern), bei
+E<quot>RückwegE<quot> richtig behandeln (zurzeit ist
+E<quot>RückwegE<quot> in bbbike.cgi ausgeschaltet)?
 
-Wie behandelt man Alternativen?
+Kann man Alternativen besser behandeln, besonders in der Kartenansicht
+(normale Route und alternative Route anzeigen? Man könnte z.B. eine
+Kartenansicht für die E<quot>HauptrouteE<quot> haben und eine, bei der
+alle Alternativen eingezeichnet sind.
 
-Soll man auch den Rückweg bzw. die andere Richtung bereitstellen? Wie?
+Flaeming-Skate ist ein besonderer Fall, da es sich nicht um
+Alternativen, sondern E<quot>Sub-RoutenE<quot> handelt. Hier ist eine
+Routenliste für die Hauptroute nicht möglich (es gibt keine
+Hauptroute). Bei der Kartenansicht könnte man alles anzeigen und jede
+Sub-Route gesondert. Man muss auch beachten, dass Sub-Routen kombinert
+sind (E<quot>Flaeming-Skate (RK1, RK2)E<quot>). bbd2mapservhtml muss
+diese aufteilen und dann noch Strassen::Combine::make_long_streets
+aufrufen (mehrere Strecken für die gleiche Sub-Route sind dann
+womöglich ein Fehler, prüfen!).
 
 =item * (M3) (bug)
 

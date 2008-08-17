@@ -1135,7 +1135,12 @@ if (defined $q->param('begin')) {
     $local_route_file = "$local_route_dir/$local_route_file";
     show_routelist_from_file($local_route_file);
 } elsif (defined $q->param('coords') || defined $q->param('coordssession')) {
-    draw_route(-cache => []);
+    if ($q->param('showroutelist')) {
+	# XXX note: coordssession+showroutelist is not implemented
+	show_routelist_from_coords();
+    } else {
+	draw_route(-cache => []);
+    }
 } elsif (defined $q->param('create_all_maps')) {
     # XXX Der Apache 1.3.9/FreeBSD 3.3 lässt den Prozess nach ungefähr
     # fünf Karten mit "Profiling timer expired" sterben. Mit thttpd
@@ -3393,6 +3398,8 @@ sub display_route {
     my $vianame     = name_from_cgi($q, 'via');
     my $zielname    = name_from_cgi($q, 'ziel');
 
+    my $routetitle  = $q->param('routetitle');
+
     my $starthnr    = $q->param('starthnr');
     my $viahnr      = $q->param('viahnr');
     my $zielhnr     = $q->param('zielhnr');
@@ -4060,7 +4067,9 @@ EOF
 	}
 	my $can_jslink = $can_mapserver && !$printmode && $bi->{'can_javascript'};
 	print "><tr><td>$fontstr";
-	if (!$zielname) {
+	if ($routetitle) {
+	    print "<b>" . CGI::escapeHTML($routetitle) . "</b>";
+	} elsif (!$zielname) {
 	    if (!$startname) {
 		print "<b>" . M("Route") . "</b>";
 	    } else {
@@ -6439,6 +6448,13 @@ sub show_routelist_from_file {
 	return display_route($r, -hidesettings => 1, -hidewayback => 1);
     }
     die $err;
+}
+
+# XXX should also implement coordssession param
+sub show_routelist_from_coords {
+    require Route;
+    my $r = Route->new_from_cgi_string(join("!", $q->param('coords')));
+    display_route($r, -hidesettings => 1, -hidewayback => 1);
 }
 
 sub draw_route_from_fh {
