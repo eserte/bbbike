@@ -1,10 +1,15 @@
 #!/usr/bin/perl -w
 #
-# Copyright 2005 iconmobile GmbH. All rights reserved.
+# Copyright (C) 2005-2008 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
 
 use Cwd qw(realpath);
 use File::Spec;
@@ -37,6 +42,7 @@ my $date_db;
 my $v;
 my $relative_paths;
 my $out_file;
+my $max_delta = 180;
 
 sub usage (;$) {
     my $msg = shift;
@@ -135,6 +141,53 @@ sub get_image_location {
     if (defined &ImageInfo) {
 	my $exif = ImageInfo($file);
 	if ($exif) {
+
+	    # Prefer GPS position recorded in EXIF:
+	    my($lat_deg, $lat_min, $lat_sec, $lat_ref, $lon_deg, $lon_min, $lon_sec, $lon_ref);
+	    my $polar_qr = qr{(\d+)\s+deg\s+(\d+)\'\s+([\d\.]+)\"};
+	FIND_GPS_POS: {
+		if ($exif->{GPSPosition}) {
+		    if (($lat_deg, $lat_min, $lat_sec, $lat_ref, $lon_deg, $lon_min, $lon_sec, $lon_ref) =
+			$exif->{GPSPosition} =~ m{
+						  ^
+						  $polar_qr\s+([NS]),\s*
+						  $polar_qr\s+([EW])
+					      }x) {
+			$lat_deg *= -1 if $lat_ref =~ m{s}i;
+			$lon_deg *= -1 if $lon_ref =~ m{w}i;
+		    } else {
+			warn "Cannot parse GPSPosition <$exif->{GPSPosition}>";
+			last FIND_GPS_POS;
+		    }
+		} elsif ($exif->{GPSLatitude} && $exif->{GPSLongitude} &&
+		    $exif->{GPSLatitudeRef} && $exif->{GPSLongitudeRef}) {
+		    if (!(($lat_deg, $lat_min, $lat_sec) = $exif->{GPSLatitude} =~ $polar_qr)) {
+			warn "Cannot parse GPSLatitude <$exif->{GPSLatitude}>";
+			last FIND_GPS_POS;
+		    }
+		    if (!(($lon_deg, $lon_min, $lon_sec) = $exif->{GPSLongitude} =~ $polar_qr)) {
+			warn "Cannot parse GPSLongitude <$exif->{GPSLongitude}>";
+			last FIND_GPS_POS;
+		    }
+		    $lat_deg *= -1 if $exif->{GPSLatitudeRef} =~ m{^s}i;
+		    $lon_deg *= -1 if $exif->{GPSLongitudeRef} =~ m{^w}i;
+		} else {
+		    last FIND_GPS_POS;
+		}
+		my $lat = Karte::Polar::dms2ddd($lat_deg, $lat_min, $lat_sec);
+		my $lon = Karte::Polar::dms2ddd($lon_deg, $lon_min, $lon_sec);
+		my $iso_date = $exif->{DateTimeOriginal} || $exif->{CreateDate}; # XXX GPSDateTime is nonsense in the N95
+		$iso_date =~ s{ }{T}; # -> iso date sep
+		my $ret = { Longitude => $lon,
+			    Latitude  => $lat,
+			    Delta    => 0,
+			    Waypoint => undef, # ? XXX
+			    Date     => $iso_date,
+			    Used     => "exact",
+			  };
+		return $ret;
+	    }
+
 	    my $date = $exif->{DateTimeOriginal} || $exif->{CreateDate};
 	    if (defined $date && $date =~ /^(\d{4}):(\d{2}):(\d{2}) (\d{2}):(\d{2}):(\d{2})/) {
 		($y,$m,$d,$H,$M,$S) = ($1,$2,$3,$4,$5,$6);
@@ -146,7 +199,11 @@ sub get_image_location {
 	# Nokia 7650 hack
 	my $info = image_info($file);
 	if (my $error = $info->{error}) {
-	    warn "Can't parse image info from $file: $error\n";
+	    if ($file =~ m{(^|/)\.xvpics/}) {
+		# expected error, be quiet
+	    } else {
+		warn "Can't parse image info from $file: $error\n";
+	    }
 	    return;
 	}
 
@@ -194,7 +251,7 @@ sub get_image_location {
 	if ($st == 0) {
 	    if (my($fy,$fm,$fd,$fH,$fM,$fS) = $key =~ m{^(\d+)-(\d+)-(\d+)T(\d{2})(\d{2})(\d{2})}) {
 		my $got_epoch = timelocal($fS,$fM,$fH,$fd,$fm-1,$fy-1900);
-		my $interval = abs($got_epoch - $epoch);
+		my $delta = abs($got_epoch - $epoch);
 		my(@fields) = split / /, $val;
 		$used = "next";
 
@@ -203,20 +260,20 @@ sub get_image_location {
 		if ($st == 0) {
 		    if (my($py,$pm,$pd,$pH,$pM,$pS) = $key =~ m{^(\d+)-(\d+)-(\d+)T(\d{2})(\d{2})(\d{2})}) {
 			my $got_prev_epoch = timelocal($pS,$pM,$pH,$pd,$pm-1,$py-1900);
-			my $prev_interval = abs($got_prev_epoch - $epoch);
-			if ($prev_interval < $interval) {
+			my $prev_delta = abs($got_prev_epoch - $epoch);
+			if ($prev_delta < $delta) {
 			    # prefer previous
 			    (@fields) = split / /, $val;
-			    $interval = $prev_interval;
+			    $delta = $prev_delta;
 			    $used = "prev";
 			}
 		    }
 		}
 
-		if ($interval <= 180) {
+		if ($delta <= $max_delta) {
 		    my $ret = { Longitude => $fields[1],
 				Latitude  => $fields[2],
-				Interval => $interval,
+				Delta    => $delta,
 				Waypoint => undef, # !
 				Date     => $iso_date,
 				Used     => $used,
@@ -263,7 +320,7 @@ sub get_image_location {
 	$gps->load($filename);
 	my $got_wpt;
 	my $last_wpt;
-	my $interval;
+	my $delta;
 	for my $wpt (@{ $gps->Track }) {
 	    my $wpt_epoch = $wpt->Comment_to_unixtime($gps);
 	    if ($wpt_epoch > $epoch) {
@@ -281,11 +338,11 @@ sub get_image_location {
 	if (!$got_wpt) {
 	    $got_wpt = $gps->Track->[-1];
 	}
-	$interval = abs($got_wpt->Comment_to_unixtime($gps) - $epoch);
+	$delta = abs($got_wpt->Comment_to_unixtime($gps) - $epoch);
 	if ($got_wpt) {
 	    return { Latitude  => $got_wpt->Latitude,
 		     Longitude => $got_wpt->Longitude,
-		     Interval  => $interval,
+		     Delta  => $delta,
 		     Waypoint  => $got_wpt,
 		     Date      => $iso_date,
 		   };
@@ -343,7 +400,7 @@ sub handle_file {
     my $file = shift;
     my $ret = get_image_location($file);
     if (defined $ret) {
-	my($lat, $long, $interval, $date) = @{$ret}{qw(Latitude Longitude Interval Date)};
+	my($lat, $long, $delta, $date) = @{$ret}{qw(Latitude Longitude Delta Date)};
 	my($x, $y) = $Karte::Standard::obj->trim_accuracy
 	    ($Karte::Polar::obj->map2standard($long, $lat));
 	my $file_in_bbd;
@@ -363,8 +420,8 @@ sub handle_file {
 					     );
 	}
 	if (defined $thumb_file) {
-	    my $interval_hm = s2hm($interval);
-	    print qq{Image: "$file_in_bbd" ($date) (delta=$interval_hm) ($lat/$long)\tIMG:$thumb_file};
+	    my $delta_hm = s2hm($delta);
+	    print qq{Image: "$file_in_bbd" ($date) (delta=$delta_hm) ($lat/$long)\tIMG:$thumb_file};
 	    if ($anchor) {
 		print qq{|ANCHOR:$anchor};
 	    }
@@ -582,6 +639,7 @@ version
  * There could be an -update switch
  * Instructions needed on how to create
    a bundle suitable for sharing with other people
+ * GPX support
 
 =head1 SEE ALSO
 

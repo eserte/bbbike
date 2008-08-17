@@ -5623,6 +5623,7 @@ sub define_item_attribs {
 	 'w-W0'     => [0, 1, 1, 1, 3, 5],
 	 'w-W1'     => [2, 2, 3, 5, 7, 11],
 	 'w-W2'     => [3, 4, 6, 8, 10,13],
+	 'comm-scenic-View' => [4, 7, 9, 12, 16, 20],
 	 'default'  => [1, 2, 3, 4, 6, 10],
 	);
     foreach (qw/H HH B BAB N NN/) {
@@ -6342,18 +6343,31 @@ sub generate_plot_functions {
 			    $draw_street_photo->($kreisverkehr_photo, "c");
 			} elsif ($cat_hin =~ $viewangle_qr) {
 			    my($start,$extent) = ($1,$2);
-			    # XXX provisorischer Aussichtspunkt
-			    $c->createArc((map { $_-10 } @coordlist),
-			    		  (map { $_+10 } @coordlist),
-			    		  -outline => "black",
-			    		  -fill => "red",
-			    		  -start => $start,
-			    		  -extent => $extent,
+			    my $radius = get_line_width("$abk-View");
+			    my @coords = ((map { $_-$radius } @coordlist),
+			    		  (map { $_+$radius } @coordlist));
+			    my @common_args = (-outline => undef,
+					       -fill => "red",
+			    		       -tags => [$abk, $strname,
 #XXX fix category from View:...:... to View?
-			    		  -tags => [$abk, $strname,
-						 "$abk-View", "$abk-" . $i,
-						 @extra_tags],
-				         );
+						        "$abk-View", "$abk-" . $i,
+						        @extra_tags],
+					      );
+			    if (abs($extent) < 30) {
+			        $c->createArc(@coords, @common_args,
+	       		    		      -start => $start,
+			    		      -extent => $extent,
+				             );
+			    } else {
+				my $delta = $extent > 0 ? 30 : -30;
+				my $end   = $start + $extent;
+				for(my $_start = $start; $extent > 0 ? $_start < $end : $_start > $end; $_start+=$delta) {
+				    $c->createArc(@coords, @common_args,
+						  -start => $_start,
+						  -extent => $delta/2,
+						 );
+				}
+			    }
 			    return; # next loop
 			}
 
@@ -14749,6 +14763,7 @@ sub scalecanvas {
 	    $_->[2] *= $scalefactor;
 	}
 
+	scale_coords($c, $scale, $old_scale);
 	scale_maps($scalefactor);
 
 	if (defined $x && defined $y) {
@@ -14827,6 +14842,7 @@ sub scale_width {
 	##XXX Works, but maybe it's better to put the code snippets of
 	##plot_sperre into strings to be evaled, used in plot_sperre
 	##and re-used here.
+	# XXX adjust and move to scale_coords?
  	if ($sperre_type =~ /^sperre[12]/) {
  	    my $new_length = get_line_length($sperre_type);
 	    my $old_length = get_line_length($sperre_type, $old_scale) * $scale/$old_scale;
@@ -14872,6 +14888,7 @@ sub scale_width {
 ## DEBUG_BEGIN
 #benchbegin("Repositioning labels");
 ## DEBUG_END	   
+    # XXX adjust and move to scale_coords?
     foreach my $item ($c->find(withtag => 'outlmaster')) {
 	my($x,$y) = $c->coords($item);
 	my $outline_width = 1;
@@ -14897,6 +14914,7 @@ sub scale_width {
 #benchend();
 ## DEBUG_END	   
 
+    # XXX adjust and move to scale_coords?
     foreach my $item ($c->find(withtag => 'strnr')) {
 	my $master = ($c->gettags($item))[2];
 	$master =~ s/^strnr-//;
@@ -14917,6 +14935,22 @@ sub scale_width {
     while(my($name,$scalecommand) = each %scalecommand) {
 	warn "Scale for $name...\n";
 	$scalecommand->($name, $c, $scale, $old_scale);
+    }
+}
+
+### AutoLoad Sub
+sub scale_coords {
+    my($c, $scale, $old_scale) = @_;
+
+    {
+	my $new_width = get_line_width('comm-scenic-View', $scale);
+	my $old_width = get_line_width('comm-scenic-View', $old_scale);
+	if ($new_width != $old_width) {
+	    foreach my $item ($c->find(withtag => 'comm-scenic-View')) {
+		my($cx,$cy) = Strassen::Util::middle($c->coords($item));
+		$c->coords($item,$cx-$new_width,$cy-$new_width,$cx+$new_width,$cy+$new_width);
+	    }
+	}
     }
 }
 

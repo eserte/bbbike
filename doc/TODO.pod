@@ -22,23 +22,15 @@ Legend:
 
 =over
 
-=item * (M3) (feature)
+=item * (M3) (improvement)
 
-Aussichtspunkte-Signatur. Idee: Ich könnte ein "View"-Symbol wie folgt
-zeichen: stipple mit einem
-vollen Kreis für den Aussichtspunkt für eine feste Größe, z.B. 20x20
-Pixel vorbereiten. Die bbd-Kategorie sieht dann so aus:
-View:start:extent und wird mit createArc gezeichnet. Mögliches
-Problem: beim Zoomen dürfen diese Items nicht angefasst werden oder
-der Stipple muss sich relativ anpassen. Evtl. kann man ab
-bestimmten Zoomstufen auf den Stipple verzichten und nur ein
-Kreissegment zeichnen. (Letzteres ist provisorisch implementiert
-worden)
+Get rid of Class::Struct. It's only advantage is: it's in the core,
+and it does use a 1:1 mapping between method name and hash key (unlink
+accessors.pm).
 
-Zunächst muss ich aber inkscape zum Laufen bekommen, damit ich die
-volle Signatur für das Stipple damit zeichnen kann.
+Seek for an alternative, maybe self-written.
 
-=item * (H4) (improvement)
+=item * (H3) (improvement)
 
 Unification of plot streets and plot points. Eigentlich nicht so
 schwierig: alles, was einen Punkt hat, wird wie bei plot_point
@@ -863,11 +855,6 @@ Liniengruppe), um Umsteigen zu erkennen.
 
 =back
 
-=item * (E1) (improvement)
-
-GfxConvert: add more search paths on Windows machines like
-C:/Programme/gs/gs8.14/lib;C:/Programme/GnuWin32/bin
-
 =item * (H1) (improvement)
 
 GfxConvert evtl. mit Tk::WinPhoto/Tk::Photo-Funktionen implementieren,
@@ -1291,9 +1278,9 @@ auch nicht implementieren
 
 =back
 
-  * E5 make test unter Windows/cygwin ausführen
+  * E3 make test unter Windows/cygwin ausführen
 
-  * E5 bbbike -public unter Windows/cygwin ausführen
+  * E3 bbbike -public unter Windows/cygwin ausführen
 
   * M3 make ext unter cygwin machen => habe ich Inline installiert?
 
@@ -1458,12 +1445,6 @@ der E<quot># sourceE<quot>-Mechanismus benutzt wird und vielleicht
 durch Zeilennummern ergänzt wird. Dann kann eindeutig auf die
 entsprechende Originaldatei verwiesen wird.
 
-=item * (E3)
-
-Sehenswürdigkeiten vielleicht grau statt rot einfärben wie beim
-Mapserver? Das sieht nicht so aufdringlich aus. Auch bei anderen
-Ausgabeformaten (BBBikeDraw) überlegen.
-
 =item * (H4)
 
 Bahnlinien wie in Deutschland (Europa?) üblich zeichnen. Das könnte
@@ -1485,9 +1466,6 @@ special_raise/lower_taggroup kann verwendet werden. Um Bahnlinien im
 Bau oder im Tunnel zu zeichnen, kann man folgendes nehmen:
 
     $c->itemconfigure("L5",-dash=>[1,16])
-
-Für Bahnhöfe könnte man ein weißes Rechteck mit schwarzem Rand nehmen,
-welches im parallel zur Bahnstrecke gedreht ist.
 
 =back
 
@@ -2613,6 +2591,11 @@ Cleanup the E<quot>-infoE<quot> companion of a .bbd file. Suggestions:
   into this module.
 
 The other tracks in misc/gps_data should have a info companion.
+
+=item * (M5)
+
+Many old files in misc/gps_data seem to have wrong TZ setting. This
+could probably be automatically fixed?
 
 =item * (H4)
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GfxConvert.pm,v 1.19 2008/03/11 21:24:37 eserte Exp $
+# $Id: GfxConvert.pm,v 1.20 2008/08/17 20:29:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -42,6 +42,7 @@ sub init {
 sub check {
     my($infmt, $outfmt, $infile, $outfile, %args) = @_;
     my $checksub = $checksub{$infmt}->{$outfmt};
+    local $ENV{PATH} = $ENV{PATH}; _before_exec();
     if (defined $checksub) {
 	$checksub->($infile, $outfile, %args);
     } else {
@@ -52,10 +53,19 @@ sub check {
 sub convert {
     my($infmt, $outfmt, $infile, $outfile, %args) = @_;
     my $convsub = $convsub{$infmt}->{$outfmt};
+    local $ENV{PATH} = $ENV{PATH}; _before_exec();
     if (defined $convsub) {
 	$convsub->($infile, $outfile, %args);
     } else {
 	die "Konversion von $infmt nach $outfmt kann nicht durchgeführt werden.";
+    }
+}
+
+# assumes localized $ENV{PATH}
+sub _before_exec {
+    if ($^O eq 'MSWin32') {
+	# some path candidates for gfx programs
+	$ENV{PATH} .= ";C:/Programme/gs/gs8.14/lib;C:/Programme/GnuWin32/bin";
     }
 }
 

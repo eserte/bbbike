@@ -1,0 +1,80 @@
+2008-08-17  Slaven Rezic  <slaven@rezic.de>
+
+	* Bahnhöfe: Im Zuge des Vorschlags für eine neue Kartensignatur für
+	Bahnlinien habe ich auch überlegt:
+
+	| Für Bahnhöfe könnte man ein weißes Rechteck mit schwarzem Rand nehmen,
+	| welches parallel zur Bahnstrecke gedreht ist.
+
+	Mir gefällt aber das gegenwärtige Eisenbahnsymbol eigentlich. Also keine
+	weiteren Aktionen hier nötig.
+
+	* Sehenswürdigkeiten: rot oder grau?
+
+	Sehenswürdigkeiten vielleicht grau statt rot einfärben wie beim
+	Mapserver? Das sieht nicht so aufdringlich aus. Auch bei anderen
+	Ausgabeformaten (BBBikeDraw) überlegen.
+	
+	Aber: bei osm kann man sich Bebauungsflächen besorgen. Und diese will
+	man dann tatsächlich grau zeichnen. In diesem Fall will man eine
+	Unterscheidung haben.
+
+	Wie machen es andere Karten (öffentliche Gebäude/bebaute Flächen)? RV:
+	rot/grau; Pharus: orange/grau; Pietruska: graurosa (kaum Kontrast)/grau;
+	Google: rosa/grau (nur Krankenhäuser); Stadtplandienst: rosa+roter
+	Rand/grau
+	
+	Ergo: rot ist OK! Vielleicht kann man den Kontrast etwas abschwächen.
+	Vielleicht sollte man beim Mapserver auch wieder zurück zu rot gehen.
+
+	* Windows und GfxConvert: Der TODO-Vorschlag:
+
+	GfxConvert: add more search paths on Windows machines like
+  C:/Programme/gs/gs8.14/lib;C:/Programme/GnuWin32/bin
+
+	wurde ungetestet umgesetzt.
+
+	* scale_coords: In scale_width sollte wirklich nur die Breite eines
+	Canvas-Items angepasst werden. Da die Skalierung in scalecanvas nach dem
+	Aufruf von scale_width erfolgt, müssen Koodinatenanpassungen später
+	gemacht werden. Dazu ist jetzt scale_coords da.
+
+	Schmutzigerweise ist die "Breiteninformation" für comm-scenic-View in
+	%line_width enthalten.
+
+	* Schöne Aussicht: eine einigerma�en befriedigende Implementation
+	existiert jetzt. Der alte Eintrag in TODO hat folgendes vorgeschlagen:
+
+	| Aussichtspunkte-Signatur. Idee: Ich könnte ein "View"-Symbol wie folgt
+	| zeichen: stipple mit einem
+	| vollen Kreis für den Aussichtspunkt für eine feste Größe, z.B. 20x20
+	| Pixel vorbereiten. Die bbd-Kategorie sieht dann so aus:
+	| View:start:extent und wird mit createArc gezeichnet. Mögliches
+	| Problem: beim Zoomen dürfen diese Items nicht angefasst werden oder
+	| der Stipple muss sich relativ anpassen. Evtl. kann man ab
+	| bestimmten Zoomstufen auf den Stipple verzichten und nur ein
+	| Kreissegment zeichnen. (Letzteres ist provisorisch implementiert
+	| worden)
+	| 
+	| Zunächst muss ich aber inkscape zum Laufen bekommen, damit ich die
+	| volle Signatur für das Stipple damit zeichnen kann.
+
+	inkscape läuft hier mittlerweile, und ein Aussichtspunkt-SVG existiert
+	auch. Das Problem ist, dass man den Ankerpunkt von Stipples bei Perl/Tk
+	nicht steuern kann. Die Mitte des Stipples *muss* aber mit der Mitte des
+	Canvas-Items zusammenfallen, ansonsten funktioniert es nicht.
+
+	Jetzt ist es so gelöst, dass in 30°-Schritten Kreissegmente der Breite
+	15° gezeichnet werden.
+
+	* implementation_log.txt: Diese Datei soll vermeiden, dass
+	Implementations-Gedanken verloren gehen. Zum Beispiel kann man
+	implementierte Punkte aus TODO.pod hierher übertragen und kommentieren.
+
+	Local Variables:
+	mode: change-log
+	coding: utf-8
+	change-log-default-name: "implementation_log.txt"
+	tab-width: 2
+	left-margin: 2
+	End:

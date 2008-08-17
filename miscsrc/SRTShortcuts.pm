@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.43 2008/08/07 05:11:56 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.44 2008/08/17 20:01:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.43 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.44 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -170,25 +170,39 @@ sub add_button {
 		   main::special_lower($points_layer . "-fg", 0);
 	       }
 	      ],
-	      [Button => "Add hm96.bbd (Höhenpunkte)",
-	       -command => sub {
-		   my $f = "$bbbike_rootdir/miscsrc/senat_b/hm96.bbd";
-		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
-		   $hm_layer = add_new_layer("p", $f);
-		   $main::top->bind("<F12>"=> \&find_nearest_hoehe);
-	       }
-	      ],
-	      [Button => "Add Zebrastreifen",
-	       -command => sub {
-		   local $main::lazy_plot = 0; # lazy mode does not support bbd images yet
-		   add_new_nonlazy_layer("p", "$bbbike_rootdir/misc/zebrastreifen");
-	       }
-	      ],
-	      [Button => "Add Abdeckung",
-	       -command => sub {
-		   local $main::p_draw{'pp-all'} = 1;
-		   add_new_layer("str", "$bbbike_rootdir/misc/abdeckung.bbd");
-	       }
+	      [Cascade => 'Add layer', -menuitems =>
+	       [
+		[Button => "hm96.bbd (Höhenpunkte)",
+		 -command => sub {
+		     my $f = "$bbbike_rootdir/miscsrc/senat_b/hm96.bbd";
+		     if ($main::coord_system ne 'standard') { $f .= "-orig" }
+		     $hm_layer = add_new_layer("p", $f);
+		     $main::top->bind("<F12>"=> \&find_nearest_hoehe);
+		 }
+		],
+		[Button => "Zebrastreifen",
+		 -command => sub {
+		     local $main::lazy_plot = 0; # lazy mode does not support bbd images yet
+		     add_new_nonlazy_layer("p", "$bbbike_rootdir/misc/zebrastreifen");
+		 }
+		],
+		[Button => "gesperrt-car", -command => sub { add_new_data_layer("str", "gesperrt_car") }],
+		[Button => "brunnels", -command => sub { add_new_data_layer("str", "brunnels") }],
+		[Button => "geocoded images",
+		 -command => sub {
+		     add_new_layer("str", "$ENV{HOME}/.bbbike/geocoded_images.bbd");
+		 }],
+		[Button => "fragezeichen-nextcheck",
+		 -command => sub {
+		     add_new_layer("str", "$bbbike_rootdir/tmp/fragezeichen-nextcheck.bbd");
+		 }],
+		[Button => "Abdeckung",
+		 -command => sub {
+		     local $main::p_draw{'pp-all'} = 1;
+		     add_new_layer("str", "$bbbike_rootdir/misc/abdeckung.bbd");
+		 }
+		],
+	       ]
 	      ],
 	      [Cascade => 'Berlin/Potsdam coords', -menuitems =>
 	       [
@@ -349,6 +363,11 @@ sub make_gps_target {
 	     'cd ' . $bbbike_rootdir . '/misc/gps_data && make ' . $rule . '; echo Ready; sleep 9999');
 	die $!;
     }
+}
+
+sub add_new_data_layer {
+    my($type, $file, %args) = @_;
+    add_new_layer($type, "$bbbike_rootdir/data/$file" . $main::coord_system ne 'standard' ? '-orig' : '');
 }
 
 # Width support for now only for p layers

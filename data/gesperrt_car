@@ -718,3 +718,6 @@ Treptower Str. -> Treptower Str.: Mittelstreifen	3::igndisp 13478,8095 13459,807
 Treptower Str. -> Sonnenallee: Mittelstreifen	3::igndisp 13478,8095 13459,8072 13474,8060
 Sonnenallee -> Treptower Str.: Mittelstreifen	3::igndisp 13277,8211 13459,8072 13478,8095
 Bernkastler Str.	1 15334,16961 15208,16939 15015,16908 14923,16901 14923,16914
+Hermannstr./Rollbergstr.	3nocross::ignrte 11933,8198 11960,8090 11979,8014
+Hermannstr. -> Rollbergstr.: Hermannstr./Rollbergstr.	3::igndisp 11933,8198 11960,8090 12139,8128
+Rollbergstr. -> Hermannstr.: Hermannstr./Rollbergstr.	3::igndisp 12139,8128 11960,8090 11979,8014

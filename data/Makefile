@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.196 2008/08/10 18:57:42 eserte Exp eserte $
+# $Id: Makefile,v 2.197 2008/08/17 18:58:39 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1443,7 +1443,7 @@ do-check-nearest:	.check-do-check-nearest
 	$(PERL) -I${BBBIKEDIR} -I${BBBIKEDIR}/lib \
 	    -MStrassen -MObject::Iterate=iterate -e \
 	    '$$s = Strassen->new($$ARGV[0]);\
-	     iterate { ($$dist) = $$_->[Strassen::NAME] =~ /^\S+\s+(\d+)/; if ( $$dist < 20 ) { system "head", "${PERSISTENTTMPDIR}/check_nearest.bbd"; die "Distance $$dist m found"; }; } $$s' ${PERSISTENTTMPDIR}/check_nearest.bbd
+	     iterate { ($$dist) = $$_->[Strassen::NAME] =~ /^\S+\s+(\d+)/; if ( $$dist < 20 ) { system "head", "${PERSISTENTTMPDIR}/check_nearest.bbd"; die "Distance $$dist m found. Please check and add to check_nearest_ignore, if necessary."; }; } $$s' ${PERSISTENTTMPDIR}/check_nearest.bbd
 
 .if 0
 GNUmakefile: Makefile $(MISCRSRCDIR)/b2gmake
