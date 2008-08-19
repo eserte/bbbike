@@ -687,15 +687,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1219096799,
-         'text' => 'Neubau der Bäkebrücke',
-         'from' => 1203202800,
-         'id' => 1297,
-         'data' => 'userdel	2::inwork 4659,40821 4562,40526
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1179,15 +1171,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1219096800,
-         'text' => 'B 087 Müllroser Chaussee zw. Brücke A 12 und Siedlung Markendorf Deckenerneuerung Vollsperrung 14.08.2008-18.08.2008 ',
-         'from' => 1218578400,
-         'id' => 1435,
-         'data' => 'userdel	2::inwork 84692,-9145 85598,-8331
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
