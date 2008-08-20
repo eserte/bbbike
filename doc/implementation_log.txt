@@ -1,3 +1,20 @@
+2008-08-20  Slaven Rezic  <slaven@rezic.de>
+
+	* define_item_attribs: Wird jetzt später aufgerufen, nachdem $city
+	verfügbar ist, damit einige Berlin-spezifische Labels überschrieben
+	werden. Hoffentlich hängt etwas anderes nicht von der Reihenfolge hier
+	ab...
+
+	* fast_plot_str/point: Folgendes TODO habe ich heute implementiert:
+	
+	| BBBikeXS.pm: the fast plotting routines cannot deal with encodings
+	| (utf8!), it seems. At least check for it.
+
+	Damit werden osm-Daten mit utf8-Encoding korrekt im "fast"-Modus
+	dargestellt. Es werden aber nur die Encodings iso-8859-1 und utf-8
+	unterstützt (das ist auch in bbd.pod dokumentiert) --- alles andere ist
+	heutzutage wahrscheinlich nicht notwendig.
+
 2008-08-17  Slaven Rezic  <slaven@rezic.de>
 
 	* Bahnhöfe: Im Zuge des Vorschlags für eine neue Kartensignatur für

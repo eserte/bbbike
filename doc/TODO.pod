@@ -3667,11 +3667,6 @@ like in the GD output.
 
 =item * (M5)
 
-BBBikeXS.pm: the fast plotting routines cannot deal with encodings
-(utf8!), it seems. At least check for it.
-
-=item * (M5)
-
 The behaviour of PreserveComments in Strassen->new is currently
 broken. Comments are handled as normal data and occur also if used in
 init/next. Better approach: rename PreserveComments into
