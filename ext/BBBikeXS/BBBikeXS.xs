@@ -1,3 +1,4 @@
+/* -*- c-basic-offset:2 -*- */
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -215,6 +216,26 @@ void get_restrict_ignore_array(SV* ref, char*** array, char** array_strings) {
     p += (thislen + 1);
   }
   (*array)[av_len(ref_a)+1] = NULL;
+}
+
+static void
+check_utf8_encoding(char* buf, int* do_utf8_decoding_ref) {
+  if (buf[1] == ':') {
+    char* p = strstr(buf+2, "encoding");
+    if (p) {
+      p += strlen("encoding");
+      if (*p == ':') p++;
+      while(*p && *p == ' ') p++;
+      if (strstr(p, "utf-8")) {
+	*do_utf8_decoding_ref = 1;
+      } else if (strstr(p, "iso-8859-1") ||
+		 strstr(p, "latin1")) {
+	*do_utf8_decoding_ref = 0;
+      } else {
+	warn("Cannot handle encoding '%s' with fast implementation, output may be garbled", p);
+      }
+    }
+  }
 }
 
 MODULE = BBBikeXS		PACKAGE = main
@@ -619,6 +640,7 @@ fast_plot_str(canvas, abk, fileref, ...)
 	SV* file_or_object;
 	char *file;
 	int file_count = 0;
+	int do_utf8_decoding = 0;
 	AV* fileref_array = NULL;
 	AV* data_array = NULL;
 	int data_pos = 0;
@@ -772,122 +794,162 @@ fast_plot_str(canvas, abk, fileref, ...)
 	      data_pos++;
 	    }
 
-	    p = strchr(buf, '\t');
-	    if (p && buf[0] != '#') {
-	      *p = 0;
-#ifdef MYDEBUG
-	      fprintf(stderr, "%d: %s\n", count, buf);
-#endif
-	      cat = p+1;
-	      p = strchr(p+1, ' ');
+	    if (buf[0] == '#') {
+	      check_utf8_encoding(buf, &do_utf8_decoding);
+	    } else {
+	      p = strchr(buf, '\t');
 	      if (p) {
 		*p = 0;
-		if (!*(++p)) break;
+#ifdef MYDEBUG
+		fprintf(stderr, "%d: %s\n", count, buf);
+#endif
+		cat = p+1;
+		p = strchr(p+1, ' ');
+		if (p) {
+		  *p = 0;
+		  if (!*(++p)) break;
 
-		/* check ignore, if needed */
-		if (ignore_array) {
-		  char **p = ignore_array;
-		  int found = 0;
-		  while(*p) {
-		    if (strcmp(cat, *p) == 0) {
-		      found++;
-		      break;
+		  /* check ignore, if needed */
+		  if (ignore_array) {
+		    char **p = ignore_array;
+		    int found = 0;
+		    while(*p) {
+		      if (strcmp(cat, *p) == 0) {
+			found++;
+			break;
+		      }
+		      p++;
 		    }
-		    p++;
-		  }
-		  if (found) {
-		    count++; // so the tags are correctly created
-		    continue;
-		  }
-		}
-
-		/* check restriction, if needed */
-		if (restr_array) {
-		  char **p = restr_array;
-		  int found = 0;
-		  while(*p) {
-		    if (strcmp(cat, *p) == 0) {
-		      found++;
-		      break;
+		    if (found) {
+		      count++; // so the tags are correctly created
+		      continue;
 		    }
-		    p++;
 		  }
-		  if (!found) {
-		    count++; // so the tags are correctly created
-		    continue;
-		  }
-		}
 
-		point_i = 0;
-		while(*p) {
-		  char *new_p = strchr(p, ',');
-		  if (new_p) {
-		    point[point_i].x = atoi(p);
-		    p = new_p + 1;
-		    new_p = strchr(p, ' ');
-		    point[point_i].y = atoi(p);
-		    point_i++;
-		    if (new_p)
+		  /* check restriction, if needed */
+		  if (restr_array) {
+		    char **p = restr_array;
+		    int found = 0;
+		    while(*p) {
+		      if (strcmp(cat, *p) == 0) {
+			found++;
+			break;
+		      }
+		      p++;
+		    }
+		    if (!found) {
+		      count++; // so the tags are correctly created
+		      continue;
+		    }
+		  }
+
+		  point_i = 0;
+		  while(*p) {
+		    char *new_p = strchr(p, ',');
+		    if (new_p) {
+		      point[point_i].x = atoi(p);
 		      p = new_p + 1;
-		    else
-		      break;
-		  }
-		}
-
-		if (point_i > 1) {
-		  int width = 1;
-		  char *fill = "white";
-
-		  if (category_width) {
-		    SV** sv_sv_category_width = hv_fetch(category_width,
-							 cat, strlen(cat), 0);
-		    if (sv_sv_category_width) {
-		      width = SvIV(*sv_sv_category_width);
+		      new_p = strchr(p, ' ');
+		      point[point_i].y = atoi(p);
+		      point_i++;
+		      if (new_p)
+			p = new_p + 1;
+		      else
+			break;
 		    }
 		  }
-		  if (category_color) {
+
+		  if (point_i > 1) {
+		    int width = 1;
+		    char *fill = "white";
+		    SV* name;
+
+		    if (category_width) {
+		      SV** sv_sv_category_width = hv_fetch(category_width,
+							   cat, strlen(cat), 0);
+		      if (sv_sv_category_width) {
+			width = SvIV(*sv_sv_category_width);
+		      }
+		    }
+		    if (category_color) {
 		    SV** sv_sv_category_color = hv_fetch(category_color,
 							 cat, strlen(cat), 0);
 		    if (sv_sv_category_color)
 		      fill = SvPV(*sv_sv_category_color, PL_na);
-		  }
-
-		  if (!category_width || !category_color) {
-		    // fallbacks ...
-		    switch (*cat) {
-		    case 'H':
-		      if (*(cat+1) == 0)
-			fill = "yellow";
-		      else
-			fill = "yellow2";
-		      width = 3;
-		      break;
-
-		    case 'N':
-		      if (*(cat+1) == 0)
-			fill = "grey99";
-		      else
-			fill = "#bdffbd";
-		      width = 2;
-		      break;
-
-		    case 'B':
-		      fill = "red3";
-		      width = 3;
-		      break;
-
-		    default:
-		      fill = "white";
-		      width = 2;
 		    }
-		  }
 
-		  if (outline) {
+		    if (!category_width || !category_color) {
+		      // fallbacks ...
+		      switch (*cat) {
+		      case 'H':
+			if (*(cat+1) == 0)
+			  fill = "yellow";
+			else
+			  fill = "yellow2";
+			width = 3;
+			break;
+
+		      case 'N':
+			if (*(cat+1) == 0)
+			  fill = "grey99";
+			else
+			  fill = "#bdffbd";
+			width = 2;
+			break;
+
+		      case 'B':
+			fill = "red3";
+			width = 3;
+			break;
+
+		      default:
+			fill = "white";
+			width = 2;
+		      }
+		    }
+
+		    if (outline) {
+		      strcpy(abkcat, abk);
+		      strcat(abkcat, "-");
+		      strcat(abkcat, cat);
+		      strcat(abkcat, "-out");
+		      av_store(outline_tags, 1, newSVpv(abkcat, 0));
+
+		      PUSHMARK(sp);
+		      XPUSHs(canvas);
+		      for(i = 0; i < point_i; i++) {
+			XPUSHs(sv_2mortal(TRANSPOSE_X_SCALAR(point[i].x)));
+			XPUSHs(sv_2mortal(TRANSPOSE_Y_SCALAR(point[i].y)));
+		      }
+		      XPUSHs(tags_sv);
+		      XPUSHs(sv_2mortal(newRV_inc((SV*)outline_tags)));
+		      XPUSHs(fill_sv);
+		      XPUSHs(sv_outline_color);
+		      XPUSHs(joinstyle_sv);
+		      XPUSHs(bevel_sv);
+		      XPUSHs(width_sv);
+		      XPUSHs(sv_2mortal(newSViv(width+2)));
+
+		      PUTBACK;
+		      perl_call_method("createLine", G_DISCARD|G_VOID);
+		      SPAGAIN;
+		    }
+
+		    name = newSVpv(buf, 0);
+		    if (do_utf8_decoding) {
+		      if (is_utf8_string(buf, 0)) {
+			SvUTF8_on(name);
+		      } else {
+			warn("'%s' does not look like an utf-8 string", SvPV(name, PL_na));
+		      }
+		    }
+		    av_store(tags, 1, name);
 		    strcpy(abkcat, abk);
 		    strcat(abkcat, "-");
 		    strcat(abkcat, cat);
-		    strcat(abkcat, "-out");
-		    av_store(outline_tags, 1, newSVpv(abkcat, 0));
+		    av_store(tags, 2, newSVpv(abkcat, 0));
+		    sprintf(abkcat, "%s-%d", abk, count);
+		    av_store(tags, 3, newSVpv(abkcat, 0));
 
 		    PUSHMARK(sp);
 		    XPUSHs(canvas);
@@ -896,54 +958,27 @@ fast_plot_str(canvas, abk, fileref, ...)
 		      XPUSHs(sv_2mortal(TRANSPOSE_Y_SCALAR(point[i].y)));
 		    }
 		    XPUSHs(tags_sv);
-		    XPUSHs(sv_2mortal(newRV_inc((SV*)outline_tags)));
+		    XPUSHs(sv_2mortal(newRV_inc((SV*)tags)));
 		    XPUSHs(fill_sv);
-		    XPUSHs(sv_outline_color);
-		    XPUSHs(joinstyle_sv);
-		    XPUSHs(bevel_sv);
-	            XPUSHs(width_sv);
-		    XPUSHs(sv_2mortal(newSViv(width+2)));
+		    XPUSHs(sv_2mortal(newSVpv(fill,0)));
+		    XPUSHs(width_sv);
+		    XPUSHs(sv_2mortal(newSViv(width)));
 
 		    PUTBACK;
 		    perl_call_method("createLine", G_DISCARD|G_VOID);
 		    SPAGAIN;
 		  }
-
-		  av_store(tags, 1, newSVpv(buf, 0)); /* Straßenname */
-		  strcpy(abkcat, abk);
-		  strcat(abkcat, "-");
-		  strcat(abkcat, cat);
-		  av_store(tags, 2, newSVpv(abkcat, 0));
-		  sprintf(abkcat, "%s-%d", abk, count);
-		  av_store(tags, 3, newSVpv(abkcat, 0));
-
-		  PUSHMARK(sp);
-		  XPUSHs(canvas);
-		  for(i = 0; i < point_i; i++) {
-		    XPUSHs(sv_2mortal(TRANSPOSE_X_SCALAR(point[i].x)));
-		    XPUSHs(sv_2mortal(TRANSPOSE_Y_SCALAR(point[i].y)));
-		  }
-		  XPUSHs(tags_sv);
-		  XPUSHs(sv_2mortal(newRV_inc((SV*)tags)));
-		  XPUSHs(fill_sv);
-		  XPUSHs(sv_2mortal(newSVpv(fill,0)));
-	          XPUSHs(width_sv);
-		  XPUSHs(sv_2mortal(newSViv(width)));
-
-		  PUTBACK;
-		  perl_call_method("createLine", G_DISCARD|G_VOID);
-		  SPAGAIN;
+		  count++;
 		}
-		count++;
 	      }
-	    }
 
-	    if (count % 150 == 0 && SvTRUE(progress)) {
-	      PUSHMARK(sp) ;
-	      XPUSHs(progress);
-	      PUTBACK;
-	      perl_call_method("UpdateFloat", G_DISCARD);
-	      SPAGAIN; /* XXX benötigt? */
+	      if (count % 150 == 0 && SvTRUE(progress)) {
+		PUSHMARK(sp) ;
+		XPUSHs(progress);
+		PUTBACK;
+		perl_call_method("UpdateFloat", G_DISCARD);
+		SPAGAIN; /* XXX benötigt? */
+	      }
 	    }
 	  }
 
@@ -991,6 +1026,7 @@ fast_plot_point(canvas, abk, fileref, progress)
 	SV *andreaskreuz, *ampel, *ampelf, *zugbruecke;
 	char *file;
 	int file_count = 0;
+	int do_utf8_decoding = 0;
 	AV* fileref_array = NULL;
 	int count = 0;
 	SV *tags_sv, *image_sv;
@@ -1040,85 +1076,96 @@ fast_plot_point(canvas, abk, fileref, progress)
 #endif
 
 	  while(!feof(f)) {
-	    char *p, *cat, *pointname;
-
 	    fgets(buf, MAXBUF, f);
 #ifdef MYDEBUG
 	    /* fprintf(stderr, "%s", buf); */
 #endif
-	    pointname = buf;
-	    p = strchr(buf, '\t');
-	    if (p && buf[0] != '#') {
-	      *p = 0;
-	      cat = p+1;
-	      if (*cat != 'B' && *cat != 'X' && *cat != 'Z' /* br */ && *cat != 'F'
-		  ) *cat = 'X';
-	      p = strchr(p+1, ' ');
+	    if (buf[0] == '#') {
+	      check_utf8_encoding(buf, &do_utf8_decoding);
+	    } else {
+	      char* p = strchr(buf, '\t');
 	      if (p) {
-	        char *new_p;
-	        *p = 0;
-	        if (!*(++p)) break;
-	        new_p = strchr(p, ',');
-	        if (new_p) {
-	  	  point.x = atoi(p);
-	  	  p = new_p + 1;
-	  	  point.y = atoi(p);
+		SV* pointnameSV;
+		char* pointname = buf;
+		char* cat;
+		*p = 0;
+		cat = p+1;
+		if (*cat != 'B' && *cat != 'X' && *cat != 'Z' /* br */ && *cat != 'F'
+		) *cat = 'X';
+		p = strchr(p+1, ' ');
+		if (p) {
+		  char *new_p;
+		  *p = 0;
+		  if (!*(++p)) break;
+		  new_p = strchr(p, ',');
+		  if (new_p) {
+		    point.x = atoi(p);
+		    p = new_p + 1;
+		    point.y = atoi(p);
 #ifdef MYDEBUG
-	          fprintf(stderr, "%d: %d/%d\n", count, point.x, point.y);
+		    fprintf(stderr, "%d: %d/%d\n", count, point.x, point.y);
 #endif
-	        }
+		  }
 
-	        sprintf(abkcat, "%d,%d", point.x, point.y);
-	        av_store(tags, 1, newSVpv(abkcat, 0));
-		av_store(tags, 2, newSVpv(pointname, 0));
-	        strcpy(abkcat, abk);
-	        strcat(abkcat, "-");
-	        strcat(abkcat, cat);
-	        strcat(abkcat, "-fg");
-	        av_store(tags, 3, newSVpv(abkcat, 0));
-		sprintf(abkcat, "%s-%d", abk, count);
-		av_store(tags, 4, newSVpv(abkcat, 0));
+		  sprintf(abkcat, "%d,%d", point.x, point.y);
+		  av_store(tags, 1, newSVpv(abkcat, 0));
+		  pointnameSV = newSVpv(pointname, 0);
+		  if (do_utf8_decoding) {
+		    if (is_utf8_string(buf, 0)) {
+		      SvUTF8_on(pointnameSV);
+		    } else {
+		      warn("'%s' does not look like an utf-8 string", SvPV(pointnameSV, PL_na));
+		    }
+		  }
+		  av_store(tags, 2, pointnameSV);
+		  strcpy(abkcat, abk);
+		  strcat(abkcat, "-");
+		  strcat(abkcat, cat);
+		  strcat(abkcat, "-fg");
+		  av_store(tags, 3, newSVpv(abkcat, 0));
+		  sprintf(abkcat, "%s-%d", abk, count);
+		  av_store(tags, 4, newSVpv(abkcat, 0));
 
-	        PUSHMARK(sp);
-	        XPUSHs(canvas);
-	        XPUSHs(sv_2mortal(TRANSPOSE_X_SCALAR(point.x)));
-	        XPUSHs(sv_2mortal(TRANSPOSE_Y_SCALAR(point.y)));
-	        XPUSHs(tags_sv);
-	        XPUSHs(sv_2mortal(newRV_inc((SV*)tags)));
-	        XPUSHs(image_sv);
-	        switch (*cat) {
-	        case 'B':
-		  XPUSHs(andreaskreuz);
-		  break;
-		case 'Z':
-		  /* Zbr */
-		  XPUSHs(zugbruecke);
-		  break;
-		case 'F':
-		  XPUSHs(ampelf);
-		  break;
-		default:
-		  XPUSHs(ampel);
+		  PUSHMARK(sp);
+		  XPUSHs(canvas);
+		  XPUSHs(sv_2mortal(TRANSPOSE_X_SCALAR(point.x)));
+		  XPUSHs(sv_2mortal(TRANSPOSE_Y_SCALAR(point.y)));
+		  XPUSHs(tags_sv);
+		  XPUSHs(sv_2mortal(newRV_inc((SV*)tags)));
+		  XPUSHs(image_sv);
+		  switch (*cat) {
+		  case 'B':
+		    XPUSHs(andreaskreuz);
+		    break;
+		  case 'Z':
+		    /* Zbr */
+		    XPUSHs(zugbruecke);
+		    break;
+		  case 'F':
+		    XPUSHs(ampelf);
+		    break;
+		  default:
+		    XPUSHs(ampel);
+		  }
+
+		  PUTBACK;
+		  perl_call_method("createImage", G_DISCARD|G_VOID);
+		  SPAGAIN;
+
+		  count++;
 		}
-
-		PUTBACK;
-		perl_call_method("createImage", G_DISCARD|G_VOID);
-		SPAGAIN;
-
-		count++;
 	      }
-	    }
 
-	    if (count % 150 == 0 && SvTRUE(progress)) {
-	      PUSHMARK(sp) ;
-	      XPUSHs(progress);
-	      PUTBACK;
-	      perl_call_method("UpdateFloat", G_DISCARD);
-	      SPAGAIN;
-	    }
+	      if (count % 150 == 0 && SvTRUE(progress)) {
+		PUSHMARK(sp) ;
+		XPUSHs(progress);
+		PUTBACK;
+		perl_call_method("UpdateFloat", G_DISCARD);
+		SPAGAIN;
+	      }
 
+	    }
 	  }
-
 	  fclose(f);
 
 	  file_count++;

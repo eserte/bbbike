@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd,v 1.32 2008/08/16 10:53:54 eserte Exp $
+# $Id: osm2bbd,v 1.33 2008/08/20 19:32:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -102,6 +102,7 @@ my $p = XML::LibXML->new;
 
 my %unhandled;
 my %out;
+my %resolve_node_later;
 
 my $do_amenity = sub {
     my($node, $amenity) = @_;
@@ -219,6 +220,7 @@ eval {
     $tp = Time::Progress->new;
     $tp->attr(min => 0, max => 2 * $#osm_files + 1);
     $tp->restart;
+    print STDERR "Two passes are following: nodes and ways\n";
 };
 
 ######################################################################
@@ -228,7 +230,7 @@ my $osm_file_i = 0;
 for my $osm_file (@osm_files) {
     if ($v) {
 	if ($tp) {
-	    print STDERR $tp->report("\rdone %p elapsed: %L (%l sec), ETA %E (%e sec)", $osm_file_i++);
+	    print STDERR $tp->report("\r  nodes done %p elapsed: %L (%l sec), ETA %E (%e sec)", $osm_file_i++);
 	} else {
 	    warn "Parse $osm_file for nodes...\n";
 	}
@@ -277,17 +279,14 @@ for my $osm_file (@osm_files) {
 	} elsif ($railway_cat) {
 	    if ($railway_cat eq 'station' ||
 		$railway_cat eq 'halt') {
-		if ($name =~ s{^U\s+}{}) {
-		    push @or, ["ubahnhof", "UA"]; # note: not zones; XXX how to distinguish U, S and Regionalbahn correctly???
-		} elsif ($name =~ s{^S\s+}{}) {
-		    push @or, ["sbahnhof", "SA"]; # - " -
-		} else {
-		    push @or, ["rbahnhof", "RA"]; # - " -
-		}
-		# fix name, remove "Bahnhof":
 		if ($name) {
+		    # fix name, remove "Bahnhof" if at beginning (XXX do it language independent?):
 		    $name =~ s{^(?:Bahnhof|Bhf\.?)\s+(.+)}{$1};
 		}
+		# We don't know which layer this station belongs to,
+		# so resolve it later.
+		resolve_node_later("railway", $name, $node2ll{$id});
+		next;
 	    } elsif ($railway_cat =~ m{^(crossing|level_crossing)$}) {
 		push @or, ["ampeln", "B"];
 	    } else {
@@ -361,7 +360,7 @@ my %seenway;
 for my $osm_file (@osm_files) {
     if ($v) {
 	if ($tp) {
-	    print STDERR $tp->report("\rdone %p elapsed: %L (%l sec), ETA %E (%e sec)", $osm_file_i++);
+	    print STDERR $tp->report("\r  ways done %p elapsed: %L (%l sec), ETA %E (%e sec)", $osm_file_i++);
 	} else {
 	    warn "Parse $osm_file for ways...\n";
 	}
@@ -546,20 +545,27 @@ for my $osm_file (@osm_files) {
 	} elsif ($railway_cat) {
 	    if      ($railway_cat eq 'subway') {
 		push @or, ["ubahn", "U"]; # no zones
+		resolve_node_now('railway', 'ubahnhof', "U", \@nodes);
 	    } elsif ($railway_cat eq 'light_rail') {
 		push @or, ["sbahn", "S"]; # no zones
+		resolve_node_now('railway', 'sbahnhof', "S", \@nodes);
 	    } elsif ($railway_cat eq 'rail') {
 		push @or, ["rbahn", "R"];
+		resolve_node_now('railway', 'rbahnhof', "R", \@nodes);
 	    } elsif ($railway_cat eq 'preserved') {
 		# ignore
 	    } elsif ($railway_cat eq 'service') {
 		push @or, ["rbahn", "RG"];
+		resolve_node_now('railway', 'rbahnhof', "RG", \@nodes);
 	    } elsif ($railway_cat =~ m{^(abandoned|disused)$}) {
 		push @or, ["rbahn", "R0"];
+		resolve_node_now('railway', 'rbahnhof', "R0", \@nodes);
 	    } elsif ($railway_cat =~ m{^(construction)$}) {
 		push @or, ["rbahn", "RBau"];
+		resolve_node_now('railway', 'rbahnhof', "RBau", \@nodes);
 	    } elsif ($railway_cat =~ m{^(narrow_gauge)$}) { # z.B. Parkeisenbahnen
 		push @or, ["rbahn", "RP"];
+		resolve_node_now('railway', 'rbahnhof', "RP", \@nodes);
 	    } elsif ($railway_cat =~ m{\btram\b}) {
 		push @or, ["comments_tram", "CS"];
 	    } else {
@@ -691,6 +697,8 @@ for my $osm_file (@osm_files) {
     }
 }
 
+resolve_node_fallback();
+
 ######################################################################
 # OUTPUT
 if ($parsefor) {
@@ -734,6 +742,60 @@ if (%unhandled) {
     print "Unhandled categories:\n";
     local $Data::Dumper::Sortkeys = 1;
     print Dumper (\%unhandled);
+}
+
+#exit;
+
+######################################################################
+
+sub resolve_node_later {
+    my($osm_layer, $name, $coord) = @_;
+    $resolve_node_later{$osm_layer}->{$coord} = $name;
+}
+
+sub resolve_node_now {
+    my($osm_layer, $bbbike_layer, $bbbike_cat, $nodes_ref) = @_;
+    my $r = $resolve_node_later{$osm_layer};
+    do{warn "no $osm_layer layer"; return} if !$r;
+    for my $coord (map { $node2ll{$_} } @$nodes_ref) {
+	if (exists $r->{$coord}) {
+	    my $name = $r->{$coord};
+	    push @{$out{$bbbike_layer}}, [$name, [$coord], $bbbike_cat];
+	    delete $r->{$coord};
+	}
+    }
+}
+
+sub resolve_node_fallback {
+    my $have_unresolved = 0;
+    for (keys %resolve_node_later) {
+	if (keys %{$resolve_node_later{$_}}) {
+	    $have_unresolved++;
+	    last;
+	}
+    }
+    return if !$have_unresolved;
+
+    print STDERR "unresolved:\n";
+    for my $osm_layer (keys %resolve_node_later) {
+	print STDERR "  $osm_layer:\n";
+	while(my($coord, $name) = each %{ $resolve_node_later{$osm_layer} }) {
+	    if ($osm_layer eq 'railway') {
+		my($file, $cat);
+ 		if ($name =~ s{^U(\s+|-Bhf)}{}) {
+		    ($file, $cat) = ("ubahnhof", "UA"); # zone is faked
+ 		} elsif ($name =~ s{^S(\s+|-Bhf)}{}) {
+		    ($file, $cat) = ("sbahnhof", "SA");
+ 		} else {
+		    ($file, $cat) = ("rbahnhof", "RA");
+ 		}
+		push @{$out{$file}}, [$name, [$coord], $cat];
+		print STDERR "    fallback for $name -> $cat $file\n";
+	    } else {
+		print STDERR "    NO FALLBACK for $name ($coord)\n";
+	    }
+	}
+    }
 }
 
 sub output_data {

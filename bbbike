@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.377 2008/08/16 10:54:52 eserte Exp eserte $
+# $Id: bbbike,v 3.379 2008/08/20 21:31:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -243,7 +243,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.377 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.379 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -470,10 +470,6 @@ set_sans_serif_font_family();
 		     'gif',
 		    );
 
-define_item_attribs();
-
-generate_plot_functions();
-
 ###################################################################
 $really_no_www = $os eq 'win'; # Trumpet und Win32Sock hängen zu lange, wenn es keine Verbindung gibt XXX aber moderne Windows nicht mehr, oder?
 $no_map = !$devel_host && (!defined $ENV{USER} || $ENV{USER} !~ /^(eserte|rezic|srezic|slavenr)$/);
@@ -692,6 +688,10 @@ if (defined $city) {
     # default (Berlin)
     set_datadir("$FindBin::RealBin/data");
 }
+
+# define_item_attribs should be called after determining the $city 
+define_item_attribs();
+generate_plot_functions();
 
 if (!@scrollregion) {
     my $init_scrollregion = $Karte::Standard::init_scrollregion;
@@ -2541,22 +2541,22 @@ unless ($skip_features{"flaechen"}) {
 	menu_entry_choose_ort($fcm, 'z');
 	$fcm->separator;
     }
-    $fcm->checkbutton(-label => $city eq 'Berlin' ? M"Grenzen von Berlin" : M"Ortsgrenzen",
+    $fcm->checkbutton(-label => $str_attrib{g}->[ATTRIB_PLURAL],
 		      -variable => \$str_draw{'g'},
 		      -command => sub { plot('str','g') });
     if ($advanced && $devel_host) {
-	$fcm->checkbutton(-label => $city eq 'Berlin' ? M"Berliner Ortsteile" : M"Ortsteilgrenzen",
+	$fcm->checkbutton(-label => $str_attrib{gBO}->[ATTRIB_PLURAL],
 			  -variable => \$str_draw{'gBO'},
 			  -command => sub { plot('str', 'gBO') });
 	$str_name_draw{"gBO"} = 1; # force drawing of labels
-	$fcm->checkbutton(-label => $city eq 'Berlin' ? M"Berliner Ortsteilnamen" : M"Ortsteilnamen",
+	$fcm->checkbutton(-label => defined $city && $city eq 'Berlin' ? M"Berliner Ortsteilnamen" : M"Ortsteilnamen",
 			  -variable => \$str_name_draw{'gBO'},
 			  -command => sub {
 			      pending(1, 'replot-str-gBO');
 			  },
 			 );
     }
-    if ($city eq 'Berlin') {
+    if (defined $city && $city eq 'Berlin') {
 	$fcm->checkbutton(-label => M"Grenzen von Potsdam",
 			  -variable => \$str_draw{'gP'},
 			  -command => sub { plot('str','gP') });
@@ -5779,10 +5779,10 @@ sub define_item_attribs {
 	 'f' => [M"Fläche",      M"Flächen",      0],
 	 'v' => [M"Sehenswürdigkeit", M"Sehenswürdigkeiten",      0],
 	 'z' => [M"PLZ-Gebiet",  M"PLZ-Gebiete",  0],
-	 'g' => [M"Grenze von Berlin", M"Grenze von Berlin",       0],
+	 'g' => [M"Grenze von Berlin", M"Grenze von Berlin",       0], # see below for override
 	 'gP' => [M"Grenze von Potsdam", M"Grenze von Potsdam",       0],
 	 'gD' => [M"Staatsgrenze", M"Staatsgrenze",       0],
-	 'gBO' => [M"Berliner Ortsteil", M"Berliner Ortsteile", 0],
+	 'gBO' => [M"Berliner Ortsteil", M"Berliner Ortsteile", 0], # see below for override
 	 'e' => [M"Fähre",       M"Fähren",       0],
 	 'rw' => [M"Radweg",     M"Radwege", 0],
 	 'qs' => [M"Straßenqualität", M"Straßenqualität", 0],
@@ -5797,6 +5797,10 @@ sub define_item_attribs {
 	 'wr'   => [M"Wasserroute", M"Wasserrouten", undef],
 	 'fz'   => [M"Unbekannte Straße", M"Unbekannte Straßen", 1],
 	);
+    if (!defined $city || $city ne 'Berlin') {
+	$str_attrib{g}   = [M"Ortsgrenze",     M"Ortsgrenzen",     0];
+	$str_attrib{gBO} = [M"Ortsteilgrenze", M"Ortsteilgrenzen", 0];
+    }
     %p_attrib =
 	('lsa'  => [M"Ampel",       M"Ampeln",       undef],
 	 'u'    => [M"U-Bahnhof",   M"U-Bahnhöfe",   undef],
@@ -11630,7 +11634,7 @@ sub find_visible_point {
 sub choose_from_plz {
     my(%args) = @_;
 
-    return if $city ne "Berlin";
+    return if !defined $city || $city ne "Berlin";
 
     my $batch = (defined $args{'-str'} || defined $args{'-coord'});
     if (!$batch) {
@@ -11643,7 +11647,7 @@ sub choose_from_plz {
 
     require PLZ;
     my $plz;
-    if ($city eq 'Berlin') {
+    if (defined $city && $city eq 'Berlin') {
 	require PLZ::Multi;
 	my @objs = ("Berlin.coords.data",
 		    "Potsdam.coords.data",

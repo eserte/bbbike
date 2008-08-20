@@ -139,6 +139,13 @@ This global directive introduces an RCS/CVS Id string.
 Treat this file as encoded in the given encoding (all names accepted
 by Perl/Encode may be used). If not set, then iso-8859-1 is assumed.
 
+The degree of support for encodings in bbbike.cgi and the Perl/Tk
+implementation differs. iso-8859-1 is supported best. utf-8 is
+considered to work in most, if not all places of the code. Other
+encodings are at least known to NOT work with the XS implementation
+for the fast street and point plotting. The pure perl implementation
+is fine.
+
 =item C<listing_sort: I<sort_method>>
 
 Define a sorting method for street/point listings. Normally listings
