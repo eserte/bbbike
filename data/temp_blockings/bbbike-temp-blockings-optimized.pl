@@ -953,7 +953,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'text' => 'An der Spandauer Brücke (Mitte) Richtung Spandauer Str. zwischen Rosenthaler Str. und Spandauer Str. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Anfang 09.2008)',
          'from' => 1217625647,
          'id' => 1393,
-         'data' => 'userdel	1::inwork 10294,13070 10336,13037 10371,13006 10342,12936 10309,12854
+         'data' => 'userdel	1::inwork 10294,13070 10336,13037 10371,13006 10418,12922 10398,12903 10309,12854
 ',
          'type' => 'gesperrt'
        },

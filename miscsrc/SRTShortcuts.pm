@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.44 2008/08/17 20:01:50 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.44 2008/08/17 20:01:50 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -186,7 +186,7 @@ sub add_button {
 		     add_new_nonlazy_layer("p", "$bbbike_rootdir/misc/zebrastreifen");
 		 }
 		],
-		[Button => "gesperrt-car", -command => sub { add_new_data_layer("str", "gesperrt_car") }],
+		[Button => "gesperrt_car", -command => sub { add_new_data_layer("str", "gesperrt_car") }],
 		[Button => "brunnels", -command => sub { add_new_data_layer("str", "brunnels") }],
 		[Button => "geocoded images",
 		 -command => sub {
@@ -367,7 +367,7 @@ sub make_gps_target {
 
 sub add_new_data_layer {
     my($type, $file, %args) = @_;
-    add_new_layer($type, "$bbbike_rootdir/data/$file" . $main::coord_system ne 'standard' ? '-orig' : '');
+    add_new_layer($type, "$bbbike_rootdir/data/$file" . ($main::coord_system ne 'standard' ? '-orig' : ''));
 }
 
 # Width support for now only for p layers

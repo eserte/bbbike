@@ -26,8 +26,8 @@ Neue Bahnhof - N	3 14811,11067 14912,11252 15008,11436
 Neue Bahnhof - NE	3 14811,11067 14912,11252 14988,11130
 Markt - Neue Bahnhof	3 14988,11130 14912,11252 14811,11067
 Boxhagener - Neue Bahnhof	3 14793,11323 14912,11252 15008,11436
-Goeben - Kulmer	3 7721,9744 7829,9723 7866,9902
-Kulmer Str./Goeben	3 7771,9479 7829,9723 7866,9902
+Goeben - Kulmer	3 7721,9744 7829,9723 7848,9814 7866,9902
+Kulmer Str./Goeben	3 7771,9479 7829,9723 7848,9814 7866,9902
 Hermannstr. - Flughafen	3 11884,8492 11892,8372 12068,8409
 Karlshorster - Nöldner	3nocross::ignrte 15267,10865 15266,10791 15255,10751
 Nöldnerstr. -> Karlshorster Str.: Karlshorster - Nöldner	3::igndisp 15396,10767 15266,10791 15255,10751
@@ -409,8 +409,8 @@ Frankfurter Allee -> Waldeyerstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::i
 Friedrichstr. (Straßenbahn)	3nocross::ignrte 9215,13392 9236,13228 9245,13162 9251,13109
 Friedrichstr. -> Claire-Waldoff-Str.: Friedrichstr. (Straßenbahn)	3::igndisp 9245,13162 9236,13228 9114,13217
 Claire-Waldoff-Str. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9114,13217 9236,13228 9215,13392
-Johannisstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9395,13160 9245,13162 9251,13109
-Friedrichstr. -> Johannisstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9236,13228 9245,13162 9395,13160
+Friedrichstr. -> Johannisstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9236,13228 9245,13162 9396,13176
+Johannisstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9396,13176 9245,13162 9251,13109
 Oranienburger Str. (Straßenbahnhaltestelle)	3nocross::ignrte 9215,13392 9281,13374 9415,13315
 Oranienburger Str. -> Linienstr.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9215,13392 9281,13374 9607,13507
 Linienstr. -> Oranienburger Str.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9607,13507 9281,13374 9415,13315
@@ -721,3 +721,10 @@ Bernkastler Str.	1 15334,16961 15208,16939 15015,16908 14923,16901 14923,16914
 Hermannstr./Rollbergstr.	3nocross::ignrte 11933,8198 11960,8090 11979,8014
 Hermannstr. -> Rollbergstr.: Hermannstr./Rollbergstr.	3::igndisp 11933,8198 11960,8090 12139,8128
 Rollbergstr. -> Hermannstr.: Hermannstr./Rollbergstr.	3::igndisp 12139,8128 11960,8090 11979,8014
+Mittelstreifen	3nocross::ignrte 7579,10183 7539,9970 7526,9782
+Alvenslebenstr. -> Winterfeldtstr.: Mittelstreifen	3::igndisp 7648,9944 7539,9970 7369,10018
+Alvenslebenstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 7648,9944 7539,9970 7526,9782
+Winterfeldtstr. -> Alvenslebenstr.: Mittelstreifen	3::igndisp 7369,10018 7539,9970 7648,9944
+Winterfeldtstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 7369,10018 7539,9970 7579,10183
+Potsdamer Str. -> Alvenslebenstr.: Mittelstreifen	3::igndisp 7579,10183 7539,9970 7648,9944
+Potsdamer Str. -> Winterfeldtstr.: Mittelstreifen	3::igndisp 7526,9782 7539,9970 7369,10018

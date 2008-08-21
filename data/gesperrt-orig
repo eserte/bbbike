@@ -12,7 +12,7 @@
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9687,10180 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
-Kanalstraßen Nordufer	1 6880,11110 7118,11209 7160,11225 7251,11202 7333,11179 7595,11086 7687,11096 7873,11142 7993,11137 8092,11092 8241,11024
+Kanalstraßen Nordufer	1 6880,11110 7118,11209 7160,11225 7251,11202 7333,11179 7595,11086 7687,11096 7873,11142 8000,11137 8092,11092 8241,11024
 # Hier kann ein kurzes Stück auf dem Gehweg überbrückt werden
 Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8380,10865 8443,10777 8578,10672 8701,10428 8771,10381 8824,10366 8953,10366 9029,10366 9147,10359 9241,10324 9392,10260 9593,10238 9865,10286
 Gitschiner Str.	1 9865,10286 9948,10280
@@ -793,7 +793,7 @@ Allee der Kosmonauten: Straßenbahntrasse	3nocross 19628,13517 19807,13529 19837,
 Bornhomer Str.: Straßenbahntrasse	3nocross 10765,16486 10699,16492 10620,16497
 Bornhomer Str.: Straßenbahntrasse	3nocross 10620,16497 10533,16505 10458,16509
 Bornhomer Str.: Straßenbahntrasse	3nocross 10458,16509 10370,16516 10282,16522 10197,16528
-Karl-Liebknecht-Str./Rosenstr.: Straßenbahntrasse	3nocross 10440,12696 10519,12768 10699,12929
+Karl-Liebknecht-Str./Rosenstr.: Straßenbahntrasse	3nocross 10440,12696 10534,12780 10699,12929
 Martin-Luther-Str.: Mittelstreifen	3nocross 6502,9782 6520,9867 6522,9948
 Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 11013,16278 11003,16196 10994,16120
 Oberspreestr.: Straßenbahntrasse	3nocross 21579,4579 21726,4537 21796,4517
@@ -1002,7 +1002,7 @@ tragen (zwei Treppen à ca. 10 Stufen)	0:30 12115,8556
 tragen (Treppe mit Kinderwagenrampe)	0:30 13960,9365
 tragen (Treppe)	0:30 8014,12846
 tragen (Treppe)	0:30 8428,12859
-tragen (Treppe)	0:30 8445,12747
+tragen (Treppe)	0:30 8445,12755
 tragen (Treppe)	0:30 17026,11810
 #: by: peer.weyrauch, bestätigt durch die neue ADFC-Karte:
 tragen (S-Bhf. Raoul-Wallenberg-Str.)	0:30 20041,16296
@@ -1145,8 +1145,8 @@ Drängelgitter (Glühwürmchenweg, Verlängerung)	BNP:5 -6162,16287
 Drängelgitter	BNP:5 38562,100725
 Drängelgitter	BNP:5 38662,97200
 #: by: Corinna Meyer (und Robert Joop): vvv
-Schwingtor an der Luiseninsel	BNP:10 7706,11612
-Schwingtor an der Luiseninsel	BNP:10 7742,11639
+Schwingtor an der Luiseninsel	BNP:10 7696,11621
+Schwingtor an der Luiseninsel	BNP:10 7735,11656
 #: by: ^^^
 Schranke	BNP:5 25558,997
 # by: holger (hd, sav), updated by epperlein: Drängelgitter	BNP:5 8810,14373
@@ -1236,8 +1236,8 @@ Mollstr.: Straßenbahn	3nocross 11867,13076 11839,13083 11739,13131 11723,13139
 (Berolinastr.): Tor zum Spielplatz	BNP:10 11815,13045
 #: temporary:
 (Parkweg Am Karlsbad): tragen (ca. 10 Stufen)	0:40 8190,10960
-Matthäikirchplatz	1 7934,11264 7956,11340 7973,11354
-Matthäikirchplatz	1 7973,11354 7984,11334 7962,11257
+Matthäikirchplatz	1 7938,11276 7956,11340 7973,11354
+Matthäikirchplatz	1 7973,11354 7984,11334 7966,11267
 Herkulesufer: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30 6920,11064 6882,11061
 Potsdamer Str.: schwierig zu überqueren - besser Ampel benutzen	3nocross 7912,10945 7968,11048 7980,11070
 Grunewaldstr.: queren schlecht möglich	3nocross 6711,9225 6863,9254 6923,9266
@@ -1302,8 +1302,8 @@ Am Zirkus	1 9226,12909 9192,13032 9145,13020 9118,13070
 Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12748
 Virchowweg: schmale Toreinfahrt, Fußgänger und Bordstein	0:10 8548,13577
 tragen (ca. 20 Stufen)	0:45 8536,12758
-tragen (ca. 20 Stufen)	0:45 8490,12869
-tragen (ca. 20 Stufen)	0:45 8471,12904
+tragen (ca. 20 Stufen)	0:45 8507,12873
+tragen (ca. 20 Stufen)	0:45 8480,12909
 Hufelandweg	1s 8631,13159 8618,13306 8582,13355
 Fröhner Str.	1 -4294,11673 -4413,11628 -4573,11545
 Bocksfeldstr.	1 -4300,11720 -4090,11707

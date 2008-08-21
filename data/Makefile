@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.197 2008/08/17 18:58:39 eserte Exp $
+# $Id: Makefile,v 2.198 2008/08/21 18:43:36 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -109,7 +109,7 @@ GERMAN_LOCALE=de_DE.ISO8859-1
 # e.g. debian
 GERMAN_LOCALE=de_DE.ISO-8859-1
 .endif
-SORT_GERMAN_LOCALE=	env LC_ALL=${GERMAN_LOCALE} sort
+SORT_GERMAN_LOCALE=	env LANG=${GERMAN_LOCALE} LC_CTYPE=${GERMAN_LOCALE} LC_ALL=${GERMAN_LOCALE} sort
 
 ## This seems to generate better results:
 COORDS_DATA_SORT_OPTS=	-f -t "|" -k 1,3

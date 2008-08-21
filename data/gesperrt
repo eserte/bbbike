@@ -6,7 +6,7 @@
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9687,10180 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
-Kanalstraßen Nordufer	1 6880,11110 7118,11209 7160,11225 7251,11202 7333,11179 7595,11086 7687,11096 7873,11142 7993,11137 8092,11092 8241,11024
+Kanalstraßen Nordufer	1 6880,11110 7118,11209 7160,11225 7251,11202 7333,11179 7595,11086 7687,11096 7873,11142 8000,11137 8092,11092 8241,11024
 Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8380,10865 8443,10777 8578,10672 8701,10428 8771,10381 8824,10366 8953,10366 9029,10366 9147,10359 9241,10324 9392,10260 9593,10238 9865,10286
 Gitschiner Str.	1 9865,10286 9948,10280
 Gitschiner Str.	1 9948,10280 9851,10219
@@ -780,9 +780,9 @@ Bornholmer Str. -> Bergener Str.: Straßenbahntrasse	3::igndisp 10282,16522 10370
 Bergener Str. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10382,16661 10370,16516 10458,16509
 Andersenstr. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10295,16667 10282,16522 10370,16516
 Bornholmer Str. -> Andersenstr.: Straßenbahntrasse	3::igndisp 10197,16528 10282,16522 10295,16667
-Straßenbahntrasse	3nocross::ignrte 10440,12696 10519,12768 10699,12929
-Karl-Liebknecht-Str. -> Rosenstr.: Straßenbahntrasse	3::igndisp 10440,12696 10519,12768 10489,12803
-Rosenstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 10489,12803 10519,12768 10699,12929
+Straßenbahntrasse	3nocross::ignrte 10440,12696 10534,12780 10699,12929
+Rosenstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 10476,12829 10534,12780 10699,12929
+Karl-Liebknecht-Str. -> Rosenstr.: Straßenbahntrasse	3::igndisp 10440,12696 10534,12780 10476,12829
 Mittelstreifen	3nocross::ignrte 6502,9782 6520,9867 6522,9948
 Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen	3::igndisp 6522,9948 6520,9867 6611,9879
 Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6463,9862 6520,9867 6522,9948
@@ -1173,10 +1173,10 @@ Straßenbahntrasse	3nocross::ignrte 18631,10167 18554,10354 18446,10620
 Otto-Schmirgal-Str. -> Am Tierpark: Straßenbahntrasse	3::igndisp 18512,10337 18554,10354 18446,10620
 Am Tierpark -> Otto-Schmirgal-Str.: Straßenbahntrasse	3::igndisp 18631,10167 18554,10354 18512,10337
 Mittelstreifen ohne Überquerungshilfe	3nocross::ignrte 12504,11464 12539,11416 12576,11375 12641,11288
-Mühlenstr. -> Anschutz-Gelände: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12504,11464 12539,11416 12594,11467
-Anschutz-Gelände -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12594,11467 12539,11416 12576,11375
-Mühlenstr. -> Anschutz-Gelände: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12539,11416 12576,11375 12638,11433
-Anschutz-Gelände -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12638,11433 12576,11375 12641,11288
+Mühlenstr. -> Am Postbahnhof: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12504,11464 12539,11416 12594,11467
+Am Postbahnhof -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12594,11467 12539,11416 12576,11375
+Mühlenstr. -> Am Postbahnhof: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12539,11416 12576,11375 12638,11433
+Am Postbahnhof -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12638,11433 12576,11375 12641,11288
 Mittelstreifen ohne Überquerungshilfe	3nocross::ignrte 13001,11000 13080,10956 13144,10921
 Hedwig-Wachenheim-Str. -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 13150,11101 13080,10956 13144,10921
 Mühlenstr. -> Hedwig-Wachenheim-Str.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 13001,11000 13080,10956 13150,11101
@@ -1280,7 +1280,7 @@ tragen (zwei Treppen à ca. 10 Stufen)	0:30:-263 12115,8556
 tragen (Treppe mit Kinderwagenrampe)	0:30:-135 13960,9365
 tragen (Treppe)	0:30:-225 8014,12846
 tragen (Treppe)	0:30:-4 8428,12859
-tragen (Treppe)	0:30:77 8445,12747
+tragen (Treppe)	0:30:-265 8445,12755
 tragen (Treppe)	0:30:28 17026,11810
 tragen (S-Bhf. Raoul-Wallenberg-Str.)	0:30:-244 20041,16296
 tragen (ca. 40 Stufen)	0:59:-124 1659,3226
@@ -1377,8 +1377,8 @@ Drängelgitter (Gleditschstr. - Elßholzstr.)	BNP:10:-84 7158,9509
 Drängelgitter (Glühwürmchenweg, Verlängerung)	BNP:5:-70 -6162,16287
 Drängelgitter	BNP:5 38562,100725
 Drängelgitter	BNP:5:3 38662,97200
-Schwingtor an der Luiseninsel	BNP:10:-125 7706,11612
-Schwingtor an der Luiseninsel	BNP:10:-126 7742,11639
+Schwingtor an der Luiseninsel	BNP:10:-142 7696,11621
+Schwingtor an der Luiseninsel	BNP:10:-131 7735,11656
 Schranke	BNP:5:12 25558,997
 enges Drängelgitter	BNP:5:90 100,3
 Drosselbartweg: Drängelgitter	BNP:4:-242 13899,18833
@@ -1460,8 +1460,8 @@ Mollstr. -> Mollstr.: Straßenbahn	3::igndisp 11839,13083 11739,13131 11719,13088
 (Berolinastr.): Tor zum Spielplatz	BNP:10:-168 11863,13053
 (Berolinastr.): Tor zum Spielplatz	BNP:10:-249 11815,13045
 (Parkweg Am Karlsbad): tragen (ca. 10 Stufen)	0:40:-140 8190,10960
-Matthäikirchplatz	1 7934,11264 7956,11340 7973,11354
-Matthäikirchplatz	1 7973,11354 7984,11334 7962,11257
+Matthäikirchplatz	1 7938,11276 7956,11340 7973,11354
+Matthäikirchplatz	1 7973,11354 7984,11334 7966,11267
 Herkulesufer: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30 6920,11064 6882,11061
 schwierig zu überqueren - besser Ampel benutzen	3nocross::ignrte 7912,10945 7968,11048 7980,11070
 queren schlecht möglich	3nocross::ignrte 6711,9225 6863,9254 6923,9266
@@ -1582,8 +1582,8 @@ Am Zirkus	1 9226,12909 9192,13032 9145,13020 9118,13070
 Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12748
 Virchowweg: schmale Toreinfahrt, Fußgänger und Bordstein	0:10:86 8548,13577
 tragen (ca. 20 Stufen)	0:45:-98 8536,12758
-tragen (ca. 20 Stufen)	0:45:-99 8490,12869
-tragen (ca. 20 Stufen)	0:45:-160 8471,12904
+tragen (ca. 20 Stufen)	0:45:-108 8507,12873
+tragen (ca. 20 Stufen)	0:45:-119 8480,12909
 Hufelandweg	1s 8631,13159 8618,13306 8582,13355
 Fröhner Str.	1 -4294,11673 -4413,11628 -4573,11545
 Bocksfeldstr.	1 -4300,11720 -4090,11707
