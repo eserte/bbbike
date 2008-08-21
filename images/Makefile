@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.49 2008/07/06 19:20:38 eserte Exp $
+# $Id: Makefile,v 1.50 2008/08/21 20:00:35 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -164,6 +164,8 @@ png-to-gif:	\
 		sbahn_mini.gif \
 		search_pref.gif \
 		steigung.gif \
+		strassenbahn.gif \
+		strassenbahn_klein.gif \
 		synagogue.gif \
 		theater.gif \
 		touristinfo.gif \
@@ -226,6 +228,8 @@ png-to-xpm:	\
 		search_pref.xpm \
 		star.xpm \
 		steigung.xpm \
+		strassenbahn.xpm \
+		strassenbahn_klein.xpm \
 		synagogue.xpm \
 		theater.xpm \
 		touristinfo.xpm \

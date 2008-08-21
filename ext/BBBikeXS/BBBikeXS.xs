@@ -640,6 +640,8 @@ fast_plot_str(canvas, abk, fileref, ...)
 	SV* file_or_object;
 	char *file;
 	int file_count = 0;
+	int total_file_count;
+	long currpos;
 	int do_utf8_decoding = 0;
 	AV* fileref_array = NULL;
 	AV* data_array = NULL;
@@ -727,6 +729,9 @@ fast_plot_str(canvas, abk, fileref, ...)
 
 	if (SvROK(fileref) && SvTYPE(SvRV(fileref)) == SVt_PVAV) {
 	  fileref_array = (AV*)SvRV(fileref);
+	  total_file_count = av_len(fileref_array)+1;
+	} else {
+	  total_file_count = 1;
 	}
 
 	str_outline = perl_get_hv("main::str_outline", TRUE);
@@ -753,6 +758,7 @@ fast_plot_str(canvas, abk, fileref, ...)
 
 	count = 0;
 	while(1) {
+	  long file_size = -1;
 	  if (fileref_array) {
 	    SV **s = av_fetch(fileref_array, file_count, 0);
 	    file_or_object = *s;
@@ -774,6 +780,14 @@ fast_plot_str(canvas, abk, fileref, ...)
 	    file = SvPV(file_or_object, PL_na);
 	    f = fopen(file, "r");
 	    if (!f) croak("Can't open %s: %s\n", file, strerror(errno));
+	    if (fseek(f, 0, SEEK_END) == 0) {
+	      file_size = ftell(f);
+	      fseek(f, 0, SEEK_SET);
+	    } else {
+	      warn("Cannot fseek file '%s'?", file);
+	      file_size = -1;
+	    }
+	    currpos = 0;
 	    buf = buf0;
 	  }
 
@@ -786,6 +800,7 @@ fast_plot_str(canvas, abk, fileref, ...)
 	    /* get line from file or data array */
 	    if (f) {
 	      fgets(buf, MAXBUF, f);
+	      currpos += strlen(buf);
 	    } else {
 	      SV **tmp = av_fetch(data_array, data_pos, 0);
 	      if (tmp == NULL)
@@ -975,8 +990,15 @@ fast_plot_str(canvas, abk, fileref, ...)
 	      if (count % 150 == 0 && SvTRUE(progress)) {
 		PUSHMARK(sp) ;
 		XPUSHs(progress);
-		PUTBACK;
-		perl_call_method("UpdateFloat", G_DISCARD);
+		if (file_size > 0) {
+		  SV* frac = sv_2mortal(newSVnv((double)file_count/total_file_count + (double)currpos/(total_file_count*file_size)));
+		  XPUSHs(frac);
+		  PUTBACK;
+		  perl_call_method("Update", G_DISCARD);
+		} else {
+		  PUTBACK;
+		  perl_call_method("UpdateFloat", G_DISCARD);
+		}
 		SPAGAIN; /* XXX benötigt? */
 	      }
 	    }
@@ -1026,6 +1048,8 @@ fast_plot_point(canvas, abk, fileref, progress)
 	SV *andreaskreuz, *ampel, *ampelf, *zugbruecke;
 	char *file;
 	int file_count = 0;
+	int total_file_count;
+	long currpos;
 	int do_utf8_decoding = 0;
 	AV* fileref_array = NULL;
 	int count = 0;
@@ -1057,12 +1081,16 @@ fast_plot_point(canvas, abk, fileref, progress)
 
 	if (SvROK(fileref) && SvTYPE(SvRV(fileref)) == SVt_PVAV) {
 	  fileref_array = (AV*)SvRV(fileref);
+	  total_file_count = av_len(fileref_array)+1;
+	} else {
+	  total_file_count = 1;
 	}
 
 	tags_sv = newSVpv("-tags", 0);
 	image_sv = newSVpv("-image", 0);
 
 	while(1) {
+	  long file_size = -1;
 	  if (fileref_array) {
 	    SV **s = av_fetch(fileref_array, file_count, 0);
 	    file = SvPV(*s, PL_na);
@@ -1072,11 +1100,20 @@ fast_plot_point(canvas, abk, fileref, progress)
 	  f = fopen(file, "r");
 	  if (!f) croak("Can't open %s: %s in fast_plot_point\n", file, strerror(errno));
 #ifdef MYDEBUG
-	    fprintf(stderr, "Reading from <%s>\n", file);
+	  fprintf(stderr, "Reading from <%s>\n", file);
 #endif
+	  if (fseek(f, 0, SEEK_END) == 0) {
+	    file_size = ftell(f);
+	    fseek(f, 0, SEEK_SET);
+	  } else {
+	    warn("Cannot fseek file '%s'?", file);
+	    file_size = -1;
+	  }
+	  currpos = 0;
 
 	  while(!feof(f)) {
 	    fgets(buf, MAXBUF, f);
+	    currpos += strlen(buf);
 #ifdef MYDEBUG
 	    /* fprintf(stderr, "%s", buf); */
 #endif
@@ -1159,8 +1196,15 @@ fast_plot_point(canvas, abk, fileref, progress)
 	      if (count % 150 == 0 && SvTRUE(progress)) {
 		PUSHMARK(sp) ;
 		XPUSHs(progress);
-		PUTBACK;
-		perl_call_method("UpdateFloat", G_DISCARD);
+		if (file_size > 0) {
+		  SV* frac = sv_2mortal(newSVnv((double)file_count/total_file_count + (double)currpos/(total_file_count*file_size)));
+		  XPUSHs(frac);
+		  PUTBACK;
+		  perl_call_method("Update", G_DISCARD);
+		} else {
+		  PUTBACK;
+		  perl_call_method("UpdateFloat", G_DISCARD);
+		}
 		SPAGAIN;
 	      }
 

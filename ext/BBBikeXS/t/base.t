@@ -10,7 +10,7 @@ use strict;
 use vars qw($x_delta $y_delta);
 
 use Test::More;
-plan tests => 14;
+plan tests => 39;
 
 BEGIN {
     eval {
@@ -107,13 +107,21 @@ SKIP: {
 	$p;
     }
 
-    BBBike::fast_plot_point($c, "lsa", ["$datadir/ampeln"], 0);
+    {
+	my $progress = MyProgress->new;
+	BBBike::fast_plot_point($c, "lsa", ["$datadir/ampeln"], $progress);
+	$progress->update_expected;
+    }
     $c->delete("lsa");
 
     # again:
     checkpoint1();
     checktime1();
-    BBBike::fast_plot_point($c, "lsa", ["$datadir/ampeln"], 0);
+    {
+	my $progress = MyProgress->new;
+	BBBike::fast_plot_point($c, "lsa", ["$datadir/ampeln"], $progress);
+	$progress->update_expected;
+    }
     
     checktime2();
     checkpoint2();
@@ -137,13 +145,21 @@ SKIP: {
 		       'H'  => 'yellow',
 		       'HH' => 'yellow2',
 		      );
-    BBBike::fast_plot_str($c, "s", ["$datadir/strassen"], 0, \@restr, $category_width);
+    {
+	my $progress = MyProgress->new;
+	BBBike::fast_plot_str($c, "s", ["$datadir/strassen"], $progress, \@restr, $category_width);
+	$progress->update_expected;
+    }
     $c->delete("s");
 
     # again:
     checkpoint1();
     checktime1();
-    BBBike::fast_plot_str($c, "s", ["$datadir/strassen"], 0, \@restr, $category_width);
+    {
+	my $progress = MyProgress->new;
+	BBBike::fast_plot_str($c, "s", ["$datadir/strassen"], $progress, \@restr, $category_width);
+	$progress->update_expected;
+    }
     checktime2();
     checkpoint2();
 
@@ -153,14 +169,20 @@ SKIP: {
     $category_color{'Q1'} = 'green';
     $category_color{'Q2'} = 'yellow';
     $category_color{'Q3'} = 'red';
-    BBBike::fast_plot_str($c, "qs", ["$datadir/qualitaet_s"], 0, undef, $category_width, \@ignore);
+    {
+	my $progress = MyProgress->new;
+	BBBike::fast_plot_str($c, "qs", ["$datadir/qualitaet_s","$datadir/qualitaet_l"], $progress, undef, $category_width, \@ignore);
+	$progress->update_expected;
+    }
 
     # check object mode of dast_plot_str
     {
 	$category_color{$_} = 'green4' for (qw(S SA SB SC));
 	$category_width->{$_} = 3        for (qw(S SA SB SC));
 	my $s = Strassen->new("$datadir/sbahn");
-	BBBike::fast_plot_str($c, "b", $s, 0, undef, $category_width);
+	my $progress = MyProgress->new;
+	BBBike::fast_plot_str($c, "b", $s, $progress, undef, $category_width);
+	# no: less than 150 items in sbahn, Update(Float) is never called: $progress->update_float_expected;
     }
 
     $top->after(5000, sub { $top->destroy;});
@@ -397,4 +419,52 @@ sub checktime2 {
 	$newtime = time;
     }
     print "# ", $newtime-$checktime, "s\n";
+}
+
+{
+    package MyProgress;
+    sub new { bless {
+		     CalledUpdate => 0,
+		     CalledUpdateFloat => 0,
+		     Min => undef,
+		     Max => undef,
+		     StrictMonotonic => 1,
+		    }, shift }
+    sub Update {
+	my($p, $val) = @_;
+	$p->{CalledUpdate}++;
+	if (!defined $p->{Min}) {
+	    $p->{Min} = $val;
+	} elsif ($val < $p->{Min}) {
+	    $p->{StrictMonotonic} = 0;
+	}
+	if (!defined $p->{Max}) {
+	    $p->{Max} = $val;
+	} elsif ($val <= $p->{Max}) {
+	    $p->{StrictMonotonic} = 0;
+	} else {
+	    $p->{Max} = $val;
+	}
+    }
+
+    sub UpdateFloat {
+	shift->{CalledUpdateFloat}++;
+    }
+
+    # five tests
+    sub update_expected {
+	my($progress) = @_;
+	Test::More::ok($progress->{CalledUpdate}, "Update called");
+	Test::More::ok(!$progress->{CalledUpdateFloat}, "UpdateFloat not called");
+	Test::More::ok($progress->{StrictMonotonic}, "Monotonic");
+	Test::More::cmp_ok($progress->{Min}, ">=", 0);
+	Test::More::cmp_ok($progress->{Max}, "<=", 1);
+    }
+
+    # two tests
+    sub update_float_expected {
+	my($progress) = @_;
+	Test::More::ok(!$progress->{CalledUpdate}, "Update not called");
+	Test::More::ok($progress->{CalledUpdateFloat}, "UpdateFloat called");
+    }
 }

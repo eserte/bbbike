@@ -11488,7 +11488,7 @@ EOF
        text  => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. bis zum 2.6.2008 gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14802,10505 14836,10524 14843,10621 14882,10732 14890,10824
+userdel	2::inwork 14802,10505 14836,10524 14843,10621 14882,10732 14906,10820
 EOF
      },
      { from  => undef, # 
@@ -11565,7 +11565,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_009127',
        data  => <<EOF,
-userdel	q4::inwork 14890,10824 14794,10844
+userdel	q4::inwork 14906,10820 14794,10844
 EOF
      },
      { from  => 1213737230, # 2008-06-17 23:13
