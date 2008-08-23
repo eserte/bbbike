@@ -53,17 +53,19 @@ my @layer;
 my $strcatqual;
 my $datadir;
 my $vehicle = "bike";
+my $id;
 if (!GetOptions("mapset=s" => \$mapset,
 		"layer=s\@" => \@layer,
 		"codepage=s" => \$codepage,
 		"strcatqual!" => \$strcatqual, # combined street/quality layer
 		"datadir=s" => \$datadir,
 		"vehicle=s" => \$vehicle,
+		"id=i" => \$id,
 	       )) {
     die <<EOF;
 usage: $0 [-mapset [ b | brb | wide | all ] ] [-strcatqual]
           [-codepage ...] [-vehicle bike|car] [-datadir ...]
-	  [-layer ... [-layer ...]]
+	  [-layer ... [-layer ...]] [-id ...]
 
 -mapset ...:  build Berlin (b), Brandenburg (brb) or whole map
 -layer:       use the specific layer(s) instead of predefined mapset
@@ -72,6 +74,7 @@ usage: $0 [-mapset [ b | brb | wide | all ] ] [-strcatqual]
 -codepage:    use a different codepage (does this work at all?)
 -datadir ...: data directory to use instead of the default data directory
 -vehicle bike|car: create map for cyclists (this is the default) or car drivers
+-id ...:      id of image, will be created automatically if not given
 
 EOF
 
@@ -89,12 +92,17 @@ my $name = {"b"    => "BBBike map",
 	    "fragezeichen" => "BBBike Fragezeichen",
 	    "all"  => "BBBike complete map",
 	   }->{$mapset};
-my $id   = {"b"    => $base_id,
-	    "brb"  => $base_id+1,
-	    "wide" => $base_id+2,
-	    "fragezeichen" => $base_id+3,
-	    "all"  => $base_id+4,
-	   }->{$mapset};
+if (!$id) {
+    $id = {"b"    => $base_id,
+	   "brb"  => $base_id+1,
+	   "wide" => $base_id+2,
+	   "fragezeichen" => $base_id+3,
+	   "all"  => $base_id+4,
+	  }->{$mapset};
+    if ($strcatqual) {
+	$id += 5; # 5 is one more than elements above
+    }
+}
 die "Cannot set name and/or id for <$mapset>"
     if !defined $name || !defined $id;
 my $levels = 5;

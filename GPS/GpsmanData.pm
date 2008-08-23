@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.53 2008/07/05 17:24:27 eserte Exp $
+# $Id: GpsmanData.pm,v 1.55 2008/08/23 09:43:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005,2007 Slaven Rezic. All rights reserved.
@@ -44,7 +44,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.53 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.55 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -95,6 +95,15 @@ struct('GPS::Gpsman::Waypoint' =>
 	    $epoch -= $container->TimeOffset*3600;
 	}
 	$epoch;
+    }
+
+    sub DMS_output {
+	my($wpt) = @_;
+	$wpt->ParsedLatitude
+	    ? ($wpt->ParsedLatitude, $wpt->ParsedLongitude)
+		: $wpt->Latitude
+		    ? GPS::GpsmanData::convert_lat_long_to_gpsman_DMS($wpt->Latitude, $wpt->Longitude)
+			: (undef, undef);
     }
 
 }
@@ -287,13 +296,10 @@ sub convert_from_route {
 	}
 
 	my $wpt = GPS::Gpsman::Waypoint->new;
-#	$wpt->Ident($point_number);
-	$wpt->Ident("");
-#	$wpt->Comment($comment);
-	$wpt->Comment("20-Jan-2002 14:20:16");
-#XXX del:
-#  	$wpt->Latitude(sprintf "%s%d %02d %04.1f", $NS, $ns_deg, $ns_min, $ns_sec);
-#  	$wpt->Longitude(sprintf "%s%d %02d %04.1f", $EW, $ew_deg, $ew_min, $ew_sec);
+	$wpt->Ident($point_number);
+#	$wpt->Ident("");
+	$wpt->Comment($comment);
+#	$wpt->Comment("20-Jan-2002 14:20:16");
 	$wpt->Latitude($lat);
 	$wpt->Longitude($long);
 
@@ -385,7 +391,7 @@ sub _is_datetime {
 
 # argument: line in $_
 # return value: Waypoint object
-sub parse_waypoint {
+sub parse_waypoint_line {
     my $self = shift;
     my @f = split /\t/;
     my $wpt = GPS::Gpsman::Waypoint->new;
@@ -425,7 +431,7 @@ sub parse_waypoint {
 
 # argument: line in $_
 # return value: Waypoint object
-sub parse_track {
+sub parse_track_line {
     my $self = shift;
     my @f = split /\t/;
     my $wpt = GPS::Gpsman::Waypoint->new;
@@ -443,7 +449,7 @@ sub parse_track {
     $wpt;
 }
 
-sub parse_route {
+sub parse_route_line {
     my $self = shift;
     my @f = split /\t/;
     my $wpt = GPS::Gpsman::Waypoint->new;
@@ -457,7 +463,7 @@ sub parse_route {
     $wpt;
 }
 
-sub parse_group {
+sub parse_group_line {
     # nothing..., return empty list
 }
 
@@ -475,10 +481,10 @@ sub parse {
     my $i = $beginref ? $$beginref : 0;
 
     my %parse =
-	(TYPE_WAYPOINT() => 'parse_waypoint',
-	 TYPE_TRACK()    => 'parse_track',
-	 TYPE_ROUTE()    => 'parse_route',
-	 TYPE_GROUP()    => 'parse_group',
+	(TYPE_WAYPOINT() => 'parse_waypoint_line',
+	 TYPE_TRACK()    => 'parse_track_line',
+	 TYPE_ROUTE()    => 'parse_route_line',
+	 TYPE_GROUP()    => 'parse_group_line',
 	);
 
     my @data;
@@ -547,7 +553,7 @@ sub parse {
 	    } elsif (/^!G:/) {
 		$self->Type(TYPE_GROUP);
 		$type = TYPE_GROUP;
-		$parse_method = 'parse_group';
+		$parse_method = $parse{$type};
 	    } elsif (/^!GW/) {
 		# ignore
 	    } else {
@@ -645,7 +651,7 @@ sub convert_UTM_UPS_to_DDD {
     $_[0];
 }
 
-sub convert_lat_long_to_gpsman {
+sub convert_lat_long_to_gpsman_DMS {
     my($polar_y, $polar_x) = @_;
     my $NS = $polar_y > 0 ? "N" : do { $polar_y = -$polar_y; "S" };
     my $EW = $polar_x > 0 ? "E" : do { $polar_x = -$polar_x; "W" };
@@ -665,6 +671,7 @@ sub convert_lat_long_to_gpsman {
      sprintf("%s%d %02d %02d.%01d", $EW, $ew_deg, $ew_min, $ew_sec, $ew_csec), # longitude
     );
 }
+*convert_lat_long_to_gpsman = \&convert_lat_long_to_gpsman_DMS; # for compat
 
 # XXX only waypoints --- tracks usually have no idents
 sub create_cache {
@@ -763,7 +770,7 @@ sub body_as_string {
 	    $s .= join("\t",
 		       $wpt->Ident,
 		       (defined $wpt->Comment ? $wpt->Comment : ""),
-		       convert_lat_long_to_gpsman($wpt->Latitude, $wpt->Longitude),
+		       $wpt->DMS_output,
 		       (defined $wpt->Altitude ? "alt=".$wpt->Altitude : ()),
 		       (defined $wpt->Symbol ? "symbol=".$wpt->Symbol : ()),
 		       (defined $wpt->DisplayOpt ? "dispopt=".$wpt->DisplayOpt : ()),
@@ -781,7 +788,7 @@ sub body_as_string {
 		       (defined $wpt->Ident ? $wpt->Ident : ""),
 		       (defined $wpt->DateTime ? $wpt->DateTime :
 			defined $wpt->Comment ? $wpt->Comment : ""),
-		       convert_lat_long_to_gpsman($wpt->Latitude, $wpt->Longitude),
+		       $wpt->DMS_output,
 		       (defined $wpt->Altitude ? $wpt->Altitude : ""))
 		. "\n";
 	}
@@ -795,7 +802,7 @@ sub body_as_string {
 	    $s .= join("\t",
 		       $wpt->Ident,
 		       (defined $wpt->Comment ? $wpt->Comment : ""),
-		       convert_lat_long_to_gpsman($wpt->Latitude, $wpt->Longitude),
+		       $wpt->DMS_output,
 		      )
 		. "\n";
 	}

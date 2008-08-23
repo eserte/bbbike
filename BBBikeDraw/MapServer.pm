@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.42 2008/02/20 18:37:10 eserte Exp eserte $
+# $Id: MapServer.pm,v 1.43 2008/08/22 19:47:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.42 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.43 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -32,9 +32,12 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.42 $ =~ /(\d+)\.(\d+)/);
 				 MapserverRelurl MapserverUrl TemplateMap
 				 ImageSuffix FontsList));
 
+    use vars qw($QUIET);
+
     use Carp qw(carp);
     use vars qw(%warn_once);
     sub warn_once {
+	return if $QUIET;
 	my $warn = join(" ", @_);
 	return if exists $warn_once{$warn};
 	$warn_once{$warn}++;

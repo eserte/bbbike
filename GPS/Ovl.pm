@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Ovl.pm,v 1.17 2007/03/07 21:00:14 eserte Exp $
+# $Id: Ovl.pm,v 1.18 2008/08/22 19:29:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GPS::Ovl;
 
 use strict;
 use vars qw($VERSION @ISA $OVL_MAGIC $OVL_MAGIC_3_0 $OVL_MAGIC_4_0);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
 
 require File::Basename;
 
@@ -124,6 +124,7 @@ EOF
 	    my $filename = $self->{File} ? File::Basename::basename($self->{File}) : "unknown";
 	    my $name = $sym->{Label} || $sym->{Text} || "TRACK ($filename)";
 	    $name = $filename if $name =~ m{^Linie$};
+	    $name =~ s{\r\n}{ }g; # protect from newlines
 	    $out .= "!T:\t$name\n";
 	    $last_type = "T";
 	    for my $c (@{ $sym->{Coords} }) {

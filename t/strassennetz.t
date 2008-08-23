@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassennetz.t,v 1.19 2008/08/03 10:00:19 eserte Exp $
+# $Id: strassennetz.t,v 1.20 2008/08/22 19:42:17 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -136,9 +136,13 @@ if ($do_xxx) {
     }
 
     {
-	pass("-- CS;-Kommentar Henriettenplatz --");
+	pass("-- CS;-Kommentar Wuhlewanderweg/Lidl-Parkplatz --");
 
-	my $route = [[2702,10006], [2770,10024], [2770,9945], [3044,9621]];
+	no warnings qw(qw);
+	my $route = [ map { [ split /,/ ] }
+		      qw(
+			 21718,5551 21630,5671 21744,5804 21846,5856
+			) ];
 	my $comment;
 	($comment) = $net->get_point_comment($route, 0, undef);
 	is($comment, undef, "No CS; comment for first point in route")

@@ -959,15 +959,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        undef,
        undef,
-       {
-         'until' => 1219442400,
-         'text' => 'K 6160 Chausseestr. OD Wildau, zw. KVK und Am Kleingewerbegebiet Bau Kreisverkehr halbseitig gesperrt; Einbahnstraße 14.07.2008-22.08.2008 ',
-         'from' => 1215900000,
-         'id' => 1396,
-         'data' => 'userdel	q4::inwork; 25140,-9125 24478,-9578
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw-loop.t,v 1.6 2007/12/23 13:08:51 eserte Exp $
+# $Id: bbbikedraw-loop.t,v 1.7 2008/08/22 19:47:54 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -70,6 +70,7 @@ SKIP: {
 		       "-geometry" => $width."x".$width,
 		       "-bbox", join(",",@bbox),
 		       "-o", $o_file,
+		       "-q",
 		      );
 	    system(@cmd) == 0 or die "Died with status code=$? while executing: @cmd";
 	    pass("scale 1:$scale -> $o_file");

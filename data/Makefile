@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.198 2008/08/21 18:43:36 eserte Exp $
+# $Id: Makefile,v 2.199 2008/08/22 18:14:33 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1333,7 +1333,7 @@ check-categories:	.check_categories
 
 ${PERSISTENTTMPDIR}/crossings.bbd:	strassen landstrassen landstrassen2 \
 					brunnels
-	${MISCSRCDIR}/check_crossings -v \
+	${MISCSRCDIR}/check_crossings -v-if-interactive \
 	    -o $@~ -against brunnels \
 	    strassen landstrassen landstrassen2
 	mv $@~ $@
@@ -1341,7 +1341,7 @@ ${PERSISTENTTMPDIR}/crossings.bbd:	strassen landstrassen landstrassen2 \
 # XXX überirdische U-Bahnen?
 # XXX Andreaskreuz
 ${PERSISTENTTMPDIR}/crossings_bahn.bbd:	strassen sbahn rbahn brunnels
-	${MISCSRCDIR}/check_crossings -v \
+	${MISCSRCDIR}/check_crossings -v-if-interactive \
 	    -o $@~ -against brunnels \
 	    strassen sbahn rbahn
 	mv $@~ $@
@@ -1349,7 +1349,7 @@ ${PERSISTENTTMPDIR}/crossings_bahn.bbd:	strassen sbahn rbahn brunnels
 # Note also the empty string in the -ignore option!
 ${PERSISTENTTMPDIR}/crossings_gewaesser.bbd:	\
 					strassen wasserstrassen brunnels
-	${MISCSRCDIR}/check_crossings -v \
+	${MISCSRCDIR}/check_crossings -v-if-interactive \
 	    -ignore "Fasaneriegraben,Packereigraben,Tränkegraben,Teufelsseekanal,(See im Tiergarten),,Luiseninsel,Fennpfuhl,Heidekampgraben,Karpfenteich,Panke,Nordgraben,Tegeler Fließ,Hermsdorfer See,Wuhle,Neue Wuhle,Flutgraben,Kreuzgraben,Zingergraben,Iderfenngraben,Bäke,Bullengraben,Spektegraben,Bruchstückengraben,Fredersdorfer Mühlenfließ,Neuenhagener Mühlenfließ,Plumpengraben,Kleiner Jürgengraben,Rudower Fließ" \
 	    -o $@~ -against brunnels \
 	    strassen wasserstrassen
@@ -1357,7 +1357,7 @@ ${PERSISTENTTMPDIR}/crossings_gewaesser.bbd:	\
 
 ${PERSISTENTTMPDIR}/crossings_gewaesser_ignore.bbd:	\
 					strassen wasserstrassen brunnels
-	${MISCSRCDIR}/check_crossings -v \
+	${MISCSRCDIR}/check_crossings -v-if-interactive \
 	    -o $@~ -against brunnels \
 	    strassen wasserstrassen
 	mv $@~ $@

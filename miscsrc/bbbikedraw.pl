@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.pl,v 1.22 2007/12/23 13:06:02 eserte Exp $
+# $Id: bbbikedraw.pl,v 1.23 2008/08/22 19:47:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -48,6 +48,7 @@ my $draw_scale_bar = 1;
 my $fontsizescale;
 my $background;
 my $custom_places;
+my $q;
 
 if (!GetOptions("w=i" => \$w,
 		"h=i" => \$h,
@@ -73,8 +74,14 @@ if (!GetOptions("w=i" => \$w,
 		"fontsizescale=f" => \$fontsizescale,
 		"bg|background=s" => \$background,
 		"customplaces=s" => \$custom_places,
+		"q|quiet!" => \$q,
 	       )) {
     usage();
+}
+
+if ($q) {
+    $BBBikeDraw::MapServer::Conf::QUIET = 1;
+    $BBBikeDraw::MapServer::Conf::QUIET = $BBBikeDraw::MapServer::Conf::QUIET if 0; # cease -w
 }
 
 if (!defined $geometry) {
@@ -226,6 +233,7 @@ usage: $0 [options]
 -[no]drawscalebar          Draw scale bar. Default is true.
 -fontsizescale float       Scale default font sizes for place labels.
 -bg|-background color      Specify background color (as GD colors)
+-q			   Be quiet.
 EOF
 }
 

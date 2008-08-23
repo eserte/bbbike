@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman2bbd.pl,v 2.13 2008/07/05 17:25:30 eserte Exp $
+# $Id: gpsman2bbd.pl,v 2.14 2008/08/22 18:05:11 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -58,6 +58,7 @@ sub gpsman2bbd {
     my $update;
     my $fail = 1;
     my @filter;
+    my $q;
 
     if (!GetOptions("destdir=s" => \$destdir,
 		    "deststreets=s" => \$deststreets,
@@ -75,6 +76,7 @@ sub gpsman2bbd {
 		    "update" => \$update,
 		    "fail!" => \$fail,
 		    'filter=s@' => \@filter,
+		    "q|quiet!" => \$q,
 		   )) {
 	die <<EOF;
 Usage: $0 [-destdir directory] [-deststreets basename.bbd]
@@ -175,24 +177,24 @@ EOF
 
     if ($update && (!-e $deststreetspath || !-e $destpointspath)) {
 	$update = 0;
-	warn "Turning off -update";
+	warn "Turning off -update\n" unless $q;
     }
 
     foreach my $f (@ARGV) {
-	print STDERR "$f...";
+	print STDERR "$f..." unless $q;
 	if ($update) {
 	    # XXX use ->Type instead of looking at the extension ...
 	    # but this means I have to use ->load, which is expensive
 	    if (-e $deststreetspath && $f =~ /\.trk$/ && -M $f > -M $deststreetspath) {
-		print STDERR " is current, skipping\n";
+		print STDERR " is current, skipping\n" unless $q;
 		next;
 	    }
 	    if (-e $destpointspath && $f =~ /\.wpt$/ && -M $f > -M $destpointspath) {
-		print STDERR " is current, skipping\n";
+		print STDERR " is current, skipping\n" unless $q;
 		next;
 	    }
 	}
-	print STDERR "\n";
+	print STDERR "\n" unless $q;
 
 	my $base = basename $f;
 	my $gps_multi;

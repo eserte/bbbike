@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: KDEUtil.pm,v 2.25 2008/01/19 22:58:24 eserte Exp $
+# $Id: KDEUtil.pm,v 2.27 2008/08/22 19:52:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2004,2008 Slaven Rezic. All rights reserved.
@@ -433,7 +433,10 @@ sub get_kde_user_path {
     if (!$self->{USER_PATH}->{$path_type}) {
 	my $paths;
 	if (_is_in_path("kde-config")) {
-	    ($paths) = `kde-config --expandvars --userpath $path_type`;
+	    # Cease kde-config's "KLocale: trying to look up "" in catalog. Fix the program"
+	    # warnings by redirecting STDERR.
+	    # Seen with KDE: 3.5.1, kde-config: 1.0
+	    ($paths) = `kde-config --expandvars --userpath $path_type 2>/dev/null`;
 	    chomp $paths;
 	} else {
 	    $paths = {'desktop'  => "$ENV{HOME}/Desktop",

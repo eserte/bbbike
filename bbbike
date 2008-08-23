@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.380 2008/08/21 21:05:03 eserte Exp $
+# $Id: bbbike,v 3.380 2008/08/21 21:05:03 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -4385,6 +4385,11 @@ if ($top->{initial_iconic}) {
     $top->deiconify;
 }
 
+if ($datadir_meta{bbox}) {
+    require BBBikeAdvanced;
+    enlarge_scrollregion(@{ $datadir_meta{bbox} });
+}
+
 # XXX should be after deiconify, otherwise center does not work (?)
 center_best();
 
@@ -7720,6 +7725,22 @@ sub set_datadir {
     }
     if ($verbose) {
 	print STDERR Mfmt("Aktuelles Datenverzeichnis ist %s\n", $datadir);
+    }
+
+    %datadir_meta = ();
+
+    my $metafile = "$newdir/meta.dd";
+    if (open METAFH, $metafile) {
+	local $/ = undef;
+	my $metastring = <METAFH>;
+	close METAFH;
+	$metastring =~ s{^\$meta\s*=\s*}{};
+	my $meta = eval $metastring;
+	if ($@) {
+	    warn "Cannot read meta data from $metafile";
+	} else {
+	    %datadir_meta = %$meta;
+	}
     }
 }
 
@@ -15276,12 +15297,25 @@ sub scale_maps {
 # Berlins.
 ### AutoLoad Sub
 sub center_best {
-    if (defined $center_on_str && $center_on_str !~ /^\s*$/) {
-	choose_from_plz(-str   => $center_on_str);
-    } elsif (defined $center_on_coord && $center_on_coord !~ /^\s*$/) {
-	choose_from_plz(-coord => $center_on_coord);
-    } elsif ($city_obj && $city_obj->can("center")) {
+    if (defined $city && $city eq 'Berlin') {
+	if (defined $center_on_str && $center_on_str !~ /^\s*$/) {
+	    choose_from_plz(-str   => $center_on_str);
+	    return;
+	} elsif (defined $center_on_coord && $center_on_coord !~ /^\s*$/) {
+	    choose_from_plz(-coord => $center_on_coord);
+	    return;
+	}
+    }
+    if ($city_obj && $city_obj->can("center")) {
 	$c->center_view(transpose(split /,/, $city_obj->center));
+    } elsif ($datadir_meta{bbox}) {
+	# Hack for center XXX
+        my($cx,$cy) = Strassen::Util::middle(@{ $datadir_meta{bbox} });
+	eval {
+	    mark_point(-coords => [[[ transpose($cx,$cy) ]]],
+		       -dont_mark => 1);
+	};
+	warn $@ if $@;
     } else {
 	$c->center_view;
     }

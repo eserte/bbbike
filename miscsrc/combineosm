@@ -1,0 +1,124 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: combineosm,v 1.3 2008/08/22 20:59:46 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2008 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+# Combine multiple .osm files into one, removing duplicates
+
+# TODO: optimize. Write to the destination file and leave
+# enough room for the unknown parts of the header (the bounds)
+# Afterwards, rewrite the bounds tag. So I can get rid of the
+# temp file and maybe there's also no need for the binmode calls.
+
+use strict;
+use warnings;
+use File::Temp qw(tempfile);
+use Getopt::Long;
+use XML::LibXML;
+
+my $minimize;
+GetOptions("minimize!" => \$minimize)
+    or die "usage!";
+
+my @osm_files = @ARGV;
+die "Please specify one or more osm files or directories containing osm files"
+    if !@osm_files;
+
+{
+    # expand directories
+    # Taken from osm2bbd
+    # XXX Should be really a recursive function, probably
+    my @new_osm_files;
+    for my $osm_file (@osm_files) {
+	if (-d $osm_file) {
+	    push @new_osm_files, grep { -f $_ && -s $_ } glob($osm_file . "/*.osm"); # XXX argh, grep duplicates functionality, see "recursive" suggestion above
+	} elsif (-z $osm_file) {
+	    # May happen while loading data, so ignore this
+	    warn "Ignore empty file <$osm_file>...\n";
+	} else {
+	    push @new_osm_files, $osm_file;
+	}
+    }
+    @osm_files = @new_osm_files;
+}
+
+my($tmpfh,$tmpfile) = tempfile(SUFFIX => ".xmlfrag", UNLINK => 1);
+binmode $tmpfh, ":utf8";
+
+my $p = XML::LibXML->new;
+
+my $osm_version;
+my %bounds;
+my %seenid;
+for my $osm_file (@osm_files) {
+    my $root = $p->parse_file($osm_file)->documentElement;
+    my $this_osm_version = $root->getAttribute("version");
+    if (!defined $osm_version || $this_osm_version > $osm_version) {
+	$osm_version = $this_osm_version;
+    }
+    for my $child ($root->childNodes) {
+	if ($child->nodeName eq 'bounds') {
+	    for my $attr (qw(minlat minlon)) {
+		my $val = $child->getAttribute($attr);
+		if (!defined $bounds{$attr} || $val < $bounds{$attr}) {
+		    $bounds{$attr} = $val;
+		}
+	    }
+	    for my $attr (qw(maxlat maxlon)) {
+		my $val = $child->getAttribute($attr);
+		if (!defined $bounds{$attr} || $val > $bounds{$attr}) {
+		    $bounds{$attr} = $val;
+		}
+	    }
+	} else {
+	    if ($child->can("getAttribute")) {
+		my $id = $child->getAttribute("id");
+		next if exists $seenid{$id};
+		$seenid{$id} = 1;
+
+		if ($minimize) {
+		    my $visible = $child->getAttribute("visible");
+		    next if ($visible ne 'true');
+		    $child->removeAttribute("user");
+		    $child->removeAttribute("timestamp");
+		    for my $tag ($child->childNodes) {
+			if ($tag->can("getAttribute")) {
+			    no warnings 'uninitialized';
+			    if ($tag->getAttribute("k") =~ m{^(?:created_by|source)$}) {
+				$child->removeChild($tag);
+			    }
+			}
+		    }
+		}
+	    }
+	    print $tmpfh $child->serialize;
+	}
+    }
+}
+
+binmode STDOUT, ':utf8';
+print <<EOF;
+<osm version="$osm_version" generator="$0">
+  <bounds minlat="$bounds{minlat}" minlon="$bounds{minlon}" maxlat="$bounds{maxlat}" maxlon="$bounds{maxlon}" />
+EOF
+seek $tmpfh, 0, 0 or die $!;
+local $/ = 8192;
+while(<$tmpfh>) {
+    print;
+}
+close $tmpfh;
+print <<EOF;
+</osm>
+EOF
+
+__END__

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: match_bbd_data,v 1.21 2008/08/19 19:16:45 eserte Exp $
+# $Id: match_bbd_data,v 1.22 2008/08/22 18:03:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -324,8 +324,8 @@ sub is_interactive {
 	return -t STDIN && -t STDOUT;
     }
 
-    # from perlfaq8
-    open(TTY, "/dev/tty") or die $!;
+    # from perlfaq8, slightly changed (no die, but return)
+    open(TTY, "/dev/tty") or return 0;
     my $tpgrp = POSIX::tcgetpgrp(fileno(*TTY));
     my $pgrp = getpgrp();
     if ($tpgrp == $pgrp) {

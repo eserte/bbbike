@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.66 2008/08/16 10:55:03 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.66 2008/08/16 10:55:03 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2007,2008 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ use vars
      $coords_ref $realcoords_ref $search_route_points_ref @realcoords
      $VERSION $PROG_REVISION $tmpdir %tmpfiles $progname
      $os $os_bsd $use_clipboard $verbose $advanced $devel_host $public_test
-     $datadir $no_original_datadir $city $country
+     $datadir $no_original_datadir $city $country %datadir_meta
      $top %toplevel %processes $transient $c $sx $sy $top_dpi $top_dpmm @want_extends %autouse_func
      $small_icons $is_handheld
      @scrollregion $normal_scrollregion $scrollre

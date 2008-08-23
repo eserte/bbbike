@@ -9,7 +9,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.25 $ =~ /(\d+)\.(\d+)/);
 
 use Cwd qw(realpath);
 use File::Spec;
@@ -288,7 +288,11 @@ sub get_image_location {
     my $isodate1 = sprintf("%04d%02d%02d", $y,$m,$d);
     my $isodate2 = sprintf("%04d-%02d-%02d", $y,$m,$d);
 
-    my @filenames = map { $gps_data_dir . "/" . $_ } ("$isodate1.trk", "$isodate2.trk");
+    my @filenames = map {
+	($gps_data_dir . "/" . $_,
+	 $gps_data_dir . "/generated/" . $_, # This is the directory where generated tracks (e.g. originally from GPX) live
+	)
+    } ("$isodate1.trk", "$isodate2.trk");
 
     my $filename;
     for my $check_filename (@filenames) {

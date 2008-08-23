@@ -1,3 +1,41 @@
+2008-08-23  Slaven Rezic  <slaven@rezic.de>
+
+	* osm2bbd: Wolfram hat sich beschwert, dass Datasets, die mit osm2bbd
+	erzeugt werden, in bbbike nicht automatisch an die richtige Stelle
+	zentriert werden. Außerdem sind die Daten meist gar nicht in der
+	Scrollregion enthalten und man muss "enlarge scrollregion" aufrufen.
+
+	Um das zu verbessern, schreibt osm2bbd eine Metadatei (meta.dd und
+	meta.yml), in der unter anderem die Bounding-Box der Daten stehen.
+	bbbike liest diese Metadatei ein und macht automatisch ein "enlarge
+	scrollregion", und außerdem wird in die Mitte der Bounding-Box
+	zentriert.
+
+	Das initiale Zentrieren in bbbike ist schon eine Wissenschaft für sich.
+	Es gibt die Optionen -center (auf eine Straße zentrieren) und -centerc
+	(auf Koordinaten zentrieren). -center funktioniert nur mit den Berliner
+	Daten, weil PLZ.pm verwendet wird. -centerc dürfte überraschend sein,
+	wenn man einen Wert in der Konfigurationsdatei gespeichert hat und dann
+	zwischen Datesets wechselt. Weiterhin kann man in Geography::*-Modulen
+	ein Zentrum festlegen.
+
+2008-08-22  Slaven Rezic  <slaven@rezic.de>
+
+	* mkgpmap: Zum ersten Mal zum Laufen gebracht. Ein naiver Aufruf auf das
+	Verzeichnis mit den Münchener .osm-Dateien hat die java-vm zum Absturz
+	gebracht. Wahrscheinlich waren es zu viele Dateien. Auf die schnelle ein
+	Skript zum Zusammenfassen der .osm-Dateien geschrieben
+	(miscsrc/combineosm). Damit kann man ein .img erzeugen:
+
+	java -jar mkgmap.jar --description="Muenchen OSM" muenchen.osm
+
+	Die erzeugte Datei bekommt einen zufälligen (?) Dateinamen. Was
+	besonders schön ist: man kann mehrere Garmin-Images zusammenfassen:
+
+	java -jar mkgmap.jar --gmapsupp ~/src/bbbike/tmp/bbbikequal.img ~/src/bbbike/tmp/muenchen_osm.img
+
+	Das erzeugte eine Image mit dem wohlbekannten Namen gmapsupp.img.
+	
 2008-08-20  Slaven Rezic  <slaven@rezic.de>
 
 	* define_item_attribs: Wird jetzt später aufgerufen, nachdem $city

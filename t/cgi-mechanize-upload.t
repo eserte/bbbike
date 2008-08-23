@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize-upload.t,v 1.7 2007/03/24 08:27:01 eserte Exp $
+# $Id: cgi-mechanize-upload.t,v 1.9 2008/08/22 18:27:54 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -25,6 +25,7 @@ use lib ("$FindBin::RealBin",
 	 "$FindBin::RealBin/../lib", # for enum.pm
 	);
 use BBBikeTest;
+use File::Basename qw(basename);
 use File::Temp qw(tempfile);
 
 my @gps_types = ("trk", "ovl", "bbr",
@@ -69,6 +70,7 @@ plan tests => 3 + $gpsman_tests * @gps_types;
     for my $gps_type (@gps_types) {
     SKIP: {
 	    my $filename;
+	    my $testname;
 
 	    if ($gps_type eq 'trk') {
 		# Find a random gpsman track
@@ -103,6 +105,7 @@ plan tests => 3 + $gpsman_tests * @gps_types;
 		require Route;
 		Route::save(-object => $route,
 			    -file => $filename);
+		$testname = "bbr-generated from sample coords";
 	    } elsif ($gps_type eq 'ovl-generated') {
 		my $fh;
 		($fh, $filename) = tempfile(UNLINK => !$debug,
@@ -130,21 +133,25 @@ YKoord4=52.5059382
 Symbols=1
 EOF
 		close $fh;
+		$testname = "ovl-generated from sample data";
 	    } elsif ($gps_type eq 'trk-generated') {
 		(undef, $filename) = tempfile(UNLINK => !$debug,
-					      SUFFIX => ".ovl");
+					      SUFFIX => ".trk");
 		require GPS::GpsmanData;
 		require Route;
 		my $route = Route->new_from_realcoords($sample_coords);
 		my $trk = GPS::GpsmanData->new;
 		$trk->convert_from_route($route);
 		$trk->write($filename);
+		$testname = "trk-generated from sample coords";
 	    }
 	    
 	    if ($do_xxx) {
 		goto XXX;
 	    }
-	
+
+	    $testname = basename $filename if !$testname;
+
 	SKIP: {
 		my $form = $agent->current_form;
 		$form->value("routefile", $filename);
@@ -153,7 +160,7 @@ EOF
 		
 		$agent->submit;
 
-		is($agent->ct, "image/png", "It's a png")
+		is($agent->ct, "image/png", "It's a png (from $testname)")
 		    or diag "Tried to upload $filename";
 		my $content = $agent->content;
 		cmp_ok($content, "ne", "", "Non-empty content");
@@ -172,7 +179,7 @@ EOF
 		
 		$agent->submit;
 		
-		is($agent->ct, "application/pdf", "It's a pdf");
+		is($agent->ct, "application/pdf", "It's a pdf (from $testname)");
 		my $content = $agent->content;
 		cmp_ok($content, "ne", "", "Non-empty content");
 		if ($do_display) {
@@ -192,7 +199,7 @@ EOF
 		
 		$agent->submit;
 		
-		is($agent->ct, "text/html", "It's a html file");
+		is($agent->ct, "text/html", "It's a html file (from $testname)");
 		my $content = $agent->content;
 		cmp_ok($content, "ne", "", "Non-empty content");
 		
@@ -208,7 +215,7 @@ EOF
 		    diag "No image among " . scalar(@images) . " image objects";
 		
 		$agent->get($img_href);
-		like($agent->ct, qr{^image/}, "It's an image (png or gif)");
+		like($agent->ct, qr{^image/}, "It's an image (png or gif) (from $testname)");
 		my $image_content = $agent->content;
 		cmp_ok($image_content, "ne", "", "Non-empty content");
 		if ($do_display) {

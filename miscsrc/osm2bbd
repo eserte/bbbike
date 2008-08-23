@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd,v 1.33 2008/08/20 19:32:41 eserte Exp $
+# $Id: osm2bbd,v 1.38 2008/08/23 08:57:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -18,6 +18,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use Data::Dumper;
+use File::Spec qw();
 use Getopt::Long;
 use IO::File;
 use XML::LibXML;
@@ -35,10 +36,13 @@ my $map;
 my $center;
 
 my $parsefor;
+my $country;
+use constant MAXLINELENGTH => 12288; # the limit of BBBikeXS
+my $splitlonglines = 1; # XXX this may change once BBBikeXS has no length restriction anymore
 
 sub usage () {
     <<EOF;
-usage: $0 [-v] [-f] [-encoding enc] [-map bbbike [-center lon,lat]] -o directory osmfile ...
+usage: $0 [-v] [-f] [-encoding enc] [-map bbbike [-center lon,lat]] [-country country] -o directory osmfile ...
 
 -v:              Show parser progress
 -f:              Force overwriting existing output directory
@@ -51,10 +55,13 @@ usage: $0 [-v] [-f] [-encoding enc] [-map bbbike [-center lon,lat]] -o directory
 -o directory:    A not-existing directory to output the bbd files.
 -parsefor ...:   Parse only for the given key=value pair,
                  key as string and val as regexp
+-country ...:    Optimize output for given country
 osmfile ...:     Files downloaded by downloadosm,
                  or directory containing .osm files
 EOF
 }
+
+my @commandline = ($^X, $0, @ARGV);
 
 GetOptions("o=s" => \$o,
 	   "f" => \$f,
@@ -64,6 +71,8 @@ GetOptions("o=s" => \$o,
 	   "center=s" => \$center,
 	   "encoding=s" => \$encoding,
 	   "parsefor=s" => \$parsefor,
+	   "country=s" => \$country,
+	   "splitlonglines!" => \$splitlonglines,
 	  )
     or die usage;
 
@@ -103,6 +112,7 @@ my $p = XML::LibXML->new;
 my %unhandled;
 my %out;
 my %resolve_node_later;
+my @bbox_wgs84;
 
 my $do_amenity = sub {
     my($node, $amenity) = @_;
@@ -202,7 +212,7 @@ if ($map) {
     my @new_osm_files;
     for my $osm_file (@osm_files) {
 	if (-d $osm_file) {
-	    push @new_osm_files, grep { -f $_ && -s $_ } glob($osm_file . "/*.osm"); # XXX argh, grep duplicates functionality, see "recursive" suggestion above
+	    push @new_osm_files, grep { -f $_ && -s $_ } glob(File::Spec->catfile($osm_file,"*.osm")); # XXX argh, grep duplicates functionality, see "recursive" suggestion above
 	} elsif (-z $osm_file) {
 	    # May happen while loading data, so ignore this
 	    warn "Ignore empty file <$osm_file>...\n";
@@ -236,6 +246,21 @@ for my $osm_file (@osm_files) {
 	}
     }
     my $root = $p->parse_file($osm_file)->documentElement;
+
+    {
+	my($bounds_node) = $root->findnodes("/osm/bounds");
+	if ($bounds_node) {
+	    my $minlat = $bounds_node->getAttribute("minlat");
+	    my $maxlat = $bounds_node->getAttribute("maxlat");
+	    my $minlon = $bounds_node->getAttribute("minlon");
+	    my $maxlon = $bounds_node->getAttribute("maxlon");
+	    if (!defined $bbox_wgs84[0] || $minlon < $bbox_wgs84[0]) { $bbox_wgs84[0] = $minlon }
+	    if (!defined $bbox_wgs84[1] || $minlat < $bbox_wgs84[1]) { $bbox_wgs84[1] = $minlat }
+	    if (!defined $bbox_wgs84[2] || $maxlon > $bbox_wgs84[2]) { $bbox_wgs84[2] = $maxlon }
+	    if (!defined $bbox_wgs84[3] || $maxlat > $bbox_wgs84[3]) { $bbox_wgs84[3] = $maxlat }
+	}
+    }
+
     for my $node ($root->findnodes("/osm/node")) {
 	my $id = $node->getAttribute('id');
 	next if exists $node2ll{$id};
@@ -377,6 +402,7 @@ for my $osm_file (@osm_files) {
 	my @nodes = map { $_->textContent } $way->findnodes('./nd/@ref');
 
 	my $name = "";
+	my $ref;
 	my $url;
 	my $highway_cat;
 	my $waterway_cat;
@@ -424,8 +450,16 @@ for my $osm_file (@osm_files) {
 	    elsif ($k eq 'bridge')       { $bridge       = $v }
 	    elsif ($k eq 'building')     { $building     = $v }
 	    elsif ($k eq 'motorroad')    { $motorroad    = $v }
+	    elsif ($k eq 'ref')          { $ref          = $v }
 	}
 
+	if ($ref) {
+	    if (!$name) {
+		$name = $ref;
+	    } elsif ($ref ne $name) {
+		$name .= " ($ref)";
+	    }
+	}
 	if ($url) {
 	    $name .= ($name ? " " : "") . $url;
 	}
@@ -459,6 +493,9 @@ for my $osm_file (@osm_files) {
 	    }
 
 	    if      ($highway_cat =~ m{^(motorway|motorway_link|trunk|trunk_link)$} || $is_motorroad) {
+		if ($country eq 'de') {
+		    $name =~ s{\bA\s*(\d+)}{BAB$1};
+		}
 		push @or, ["strassen_bab", "BAB".$addcat];
 		$is_motorway = 1;
 	    } elsif ($highway_cat =~ m{^(primary|primary_link|secondary)$}) {
@@ -527,11 +564,12 @@ for my $osm_file (@osm_files) {
 
 	} elsif ($waterway_cat) {
 	    if      ($waterway_cat eq 'riverbank') {
-		# only if it's closed
+		# Plot as an area only if it's closed
 		if ($nodes[0] eq $nodes[-1]) {
 		    push @or, ["wasserstrassen", "F:W"];
 		} else {
-		    warn "Found unclosed riverbank, sorry cannot use it...\n";
+		    push @or, ["wasserstrassen", "W"]; # XXX This should be fixed!
+		    warn_once("Found unclosed riverbank, sorry cannot use it, fallback to line plotting ...\n");
 		}
 	    } elsif ($waterway_cat eq 'canal') {
 		push @or, ["wasserstrassen", "W"];
@@ -550,8 +588,14 @@ for my $osm_file (@osm_files) {
 		push @or, ["sbahn", "S"]; # no zones
 		resolve_node_now('railway', 'sbahnhof', "S", \@nodes);
 	    } elsif ($railway_cat eq 'rail') {
-		push @or, ["rbahn", "R"];
-		resolve_node_now('railway', 'rbahnhof', "R", \@nodes);
+		if ($name =~ m{^S\d+(,\s+S\d+)*$}) {
+		    # in Munich, S-Bahn is not marked as "light_rail"
+		    push @or, ["sbahn", "S"];
+		    resolve_node_now('railway', 'sbahnhof', "S", \@nodes);
+		} else {
+		    push @or, ["rbahn", "R"];
+		    resolve_node_now('railway', 'rbahnhof', "R", \@nodes);
+		}
 	    } elsif ($railway_cat eq 'preserved') {
 		# ignore
 	    } elsif ($railway_cat eq 'service') {
@@ -585,6 +629,9 @@ for my $osm_file (@osm_files) {
 		   ) {
 		    push @or, ["wasserstrassen", "F:I"];
 		}
+	    } elsif ($natural eq 'coastline') {
+		push @or, ["wasserstrassen", "W"]; # XXX This should be fixed!
+		warn_once("Found natural=coastline, sorry cannot use it, fallback to line plotting...\n");
 	    } else {
 		$unhandled{"natural=$natural"}++;
 	    }
@@ -736,6 +783,7 @@ if ($parsefor) {
 	mkdir "temp_blockings";
     }
     touch "temp_blockings/bbbike-temp-blockings.pl";
+    output_meta();
 }
 
 if (%unhandled) {
@@ -827,7 +875,59 @@ print $ofh <<EOF;
 EOF
     for my $rec (@$data) {
 	my($name, $coords, $cat) = @$rec;
-	print $ofh "$name\t$cat " . join(" ", @$coords) . "\n";
+	my $namecat = "$name\t$cat";
+	my $coord_string = join(" ", @$coords);
+	if ($splitlonglines && length($namecat) + length($coord_string) + 2 >= MAXLINELENGTH) {
+	    warn_once("Long line detected, splitting...\n");
+	    my $currlen = length($namecat);
+	    print $ofh $namecat;
+	    for my $c (@$coords) {
+		if ($currlen + 1 + length($c) + 1 > MAXLINELENGTH) {
+		    print $ofh "\n$namecat";
+		    $currlen = length($namecat);
+		}
+		print $ofh " ", $c;
+		$currlen += 1 + length($c);
+	    }
+	    print $ofh "\n";
+	} else {
+	    print $ofh $namecat, " ", $coord_string, "\n";
+	}
+    }
+}
+
+sub output_meta {
+    my $meta_file_dd  = $o . "/meta.dd";
+    my $meta_file_yml = $o . "/meta.yml";
+
+    my %meta;
+
+    $meta{created} = epoch2isodate;
+    $meta{created_by} = $ENV{EMAIL} || $ENV{REPLYTO} || $ENV{REPLY_TO} || (getpwuid($<))[0];
+    $meta{commandline} = \@commandline;
+    if (@bbox_wgs84) {
+	my @bbox;
+	@bbox[0,1] = split /,/, $conv->(@bbox_wgs84[0,1]);
+	@bbox[2,3] = split /,/, $conv->(@bbox_wgs84[2,3]);
+	$meta{bbox} = \@bbox;
+    }
+    #$meta{source} = \@osm_files; # XXX hmmm, too many?
+
+    open my $ofh, ">", $meta_file_dd."~"
+	or die "Cannot write to $meta_file_dd~: $!";
+    print $ofh Data::Dumper->new([\%meta],['meta'])->Sortkeys(1)->Useqq(1)->Dump;
+    close $ofh
+	or die "While closing $meta_file_dd~: $!";
+    rename $meta_file_dd."~", $meta_file_dd
+	or die "While renaming $meta_file_dd~ to $meta_file_dd: $!";
+
+    if (eval { require YAML::Syck; 1 }) {
+	YAML::Syck::DumpFile($meta_file_yml, \%meta);
+    } elsif (eval { require YAML; 1 }) {
+	YAML::DumpFile($meta_file_yml, \%meta);
+    } else {
+	warn "No YAML::Syck or YAML.pm available, cannot dump $meta_file_yml.\n";
+	unlink $meta_file_yml; # may be an older file there
     }
 }
 
@@ -837,6 +937,16 @@ sub touch ($) {
 	or die "Can't create $file: $!";
     close $fh
 	or die "Can't close $file: $!";
+}
+
+{
+    my %warn_once;
+    sub warn_once {
+	my $warning = join(" ", @_);
+	return if $warn_once{$warning};
+	warn $warning;
+	$warn_once{$warning}++;
+    }
 }
 
 # REPO BEGIN
