@@ -1,12 +1,21 @@
 2008-08-23  Slaven Rezic  <slaven@rezic.de>
 
+	* chalow: Im Netz habe ich chalow gefunden, ein Programm, mit dem man
+	ChangeLog-Dateien (wie diese Datei hier) in ein blog-ähnliches HTML
+	umwandeln kann. Leider ist das Programm komplett japanisch dokumentiert
+	und die Ausgabe sieht trotz der lateinischen Zeichen japanisch aus
+	(wegen <html lang=ja>). Aber mit ein bisschen raten habe ich die
+	Konfigurationsdatei soweit bekommen, dass es ansehlich aussieht. Die
+	HTML-Ausgabe wird unter der Adresse
+	http://bbbike.sourceforge.net/bbbikelog/index.html zu sehen sein.
+
 	* osm2bbd: Wolfram hat sich beschwert, dass Datasets, die mit osm2bbd
 	erzeugt werden, in bbbike nicht automatisch an die richtige Stelle
 	zentriert werden. Außerdem sind die Daten meist gar nicht in der
 	Scrollregion enthalten und man muss "enlarge scrollregion" aufrufen.
 
-	Um das zu verbessern, schreibt osm2bbd eine Metadatei (meta.dd und
-	meta.yml), in der unter anderem die Bounding-Box der Daten stehen.
+	Um das zu verbessern, schreibt osm2bbd jetzt eine Metadatei (meta.dd und
+	meta.yml), in der unter anderem die Bounding-Box der Daten steht.
 	bbbike liest diese Metadatei ein und macht automatisch ein "enlarge
 	scrollregion", und außerdem wird in die Mitte der Bounding-Box
 	zentriert.
@@ -14,10 +23,10 @@
 	Das initiale Zentrieren in bbbike ist schon eine Wissenschaft für sich.
 	Es gibt die Optionen -center (auf eine Straße zentrieren) und -centerc
 	(auf Koordinaten zentrieren). -center funktioniert nur mit den Berliner
-	Daten, weil PLZ.pm verwendet wird. -centerc dürfte überraschend sein,
-	wenn man einen Wert in der Konfigurationsdatei gespeichert hat und dann
-	zwischen Datesets wechselt. Weiterhin kann man in Geography::*-Modulen
-	ein Zentrum festlegen.
+	Daten, weil PLZ.pm verwendet wird. -centerc dürfte überraschende
+	Ergebnisse liefern, wenn man einen Wert in der Konfigurationsdatei
+	gespeichert hat und dann zwischen unterschiedlichen Datesets wechselt.
+	Weiterhin kann man in Geography::*-Modulen ein Zentrum festlegen.
 
 2008-08-22  Slaven Rezic  <slaven@rezic.de>
 
@@ -25,7 +34,8 @@
 	Verzeichnis mit den Münchener .osm-Dateien hat die java-vm zum Absturz
 	gebracht. Wahrscheinlich waren es zu viele Dateien. Auf die schnelle ein
 	Skript zum Zusammenfassen der .osm-Dateien geschrieben
-	(miscsrc/combineosm). Damit kann man ein .img erzeugen:
+	(miscsrc/combineosm). Dann funktioniert mkgpmap. Mit diesem Kommando
+	kann man ein .img erzeugen:
 
 	java -jar mkgmap.jar --description="Muenchen OSM" muenchen.osm
 
@@ -34,7 +44,7 @@
 
 	java -jar mkgmap.jar --gmapsupp ~/src/bbbike/tmp/bbbikequal.img ~/src/bbbike/tmp/muenchen_osm.img
 
-	Das erzeugte eine Image mit dem wohlbekannten Namen gmapsupp.img.
+	Das erzeugt ein Image mit dem wohlbekannten Namen gmapsupp.img.
 	
 2008-08-20  Slaven Rezic  <slaven@rezic.de>
 
@@ -84,8 +94,8 @@
 
 	* Windows und GfxConvert: Der TODO-Vorschlag:
 
-	GfxConvert: add more search paths on Windows machines like
-  C:/Programme/gs/gs8.14/lib;C:/Programme/GnuWin32/bin
+	| GfxConvert: add more search paths on Windows machines
+  | like C:/Programme/gs/gs8.14/lib;C:/Programme/GnuWin32/bin
 
 	wurde ungetestet umgesetzt.
 
@@ -97,7 +107,7 @@
 	Schmutzigerweise ist die "Breiteninformation" für comm-scenic-View in
 	%line_width enthalten.
 
-	* Schöne Aussicht: eine einigerma�en befriedigende Implementation
+	* Schöne Aussicht: eine einigermaßen befriedigende Implementation
 	existiert jetzt. Der alte Eintrag in TODO hat folgendes vorgeschlagen:
 
 	| Aussichtspunkte-Signatur. Idee: Ich könnte ein "View"-Symbol wie folgt
@@ -122,9 +132,10 @@
 	Jetzt ist es so gelöst, dass in 30°-Schritten Kreissegmente der Breite
 	15° gezeichnet werden.
 
-	* implementation_log.txt: Diese Datei soll vermeiden, dass
-	Implementations-Gedanken verloren gehen. Zum Beispiel kann man
-	implementierte Punkte aus TODO.pod hierher übertragen und kommentieren.
+	* implementation_log.txt: Diese Datei (auch als BBBike Log bekannt) soll
+	vermeiden, dass Implementations-Gedanken verloren gehen. Zum Beispiel
+	kann man implementierte Punkte aus TODO.pod hierher übertragen und
+	kommentieren.
 
 	Local Variables:
 	mode: change-log

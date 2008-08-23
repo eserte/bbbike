@@ -250,16 +250,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_005465',
-         'until' => 1220219999,
-         'text' => 'Bernauer Str. (Reinickendorf) in Richtung Spandau, zwischen Seidelstr. und Neheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende August 2008)',
-         'from' => 1215543240,
-         'id' => 944,
-         'data' => 'userdel	1::inwork 2821,18831 2643,18738 2602,18737 2175,18740 1967,18743 1659,18747 1405,18749 1229,18750
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -584,8 +575,8 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1220220000,
-         'text' => 'B 167 OD Alt Ruppin, zw. Brückenstr. und Neumühler Weg Straßen- u. Brückenbauarbeiten Vollsperrung 05.11.2007-31.08.2008 ',
+         'until' => 1225407600,
+         'text' => 'B 167 OD Alt Ruppin, zw. Brückenstr. und Neumühler Weg Straßen- u. Brückenbauarbeiten Vollsperrung 05.11.2007-30.10.2008 ',
          'from' => 1194130800,
          'id' => 1234,
          'data' => 'userdel	2::inwork -28641,59609 -28866,59954 -29211,60036
@@ -662,8 +653,8 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1230764400,
-         'text' => 'B 001 Brandenburger Str. OD Jeserig Straßenbau Vollsperrung 18.02.2008-31.12.2008 ',
+         'until' => 1220220000,
+         'text' => 'B 001 Brandenburger Str. OD Jeserig Straßenbau Vollsperrung 18.02.2008-31.08.2008 ',
          'from' => 1203202800,
          'id' => 1287,
          'data' => 'userdel	q4::inwork -36720,-272 -37086,-305 -37725,-398 -38151,-616
@@ -1010,15 +1001,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1219960800,
-         'text' => 'L 064 Riesaer Str. OD Bad Liebenwerda, zw. Baumschulenweg u. Südring Neubau Durchlass Vollsperrung 17.07.2008-28.08.2008 ',
-         'from' => 1216159200,
-         'id' => 1407,
-         'data' => 'userdel	q4::inwork 11862,-99775 11974,-99110
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1230764400,
          'text' => 'L 029 Lanke - Zehlendorf nördl. Wandlitz, ab B109 in Ri. Stolzenhagen Bau Kreisverkehr Vollsperrung 17.08.2008-31.12.2008 ',
@@ -1220,16 +1203,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_009621',
-         'until' => 1220219999,
-         'text' => 'Alt-Buckow (Neukölln) Richtung Marienfelde zwischen Buckower Damm und Rufacher Weg Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2008)',
-         'from' => 1218739674,
-         'id' => 1444,
-         'data' => 'userdel	1::inwork 12817,2031 12574,1866 12547,1852 12452,1808 12207,1704
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1220133600,
          'text' => 'B 246 Belzig - Wiesenburg OD Klein Glien Straßenbau Vollsperrung 14.08.2008-30.08.2008 ',
@@ -1248,21 +1222,83 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1219788000,
-         'text' => 'L 033 Strausberg - Berlin zw. AS Berlin-Marzahn und Hönow, Mahlsdorfer Str. Deckenerneuerung Vollsperrung 18.08.2008-26.08.2008 ',
-         'from' => 1218924000,
-         'id' => 1447,
-         'data' => 'userdel	2::inwork 27328,15740 26821,15609 26328,15462
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1228086000,
          'text' => 'L 035 B246 Glienicke - Bad Saarow zw. Diensdorf und Pieskow Straßenbauarbeiten Vollsperrung 21.08.2008-30.11.2008 ',
          'from' => 1219183200,
          'id' => 1448,
          'data' => 'userdel	2::inwork 56323,-16537 56600,-15729 56415,-14916
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009456',
+         'until' => 1220219999,
+         'text' => 'Glienicker Weg (Köpenick) in beiden Richtungen zwischen Spindlersfelder Str. und Zinsgutstr. Baustelle, Straße vollständig gesperrt (bis Ende 08.2008)',
+         'from' => 1219523350,
+         'id' => 1449,
+         'data' => 'userdel	2::inwork 21153,3484 21198,3522 21227,3549 21316,3662
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009756',
+         'until' => 1219629600,
+         'text' => 'Berliner Str. (Pankow) in beiden Richtungen zwischen Florastr. und Granitzstr. Baustelle, Straße vollständig gesperrt (bis 25.08., 04 Uhr)',
+         'from' => 1219523390,
+         'id' => 1450,
+         'data' => 'userdel	2::inwork 10846,17992 10859,17854
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009744',
+         'until' => 1219615199,
+         'text' => 'Hildebrandtstr. (Tiergarten) in beiden Richtungen zwischen Tiergartenstr. und Reichpietschufer Veranstaltung, Straße vollständig gesperrt (bis 24.08., 21 Uhr)',
+         'from' => 1219523435,
+         'id' => 1451,
+         'data' => 'userdel	2::temp 7333,11179 7438,11505
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009757',
+         'until' => undef,
+         'text' => 'Johannisstr. (Mitte) in beiden Richtungen zwischen Friedrichstr. und Kalkscheunenstr. Veranstaltung, Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1452,
+         'data' => 'userdel	2::temp 9396,13176 9245,13162
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009721',
+         'until' => 1220219999,
+         'text' => 'Kreuznacher Str. (Wilmersdorf) in beiden Richtungen zwischen Schildhornstr. und Bonner Str. Baustelle, Straße vollständig gesperrt (bis Ende 08.2008)',
+         'from' => 1219523521,
+         'id' => 1453,
+         'data' => 'userdel	2::inwork 4153,6703 4226,6712 4309,6709 4369,6708
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009745',
+         'until' => 1219640400,
+         'text' => 'Schwarzer Weg (Mitte) in beiden Richtungen zwischen Habersaathstr. und Invalidenstr. Veranstaltung, Straße vollständig gesperrt (bis 25.08., 7 Uhr)',
+         'from' => 1219523565,
+         'id' => 1454,
+         'data' => 'userdel	2::temp 8574,13666 8429,13903
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009715',
+         'until' => 1220219999,
+         'text' => 'Wichertstr. (Prenzlauer Berg) in Richtung Schönhauser Allee zwischen Prenzlauer Allee und Stahlheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2008)',
+         'from' => 1219523603,
+         'id' => 1455,
+         'data' => 'userdel	1::inwork 11941,15586 11744,15720 11581,15831 11455,15916
 ',
          'type' => 'gesperrt'
        }
