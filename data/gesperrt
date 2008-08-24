@@ -605,6 +605,9 @@ Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
 Behrenstr./Bebelplatz	1s 9801,12245 9743,12239 9700,12234 9626,12227
 Halenseestr.	1s 2277,9801 2167,10004 2121,10089 1988,10328 1957,10426
+Straßenbahnhaltestelle	3nocross::ignrte 9215,13392 9281,13374 9415,13315
+Oranienburger Str. -> Linienstr.: Straßenbahnhaltestelle	3::igndisp 9215,13392 9281,13374 9296,13397
+Linienstr. -> Oranienburger Str.: Straßenbahnhaltestelle	3::igndisp 9296,13397 9281,13374 9415,13315
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12046,16568
 Mittelstreifen	3nocross::ignrte 16713,6839 16674,6885 16568,7009
 Köpenicker Landstr. -> Güldenhofer Ufer: Mittelstreifen	3::igndisp 16713,6839 16674,6885 16630,6800

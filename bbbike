@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.382 2008/08/24 19:49:53 eserte Exp $
+# $Id: bbbike,v 3.384 2008/08/24 20:49:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -243,7 +243,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.382 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.384 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -361,32 +361,6 @@ foreach (@Radwege::category_order) {
 $str_nr_draw{'comm-route'} = 1;
 $str_nr_draw{'sBAB'} = 1; # XXX sollte vielleicht umschaltbar sein?
 
-%tag_group = # group related tags (for stacking)
-  ('str_s' => ['s-out', 'gr', 'rw',
-	       's-NN', 's-N', 's-H', 's-HH', 's-B', 's-BAB', 'sBAB-BAB',
-	       'comm', (map { "comm-$_" } @comments_types),
-	       'nl', 'qs', 'hs', 'mount',
-	       's-label-bg', 'sBAB-label-bg', 's-label', 'sBAB-label',
-	       'hoehe', 'vf-bg',
-	       'sperre', 'temp_sperre_s', 'temp_sperre',
-	       'delnet', 'pl-fg', 'lsa-bg', 'vf-fg', 'lsa-fg'],
-   'str_l' => ['l-out', 'l', 'comm',
-	       (map { "comm-$_" } @comments_types),
-	       'ql', 'hl', 'l-label-bg', 'l-label'], # XXX mount?
-   'p_o'   => ['o', 'O'],
-   'p_p'   => ['p'],
-   'str_u' => ['u', 'sperre_u', 'u-bg', 'u-fg', 'u_bg-img', 'u-label'],
-   'str_b' => ['b', 'sperre_b', 'b-bg', 'b-fg', 'b_bg-img', 'b-label'],
-   'str_r' => ['r', 'sperre_r', 'r-bg', 'r-fg', 'r_bg-img', 'r-label'],
-   'str_w' => ['w-out', 'w', 'i-out', 'i', 'w-label-bg', 'w-label'],
-   'str_f' => ['f', 'f-label-bg', 'f-label', 'f-Pabove'],
-   'str_g' => ['z', 'g', 'gBO', 'gP', 'gD', 'gBO-label-bg', 'gBO-label', 'GU-img'],
-   'p_kn'  => ['kn', 'ki', 'rest'],
-   'map'   => ['map'],
-   'route' => ['route'],
-   'v'     => ['v', 'v-fg'],
-   'e'     => ['e', 'e-img'],
-  );
 $do_iconframe = 1;
 $do_route_strnames          = 0 if !defined $do_route_strnames;
 $do_route_strnames_km       = 0 if !defined $do_route_strnames_km;
@@ -5964,6 +5938,33 @@ sub define_item_attribs {
 				'nw' => 5, 'sw' => -5};
     $label_spaceadd{'v'} = "  ";
 
+    %tag_group =		# group related tags (for stacking)
+	('str_s' => ['s-out', 'gr', 'rw',
+		     's-NN', 's-N', 's-H', 's-HH', 's-B', 's-BAB', 'sBAB-BAB',
+		     'comm', (map { "comm-$_" } @comments_types),
+		     'nl', 'qs', 'hs', 'mount',
+		     's-label-bg', 'sBAB-label-bg', 's-label', 'sBAB-label',
+		     'hoehe', 'vf-bg',
+		     'sperre', 'temp_sperre_s', 'temp_sperre',
+		     'delnet', 'pl-fg', 'lsa-bg', 'vf-fg', 'lsa-fg'],
+	 'str_l' => ['l-out', 'l', 'comm',
+		     (map { "comm-$_" } @comments_types),
+		     'ql', 'hl', 'l-label-bg', 'l-label'], # XXX mount?
+	 'p_o'   => ['o', 'O'],
+	 'p_p'   => ['p'],
+	 'str_u' => ['u', 'sperre_u', 'u-bg', 'u-fg', 'u_bg-img', 'u-label'],
+	 'str_b' => ['b', 'sperre_b', 'b-bg', 'b-fg', 'b_bg-img', 'b-label'],
+	 'str_r' => ['r', 'sperre_r', 'r-bg', 'r-fg', 'r_bg-img', 'r-label'],
+	 'str_w' => ['w-out', 'w', 'i-out', 'i', 'w-label-bg', 'w-label', 'i-label-bg', 'i-label'],
+	 'str_f' => ['f', 'f-label-bg', 'f-label', 'f-Pabove'],
+	 'str_g' => ['z', 'g', 'gBO', 'gP', 'gD', 'gBO-label-bg', 'gBO-label', 'GU-img'],
+	 'p_kn'  => ['kn', 'ki', 'rest'],
+	 'map'   => ['map'],
+	 'route' => ['route'],
+	 'v'     => ['v', 'v-fg'],
+	 'e'     => ['e', 'e-img'],
+	);
+
     # normale Reihenfolge für das Übereinanderlegen bei restack()
     #XXX labels sollten grundsätzlich immer oben sein. Problematisch bei tag_groups
     @normal_stack_order =
@@ -6426,7 +6427,7 @@ sub generate_plot_functions {
 				    $line_dash_rueck = $line_dash_hin if defined $line_dash_hin;
 				    draw_tunnel_entrance(\@coordlist, width => $this_width_hin+4, tags => \@std_tags_hin, mounds => $addinfo_hin);
 				} elsif ($addinfo_hin eq 'Br') {
-				    draw_bridge(\@coordlist, width => $this_width_hin+4, tags => \@std_tags_hin);
+				    draw_bridge(\@coordlist, -width => $this_width_hin+4, -tags => \@std_tags_hin);
 				}
 			    }
 			}
@@ -6515,7 +6516,7 @@ sub generate_plot_functions {
 
 			    }
 			} elsif ($cat_hin eq 'Br') {
-			    draw_bridge(\@coordlist, width => $this_width_hin+4, tags => \@std_tags_hin);
+			    draw_bridge(\@coordlist, -width => $this_width_hin+4, -tags => \@std_tags_hin);
 			} elsif ($cat_hin =~ $roundabout_qr) {
 			    if ($edit_normal_mode) {
 				$c->createLine(@coordlist,
@@ -6530,7 +6531,7 @@ sub generate_plot_functions {
 				return;
 			    }
 			} elsif ($cat_hin =~ $tunnel_qr) {
-			    draw_tunnel_entrance(\@coordlist, width => $this_width_hin+4, tags => \@std_tags_hin, mounds => $cat_hin);
+			    draw_tunnel_entrance(\@coordlist, -width => $this_width_hin+4, -tags => \@std_tags_hin, -mounds => $cat_hin);
 			} else {
 			    $item = $c->createLine
 				(@coordlist,
@@ -9444,6 +9445,8 @@ sub plotstr {
     if ($abk eq 'w') { # Wasser *und* Inseln löschen
 	$c->delete("i");
 	$c->delete("i-out");
+	$c->delete("i-label");
+	$c->delete("i-label-bg");
     }
 
     if ($std && !$str_draw{$abk}) {
@@ -12306,7 +12309,7 @@ sub plotobst {
 ### AutoLoad Sub
 sub draw_bridge {
     my($cl,%args) = @_;
-    my $width = $args{width}||10;
+    my $width = $args{'-width'}||10;
     my $color = '#808080';
     my $thickness = 2; # make configurable XXX
 #XXX complicated code, make nicer!
@@ -12319,12 +12322,12 @@ sub draw_bridge {
 	my($dx,$dy) = ($delta*cos($beta), $delta*sin($beta));
 	$c->createLine($x1+$dx,$y1+$dy,$x2+$dx,$y2+$dy,
 		       -width => $thickness,
-		       -tags => $args{tags},
+		       -tags => $args{'-tags'},
 		       -fill => $color,
 		      );
 	$c->createLine($x1-$dx,$y1-$dy,$x2-$dx,$y2-$dy,
 		       -width => $thickness,
-		       -tags => $args{tags},
+		       -tags => $args{'-tags'},
 		       -fill => $color,
 		      );
     }
@@ -12341,14 +12344,14 @@ sub draw_bridge {
 	$c->createLine($cl->[0]+$dx-$k2x, $cl->[1]+$dy-$k2y,
 		       $cl->[0]+$dx, $cl->[1]+$dy,
 		       -width => $thickness,
-		       -tags => $args{tags},
+		       -tags => $args{'-tags'},
 		       -fill => $color,
 		      );
 	$c->createLine(
 		       $cl->[0]-$dx, $cl->[1]-$dy,
 		       $cl->[0]-$dx-$kx, $cl->[1]-$dy-$ky,
 		       -width => $thickness,
-		       -tags => $args{tags},
+		       -tags => $args{'-tags'},
 		       -fill => $color,
 		      );
     }
@@ -12366,14 +12369,14 @@ sub draw_bridge {
 	$c->createLine($cl->[-2]+$dx+$kx, $cl->[-1]+$dy+$ky,
 		       $cl->[-2]+$dx, $cl->[-1]+$dy,
 		       -width => $thickness,
-		       -tags => $args{tags},
+		       -tags => $args{'-tags'},
 		       -fill => $color,
 		      );
 	$c->createLine(
 		       $cl->[-2]-$dx, $cl->[-1]-$dy,
 		       $cl->[-2]-$dx+$k2x, $cl->[-1]-$dy+$k2y,
 		       -width => $thickness,
-		       -tags => $args{tags},
+		       -tags => $args{'-tags'},
 		       -fill => $color,
 		      );
     }
@@ -12383,10 +12386,10 @@ sub draw_bridge {
 ### AutoLoad Sub
 sub draw_tunnel_entrance {
     my($cl,%args) = @_;
-    my $width = $args{width}||20;
+    my $width = $args{'-width'}||20;
     my $color = '#505050';
     my $thickness = 3;
-    my $mounds = delete $args{mounds} || "Tu";
+    my $mounds = delete $args{'-mounds'} || "Tu";
 #XXX complicated code, make nicer!
     if ($mounds !~ m{^_}) {
 	my $alpha = atan2($cl->[3]-$cl->[1],$cl->[2]-$cl->[0]);
@@ -12403,7 +12406,7 @@ sub draw_tunnel_entrance {
 		       $cl->[0]-$dx, $cl->[1]-$dy,
 		       $cl->[0]-$dx-$kx, $cl->[1]-$dy-$ky,
 		       -width => $thickness,
-		       -tags => $args{tags},
+		       -tags => $args{'-tags'},
 		       -fill => $color,
 		      );
     }
@@ -12422,7 +12425,7 @@ sub draw_tunnel_entrance {
 		       $cl->[-2]-$dx, $cl->[-1]-$dy,
 		       $cl->[-2]-$dx+$k2x, $cl->[-1]-$dy+$k2y,
 		       -width => $thickness,
-		       -tags => $args{tags},
+		       -tags => $args{'-tags'},
 		       -fill => $color,
 		      );
     }

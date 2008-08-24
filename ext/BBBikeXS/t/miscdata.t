@@ -2,7 +2,7 @@
 # -*- mode:perl; coding:raw-text -*-
 
 #
-# $Id: miscdata.t,v 1.1 2008/08/24 16:54:29 eserte Exp $
+# $Id: miscdata.t,v 1.2 2008/08/24 20:48:38 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -37,7 +37,7 @@ if (!defined $ENV{BATCH}) {
 
 use vars qw(@bridge_arguments @tunnel_entrance_arguments);
 
-plan tests => 13;
+plan tests => 17;
 
 my $mw = tkinit;
 $mw->geometry("+10+10");
@@ -87,13 +87,17 @@ EOF
 
     is(scalar @{$bridge_arguments[0]}, 4, "Expected bridge coordinates")
 	or diag(Dumper(\@bridge_arguments));
+    is($bridge_arguments[1], "-width");
     is($bridge_arguments[2], $category_width->{HH}+4, "Expected width");
+    is($bridge_arguments[3], "-tags");
     is($bridge_arguments[4]->[0], "s", "Expected first tag");
     is($bridge_arguments[4]->[1], "Street with bridge", "Expected second tag (name)");
 
     is(scalar @{$tunnel_entrance_arguments[0]}, 4, "Expected tunnel_entrance coordinates")
 	or diag(Dumper(\@tunnel_entrance_arguments));
+    is($bridge_arguments[1], "-width");
     is($tunnel_entrance_arguments[2], $category_width->{HH}+4, "Expected width");
+    is($bridge_arguments[3], "-tags");
     is($tunnel_entrance_arguments[4]->[0], "s", "Expected first tag");
     is($tunnel_entrance_arguments[6], "Tu", "Expected tunnel mound attrib");
 
@@ -120,7 +124,15 @@ sub write_data {
 }
 
 # XXX It is not completely clear if cloning should be necessary here.
-sub draw_bridge          { @bridge_arguments = @{ dclone \@_ } }
-sub draw_tunnel_entrance { @tunnel_entrance_arguments = @{ dclone \@_ } }
+sub draw_bridge          {
+    @bridge_arguments = @{ dclone \@_ };
+    my($cl,%args) = @_;
+    $c->createLine($cl, -fill=>"red", -dash=>".-", -tags=>$args{-tags});
+}
+sub draw_tunnel_entrance {
+    @tunnel_entrance_arguments = @{ dclone \@_ };
+    my($cl,%args) = @_;
+    $c->createLine($cl, -fill=>"blue", -dash=>".-", -tags=>$args{-tags});
+}
 
 __END__

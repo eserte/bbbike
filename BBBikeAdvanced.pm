@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.204 2008/08/16 19:18:39 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.205 2008/08/24 20:40:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2008 Slaven Rezic. All rights reserved.
@@ -2428,8 +2428,11 @@ sub check_new_modules {
 	# only record BBBike-related and own modules
 	next if $v !~ /bbbike/i && $v !~ /\Q$ENV{HOME}/;
 	next if exists $module_time{$v};
-	$module_time{$v} = (stat($v))[9];
-	warn "recorded $module_time{$v} for $k\n" if $verbose;
+	my $modtime = (stat($v))[9];
+	if (!defined $modtime) { # may be undefined for temporary "reload" files
+	    $module_time{$v} = $modtime;
+	    warn "recorded $module_time{$v} for $k\n" if $verbose;
+	}
     }
     $module_check{$pkg}++ if defined $pkg;
     my @stash_keys = keys %{$pkg."::"};

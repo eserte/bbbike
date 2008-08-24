@@ -722,6 +722,7 @@ Halenseestr.	1s:q2 2277,9801 2167,10004 2121,10089 1988,10328 1957,10426
 # gesperrte Wegf¸hrung (nicht mˆglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Oranienburger Str.: Straﬂenbahnhaltestelle	3nocross 9215,13392 9281,13374 9415,13315
 Brauhausstr. -> Prenzlauer Promenade: Straﬂenbahntrasse	3 12211,16688 12017,16734 12046,16568
 Schnellerstr.: Mittelstreifen	3nocross 16713,6839 16674,6885 16568,7009
 #: note: Luftbild vvv
@@ -1313,6 +1314,7 @@ Weinmeisterhornweg	1s -4789,11225 -4564,11180
 Heerstr.	3nocross -4500,11937 -4437,11919 -4310,11882
 Heerstr.	3nocross -4310,11882 -4278,11873 -4063,11805
 tragen/schieben (40 Stufen, Rampe)	0:120 -4768,11016 -4836,11028
+#: XXX: Ist der Theodor-Heuss-Weg tats‰chlich eine Einbahnstraﬂe?
 Theodor-Heuss-Weg	1s 9197,14562 9081,14363
 tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:40 9223,14608
 Tor	BNP:5 3326,12730
