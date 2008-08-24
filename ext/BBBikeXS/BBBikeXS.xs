@@ -637,8 +637,6 @@ fast_plot_str(canvas, abk, fileref, ...)
 	} point[MAXPOINTS];
 	AV *tags, *outline_tags;
 	int count;
-	SV* file_or_object;
-	char *file;
 	int file_count = 0;
 	int total_file_count;
 	long currpos;
@@ -658,12 +656,15 @@ fast_plot_str(canvas, abk, fileref, ...)
 	HV* category_width = NULL;
 	HV* category_color = NULL;
 
-	SV *tags_sv, *fill_sv, *joinstyle_sv, *bevel_sv, *width_sv;
+	SV *tags_sv, *fill_sv, *joinstyle_sv, *bevel_sv, *width_sv, *mounds_sv;
 
 	char** restr_array = NULL;
 	char* restr_array_strings = NULL;
 	char** ignore_array = NULL;
 	char* ignore_array_strings = NULL;
+
+	int has_draw_bridge = -1;
+	int has_draw_tunnel_entrance = -1;
 
 	CODE:
 	if (items > 3)
@@ -755,9 +756,12 @@ fast_plot_str(canvas, abk, fileref, ...)
 	joinstyle_sv = newSVpv("-joinstyle", 0);
 	bevel_sv = newSVpv("bevel", 0);
 	width_sv = newSVpv("-width", 0);
+	mounds_sv = newSVpv("-mounds", 0);
 
 	count = 0;
 	while(1) {
+	  char *file = NULL;
+	  SV* file_or_object;
 	  long file_size = -1;
 	  if (fileref_array) {
 	    SV **s = av_fetch(fileref_array, file_count, 0);
@@ -794,7 +798,7 @@ fast_plot_str(canvas, abk, fileref, ...)
 	  /*count = 0;*/
 	  while((f && !feof(f)) ||
 		(data_array && data_pos <= av_len(data_array))) {
-	    char *p, *cat;
+	    char *p, *cat, *cat_attrib;
 	    int i, point_i;
 
 	    /* get line from file or data array */
@@ -807,6 +811,12 @@ fast_plot_str(canvas, abk, fileref, ...)
 		croak("Error while fetching %d-nth element from {Data}.\n", data_pos);
 	      buf = SvPV(*tmp, PL_na);
 	      data_pos++;
+	    }
+
+	    /* It seems that the eof condition is only detected now,
+	     * after trying to read again (?!) */
+	    if (f && feof(f)) {
+	      break;
 	    }
 
 	    if (buf[0] == '#') {
@@ -823,6 +833,16 @@ fast_plot_str(canvas, abk, fileref, ...)
 		if (p) {
 		  *p = 0;
 		  if (!*(++p)) break;
+
+		  {
+		    char *p = strchr(cat, ':');
+		    if (p && *(p+1) == ':' && *(p+2) != 0) {
+		      *p = 0;
+		      cat_attrib = p+2;
+		    } else {
+		      cat_attrib = NULL;
+		    }
+		  }
 
 		  /* check ignore, if needed */
 		  if (ignore_array) {
@@ -878,6 +898,7 @@ fast_plot_str(canvas, abk, fileref, ...)
 		    int width = 1;
 		    char *fill = "white";
 		    SV* name;
+		    AV *coords;
 
 		    if (category_width) {
 		      SV** sv_sv_category_width = hv_fetch(category_width,
@@ -923,6 +944,12 @@ fast_plot_str(canvas, abk, fileref, ...)
 		      }
 		    }
 
+		    coords = newAV();
+		    for(i = 0; i < point_i; i++) {
+		      av_push(coords, TRANSPOSE_X_SCALAR(point[i].x));
+		      av_push(coords, TRANSPOSE_Y_SCALAR(point[i].y));
+		    }
+
 		    if (outline) {
 		      strcpy(abkcat, abk);
 		      strcat(abkcat, "-");
@@ -932,10 +959,7 @@ fast_plot_str(canvas, abk, fileref, ...)
 
 		      PUSHMARK(sp);
 		      XPUSHs(canvas);
-		      for(i = 0; i < point_i; i++) {
-			XPUSHs(sv_2mortal(TRANSPOSE_X_SCALAR(point[i].x)));
-			XPUSHs(sv_2mortal(TRANSPOSE_Y_SCALAR(point[i].y)));
-		      }
+		      XPUSHs(sv_2mortal(newRV_inc((SV*)coords)));
 		      XPUSHs(tags_sv);
 		      XPUSHs(sv_2mortal(newRV_inc((SV*)outline_tags)));
 		      XPUSHs(fill_sv);
@@ -968,10 +992,7 @@ fast_plot_str(canvas, abk, fileref, ...)
 
 		    PUSHMARK(sp);
 		    XPUSHs(canvas);
-		    for(i = 0; i < point_i; i++) {
-		      XPUSHs(sv_2mortal(TRANSPOSE_X_SCALAR(point[i].x)));
-		      XPUSHs(sv_2mortal(TRANSPOSE_Y_SCALAR(point[i].y)));
-		    }
+		    XPUSHs(sv_2mortal(newRV_inc((SV*)coords)));
 		    XPUSHs(tags_sv);
 		    XPUSHs(sv_2mortal(newRV_inc((SV*)tags)));
 		    XPUSHs(fill_sv);
@@ -982,9 +1003,66 @@ fast_plot_str(canvas, abk, fileref, ...)
 		    PUTBACK;
 		    perl_call_method("createLine", G_DISCARD|G_VOID);
 		    SPAGAIN;
+
+		    if (cat_attrib) {
+		      if (strcmp(cat_attrib, "Br") == 0) {
+			if (has_draw_bridge == -1) {
+			  CV* sub = get_cv("main::draw_bridge", 0);
+			  if (sub) {
+			    has_draw_bridge = 1;
+			  } else {
+			    warn("main::draw_bridge is not defined, cannot draw bridges.\n");
+			    has_draw_bridge = 0;
+			  }
+			}
+			if (has_draw_bridge) {
+			  PUSHMARK(sp);
+			  XPUSHs(sv_2mortal(newRV_inc((SV*)coords)));
+			  XPUSHs(width_sv);
+			  XPUSHs(sv_2mortal(newSViv(width+4)));
+			  XPUSHs(tags_sv);
+			  XPUSHs(sv_2mortal(newRV_inc((SV*)tags)));
+
+			  PUTBACK;
+			  call_pv("main::draw_bridge", G_DISCARD|G_VOID);
+			  SPAGAIN;
+			}
+		      } else if (strcmp(cat_attrib, "Tu") == 0) {
+			if (has_draw_tunnel_entrance == -1) {
+			  CV* sub = get_cv("main::draw_tunnel_entrance", 0);
+			  if (sub) {
+			    has_draw_tunnel_entrance = 1;
+			  } else {
+			    warn("main::draw_tunnel_entrance is not defined, cannot draw tunnel_entrances.\n");
+			    has_draw_tunnel_entrance = 0;
+			  }
+			}
+			if (has_draw_tunnel_entrance) {
+			  PUSHMARK(sp);
+			  XPUSHs(sv_2mortal(newRV_inc((SV*)coords)));
+			  XPUSHs(width_sv);
+			  XPUSHs(sv_2mortal(newSViv(width+4)));
+			  XPUSHs(tags_sv);
+			  XPUSHs(sv_2mortal(newRV_inc((SV*)tags)));
+			  XPUSHs(mounds_sv);
+			  XPUSHs(sv_2mortal(newSVpv(cat_attrib, 0)));
+
+			  PUTBACK;
+			  call_pv("main::draw_tunnel_entrance", G_DISCARD|G_VOID);
+			  SPAGAIN;
+			}
+		      }
+		    }
+
+		    av_undef(coords);
+		    SvREFCNT_dec(coords);
 		  }
 		  count++;
+		} else {
+		  warn("Line %d of file %s is incomplete (SPACE character after category expected)\n", count+1, file ? file : "<data>");
 		}
+	      } else {
+		warn("Line %d of file %s is incomplete (TAB character expected)\n", count+1, file ? file : "<data>");
 	      }
 
 	      if (count % 150 == 0 && SvTRUE(progress)) {
@@ -1018,6 +1096,7 @@ fast_plot_str(canvas, abk, fileref, ...)
 	SvREFCNT_dec(joinstyle_sv);
 	SvREFCNT_dec(bevel_sv);
 	SvREFCNT_dec(width_sv);
+	SvREFCNT_dec(mounds_sv);
 
 	av_undef(tags);
 	av_undef(outline_tags);
