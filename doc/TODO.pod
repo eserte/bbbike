@@ -514,6 +514,19 @@ antworten? Update.pm braucht allerdings auch Unterstützung dafür...
 
 =item * (M1)
 
+Leichtere Unterstützung für andere Städte/Regionen:
+
+ Wolfram:
+ > Koennte man den nicht fuer die anderen Staedte erweitern? Erstmal
+ > eine Auswahl an Staedten, die man haben will und dann ein Update/Download?
+ 
+ Das könnte man machen. Die Stadtauswahl müsste auch schon aus dem Netz
+ geholt werden, dann datadir für den Update umbiegen und dem User
+ Anweisungen geben, wir er das nächste Mal mit den neuen Daten starten
+ soll, oder sogar ein Umschalten per GUI ermöglichen.
+
+=item * (M1)
+
 Wie ist der derzeitige Stand mit aktuellen Telefonbuch-CDROMs? Welches
 Programm kann diese auslesen (tbb?).
 

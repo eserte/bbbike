@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd,v 1.38 2008/08/23 08:57:34 eserte Exp $
+# $Id: osm2bbd,v 1.39 2008/08/24 07:29:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -30,7 +30,7 @@ my $o;
 my $f;
 my $v;
 my $encoding = "utf-8";
-my $debug;
+my $debug = 1; # 0: quiet, 1: normal, 2: verbose
 
 my $map;
 my $center;
@@ -66,7 +66,7 @@ my @commandline = ($^X, $0, @ARGV);
 GetOptions("o=s" => \$o,
 	   "f" => \$f,
 	   "v" => \$v,
-	   "debug" => \$debug,
+	   "debug=i" => \$debug,
 	   "map=s" => \$map,
 	   "center=s" => \$center,
 	   "encoding=s" => \$encoding,
@@ -463,7 +463,7 @@ for my $osm_file (@osm_files) {
 	if ($url) {
 	    $name .= ($name ? " " : "") . $url;
 	}
-	if ($debug) {
+	if ($debug >= 2) {
 	    $name .= "; id=$id";
 	}
 
@@ -757,7 +757,7 @@ if ($parsefor) {
     chdir $o
 	or die "Cannot chdir to $o: $!";
     while(my($filename,$data) = each %out) {
-	print STDERR "$filename... ";
+	print STDERR "$filename... " if $debug;
 	open my $ofh, ">:encoding($encoding)", "$filename~"
 	    or die "Can't write to file <$filename~> in directory <$o>: $!";
 	output_data($ofh, $data);
@@ -765,7 +765,7 @@ if ($parsefor) {
 	    or die "Error while closing: $!";
 	rename "$filename~", $filename
 	    or die "Can't rename $filename~ to $filename: $!";
-	print STDERR "\n";
+	print STDERR "\n" if $debug;
     }
 
     # required files (dummy files, bbbike like to have these):
@@ -786,7 +786,7 @@ if ($parsefor) {
     output_meta();
 }
 
-if (%unhandled) {
+if (%unhandled && $debug >= 1) {
     print "Unhandled categories:\n";
     local $Data::Dumper::Sortkeys = 1;
     print Dumper (\%unhandled);
@@ -823,6 +823,7 @@ sub resolve_node_fallback {
 	}
     }
     return if !$have_unresolved;
+    return if !$debug;
 
     print STDERR "unresolved:\n";
     for my $osm_layer (keys %resolve_node_later) {

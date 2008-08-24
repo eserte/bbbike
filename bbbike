@@ -8744,6 +8744,8 @@ sub enter_opt_preferences {
 				     }
 				     $strcat_speed{$k} = $v;
 				 }
+				 # special: B == HH
+				 $strcat_speed{"B"} = $strcat_speed{"HH"};
 				 while(my($k,$v) = each %var3) {
 				     if ($radwege_speed{$k} != $v) {
 					 undef $radwege_net;
