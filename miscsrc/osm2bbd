@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd,v 1.42 2008/08/24 15:30:22 eserte Exp $
+# $Id: osm2bbd,v 1.43 2008/08/24 18:47:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -781,11 +781,12 @@ if ($parsefor) {
 	print STDERR "\n" if $debug;
     }
 
-    # required files (dummy files, bbbike like to have these):
+    # required files (dummy files, bbbike or bbbike.cgi like to have these):
     for my $file (qw(gesperrt wasserumland wasserumland2 hoehe
 		     orte orte2 qualitaet_l handicap_l
 		     berlin deutschland orte_city
 		     landstrassen landstrassen2
+		     ubahn ubahnhof sbahn sbahnhof rbahn rbahnhof
 		    )) {
 	touch $file;
     }
