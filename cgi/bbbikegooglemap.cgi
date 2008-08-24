@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 2.34 2008/07/21 20:44:39 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 2.35 2008/08/24 08:02:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006,2007,2008 Slaven Rezic. All rights reserved.
@@ -524,6 +524,8 @@ sub get_html {
 
     function updateRouteSel() {
 	return; // XXX the selection code does not really work
+	// See http://use.perl.org/~grink/journal/37262?from=rss for alternatives.
+	// Keywords: clipboard selection copying security reasons
 
 	var routeDiv = document.getElementById("addroutetext").firstChild;
 	var range = document.createRange();

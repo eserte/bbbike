@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.380 2008/08/21 21:05:03 eserte Exp eserte $
+# $Id: bbbike,v 3.381 2008/08/24 15:19:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -243,7 +243,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.380 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.381 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -15310,9 +15310,13 @@ sub center_best {
     }
     if ($city_obj && $city_obj->can("center")) {
 	$c->center_view(transpose(split /,/, $city_obj->center));
-    } elsif ($datadir_meta{bbox}) {
-	# Hack for center XXX
-        my($cx,$cy) = Strassen::Util::middle(@{ $datadir_meta{bbox} });
+    } elsif ($datadir_meta{center} || $datadir_meta{bbox}) {
+	my($cx,$cy);
+	if ($datadir_meta{center}) {
+	    ($cx,$cy) = @{ $datadir_meta{center} };
+	} else {
+	    ($cx,$cy) = Strassen::Util::middle(@{ $datadir_meta{bbox} });
+	}
 	eval {
 	    mark_point(-coords => [[[ transpose($cx,$cy) ]]],
 		       -dont_mark => 1);

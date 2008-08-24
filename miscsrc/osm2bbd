@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd,v 1.39 2008/08/24 07:29:07 eserte Exp $
+# $Id: osm2bbd,v 1.41 2008/08/24 15:19:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -34,6 +34,7 @@ my $debug = 1; # 0: quiet, 1: normal, 2: verbose
 
 my $map;
 my $center;
+my $center_delta;
 
 my $parsefor;
 my $country;
@@ -42,7 +43,7 @@ my $splitlonglines = 1; # XXX this may change once BBBikeXS has no length restri
 
 sub usage () {
     <<EOF;
-usage: $0 [-v] [-f] [-encoding enc] [-map bbbike [-center lon,lat]] [-country country] -o directory osmfile ...
+usage: $0 [-v] [-f] [-encoding enc] [-center lon,lat] [-map bbbike [-centerdelta lon,lat]] [-country country] -o directory osmfile ...
 
 -v:              Show parser progress
 -f:              Force overwriting existing output directory
@@ -50,8 +51,11 @@ usage: $0 [-v] [-f] [-encoding enc] [-map bbbike [-center lon,lat]] [-country co
 -map bbbike:     Use BBBike coordinates instead of WGS 84 coordinates in the
                  output. Recommended until BBBike is able to fully handle
                  WGS 84 coordinates.
--center lon,lat: If -map bbbike is used, then specify the 0,0 point. Defaults
-                 to standard Berlin setting.
+-center lon,lat: Set the center of the map. If not set, then the plotting
+		 software decides on a center itself, usually the center
+		 of the bounding box.
+-centerdelta lon,lat: If -map bbbike is used, then specify the 0,0 point.
+		 Defaults to standard Berlin setting.
 -o directory:    A not-existing directory to output the bbd files.
 -parsefor ...:   Parse only for the given key=value pair,
                  key as string and val as regexp
@@ -69,6 +73,7 @@ GetOptions("o=s" => \$o,
 	   "debug=i" => \$debug,
 	   "map=s" => \$map,
 	   "center=s" => \$center,
+	   "centerdelta=s" => \$center_delta,
 	   "encoding=s" => \$encoding,
 	   "parsefor=s" => \$parsefor,
 	   "country=s" => \$country,
@@ -88,6 +93,10 @@ script) or raw wget, for example
 Note that the bbox must not be too large, otherwise you get a 400 bad request
 error.
 EOF
+}
+
+if ($center && $center !~ m{^[-+]?[\d\.]+,[-+]?[\d\.]+$}) {
+    die "The value for the -center option has to be in the form lon,lat\n";
 }
 
 my($parsefor_key, $parsefor_val);
@@ -194,8 +203,8 @@ if ($map) {
     require Karte::Standard;
 
     my($dx,$dy) = (0,0);
-    if ($center) {
-	my($c_lon,$c_lat) = split /,/, $center;
+    if ($center_delta) {
+	my($c_lon,$c_lat) = split /,/, $center_delta;
 	($dx,$dy) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($c_lon,$c_lat));
     }
 
@@ -204,6 +213,10 @@ if ($map) {
 	my($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon,$lat));
 	($x-$dx).",".($y-$dy);
     };
+}
+
+if ($center) {
+    $center = $conv->(split /,/, $center);
 }
 
 {
@@ -898,8 +911,8 @@ EOF
 }
 
 sub output_meta {
-    my $meta_file_dd  = $o . "/meta.dd";
-    my $meta_file_yml = $o . "/meta.yml";
+    my $meta_file_dd  = "meta.dd";
+    my $meta_file_yml = "meta.yml";
 
     my %meta;
 
@@ -912,6 +925,7 @@ sub output_meta {
 	@bbox[2,3] = split /,/, $conv->(@bbox_wgs84[2,3]);
 	$meta{bbox} = \@bbox;
     }
+    $meta{center} = [split /,/, $center] if defined $center;
     #$meta{source} = \@osm_files; # XXX hmmm, too many?
 
     open my $ofh, ">", $meta_file_dd."~"
@@ -1047,13 +1061,6 @@ To convert data for the San Francisco area:
     env LANG=en_US.UTF-8 perl ./bbbike -datadir data-sfo
 
 =back
-
-=head1 BUGS
-
-You should probably specify the -center option, otherwise the map
-apparently won't show up in bbbike (it is there, but not in the active
-visible region). (There could be an -autocenter option calculated from
-the bounding box of the map data)
 
 =cut
 
