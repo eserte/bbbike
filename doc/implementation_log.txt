@@ -1,3 +1,29 @@
+2008-08-24  Slaven Rezic  <slaven@rezic.de>
+
+	* fast_plot_str und osm: Um Tunnels und Brücken mit der "fast"-Version
+	zu unterstützen, werden jetzt auch die richtigen Aufrufe von draw_bridge
+	und draw_tunnel_entrance gemacht. Leider muss ich mit dieser Doppelung
+	von Code leben --- die einzige Alternative ist, schon früher aus XS
+	heraus eine Perl-Subroutine ähnlich plotstr_draw_sub aufzurufen. Damit
+	würde aber auch etwas vom Geschwindigkeitsvorteil verloren gehen.
+
+	* osm2bbd: Labels für Inseln werden anscheinend mit place=island
+	gekennzeichnet (gesehen bei den dalmatinischen Inseln). osm2bbd erzeugt
+	jetzt also die Kategorie "I" in der Datei "wasserstrassen" für solche
+	osm-Items, und bbbike kann damit etwas anfangen.
+
+	Viele von Wolfram berichtete Kleinigkeiten verbessert bzw. seine Patches
+	angewendet (-debug/-verbose, curl ...).
+
+	Weiterhin hat sich die -center-Handhabung nochmal geändert. Bei osm2bbd
+	wird jetzt mit -center ein Hint für den Renderer gesetzt (damit wird
+	"center" in die Metadatei geschrieben; bbbike kann damit umgehen und
+	bevorzugt diesen Wert anstelle der Mitte der Bounding-Box). Die alte
+	Bedeutung von -center erhält man jetzt mit -centerdelta; aber ich
+	glaube, dass man diese Option nicht mehr braucht. Denn diese Option ist
+	jetzt eigentlich nur noch dazu gut, um "kleine" Koordinaten
+	(Koordinaten, die sich in der Nähe von 0,0 befinden) zu erhalten.
+
 2008-08-23  Slaven Rezic  <slaven@rezic.de>
 
 	* chalow: Im Netz habe ich chalow gefunden, ein Programm, mit dem man
