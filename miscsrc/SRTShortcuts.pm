@@ -202,6 +202,13 @@ sub add_button {
 		     add_new_layer("str", "$bbbike_rootdir/misc/abdeckung.bbd");
 		 }
 		],
+		"-",
+		[Button => 'OSM-converted layer',
+		 -state => 'disabled',
+		 -font => $main::font{'bold'},
+		],
+		[Button => "building", -command => sub { add_new_data_layer("str", "_building") }],
+		[Button => "unhandled", -command => sub { add_new_data_layer("str", "_unhandled") }],
 	       ]
 	      ],
 	      [Cascade => 'Berlin/Potsdam coords', -menuitems =>
@@ -258,6 +265,7 @@ sub add_button {
 	     -title => "SRT Shortcuts",
 	    );
     my $menu = $mmf->Subwidget(__PACKAGE__ . "_menu_menu");
+    $menu->configure(-disabledforeground => "black");
     if ($main::devel_host) {
 	my $map_menuitem = $menu->index("Karte");
 	$menu->entryconfigure($map_menuitem,
@@ -367,7 +375,7 @@ sub make_gps_target {
 
 sub add_new_data_layer {
     my($type, $file, %args) = @_;
-    add_new_layer($type, "$bbbike_rootdir/data/$file" . ($main::coord_system ne 'standard' ? '-orig' : ''));
+    add_new_layer($type, "$main::datadir/$file" . ($main::coord_system ne 'standard' ? '-orig' : ''));
 }
 
 # Width support for now only for p layers
@@ -582,7 +590,7 @@ sub default_penalty_fragezeichen {
     require BBBikeEdit;
     $main::bbd_penalty = 1;
     $BBBikeEdit::bbd_penalty_invert = 1;
-    $BBBikeEdit::bbd_penalty_file = "$bbbike_rootdir/data/fragezeichen";
+    $BBBikeEdit::bbd_penalty_file = "$main::datadir/fragezeichen";
 
     BBBikeEdit::build_bbd_penalty_for_search();
 }

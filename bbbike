@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.381 2008/08/24 15:19:32 eserte Exp $
+# $Id: bbbike,v 3.382 2008/08/24 19:49:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -243,7 +243,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.381 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.382 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -2486,6 +2486,7 @@ unless ($skip_features{"wasser"}) {
     $wcm->checkbutton(-label => M"Namen der Gewässer",
 		      -variable => \$str_name_draw{'w'},
 		      -command => sub {
+			  $str_name_draw{'i'} = $str_name_draw{'w'};
 			  pending(1, 'replot-str-w');
 		      },
 		     );
@@ -5556,6 +5557,7 @@ sub define_item_attribs {
     %category_font =
 	(
 	 'W'  => "$sans_serif_font_family %d italic",
+	 'I'  => "$sans_serif_font_family %d italic",
 	 'P'  => "$sans_serif_font_family %d",
 	 'Ae' => "$sans_serif_font_family %d",
 	);
@@ -6350,6 +6352,17 @@ sub generate_plot_functions {
 			    }
 			} elsif ($achtung_photo && grep { $_ eq 'danger' } @addinfo_hin) {
 			    $draw_street_photo->($achtung_photo, "c");
+			} elsif ($abk eq 'w' && $cat_hin eq 'I' && $strname ne '') {
+			    # only draw label
+			    # XXX quick hack, really only needed for osm islands
+			    my %args = (-text => $strname,
+					-tags => ["i-label", $strname],
+					(exists $category_font_color{$category} ? (-fill => $category_font_color{$category}) : ()),
+				    	(exists $category_font{$category} ? (-font => $category_font{$category}) : ()),
+					-font => sprintf($category_font{$cat_hin}, 10),
+					-outlinewidth => 2);
+			    outline_text($c, @coordlist, %args);
+			    return;
 			} elsif ($cat_hin =~ $roundabout_qr) {
 			    $draw_street_photo->($kreisverkehr_photo, "c");
 			} elsif ($cat_hin =~ $viewangle_qr) {

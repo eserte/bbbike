@@ -3272,6 +3272,19 @@ leaving the entry.
 
 =head2 Route
 
+=head3 Route::Descr
+
+=over
+
+=item * (M4)
+
+Die Routenbeschreibung (wird z.B. bei der PDF-Ausgabe verwendet) ist
+nicht lokalisiert. M(...) und Co. verwenden. Es wäre auch schön, wenn
+es auch möglich wäre, convert() eine Option für die Sprache anzugeben.
+Nur wenn diese fehlt, dann wird automatisch ausgewählt.
+
+=back
+
 =head3 Route::GPX
 
 =over
