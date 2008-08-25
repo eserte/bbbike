@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.18 2008/08/03 10:30:23 eserte Exp eserte $
+# $Id: bbbike.cgi,v 9.19 2008/08/25 19:02:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -725,7 +725,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 9.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 9.19 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -2371,11 +2371,12 @@ sub choose_ch_form {
 	} else {
 	    $last_name = $name;
 	}
+	my $html_name = BBBikeCGIUtil::my_escapeHTML($name);
 	print
-	  "<label><input type=radio name=" . $search_type . "name value=\"$name\"",
+	  "<label><input type=radio name=" . $search_type . "name value=\"$html_name\"",
 	  ($use_javascript ? " onclick=\"document.Charform.submit()\"" : ""),
 	  "> ",
-	  $name,
+	  $html_name,
 	  "</label><br>\n";
     }
 
@@ -6256,19 +6257,6 @@ sub choose_all_form {
 	last if !@{$ret->[1]};
 	push(@strlist, $ret->[0]);
     }
-#XXX del:
-#     my %trans = ('Ä' => 'A',
-# 		 'Ö' => 'O',
-# 		 'Ü' => 'U',
-# 		 'ä' => 'a',
-# 		 'ö' => 'o',
-# 		 'ü' => 'u',
-# 		 'ß' => 'ss',
-# 		 'é' => 'e',
-# 		 'è' => 'e',
-# 		 'á' => 'a',
-# 		);
-#    my $trans_rx = "[".join("",keys %trans)."]";
     my %trans = %BBBikeUtil::uml_german_locale;
     if ($locale_set) {
 	@strlist = sort @strlist;
@@ -6307,7 +6295,8 @@ sub choose_all_form {
 	    $last_initial = ($trans{$initial} ? $trans{$initial} : $initial);
 	    print "<a name=\"$last_initial\"><b>$last_initial</b></a><br>";
 	}
-	print "$strname<br>";
+	my $html_strname = BBBikeCGIUtil::my_escapeHTML($strname);
+	print "$html_strname<br>";
     }
 
 #     for my $type (qw(s u)) {
@@ -7001,7 +6990,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/08/03 10:30:23 $';
+    my $cgi_date = '$Date: 2008/08/25 19:02:23 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

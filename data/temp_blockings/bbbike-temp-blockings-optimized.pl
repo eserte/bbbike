@@ -1252,16 +1252,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_009744',
-         'until' => 1219615199,
-         'text' => 'Hildebrandtstr. (Tiergarten) in beiden Richtungen zwischen Tiergartenstr. und Reichpietschufer Veranstaltung, Straße vollständig gesperrt (bis 24.08., 21 Uhr)',
-         'from' => 1219523435,
-         'id' => 1451,
-         'data' => 'userdel	2::temp 7333,11179 7438,11505
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_009757',
          'until' => undef,
