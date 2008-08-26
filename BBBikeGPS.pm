@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.45 2008/08/03 23:15:04 eserte Exp eserte $
+# $Id: BBBikeGPS.pm,v 1.46 2008/08/26 19:41:26 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2008 Slaven Rezic. All rights reserved.
@@ -158,10 +158,11 @@ $gpsman_data_dir = "$FindBin::RealBin/misc/gps_data"
 use vars qw($cfc_mapping);
 
 use Class::Struct;
-struct('PathGraphElem' => [map { ($_ => "\$") }
-			   (qw(wholedist wholetime dist time legtime
-			       speed alt grade coord accuracy))
-			  ]);
+undef &BBBikeGPS::PathGraphElem::new;
+struct('BBBikeGPS::PathGraphElem' => [map { ($_ => "\$") }
+				      (qw(wholedist wholetime dist time legtime
+					  speed alt grade coord accuracy))
+				     ]);
 
 use constant DEFAULT_MAX_GAP => 2; # minutes
 
@@ -679,7 +680,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
 			    }
 
 			    my $max_acc = max($acc, $last_acc);
-			    my $path_graph_elem = new PathGraphElem;
+			    my $path_graph_elem = BBBikeGPS::PathGraphElem->new;
 			    $path_graph_elem->wholedist($whole_dist);
 			    $path_graph_elem->wholetime($whole_time);
 			    $path_graph_elem->dist($dist);

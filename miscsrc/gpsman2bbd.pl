@@ -49,6 +49,7 @@ sub gpsman2bbd {
     my $destpoints = "points.bbd";
     my $breakmin = 5;
     my $breakdist = 0;
+    my $breakinfrequent;
     my @pcat  = (qw(GPSp GPSp~ GPSp~~ GPSp?));
     my @scat  = (qw(GPSs GPSs~ GPSs~~ GPSs?));
     my $destmaptoken = "standard";
@@ -65,6 +66,7 @@ sub gpsman2bbd {
 		    "destpoints=s" => \$destpoints,
 		    "breakmin=f" => \$breakmin,
 		    "breakdist=i" => \$breakdist,
+		    "breakinfrequent!" => \$breakinfrequent,
 		    "pcat=s" => \$pcat[0],
 		    "scat=s" => \$scat[0],
 		    "scat1=s" => \$scat[1],
@@ -81,7 +83,7 @@ sub gpsman2bbd {
 	die <<EOF;
 Usage: $0 [-destdir directory] [-deststreets basename.bbd]
           [-destpoints basename.bbd] [-breakmin minutes]
-          [-breakdist meters]
+          [-breakdist meters] [-breakinfrequent]
 	  [-destmap maptoken] [-addprefix]
           [-pcat cat] [-scat cat] [-scat1 cat] [-scat2 cat]
 	  [-forcepoints] [-update] [-[no]fail]
@@ -93,6 +95,7 @@ Usage: $0 [-destdir directory] [-deststreets basename.bbd]
 -destpoints:  basename of destination file for points, default: $destpoints
 -breakmin:    break lines if gap greater than (by default) $breakmin minutes
 -breakdist:   break lines if gap greater than ... meters (by default: disabled)
+-breakinfrequent: break lines if frequency is low (>500m) and vehicle is not a plane
 -pcat:        category (or color #rrggbb) for points
 -scat:        category (or color #rrggbb) for streets
 -scat1:       category for inaccurate streets (-scat2 for more inaccuracy)
@@ -284,6 +287,11 @@ EOF
 		}
 	    };
 
+	    my $frequency = $gps->TrackAttrs->{"srt:frequency"};
+	    if ($frequency) {
+		$frequency =~ s{\D}{}; # remove "m"
+	    }
+
 	    my $last_wpt;
 	    foreach my $wpt (@{ $gps->Points }) {
 		# XXX hmmm... maybe allow float values everywhere???
@@ -325,6 +333,7 @@ EOF
 		    if (defined $time && $last_wpt) {
 			my($last_x,$last_y,$last_time) = @$last_wpt;
 		        my $legtime = $time-$last_time;
+			my $break_here = 0;
 			if (abs($legtime) > 60*$breakmin) {
 			    $push_streets->();
 		        } else {
@@ -333,6 +342,9 @@ EOF
 			        if ($dist > $breakdist) {
 				    $push_streets->();
 				}
+			    }
+			    if (!$last_is_inaccurate && $breakinfrequent && $frequency && $frequency >= 500 && $vehicle ne 'plane') {
+				$push_streets->();
 			    }
 		        }
 		        if ($last_is_inaccurate == 0 && $inaccurate != $last_is_inaccurate) {

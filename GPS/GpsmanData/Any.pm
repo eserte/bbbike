@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Any.pm,v 1.4 2008/06/23 21:46:58 eserte Exp $
+# $Id: Any.pm,v 1.5 2008/08/26 22:21:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GPS::GpsmanData::Any;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 use GPS::GpsmanData;
 
@@ -133,28 +133,32 @@ sub load_gpx {
 		    $trkseg = GPS::GpsmanData->new;
 		    $trkseg->Type($trkseg->TYPE_TRACK);
 		    $trkseg->Name($name);
+		    $trkseg->TrackAttrs({});
 		    my @data;
 		    for my $trkpt ($trk_child->children) {
-			next if $trkpt->name ne 'trkpt';
-			my($lat, $lon) = $latlong2xy_twig->($trkpt);
-			my $wpt = GPS::Gpsman::Waypoint->new;
-			$wpt->Ident("");
-			$wpt->Accuracy(0);
-			$wpt->Latitude($lat);
-			$wpt->Longitude($lon);
-			for my $trkpt_child ($trkpt->children) {
-			    if ($trkpt_child->name eq 'ele') {
-				$wpt->Altitude($trkpt_child->children_text);
-			    } elsif ($trkpt_child->name eq 'time') {
-				my $time = $trkpt_child->children_text;
-				my $gpsman_time = $gpsman_time_to_time->($time);
-				$wpt->Comment($gpsman_time);
+			my $trkpt_name = $trkpt->name;
+			if ($trkpt_name eq 'trkpt') {
+			    my($lat, $lon) = $latlong2xy_twig->($trkpt);
+			    my $wpt = GPS::Gpsman::Waypoint->new;
+			    $wpt->Ident("");
+			    $wpt->Accuracy(0);
+			    $wpt->Latitude($lat);
+			    $wpt->Longitude($lon);
+			    for my $trkpt_child ($trkpt->children) {
+				if ($trkpt_child->name eq 'ele') {
+				    $wpt->Altitude($trkpt_child->children_text);
+				} elsif ($trkpt_child->name eq 'time') {
+				    my $time = $trkpt_child->children_text;
+				    my $gpsman_time = $gpsman_time_to_time->($time);
+				    $wpt->Comment($gpsman_time);
+				}
 			    }
+
+			    push @data, $wpt;
+			} elsif ($trkpt_name =~ m{^srt:}) { # XXX this assumes xmlns:srt, which does not have to be correct!
+			    $trkseg->TrackAttrs->{$trkpt_name} = $trkpt->children_text;
 			}
-
-			push @data, $wpt;
 		    }
-
 		    $trkseg->Track(\@data);
 		}
 	    }

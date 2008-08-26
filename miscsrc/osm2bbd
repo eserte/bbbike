@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd,v 1.46 2008/08/24 19:49:23 eserte Exp $
+# $Id: osm2bbd,v 1.47 2008/08/26 21:11:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -796,7 +796,7 @@ if ($parsefor) {
 		    )) {
 	touch $file;
     }
-    for (qw(cyclepath misc path route tram kfzverkehr scenic)) {
+    for (qw(cyclepath misc path route tram kfzverkehr scenic ferry)) {
 	touch "comments_$_";
     }
     if (!-d "temp_blockings") {

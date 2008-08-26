@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.123 2008/08/16 09:48:54 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.123 2008/08/16 09:48:54 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -1842,6 +1842,7 @@ use Msg qw(frommain);
     }
 }
 
+undef &BBBikeEdit::new;
 struct('top'      => "\$",
        'toplevel' => "\$", # toplevel from redisplay_top
        'datadir'  => "\$",
@@ -1852,6 +1853,7 @@ struct('top'      => "\$",
        'file2base' => "\$",
       );
 
+undef &LinePartInfo::new;
 struct(LinePartInfo => [ 'basefile' => "\$",
 			 'line'     => "\$",
 			 'filetype' => "\$",

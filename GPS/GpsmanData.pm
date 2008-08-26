@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.55 2008/08/23 09:43:21 eserte Exp $
+# $Id: GpsmanData.pm,v 1.56 2008/08/26 22:21:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005,2007 Slaven Rezic. All rights reserved.
@@ -44,7 +44,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.55 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.56 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -760,12 +760,24 @@ sub header_as_string {
     $s;
 }
 
+sub _track_attrs_as_string {
+    my($self) = @_;
+    my $s = "";
+    if ($self->TrackAttrs) {
+	my $ta = $self->TrackAttrs;
+	while(my($key, $val) = each %$ta) {
+	    $s .= "\t$key=$val";
+	}
+    }
+    $s;
+}
+
 # XXX not complete, only waypoints/tracks
 sub body_as_string {
     my $self = shift;
     my $s = "";
     if ($self->Type == TYPE_WAYPOINT) {
-	$s .= "!W:\n";
+	$s .= "!W:" . $self->_track_attrs_as_string . "\n";
 	foreach my $wpt (@{ $self->Waypoints }) {
 	    $s .= join("\t",
 		       $wpt->Ident,
@@ -782,7 +794,7 @@ sub body_as_string {
 	if (defined $self->Name) {
 	    $s .= "\t" . $self->Name;
 	}
-	$s .= "\n";
+	$s .= $self->_track_attrs_as_string . "\n";
 	foreach my $wpt (@{ $self->Track }) {
 	    $s .= join("\t",
 		       (defined $wpt->Ident ? $wpt->Ident : ""),
@@ -797,7 +809,7 @@ sub body_as_string {
 	if (defined $self->Name) {
 	    $s .= "\t" . $self->Name;
 	}
-	$s .= "\n";
+	$s .= $self->_track_attrs_as_string . "\n";
 	foreach my $wpt (@{ $self->Track }) {
 	    $s .= join("\t",
 		       $wpt->Ident,
