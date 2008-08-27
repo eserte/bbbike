@@ -115,7 +115,7 @@ Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 Gr¸nau/B179	1 22092,999 22105,888 22075,779 22007,711 21861,802 21894,881 21990,979 22092,999
 Dorfplatz	1 21051,-533 21022,-566 20873,-608 20836,-577 21011,-529 21051,-533
 B96a (Kfz-Straﬂe)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21536,801 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
-Choriner Str.	1 10480,13945 10466,13855 10445,13752
+Choriner Str.	1 10489,13942 10480,13871 10445,13752
 Olivaer Platz	1 4239,10358 4172,10406 4157,10418
 Platz S (Hundekehlestr.)	1 2277,7705 2206,7637
 Platz S (Hundekehlestr.)	1 2161,7685 2222,7718 2277,7705
@@ -722,6 +722,7 @@ Halenseestr.	1s:q2 2277,9801 2167,10004 2121,10089 1988,10328 1957,10426
 # gesperrte Wegf¸hrung (nicht mˆglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Lindenstr.: Betonblˆcke	3nocross 9757,10708 9801,10807 9927,11072
 Oranienburger Str.: Straﬂenbahnhaltestelle	3nocross 9215,13392 9281,13374 9415,13315
 Brauhausstr. -> Prenzlauer Promenade: Straﬂenbahntrasse	3 12211,16688 12017,16734 12046,16568
 Schnellerstr.: Mittelstreifen	3nocross 16713,6839 16674,6885 16568,7009

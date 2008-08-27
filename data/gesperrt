@@ -100,7 +100,7 @@ Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 Grünau/B179	1 22092,999 22105,888 22075,779 22007,711 21861,802 21894,881 21990,979 22092,999
 Dorfplatz	1 21051,-533 21022,-566 20873,-608 20836,-577 21011,-529 21051,-533
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21536,801 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
-Choriner Str.	1 10480,13945 10466,13855 10445,13752
+Choriner Str.	1 10489,13942 10480,13871 10445,13752
 Olivaer Platz	1 4239,10358 4172,10406 4157,10418
 Platz S (Hundekehlestr.)	1 2277,7705 2206,7637
 Platz S (Hundekehlestr.)	1 2161,7685 2222,7718 2277,7705
@@ -605,6 +605,12 @@ Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
 Behrenstr./Bebelplatz	1s 9801,12245 9743,12239 9700,12234 9626,12227
 Halenseestr.	1s 2277,9801 2167,10004 2121,10089 1988,10328 1957,10426
+Betonblöcke	3nocross::ignrte 9757,10708 9801,10807 9927,11072
+Markgrafenstr. -> Am Berlin Museum: Betonblöcke	3::igndisp 9780,10970 9801,10807 10016,10755
+Markgrafenstr. -> Lindenstr.: Betonblöcke	3::igndisp 9780,10970 9801,10807 9927,11072
+Am Berlin Museum -> Markgrafenstr.: Betonblöcke	3::igndisp 10016,10755 9801,10807 9780,10970
+Am Berlin Museum -> Lindenstr.: Betonblöcke	3::igndisp 10016,10755 9801,10807 9757,10708
+Lindenstr. -> Am Berlin Museum: Betonblöcke	3::igndisp 9927,11072 9801,10807 10016,10755
 Straßenbahnhaltestelle	3nocross::ignrte 9215,13392 9281,13374 9415,13315
 Oranienburger Str. -> Linienstr.: Straßenbahnhaltestelle	3::igndisp 9215,13392 9281,13374 9296,13397
 Linienstr. -> Oranienburger Str.: Straßenbahnhaltestelle	3::igndisp 9296,13397 9281,13374 9415,13315
@@ -1031,8 +1037,8 @@ Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3::igndisp 11712,14868
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 10746,13673 10640,13700 10569,13719 10450,13751 10445,13752
 Angermünder Str. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10703,13832 10640,13700 10746,13673
 Torstr. -> Angermünder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 10569,13719 10640,13700 10703,13832
-Torstr. -> Christinenstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10450,13751 10569,13719 10593,13765
-Christinenstr. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10593,13765 10569,13719 10640,13700
+Torstr. -> Christinenstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10450,13751 10569,13719 10599,13775
+Christinenstr. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10599,13775 10569,13719 10640,13700
 Linksabbiegen verboten (und unbequem)	3nocross::ignrte 8188,9610 8095,9639 7941,9686
 Yorckstr. -> Katzlerstr.: Linksabbiegen verboten (und unbequem)	3::igndisp 8188,9610 8095,9639 8035,9437
 Katzlerstr. -> Yorckstr.: Linksabbiegen verboten (und unbequem)	3::igndisp 8035,9437 8095,9639 7941,9686

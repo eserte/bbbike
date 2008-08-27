@@ -938,16 +938,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_009262',
-         'until' => 1220306399,
-         'text' => 'An der Spandauer Brücke (Mitte) Richtung Spandauer Str. zwischen Rosenthaler Str. und Spandauer Str. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Anfang 09.2008)',
-         'from' => 1217625647,
-         'id' => 1393,
-         'data' => 'userdel	1::inwork 10294,13070 10336,13037 10371,13006 10418,12922 10398,12903 10309,12854
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -982,15 +973,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1220133600,
-         'text' => 'L 793 Schönhagen - Ludwigsfelde Brücke über den Faulen Graben bei Blankensee Brückenneubau Vollsperrung 17.07.2008-30.08.2008 ',
-         'from' => 1216159200,
-         'id' => 1404,
-         'data' => 'userdel	2::inwork -7219,-19011 -7172,-19223
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1220997600,
          'text' => 'B 320 Lieberose - Lamsfeld OD Lamsfeld Grundhafter Ausbau Vollsperrung 14.07.2008-09.09.2008 ',
@@ -1044,16 +1027,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_009398',
-         'until' => undef,
-         'text' => 'Stendaler Str. (Hellersdorf) stadteinwärts zwischen Janusz-Korczak-Str. und Hellersdorfer Str. Veranstaltung, Fahrtrichtung gesperrt',
-         'from' => undef,
-         'id' => 1417,
-         'data' => 'userdel	1::temp 23960,15021 23993,14797
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1229727600,
          'text' => 'B 102 Umgehungsstr. Brücke über die Nieplitz in der OD Treuenbrietzen Brückenneubau Vollsperrung 21.07.2008-19.12.2008 ',
@@ -1102,16 +1076,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_009457',
-         'until' => 1220219999,
-         'text' => 'Am Friedrichshain (Friedrichshain) Richtung Greifswalder Str. zwischen Einmündung Am Friedrichshain und Friedenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2008)',
-         'from' => 1216755974,
-         'id' => 1425,
-         'data' => 'userdel	q4::inwork; 11772,13624 11723,13630
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1229900400,
@@ -1185,15 +1150,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1219701600,
-         'text' => 'L 362 Müncheberg - Wulkow OL Wulkow Instandsetzung Durchlass Vollsperrung 11.08.2008-25.08.2008 ',
-         'from' => 1218319200,
-         'id' => 1442,
-         'data' => 'userdel	q4::inwork 66171,19651 66523,19497
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1220306400,
          'text' => 'L 601 Berliner Str. OL Finsterwalde, zw. B 96 Bahnhofstr. und Str. der Jugend Sängerfest Vollsperrung 28.08.2008-01.09.2008 ',
@@ -1242,54 +1199,74 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_009756',
-         'until' => 1219629600,
-         'text' => 'Berliner Str. (Pankow) in beiden Richtungen zwischen Florastr. und Granitzstr. Baustelle, Straße vollständig gesperrt (bis 25.08., 04 Uhr)',
-         'from' => 1219523390,
-         'id' => 1450,
-         'data' => 'userdel	2::inwork 10846,17992 10859,17854
-',
-         'type' => 'gesperrt'
-       },
        undef,
-       {
-         'source_id' => 'IM_009757',
-         'until' => undef,
-         'text' => 'Johannisstr. (Mitte) in beiden Richtungen zwischen Friedrichstr. und Kalkscheunenstr. Veranstaltung, Straße vollständig gesperrt',
-         'from' => undef,
-         'id' => 1452,
-         'data' => 'userdel	2::temp 9396,13176 9245,13162
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_009721',
-         'until' => 1220219999,
-         'text' => 'Kreuznacher Str. (Wilmersdorf) in beiden Richtungen zwischen Schildhornstr. und Bonner Str. Baustelle, Straße vollständig gesperrt (bis Ende 08.2008)',
-         'from' => 1219523521,
-         'id' => 1453,
-         'data' => 'userdel	2::inwork 4153,6703 4226,6712 4309,6709 4369,6708
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_009745',
-         'until' => 1219640400,
-         'text' => 'Schwarzer Weg (Mitte) in beiden Richtungen zwischen Habersaathstr. und Invalidenstr. Veranstaltung, Straße vollständig gesperrt (bis 25.08., 7 Uhr)',
-         'from' => 1219523565,
-         'id' => 1454,
-         'data' => 'userdel	2::temp 8574,13666 8429,13903
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'source_id' => 'IM_009715',
          'until' => 1220219999,
-         'text' => 'Wichertstr. (Prenzlauer Berg) in Richtung Schönhauser Allee zwischen Prenzlauer Allee und Stahlheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2008)',
-         'from' => 1219523603,
+         'text' => 'Wichertstr. (Prenzlauer Berg) in Richtung Prenzlauer Allee zwischen Stahlheimer Str. und Prenzlauer Allee Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2008)',
+         'from' => 1219879557,
          'id' => 1455,
-         'data' => 'userdel	1::inwork 11941,15586 11744,15720 11581,15831 11455,15916
+         'data' => 'userdel	1::inwork 11455,15916 11581,15831 11744,15720 11941,15586
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009790',
+         'until' => 1222811999,
+         'text' => 'Suermondtstr. (Hohenschönhausen) Richtung Hauptstr. zwischen Degnerstr. und Konrad-Wolff-Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2008)',
+         'from' => 1219879654,
+         'id' => 1456,
+         'data' => 'userdel	1::inwork 16654,16167 16961,16042
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009763',
+         'until' => 1293836399,
+         'text' => 'Wendenschloßstr. (Köpenick) stadteinwärts zwischen Salvador-Allende-Str. und Müggelheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2010)',
+         'from' => 1219879715,
+         'id' => 1457,
+         'data' => 'userdel	1::inwork 23451,4877 23363,4846 22893,4532 22862,4511 22832,4491 22740,4415 22686,4310
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1220220000,
+         'text' => 'L 054 Bahnhofstraße OL Vetschau, Bahnübergang Gleisarbeiten Vollsperrung 25.08.2008-31.08.2008 ',
+         'from' => 1219528800,
+         'id' => 1458,
+         'data' => 'userdel	2::inwork 58183,-67564 58018,-67843
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1220133600,
+         'text' => 'B 158 Berliner Str. OD Leuenberg Einbau Deckschicht Vollsperrung 29.08.2008-30.08.2008 ',
+         'from' => 1219874400,
+         'id' => 1459,
+         'data' => 'userdel	q4::inwork 42781,33687 43093,33781
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1222120800,
+         'text' => 'K 6917 K.-Marx-/F.-Engelsstraße OL Borkheide Bahnübergang zw. Birkenhain u. Str.d. Frieden Bauarbeiten am Gleiskörper Vollsperrung 08.09.2008-22.09.2008 ',
+         'from' => 1220738400,
+         'id' => 1460,
+         'data' => 'userdel	2::inwork -26249,-20121 -26258,-20094 -26809,-18383
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1225494000,
+         'text' => 'L 373 Richard-Sonnenburg-Straße OL Bri.-Finkenheerd ab KP Bhf-/Sonnenburgstr., 500m Ri. OA Straßenbau Vollsperrung 02.09.2008-31.10.2008 ',
+         'from' => 1220220000,
+         'id' => 1461,
+         'data' => 'userdel	2::inwork 89098,-16962 90109,-16411
 ',
          'type' => 'gesperrt'
        }

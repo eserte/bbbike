@@ -11799,7 +11799,7 @@ userdel auto	3 7291,10506 7033,10396 7003,10513
 EOF
      },
      { from  => 1217625647, # 2008-08-01 23:20
-       until => 1220306399, # 2008-09-01 23:59
+       until => 1219879178, # 2008-09-01 23:59 1220306399 --- war vor Ort, es gibt nur eine "Gegenrichtung hat Vorrang"-Stelle
        text  => 'An der Spandauer Brücke (Mitte) Richtung Spandauer Str. zwischen Rosenthaler Str. und Spandauer Str. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Anfang 09.2008)',
        type  => 'gesperrt',
        source_id => 'IM_009262',
@@ -11891,7 +11891,7 @@ userdel	1::inwork 9279,18724 9457,18612
 EOF
      },
      { from  => 1216159200, # 2008-07-16 00:00
-       until => 1220133600, # 2008-08-31 00:00
+       until => 1219880595, # 2008-08-31 00:00 1220133600
        text  => 'L 793 Schönhagen - Ludwigsfelde Brücke über den Faulen Graben bei Blankensee Brückenneubau Vollsperrung 17.07.2008-30.08.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -12000,8 +12000,8 @@ EOF
 userdel	2::inwork -2854,-32632 -2701,-32785
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1219879480, # undef
+       until => 1219879485, # XXX undef
        text  => 'Stendaler Str. (Hellersdorf) stadteinwärts zwischen Janusz-Korczak-Str. und Hellersdorfer Str. Veranstaltung, Fahrtrichtung gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_009398',
@@ -12074,7 +12074,7 @@ userdel	q4::inwork 18138,-39957 18019,-40241
 EOF
      },
      { from  => 1216755974, # 2008-07-22 21:46
-       until => 1220219999, # 2008-08-31 23:59
+       until => 1219878814, # 2008-08-31 23:59 1220219999
        text  => 'Am Friedrichshain (Friedrichshain) Richtung Greifswalder Str. zwischen Einmündung Am Friedrichshain und Friedenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2008)',
        type  => 'handicap',
        source_id => 'IM_009457',
@@ -12308,8 +12308,8 @@ EOF
 userdel	2::temp 7333,11179 7438,11505
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1219879749, #  undef
+       until => 1219879753, # XXX undef
        text  => 'Johannisstr. (Mitte) in beiden Richtungen zwischen Friedrichstr. und Kalkscheunenstr. Veranstaltung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_009757',
@@ -12318,7 +12318,7 @@ userdel	2::temp 9396,13176 9245,13162
 EOF
      },
      { from  => 1219523521, # 2008-08-23 22:32
-       until => 1220219999, # 2008-08-31 23:59
+       until => 1219879770, # 2008-08-31 23:59 1220219999
        text  => 'Kreuznacher Str. (Wilmersdorf) in beiden Richtungen zwischen Schildhornstr. und Bonner Str. Baustelle, Straße vollständig gesperrt (bis Ende 08.2008)',
        type  => 'gesperrt',
        source_id => 'IM_009721',
@@ -12335,13 +12335,63 @@ EOF
 userdel	2::temp 8574,13666 8429,13903
 EOF
      },
-     { from  => 1219523603, # 2008-08-23 22:33
+     { from  => 1219879557, # 2008-08-28 01:25
        until => 1220219999, # 2008-08-31 23:59
-       text  => 'Wichertstr. (Prenzlauer Berg) in Richtung Schönhauser Allee zwischen Prenzlauer Allee und Stahlheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2008)',
+       text  => 'Wichertstr. (Prenzlauer Berg) in Richtung Prenzlauer Allee zwischen Stahlheimer Str. und Prenzlauer Allee Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2008)',
        type  => 'gesperrt',
        source_id => 'IM_009715',
        data  => <<EOF,
-userdel	1::inwork 11941,15586 11744,15720 11581,15831 11455,15916
+userdel	1::inwork 11455,15916 11581,15831 11744,15720 11941,15586
+EOF
+     },
+     { from  => 1219879654, # 2008-08-28 01:27
+       until => 1222811999, # 2008-09-30 23:59
+       text  => 'Suermondtstr. (Hohenschönhausen) Richtung Hauptstr. zwischen Degnerstr. und Konrad-Wolff-Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_009790',
+       data  => <<EOF,
+userdel	1::inwork 16654,16167 16961,16042
+EOF
+     },
+     { from  => 1219879715, # 2008-08-28 01:28
+       until => 1293836399, # 2010-12-31 23:59
+       text  => 'Wendenschloßstr. (Köpenick) stadteinwärts zwischen Salvador-Allende-Str. und Müggelheimer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2010)',
+       type  => 'gesperrt',
+       source_id => 'IM_009763',
+       data  => <<EOF,
+userdel	1::inwork 23451,4877 23363,4846 22893,4532 22862,4511 22832,4491 22740,4415 22686,4310
+EOF
+     },
+     { from  => 1219528800, # 2008-08-24 00:00
+       until => 1220220000, # 2008-09-01 00:00
+       text  => 'L 054 Bahnhofstraße OL Vetschau, Bahnübergang Gleisarbeiten Vollsperrung 25.08.2008-31.08.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 58183,-67564 58018,-67843
+EOF
+     },
+     { from  => 1219874400, # 2008-08-28 00:00
+       until => 1220133600, # 2008-08-31 00:00
+       text  => 'B 158 Berliner Str. OD Leuenberg Einbau Deckschicht Vollsperrung 29.08.2008-30.08.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 42781,33687 43093,33781
+EOF
+     },
+     { from  => 1220738400, # 2008-09-07 00:00
+       until => 1222120800, # 2008-09-23 00:00
+       text  => 'K 6917 K.-Marx-/F.-Engelsstraße OL Borkheide Bahnübergang zw. Birkenhain u. Str.d. Frieden Bauarbeiten am Gleiskörper Vollsperrung 08.09.2008-22.09.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -26249,-20121 -26258,-20094 -26809,-18383
+EOF
+     },
+     { from  => 1220220000, # 2008-09-01 00:00
+       until => 1225494000, # 2008-11-01 00:00
+       text  => 'L 373 Richard-Sonnenburg-Straße OL Bri.-Finkenheerd ab KP Bhf-/Sonnenburgstr., 500m Ri. OA Straßenbau Vollsperrung 02.09.2008-31.10.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 89098,-16962 90109,-16411
 EOF
      },
     );

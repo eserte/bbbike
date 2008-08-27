@@ -728,3 +728,6 @@ Winterfeldtstr. -> Alvenslebenstr.: Mittelstreifen	3::igndisp 7369,10018 7539,99
 Winterfeldtstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 7369,10018 7539,9970 7579,10183
 Potsdamer Str. -> Alvenslebenstr.: Mittelstreifen	3::igndisp 7579,10183 7539,9970 7648,9944
 Potsdamer Str. -> Winterfeldtstr.: Mittelstreifen	3::igndisp 7526,9782 7539,9970 7369,10018
+Mittelstreifen	3nocross::ignrte 10793,13785 10832,13877 10906,13950
+Fehrbelliner Str. -> Schönhauser Allee: Mittelstreifen	3::igndisp 10695,13952 10832,13877 10906,13950
+Schönhauser Allee -> Fehrbelliner Str.: Mittelstreifen	3::igndisp 10793,13785 10832,13877 10695,13952
