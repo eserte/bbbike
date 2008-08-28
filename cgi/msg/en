@@ -9,6 +9,8 @@ return
      "Via ist optional" => "Via is optional",
      "Zurück" => "Back",
      "Weiter" => "Go on",
+     "start" => "start", # image
+     "via" => "via", # image
      "ziel" => "dest", # image
      "Start" => "start", # sometimes forced uppercase in the code, also via, destination
      "Startstra&szlig;e" => "start street",
@@ -41,6 +43,7 @@ return
      "Hauptstraßen bevorzugen" => "prefer main roads",
      "nur Hauptstraßen benutzen" => "use only main roads",
      "Hauptstraßen ohne Radwege/Busspuren meiden" => "avoid main roads without cycle paths/bus lanes",
+     "Unbeleuchtete Wege vermeiden" => "Avoid unlit streets",
      "Bevorzugter Straßenbelag" => "Road surface",
      "Kopfsteinpflaster vermeiden" => "avoid cobble stones",
      "nur sehr gute Beläge bevorzugen (rennradtauglich)" => "use only very good surfaces", # XXX rennradtauglich?
@@ -120,4 +123,8 @@ Bildgr&ouml;&szlig;e, Bildformat und Detailreichtum %s bis %s kB. PDFs sind %s b
      "Südwest" => "South west",
      "Süd" => "South",
      "Südost" => "South east",
+     "und" => "and",
+     "in" => "in",
+     "(nur in Berlin/Potsdam erfasst)" => "(only available in Berlin/Potsdam)",
+     "Stadt" => "city",
     };

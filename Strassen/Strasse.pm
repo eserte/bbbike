@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.34 2008/07/16 18:32:03 eserte Exp $
+# $Id: Strasse.pm,v 1.35 2008/08/28 20:19:39 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.34 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.35 $ =~ /(\d+)\.(\d+)/);
 
 package Strasse;
 use strict;
@@ -237,7 +237,7 @@ sub strip_bezirk {
 my %city2subparts;
 sub strip_bezirk_perfect {
     my($str, $city) = @_;
-    if (!exists $city2subparts{$city}) {
+    if (!exists $city2subparts{$city} && defined $city) {
 	my $mod = qq{Geography::} . $city;
 	eval qq{ require $mod };
 	if ($@) {

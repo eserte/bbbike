@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.24 2008/01/17 22:40:11 eserte Exp $
+# $Id: Util.pm,v 1.25 2008/08/28 21:04:31 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Util;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.25 $ =~ /(\d+)\.(\d+)/);
 
 use strict;
 use Config;
@@ -257,13 +257,13 @@ sub try_cache {
 	my $filename = $filename .
 	    ($cache_type =~ /^(Storable|CDB_File)$/ ? "_$Config{byteorder}" : "") . cache_ext($cache_type);
 
-	if (($^O =~ /^(MSWin32|cygwin)$/ || $main::devel_host)
-	    && eval {
-		require Digest::MD5;
-		require File::Basename;
-		1;
-	    }) {
-	    # Prevent long filenames
+	if (eval {
+	    require Digest::MD5;
+	    require File::Basename;
+	    1;
+	}) {
+	    # Prevent long filenames (very short on cygwin/MSWin32,
+	    # still short (< 256) on Unix systems)
 	    $filename = File::Basename::dirname($filename). "/" . Digest::MD5::md5_hex(File::Basename::basename($filename)) . ".cache";
 	}
 

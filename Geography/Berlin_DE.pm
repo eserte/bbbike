@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlin_DE.pm,v 1.28 2008/08/02 10:57:43 eserte Exp eserte $
+# $Id: Berlin_DE.pm,v 1.29 2008/08/28 20:17:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2006 Slaven Rezic. All rights reserved.
@@ -253,6 +253,8 @@ sub parse_street_type_nr {
     }
     ($type, undef, $do_round, $image);
 }
+
+sub cgi_list_all_size { "(ca. 150 kB)" }
 
 1;
 

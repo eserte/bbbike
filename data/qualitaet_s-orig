@@ -4556,8 +4556,10 @@ Wehlener Str.: Asphalt	Q0 14673,17003 14535,17003
 Trarbacher Str.: Beton	Q1 14671,17214 14672,17085 14673,17003 14673,16895
 #: by: ^^^
 #: by: Karin Hoffmann: vvv
-Amalienpark: mäßiges Kopfsteinpflaster	Q2 10860,18650 10950,18499
-Amalienpark: mäßiges Kopfsteinpflaster	Q2 10950,18499 10905,18671
+#: corrected_by: Matthias Bauer ("mäßiges" -> "schlechtes") vvv
+Amalienpark: schlechtes Kopfsteinpflaster	Q3 10860,18650 10950,18499
+Amalienpark: schlechtes Kopfsteinpflaster	Q3 10950,18499 10905,18671
+#: corrected_by ^^^
 #: confirmed_by: albrecht_martina:
 Eichenstr. (Niederschönhausen): guter Asphalt	Q0 9300,19949 9408,19968 9788,20035 10095,20090
 #: note: laut ADFC-Karte gut geeignet

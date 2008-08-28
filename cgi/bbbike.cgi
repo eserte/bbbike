@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.19 2008/08/25 19:02:23 eserte Exp $
+# $Id: bbbike.cgi,v 9.24 2008/08/28 21:32:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -706,9 +706,14 @@ if ($lang ne "") {
 
 sub M ($) {
     my $key = shift;
-    $msg && exists $msg->{$key} ? $msg->{$key} : $key;
-}
 
+    if ($msg && exists $msg->{$key}) {
+	$msg->{$key};
+    } else {
+        warn "Unknown translation: $key\n" if $VERBOSE && $msg;
+	$key;
+    }
+}
 
 if ($VERBOSE) {
     $StrassenNetz::VERBOSE    = $VERBOSE;
@@ -725,7 +730,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 9.19 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 9.24 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -2213,11 +2218,27 @@ function " . $type . "char_init() {}
     print "<hr>";
 
     if (!$smallform) {
+	my $cityname;
+	my $list_all_size;
+	my $geo = get_geography_object();
+	if ($geo) {
+	    if ($geo->can("cityname")) {
+		$cityname = $geo->cityname;
+		if ($cityname eq 'Berlin') {
+		    # special case:
+		    $cityname = "Berlin " . M("und") . " Potsdam";
+		}
+	    }
+	    if ($geo->can("cgi_list_all_size")) {
+		$list_all_size = $geo->cgi_list_all_size;
+	    }
+	}
 	print q{<div style="text-align:right;">};
 	print window_open("$bbbike_script?all=1", "BBBikeAll",
 			  "dependent,height=500,resizable," .
 			  "screenX=500,screenY=30,scrollbars,width=250")
-	    . M("Liste aller bekannten Stra&szlig;en in Berlin und Potsdam") . "</a> (ca. 120 kB)";
+	    . M("Liste aller bekannten Stra&szlig;en") . ($cityname ? " " . M("in") . " " . $cityname : "") ."</a>" .
+		($list_all_size ? " $list_all_size" : '');
 	print q{</div>};
 	print "<hr>";
     }
@@ -2228,6 +2249,8 @@ function " . $type . "char_init() {}
 }
 
 sub berlinmap_with_choices {
+    return if $no_berlinmap;
+
     my($type, $matchref) = @_;
     print "<div id=${type}mapbelow style=\"position:relative;visibility:hidden;\">";
     print "<img src=\"$bbbike_images/berlin_small$berlin_small_suffix.gif\" border=0 width=$berlin_small_width height=$berlin_small_height alt=\"\">";
@@ -2554,7 +2577,7 @@ sub get_kreuzung {
 
     http_header(@weak_cache);
     my %header_args;
-    $header_args{-script} = {-src => $bbbike_html . "/bbbike_result.js",
+    $header_args{-script} = {-src => $bbbike_html . "/bbbike_result.js?v=1.13",
 			    };
     header(%header_args);
 
@@ -2899,7 +2922,7 @@ EOF
 EOF
     if ($include_outer_region) {
 	print <<EOF;
-<td style="font-size:smaller;">(nur in Berlin/Potsdam erfasst)</td>
+<td style="font-size:smaller;">@{[ M("(nur in Berlin/Potsdam erfasst)") ]}</td>
 EOF
     }
     if (1) {
@@ -2908,7 +2931,7 @@ EOF
 EOF
 	if ($include_outer_region) {
 	    print <<EOF;
-<td style="font-size:smaller;">(nur in Berlin/Potsdam erfasst)</td>
+<td style="font-size:smaller;">@{[ M("(nur in Berlin/Potsdam erfasst)") ]}</td>
 EOF
 	}
     } else {
@@ -2931,7 +2954,7 @@ EOF
 <option @{[ $winter_checked->("WI1") ]}>@{[ M("schwach") ]}
 <option @{[ $winter_checked->("WI2") ]}>@{[ M("stark") ]}
 </select></td>
- <td style="vertical-align:bottom"><span class="experimental">@{[ M("Experimentell") ]}</span><small><a target="BBBikeHelp" href="$bbbike_html/help.html#winteroptimization" onclick="show_help('winteroptimization'); return false;">@{[ M("Was ist das?") ]}</a></small></td>
+ <td style="vertical-align:bottom"><span class="experimental">@{[ M("Experimentell") ]}</span><small><a target="BBBikeHelp" href="$bbbike_html/help.html#winteroptimization" onclick=show_help@{[ $lang ? "_$lang" : "" ]}('winteroptimization'); return false;">@{[ M("Was ist das?") ]}</a></small></td>
 </tr>
 EOF
     }
@@ -2940,7 +2963,7 @@ EOF
 <tr>
  <td>@{[ M("Unbekannte Straﬂen mit einbeziehen") ]}:</td>
  <td><input type=checkbox name="pref_fragezeichen" value=yes @{[ $default_fragezeichen?"checked":"" ]}></td>
- <td style="vertical-align:bottom"><small><a target="BBBikeHelp" href="$bbbike_html/help.html#fragezeichen" onclick="show_help('fragezeichen'); return false;">@{[ M("Was ist das?") ]}</a></small></td>
+ <td style="vertical-align:bottom"><small><a target="BBBikeHelp" href="$bbbike_html/help.html#fragezeichen" onclick="show_help@{[ $lang ? "_$lang" : "" ]}('fragezeichen'); return false;">@{[ M("Was ist das?") ]}</a></small></td>
 </tr>
 EOF
     }
@@ -4007,7 +4030,7 @@ sub display_route {
 # -->
 # EOF
 #     }
-    $header_args{-script} = {-src => $bbbike_html . "/bbbike_result.js",
+    $header_args{-script} = {-src => $bbbike_html . "/bbbike_result.js?v=1.13",
 			    };
     $header_args{-printmode} = 1 if $printmode;
     header(%header_args, -onLoad => "init_search_result()");
@@ -5922,6 +5945,15 @@ sub header {
     my $head = [];
     push @$head, $q->meta({-http_equiv => "Content-Script-Type",
 			   -content => "text/javascript"});
+    push @$head, $q->meta({-name => "language",
+			   -content => $lang ? $lang : "de"});
+    if ($city eq 'Berlin_DE') {
+	push @$head, $q->meta({-name => "description",
+			       -content => ($lang eq 'en'
+					    ? 'BBBike is a route planner for cyclists in Berlin'
+					    : 'BBBike ist ein Fahrradroutenplaner f¸r Berlin')
+			      });
+    }
     # XXX check the standards:
     push @$head, $q->meta({-name => 'revisit-after',
 			   -content => "7 days"});
@@ -6679,6 +6711,16 @@ sub outside_berlin {
     $result;
 }
 
+sub get_geography_object {
+    return if !defined $city;
+    my $geo_mod = "Geography::" . $city;
+    if (eval qq{ require $geo_mod; }) {
+	$geo_mod->new;
+    } else {
+	undef;
+    }
+}
+
 sub nice_crossing_name {
     my(@c) = @_;
     my @c_street;
@@ -6990,7 +7032,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/08/25 19:02:23 $';
+    my $cgi_date = '$Date: 2008/08/28 21:32:11 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

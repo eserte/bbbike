@@ -1,4 +1,4 @@
-// $Id: bbbike_result.js,v 1.19 2007/06/15 21:15:37 eserte Exp $
+// $Id: bbbike_result.js,v 1.20 2008/08/28 21:32:53 eserte Exp $
 // (c) 2003 Slaven Rezic. All rights reserved.
 
 function test_temp_blockings_set() {
@@ -192,6 +192,19 @@ function show_help(what) {
 	alert("Keine Hilfe f¸r das Thema " + what);
     }
 }
+
+function show_help_en(what) {
+    if (what == "winteroptimization") {
+	alert("Erfahrungsgem‰ﬂ werden bei Schnee und Eis Hauptstraﬂen am ehesten ger‰umt. Deshalb wird bei dieser Einstellung verst‰rkt auf Hauptstraﬂen optimiert und Nebenstraﬂen gemieden. Weitere Eigenschaften flieﬂen in eine schlechtere Bewertung einer Straﬂe ein: benutzungspflichtige Radwege, Kopfsteinpflasterstraﬂen, Straﬂenbahnen auf der Fahrbahn und Br¸cken.");
+    } else if (what == "fragezeichen") {
+	alert("If you choose this option then streets with unknown suitability for cyclists will also be used in the route search.");
+    } else if (what == "") {
+	alert("No help topic given");
+    } else {
+	alert("No help for the topic " + what);
+    }
+}
+
 
 function init_search_result() {
     enable_size_details_buttons();

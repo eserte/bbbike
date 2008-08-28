@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.59 2008/08/28 00:00:29 eserte Exp $
+# $Id: cgi.t,v 1.60 2008/08/28 21:32:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -506,7 +506,7 @@ for my $cgiurl (@urls) {
 	ok($res->is_success, "Click on all streets link")
 	    or diag $res->as_string;
 	my $content = uncompr($res);
-	BBBikeTest::like_long_data($content, qr/B(?:ö|&ouml;|&#246;)lschestr.*Brachvogelstr.*(?:Ö|&Ouml;|&#214;)schelbronner.Weg.*Pallasstr/s, "Correct sort order", ".html");
+	BBBikeTest::like_long_data($content, qr/B(?:ö|&ouml;|&#246;)lschestr.*Brachvogelstr.*(?:Ö|&Ouml;|&#214;)schelbronner(?:.|&#160;)Weg.*Pallasstr/s, "Correct sort order", ".html");
     }
 
  SKIP: {

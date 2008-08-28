@@ -3691,6 +3691,13 @@ like in the GD output.
 
 =over
 
+=item * (M4)
+
+The cache files should use Digest::MD5 everywhere if the module is
+available (in core since 5.8.0). Maybe the cache filename should be
+modified to give a clue about city and user, that is preserve b_de and
+user id, digest only the rest of the filename.
+
 =item * (M5)
 
 The behaviour of PreserveComments in Strassen->new is currently
