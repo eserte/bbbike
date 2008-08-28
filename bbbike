@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.384 2008/08/24 20:49:50 eserte Exp $
+# $Id: bbbike,v 3.385 2008/08/27 23:52:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -243,7 +243,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.384 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.385 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -629,7 +629,7 @@ if ($lowmem) {
 ## DEBUG_END
 
 my %skip_features;
-use vars qw($city_obj);
+use vars qw($city_obj $dataset_title);
 if (!defined $city && !defined $datadir) {
     $city = "Berlin";
     $country = "DE";
@@ -641,7 +641,13 @@ if (defined $city) {
 	set_datadir($city_obj->datadir, -clearold => 1);
 	%global_search_args = $city_obj->search_args
 	    if $city_obj->can("search_args");
-	$no_original_datadir = $city ne "Berlin"; # XXX Was bedeutet das genau?
+	if ($city eq "Berlin") {
+	    $no_original_datadir = 0; # XXX Was bedeutet das genau?
+	    $dataset_title = undef;
+	} else {
+	    $no_original_datadir = 1; # XXX Was bedeutet das genau?
+	    $dataset_title = $city . " " . $country;
+	}
 	if ($city_obj->can("scrollregion") && $city_obj->scrollregion) {
 	    @scrollregion = $city_obj->scrollregion;
 	    $normal_scrollregion = $scrollregion[2]-$scrollregion[0];
@@ -657,10 +663,7 @@ if (defined $city) {
 } elsif ($datadir) {
     set_datadir($datadir, -clearold => 1);
     $no_original_datadir = 1;
-} else {
-    warn "XXX Should never happen anymore";
-    # default (Berlin)
-    set_datadir("$FindBin::RealBin/data");
+    $dataset_title = basename($datadir);
 }
 
 # define_item_attribs should be called after determining the $city 
@@ -1048,7 +1051,10 @@ if (defined $init_scale_massstab) {
     }
 }
 
-$top->title("$progname $VERSION" . ($VERSION =~ /devel/i ? " [$PROG_REVISION]" : ""));
+$top->title("$progname $VERSION" .
+	    ($VERSION =~ /devel/i ? " [$PROG_REVISION]" : "") .
+	    ($dataset_title ? " [$dataset_title]" : "")
+	   );
 
 my $has_icon = 0;
 my $set_toplevel_icon;
