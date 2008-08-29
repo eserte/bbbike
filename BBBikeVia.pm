@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVia.pm,v 1.19 2008/01/20 10:28:17 eserte Exp $
+# $Id: BBBikeVia.pm,v 1.20 2008/08/29 20:16:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeVia;
 
 use strict;
 use vars qw($VERSION $move_index $add_point);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use BBBikeGlobalVars;
@@ -53,6 +53,14 @@ sub BBBikeVia::menu_entries {
     $menu->radiobutton(-label => M"Start/Vias/Ziel verschieben",
 		       -variable => \$map_mode,
 		       -value    => "MM_VIA_MOVE",
+		       -command  => sub {
+			   set_map_mode();
+			   BBBikeVia::move_via();
+		       },
+		      );
+    $menu->radiobutton(-label => M"Start verschieben",
+		       -variable => \$map_mode,
+		       -value    => "MM_START_MOVE",
 		       -command  => sub {
 			   set_map_mode();
 			   BBBikeVia::move_via();
@@ -137,6 +145,8 @@ sub BBBikeVia::delete_via_flags {
 sub BBBikeVia::move_via {
     if ($map_mode eq "MM_GOAL_MOVE") {
 	return BBBikeVia::move_via_2($c, "ziel", -1);
+    } elsif ($map_mode eq 'MM_START_MOVE') {
+	return BBBikeVia::move_via_2($c, "start", 0);
     }
     set_cursor("via_move");
     $set_route_point{$map_mode} = sub {

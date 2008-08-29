@@ -11967,9 +11967,9 @@ EOF
 userdel	2::temp 9494,15998 9646,15737
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Friedrich-Karl-Str., Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Ottokarstr. und Wenckebachstr. Baustelle, Straße vollständig gesperrt',
+     { from  => 1220035493, # 2008-08-29 20:44
+       until => 1220306399, # 2008-09-01 23:59
+       text  => 'Friedrich-Karl-Str., Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Ottokarstr. und Wenckebachstr. Baustelle, Straße vollständig gesperrt (bis Anfang 09.2008)',
        type  => 'gesperrt',
        source_id => 'IM_009406',
        data  => <<EOF,
@@ -12018,7 +12018,7 @@ userdel	2::inwork -25322,-35457 -24932,-35664
 EOF
      },
      { from  => 1216504800, # 2008-07-20 00:00
-       until => 1225494000, # 2008-11-01 00:00
+       until => 1220037184, # 2008-11-01 00:00 1225494000
        text  => 'L 016 Fehrbellin - AS Neuruppin Brücke über den Schleusengraben zw. Fehrbellin u. Dammkrug Brückenbauarbeiten Vollsperrung 21.07.2008-31.10.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -12386,12 +12386,37 @@ EOF
 userdel	2::inwork -26249,-20121 -26258,-20094 -26809,-18383
 EOF
      },
-     { from  => 1220220000, # 2008-09-01 00:00
+     { from  => 1221948000, # 2008-09-21 00:00
        until => 1225494000, # 2008-11-01 00:00
-       text  => 'L 373 Richard-Sonnenburg-Straße OL Bri.-Finkenheerd ab KP Bhf-/Sonnenburgstr., 500m Ri. OA Straßenbau Vollsperrung 02.09.2008-31.10.2008 ',
+       text  => 'L 373 Richard-Sonnenburg-Straße OL Bri.-Finkenheerd ab KP Bhf-/Sonnenburgstr., 500m Ri. OA Straßenbau Vollsperrung 22.09.2008-31.10.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 89098,-16962 90109,-16411
+EOF
+     },
+     { from  => 1220035590, # 2008-08-29 20:46
+       until => 1220220000, # 2008-09-01 00:00
+       text  => 'Turmstraße (Wedding) in beiden Richtungen, zwischen Stromstraße und Waldstr. Veranstaltung, Straße gesperrt (bis 1.9.2008, 0.00 Uhr) ',
+       type  => 'gesperrt',
+       source_id => 'IM_009776',
+       data  => <<EOF,
+userdel	2::temp 6240,13324 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359 5560,13382 5368,13406
+EOF
+     },
+     { from  => 1219874400, # 2008-08-28 00:00
+       until => 1220220000, # 2008-09-01 00:00
+       text  => 'B 101 OD Elsterwerda, zw. Bahnunterführ.u. Heidaer Str.. Deckenerneuerung Vollsperrung 29.08.2008-31.08.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 19074,-103082 18928,-103699 18887,-104083
+EOF
+     },
+     { from  => 1219788000, # 2008-08-27 00:00
+       until => 1224108000, # 2008-10-16 00:00
+       text  => 'L 435 Oelsen - Grunow (B246) zw. OA Oelsen u. Krzg. Lindenstraße i.d. OL Grunow Grundhafter Ausbau Vollsperrung 28.08.2008-15.10.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 77489,-28251 77555,-28060 78085,-27152
 EOF
      },
     );

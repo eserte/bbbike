@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.205 2008/08/24 20:40:52 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.206 2008/08/29 20:40:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2008 Slaven Rezic. All rights reserved.
@@ -144,6 +144,7 @@ sub custom_draw_dialog {
     custom_draw(@_); # return file name
 }
 
+my $custom_draw_directory;
 sub custom_draw {
     my $linetype = shift;
     my $abk      = shift or die "Missing abk";
@@ -157,6 +158,8 @@ sub custom_draw {
     my $name_draw = eval '\%' . $linetype . "_name_draw";
     my $coord_input;
     my $center_beginning = 0;
+
+    $custom_draw_directory = $datadir if !defined $custom_draw_directory;
 
     require File::Basename;
 
@@ -197,6 +200,7 @@ sub custom_draw {
 	    my $weiter = 0;
 	    my $pe;
 	    Tk::grid($pe = $f->PathEntry(-textvariable => \$file,
+					 (!defined $file ? (-initialdir => $custom_draw_directory) : ()),
 					 -selectcmd => sub {
 					     $pe->focusNext;
 					 },
@@ -277,6 +281,9 @@ sub custom_draw {
 	    $draw->{$abk} = 0;
 	    return;
 	}
+
+	$custom_draw_directory = File::Basename::dirname($file);
+
     }
 
     # XXX not nice, but it works...

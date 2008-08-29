@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd,v 1.48 2008/08/28 20:05:07 eserte Exp $
+# $Id: osm2bbd,v 1.49 2008/08/29 20:33:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -121,6 +121,7 @@ my $p = XML::LibXML->new;
 my %unhandled;
 my %out;
 my %resolve_node_later;
+my %resolved;
 my @bbox_wgs84;
 
 my $do_amenity = sub {
@@ -825,12 +826,18 @@ sub resolve_node_later {
 sub resolve_node_now {
     my($osm_layer, $bbbike_layer, $bbbike_cat, $nodes_ref) = @_;
     my $r = $resolve_node_later{$osm_layer};
+    my $resolved = $resolved{$osm_layer};
+    my $normalize_name = {ubahnhof => \&normalize_name_ubahnhof,
+			  sbahnhof => \&normalize_name_sbahnhof,
+			 }->{$bbbike_layer};
     do{warn "no $osm_layer layer"; return} if !$r;
     for my $coord (map { $node2ll{$_} } @$nodes_ref) {
 	if (exists $r->{$coord}) {
 	    my $name = $r->{$coord};
+	    $name = $normalize_name->($name) if $normalize_name;
 	    push @{$out{$bbbike_layer}}, [$name, [$coord], $bbbike_cat];
 	    delete $r->{$coord};
+	    $resolved->{$coord}++;
 	}
     }
 }
@@ -839,17 +846,18 @@ sub resolve_node_fallback {
     my $have_unresolved = 0;
     for (keys %resolve_node_later) {
 	if (keys %{$resolve_node_later{$_}}) {
-	    $have_unresolved++;
+	    $have_unresolved++; # XXX maybe, may be some already in %resolved
 	    last;
 	}
     }
     return if !$have_unresolved;
-    return if !$debug;
 
-    print STDERR "unresolved:\n";
+    print STDERR "unresolved:\n" if $debug;
     for my $osm_layer (keys %resolve_node_later) {
-	print STDERR "  $osm_layer:\n";
+	print STDERR "  $osm_layer:\n" if $debug;
+	my $resolved = $resolved{$osm_layer};
 	while(my($coord, $name) = each %{ $resolve_node_later{$osm_layer} }) {
+	    next if $resolved->{$coord};
 	    if ($osm_layer eq 'railway') {
 		my($file, $cat);
  		if ($name =~ s{^U(\s+|-Bhf)}{}) {
@@ -860,12 +868,24 @@ sub resolve_node_fallback {
 		    ($file, $cat) = ("rbahnhof", "RA");
  		}
 		push @{$out{$file}}, [$name, [$coord], $cat];
-		print STDERR "    fallback for $name -> $cat $file\n";
+		print STDERR "    fallback for $name -> $cat $file\n" if $debug;
 	    } else {
-		print STDERR "    NO FALLBACK for $name ($coord)\n";
+		print STDERR "    NO FALLBACK for $name ($coord)\n" if $debug;
 	    }
 	}
     }
+}
+
+sub normalize_name_ubahnhof {
+    my $name = shift;
+    $name =~ s{^U(\s+|-Bhf)}{};
+    $name;
+}
+
+sub normalize_name_sbahnhof {
+    my $name = shift;
+    $name =~ s{^S(\s+|-Bhf)}{};
+    $name;
 }
 
 sub output_data {

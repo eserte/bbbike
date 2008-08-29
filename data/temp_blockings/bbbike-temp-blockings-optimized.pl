@@ -1000,9 +1000,9 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        {
          'source_id' => 'IM_009406',
-         'until' => undef,
-         'text' => 'Friedrich-Karl-Str., Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Ottokarstr. und Wenckebachstr. Baustelle, Straße vollständig gesperrt',
-         'from' => undef,
+         'until' => 1220306399,
+         'text' => 'Friedrich-Karl-Str., Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Ottokarstr. und Wenckebachstr. Baustelle, Straße vollständig gesperrt (bis Anfang 09.2008)',
+         'from' => 1220035493,
          'id' => 1413,
          'data' => 'userdel	2::inwork 9357,5601 9147,5534 8955,5549 8870,5557 8767,5571
 ',
@@ -1037,15 +1037,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1225494000,
-         'text' => 'L 016 Fehrbellin - AS Neuruppin Brücke über den Schleusengraben zw. Fehrbellin u. Dammkrug Brückenbauarbeiten Vollsperrung 21.07.2008-31.10.2008 ',
-         'from' => 1216504800,
-         'id' => 1419,
-         'data' => 'userdel	2::inwork -32778,47235 -33506,45278
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1222812000,
          'text' => 'L 243 Wegguner Str. OD Boitzenburg, zw. Goethestr. und Puschkinstr. Kanal- und Straßenbau Vollsperrung 21.07.2008-30.09.2008 ',
@@ -1263,12 +1255,40 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        },
        {
          'until' => 1225494000,
-         'text' => 'L 373 Richard-Sonnenburg-Straße OL Bri.-Finkenheerd ab KP Bhf-/Sonnenburgstr., 500m Ri. OA Straßenbau Vollsperrung 02.09.2008-31.10.2008 ',
-         'from' => 1220220000,
+         'text' => 'L 373 Richard-Sonnenburg-Straße OL Bri.-Finkenheerd ab KP Bhf-/Sonnenburgstr., 500m Ri. OA Straßenbau Vollsperrung 22.09.2008-31.10.2008 ',
+         'from' => 1221948000,
          'id' => 1461,
          'data' => 'userdel	2::inwork 89098,-16962 90109,-16411
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009776',
+         'until' => 1220220000,
+         'text' => 'Turmstraße (Wedding) in beiden Richtungen, zwischen Stromstraße und Waldstr. Veranstaltung, Straße gesperrt (bis 1.9.2008, 0.00 Uhr) ',
+         'from' => 1220035590,
+         'id' => 1462,
+         'data' => 'userdel	2::temp 6240,13324 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359 5560,13382 5368,13406
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1220220000,
+         'text' => 'B 101 OD Elsterwerda, zw. Bahnunterführ.u. Heidaer Str.. Deckenerneuerung Vollsperrung 29.08.2008-31.08.2008 ',
+         'from' => 1219874400,
+         'id' => 1463,
+         'data' => 'userdel	q4::inwork 19074,-103082 18928,-103699 18887,-104083
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1224108000,
+         'text' => 'L 435 Oelsen - Grunow (B246) zw. OA Oelsen u. Krzg. Lindenstraße i.d. OL Grunow Grundhafter Ausbau Vollsperrung 28.08.2008-15.10.2008 ',
+         'from' => 1219788000,
+         'id' => 1464,
+         'data' => 'userdel	q4::inwork 77489,-28251 77555,-28060 78085,-27152
+',
+         'type' => 'handicap'
        }
      
 );
