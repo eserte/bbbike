@@ -428,6 +428,11 @@ Perl/Tk: updateWidget) method.
 The -lazy option seems to cause a big memory leak. Unless this is
 solved for sure there should be no standard-user-visible -lazy option.
 
+=item * (H5) (bug)
+
+-lazy does not work with bbd files using map:polar. I assume that the
+grid algorithm is broken wrt to map!=standard.
+
 =item * (H2)
 
 Dynamisches Zeichnen (weniger/mehr) von Kartenelementen anhand der

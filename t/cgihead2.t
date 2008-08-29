@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.20 2008/02/24 23:54:18 eserte Exp $
+# $Id: cgihead2.t,v 1.21 2008/08/29 05:47:48 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -74,6 +74,9 @@ plan tests => 1 + 3 * (scalar(map { @$_ } values %url) + @compat_urls);
 
 my $ua = LWP::UserAgent->new;
 $ua->agent('BBBike-Test/1.0');
+
+# seems to be necessary (for my system? for the freebsd server?)
+$ENV{FTP_PASSIVE} = 1;
 
 for my $url (@compat_urls) {
     check_url($url);

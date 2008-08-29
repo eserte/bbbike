@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.60 2008/08/07 04:57:51 eserte Exp $
+# $Id: BBBikeVar.pm,v 1.61 2008/08/28 22:35:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000-2008 Slaven Rezic. All rights reserved.
@@ -59,7 +59,7 @@ $BBBIKE_DIRECT_WAP = 'http://bbbike.radzeit.de/cgi-bin/wapbbbike.cgi';
 # Sourceforge IDs
 $SF_BBBIKE_GROUP_ID = 19142;
 $SF_BBBIKE_PACKAGE_ID = 14052;
-$SF_BBBIKE_LATEST_RELEASE_ID = 377515; # change for new releases
+$SF_BBBIKE_LATEST_RELEASE_ID = 571125; # this is 3.16, change for new releases!
 
 # Distribution directory for scripts. Unfortunately there's no directory
 # index available anymore at sourceforge...

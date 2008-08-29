@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.28 2008/05/24 17:39:57 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.29 2008/08/28 22:37:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005,2006,2008 Slaven Rezic. All rights reserved.
@@ -27,7 +27,7 @@ sub teaser {
 				#'teaser_dobli',
 			       ];
     $teasers_mandatory{"de"} = [
-				teaser_sternfahrt_adfc(),
+				#teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
 				#teaser_perltk_newrelease(),
 				teaser_perltk(),
 				teaser_beta(),
@@ -42,8 +42,8 @@ sub teaser {
 			       ];
     $teasers_optional{"en"} = [],
     $teasers_mandatory{"en"} = [
-				teaser_perltk_newrelease(),
-				#teaser_perltk(),
+				#teaser_perltk_newrelease(),
+				teaser_perltk(),
 				teaser_mapserver(),
 				#teaser_collecting_tracks(),
 				#teaser_sternfahrt(),
