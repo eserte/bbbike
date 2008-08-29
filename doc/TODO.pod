@@ -2851,6 +2851,13 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (M4) (bug)
+
+Einige Einstellungen in bbbike.cgi.config scheinen bei der
+Apache::Registry-Operation permanent über Requests bestehen zu
+bleiben. Gesehen bei: @PLZ::plzfile, vielleicht auch datadirs.
+Lokalisieren?
+
 =item * (E3) (bug)
 
 mamboforge.net war am 2008-08-16 nicht erreichbar. Ist die Seite
