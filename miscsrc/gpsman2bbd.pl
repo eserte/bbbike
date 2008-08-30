@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman2bbd.pl,v 2.14 2008/08/22 18:05:11 eserte Exp eserte $
+# $Id: gpsman2bbd.pl,v 2.15 2008/08/30 06:18:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -287,7 +287,7 @@ EOF
 		}
 	    };
 
-	    my $frequency = $gps->TrackAttrs->{"srt:frequency"};
+	    my $frequency = $gps->TrackAttrs ? $gps->TrackAttrs->{"srt:frequency"} : undef;
 	    if ($frequency) {
 		$frequency =~ s{\D}{}; # remove "m"
 	    }
