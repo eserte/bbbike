@@ -70,7 +70,7 @@ Altstadt Köpenick	1 22377,4836 22381,4752
 Altstadt Köpenick	1 22445,4758 22439,4838
 #: XXX Einbahnstraßenregelung sah allerdings provisorisch aus
 Landjägerstr.	1 22740,4415 22542,4485 22495,4523
-Alt-Köpenick	1 22138,4661 22196,4847
+Alt-Köpenick	1 22138,4661 22161,4734 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20675,17515 20748,17661 20832,17824 20912,17872
 Knoten Märkische/Landsberger Allee	1 19175,14968 19364,15045 19496,15113 19567,15134 19694,15149 19735,15155
@@ -182,7 +182,7 @@ Baerwaldstr.	1 10490,10080 10503,10046 10480,9949 10408,9800 10345,9764
 Dittersbacher Weg	1 7859,3181 7865,3344
 Anzengruberstr.	1 13042,8395 12852,8366 12689,8289
 Nalepastr. am Rundfunkgebäude	2 17076,8443 17042,7748
-Kirchstr.	1 22196,4847 22234,4789 22243,4710
+Kirchstr.	1 22196,4847 22234,4789 22243,4710 22284,4653 22312,4593
 Kietzer Str.	1 22312,4593 22358,4521 22396,4464
 Ontarioseestr.	1 18577,10023 18408,10041 18339,10048
 Degnerstr. (außer Tram)	1 16434,15580 16464,15665
@@ -536,6 +536,7 @@ Hönower Wiesenweg: Bahngelände	2 17271,9159 17308,9090
 #: by: where_are_you_between:
 Hasselwerderstr	1 18268,5739 18164,5701 18023,5623
 #: by: Norbert Rupsch: vvv
+#: confirmed_by: srt
 Adlershofer Str.	1 21633,4355 21585,4459
 Adlershofer Str.	1 21633,4355 21649,4111 21655,4091 21679,4059
 #: by: ^^^
@@ -566,10 +567,15 @@ Ingelheimer Str.	1 18884,8586 18951,8574 19030,8559
 Gleyeweg	1 17565,8197 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
 Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14472
 Murtzaner Ring	1 19818,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20059,14441
+Rosenstr.	1 22284,4653 22212,4655 22138,4661
+Laurenzstr.	1 22243,4710 22161,4734
 ######################################################################
 #
 # Potsdam
 #
+Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
+#: add_fragezeichen: Ist die Leistikowstr. für Radfahrer in entgegengesetzter Richtung geöffnet?
+Leistikowstr.	1 -12512,810 -12302,718
 #: XXX_outdoor: überprüfen! Können Radfahrer vielleicht die linke Straßenseite nutzen?
 Humboldtring/Hans-Marwitza-Ring: Hochstraße	3nocross -11399,-1339 -11461,-1424 -11540,-1543
 #: by: Christoph Ewert:
@@ -761,7 +767,7 @@ Blumberger Damm: Mittelstreifen	3nocross 21694,15802 21670,15646 21647,15496
 Blumberger Damm: Straßenbahntrasse	3nocross 21232,15465 21187,15350 21163,15289
 Schönholzer Str.: Straßenbahn auf der Fahrbahn	3nocross 10089,18180 10054,18210 9909,18333
 #: by: stefan: (sw-...)
-Müggelheimer Str.: Straßenbahntrasse	3nocross 22686,4310 22812,4236 22967,4144
+Müggelheimer Str.: Straßenbahntrasse	3nocross 22686,4310 22812,4236 22965,4124
 #: note: Luftbild: vvv
 Prenzlauer Promenade.: Straßenbahntrasse	3nocross 12054,16517 12077,16380 12097,16263
 Petersburger Str.: Straßenbahntrasse	3nocross 13631,12799 13579,12904 13537,13003

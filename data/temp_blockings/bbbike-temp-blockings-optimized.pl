@@ -664,15 +664,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1220133600,
-         'text' => 'L 029 Zehlendorf - Schmachtenhagen Brücke über die Bäke in der OD Schmachtenhagen Brückenneubau Vollsperrung 18.02.2008-30.08.2008 ',
-         'from' => 1203202800,
-         'id' => 1291,
-         'data' => 'userdel	2::inwork 4659,40821 4562,40526
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -963,15 +955,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1220133600,
-         'text' => 'L 141 Breddin - Kümmernitz OD Breddin Straßenneubau Vollsperrung 17.07.2008-30.08.2008 ',
-         'from' => 1216159200,
-         'id' => 1402,
-         'data' => 'userdel	q4::inwork -70100,51862 -70753,51862 -70922,51604
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1009,24 +993,8 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1220133600,
-         'text' => 'K 6518 Liebenberg - Bergsdorf OD Liebenberg, zw. B167 und OA Kanal- und Straßenbau Vollsperrung 17.07.2008-30.08.2008 ',
-         'from' => 1216159200,
-         'id' => 1415,
-         'data' => 'userdel	q4::inwork -386,54165 -588,54317 -667,54494
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1220133600,
-         'text' => 'K 7221 Bahnhofstr. Brücke über Kreuzfeldgraben in der OD Woltersdorf Brückenneubau Vollsperrung 17.07.2008-30.08.2008 ',
-         'from' => 1216159200,
-         'id' => 1416,
-         'data' => 'userdel	2::inwork -2854,-32632 -2701,-32785
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        {
          'until' => 1229727600,
@@ -1059,15 +1027,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1220133600,
-         'text' => 'B 115 Baruth - Jüterbog OD Baruth, Kreisverkehr Sanierungsarbeiten Vollsperrung 22.07.2008-30.08.2008 ',
-         'from' => 1216591200,
-         'id' => 1424,
-         'data' => 'userdel	q4::inwork 18138,-39957 18019,-40241
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1153,15 +1113,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1220133600,
-         'text' => 'B 246 Belzig - Wiesenburg OD Klein Glien Straßenbau Vollsperrung 14.08.2008-30.08.2008 ',
-         'from' => 1218578400,
-         'id' => 1445,
-         'data' => 'userdel	q4::inwork -48903,-31556 -49841,-31648
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1246399200,
          'text' => 'B 273 A 11 - Wandlitz zw. Abzw. Bernau und Wandlitz Rückau u. Erneuerung B273 Vollsperrung 18.08.2008-30.06.2009 ',
@@ -1235,15 +1187,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1220133600,
-         'text' => 'B 158 Berliner Str. OD Leuenberg Einbau Deckschicht Vollsperrung 29.08.2008-30.08.2008 ',
-         'from' => 1219874400,
-         'id' => 1459,
-         'data' => 'userdel	q4::inwork 42781,33687 43093,33781
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1222120800,
          'text' => 'K 6917 K.-Marx-/F.-Engelsstraße OL Borkheide Bahnübergang zw. Birkenhain u. Str.d. Frieden Bauarbeiten am Gleiskörper Vollsperrung 08.09.2008-22.09.2008 ',

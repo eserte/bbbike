@@ -112,7 +112,7 @@ Waldbühne - Havelchaussee: Qualität (wahrscheinlich Waldwege, Q2 bis Q3)? noch i
 Fährweg - Niederneuendorfer Allee: Kleingartenanlage, Qualität?	? -1864,17785 -1854,17805 -1871,17842 -1914,17899 -2011,17986 -2039,18049 -2066,18097 -2105,18119 -2143,18153 -2166,18199 -2177,18279 -2197,18307 -2229,18312 -2750,18333
 Steinhöfel - Poratz - Ringenwalde: Qualität?	? 37482,74476 37025,74400 36800,74137 36612,74162 35775,73750 35469,73594 35125,73487 33687,73037 33075,72750 32750,72787 32600,73062 31862,73112 30712,72625 30244,72598
 Glambeck - Templin: ist das hier die in Glambeck ausgeschilderte Strecke? Qualität?	? 37292,68602 36000,69075 35962,70325 35600,70962 35112,70912 35080,71176
-Am Neuen Garten: Qualität, anscheinend (zumindest im südlichen Abschnitt) Kopfsteinpflaster (Q2)? Einbahnstraße im nördlichen Abschnitt für Radfahrer?	? -12576,107 -12341,594 -12323,635 -12302,718 -12276,831 -12212,1201
+Am Neuen Garten: Qualität zwischen Glumestr. und Cecilienhof?	? -12302,718 -12276,831 -12212,1201
 Grenzallee Potsdam: Qualität?	? -13854,2025 -14315,2135
 Verlängerte Amtsstr.: Qualität? 	? -15251,1200 -15161,1780
 Lindenallee: Qualität? laut "Berliner Umland" witterungsabhängige Strecke; laut "mobil-potsdam.de" teils eine "Promenade", teils betoniert 	? -15161,1780 -15132,1992 -15290,2665 -15459,2946
@@ -563,11 +563,7 @@ Bestensee - Hintersiedlung: Qualität?	? 26437,-18650 26650,-18912 26987,-19262 2
 Glienicker Horn: ist diese Sackgasse für die Öffentlichkeit zugänglich und für Radfahrer befahrbar? Qualität? Existiert vielleicht auch eine Verbindung zur Glienicker Brücke?	? -11014,342 -10857,128
 Kolonieweg (Kleingärten am Pfingstberg): Qualität, wahrscheinlich unbefestiger Weg?	? -12633,1484 -12665,1665
 Höhenweg: Qualität (wahrscheinlich Kopfsteinpflaster), Steigung?	? -12334,1324 -12421,1601 -12511,1680 -12665,1665
-Glumestr.: Qualität?	? -12506,607 -12341,594
-Leistikowstr.: Qualität?	? -12518,774 -12302,718
 Langhansstr.: Qualität?	? -12276,831 -12394,870 -12325,1145 -12410,1159
-Kleine Weinmeisterstr.: Qualität?	? -12618,296 -12655,385 -12717,440 -12807,441
-Persiusstr.: Qualität?	? -12519,575 -12659,599 -12744,573 -12811,533
 Hessestr.: Qualität?	? -12655,385 -12649,472 -12744,573 -12781,663
 Bruno-Taut-Str.: Qualität	? -13067,1506 -12912,1511
 Graf-von-Schwerin-Str.: Qualität zwischen Erich-Arendt-Str. und Bruno-Taut-Str.?	? -13125,1508 -13067,1506
@@ -1077,12 +1073,6 @@ Moosstr., Wohngebiet: Qualität? Einbahnstraße Richtung Süden, auch für Radfahrer
 Moosstr., Wohngebiet: Qualität? Einbahnstraße Richtung Norden, auch für Radfahrer?	? 19245,4931 19241,4958 19236,5025 19233,5076 19210,5150
 Moosstr., Wohngebiet: Qualität?	? 19294,5033 19236,5025
 Moosstr., Wohngebiet: Qualität?	? 19306,4969 19241,4958
-Farnstr.: Qualität?	? 19402,4900 19384,5010 19328,5188
-Erikastr.: Qualität?	? 19500,4919 19477,5048 19424,5217
-Eisblumensteig: Qualität?	? 19579,4931 19576,4986 19553,5079 19541,5100 19520,5176 19524,5201 19534,5242
-Weiderichstr.: Qualität?	? 19744,5063 19814,5056 19838,5048 19901,5015
-Weiderichplatz: Qualität? Einbahnstraße?	? 19814,5056 19805,5025 19816,5015 19830,5019 19838,5048
-Silbergrasweg: Qualität? Existiert für Radfahrer eine Durchfahrt zur Oberspreestr.?	? 19686,4894 19760,4907 19858,4960 19901,5015 19926,5055 19940,5090
 Johanna-Tesch-Str.: Qualität?	? 19715,5185 19743,5271 19756,5313 19928,5365 20030,5334 19998,5226 19930,5247 19919,5214 19743,5271
 Allmersweg: Qualität?	? 17855,5236 17789,5189
 Greifstr.: Qualität?	? 17906,5170 17854,5131 17780,5086
@@ -1454,11 +1444,11 @@ Travemünder Str.: Qualität?	? 8695,16525 8759,16665 8759,16684
 Stockholmer Str.: Qualität?	? 8759,16684 8783,16710 8844,16863
 Fußgängerbrücke: Für Radfahrer befahrbar? Existieren Rampen oder Treppen? Qualität?	? 13192,21697 13046,21734 13008,21783
 Blumenthalstr.: Qualität südlich der Uhlandstr. (fängt auch mit Kopfsteinpflaster an)?	? 9120,20015 9159,19818 9177,19745 9195,19644 9214,19533 9231,19440 9249,19351 9258,19290
+Rosenstr.: Ist die Rosenstr. zwischen Jägerstr. und Kirchstr. gepflastert? Gibt es hier eine Einbahnstraße?	? 22284,4653 22355,4660
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
 # added from other sources: (strassen plaetze landstrassen landstrassen2 strassen_bab flaechen wasserstrassen wasserumland wasserumland2 sbahn sbahnhof rbahn rbahnhof ubahn ubahnhof faehren hoehe orte orte2 orte_city ampeln ampelschaltung plz potsdam deutschland grenzuebergaenge sehenswuerdigkeit obst radwege qualitaet_s qualitaet_l handicap_s handicap_l vorfahrt nolighting housenumbers green brunnels gesperrt gesperrt_car gesperrt_u gesperrt_s gesperrt_r comments_cyclepath comments_danger comments_ferry comments_misc  comments_mount comments_path comments_route  comments_tram comments_kfzverkehr comments_scenic fragezeichen exits multi_bez_str)
-Bärenlauchstr.: gut geeignet (laut ADFC-Karte)	? 19737,5176 19744,5063 19751,4961 19760,4907 19760,4875
 (Alt-Hermsdorf - Zehntwerderweg): mäßig geeignet (laut ADFC-Karte)	? 4582,23035 4619,22934 4626,22914 4679,22766
 Grumbkowstr.: mäßig geeignet (laut ADFC-Karte)	? 11269,20667 11419,20327 11563,20048 11730,19684
 Nymphenufer: mäßig geeignet (laut ADFC-Karte)	? -4044,1841 -3981,1764 -3806,1644 -3761,1576 -3654,1539
@@ -1539,6 +1529,7 @@ Gemeinsamer Rad- und Gehweg parallel zur Straße (Ist der Radweg ein Zweirichtung
 Kleine Lindenstr.: holpriger Fahrweg (Ist die Kleine Lindenstr. mittlerweile asphaltiert?)	? 21531,-1140 21459,-1086 21306,-975
 Marienhöher Weg: Kopfsteinpflaster (mäßiges oder schlechtes Kopfsteinpflaster?)	? 8353,5188 8185,5195 8009,5000 7913,4996 7873,5024 7851,5125 7944,5237
 Nalepastr.: Betonstr., Eisenbahnschienen (stimmt das?)	? 17043,7512 17211,7265
+Zeppelinstr.: kleinteiliges, unebenes Kopfsteinpflaster (ist der Abschnitt der Zeppelinstr. zwischen Triniusstr. und Firlstr. asphaltiert oder gepflastert?)	? 18682,6615 18417,6775
 Lincolnstr.: Kopfsteinpflaster (Qualität der Lincolnstr. zwischen Einbecker und Zachertstr.?)	? 17341,11595 17242,11304
 Kohlweißlingstr.: Verbundsteinpflaster (Qualität: Verbundsteinpflaster oder Asphalt?)	? 21723,10920 21765,10834
 Distelfalterstr.: Verbundsteinpflaster (Qualität: Verbundsteinpflaster oder Asphalt?)	? 21723,10920 21605,10866
@@ -1554,6 +1545,7 @@ Dohlengrund: Asphalt (wie ist die Qualität zwischen Grabensprung und Köpenicker 
 Salzachstr.: unbefestigt, fester Erdboden (wo genau sind die Kopfsteinpflaster-/Asphaltabschnitte?)	? -2103,3536 -2014,3564
 Schrimmer Weg: schlechtes Kopfsteinpflaster (gilt das "schlechte Kopfsteinpflaster" auch für den Gehweg-Abschnitt Richtung Waltersdorfer Chaussee?)	? 17879,127 17818,93
 Amalienhofstr.: schlechtes Kopfsteinpflaster (wie ist die Qualität zwischen Ulrikenstr. und Lutoner Str.?)	? -5118,13053 -5100,13081 -5073,13097 -4871,13178 -4771,13214
+Pritstabelstr.: mäßiges Kopfsteinpflaster (Ist die Pritstabelstr. zwischen Wendenschloßstr. und Grüne Trift gepflaster oder asphaltiert?)	? 22811,3037 22928,3057 23065,3089 23338,3173
 Korkedamm: guter Asphalt (Ist der gesamte Korkedamm asphaltiert?)	? 19244,2141 19296,2257 19327,2288 19375,2341 19654,2325 19962,2277 20100,2247
 Treseburger Str. (Blankenburg): mäßiges Kopfsteinpflaster (welcher Abschnitt ist mit Kopfsteinpflaster versehen, wie sieht der Rest aus?)	? 14509,21337 14461,21372 14304,21399 14157,21442 14069,21471 13978,21496 13884,21524
 Rheinpfalzallee: geflickter Asphalt (bis 2007-10-15 wird der Asphaltbelag erneuert)	? 19030,9530 19128,9523 19221,9517 19424,9502 19510,9497 19651,9489
@@ -1624,6 +1616,7 @@ Neufahrwasserweg (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur fü
 Rotdornstr. (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? 5085,7109 5121,7132 5141,7158 5139,7206
 Baumgartensteg (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? -2882,13474 -2937,13399
 Malchiner Str. (Gilt die Einbahnstraßenregelung zwischen Onkel-Herse-Str. und Parchimer Allee auch für Radfahrer oder nur für Autofahrer?)	? 13866,4481 13869,4626 13836,4759
+Leistikowstr. (Ist die Leistikowstr. für Radfahrer in entgegengesetzter Richtung geöffnet?)	? -12512,810 -12302,718
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position ist vielleicht nicht ganz genau)	? -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9046,22376
 Radwege unterschiedlicher Form und Qualtität (genauer spezifizieren)	? -9723,-2451 -9700,-2459 -9534,-2515 -9462,-2540 -9118,-2649 -9075,-2664 -8865,-2732 -8500,-2856 -8428,-2886 -8283,-2917 -7873,-3094 -7497,-3096 -7487,-3097 -7060,-3124 -6810,-3151
 Zweirichtungsradweg auf der östlichen Seite (laut "Berliner Umland" entnommen)	? -18356,4783 -18233,4501 -18025,4018

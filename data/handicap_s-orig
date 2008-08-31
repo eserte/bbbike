@@ -248,7 +248,8 @@ Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7948,12863 7904,12803
 (südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7699,7571 7744,7538 7710,7547 7750,7528
 Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
 (Gudrunstr. - Lichtenberger Brücke): Gehweg, Bordsteine	q2 16870,11920 16884,11889 16858,11860
-Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22162,4546 22111,4562 22093,4499
+Grünstr.: Fußgängerzone	q2 22111,4562 22162,4546 22214,4548 22312,4593
+Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22111,4562 22093,4499
 (Karlsgartenstr. - Hasenheide): Parkweg, Fußgänger	q1 11627,8485 11253,8565
 (Am Rixdorfer Teich): Parkweg, Fußgänger	q1 11253,8565 11104,8559 11020,8596 10957,8573 10911,8457
 Torstr. - Weydingerstr.: Bordsteine	q2 11079,13492 11108,13513
@@ -413,6 +414,7 @@ Achenbachpromenade: Fußgänger, Radfahren erlaubt	q1 8755,8776 8748,8587 8715,845
 Wildensteiner Str.: enge Straße	q1 18528,8331 18416,8163 18365,8094 18333,8059
 (Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbrücke	q2 19468,7962 19558,8064
 Linienstr./Oranienburger Str.: Fußgänger	q2 9215,13392 9296,13397
+Fontanestr.: zwei Schwellen, können umfahren werden	q1+ 18240,6845 18254,6679
 ######################### User Contributions #################################
 #: by: Steini
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
@@ -1131,7 +1133,7 @@ Askaloner Weg: enge Straße	q1 2402,24687 2407,24657 2384,24603 2311,24546 2262,2
 #: by: ^^^
 #: by: Desiree Kretzschmar:
 #: corrected_by: srt (angegeben q3, wegen Luftbild korrigiert zu q1)
-Pritstabelstr.: enge Straße	q1 22811,3037 22928,3057 23065,3089 23338,3173 23444,3217 23564,3283 23641,3342 23680,3371 23734,3423
+Pritstabelstr.: enge Straße	q1 22811,3037 22928,3057 23065,3089 23338,3173 23444,3217 23564,3283 23641,3342 23680,3371 23740,3418
 #: by: Sebastian Worel:
 #: corrected_by: srt/policy (q2 -> q1))
 Juttastr.: enge Straße	q1 1072,4542 949,4366
