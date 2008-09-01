@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.24 2008/08/28 21:32:11 eserte Exp $
+# $Id: bbbike.cgi,v 9.24 2008/08/28 21:32:11 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -4393,13 +4393,13 @@ EOF
 		}
 		print qq{$cols" style="background-color:white; text-align:right;">};
 		print
-		    "<a style='padding:0 0.2cm 0 0.2cm;' title='Druckvorlage normal' target=printwindow href=\"$bbbike_script?" . $qq_normal->query_string . "\">" .
+		    "<a style='padding:0 0.2cm 0 0.2cm;' title='" . M("Druckvorlage normal") . "' target=printwindow href=\"$bbbike_script?" . $qq_normal->query_string . "\">" .
 		    "<img src=\"$bbbike_images/printer.gif\" " .
-		    "width=16 height=16 border=0 alt='Druckvorlage normal'></a>";
+		    "width=16 height=16 border=0 alt='" . M("Druckvorlage normal") . "'></a>";
 		print
-		    "<a style='padding:0 0.2cm 0 0.2cm;' title='Druckvorlage schmal' target=printwindow href=\"$bbbike_script?" . $qq_narrow->query_string . "\">" .
+		    "<a style='padding:0 0.2cm 0 0.2cm;' title='" . M("Druckvorlage schmal") . "' target=printwindow href=\"$bbbike_script?" . $qq_narrow->query_string . "\">" .
 		    "<img src=\"$bbbike_images/printer_narrow.gif\" " .
-		    "width=16 height=16 border=0 alt='Druckvorlage schmal'></a>";
+		    "width=16 height=16 border=0 alt='" . M("Druckvorlage schmal") . "'></a>";
 		if ($can_palmdoc) {
 		    my $qq2 = new CGI $q->query_string;
 		    $qq2->param('output_as', "palmdoc");
