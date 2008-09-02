@@ -25,6 +25,7 @@ patch\.gz$
 ^_Inline/
 (^|/)cover_db/
 ^nytprof\.out$
+^nytprof/
 ^profiler/
 # private common files
 \.ok2cgi$

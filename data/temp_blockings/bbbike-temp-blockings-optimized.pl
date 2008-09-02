@@ -312,15 +312,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1220220000,
-         'text' => 'B 168 zw. F¸rstenwalde und Trebus Grundhafter Straﬂenbau Vollsperrung 25.06.2007-31.08.2008 ',
-         'from' => 1182636000,
-         'id' => 1006,
-         'data' => 'userdel	2::inwork 54195,309 54279,10 54341,-331 54657,-1293
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -652,15 +644,6 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1220220000,
-         'text' => 'B 001 Brandenburger Str. OD Jeserig Straﬂenbau Vollsperrung 18.02.2008-31.08.2008 ',
-         'from' => 1203202800,
-         'id' => 1287,
-         'data' => 'userdel	q4::inwork -36720,-272 -37086,-305 -37725,-398 -38151,-616
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
        undef,
@@ -681,15 +664,8 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1220220000,
-         'text' => 'L 232 Mˆllensee-Lichtenow Br¸cke ¸ber den Verbindungsgraben in der OD Kagel Br¸ckenbauarbeiten Vollsperrung 10.03.2008-31.08.2008 ',
-         'from' => 1205017200,
-         'id' => 1308,
-         'data' => 'userdel	2::inwork 44914,6791 44933,6625
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -719,15 +695,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1220220000,
-         'text' => 'L 233 Berliner Str. OD Hennickendorf Bˆschungssanierung Vollsperrung 20.05.2008-31.08.2008 ',
-         'from' => 1211148000,
-         'id' => 1330,
-         'data' => 'userdel	q4::inwork 38574,10226 39548,11243 39824,11264
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -820,16 +788,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1220220000,
-         'text' => 'L 793 Alfred-K¸hne-Str. Ludwigsfelde, Kreuzung Am Birkengrund/ Ludwigsfelder Str. Bau Kreisverkehr Vollsperrung 17.03.2008-31.08.2008 ',
-         'from' => 1205622000,
-         'id' => 1357,
-         'data' => 'userdel	q4::inwork 3257,-10374 2629,-10301 2580,-11069
-userdel	q4::inwork 1867,-10228 2629,-10301
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -870,16 +829,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_008984',
-         'until' => 1220306399,
-         'text' => 'Ritterstr. (Kreuzberg) Richtung Kottbusser Tor zwischen Lobeckstr. und Prinzenstr. Baustelle, Fahrtrichtung gesperrt (bis 01.09.)',
-         'from' => 1213737230,
-         'id' => 1374,
-         'data' => 'userdel	1::inwork 10585,10766 10768,10686
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -892,15 +842,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1220220000,
-         'text' => 'L 016 Br¸cke ¸.d. A 10 zw. Perwenitz u. Paaren, sowie AS Falkensee Br¸ckenbauarbeiten Vollsperrung 07.07.2008-31.08.2008 ',
-         'from' => 1215295200,
-         'id' => 1379,
-         'data' => 'userdel	2::inwork -17102,26468 -17545,26647
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1249077600,
          'text' => 'L 030 Bahnhofstr. Eisenbahnbr¸cke in der OD Erkner Br¸ckenerneuerung Vollsperrung 09.06.2008-31.07.2009 ',
@@ -982,16 +924,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_009406',
-         'until' => 1220306399,
-         'text' => 'Friedrich-Karl-Str., Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Ottokarstr. und Wenckebachstr. Baustelle, Straﬂe vollst‰ndig gesperrt (bis Anfang 09.2008)',
-         'from' => 1220035493,
-         'id' => 1413,
-         'data' => 'userdel	2::inwork 9357,5601 9147,5534 8955,5549 8870,5557 8767,5571
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1066,15 +999,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
        undef,
        undef,
        undef,
-       {
-         'until' => 1220306400,
-         'text' => 'B 273 Bernauer Str., Schloﬂplatz OD Oranienburg Deckeneinbau Vollsperrung 11.08.2008-01.09.2008 ',
-         'from' => 1218319200,
-         'id' => 1438,
-         'data' => 'userdel	q4::inwork -1553,38501 -1517,38543 -1500,38565
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1225494000,
          'text' => 'L 031 Prenden - Zerpenschleuse Graben zw. Abzw. Marienwerder und Zerpenschleuse Br¸ckenneubau Vollsperrung 18.08.2008-31.10.2008 ',
@@ -1103,15 +1028,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1220306400,
-         'text' => 'L 601 Berliner Str. OL Finsterwalde, zw. B 96 Bahnhofstr. und Str. der Jugend S‰ngerfest Vollsperrung 28.08.2008-01.09.2008 ',
-         'from' => 1219788000,
-         'id' => 1443,
-         'data' => 'userdel	q4::temp 33060,-85292 33101,-85749
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1133,31 +1050,13 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_009456',
-         'until' => 1220219999,
-         'text' => 'Glienicker Weg (Kˆpenick) in beiden Richtungen zwischen Spindlersfelder Str. und Zinsgutstr. Baustelle, Straﬂe vollst‰ndig gesperrt (bis Ende 08.2008)',
-         'from' => 1219523350,
-         'id' => 1449,
-         'data' => 'userdel	2::inwork 21153,3484 21198,3522 21227,3549 21316,3662
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_009715',
-         'until' => 1220219999,
-         'text' => 'Wichertstr. (Prenzlauer Berg) in Richtung Prenzlauer Allee zwischen Stahlheimer Str. und Prenzlauer Allee Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2008)',
-         'from' => 1219879557,
-         'id' => 1455,
-         'data' => 'userdel	1::inwork 11455,15916 11581,15831 11744,15720 11941,15586
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_009790',
          'until' => 1222811999,
@@ -1178,15 +1077,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1220220000,
-         'text' => 'L 054 Bahnhofstraﬂe OL Vetschau, Bahn¸bergang Gleisarbeiten Vollsperrung 25.08.2008-31.08.2008 ',
-         'from' => 1219528800,
-         'id' => 1458,
-         'data' => 'userdel	2::inwork 58183,-67564 58018,-67843
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1222120800,
@@ -1206,25 +1097,8 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_009776',
-         'until' => 1220220000,
-         'text' => 'Turmstraﬂe (Wedding) in beiden Richtungen, zwischen Stromstraﬂe und Waldstr. Veranstaltung, Straﬂe gesperrt (bis 1.9.2008, 0.00 Uhr) ',
-         'from' => 1220035590,
-         'id' => 1462,
-         'data' => 'userdel	2::temp 6240,13324 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359 5560,13382 5368,13406
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1220220000,
-         'text' => 'B 101 OD Elsterwerda, zw. Bahnunterf¸hr.u. Heidaer Str.. Deckenerneuerung Vollsperrung 29.08.2008-31.08.2008 ',
-         'from' => 1219874400,
-         'id' => 1463,
-         'data' => 'userdel	q4::inwork 19074,-103082 18928,-103699 18887,-104083
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => 1224108000,
          'text' => 'L 435 Oelsen - Grunow (B246) zw. OA Oelsen u. Krzg. Lindenstraﬂe i.d. OL Grunow Grundhafter Ausbau Vollsperrung 28.08.2008-15.10.2008 ',
