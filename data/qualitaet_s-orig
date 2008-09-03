@@ -1009,8 +1009,6 @@ Teltowkanal: Parkweg, OK	Q1 4247,2652 4193,2616 4053,2300 3971,2106 3690,1436
 #: note: 2007 Bauarbeiten bis zur Krahmerstr.
 #: confirmed_by: srt
 Paul-Schwarz-Promenade: sehr eben, Rollsplit als Belag	Q0- 4591,3089 4261,2703 4247,2652
-#: by: steini (immerlocker):
-Paul-Schwarz-Promenade: sehr feiner Schnotter	Q0- 4835,3415 4921,3593 4970,3684 5093,3912 5145,3984 5225,4095
 (Weg am Friedhof): Parkweg	Q1 11606,7260 12180,7387
 Spreetalallee: uneben, leichter Schotter	Q2 657,12697 729,12972 715,13126
 Spreetalallee: abschüssig, schlechtes Kopfsteinpflaster	Q3 715,13126 667,13236
@@ -3782,7 +3780,7 @@ Klistostr.: guter Beton	Q0 407,1481 464,1246 475,1202 538,944
 #: by: Gudrun Henne:
 Marienstr.: mäßiges Kopfsteinpflaster	Q2 5252,3059 5311,3169 5375,3287 5466,3312
 #: by: Chriss (thetimeisnow):
-Emmichstr.: Asphalt	Q0 7282,2386 7370,2400 7426,2409 7625,2362
+Emmichstr.: Asphalt	Q0 7282,2386 7370,2400 7432,2400 7625,2362
 #: by: yasmine benhadj...:
 Paul-Robeson-Str.: Kopfsteinpflaster	Q2 10254,16363 10438,16340 10606,16319 10754,16305 11013,16278
 #: by: Michael Heinrichs:
@@ -4290,7 +4288,7 @@ Naturlehrpfad: fester Sandweg und enger Holzbohlenweg	Q2 5692,23948 5645,23968 5
 Steinhellenweg: Beton	Q0 10010,4606 10012,4826 10015,4875
 Steinhellenweg: Kolonieweg/Rasengittersteine	Q2 10015,4875 10012,5210 10012,5231
 #: by: Carsten Steglich:
-Bruno-Wille-Str.: Kopfsteinpflaster	Q2 26086,4861 26079,5057 26069,5280 26057,5553 26059,5631 26019,5851
+Bruno-Wille-Str.: Kopfsteinpflaster	Q2 26086,4861 26079,5057 26069,5280 26061,5467 26057,5553 26059,5631 26019,5851
 #: by: Jürgen Müller: vvv
 Sondershauser Str.: Asphalt	Q0 6403,569 6358,795 6360,825 6386,1051 6392,1135 6406,1218 6441,1444
 Sondershauser Str.: teilweise Asphalt	Q0 6441,1444 6491,1658
@@ -4406,9 +4404,12 @@ Klingerstr.: Asphalt	Q0 14872,8655 14934,8717
 Cyclopstr.: schlechtes Kopfsteinpflaster, stark wellig und Schlaglöcher	Q3 5106,21418 5312,21228 5354,21232
 #: corrected_by: Corinna Orth (Korrektur für diesen Abschnitt)
 Cyclopstr.: asphaltiert	Q0 4810,21730 5106,21418
-#: by: Steini vvv
+#: by: Steini (immerlocker) vvv
 Lange Str. (Lichterfelde): Asphalt	Q0 5250,1725 5396,1774 5421,1786 5519,1831 5656,1882 5781,1936 5865,1975
 Bahnhofstr. (Lichterfelde): Asphalt	Q0 4767,2853 5058,2702 5324,2553 5367,2528
+Paul-Schwarz-Promenade: sehr feiner Schnotter	Q0- 4835,3415 4921,3593 4970,3684 5093,3912 5145,3984 5225,4095
+#: note: doppeldeutiger Beitrag von anonymous meint "fester Sandweg", Q1 und Radweg??? Oder meinte er tatsächlich den Ostpreußendamm?
+Bogenstr.: mäßiger Beton	Q1- 4660,2116 4735,2077 4809,2057 4902,2058 4995,2090
 #: by: ^^^
 #: by: rainer (0deon): vvv
 #: note: laut ADFC-Karte ebenfalls mäßig geeignet
@@ -6056,6 +6057,7 @@ Erieseering: guter Asphalt	Q0 18403,10077 18380,10115 18331,10226 18319,10249 18
 Mittelbruchzeile: Kopfsteinpflaster	Q2 7500,17796 7548,17807 7659,17826 7789,17853
 Mittelbruchzeile: extrem schlechter Asphalt	Q2- 7789,17853 7948,17895 8152,17936
 Mittelbruchzeile: schlechtes Kopfsteinpflaster	Q3 8152,17936 8362,17992 8391,17996 8580,18038
+Epensteinplatz: sehr schlechtes Kopfsteinpflaster	Q3 8409,17774 8419,17762 8433,17754 8454,17760 8462,17778 8450,17795 8432,17798
 #: by: ^^^
 #: by: stefan bergel:
 Lohmestr.: mäßiges Kopfsteinpflaster	Q2 11111,17905 11136,17768
@@ -7513,7 +7515,6 @@ Zwillingestr.: guter Asphalt	Q0 14620,6876 14555,6936 14531,6959
 Siriusstr.: guter Asphalt	Q0 14751,7007 14686,7070
 #: by: ^^^
 #: by: Stefanie (1015):
-#: XXX: was war mit "Bordsteinkanten, Q1" gemeint?
 Kurstr. (Nikolassee): guter Asphalt	Q0 -2021,2271 -2049,2359 -2069,2429 -2160,2685
 #: by: J. Brehme:
 Oranienburger Str. (Lichtenrade): Asphalt	Q0 11343,405 11381,574 11372,706
@@ -7522,6 +7523,12 @@ Oranienburger Str. (Lichtenrade): Asphalt	Q0 11343,405 11381,574 11372,706
 Schweriner Ring: guter Beton	Q0 17440,18997 17450,19297 17552,19291 17549,19120 17610,19116 17608,19054 17600,18994
 #: by: P. Loll:
 Windenweg: guter Beton	Q0 16306,2364 16106,2514 16012,2592 15923,2667 15870,2768 15785,2900 15751,2936 15602,3099
+#: by: Olaf (branden):
+Stadtheidestr.: mäßiger Asphalt	Q1 -3573,16006 -3684,15982
+#: by: Johannes (bbb):
+Julius-Hart-Str.: guter Beton	Q0 26061,5467 26196,5477 26270,5563
+#: by: Rainer (rse01):
+Freitaler Str.: mäßiges Verbundsteinpflaster	Q2+ 15579,745 15677,797 15776,850 15872,902 15970,954
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

@@ -539,15 +539,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1230764400,
-         'text' => 'L 232 Möllensee-Lichtenow OD Kagel Straßenbauarbeiten Vollsperrung 22.10.2007-31.12.2008 ',
-         'from' => 1192917600,
-         'id' => 1215,
-         'data' => 'userdel	q4::inwork 44634,7400 44774,6962 44914,6791 44933,6625 44835,6310
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -897,7 +889,15 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'until' => 1230764400,
+         'text' => 'L 141 Breddin - Kümmernitz OD Breddin Straßenneubau Vollsperrung 17.07.2008-31.12.2008 ',
+         'from' => 1216159200,
+         'id' => 1402,
+         'data' => 'userdel	q4::inwork -70100,51862 -70753,51862 -70922,51604
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        {
@@ -950,16 +950,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_009449',
-         'until' => 1221429600,
-         'text' => 'Greifswalder Str. (Prenzlauer Berg) stadteinwärts zwischen Ostseestr. und Erich-Weinert-Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte September 2009)',
-         'from' => 1217625690,
-         'id' => 1423,
-         'data' => 'userdel	1::inwork 13098,15592 12966,15478 12880,15335
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1079,15 +1070,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1222120800,
-         'text' => 'K 6917 K.-Marx-/F.-Engelsstraße OL Borkheide Bahnübergang zw. Birkenhain u. Str.d. Frieden Bauarbeiten am Gleiskörper Vollsperrung 08.09.2008-22.09.2008 ',
-         'from' => 1220738400,
-         'id' => 1460,
-         'data' => 'userdel	2::inwork -26249,-20121 -26258,-20094 -26809,-18383
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1225494000,
          'text' => 'L 373 Richard-Sonnenburg-Straße OL Bri.-Finkenheerd ab KP Bhf-/Sonnenburgstr., 500m Ri. OA Straßenbau Vollsperrung 22.09.2008-31.10.2008 ',
@@ -1107,6 +1090,97 @@ push @temp_blocking,
          'data' => 'userdel	q4::inwork 77489,-28251 77555,-28060 78085,-27152
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_009784',
+         'until' => 1222811999,
+         'text' => 'Schlichtallee (Lichtenberg) in beiden Richtungen zwischen Hauptstr. und Zobtener Str. Brückenbau, Straße vollständig gesperrt (bis Ende 09.2008)',
+         'from' => 1220473304,
+         'id' => 1465,
+         'data' => 'userdel	2::inwork 15751,10582 15629,10481
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1220824800,
+         'text' => 'B 101 Lauchhammerstr. OD Elsterwerda, zw. Ackerstr. und Elsterstr. Historische Einkaufsnacht Vollsperrung 06.09.2008-07.09.2008 ',
+         'from' => 1220565600,
+         'id' => 1466,
+         'data' => 'userdel	2::temp 21106,-104865 20827,-105106 20890,-105457
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1230073200,
+         'text' => 'B 109 August-Bebel-Str. OD Templin, zw. R.-Koch-Str. und Prenzlauer Allee Grundhafter Straßenausbau Vollsperrung 01.09.2008-23.12.2008 ',
+         'from' => 1220133600,
+         'id' => 1467,
+         'data' => 'userdel	q4::inwork 16463,79756 16200,79437 15881,79303
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1230764400,
+         'text' => 'L 023 Ringenwalde - Milmersdorf OD Götschendorf Grundh.Straßenausbau Vollsperrung 25.08.2008-31.12.2008 ',
+         'from' => 1219528800,
+         'id' => 1468,
+         'data' => 'userdel	q4::inwork 28003,76731 27309,76652 26735,76914
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1220738400,
+         'text' => 'L 029 Berliner Straße OL Oderberg in/aus Richtg. Liepe, Höhe Hausnr. 51-55 Kanalarbeiten Vollsperrung 06.09.2008-06.09.2008 ',
+         'from' => 1220565600,
+         'id' => 1469,
+         'data' => 'userdel	q4::inwork 52671,51846 53187,51918
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1221516000,
+         'text' => 'L 059 Wainsdorf - Prösen zw. OA Wainsdorf und OE Prösen Deckenerneuerung Vollsperrung 29.08.2008-15.09.2008 ',
+         'from' => 1219874400,
+         'id' => 1470,
+         'data' => 'userdel	2::inwork 16901,-110215 17717,-110344 19244,-110623
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1220824800,
+         'text' => 'L 071 OD Schönewalde, zw. Weißener Str. und Gartenstr. 850 - Jahrfeier Vollsperrung 06.09.2008-07.09.2008 ',
+         'from' => 1220565600,
+         'id' => 1471,
+         'data' => 'userdel	q4::temp 60,-66035 -575,-65978
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1226790000,
+         'text' => 'L 073 Neue Beelitzer Str. OL Luckenwalde, zw. Bahnhofstr. und Beelitzer Tor Straßenausbau Vollsperrung 20.09.2008-15.11.2008 ',
+         'from' => 1221775200,
+         'id' => 1472,
+         'data' => 'userdel	q4::inwork -4725,-34957 -5019,-34814
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1221170400,
+         'text' => 'L 220 AS Finowfurt - Joachimsthal zw. der B167 und der OL Eichhorst Deckenerneuerung Vollsperrung 04.09.2008-11.09.2008 ',
+         'from' => 1220392800,
+         'id' => 1473,
+         'data' => 'userdel	2::inwork 25500,54100 25387,53500 25379,53337 25368,53125 25393,52762 25556,52375 26375,50681 26256,50418
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1221429600,
+         'text' => 'L 793 Alfred-Kühne-Str. zw. OA Ludwigsfelde und Am Birkengrund Deckeninstandsetzung Vollsperrung 12.09.2008-14.09.2008 ',
+         'from' => 1221084000,
+         'id' => 1474,
+         'data' => 'userdel	2::inwork 2423,-11316 2580,-11069 2629,-10301
+',
+         'type' => 'gesperrt'
        }
      
 );

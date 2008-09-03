@@ -10245,7 +10245,7 @@ userdel	2::inwork 4483,-73538 5356,-74776 5988,-75608
 EOF
      },
      { from  => 1192917600, # 2007-10-21 00:00
-       until => 1230764400, # 2009-01-01 00:00
+       until => 1220474145, # 2009-01-01 00:00 1230764400
        text  => 'L 232 Möllensee-Lichtenow OD Kagel Straßenbauarbeiten Vollsperrung 22.10.2007-31.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -11874,8 +11874,8 @@ userdel	q4::inwork -32661,-44144 -31201,-45781
 EOF
      },
      { from  => 1216159200, # 2008-07-16 00:00
-       until => 1220133600, # 2008-08-31 00:00
-       text  => 'L 141 Breddin - Kümmernitz OD Breddin Straßenneubau Vollsperrung 17.07.2008-30.08.2008 ',
+       until => 1230764400, # 2009-01-01 00:00
+       text  => 'L 141 Breddin - Kümmernitz OD Breddin Straßenneubau Vollsperrung 17.07.2008-31.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -70100,51862 -70753,51862 -70922,51604
@@ -12057,7 +12057,7 @@ userdel	2::temp 8595,12066 8600,12165 8515,12242
 EOF
      },
      { from  => 1217625690, # 2008-08-01 23:21
-       until => Time::Local::timelocal(reverse(2008-1900,9-1,15,0,0,0)), # 1217887200, # 2008-08-05 00:00
+       until => 1220473350, # 1217887200, # 2008-08-05 00:00 Time::Local::timelocal(reverse(2008-1900,9-1,15,0,0,0))
        text  => 'Greifswalder Str. (Prenzlauer Berg) stadteinwärts zwischen Ostseestr. und Erich-Weinert-Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte September 2009)',
        type  => 'gesperrt',
        source_id => 'IM_009449',
@@ -12378,8 +12378,8 @@ EOF
 userdel	q4::inwork 42781,33687 43093,33781
 EOF
      },
-     { from  => 1220738400, # 2008-09-07 00:00
-       until => 1222120800, # 2008-09-23 00:00
+     { from  => undef, # 2008-09-07 00:00 1220738400
+       until => 1220474077, # 2008-09-23 00:00 1222120800
        text  => 'K 6917 K.-Marx-/F.-Engelsstraße OL Borkheide Bahnübergang zw. Birkenhain u. Str.d. Frieden Bauarbeiten am Gleiskörper Vollsperrung 08.09.2008-22.09.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -12417,6 +12417,87 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 77489,-28251 77555,-28060 78085,-27152
+EOF
+     },
+     { from  => 1220473304, # 2008-09-03 22:21
+       until => 1222811999, # 2008-09-30 23:59
+       text  => 'Schlichtallee (Lichtenberg) in beiden Richtungen zwischen Hauptstr. und Zobtener Str. Brückenbau, Straße vollständig gesperrt (bis Ende 09.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_009784',
+       data  => <<EOF,
+userdel	2::inwork 15751,10582 15629,10481
+EOF
+     },
+     { from  => 1220565600, # 2008-09-05 00:00
+       until => 1220824800, # 2008-09-08 00:00
+       text  => 'B 101 Lauchhammerstr. OD Elsterwerda, zw. Ackerstr. und Elsterstr. Historische Einkaufsnacht Vollsperrung 06.09.2008-07.09.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 21106,-104865 20827,-105106 20890,-105457
+EOF
+     },
+     { from  => 1220133600, # 2008-08-31 00:00
+       until => 1230073200, # 2008-12-24 00:00
+       text  => 'B 109 August-Bebel-Str. OD Templin, zw. R.-Koch-Str. und Prenzlauer Allee Grundhafter Straßenausbau Vollsperrung 01.09.2008-23.12.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 16463,79756 16200,79437 15881,79303
+EOF
+     },
+     { from  => 1219528800, # 2008-08-24 00:00
+       until => 1230764400, # 2009-01-01 00:00
+       text  => 'L 023 Ringenwalde - Milmersdorf OD Götschendorf Grundh.Straßenausbau Vollsperrung 25.08.2008-31.12.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 28003,76731 27309,76652 26735,76914
+EOF
+     },
+     { from  => 1220565600, # 2008-09-05 00:00
+       until => 1220738400, # 2008-09-07 00:00
+       text  => 'L 029 Berliner Straße OL Oderberg in/aus Richtg. Liepe, Höhe Hausnr. 51-55 Kanalarbeiten Vollsperrung 06.09.2008-06.09.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 52671,51846 53187,51918
+EOF
+     },
+     { from  => 1219874400, # 2008-08-28 00:00
+       until => 1221516000, # 2008-09-16 00:00
+       text  => 'L 059 Wainsdorf - Prösen zw. OA Wainsdorf und OE Prösen Deckenerneuerung Vollsperrung 29.08.2008-15.09.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 16901,-110215 17717,-110344 19244,-110623
+EOF
+     },
+     { from  => 1220565600, # 2008-09-05 00:00
+       until => 1220824800, # 2008-09-08 00:00
+       text  => 'L 071 OD Schönewalde, zw. Weißener Str. und Gartenstr. 850 - Jahrfeier Vollsperrung 06.09.2008-07.09.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 60,-66035 -575,-65978
+EOF
+     },
+     { from  => 1221775200, # 2008-09-19 00:00
+       until => 1226790000, # 2008-11-16 00:00
+       text  => 'L 073 Neue Beelitzer Str. OL Luckenwalde, zw. Bahnhofstr. und Beelitzer Tor Straßenausbau Vollsperrung 20.09.2008-15.11.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -4725,-34957 -5019,-34814
+EOF
+     },
+     { from  => 1220392800, # 2008-09-03 00:00
+       until => 1221170400, # 2008-09-12 00:00
+       text  => 'L 220 AS Finowfurt - Joachimsthal zw. der B167 und der OL Eichhorst Deckenerneuerung Vollsperrung 04.09.2008-11.09.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 25500,54100 25387,53500 25379,53337 25368,53125 25393,52762 25556,52375 26375,50681 26256,50418
+EOF
+     },
+     { from  => 1221084000, # 2008-09-11 00:00
+       until => 1221429600, # 2008-09-15 00:00
+       text  => 'L 793 Alfred-Kühne-Str. zw. OA Ludwigsfelde und Am Birkengrund Deckeninstandsetzung Vollsperrung 12.09.2008-14.09.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 2423,-11316 2580,-11069 2629,-10301
 EOF
      },
     );
