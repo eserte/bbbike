@@ -234,6 +234,10 @@ Kleistpark: im Sommer bis 21 Uhr geöffnet, im Winter bis 18 Uhr	? 7192,9508 7246
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: by: Ralph Reuscher:
+Weinbrennerweg: guter Asphalt, Q0, enge Straße, q1	? 6003,19461 6102,19507
+#: by: kris (chefmail)
+Place Molière: guter Beton, Q0, enge Straße, q1	? 4334,21540 4367,21525 4392,21477 4338,21455 4307,21506
 #: by: anonymous
 Ederkopfweg: guter Asphalt, Q0, enge Straße, q1	? -4729,14958 -4761,14961 -4807,14990 -4879,15008
 #: by: Stapel (rowingfriend...):
@@ -1235,6 +1239,7 @@ Scharnweberstr. (Friedrichshagen): Qualität?	? 25706,4723 25720,4832
 #: by: Sarah Hemmelmann - q3
 Ahornallee (Pankow) Qualität?	? 9737,20728 9859,20542
 Pankeweg: Qualität?	? 16635,26118 16712,26192 16890,26334 16937,26354 16979,26401 17104,26478 17279,26582 17101,26701
+#: XXX: Alexandra (kaffeeschluerfer) meint: guter Asphalt, Radwege; aber auf dem Luftbild hat anscheinend nur ein Teil Radwege; in einer anderen Mail von ihr steht: guter Beton, Radweg, Gute Qualität
 Janusz-Korczak-Str.: Qualität, Radwege?	? 24303,15070 24232,15060 24139,15046 23960,15021 23841,15004 23778,14995 23787,14919 23798,14826 23815,14721
 #: by: Elisabeth Wegner
 Marwitzer Str.: Radwege, aber von wo bis wo genau?	? -3700,26625 -4048,26914 -4293,27146 -4750,27667
@@ -1504,8 +1509,9 @@ Schwebelstr.: Qualität? Kann der Lichtenrader Damm in Höhe Schwebelstr überquert
 Schwebelstr.: Qualität?	? 10895,284 10987,306 11079,317
 Landsberger Str.: Qualität?	? 11079,317 11215,313 11232,309 11258,289 11337,190 11369,117 11375,82
 Gessepfad: Qualität?	? 10955,501 10987,306
+#: XXX möglicherweise zwischen Soldiner und Landsberger Asphalt Q0 (J. Brehme, nicht ganz klar):
 Küstriner Str.: Qualität?	? 11232,309 11343,405 11488,531
-Oranienburger Str. (Lichtenrade): Qualität?	? 11343,405 11381,574 11372,706
+#: XXX möglicherweise Asphalt Q0 (J. Brehme, nicht ganz klar):
 Gaudacher Str.: Qualität?	? 11372,706 11419,789
 Ringelnatzstr.: Qualität?	? 10971,-499 10868,-539 10955,-769
 Happestr.: Qualität?	? 10955,-769 10953,-812 10968,-987 10976,-1070
@@ -1829,6 +1835,7 @@ Chorweilerstr. - Deutzer Steig: Qualität? Durchfahrt nur für Radfahrer möglich? 
 Deutzer Steig: Qualität?	? 20430,-17 20555,15
 Kleiner Mohnweg: Qualität?	? 20326,374 20453,393 20589,403
 Nippeser Str.: Qualität?	? 19894,-247 19894,-210 19882,-166 19854,-126
+#: XXX: Alexandra (kaffeeschluerfer) meint: viele Fußgänger, q4, Verbundsteinpflaster, aber ich kann das auf dem Luftbild nicht bestätigen
 Lyonel-Feiniger-Str.: Qualität?	? 24131,15109 24139,15046 24151,14982 24160,14931 24191,14866
 #: XXX ein anonymer Eintrag war nicht ganz klar: mäßiges Kopfsteinpflaster, enge Straße; aber auf dem Luftbild sieht es fast asphaltiert aus
 Kreuzgraben: Qualität? Können Radfahrer zur Heinrich-Böll-Str. fahren?	? 10309,20032 10264,20209 10251,20252
@@ -2031,11 +2038,14 @@ Heiligenstadter Str.: Qualität?	? 16738,14695 16835,14676
 Joachimsthaler Str. (Hohenschönhausen): Qualität? Einbahnstraßenregelung, auch für Radfahrer gültig?	? 16918,14901 16943,14785 17063,14797 17129,14804 17117,14885
 Lössauer Str.: Qualität?	? 16816,15092 17230,15083
 Lichtenauer Str.: Qualität?	? 16835,15188 17221,15181
+#: XXX: laut Alexandra (kaffeeschluerfer): gutes Verbundsteinpflaster, Fußgängerzone q4, aber ich warte erst einmal die Antwort auf meine Fragen ab:
 Lil-Dagover-Gasse: Qualität? Für Autos gesperrt?	? 23960,15021 23871,14914
 Fritz-Lang-Platz: Qualität? Für Autos gesperrt? Einbahnstraße?	? 23871,14914 23846,14931 23820,14896 23856,14868 23882,14904 23871,14914
 Kurt-Weill-Gasse: Qualität? Für Autos gesperrt?	? 23820,14896 23787,14919
+#: XXX: Alexandra (kaffeeschluerfer) meint: guter Asphalt, Fußgängerzone; aber teilweise scheinen dort Autos fahren zu dürfen. Wie sieht es mit dem Fritz-Lang-Platz aus? In einer anderen Mail von ihr steht "Verbundsteinpflaster; Fußgängerzone q4" vvv
 Fritz-Lang-Str.: Qualität? Für Autos gesperrt?	? 23841,15004 23846,14931
 Fritz-Lang-Str.: Qualität? Für Autos gesperrt?	? 23856,14868 23878,14748
+#: XXX ^^^
 Triftstr. - Eichborndamm: Ist der Parkweg nachts beleuchtet?	? 4538,20621 4661,20559 4790,20493 4885,20444
 Tollkirscheweg: Qualität?	? 20689,1613 20609,1654 20539,1722
 Strohblumenweg: Qualität?	? 20716,1860 20618,1781 20539,1722 20525,1713 20478,1681 20456,1639 20440,1588
@@ -2119,3 +2129,4 @@ Stockholmer Str.: Qualität?	? 8759,16684 8783,16710 8844,16863
 Fußgängerbrücke: Für Radfahrer befahrbar? Existieren Rampen oder Treppen? Qualität?	? 13192,21697 13046,21734 13008,21783
 Blumenthalstr.: Qualität südlich der Uhlandstr. (fängt auch mit Kopfsteinpflaster an)?	? 9120,20015 9159,19818 9177,19745 9195,19644 9214,19533 9231,19440 9249,19351 9258,19290
 Rosenstr.: Ist die Rosenstr. zwischen Jägerstr. und Kirchstr. gepflastert? Gibt es hier eine Einbahnstraße?	? 22284,4653 22355,4660
+Rue Racine: Qualität?	? 4339,21600 4334,21540 4307,21506 4254,21495 4204,21536 4198,21615 4209,21703

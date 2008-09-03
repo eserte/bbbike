@@ -3814,9 +3814,9 @@ Peter-Huchel-Str.: Asphalt	Q0 22960,13298 23007,13509 23275,13459 23460,13454
 (Heinrich-Grüber-Str. - Hönower Str.): überwiegend fester Ascheweg	Q0 24622,13919 24762,13890 24979,13753 25120,13803 25451,14018
 #: by: ^^^
 #: by: Lavinia Meier...: vvv
-Avenue Charles de Gaulle: Asphalt	Q0 4139,21782 4314,21614 4373,21561 4559,21681 4673,21755 4808,21610
-Rue Montesquieu: Asphalt	Q0 4683,21905 4314,21614
-Rue Diderot: Asphalt	Q0 4559,21681 4625,21595
+Avenue Charles de Gaulle: Asphalt	Q0 4139,21782 4209,21703 4240,21690 4305,21619 4339,21600 4380,21609 4525,21714 4631,21788 4747,21645 4778,21633
+Rue Montesquieu: Asphalt	Q0 4655,21939 4437,21775 4311,21681 4316,21633 4305,21619
+Rue Diderot: Asphalt	Q0 4525,21714 4625,21595
 #: by: ^^^
 #: by: Ute (karoline):
 #: note: auch laut ADFC-Karte gut befahrbar
@@ -4405,7 +4405,7 @@ Klingerstr.: Asphalt	Q0 14872,8655 14934,8717
 #: note: laut ADFC-Karte "nicht geeignet"
 Cyclopstr.: schlechtes Kopfsteinpflaster, stark wellig und Schlaglöcher	Q3 5106,21418 5312,21228 5354,21232
 #: corrected_by: Corinna Orth (Korrektur für diesen Abschnitt)
-Cyclopstr.: asphaltiert	Q0 4825,21718 5106,21418
+Cyclopstr.: asphaltiert	Q0 4810,21730 5106,21418
 #: by: Steini vvv
 Lange Str. (Lichterfelde): Asphalt	Q0 5250,1725 5396,1774 5421,1786 5519,1831 5656,1882 5781,1936 5865,1975
 Bahnhofstr. (Lichterfelde): Asphalt	Q0 4767,2853 5058,2702 5324,2553 5367,2528
@@ -7512,6 +7512,16 @@ Delphinstr.: guter Asphalt	Q0 14555,6936 14686,7070
 Zwillingestr.: guter Asphalt	Q0 14620,6876 14555,6936 14531,6959
 Siriusstr.: guter Asphalt	Q0 14751,7007 14686,7070
 #: by: ^^^
+#: by: Stefanie (1015):
+#: XXX: was war mit "Bordsteinkanten, Q1" gemeint?
+Kurstr. (Nikolassee): guter Asphalt	Q0 -2021,2271 -2049,2359 -2069,2429 -2160,2685
+#: by: J. Brehme:
+Oranienburger Str. (Lichtenrade): Asphalt	Q0 11343,405 11381,574 11372,706
+#: by: Christian Hahn:
+#: note: "kurvenreich, q1"
+Schweriner Ring: guter Beton	Q0 17440,18997 17450,19297 17552,19291 17549,19120 17610,19116 17608,19054 17600,18994
+#: by: P. Loll:
+Windenweg: guter Beton	Q0 16306,2364 16106,2514 16012,2592 15923,2667 15870,2768 15785,2900 15751,2936 15602,3099
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
