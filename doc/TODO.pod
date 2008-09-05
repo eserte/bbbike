@@ -2851,6 +2851,15 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (H5) (improvement)
+
+Temporär gesperrte Straßen wie z.B. der Innovationspark Köpenick oder
+das Gartenufer in Tiergarten sollten suchbar sein, aber ähnlich wie
+temp_blockings behandelt werden, d.h. der User soll eine
+Ausweichstrecke auswählen können.
+
+Das gleiche könnte man generell auch für Fähren machen.
+
 =item * (M4) (bug)
 
 Einige Einstellungen in bbbike.cgi.config scheinen bei der
