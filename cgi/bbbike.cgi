@@ -4540,6 +4540,7 @@ EOF
 	    print " <option " . $imagetype_checked->("mapserver") . ">MapServer\n" if $can_mapserver;
 	    print " <option " . $imagetype_checked->("berlinerstadtplan") . ">www.berliner-stadtplan.com\n" if $can_berliner_stadtplan_post;
 	    print " <option " . $imagetype_checked->("googlemaps") . ">Google Maps\n" if $can_google_maps;
+	    #XXX print " <option " . $imagetype_checked->("googlemapsstatic") . ">Google Maps (static)\n" if 1;#XXXXXXXXXXXXXXXXXX
 	    print " </select></span>\n";
 	    print "<br>\n";
 
@@ -5005,10 +5006,14 @@ sub draw_route {
 
     my %bbbikedraw_args;
 
-    if (defined $q->param('imagetype') &&
-	$q->param('imagetype') eq 'googlemaps') {
-	$bbbikedraw_args{Module} = "BBBikeGoogleMaps";
-	$bbbikedraw_args{BBBikeRoute} = $route;
+    if (defined $q->param('imagetype')) {
+	if ($q->param('imagetype') eq 'googlemaps') {
+	    $bbbikedraw_args{Module} = "BBBikeGoogleMaps";
+	    $bbbikedraw_args{BBBikeRoute} = $route;
+	} elsif ($q->param('imagetype') eq 'googlemapsstatic') {
+	    $bbbikedraw_args{Module} = "GoogleMapsStatic";
+	    $q->param('imagetype', 'png'); # XXX hacky...
+	}
     }
 
     my @header_args = @cache;
@@ -5179,7 +5184,7 @@ sub draw_map {
 	    chmod 0644, "$map_file~";
 	    $q->param('geometry', $detailwidth."x".$detailheight);
 	    $q->param('draw', 'str', 'ubahn', 'sbahn', 'wasser', 'flaechen', 'ort', 'berlin');
-	    $q->param('drawwidth', 1);
+#XXX del?	    $q->param('drawwidth', 1);
 	    # XXX Argument sollte übergeben werden (wird sowieso noch nicht
 	    # verwendet, bis auf Überprüfung des boolschen Wertes)
 	    $q->param('strlabel', 'str:HH,H');#XXX if $args{-strlabel};

@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Radwege in Berlin
-#: version: $Id: radwege-orig,v 4.182 2008/08/11 19:06:37 eserte Exp eserte $
+#: version: $Id: radwege-orig,v 4.183 2008/09/09 19:33:15 eserte Exp $
 #: category_dash.RW: 8,5
 #: category_dash.RW?: 4,4
 #: category_dash.RW4?: 4,4
@@ -606,7 +606,7 @@ Die letzten 50 Meter sind benutzungspflichtig	RW1; 18225,7004 18003,7144
 	RW0;RW1 9395,8726 9364,8640 9321,8607
 	RW3;RW3 13818,9325 13846,9296
 	RW4;RW4 13846,9296 14140,8977 14374,8726 14560,8528 14698,8371 15053,7966
-	RW4;RW4? 15053,7966 15229,7785
+	RW4;RW3 15053,7966 15229,7785
 	RW;RW 8059,15463 7987,15501
 #: XXX_prog: absichtliche Bruchstelle wegen schlechten Renderings
 	RW;RW 7987,15501 7979,15569 7974,15634 7960,15801

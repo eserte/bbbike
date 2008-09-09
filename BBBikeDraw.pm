@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.57 2008/02/09 20:52:55 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.58 2008/09/07 20:46:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION $bahn_bau_rx);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.57 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.58 $ =~ /(\d+)\.(\d+)/);
 
 $bahn_bau_rx = qr{^[SRU](0|Bau|G|P)$}; # auch ignorieren: Güterbahnen, Parkbahnen
 
@@ -47,7 +47,7 @@ sub new {
     $self->{NoScale}   = delete $args{NoScale};
     $self->{Bg}        = delete $args{Bg}; # "white"/"#rrggbb" . "transparent"
     $self->{UseFlags}  = delete $args{UseFlags};
-    $self->{Width}     = delete $args{Width}; # boolean
+#XXX del???    $self->{Width}     = delete $args{Width}; # boolean # XXX hmmm, this is not in use? because of Width/Height members???
     $self->{RouteWidth}= delete $args{RouteWidth}; # width of route
     $self->{RouteDotted}=delete $args{RouteDotted}; # draw dotted route
     $self->{StrLabel}  = delete $args{StrLabel};
@@ -147,11 +147,12 @@ sub new_from_cgi {
 	$args{Bg} = 'white';
     }
     $args{UseFlags} = 1;
-    # Mit Width (drawwidth) werden breitere Straßen gezeichnet. Damit
-    # verlangsamt sich auf meinem Celeron 466 das Zeichnen von
-    # ca. 3.5 auf 4 Sekunden.
-    $args{Width}    = $q->param('drawwidth')
-	if defined $q->param('drawwidth');
+#XXX del???
+#     # Mit Width (drawwidth) werden breitere Straßen gezeichnet. Damit
+#     # verlangsamt sich auf meinem Celeron 466 das Zeichnen von
+#     # ca. 3.5 auf 4 Sekunden.
+#     $args{Width}    = $q->param('drawwidth')
+# 	if defined $q->param('drawwidth');
     $args{StrLabel} = [ $q->param('strlabel') ]
 	if defined $q->param('strlabel');
     $args{ImageType} = $q->param('imagetype')

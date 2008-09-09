@@ -2354,7 +2354,7 @@ EOF
        text  => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarer Str. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 20.07.2005-01.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 1762,31318 1918,31279 1931,31275 2126,31207
+userdel	2 1762,31318 1918,31279 1931,31275 2042,31236 2126,31207
 EOF
      },
      { from  => 1121724000, # 2005-07-19 00:00
@@ -7313,7 +7313,7 @@ EOF
        text  => 'B 273 Breite Str. OD Oranienburg, zw. Berliner Str. u. Havelstr. Straßenbauarbeiten Vollsperrung 19.03.2007-22.07.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -1571,38406 -1553,38501 -1517,38543 -1500,38565
+userdel	q4::inwork -1571,38406 -1553,38501 -1515,38500 -1487,38509
 EOF
      },
      { from  => 1195945200, # 2007-11-25 00:00
@@ -10552,7 +10552,7 @@ EOF
        text  => 'B 273 Breite Str. OD Oranienburg, zw. Berliner Str. und Havelstr. Deckschichteinbau Vollsperrung 28.11.2007-04.12.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -1595,38315 -1571,38406 -1553,38501 -1517,38543
+userdel	q4::inwork -1595,38315 -1571,38406 -1553,38501 -1515,38500
 EOF
      },
      { from  => 1195513200, # 2007-11-20 00:00
@@ -12197,7 +12197,7 @@ EOF
        text  => 'B 273 Bernauer Str., Schloßplatz OD Oranienburg Deckeneinbau Vollsperrung 11.08.2008-01.09.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -1553,38501 -1517,38543 -1500,38565
+userdel	q4::inwork -1553,38501 -1515,38500 -1487,38509
 EOF
      },
      { from  => 1218924000, # 2008-08-17 00:00

@@ -2,14 +2,14 @@
 #: encoding: iso-8859-1
 #: title.de: Orte im weiteren Umland
 #: title.en: Places far away
-#: version: $Id: orte2-orig,v 4.51 2008/08/11 19:06:36 eserte Exp $
+#: version: $Id: orte2-orig,v 4.52 2008/09/09 19:33:43 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Hannover	6 -238396,-7589
 Hamburg	6 -224299,122800
 Lübeck	6 -177268,158951
 Kiel	6 -215604,208878
-Leipzig	6 -57083,-119556
+Leipzig	6 -56749,-119299
 Dresden	6 36012,-150175
 Halle	6 -84779,-105018
 Magdeburg	6 -109192,-32688
@@ -59,7 +59,7 @@ Demmin	4 -17728,166453
 Ahrensburg	4 -207119,137428
 Burg|a. Fehmarn	4 -141926,222560
 Eckernförde	4 -236318,224563
-Schkeuditz	4 -67652,-114176
+Schkeuditz	4 -67500,-113991
 Bernburg| (Saale)	4 -100606,-69760
 Aschersleben	4 -120131,-74464
 Köthen	4 -85143,-74737
@@ -705,7 +705,7 @@ Schköna	1 -46410,-81732
 Pouch	1 -55331,-88573
 Reibitz	1 -51683,-95589
 Brinnis	1 -52872,-100139
-Hohenroda	1 -53606,-102338
+Hohenroda	1 -53633,-102202
 Kletzen	1 -54319,-107262
 Elend	1 -172721,-76657
 Steutz	1 -78272,-60469

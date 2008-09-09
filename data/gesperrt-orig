@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.189 2008/08/11 19:21:05 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.191 2008/09/09 19:44:53 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
 ###################################################################
@@ -1712,6 +1712,11 @@ Treppe (17 Stufen)	BNP:30 2262,30691
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: append_comment Borgsdorf vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Venedig	1 -460,33067 -529,33240
+#: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#
+#
+#: append_comment Birkenwerder vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Treppe mit 1+25+1 Stufen	BNP:45 1592,31772
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #
 #

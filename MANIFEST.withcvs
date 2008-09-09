@@ -986,6 +986,7 @@ tmp/.keep_me
 #make_small_bundle->../Makefile.PL
 #make_small_pi_osd->../Makefile.PL
 BBBikeRouting/Boat.pm
+BBBikeDraw/GoogleMapsStatic.pm
 Bundle/BBBike.tpl.pm
 Bundle/BBBike_radzeit.pm
 Bundle/BBBike_windist.pm

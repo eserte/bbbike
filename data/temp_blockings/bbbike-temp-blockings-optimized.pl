@@ -1000,15 +1000,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1220652000,
-         'text' => 'L 033 Strausberg - Berlin zw. AS Berlin-Marzahn und Abzw. Neuenhagen Deckenerneuerung Vollsperrung 11.08.2008-05.09.2008 ',
-         'from' => 1218319200,
-         'id' => 1440,
-         'data' => 'userdel	2::inwork 28569,16324 27328,15740
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1230073200,
          'text' => 'L 216 Gollin - Templin OD Vietmannsdorf, zw. Golliner Str. und OA Ri. Templin Br¸cken- und Straﬂenbau Vollsperrung 11.08.2008-23.12.2008 ',
@@ -1101,15 +1093,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1220824800,
-         'text' => 'B 101 Lauchhammerstr. OD Elsterwerda, zw. Ackerstr. und Elsterstr. Historische Einkaufsnacht Vollsperrung 06.09.2008-07.09.2008 ',
-         'from' => 1220565600,
-         'id' => 1466,
-         'data' => 'userdel	2::temp 21106,-104865 20827,-105106 20890,-105457
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1230073200,
          'text' => 'B 109 August-Bebel-Str. OD Templin, zw. R.-Koch-Str. und Prenzlauer Allee Grundhafter Straﬂenausbau Vollsperrung 01.09.2008-23.12.2008 ',
@@ -1128,15 +1112,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1220738400,
-         'text' => 'L 029 Berliner Straﬂe OL Oderberg in/aus Richtg. Liepe, Hˆhe Hausnr. 51-55 Kanalarbeiten Vollsperrung 06.09.2008-06.09.2008 ',
-         'from' => 1220565600,
-         'id' => 1469,
-         'data' => 'userdel	q4::inwork 52671,51846 53187,51918
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1221516000,
          'text' => 'L 059 Wainsdorf - Prˆsen zw. OA Wainsdorf und OE Prˆsen Deckenerneuerung Vollsperrung 29.08.2008-15.09.2008 ',
@@ -1146,15 +1122,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1220824800,
-         'text' => 'L 071 OD Schˆnewalde, zw. Weiﬂener Str. und Gartenstr. 850 - Jahrfeier Vollsperrung 06.09.2008-07.09.2008 ',
-         'from' => 1220565600,
-         'id' => 1471,
-         'data' => 'userdel	q4::temp 60,-66035 -575,-65978
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1226790000,
          'text' => 'L 073 Neue Beelitzer Str. OL Luckenwalde, zw. Bahnhofstr. und Beelitzer Tor Straﬂenausbau Vollsperrung 20.09.2008-15.11.2008 ',
