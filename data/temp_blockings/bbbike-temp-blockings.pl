@@ -11899,8 +11899,8 @@ userdel	2::inwork -7219,-19011 -7172,-19223
 EOF
      },
      { from  => 1215900000, # 2008-07-13 00:00
-       until => 1220997600, # 2008-09-10 00:00
-       text  => 'B 320 Lieberose - Lamsfeld OD Lamsfeld Grundhafter Ausbau Vollsperrung 14.07.2008-09.09.2008 ',
+       until => 1221343200, # 2008-09-14 00:00
+       text  => 'B 320 Lieberose - Lamsfeld OD Lamsfeld Grundhafter Ausbau Vollsperrung 14.07.2008-13.09.2008 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 66964,-46059 67237,-46233
@@ -12498,6 +12498,73 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 2423,-11316 2580,-11069 2629,-10301
+EOF
+     },
+     { from  => 1221076110, # 2008-09-10 21:48
+       until => 1222811999, # 2008-09-30 23:59
+       text  => 'Ewaldstr. (Treptow) in beiden Richtungen zwischen Bohnsdorfer Weg und Rebenweg geplatzte Wasserleitung, Straße vollständig gesperrt (bis Ende 09.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_009890',
+       data  => <<EOF,
+userdel	2::inwork 20673,-31 20590,-120 20519,-198
+userdel	2::inwork 20688,-10 20684,105 20719,140
+userdel	2::inwork 20161,-487 20348,-380 20476,-279 20505,-217
+EOF
+     },
+     { from  => 1217714400, # 2008-08-03 00:00
+       until => 1221170400, # 2008-09-12 00:00
+       text  => 'B 246 zw. Eisenhüttenstadt und Fünfeichen Deckenerneuerung Vollsperrung 04.08.2008-11.09.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 92608,-26929 91443,-26741 90867,-27074
+EOF
+     },
+     { from  => 1222639200, # 2008-09-29 00:00
+       until => 1223589600, # 2008-10-10 00:00
+       text  => 'B 158 Neuenhagen - B158 A Kreuzung B158/ B158A Altglietzen/ L 28 Gabow Straßenbauarb., Radweg, LSA Vollsperrung 30.09.2008-09.10.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 54877,47645 54012,46907
+EOF
+     },
+     { from  => 1221775200, # 2008-09-19 00:00
+       until => 1221948000, # 2008-09-21 00:00
+       text  => 'B 179 zw. Neu Lübbenau und Leibsch Deckenerneinbau Vollsperrung 20.09.2008-20.09.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 43537,-35512 43650,-35762 43875,-35850 44731,-35697
+EOF
+     },
+     { from  => 1220738400, # 2008-09-07 00:00
+       until => 1222898400, # 2008-10-02 00:00
+       text  => 'B 198 Angermünde - Greiffenberg zw. OA Kerkow und Abzw. Bruchhagen Deckschichterneuerung Vollsperrung 08.09.2008-01.10.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 46704,75833 46875,75023 47308,73565 47908,73136 48951,71593
+EOF
+     },
+     { from  => 1221948000, # 2008-09-21 00:00
+       until => 1222812000, # 2008-10-01 00:00
+       text  => 'L 028 Neureetz - B158 Kreuzung bei Gabow/ B158/B158A Straßenbauarb., Radweg, LSA Vollsperrung 22.09.2008-30.09.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 54877,47645 55048,47057
+EOF
+     },
+     { from  => 1221343200, # 2008-09-14 00:00
+       until => 1229122800, # 2008-12-13 00:00
+       text  => 'L 232 Lichtenow - Rehfelde Brücke über das Zinndorfer Mühlenfließ bei Werder Brückenerneuerung Vollsperrung 15.09.2008-12.12.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 46163,13586 46017,13884
+EOF
+     },
+     { from  => 1220738400, # 2008-09-07 00:00
+       until => 1225148400, # 2008-10-28 00:00
+       text  => 'L 702 zw. Werenzhain und Dübrichen Deckenernuerung Vollsperrung 08.09.2008-27.10.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 20497,-83501 20193,-83398 19068,-82695 17319,-82108
 EOF
      },
     );
