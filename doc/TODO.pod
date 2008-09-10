@@ -1485,6 +1485,32 @@ Bau oder im Tunnel zu zeichnen, kann man folgendes nehmen:
 
     $c->itemconfigure("L5",-dash=>[1,16])
 
+=item * (H3) (improvement)
+
+A better configuration system. Low-level configuration variables
+(which directly map to states in the program, i.e. are variables
+there), composite configuration variables (e.g. a profile
+E<quot>RennradE<quot>, which sets a number of lower-level
+configuration variables), and the possibility to nest composite
+configuration variables. Define some good predefines: Rennrad,
+Mountainbike, Trekkingrad, gemütliches Fahren (Spazierenfahren),
+normales Fahren, schnelles Fahren, mit Anhänger, mit Kindersitz,
+E<quot>kindergeeignetE<quot> (whatever this means) etc.
+
+Furthermore, configuration variables should go into a category system
+with categories like map display (could control the visible layers and
+lazyness of drawing), supplemental display (e.g. overview map),
+routing preferences (with subcategories street category, quality,
+handicap, cyclepath, bikepower preferences, maybe weather etc.), route
+presentation preferences (should the route list pop up or not, how to
+display the route (which could also go to the map display)), gps
+device config, GUI level in terms of sophistication (which knobs are
+actually there? how many files to remember in E<quot>last usedE<quot>
+menus?), dataset-related configurations (e.g. the San Francisco map
+does not have the S-Bahn-Layer, or generally OSM-generated layers do
+not have the landstrassen layer and do not distinguish between city
+and outer city data), ...
+
 =back
 
 =head2 Plugins
