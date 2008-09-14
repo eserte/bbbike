@@ -154,29 +154,135 @@ listing should appear as in the bbd file, specify B<unsorted>.
 B<natural> should be used for E<quot>naturalE<quot> sorting (see
 L<Sort::Naturally>).
 
+=back
+
+=head3 Plotting hint directives
+
+Plotting hint directives are used to control plotting of items. The
+directives can only be set as global directives. The directives
+explained below exist in two forms:
+
+=over
+
+=item C<I<directive>: ...>
+
+The directive is valid for all items (unless overriden by per-category
+directives).
+
+=item C<I<directive>.I<category>: ...>
+
+The directive is valid for items with the named I<category> (this
+overrides directives without category specification).
+
+=back
+
+The list of plotting hint directives:
+
+=over
+
+=item C<line_color: I<color>>
+
+=item C<line_color.I<category>: I<color>>
+
+Define the color for line items. I<color> should be in the form
+C<#rrggbb>.
+
+XXX: The category-less form is NYI!.
+XXX: currently category_color.category is used instead of line_color.category
+
+=item C<line_width: I<width>>
+
+=item C<line_width.I<category>: I<width>>
+
+Define the width of line items.
+
+XXX: The form with category is NYI!
+
+=item C<line_length: I<length>>
+
+=item C<line_length.I<category>: I<length>>
+
+Define the length of line items. In the Perl/Tk interface this is
+currently used for oneway and blocked symbols.
+
+XXX: The form with category is NYI!
+
 =item C<line_dash: I<x, y, ...>>
+
+=item C<line_dash.I<category>: I<x, y, ...>>
 
 Define the default dash pattern for line items. See L<Tk::Canvas/DASH
 PATTERNS> for the list integer syntax.
 
-=item C<category_dash.I<category>: I<x, y, ...>>
+XXX: Currently C<category_dash.category.> is used instead of C<line_dash.category>.
 
-Define the dash pattern for line items with the category I<category>.
+=item C<line_capstyle: I<capstyle>>
 
-=item C<category_color.I<category>: I<color>>
+=item C<line_capstyle.I<category>: I<capstyle>>
 
-Define the color for line items with the category I<category>.
-I<color> should be in the form C<#rrggbb>.
+Define the capstyle for line items. Valid values are C<butt>,
+C<projecting>, or C<round> (see L<Tk::Canvas>).
 
-=item C<category_image.I<category>: I<image_name>>
+XXX: Currently C<category_capstyle.category> is used instead of
+C<line_capstyle.category>.
+
+=item C<line_arrow: I<arrowspec>>
+
+=item C<line_arrow.I<category>: I<arrowspec>>
+
+Define whether arrows should be drawn on line items. Valid values
+are C<none>, C<last>, C<first>, or C<both> (see L<Tk::Canvas>).
+
+XXX: The form with category form is NYI!
+
+=item C<line_shorten: I<boolean>>
+
+=item C<line_shorten.I<category>: I<boolean>>
+
+Define whether line items should be shortened on both ends.
+
+XXX: Currently C<category_line_shorten.category> is used instead of
+C<line_shorten.category>.
+
+=item C<line_shorten_end: I<boolean>>
+
+=item C<line_shorten_end.I<category>: I<boolean>>
+
+Define whether line items should be shortened at the end.
+
+XXX: Currently C<category_line_shorten_end.category> is used instead
+of C<line_shorten_end.category>.
+
+=item C<item_size: I<integer>>
+
+=item C<item_size.I<category>: I<integer>>
+
+Define the size of items (for example base label font size).
+
+XXX: The category-less form is NYI!
+XXX: Currently C<category_size.category> is used instead
+C<item_size.category>.
+
+=item C<item_image: I<image_name>>
+
+=item C<item_image.I<category>: I<image_name>>
 
 Define an image for point items. The image name is usually without
 suffix and will be searched in the default bbbike image directories,
 if specified relative.
 
-=item C<category_stipple.I<category>: I<image_name>>
+XXX: The category-less form is NYI!
+XXX: Currently C<category_image.category> is used instead
+C<item_image.category>.
 
-Define an stipple (which is usually an xbm image) for area items.
+=item C<item_stipple: I<image_name>>
+
+=item C<item_stipple.I<category>: I<image_name>>
+
+Define a stipple (which is usually an xbm image) for area items.
+
+XXX: The category-less form is NYI!
+XXX: Currently C<category_stipple.category> is used instead C<item_stipple.category>.
 
 =back
 

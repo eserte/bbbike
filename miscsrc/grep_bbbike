@@ -2,14 +2,78 @@
 # greppt in den BBBike-Dateien
 use strict;
 use FindBin;
+use File::Glob qw(bsd_glob);
+use Getopt::Long;
 chdir "$FindBin::RealBin/.." or die "Can't chdir to bbbike directory: $!";
+my $use_ack;
+GetOptions("ack!" => \$use_ack)
+    or die "usage: $0 [-ack] ...";
 die "No arguments" if !@ARGV;
-my @files;
-open my $fh, "MANIFEST.withcvs" or die $!;
-while(<$fh>) {
-    chomp;
-    next if /^#/ || /^\s*$/;
-    my($file) = split /\s+/, $_;
-    push @files, $file;
+
+if (!$use_ack) {
+    my @files;
+    open my $fh, "MANIFEST.withcvs" or die $!;
+    while(<$fh>) {
+	chomp;
+	next if /^#/ || /^\s*$/;
+	my($file) = split /\s+/, $_;
+	push @files, $file;
+    }
+    system("grep", @ARGV, @files); # use xargs?
+} else {
+    warn <<EOF;
+**********************************************************************
+* does not work as inteded, --ignore-dir .../... does not work with ack
+**********************************************************************
+EOF
+    my @ack_args;
+    @ack_args = ('ack', '-a',
+		 (map { ('--ignore-dir', $_) }
+		  (
+		   'Attic',
+		   'babybike/_Inline',
+		   'blib',
+		   'cache',
+		   'cover_db',
+		   'CRASH',
+		   'data/old',
+		   'data_zuerich_ch',
+		   bsd_glob('data_*_osm*'),
+		   bsd_glob('datagdf_*'),
+		   'distfiles',
+		   bsd_glob('lib/5.*'),
+		   bsd_glob('lib/i386'),
+		   bsd_glob('lib/amd64'),
+		   'misc/data_corrected',
+		   'misc/data_to_check',
+		   'misc/download',
+		   'misc/download_tracks',
+		   'misc/e00',
+		   'misc/fahrinfo',
+		   'misc/gelbeseiten',
+		   'misc/globe',
+		   'misc/gps_data',
+		   'misc/mapinfo_examples',
+		   'misc/mps_examples',
+		   'misc/ovl_resources',
+		   'misc/screenshots',
+		   'misc/tk50',
+		   'misc/verkehrszeichen',
+		   'miscsrc/senat_b', # XXX contains data, shouldn't here!
+		   'nytprof',
+		   'profiler',
+		   'projects/bbbike.sourceforge.net/cgi-bin',
+		   'projects/infrasystem/data',
+		   bsd_glob('projects/radlstadtplan_muenchen/data_Muenchen_DE*'),
+		   'projects/www.radzeit-old.de',
+		   'projects/www.radzeit.de/BBBike',
+		   'projects/www.radzeit.de/public/mapserver/brb',
+		   'routopedia/data',
+		   'trash',
+		  )
+		 ),
+		 @ARGV
+		);
+    system(@ack_args);
 }
-system("grep", @ARGV, @files); # use xargs?
+

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.385 2008/08/27 23:52:06 eserte Exp $
+# $Id: bbbike,v 3.385 2008/08/27 23:52:06 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -238,8 +238,6 @@ eval 'use BBBikeXS 0.09';
 #BEGIN{mymstat("after use BBBikeXS");}
 ## DEBUG_END
 
-$^W = 1;
-
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
@@ -253,6 +251,8 @@ $os =   $^O eq 'MSWin32' || $^O eq 'os2' || $^O eq 'dos' ? 'win'
       : $^O eq 'MacOS'				    	 ? 'mac'
       : 						   'unix';
 $os_bsd = $^O =~ /bsd/i;
+
+$^W = $devel_host; # $advanced also sets $^W, see below
 
 if (!defined $is_handheld) {
     $is_handheld = $Config{"archname"} =~ /^arm-linux$/i;
@@ -692,6 +692,7 @@ if ($environment ne "normal") {
 #mymstat("before advanced");
 ## DEBUG_END
 if ($advanced) {
+    $^W = 1;
     Karte::preload(':all');
     require BBBikeAdvanced;
 }
@@ -5668,15 +5669,15 @@ sub define_item_attribs {
 	$line_length{$_} = [@{ $line_length{"sperre1"}}];
     }
 
-    %line_arrow =
+    %category_line_arrow =
 	('PI' => 'last',
 	 'P0' => 'last',
 	);
-    %line_shorten =
+    %category_line_shorten =
 	('CP'  => 1,
 	 'P0'  => 1,
 	);
-    %line_shorten_end =
+    %category_line_shorten_end =
 	('CP2' => 1,
 	 'PI'  => 1,
 	);
@@ -6041,10 +6042,10 @@ sub generate_plot_functions {
 		 || $category_color{$cat_rueck}
 		 || $str_color{$abk} || 'white') :
 		     'white';
-	    my $this_width_hin = ($layer_category_width{$abk} && $layer_category_width{$abk}{$cat_hin})
+	    my $this_width_hin = ($layer_category_line_width{$abk} && $layer_category_line_width{$abk}{$cat_hin})
 		 || $category_width{$cat_hin} || $default_width || 1;
 	    my $this_width_rueck = defined $cat_rueck ?
-		(($layer_category_width{$abk} && $layer_category_width{$abk}{$cat_rueck}) || $category_width{$cat_rueck} || $default_width || 1) :
+		(($layer_category_line_width{$abk} && $layer_category_line_width{$abk}{$cat_rueck}) || $category_width{$cat_rueck} || $default_width || 1) :
 		    1;
 	    my @coordlist;
 	CROSSINGS_LOOP:
@@ -6106,10 +6107,14 @@ sub generate_plot_functions {
 		my $category = $cat_hin; # used for undirected things
 		my $item; # canvas item drawn
 
-		if (exists $line_shorten{$cat_hin}) { # XXX no $cat_rueck handling
+		my $line_shorten_hin = ($layer_category_line_shorten{$abk} && $layer_category_line_shorten{$abk}{$cat_hin}) || $layer_line_shorten{$abk} || $category_line_shorten{$cat_hin} || $line_shorten{$abk};
+		if (defined $line_shorten_hin) { # XXX no $cat_rueck handling
 		    line_shorten(\@coordlist);
-		} elsif (exists $line_shorten_end{$cat_hin}) { # XXX no $cat_rueck handling
-		    line_shorten_end(\@coordlist);
+		} else {
+		    my $line_shorten_end_hin = ($layer_category_line_shorten_end{$abk} && $layer_category_line_shorten_end{$abk}{$cat_hin}) || $layer_line_shorten_end{$abk} || $category_line_shorten_end{$cat_hin} || $line_shorten_end{$abk};
+		    if (defined $line_shorten_end_hin) { # XXX no $cat_rueck handling
+		        line_shorten_end(\@coordlist);
+		    }
 		} 
 
 		my $sight_draw = sub {
@@ -6453,7 +6458,7 @@ sub generate_plot_functions {
 			       ($line_dash_rueck ? (-capstyle => $line_dash_rueck) : ()),
 			       ($stipple ? (-stipple => $stipple) : ()),
 			       (exists $layer_line_arrow{$abk}{$cat_hin} ? (-arrow => $layer_line_arrow{$abk}{$cat_hin})
-				: exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
+				: exists $category_line_arrow{$cat_hin} ? (-arrow => $category_line_arrow{$cat_hin}) : ()),
 			      );
 			}
 			if (defined $cat_rueck) {
@@ -6505,7 +6510,7 @@ sub generate_plot_functions {
 				     ($line_dash ? (-dash => $line_dash) : ()),
 				     ($line_capstyle ? (-capstyle => $line_capstyle) : ()),
 				     ($stipple ? (-stipple => $stipple) : ()),
-				     #(exists $line_arrow{$cat} ? (-arrow => $line_arrow{$cat}) : ()),
+				     #(exists $category_line_arrow{$cat} ? (-arrow => $category_line_arrow{$cat}) : ()),
 				     # XXX Tk problem? bad rendering with capstyle=>"round" and arrow=>something
 				     -arrow => ($line_capstyle && $line_capstyle eq 'round' ? "none" : "last"),
 				    );
@@ -6550,7 +6555,7 @@ sub generate_plot_functions {
 				 ($line_dash_hin ? (-dash => $line_dash_hin) : ()),
 				 ($line_capstyle_hin ? (-capstyle => $line_capstyle_hin) : ()),
 				 (exists $layer_line_arrow{$abk}{$cat_hin} ? (-arrow => $layer_line_arrow{$abk}{$cat_hin})
-				: exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
+				: exists $category_line_arrow{$cat_hin} ? (-arrow => $category_line_arrow{$cat_hin}) : ()),
 				);
 			}
 
@@ -6728,7 +6733,7 @@ EOF
 			       -tags => "$abk-bg");
 	    } elsif ($abk =~ /^L(\d+)/) {
 		my $color = $category =~ /^\#/ ? $category : exists $layer_category_color{$abk} && exists $layer_category_color{$abk}{$category} ? $layer_category_color{$abk}{$category} : exists $category_color{$category} ? $category_color{$category} : undef;
-		my $width = ($layer_category_width{$abk} && $layer_category_width{$abk}{$category}) || $category_width{$category} || $p_width{$abk} || $default_width || 6;
+		my $width = ($layer_category_line_width{$abk} && $layer_category_line_width{$abk}{$category}) || $category_width{$category} || $p_width{$abk} || $default_width || 6;
 		$c->createLine($x, $y, $x, $y,
 			       (defined $color ? (-fill => $color) : ()),
 			       -width => $width,
@@ -7604,7 +7609,7 @@ sub draw_street_numbers {
 		# but it's not possible in Tk to set subpixel positions.
 		$item = $c->createText
 		    ($midx,$midy,
-		     -text => ($type =~ /^(B|BAB|DK|DW)$/ ? "" : $type) . $nr,
+		     -text => ($type =~ /^(B|BAB|DK|DW)$/ ? "" : $type) . (defined $nr ? $nr : ""),
 		     -font => $scale < SMALLER_TABLES ? $font{'tiny'} : $font{'normal'},
 		     -fill => ($do_round             ? 'white'  :
 			       $type =~ /^(BAB|DK)$/ ? 'white'  :
@@ -10571,7 +10576,7 @@ sub plotp {
 
 # Konfiguriert Punktsymbole, z.B. U-Bahn-Zeichen
 ### AutoLoad Sub
-sub plot_symbol {
+sub config_symbol {
     my($c, $abk, %args) = @_;
     my $tag_bg    = $args{'-tag_bg'} || "$abk-bg";
     my $tag_fg    = $args{'-tag_fg'} || "$abk-fg";
@@ -10840,7 +10845,7 @@ sub plot_point {
 	    $draw_sub->($ret);
 	    $real_i++;
 	}
-	plot_symbol($c, $abk);
+	config_symbol($c, $abk);
       PLOTPOINT_CONT:
 
 	if (($edit_mode || $edit_normal_mode || $abk eq 'relgps' || $args{FastUpdate})) { # XXX? and !$diffed_str) {
@@ -13814,11 +13819,15 @@ sub reset_free_layer {
     delete $layer_line_capstyle{$abk};
     delete $layer_category_size{$abk};
     delete $layer_category_color{$abk};
-    delete $layer_category_width{$abk};
+    delete $layer_category_line_width{$abk};
     delete $layer_category_image{$abk};
     delete $layer_category_stipple{$abk};
     delete $layer_category_dash{$abk};
     delete $layer_category_capstyle{$abk};
+    delete $layer_category_line_shorten{$abk};
+    delete $layer_line_shorten{$abk};
+    delete $layer_category_line_shorten_end{$abk};
+    delete $layer_line_shorten_end{$abk};
     remove_from_stack($abk);
 }
 
@@ -20302,9 +20311,10 @@ sub handle_global_directives {
     return if !$glob_dir;
     my %accept_global_hash_directives = map{($_,1)}
 	qw(category_size category_color
-	   category_width category_image
+	   category_line_width category_image
 	   category_stipple category_dash
 	   category_capstyle
+	   category_line_shorten category_line_shorten_end
 	  );
     my %accept_global_hashref_directives = map{($_,1)}
 	qw(str_attrib p_attrib);
@@ -20314,7 +20324,9 @@ sub handle_global_directives {
 	qw(line_width line_length
 	   line_dash line_arrow
 	   line_capstyle
+	   line_shorten line_shorten_end
 	  );
+    my %aliases = (category_width => "category_line_width");
 
     my $get_val = sub {
 	my($key, $vals) = @_;
@@ -20327,6 +20339,9 @@ sub handle_global_directives {
 
     # XXX scrollregion
     while(my($directive, $vals) = each %$glob_dir) {
+	if ($aliases{$directive}) {
+	    $directive = $aliases{$directive};
+	}
 	if ($accept_global_catless_directives{$directive}) {
 	    no strict 'refs';
 	    ${$directive}{$abk} = $get_val->($directive, $vals);

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.26 2008/05/16 20:35:56 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.27 2008/09/14 21:37:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -537,7 +537,7 @@ sub BBBikeLazy::plotstr_on_demand {
 		    }
 		}
 	    }
-	    plot_symbol($c, $abk);
+	    config_symbol($c, $abk);
 
 	    undef $draw_sub;
 	}

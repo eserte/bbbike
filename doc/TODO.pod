@@ -1511,6 +1511,23 @@ does not have the S-Bahn-Layer, or generally OSM-generated layers do
 not have the landstrassen layer and do not distinguish between city
 and outer city data), ...
 
+=item * (H2) (improvement)
+
+Fahrradfreundliche Zugänge, die nur für einzelne Bahnsteige gelten,
+mit entsprechenden Pfeilen kennzeichnen. Dazu muss nach heutigen Stand
+der Technik eine weitere Datei [usr]bahnhof_bg2 angelegt werden,
+welche per plotstr gezeichnet wird und nur kurze Pfeile enthält
+(line_shorten_end). Besser wäre es, wenn die Datei [usr]bahnhof_bg
+beides enthalten könnte.
+
+=item * (H5) (improvement)
+
+Rationalisierung der layer/category-Variablen
+(%layer_category_line_width etc.) fortsetzen. Es sollte nur eine Liste
+geben, die alle möglichen Variablen enthält. Das Ansprechen sollte
+immer gleich sein (layer/category vor layer vor category vor global).
+Die Direktiven für bbd-Dateien sollen laut Pod angepasst werden.
+
 =back
 
 =head2 Plugins

@@ -731,15 +731,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1221343200,
-         'text' => 'B 320 Lieberose - Lamsfeld OD Lamsfeld Grundhafter Ausbau Vollsperrung 14.07.2008-13.09.2008 ',
-         'from' => 1215900000,
-         'id' => 1405,
-         'data' => 'userdel	q4::inwork 66964,-46059 67237,-46233
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -963,15 +955,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1221170400,
-         'text' => 'L 220 AS Finowfurt - Joachimsthal zw. der B167 und der OL Eichhorst Deckenerneuerung Vollsperrung 04.09.2008-11.09.2008 ',
-         'from' => 1220392800,
-         'id' => 1473,
-         'data' => 'userdel	2::inwork 25500,54100 25387,53500 25379,53337 25368,53125 25393,52762 25556,52375 26375,50681 26256,50418
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1221429600,
          'text' => 'L 793 Alfred-Kühne-Str. zw. OA Ludwigsfelde und Am Birkengrund Deckeninstandsetzung Vollsperrung 12.09.2008-14.09.2008 ',
@@ -993,15 +977,7 @@ userdel	2::inwork 20161,-487 20348,-380 20476,-279 20505,-217
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1221170400,
-         'text' => 'B 246 zw. Eisenhüttenstadt und Fünfeichen Deckenerneuerung Vollsperrung 04.08.2008-11.09.2008 ',
-         'from' => 1217714400,
-         'id' => 1476,
-         'data' => 'userdel	2::inwork 92608,-26929 91443,-26741 90867,-27074
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1223589600,
          'text' => 'B 158 Neuenhagen - B158 A Kreuzung B158/ B158A Altglietzen/ L 28 Gabow Straßenbauarb., Radweg, LSA Vollsperrung 30.09.2008-09.10.2008 ',

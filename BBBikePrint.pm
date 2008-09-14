@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.46 2008/08/02 09:16:46 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.46 2008/08/02 09:16:46 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003,2006 Slaven Rezic. All rights reserved.
@@ -614,7 +614,7 @@ sub draw_legend {
 	    my($x,$y) = ($left+$start_symbol, $top+$height+2);
 	    my $item_fg = $c->createImage($x+4, $y+3, -tags => "legend");
 	    $add_binding->($item_fg, "p", $abk);
-	    plot_symbol($c, $abk, -tag_fg => $item_fg);
+	    config_symbol($c, $abk, -tag_fg => $item_fg);
 	} elsif ($abk =~ /^(vf|kn|rest|ki)$/) {
 	    # XXX abk xxx und pl fehlen...
 	    my $item_fg = $c->createImage($left+$start_symbol, $top+$height+2,
@@ -622,7 +622,7 @@ sub draw_legend {
 					  -tags => 'legend');
 	    my $bg_or_fg = ($abk eq 'vf' ? "bg" : "fg");
 	    $add_binding->($item_fg, "p", $abk, $bg_or_fg);
-	    plot_symbol($c, $abk, -tag_fg => $item_fg);
+	    config_symbol($c, $abk, -tag_fg => $item_fg);
 	} elsif ($abk =~ /^lsa$/) {
 	    my $ampel_photo = get_symbol_scale('lsa-X');
 	    my $item = $c->createImage($left+$start_symbol, $top+$height+2,

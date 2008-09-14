@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.206 2008/08/29 20:40:41 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.206 2008/08/29 20:40:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2008 Slaven Rezic. All rights reserved.
@@ -2436,7 +2436,7 @@ sub check_new_modules {
 	next if $v !~ /bbbike/i && $v !~ /\Q$ENV{HOME}/;
 	next if exists $module_time{$v};
 	my $modtime = (stat($v))[9];
-	if (!defined $modtime) { # may be undefined for temporary "reload" files
+	if (defined $modtime) { # may be undefined for temporary "reload" files
 	    $module_time{$v} = $modtime;
 	    warn "recorded $module_time{$v} for $k\n" if $verbose;
 	}
@@ -2460,7 +2460,7 @@ sub reload_new_modules {
     my @check_c;
     while(my($k, $v) = each %module_time) {
 	my $now = (stat($k))[9];
-	next if $v >= $now;
+	next if ($v||0) >= ($now||0);
 	next if $k =~ /^\Q$tmpdir\/bbbike_reload/;
 	print STDERR "Reloading $k...\n";
 	eval { do $k };

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: downloadosm,v 1.13 2008/08/29 19:45:35 eserte Exp $
+# $Id: downloadosm,v 1.16 2008/09/10 22:08:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -29,7 +29,8 @@ use BBBikeUtil qw(is_in_path);
 my $ua = LWP::UserAgent->new;
 
 my $debug = 1;
-my $reload;
+my $do_reload;
+my $min_age;
 my $n;
 my $o;
 my $xstep = 0.01;
@@ -38,10 +39,10 @@ my $ystep = 0.01;
 sub usage () {
     die <<EOF;
 usage: $0 -o directory x0 y0 x1 y1
-       $0 -reload existing.osm
+       $0 -reload existing.osm ...
 
 First form:  specify a bbox (four parameters, x0 y0 x1 y1)
-Second form: refresh an existing osm file downloaded with this tool
+Second form: refresh existing osm files downloaded with this tool
 
 -n:        no exec
 -debug i:  set debugging/verbosity level (default=$debug)
@@ -54,7 +55,8 @@ For all of Berlin use:
 EOF
 }
 
-GetOptions("reload=s" => \$reload,
+GetOptions("reload!" => \$do_reload,
+	   "minage=i" => \$min_age,
 	   "o=s" => \$o,
 	   "debug=i" => \$debug,
 	   "n" => \$n,
@@ -65,17 +67,35 @@ GetOptions("reload=s" => \$reload,
 	   },
 	  )
     or usage;
+my @reload;
+if ($do_reload) {
+    @reload = @ARGV;
+    if (!@reload) {
+	die "Please specify .osm files to reload!";
+    }
+} else {
+    if (@ARGV) {
+	usage;
+    }
+}
 
-if ($reload) {
-    if (!-r $reload) {
-	die "The file <$reload> does not exist or is not readable.\n";
+if (@reload) {
+    if ($min_age) {
+	@reload = grep { -M $_ >= $min_age || -z $_ } @reload;
     }
-    my $ltlnqr = qr{[-+]?\d+\.\d+};
-    if ($reload !~ m{($ltlnqr),($ltlnqr),($ltlnqr),($ltlnqr)\.osm$}) {
-	die "The file name <$reload> does not look correct, i.e. created by this tool.\n";
+    for my $reload (@reload) {
+	if (!-r $reload) {
+	    die "The file <$reload> does not exist or is not readable.\n";
+	}
     }
-    my($x,$y,$xend,$yend) = ($1,$2,$3,$4);
-    download_osm_tile($x,$y,$xend,$yend, 1);
+    for my $reload (@reload) {
+	my $ltlnqr = qr{[-+]?\d+\.\d+};
+	if ($reload !~ m{($ltlnqr),($ltlnqr),($ltlnqr),($ltlnqr)\.osm$}) {
+	    die "The file name <$reload> does not look correct, i.e. created by this tool.\n";
+	}
+	my($x,$y,$xend,$yend) = ($1,$2,$3,$4);
+	download_osm_tile($x,$y,$xend,$yend, 1);
+    }
 } else {
     my @bbox = @ARGV;
     if (@bbox == 2) { # assume x1,y1 x2,y2
