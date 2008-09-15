@@ -956,15 +956,7 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1221429600,
-         'text' => 'L 793 Alfred-Kühne-Str. zw. OA Ludwigsfelde und Am Birkengrund Deckeninstandsetzung Vollsperrung 12.09.2008-14.09.2008 ',
-         'from' => 1221084000,
-         'id' => 1474,
-         'data' => 'userdel	2::inwork 2423,-11316 2580,-11069 2629,-10301
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_009890',
          'until' => 1222811999,
@@ -1031,6 +1023,24 @@ userdel	2::inwork 20161,-487 20348,-380 20476,-279 20505,-217
          'data' => 'userdel	2::inwork 20497,-83501 20193,-83398 19068,-82695 17319,-82108
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1222466400,
+         'text' => 'K 6425 Wiesenstr. OL Hoppegarten, Einm. Neuer Hönower Weg Deckenerneuerung Vollsperrung 23.09.2008-26.09.2008 ',
+         'from' => 1222034400,
+         'id' => 1483,
+         'data' => 'userdel	2::inwork 27272,11970 27490,11678
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1225407600,
+         'text' => 'L 050 Gubener Str. OD Peitz, zw. Malxebogen und A.-Bebel-Str. Instandsetz.Durchlass, Entwä. Vollsperrung 15.09.2008-30.10.2008 ',
+         'from' => 1221343200,
+         'id' => 1484,
+         'data' => 'userdel	q4::inwork 80426,-59644 80719,-59219
+',
+         'type' => 'handicap'
        }
      
 );

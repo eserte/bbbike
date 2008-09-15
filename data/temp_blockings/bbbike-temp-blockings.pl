@@ -12567,4 +12567,20 @@ EOF
 userdel	2::inwork 20497,-83501 20193,-83398 19068,-82695 17319,-82108
 EOF
      },
+     { from  => 1222034400, # 2008-09-22 00:00
+       until => 1222466400, # 2008-09-27 00:00
+       text  => 'K 6425 Wiesenstr. OL Hoppegarten, Einm. Neuer Hönower Weg Deckenerneuerung Vollsperrung 23.09.2008-26.09.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 27272,11970 27490,11678
+EOF
+     },
+     { from  => 1221343200, # 2008-09-14 00:00
+       until => 1225407600, # 2008-10-31 00:00
+       text  => 'L 050 Gubener Str. OD Peitz, zw. Malxebogen und A.-Bebel-Str. Instandsetz.Durchlass, Entwä. Vollsperrung 15.09.2008-30.10.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 80426,-59644 80719,-59219
+EOF
+     },
     );
