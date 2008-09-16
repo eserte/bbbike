@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Descr.pm,v 1.2 2003/01/08 20:13:17 eserte Exp $
+# $Id: Descr.pm,v 1.4 2008/09/16 19:40:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -16,9 +16,45 @@ package Route::Descr;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
+use FindBin;
 use Strassen::Strasse;
+
+my $VERBOSE = 1;
+my $msg;
+
+#
+# poor man's msg framework
+#
+sub M ($) {
+    my $phrase = shift;
+
+    #  config error?
+    if (!$msg) {
+        warn "Msg not configured\n" if $VERBOSE >= 2;
+        return $phrase; 
+    }
+
+    # well done
+    return $msg->{$phrase} if exists $msg->{$phrase};
+
+    # nothing found, orginal phrase used
+    warn "Unknown translation: $phrase\n" if $VERBOSE;
+    return $phrase;  
+}
+
+sub init_msg {
+    my $lang = shift;
+
+    undef $msg;
+    return if !$lang;
+
+    $msg = eval { do "$FindBin::RealBin/msg/$lang" };
+    if ($msg && ref $msg ne 'HASH') {
+        undef $msg;
+    }    
+}
 
 sub convert {
     my(%args) = @_;
@@ -32,9 +68,15 @@ sub convert {
     my $viahnr  = delete $args{-viahnr};
     my $zielname = delete $args{-zielname};
     my $zielhnr  = delete $args{-zielhnr};
+    my $verbose  = delete $args{-verbose};
+    my $lang  = delete $args{-lang};
+
     if (keys %args) {
 	die "Invalid argument to outout method";
     }
+    $VERBOSE = $verbose if defined $verbose;
+    &init_msg($lang) if $lang;
+
     my(@strnames) = $net->route_to_name($r->path);
     if (!defined $startname) {
 	$startname = $strnames[0]->[0];
@@ -47,14 +89,14 @@ sub convert {
     my %ret;
 
     {
-	my @str = "Route von";
+	my @str = M("Route von");
 	push @str, $startname;
 	push @str, $starthnr if defined $starthnr;
 	if (defined $vianame) {
-	    push @str, "über", $vianame;
+	    push @str, M("&uuml;ber"), $vianame;
 	    push @str, $viahnr if defined $viahnr;
 	}
-	push @str, "bis", $zielname;
+	push @str, M("bis"), $zielname;
 	push @str, $zielhnr if defined $zielhnr;
 	$ret{Start} = $startname;
 	$ret{Goal}  = $zielname;
@@ -79,12 +121,12 @@ sub convert {
 	    } else {
 		$richtung =
 		    ($winkel <= 45 ? 'halb' : '') .
-			($richtung eq 'l' ? 'links ' : 'rechts ') .
-			    "($winkel°) " . Strasse::de_artikel($strname);
+			($richtung eq 'l' ? M('links') : M('rechts')) . ' ' .
+			    "($winkel°) " . ($lang eq 'en' ? "->" : Strasse::de_artikel($strname));
 	    }
 	    $ges_entf += $entf;
 	    $ges_entf_s = sprintf "%.1f km", $ges_entf/1000;
-	    $entf = sprintf "nach %.2f km", $entf/1000;
+	    $entf = sprintf "%s %.2f km", M("nach"), $entf/1000;
 
 	} elsif ($#{ $r->path } > 1) {
 	    #XXX aktivieren, wenn BBBikeCalc ein "richtiges" Modul ist
@@ -121,8 +163,8 @@ sub convert {
 
     {
 	$ges_entf_s = sprintf "%.1f km", ($ges_entf+$next_entf)/1000;
-	my $entf = sprintf "nach %.2f km", $next_entf/1000;
-	$ret{Footer} = [$entf, "", "angekommen!", $ges_entf_s];
+	my $entf = sprintf "%s %.2f km", M("nach"), $next_entf/1000;
+	$ret{Footer} = [$entf, "", M("angekommen")."!", $ges_entf_s];
     }
 
     \%ret;

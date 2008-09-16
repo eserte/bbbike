@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.50 2008/05/05 19:59:19 eserte Exp $
+# $Id: PDF.pm,v 2.52 2008/09/16 19:41:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004,2008 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.50 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.52 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -104,7 +104,8 @@ sub init {
     my $page = $pdf->new_page('MediaBox' => $page_bbox,
 			      (defined $rotate ? ('Rotate' => $rotate) : ()),
 			     );
-    $pdf->new_outline('Title' => 'Karte',
+
+    $pdf->new_outline('Title' => ($self->{Lang} eq 'en' ? 'map' : 'Karte'),
 		      'Destination' => $page);
 
     $self->{PDF}      = $pdf;
@@ -840,6 +841,7 @@ sub add_route_descr {
 	    (-bbbikedraw => $self,
 	     -net => $net,
 	     -route => Route->new_from_realcoords(\@c),
+	     -lang => $args{'-lang'},
 	    );
 }
 

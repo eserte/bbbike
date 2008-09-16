@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 1.9 2005/07/05 23:38:23 eserte Exp $
+# $Id: PDF.pm,v 1.10 2008/09/16 19:29:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2004 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Route::PDF;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my $class = shift;
@@ -70,7 +70,7 @@ sub output {
     my($page_width, $page_height);
     (undef, undef, $page_width, $page_height) = @{$pdf->get_page_size("a4")};
     my $page = $pdf->new_page;
-    $pdf->new_outline('Title' => 'Routenliste',
+    $pdf->new_outline('Title' => &Route::Descr::M('Routenliste'),
 		      'Destination' => $page);
     my $font = $self->{NormalFont};
     my $bold_font = $self->{BoldFont};

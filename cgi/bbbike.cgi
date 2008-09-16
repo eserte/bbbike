@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.24 2008/08/28 21:32:11 eserte Exp eserte $
+# $Id: bbbike.cgi,v 9.26 2008/09/16 19:44:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -730,7 +730,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 9.24 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 9.26 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -4871,6 +4871,7 @@ sub overview_map {
 	$overview_map = BBBikeDraw->new
 	    (ImageType => 'dummy',
 	     Geometry => ($xgridwidth*$xgridnr) . "x" . ($ygridwidth*$ygridnr),
+	     Lang => $lang,
 	    );
 	$overview_map->set_dimension($x0, $x0 + $xm*$xgridnr*$xgridwidth,
 				     $y0 - $ym*$ygridnr*$ygridwidth, $y0,
@@ -5061,6 +5062,7 @@ sub draw_route {
 	$draw = BBBikeDraw->new_from_cgi($q,
 					 MakeNet => \&make_netz,
 					 Bg => '#c5c5c5',
+					 Lang => $lang,
 					 %bbbikedraw_args,
 					);
 	die $@ if !$draw;
@@ -5087,7 +5089,8 @@ sub draw_route {
     $draw->draw_map    if $draw->can("draw_map");
     $draw->draw_wind   if $draw->can("draw_wind");
     $draw->draw_route  if $draw->can("draw_route");
-    $draw->add_route_descr(-net => make_netz())
+    $draw->add_route_descr(-net => make_netz(),
+			   -lang => $lang)
 	if $draw->can("add_route_descr");
     $draw->flush;
 }
@@ -5208,6 +5211,7 @@ sub draw_map {
 	    my $draw = BBBikeDraw->new_from_cgi($q,
 						Fh => \*IMG,
 						Bg => '#c5c5c5',
+						Lang => $lang,
 					       );
 	    $draw->set_dimension(@dim);
 	    $draw->create_transpose();
@@ -7037,7 +7041,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/08/28 21:32:11 $';
+    my $cgi_date = '$Date: 2008/09/16 19:44:42 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

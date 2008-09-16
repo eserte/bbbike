@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.58 2008/09/07 20:46:50 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.60 2008/09/16 19:41:56 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION $bahn_bau_rx);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.58 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.60 $ =~ /(\d+)\.(\d+)/);
 
 $bahn_bau_rx = qr{^[SRU](0|Bau|G|P)$}; # auch ignorieren: Güterbahnen, Parkbahnen
 
@@ -68,6 +68,7 @@ sub new {
     $self->{Conf}      = delete $args{Conf};
     $self->{CGI}       = delete $args{CGI};
     $self->{Compress}  = delete $args{Compress};
+    $self->{Lang}      = delete $args{Lang};
 
     if (defined $self->{Return} &&
 	$self->{Return} eq 'string') {
