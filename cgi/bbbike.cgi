@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.26 2008/09/16 19:44:42 eserte Exp $
+# $Id: bbbike.cgi,v 9.25 2008/09/16 19:41:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -730,7 +730,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 9.26 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 9.25 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -4871,7 +4871,6 @@ sub overview_map {
 	$overview_map = BBBikeDraw->new
 	    (ImageType => 'dummy',
 	     Geometry => ($xgridwidth*$xgridnr) . "x" . ($ygridwidth*$ygridnr),
-	     Lang => $lang,
 	    );
 	$overview_map->set_dimension($x0, $x0 + $xm*$xgridnr*$xgridwidth,
 				     $y0 - $ym*$ygridnr*$ygridwidth, $y0,
@@ -5211,7 +5210,6 @@ sub draw_map {
 	    my $draw = BBBikeDraw->new_from_cgi($q,
 						Fh => \*IMG,
 						Bg => '#c5c5c5',
-						Lang => $lang,
 					       );
 	    $draw->set_dimension(@dim);
 	    $draw->create_transpose();
@@ -7041,7 +7039,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/09/16 19:44:42 $';
+    my $cgi_date = '$Date: 2008/09/16 19:41:40 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;
