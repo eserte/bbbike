@@ -531,9 +531,9 @@ push @temp_blocking,
        undef,
        {
          'source_id' => 'IM_008423',
-         'until' => 1222811999,
-         'text' => 'Schillerstr. (Wilhelmsruh) Richtung Schönholzer Weg zwischen Hauptstr. und Schönholzer Weg Baustelle, Fahrtrichtung gesperrt (bis 09.2008)',
-         'from' => 1208892535,
+         'until' => 1222898399,
+         'text' => 'Schillerstr. (Wilhelmsruh) Richtung Schönholzer Weg zwischen Hauptstr. und Schönholzer Weg Baustelle, Fahrtrichtung gesperrt (bis Anfang 10.2008)',
+         'from' => 1221686220,
          'id' => 1341,
          'data' => 'userdel	1::inwork 7832,20219 7957,20182 8062,20133 8196,20096
 ',
@@ -888,8 +888,8 @@ push @temp_blocking,
        undef,
        {
          'until' => 1225494000,
-         'text' => 'L 373 Richard-Sonnenburg-Straße OL Bri.-Finkenheerd ab KP Bhf-/Sonnenburgstr., 500m Ri. OA Straßenbau Vollsperrung 22.09.2008-31.10.2008 ',
-         'from' => 1221948000,
+         'text' => 'L 373 Richard-Sonnenburg-Straße OL Bri.-Finkenheerd ab KP Bhf-/Sonnenburgstr., 500m Ri. OA Straßenbau Vollsperrung 29.09.2008-31.10.2008 ',
+         'from' => 1222552800,
          'id' => 1461,
          'data' => 'userdel	2::inwork 89098,-16962 90109,-16411
 ',
@@ -936,15 +936,7 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1221516000,
-         'text' => 'L 059 Wainsdorf - Prösen zw. OA Wainsdorf und OE Prösen Deckenerneuerung Vollsperrung 29.08.2008-15.09.2008 ',
-         'from' => 1219874400,
-         'id' => 1470,
-         'data' => 'userdel	2::inwork 16901,-110215 17717,-110344 19244,-110623
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1226790000,
@@ -1041,6 +1033,63 @@ userdel	2::inwork 20161,-487 20348,-380 20476,-279 20505,-217
          'data' => 'userdel	q4::inwork 80426,-59644 80719,-59219
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_009483',
+         'until' => 1225493999,
+         'text' => 'Weinmeisterstr. (Mitte) Richtung Alexanderplatz gesperrt (bis Ende 10.2008)',
+         'from' => 1221681660,
+         'id' => 1485,
+         'data' => 'userdel	1::inwork 10331,13397 10528,13243
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009957',
+         'until' => 1222811999,
+         'text' => 'Edisonstr. (Oberschöneweide) in Richtung Treskowallee zwischen Wilhelminenhofstr. und Siemensstr. Baustelle, Straße vollständig gesperrt (bis Ende 09.2008)',
+         'from' => 1221686258,
+         'id' => 1486,
+         'data' => 'userdel	1::inwork 17992,6436 17962,6674
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009965',
+         'until' => 1229381999,
+         'text' => 'Parkstr. (Weißensee) Richtung Berliner Allee zwischen Charlottenburger Str. und Berliner Allee Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2008)',
+         'from' => 1221686311,
+         'id' => 1487,
+         'data' => 'userdel	1::inwork 13727,16085 13753,16000
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1221948000,
+         'text' => 'K 6828 L164 Altfriesack - Wuthenow OD Karwe Erntedankfest Vollsperrung 20.09.2008-20.09.2008 ',
+         'from' => 1221775200,
+         'id' => 1488,
+         'data' => 'userdel	q4::inwork -25968,49631 -27035,49829 -27196,50015
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1221688800,
+         'text' => 'L 030 Neu Zittauer Str. OD Erkner Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 12.09.2008-17.09.2008 ',
+         'from' => 1221084000,
+         'id' => 1489,
+         'data' => 'userdel	1::inwork 34232,888 34449,1689 34443,1951
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1222293600,
+         'text' => 'L 033 Wriezen - Prötzel zw. Schulzendorf und Herzhorn Straßenbauarbeiten Vollsperrung 18.09.2008-24.09.2008 ',
+         'from' => 1221602400,
+         'id' => 1490,
+         'data' => 'userdel	2::inwork 56219,31042 54734,30001
+',
+         'type' => 'gesperrt'
        }
      
 );

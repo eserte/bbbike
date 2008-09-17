@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.199 2008/08/22 18:14:33 eserte Exp $
+# $Id: Makefile,v 2.200 2008/09/17 19:50:13 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -588,7 +588,7 @@ vorfahrt:	vorfahrt-orig
 # able to do some things yet necessary here, for example automatic
 # Gefaelle generation in comments_mount or not combining X;X
 # categories into X
-.for f in ${COMMENTS_PARTIAL:Ncomments_route:Ncomments_ferry}
+.for f in ${COMMENTS_PARTIAL:Ncomments_route:Ncomments_ferry:Ncomments_misc}
 ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
 	-@$(WRITEABLE) $@
 	cat ${f}-orig | \
@@ -600,10 +600,11 @@ ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
 	-@$(READONLY) $@
 .endfor
 
-# New style using convert_orig_to_bbd. Only comments_route here,
+# New style using convert_orig_to_bbd. comments_route here,
 # because of the need for alias and url directives. comments_ferry
-# needs special as_of handler.
-.for f in comments_route comments_ferry
+# needs special as_of handler. comments_misc, because of a bug
+# in convert2hafas
+.for f in comments_route comments_ferry comments_misc
 ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
 	-@$(WRITEABLE) $@
 	cat ${f}-orig | \

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.89 2008/06/21 21:27:51 eserte Exp $
+# $Id: Core.pm,v 1.89 2008/06/21 21:27:51 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -235,6 +235,7 @@ sub read_from_fh {
 	tie %global_directives, "Tie::IxHash";
     }
     my @block_directives;
+    my @block_directives_line;
     my $preserve_line_info = $args{PreserveLineInfo} || 0;
     my $preserve_comments  = $args{PreserveComments} || 0;
 
@@ -268,8 +269,10 @@ sub read_from_fh {
 	    } elsif ($use_local_directives) {
 		if ($is_block_begin) {
 		    push @block_directives, [$directive => $value];
+		    push @block_directives_line, $.;
 		} elsif ($is_block_end) {
 		    pop @block_directives;
+		    pop @block_directives_line;
 		} else {
 		    push @{ $line_directive{$directive} }, $value;
 		}
@@ -309,7 +312,11 @@ sub read_from_fh {
 	}
     }
     if (@block_directives) {
-	die "The following block directives were not closed: `" . join(" ", map { "@$_" } @block_directives) . "'\n";
+	my $msg = "The following block directives were not closed:";
+	for my $i (0 .. $#block_directives) {
+	    $msg .= " '@{$block_directives[$i]}' (start at line $block_directives_line[$i])";
+	}
+	die $msg, "\n";
     }
     if (keys %line_directive) {
 	die "Stray line directive `@{[ keys %line_directive ]}' at end of file\n";

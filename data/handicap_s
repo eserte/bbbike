@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.170 2008/09/09 19:33:08 eserte Exp $
+#: version: $Id: handicap_s-orig,v 4.170 2008/09/09 19:33:08 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Hauptstr. (Friedrichshain-Kreuzberg) in beiden Richtungen zwischen Markgrafendamm und untere Kynaststr. Baustelle, Radfahrer können nur langsam passieren (bis 2008-10-31)	q4::inwork 14906,10820 14794,10844
@@ -399,6 +399,7 @@ Wildensteiner Str.: enge Straße	q1 18528,8331 18416,8163 18365,8094 18333,8059
 (Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbrücke	q2 19468,7962 19558,8064
 Linienstr./Oranienburger Str.: Fußgänger	q2 9215,13392 9296,13397
 Fontanestr.: zwei Schwellen, können umfahren werden	q1 18240,6845 18254,6679
+Kiautschoustr.: Fußgänger, Bordsteine	q3 6837,14848 6853,14854
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
 Straße 103 (Niederschönhausen): enge Straße 	q1 10914,20065 11051,19789
 An der Heilandsweide: Fußgänger	q1 8203,1194 8305,1148 8539,1025 8687,950
@@ -440,7 +441,7 @@ Gralsburgsteig: enge Straße	q1 2164,25190 2206,25260 2038,25531 1950,25763 1924,
 Bahnhofstr. (Friedenau): enge Straße	q1 6082,7066 6151,7078 6157,7117
 (Michelangelostr. - Straße 106): Kleingartenanlage	q2 13838,15113 14060,14986 14314,14841 14592,14682
 Hugo-Heimann-Str.: enge, leicht kurvige Straße	q1 14120,1991 14165,2106 14229,2177 14453,2087 14587,2032
-(Am Invalidenfriedhof - Scharnhorststr.): Radfahren verboten, Schieben	q4 8137,13925 8216,13987
+(Am Invalidenfriedhof - Scharnhorststr.): Radfahren verboten, Schieben	q4 8119,13912 8216,13987
 Am Gemeindepark: enge Straße	q1 7172,2343 7215,2442 7209,2528 7199,2559 7030,2582 6751,2708 6679,2701
 Maurerweg: enge Straße	q1 12864,2191 12835,2470 12825,2573 12810,2751 12807,2958
 (Uferweg): kurvenreich, ausreichende Breite	q1 -389,17140 -280,17229 -266,17335 -215,17385 -141,17377 61,17495 110,17489 151,17537 187,17663 235,17704 260,17788 258,17880 381,18186 416,18386 448,18476 496,18514 586,18540 680,18631 757,18673 768,18742 970,18919 1006,18972 1122,19036 1189,19018 1200,18969 1369,18958 1457,18969 1490,18950
@@ -477,7 +478,7 @@ Wentowsteig: enge Straße mit parkenden Autos	q1 6924,20695 6945,20805 6955,20859
 (Spreeuferweg): Fußgänger	q1 4543,12516 4501,12544 4334,12551
 Havelstr.: Fußgängerzone	q4 -3150,14631 -3122,14557 -3054,14498
 (Schönholzer Heide, parallel zur Friesenstr.): Fußgänger	q1 8765,19288 8784,19253 8954,19151 9446,18855 9475,18862
-Nordufer: teilweise sehr schmaler Radweg	q1 7231,14749 7498,14658
+Nordufer: teilweise sehr schmaler Radweg	q1 7231,14749 7433,14656 7498,14658
 (Weg am Nordgraben): schmaler Weg, mäßiger Fußgängerverkehr	q2 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3152,20852 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
 (Weg am Waldfriedhof Dahlem): Kurven	q2 1051,5525 825,5420 626,5322
 (Waldweg parallel zur Flanaganstr. zwischen Hüttenweg und Im Jagen): starke Steigungen und Gefälle	q2 1051,5525 1697,5938
@@ -628,7 +629,6 @@ Bernhard-Wieck-Promenade: Fußgänger	q1 1421,8044 1403,8058 1384,8035
 Käuzchensteig: Fußgänger, Bordsteine	q1 1918,6456 1895,6470
 (Parkweg Robert-Stolz-Anlage): Fußgänger	q2 1782,7527 1943,7527 1943,7499
 (Parkweg Robert-Stolz-Anlage): Fußgänger, schmal	q3 1943,7527 1964,7571
-Margarete-Steffin-Str.: Fußgänger, Restaurantterrasse (vor allem abends)	q3 8700,12810 8730,12804
 (Luisenstr. - Hufelandweg): Fußgänger	q3 8665,13353 8582,13355
 Helga-Hahnemann-Str.: Fußgänger, schmal	q2 9415,13315 9396,13176
 An der Karolinenhöhe: Fußgänger, spielende Kinder	q3 -5900,11726 -5848,11779 -5892,11820 -5847,11876

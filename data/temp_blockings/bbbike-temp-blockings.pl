@@ -11289,9 +11289,9 @@ EOF
 userdel	2::temp 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6240,13324
 EOF
      },
-     { from  => 1208892535, # 2008-04-22 21:28
-       until => 1222811999, # 2008-09-30 23:59
-       text  => 'Schillerstr. (Wilhelmsruh) Richtung Schönholzer Weg zwischen Hauptstr. und Schönholzer Weg Baustelle, Fahrtrichtung gesperrt (bis 09.2008)',
+     { from  => 1221686220, # 2008-09-17 23:17
+       until => 1222898399, # 2008-10-01 23:59
+       text  => 'Schillerstr. (Wilhelmsruh) Richtung Schönholzer Weg zwischen Hauptstr. und Schönholzer Weg Baustelle, Fahrtrichtung gesperrt (bis Anfang 10.2008)',
        type  => 'gesperrt',
        source_id => 'IM_008423',
        data  => <<EOF,
@@ -12386,9 +12386,9 @@ EOF
 userdel	2::inwork -26249,-20121 -26258,-20094 -26809,-18383
 EOF
      },
-     { from  => 1221948000, # 2008-09-21 00:00
+     { from  => 1222552800, # 2008-09-28 00:00
        until => 1225494000, # 2008-11-01 00:00
-       text  => 'L 373 Richard-Sonnenburg-Straße OL Bri.-Finkenheerd ab KP Bhf-/Sonnenburgstr., 500m Ri. OA Straßenbau Vollsperrung 22.09.2008-31.10.2008 ',
+       text  => 'L 373 Richard-Sonnenburg-Straße OL Bri.-Finkenheerd ab KP Bhf-/Sonnenburgstr., 500m Ri. OA Straßenbau Vollsperrung 29.09.2008-31.10.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 89098,-16962 90109,-16411
@@ -12581,6 +12581,57 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 80426,-59644 80719,-59219
+EOF
+     },
+     { from  => 1221681660, # 2008-09-17 22:01
+       until => 1225493999, # 2008-10-31 23:59
+       text  => 'Weinmeisterstr. (Mitte) Richtung Alexanderplatz gesperrt (bis Ende 10.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_009483',
+       data  => <<EOF,
+userdel	1::inwork 10331,13397 10528,13243
+EOF
+     },
+     { from  => 1221686258, # 2008-09-17 23:17
+       until => 1222811999, # 2008-09-30 23:59
+       text  => 'Edisonstr. (Oberschöneweide) in Richtung Treskowallee zwischen Wilhelminenhofstr. und Siemensstr. Baustelle, Straße vollständig gesperrt (bis Ende 09.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_009957',
+       data  => <<EOF,
+userdel	1::inwork 17992,6436 17962,6674
+EOF
+     },
+     { from  => 1221686311, # 2008-09-17 23:18
+       until => 1229381999, # 2008-12-15 23:59
+       text  => 'Parkstr. (Weißensee) Richtung Berliner Allee zwischen Charlottenburger Str. und Berliner Allee Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_009965',
+       data  => <<EOF,
+userdel	1::inwork 13727,16085 13753,16000
+EOF
+     },
+     { from  => 1221775200, # 2008-09-19 00:00
+       until => 1221948000, # 2008-09-21 00:00
+       text  => 'K 6828 L164 Altfriesack - Wuthenow OD Karwe Erntedankfest Vollsperrung 20.09.2008-20.09.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -25968,49631 -27035,49829 -27196,50015
+EOF
+     },
+     { from  => 1221084000, # 2008-09-11 00:00
+       until => 1221688800, # 2008-09-18 00:00
+       text  => 'L 030 Neu Zittauer Str. OD Erkner Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 12.09.2008-17.09.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 34232,888 34449,1689 34443,1951
+EOF
+     },
+     { from  => 1221602400, # 2008-09-17 00:00
+       until => 1222293600, # 2008-09-25 00:00
+       text  => 'L 033 Wriezen - Prötzel zw. Schulzendorf und Herzhorn Straßenbauarbeiten Vollsperrung 18.09.2008-24.09.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 56219,31042 54734,30001
 EOF
      },
     );

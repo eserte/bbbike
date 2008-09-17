@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen.t,v 1.20 2008/08/23 10:08:36 eserte Exp $
+# $Id: strassen.t,v 1.21 2008/09/17 21:23:26 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -40,7 +40,7 @@ GetOptions(get_std_opts("xxx"),
 	   "doit!" => \$doit,
 	  ) or die "usage";
 
-my $basic_tests = 30;
+my $basic_tests = 36;
 my $doit_tests = 6;
 my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 3;
@@ -165,6 +165,35 @@ EOF
 
     is($s->get_global_directive("title"), "Testing global directives");
     is($s->get_global_directive("complex.key"), "Testing complex global directives");
+}
+
+{
+    # empty global directives
+    my $data = <<EOF;
+#:
+#: section projektierte Radstreifen der Verkehrsverwaltung vvv
+Heinrich-Heine	? 10885,10928 10939,11045 11034,11249 11095,11389 11242,11720
+#: section ^^^
+EOF
+    for my $preserve_line_info (0, 1) {
+	my $s = Strassen->new_from_data_string
+	    ($data,
+	     UseLocalDirectives => 1,
+	     PreserveLineInfo => $preserve_line_info,
+	    );
+	is(scalar @{ $s->data }, 1, "Constructing from string data with directives (PreserveLineInfo=$preserve_line_info)");
+	$s->init_for_iterator("bla");
+	while(1) {
+	    my $r = $s->next_for_iterator("bla");
+	    last if !@{ $r->[Strassen::COORDS] };
+	    my $dir = $s->get_directive_for_iterator("bla");
+	    my $name = $r->[Strassen::NAME];
+	    if ($name eq 'Heinrich-Heine') {
+		ok(grep { /projektierte Radstreifen/ } @{ $dir->{section} });
+	    }
+	}
+	is_deeply($s->get_global_directives, {}, "No global directives");
+    }
 }
 
 {
