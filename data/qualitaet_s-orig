@@ -112,6 +112,7 @@ Pariser Str.: Asphalt	Q0 23470,9403 23513,9567
 Kressenweg: Asphalt	Q0 23513,9567 23528,9680 23574,9782
 Kressenweg: Asphalt, einige "Moabiter Kissen"	Q0- 23574,9782 23659,10074
 Fischerstr.: Kopfsteinpflaster	Q2 16032,10842 16080,10743 16187,10587
+Fischerstr.: Kopfsteinpflaster	Q2 15982,10765 16080,10743
 Wallensteinstr./Neuer Feldweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2 17378,9715 17360,9629 17456,9594 17549,9529 18037,9195 18120,9100 18124,9056
 Halker Zeile: schlechtes Kopfsteinpflaster	Q3 9940,559 10063,251 10156,13 10214,-142 10266,-284 10374,-552 10473,-799
 #: by: Jürgen Schulz-Brüssel
@@ -1131,6 +1132,7 @@ Uferweg: Parkweg	Q1 15545,9818 15583,9779 15626,9710
 (Alt Stralau - Spreeufer): Parkweg	Q1 15020,9875 14996,9809
 Tunnelstr. - Bartholomäusufer: Parkweg	Q1 15502,9693 15583,9779
 Am Rummelsburger See: glatt gepflastert	Q0 15248,10562 15453,10415
+(Rummelsburger Ufer - Emma-Ihrer-Str.): glatt gepflastert	Q0 15453,10415 15550,10361
 Am Rummelsburger See: Parkweg	Q2+ 15453,10415 15469,10329 15496,10277 15518,10234 15604,10204 15601,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15931,9846
 Am Rummelsburger See: Betonweg	Q0- 15931,9846 16000,9784 16046,9746
 Am Rummelsburger See: asphaltiert	Q0 16046,9746 16123,9692
@@ -1724,7 +1726,8 @@ Melonensteig: asphaltiert	Q0 -7908,14955 -7808,14939 -7715,14924 -7624,14910
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20061218.1520.70094.html
 Viersener Str.: asphaltiert	Q0 -5263,14656 -5228,14750 -5199,14835
 Klosterstr.: Kopfsteinpflaster	Q2 10946,12241 10945,12150
-Jordanstr.: teils schlechtes Kopfsteinpflaster	Q2- 13645,9621 13464,9762
+Jordanstr.: Asphalt	Q0 13645,9621 13464,9762
+#: add_fragezeichen: Ist die Jordanstr. komplett asphaltiert?
 Jordanstr.: Beton, Schotter auf der Fahrbahn	Q2+ 13464,9762 13333,9929
 Am Teltowkanal: Verbundsteinpflaster	Q1 7921,4451 7772,4306
 Am Teltowkanal: fester Sandweg	Q1 7772,4306 7676,4216

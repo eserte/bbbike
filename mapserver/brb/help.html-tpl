@@ -2,6 +2,7 @@
 [% EDITWARNHTML %]
 <html><head>
 <title>Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="[% BBBIKE_HTML_RELURL %]/bbbike.css">
 <style type="text/css">
 tr { vertical-align:top; }

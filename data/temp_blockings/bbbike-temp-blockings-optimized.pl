@@ -1073,15 +1073,7 @@ userdel	2::inwork 20161,-487 20348,-380 20476,-279 20505,-217
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1221688800,
-         'text' => 'L 030 Neu Zittauer Str. OD Erkner Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 12.09.2008-17.09.2008 ',
-         'from' => 1221084000,
-         'id' => 1489,
-         'data' => 'userdel	1::inwork 34232,888 34449,1689 34443,1951
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1222293600,
          'text' => 'L 033 Wriezen - Prötzel zw. Schulzendorf und Herzhorn Straßenbauarbeiten Vollsperrung 18.09.2008-24.09.2008 ',

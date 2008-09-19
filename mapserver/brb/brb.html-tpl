@@ -17,6 +17,7 @@
 [% SET style="new" -%]
 <html>
 <head><title>[% TITLE | html %]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <base href="[% MAPSERVER_URL %]/brb.html">
 <link rel="stylesheet" type="text/css" href="[% BBBIKE_HTML_RELURL %]/bbbike.css">
 <link rel="stylesheet" type="text/css" href="brb.css">

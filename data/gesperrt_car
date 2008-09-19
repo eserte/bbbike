@@ -371,6 +371,8 @@ Grottewitzstr.	1 21933,152 22145,208
 Schlichtallee	3nocross::ignrte 15629,10481 15751,10582 15982,10765 16032,10842
 Zobtener Str. -> Schlichtallee: Schlichtallee	3::igndisp 16157,10342 15751,10582 15629,10481
 Schlichtallee -> Zobtener Str.: Schlichtallee	3::igndisp 15982,10765 15751,10582 16157,10342
+Fischerstr. -> Schlichtallee: Schlichtallee	3::igndisp 16080,10743 15982,10765 15751,10582
+Schlichtallee -> Fischerstr.: Schlichtallee	3::igndisp 16032,10842 15982,10765 16080,10743
 Hindenburgdamm	3nocross::ignrte 4507,4755 4515,4581 4521,4484
 Roonstr. -> Hindenburgdamm: Hindenburgdamm	3::igndisp 4265,4484 4515,4581 4507,4755
 Hindenburgdamm -> Roonstr.: Hindenburgdamm	3::igndisp 4521,4484 4515,4581 4265,4484
