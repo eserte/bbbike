@@ -418,15 +418,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1221861600,
-         'text' => 'L 073 Neue Beelitzer Str. OL Luckenwalde, zw. Triftstr. und Kleiststr. Straßenausbau Vollsperrung 13.05.2008-19.09.2008 ',
-         'from' => 1210543200,
-         'id' => 1255,
-         'data' => 'userdel	q4::inwork -4725,-34957 -5019,-34814
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -503,8 +495,8 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1222811999,
-         'text' => 'Bauarbeiten am nordwestlichen Bereich der Elsenbrücke von 7. Januar 2008 bis September 2008; kein Zugang zum Spreeufer. ',
+         'until' => 1225493999,
+         'text' => 'Bauarbeiten am nordwestlichen Bereich der Elsenbrücke von 7. Januar 2008 bis Oktober 2008; kein Zugang zum Spreeufer. ',
          'from' => 1199574000,
          'id' => 1322,
          'data' => 'userdel	2::inwork 14383,10036 14405,10027
@@ -863,16 +855,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_009790',
-         'until' => 1222811999,
-         'text' => 'Suermondtstr. (Hohenschönhausen) Richtung Hauptstr. zwischen Degnerstr. und Konrad-Wolff-Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2008)',
-         'from' => 1219879654,
-         'id' => 1456,
-         'data' => 'userdel	1::inwork 16654,16167 16961,16042
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_009763',
          'until' => 1293836399,
@@ -971,15 +954,7 @@ userdel	2::inwork 20161,-487 20348,-380 20476,-279 20505,-217
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1221948000,
-         'text' => 'B 179 zw. Neu Lübbenau und Leibsch Deckenerneinbau Vollsperrung 20.09.2008-20.09.2008 ',
-         'from' => 1221775200,
-         'id' => 1478,
-         'data' => 'userdel	2::inwork 43537,-35512 43650,-35762 43875,-35850 44731,-35697
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1222898400,
          'text' => 'B 198 Angermünde - Greiffenberg zw. OA Kerkow und Abzw. Bruchhagen Deckschichterneuerung Vollsperrung 08.09.2008-01.10.2008 ',
@@ -1064,15 +1039,7 @@ userdel	2::inwork 20161,-487 20348,-380 20476,-279 20505,-217
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1221948000,
-         'text' => 'K 6828 L164 Altfriesack - Wuthenow OD Karwe Erntedankfest Vollsperrung 20.09.2008-20.09.2008 ',
-         'from' => 1221775200,
-         'id' => 1488,
-         'data' => 'userdel	q4::inwork -25968,49631 -27035,49829 -27196,50015
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1222293600,
@@ -1080,6 +1047,42 @@ userdel	2::inwork 20161,-487 20348,-380 20476,-279 20505,-217
          'from' => 1221602400,
          'id' => 1490,
          'data' => 'userdel	2::inwork 56219,31042 54734,30001
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1223676000,
+         'text' => 'K 6411 Neulewin - Altwriezen zw. Heinrichsdorf und Kerstenbruch Straßenbauarbeiten Vollsperrung 22.09.2008-10.10.2008 ',
+         'from' => 1221948000,
+         'id' => 1491,
+         'data' => 'userdel	2::inwork 68327,37979 67364,38248 67053,38406 66413,38217
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1229727600,
+         'text' => 'L 015 Rosa-Luxemburg-Str. OL Wittstock, zw. Polthierstr. und Bohnekampweg Kanal- und Straßenbau Vollsperrung 06.10.2008-19.12.2008 ',
+         'from' => 1223157600,
+         'id' => 1492,
+         'data' => 'userdel	q4::inwork -53868,82504 -53648,82294 -53491,81954
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1235689200,
+         'text' => 'L 030 Fredersdorf - Altlandsberg - Bernau OD Altlandsberg, zw. OE und Strausberger Tor Straßenausbau Vollsperrung 22.09.2008-26.02.2009 ',
+         'from' => 1221948000,
+         'id' => 1493,
+         'data' => 'userdel	q4::inwork 33051,18158 32513,18082 32293,18093
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1222466400,
+         'text' => 'L 212 Groß Schönebeck - Hammer - B167 zw. Groß Schönebeck und Böhmerheide Deckenerneuerung Vollsperrung 22.09.2008-26.09.2008 ',
+         'from' => 1221948000,
+         'id' => 1494,
+         'data' => 'userdel	2::inwork 15301,53802 17031,55218 17733,55423
 ',
          'type' => 'gesperrt'
        }

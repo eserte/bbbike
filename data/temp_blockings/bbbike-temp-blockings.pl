@@ -11133,8 +11133,8 @@ userdel	2::inwork -27053,82717 -27141,82696 -27184,82772 -27346,82842
 EOF
      },
      { from  => 1199574000, # 2008-01-06 00:00
-       until => 1222811999, # 2008-09-30 23:59
-       text  => 'Bauarbeiten am nordwestlichen Bereich der Elsenbrücke von 7. Januar 2008 bis September 2008; kein Zugang zum Spreeufer. ',
+       until => Time::Local::timelocal(reverse(2008-1900,10-1,31,23,59,59)), # 1222811999, # 2008-09-30 23:59
+       text  => 'Bauarbeiten am nordwestlichen Bereich der Elsenbrücke von 7. Januar 2008 bis Oktober 2008; kein Zugang zum Spreeufer. ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 14383,10036 14405,10027
@@ -12345,7 +12345,7 @@ userdel	1::inwork 11455,15916 11581,15831 11744,15720 11941,15586
 EOF
      },
      { from  => 1219879654, # 2008-08-28 01:27
-       until => 1222811999, # 2008-09-30 23:59
+       until => 1222022573, # 2008-09-30 23:59 1222811999
        text  => 'Suermondtstr. (Hohenschönhausen) Richtung Hauptstr. zwischen Degnerstr. und Konrad-Wolff-Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2008)',
        type  => 'gesperrt',
        source_id => 'IM_009790',
@@ -12632,6 +12632,38 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 56219,31042 54734,30001
+EOF
+     },
+     { from  => 1221948000, # 2008-09-21 00:00
+       until => 1223676000, # 2008-10-11 00:00
+       text  => 'K 6411 Neulewin - Altwriezen zw. Heinrichsdorf und Kerstenbruch Straßenbauarbeiten Vollsperrung 22.09.2008-10.10.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 68327,37979 67364,38248 67053,38406 66413,38217
+EOF
+     },
+     { from  => 1223157600, # 2008-10-05 00:00
+       until => 1229727600, # 2008-12-20 00:00
+       text  => 'L 015 Rosa-Luxemburg-Str. OL Wittstock, zw. Polthierstr. und Bohnekampweg Kanal- und Straßenbau Vollsperrung 06.10.2008-19.12.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -53868,82504 -53648,82294 -53491,81954
+EOF
+     },
+     { from  => 1221948000, # 2008-09-21 00:00
+       until => 1235689200, # 2009-02-27 00:00
+       text  => 'L 030 Fredersdorf - Altlandsberg - Bernau OD Altlandsberg, zw. OE und Strausberger Tor Straßenausbau Vollsperrung 22.09.2008-26.02.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 33051,18158 32513,18082 32293,18093
+EOF
+     },
+     { from  => 1221948000, # 2008-09-21 00:00
+       until => 1222466400, # 2008-09-27 00:00
+       text  => 'L 212 Groß Schönebeck - Hammer - B167 zw. Groß Schönebeck und Böhmerheide Deckenerneuerung Vollsperrung 22.09.2008-26.09.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 15301,53802 17031,55218 17733,55423
 EOF
      },
     );
