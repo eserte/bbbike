@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.35 2008/06/22 17:30:19 eserte Exp eserte $
+# $Id: bbbikedraw.t,v 1.38 2008/09/25 22:12:11 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -60,15 +60,15 @@ BEGIN {
 }
 
 # Generate timings with:
-#    perl bbbikedraw.t -only MapServer -only GD/png -only Imager -only ImageMagick -slow -v
+#    perl bbbikedraw.t -only MapServer -only GD/png -only Imager -only ImageMagick -fullmap -v
 
-# Timings are (on my 466MHz machine) with -slow:
+# Timings are (on my 466MHz machine) with -fullmap:
 # GD: 9s
 # Imager: 37s
 # MapServer: 60s
 # ImageMagick: 461s (with VectorUtil XS)
 
-# On a modern AMD Athlon with -slow (but later, more street data,
+# On a modern AMD Athlon with -fullmap (but later, more street data,
 #   different software version etc.):
 # GD: 6s
 # Imager: 37s
@@ -82,11 +82,30 @@ BEGIN {
 # MapServer: 5s
 # ImageMagick: 41s
 
+# Later (2008-09) on the same AMD Athlon also in i386 mode, perl 5.8.8
+#   different software versions etc.:
+# GD/png: 13.62s (wall clock) 8.44s (cpu)
+# Imager: 74.14s (wall clock) 51.01s (cpu)
+# MapServer: 9.20s (wall clock) 5.47s (cpu)
+# ImageMagick: 58.70s (wall clock) 37.48s (cpu)
+#
+# and using the -usexs option:
+# GD/png: 13.66s (wall clock) 8.05s (cpu)
+# Imager: 81.03s (wall clock) 48.70s (cpu)
+# MapServer: 7.16s (wall clock) 5.32s (cpu)
+# ImageMagick: 64.52s (wall clock) 34.05s (cpu)
+#
+# With -usexs and perl 5.10.0 (which is usually 2x as fast)
+# GD/png: 5.96s (wall clock) 5.82s (cpu)
+# Imager: 42.30s (wall clock) 41.16s (cpu)
+# MapServer: 4.88s (wall clock) 4.77s (cpu)
+# ImageMagick: N/A, no usable ImageMagick
+
 my @drawtypes = qw(all);
 my $geometry = "640x480";
 my $verbose = 0;
-my $debug   = 0;
-my $do_slow = 0;
+my $debug = 0;
+my $do_fullmap = 0;
 my $do_save = 0;
 my @bbox = (8134,8581,9450,9718);
 my $do_display_all;
@@ -95,6 +114,7 @@ my $do_compress = 1;
 my $route_type = 'multi'; # or none or single
 my $start_name = 'Start';
 my $goal_name = 'Goal';
+my $use_xs;
 
 my @only_modules;
 
@@ -103,7 +123,7 @@ if ($ENV{BBBIKE_TEST_DRAW_ONLY_MODULES}) {
 }
 
 sub usage {
-    die "usage $0: [-display|-displayall] [-save] [-v|-verbose] [-debug] [-slow] [-only module]
+    die "usage $0: [-display|-displayall] [-save] [-v|-verbose] [-debug] [-fullmap] [-only module]
 		   [-drawtypes type,type,...] [-bbox x0,y0,x1,y1] [-geometry wxh] [-noroute]
 		   [-flushtofilename] [-[no]compress] [-start name] [-goal name] ...
 
@@ -128,7 +148,7 @@ if (!GetOptions(get_std_opts("display"),
 		"save!" => \$do_save,
 		"v|verbose!" => \$verbose,
 		"debug!" => \$debug,
-		"slow!" => \$do_slow,
+		"fullmap|slow!" => \$do_fullmap, # -slow was the old option name
 		"flushtofilename" => \$flush_to_filename,
 		"compress!" => \$do_compress,
 		"route=s" => \$route_type,
@@ -144,8 +164,14 @@ if (!GetOptions(get_std_opts("display"),
 		},
 		'start=s' => \$start_name,
 		'goal=s'  => \$goal_name,
+		'usexs!'  => \$use_xs,
 	       )) {
     usage();
+}
+
+if ($use_xs) {
+    eval 'use BBBikeXS';
+    die $@ if $@;
 }
 
 if ($route_type !~ m{^(none|single|multi)$}) {
@@ -275,7 +301,7 @@ sub draw_map {
 	MakeNet    => \&make_net,
 	BBBikeRoute => \@pseudo_route,
     ;
-    if ($do_slow) {
+    if ($do_fullmap) {
 	$draw->set_bbox_max(Strassen->new("strassen"));
     } elsif (@bbox) {
 	die "Bbox needs 4 coordinates" if @bbox != 4;

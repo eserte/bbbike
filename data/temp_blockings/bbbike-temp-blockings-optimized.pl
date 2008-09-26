@@ -1041,15 +1041,7 @@ userdel	2::inwork 20161,-487 20348,-380 20476,-279 20505,-217
        },
        undef,
        undef,
-       {
-         'until' => 1222293600,
-         'text' => 'L 033 Wriezen - Prˆtzel zw. Schulzendorf und Herzhorn Straﬂenbauarbeiten Vollsperrung 18.09.2008-24.09.2008 ',
-         'from' => 1221602400,
-         'id' => 1490,
-         'data' => 'userdel	2::inwork 56219,31042 54734,30001
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1223676000,
          'text' => 'K 6411 Neulewin - Altwriezen zw. Heinrichsdorf und Kerstenbruch Straﬂenbauarbeiten Vollsperrung 22.09.2008-10.10.2008 ',

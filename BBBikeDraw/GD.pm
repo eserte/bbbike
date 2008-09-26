@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.64 2008/02/11 21:29:35 eserte Exp $
+# $Id: GD.pm,v 1.64 2008/02/11 21:29:35 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -322,7 +322,7 @@ sub draw_map {
 		$im->setBrush($outline_brush{$cat});
 		$color = $self->{GD}->gdBrushed();
 	    }
-	    for(my $i = 0; $i < $#{$s->[1]}; $i++) {
+	    for my $i (0 .. $#{$s->[1]}-1) {
 		my($x1, $y1, $x2, $y2) =
 		    (@{Strassen::to_koord1($s->[1][$i])},
 		     @{Strassen::to_koord1($s->[1][$i+1])});
@@ -330,8 +330,8 @@ sub draw_map {
 		# überhaupt im Zeichenbereich.
 		# Evtl. eine XS-Funktion für diese Schleife
 		# schreiben?
-		my($x1t, $y1t, $x2t, $y2t) = (&$transpose($x1, $y1),
-					      &$transpose($x2, $y2));
+		my($x1t, $y1t, $x2t, $y2t) = ($transpose->($x1, $y1),
+					      $transpose->($x2, $y2));
 		$im->line($x1t, $y1t, $x2t, $y2t, $color);
 	    }
 	}

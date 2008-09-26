@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.60 2008/09/16 19:41:56 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.61 2008/09/25 21:44:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION $bahn_bau_rx);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.60 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.61 $ =~ /(\d+)\.(\d+)/);
 
 $bahn_bau_rx = qr{^[SRU](0|Bau|G|P)$}; # auch ignorieren: Güterbahnen, Parkbahnen
 
@@ -308,23 +308,27 @@ sub set_bbox_max {
     my($self, $str) = @_;
     $str->init;
     my($min_x, $min_y, $max_x, $max_y);
+    {
+	# prefill min/max values, so we don't need to check for
+	# definedness in the loop
+	my $r = $str->peek;
+	my @c = @{ $r->[Strassen::COORDS] };
+	if (@c) {
+	    my($x,$y) = split /,/, $c[0];
+	    $min_x = $max_x = $x;
+	    $min_y = $max_y = $y;
+	}
+    }
     while(1) {
-	my $s = $str->next_obj;
-	last if $s->is_empty;
-	for(my $i = 0; $i <= $#{$s->coords}; $i++) {
-	    my($x, $y) = @{$s->coord_as_list($i)};
-	    if (!defined $min_x || $x < $min_x) {
-		$min_x = $x;
-	    }
-	    if (!defined $max_x || $x > $max_x) {
-		$max_x = $x;
-	    }
-	    if (!defined $min_y || $y < $min_y) {
-		$min_y = $y;
-	    }
-	    if (!defined $max_y || $y > $max_y) {
-		$max_y = $y;
-	    }
+	my $r = $str->next;
+	my @c = @{ $r->[Strassen::COORDS] };
+	last if !@c;
+	for my $c (@c) {
+	    my($x, $y) = split /,/, $c;
+	    $min_x = $x if $x < $min_x;
+	    $max_x = $x if $x > $max_x;
+	    $min_y = $y if $y < $min_y;
+	    $max_y = $y if $y > $max_y;
 	}
     }
     $self->set_bbox($min_x, $min_y, $max_x, $max_y);
@@ -359,8 +363,7 @@ sub create_transpose {
 	# Ursprung ist unten, nicht oben (z.B. PDF)
 	$code = <<EOF;
 	sub {
-	    my(\$x, \$y) = \@_;
-	    ((\$x-$delta_x)*$xk, (\$y-$delta_y)*$yk);
+	    ((\$_[0]-$delta_x)*$xk, (\$_[1]-$delta_y)*$yk);
 	};
 EOF
         $code =~ s/--/+/g;
@@ -371,8 +374,7 @@ EOF
 
 	$anti_code = <<EOF;
 	sub {
-	    my(\$x, \$y) = \@_;
-	    ((\$x/$xk)+$delta_x, (\$y/$yk)+$delta_y);
+	    ((\$_[0]/$xk)+$delta_x, (\$_[1]/$yk)+$delta_y);
 	};
 EOF
         $anti_code =~ s/--/+/g;
@@ -383,8 +385,7 @@ EOF
     } else { # origin_positon eq 'nw'
 	$code = <<EOF;
 	sub {
-	    my(\$x, \$y) = \@_;
-	    ((\$x-$delta_x)*$xk, $h-(\$y-$delta_y)*$yk);
+	    ((\$_[0]-$delta_x)*$xk, $h-(\$_[1]-$delta_y)*$yk);
 	};
 EOF
         $code =~ s/--/+/g;
@@ -394,8 +395,7 @@ EOF
 
 	$anti_code = <<EOF;
 	sub {
-	    my(\$x, \$y) = \@_;
-	    ((\$x/$xk)+$delta_x, ($h-\$y)/$yk+$delta_y);
+	    ((\$_[0]/$xk)+$delta_x, ($h-\$_[1])/$yk+$delta_y);
 	};
 EOF
         $anti_code =~ s/--/+/g;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.89 2008/06/21 21:27:51 eserte Exp eserte $
+# $Id: Core.pm,v 1.91 2008/09/25 20:38:24 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.89 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.91 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -222,7 +222,16 @@ sub read_from_fh {
 
     my $read_only_global_directives = $args{ReadOnlyGlobalDirectives};
     my $use_local_directives = $args{UseLocalDirectives};
-    my $has_tie_ixhash = eval { require Tie::IxHash; 1 };
+    my $has_tie_ixhash = eval {
+	require Tie::IxHash;
+	# See http://rt.cpan.org/Ticket/Display.html?id=39619
+	if (!defined &Tie::IxHash::SCALAR) {
+	    *Tie::IxHash::SCALAR = sub {
+		scalar @{ $_[0]->[1] };
+	    };
+	}
+	1;
+    };
 
     use constant DIR_STAGE_LOCAL => 0;
     use constant DIR_STAGE_GLOBAL => 1;
@@ -292,7 +301,7 @@ sub read_from_fh {
 	    $self->{LineInfo}[$#data] = $.;
 	}
 
-	if (keys %line_directive || @block_directives) {
+	if (@block_directives || %line_directive) { # Note: %line_directive is a tied hash and slower to check!
 	    while(my($directive,$values) = each %line_directive) {
 		if ($has_tie_ixhash && !$directives[$#data]) {
 		    tie %{ $directives[$#data] }, 'Tie::IxHash';
@@ -306,7 +315,7 @@ sub read_from_fh {
 		}
 		push @{ $directives[$#data]{$directive} }, $value;
 	    }
-	    if (keys %line_directive) {
+	    if (%line_directive) {
 		%line_directive = ();
 	    }
 	}
@@ -318,7 +327,7 @@ sub read_from_fh {
 	}
 	die $msg, "\n";
     }
-    if (keys %line_directive) {
+    if (%line_directive) {
 	die "Stray line directive `@{[ keys %line_directive ]}' at end of file\n";
     }
     warn "... done\n" if ($VERBOSE && $VERBOSE > 1);
@@ -399,7 +408,7 @@ sub new_copy_restricted {
     while(1) {
 	my $ret = $old_s->next;
 	last if !@{$ret->[COORDS]};
-	next if (keys %grep && !exists $grep{$ret->[CAT]});
+	next if (%grep && !exists $grep{$ret->[CAT]});
 	next if exists $restrictions{$ret->[CAT]};
 	next if ($callback && !$callback->($ret));
 	$res->push($ret);
