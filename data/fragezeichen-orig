@@ -191,7 +191,7 @@ eng, grün, umgestürzte Bäume	? 14131,25643 14500,26756
 Feldweg, zweispurig	? 14500,26756 14699,27471
 Waldweg	? 14699,27471 15097,27852 15108,27979 15757,28054
 Feldweg	? 15757,28054 16058,28106 16094,28419 16107,28551
-Waldweg?	? 24522,50570 24472,50937 24689,51352 24796,52159
+Waldweg?	? 24522,50570 24472,50937 24689,51352 24768,52171
 Alternative	? 24081,50440 24472,50937
 	? 32558,62481 32276,63124 32315,63437
 #: by ^^^
@@ -477,9 +477,6 @@ bei Großbeeren: zurzeit wird die Hauptstraße noch weiter nördlich geführt, aber 
 Ernst-Thälmann-Str. in Fürstenwalde umbenannt in Eisenbahnstr.?	? 55447,-4247 55374,-3621
 Ist eine Verbindung nach Seeberg vorhanden (westliche Seite des Ortes)?	? 28569,16324 28775,16193 29459,16348
 An der Wetzlarer Bahn (Potsdam): unbefestigter Weg, bei Regen große Pfützen. Ist der Weg durchgängig befahrbar oder gesperrt?	? -9306,-4259 -9642,-4916 -9996,-5596
-Glambeck - Wolletz: Qualität etc.	? 37575,69168 38096,68983 38424,69181 38858,69287 39460,69325 39566,69493 39782,69398 41050,69362 41478,69500 42400,69523 42794,69450 43065,69453
-#: note: zumindest auf östlicher Seite Verbundsteinpflaster
-Wolletz - Blumberger Mühle: Qualität etc.	? 43116,69546 44629,70044 45374,70764 45562,70856 45812,70909
 Verbindung zwischen Späthstr. und Britzer Allee: laut ADFC-Karte teilweise gut geeigneter Radweg, kurzes Teilstück schlecht geeignet	? 14546,5495 14469,5618 14418,5662 14366,5805 14459,5819 14453,5851 14664,5834 14911,5827 14995,5860 15142,5889
 Leipe - Lübbenau: Waldweg, teilweise muss getragen werden	? 55335,-60336 55150,-60225 54925,-60300 54337,-60275 53208,-60124 52537,-60162 52137,-60387 51162,-59762 50725,-59237 50575,-59287
 Leipe - Burg, nördliche Strecke: Qualität?	? 55850,-60475 56425,-59960 57291,-59826 57848,-59878 57989,-59765 58120,-59786 58010,-60210 58351,-60356 58665,-60426 58659,-60530 58845,-60667 58915,-60655 59466,-60914 59518,-60816 59850,-60929 59987,-60862 60417,-61057 60545,-61185 60600,-61166 61066,-61334 61416,-61334 61355,-61459 61581,-61648 61645,-61855 61889,-61953 61998,-62056 62017,-62175 61953,-62212
@@ -495,7 +492,6 @@ Am Havelufer: teilweise sehr sandige Stellen, Q3	? -4072,5227 -3956,4875 -4062,4
 Waldbühne - Havelchaussee: Qualität (wahrscheinlich Waldwege, Q2 bis Q3)? noch immer durchgängig befahrbar?	? -1356,12093 -1531,12043 -2050,12675 -1950,12925 -2076,13060
 Fährweg - Niederneuendorfer Allee: Kleingartenanlage, Qualität?	? -1864,17785 -1854,17805 -1871,17842 -1914,17899 -2011,17986 -2039,18049 -2066,18097 -2105,18119 -2143,18153 -2166,18199 -2177,18279 -2197,18307 -2229,18312 -2750,18333
 Steinhöfel - Poratz - Ringenwalde: Qualität?	? 37482,74476 37025,74400 36800,74137 36612,74162 35775,73750 35469,73594 35125,73487 33687,73037 33075,72750 32750,72787 32600,73062 31862,73112 30712,72625 30244,72598
-Glambeck - Templin: ist das hier die in Glambeck ausgeschilderte Strecke? Qualität?	? 37292,68602 36000,69075 35962,70325 35600,70962 35112,70912 35080,71176
 Am Neuen Garten: Qualität zwischen Glumestr. und Cecilienhof?	? -12302,718 -12276,831 -12212,1201
 Grenzallee Potsdam: Qualität?	? -13854,2025 -14315,2135
 Verlängerte Amtsstr.: Qualität? 	? -15251,1200 -15161,1780
@@ -535,8 +531,8 @@ Friesenstr. - Bahnstr. - Rheinstr. - Birkenstr. (Eichwalde, Zeuthen, Wildau): la
 Günterberg - Biesenbrow: laut "Regio-Cart" gut geeignet	? 47124,77624 48203,79315 49700,79603 50088,79574 50477,80139 50593,80084
 #: note: zumindest das nördliche Ende ist asphaltiert:
 Biesenbrow - Polßen: laut "Regio-Cart" gut geeignet	? 50477,80139 50700,81437 50287,82637 48700,84137 48600,84500 48177,84989
+#: note: zumindest das nördliche Ende ist (mäßig?) asphaltiert
 Biesenbrow - Briest: hier wahrscheinlich auch nur der mäßige Betonweg	? 52771,81718 54508,82572 54307,83141
-Passow - Briest: laut "Regio-Cart" gut geeignet	? 55980,83363 55000,83062 54307,83141 53950,83237 53393,83852
 #: note: vom Zug aus gesehen:
 Mürow - Henriettenhof: Qualität? im Bereich von Mürow asphaltiert, südlich des Dorfes sah es wie ein Feldweg aus (Q2 oder schlechter)	? 51971,72800 52072,72613 53612,69769 54031,69280
 Frauenhagen - Grünow: Qualität? laut "Regio-Cart" gut geeignet, der Anfang im Süden sah gut aus (asphaltiert)	? 52490,75434 54887,78437 54850,78692 54850,78769 54868,79271 54850,79357 54213,80545
@@ -546,8 +542,8 @@ Biesenbrow - Grünow: laut "Regio-Cart" gut geeignet	? 52611,79156 52632,79235 52
 Grünow - Passow: laut "Regio-Cart" gut geeignet	? 54213,80545 55200,80962 56977,82763
 Pinnow - Frauenhagen: laut "Regio-Cart" gut geeignet, das westliche Ende sah gut aus (asphaltiert), das südliche bei Pinnow ebenso	? 55703,74309 55612,74354 55164,74111 54952,74078 54562,74365 53687,74900 52490,75434
 Jamikow - Woltersdorf: Qualität? (wahrscheinlich nur ein Feldweg?)	? 61361,85231 61398,85335 61465,85414 61678,85560 62757,86072 63202,86383 63391,86474 63574,86547 63805,86748 64018,86876 64137,87068
-Altkünkendorf - Wolletz: laut "Regio-Cart" gut geeignet	? 41260,67587 41437,68012 40775,68125 40750,69175 41050,69362
-Wolletz Richtung Norden: laut "Regio-Cart" gut geeignet	? 43065,69453 43116,69546 43250,71500 42941,72180
+Altkünkendorf - Wolletz: laut "Regio-Cart" gut geeignet	? 41260,67587 41437,68012 40775,68125 40750,69175 40999,69391
+Wolletz Richtung Norden: laut "Regio-Cart" gut geeignet (zumindest in Wolletz Verbundsteinpflaster)	? 43101,69564 43250,71500 42941,72180
 Dargen - Katschow: Fahrradroute laut Kompass-Karte	? 51034,165181 50994,165390 50715,166093 50464,166650 50472,166804 50661,166901 50993,167239 51565,167859
 Stücken - Tremsdorf: Qualität?	? -10978,-17764 -10562,-16912 -10175,-16537 -9675,-16375 -9200,-15550 -9045,-15165 -8680,-14704
 #: XXX andere Quelle ist Andreas M.:
@@ -645,7 +641,7 @@ Falkenthal - Bergsdorf: Kopfsteinpflaster, mindestens von Falkenthal her	? 2034,
 #: XXX: unklare Eintragung zu Radwegen existiert:
 Jan-Petersen-Str.: Radwege? Zugang zur Landsberger Allee vorhanden?	? 21022,16244 21195,16148 21107,15982 21079,15913 21037,15793 20943,15787 20796,15667
 # 2007-06-03: nix ist passiert: herausnehmen! Alter Markt: laut Message-ID: <2scvijF1io77eU1@uni-berlin.de> soll hier asphaltiert werden	?::inwork 22458,4565 22426,4609 22395,4678 22383,4703
-Berlin-Usedom am Werbellinsee: laut Tsp vom 2004-10-04 wird hier 2005 ein Radweg gebaut, laut anderen Informationen bis 2006-12-15	?::inwork 31000,61437 30784,60950 30778,60221 30671,59984 30625,59562 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27359,56787 27137,56650 26792,56558 26404,56518 26145,56499 26037,56412 26028,56303
+#XXX del done: Berlin-Usedom am Werbellinsee: laut Tsp vom 2004-10-04 wird hier 2005 ein Radweg gebaut, laut anderen Informationen bis 2006-12-15	?::inwork 30960,61370 30784,60950 30781,60566 30778,60221 30671,59984 30706,59802 30625,59562 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27359,56787 27137,56650 26792,56558 26404,56518 26145,56499 26037,56412 26028,56303
 Zichow-Lindenwegsiedlung: Qualität? Am westlichen Ende als "Lindenweg" ausgeschildert	? 54500,87934 51978,87962
 Prötzeler Ring: Qualität laut ADFC-Karte gut	? 21951,15918 21980,15857 22055,15698 22092,15610
 Trappenfelder Pfad: Qualität laut ADFC-Karte gut	? 22092,15610 22101,15601 22076,15276 22061,15168 22059,15153
@@ -789,8 +785,8 @@ Niklasstr. zwischen Lindenthaler Allee und Potsdamer Chaussee: Qualität?	? -1269
 #: XXX unklarer Eintrag von Jörg Nickisch, Rückfrage nicht möglich:
 Dachsteinweg: verkehrsberuhigt?	? 10507,2548 10466,2366 10504,2321
 Nauener Str. zur Altonaer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? -4759,13992 -4776,13869
-#: note: zumindest am östlichen Ende Feldweg
-Wolletz - Kerkow (südliche Strecke): Qualität?	? 44629,70044 45614,70316 45652,70216 46917,69881 47172,70534
+#: note: zumindest am östlichen und westlichen Ende Feldweg
+Wolletz - Kerkow (südliche Strecke): Qualität?	? 44673,70082 45614,70316 45652,70216 46917,69881 47172,70534
 Britz - Chorin: Qualität?	? 37225,54056 38412,55353 38528,55402 38516,55481 38774,55675 38987,55637 39726,55645 40450,55770
 Liepe - Chorin: Qualität?	? 46938,50961 46757,50998 46391,51303 45805,51471 45089,51592 44952,51669 44167,52651 43047,53809 42697,54060 42231,54671
 Herzsprung - Schmargendorf: Qualität?	? 47863,64274 47267,64435 47123,64587 46955,64641 47045,64773
@@ -2127,3 +2123,5 @@ Rosenstr.: Ist die Rosenstr. zwischen Jägerstr. und Kirchstr. gepflastert? Gibt 
 Rue Racine: Qualität?	? 4339,21600 4334,21540 4307,21506 4254,21495 4204,21536 4198,21615 4209,21703
 #: XXX unklarer Eintrag von Ulrich Sziede: gute Qualität, Radweg?
 Schefferweg: Qualität?	? 7432,2400 7425,2461
+Uckermärkischer Radrundweg zwischen Parlow und Friedrichswalde: Qualität? Wegführung?	? 32943,67802 31564,68076 30583,68268
+Am Gutshof (Gramzow): Qualität nach den Bauarbeiten?	? 50278,90449 50262,90540

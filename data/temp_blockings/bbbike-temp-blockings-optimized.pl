@@ -991,15 +991,7 @@ userdel	2::inwork 20161,-487 20348,-380 20476,-279 20505,-217
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1222466400,
-         'text' => 'K 6425 Wiesenstr. OL Hoppegarten, Einm. Neuer Hönower Weg Deckenerneuerung Vollsperrung 23.09.2008-26.09.2008 ',
-         'from' => 1222034400,
-         'id' => 1483,
-         'data' => 'userdel	2::inwork 27272,11970 27490,11678
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1225407600,
          'text' => 'L 050 Gubener Str. OD Peitz, zw. Malxebogen und A.-Bebel-Str. Instandsetz.Durchlass, Entwä. Vollsperrung 15.09.2008-30.10.2008 ',
@@ -1068,15 +1060,6 @@ userdel	2::inwork 20161,-487 20348,-380 20476,-279 20505,-217
          'data' => 'userdel	q4::inwork 33051,18158 32513,18082 32293,18093
 ',
          'type' => 'handicap'
-       },
-       {
-         'until' => 1222466400,
-         'text' => 'L 212 Groß Schönebeck - Hammer - B167 zw. Groß Schönebeck und Böhmerheide Deckenerneuerung Vollsperrung 22.09.2008-26.09.2008 ',
-         'from' => 1221948000,
-         'id' => 1494,
-         'data' => 'userdel	2::inwork 15301,53802 17031,55218 17733,55423
-',
-         'type' => 'gesperrt'
        }
      
 );

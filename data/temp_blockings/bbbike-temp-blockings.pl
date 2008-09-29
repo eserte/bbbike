@@ -12489,7 +12489,7 @@ EOF
        text  => 'L 220 AS Finowfurt - Joachimsthal zw. der B167 und der OL Eichhorst Deckenerneuerung Vollsperrung 04.09.2008-11.09.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 25500,54100 25387,53500 25379,53337 25368,53125 25393,52762 25556,52375 26375,50681 26256,50418
+userdel	2::inwork 25488,54151 25400,53591 25347,53338 25368,53125 25393,52762 25556,52375 26375,50681 26256,50418
 EOF
      },
      { from  => 1221084000, # 2008-09-11 00:00

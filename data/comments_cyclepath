@@ -87,8 +87,8 @@ Bansin: Zweirichtungsradweg (Verbundsteinpflaster) auf der nördlichen Seite	RW 5
 Bansin: Zweirichtungsradweg (Verbundsteinpflaster) auf der östlichen Seite	RW 56381,173849 56493,173943 56546,174049
 Ückeritz: teils Verbundsteinpflasterradweg, teils separate Straße, nörliche Seite	RW 50843,179488 51229,179229 51288,179162
 Bansin - Ückeritz: asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW 56029,174482 55741,174692 55541,175016 55388,175169 55063,175432 54825,175505 54576,175560 54162,175850 53311,176048 52868,176203 52699,176308 52084,178098 51986,178177 51899,178200 51779,178229 51627,178336 51611,178406 51538,178665 51288,179162
-Ladeburg - Lobetal: Fahrradstraße	RW 22414,33559 22606,33958 22931,35451
-Lobetal: verkehrsberuhigte Straße	RW 22931,35451 23232,36004
+Ladeburg - Lobetal: Fahrradstraße	RW 22526,33785 22595,33961 22877,35230 23008,35569
+Lobetal: verkehrsberuhigte Straße	RW 23008,35569 23232,36004
 Schönerlinder Str.: Radweg auf Gehweg	RW 17368,27859 17689,27853 18053,27875 18337,27854 18410,27890 18817,27979 18899,27976 19196,27963
 B2: Radweg	RW 22257,29814 22262,29723
 B2: Radweg	RW 22206,30826 22378,30943
@@ -168,8 +168,9 @@ B 198: benutzungspflichtiger Zweirichtungsradweg, überwiegend Asphalt, nur kurze
 Gemeinsamer Rad- und Gehweg auf der nördlichen Seite	RW 5394,-3053 4283,-2370
 Zweirichtungsradweg auf östlicher Seite, teils asphaltiert	RW 47432,119730 47554,120007 47547,120819 47501,121206 47549,121619
 Radweg auf Gehweg, Verbundsteinpflaster	RW 46859,118757 47008,118886 47187,119302 47432,119730
-Straßenbegleitender Radweg	RW 22378,30943 22306,31150 22512,31754 22527,32200 22500,32911
-Straßenbegleitender Radweg	RW 23759,49971 23387,49893
+asphaltierter Zweirichtungsradweg auf östlicher Seite	RW 22532,31955 22527,32200 22519,32552
+Radweg auf Gehweg (östliche Seite)	RW 22519,32552 22500,32911 22512,33312 22414,33559
+Überwiegend asphaltierter Zweirichtungsradweg auf der nördlichen Seite	RW 23759,49971 23379,49925
 B158: Zweirichtungsradweg auf der nordöstlichen Seite, Verbundsteinpflaster	RW 24203,22171 23930,21873
 B158: Zweirichtungsradweg auf der nordöstlichen Seite, asphaltiert, ca. 2m breit	RW 23930,21873 23565,21396 23281,21043 22529,19361
 Berliner Str. (Schwedt): Verbundsteinpflasteradweg, benutzungspflichtig	RW 69606,73554 69733,73945 69827,74244 70077,75094 70164,75201 70636,75624 70700,75740
@@ -258,11 +259,20 @@ Mellenthin - Neppermin: verkehrsberuhigt	RW6 50035,170731 50047,170808 50081,170
 Ahlbeck: gemeinsamer Geh- und Radweg auf der nördlichen Seite	RW2;RW9 60077,171695 60105,171680 60200,171623 60293,171553 60338,171543 60383,171530 60406,171501
 Neppermin - Mellenthin - B110: asphaltierter Radweg auf der westlichen Seite	RW 50049,170583 49835,170038 49737,169837 49114,169212 49028,168646 48995,168300 48954,167870
 nördlicher Gehweg für Radfahrer freigegeben	RW1;RW9 28071,-19862 28164,-19771 28251,-19639 28615,-19431 28853,-19212
+Stegelitz: Gehwege für Radfahrer freigegeben	RW 39634,81668 39550,81278 39303,80853 38833,80699
+Werbellinsee: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 30960,61370 30784,60950
+Werbellinsee: Verbundsteinpflaster-Zweirichtungsradweg auf der westlichen Seite	RW 30784,60950 30781,60566
+Werbellinsee: asphaltierter Zweirichtungsradweg auf der nordwestlichen Seite	RW 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27359,56787 27137,56650 26792,56558
+Eichhorst: asphaltierter Zweirichtungsradweg auf der südöstlichen Seite	RW 25512,54174 25488,54151
+Eichhorst - Finowfurt: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW 25488,54151 25400,53591
+Eichhorst - Finowfurt: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 25400,53591 25347,53338
+Breitscheidstr. (Bernau): Suggestivstreifen	RW 23024,30523 22907,30433 22868,30412
+Am Bahnhof Bernau: Suggestivstreifen	RW 22868,30412 22904,30359
 	RW 1596,29362 1631,29260 1805,28879 1896,28681 2015,28414
 	RW; 2015,28414 2003,28396 2012,28378 2035,28381 2037,28393 2032,28407 2015,28414
 	RW 2035,28381 2082,28353 2125,28208
 Schildow - Wensickendorf: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW 8071,30398 8100,30308 8281,29788 8327,29494 8315,29159
-Marienwerder - B167: Radweg	RW 22912,48759 22862,49031 23597,49573 23748,49682 23759,49971
+Marienwerder - B167: Radweg	RW 22912,48759 22862,49031 23597,49573 23748,49682 23783,49745 23759,49971
 Großbeeren - Diedersdorf: asphaltierter Zweirichtungsradweg auf der nördlichen Seite	RW 5654,-6424 6432,-6715
 Mahlow - Jühnsdorf: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 9854,-9480 9598,-10356 9578,-10891
 Mellensee - Rehagen: asphaltierter Zweirichtungsradweg auf der nordwestlichen Seite	RW 10744,-25036 9478,-26014 9223,-26361 8647,-26861
