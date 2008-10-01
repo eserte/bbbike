@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.52 2008/09/16 19:41:51 eserte Exp $
+# $Id: PDF.pm,v 2.53 2008/09/29 19:37:18 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004,2008 Slaven Rezic. All rights reserved.
@@ -15,21 +15,8 @@
 package BBBikeDraw::PDF;
 use strict;
 use base qw(BBBikeDraw);
-use PDF::Create;
-BEGIN {
-    my $needed_version = "0.06";
-    if (!eval { PDF::Create->VERSION($needed_version) }) {
-	die <<EOF;
-You have PDF::Create $PDF::Create::VERSION installed, but at least version
-$needed_version is necessary to run @{[ __PACKAGE__ ]}. Unfortunately this module
-version is NOT available from CPAN, but only from SourceForge from the
-URL http://sourceforge.net/projects/perl-pdf/ or use the direct download link
-http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download
-
-EOF
-    }
-}
-use PDF::Create::MyPage; # additional methods
+use PDF::Create 0.06;
+use PDF::Create::MyPage; # additional methods, for older PDF::Create
 use Strassen;
 # Strassen benutzt FindBin benutzt Carp, also brauchen wir hier nicht zu
 # sparen:
@@ -43,7 +30,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.52 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.53 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -105,7 +92,7 @@ sub init {
 			      (defined $rotate ? ('Rotate' => $rotate) : ()),
 			     );
 
-    $pdf->new_outline('Title' => ($self->{Lang} eq 'en' ? 'map' : 'Karte'),
+    $pdf->new_outline('Title' => (defined $self->{Lang} && $self->{Lang} eq 'en' ? 'map' : 'Karte'),
 		      'Destination' => $page);
 
     $self->{PDF}      = $pdf;

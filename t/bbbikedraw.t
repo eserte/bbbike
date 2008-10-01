@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.38 2008/09/25 22:12:11 eserte Exp $
+# $Id: bbbikedraw.t,v 1.39 2008/09/29 19:41:10 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -88,18 +88,21 @@ BEGIN {
 # Imager: 74.14s (wall clock) 51.01s (cpu)
 # MapServer: 9.20s (wall clock) 5.47s (cpu)
 # ImageMagick: 58.70s (wall clock) 37.48s (cpu)
+# PDF: 36.78s (wall clock) 23.87s (cpu)
 #
 # and using the -usexs option:
 # GD/png: 13.66s (wall clock) 8.05s (cpu)
 # Imager: 81.03s (wall clock) 48.70s (cpu)
 # MapServer: 7.16s (wall clock) 5.32s (cpu)
 # ImageMagick: 64.52s (wall clock) 34.05s (cpu)
+# PDF: 20.79s (wall clock) 19.77s (cpu)
 #
 # With -usexs and perl 5.10.0 (which is usually 2x as fast)
 # GD/png: 5.96s (wall clock) 5.82s (cpu)
 # Imager: 42.30s (wall clock) 41.16s (cpu)
 # MapServer: 4.88s (wall clock) 4.77s (cpu)
 # ImageMagick: N/A, no usable ImageMagick
+# PDF: 25.03s (wall clock) 14.98s (cpu)
 
 my @drawtypes = qw(all);
 my $geometry = "640x480";

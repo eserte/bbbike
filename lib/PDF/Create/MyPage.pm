@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MyPage.pm,v 1.2 2004/12/29 00:04:08 eserte Exp $
+# $Id: MyPage.pm,v 1.4 2008/09/30 19:39:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -16,56 +16,68 @@ package PDF::Create::Page;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 ######################################################################
 # Additional PDF::Create methods
 
 package PDF::Create::Page;
 
-use constant PI => 3.141592653;
-
-sub set_stroke_color {
-    my($page, $r, $g, $b) = @_;
-    return if (defined $page->{'current_stroke_color'} &&
-	       $page->{'current_stroke_color'} eq join(",", $r, $g, $b));
-    $page->{'pdf'}->page_stream($page);
-    $page->{'pdf'}->add("$r $g $b RG");
-    $page->{'current_stroke_color'} = join(",", $r, $g, $b);
+if (!defined &PI) {
+    eval 'use constant PI => 4 * atan2(1, 1);';
+    die $@ if $@;
 }
 
-sub set_fill_color {
-    my($page, $r, $g, $b) = @_;
-    return if (defined $page->{'current_fill_color'} &&
-	       $page->{'current_fill_color'} eq join(",", $r, $g, $b));
-    $page->{'pdf'}->page_stream($page);
-    $page->{'pdf'}->add("$r $g $b rg");
-    $page->{'current_fill_color'} = join(",", $r, $g, $b);
+if (!defined &set_stroke_color) {
+    *set_stroke_color = sub {
+	my($page, $r, $g, $b) = @_;
+	return if (defined $page->{'current_stroke_color'} &&
+		   $page->{'current_stroke_color'} eq join(",", $r, $g, $b));
+	$page->{'pdf'}->page_stream($page);
+	$page->{'pdf'}->add("$r $g $b RG");
+	$page->{'current_stroke_color'} = join(",", $r, $g, $b);
+    };
 }
 
-sub set_line_width {
-    my($page, $w) = @_;
-    return if (defined $page->{'current_line_width'} &&
-	       $page->{'current_line_width'} == $w);
-    $page->{'pdf'}->page_stream($page);
-    $page->{'pdf'}->add("$w w");
-    $page->{'current_line_width'} = $w;
+if (!defined &set_fill_color) {
+    *set_fill_color = sub {
+	my($page, $r, $g, $b) = @_;
+	return if (defined $page->{'current_fill_color'} &&
+		   $page->{'current_fill_color'} eq join(",", $r, $g, $b));
+	$page->{'pdf'}->page_stream($page);
+	$page->{'pdf'}->add("$r $g $b rg");
+	$page->{'current_fill_color'} = join(",", $r, $g, $b);
+    };
 }
 
-sub circle {
-    my($page, $x, $y, $r) = @_;
+if (!defined &set_line_width) {
+    *set_line_width = sub {
+	my($page, $w) = @_;
+	return if (defined $page->{'current_line_width'} &&
+		   $page->{'current_line_width'} == $w);
+	$page->{'pdf'}->page_stream($page);
+	$page->{'pdf'}->add("$w w");
+	$page->{'current_line_width'} = $w;
+    };
+}
 
-    my @coords;
-    for(my $i = 0; $i < PI*2; $i+=PI*2/$r/2) {
-	my($xi,$yi) = map { $_*$r } (sin $i, cos $i);
-	push @coords, $x+$xi, $y+$yi;
-    }
-    push @coords, @coords[0,1];
-    @coords = map { sprintf "%.2f", $_ } @coords;
+if (!defined &circle) {
+    *circle = sub {
+	my($page, $x, $y, $r) = @_;
 
-    $page->moveto(shift @coords, shift @coords);
-    for(my $i = 0; $i <= $#coords; $i+=2) {
-	$page->lineto($coords[$i], $coords[$i+1]);
+	my @coords;
+	for(my $i = 0; $i < PI*2; $i+=PI*2/$r/2) {
+	    my($xi,$yi) = map { $_*$r } (sin $i, cos $i);
+	    push @coords, $x+$xi, $y+$yi;
+	}
+	push @coords, @coords[0,1];
+	@coords = map { sprintf "%.2f", $_ } @coords;
+
+	$page->moveto(shift @coords, shift @coords);
+	for(my $i = 0; $i <= $#coords; $i+=2) {
+	    $page->lineto($coords[$i], $coords[$i+1]);
+	}
+	$page->stroke;
     }
 }
 
