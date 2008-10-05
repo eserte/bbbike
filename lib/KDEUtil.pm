@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: KDEUtil.pm,v 2.27 2008/08/22 19:52:27 eserte Exp $
+# $Id: KDEUtil.pm,v 2.28 2008/10/03 07:01:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2004,2008 Slaven Rezic. All rights reserved.
@@ -716,6 +716,10 @@ sub command {
 }
 
 }
+
+=head1 SEE ALSO
+
+Extended Window Manager Hints - L<http://standards.freedesktop.org/wm-spec/1.3/>
 
 =head1 AUTHOR
 

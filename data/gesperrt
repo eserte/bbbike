@@ -147,7 +147,7 @@ Dederingstr.	1 8457,2965 8478,3414
 Weserstr. (Friedrichshain)	1 14416,11815 14471,11782
 Quickborner Str.	1 8022,21476 8170,21304
 Berliner Str. (Blankenfelde)	1 9490,23531 9528,23240
-Revaler Str. (Straßenbahn)	1 13594,11489 13473,11456
+Revaler Str. (Straßenbahn)	1s 13594,11489 13473,11456
 Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10675,12280
 Herrfurthplatz	1 11647,7940 11659,7982 11695,8005 11732,8001 11757,7965 11753,7930 11717,7895 11670,7911 11647,7940
 Grimmstr.	1 11016,9599 11083,9753 11163,9903
@@ -600,7 +600,6 @@ Billerbecker Weg	1s 1230,18698 1229,18750
 Alt-Tegel	1s 1668,20156 1753,20191 1907,20265
 Alt-Tegel	1s 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
 Am Treptower Park: entgegen der Richtung auf dem Parkstreifen	1s 14739,8919 14614,9052 14563,9106 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
-Groebenufer	1s 13206,10651 13077,10747
 Jahnstr. (KW)	1s 26243,-12300 26028,-12312
 Seestr. (Potsdam)	1s -11581,559 -11584,452
 Tizianstr. (Potsdam)	1s -11424,542 -11480,621 -11581,559
@@ -1192,9 +1191,9 @@ Mühlenstr. -> Am Postbahnhof: Mittelstreifen ohne Überquerungshilfe	3::igndisp 1
 Am Postbahnhof -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12594,11467 12539,11416 12576,11375
 Mühlenstr. -> Am Postbahnhof: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12539,11416 12576,11375 12638,11433
 Am Postbahnhof -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12638,11433 12576,11375 12641,11288
-Mittelstreifen ohne Überquerungshilfe	3nocross::ignrte 13001,11000 13080,10956 13144,10921
+Mittelstreifen ohne Überquerungshilfe	3nocross::ignrte 12990,11006 13080,10956 13144,10921
 Hedwig-Wachenheim-Str. -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 13150,11101 13080,10956 13144,10921
-Mühlenstr. -> Hedwig-Wachenheim-Str.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 13001,11000 13080,10956 13150,11101
+Mühlenstr. -> Hedwig-Wachenheim-Str.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12990,11006 13080,10956 13150,11101
 Klingelhöferstr.: Mittelstreifen	3 6683,11367 6853,11336 6880,11110
 Klingelhöferstr.: Mittelstreifen	3 7160,11225 6853,11336 6880,11110
 Klingelhöferstr.: Mittelstreifen	3 6880,11110 6853,11336 6683,11367
@@ -1214,6 +1213,7 @@ Büchnerweg -> Adlergestell: Mittelstreifen	3::igndisp 20315,3181 20207,3115 2028
 Adlergestell -> Büchnerweg: Mittelstreifen	3::igndisp 20053,3272 20207,3115 20315,3181
 Mittelstreifen mit Geländer	3nocross::ignrte 6935,8208 7005,8150 7087,8066
 Torgauer Str. -> Sachsendamm: Mittelstreifen mit Geländer	3::igndisp 7268,8225 7005,8150 7087,8066
+tragen (ca. 45 Stufen, Aufzug ist vorhanden)	0:30:20 13503,11179
 tragen (flache Treppe, wenige Stufen)	0:10:-193 6530,6786
 tragen (ca. 10 Stufen)	0:20 26407,161781 26395,161793
 tragen (Treppe oder steile Kinderwagenrampe)	0:30:55 2956,24373
