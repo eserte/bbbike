@@ -765,6 +765,16 @@ push @temp_blocking,
          'data' => 'userdel	q4::inwork 33051,18158 32513,18082 32293,18093
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => undef,
+         'text' => 'Unterführung unter Adlergestell und Bahn wegen Brückenerneuerung gesperrt',
+         'from' => undef,
+         'id' => 1495,
+         'data' => 'userdel	2::inwork 20810,2398 20928,2412
+',
+         'type' => 'gesperrt'
        }
      
 );

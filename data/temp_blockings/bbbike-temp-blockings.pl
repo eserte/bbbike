@@ -12666,4 +12666,13 @@ EOF
 userdel	2::inwork 15301,53802 17031,55218 17733,55423
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       # gemeldet von tobias wirnsberger
+       text  => 'Unterführung unter Adlergestell und Bahn wegen Brückenerneuerung gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 20810,2398 20928,2412
+EOF
+     },
     );
