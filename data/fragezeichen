@@ -635,7 +635,6 @@ Neugrimnitz - Ziethen: Qualität?	? 38272,63836 38577,63641 38759,63647 39131,635
 Neugrimnitz - B198: Qualität?	? 39637,63244 39576,63074 39521,62861 39503,62647 39375,62148 39180,61605 39156,61459 39003,61246
 B2 - Chorin: Qualität?	? 41847,54619 41806,54725 41636,54890 41538,55140 41301,55146 41093,55310 41173,55516
 Wilhelm-von-Siemens-Str.: existiert zwischen Fritz-Werner-Str. und Hirzerweg möglicherweise eine Einbahnstraße Richtung Westen (auch für Radfahrer)?	? 9437,2649 9072,2589
-Cimbernstr.: Qualität?	? -3753,2241 -3703,2137 -3503,1988 -3299,1838
 Selchow - Kiekebusch: Qualität zwischen Kreuzung Diepensee-Rotberg und Kreuzung Dahlewitz/Zeuthen (wahrscheinlich Plattenweg)	? 18764,-5531 19915,-6315
 Prieroser Str.: Qualität?	? 28164,-19771 28231,-19792 28421,-19768
 Prieroser Str.: Qualität?	? 28540,-19744 29524,-19715
@@ -863,8 +862,6 @@ Fontanestr.: Qualität?	? 10508,-519 10450,-528 10374,-552 10280,-578 10182,-601 
 Simpsonweg: Qualität?	? 10082,-671 9937,-693 9913,-705 9899,-732 9907,-812 9884,-860
 Werfelstr.: Qualität?	? 10126,-834 9907,-812
 Ekensunder Weg: Qualität?	? 10481,-995 10365,-996 10260,-993 10143,-987 10082,-986
-Lutherstr.: Qualität?	? 10692,-804 10726,-1166
-Lutherstr. - Barnetstr.: Qualität? Für Radfahrer befahrbar?	? 10726,-1166 10728,-1198 10720,-1340
 Dossestr.: Qualität?	? 10082,-986 10030,-1066 9925,-1106
 Rhinstr. (Lichtenrade): Qualität?	? 10030,-1066 10134,-1138 10147,-1273 10155,-1320 10181,-1348 10248,-1346
 Bodmerstr.: Qualität?	? 10258,-1474 10099,-1482
@@ -887,7 +884,6 @@ Weißenthurmstr.: Qualität?	? 10968,-987 11120,-976
 Kronbergstr.: Qualität?	? 11099,-857 11291,-834 11490,-809 11680,-792 11844,-773
 Großbeerenstr. (Lichterfelde): Qualität?	? 4939,1148 5050,1133 5167,1116
 Smyrnaer Weg: Qualität?	? 10248,3897 10348,3888
-Gallipoliweg: Qualität? Existiert für Radfahrer eine Verbindung zum Dardanellenweg?	? 10455,4189 10460,4272 10462,4326
 Rätikonweg: Qualität?	? 9671,2145 9731,1956 9805,1711 9821,1692
 Hollabergweg: Qualität?	? 9342,1818 9336,2009
 Annenstr.: Qualität?	? 20269,14256 20376,14244
@@ -1144,7 +1140,7 @@ Mittelstr./Alternhofer Str. - Landsberger Allee: Qualität?	? 15520,14444 15511,1
 Tremsdorf - Mietgendorf: Qualität?	? -7714,-15752 -6969,-16153 -6922,-16200 -6915,-16296 -6578,-16497 -5593,-16970
 Lindenhof: Qualität?	? 23131,6237 23113,6278 23116,6360 23131,6398
 Janitzkystr.: Qualität?	? 22763,6398 22889,6428 23002,6428 23027,6425 23131,6398 23192,6362 23242,6308
-Zu den sieben Raben: Qualität?	? 23027,6425 23033,6511 23045,6622 23034,6719
+Zu den sieben Raben: Qualität zwischen Mittelheide und Janitzkystr.?	? 23027,6425 23033,6511
 Wolfsgartenstr.: Qualität?	? 23011,6181 22994,6296 23002,6428
 Elseneck: Qualität?	? 23397,6275 23426,6346
 Heidekrugstr.: Qualität?	? 23482,6649 23489,6463 23498,6342 23492,6287 23485,6237
@@ -1441,6 +1437,8 @@ Uckermärkischer Radrundweg zwischen Parlow und Friedrichswalde: Qualität? Wegfüh
 Am Gutshof (Gramzow): Qualität nach den Bauarbeiten?	? 50278,90449 50262,90540
 Werrastr.: Qualität des Sackgassenabschnitts?	? 13697,8279 13648,8321
 Karlsberg - Lätzlow: existiert eine Verbindung? Qualität?	? 58814,91687 58801,91710 58782,91712 58717,91843 58572,92110 58472,92325 58458,92403 58372,92542 58288,92536 58080,92626 57691,92618 57555,92694 57449,92832 57428,92954 57332,93130 57245,93216 56841,93207 56264,93180 56036,93217 55651,93267 54983,93657 54828,93661 54701,93788 54535,93879 54129,94020 53783,94031 52726,94026 52611,94062 52500,93800 52350,93856
+Kerkow - Görlsdorf: nach den Bauarbeiten (2008-11-08) besserer Asphalt?	? 45864,72724 46253,72339 46555,72293 46770,72248 47266,71628 48092,70962 48147,70935 48237,70892 48672,70933
+Wehrmathen: gehört die Straße zu Berlin oder Schönefeld?	? 18555,-588 18687,-632 18689,-686 18716,-727 18761,-748 18807,-745 18840,-729 18868,-686 18904,-573
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
@@ -1451,7 +1449,6 @@ Grumbkowstr.: mäßig geeignet (laut ADFC-Karte)	? 11269,20667 11419,20327 11563,2
 Nymphenufer: mäßig geeignet (laut ADFC-Karte)	? -4044,1841 -3981,1764 -3806,1644 -3761,1576 -3654,1539
 (Orankestr. - Orankesee): gut geeignet (laut ADFC-Karte)	? 15598,15793 15581,15846
 (Uferpromenade Spreebogenpark) (hat dieser Weg einen Namen (Ludwig-Erhard-Ufer?)?)	? 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871
-Samländische Str. (Qualität?)	? 10900,17397 10706,17391
 Gotenburger Str. (Ist die Gotenburger Str. eine Einbahnstraße? Wenn ja, auch für Radfahrer, oder nur für Autos?)	? 8844,16863 9000,16803
 Korkedamm (ist der Korkedamm im Mittelteil für Autos gesperrt?)	? 19375,2341 19654,2325 19962,2277
 Rue Charles Calmette (Qualität (womöglich Beton)?)	? 3753,16638 3711,16670 3684,16788
@@ -1471,8 +1468,6 @@ Stadtheidestr. (Ist die Stadtheidestr. eine Einbahnstraße? Wenn ja, in welche Ri
 Stadtrandstr. (Qualität?)	? -6755,15682 -6766,15741 -6719,16111
 (Allee der Kosmonauten - Biesdorfer Promenade) (Qualität? (laut ADFC-Karte gut geeignet))	? 19837,13531 19826,13444 19835,13152 20076,13034
 Ferdinand-Buisson-Str. (Qualität der Straße?)	? 12331,20963 12459,21010 12570,21058 12762,21140 12837,21229 12885,21282 12939,21345 12948,21421 12953,21502 12994,21719 13008,21783 13050,21994
-Grimmingweg (Qualität des Grimmingweges? (sowohl zwischen Säntisstr. und Föttingerzeile als auch des Fußwegabschnittes))	? 9978,1854 10001,1814 10004,1787 10003,1768 9943,1543 9931,1502 9908,1416
-Grimmingweg (Qualität des Grimmingweges? (sowohl zwischen Säntisstr. und Föttingerzeile als auch des Fußwegabschnittes))	? 9908,1416 9832,1380
 Roßlauer Str. (das letzte Stück zum Blumberger Damm nicht passierbar?)	? 20656,12415 20853,12388 20943,12376 21031,12364 21123,12352 21163,12347
 Ahornstr. (Hessenwinkel) (Qualität der Straße?)	? 32998,2827 32952,2786 32952,2743 32888,2717 32801,2710 32643,2695
 Brennerstr. (Qualität der Brennerstr. zwischen Trienter Str. und Andreas-Hofer-Platz?)	? 10228,17025 10495,17022

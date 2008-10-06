@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlin_DE.pm,v 1.29 2008/08/28 20:17:04 eserte Exp $
+# $Id: Berlin_DE.pm,v 1.30 2008/10/06 19:07:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2006 Slaven Rezic. All rights reserved.
@@ -223,7 +223,8 @@ sub parse_street_type_nr {
 	$type = 'HVL';
 	$image = 'HVL.gif';
     } elsif ($strname =~ /spreeradweg/i) {
-	$type = 'S';
+	$type = 'SPR';
+	$image = 'SPR.gif';
     } elsif ($strname =~ /hofjagdweg/i) {
 	$type = 'H';
     } elsif ($strname =~ /uckerm.*rkischer\s+.*rundweg/i) {

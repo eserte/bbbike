@@ -1,5 +1,5 @@
 #
-# $Id$
+# $Id: Makefile,v 1.112 2008/10/06 22:00:01 eserte Exp $
 #
 
 # Targets:
@@ -561,7 +561,7 @@ prepare-mapserver-dist-post:
 	cp -pf /usr/X11R6/lib/X11/fonts/ttf/LucidaSansRegular.ttf \
 	    ${CURDIR}/$(HTDOCS)/mapserver/brb/fonts
 .else
-	cp -pf /usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf \
+	cp -pf /usr/local/lib/X11/fonts/TTF/luxisr.ttf \
 	    ${CURDIR}/$(HTDOCS)/mapserver/brb/fonts
 .endif
 

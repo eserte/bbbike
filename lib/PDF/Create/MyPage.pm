@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MyPage.pm,v 1.4 2008/09/30 19:39:46 eserte Exp $
+# $Id: MyPage.pm,v 1.5 2008/10/06 22:02:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package PDF::Create::Page;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 ######################################################################
 # Additional PDF::Create methods
@@ -66,7 +66,7 @@ if (!defined &circle) {
 	my($page, $x, $y, $r) = @_;
 
 	my @coords;
-	for(my $i = 0; $i < PI*2; $i+=PI*2/$r/2) {
+	for(my $i = 0; $i < PI()*2; $i+=PI()*2/$r/2) {
 	    my($xi,$yi) = map { $_*$r } (sin $i, cos $i);
 	    push @coords, $x+$xi, $y+$yi;
 	}

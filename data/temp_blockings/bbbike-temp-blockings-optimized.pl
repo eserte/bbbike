@@ -440,15 +440,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1229727600,
-         'text' => 'L 794 Ruhlsdorfer Str. OD Teltow. zw. Schenkendorfer Weg und Ruhlsdorfer Platz Kanalarbeiten Vollsperrung 29.05.2008-19.12.2008 ',
-         'from' => 1211925600,
-         'id' => 1387,
-         'data' => 'userdel	q4::inwork 1222,-1732 1276,-1268
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -620,8 +612,8 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1225494000,
-         'text' => 'L 373 Richard-Sonnenburg-Straße OL Bri.-Finkenheerd ab KP Bhf-/Sonnenburgstr., 500m Ri. OA Straßenbau Vollsperrung 29.09.2008-31.10.2008 ',
+         'until' => 1228086000,
+         'text' => 'L 373 B112 - Müllrose OL Bri.-Finkenheerd ab KP Bhf-/Sonnenburgstr., 500m Ri. OA Kanal- und Straßenbau Vollsperrung 29.09.2008-30.11.2008 ',
          'from' => 1222552800,
          'id' => 1461,
          'data' => 'userdel	2::inwork 89098,-16962 90109,-16411
@@ -773,6 +765,135 @@ push @temp_blocking,
          'from' => undef,
          'id' => 1495,
          'data' => 'userdel	2::inwork 20810,2398 20928,2412
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009501',
+         'until' => 1225493999,
+         'text' => 'Glinkastr. (Mitte) in Richtung Leipziger Str. zwischen Behrenstr. und Jägerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2008)',
+         'from' => 1223320498,
+         'id' => 1496,
+         'data' => 'userdel	1::inwork 9164,12172 9183,12076
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_010086',
+         'until' => 1225580399,
+         'text' => 'Ordensmeisterstr. (Tempelhof) in Richtung Tempelhofer Damm zwischen Colditzstr. und Wenckebachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 11.2008)',
+         'from' => 1223320616,
+         'id' => 1497,
+         'data' => 'userdel	1::inwork 9789,5767 9670,5728 9457,5641 9357,5601
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_010134',
+         'until' => 1224107999,
+         'text' => 'Waltersdorfer Str. (Treptow) in beiden Richtungen zwischen Buntzelstr. und Wachtelstr. Baustelle, Straße vollständig gesperrt (bis Mitte 10.2008)',
+         'from' => 1223320675,
+         'id' => 1498,
+         'data' => 'userdel	2::inwork 22172,194 22168,-71 22177,-137 22190,-228
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1225058400,
+         'text' => 'B 107 Glöwen - B 5 Gumtow Durchlass vor Brücke über die Karthane bei Glöwen Durchlassneubau Vollsperrung 25.10.2008-26.10.2008 ',
+         'from' => 1224799200,
+         'id' => 1499,
+         'data' => 'userdel	2::inwork -80266,56143 -80074,58321
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1226271600,
+         'text' => 'K 6312 Brandenburger Allee, Bahnhofstaße OD Paulinenaue Straßenbau Vollsperrung 01.10.2008-09.11.2008 ',
+         'from' => 1222725600,
+         'id' => 1500,
+         'data' => 'userdel	q4::inwork -36724,28543 -36808,28769 -37053,29229
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1224972000,
+         'text' => 'K 6423 Platanenstr., Lindenallee Bahnübergang in der OL Fredersdorf Ausbau BÜ mit Gehweg Vollsperrung 06.10.2008-25.10.2008 ',
+         'from' => 1223157600,
+         'id' => 1501,
+         'data' => 'userdel	2::inwork 34139,13113 34183,13746 34276,14308
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1224453600,
+         'text' => 'K 6435 Ernst-Thälmann-Str. OD Seelow, zw. R.-Koch-Str. und Werbiger Str. Straßeninstandsetzung Vollsperrung 29.09.2008-19.10.2008 ',
+         'from' => 1222552800,
+         'id' => 1502,
+         'data' => 'userdel	q4::inwork 76771,15413 76567,16056
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1223848800,
+         'text' => 'L 015 Berliner Str. OL Lychen, zw. Hohenstegstr. und Fürstenberger Tor Straßenbau, Sanie.Stützmauer Vollsperrung 22.09.2008-12.10.2008 ',
+         'from' => 1221948000,
+         'id' => 1503,
+         'data' => 'userdel	q4::inwork 2111,89378 2480,89399
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1230073200,
+         'text' => 'L 025 Schmölln - LG - Penkun zw. Landesgrenze und Schmölln grundhafter Straßenbau Vollsperrung 29.09.2008-23.12.2008 ',
+         'from' => 1222552800,
+         'id' => 1504,
+         'data' => 'userdel	2::inwork 55984,100093 56268,99856 56856,99683 57516,99296
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1224108000,
+         'text' => 'L 074 OL Halbe Bahnübergang Gleisbauarbeiten Vollsperrung 09.10.2008-15.10.2008 ',
+         'from' => 1223416800,
+         'id' => 1505,
+         'data' => 'userdel	2::inwork 31593,-32938 31675,-32839 31700,-32810
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1226185200,
+         'text' => 'L 239 Angermünde - Joachimsthal zw. Kerkow und Görlsdorf Erneuerung Deckenbelag Vollsperrung 29.09.2008-08.11.2008 ',
+         'from' => 1222552800,
+         'id' => 1506,
+         'data' => 'userdel	2::inwork 45864,72724 46253,72339 46555,72293 46770,72248 47266,71628 48092,70962 48147,70935 48237,70892 48672,70933
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1228086000,
+         'text' => 'L 294 Ruhlsdorfer Str. OD Biesenthal, zw. Lanker Str. und Akazienallee Straßenneubau Vollsperrung 22.09.2008-30.11.2008 ',
+         'from' => 1221948000,
+         'id' => 1507,
+         'data' => 'userdel	q4::inwork 24189,41639 24142,41045 24248,40620 24354,40323
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1226790000,
+         'text' => 'L 431 Neuzelle - Möbiskruge OD Neuzelle, Slawengrund Deckenerneuerung Vollsperrung 22.10.2008-15.11.2008 ',
+         'from' => 1224540000,
+         'id' => 1508,
+         'data' => 'userdel	q4::inwork 94961,-33275 95107,-33405 95699,-33584 96017,-33547
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1223848800,
+         'text' => 'L 442 Goyatz-Guhlen - B 87 Mittweide Brücke über das Ressener Fließ in der OL Ressen Deckeneinbau Vollsperrung 10.10.2008-12.10.2008 ',
+         'from' => 1223503200,
+         'id' => 1509,
+         'data' => 'userdel	2::inwork 62465,-40268 63081,-40295 63207,-40382 63692,-41106
 ',
          'type' => 'gesperrt'
        }
