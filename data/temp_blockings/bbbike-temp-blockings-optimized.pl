@@ -667,15 +667,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1223589600,
-         'text' => 'B 158 Neuenhagen - B158 A Kreuzung B158/ B158A Altglietzen/ L 28 Gabow Straﬂenbauarb., Radweg, LSA Vollsperrung 30.09.2008-09.10.2008 ',
-         'from' => 1222639200,
-         'id' => 1477,
-         'data' => 'userdel	2::inwork 54877,47645 54012,46907
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -731,15 +723,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1223676000,
-         'text' => 'K 6411 Neulewin - Altwriezen zw. Heinrichsdorf und Kerstenbruch Straﬂenbauarbeiten Vollsperrung 22.09.2008-10.10.2008 ',
-         'from' => 1221948000,
-         'id' => 1491,
-         'data' => 'userdel	2::inwork 68327,37979 67364,38248 67053,38406 66413,38217
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1229727600,
          'text' => 'L 015 Rosa-Luxemburg-Str. OL Wittstock, zw. Polthierstr. und Bohnekampweg Kanal- und Straﬂenbau Vollsperrung 06.10.2008-19.12.2008 ',

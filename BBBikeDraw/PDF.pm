@@ -22,6 +22,9 @@ use Strassen;
 # sparen:
 use Carp qw(confess);
 
+#XXX experiment:
+#sub PDF::Create::cr { shift->add("\n") }
+
 use vars qw($VERSION @colors %color %width %outline_color
 	    $sansserif $symbolfont $VERBOSE);
 BEGIN { @colors =
