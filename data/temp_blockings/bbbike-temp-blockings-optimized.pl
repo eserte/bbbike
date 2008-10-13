@@ -297,7 +297,16 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_008423',
+         'until' => 1225493999,
+         'text' => 'Schillerstr. (Wilhelmsruh) Richtung Schönholzer Weg zwischen Hauptstr. und Schönholzer Weg Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2008)',
+         'from' => 1223933558,
+         'id' => 1341,
+         'data' => 'userdel	1::inwork 7832,20219 7957,20182 8062,20133 8196,20096
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -818,15 +827,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1223848800,
-         'text' => 'L 015 Berliner Str. OL Lychen, zw. Hohenstegstr. und Fürstenberger Tor Straßenbau, Sanie.Stützmauer Vollsperrung 22.09.2008-12.10.2008 ',
-         'from' => 1221948000,
-         'id' => 1503,
-         'data' => 'userdel	q4::inwork 2111,89378 2480,89399
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1230073200,
          'text' => 'L 025 Schmölln - LG - Penkun zw. Landesgrenze und Schmölln grundhafter Straßenbau Vollsperrung 29.09.2008-23.12.2008 ',
@@ -872,12 +873,87 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
+       undef,
        {
-         'until' => 1223848800,
-         'text' => 'L 442 Goyatz-Guhlen - B 87 Mittweide Brücke über das Ressener Fließ in der OL Ressen Deckeneinbau Vollsperrung 10.10.2008-12.10.2008 ',
-         'from' => 1223503200,
-         'id' => 1509,
-         'data' => 'userdel	2::inwork 62465,-40268 63081,-40295 63207,-40382 63692,-41106
+         'source_id' => 'IM_010271',
+         'until' => 1224280799,
+         'text' => 'Am Kupfergraben (Mitte) in beiden Richtungen Höhe Pergamonmuseum Baustelle, Straße vollständig gesperrt (bis 17.10.)',
+         'from' => 1223933600,
+         'id' => 1510,
+         'data' => 'userdel	q4::inwork 9810,12712 9867,12651
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_010255',
+         'until' => 1226789999,
+         'text' => 'Nöldnerstr. (Lichtenberg) Richtung Karlshorster Str. zwischen Lückstr. und Karlsholrster Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 11.2008)',
+         'from' => 1223933669,
+         'id' => 1511,
+         'data' => 'userdel	1::inwork 16032,10842 15670,10800 15396,10767 15266,10791
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1225926000,
+         'text' => 'K 6722 Bornow - Groß Rietz Bahnübergang zw. Bornow und Birkholz Gleisbauarbeiten Vollsperrung 09.10.2008-05.11.2008 ',
+         'from' => 1223416800,
+         'id' => 1512,
+         'data' => 'userdel	2::inwork 64933,-24619 64924,-23029
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1225148400,
+         'text' => 'L 015 Berliner-/Fontanestraße OL Lychen zw. Schlüßstraße u. Ortsausgang Erneuerung Deckenbelag Vollsperrung 13.10.2008-27.10.2008 ',
+         'from' => 1223762400,
+         'id' => 1513,
+         'data' => 'userdel	q4::inwork 1544,89701 1090,89570
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1224453600,
+         'text' => 'L 030 Mittenwalde - Königs Wusterhausen zw. AS Mittenwalde und Schenkendorf Straßenbauarbeiten Vollsperrung 18.10.2008-19.10.2008 ',
+         'from' => 1224194400,
+         'id' => 1514,
+         'data' => 'userdel	2::inwork 22865,-15325 23123,-14619
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1224799200,
+         'text' => 'L 030 Mittenwalde - Königs Wusterhausen zw. Schenkendorf und Königs Wusterhausen Straßenbauarbeiten Vollsperrung 22.10.2008-23.10.2008 ',
+         'from' => 1224540000,
+         'id' => 1515,
+         'data' => 'userdel	2::inwork 24843,-13725 25203,-13334
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1225407600,
+         'text' => 'L 034 Hohensteiner Chaussee OD Strausberg, zw. Ph.-Müller-Str. und Getränkemarkt Instandsetzung Entwäss. Vollsperrung 20.10.2008-30.10.2008 ',
+         'from' => 1224367200,
+         'id' => 1516,
+         'data' => 'userdel	q4::inwork 43110,19818 43686,19241
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1230764400,
+         'text' => 'L 315 Prenden-Klosterfelde OD Klosterfelde grundhafter Straßenbau Vollsperrung 04.10.2007-31.12.2008 ',
+         'from' => 1191362400,
+         'id' => 1517,
+         'data' => 'userdel	q4::inwork 14941,42957 15632,43100
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1225058400,
+         'text' => 'L 707 Baruth - Kummersdorf Gut zw. Horstwalde und Kummersdorf Gut Straßenbauarbeiten Vollsperrung 22.10.2008-26.10.2008 ',
+         'from' => 1224540000,
+         'id' => 1518,
+         'data' => 'userdel	2::inwork 11040,-35529 10087,-34897 9406,-34427
 ',
          'type' => 'gesperrt'
        }

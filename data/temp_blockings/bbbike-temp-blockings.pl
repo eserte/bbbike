@@ -11289,9 +11289,9 @@ EOF
 userdel	2::temp 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6240,13324
 EOF
      },
-     { from  => 1221686220, # 2008-09-17 23:17
-       until => 1222898399, # 2008-10-01 23:59
-       text  => 'Schillerstr. (Wilhelmsruh) Richtung Schönholzer Weg zwischen Hauptstr. und Schönholzer Weg Baustelle, Fahrtrichtung gesperrt (bis Anfang 10.2008)',
+     { from  => 1223933558, # 2008-10-13 23:32
+       until => 1225493999, # 2008-10-31 23:59
+       text  => 'Schillerstr. (Wilhelmsruh) Richtung Schönholzer Weg zwischen Hauptstr. und Schönholzer Weg Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2008)',
        type  => 'gesperrt',
        source_id => 'IM_008423',
        data  => <<EOF,
@@ -12788,6 +12788,80 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 62465,-40268 63081,-40295 63207,-40382 63692,-41106
+EOF
+     },
+     { from  => 1223933600, # 2008-10-13 23:33
+       until => 1224280799, # 2008-10-17 23:59
+       text  => 'Am Kupfergraben (Mitte) in beiden Richtungen Höhe Pergamonmuseum Baustelle, Straße vollständig gesperrt (bis 17.10.)',
+       type  => 'handicap',
+       source_id => 'IM_010271',
+       data  => <<EOF,
+userdel	q4::inwork 9810,12712 9867,12651
+EOF
+     },
+     { from  => 1223933669, # 2008-10-13 23:34
+       until => 1226789999, # 2008-11-15 23:59
+       text  => 'Nöldnerstr. (Lichtenberg) Richtung Karlshorster Str. zwischen Lückstr. und Karlsholrster Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 11.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_010255',
+       data  => <<EOF,
+userdel	1::inwork 16032,10842 15670,10800 15396,10767 15266,10791
+EOF
+     },
+     { from  => 1223416800, # 2008-10-08 00:00
+       until => 1225926000, # 2008-11-06 00:00
+       text  => 'K 6722 Bornow - Groß Rietz Bahnübergang zw. Bornow und Birkholz Gleisbauarbeiten Vollsperrung 09.10.2008-05.11.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 64933,-24619 64924,-23029
+EOF
+     },
+     { from  => 1223762400, # 2008-10-12 00:00
+       until => 1225148400, # 2008-10-28 00:00
+       text  => 'L 015 Berliner-/Fontanestraße OL Lychen zw. Schlüßstraße u. Ortsausgang Erneuerung Deckenbelag Vollsperrung 13.10.2008-27.10.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 1544,89701 1090,89570
+EOF
+     },
+     { from  => 1224194400, # 2008-10-17 00:00
+       until => 1224453600, # 2008-10-20 00:00
+       text  => 'L 030 Mittenwalde - Königs Wusterhausen zw. AS Mittenwalde und Schenkendorf Straßenbauarbeiten Vollsperrung 18.10.2008-19.10.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 22865,-15325 23123,-14619
+EOF
+     },
+     { from  => 1224540000, # 2008-10-21 00:00
+       until => 1224799200, # 2008-10-24 00:00
+       text  => 'L 030 Mittenwalde - Königs Wusterhausen zw. Schenkendorf und Königs Wusterhausen Straßenbauarbeiten Vollsperrung 22.10.2008-23.10.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 24843,-13725 25203,-13334
+EOF
+     },
+     { from  => 1224367200, # 2008-10-19 00:00
+       until => 1225407600, # 2008-10-31 00:00
+       text  => 'L 034 Hohensteiner Chaussee OD Strausberg, zw. Ph.-Müller-Str. und Getränkemarkt Instandsetzung Entwäss. Vollsperrung 20.10.2008-30.10.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 43110,19818 43686,19241
+EOF
+     },
+     { from  => 1191362400, # 2007-10-03 00:00
+       until => 1230764400, # 2009-01-01 00:00
+       text  => 'L 315 Prenden-Klosterfelde OD Klosterfelde grundhafter Straßenbau Vollsperrung 04.10.2007-31.12.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 14941,42957 15632,43100
+EOF
+     },
+     { from  => 1224540000, # 2008-10-21 00:00
+       until => 1225058400, # 2008-10-26 23:00
+       text  => 'L 707 Baruth - Kummersdorf Gut zw. Horstwalde und Kummersdorf Gut Straßenbauarbeiten Vollsperrung 22.10.2008-26.10.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 11040,-35529 10087,-34897 9406,-34427
 EOF
      },
     );

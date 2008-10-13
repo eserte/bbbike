@@ -774,8 +774,8 @@ früher vorhandene Radwege abgesperrt	RW0;RW0 6230,13596 6366,13716 6493,13822 66
 	RW6;RW6 8980,9751 8988,9783
 #: XXX_prog: absichtliche Bruchstelle wegen schlechten Renderings
 	RW6;RW6 8988,9783 8779,9851
-asphaltiert	RW1; 10213,8665 10598,8563
-asphaltiert	RW1; 10598,8563 10796,8498 10911,8457 11271,8325
+asphaltiert	RW1;RW1 10213,8665 10598,8563 10796,8498
+asphaltiert	RW1; 10796,8498 10911,8457 11271,8325
 asphaltiert; Zweirichtungsradweg	RW2; 11271,8325 11416,8283
 asphaltiert	RW1; 11416,8283 11632,8302
 Gehweg ist für Radfahrer freigegeben, aber schlechte Qualität (unbefestigt)	RW0; 11632,8302 11416,8283 11271,8325 10911,8457 10796,8498 10598,8563
