@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.191 2008/09/09 19:44:53 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.192 2008/10/25 09:16:16 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9687,10180 9592,10174 9401,10199
@@ -610,6 +610,10 @@ Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
 Behrenstr./Bebelplatz	1s 9801,12245 9743,12239 9700,12234 9626,12227
 Halenseestr.	1s 2277,9801 2167,10004 2121,10089 1988,10328 1957,10426
+Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
+Mittelstreifen	3nocross::ignrte 5350,21251 5357,21199 5391,21003
+Cyclopstr. -> Oranienburger Str.: Mittelstreifen	3::igndisp 5297,21243 5357,21199 5350,21251
+Oranienburger Str. -> Cyclopstr.: Mittelstreifen	3::igndisp 5391,21003 5357,21199 5297,21243
 Betonblöcke	3nocross::ignrte 9757,10708 9801,10807 9927,11072
 Markgrafenstr. -> Am Berlin Museum: Betonblöcke	3::igndisp 9780,10970 9801,10807 10016,10755
 Markgrafenstr. -> Lindenstr.: Betonblöcke	3::igndisp 9780,10970 9801,10807 9927,11072
@@ -1920,11 +1924,15 @@ Engstelle	BNP:20:-243 -2014,39128
 Pollerreihe	BNP:0:-21 -5923,37934
 Drängelgitter	BNP:10:-98 565,38885
 Drängelgitter	BNP:5:-184 1289,39862
-Treppe (mehrere, weit auseinander liegende Stufen)	BNP:30:-175 -1498,38589
+Treppe (mehrere, weit auseinander liegende Stufen)	0:30:-175 -1498,38589
 Durchgang neben Schranke	BNP:5:66 -840,40618
 über den Huckel	BNP:15:-188 1409,41218
 Durchgang neben Schranke	BNP:5:-24 -1335,34371
-Treppe (17 Stufen) (Hohen Neuendorf)	BNP:30:-206 2262,30691
+Treppe (17 Stufen) (Hohen Neuendorf)	0:30:-206 2262,30691
+Treppe (ca. 15 Stufen) (Hohen Neuendorf)	0:25:-90 2066,28767
+Treppe (ca. 15 Stufen) (Hohen Neuendorf)	0:25:63 2106,28767
 Venedig (Borgsdorf)	1 -460,33067 -529,33240
-Treppe mit 1+25+1 Stufen (Birkenwerder)	BNP:45:-91 1592,31772
+Treppe mit 1+25+1 Stufen (Birkenwerder)	0:45:-91 1592,31772
+Treppe (Birkenwerder)	0:30:-122 2090,31540
+Treppe (Birkenwerder)	0:30:-121 2181,31595
 An den Kanalwiesen (Wendisch Rietz)	1 51857,-20420 51900,-20326 51916,-20240

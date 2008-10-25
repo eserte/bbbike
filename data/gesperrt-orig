@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.191 2008/09/09 19:44:53 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.192 2008/10/25 09:16:16 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
 ###################################################################
@@ -724,12 +724,14 @@ Am Poetensteig, Gramzow	1s:q1 50043,90187 50109,89725
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,12513
 Behrenstr./Bebelplatz	1s:q3 9801,12245 9743,12239 9700,12234 9626,12227
 Halenseestr.	1s:q2 2277,9801 2167,10004 2121,10089 1988,10328 1957,10426
+Zeltinger Platz	1s:q3 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
 #
 ####################################################################
 #
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Oranienburger Str. (Wittenau): Mittelstreifen	3nocross 5350,21251 5357,21199 5391,21003
 Lindenstr.: Betonblöcke	3nocross 9757,10708 9801,10807 9927,11072
 Oranienburger Str.: Straßenbahnhaltestelle	3nocross 9215,13392 9281,13374 9415,13315
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12046,16568
@@ -1700,7 +1702,7 @@ Drängelgitter	BNP:10 565,38885
 # (Wanderweg am Lehnitzsee): an der B273
 Drängelgitter	BNP:5 1289,39862
 # westliches Havelufer am Schloss
-Treppe (mehrere, weit auseinander liegende Stufen)	BNP:30 -1498,38589
+Treppe (mehrere, weit auseinander liegende Stufen)	0:30 -1498,38589
 # Zum Bahnhof
 Durchgang neben Schranke	BNP:5 -840,40618
 # zwischen Klinkerhafen und nGAR
@@ -1711,7 +1713,9 @@ Durchgang neben Schranke	BNP:5 -1335,34371
 #
 #
 #: append_comment Hohen Neuendorf vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-Treppe (17 Stufen)	BNP:30 2262,30691
+Treppe (17 Stufen)	0:30 2262,30691
+Treppe (ca. 15 Stufen)	0:25 2066,28767
+Treppe (ca. 15 Stufen)	0:25 2106,28767
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: append_comment Borgsdorf vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Venedig	1 -460,33067 -529,33240
@@ -1719,7 +1723,9 @@ Venedig	1 -460,33067 -529,33240
 #
 #
 #: append_comment Birkenwerder vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-Treppe mit 1+25+1 Stufen	BNP:45 1592,31772
+Treppe mit 1+25+1 Stufen	0:45 1592,31772
+Treppe	0:30 2090,31540
+Treppe	0:30 2181,31595
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #
 #

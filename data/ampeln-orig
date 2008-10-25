@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.143 2008/09/09 19:44:53 eserte Exp eserte $
+#: version: $Id: ampeln-orig,v 4.144 2008/10/25 09:16:14 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
 	X 9222,8787
@@ -1212,11 +1212,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5808,20356
 	X 5417,20824
 	X 5391,21003
-	X 5149,21721
-	X 4937,22004
+	X 5136,21738
+	X 4925,22022
 	X 4718,22384
-	X 4348,22744
-	X 4245,23152
+	X 4337,22753
+	X 4259,23149
 	X 3960,23966
 	X 3848,24546
 	X 3145,26256
@@ -1303,7 +1303,7 @@ nur Richtung O	X 8142,7221
 	X 3174,23273
 	X 3048,23109
 	X 2793,22640
-	X 3378,23652
+	X 3367,23654
 	X 4201,23397
 	X 4456,22278
 	X 4371,22234
@@ -1339,7 +1339,7 @@ nur Richtung O	X 8142,7221
 	X 5201,20103
 	X 5517,20120
 	X 5481,20379
-	X 5354,21232
+	F 5348,21267
 	X 5819,21057
 	X 5934,21513
 	X 6382,21109
@@ -2383,6 +2383,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 13520,6583
 #: note: Luftbild:
 	F 6315,3974
+	F 7728,16538
 ################################################################################
 # note: Potsdam vvv
 	X -12839,-1342

@@ -631,15 +631,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1224108000,
-         'text' => 'L 435 Oelsen - Grunow (B246) zw. OA Oelsen u. Krzg. Lindenstraße i.d. OL Grunow Grundhafter Ausbau Vollsperrung 28.08.2008-15.10.2008 ',
-         'from' => 1219788000,
-         'id' => 1464,
-         'data' => 'userdel	q4::inwork 77489,-28251 77555,-28060 78085,-27152
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -781,16 +773,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_010134',
-         'until' => 1224107999,
-         'text' => 'Waltersdorfer Str. (Treptow) in beiden Richtungen zwischen Buntzelstr. und Wachtelstr. Baustelle, Straße vollständig gesperrt (bis Mitte 10.2008)',
-         'from' => 1223320675,
-         'id' => 1498,
-         'data' => 'userdel	2::inwork 22172,194 22168,-71 22177,-137 22190,-228
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1225058400,
          'text' => 'B 107 Glöwen - B 5 Gumtow Durchlass vor Brücke über die Karthane bei Glöwen Durchlassneubau Vollsperrung 25.10.2008-26.10.2008 ',
@@ -818,15 +801,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1224453600,
-         'text' => 'K 6435 Ernst-Thälmann-Str. OD Seelow, zw. R.-Koch-Str. und Werbiger Str. Straßeninstandsetzung Vollsperrung 29.09.2008-19.10.2008 ',
-         'from' => 1222552800,
-         'id' => 1502,
-         'data' => 'userdel	q4::inwork 76771,15413 76567,16056
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1230073200,
@@ -837,15 +812,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1224108000,
-         'text' => 'L 074 OL Halbe Bahnübergang Gleisbauarbeiten Vollsperrung 09.10.2008-15.10.2008 ',
-         'from' => 1223416800,
-         'id' => 1505,
-         'data' => 'userdel	2::inwork 31593,-32938 31675,-32839 31700,-32810
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1226185200,
          'text' => 'L 239 Angermünde - Joachimsthal zw. Kerkow und Görlsdorf Erneuerung Deckenbelag Vollsperrung 29.09.2008-08.11.2008 ',
@@ -874,16 +841,7 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_010271',
-         'until' => 1224280799,
-         'text' => 'Am Kupfergraben (Mitte) in beiden Richtungen Höhe Pergamonmuseum Baustelle, Straße vollständig gesperrt (bis 17.10.)',
-         'from' => 1223933600,
-         'id' => 1510,
-         'data' => 'userdel	q4::inwork 9810,12712 9867,12651
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_010255',
          'until' => 1226789999,
@@ -912,24 +870,8 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1224453600,
-         'text' => 'L 030 Mittenwalde - Königs Wusterhausen zw. AS Mittenwalde und Schenkendorf Straßenbauarbeiten Vollsperrung 18.10.2008-19.10.2008 ',
-         'from' => 1224194400,
-         'id' => 1514,
-         'data' => 'userdel	2::inwork 22865,-15325 23123,-14619
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1224799200,
-         'text' => 'L 030 Mittenwalde - Königs Wusterhausen zw. Schenkendorf und Königs Wusterhausen Straßenbauarbeiten Vollsperrung 22.10.2008-23.10.2008 ',
-         'from' => 1224540000,
-         'id' => 1515,
-         'data' => 'userdel	2::inwork 24843,-13725 25203,-13334
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1225407600,
          'text' => 'L 034 Hohensteiner Chaussee OD Strausberg, zw. Ph.-Müller-Str. und Getränkemarkt Instandsetzung Entwäss. Vollsperrung 20.10.2008-30.10.2008 ',

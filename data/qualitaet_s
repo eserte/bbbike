@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.229 2008/09/09 19:33:13 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.230 2008/10/25 09:16:18 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10257,-2654 10392,-2980 10475,-3174
@@ -1919,6 +1919,11 @@ Kienappelweg: Beton	Q0 24102,3055 24102,3455
 Kaumannsgasse: Kopfsteinpflaster	Q2 22339,4396 22268,4424
 Laurenzstr.: Kopfsteinpflaster	Q2 22243,4710 22161,4734
 Mierstr.: Kopfsteinpflaster	Q2 13627,7047 13575,7200
+Heinsestr.: Kopfsteinpflaster	Q1 3593,23297 3514,23417 3421,23614 3410,23637 3367,23654
+Ariadnestr.: Kopfsteinpflaster	Q2 2657,25486 2505,25538 2384,25495 2301,25492
+Gollanczstr.: Verbundsteinpflaster	Q1 2120,26060 2108,26312
+Gollanczstr.: Kopfsteinpflaster	Q2 2108,26312 2111,26459
+Gollanczstr.: Asphalt	Q0 2111,26459 2122,26660 2017,26779
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 364,4829 319,4906 168,5092 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2240,6904 2116,6861 2054,6840 1975,6818
@@ -3022,7 +3027,7 @@ Torweg: asphaltiert	Q0 -8464,14681 -8289,14664
 Torweg: asphaltiert	Q0 -8289,14664 -8126,14641 -8118,14649 -7952,14632
 Torweg: asphaltiert	Q0 -7413,14561 -7114,14579 -6913,14576 -6442,14535
 Delbrückstr. (Neukölln): Beton	Q0 12468,6592 12743,6645
-Lübarser Str.: Asphalt	Q0 5326,21407 5589,21799
+Lübarser Str.: Asphalt	Q0 5320,21432 5589,21799
 (Wuhlewanderweg - Teterower Ring): Asphalt	Q0 22199,12955 22444,12990
 (Erich-Kästner-Str. - Peter-Huchel-Str.): Asphalt	Q0 23056,13727 23007,13509
 Peter-Huchel-Str.: Asphalt	Q0 22960,13298 23007,13509 23275,13459 23460,13454
@@ -3331,7 +3336,7 @@ Straße 52a: mäßiger Asphalt	Q1 11212,21128 10119,20731
 Heinrichstr. (Lichtenberg): Kopfsteinpflaster	Q2 16790,10955 16869,11190 16936,11409
 Buttmannstr.: schlechtes Kopfsteinpflaster	Q3 8481,16136 8659,16327
 Klingerstr.: Asphalt	Q0 14872,8655 14934,8717
-Cyclopstr.: schlechtes Kopfsteinpflaster, stark wellig und Schlaglöcher	Q3 5106,21418 5312,21228 5354,21232
+Cyclopstr.: schlechtes Kopfsteinpflaster, stark wellig und Schlaglöcher	Q3 5106,21418 5297,21243 5357,21199
 Cyclopstr.: asphaltiert	Q0 4810,21730 5106,21418
 Lange Str. (Lichterfelde): Asphalt	Q0 5250,1725 5396,1774 5421,1786 5519,1831 5656,1882 5781,1936 5865,1975
 Bahnhofstr. (Lichterfelde): Asphalt	Q0 4767,2853 5058,2702 5324,2553 5367,2528
@@ -3513,7 +3518,7 @@ Hattenheimer Str. (Tempelhof): Asphalt	Q0 11590,6026 11656,6182 11651,6192 11628
 Riastr.: schlechtes Kopfsteinpflaster	Q3 18201,8984 18247,9158
 Am Stichkanal: Asphalt	Q0 2515,1131 2535,1102 2659,962 2733,871 2699,821 2672,725 2736,645 2262,207
 Holzkircher Str.: Asphalt, viele Schlaglöcher	Q1 12850,17084 12923,17133 13033,17211
-Minheimer Str.: Kleinpflastersteine	Q2 2397,25362 2283,25358
+Minheimer Str.: Kleinpflastersteine	Q2 2380,25364 2283,25358
 Minheimer Str.: schlechtes Kopfsteinpflaster	Q3 2283,25358 2123,25606
 Minheimer Str.: Kleinpflastersteine	Q2 2123,25606 2049,25799
 Glasberger Str.: guter Asphalt	Q0 22132,7148 22172,7384 22190,7475 22244,7609 22279,7672
@@ -3933,7 +3938,7 @@ Kekuléstr.: guter Asphalt	Q0 19136,2673 19268,2784 19375,2888 19425,2934
 (Templerzeile - Götzstr.): Asphalt	Q0 9681,6180 9683,6199 9708,6493
 Straße 614: Verbundsteinpflaster	Q1 13105,5748 12885,5699
 Marschnerstr.: mäßiges Kopfsteinpflaster	Q2 4613,4515 4641,4287 4634,4053 4629,3916
-Odilostr.: mäßiger Beton	Q1 3204,24132 3311,24150 3483,24186 3632,24214 3771,24241 3902,24266
+Odilostr.: mäßiger Beton	Q1 3216,24135 3311,24150 3483,24186 3632,24214 3771,24241 3902,24266
 Westfalenring: mäßiger Beton	Q1 4068,406 4079,354 4066,277 4029,144 3939,109 3922,111 3837,166 3795,221 3729,324
 Täubchenstr.: Asphalt	Q0 -862,4542 -947,4303
 Masurenstr.: mäßiger Asphalt	Q1 10894,17470 10670,17458
@@ -4274,8 +4279,8 @@ Hubertusweg: Kleinpflastersteine	Q2 3661,27861 3554,27802 3333,27766
 (Verlängerte Klarastr.): Sandweg	Q2 2576,28008 2603,28039 2600,28080 2651,28147
 Utestr.: schlechtes Kopfsteinpflaster	Q3 2159,28096 2340,28043
 Utestr.: Asphalt	Q0 2340,28043 2381,28057 2576,28008
-Staehleweg: Asphalt	Q0 2345,27670 2061,27612 2006,27605 1887,27570 1741,27539
-Invalidensiedlung: Asphalt	Q0 2006,27605 1997,28089 1937,28118 1886,28107 1861,27708 1887,27570
+Staehleweg: Asphalt	Q0 2345,27670 2061,27612 1965,27594 1937,27571 1858,27576 1741,27539
+Invalidensiedlung: Asphalt	Q0 1965,27594 1997,28089 1937,28118 1886,28107 1863,27795 1828,27752 1826,27695 1859,27651 1858,27576
 Gollanczstr.: Asphalt	Q0 2017,26779 2044,27286 2061,27612
 Straße 151: mäßiger Asphalt	Q1 8973,21271 8932,21192 8860,21051
 Straße 152: guter Beton	Q0 8793,21110 8867,21222
@@ -4289,8 +4294,8 @@ Niederauer Weg: gutes Verbundsteinpflaster	Q1 9008,21124 9093,21090 9138,21070
 (Mönchmühler Str. - Mauerweg): gut befahrbarer Asphalt	Q0 8543,22413 8341,22497
 (Helweg - Mauerweg): mäßig befahrbarer Sandweg	Q2 648,24589 575,24601
 Am Ausblick: sehr guter Asphalt	Q0 1309,24995 1227,25003 1125,25028
-Wiltinger Str.: sehr guter Asphalt	Q0 2387,25271 2397,25362
-Wiltinger Str.: Kleinpflastersteine	Q2 2397,25362 2384,25495 2385,25670
+Wiltinger Str.: sehr guter Asphalt	Q0 2395,25273 2380,25364
+Wiltinger Str.: Kleinpflastersteine	Q2 2380,25364 2384,25495 2385,25670
 Wahnfriedstr.: Kleinpflastersteine	Q2 2083,25221 2019,25360
 Wahnfriedstr.: gut befahrbarer Asphalt	Q1 2019,25360 1931,25511 1884,25628 1843,25746 1784,25809
 Stolzingstr.: Kleinpflastersteine	Q2 1339,25251 1429,25335 1468,25384 1542,25483 1558,25505 1644,25620
@@ -4314,7 +4319,7 @@ Am Grünen Zipfel: Kleinpflastersteine	Q2 2003,24702 1893,24843
 Am Querschlag: Kleinpflastersteine	Q2 1633,24939 1643,25005 1644,25092
 Mattersburger Weg: Kleinpflastersteine	Q2 2018,24313 1992,24354 1963,24400 1908,24494
 Am Eichenhain: Kleinpflastersteine	Q2 872,24330 854,24387 836,24440 813,24497 790,24556 784,24612 790,24698 808,24790 811,24833 793,24943 786,24982
-Gollanczstr.: Kleinpflastersteine	Q2 2120,26060 2213,25642 2299,25476
+Gollanczstr.: Kleinpflastersteine	Q2 2120,26060 2155,25778 2213,25642 2301,25492
 Markgrafenstr. (Frohnau): Kleinpflastersteine	Q2 2123,25606 2213,25642 2385,25670 2515,25666 2615,25634 2721,25576 2794,25514 2907,25363 2938,25317 3411,25027 3398,24931
 Welfenallee: schlechtes Kopfsteinpflaster	Q3 1908,24494 1806,24440 1776,24416
 Welfenallee: Kleinpflastersteine	Q2 1776,24416 1758,24389

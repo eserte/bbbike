@@ -7951,7 +7951,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005369',
        data  => <<EOF,
-userdel	2::inwork 2951,24389 2690,24751 2542,24945 2438,25082
+userdel	2::inwork 2951,24389 2849,24530 2690,24751 2542,24945 2438,25082
 EOF
      },
      { from  => undef, # 
@@ -9237,7 +9237,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006189',
        data  => <<EOF,
-userdel	1::inwork 5326,21407 5311,21495 5149,21721
+userdel	1::inwork 5320,21432 5311,21495 5136,21738
 EOF
      },
      { from  => 1187647200, # 2007-08-21 00:00
@@ -9517,7 +9517,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006352',
        data  => <<EOF,
-userdel	1::inwork 5326,21407 5311,21495 5149,21721
+userdel	1::inwork 5320,21432 5311,21495 5136,21738
 EOF
      },
      { from  => 1188240671, # 
