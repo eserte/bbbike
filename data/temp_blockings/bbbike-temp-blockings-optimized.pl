@@ -681,15 +681,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1225148400,
-         'text' => 'L 702 zw. Werenzhain und Dübrichen Deckenernuerung Vollsperrung 08.09.2008-27.10.2008 ',
-         'from' => 1220738400,
-         'id' => 1482,
-         'data' => 'userdel	2::inwork 20497,-83501 20193,-83398 19068,-82695 17319,-82108
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1225407600,
@@ -774,15 +766,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1225058400,
-         'text' => 'B 107 Glöwen - B 5 Gumtow Durchlass vor Brücke über die Karthane bei Glöwen Durchlassneubau Vollsperrung 25.10.2008-26.10.2008 ',
-         'from' => 1224799200,
-         'id' => 1499,
-         'data' => 'userdel	2::inwork -80266,56143 -80074,58321
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1226271600,
          'text' => 'K 6312 Brandenburger Allee, Bahnhofstaße OD Paulinenaue Straßenbau Vollsperrung 01.10.2008-09.11.2008 ',
@@ -792,15 +776,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1224972000,
-         'text' => 'K 6423 Platanenstr., Lindenallee Bahnübergang in der OL Fredersdorf Ausbau BÜ mit Gehweg Vollsperrung 06.10.2008-25.10.2008 ',
-         'from' => 1223157600,
-         'id' => 1501,
-         'data' => 'userdel	2::inwork 34139,13113 34183,13746 34276,14308
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -861,15 +837,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1225148400,
-         'text' => 'L 015 Berliner-/Fontanestraße OL Lychen zw. Schlüßstraße u. Ortsausgang Erneuerung Deckenbelag Vollsperrung 13.10.2008-27.10.2008 ',
-         'from' => 1223762400,
-         'id' => 1513,
-         'data' => 'userdel	q4::inwork 1544,89701 1090,89570
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -889,15 +857,6 @@ push @temp_blocking,
          'data' => 'userdel	q4::inwork 14941,42957 15632,43100
 ',
          'type' => 'handicap'
-       },
-       {
-         'until' => 1225058400,
-         'text' => 'L 707 Baruth - Kummersdorf Gut zw. Horstwalde und Kummersdorf Gut Straßenbauarbeiten Vollsperrung 22.10.2008-26.10.2008 ',
-         'from' => 1224540000,
-         'id' => 1518,
-         'data' => 'userdel	2::inwork 11040,-35529 10087,-34897 9406,-34427
-',
-         'type' => 'gesperrt'
        }
      
 );

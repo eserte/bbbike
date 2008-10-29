@@ -45,8 +45,10 @@ Fußgängerampel links benutzen	CP; 6033,10403 6020,10351 6147,10383
 Fußgängerampel vor der Passauer Str. zum Überqueren der Lietzenburger Str. benutzen	CP; 6147,10383 6020,10351 5997,10286
 Fußgängerampel links benutzen	CP; 14723,16691 14619,16682 14619,16672
 Münchener Str., über Hohenstaufenstr.: Fußgängerampel auf der linken Seite zum Überqueren der Hohenstaufenstr. benutzen	CP; 6210,9833 6209,9772 6227,9531
+Münchener Str., über Hohenstaufenstr.: Fußgängerampel auf der rechten Seite zum Überqueren der Hohenstaufenstr. benutzen	CP; 6227,9531 6209,9772 6210,9833
 Münchener Str., Richtung Martin-Luther-Str.: Fußgängerampel auf der linken Seite benutzen	CP; 6210,9833 6209,9772 6241,9772
 Hohenstaufenstr. zur Münchener Str.: frühzeitig Fußgängerampel nach links benutzen	PI; 6241,9772 6209,9772 6227,9531
+Münchener Str. zur Nachodstr.: Fußgängerampel auf der rechten Seite benutzen	CP; 6227,9531 6209,9772 6108,9772
 Thomas-Dehler-Str. => Stülerstr.: nach dem Abbiegen zunächst auf dem linken Gehweg bleiben	CP; 6654,11460 6716,11439 6825,11486
 Gervinusstr./Lewishamstr.: linken Gehweg bis zur Ampel an der Mommsenstr. benutzen	CP; 3839,10904 3631,10784 3644,10759
 Tiergarten: rechts des Neuen Sees halten	CP; 5901,11902 5890,11865 5870,11842
@@ -96,8 +98,8 @@ Stralauer Allee - Warschauer Platz: bereits an der Kreuzung Am Oberbaum/Stralaue
 Am Schinkelplatz: Nicht ausgeschildert, Fortsetzung der Unterwasserstr.	CP2; 10084,12228 9987,12421
 Bereits an der Ampel Steinmetzstr. die Straßenseite wechseln	PI; 7702,10146 7813,10112 7850,10351
 Weißenhöher Str. - Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen, bis zum Tunnel Friedrichsfelde vorfahren und ggfs. die Straßenseite wechseln	PI; 19827,11686 19693,11762 19283,11785
-Regensburger Str. - Bundesallee: zunächst auf der linken Gehwegseite bis zur Kreuzung Nachodstr. fahren und dort die Straßenseite wechseln	CP; 5541,9923 5475,9914 5472,9850
-Bundesallee - Pariser Str.: an der Kreuzung Nachodstr. auf die linken Gehwegseite der Bundesallee wechseln	PI; 5472,9850 5475,9914 5416,9928
+Regensburger Str. - Bundesallee: zunächst auf der linken Gehwegseite bis zur Kreuzung Nachodstr. fahren und dort die Straßenseite wechseln	CP; 5541,9923 5475,9914 5473,9869
+Bundesallee - Pariser Str.: an der Kreuzung Nachodstr. auf die linken Gehwegseite der Bundesallee wechseln	PI; 5473,9869 5475,9914 5416,9928
 Mehringbrücke - Ruhlsdorfer Str.: den linken Gehweg benutzen	CP2; 9401,10199 9368,10211
 Buchholzer Str. - Schönhauser Allee: zunächst auf der linken Geh/Radwegseite der Schönhauser Allee fahren, an der Kreuzung Gneiststr. die Straßenseite wechseln	CP; 11055,15504 10930,15522 10917,15418
 An der Stadtteilbibliothek einbiegen	CP2; 9460,6519 9453,6415
@@ -150,8 +152,8 @@ das Portal des Anhalter Bahnhofs links liegen lassen	CP2; 8938,10872 8912,10846
 rechts an der Tiefgarageneinfart vorbei, Vorsicht Kette!	CP; 13375,13986 13485,14054 13585,14117
 Vorsicht Kette! (auf Höhe der Tiefgarageneinfahrt)	CP; 13585,14117 13485,14054 13375,13986
 bereits an der Kirche auf den Gehweg wechseln	CP; 12635,12629 12483,12682 12594,12866
-Etwa in Höhe Kino Kosmos abbiegen	CP2; 13563,12324 13555,12259
-Ludwig-Pick-Str. beginnt an der Zufahrt zur Tiefgarage Kosmos-Kino	CP2; 13563,12324 13568,12439
+Etwa in Höhe Kino Kosmos abbiegen	CP2; 13543,12326 13556,12302
+Ludwig-Pick-Str. beginnt an der Zufahrt zur Tiefgarage Kosmos-Kino	CP2; 13543,12326 13552,12435
 Fritz-Schiff-Str. beginnt am Ende der Parallelstraße zur Karl-Marx-Allee	CP2; 13472,12337 13484,12436
 Siegertweg - Manfred-von-Richthofen-Str.: Überqueren der Straße am Kleineweg (rechts) oder am Thuyring (links)	CP; 9025,7431 9067,7490 8947,7601
 Manfred-von-Richthofen-Str. - Siegertweg: bereits am Kleineweg links abbiegen	PI; 9097,7469 9067,7490 9025,7431
@@ -163,7 +165,7 @@ An der Kreuzung ca. 50m vor der Jugenerholungsstätte links	CP; 1558,6729 1512,65
 Den rechten Weg direkt an den Grundstücken entlang wählen	CP2; 761,7922 614,8006
 (Luisenstr. - Hufelandweg): durch die Gebäudedurchfahrt	CP2; 8665,13353 8582,13355
 (Hufelandweg - Luisenstr.): durch die Gebäudedurchfahrt	CP2; 8582,13355 8665,13353
-Helga-Hahnemann-Str.: Zugang rechts vom grossen Parkplatz	CP2; 9415,13315 9396,13176
+Helga-Hahnemann-Str.: Zugang rechts vom grossen Parkplatz, nicht ausgeschildert	CP2; 9415,13315 9396,13176
 Theodor-Heuss-Weg: beginnt links vom Spielplatz der Kita	CP2; 9250,14658 9223,14608
 zur Gustav-Heinemann-Brücke durch schmalen Durchbruch in der Böschung	CP2; 8032,12889 8053,12871
 zum Spreeufer: den Garten hinunter, am Ende ist ein Durchbruch nach rechts	CP2; 8116,12938 8053,12871

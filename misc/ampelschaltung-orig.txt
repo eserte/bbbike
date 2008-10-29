@@ -3,7 +3,7 @@
 # ----------------------------------------------------------------------------
 Do, 22.10.1998
 8594,8773     Dudenstr./Katzbachstr.             O->W       11:24:12
-8598,9061     Katzbachstr./Monumentenstr.        S->N       11:25:10  11:24:45
+8598,9074     Katzbachstr./Monumentenstr.        S->N       11:25:10  11:24:45
 8598,9264     Katzbachstr./Kreuzbergstr.         S->N                 11:25:45
 8595,9495     Katzbachstr./Yorckstr.             S->N   60  11:26:00  11:26:10
 7829,9723     Goebenstr./Kulmer Str.             O->W       11:28:32
@@ -50,7 +50,7 @@ Sa, 24.10.1998
 8293,8768     Dudenstr./Loewenhardtdamm          O->W   60  18:22:53  18:22:20
 8594,8773     Dudenstr./Katzbachstr.             O->W   70  18:22:25  18:22:53
 8598,9264     Katzbachstr./Kreuzbergstr.         S->N   70  18:25:46  18:25:06
-8598,9061     Katzbachstr./Monumentenstr.        S->N   70  18:25:42  18:25:15
+8598,9074     Katzbachstr./Monumentenstr.        S->N   70  18:25:42  18:25:15
 8595,9495     Katzbachstr./Yorckstr.             S->N   60  18:27:00  18:27:10
 8595,9495     Yorckstr./Katzbachstr.             O->W   60  18:32:20  18:29:55
 8777,9601     Yorckstr./Möckernstr.              W->O   60  18:31:20  18:30:50
@@ -149,7 +149,7 @@ Mo, 26.10.1998
 8595,9495     Yorckstr./Katzbachstr. (Auto)      W->O   70  16:57:50  16:57:18
 8595,9495     Yorckstr./Katzbachstr. (Rad)       W->O   70            16:58:02
 8598,9264     Katzbachstr./Kreuzbergstr.         N->S   70  16:59:10  16:59:33
-8598,9061     Katzbachstr./Monumentenstr.        N->S       17:00:26  17:01:03
+8598,9074     Katzbachstr./Monumentenstr.        N->S       17:00:26  17:01:03
 8594,8773     Katzbachstr./Dudenstr.             N->S   70  17:02:39  17:01:54
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
@@ -224,7 +224,7 @@ Di, 27.10.1998
 4345,11710    Leibnizstr./Bismarckstr.           S->N   60  12:46:33  12:46:55
 4359,11979    Leibnizstr./Otto-Suhr-Allee        S->N   60  12:47:41  12:47:55
 4525,12333    Cauerstr./Guerickestr.             S->N       12:50:03  12:49:28
-4602,12488    Cauerstr./Einsteinufer             S->N       12:51:04  12:50:28
+4598,12501    Cauerstr./Einsteinufer             S->N       12:51:04  12:50:28
 4653,12550    Dovestr./Salzufer                  SW->NO     12:51:04
 5018,12322    Salzufer/Franklinstr.              NW->SO               12:52:04
 
@@ -967,7 +967,7 @@ Mo, 26.04.1999
 8188,9610     Yorckstr./Bautzener Str.           W->O       18:24:37
 8595,9495     Katzbachstr./Yorckstr.             NW->NO     18:26:12  18:25:41
 8598,9264     Katzbachstr./Kreuzbergstr.         N->S   70  18:26:21  18:26:45
-8598,9061     Katzbachstr./Monumentenstr.        N->S       18:27:39  18:27:05
+8598,9074     Katzbachstr./Monumentenstr.        N->S       18:27:39  18:27:05
 8594,8773     Dudenstr./Katzbachstr./Boelckestr  N->S   70  18:28:41  18:29:05
 8982,8781     Dudenstr./Methfesselstr./Mussehls  W->O   70  18:29:41  18:30:29
 9222,8787     Dudenstr./Mehringdamm/Platz der L  W->O   80  18:32:19  18:31:21
@@ -976,7 +976,7 @@ Mo, 26.04.1999
 # ----------------------------------------------------------------------------
 Di, 27.04.1999
 8594,8773     Dudenstr./Katzbachstr./Boelckestr  O->W   70? 14:24:14  14:24:43
-8598,9061     Katzbachstr./Monumentenstr.        S->N       14:26:22  14:25:56
+8598,9074     Katzbachstr./Monumentenstr.        S->N       14:26:22  14:25:56
 8598,9264     Katzbachstr./Kreuzbergstr.         S->N                 14:25:45
 8595,9495     Katzbachstr./Yorckstr.             S->N       14:27:20?
 7579,10183    Potsdamer Str./Bülowstr.           O->W   60  14:30:32  14:30:51

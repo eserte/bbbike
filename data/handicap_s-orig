@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.171 2008/10/25 09:16:16 eserte Exp $
+#: version: $Id: handicap_s-orig,v 4.171 2008/10/25 09:16:16 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 #: temporary vvv
@@ -157,6 +157,7 @@ Rolandufer/Spreeufer: Gehweg, viele Fußgänger, im Sommer Straßencafe 	q4 10837,1
 Herthastr.: Gehweg, Bordsteine	q4 1935,9239 1932,9263
 Fuggerstr.: Gehweg	q2 6128,10319 6020,10351
 Pfalzburger Str.: Gehweg	q2 4905,10069 4909,10119
+Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Tilla-Durieux-Park): Fußgänger	q2 8467,11125 8410,11143
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3288,12700 3383,12720 3582,12704 3763,12624 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
 Spreeufer: Fußgänger, besonders an schönen Tagen	q2 10171,12769 10105,12855 9977,12912 9935,12939 9910,12938 9714,12995
@@ -191,7 +192,7 @@ zur Gormannstr.: Bordstein	q4 10331,13397 10349,13447
 Am Zeughaus: Fußgänger, am Wochenende Flohmarkt	q3 9912,12623 9950,12522 9987,12421
 Steinmetzstr.: Fußgängerzone, Radfahren erlaubt	q1 7624,9763 7648,9944 7698,10147
 Lützowplatz: Einbahnstraße, Ausweichen auf Gehweg	q3; 7002,11034 6873,11011
-Zauritzweg: Fußgänger	q1 4150,11871 4220,11820 4195,11690
+Zauritzweg: Fußgänger	q1 4199,11819 4195,11690
 (Blücherplatz - Zossener Str.): Fußgänger, Bordsteine	q2 9689,10124 9811,10055
 Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3258,12035 3295,12068
 Spreewaldplatz: Fußgänger	q1 12341,10218 12295,10392
@@ -243,7 +244,7 @@ Rosemeyerweg: Fußgänger	q1 -3758,2678 -3956,2787 -4001,2858
 Moorlake - Krughorn: Fußgänger, aber breite Straße	q0 -9606,1389 -9734,1394 -9746,1408 -9770,1482 -9818,1530 -9900,1573 -9975,1564 -10044,1567 -10078,1551
 Krughorn - Volkspark Klein-Glienicke: Fußgänger, besonders an schönen Tagen	q1 -10078,1551 -10163,1288 -10190,1185 -10198,1173 -10273,1088 -10430,848 -10512,683 -10573,564 -10587,471
 Moorlake - Pfaueninsel: Fußgänger, besonders an schönen Tagen	q1 -9606,1389 -9647,1462 -9673,1519 -9663,1622 -9632,1672 -9584,1703 -9511,1739 -9444,1820 -9393,1831 -9108,1798 -9016,1782 -8934,1801 -8861,1855 -8747,2023 -8636,2102 -8591,2144 -8540,2209 -8468,2152
-Karl-Marx-Allee - Kadiner Str.: Fußgänger	q1 13563,12324 13555,12259
+Karl-Marx-Allee - Kadiner Str.: Fußgänger	q1 13543,12326 13556,12302 13555,12259
 Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7948,12863 7904,12803
 (südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7699,7571 7744,7538 7710,7547 7750,7528
 Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
@@ -328,8 +329,8 @@ Heinrich-Laehr-Park: Fußgänger	q1 1527,574 1258,1674
 #: note: Luftbild
 (Unterführung): Rampen	q2 -8334,14461 -8238,14436 -8256,14418 -8227,14408 -8287,14411
 #: XXX_prog eigentlich nach comments_mount:
-Viktoriapark: starke Steigung, Fußgänger	q4; 8598,9061 8694,9067 8884,9078
-Viktoriapark: starkes Gefälle, Fußgänger	q2; 8884,9078 8694,9067 8598,9061
+Viktoriapark: starke Steigung, Fußgänger	q4; 8598,9074 8694,9067 8884,9078
+Viktoriapark: starkes Gefälle, Fußgänger	q2; 8884,9078 8694,9067 8598,9074
 Viktoriapark: Steigung, Fußgänger	q3; 9106,9038 8962,9048
 Viktoriapark: Gefälle, Fußgänger	q1; 8962,9048 9106,9038
 Viktoriapark: Fußgänger	q2 8884,9078 8901,9104 8943,9098 8962,9048
@@ -560,7 +561,7 @@ Germendorfer Str.: enge Straße mit parkenden Autos	q1 6383,20975 6523,20987 6982
 Wentowsteig: enge Straße mit parkenden Autos	q1 6924,20695 6945,20805 6955,20859 6962,20895 6982,21013
 #: by: ^^^
 #: by: Peter Held:
-(Spreeuferweg): Fußgänger	q1 4543,12516 4501,12544 4334,12551
+(Spreeuferweg): Fußgänger	q1 4537,12531 4501,12544 4334,12551
 #: by: Kleinke (honda):
 Havelstr.: Fußgängerzone	q4 -3150,14631 -3122,14557 -3054,14498
 #: by: Johannes Nerger:
