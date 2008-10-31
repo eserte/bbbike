@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.44 2008/08/17 20:01:50 eserte Exp eserte $
+# $Id: SRTShortcuts.pm,v 1.45 2008/10/30 07:09:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.44 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -186,7 +186,7 @@ sub add_button {
 		     add_new_nonlazy_layer("p", "$bbbike_rootdir/misc/zebrastreifen");
 		 }
 		],
-		[Button => "gesperrt_car", -command => sub { add_new_data_layer("str", "gesperrt_car") }],
+		[Button => "gesperrt_car", -command => sub { add_new_data_layer("sperre", "gesperrt_car") }],
 		[Button => "brunnels", -command => sub { add_new_data_layer("str", "brunnels") }],
 		[Button => "geocoded images",
 		 -command => sub {
@@ -381,12 +381,16 @@ sub add_new_data_layer {
 # Width support for now only for p layers
 sub add_new_layer {
     my($type, $file, %args) = @_;
+    my $is_sperre = $type eq 'sperre'; $type = 'p' if $is_sperre; # XXX ugly
     my $free_layer = main::next_free_layer($type);
+    $free_layer .= "-sperre" if $is_sperre;
     $main::line_width{$free_layer} = [(1)x6];
     if (exists $args{Width}) {
 	$main::p_width{$free_layer} = $args{Width};
     }
-    if (!$BBBikeLazy::mode) {
+    if ($is_sperre) { # XXX no lazy support for sperre
+	main::plot("p", $free_layer, -filename => $file, -draw => 1);
+    } elsif (!$BBBikeLazy::mode) {
 	require BBBikeLazy;
 	BBBikeLazy::bbbikelazy_empty_setup();
 	main::handle_global_directives($file, $free_layer);

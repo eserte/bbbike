@@ -174,15 +174,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1225407600,
-         'text' => 'B 167 OD Alt Ruppin, zw. Brückenstr. und Neumühler Weg Straßen- u. Brückenbauarbeiten Vollsperrung 05.11.2007-30.10.2008 ',
-         'from' => 1194130800,
-         'id' => 1234,
-         'data' => 'userdel	2::inwork -28641,59609 -28866,59954 -29211,60036
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -391,15 +383,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1225407600,
-         'text' => 'B 168 Fürstenwalde - Müncheberg zw. Schönfelde und Kreisgrenze Deckenerneuerung Vollsperrung 19.05.2008-30.10.2008 ',
-         'from' => 1211061600,
-         'id' => 1361,
-         'data' => 'userdel	2::inwork 54299,7265 55908,9038
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -683,15 +667,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1225407600,
-         'text' => 'L 050 Gubener Str. OD Peitz, zw. Malxebogen und A.-Bebel-Str. Instandsetz.Durchlass, Entwä. Vollsperrung 15.09.2008-30.10.2008 ',
-         'from' => 1221343200,
-         'id' => 1484,
-         'data' => 'userdel	q4::inwork 80426,-59644 80719,-59219
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_009483',
          'until' => 1225493999,
@@ -840,15 +816,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1225407600,
-         'text' => 'L 034 Hohensteiner Chaussee OD Strausberg, zw. Ph.-Müller-Str. und Getränkemarkt Instandsetzung Entwäss. Vollsperrung 20.10.2008-30.10.2008 ',
-         'from' => 1224367200,
-         'id' => 1516,
-         'data' => 'userdel	q4::inwork 43110,19818 43686,19241
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1230764400,
          'text' => 'L 315 Prenden-Klosterfelde OD Klosterfelde grundhafter Straßenbau Vollsperrung 04.10.2007-31.12.2008 ',
