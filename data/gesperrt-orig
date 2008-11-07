@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.192 2008/10/25 09:16:16 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.194 2008/11/07 21:40:27 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
 ###################################################################
@@ -1713,7 +1713,10 @@ Durchgang neben Schranke	BNP:5 -1335,34371
 #
 #
 #: append_comment Hohen Neuendorf vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# nördliche Puschkinallee
 Treppe (17 Stufen)	0:30 2262,30691
+# Waldemarstr. / Adolf-Gottheimer-Str.
+Blumenkübel + Poller	BNP:5 1734,28857
 Treppe (ca. 15 Stufen)	0:25 2066,28767
 Treppe (ca. 15 Stufen)	0:25 2106,28767
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
