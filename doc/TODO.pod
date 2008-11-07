@@ -3976,6 +3976,13 @@ Java version does not compile anymore with Java 1.5
 
 =over
 
+=item * (H2)
+
+Towards a modern repository system, e.g. git. Idea: one crucial thing
+is to merge the RCS and CVS commits. Then go step by step and commit
+changes into RCS and CVS in a interleaved manner. Try to find Attic
+stuff.
+
 =item * (M3)
 
 Try to build a PAR-based distribution. There seem to be some pitfalls,

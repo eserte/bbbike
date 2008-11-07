@@ -10,15 +10,29 @@ use Getopt::Long;
 use Strassen::GPX;
 
 my $use_module = "";
-GetOptions("module=s" => \$use_module)
-    or die "usage: $0 [-module module] [file]";
+GetOptions("xmlmod=s" => \$Strassen::GPX::use_xml_module, # compat with bbd2gpx
+	   "module=s" => \$use_module, # older style
+	  )
+    or die "usage: $0 [-xmlmod module] [file]";
 
-if ($use_module =~ m{twig}i) {
-    $Strassen::GPX::use_xml_module = "XML::Twig";
-    require XML::Twig;
-    XML::Twig->VERSION("3.26");
+if ($use_module) {
+    if ($use_module =~ m{twig}i) {
+	$Strassen::GPX::use_xml_module = "XML::Twig";
+	require XML::Twig;
+	XML::Twig->VERSION("3.26");
+    } elsif ($use_module =~ m{libxml}i) {
+	$Strassen::GPX::use_xml_module = "XML::LibXML";
+    } else {
+	die "Only 'twig' or 'libxml' allowed for -module option";
+    }
 }
 
-my $file = shift || die;
+if ($Strassen::GPX::use_xml_module) {
+    if ($Strassen::GPX::use_xml_module !~ m{^(XML::Twig|XML::LibXML)$}) {
+	die "Only XML::Twig or XML::LibXML allowed for -xmlmod option";
+    }
+}
+
+my $file = shift || die 'Please specify file (or "-" for stdin)';
 Strassen::GPX->new($file)->write("-");
 

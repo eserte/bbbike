@@ -10,8 +10,6 @@ use Getopt::Long;
 use Strassen::Core;
 use Strassen::GPX;
 
-$Strassen::GPX::use_xml_module = $Strassen::GPX::use_xml_module if 0; # cease -w
-
 sub usage {
     die <<EOF;
 usage: $0 [-as route] [-xmlmod module] bbdfile
@@ -22,6 +20,12 @@ my $as = "track";
 GetOptions("as=s" => \$as,
 	   "xmlmod=s" => \$Strassen::GPX::use_xml_module,
 	  ) or usage();
+
+if ($Strassen::GPX::use_xml_module) {
+    if ($Strassen::GPX::use_xml_module !~ m{^(XML::Twig|XML::LibXML)$}) {
+	die "Only XML::Twig or XML::LibXML allowed for -xmlmod option";
+    }
+}
 
 my $file = shift || usage();
 my $s = Strassen->new($file);

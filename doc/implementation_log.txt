@@ -1,3 +1,20 @@
+2008-11-06  Slaven Rezic  <slaven@rezic.de>
+
+	* gpx2bbd: Für große GPX-Dateien (so um die 1.5 MB) war das Skript bei
+	Verwendung des XML::LibXML-Moduls unheimlich langsam: über zwei Minuten
+	auf einem Athlon 64 3500+. Mit XML::Twig war es erträglich: etwa 8
+	Sekunden. Nachdem ich das Skript mit Devel::NYTProf durchlaufen habe,
+	war der Übeltäter schnell gefunden: ich habe statt
+
+	    $xmlnode->find('./@...')
+
+	das schnellere
+
+	    $xmlnode->getAttribute('...')
+
+	verwendet. Danach brauchte das Skript nur noch eine Sekunde, also über
+	120x so schnell!
+
 2008-08-24  Slaven Rezic  <slaven@rezic.de>
 
 	* fast_plot_str und osm: Um Tunnels und Brücken mit der "fast"-Version

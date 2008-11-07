@@ -262,15 +262,6 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1225493999,
-         'text' => 'Bauarbeiten am nordwestlichen Bereich der Elsenbrücke von 7. Januar 2008 bis Oktober 2008; kein Zugang zum Spreeufer. ',
-         'from' => 1199574000,
-         'id' => 1322,
-         'data' => 'userdel	2::inwork 14383,10036 14405,10027
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -289,16 +280,8 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_008423',
-         'until' => 1225493999,
-         'text' => 'Schillerstr. (Wilhelmsruh) Richtung Schönholzer Weg zwischen Hauptstr. und Schönholzer Weg Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2008)',
-         'from' => 1223933558,
-         'id' => 1341,
-         'data' => 'userdel	1::inwork 7832,20219 7957,20182 8062,20133 8196,20096
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -374,15 +357,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1225494000,
-         'text' => 'L 171 Schönfließer Str. Brücke über die DB in der OD Hohen Neuendorf Brückenersatzneubau Vollsperrung 06.08.2007-31.10.2008 ',
-         'from' => 1186264800,
-         'id' => 1360,
-         'data' => 'userdel	2::inwork 2033,29198 2176,29143
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -541,15 +516,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1225494000,
-         'text' => 'L 031 Prenden - Zerpenschleuse Graben zw. Abzw. Marienwerder und Zerpenschleuse Brückenneubau Vollsperrung 18.08.2008-31.10.2008 ',
-         'from' => 1218924000,
-         'id' => 1439,
-         'data' => 'userdel	2::inwork 20048,48519 20965,48351
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1230073200,
@@ -668,16 +635,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_009483',
-         'until' => 1225493999,
-         'text' => 'Weinmeisterstr. (Mitte) Richtung Alexanderplatz gesperrt (bis Ende 10.2008)',
-         'from' => 1221681660,
-         'id' => 1485,
-         'data' => 'userdel	1::inwork 10331,13397 10528,13243
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_009965',
@@ -721,26 +679,8 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_009501',
-         'until' => 1225493999,
-         'text' => 'Glinkastr. (Mitte) in Richtung Leipziger Str. zwischen Behrenstr. und Jägerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2008)',
-         'from' => 1223320498,
-         'id' => 1496,
-         'data' => 'userdel	1::inwork 9164,12172 9183,12076
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_010086',
-         'until' => 1225580399,
-         'text' => 'Ordensmeisterstr. (Tempelhof) in Richtung Tempelhofer Damm zwischen Colditzstr. und Wenckebachstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 11.2008)',
-         'from' => 1223320616,
-         'id' => 1497,
-         'data' => 'userdel	1::inwork 9789,5767 9670,5728 9457,5641 9357,5601
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        {
@@ -804,15 +744,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1225926000,
-         'text' => 'K 6722 Bornow - Groß Rietz Bahnübergang zw. Bornow und Birkholz Gleisbauarbeiten Vollsperrung 09.10.2008-05.11.2008 ',
-         'from' => 1223416800,
-         'id' => 1512,
-         'data' => 'userdel	2::inwork 64933,-24619 64924,-23029
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

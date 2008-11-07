@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GPX.pm,v 1.20 2008/07/05 09:18:47 eserte Exp $
+# $Id: GPX.pm,v 1.22 2008/11/06 22:06:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::GPX;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Core;
 
@@ -39,16 +39,20 @@ sub _require_XML_Twig () {
 
 BEGIN {
     my @errs;
-    # prefer XML::Twig over XML::LibXML:
-    # * it seems to be much faster when parsing huge gpx files
-    # * there's additional support for graceful drop encoding to
+    # Prefer XML::LibXML over XML::Twig:
+    # * currently it's somewhat faster when parsing huge gpx files
+    #   (for example, ski.gpx (1.5MB) takes less than 1 second with XML::LibXML,
+    #    and 8 seconds with XML::Twig, on a Athlon64, i386-freebsd,
+    #    perl 5.8.8)
+    # Downside:
+    # * XML::Twig has additional support for gracefully drop encoding to
     #   avoid using utf-8 or iso-8859-1 if possible
-    if (_require_XML_Twig) {
-	$use_xml_module = "XML::Twig";
+    if (_require_XML_LibXML) {
+	$use_xml_module = "XML::LibXML";
     } else {
 	push @errs, $@;
-	if (_require_XML_LibXML) {
-	    $use_xml_module = "XML::LibXML";
+	if (_require_XML_Twig) {
+	    $use_xml_module = "XML::Twig";
 	} else {
 	    push @errs, $@;
 	    die "No XML::LibXML or XML::Twig 3.26 installed: @errs";
@@ -479,8 +483,8 @@ EOF
 
 sub latlong2xy {
     my($node) = @_;
-    my $lat = $node->findvalue(q{./@lat});
-    my $lon = $node->findvalue(q{./@lon});
+    my $lat = $node->getAttribute('lat');
+    my $lon = $node->getAttribute('lon');
     my($x, $y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon, $lat));
     ($x, $y);
 }
