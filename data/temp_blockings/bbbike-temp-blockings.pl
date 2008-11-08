@@ -9508,7 +9508,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006400',
        data  => <<EOF,
-userdel	2::inwork -3481,15315 -3349,15229 -3241,15118
+userdel	2::inwork -3507,15341 -3492,15331 -3349,15229 -3241,15118
 EOF
      },
      { from  => 1189353413, # undef
@@ -9858,7 +9858,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006673',
        data  => <<EOF,
-userdel	1::inwork 19273,5866 19650,5920 19681,5924 19934,5956
+userdel	1::inwork 19273,5866 19388,5883 19403,5885 19650,5920 19681,5924 19934,5956
 EOF
      },
      { from  => 1187992800, # 2007-08-25 00:00
@@ -12667,7 +12667,7 @@ userdel	2::inwork 15301,53802 17031,55218 17733,55423
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => Time::Local::timelocal(reverse(2009-1900,12-1,31,23,59,59)), # XXX schätzungsweise ein Jahr gesperrt
        # gemeldet von tobias wirnsberger
        text  => 'Unterführung unter Adlergestell und Bahn wegen Brückenerneuerung gesperrt',
        type  => 'gesperrt',

@@ -1,10 +1,12 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.172 2008/11/07 20:39:53 eserte Exp $
+#: version: $Id: handicap_s-orig,v 4.172 2008/11/07 20:39:53 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 #: temporary vvv
-Hauptstr. (Friedrichshain-Kreuzberg) in beiden Richtungen zwischen Markgrafendamm und untere Kynaststr. Baustelle, Radfahrer können nur langsam passieren (bis 2008-10-31)	q4::inwork 14906,10820 14794,10844
+#: last_checked: 2008-11-02
+#: next_check: 2009-01-01
+Hauptstr. (Friedrichshain-Kreuzberg) in beiden Richtungen zwischen Markgrafendamm und untere Kynaststr. Baustelle, Radfahrer können nur langsam passieren	q4::inwork 14906,10820 14794,10844
 #: temporary ^^^
 Wuhlewanderweg: steiler Anstieg	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle	q4; 21970,12153 21998,12204
@@ -112,7 +114,9 @@ Bürgerpark: Fußgänger	q2 9460,18053 9479,18217 9701,18256 9716,18290
 Bürgerpark: Fußgänger	q1 9428,18330 9424,18276 9479,18217
 Breite Str.: Fußgängerzone	q3 -3017,14554 -3054,14498 -3155,14340 -3227,14260
 Markt: Fußgängerzone	q3 -3155,14340 -3275,14407
-Carl-Schurz-Str.: Fußgängerzone	q3 -3513,14238 -3445,14226 -3409,14241 -3338,14333 -3275,14407 -3228,14468 -3205,14512 -3185,14556 -3150,14631
+Carl-Schurz-Str.: Fußgängerzone	q3 -3552,14082 -3457,14189 -3409,14241 -3338,14333 -3275,14407 -3228,14468 -3205,14512 -3185,14556 -3150,14631
+#: note: (by Sara Köhler) Fußgängerzone ist für Radfahrer nicht freigegeben, Lieferverkehr ist von 19-11 Uhr frei
+Am Wall: Fußgängerzone	q3 -3403,14145 -3457,14189
 Charlottenstr.: Fußgängerzone	q3 -3227,14260 -3338,14333 -3397,14370
 Moritzstr.: Fußgängerzone	q3 -3275,14407 -3350,14446 -3417,14483 -3481,14523
 Mauerstr. (Spandau): Fußgängerzone	q3 -3316,14169 -3409,14241
@@ -1336,3 +1340,11 @@ Murtzaner Ring: enge Straße	q1 19593,14472 19593,14405 19595,14348 19599,14273 1
 Windenweg: enge Straße	q1 16306,2364 16106,2514 16012,2592 15923,2667 15870,2768 15785,2900 15751,2936 15602,3099
 #: by: Mario Hensel:
 Lindenhoekweg: enge Straße	q1 12382,15802 12310,15837 12247,15868
+#: by: Sebastian (baumberlin):
+Taxusweg: enge Straße	q1 25649,13728 25671,13840 25681,13943 25681,14049
+#: by: Sara Köhler: vvv
+Brauereihof: recht verwinkelt	q1 -2783,15538 -2809,15459 -2858,15475 -2886,15393 -2856,15383 -2801,15365 -2775,15446 -2809,15459
+Freudenberger Weg: als Gehweg ausgeschildert, Borsteinkanten	q1 -4967,15414 -4787,15367
+(Wunderwaldstr. - Dyrotzer Str.): schmale	q2 -5442,14738 -5481,14622
+Frieda-Arnheim-Promenade: einige Fußgänger, Bordstein zur Triftstraße	q1 -2830,15208 -2801,15280 -2779,15358 -2801,15365
+#: by: ^^^

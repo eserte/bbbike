@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.200 2008/09/17 19:50:13 eserte Exp $
+# $Id: Makefile,v 2.201 2008/11/07 22:46:03 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -23,35 +23,30 @@ MISCSRCDIR=		$(BBBIKEDIR)/miscsrc
 DATADIR=		.
 PERSISTENTTMPDIR=	$(BBBIKEDIR)/tmp
 
-# perl5.8.0 has utf8 bugs
-.if ${HOSTNAME} == "devpc01.iconmobile.de"
-PERL_UTF8=		perl5.8.7
-.else
-# assume we have a modern perl installed...
-PERL_UTF8=		perl
-.endif
-PERL=			perl
-SED=			env LANG=C sed
+PERL?=			perl
+# assume we have a modern perl (> 5.8.0, which has utf8 bugs) installed...
+PERL_UTF8?=		${PERL}
+SED?=			env LANG=C sed
 
-HAFAS2HAFAS=		${MISCSRCDIR}/hafas2hafas -strict
-CONVERT2HAFAS=		${MISCSRCDIR}/convert2hafas -strict
+HAFAS2HAFAS=		${PERL} ${MISCSRCDIR}/hafas2hafas -strict
+CONVERT2HAFAS=		${PERL} ${MISCSRCDIR}/convert2hafas -strict
 CONVERT_ORIG_FILE=	${MISCSRCDIR}/convert_orig_to_bbd
 CONVERT_ORIG=		${PERL} ${CONVERT_ORIG_FILE}
 CHECK_POINTS=		${PERL} ${MISCSRCDIR}/check_points
-CHECK_STR_PLZ=		${MISCSRCDIR}/check_str_plz
+CHECK_STR_PLZ=		${PERL} ${MISCSRCDIR}/check_str_plz
 CHECK_CONT=		${PERL} ${MISCSRCDIR}/check_cont
-CHECK_DOUBLE=           ${MISCSRCDIR}/check_double
-CHECK_NEIGHBOUR=	${MISCSRCDIR}/check_neighbour
-CHECK_COUNT=		${MISCSRCDIR}/check_count
-CHECK_HOUSENUMBERS=	${MISCSRCDIR}/check_housenumbers
-CHECK_IMAGES=		${MISCSRCDIR}/check_images
+CHECK_DOUBLE=           ${PERL} ${MISCSRCDIR}/check_double
+CHECK_NEIGHBOUR=	${PERL} ${MISCSRCDIR}/check_neighbour
+CHECK_COUNT=		${PERL} ${MISCSRCDIR}/check_count
+CHECK_HOUSENUMBERS=	${PERL} ${MISCSRCDIR}/check_housenumbers
+CHECK_IMAGES=		${PERL} ${MISCSRCDIR}/check_images
 CHECK_STATION_CATEGORY=	${PERL} ${MISCSRCDIR}/check_station_category
-RESOLVE_STARS=		${MISCSRCDIR}/resolve_stars
-SORTBYCAT=		${MISCSRCDIR}/sortbycat
+RESOLVE_STARS=		${PERL} ${MISCSRCDIR}/resolve_stars
+SORTBYCAT=		${PERL} ${MISCSRCDIR}/sortbycat
 SEARCH_INACCESSIBLE=	${PERL} ${MISCSRCDIR}/search_inaccessible_points
 STEIGUNG_STAT=		${PERL} ${MISCSRCDIR}/steigung_stat
-GREPSTRASSEN=		${MISCSRCDIR}/grepstrassen
-REPLACESTRASSEN=	${MISCSRCDIR}/replacestrassen
+GREPSTRASSEN=		${PERL} ${MISCSRCDIR}/grepstrassen
+REPLACESTRASSEN=	${PERL} ${MISCSRCDIR}/replacestrassen
 GREPSTRASSEN_UTF8=	${PERL_UTF8} ${MISCSRCDIR}/grepstrassen
 COMBINE_STREETS=	${PERL} ${MISCSRCDIR}/combine_streets.pl
 
@@ -196,7 +191,8 @@ $f:	${_f_raw_${f}} inaccessible_landstrassen
 
 plaetze: plaetze-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) plaetze-orig > plaetze
+	$(CONVERT_ORIG) plaetze-orig > plaetze~
+	mv plaetze~ plaetze
 	-@$(READONLY) $@
 
 ${PERSISTENTTMPDIR}/non-faked-plaetze: plaetze-orig
@@ -319,7 +315,7 @@ sbahn: sbahn-orig $(CONVERT_ORIG_FILE)
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) -strip-future-categories sbahn-orig > /tmp/sbahn
 .for cat in $(SBAHN_CATEGORIES)
-	$(GREPSTRASSEN) -catrx ^$(cat).* /tmp/sbahn | $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/sbahn-$(cat)
+	$(GREPSTRASSEN) -catrx ^$(cat).* /tmp/sbahn | ${PERL} $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/sbahn-$(cat)
 .endfor
 	cat $(SBAHN_CATEGORIES:S/^/\/tmp\/sbahn-/) > sbahn~
 	mv sbahn~ sbahn
@@ -343,7 +339,7 @@ rbahn: rbahn-orig Makefile $(CONVERT_ORIG_FILE)
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) -strip-future-categories rbahn-orig > /tmp/rbahn
 .for cat in $(RBAHN_CATEGORIES)
-	$(GREPSTRASSEN) -catrx ^$(cat).* /tmp/rbahn | $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/rbahn-$(cat)
+	$(GREPSTRASSEN) -catrx ^$(cat).* /tmp/rbahn | ${PERL} $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/rbahn-$(cat)
 .endfor
 	cat $(RBAHN_CATEGORIES:S/^/\/tmp\/rbahn-/) > rbahn~
 	mv rbahn~ rbahn
@@ -459,7 +455,7 @@ ${PERSISTENTTMPDIR}/gesperrt-without-nocross:	gesperrt-orig strassen landstrasse
 .for i in u s r
 gesperrt_$(i):	gesperrt_$(i)-orig $(i)bahn
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) gesperrt_$(i)-orig | $(MISCSRCDIR)/check_dates -filter > $@~
+	$(CONVERT_ORIG) gesperrt_$(i)-orig | ${PERL} $(MISCSRCDIR)/check_dates -filter > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 .endfor
@@ -524,14 +520,14 @@ obst:	obst-orig
 
 radwege:	radwege-orig
 	-@$(WRITEABLE) $@
-	${MISCSRCDIR}/convert_radwege < radwege-orig | \
+	${PERL} ${MISCSRCDIR}/convert_radwege < radwege-orig | \
 	    $(COMBINE_STREETS) - > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
 radwege_exact:	radwege-orig
 	-@$(WRITEABLE) $@
-	${MISCSRCDIR}/convert_radwege -exact < radwege-orig | \
+	${PERL} ${MISCSRCDIR}/convert_radwege -exact < radwege-orig | \
 	    $(COMBINE_STREETS) - > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
@@ -649,7 +645,7 @@ exits:	exits-orig
 
 kneipen:	kneipen.yml
 	-@$(WRITEABLE) $@
-	$(MISCSRCDIR)/yaml2bbd $> > $@~
+	${PERL} $(MISCSRCDIR)/yaml2bbd $> > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
@@ -675,11 +671,11 @@ ${_img_gif_${img}}: ${_img_png_${img}}
 
 # This also creates .rsync_include
 .modified:	${TARGETS}
-	${MISCSRCDIR}/create_modified
+	${PERL} ${MISCSRCDIR}/create_modified
 
 multi_bez_str:	multi_bez_str-orig
 	-@$(WRITEABLE) $@
-	${MISCSRCDIR}/complete_multi_bez_str > $@~
+	${PERL} ${MISCSRCDIR}/complete_multi_bez_str > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
@@ -713,7 +709,7 @@ fragezeichen:	.create_fragezeichen
 
 fragezeichen-cooked:	fragezeichen strassen landstrassen landstrassen2
 	-@${WRITEABLE} $@
-	${MISCSRCDIR}/reduce_streets -delsinglepoint -reducelines fragezeichen \
+	${PERL} ${MISCSRCDIR}/reduce_streets -delsinglepoint -reducelines fragezeichen \
 	    strassen landstrassen landstrassen2 > $@~
 	mv $@~ $@
 	-@${READONLY} $@
@@ -813,14 +809,14 @@ ${PERSISTENTTMPDIR}/${xxxtype}.bbd:	${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.${
 ${PERSISTENTTMPDIR}/XXX.bbd: ${PERSISTENTTMPDIR}/XXX-other.bbd
 	cat ${PERSISTENTTMPDIR}/XXX-other.bbd > $@~
 	@echo "# source: handicap_s-orig and gesperrt-orig" >> $@~
-	${MISCSRCDIR}/grepstrassen -directive temporary= \
+	${GREPSTRASSEN} -directive temporary= \
 	    ${DATADIR}/handicap_s-orig ${DATADIR}/gesperrt-orig | \
 	    $(PERL) -nle '/(.*\t)(\S+)(.*)/ && !/\b(\d{4}-\d{2}-\d{2}|[0123]?\d\.[01]?\d\.\d{4})\b/ && print "Noch immer? $$1?::inwork$$3"' | \
 	    ${CONVERT2HAFAS} -basefile ${DATADIR}/handicap_s-orig -- - >> $@~
 	mv $@~ $@
 
 ${PERSISTENTTMPDIR}/plz-b.bbd:	$(PERSISTENTTMPDIR)/plz.sql
-	grep -i berlin $> | perl $(MISCSRCDIR)/parse_mapbender_plz.pl > $@
+	grep -i berlin $> | ${PERL} $(MISCSRCDIR)/parse_mapbender_plz.pl > $@
 
 $(PERSISTENTTMPDIR)/plz.sql:	$(PERSISTENTTMPDIR)/plz.zip
 	cd `dirname $>` && unzip -q -o `basename $>`
@@ -868,7 +864,7 @@ ${PERSISTENTTMPDIR}/opengeodb-orte-DE.bbd:	${OPENGEODB_D_ORTE_PATH} ${MISCSRCDIR
 	    $(PERL) -pe 'if (m{^(.*)\|(.*)\t}) { print "$$1 $$2\n" } s{^([^\|\t]+).*}{$$1}' | \
 	    sort -u > /tmp/orte_bbbike
 	cat ${PERSISTENTTMPDIR}/opengeodb-orte-DE.bbd | \
-	    ${MISCSRCDIR}/restrict_bbd_data.pl -bbox -59700,60100,116500,-44900 -strdata=- -o=- | \
+	    ${PERL} ${MISCSRCDIR}/restrict_bbd_data.pl -bbox -59700,60100,116500,-44900 -strdata=- -o=- | \
 	    $(PERL) -pe 's{(\s*\(.*\))?\t.*}{}' | sort -u > /tmp/orte_opengeodb
 	diff -u /tmp/orte_bbbike /tmp/orte_opengeodb | grep '^\+'
 
@@ -900,7 +896,7 @@ ${PERSISTENTTMPDIR}/.fragezeichen-other-source:	${DATADIR}/qualitaet_s-orig ${DA
 PREFIXMAP=sperr=SP,kopfstein=KP,qualit‰t=QU,m‰ﬂig.geeignet=QU,radweg=RW,benutzungspflich=RW,bau=BA,vorfahrt=VF,name=NA,bezeichn=NA,vorfahrt=VF,ampel=AM
 
 ${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt:	fragezeichen Makefile
-	${MISCSRCDIR}/bbd2gpsman.pl -filter nearby=200 \
+	${PERL} ${MISCSRCDIR}/bbd2gpsman.pl -filter nearby=200 \
 	    -prefix XXX -match name \
 	    -prefixmap ${PREFIXMAP} \
 	    -symbol danger < fragezeichen > $@
@@ -915,10 +911,10 @@ ${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt:	fragezeichen Makefile
 	else \
 	    true; \
 	fi
-	${MISCSRCDIR}/restrict_bbd_data.pl \
+	${PERL} ${MISCSRCDIR}/restrict_bbd_data.pl \
 	    ${RESTRICT_BBOX:C/(^| )/ -bbox /g} \
 	    -strdata $> -o - | \
-	${MISCSRCDIR}/bbd2gpsman.pl -filter nearby=200 \
+	${PERL} ${MISCSRCDIR}/bbd2gpsman.pl -filter nearby=200 \
 	    -prefix XXX -match name \
 	    -prefixmap ${PREFIXMAP} \
 	    -symbol danger > $@
@@ -933,7 +929,7 @@ ${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt:	fragezeichen Makefile
 
 temp_blockings/bbbike-temp-blockings-optimized.pl:	temp_blockings/bbbike-temp-blockings.pl .check_bbbike-temp-blockings-optimized
 	-@$(WRITEABLE) $@
-	$(MISCSRCDIR)/check_bbbike_temp_blockings \
+	${PERL} $(MISCSRCDIR)/check_bbbike_temp_blockings \
 	    -action output_future \
 	    -action dump_future_as_perl > $@
 	touch .check_bbbike-temp-blockings-optimized
@@ -942,7 +938,7 @@ temp_blockings/bbbike-temp-blockings-optimized.pl:	temp_blockings/bbbike-temp-bl
 # XXX Optimierungsmˆglichkeit: aus "fragezeichen" alle Strecken herausnehmen, die bereits auf Strecken in strassen+landstrassen matchen
 # XXX vielleicht umbenennen: fragezeichen-approx-matches.bbd oder so
 ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd:	fragezeichen ${DATADIR}/strassen ${DATADIR}/landstrassen ${DATADIR}/landstrassen2
-	$(MISCRSRCDIR)/match_bbd_data -incatrx . -v fragezeichen ${DATADIR}/strassen ${DATADIR}/landstrassen ${DATADIR}/landstrassen2 > /tmp/fragezeichen-matches.bbd
+	${PERL} $(MISCRSRCDIR)/match_bbd_data -incatrx . -v fragezeichen ${DATADIR}/strassen ${DATADIR}/landstrassen ${DATADIR}/landstrassen2 > /tmp/fragezeichen-matches.bbd
 	mv /tmp/fragezeichen-matches.bbd ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd
 
 
@@ -1015,7 +1011,7 @@ do-checks:	.check_empty_lines \
 check-disabled:	.check_label
 
 .check_targets:	${BBD_TARGETS}
-	for f in ${BBD_TARGETS}; do ${MISCSRCDIR}/check_bbd $$f; done
+	for f in ${BBD_TARGETS}; do ${PERL} ${MISCSRCDIR}/check_bbd $$f; done
 	@touch $@
 
 .check_strassen1:	.strassen.tmp add_str multi_bez_str-orig Berlin.coords.data
@@ -1334,7 +1330,7 @@ check-categories:	.check_categories
 
 ${PERSISTENTTMPDIR}/crossings.bbd:	strassen landstrassen landstrassen2 \
 					brunnels
-	${MISCSRCDIR}/check_crossings -v-if-interactive \
+	${PERL} ${MISCSRCDIR}/check_crossings -v-if-interactive \
 	    -o $@~ -against brunnels \
 	    strassen landstrassen landstrassen2
 	mv $@~ $@
@@ -1342,7 +1338,7 @@ ${PERSISTENTTMPDIR}/crossings.bbd:	strassen landstrassen landstrassen2 \
 # XXX ¸berirdische U-Bahnen?
 # XXX Andreaskreuz
 ${PERSISTENTTMPDIR}/crossings_bahn.bbd:	strassen sbahn rbahn brunnels
-	${MISCSRCDIR}/check_crossings -v-if-interactive \
+	${PERL} ${MISCSRCDIR}/check_crossings -v-if-interactive \
 	    -o $@~ -against brunnels \
 	    strassen sbahn rbahn
 	mv $@~ $@
@@ -1350,7 +1346,7 @@ ${PERSISTENTTMPDIR}/crossings_bahn.bbd:	strassen sbahn rbahn brunnels
 # Note also the empty string in the -ignore option!
 ${PERSISTENTTMPDIR}/crossings_gewaesser.bbd:	\
 					strassen wasserstrassen brunnels
-	${MISCSRCDIR}/check_crossings -v-if-interactive \
+	${PERL} ${MISCSRCDIR}/check_crossings -v-if-interactive \
 	    -ignore "Fasaneriegraben,Packereigraben,Tr‰nkegraben,Teufelsseekanal,(See im Tiergarten),,Luiseninsel,Fennpfuhl,Heidekampgraben,Karpfenteich,Panke,Nordgraben,Tegeler Flieﬂ,Hermsdorfer See,Wuhle,Neue Wuhle,Flutgraben,Kreuzgraben,Zingergraben,Iderfenngraben,B‰ke,Bullengraben,Spektegraben,Bruchst¸ckengraben,Fredersdorfer M¸hlenflieﬂ,Neuenhagener M¸hlenflieﬂ,Plumpengraben,Kleiner J¸rgengraben,Rudower Flieﬂ" \
 	    -o $@~ -against brunnels \
 	    strassen wasserstrassen
@@ -1358,7 +1354,7 @@ ${PERSISTENTTMPDIR}/crossings_gewaesser.bbd:	\
 
 ${PERSISTENTTMPDIR}/crossings_gewaesser_ignore.bbd:	\
 					strassen wasserstrassen brunnels
-	${MISCSRCDIR}/check_crossings -v-if-interactive \
+	${PERL} ${MISCSRCDIR}/check_crossings -v-if-interactive \
 	    -o $@~ -against brunnels \
 	    strassen wasserstrassen
 	mv $@~ $@
@@ -1427,7 +1423,7 @@ check-nearest:	${PERSISTENTTMPDIR}/check_nearest.bbd do-check-nearest
 
 ${PERSISTENTTMPDIR}/check_nearest.bbd:	strassen landstrassen landstrassen2 fragezeichen brunnels faehren \
 					check_nearest_ignore
-	${MISCSRCDIR}/check_nearest -ignore check_nearest_ignore \
+	${PERL} ${MISCSRCDIR}/check_nearest -ignore check_nearest_ignore \
 		-asbbd \
 		-strfile strassen \
 		-strfile landstrassen \
@@ -1463,7 +1459,7 @@ GNUmakefile: Makefile
 # Misc helpers
 
 show-used-directives:
-	perl -nle '/^#: ([^\s:]+)/ and print $$1' *-orig | sort -u
+	${PERL} -nle '/^#: ([^\s:]+)/ and print $$1' *-orig | sort -u
 
 ######################################################################
 # Berlin.coords.data etc. targets
@@ -1553,7 +1549,7 @@ GPSPORT?=	/dev/cuaa0
 GPSPORT?=	/dev/ttyS0
 .endif
 
-BBD2POLISH?=	${MISCSRCDIR}/bbd2polish
+BBD2POLISH?=		${MISCSRCDIR}/bbd2polish
 
 ## The old and unused multi images. Nowadays only one image may be
 ## uploaded at one time (bbbikeall)
@@ -1593,19 +1589,19 @@ cgpsmapper-upload-instructions:
 
 ${PERSISTENTTMPDIR}/bbbike.mp:	${BBD2POLISH} \
 				${PERSISTENTTMPDIR}/non-faked-strassen wasserstrassen flaechen sbahn ubahn berlin faehren fragezeichen
-	${BBD2POLISH} -mapset b > $@
+	${PERL} ${BBD2POLISH} -mapset b > $@
 
 ${PERSISTENTTMPDIR}/brb.mp:	${BBD2POLISH} \
 				orte landstrassen wasserumland rbahn potsdam
-	${BBD2POLISH} -mapset brb > $@
+	${PERL} ${BBD2POLISH} -mapset brb > $@
 
 ${PERSISTENTTMPDIR}/wide.mp:	${BBD2POLISH} \
 				orte2 landstrassen2 wasserumland2 deutschland
-	${BBD2POLISH} -mapset wide > $@
+	${PERL} ${BBD2POLISH} -mapset wide > $@
 
 ${PERSISTENTTMPDIR}/fragezeichen.mp:	${BBD2POLISH} \
 				fragezeichen
-	${BBD2POLISH} -mapset fragezeichen > $@
+	${PERL} ${BBD2POLISH} -mapset fragezeichen > $@
 
 BBB2POLISH_MAPSET_ALL_SOURCES=	${PERSISTENTTMPDIR}/non-faked-strassen wasserstrassen flaechen sbahn ubahn berlin \
 				faehren fragezeichen \
@@ -1613,10 +1609,10 @@ BBB2POLISH_MAPSET_ALL_SOURCES=	${PERSISTENTTMPDIR}/non-faked-strassen wasserstra
 				orte2 landstrassen2 wasserumland2 deutschland
 
 ${PERSISTENTTMPDIR}/bbbikeall.mp:	${BBD2POLISH} ${BBB2POLISH_MAPSET_ALL_SOURCES}
-	${BBD2POLISH} -mapset all > $@
+	${PERL} ${BBD2POLISH} -mapset all > $@
 
 ${PERSISTENTTMPDIR}/bbbikequal.mp:	${BBD2POLISH} ${BBB2POLISH_MAPSET_ALL_SOURCES}
-	${BBD2POLISH} -mapset all -strcatqual > $@
+	${PERL} ${BBD2POLISH} -mapset all -strcatqual > $@
 
 .for i in ${CGPSMAPPER_FILES}
 ${PERSISTENTTMPDIR}/$i.img: ${CGPSMAPPER} ${PERSISTENTTMPDIR}/$i.mp
@@ -1746,7 +1742,7 @@ do-doublechecks:	.doublecheck_strassen.tmp \
 .for i in u s r
 .doublecheck_gesperrt_$(i):	gesperrt_$(i)-orig $(i)bahn
 	-rm /tmp/gesperrt_$(i)-XXX
-	$(CONVERT2HAFAS) gesperrt_$(i)-orig | $(MISCSRCDIR)/check_dates -filter > /tmp/gesperrt_$(i)-XXX
+	$(CONVERT2HAFAS) gesperrt_$(i)-orig | ${PERL} $(MISCSRCDIR)/check_dates -filter > /tmp/gesperrt_$(i)-XXX
 	diff -I '#: alias:' -u gesperrt_$(i) /tmp/gesperrt_$(i)-XXX
 	touch $@
 .endfor

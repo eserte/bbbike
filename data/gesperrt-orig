@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.194 2008/11/07 21:40:27 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.194 2008/11/07 21:40:27 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 ###################################################################
@@ -55,7 +55,7 @@ U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797
 U-Bahn Dahlem	1 2007,4791 2095,4805 2169,4854 2217,4884 2262,4914 2288,4932 2454,5067 2499,5144 2717,5578
 Am Großen Wannsee	1 -5868,1255 -5848,1379 -5867,1449 -5929,1649 -6025,1991 -6021,2068 -5945,2381 -5749,2701 -5722,2714 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5883,1948 -5874,1771 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
 Wilhelplatz	1 -7232,445 -7219,454 -7059,578
-Wilhelplatz	1 -7059,578 -7088,463 -7095,436 -7186,363
+Wilhelplatz	1 -7059,578 -7088,463 -7122,439 -7180,378
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf (Nord)	1 9731,3889 9934,3802
 Alt-Mariendorf (Süd)	1 9934,3802 9751,3769 9440,3665 9391,3651 9215,3599 9131,3571 8955,3521
@@ -91,7 +91,7 @@ Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437
 Kurt-Schumacher-Damm (Nord)	1 3676,16497 3753,16638 3853,16825 3948,16849
 Kurt-Schumacher-Damm (Nord)	1 3948,16849 3788,16621 3711,16481 3585,16252
 Ferdinand-Friedensburg-Platz	1 -914,14602 -1357,14533 -1508,14508 -1369,14644 -1119,14659 -914,14602
-Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3313,14777 -3261,14769 -3248,14731 -3255,14685 -3301,14669 -3352,14676
+Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3295,14777 -3251,14741 -3247,14713 -3255,14685 -3301,14669 -3352,14676
 # Fasanenstr. für Radfahrer frei: 7167,8218 7169,8194 7174,8127
 Fasanenstr.	1 5207,10399 5229,10716 5242,10918 5247,10992 5268,11274
 Alt-Müggelheim	1 28317,891 28188,962 28119,1079 28218,1017 28317,891
@@ -143,7 +143,7 @@ Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
 #Anscheinend hier keine Einbahnstraße, vielleicht weiter nördlich auch nicht: Burgstr.	1 10171,12769 10132,12941
 Schuckertdamm	1 746,14817 1024,14889 1109,14911 1202,14935 1343,14972 1465,14963
 Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
-Oberhofer Platz	1 5495,1964 5469,1949 5437,1941 5431,1956 5382,2080 5411,2098 5443,2109 5489,1981 5495,1964
+Oberhofer Platz	1 5495,1964 5469,1949 5437,1941 5431,1956 5376,2097 5406,2110 5434,2122 5489,1981 5495,1964
 Scheelestr.	1 5740,1227 5697,1098 5556,984 5424,882 5342,845
 Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5414,5939 5330,6001 4903,6221
 An der Schillingbrücke	1 12056,11390 12055,11331
@@ -277,7 +277,7 @@ Gritznerstr.	1 4507,6320 4555,6403
 Duisburger Str.:	1 4183,10144 3874,10153
 Majakowskiring	1 10373,18889 10354,18814 10203,18762 10041,18697 9987,18757 10055,18831 10184,18875 10307,18915 10373,18889
 Straße 462	1 4914,17399 5068,17384
-Havensteinstr.	1 6304,2569 6603,2803
+Havensteinstr.	1 6293,2583 6603,2803
 Worpsweder Str.	1 6191,4923 6203,5138
 Wilseder Str.	1 6295,5132 6288,4906
 Dickhardtstr.	1 5817,7223 5824,6974 5828,6839 5778,6754 5604,6709 5533,6753
@@ -368,7 +368,7 @@ Quitzowstr.	1 7132,14375 7091,14401
 Quitzowstr.	1 7091,14401 7180,14419
 Spreepark	2 16023,8860 16161,8852
 #: by: Felix Schröder
-Staakener Str.	1 -4112,14242 -4387,14256
+Staakener Str.	1 -4112,14242 -4390,14257
 Langensteiner Weg	1 7282,4716 7335,4879 7437,4855
 #: by: Susanne Kuby:
 Lowise-Reuter-Ring	1 13680,4715 13589,4681 13560,4681 13511,4695 13482,4718 13468,4766 13476,4812 13503,4846 13540,4861 13574,4862 13639,4850 13675,4855
@@ -487,6 +487,7 @@ Hornblendeweg	1 10440,1283 10415,1323 10402,1362 10425,1400 10510,1441 10594,146
 #: by: Lutz Moser:
 Sibeliusweg	1 -6811,4893 -6787,5076 -6762,5133 -6747,5169
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
+#: XXX: GunBeyer meint "ja", hmmm...
 Zingster Str. (Wedding)	1 9276,16032 9265,16109 9277,16154 9307,16190
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Neufahrwasserweg	1 20390,15307 20550,15551
@@ -571,6 +572,8 @@ Rosenstr.	1 22284,4653 22212,4655 22138,4661
 Laurenzstr.	1 22243,4710 22161,4734
 Gotenburger Str.	1 9000,16803 8844,16863
 Werrastr.: Firmengelände	2 13802,8195 13697,8279
+Neuendorfer Str.	1 -3295,14777 -3228,14794
+Neuendorfer Str.	1 -3228,14794 -3251,14741
 ######################################################################
 #
 # Potsdam
@@ -737,6 +740,7 @@ Oranienburger Str.: Straßenbahnhaltestelle	3nocross 9215,13392 9281,13374 9415,1
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12046,16568
 Schnellerstr.: Mittelstreifen	3nocross 16713,6839 16674,6885 16568,7009
 #: note: Luftbild vvv
+Am Nordgraben: Mittelstreifen	3nocross 5201,20103 5399,20106 5517,20120
 Attilastr.: Mittelstreifen	3nocross 7263,4281 7310,4308 7368,4342
 Edisonstr.: Straßenbahn	3nocross 18003,7144 17934,7029 17925,6976
 Falkenseer Chaussee: Mittelstreifen	3nocross -5039,15618 -5154,15651 -5473,15742
@@ -981,7 +985,7 @@ tragen (Brücke Tegeler Hafen)	0:60 1166,20330
 #: XXX: jetzigen Zustand prüfen: gibt es noch Treppen? Oder Rampen?
 tragen (Zugang zum Bahnhof, ca. 20 Stufen)	0:30 7934,7621
 tragen? (Fußgängerbrücke)	0:120 20442,564
-tragen? (Fußgängerbrücke)	0:120 19770,-213
+tragen? (Fußgängerbrücke)	0:120 19762,-160
 tragen (Stufen), mit MTB befahrbar	0:30 5725,11644
 tragen (Stufen)	0:60 13148,9909
 unter der S-Bahn-Brücke tragen	0:30 3730,18992
@@ -1046,6 +1050,8 @@ tragen (Treppe)	0:30 20673,7260
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+#: by: Sara Köhler:
+Schranke	BNP:3 -3646,15717
 #: by: Bernd (magneticpole):
 Cafeastr. - Gradestr.: Drängelgitter am Bahnübergang	BNP:3 11612,5253
 #: by: Christian Bräuniger:

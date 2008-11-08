@@ -671,7 +671,7 @@ push @temp_blocking,
        },
        undef,
        {
-         'until' => undef,
+         'until' => 1262300399,
          'text' => 'Unterführung unter Adlergestell und Bahn wegen Brückenerneuerung gesperrt',
          'from' => undef,
          'id' => 1495,

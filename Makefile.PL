@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.149 2008/08/14 18:51:26 eserte Exp $
+# $Id: Makefile.PL,v 1.150 2008/11/07 22:45:34 eserte Exp $
 
 use 5.005;
 
@@ -141,7 +141,7 @@ my @req_table =
   [qw/Statistics::Descriptive	0	all	0	devel/],
   [qw/Math::MatrixReal	0	all	0	devel/],
   [qw/Class::Accessor	0	all	2|4	base/,
-   'für GPS::GpsmanData, die ESRI-Module etc.'],
+   'für die ESRI-Module etc.'],
   [qw/Template	0	all	2	devel/,
    'für BBBikeDraw::MapServer'],
   [qw/Inline::C		0	all	0	base/,
@@ -226,6 +226,10 @@ my @req_table =
   [qw/Devel::Leak	0	all	0	test/,
    'Für Memory-Leak-Tests'],
   [qw/Text::Table	0	all	0	devel/],
+  [qw/Text::Unidecode	0	all	0	devel/,
+   'Für das Neu-Erzeugen der .bbd-Dateien in data'],
+  [qw/Data::Compare	0	all	0	devel/,
+   'Für das Neu-Erzeugen der .bbd-Dateien in data'],
 
   ## Maybe in future:
   # DBD::Pg - Strassen::Pg
