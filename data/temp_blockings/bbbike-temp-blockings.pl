@@ -11529,7 +11529,7 @@ EOF
        text  => 'B 246 Ernst-Thälmann-Straße OL Storkow, zw. Burgstraße u. Am Bahnhof Deckenerneuerung Vollsperrung 26.05.2008-31.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 46518,-16240 46409,-16251 46042,-16433
+userdel	q4::inwork 46518,-16240 46409,-16251 46004,-16440
 EOF
      },
      { from  => 1211234400, # 2008-05-20 00:00
@@ -12274,7 +12274,7 @@ userdel	2::inwork 27328,15740 26821,15609 26328,15462
 EOF
      },
      { from  => 1219183200, # 2008-08-20 00:00
-       until => 1228086000, # 2008-12-01 00:00
+       until => 1226268554, # 2008-12-01 00:00 1228086000
        text  => 'L 035 B246 Glienicke - Bad Saarow zw. Diensdorf und Pieskow Straßenbauarbeiten Vollsperrung 21.08.2008-30.11.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -12719,8 +12719,8 @@ userdel	q4::inwork -36724,28543 -36808,28769 -37053,29229
 EOF
      },
      { from  => 1223157600, # 2008-10-05 00:00
-       until => 1224972000, # 2008-10-26 00:00
-       text  => 'K 6423 Platanenstr., Lindenallee Bahnübergang in der OL Fredersdorf Ausbau BÜ mit Gehweg Vollsperrung 06.10.2008-25.10.2008 ',
+       until => 1226790000, # 2008-11-16 00:00
+       text  => 'K 6423 Platanenstr., Lindenallee Bahnübergang in der OL Fredersdorf Ausbau BÜ mit Gehweg Vollsperrung 06.10.2008-15.11.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 34139,13113 34183,13746 34276,14308
@@ -12849,7 +12849,7 @@ userdel	q4::inwork 43110,19818 43686,19241
 EOF
      },
      { from  => 1191362400, # 2007-10-03 00:00
-       until => 1230764400, # 2009-01-01 00:00
+       until => 1226268590, # 2009-01-01 00:00 1230764400
        text  => 'L 315 Prenden-Klosterfelde OD Klosterfelde grundhafter Straßenbau Vollsperrung 04.10.2007-31.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -12862,6 +12862,157 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 11040,-35529 10087,-34897 9406,-34427
+EOF
+     },
+     { from  => 1226267311, # 2008-11-09 22:48
+       until => 1228085999, # 2008-11-30 23:59
+       text  => 'Eberswalder Str. (Prenzlauer Berg) Richtung Brunnenstraße zwischen Schwedter Str. und Schönhauser Allee Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist ausgeschildert (bis Ende 11.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_008229',
+       data  => <<EOF,
+userdel	1::inwork 10351,14981 10516,15039 10618,15076 10889,15045
+EOF
+     },
+     { from  => 1226267354, # 2008-11-09 22:49
+       until => 1228172399, # 2008-12-01 23:59
+       text  => 'Köpenicker Str. (Mitte) Richtung Kreuzberg zwischen Brückenstr. und Michaelkirchstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 12.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_009727',
+       data  => <<EOF,
+userdel	1::inwork 11574,11594 11324,11689 11242,11720
+EOF
+     },
+     { from  => 1226267396, # 2008-11-09 22:49
+       until => 1235948399, # 2009-03-01 23:59
+       text  => 'Ordensmeisterstr. (Tempelhof) in beiden Richtung zwischen Wenckebachstr. und Tempelhofer Damm Baustelle, Fahrtrichtung gesperrt (bis Anfang 03.2009)',
+       type  => 'gesperrt',
+       source_id => 'IM_010086',
+       data  => <<EOF,
+userdel	2::inwork 9357,5601 9147,5534
+EOF
+     },
+     { from  => 1226267441, # 2008-11-09 22:50
+       until => 1226789999, # 2008-11-15 23:59
+       text  => 'Waltersdorfer Str. (Treptow) in beiden Richtungen zwischen Dhamestr. und Sandbacher Weg Baustelle, Straße vollständig gesperrt (bis Mitte 11.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_010134',
+       data  => <<EOF,
+userdel	2::inwork 22172,194 22168,-71 22177,-137
+EOF
+     },
+     { from  => 1226267528, # 2008-11-09 22:52
+       until => 1228085999, # 2008-11-30 23:59
+       text  => 'Gubitzstr. (Prenzlauer Berg) in beiden Richtungen zwischen Küselstr. und Scheritzstr. Bauarbeiten, Straße vollständig gesperrt (bis Ende 11.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_010519',
+       data  => <<EOF,
+userdel	2::inwork 12463,15774 12384,15618 12299,15463
+EOF
+     },
+     { from  => 1226267554, # 2008-11-09 22:52
+       until => 1275429599, # 2010-06-01 23:59
+       text  => 'Köthener Str. (Kreuzberg) Richtung Hallesches Ufer zwischen Stresemannstr. und Hallesches Ufer Baustelle, Fahrtrichtung gesperrt ausgeschildert (bis Anfang 6.2010)',
+       type  => 'gesperrt',
+       source_id => 'IM_010401',
+       data  => <<EOF,
+userdel	1::inwork 8636,11339 8542,11061 8487,10897 8443,10777
+EOF
+     },
+     { from  => 1226267628, # 2008-11-09 22:53
+       until => 1233442799, # 2009-01-31 23:59
+       text  => 'Storkower Str. (Prenzlauer Berg) Richtung Wedding zwischen Kniprodestr. und Greifswalder Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 01.2009)',
+       type  => 'gesperrt',
+       source_id => 'IM_010408',
+       data  => <<EOF,
+userdel	1::inwork 13453,14678 13151,14855 13110,14879 12812,15053 12722,15105
+EOF
+     },
+     { from  => 1224626400, # 2008-10-22 00:00
+       until => 1227999600, # 2008-11-30 00:00
+       text  => 'B 158 Oderberg - Angermünde ab OD Parstein bis Kreisgrenze bei Neukünkendorf Straßenbauarbeiten Vollsperrung 23.10.2008-29.11.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 52554,62772 52445,61982 52484,61529 52571,60809 52603,60356 52441,59932 52362,59750
+EOF
+     },
+     { from  => 1225666800, # 2008-11-03 00:00
+       until => 1229209200, # 2008-12-14 00:00
+       text  => 'B 273 Bernauer Str. OD Oranienburg, zw. Schmachtenhagener Str. und Kölner Str. Straßenbauarbeiten Vollsperrung 04.11.2008-13.12.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 187,39231 221,39242 570,39376 643,39426 1223,39893
+EOF
+     },
+     { from  => 1226185200, # 2008-11-09 00:00
+       until => 1230073200, # 2008-12-24 00:00
+       text  => 'L 015 Fürstenberg - Menz zw. Fürstenberg und Abzw. Altglobsow Straßenbau Vollsperrung 10.11.2008-23.12.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -10085,84390 -10054,84256 -10109,84134 -10281,83899 -10516,83471 -11849,81547
+EOF
+     },
+     { from  => 1225494000, # 2008-11-01 00:00
+       until => 1226790000, # 2008-11-16 00:00
+       text  => 'L 015 zw. Abzw. Himmelpfort und Fürstenberg Erneuerung Deckenbelag Vollsperrung 02.11.2008-15.11.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 627,89430 234,89271 -306,89232 -676,89041 -1718,88714 -2243,88584 -2617,88528 -2940,88449 -3184,88449 -4847,88034 -5326,87861 -6133,87749
+EOF
+     },
+     { from  => 1226185200, # 2008-11-09 00:00
+       until => 1229727600, # 2008-12-20 00:00
+       text  => 'L 020 Falkensee - Velten zw. Schönwalde und Gewerbegebiet Straßenbauarbeiten Vollsperrung 10.11.2008-19.12.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -8777,22961 -7734,23796 -7533,24138
+EOF
+     },
+     { from  => 1225753200, # 2008-11-04 00:00
+       until => 1226530800, # 2008-11-13 00:00
+       text  => 'L 040 Thälmannstr. OD Dahlewitz, Höhe Rangsdorfer Weg Kanal- und Straßenbau Vollsperrung 05.11.2008-12.11.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 12805,-9035 13228,-9606 13576,-9738
+EOF
+     },
+     { from  => 1225666800, # 2008-11-03 00:00
+       until => 1227308400, # 2008-11-22 00:00
+       text  => 'L 053 Seestr., Calauer Str. OD Großräschen, zw. Chransdorfer Str. und Berliner Str. Kanal- und Straßenbau Vollsperrung 04.11.2008-21.11.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 54017,-89128 53787,-90242
+EOF
+     },
+     { from  => 1146348000, # 2006-04-30 00:00
+       until => 1262300400, # 2010-01-01 00:00
+       text  => 'L 060 Schipkau-Lichterfeld zw. Lichterfeld und Lauchhammer-Nord grundhafter Straßenbau Vollsperrung 01.05.2006-31.12.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 37797,-89881 37187,-90210 37102,-90307 37059,-90429 37023,-90770 37078,-90978 37419,-91709 37675,-92038 37809,-92300 37918,-93202 37419,-94853 37230,-95682 37151,-95962 37151,-96145
+EOF
+     },
+     { from  => 1224367200, # 2008-10-19 00:00
+       until => 1229727600, # 2008-12-20 00:00
+       text  => 'L 088 Bahnhofstr. OD Lehnin, zw. Friedensstr. und Kreisverkehr Gehwegbau halbseitig gesperrt; Einbahnstraße 20.10.2008-19.12.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -34488,-10578 -34063,-10552
+EOF
+     },
+     { from  => 1224367200, # 2008-10-19 00:00
+       until => 1227999600, # 2008-11-30 00:00
+       text  => 'L 166 Friesack - Nackel zw. Nackel und Zootzen Deckenerneuerung Vollsperrung 20.10.2008-29.11.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -46590,45423 -46394,45253 -45792,44692 -45553,44122 -45441,43630 -45367,42665
+EOF
+     },
+     { from  => 1224540000, # 2008-10-21 00:00
+       until => 1242424800, # 2009-05-16 00:00
+       text  => 'L 171 Kurt-Tucholsky-Str. OL Hohen Neuendorf, zw. K.-Marx-Str. und A.-Bebel-Str. Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 22.10.2008-15.05.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 1009,28662 1020,28712 1078,28830 1124,28923 1234,29120 1304,29256 1366,29416
 EOF
      },
     );
