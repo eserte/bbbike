@@ -12864,6 +12864,14 @@ EOF
 userdel	2::inwork 11040,-35529 10087,-34897 9406,-34427
 EOF
      },
+     { from  => 1224975600, # 2008-10-26 01:00
+       until => 1230758415, # 2008-12-31 22:20
+       text  => 'Sanierung der Kurt-Tucholsky-Str., 22.10.2008-15.05.2009',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 938,28349 978,28400 1007,28446 1009,28662 1020,28712 1078,28830 1124,28923 1234,29120 1304,29256 1366,29416
+EOF
+     },
      { from  => 1226267311, # 2008-11-09 22:48
        until => 1228085999, # 2008-11-30 23:59
        text  => 'Eberswalder Str. (Prenzlauer Berg) Richtung Brunnenstraße zwischen Schwedter Str. und Schönhauser Allee Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist ausgeschildert (bis Ende 11.2008)',
@@ -13007,8 +13015,8 @@ EOF
 userdel	2::inwork -46590,45423 -46394,45253 -45792,44692 -45553,44122 -45441,43630 -45367,42665
 EOF
      },
-     { from  => 1224540000, # 2008-10-21 00:00
-       until => 1242424800, # 2009-05-16 00:00
+     { from  => 1226436338, # 2008-10-21 00:00 1224540000
+       until => 1226436343, # 2009-05-16 00:00 1242424800 # disabled, using now Andreas Titz' entry
        text  => 'L 171 Kurt-Tucholsky-Str. OL Hohen Neuendorf, zw. K.-Marx-Str. und A.-Bebel-Str. Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 22.10.2008-15.05.2009 ',
        type  => 'handicap',
        data  => <<EOF,
