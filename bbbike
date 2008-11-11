@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.385 2008/08/27 23:52:06 eserte Exp eserte $
+# $Id: bbbike,v 3.387 2008/11/10 23:00:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -241,7 +241,7 @@ eval 'use BBBikeXS 0.09';
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.385 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.387 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -6419,15 +6419,15 @@ sub generate_plot_functions {
 		    } else { # lines
 			my @std_tags_hin = ($abk, $strname,"$abk-$cat_hin","$abk-" . $i);
 			my @std_tags_rueck;
-			my $line_dash_hin = ($layer_category_dash{$abk} && $layer_category_dash{$abk}{$cat_hin}) || $layer_line_dash{$abk} || $category_dash{$cat_hin} || $line_dash{$abk};
+			my $line_dash_hin = (exists $layer_category_line_dash{$abk} && $layer_category_line_dash{$abk}{$cat_hin}) || $layer_line_dash{$abk} || $category_dash{$cat_hin} || $line_dash{$abk};
 			my $line_dash_rueck;
-			my $line_capstyle_hin = ($layer_category_capstyle{$abk} && $layer_category_capstyle{$abk}{$cat_hin}) || $layer_line_capstyle{$abk} || $category_capstyle{$cat_hin} || $line_capstyle{$abk};
+			my $line_capstyle_hin = (exists $layer_category_capstyle{$abk} && $layer_category_capstyle{$abk}{$cat_hin}) || $layer_line_capstyle{$abk} || $category_capstyle{$cat_hin} || $line_capstyle{$abk};
 			my $line_capstyle_rueck;
 			if ($cat_rueck) {
 			    @std_tags_rueck = @std_tags_hin;
 			    $std_tags_rueck[2] = "$abk-$cat_rueck";
-			    $line_dash_rueck = ($layer_category_dash{$abk} && $layer_category_dash{$abk}{$cat_rueck}) || $layer_line_dash{$abk} || $category_dash{$cat_rueck} || $line_dash{$abk};
-			    $line_capstyle_rueck = ($layer_category_capstyle{$abk} && $layer_category_capstyle{$abk}{$cat_rueck}) || $layer_line_capstyle{$abk} || $category_capstyle{$cat_rueck} || $line_capstyle{$abk};
+			    $line_dash_rueck = (exists $layer_category_line_dash{$abk} && $layer_category_line_dash{$abk}{$cat_rueck}) || $layer_line_dash{$abk} || $category_dash{$cat_rueck} || $line_dash{$abk};
+			    $line_capstyle_rueck = (exists $layer_category_capstyle{$abk} && $layer_category_capstyle{$abk}{$cat_rueck}) || $layer_line_capstyle{$abk} || $category_capstyle{$cat_rueck} || $line_capstyle{$abk};
 			}
 			my $stipple = ($layer_category_stipple{$abk} && $layer_category_stipple{$abk}{$category}) || $layer_stipple{$abk} || $category_stipple{$category};
 			$stipple = load_stipple($stipple) if $stipple;
@@ -6457,7 +6457,8 @@ sub generate_plot_functions {
                                ($line_dash_hin ? (-dash => $line_dash_hin) : ()),
 			       ($line_dash_rueck ? (-capstyle => $line_dash_rueck) : ()),
 			       ($stipple ? (-stipple => $stipple) : ()),
-			       (exists $layer_line_arrow{$abk}{$cat_hin} ? (-arrow => $layer_line_arrow{$abk}{$cat_hin})
+			       (exists $layer_category_line_arrow{$abk} && exists $layer_category_line_arrow{$abk}{$cat_hin} ? (-arrow => $layer_category_line_arrow{$abk}{$cat_hin})
+				: exists $layer_line_arrow{$abk} ? (-arrow => $layer_line_arrow{$abk})
 				: exists $category_line_arrow{$cat_hin} ? (-arrow => $category_line_arrow{$cat_hin}) : ()),
 			      );
 			}
@@ -6554,8 +6555,9 @@ sub generate_plot_functions {
 				 ($stipple ? (-stipple => $stipple) : ()),
 				 ($line_dash_hin ? (-dash => $line_dash_hin) : ()),
 				 ($line_capstyle_hin ? (-capstyle => $line_capstyle_hin) : ()),
-				 (exists $layer_line_arrow{$abk}{$cat_hin} ? (-arrow => $layer_line_arrow{$abk}{$cat_hin})
-				: exists $category_line_arrow{$cat_hin} ? (-arrow => $category_line_arrow{$cat_hin}) : ()),
+			         (exists $layer_category_line_arrow{$abk} && exists $layer_category_line_arrow{$abk}{$cat_hin} ? (-arrow => $layer_category_line_arrow{$abk}{$cat_hin})
+				  : exists $layer_line_arrow{$abk} ? (-arrow => $layer_line_arrow{$abk})
+				  : exists $category_line_arrow{$cat_hin} ? (-arrow => $category_line_arrow{$cat_hin}) : ()),
 				);
 			}
 
@@ -9655,14 +9657,6 @@ sub plotstr {
     }
 
     my %category_color = %category_color;
-    if ($abk eq 'l') {
-	my($k,$v);
-	while(($k,$v) = each %category_color) {
-	    if ($k =~ /^\d+$/ && $k != 0) {
-		$category_color{$k} = $category_color{0};
-	    }
-	}
-    }
     if ($abk =~ /^g(|[PD])$/ && !$std) {
 	$category_color{Z} = '#9e9e9e';
     }
@@ -9849,7 +9843,7 @@ if ($str->pos != scalar @{$str->{Data}}) { status_message("warning: " . $str->po
 sub decide_stippleline {
     my($abk) = @_;
     if ($Tk::VERSION < 800.016) {
-	if (exists $line_dash{$abk} || exists $layer_line_dash{$abk} || exists $layer_category_dash{$abk}) {
+	if (exists $line_dash{$abk} || exists $layer_line_dash{$abk} || exists $layer_category_line_dash{$abk}) {
 	    require Tk::StippleLine;
 	    return 1;
 	} else {
@@ -13813,6 +13807,7 @@ sub reset_free_layer {
     delete $layer_post_leave_command{$abk};
     delete $layer_line_width{$abk};
     delete $layer_line_length{$abk};
+    delete $layer_category_line_arrow{$abk};
     delete $layer_line_arrow{$abk};
     delete $layer_stipple{$abk};
     delete $layer_line_dash{$abk};
@@ -13822,7 +13817,7 @@ sub reset_free_layer {
     delete $layer_category_line_width{$abk};
     delete $layer_category_image{$abk};
     delete $layer_category_stipple{$abk};
-    delete $layer_category_dash{$abk};
+    delete $layer_category_line_dash{$abk};
     delete $layer_category_capstyle{$abk};
     delete $layer_category_line_shorten{$abk};
     delete $layer_line_shorten{$abk};
@@ -20309,6 +20304,10 @@ sub handle_global_directives {
 	$glob_dir = $s_or_file->get_global_directives;
     }
     return if !$glob_dir;
+    # XXX One day this should contain all of @plotting_hint_line_vars
+    my %accept_modern_style = map{($_,1)}
+	qw(line_arrow line_dash);
+    # XXX Everything else should be slowly discouraged...
     my %accept_global_hash_directives = map{($_,1)}
 	qw(category_size category_color
 	   category_line_width category_image
@@ -20326,7 +20325,12 @@ sub handle_global_directives {
 	   line_capstyle
 	   line_shorten line_shorten_end
 	  );
-    my %aliases = (category_width => "category_line_width");
+    my %aliases = (
+		   category_width => "category_line_width",
+		  );
+    my @aliases_code = (
+			sub { $_[0] =~ s{^category_dash\.}{line_dash.}; }, # was used in radwege-orig, remove some day XXX
+		       );
 
     my $get_val = sub {
 	my($key, $vals) = @_;
@@ -20342,7 +20346,13 @@ sub handle_global_directives {
 	if ($aliases{$directive}) {
 	    $directive = $aliases{$directive};
 	}
-	if ($accept_global_catless_directives{$directive}) {
+	for my $code (@aliases_code) {
+	    $code->($directive);
+	}
+	if ($accept_modern_style{$directive}) {
+	    no strict 'refs';
+	    ${"layer_".$directive}{$abk} = $get_val->($directive, $vals);
+	} elsif ($accept_global_catless_directives{$directive}) {
 	    no strict 'refs';
 	    ${$directive}{$abk} = $get_val->($directive, $vals);
 	} elsif ($accept_global_catless_directives_with_layer_prefix{$directive}) {
@@ -20351,7 +20361,11 @@ sub handle_global_directives {
 	} else {
 	    my($key, $cat) = $directive =~ /^([^\.]+)\.([^\.]+)/;
 	    if (defined $key) {
-		if ($accept_global_hash_directives{$key}) {
+		if ($accept_modern_style{$key}) {
+		    no strict 'refs';
+		    ${"layer_category_".$key}{$abk}{$cat} = $get_val->($key, $vals);
+		    next;
+		} elsif ($accept_global_hash_directives{$key}) {
 		    no strict 'refs';
 		    ${"layer_".$key}{$abk}{$cat} = $get_val->($key, $vals);
 		    next;

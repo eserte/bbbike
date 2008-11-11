@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.67 2008/09/13 16:17:35 eserte Exp eserte $
+# $Id: BBBikeGlobalVars.pm,v 1.70 2008/11/10 22:58:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2007,2008 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.67 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.70 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -61,25 +61,44 @@ use vars qw(
      %photo
 );
 
-use vars qw(@plotting_hint_vars);
-@plotting_hint_vars =
-    qw(line_color line_width line_length line_dash line_capstyle line_arrow
-       line_shorten line_shorten_end
-       item_size item_image item_stipple
-      );
+use vars qw(@plotting_hint_vars @plotting_hint_line_vars @plotting_hint_item_vars);
+BEGIN {
+    @plotting_hint_line_vars =
+	qw(
+	      line_arrow
+	      line_capstyle
+	      line_color
+	      line_dash
+	      line_length
+	      line_shorten
+	      line_shorten_end
+	      line_width
+	 );
+    @plotting_hint_item_vars =
+	qw(
+	      item_image
+	      item_size
+	      item_stipple
+	 );
+    @plotting_hint_vars = (@plotting_hint_line_vars, @plotting_hint_item_vars);
+}
+
+use vars map { '%'.$_ }                          @plotting_hint_vars;      # %line_arrow etc.
+use vars map { '%layer_'.$_ }                    @plotting_hint_line_vars; # %layer_line_arrow etc.
+use vars map { '%layer_category_'.$_ }           @plotting_hint_line_vars; # %layer_category_line_arrow etc.
+use vars map { s{^line_}{\%category_line_}; $_ } @plotting_hint_line_vars; # %category_line_arrow etc.
+# XXX Problems:
+# %line_width is special, because it is a combination of %layer_line_width and %layer_category_line_width
+# %line_dash, %line_length are possibly special too, should be checked
 
 use vars qw(
      @wetter_dir $wetter_dir %wetter_zuordnung %wetter_name
      $x11 $special_edit $edit_mode $edit_mode_flag $edit_normal_mode
      $customchoosecmd $b2m_customcmd
      $default_line_width
-     %layer_category_line_width %layer_line_width %category_width %line_width
-     %layer_line_length %line_length
-     %layer_line_dash %line_dash %layer_category_dash %category_dash
-     %layer_line_capstyle %line_capstyle %layer_category_capstyle %category_capstyle
-     %layer_category_line_arrow %layer_line_arrow %category_line_arrow %line_arrow
-     %layer_category_line_shorten %layer_line_shorten %category_line_shorten %line_shorten
-     %layer_category_line_shorten_end %layer_line_shorten_end %category_line_shorten_end %line_shorten_end
+     %category_width
+     %layer_category_dash %category_dash
+     %layer_category_capstyle %category_capstyle
      %layer_category_size %category_size %outline_color
      %layer_category_color %category_color
      %layer_category_stipple %layer_stipple %category_stipple

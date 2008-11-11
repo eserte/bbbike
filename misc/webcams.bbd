@@ -1,7 +1,7 @@
 #: title Webcams in Berlin
-#: line_arrow.WC: last
+#: line_arrow: last
 #: category_color.WC: #800080
-#: category_width.WC: 4
+#: line_width.WC: 4
 #:
 # Erster Punkt: Position der Webcam
 # Zweiter Punkt: Blickrichtung
@@ -95,10 +95,11 @@ http://www.inforadio.de/webcam1.do	WC 1687,11306 1775,11337
 #: note: ebenso als Loop: http://www.met.fu-berlin.de/cgi-bin/webcam/Cam00_loop
 #: note: auch verlinkt von: http://wind.met.fu-berlin.de/wind_work/main.php?lId=500#
 http://www.met.fu-berlin.de/de/wetter/webcam/	WC 4149,5755 4140,5796
-#: note: Bauarbeiten Alexa vvv
-http://www.omnicon-ffm.de/content/zoomcam1.php	WC 11208,12777 11220,12699
-http://www.omnicon-ffm.de/content/zoomcam2.php	WC 11200,12775 11166,12746
-#: note: ^^^
+## 2008-10-11: Webcam ist nicht mehr:
+# #: note: Bauarbeiten Alexa vvv
+# http://www.omnicon-ffm.de/content/zoomcam1.php	WC 11208,12777 11220,12699
+# http://www.omnicon-ffm.de/content/zoomcam2.php	WC 11200,12775 11166,12746
+# #: note: ^^^
 #: note: Bauarbeiten U55:
 http://www.u55.info/webcam.htm	WC 8765,12306 8791,12289
 http://linpop.zdf.de/Berlin/webcam/	WC 8822,12326 8747,12300
@@ -113,7 +114,9 @@ http://www.olympiastadion-berlin.de/webcam5.php	WC -1262,11788 -1185,11806
 #: section Berlin ^^^
 #: section Potsdam vvv
 #: note: steuerbar!
-http://cam.disipos.de/main.php	WC -12588,-1534
+#: note: old url: http://cam.disipos.de/main.php
+#: XXX 2008-11-10: eingerüstet, nichts zu sehen, nicht mehr steuerbar:
+http://app.maerkischeallgemeine.de/webcam/	WC -12588,-1534
 #: section Potsdam ^^^
 #: section Brandenburg vvv
 http://www.grosser-spreewaldhafen.de/livecam.html	WC 50962,-59025

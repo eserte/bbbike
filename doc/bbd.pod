@@ -187,8 +187,16 @@ The list of plotting hint directives:
 Define the color for line items. I<color> should be in the form
 C<#rrggbb>.
 
+Example:
+
+ #: line_color: #808080
+ #: line_color.cat: #ff8080
+
 XXX: The category-less form is NYI!.
 XXX: currently category_color.category is used instead of line_color.category
+
+XXX: Maybe use C<item_color> instead of C<line_color>, because colors
+apply also to points and areas!
 
 =item C<line_width: I<width>>
 
@@ -197,6 +205,9 @@ XXX: currently category_color.category is used instead of line_color.category
 Define the width of line items.
 
 XXX: The form with category is NYI!
+
+XXX: Maybe this should make it possible to define widths for specific
+zoom levels, like in the bbbike standard definitions.
 
 =item C<line_length: I<length>>
 
@@ -207,6 +218,9 @@ currently used for oneway and blocked symbols.
 
 XXX: The form with category is NYI!
 
+XXX: Maybe this should make it possible to define lengths for specific
+zoom levels, like in the bbbike standard definitions.
+
 =item C<line_dash: I<x, y, ...>>
 
 =item C<line_dash.I<category>: I<x, y, ...>>
@@ -214,7 +228,14 @@ XXX: The form with category is NYI!
 Define the default dash pattern for line items. See L<Tk::Canvas/DASH
 PATTERNS> for the list integer syntax.
 
-XXX: Currently C<category_dash.category.> is used instead of C<line_dash.category>.
+Example:
+
+ #: line_dash: 1,1
+ #: line_dash: 2,4
+
+Compatibility: C<category_dash.I<category>> was formerly used instead
+of C<line_dash.I<category>> and is still recognized, but will be
+removed some day.
 
 =item C<line_capstyle: I<capstyle>>
 
@@ -233,7 +254,10 @@ C<line_capstyle.category>.
 Define whether arrows should be drawn on line items. Valid values
 are C<none>, C<last>, C<first>, or C<both> (see L<Tk::Canvas>).
 
-XXX: The form with category form is NYI!
+Example:
+
+ #: line_arrow: last
+ #: line_arrow.cat: both
 
 =item C<line_shorten: I<boolean>>
 
@@ -257,7 +281,8 @@ of C<line_shorten_end.category>.
 
 =item C<item_size.I<category>: I<integer>>
 
-Define the size of items (for example base label font size).
+Define the size of items (for example base label font size or the size
+of point items in pixels).
 
 XXX: The category-less form is NYI!
 XXX: Currently C<category_size.category> is used instead

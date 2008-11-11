@@ -1,8 +1,10 @@
 #: title.en: Test for global directives
 #: title.de: Test für globale Direktiven
-#: category_color.R: #ff0000
-#: category_color.G: #00ff00
-#: category_color.B: #0000ff
+#: line_color: #800000
+#: line_color.Rcat:     #ff0000
+#: category_color.Rold: #ff0000
+#: line_color.Gcat:     #00ff00
+#: line_color.Bcat:     #0000ff
 #: category_color.Thin: #000000
 #: category_width.Thin: 1
 #: category_color.Middle: #000000
@@ -11,16 +13,40 @@
 #: category_width.Thick: 20
 #: category_color.Wald: green
 #: category_stipple.Wald: baum.xbm
-#: category_dash.Dash: 4,2
+#: GLOBAL_line_dash: 1,1
+#: line_dash.Dash: 2,4
 #: category_color.Dash: black
-#: line_dash: 4,4
+#: category_dash.DashOld: 4,2
+#: category_color.DashOld: black
+#: line_arrow.Arrow: last
+#: category_color.Arrow: black
+#: line_arrow.BothArrow: both
+#: category_color.BothArrow: black
+#: GLOBAL_line_arrow: both
 #:
-red street	R 8315,12349 8750,12364
-green street	G 8342,12218 8762,12218
-blue street	B 8342,12074 8808,12074
-main street	H 8369,11968 8915,11974
+# Note that the GLOBAL_... definitions are disabled, but
+# can be enabled for manual testing by just remove the
+# GLOBAL_ prefix. In this case the definition is globally valid
+# for every item without a more specific implementation
+#
+#:XXX unimplemented:
+default line color dark red	Default 8323,12425 8746,12432
+#:XXX unimplemented:
+red street	Rcat 8315,12349 8750,12364
+red street (compat name)	Rold 8334,12299 8746,12303
+#:XXX unimplemented:
+green street	Gcat 8342,12218 8762,12218
+#:XXX unimplemented:
+blue street	Bcat 8348,12149 8767,12149
+main street	H 8369,12068 8915,12074
+#:XXX unimplemented:
 thin street	Thin 8951,12373 9369,12379
+#:XXX unimplemented:
 middle street	Middle 8994,12224 9436,12230
+#:XXX unimplemented:
 thick street	Thick 9021,12081 9466,12096
 forest with tree stipple	F:Wald 9552,12391 9875,12404 9887,12059 9561,12062
-this line is dashed and black	Dash 8369,11879 9884,11882
+this line is dashed and black	Dash 8369,11979 9884,11982
+this line is dashed and black (compat name)	DashOld 8369,11879 9884,11882
+this line has an arrow	Arrow 8369,11779 9884,11782
+this line has two arrows	BothArrow 8369,11679 9884,11682

@@ -675,15 +675,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1226271600,
-         'text' => 'K 6312 Brandenburger Allee, Bahnhofstaße OD Paulinenaue Straßenbau Vollsperrung 01.10.2008-09.11.2008 ',
-         'from' => 1222725600,
-         'id' => 1500,
-         'data' => 'userdel	q4::inwork -36724,28543 -36808,28769 -37053,29229
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1226790000,
          'text' => 'K 6423 Platanenstr., Lindenallee Bahnübergang in der OL Fredersdorf Ausbau BÜ mit Gehweg Vollsperrung 06.10.2008-15.11.2008 ',
