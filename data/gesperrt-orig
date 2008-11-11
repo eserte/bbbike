@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.194 2008/11/07 21:40:27 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.196 2008/11/11 20:48:15 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
 ###################################################################
@@ -1732,6 +1732,9 @@ Treppe (ca. 15 Stufen)	0:25 2106,28767
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: append_comment Borgsdorf vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Venedig	1 -460,33067 -529,33240
+Hirschallee	1s 1331,34156 1329,34215
+# Rotdornweg (Westende)
+Treppe, 10 Stufen	BNP:30 678,33880
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #
 #
@@ -1739,6 +1742,12 @@ Venedig	1 -460,33067 -529,33240
 Treppe mit 1+25+1 Stufen	0:45 1592,31772
 Treppe	0:30 2090,31540
 Treppe	0:30 2181,31595
+# Bussardweg
+Treppe mit 19 Stufen	BNP:45 1112,32717
+# Schwalbenring / Grenzweg (Ostseite)
+Poller	BNP:0 1306,33008
+# Schwalbenring / Grenzweg (Westseite)
+Poller	BNP:0 1207,33025
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #
 #

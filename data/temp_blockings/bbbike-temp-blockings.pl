@@ -12866,7 +12866,7 @@ EOF
      },
      { from  => 1224975600, # 2008-10-26 01:00
        until => 1230758415, # 2008-12-31 22:20
-       text  => 'Sanierung der Kurt-Tucholsky-Str., 22.10.2008-15.05.2009',
+       text  => 'Sanierung der Kurt-Tucholsky-Str., 26.10.2008 - Ende 2008',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1::inwork 938,28349 978,28400 1007,28446 1009,28662 1020,28712 1078,28830 1124,28923 1234,29120 1304,29256 1366,29416

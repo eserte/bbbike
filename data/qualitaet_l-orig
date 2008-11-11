@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Brandenburg und weiterer Umgebung
-#: version: $Id: qualitaet_l-orig,v 4.129 2008/11/07 21:40:28 eserte Exp eserte $
+#: version: $Id: qualitaet_l-orig,v 4.131 2008/11/11 20:48:15 eserte Exp $
 #:
 Basdorf: Kopfsteinpflaster, mäßig bis OK	Q1 11964,35230 12034,35012 12193,34683 12635,32221
 Strausberg Nord - Prötzel: sehr guter Asphalt	Q0 43584,20871 44596,21287 45545,21723 46072,21966 46782,22769 47180,22939 47585,23227 47712,23526 47671,23769 47857,24214 48104,24510 48885,25629 49255,26084 49808,26346 49984,26511
@@ -126,7 +126,7 @@ Sputendorf: teil Kopfsteinpflaster, OK	Q1 -1316,-7721 -1734,-7716 -2500,-7557
 #: add_fragezeichen: Stimmt das noch immer?
 Fahlhorst: schlechtes Kopfsteinpflaster	Q3 -5709,-10987 -5452,-11456
 #XXX del: inzwischen ausgebaut	Berliner Str (Borgsdorf): sandig	Q3 1051,32796 1123,33294
-#XXX del: inzwischen ausgebaut	Berliner Str (Borgsdorf): Kopfsteinpflaster	Q2 1123,33294 1246,34168
+#XXX del: inzwischen ausgebaut	Berliner Str (Borgsdorf): Kopfsteinpflaster	Q2 1123,33294 1251,34170
 Briesetal: Waldweg, sandig, Wurzeln, aber nicht unangenehm zu fahren	Q3 2902,33051 3778,32931 5994,34414 7443,36175
 Briesetal - Zühlsdorf: Waldweg, teils sandig	Q3 7443,36175 8023,36133 8639,35743
 Zühlsdorf - Wandlitz: teils schlechter Asphalt	Q2 13938,38028 14822,37589
@@ -866,7 +866,7 @@ schlechte Straße oder Kopfsteinpflaster	Q2 5384,28338 5298,28530 5471,29678 5407
 	Q0 5535,30422 5753,30866 6351,31738
 	Q0 6351,31738 6188,31750
 mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 6188,31750 5885,31774
-	Q0 5885,31774 3753,31957 3668,32109 3474,32188 3049,32631 2902,33051 2877,33228 2876,33505 2040,33992 1334,34149 1246,34168
+	Q0 5885,31774 3753,31957 3668,32109 3474,32188 3049,32631 2902,33051 2877,33228 2876,33505 2040,33992 1678,34084 1639,34107 1502,34129 1425,34141 1331,34156 1251,34170
 #schlechte Straße oder Kopfsteinpflaster	Q2 1771,31319 1840,31590 1937,31716 1988,31882 2053,32051
 #	Q0 2053,32051 2269,32391 2509,32612 2832,33031 2902,33051
 befahrbarer aber nicht asphaltierter Feld- oder Waldweg	Q2 2040,33992 3307,34313 4776,35053
