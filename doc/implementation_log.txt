@@ -2,14 +2,14 @@
 
 	* U-Bahn-Tunnelstrecken: Heute habe ich entdeckt, dass die U5 einen
 	Tunnelabschnitt zwischen Kaulsdorf-Nord und Wuhletal. Das habe ich zum
-	Anlass genommen, das Projekt "U-Bahn-Tunnelabschnitte markieren"
-	durchzuführen. Das erweiterte Projekt würde noch Einschnitt- und
-	Dammstrecken umfassen, aber das habe ich für später aufgeschoben.
+	Anlass genommen, das bereits geplante Projekt "U-Bahn-Tunnelabschnitte
+	markieren" durchzuführen. Das erweiterte Projekt würde noch Einschnitt-
+	und Dammstrecken umfassen, aber das habe ich für später aufgeschoben.
 
 	Dabei habe ich gemerkt, dass U-Bahnlinien und Autobahnen die gleiche
 	Kartensignatur haben. Um das zu verbessern, werden die Autobahnen-Linien
 	nun mit einer dünnen Linie in der Mitte gezeichnet, so dass man einen
-	"Zwei-Bahn"-Effekt hat. Leider gibt es einige Stellen im Programmcode,
+	"Zwei-Bahnen"-Effekt hat. Leider gibt es einige Stellen im Programmcode,
 	die man bei Kartensignaturänderungen anpassen muss: die eigentliche
 	Funktion zum Zeichnen (generate_plot_functions) und das Zeichnen der
 	Legende (in BBBikePrint.pm). Da die dünne Linie bei großen Maßstäben

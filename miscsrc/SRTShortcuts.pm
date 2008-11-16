@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.45 2008/10/30 07:09:56 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.47 2008/11/16 23:45:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.47 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -678,6 +678,103 @@ sub current_search_in_bbbike_cgi {
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
     require WWWBrowser;
     WWWBrowser::start_browser($url);
+}
+
+######################################################################
+# Experiments
+#
+# currently only executable using
+#    SRTShortcuts::street_name_experiment()
+# in ptksh
+sub street_name_experiment {
+    require Tk::Config;
+    require Strassen::Core;
+    require Strassen::Strasse;
+    require Strassen::Util;
+    use BBBikeUtil qw(pi);
+    if ($Tk::Config::xlib !~ /-lXft\b/) {
+	main::status_message("Sorry, this experiment needs Tk with freetype support! Consider to recompile Tk with XFT=1", "die");
+    }
+
+    # XXX Taken from Tk::RotFont
+    # Erstellt eine Rotationsmatrix für X11R6
+    # XXX rot-Funktion auslagern (CanvasRotText)
+    my $get_rot_matrix = sub {
+	my($r, $size) = @_;
+	$r = int(($r/pi)*36+0.25)/36*pi; # 5°-Schritte erzwingen
+	if (abs($r - pi) < 0.1) {
+	    $r = 3.2;
+	} elsif (abs($r + pi) < 0.1) {
+	    $r = -3.1;
+	}
+	my $mat;
+	my $a1 = $size*cos($r);
+	my $s1 = sin($r);
+	foreach ($a1, $size*$s1, $size*-$s1, $a1) {
+	    if ($mat) { $mat .= " " }
+	    $mat .= $_;
+	}
+	'matrix=' . $mat;
+    };
+
+    my $font = "sans";
+    my $tag = "experiment-strname";
+    $main::c->delete($tag);
+    my $s = Strassen->new("strassen") || die "Can't open strassen";
+    $s->init;
+#our $xxx=0;
+    while(1) {
+#$xxx++;last if $xxx > 1000;
+	my $use_bold;
+	my $rec = $s->next;
+	my $c = $rec->[Strassen::COORDS()];
+	last if !@$c;
+	my $name = $rec->[Strassen::NAME()];
+	$use_bold = 1if $rec->[Strassen::CAT()] =~ m{^(H|HH|B)$};
+	while(1) {
+	    my $peek = $s->peek;
+	    my $peek_c = $peek->[Strassen::COORDS()];
+	    if (!($peek->[Strassen::NAME()] eq $name &&
+		  $peek_c->[0] eq $c->[-1])) {
+		last;
+	    }
+	    push @$c, @{$peek_c}[1..$#$peek_c];
+	    if (!$use_bold) {
+		$use_bold = 1 if $peek->[Strassen::CAT()] =~ m{^(H|HH|B)$};
+	    }
+	    $s->next;
+	}
+	next if @$c < 2 || $c->[0] eq $c->[-1];
+
+	my(@coords) = (main::transpose(split(/,/, $c->[0])),
+		       main::transpose(split(/,/, $c->[-1]))
+		      );
+	$name = Strasse::strip_bezirk($name);
+	my $length = Strassen::Util::strecke([@coords[0,1]], [@coords[2,3]]);
+	if ($length < length($name)*6) { # XXX approx. 6px per character in normal sans font
+	    #warn "too long: '$name', street length is $length\n";
+	    next;
+	}
+	my $r = -atan2($coords[3]-$coords[1],
+		       $coords[2]-$coords[0]);
+	if (1) { $r = 2*pi - $r; }
+	if (($r > pi && $r < pi*1.5) ||
+	    ($r > 2.5*pi && $r < pi*3)) { # XXXX auf dem Kopf stehend! XXX mathematisch herausfinden, nicht empirisch!
+	    @coords[0,1,2,3] = @coords[2,3,0,1];
+	    $r = -atan2($coords[3]-$coords[1],
+			$coords[2]-$coords[0]);
+	    if (1) { $r = 2*pi - $r; }
+	}
+	my $matrix = $get_rot_matrix->($r, 1);
+	#my $deg = $r*180/pi; print STDERR "$name $deg $matrix\n";
+	$main::c->createText(@coords[0, 1],
+			     -text => $name,
+			     -anchor => "sw",
+			     -font => "$font" . ($use_bold ? ":style=bold" : "") . ":$matrix",
+			     -tags => [$tag, "s-label"],
+			    );
+	#$main::c->createLine(@coords, -arrow => "last", -tags => $tag);
+    }
 }
 
 1;
