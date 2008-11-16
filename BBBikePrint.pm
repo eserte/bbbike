@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.46 2008/08/02 09:16:46 eserte Exp eserte $
+# $Id: BBBikePrint.pm,v 1.48 2008/11/16 17:34:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003,2006 Slaven Rezic. All rights reserved.
@@ -536,10 +536,16 @@ sub draw_legend {
 
 	    foreach my $cat (@{ $str_category{$abk} }) {
 		next if ($str_restrict{$abk} && !$str_restrict{$abk}->{$cat});
+		my @dash = @dash;
+		if ($Tk::VERSION >= 800.016 && exists $category_dash{$cat}) {
+		    @dash = (dash => $category_dash{$cat});
+		}
 		my $width = ($abk eq 'rw' ? 7 : 5); # Sonderregelung für Radwege
+		my @coordlist = ($left+$start_symbol, $top+$height+$lower_symbol,
+				 $left+$start_symbol+$line_length, $top+$height+$lower_symbol
+				);
 		my $item =
-		    $c->createLine($left+$start_symbol, $top+$height+$lower_symbol,
-				   $left+$start_symbol+$line_length, $top+$height+$lower_symbol,
+		    $c->createLine(@coordlist,
 				   -fill => $category_color{$cat},
 				   -width => $width,
 				   @dash,
@@ -549,13 +555,25 @@ sub draw_legend {
 		if ($abk eq 'rw') {
 		    # besondere Darstellung der Radwege
 		    my $item =
-			$c->createLine($left+$start_symbol, $top+$height+$lower_symbol,
-				       $left+$start_symbol+$line_length, $top+$height+$lower_symbol,
+			$c->createLine(@coordlist,
 				       -fill => "white",
 				       -width => $width-4,
 				       @dash,
 				       -tags => 'legend');
 		    $add_binding->($item, "str", $abk, $cat);
+		}
+
+		if ($abk eq 'sBAB') { # thin grey line for "two track" effect
+		    # XXX duplicated in generate_plot_functions
+		    my $item = $c->createLine
+			(@coordlist,
+			 -fill      => 'lightgrey',
+			 -width     => 1,
+			 -joinstyle => 'bevel',
+			 @dash,
+			 -tags      => 'legend'
+			);
+		    $add_binding->($item, 'str', $abk, $cat);
 		}
 
 		push @{ $str_coords{$abk} },

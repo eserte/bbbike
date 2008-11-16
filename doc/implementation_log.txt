@@ -1,3 +1,23 @@
+2008-11-16  Slaven Rezic  <slaven@rezic.de>
+
+	* U-Bahn-Tunnelstrecken: Heute habe ich entdeckt, dass die U5 einen
+	Tunnelabschnitt zwischen Kaulsdorf-Nord und Wuhletal. Das habe ich zum
+	Anlass genommen, das Projekt "U-Bahn-Tunnelabschnitte markieren"
+	durchzuführen. Das erweiterte Projekt würde noch Einschnitt- und
+	Dammstrecken umfassen, aber das habe ich für später aufgeschoben.
+
+	Dabei habe ich gemerkt, dass U-Bahnlinien und Autobahnen die gleiche
+	Kartensignatur haben. Um das zu verbessern, werden die Autobahnen-Linien
+	nun mit einer dünnen Linie in der Mitte gezeichnet, so dass man einen
+	"Zwei-Bahn"-Effekt hat. Leider gibt es einige Stellen im Programmcode,
+	die man bei Kartensignaturänderungen anpassen muss: die eigentliche
+	Funktion zum Zeichnen (generate_plot_functions) und das Zeichnen der
+	Legende (in BBBikePrint.pm). Da die dünne Linie bei großen Maßstäben
+	nicht gezeichnet werden darf (die Autobahn-Linien sind dann zu dünn
+	dafür), muss diese bei einigen Zoomstufen ausgeblendet werden --- dass
+	muss in change_category_visibility() passieren, aber auch beim initialen
+	Zeichnen.
+
 2008-11-06  Slaven Rezic  <slaven@rezic.de>
 
 	* gpx2bbd: Für große GPX-Dateien (so um die 1.5 MB) war das Skript bei

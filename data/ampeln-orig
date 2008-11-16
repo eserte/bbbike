@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.146 2008/11/11 20:39:28 eserte Exp $
+#: version: $Id: ampeln-orig,v 4.146 2008/11/11 20:39:28 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 	X 9222,8787
@@ -1980,7 +1980,6 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8626,23432
 	X 10170,14905
 	F 10516,15039
 	B 35379,-103141
-#: note: laut Luftbild:
 	X 21163,15289
 #: note: laut Luftbild:
 	X 23561,15975
@@ -2312,7 +2311,6 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	F 2745,12467
 #: note: Luftbild:
 	X 20210,13776
-#: note: Luftbild:
 	F 20474,14442
 #: note: Luftbild:
 	F 838,14530
@@ -2387,6 +2385,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 5004,12771
 	F 5754,13170
 	B 46004,-16440
+	X 20097,13549
 ################################################################################
 # note: Potsdam vvv
 	X -12839,-1342

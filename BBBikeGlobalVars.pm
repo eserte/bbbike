@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.70 2008/11/10 22:58:31 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.71 2008/11/16 17:28:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2007,2008 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.70 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.71 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -264,6 +264,7 @@ use vars qw($xadd_anchor_type $yadd_anchor_type %label_spaceadd);
 use vars qw(@normal_stack_order @set_stack_order);
 use vars qw(%perlmod_install_advice_seen
 	    %long_url_to_short_url);
+use vars qw($sBAB_two_track_width);
 
 use enum qw/:EXPORT_TXT_ FULL SIMPLIFY_NAME SIMPLIFY_ANGLE SIMPLIFY_NAME_OR_ANGLE SIMPLIFY_AUTO/;
 

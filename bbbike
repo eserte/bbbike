@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.387 2008/11/10 23:00:55 eserte Exp $
+# $Id: bbbike,v 3.388 2008/11/16 17:35:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -241,7 +241,7 @@ eval 'use BBBikeXS 0.09';
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.387 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.388 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -360,6 +360,8 @@ foreach (@Radwege::category_order) {
 }
 $str_nr_draw{'comm-route'} = 1;
 $str_nr_draw{'sBAB'} = 1; # XXX sollte vielleicht umschaltbar sein?
+# minimum width for "two-track" effect
+$sBAB_two_track_width = 3; 
 
 $do_iconframe = 1;
 $do_route_strnames          = 0 if !defined $do_route_strnames;
@@ -5643,12 +5645,12 @@ sub define_item_attribs {
 	 'z'    => [8,5,2,5],	# PLZ-Grenzen
 	 'sperre3' => [6,2],
 	 'fz'   => [8,5],
-	 'Tu'   => [2,5],	# Tunnel (addinfo)
+	 'Tu'   => [4,5],	# Tunnel (addinfo)
 	);
     %category_dash =
-	('R0'   => [2,5],
-	 'U0'   => [2,5],
-	 'S0'   => [2,5],
+	('R0'   => [1,5],
+	 'U0'   => [1,5],
+	 'S0'   => [1,5],
 	 'radroute' => [1,15],
 	);
     %category_capstyle =
@@ -5977,7 +5979,7 @@ sub define_item_attribs {
     @normal_stack_order =
 	(qw(map f w-out w i-out i f-Pabove crosshairs e e-img
 	    gP gD z g gP gD gBO
-	    s-out l-out show gr rw s-NN s-N s-H s-HH s-B s-BAB sBAB sBAB-BAB l v
+	    s-out l-out show gr rw s-NN s-N s-H s-HH s-B s-BAB sBAB sBAB-BAB sBAB-fg l v
 	    f-label-bg wr w-label-bg gBO-label-bg f-label w-label gBO-label
 	    u sperre_u u-bg u-fg u_bg-img r sperre_r b sperre_b
 	    r-bg r-fg r_bg-img b-bg b-fg b_bg-img GU-img
@@ -6413,11 +6415,11 @@ sub generate_plot_functions {
 				       -width => 5, # XXX skalieren
 				       -capstyle => $capstyle_round,
 				       -tags => [$abk, $strname,
-						 "$abk-$cat_hin", "$abk-" . $i,
+						 $abk."-".$cat_hin, $abk."-".$i,
 						 @extra_tags],
 				      );
 		    } else { # lines
-			my @std_tags_hin = ($abk, $strname,"$abk-$cat_hin","$abk-" . $i);
+			my @std_tags_hin = ($abk, $strname,$abk."-".$cat_hin,$abk."-".$i);
 			my @std_tags_rueck;
 			my $line_dash_hin = (exists $layer_category_line_dash{$abk} && $layer_category_line_dash{$abk}{$cat_hin}) || $layer_line_dash{$abk} || $category_dash{$cat_hin} || $line_dash{$abk};
 			my $line_dash_rueck;
@@ -6436,7 +6438,7 @@ sub generate_plot_functions {
 			        if ($addinfo_hin =~ $tunnel_qr) {
 				    $line_dash_hin = $line_dash{"Tu"};
 				    $line_dash_rueck = $line_dash_hin if defined $line_dash_hin;
-				    draw_tunnel_entrance(\@coordlist, width => $this_width_hin+4, tags => \@std_tags_hin, mounds => $addinfo_hin);
+				    draw_tunnel_entrance(\@coordlist, -width => $this_width_hin+4, -tags => \@std_tags_hin, -mounds => $addinfo_hin);
 				} elsif ($addinfo_hin eq 'Br') {
 				    draw_bridge(\@coordlist, -width => $this_width_hin+4, -tags => \@std_tags_hin);
 				}
@@ -6558,6 +6560,19 @@ sub generate_plot_functions {
 			         (exists $layer_category_line_arrow{$abk} && exists $layer_category_line_arrow{$abk}{$cat_hin} ? (-arrow => $layer_category_line_arrow{$abk}{$cat_hin})
 				  : exists $layer_line_arrow{$abk} ? (-arrow => $layer_line_arrow{$abk})
 				  : exists $category_line_arrow{$cat_hin} ? (-arrow => $category_line_arrow{$cat_hin}) : ()),
+				);
+			}
+
+			if ($abk eq 'sBAB') { # thin grey line for "two track" effect
+			    $c->createLine
+				(@coordlist,
+				 -fill      => 'lightgrey',
+				 -width     => 1,
+				 -joinstyle => 'bevel',
+				 -tags      => [$abk, $strname, $abk."-fg",$abk."-".$i],
+                                 ($line_dash_hin ? (-dash => $line_dash_hin) : ()),
+			         # XXX??? ($line_dash_rueck ? (-capstyle => $line_dash_rueck) : ()),
+				 -state	    => ($this_width_hin >= $sBAB_two_track_width ? 'normal' : 'hidden'),
 				);
 			}
 
@@ -15085,6 +15100,18 @@ sub change_label_visibility {
 ### AutoLoad Sub
 sub change_category_visibility {
     my($c, $scale, $old_scale) = @_;
+
+    {
+	my $new_width = get_line_width('sBAB-BAB', $scale);
+	my $old_width = get_line_width('sBAB-BAB', $old_scale);
+	if ($new_width != $old_width) {
+	    if ($new_width < $sBAB_two_track_width && $old_width >= $sBAB_two_track_width) {
+		$c->itemconfigure('sBAB-fg', -state => 'hidden');
+	    } elsif ($new_width >= $sBAB_two_track_width && $old_width < $sBAB_two_track_width) {
+		$c->itemconfigure('sBAB-fg', -state => 'normal');
+	    }
+	}
+    }
 
     change_place_visibility($c, $scale);
     change_label_visibility($c, $scale, $old_scale);

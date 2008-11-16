@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.196 2008/11/11 20:48:15 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.196 2008/11/11 20:48:15 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 ###################################################################
@@ -809,7 +809,7 @@ Riesaer Str.: Straßenbahntrasse	3nocross 24198,14454 24162,14487 24120,14526
 Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17527,7812 17686,7589 17839,7365 18003,7144
 Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4469,8037 4659,7982 4793,7992
 Rhinstr.: Straßenbahntrasse	3nocross 18215,12132 18216,12262 18220,12450
-Allee der Kosmonauten: Straßenbahntrasse	3nocross 19628,13517 19807,13529 19837,13531 20182,13554
+Allee der Kosmonauten: Straßenbahntrasse	3nocross 19628,13517 19726,13524 19807,13529 19837,13531 19894,13535 20097,13549
 Bornhomer Str.: Straßenbahntrasse	3nocross 10765,16486 10699,16492 10620,16497
 Bornhomer Str.: Straßenbahntrasse	3nocross 10620,16497 10533,16505 10458,16509
 Bornhomer Str.: Straßenbahntrasse	3nocross 10458,16509 10370,16516 10282,16522 10197,16528
@@ -1082,7 +1082,8 @@ Drängelgitter	BNP:3 7292,8631
 Schranke	BNP:3 8251,20927
 #: by: Sorven (xbs9):
 Schranke	BNP:5 21297,12748
-#: by: Bernd Albinus (und Luftbild):
+#: by: Bernd Albinus:
+#: confirmed_by: srt
 Drängelgitter	BNP:5 22061,15168
 #: by: Andreas Vildman:
 Drängelgitter kann ohne Absteigen passiert werden	BNP:2 1358,3257

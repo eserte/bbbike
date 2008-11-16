@@ -1916,7 +1916,11 @@ and display.
 S- und U-Bahnlinien mit den neuen Attributen Em (embankment=Damm, z.B.
 U6 nach Tegel) und Cu (cut=Einschnitt, z.B. U nach Krumme Lanke)
 versehen. Diese sollten dann dafür verwendet werden, um das Layering
-anzupassen. Außerdem U-Bahntunnelstrecken als solche markieren.
+anzupassen. Leider muss man bei U-Bahntunnelstrecken eine Ausnahme
+machen: da diese meistens genau unter Straßen verlaufen, würde man bei
+einem perfekten Layering nichts von den U-Bahnlinien sehen. Da diese
+bereits gestrichelt gezeichnet werden, kann man sie also ausnahmsweise
+über den Straßen zeichnen (was bislang schon der Fall ist).
 
 =back
 

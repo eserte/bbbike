@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.232 2008/11/11 20:39:33 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.232 2008/11/11 20:39:33 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10257,-2654 10392,-2980 10475,-3174
@@ -2142,6 +2142,11 @@ Gollanczstr.: Verbundsteinpflaster	Q1+ 2120,26060 2108,26312
 Gollanczstr.: Kopfsteinpflaster	Q2 2108,26312 2111,26459
 Gollanczstr.: Asphalt	Q0 2111,26459 2122,26660 2017,26779
 Bartelstr.: Asphalt	Q0 11032,13465 10998,13382
+Paul-Zobel-Str.: Asphalt	Q0 15724,13544 15724,13298
+Annenstr. (Biesdorf): Asphalt	Q0 20269,14256 20376,14244
+(Blenheimstr. - Bärensteinstr.): Gehwegplatten	Q1 21163,15289 21312,15268
+Bärensteinstr.: Asphalt	Q0 21312,15268 21411,15232 21497,15227 21599,15213
+Bärensteinstr.: Asphalt	Q0 21411,15232 21422,15383
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -3833,7 +3838,8 @@ Lübarser Str.: Asphalt	Q0 5320,21432 5589,21799
 (Erich-Kästner-Str. - Peter-Huchel-Str.): Asphalt	Q0 23056,13727 23007,13509
 #: note: genau genommen nur der Teil parallel zur U-Bahn gekennzeichnet
 Peter-Huchel-Str.: Asphalt	Q0 22960,13298 23007,13509 23275,13459 23460,13454
-(Carola-Neher-Str - Kastanienallee): Asphalt	Q0 23382,14367 23405,14410 23769,14609
+#: XXX in Höhe des U-Bhfs. Cottbusser Platz Gehwegplatten?
+(Carola-Neher-Str - Kastanienallee): Asphalt	Q0 23382,14367 23405,14410 23458,14439 23506,14450 23563,14473 23567,14523 23769,14609
 #: note: "auch für Rennräder befahrbar"
 (Heinrich-Grüber-Str. - Grottkauer Str.): fester Ascheweg	Q0 23330,12734 23397,13102 23460,13454 23490,13611 23542,13880 23553,13931 23630,13916 23751,13858
 #: XXX: "kurzes Stück am Ende holpriger Siedlungsweg"
@@ -7617,7 +7623,7 @@ Lion-Feuchtwanger-Str.: guter Asphalt	Q0 22603,12359 22568,12408 22523,12468 225
 #: by: B. Gabler:
 Guyotstr.: welliger fester Sandweg	Q2 11095,21768 11089,21793 11077,21858 11056,21978
 #: by: anonymous:
-#: XXX: Bestätigung von B. Gabler erbeten:
+#: confirmed_by: B. Gabler
 Guyotstr.: Asphalt	Q0 11056,21978 10997,22203
 #: by: Bärbel Buch:
 Porzer Str.: guter Asphalt	Q0 19774,-231 19777,-196 19854,-126 19909,-75 19972,-19 20164,152 20274,253 20351,287 20470,319 20604,354

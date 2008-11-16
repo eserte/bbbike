@@ -598,15 +598,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1226790000,
-         'text' => 'L 073 Neue Beelitzer Str. OL Luckenwalde, zw. Bahnhofstr. und Beelitzer Tor Straßenausbau Vollsperrung 20.09.2008-15.11.2008 ',
-         'from' => 1221775200,
-         'id' => 1472,
-         'data' => 'userdel	q4::inwork -4725,-34957 -5019,-34814
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -676,15 +668,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1226790000,
-         'text' => 'K 6423 Platanenstr., Lindenallee Bahnübergang in der OL Fredersdorf Ausbau BÜ mit Gehweg Vollsperrung 06.10.2008-15.11.2008 ',
-         'from' => 1223157600,
-         'id' => 1501,
-         'data' => 'userdel	2::inwork 34139,13113 34183,13746 34276,14308
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -707,27 +691,10 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1226790000,
-         'text' => 'L 431 Neuzelle - Möbiskruge OD Neuzelle, Slawengrund Deckenerneuerung Vollsperrung 22.10.2008-15.11.2008 ',
-         'from' => 1224540000,
-         'id' => 1508,
-         'data' => 'userdel	q4::inwork 94961,-33275 95107,-33405 95699,-33584 96017,-33547
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
-       {
-         'source_id' => 'IM_010255',
-         'until' => 1226789999,
-         'text' => 'Nöldnerstr. (Lichtenberg) Richtung Karlshorster Str. zwischen Lückstr. und Karlsholrster Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 11.2008)',
-         'from' => 1223933669,
-         'id' => 1511,
-         'data' => 'userdel	1::inwork 16032,10842 15670,10800 15396,10767 15266,10791
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -737,7 +704,7 @@ push @temp_blocking,
        undef,
        {
          'until' => 1230758415,
-         'text' => 'Sanierung der Kurt-Tucholsky-Str.',
+         'text' => 'Sanierung der Kurt-Tucholsky-Str., 26.10.2008 - Ende 2008',
          'from' => 1224975600,
          'id' => 1519,
          'data' => 'userdel	1::inwork 938,28349 978,28400 1007,28446 1009,28662 1020,28712 1078,28830 1124,28923 1234,29120 1304,29256 1366,29416
@@ -774,16 +741,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_010134',
-         'until' => 1226789999,
-         'text' => 'Waltersdorfer Str. (Treptow) in beiden Richtungen zwischen Dhamestr. und Sandbacher Weg Baustelle, Straße vollständig gesperrt (bis Mitte 11.2008)',
-         'from' => 1226267441,
-         'id' => 1523,
-         'data' => 'userdel	2::inwork 22172,194 22168,-71 22177,-137
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_010519',
          'until' => 1228085999,
@@ -841,15 +799,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1226790000,
-         'text' => 'L 015 zw. Abzw. Himmelpfort und Fürstenberg Erneuerung Deckenbelag Vollsperrung 02.11.2008-15.11.2008 ',
-         'from' => 1225494000,
-         'id' => 1530,
-         'data' => 'userdel	2::inwork 627,89430 234,89271 -306,89232 -676,89041 -1718,88714 -2243,88584 -2617,88528 -2940,88449 -3184,88449 -4847,88034 -5326,87861 -6133,87749
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1229727600,
          'text' => 'L 020 Falkensee - Velten zw. Schönwalde und Gewerbegebiet Straßenbauarbeiten Vollsperrung 10.11.2008-19.12.2008 ',
@@ -859,15 +809,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1226530800,
-         'text' => 'L 040 Thälmannstr. OD Dahlewitz, Höhe Rangsdorfer Weg Kanal- und Straßenbau Vollsperrung 05.11.2008-12.11.2008 ',
-         'from' => 1225753200,
-         'id' => 1532,
-         'data' => 'userdel	q4::inwork 12805,-9035 13228,-9606 13576,-9738
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1227308400,
          'text' => 'L 053 Seestr., Calauer Str. OD Großräschen, zw. Chransdorfer Str. und Berliner Str. Kanal- und Straßenbau Vollsperrung 04.11.2008-21.11.2008 ',
@@ -903,15 +845,6 @@ push @temp_blocking,
          'data' => 'userdel	2::inwork -46590,45423 -46394,45253 -45792,44692 -45553,44122 -45441,43630 -45367,42665
 ',
          'type' => 'gesperrt'
-       },
-       {
-         'until' => 1242424800,
-         'text' => 'L 171 Kurt-Tucholsky-Str. OL Hohen Neuendorf, zw. K.-Marx-Str. und A.-Bebel-Str. Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 22.10.2008-15.05.2009 ',
-         'from' => 1224540000,
-         'id' => 1537,
-         'data' => 'userdel	q4::inwork 1009,28662 1020,28712 1078,28830 1124,28923 1234,29120 1304,29256 1366,29416
-',
-         'type' => 'handicap'
        }
      
 );

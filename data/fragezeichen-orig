@@ -646,7 +646,6 @@ Jan-Petersen-Str.: Radwege? Zugang zur Landsberger Allee vorhanden?	? 21022,1624
 #XXX del done: Berlin-Usedom am Werbellinsee: laut Tsp vom 2004-10-04 wird hier 2005 ein Radweg gebaut, laut anderen Informationen bis 2006-12-15	?::inwork 30960,61370 30784,60950 30781,60566 30778,60221 30671,59984 30706,59802 30625,59562 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27359,56787 27137,56650 26792,56558 26404,56518 26145,56499 26037,56412 26028,56303
 Zichow-Lindenwegsiedlung: Qualität? Am westlichen Ende als "Lindenweg" ausgeschildert	? 54500,87934 51978,87962
 Prötzeler Ring: Qualität laut ADFC-Karte gut	? 21951,15918 21980,15857 22055,15698 22092,15610
-Trappenfelder Pfad: Qualität laut ADFC-Karte gut	? 22092,15610 22101,15601 22076,15276 22061,15168 22059,15153
 Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23297,14772 23379,14514
 #: note: Die Beilsteiner ist eine Einbahnstraße in diesem Abschnitt: 18852,13269 18832,13099 18749,12413 (Merler - Marzahner, offen Richtung Marzahner)
@@ -1512,12 +1511,12 @@ Großbeerenstr. (Lichterfelde): Qualität?	? 4939,1148 5050,1133 5167,1116
 Smyrnaer Weg: Qualität?	? 10248,3897 10348,3888
 Rätikonweg: Qualität?	? 9671,2145 9731,1956 9805,1711 9821,1692
 Hollabergweg: Qualität?	? 9342,1818 9336,2009
-Annenstr.: Qualität?	? 20269,14256 20376,14244
-Annenstr.: Qualität?	? 20371,14204 20467,14196
-Annenstr.: Qualität?	? 20631,14221 20878,14198 21087,14183 21287,14163
+Annenstr. (Biesdorf): Qualität?	? 20371,14204 20467,14196
+Annenstr. (Biesdorf): Qualität?	? 20631,14221 20878,14198 21087,14183 21287,14163
 Ketschendorfer Weg: Qualität?	? 20361,14118 20461,14110 20620,14092 20856,14073 20938,14066 21074,14058 21272,14036
 Hiltrudstr.: Qualität?	? 21261,13922 21272,14036 21287,14163 21302,14282 21329,14488
 Charlottenstr.: Qualität?	? 21302,14282 21099,14300 20900,14318 20647,14341 20657,14446
+#: XXX zumindest von der Allee der Kosmonauten aus glatt gepflastert oder asphaltiert, Gehweg für Radfahrer freigegeben
 (Charlottenstr. - Allee der Kosmonauten/Fußgängerampel): Durchfahrt für Radfahrer möglich? Qualität?	? 20647,14341 20505,14350 20474,14442
 Gerstenweg: Qualität?	? 21262,13517 21214,13126 21168,12794 21101,12661 21053,12582 21028,12536 20952,12407 20943,12376 20924,12204
 Hafersteig: Qualität?	? 21150,13493 21113,13142 21078,12824 21064,12769 20975,12620 20862,12420 20853,12388 20839,12209
@@ -1826,7 +1825,7 @@ Lyonel-Feiniger-Str.: Qualität?	? 24131,15109 24139,15046 24151,14982 24160,1493
 Martinstr.: Qualität?	? 4956,5121 5102,5031
 Suchlandstr.: Qualität?	? 4906,5052 5050,4959
 #: XXX ein anonymer Eintrag hat nur "gute Qualität" eingetragen:
-Paul-Zobel-Str.: Qualität?	? 15724,13544 15724,13298 15846,13297 15851,13511 15897,13512
+Paul-Zobel-Str., Abschnitt an der Vulkanstr.: Qualität?	? 15724,13298 15846,13297 15851,13511 15897,13512
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20080131.1105.93056.html
 Rügenwalder Weg: Qualität, wahrscheinlich Beton mit Wurzelschäden, vielleicht schon saniert und asphaltiert? Ist es für Radfahrer möglich, zur Gülzower Str. zu gelangen?	? 22424,12183 22439,12168 22720,12163 22752,12195
 Straße zwischen Wissenschaftspark Golm und Universität Potsdam: wo genau verläuft diese Straße?	? -18849,301 -18624,99
@@ -1986,7 +1985,7 @@ Schwarzdornweg: Qualität?	? 2831,2390 3006,2384
 Weißdornweg: Qualität?	? 2852,2342 3003,2339
 Murtener Str.: Qualität?	? 2746,2590 2809,2615 3015,2606 3163,2598
 Freiastr.: Qualität?	? 16829,12420 16696,12438
-#: XXX: Wegführung?
+#: XXX: Wegführung? Zumindest an der Herzbergstr. Beton, eher nur mäßige Qualität (Q1)
 Bernhard-Bästlein-Str.: Qualität? Einbahnstraße?	? 15342,13994 15487,14047 15595,14041 15593,13768 15661,13764 15653,13542
 Elli-Voigt-Str.: Qualität?	? 15758,14088 15760,14036 15794,13975 15792,13764 15831,13760 15833,13596 15896,13594
 Bernhard-Bästlein-Str. - Vulkanstraße: Qualität? Offizieller Straßenname?	? 15595,14041 15600,14077 15704,14077 15758,14088 15871,14106
@@ -2142,3 +2141,6 @@ Wittgensteiner Weg: Qualität?	? -4737,14862 -4729,14958 -4720,15087 -4713,15191 
 Steigerwaldstr.: Qualität?	? -4710,15530 -4701,15563 -4639,15726 -4655,15803 -4656,15839 -4653,15896 -4630,15978
 #: XXX: unklarer Eintrag von Kai Güschow: Q1, Asphalt, q2?
 Oelsnitzer Str.: Qualität?	? 23989,14307 24099,14355 24133,14444 24162,14487
+U-Bhf. Cottbusser Platz - Auerbacher Ring: Qualität?	? 23563,14473 23592,14469 23635,14475 23669,14461
+Auerbacher Ring: Qualität?	? 23826,14292 23825,14323 23776,14416 23744,14482 23721,14493 23669,14461 23646,14392 23718,14236
+Maxie-Wander-Str. - Kastanienallee: Durchfahrt für Radfahrer möglich? Qualität?	? 23826,14292 23877,14315

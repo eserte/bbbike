@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.195 2008/11/11 20:39:30 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.196 2008/11/11 20:48:15 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9687,10180 9592,10174 9401,10199
@@ -791,10 +791,10 @@ Aachener Str. -> Detmolder Str.: Mittelstreifen nicht passierbar	3::igndisp 4609
 Straßenbahntrasse	3nocross::ignrte 18215,12132 18216,12262 18220,12450
 Rhinstr. -> Kolonie Friedrichsfelde Nord: Straßenbahntrasse	3::igndisp 18215,12132 18216,12262 18180,12262
 Kolonie Friedrichsfelde Nord -> Rhinstr.: Straßenbahntrasse	3::igndisp 18180,12262 18216,12262 18220,12450
-Straßenbahntrasse	3nocross::ignrte 19628,13517 19807,13529 19837,13531 20182,13554
+Straßenbahntrasse	3nocross::ignrte 19628,13517 19726,13524 19807,13529 19837,13531 19894,13535 20097,13549
+Allee der Kosmonauten -> Langhoffstr.: Straßenbahntrasse	3::igndisp 19726,13524 19807,13529 19821,13604
 Langhoffstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 19821,13604 19807,13529 19837,13531
-Allee der Kosmonauten -> Langhoffstr.: Straßenbahntrasse	3::igndisp 19628,13517 19807,13529 19821,13604
-Allee der Kosmonauten -> Biesdorfer Promenade: Straßenbahntrasse	3::igndisp 20182,13554 19837,13531 19826,13444
+Allee der Kosmonauten -> Biesdorfer Promenade: Straßenbahntrasse	3::igndisp 19894,13535 19837,13531 19826,13444
 Biesdorfer Promenade -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 19826,13444 19837,13531 19807,13529
 Straßenbahntrasse	3nocross::ignrte 10765,16486 10699,16492 10620,16497
 Straßenbahntrasse	3nocross::ignrte 10620,16497 10533,16505 10458,16509
