@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.47 2008/11/16 23:45:14 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.55 2008/11/19 20:28:05 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.47 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.55 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -249,6 +249,9 @@ sub add_button {
 	      ],
 	      [Button => "Current search in local bbbike.cgi",
 	       -command => sub { current_search_in_bbbike_cgi() },
+	      ],
+	      [Button => "Street name experiment",
+	       -command => sub { street_name_experiment() },
 	      ],
 	      "-",
 	      [Cascade => "Rare or old", -menu => $rare_or_old_menu],
@@ -685,12 +688,37 @@ sub current_search_in_bbbike_cgi {
 #
 # currently only executable using
 #    SRTShortcuts::street_name_experiment()
-# in ptksh
+# in ptksh or using the SRTShortcuts menu
+#
+# Known problems:
+# - Overlapping street labels
+# - Street labels should probably be on the street, not over (European style!).
+#   On the other hand, it could be better the current way, because additional
+#   map signatures (quality, vorfahrt etc.) are not obscured.
+# - Tk's canvas does not deal correctly with rotated fonts, as the bbox
+#   calculation is wrong. This is sometimes visible when scrolling or parts
+#   of the canvas were obscured. Forcing a redisplay somehow helps.
+# - Zooming does not force a recalculation of labels (possible solution:
+#   see lazy drawing below)
+# Minor problems:
+# - The angle has to be normalized in 5° steps, otherwise the calculation would
+#   take too long. Maybe a smaller angle could be used, or this restriction
+#   removed completely with lazy drawing (see below)
+# - Mathematical background/explanation for reversing street names is missing
+# Improvement possibilities
+# - Lazy drawing, and deleting of invisible parts
+# - Splitting labels for long streets (e.g. "Oranienstr." -> "Oranien" "str.")
+#   and putting the first part at the beginning and the second part at the end
+#   (normal cartographic style)
+# - Thicker streets, so labels fit into the streets
+#
+my %font_char_length;
 sub street_name_experiment {
     require Tk::Config;
     require Strassen::Core;
     require Strassen::Strasse;
     require Strassen::Util;
+    use List::Util qw(sum); # we don't need pre-5.8 compat here
     use BBBikeUtil qw(pi);
     if ($Tk::Config::xlib !~ /-lXft\b/) {
 	main::status_message("Sorry, this experiment needs Tk with freetype support! Consider to recompile Tk with XFT=1", "die");
@@ -701,7 +729,8 @@ sub street_name_experiment {
     # XXX rot-Funktion auslagern (CanvasRotText)
     my $get_rot_matrix = sub {
 	my($r, $size) = @_;
-	$r = int(($r/pi)*36+0.25)/36*pi; # 5°-Schritte erzwingen
+#	$r = int(($r/pi)*36+0.25)/36*pi; # 5°-Schritte erzwingen, ansonsten wird es ZU langsam!
+	$r = int(($r/pi)*36+0.375)/36*pi; # XXX warum sieht das hier besser aus (z.B. Schwiebusser Str.)? Theorie?
 	if (abs($r - pi) < 0.1) {
 	    $r = 3.2;
 	} elsif (abs($r + pi) < 0.1) {
@@ -724,7 +753,7 @@ sub street_name_experiment {
     $s->init;
 #our $xxx=0;
     while(1) {
-#$xxx++;last if $xxx > 1000;
+#$xxx++;last if $xxx > 100;
 	my $use_bold;
 	my $rec = $s->next;
 	my $c = $rec->[Strassen::COORDS()];
@@ -746,34 +775,65 @@ sub street_name_experiment {
 	}
 	next if @$c < 2 || $c->[0] eq $c->[-1];
 
-	my(@coords) = (main::transpose(split(/,/, $c->[0])),
-		       main::transpose(split(/,/, $c->[-1]))
-		      );
+	my($x1,$y1,$x2,$y2) = (main::transpose(split(/,/, $c->[0])),
+			       main::transpose(split(/,/, $c->[-1]))
+			      );
+	my $using_font = "$font" . ($use_bold ? ":style=bold" : "");
+	$font_char_length{$using_font} ||= {};
+	my $char_length = $font_char_length{$using_font};
 	$name = Strasse::strip_bezirk($name);
-	my $length = Strassen::Util::strecke([@coords[0,1]], [@coords[2,3]]);
-	if ($length < length($name)*6) { # XXX approx. 6px per character in normal sans font
+	my $street_length = Strassen::Util::strecke([$x1,$y1], [$x2,$y2]);
+	#my $text_length = $main::c->fontMeasure($using_font, $name); # XXX exact, but MUCH slower
+	#my $text_length = 6*length($name); # XXX faster, inaccurate! See perl-bench/tkfontmeasure.pl for possible improvement
+	my $text_length = sum map { $char_length->{$_} ||= $main::c->fontMeasure($using_font, $_) } split //, $name;
+	if ($street_length < $text_length) {
 	    #warn "too long: '$name', street length is $length\n";
 	    next;
 	}
-	my $r = -atan2($coords[3]-$coords[1],
-		       $coords[2]-$coords[0]);
+
+	# find center of polyline
+	my $etappe_length = $street_length;
+	{
+	    # Note: working with untransposed coords here
+	    my $real_street_length = 0;
+	    my @c = map { [split /,/] } @$c;
+	    for my $i (1 .. $#c) {
+		$real_street_length += Strassen::Util::strecke($c[$i-1], $c[$i]);
+	    }
+	    my $current_street_length = 0;
+	    for my $i (1 .. $#c) {
+		$current_street_length += Strassen::Util::strecke($c[$i-1], $c[$i]);
+		if ($current_street_length > $real_street_length/2) {
+		    ($x1,$y1,$x2,$y2) = (main::transpose(@{ $c[$i-1] }),
+					 main::transpose(@{ $c[$i  ] })
+					);
+		    $etappe_length = Strassen::Util::strecke([$x1,$y1], [$x2,$y2]);
+		    last;
+		}
+	    }
+	}
+
+	my $r = -atan2($y2-$y1, $x2-$x1);
 	if (1) { $r = 2*pi - $r; }
-	if (($r > pi && $r < pi*1.5) ||
-	    ($r > 2.5*pi && $r < pi*3)) { # XXXX auf dem Kopf stehend! XXX mathematisch herausfinden, nicht empirisch!
-	    @coords[0,1,2,3] = @coords[2,3,0,1];
-	    $r = -atan2($coords[3]-$coords[1],
-			$coords[2]-$coords[0]);
+if ($name =~ /herkulesufer/i) { warn $r }
+	if (($r > pi && $r <= pi*1.5) ||
+	    ($r > 2.5*pi && $r <= pi*3)) { # XXXX auf dem Kopf stehend! XXX mathematisch herausfinden, nicht empirisch!
+	    ($x1,$y1,$x2,$y2) = ($x2,$y2,$x1,$y1);
+	    $r = -atan2($y2-$y1, $x2-$x1);
 	    if (1) { $r = 2*pi - $r; }
 	}
 	my $matrix = $get_rot_matrix->($r, 1);
 	#my $deg = $r*180/pi; print STDERR "$name $deg $matrix\n";
-	$main::c->createText(@coords[0, 1],
+
+	my $fac = ($etappe_length-$text_length)/(2*$etappe_length);
+	my($xm,$ym) = (int(($x2-$x1)*$fac+$x1), int(($y2-$y1)*$fac+$y1));
+	$main::c->createText($xm,$ym,
 			     -text => $name,
 			     -anchor => "sw",
-			     -font => "$font" . ($use_bold ? ":style=bold" : "") . ":$matrix",
+			     -font => $using_font . ":$matrix",
 			     -tags => [$tag, "s-label"],
 			    );
-	#$main::c->createLine(@coords, -arrow => "last", -tags => $tag);
+	#$main::c->createLine($x1,$y1,$x2,$y2, -arrow => "last", -tags => $tag);
     }
 }
 
