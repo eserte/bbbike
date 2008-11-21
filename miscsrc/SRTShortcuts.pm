@@ -719,7 +719,7 @@ sub street_name_experiment {
     require Strassen::Strasse;
     require Strassen::Util;
     use List::Util qw(sum); # we don't need pre-5.8 compat here
-    use BBBikeUtil qw(pi);
+    use BBBikeUtil qw(pi schnittwinkel);
     if ($Tk::Config::xlib !~ /-lXft\b/) {
 	main::status_message("Sorry, this experiment needs Tk with freetype support! Consider to recompile Tk with XFT=1", "die");
     }
@@ -805,12 +805,25 @@ sub street_name_experiment {
 	    for my $i (1 .. $#c) {
 		$current_street_length += Strassen::Util::strecke($c[$i-1], $c[$i]);
 		if ($current_street_length > $real_street_length/2) {
-		    # XXX This could be made better, by looking back
-		    # and forth for additional lines which does not
-		    # change the angle of the middle line. Bad
+		    # Look back and forth for additional lines which
+		    # does not change the angle of the middle line
+		    # (only by a tolerant value). This was an bad
 		    # example: Kochstr. (in Kreuzberg)
-		    ($x1,$y1,$x2,$y2) = (main::transpose(@{ $c[$i-1] }),
-					 main::transpose(@{ $c[$i  ] })
+		    use constant TOLERANT_ANGLE => 3/180*pi;
+		    my $begin_i = $i-1;
+		    my $end_i = $i;
+		    while($end_i < $#c) {
+			my($deg, undef) = schnittwinkel(@{ $c[$i-1] }, @{ $c[$i] }, @{ $c[$end_i+1] });
+			last if ($deg > TOLERANT_ANGLE);
+			$end_i++;
+		    }
+		    while($begin_i > 0) {
+			my($deg, undef) = schnittwinkel(@{ $c[$begin_i-1] }, @{ $c[$i-1] }, @{ $c[$i] });
+			last if ($deg > TOLERANT_ANGLE);
+			$begin_i--;
+		    }
+		    ($x1,$y1,$x2,$y2) = (main::transpose(@{ $c[$begin_i] }),
+					 main::transpose(@{ $c[$end_i] })
 					);
 		    $etappe_length = Strassen::Util::strecke([$x1,$y1], [$x2,$y2]);
 		    last;
