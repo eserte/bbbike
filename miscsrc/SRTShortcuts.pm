@@ -727,10 +727,11 @@ sub street_name_experiment {
     # XXX Taken from Tk::RotFont
     # Erstellt eine Rotationsmatrix für X11R6
     # XXX rot-Funktion auslagern (CanvasRotText)
+    #use constant ANGLE_STEPS => 10;
+    use constant ANGLE_STEPS => 5;
     my $get_rot_matrix = sub {
 	my($r, $size) = @_;
-#	$r = int(($r/pi)*36+0.25)/36*pi; # 5°-Schritte erzwingen, ansonsten wird es ZU langsam!
-	$r = int(($r/pi)*36+0.375)/36*pi; # XXX warum sieht das hier besser aus (z.B. Schwiebusser Str.)? Theorie?
+	$r = int(($r/pi)*((360+ANGLE_STEPS/2)/ANGLE_STEPS))/(360/ANGLE_STEPS)*pi; # ANGLE_STEPS°-Schritte erzwingen, um den X-Server zu entlasten
 	if (abs($r - pi) < 0.1) {
 	    $r = 3.2;
 	} elsif (abs($r + pi) < 0.1) {
@@ -804,6 +805,10 @@ sub street_name_experiment {
 	    for my $i (1 .. $#c) {
 		$current_street_length += Strassen::Util::strecke($c[$i-1], $c[$i]);
 		if ($current_street_length > $real_street_length/2) {
+		    # XXX This could be made better, by looking back
+		    # and forth for additional lines which does not
+		    # change the angle of the middle line. Bad
+		    # example: Kochstr. (in Kreuzberg)
 		    ($x1,$y1,$x2,$y2) = (main::transpose(@{ $c[$i-1] }),
 					 main::transpose(@{ $c[$i  ] })
 					);
@@ -815,7 +820,6 @@ sub street_name_experiment {
 
 	my $r = -atan2($y2-$y1, $x2-$x1);
 	if (1) { $r = 2*pi - $r; }
-if ($name =~ /herkulesufer/i) { warn $r }
 	if (($r > pi && $r <= pi*1.5) ||
 	    ($r > 2.5*pi && $r <= pi*3)) { # XXXX auf dem Kopf stehend! XXX mathematisch herausfinden, nicht empirisch!
 	    ($x1,$y1,$x2,$y2) = ($x2,$y2,$x1,$y1);
@@ -833,7 +837,7 @@ if ($name =~ /herkulesufer/i) { warn $r }
 			     -font => $using_font . ":$matrix",
 			     -tags => [$tag, "s-label"],
 			    );
-	#$main::c->createLine($x1,$y1,$x2,$y2, -arrow => "last", -tags => $tag);
+	#$main::c->createLine($x1,$y1,$x2,$y2, -arrow => "last", -tags => $tag);$main::c->createLine($xm,$ym,$xm,$ym+1, -capstyle=>"round",-width=>4, -tags => $tag);
     }
 }
 
