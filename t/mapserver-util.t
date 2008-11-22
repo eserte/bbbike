@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver-util.t,v 1.7 2007/07/14 15:29:58 eserte Exp $
+# $Id: mapserver-util.t,v 1.8 2008/11/22 21:02:14 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -24,7 +24,7 @@ use FindBin;
 use lib ("$FindBin::RealBin",
 	 "$FindBin::RealBin/..",
 	);
-use BBBikeTest;
+use BBBikeTest qw(get_std_opts $do_xxx $cgidir);
 
 use Getopt::Long;
 
@@ -33,7 +33,11 @@ if (!GetOptions(get_std_opts("cgidir", "xxx"),
     die "usage: $0 [-cgidir url] [-xxx]";
 }
 
-plan tests => 99;
+if ($do_xxx) {
+    Test::More->import(qw(no_plan));
+} else {
+    plan tests => 99;
+}
 
 sub get_agent {
     my $agent = WWW::Mechanize->new;
@@ -44,6 +48,7 @@ sub get_agent {
 
 sub is_on_mapserver_page {
     my($agent, $for) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
     like($agent->response->request->uri, qr{(/mapserv.cgi|cgi-bin/mapserv)}, "Show mapserver output for $for");
 
     my(@images) = $agent->find_all_images;
@@ -57,6 +62,7 @@ sub is_on_mapserver_page {
     }
 }
 
+goto XXX if $do_xxx;
 
 {
     my $agent = get_agent();
@@ -74,7 +80,7 @@ sub is_on_mapserver_page {
     is_on_mapserver_page($agent, "param style really works");
 }
 
-{
+XXX: {
     my $agent = get_agent();
     my $url = $cgidir . "/mapserver_address.cgi";
     $agent->get($url);
@@ -133,9 +139,13 @@ sub is_on_mapserver_page {
     like($agent->uri, qr{/mapserver_address.cgi}, "Multiple matches, same address");
     like($agent->content, qr{Mehrere Treffer}, 'Expected "multiple ..." content for Funkturm');
 
-    $agent->submit_form(form_number => 1,
-			fields => {'coords', 'Funkturm (Plätze)'},
-		       );
+    {
+	my $form = $agent->form_number(1);
+	my $input = $form->find_input('coords','radio');
+	$agent->submit_form(form_number => 1,
+			    fields => {'coords', ($input->possible_values)[0]}, # This is probably 'Funkturm (Plätze)'
+			   );
+    }
     is_on_mapserver_page($agent, "fulltext term");
 
     $agent->back();

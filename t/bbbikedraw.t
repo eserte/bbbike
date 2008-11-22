@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.39 2008/09/29 19:41:10 eserte Exp $
+# $Id: bbbikedraw.t,v 1.40 2008/11/22 21:17:47 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -42,6 +42,13 @@ BEGIN {
 	print "1..0 # skip: no Test, Time::HiRes and/or Image::Info modules\n";
 	exit;
     }
+
+#XXX Use lightning-fast Image::Info::SVG module
+#XXX This will hopefully be default some day in Image::Info
+#XXX Warn intentionally (redefined) to not forget this stuff.
+if (eval { require "/home/e/eserte/devel/Image_Info_SVG_LibXML.pm" }) {
+    Image::Info::SVG::LibXML::_as_default();
+}
 
     @modules = qw(GD/png GD/gif GD/jpeg
 		  GD::SVG SVG

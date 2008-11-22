@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.64 2008/02/11 21:29:35 eserte Exp eserte $
+# $Id: GD.pm,v 1.65 2008/11/22 11:58:45 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Strassen;
 use Carp qw(confess);
 
 use vars qw($gd_version $VERSION $DEBUG @colors %color %outline_color %width
-	    $TTF_STREET $TTF_CITY $TTF_TITLE);
+	    $TTF_STREET $TTF_CITY $TTF_TITLE $TTF_SCALE);
 BEGIN { @colors =
          qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
 	    $darkblue $lightblue $rose $black $darkgrey $lightgreen);
@@ -40,7 +40,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.64 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.65 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush, %thickness, %outline_thickness);
 
@@ -141,8 +141,11 @@ sub init {
 	local $^W = 1;
 	$TTF_STREET ||= $self->search_ttf_font
 	    ([
+	      '/usr/local/lib/X11/fonts/ttf/LucidaSansRegular.ttf',
 	      '/usr/X11R6/lib/X11/fonts/ttf/LucidaSansRegular.ttf',
+	      '/usr/local/lib/X11/fonts/bitstream-vera/Vera.ttf',
 	      '/usr/X11R6/lib/X11/fonts/bitstream-vera/Vera.ttf',
+	      '/usr/local/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # found on Debian
 	      '/var/www/domains/radzeit.de/www/public/mapserver/brb/fonts/LucidaSansRegular.ttf', # private @ radzeit
@@ -150,8 +153,11 @@ sub init {
 
 	$TTF_CITY ||= $self->search_ttf_font
 	    ([
+	      '/usr/local/lib/X11/fonts/Type1/lcdxsr.pfa',
 	      '/usr/X11R6/lib/X11/fonts/Type1/lcdxsr.pfa',
+	      '/usr/local/lib/X11/fonts/bitstream-vera/Vera.ttf',
 	      '/usr/X11R6/lib/X11/fonts/bitstream-vera/Vera.ttf',
+	      '/usr/local/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # found on Debian
 	      '/var/www/domains/radzeit.de/www/public/mapserver/brb/fonts/luxisr.ttf' # private @ radzeit
@@ -159,9 +165,18 @@ sub init {
 
 	$TTF_TITLE ||= $self->search_ttf_font
 	    ([
+	      '/usr/local/lib/X11/fonts/TTF/luxisb.ttf',
 	      '/usr/X11R6/lib/X11/fonts/TTF/luxisb.ttf',
+	      '/usr/local/lib/X11/fonts/bitstream-vera/VeraBd.ttf',
 	      '/usr/X11R6/lib/X11/fonts/bitstream-vera/VeraBd.ttf',
 	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed-Bold.ttf', # found on Debian
+	      $TTF_CITY,
+	     ]);
+
+	$TTF_SCALE ||= $self->search_ttf_font
+	    ([
+	      '/usr/local/lib/X11/fonts/TTF/luxirr.ttf',
+	      '/usr/X11R6/lib/X11/fonts/TTF/luxirr.ttf',
 	      $TTF_CITY,
 	     ]);
     }
@@ -681,7 +696,9 @@ sub draw_map {
     }
 
     if (ref $self->{StrLabel} &&
-	(defined &GD::Image::stringFT || defined &GD::Image::stringTTF)) {
+#	(defined &GD::Image::stringFT || defined &GD::Image::stringTTF)
+	($im->can('stringFT') || $im->can('stringTTF'))
+       ){
 	eval {
 	    my $ttf = $TTF_STREET;
 	    local $^W = -r $ttf; # no warnings if ttf could not be found...
@@ -690,7 +707,8 @@ sub draw_map {
 	    $Tk::RotFont::NO_X11 = 1;
 	    require Tk::RotFont;
 
-	    my $ft_method = defined &GD::Image::stringFT ? 'stringFT' : 'stringTTF';
+	    #my $ft_method = defined &GD::Image::stringFT ? 'stringFT' : 'stringTTF';
+	    my $ft_method = $im->can('stringFT') ? 'stringFT' : 'stringTTF';
 
 	    my $draw_sub = sub {
 		my($x,$y) = &$transpose($_[0], $_[1]);
@@ -849,7 +867,7 @@ sub draw_scale {
 
 sub _draw_scale_label {
     my($self, $x, $y, $string, $color) = @_;
-    my $ttf = "/usr/X11R6/lib/X11/fonts/TTF/luxirr.ttf"; # XXX do not hardcode!
+    my $ttf = $TTF_SCALE;
     my $im = $self->{Image};
     if ($self->{GD_Image}->can("stringFT") && -r $ttf) {
 	# XXX why +8?

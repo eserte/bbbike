@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.32 2007/12/30 11:01:20 eserte Exp $
+# $Id: mapserver_address.cgi,v 1.33 2008/11/22 20:44:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -584,7 +584,14 @@ sub file_to_icon {
 	 wasserumland => 'wasser',
 	 wasserumland2 => 'wasser',
 	);
-    exists $map{$file} ? $map{$file} . ".gif" : undef;
+    # XXX cache results?
+    if (exists $map{$file}) {
+	my $png = $map{$file} . ".png";
+	return $png if -r "$BBBIKE_ROOT/images/$png";
+	my $gif = $map{$file} . ".gif";
+	return $gif if -r "$BBBIKE_ROOT/images/$gif";
+    }
+    return undef;
 }
 
 sub pathinfo_to_param {
