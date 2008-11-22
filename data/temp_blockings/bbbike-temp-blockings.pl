@@ -12767,8 +12767,8 @@ userdel	2::inwork 45864,72724 46253,72339 46555,72293 46770,72248 47266,71628 48
 EOF
      },
      { from  => 1221948000, # 2008-09-21 00:00
-       until => 1228086000, # 2008-12-01 00:00
-       text  => 'L 294 Ruhlsdorfer Str. OD Biesenthal, zw. Lanker Str. und Akazienallee Straßenneubau Vollsperrung 22.09.2008-30.11.2008 ',
+       until => 1229295600, # 2008-12-15 00:00
+       text  => 'L 294 Ruhlsdorfer Str. OD Biesenthal, zw. Lanker Str. und Akazienallee Straßenneubau Vollsperrung 22.09.2008-14.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 24189,41639 24142,41045 24248,40620 24354,40323
@@ -12890,9 +12890,9 @@ EOF
 userdel	1::inwork 11574,11594 11324,11689 11242,11720
 EOF
      },
-     { from  => 1226267396, # 2008-11-09 22:49
+     { from  => 1227351275, # 2008-11-22 11:54
        until => 1235948399, # 2009-03-01 23:59
-       text  => 'Ordensmeisterstr. (Tempelhof) in beiden Richtung zwischen Wenckebachstr. und Tempelhofer Damm Baustelle, Fahrtrichtung gesperrt (bis Anfang 03.2009)',
+       text  => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Baustelle, Straße vollständig gesperrt (bis Anfang 03.2009)',
        type  => 'gesperrt',
        source_id => 'IM_010086',
        data  => <<EOF,
@@ -13021,6 +13021,64 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 1009,28662 1020,28712 1078,28830 1124,28923 1234,29120 1304,29256 1366,29416
+EOF
+     },
+     { from  => 1227353475, # 2008-11-22 12:31
+       until => 1228085999, # 2008-11-30 23:59
+       text  => 'Invalidenstr. (Mitte) in beiden Richtungen zwischen Am Nordbahnhof und Chausseestr. Baustelle, Straße vollständig gesperrt (bis Ende 11.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_010718',
+       data  => <<EOF,
+userdel	2::inwork 9076,13915 8935,13844
+EOF
+     },
+     { from  => 1227353511, # 2008-11-22 12:31
+       until => 1230159600, # 2008-12-25 00:00
+       text  => 'Platz der Vereinten Nationen in beiden Richtungen Veranstaltung, Straße vollständig gesperrt (bis 24.12.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_010662',
+       data  => <<EOF,
+userdel	2::inwork 12180,13292 12128,13079
+EOF
+     },
+     { from  => 1228345200, # 2008-12-04 00:00
+       until => 1228950000, # 2008-12-11 00:00
+       text  => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 05.12.2008-10.12.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 41424,91331 41387,91306 41361,91289
+EOF
+     },
+     { from  => 1231455600, # 2009-01-09 00:00
+       until => 1231714800, # 2009-01-12 00:00
+       text  => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 10.01.2009-11.01.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 41424,91331 41387,91306 41361,91289
+EOF
+     },
+     { from  => 1227394800, # 2008-11-23 00:00
+       until => 1227913200, # 2008-11-29 00:00
+       text  => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 24.11.2008-28.11.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 41424,91331 41387,91306 41361,91289
+EOF
+     },
+     { from  => 1227135600, # 2008-11-20 00:00
+       until => 1227567600, # 2008-11-25 00:00
+       text  => 'L 053 Calauer Str. OD Großräschen, von IFA-Park bis Felix-Spiro-Str. Deckeneinbau Vollsperrung 21.11.2008-24.11.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 53787,-90242 54017,-89128
+EOF
+     },
+     { from  => 1229122800, # 2008-12-13 00:00
+       until => 1229295600, # 2008-12-15 00:00
+       text  => 'L 071 Markt OL Schönewalde, zw. Herzberger Str. und Gartenstr. Weihnachtsmarkt Vollsperrung 14.12.2008-14.12.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -575,-65978 60,-66035
 EOF
      },
     );

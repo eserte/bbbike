@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.55 2008/11/19 20:28:05 eserte Exp eserte $
+# $Id: SRTShortcuts.pm,v 1.58 2008/11/21 23:10:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.55 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.58 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -692,166 +692,206 @@ sub current_search_in_bbbike_cgi {
 #
 # Known problems:
 # - Overlapping street labels
-# - Street labels should probably be on the street, not over (European style!).
-#   On the other hand, it could be better the current way, because additional
-#   map signatures (quality, vorfahrt etc.) are not obscured.
 # - Tk's canvas does not deal correctly with rotated fonts, as the bbox
 #   calculation is wrong. This is sometimes visible when scrolling or parts
 #   of the canvas were obscured. Forcing a redisplay somehow helps.
 # - Zooming does not force a recalculation of labels (possible solution:
 #   see lazy drawing below)
+# - Printing of rotated fonts does not work at all. Probably best is for
+#   now to hide all street labels before printing and restore them after
 # Minor problems:
 # - The angle has to be normalized in 5° steps, otherwise the calculation would
 #   take too long. Maybe a smaller angle could be used, or this restriction
 #   removed completely with lazy drawing (see below)
 # - Mathematical background/explanation for reversing street names is missing
 # Improvement possibilities
-# - Lazy drawing, and deleting of invisible parts
+# - Lazy drawing, and deleting of invisible parts. This would also help in
+#   reducing the huge memory consumption in the Xorg server.
 # - Splitting labels for long streets (e.g. "Oranienstr." -> "Oranien" "str.")
 #   and putting the first part at the beginning and the second part at the end
 #   (normal cartographic style)
 # - Thicker streets, so labels fit into the streets
 #
+use constant LABELS_INSIDE_STREET => 1; # yes/no
+use constant STREET_NAME_EXPERIMENT_DEBUGGING => 0; # yes/no
 my %font_char_length;
 sub street_name_experiment {
     require Tk::Config;
     require Strassen::Core;
+    require Strassen::MultiStrassen;
     require Strassen::Strasse;
     require Strassen::Util;
-    use List::Util qw(sum); # we don't need pre-5.8 compat here
-    use BBBikeUtil qw(pi schnittwinkel);
+    use BBBikeUtil qw(pi schnittwinkel sum);
+    use VectorUtil qw(move_point_orthogonal);
     if ($Tk::Config::xlib !~ /-lXft\b/) {
 	main::status_message("Sorry, this experiment needs Tk with freetype support! Consider to recompile Tk with XFT=1", "die");
     }
 
-    # XXX Taken from Tk::RotFont
-    # Erstellt eine Rotationsmatrix für X11R6
-    # XXX rot-Funktion auslagern (CanvasRotText)
-    #use constant ANGLE_STEPS => 10;
-    use constant ANGLE_STEPS => 5;
-    my $get_rot_matrix = sub {
-	my($r, $size) = @_;
-	$r = int(($r/pi)*((360+ANGLE_STEPS/2)/ANGLE_STEPS))/(360/ANGLE_STEPS)*pi; # ANGLE_STEPS°-Schritte erzwingen, um den X-Server zu entlasten
-	if (abs($r - pi) < 0.1) {
-	    $r = 3.2;
-	} elsif (abs($r + pi) < 0.1) {
-	    $r = -3.1;
-	}
-	my $mat;
-	my $a1 = $size*cos($r);
-	my $s1 = sin($r);
-	foreach ($a1, $size*$s1, $size*-$s1, $a1) {
-	    if ($mat) { $mat .= " " }
-	    $mat .= $_;
-	}
-	'matrix=' . $mat;
-    };
+    main::IncBusy($main::top);
+    ## XXX progress bar does not work --- hiding of dependent canvas does not work
+    #$main::progress->Init(-dependents => $main::c, -label => 'Street labels');
+    eval {
+	# half widths of street signatures
+	my $delta_HH = main::get_line_width('s-HH')/2;
+	my $delta_N  = main::get_line_width('s-N')/2;
 
-    my $font = "sans";
-    my $tag = "experiment-strname";
-    $main::c->delete($tag);
-    my $s = Strassen->new("strassen") || die "Can't open strassen";
-    $s->init;
-#our $xxx=0;
-    while(1) {
-#$xxx++;last if $xxx > 100;
-	my $use_bold;
-	my $rec = $s->next;
-	my $c = $rec->[Strassen::COORDS()];
-	last if !@$c;
-	my $name = $rec->[Strassen::NAME()];
-	$use_bold = 1if $rec->[Strassen::CAT()] =~ m{^(H|HH|B)$};
+	# XXX Taken from Tk::RotFont
+	# Erstellt eine Rotationsmatrix für freetype
+	# XXX rot-Funktion auslagern (CanvasRotText)
+	#use constant ANGLE_STEPS => 10;
+	use constant ANGLE_STEPS => 5;
+	my $get_rot_matrix = sub {
+	    my($r, $size) = @_;
+	    $r = int(($r/pi)*((360+ANGLE_STEPS/2)/ANGLE_STEPS))/(360/ANGLE_STEPS)*pi; # ANGLE_STEPS°-Schritte erzwingen, um den X-Server zu entlasten
+	    if (abs($r - pi) < 0.1) {
+		$r = 3.2;
+	    } elsif (abs($r + pi) < 0.1) {
+		$r = -3.1;
+	    }
+	    my $mat;
+	    my $a1 = $size*cos($r);
+	    my $s1 = sin($r);
+	    foreach ($a1, $size*$s1, $size*-$s1, $a1) {
+		if ($mat) { $mat .= " " }
+		$mat .= $_;
+	    }
+	    'matrix=' . $mat;
+	};
+
+	my $font = "sans";
+	my $tag = "experiment-strname";
+
+	my %font_metrics = $main::c->fontMetrics($font); # assume bold metrics are the same
+	my($ascent, $descent) = @font_metrics{qw(-ascent -descent)};
+
+	$main::c->delete($tag);
+	my $s = MultiStrassen->new("strassen", "fragezeichen") || die "Can't open strassen and/or fragezeichen";
+	$s->init;
+	#our $xxx=0;
+	#my $anzahl_eindeutig = $s->count; my $s_i = 0;
 	while(1) {
-	    my $peek = $s->peek;
-	    my $peek_c = $peek->[Strassen::COORDS()];
-	    if (!($peek->[Strassen::NAME()] eq $name &&
-		  $peek_c->[0] eq $c->[-1])) {
-		last;
-	    }
-	    push @$c, @{$peek_c}[1..$#$peek_c];
-	    if (!$use_bold) {
-		$use_bold = 1 if $peek->[Strassen::CAT()] =~ m{^(H|HH|B)$};
-	    }
-	    $s->next;
-	}
-	next if @$c < 2 || $c->[0] eq $c->[-1];
-
-	my($x1,$y1,$x2,$y2) = (main::transpose(split(/,/, $c->[0])),
-			       main::transpose(split(/,/, $c->[-1]))
-			      );
-	my $using_font = "$font" . ($use_bold ? ":style=bold" : "");
-	$font_char_length{$using_font} ||= {};
-	my $char_length = $font_char_length{$using_font};
-	$name = Strasse::strip_bezirk($name);
-	my $street_length = Strassen::Util::strecke([$x1,$y1], [$x2,$y2]);
-	#my $text_length = $main::c->fontMeasure($using_font, $name); # XXX exact, but MUCH slower
-	#my $text_length = 6*length($name); # XXX faster, inaccurate! See perl-bench/tkfontmeasure.pl for possible improvement
-	my $text_length = sum map { $char_length->{$_} ||= $main::c->fontMeasure($using_font, $_) } split //, $name;
-	if ($street_length < $text_length) {
-	    #warn "too long: '$name', street length is $length\n";
-	    next;
-	}
-
-	# find center of polyline
-	my $etappe_length = $street_length;
-	{
-	    # Note: working with untransposed coords here
-	    my $real_street_length = 0;
-	    my @c = map { [split /,/] } @$c;
-	    for my $i (1 .. $#c) {
-		$real_street_length += Strassen::Util::strecke($c[$i-1], $c[$i]);
-	    }
-	    my $current_street_length = 0;
-	    for my $i (1 .. $#c) {
-		$current_street_length += Strassen::Util::strecke($c[$i-1], $c[$i]);
-		if ($current_street_length > $real_street_length/2) {
-		    # Look back and forth for additional lines which
-		    # does not change the angle of the middle line
-		    # (only by a tolerant value). This was an bad
-		    # example: Kochstr. (in Kreuzberg)
-		    use constant TOLERANT_ANGLE => 3/180*pi;
-		    my $begin_i = $i-1;
-		    my $end_i = $i;
-		    while($end_i < $#c) {
-			my($deg, undef) = schnittwinkel(@{ $c[$i-1] }, @{ $c[$i] }, @{ $c[$end_i+1] });
-			last if ($deg > TOLERANT_ANGLE);
-			$end_i++;
-		    }
-		    while($begin_i > 0) {
-			my($deg, undef) = schnittwinkel(@{ $c[$begin_i-1] }, @{ $c[$i-1] }, @{ $c[$i] });
-			last if ($deg > TOLERANT_ANGLE);
-			$begin_i--;
-		    }
-		    ($x1,$y1,$x2,$y2) = (main::transpose(@{ $c[$begin_i] }),
-					 main::transpose(@{ $c[$end_i] })
-					);
-		    $etappe_length = Strassen::Util::strecke([$x1,$y1], [$x2,$y2]);
+	    #$main::progress->Update($s_i/$anzahl_eindeutig) if ($s_i % 500 == 0);
+	    #$xxx++;last if $xxx > 100;
+	    my $use_bold;
+	    my $rec = $s->next;
+	    my $c = $rec->[Strassen::COORDS()];
+	    last if !@$c;
+	    my $name = $rec->[Strassen::NAME()];
+	    $use_bold = 1 if $rec->[Strassen::CAT()] =~ m{^(H|HH|B)$};
+	    # The same street continued? Without interruptions?
+	    while(1) {
+		my $peek = $s->peek;
+		my $peek_c = $peek->[Strassen::COORDS()];
+		if (!@$peek_c ||
+		    !($peek->[Strassen::NAME()] eq $name &&
+		      $peek_c->[0] eq $c->[-1])) {
 		    last;
 		}
+		push @$c, @{$peek_c}[1..$#$peek_c];
+		if (!$use_bold) {
+		    $use_bold = 1 if $peek->[Strassen::CAT()] =~ m{^(H|HH|B)$};
+		}
+		$s->next;
+	    }
+	    next if @$c < 2 || $c->[0] eq $c->[-1];
+
+	    my($x1,$y1,$x2,$y2) = (main::transpose(split(/,/, $c->[0])),
+				   main::transpose(split(/,/, $c->[-1]))
+				  );
+	    my $using_font = "$font" . ($use_bold ? ":style=bold" : "");
+	    $font_char_length{$using_font} ||= {};
+	    my $char_length = $font_char_length{$using_font};
+	    $name = Strasse::strip_bezirk($name);
+	    $name =~ s{:.*}{}; # strip fragezeichen/qualitaet description
+	    my $street_length = Strassen::Util::strecke([$x1,$y1], [$x2,$y2]);
+	    # fontMeasure is slow, so cache single character width, at the
+	    # expense of accuracy (kerning!)
+	    my $text_length = sum map { $char_length->{$_} ||= $main::c->fontMeasure($using_font, $_) } split //, $name;
+	    if ($street_length < $text_length) {
+		if (STREET_NAME_EXPERIMENT_DEBUGGING) {
+		    warn "too long: '$name', street length is $street_length\n";
+		}
+		next;
+	    }
+
+	    # find center of polyline
+	    my $etappe_length = $street_length;
+	    {
+		# Note: working with untransposed coords here
+		my $real_street_length = 0;
+		my @c = map { [split /,/] } @$c;
+		for my $i (1 .. $#c) {
+		    $real_street_length += Strassen::Util::strecke($c[$i-1], $c[$i]);
+		}
+		my $current_street_length = 0;
+		for my $i (1 .. $#c) {
+		    $current_street_length += Strassen::Util::strecke($c[$i-1], $c[$i]);
+		    if ($current_street_length > $real_street_length/2) {
+			# Look back and forth for additional lines which
+			# does not change the angle of the middle line
+			# (only by a tolerant value). This was an bad
+			# example: Kochstr. (in Kreuzberg). This may also
+			# lead to worse results, see Apostel-Paulus-Str.
+			use constant TOLERANT_ANGLE => 3/180*pi;
+			my $begin_i = $i-1;
+			my $end_i = $i;
+			while($end_i < $#c) {
+			    my($deg, undef) = schnittwinkel(@{ $c[$i-1] }, @{ $c[$i] }, @{ $c[$end_i+1] });
+			    last if ($deg > TOLERANT_ANGLE);
+			    $end_i++;
+			}
+			while($begin_i > 0) {
+			    my($deg, undef) = schnittwinkel(@{ $c[$begin_i-1] }, @{ $c[$i-1] }, @{ $c[$i] });
+			    last if ($deg > TOLERANT_ANGLE);
+			    $begin_i--;
+			}
+			($x1,$y1,$x2,$y2) = (main::transpose(@{ $c[$begin_i] }),
+					     main::transpose(@{ $c[$end_i] })
+					    );
+			$etappe_length = Strassen::Util::strecke([$x1,$y1], [$x2,$y2]);
+			last;
+		    }
+		}
+	    }
+
+	    my $r = -atan2($y2-$y1, $x2-$x1);
+	    if (1) { $r = 2*pi - $r; }
+	    if (($r > pi && $r <= pi*1.5) ||
+		($r > 2.5*pi && $r <= pi*3)) { # XXXX auf dem Kopf stehend! XXX mathematisch herausfinden, nicht empirisch!
+		($x1,$y1,$x2,$y2) = ($x2,$y2,$x1,$y1);
+		$r = -atan2($y2-$y1, $x2-$x1);
+		if (1) { $r = 2*pi - $r; }
+	    }
+	    my $matrix = $get_rot_matrix->($r, 1);
+	    #my $deg = $r*180/pi; print STDERR "$name $deg $matrix\n";
+
+	    my $fac = ($etappe_length-$text_length)/(2*$etappe_length);
+	    my($xm,$ym) = (int(($x2-$x1)*$fac+$x1), int(($y2-$y1)*$fac+$y1));
+	    if (LABELS_INSIDE_STREET) {
+		# Street labels should be on the street, European style! So
+		# move the labels a little bit towards the center of the
+		# street. On the other hand, this may obscure additional map
+		# signatures (lik equality, vorfahrt etc.).
+		my $delta = $descent + $ascent/2 - ($use_bold ? $delta_HH : $delta_N);
+		($xm,$ym) = move_point_orthogonal($xm,$ym,$x1,$y1,$x2,$y2,$delta);
+	    }
+	    $main::c->createText($xm,$ym,
+				 -text => $name,
+				 -anchor => "sw",
+				 -font => $using_font . ":$matrix",
+				 -tags => [$tag, "s-label"],
+				);
+	    if (STREET_NAME_EXPERIMENT_DEBUGGING) {
+		$main::c->createLine($x1,$y1,$x2,$y2, -arrow => "last", -tags => $tag);
+		$main::c->createLine($xm,$ym,$xm,$ym+1, -capstyle=>"round",-width=>4, -tags => $tag);
 	    }
 	}
-
-	my $r = -atan2($y2-$y1, $x2-$x1);
-	if (1) { $r = 2*pi - $r; }
-	if (($r > pi && $r <= pi*1.5) ||
-	    ($r > 2.5*pi && $r <= pi*3)) { # XXXX auf dem Kopf stehend! XXX mathematisch herausfinden, nicht empirisch!
-	    ($x1,$y1,$x2,$y2) = ($x2,$y2,$x1,$y1);
-	    $r = -atan2($y2-$y1, $x2-$x1);
-	    if (1) { $r = 2*pi - $r; }
-	}
-	my $matrix = $get_rot_matrix->($r, 1);
-	#my $deg = $r*180/pi; print STDERR "$name $deg $matrix\n";
-
-	my $fac = ($etappe_length-$text_length)/(2*$etappe_length);
-	my($xm,$ym) = (int(($x2-$x1)*$fac+$x1), int(($y2-$y1)*$fac+$y1));
-	$main::c->createText($xm,$ym,
-			     -text => $name,
-			     -anchor => "sw",
-			     -font => $using_font . ":$matrix",
-			     -tags => [$tag, "s-label"],
-			    );
-	#$main::c->createLine($x1,$y1,$x2,$y2, -arrow => "last", -tags => $tag);$main::c->createLine($xm,$ym,$xm,$ym+1, -capstyle=>"round",-width=>4, -tags => $tag);
-    }
+    };
+    my $err = $@;
+    #$main::progress->Finish;
+    main::DecBusy($main::top);
+    main::status_message($err, "die") if $err;
+	
 }
 
 1;

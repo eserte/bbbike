@@ -683,8 +683,8 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1228086000,
-         'text' => 'L 294 Ruhlsdorfer Str. OD Biesenthal, zw. Lanker Str. und Akazienallee Straßenneubau Vollsperrung 22.09.2008-30.11.2008 ',
+         'until' => 1229295600,
+         'text' => 'L 294 Ruhlsdorfer Str. OD Biesenthal, zw. Lanker Str. und Akazienallee Straßenneubau Vollsperrung 22.09.2008-14.12.2008 ',
          'from' => 1221948000,
          'id' => 1507,
          'data' => 'userdel	q4::inwork 24189,41639 24142,41045 24248,40620 24354,40323
@@ -734,8 +734,8 @@ push @temp_blocking,
        {
          'source_id' => 'IM_010086',
          'until' => 1235948399,
-         'text' => 'Ordensmeisterstr. (Tempelhof) in beiden Richtung zwischen Wenckebachstr. und Tempelhofer Damm Baustelle, Fahrtrichtung gesperrt (bis Anfang 03.2009)',
-         'from' => 1226267396,
+         'text' => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Baustelle, Straße vollständig gesperrt (bis Anfang 03.2009)',
+         'from' => 1227351275,
          'id' => 1522,
          'data' => 'userdel	2::inwork 9357,5601 9147,5534
 ',
@@ -810,15 +810,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1227308400,
-         'text' => 'L 053 Seestr., Calauer Str. OD Großräschen, zw. Chransdorfer Str. und Berliner Str. Kanal- und Straßenbau Vollsperrung 04.11.2008-21.11.2008 ',
-         'from' => 1225666800,
-         'id' => 1533,
-         'data' => 'userdel	q4::inwork 54017,-89128 53787,-90242
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1262300400,
          'text' => 'L 060 Schipkau-Lichterfeld zw. Lichterfeld und Lauchhammer-Nord grundhafter Straßenbau Vollsperrung 01.05.2006-31.12.2009 ',
@@ -845,6 +837,72 @@ push @temp_blocking,
          'data' => 'userdel	2::inwork -46590,45423 -46394,45253 -45792,44692 -45553,44122 -45441,43630 -45367,42665
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'IM_010718',
+         'until' => 1228085999,
+         'text' => 'Invalidenstr. (Mitte) in beiden Richtungen zwischen Am Nordbahnhof und Chausseestr. Baustelle, Straße vollständig gesperrt (bis Ende 11.2008)',
+         'from' => 1227353475,
+         'id' => 1538,
+         'data' => 'userdel	2::inwork 9076,13915 8935,13844
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_010662',
+         'until' => 1230159600,
+         'text' => 'Platz der Vereinten Nationen in beiden Richtungen Veranstaltung, Straße vollständig gesperrt (bis 24.12.2008)',
+         'from' => 1227353511,
+         'id' => 1539,
+         'data' => 'userdel	2::inwork 12180,13292 12128,13079
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1228950000,
+         'text' => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 05.12.2008-10.12.2008 ',
+         'from' => 1228345200,
+         'id' => 1540,
+         'data' => 'userdel	2::inwork 41424,91331 41387,91306 41361,91289
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1231714800,
+         'text' => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 10.01.2009-11.01.2009 ',
+         'from' => 1231455600,
+         'id' => 1541,
+         'data' => 'userdel	2::inwork 41424,91331 41387,91306 41361,91289
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1227913200,
+         'text' => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 24.11.2008-28.11.2008 ',
+         'from' => 1227394800,
+         'id' => 1542,
+         'data' => 'userdel	2::inwork 41424,91331 41387,91306 41361,91289
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1227567600,
+         'text' => 'L 053 Calauer Str. OD Großräschen, von IFA-Park bis Felix-Spiro-Str. Deckeneinbau Vollsperrung 21.11.2008-24.11.2008 ',
+         'from' => 1227135600,
+         'id' => 1543,
+         'data' => 'userdel	q4::inwork 53787,-90242 54017,-89128
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1229295600,
+         'text' => 'L 071 Markt OL Schönewalde, zw. Herzberger Str. und Gartenstr. Weihnachtsmarkt Vollsperrung 14.12.2008-14.12.2008 ',
+         'from' => 1229122800,
+         'id' => 1544,
+         'data' => 'userdel	q4::inwork -575,-65978 60,-66035
+',
+         'type' => 'handicap'
        }
      
 );

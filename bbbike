@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.388 2008/11/16 17:35:45 eserte Exp $
+# $Id: bbbike,v 3.388 2008/11/16 17:35:45 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -5988,8 +5988,8 @@ sub define_item_attribs {
 	    fz route comm),
 	 (map { "comm-$_" } @comments_types),
 	 qw(comm-route-label-bg comm-route-label qs hs ql hl mount nl delnet
-	    O o p pl-fg lsas lsa-bg lsa-fg lsas-t
-	    vf-fg pp kn-bg kn-fg ki-bg ki-fg rest-bg rest-fg
+	    O o p pl-fg vf-fg lsas lsa-bg lsa-fg lsas-t
+	    pp kn-bg kn-fg ki-bg ki-fg rest-bg rest-fg
 	    s-label-bg sBAB-label-bg s-label sBAB-label l-label-bg l-label
 	    personal-fg personal-label ovl
 	    gpsanimrect zoomrect),

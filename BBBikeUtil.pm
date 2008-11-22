@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeUtil.pm,v 1.30 2008/04/23 20:17:52 eserte Exp $
+# $Id: BBBikeUtil.pm,v 1.31 2008/11/21 22:08:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeUtil;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.31 $ =~ /(\d+)\.(\d+)/);
 
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
@@ -28,7 +28,7 @@ require Exporter;
 	     cp850_iso iso_cp850 nil
 	     kmh2ms
 	     STAT_MODTIME);
-@EXPORT_OK = qw(min max first ms2kmh clone);
+@EXPORT_OK = qw(min max first sum ms2kmh clone);
 
 use constant STAT_MODTIME => 9;
 
@@ -232,6 +232,7 @@ BEGIN {
 	*min = \&List::Util::min;
 	*max = \&List::Util::max;
 	*first = \&List::Util::first;
+	*sum = \&List::Util::sum;
     } else {
 	*min = sub {
 	    my $min;
@@ -253,6 +254,11 @@ BEGIN {
 		return $_ if &{$code}();
 	    }
 	    undef;
+	};
+	*sum = sub (@) {
+	    my $sum = shift;
+	    for (1..$#_) { $sum += $_[$_] }
+	    $sum;
 	};
     }
 }
