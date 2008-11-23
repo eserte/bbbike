@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.388 2008/11/16 17:35:45 eserte Exp eserte $
+# $Id: bbbike,v 3.389 2008/11/23 17:48:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -241,7 +241,7 @@ eval 'use BBBikeXS 0.09';
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.388 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.389 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -5949,7 +5949,7 @@ sub define_item_attribs {
 
     %tag_group =		# group related tags (for stacking)
 	('str_s' => ['s-out', 'gr', 'rw',
-		     's-NN', 's-N', 's-H', 's-HH', 's-B', 's-BAB', 'sBAB-BAB',
+		     's-NN', 's-N', 's-H', 's-HH', 's-B', 's-BAB', 'sBAB-BAB', 'sBAB-fg',
 		     'comm', (map { "comm-$_" } @comments_types),
 		     'nl', 'qs', 'hs', 'mount',
 		     's-label-bg', 'sBAB-label-bg', 's-label', 'sBAB-label',
@@ -19074,14 +19074,14 @@ sub IncBusy {
 	    for my $t ($top, values(%toplevel)) {
 		next if !Tk::Exists($t);
 		next if $args{-except} && $args{-except}{$t};
-		my $io = (Tk::Exists($t->{'BusyIO'})
-			  ? $t->{'BusyIO'}
+		my $io = (Tk::Exists($t->{'BBBikeBusyIO'})
+			  ? $t->{'BBBikeBusyIO'}
 			  : $t->InputO);
 		$io->configure(-cursor => (defined $args{-cursor} ? $args{-cursor} : 'watch'));
 		$io->place('-x' => 0, '-y' => 0, -relwidth => 1, -relheight => 1);
 		$io->idletasks;
-		$t->{'Busy'} = 1;
-		$t->{'BusyIO'} = $io;
+		$t->{'BBBikeBusy'} = 1;
+		$t->{'BBBikeBusyIO'} = $io;
 	    }
 	} else {
 	    # see "Busy" changes in TkChange.pm
@@ -19104,13 +19104,13 @@ sub DecBusy {
     return if !Tk::Exists($top);
     $top->{'BusyCount'}-- if $top->{'BusyCount'} > 0;
     if ($top->{'BusyCount'} < 1) {
-	if ($top->{'BusyIO'}) {
+	if ($top->{'BBBikeBusyIO'}) {
 	    for my $t ($top, values(%toplevel)) {
 		next if !Tk::Exists($t) ||
-		        !Tk::Exists($t->{'BusyIO'});
-		$t->{'BusyIO'}->placeForget;
+		        !Tk::Exists($t->{'BBBikeBusyIO'});
+		$t->{'BBBikeBusyIO'}->placeForget;
 	    }
-	    delete $top->{'Busy'};
+	    delete $top->{'BBBikeBusy'};
 	} else {
 	    $top->Unbusy;
 	}

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.39 2008/01/21 23:21:40 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.40 2008/11/23 14:11:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.39 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.40 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -369,7 +369,7 @@ sub BBBikeHeavy::layer_editor {
 		    {Image => undef,
 		     Text => $layer_name,
 		     Visible => $val,
-		     Data => {Tags => ["$abk-fg", "$abk-img", "$abk-label"],
+		     Data => {Tags => [$abk, "$abk-fg", "$abk-img", "$abk-label"],
 			      Type => 'p',
 			      Subtype => $abk,
 			     }

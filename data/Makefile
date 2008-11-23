@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.201 2008/11/07 22:46:03 eserte Exp $
+# $Id: Makefile,v 2.201 2008/11/07 22:46:03 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1072,17 +1072,17 @@ check-disabled:	.check_label
 # XXX Information duplicated in Strassen::Cat
 GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+)?)(:inwork)?(::(igndisp|ignrte))?$$'
 
-.check_gesperrt1:	gesperrt .strassen.tmp landstrassen landstrassen2
-	$(CHECK_POINTS) -catrx $(GESPERRT_CATRX) gesperrt .strassen.tmp landstrassen landstrassen2
+.check_gesperrt1:	gesperrt .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) -catrx $(GESPERRT_CATRX) gesperrt .strassen.tmp landstrassen landstrassen2 fragezeichen
 	@touch $@
 
 # Second check is necessary because of the 3nocross entries!
 # For the second check we could do a "grepstrassen -cat 3nocross" first
-.check_gesperrt2:	gesperrt strassen landstrassen landstrassen2
+.check_gesperrt2:	gesperrt strassen landstrassen landstrassen2 fragezeichen
 	$(CHECK_NEIGHBOUR) -type standard -data gesperrt \
-		-against strassen -against landstrassen -against landstrassen2
+		-against strassen -against landstrassen -against landstrassen2 -against fragezeichen
 	$(CHECK_NEIGHBOUR) -type standard -data gesperrt-orig \
-		-against strassen -against landstrassen -against landstrassen2
+		-against strassen -against landstrassen -against landstrassen2 -against fragezeichen
 	@touch $@
 
 .for i in u s r

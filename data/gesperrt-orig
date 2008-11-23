@@ -201,7 +201,7 @@ Martin-Wagner-Ring	1 12796,3821 12895,3991 12941,4015 12995,4003 13007,3949 1291
 Wilskistr.	1 -402,4012 -219,4149 21,4434 207,4575 301,4643 418,4696 528,4747 636,4765 798,4766
 Grazer Platz	1 6442,6788 6529,6798 6679,6816 6793,6814
 Grazer Platz	1 6801,6736 6686,6735 6546,6720 6517,6717 6451,6710
-Goltzstr. (Spandau)	1 -2843,16947 -3031,16807
+Goltzstr. (Spandau)	1 -2838,16951 -3031,16807
 Putlitzstr.	1 6267,14184 6264,13995 6226,13951
 Langhansstr. (außer Tram)	1 12046,16568 12189,16578 12409,16475
 Triftstr. (Buchholz)	1 12018,23040 12178,23034
@@ -329,7 +329,7 @@ Amalienpark	1 10905,18671 10950,18499 10860,18650
 Im Amseltal	1 1962,25214 1982,25108
 #: by: Josephine Schwuchow:
 Gundelfinger Str.	1 18735,9421 18697,9153 18653,8922 18609,8717
-Dorotheenstr.	1 18653,8922 18778,8895
+Dorotheenstr.	1 18653,8922 18770,8898
 Fehmarner Str. 	1 6710,14776 6528,15000
 Alte Späthbrücke	2 14437,5080 14535,5137
 Rutherfordstr.: nicht permanent geöffnet	2 19071,2746 19136,2673 19207,2592
@@ -791,6 +791,10 @@ Stubenrauchstr.: Bahntrasse	3nocross 16182,2200 16242,2279 16306,2364
 Stubenrauchstr.: Bahntrasse	3nocross 16475,2586 16573,2715 16635,2796
 #: note: Luftbild:
 Rudower Chaussee: Mittelstreifen	3nocross 16135,2135 16028,2261 15957,2330
+#: note: Luftbild:
+Rudower Chaussee: Mittelstreifen	3nocross 19314,2932 19417,3015 19426,3024 19475,3074
+#: note: Luftbild:
+Rudower Chaussee: Mittelstreifen	3 19498,3054 19475,3074 19426,3024
 Sterndamm: Straßenbahntrasse	3nocross 17601,5090 17542,4772 17518,4644
 Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3nocross 21960,11269 22242,11269 22326,11266
 Konrad-Wolf-Str./Große-Leege-Str.: wegen Absperrgitter nicht überquerbar	3nocross 16961,16042 16917,16001 16819,15912
@@ -822,7 +826,7 @@ Hermannstr.: Gitter auf Mittelstreifen	3nocross 11892,8372 11920,8252 11931,8206
 Bundesplatztunnel	3nocross 5360,7554 5359,7619 5358,7681 5358,7746 5356,7862
 Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061 6873,11011 6824,10904
 Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3906,10035 3930,9919
-# XXX del: Treskowallee: Straßenbahntrasse	3nocross 18631,10167 18690,10016 18698,9996 18737,9901
+Treskowallee: Straßenbahntrasse	3nocross 18809,9133 18790,9018 18770,8898
 Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5474,9961 5475,9914 5473,9869
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19694,15149 19735,15155 20260,15434
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19582,15221 19506,15002 19466,14910 19422,14793
@@ -874,7 +878,7 @@ Sachsendamm: unbequem passierbarer Mittelstreifen	3nocross 7699,7571 7859,7486 7
 Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12540,8458
 Karl-Marx-Str.: unbequemes Überqueren wegen parkender Autos	3nocross 12830,8031 12865,7923 12898,7832
 Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11763,8337 11892,8372
-Stromstr.: unpassierbarer Mittelstreifen	3nocross 6201,13058 6185,12968 6177,12920 6168,12846
+Stromstr.: unpassierbarer Mittelstreifen	3nocross 6183,13083 6165,12985 6156,12918 6150,12875
 Märkische Allee: Linksabbiegen verboten	3nocross 20109,16305 20219,16523 20339,16752
 #: XXX: wahrscheinlich (ich wurde durch einen anonymen Kommentar bestätigt)
 Märkische Allee: Linksabbiegen verboten	3nocross 20512,17101 20691,17463 20717,17516 20843,17745 20889,17838 20912,17872 21009,18055
@@ -923,6 +927,8 @@ Klingelhöferstr.: Mittelstreifen	3 7160,11225 6853,11336 6880,11110
 Klingelhöferstr.: Mittelstreifen	3 6880,11110 6853,11336 6683,11367
 Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21158,15885 21220,15741 21235,15641
 Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21626,15357 21647,15496
+#: note: Luftbild:
+Blumberger Damm: Mittelstreifen	3nocross 21152,11945 21143,11864 21106,11651
 Rudower Chaussee: Mittelstreifen	3nocross 19206,2848 19242,2876 19314,2932
 Adlergestell: Mittelstreifen	3nocross 20565,2754 20289,3033 20207,3115 20053,3272
 Sachsendamm: Mittelstreifen mit Geländer	3nocross 6935,8208 7005,8150 7087,8066
@@ -1032,7 +1038,7 @@ tragen (ca. 40 Stufen)	0:59 1659,3226
 tragen (Treppe)	0:30 1715,3257
 #: by: ^^^
 #: by: Jessica Mai:
-tragen (Treppe)	0:30 6187,12851
+tragen (Treppe)	0:30 6172,12878
 #: by: Andreas Mühlhausen: vvv
 #: note: von 30->40 Sekunden korrigiert
 tragen (Treppe)	0:40 2921,13606

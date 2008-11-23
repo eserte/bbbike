@@ -177,7 +177,7 @@ Martin-Wagner-Ring	1 12796,3821 12895,3991 12941,4015 12995,4003 13007,3949 1291
 Wilskistr.	1 -402,4012 -219,4149 21,4434 207,4575 301,4643 418,4696 528,4747 636,4765 798,4766
 Grazer Platz	1 6442,6788 6529,6798 6679,6816 6793,6814
 Grazer Platz	1 6801,6736 6686,6735 6546,6720 6517,6717 6451,6710
-Goltzstr. (Spandau)	1 -2843,16947 -3031,16807
+Goltzstr. (Spandau)	1 -2838,16951 -3031,16807
 Putlitzstr.	1 6267,14184 6264,13995 6226,13951
 Langhansstr. (außer Tram)	1 12046,16568 12189,16578 12409,16475
 Triftstr. (Buchholz)	1 12018,23040 12178,23034
@@ -297,7 +297,7 @@ Waldhüterpfad	1 510,4202 371,4453 301,4643
 Amalienpark	1 10905,18671 10950,18499 10860,18650
 Im Amseltal	1 1962,25214 1982,25108
 Gundelfinger Str.	1 18735,9421 18697,9153 18653,8922 18609,8717
-Dorotheenstr.	1 18653,8922 18778,8895
+Dorotheenstr.	1 18653,8922 18770,8898
 Fehmarner Str. 	1 6710,14776 6528,15000
 Alte Späthbrücke	2 14437,5080 14535,5137
 Rutherfordstr.: nicht permanent geöffnet	2 19071,2746 19136,2673 19207,2592
@@ -724,6 +724,10 @@ Bahntrasse	3nocross::ignrte 16475,2586 16573,2715 16635,2796
 Stubenrauchstr. -> Fuchsienweg: Bahntrasse	3::igndisp 16475,2586 16573,2715 16376,2862
 Fuchsienweg -> Stubenrauchstr.: Bahntrasse	3::igndisp 16376,2862 16573,2715 16635,2796
 Mittelstreifen	3nocross::ignrte 16135,2135 16028,2261 15957,2330
+Mittelstreifen	3nocross::ignrte 19314,2932 19417,3015 19426,3024 19475,3074
+Volmerstr. -> Rudower Chaussee: Mittelstreifen	3::igndisp 19538,2899 19426,3024 19417,3015
+Rudower Chaussee -> Volmerstr.: Mittelstreifen	3::igndisp 19475,3074 19426,3024 19538,2899
+Rudower Chaussee: Mittelstreifen	3 19498,3054 19475,3074 19426,3024
 Straßenbahntrasse	3nocross::ignrte 17601,5090 17542,4772 17518,4644
 Ellernweg -> Sterndamm: Straßenbahntrasse	3::igndisp 17428,4792 17542,4772 17601,5090
 Ellernweg -> Waldstr.: Straßenbahntrasse	3::igndisp 17428,4792 17542,4772 17881,4521
@@ -852,6 +856,7 @@ Düsseldorfer Str. -> Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3::ignd
 Düsseldorfer Str. -> Paderborner Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 4151,10026 3906,10035 3720,9996
 Paderborner Str. -> Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3720,9996 3906,10035 3874,10153
 Paderborner Str. -> Düsseldorfer Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3720,9996 3906,10035 4151,10026
+Straßenbahntrasse	3nocross::ignrte 18809,9133 18790,9018 18770,8898
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 5474,9961 5475,9914 5473,9869
 Bundesallee -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5474,9961 5475,9914 5541,9923
 Regensburger Str. -> Pariser Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5541,9923 5475,9914 5416,9928
@@ -1075,13 +1080,13 @@ Karl-Marx-Str. -> Saltykowstr.: unbequemes Überqueren wegen parkender Autos	3::i
 Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross::ignrte 11632,8302 11763,8337 11892,8372
 Flughafenstr. -> Weisestr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3::igndisp 11892,8372 11763,8337 11770,8292
 Weisestr. -> Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3::igndisp 11770,8292 11763,8337 11632,8302
-unpassierbarer Mittelstreifen	3nocross::ignrte 6201,13058 6185,12968 6177,12920 6168,12846
-nördliches Spreeufer -> Stromstr.: unpassierbarer Mittelstreifen	3::igndisp 6200,12971 6185,12968 6177,12920
-nördliches Spreeufer -> Bundesratufer: unpassierbarer Mittelstreifen	3::igndisp 6200,12971 6185,12968 6131,12978
-Stromstr. -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6201,13058 6185,12968 6200,12971
-Stromstr. -> Bundesratufer: unpassierbarer Mittelstreifen	3::igndisp 6177,12920 6185,12968 6131,12978
-Bundesratufer -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6131,12978 6185,12968 6200,12971
-Bundesratufer -> Stromstr.: unpassierbarer Mittelstreifen	3::igndisp 6131,12978 6185,12968 6201,13058
+unpassierbarer Mittelstreifen	3nocross::ignrte 6183,13083 6165,12985 6156,12918 6150,12875
+nördliches Spreeufer -> Stromstr.: unpassierbarer Mittelstreifen	3::igndisp 6200,12971 6165,12985 6156,12918
+nördliches Spreeufer -> Bundesratufer: unpassierbarer Mittelstreifen	3::igndisp 6200,12971 6165,12985 6131,12978
+Stromstr. -> Bundesratufer: unpassierbarer Mittelstreifen	3::igndisp 6156,12918 6165,12985 6131,12978
+Bundesratufer -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6131,12978 6165,12985 6200,12971
+Bundesratufer -> Stromstr.: unpassierbarer Mittelstreifen	3::igndisp 6131,12978 6165,12985 6183,13083
+Stromstr. -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6183,13083 6165,12985 6200,12971
 Linksabbiegen verboten	3nocross::ignrte 20109,16305 20219,16523 20339,16752
 Alfred-Döblin-Str. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20286,16494 20219,16523 20109,16305
 Märkische Allee -> Alfred-Döblin-Str.: Linksabbiegen verboten	3::igndisp 20339,16752 20219,16523 20286,16494
@@ -1214,6 +1219,7 @@ Schönagelstr. -> Raoul-Wallenberg-Str.: Straßenbahntrasse	3::igndisp 21602,15908
 Mittelstreifen	3nocross::ignrte 21599,15213 21626,15357 21647,15496
 Krummenseer Str. -> Blumberger Damm: Mittelstreifen	3::igndisp 21657,15352 21626,15357 21599,15213
 Blumberger Damm -> Krummenseer Str.: Mittelstreifen	3::igndisp 21647,15496 21626,15357 21657,15352
+Mittelstreifen	3nocross::ignrte 21152,11945 21143,11864 21106,11651
 Mittelstreifen	3nocross::ignrte 19206,2848 19242,2876 19314,2932
 Rudower Chaussee -> Brook-Taylor-Str.: Mittelstreifen	3::igndisp 19206,2848 19242,2876 19215,2906
 Brook-Taylor-Str. -> Rudower Chaussee: Mittelstreifen	3::igndisp 19215,2906 19242,2876 19314,2932
@@ -1311,7 +1317,7 @@ tragen (Treppe)	0:30:28 17026,11810
 tragen (S-Bhf. Raoul-Wallenberg-Str.)	0:30:-244 20041,16296
 tragen (ca. 40 Stufen)	0:59:-124 1659,3226
 tragen (Treppe)	0:30:-114 1715,3257
-tragen (Treppe)	0:30:-104 6187,12851
+tragen (Treppe)	0:30:-97 6172,12878
 tragen (Treppe)	0:40:-184 2921,13606
 tragen (Treppe)	0:40:-250 3016,13615
 tragen (Treppe, 32 Stufen)	0:40:-232 3031,13638

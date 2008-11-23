@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.123 2008/08/16 09:48:54 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.124 2008/11/23 16:09:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3714,6 +3714,15 @@ sub temp_blockings_editor {
 		      $t->messageBox(-message => "Beschreibender Text fehlt");
 		      return;
 		  }
+		  if ($blocking_text =~ m{[\x{0100}-\x{fffd}]}) {
+		      my $ans = $t->messageBox(-type => 'OkCancel', -icon => 'question', -message => "Unicode-Zeichen oberhalb des Codespoints 255 enthalten. Diese Zeichen können zurzeit nicht verwendet werden. Automatisch konvertieren? Achtung: Informationsverlust kann auftreten!");
+		      if ($ans !~ /ok/i) {
+			  return;
+		      }
+		      if (eval { require Text::Unidecode; 1 }) {
+			  $blocking_text = unidecode_any($blocking_text, "iso-8859-1");
+		      }
+		  }
 		  my $start_time = $start_undef ? undef : $start_w->get;
 		  my $end_time   = $end_undef   ? undef : $end_w->get;
 		  if ((!$start_undef && !defined $start_time) ||
@@ -4399,6 +4408,68 @@ sub reset_mark_adjusted_tag {
     my $c = $main::c;
     $c->dtag("show_adjusted");
 }
+
+# REPO BEGIN
+# REPO NAME unidecode_any /home/e/eserte/work/srezic-repository 
+# REPO MD5 59f056efd990dc126e49f5e846eee797
+
+=head2 unidecode_any($text, $encoding)
+
+Similar to Text::Unidecode::unidecode, but convert to the given
+$encoding. This will return an octet string in the given I<$encoding>.
+If all you want is just to restrict the charset of the string to a
+specific encoding charset, then it's best to C<Encode::decode> the
+result again with I<$encoding>.
+
+=cut
+
+sub unidecode_any {
+    my($text, $encoding) = @_;
+
+    require Text::Unidecode;
+    require Encode;
+
+    # provide better conversions for german umlauts
+    my %override = ("\xc4" => "Ae",
+		    "\xd6" => "Oe",
+		    "\xdc" => "Ue",
+		    "\xe4" => "ae",
+		    "\xf6" => "oe",
+		    "\xfc" => "ue",
+		   );
+    my $override_rx = "(" . join("|", map { quotemeta } keys %override) . ")";
+    $override_rx = qr{$override_rx};
+
+    my $res = "";
+
+    if (!eval {
+	Encode->VERSION(2.12); # need v2.12 to support coderef
+	$res = Encode::encode($encoding, $text,
+			      sub {
+				  my $ch = chr $_[0];
+				  if ($ch =~ $override_rx) {
+				      return $override{$ch};
+				  } else {
+				      my $ascii = unidecode($ch);
+				      Encode::_utf8_off($ascii);
+				      $ascii;
+				  }
+			      });
+	1;
+    }) {
+	for (split //, $text) {
+	    my $conv = eval { Encode::encode($encoding, $_, Encode::FB_CROAK()) };
+	    if ($@) {
+		$res .= Text::Unidecode::unidecode($_);
+	    } else {
+		$res .= $conv;
+	    }
+	}
+    }
+
+    $res;
+}
+# REPO END
 
 
 1;

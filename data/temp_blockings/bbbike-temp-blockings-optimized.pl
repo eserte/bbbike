@@ -903,6 +903,15 @@ push @temp_blocking,
          'data' => 'userdel	q4::inwork -575,-65978 60,-66035
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1230418799,
+         'text' => 'Sperrung des Delfter Ufers. Ab Montag, dem 17.11.2008 wird für ca. vier Wochen ein Teilstück von ca. 250 m der Grünanlage Delfter Ufer in Höhe der Rudergesellschaft Wiking e.V. bis zum rückwärtigen Firmengelände Testorp gesperrt werden. Der Rad- und Fußweg kann in dieser Zeit nicht durchgängig genutzt werden. Ein Ausweichen ist über den Schwarzen Weg, Haarlemer Straße und wieder zurück zum Delfter Ufer über den Weg der Kolonie "Zum Siedlerheim" möglich.',
+         'from' => 1226876400,
+         'id' => 1545,
+         'data' => 'userdel	2::inwork 13766,6019 13971,5978 14136,5831 14241,5674
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.206 2008/08/29 20:40:41 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.207 2008/11/23 18:20:59 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2008 Slaven Rezic. All rights reserved.
@@ -516,8 +516,6 @@ sub plot_additional_layer {
     if ($linetype eq 'sperre') {
   	$abk = "$abk-sperre";
     }
-    warn "Use new Layer $abk\n";
-    add_to_stack($abk, "before", "pp");
     if ($linetype !~ /^(str|p|sperre)$/) {
 #XXXdel	$str_draw{$abk} = 1;
 #    } elsif ($linetype eq 'p') {
@@ -525,6 +523,8 @@ sub plot_additional_layer {
 #    } else {
 	die "Unknown linetype $linetype, should be str, sperre or p";
     }
+    warn "Use new Layer $abk\n";
+    add_to_stack($abk, "before", "pp");
 
     my @args;
     {
@@ -3186,6 +3186,8 @@ sub search_anything {
 
     my $probably_can_string_similarity = module_exists("String::Similarity");
     use constant STRING_SIMILARITY_LEVEL => 0.75;
+    my $probably_can_string_approx = module_exists("String::Approx");
+    use constant STRING_APPROX_ERRORS => 2;
 
     my $do_search = sub {
 	return if $s eq '';
@@ -3193,6 +3195,10 @@ sub search_anything {
 	if ($search_type eq 'similarity' && !eval { require String::Similarity; 1 }) {
 	    perlmod_install_advice("String::Similarity");
 	    $search_type = 'substr';
+	    return;
+	} elsif ($search_type eq 'approx' && !eval { require String::Approx; 1 }) {
+	    perlmod_install_advice("String::Approx");
+	    $search_type = 'approx';
 	    return;
 	}
 
@@ -3203,6 +3209,8 @@ sub search_anything {
 	} elsif ($search_type eq '^substr') {
 	    $s_rx = "^" . quotemeta($s);
 	} elsif ($search_type eq 'similarity') {
+	    $s_munged = lc $s;
+	} elsif ($search_type eq 'approx') {
 	    $s_munged = lc $s;
 	} else {
 	    $s_rx = $s;
@@ -3257,7 +3265,12 @@ sub search_anything {
 			}
 			next if /^\#/;
 			my($rec) = Strassen::parse($_);
-			next if String::Similarity::similarity(lc($rec->[Strassen::NAME()]), $s_munged, STRING_SIMILARITY_LEVEL) < STRING_SIMILARITY_LEVEL;
+			my $name = lc $rec->[Strassen::NAME()];
+			if ($search_type eq 'similarity') {
+			    next if String::Similarity::similarity($name, $s_munged, STRING_SIMILARITY_LEVEL) < STRING_SIMILARITY_LEVEL;
+			} else { # $search_type eq 'approx'
+			    next if !String::Approx::amatch($s_munged, ['i', STRING_APPROX_ERRORS], $name);
+			}
 			push @matches, $rec;
 			$matches[-1]->[3] = [];
 		    } else {
@@ -3511,7 +3524,17 @@ sub search_anything {
 	for my $cb_def (["Regulärer Ausdruck", "rx"],
 			["Teilstring", "substr"],
 			["Teilstring am Anfang", "^substr"],
-			($probably_can_string_similarity ? ["Ungenaue Suche", "similarity"] : ()),
+			($devel_host ?
+			 (
+			  ($probably_can_string_similarity ? ["Ungenaue Suche (String::Similarity)", "similarity"] : ()),
+			  ($probably_can_string_approx ? ["Ungenaue Suche (String::Approx)", "approx"] : ()),
+			 ) :
+			 (
+			  # XXX check which one will be used
+			  $probably_can_string_similarity ? ["Ungenaue Suche", "similarity"] : ()
+			  #($probably_can_string_approx ? ["Ungenaue Suche", "approx"] : ()),
+			 )
+			)
 		       ) {
 	    my($text, $search_type_value) = @$cb_def;
 	    $f->Radiobutton(-text => M($text),

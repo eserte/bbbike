@@ -293,7 +293,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006461',
        data  => <<EOF,
-userdel	2 6240,13324 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359 5560,13382 5368,13406 5256,13420
+userdel	2 6228,13324 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359 5560,13382 5368,13406 5256,13420
 EOF
      },
      { from  => Time::Local::timelocal(reverse(2004-1900,4-1,30,12,0,0)),
@@ -743,7 +743,7 @@ EOF
        text  => 'Turmstraße zwischen Kreuzung Beusselstraße und Kreuzung Stromstraße sowie Thusneldaallee: Straße gesperrt (Turmstraßenfest), Dauer: 03.09.2004 02:00 Uhr bis 06.09.2004 02:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 5256,13420 5368,13406 5560,13382 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6240,13324
+userdel	2 5256,13420 5368,13406 5560,13382 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6228,13324
 userdel	2 5975,13256 5956,13330
 EOF
      },
@@ -4849,7 +4849,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002950',
        data  => <<EOF,
-userdel	2 6240,13324 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359 5560,13382 5368,13406
+userdel	2 6228,13324 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359 5560,13382 5368,13406
 EOF
      },
      { from  => 1151099435, # 2006-06-23 23:50
@@ -5565,7 +5565,7 @@ EOF
        text  => 'Turmstraßenfest vom 01.09. bis 03.09.2006 (zwischen Strom- und Waldstraße) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 5368,13406 5560,13382 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6240,13324
+userdel	2::temp 5368,13406 5560,13382 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6228,13324
 EOF
      },
      { from  => 1156456800, # 2006-08-25 00:00
@@ -8004,7 +8004,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005384',
        data  => <<EOF,
-userdel	2::temp 6240,13324 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359
+userdel	2::temp 6228,13324 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359
 EOF
      },
      { from  => 1178379282, # 2007-05-05 17:34
@@ -11286,7 +11286,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008375',
        data  => <<EOF,
-userdel	2::temp 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6240,13324
+userdel	2::temp 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6228,13324
 EOF
      },
      { from  => 1223933558, # 2008-10-13 23:32
@@ -12400,7 +12400,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009776',
        data  => <<EOF,
-userdel	2::temp 6240,13324 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359 5560,13382 5368,13406
+userdel	2::temp 6228,13324 6112,13327 6011,13330 5956,13330 5857,13342 5705,13359 5560,13382 5368,13406
 EOF
      },
      { from  => 1219874400, # 2008-08-28 00:00
@@ -13079,6 +13079,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -575,-65978 60,-66035
+EOF
+     },
+     { from  => 1226876400, # 2008-11-17 00:00
+       until => 1230418799, # 2008-12-27 23:59
+       text  => 'Sperrung des Delfter Ufers. Ab Montag, dem 17.11.2008 wird für ca. vier Wochen ein Teilstück von ca. 250 m der Grünanlage Delfter Ufer in Höhe der Rudergesellschaft Wiking e.V. bis zum rückwärtigen Firmengelände Testorp gesperrt werden. Der Rad- und Fußweg kann in dieser Zeit nicht durchgängig genutzt werden. Ein Ausweichen ist über den Schwarzen Weg, Haarlemer Straße und wieder zurück zum Delfter Ufer über den Weg der Kolonie "Zum Siedlerheim" möglich.',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 13766,6019 13971,5978 14136,5831 14241,5674
 EOF
      },
     );
