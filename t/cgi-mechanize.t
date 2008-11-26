@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.52 2008/03/09 00:17:20 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.53 2008/11/24 19:34:34 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -366,6 +366,7 @@ for my $browser (@browsers) {
     ######################################################################
     # Test custom blockings
 
+ XXX: { ; }
     {
 
 	# Hier wird eine temporäre baustellenbedingte Einbahnstraße in
@@ -436,13 +437,24 @@ for my $browser (@browsers) {
 	    my $resp = $agent->get($url);
 	    ok($resp->is_success, "Success for $url")
 		or diag $resp->status_line;
-	    my $xml = $resp->content; # using decoded_content seems to be problematic
+	    my $xml = $resp->decoded_content(charset => "none"); # using decoded_content with charset decoding is problematic
 	    xmllint_string($xml, "XML output OK");
 	SKIP: {
 		skip("Needs XML::LibXML for further XML tests", 5)
 		    if !eval { require XML::LibXML; 1 };
 		my $p = XML::LibXML->new;
-		my $doc = $p->parse_string($xml);
+		my $doc = eval { $p->parse_string($xml) };
+		if (!$doc || $@) {
+		    my $err = $@;
+		    require File::Temp;
+		    my($fh,$file) = File::Temp::tempfile(SUFFIX => ".xml");
+		    print $fh $xml;
+		    close $xml;
+		    diag <<EOF;
+Failed parsing XML: ${err}XML data written to $file
+Following failure is expected.
+EOF
+		}
 		my $root = $doc->documentElement;
 		my($affBlockNode) = $root->findnodes("/BBBikeRoute/AffectingBlocking");
 		ok($affBlockNode, "Found AffectingBlocking node");
@@ -694,7 +706,6 @@ for my $browser (@browsers) {
     ######################################################################
     # outer Berlin
 
- XXX: { ; }
  SKIP: {
 	skip("XXX Outer Berlin feature needs bbbike2.cgi", $outer_berlin_tests)
 	    if $cgiurl !~ /bbbike2\.cgi/ && $cgiurl ne 'http://localhost/bbbike/cgi/bbbike.cgi';

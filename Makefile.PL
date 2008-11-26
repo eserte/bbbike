@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.150 2008/11/07 22:45:34 eserte Exp $
+# $Id: Makefile.PL,v 1.151 2008/11/25 21:28:23 eserte Exp $
 
 use 5.005;
 
@@ -222,6 +222,8 @@ my @req_table =
   [qw/Test::Differences	0	all	0	test/],
   [qw/Test::NoWarnings	0	all	0	test/],
   [qw/WWW::Mechanize	0	all	2	test/,
+   'Für Testen des CGI-Interfaces'],
+  [qw/WWW::Mechanize::FormFiller	0	all	2	test/,
    'Für Testen des CGI-Interfaces'],
   [qw/Devel::Leak	0	all	0	test/,
    'Für Memory-Leak-Tests'],

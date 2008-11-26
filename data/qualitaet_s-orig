@@ -7,6 +7,7 @@ Mozartstr.: Kopfsteinpflaster	Q2 10257,-2654 10392,-2980 10475,-3174
 Mozartstr.: Asphalt	Q0 10475,-3174 10472,-3201
 #: corrected_by: Ulrike Burchardt: (was: Kopfsteinpflaster, now: "wunderbar zu fahren")
 #: confirmed_by: Tina (wrong email)
+#: confirmed_by: http://www.berlin.de/ba-spandau/presse/archiv/20080807.0735.106603.html
 Eiswerder (Brücken, Straßen): gut befahrbar	Q0 -2672,15521 -2434,15505 -2312,15575 -2361,15648 -2157,15731 -2077,15664 -1872,15676
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20051011.1220.31015.html
 Eiswerderstr.: Asphalt	Q0 -2883,15571 -2783,15538 -2715,15519 -2672,15521
@@ -1438,7 +1439,7 @@ Fenchelweg: glattes Kopfsteinpflaster	Q1 15585,4139 15695,4051 15874,3892
 (Weg an der Teltowkanalautobahn): seht guter Asphalt	Q0 16520,3531 16797,3321 17524,2765 17719,2646 18036,2531
 (Weg an der Teltowkanalautobahn - Stubenrauchstr., Rampe): Verbundsteinpflaster	Q0 16797,3321 16962,3212
 (Autobahnzubringer): sehr guter Asphalt	Q0 18036,2531 18503,2449
-Hermann-Dorner-Allee: Asphalt	Q0 18503,2449 18452,2641
+Herrmann-Dorner-Allee: Asphalt	Q0 18503,2449 18452,2641
 #: by: Erik Thon
 #: corrected_by: srt
 Neltestr.: schlechtes Kopfsteinpflaster	Q3 19465,3918 19596,4035 19693,4130
@@ -2148,6 +2149,12 @@ Annenstr. (Biesdorf): Asphalt	Q0 20269,14256 20376,14244
 (Blenheimstr. - Bärensteinstr.): Gehwegplatten	Q1 21163,15289 21312,15268
 Bärensteinstr.: Asphalt	Q0 21312,15268 21411,15232 21497,15227 21599,15213
 Bärensteinstr.: Asphalt	Q0 21411,15232 21422,15383
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20081022.1525.112278.html
+Lanzendorfer Weg: Asphalt	Q0 -8852,4619 -8837,4688
+#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20080923.1140.110053.html
+Raumbacher Str.: Asphaltbeton	Q0 29115,2015 28965,2151 28829,2269
+#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20080911.1325.108940.html
+Pietschkerstr.: Asphaltbeton	Q0 17770,5108 17729,5091 17652,5082 17601,5090
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -3351,7 +3358,7 @@ Ehrenbergstr.: Kopfsteinpflaster	Q1 2857,4578 2942,4638 3046,4702 3115,4752
 Rudeloffweg: schlechtes Kopfsteinpflaster	Q3 2545,4565 2635,4425 2682,4364 2817,4158
 Faradayweg: Kopfsteinpflaster	Q1 2190,4823 2290,4709
 #: note: ADFC-Karte meint hierzu "mäßig geeignet", wahrscheinlich wegen etwas erhöhten Kfz-Verkehrs
-Krampnitzer Weg: Asphalt	Q0 -9015,4978 -8634,4921 -8293,4915 -8095,4900 -7806,4857 -7643,4846 -7529,4853 -7519,4843
+Krampnitzer Weg: Asphalt	Q0 -9015,4978 -8806,4957 -8634,4921 -8293,4915 -8095,4900 -7806,4857 -7643,4846 -7529,4853 -7519,4843
 Corrensplatz: Kopfsteinpflaster	Q2 2445,4471 2537,4358
 Von-Laue-Str.: schlechtes Kopfsteinpflaster	Q3 2537,4358 2712,4091
 Boetticherstr.: Kopfsteinpflaster	Q3 2413,4296 2595,4027
@@ -3830,6 +3837,7 @@ Liebenwalder Str.: Kopfsteinpflaster	Q2 7162,16163 7471,16185 7690,16199 7808,16
 #: by: Tobias (iow...):
 Starnberger Str.: Asphalt	Q0 6553,9600 6621,9657 6664,9701
 #: by: Michael Stoeter: vvv
+#: XXX ist dieser Abschnitt weiterhin gepflastert? Siehe http://www.berlin.de/ba-spandau/presse/archiv/20080516.0900.100594.html . Michael Stoeter meint, dass dieser Abschnit "denkmalgeschützt" ist.
 Torweg: Kopfsteinpflaster	Q2 -7952,14632 -7413,14561
 Torweg: unbefestigter Weg	Q2 -8606,14696 -8464,14681
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20050715.1155.27883.html (update)
@@ -6603,7 +6611,7 @@ Schünemannweg: Kopfsteinpflaster	Q2 7171,4200 6986,4258 6965,4219
 #: by: Mitrovic Mirjana:
 Rehagener Str.: guter Beton	Q0 10657,-2639 10648,-2547 10638,-2452 10639,-2364 10631,-2130 10629,-1931 10644,-1875 10697,-1847 10767,-1850
 #: by: uli 12move
-Straße am Flugplatz: asphaltiert	Q0 17522,3653 17762,3243 17834,3125 17990,2871 18057,2852 18185,2815 18427,2752 18452,2641
+Straße am Flugplatz: asphaltiert	Q0 17522,3653 17762,3243 17834,3125 17990,2871 18057,2852 18185,2815 18427,2752
 #: by: henning (hirschgarten):
 Gilgenburger Str.: mäßiger Asphalt	Q1- 24387,5672 24434,5645 24666,5726
 #: by: Karin (schopp):
@@ -8645,7 +8653,7 @@ Brunowstr.: gutes Kopfsteinpflaster	Q1 1862,20025 1989,20053 2169,20095 2336,201
 Karl-Pokern-Str.: Asphalt	Q0 26079,5057 26034,5056 25984,5070 25860,5067 25732,5065
 Karl-Pokern-Str.: Beton	Q1 25860,5067 25860,5159 25857,5184 26026,5179 26028,5153 26034,5056
 Karl-Pokern-Str.: Beton	Q1 25860,5159 26028,5153
-Rahnsdorfer Str. (Friedrichshagen): sehr guter Asphalt	Q0 26611,5301 26570,5300 26488,5292 26069,5280 25739,5242
+Rahnsdorfer Str. (Friedrichshagen): sehr guter Asphalt	Q0 26611,5301 26570,5300 26488,5292 26364,5288 26224,5285 26162,5283 26069,5280 25739,5242
 Aßmannstr.: guter Asphalt	Q0 25738,5228 25539,5237 25264,5253 25121,5286 25039,5295 25018,5294 25002,5296
 #: corrected_by: Erik Boß
 Aßmannstr.: gut befahrbarer Platten-Betonweg	Q0 25039,5295 25039,5304 25048,5727 25012,5729 25012,5754

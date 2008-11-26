@@ -168,7 +168,7 @@ for my $cgiurl (@urls) {
 	my $url = "$cgiurl?$qs";
 	my $res = $ua->get($url);
 	ok($res->is_success, "Index $inx, $from - $to");
-	my $got = Load($res->content);
+	my $got = Load($res->decoded_content);
 	my $comments = [ map {
 	    +{ map { ($_,1) } split /;\s+/, $_->{Comment} };
 	} @{$got->{Route}} ];
