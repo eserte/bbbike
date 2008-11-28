@@ -795,9 +795,8 @@ asphaltiert	RW1;RW1 10213,8665 10598,8563 10796,8498
 asphaltiert	RW1; 10796,8498 10911,8457 11271,8325
 asphaltiert; Zweirichtungsradweg	RW2; 11271,8325 11416,8283
 asphaltiert	RW1; 11416,8283 11632,8302
-Gehweg ist für Radfahrer freigegeben, aber schlechte Qualität (unbefestigt)	RW0; 11632,8302 11416,8283 11271,8325 10911,8457 10796,8498 10598,8563
-Gehweg ist für Radfahrer freigegeben, aber schlechte Qualität (unbefestigt), nur die letzten ca. 100 Meter sind asphaltierter Radweg	RW0; 10598,8563 10213,8665
-	RW1;RW1 11632,8302 11763,8337 11892,8372
+Gehweg ist für Radfahrer freigegeben, aber schlechte Qualität (unbefestigt)	RW0; 11632,8302 11416,8283 11271,8325 10911,8457 10796,8498
+asphaltiert	RW1;RW1 11632,8302 11763,8337 11892,8372
 Busspur gilt Mo-Fr tagsüber und Sa-So ca. 10-20 Uhr	RW5; 9865,10286 9593,10238
 	RW0;RW5 9841,10359 9783,10508
 	RW6;RW6 10016,10755 9801,10807

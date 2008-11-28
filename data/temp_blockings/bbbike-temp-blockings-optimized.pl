@@ -886,15 +886,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1227567600,
-         'text' => 'L 053 Calauer Str. OD Großräschen, von IFA-Park bis Felix-Spiro-Str. Deckeneinbau Vollsperrung 21.11.2008-24.11.2008 ',
-         'from' => 1227135600,
-         'id' => 1543,
-         'data' => 'userdel	q4::inwork 53787,-90242 54017,-89128
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1229295600,
          'text' => 'L 071 Markt OL Schönewalde, zw. Herzberger Str. und Gartenstr. Weihnachtsmarkt Vollsperrung 14.12.2008-14.12.2008 ',

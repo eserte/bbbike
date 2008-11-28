@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: steigung_stat,v 1.17 2007/05/07 01:04:48 eserte Exp $
+# $Id: steigung_stat,v 1.19 2008/11/28 08:01:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001,2003 Slaven Rezic. All rights reserved.
@@ -212,11 +212,15 @@ sub better_make_net_steigung {
 
 	return if $treppe{$from};
 
+	keys %{$sourcenet->{Net}{$from}}; # reset iterator
 	while(defined(my $neighbor = each %{$sourcenet->{Net}{$from}})) {
 	    next if exists $seen{$neighbor};
 	    next if $treppe{$neighbor};
 	    my $strecke1 = $dist_so_far;
 	    my $strecke2 = $calc_strecke->($from, $neighbor);
+	    if ($strecke2 == 0) {
+		die "Unexpected: Distance between $from and $neighbor is 0. Please fix data in " . join(" ", $sourcenet->sourcefiles);
+	    }
 	    my $strecke = $strecke1 + $strecke2;
 	    if (exists $hoehe->{$neighbor}) {
 		my $hoehendiff = $hoehe->{$neighbor} - $initial_elevation;

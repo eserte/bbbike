@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.202 2008/11/25 20:47:00 eserte Exp $
+# $Id: Makefile,v 2.202 2008/11/25 20:47:00 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -700,7 +700,7 @@ storable:
 
 .PHONY:	fragezeichen
 
-.PRECIOUS:	fragezeichen
+.PRECIOUS:	fragezeichen mount
 
 fragezeichen:	.create_fragezeichen
 	-@$(WRITEABLE) $@

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.59 2008/11/23 14:12:41 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.61 2008/11/27 23:50:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.59 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.61 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -731,6 +731,9 @@ sub street_name_experiment {
 	my $delta_HH = main::get_line_width('s-HH')/2;
 	my $delta_N  = main::get_line_width('s-N')/2;
 
+	my $default_fontsize = 12; # default of sans
+	my $fontsize = $main::scale > 5 ? 12 : $main::scale > 4 ? 11 : $main::scale > 2 ? 10 : $main::scale > 1.3 ? 9 : 8;
+
 	# XXX Taken from Tk::RotFont
 	# Erstellt eine Rotationsmatrix für freetype
 	# XXX rot-Funktion auslagern (CanvasRotText)
@@ -754,10 +757,16 @@ sub street_name_experiment {
 	    'matrix=' . $mat;
 	};
 
-	my $font = "sans";
+	## The normal Vera font, usually
+ 	my $regular_font = "sans:size=$fontsize";
+ 	my $bold_font    = "sans:size=$fontsize:style=bold";
+	## A condensed font
+	# my $regular_font = "Nimbus Sans L:size=$fontsize:style=ReguCond";
+	# my $bold_font    = "Nimbus Sans L:size=$fontsize:style=BoldCond";
+
 	my $tag = "experiment-strname";
 
-	my %font_metrics = $main::c->fontMetrics($font); # assume bold metrics are the same
+	my %font_metrics = $main::c->fontMetrics($regular_font); # assume bold metrics are the same
 	my($ascent, $descent) = @font_metrics{qw(-ascent -descent)};
 
 	$main::c->delete($tag);
@@ -794,7 +803,7 @@ sub street_name_experiment {
 	    my($x1,$y1,$x2,$y2) = (main::transpose(split(/,/, $c->[0])),
 				   main::transpose(split(/,/, $c->[-1]))
 				  );
-	    my $using_font = "$font" . ($use_bold ? ":style=bold" : "");
+	    my $using_font = $use_bold ? $bold_font : $regular_font;
 	    $font_char_length{$using_font} ||= {};
 	    my $char_length = $font_char_length{$using_font};
 	    $name = Strasse::strip_bezirk($name);
@@ -858,7 +867,7 @@ sub street_name_experiment {
 		$r = -atan2($y2-$y1, $x2-$x1);
 		if (1) { $r = 2*pi - $r; }
 	    }
-	    my $matrix = $get_rot_matrix->($r, 1);
+	    my $matrix = $get_rot_matrix->($r, $fontsize/$default_fontsize);
 	    #my $deg = $r*180/pi; print STDERR "$name $deg $matrix\n";
 
 	    my $fac = ($etappe_length-$text_length)/(2*$etappe_length);
