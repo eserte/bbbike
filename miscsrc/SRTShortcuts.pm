@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.61 2008/11/27 23:50:28 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.62 2008/11/29 16:32:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.61 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.62 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -714,6 +714,7 @@ my %font_char_length;
 sub street_name_experiment {
     require Tk::Config;
     require Strassen::Core;
+    require Strassen::CoreHeavy;
     require Strassen::MultiStrassen;
     require Strassen::Strasse;
     require Strassen::Util;
@@ -770,7 +771,12 @@ sub street_name_experiment {
 	my($ascent, $descent) = @font_metrics{qw(-ascent -descent)};
 
 	$main::c->delete($tag);
-	my $s = MultiStrassen->new("strassen", "fragezeichen") || die "Can't open strassen and/or fragezeichen";
+	my $potsdam_s;
+	{
+	    my $ls = Strassen->new("landstrassen");
+	    $potsdam_s = $ls->grepstreets(sub { $_->[Strassen::NAME()] =~ m{\Q(Potsdam)} });
+	}
+	my $s = MultiStrassen->new("strassen", "fragezeichen", $potsdam_s) || die "Can't open strassen and/or fragezeichen";
 	$s->init;
 	#our $xxx=0;
 	#my $anzahl_eindeutig = $s->count; my $s_i = 0;

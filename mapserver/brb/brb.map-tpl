@@ -219,7 +219,14 @@ SYMBOL
   TYPE ELLIPSE
   POINTS 1 1 END
   FILLED TRUE
+[% IF IMAGE_TYPE == "PDF" -%]
+[% # with "0" in the style shp2img emits an error:
+   # fatal exception: [1416] PDF_setdashpattern: Value 0 for option 'dasharray' is too small (minimum 1e-06)
+-%]
+  STYLE 1 12 1 13 1 END
+[% ELSE -%]
   STYLE 0 12 1 13 0 END
+[% END -%]
 END
 
 [% IF 0 && IMAGE_SUFFIX == "png" %]

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.40 2008/11/22 21:17:47 eserte Exp $
+# $Id: bbbikedraw.t,v 1.41 2008/11/29 16:09:03 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -360,10 +360,6 @@ sub draw_map {
 	local $/ = undef;
 	my $pdf_content = <$fh>;
 
-	local $TODO;
-	if ($module =~ /MapServer/) {
-	    $TODO = "Does not generate a PDF document, there's a PDFlib exception";
-	}
 	ok($pdf_content =~ m{^%PDF-1\.\d+}, "Looks like a PDF document");
 	ok($pdf_content =~ m{Creator.*(BBBikeDraw|MapServer)}i, "Found Creator");
     } else {

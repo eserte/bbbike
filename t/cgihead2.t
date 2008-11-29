@@ -2,9 +2,14 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.21 2008/08/29 05:47:48 eserte Exp $
+# $Id: cgihead2.t,v 1.22 2008/11/29 17:00:06 eserte Exp $
 # Author: Slaven Rezic
 #
+
+# Note: At least SourceForge is known to chose a non-working redirect
+# URL from time to time. If this seems to persist, then this script
+# should probably retry a couple of times, in the hope that another
+# redirect URL will be chosen.
 
 use strict;
 

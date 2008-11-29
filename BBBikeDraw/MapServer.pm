@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.43 2008/08/22 19:47:37 eserte Exp $
+# $Id: MapServer.pm,v 1.44 2008/11/29 16:13:28 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003-2008 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.43 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.44 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -34,14 +34,13 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.43 $ =~ /(\d+)\.(\d+)/);
 
     use vars qw($QUIET);
 
-    use Carp qw(carp);
-    use vars qw(%warn_once);
-    sub warn_once {
+    use vars qw(%notice_once);
+    sub notice_once {
 	return if $QUIET;
 	my $warn = join(" ", @_);
-	return if exists $warn_once{$warn};
-	$warn_once{$warn}++;
-	carp $warn;
+	return if exists $notice_once{$warn};
+	$notice_once{$warn}++;
+	warn "$warn\n";
     }
 
     sub new { bless {}, shift }
@@ -82,10 +81,10 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.43 $ =~ /(\d+)\.(\d+)/);
 	require Config;
 	if ($Config::Config{archname} =~ /amd64/) {
 	    $self->MapserverBinDir("/usr/local/src/work/mapserver-amd64");
-	    warn_once "Use latest subversion version (amd64) from " . $self->MapserverBinDir . " ...";
+	    notice_once "Use latest subversion version (amd64) from " . $self->MapserverBinDir . " ...";
 	} else {
 	    $self->MapserverBinDir("/usr/local/src/work/mapserver");
-	    warn_once "Use latest subversion version from " . $self->MapserverBinDir . " ...";
+	    notice_once "Use latest subversion version from " . $self->MapserverBinDir . " ...";
 	}
 	## use mapserver from ports
 	#$self->MapserverBinDir("/usr/local/bin");
@@ -149,7 +148,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.43 $ =~ /(\d+)\.(\d+)/);
 	#$self->MapserverBinDir("$apache_root/cgi-bin");
 	#$self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
 	if ($Config::Config{archname} =~ /amd64/) {
-	    warn_once "Use latest CVS version (amd64)...";
+	    notice_once "Use latest CVS version (amd64)...";
 	    $self->MapserverBinDir("/usr/local/src/work/mapserver-amd64");
 	} else {
 	    $self->MapserverBinDir("/usr/local/src/work/mapserver");
