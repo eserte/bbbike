@@ -772,15 +772,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1227999600,
-         'text' => 'B 158 Oderberg - Angermünde ab OD Parstein bis Kreisgrenze bei Neukünkendorf Straßenbauarbeiten Vollsperrung 23.10.2008-29.11.2008 ',
-         'from' => 1224626400,
-         'id' => 1527,
-         'data' => 'userdel	2::inwork 52554,62772 52445,61982 52484,61529 52571,60809 52603,60356 52441,59932 52362,59750
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1229209200,
          'text' => 'B 273 Bernauer Str. OD Oranienburg, zw. Schmachtenhagener Str. und Kölner Str. Straßenbauarbeiten Vollsperrung 04.11.2008-13.12.2008 ',
@@ -829,15 +821,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1227999600,
-         'text' => 'L 166 Friesack - Nackel zw. Nackel und Zootzen Deckenerneuerung Vollsperrung 20.10.2008-29.11.2008 ',
-         'from' => 1224367200,
-         'id' => 1536,
-         'data' => 'userdel	2::inwork -46590,45423 -46394,45253 -45792,44692 -45553,44122 -45441,43630 -45367,42665
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_010718',
@@ -877,15 +861,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1227913200,
-         'text' => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 24.11.2008-28.11.2008 ',
-         'from' => 1227394800,
-         'id' => 1542,
-         'data' => 'userdel	2::inwork 41424,91331 41387,91306 41361,91289
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1229295600,

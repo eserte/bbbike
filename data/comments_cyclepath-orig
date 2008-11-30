@@ -36,7 +36,7 @@ Berliner Str. (B1): teilweise parallele Nebenstraße, teilweise Radweg	RW1; -1204
 Humboldtbrücke: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2;RW2 -12045,-757 -11875,-925 -11613,-1125
 Nuthestr.: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2; -11549,-1169 -11613,-1125
 Nuthestr.: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2; -11613,-1125 -11549,-1169 -11463,-1232 -11356,-1317
-Alt Nowawes: asphaltierte Radwege	RW -10973,-1764 -10884,-1653 -10841,-1599 -10581,-1271 -10505,-1166 -10338,-950 -10154,-828
+Alt Nowawes: asphaltierte Radwege	RW -10973,-1764 -10884,-1653 -10841,-1599 -10606,-1303 -10581,-1271 -10505,-1166 -10338,-950 -10154,-828
 B2: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW -10090,6868 -10206,6756 -10923,6318 -12181,5611 -12865,5567
 B2: teilweise Radweg, teilweise Radstreifen	RW2;RW2 -12865,5567 -13143,5587 -13287,5556 -13578,5396 -13690,5212 -13778,4492 -13784,3900 -13387,2987 -13375,2950
 B2: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW8;RW2 -13375,2950 -13152,2169 -13141,1933
@@ -70,11 +70,11 @@ Fahrradstraße	RW -6943,25831 -7187,25859 -7225,25509 -7260,25515
 #: add_fragezeichen: Position ist vielleicht nicht ganz genau
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt	RW -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9046,22376
 Zweirichtungsradweg auf der östl. Seite, asphaltiert	RW -10377,20973 -10581,19871 -10000,18629
-Suggestivstreifen	RW -11507,-2130 -10995,-2108 -10793,-2157 -10673,-2128
+Suggestivstreifen	RW -11507,-2130 -10995,-2108 -10772,-2153 -10673,-2128
 Radweg auf Gehweg	RW -12098,-2173 -11681,-2256 -11601,-2197 -11507,-2130
 Radstreifen (?)	RW -10673,-2128 -10634,-2159 -10528,-2196 -10426,-2231 -10327,-2262
 #: add_fragezeichen: genauer spezifizieren:
-Radwege unterschiedlicher Form und Qualtität	RW -9723,-2451 -9700,-2459 -9534,-2515 -9462,-2540 -9118,-2649 -9075,-2664 -8865,-2732 -8500,-2856 -8428,-2886 -8283,-2917 -7873,-3094 -7497,-3096 -7487,-3097 -7060,-3124 -6810,-3151
+Radwege unterschiedlicher Form und Qualtität	RW -9723,-2451 -9692,-2462 -9534,-2515 -9462,-2540 -9254,-2605 -9118,-2649 -9110,-2651 -9075,-2664 -8865,-2732 -8500,-2856 -8428,-2886 -8283,-2917 -7873,-3094 -7497,-3096 -7487,-3097 -7060,-3124 -6810,-3151
 Seitenstreifen, als Radstreifen benutzbar	RW -6277,-3348 -6553,-3235 -6810,-3151
 Güterfelde: Zweirichtungsradweg, Verbundsteinpflaster	RW -3368,-4430 -2534,-4606
 #: note: von rjoop bestätigt:

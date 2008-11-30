@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.62 2008/11/29 16:32:31 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.63 2008/11/30 18:53:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.62 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.63 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -771,130 +771,140 @@ sub street_name_experiment {
 	my($ascent, $descent) = @font_metrics{qw(-ascent -descent)};
 
 	$main::c->delete($tag);
-	my $potsdam_s;
-	{
-	    my $ls = Strassen->new("landstrassen");
-	    $potsdam_s = $ls->grepstreets(sub { $_->[Strassen::NAME()] =~ m{\Q(Potsdam)} });
-	}
-	my $s = MultiStrassen->new("strassen", "fragezeichen", $potsdam_s) || die "Can't open strassen and/or fragezeichen";
-	$s->init;
-	#our $xxx=0;
-	#my $anzahl_eindeutig = $s->count; my $s_i = 0;
-	while(1) {
-	    #$main::progress->Update($s_i/$anzahl_eindeutig) if ($s_i % 500 == 0);
-	    #$xxx++;last if $xxx > 100;
-	    my $use_bold;
-	    my $rec = $s->next;
-	    my $c = $rec->[Strassen::COORDS()];
-	    last if !@$c;
-	    my $name = $rec->[Strassen::NAME()];
-	    $use_bold = 1 if $rec->[Strassen::CAT()] =~ m{^(H|HH|B)$};
-	    # The same street continued? Without interruptions?
+	for my $def ([Strassen->new("strassen"), "s-label"],
+		     [Strassen->new("fragezeichen"), "s-label"],
+		     [do {
+			 my $potsdam_s;
+			 my $ls = Strassen->new("landstrassen");
+			 $ls->grepstreets(sub { $_->[Strassen::NAME()] =~ m{\Q(Potsdam)} });
+		     }, "l-label"],
+		    ) {
+	    my($s, $tag_label) = @$def;
+	    $s->init;
+	    #our $xxx=0;
+	    #my $anzahl_eindeutig = $s->count; my $s_i = 0;
 	    while(1) {
-		my $peek = $s->peek;
-		my $peek_c = $peek->[Strassen::COORDS()];
-		if (!@$peek_c ||
-		    !($peek->[Strassen::NAME()] eq $name &&
-		      $peek_c->[0] eq $c->[-1])) {
-		    last;
-		}
-		push @$c, @{$peek_c}[1..$#$peek_c];
-		if (!$use_bold) {
-		    $use_bold = 1 if $peek->[Strassen::CAT()] =~ m{^(H|HH|B)$};
-		}
-		$s->next;
-	    }
-	    next if @$c < 2 || $c->[0] eq $c->[-1];
-
-	    my($x1,$y1,$x2,$y2) = (main::transpose(split(/,/, $c->[0])),
-				   main::transpose(split(/,/, $c->[-1]))
-				  );
-	    my $using_font = $use_bold ? $bold_font : $regular_font;
-	    $font_char_length{$using_font} ||= {};
-	    my $char_length = $font_char_length{$using_font};
-	    $name = Strasse::strip_bezirk($name);
-	    $name =~ s{:.*}{}; # strip fragezeichen/qualitaet description
-	    my $street_length = Strassen::Util::strecke([$x1,$y1], [$x2,$y2]);
-	    # fontMeasure is slow, so cache single character width, at the
-	    # expense of accuracy (kerning!)
-	    my $text_length = sum map { $char_length->{$_} ||= $main::c->fontMeasure($using_font, $_) } split //, $name;
-	    if ($street_length < $text_length) {
-		if (STREET_NAME_EXPERIMENT_DEBUGGING) {
-		    warn "too long: '$name', street length is $street_length\n";
-		}
-		next;
-	    }
-
-	    # find center of polyline
-	    my $etappe_length = $street_length;
-	    {
-		# Note: working with untransposed coords here
-		my $real_street_length = 0;
-		my @c = map { [split /,/] } @$c;
-		for my $i (1 .. $#c) {
-		    $real_street_length += Strassen::Util::strecke($c[$i-1], $c[$i]);
-		}
-		my $current_street_length = 0;
-		for my $i (1 .. $#c) {
-		    $current_street_length += Strassen::Util::strecke($c[$i-1], $c[$i]);
-		    if ($current_street_length > $real_street_length/2) {
-			# Look back and forth for additional lines which
-			# does not change the angle of the middle line
-			# (only by a tolerant value). This was an bad
-			# example: Kochstr. (in Kreuzberg). This may also
-			# lead to worse results, see Apostel-Paulus-Str.
-			use constant TOLERANT_ANGLE => 3/180*pi;
-			my $begin_i = $i-1;
-			my $end_i = $i;
-			while($end_i < $#c) {
-			    my($deg, undef) = schnittwinkel(@{ $c[$i-1] }, @{ $c[$i] }, @{ $c[$end_i+1] });
-			    last if ($deg > TOLERANT_ANGLE);
-			    $end_i++;
-			}
-			while($begin_i > 0) {
-			    my($deg, undef) = schnittwinkel(@{ $c[$begin_i-1] }, @{ $c[$i-1] }, @{ $c[$i] });
-			    last if ($deg > TOLERANT_ANGLE);
-			    $begin_i--;
-			}
-			($x1,$y1,$x2,$y2) = (main::transpose(@{ $c[$begin_i] }),
-					     main::transpose(@{ $c[$end_i] })
-					    );
-			$etappe_length = Strassen::Util::strecke([$x1,$y1], [$x2,$y2]);
+		# XXX progress stuff does not work anymore, since I am not using MultiStrassen anymore
+		# XXX it didn't work before, either
+		#$main::progress->Update($s_i/$anzahl_eindeutig) if ($s_i % 500 == 0);
+	    #$xxx++;last if $xxx > 100;
+		my $use_bold;
+		my $rec = $s->next;
+		my $c = $rec->[Strassen::COORDS()];
+		last if !@$c;
+		my $name = $rec->[Strassen::NAME()];
+		$use_bold = 1 if $rec->[Strassen::CAT()] =~ m{^(H|HH|B)$};
+		# The same street continued? Without interruptions?
+		while (1) {
+		    my $peek = $s->peek;
+		    my $peek_c = $peek->[Strassen::COORDS()];
+		    if (!@$peek_c ||
+			!($peek->[Strassen::NAME()] eq $name &&
+			  $peek_c->[0] eq $c->[-1])) {
 			last;
 		    }
+		    push @$c, @{$peek_c}[1..$#$peek_c];
+		    if (!$use_bold) {
+			$use_bold = 1 if $peek->[Strassen::CAT()] =~ m{^(H|HH|B)$};
+		    }
+		    $s->next;
 		}
-	    }
+		next if @$c < 2 || $c->[0] eq $c->[-1];
 
-	    my $r = -atan2($y2-$y1, $x2-$x1);
-	    if (1) { $r = 2*pi - $r; }
-	    if (($r > pi && $r <= pi*1.5) ||
-		($r > 2.5*pi && $r <= pi*3)) { # XXXX auf dem Kopf stehend! XXX mathematisch herausfinden, nicht empirisch!
-		($x1,$y1,$x2,$y2) = ($x2,$y2,$x1,$y1);
-		$r = -atan2($y2-$y1, $x2-$x1);
-		if (1) { $r = 2*pi - $r; }
-	    }
-	    my $matrix = $get_rot_matrix->($r, $fontsize/$default_fontsize);
-	    #my $deg = $r*180/pi; print STDERR "$name $deg $matrix\n";
+		my($x1,$y1,$x2,$y2) = (main::transpose(split(/,/, $c->[0])),
+				       main::transpose(split(/,/, $c->[-1]))
+				      );
+		my $using_font = $use_bold ? $bold_font : $regular_font;
+		$font_char_length{$using_font} ||= {};
+		my $char_length = $font_char_length{$using_font};
+		$name = Strasse::strip_bezirk($name);
+		$name =~ s{:.*}{}; # strip fragezeichen/qualitaet description
+		my $street_length = Strassen::Util::strecke([$x1,$y1], [$x2,$y2]);
+		# fontMeasure is slow, so cache single character width, at the
+		# expense of accuracy (kerning!)
+		my $text_length = sum map { $char_length->{$_} ||= $main::c->fontMeasure($using_font, $_) } split //, $name;
+		if ($street_length < $text_length) {
+		    if (STREET_NAME_EXPERIMENT_DEBUGGING) {
+			warn "too long: '$name', street length is $street_length\n";
+		    }
+		    next;
+		}
 
-	    my $fac = ($etappe_length-$text_length)/(2*$etappe_length);
-	    my($xm,$ym) = (int(($x2-$x1)*$fac+$x1), int(($y2-$y1)*$fac+$y1));
-	    if (LABELS_INSIDE_STREET) {
-		# Street labels should be on the street, European style! So
-		# move the labels a little bit towards the center of the
-		# street. On the other hand, this may obscure additional map
-		# signatures (lik equality, vorfahrt etc.).
-		my $delta = $descent + $ascent/2 - ($use_bold ? $delta_HH : $delta_N);
-		($xm,$ym) = move_point_orthogonal($xm,$ym,$x1,$y1,$x2,$y2,$delta);
-	    }
-	    $main::c->createText($xm,$ym,
-				 -text => $name,
-				 -anchor => "sw",
-				 -font => $using_font . ":$matrix",
-				 -tags => [$tag, "s-label"],
-				);
-	    if (STREET_NAME_EXPERIMENT_DEBUGGING) {
-		$main::c->createLine($x1,$y1,$x2,$y2, -arrow => "last", -tags => $tag);
-		$main::c->createLine($xm,$ym,$xm,$ym+1, -capstyle=>"round",-width=>4, -tags => $tag);
+		# find center of polyline
+		my $etappe_length = $street_length;
+		{
+		    # Note: working with untransposed coords here
+		    my $real_street_length = 0;
+		    my @c = map { [split /,/] } @$c;
+		    for my $i (1 .. $#c) {
+			$real_street_length += Strassen::Util::strecke($c[$i-1], $c[$i]);
+		    }
+		    my $current_street_length = 0;
+		    for my $i (1 .. $#c) {
+			$current_street_length += Strassen::Util::strecke($c[$i-1], $c[$i]);
+			if ($current_street_length > $real_street_length/2) {
+			    # Look back and forth for additional lines which
+			    # does not change the angle of the middle line
+			    # (only by a tolerant value). This was an bad
+			    # example: Kochstr. (in Kreuzberg). This may also
+			    # lead to worse results, see Apostel-Paulus-Str.
+			    use constant TOLERANT_ANGLE => 3/180*pi;
+			    my $begin_i = $i-1;
+			    my $end_i = $i;
+			    while ($end_i < $#c) {
+				my($deg, undef) = schnittwinkel(@{ $c[$i-1] }, @{ $c[$i] }, @{ $c[$end_i+1] });
+				last if ($deg > TOLERANT_ANGLE);
+				$end_i++;
+			    }
+			    while ($begin_i > 0) {
+				my($deg, undef) = schnittwinkel(@{ $c[$begin_i-1] }, @{ $c[$i-1] }, @{ $c[$i] });
+				last if ($deg > TOLERANT_ANGLE);
+				$begin_i--;
+			    }
+			    ($x1,$y1,$x2,$y2) = (main::transpose(@{ $c[$begin_i] }),
+						 main::transpose(@{ $c[$end_i] })
+						);
+			    $etappe_length = Strassen::Util::strecke([$x1,$y1], [$x2,$y2]);
+			    last;
+			}
+		    }
+		}
+
+		my $r = -atan2($y2-$y1, $x2-$x1);
+		if (1) {
+		    $r = 2*pi - $r;
+		}
+		if (($r > pi && $r <= pi*1.5) ||
+		    ($r > 2.5*pi && $r <= pi*3)) { # XXXX auf dem Kopf stehend! XXX mathematisch herausfinden, nicht empirisch!
+		    ($x1,$y1,$x2,$y2) = ($x2,$y2,$x1,$y1);
+		    $r = -atan2($y2-$y1, $x2-$x1);
+		    if (1) {
+			$r = 2*pi - $r;
+		    }
+		}
+		my $matrix = $get_rot_matrix->($r, $fontsize/$default_fontsize);
+		#my $deg = $r*180/pi; print STDERR "$name $deg $matrix\n";
+
+		my $fac = ($etappe_length-$text_length)/(2*$etappe_length);
+		my($xm,$ym) = (int(($x2-$x1)*$fac+$x1), int(($y2-$y1)*$fac+$y1));
+		if (LABELS_INSIDE_STREET) {
+		    # Street labels should be on the street, European style! So
+		    # move the labels a little bit towards the center of the
+		    # street. On the other hand, this may obscure additional map
+		    # signatures (lik equality, vorfahrt etc.).
+		    my $delta = $descent + $ascent/2 - ($use_bold ? $delta_HH : $delta_N);
+		    ($xm,$ym) = move_point_orthogonal($xm,$ym,$x1,$y1,$x2,$y2,$delta);
+		}
+		$main::c->createText($xm,$ym,
+				     -text => $name,
+				     -anchor => "sw",
+				     -font => $using_font . ":$matrix",
+				     -tags => [$tag, $tag_label],
+				    );
+		if (STREET_NAME_EXPERIMENT_DEBUGGING) {
+		    $main::c->createLine($x1,$y1,$x2,$y2, -arrow => "last", -tags => $tag);
+		    $main::c->createLine($xm,$ym,$xm,$ym+1, -capstyle=>"round",-width=>4, -tags => $tag);
+		}
 	    }
 	}
     };
