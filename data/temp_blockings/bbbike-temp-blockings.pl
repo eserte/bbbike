@@ -12270,7 +12270,7 @@ EOF
        text  => 'L 033 Strausberg - Berlin zw. AS Berlin-Marzahn und Hönow, Mahlsdorfer Str. Deckenerneuerung Vollsperrung 18.08.2008-26.08.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 27328,15740 26821,15609 26328,15462
+userdel	2::inwork 27328,15740 26908,15630 26328,15462
 EOF
      },
      { from  => 1219183200, # 2008-08-20 00:00

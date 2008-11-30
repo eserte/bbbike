@@ -282,7 +282,7 @@ Mendelssohnstr.	1 11613,13570 11537,13617 11538,13683
 Am Bäkequell	1 4593,5235 4656,5101
 Sella-Hasse-Str.	1 20948,16612 20771,16690 20843,16829
 Buggenhagenstr.	1 14425,13780 14370,13615
-Schollenhof	1 3238,21448 3155,21572 3236,21601 3290,21485
+Schollenhof	1 3238,21448 3155,21572 3236,21601 3280,21477
 Siegfried-Aufhäuser-Platz	1 13939,7504 13928,7529 13942,7556 13967,7556
 Saltykowstr.	1 12726,7887 12865,7923
 (Drorystr. - Braunschweiger Str., Spielplatz): nachts werden die Tore geschlossen	2 13520,7485 13601,7366
@@ -785,6 +785,7 @@ Straßenbahntrasse	3nocross::ignrte 24120,14526 24097,14575 24020,14737
 Heidenauer Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24146,14594 24097,14575 24120,14526
 Riesaer Str. -> Heidenauer Str.: Straßenbahntrasse	3::igndisp 24020,14737 24097,14575 24146,14594
 Straßenbahntrasse	3nocross::ignrte 24198,14454 24162,14487 24120,14526
+Straßenbahntrasse	3nocross::ignrte 24721,14293 24930,14225 25095,14171
 wegen Überführung nicht überquerbar	3nocross::ignrte 17527,7812 17686,7589 17839,7365 18003,7144
 Wattstr. -> Rummelsburger Str.: wegen Überführung nicht überquerbar	3::igndisp 17647,7280 17686,7589 17527,7812
 Rummelsburger Str. -> Wattstr.: wegen Überführung nicht überquerbar	3::igndisp 17839,7365 17686,7589 17647,7280
