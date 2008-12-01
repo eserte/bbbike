@@ -713,6 +713,7 @@ use constant LABELS_INSIDE_STREET => 1; # yes/no
 use constant STREET_NAME_EXPERIMENT_DEBUGGING => 0; # yes/no
 my %font_char_length;
 
+my $street_name_experiment_preinit_already_warned;
 # XXX This sub must currently be physically before
 # street_name_experiment() (because of pi import)
 sub street_name_experiment_preinit {
@@ -725,7 +726,12 @@ sub street_name_experiment_preinit {
     use BBBikeUtil qw(pi schnittwinkel sum);
     use VectorUtil qw(move_point_orthogonal);
     if ($Tk::Config::xlib !~ /-lXft\b/) {
-	main::status_message("Sorry, this experiment needs Tk with freetype support! Consider to recompile Tk with XFT=1", "die");
+	if (!$street_name_experiment_preinit_already_warned) {
+	    main::status_message("Sorry, this experiment needs Tk with freetype support! Consider to recompile Tk with XFT=1", "die");
+	    $street_name_experiment_preinit_already_warned = 1;
+	} else {
+	    die; # silently
+	}
     }
 }
 
