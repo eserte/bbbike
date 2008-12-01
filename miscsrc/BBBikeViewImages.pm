@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.20 2008/08/10 21:54:21 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.21 2008/12/01 22:27:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2007,2008 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $geometry $viewer_menu);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(file_name_is_absolute);
 use File::Basename qw(dirname);
@@ -202,7 +202,7 @@ sub button {
     } grep {
 	my(@tags) = $c->gettags($_);
 	# Could be tag inx 1 or 2
-	grep { /^Image:/ } @tags;
+	grep { /^Image(URL)?:/ } @tags;
 	#my $name = $tags[1];
 	#$name =~ /^Image:/;
     } $c->find("overlapping",
@@ -255,6 +255,18 @@ sub show_image_viewer {
 		    }
 		}
 	    }
+	} elsif ($name =~ /^ImageURL:\s*(.*)$/) {
+	    my $url = $1;
+	    require File::Temp;
+	    require LWP::UserAgent;
+	    my $ua = LWP::UserAgent->new;
+	    $ua->agent("BBBike/$main::VERSION (BBBikeViewImages/$VERSION LWP/$LWP::VERSION)");
+	    my(undef, $file) = File::Temp::tempfile(UNLINK => 1, SUFFIX => "_BBBikeViewImages");
+	    my $resp = $ua->get($url, ':content_file' => $file);
+	    if (!$resp->is_success) {
+		main::status_message("Kann die URL $url nicht herunterladen: " . $resp->status_line, 'die');
+	    }
+	    $abs_file = $file; # XXX suffix? aufräumen?
 	}
 	last if (defined $abs_file)
     }

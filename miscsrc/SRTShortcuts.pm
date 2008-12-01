@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.63 2008/11/30 18:53:57 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.64 2008/12/01 21:15:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.63 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.64 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -713,6 +713,7 @@ use constant LABELS_INSIDE_STREET => 1; # yes/no
 use constant STREET_NAME_EXPERIMENT_DEBUGGING => 0; # yes/no
 my %font_char_length;
 
+{
 my $street_name_experiment_preinit_already_warned;
 # XXX This sub must currently be physically before
 # street_name_experiment() (because of pi import)
@@ -754,6 +755,8 @@ sub street_name_experiment {
     eval {
 	street_name_experiment_init();
 
+	$main::c->delete($tag);
+
 	for my $def ([Strassen->new("strassen"), "s-label"],
 		     [Strassen->new("fragezeichen"), "s-label"],
 		     [do {
@@ -762,7 +765,8 @@ sub street_name_experiment {
 			 $ls->grepstreets(sub { $_->[Strassen::NAME()] =~ m{\Q(Potsdam)} });
 		     }, "l-label"],
 		    ) {
-	    (my($s), $tag_label) = @$def;
+	    my($s, $tag_label) = @$def;
+	    street_name_experiment_init_strassen($s, $tag_label);
 	    $s->init;
 	    #our $xxx=0;
 	    #my $anzahl_eindeutig = $s->count; my $s_i = 0;
@@ -849,8 +853,11 @@ sub street_name_experiment_init {
 
     my %font_metrics = $main::c->fontMetrics($regular_font); # assume bold metrics are the same
     ($ascent, $descent) = @font_metrics{qw(-ascent -descent)};
+}
 
-    $main::c->delete($tag);
+sub street_name_experiment_init_strassen {
+    my(undef, $set_tag_label) = @_;
+    $tag_label = $set_tag_label;
 }
 
 sub street_name_experiment_one {
@@ -951,6 +958,7 @@ sub street_name_experiment_one {
 	$main::c->createLine($xm,$ym,$xm,$ym+1, -capstyle=>"round",-width=>4, -tags => $tag);
     }
 }
+} # scope for street_name_experiment* functions
 
 1;
 

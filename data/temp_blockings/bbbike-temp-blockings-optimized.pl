@@ -563,15 +563,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1228086000,
-         'text' => 'L 373 B112 - Müllrose OL Bri.-Finkenheerd ab KP Bhf-/Sonnenburgstr., 500m Ri. OA Kanal- und Straßenbau Vollsperrung 29.09.2008-30.11.2008 ',
-         'from' => 1222552800,
-         'id' => 1461,
-         'data' => 'userdel	2::inwork 89098,-16962 90109,-16411
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -711,16 +703,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_008229',
-         'until' => 1228085999,
-         'text' => 'Eberswalder Str. (Prenzlauer Berg) Richtung Brunnenstraße zwischen Schwedter Str. und Schönhauser Allee Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist ausgeschildert (bis Ende 11.2008)',
-         'from' => 1226267311,
-         'id' => 1520,
-         'data' => 'userdel	1::inwork 10351,14981 10516,15039 10618,15076 10889,15045
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_009727',
          'until' => 1228172399,
@@ -742,16 +725,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_010519',
-         'until' => 1228085999,
-         'text' => 'Gubitzstr. (Prenzlauer Berg) in beiden Richtungen zwischen Küselstr. und Scheritzstr. Bauarbeiten, Straße vollständig gesperrt (bis Ende 11.2008)',
-         'from' => 1226267528,
-         'id' => 1524,
-         'data' => 'userdel	2::inwork 12463,15774 12384,15618 12299,15463
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_010401',
          'until' => 1275429599,
@@ -823,16 +797,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_010718',
-         'until' => 1228085999,
-         'text' => 'Invalidenstr. (Mitte) in beiden Richtungen zwischen Am Nordbahnhof und Chausseestr. Baustelle, Straße vollständig gesperrt (bis Ende 11.2008)',
-         'from' => 1227353475,
-         'id' => 1538,
-         'data' => 'userdel	2::inwork 9076,13915 8935,13844
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_010662',
          'until' => 1230159600,

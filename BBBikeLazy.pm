@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.27 2008/09/14 21:37:37 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.28 2008/12/01 22:27:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -434,8 +434,19 @@ sub BBBikeLazy::plotstr_on_demand {
     my $something_new = 0;
     my $places_new = 0;
     if (@grids) {
+	my $need_street_name_experiment_init = 1;
 	foreach my $abk (@defs_str_abk) {
 	    next if !$lazy_str{$abk}; # XXX should not happen, but it happens
+	    my $do_street_name_experiment = 0;
+	    if ($str_name_draw{$abk} && $abk =~ m{^(s|l|fz)$} && eval {
+		require SRTShortcuts;
+		SRTShortcuts::street_name_experiment_preinit();
+		SRTShortcuts::street_name_experiment_init();
+		SRTShortcuts::street_name_experiment_init_strassen($lazy_str{$abk}, $abk.'-label');
+		1;
+	    }) {
+		$do_street_name_experiment = 1;
+	    }
 	    my %category_width;
 	    my $default_width = get_line_width($abk) || 4;
 	    #XXX skalieren...
@@ -455,7 +466,22 @@ sub BBBikeLazy::plotstr_on_demand {
 	    my $label_spaceadd = ''; # XXX?
 	    my $transpose = \&transpose;
 	    my $conv = $lazy_str{$abk}->get_conversion;
-	    my $draw_sub = eval $plotstr_draw_sub;
+	    my $draw_sub;
+	    local $str_name_draw{$abk} = $str_name_draw{$abk};
+	    if ($do_street_name_experiment) {
+		my $str_sub = eval $plotstr_draw_sub;
+		my $label_sub = sub { my $rec = shift;
+				      my $use_bold = 1 if $rec->[Strassen::CAT()] =~ m{^(H|HH|B)$};
+				      SRTShortcuts::street_name_experiment_one($rec->[Strassen::NAME()], $rec->[Strassen::COORDS()], $use_bold);
+				  };
+		$draw_sub = sub { my $r = shift;
+				  $str_sub->($r);
+				  $label_sub->($r);
+			      };
+		$str_name_draw{$abk} = 0;
+	    } else {
+		$draw_sub = eval $plotstr_draw_sub;
+	    }
 	    die $@ if $@;
 
 	    foreach my $grid (@grids) {
