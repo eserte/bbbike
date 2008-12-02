@@ -704,16 +704,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_009727',
-         'until' => 1228172399,
-         'text' => 'Köpenicker Str. (Mitte) Richtung Kreuzberg zwischen Brückenstr. und Michaelkirchstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 12.2008)',
-         'from' => 1226267354,
-         'id' => 1521,
-         'data' => 'userdel	1::inwork 11574,11594 11324,11689 11242,11720
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_010086',
          'until' => 1235948399,
