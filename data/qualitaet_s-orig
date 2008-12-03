@@ -399,7 +399,7 @@ Calvinstr.: Kopfsteinpflaster	Q2 6794,12650 6818,12786 6882,13088
 Alt-Pichelsdorf: schlechtes Kopfsteinpflaster	Q3 -3677,11685 -3594,11536 -3423,11460 -3370,11425 -3308,11565
 Glienicker Str.: schlechtes Kopfsteinpflaster	Q3 -7163,356 -7236,300 -7324,276 -7587,312
 Glienicker Str.: mäßiges Kopfsteinpflaster	Q2 -7587,312 -7639,312 -7710,313 -7732,313 -8013,255
-Schäferstr.: Kopfsteinpflaster	Q2 -7232,445 -7365,371 -7587,312
+Schäferstr.: Kopfsteinpflaster	Q2 -7232,445 -7365,371 -7449,348 -7474,341 -7587,312
 Karlsgartenstr.: Kopfsteinpflaster	Q2 11882,8527 11769,8515
 Fontanestr.: unebenes Kopfsteinpflaster	Q2 11632,8302 11645,8212 11665,8130
 Weisestr.: unebenes Kopfsteinpflaster	Q2 11763,8337 11770,8292 11773,8231 11786,8165 11823,7980 11856,7826 11879,7720 11903,7607 11923,7516
@@ -2502,7 +2502,7 @@ Parchimer Str.: guter Beton	Q1 22310,12637 22271,12623 22253,12570 22256,12489 2
 Arberstr.: mäßiger Beton	Q1 19400,9110 19407,9232 19424,9502 19437,9653 19450,9728
 #: confirmed_by: http://www.berlin.de/ba-spandau/presse/archiv/20071109.1320.88651.html bestätigt den Abschnitt Falkenseer Chaussee und Germersheimer Platz
 Zweibrücker Str.: guter Asphalt	Q0 -4489,15014 -4460,15007 -4352,15063 -4338,15137 -4332,15179 -4317,15298 -4308,15411 -4294,15525 -4283,15639 -4254,15813
-Ulricistr.: schlechtes Kopfsteinpflaster	Q3 -7714,529 -7556,542 -7437,603 -7332,662 -7257,703
+Ulricistr.: schlechtes Kopfsteinpflaster	Q3 -7714,529 -7612,542 -7556,559 -7445,615 -7332,662 -7257,703
 Büchsenweg: Asphalt	Q0 8066,18754 8045,18804 7917,18834 7693,18781 7690,18716 7758,18535
 Gembitzer Str.: guter Asphalt	Q0 16815,16214 16889,16378 16948,16482 17059,16560
 #: note: der Eintrag hat explizit nur den Abschnitt Alt-Lankwitz - Kamenzer Damm erwähnt. Laut ADFC-Karte ist die gesamte Strecke "gut geeignet":
@@ -4840,7 +4840,7 @@ Minheimer Str.: Kleinpflastersteine	Q2 2123,25606 2049,25799
 #: by: Peter Koethe:
 Glasberger Str.: guter Asphalt	Q0 22132,7148 22172,7384 22190,7475 22244,7609 22279,7672
 #: by: sven (wesuma):
-Petzower Str.: Asphalt	Q0 -6610,1081 -6581,1066 -6515,1011 -6407,987 -6229,1005 -6175,957
+Petzower Str.: Asphalt	Q0 -6610,1081 -6581,1066 -6515,1011 -6368,989 -6229,1005 -6191,992 -6175,957
 #: by: Carolin (schnattente):
 #: note: ein anonymer Eintrag war zweifelhaft: asphaltiert und Radstreifen?!
 Mahlower Str. (Köpenick): Beton	Q0 21434,3777 21521,3734 21762,3992 21679,4059
@@ -7723,6 +7723,8 @@ Mackebenweg: mäßiges Kopfsteinpflaster	Q2 18329,1116 18529,840
 #: by: Tim (...Tsubasa...):
 #: note: q2 (Fußgänger) ignored (policy)
 Steilpfad: Asphalt	Q0 3280,21477 3376,21224
+#: by: Norbert Hager:
+Klüsserather Weg: Asphalt	Q0 19431,13160 19421,13046 19367,12600 19346,12438 19279,12375 19253,12376
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
