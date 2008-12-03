@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Http.pm,v 3.17 2007/08/08 19:38:55 eserte Exp $
+# $Id: Http.pm,v 4.1 2008/12/03 21:39:34 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1995,1996,1998,2000,2001,2003,2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 1995,1996,1998,2000,2001,2003,2005,2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,12 +20,12 @@ use Socket;
 use Symbol qw(gensym);
 use strict;
 use vars qw(@ISA @EXPORT_OK $VERSION $tk_widget $user_agent $http_defaultheader
-	    $BACKEND $waitVariable $timeout $can_alarm);
+	    $BACKEND $waitVariable $timeout $can_alarm $warned_pack_sockaddr_in);
 
 @ISA = qw(Exporter);
 @EXPORT_OK = qw(get $user_agent $http_defaultheader
 		rfc850_date uuencode);
-$VERSION = sprintf("%d.%02d", q$Revision: 3.17 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 4.1 $ =~ /(\d+)\.(\d+)/);
 
 $tk_widget = 0 unless defined $tk_widget;
 $timeout = 10  unless defined $timeout;
@@ -414,21 +414,30 @@ sub get_plain {
 # gibt undef zurück, wenn kein Socket geöffnet werden konnte
 sub socket {
     my($conn, $host, $port) = @_;
-    my($sockaddr, $name, $aliases, $proto, $type, $len,
-       $thataddr, $this, $that, $dummy, $old);
 
     my $AF_INET = &AF_INET;
     my $SOCK_STREAM = &SOCK_STREAM;
 
-    $sockaddr = 'S n a4 x8';
-    ($name, $aliases, $proto) = getprotobyname('tcp');
+    my(undef, undef, $proto) = getprotobyname('tcp');
     if (int($port) ne $port) {
-	($name, $aliases, $port, $proto) = getservbyname($port, $dummy);
+	my $dummy;
+	(undef, undef, $port, $proto) = getservbyname($port, $dummy);
     }
-    ($name, $aliases, $type, $len, $thataddr) = gethostbyname($host);
+    my($name, undef, undef, undef, $thataddr) = gethostbyname($host);
     croak("Can't get host by name: $host") if (!defined $thataddr);
-    $this = pack($sockaddr, $AF_INET, 0);
-    $that = pack($sockaddr, $AF_INET, $port, $thataddr);
+    my($this, $that);
+    if (defined &Socket::pack_sockaddr_in && &Socket::INADDR_ANY) {
+	$this = Socket::pack_sockaddr_in(0, Socket::INADDR_ANY());
+	$that = Socket::pack_sockaddr_in($port, $thataddr);
+    } else {
+	if (!$warned_pack_sockaddr_in) {
+	    warn "Fallback to unreliable manual packing for sockaddr...\n";
+	    $warned_pack_sockaddr_in++;
+	}
+	my $sockaddr = 'S n a4 x8';
+	$this = pack($sockaddr, $AF_INET, 0);
+	$that = pack($sockaddr, $AF_INET, $port, $thataddr);
+    }
     # Make the socket filehandle.
     socket($conn, $AF_INET, $SOCK_STREAM, $proto) ||
 	croak "socket: $!";
@@ -437,7 +446,7 @@ sub socket {
     # Call up the server.
     connect($conn, $that) || croak "Couldn't connect to $name $port\n$!\n";
     # Set socket to be command buffered.
-    $old = select; select($conn); $| = 1; select($old);
+    my $old = select; select($conn); $| = 1; select($old);
     1;
 }
 
@@ -648,7 +657,7 @@ Slaven Rezic <srezic@cpan.org>
 
 =head1 COPYRIGHT
 
-Copyright (c) 1995,1996,1998,2000,2001,2003,2005 Slaven Rezic. All rights reserved.
+Copyright (c) 1995,1996,1998,2000,2001,2003,2005,2008 Slaven Rezic. All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 

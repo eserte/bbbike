@@ -13089,4 +13089,38 @@ EOF
 userdel	2::inwork 13766,6019 13971,5978 14136,5831 14241,5674
 EOF
      },
+     { from  => 1228340462, # 2008-12-03 22:41
+       until => 1233442799, # 2009-01-31 23:59
+       text  => 'Köpenicker Str. (Mitte) Richtung Kreuzberg zwischen Brückenstr. und Michaelkirchstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 01.2009)',
+       type  => 'gesperrt',
+       source_id => 'IM_009727',
+       data  => <<EOF,
+userdel	1::inwork 11242,11720 11324,11689 11574,11594
+EOF
+     },
+     { from  => 1228340492, # 2008-12-03 22:41
+       until => 1233442799, # 2009-01-31 23:59
+       text  => 'Nöldnerstr. (Lichtenberg) Richtung Karlshorster Str. zwischen Lückstr. und Karlshorster Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 01.2009)',
+       type  => 'gesperrt',
+       source_id => 'IM_010255',
+       data  => <<EOF,
+userdel	1::inwork 16032,10842 15670,10800 15396,10767 15266,10791
+EOF
+     },
+     { from  => 1228431600, # 2008-12-05 00:00
+       until => 1228690800, # 2008-12-08 00:00
+       text  => 'B 096 Straße der Jugend OL Zossen zw.York- und Mittenwalder-/Baruther Str. (B246) Einbau Deckschicht Vollsperrung 06.12.2008-07.12.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 14604,-22009 14714,-22665
+EOF
+     },
+     { from  => 1227394800, # 2008-11-23 00:00
+       until => 1229727600, # 2008-12-20 00:00
+       text  => 'L 025 Güstow - Schönermark zw. Schönermark und Wilhelmshof Straßenbauarbeiten Vollsperrung 24.11.2008-19.12.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 30734,103253 29305,103289
+EOF
+     },
     );
