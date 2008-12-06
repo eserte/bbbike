@@ -7,6 +7,7 @@ $VERSION = "1.2.2 (patched by SRT)";
 
 use Cwd;
 use File::Spec;
+use Socket qw();
 
 if ($^O eq 'MSWin32') {
     require File::Basename;
@@ -22,18 +23,23 @@ if ($^O eq 'MSWin32') {
 			       File::Spec->updir);
 }
 $sockaddr = 'S n a4 x8';
+$port = 22295;
 
 if ($^O ne 'MSWin32') {
     # use as few forks as possible on Windows...
     if ($pid = fork()) { exit; }
 }
 $0 = "dhttpi: binding port ...";
-$bindthis = pack($sockaddr, 2, 22295, pack('l', chr(0).chr(0).chr(0).chr(0)));
+if (defined &Socket::pack_sockaddr_in && &Socket::INADDR_ANY) {
+    $bindthis = Socket::pack_sockaddr_in($port, Socket::INADDR_ANY());
+} else {
+    $bindthis = pack($sockaddr, 2, $port, pack('l', chr(0).chr(0).chr(0).chr(0)));
+}
 socket(S, 2, 1, 6);
 setsockopt(S, 65535, 4, 1);
-bind(S, $bindthis) || die("$0: while binding port 22295:\n\"$!\"\n");
+bind(S, $bindthis) || die("$0: while binding port $port:\n\"$!\"\n");
 listen(S, 128);
-$0 = "dhttpi: connected and waiting ANY:22295";
+$0 = "dhttpi: connected and waiting ANY:$port";
 
 $statiosuptime = time();
 
@@ -70,7 +76,12 @@ sub sock_to_host {
 	local($sock) = getpeername(STDIN);
 
 	return (undef, undef, undef) if (!$sock);
-	local($AFC, $port, $thataddr, $zero) = unpack($sockaddr, $sock);
+	local($AFC, $port, $thataddr, $zero);
+	if (defined &Socket::unpack_sockaddr_in) {
+	    ($port, $thataddr) = Socket::unpack_sockaddr_in($sock);
+	} else {
+	    ($AFC, $port, $thataddr, $zero) = unpack($sockaddr, $sock);
+	}
 	local($ip) = join('.', unpack("C4", $thataddr));
 	return ($ip, $port, $ip);
 }
@@ -231,7 +242,7 @@ HTTPi Status for Server localhost
 </head>
 <body bgcolor = "#ffffff" text = "#000000" vlink = "#0000ff" link = "#0000ff">
 <h1>HTTPi Server Status (<code>$VERSION</code>)</h1>
-<h3><code>localhost</code> on ANY:22295</h3>
+<h3><code>localhost</code> on ANY:$port</h3>
 <b>Started at:</b> $suptime<br>
 <b>Uptime:</b> $d days, $h:$m:$s<br>
 <b>Last request time:</b> $statiosltr<p>
@@ -255,7 +266,7 @@ EOF
 	$address =~ s/%([0-9a-fA-F]{2})/pack("H2", $1)/eg;
 	$raddress = "$path$address"
 	;
-	&hterror301("http://localhost:22295$address/")
+	&hterror301("http://localhost:$port$address/")
 		if ($address !~ m#/$# && -d $raddress);
 	$raddress = "${raddress}index.html" if (-d $raddress);
 	alarm 0 unless $^O eq 'MSWin32';
@@ -277,8 +288,8 @@ EOF
 			$ENV{'SERVER_NAME'} = "localhost";
 			$ENV{'SERVER_PROTOCOL'} = "HTTP/$httpver";
 			$ENV{'SERVER_SOFTWARE'} = "HTTPi/$VERSION";
-			$ENV{'SERVER_PORT'} = "22295";
-			$ENV{'SERVER_URL'} = "http://localhost:22295/";
+			$ENV{'SERVER_PORT'} = $port;
+			$ENV{'SERVER_URL'} = "http://localhost:$port/";
 			$ENV{'SCRIPT_FILENAME'} = $raddress;
 			$ENV{'SCRIPT_NAME'} = $address;
 			$ENV{'REMOTE_HOST'} = $hostname;
@@ -368,7 +379,7 @@ for (;;) {
   	if ($pid = fork()) {
   		$0 = "dhttpi: waiting for child process";
   		waitpid($pid, 0);
-  		$0 = "dhttpi: on ANY:22295, last request " .
+  		$0 = "dhttpi: on ANY:$port, last request " .
   			scalar localtime;
   	} else {
 		$0 = "dhttpi: child switching to socket";

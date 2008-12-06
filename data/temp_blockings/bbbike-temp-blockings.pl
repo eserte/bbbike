@@ -13123,4 +13123,13 @@ EOF
 userdel	2::inwork 30734,103253 29305,103289
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Köpenicker Str. (Alt-Glienicke) in beiden Richtungen zwischen Semmelweisstr. und Grünauer Str. Straßenschäden, Straße vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_010810',
+       data  => <<EOF,
+userdel	2::inwork 19806,1903 19771,1793
+EOF
+     },
     );

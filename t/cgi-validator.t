@@ -2,15 +2,20 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-validator.t,v 1.10 2008/08/16 07:52:42 eserte Exp $
+# $Id: cgi-validator.t,v 1.11 2008/12/06 11:35:31 eserte Exp $
 # Author: Slaven Rezic
 #
 
 # In case of problems (test failures) try to update W3C-LogValidator
 
 use strict;
+use FindBin;
+use lib "$FindBin::RealBin/..";
+
 use Data::Dumper;
 use Getopt::Long;
+
+use BBBikeUtil qw(is_in_path);
 
 BEGIN {
     if (!eval q{
@@ -21,6 +26,11 @@ BEGIN {
 	1;
     }) {
 	print "1..0 # skip: no Test::More and/or W3C::LogValidator modules\n";
+	exit;
+    }
+
+    if (!is_in_path("checklink")) {
+	print "1..0 # skip: W3C::LogValidator::LinkChecker needs the checklink program\n";
 	exit;
     }
 }

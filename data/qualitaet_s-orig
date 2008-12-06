@@ -2577,7 +2577,7 @@ Bröndbystr.: Asphalt	Q0 3500,1587 3273,1302 3312,1241 3384,1297
 Kurpromenade: mäßiger Asphalt	Q1 -8917,5986 -8864,6289 -8862,6375 -8860,6439 -8859,6540 -8868,6798 -8804,6818 -8732,6840 -8656,6864 -8567,6893
 #: note: ein weiteres Mal von anonymous bestätigt:
 Schriftsetzerweg: Asphalt	Q0 15875,1796 15967,1718 16200,1499
-Wodanstr.: Kopfsteinpflaster	Q2 8821,19331 8739,19475 8704,19534 8621,19683 8573,19766 8522,19852 8494,19899 8415,19910
+Wodanstr.: Kopfsteinpflaster	Q2 8824,19360 8739,19475 8704,19534 8621,19683 8573,19766 8522,19852 8494,19899 8415,19910
 Tödiweg: Asphalt	Q0 9431,2059 9470,1863 9503,1693 9493,1661
 Ledebourstr.: mäßiger Asphalt	Q1 24455,10113 24699,10060 24755,10028 24854,9975 25262,9740 25312,9704 25413,9613 25476,9561
 Seelbuschring: Betonplatten, OK	Q1 8242,4648 8432,4712 8485,4619
@@ -2969,7 +2969,7 @@ Apostel-Paulus-Str.: Kopfsteinpflaster?	Q2 7044,9163 6945,9142 6885,9132 6735,91
 #: by: ^^^
 #: by: Christiane Wiersch: vvv
 Waldstr. (Niederschönhausen): asphaltiert	Q0 10018,19429 9978,19512
-Waldstr. (Niederschönhausen): Kleinsteinpflaster	Q1 9978,19512 9906,19718 9840,19923
+Waldstr. (Niederschönhausen): Kleinsteinpflaster	Q1 9978,19512 9878,19741 9864,19793 9840,19923
 #: confirmed_by: Uta Voigt:
 Waldstr. (Niederschönhausen): asphaltiert	Q0 9840,19923 9788,20035 9754,20134 9725,20260 9718,20498
 #: by: ^^^
@@ -3636,9 +3636,9 @@ Alemannenallee: Asphalt	Q0 943,11302 1065,11216 1181,11136
 #: by: Christian Lochner: vvv
 #: add_fragezeichen: Qualität der Kuckhoffstr. östlich des Zingergrabens?
 #: XXX: Wolfhard Schleese: Richtung Friedrich-Engelsstr. geht es mit Kopfsteinen weiter, weiß aber nicht wie weit. (auf jeden Fall kein Q0!):
-Kuckhoffstr.: guter Asphalt	Q0 10167,19797 9906,19718 9677,19651 9482,19594 9214,19533 9054,19496
+Kuckhoffstr.: guter Asphalt	Q0 10167,19797 10004,19765 9878,19741 9717,19692 9646,19670 9468,19599 9214,19533 9054,19496
 #: corrected_by: Wolfhard Schleese (Asphalt -> Beton)
-Kuckhoffstr.: guter Beton	Q0- 9054,19496 9039,19486 8821,19331 8765,19288
+Kuckhoffstr.: guter Beton	Q0- 9054,19496 9039,19486 8987,19449 8824,19360 8792,19335 8765,19288
 #: by: ^^^
 #: by: Adam Förster:
 #: XXX: auch im Abschnitt unter der S-Bahn (dort gibt es eine Buslinie)?
@@ -4659,7 +4659,7 @@ Amalienpark: schlechtes Kopfsteinpflaster	Q3 10950,18499 10905,18671
 Eichenstr. (Niederschönhausen): guter Asphalt	Q0 9300,19949 9408,19968 9788,20035 10095,20090
 #: note: laut ADFC-Karte gut geeignet
 #: confirmed_by: mianos@...
-Treskowstr. (Niederschönhausen): asphaltiert	Q0 9978,19512 9809,19529 9714,19615 9677,19651 9565,19751 9489,19826 9408,19968 9372,20065 9360,20152 9357,20213
+Treskowstr. (Niederschönhausen): asphaltiert	Q0 9978,19512 9809,19529 9714,19615 9646,19670 9565,19751 9489,19826 9408,19968 9372,20065 9360,20152 9357,20213
 #: by: ^^^
 #: by: Stephan Fleischer:
 Goethestr. (Lichterfelde): mäßiges Kopfsteinpflaster	Q2 4526,2635 4568,2424 4620,2155 4660,2116

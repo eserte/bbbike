@@ -874,6 +874,16 @@ push @temp_blocking,
          'data' => 'userdel	2::inwork 30734,103253 29305,103289
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_010810',
+         'until' => undef,
+         'text' => 'Köpenicker Str. (Alt-Glienicke) in beiden Richtungen zwischen Semmelweisstr. und Grünauer Str. Straßenschäden, Straße vollständig gesperrt',
+         'from' => undef,
+         'id' => 1550,
+         'data' => 'userdel	2::inwork 19806,1903 19771,1793
+',
+         'type' => 'gesperrt'
        }
      
 );
