@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.151 2008/11/25 21:28:23 eserte Exp $
+# $Id: Makefile.PL,v 1.152 2008/12/07 23:19:40 eserte Exp $
 
 use 5.005;
 
@@ -220,7 +220,6 @@ my @req_table =
   [qw/Image::Info	0	all	0	test/],
   [qw/Test::More	0	all	0	test/],
   [qw/Test::Differences	0	all	0	test/],
-  [qw/Test::NoWarnings	0	all	0	test/],
   [qw/WWW::Mechanize	0	all	2	test/,
    'Für Testen des CGI-Interfaces'],
   [qw/WWW::Mechanize::FormFiller	0	all	2	test/,
@@ -238,6 +237,11 @@ my @req_table =
   # Text::LevenshteinXS - PLZ::Levenshtein
   # Tk::Wizard - BBBikeImportWizard
  );
+## XXX This is a optional requisite, but currently taken out
+## because of http://rt.cpan.org/Ticket/Display.html?id=41521
+## May be taken in again if ExtUtils::MakeMaker is patched (patch
+## and ticket pending):
+#  [qw/Test::NoWarnings	0	all	0	test/],
 
 # EXE corequisites ####################################################
 # standard Unix: uname, who, tee, at, diff, zcat, ping

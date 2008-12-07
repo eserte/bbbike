@@ -13132,4 +13132,12 @@ EOF
 userdel	2::inwork 19806,1903 19771,1793
 EOF
      },
+     { from  => 1228675001, # 2008-12-07 19:36
+       until => 1230159600, # 2008-12-25 00:00
+       text  => 'Simplonstr. zwischen Lenbachstr. und Matkowskystr. bis 24.12.2008 gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 14597,11069 14530,11137
+EOF
+     },
     );

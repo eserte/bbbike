@@ -857,15 +857,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1228690800,
-         'text' => 'B 096 Straße der Jugend OL Zossen zw.York- und Mittenwalder-/Baruther Str. (B246) Einbau Deckschicht Vollsperrung 06.12.2008-07.12.2008 ',
-         'from' => 1228431600,
-         'id' => 1548,
-         'data' => 'userdel	2::inwork 14604,-22009 14714,-22665
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1229727600,
          'text' => 'L 025 Güstow - Schönermark zw. Schönermark und Wilhelmshof Straßenbauarbeiten Vollsperrung 24.11.2008-19.12.2008 ',
@@ -882,6 +874,15 @@ push @temp_blocking,
          'from' => undef,
          'id' => 1550,
          'data' => 'userdel	2::inwork 19806,1903 19771,1793
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1230159600,
+         'text' => 'Simplonstr. zwischen Lenbachstr. und Matkowskystr. bis 24.12.2008 gesperrt',
+         'from' => 1228675001,
+         'id' => 1551,
+         'data' => 'userdel	2::inwork 14597,11069 14530,11137
 ',
          'type' => 'gesperrt'
        }

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.41 2008/11/29 16:09:03 eserte Exp $
+# $Id: bbbikedraw.t,v 1.42 2008/12/07 19:20:36 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -151,6 +151,13 @@ sub usage {
 -start name
 -goal name:       Set name for start and goal
 ";
+}
+
+# ImageMagick support is experimental and incomplete anyway, so do not
+# depend on this
+if (!eval { require Image::Magick; 1 }) {
+    warn "Image::Magick not available, do not test ImageMagick-related drawtypes...\n";
+    @modules = grep { !/^ImageMagick/ } @modules;
 }
 
 if (!GetOptions(get_std_opts("display"),
