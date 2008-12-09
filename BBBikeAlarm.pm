@@ -368,9 +368,24 @@ sub enter_alarm_small_dialog {
     my $okb =
 	$bf->Button(-text => "OK",
 		    -command => sub {
-			my($h_a, $m_a) = $time =~ /(?:^|\s)(\d{1,2})[:.]?(\d{2})(?:$|\s)/;
+			my($h_a, $m_a);
+			if (my($delta_h, $delta_m) = $time =~ /(?:^|\s)\+(\d{1,2})[:.]?(\d{2})(?:$|\s)/) {
+			    my @l = localtime;
+			    $m_a = $l[1] + $delta_m;
+			    if ($m_a >= 60) {
+				$m_a %= 60;
+				$delta_h++;
+			    }
+			    $h_a = $l[2] + $delta_h;
+			    if ($h_a >= 24) {
+				$h_a %= 24;
+				# overflows are hopefully handled by tk_leave
+			    }
+			} else {
+			    ($h_a, $m_a) = $time =~ /(?:^|\s)(\d{1,2})[:.]?(\d{2})(?:$|\s)/;
+			}
 			if (!defined $h_a || !defined $m_a) {
-			    $top->messageBox(-message => "Wrong time format, should be HH:MM",
+			    $top->messageBox(-message => "Wrong time format, should be HH:MM or +HH:MM",
 					     -icon => "error",
 					     -type => "OK");
 			    $e[0]->focus;
