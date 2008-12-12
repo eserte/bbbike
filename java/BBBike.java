@@ -3,19 +3,9 @@
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Event;
-import java.awt.Frame;
-import java.awt.Graphics;
-import java.awt.BorderLayout;
-import java.awt.Panel;
-import java.awt.Scrollbar;
 
-import java.awt.GraphicsEnvironment;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsConfiguration;
-import java.awt.Rectangle;
+import java.awt.*;
+import java.awt.event.*;
 
 import java.io.*;
 //import MyCanvas;
@@ -87,6 +77,12 @@ System.err.println("x/y=" + berlin_mitte_txy[0] + "/" + berlin_mitte_txy[1]);
 */
     top.setSize(200,250);
     top.show();
+
+    top.addWindowListener(new WindowAdapter() {
+        public void windowClosing(WindowEvent we) {
+          System.exit(0);
+        }
+      });
   }
 
   public void plotstr() throws FileNotFoundException { // throws Exception { // File filename, String abk) {
