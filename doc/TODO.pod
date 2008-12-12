@@ -3967,12 +3967,8 @@ Sehenswürdigkeiten verwendet werden.
 
 =item * (H1)
 
-Tcl version is too slow --- get rid of the E<quot>calculate and show
-all crossingsE<quot>
-
-=item * (H1)
-
-Java version does not compile anymore with Java 1.5
+Tcl version is too slow --- startup is fine, but calculation of the
+route may be quite slow, up to a minute.
 
 =back
 
