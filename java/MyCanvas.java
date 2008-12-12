@@ -173,4 +173,5 @@ class MyCanvas extends Canvas
 
 // Local variables:
 // c-basic-offset: 2
+// tab-width: 8
 // End:

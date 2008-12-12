@@ -5,6 +5,7 @@
 #JAVAROOT?=/usr/lib/java
 
 #DEBUG=	-g
+#DEBUG= -Xlint:deprecation -Xlint:unchecked
 
 #JAVAC=$(JAVAROOT)/bin/javac $(DEBUG)
 #JAVA=$(JAVAROOT)/bin/java
