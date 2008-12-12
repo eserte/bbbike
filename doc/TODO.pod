@@ -1298,8 +1298,6 @@ auch nicht implementieren
 
   * E3 make test unter Windows/cygwin ausf¸hren
 
-  * E3 bbbike -public unter Windows/cygwin ausf¸hren
-
   * M3 make ext unter cygwin machen => habe ich Inline installiert?
 
   * evtl. overview-fenster so positionieren, dass die canvas-scrollbars nicht
@@ -1935,21 +1933,26 @@ Radroutenlogos:
     http://commons.wikimedia.org/wiki/Image:Piktogramm_Mecklenburgischer_Seen-Radweg.JPG
     http://commons.wikimedia.org/wiki/Image:Pictogramm_Ostseek%C3%BCsten-Radweg.jpg
 
-=item * (E3)
+=item * (H3)
 
 Bahntrassenradeln: L<http://www.achim-bartoschek.de/bahn_bb.htm>
 
  BBN1: ignore
- BBO1: eingepflegt (Qualit‰t vielleicht mit aufnehmen)
+ BBO1: eingepflegt (Qualit‰t vielleicht mit aufnehmen) (hmm, doch nicht eingepflegt,
+       oder wurde die Nummerierung ge‰ndert?)
 
-=item * (E3)
+Eine groﬂe Liste von stillgelegten Bahnstrecken in Deutschland, die
+als Radwege umgewidmet wurden. Leider recht wenig Angaben zur
+Qualit‰t, auﬂerdem m¸sste man sich die Streckenf¸hrung heraussuchen...
+
+=item * (H3)
 
 GPS-Tracks in BRB: L<http://www.das-rad-ruft.de/Radtouren/index.php?Bundesland=11&id=431&action=Suche>
 
 Bereits eingepflegt: Ahrensfede-Gamegrund-Niederfinow.trk,
 Berlin-Bredereiche.trk, Teile von anderen.
 
-=item * (E3)
+=item * (H3)
 
 Radrouten im Raum Potsdam:
 
@@ -1980,46 +1983,48 @@ Radrouten im Raum Potsdam:
   Route F3/6
   Werder - Werder Inselstadt - Glindow - Plessow - Werder
 
-=item * (E3)
+(M¸sste vor Ort recherchiert werden)
+
+=item * (H3)
 
 Der Spreeradweg: L<http://www.spreeradweg.de/>
 
-=item * (E3)
+=item * (H3)
 
 Berlin-Kopenhagen: L<http://www.bike-berlin-copenhagen.com/>
 
-=item * (E3)
+=item * (H3)
 
 Berlin-Usedom: L<http://www.berlin-usedom-radweginfo.de/>
 
 Anfahrtsbeschreibung: L<http://www.teamdochnoch.de/mtb-barnim/MTBB_11.html>
 
-=item * (E3)
+=item * (H3)
 
 Broschuere der Landesregierung Brandenburg:
 L<http://www.wirtschaft.brandenburg.de/sixcms/media.php/1312/broschurrad.pdf>
 
-=item * (E3)
+=item * (H3)
 
 Radtouren im Raum Potsdam:
 L<http://www.f-monzer-co.de/easteuro/hhklinik.htm>
 
-=item * (E3)
+=item * (H3)
 
 Radfahren - Mobil in Potsdam:
 L<http://www.mobil-potsdam.de/radfahren.htm>
 
-=item * (E3)
+=item * (H3)
 
 Radwegkonzept MOL:
 L<http://www.maerkisch-oderland.de/landratsamt/bauplanungsamt/Radwege2002.pdf>
 
-=item * (E3)
+=item * (H3)
 
 Allgemein:
 L<http://www.berliner-rundfunk.de/cgi-bin/WebObjects/brf.woa/wa/CMSshow/1058650>
 
-=item * (E3)
+=item * (H3)
 
 GPS-Tracks zusammenfassen.
 
@@ -2071,7 +2076,7 @@ Neue Straﬂen in Mitte (jetzt und zuk¸nftig):
 Lehrter Bahnhof:
 Emma-Herwegh-Straﬂe (DONE),
 Europaplatz (DONE),
--> Agnes-Zahn-Harnack-Straﬂe,
+-> Agnes-Zahn-Harnack-Straﬂe 7776,13105 7935,13197,
 Ilse-Scheffer-Straﬂe (DONE),
 Washingtonplatz (DONE),
 Ella-Trebe-Straﬂe (DONE),
@@ -2082,7 +2087,7 @@ Clara-Jaschke-Straﬂe (DONE)
 Nordbahnhof, Stettiner CarrE<eacute>:
 Julie-Wolfthorn-Straﬂe (DONE),
 Caroline-Michaelis-Straﬂe (DONE),
--> Elisabeth-Schwarzhaupt-Platz
+-> Elisabeth-Schwarzhaupt-Platz 9063,14050 9148,13942
 
 Elisabeth-L¸ders-Haus, Straﬂe davor:
 Adele-Schreiber-Krieger-Straﬂe (DONE)
@@ -2096,9 +2101,6 @@ Caroline-von-Humboldt-Weg (DONE)
 Luisenstadt:
 Paula-Thiede-Ufer (DONE),
 Bona-Peiser-Straﬂe (DONE (weg))
-
-Nochmal sichergehen: (leider existiert dieser Link nicht mehr)
-L<http://www.berlin-mitte.de/index_6819_de.html>
 
 =item * (E1)
 
