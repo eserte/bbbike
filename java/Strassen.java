@@ -95,6 +95,9 @@ class Strassen implements GeneralStrassen {
     }
   }
 
+  public Strassen () {
+  }
+
   public Strassen (File filename) throws FileNotFoundException { // XXX $koord fehlt
     initObject(filename);
   }
