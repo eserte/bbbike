@@ -2207,7 +2207,7 @@ Grenzstr. (Mahlsdorf): Asphalt	Q0 23188,9593 23166,9549 23120,9443 23072,9341 23
 Eschenstr.: sehr guter Asphalt	Q0 23018,9226 22947,9277 22666,9479 22548,9523 22437,9534 22402,9551 22366,9571
 Heerstr.: Beton mit Sch‰den/Asphalt	Q0 22366,9571 22129,9702
 Heerstr.: Beton	Q0 22129,9702 21988,9766 21842,9829 21749,9856 21686,9876 21611,9893
-Heesestr.: Asphalt	Q0 21611,9893 21526,9904 21371,9923 21156,9970
+Heesestr.: Asphalt	Q0 21611,9893 21534,9901 21371,9923 21156,9970
 Parchimer Str.: guter Beton	Q1 22310,12637 22271,12623 22253,12570 22256,12489 22212,12422 22212,12349 22228,12274 22292,12198 22304,12157
 Arberstr.: m‰ﬂiger Beton	Q1 19400,9110 19407,9232 19424,9502 19437,9653 19450,9728
 Zweibr¸cker Str.: guter Asphalt	Q0 -4489,15014 -4460,15007 -4352,15063 -4338,15137 -4332,15179 -4317,15298 -4308,15411 -4294,15525 -4283,15639 -4254,15813
@@ -3350,7 +3350,7 @@ Am Schloﬂpark: lˆchriger Asphalt, aber OK	Q1 11054,19226 10775,19054
 Am Schloﬂpark: Asphalt	Q0 10775,19054 10712,18975
 Am Schloﬂpark: schlechtes Kopfsteinpflaster	Q3 10712,18975 10625,18831
 Am Schloﬂpark: Asphalt	Q0 10625,18831 10496,18704
-Birkenallee: Kopfsteinpflaster	Q2 21110,9686 21321,9672 21454,9663
+Birkenallee: Kopfsteinpflaster	Q2 21110,9686 21321,9672 21480,9662
 Straﬂe 52a: m‰ﬂiger Asphalt	Q1 11212,21128 10119,20731
 Heinrichstr. (Lichtenberg): Kopfsteinpflaster	Q2 16790,10955 16869,11190 16936,11409
 Buttmannstr.: schlechtes Kopfsteinpflaster	Q3 8481,16136 8659,16327
@@ -4617,7 +4617,8 @@ Dihlmannstr.: Fahrbahn Kopfsteinpflaster, paralleler Radweg glatt gepflaster	Q1 
 Im Eichengrund: gutes Kopfsteinpflaster	Q1 976,15195 921,15359 901,15386 885,15435 877,15474
 Im Heidewinkel: schlechtes Kopfsteinpflaster	Q3 1065,15229 981,15490
 Im Heidewinkel: schlechtes Kopfsteinpflaster	Q3 772,15460 877,15474 981,15490 968,15576
-Torgauer Str. (Hellersdorf): Asphalt	Q0 25348,15152 25361,15266 25370,15348 25243,15364 25126,15380 25127,15412 24982,15433
+Torgauer Str. (Hellersdorf): Asphalt	Q0 25348,15152 25361,15266 25370,15348 25374,15368
+Torgauer Str. (Hellersdorf): Asphalt	Q0 25370,15348 25243,15364 25126,15380 25127,15412 24982,15433
 Scharnweberstr. (Hohenschˆnhausen): schlechtes Kopfsteinpflaster	Q3 15996,15620 16036,15722 16080,15830
 Kieselbronner Weg: Verbundsteinpflaster	Q0 6107,22383 6013,22497
 Renschweg: guter Asphalt	Q0 13400,1884 13389,1852 13397,1657
@@ -4956,7 +4957,7 @@ Windenweg: guter Beton	Q0 16306,2364 16106,2514 16012,2592 15923,2667 15870,2768
 Stadtheidestr.: m‰ﬂiger Asphalt	Q1 -3573,16006 -3684,15982
 Julius-Hart-Str.: guter Beton	Q0 26061,5467 26196,5477 26270,5563
 Freitaler Str.: m‰ﬂiges Verbundsteinpflaster	Q2 15579,745 15677,797 15776,850 15872,902 15970,954
-Pilatusweg: Kopfsteinpflaster	Q2 9786,2657 9857,2678 10015,2651 10136,2618 10160,2613 10268,2590
+Pilatusweg: schlechtes Kopfsteinpflaster	Q3 9786,2657 9857,2678 10015,2651 10136,2618 10160,2613 10268,2590
 Wildkanzelweg: m‰ﬂiger fester Sandweg	Q2 3289,26383 3281,26524 3250,26673 3228,26728
 Cimbernstr. (Nikolassee): schlechtes Kopfsteinpflaster	Q3 -3753,2241 -3703,2137 -3503,1988 -3299,1838
 Zu den sieben Raben: schlechtes Kopfsteinpflaster	Q3 23033,6511 23045,6622 23034,6719
@@ -5030,6 +5031,8 @@ Wienroder Pfad: Asphalt	Q0 4940,1432 4905,1527 4895,1523 4855,1616
 Mackebenweg: m‰ﬂiges Kopfsteinpflaster	Q2 18329,1116 18529,840
 Steilpfad: Asphalt	Q0 3280,21477 3376,21224
 Kl¸sserather Weg: Asphalt	Q0 19431,13160 19421,13046 19367,12600 19346,12438 19279,12375 19253,12376
+Fischer-Dieskau-Weg: m‰ﬂige wassergebundene Decke	Q2 -151,2975 -81,2699
+Fortunaallee: Kopfsteinpflaster	Q2 21314,9083 21354,9259 21379,9380 21414,9545 21480,9662 21518,9716 21526,9781 21534,9901
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953

@@ -599,15 +599,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1229122800,
-         'text' => 'L 232 Lichtenow - Rehfelde Brücke über das Zinndorfer Mühlenfließ bei Werder Brückenerneuerung Vollsperrung 15.09.2008-12.12.2008 ',
-         'from' => 1221343200,
-         'id' => 1481,
-         'data' => 'userdel	2::inwork 46163,13586 46017,13884
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -738,15 +730,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1229209200,
-         'text' => 'B 273 Bernauer Str. OD Oranienburg, zw. Schmachtenhagener Str. und Kölner Str. Straßenbauarbeiten Vollsperrung 04.11.2008-13.12.2008 ',
-         'from' => 1225666800,
-         'id' => 1528,
-         'data' => 'userdel	q4::inwork 187,39231 221,39242 570,39376 643,39426 1223,39893
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1230073200,
          'text' => 'L 015 Fürstenberg - Menz zw. Fürstenberg und Abzw. Altglobsow Straßenbau Vollsperrung 10.11.2008-23.12.2008 ',
@@ -799,15 +783,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1228950000,
-         'text' => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 05.12.2008-10.12.2008 ',
-         'from' => 1228345200,
-         'id' => 1540,
-         'data' => 'userdel	2::inwork 41424,91331 41387,91306 41361,91289
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1231714800,
          'text' => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 10.01.2009-11.01.2009 ',

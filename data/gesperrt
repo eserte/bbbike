@@ -464,6 +464,7 @@ Werrastr.: Firmengelände	2 13802,8195 13697,8279
 Neuendorfer Str.	1 -3295,14777 -3228,14794
 Neuendorfer Str.	1 -3228,14794 -3251,14741
 Büdnerring	1 7997,18524 7902,18575 7892,18603 7926,18665 8037,18673 8063,18659 8066,18632 7997,18524
+Steilpfad	1 3376,21224 3280,21477
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
 Leistikowstr.	1 -12512,810 -12302,718
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -631,6 +632,9 @@ Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,1673
 Mittelstreifen	3nocross::ignrte 16713,6839 16674,6885 16568,7009
 Köpenicker Landstr. -> Güldenhofer Ufer: Mittelstreifen	3::igndisp 16713,6839 16674,6885 16630,6800
 Güldenhofer Ufer -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16630,6800 16674,6885 16568,7009
+Straßenbahntrasse	3nocross::ignrte 23895,15450 23913,15333 23933,15209 23952,15086 23960,15021
+Quedlinburger Str. -> Stendaler Str.: Straßenbahntrasse	3::igndisp 23995,15092 23952,15086 23960,15021
+Stendaler Str. -> Quedlinburger Str.: Straßenbahntrasse	3::igndisp 23933,15209 23952,15086 23995,15092
 Mittelstreifen	3nocross::ignrte 5201,20103 5399,20106 5517,20120
 Am Nordgraben -> Elsenpfuhlstr.: Mittelstreifen	3::igndisp 5517,20120 5399,20106 5405,20072
 Elsenpfuhlstr. -> Am Nordgraben: Mittelstreifen	3::igndisp 5405,20072 5399,20106 5201,20103

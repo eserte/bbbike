@@ -1215,7 +1215,7 @@ Museumstr.: zur "Bodestr." umbenannt?	? 9943,12642 9884,12712
 # XXX: unklare Angaben von Nils Fiedler, leider keine Rückfrage möglich: Q1 (Asphalt); q2 (Fußgängerzone); RW1 (Radweg); Gefälle "5°"? #Mühlenfeldstr.: Steigung, wenn ja, wo genau?	? 3727,22868 3739,22693 3743,22642 3753,22534 3728,22507 3601,22484 3531,22440 3353,22348 3243,22311 3134,22292 3046,22292 2757,22310 2587,22332
 #Dorfstr. (Malchow): seit November 2005 Bauarbeiten für neuen Radweg, bereits fertig?	? 15606,19839 15656,19946 15686,20100 15778,20350 15900,20531 16025,20631
 #: XXX: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0506/nachricht1941.html
-Rad- und Fußwegverbindung zwischen Wuhle und Hönow durch Hellersdorf: genauer Verlauf? Qualität? bereits komplett fertiggestellt?	? 22579,15416 22743,15414 23057,15458 23240,15472 23368,15469 23484,15485 23629,15498 23643,15389 23895,15450 24076,15481 24169,15497 24303,15766 25003,15617 25984,15415 25936,15335 25990,15301 25985,15080 26014,15039
+Rad- und Fußwegverbindung zwischen Wuhle und Hönow durch Hellersdorf: genauer Verlauf? Qualität? bereits komplett fertiggestellt?	? 22579,15416 22743,15414 23057,15458 23240,15472 23368,15469 23484,15485 23629,15498 23643,15389 23895,15450 23941,15458 24076,15481 24169,15497 24303,15766 25003,15617 25984,15415 25936,15335 25990,15301 25985,15080 26014,15039
 Niederlehme Anschlussstelle - Niederlehme: Qualität (wahrscheinlich Asphalt)? Radweg?	? 28485,-10143 28272,-10277 28168,-10289 27949,-10283 27906,-10191 27827,-10082 27535,-10033
 Fürstenwalder Str. (Zernsdorf): Qualität?	? 27966,-11585 28150,-11380 28235,-11227 28388,-11093 28839,-10831 29192,-10630
 Am Möllenberg (Zernsdorf): Qualität?	? 27949,-10283 28016,-10429 28241,-10904 28388,-11093
@@ -1563,8 +1563,6 @@ Menckenstr.: Qualität zwischen Tiburtiusbrücke und Poschingerstr.?	? 5567,5864 5
 Hochfeilerweg: Qualität?	? 10170,2158 10108,2174 10043,2351 9973,2541 9993,2551 10015,2651
 #: XXX anonymous meint mäßiger Asphalt, aber auf dem Luftbild sieht es teilweise unbefestigt aus:
 Schrobsdorffstr.: Ist die Straße durchgängig asphaltiert oder gibt es unbefestigte Abschnitte?	? 24102,8772 24156,8904 24207,9035 24261,9168 24315,9302 24360,9411 24404,9527
-#: XXX Eintrag von Reinhard Stenzel ohne Kommentierung:
-Fischer-Dieskau-Weg: Qualität? Für Radfahrer befahrbar?	? -151,2975 -81,2699
 #: XXX Eintrag von Reinhard Stenzel ("Q2") fraglich: die Straße führt laut luise-berlin nicht zum Königsweg
 Radolfzeller Weg: Qualität?	? -35,2434 -4,2413 23,2356
 #: XXX anonymous meint Asphalt ohne weitere Angaben und erwähnt keine Einbahnstraße
@@ -2081,6 +2079,7 @@ Weißdornweg: Qualität?	? 2852,2342 3003,2339
 Murtener Str.: Qualität?	? 2746,2590 2809,2615 3015,2606 3163,2598
 Freiastr.: Qualität?	? 16829,12420 16696,12438
 #: XXX: Wegführung? Zumindest an der Herzbergstr. Beton, eher nur mäßige Qualität (Q1)
+#: XXX: Eintrag von Sybille Koppermann: guter Asphalt, enge Straße q1, Einbahnstraße offen Richtung Vulkanstr.
 Bernhard-Bästlein-Str.: Qualität? Einbahnstraße?	? 15342,13994 15487,14047 15595,14041 15593,13768 15661,13764 15653,13542
 Elli-Voigt-Str.: Qualität?	? 15758,14088 15760,14036 15794,13975 15792,13764 15831,13760 15833,13596 15896,13594
 Bernhard-Bästlein-Str. - Vulkanstraße: Qualität? Offizieller Straßenname?	? 15595,14041 15600,14077 15704,14077 15758,14088 15871,14106
@@ -2120,7 +2119,7 @@ Lil-Dagover-Gasse: Qualität? Für Autos gesperrt?	? 23960,15021 23871,14914
 Fritz-Lang-Platz: Qualität? Für Autos gesperrt? Einbahnstraße?	? 23871,14914 23846,14931 23820,14896 23856,14868 23882,14904 23871,14914
 Kurt-Weill-Gasse: Qualität? Für Autos gesperrt?	? 23820,14896 23787,14919
 #: XXX: Alexandra (kaffeeschluerfer) meint: guter Asphalt, Fußgängerzone; aber teilweise scheinen dort Autos fahren zu dürfen. Wie sieht es mit dem Fritz-Lang-Platz aus? In einer anderen Mail von ihr steht "Verbundsteinpflaster; Fußgängerzone q4" vvv
-Fritz-Lang-Str.: Qualität? Für Autos gesperrt?	? 23841,15004 23846,14931
+Fritz-Lang-Str.: Qualität? Für Autos gesperrt?	? 23833,15066 23841,15004 23846,14931
 Fritz-Lang-Str.: Qualität? Für Autos gesperrt?	? 23856,14868 23878,14748
 #: XXX ^^^
 Triftstr. - Eichborndamm: Ist der Parkweg nachts beleuchtet?	? 4538,20621 4661,20559 4790,20493 4885,20444
@@ -2414,3 +2413,25 @@ Loefer Weg: Qualität?	? 19052,12591 19028,12383
 Kürenzer Str.: Qualität?	? 19253,12376 19282,12597 19333,13037
 Rudolf-Majut-Str.: Qualität?	? 10004,19765 10027,19669 10087,19680
 Fritz-Erpenbeck-Ring: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 9864,19793 9785,19807 9708,19779 9697,19758 9717,19692
+Schönburger Str.: Qualität?	? 24835,15088 24794,15270
+Oschatzer Ring: Qualität?	? 24651,15239 24634,15314 24639,15372 24648,15465 24779,15448 24770,15358 24794,15270
+Wurzener Str.: Qualität	? 24982,15433 24779,15448
+Zerbster Str.: Qualität?	? 24451,15181 24413,15372 24357,15429 24346,15505 24324,15519 24169,15497
+Naumburger Ring, Weißenfelser Str.: Qualität? Straßennamen?	? 24318,15021 24484,15070 24581,15101 24677,15123
+Schkeuditzer Str.: Qualität?	? 25086,15298 25232,15280 25361,15266
+Quedlinburger Str. - Schkeuditzer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? 24968,15307 25086,15298
+Gohliser Str.: Qualität?	? 25569,15140 25578,15238 25590,15342 25374,15368
+Eilenburger Str.: Qualität?	? 25743,15118 25752,15219 25578,15238
+Arneburger Str.: Qualität?	? 23933,15209 23978,15215 24070,15227 24081,15153
+Jerichower Str.: Qualität?	? 23913,15333 23960,15340 24050,15351
+Jerichower Str.: Qualität?	? 24061,15275 24050,15351 24035,15442
+Henny-Porten-Str.: Qualität?	? 23952,15086 23833,15066 23773,15055
+Kurt-Weill-Platz: Qualität?	? 23778,14995 23773,15055
+Stendaler Str. [Nebenfahrbahn]: Qualität?	? 23941,15458 23960,15340 23978,15215 23993,15111
+Quedlinburger Str. - Stendaler Str. [Nebenfahrbahn]: Für Radfahrer passierbar? Qualität?	? 23995,15092 23993,15111
+Eichenallee: Qualität?	? 21105,9538 21253,9547
+Eichenallee: Qualität?	? 21343,9546 21414,9545
+Elsenallee: Qualität?	? 21379,9380 21265,9402 21101,9409
+Dankratstr.: Qualität?	? 21105,9538 20943,9543 20857,9542
+Dankratweg: Qualität?	? 20857,9542 20690,9546 20595,9558 20514,9579 20460,9593
+Dankratweg - Am Waldberg: Ist die Verbindung für Radfahrer befahrbar? Qualität?	? 20460,9593 20408,9604 20338,9718 20335,9866

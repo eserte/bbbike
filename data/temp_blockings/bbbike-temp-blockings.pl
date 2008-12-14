@@ -1748,7 +1748,7 @@ EOF
        text  => 'Zimmermannstr. (Marzahn) Richtung Osten zwischen Köpenicker Str. und Lindenstr. Baustelle, Fahrtrichtung gesperrt (bis 30.05.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 21088,9175 21206,9130 21351,9066
+userdel	q4; 21088,9175 21206,9130 21314,9083 21351,9066
 EOF
      },
      { from  => 1123452000, # 2005-08-08 00:00

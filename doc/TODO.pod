@@ -25,7 +25,7 @@ Legend:
 =item * (M3) (improvement)
 
 Get rid of Class::Struct. It's only advantage is: it's in the core,
-and it does use a 1:1 mapping between method name and hash key (unlink
+and it does use a 1:1 mapping between method name and hash key (unlike
 accessors.pm).
 
 Seek for an alternative, maybe self-written.
@@ -692,6 +692,10 @@ werden automatisch aufgenommen. Am besten mit einem Testmodus, der
 zuerst alle Dateien aus data/* nach /tmp kopiert und nur dort ändert.
 Dann könnte man bbbike mit -datadir aufrufen und testen, oder ein diff
 -r machen.
+
+diff wortweise würde wahrscheinlich besser als zeilenweise
+funktionieren. Siehe textproc/docdiff oder textproc/dwdiff oder
+textproc/wdiff.
 
 =item * (H3)
 
