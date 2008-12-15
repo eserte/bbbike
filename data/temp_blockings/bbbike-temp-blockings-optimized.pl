@@ -125,16 +125,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_006819',
-         'until' => 1230764399,
-         'text' => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Französische Str. und Leipziger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2008)',
-         'from' => 1191967812,
-         'id' => 1194,
-         'data' => 'userdel	1::inwork 9183,12076 9201,11968 9208,11872 9220,11781 9234,11683 9268,11590
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -334,16 +325,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_008688',
-         'until' => 1229381999,
-         'text' => 'Königsheideweg (Treptow) Richtung Sterndamm zwischen Haushoferstr. und Sterndamm Baustelle, Fahrtrichtung gesperrt, Radfahrer können langsam passieren (eng!) (bis Mitte 12.2008)',
-         'from' => 1210019166,
-         'id' => 1354,
-         'data' => 'userdel	q4; 17115,4757 17266,4720 17518,4644
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,
@@ -607,9 +589,9 @@ push @temp_blocking,
        undef,
        {
          'source_id' => 'IM_009965',
-         'until' => 1229381999,
-         'text' => 'Parkstr. (Weißensee) Richtung Berliner Allee zwischen Charlottenburger Str. und Berliner Allee Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2008)',
-         'from' => 1221686311,
+         'until' => 1234738799,
+         'text' => 'Parkstr. (Weißensee) Richtung Berliner Allee zwischen Charlottenburger Str. und Berliner Allee Baustelle, Fahrtrichtung gesperrt (bis Mitte 02.2009)',
+         'from' => 1229375516,
          'id' => 1487,
          'data' => 'userdel	1::inwork 13727,16085 13753,16000
 ',
@@ -629,8 +611,8 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        {
-         'until' => 1235689200,
-         'text' => 'L 030 Fredersdorf - Altlandsberg - Bernau OD Altlandsberg, zw. OE und Strausberger Tor Straßenausbau Vollsperrung 22.09.2008-26.02.2009 ',
+         'until' => 1241128800,
+         'text' => 'L 030 Fredersdorf - Altlandsberg - Bernau OD Altlandsberg, zw. OE und Strausberger Tor Straßenausbau Vollsperrung * 22.09.2008-30.04.2009 ',
          'from' => 1221948000,
          'id' => 1493,
          'data' => 'userdel	q4::inwork 33051,18158 32513,18082 32293,18093
@@ -666,15 +648,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1229295600,
-         'text' => 'L 294 Ruhlsdorfer Str. OD Biesenthal, zw. Lanker Str. und Akazienallee Straßenneubau Vollsperrung 22.09.2008-14.12.2008 ',
-         'from' => 1221948000,
-         'id' => 1507,
-         'data' => 'userdel	q4::inwork 24189,41639 24142,41045 24248,40620 24354,40323
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -795,15 +769,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1229295600,
-         'text' => 'L 071 Markt OL Schönewalde, zw. Herzberger Str. und Gartenstr. Weihnachtsmarkt Vollsperrung 14.12.2008-14.12.2008 ',
-         'from' => 1229122800,
-         'id' => 1544,
-         'data' => 'userdel	q4::inwork -575,-65978 60,-66035
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1230418799,
          'text' => 'Sperrung des Delfter Ufers. Ab Montag, dem 17.11.2008 wird für ca. vier Wochen ein Teilstück von ca. 250 m der Grünanlage Delfter Ufer in Höhe der Rudergesellschaft Wiking e.V. bis zum rückwärtigen Firmengelände Testorp gesperrt werden. Der Rad- und Fußweg kann in dieser Zeit nicht durchgängig genutzt werden. Ein Ausweichen ist über den Schwarzen Weg, Haarlemer Straße und wieder zurück zum Delfter Ufer über den Weg der Kolonie "Zum Siedlerheim" möglich.',
@@ -843,22 +809,41 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_010810',
-         'until' => undef,
-         'text' => 'Köpenicker Str. (Alt-Glienicke) in beiden Richtungen zwischen Semmelweisstr. und Grünauer Str. Straßenschäden, Straße vollständig gesperrt',
-         'from' => undef,
-         'id' => 1550,
-         'data' => 'userdel	2::inwork 19806,1903 19771,1793
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1230159600,
          'text' => 'Simplonstr. zwischen Lenbachstr. und Matkowskystr. bis 24.12.2008 gesperrt',
          'from' => 1228675001,
          'id' => 1551,
          'data' => 'userdel	2::inwork 14597,11069 14530,11137
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_010963',
+         'until' => 1230764399,
+         'text' => 'Dörpfeldstr. (Adlershof) Richtung Köpenick zwischen Anna-Seghers-Str. und Gellertstr. Baustelle, Fahrtrichtung gesperrt, bis Ende 12.2008)',
+         'from' => 1229377415,
+         'id' => 1552,
+         'data' => 'userdel	1::inwork 20012,3532 20082,3578
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1229727600,
+         'text' => 'K 6636 Kraftwerkstr. OL Lübbenau, Bereich Bahnübergang Straßeninstandsetzungsarb. Vollsperrung 17.12.2008-19.12.2008 ',
+         'from' => 1229382000,
+         'id' => 1553,
+         'data' => 'userdel	2::inwork 50112,-59987 50337,-60337
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1230073200,
+         'text' => 'L 232 Lichtenow - Rehfelde Brücke über das Zinndorfer Mühlenfließ bei Werder Brückenerneuerung Vollsperrung 13.12.2008-23.12.2008 ',
+         'from' => 1229036400,
+         'id' => 1554,
+         'data' => 'userdel	2::inwork 46163,13586 46017,13884
 ',
          'type' => 'gesperrt'
        }

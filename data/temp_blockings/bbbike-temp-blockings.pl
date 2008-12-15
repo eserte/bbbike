@@ -8525,7 +8525,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_005746',
        data  => <<EOF,
-userdel	q4::inwork; 20818,3182 20760,3059 20565,2754
+userdel	q4::inwork; 20818,3182 20760,3059 20688,2947 20565,2754
 EOF
      },
      { from  => 1181685600, # 2007-06-13 00:00
@@ -10069,7 +10069,7 @@ userdel	2::inwork -20021,54750 -20798,54347 -21553,54152 -22376,53427 -23839,527
 EOF
      },
      { from  => 1191967812, # 2007-10-10 00:10
-       until => 1230764399, # 2008-12-31 23:59
+       until => 1229377492, # 2008-12-31 23:59 1230764399
        text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Französische Str. und Leipziger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2008)',
        type  => 'gesperrt',
        source_id => 'IM_006819',
@@ -12601,9 +12601,9 @@ EOF
 userdel	1::inwork 17992,6436 17962,6674
 EOF
      },
-     { from  => 1221686311, # 2008-09-17 23:18
-       until => 1229381999, # 2008-12-15 23:59
-       text  => 'Parkstr. (Weißensee) Richtung Berliner Allee zwischen Charlottenburger Str. und Berliner Allee Baustelle, Fahrtrichtung gesperrt (bis Mitte 12.2008)',
+     { from  => 1229375516, # 2008-12-15 22:11
+       until => 1234738799, # 2009-02-15 23:59
+       text  => 'Parkstr. (Weißensee) Richtung Berliner Allee zwischen Charlottenburger Str. und Berliner Allee Baustelle, Fahrtrichtung gesperrt (bis Mitte 02.2009)',
        type  => 'gesperrt',
        source_id => 'IM_009965',
        data  => <<EOF,
@@ -12651,8 +12651,8 @@ userdel	q4::inwork -53868,82504 -53648,82294 -53491,81954
 EOF
      },
      { from  => 1221948000, # 2008-09-21 00:00
-       until => 1235689200, # 2009-02-27 00:00
-       text  => 'L 030 Fredersdorf - Altlandsberg - Bernau OD Altlandsberg, zw. OE und Strausberger Tor Straßenausbau Vollsperrung 22.09.2008-26.02.2009 ',
+       until => 1241128800, # 2009-05-01 00:00
+       text  => 'L 030 Fredersdorf - Altlandsberg - Bernau OD Altlandsberg, zw. OE und Strausberger Tor Straßenausbau Vollsperrung * 22.09.2008-30.04.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 33051,18158 32513,18082 32293,18093
@@ -13123,8 +13123,8 @@ EOF
 userdel	2::inwork 30734,103253 29305,103289
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1229377525, # 
+       until => 1229377528, # XXX
        text  => 'Köpenicker Str. (Alt-Glienicke) in beiden Richtungen zwischen Semmelweisstr. und Grünauer Str. Straßenschäden, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_010810',
@@ -13138,6 +13138,31 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 14597,11069 14530,11137
+EOF
+     },
+     { from  => 1229377415, # 2008-12-15 22:43
+       until => 1230764399, # 2008-12-31 23:59
+       text  => 'Dörpfeldstr. (Adlershof) Richtung Köpenick zwischen Anna-Seghers-Str. und Gellertstr. Baustelle, Fahrtrichtung gesperrt, bis Ende 12.2008)',
+       type  => 'gesperrt',
+       source_id => 'IM_010963',
+       data  => <<EOF,
+userdel	1::inwork 20012,3532 20082,3578
+EOF
+     },
+     { from  => 1229382000, # 2008-12-16 00:00
+       until => 1229727600, # 2008-12-20 00:00
+       text  => 'K 6636 Kraftwerkstr. OL Lübbenau, Bereich Bahnübergang Straßeninstandsetzungsarb. Vollsperrung 17.12.2008-19.12.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 50112,-59987 50337,-60337
+EOF
+     },
+     { from  => 1229036400, # 2008-12-12 00:00
+       until => 1230073200, # 2008-12-24 00:00
+       text  => 'L 232 Lichtenow - Rehfelde Brücke über das Zinndorfer Mühlenfließ bei Werder Brückenerneuerung Vollsperrung 13.12.2008-23.12.2008 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 46163,13586 46017,13884
 EOF
      },
     );

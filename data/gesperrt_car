@@ -373,8 +373,12 @@ Schlichtallee -> Zobtener Str.: Schlichtallee	3::igndisp 15982,10765 15751,10582
 Fischerstr. -> Schlichtallee: Schlichtallee	3::igndisp 16080,10743 15982,10765 15751,10582
 Schlichtallee -> Fischerstr.: Schlichtallee	3::igndisp 16032,10842 15982,10765 16080,10743
 Hindenburgdamm	3nocross::ignrte 4507,4755 4515,4581 4521,4484
+Hindenburgdamm -> Flotowstr.: Hindenburgdamm	3::igndisp 4507,4755 4515,4581 4651,4638
 Roonstr. -> Hindenburgdamm: Hindenburgdamm	3::igndisp 4265,4484 4515,4581 4507,4755
+Roonstr. -> Flotowstr.: Hindenburgdamm	3::igndisp 4265,4484 4515,4581 4651,4638
 Hindenburgdamm -> Roonstr.: Hindenburgdamm	3::igndisp 4521,4484 4515,4581 4265,4484
+Flotowstr. -> Roonstr.: Hindenburgdamm	3::igndisp 4651,4638 4515,4581 4265,4484
+Flotowstr. -> Hindenburgdamm: Hindenburgdamm	3::igndisp 4651,4638 4515,4581 4521,4484
 Mariannenplatz - Bethaniendamm	1 11996,11128 12012,11235
 Ballonfahrerweg - Werner-Voß-Damm	3 7979,7525 7959,7609 8263,7611
 General-Pape-Str. - Werner-Voß-Damm	3 7921,7728 7959,7609 8263,7611
@@ -671,8 +675,12 @@ Hönower Wiesenweg: nur für Anlieger und Radfahrer offen	2 17375,8847 17416,8767 
 Mittelstreifen	3nocross::ignrte 6787,5459 6767,5233 6747,5010
 Mittelstreifen	3nocross::ignrte 9248,4904 9239,4980 9213,5187
 Mittelstreifen	3nocross::ignrte 4507,4755 4515,4581 4521,4484
+Hindenburgdamm -> Flotowstr.: Mittelstreifen	3::igndisp 4507,4755 4515,4581 4651,4638
 Roonstr. -> Hindenburgdamm: Mittelstreifen	3::igndisp 4265,4484 4515,4581 4507,4755
+Roonstr. -> Flotowstr.: Mittelstreifen	3::igndisp 4265,4484 4515,4581 4651,4638
 Hindenburgdamm -> Roonstr.: Mittelstreifen	3::igndisp 4521,4484 4515,4581 4265,4484
+Flotowstr. -> Roonstr.: Mittelstreifen	3::igndisp 4651,4638 4515,4581 4265,4484
+Flotowstr. -> Hindenburgdamm: Mittelstreifen	3::igndisp 4651,4638 4515,4581 4521,4484
 Straßenbahntrasse	3nocross::ignrte 10892,17491 10894,17470 10900,17397
 Masurenstr. -> Berliner Str.: Straßenbahntrasse	3::igndisp 10670,17458 10894,17470 10892,17491
 Berliner Str. -> Masurenstr.: Straßenbahntrasse	3::igndisp 10900,17397 10894,17470 10670,17458
@@ -756,3 +764,4 @@ Rheinsteinstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18868,8731 18734,86
 Rheinsteinstr. -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18868,8731 18734,8682 18843,8612
 Ehrenfelsstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18843,8612 18734,8682 18729,8650
 Lötzener Allee	1 452,10669 474,10869 503,11104
+keine Abbiegemöglichkeit	3nocross::ignrte 20053,3272 20001,3331 19892,3454
