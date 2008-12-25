@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.28 2008/05/14 19:20:07 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.28 2008/05/14 19:20:07 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2008 Slaven Rezic. All rights reserved.
@@ -196,8 +196,12 @@ sub launch_street_url {
     }
 
     my $url = eval {
-	do_yahoo_search(street => $street,
-			cityparts => $cityparts);
+## XXX Yahoo search sometimes works, e.g. if there are no umlauts in the
+## search term. But the street entries in luise-berlin ceased to exist
+## since 2008-12, so it's probably better to always fallback to Google
+## Search and use the Google cache.
+# 	do_yahoo_search(street => $street,
+# 			cityparts => $cityparts);
     };
     if ($url) {
 	start_browser($url);

@@ -447,9 +447,9 @@ Mittelstreifen	3nocross::ignrte 4392,17777 4429,17763 4584,17704
 Engelmannweg -> Scharnweberstr.: Mittelstreifen	3::igndisp 4462,17892 4429,17763 4584,17704
 Scharnweberstr. -> Engelmannweg: Mittelstreifen	3::igndisp 4392,17777 4429,17763 4462,17892
 Kurt-Schumacher-Damm (Nord)	1 3643,16437 3676,16497
-Mittelstreifen	3nocross::ignrte 10212,1504 10259,1376 10315,1223 10363,1095
+Mittelstreifen	3nocross::ignrte 10212,1504 10222,1475 10259,1376 10315,1223 10363,1095
 Mariendorfer Damm -> Ifenpfad: Mittelstreifen	3::igndisp 10315,1223 10259,1376 10187,1345
-Ifenpfad -> Mariendorfer Damm: Mittelstreifen	3::igndisp 10187,1345 10259,1376 10212,1504
+Ifenpfad -> Mariendorfer Damm: Mittelstreifen	3::igndisp 10187,1345 10259,1376 10222,1475
 Kettinger Str. -> Sandsteinweg: Mittelstreifen	3::igndisp 10228,1194 10315,1223 10440,1283
 Kettinger Str. -> Mariendorfer Damm: Mittelstreifen	3::igndisp 10228,1194 10315,1223 10259,1376
 Sandsteinweg -> Kettinger Str.: Mittelstreifen	3::igndisp 10440,1283 10315,1223 10228,1194
@@ -500,11 +500,11 @@ Straßenbahntrasse	3nocross::ignrte 13540,15928 13623,15954 13630,15956 13753,160
 Tassostr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13621,15990 13630,15956 13753,16000
 Berliner Allee -> Tassostr.: Straßenbahntrasse	3::igndisp 13623,15954 13630,15956 13621,15990
 Straßenbahntrasse	3nocross::ignrte 17925,6976 17924,6967 17962,6674
-Zeppelinstr. -> Helmholtzstr.: Straßenbahntrasse	3::igndisp 18053,6920 17924,6967 17845,6986
-Zeppelinstr. -> Edisonstr.: Straßenbahntrasse	3::igndisp 18053,6920 17924,6967 17962,6674
-Edisonstr. -> Zeppelinstr.: Straßenbahntrasse	3::igndisp 17925,6976 17924,6967 18053,6920
-Helmholtzstr. -> Zeppelinstr.: Straßenbahntrasse	3::igndisp 17845,6986 17924,6967 18053,6920
+Edisonstr. -> Zeppelinstr.: Straßenbahntrasse	3::igndisp 17925,6976 17924,6967 18041,6924
 Helmholtzstr. -> Edisonstr.: Straßenbahntrasse	3::igndisp 17845,6986 17924,6967 17925,6976
+Helmholtzstr. -> Zeppelinstr.: Straßenbahntrasse	3::igndisp 17845,6986 17924,6967 18041,6924
+Zeppelinstr. -> Helmholtzstr.: Straßenbahntrasse	3::igndisp 18041,6924 17924,6967 17845,6986
+Zeppelinstr. -> Edisonstr.: Straßenbahntrasse	3::igndisp 18041,6924 17924,6967 17962,6674
 Edisonstr. -> Helmholtzstr.: Straßenbahntrasse	3::igndisp 17962,6674 17924,6967 17845,6986
 Mittelstreifen	3nocross::ignrte 4918,8872 5022,8879 5172,8880 5182,8880 5195,8880 5269,8897
 Fechnerstr. -> Berliner Str.: Mittelstreifen	3::igndisp 4958,8981 5022,8879 5172,8880
@@ -608,7 +608,7 @@ Allee der Kosmonauten -> Annenstr.: Straßenbahntrasse	3::igndisp 20281,14361 202
 Geitelsteig	1 1988,14870 1977,14751 1974,14646
 Schweiggerweg	1 2081,14570 2079,14704 2099,14852
 Jungfernheideweg	1 1465,14963 1423,14679 1361,14431
-Dihlmannstr.: Radweg existiert	1 651,15091 755,15123 851,15155 976,15195 1065,15229
+Dihlmannstr.: Radweg existiert	1 651,15091 755,15123 851,15155 957,15189 976,15195 1065,15229
 Bahntrasse	3nocross::ignrte 16135,2135 16056,2034 16002,1964 15875,1796 15835,1747
 Schriftsetzerweg -> Zwickauer Damm: Bahntrasse	3::igndisp 15967,1718 15875,1796 15835,1747
 Zwickauer Damm -> Schriftsetzerweg: Bahntrasse	3::igndisp 16002,1964 15875,1796 15967,1718

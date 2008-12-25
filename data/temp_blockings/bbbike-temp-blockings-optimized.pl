@@ -365,15 +365,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1229727600,
-         'text' => 'K 6425 Lindenallee OD Hoppegarten, zw. Kreisverkehr und An der Zoche Brücken-, Straßen-, Gehwegbau Vollsperrung 10.06.2008-19.12.2008 ',
-         'from' => 1212962400,
-         'id' => 1378,
-         'data' => 'userdel	q4::inwork 28510,12507 28287,12471 27490,11678
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1249077600,
@@ -453,15 +445,6 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1229727600,
-         'text' => 'B 102 Umgehungsstr. Brücke über die Nieplitz in der OD Treuenbrietzen Brückenneubau Vollsperrung 21.07.2008-19.12.2008 ',
-         'from' => 1216504800,
-         'id' => 1418,
-         'data' => 'userdel	2::inwork -25322,-35457 -24932,-35664
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -470,15 +453,8 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1229900400,
-         'text' => 'L 172 Velten -Germendorf Kreuzung bei Bärenklau-Leegebruch Neubau Kreisverkehr Vollsperrung 17.07.2008-21.12.2008 ',
-         'from' => 1216159200,
-         'id' => 1427,
-         'data' => 'userdel	2::inwork -5375,35118 -5373,35134
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -500,15 +476,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1230073200,
-         'text' => 'L 216 Gollin - Templin OD Vietmannsdorf, zw. Golliner Str. und OA Ri. Templin Brücken- und Straßenbau Vollsperrung 11.08.2008-23.12.2008 ',
-         'from' => 1218319200,
-         'id' => 1441,
-         'data' => 'userdel	2::inwork 17653,71852 17636,72217 17483,72454
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -551,15 +519,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1230073200,
-         'text' => 'B 109 August-Bebel-Str. OD Templin, zw. R.-Koch-Str. und Prenzlauer Allee Grundhafter Straßenausbau Vollsperrung 01.09.2008-23.12.2008 ',
-         'from' => 1220133600,
-         'id' => 1467,
-         'data' => 'userdel	q4::inwork 16463,79756 16200,79437 15881,79303
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1230764400,
          'text' => 'L 023 Ringenwalde - Milmersdorf OD Götschendorf Grundh.Straßenausbau Vollsperrung 25.08.2008-31.12.2008 ',
@@ -601,15 +561,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1229727600,
-         'text' => 'L 015 Rosa-Luxemburg-Str. OL Wittstock, zw. Polthierstr. und Bohnekampweg Kanal- und Straßenbau Vollsperrung 06.10.2008-19.12.2008 ',
-         'from' => 1223157600,
-         'id' => 1492,
-         'data' => 'userdel	q4::inwork -53868,82504 -53648,82294 -53491,81954
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1241128800,
          'text' => 'L 030 Fredersdorf - Altlandsberg - Bernau OD Altlandsberg, zw. OE und Strausberger Tor Straßenausbau Vollsperrung * 22.09.2008-30.04.2009 ',
@@ -637,15 +589,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1230073200,
-         'text' => 'L 025 Schmölln - LG - Penkun zw. Landesgrenze und Schmölln grundhafter Straßenbau Vollsperrung 29.09.2008-23.12.2008 ',
-         'from' => 1222552800,
-         'id' => 1504,
-         'data' => 'userdel	2::inwork 55984,100093 56268,99856 56856,99683 57516,99296
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -705,25 +649,9 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1230073200,
-         'text' => 'L 015 Fürstenberg - Menz zw. Fürstenberg und Abzw. Altglobsow Straßenbau Vollsperrung 10.11.2008-23.12.2008 ',
-         'from' => 1226185200,
-         'id' => 1529,
-         'data' => 'userdel	2::inwork -10085,84390 -10054,84256 -10109,84134 -10281,83899 -10516,83471 -11849,81547
-',
-         'type' => 'gesperrt'
-       },
        undef,
-       {
-         'until' => 1229727600,
-         'text' => 'L 020 Falkensee - Velten zw. Schönwalde und Gewerbegebiet Straßenbauarbeiten Vollsperrung 10.11.2008-19.12.2008 ',
-         'from' => 1226185200,
-         'id' => 1531,
-         'data' => 'userdel	2::inwork -8777,22961 -7734,23796 -7533,24138
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        {
@@ -735,28 +663,11 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1229727600,
-         'text' => 'L 088 Bahnhofstr. OD Lehnin, zw. Friedensstr. und Kreisverkehr Gehwegbau halbseitig gesperrt; Einbahnstraße 20.10.2008-19.12.2008 ',
-         'from' => 1224367200,
-         'id' => 1535,
-         'data' => 'userdel	q4::inwork -34488,-10578 -34063,-10552
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_010662',
-         'until' => 1230159600,
-         'text' => 'Platz der Vereinten Nationen in beiden Richtungen Veranstaltung, Straße vollständig gesperrt (bis 24.12.2008)',
-         'from' => 1227353511,
-         'id' => 1539,
-         'data' => 'userdel	2::inwork 12180,13292 12128,13079
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        {
          'until' => 1231714800,
@@ -800,25 +711,9 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1229727600,
-         'text' => 'L 025 Güstow - Schönermark zw. Schönermark und Wilhelmshof Straßenbauarbeiten Vollsperrung 24.11.2008-19.12.2008 ',
-         'from' => 1227394800,
-         'id' => 1549,
-         'data' => 'userdel	2::inwork 30734,103253 29305,103289
-',
-         'type' => 'gesperrt'
-       },
        undef,
-       {
-         'until' => 1230159600,
-         'text' => 'Simplonstr. zwischen Lenbachstr. und Matkowskystr. bis 24.12.2008 gesperrt',
-         'from' => 1228675001,
-         'id' => 1551,
-         'data' => 'userdel	2::inwork 14597,11069 14530,11137
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_010963',
          'until' => 1230764399,
@@ -826,24 +721,6 @@ push @temp_blocking,
          'from' => 1229377415,
          'id' => 1552,
          'data' => 'userdel	1::inwork 20012,3532 20082,3578
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1229727600,
-         'text' => 'K 6636 Kraftwerkstr. OL Lübbenau, Bereich Bahnübergang Straßeninstandsetzungsarb. Vollsperrung 17.12.2008-19.12.2008 ',
-         'from' => 1229382000,
-         'id' => 1553,
-         'data' => 'userdel	2::inwork 50112,-59987 50337,-60337
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1230073200,
-         'text' => 'L 232 Lichtenow - Rehfelde Brücke über das Zinndorfer Mühlenfließ bei Werder Brückenerneuerung Vollsperrung 13.12.2008-23.12.2008 ',
-         'from' => 1229036400,
-         'id' => 1554,
-         'data' => 'userdel	2::inwork 46163,13586 46017,13884
 ',
          'type' => 'gesperrt'
        }

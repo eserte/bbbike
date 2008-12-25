@@ -21,13 +21,13 @@ Alt-Moabit zwischen Kirch- und Paulstraße	? 7195,13046 7000,13067 6882,13088 675
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0709/nachricht2788.html
 Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 10109,12238 10084,12228 9972,12184
 # Hier scheint nichts mehr zu passieren: #: last_checked: 2008-02-22 Gitschiner Str.	? 9948,10280 10122,10294 10340,10301 10605,10312 10859,10333 10962,10340 11117,10326
-#: last_checked: 2008-08-01
-#: XXX: nördlich der Storkower Str. gibt es auf der östlichen Seite die ersten Anzeichen einer Radspur
+#: last_checked: 2008-12-20
+#: XXX: zumindest zwischen Danziger Str. und Berliner Allee gibt es auf der östlichen Seite eine Radspur, kurz unterbrochen unter der S-Bahnbrücke, teilweise mit, teilweise ohne Benutzungspflicht, vor einer Kreuzung (Michelangelostr.?) kurz auf dem Gehweg geführt; auch von Danziger Str. Richtung Süden Radstreifen, hier ohne Benutzungspflicht
 Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 12188,14321 12338,14532 12384,14600 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941 12628,14962 12722,15105 12743,15138 12880,15335 12966,15478 13098,15592 13229,15692 13316,15758
 #: last_checked: 2007-09-07
 Vulkanstraße	? 15912,13153 15897,13512 15896,13547
 # XXX laut Luftbild fertig: last_checked: 2006-06-16 (von Corinna):Gorkistr.	? 2998,20487 2974,20483 2615,20421
-Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 17966,11730 17746,11748 17436,11791 17249,11802
+Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 17966,11730 17746,11748 17497,11782 17436,11791 17249,11802
 #: last_checked: 2007-07-15
 Löhleinstraße	? 2717,5578 2499,5144 2454,5067 2288,4932
 #: last_checked: 2007-07-15
@@ -85,6 +85,8 @@ Schwarzer Weg: Wiedereröffnung im Frühjahr 2009	?::inwork 13938,7938 13957,8209 
 #XXX del An der Spandauer Brücke: neue Straßenführung	?::inwork 10309,12854 10398,12903 10427,12921 10371,13006
 #XXXdel : by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2958.html;#: note: laut daniel.geraskov noch eine Baustelle;#: last_checked: 2008-06-23;Oranienburger Str.: Existiert in Richtung Hackescher Markt zwischen Friedrichstraße und Linienstraße eine Radspur?	?; 9215,13392 9281,13374
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0803/nachricht2984.html
+#: last_checked: 2008-12-25
+#: XXX Radwege existieren bereits zu großen Teilen (Bauweise wie in der restlichen Bernauer Str.), aber noch nicht freigegeben
 Eberswalder Str.: Neubau von Radwegen bis 2009-12-01	?::inwork 10336,14975 10351,14981 10516,15039 10618,15076 10889,15045
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2961.html
 B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstreifen dann aufgehoben (bis 2010-01-01)	?::inwork 9228,23643 9146,23843 8984,24078 8891,24330 8686,24872 8665,24941 8661,24952 8493,25378
@@ -161,6 +163,7 @@ Fußgängerbrücke über den Nordhafen in Planung	?::inwork -2572,16191 -2548,16305 
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 #
+Gartenstr.: Wo fängt das Kopfsteinpflaster vor der S-Bahnbrücke genau an (Am Gartenplatz ist noch Asphalt!)? Wie weit führen die Radstreifen?	? 8870,14637 8686,14934
 Mollknoten - Alexanderplatz: für Radfahrer existiert eine direkte Zufahrt, einzeichnen!	? 11446,13294 11291,13218
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20080728.1510.105902.html
 Oberspreestr.: südliche Nebenfahrbahn hat einen mittigen Asphaltbelag, Europaradweg wird hier entlanggeführt, genauer anschauen	? 19534,5242 19715,5185 19737,5176 20689,4862
@@ -621,7 +624,7 @@ Freyaplatz: Qualität?	? -9457,-1053 -9500,-1086
 Donarstr.: Qualität?	? -9515,-1059 -9584,-1030 -9692,-986 -9769,-950 -9824,-906 -9866,-861
 Hermann-Maaß-Str.: Qualität?	? -9762,-625 -9686,-703 -9666,-744 -9628,-810 -9586,-873 -9470,-1031 -9457,-1053 -9421,-1103 -9390,-1145 -9353,-1194 -9204,-1194 -9176,-1188
 An der Sternwarte - Hermann-Maaß-Str.: existiert eine Verbindung für Radfahrer? Qualität?	? -9816,-604 -9762,-625
-Baldurstr.: Qualität?	? -9534,-1230 -9498,-1132 -9500,-1086 -9515,-1059
+Baldurstr. (Potsdam): Qualität?	? -9534,-1230 -9498,-1132 -9500,-1086 -9515,-1059
 Heinestr.: Qualität?	? -9506,-1431 -9438,-1260 -9390,-1145
 Scheffelstr.: Qualität?	? -9438,-1260 -9534,-1230 -9638,-1193 -9751,-1183 -9826,-1179 -9903,-1171 -9948,-1165
 Otto-Erich-Str.: Qualität?	? -8784,-1596 -8786,-1382
@@ -1620,7 +1623,7 @@ Hirseweg: Qualität?	? 20743,13184 20836,13170 20918,13159 21003,13152 21113,1314
 Sensenpfad: Qualität?	? 21101,12661 21176,12627
 Ährenweg: Qualität?	? 21028,12536 21134,12471 21123,12352 21107,12183
 Garbenpfad: Qualität?	? 21031,12364 21015,12190
-Burchardstr: Qualität?	? 8200,6668 8553,6665 8722,6656
+Burchardstr.: Qualität?	? 8200,6668 8553,6665 8722,6656
 Reglinstr.: Qualität?	? 7523,5749 7659,5735 7817,5719
 Ingostr.: Qualität?	? 7901,4726 7970,4640
 Ingostr. - Am Teltowkanal: Durchfahrt für Radfahrer möglich? Qualität?	? 7970,4640 8027,4571
@@ -1919,8 +1922,6 @@ Martinstr.: Qualität?	? 4956,5121 5102,5031
 Suchlandstr.: Qualität?	? 4906,5052 5050,4959
 #: XXX ein anonymer Eintrag hat nur "gute Qualität" eingetragen:
 Paul-Zobel-Str., Abschnitt an der Vulkanstr.: Qualität?	? 15724,13298 15846,13297 15851,13511 15897,13512
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20080131.1105.93056.html
-Rügenwalder Weg: Qualität, wahrscheinlich Beton mit Wurzelschäden, vielleicht schon saniert und asphaltiert? Ist es für Radfahrer möglich, zur Gülzower Str. zu gelangen?	? 22424,12183 22439,12168 22720,12163 22752,12195
 Straße zwischen Wissenschaftspark Golm und Universität Potsdam: wo genau verläuft diese Straße?	? -18849,301 -18624,99
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20080325.1450.96925.html
 Elkartstr.: führt der Radweg Berlin-Kopenhagen hier entlang?	? -2158,17613 -2119,17647 -2103,17670 -2102,17714
@@ -2455,3 +2456,68 @@ Eigenheimgasse: Qualität?	? 19736,3858 19791,3849
 Husstr.: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 19625,3744 19736,3858 19763,3959 19815,4148
 Steinbachstr.: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 19579,3794 19673,3888 19703,3979 19759,4160
 Vimystr.: Qualität?	? 19795,3945 19763,3959 19703,3979 19627,4004 19596,4035
+Am Schweizerhof: Qualität? Können Radfahrer zum Parkweg durchfahren?	? 1524,1924 1432,1964 1368,1991 1258,1961 1177,1940
+Prinz-Handjery-Str.: Qualität?	? 1358,1695 1258,1961 1104,2328 1081,2381 1008,2568 940,2722
+Im Schönower Park: Qualität?	? 1081,2381 1012,2353 959,2349
+Im Schönower Park: Qualität?	? 959,2304 959,2349 956,2395
+Am Vierstückenpfuhl: Qualität?	? 1333,2083 1377,2102 1422,2259
+Herbergerweg: Qualität?	? 960,2534 921,2565 869,2567 772,2538
+Echtermeyerstr.: Qualität?	? 1524,2611 1567,2786
+Leo-Baeck-Str. - Seehofstr.: Qualität? Für Radfahrer befahrbar?	? 1478,1721 1432,1904 1432,1964 1461,2073 1452,2095 1488,2242
+Georg-Steger-Weg: Qualität? Für Radfahrer befahrbar?	? 1506,2237 1603,2615
+Mühlenstr. - Hampsteadstr.: Qualität? Für Radfahrer befahrbar?	? 1603,2615 1631,2722 1647,2759 1634,2914
+Industriestr. (Dahlwitz-Hoppegarten): Qualität?	? 25938,11837 26042,11798 26222,11726 26555,11601 26794,11513 26880,11479
+Von-Canstein-Str. (Dahlwitz-Hoppegarten): Qualität?	? 26880,11479 26957,11450 27007,11422 27165,11294
+Meisenstr.: Qualität?	? 1613,5258 1964,5196
+Rudi-Dutschke-Weg: Für Radfahrer befahrbar? Qualität? Ist der Weg ausgeschildert?	? 2627,5095 2913,5294
+Am Güterbahnhof Halensee: Ist die Straße offen? Qualität?	? 2567,9871 2585,9875 2767,9670 3040,9420
+Harkortstr.: Qualität? Offen für Autos? Kann man zur Röblingstr. gelangen (Hausdurchfahrt?)?	? 7669,5536 7621,5494 7570,5508 7528,5480 7477,5475
+Straße 12 (Neukölln): Qualität? Offen? Ausgeschildert?	? 13883,6682 13881,6634 13915,6592
+Straße 14 (Neukölln): Qualität? Offen? Ausgeschildert?	? 14133,6187 14116,6277
+Heldburger Str.: Qualität? Führt die Straße schon bis zur Ferdinand-Schultze-Str.?	? 17247,14581 17389,14599 17514,14613 17629,14627
+Hofheimer Str.: Qualität? Führt die Straße schon über die Sollstedter Str. hinaus?	? 17579,14777 17600,14713
+Sollstedter Str.: Qualität?	? 17242,14664 17377,14678 17507,14693 17600,14713
+Küllstedter Str.: Qualität? Kann man direkt zur Landsberger Allee fahren?	? 17340,14898 17377,14678 17389,14599 17396,14523
+Birkenstr. (Hessenwinkel): Qualität?	? 31789,2636 31822,2676 31881,2712 31927,2735 32031,2723
+Wolfgang-Steinitz-Str.: Qualität?	? 31967,2966 31861,2898 31772,2830 31647,2729
+Straße 523: Qualität?	? 31927,2735 31861,2898
+Dämeritzstr.: Qualität?	? 32512,2621 32445,2716
+Wodanstr. (Hessenwinkel): Qualität?	? 32400,1793 32361,1926 32341,1996
+Baldurstr. (Hessenwinkel): Qualität?	? 32239,1929 32361,1926
+Benjamin-Vogelsdorff-Str.: Qualität?	? 10479,18007 10355,17963
+Elisabethweg: Qualität?	? 10359,18646 10336,18701 10474,18785
+Hasseroder Str.: Qualität?	? 11469,18799 11535,18817
+Obernburger Weg: Qualität?	? 11686,17710 11700,17629 11711,17569
+Pankgrafenstr.: Qualität? Existiert eine Durchfahrt zur Breiten Str.?	? 10409,18551 10447,18452 10470,18402 10502,18338
+Pfarrer-Jungklaus-Str.: Qualität?	? 11362,17139 11365,17202 11353,17288
+Podewilsstr.: Qualität?	? 8707,6537 8551,6552
+Zastrowstr.: Qualität?	? 9979,6349 9860,6348
+Antoniuskirchstr.: Qualität?	? 18125,6694 18152,6745 18122,6773 18069,6743
+Treskowstr. (Oberschöneweide): Qualität? Kann man als Radfahrer zur Straße "An der Wuhlheide" durchfahren und auch dort überquert werden?	? 19333,6165 19393,6256 19405,6276
+Waldowstr. (Oberschöneweide): Qualität?	? 19388,5883 19325,6105
+Wasserstr. (Oberschöneweide): Qualität?	? 19697,5835 19681,5924
+Reuterpfad: Qualität?	? 1839,7887 1843,8059
+Bödikersteig: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer? Kann der Siemensdamm in Höhe der Straße überquert werden?	? 1141,14237 1182,14384
+Voltastr. (Siemensstadt): Qualität? Kann der Siemensdamm in Höhe der Straße überquert werden?	? 1246,14384 1200,14227
+Wehneltsteig: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer? Kann der Siemensdamm in Höhe der Straße überquert werden?	? 1256,14217 1305,14384
+Hefnersteig: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer? Kann der Siemensdamm in Höhe der Straße überquert werden?	? 1420,14369 1364,14191
+Kroppenstedtweg: Qualität? Für Radfahrer benutzbar? Nachts beleuchtet? Ausgeschildert?	? 1058,14898 1035,14996 996,15091 957,15189
+Nonnendamm: Qualität? Name der Brücke?	? 2028,13801 2149,13775 2176,13703 2217,13689 2283,13741 2430,13717 2548,13796
+Bösensteinweg: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 9771,1641 9847,1571 9943,1543
+Fluchthornweg: Qualität? Kann der Mariendorfer Damm in Höhe des Fluchthornwegs überquert werden?	? 10156,1658 10094,1634 10046,1464
+Raucheckweg: Qualität? Kann der Mariendorfer Damm in Höhe des Raucheckwegs überquert werden?	? 10003,1768 10056,1754 10114,1773
+Göllweg: Qualität? Wie kann der Mariendorfer Damm in Höhe des Göllwegs am Besten überquert werden?	? 10222,1475 10119,1435 10046,1464 9931,1502
+Zangenbergweg: Qualität?	? 10119,1435 10041,1328
+Olpererweg: Qualität?	? 10950,3602 10866,3611
+Schareckstr.: Qualität?	? 10866,3611 10841,3441
+Straße 483: Qualität?	? 10841,3441 10925,3425
+Pohligstr.: Qualität?	? 8969,3074 9000,3065
+Balatonstr.: Qualität?	? 17475,10442 17915,10350 17946,10344
+Criegernweg: Qualität?	? 18417,10738 18509,10757
+Lüttichauweg: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 18530,10887 18481,10870 18506,10769 18509,10757 18512,10744 18519,10707 18537,10663 18596,10675
+Enckevortweg: Qualität? Ist die Straße (außer in den Sackgassen) eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 18598,10661 18596,10675 18587,10716 18530,10887 18520,10913
+Hülsenplatz: Qualität? Offen für Autos?	? 18512,10744 18545,10752 18538,10774 18506,10769
+Hohenschönhauser Weg: Qualität? Ist die Durchfahrt zur Seddiner für Autos offen?	? 18422,11837 18407,12117
+#: XXX_indoor: fehlende Nebenfahrbahnen für die Netzverknüpfung einzeichnen!
+Köpitzer Str.: Qualität?	? 18272,11552 18390,11597 18381,11655
+Paul-Gesche-Str.: Qualität? Kann Alt-Friedrichsfelde in Höhe der Paul-Gesche-Str. überquert werden?	? 17497,11782 17495,11724 17491,11681 17531,11674 17531,11622 17690,11610 17741,11607
