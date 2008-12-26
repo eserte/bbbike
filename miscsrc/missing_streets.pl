@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: missing_streets.pl,v 1.4 2008/12/25 23:48:27 eserte Exp $
+# $Id: missing_streets.pl,v 1.5 2008/12/26 22:02:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -71,7 +71,10 @@ foreach my $rec (@{ $plz->{Data} }) {
     next if $str =~ m{^[SU]-Bhf\s}; # later XXX
     next if $str =~ m{^Güterbahnhof\s}; # later XXX
     next if $str =~ m{\(Kolonie\)}; # later XXX
+    next if $str =~ m{\(Siedlung\)}; # later XXX
     next if $str =~ m{^Kolonie\s}; # later XXX
+    next if $str =~ m{^Siedlung\s}; # later XXX
+    next if $str =~ m{^Wochenendsiedlung\s}; # later XXX
     next if $str =~ m{^KGA\s}; # later XXX
     next if $str =~ m{^(Modersohnbrücke
 		      |Heinrich-von-Kleist-Park # Schöneberg
@@ -87,7 +90,36 @@ foreach my $rec (@{ $plz->{Data} }) {
 		      |Jagdschloß[ ]Grunewald
 		      |Lindwerder
 		      |Wasserwerk[ ]Teufelssee
-		      )}x; # decide later (non-strassen, e.g. brunnels or parks) XXX
+		      |Melli-Besse-Str. # Adlershof --- Ring oder Straße; Lage vollkommen unklar
+		      |Ernst-Reuter-Siedlung # Wedding --- keine Straße hier zu erkennen
+		      |Humboldthain # Wedding
+		      |Albrechts[ ]Teerofen # Wannsee
+		      |Landgut[ ]Eule # Ist das eine Straße?
+		      |Glienicker[ ]Park
+		      |Im[ ]Jagen # sieht uninteressant aus
+		      |Moorlake
+		      |Nikolskoe
+		      |Pfaueninsel
+		      |Schäferberg
+		      |Siedlung[ ]10 # Baumschulenweg
+		      |Am[ ]Sportplatz # Buch
+		      |Britzer[ ]Hafen # Britz
+		      |Am[ ]Bahnhof[ ]Grunewald[ ]Vorplatz[ ]II # Charlottenburg
+                      |Avus[ ]Innenraum
+		      |Avus[ ]Nordkurve
+		      |DRK[ ]Kliniken
+		      |Europa-Center
+		      |Rudolf-Virchow-Krankenhaus
+		      |Schleuse[ ]Charlottenburg
+		      |Schleuse[ ]Plötzensee
+		      |Schleuseninsel[ ]im[ ]Tiergarten
+		      |Sportplatz[ ]Eichkamp
+		      |Sportplatz[ ]Kühler[ ]Weg
+		      |Sportplatz[ ]Maikäferpfad
+		      |Volkspark[ ]Jungfernheide
+		      |Waldbühne
+		      |Löwe-Siedlung
+		      )$}x; # decide later (non-strassen, e.g. brunnels or parks) XXX
     if (exists $seen_street_with_bezirk{$str}->{$bezirk}) {
     } elsif (exists $seen_street{$str}) {
     } else {
@@ -107,3 +139,11 @@ for my $key (sort { scalar(@{$missing_by_bezirk{$a}}) <=> scalar(@{$missing_by_b
 #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\%missing_by_bezirk],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 
 __END__
+
+=pod
+
+Show number of missing streets per bezirk:
+
+     ./missing_streets.pl | grep '^[A-Z]' | sort
+
+=cut

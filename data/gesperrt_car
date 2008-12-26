@@ -142,7 +142,7 @@ Raumerstr. -> Fröbelstr.: Prenzlauer Allee	3::igndisp 11623,15108 11776,15060 11
 Raumerstr. -> Prenzlauer Allee: Prenzlauer Allee	3::igndisp 11623,15108 11776,15060 11798,15133
 Prenzlauer Allee -> Raumerstr.: Prenzlauer Allee	3::igndisp 11712,14868 11776,15060 11623,15108
 Große Weinmeisterstr. (Potsdam)	1 -12557,11 -12582,127 -12618,296
-Stellmacherweg	1 13151,2958 13400,2890
+Stellmacherweg	1 13151,2958 13453,2930
 Hittorfstr	1 2442,4806 2469,4882 2516,4936 2587,4965
 Lefèvrestr.	1 5372,6663 5215,6643
 Kühlebornweg	1 5161,4664 5075,4600 5004,4709
@@ -224,7 +224,7 @@ Gartenstr. -> Torstr.: Torstr.	3::igndisp 9531,13797 9668,13629 9792,13681
 Gartenstr. -> Kleine Hamburger Str.: Torstr.	3::igndisp 9531,13797 9668,13629 9752,13575
 Torstr. -> Gartenstr.: Torstr.	3::igndisp 9571,13590 9668,13629 9531,13797
 Siegfriedstr.	1 12340,6947 12477,6975 12664,7013 12810,7047 12843,7093 12872,7134
-Onkel-Herse-Str.	1 13680,4715 13836,4759 13853,4759 13928,4775
+Onkel-Herse-Str.	1 13680,4715 13757,4729 13836,4759 13853,4759 13928,4775
 Paulstr.	3nocross::ignrte 7064,12419 7091,12554 7097,12590
 Joachim-Karnatz-Allee -> Paulstr.: Paulstr.	3::igndisp 7167,12573 7091,12554 7064,12419
 Paulstr. -> Joachim-Karnatz-Allee: Paulstr.	3::igndisp 7097,12590 7091,12554 7167,12573
@@ -553,12 +553,8 @@ Wriezener Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9245,16758 9210,1663
 Osloer Str. -> Wriezener Str.: Straßenbahntrasse	3::igndisp 8939,16668 9210,16638 9245,16758
 Straßenbahntrasse	3nocross::ignrte 8260,16740 8196,16746 8144,16750 7763,16779
 Heinz-Galinski-Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 8092,16485 8196,16746 8144,16750
-Heinz-Galinski-Str. -> Heinz-Galinski-Str.: Straßenbahntrasse	3::igndisp 8092,16485 8196,16746 8210,16793
-Osloer Str. -> Heinz-Galinski-Str.: Straßenbahntrasse	3::igndisp 8144,16750 8196,16746 8210,16793
 Osloer Str. -> Heinz-Galinski-Str.: Straßenbahntrasse	3::igndisp 8260,16740 8196,16746 8092,16485
-Heinz-Galinski-Str. -> Heinz-Galinski-Str.: Straßenbahntrasse	3::igndisp 8210,16793 8196,16746 8092,16485
-Heinz-Galinski-Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 8210,16793 8196,16746 8260,16740
-Straßenbahntrasse	3nocross::ignrte 7606,16746 7456,16620 7403,16575 7388,16561 7231,16418
+Straßenbahntrasse	3nocross::ignrte 7606,16746 7456,16620 7403,16575 7388,16561 7295,16477 7231,16418
 Seestr. -> Iranische Str.: Straßenbahntrasse	3::igndisp 7606,16746 7456,16620 7707,16543
 Iranische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7707,16543 7456,16620 7403,16575
 Groninger Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7439,16350 7403,16575 7388,16561
@@ -755,7 +751,7 @@ Straßenbahntrasse	3nocross::ignrte 10932,22184 10997,22203 11077,22236
 Guyotstr. -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11056,21978 10997,22203 10932,22184
 Rosenthaler Weg -> Guyotstr.: Straßenbahntrasse	3::igndisp 11077,22236 10997,22203 11056,21978
 Elisabethstr.	1 -3387,15410 -3451,15372 -3492,15331
-Eisenacher Str.	1 22886,15095 23093,15134
+Eisenacher Str.	1 22886,15095 23116,15111
 Mittelstreifen	3nocross::ignrte -3009,17090 -3017,16984 -3018,16974
 Straßenbahntrasse	3nocross::ignrte 18770,8898 18734,8682 18729,8650
 Treskowallee -> Rheinsteinstr.: Straßenbahntrasse	3::igndisp 18770,8898 18734,8682 18868,8731

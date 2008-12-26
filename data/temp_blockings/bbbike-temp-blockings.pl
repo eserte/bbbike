@@ -509,7 +509,7 @@ EOF
        text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Londoner Str. und Transvaalstr. Veranstaltung, Straße vollständig gesperrt (bis 17.07.2005 24 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 6019,16712 5777,16924
+userdel	2 6019,16712 5937,16784 5777,16924
 userdel	2 6019,16712 6103,16635
 userdel	2 6103,16635 6208,16546 6311,16457
 EOF
@@ -735,7 +735,7 @@ EOF
        text  => 'Dauer: 01.09.2004 07:00 Uhr bis 03.09.2004 20:00 Uhr. Rudower Chaussee, gesperrt von Agastraße bis Großberliner Damm in Richtung Treptow',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 19732,3340 19581,3184 19501,3101
+userdel	1 19732,3340 19603,3207 19581,3184 19501,3101
 EOF
      },
      { from  => 1094083200, # 2004-09-02 02:00
@@ -1491,9 +1491,9 @@ EOF
        text  => 'Späthstraße (Treptow) In beiden Richtungen zwischen A113 und Königsheideweg Störungen durch geplatzte Wasserleitung, Straße gesperrt (bis 28.02.2005) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 14694,5230 14744,5211 14988,5214
-userdel	2 14988,5214 15038,5235 15174,5463
-userdel	2 15174,5463 15382,5687
+userdel	2 14694,5230 14744,5211 14808,5202 14988,5214
+userdel	2 14988,5214 15038,5235 15183,5480
+userdel	2 15183,5480 15382,5687
 EOF
      },
      { from  => 1113429600, # 2005-04-14 00:00
@@ -4618,7 +4618,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_83663',
        data  => <<EOF,
-userdel	2::inwork 5777,16924 6042,17189 6118,17327 6154,17438
+userdel	2::inwork 5777,16924 5847,17018 6051,17269 6091,17346 6126,17448
 EOF
      },
      { from  => 1149976800, # 2006-06-11 00:00
@@ -8397,7 +8397,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005655',
        data  => <<EOF,
-userdel	2::temp 6311,16457 6208,16546 6103,16635 6019,16712 5777,16924
+userdel	2::temp 6311,16457 6208,16546 6103,16635 6019,16712 5937,16784 5777,16924
 EOF
      },
      { from  => 1180783165, # 2007-06-02 13:19
