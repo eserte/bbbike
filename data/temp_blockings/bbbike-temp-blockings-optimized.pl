@@ -125,7 +125,16 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_006819',
+         'until' => 1230764399,
+         'text' => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Mohrenstr. und Leipziger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2008)',
+         'from' => 1230474822,
+         'id' => 1194,
+         'data' => 'userdel	1::inwork 9220,11781 9234,11683 9268,11590
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -349,9 +358,9 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1230764400,
-         'text' => 'B 246 Ernst-Thälmann-Straße OL Storkow, zw. Burgstraße u. Am Bahnhof Deckenerneuerung Vollsperrung 26.05.2008-31.12.2008 ',
-         'from' => 1211666400,
+         'until' => 1238450400,
+         'text' => 'B 246 Ernst-Thälmann-Straße OL Storkow, zw. Burgstraße u. Am Bahnhof Deckenerneuerung Vollsperrung * 17.12.2008-30.03.2009 ',
+         'from' => 1229382000,
          'id' => 1369,
          'data' => 'userdel	q4::inwork 46518,-16240 46409,-16251 46004,-16440
 ',
@@ -413,15 +422,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1230764400,
-         'text' => 'L 141 Breddin - Kümmernitz OD Breddin Straßenneubau Vollsperrung 17.07.2008-31.12.2008 ',
-         'from' => 1216159200,
-         'id' => 1402,
-         'data' => 'userdel	q4::inwork -70100,51862 -70753,51862 -70922,51604
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -561,7 +562,15 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1243807200,
+         'text' => 'L 015 Rosa-Luxemburg-Str. OL Wittstock, zw. Polthierstr. und Bohnekampweg Kanal- und Straßenbau Vollsperrung 06.10.2008-31.05.2009 ',
+         'from' => 1223157600,
+         'id' => 1492,
+         'data' => 'userdel	q4::inwork -53868,82504 -53648,82294 -53491,81954
+',
+         'type' => 'handicap'
+       },
        {
          'until' => 1241128800,
          'text' => 'L 030 Fredersdorf - Altlandsberg - Bernau OD Altlandsberg, zw. OE und Strausberger Tor Straßenausbau Vollsperrung * 22.09.2008-30.04.2009 ',
@@ -617,23 +626,32 @@ push @temp_blocking,
        undef,
        {
          'source_id' => 'IM_010086',
-         'until' => 1235948399,
-         'text' => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Baustelle, Straße vollständig gesperrt (bis Anfang 03.2009)',
-         'from' => 1227351275,
+         'until' => 1238536799,
+         'text' => 'Ordensmeisterstr. (Tempelhof) Richtung Tempelhofer Damm zwischen Lorenzstr. und Tempelhofer Damm Baustelle, Fahrtrichtung gesperrt (bis Ende 03.2009)',
+         'from' => 1230474772,
          'id' => 1522,
-         'data' => 'userdel	2::inwork 9357,5601 9147,5534
+         'data' => 'userdel	1::inwork 9357,5601 9147,5534
 ',
          'type' => 'gesperrt'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'IM_010519',
+         'until' => 1230850799,
+         'text' => 'Gubitzstr. (Prenzlauer Berg) in beiden Richtungen zwischen Küselstr. und Scheritzstr. Bauarbeiten, Straße vollständig gesperrt (bis Anfang 01.2009)',
+         'from' => 1230474668,
+         'id' => 1524,
+         'data' => 'userdel	2::inwork 12463,15774 12384,15618 12299,15463
+',
+         'type' => 'gesperrt'
+       },
        {
          'source_id' => 'IM_010401',
-         'until' => 1275429599,
-         'text' => 'Köthener Str. (Kreuzberg) Richtung Hallesches Ufer zwischen Stresemannstr. und Hallesches Ufer Baustelle, Fahrtrichtung gesperrt ausgeschildert (bis Anfang 6.2010)',
-         'from' => 1226267554,
+         'until' => 1233442799,
+         'text' => 'Köthener Str. (Kreuzberg) in beiden Richtungen zwischen Bernburger Str. und Hafenplatz Baustelle, Straße vollständig gesperrt ausgeschildert (bis Ende 1.2009)',
+         'from' => 1230474690,
          'id' => 1525,
-         'data' => 'userdel	1::inwork 8636,11339 8542,11061 8487,10897 8443,10777
+         'data' => 'userdel	2::inwork 8487,10897 8542,11061
 ',
          'type' => 'gesperrt'
        },
@@ -681,15 +699,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1230418799,
-         'text' => 'Sperrung des Delfter Ufers. Ab Montag, dem 17.11.2008 wird für ca. vier Wochen ein Teilstück von ca. 250 m der Grünanlage Delfter Ufer in Höhe der Rudergesellschaft Wiking e.V. bis zum rückwärtigen Firmengelände Testorp gesperrt werden. Der Rad- und Fußweg kann in dieser Zeit nicht durchgängig genutzt werden. Ein Ausweichen ist über den Schwarzen Weg, Haarlemer Straße und wieder zurück zum Delfter Ufer über den Weg der Kolonie "Zum Siedlerheim" möglich.',
-         'from' => 1226876400,
-         'id' => 1545,
-         'data' => 'userdel	2::inwork 13766,6019 13971,5978 14136,5831 14241,5674
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_009727',
          'until' => 1233442799,
@@ -714,13 +724,17 @@ push @temp_blocking,
        undef,
        undef,
        undef,
+       undef,
+       undef,
+       undef,
        {
-         'source_id' => 'IM_010963',
-         'until' => 1230764399,
-         'text' => 'Dörpfeldstr. (Adlershof) Richtung Köpenick zwischen Anna-Seghers-Str. und Gellertstr. Baustelle, Fahrtrichtung gesperrt, bis Ende 12.2008)',
-         'from' => 1229377415,
-         'id' => 1552,
-         'data' => 'userdel	1::inwork 20012,3532 20082,3578
+         'source_id' => 'IM_010978',
+         'until' => 1230958800,
+         'text' => 'Straße des 17. Juni (Tiergarten) Veranstaltung, Straße vollständig gesperrt, ebenso Yitzhak-Rabin-Str. und Ebertstr. (bis 03.01.09, ca. 6 Uhr)',
+         'from' => 1230474969,
+         'id' => 1555,
+         'data' => 'userdel	2::inwork 8119,12414 8063,12182 8089,12186 8214,12205 8515,12242 8539,12286
+userdel	2::inwork 8595,12066 8600,12165 8515,12242
 ',
          'type' => 'gesperrt'
        }

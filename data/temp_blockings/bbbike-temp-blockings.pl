@@ -10068,13 +10068,13 @@ EOF
 userdel	2::inwork -20021,54750 -20798,54347 -21553,54152 -22376,53427 -23839,52751
 EOF
      },
-     { from  => 1191967812, # 2007-10-10 00:10
-       until => 1229377492, # 2008-12-31 23:59 1230764399
-       text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Französische Str. und Leipziger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2008)',
+     { from  => 1230474822, # 2008-12-28 15:33
+       until => 1230764399, # 2008-12-31 23:59
+       text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Mohrenstr. und Leipziger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2008)',
        type  => 'gesperrt',
        source_id => 'IM_006819',
        data  => <<EOF,
-userdel	1::inwork 9183,12076 9201,11968 9208,11872 9220,11781 9234,11683 9268,11590
+userdel	1::inwork 9220,11781 9234,11683 9268,11590
 EOF
      },
      { from  => 1191967853, # 2007-10-10 00:10
@@ -11524,9 +11524,9 @@ EOF
 userdel	2::inwork 39721,13668 40248,14503 40266,14531
 EOF
      },
-     { from  => 1211666400, # 2008-05-25 00:00
-       until => 1230764400, # 2009-01-01 00:00
-       text  => 'B 246 Ernst-Thälmann-Straße OL Storkow, zw. Burgstraße u. Am Bahnhof Deckenerneuerung Vollsperrung 26.05.2008-31.12.2008 ',
+     { from  => 1229382000, # 2008-12-16 00:00
+       until => 1238450400, # 2009-03-31 00:00
+       text  => 'B 246 Ernst-Thälmann-Straße OL Storkow, zw. Burgstraße u. Am Bahnhof Deckenerneuerung Vollsperrung * 17.12.2008-30.03.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 46518,-16240 46409,-16251 46004,-16440
@@ -11873,9 +11873,9 @@ EOF
 userdel	q4::inwork -32661,-44144 -31201,-45781
 EOF
      },
-     { from  => 1216159200, # 2008-07-16 00:00
-       until => 1230764400, # 2009-01-01 00:00
-       text  => 'L 141 Breddin - Kümmernitz OD Breddin Straßenneubau Vollsperrung 17.07.2008-31.12.2008 ',
+     { from  => 1230475253, # 2008-12-17 00:00 1229468400
+       until => 1230475258, # 2009-05-01 00:00 1241128800
+       text  => 'L 141 Breddin - Kümmernitz OD Breddin Straßenneubau Wintersicherung 18.12.2008-30.04.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -70100,51862 -70753,51862 -70922,51604
@@ -12643,8 +12643,8 @@ userdel	2::inwork 68327,37979 67364,38248 67053,38406 66413,38217
 EOF
      },
      { from  => 1223157600, # 2008-10-05 00:00
-       until => 1229727600, # 2008-12-20 00:00
-       text  => 'L 015 Rosa-Luxemburg-Str. OL Wittstock, zw. Polthierstr. und Bohnekampweg Kanal- und Straßenbau Vollsperrung 06.10.2008-19.12.2008 ',
+       until => 1243807200, # 2009-06-01 00:00
+       text  => 'L 015 Rosa-Luxemburg-Str. OL Wittstock, zw. Polthierstr. und Bohnekampweg Kanal- und Straßenbau Vollsperrung 06.10.2008-31.05.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -53868,82504 -53648,82294 -53491,81954
@@ -12890,13 +12890,13 @@ EOF
 userdel	1::inwork 11574,11594 11324,11689 11242,11720
 EOF
      },
-     { from  => 1227351275, # 2008-11-22 11:54
-       until => 1235948399, # 2009-03-01 23:59
-       text  => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Wenckebachstr. und Tempelhofer Damm Baustelle, Straße vollständig gesperrt (bis Anfang 03.2009)',
+     { from  => 1230474772, # 2008-12-28 15:32
+       until => 1238536799, # 2009-03-31 23:59
+       text  => 'Ordensmeisterstr. (Tempelhof) Richtung Tempelhofer Damm zwischen Lorenzstr. und Tempelhofer Damm Baustelle, Fahrtrichtung gesperrt (bis Ende 03.2009)',
        type  => 'gesperrt',
        source_id => 'IM_010086',
        data  => <<EOF,
-userdel	2::inwork 9357,5601 9147,5534
+userdel	1::inwork 9357,5601 9147,5534
 EOF
      },
      { from  => 1226267441, # 2008-11-09 22:50
@@ -12908,22 +12908,22 @@ EOF
 userdel	2::inwork 22172,194 22168,-71 22177,-137
 EOF
      },
-     { from  => 1226267528, # 2008-11-09 22:52
-       until => 1228085999, # 2008-11-30 23:59
-       text  => 'Gubitzstr. (Prenzlauer Berg) in beiden Richtungen zwischen Küselstr. und Scheritzstr. Bauarbeiten, Straße vollständig gesperrt (bis Ende 11.2008)',
+     { from  => 1230474668, # 2008-12-28 15:31
+       until => 1230850799, # 2009-01-01 23:59
+       text  => 'Gubitzstr. (Prenzlauer Berg) in beiden Richtungen zwischen Küselstr. und Scheritzstr. Bauarbeiten, Straße vollständig gesperrt (bis Anfang 01.2009)',
        type  => 'gesperrt',
        source_id => 'IM_010519',
        data  => <<EOF,
 userdel	2::inwork 12463,15774 12384,15618 12299,15463
 EOF
      },
-     { from  => 1226267554, # 2008-11-09 22:52
-       until => 1275429599, # 2010-06-01 23:59
-       text  => 'Köthener Str. (Kreuzberg) Richtung Hallesches Ufer zwischen Stresemannstr. und Hallesches Ufer Baustelle, Fahrtrichtung gesperrt ausgeschildert (bis Anfang 6.2010)',
+     { from  => 1230474690, # 2008-12-28 15:31
+       until => 1233442799, # 2009-01-31 23:59
+       text  => 'Köthener Str. (Kreuzberg) in beiden Richtungen zwischen Bernburger Str. und Hafenplatz Baustelle, Straße vollständig gesperrt ausgeschildert (bis Ende 1.2009)',
        type  => 'gesperrt',
        source_id => 'IM_010401',
        data  => <<EOF,
-userdel	1::inwork 8636,11339 8542,11061 8487,10897 8443,10777
+userdel	2::inwork 8487,10897 8542,11061
 EOF
      },
      { from  => 1226267628, # 2008-11-09 22:53
@@ -13141,7 +13141,7 @@ userdel	2::inwork 14597,11069 14530,11137
 EOF
      },
      { from  => 1229377415, # 2008-12-15 22:43
-       until => 1230764399, # 2008-12-31 23:59
+       until => 1230475010, # 2008-12-31 23:59 1230764399
        text  => 'Dörpfeldstr. (Adlershof) Richtung Köpenick zwischen Anna-Seghers-Str. und Gellertstr. Baustelle, Fahrtrichtung gesperrt, bis Ende 12.2008)',
        type  => 'gesperrt',
        source_id => 'IM_010963',
@@ -13163,6 +13163,16 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 46163,13586 46017,13884
+EOF
+     },
+     { from  => 1230474969, # 2008-12-28 15:36
+       until => 1230958800, # 2009-01-03 06:00
+       text  => 'Straße des 17. Juni (Tiergarten) Veranstaltung, Straße vollständig gesperrt, ebenso Yitzhak-Rabin-Str. und Ebertstr. (bis 03.01.09, ca. 6 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_010978',
+       data  => <<EOF,
+userdel	2::inwork 8119,12414 8063,12182 8089,12186 8214,12205 8515,12242 8539,12286
+userdel	2::inwork 8595,12066 8600,12165 8515,12242
 EOF
      },
     );

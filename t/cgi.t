@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.60 2008/08/28 21:32:53 eserte Exp $
+# $Id: cgi.t,v 1.61 2008/12/28 16:28:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -205,7 +205,6 @@ for my $cgiurl (@urls) {
 	}
     }
 
- XXX: 
     {
 	my $content;
 	my $route;
@@ -310,9 +309,10 @@ for my $cgiurl (@urls) {
 	$content = uncompr($res);
 	BBBikeTest::like_long_data($content, qr/Sekunden.*Zeitverlust/, "Zeitverlust in text", ".html");
 
+    XXX: 
 	# Test comments_points (category BNP, NARROWPASSAGE) (as part of Bemerkungen)
 	$req = new HTTP::Request
-	    ('GET', "$action?startc=9509%2C10391&startplz=10969&startname=Mehringplatz&zielname=Brachvogelstr.&zielplz=10961&zielc=10059%2C10147&scope=&pref_seen=1&pref_speed=12&pref_cat=N1&pref_quality=Q2&pref_ampel=yes&pref_green=&pref_fragezeichen=yes");
+	    ('GET', "$action?startc=9662%2C10345&startplz=10969&startname=Mehringplatz&zielname=Brachvogelstr.&zielplz=10961&zielc=10059%2C10147&scope=&pref_seen=1&pref_speed=12&pref_cat=N1&pref_quality=Q2&pref_ampel=yes&pref_green=&pref_fragezeichen=yes");
 	$res = $ua->request($req);
 	ok($res->is_success, "Drängelgitter test") or diag $res->as_string;
 
