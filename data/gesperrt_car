@@ -761,3 +761,6 @@ Rheinsteinstr. -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18868,8731 18734,8
 Ehrenfelsstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18843,8612 18734,8682 18729,8650
 Lötzener Allee	1 452,10669 474,10869 503,11104
 keine Abbiegemöglichkeit	3nocross::ignrte 20053,3272 20001,3331 19892,3454
+Mittelstreifen	3nocross::ignrte 5542,11075 5459,11135 5268,11274
+Jebensstr. -> Hardenbergstr.: Mittelstreifen	3::igndisp 5587,11397 5459,11135 5542,11075
+Hardenbergstr. -> Jebensstr.: Mittelstreifen	3::igndisp 5268,11274 5459,11135 5587,11397

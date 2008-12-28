@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.47 2008/11/16 19:51:37 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.48 2008/12/27 23:54:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2008 Slaven Rezic. All rights reserved.
@@ -1075,16 +1075,17 @@ sub BBBikeGPS::draw_track_graph {
 
 	    $fg->Label(-text => M"Glätten")->pack(-side => "left");
 	    $fg->Entry(-textvariable => \$smooth_ref->{$type}, -width => 4)->pack(-side => "left");
-	    $fg->Button(-text => M"Geglättete oben",
-			-command => sub {
-			    $graph_c{$type}->raise("$type-smooth");
-			}
-		       )->pack(-side => "left");
-	    $fg->Button(-text => M"Geglättete unten",
-			-command => sub {
-			    $graph_c{$type}->lower("$type-smooth");
-			}
-		       )->pack(-side => "left");
+#XXX del not needed anymore with the discovery of -state=>"disabled"
+# 	    $fg->Button(-text => M"Geglättete oben",
+# 			-command => sub {
+# 			    $graph_c{$type}->raise("$type-smooth");
+# 			}
+# 		       )->pack(-side => "left");
+# 	    $fg->Button(-text => M"Geglättete unten",
+# 			-command => sub {
+# 			    $graph_c{$type}->lower("$type-smooth");
+# 			}
+# 		       )->pack(-side => "left");
 	    {
 		my($against_b, @conf_time, @conf_dist);
 		$against_b = $fg->Button->pack(-side => "left");
@@ -1220,6 +1221,7 @@ sub BBBikeGPS::draw_track_graph {
 			    $graph_c{$type}->createLine
 				($last_x{$type}, $last_y{$type}, $x, $y,
 				 -fill => "green3",
+				 -state => "disabled",
 				 -tags => "$type-average");
 			}
 			$last_y{$type} = $y;
@@ -1297,7 +1299,11 @@ sub BBBikeGPS::draw_track_graph {
 		    if (defined $last_x) {
 			my $y = $def_c_top + $c_h{$type}-( ($c_h{$type}/$delta{$type})*($val-$min{$type}));
 			if (defined $last) {
-			    $graph_c{$type}->createLine($last_x, $last, $x, $y, -fill => 'red', -tags => "$type-smooth");
+			    $graph_c{$type}->createLine($last_x, $last, $x, $y,
+							-fill => 'red',
+							-state => "disabled",
+							-tags => "$type-smooth",
+						       );
 			}
 			$last = $y;
 		    }
