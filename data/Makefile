@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.202 2008/11/25 20:47:00 eserte Exp eserte $
+# $Id: Makefile,v 2.203 2008/12/28 17:44:27 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -767,9 +767,13 @@ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragez
 		qualitaet_s-orig \
 		qualitaet_l-orig \
 		handicap_s-orig \
-		handicap_l-orig
+		handicap_l-orig \
+		${PERSISTENTTMPDIR}/XXX-indoor.bbd \
+		${PERSISTENTTMPDIR}/XXX-outdoor.bbd \
+		${PERSISTENTTMPDIR}/XXX-other.bbd
 	echo -n > ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
 	echo "#: line_dash: 8, 5" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+	echo "#: line_width: 5" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
 	echo "#:" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
 .for i in ampeln-orig fragezeichen-orig gesperrt-orig qualitaet_s-orig qualitaet_l-orig handicap_s-orig handicap_l-orig
 	echo "############################################################" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
@@ -778,6 +782,15 @@ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragez
 	cat /tmp/nextcheck.bbd >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
 	${GREPSTRASSEN} -directive next_check~. -special nextcheck $(i) > /dev/null
 	cat /tmp/nextcheck.bbd >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+.endfor
+	echo "############################################################" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+	echo "# source: fragezeichen-orig" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+	echo "# (without next_check/last_checked)" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+	${GREPSTRASSEN} -special nonextcheck fragezeichen-orig >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+.for i in indoor outdoor other
+	echo "############################################################" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+	echo "# source: XXX-$(i)" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+	cat ${PERSISTENTTMPDIR}/XXX-$(i).bbd >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
 .endfor
 	touch ${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd
 

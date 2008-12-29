@@ -73,7 +73,10 @@ GPS/Gardown.pm
 GPS/Gpsbabel.pm
 GPS/GpsmanConn.pm
 GPS/GpsmanData.pm
+GPS/GpsmanData/Analyzer.pm
 GPS/GpsmanData/Any.pm
+GPS/GpsmanData/DirectEdit.pm
+GPS/GpsmanData/Tk.pm
 GPS/KML.pm
 GPS/MPS.pm
 GPS/MyNMEA.pm

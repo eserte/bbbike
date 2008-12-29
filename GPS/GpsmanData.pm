@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.56 2008/08/26 22:21:37 eserte Exp $
+# $Id: GpsmanData.pm,v 1.63 2008/12/29 19:44:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005,2007 Slaven Rezic. All rights reserved.
@@ -31,6 +31,7 @@ BEGIN {
 	    Waypoints WaypointsHash
 	    Track CurrentConverter
 	    TimeOffset TrackAttrs
+	    LineInfo
 	   )) {
 	my $acc = $_;
 	*{$acc} = sub {
@@ -44,13 +45,17 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.56 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.63 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
 use constant TYPE_TRACK    => 1;
 use constant TYPE_ROUTE    => 2;
 use constant TYPE_GROUP    => 3;
+
+# XXX currently hardcoded to DMS
+# XXX Note that some functions also assume hardcoded DMS (DMS_output, body_as_string)
+use constant _POSITION_FORMAT_FOR_WRITING => "DMS";
 
 use base qw(Exporter);
 @EXPORT_OK = qw(TYPE_WAYPOINT TYPE_TRACK TYPE_ROUTE TYPE_GROUP);
@@ -98,8 +103,8 @@ struct('GPS::Gpsman::Waypoint' =>
     }
 
     sub DMS_output {
-	my($wpt) = @_;
-	$wpt->ParsedLatitude
+	my($wpt, $container) = @_;
+	$wpt->ParsedLatitude && $container->PositionFormat eq $container->_POSITION_FORMAT_FOR_WRITING
 	    ? ($wpt->ParsedLatitude, $wpt->ParsedLongitude)
 		: $wpt->Latitude
 		    ? GPS::GpsmanData::convert_lat_long_to_gpsman_DMS($wpt->Latitude, $wpt->Longitude)
@@ -364,22 +369,26 @@ sub parse_and_set_coordinate {
     my($self, $obj, $f_ref, $f_i_ref) = @_;
 
     my $position_format = $self->PositionFormat;
+    my($parsed_lat, $parsed_long);
     my($lat, $long);
     if (defined $position_format && $position_format eq 'UTM/UPS') {
+	# XXX no ParsedLongitude/Latitude support for UTM/UPS yet
 	my($ze,$zn,$x,$y) = @{$f_ref}[$$f_i_ref .. $$f_i_ref+3];
 	$$f_i_ref += 4;
 	my($lat, $long) = Karte::UTM::UTMToDegrees($ze,$zn,$x,$y,$self->DatumFormat);
 	$lat  = ($lat  >= 0 ? "N" : "S") . abs($lat);
 	$long = ($long >= 0 ? "E" : "W") . abs($long);
     } else {
-	$lat  = $f_ref->[$$f_i_ref++];
-	$long = $f_ref->[$$f_i_ref++];
+	$parsed_lat = $lat  = $f_ref->[$$f_i_ref++];
+	$parsed_long = $long = $f_ref->[$$f_i_ref++];
     }
     my $converter = $self->CurrentConverter;
     $lat  = $converter->($lat);
     $long = $converter->($long);
     $obj->Latitude($lat);
     $obj->Longitude($long);
+    $obj->ParsedLatitude($parsed_lat);
+    $obj->ParsedLongitude($parsed_long);
 }
 
 sub _is_datetime {
@@ -475,6 +484,7 @@ sub parse {
     if (keys %args) {
 	die "Unhandled arguments: " . join " ", %args;
     }
+    my $lineinfo = $self->LineInfo;
     my $type = TYPE_UNKNOWN;
     my $parse_method;
     my @lines = split /\n/, $buf;
@@ -495,6 +505,9 @@ sub parse {
 	next if /^\s*$/;
 	if (defined $parse_method && !/^!/) {
 	    push @data, $self->$parse_method();
+	    if ($type == TYPE_TRACK && $lineinfo) { # XXX other types?
+		$lineinfo->add_wpt_lineinfo($data[-1], $i); # XXX too much assumptions?
+	    }
 	} elsif (/^!Format:\s+(\S+)\s+(\S+)\s+(.*)$/) {
 	    my($pos_format, $time_offset, $datum_format) = ($1, $2, $3);
 	    $self->change_position_format($pos_format);
@@ -522,6 +535,9 @@ sub parse {
 		if (/^!T:/) {
 		    $current_track_name = $l[1];
 		    $self->Name($l[1]);
+		    if ($lineinfo) {
+			$lineinfo->add_chunk_lineinfo($self, $i);
+		    }
 		} else {
 		    if (defined $l[1] && $l[1] ne "") {
 			warn "Should not happen: TS with name";
@@ -532,6 +548,9 @@ sub parse {
 		}
 		if (@l > 2) {
 		    my %attr;
+		    if (eval { require Tie::IxHash; 1 }) {
+			tie %attr, 'Tie::IxHash';
+		    }
 		    for my $l_i (2 .. $#l) {
 			my($key,$val) = split /=/, $l[$l_i];
 			$attr{$key} = $val;
@@ -751,7 +770,7 @@ sub header_as_string {
     my $s = "% Written by $0 [" . __PACKAGE__ . "]\n\n";
     # XXX:
     $s .= "!Format: " . join(" ",
-			     "DMS", # always hardcoded # $self->PositionFormat, 
+			     $self->_POSITION_FORMAT_FOR_WRITING,
 			     $self->TimeOffset,
 			     $self->DatumFormat) . "
 !Creation: no
@@ -782,7 +801,7 @@ sub body_as_string {
 	    $s .= join("\t",
 		       $wpt->Ident,
 		       (defined $wpt->Comment ? $wpt->Comment : ""),
-		       $wpt->DMS_output,
+		       $wpt->DMS_output($self),
 		       (defined $wpt->Altitude ? "alt=".$wpt->Altitude : ()),
 		       (defined $wpt->Symbol ? "symbol=".$wpt->Symbol : ()),
 		       (defined $wpt->DisplayOpt ? "dispopt=".$wpt->DisplayOpt : ()),
@@ -800,7 +819,7 @@ sub body_as_string {
 		       (defined $wpt->Ident ? $wpt->Ident : ""),
 		       (defined $wpt->DateTime ? $wpt->DateTime :
 			defined $wpt->Comment ? $wpt->Comment : ""),
-		       $wpt->DMS_output,
+		       $wpt->DMS_output($self),
 		       (defined $wpt->Altitude ? $wpt->Altitude : ""))
 		. "\n";
 	}
@@ -814,7 +833,7 @@ sub body_as_string {
 	    $s .= join("\t",
 		       $wpt->Ident,
 		       (defined $wpt->Comment ? $wpt->Comment : ""),
-		       $wpt->DMS_output,
+		       $wpt->DMS_output($self),
 		      )
 		. "\n";
 	}
@@ -893,6 +912,29 @@ sub _eliminate_illegal_characters {
     $s;
 }
 
+# in m/s
+sub wpt_velocity {
+    my($self, $wpt0, $wpt1) = @_;
+    my $time0 = $wpt0->Comment_to_unixtime($self);
+    my $time1 = $wpt1->Comment_to_unixtime($self);
+    my $delta_time = abs($time1 - $time0);
+    return undef if !$delta_time; # should never happen...
+    my $delta_dist = $self->wpt_dist($wpt0, $wpt1);
+    $delta_dist / $delta_time;
+}
+
+# in m
+sub wpt_dist {
+    my($self, $wpt0, $wpt1) = @_;
+    require Math::Trig;
+    my $lon0 = Math::Trig::deg2rad($wpt0->Longitude);
+    my $lat0 = Math::Trig::deg2rad($wpt0->Latitude);
+    my $lon1 = Math::Trig::deg2rad($wpt1->Longitude);
+    my $lat1 = Math::Trig::deg2rad($wpt1->Latitude);
+    Math::Trig::great_circle_distance($lon0, Math::Trig::pi()/2 - $lat0,
+				      $lon1, Math::Trig::pi()/2 - $lat1, 6372795);
+}
+
 package GPS::GpsmanMultiData;
 # holds multiple GPS tracks/routes
 
@@ -913,8 +955,15 @@ BEGIN {
 }
 
 sub new {
+    my($class, %args) = @_;
+    my $editable = delete $args{-editable};
+    die "Unhandled arguments: " . join(" ", %args) if %args;
     my $self = { Chunks => [] };
-    bless $self, shift;
+    if ($editable) {
+	require GPS::GpsmanData::DirectEdit;
+	$self->{LineInfo} = GPS::GpsmanData::LineInfo::->new;
+    }
+    bless $self, $class;
     $self;
 }
 
@@ -930,6 +979,18 @@ sub load {
     1;
 }
 
+sub reload {
+    my($self) = @_;
+    my $file = $self->File;
+    die "Cannot reload, no File available"
+	if !defined $file;
+    $self->{Chunks} = [];
+    if ($self->{LineInfo}) {
+	$self->{LineInfo} = GPS::GpsmanData::LineInfo::->new;
+    }
+    $self->load($file);
+}
+
 sub parse {
     my($self, $buf) = @_;
     my $begin = 0;
@@ -942,6 +1003,7 @@ sub parse {
 		$gps_o->$member($old_gps_o->$member());
 	    }
 	}
+	$gps_o->LineInfo($self->{LineInfo}) if $self->{LineInfo};
 	my $old_begin = $begin;
 	$gps_o->parse($buf, -multiple => 1, -begin => \$begin);
 	push @{ $self->{Chunks} }, $gps_o;
@@ -954,6 +1016,8 @@ sub parse {
 }
 
 sub Chunks { shift->{Chunks} }
+
+sub LineInfo { shift->{LineInfo} }
 
 sub convert_to_route {
     my($self, $file, %args) = @_;
@@ -1029,6 +1093,8 @@ sub write {
     print F $self->as_string;
     close F;
 }
+
+sub wpt_dist { shift->GPS::GpsmanData::wpt_dist(@_) }
 
 1;
 

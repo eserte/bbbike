@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: grepstrassen,v 1.25 2008/02/01 23:35:14 eserte Exp $
+# $Id: grepstrassen,v 1.27 2008/12/28 17:37:17 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -177,8 +177,9 @@ LOOP_STREETS: while(1) {
 	}
     }
     # Special matches
+    keys %special; # reset iterator
     while(my($k,$v) = each %special) {
-	next if !$v->($r, $dir);
+	next LOOP_STREETS if !$v->($r, $dir);
     }
     $new_s->push_ext($r, $dir);
 }
@@ -187,6 +188,7 @@ if (@errors) {
     die "*** Following errors were found:\n" . join("\n", @errors) . "\n";
 }
 
+keys %special_end; # reset iterator
 while(my($k,$v) = each %special_end) {
     $v->();
 }
@@ -295,6 +297,7 @@ sub special_nextcheck {
 	my $date = sprintf "%04d-%02d-%02d", $y,$m,$d;
 	if ($date lt $special_data{nextcheck}{today}) {
 	    my $new_r = Storable::dclone($r);
+	    $new_r->[Strassen::NAME] .= " (next check: $date)";
 	    $new_r->[Strassen::CAT] = "?";
 	    $type_s{nextcheck}->push($new_r);
 	    $type_s{nextcheck}->set_directive_for_current($dir);
@@ -306,10 +309,12 @@ sub special_nextcheck {
 	    $d=1;
 	}
 	return if (!$y);
+	my $last_checked_date = sprintf "%04d-%02d-%02d", $y,$m,$d;
 	($y,$m,$d) = Date::Calc::Add_Delta_Days($y,$m,$d, $special_data{nextcheck}{check_frequency_days});
 	my $date = sprintf "%04d-%02d-%02d", $y,$m,$d;
 	if ($date lt $special_data{nextcheck}{today}) {
 	    my $new_r = Storable::dclone($r);
+	    $new_r->[Strassen::NAME] .= " (last checked: $last_checked_date)";
 	    $new_r->[Strassen::CAT] = "?";
 	    $type_s{nextcheck}->push($new_r);
 	    $type_s{nextcheck}->set_directive_for_current($dir);
@@ -321,6 +326,23 @@ sub end_nextcheck {
     require File::Basename;
     $type_s{nextcheck}->write("/tmp/nextcheck.bbd");
 }
+
+######################################################################
+
+sub init_nonextcheck {
+    my $type = shift;
+    no strict 'refs';
+    $special{$type} = \&{"special_" . $type};
+}
+
+sub special_nonextcheck {
+    my($r, $dir) = @_;
+    return 0 if (exists $dir->{next_check} || exists $dir->{last_checked});
+    return 0 if exists $dir->{XXX_prog}; # the fragezeichen-nextcheck file is supposed for research tasks, not for programming tasks
+    return 1;
+}
+
+sub end_nonextcheck { }
 
 ######################################################################
 # XXX obsolete: could be replaced by -adddirectives add_fragezeichen
@@ -364,6 +386,18 @@ sub end_fragezeichen {
 
 __END__
 
+=head1 NAME
+
+grepstrassen - filter bbd files
+
+=head1 SYNOPSIS
+
+    grepstrassen [options] bbdfile > filtered_bbdfile
+
+For usage:
+
+    grepstrassen "-?"
+
 =head1 EXAMPLES
 
 Voraussetzung:
@@ -373,5 +407,15 @@ Voraussetzung:
 Alle S-Bahnhöfe finden, die nicht barrierefrei sind:
 
     ../miscsrc/grepstrassen -v -directive attributes~b sbahnhof-orig 
+
+=head1 BUGS
+
+There's no way to specify absolute no global directives. This is
+probably desirable if appending to an existing bbd file. But in this
+case encoding mismatches may happen.
+
+=head1 SEE ALSO
+
+L<Strassen::CoreHeavy/grepstreets>
 
 =cut

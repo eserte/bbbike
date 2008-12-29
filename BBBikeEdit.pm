@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.124 2008/11/23 16:09:27 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.125 2008/12/29 16:49:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3299,20 +3299,25 @@ sub edit_gps_track_mode {
 	my(@tags) = $c->gettags("current");
 	for (@tags) {
 	    if (/(.*\.trk)/) {
-		edit_gps_track($1);
+		edit_gps_track_by_basename($1);
 		last;
 	    } elsif (/^(L\d+)$/ && exists $main::str_file{$1} &&
 		     $main::str_file{$1} =~ /(\d+\.trk)/) {
-		edit_gps_track($1);
+		edit_gps_track_by_basename($1);
 		last;
 	    }
 	}
     };
 }
 
-sub edit_gps_track {
+sub edit_gps_track_by_basename {
     my $basename = shift;
     my $file = find_gpsman_file($basename);
+    edit_gps_track($file);
+}
+
+sub edit_gps_track {
+    my $file = shift;
     if (-r $file) {
 	local $main::lazy_plot = 0; # somehow does not work
 	main::IncBusy($main::top);

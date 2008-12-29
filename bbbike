@@ -11491,6 +11491,7 @@ sub mark_point {
 	    }
 	}
 	my @common_args = (-capstyle => $capstyle_round,
+			   -state => "disabled",
 			   -tags => \@tags,
 			  );
 	$c->createLine($tx, $ty, $tx, $ty,
@@ -11592,6 +11593,7 @@ sub mark_street {
 	unless ($args{'-dont_mark'}) {
 	    my $label = shift @labels;
 	    my @common_args = (-tags => ['show', (defined $label ? $label : ())],
+			       -state => "disabled",
 			      );
 	    if ($args{'-polygon'}) {
 		if (@res_coords == 2) {
@@ -20345,9 +20347,9 @@ sub handle_global_directives {
     my %accept_global_hashref_directives = map{($_,1)}
 	qw(str_attrib p_attrib);
     my %accept_global_catless_directives = map{($_,1)}
-	qw(str_color outline_color);
+	qw(str_color outline_color line_width);
     my %accept_global_catless_directives_with_layer_prefix = map{($_,1)}
-	qw(line_width line_length
+	qw(line_length
 	   line_dash line_arrow
 	   line_capstyle
 	   line_shorten line_shorten_end

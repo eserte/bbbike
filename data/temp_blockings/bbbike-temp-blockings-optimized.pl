@@ -733,8 +733,10 @@ push @temp_blocking,
          'text' => 'Straße des 17. Juni (Tiergarten) Veranstaltung, Straße vollständig gesperrt, ebenso Yitzhak-Rabin-Str. und Ebertstr. (bis 03.01.09, ca. 6 Uhr)',
          'from' => 1230474969,
          'id' => 1555,
-         'data' => 'userdel	2::inwork 8119,12414 8063,12182 8089,12186 8214,12205 8515,12242 8539,12286
-userdel	2::inwork 8595,12066 8600,12165 8515,12242
+         'data' => 'userdel	2::temp 8119,12414 8063,12182 8089,12186 8214,12205 8515,12242 8539,12286
+userdel	2::temp 8595,12066 8600,12165 8515,12242
+userdel	2::temp 8063,12182 7816,12150 7383,12095 6828,12031
+userdel	2::temp 8515,12242 8610,12254 8804,12280
 ',
          'type' => 'gesperrt'
        }

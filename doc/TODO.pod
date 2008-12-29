@@ -1122,56 +1122,6 @@ Die Graphendarstellung verallgemeinern und verbessern:
   * Die Graphen könnten besser gelabelt sein, z.B. mit den
     entsprechenden Straßennamen oder nahe gelegenen Orten/Plätzen.
 
-Eine mögliche Erweiterung wäre ein GPS-Datenviewer, der näher an der
-originalen GPS-Datei operiert, und mit dem das übliche Editieren
-vereinfacht werden kann. Diese Erweiterung könnte man auch Standalone
-anbieten.
-
-Features:
-
-  * Sollte von der Dateirepräsentationsschicht so abgekoppelt sein,
-    dass ich Support für GPX und Gpsman anbieten kann
-
-  * Callbacks, so dass BBBike auf Änderungen reagieren kann
-
-  * Der Hauptview wäre ein etwas aufgemotztes Textfenster mit der GPX-
-    oder Gpsman-Datei (kein Tk::Tree, das wenig "Baum" beim GPX-Format
-    lohnt nicht für eine Extra-Darstellung)
-
-  * Beim Klick auf ein Item wird ein Callback gefeuert (BBBike:
-    scrollen zum jeweiligen geografischen Punkt)
-
-  * Möglichkeit eines Callbacks für eine Selektion von Punkten
-    (BBBike: mark_street aufrufen)
-
-  * Automatisches Berechnen der Geschwindigkeit, Anzeigen in einer
-    zusätzlichen Spalte, vielleicht auch einfache grafische
-    Darstellung
-
-  * Automatische Fehlererkennung, z.B. "alter Punkt" nach dem
-    Einschalten. Kandidaten könnte man erst einmal nur selektieren,
-    mit der Möglichkeit der selektiven Deselektion.
-
-  * Operationen auf selektierte Bereiche:
-    * komplett löschen
-    * auf ~ oder ~~ setzen (oder ~ löschen)
-    * ~ um eins erhöhen (aber Maximum ist ~~)
-
-  * Operationen sollten einen unendlichen Log haben, mit unendlichen
-    Undo
-
-  * Einfügen eines neuen (Pseudo-)Subtracks, für srt:...-Tags;
-    Automatischer Titel für Subtracks (einfach Hochzählen)
-
-  * Standard-Tags (srt:vehicle) und Standardwerte (=bike) leicht
-    eingebbar machen
-
-  * Automatische RCS-Operation (co, vielleicht auch ci)
-
-  * GPX-Äquivalent für ~/~~ erfinden.
-
-  * GPX-Äquivalent für srt:... erfinden.
-
 =item BBBikeEdit
 
 Teile nach BBBikeGPS etc. auslagern => schon gemacht, noch mehr?

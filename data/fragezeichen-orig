@@ -11,7 +11,7 @@
 #: last_checked: 2008-06-21
 #: XXX: laut http://www.berlin.de/ba-pankow/presse/archiv/20081009.1220.111237.html sollten die Bauarbeiten nun beendet sein
 Wisbyer Str.: Radstreifen sind noch provisorisch	? 12091,16209 12026,16247 11887,16320 11828,16335 11807,16340 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 11448,16398 11397,16405 11289,16423 11033,16464
-#: last_checked: 2008-11-23
+#: last_checked: 2008-12-13
 Frankfurter Allee: Radstreifen ist noch provisorisch	?; 15349,12073 15117,12106
 # Hier scheint nichts mehr zu passieren: #: last_checked: 2008-04-08 Wilhelmstr. (Kreuzberg)	? 9376,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
 #: last_checked: 2008-10-11
@@ -97,7 +97,6 @@ Wittenauer Str.: Ausbau zum verkehrsberuhigten Bereiche, außerdem Ersetzen des P
 #: last_checked: 2008-08-27
 #: XXX: die Straße ist bereits fertig, aber noch an der Gertraudenstr. abgesperrt
 Verlängerung der Niederwallstr. zum Spittelmarkt	?::inwork 10124,11806 10196,11788 10240,11740
-Ampel in Bau	?::inwork 15243,11881
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0710/nachricht2827.html vvv
 Fußgängerampel in Planung, bis 2008-12-31	?::inwork 9220,11781
 Ampel in Planung, bis 2008-12-31	?::inwork 9183,12076
@@ -113,6 +112,7 @@ Blankenfelde, Berliner Str. und Hauptstr: nach Bauarbeiten (bis 2009-04-01) viel
 #: XXX Name der Straße? Der Pharus-Verlag meint "Wilhelm-Kabus-Str."
 #: last_checked: 2008-08-17 (Bäume sind gerodet, aber mehr ist noch nicht zu sehen)
 Kolonnenstr. - Südkreuz: Bauarbeiten beginnen 2007, die Naumannstr. wird später verkehrsberuhigt	?::projected 7716,8048 7844,8049 7861,8217 7893,8327 7942,8380 8077,8768
+#: next_check: 2010-12-31
 Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerung) inkl. Brücke über die Bahnstrecke für Fußgänger und Radfahrer, Realisierung bis 2010-12-31	?::projected 7716,8356 7837,8354 7893,8327 8088,8283 8264,8289
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
 #: last_checked (by steffi silvermidi): 2008-03
@@ -241,20 +241,22 @@ Runebergweg/Sibeliusweg: Runebergweg hat starkes Gefälle und Sibeliusweg hat lei
 Drängelgitter	? 15496,6314 15504,6328 15516,6357
 #: XXX unklar von Andreas (schindel), q4!:
 Wörther Str.: Bordsteinkanten? Wahrscheinlich Bodenschwellen?	? 11255,14572 11317,14564
+#: section ^^^
 ######################################################################
 #
 #  AUFNAHME IN DB FRAGLICH
 #
 # Keine Fragezeichen wegen der Daten (die sind bekannt), sondern
 # ob und wie diese in die DB aufgenommen werden sollen
-#: XXX Wegen der knappen Öffnungszeiten nicht interessant: vvv
+#: section ignorieren vvv
 #: XXX_prog: Könnte man aufnehmen, wenn man bei der Routensuche eine Zeit angeben würde bzw.: in eine Art temp_blocking überführen
 Kleistpark: im Sommer bis 21 Uhr geöffnet, im Winter bis 18 Uhr	? 7192,9508 7246,9504 7415,9503 7453,9553 7520,9572
-#: XXX ^^^
+#: section ^^^
 ######################################################################
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
+#: section ignorieren vvv
 #: by: anonymous
 Sauerbruchstr.: guter Asphalt, Q0, enge Straße aber q0	? -6252,1331 -6365,1304 -6447,1287 -6504,1420 -6490,1507 -6422,1523
 #: by: Sara Köhler:

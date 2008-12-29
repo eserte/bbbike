@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.64 2008/12/01 21:15:13 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.68 2008/12/29 19:45:11 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.64 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.68 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -253,6 +253,9 @@ sub add_button {
 	      ],
 	      [Button => "Street name experiment",
 	       -command => sub { street_name_experiment() },
+	      ],
+	      [Button => "GPS data viewer",
+	       -command => sub { gps_data_viewer() },
 	      ],
 	      "-",
 	      [Cascade => "Rare or old", -menu => $rare_or_old_menu],
@@ -815,7 +818,14 @@ sub street_name_experiment_init {
     $delta_N  = main::get_line_width('s-N')/2;
 
     $default_fontsize = 12;	# default of sans
-    $fontsize = $main::scale > 5 ? 12 : $main::scale > 4 ? 11 : $main::scale > 2 ? 10 : $main::scale > 1.3 ? 9 : 8;
+    $fontsize = ($main::scale > 7   ? 12   :
+		 $main::scale > 5.5 ? 11.3 :
+		 $main::scale > 4   ? 11   :
+		 $main::scale > 3   ? 10.5 :
+		 $main::scale > 2   ? 10   :
+		 $main::scale > 1.3 ? 9    :
+		                      8
+		);
 
     # XXX Taken from Tk::RotFont
     # Erstellt eine Rotationsmatrix für freetype
@@ -959,6 +969,112 @@ sub street_name_experiment_one {
     }
 }
 } # scope for street_name_experiment* functions
+
+sub gps_data_viewer {
+    require BBBikeEdit;
+    require BBBikeUtil;
+    require GPS::GpsmanData;
+    require GPS::GpsmanData::Tk;
+    require Karte::Polar;
+    require Tk::PathEntry;
+    my $t = $main::top->Toplevel(-title => "GPS data viewer");
+    $main::toplevel{gps_data_viewer} = $t; # XXX what about an existing GPS data viewer?
+    $t->geometry("950x400");
+    my $gps_view;
+    my $gps;
+
+    {
+	use vars qw($gps_data_viewer_file);
+	$gps_data_viewer_file = "$FindBin::RealBin/misc/gps_data" if !defined $gps_data_viewer_file;
+	$gps_data_viewer_file = $FindBin::RealBin                 if !defined $gps_data_viewer_file;
+
+	my $show_file = sub {
+	    if (defined $gps_data_viewer_file) {
+		#XXX do it as late as possible, before the first edit operation: BBBikeEdit::ask_for_co($main::top, $gps_data_viewer_file);
+		$gps = GPS::GpsmanMultiData->new(-editable => 1);
+		$gps->load($gps_data_viewer_file);
+		$gps_view->associate_object($gps);
+	    }
+	};
+
+	my $f = $t->Frame->pack(qw(-fill x));
+	$f->Label(-text => "File:")->pack(qw(-side left));
+	my $pe =
+	    $f->PathEntry
+		(-textvariable => \$gps_data_viewer_file,
+		 -width => BBBikeUtil::max(length($gps_data_viewer_file), 40),
+		)->pack(-fill => "x", -expand => 1, -side => "left");
+	my $showb = 
+	    $f->Button(-text => "Show",
+		       -command => sub {
+			   $show_file->();
+		       }
+		      )->pack(-side => "left");
+	my $plotandshowb =
+	    $f->Button(-text => "Show & Plot",
+		       -command => sub {
+			   if (defined $gps_data_viewer_file) {
+			       $show_file->();
+			       BBBikeEdit::edit_gps_track($gps_data_viewer_file);
+			   }
+		       }
+		      )->pack(-side => "left");
+	$pe->configure(-selectcmd => sub {
+			   $plotandshowb->focus;
+		       });
+    }
+
+    $gps_view = $t->GpsmanData(-command => sub {
+				   my(%args) = @_;
+				   my $wpt = $args{-wpt};
+				   if ($wpt) {
+				       my($x,$y) = $Karte::Polar::obj->map2standard($wpt->Longitude, $wpt->Latitude);
+				       main::mark_point(-coords => [[[ main::transpose($x,$y) ]]],
+							-clever_center => 1,
+						       );
+				   }
+			       },
+			       -selectforeground => 'black',
+			       -selectbackground => 'green',
+			      )->pack(qw(-fill both -expand 1));
+
+    {
+	my $f = $t->Frame->pack(qw(-fill x));
+	$f->Button(-text => "Select premature points",
+		   -command => sub {
+		       require GPS::GpsmanData::Analyzer;
+		       my $anlzr = GPS::GpsmanData::Analyzer->new($gps);
+		       my @wpt = $anlzr->find_premature_samples;
+		       if (@wpt) {
+			   $gps_view->select_items(grep { defined $_ } $gps_view->find_items_by_wpts(@wpt));
+			   # XXX this is bad: dialog is modal and it's not possible to view all the selection
+			   my $yn = $t->messageBox(-message => "Remove selected " . scalar(@wpt) . " item(s)?",
+						   -type => "YesNo");
+			   if (lc $yn eq 'yes') {
+			       my $edit = GPS::GpsmanData::DirectEdit->new($gps);
+			       my @lines = grep { defined $_ } map { $gps->LineInfo->get_line_by_wpt($_) } @wpt;
+			       my @operations = $edit->remove_lines(\@lines, -dryrun => 1);
+			       # XXX very bad formatting, maybe use a custom DialogBox here?
+			       my $yn = $t->messageBox(-message => "Are you sure?\n" . join("\n", map { join " ", @$_ } @operations),
+						       -type => "YesNo");
+			       if (lc $yn eq 'yes') {
+				   $edit->run_operations(\@operations);
+				   $gps_view->reload;
+				   my @operations = $edit->remove_empty_track_segments(-dryrun => 1);
+				   if (@operations) {
+				       my $yn = $t->messageBox(-message => "Remove empty track segments?\n" . join("\n", map { join " ", @$_ } @operations),
+							       -type => "YesNo");
+				       if (lc $yn eq 'yes') {
+					   $edit->run_operations(\@operations);
+					   $gps_view->reload;
+				       }
+				   }
+			       }
+			   }
+		       }
+		   })->pack(-side => "left");
+    }
+}
 
 1;
 
