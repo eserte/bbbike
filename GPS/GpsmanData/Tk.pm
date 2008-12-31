@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Tk.pm,v 1.13 2008/12/29 20:44:28 eserte Exp $
+# $Id: Tk.pm,v 1.15 2008/12/30 22:06:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GPS::GpsmanData::Tk;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Tk::Frame);
 Construct Tk::Widget 'GpsmanData';
@@ -160,6 +160,11 @@ sub Populate {
       );
 }
 
+sub OnDestroy {
+    my $w = shift;
+    $w->_destroy_velocity_frames;
+}
+
 sub associate_object {
     my($w, $gpsman_obj) = @_;
     $w->{GpsmanData} = $gpsman_obj;
@@ -189,10 +194,28 @@ sub _clear_data_view {
     $bln->attach($dv, -msg => {});
 }
 
+sub _destroy_velocity_frames {
+    my $w = shift;
+    if ($w->{_velocity_frames}) {
+	for (values %{ $w->{_velocity_frames} }) {
+	    $_->destroy;
+	}
+    }
+    delete $w->{_velocity_frames};
+}
+
 sub _fill_data_view {
     my $w = shift;
     my $dv = $w->Subwidget("data");
     my $bln = $w->Subwidget("balloon");
+
+    # We have to store the velocity bar canvases and
+    # explicitely destroy on every re-fill, to avoid
+    # memory leaks. Now there's still a leak of about
+    # 10k per reload, but previously it was somewhere
+    # near megabytes.
+    $w->_destroy_velocity_frames;
+
     my $i = -1;
     my $chunk_i = -1;
     my %bln_info;
@@ -274,6 +297,7 @@ sub _fill_data_view {
 
     $bln->attach($dv, -msg => \%bln_info, -balloonposition => 'mouse');
 
+    $w->{_velocity_frames} = \%velocity_frame;
     $w->{_chunk_to_i} = \@chunk_to_i;
     $w->{_max_i} = $i;
     $w->_adjust_overview;
@@ -392,6 +416,8 @@ sub _track_attributes_editor {
 	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:brand'}));
     Tk::grid($t->Label(-text => "Comment"),
 	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:comment'}));
+    Tk::grid($t->Label(-text => "Event"),
+	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:event'}));
     my $weiter;
     Tk::grid($t->Button(-text => 'Ok', -command => sub { $weiter = +1 }),
 	     $t->Button(-text => 'Cancel', -command => sub { $weiter = -1 }));

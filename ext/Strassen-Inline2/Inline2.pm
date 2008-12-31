@@ -1,7 +1,7 @@
 # -*- c -*-
 
 #
-# $Id: Inline.pm,v 2.34 2005/04/05 22:47:28 eserte Exp eserte $
+# $Id: Inline.pm,v 2.35 2007/05/09 20:37:29 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ package Strassen::Inline2;
 require 5.005; # new semantics of hv_iterinit
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 2.34 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = sprintf("%d.%02d", q$Revision: 2.35 $ =~ /(\d+)\.(\d+)/);
 }
 
 use Cwd;
@@ -75,6 +75,9 @@ __C__
 #ifdef HAS_HEAP
 #include "heap.h"
 #endif
+
+/* XXX maybe use Strassen::Util::infinity */
+#define INFINITY 40000000
 
 typedef int dist_t;
 
@@ -237,6 +240,13 @@ void search_c(SV* self, char* from, char* to, ...) {
   SV* tmp;
   SV* penaltysub = Nullsv;
 
+#ifdef USE_MMAP_IMPL
+  long nearest_node = 0;
+#else
+  char* nearest_node = NULL;
+#endif
+  int nearest_node_dist = INFINITY;
+
   int i;
   Inline_Stack_Vars;
 
@@ -355,7 +365,24 @@ void search_c(SV* self, char* from, char* to, ...) {
 
   while(1) {
     if (OPEN_empty) {
+      SV* nearest_node_sv;
+#ifdef USE_MMAP_IMPL
+      int *mmap_ptr = (int*)(c_net_mmap + nearest_node);
+      SV* y_sv;
+      nearest_node_sv = newSViv(*(mmap_ptr++));
+      y_sv = newSViv(*mmap_ptr);
+      sv_catpv(nearest_node_sv, ",");
+      sv_catsv(nearest_node_sv, y_sv);
+#else
+      nearest_node_sv = newSVpv(nearest_node, 0);
+#endif
       Inline_Stack_Reset;
+      Inline_Stack_Push(&PL_sv_undef); /* RES_PATH */
+      Inline_Stack_Push(&PL_sv_undef); /* RES_LEN */
+      Inline_Stack_Push(&PL_sv_undef); /* 2 ??? */
+      Inline_Stack_Push(&PL_sv_undef); /* RES_PENALTY */
+      Inline_Stack_Push(&PL_sv_undef); /* RES_TRAFFICLIGHTS */
+      Inline_Stack_Push(nearest_node_sv); /* RES_NEAREST_NODE */
       Inline_Stack_Done;
       goto done;
     }
@@ -598,6 +625,7 @@ void search_c(SV* self, char* from, char* to, ...) {
 
 	  {
 	    dist_t g, f;
+	    dist_t remaining_dist;
 #ifndef USE_MMAP_IMPL
 	    len_pen = SvIV(HeVAL(succ_he));
 #endif
@@ -657,7 +685,7 @@ void search_c(SV* self, char* from, char* to, ...) {
 	     * genau so falsch wie
 	     * C-A*.
 	     */
-	    if (len_pen >= 40000000) { /* 40000000 means "blocked" XXX use Strassen::Util::infinity */
+	    if (len_pen >= INFINITY) { /* INFINITY also means "blocked" */
 	      continue;
 	    }
 #endif
@@ -668,11 +696,12 @@ void search_c(SV* self, char* from, char* to, ...) {
 	      int* mmap_ptr = (int*)(c_net_mmap+succ_key);
 	      int succ_x = *(mmap_ptr++);
 	      int succ_y = *(mmap_ptr++);
-	      f = g + _strecke(succ_x, succ_y, to_x, to_y);
+	      remaining_dist = _strecke(succ_x, succ_y, to_x, to_y);
 	    }
 #else
-	    f = g + _strecke(succ_key, to);
+	    remaining_dist = _strecke(succ_key, to);
 #endif
+	    f = g + remaining_dist;
 
 #ifdef DEBUG_SUCC
 #ifdef USE_MMAP_IMPL
@@ -696,6 +725,10 @@ void search_c(SV* self, char* from, char* to, ...) {
 #else
 	      hv_store(OPEN, COORD_HV_VAL(succ_key), succ_key_len, &PL_sv_yes, 0);
 #endif
+	      if (remaining_dist < nearest_node_dist) {
+		nearest_node_dist = remaining_dist;
+		nearest_node = min_node;
+	      }
 	    } else {
 	      SV** tmp2 = hv_fetch(NODES, COORD_HV_VAL(succ_key), succ_key_len, 0);
 	      search_node* old_sn = (search_node*)SvIV(*tmp2);

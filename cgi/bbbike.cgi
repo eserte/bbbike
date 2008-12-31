@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.25 2008/09/16 19:41:40 eserte Exp $
+# $Id: bbbike.cgi,v 9.27 2008/12/31 13:03:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -730,7 +730,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 9.25 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 9.27 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -3404,6 +3404,17 @@ sub search_coord {
     my($r) = $net->search($startcoord, $zielcoord,
 			  AsObj => 1,
 			  %extra_args);
+    if ((!$r || !$r->path_list) && $r->nearest_node) {
+	my $nearest_node = $r->nearest_node;
+	warn "Search again with nearest node <" . $nearest_node . "> instead of wanted goal <" . $zielcoord . ">\n";
+	($r) = $net->search($startcoord, $nearest_node,
+			    AsObj => 1,
+			    %extra_args);
+	# Remember that we found just a route to the nearest node
+	$r->set_to($zielcoord);
+	$r->set_nearest_node($nearest_node);
+    }
+
     display_route($r, -custom => { custom		 => \@custom,
 				   custom_s		 => \%custom_s,
 				   current_temp_blocking => \@current_temp_blocking,
@@ -3421,6 +3432,13 @@ sub display_route {
     my $startname   = name_from_cgi($q, 'start');
     my $vianame     = name_from_cgi($q, 'via');
     my $zielname    = name_from_cgi($q, 'ziel');
+
+    my $real_zielname;
+    if ($r && $r->nearest_node) {
+	$real_zielname = crossing_text($r->nearest_node);
+    } else {
+	$real_zielname = $zielname;
+    }
 
     my $routetitle  = $q->param('routetitle');
 
@@ -3884,7 +3902,7 @@ sub display_route {
 			  TotalDist => $ges_entf,
 			  TotalDistString => $ges_entf_s,
 			  DirectionString => M("angekommen") . "!",
-			  Strname => $zielname,
+			  Strname => $real_zielname,
 			  Comment => '',
 			  CommentHtml => '',
 			  Coord => join(",", @{$r->path->[-1]}),
@@ -4075,8 +4093,8 @@ EOF
 	    print "<center>";
 	    my $diff_info = diff_from_old_route($r);
 	    if ($diff_info->{different}) {
-		print M("Mögliche Ausweichroute ");
-		print $diff_info->{difference_de} if $diff_info->{difference_de};
+		print M("Mögliche Ausweichroute") . " ";
+		print $diff_info->{difference} if $diff_info->{difference};
 	    } else {
 		print M("Eine bessere Ausweichroute wurde nicht gefunden");
 	    }
@@ -4118,14 +4136,22 @@ EOF
 					   )
 			. "</b> ";
 	    }
-	    print M("bis") . " <b>" .
-		coord_or_stadtplan_link($zielname, $zielcoord,
-					$q->param('zielplz')||"",
-					$q->param('zielisort')?1:0,
-					(defined $zielhnr && $zielhnr ne '' ? $zielhnr : undef),
-					-jslink => $can_jslink,
-				       )
-		    . "</b>";
+	    print M("bis") . " ";
+	    if ($r && $r->nearest_node) {
+		print "<b>" . coord_or_stadtplan_link($real_zielname, $r->nearest_node,
+						      "", 0, undef,
+						      -jslink => $can_jslink,
+						     ) . "</b>";
+		# XXX richtigen Artikel statt => einsetzen
+		print " (" . M("Entfernung") . " => $zielname: " . int(Strassen::Util::strecke_s($zielcoord, $r->nearest_node)) . "m)";
+	    } else {
+		print "<b>" . coord_or_stadtplan_link($real_zielname, $zielcoord,
+						      $q->param('zielplz')||"",
+						      $q->param('zielisort')?1:0,
+						      (defined $zielhnr && $zielhnr ne '' ? $zielhnr : undef),
+						      -jslink => $can_jslink,
+						     ) . "</b>";
+	    }
 	}
 	print "$fontend</td></tr></table><br>\n";
 	print "<table";
@@ -4871,6 +4897,7 @@ sub overview_map {
 	$overview_map = BBBikeDraw->new
 	    (ImageType => 'dummy',
 	     Geometry => ($xgridwidth*$xgridnr) . "x" . ($ygridwidth*$ygridnr),
+	     Lang => $lang,
 	    );
 	$overview_map->set_dimension($x0, $x0 + $xm*$xgridnr*$xgridwidth,
 				     $y0 - $ym*$ygridnr*$ygridwidth, $y0,
@@ -5210,6 +5237,7 @@ sub draw_map {
 	    my $draw = BBBikeDraw->new_from_cgi($q,
 						Fh => \*IMG,
 						Bg => '#c5c5c5',
+						Lang => $lang,
 					       );
 	    $draw->set_dimension(@dim);
 	    $draw->create_transpose();
@@ -6810,13 +6838,13 @@ sub diff_from_old_route {
     my $len = $r->len;
     my $old_len = $old_r->len;
     if (int($old_len) == int($len)) {
-	$diff->{difference_de} = "(kein Unterschied in der Entfernung)";
+	$diff->{difference} = "(" . M("kein Unterschied in der Entfernung") . ")";
     } elsif (abs($old_len - $len) < 20) {
-	$diff->{difference_de} = "(unbedeutender Unterschied in der Entfernung)";
+	$diff->{difference} = "(" . M("unbedeutender Unterschied in der Entfernung") . ")";
     } elsif ($old_len < $len) {
-	$diff->{difference_de} = sprintf "(um %d Meter länger)", int($len - $old_len);
+	$diff->{difference} = sprintf "(".M("um %d Meter länger").")", int($len - $old_len);
     } elsif ($old_len >= $len) {
-	$diff->{difference_de} = sprintf "(um %d Meter kürzer)", int($old_len - $len);
+	$diff->{difference} = sprintf "(".M("um %d Meter kürzer").")", int($old_len - $len);
     }
     return $diff if @path != @old_path;
     for my $i (0 .. $#path) {
@@ -7039,7 +7067,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/09/16 19:41:40 $';
+    my $cgi_date = '$Date: 2008/12/31 13:03:31 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

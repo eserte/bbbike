@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.28 2008/05/14 19:20:07 eserte Exp eserte $
+# $Id: LuiseBerlin.pm,v 1.29 2008/12/30 11:24:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2008 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!caller(2)) {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Route.pm,v 1.26 2008/03/29 21:26:25 eserte Exp $
+# $Id: Route.pm,v 1.27 2008/12/31 12:26:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2001 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ use strict;
 use vars qw($coords_ref $realcoords_ref $search_route_points_ref
 	    @EXPORT @ISA $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.26 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
 
 require Exporter;
 @ISA    = qw(Exporter);
@@ -127,6 +127,9 @@ sub ampeln           { $_[0]->{Ampeln} } # XXX deprecated...
 sub trafficlights    { $_[0]->{Ampeln} }
 sub coord_system     { $_[0]->{CoordSystem} || 'Standard' }
 sub transpose        { $_[0]->{Transpose} }
+sub nearest_node     { $_[0]->{NearestNode} }
+sub set_nearest_node { $_[0]->{NearestNode} = $_[1] }
+sub set_to           { $_[0]->{To} = $_[1] }
 
 # erstellt eine String-Repräsentation der Route: x1,y1;x2,y2;...
 sub as_string        { $_[0]->_as_string(";") }

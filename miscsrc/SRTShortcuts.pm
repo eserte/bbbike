@@ -979,7 +979,7 @@ sub gps_data_viewer {
     require Tk::PathEntry;
     my $t = $main::top->Toplevel(-title => "GPS data viewer");
     $main::toplevel{gps_data_viewer} = $t; # XXX what about an existing GPS data viewer?
-    $t->geometry("950x400");
+    $t->geometry("1000x400");
     my $gps_view;
     my $gps;
 
@@ -1015,6 +1015,14 @@ sub gps_data_viewer {
 		       -command => sub {
 			   if (defined $gps_data_viewer_file) {
 			       $show_file->();
+			       if ($BBBikeEdit::recent_gps_point_layer) {
+				   main::delete_layer($BBBikeEdit::recent_gps_point_layer);
+				   undef $BBBikeEdit::recent_gps_point_layer;
+			       }
+			       if ($BBBikeEdit::recent_gps_street_layer) {
+				   main::delete_layer($BBBikeEdit::recent_gps_street_layer);
+				   undef $BBBikeEdit::recent_gps_street_layer;
+			       }
 			       BBBikeEdit::edit_gps_track($gps_data_viewer_file);
 			   }
 		       }

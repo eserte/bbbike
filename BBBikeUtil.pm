@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeUtil.pm,v 1.31 2008/11/21 22:08:54 eserte Exp $
+# $Id: BBBikeUtil.pm,v 1.32 2008/12/30 15:41:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeUtil;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.31 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
 
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
@@ -201,7 +201,9 @@ sub rcs_co {
     my $cwd = Cwd::cwd();
     my($f, $dir) = File::Basename::fileparse($file);
     chdir $dir or die "Kann kein chdir zum Verzeichnis $dir durchführen: $!";
-    system("co -l $f");
+    # Avoid interactive questions à la "writable ... exists; remove
+    # it" by using /dev/null
+    system("co -l $f < /dev/null");
     my $ok = 1;
     if ($? != 0) {
 	$ok = 0;

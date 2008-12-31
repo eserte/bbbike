@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.59 2008/07/24 21:55:21 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.60 2008/12/31 12:26:33 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -29,7 +29,7 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =cut
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.59 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.60 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz;
 use strict;
@@ -697,7 +697,7 @@ $penalty_code";
 }
 
 # Return value
-use enum qw(:RES_ PATH LEN XXX PENALTY TRAFFICLIGHTS);
+use enum qw(:RES_ PATH LEN XXX PENALTY TRAFFICLIGHTS NEAREST_NODE);
 
 # local constants for A*
 use enum qw(PREDECESSOR DIST HEURISTIC_DIST);
@@ -869,6 +869,8 @@ sub build_search_code {
 '; } $code .= '
     my %NODES = ($from => [undef, 0, strecke_s($from, $to), undef]);
     my %CLOSED;
+    my $nearest_node;
+    my $nearest_node_dist = Strassen::Util::infinity();
     while (1) {
 #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@OPEN],[])->Indent(1)->Useqq(1)->Dump; # XXX
 
@@ -879,13 +881,15 @@ sub build_search_code {
         }
         $red_val+=5 if $red_val < 255;
         my $red_col = sprintf("#%02x0000", $red_val);
-'; } $code .= '
-        return ()
-'; if ($use_heap) { $code .= '
-	    if (!@OPEN);
+'; } if ($use_heap) { $code .= '
+        if (!@OPEN) {
 '; } else { $code .= '
-	    if (keys %OPEN == 0);
+        if (keys %OPEN == 0) {
 '; } $code .= '
+            my @res;
+            $res[RES_NEAREST_NODE] = $nearest_node;
+            return @res;
+        }
 
         my $min_node;
         my $min_node_f = Strassen::Util::infinity();
@@ -988,7 +992,8 @@ sub build_search_code {
 	    $code .= $penalty_code;
 	} $code .= '
             my $g = $NODES_min_node->[DIST] + ' . "\$" . $len_pen . ';
-            my $f = $g + strecke_s($successor, $to);
+            my $remaining_dist = strecke_s($successor, $to);
+            my $f = $g + $remaining_dist;
 	    #printf STDERR "x,y=%s\nthis=%d f=%d g=%d\n", $successor, $' . $len_pen . ', $f, $g; # DEBUG_SUCC
             # !exists in OPEN and !exists in CLOSED:
             if (!exists $NODES{$successor}) {
@@ -998,6 +1003,10 @@ sub build_search_code {
 '; } else { $code .= '
                 $OPEN{$successor} = 1;
 '; } $code .= '
+                if ($remaining_dist < $nearest_node_dist) {
+                    $nearest_node_dist = $remaining_dist;
+                    $nearest_node = $min_node;
+                }
             } else {
                 if ($f < $NODES{$successor}->[HEURISTIC_DIST]) {
                     $NODES{$successor} = [$min_node, $g, $f];
@@ -1339,6 +1348,7 @@ EOF
 				To      => $to,
 				Penalty => $res[RES_PENALTY],
 				Ampeln  => $res[RES_TRAFFICLIGHTS],
+				NearestNode => $res[RES_NEAREST_NODE],
 				);
 	$new_res;
     } else {

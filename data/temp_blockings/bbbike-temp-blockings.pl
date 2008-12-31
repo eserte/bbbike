@@ -13177,4 +13177,14 @@ userdel	2::temp 8063,12182 7816,12150 7383,12095 6828,12031
 userdel	2::temp 8515,12242 8610,12254 8804,12280
 EOF
      },
+     { from  => 1230730702, # 2008-12-31 14:38
+       until => 1230807600, # 2009-01-01 12:00
+       text  => 'John-Foster-Dulles-Allee - Scheidemannstr. - Dorotheenstr. (Tiergarten/Mitte) in beiden Richtungen zwischen Spreeweg und Wilhelmstr. Veranstaltung, Straßen vollständig gesperrt (bis 01.01.09, ca. 12 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_011040',
+       data  => <<EOF,
+userdel	2::temp 7875,12363 8017,12359 8070,12409 8119,12414 8374,12416 8539,12286 8560,12326 8540,12420
+userdel	2::temp 8374,12416 8400,12417 8540,12420 8775,12457
+EOF
+     },
     );

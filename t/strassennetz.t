@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassennetz.t,v 1.20 2008/08/22 19:42:17 eserte Exp $
+# $Id: strassennetz.t,v 1.21 2008/12/31 13:37:28 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -18,6 +18,7 @@ use Data::Dumper qw(Dumper);
 use Storable qw(dclone);
 
 use Strassen::Core;
+use Strassen::Util;
 use Strassen::Lazy;
 use Strassen::StrassenNetz;
 use Route;
@@ -36,7 +37,7 @@ BEGIN {
     }
 }
 
-plan tests => 45;
+plan tests => 48;
 
 print "# Tests may fail if data changes\n";
 
@@ -230,7 +231,6 @@ EOF
     is($got_undef, 0);
 }
 
-XXX:
 {
     # Bug reported by Andreas Wirsing, but was already known to me
 
@@ -306,6 +306,20 @@ EOF
 	is($route[0][StrassenNetz::ROUTE_EXTRA]{ImportantAngle}, undef, "Important angle not set here (Martin-Luther-Str.)")
 	    or diag(Dumper(\@route));
     }
+}
+
+XXX:
+{
+    # Check for nearest_node output (find nearest reachable point if
+    # the selected goal is not reachable)
+    my $c1 = "11242,11720"; # Brückenstr./Köpenicker Str. (Mitte)
+    my $c2 = "10921,12057"; # mitten in der Spree (not reachable!)
+    $c1 = $s_net->fix_coords($c1); # start point may move
+    my($r) = $s_net->search($c1, $c2, AsObj => 1);
+    ok(!$r->path, "Found no path");
+    ok($r->nearest_node, "Found a nearest node with distance " . int(Strassen::Util::strecke_s($c2, $r->nearest_node)) . "m");
+    my($r2) = $s_net->search($c1, $r->nearest_node, AsObj => 1);
+    ok($r2->path, "Now found a path");
 }
 
 __END__

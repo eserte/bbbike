@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.125 2008/12/29 16:49:30 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.125 2008/12/29 16:49:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3043,6 +3043,7 @@ sub edit_gpsman_waypoint {
 			      $w->configure(-state => "normal");
 			  };
 		      });
+	    $tl->raise;
 	} else {
 	    $tl = $main::top->Toplevel(-title => "Waypoint");
 	    $edit_gpsman_waypoint_tl = $tl;
@@ -3316,6 +3317,7 @@ sub edit_gps_track_by_basename {
     edit_gps_track($file);
 }
 
+use vars qw($recent_gps_point_layer $recent_gps_street_layer);
 sub edit_gps_track {
     my $file = shift;
     if (-r $file) {
@@ -3342,6 +3344,9 @@ sub edit_gps_track {
 
 	    main::special_raise($abk_s);
 	    main::special_raise($abk."-fg");
+
+	    $recent_gps_street_layer = $abk_s;
+	    $recent_gps_point_layer  = $abk;
 	};
 	my $err = $@;
 	main::DecBusy($main::top);

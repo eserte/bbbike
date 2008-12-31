@@ -3989,6 +3989,12 @@ is to merge the RCS and CVS commits. Then go step by step and commit
 changes into RCS and CVS in a interleaved manner. Try to find Attic
 stuff.
 
+Maybe try to copy RCS ,v files into a CVS repo layout and hope that it
+is useful as a CVS repository for git cvsimport? It's probably easier
+to do the interleaves thing with the help of git.
+
+Task: identify private stuff in the RCS-controlled files.
+
 =item * (M3)
 
 Try to build a PAR-based distribution. There seem to be some pitfalls,
