@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: basic.t,v 1.20 2008/02/02 22:41:09 eserte Exp eserte $
+# $Id: basic.t,v 1.21 2008/12/31 13:50:23 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -64,6 +64,7 @@ for my $f (@files) {
 		        | BBBikeAdvanced.pm
 		        | BBBikeEdit.pm
 		        | PointEdit.pm
+			| GPS/GpsmanData/Tk.pm
  			)$}x && !eval { require Tk };
 	myskip "$f needs Inline", $tests_per_file
 	    if $f =~ m{ext/(Strassen-Inline|StrassenNetz-CNetFile).*} && !eval { require Inline::MakeMaker };

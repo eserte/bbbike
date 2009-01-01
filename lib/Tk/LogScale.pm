@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: LogScale.pm,v 1.8 2005/12/17 01:43:19 eserte Exp $
+# $Id: LogScale.pm,v 1.9 2008/09/23 20:02:38 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2005,2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,7 +19,7 @@ use base qw(Tk::Frame);
 use Tk;
 Construct Tk::Widget 'LogScale';
 
-$VERSION = '0.08';
+$VERSION = '0.09';
 
 sub ClassInit {
     my($class,$mw) = @_;

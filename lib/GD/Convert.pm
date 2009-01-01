@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Convert.pm,v 2.13 2005/10/10 20:14:10 eserte Exp $
+# $Id: Convert.pm,v 2.16 2008/11/22 08:20:12 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2008 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +16,7 @@ package GD::Convert;
 
 use strict;
 use vars qw($VERSION $DEBUG %installed);
-$VERSION = sprintf("%d.%02d", q$Revision: 2.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.16 $ =~ /(\d+)\.(\d+)/);
 
 $DEBUG = 0 if !defined $DEBUG;
 
@@ -79,8 +79,37 @@ sub import {
 	    #warn $code;
 	    eval $code;
 	    die "$code\n\nfailed with: $@" if $@;
-	    $installed{$f}++;
+	    $installed{$f} = $as;
 	}
+    }
+}
+
+sub _can_gif_netpbm {
+    is_in_path("ppmtogif");
+}
+
+sub _can_gif_imagemagick {
+    is_in_path("convert");
+}
+
+sub _can_gif_netpbm_transparencyhack {
+    return 0 if !_can_gif_netpbm();
+    
+    require IPC::Open3;
+    my @cmd = ("ppmtogif", "-transparent", $0);
+    my $pid = IPC::Open3::open3(\*WTR_TH, \*RDR_TH, \*ERR_TH, @cmd);
+    die "Can't create process for @cmd" if !defined $pid;
+    close WTR_TH;
+    my $err = join "", <ERR_TH>;
+    close RDR_TH;
+    close ERR_TH;
+    if ($err =~ m{(error reading magic number|bad magic number)}i) {
+	return 1;
+    } elsif ($err =~ m{usage}i) {
+	return 0;
+    } else {
+	warn "Unexpected error message <$err> while running <@cmd>";
+	return 0;
     }
 }
 
@@ -486,6 +515,7 @@ sub _3_pipe {
 	my $err = scalar <ERR>;
 	warn $err if defined $err && $err ne "";
     }
+    close ERR;
 
     $out;
 }
@@ -818,7 +848,7 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2001,2003 Slaven Rezic. All rights reserved.
+Copyright (c) 2001,2003,2008 Slaven Rezic. All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 

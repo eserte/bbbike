@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.53 2008/09/29 19:37:18 eserte Exp eserte $
+# $Id: PDF.pm,v 2.54 2008/12/31 16:36:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004,2008 Slaven Rezic. All rights reserved.
@@ -33,7 +33,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.53 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.54 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;

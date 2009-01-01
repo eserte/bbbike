@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.75 2008/08/03 08:59:31 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.76 2008/12/31 16:33:42 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005,2006,2007 Slaven Rezic. All rights reserved.
@@ -866,6 +866,27 @@ clean-cache:
 	-rm -f tmp/b_de_*
 	-rm -f tmp/m_de_*
 	-rm -f tmp/*.cache
+
+######################################################################
+# Towards git
+bbbike-rcs-to-cvs-repo:
+	[ -d ${.CURDIR}/../bbbike-cvs-rcs ]
+	cd ${.CURDIR} && rcs2cvsrepo.pl -f ${.CURDIR}/../bbbike-cvs-rcs/bbbike
+
+git-update-local:	bbbike-rcs-to-cvs-repo
+	[ -d ${.CURDIR}/../bbbike-gitlocal ]
+	cd ${.CURDIR}/../bbbike-gitlocal && git cvsimport -v -d ${.CURDIR}/../bbbike-cvs-rcs bbbike
+
+git-update-sf:
+	[ -d ${.CURDIR}/../bbbike-gitsf ]
+	cd ${.CURDIR}/../bbbike-gitsf && git cvsimport -v -d :ext:eserte@bbbike.cvs.sourceforge.net:/cvsroot/bbbike bbbike
+
+git-update: git-update-local git-update-sf
+
+git-backup:
+	rsync -a ../bbbike-gitsf/ $(HOME)/trash/bbbike-gitsf/
+	rsync -a ../bbbike-gitlocal/ $(HOME)/trash/bbbike-gitlocal/
+	rsync -a ../bbbike-cvs-rcs/ $(HOME)/trash/bbbike-cvs-rcs/
 
 ######################################################################
 # TESTS

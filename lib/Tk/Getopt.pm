@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Getopt.pm,v 1.64 2008/02/08 22:23:56 eserte Exp $
+# $Id: Getopt.pm,v 1.65 2008/09/23 19:50:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1997,1998,1999,2000,2003,2007,2008 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ use constant OPTEXTRA => 3;
 
 use Carp qw();
 
-$VERSION = '0.49_54';
+$VERSION = '0.50';
 $VERSION = eval $VERSION;
 
 $DEBUG = 0;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTkUtil.pm,v 1.2 2006/09/11 22:17:11 eserte Exp $
+# $Id: BBBikeTkUtil.pm,v 1.3 2008/12/31 16:39:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006,2008 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeTkUtil;
 use strict;
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 use base 'Exporter';
 @EXPORT_OK = qw(sort_hlist pack_buttonframe);

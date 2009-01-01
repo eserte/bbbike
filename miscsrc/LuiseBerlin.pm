@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.29 2008/12/30 11:24:24 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.30 2008/12/31 14:44:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2008 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!caller(2)) {
@@ -413,7 +413,7 @@ sub enter_dialog {
     my $tl = $main::top->Toplevel(-title => "Straßeneingabe Luise-Berlin");
     my $str;
     my $citypart;
-    $tl->LabEntry(-label => "Straße", -labelPack => [-side => "left"], -textvariable => \$str)->pack;
+    my $e = $tl->LabEntry(-label => "Straße", -labelPack => [-side => "left"], -textvariable => \$str)->pack;
     $tl->LabEntry(-label => "Bezirk (optional)", -labelPack => [-side => "left"], -textvariable => \$citypart)->pack;
     $tl->Button(-text => "Suche",
 		-command => sub {
@@ -421,6 +421,7 @@ sub enter_dialog {
 				      cityparts => [$citypart],
 				     );
 		})->pack;
+    $e->focus;
 }
 
 return 1 if caller;

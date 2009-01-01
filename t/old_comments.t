@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: old_comments.t,v 1.16 2008/07/12 19:45:13 eserte Exp eserte $
+# $Id: old_comments.t,v 1.17 2008/12/31 17:18:01 eserte Exp $
 # Author: Slaven Rezic
 #
 

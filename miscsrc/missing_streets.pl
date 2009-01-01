@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: missing_streets.pl,v 1.5 2008/12/26 22:02:41 eserte Exp eserte $
+# $Id: missing_streets.pl,v 1.5 2008/12/26 22:02:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.

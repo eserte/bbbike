@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeStats.pm,v 1.13 2008/08/07 18:51:21 eserte Exp eserte $
+# $Id: BBBikeStats.pm,v 1.13 2008/08/07 18:51:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.

@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.232 2008/11/11 20:39:33 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.233 2008/12/31 17:36:32 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10257,-2654 10392,-2980 10475,-3174
@@ -1557,8 +1557,8 @@ Gerosteig: Asphalt	Q0 18990,584 19377,496 19480,471
 #: note: per Augenschein
 Pätzer Str.: schlechtes Kopfsteinpflaster	Q3 12885,5205 12963,5199 13039,5122
 Haewererweg: Verbundsteinpflaster	Q1 12125,1282 12097,1243
-Wiesbadener Str. (Lichtenrade): Asphalt	Q0 11124,-598 11460,-553 11771,-545
-Taunusstr. (Lichtenrade): Asphalt	Q0 11578,-1220 11551,-1114 11506,-965 11503,-926 11490,-809 11477,-697 11460,-553 11456,-498
+Wiesbadener Str. (Lichtenrade): Asphalt	Q0 11125,-613 11264,-605 11464,-582 11654,-559 11771,-545
+Taunusstr. (Lichtenrade): Asphalt	Q0 11578,-1220 11551,-1114 11506,-965 11503,-926 11490,-809 11477,-697 11464,-582 11456,-498
 Goltzstr.: schlechtes Kopfsteinpflaster	Q3 10639,-2364 10556,-2429 10447,-2518 10379,-2571 10382,-2598
 (Beethovenstr. - Mozartstr., Mauerweg): Asphalt mit Fugen	Q1 10309,-3191 10472,-3201
 Beethovenstr.: kleinteiliges Kopfsteinpflaster, uneben	Q2 10155,-2739 10219,-2895 10272,-3027 10323,-3150
@@ -3458,7 +3458,7 @@ Mariabrunner Weg: asphaltiert	Q0 6985,17812 6909,17796 6841,17781
 #: note: ^^^
 #: note: die ADFC-Karte sagt hier: "mäßig geeignet":
 Walderseestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7309,17159 7614,17245
-Fräsersteig: Betonplatten	Q1 5770,20407 5959,20524 6034,20551 6134,20585 6184,20550 6298,20599
+Fräsersteig: Betonplatten	Q1 5770,20407 5842,20451 5885,20478 5900,20487 5959,20524 6022,20547 6034,20551 6090,20570 6134,20585 6184,20550 6298,20599
 #: add_fragezeichen: Alter Bernauer Heerweg westlich der Bezirksgrenze: Kopfsteinpflaster oder wassergebundene Decke?
 Alter Bernauer Heerweg: Kopfsteinpflaster	Q2 6668,22746 7072,22905 7782,23172 7923,23225 8145,23301
 #: by: Wolfhard Schleese:
@@ -3984,7 +3984,7 @@ Malchower Str.: mäßig geeignet	Q2 13631,18041 13732,18026 13894,18121
 #: by: Daniel Grunow:
 Wißlerstr.: Asphalt	Q0 23950,5342 23956,5213 23775,5258
 #: by: bernhard.brackmann: vvv
-Kloster-Zinna-Str.: Asphalt	Q0 11218,-350 11712,-289
+Kloster-Zinna-Str.: Asphalt	Q0 11231,-349 11712,-289
 #: note: laut "Berliner Umland" witterungsabhängige Strecke:
 #: confirmed_by: srt
 Mauerweg Lichtenrade - Buckow: unbefestigte Strecke	Q2 11742,-3336 11851,-3287 12268,-2294
@@ -5506,7 +5506,7 @@ Waplitzer Str.: guter Beton	Q0 22743,11540 22666,11541 22640,11587 22597,11631 2
 #: by: andrea... (rietmann):
 Elisabeth-Feller-Weg: Asphalt	Q0 3466,2214 3468,2304 3473,2465
 #: by: Jessi (stein):
-Bamberger Str.: Asphalt	Q0 11130,-2120 11380,-2100 11631,-2088 11692,-2047 11727,-2003
+Bamberger Str.: Asphalt	Q0 11130,-2120 11380,-2100 11631,-2088 11692,-2047 11723,-2009
 #: by: Ruth Berendes-Edler: vvv
 Hochkalterweg: guter Asphalt	Q0 10612,2675 10526,2694 10402,2721 10304,2743
 (Hochkalterweg - Floningweg): gut befahrbar	Q0 10304,2743 10196,2771
@@ -7742,6 +7742,10 @@ Fischer-Dieskau-Weg: mäßige wassergebundene Decke	Q2 -151,2975 -81,2699
 Fortunaallee: Kopfsteinpflaster	Q2 21314,9083 21354,9259 21379,9380 21414,9545 21480,9662 21518,9716 21526,9781 21534,9901
 #: by: Mirko Kreytz:
 Flotowstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4515,4581 4651,4638
+#: by: Mathias Vogt:
+Spachtelweg: guter Asphalt	Q0 5900,20487 5970,20353
+#: by: Nina Wolff:
+Keilerstr.: guter Asphalt	Q0 -412,22468 -597,22627
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

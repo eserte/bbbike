@@ -2253,6 +2253,127 @@ Steigungen ab. Das ist noch recht ungenau und teilweise problematisch:
  * Was nehme ich eigentlich? Den Durchschnitt oder das Maximum oder
    eine Kombination aus beidem? 
 
+=item * (H1)
+
+Schön wäre ein Gerät, dass mir während des Radfahrens beim Erfassen
+von Ampelschaltungen helfen könnte. Ideen für dieses Gerät:
+
+ * Es hat einen GPS-Empfänger und kann mir meine Position in einer
+   kleinen Karte anzeigen.
+
+ * Es benutzt vielleicht den NMEA-Kanal von GPS-Empfängern, so dass
+   man auch die Satellitenpositionen und -signalstärken auslesen kann
+   und damit eine ungefähre Genauigkeit ableiten kann.
+
+ * Über den GPS-Empfänger kann es erraten, auf welcher Straße ich
+   gerade fahre. Damit kann es auch erraten, welche die nächste und
+   übernächste Ampel ist. Ggfs. kann es eine vorgefertigte Route als
+   weiteren Hint nehmen.
+
+ * Im einfachsten Layout hat das Gerät vier große Schaltflächen:
+   Beginn der Gelb+Rot-Phase und Grünphase jeweils für die nächste und
+   übernächste Ampel.
+
+ * Ein komplizierteres Layout könnte zwischen Auto- und Radfahrampeln
+   sowie zwischen Geradeaus- und Abbiegeampeln (wo anwendbar; Daten
+   dazu fehlen komplett!) unterscheiden können.
+
+ * Um das kompliziertere Layout zu vermeiden, könnte man zumindest für
+   die Auto- und Radfahrampeln eine Heuristik anwenden: wenn man "zu
+   weit" von den Ampel entfernt ist (wo auch immer die Grenze ist),
+   wird man nur die Autoampel erkennen können. Wenn man nah dran ist
+   *und* man sich relativ eindeutig auf dem Radweg befindet, wird die
+   Fahrradampel verwendet. Das Erkennen, dass man sich auf dem Radweg
+   befindet, ist eine Wissenschaft für sich: falls die GPS-Daten genau
+   genug sind (unter fünf Meter!) oder man sich mit einer "eindeutigen
+   Geschwindigkeit" bewegt (schnell auf der Fahrbahn, langsam auf dem
+   Radweg)
+
+ * Man müsste eine Undo-Funktion haben.
+
+ * Man müsste anzeigen können, dass eine Ampel schon rot oder grün
+   anzeigt (das wäre für eine Online-Analyse interessant).
+
+ * Das Gerät enthält Ampelschaltungsdaten und fügt ständig neue dazu.
+
+ * Die Ampelschaltungsdaten werden regelmäßig mit dem
+   Haupt-BBBike-Repository synchronisiert.
+
+ * Aus den Fakten werden passende Regeln generiert. Regeln können auch
+   manuell definiert werden. Regeln könnten sein:
+
+   * Statisch geschaltete Ampeln haben relativ normierte Zyklen, meist
+     60, 70, 80, oder 90 Sekunden. Wenn eine Straßenbahntrasse an der
+     Kreuzung existiert, ist die Wahrscheinlichkeit für 90 Sekunden
+     hoch.
+
+   * Bei modernen Fußgängeranforderungsampeln bekommen Fußgänger fast
+     sofort grün (ca. nach zwei Sekunden), aber es gibt eine
+     n-sekündige "Mindestzeit" zwischen zwei Grünphasen (z.B.
+     Bergmannstr. ca. 20 Sekunden)
+
+   * Folgende Ampeln haben den gleichen Zyklus. Die
+     Wahrscheinlichkeit, dass sich der Zyklus nicht ändert, ist groß,
+     sobald keine wichtigere Straße kreuzt.
+
+   * Zyklen und Phasen sind zu gleichen Tageszeiten und an gleichen
+     Wochentagen gleich. Folgende Gruppierungen wird es wahrscheinlich
+     geben: morgendlicher Berufsverkehr, Tagesverkehr,
+     nachmittäglicher Berufsverkehr, Abendverkehr, Nachtverkehr,
+     jeweils für Mo-Fr, Sa und So/Feiertag (Liste der
+     deutschen/Berliner Feiertage!).
+
+ * Wenn während der Fahrt Regeln angewendet werden können und auch
+   Fakten für die augenblickliche Fahrt existieren, dann soll das
+   Gerät Empfehlungen für die zu fahrende Geschwindigkeit geben. Dabei
+   wird die jetzige Position zur Position des Ampel (abzüglich der
+   halben Breite der kreuzenden Straße, heuristisch ermittelt) und die
+   prognostizierte Zeit für den nächsten Wechsel auf eine Grünphase
+   verwendet, ggfs. auch für darauf folgende Ampeln. Weiterhin wird
+   die bisherige "Reisegeschwindigkeit" als Grundgeschwindigkeit
+   angenommen (Stopps und kurze Sprints werden hierbei
+   herausgerechnet), sowie die maximal mögliche Geschwindigkeit für
+   die folgende Strecke (wegen Kopfsteinpflaster, Steigungen etc.)
+   noch mit eingerechnet. Die Empfehlung wird fortlaufend revidiert.
+   Die Empfehlung kann auch als ein Bereich angegeben werden. Schön
+   wäre auch eine hörbares Signal, welches "langsamer" oder
+   "schneller" angeben würde.
+
+ * Bei dynamischen Ampelschaltungen ist die Berechnung schwieriger.
+   Wahrscheinlich bedeutet die Dynamik nur, dass Grünphasen verlängert
+   werden können, aber die eigentliche Zykluszeit gleich bleibt. Oder
+   dass bei Bedarf Phasen über zwei Zyklen erweitert werden. Hier kann
+   man vielleicht nur mit Wahrscheinlichkeiten arbeiten? Oder kann man
+   geschickt die A- und Z-Lichtzeichen der Straßenbahnen mitverwenden?
+   Oder einfach angeben können, dass irgendwo eine Straßenbahn fährt?
+
+ * Für die Hardware hätte ich zurzeit die folgenden Alternativen: iPAQ
+   mit altem eTrex, dem N95 oder etwas ganz Neues.
+
+   * Nachteile beim iPAQ: die Konstruktion wäre wegen des seriellen
+     Kabels wacklig, das alte eTrex hat eine schlechte Genauigkeit,
+     ein Halter für den iPAQ wäre notwendig, der Touchscreen des iPAQs
+     ist schlecht, die Akkus des iPAQs sind am Ende und würden kaum
+     eine Fahrt überstehen, das iPAQ dürfte nicht wasserdicht sein.
+     Vorteil: ich könnte ich Perl/Tk programmieren.
+
+   * Nachteile beim N95: solange ich kein Firmwareupdate mache, ist
+     der eingebaute GPS-Empfänger fast unbrauchbar, ein Halter für das
+     N95 wäre notwendig (siehe
+     http://www.telefon-treff.de/showthread.php?postid=2848643), die
+     Programmierung müsste in Java oder C++ erfolgen, es gibt keinen
+     Touchscreen, sondern alles müsste über die kleinen Softkeys und
+     vielleicht über den Cursor erfolgen, das N95 dürfte nicht
+     wasserdicht sein. Vorteil: wenn der Halter halten würde, wäre es
+     keine wacklige Konstruktion. Schön wäre es, wenn man das Gerät
+     per Sprache steuern könnte (es müsste ja nur "rot", "grün",
+     "nächste" und "übernächste" verstehen können, erst einmal).
+
+   * Nachteile beim Neuen: ich müsste erst einmal evaluieren, was es
+     gibt. Es müsste GPS eingebaut haben, möglichst frei
+     programmierbar sein (Perl!), es müsste einen Touchscreen haben,
+     es müsste einen Fahrradhalter dafür geben.
+
 =back
 
 =head2 Datenhandling (make, conversion ...)
@@ -3991,9 +4112,23 @@ stuff.
 
 Maybe try to copy RCS ,v files into a CVS repo layout and hope that it
 is useful as a CVS repository for git cvsimport? It's probably easier
-to do the interleaves thing with the help of git.
+to do the interleaves thing with the help of git. -> yes, it works!
+Try the E<quot>make git-updateE<quot> rule.
 
-Task: identify private stuff in the RCS-controlled files.
+Tasks:
+
+ * identify private stuff in the RCS-controlled files.
+   git submodule seems to be suited for dealing with multiple
+   repositories --- so I can have a private and a public one
+
+ * check for my few branches --- are they dealt in the conversion?
+
+ * check if git cvsimport can deal with deleted/Attic files
+
+ * deal with automated $Id: TODO.pod,v 1.120 2009/01/01 21:47:28 eserte Exp $ generation
+
+ * what about not-yet-RCS controlled files? just copy over, or put
+   everything to git?
 
 =item * (M3)
 

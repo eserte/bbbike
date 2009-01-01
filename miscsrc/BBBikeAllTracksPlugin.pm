@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAllTracksPlugin.pm,v 1.1 2007/04/23 21:44:49 eserte Exp $
+# $Id: BBBikeAllTracksPlugin.pm,v 1.2 2008/12/31 17:13:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -27,7 +27,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 use File::Glob qw(bsd_glob);
 use File::Basename qw(basename dirname);

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LayerEditorCore.pm,v 1.10 2005/06/21 21:07:24 eserte Exp $
+# $Id: LayerEditorCore.pm,v 1.11 2008/07/04 22:00:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999, 2000, 2004 Slaven Rezic. All rights reserved.
@@ -247,19 +247,20 @@ sub StartDrag {
     $token->raise;
     $token->deiconify;
     $token->FindSite($X,$Y,$e);
+    $token->idletasks; # seems to be necessary to position to $X/$Y
 }
 
 sub Motion {
     my $top = shift;
-    my($x, $y) = @_;
+    my($wx, $wy) = @_;
     my $c = $top->Subwidget('canvas');
-    ($x, $y) = ($c->canvasx($x), $c->canvasy($y));
-    my $inx = get_item($top, $c, $y);
+    my($cx, $cy) = ($c->canvasx($wx), $c->canvasy($wy));
+    my $inx = get_item($top, $c, $cy);
     return unless defined $inx;
     my $y_ref = $top->{ItemsY};
     my $line_pos;
     if (!defined $y_ref->[$inx+1] ||
-	($y_ref->[$inx+1]-$y_ref->[$inx])/2+$y_ref->[$inx] > $y) {
+	($y_ref->[$inx+1]-$y_ref->[$inx])/2+$y_ref->[$inx] > $cy) {
 	$line_pos = $y_ref->[$inx];
 	$top->{After} = $inx;
     } else {
@@ -280,19 +281,19 @@ sub Motion {
     my $real_canvas_width  = $real_c->width;
     my $real_canvas_height = $real_c->height;
     my $pad = 10;
-    if ($x < $pad && $c->canvasx(0) >= 5) {
+    if ($cx < $pad && $c->canvasx(0) >= 5) {
 	$c->xview(scroll => -1, 'units');
 	$set_scroll_lock->();
     }
-    if ($y < $pad && $c->canvasy(0) >= 5) {
+    if ($cy < $pad && $c->canvasy(0) >= 5) {
 	$c->yview(scroll => -1, 'units');
 	$set_scroll_lock->();
     }
-    if ($x > $real_canvas_width-$pad) {
+    if ($cx > $real_canvas_width-$pad) {
 	$c->xview(scroll => +1, 'units');
 	$set_scroll_lock->();
     }
-    if ($y > $real_canvas_height-$pad) {
+    if ($cy > $real_canvas_height-$pad) {
 	$c->yview(scroll => +1, 'units');
 	$set_scroll_lock->();
     }
@@ -348,43 +349,45 @@ sub myDrag
 {
  my $token = shift;
  my $e = $token->XEvent;
- my $X  = $e->X;
- my $Y  = $e->Y;
+ my $rx = $e->X;
+ my $ry = $e->Y;
  $token = $token->toplevel;
- $token->MoveToplevelWindow($X+Tk::DragDrop::OFFSET,$Y+Tk::DragDrop::OFFSET);
+ $token->MoveToplevelWindow($rx+Tk::DragDrop::OFFSET,$ry+Tk::DragDrop::OFFSET);
 #XXX nyi
  my $c = $token->parent;
- if ($Y < $c->rooty || $Y > $c->rooty+$c->height) {
+ if ($ry < $c->rooty || $ry > $c->rooty+$c->height) {
      my $p = $c;
      while(ref($p) !~ /^Tk::LayerEditor/) {
 	 die "Can't find LayerEditor parent" if $p->isa("Tk::Toplevel");
 	 die "\$p is undef" if !$p;
 	 $p = $p->parent;
      }
-     canvas_AutoScan($c,$p,$X,$Y);
+     canvas_AutoScan($c,$p,$rx-$c->rootx,$ry-$c->rooty);
  }
 }
 
 ### nyi
 sub canvas_AutoScan
 {
- my $c = shift;
- my $p = shift;
- my $x = shift;
- my $y = shift;
- if ($y >= $c->rooty + $c->height)
+ my $c  = shift;
+ my $p  = shift;
+ my $wx = shift;
+ my $wy = shift;
+ my($x0,$x1) = $c->xview;
+ my($y0,$y1) = $c->yview;
+ if ($wy >= $c->rooty + $c->height)
   {
    $c->yview('scroll',1,'units')
   }
- elsif ($y < $c->rooty)
+ elsif ($wy < $c->rooty && $y0 > 0)
   {
    $c->yview('scroll',-1,'units')
   }
- elsif ($x >= $c->rootx + $c->width)
+ elsif ($wx >= $c->rootx + $c->width)
   {
    $c->xview('scroll',2,'units')
   }
- elsif ($x < $c->rooty)
+ elsif ($wx < $c->rootx && $x0 > 0)
   {
    $c->xview('scroll',-2,'units')
   }
@@ -392,8 +395,9 @@ sub canvas_AutoScan
   {
    return;
   }
- $p->Motion($c->canvasx($x), $c->canvasy($y));
- $c->RepeatId($c->after(50,sub{canvas_AutoScan($c,$p,$x,$y)}));
+# $p->Motion($c->canvasx($x), $c->canvasy($y));
+ $p->Motion($wx, $wy);
+ $c->RepeatId($c->after(50,sub{canvas_AutoScan($c,$p,$wx,$wy)}));
 }
 
 # XXX implement!

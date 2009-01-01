@@ -1,4 +1,4 @@
-/* $Id: BBBike.java,v 1.9 2006/11/09 22:01:27 eserte Exp $ */
+/* $Id: BBBike.java,v 1.10 2008/12/31 16:49:12 eserte Exp $ */
 
 import java.util.Enumeration;
 import java.util.Hashtable;
@@ -40,7 +40,7 @@ class BBBike {
     Rectangle bounds = gc.getBounds();
 */
 
-    top = new Frame("BBBike $Revision: 1.9 $");
+    top = new Frame("BBBike $Revision: 1.10 $");
     top.setLayout(new BorderLayout());
     c = new MyCanvas(this);
     try {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Splash.pm,v 1.12 2005/08/25 22:15:09 eserte Exp $
+# $Id: Splash.pm,v 1.3 2005/08/26 18:40:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003,2005 Slaven Rezic. All rights reserved.
@@ -104,7 +104,7 @@ Slaven Rezic
 
 =head1 SEE ALSO
 
-L<Tk::FastSplash>
+L<Tk::FastSplash>, L<Win32::GUI::SplashScreen>.
 
 =cut
 

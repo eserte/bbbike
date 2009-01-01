@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.196 2008/11/11 20:48:15 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.197 2008/12/31 17:36:27 eserte Exp $
 #: note: XXX_* categorization done 2008-01-26
 #:
 ###################################################################
@@ -946,6 +946,8 @@ Sachsendamm: Mittelstreifen mit Geländer	3nocross 6935,8208 7005,8150 7087,8066
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+#: by; Mathias Vogt:
+tragen (zwei Stufen)	0:10 5970,20353
 tragen (ca. 45 Stufen, Aufzug ist vorhanden)	0:30 13503,11179
 tragen (flache Treppe, wenige Stufen)	0:10 6530,6786
 tragen (ca. 10 Stufen)	0:20 26407,161781 26395,161793
