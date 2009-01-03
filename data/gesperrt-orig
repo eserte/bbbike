@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.197 2008/12/31 17:36:27 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.197 2008/12/31 17:36:27 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 ###################################################################
@@ -608,8 +608,8 @@ Wilhelm-Staab-Str.	1 -13001,-1329 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12693,-827 -12712,-734 -12730,-627
 Hans-Thoma-Str.	1 -12219,-726 -12262,-612 -12306,-496
 Behlertstr.	1 -12265,-418 -12194,-490 -12045,-757
-Potsdamer Damm	2 -5736,-3629 -6439,-3969
-Nuthestr.	2 -6439,-3969 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10321,-2800 -10547,-2606 -10898,-2375 -11070,-2123 -11142,-1675 -11226,-1445 -11356,-1317
+Potsdamer Damm	2 -5736,-3629 -6119,-3907 -6426,-4014
+Nuthestr.	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10321,-2800 -10547,-2606 -10898,-2375 -11070,-2123 -11142,-1675 -11226,-1445 -11356,-1317
 Rudolf-Moos-Str. - Nuthestr.	2 -10281,-2690 -10321,-2800
 Kleine Gasse	1 -13272,-1168 -13287,-1231
 Bäckerstr.	1 -13314,-1226 -13287,-1231 -13203,-1246
@@ -946,6 +946,7 @@ Sachsendamm: Mittelstreifen mit Geländer	3nocross 6935,8208 7005,8150 7087,8066
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (drei flache Stufen)	0:10 -7445,-5002
 #: by; Mathias Vogt:
 tragen (zwei Stufen)	0:10 5970,20353
 tragen (ca. 45 Stufen, Aufzug ist vorhanden)	0:30 13503,11179

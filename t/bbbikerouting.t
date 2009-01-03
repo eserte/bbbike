@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.32 2007/07/16 21:13:49 eserte Exp $
+# $Id: bbbikerouting.t,v 1.33 2009/01/03 20:46:11 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -225,8 +225,9 @@ sub do_tests {
 	   "Route length looks OK after continuation");
     {
 	local $^W; # no "numeric" warning
-	cmp_ok($routing->RouteInfo->[$route_info_length-1]->{Whole}, "<",
-	       $routing->RouteInfo->[$route_info_length]->{Whole},
+	
+	cmp_ok(0+$routing->RouteInfo->[$route_info_length-1]->{Whole}, "<",
+	       0+$routing->RouteInfo->[$route_info_length]->{Whole},
 	       "Human readable route length looks OK after continuation");
     }
 

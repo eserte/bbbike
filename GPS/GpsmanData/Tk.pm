@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Tk.pm,v 1.15 2008/12/30 22:06:53 eserte Exp $
+# $Id: Tk.pm,v 1.16 2009/01/03 19:28:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GPS::GpsmanData::Tk;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Tk::Frame);
 Construct Tk::Widget 'GpsmanData';
@@ -84,7 +84,8 @@ sub Populate {
     {
 	my $dv = $dvf->Scrolled("GpsmanDataHList",
 				-exportselection => 1,
-				#XXX which one? -selectmode => "browse",
+				#XXX which one?
+				-selectmode => "extended",
 				-scrollbars => "se", # XXX no "ose" for easier handling of overview canvas
 				-header => 1,
 				-columns => scalar(@wpt_cols),
@@ -576,6 +577,13 @@ sub select_items {
     }
 }
 
+sub get_selected_items {
+    my($self) = @_;
+    my $dv = $self->Subwidget("data");
+    my @items = $dv->info('selection');
+    @items;
+}
+
 1;
 
 __END__
@@ -663,6 +671,10 @@ L<GPS::GpsmanData> object, or undef.
 =item $w->select_items($item, ...)
 
 Select the given (internal) items.
+
+=item $w->get_selected_items
+
+Get a list of (internal) items which are selected.
 
 =item $w->find_items_by_wpts(@wpts)
 

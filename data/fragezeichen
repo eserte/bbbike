@@ -75,7 +75,7 @@ Weg zwischen Tierpark und Bahntrasse: Qualität des Weges (Am westlichen Ende Bet
 Freystadter Weg: Qualität (laut ADFC-Karte mäßig geeignet)? Ist die Straße südlich des Wünschelburger Gangs für Autos gesperrt? Kann man die Dörpfeldstr. in Höhe Freystadter Weg überqueren?	? 20994,4761 20981,4696 20981,4628 21008,4275 21017,4220 21053,4162
 Charlotte-E-Pauly-Str.: Qualität? In der Nähe befindet sich auch die Ingrid Goltzsche-Schwarz-Straße, wo genau?	? 25018,5294 25030,4984 25010,4807
 B101 bis Großbeeren: hier auch ein Radweg?	? 5394,-3053 5068,-3719 4842,-4182 4547,-4951 4227,-5721
-Potsdamer Str., Wilhelm-Külz-Str., Bäkedamm, Potsdamer Allee: wo gibt es überall Radwege?	? -2477,-1717 -2276,-1621 -2073,-1525 -1668,-1709 -1453,-1715 -1303,-1758 -1143,-1759 -705,-1564 -282,-1184 465,-662 741,-584 925,-684 1346,-762
+Potsdamer Str., Wilhelm-Külz-Str., Bäkedamm, Potsdamer Allee: wo gibt es überall Radwege?	? -2477,-1717 -2276,-1621 -2073,-1525 -1668,-1709 -1453,-1715 -1303,-1758 -1143,-1759 -705,-1564 -282,-1184 -71,-1037 348,-743 465,-662 741,-584 925,-684 1212,-706 1346,-762
 B273: hier auch Radweg?	? -14737,300 -14859,421 -15158,589 -15527,795
 Basdorf - Bernauer Heide: passierbar (Bahnstrecke), Qualität, Kfz-los?	? 12887,36543 13723,36178
 Zugbrücke/Schleuse?	? 35066,4548
@@ -112,7 +112,7 @@ Kohlhasenbrücker Str.: Qualität (beidseitig der Großbeerenstr. Asphalt, sonst Wa
 Ziolkowskistr.: Qualität?	? -7971,-3373 -7814,-3419 -7481,-3396 -6969,-3582 -6808,-3642
 Stern - Potsdamer Damm/Potsdamer Str.: Durchfahrt möglich? Qualität?	? -6808,-3642 -5736,-3629
 Gaußstr.: Einbahnstraße? Qualität?	? -6969,-3582 -6968,-3678 -6983,-3886 -7113,-3884 -7118,-3678
-Galileistr.: Qualität? Name westl. der Neuendorfer Str. noch immer Galileistr?	? -6968,-3678 -7118,-3678 -8032,-3710 -8098,-3680
+Galileistr.: Qualität? Name westl. der Neuendorfer Str. noch immer Galileistr?	? -8032,-3710 -8098,-3680
 Im Schäferfeld: Qualität?	? -8098,-3680 -8404,-3824 -8475,-3861
 Fichtenallee (Potsdam): Qualität?	? -8563,-3805 -8451,-3728 -8226,-3592
 Stern - Nudow: Durchfahrt möglich? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? -6983,-3886 -7077,-4186 -6902,-4397 -6775,-4326 -6671,-6390 -6516,-6520 -6508,-6969 -6191,-7587 -6319,-7823 -5766,-8911 -5387,-8896
@@ -2031,6 +2031,25 @@ Krontalstr.: Qualität?	? 11761,-1199 11756,-1144 11696,-936 11695,-906 11680,-79
 Straße 9 (Lichtenrade): Qualität?	? 11747,-440 11644,-451 11454,-470 11203,-495 11176,-489
 Königsteinstr. (Lichtenrade): Qualität?	? 11259,-555 11264,-605 11278,-719 11291,-834 11305,-952 11310,-996 11495,-1128 11551,-1114
 Homburgstr.: Qualität?	? 11077,-714 11106,-737 11278,-719 11477,-697 11666,-675 11808,-659
+Marie-Juchacz-Str. (Potsdam): Qualität?	? -7369,-5648 -7398,-5650 -7472,-5652 -7537,-5620 -7592,-5565 -7655,-5517 -7713,-5470 -7767,-5415
+Marie-Hannemann-Str. (Potsdam): Qualität?	? -7796,-5447 -7767,-5415 -7678,-5326 -7633,-5279 -7597,-5240 -7569,-5240
+Margarete-Buber-Neumann-Str. (Potsdam): Qualität?	? -7784,-4963 -7689,-5039
+Karoline-Schulze-Str. (Potsdam): Qualität?	? -7844,-5026 -7747,-5102
+Munthestr. (Potsdam): Qualität?	? -7487,-5048 -7484,-5140
+Bettina-von-Arnim-Str.: Qualität?	? -7689,-5039 -7628,-5142
+Am Hirtengraben (Potsdam): Qualität? Für Autos befahrbar?	? -8033,-5049 -7995,-5068 -7944,-5153 -7934,-5175 -7895,-5219
+Am Hirtengraben (Potsdam): Qualität? Für Autos befahrbar?	? -7934,-5175 -8001,-5199 -8116,-5221
+Mildred-Harnack-Str. (Potsdam): Qualität?	? -7384,-5346 -7411,-5348 -7489,-5351
+Lise-Meitner-Str. (Potsdam): Qualität?	? -7319,-5445 -7378,-5448 -7405,-5449 -7484,-5452 -7533,-5454 -7582,-5438 -7602,-5430 -7624,-5411 -7633,-5396 -7646,-5361 -7678,-5326 -7724,-5283 -7739,-5246 -7745,-5192
+Kamblystr. (Potsdam): Qualität?	? -7672,-5189 -7672,-5238 -7633,-5279
+Clara-Schumann-Str. (Potsdam): Qualität?	? -7492,-5242 -7491,-5264 -7489,-5321 -7489,-5351 -7488,-5379 -7484,-5452 -7482,-5550 -7537,-5620 -7561,-5659 -7634,-5733 -7661,-5767 -7661,-5767
+Gertrud-Kolmar-Str. (Potsdam): Qualität?	? -7313,-5545 -7373,-5548 -7403,-5549 -7482,-5550
+Schinkelstr. (Potsdam): Qualität?	? -7655,-5517 -7582,-5438
+Schadowstr. (Potsdam): Qualität?	? -7713,-5470 -7658,-5407 -7633,-5396
+Clara-Schumann-Str. - Dorothea-Schneider-Str.: Qualität? Hat diese Verbindung einen Namen?	? -7488,-5379 -7558,-5383 -7580,-5366
+Maimi-von-Mirbach-Str. (Potsdam): Qualität?	? -7395,-5032 -7381,-5036 -7364,-5052 -7322,-5087 -7272,-5050 -7211,-5047
+Büringstr. (Potsdam): Qualität?	? -7364,-5052 -7321,-5005 -7272,-5050
+Bellavitestr. (Potsdam): Qualität?	? -7502,-4930 -7399,-4814
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741

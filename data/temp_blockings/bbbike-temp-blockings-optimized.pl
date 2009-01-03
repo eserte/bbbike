@@ -125,16 +125,6 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_006819',
-         'until' => 1230764399,
-         'text' => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Mohrenstr. und Leipziger Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2008)',
-         'from' => 1230474822,
-         'id' => 1194,
-         'data' => 'userdel	1::inwork 9220,11781 9234,11683 9268,11590
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -289,51 +279,12 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1230764399,
-         'text' => 'Mohrenstr. zwischen Mauerstr. und Glinkastr. gesperrt ',
-         'from' => 1209754023,
-         'id' => 1349,
-         'data' => 'userdel	q4::inwork 9220,11781 9173,11770
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1230764399,
-         'text' => 'Oberwallstr. Einbahnstraße zum Hausvogteiplatz',
-         'from' => 1209754154,
-         'id' => 1350,
-         'data' => 'userdel	1::inwork 9925,11947 9913,12068
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1230764399,
-         'text' => 'Mohrenstr. am Gendarmenmarkt: Einbahnstraße Richtung Osten',
-         'from' => 1209667815,
-         'id' => 1351,
-         'data' => 'userdel	1::inwork 9672,11833 9538,11818
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1230764399,
-         'text' => 'Markgrafenstr. am Gendarmenmarkt: Einbahnstraße Richtung Norden',
-         'from' => 1209754240,
-         'id' => 1352,
-         'data' => 'userdel	1::inwork 9663,11927 9672,11833
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1230764399,
-         'text' => 'Kleine Gertraudenstr. - Gertraudenstr.: Bauarbeiten, gesperrt ',
-         'from' => 1209754714,
-         'id' => 1353,
-         'data' => 'userdel	2::inwork 10387,11901 10364,11896
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        undef,
        undef,
        {
@@ -428,15 +379,6 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1230764400,
-         'text' => 'L 029 Lanke - Zehlendorf nördl. Wandlitz, ab B109 in Ri. Stolzenhagen Bau Kreisverkehr Vollsperrung 17.08.2008-31.12.2008 ',
-         'from' => 1218837600,
-         'id' => 1408,
-         'data' => 'userdel	2::inwork 15403,40364 14713,40426
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -461,15 +403,8 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1230764399,
-         'text' => 'Bautätigkeit bis Ende 2008, daher Einbahnstraße vom Sterndamm in Richtung Haeckelstr.',
-         'from' => 1217880521,
-         'id' => 1433,
-         'data' => '	1 17379,3932 17346,4031 17341,4046 17297,4159 17261,4267
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -521,15 +456,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1230764400,
-         'text' => 'L 023 Ringenwalde - Milmersdorf OD Götschendorf Grundh.Straßenausbau Vollsperrung 25.08.2008-31.12.2008 ',
-         'from' => 1219528800,
-         'id' => 1468,
-         'data' => 'userdel	q4::inwork 28003,76731 27309,76652 26735,76914
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -613,15 +540,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1230758415,
-         'text' => 'Sanierung der Kurt-Tucholsky-Str., 26.10.2008 - Ende 2008',
-         'from' => 1224975600,
-         'id' => 1519,
-         'data' => 'userdel	1::inwork 938,28349 978,28400 1007,28446 1009,28662 1020,28712 1078,28830 1124,28923 1234,29120 1304,29256 1366,29416
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -635,16 +554,7 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_010519',
-         'until' => 1230850799,
-         'text' => 'Gubitzstr. (Prenzlauer Berg) in beiden Richtungen zwischen Küselstr. und Scheritzstr. Bauarbeiten, Straße vollständig gesperrt (bis Anfang 01.2009)',
-         'from' => 1230474668,
-         'id' => 1524,
-         'data' => 'userdel	2::inwork 12463,15774 12384,15618 12299,15463
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_010401',
          'until' => 1233442799,
@@ -717,37 +627,6 @@ push @temp_blocking,
          'from' => 1228340492,
          'id' => 1547,
          'data' => 'userdel	1::inwork 16032,10842 15670,10800 15396,10767 15266,10791
-',
-         'type' => 'gesperrt'
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       {
-         'source_id' => 'IM_010978',
-         'until' => 1230958800,
-         'text' => 'Straße des 17. Juni (Tiergarten) Veranstaltung, Straße vollständig gesperrt, ebenso Yitzhak-Rabin-Str. und Ebertstr. (bis 03.01.09, ca. 6 Uhr)',
-         'from' => 1230474969,
-         'id' => 1555,
-         'data' => 'userdel	2::temp 8119,12414 8063,12182 8089,12186 8214,12205 8515,12242 8539,12286
-userdel	2::temp 8595,12066 8600,12165 8515,12242
-userdel	2::temp 8063,12182 7816,12150 7383,12095 6828,12031
-userdel	2::temp 8515,12242 8610,12254 8804,12280
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_011040',
-         'until' => 1230807600,
-         'text' => 'John-Foster-Dulles-Allee - Scheidemannstr. - Dorotheenstr. (Tiergarten/Mitte) in beiden Richtungen zwischen Spreeweg und Wilhelmstr. Veranstaltung, Straßen vollständig gesperrt (bis 01.01.09, ca. 12 Uhr)',
-         'from' => 1230730702,
-         'id' => 1556,
-         'data' => 'userdel	2::temp 7875,12363 8017,12359 8070,12409 8119,12414 8374,12416 8539,12286 8560,12326 8540,12420
-userdel	2::temp 8374,12416 8400,12417 8540,12420 8775,12457
 ',
          'type' => 'gesperrt'
        }

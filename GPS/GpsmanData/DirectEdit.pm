@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectEdit.pm,v 1.6 2008/12/29 19:44:36 eserte Exp $
+# $Id: DirectEdit.pm,v 1.6 2008/12/29 19:44:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -67,6 +67,13 @@ sub set_accuracy {
     $f[4] =~ s/^(~*\|?)/$acc/;
     my $new_line = join("\t", @f);
     $self->{Lines}->[$line] = $new_line;
+}
+
+sub set_accuracies {
+    my($self, $lines, $acc_level) = @_;
+    for my $line (@$lines) {
+	$self->set_accuracy($line, $acc_level);
+    }
 }
 
 sub remove_empty_track_segments {

@@ -1,6 +1,6 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Qualität der Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.233 2008/12/31 17:36:32 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.233 2008/12/31 17:36:32 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10257,-2654 10392,-2980 10475,-3174
@@ -2155,6 +2155,10 @@ Lanzendorfer Weg: Asphalt	Q0 -8852,4619 -8837,4688
 Raumbacher Str.: Asphaltbeton	Q0 29115,2015 28965,2151 28829,2269
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20080911.1325.108940.html
 Pietschkerstr.: Asphaltbeton	Q0 17770,5108 17729,5091 17652,5082 17601,5090
+#: note: von der S-Bahn aus gesehen:
+Hildburghauser Str.: Kopfsteinpflaster	Q2 4514,1402 4453,1408
+#: note: von der S-Bahn aus gesehen:
+Fürstenstr.: Kopfsteinpflaster	Q2 4349,1031 4250,763
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -7852,6 +7856,7 @@ Bäumerplan: Asphalt	Q0- 8561,8252 8536,8192 8519,8088
 Adolf-Scheidt-Platz: Asphalt	Q1 8723,8100 8759,8071 8770,8018 8760,7976 8726,7944
 Kanzlerweg: Asphalt	Q1 8839,8132 8839,8018 8839,7904
 Wiesenerstr.: Asphalt	Q2 8934,7679 8900,7643
+#: XXX tatsächlich nur Q2? Oder Q1, wie mäßiger Asphalt üblicherweise kategorisiert wird?
 Siegertweg: mäßiger Asphalt	Q2 8971,7359 8979,7425 9025,7431 9067,7490
 Hessenring: Beton	Q0 8465,7699 8543,7627 8625,7594
 #: corrected_by: srt (Q1 -> Q0-)

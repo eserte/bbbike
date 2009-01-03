@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.204 2008/12/31 16:46:41 eserte Exp $
+# $Id: Makefile,v 2.205 2009/01/02 22:38:36 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -49,6 +49,7 @@ GREPSTRASSEN=		${PERL} ${MISCSRCDIR}/grepstrassen
 REPLACESTRASSEN=	${PERL} ${MISCSRCDIR}/replacestrassen
 GREPSTRASSEN_UTF8=	${PERL_UTF8} ${MISCSRCDIR}/grepstrassen
 COMBINE_STREETS=	${PERL} ${MISCSRCDIR}/combine_streets.pl
+COMBINE_OSM=		${PERL} ${MISCSRCDIR}/combineosm
 
 COMMENTS_PARTIAL=	comments_cyclepath comments_danger comments_ferry comments_misc \
 			comments_mount comments_path comments_route \
@@ -1641,6 +1642,46 @@ ${CGPSMAPPER}:
 	wget http://www.cgpsmapper.com/download/cgpsmapper-static.gz -O /tmp/cgpsmapper-static.gz
 	gunzip /tmp/cgpsmapper-static.gz
 	sudo install /tmp/cgpsmapper-static ${CGPSMAPPER}
+
+######################################################################
+# combined map with OSM and BBBike map data
+
+MKGMAP=	java -jar /usr/local/src/mkgmap-r590/mkgmap.jar
+MAPSOURCE_DE_IMG=$(HOME)/doc/map/mapsource_de.img
+
+combined-map:	${PERSISTENTTMPDIR}/gmapsupp.img
+	@echo "* Now do an upload:"
+	@echo "sudo mount /mnt/garmin"
+	@echo "cp ${PERSISTENTTMPDIR}/gmapsupp.img /mnt/garmin/garmin/"
+	@echo "sudo umount /mnt/garmin"
+
+GMAPSUPP_SRC=	${PERSISTENTTMPDIR}/bbbikequal.img \
+		${PERSISTENTTMPDIR}/berlin_osm.img \
+		${PERSISTENTTMPDIR}/leipzig_osm.img
+
+## XXX This would be nice. But I ran out of memory if
+## adding this one. Even with -Xmx1024m:
+#.if exists(${MAPSOURCE_DE_IMG})
+#GMAPSUPP_SRC+=	${MAPSOURCE_DE_IMG}
+#.endif
+
+
+${PERSISTENTTMPDIR}/gmapsupp.img:	${GMAPSUPP_SRC}
+	cd ${PERSISTENTTMPDIR} && \
+	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC}
+
+${PERSISTENTTMPDIR}/berlin_osm.img:
+	${COMBINE_OSM} ${MISCDIR}/download/osm/{berlin,koenigs_wusterhausen,teltow,uckermark,usedom} > ${PERSISTENTTMPDIR}/berlin_combined.osm
+	cd ${PERSISTENTTMPDIR} && ( \
+	    ${MKGMAP} --description="Berlin und Umgebung OSM" --mapname=63240011 berlin_combined.osm && \
+	    mv 63240011.img berlin_osm.img )
+
+${PERSISTENTTMPDIR}/leipzig_osm.img:
+	${COMBINE_OSM} ${MISCDIR}/download/osm/leipzig > ${PERSISTENTTMPDIR}/leipzig.osm
+	cd ${PERSISTENTTMPDIR} && ( \
+	    ${MKGMAP} --description="Leipzig und Umgebung OSM" --mapname=63240012 leipzig.osm && \
+	    mv 63240012.img leipzig_osm.img )
+
 
 ######################################################################
 # This will be removed someday if convert_orig_to_bbd is good enough

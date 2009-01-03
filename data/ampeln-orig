@@ -1,6 +1,6 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.147 2008/12/31 16:46:50 eserte Exp $
+#: version: $Id: ampeln-orig,v 4.148 2009/01/03 20:31:54 eserte Exp eserte $
 #: note: XXX_* categorization done 2008-01-26
 #:
 	X 9222,8787
@@ -2476,6 +2476,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -9735,-1845
 	X -16023,1042
 	X -10281,-2690
+	X -7351,-3685
 	F -16766,1399
 	F -16897,1518
 	F -8482,-1553
@@ -2499,6 +2500,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -13556,-1140
 	F -9872,-4694
 	F -13212,-1356
+	F -7214,-4362
 #: note: ^^^
 ################################################################################
 # note: Ampeln elsewhere vvv

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.69 2008/12/31 17:14:07 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.69 2008/12/31 17:14:07 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -1052,15 +1052,15 @@ sub gps_data_viewer {
 		   -command => sub {
 		       require GPS::GpsmanData::Analyzer;
 		       my $anlzr = GPS::GpsmanData::Analyzer->new($gps);
-		       my @wpt = $anlzr->find_premature_samples;
-		       if (@wpt) {
-			   $gps_view->select_items(grep { defined $_ } $gps_view->find_items_by_wpts(@wpt));
+		       my @wpts = $anlzr->find_premature_samples;
+		       if (@wpts) {
+			   $gps_view->select_items(grep { defined $_ } $gps_view->find_items_by_wpts(@wpts));
 			   # XXX this is bad: dialog is modal and it's not possible to view all the selection
-			   my $yn = $t->messageBox(-message => "Remove selected " . scalar(@wpt) . " item(s)?",
+			   my $yn = $t->messageBox(-message => "Remove selected " . scalar(@wpts) . " item(s)?",
 						   -type => "YesNo");
 			   if (lc $yn eq 'yes') {
 			       my $edit = GPS::GpsmanData::DirectEdit->new($gps);
-			       my @lines = grep { defined $_ } map { $gps->LineInfo->get_line_by_wpt($_) } @wpt;
+			       my @lines = grep { defined $_ } map { $gps->LineInfo->get_line_by_wpt($_) } @wpts;
 			       my @operations = $edit->remove_lines(\@lines, -dryrun => 1);
 			       # XXX very bad formatting, maybe use a custom DialogBox here?
 			       my $yn = $t->messageBox(-message => "Are you sure?\n" . join("\n", map { join " ", @$_ } @operations),
@@ -1080,6 +1080,35 @@ sub gps_data_viewer {
 			       }
 			   }
 		       }
+		   })->pack(-side => "left");
+	$f->Button(-text => "Set accuracy for selection",
+		   -command => sub {
+		       my @sel_items = $gps_view->get_selected_items;
+		       my @wpts = grep { defined } map { $gps_view->wpt_by_item($_) } @sel_items;
+		       my $last_accuracy;
+		       for (@wpts) {
+			   if (!defined $last_accuracy) {
+			       $last_accuracy = $_->Accuracy;
+			   } elsif ($last_accuracy != $_->Accuracy) {
+			       my $yn = $t->messageBox(-message => "Differing accuracies in selected waypoints. Proceed nevertheless?",
+						       -type => "YesNo");
+			       return if (lc $yn ne 'yes');
+			   }
+		       }
+		       require Tk::DialogBox;
+		       my $dlg = $t->DialogBox(-title => "Accuracy", -buttons => ["OK", "Cancel"]);
+		       $dlg->add("Label", -text => "Set accuracy to:")->pack;
+		       my $new_accuracy = $last_accuracy;
+		       $dlg->add("Radiobutton", -value => 0, -text => "!", -variable => \$new_accuracy)->pack;
+		       $dlg->add("Radiobutton", -value => 1, -text => "~", -variable => \$new_accuracy)->pack;
+		       $dlg->add("Radiobutton", -value => 2, -text => "~~", -variable => \$new_accuracy)->pack;
+		       my $answer = $dlg->Show;
+		       return if ($answer ne 'OK');
+		       return if $new_accuracy == $last_accuracy;
+		       my $edit = GPS::GpsmanData::DirectEdit->new($gps);
+		       my @lines = grep { defined $_ } map { $gps->LineInfo->get_line_by_wpt($_) } @wpts;
+		       $edit->set_accuracies(\@lines, $new_accuracy);
+		       $gps_view->reload;
 		   })->pack(-side => "left");
     }
 }

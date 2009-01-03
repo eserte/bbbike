@@ -67,18 +67,19 @@ http://www.dhm.de/lindencam/index.html	WC 9875,12425 9814,12416
 # http://www.cityscope.de/pp/index.html	WC 8604,11401 8535,11424
 http://www.cityscope.de/pp3n/index.html	WC 8441,11460 8433,11558
 http://www.cityscope.de/pp3s/index.html	WC 8443,11457 8443,11384
-http://www.cityscope.de/alex/index.html	WC 11205,12998 11165,12932
+# früher http://www.cityscope.de/alex/index.html
+http://www.citypano.de/alex/index.html	WC 11205,12998 11165,12932
+http://www.citypano.de/o2world/index.html	WC 12975,10981 13040,11107
 # Lehrter Bahnhof/Hauptbahnhof, keine aktuellen Bilder mehr: http://www.cityscope.de/lbhf/index.html
 #: note: ^^^
 ##: note: Kein Blick auf die Straße: seit Sep 2006 keine Aktualisierung http://www.tapu.de/webcam/	WC 9955,11649 9887,11712
-http://www.berlin.de/webcams/index.php/alex	WC 10929,13174 10958,13156
+# XXX: gibt's nicht mehr, in Zukunft wahrscheinlich stattdessen unter der URL http://www.berlinstream.de/berlinstream/ was: http://www.berlin.de/webcams/index.php/alex	WC 10929,13174 10958,13156
 # existiert nicht mehr: http://www.berlin.de/webcams/rathaus/.bin/index.php	WC 10671,12530
-http://www.berlin.de/webcams/index.php/dahlem	WC 10907,13248 10880,13322
+# XXX: falsche Koordinaten: http://www.berlin.de/webcams/index.php/dahlem	WC 10907,13248 10880,13322
 # http://www.kurfuerstendamm.de/cms/webcam/f_webcam.html	WC 5857,10871 5801,10894
 #: note: größer als http://www.berlin.de/webcams/.html/wannsee.html
 http://wind.met.fu-berlin.de/loops/webcam/Wannsee_prod.jpg	WC -4416,2664 -4497,2595
-#: XXX: Blickrichtung unklar
-http://www.bilder-netz.de/webcam.php	WC 13095,15591
+# XXX gibt's nicht mehr: XXX: Blickrichtung unklar http://www.bilder-netz.de/webcam.php	WC 13095,15591
 # http://www.soost-berlin.de/web/livecam.html	WC 14663,1860 14747,1869
 #: XXX: Blickrichtung unklar
 http://www.marzahn-hellersdorf.net/webcam.php	WC 22829,13324
@@ -103,9 +104,11 @@ http://www.met.fu-berlin.de/de/wetter/webcam/	WC 4149,5755 4140,5796
 #: note: Bauarbeiten U55:
 http://www.u55.info/webcam.htm	WC 8765,12306 8791,12289
 http://linpop.zdf.de/Berlin/webcam/	WC 8822,12326 8747,12300
-http://www.oldpetrus.de/webcam/	WC 13158,15126 13062,15121
-http://www.oldpetrus.de/webcam/	WC 13159,15121 13043,15006
-http://www.oldpetrus.de/webcam/	WC 13159,15118 13180,15060
+# XXX alt: http://www.oldpetrus.de/webcam/	WC 13158,15126 13062,15121
+# XXX alt: http://www.oldpetrus.de/webcam/	WC 13159,15121 13043,15006
+# XXX alt: http://www.oldpetrus.de/webcam/	WC 13159,15118 13180,15060
+http://www.oldpetrus.de/webcam/piescam.jpg	WC 13269,15053 13194,15093
+http://www.oldpetrus.de/webcam/citycam2.jpg	WC 13269,15053 13237,15003
 http://www.das-schloss-steglitz.de/index.php?id=webcam	WC 4865,5521 4853,5621
 #: note: Indexseite: http://www.olympiastadion-berlin.de/index.php?id=80
 http://www.olympiastadion-berlin.de/webcam2.php	WC -642,11931 -752,11907
