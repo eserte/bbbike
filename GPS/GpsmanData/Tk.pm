@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Tk.pm,v 1.16 2009/01/03 19:28:03 eserte Exp $
+# $Id: Tk.pm,v 1.17 2009/01/03 21:02:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GPS::GpsmanData::Tk;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Tk::Frame);
 Construct Tk::Widget 'GpsmanData';
@@ -717,31 +717,33 @@ attributes C<srt:vehicle>, C<srt:brand>, and C<srt:comment>.
 
 Track attributes may be modified.
 
+=item *
+
+Some additional features are implemented in L<SRTShortcuts> (detecting
+ranges with premature points and automatically deleting them, setting
+accuracy in selected ranges)
+
 =back
 
 =head1 TODO
 
-=head2 High priority
+=head2 Low priority
 
   * Callbacks, so dass BBBike auf Änderungen reagieren kann
 
-  * Operationen auf selektierte Bereiche:
-    * komplett löschen
-    * auf ~ oder ~~ setzen (oder ~ löschen)
-    * ~ um eins erhöhen (aber Maximum ist ~~)
-    -> Frage: wie in GUI umsetzen? (Button, Popup?)
+  * BBBike integration: Möglichkeit eines Callbacks für eine Selektion
+    von Punkten (BBBike: call mark_street or mark_points)
 
-=head2 BBBike integration
-
-  * Möglichkeit eines Callbacks für eine Selektion von Punkten
-    (BBBike: call mark_street or mark_points)
-
-=head2 Low priority
+  * Nice to have: Scrollbereich im GPS Viewer und im BBBike-Canvas
+    können sich gegenseitig setzen, so dass immer der
+    korrespondierende Bereich zu sehen ist
 
   * Edit-Operationen sollten einen unendlichen Log haben, mit
     unendlichen Undo
 
   * Support for other data types like routes, waypoint files etc.
+
+=head2 GPX support
 
   * Better support for GPX and other data types
  

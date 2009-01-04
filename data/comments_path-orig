@@ -1,7 +1,7 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title.de: Abbiegevorschriften usw.
 #: title.en: Path instructions etc.
-#: version: $Id: comments_path-orig,v 4.101 2008/12/31 17:36:26 eserte Exp $
+#: version: $Id: comments_path-orig,v 4.101 2008/12/31 17:36:26 eserte Exp eserte $
 #:
 # Verwendete Kategorien:
 # CP;  : Kommentar an Punkt B bei Fahrt von A nach C; Bei entweder A oder C kann statt einer Koordinate 
@@ -351,3 +351,9 @@ Unter der Kranbahn - Platz am Kaisersteg: am Platz sofort links halten, um die S
 Rudower Str. - Grünauer Str.: linken Gehweg bis zur Ampel benutzen	CP; 21585,4459 21775,4470 21796,4517
 Rudower Chaussee - Walther-Nernst-Str.: an der Ampel Groß-Berliner Damm die Straßenseite wechseln	PI; 19501,3101 19475,3074 19498,3054
 Rügenwalder Weg - Gülzower Str.: auf dem linken Bürgersteig bis zur Parchimer Str. oder zum Zebrastreifen vor dem U/S-Bhf. Wuhletal vorfahren	CP; 22424,12183 22388,12190 22304,12157
+Allee der Kosmonauten - Heliosstr.: Straßenbahntrasse kurz hinter der Vierlandenstr. überqueren	CP; 20868,14698 20822,14594 20975,14601
+Heliosstr. - Allee der Kosmonauten: Überquerungsmöglichkeit der Straßenbahntrasse links	CP; 20975,14601 20822,14594 20771,14500
+Heliosstr. - Vierlandenstr.: Überquerungsmöglichkeit der Straßenbahntrasse links	CP; 20975,14601 20822,14594 20761,14589
+Vierlandenstr. - Heliosstr.: Überquerungsmöglichkeit der Straßenbahntrasse rechts	CP; 20761,14589 20822,14594 20975,14601
+Allee der Kosmonauten - Vierlandenstr.: Straßenbahntrasse kurz vor der Heliosstr. überqueren	CP; 20771,14500 20822,14594 20761,14589
+Vierlandenstr. - Allee der Kosmonauten: Überquerungsmöglichkeit der Straßenbahntrasse rechts	CP; 20761,14589 20822,14594 20868,14698

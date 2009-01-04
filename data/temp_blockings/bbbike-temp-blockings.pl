@@ -1270,7 +1270,7 @@ EOF
        text  => 'Bahnhofstr. zwischen Goltzstr. und Steinstraße Weihnachstsmarkt, in beiden Richtungen gesperrt. Dauer: 04.12.2004, 06:00 Uhr bis 05.12.2004, 01:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 10453,-2133 10631,-2130 10747,-2129
+userdel	2 10453,-2133 10509,-2131 10631,-2130 10747,-2129
 EOF
      },
      { from  => 1101337200, # 2004-11-25 00:00
@@ -1591,8 +1591,8 @@ EOF
        text  => 'Wassersportallee - Regattastraße, Zwischen Kreuzung Adlergestell und Kreuzung Wassersportallee in beiden Richtungen gesperrt, Baustelle, Dauer: 14.03.2005 03:00 Uhr bis 15.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 22449,1281 22372,1224 22217,1108
-userdel	q4 22449,1281 22663,1441
+userdel	q4 22453,1294 22367,1230 22287,1165 22217,1108
+userdel	q4 22453,1294 22493,1325 22560,1377 22655,1450
 userdel	q4 22217,1108 22162,1067
 EOF
      },
@@ -3458,7 +3458,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004172',
        data  => <<EOF,
-userdel	q4 10310,-2136 10453,-2133 10631,-2130 10747,-2129 10945,-2124
+userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 EOF
      },
      { from  => 1134255600, # 2005-12-11 00:00
@@ -5674,7 +5674,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003411',
        data  => <<EOF,
-userdel	2::inwork 23277,776 23085,898
+userdel	2::inwork 23252,792 23085,898
 EOF
      },
      { from  => 1157493600, # 2006-09-06 00:00
@@ -7951,7 +7951,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005369',
        data  => <<EOF,
-userdel	2::inwork 2951,24389 2849,24530 2690,24751 2542,24945 2438,25082
+userdel	2::inwork 2951,24389 2849,24530 2779,24628 2690,24751 2542,24945 2438,25082
 EOF
      },
      { from  => undef, # 
@@ -9312,7 +9312,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006085',
        data  => <<EOF,
-userdel	1::inwork 23206,206 22547,651 22162,1067
+userdel	1::inwork 23206,206 22547,651 22304,913 22162,1067
 EOF
      },
      { from  => undef, # 
@@ -10375,7 +10375,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007006',
        data  => <<EOF,
-userdel	1::inwork 4898,22459 5006,22507 5148,22568
+userdel	1::inwork 4898,22459 5006,22507 5142,22581
 EOF
      },
      { from  => 1194390000, # 2007-11-07 00:00
@@ -11583,7 +11583,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009042',
        data  => <<EOF,
-userdel	2::inwork 2994,25873 3145,26256
+userdel	2::inwork 2994,25873 3057,26075 3112,26253 3124,26288
 EOF
      },
      { from  => 1213480800, # 2008-06-15 00:00

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: missing_streets.pl,v 1.5 2008/12/26 22:02:41 eserte Exp $
+# $Id: missing_streets.pl,v 1.5 2008/12/26 22:02:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -70,6 +70,7 @@ foreach my $rec (@{ $plz->{Data} }) {
 			);
     next if $str =~ m{^[SU]-Bhf\s}; # later XXX
     next if $str =~ m{^Güterbahnhof\s}; # later XXX
+    next if $str =~ m{\(Gaststätte\)}; # later XXX
     next if $str =~ m{\(Kolonie\)}; # later XXX
     next if $str =~ m{\(Siedlung\)}; # later XXX
     next if $str =~ m{^Kolonie\s}; # later XXX
@@ -119,6 +120,10 @@ foreach my $rec (@{ $plz->{Data} }) {
 		      |Volkspark[ ]Jungfernheide
 		      |Waldbühne
 		      |Löwe-Siedlung
+		      |Jagen[ ]59 # Grünau
+		      |Waldfriedhof[ ]Grünau
+		      |AEG[ ]Siedlung[ ]I,[ ]II # Lübars
+		      |Karpfenteich-Wald
 		      )$}x; # decide later (non-strassen, e.g. brunnels or parks) XXX
     if (exists $seen_street_with_bezirk{$str}->{$bezirk}) {
     } elsif (exists $seen_street{$str}) {
