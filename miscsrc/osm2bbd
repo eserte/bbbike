@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd,v 1.50 2008/09/01 20:37:30 eserte Exp $
+# $Id: osm2bbd,v 1.54 2009/01/05 20:48:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -582,6 +582,9 @@ for my $osm_file (@osm_files) {
 	    } elsif ($highway_cat eq 'steps') {
 		push @or, ["strassen", "NN".$addcat];
 		push @or, ["gesperrt", "0:30", name => "Treppe"]; # XXX really should be only one point; lost time is guessed, maybe determine from length of feature? XXX
+	    } elsif ($highway_cat eq 'cycleroad') {
+		push @or, ["strassen", "N".$addcat];
+		push @or, ["radwege_exact", "RW7;RW7"];
 	    } else {
 		$unhandled{"highway=$highway_cat"}++;
 	    }
@@ -814,6 +817,7 @@ if ($parsefor) {
 		     berlin deutschland orte_city
 		     landstrassen landstrassen2
 		     ubahn ubahnhof sbahn sbahnhof rbahn rbahnhof
+		     gesperrt_u gesperrt_s gesperrt_r
 		     radwege radwege_exact fragezeichen
 		     Berlin.coords.data Potsdam.coords.data
 		    )) {
@@ -1075,7 +1079,7 @@ Berlin, use
     ./miscsrc/downloadosm -o misc/download/osm/berlin 13.010982 52.337651 13.761388 52.675354
 
 With a standard DSL connection, this last about 1:30 hours, totalling
-220 MB of data (as of July 2008).
+220 MB of data (as of July 2008, in Januar 2009, it was nearly 400 MB).
 
 Now convert the OSM data into a BBBike-readable format. This should
 take 5 minutes or so (Athlon64, i386-freebsd) for the above dataset.
@@ -1083,7 +1087,7 @@ Decide on the destination directory. Convention: I use
 C<data_I<region_name>_osm_bbbike>. Note: this directory should not
 exist. For Berlin, this would be:
 
-    ./miscsrc/osm2bbd -v -o data_berlin_osm_bbbike/ misc/download/osm/berlin
+    ./miscsrc/osm2bbd -v -map bbbike -o data_berlin_osm_bbbike/ misc/download/osm/berlin
 
 Finally call bbbike with the C<-datadir> option:
 

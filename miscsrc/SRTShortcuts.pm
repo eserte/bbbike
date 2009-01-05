@@ -932,6 +932,8 @@ sub street_name_experiment_one {
 	}
     }
 
+    return if !$etappe_length;
+
     my $r = -atan2($y2-$y1, $x2-$x1);
     if (1) {
 	$r = 2*pi - $r;
