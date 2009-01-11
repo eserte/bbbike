@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.73 2009/01/10 21:20:58 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.74 2009/01/11 23:34:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.73 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.74 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -892,6 +892,7 @@ sub street_name_experiment_init_strassen {
 
 sub street_name_experiment_one {
     my($name, $c, $use_bold) = @_;
+    return if !defined $name || $name eq ''; # may happen with osm data
 
     my($x1,$y1,$x2,$y2) = (main::transpose(split(/,/, $c->[0])),
 			   main::transpose(split(/,/, $c->[-1]))

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.48 2008/11/16 17:34:35 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.49 2009/01/11 23:34:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003,2006 Slaven Rezic. All rights reserved.
@@ -440,7 +440,7 @@ sub draw_legend {
 			'b' => [qw(SA SB SC S0 SBau)],
 			'l' => [qw(B HH H N NN)],
 			'w' => 'W',
-			'f' => [qw(P Forest Cemetery Green Orchard Sport Industrial Ae Mine)], # Pabove not needed # XXX geht nicht fürs Anklicken
+			'f' => [qw(P Forest Cemetery Green Orchard Sport Industrial Ae ex-Ae Mine)], # Pabove not needed # XXX geht nicht fürs Anklicken
 			'v' => 'F', # XXX ???
 			'qs' => [qw(Q0 Q1 Q2 Q3)],
 			'ql' => [qw(Q0 Q1 Q2 Q3)],

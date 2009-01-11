@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.395 2009/01/10 12:01:09 eserte Exp $
+# $Id: bbbike,v 3.396 2009/01/11 23:35:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -256,7 +256,7 @@ eval 'use BBBikeXS 0.09';
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.395 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.396 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -5469,6 +5469,7 @@ sub define_item_attribs {
 	 'Sport' => '#c8d898', 	# Sportanlagen (was #86d49b)
 	 'Industrial' => '#d7b8c8',	# Industriegebiete
 	 'Ae' => 'white',	# Flughäfen
+	 'ex-Ae' => 'white',	# ehemalige Flughäfen
 	 'Mine' => 'white',	# Tagebau, Bergbau
 	 'F'  => 'grey99',	# sonstige Flächen
 	 'SW' => 'red',		# Sehenswürdigkeit
@@ -5558,6 +5559,7 @@ sub define_item_attribs {
 	 'I'  => "$sans_serif_font_family %d italic",
 	 'P'  => "$sans_serif_font_family %d",
 	 'Ae' => "$sans_serif_font_family %d",
+	 'ex-Ae' => "$sans_serif_font_family %d",
 	);
     for (qw(Forest Forestabove Pabove Cemetery Orchard Green Sport Industrial Mine)) { 
 	$category_font{$_} = $category_font{'P'};
@@ -5865,6 +5867,7 @@ sub define_item_attribs {
 	 'Industrial' => [M"Industriegebiet", M"Industriegebiete", undef],
 	 'Mine' => [M"Tagebau", undef, undef],
 	 'Ae' => [M"Flughafen", M"Flughäfen", undef],
+	 'ex-Ae' => [M"ehemaliger Flughafen", M"ehemalige Flughäfen", undef],
 	 'Q0' => [M"sehr guter Belag", undef, undef,
 		  M"sehr guter Belag (Asphalt)"],
 	 'Q1' => [M"guter Belag", undef, undef,

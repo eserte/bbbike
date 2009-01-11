@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd,v 2.2 2009/01/11 20:23:40 eserte Exp eserte $
+# $Id: osm2bbd,v 2.3 2009/01/11 23:34:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008,2009 Slaven Rezic. All rights reserved.
@@ -138,9 +138,9 @@ my %global_directives;
     );
 
 my $do_amenity = sub {
-    my($tag_name, $amenity, $tagref) = @_;
+    my($is_area, $amenity, $tagref) = @_;
     my @or;
-    my $F = $tag_name eq 'way' ? "F:" : ""; # area or not?
+    my $F = $is_area ? "F:" : "";
     if ($amenity eq 'place_of_worship') {
 	my $religion = $tagref->{'religion'};
 	if (!$religion || $religion eq 'christian') {
@@ -179,9 +179,9 @@ my $do_amenity = sub {
 };
 
 my $do_historic = sub {
-    my($tag_name, $historic) = @_;
+    my($is_area, $historic) = @_;
     my @or;
-    my $F = $tag_name eq 'way' ? "F:" : ""; # area or not?
+    my $F = $is_area ? "F:" : "";
     if ($historic eq 'monument') {
 	push @or, ["sehenswuerdigkeit", $F."SW|IMG:monument"];
     } elsif ($historic =~ m{^(?:castle|memorial|archaeological_site|ruins)$}) {
@@ -193,9 +193,9 @@ my $do_historic = sub {
 };
 
 my $do_tourism = sub {
-    my($tag_name, $tourism) = @_;
+    my($is_area, $tourism) = @_;
     my @or;
-    my $F = $tag_name eq 'way' ? "F:" : ""; # area or not?
+    my $F = $is_area ? "F:" : "";
     if ($tourism eq 'attraction') {
 	push @or, ["sehenswuerdigkeit", $F."SW"];
     } elsif ($tourism eq 'museum') {
@@ -402,10 +402,6 @@ for my $osm_file (@osm_files) {
 	    my $height = exists $tag{'height'} ? $tag{'height'} : $tag{'ele'};
 	    warn "height: $height, $name\n" if $height && $debug >= 2;
 
-	    if (exists $tag{'url'}) {
-		$name .= ($name ? " " : "") . $tag{'url'};
-	    }
-
 	    if (defined $parsefor_key) {
 		my $found_val = $tag{$parsefor_key};
 		if (defined $found_val && $found_val =~ $parsefor_val) {
@@ -477,11 +473,11 @@ for my $osm_file (@osm_files) {
 		    }
 		}
 	    } elsif (exists $tag{'amenity'}) {
-		push @or, $do_amenity->('node', $tag{'amenity'}, \%tag);
+		push @or, $do_amenity->(0, $tag{'amenity'}, \%tag);
 	    } elsif (exists $tag{'historic'}) {
-		push @or, $do_historic->('node', $tag{'historic'}, \%tag);
+		push @or, $do_historic->(0, $tag{'historic'}, \%tag);
 	    } elsif (exists $tag{'tourism'}) {
-		push @or, $do_tourism->('node', $tag{'tourism'}, \%tag);
+		push @or, $do_tourism->(0, $tag{'tourism'}, \%tag);
 	    } elsif (exists $tag{'power'}) {
 		push @or, ["_power", "X"];
 	    }
@@ -504,6 +500,9 @@ for my $osm_file (@osm_files) {
 		# do not store street name for height database
 		my $name_desc = $out_file eq 'hoehe' ? '' : $name;
 
+		if (exists $tag{'url'}) {
+		    push @{$out{$out_file}}, ["#: url: $tag{url}"];
+		}
 		push @{$out{$out_file}}, [$name_desc, [$node2ll{$id}], $cat];
 	    }
 	}
@@ -562,7 +561,6 @@ for my $osm_file (@osm_files) {
 	    my $visible = $way->getAttribute('visible');
 	    $next1->() if $visible && $visible eq 'false';
 
-	    my $is_area;
 	    my @or;
 
 	    my @nodes;
@@ -588,6 +586,10 @@ for my $osm_file (@osm_files) {
 		}
 	    }
 
+	    my $is_area = sub {
+		$nodes[0] == $nodes[-1];
+	    };
+
 	    my $name   = $tag{'name'} || '';
 	    my $height = exists $tag{'height'} ? $tag{'height'} : $tag{'ele'};
 
@@ -598,10 +600,6 @@ for my $osm_file (@osm_files) {
 		} elsif ($ref ne $name) {
 		    $name .= " ($ref)";
 		}
-	    }
-
-	    if (exists $tag{'url'}) { # XXX I have seen the occurrence of k=website (see Kornati, Dalmatia): probably an error?
-		$name .= ($name ? " " : "") . $tag{'url'};
 	    }
 
 	    if ($debug >= 2) {
@@ -623,6 +621,53 @@ for my $osm_file (@osm_files) {
 		    $unhandled{"cycleway-$cycleway"}++;
 		}
 		@or;
+	    };
+
+	    my $do_railway = sub {
+		my $railway_cat = $tag{'railway'};
+
+		my $addcat = "";
+		if (exists $tag{'tunnel'} && $tag{'tunnel'} eq 'yes') {
+		    $addcat .= "::Tu";
+		} elsif (exists $tag{'bridge'} && $tag{'bridge'} eq 'yes') {
+		    $addcat .= "::Br";
+		}
+
+		if      ($railway_cat eq 'subway') {
+		    push @or, ["ubahn", "U".$addcat]; # no zones
+		    resolve_node_now('railway', 'ubahnhof', "U", \@nodes);
+		} elsif ($railway_cat eq 'light_rail') {
+		    push @or, ["sbahn", "S".$addcat]; # no zones
+		    resolve_node_now('railway', 'sbahnhof', "S", \@nodes);
+		} elsif ($railway_cat eq 'rail') {
+		    if ($name =~ m{^S\d+(,\s+S\d+)*$}) {
+			# in Munich, S-Bahn is not marked as "light_rail"
+			push @or, ["sbahn", "S".$addcat];
+			resolve_node_now('railway', 'sbahnhof', "S", \@nodes);
+		    } else {
+			push @or, ["rbahn", "R".$addcat];
+			resolve_node_now('railway', 'rbahnhof', "R", \@nodes);
+		    }
+		} elsif ($railway_cat eq 'preserved') {
+		    # ignore
+		} elsif ($railway_cat eq 'service') {
+		    push @or, ["rbahn", "RG".$addcat];
+		    resolve_node_now('railway', 'rbahnhof', "RG", \@nodes);
+		} elsif ($railway_cat =~ m{^(?:abandoned|disused)$}) {
+		    push @or, ["rbahn", "R0".$addcat];
+		    resolve_node_now('railway', 'rbahnhof', "R0", \@nodes);
+		} elsif ($railway_cat =~ m{^(?:construction)$}) {
+		    push @or, ["rbahn", "RBau".$addcat];
+		    resolve_node_now('railway', 'rbahnhof', "RBau", \@nodes);
+		} elsif ($railway_cat =~ m{^(?:narrow_gauge)$}) { # z.B. Parkeisenbahnen
+		    push @or, ["rbahn", "RP".$addcat];
+		    resolve_node_now('railway', 'rbahnhof', "RP", \@nodes);
+		} elsif ($railway_cat =~ m{\btram\b}) {
+		    push @or, ["comments_tram", "CS".$addcat];
+		} else {
+		    return 0; # unhandled
+		}
+		return 1; # handled
 	    };
 
 	    if (defined $height ) {
@@ -709,7 +754,7 @@ for my $osm_file (@osm_files) {
 			$reversed = 0;
 		    }
 		    if ($oneway =~ m{^(?:yes|true)$}) {
-			if ($cycleway) {
+			if ($highway_cat eq 'cycleway') {
 			    # usually this generates to much clutter in
 			    # the map ("straßenbegleitende Radwege"), so
 			    # ignore map display
@@ -729,6 +774,10 @@ for my $osm_file (@osm_files) {
 		}
 		if ($lcn_ref) {
 		    push @or, ["comments_route", "radroute", name => $lcn_ref];
+		}
+
+		if (exists $tag{'railway'}) {
+		    $do_railway->(); # typically tram on street
 		}
 
 	    } elsif (exists $tag{'waterway'}) {
@@ -751,47 +800,8 @@ for my $osm_file (@osm_files) {
 		    $unhandled{"waterway=$waterway_cat"}++;
 		}
 	    } elsif (exists $tag{'railway'}) {
-		my $railway_cat = $tag{'railway'};
-
-		my $addcat = "";
-		if (exists $tag{'tunnel'} && $tag{'tunnel'} eq 'yes') {
-		    $addcat .= "::Tu";
-		} elsif (exists $tag{'bridge'} && $tag{'bridge'} eq 'yes') {
-		    $addcat .= "::Br";
-		}
-
-		if      ($railway_cat eq 'subway') {
-		    push @or, ["ubahn", "U".$addcat]; # no zones
-		    resolve_node_now('railway', 'ubahnhof', "U", \@nodes);
-		} elsif ($railway_cat eq 'light_rail') {
-		    push @or, ["sbahn", "S".$addcat]; # no zones
-		    resolve_node_now('railway', 'sbahnhof', "S", \@nodes);
-		} elsif ($railway_cat eq 'rail') {
-		    if ($name =~ m{^S\d+(,\s+S\d+)*$}) {
-			# in Munich, S-Bahn is not marked as "light_rail"
-			push @or, ["sbahn", "S".$addcat];
-			resolve_node_now('railway', 'sbahnhof', "S", \@nodes);
-		    } else {
-			push @or, ["rbahn", "R".$addcat];
-			resolve_node_now('railway', 'rbahnhof', "R", \@nodes);
-		    }
-		} elsif ($railway_cat eq 'preserved') {
-		    # ignore
-		} elsif ($railway_cat eq 'service') {
-		    push @or, ["rbahn", "RG".$addcat];
-		    resolve_node_now('railway', 'rbahnhof', "RG", \@nodes);
-		} elsif ($railway_cat =~ m{^(?:abandoned|disused)$}) {
-		    push @or, ["rbahn", "R0".$addcat];
-		    resolve_node_now('railway', 'rbahnhof', "R0", \@nodes);
-		} elsif ($railway_cat =~ m{^(?:construction)$}) {
-		    push @or, ["rbahn", "RBau".$addcat];
-		    resolve_node_now('railway', 'rbahnhof', "RBau", \@nodes);
-		} elsif ($railway_cat =~ m{^(?:narrow_gauge)$}) { # z.B. Parkeisenbahnen
-		    push @or, ["rbahn", "RP".$addcat];
-		    resolve_node_now('railway', 'rbahnhof', "RP", \@nodes);
-		} elsif ($railway_cat =~ m{\btram\b}) {
-		    push @or, ["comments_tram", "CS".$addcat];
-		} else {
+		if (!$do_railway->()) {
+		    my $railway_cat = $tag{'railway'};
 		    $unhandled{"railway=$railway_cat"}++;
 		}
 	    } elsif (exists $tag{'natural'}) {
@@ -902,11 +912,11 @@ for my $osm_file (@osm_files) {
 		    $unhandled{"route=$route"}++;
 		}
 	    } elsif (exists $tag{'amenity'}) {
-		push @or, $do_amenity->('way', $tag{'amenity'}, \%tag);
+		push @or, $do_amenity->($is_area->(), $tag{'amenity'}, \%tag);
 	    } elsif (exists $tag{'historic'}) {
-		push @or, $do_historic->('way', $tag{'historic'}, \%tag);
+		push @or, $do_historic->($is_area->(), $tag{'historic'}, \%tag);
 	    } elsif (exists $tag{'tourism'}) {
-		push @or, $do_tourism->('way', $tag{'tourism'}, \%tag);
+		push @or, $do_tourism->($is_area->(), $tag{'tourism'}, \%tag);
 	    } elsif (exists $tag{'building'}) {
 		my $building = $tag{'building'};
 		if ($building =~ m{^(?:yes|true)$}) {
@@ -939,6 +949,9 @@ for my $osm_file (@osm_files) {
 		    $name = $args{name};
 		}
 
+		if (exists $tag{'url'}) {
+		    push @{$out{$out_file}}, ["#: url: $tag{url}"];
+		}
 		push @{$out{$out_file}}, [$name, [map { $node2ll{$_} } @nodes], $cat];
 	    }
 	}
@@ -1114,6 +1127,11 @@ EOF
 EOF
     for my $rec (@$data) {
 	my($name, $coords, $cat) = @$rec;
+	if (!defined $coords) {
+	    # a directive
+	    print $ofh $name, "\n";
+	    next;
+	}
 	my $namecat = "$name\t$cat";
 	my $coord_string = join(" ", @$coords);
 	if ($splitlonglines && length($namecat) + length($coord_string) + 2 >= MAXLINELENGTH) {
@@ -1388,6 +1406,23 @@ replaced by F<radwege_exact>.
 
 =item * BBBike should be fixed to handle normal WGS84 coordinates for
 everything.
+
+=item * Tunnel mound optimization needed! Problem visible in
+Nord-Süd-Tunnel.
+
+=item * It seems that "holes" in buildings are specified by just a
+closed <way> without any name and other tag. Implementation
+suggestion: put all the closed ways without any other tags into a
+special bucket and output at the end of the corresponding layer.
+Question: how to get the corresponding layer? Check for inclusion?
+
+=item * Look at the Reichstag. Get rid of the multiple stars (is this
+a bbbike or osm2bbd task?)
+
+=item * Currently the url tag will be output as a url directive into
+the bbd file. Maybe use a info file instead, because currently the
+info support in bbbike is better than the directive support? Or make
+the directive support in bbbike better?
 
 =back
 

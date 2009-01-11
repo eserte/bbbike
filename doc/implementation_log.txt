@@ -1,3 +1,19 @@
+2009-01-11  Slaven Rezic  <slaven@rezic.de>
+
+	* osm2bbd: osm2bbd verwendet jetzt XML::LibXML::Reader statt der
+	DOM-Funktionalität von XML::LibXML. Der Grund war, dass das Parsen der
+	vorgefertigten Länder-OSM-Dateien (Brandenburg und Berlin) zu viel
+	Speicher verbraucht hatte, weit über 2GB. Die Implementation mit
+	XML::LibXML::Reader ist weit schwieriger und fehleranfälliger. Das
+	Ergebnis scheint aber jetzt in Ordnung zu sein (der alte
+	XML::LibXML-Parser ist weiterhin verfügbar und ein diff zwischen beiden
+	Ergebnissen zeigt keinen Unterschied), und der neue Parser ist sogar
+	etwas schneller.
+
+	Wo ich gerade bei den OpenStreetMap-Daten war, habe ich noch einige
+	Fehler in den osm-Daten per Merkaartor behoben. Aber wie spezifiziert
+	man dort eine für Radfahrer offene Einbahnstraße?
+
 2008-11-16  Slaven Rezic  <slaven@rezic.de>
 
 	* U-Bahn-Tunnelstrecken: Heute habe ich entdeckt, dass die U5 einen

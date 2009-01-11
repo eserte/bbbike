@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SVG.pm,v 1.24 2008/02/09 17:44:37 eserte Exp $
+# $Id: SVG.pm,v 1.25 2009/01/11 23:35:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -28,7 +28,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.25 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -119,7 +119,7 @@ sub set_category_styles {
 		    U UA UB    U0 UBau
 		    W W0 W1 W2
 		    F:W F:W1 F:W2
-		    F:Ae F:P F:Pabove F:Forest F:Forestabove
+		    F:Ae F:ex-Ae F:P F:Pabove F:Forest F:Forestabove
 		    F:Cemetery F:Green F:Orchard F:Sport F:Industrial F:Mine
 		    Z Route
 		   )) {
