@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.69 2008/12/31 17:14:07 eserte Exp eserte $
+# $Id: SRTShortcuts.pm,v 1.73 2009/01/10 21:20:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -19,9 +19,14 @@ package SRTShortcuts;
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
+BEGIN {
+    *M    = \&BBBikePlugin::M;
+    *Mfmt = \&BBBikePlugin::Mfmt;
+}
+
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.69 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.73 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -367,8 +372,23 @@ sub tracks_in_region {
 		      main::status_message(join("\n", @errors));
 		  }
 	      });
-    $t->Button(Name => "close",
-	       -command => sub { $t->destroy })->pack;
+    {
+	my $f = $t->Frame->pack(qw(-fill x));
+	$f->Button(Name => "close",
+		   -command => sub { $t->destroy })->pack(qw(-side left));
+	$f->Button(-text => M("Liste speichern"),
+		   -command => sub {
+		       my $outfile = $t->getSaveFile;
+		       if (defined $outfile) {
+			   open my $ofh, ">", $outfile
+			       or main::status_message(Mfmt("Kann auf %s nicht schreiben: %s", $outfile, $!), "die");
+			   print $ofh join("\n", @tracks), "\n"
+			       or die $!;
+		       }
+		       main::status_message(Mfmt("Die Datei %s wurde geschrieben", $outfile), "infodlg");
+		   },
+		  )->pack(qw(-side left));
+    }
 }
 
 sub make_gps_target {
@@ -963,6 +983,7 @@ sub street_name_experiment_one {
 			 -text => $name,
 			 -anchor => "sw",
 			 -font => $using_font . ":$matrix",
+			 -state => "disabled",
 			 -tags => [$tag, $tag_label],
 			);
     if (STREET_NAME_EXPERIMENT_DEBUGGING) {
@@ -975,7 +996,7 @@ sub street_name_experiment_one {
 sub gps_data_viewer {
     require BBBikeEdit;
     require BBBikeUtil;
-    require GPS::GpsmanData;
+    require GPS::GpsmanData::Any;
     require GPS::GpsmanData::Tk;
     require Karte::Polar;
     require Tk::PathEntry;
@@ -993,8 +1014,7 @@ sub gps_data_viewer {
 	my $show_file = sub {
 	    if (defined $gps_data_viewer_file) {
 		#XXX do it as late as possible, before the first edit operation: BBBikeEdit::ask_for_co($main::top, $gps_data_viewer_file);
-		$gps = GPS::GpsmanMultiData->new(-editable => 1);
-		$gps->load($gps_data_viewer_file);
+		$gps = GPS::GpsmanData::Any->load($gps_data_viewer_file, -editable => 1);
 		$gps_view->associate_object($gps);
 	    }
 	};
@@ -1041,6 +1061,7 @@ sub gps_data_viewer {
 				       my($x,$y) = $Karte::Polar::obj->map2standard($wpt->Longitude, $wpt->Latitude);
 				       main::mark_point(-coords => [[[ main::transpose($x,$y) ]]],
 							-clever_center => 1,
+							-inactive => 1,
 						       );
 				   }
 			       },

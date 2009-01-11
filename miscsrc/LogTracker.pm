@@ -4,7 +4,7 @@
 # -*- perl -*-
 
 #
-# $Id: LogTracker.pm,v 1.22 2006/11/11 14:34:49 eserte Exp $
+# $Id: LogTracker.pm,v 1.23 2009/01/10 10:23:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -21,9 +21,10 @@ package LogTracker;
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
-# XXX use Msg.pm some day
-sub M ($) { $_[0] } # XXX
-sub Mfmt { sprintf M(shift), @_ } # XXX
+BEGIN {
+    *M    = \&BBBikePlugin::M;
+    *Mfmt = \&BBBikePlugin::Mfmt;
+}
 
 use strict;
 use vars qw($VERSION $lastcoords
@@ -33,7 +34,7 @@ use vars qw($VERSION $lastcoords
             $remoteuser $remotehost $logfile $ssh_cmd $tracking $tail_pid $bbbike_cgi
 	    $last_parselog_call $session_dir_prefix
 	   );
-$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
 
 # XXX replace all %layer, %show etc. with @layer, @show...
 use constant ROUTES => 0;

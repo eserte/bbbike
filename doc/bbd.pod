@@ -309,6 +309,16 @@ Define a stipple (which is usually an xbm image) for area items.
 XXX: The category-less form is NYI!
 XXX: Currently C<category_stipple.category> is used instead C<item_stipple.category>.
 
+=item C<layer_stack: I<how>:I<tag>>
+
+Define how the data should appear in the layer stacking order. I<how>
+is either C<above> or C<below> and I<tag> is another layering tag used
+in bbbike (some examples are C<s> for the street layer or C<w> for the
+water layer --- consult the bbbike source, variable
+C<@normal_stack_order> for more tags).
+
+XXX This is experimental and likely to change!
+
 =back
 
 =head3 Line/block directives

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.390 2008/12/31 16:42:31 eserte Exp $
+# $Id: bbbike,v 3.395 2009/01/10 12:01:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -75,7 +75,22 @@ BEGIN {
 
     local $^W;
     $^W = 0 if $^O eq 'MSWin32'; # to avoid "no such signal" warnings
-    eval 'use sigtrap qw(stack-trace USR1)'; warn $@ if $@;
+
+    {
+	use vars qw(@SIGTRAP_SIGNALS);
+	@SIGTRAP_SIGNALS = qw(USR1 INFO);
+	# Activate with CTRL-T on BSD systems. Possibly dangerous if forked
+	# processes are active, but works fine with -server option.
+	my $siginfo_handler = sub {
+	    # Cannot use warn or STDERR because of Tk::Stderr interference
+	    require Carp;
+	    local $| = 1;
+	    print Carp::longmess("Pid $$ currently"), "\n";
+	};
+	$SIG{$_} = $siginfo_handler for @SIGTRAP_SIGNALS;
+    }
+    ## Does not play well with Tk::Stderr, so do not use it anymore
+    #eval 'use sigtrap ("stack-trace", @SIGTRAP_SIGNALS)'; warn $@ if $@;
 
     $booting = 1;
 }
@@ -241,7 +256,7 @@ eval 'use BBBikeXS 0.09';
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.390 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.395 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -5967,7 +5982,7 @@ sub define_item_attribs {
 	 'str_w' => ['w-out', 'w', 'i-out', 'i', 'w-label-bg', 'w-label', 'i-label-bg', 'i-label'],
 	 'str_f' => ['f', 'f-label-bg', 'f-label', 'f-Pabove'],
 	 'str_g' => ['z', 'g', 'gBO', 'gP', 'gD', 'gBO-label-bg', 'gBO-label', 'GU-img'],
-	 'p_kn'  => ['kn', 'ki', 'rest'],
+	 'p_kn'  => ['kn', 'kn-bg', 'kn-fg', 'ki', 'ki-bg', 'ki-fg', 'rest', 'rest-bg', 'rest-fg'],
 	 'map'   => ['map'],
 	 'route' => ['route'],
 	 'v'     => ['v', 'v-fg'],
@@ -9850,7 +9865,7 @@ if ($str->pos != scalar @{$str->{Data}}) { status_message("warning: " . $str->po
 	}
 
     };
-    warn __LINE__ . ": $@" if ($@);
+    warn "eval called before line " . __LINE__ . ": $@" if ($@);
     $progress->Finish;
     DecBusy($top);
 }
@@ -11458,6 +11473,15 @@ sub choose_streets {
 # Canvas-Koordinaten erwartet (Ergebnis von transpose), entweder als
 # -x/-y, als -point oder als -coords-Argument (komplizierter, siehe
 # Source)
+# Weitere Optionen:
+#   -dont_mark: nur zentrieren, aber nicht markieren
+#   -dont_center: nur markieren, aber nicht zentrieren
+#   -clever_center: möglichst so zentrieren, dass die Markierung nicht durch
+#                   andere Fenster verdeckt wird
+#   -dont_delete_old: alte Markierungen beibehalten
+#   -endlessmark: ?
+#   -addtag: weitere Canvas-Tags hinzufügen
+#   -inactive: Markierung reagiert nicht auf Events (insbesondere Tooltips)
 ### AutoLoad Sub
 sub mark_point {
     my(%args) = @_;
@@ -11491,7 +11515,7 @@ sub mark_point {
 	    }
 	}
 	my @common_args = (-capstyle => $capstyle_round,
-			   -state => "disabled",
+			   ($args{-inactive} ? (-state => "disabled") : ()),
 			   -tags => \@tags,
 			  );
 	$c->createLine($tx, $ty, $tx, $ty,
@@ -11593,7 +11617,7 @@ sub mark_street {
 	unless ($args{'-dont_mark'}) {
 	    my $label = shift @labels;
 	    my @common_args = (-tags => ['show', (defined $label ? $label : ())],
-			       -state => "disabled",
+			       ($args{-inactive} ? (-state => "disabled") : ()),
 			      );
 	    if ($args{'-polygon'}) {
 		if (@res_coords == 2) {
@@ -18744,10 +18768,10 @@ sub add_to_stack {
     my $i = 0;
     for (@normal_stack_order) {
 	if ($_ eq $other_abk) {
-	    if ($how eq 'after') {
+	    if ($how =~ m{^(after|above)$}) {
 		splice @normal_stack_order, $i+1, 0, $abk, "$abk-fg";
 		return;
-	    } elsif ($how eq 'before') {
+	    } elsif ($how =~ m{^(before|below)$}) {
 		splice @normal_stack_order, $i, 0, $abk, "$abk-fg";
 		return;
 	    } else {
@@ -18762,7 +18786,8 @@ sub add_to_stack {
 ### AutoLoad Sub
 sub remove_from_stack {
     my($abk) = @_;
-    @normal_stack_order = grep { $_ ne $abk } @normal_stack_order;
+    my $abk_fg = "$abk-fg";
+    @normal_stack_order = grep { $_ ne $abk && $_ ne $abk_fg } @normal_stack_order;
 }
 
 sub restack_delayed {
@@ -20387,6 +20412,13 @@ sub handle_global_directives {
 	} elsif ($accept_global_catless_directives_with_layer_prefix{$directive}) {
 	    no strict 'refs';
 	    ${"layer_".$directive}{$abk} = $get_val->($directive, $vals);
+	} elsif ($directive eq 'layer_stack') {
+	    my($how, $other_abk) = split /:/, $vals->[0];
+	    if (!defined $other_abk) {
+		status_message("The layer_stack directive needs how:tag as an argument", "die");
+	    }
+	    remove_from_stack($abk);
+	    add_to_stack($abk, $how, $other_abk);
 	} else {
 	    my($key, $cat) = $directive =~ /^([^\.]+)\.([^\.]+)/;
 	    if (defined $key) {

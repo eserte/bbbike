@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman2bbd.pl,v 2.15 2008/08/30 06:18:17 eserte Exp $
+# $Id: gpsman2bbd.pl,v 2.16 2009/01/10 21:20:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -32,6 +32,7 @@ EOF
 }
 
 use GPS::GpsmanData;
+use GPS::GpsmanData::Any;
 use Strassen::Core;
 use Getopt::Long;
 use Karte;
@@ -202,8 +203,7 @@ EOF
 	my $base = basename $f;
 	my $gps_multi;
 	eval {
-	    $gps_multi = GPS::GpsmanMultiData->new;
-	    $gps_multi->load($f);
+	    $gps_multi = GPS::GpsmanData::Any->load($f);
 	};
 	if ($@) {
 	    if ($fail) {

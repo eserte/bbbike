@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Any.pm,v 1.5 2008/08/26 22:21:58 eserte Exp $
+# $Id: Any.pm,v 1.6 2009/01/10 21:20:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GPS::GpsmanData::Any;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 
 use GPS::GpsmanData;
 
@@ -81,9 +81,12 @@ sub load_gpx {
 
     my $gpsman_time_to_time = sub {
 	my $time = shift;
-	my($Y,$M,$D,$h,$m,$s) = $time =~ m{^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})Z$};
+	my($Y,$M,$D,$h,$m,$s,$ms,$tz) = $time =~ m{^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})(\.\d+)?Z?$};
 	if (!defined $Y) {
 	    die "Cannot parse time <$time>";
+	}
+	if (defined $ms) {
+	    $s += "0".$ms;
 	}
 	# XXX timezone?!
 	my $gpsman_time = sprintf "%02d-%s-%04d %02d:%02d:%02d", $D, $number_to_monthabbrev{$M+0}, $Y, $h, $m, $s;
@@ -186,7 +189,11 @@ sub load_gpx {
 
 sub load_gpsman {
     my($class, $file, %args) = @_;
-    my $gps = GPS::GpsmanMultiData->new;
+    my %constructor_args;
+    for (qw(-editable)) {
+	$constructor_args{$_} = delete $args{$_};
+    }
+    my $gps = GPS::GpsmanMultiData->new(%constructor_args);
     $gps->load($file);
     $gps;
 }

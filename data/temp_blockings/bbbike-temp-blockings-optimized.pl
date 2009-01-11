@@ -102,6 +102,16 @@ push @temp_blocking,
        undef,
        undef,
        undef,
+       {
+         'source_id' => 'IM_009496',
+         'until' => 1243807199,
+         'text' => 'Glinkastr. (Mitte) in beiden Richtungen zwischen Jägerstr. und Taubenstr. Baustelle, Straße vollständig gesperrt (bis Ende 05.2009)',
+         'from' => 1231707233,
+         'id' => 1171,
+         'data' => 'userdel	2::inwork 9208,11872 9201,11968
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -124,8 +134,16 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'source_id' => 'IM_006819',
+         'until' => 1242424799,
+         'text' => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Mohrenstr. und Leipziger Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 05.2009)',
+         'from' => 1231707121,
+         'id' => 1194,
+         'data' => 'userdel	1::inwork 9220,11781 9234,11683 9268,11590
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -554,7 +572,16 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'IM_010519',
+         'until' => 1243807199,
+         'text' => 'Gubitzstr. (Prenzlauer Berg) in beiden Richtungen zwischen Küselstr. und Scheritzstr. Bauarbeiten, Straße vollständig gesperrt (bis Ende 05.2009)',
+         'from' => 1231707258,
+         'id' => 1524,
+         'data' => 'userdel	2::inwork 12463,15774 12384,15618 12299,15463
+',
+         'type' => 'gesperrt'
+       },
        {
          'source_id' => 'IM_010401',
          'until' => 1233442799,
@@ -627,6 +654,43 @@ push @temp_blocking,
          'from' => 1228340492,
          'id' => 1547,
          'data' => 'userdel	1::inwork 16032,10842 15670,10800 15396,10767 15266,10791
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       {
+         'source_id' => 'IM_011081',
+         'until' => 1262300400,
+         'text' => 'Blankenburger Str. (Pankow) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 2010)',
+         'from' => 1231707292,
+         'id' => 1557,
+         'data' => 'userdel	1::inwork 10742,19632 10393,19587 10249,19541
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1233442800,
+         'text' => 'L 401 Karl-Marx-Str., Friedrich-Engels-Str. OD Wildau, zw. Freiheitsstr. und Westkorso grundhafter Straßenneubau Wintersicherung 19.12.2008-31.01.2009 ',
+         'from' => 1229554800,
+         'id' => 1558,
+         'data' => 'userdel	q4::inwork 26609,-7136 26700,-7334 26790,-7918 26749,-8475
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1232406000,
+         'text' => 'K 7359 Crussow - B 2 zw. Kreisverkehr B 2 Ri. Schwedt und OE Neuhof Rohre für Erdgastrasse Vollsperrung 07.01.2009-19.01.2009 ',
+         'from' => 1231196400,
+         'id' => 1559,
+         'data' => 'userdel	2::inwork 55431,69759 55318,70278
 ',
          'type' => 'gesperrt'
        }

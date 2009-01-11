@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeServer.pm,v 1.18 2007/09/01 10:41:31 eserte Exp $
+# $Id: BBBikeServer.pm,v 1.19 2009/01/09 22:58:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001,2007 Slaven Rezic. All rights reserved.
@@ -152,6 +152,7 @@ sub create_socket_server {
 	die "Can't fork: $!" if !defined $pid;
 	close CHILD_RDR;
 	close CHILD_WTR;
+	$SIG{$_} = 'IGNORE' for @main::SIGTRAP_SIGNALS; @main::SIGTRAP_SIGNALS=@main::SIGTRAP_SIGNALS if 0;
 	my($socket_name, $h);
 	if ($use_inet) {
 	    $h = new IO::Socket::INET
