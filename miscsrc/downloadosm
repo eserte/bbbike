@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: downloadosm,v 1.17 2009/01/02 22:45:10 eserte Exp $
+# $Id: downloadosm,v 1.17 2009/01/02 22:45:10 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -23,11 +23,14 @@ use strict;
 use FindBin;
 use lib "$FindBin::RealBin/..";
 
+use File::Basename qw(dirname);
 use File::Glob qw(bsd_glob);
 use Getopt::Long;
 use LWP::UserAgent;
 
 use BBBikeUtil qw(is_in_path);
+
+sub save_pwd (&);
 
 my $ua = LWP::UserAgent->new;
 
@@ -102,7 +105,12 @@ if (@reload) {
 	    die "The file name <$reload> does not look correct, i.e. created by this tool.\n";
 	}
 	my($x,$y,$xend,$yend) = ($1,$2,$3,$4);
-	download_osm_tile($x,$y,$xend,$yend, 1);
+	save_pwd {
+	    my $dir = dirname($reload);
+	    chdir $dir
+		or die "Can't chdir to $dir: $!";
+	    download_osm_tile($x,$y,$xend,$yend, 1);
+	};
     }
 } else {
     my @bbox = @ARGV;
@@ -170,5 +178,31 @@ sub download_osm_tile {
 	}
     }
 }
+
+# REPO BEGIN
+# REPO NAME save_pwd /home/e/eserte/work/srezic-repository 
+# REPO MD5 0f7791cf8e3b62744d7d5cfbd9ddcb07
+
+=head2 save_pwd(sub { ... })
+
+=for category File
+
+Save the current directory and assure that outside the block the old
+directory will still be valid.
+
+=cut
+
+sub save_pwd (&) {
+    my $code = shift;
+    require Cwd;
+    my $pwd = Cwd::cwd();
+    eval {
+	$code->();
+    };
+    my $err = $@;
+    chdir $pwd or die "Can't chdir back to $pwd: $!";
+    die $err if $err;
+}
+# REPO END
 
 __END__

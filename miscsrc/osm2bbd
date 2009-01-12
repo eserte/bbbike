@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd,v 2.3 2009/01/11 23:34:12 eserte Exp $
+# $Id: osm2bbd,v 2.4 2009/01/12 19:49:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008,2009 Slaven Rezic. All rights reserved.
@@ -754,13 +754,17 @@ for my $osm_file (@osm_files) {
 			$reversed = 0;
 		    }
 		    if ($oneway =~ m{^(?:yes|true)$}) {
-			if ($highway_cat eq 'cycleway') {
-			    # usually this generates to much clutter in
-			    # the map ("straßenbegleitende Radwege"), so
-			    # ignore map display
-			    push @or, ["gesperrt", "1::igndisp", reversed => $reversed];
+			if (exists $tag{'bicycle'} && $tag{'bicycle'} eq 'opposite') { # seen in Würzburg, Äußere Pleich, but no documentation/discussion for it
+			    push @or, ['gesperrt_cat', '1', reversed => $reversed];
 			} else {
-			    push @or, ["gesperrt", "1", reversed => $reversed];
+			    if ($highway_cat eq 'cycleway') {
+				# usually this generates to much clutter in
+				# the map ("straßenbegleitende Radwege"), so
+				# ignore map display
+				push @or, ["gesperrt", "1::igndisp", reversed => $reversed];
+			    } else {
+				push @or, ["gesperrt", "1", reversed => $reversed];
+			    }
 			}
 		    } else {
 			$unhandled{"oneway=$oneway"}++;
@@ -983,7 +987,8 @@ if ($parsefor) {
     }
 
     # required files (dummy files, bbbike or bbbike.cgi like to have these):
-    for my $file (qw(gesperrt wasserumland wasserumland2 hoehe
+    for my $file (qw(gesperrt gesperrt_car
+		     wasserumland wasserumland2 hoehe
 		     orte orte2 qualitaet_l handicap_l
 		     berlin deutschland orte_city
 		     landstrassen landstrassen2
@@ -1415,6 +1420,8 @@ closed <way> without any name and other tag. Implementation
 suggestion: put all the closed ways without any other tags into a
 special bucket and output at the end of the corresponding layer.
 Question: how to get the corresponding layer? Check for inclusion?
+
+Update: there is usually also a relation with outer and inner roles.
 
 =item * Look at the Reichstag. Get rid of the multiple stars (is this
 a bbbike or osm2bbd task?)
