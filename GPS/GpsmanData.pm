@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.64 2008/12/31 13:37:16 eserte Exp $
+# $Id: GpsmanData.pm,v 1.66 2009/01/13 22:06:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005,2007 Slaven Rezic. All rights reserved.
@@ -45,7 +45,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.64 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.66 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -820,7 +820,7 @@ sub body_as_string {
 		       (defined $wpt->DateTime ? $wpt->DateTime :
 			defined $wpt->Comment ? $wpt->Comment : ""),
 		       $wpt->DMS_output($self),
-		       (defined $wpt->Altitude ? $wpt->Altitude : ""))
+		       (defined $wpt->Altitude ? ($wpt->Accuracy ? '~'x$wpt->Accuracy : '') . $wpt->Altitude : ""))
 		. "\n";
 	}
     } elsif ($self->Type == TYPE_ROUTE) {
@@ -1081,8 +1081,19 @@ sub has_track {
     0;
 }
 
+sub push_chunk {
+    my($self, $chunk) = @_;
+    if (!$self->Chunks) {
+	$self->Chunks([]);
+    }
+    push @{ $self->Chunks }, $chunk;
+}
+
 sub as_string {
     my $self = shift;
+    if (!@{ $self->Chunks || [] }) {
+	die "Cannot write as string, no chunks in object";
+    }
     my $s = $self->Chunks->[0]->header_as_string;
     for my $chunk (@{ $self->Chunks }) {
 	$s .= $chunk->body_as_string;

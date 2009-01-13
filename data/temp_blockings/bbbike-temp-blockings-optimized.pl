@@ -624,15 +624,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1231714800,
-         'text' => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 10.01.2009-11.01.2009 ',
-         'from' => 1231455600,
-         'id' => 1541,
-         'data' => 'userdel	2::inwork 41424,91331 41387,91306 41361,91289
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

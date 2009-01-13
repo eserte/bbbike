@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Any.pm,v 1.6 2009/01/10 21:20:00 eserte Exp $
+# $Id: Any.pm,v 1.8 2009/01/13 22:11:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GPS::GpsmanData::Any;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 use GPS::GpsmanData;
 
@@ -27,6 +27,29 @@ sub load {
 	$class->load_mps($file, %args);
     } elsif ($file =~ /\.gpx$/i) {
 	$class->load_gpx($file, %args);
+    } elsif ($file =~ /\.gpx\.gz$/i) {
+	require File::Temp;
+	require IO::Zlib;
+	my $fh = IO::Zlib->new;
+	$fh->open($file, "rb")
+	    or die "Can't open gzipped file '$file' : $!";
+	# Unfortunately XML::Twig cannot handle IO::Zlib globs, so
+	# create a temporary
+	my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => "_tmp.gpx");
+	{
+	    local $/ = 8192;
+	    while(<$fh>) {
+		print $tmpfh $_;
+	    }
+	    close $tmpfh
+		or die "While writing to temporary file '$tmpfile': $!";
+	}
+	$class->load_gpx($tmpfile, %args);
+    } elsif ($file =~ m{\.xml(?:\.gz)?$} && eval {
+	require GPS::GpsmanData::SportsTracker;
+	GPS::GpsmanData::SportsTracker->match($file);
+    }) {
+	GPS::GpsmanData::SportsTracker->load($file, %args);
     } else {
 	$class->load_gpsman($file, %args);
     }
