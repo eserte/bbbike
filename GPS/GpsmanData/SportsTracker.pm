@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SportsTracker.pm,v 1.2 2009/01/13 22:57:03 eserte Exp $
+# $Id: SportsTracker.pm,v 1.6 2009/01/16 21:55:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ package GPS::GpsmanData::SportsTracker;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 
 use XML::LibXML::Reader;
 
@@ -91,13 +91,16 @@ sub load {
 	my $activity_oid  = $activity->findvalue("./oid");
 	my $srt_vehicle = ($activity_oid == 0 ? 'pedes' : # 'Walking'
 			   $activity_oid == 1 ? 'pedes' : # 'Running'
-			   $activity_oid == 2 ? 'bike' :  # 'Cycling'
+			   $activity_oid == 2 ? 'bike'  : # 'Cycling'
+			   $activity_oid == 3 ? 'ski'   : # probably 'Skiing', untested
+			   $activity_oid == 4 ? 'oepnv' : # 'Other 1', my convention
+			   $activity_oid == 5 ? 'car'   : # 'Other 2', my convention
 			   undef);
 
 	$reader->nextElement("events") == 1
 	    or die "Cannot find events element";
 	my $events = $reader->copyCurrentNode(1);
-	for my $event_lost_time ($events->findnodes('./event[/type/@value="8"]/realtime')) {
+	for my $event_lost_time ($events->findnodes('./event[type/@value="8" or type/@value="2"]/realtime')) { # check for "GPS fix lost" and "Stop"
 	    push @gps_fix_lost, $event_lost_time->textContent;
 	}
 
@@ -107,8 +110,13 @@ sub load {
 	while ($reader->nextElement("eventlocation") == 1) {
 	    my $eventlocation = $reader->copyCurrentNode(1);
 	    my $realtime = $eventlocation->findvalue("./realtime");
-	    if (@gps_fix_lost && $realtime > $gps_fix_lost[0]) {
-		shift @gps_fix_lost;
+	    if (@gps_fix_lost && $realtime gt $gps_fix_lost[0]) {
+		# In the case there are more "gps lost" events? (but I
+		# don't think that the SportsTracker application
+		# generates such a pattern)
+		while (@gps_fix_lost && $realtime gt $gps_fix_lost[0]) {
+		    shift @gps_fix_lost;
+		}
 		if ($trkseg) {
 		    $gpsman->push_chunk($trkseg);
 		    undef $trkseg;

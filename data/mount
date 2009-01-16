@@ -19,6 +19,7 @@ Steigung 7.9% (Schmidt-Ott-Str.)	St; 4404,5613 4309,5675
 Steigung 7.8% (Teufelsseechaussee [Auffahrt zum ehem. Horchposten])	St; -865,9920 -850,9940
 Steigung 7.8% (Am Roten Stein)	St; -6990,4531 -7257,4581
 Steigung 7.8% (Teufelsseechaussee [Auffahrt zum ehem. Horchposten])	St; -935,9846 -865,9920
+Steigung 7.5% (Methfesselstr.)	St; 9163,9209 9144,9155
 Steigung 7.0% (Angerburger Allee)	St; -2130,11761 -2109,11598
 Steigung 6.8% (Ruhwaldweg)	St; 721,13296 667,13236
 Steigung 6.8% (Ruhwaldweg)	St; 758,13334 721,13296
@@ -33,7 +34,6 @@ Steigung 6.3% ((Verlängerte Waldallee))	St; -9031,5984 -8929,5984
 Steigung 6.2% ((Methfesselstr. - Denkmal im Viktoriapark))	St; 8962,9048 8943,9098
 Steigung 6.2% ((Methfesselstr. - Denkmal im Viktoriapark))	St; 9106,9038 8962,9048
 Steigung 6.1% (Grottewitzstr.)	St; 22145,208 21933,152
-Steigung 6.0% (Methfesselstr.)	St; 9163,9209 9141,9142
 Steigung 5.9% (Moorlakeweg)	St; -9353,1464 -9284,1468
 Steigung 5.9% (Moorlakeweg)	St; -9284,1468 -9224,1417
 Steigung 5.9% (Moorlakeweg)	St; -9606,1389 -9440,1413
@@ -58,7 +58,6 @@ Steigung 5.3% (Teufelsseechaussee [Auffahrt zum ehem. Horchposten])	St; -923,975
 Steigung 5.2% (Am Stichkanal)	St; 2733,871 2659,962
 Steigung 5.2% (Sakrower Kirchweg)	St; -7636,4346 -7419,4497
 Steigung 5.1% (Koblanckstr.)	St; -5883,1948 -6021,2068
-Steigung 5.1% (Methfesselstr.)	St; 9141,9142 9106,9038
 Steigung 5.0% (Sakrower Kirchweg)	St; -7714,4279 -7636,4346
 Steigung 5.0% (Jaczostr.)	St; -4733,11276 -4789,11225
 Steigung 5.0% (Pappelplatz (Grunewald))	St; 425,8766 297,8894
@@ -71,6 +70,7 @@ Steigung 4.7% (Zeunepromenade)	St; 3919,5641 3966,5581
 Steigung 4.7% (Küfersteig)	St; -4550,11073 -4395,11018
 Steigung 4.7% (Küfersteig)	St; -4395,11018 -4356,10988
 Steigung 4.7% (Gößweinsteiner Gang)	St; -7561,4191 -7636,4346
+Steigung 4.6% (Methfesselstr.)	St; 9144,9155 9106,9038
 Steigung 4.5% (Sibeliusweg)	St; -6811,4893 -6787,5076
 Steigung 4.5% (Sibeliusweg)	St; -6787,5076 -6762,5133
 Steigung 4.5% (Königstr. (Wannsee))	St; -7622,881 -8045,788
@@ -149,25 +149,28 @@ Steigung 3.3% (Zeunepromenade)	St; 3966,5581 4090,5430
 Steigung 3.3% (Werbellinstr. (Neukölln))	St; 12541,8140 12426,8115
 Steigung 3.3% (Heerstr. (Spandau, Charlottenburg))	St; -2476,11301 -2413,11283
 Steigung 3.3% (Heerstr. (Spandau, Charlottenburg))	St; -2850,11423 -2476,11301
+Steigung 3.2% ((Methfesselstr. - Kreuzbergstr., Viktoriapark))	St; 9007,9264 8982,9198
+Steigung 3.2% ((Methfesselstr. - Kreuzbergstr., Viktoriapark))	St; 9020,9150 9080,9163
 Steigung 3.2% ((Richtung Grunewaldturm))	St; -2890,7994 -3212,8024
+Steigung 3.2% ((Methfesselstr. - Kreuzbergstr., Viktoriapark))	St; 8982,9198 8990,9166
+Steigung 3.2% ((Methfesselstr. - Kreuzbergstr., Viktoriapark))	St; 8990,9166 9020,9150
 Steigung 3.2% (Kollatzstr.)	St; 2181,12276 2127,12249
 Steigung 3.2% (Friedenstr. (Wannsee))	St; -7332,662 -7368,794
+Steigung 3.2% ((Methfesselstr. - Kreuzbergstr., Viktoriapark))	St; 8955,9318 9007,9264
 Steigung 3.2% (Insterburgallee)	St; 200,11428 232,11190
 Steigung 3.2% (Bernauer Str. (Wedding))	St; 9472,14478 9621,14624
 Steigung 3.2% ((Richtung Grunewaldturm))	St; -3212,8024 -3536,7856
 Steigung 3.2% (Baumeisterstr.)	St; 6277,7220 6191,7122
 Steigung 3.2% (Havelchaussee)	St; -3536,7856 -3531,7825
 Steigung 3.2% (Neue Kulmer Str.)	St; 7771,9479 7771,9389
+Steigung 3.2% ((Methfesselstr. - Kreuzbergstr., Viktoriapark))	St; 9080,9163 9144,9155
 Steigung 3.2% (Kollatzstr.)	St; 2127,12249 2112,12187
 Steigung 3.2% (Prenzlauer Berg)	St; 11723,13630 11538,13691
-Steigung 3.1% ((Methfesselstr. - Kreuzbergstr., Viktoriapark))	St; 9007,9264 8973,9171
-Steigung 3.1% ((Methfesselstr. - Kreuzbergstr., Viktoriapark))	St; 8973,9171 9141,9142
 Steigung 3.1% (Am Fichtenberg)	St; 4165,5243 4134,5284
 Steigung 3.1% (Wilhelmstr. (Spandau))	St; -5488,11257 -5549,11221
 Steigung 3.1% (Hermannstr. (Neukölln))	St; 11824,8995 11882,8527
 Steigung 3.1% (Spandauer Damm)	St; 2414,12418 2224,12397
 Steigung 3.1% (Spandauer Damm)	St; 2224,12397 2157,12389
-Steigung 3.1% ((Methfesselstr. - Kreuzbergstr., Viktoriapark))	St; 8955,9318 9007,9264
 Steigung 3.1% (Havelchaussee)	St; -3506,7699 -3531,7825
 Steigung 3.1% (Reuterstr. (Neukölln))	St; 12181,8548 12195,8436
 Steigung 3.1% (Helmstr.)	St; 7444,9148 7490,9116
