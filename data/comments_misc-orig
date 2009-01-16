@@ -17,18 +17,18 @@ Eberbacher Str.: Di und Fr 08.00-13.00 wegen Wochenmarkt zwischen Binger Str und
 Nestorstr.: Di und Fr 08.00-13.00 Wochemarkt, Behinderungen möglich	CS 3374,10201 3359,9968 3347,9793
 Maybachufer: Di und Fr 11.00-18.30 Wochenmarkt, Behinderungen möglich	CS 11543,10015 11880,9874
 #: note: http://www.berlin.de/ba-friedrichshain-kreuzberg/wirtschaftsfoerderung/wirtschaftsstandort/maerkte.html
-Friedrichstraße: zwischen Franz-Klühs-Str. und Mehringplatz, Markt Do 10.00-18.00 und Sa 08.00-13.00, Behinderungen möglich	CS 9556,10565 9569,10427
-Crellestr: Mi und Sa 10.00-15.00 Wochenmarkt, Behinderungen möglich	CS 7896,9490 7863,9422 7771,9378
+Friedrichstraße: zwischen Franz-Klühs-Str. und Mehringplatz, Markt Do 10.00-18.00 und Sa 08.00-13.00, Behinderungen möglich	CS 9566,10566 9580,10434
+Crellestr: Mi und Sa 10.00-15.00 Wochenmarkt, Behinderungen möglich	CS 7882,9490 7836,9413 7771,9389
 Charlottenbrunner Str.: Mo und Do 09.00-14.00 Wochenmarkt, Ausweichen auf Gehweg	CS 3073,9020 2972,9037
 Karl-August-Platz, Weimarer Str.: Mi 08.00-13.00 und Sa 08.00-14.00 Wochenmarkt, Behinderungen möglich	CS 4092,11338 4077,11226
 Richard-Wagner-Platz: Wochenmarkt Mo und Do 08.00-13.00, Behinderungen möglich	CS 3763,12279 3701,12279
 Ladiusmarkt in der Andréezeile: Wochenmarkt Dienstag, Donnerstag und Sonnabend, Behinderungen möglich	CS 1020,496 1078,443
 #: section ^^^
-Gillweg: entlang der Autobahn	CS 2585,9653 2485,9682 2392,9715
+Gillweg: entlang der Autobahn	CS 2585,9653 2485,9682 2382,9722
 Bismarckplatz: als Hubertusallee ausgeschildert	CS; 2348,9398 2380,9402
 Bismarckplatz: als Caspar-Theyß-Str. ausgeschildert	CP2; 2389,9434 2380,9402
 als Lützowplatz ausgeschildert	CS; 6873,11011 6824,10904
-als Rathenauplatz ausgeschildert	CS; 2392,9715 2379,9665
+als Rathenauplatz ausgeschildert	CS; 2382,9722 2366,9664
 als Wismarplatz ausgeschildert	CS 14449,11742 14395,11753
 als Eichkampstr. ausgeschildert	CS; 693,9129 731,9103
 Richtung Grunewaldturm	CP2; 676,9104 197,9069
@@ -57,7 +57,7 @@ Christburger Str. - Pasteurstr.: Drängelgitter auf dem Mittelstreifen	CP 11920,1
 Sellin - Benz: schwierig zu findender Waldweg	CS 53932,172900 53868,172725 53906,172550 53574,172367 53383,171931 53203,171896 52806,171507
 Tor (Sperrung möglich?)	CP 58324,164202
 Alternativ auch Fahrt auf dem Lärmschutzwall möglich	CS 17557,17999 16990,18694
-Keine Straße ausgeschildert, am Bahndamm halten	CS; 12653,11672 12596,11696
+Keine Straße ausgeschildert, am Bahndamm halten	CS; 12645,11673 12596,11696
 Erich-Steinfurth-Str.: Markt am Wochenende	CS 12596,11696 12453,11790 12366,11808
 Am Schloß Bellevue: kann bei Staatsbesuchen gesperrt sein	CS 6690,12637 7039,12314
 Paralleler Uferweg an der Spree nur über zwei Treppen erreichbar	CS 10300,12587 10355,12551 10411,12471 10422,12395
@@ -174,7 +174,7 @@ Gartentor, Zufahrt zum Gemeindehaus (dürfte immer offen sein)	CS 2201,43954
 #: by: ^^^
 #: by: Jürgen Schulze (jochen):
 Freienbrinker Saum: die Straße führt am Waldrand entlang, in der Dunkelheit ist mit Wildschweinen zu rechnen	CS 30124,4664 30254,4692 30369,4697 30478,4715 30527,4724 30636,4717 30810,4765 30857,4770 30913,4766 31011,4750 31118,4768 31209,4781 31224,4775 31311,4742 31364,4711 31424,4658
-Petriplatz: zusätzliche Ausschilderung "Zur Brüderstr."	CS; 10420,11941 10385,11985
+Petriplatz: zusätzliche Ausschilderung "Zur Brüderstr."	CS; 10431,11945 10385,11985
 DB-Gelände: bei starken Regenfällen regelmäßig eine große und tiefe Pfütze, die die Durchfahrt erschwert	CS 14093,10909 14043,10928
 Straße 77: die Straße ist nicht ausgeschildert	CS 15402,12390 15315,12360
 #: by: antje weiss dorn:
@@ -192,7 +192,7 @@ Kreisverkehr	Roundabout 11370,10398
 #: section: ignorieren vvv
 #: XXX_prog: it's not clear what to do with this in the routelist (currently shown) or while rendering (currently ignored in normal perl/tk mode) vvv
 Kreisverkehr	Roundabout 10824,10909 10847,10853 10906,10874 10885,10928 10824,10909
-Kreisverkehr	Roundabout 6744,11936 6809,11979 6828,12031 6799,12083 6754,12108 6725,12113 6690,12104 6653,12067 6642,12010 6685,11954 6744,11936
+Kreisverkehr	Roundabout 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6653,12067 6642,12010 6685,11954 6744,11936
 Kreisverkehr	Roundabout 4842,11679 4897,11727 4906,11772 4867,11835 4770,11820 4747,11751 4780,11702 4842,11679
 #: XXX_prog ^^^
 #: section ^^^

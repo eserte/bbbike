@@ -9,23 +9,23 @@
 #
 # die Richtung gibt bei Einbahnstraßen die Sperrung an
 #
-Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9687,10180 9592,10174 9401,10199
-Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
-Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
-Kanalstraßen Nordufer	1 6880,11110 7118,11209 7160,11225 7251,11202 7333,11179 7595,11086 7687,11096 7873,11142 8000,11137 8092,11092 8241,11024
+Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9865,10227 9825,10206 9687,10180 9599,10175 9416,10196
+Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9145,10290 8804,10303 8724,10327 8661,10377 8634,10426 8525,10626 8430,10710
+Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 8104,11037 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
+Kanalstraßen Nordufer	1 6880,11110 7118,11209 7160,11225 7251,11202 7333,11179 7595,11086 7687,11096 7873,11142 8000,11137 8102,11099 8241,11024
 # Hier kann ein kurzes Stück auf dem Gehweg überbrückt werden
-Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8380,10865 8443,10777 8578,10672 8701,10428 8771,10381 8824,10366 8953,10366 9029,10366 9147,10359 9241,10324 9392,10260 9593,10238 9865,10286
-Gitschiner Str.	1 9865,10286 9948,10280
-Gitschiner Str.	1 9948,10280 9851,10219
-Skalitzer Str.	1 12980,10575 12899,10595
-Skalitzer Str.	1 12899,10595 12995,10669
-Oppelner Str.	1 13035,10635 12980,10575
-Oberbaumstr.	1 12995,10669 13015,10659 13082,10634
-Oberbaumstr.	1 13082,10634 13035,10635
+Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8380,10865 8443,10777 8578,10672 8701,10428 8771,10381 8824,10366 8953,10366 9029,10366 9154,10348 9239,10313 9404,10250 9492,10226 9593,10238 9873,10285
+Gitschiner Str.	1 9873,10285 9948,10280
+Gitschiner Str.	1 9948,10280 9865,10227
+Skalitzer Str.	1 12978,10581 12899,10595
+Skalitzer Str.	1 12899,10595 12985,10665
+Oppelner Str.	1 13028,10629 12978,10581
+Oberbaumstr.	1 12985,10665 13015,10659 13082,10634
+Oberbaumstr.	1 13082,10634 13028,10629
 am Hackeschen Markt (Süd)	1 10132,12941 10117,12966 10097,12997 9932,13109
 am Hackeschen Markt (Nord)	1 9932,13109 10077,13100 10220,13098 10264,13097
 Dennewitzplatz	1 7866,9918 7813,10112
-Dennewitzplatz	1 7813,10112 7911,10109 7866,9918
+Dennewitzplatz	1 7813,10112 7906,10098 7866,9918
 Winterfeldtplatz	1 7049,9833 7039,10082
 Winterfeldtplatz	1 7080,10098 7126,9825
 Moritzplatz	1 10847,10853 10824,10909 10885,10928 10906,10874 10847,10853
@@ -35,25 +35,25 @@ Erkelenzdamm etc.	1 11328,10957 11264,10804 11301,10783 11275,10723
 Erkelenzdamm etc.	1 11258,10682 11244,10653 11210,10668 11145,10510 11109,10423 11134,10383 11117,10326
 Erkelenzdamm etc.	1 11094,10261 11038,10247 10967,10092
 Überführung Daimlerstr.	1 8651,2197 8588,2176 8537,2286 8606,2376
-Großer Stern	1 6725,12113 6754,12108 6799,12083 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6653,12067 6690,12104 6725,12113
+Großer Stern	1 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6653,12067 6690,12104 6725,12113
 Ernst-Reuter-Platz	1 4770,11820 4867,11835 4906,11772 4897,11727 4842,11679 4780,11702 4747,11751 4770,11820
 Theodor-Heuss-Platz	1 1381,11335 1403,11428 1574,11379 1532,11280 1450,11309 1381,11335
 # Bis Zufahrt "Am Westkreuz" können Radfahrer den Radweg in entgegengesetzter Richtung benutzen: 5840,7964 5880,8012
 Halenseestr.	1 2112,10488 2069,10330 2268,9976 2300,9883 2410,9777
 # zwischen Trabener Steg und Zufahrt zum Rasthof Avus ausgelassen
 # südöstlicher Teil
-Halenseestr.	1 2392,9715 2340,9758 2277,9801
+Halenseestr.	1 2382,9722 2340,9758 2277,9801
 # nordwestlicher Teil
 Halenseestr.	1 1957,10426 1919,10568 1928,10728
 Rasthof Avus	1 1894,10390 1904,10353 1866,10315 1736,10293 1716,10324 1842,10413 1878,10409 1894,10390
-Breitenbachplatz (Westseite)	1 4292,6558 4208,6566 4096,6632 4026,6688 3947,6814
-Breitenbachplatz (Ostseite)	1 4000,6852 4098,6751 4153,6703 4265,6636 4292,6558
+Breitenbachplatz (Westseite)	1 4292,6558 4208,6566 4096,6632 4081,6646 4007,6717 3947,6814
+Breitenbachplatz (Ostseite)	1 4000,6852 4084,6766 4125,6728 4153,6703 4265,6636 4292,6558
 Inselstr. Schwanenwerder	1 -5310,4216 -5393,4211 -5453,4274 -5471,4412 -5442,4526 -5386,4539 -5341,4511 -5358,4404 -5356,4296 -5310,4216
 Bayerischer Platz	1 6063,9106 6053,9224 6084,9242 6131,9241 6161,9128 6152,9091 6118,9078 6083,9082 6063,9106
 orthodoxe Kirche (unsicher)	1 3952,8980 3932,8989 3835,9044
-U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2750,5532 2532,5105 2472,5037 2313,4901 2190,4823 2074,4750 2007,4791
+U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2746,5537 2523,5114 2469,5043 2313,4901 2190,4823 2074,4750 2007,4791
 U-Bahn Dahlem	1 2007,4791 2095,4805 2169,4854 2217,4884 2262,4914 2288,4932 2454,5067 2499,5144 2717,5578
-Am Großen Wannsee	1 -5868,1255 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961,1767 -6025,1991 -6021,2068 -5945,2381 -5749,2701 -5722,2714 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5883,1948 -5885,1786 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
+Am Großen Wannsee	1 -5869,1261 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961,1767 -6025,1991 -6021,2068 -5945,2381 -5749,2701 -5722,2714 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5883,1948 -5885,1786 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
 Wilhelplatz	1 -7232,445 -7219,454 -7059,578
 Wilhelplatz	1 -7059,578 -7088,463 -7122,439 -7180,378
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
@@ -107,7 +107,7 @@ Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 
 Antonienstr.	1 3930,17920 3970,18126 4009,18322 4085,18694 4098,18762 4162,18891 4240,19019
 Eichborndamm	1s:q3 4240,19019 4232,18981
 Eichborndamm	1 4232,18981 4210,18878 4171,18677 4102,18298 4059,18107 4015,17912
-Spreestr.	1 17898,6049 17939,5968 17877,5860 17816,5733 17812,5726 17779,5694
+Spreestr.	1 17900,6072 17939,5968 17877,5860 17816,5733 17812,5726 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1 15657,10846 15871,10925
 Nöldnerplatz	1 15871,10925 16032,10842
@@ -115,7 +115,7 @@ Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 Grünau/B179	1 22092,999 22105,888 22075,779 22007,711 21861,802 21894,881 21990,979 22092,999
 Dorfplatz	1 21051,-533 21022,-566 20873,-608 20836,-577 21011,-529 21051,-533
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21536,801 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
-Choriner Str.	1 10489,13942 10480,13871 10445,13752
+Choriner Str.	1 10489,13942 10480,13871 10463,13747
 Olivaer Platz	1 4239,10358 4172,10406 4157,10418
 Platz S (Hundekehlestr.)	1 2277,7705 2206,7637
 Platz S (Hundekehlestr.)	1 2161,7685 2222,7718 2277,7705
@@ -132,8 +132,8 @@ Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13867,9864 138
 Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928 2987,11055
 Giesebrechtstr.	1 3915,10684 4006,10585 4157,10418
 # nur für Kfz: Emser Str.	1 10345,9509 10269,9520
-Bethaniendamm	1 12055,11331 12012,11235 11956,11166 11852,11102 11816,11084 11649,11075 11461,11145
-Engeldamm	1 11473,11180 11665,11118 11798,11128 11921,11185 12026,11348
+Bethaniendamm	1 12055,11331 12012,11235 11956,11166 11852,11102 11816,11084 11640,11067 11461,11145
+Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 12026,11348
 Pannierstr.	1 12202,8895 12242,8972
 Stolzenfelsstr.	1 19468,8168 19425,8140 19333,8165 19171,8280 18949,8437 18787,8540 18722,8582
 Dönhoffstr.	1 18726,8633 18609,8717 18514,8773 18447,8818 18372,8869 18296,8920 18201,8984 18124,9056
@@ -152,8 +152,8 @@ Schulze-Delitzsch-Platz	1 11155,11750 11048,11745 11022,11782
 Schulze-Delitzsch-Platz	1 11022,11782 11155,11750
 # hier stand mal ein Polizeiauto, als ich reinfahren wollte...:
 Weydemeyerstr.	1 11905,13069 11910,13055 12062,12986 12054,12903
-Gipsstr.	1 10331,13397 10199,13446 10026,13521
-Dorotheenstr.	1 9867,12651 9723,12594 9682,12590 9574,12578 9454,12558 9323,12528
+Gipsstr.	1 10350,13376 10199,13446 10026,13521
+Dorotheenstr.	1 9867,12651 9723,12594 9682,12590 9574,12578 9454,12558 9330,12529
 Georgenstr.	1 9434,12669 9561,12687 9659,12704 9754,12775
 Paul-Junius-Str	1 15084,13276 15082,13369
 #: by: Rolf Schröder <001301c0fe12$f9c9eb00$fe78a8c0@pc166>
@@ -161,7 +161,7 @@ Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,913
 Griechische Allee	1 17962,6674 18005,6681 18077,6690 18125,6694 18254,6679 18339,6660 18494,6588
 Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18080,6670 18008,6672 17962,6674
 Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5590,11118 5542,11075
-(Waterlooufer - Zossener Str.)	1 9849,10202 9812,10211
+(Waterlooufer - Zossener Str.)	1 9858,10199 9825,10206
 Greinerstr.	1 8347,3382 8327,2975
 Dederingstr.	1 8457,2965 8478,3414
 # hmmm?
@@ -169,16 +169,16 @@ Dederingstr.	1 8457,2965 8478,3414
 Weserstr. (Friedrichshain)	1 14416,11815 14471,11782
 Quickborner Str.	1 8022,21476 8170,21304
 Berliner Str. (Blankenfelde)	1 9490,23531 9528,23240
-Revaler Str. (Straßenbahn)	1s:q3 13594,11489 13473,11456
+Revaler Str. (Straßenbahn)	1s:q3 13588,11490 13473,11456
 Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10675,12280
 Herrfurthplatz	1 11647,7940 11659,7982 11695,8005 11732,8001 11757,7965 11753,7930 11717,7895 11670,7911 11647,7940
-Grimmstr.	1 11016,9599 11083,9753 11163,9903
-Grimmstr.	1 11200,9889 11148,9730 11117,9658 11083,9573
-Körtestr.	1 11002,9566 11016,9599
-Körtestr.	1 11064,9543 11002,9566
-Fichtestr.	1 11083,9573 11064,9543
-Baerwaldstr.	1 10345,9764 10339,9818 10397,9962 10451,10057 10490,10080
-Baerwaldstr.	1 10490,10080 10503,10046 10480,9949 10408,9800 10345,9764
+Grimmstr.	1 11023,9597 11089,9751 11163,9903
+Grimmstr.	1 11200,9889 11141,9732 11110,9661 11075,9576
+Körtestr.	1 11004,9554 11023,9597
+Körtestr.	1 11060,9549 11004,9554
+Fichtestr.	1 11075,9576 11060,9549
+Baerwaldstr.	1 10361,9755 10357,9813 10424,9958 10467,10051 10500,10081
+Baerwaldstr.	1 10500,10081 10513,10038 10480,9949 10408,9800 10361,9755
 Dittersbacher Weg	1 7859,3181 7865,3344
 Anzengruberstr.	1 13042,8395 12852,8366 12689,8289
 Nalepastr. am Rundfunkgebäude	2 17076,8443 17042,7748
@@ -270,9 +270,9 @@ Spilstr.	1 3865,6758 3826,6656 3836,6550
 Wöhlertstr.	1 8442,14456 8662,14567
 Pflugstr.	1 8662,14567 8781,14357
 Schwartzkopffstr.	1 8781,14357 8607,14253
-Strausberger Str.	1 12422,13047 12368,13031
+Strausberger Str.	1 12416,13045 12368,13031
 Große Präsidentenstr.	1 10097,12997 10220,13098
-Naumannstr.	1 7709,8770 7707,8915
+Naumannstr.	1 7709,8777 7707,8915
 Gritznerstr.	1 4507,6320 4555,6403
 Duisburger Str.:	1 4183,10144 3874,10153
 Majakowskiring	1 10373,18889 10354,18814 10203,18762 10041,18697 9987,18757 10055,18831 10184,18875 10307,18915 10373,18889
@@ -289,7 +289,7 @@ Braillestr.	1 4430,5324 4460,5274 4512,5199
 Mudrackzeile	1 6985,17812 7020,17690
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
-Niederlagstr.	1 9972,12184 9926,12368 9918,12411
+Niederlagstr.	1 9972,12184 9926,12368 9915,12417
 Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2942,14666 -3027,14689 -3042,14682
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12980,7597 13100,7626
@@ -306,7 +306,7 @@ Mentzelstr.	1 21579,4579 21546,4457
 Amalienstr.	1 13814,16759 13722,16843 13653,16907 13589,16965
 Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
 Reiherbeize	1 444,4498 593,4262
-Mendelssohnstr.	1 11613,13570 11537,13617 11538,13683
+Mendelssohnstr.	1 11613,13570 11537,13617 11538,13691
 Am Bäkequell	1 4593,5235 4656,5101
 Sella-Hasse-Str.	1 20948,16612 20771,16690 20843,16829
 Buggenhagenstr.	1 14425,13780 14370,13615
@@ -431,8 +431,8 @@ Franz-Stenzer-Str.	1 19876,15644 19974,15594 20044,15585 20111,15609 20181,15658
 #: note: where_are_you_between hat der Einbahnstraßenregelung nicht widersprochen
 Planetenstr.	1 15175,7221 15056,7198 14951,7163
 Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4750,14393
-Gartenstr. (Köpenick)	1 22418,4452 22362,4331 22302,4255 22273,4216
-Spitzerstr.	1 22319,4197 22358,4282 22425,4370 22449,4435
+Gartenstr. (Köpenick)	1 22419,4457 22362,4331 22302,4255 22273,4216
+Spitzerstr.	1 22319,4197 22358,4282 22425,4370 22451,4441
 Zitadellenweg/BMW-Betriebswerk	2 -1971,14610 -1768,14605 -1616,14527
 #: by: misersky:
 Tassostr.	1 13679,16286 13645,16192 13659,16151 13642,16118 13625,16054 13621,15990 13630,15956
@@ -460,8 +460,8 @@ Mudrastr.	1 7370,2400 7324,2559 7289,2699 7308,2734 7384,2763 7489,2787
 #: by: Ansgar Petters:
 Heiligental	1 5803,19874 5858,19761 5897,19668 5929,19574
 Kuhligkshofstr.	1 4821,5345 4869,5386 4911,5428
-Bänschstr.	1 14591,12555 14326,12627
-Bänschstr.	1 14332,12647 14596,12573
+Bänschstr.	1 14591,12555 14319,12629
+Bänschstr.	1 14325,12648 14596,12573
 Bänschstr.	1 15009,12441 14798,12502 14681,12534 14661,12523 14589,12542
 Bänschstr.	1 14600,12584 14672,12565 14686,12549 14800,12514 14999,12462
 Rossiter Platz - Machandelweg: verschlossene Türen	2 -107,12220 -76,12236 -45,12243
@@ -521,7 +521,7 @@ Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts und am Wochenende
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Baumgartensteg	1 -2882,13474 -2937,13399
 #: by: Brüning:
-Geisenheimer Str.	1 4391,7258 4462,7137 4534,7015
+Geisenheimer Str.	1 4391,7258 4462,7137 4530,7021
 #: by: Matthias Müller:
 Teutonenstr. (Nikolassee)	1 -3519,2180 -3610,2237 -3689,2267 -3742,2287
 Straße zum FEZ	1 20716,6029 20593,6082 20428,6157 20453,6211 20623,6136 20708,6089 20716,6029
@@ -578,6 +578,9 @@ Neuendorfer Str.	1 -3228,14794 -3251,14741
 Büdnerring	1 7997,18524 7902,18575 7892,18603 7926,18665 8037,18673 8063,18659 8066,18632 7997,18524
 Steilpfad	1 3376,21224 3280,21477
 Jebensstr.	1 5587,11397 5459,11135
+Breitenbachplatz	1 4125,6728 4081,6646 3983,6599 3925,6604 3938,6651 4007,6717 4084,6766
+Südwestkorso	1 4084,6766 4206,6820
+Südwestkorso	1 4206,6820 4125,6728
 ######################################################################
 #
 # Potsdam
@@ -698,11 +701,11 @@ Walsroder Str.	1s 6396,5125 6295,5132 6203,5138 6089,5145
 Hünensteig	1s 6415,5028 6393,5028 6396,5125
 #: note: Radfahren auf dem Uferweg ist wohl Sitte
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s:q2 12119,9823 11946,9913 11735,10022 11512,10105
-Czeminskistr.	1s:q3 7615,8927 7570,8863
+Czeminskistr.	1s:q3 7604,8927 7563,8871
 Stallschreiberstr.	1s:q1 10489,11405 10620,11244 10678,11172
 Jahnstr.	1s:q3 11493,9128 11509,9392
-Waldweg	1s 25496,2429 24972,2583
-Schulenburgring	1s:q3 9019,8434 9013,8594
+Waldweg	1s 25496,2429 24981,2580
+Schulenburgring	1s:q3 9019,8434 9006,8602
 #: note: die Straßenbahn fährt hier auch lang
 Neue Schönhauser Str.	1s:q1 10528,13243 10441,13195 10305,13211
 Alte Schönhauser Str.	1s:q2 10718,13625 10746,13673
@@ -742,7 +745,7 @@ Zeltinger Platz	1s:q3 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 248
 #: note: Luftbild
 Gülzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22424,12183
 Oranienburger Str. (Wittenau): Mittelstreifen	3nocross 5350,21251 5357,21199 5391,21003
-Lindenstr.: Betonblöcke	3nocross 9757,10708 9801,10807 9927,11072
+Lindenstr.: Betonblöcke	3nocross 9777,10719 9805,10791 9935,11067
 Oranienburger Str.: Straßenbahnhaltestelle	3nocross 9215,13392 9281,13374 9415,13315
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12046,16568
 Schnellerstr.: Mittelstreifen	3nocross 16713,6839 16674,6885 16568,7009
@@ -750,7 +753,7 @@ Schnellerstr.: Mittelstreifen	3nocross 16713,6839 16674,6885 16568,7009
 Stendaler Str.: Straßenbahntrasse	3nocross 23895,15450 23913,15333 23933,15209 23952,15086 23960,15021
 Am Nordgraben: Mittelstreifen	3nocross 5201,20103 5399,20106 5517,20120
 Attilastr.: Mittelstreifen	3nocross 7263,4281 7310,4308 7368,4342
-Edisonstr.: Straßenbahn	3nocross 18003,7144 17934,7029 17925,6976
+Edisonstr.: Straßenbahn	3nocross 18003,7144 17934,7029 17919,6978
 Falkenseer Chaussee: Mittelstreifen	3nocross -5039,15618 -5154,15651 -5473,15742
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20269,14256 20241,14016 20210,13776
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20474,14442 20611,14445 20657,14446 20727,14467
@@ -819,19 +822,19 @@ Riesaer Str.: Straßenbahntrasse	3nocross 24120,14526 24097,14575 24020,14737
 Riesaer Str.: Straßenbahntrasse	3nocross 24198,14454 24162,14487 24120,14526
 #: note: Luftbild:
 Riesaer Str.: Straßenbahntrasse	3nocross 24721,14293 24870,14244 24930,14225 24983,14208 25095,14171
-Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17527,7812 17686,7589 17839,7365 18003,7144
+Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17527,7812 17681,7589 17839,7365 18003,7144
 Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4469,8037 4659,7982 4793,7992
 Rhinstr.: Straßenbahntrasse	3nocross 18215,12132 18216,12262 18220,12450
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 19628,13517 19726,13524 19807,13529 19837,13531 19894,13535 20097,13549
 Bornhomer Str.: Straßenbahntrasse	3nocross 10765,16486 10699,16492 10620,16497
 Bornhomer Str.: Straßenbahntrasse	3nocross 10620,16497 10533,16505 10458,16509
 Bornhomer Str.: Straßenbahntrasse	3nocross 10458,16509 10370,16516 10282,16522 10197,16528
-Karl-Liebknecht-Str./Rosenstr.: Straßenbahntrasse	3nocross 10440,12696 10534,12780 10699,12929
-Martin-Luther-Str.: Mittelstreifen	3nocross 6502,9782 6520,9867 6522,9948
+Karl-Liebknecht-Str./Rosenstr.: Straßenbahntrasse	3nocross 10437,12703 10528,12785 10699,12929
+Martin-Luther-Str.: Mittelstreifen	3nocross 6502,9782 6512,9866 6514,9947
 Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 11013,16278 11003,16196 10994,16120
 Oberspreestr.: Straßenbahntrasse	3nocross 21579,4579 21726,4537 21796,4517
 Oberspreestr.: Straßenbahntrasse	3nocross 21332,4655 21389,4635 21494,4605
-Hermannstr.: Gitter auf Mittelstreifen	3nocross 11892,8372 11920,8252 11931,8206
+Hermannstr.: Gitter auf Mittelstreifen	3nocross 11898,8362 11920,8252 11931,8206
 Bundesplatztunnel	3nocross 5360,7554 5359,7619 5358,7681 5358,7746 5356,7862
 Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061 6873,11011 6824,10904
 Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3906,10035 3930,9919
@@ -839,7 +842,7 @@ Treskowallee: Straßenbahntrasse	3nocross 18809,9133 18790,9018 18770,8898
 Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5474,9961 5475,9914 5473,9869
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19694,15149 19735,15155 20260,15434
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19582,15221 19506,15002 19466,14910 19422,14793
-Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9851,10219 9849,10202 9827,10120
+Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9865,10227 9858,10199 9837,10117
 Grunerstr.: Straßentunnelrampe	3nocross 10878,12560 10954,12635 11057,12715 11105,12764
 Bundesallee: Straßentunnelrampe	3nocross 5505,8832 5510,8709 5513,8588
 Unter den Eichen: Straßentunnelrampe	3nocross 2817,4158 2944,4241 3048,4305
@@ -858,17 +861,17 @@ Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 18853,11798 1900
 Alt-Friedrichsfelde: Straßentunnelrampe	3nocross 18220,11710 18555,11724 18853,11798
 Lewishamstr.: abgesperrter Mittelstreifen	3nocross 3592,10869 3631,10784 3644,10759
 Lewishamstr: Straßentunnelrampe	3nocross 3644,10759 3739,10576 3771,10511 3813,10435
-Klingelhöferstr: unbequem passierbarer Mittelstreifen	3nocross 6825,11486 6853,11336 6880,11110
+Klingelhöferstr: unbequem passierbarer Mittelstreifen	3nocross 6825,11486 6851,11346 6880,11110
 Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 10197,16528 9998,16547 9883,16557 9816,16565
 Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 9514,16603 9617,16590 9816,16565
 Seestr.: Straßenbahntrasse	3nocross 7231,16418 7051,16264 6965,16190
 Föhrer Str.: Mittelstreifen	3nocross 6528,15000 6561,15041 6630,15100
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14208,12235 14291,12220 14381,12205
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14381,12205 14427,12197 14488,12189
-Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 13792,12292 13885,12279 14208,12235
-Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11649 9899,11670 9982,11680
+Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 13785,12292 13885,12279 14208,12235
+Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11656 9898,11679 9981,11689
 #Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13241,13405 13334,13459
-Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12188,14321 12239,14393 12285,14458 12338,14532
+Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12188,14321 12239,14393 12285,14458 12332,14526
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12722,15105 12743,15138 12880,15335
 #: note: Fußgängerfurt existiert zwischen Chodowieckistr. und Jablonskistr.:
@@ -880,31 +883,31 @@ Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 12076,16129 12030,1596
 #: note: Luftbild:
 Prenzlauer Allee: Straßenbahntrasse	3nocross 11941,15586 11967,15700 11997,15834
 Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 11712,14868 11610,14886 11545,14897
-Torstr.: Mittelstreifen mit Straßenbahn	3nocross 10746,13673 10640,13700 10569,13719 10450,13751 10445,13752
-Yorckstr.: Linksabbiegen verboten (und unbequem)	3nocross 8188,9610 8095,9639 7941,9686
-Lichtenberger Str.: Mittelstreifen	3nocross 12028,12519 12006,12464 11929,12263
-Sachsendamm: unbequem passierbarer Mittelstreifen	3nocross 7699,7571 7859,7486 7946,7411
+Torstr.: Mittelstreifen mit Straßenbahn	3nocross 10746,13673 10640,13700 10569,13719 10471,13745 10463,13747
+Yorckstr.: Linksabbiegen verboten (und unbequem)	3nocross 8192,9619 8097,9650 7938,9694
+Lichtenberger Str.: Mittelstreifen	3nocross 12028,12519 12006,12464 11920,12266
+Sachsendamm: unbequem passierbarer Mittelstreifen	3nocross 7696,7562 7859,7486 7946,7411
 Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12540,8458
 Karl-Marx-Str.: unbequemes Überqueren wegen parkender Autos	3nocross 12830,8031 12865,7923 12898,7832
-Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11763,8337 11892,8372
+Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11767,8330 11898,8362
 Stromstr.: unpassierbarer Mittelstreifen	3nocross 6183,13083 6165,12985 6156,12918 6150,12875
 Märkische Allee: Linksabbiegen verboten	3nocross 20109,16305 20219,16523 20339,16752
 #: XXX: wahrscheinlich (ich wurde durch einen anonymen Kommentar bestätigt)
 Märkische Allee: Linksabbiegen verboten	3nocross 20512,17101 20691,17463 20717,17516 20843,17745 20889,17838 20912,17872 21009,18055
 Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17703,17990 17843,18078
-Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13389,10808 13483,10769 13605,10719
-Stralauer Allee: unbequemes Abbiegen	3nocross 13605,10719 13678,10685 13779,10642
-Stralauer Allee: unbequem passierbare Straße	3nocross 14210,10437 14396,10345 14564,10262
+Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13389,10808 13483,10769 13596,10722
+Stralauer Allee: unbequemes Abbiegen	3nocross 13596,10722 13678,10685 13779,10642
+Stralauer Allee: unbequem passierbare Straße	3nocross 14210,10437 14396,10345 14558,10264
 Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 12630,8722 12742,8635 12772,8612
-Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10659,12259 10621,12207 10567,12135
+Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10659,12259 10625,12206 10574,12131
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5229,10716 5351,10760 5484,10810
-Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15415,12179 15437,12225 15475,12307 15502,12367
+Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15420,12178 15443,12222 15480,12306 15508,12367
 Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6790,16018 6914,15908 6936,15888 7043,15793
-Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14603,15971 14619,15920 14650,15750
+Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14597,15970 14609,15921 14650,15750
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14550,16161 14522,16260 14499,16341
 Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16738,11878 16858,11860 16964,11845
 #: by: Kerstin Pantos:
-Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8770 7642,8815 7570,8863
+Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8777 7642,8815 7563,8871
 #: by: Andreas Mühlhausen: vvv
 Heerstr.: schlecht passierbar	3nocross -4063,11805 -4009,11789 -3707,11693
 Thielallee: nicht passierbarer Mittelstreifens	3nocross 2560,5044 2587,4965 2615,4885
@@ -929,11 +932,11 @@ Linksabbiegen in den Wolfensteindamm gefährlich / unbequem	3nocross 4789,5079 46
 Hauptstr.: Mittelstreifen	3nocross 6687,8385 6765,8480 6912,8617 6990,8685
 #: by: Jirka Klaue:
 Am Tierpark: Straßenbahntrasse	3nocross 18631,10167 18554,10354 18446,10620
-Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3nocross 12504,11464 12539,11416 12576,11375 12641,11288
+Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3nocross 12497,11459 12539,11416 12576,11375 12641,11288
 Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3nocross 12990,11006 13080,10956 13144,10921
-Klingelhöferstr.: Mittelstreifen	3 6683,11367 6853,11336 6880,11110
-Klingelhöferstr.: Mittelstreifen	3 7160,11225 6853,11336 6880,11110
-Klingelhöferstr.: Mittelstreifen	3 6880,11110 6853,11336 6683,11367
+Klingelhöferstr.: Mittelstreifen	3 6692,11365 6851,11346 6880,11110
+Klingelhöferstr.: Mittelstreifen	3 7160,11225 6851,11346 6880,11110
+Klingelhöferstr.: Mittelstreifen	3 6880,11110 6851,11346 6692,11365
 Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21158,15885 21220,15741 21235,15641
 Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21626,15357 21647,15496
 #: note: Luftbild:
@@ -1141,10 +1144,10 @@ Drängelgitter	BNP:5 6560,21084
 Drängelgitter	BNP:5 6613,21116
 Drängelgitter/Schranke	BNP:5 10012,5210
 Schranke (Kopfstr.)	BNP:5 12571,7899
-Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:2 14562,10079
-Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:2 14600,10128
-Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:2 14628,10160
-Drängelgitter	BNP:5 14452,9919
+Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:2 14558,10082
+Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:2 14597,10129
+Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit (Parkweg)	BNP:2 14626,10162
+Drängelgitter	BNP:5 14451,9927
 Drängelgitter (Görlitzer Park)	BNP:5 12686,10045
 Drängelgitter (Görlitzer Park)	BNP:5 12770,10210
 # XXX eins von zwei Gittern fehlt zurzeit
@@ -1170,7 +1173,7 @@ Schranke (Krankenhaus Herzberge)	BNP:5 17247,13519
 Drängelgitter (S-Bhf. Grunewald)	BNP:10 731,9103
 Drängelgitter (vor der Straßenbahnhaltestelle)	BNP:5 29092,4761
 Schranke (Berliner Str./Woltersdorf)	BNP:5 32192,5915
-Schranke, schwer passierbar (Neue Steinmetzstr.)	BNP:10 7628,9364
+Schranke, schwer passierbar (Neue Steinmetzstr.)	BNP:10 7625,9376
 Schranke (Neue Steinmetzstr.)	BNP:5 7612,9446
 # XXX nur für Fahrräder mit Anhänger relevant: vvvvvvvvvvvvvvvvvvvvvvvvvvv
 #Barriere: Zillestr.	BNP:30 3268,11834
@@ -1261,7 +1264,7 @@ Treitschkestr.	1 4854,6413 4987,6336 5125,6262 5219,6215
 tragen (Treppe)	0:40 4127,5427
 tragen (5 Stufen)	0:10 4077,5406
 Iltisstr.	1 2797,5624 2858,5535
-Bundesallee: Mittelstreifen unbequem zu überqueren	3nocross 5493,9357 5495,9263 5502,8973
+Bundesallee: Mittelstreifen unbequem zu überqueren	3nocross 5493,9357 5495,9263 5503,8982
 Lietzenburger Str.: Mittelstreifen schlecht zu überqueren 	3nocross 6494,10440 6403,10424 6276,10401
 (Kolonieweg a. d. Forkenbeckstr.): tragen (5 Stufen)	0:15 3230,8194
 (Kolonieweg a. d. Forkenbeckstr.): schieben (Rampe 10 Stufen)	0:15 3753,8073
@@ -1270,7 +1273,7 @@ tragen (2 mal 10 Stufen)	0:40 1689,4630
 Sterzinger Str.	1 6096,8600 6128,8536
 Bozener Str.	1 5904,8906 5995,8926 6049,8916
 Bozener Str.	1 5995,8926 5995,9098
-Kleiststr.: schwierig zu querender Mittelstreifen	3nocross 6536,10520 6636,10485 6753,10446
+Kleiststr.: schwierig zu querender Mittelstreifen	3nocross 6532,10529 6636,10492 6753,10446
 Bundesallee: Queren nicht möglich	3nocross 5360,8197 5359,8140 5357,8005
 (Los-Angeles-Platz)	1s:q3 5681,10696 5822,10609
 Bregenzer Str.	1 4278,10262 4227,10014
@@ -1285,11 +1288,11 @@ Matthäikirchplatz	1 7938,11276 7956,11340 7973,11354
 Matthäikirchplatz	1 7973,11354 7984,11334 7966,11267
 Herkulesufer: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30 6920,11064 6882,11061
 Potsdamer Str.: schwierig zu überqueren - besser Ampel benutzen	3nocross 7912,10945 7968,11048 7980,11070
-Grunewaldstr.: queren schlecht möglich	3nocross 6711,9225 6863,9254 6923,9266
-Adolf-Scheidt-Platz	1 8723,8100 8759,8071 8770,8018 8760,7976 8726,7944
+Grunewaldstr.: queren schlecht möglich	3nocross 6709,9234 6863,9254 6923,9266
+Adolf-Scheidt-Platz	1 8730,8095 8759,8071 8770,8018 8760,7976 8731,7956
 Rumeyplan	1 8682,7714 8799,7741 8894,7783 8940,7835
 Rumeyplan	1 8967,7821 8902,7763 8815,7722 8684,7688
-Greifswalder Str.	3nocross 12338,14532 12384,14600 12437,14680
+Greifswalder Str.	3nocross 12332,14526 12384,14600 12437,14680
 Greifswalder Str.	3nocross 12437,14680 12488,14753 12536,14827
 #: note: Luftbild:
 Greifswalder Str.: Straßenbahntrasse	3nocross 13098,15592 13229,15692 13316,15758
@@ -1409,14 +1412,14 @@ Tor	BNP:15 1834,8893
 tragen (10 x 3 Stufen)	0:180 2170,8841
 tragen	0:40 2316,8593
 tragen	0:40 2316,8469
-Mittelstr.	1 9465,12460 9384,12448 9335,12442
-Friedrichstr. [Zufahrt]	1 9384,12448 9394,12351
+Mittelstr.	1 9465,12460 9384,12448 9345,12443
+Friedrichstr. [Zufahrt]	1 9384,12448 9393,12357
 #: last_checked: 2008-06-22
 #: next_check: 2009-01-01
 Museumstr.	2:inwork 9943,12642 9884,12712
 Bauhofstr.	1 9810,12712 9671,12644
 (Verlängerte Französische Str.): Tor kann verschlossen sein	2 8901,12008 9076,12054
-Hollmannstr.	2 9979,10639 9757,10708
+Hollmannstr.	2 9991,10637 9777,10719
 Nordsternstr.	1s 6268,8884 6292,8899
 tragen	0:60 -9377,-625
 tragen (ca. 60 Stufen)	0:120 -8120,-1500

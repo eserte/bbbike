@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.92 2008/11/17 23:29:50 eserte Exp $
+# $Id: Core.pm,v 1.93 2009/01/14 20:27:48 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.92 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.93 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -509,13 +509,11 @@ sub as_string {
     my($self, %args) = @_;
     my $s = "";
     my $maybe_need_directive_separator = 1;
-    if (!$args{IgnoreDirectives} && $self->{GlobalDirectives} && keys %{$self->{GlobalDirectives}}) {
-	$s = "";
-	while(my($k,$v) = each %{ $self->{GlobalDirectives} }) {
-	    $s .= join("\n", map { "#: $k: $_" } @$v) . "\n";
+    if (!$args{IgnoreDirectives}) {
+	$s = $self->global_directives_as_string; # force at beginning of $s
+	if ($s ne '') {
+	    $maybe_need_directive_separator = 0;
 	}
-	$s .= "#:\n"; # end global directives
-	$maybe_need_directive_separator = 0;
     }
     if (!$args{IgnoreDirectives} && $self->{Directives}) {
 	if ($maybe_need_directive_separator && $self->{Directives}[0]) {
@@ -556,6 +554,18 @@ sub as_string {
     } else {
 	$s . join "", @{ $self->{Data} };
     }
+}
+
+### AutoLoad Sub
+sub global_directives_as_string {
+    my($self) = @_;
+    return "" if (!$self->{GlobalDirectives} || !keys %{$self->{GlobalDirectives}});
+    my $s = "";
+    while(my($k,$v) = each %{ $self->{GlobalDirectives} }) {
+	$s .= join("\n", map { "#: $k: $_" } @$v) . "\n";
+    }
+    $s .= "#:\n"; # end global directives
+    $s;
 }
 
 ### AutoLoad Sub

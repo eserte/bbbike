@@ -588,7 +588,7 @@ push @temp_blocking,
          'text' => 'Köthener Str. (Kreuzberg) in beiden Richtungen zwischen Bernburger Str. und Hafenplatz Baustelle, Straße vollständig gesperrt ausgeschildert (bis Ende 1.2009)',
          'from' => 1230474690,
          'id' => 1525,
-         'data' => 'userdel	2::inwork 8487,10897 8542,11061
+         'data' => 'userdel	2::inwork 8483,10900 8536,11063
 ',
          'type' => 'gesperrt'
        },
@@ -645,7 +645,7 @@ push @temp_blocking,
          'text' => 'Nöldnerstr. (Lichtenberg) Richtung Karlshorster Str. zwischen Lückstr. und Karlshorster Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 01.2009)',
          'from' => 1228340492,
          'id' => 1547,
-         'data' => 'userdel	1::inwork 16032,10842 15670,10800 15396,10767 15266,10791
+         'data' => 'userdel	1::inwork 16032,10842 15670,10800 15388,10758 15272,10790
 ',
          'type' => 'gesperrt'
        },

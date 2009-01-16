@@ -198,6 +198,9 @@ XXX: currently category_color.category is used instead of line_color.category
 XXX: Maybe use C<item_color> instead of C<line_color>, because colors
 apply also to points and areas!
 
+XXX: Hmmm, it seems that str_color is (also?) in use, see
+tmp/streets-accurate.bbd
+
 =item C<line_width: I<width>>
 
 =item C<line_width.I<category>: I<width>>

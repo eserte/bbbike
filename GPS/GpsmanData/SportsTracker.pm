@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SportsTracker.pm,v 1.1 2009/01/13 22:06:38 eserte Exp $
+# $Id: SportsTracker.pm,v 1.2 2009/01/13 22:57:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ package GPS::GpsmanData::SportsTracker;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 use XML::LibXML::Reader;
 
@@ -87,10 +87,11 @@ sub load {
 	$reader->nextElement("activity") == 1
 	    or die "Cannot find activity element";
 	my $activity = $reader->copyCurrentNode(1);
-	my $activity_name = $activity->findvalue("./name"); # XXX use name or oid?
-	my $srt_vehicle = ($activity_name eq 'Walking' ? 'pedes' :
-			   $activity_name eq 'Running' ? 'pedes' :
-			   $activity_name eq 'Cycling' ? 'bike' :
+	#my $activity_name = $activity->findvalue("./name");
+	my $activity_oid  = $activity->findvalue("./oid");
+	my $srt_vehicle = ($activity_oid == 0 ? 'pedes' : # 'Walking'
+			   $activity_oid == 1 ? 'pedes' : # 'Running'
+			   $activity_oid == 2 ? 'bike' :  # 'Cycling'
 			   undef);
 
 	$reader->nextElement("events") == 1

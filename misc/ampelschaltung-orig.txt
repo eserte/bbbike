@@ -2,12 +2,12 @@
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Do, 22.10.1998
-8594,8773     Dudenstr./Katzbachstr.             O->W       11:24:12
+8594,8777     Dudenstr./Katzbachstr.             O->W       11:24:12
 8598,9074     Katzbachstr./Monumentenstr.        S->N       11:25:10  11:24:45
 8598,9264     Katzbachstr./Kreuzbergstr.         S->N                 11:25:45
 8595,9495     Katzbachstr./Yorckstr.             S->N   60  11:26:00  11:26:10
 7829,9723     Goebenstr./Kulmer Str.             O->W       11:28:32
-7941,9686     Goebenstr./Mansteinstr.            O->W                 11:28:52
+7938,9694     Goebenstr./Mansteinstr.            O->W                 11:28:52
 7866,9918     Bülowstr./Denewitzplatz            S->N       11:29:40
 7579,10183    Bülowstr./Potsdamer Str.           O->W       11:31:10  11:30:30
 7413,10244    Bülowstr./Frobenstr.               O->W       11:31:35? 11:31:00
@@ -23,9 +23,9 @@ Do, 22.10.1998
 5383,11834    Str. des 17 Juni/Müller-Breslau    N->S       14:41:12  14:41:22
 5542,11075    Hardenbergplatz/Hardenbergstr.     N->S       14:44:10
 5652,11004    Budapester Str./Kantstr.           W->O       14:44:50?
-6040,10751    Tauentzienstr./Nürnberger Str.     W->O       14:46:58  14:46:18
+6025,10746    Tauentzienstr./Nürnberger Str.     W->O       14:46:58  14:46:18
 6234,10629    Tauentzienstr./Wittenbergpl (1)    W->O       14:47:25
-6536,10520    Kleiststr./Martin-Luther-Str.      W->O       14:48:38  14:47:58
+6532,10529    Kleiststr./Martin-Luther-Str.      W->O       14:48:38  14:47:58
 6753,10446    Kleiststr./Eisenacher Str.         W->O       14:49:30  14:48:55
 7033,10328    Kleiststr./Maaßenstr.              W->O       14:50:08
 7413,10244    Bülowstr./Frobenstr.               W->O   60  14:50:35  14:51:00
@@ -43,12 +43,12 @@ Sa, 24.10.1998
                                                             18:17:16  18:17:46
                                                             18:19:36  18:20:08
                                                             18:20:46  18:21:18
-9222,8787     Dudenstr./Mehringdamm              W->O   70            18:13:52
+9229,8785     Dudenstr./Mehringdamm              W->O   70            18:13:52
                                                             18:15:52  18:15:02
                                                                       18:16:12
                                                             18:18:12
-8293,8768     Dudenstr./Loewenhardtdamm          O->W   60  18:22:53  18:22:20
-8594,8773     Dudenstr./Katzbachstr.             O->W   70  18:22:25  18:22:53
+8291,8773     Dudenstr./Loewenhardtdamm          O->W   60  18:22:53  18:22:20
+8594,8777     Dudenstr./Katzbachstr.             O->W   70  18:22:25  18:22:53
 8598,9264     Katzbachstr./Kreuzbergstr.         S->N   70  18:25:46  18:25:06
 8598,9074     Katzbachstr./Monumentenstr.        S->N   70  18:25:42  18:25:15
 8595,9495     Katzbachstr./Yorckstr.             S->N   60  18:27:00  18:27:10
@@ -58,28 +58,28 @@ Sa, 24.10.1998
 9334,9670     Yorckstr./Mehringdamm              W->O   60  18:34:25  18:34:45
 9784,9519     Gneisenaustr./Zossener Str.        W->O   60  18:35:57  18:36:23
 9532,9600     Gneisenaustr./Nostitzstr.          W->O   60  18:36:40  18:37:05
-10189,9403    Gneisenaustr./Baerwaldstr.         W->O   60  18:38:28  18:38:54
+10196,9400    Gneisenaustr./Baerwaldstr.         W->O   60  18:38:28  18:38:54
 9334,9670     Mehringdamm/Gneisenaustr.          S->N   60  18:39:55  18:40:15
-9444,10000    Mehringdamm/Blücherstr. (Auto)     S->N   70  18:41:25  18:41:50
-9401,10199    Mehringdamm/Tempelhofer Ufer       S->N   70  18:43:51  18:43:01
-9811,10055    Blücherstr./Zossener Str.          W->O   70  18:45:23  18:45:48
-9865,10286    Zossener Str./Gitschiner Str.      S->N   70  18:47:55  18:48:12
+9448,10014    Mehringdamm/Blücherstr. (Auto)     S->N   70  18:41:25  18:41:50
+9416,10196    Mehringdamm/Tempelhofer Ufer       S->N   70  18:43:51  18:43:01
+9827,10051    Blücherstr./Zossener Str.          W->O   70  18:45:23  18:45:48
+9873,10285    Zossener Str./Gitschiner Str.      S->N   70  18:47:55  18:48:12
 10122,10294   Gitschiner Str./Alexandrinnens.    W->O   70  18:49:52  18:50:28
 10605,10312   Gitschiner Str./Prinzenstr.        W->O   70  18:51:37  18:52:12
-10339,9818    Baerwaldstr./Urbanstr.             N->S   70  18:56:03  18:56:22
-10298,9649    Baerwaldstr./Blücherstr.           N->S   50  18:58:01  18:57:26
-10189,9403    Baerwaldstr./Gneisenaustr.         N->S   60  19:00:01  19:00:16
-10556,9294    Gneisenaustr./Bergmannstr.         W->O   60  19:02:54  19:02:22
-10719,9259    Gneisenaustr./Lilienthalstr.       W->O   60  19:03:56  19:03:26
+10357,9813    Baerwaldstr./Urbanstr.             N->S   70  18:56:03  18:56:22
+10306,9640    Baerwaldstr./Blücherstr.           N->S   50  18:58:01  18:57:26
+10196,9400    Baerwaldstr./Gneisenaustr.         N->S   60  19:00:01  19:00:16
+10564,9292    Gneisenaustr./Bergmannstr.         W->O   60  19:02:54  19:02:22
+10713,9260    Gneisenaustr./Lilienthalstr.       W->O   60  19:03:56  19:03:26
 10213,8665    Columbiadamm/Golßener Str.         W->O   70  19:09:22  19:08:58
 9801,8683     Columbiadamm/Friesenstr.           O->W   70  19:09:50  19:10:25
 9395,8726     Columbiadamm/Pl. der Luftbr.       O->W   70  19:13:04  19:13:35
-9222,8787     Columbiadamm/Mehringdamm           O->W   70  19:14:11  19:14:33
-9224,8584     Pl. der Luftbr./Te-Damm            O->W   70  19:17:44  19:17:56
-9224,8584     Pl. der Luftbr./Te-Damm            N->S   70  19:19:18  19:18:47
-9222,8787     Te-Damm/Columbiadamm (Auto)        S->N   70  19:20:34  19:21:01
-9222,8787     Te-Damm/Columbiadamm (Rad)         S->N                 +5/10s?
-9221,8732     Te-Damm/Manfred-v.-Richthofens.    N->S   70  19:21:31  19:21:04
+9229,8785     Columbiadamm/Mehringdamm           O->W   70  19:14:11  19:14:33
+9233,8597     Pl. der Luftbr./Te-Damm            O->W   70  19:17:44  19:17:56
+9233,8597     Pl. der Luftbr./Te-Damm            N->S   70  19:19:18  19:18:47
+9229,8785     Te-Damm/Columbiadamm (Auto)        S->N   70  19:20:34  19:21:01
+9229,8785     Te-Damm/Columbiadamm (Rad)         S->N                 +5/10s?
+9229,8718     Te-Damm/Manfred-v.-Richthofens.    N->S   70  19:21:31  19:21:04
               Mehringdamm/Fidicinstr.            S->N   ?   19:23:17  19:23:42
 9248,9350     Mehringdamm/Kreuzbergs. (Auto)     S->N   70  19:24:38  19:25:10
 9248,9350     Mehringdamm/Kreuzbergs. (Rad)      S->N                 +5s
@@ -95,23 +95,23 @@ Sa, 24.10.1998
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mo, 26.10.1998
-8594,8773     Dudenstr./Katzbachstr.             O->W       12:24:42  12:25:12
+8594,8777     Dudenstr./Katzbachstr.             O->W       12:24:42  12:25:12
 7795,8765     Kolonnenstr./Hohenfriedbergstr.    O->W       12:27:00
-7709,8770     Kolonnenstr./Naumannstr.           O->W                 12:27:48
-7570,8863     Kolonnenstr./Czeminskistr.         O->W       12:28:10
+7709,8777     Kolonnenstr./Naumannstr.           O->W                 12:27:48
+7563,8871     Kolonnenstr./Czeminskistr.         O->W       12:28:10
 7325,8936     Kolonnenstr./Crellestr.            O->W       12:29:30  12:28:55
 7275,8960     Kolonnenstr./Hauptstr.             O->W       12:29:33
 7110,9024     Belziger Str./Akazienstr.          O->W       12:32:22
 6860,8878     Belziger Str./Eisenacher Str.      O->W   40  12:32:24  12:32:34
 6460,8688     Belziger S./M.-Luther-S. (Auto)    O->W   60  12:35:00  12:35:07
-6456,8808     M.-Luther-S./Badensche Str.        S->N       12:36:14
-6447,9191     M.-Luther-S./Grunewaldstr.         S->N       12:37:37  12:37:02
+6449,8807     M.-Luther-S./Badensche Str.        S->N       12:36:14
+6440,9192     M.-Luther-S./Grunewaldstr.         S->N       12:37:37  12:37:02
 6445,9538     M.-Luther-S./Barbarossastr.        S->N       12:38:12
 6502,9782     M.-Luther-S./Hohenstaufenstr.      S->N       12:39:14
 6514,10088    M.-Luther-S./Motzstr.              S->N       12:39:53
 6494,10440    M.-Luther-S./Lietzenburger Str.    S->N                 12:40:45
-6536,10520    M.-Luther-S./Kleiststr. (Auto)     S->N   70? 12:42:10  12:41:33
-6536,10520    M.-Luther-S./Kleiststr. (Rad)      S->N   70? 12:42:10  12:41:25
+6532,10529    M.-Luther-S./Kleiststr. (Auto)     S->N   70? 12:42:10  12:41:33
+6532,10529    M.-Luther-S./Kleiststr. (Rad)      S->N   70? 12:42:10  12:41:25
 6353,10583    Kleiststr./Bayreuther Str.         O->W                 12:43:55
 6484,10847    Keithstr./Kurfürstenstr.           S->N       12:44:45
 4981,12252    Marchstr./Einsteinufer             SO->NO     13:00:48
@@ -138,69 +138,69 @@ Mo, 26.10.1998
 5773,10318    Lietzenburger/Nürnberger (Auto)    W->O   60  16:45:06  16:45:22
 5773,10318    Lietzenburger/Nürnberger (Rad)     W->O                 +5s?
 6494,10440    Lietzenburger/Martin-Luther-S      W->O       16:48:37  16:47:52
-6536,10520    M.-Luther-S./Kleiststr.            S->N       16:48:57
+6532,10529    M.-Luther-S./Kleiststr.            S->N       16:48:57
 6753,10446    Kleiststr./Eisenacher Str.         O->W       16:49:28
 7033,10328    Kleiststr./Maaßenstr.              O->W       16:50:06
 7413,10244    Bülowstr./Frobenstr.               O->W   60  16:50:33  16:50:57
 7579,10183    Bülowstr./Potsdamer Str.           O->W   70  16:51:33  16:51:55
 7866,9918     Bülowstr./Denewitzplatz            N->S       16:54:28  16:53:49
 7829,9723     Kulmer Str./Goebenstr.             N->O       16:54:35
-8188,9610     Yorckstr./Bautzener Str.           W->O   70  16:56:16  16:55:46
+8192,9619     Yorckstr./Bautzener Str.           W->O   70  16:56:16  16:55:46
 8595,9495     Yorckstr./Katzbachstr. (Auto)      W->O   70  16:57:50  16:57:18
 8595,9495     Yorckstr./Katzbachstr. (Rad)       W->O   70            16:58:02
 8598,9264     Katzbachstr./Kreuzbergstr.         N->S   70  16:59:10  16:59:33
 8598,9074     Katzbachstr./Monumentenstr.        N->S       17:00:26  17:01:03
-8594,8773     Katzbachstr./Dudenstr.             N->S   70  17:02:39  17:01:54
+8594,8777     Katzbachstr./Dudenstr.             N->S   70  17:02:39  17:01:54
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mo, 26.10.1998
-9222,8787     Dudenstr./Tempelhofer Damm         W->O       21:07:48
+9229,8785     Dudenstr./Tempelhofer Damm         W->O       21:07:48
 9395,8726     Columbiadamm/Platz der Luftbr.     W->O       21:08:15
 9801,8683     Columbiadamm/Friesenstr.           W->O       21:09:09
 11632,8302    Columbiadamm/Fontanestr.           W->O       21:14:18  21:14:00
-11892,8372    Flughafenstr./Hermannstr (Auto)    W->O       21:15:25? 21:14:50
-11892,8372    Flughafenstr./Hermannstr (Rad)     W->O       21:15:25? 21:14:40
+11898,8362    Flughafenstr./Hermannstr (Auto)    W->O       21:15:25? 21:14:50
+11898,8362    Flughafenstr./Hermannstr (Rad)     W->O       21:15:25? 21:14:40
 11824,8995    Hermannstr./Karl-Marx-Str.         S->N       21:17:57  21:17:25
 12156,8760    Karl-Marx-Str./Reuterstr.          NW->SO 50  21:18:47  21:18:17
 12483,8834    Weichselstr./Sonnenallee           S->N   50  21:19:58  21:20:10
-13846,9296    Kiefholzstr./Elsenstr.             O->W   70  21:29:03  21:29:18
+13849,9310    Kiefholzstr./Elsenstr.             O->W   70  21:29:03  21:29:18
 14089,9610    Elsenstr./Am Treptower P (Auto)    S->N   60  21:30:58  21:31:12
 14089,9610    Elsenstr./Am Treptower P (Rad)     S->N                 +5s
-14189,9748    Elsenstr./Puschkinallee (Auto)     S->N   60  21:31:07  21:31:20
-14189,9748    Elsenstr./Puschkinallee (Rad)      S->N                 +5s
-14564,10262   Treptowers/Stralauer A (Auto)      S->N   60  21:34:10  21:34:35
-14564,10262   Treptowers/Stralauer A (Rad)       S->N                 +15s
+14193,9746    Elsenstr./Puschkinallee (Auto)     S->N   60  21:31:07  21:31:20
+14193,9746    Elsenstr./Puschkinallee (Rad)      S->N                 +5s
+14558,10264   Treptowers/Stralauer A (Auto)      S->N   60  21:34:10  21:34:35
+14558,10264   Treptowers/Stralauer A (Rad)       S->N                 +15s
 14641,10552   Markgrafendamm/Persiusstr.         S->N       21:35:25  21:35:55
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Di, 27.10.1998
-15255,10751   Hauptstr/Karlshorster Str          N->O       08:45:50  08:46:20
-15255,10751   Hauptstr/Karlshorster Str (Rad)    O->W       08:46:28
+15263,10747   Hauptstr/Karlshorster Str          N->O       08:45:50  08:46:20
+15263,10747   Hauptstr/Karlshorster Str (Rad)    O->W       08:46:28
 14641,10552   Markgrafendamm/Persiusstr.         N->S       08:48:42
-14564,10262   Treptowers/Stralauer A (Auto)      N->S       08:49:58
-14189,9748    Elsenstr./Puschkinallee (Auto)     N->S   90  08:51:02  08:51:31
+14558,10264   Treptowers/Stralauer A (Auto)      N->S       08:49:58
+14193,9746    Elsenstr./Puschkinallee (Auto)     N->S   90  08:51:02  08:51:31
 13614,9333    Karl-Kunger-Str/Wildenbruchstr.    O->W       08:55:24
-13337,9028    Wildenbruchstr./Harzer Str.        N->S       08:56:13  08:56:43
+13335,9019    Wildenbruchstr./Harzer Str.        N->S       08:56:13  08:56:43
 12925,8494    Wildenbruchstr./Sonnenallee        N->SW      08:58:58  08:59:14
 12771,8439    Erkstr./Donaustr.                  NO->SW     08:59:43
 12598,8390    Erkstr./Karl-Marx-Str.             NO->NW     09:01:20
 12500,8504    Karl-Marx-Str./Flughafenstr.       SO->NW     09:02:00
 12195,8436    Flughafenstr./Reuterstr.           O->W       09:02:53
-11892,8372    Flughafenstr./Hermannstr.          O->W   60  09:03:35  09:03:45
+11898,8362    Flughafenstr./Hermannstr.          O->W   60  09:03:35  09:03:45
 11632,8302    Columbiadamm/Fontanestr.           O->W       09:05:44
 10213,8665    Columbiadamm/Golßener Str.         O->W       09:09:50  09:09:15
 9801,8683     Columbiadamm/Friesenstr.           O->W       09:11:27  09:10:53
 9395,8726     Columbiadamm/Platz der Luftbr      O->W   70  09:12:22  09:12:52
-9222,8787     Columbiadamm/Mehringdamm           O->W   80  09:13:20  09:13:44
+9229,8785     Columbiadamm/Mehringdamm           O->W   80  09:13:20  09:13:44
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Di, 27.10.1998
-8594,8773     Dudenstr./Katzbachstr.             O->W       12:13:53  12:13:10
+8594,8777     Dudenstr./Katzbachstr.             O->W       12:13:53  12:13:10
 7795,8765     Kolonnenstr./Hohenfriedbergstr.    O->W       12:16:10  12:15:45
-7709,8770     Kolonnenstr./Naumannstr.           O->S       12:16:55  12:16:10
+7709,8777     Kolonnenstr./Naumannstr.           O->S       12:16:55  12:16:10
 7497,8168     Torgauer Str./Gotenstr.            W->O       12:19:43  12:19:15
 6935,8208     Dominicusstr./Ebersstr. (Auto)     SO->NW     12:22:10  12:21:42
 6935,8208     Dominicusstr./Ebersstr. (Rad)      SO->NW               +12s
@@ -234,34 +234,34 @@ Do, 29.10.1998
               Mehringdamm/Fidicinstr.            S->N       14:25:49  14:25:15
 9248,9350     Mehringdamm/Kreuzbergstr.          S->N       14:26:12
 9334,9670     Mehringdamm/Gneisenaustr.          S->N       14:27:53  14:27:13
-9444,10000    Mehringdamm/Blücherstr.            S->N       14:28:52
-9444,10000    Mehringdamm/Blücherstr.            O->W                 14:29:53
-9444,10000    Mehringdamm/Blücherstr.            O->W       14:56:18  14:55:33
-9444,10000    Mehringdamm/Blücherstr.            N->S       14:56:52
+9448,10014    Mehringdamm/Blücherstr.            S->N       14:28:52
+9448,10014    Mehringdamm/Blücherstr.            O->W                 14:29:53
+9448,10014    Mehringdamm/Blücherstr.            O->W       14:56:18  14:55:33
+9448,10014    Mehringdamm/Blücherstr.            N->S       14:56:52
 9334,9670     Mehringdamm/Yorckstr. (Auto)       N->S   60  14:57:54  14:58:13
 9334,9670     Mehringdamm/Yorckstr. (Rad)        N->S                 +7s
 9248,9350     Mehringdamm/Kreuzbergstr (Auto)    N->S   80  14:59:32  15:00:13
 9248,9350     Mehringdamm/Kreuzbergstr (Rad)     N->S                 +5s
-9222,8787     Mehringdamm/Dudenstr. (Auto)       N->S   80  15:02:50  15:03:25
-9222,8787     Mehringdamm/Dudenstr. (Rad)        N->S                 +15s
+9229,8785     Mehringdamm/Dudenstr. (Auto)       N->S   80  15:02:50  15:03:25
+9229,8785     Mehringdamm/Dudenstr. (Rad)        N->S                 +15s
 8982,8781     Dudenstr./Methfesselstr.           O->W       15:05:06  15:05:28
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Do, 29.10.1998
-8293,8768     Dudenstr./Loewenhardtdamm          W->O   60  19:47:44  19:48:09
-8594,8773     Dudenstr./Katzbachstr.             W->O       19:49:24
+8291,8773     Dudenstr./Loewenhardtdamm          W->O   60  19:47:44  19:48:09
+8594,8777     Dudenstr./Katzbachstr.             W->O       19:49:24
 8982,8781     Dudenstr./Methfesselstr.           W->O       19:50:05
-9222,8787     Dudenstr./Mehringdamm              W->O       19:51:37  19:50:39
+9229,8785     Dudenstr./Mehringdamm              W->O       19:51:37  19:50:39
 9248,9350     Mehringdamm/Kreuzbergstr.          S->N       19:52:52
 9334,9670     Mehringdamm/Gneisenaustr.          S->N       19:53:54
 9532,9600     Gneisenaustr/Nostitzstr            W->O       19:54:38
 9784,9519     Gneisenaustr/Zossener Str.         W->O                 19:55:23
 	      Gneisenaustr/Mittenwalder Str.	 W->O		      19:55:35
-10189,9403    Gneisenaustr/Baerwaldstr.          W->O       19:56:25
-10556,9294    Gneisenaustr/Südstern 1            W->O       19:57:53  19:57:20
-10719,9259    Gneisenaustr/Südstern 2            W->O                 19:58:25
-11131,9189    Hasenheide/Graefestr.              W->O       19:59:18  19:58:49
+10196,9400    Gneisenaustr/Baerwaldstr.          W->O       19:56:25
+10564,9292    Gneisenaustr/Südstern 1            W->O       19:57:53  19:57:20
+10713,9260    Gneisenaustr/Südstern 2            W->O                 19:58:25
+11136,9183    Hasenheide/Graefestr.              W->O       19:59:18  19:58:49
 11824,8995    Hasenheide/Hermannstr.             W->O       20:01:43  20:01:01
 12156,8760    Karl-Marx-Str./Reuterstr.          W->O       20:02:17  20:02:47
 12500,8504    Karl-Marx-Str./Flughafenstr.       NW->SO     20:04:00  20:03:18
@@ -269,37 +269,37 @@ Do, 29.10.1998
 12771,8439    Erkstr./Donaustr.                  W->O       20:06:25  20:05:50
 12925,8494    Erkstr./Sonnenallee                W->NO      20:06:49
 13029,8632    Wildenbruchstr./Weserstr.          SW->NO     20:06:59
-13337,9028    Wildenbruchstr./Harzer Str.        SW->NO     20:08:44
+13335,9019    Wildenbruchstr./Harzer Str.        SW->NO     20:08:44
 13614,9333    Wildenbruchstr./Karl-Kunger-Str.   SW->NO     20:09:38
 14089,9610    Elsenstr./Am Treptower Park        S->N   85  20:11:44  20:11:57
-14564,10262   Stralauer Str./Markgrafendamm      S->N       20:15:20  20:14:40
+14558,10264   Stralauer Str./Markgrafendamm      S->N       20:15:20  20:14:40
 14988,11130   Kynaststr./Marktstr.               S->N       20:18:54
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Fr, 30.10.1998
-15255,10751   Hauptstr./Karlshorster Str.        N->S       08:44:09  08:44:38
-15255,10751   Hauptstr./Karlshorster Str. (Rad)  O->W       08:44:46
+15263,10747   Hauptstr./Karlshorster Str.        N->S       08:44:09  08:44:38
+15263,10747   Hauptstr./Karlshorster Str. (Rad)  O->W       08:44:46
 14641,10552   Markgrafendamm/Persiusstr.         N->S       08:47:13
-14564,10262   Stralauer Str./Markgrafendamm      N->S       08:48:29
-14189,9748    Elsenstr./Puschkinallee            N->S   90  08:49:33  08:50:03
-13337,9028    Harzer Str./Wildenbruchstr.        NW->SO 70  09:00:34  08:59:38
+14558,10264   Stralauer Str./Markgrafendamm      N->S       08:48:29
+14193,9746    Elsenstr./Puschkinallee            N->S   90  08:49:33  08:50:03
+13335,9019    Harzer Str./Wildenbruchstr.        NW->SO 70  09:00:34  08:59:38
 12925,8494    Erkstr./Sonnenallee                NO->W      09:03:49
 12771,8439    Erkstr./Donaustr.                  O->W       09:04:34
 12195,8436    Flughafenstr./Reuterstr.           O->W   60  09:06:54  09:06:21
-11892,8372    Flughafenstr./Hermannstr.          O->W   60  09:06:36  09:06:46
+11898,8362    Flughafenstr./Hermannstr.          O->W   60  09:06:36  09:06:46
 11632,8302    Flughafenstr./Fontanestr.          O->W       09:10:44  09:10:13
 10213,8665    Columbiadamm/Golßener Str.         O->W   65  09:14:42  09:14:11
 9801,8683     Columbiadamm/Friesenstr.           O->W   70  09:16:19  09:15:47
 9395,8726     Columbiadamm/Platz der Luftbrücke  O->W   70  09:18:23  09:18:53
-9222,8787     Dudenstr./Mehringdamm              O->W   80  09:20:00  09:20:23
+9229,8785     Dudenstr./Mehringdamm              O->W   80  09:20:00  09:20:23
 8982,8781     Dudenstr./Methfesselstr.           O->W       09:22:05
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Sa, 31.10.1998
-8594,8773     Dudenstr./Katzbachstr.             O->W       12:58:04  12:57:22
-8293,8768     Dudenstr./Loewenhardtdamm          O->W       12:58:51  12:58:18
+8594,8777     Dudenstr./Katzbachstr.             O->W       12:58:04  12:57:22
+8291,8773     Dudenstr./Loewenhardtdamm          O->W       12:58:51  12:58:18
 7795,8765     Kolonnenstr./Hohenfriedbergstr.    O->W                 12:59:55
 7497,8916     Kolonnenstr./Feurigstr.            O->W       13:01:36  13:01:10
 6935,8208     Ebersstr/Dominicusstr.             NO->SW 60  13:05:49  13:05:04
@@ -313,7 +313,7 @@ Sa, 31.10.1998
 2770,10024    Westfälische Str./Kurfürstendamm   SO->NW 60  13:28:09
 2770,10024    Westfälische Str./Kurfürstendamm   O->W   60  13:29:28  13:29:01
 2532,9911     Kurfürstendamm/Schwarzbacher Str.  O->W       13:30:28
-2492,9865     Kurfürstendamm/Bornstedter Str.    O->W       13:31:33  13:31:09
+2482,9870     Kurfürstendamm/Bornstedter Str.    O->W       13:31:33  13:31:09
 1928,10728    Halenseestr./Messedamm (Rad)       S->N   60  13:36:43  13:36:13
 1928,10728    Halenseestr./Messedamm (Rad)       O->W   60  13:37:20  13:37:25
 2016,11034    Messedamm/Neue Kantstr. (Rad KS)   S->N   120 13:40:00  13:40:05
@@ -330,9 +330,9 @@ Sa, 31.10.1998
 # ----------------------------------------------------------------------------
 Sa, 31.10.1998
 1457,10168    Jaffestr./Messedamm (Rad)          W->O       15:50:35  15:49:58
-2392,9715     Rathenauplatz (Rad 1)              NW->NO 60  15:56:47  15:55:55
-2392,9715     Rathenauplatz (Rad 2)              NW->NO 60  15:57:52  15:57:17
-2492,9865     Kurfürstendamm/Bornstedter Str.    W->O       15:58:19
+2382,9722     Rathenauplatz (Rad 1)              NW->NO 60  15:56:47  15:55:55
+2382,9722     Rathenauplatz (Rad 2)              NW->NO 60  15:57:52  15:57:17
+2482,9870     Kurfürstendamm/Bornstedter Str.    W->O       15:58:19
 2532,9911     Kurfürstendamm/Schwarzbacher Str.  W->O       15:58:26
 2770,10024    Kurfürstendamm/Westfälische Str.   W->O   60  16:00:29  15:58:58
 3092,9886     Westfälische/Joachim-Friedrich-Str W->O       16:01:41  16:01:05
@@ -355,9 +355,9 @@ Sa, 31.10.1998
 7110,9024     Belziger Str./Akazienstr.          W->O   40  16:22:23  16:22:31
 7201,8870     Akazienstr./Hauptstr.              NW->SO     16:23:29
 7497,8916     Kolonnenstr./Feurigstr.            W->O       16:24:25
-7570,8863     Kolonnenstr./Naumannstr.           W->O       16:25:50  16:25:10
-8293,8768     Dudenstr./Loewenhardtdamm          W->O   70  16:27:30  16:26:55
-8594,8773     Dudenstr./Katzbachstr              W->O   70  16:27:44  16:28:11
+7563,8871     Kolonnenstr./Naumannstr.           W->O       16:25:50  16:25:10
+8291,8773     Dudenstr./Loewenhardtdamm          W->O   70  16:27:30  16:26:55
+8594,8777     Dudenstr./Katzbachstr              W->O   70  16:27:44  16:28:11
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -366,23 +366,23 @@ Mo,  2.11.1998
 9248,9350     Kreuzbergstr/Mehringdamm (Rad)     W->O       11:47:16
 9753,9252     Bergmannstr/Zossener Str.          W->O       11:47:58  11:48:34
 9793,9241     Bergmannstr/Friesenstr. (Rad)      W->O       11:49:18
-10189,9403    Baerwaldstr/Gneisenaustr.          S->N                 11:50:16
-10719,9259    Südstern/Lilienthalstr.            W->O                 11:51:28
-10719,9259    Südstern/Lilienthalstr.            S->N       11:51:37  11:51:45
-11083,9753    Grimmstr/Dieffenbachstr.           S->N   50  11:53:32  11:53:07
-11016,9599    Grimmstr/Urbanstr.                 S->N       11:53:38
+10196,9400    Baerwaldstr/Gneisenaustr.          S->N                 11:50:16
+10713,9260    Südstern/Lilienthalstr.            W->O                 11:51:28
+10713,9260    Südstern/Lilienthalstr.            S->N       11:51:37  11:51:45
+11089,9751    Grimmstr/Dieffenbachstr.           S->N   50  11:53:32  11:53:07
+11023,9597    Grimmstr/Urbanstr.                 S->N       11:53:38
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mo,  2.11.1998
-11016,9599    Grimmstr/Urbanstr.                 N->S       14:29:58
-10719,9259    Körtestr/Südstern                  N->S       14:31:33
+11023,9597    Grimmstr/Urbanstr.                 N->S       14:29:58
+10713,9260    Körtestr/Südstern                  N->S       14:31:33
 9793,9241     Bergmannstr/Friesenstr. (Rad)      O->W                 11:34:14
 9753,9252     Bergmannstr/Zossener Str.          O->W       14:34:48
 9489,9312     Bergmannstr/Nostitzstr.            O->W       14:35:46  14:35:18
 9248,9350     Bergmannstr/Mehringdamm            O->W       14:36:25
 9248,9350     Bergmannstr/Mehringdamm (Rad)      N->S       14:36:53
-9222,8787     Mehringdamm/Dudenstr. (Rad)        N->S       14:38:48
+9229,8785     Mehringdamm/Dudenstr. (Rad)        N->S       14:38:48
 8982,8781     Dudenstr/Methfesselstr.            O->W       14:39:35  14:38:57
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
@@ -393,12 +393,12 @@ Fr,  6.11.1998
 9489,9312     Bergmannstr/Nostitzstr             W->O       12:06:07
 9753,9252     Bergmannstr/Zossener Str.          W->O       12:06:30
 9793,9241     Bergmannstr/Friesenstr (Rad)       W->O       12:07:50  12:07:06
-10719,9259    Südstern/Lilienthalstr             W->O       12:09:56
-10719,9259    Südstern/Lilienthalstr (Rad)       S->N       12:10:35
-10719,9259    Südstern/Lilienthalstr (Auto)      S->N       12:10:37
-11016,9599    Urbanstr/Grimmstr (Rad)            S->N       12:12:09
-11016,9599    Urbanstr/Grimmstr (Auto)           S->N       12:12:11
-11083,9753    Grimmstr/Dieffenbachstr            S->N       12:12:42
+10713,9260    Südstern/Lilienthalstr             W->O       12:09:56
+10713,9260    Südstern/Lilienthalstr (Rad)       S->N       12:10:35
+10713,9260    Südstern/Lilienthalstr (Auto)      S->N       12:10:37
+11023,9597    Urbanstr/Grimmstr (Rad)            S->N       12:12:09
+11023,9597    Urbanstr/Grimmstr (Auto)           S->N       12:12:11
+11089,9751    Grimmstr/Dieffenbachstr            S->N       12:12:42
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -407,22 +407,22 @@ Di, 10.11.1998
 9334,9670     Mehringdamm/Gneisenaustr (Auto)    S->N                 12:29:15
 9532,9600     Gneisenaustr/Nostitzstr.           W->O       12:29:40
 9784,9519     Gneisenaustr/Zossener Str.         W->O       12:30:58  12:30:23
-10189,9403    Gneisenaustr/Baerwaldstr.          W->O   60  12:31:28  12:31:53
-10556,9294    Gneisenaustr/Bergmannstr.          W->O   60  12:32:54  12:33:22
-10719,9259    Südstern/Lilienthalstr. (Auto)     W->O       12:33:56
-10719,9259    Südstern/Lilienthalstr. (Rad)      W->O       12:33:56  12:34:23
-11016,9599    Grimmstr/Urbanstr. (Rad)           S->N       12:36:28
-11016,9599    Grimmstr/Urbanstr. (Auto)          S->N       12:36:30
-11083,9753    Grimmstr/Dieffenbachstr.           S->N       12:36:53
+10196,9400    Gneisenaustr/Baerwaldstr.          W->O   60  12:31:28  12:31:53
+10564,9292    Gneisenaustr/Bergmannstr.          W->O   60  12:32:54  12:33:22
+10713,9260    Südstern/Lilienthalstr. (Auto)     W->O       12:33:56
+10713,9260    Südstern/Lilienthalstr. (Rad)      W->O       12:33:56  12:34:23
+11023,9597    Grimmstr/Urbanstr. (Rad)           S->N       12:36:28
+11023,9597    Grimmstr/Urbanstr. (Auto)          S->N       12:36:30
+11089,9751    Grimmstr/Dieffenbachstr.           S->N       12:36:53
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Di, 10.11.1998
-11016,9599    Grimmstr/Urbanstr. (Rad)           N->S   70  16:29:48  16:30:06
-11016,9599    Grimmstr/Urbanstr. (Auto)          N->S   70  16:29:50  16:30:08
-11083,9753    Grimmstr/Dieffenbachstr.           N->S       16:29:53
-10719,9259    Südstern/Körtestr.                 N->S       16:32:09
-10189,9403    Baerwaldstr/Gneisenaustr.          S->N       16:33:53
+11023,9597    Grimmstr/Urbanstr. (Rad)           N->S   70  16:29:48  16:30:06
+11023,9597    Grimmstr/Urbanstr. (Auto)          N->S   70  16:29:50  16:30:08
+11089,9751    Grimmstr/Dieffenbachstr.           N->S       16:29:53
+10713,9260    Südstern/Körtestr.                 N->S       16:32:09
+10196,9400    Baerwaldstr/Gneisenaustr.          S->N       16:33:53
 9753,9252     Bergmannstr/Zossener Str.          O->W       16:35:14  16:34:28
 9793,9241     Bergmannstr/Friesenstr. (?)        O->W       16:35:24  16:34:39
 9489,9312     Bergmannstr/Nostitzstr.            O->W       16:35:57
@@ -431,31 +431,31 @@ Di, 10.11.1998
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Di, 10.11.1998
-7526,9782     Potsdamer Str/Goebenstr.           S->N       17:25:57  17:25:18
+7526,9791     Potsdamer Str/Goebenstr.           S->N       17:25:57  17:25:18
 7579,10183    Bülowstr/Potsdamer Str.            O->W       17:28:37
 7579,10183    Bülowstr/Potsdamer Str.            O->W                 17:29:47
 7413,10244    Bülowstr/Frobenstr.                O->W       17:30:35  17:30:00
 7033,10328    Bülowstr/Einemstr.                 O->W       17:32:02  17:31:24
 6753,10446    Kleiststr/Eisenacher Str.          O->W       17:33:30  17:32:56
-6536,10520    Kleiststr/An der Urania            O->W   60  17:33:34  17:33:45
-6137,10689    Tauentzienstr/Passauer Str.        O->W       17:35:52
-6040,10751    Tauentzienstr/Nürnberger Str.      O->W       17:35:58
-5797,10881    Tauentzienstr/Rankestr.            O->W   60  17:36:40  17:37:05
+6532,10529    Kleiststr/An der Urania            O->W   60  17:33:34  17:33:45
+6133,10679    Tauentzienstr/Passauer Str.        O->W       17:35:52
+6025,10746    Tauentzienstr/Nürnberger Str.      O->W       17:35:58
+5782,10884    Tauentzienstr/Rankestr.            O->W   60  17:36:40  17:37:05
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Di, 10.11.1998
-5797,10881    Tauentzienstr/Rankestr.            W->O       18:15:40
-6040,10751    Tauentzienstr/Nürnberger Str.      W->O   60  18:15:58  18:16:26
-6137,10689    Tauentzienstr/Passauer Str.        W->O       18:17:13
+5782,10884    Tauentzienstr/Rankestr.            W->O       18:15:40
+6025,10746    Tauentzienstr/Nürnberger Str.      W->O   60  18:15:58  18:16:26
+6133,10679    Tauentzienstr/Passauer Str.        W->O       18:17:13
 6234,10629    Wittenbergplatz                    W->O       18:18:23  18:17:54
 6353,10583    Kleiststr/Bayreuther Str.          W->O       18:18:34
-6536,10520    Kleiststr/An der Urania            W->O       18:19:31  18:18:49
+6532,10529    Kleiststr/An der Urania            W->O       18:19:31  18:18:49
 	      Kleiststr/Motzstr.		 W->O	    18:20:49
 7033,10328    Kleiststr/Maaßenstr.               W->O   60  18:21:09  18:21:24
 7413,10244    Bülowstr/Frobenstr.                W->O       18:22:36
 7866,9918     Dennewitzplatz                     N->S       18:25:10
-8188,9610     Yorckstr./Bautzener Str.           W->O       18:26:57
+8192,9619     Yorckstr./Bautzener Str.           W->O       18:26:57
 8595,9495     Yorckstr/Katzbachstr.              W->O       18:28:32
 8777,9601     Yorckstr/Möckernstr.               SW->NO               18:29:17
 9043,9745     Yorckstr/Großbeerenstr.            W->O       18:30:07  18:29:35
@@ -463,28 +463,28 @@ Di, 10.11.1998
 9532,9600     Gneisenaustr/Nostitzstr            W->O       18:31:20
 9248,9350     Mehringdamm/Kreuzbergstr (Rad)     N->S                 18:32:09
 9248,9350     Mehringdamm/Kreuzbergstr (Auto)    N->S       18:32:53  18:32:15
-9222,8787     Mehringdamm/Dudenstr               N->S       18:33:32
+9229,8785     Mehringdamm/Dudenstr               N->S       18:33:32
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mi, 11.11.1998
-9222,8787     Mehringdamm/Dudenstr               N->S       11:57:02
-9222,8787     Mehringdamm/Dudenstr               O->W       11:57:42
+9229,8785     Mehringdamm/Dudenstr               N->S       11:57:02
+9229,8785     Mehringdamm/Dudenstr               O->W       11:57:42
 9801,8683     Columbiadamm/Friesenstr            O->W       11:59:12
 10213,8665    Columbiadamm/Golßener Str          O->W       11:59:51
 10213,8665    Columbiadamm/Golßener Str (Rad)    S->N       12:00:43
-10719,9259    Lilienthalstr/Südstern (Rad)       S->N       12:03:37
-10719,9259    Lilienthalstr/Südstern (Auto)      S->N       12:03:39  12:02:46
-11016,9599    Urbanstr/Grimmstr (Rad)            S->N       12:05:48
-11083,9753    Grimmstr/Dieffenbachstr            S->N       12:05:13  12:05:38
+10713,9260    Lilienthalstr/Südstern (Rad)       S->N       12:03:37
+10713,9260    Lilienthalstr/Südstern (Auto)      S->N       12:03:39  12:02:46
+11023,9597    Urbanstr/Grimmstr (Rad)            S->N       12:05:48
+11089,9751    Grimmstr/Dieffenbachstr            S->N       12:05:13  12:05:38
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mi, 11.11.1998
 10605,10312   Prinzenstr/Gitschiner Str          S->N   70  12:06:05  12:06:17
 10122,10294   Gitschiner Str/Alexandrinnenstr.   O->W       12:08:12
-9865,10286    Gitschiner Str/Lindenstr           O->W       12:08:57
-9392,10260    Hallesches Ufer/Wilhelmstr         O->W       12:10:30  12:11:25
+9873,10285    Gitschiner Str/Lindenstr           O->W       12:08:57
+9404,10250    Hallesches Ufer/Wilhelmstr         O->W       12:10:30  12:11:25
 8578,10672    Hallesches Ufer/Schöneberger Str   SO->NW     12:14:15  12:13:43
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
@@ -493,20 +493,20 @@ Do, 12.11.1998
 9248,9350     Mehringdamm/Kreuzbergstr (Rad)     W->O       14:00:27
 9248,9350     Mehringdamm/Kreuzbergstr (Rad)     S->N       14:00:56
 9334,9670     Mehringdamm/Gneisenaustr           S->N       14:01:55
-9811,10055    Blücherstr/Zossener Str            W->O       14:03:42
+9827,10051    Blücherstr/Zossener Str            W->O       14:03:42
 10134,9860    Urbanstr/Blücherstr.               W->O       14:04:37
-10339,9818    Urbanstr/Baerwaldstr.              W->O       14:05:29
+10357,9813    Urbanstr/Baerwaldstr.              W->O       14:05:29
 10558,9763    Urbanstr/Geibelstr.                W->O       14:06:09
-11016,9599    Urbanstr/Körtestr.                 W->O       14:07:16  14:06:37
-11016,9599    Urbanstr/Körtestr.                 S->N       14:07:59
+11023,9597    Urbanstr/Körtestr.                 W->O       14:07:16  14:06:37
+11023,9597    Urbanstr/Körtestr.                 S->N       14:07:59
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Fr, 13.11.1998
-9222,8787     Dudenstr/Tempelhofer Damm          W->O       19:17:01  19:16:01
+9229,8785     Dudenstr/Tempelhofer Damm          W->O       19:17:01  19:16:01
 10213,8665    Columbiadamm/Golßener Str          W->O       19:17:52
-11892,8372    Flughafenstr/Hermannstr (Auto)     W->O       19:20:35
-11892,8372    Flughafenstr/Hermannstr (Rad)      W->O       19:20:34  19:20:45
+11898,8362    Flughafenstr/Hermannstr (Auto)     W->O       19:20:35
+11898,8362    Flughafenstr/Hermannstr (Rad)      W->O       19:20:34  19:20:45
 11979,8014    Hermannstr/Werbellinstr            N->S       19:21:27
 12980,7597    Thomasstr/Karl-Marx-Str.           W->O       19:25:00  19:24:05
 13058,7165    Karl-Marx-Str/Emser Str.           N->S       19:25:59
@@ -520,14 +520,14 @@ Sa, 14.11.1998
 9248,9350     Kreuzbergstr/Mehringdamm (Rad)     S->N       14:50:14
 9334,9670     Mehringdamm/Gneisenaustr (Auto)    S->N   60  14:50:55  14:51:15
 9334,9670     Mehringdamm/Gneisenaustr (Rad)     S->N   60  14:50:55  14:51:08
-9444,10000    Mehringdamm/Blücherstr (Rad)       S->N                 15:53:05
-9444,10000    Mehringdamm/Blücherstr (Auto)      S->N                 15:53:09
-9811,10055    Blücherstr/Zossener Str            W->O       14:54:22  14:53:39
-9811,10055    Blücherstr/Zossener Str            S->N       14:55:00
-9865,10286    Zossener Str/Gitschiner Str        S->N       14:55:45
-9757,10589    Lindenstr/Franz-Klühs-Str          S->N       14:56:10  14:56:45
-10012,11256   Lindenstr/Kochstr                  S->N   70  14:58:01
-10499,12044   Gertraudenstr/Fischerinsel         SW->NO 70  15:01:41  15:02:01
+9448,10014    Mehringdamm/Blücherstr (Rad)       S->N                 15:53:05
+9448,10014    Mehringdamm/Blücherstr (Auto)      S->N                 15:53:09
+9827,10051    Blücherstr/Zossener Str            W->O       14:54:22  14:53:39
+9827,10051    Blücherstr/Zossener Str            S->N       14:55:00
+9873,10285    Zossener Str/Gitschiner Str        S->N       14:55:45
+9770,10590    Lindenstr/Franz-Klühs-Str          S->N       14:56:10  14:56:45
+10020,11262   Lindenstr/Kochstr                  S->N   70  14:58:01
+10512,12039   Gertraudenstr/Fischerinsel         SW->NO 70  15:01:41  15:02:01
 10738,12364   Molkenmarkt                        SW->NO 70  15:03:35  15:03:55
 11134,12793   Grunerstr/Alexanderstr             SW->NO     15:06:57  15:06:07
 11228,12951   Grunerstr/Karl-Marx-Allee          S->N       15:08:02  15:06:55
@@ -550,14 +550,14 @@ Sa, 14.11.1998
 11154,14985   Danziger Str/Hagenauer Str         W->O       18:52:20
 11712,14868   Danziger Str/Prenzlauer Allee      W->O       18:54:45  18:53:51
 12040,14688   Danziger Str/Winsstr               W->O       18:55:15  18:55:43
-12338,14532   Danziger Str/Greifswalder Str      W->O       18:57:19  18:56:10
+12332,14526   Danziger Str/Greifswalder Str      W->O       18:57:19  18:56:10
 12630,14306   Danziger Str/Bötzowstr             NW->SO 80  18:57:19  18:57:47
 12912,14084   Danziger Str/Kniprodestr           NW->SO     18:59:14  18:59:40
 13334,13459   Danziger Str/Landsberger Allee     N->S   85? 19:01:16  19:01:34
 13437,13228   Petersburger Str/Kochhannstr       N->S       19:03:28
 13537,13003   Petersburger Str/Straßmannstr      N->S       19:04:38  19:03:48
-13792,12292   Frankfurter Tor (Auto)             N->S   90  19:06:12  19:06:35
-13792,12292   Frankfurter Tor (Rad)              N->S   90  19:06:06  19:06:30
+13785,12292   Frankfurter Tor (Auto)             N->S   90  19:06:12  19:06:35
+13785,12292   Frankfurter Tor (Rad)              N->S   90  19:06:06  19:06:30
 14208,12235   Frankfurter A/Niederbarnims (Rad)  W->O                 19:09:32
 14702,12157   Frankfurter Allee/Jungstr (Rad)    W->O       19:11:44  19:11:08
 14702,12157   Frankfurter Allee/Jungstr (Auto)   W->O       19:11:46  19:11:12
@@ -571,18 +571,18 @@ So, 15.11.1998
 9793,9241     Friesenstr/Bergmannstr             S->N                 21:04:13
 9753,9252     Bergmannstr/Zossener Str           O->W       19:04:57
 9784,9519     Zossener Str/Gneisenaustr.         S->N   50  19:05:13  19:05:23
-9811,10055    Zossener Str/Blücherstr.           S->N   50  19:07:33  19:07:40
+9827,10051    Zossener Str/Blücherstr.           S->N   50  19:07:33  19:07:40
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 So, 14.03.1999
 8616,8595     Boelckestr./Bayernring             O->W       14:36:30
-8594,8773     Dudenstr./Katzbachstr./Boelckestr  S->N       14:37:08
+8594,8777     Dudenstr./Katzbachstr./Boelckestr  S->N       14:37:08
 8389,9087     Kreuzbergstr./Monumentenstr.       O->W       14:38:20
 7782,9115     Monumentenstr./Hohenfriedbergstr.  O->W       14:39:20  14:38:55
 7655,9188     Langenscheidtstr./Crellestr.       SO->NW     14:40:00  14:39:35
 7655,9188     Langenscheidtstr./Crellestr.       SW->NO     14:41:05  14:40:33
-7478,9340     Langenscheidtstr./Hauptstr. (Schö  SO->NW     14:41:23
+7479,9357     Langenscheidtstr./Hauptstr. (Schö  SO->NW     14:41:23
 7275,8960     Kolonnenstr./Hauptstr. (Schöneber  NO->SW     14:42:20
 6687,8385     Hauptstr. (Schöneberg)/Dominicuss  NO->SW     14:43:33
 6935,8208     Ebersstr./Dominicusstr./Sachsenda  NW->SO     14:44:30  14:44:00
@@ -590,21 +590,21 @@ So, 14.03.1999
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mi, 31.03.1999
-12995,10669   Skalitzer/Köpenicker               O->W       08:59:59
+12985,10665   Skalitzer/Köpenicker               O->W       08:59:59
 12755,10552   Skalitzer/Wrangel                  O->W       09:00:47
 11949,10414   Skalitzer/Oranien                  O->W       09:02:40
-11660,10402   Skalitzer/Mariannen                O->W       09:04:04  09:03:27
+11671,10402   Skalitzer/Mariannen                O->W       09:04:04  09:03:27
 11454,10400   Skalitzer/Reichenberger            O->W       09:03:54  09:04:16
 11370,10398   Skalitzer/Kottbusser Tor (Rad)     O->S       09:05:41
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Di, 31.03.1999
-11016,9599    Grimm/Urbanstr. (Auto)             N->S   70  13:25:55  13:26:13
-11016,9599    Grimm/Urbanstr. (Rad)              N->S   70  13:27:03  13:26:10
-10719,9259    Südstern                           N->S   60  13:27:50  13:28:03
-10556,9294    Südstern/Blücherstr.               O->W       13:29:16
-10189,9403    Gneisenau/Baerwaldstr.             O->W       13:30:44  13:30:10
+11023,9597    Grimm/Urbanstr. (Auto)             N->S   70  13:25:55  13:26:13
+11023,9597    Grimm/Urbanstr. (Rad)              N->S   70  13:27:03  13:26:10
+10713,9260    Südstern                           N->S   60  13:27:50  13:28:03
+10564,9292    Südstern/Blücherstr.               O->W       13:29:16
+10196,9400    Gneisenau/Baerwaldstr.             O->W       13:30:44  13:30:10
 9919,9479     Gneisenau/Mittenwalder Str.        O->W       13:31:03  13:31:31
 9784,9519     Gneisenau/Zossener                 O->W       13:32:15  13:31:41
 9532,9600     Gneisenau/Nostitzstr.              O->W       13:32:32
@@ -620,15 +620,15 @@ Mi, 01.04.1999
 9489,9312     Bergmann/Nostitz                   W->O   55  10:57:35  10:57:53
 9753,9252     Bergmannstr. (Kreuzberg)/Zossener  W->O       10:58:46  10:58:12
 9793,9241     Bergmannstr./Friesenstr. (Auto)    W->S       10:58:16
-10719,9259    Lilienthalstr./Südstern/Körtestr.  W->O   60  11:01:12  11:01:43
+10713,9260    Lilienthalstr./Südstern/Körtestr.  W->O   60  11:01:12  11:01:43
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mi, 01.04.1999
-11016,9599    Grimmstr./Urbanstr. (Auto)         N->S       16:43:56  16:43:04
-10719,9259    Lilienthalstr./Südstern/Körtestr.  N->S   70  16:45:04  16:45:18
-10556,9294    Gneisenaustr./Südstern/Blücherstr  O->W   70* 16:46:36
-10189,9403    Gneisenaustr./Baerwaldstr.         O->W   70* 16:47:11
+11023,9597    Grimmstr./Urbanstr. (Auto)         N->S       16:43:56  16:43:04
+10713,9260    Lilienthalstr./Südstern/Körtestr.  N->S   70  16:45:04  16:45:18
+10564,9292    Gneisenaustr./Südstern/Blücherstr  O->W   70* 16:46:36
+10196,9400    Gneisenaustr./Baerwaldstr.         O->W   70* 16:47:11
 9919,9479     Gneisenaustr./Mittenwalder Str.    O->W   70  16:48:41  16:48:13
 9784,9519     Gneisenaustr./Zossener Str.        O->W   70  16:49:03  16:49:36
 9532,9600     Gneisenaustr./Nostitzstr.          O->W   70* 16:50:30  16:49:57
@@ -637,18 +637,18 @@ Mi, 01.04.1999
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mi, 07.04.1999
-9222,8787     Dudenstr./Mehringdamm/Platz der L  W->O   80  14:21:37  14:21:57
-9222,8787     Dudenstr./Mehringdamm/Platz (Rad)  S->N   80  14:23:29
-10719,9259    Lilienthalstr./Südstern/Körtestr.  W->O   60  14:21:14  14:21:44
-10719,9259    Lilienthalstr./Südstern     (Rad)  W->O   60  14:21:12
-11016,9599    Körtestr./Urbanstr.         (Rad)  S->N       14:34:44
+9229,8785     Dudenstr./Mehringdamm/Platz der L  W->O   80  14:21:37  14:21:57
+9229,8785     Dudenstr./Mehringdamm/Platz (Rad)  S->N   80  14:23:29
+10713,9260    Lilienthalstr./Südstern/Körtestr.  W->O   60  14:21:14  14:21:44
+10713,9260    Lilienthalstr./Südstern     (Rad)  W->O   60  14:21:12
+11023,9597    Körtestr./Urbanstr.         (Rad)  S->N       14:34:44
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mi, 07.04.1999
-11016,9599    Körtestr./Urbanstr.                N->S   50  21:07:30  21:07:41
-10719,9259    Lilienthalstr./Südstern/Körtestr.  N->S   50  21:09:28  21:09:38
-10556,9294    Gneisenaustr./Südstern/Blücherstr  S->N       21:11:08
+11023,9597    Körtestr./Urbanstr.                N->S   50  21:07:30  21:07:41
+10713,9260    Lilienthalstr./Südstern/Körtestr.  N->S   50  21:09:28  21:09:38
+10564,9292    Gneisenaustr./Südstern/Blücherstr  S->N       21:11:08
 9793,9241     Bergmannstr./Friesen (Rad)         O->W   50  21:13:25  21:12:51
 9753,9252     Bergmannstr. (Kreuzberg)/Zossener  O->W       21:13:35
 9248,9350     Mehringdamm/Kreuzbergstr./Bergman  O->W   70  21:15:36  21:15:52
@@ -656,35 +656,35 @@ Mi, 07.04.1999
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mi, 07.04.1999
-9222,8787     Dudenstr./Mehringdamm/Platz der L  W->O       22:44:57
-9222,8787     Dudenstr./Mehringdamm/Platz der L  O->W                 22:45:19
+9229,8785     Dudenstr./Mehringdamm/Platz der L  W->O       22:44:57
+9229,8785     Dudenstr./Mehringdamm/Platz der L  O->W                 22:45:19
 10213,8665    Columbiadamm/Golßener Str.         W->O       22:48:26  22:48:06
 11632,8302    Columbiadamm/Fontanestr.           W->O   40  22:53:02  22:53:19
 12195,8436    Flughafenstr./Reuterstr. (Neuköll  W->O   40  22:55:00  22:55:20
 14089,9610    Elsenstr./Am Treptower Park        SW->NO 60  23:07:19  23:07:30
-14189,9748    Elsenstr./Puschkinallee (Auto)     SW->NO 60  23:08:25  23:08:44 
-14189,9748    Elsenstr./Puschkinallee (Rad)      SW->NO 60  23:08:23  23:08:39
-14564,10262   Stralauer Allee/An den Tre (Auto)  SW->NO 60  23:10:30  23:10:53
-14564,10262   Stralauer Allee/An den Trep (Rad)  SW->NO 60  23:10:27  23:10:43?
+14193,9746    Elsenstr./Puschkinallee (Auto)     SW->NO 60  23:08:25  23:08:44 
+14193,9746    Elsenstr./Puschkinallee (Rad)      SW->NO 60  23:08:23  23:08:39
+14558,10264   Stralauer Allee/An den Tre (Auto)  SW->NO 60  23:10:30  23:10:53
+14558,10264   Stralauer Allee/An den Trep (Rad)  SW->NO 60  23:10:27  23:10:43?
 14641,10552   Markgrafendamm/Persiusstr.         S->N       23:11:45  23:12:15
-15255,10751   Hauptstr. (Lichtenberg)/Karlshors  W->O       23:14:44  23:14:14
+15263,10747   Hauptstr. (Lichtenberg)/Karlshors  W->O       23:14:44  23:14:14
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Do, 08.04.1999
-15255,10751   Hauptstr. (Lichtenberg)/Karlshors  N->S       09:04:40
+15263,10747   Hauptstr. (Lichtenberg)/Karlshors  N->S       09:04:40
 14641,10552   Markgrafendamm/Persiusstr.         N->S       09:07:51  09:07:11
-14564,10262   Stralauer Allee/An den Treptowers  N->S       09:08:42
-14189,9748    Elsenstr./Puschkinallee            NO->SW 70? 09:10:48  09:09:52
+14558,10264   Stralauer Allee/An den Treptowers  N->S       09:08:42
+14193,9746    Elsenstr./Puschkinallee            NO->SW 70? 09:10:48  09:09:52
 13614,9333    Wildenbruchstr./Karl-Kunger-Str    SO->NW 70  09:16:32  09:15:48
-13337,9028    Wildenbruchstr./Harzer Str.        NO->SW 70  09:17:22  09:17:52
+13335,9019    Wildenbruchstr./Harzer Str.        NO->SW 70  09:17:22  09:17:52
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Do, 08.04.1999
-11016,9599    Körtestr./Urbanstr.                N->S       20:04:37
-10719,9259    Lilienthalstr./Südstern/Körtestr.  N->S   60  20:05:50  20:06:03
-10556,9294    Gneisenaustr./Südstern/Blücherstr  S->N       20:07:49
+11023,9597    Körtestr./Urbanstr.                N->S       20:04:37
+10713,9260    Lilienthalstr./Südstern/Körtestr.  N->S   60  20:05:50  20:06:03
+10564,9292    Gneisenaustr./Südstern/Blücherstr  S->N       20:07:49
 9793,9241     Bergmannstr./Friesen (Rad)         O->W       20:09:38          
 9753,9252     Bergmannstr. (Kreuzberg)/Zossener  O->W   70  20:09:38
 9248,9350     Mehringdamm/Kreuzbergstr./Bergman  O->W   80  20:11:42  20:11:57
@@ -693,52 +693,52 @@ Do, 08.04.1999
 # ----------------------------------------------------------------------------
 Do, 08.04.1999
 8982,8781     Dudenstr./Methfesselstr. (KN)      W->O   110 22:08:19  22:07:49
-9222,8787     Dudenstr./Mehringdamm/Platz der L  W->O   50  22:08:24  22:07:49
+9229,8785     Dudenstr./Mehringdamm/Platz der L  W->O   50  22:08:24  22:07:49
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Fr, 09.04.1999
-9221,8732     Tempelhofer Damm/Manfred-von-Rich  W->O                 13:47:11
-9222,8787     Dudenstr./Mehringdamm/Platz der L  S->N       13:47:29
+9229,8718     Tempelhofer Damm/Manfred-von-Rich  W->O                 13:47:11
+9229,8785     Dudenstr./Mehringdamm/Platz der L  S->N       13:47:29
 9532,9600     Gneisenaustr./Nostitzstr.          W->O       14:09:56  14:09:23
 9784,9519     Gneisenaustr./Zossener Str. (Kreu  W->O   60  14:10:17  14:10:42
 9919,9479     Gneisenaustr./Mittenwalder Str.    W->O       14:11:26
-10189,9403    Gneisenaustr./Baerwaldstr.         W->O   60  14:11:44  14:12:11
-10556,9294    Gneisenaustr./Südstern/Blücherstr  W->O   60  14:13:12  14:12:39
-10719,9259    Lilienthalstr./Südstern/Körtestr.  W->O       14:15:14  14:14:44
+10196,9400    Gneisenaustr./Baerwaldstr.         W->O   60  14:11:44  14:12:11
+10564,9292    Gneisenaustr./Südstern/Blücherstr  W->O   60  14:13:12  14:12:39
+10713,9260    Lilienthalstr./Südstern/Körtestr.  W->O       14:15:14  14:14:44
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Fr, 09.04.1999
-11016,9599    Körtestr./Urbanstr. (Kreuzberg)    N->S   70  18:07:38  18:07:55
-10719,9259    Lilienthalstr./Südstern/Körtestr.  N->S       18:09:56
+11023,9597    Körtestr./Urbanstr. (Kreuzberg)    N->S   70  18:07:38  18:07:55
+10713,9260    Lilienthalstr./Südstern/Körtestr.  N->S       18:09:56
 10213,8665    Columbiadamm/Golßener Str.         N->S       18:12:45  18:12:56
 9801,8683     Columbiadamm/Friesenstr. (Kreuzbe  O->W   70  18:13:33  18:14:10
 9395,8726     Platz der Luftbrücke/Columbiadamm  O->W       18:15:31  18:16:01
-9222,8787     Dudenstr./Mehringdamm/Platz der L  O->W   80  18:17:36  18:16:36
+9229,8785     Dudenstr./Mehringdamm/Platz der L  O->W   80  18:17:36  18:16:36
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Fr, 09.04.1999
 9334,9670     Mehringdamm/Yorckstr./Gneisenaust  S->N   60  19:41:13  19:41:33
-9444,10000    Mehringdamm/Blücherstr. (Kreuzber  S->N       19:43:10  19:42:26
-9401,10199    Mehringdamm/Tempelhofer Ufer       S->N       19:44:27  19:43:40
-9480,11207    Friedrichstr./Kochstr.             S->N   70  19:46:44  19:46:56
-9437,11616    Friedrichstr./Leipziger Str.       S->N   70  19:47:20  19:47:38
-9377,12091    Friedrichstr./Französische Str.    S->N   60  19:49:53  19:50:12
-9349,12344    Friedrichstr./Unter den Linden     S->N   70  19:51:19  19:51:38
-9323,12528    Friedrichstr./Dorotheenstr.        S->N       19:54:02  19:53:12
+9448,10014    Mehringdamm/Blücherstr. (Kreuzber  S->N       19:43:10  19:42:26
+9416,10196    Mehringdamm/Tempelhofer Ufer       S->N       19:44:27  19:43:40
+9486,11208    Friedrichstr./Kochstr.             S->N   70  19:46:44  19:46:56
+9444,11616    Friedrichstr./Leipziger Str.       S->N   70  19:47:20  19:47:38
+9386,12092    Friedrichstr./Französische Str.    S->N   60  19:49:53  19:50:12
+9358,12351    Friedrichstr./Unter den Linden     S->N   70  19:51:19  19:51:38
+9330,12529    Friedrichstr./Dorotheenstr.        S->N       19:54:02  19:53:12
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Fr, 09.04.1999
-10440,12696   Spandauer Str./Karl-Liebknecht-St  NW->SO     23:29:58  23:28:58
-10596,12517   Rathausstr./Spandauer Str.         NW->SO     23:31:22  23:30:39
+10437,12703   Spandauer Str./Karl-Liebknecht-St  NW->SO     23:29:58  23:28:58
+10601,12521   Rathausstr./Spandauer Str.         NW->SO     23:31:22  23:30:39
 10738,12364   Mühlendamm/Stralauer Str./Gruners  NW->SO 70  23:31:32  23:31:42
 11351,12221   Brückenstr./Holzmarktstr./Alexand  W->O       23:34:26
-11773,12006   Michaelkirchstr./Lichtenberger St  W->O   60? 23:35:30  23:35:46
+11768,12006   Michaelkirchstr./Lichtenberger St  W->O   60? 23:35:30  23:35:46
 12190,11665   Holzmarktstr./Stralauer Platz/And  W->O   60? 23:36:56  23:36:23
-12504,11464   Straße der Pariser Kommune/Strala  W->O   60?           23:37:48
+12497,11459   Straße der Pariser Kommune/Strala  W->O   60?           23:37:48
 13332,10832   Oberbaumbrücke/Stralauer Allee/Wa  W->O   60  23:40:23  23:39:40
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
@@ -746,58 +746,58 @@ Fr, 09.04.1999
 Sa, 10.04.1999
 14988,11130   Kynaststr./Marktstr./Hirschberger  NO->SW 80? 09:10:09  09:09:04
 14310,9692    Puschkinallee/Parkweg              N->S       09:14:55  09:15:10
-14189,9748    Elsenstr./An den Treptowers/Pusch  SO->NW     09:15:21
+14193,9746    Elsenstr./An den Treptowers/Pusch  SO->NW     09:15:21
 14089,9610    Elsenstr./Am Treptower Park        NO->SW     09:15:55
-13846,9296    Kiefholzstr./Elsenstr.             NO->SW     09:17:11
+13849,9310    Kiefholzstr./Elsenstr.             NO->SW     09:17:11
 13614,9333    Wildenbruchstr./Karl-Kunger-Str.   SO->NW     09:18:13
-13337,9028    Wildenbruchstr./Harzer Str.        NO->SW 70  09:19:03  09:18:23
+13335,9019    Wildenbruchstr./Harzer Str.        NO->SW 70  09:19:03  09:18:23
 13029,8632    Wildenbruchstr./Weserstr.          NO->SW 70  09:20:48  09:20:13
 12925,8494    Sonnenallee/Erkstr./Wildenbruchst  NO->SW 70  09:20:38  09:20:54
 12771,8439    Erkstr./Donaustr.                  O->W       09:22:33  09:22:00
 12598,8390    Karl-Marx-Str./Erkstr. (links)     O->S       09:23:08  09:22:12
 12598,8390    Karl-Marx-Str./Erkstr. (rechts)    O->N       09:23:00
 12195,8436    Flughafenstr./Reuterstr.           O->W   70? 09:24:13  09:23:40
-11892,8372    Hermannstr./Flughafenstr.          O->W   60  09:24:55
+11898,8362    Hermannstr./Flughafenstr.          O->W   60  09:24:55
 11632,8302    Columbiadamm/Flughafenstr.         O->W   60  09:28:03  09:27:31
 10213,8665    Columbiadamm/Golßener Str.         O->W   70  09:31:31  09:32:06
 9801,8683     Columbiadamm/Friesenstr.           O->W   70  09:33:08  09:32:34
 9395,8726     Platz der Luftbrücke/Columbiadamm  O->W   70  09:35:12  09:34:34
-9222,8787     Dudenstr./Mehringdamm/Platz der L  O->W   80  09:36:39  09:37:02
+9229,8785     Dudenstr./Mehringdamm/Platz der L  O->W   80  09:36:39  09:37:02
 8982,8781     Dudenstr./Methfesselstr./Mussehls  O->W       09:38:54  09:38:18
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Sa, 10.04.1999
-9222,8787     Dudenstr./Mehringdamm/Platz der L  W->O   70  20:28:30  20:27:40
+9229,8785     Dudenstr./Mehringdamm/Platz der L  W->O   70  20:28:30  20:27:40
 9793,9241     Bergmannstr./Friesenstr.           S->W       20:31:38
-10719,9259    Lilienthalstr./Südstern/Körtestr.  W->O   60? 20:34:14  20:34:44
-11016,9599    Körtestr./Urbanstr./Grimmstr./Fic  S->N       20:36:38
-11677,9729    Kottbusser Damm/Bürknerstr./Böckh  W->O   70  20:38:39  20:38:49
+10713,9260    Lilienthalstr./Südstern/Körtestr.  W->O   60? 20:34:14  20:34:44
+11023,9597    Körtestr./Urbanstr./Grimmstr./Fic  S->N       20:36:38
+11673,9720    Kottbusser Damm/Bürknerstr./Böckh  W->O   70  20:38:39  20:38:49
 12237,10023   Reichenberger Str./Ohlauer Str.    S->N       20:41:34  20:41:46
-14189,9748    Elsenstr./An den Treptowers/Pusch  NO->SW     20:50:09  20:50:29
-14564,10262   Stralauer Allee/An den Treptowers  S->N       20:51:32
+14193,9746    Elsenstr./An den Treptowers/Pusch  NO->SW     20:50:09  20:50:29
+14558,10264   Stralauer Allee/An den Treptowers  S->N       20:51:32
 14988,11130   Kynaststr./Marktstr./Hirschberger  S->NO      20:55:05  20:55:20
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 So, 11.04.1999
-15255,10751   Hauptstr./Karlshorster Str.        W->O   70? 14:50:58? 14:50:18
+15263,10747   Hauptstr./Karlshorster Str.        W->O   70? 14:50:58? 14:50:18
 14641,10552   Markgrafendamm/Persiusstr.         N->S       14:52:31
-14189,9748    Elsenstr./An den Treptowers/Pusch  NO->SW 90? 14:56:22  14:55:22
+14193,9746    Elsenstr./An den Treptowers/Pusch  NO->SW 90? 14:56:22  14:55:22
 14089,9610    Elsenstr./Am Treptower Park        NO->SW     14:56:12  14:55:30
-13846,9296    Kiefholzstr./Elsenstr.             NO->SW               14:57:56
+13849,9310    Kiefholzstr./Elsenstr.             NO->SW               14:57:56
 13614,9333    Wildenbruchstr./Karl-Kunger-Str.   SO->NW     14:59:42  14:58:58
-13337,9028    Wildenbruchstr./Harzer Str.        NO->SW               14:59:52
+13335,9019    Wildenbruchstr./Harzer Str.        NO->SW               14:59:52
 12925,8494    Sonnenallee/Erkstr./Wildenbruchst  NO->SW 70  15:02:08  15:02:23
 12549,8616    Donaustr./Fuldastr.                SO->NW 70  15:04:23  15:04:43
 12500,8504    Karl-Marx-Str./Flughafenstr./Fuld  NO->W      15:05:57
 12195,8436    Flughafenstr./Reuterstr.           O->W   60  15:07:13  15:07:40
-11892,8372    Hermannstr./Flughafenstr.          O->W   60  15:08:55  15:09:04
+11898,8362    Hermannstr./Flughafenstr.          O->W   60  15:08:55  15:09:04
 11632,8302    Columbiadamm/Flughafenstr.         O->W   60  15:10:31  15:11:04
 10213,8665    Columbiadamm/Golßener Str.         O->W   70  15:14:11  15:14:45
 9801,8683     Columbiadamm/Friesenstr.           O->W   70  15:15:48  15:16:24
 9395,8726     Platz der Luftbrücke/Columbiadamm  O->W   70  15:17:52  15:18:23
-9222,8787     Dudenstr./Mehringdamm/Platz der L  O->W   70  15:18:59  15:19:21
+9229,8785     Dudenstr./Mehringdamm/Platz der L  O->W   70  15:18:59  15:19:21
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -814,8 +814,8 @@ Mo, 11.04.1999
 # ----------------------------------------------------------------------------
 Di, 12.04.1999
 11949,10414   Skalitzer Str./Oranienstr./Manteu  O->W   70  10:14:12  10:14:35
-11660,10402   Skalitzer Str./Mariannenstr.       O->W   70  10:16:47  10:16:11
-11610,10305   Reichenberger Str./Mariannenstr.   N->S                 10:16:55
+11671,10402   Skalitzer Str./Mariannenstr.       O->W   70  10:16:47  10:16:11
+11620,10299   Reichenberger Str./Mariannenstr.   N->S                 10:16:55
 11512,10105   Kottbusser Str./Mariannenstr./Fra  O->W   70  10:18:47  10:19:03
 11543,10015   Kottbusser Damm/Planufer/Maybachu  N->S       10:20:24
 
@@ -824,9 +824,9 @@ Di, 12.04.1999
 Di, 12.04.1999
 10605,10312   Gitschiner Str./Prinzenstr.        O->W   70  10:50:45  10:50:05
 10122,10294   Gitschiner Str./Alexandrinenstr.   O->W       10:52:29
-9865,10286    Zossener Str./Waterlooufer/Gitsch  O->W       10:53:25  10:52:44
-9392,10260    Wilhelmstr./Hallesches Ufer        O->W       10:55:12  10:54:19
-9147,10359    Großbeerenstr./Hallesches Ufer     O->W       10:55:16  10:55:50
+9873,10285    Zossener Str./Waterlooufer/Gitsch  O->W       10:53:25  10:52:44
+9404,10250    Wilhelmstr./Hallesches Ufer        O->W       10:55:12  10:54:19
+9154,10348    Großbeerenstr./Hallesches Ufer     O->W       10:55:16  10:55:50
 8824,10366    Möckernstr./Hallesches Ufer        O->W       10:56:50  10:56:24
 8578,10672    Schöneberger Str./Hallesches Ufer  SO->NW     10:58:29  10:57:56
 8000,11137    Reichpietschufer/Potsdamer Str.    O->W       11:00:20
@@ -838,53 +838,53 @@ Di, 12.04.1999
 # ----------------------------------------------------------------------------
 Do, 22.04.1999
 14641,10552   Markgrafendamm/Persiusstr.         N->S       11:25:30  11:24:53
-14564,10262   Stralauer Allee/An den Treptowers  N->S       11:26:23
+14558,10264   Stralauer Allee/An den Treptowers  N->S       11:26:23
 14210,10437   Stralauer Allee/Bossestr.          O->W       11:28:04  11:27:33
-12995,10669   Skalitzer Str./Oberbaumstr./Schle  O->W                 11:33:01
+12985,10665   Skalitzer Str./Oberbaumstr./Schle  O->W                 11:33:01
 12755,10552   Skalitzer Str./Wrangelstr.         O->W       11:34:30
 11949,10414   Skalitzer Str./Oranienstr./Manteu  O->W   70  11:36:23  11:36:45
-11660,10402   Skalitzer Str./Mariannenstr.       O->W       11:38:58  11:38:21
+11671,10402   Skalitzer Str./Mariannenstr.       O->W       11:38:58  11:38:21
 11370,10398   Kottbusser Tor/Damm (Rad)          O->SO      11:40:35
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Do, 22.04.1999
-11016,9599    Körtestr./Urbanstr./Grimmstr./Fic  N->S   70  18:04:28  18:04:46
-10719,9259    Lilienthalstr./Südstern/Körtestr.  N->S   70  18:07:47  18:07:01
+11023,9597    Körtestr./Urbanstr./Grimmstr./Fic  N->S   70  18:04:28  18:04:46
+10713,9260    Lilienthalstr./Südstern/Körtestr.  N->S   70  18:07:47  18:07:01
 9248,9350     Mehringdamm/Kreuzbergstr./Bergman  O->W   80  18:13:05  18:12:00
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Do, 22.04.1999
-9222,8787     Dudenstr./Mehringdamm/Platz der L  W->O   70  23:41:40  23:42:02
+9229,8785     Dudenstr./Mehringdamm/Platz der L  W->O   70  23:41:40  23:42:02
 9395,8726     Platz der Luftbrücke/Columbiadamm  W->O       23:43:25  23:42:57
 9801,8683     Columbiadamm/Friesenstr.           W->O                 23:44:20
 10213,8665    Columbiadamm/Golßener Str.                AUS
-11892,8372    Hermannstr./Flughafenstr.          W->O   50  23:49:43  23:50:02
+11898,8362    Hermannstr./Flughafenstr.          W->O   50  23:49:43  23:50:02
 12195,8436    Flughafenstr./Reuterstr.           W->O   40  23:51:03  23:51:21
 12771,8439    Erkstr./Donaustr.                  W->O   50  23:53:15  23:53:22
 12925,8494    Sonnenallee/Erkstr./Wildenbruchst  W->NO  50  23:54:45  23:54:05
-13337,9028    Wildenbruchstr./Harzer Str.        SW->NO 50  23:55:25  23:55:45
-13846,9296    Kiefholzstr./Elsenstr.                    AUS
+13335,9019    Wildenbruchstr./Harzer Str.        SW->NO 50  23:55:25  23:55:45
+13849,9310    Kiefholzstr./Elsenstr.                    AUS
 14089,9610    Elsenstr./Am Treptower Park        SW->NO 60  23:59:20  23:59:32
-14189,9748    Elsenstr./Puschkinallee            SW->NO 60  00:00:28  00:00:46
+14193,9746    Elsenstr./Puschkinallee            SW->NO 60  00:00:28  00:00:46
 14310,9692    Puschkinallee/Parkweg                     AUS
-14564,10262   Stralauer Allee/An den Treptowers  SW->N  60  00:02:33  00:02:58
+14558,10264   Stralauer Allee/An den Treptowers  SW->N  60  00:02:33  00:02:58
 14641,10552   Markgrafendamm/Persiusstr.         S->N   60?
-15255,10751   Hauptstr./Karlshorster Str.        W->O   60  00:06:47  00:06:17
+15263,10747   Hauptstr./Karlshorster Str.        W->O   60  00:06:47  00:06:17
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Fr, 23.04.1999
 14641,10552   Markgrafendamm/Persiusstr.         N->S       12:38:40  12:38:04
-14564,10262   Stralauer Allee/An den Treptowers  N->SW      12:39:34
+14558,10264   Stralauer Allee/An den Treptowers  N->SW      12:39:34
 14210,10437   Stralauer Allee/Bossestr.          O->W                 12:40:43
-13605,10719   Stralauer Allee/Ehrenbergstr.      O->W   70  12:41:57  12:41:11
+13596,10722   Stralauer Allee/Ehrenbergstr.      O->W   70  12:41:57  12:41:11
 13332,10832   Oberbaumbrücke/Stralauer Allee/Wa  O->W   70  12:43:35  12:42:46
-12995,10669   Skalitzer Str./Oberbaumstr./Schle  O->W       12:45:45
+12985,10665   Skalitzer Str./Oberbaumstr./Schle  O->W       12:45:45
 12755,10552   Skalitzer Str./Wrangelstr.         O->W       12:46:32
 11949,10414   Skalitzer Str./Oranienstr./Manteu  O->W       12:49:35  12:48:47
-11660,10402   Skalitzer Str./Mariannenstr.       O->W       12:50:59  12:50:22
+11671,10402   Skalitzer Str./Mariannenstr.       O->W       12:50:59  12:50:22
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -901,17 +901,17 @@ So, 25.04.1999
 12811,12081   Rüdersdorfer Str./Straße der Pari  S->N   60  09:37:17  09:36:33
 14211,11552   Wühlischstr./Modersohnstr./Gärtne  W->O   60  09:41:55  09:42:08
 14575,11407   Wühlischstr./Holteistr.            W->O   60  09:42:52  09:43:14
-14912,11252   Marktstr./Boxhagener Str./Neue Ba  W->SO      09:45:34  09:44:47
+14918,11249   Marktstr./Boxhagener Str./Neue Ba  W->SO      09:45:34  09:44:47
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mo, 26.04.1999
-14189,9748    Elsenstr./Puschkinallee            S->N   70  10:23:02  10:23:19
+14193,9746    Elsenstr./Puschkinallee            S->N   70  10:23:02  10:23:19
 14089,9610    Elsenstr./Am Treptower Park (Auto) S->N                 10:24:33
 14089,9610    Elsenstr./Am Treptower Park  (Rad) S->N       10:25:08
-13846,9296    Kiefholzstr./Elsenstr.             S->N       10:26:34  10:25:54
+13849,9310    Kiefholzstr./Elsenstr.             S->N       10:26:34  10:25:54
 13614,9333    Wildenbruchstr./Karl-Kunger-Str.   O->W       10:27:35
-13337,9028    Wildenbruchstr./Harzer Str.        N->S       10:28:25
+13335,9019    Wildenbruchstr./Harzer Str.        N->S       10:28:25
 13029,8632    Wildenbruchstr./Weserstr.          N->S       10:30:10  10:29:35
 12925,8494    Sonnenallee/Erkstr./Wildenbruchst  N->SW      10:31:10  10:30:15
 12771,8439    Erkstr./Donaustr.                  NO->SW     10:31:55  10:31:22
@@ -919,23 +919,23 @@ Mo, 26.04.1999
 12500,8504    Karl-Marx-Str./Flughafenstr./Fuld  SO->NW     10:33:02
 12156,8760    Karl-Marx-Str./Reuterstr.          SO->NW               10:34:11
 12195,8436    Flughafenstr./Reuterstr.           N->S       10:35:57  10:36:08
-11892,8372    Hermannstr./Flughafenstr.          O->W   60  10:36:57  10:37:09
+11898,8362    Hermannstr./Flughafenstr.          O->W   60  10:36:57  10:37:09
 11632,8302    Columbiadamm/Flughafenstr.         O->W       10:39:06  10:38:34
-9222,8787     Dudenstr./Mehringdamm/Platz der L  O->W   70  10:49:10
+9229,8785     Dudenstr./Mehringdamm/Platz der L  O->W   70  10:49:10
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mo, 26.04.1999
 10605,10312   Gitschiner Str./Prinzenstr.        O->W       16:31:46  16:31:08
 10122,10294   Gitschiner Str./Alexandrinenstr.   O->W   70  16:32:22  16:32:58
-9865,10286    Zossener Str./Waterlooufer/Gitsch  O->W       16:33:46
-9392,10260    Wilhelmstr./Hallesches Ufer        O->W       16:36:16  16:35:18
-9147,10359    Großbeerenstr./Hallesches Ufer     O->W                 16:36:58
+9873,10285    Zossener Str./Waterlooufer/Gitsch  O->W       16:33:46
+9404,10250    Wilhelmstr./Hallesches Ufer        O->W       16:36:16  16:35:18
+9154,10348    Großbeerenstr./Hallesches Ufer     O->W                 16:36:58
 8578,10672    Schöneberger Str./Hallesches Ufer  O->W       16:39:05  16:38:31
 8000,11137    Reichpietschufer/Potsdamer Str.    O->W   90  16:40:43  16:41:18
 6825,11486    Klingelhöferstr./Stülerstr./Tierg  S->N       16:46:10
 6828,12031    Straße des 17. Juni/Gr. S (Rad KS) SW->N      16:48:19
-6799,12083    Großer Stern/Spreeweg     (Rad KS) SO->W      16:48:56
+6787,12099    Großer Stern/Spreeweg     (Rad KS) SO->W      16:48:56
 6653,12067    Altonaer Str./Großer S.   (Rad KS) W->S       16:49:33
 6178,12387    Altonaer Str./Klopstockstr./Bartn  SO->NW     16:50:52
 6020,12492    Altonaer Str./Bachstr./Lessingstr  SO->NW 70? 16:52:11  16:51:19
@@ -963,19 +963,19 @@ Mo, 26.04.1999
 7413,10244    Bülowstr./Frobenstr.               W->O   60  18:18:55  18:19:20
 7579,10183    Potsdamer Str./Bülowstr.           W->O   70  18:19:56  18:20:18
 7866,9918     Kulmer Str./Bülowstr./Dennewitzpl  N->S                 18:22:10
-7941,9686     Yorckstr./Goebenstr./Bülowstr.     N->S   70  18:23:54? 18:22:57?
-8188,9610     Yorckstr./Bautzener Str.           W->O       18:24:37
+7938,9694     Yorckstr./Goebenstr./Bülowstr.     N->S   70  18:23:54? 18:22:57?
+8192,9619     Yorckstr./Bautzener Str.           W->O       18:24:37
 8595,9495     Katzbachstr./Yorckstr.             NW->NO     18:26:12  18:25:41
 8598,9264     Katzbachstr./Kreuzbergstr.         N->S   70  18:26:21  18:26:45
 8598,9074     Katzbachstr./Monumentenstr.        N->S       18:27:39  18:27:05
-8594,8773     Dudenstr./Katzbachstr./Boelckestr  N->S   70  18:28:41  18:29:05
+8594,8777     Dudenstr./Katzbachstr./Boelckestr  N->S   70  18:28:41  18:29:05
 8982,8781     Dudenstr./Methfesselstr./Mussehls  W->O   70  18:29:41  18:30:29
-9222,8787     Dudenstr./Mehringdamm/Platz der L  W->O   80  18:32:19  18:31:21
+9229,8785     Dudenstr./Mehringdamm/Platz der L  W->O   80  18:32:19  18:31:21
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Di, 27.04.1999
-8594,8773     Dudenstr./Katzbachstr./Boelckestr  O->W   70? 14:24:14  14:24:43
+8594,8777     Dudenstr./Katzbachstr./Boelckestr  O->W   70? 14:24:14  14:24:43
 8598,9074     Katzbachstr./Monumentenstr.        S->N       14:26:22  14:25:56
 8598,9264     Katzbachstr./Kreuzbergstr.         S->N                 14:25:45
 8595,9495     Katzbachstr./Yorckstr.             S->N       14:27:20?
@@ -987,7 +987,7 @@ Di, 27.04.1999
 6873,11011    Schillstr./Lützowplatz (Rad 2)     S->N       14:36:12  14:35:45
 6825,11486    Klingelhöferstr./Stülerstr./Tierg  S->N       14:37:10
 6828,12031    Straße des 17. Juni/Gr. S (Rad KS) S->N       14:39:19
-6799,12083    Großer Stern/Spreeweg     (Rad KS) S->W       14:39:55
+6787,12099    Großer Stern/Spreeweg     (Rad KS) S->W       14:39:55
 6653,12067    Altonaer Str./Großer St.  (Rad KS) O->S       14:40:33
 6178,12387    Altonaer Str./Klopstockstr./Bartn  SO->NW 60  14:41:40  14:42:06
 6020,12492    Altonaer Str./Bachstr./Lessingstr  SO->NW 60  14:42:45  14:42:04
@@ -1021,7 +1021,7 @@ Di, 27.04.1999
 7033,10328    Bülowstr./Einemstr./Kleiststr./Mo  N->S       17:54:00
 7413,10244    Bülowstr./Frobenstr.               W->O       17:54:55  17:55:20
 7579,10183    Potsdamer Str./Bülowstr.           W->O       17:56:17  17:55:29
-7941,9686     Yorckstr./Goebenstr./Bülowstr.     N->S       17:57:58
+7938,9694     Yorckstr./Goebenstr./Bülowstr.     N->S       17:57:58
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -1033,9 +1033,9 @@ Di, 27.04.1999
 # ----------------------------------------------------------------------------
 Mi, 28.04.1999
 # ca. 08:55
-14189,9748    Elsenstr./Puschkinallee            N->S   90
+14193,9746    Elsenstr./Puschkinallee            N->S   90
 # ca. 09:05
-11892,8372    Flughafenstr./Hermannstr.          O->W   60
+11898,8362    Flughafenstr./Hermannstr.          O->W   60
 # ca. 09:10
 10213,8665    Columbiadamm/Golßener Str.         O->W   70
 # ca. 09:15
@@ -1044,7 +1044,7 @@ Mi, 28.04.1999
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mi, 28.04.1999
-9222,8787     Dudenstr./Mehringdamm/Platz der L  W->O   70  11:24:38  11:23:50
+9229,8785     Dudenstr./Mehringdamm/Platz der L  W->O   70  11:24:38  11:23:50
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -1056,14 +1056,14 @@ Mi, 28.04.1999
 Mi, 28.04.1999
 9248,9350     Mehringdamm/Kreuzbergstr. (Rad)    S->N       19:53:52
 9334,9670     Mehringdamm/Yorckstr./Gneisenaust  S->N       19:54:14
-9444,10000    Mehringdamm/Blücherstr./Obentraut  S->N       19:55:31  19:54:47
-9401,10199    Mehringdamm/Tempelhofer Ufer       S->N   70? 19:55:34  19:56:00
-9392,10260    Wilhelmstr./Hallesches Ufer        S->N       19:56:39
-9480,11207    Friedrichstr./Kochstr.             S->N   70  19:59:05  19:59:18
-9437,11616    Friedrichstr./Leipziger Str.       S->N   70  20:00:41  20:00:58
-9377,12091    Friedrichstr./Französische Str.    S->N   60  20:01:54  20:02:12
-9349,12344    Friedrichstr./Unter den Linden     S->N       20:04:50  20:03:39
-9323,12528    Friedrichstr./Dorotheenstr.        S->N       20:05:23
+9448,10014    Mehringdamm/Blücherstr./Obentraut  S->N       19:55:31  19:54:47
+9416,10196    Mehringdamm/Tempelhofer Ufer       S->N   70? 19:55:34  19:56:00
+9404,10250    Wilhelmstr./Hallesches Ufer        S->N       19:56:39
+9486,11208    Friedrichstr./Kochstr.             S->N   70  19:59:05  19:59:18
+9444,11616    Friedrichstr./Leipziger Str.       S->N   70  20:00:41  20:00:58
+9386,12092    Friedrichstr./Französische Str.    S->N   60  20:01:54  20:02:12
+9358,12351    Friedrichstr./Unter den Linden     S->N       20:04:50  20:03:39
+9330,12529    Friedrichstr./Dorotheenstr.        S->N       20:05:23
 9251,13109    Friedrichstr./Reinhardtstr.        S->N       20:06:45  20:06:59
 9203,13463    Friedrichstr./Torstr./Hannoversch  S->N   70  20:07:31  20:07:49
 8935,13844    Invalidenstr./Chausseestr.         SO->NW     20:10:00  20:09:13
@@ -1097,15 +1097,15 @@ Do, 29.04.1999
 8935,13844    Invalidenstr./Chausseestr.         NW->SO     00:43:59  00:43:15
 9203,13463    Friedrichstr./Torstr./Hannoversch  NW->SO     00:46:22  00:45:27?
 9251,13109    Friedrichstr./Reinhardtstr.        N->S       00:47:55  00:47:04
-9323,12528    Friedrichstr./Dorotheenstr.        N->S       00:49:23
-9349,12344    Friedrichstr./Unter den Linden     N->S       00:50:31
-9377,12091    Friedrichstr./Französische Str.    N->S   60? 00:51:54  00:51:13
-9437,11616    Friedrichstr./Leipziger Str.       N->S       00:53:16
-9437,11616    Friedrichstr./Leipziger Str.       S->N                 00:53:31
-9480,11207    Friedrichstr./Kochstr.             N->S   50  00:54:17
+9330,12529    Friedrichstr./Dorotheenstr.        N->S       00:49:23
+9358,12351    Friedrichstr./Unter den Linden     N->S       00:50:31
+9386,12092    Friedrichstr./Französische Str.    N->S   60? 00:51:54  00:51:13
+9444,11616    Friedrichstr./Leipziger Str.       N->S       00:53:16
+9444,11616    Friedrichstr./Leipziger Str.       S->N                 00:53:31
+9486,11208    Friedrichstr./Kochstr.             N->S   50  00:54:17
 9593,10238    Hallesches Ufer/Hallesches Tor/Me  N->S       00:58:34
-9592,10174    Blücherplatz/Tempelhofer Ufer/Hal  N->S       00:58:55
-9444,10000    Mehringdamm/Blücherstr./Obentraut  O->W       00:59:50
+9599,10175    Blücherplatz/Tempelhofer Ufer/Hal  N->S       00:58:55
+9448,10014    Mehringdamm/Blücherstr./Obentraut  O->W       00:59:50
 9334,9670     Mehringdamm/Yorckstr./Gneisenaust  N->S   50  01:00:34  01:00:49
 9248,9350     Mehringdamm/Kreuzbergstr./Bergman  N->S       01:01:48  01:02:25
 
@@ -1125,17 +1125,17 @@ Do, 29.04.1999
 # ----------------------------------------------------------------------------
 Fr, 30.04.1999
 # ca. 09:55
-13655,11727   Kopernikusstr/Warschauer Str.      O->W   70
+13651,11731   Kopernikusstr/Warschauer Str.      O->W   70
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Fr, 30.04.1999
-9222,8787     Dudenstr./Mehringdamm/Platz der L  W->O       17:10:54  17:09:54
+9229,8785     Dudenstr./Mehringdamm/Platz der L  W->O       17:10:54  17:09:54
 9395,8726     Platz der Luftbrücke/Columbiadamm  W->O       17:11:17
 9801,8683     Columbiadamm/Friesenstr.           W->O                 17:12:26
 10213,8665    Columbiadamm/Golßener Str.         W->O                 17:13:06
 11632,8302    Columbiadamm/Flughafenstr.         W->O       17:17:15  17:16:38
-11892,8372    Hermannstr./Flughafenstr.          W->O       17:18:37  17:17:51
+11898,8362    Hermannstr./Flughafenstr.          W->O       17:18:37  17:17:51
 12195,8436    Flughafenstr./Reuterstr.           W->O       17:19:00
 12500,8504    Karl-Marx-Str./Flughafenstr./Fuld  W->NO  70  17:19:32  17:19:48
 12689,8289    Karl-Marx-Str./Anzengruberstr      NW->SO     17:21:58  17:21:28
@@ -1147,14 +1147,14 @@ Fr, 30.04.1999
 12753,8187    Karl-Marx-Str./Werbellinstr./Gang  O->W       17:36:34
 11979,8014    Hermannstr./Herrfurthstr./Werbell  O->W   80  17:39:10  17:39:25
 11931,8206    Hermannstr./Boddinstr.             S->N       17:41:01  17:40:37
-11892,8372    Hermannstr./Flughafenstr.          S->N   80? 17:41:09  17:42:01
+11898,8362    Hermannstr./Flughafenstr.          S->N   80? 17:41:09  17:42:01
 11632,8302    Columbiadamm/Flughafenstr.         O->W       17:43:55  17:43:18
 10213,8665    Columbiadamm/Golßener Str.         O->W   70  17:47:20  17:47:54
 9801,8683     Columbiadamm/Friesenstr.           O->W   70  17:48:58  17:48:25
 9395,8726     Platz der Luftbrücke/Columbiadamm  O->W   70  17:50:56  17:50:19
-9222,8787     Dudenstr./Mehringdamm/Platz der L  O->W   80  17:52:14  17:52:34
+9229,8785     Dudenstr./Mehringdamm/Platz der L  O->W   80  17:52:14  17:52:34
 8982,8781     Dudenstr./Methfesselstr./Mussehls  O->W   70  17:53:32  17:54:04
-8594,8773     Dudenstr./Katzbachstr./Boelckestr  O->W       17:55:09
+8594,8777     Dudenstr./Katzbachstr./Boelckestr  O->W       17:55:09
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -1186,17 +1186,17 @@ Di, 04.05.1999
 # ----------------------------------------------------------------------------
 Mi, 05.05.1999
 14988,11130   Kynaststr./Marktstr./Hirschberger  N->S   70? 08:45:45  08:44:49
-14564,10262   Stralauer Allee/An den Tr (Auto)   O->W                 08:50:32
-14564,10262   Stralauer Allee/An den Tr (Rad)    O->W       08:51:40
+14558,10264   Stralauer Allee/An den Tr (Auto)   O->W                 08:50:32
+14558,10264   Stralauer Allee/An den Tr (Rad)    O->W       08:51:40
 14210,10437   Stralauer Allee/Bossestr.          O->W       08:52:22
-13605,10719   Stralauer Allee/Ehrenbergstr.      O->W   90?
+13596,10722   Stralauer Allee/Ehrenbergstr.      O->W   90?
 13332,10832   Oberbaumbrücke/Stralauer Allee/Wa  NO->SW 90  08:57:06  08:57:35
-12995,10669   Skalitzer Str./Oberbaumstr. (Auto) O->W   70  08:59:58  09:00:25
-12995,10669   Skalitzer Str./Oberbaumstr.  (Rad) O->W   70  09:01:06  09:00:05
+12985,10665   Skalitzer Str./Oberbaumstr. (Auto) O->W   70  08:59:58  09:00:25
+12985,10665   Skalitzer Str./Oberbaumstr.  (Rad) O->W   70  09:01:06  09:00:05
 12755,10552   Skalitzer Str./Wrangelstr.         O->W       09:01:54
 11949,10414   Skalitzer Str./Oranienstr./Manteu  O->W       09:04:56  09:04:08
-11660,10402   Skalitzer Str./Mariannenstr.       O->W                 09:05:45
-11610,10305   Reichenberger Str./Mariannenstr.   N->S       09:06:30  09:06:39
+11671,10402   Skalitzer Str./Mariannenstr.       O->W                 09:05:45
+11620,10299   Reichenberger Str./Mariannenstr.   N->S       09:06:30  09:06:39
 11512,10105   Kottbusser Str./Mariannenstr./Fra  O->W   80  09:07:02  09:07:27
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
@@ -1204,10 +1204,10 @@ Mi, 05.05.1999
 Mi, 05.05.1999
 10605,10312   Gitschiner Str./Prinzenstr.        O->W       10:17:47
 10122,10294   Gitschiner Str./Alexandrinenstr.   O->W   70  10:18:23  10:18:58
-9865,10286    Zossener Str./Waterlooufer/Gitsch  O->W   70  10:19:17  10:19:45
+9873,10285    Zossener Str./Waterlooufer/Gitsch  O->W   70  10:19:17  10:19:45
 9593,10238    Hallesches Ufer/Hallesches Tor/Me  O->W                 10:21:17
-9392,10260    Wilhelmstr./Hallesches Ufer        O->W       10:22:13  10:21:24
-9147,10359    Großbeerenstr./Hallesches Ufer     O->W   70  10:22:18  10:22:52
+9404,10250    Wilhelmstr./Hallesches Ufer        O->W       10:22:13  10:21:24
+9154,10348    Großbeerenstr./Hallesches Ufer     O->W   70  10:22:18  10:22:52
 8824,10366    Möckernstr./Hallesches Ufer        O->W       10:23:52
 8578,10672    Schöneberger Str./Hallesches Ufer  O->W       10:25:31  10:24:57
 8000,11137    Reichpietschufer/Potsdamer  (Auto) O->W   70  10:27:23? 10:27:49?
@@ -1226,10 +1226,10 @@ Mi, 05.05.1999
 7980,11070    Schöneberger Ufer/Potsdamer (Auto) W->O   90  16:47:06  16:47:33
 7980,11070    Schöneberger Ufer/Potsdamer  (Rad) W->O       16:48:35  16:47:29
 8336,10829    Flottwellstr./Schöneberger Ufer    W->O       16:50:07  16:49:42
-8804,10314    Möckernstr./Tempelhofer Ufer       W->O       16:52:28  16:52:00
-9141,10292    Großbeerenstr./Tempelhofer Ufer    W->O   90  16:54:18  16:53:49
-9401,10199    Mehringdamm/Tempelhofer Ufer       W->O       16:55:59
-9865,10286    Zossener Str./Waterlooufer/Gitsch  W->O       16:58:00  16:57:14
+8804,10303    Möckernstr./Tempelhofer Ufer       W->O       16:52:28  16:52:00
+9145,10290    Großbeerenstr./Tempelhofer Ufer    W->O   90  16:54:18  16:53:49
+9416,10196    Mehringdamm/Tempelhofer Ufer       W->O       16:55:59
+9873,10285    Zossener Str./Waterlooufer/Gitsch  W->O       16:58:00  16:57:14
 10122,10294   Gitschiner Str./Alexandrinenstr.   W->O       16:58:33
 10605,10312   Gitschiner Str./Prinzenstr.        W->O   70  16:59:07  16:9:43
 
@@ -1237,30 +1237,30 @@ Mi, 05.05.1999
 # ----------------------------------------------------------------------------
 Mi, 19.05.1999
 # ca. 17:05
-9865,10286    Gitschiner Str/Lindenstr           O->W   90
+9873,10285    Gitschiner Str/Lindenstr           O->W   90
 # 27s grün
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mi, 19.05.1999
 # ca. 17:50
-9401,10199    Mehringdamm/Tempelhofer Ufer       S->N   90
+9416,10196    Mehringdamm/Tempelhofer Ufer       S->N   90
 # 27s grün
 # ca. 17:55
-9349,12344    Friedrichstr./Unter den Linden     S->N   90
+9358,12351    Friedrichstr./Unter den Linden     S->N   90
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mi, 19.05.1999
 # ca. 21:10
-9392,10260    Hallesches Ufer/Wilhelmstr         N->S   50
+9404,10250    Hallesches Ufer/Wilhelmstr         N->S   50
 # 10s grün
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Do, 20.05.1999
 # ca. 13:30
-9865,10286    Gitschiner/Lindenstr		 O->W	70
+9873,10285    Gitschiner/Lindenstr		 O->W	70
 # 27s grün
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
@@ -1272,17 +1272,17 @@ Fr, 21.05.1999
 # ----------------------------------------------------------------------------
 Fr, 11.07.2003 (00:00:00 = 09:44:06)
 12295,12197   Andreas/Singer			 O->W	    +00:24    +00:42
-11773,12006   Michaelkirch/Lichtenberger	 N->W		      +02:28
+11768,12006   Michaelkirch/Lichtenberger	 N->W		      +02:28
 11351,12221   Holzmarktstr./Brückenstr.		 O->S	    +03:54    +02:44
-9982,11680    Leipziger/Jerusalemer		 O->W	    +08:48
-9701,11649    Leipziger/Markgrafen		 O->W	    +09:34
+9981,11689    Leipziger/Jerusalemer		 O->W	    +08:48
+9701,11656    Leipziger/Markgrafen		 O->W	    +09:34
 9268,11590    Leipziger/Mauerstr		 O->W	    +11:00
 9058,11564    Leipziger/Wilhelmstr.		 O->W		      +11:30
 8542,11502    Leipziger/Ebertstr.		 O->W	70  +12:52    +13:12
 8172,11679    Lenne/Entlastungsstr.		 O->W	    +16:10
 7717,11540    Tiergarten/Stauffenberg		 O->W	70  +16:39    +17:23
 6825,11486    Tiergarten/Hofjägerallee		 O->W	    +20:14
-5831,10978    Budapester/Breitscheid/Europa	 O->W	    +23:47
+5829,10964    Budapester/Breitscheid/Europa	 O->W	    +23:47
 5484,10810    Kurfürstendamm/Joachimsthaler	 O->W		      +25:14
 5229,10716    Kurfürstendamm/Fasanenstr		 O->W		      +26:07
 5076,10658    Kurfürstendamm/Uhlandstr		 O->W	    +27:07    +26:36
@@ -1309,21 +1309,21 @@ Fr, 11.07.2003 (00:00:00 = 17:35:10)
 5076,10658    Kurfürstendamm/Uhlandstr		 W->O	    +06:46    +07:13
 5229,10716    Kurfürstendamm/Fasanenstr		 W->O	    +07:03
 5484,10810    Kurfürstendamm/Joachimsthaler	 W->O	    +09:06    +08:25
-5657,10868    Kurfürstendamm/Breitscheidplatz	 W->O	    +09:20
-6040,10751    Tauenzien/Nürnberger		 W->O	    +10:44
+5656,10876    Kurfürstendamm/Breitscheidplatz	 W->O	    +09:20
+6025,10746    Tauenzien/Nürnberger		 W->O	    +10:44
 6135,10982    Nürnberger/Kurfürstenstr		 S->N	    +11:55
 6825,11486    Stüler/Klingelhöferstr		 W->O	    +14:10
 7717,11540    Tiergarten/Stauffenberg		 W->O	    +16:42    +16:05
 9058,11564    Leipziger/Wilhelm			 W->O	    +21:09
 9268,11590    Leipziger/Mauerstr		 W->O	    +21:21
-9437,11616    Leipziger/Friedrichstr.		 W->O	    +21:38
-9982,11680    Leipziger/Jerusalemer		 W->O	    +23:28?
-11773,12006   Holzmarktstr/Lichtenberger	 W->N	90  +27:48    +28:08
-11773,12006   Holzmarktstr/Lichtenberger	 W->O	90  +27:30    +27:42
+9444,11616    Leipziger/Friedrichstr.		 W->O	    +21:38
+9981,11689    Leipziger/Jerusalemer		 W->O	    +23:28?
+11768,12006   Holzmarktstr/Lichtenberger	 W->N	90  +27:48    +28:08
+11768,12006   Holzmarktstr/Lichtenberger	 W->O	90  +27:30    +27:42
 12295,12197   Singer/Andreas			 W->O	    +31:00    +31:18
 12811,12081   Rüdersdorfer/Franz-Mehring-Platz	 NW->SO	    +32:49
-13226,11934   Wedekind/Marchlewskistr.		 W->O		      +33:53
-13702,11918   Grünberger/Warschauer		 W->O		      +35:03
+13217,11936   Wedekind/Marchlewskistr.		 W->O		      +33:53
+13696,11920   Grünberger/Warschauer		 W->O		      +35:03
 14449,11742   Grünberger/Boxhagener		 W->SO	    +37:38
 14639,11512   Boxhagener/Holteistr		 NW->SO		      +38:20
 14575,11407   Holteistr./Wühlischstr.		 N->S       +39:36    +38:56
@@ -1331,7 +1331,7 @@ Fr, 11.07.2003 (00:00:00 = 17:35:10)
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Di, 15.07.2003
-13226,11934   Wedekind/Marchlewskistr		 W->O	50? 19:20:00?
+13217,11936   Wedekind/Marchlewskistr		 W->O	50? 19:20:00?
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -1371,12 +1371,12 @@ Sa, 06.12.2008
 14211,11552   Wühlischstr./Modersohnstr./Gärtne	 O->W	90  12:54:50  12:55:34
 14211,11552   Wühlischstr./Modersohnstr./Gärtne	 O->W	90  12:56:20  12:56:44
 14211,11552   Wühlischstr./Modersohnstr./Gärtne	 O->W	    12:57:50
-13655,11727   Kopernikusstr/Warschauer Str.      O->W	    12:58:56  12:59:12
-13655,11727   Kopernikusstr/Warschauer Str.      O->W	    13:01:03
+13651,11731   Kopernikusstr/Warschauer Str.      O->W	    12:58:56  12:59:12
+13651,11731   Kopernikusstr/Warschauer Str.      O->W	    13:01:03
 # nicht als Ampel eingetragen! 13601,11518   Warschauer/Gubener (Fußgänger)	 N->S	    13:02:29
-13546,11352   Warschauer/Helsingforser		 N->S	    13:02:41  13:03:13
-13546,11352   Warschauer/Helsingforser		 N->S	    	      13:04:24
-13546,11352   Warschauer/Helsingforser		 N->S	72  13:04:57  13:05:36
+13541,11355   Warschauer/Helsingforser		 N->S	    13:02:41  13:03:13
+13541,11355   Warschauer/Helsingforser		 N->S	    	      13:04:24
+13541,11355   Warschauer/Helsingforser		 N->S	72  13:04:57  13:05:36
 11454,10400   Kottbusser Tor			 O->W	    13:16:22
 10605,10312   Gitschiner/Prinzen		 O->W		      13:18:16
 8824,10366    Hallesches Ufer/Möckernstr.	 O->W	    	      13:23:55
@@ -1384,14 +1384,14 @@ Sa, 06.12.2008
 8824,10366    Hallesches Ufer/Möckernstr.	 O->W	    13:25:40
 8824,10366    Hallesches Ufer/Möckernstr.	 N->S	    13:26:21  13:26:34
 8824,10366    Hallesches Ufer/Möckernstr.	 N->S	    15:55:41  15:55:54
-8804,10314    Tempelhofer Ufer/Möckernstr.	 N->S	    15:55:46  15:56:01
-13594,11489   Warschauer/Revaler		 N->S	    16:23:49  16:24:48
-13655,11727   Warschauer/Kopernikus		 S->N	92  16:23:51  16:24:55
-13655,11727   Warschauer/Kopernikus		 S->N	    16:25:23
-13702,11918   Warschauer/Grünberger		 S->N	    16:25:37
-13655,11727   Warschauer/Kopernikus		 S->N	74  16:26:37
-13702,11918   Warschauer/Grünberger		 S->N	90  16:27:07  16:27:44
-13655,11727   Warschauer/Kopernikus		 S->N	    	      16:29:01
+8804,10303    Tempelhofer Ufer/Möckernstr.	 N->S	    15:55:46  15:56:01
+13588,11490   Warschauer/Revaler		 N->S	    16:23:49  16:24:48
+13651,11731   Warschauer/Kopernikus		 S->N	92  16:23:51  16:24:55
+13651,11731   Warschauer/Kopernikus		 S->N	    16:25:23
+13696,11920   Warschauer/Grünberger		 S->N	    16:25:37
+13651,11731   Warschauer/Kopernikus		 S->N	74  16:26:37
+13696,11920   Warschauer/Grünberger		 S->N	90  16:27:07  16:27:44
+13651,11731   Warschauer/Kopernikus		 S->N	    	      16:29:01
 
 # Anmerkungen:
 #  Kreuzung:

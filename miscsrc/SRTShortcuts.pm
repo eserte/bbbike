@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.74 2009/01/11 23:34:43 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.74 2009/01/11 23:34:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -34,11 +34,12 @@ if (-e "$FindBin::RealBin/bbbike") {
 } else {
     $bbbike_rootdir = "$ENV{HOME}/src/bbbike";
 }
-my $streets_track         = "$bbbike_rootdir/tmp/streets.bbd";
-my $orig_streets_track    = "$bbbike_rootdir/tmp/streets.bbd-orig";
-my $acc_streets_track     = "$bbbike_rootdir/tmp/streets-accurate.bbd";
-my $acc_cat_streets_track = "$bbbike_rootdir/tmp/streets-accurate-categorized.bbd";
-my $other_tracks          = "$bbbike_rootdir/tmp/other-tracks.bbd";
+my $streets_track               = "$bbbike_rootdir/tmp/streets.bbd";
+my $orig_streets_track          = "$bbbike_rootdir/tmp/streets.bbd-orig";
+my $acc_streets_track           = "$bbbike_rootdir/tmp/streets-accurate.bbd";
+my $acc_cat_streets_track       = "$bbbike_rootdir/tmp/streets-accurate-categorized.bbd";
+my $acc_cat_split_streets_track = "$bbbike_rootdir/tmp/streets-accurate-categorized-split.bbd";
+my $other_tracks                = "$bbbike_rootdir/tmp/other-tracks.bbd";
 
 use vars qw($hm_layer);
 
@@ -146,6 +147,15 @@ sub add_button {
 	      [Button => "Add streets-accurate-categorized.bbd",
 	       -command => sub {
 		   my $f = $acc_cat_streets_track;
+		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
+		   my $layer = add_new_layer("str", $f);
+		   set_layer_highlightning($layer);
+		   main::special_raise($layer, 0);
+	       }
+	      ],
+	      [Button => "Add streets-accurate-categorized-split.bbd",
+	       -command => sub {
+		   my $f = $acc_cat_split_streets_track;
 		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
 		   my $layer = add_new_layer("str", $f);
 		   set_layer_highlightning($layer);
