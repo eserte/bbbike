@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: missing_streets.pl,v 1.5 2008/12/26 22:02:41 eserte Exp eserte $
+# $Id: missing_streets.pl,v 1.6 2009/01/18 21:53:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -124,6 +124,28 @@ foreach my $rec (@{ $plz->{Data} }) {
 		      |Waldfriedhof[ ]Grünau
 		      |AEG[ ]Siedlung[ ]I,[ ]II # Lübars
 		      |Karpfenteich-Wald
+		      |Stadtrandsiedlung # Mariendfelde
+		      |Anglerweg # Schmöckwitz (auf der RV-Karte als "Schmöckwitzwerder Süd (Anglerweg)" gekennzeichnet
+		      |Schmöckwitzwerder[ ]Süd # siehe Anglerweg
+		      |Deutscher[ ]Camping[ ]Club[ ]Krossinsee
+		      |Forstweg # keine eindeutige Referenzen
+		      |Jagen[ ]17[ ]-[ ]20
+		      |Jagen[ ]23
+		      |Jagen[ ]25
+		      |Jagen[ ]33
+		      |Jagen[ ]37
+		      |Schmöckwitzwerder[ ]Nord
+		      |Gutshof[ ]Glienicke # Kladow
+		      |Habichtsgrund
+		      |Habichtswald
+		      |Havelfreunde # Wochenendsiedlungen
+		      |Havelwiese # Kolonie
+		      |Hottengrund # Kaserne
+		      |Badewiese # Gatow
+		      |Breitehorn
+		      |Flugplatz[ ]Gatow
+		      |Ruprecht
+		      |Triftweg
 		      )$}x; # decide later (non-strassen, e.g. brunnels or parks) XXX
     if (exists $seen_street_with_bezirk{$str}->{$bezirk}) {
     } elsif (exists $seen_street{$str}) {

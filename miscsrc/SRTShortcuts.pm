@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.75 2009/01/17 23:52:42 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.75 2009/01/17 23:52:42 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -221,11 +221,13 @@ sub add_button {
 		"-",
 		[Button => "Display downloaded OSM Berlin",
 		 -command => sub {
+		     require Cwd; require File::Basename; local @INC = (@INC, Cwd::realpath(File::Basename::dirname(__FILE__)));
 		     require BBBikeOsmUtil;
 		     BBBikeOsmUtil::plot_visible_area();
 		 }],
 		[Button => "Delete OSM layer",
 		 -command => sub {
+		     require Cwd; require File::Basename; local @INC = (@INC, Cwd::realpath(File::Basename::dirname(__FILE__)));
 		     require BBBikeOsmUtil;
 		     BBBikeOsmUtil::delete_osm_layer();
 		 }],
