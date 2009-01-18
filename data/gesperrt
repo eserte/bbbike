@@ -27,7 +27,7 @@ Segitzdamm etc.	1 10987,10360 11017,10435 11065,10443 11100,10530 11145,10638 11
 Erkelenzdamm etc.	1 11328,10957 11264,10804 11301,10783 11275,10723
 Erkelenzdamm etc.	1 11258,10682 11244,10653 11210,10668 11145,10510 11109,10423 11134,10383 11117,10326
 Erkelenzdamm etc.	1 11094,10261 11038,10247 10967,10092
-Überführung Daimlerstr.	1 8651,2197 8588,2176 8537,2286 8606,2376
+Überführung Daimlerstr.	1 8651,2197 8588,2176 8559,2203 8552,2243 8606,2376
 Großer Stern	1 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6653,12067 6690,12104 6725,12113
 Ernst-Reuter-Platz	1 4770,11820 4867,11835 4906,11772 4897,11727 4842,11679 4780,11702 4747,11751 4770,11820
 Theodor-Heuss-Platz	1 1381,11335 1403,11428 1574,11379 1532,11280 1450,11309 1381,11335
@@ -344,7 +344,7 @@ Czarnikauer Str.	1 10613,16403 10449,16415 10225,16436
 Talstr.	1 11776,16753 11825,16666
 Scharfestr.	1 758,3417 935,3430
 Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18447,8818
-Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20775,16977
+Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20770,16962
 (Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20394,16162 20487,16392
 Jugendweg	1 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
 Boschpoler Platz	1 20540,13773 20665,13759
@@ -469,6 +469,7 @@ Jebensstr.	1 5587,11397 5459,11135
 Breitenbachplatz	1 4125,6728 4081,6646 3983,6599 3925,6604 3938,6651 4007,6717 4084,6766
 Südwestkorso	1 4084,6766 4206,6820
 Südwestkorso	1 4206,6820 4125,6728
+Friedbergstr.	1 3012,10812 3204,10895
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
 Leistikowstr.	1 -12512,810 -12302,718
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -492,7 +493,7 @@ Mauerstr.	1 -13433,-831 -13519,-625
 Wilhelm-Staab-Str.	1 -13001,-1329 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12693,-827 -12712,-734 -12730,-627
 Hans-Thoma-Str.	1 -12219,-726 -12262,-612 -12306,-496
-Behlertstr.	1 -12265,-418 -12194,-490 -12045,-757
+Behlertstr.	1 -12265,-418 -12194,-463 -12106,-699 -12045,-757
 Potsdamer Damm	2 -5736,-3629 -6119,-3907 -6426,-4014
 Nuthestr.	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10321,-2800 -10547,-2606 -10898,-2375 -11070,-2123 -11142,-1675 -11226,-1445 -11356,-1317
 Rudolf-Moos-Str. - Nuthestr.	2 -10281,-2690 -10321,-2800
@@ -523,8 +524,8 @@ Am Alten Markt -> Lange Brücke: Straßenbahntrasse	3::igndisp -12643,-1694 -12659
 Lange Brücke -> Am Alten Markt: Straßenbahntrasse	3::igndisp -12719,-1661 -12659,-1700 -12643,-1694
 Feuerbachstr.	1 -14140,-1390 -13879,-1445
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11142,-1675
-Geschwister-Scholl-Str.	1 -14344,-1748 -14215,-1687 -14151,-1656 -14115,-1678
-Zimmerstr.	1 -13646,-1168 -13883,-1227
+Geschwister-Scholl-Str.	1 -14330,-1762 -14215,-1687 -14151,-1656 -14115,-1678
+Zimmerstr.	1 -13646,-1168 -13876,-1226
 Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
 Puschkinallee	1 -13044,800 -12922,762 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
@@ -657,6 +658,7 @@ Straßenbahntrasse	3nocross::ignrte 20474,14442 20611,14445 20657,14446 20727,144
 Fichtelbergstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20609,14480 20611,14445 20657,14446
 Allee der Kosmonauten -> Fichtelbergstr.: Straßenbahntrasse	3::igndisp 20474,14442 20611,14445 20609,14480
 Straßenbahntrasse	3nocross::ignrte 20822,14594 20868,14698 20944,14840
+Straßenbahntrasse	3nocross::ignrte 20944,14840 20980,14914 21163,15289
 Mittelstreifen	3nocross::ignrte 20260,15434 20525,15571 20641,15622
 Rebhuhnweg -> Landsberger Allee: Mittelstreifen	3::igndisp 20550,15551 20525,15571 20260,15434
 Landsberger Allee -> Rebhuhnweg: Mittelstreifen	3::igndisp 20641,15622 20525,15571 20550,15551
@@ -702,9 +704,9 @@ Schloßstr. -> Wrangelstr.: Mittelstreifen	3::igndisp 4741,5309 4748,5357 4682,53
 Mittelstreifen	3nocross::ignrte 21378,14490 21408,14591 21521,14943
 Blumberger Damm -> Fridolinweg: Mittelstreifen	3::igndisp 21521,14943 21408,14591 21450,14576
 Fridolinweg -> Blumberger Damm: Mittelstreifen	3::igndisp 21450,14576 21408,14591 21378,14490
-Mittelstreifen	3nocross::ignrte 21694,15802 21670,15646 21647,15496
-Pöhlbergstr. -> Blumberger Damm: Mittelstreifen	3::igndisp 21497,15639 21670,15646 21694,15802
-Blumberger Damm -> Pöhlbergstr.: Mittelstreifen	3::igndisp 21647,15496 21670,15646 21497,15639
+Mittelstreifen	3nocross::ignrte 21694,15802 21674,15675 21669,15637 21647,15496
+Pöhlbergstr. -> Blumberger Damm: Mittelstreifen	3::igndisp 21497,15639 21669,15637 21674,15675
+Blumberger Damm -> Pöhlbergstr.: Mittelstreifen	3::igndisp 21647,15496 21669,15637 21497,15639
 Straßenbahntrasse	3nocross::ignrte 21232,15465 21187,15350 21163,15289
 Allee der Kosmonauten -> Alt-Marzahn: Straßenbahntrasse	3::igndisp 21163,15289 21187,15350 21139,15376
 Alt-Marzahn -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 21139,15376 21187,15350 21232,15465
@@ -1651,9 +1653,9 @@ tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:40:-150 9223,14608
 Tor	BNP:5:-260 3326,12730
 Herderstr. (Charlottenburg)	1 4451,11558 4435,11343
 tragen (Treppe)	0:30:-248 7957,12864
-Joachim-Karnatz-Allee	1 7167,12573 7156,12604
-Joachim-Karnatz-Allee	1 7195,12620 7207,12590
-Ingeborg-Drewitz-Allee	1 7395,12774 7420,12752 7539,12754 7538,12729 7418,12725 7388,12724 7367,12747
+Joachim-Karnatz-Allee	1 7142,12584 7131,12615
+Joachim-Karnatz-Allee	1 7175,12630 7187,12598
+Ingeborg-Drewitz-Allee	1 7365,12775 7388,12746 7539,12754 7538,12729 7418,12725 7367,12729 7343,12758
 tragen (Treppe)	0:30:-135 5730,12264
 Mittelstreifen schlecht zu queren	3nocross::ignrte 6020,12492 6086,12446 6178,12387
 Cuxhavener Str. -> Altonaer Str.: Mittelstreifen schlecht zu queren	3::igndisp 5999,12280 6086,12446 6020,12492
@@ -1718,7 +1720,7 @@ Saldernstr. -> Riehlstr.: queren schlecht möglich	3::igndisp 2405,11587 2390,114
 Saldernstr. -> Kaiserdamm: queren schlecht möglich	3::igndisp 2405,11587 2390,11468 2612,11491
 Kaiserdamm -> Saldernstr.: queren schlecht möglich	3::igndisp 2282,11463 2390,11468 2405,11587
 Kaiserdamm -> Riehlstr.: queren schlecht möglich	3::igndisp 2612,11491 2390,11468 2393,11381
-Kleine Markusstr.	1 12037,12092 11974,12110 11969,12054 12021,12037
+Kleine Markusstr.	1 12064,12171 11958,12195 11937,12127 12031,12067
 tragen, schieben (3 x 9 Stufen, schmale Rampe)	0:30:77 6200,12971
 tragen (30 Stufen)	0:45:47 5896,12590
 mehrere einzelne Stufen	0:20:39 5717,12337
@@ -1739,8 +1741,7 @@ Tor	BNP:15:-220 1834,8893
 tragen (10 x 3 Stufen)	0:180:17 2170,8841
 tragen	0:40:-180 2316,8593
 tragen	0:40:-178 2316,8469
-Mittelstr.	1 9465,12460 9384,12448 9345,12443
-Friedrichstr. [Zufahrt]	1 9384,12448 9393,12357
+Mittelstr.	1 9465,12460 9345,12443
 Museumstr.	2:inwork 9943,12642 9884,12712
 Bauhofstr.	1 9810,12712 9671,12644
 (Verlängerte Französische Str.): Tor kann verschlossen sein	2 8901,12008 9076,12054

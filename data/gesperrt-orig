@@ -34,7 +34,7 @@ Segitzdamm etc.	1 10987,10360 11017,10435 11065,10443 11100,10530 11145,10638 11
 Erkelenzdamm etc.	1 11328,10957 11264,10804 11301,10783 11275,10723
 Erkelenzdamm etc.	1 11258,10682 11244,10653 11210,10668 11145,10510 11109,10423 11134,10383 11117,10326
 Erkelenzdamm etc.	1 11094,10261 11038,10247 10967,10092
-Überführung Daimlerstr.	1 8651,2197 8588,2176 8537,2286 8606,2376
+Überführung Daimlerstr.	1 8651,2197 8588,2176 8559,2203 8552,2243 8606,2376
 Großer Stern	1 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6653,12067 6690,12104 6725,12113
 Ernst-Reuter-Platz	1 4770,11820 4867,11835 4906,11772 4897,11727 4842,11679 4780,11702 4747,11751 4770,11820
 Theodor-Heuss-Platz	1 1381,11335 1403,11428 1574,11379 1532,11280 1450,11309 1381,11335
@@ -392,7 +392,7 @@ Talstr.	1 11776,16753 11825,16666
 #: by: friedolin Turowski:
 Scharfestr.	1 758,3417 935,3430
 Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18447,8818
-Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20775,16977
+Walter-Felsenstein-Str.	1 20438,16715 20617,16614 20770,16962
 (Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20394,16162 20487,16392
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Jugendweg	1 1191,14513 1059,14515 1037,14515 998,14516 942,14517 842,14518
@@ -581,6 +581,8 @@ Jebensstr.	1 5587,11397 5459,11135
 Breitenbachplatz	1 4125,6728 4081,6646 3983,6599 3925,6604 3938,6651 4007,6717 4084,6766
 Südwestkorso	1 4084,6766 4206,6820
 Südwestkorso	1 4206,6820 4125,6728
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
+Friedbergstr.	1 3012,10812 3204,10895
 ######################################################################
 #
 # Potsdam
@@ -610,7 +612,7 @@ Mauerstr.	1 -13433,-831 -13519,-625
 Wilhelm-Staab-Str.	1 -13001,-1329 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12693,-827 -12712,-734 -12730,-627
 Hans-Thoma-Str.	1 -12219,-726 -12262,-612 -12306,-496
-Behlertstr.	1 -12265,-418 -12194,-490 -12045,-757
+Behlertstr.	1 -12265,-418 -12194,-463 -12106,-699 -12045,-757
 Potsdamer Damm	2 -5736,-3629 -6119,-3907 -6426,-4014
 Nuthestr.	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10321,-2800 -10547,-2606 -10898,-2375 -11070,-2123 -11142,-1675 -11226,-1445 -11356,-1317
 Rudolf-Moos-Str. - Nuthestr.	2 -10281,-2690 -10321,-2800
@@ -624,8 +626,8 @@ Breite Str.: nicht passierbarer Mittelstreifen	3nocross -13238,-1569 -13375,-154
 Lange Brücke: Straßenbahntrasse	3nocross -12719,-1661 -12659,-1700 -12567,-1817
 Feuerbachstr.	1 -14140,-1390 -13879,-1445
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11142,-1675
-Geschwister-Scholl-Str.	1 -14344,-1748 -14215,-1687 -14151,-1656 -14115,-1678
-Zimmerstr.	1 -13646,-1168 -13883,-1227
+Geschwister-Scholl-Str.	1 -14330,-1762 -14215,-1687 -14151,-1656 -14115,-1678
+Zimmerstr.	1 -13646,-1168 -13876,-1226
 Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
 Puschkinallee	1 -13044,800 -12922,762 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
@@ -758,6 +760,7 @@ Falkenseer Chaussee: Mittelstreifen	3nocross -5039,15618 -5154,15651 -5473,15742
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20269,14256 20241,14016 20210,13776
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20474,14442 20611,14445 20657,14446 20727,14467
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20822,14594 20868,14698 20944,14840
+Allee der Kosmonauten: Straßenbahntrasse	3nocross 20944,14840 20980,14914 21163,15289
 Landsberger Allee: Mittelstreifen	3nocross 20260,15434 20525,15571 20641,15622
 Landsberger Allee: Mittelstreifen	3nocross 15256,14237 15430,14262 15838,14319
 Siemensdamm: Mittelstreifen	3nocross 1133,14387 1057,14389 999,14390 937,14391 889,14392
@@ -782,7 +785,7 @@ Schloßstr.: Mittelstreifen	3nocross 4741,5309 4748,5357 4861,5581
 #: note: Luftbild
 Blumberger Damm: Mittelstreifen	3nocross 21378,14490 21408,14591 21521,14943
 #: note: Luftbild
-Blumberger Damm: Mittelstreifen	3nocross 21694,15802 21670,15646 21647,15496
+Blumberger Damm: Mittelstreifen	3nocross 21694,15802 21674,15675 21669,15637 21647,15496
 #: note: Luftbild
 Blumberger Damm: Straßenbahntrasse	3nocross 21232,15465 21187,15350 21163,15289
 Schönholzer Str.: Straßenbahn auf der Fahrbahn	3nocross 10089,18180 10054,18210 9909,18333
@@ -1367,9 +1370,9 @@ tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:40 9223,14608
 Tor	BNP:5 3326,12730
 Herderstr. (Charlottenburg)	1 4451,11558 4435,11343
 tragen (Treppe)	0:30 7957,12864
-Joachim-Karnatz-Allee	1 7167,12573 7156,12604
-Joachim-Karnatz-Allee	1 7195,12620 7207,12590
-Ingeborg-Drewitz-Allee	1 7395,12774 7420,12752 7539,12754 7538,12729 7418,12725 7388,12724 7367,12747
+Joachim-Karnatz-Allee	1 7142,12584 7131,12615
+Joachim-Karnatz-Allee	1 7175,12630 7187,12598
+Ingeborg-Drewitz-Allee	1 7365,12775 7388,12746 7539,12754 7538,12729 7418,12725 7367,12729 7343,12758
 tragen (Treppe)	0:30 5730,12264
 Altonaer Str.: Mittelstreifen schlecht zu queren	3nocross 6020,12492 6086,12446 6178,12387
 tragen (Treppe)	0:30 8160,13028
@@ -1393,7 +1396,7 @@ tragen (16 Stufen)	0:40 4124,12706
 tragen (16 Stufen)	0:40 4128,12637
 Kaiserdamm: queren schlecht möglich	3nocross 2109,11441 2191,11451 2282,11463
 Kaiserdamm: queren schlecht möglich	3nocross 2282,11463 2390,11468 2612,11491
-Kleine Markusstr.	1 12037,12092 11974,12110 11969,12054 12021,12037
+Kleine Markusstr.	1 12064,12171 11958,12195 11937,12127 12031,12067
 tragen, schieben (3 x 9 Stufen, schmale Rampe)	0:30 6200,12971
 tragen (30 Stufen)	0:45 5896,12590
 mehrere einzelne Stufen	0:20 5717,12337
@@ -1412,8 +1415,7 @@ Tor	BNP:15 1834,8893
 tragen (10 x 3 Stufen)	0:180 2170,8841
 tragen	0:40 2316,8593
 tragen	0:40 2316,8469
-Mittelstr.	1 9465,12460 9384,12448 9345,12443
-Friedrichstr. [Zufahrt]	1 9384,12448 9393,12357
+Mittelstr.	1 9465,12460 9345,12443
 #: last_checked: 2008-06-22
 #: next_check: 2009-01-01
 Museumstr.	2:inwork 9943,12642 9884,12712

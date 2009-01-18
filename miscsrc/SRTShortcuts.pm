@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.74 2009/01/11 23:34:43 eserte Exp eserte $
+# $Id: SRTShortcuts.pm,v 1.75 2009/01/17 23:52:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.74 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.75 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -218,6 +218,17 @@ sub add_button {
 		     add_new_layer("str", "$bbbike_rootdir/misc/abdeckung.bbd");
 		 }
 		],
+		"-",
+		[Button => "Display downloaded OSM Berlin",
+		 -command => sub {
+		     require BBBikeOsmUtil;
+		     BBBikeOsmUtil::plot_visible_area();
+		 }],
+		[Button => "Delete OSM layer",
+		 -command => sub {
+		     require BBBikeOsmUtil;
+		     BBBikeOsmUtil::delete_osm_layer();
+		 }],
 		"-",
 		[Button => 'OSM-converted layer',
 		 -state => 'disabled',

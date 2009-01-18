@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd,v 2.4 2009/01/12 19:49:36 eserte Exp $
+# $Id: osm2bbd,v 2.5 2009/01/17 16:27:04 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008,2009 Slaven Rezic. All rights reserved.
@@ -728,7 +728,7 @@ for my $osm_file (@osm_files) {
 		} elsif ($highway_cat eq 'living_street') {
 		    push @or, ["strassen", "N".$addcat];
 		    push @or, ["radwege_exact", "RW6;RW6", name => ($name ? "$name: " : "") . "verkehrsberuhigter Bereich"];
-		} elsif ($highway_cat eq 'construction') {
+		} elsif ($highway_cat =~ m{^(?:construction|planned)$}) {
 		    my $construction = $tag{'construction'} || "";
 		    if ($construction eq 'motorway') { # seen in Berlin, strange one
 			push @or, ["strassen_bab", "BAB::inwork"];
@@ -1368,6 +1368,13 @@ To get the bbox of a bbd file, use:
 
     perl -l -MKarte::Standard -MKarte::Polar -MStrassen -e '$s=Strassen->new("data/strassen"); ($x1,$y1,$x2,$y2) = $s->bbox; print join(",", $Karte::Polar::obj->standard2map($x1,$y1),$Karte::Polar::obj->standard2map($x2,$y2))'
 
+Get the visible area in the BBBike application. Start ptksh within
+BBBike (in the Settings menu if bbbike was started with -advanced, orr
+hit just Shift-P) and the type in:
+
+    @corners = $c->get_corners;
+    join(",", $Karte::Polar::obj->standard2map(anti_transpose(@corners[0,1])), 
+              $Karte::Polar::obj->standard2map(anti_transpose(@corners[2,3])));
 
 =head1 EXAMPLES
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.93 2009/01/14 20:27:48 eserte Exp $
+# $Id: Core.pm,v 1.94 2009/01/17 15:48:53 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.93 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.94 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -1097,6 +1097,7 @@ sub split_ort {
 #   GridHeight, GridWidth: grid extents (by default 1000)
 # With -rebuild => 1 the grid will be build again.
 # Uses the private Strassen::Core iterator "make_grid".
+# Specify another coordinate system with -tomap (like in get_conversion)
 ### AutoLoad Sub
 sub make_grid {
     my($self, %args) = @_;
@@ -1113,8 +1114,15 @@ sub make_grid {
 			   ? $args{GridWidth} : 1000);
     $self->{GridHeight} = (defined $args{GridHeight}
 			   ? $args{GridHeight} : $self->{GridWidth});
+    my $conv;
+    if ($args{-tomap}) {
+	$conv = $self->get_conversion(-tomap => $args{-tomap});
+    }
     my $cachefile = "grid" . ($use_exact ? "x" : "") . "_" . $self->id .
 	            "_" . $self->{GridWidth}."x".$self->{GridHeight};
+    if ($conv) {
+	$cachefile .= "_" . $args{-tomap};
+    }
     if ($use_cache) {
 	require Strassen::Util;
 	my $hashref = Strassen::Util::get_from_cache($cachefile, [$self->dependent_files]);
@@ -1127,6 +1135,7 @@ sub make_grid {
     $self->{Grid} = {};
     $self->{GridIsExact} = $use_exact;
     $self->{GridUseCache} = $use_cache;
+    $self->{GridConv} = $conv;
     my $grid_build = ($use_exact
 		      ? $self->_make_grid_exact
 		      : $self->_make_grid_fast);
@@ -1146,11 +1155,13 @@ sub _make_grid_fast {
     my $self = shift;
     my %grid_build;
     $self->init_for_iterator("make_grid");
+    my $conv = $self->{GridConv};
     my $strpos = 0;
     while(1) {
 	my $r = $self->next_for_iterator("make_grid");
 	last if !@{$r->[COORDS]};
 	foreach my $c (@{$r->[COORDS]}) {
+	    $c = $conv->($c) if $conv;
 	    $grid_build{join(",",$self->grid(split(/,/, $c)))}->{$strpos}++;
 	}
 	$strpos++;
@@ -1173,16 +1184,23 @@ sub _make_grid_exact {
 
     my %grid_build;
     $self->init_for_iterator("make_grid");
+    my $conv = $self->{GridConv};
     my $strpos = 0;
     while(1) {
 	my $r = $self->next_for_iterator("make_grid");
 	last if !@{$r->[COORDS]};
-	if (@{ $r->[COORDS] } == 1) {
-	    $grid_build{join(",",$self->grid(split(/,/, $r->[COORDS][0])))}->{$strpos}++;
+	my @c;
+	if ($conv) {
+	    @c = map { $conv->($_) } @{ $r->[COORDS] };
 	} else {
-	    for my $i (0 .. $#{$r->[COORDS]}-1) {
-		my($x1, $y1) = split(',', $r->[COORDS][$i]);
-		my($x2, $y2) = split(',', $r->[COORDS][$i+1]);
+	    @c = @{ $r->[COORDS] };
+	}
+	if (@c == 1) {
+	    $grid_build{join(",",$self->grid(split(/,/, $c[0])))}->{$strpos}++;
+	} else {
+	    for my $i (0 .. $#c-1) {
+		my($x1, $y1) = split(',', $c[$i]);
+		my($x2, $y2) = split(',', $c[$i+1]);
 		my($from_grid_x, $from_grid_y) = $self->grid($x1,$y1);
 		my($to_grid_x, $to_grid_y) = $self->grid($x2,$y2);
 		($from_grid_x, $to_grid_x) = ($to_grid_x, $from_grid_x)
@@ -1378,10 +1396,10 @@ sub get_conversion {
     my $frommap = $self->{GlobalDirectives}{map} || $args{Map};
     if ($frommap) {
 	$frommap = $frommap->[0];
-	require Karte;
-	Karte::preload(":all"); # Can't preload specific maps, because $map is a token, not a map module name
 	my $tomap = $args{-tomap} || "standard";
 	return if $frommap eq $tomap; # no conversion needed
+	require Karte;
+	Karte::preload(":all"); # Can't preload specific maps, because $map is a token, not a map module name
 	if ($tomap ne "standard") {
 	    $convsub = sub {
 		join ",", $Karte::map{$frommap}->map2map($Karte::map{$tomap},

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: VectorUtil.pm,v 1.18 2008/02/23 13:11:57 eserte Exp $
+# $Id: VectorUtil.pm,v 1.19 2009/01/17 21:25:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001,2004,2008 Slaven Rezic. All rights reserved.
@@ -16,13 +16,15 @@ package VectorUtil;
 
 use strict;
 use vars qw($VERSION $VERBOSE @ISA @EXPORT_OK);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 
 require Exporter;
 @ISA = 'Exporter';
 
 @EXPORT_OK = qw(vector_in_grid distance_point_line get_polygon_center
-		point_in_grid point_in_polygon move_point_orthogonal);
+		point_in_grid point_in_polygon move_point_orthogonal
+		intersect_rectangles enclosed_rectangle normalize_rectangle
+	       );
 
 sub pi () { 4 * atan2(1, 1) } # 3.141592653
 
@@ -210,8 +212,7 @@ sub get_polygon_center {
     }
 }
 
-# XXX check for enclosed missing
-# only for parallel rectangles
+# only for parallel rectangles, does not check for enclosed rectangles
 sub intersect_rectangles {
     my($ax,$ay,$bx,$by, $cx,$cy,$dx,$dy) = @_;
     # horizontal against vertical
@@ -229,6 +230,13 @@ sub intersect_rectangles {
     0;
 }
 
+# Return true if inner rectangle is enclosed in outer rectangle
+sub enclosed_rectangle {
+    my($outer_x0,$outer_y0,$outer_x1,$outer_y1,
+       $inner_x0,$inner_y0,$inner_x1,$inner_y1) = @_;
+    return ($inner_x0 >= $outer_x0 && $inner_y0 >= $outer_y0 &&
+	    $inner_x1 <= $outer_x1 && $inner_y1 <= $outer_y1);
+}
 
 # from mapsearch.c
 sub intersect_lines {
@@ -312,6 +320,13 @@ sub move_point_orthogonal {
     my $beta  = $alpha + pi/2;
     my($dx, $dy) = ($delta*cos($beta), $delta*sin($beta));
     ($p1+$dx, $p2+$dy);
+}
+
+sub normalize_rectangle {
+    my(@r) = @_;
+    ($r[2], $r[0]) = ($r[0], $r[2]) if $r[2] < $r[0];
+    ($r[3], $r[1]) = ($r[1], $r[3]) if $r[3] < $r[1];
+    @r;
 }
 
 # REPO BEGIN

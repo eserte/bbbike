@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.30 2009/01/01 21:49:05 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.31 2009/01/18 00:41:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -213,7 +213,7 @@ sub BBBikeLazy::bbbikelazy_add_data_by_subs {
 	push @defs_p_subs_abk, $abk;
 	$lazy_p{$abk} = $nonorig_s;
 	BBBikeLazy::draw_points($def);
-	$lazy_p{$abk}->make_grid(UseCache => 1);
+	$lazy_p{$abk}->make_grid(UseCache => 1, -tomap => $coord_system);
 	if (!defined $lazy_master) {
 	    $lazy_master = $lazy_p{$abk};
 	}
@@ -305,7 +305,7 @@ sub BBBikeLazy::draw_streets {
     } else {
 	$lazy_str{$def->[0]}->reload;
     }
-    $lazy_str{$def->[0]}->make_grid(UseCache => 1);
+    $lazy_str{$def->[0]}->make_grid(UseCache => 1, -tomap => $coord_system);
     $str_draw{$def->[0]} = 1;
     $str_outline{$def->[0]} = 0;
     if ($def->[0] =~ /^L\d+/) {
@@ -320,7 +320,7 @@ sub BBBikeLazy::draw_points {
     } else {
 	$lazy_p{$def->[0]}->reload;
     }
-    $lazy_p{$def->[0]}->make_grid(UseCache => 1);
+    $lazy_p{$def->[0]}->make_grid(UseCache => 1, -tomap => $coord_system);
     $p_draw{$def->[0]} = 1;
     if ($def->[0] =~ /^L\d+/) {
 	std_p_binding($def->[0]);
@@ -436,7 +436,7 @@ sub BBBikeLazy::plotstr_on_demand {
     if (@grids) {
 	my $need_street_name_experiment_init = 1;
 	foreach my $abk (@defs_str_abk) {
-	    next if !$lazy_str{$abk}; # XXX should not happen, but it happens
+	    do { warn "XXX should not happen, but it happens... <$abk> does not exist in \$lazy_str, but it is referenced in \@defs_str_abk"; next } if !$lazy_str{$abk}; # XXX should not happen, but it happens
 	    my $do_street_name_experiment = 0;
 	    if ($str_name_draw{$abk} && $abk =~ m{^(s|l|fz)$} && eval {
 		require SRTShortcuts;

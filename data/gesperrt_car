@@ -225,9 +225,9 @@ Gartenstr. -> Kleine Hamburger Str.: Torstr.	3::igndisp 9531,13797 9668,13629 97
 Torstr. -> Gartenstr.: Torstr.	3::igndisp 9571,13590 9668,13629 9531,13797
 Siegfriedstr.	1 12340,6947 12477,6975 12664,7013 12810,7047 12843,7093 12872,7134
 Onkel-Herse-Str.	1 13680,4715 13757,4729 13836,4759 13853,4759 13928,4775
-Paulstr.	3nocross::ignrte 7064,12419 7091,12554 7097,12590
-Joachim-Karnatz-Allee -> Paulstr.: Paulstr.	3::igndisp 7167,12573 7091,12554 7064,12419
-Paulstr. -> Joachim-Karnatz-Allee: Paulstr.	3::igndisp 7097,12590 7091,12554 7167,12573
+Paulstr.	3nocross::ignrte 7064,12419 7095,12571 7102,12613
+Joachim-Karnatz-Allee -> Paulstr.: Paulstr.	3::igndisp 7142,12584 7095,12571 7064,12419
+Paulstr. -> Joachim-Karnatz-Allee: Paulstr.	3::igndisp 7102,12613 7095,12571 7142,12584
 Holsteiner Ufer	1 6580,12775 6452,12828 6354,12870
 Händelallee	1 6082,12273 6130,12232 6280,12222 6265,12134 5998,12105 5961,12134
 Wundstr.	1 2252,11037 2272,11074 2346,11147
@@ -414,8 +414,8 @@ Frankfurter Allee -> Waldeyerstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::i
 Friedrichstr. (Straßenbahn)	3nocross::ignrte 9215,13392 9236,13228 9245,13162 9251,13109
 Friedrichstr. -> Claire-Waldoff-Str.: Friedrichstr. (Straßenbahn)	3::igndisp 9245,13162 9236,13228 9114,13217
 Claire-Waldoff-Str. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9114,13217 9236,13228 9215,13392
-Friedrichstr. -> Johannisstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9236,13228 9245,13162 9396,13176
-Johannisstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9396,13176 9245,13162 9251,13109
+Friedrichstr. -> Johannisstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9236,13228 9245,13162 9385,13174
+Johannisstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9385,13174 9245,13162 9251,13109
 Oranienburger Str. (Straßenbahnhaltestelle)	3nocross::ignrte 9215,13392 9281,13374 9415,13315
 Oranienburger Str. -> Linienstr.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9215,13392 9281,13374 9296,13397
 Linienstr. -> Oranienburger Str.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9296,13397 9281,13374 9415,13315
@@ -765,3 +765,6 @@ keine Abbiegemöglichkeit	3nocross::ignrte 20053,3272 20001,3331 19892,3454
 Mittelstreifen	3nocross::ignrte 5542,11075 5459,11135 5268,11274
 Jebensstr. -> Hardenbergstr.: Mittelstreifen	3::igndisp 5587,11397 5459,11135 5542,11075
 Hardenbergstr. -> Jebensstr.: Mittelstreifen	3::igndisp 5268,11274 5459,11135 5587,11397
+Mittelstreifen	3nocross::ignrte 6757,13112 6860,13093 6966,13075
+Alt-Moabit -> Calvinstr.: Mittelstreifen	3::igndisp 6966,13075 6860,13093 6802,12797
+Calvinstr. -> Alt-Moabit: Mittelstreifen	3::igndisp 6802,12797 6860,13093 6757,13112
