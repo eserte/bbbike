@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: missing_streets.pl,v 1.6 2009/01/18 21:53:15 eserte Exp $
+# $Id: missing_streets.pl,v 1.6 2009/01/18 21:53:15 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -155,12 +155,17 @@ foreach my $rec (@{ $plz->{Data} }) {
 }
 
 #use YAML::Syck qw(Dump);
-use YAML qw(Dump);
+#use YAML qw(Dump);
 binmode STDOUT, ':encoding(iso-8859-1)';
 #local $YAML::Syck::ImplicitUnicode = 1;
 for my $key (sort { scalar(@{$missing_by_bezirk{$a}}) <=> scalar(@{$missing_by_bezirk{$b}}) } keys %missing_by_bezirk) {
-    my %dump_hash = ("$key (" . scalar(@{$missing_by_bezirk{$key}}) . ")" => $missing_by_bezirk{$key});
-    print Dump(\%dump_hash);
+    print "$key (" . scalar(@{$missing_by_bezirk{$key}}) . ")\n";
+    for my $str (@{ $missing_by_bezirk{$key} }) {
+	print "  $str\n";
+    }
+    print "\n";
+#    my %dump_hash = ("$key (" . scalar(@{$missing_by_bezirk{$key}}) . ")" => $missing_by_bezirk{$key});
+#    print Dump(\%dump_hash);
 }
 #print Dump(\%missing_by_bezirk);
 #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\%missing_by_bezirk],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
