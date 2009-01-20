@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-grid.t,v 1.3 2005/01/02 23:06:47 eserte Exp $
+# $Id: strassen-grid.t,v 1.4 2009/01/20 21:59:12 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -64,13 +64,14 @@ for my $use_cache (1, 0) {
 # 		   ["16587,9437", "16374,9760"],
 
 		   # Puschkinallee
-		   ["15079,9321", "14811,9449", undef, "15147,9574"],
+		   ["15079,9321", "14819,9462", undef, "15140,9566"],
 		   # etwas nördlich davon
-		   ["15042,9340", "14811,9449"],
+		   ["15042,9340", "14819,9462", undef, "15140,9566"],
 		   # etwas südlich davon
-		   ["15228,9250", "15366,9182"],
+		   ["15228,9250", "15383,9191"],
 		  ) {
 	my($p, $p_exact, $p_fast, $p_kr) = @$p_def;
+	diag("* $p " . "*"x50);
 	if (!defined $p_fast) { $p_fast = $p_exact }
 	if (!defined $p_kr)   { $p_kr   = $p_fast }
 	is($s_exact->nearest_point($p), $p_exact, "Exact test for $p, $cache_text");

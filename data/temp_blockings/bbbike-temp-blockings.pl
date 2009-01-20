@@ -5899,7 +5899,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003672',
        data  => <<EOF,
-userdel	2::inwork 12841,9368 12785,9443 12569,9547
+userdel	2::inwork 12844,9351 12764,9433 12569,9547
 EOF
      },
      { from  => 1160172484, # 2006-10-07 00:08
@@ -6667,7 +6667,7 @@ EOF
        text  => 'Bauarbeiten am Maybachufer zwischen Pannierstr. und Weichselstr., Behinderungen möglich',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 12841,9368 12785,9443 12569,9547
+userdel	q4::inwork 12844,9351 12764,9433 12569,9547
 EOF
      },
      { from  => 1164322800, # 2006-11-24 00:00

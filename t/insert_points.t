@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points.t,v 1.12 2006/09/14 22:23:15 eserte Exp $
+# $Id: insert_points.t,v 1.13 2009/01/20 21:50:15 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -37,7 +37,7 @@ plan tests => 5 * 2;
 
 my($logfh,$logfile) = tempfile(SUFFIX => ".log");
 
-my $dudenstr      = "9222,8787"; # ecke Mehringdamm
+my $dudenstr      = "9229,8785"; # ecke Mehringdamm
 my $dudenstr_orig = $dudenstr; # "8796,8817";
 
 BEGIN { $^W = 0 }

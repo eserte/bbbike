@@ -676,15 +676,6 @@ push @temp_blocking,
          'data' => 'userdel	q4::inwork 26609,-7136 26700,-7334 26790,-7918 26749,-8475
 ',
          'type' => 'handicap'
-       },
-       {
-         'until' => 1232406000,
-         'text' => 'K 7359 Crussow - B 2 zw. Kreisverkehr B 2 Ri. Schwedt und OE Neuhof Rohre für Erdgastrasse Vollsperrung 07.01.2009-19.01.2009 ',
-         'from' => 1231196400,
-         'id' => 1559,
-         'data' => 'userdel	2::inwork 55431,69759 55318,70278
-',
-         'type' => 'gesperrt'
        }
      
 );
