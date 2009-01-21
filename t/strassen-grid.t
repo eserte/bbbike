@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-grid.t,v 1.4 2009/01/20 21:59:12 eserte Exp $
+# $Id: strassen-grid.t,v 1.5 2009/01/21 19:31:19 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -71,7 +71,7 @@ for my $use_cache (1, 0) {
 		   ["15228,9250", "15383,9191"],
 		  ) {
 	my($p, $p_exact, $p_fast, $p_kr) = @$p_def;
-	diag("* $p " . "*"x50);
+	#diag("* $p " . "*"x50);
 	if (!defined $p_fast) { $p_fast = $p_exact }
 	if (!defined $p_kr)   { $p_kr   = $p_fast }
 	is($s_exact->nearest_point($p), $p_exact, "Exact test for $p, $cache_text");

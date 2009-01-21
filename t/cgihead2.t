@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.22 2008/11/29 17:00:06 eserte Exp $
+# $Id: cgihead2.t,v 1.23 2009/01/21 22:47:00 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -152,7 +152,8 @@ sub check_url {
 	} elsif ($url =~ m{\.tar\.gz\?download$}) { # Sourceforge download
 	    like($content_type, qr{^application/x-(tar|gzip)$}, "Expected type (tar or gzip)") or diag("For URL $url $redir_url");
 	} elsif ($url =~ m{\.exe\?download$}) { # Sourceforge download
-	    is($content_type, "application/octet-stream", "Expected type (binary)") or diag("For URL $url $redir_url");
+	    like($content_type, qr{^application/(octet-stream|x-msdos-program)$}, "Expected type (binary or msdos program)")
+		or diag("For URL $url $redir_url");
 	} elsif ($url =~ m{\.deb\?download$}) { # Sourceforge download
 	    # XXX One of the sourceforge mirrors uses text/plain as content-type
 	    like($content_type, qr{^application/(octet-stream|x-debian-package)$}, "Expected type (debian package), got $content_type")

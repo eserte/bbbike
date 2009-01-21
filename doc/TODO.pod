@@ -4126,7 +4126,7 @@ Tasks:
 
  * check if git cvsimport can deal with deleted/Attic files
 
- * deal with automated $Id: TODO.pod,v 1.120 2009/01/01 21:47:28 eserte Exp eserte $ generation
+ * deal with automated dollar Id: dollar generation
 
  * what about not-yet-RCS controlled files? just copy over, or put
    everything to git?

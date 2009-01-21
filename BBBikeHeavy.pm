@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.40 2008/11/23 14:11:16 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.41 2009/01/21 21:39:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.40 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.41 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -343,12 +343,12 @@ sub BBBikeHeavy::layer_editor {
 	while(my($abk, $val) = each %str_draw) {
 	    next if $abk !~ /^L\d/;
 	    if ($val && (defined $str_file{$abk} || $str_obj{$abk})) {
-		my $layer_name = "Layer $abk";
+		my $layer_name = $layer_name{$abk}; $layer_name = "Layer $abk" if !defined $layer_name ;
 		if (defined $str_file{$abk}) {
 		    $layer_name .= " (" .basename($str_file{$abk}).")";
 		}
 		push @elem,
-		    {Image => undef,
+		    {Image => $layer_icon{$abk},
 		     Text => $layer_name,
 		     Visible => $val,
 		     Data => {Tag => "$abk", # XXX apparently without "-s"
@@ -361,12 +361,12 @@ sub BBBikeHeavy::layer_editor {
 	while(my($abk, $val) = each %p_draw) {
 	    next if $abk !~ /^L\d/;
 	    if ($val && (defined $p_file{$abk} || $p_obj{$abk})) {
-		my $layer_name = "Layer $abk";
+		my $layer_name = $layer_name{$abk}; $layer_name = "Layer $abk" if !defined $layer_name;
 		if (defined $p_file{$abk}) {
 		    $layer_name .= " (" .basename($p_file{$abk}).")";
 		}
 		push @elem,
-		    {Image => undef,
+		    {Image => $layer_icon{$abk},
 		     Text => $layer_name,
 		     Visible => $val,
 		     Data => {Tags => [$abk, "$abk-fg", "$abk-img", "$abk-label"],

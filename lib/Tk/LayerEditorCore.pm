@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LayerEditorCore.pm,v 1.11 2008/07/04 22:00:58 eserte Exp $
+# $Id: LayerEditorCore.pm,v 1.12 2009/01/21 21:56:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999, 2000, 2004 Slaven Rezic. All rights reserved.
@@ -73,7 +73,7 @@ sub Tk::DragDrop::StartDrag
 }
 }
 
-$VERSION = '0.12';
+$VERSION = '0.13';
 
 sub CommonPopulate {
     my($w, $args) = @_;
@@ -183,7 +183,7 @@ sub add {
 	if ($p) {
 	    $c->createImage($x, $y,
 			    -image => $p, -anchor => 'nw',
-			    -tags => ['layeritem', "layeritem-$i"]);
+			    -tags => ['layeritem', "layeritem-$i", 'layerimage', "layerimage-$i"]);
 	    $p_height = $p->height;
 	    $p_width = $p->width;
 	}
@@ -194,6 +194,16 @@ sub add {
 	$i++;
     }
     push @y, $y;
+
+    # center images
+    for my $image_item ($c->find(withtag => 'layerimage')) {
+	my $p = $c->itemcget($image_item, '-image');
+	if ($p->width < $max_width - 1) {
+	    my($x, $y) = $c->coords($image_item);
+	    $c->coords($image_item, $x + ($max_width-$p->width)/2, $y);
+	}
+    }
+
     $max_width += $x + 6; # extra border
 
     $i = 0;

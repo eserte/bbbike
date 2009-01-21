@@ -989,7 +989,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 43553,20466 43584,20871
-userdel	q4 43553,20466 43110,19818
+userdel	q4 43553,20466 43131,19792
 EOF
      },
      { from  => 1097177672, # 2004-10-07 21:34
@@ -7286,8 +7286,8 @@ EOF
        text  => 'Manteuffelstr. zwischen Skalitzer Str. und Naunynstr. sowie Skalitzer Str. und Paul-Lincke-Ufer: Einbahnstraßenregelung bis Ende 09.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 12000,10531 12056,10655
-userdel	1::inwork 11949,10414 11833,10206 11735,10022
+userdel	1::inwork 12000,10531 12052,10644
+userdel	1::inwork 11949,10414 11829,10192 11735,10022
 EOF
      },
      { from  => 1178564445, # 2007-05-07 21:00
@@ -7906,7 +7906,7 @@ EOF
        text  => 'L 034 Philipp-Müller-Str. OD Strausberg, Höhe Feuerwehr Instandsetzung TW-Schieber halbseitig gesperrt; Einbahnstraße 02.05.2007-09.05.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 43584,20871 43553,20466 43110,19818
+userdel	1::inwork 43584,20871 43553,20466 43131,19792
 EOF
      },
      { from  => 1177739838, # 2007-04-28 07:57
@@ -12845,7 +12845,7 @@ EOF
        text  => 'L 034 Hohensteiner Chaussee OD Strausberg, zw. Ph.-Müller-Str. und Getränkemarkt Instandsetzung Entwäss. Vollsperrung 20.10.2008-30.10.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 43110,19818 43686,19241
+userdel	q4::inwork 43131,19792 43686,19241
 EOF
      },
      { from  => 1191362400, # 2007-10-03 00:00

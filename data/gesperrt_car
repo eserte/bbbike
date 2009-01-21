@@ -62,7 +62,7 @@ Großgörschen/Kulmer	3 7771,9389 7771,9479 7829,9723
 Herbartstr.	1 2340,11045 2372,10941 2476,10790 2498,10665
 Breite Str. Pankow	1 10609,18384 10680,18380
 Gormannstr.	1 10463,13747 10445,13675 10406,13543 10390,13493 10372,13436
-Reichenberger Str.	1 11291,10438 11370,10398
+Reichenberger Str.	1 11291,10438 11393,10390
 Weserstr.	1 12074,9217 11993,9211 11881,9202
 Friedenstr.	1 12325,13148 12386,13085
 Fasanenstr.	1 5223,9810 5209,9978
@@ -93,8 +93,8 @@ Horn - Yorck	3nocross::ignrte 8777,9601 9002,9731 9043,9745
 Hornstr. -> Yorckstr.: Horn - Yorck	3::igndisp 8980,9751 9002,9731 9043,9745
 Yorckstr. -> Hornstr.: Horn - Yorck	3::igndisp 8777,9601 9002,9731 8980,9751
 Mehringdamm - Baruther	3nocross::ignrte 9444,9919 9387,9804 9334,9670
-Baruther Str. -> Mehringdamm: Mehringdamm - Baruther	3::igndisp 9568,9825 9387,9804 9334,9670
-Mehringdamm -> Baruther Str.: Mehringdamm - Baruther	3::igndisp 9444,9919 9387,9804 9568,9825
+Baruther Str. -> Mehringdamm: Mehringdamm - Baruther	3::igndisp 9588,9827 9387,9804 9334,9670
+Mehringdamm -> Baruther Str.: Mehringdamm - Baruther	3::igndisp 9444,9919 9387,9804 9588,9827
 Fidicin - Mehringdamm	3 9305,9044 9235,9051 9234,9038 9227,8890
 Hobrechtstr.	1 12003,9105 11998,8872
 Lützowplatz	1 7002,11034 6873,11011
@@ -317,9 +317,9 @@ Zeughofstr. -> Skalitzer Str.: Skalitzer Str./Zeughofstr.	3::igndisp 12456,10563
 Stralauer/Damaschkestr.	3nocross::ignrte 13678,10685 13779,10642 13919,10583
 Stralauer Allee -> Danneckerstr.: Stralauer/Damaschkestr.	3::igndisp 13678,10685 13779,10642 13854,10858
 Danneckerstr. -> Stralauer Allee: Stralauer/Damaschkestr.	3::igndisp 13854,10858 13779,10642 13919,10583
-Skalitzer/Admiralstr.	3nocross::ignrte 11370,10398 11336,10390 11318,10386
-Admiralstr. -> Skalitzer Str.: Skalitzer/Admiralstr.	3::igndisp 11314,10320 11336,10390 11318,10386
-Skalitzer Str. -> Admiralstr.: Skalitzer/Admiralstr.	3::igndisp 11370,10398 11336,10390 11314,10320
+Skalitzer/Admiralstr.	3nocross::ignrte 11393,10390 11335,10375 11316,10372
+Skalitzer Str. -> Admiralstr.: Skalitzer/Admiralstr.	3::igndisp 11393,10390 11335,10375 11325,10317
+Admiralstr. -> Skalitzer Str.: Skalitzer/Admiralstr.	3::igndisp 11325,10317 11335,10375 11316,10372
 Gutenbergstr.	1 -12045,-757 -12219,-726
 Langhoffstr.	1 19817,14454 19818,14064
 Lintruper Str.	1 10307,922 10380,757

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeOsmUtil.pm,v 1.3 2009/01/17 23:51:56 eserte Exp eserte $
+# $Id: BBBikeOsmUtil.pm,v 1.5 2009/01/21 22:41:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -16,14 +16,18 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
-use vars qw($osm_layer $osm_layer_area);
+use vars qw($osm_layer $osm_layer_area %images);
 
 use Cwd qw(realpath);
 use File::Basename qw(dirname);
 
 use VectorUtil qw(enclosed_rectangle intersect_rectangles normalize_rectangle);
+
+sub register {
+    _create_images();
+}
 
 {
     # XXX
@@ -33,15 +37,44 @@ use VectorUtil qw(enclosed_rectangle intersect_rectangles normalize_rectangle);
 }
 
 sub plot_visible_area {
+    my($x0,$y0,$x1,$y1) = _get_visible_area();
+    my @osm_files = osm_files_in_grid($x0,$y0,$x1,$y1);
+    plot_osm_files(\@osm_files);    
+}
+
+sub download_and_plot_visible_area {
+    my($x0,$y0,$x1,$y1) = _get_visible_area();
+    require File::Temp;
+    require LWP::UserAgent;
+    my $ua = LWP::UserAgent->new;
+    $ua->agent("BBBike/$main::VERSION (BBBikeOsmUtil/$VERSION LWP/$LWP::VERSION");
+    my(undef,$tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ".osm");
+    my $url = "http://www.openstreetmap.org/api/0.5/map?bbox=$x0,$y0,$x1,$y1";
+    main::status_message("Download $url to $tmpfile", "info");
+    warn "Latest downloaded temporary .osm file is $tmpfile\n";
+    main::IncBusy($main::top);
+    eval {
+	my $resp = $ua->get($url, ':content_file' => $tmpfile);
+	if (!$resp->is_success) {
+	    die "Could not download $url: " . $resp->status_line . "\n";
+	}
+	plot_osm_files([$tmpfile]);
+    };
+    my $err = $@;
+    main::DecBusy($main::top);
+    if ($err) {
+	main::status_message($err, 'die');
+    }
+}
+
+sub _get_visible_area {
     my $c = $main::c;
     my(@corners) = $c->get_corners;
     require Karte::Polar;
     require Karte::Standard;
     my($x0,$y0,$x1,$y1) = ($Karte::Polar::obj->standard2map(main::anti_transpose(@corners[0,1])), 
 			   $Karte::Polar::obj->standard2map(main::anti_transpose(@corners[2,3])));
-    ($x0,$y0,$x1,$y1) = normalize_rectangle($x0,$y0,$x1,$y1);
-    my @osm_files = osm_files_in_grid($x0,$y0,$x1,$y1);
-    plot_osm_files(\@osm_files);    
+    normalize_rectangle($x0,$y0,$x1,$y1);
 }
 
 sub osm_files_in_grid {
@@ -89,6 +122,10 @@ sub plot_osm_files {
 	$main::str_draw{$osm_layer} = 1; # XXX also for layer editor
 	$main::str_obj{$osm_layer_area} = Strassen::Dummy->new; # XXX just for the layer editor, not useful for anything else
 	$main::str_draw{$osm_layer_area} = 1; # XXX also for layer editor
+	$main::layer_name{$osm_layer} = "OpenStreetMap (fg)";
+	$main::layer_name{$osm_layer_area} = "OpenStreetMap (bg)";
+	$main::layer_icon{$osm_layer} = $images{OsmLogo};
+	$main::layer_icon{$osm_layer_area} = $images{OsmLogo};
 	main::add_to_stack($osm_layer, "before", "pp");
 	main::add_to_stack($osm_layer_area, "before", "f");
 	main::std_str_binding($osm_layer);
@@ -199,6 +236,54 @@ sub _contains_rectangle {
 	    enclosed_rectangle($fx0,$fy0,$fx1,$fy1, $x0,$y0,$x1,$y1) ||
 	    intersect_rectangles($x0,$y0,$x1,$y1, $fx0,$fy0,$fx1,$fy1)
 	   );
+}
+
+sub _create_images {
+    if (!defined $images{OsmLogo}) {
+	# wget http://upload.wikimedia.org/wikipedia/commons/b/b0/Openstreetmap_logo.svg
+	# convert  -geometry 16x16 Openstreetmap_logo.svg  Openstreetmap_logo.png
+	$images{OsmLogo} = $main::top->Photo(-format => 'png',
+					     -data => <<'EOF');
+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
+cF9sb2dvLnN2Z2nx98oAAAAASUVORK5CYII=
+EOF
+    }
 }
 
 1;

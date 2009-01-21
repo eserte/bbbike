@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.71 2008/11/16 17:28:18 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.72 2009/01/21 21:39:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2007,2008 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.71 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.72 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -97,6 +97,7 @@ use vars qw(
      $customchoosecmd $b2m_customcmd
      $default_line_width
      %category_width
+     %layer_name %layer_icon
      %layer_category_dash %category_dash
      %layer_category_capstyle %category_capstyle
      %layer_category_size %category_size %outline_color
