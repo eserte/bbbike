@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeOsmUtil.pm,v 1.5 2009/01/21 22:41:49 eserte Exp $
+# $Id: BBBikeOsmUtil.pm,v 1.7 2009/01/21 23:34:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -16,14 +16,17 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
-use vars qw($osm_layer $osm_layer_area %images);
+use vars qw($osm_layer $osm_layer_area %images $last_osm_file);
 
 use Cwd qw(realpath);
 use File::Basename qw(dirname);
 
 use VectorUtil qw(enclosed_rectangle intersect_rectangles normalize_rectangle);
+
+use vars qw($UNINTERESTING_TAGS);
+$UNINTERESTING_TAGS = qr{^(name|created_by|source|url)$};
 
 sub register {
     _create_images();
@@ -50,7 +53,7 @@ sub download_and_plot_visible_area {
     $ua->agent("BBBike/$main::VERSION (BBBikeOsmUtil/$VERSION LWP/$LWP::VERSION");
     my(undef,$tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ".osm");
     my $url = "http://www.openstreetmap.org/api/0.5/map?bbox=$x0,$y0,$x1,$y1";
-    main::status_message("Download $url to $tmpfile", "info");
+    main::status_message("Download $url to $tmpfile...", "info");
     warn "Latest downloaded temporary .osm file is $tmpfile\n";
     main::IncBusy($main::top);
     eval {
@@ -58,13 +61,20 @@ sub download_and_plot_visible_area {
 	if (!$resp->is_success) {
 	    die "Could not download $url: " . $resp->status_line . "\n";
 	}
+	main::status_message("Download successful, now plotting $tmpfile...", "info"); $main::top->update;
 	plot_osm_files([$tmpfile]);
+	main::status_message("", "info");
     };
     my $err = $@;
     main::DecBusy($main::top);
     if ($err) {
 	main::status_message($err, 'die');
     }
+
+    if (defined $last_osm_file) {
+	unlink $last_osm_file;
+    }
+    $last_osm_file = $tmpfile;
 }
 
 sub _get_visible_area {
@@ -148,11 +158,16 @@ sub plot_osm_files {
 		$tag{$tag->getAttribute('k')} = $tag->getAttribute('v');
 	    }
 	    if (exists $tag{name}) {
+		my $uninteresting_tags = join(" ",
+					      "user=" . $node->getAttribute("user"),
+					      "timestamp=" . $node->getAttribute("timestamp"),
+					      (map { "$_=$tag{$_}" } keys %tag)
+					     );
 		$c->createLine($cx,$cy,$cx,$cy,
 			       -fill => '#800000',
 			       -width => 4,
 			       -capstyle => $main::capstyle_round,
-			       -tags => [$osm_layer, $tag{name}, 'osm'],
+			       -tags => [$osm_layer, $tag{name}, $uninteresting_tags, 'osm', 'osm-node-' . $id],
 			      );
 	    }
 	}
@@ -163,6 +178,7 @@ sub plot_osm_files {
 	for my $way ($root->findnodes('/osm/way')) {
 	    my $visible = $way->getAttribute('visible');
 	    next if $visible && $visible eq 'false';
+	    my $id = $way->getAttribute('id');
 	    my @nodes = map { $_->textContent } $way->findnodes('./nd/@ref');
 	    my %tag;
 	    for my $tag ($way->findnodes('./tag')) {
@@ -200,8 +216,13 @@ sub plot_osm_files {
 	    if (@coordlist < 4) {
 		warn "Not enough coords for way $tag{name}";
 	    } else {
-		my $tags = join(" ", map { "$_=$tag{$_}" } grep { $_ !~ m{^(name|created_by|source|url)$} } keys %tag);
-		my @tags = ((exists $tag{name} ? $tag{name}.' ' : '') . $tags, 'osm');
+		my $tags = join(" ", map { "$_=$tag{$_}" } grep { $_ !~ $UNINTERESTING_TAGS } keys %tag);
+		my $uninteresting_tags = join(" ",
+					      "user=" . $way->getAttribute("user"),
+					      "timestamp=" . $way->getAttribute("timestamp"),
+					      (map { "$_=$tag{$_}" } grep { $_ =~ $UNINTERESTING_TAGS } keys %tag)
+					     );
+		my @tags = ((exists $tag{name} ? $tag{name}.' ' : '') . $tags, $uninteresting_tags, 'osm', 'osm-way-' . $id);
 		if ($nodes[0] eq $nodes[-1]) {
 		    $c->createPolygon(@coordlist,
 				      -fill => '#a0b0a0',
@@ -285,6 +306,11 @@ cF9sb2dvLnN2Z2nx98oAAAAASUVORK5CYII=
 EOF
     }
 }
+
+# TODO:
+# support for main::show_info to show way xml and history xml:
+#  GET http://www.openstreetmap.org/api/0.5/way/22495210/history
+#  GET http://www.openstreetmap.org/api/0.5/way/22495210
 
 1;
 

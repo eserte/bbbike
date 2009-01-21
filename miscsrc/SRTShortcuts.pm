@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.76 2009/01/21 22:42:05 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.76 2009/01/21 22:42:05 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -221,20 +221,17 @@ sub add_button {
 		"-",
 		[Button => "Display downloaded OSM Berlin",
 		 -command => sub {
-		     require Cwd; require File::Basename; local @INC = (@INC, Cwd::realpath(File::Basename::dirname(__FILE__)));
-		     require BBBikeOsmUtil;
+		     _require_BBBikeOsmUtil();
 		     BBBikeOsmUtil::plot_visible_area();
 		 }],
 		[Button => "Delete OSM layer",
 		 -command => sub {
-		     require Cwd; require File::Basename; local @INC = (@INC, Cwd::realpath(File::Basename::dirname(__FILE__)));
-		     require BBBikeOsmUtil;
+		     _require_BBBikeOsmUtil();
 		     BBBikeOsmUtil::delete_osm_layer();
 		 }],
 		[Button => "Download and display any OSM data",
 		 -command => sub {
-		     require Cwd; require File::Basename; local @INC = (@INC, Cwd::realpath(File::Basename::dirname(__FILE__)));
-		     require BBBikeOsmUtil;
+		     _require_BBBikeOsmUtil();
 		     BBBikeOsmUtil::download_and_plot_visible_area();
 		 }],
 		"-",
@@ -1164,6 +1161,13 @@ sub gps_data_viewer {
 		       $gps_view->reload;
 		   })->pack(-side => "left");
     }
+}
+
+# XXX BBBikeOsmUtil should probably behave like a plugin? or not?
+sub _require_BBBikeOsmUtil {
+    require Cwd; require File::Basename; local @INC = (@INC, Cwd::realpath(File::Basename::dirname(__FILE__)));
+    require BBBikeOsmUtil;
+    BBBikeOsmUtil::register();
 }
 
 1;

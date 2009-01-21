@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.398 2009/01/21 21:39:40 eserte Exp $
+# $Id: bbbike,v 3.399 2009/01/21 23:30:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -256,7 +256,7 @@ eval 'use BBBikeXS 0.09';
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.398 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.399 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -12923,10 +12923,16 @@ sub show_info {
 	my($below_item, @below_tags) = find_below($c, qw/s l u b r f w o v fz/);
 	if (!defined $below_item) {
 	    # 2nd pass: check for markers etc.
-	    my($below_item, @below_tags) = find_below($c, qw/show/);
+	    my($below_item, @below_tags) = find_below($c, qw/show/); # XXX still necessary? 'show' is now -state=>'disabled'
 	    if (!defined $below_item) {
-		main::status_message("Es wurde kein Kartenelement an dieser Position gefunden.", "err");
-		return;
+		# XXX Alert! Hardcoded for special osm layer, see BBBikeOsmUtil XXX
+		if (defined $BBBikeOsmUtil::osm_layer && grep { $_ eq 'osm' } @tags) {
+		    # just accept
+		    last;
+		} else {
+		    main::status_message("Es wurde kein Kartenelement an dieser Position gefunden.", "err");
+		    return;
+		}
 	    }
 	    $in_2nd_pass = 1;
 	}
