@@ -22,7 +22,9 @@
 <li><a class="POD_NAVLINK" href="#Directive_lines">Directive lines</a>
 <ul>
 <li><a class="POD_NAVLINK" href="#Global_directives">Global directives</a>
+<li><a class="POD_NAVLINK" href="#Plotting_hint_direct">Plotting hint directives</a>
 <li><a class="POD_NAVLINK" href="#Line_block_directive">Line/block directives</a>
+<li><a class="POD_NAVLINK" href="#Obsolete_and_to_be_d">Obsolete and to-be-decided directives</a>
 </ul>
 <li><a class="POD_NAVLINK" href="#Comment_lines">Comment lines</a>
 </ul>
@@ -184,13 +186,181 @@ This global directive introduces an RCS/CVS Id string.
 <dd>
 Treat this file as encoded in the given encoding (all names accepted
 by Perl/Encode may be used). If not set, then iso-8859-1 is assumed.
-<dt class="POD_ITEM"><a name="listing_sort_sort_me"><code>listing_sort</code>: <i>sort_method</i>&gt;</a>
+<p class="POD_TEXT">
+The degree of support for encodings in bbbike.cgi and the Perl/Tk
+implementation differs. iso-8859-1 is supported best. utf-8 is
+considered to work in most, if not all places of the code. Other
+encodings are at least known to NOT work with the XS implementation
+for the fast street and point plotting. The pure perl implementation
+is fine.
+</p>
+<dt class="POD_ITEM"><a name="listing_sort_sort_me"><code>listing_sort: <i>sort_method</i></code></a>
 <dd>
 Define a sorting method for street/point listings. Normally listings
 will be sorted alphabetically (sort method <b>alphabetic</b>). If the
 listing should appear as in the bbd file, specify <b>unsorted</b>.
 <b>natural</b> should be used for &quot;natural&quot; sorting (see
 <u>Sort::Naturally</u>).
+</dl>
+<h4 class="POD_HEAD3"><a name="Plotting_hint_direct">Plotting hint directives</a></h4>
+<p class="POD_TEXT">
+Plotting hint directives are used to control plotting of items. The
+directives can only be set as global directives. The directives
+explained below exist in two forms:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="directive_"><code><i>directive</i>: ...</code></a>
+<dd>
+The directive is valid for all items (unless overriden by per-category
+directives).
+<dt class="POD_ITEM"><a name="directive_category_"><code><i>directive</i>.<i>category</i>: ...</code></a>
+<dd>
+The directive is valid for items with the named <i>category</i> (this
+overrides directives without category specification).
+</dl>
+<p class="POD_TEXT">
+The list of plotting hint directives:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="line_color_color"><code>line_color: <i>color</i></code></a>
+<dt><a name="line_color_category_"><code>line_color.<i>category</i>: <i>color</i></code></a>
+<dd>
+Define the color for line items. <i>color</i> should be in the form
+<code>#rrggbb</code>.
+<p class="POD_TEXT">
+Example:
+</p>
+<pre class="POD_VERBATIM">
+ #: line_color: #808080
+ #: line_color.cat: #ff8080
+</pre>
+<p class="POD_TEXT">
+XXX: The category-less form is NYI!.
+XXX: currently category_color.category is used instead of line_color.category
+</p>
+<p class="POD_TEXT">
+XXX: Maybe use <code>item_color</code> instead of <code>line_color</code>, because colors
+apply also to points and areas!
+</p>
+<p class="POD_TEXT">
+XXX: Hmmm, it seems that str_color is (also?) in use, see
+tmp/streets-accurate.bbd
+</p>
+<dt class="POD_ITEM"><a name="line_width_width"><code>line_width: <i>width</i></code></a>
+<dt><a name="line_width_category_"><code>line_width.<i>category</i>: <i>width</i></code></a>
+<dd>
+Define the width of line items.
+<p class="POD_TEXT">
+XXX: The form with category is NYI!
+</p>
+<p class="POD_TEXT">
+XXX: Maybe this should make it possible to define widths for specific
+zoom levels, like in the bbbike standard definitions.
+</p>
+<dt class="POD_ITEM"><a name="line_length_length"><code>line_length: <i>length</i></code></a>
+<dt><a name="line_length_category"><code>line_length.<i>category</i>: <i>length</i></code></a>
+<dd>
+Define the length of line items. In the Perl/Tk interface this is
+currently used for oneway and blocked symbols.
+<p class="POD_TEXT">
+XXX: The form with category is NYI!
+</p>
+<p class="POD_TEXT">
+XXX: Maybe this should make it possible to define lengths for specific
+zoom levels, like in the bbbike standard definitions.
+</p>
+<dt class="POD_ITEM"><a name="line_dash_x_y_"><code>line_dash: <i>x, y, ...</i></code></a>
+<dt><a name="line_dash_category_x"><code>line_dash.<i>category</i>: <i>x, y, ...</i></code></a>
+<dd>
+Define the default dash pattern for line items. See <u>DASH PATTERNS</u> in <u>Tk::Canvas</u> for the list integer syntax.
+<p class="POD_TEXT">
+Example:
+</p>
+<pre class="POD_VERBATIM">
+ #: line_dash: 1,1
+ #: line_dash: 2,4
+</pre>
+<p class="POD_TEXT">
+Compatibility: <code>category_dash.<i>category</i></code> was formerly used instead
+of <code>line_dash.<i>category</i></code> and is still recognized, but will be
+removed some day.
+</p>
+<dt class="POD_ITEM"><a name="line_capstyle_capsty"><code>line_capstyle: <i>capstyle</i></code></a>
+<dt><a name="line_capstyle_catego"><code>line_capstyle.<i>category</i>: <i>capstyle</i></code></a>
+<dd>
+Define the capstyle for line items. Valid values are <code>butt</code>,
+<code>projecting</code>, or <code>round</code> (see <u>Tk::Canvas</u>).
+<p class="POD_TEXT">
+XXX: Currently <code>category_capstyle.category</code> is used instead of
+<code>line_capstyle.category</code>.
+</p>
+<dt class="POD_ITEM"><a name="line_arrow_arrowspec"><code>line_arrow: <i>arrowspec</i></code></a>
+<dt><a name="line_arrow_category_"><code>line_arrow.<i>category</i>: <i>arrowspec</i></code></a>
+<dd>
+Define whether arrows should be drawn on line items. Valid values
+are <code>none</code>, <code>last</code>, <code>first</code>, or <code>both</code> (see <u>Tk::Canvas</u>).
+<p class="POD_TEXT">
+Example:
+</p>
+<pre class="POD_VERBATIM">
+ #: line_arrow: last
+ #: line_arrow.cat: both
+</pre>
+<dt class="POD_ITEM"><a name="line_shorten_boolean"><code>line_shorten: <i>boolean</i></code></a>
+<dt><a name="line_shorten_categor"><code>line_shorten.<i>category</i>: <i>boolean</i></code></a>
+<dd>
+Define whether line items should be shortened on both ends.
+<p class="POD_TEXT">
+XXX: Currently <code>category_line_shorten.category</code> is used instead of
+<code>line_shorten.category</code>.
+</p>
+<dt class="POD_ITEM"><a name="line_shorten_end_boo"><code>line_shorten_end: <i>boolean</i></code></a>
+<dt><a name="line_shorten_end_cat"><code>line_shorten_end.<i>category</i>: <i>boolean</i></code></a>
+<dd>
+Define whether line items should be shortened at the end.
+<p class="POD_TEXT">
+XXX: Currently <code>category_line_shorten_end.category</code> is used instead
+of <code>line_shorten_end.category</code>.
+</p>
+<dt class="POD_ITEM"><a name="item_size_integer"><code>item_size: <i>integer</i></code></a>
+<dt><a name="item_size_category_i"><code>item_size.<i>category</i>: <i>integer</i></code></a>
+<dd>
+Define the size of items (for example base label font size or the size
+of point items in pixels).
+<p class="POD_TEXT">
+XXX: The category-less form is NYI!
+XXX: Currently <code>category_size.category</code> is used instead
+<code>item_size.category</code>.
+</p>
+<dt class="POD_ITEM"><a name="item_image_image_nam"><code>item_image: <i>image_name</i></code></a>
+<dt><a name="item_image_category_"><code>item_image.<i>category</i>: <i>image_name</i></code></a>
+<dd>
+Define an image for point items. The image name is usually without
+suffix and will be searched in the default bbbike image directories,
+if specified relative.
+<p class="POD_TEXT">
+XXX: The category-less form is NYI!
+XXX: Currently <code>category_image.category</code> is used instead
+<code>item_image.category</code>.
+</p>
+<dt class="POD_ITEM"><a name="item_stipple_image_n"><code>item_stipple: <i>image_name</i></code></a>
+<dt><a name="item_stipple_categor"><code>item_stipple.<i>category</i>: <i>image_name</i></code></a>
+<dd>
+Define a stipple (which is usually an xbm image) for area items.
+<p class="POD_TEXT">
+XXX: The category-less form is NYI!
+XXX: Currently <code>category_stipple.category</code> is used instead <code>item_stipple.category</code>.
+</p>
+<dt class="POD_ITEM"><a name="layer_stack_how_tag"><code>layer_stack: <i>how</i>:<i>tag</i></code></a>
+<dd>
+Define how the data should appear in the layer stacking order. <i>how</i>
+is either <code>above</code> or <code>below</code> and <i>tag</i> is another layering tag used
+in bbbike (some examples are <code>s</code> for the street layer or <code>w</code> for the
+water layer --- consult the bbbike source, variable
+<code>@normal_stack_order</code> for more tags).
+<p class="POD_TEXT">
+XXX This is experimental and likely to change!
+</p>
 </dl>
 <h4 class="POD_HEAD3"><a name="Line_block_directive">Line/block directives</a></h4>
 <dl class="POD_LIST">
@@ -207,6 +377,10 @@ date, or a combination of all. <code>according_to:</code> is an alias for
 Used after a <code>by</code> directive for a correction. It is advisable to put
 the previous a small note of the previous and current entry after the
 <i>source</i>.
+<dt class="POD_ITEM"><a name="confirmed_by_source"><code>confirmed_by: <i>source</i></code></a>
+<dd>
+Denotes that the information in the next block or line was confirmed
+by <i>source</i>.
 <dt class="POD_ITEM"><a name="unverified_by_source"><code>unverified_by: <i>source</i></code></a>
 <dd>
 Same as &quot;by:&quot; for unverified data.
@@ -224,6 +398,33 @@ starting and an end date).
 The next block or line is unsure or unclear information. The <i>why</i>
 text specifies an additional comment. This note should not appear in
 the processed data. <code>XXX</code> is an alias for <code>unsure:</code>.
+<dt class="POD_ITEM"><a name="XXX_checklater_why"><code>XXX_checklater: <i>why</i></code></a>
+<dd>
+Like <code>XXX</code>, and additionally attach the &quot;checklater&quot;
+attribute.
+<dt class="POD_ITEM"><a name="XXX_prog_why"><code>XXX_prog: <i>why</i></code></a>
+<dd>
+The next block or line contains problematic information due to
+problems in the using programs, i.e. bbbike and bbbike.cgi.
+<p class="POD_TEXT">
+This can be used if stacking information has to be given using
+ordering in the data file, but bbbike should really have a layer_stack
+attribute.
+</p>
+<p class="POD_TEXT">
+It can also be used for the cyclepath layer, because of suboptimal
+rendering in points with large angles (more than 45&deg; or so). Here the
+layer item has to be broken into two items to fix the rendering
+problem.
+</p>
+<dt class="POD_ITEM"><a name="XXX_indoor_why"><code>XXX_indoor: <i>why</i></code></a>
+<dd>
+The unclear information can only be researched &quot;indoor&quot;,
+but usually not on-site.
+<dt class="POD_ITEM"><a name="XXX_outdoor_why"><code>XXX_outdoor: <i>why</i></code></a>
+<dd>
+The unclear information can only be researched on-site. Usually this
+is the same as <code>XXX</code>.
 <dt class="POD_ITEM"><a name="alias_name"><code>alias: <i>name</i></code></a>
 <dd>
 Define another known name for the next line.
@@ -272,18 +473,32 @@ additional layers. <code>attrs</code> is an alias for <code>attributes</code>.
 <dd>
 A free text note, which shouldn&#39;t (but may) appear in the processed
 data.
-<dt class="POD_ITEM"><a name="internal_note_string"><code>internal_note: <i>string</i></code></a>
-<dd>
-A free text note, which must not appear in the processed data. It is
-just a note for editors.
 <dt class="POD_ITEM"><a name="see_also_string"><code>see_also: <i>string</i></code></a>
 <dd>
 A free text note, which refers to more information. This should be
 typically a URL.
+<dt class="POD_ITEM"><a name="as_of_date"><code>as_of: <i>date</i></code></a>
+<dd>
+Last verified at the given date. The date should be in a ISO-8601-like
+notation, with possible abbreviations: YYYY-MM-DD or YYYY-MM or YYYY.
+<dt class="POD_ITEM"><a name="url_string"><code>url: <i>string</i></code></a>
+<dd>
+An (official) URL referring to more information.
 <dt class="POD_ITEM"><a name="add_fragezeichen_str"><code>add_fragezeichen: <i>string</i></code></a>
 <dd>
 Some postprocessing code may add the following line with the
 descriptive text <i>string</i> to the <code>fragezeichen</code> file.
+</dl>
+<h4 class="POD_HEAD3"><a name="Obsolete_and_to_be_d">Obsolete and to-be-decided directives</a></h4>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="internal_note_string"><code>internal_note: <i>string</i></code></a>
+<dd>
+A free text note, which must not appear in the processed data. It is
+just a note for editors.
+<p class="POD_TEXT">
+Currently I think the <code>XXX_...</code> is better suited for this task, as it
+can give more specific information.
+</p>
 </dl>
 <h3 class="POD_HEAD2"><a name="Comment_lines">Comment lines</a></h3>
 <p class="POD_TEXT">
@@ -342,12 +557,19 @@ One way street. The blocking is in the direction of the polyline.
 </p>
 <li class="POD_ITEM"><a name="1s_"><p><code>1s</code>:</p></a>
 <p class="POD_TEXT">
-One way street, but not strictly for cyclists (means: it is
-non-legally possible to pass the street in the wrong direction).
+One way street (read &quot;one soft&quot;), but not strictly for
+cyclists (means: It is non-legally possible to pass the street in the
+wrong direction. Typically this will cause the routing to add a
+handicap of class <code>q4</code> for the wrong direction.).
+</p>
+<li class="POD_ITEM"><a name="1h_"><p><code>1h</code>:</p></a>
+<p class="POD_TEXT">
+One way street 8read &quot;one hard&quot;), and there&#39;s no
+possibility for a cyclist to use the street in wrong direction.
 </p>
 <li class="POD_ITEM"><a name="2_"><p><code>2</code>:</p></a>
 <p class="POD_TEXT">
-Blocked street (in both directions).
+Blocked street in both directions.
 </p>
 <li class="POD_ITEM"><a name="0_"><p><code></code>:</p></a>
 <p class="POD_TEXT">
@@ -558,22 +780,34 @@ ausgeschilderte Fahrradrouten), <code>comments_tram</code> (tramway on street).
 <dd>
 Only for records with three points. Comment is valid for point B if
 driving from A to C.
+<dt class="POD_ITEM"><a name="CP2_"><code>CP2;</code></a>
+<dd>
+Only for records with two points. Comment is valid for point A if
+driving from A to B.
 <dt class="POD_ITEM"><a name="CP"><code>CP</code></a>
 <dd>
 Same as <code>CP;</code>, but valid for both directions.
+<dt class="POD_ITEM"><a name="CP2"><code>CP2</code></a>
+<dd>
+Same as <code>CP2;</code>, but valid for both directions.
 <dt class="POD_ITEM"><a name="CS_"><code>CS;</code></a>
 <dd>
 Comment is valid for the whole route in this direction.
 <dt class="POD_ITEM"><a name="CS"><code>CS</code></a>
 <dd>
 Comment is valid for the whole route in both directions.
-<dt class="POD_ITEM"><a name="PI"><code>PI</code></a>
+<dt class="POD_ITEM"><a name="PI_"><code>PI;</code></a>
 <dd>
-Path instruction (genauere Wegbeschreibung).
+Path instruction (genauere Wegbeschreibung). (This is in fact a
+generalisation of <code>CP2;</code> allowing more than two points)
 <dt class="POD_ITEM"><a name="P0"><code>P0</code></a>
 <dd>
 Dieser Weg ist gesperrt (z.B. Abbiegen nicht m&ouml;glich), aber eine
 Umfahrung ist m&ouml;glich ... siehe auch Kategorie <code>3</code> in <a class="POD_LINK" href="#BLOCKINGS">BLOCKINGS</a>.
+<p class="POD_TEXT">
+NB: Diese Kategorie wird bislang noch nicht verwendet und bedarf
+deswegen einer &Uuml;berpr&uuml;fung.
+</p>
 <dt class="POD_ITEM"><a name="_2_relativ_ruhiger_K"><code>-2</code> relativ ruhiger Kfz-Verkehr</a>
 <dt><a name="_1"><code>-1</code></a>
 <dt><a name="_11"><code>+1</code></a>
@@ -642,6 +876,39 @@ without frequent traffic, <b>F</b> for pedestrian-only traffic lights and
 <dd>
 File with elevation points. The <code>Name</code> fields denotes the elevation
 in meters, the category is not used.
+<dt class="POD_ITEM"><a name="sehenswuerdigkeit">sehenswuerdigkeit</a>
+<dd>
+File with sights, public buildings and other &quot;interesting&quot;
+points. Possible categories are
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="SW"><code>SW</code></a>
+<dd>
+Unspecified sight. Use if nothing else applies.
+<dt class="POD_ITEM"><a name="Shop"><code>Shop</code></a>
+<dd>
+A shopping center.
+</dl>
+<p class="POD_TEXT">
+The category has usually an image attribute. The following standard
+images are available in bbbike:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="museum"><code>museum</code></a>
+<dt><a name="theater"><code>theater</code></a>
+<dt><a name="church"><code>church</code></a>
+<dt><a name="synagogue"><code>synagogue</code></a>
+<dt><a name="mosque"><code>mosque</code></a>
+<dt><a name="airport"><code>airport</code></a>
+<dt><a name="hospital"><code>hospital</code></a>
+<dt><a name="monument"><code>monument</code></a>
+<dt><a name="touristinfo"><code>touristinfo</code></a>
+<dd></dl>
+
+The pseudo image <code>px_1t</code> may be used for invisible areas.
+<p class="POD_TEXT">
+In area records, it is advisable to use the main entrance as the first
+point.
+</p>
 </dl>
 <p class="POD_TEXT">
 XXX To be continued
@@ -687,7 +954,11 @@ yet.
 <dt class="POD_ITEM"><a name="igndisp">igndisp</a>
 <dd>
 Ignore display. Item will not be rendered, but may be used for other
-purposes (i.e. routing).
+purposes (i.e. routing). See <a class="POD_LINK" href="#ignrte">ignrte</a>.
+<dt class="POD_ITEM"><a name="ignrte">ignrte</a>
+<dd>
+Ignore in routing. Item will not be used in routing, but may be used
+for other purposes (i.e. display). See <a class="POD_LINK" href="#igndisp">igndisp</a>.
 <dt class="POD_ITEM"><a name="_"></a>
 <dd></dl>
 <h2 class="POD_HEAD1"><a name="EXAMPLES">EXAMPLES</a></h2>
@@ -749,7 +1020,7 @@ Slaven Rezic &lt;slaven@rezic.de&gt;
 </p>
 <hr />
 <a class="POD_NAVLINK" href="#Pod_TOP_OF_PAGE">[Top]</a>
-Generated by Marek::Pod::HTML 0.49 on Sat Mar  1 01:00:59 2008
+Generated by Marek::Pod::HTML 0.49 on Thu Jan 22 23:44:26 2009
 </body>
 </html>
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeOsmUtil.pm,v 1.7 2009/01/21 23:34:24 eserte Exp $
+# $Id: BBBikeOsmUtil.pm,v 1.7 2009/01/21 23:34:24 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -157,7 +157,7 @@ sub plot_osm_files {
 	    for my $tag ($node->findnodes('./tag')) {
 		$tag{$tag->getAttribute('k')} = $tag->getAttribute('v');
 	    }
-	    if (exists $tag{name}) {
+	    if (exists $tag{name} || exists $tag{amenity}) {
 		my $uninteresting_tags = join(" ",
 					      "user=" . $node->getAttribute("user"),
 					      "timestamp=" . $node->getAttribute("timestamp"),
@@ -167,7 +167,7 @@ sub plot_osm_files {
 			       -fill => '#800000',
 			       -width => 4,
 			       -capstyle => $main::capstyle_round,
-			       -tags => [$osm_layer, $tag{name}, $uninteresting_tags, 'osm', 'osm-node-' . $id],
+			       -tags => [$osm_layer, $tag{name}||$tag{amenity}, $uninteresting_tags, 'osm', 'osm-node-' . $id],
 			      );
 	    }
 	}

@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.152 2008/12/07 23:19:40 eserte Exp $
+# $Id: Makefile.PL,v 1.153 2009/01/22 22:51:16 eserte Exp $
 
 use 5.005;
 
@@ -63,15 +63,14 @@ my @req_table =
    { de => 'Online-Hilfe', en => 'online help' }],
   [qw/Tk::FontDialog	0	all	0|4	gui/,
    'zum Ändern des Zeichensatzes aus dem Programm heraus'],
-  [qw/Tk::JPEG		0	all	0|4	gui/],
-#  [qw/X11::Protocol	0.04	unix	0	gui/], # not used anymore
+  [qw/Tk::JPEG		0	all	0|4	gui/], # note: already part of Tk 804
   [qw/Tie::Watch	0	all	0|4	gui/], # hmmm... this version does not really work with Tk-804.027_500 and is not needed at all for Tk804
   [qw/Tk::HistEntry	0	all	0|4	gui/],
   [qw/Tk::Stderr	0	all	0|4	gui/,
-   'optionales Redirect von Fehlermeldungen in ein Tk-Fenster'],
+   'optionales Redirect von Fehlermeldungen in ein Tk-Fenster'], # probably only needed for developers
   [qw/Tk::DateEntry	1.38	all	0	gui/],
   [qw/Tk::Date		0	all	0|4	gui/],
-  [qw/Tk::PNG		0	all	0|4	gui/,
+  [qw/Tk::PNG		0	all	0|4	gui/, # note: already part of Tk 804
    'Für Icons mit besserer Alpha-Unterstützung'],
   [qw/Tk::NumEntry	2.06	all	0|4	gui/],
   [qw/X11::Protocol	0	unix	0	gui/,
@@ -110,7 +109,7 @@ my @req_table =
    'oder man verwendet agrep (mindestens Version 3.0)'],
   [qw/String::Similarity 0	all	0	base/,
    'optional für den temp_blockings-Editor und ungenaue Suche in der Perl/Tk-Applikation'],
-  [qw/Storable		0	all	0|4	base/,
+  [qw/Storable		0	all	0|4	base/, # already part of perl 5.8 and newer
    'für das Caching beim CGI-Programm'],
   [qw/MLDBM		0	all	0|4	base/],
   [qw/GD		1.18	all	2	base/,
@@ -121,15 +120,13 @@ my @req_table =
    'Für das Problem des Handlungsreisenden (schnellerer Permutor)'],
   [qw/List::Permutor	0	all	0|4	base/,
    'Für das Problem des Handlungsreisenden (langsamerer Permutor)'],
-#  [qw/PDF::Create	0.06	all	2|4	base/,
-#   'Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)'],
-  [qw/PDF::Image::GIFImage	0	all	2|4	base/,
-   'Erzeugung der Route als PDF-Dokument --- das ist die neueste Version wie auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)'],
+  [qw/PDF::Create	0.06	all	2|4	base/,
+   'Erzeugung der Route als PDF-Dokument'],
   [qw/Font::Metrics::Helvetica	0	all	0	base/,
    'Für die Reparatur der Zeichenbreitentabellen in PDF::Create'],
   #in dist: [qw/BikePower	0	all	0	base/],
 
-  [qw/BSD::Resource	0	unix	0	base/], # really only BSD
+  [qw/BSD::Resource	0	unix	0	base/], # really only BSD, and not used anyway in BBBike
 
   [qw/Win32::API	0	win	0|4	base/,
    'Für das Ermitteln der verfügbaren Desktop-Größe'],

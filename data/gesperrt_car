@@ -699,8 +699,8 @@ Straßenbahntrasse	3nocross::ignrte 12010,16774 12017,16734 12046,16568
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3::igndisp 12211,16688 12017,16734 12046,16568
 Prenzlauer Promenade -> Brauhausstr.: Straßenbahntrasse	3::igndisp 12010,16774 12017,16734 12211,16688
 Mittelstreifen	3nocross::ignrte 12114,12546 12134,12540 12360,12505
-Zugang Krautstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12118,12462 12134,12540 12114,12546
-Karl-Marx-Allee -> Zugang Krautstr.: Mittelstreifen	3::igndisp 12360,12505 12134,12540 12118,12462
+Krautstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12118,12462 12134,12540 12114,12546
+Karl-Marx-Allee -> Krautstr.: Mittelstreifen	3::igndisp 12360,12505 12134,12540 12118,12462
 Mittelstreifen	3nocross::ignrte 10240,11740 10213,11728 9981,11689
 Niederwallstr. -> Beuthstr.: Mittelstreifen	3::igndisp 10196,11788 10213,11728 10239,11604
 Niederwallstr. -> Gertraudenstr.: Mittelstreifen	3::igndisp 10196,11788 10213,11728 10240,11740
@@ -768,3 +768,4 @@ Hardenbergstr. -> Jebensstr.: Mittelstreifen	3::igndisp 5268,11274 5459,11135 55
 Mittelstreifen	3nocross::ignrte 6757,13112 6860,13093 6966,13075
 Alt-Moabit -> Calvinstr.: Mittelstreifen	3::igndisp 6966,13075 6860,13093 6802,12797
 Calvinstr. -> Alt-Moabit: Mittelstreifen	3::igndisp 6802,12797 6860,13093 6757,13112
+Krautstr. - Kleine Markusstr.: Barriere	3 11967,12042 11937,12127 11958,12195

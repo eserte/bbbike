@@ -1053,6 +1053,7 @@ sub gps_data_viewer {
 		(-textvariable => \$gps_data_viewer_file,
 		 -width => BBBikeUtil::max(length($gps_data_viewer_file), 40),
 		)->pack(-fill => "x", -expand => 1, -side => "left");
+	$pe->focus;
 	my $showb = 
 	    $f->Button(-text => "Show",
 		       -command => sub {

@@ -1,7 +1,7 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title.de: U-Bahnhöfe
 #: title.en: Underground stations
-#: version: $Id: ubahnhof-orig,v 4.17 2008/12/31 17:36:33 eserte Exp eserte $
+#: version: $Id: ubahnhof-orig,v 4.18 2009/01/22 21:34:19 eserte Exp $
 #:
 # U1
 #: attrs bg
@@ -97,7 +97,7 @@ Schillingstr.	UA 11640,12743
 Strausberger Platz	UA 12192,12538
 #: XXX_checklater 2010-01-01 bg
 Weberwiese	UA 13054,12397
-#: XXX_checklater 2010-01-01 bg
+#: attrs bg
 #: oldname: -19960904: Rathaus Friedrichshain
 #: oldname: 19960904-19980520: Petersburger Str.
 Frankfurter Tor	UA 13792,12290
@@ -111,7 +111,7 @@ Magdalenenstr.	UB 16076,11953
 Lichtenberg	UB 16866,11820
 #: XXX_checklater 2010-01-01 bg
 Friedrichsfelde	UB 17802,11316
-#: XXX_checklater 2010-01-01 bg
+#: attrs bg
 Tierpark	UB 18481,10468
 #: attrs bf
 Biesdorf-Süd	UB 20172,10636
@@ -148,6 +148,7 @@ Tempelhof	UA 9231,7085
 #: attrs bg
 Paradestr.	UA 9264,8033
 Platz der Luftbrücke	UA 9217,8888
+#: attrs bg
 Mehringdamm	UA 9396,9871
 #: attrs bg
 #: alias: Kochstraße (Checkpoint Charlie)
