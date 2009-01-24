@@ -8,7 +8,7 @@ Werderscher Damm: existiert hier ein Radweg in Höhe Kaserne (wahrscheinlich ab 2
 B5: existiert ein Radweg in Höhe Wusterhausen (wahrscheinlich ab 2006-09-29)?	? -54140,51565 -54518,51910 -54926,52781
 B246: existiert ein Radweg bei Nächst Neuendorf (wahrscheinlich ab 2006-11-15)?	? 11412,-19943 11136,-20007
 Askanierring: an der Verbindung zwischen Fehrbelliner Tor und Streitstr. wird gearbeitet, zukünftig asphaltiert	? -3631,16224 -3040,16246
-Havelschanze: Qualität?	? -3040,16246 -2641,16222 -2572,16191
+Havelschanze: Qualität?	? -3040,16246 -2641,16222 -2560,16212
 Clémentweg/Dr.-Dorsch-Allee: Qualität (laut ADFC-Karte gut geeignet)?	? 11740,22770 10889,23381
 Werdauer Weg: Qualität? (Am Sachsendamm-Ende anscheinend Beton)	? 7087,8066 6990,8040 6481,7345
 Ludwig-Renn-Str.: Einbahnstraße auch für Radfahrer?	? 20843,16829 21017,16737
@@ -150,7 +150,7 @@ Altkünkendorf - Wolletz: laut "Regio-Cart" gut geeignet	? 41260,67587 41437,6801
 Wolletz Richtung Norden: laut "Regio-Cart" gut geeignet (zumindest in Wolletz Verbundsteinpflaster)	? 43101,69564 43250,71500 42941,72180
 Dargen - Katschow: Fahrradroute laut Kompass-Karte	? 51034,165181 50994,165390 50715,166093 50464,166650 50472,166804 50661,166901 50993,167239 51565,167859
 Stücken - Tremsdorf: Qualität?	? -10978,-17764 -10562,-16912 -10175,-16537 -9675,-16375 -9200,-15550 -9045,-15165 -8680,-14704
-Oberjägerweg: laut "Berliner Umland" gut geeigneter Radweg, im Mittelteil ohne Kfz-Verkehr, laut anderen Quellen schlechte Qualität	? -5160,19649 -4971,19825 -4881,19871 -4662,20131 -4472,20411 -4018,20537 -3900,21059 -3818,21716
+Oberjägerweg: laut "Berliner Umland" gut geeigneter Radweg, im Mittelteil ohne Kfz-Verkehr, laut anderen Quellen schlechte Qualität	? -5209,19643 -5024,19831 -4844,20024 -4559,20331 -4472,20411 -4053,20594 -3936,21061 -3794,21804
 Mauerweg Spandau: laut "Berliner Umland" witterungsabhängige Strecke	? -7094,16217 -7178,16066 -7221,15921
 Drosselstr.: Qualität zwischen Privatstr. und Privatstr.?	? -8731,7403 -8503,7434 -8540,7569 -8554,7584
 Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsabhängige Strecke	? -9395,5025 -9559,4637
@@ -2498,6 +2498,31 @@ Hafeldweg: Qualität?	? -7330,7878 -7357,8112 -7359,8293
 Melsunger Str.: Qualität?	? -4666,8841 -4786,8847 -5071,8864 -5382,8880
 Allée du Stade: Qualität?	? 3585,16252 3796,16177 4035,16051 4076,16017 4093,15968
 Schönefelder Str. - Alt-Rudow: Hat die Verbindung einen Straßennamen? Qualität?	? 17002,1167 17011,1206 16960,1282
+Paula-Thiede-Ufer: teilweise Spielstraße?	? 12104,11487 12010,11545
+Jüdenstr. (Spandau): Qualität? Ist die Straße teilweise eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer? Kann der Altstädter Ring in Höhe Jüdenstr. überquert werden?	? -3506,14306 -3444,14310 -3422,14322 -3397,14370 -3350,14446 -3316,14504 -3249,14621
+Marktstr. (Spandau): Qualität? Fußgängerzone?	? -3293,14304 -3231,14383
+Mönchstr.: Qualität? Fußgängerzone?	? -3110,14408 -3174,14438 -3228,14468
+Ritterstr. (Spandau): Qualität?	? -3228,14468 -3316,14504 -3360,14525
+Kirchgasse (Spandau): Qualität?	? -3089,14440 -3150,14478
+Hertefeldstr.: Qualität? Fußgängerzone?	? -3041,14516 -2964,14478
+Wasserstr. (Spandau): Qualität? Teilweise eine Fußgängerzone?	? -3057,14302 -3092,14331 -3142,14358
+Viktoria-Ufer: Qualität? Ist die Straße teilweise eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? -3249,14621 -3259,14625 -3285,14615 -3360,14525 -3393,14470
+Viktoria-Ufer: Qualität?	? -3410,14479 -3446,14386 -3444,14310
+Reformationsplatz: Qualität? Fußgängerzone?	? -3107,14535 -3134,14513 -3150,14478 -3174,14438
+Zur Zitadelle: Qualität?	? -2646,14525 -2668,14635 -2698,14720 -2733,14842
+Kemmannweg: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? -3819,14302 -3911,14331 -3937,14340 -4049,14419 -4117,14458 -4207,14473
+Glacisweg: Qualität?	? -3911,14331 -3887,14405
+Neuhausweg: Qualität?	? -4049,14419 -3974,14495
+Petersenweg: Qualität? Existiert für Radfahrer eine Verbindung zum Raminpark?	? -3835,14668 -3919,14617 -3941,14603
+Hohenzollernring - Flankenschanze: Qualität? Hat diese Verbindung einen Straßennamen?	? -3880,14770 -3735,14832
+Jenneweg: Qualität? Existiert für Radfahrer eine Verbindung zum Raminpark?	? -3900,14818 -4015,14744
+Roonstr. (Spandau): Qualität?	? -3665,14966 -3582,14886 -3499,14806
+Münsingerstr.: Qualität?	? -3598,14587 -3535,14408
+Martin-Albertz-Weg: Qualität?	? -3535,14408 -3587,14389
+Altstädter Ring - Münsingerstr./Martin-Albertz-Weg: Qualität? Kann der Altstädter Ring in Höhe dieses Weges überquert werden?	? -3498,14413 -3535,14408
+Kurze Str. (Spandau): Qualität?	? -3582,15244 -3555,15377
+Kleine Mittelstr.: Qualität?	? -3536,15450 -3414,15460
+Schützenstr. (Spandau): Qualität?	? -2869,15782 -2859,15785 -2821,15850 -2638,16026 -2624,16049
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
@@ -2611,7 +2636,6 @@ Korkedamm: guter Asphalt (Ist der gesamte Korkedamm asphaltiert?)	? 19244,2141 1
 Treseburger Str. (Blankenburg): mäßiges Kopfsteinpflaster (welcher Abschnitt ist mit Kopfsteinpflaster versehen, wie sieht der Rest aus?)	? 14509,21337 14461,21372 14304,21399 14157,21442 14069,21471 13978,21496 13884,21524
 Klausenburger Pfad: guter Asphalt (Ist der Klausenburger Pfad eine Spielstraße (verkehrsberuhigter Bereich)?)	? 7199,-418 7110,-363 7030,-313 6985,-282 6885,-169 6867,-126
 Kreuzgraben: guter Beton (ist die Straße Kreuzgraben verkehrsberuhigt?)	? 10309,20032 10282,20137 10267,20193 10264,20209
-Udetzeile: Asphalt (Asphalt oder Beton?)	? 8326,8293 8315,8189
 Rheinpfalzallee: geflickter Asphalt (bis 2007-10-15 wird der Asphaltbelag erneuert)	? 19030,9530 19128,9523 19221,9517 19424,9502 19510,9497 19651,9489
 Ortsdurchfahrt Buckow: schlechtes Kopfsteinpflaster (nach den Bauarbeiten (2006-12-31) vielleicht asphaltiert?)	? 55786,18881 55877,18248 55700,18101 55623,17923 55524,17754 55164,17565
 Jühnsdorf: Asphalt (existiert durch Jühnsdorf ein Radweg?)	? 9792,-12090 9345,-11425 9472,-11297 9578,-10891
