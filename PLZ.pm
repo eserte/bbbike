@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.74 2008/06/19 22:01:05 eserte Exp $
+# $Id: PLZ.pm,v 1.75 2009/01/25 20:47:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ use locale;
 use BBBikeUtil;
 use Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.74 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.75 $ =~ /(\d+)\.(\d+)/);
 
 use constant FMT_NORMAL            => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED           => 1; # ./data/Berlin.small.data (does not exist anymore)
@@ -203,7 +203,7 @@ sub look {
 	$args{Noextern} = 1;
     }
 
-    print STDERR "->look($str, " . join(" ", %args) .") in `$file'\n" if $VERBOSE;
+    print STDERR "->look($str, " . join(" ", %args) .") in '$file'\n" if $VERBOSE;
 
     #XXX use fgrep instead of grep? slightly faster, no quoting needed!
     my $grep_type = ($args{Agrep} ? 'agrep' : ($args{GrepType} || 'grep'));

@@ -78,7 +78,7 @@ Fidicin - Mehringdamm	3 9305,9044 9235,9051 9234,9038 9227,8890
 Mangerstr. (Potsdam)	1 -12064,-284 -12265,-418
 Rudolf-Breitscheid-Str.	1 -10446,-1947 -10360,-1934 -10235,-1916 -9986,-1882 -9735,-1845
 Bendastr.	1 12689,6905 12702,6846
-Bendastr.	1 12793,6407 12779,6478 12756,6578 12743,6645 12715,6783 12702,6846
+Bendastr.	1 12793,6407 12779,6478 12756,6578 12743,6645 12726,6727 12722,6748 12715,6775 12702,6846
 Puschkin/Bulgarische	1 13829,9905 13884,9882 13976,9840 14193,9746 14310,9692 14780,9480 14819,9462 15383,9191 15561,8903 15591,8848 15383,8662 15166,8489
 Schönstedt/Karl-Marx-Str.	3 12649,8535 12540,8458 12582,8408 12598,8390
 Karl-Marx-Str./Schönstedt	3 12500,8504 12540,8458 12649,8535
@@ -206,8 +206,8 @@ Markgraf-Albrecht-Str. -> Kurfürstendamm: Kurfürstendamm	3::igndisp 3298,10411 3
 Kurfürstendamm -> Markgraf-Albrecht-Str.: Kurfürstendamm	3::igndisp 3189,10141 3289,10174 3298,10411
 Eichkatzweg	1 925,9644 794,9472
 Zikadenweg	1 703,9538 835,9707 937,9841 1046,9989 1047,10002 1159,10149
-Oberhaardter Weg	1 742,8567 949,8405
-Gustav-Freytag-Str. (Grunewald)	1 878,8336 737,8474 727,8535 742,8567
+Oberhaardter Weg	1 765,8481 911,8374
+Gustav-Freytag-Str. (Grunewald)	1 834,8273 815,8283 748,8456 765,8481
 Schumannstr.	1 8581,13013 8628,13033 8703,13045 8963,13117
 Albrechtstr. (Mitte)	1 8963,13117 9001,13039 9046,12933 9106,12795
 Charitéstr.	1 8671,12945 8628,13033
@@ -402,15 +402,15 @@ Colbestr. -> Frankfurter Allee: Colbestr./Frankfurter Allee	3::igndisp 14468,119
 Kinzigstr./Frankfurter Allee	3nocross::ignrte 14523,12183 14621,12168 14702,12157
 Kinzigstr. -> Frankfurter Allee: Kinzigstr./Frankfurter Allee	3::igndisp 14589,11975 14621,12168 14523,12183
 Frankfurter Allee -> Kinzigstr.: Kinzigstr./Frankfurter Allee	3::igndisp 14702,12157 14621,12168 14589,11975
-Finowstr.+Weichselstr./Frankfurter Allee	3nocross::ignrte 14702,12157 14840,12140 14919,12130 14994,12121
-Frankfurter Allee -> Finowstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14919,12130 14840,12140 14783,11949
-Finowstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14783,11949 14840,12140 14702,12157
+Finowstr.+Weichselstr./Frankfurter Allee	3nocross::ignrte 14702,12157 14854,12137 14919,12130 14994,12121
+Finowstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14836,12045 14854,12137 14702,12157
+Frankfurter Allee -> Finowstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14919,12130 14854,12137 14836,12045
 Weichselstr. -> Waldeyerstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14879,11934 14919,12130 14997,12243
-Weichselstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14879,11934 14919,12130 14840,12140
+Weichselstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14879,11934 14919,12130 14854,12137
 Waldeyerstr. -> Weichselstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14997,12243 14919,12130 14879,11934
 Waldeyerstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14997,12243 14919,12130 14994,12121
 Frankfurter Allee -> Weichselstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14994,12121 14919,12130 14879,11934
-Frankfurter Allee -> Waldeyerstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14840,12140 14919,12130 14997,12243
+Frankfurter Allee -> Waldeyerstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14854,12137 14919,12130 14997,12243
 Friedrichstr. (Straßenbahn)	3nocross::ignrte 9215,13392 9236,13228 9245,13162 9251,13109
 Friedrichstr. -> Claire-Waldoff-Str.: Friedrichstr. (Straßenbahn)	3::igndisp 9245,13162 9236,13228 9114,13217
 Claire-Waldoff-Str. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9114,13217 9236,13228 9215,13392
@@ -618,10 +618,10 @@ Mittelstreifen	3nocross::ignrte 15957,2330 15804,2512 15736,2593
 Freiertweg - Lichtenrader Damm	3 10827,467 10619,395 10660,293
 Glasbläserallee: Tore versperren die Durchfahrt, Radfahrer können passieren	2 14893,10359 14839,10271
 Hornstr.	1 8779,9851 8988,9783 8980,9751 8779,9812
-Hafenplatz	3 8698,10768 8604,10835 8644,10914
-Hafenplatz	3 8644,10914 8604,10835 8698,10768
-Hafenplatz	3 8483,10900 8604,10835 8698,10768
-Hafenplatz	3 8698,10768 8604,10835 8483,10900
+Hafenplatz	3 8698,10768 8628,10818 8659,10910
+Hafenplatz	3 8659,10910 8628,10818 8698,10768
+Hafenplatz	3 8483,10900 8628,10818 8698,10768
+Hafenplatz	3 8698,10768 8628,10818 8483,10900
 Askanischer Platz	1 8865,10974 8859,10939 8882,10905
 Straßenbahntrasse	3nocross::ignrte 11271,22328 11383,22369 11583,22442
 Schweizer Tal -> Schweizer Tal: Straßenbahntrasse	3::igndisp 11504,22277 11383,22369 11176,22526
@@ -702,14 +702,14 @@ Mittelstreifen	3nocross::ignrte 12114,12546 12134,12540 12360,12505
 Krautstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12118,12462 12134,12540 12114,12546
 Karl-Marx-Allee -> Krautstr.: Mittelstreifen	3::igndisp 12360,12505 12134,12540 12118,12462
 Mittelstreifen	3nocross::ignrte 10240,11740 10213,11728 9981,11689
-Niederwallstr. -> Beuthstr.: Mittelstreifen	3::igndisp 10196,11788 10213,11728 10239,11604
 Niederwallstr. -> Gertraudenstr.: Mittelstreifen	3::igndisp 10196,11788 10213,11728 10240,11740
+Niederwallstr. -> Beuthstr.: Mittelstreifen	3::igndisp 10196,11788 10213,11728 10229,11618
 Niederwallstr. -> Spittelmarkt: Mittelstreifen	3::igndisp 10196,11788 10213,11728 10153,11666
-Beuthstr. -> Niederwallstr.: Mittelstreifen	3::igndisp 10239,11604 10213,11728 10196,11788
-Beuthstr. -> Leipziger Str.: Mittelstreifen	3::igndisp 10239,11604 10213,11728 9981,11689
-Beuthstr. -> Spittelmarkt: Mittelstreifen	3::igndisp 10239,11604 10213,11728 10153,11666
-Gertraudenstr. -> Beuthstr.: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10239,11604
+Gertraudenstr. -> Beuthstr.: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10229,11618
 Gertraudenstr. -> Spittelmarkt: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10153,11666
+Beuthstr. -> Niederwallstr.: Mittelstreifen	3::igndisp 10229,11618 10213,11728 10196,11788
+Beuthstr. -> Leipziger Str.: Mittelstreifen	3::igndisp 10229,11618 10213,11728 9981,11689
+Beuthstr. -> Spittelmarkt: Mittelstreifen	3::igndisp 10229,11618 10213,11728 10153,11666
 Leipziger Str. -> Niederwallstr.: Mittelstreifen	3::igndisp 9981,11689 10213,11728 10196,11788
 Spittelmarkt -> Niederwallstr.: Mittelstreifen	3::igndisp 10153,11666 10213,11728 10196,11788
 Spittelmarkt -> Leipziger Str.: Mittelstreifen	3::igndisp 10153,11666 10213,11728 9981,11689
@@ -725,9 +725,9 @@ Treptower Str. -> Treptower Str.: Mittelstreifen	3::igndisp 13478,8095 13459,807
 Treptower Str. -> Sonnenallee: Mittelstreifen	3::igndisp 13478,8095 13459,8072 13474,8060
 Sonnenallee -> Treptower Str.: Mittelstreifen	3::igndisp 13277,8211 13459,8072 13478,8095
 Bernkastler Str.	1 15334,16961 15208,16939 15015,16908 14923,16901 14923,16914
-Hermannstr./Rollbergstr.	3nocross::ignrte 11933,8198 11960,8090 11979,8014
-Hermannstr. -> Rollbergstr.: Hermannstr./Rollbergstr.	3::igndisp 11933,8198 11960,8090 12139,8128
-Rollbergstr. -> Hermannstr.: Hermannstr./Rollbergstr.	3::igndisp 12139,8128 11960,8090 11979,8014
+Hermannstr./Rollbergstr.	3nocross::ignrte 11933,8198 11963,8074 11979,8014
+Hermannstr. -> Rollbergstr.: Hermannstr./Rollbergstr.	3::igndisp 11933,8198 11963,8074 12147,8117
+Rollbergstr. -> Hermannstr.: Hermannstr./Rollbergstr.	3::igndisp 12147,8117 11963,8074 11979,8014
 Mittelstreifen	3nocross::ignrte 7579,10183 7539,9970 7526,9791
 Alvenslebenstr. -> Winterfeldtstr.: Mittelstreifen	3::igndisp 7648,9944 7539,9970 7369,10018
 Alvenslebenstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 7648,9944 7539,9970 7526,9791
@@ -770,3 +770,9 @@ Alt-Moabit -> Calvinstr.: Mittelstreifen	3::igndisp 6966,13075 6860,13093 6802,1
 Calvinstr. -> Alt-Moabit: Mittelstreifen	3::igndisp 6802,12797 6860,13093 6757,13112
 Krautstr. - Kleine Markusstr.: Barriere	3 11967,12042 11937,12127 11958,12195
 Spreewaldplatz	1 12243,10274 12292,10374 12274,10436
+Mittelstreifen	3nocross::ignrte -2793,14505 -2646,14525 -2597,14532
+Zitadelle -> Am Juliusturm: Mittelstreifen	3::igndisp -2668,14635 -2646,14525 -2597,14532
+Am Juliusturm -> Zitadelle: Mittelstreifen	3::igndisp -2793,14505 -2646,14525 -2668,14635
+Mittelstreifen	3nocross::ignrte 2585,5696 2556,5575 2444,5303
+Thielallee -> Kuckucksweg: Mittelstreifen	3::igndisp 2444,5303 2556,5575 2483,5575
+Kuckucksweg -> Thielallee: Mittelstreifen	3::igndisp 2483,5575 2556,5575 2585,5696

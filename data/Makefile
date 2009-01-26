@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.206 2009/01/06 22:07:38 eserte Exp $
+# $Id: Makefile,v 2.206 2009/01/06 22:07:38 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -959,15 +959,18 @@ ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd:	fragezeichen ${DATADIR}/strassen $
 ######################################################################
 # CHECKS
 
+# allow one error, and fail if the 2nd one is encountered
+FOREVER_TWO_ERRORS=	perl -e  '$$cmd=shift; while() { system($$cmd); exit 2 if $$? == 2; $$count = $$? == 0 ? 0 : $$count+1; exit 1 if $$count >= 2; sleep 30 }'
+
 check-forever:
-	-nice forever -30 -i make check all
+	-nice ${FOREVER_TWO_ERRORS} make check all
 	@-alarm -nicedown
 	@-xterm-conf -deiconify -raise
 	xmessage "check-forever failed"
 
 # Like check-forever, but build first, then check (all calls the check target)
 all-forever:
-	-nice forever -30 -i make all
+	-nice ${FOREVER_TWO_ERRORS} make all
 	@-alarm -nicedown
 	@-xterm-conf -deiconify -raise
 	xmessage "all-forever failed"

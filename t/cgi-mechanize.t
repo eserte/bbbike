@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.53 2008/11/24 19:34:34 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.54 2009/01/24 09:06:55 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -193,7 +193,7 @@ for my $browser (@browsers) {
 
 	$like_long_data->(qr/Kreuzung/, "On the crossing page");
 	{
-	    local $^W; $agent->current_form->value('zielc', '27342,-3023');
+	    local $^W; $agent->current_form->value('zielc', '27360,-3042');
 	}
 	;			# Wernsdorfer Str.
 	$agent->submit();

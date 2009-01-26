@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.61 2008/12/28 16:28:16 eserte Exp $
+# $Id: cgi.t,v 1.62 2009/01/26 00:22:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -171,7 +171,9 @@ for my $cgiurl (@urls) {
 	    is($res->content_type, 'text/html', "Expected content type");
 	    ok($content =~ /L.*nge:.*(\d[\d.,]+).*km/ && $1 > 0,
 	       "Length text found");
-	    like($content, qr/nach\s+Osten/, "Direction is correct");
+	    # minor changes in the data may change the initial direction,
+	    # both "Osten" and "Norden" already happened
+	    like($content, qr/nach\s+(Norden|Osten)/, "Direction is correct");
 	    like($content, qr/angekommen/, "End of route list found");
 	} elsif ($output_as eq 'palmdoc') {
 	    is($res->content_type, 'application/x-palm-database',
@@ -185,7 +187,7 @@ for my $cgiurl (@urls) {
 	    is(ref $route->{Route}, 'ARRAY', "Route member found");
 	    like($route->{Route}[0]{DirectionString}, qr/nach\s+Osten/,
 		 "Direction is correct");
-	    is($route->{Route}[0]{Direction}, "E",
+	    like($route->{Route}[0]{Direction}, qr{^[NE]$}, # see above about initial direction
 	       "Raw direction is correct");
 	} elsif ($output_as eq 'mapserver') {
 	SKIP: {

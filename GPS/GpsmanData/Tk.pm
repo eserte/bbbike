@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Tk.pm,v 1.17 2009/01/03 21:02:42 eserte Exp $
+# $Id: Tk.pm,v 1.19 2009/01/25 15:36:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GPS::GpsmanData::Tk;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Tk::Frame);
 Construct Tk::Widget 'GpsmanData';
@@ -158,6 +158,7 @@ sub Populate {
        -command => ['CALLBACK', undef, undef, undef],
        -selectbackground => [$real_dv],
        -selectforeground => [$real_dv],
+       -velocity => ['PASSIVE', undef, undef, 'absolute'],
       );
 }
 
@@ -217,16 +218,19 @@ sub _fill_data_view {
     # near megabytes.
     $w->_destroy_velocity_frames;
 
+    my $velocity_per_vehicle = $w->cget('-velocity') eq 'per_vehicle';
+
     my $i = -1;
     my $chunk_i = -1;
     my %bln_info;
     my %velocity_frame;
     my @chunk_to_i;
-    my $max_ms;
+    my %max_ms;
     for my $chunk (@{ $w->{GpsmanData}->Chunks }) {
 	$chunk_i++;
 	my $supported = $chunk->Type eq $chunk->TYPE_TRACK;
 	my $vehicle = $chunk->TrackAttrs->{'srt:vehicle'};
+	my $max_v_vehicle = $velocity_per_vehicle ? ($vehicle||'unknown') : 'total';
 	my $label = $vehicle ? $vehicle : "-----";
 	$dv->add(++$i, -text => $label, -data => {Chunk => $chunk_i});
 	$bln_info{$i} = "Type " . $chunk->Type . (!$supported ? " (unsupported, skipping)" : "") . ", Attrs: " . encode_json($chunk->TrackAttrs);
@@ -256,12 +260,13 @@ sub _fill_data_view {
 				my $ms = $chunk->wpt_velocity($wpt, $last_wpt);
 				$val = sprintf "%.1f km/h", ms2kmh($ms);
 				$data->{Velocity} = $ms;
+				$data->{_Max_V_Vehicle} = $max_v_vehicle;
 				if ($wpt->Accuracy != 0 || $last_wpt->Accuracy != 0) {
 				    $val .= " (inacc.)";
 				    $data->{VelocityInaccurate} = 1;
 				} else {
-				    if (!defined $max_ms || $max_ms < $ms) {
-					$max_ms = $ms;
+				    if (!defined $max_ms{$max_v_vehicle} || $max_ms{$max_v_vehicle} < $ms) {
+					$max_ms{$max_v_vehicle} = $ms;
 				    }
 				}
 			    } else {
@@ -279,14 +284,18 @@ sub _fill_data_view {
     }
 
     # align VelocityGraph
-    if ($max_ms) { # there is a maximum velocity
+    if (keys %max_ms) { # there is a maximum velocity
 	for my $item ($dv->info('children')) {
 	    my $data = $dv->info('data', $item);
 	    my $ms = $data->{Velocity};
 	    next if !defined $ms;
+	    my $max_v_vehicle = $data->{_Max_V_Vehicle};
+	    next if !defined $max_v_vehicle;
+	    my $max_ms_per_vehicle = $max_ms{$max_v_vehicle};
+	    next if !$max_ms_per_vehicle;
 	    my $f = $velocity_frame{$item};
 	    my($w,$h) = ($f->reqwidth,$f->reqheight);
-	    my $this_w = int($w*$ms/$max_ms);
+	    my $this_w = int($w*$ms/$max_ms_per_vehicle);
 	    $this_w = $w if $this_w > $w; # may happen for inaccurate points
 	    # simulated alpha 0.2 vs. 0.8 for inaccurate bar color:
 	    #  perl -e 'warn sprintf "%x", (0xcf*0.8 + 0xff*0.2)' -> d8

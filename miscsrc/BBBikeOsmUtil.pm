@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeOsmUtil.pm,v 1.7 2009/01/21 23:34:24 eserte Exp eserte $
+# $Id: BBBikeOsmUtil.pm,v 1.14 2009/01/25 21:03:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -16,9 +16,11 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 
-use vars qw($osm_layer $osm_layer_area %images $last_osm_file);
+use vars qw($osm_layer $osm_layer_area $osm_layer_landuse $osm_layer_cover
+	    %images @cover_grids %seen_grids $last_osm_file $defer_restacking
+	  );
 
 use Cwd qw(realpath);
 use File::Basename qw(dirname);
@@ -27,6 +29,8 @@ use VectorUtil qw(enclosed_rectangle intersect_rectangles normalize_rectangle);
 
 use vars qw($UNINTERESTING_TAGS);
 $UNINTERESTING_TAGS = qr{^(name|created_by|source|url)$};
+
+my $osm_download_file_qr = qr{/download_(\d+\.\d+),(\d+\.\d+),(\d+\.\d+),(\d+\.\d+)\.osm$}; # XXX no support for south and west
 
 sub register {
     _create_images();
@@ -42,16 +46,73 @@ sub register {
 sub plot_visible_area {
     my($x0,$y0,$x1,$y1) = _get_visible_area();
     my @osm_files = osm_files_in_grid($x0,$y0,$x1,$y1);
-    plot_osm_files(\@osm_files);    
+    if (@osm_files) {
+	_filter_seen_grids(\@osm_files);
+	if (@osm_files) {
+	    local $defer_restacking = 1;
+	    plot_osm_files(\@osm_files);
+	    _mark_grids_as_seen(\@osm_files);
+	    plot_osm_cover_by_files(\@osm_files);
+	    main::restack();
+	}
+    } else {
+	main::status_message("No OSM tiles available in visible area");
+    }
+}
+
+sub mirror_and_plot_visible_area {
+    my($x0,$y0,$x1,$y1) = _get_visible_area();
+    my @osm_files = osm_files_in_grid($x0,$y0,$x1,$y1);
+    if (@osm_files) {
+	_filter_seen_grids(\@osm_files);
+	if (@osm_files) {
+	    my $ua = _get_ua();
+	    $main::progress->Init(-label => "Mirroring...", -visible => 1);
+	    my $file_i = -1;
+	    for my $file (@osm_files) {
+		$file_i++;
+		$main::progress->Update($file_i/@osm_files);
+		if (-M $file > 0.5) { # mirror at most every 12 hours once
+		    if ($file !~ $osm_download_file_qr) {
+			main::status_message("File '$file' does not have the expected pattern '$osm_download_file_qr'", "die");
+		    }
+		    my($this_x0,$this_y0,$this_x1,$this_y1) = ($1, $2, $3, $4);
+		    my $url = "http://www.openstreetmap.org/api/0.5/map?bbox=$this_x0,$this_y0,$this_x1,$this_y1";
+		    main::status_message("Mirror $url ...", "info"); $main::top->update;
+		    main::IncBusy($main::top);
+		    eval {
+			my $resp = $ua->mirror($url, $file);
+			if (!$resp->is_success) {
+			    die "Could not mirror $url: " . $resp->status_line . "\n";
+			}
+		    };
+		    my $err = $@;
+		    main::DecBusy($main::top);
+		    if ($err) {
+			main::status_message($err, 'die');
+		    }
+		}
+	    }
+	    main::status_message("Mirroring successful, now plotting...", "info"); $main::top->update;
+	    local $defer_restacking = 1;
+	    plot_osm_files(\@osm_files);    
+	    _mark_grids_as_seen(\@osm_files);
+	    plot_osm_cover_by_files(\@osm_files);
+	    main::restack();
+	    $main::progress->Finish;
+	    main::status_message("", "info");
+	}
+    } else {
+	main::status_message("No OSM tiles available in visible area");
+    }
 }
 
 sub download_and_plot_visible_area {
     my($x0,$y0,$x1,$y1) = _get_visible_area();
     require File::Temp;
-    require LWP::UserAgent;
-    my $ua = LWP::UserAgent->new;
-    $ua->agent("BBBike/$main::VERSION (BBBikeOsmUtil/$VERSION LWP/$LWP::VERSION");
+    my $ua = _get_ua();
     my(undef,$tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ".osm");
+    local $defer_restacking = 1;
     my $url = "http://www.openstreetmap.org/api/0.5/map?bbox=$x0,$y0,$x1,$y1";
     main::status_message("Download $url to $tmpfile...", "info");
     warn "Latest downloaded temporary .osm file is $tmpfile\n";
@@ -75,6 +136,8 @@ sub download_and_plot_visible_area {
 	unlink $last_osm_file;
     }
     $last_osm_file = $tmpfile;
+    plot_osm_cover($x0,$y0,$x1,$y1);
+    main::restack();
 }
 
 sub _get_visible_area {
@@ -100,7 +163,7 @@ sub osm_files_in_grid {
     my @res_files;
 
     for my $f (@osm_files) {
-	my($fx0,$fy0,$fx1,$fy1) = $f =~ m{/download_(\d+\.\d+),(\d+\.\d+),(\d+\.\d+),(\d+\.\d+)\.osm$}; # XXX no support for south and west
+	my($fx0,$fy0,$fx1,$fy1) = $f =~ $osm_download_file_qr;
 	($fx0,$fy0,$fx1,$fy1) = normalize_rectangle($fx0,$fy0,$fx1,$fy1);
 	if (_contains_rectangle($x0,$y0,$x1,$y1, $fx0,$fy0,$fx1,$fy1)) {
 	    push @res_files, $f;
@@ -110,36 +173,63 @@ sub osm_files_in_grid {
     @res_files;
 }
 
+sub _filter_seen_grids {
+    my $osm_files_ref = shift;
+    my @new_osm_files;
+    for (@$osm_files_ref) {
+	my($x0,$y0) = $_ =~ $osm_download_file_qr;
+	if (!$seen_grids{"$x0,$y0"}) {
+	    push @new_osm_files, $_;
+	}
+    }
+    @$osm_files_ref = @new_osm_files;
+}
+
+sub _mark_grids_as_seen {
+    my $osm_files_ref = shift;
+    for (@$osm_files_ref) {
+	my($x0,$y0) = $_ =~ $osm_download_file_qr;
+	$seen_grids{"$x0,$y0"}++;
+    }
+}
+
 sub plot_osm_files {
     my($osm_files) = @_;
     require XML::LibXML; # XXX too lazy for XML::LibXML::Reader, and
                          # this is also supposed to work for small
                          # files only
-    require Karte::Polar;
-    require Karte::Standard;
     my $c = $main::c;
-    my $transpose = \&main::transpose;
-    my $map_conv = sub {
-	my($lon, $lat) = @_;
-	my($x, $y) = $Karte::Polar::obj->map2standard($lon, $lat);
-	$transpose->($x, $y);
-    };
+    my $map_conv = _get_map_conv();
 
     if (!$osm_layer) {
 	$osm_layer = main::next_free_layer();
 	$osm_layer_area = $osm_layer . "-bg";
-	$main::str_obj{$osm_layer} = Strassen::Dummy->new; # XXX just for the layer editor, not useful for anything else
-	$main::str_draw{$osm_layer} = 1; # XXX also for layer editor
-	$main::str_obj{$osm_layer_area} = Strassen::Dummy->new; # XXX just for the layer editor, not useful for anything else
-	$main::str_draw{$osm_layer_area} = 1; # XXX also for layer editor
+	$osm_layer_landuse = $osm_layer . "-landuse";
+	$osm_layer_cover = $osm_layer . "-cover";
+	for my $abk ($osm_layer, $osm_layer_area, $osm_layer_cover, $osm_layer_landuse) {
+	    $main::str_obj{$abk} = Strassen::Dummy->new; # XXX just for the layer editor, not useful for anything else
+	}
 	$main::layer_name{$osm_layer} = "OpenStreetMap (fg)";
 	$main::layer_name{$osm_layer_area} = "OpenStreetMap (bg)";
+	$main::layer_name{$osm_layer_cover} = "OpenStreetMap (cover)";
+	$main::layer_name{$osm_layer_landuse} = "OpenStreetMap (landuse)";
 	$main::layer_icon{$osm_layer} = $images{OsmLogo};
 	$main::layer_icon{$osm_layer_area} = $images{OsmLogo};
-	main::add_to_stack($osm_layer, "before", "pp");
-	main::add_to_stack($osm_layer_area, "before", "f");
+	$main::layer_icon{$osm_layer_cover} = $images{OsmLogo};
+	$main::layer_icon{$osm_layer_landuse} = $images{OsmLogo};
+	main::add_to_stack($osm_layer, "below", "pp");
+	main::add_to_stack($osm_layer_area, "below", "f");
+	main::add_to_stack($osm_layer_landuse, "lowermost", undef);
+	main::add_to_stack($osm_layer_cover, "above", $osm_layer_landuse);
 	main::std_str_binding($osm_layer);
 	main::std_str_binding($osm_layer_area);
+	main::std_str_binding($osm_layer_landuse);
+    }
+
+    if (!$main::str_draw{$osm_layer}) { # XXX just check this one, maybe not enough!
+	for my $abk ($osm_layer, $osm_layer_area, $osm_layer_cover, $osm_layer_landuse) {
+	    $main::str_draw{$abk} = 1; # XXX also for layer editor
+	}
 	Hooks::get_hooks("after_new_layer")->execute;
     }
 
@@ -155,7 +245,11 @@ sub plot_osm_files {
 	    $node2ll{$id} = "$cx,$cy";
 	    my %tag;
 	    for my $tag ($node->findnodes('./tag')) {
-		$tag{$tag->getAttribute('k')} = $tag->getAttribute('v');
+		my $k = $tag->getAttribute('k');
+		my $v = $tag->getAttribute('v');
+		$k = "<undef k>" if !defined $k;
+		$v = "<undef v>" if !defined $v;
+		$tag{$k} = $v;
 	    }
 	    if (exists $tag{name} || exists $tag{amenity}) {
 		my $uninteresting_tags = join(" ",
@@ -203,6 +297,8 @@ sub plot_osm_files {
 		$item_args{'-dash'} = '.'; 
 	    } elsif (exists $tag{'boundary'}) {
 		$item_args{'-dash'} = '.-'; # looks like a boundary, n'est-ce pas?
+	    } elsif (exists $tag{'obsolete_boundary'}) {
+		next;
 	    }
 	    if (exists $tag{'oneway'}) {
 		if ($tag{'oneway'} eq '-1') {
@@ -218,17 +314,37 @@ sub plot_osm_files {
 	    } else {
 		my $tags = join(" ", map { "$_=$tag{$_}" } grep { $_ !~ $UNINTERESTING_TAGS } keys %tag);
 		my $uninteresting_tags = join(" ",
-					      "user=" . $way->getAttribute("user"),
-					      "timestamp=" . $way->getAttribute("timestamp"),
+					      "user=" . ($way->getAttribute("user")||"<undef>"),
+					      "timestamp=" . ($way->getAttribute("timestamp")||"<undef>"),
 					      (map { "$_=$tag{$_}" } grep { $_ =~ $UNINTERESTING_TAGS } keys %tag)
 					     );
 		my @tags = ((exists $tag{name} ? $tag{name}.' ' : '') . $tags, $uninteresting_tags, 'osm', 'osm-way-' . $id);
-		if ($nodes[0] eq $nodes[-1]) {
+		my $is_area = (exists $tag{'area'} ? $tag{'area'} eq 'yes' :
+			       exists $tag{'landuse'} ? 1 :
+			       $nodes[0] eq $nodes[-1]
+			      );
+		if ($is_area) {
+		    my $light_color = '#a0b0a0';
+		    my $dark_color  = '#a06060';
+		    if ((exists $tag{'natural'} && $tag{'natural'} eq 'water') ||
+			(exists $tag{'waterway'})
+		       ) {
+			$light_color = '#a0a0b0';
+			$dark_color = '#6060a0';
+		    } elsif (exists $tag{'building'} && $tag{'building'} eq 'yes') {
+			$light_color = '#b0a0b0';
+			$dark_color = '#a060a0';
+		    } elsif ((exists $tag{'amenity'} && $tag{'amenity'} eq 'parking') ||
+			     (exists $tag{'highway'})
+			    ) {
+			$light_color = '#b0b2b2';
+			$dark_color = '#707272';
+		    }
 		    $c->createPolygon(@coordlist,
-				      -fill => '#a0b0a0',
-				      -outline => '#a06060',
+				      -fill => $light_color,
+				      -outline => $dark_color,
 				      %item_args,
-				      -tags => [$osm_layer_area, @tags, ($tag{landuse} ? "osm-landuse" : ())],
+				      -tags => [$tag{landuse} ? $osm_layer_landuse : $osm_layer_area, @tags],
 				     );
 		} else {
 		    $c->createLine(@coordlist,
@@ -243,12 +359,55 @@ sub plot_osm_files {
 	}
     }
 
-    $c->lower($osm_layer_area);
-    $c->lower("osm-landuse"); # downmost
+    if (!$defer_restacking) {
+	main::restack();
+    }
+}
+
+sub plot_osm_cover {
+    _plot_osm_cover_no_restack(@_);
+    if (!$defer_restacking) {
+	main::restack();
+    }
+}
+
+sub _plot_osm_cover_no_restack {
+    my($x0,$y0,$x1,$y1) = @_;
+    my $c = $main::c;
+    my $map_conv = _get_map_conv();
+    $c->createRectangle($map_conv->($x0,$y0),
+			$map_conv->($x1,$y1),
+			-stipple => '@'.$FindBin::RealBin.'/images/stiplite.xbm',
+			-fill => '#ffdead',
+			-state => 'disabled', # no balloon interaction
+			-tags => ['osm', $osm_layer_cover],
+		       );
+}
+
+sub plot_osm_cover_by_files {
+    my($osm_files_ref) = @_;
+    for my $file (@$osm_files_ref) {
+	if (my($x0,$y0,$x1,$y1) = $file =~ $osm_download_file_qr) {
+	    push @cover_grids, [$x0, $y0, $x1, $y1];
+	    #_plot_osm_cover_no_restack($x0,$y0,$x1,$y1); # old negative implementation
+	} else {
+	    warn "Unexpected: file '$file' does not match '$osm_download_file_qr', ignoring for cover plotting...";
+	}
+    }
+    _draw_cover_grids(); # new positive implementation
+    if (!$defer_restacking) {
+	main::restack();
+    }
 }
 
 sub delete_osm_layer {
     $main::c->delete("osm");
+    for my $abk ($osm_layer, $osm_layer_area, $osm_layer_cover, $osm_layer_landuse) {
+	$main::str_draw{$abk} = 0; # XXX also for layer editor
+    }
+    Hooks::get_hooks("after_delete_layer")->execute;
+    @cover_grids = ();
+    %seen_grids = ();
 }
 
 sub _contains_rectangle {
@@ -257,6 +416,72 @@ sub _contains_rectangle {
 	    enclosed_rectangle($fx0,$fy0,$fx1,$fy1, $x0,$y0,$x1,$y1) ||
 	    intersect_rectangles($x0,$y0,$x1,$y1, $fx0,$fy0,$fx1,$fy1)
 	   );
+}
+
+sub _sort_cover_grids {
+    @cover_grids = sort {
+	my $h = $a->[0] <=> $b->[0];
+	if ($h == 0) {
+	    return $a->[1] <=> $b->[1];
+	} else {
+	    return $h;
+	}
+    } @cover_grids;
+}
+
+sub _draw_cover_grids {
+    $main::c->delete($osm_layer_cover);
+    return if !@cover_grids;
+    _sort_cover_grids();
+    use List::Util qw(reduce);
+    use constant MARGIN_X => 0.05;
+    use constant MARGIN_Y => 0.05;
+    my $max_y = (reduce { $a->[1] > $b->[1] ? $a : $b } @cover_grids)->[1] + MARGIN_Y;
+    my $min_y = (reduce { $a->[3] < $b->[3] ? $a : $b } @cover_grids)->[3] - MARGIN_Y;
+    my @c = ([$cover_grids[0]->[0] - MARGIN_X,
+	      $max_y,
+	     ]);
+    my $last_x;
+    for my $i (0 .. $#cover_grids) {
+	my $this_x = $cover_grids[$i]->[0];
+	if (defined $last_x && $last_x != $this_x) {
+	    push @c, [$last_x, $max_y];
+	    undef $last_x;
+	}
+	if (!defined $last_x) {
+	    push @c, [$this_x, $max_y];
+	    $last_x = $this_x;
+	}
+	push @c, ([$this_x, $cover_grids[$i]->[3]],
+		  [$cover_grids[$i]->[2], $cover_grids[$i]->[3]],
+		  [$cover_grids[$i]->[2], $cover_grids[$i]->[1]],
+		  [$this_x, $cover_grids[$i]->[1]],
+		 );
+    }
+    push @c, [$last_x, $max_y];
+    push @c, ([$cover_grids[-1]->[2] + MARGIN_X, $max_y],
+	      [$cover_grids[-1]->[2] + MARGIN_X, $min_y],
+	      [$cover_grids[0]->[0] - MARGIN_X, $min_y],
+	      [$cover_grids[0]->[0] - MARGIN_X, $max_y],
+	     );
+
+    my $map_conv = _get_map_conv();
+    @c = map { $map_conv->(@$_) } @c;
+    $main::c->createPolygon(@c,
+			    -stipple => '@'.$FindBin::RealBin.'/images/stiplite.xbm',
+			    -fill => 'red',
+			    -state => 'disabled',
+			    -tags => ['osm', $osm_layer_cover],
+			   );
+    if (0) {
+	# a debugging helper
+	$main::c->createLine(@c,
+			     -fill => "darkred",
+			     -dash => '.   ',
+			     -state => 'disabled',
+			     -tags => ['osm', $osm_layer_cover],
+			    );
+    }
 }
 
 sub _create_images {
@@ -305,6 +530,26 @@ AGZpbGU6Ly8vbW50L2kzODYvdXNyL2hvbWUvZS9lc2VydGUvdHJhc2gvT3BlbnN0cmVldG1h
 cF9sb2dvLnN2Z2nx98oAAAAASUVORK5CYII=
 EOF
     }
+}
+
+sub _get_ua {
+    require LWP::UserAgent;
+    my $ua = LWP::UserAgent->new;
+    $ua->agent("BBBike/$main::VERSION (BBBikeOsmUtil/$VERSION LWP/$LWP::VERSION");
+    $ua->default_headers->push_header("Accept-Encoding" => "gzip");
+    $ua;
+}
+
+sub _get_map_conv {
+    require Karte::Polar;
+    require Karte::Standard;
+    my $transpose = \&main::transpose;
+    my $map_conv = sub {
+	my($lon, $lat) = @_;
+	my($x, $y) = $Karte::Polar::obj->map2standard($lon, $lat);
+	$transpose->($x, $y);
+    };
+    $map_conv;
 }
 
 # TODO:

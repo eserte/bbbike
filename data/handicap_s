@@ -62,8 +62,8 @@ Tiergarten: Parkweg	q1 7816,12150 7827,12105 7832,12036 7822,11952 7801,11875 77
 Parkweg: enge Br¸cke, Fuﬂweg	q2 14310,9692 14351,9757 14451,9927 14558,10082 14597,10129 14626,10162 14652,10201
 Spittelmarkt: Gehweg	q1 10166,11592 10153,11666 10213,11728
 Spittelmarkt: Gehweg	q1 10369,11728 10240,11740
-Beuthstr. - Spittelmarkt: Gehweg	q1 10239,11604 10213,11728
-Hasenheide: Parkweg	q1 11271,8325 11282,8428 11250,8585 11128,9100 11136,9183
+Beuthstr. - Spittelmarkt: Gehweg	q1 10229,11618 10213,11728
+Hasenheide: Parkweg	q1 11271,8325 11282,8428 11250,8585 11177,8985 11128,9100 11136,9183
 Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11128,9100
 Am Flutgraben: Parkweg	q1 13333,9929 13412,9935 13579,10146
 Kolonie Albrechtshˆhe: einige Fuﬂg‰nger	q1 10260,5953 9931,5985
@@ -105,13 +105,16 @@ Krumme Lanke - Parkplatz am Fischerh¸ttenweg: Fuﬂg‰nger	q2 -1287,4486 -1304,4450
 Pankeweg, B¸rgerpark: Fuﬂg‰nger	q2 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9424,18276 9304,18165 9310,18108
 B¸rgerpark: Fuﬂg‰nger	q2 9460,18053 9479,18217 9701,18256 9716,18290
 B¸rgerpark: Fuﬂg‰nger	q1 9428,18330 9424,18276 9479,18217
-Breite Str.: Fuﬂg‰ngerzone	q3 -3017,14554 -3041,14516 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340 -3227,14260
-Markt: Fuﬂg‰ngerzone	q3 -3155,14340 -3204,14368 -3231,14383 -3275,14407
-Carl-Schurz-Str.: Fuﬂg‰ngerzone	q3 -3552,14082 -3457,14189 -3409,14241 -3338,14333 -3275,14407 -3228,14468 -3205,14512 -3185,14556 -3150,14631
-Am Wall: Fuﬂg‰ngerzone	q3 -3403,14145 -3457,14189
-Charlottenstr.: Fuﬂg‰ngerzone	q3 -3227,14260 -3293,14304 -3338,14333 -3397,14370
-Moritzstr.: Fuﬂg‰ngerzone	q3 -3275,14407 -3350,14446 -3393,14470 -3410,14479 -3440,14498 -3481,14523
-Mauerstr. (Spandau): Fuﬂg‰ngerzone	q3 -3316,14169 -3409,14241
+Breite Str.: Fuﬂg‰ngerzone	q4 -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340 -3227,14260
+Markt: Fuﬂg‰ngerzone	q4 -3155,14340 -3204,14368 -3231,14383 -3275,14407
+Kirchgasse (Spandau): Fuﬂg‰ngerzone	q4 -3089,14440 -3150,14478
+Mˆnchstr.: Fuﬂg‰ngerzone	q4 -3110,14408 -3174,14438 -3228,14468
+Marktstr. (Spandau): Fuﬂg‰ngerzone	q4 -3293,14304 -3231,14383
+Carl-Schurz-Str.: Fuﬂg‰ngerzone	q4 -3552,14082 -3457,14189 -3409,14241 -3338,14333 -3275,14407 -3228,14468 -3205,14512 -3185,14556 -3150,14631
+Am Wall: Fuﬂg‰ngerzone	q4 -3403,14145 -3457,14189
+Charlottenstr.: Fuﬂg‰ngerzone	q4 -3227,14260 -3293,14304 -3338,14333 -3397,14370
+Moritzstr.: Fuﬂg‰ngerzone	q4 -3275,14407 -3350,14446 -3393,14470 -3410,14479 -3440,14498 -3481,14523
+Mauerstr. (Spandau): Fuﬂg‰ngerzone	q4 -3316,14169 -3409,14241
 Eichgestell: bei schˆnem Wetter viele Fuﬂg‰nger	q1 19052,6823 19407,6660 19590,6590 19751,6514 19986,6404 20106,6357 20200,6321 20293,6278
 Wuhlheide: bei schˆnem Wetter viele Fuﬂg‰nger und Kinder	q2 20200,6321 20262,6493 20225,6631 20313,6841
 Wuhlheide/R1: Fuﬂg‰nger	q2 20453,6211 20293,6278
@@ -489,7 +492,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4 -3150,14631 -3122,14557 -3107,14535 -3054,14498
 (Schˆnholzer Heide, parallel zur Friesenstr.): Fuﬂg‰nger	q1 8765,19288 8784,19253 8954,19151 9446,18855 9475,18862
 Nordufer: teilweise sehr schmaler Radweg	q1 7231,14749 7433,14656 7498,14658
 (Weg am Nordgraben): schmaler Weg, m‰ﬂiger Fuﬂg‰ngerverkehr	q2 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3152,20852 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
-(Weg am Waldfriedhof Dahlem): Kurven	q2 1051,5525 825,5420 626,5322
+(Weg am Waldfriedhof Dahlem): Kurven	q2 1051,5525 825,5420 541,5306
 (Waldweg parallel zur Flanaganstr. zwischen H¸ttenweg und Im Jagen): starke Steigungen und Gef‰lle	q2 1051,5525 1697,5938
 (Altvaterstr./Breisgauer Str. - Salzachstr.): schmaler Fuﬂweg	q3 -2295,3523 -2133,3591
 Neustrelitzer Str.: kurvenreich	q1 16752,14745 16668,14765 16534,14740 16443,14825 16346,14750 16256,14828
@@ -512,7 +515,7 @@ Konradinstr.: eng	q1 8575,5202 8557,5226 8674,5357 8865,5468 8870,5557
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fuﬂg‰nger	q1 821,2714 1017,2823 1126,2885 1262,2975
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fuﬂg‰nger	q1 1453,3085 1659,3226 1687,3244 1715,3257 1977,3414 2271,3571
 Uferpromenade: Absperrung am Restaurant, Fuﬂg‰nger	q3 -1694,17839 -1686,17918 -1660,18035
-Bruno-Bauer-Str.: Bordsteine, Gehweg	q2 12879,6543 12902,6495 12921,6424
+Bruno-Bauer-Str.: Bordsteine, Gehweg	q2 12893,6527 12902,6495 12921,6424
 Hessenallee: enge Straﬂe	q1 640,11676 640,11706 769,11770 881,11893
 Hechtgraben: eng, Fuﬂg‰nger	q3 3105,5594 3173,5493
 Pech¸ler Pfad: eng, Fuﬂg‰nger	q3 2793,6593 2875,6648
@@ -553,21 +556,21 @@ Kamminer Str.: un¸bersichtliche Kreuzungen, parkende PKWs	q1 3248,12954 3292,131
 (Bad Kissingen): Fuﬂg‰nger	q2 3639,7590 3652,7795
 (Kolonieweg a. d. Forkenbeckstr.): Fuﬂg‰nger, teilweise eng 	q3 3218,8233 3230,8194 3635,8099 3709,8082 3753,8073 3779,8105
 Claire-Waldoff-Weg: Fuﬂg‰nger	q2 3635,8099 3596,7550
-Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 8000,10879 8135,10784
+Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
 (Volkspark Friedrichshain, parallel zur Friedenstr.):Fuﬂg‰nger	q1 12386,13085 12387,13107 12344,13157 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11772,13624
-(Weydemeyerstr.): Fuﬂg‰nger	q1 11905,12765 11873,12778 11851,12729
-(Weydemeyerstr.): Fuﬂg‰nger	q1 11978,12673 11987,12763 11918,12789
+(Weydemeyerstr.): Fuﬂg‰nger	q1 11900,12754 11837,12780 11824,12749
+(Weydemeyerstr.): Fuﬂg‰nger	q1 11933,12701 11971,12785 11926,12807
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11584,12863 11600,12857 11622,12850 11725,12809
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11419,12944 11362,12964 11295,12915
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11600,12857 11589,12768
-(Berolinastr.): Fuﬂg‰nger	q1 11834,12902 11862,12889 11942,12839
-(Berlolinastr.): Fuﬂg‰nger	q1 11834,12902 11862,12889 11880,12921 11921,12990 11983,12949
+(Berolinastr.): Fuﬂg‰nger	q1 11844,12926 11885,12905 11952,12871
+(Berlolinastr.): Fuﬂg‰nger	q1 11844,12926 11885,12905 11906,12947 11921,12990 11983,12949
 (Berolinastr.): Fuﬂg‰nger	q1 11921,12990 11858,13029
 (Berolinastr.): Fuﬂg‰nger	q1 11815,13045 11719,13088
 (Berolinastr.): Weg am Spielplatz vorbei	q2 11858,13029 11815,13045
 (Berolinastr. - Mollstr.): Fuﬂg‰nger	q1 11858,13029 11863,13053 11867,13076
 (Berolinastr. - Mollstr.): Fuﬂg‰nger	q1 11608,12985 11681,13161
-(Lichtenberger Str.): Fuﬂg‰nger	q1 12054,12903 12028,12668
+(Lichtenberger Str.): Fuﬂg‰nger	q1 12054,12903 12039,12675
 (Verbindungsweg): Fuﬂg‰nger	q1 11660,13457 11711,13416
 Weinstr.: Fuﬂg‰nger, Wurzeln	q3 11793,13247 11909,13387
 Weinstr.: Fuﬂg‰nger	q1 11953,13437 11982,13471
@@ -579,7 +582,7 @@ Br¸der-Grimm-Gasse: Fuﬂg‰nger	q2 8351,11163 8343,11133
 (Anhalter Steg - Anhalter Bahnhof): Fuﬂg‰nger	q1 8773,10429 8776,10548 8854,10712 8912,10846 8938,10872
 (Linkstr. - Alte Potsdamer Str.): Fuﬂg‰nger, schmal	q3 8474,11350 8389,11378
 Voxstr.: Fuﬂg‰nger	q3 8309,11390 8375,11368
-Alice-Salomon-Park: getrennte Wege f¸r Radfahrer und Fuﬂg‰nger, Bordsteine	q2 6851,9365 6767,9492 6728,9515
+Alice-Salomon-Park: getrennte Wege f¸r Radfahrer und Fuﬂg‰nger, Bordsteine	q2 6851,9365 6771,9458 6728,9457
 (Geﬂlerstr. - Monumentenstr.): Fuﬂg‰nger, Kinder	q2 7970,8886 7964,9060 8009,9063 8014,9126
 (Loewenhardtdamm - Hˆhndorfstr.): Fuﬂg‰nger, Bordsteine, Schranken	q2 8318,8692 8429,8692
 (Weg d. Kol. Papestr.): Fuﬂg‰nger	q1 8219,8628 8259,8628 8262,8317
@@ -593,9 +596,9 @@ Bautzener Platz: Fufg‰nger, Bordsteine	q2 8102,9262 8183,9260
 (Anton-Saefkow-Str. - John-Schehr-Str.): Fuﬂg‰nger, Schranken	q1 13084,14472 13009,14371 12949,14292
 Ernst-F¸rstenberg-Str.: Fuﬂg‰nger	q1 13014,14146 12996,14172
 An der Brauerei: Fuﬂg‰nger	q1 13291,13290 13283,13311 13378,13353
-An der Brauerei: Fuﬂg‰nger	q2 13283,13311 13241,13405
-(Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12851,12602 13092,12841 13041,12950 12909,13231
-(Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12772,12682 13041,12950
+An der Brauerei: Fuﬂg‰nger	q2 13283,13311 13237,13410
+(Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12851,12602 13108,12859 13046,12956 12878,13229
+(Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12772,12682 13046,12956
 Ritterstr.: Fuﬂg‰nger	q1 9755,11152 9861,11103
 Elisenstr.: Fuﬂg‰nger	q2 5808,5332 5822,5388
 Mittelstr. (Steglitz): Fuﬂg‰nger	q2 5119,5332 5203,5278
@@ -628,15 +631,15 @@ August-Lindemann-Str.: Fuﬂg‰nger	q3 14336,12758 14346,12790
 (Jagdschloﬂ Grunewald - Umgehungschaussee): Fuﬂg‰nger, Hundeauslaufgebiet	q2 905,6631 1149,7205
 (Uferweg am Grunewaldsee): Fuﬂg‰nger, Hundeauslaufgebiet	q2 1251,7429 1197,7457 1168,7473 1089,7496 1007,7334 928,7252 794,6958 762,6906 682,6865 574,6842 524,6795 478,6738 306,6582
 Umgehungschaussee: Fuﬂg‰nger, Hundeauslaufgebiet	q2 1149,7205 1251,7429
-Umgehungschaussee: Fuﬂg‰nger, Hundeauslaufgebiet	q1 1251,7429 1263,7450 1252,7741 1127,7856 1043,7929 860,8052 864,8110
+Umgehungschaussee: Fuﬂg‰nger, Hundeauslaufgebiet	q1 1251,7429 1263,7450 1252,7741 1215,7797 1043,7929 860,8052 834,8067
 (Auerbachstr. - Koenigsallee): Fuﬂg‰nger, schmal	q2 490,8716 445,8429 614,8006 761,7922
 (Verl‰ngerte Harbigstr.): Jogger etc.	q1 573,10109 346,9806
-(Zur Hagenstr.): Fuﬂg‰nger, Bordsteine	q1 1098,8290 1148,8353
-Bernhard-Wieck-Promenade: Fuﬂg‰nger	q1 1402,8021 1412,8033 1421,8044 1466,8100
-Bernhard-Wieck-Promenade: Fuﬂg‰nger	q1 1421,8044 1403,8058 1384,8035
+(Zur Hagenstr.): Fuﬂg‰nger, Bordsteine	q1 1111,8225 1181,8301
+Bernhard-Wieck-Promenade: Fuﬂg‰nger	q1 1363,7997 1372,8011 1381,8023 1446,8114
+Bernhard-Wieck-Promenade: Fuﬂg‰nger	q1 1381,8023 1366,8032 1348,8010
 K‰uzchensteig: Fuﬂg‰nger, Bordsteine	q1 1918,6456 1895,6470
-(Parkweg Robert-Stolz-Anlage): Fuﬂg‰nger	q2 1782,7527 1943,7527 1943,7499
-(Parkweg Robert-Stolz-Anlage): Fuﬂg‰nger, schmal	q3 1943,7527 1964,7571
+(Parkweg Robert-Stolz-Anlage): Fuﬂg‰nger	q2 1728,7525 1869,7525 1878,7499
+(Parkweg Robert-Stolz-Anlage): Fuﬂg‰nger, schmal	q3 1869,7525 1946,7580
 (Luisenstr. - Hufelandweg): Fuﬂg‰nger	q3 8665,13353 8582,13355
 Helga-Hahnemann-Str.: Fuﬂg‰nger, schmal	q2 9415,13315 9385,13174
 An der Karolinenhˆhe: Fuﬂg‰nger, spielende Kinder	q3 -5900,11726 -5848,11779 -5892,11820 -5847,11876
@@ -734,7 +737,7 @@ J‰gerstr. (Spandau): Fuﬂg‰nger	q3 -3738,12572 -3729,12669
 Ziegelhof: Fuﬂg‰nger	q3 -3774,13517 -3668,13502
 (Wachheimer Weg - Gˆtelstr.): Fuﬂg‰nger	q2 -3437,12258 -3350,12260 -3349,12213
 (Neuenburger Str. - Lindenstr.): Fuﬂg‰nger	q2 9853,10543 9848,10526 9795,10512
-Fanny-Hensel-Weg: spielende Kinder, Pf‰hle	q3 8781,10827 8742,10868 8644,10914
+Fanny-Hensel-Weg: spielende Kinder, Pf‰hle	q3 8781,10827 8742,10868 8659,10910
 Else-Ury-Bogen: Fuﬂg‰nger	q3 4817,10943 4714,10950
 Bootshausweg: Fuﬂg‰nger, eng	q2 -1073,16610 -1067,16635 -1092,16659 -1156,16689 -1190,16714 -1214,16745 -1229,16773 -1406,16907 -1465,16957 -1520,16989 -1564,17001 -1610,17007 -1664,17009 -1743,16990 -1723,16973 -1690,16971 -1676,16957 -1673,16939 -1725,16878 -1704,16870 -1684,16853 -1655,16813
 Rufacher Weg: enge Straﬂe	q2 12207,1704 12179,1758 12160,1817 12255,2058 12582,2129 12738,2162
@@ -755,7 +758,7 @@ Wittenberger Str. (Einkaufzentrum): Fuﬂg‰nger	q3 21590,17918 21647,17889
 (Radweg an der Straﬂenbahn): wenig Fuﬂg‰nger	q1 21843,18198 21804,18125 21726,17974 21698,17920 21639,17803 21576,17678 21559,17617 21555,17546 21539,17442 21510,17329 21484,17205 21484,17189 21470,17117 21453,17041 21441,16973 21417,16896 21377,16822 21323,16716 21321,16696 21283,16619 21254,16567 21235,16531 21210,16481 21179,16455 21067,16327 21043,16299 21035,16280 20995,16237 20931,16164 20851,16037 20839,15978
 Wuhlewanderweg: Spazierg‰nger	q1 22313,18595 22332,18496 22391,18349 22395,18313 22367,18226 22341,18091 22324,18030 22327,17997 22343,17960 22353,17940 22353,17920 22365,17864 22381,17811 22384,17764 22333,17664 22329,17644 22364,17323
 Wuhlewanderweg: Spazierg‰nger	q1 22314,17916 22365,17864
-Erich-Kurz-Str.: viele Fuﬂg‰nger	q2 18354,10600 18285,10550 18232,10532 18150,10543 18120,10532 18104,10482
+Erich-Kurz-Str.: viele Fuﬂg‰nger	q2 18354,10600 18345,10575 18285,10550 18232,10532 18150,10543 18120,10532 18104,10482
 Erich-Kurz-Str.: viele Fuﬂg‰nger	q2 18285,10550 18332,10434 18342,10384 18326,10362 18264,10343
 Widderstr.: enge Straﬂe	q2 14853,7451 14997,7240
 Krebsgang: enge Straﬂe	q2 15085,7258 14997,7240 14878,7211 14792,7192 14693,7168
@@ -771,7 +774,7 @@ Seefelder Str. (Fuﬂweg): Fuﬂg‰nger, schmal	q2 17274,16177 17371,16194 17383,1619
 (Verbindung zum Orlam¸nder Weg): Fuﬂg‰nger	q1 7274,1810 7275,1843
 (Orlam¸nder Weg - Tambacher Str.): Fuﬂg‰nger	q1 7172,1630 7144,1591
 (Parkweg Trippsteinstr. - Sondershauser Str.): Fuﬂg‰nger	q1 6762,1226 6700,1184 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6406,1218
-(Parkweg Blankenhainer Str. - Hildburghauser Str.): Fuﬂg‰nger	q1 6578,1595 6528,1573 6517,1479 6515,1418 6479,1312 6481,1210 6467,1028
+(Parkweg Blankenhainer Str. - Hildburghauser Str.): Fuﬂg‰nger	q1 6578,1595 6528,1573 6517,1479 6515,1418 6479,1312 6481,1210 6487,1169 6455,1101 6467,1028
 (Gr‰fentaler Str. - Georgenstr.): Fuﬂg‰nger	q1 6189,1423 6132,1395
 Altenburger Str.: Fuﬂg‰nger	q2 6650,1059 6631,968
 (Lilienthalpark): Fuﬂg‰nger	q2 5514,580 5571,614 5671,637 5615,735 5576,800 5584,808 5571,864 5540,919
@@ -779,7 +782,7 @@ Altenburger Str.: Fuﬂg‰nger	q2 6650,1059 6631,968
 (Lilienthalpark): Fuﬂg‰nger	q2 5533,663 5485,751 5499,771 5539,773 5590,719 5593,679 5575,660 5533,663
 (Lilienthalpark): Fuﬂg‰nger	q2 5571,614 5533,663
 (Lilienthalpark): Fuﬂg‰nger	q2 5539,773 5576,800
-(Hildburghauser Str. - Lilienthalpark): Fuﬂg‰nger	q2 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5742,798 5682,767 5675,764 5615,735 5590,719
+(Hildburghauser Str. - Lilienthalpark): Fuﬂg‰nger	q2 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5682,767 5675,764 5615,735 5590,719
 (Mauerweg Lichtenrade - Lichterfelde): Fuﬂg‰nger	q1 10309,-3191 10057,-3175 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 8846,-2089 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7144,-565 7169,-520 7164,-473 7146,-466 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6253,361 6198,328 6013,211 5832,93 5435,-157 4842,-547 4596,-707 4406,-910
 Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
 (Gielower Str - Buschkrugallee): Fuﬂg‰nger	q1 14012,4184 14053,4173 14119,4153

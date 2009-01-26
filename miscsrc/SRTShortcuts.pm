@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.76 2009/01/21 22:42:05 eserte Exp eserte $
+# $Id: SRTShortcuts.pm,v 1.79 2009/01/25 17:40:58 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.76 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.79 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -47,6 +47,7 @@ sub register {
     my $pkg = __PACKAGE__;
     $BBBikePlugin::plugins{$pkg} = $pkg;
     add_button();
+    add_keybindings();
     define_subs();
 }
 
@@ -56,6 +57,7 @@ sub unregister {
     my $mf = $main::top->Subwidget("ModePluginFrame");
     my $subw = $mf->Subwidget($pkg . '_on');
     if (Tk::Exists($subw)) { $subw->destroy }
+    remove_keybindings();
     BBBikePlugin::remove_menu_button(__PACKAGE__."_menu");
     delete $BBBikePlugin::plugins{$pkg};
 }
@@ -219,7 +221,17 @@ sub add_button {
 		 }
 		],
 		"-",
-		[Button => "Display downloaded OSM Berlin",
+		[Button => "Display (and refresh) downloaded OSM Berlin",
+		 -command => sub {
+		     _require_BBBikeOsmUtil();
+		     BBBikeOsmUtil::mirror_and_plot_visible_area();
+		 }],
+		[Button => "Download and display any OSM data",
+		 -command => sub {
+		     _require_BBBikeOsmUtil();
+		     BBBikeOsmUtil::download_and_plot_visible_area();
+		 }],
+		[Button => "Display (without refresh) downloaded OSM Berlin",
 		 -command => sub {
 		     _require_BBBikeOsmUtil();
 		     BBBikeOsmUtil::plot_visible_area();
@@ -228,11 +240,6 @@ sub add_button {
 		 -command => sub {
 		     _require_BBBikeOsmUtil();
 		     BBBikeOsmUtil::delete_osm_layer();
-		 }],
-		[Button => "Download and display any OSM data",
-		 -command => sub {
-		     _require_BBBikeOsmUtil();
-		     BBBikeOsmUtil::download_and_plot_visible_area();
 		 }],
 		"-",
 		[Button => 'OSM-converted layer',
@@ -309,6 +316,18 @@ sub add_button {
 	$menu->entryconfigure($map_menuitem,
 			      -menu => main::get_map_button_menu($menu));
     }
+}
+
+sub add_keybindings {
+    # same like in Merkaartor
+    $main::top->bind("<Control-D>" => sub {
+			 _require_BBBikeOsmUtil();
+			 BBBikeOsmUtil::mirror_and_plot_visible_area();
+		     });
+}
+
+sub remove_keybindings {
+    $main::top->bind("<Control-D>" => undef);
 }
 
 sub tracks_in_region {
@@ -1095,6 +1114,7 @@ sub gps_data_viewer {
 			       },
 			       -selectforeground => 'black',
 			       -selectbackground => 'green',
+			       -velocity => 'per_vehicle',
 			      )->pack(qw(-fill both -expand 1));
 
     {
@@ -1107,6 +1127,7 @@ sub gps_data_viewer {
 		       if (@wpts) {
 			   $gps_view->select_items(grep { defined $_ } $gps_view->find_items_by_wpts(@wpts));
 			   # XXX this is bad: dialog is modal and it's not possible to view all the selection
+			   # XXX also, at least LongDialog should be used here
 			   my $yn = $t->messageBox(-message => "Remove selected " . scalar(@wpts) . " item(s)?",
 						   -type => "YesNo");
 			   if (lc $yn eq 'yes') {

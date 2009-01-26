@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: SRTProgress.pm,v 1.10 2005/05/12 20:49:00 eserte Exp $
+# $Id: SRTProgress.pm,v 1.10 2005/05/12 20:49:00 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2003,2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2003,2005,2009 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,7 +25,7 @@ Construct Tk::Widget 'SRTProgress';
 sub ClassInit {
     my ($class,$mw) = @_;
     $class->SUPER::ClassInit($mw);
-    $mw->Tk::bind($class, "<Configure>", "Recenter");
+    $mw->Tk::bind($class, "<Configure>", "Refresh");
     $class;
 }
 
@@ -49,7 +49,7 @@ sub Populate {
        # InitGroup/FinishGroup pair!
        -grab       => ['PASSIVE', 'grab', 'Grab', 0],
       );
-    $w->Recenter;
+    $w->Refresh;
 }
 
 sub labelfont { # XXX no cget variant yet
@@ -58,11 +58,14 @@ sub labelfont { # XXX no cget variant yet
     $val;
 }
 
-sub Recenter {
+sub Refresh {
     my $w = shift;
     $w->{Width}  = $w->Width;
     $w->{Height} = $w->Height;
     $w->coords('label', $w->{'Width'}/2, $w->{'Height'}/2);
+    if (@{$w->{CurrentFrac} || []} && defined $w->{CurrentFrac}[-1]) {
+	$w->coords('bar', 0, 0, int($w->{Width}*$w->{CurrentFrac}[-1]), $w->{Height});
+    }
 }
 
 sub InitGroup {
@@ -96,6 +99,8 @@ sub Init {
 				     ? $args{'-visible'}
 				     : $w->cget(-visible)||0);
 
+    push @{$w->{'CurrentFrac'}}, undef;
+
     $w->{'Xpos'}    = 0 if !defined $w->{'Xpos'};
     $w->{'Forward'} = 1 if !defined $w->{'Forward'};
 
@@ -110,6 +115,7 @@ sub Init {
 sub Update {
     my($w, $frac, %args) = @_;
     $frac = 0 unless defined $frac;
+    $w->{CurrentFrac}[-1] = $frac;
     $w->coords('bar', 0, 0, int($w->{Width}*$frac), $w->{Height});
     $w->{'CurrentLabel'}[-1] = $args{'-label'} if exists $args{'-label'};
     my $text = $w->{'CurrentLabel'}[-1] .
@@ -123,6 +129,7 @@ sub Update {
 
 sub UpdateFloat {
     my $w = shift;
+    $w->{CurrentFrac}[-1] = undef;
     if ($w->{'Forward'}) {
 	if ($w->{'Xpos'}+2*$w->{'Height'} < $w->{'Width'}) {
 	    $w->{'Xpos'} += $w->{'Height'};
@@ -164,6 +171,7 @@ sub Finish {
     $w->coords('bar', 0, 0, 0, 0);
     pop @{$w->{'CurrentDependents'}};
     pop @{$w->{'CurrentLabel'}};
+    pop @{$w->{'CurrentFrac'}};
     pop @{$w->{'CurrentVisible'}};
     pop @{$w->{'HideDone'}};
     if (!$w->{Group} ||
@@ -291,7 +299,7 @@ Slaven Rezic <srezic@cpan.org>
 
 =head1 COPYRIGHT
 
-Copyright (c) 1999,2003,2005 Slaven Rezic. All rights reserved.
+Copyright (c) 1999,2003,2005,2009 Slaven Rezic. All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 

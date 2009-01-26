@@ -75,7 +75,7 @@ Mangerstr. (Potsdam)	1 -12064,-284 -12265,-418
 Rudolf-Breitscheid-Str.	1 -10446,-1947 -10360,-1934 -10235,-1916 -9986,-1882 -9735,-1845
 # ^^^
 Bendastr.	1 12689,6905 12702,6846
-Bendastr.	1 12793,6407 12779,6478 12756,6578 12743,6645 12715,6783 12702,6846
+Bendastr.	1 12793,6407 12779,6478 12756,6578 12743,6645 12726,6727 12722,6748 12715,6775 12702,6846
 Puschkin/Bulgarische	1 13829,9905 13884,9882 13976,9840 14193,9746 14310,9692 14780,9480 14819,9462 15383,9191 15561,8903 15591,8848 15383,8662 15166,8489
 #XXX del: Lennestr.	1:inwork 8395,7635 8416,7627 8458,7615 8525,7596 8559,7571
 Schönstedt/Karl-Marx-Str.	3 12649,8535 12540,8458 12582,8408 12598,8390
@@ -182,8 +182,8 @@ Kurfürstendamm	3nocross 2770,10024 2828,10040 2938,10071
 Kurfürstendamm	3nocross 3111,10116 3189,10141 3289,10174 3374,10201
 Eichkatzweg	1 925,9644 794,9472
 Zikadenweg	1 703,9538 835,9707 937,9841 1046,9989 1047,10002 1159,10149
-Oberhaardter Weg	1 742,8567 949,8405
-Gustav-Freytag-Str. (Grunewald)	1 878,8336 737,8474 727,8535 742,8567
+Oberhaardter Weg	1 765,8481 911,8374
+Gustav-Freytag-Str. (Grunewald)	1 834,8273 815,8283 748,8456 765,8481
 Schumannstr.	1 8581,13013 8628,13033 8703,13045 8963,13117
 Albrechtstr. (Mitte)	1 8963,13117 9001,13039 9046,12933 9106,12795
 Charitéstr.	1 8671,12945 8628,13033
@@ -274,7 +274,7 @@ Gabelberger Str./Frankfurter Allee	3 14451,12396 14381,12205 14427,12197
 Mainzer Str./Frankfurter Allee	3nocross 14381,12205 14427,12197 14488,12189
 Colbestr./Frankfurter Allee	3nocross 14488,12189 14523,12183 14621,12168
 Kinzigstr./Frankfurter Allee	3nocross 14523,12183 14621,12168 14702,12157
-Finowstr.+Weichselstr./Frankfurter Allee	3nocross 14702,12157 14840,12140 14919,12130 14994,12121
+Finowstr.+Weichselstr./Frankfurter Allee	3nocross 14702,12157 14854,12137 14919,12130 14994,12121
 Friedrichstr. (Straßenbahn)	3nocross 9215,13392 9236,13228 9245,13162 9251,13109
 Oranienburger Str. (Straßenbahnhaltestelle)	3nocross 9215,13392 9281,13374 9415,13315
 Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3nocross 5972,6756 5897,6799 5828,6839
@@ -407,10 +407,10 @@ Rudower Chaussee: Mittelstreifen	3nocross 15957,2330 15804,2512 15736,2593
 Freiertweg - Lichtenrader Damm	3 10827,467 10619,395 10660,293
 Glasbläserallee: Tore versperren die Durchfahrt, Radfahrer können passieren	2 14893,10359 14839,10271
 Hornstr.	1 8779,9851 8988,9783 8980,9751 8779,9812
-Hafenplatz	3 8698,10768 8604,10835 8644,10914
-Hafenplatz	3 8644,10914 8604,10835 8698,10768
-Hafenplatz	3 8483,10900 8604,10835 8698,10768
-Hafenplatz	3 8698,10768 8604,10835 8483,10900
+Hafenplatz	3 8698,10768 8628,10818 8659,10910
+Hafenplatz	3 8659,10910 8628,10818 8698,10768
+Hafenplatz	3 8483,10900 8628,10818 8698,10768
+Hafenplatz	3 8698,10768 8628,10818 8483,10900
 Askanischer Platz	1 8865,10974 8859,10939 8882,10905
 #: note: Luftbild
 Rosenthaler Weg: Straßenbahntrasse	3nocross 11271,22328 11383,22369 11583,22442
@@ -466,7 +466,7 @@ Sonnenallee: Mittelstreifen	3nocross 13277,8211 13459,8072 13474,8060
 #: by: tomask
 #: XXX: Nur die Existenz der Einbahnstraße für Autos wurde bestätigt, die genaue Lage ist noch unklar
 Bernkastler Str.	1 15334,16961 15208,16939 15015,16908 14923,16901 14923,16914
-Hermannstr./Rollbergstr.	3nocross 11933,8198 11960,8090 11979,8014
+Hermannstr./Rollbergstr.	3nocross 11933,8198 11963,8074 11979,8014
 Mittelstreifen	3nocross 7579,10183 7539,9970 7526,9791
 Schönhauser Allee: Mittelstreifen	3nocross 10793,13785 10832,13877 10906,13950
 Straßenbahntrasse	3nocross 21796,4517 21775,4470 21773,4440
@@ -491,3 +491,6 @@ Hardenbergstr./Jebensstr.: Mittelstreifen	3nocross 5542,11075 5459,11135 5268,11
 Alt-Moabit/Calvinstr.: Mittelstreifen	3nocross 6757,13112 6860,13093 6966,13075
 Krautstr. - Kleine Markusstr.: Barriere	3 11967,12042 11937,12127 11958,12195
 Spreewaldplatz	1 12243,10274 12292,10374 12274,10436
+Am Juliusturm/Zitadelle: Mittelstreifen	3nocross -2793,14505 -2646,14525 -2597,14532
+#: note: Luftbild:
+Thielallee: Mittelstreifen	3nocross 2585,5696 2556,5575 2444,5303

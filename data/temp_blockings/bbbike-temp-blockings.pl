@@ -781,9 +781,9 @@ userdel	2 12180,7387 12122,7553
 userdel	2 11920,8252 11931,8206 11933,8198
 userdel	2 11920,8252 11898,8362
 userdel	2 12041,7788 12055,7751 12075,7696
-userdel	2 11979,8014 11960,8090
+userdel	2 11979,8014 11963,8074
 userdel	2 11979,8014 12001,7937 12025,7852
-userdel	2 11933,8198 11960,8090
+userdel	2 11933,8198 11963,8074
 userdel	2 12075,7696 12090,7651 12122,7553
 EOF
      },
@@ -1327,7 +1327,7 @@ EOF
        text  => 'Schulze-Boysen-Str. (Lichtenberg) in beiden Richtungen zwischen Wiesenweg und Pfarrstr. Kranarbeiten, Straße vollständig gesperrt (bis 13.12.2004 ca. 5:00 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 15458,11342 15480,11392
+userdel	2 15477,11338 15498,11380
 EOF
      },
      { from  => 1105225200, # 2005-01-09 00:00
@@ -1904,7 +1904,7 @@ EOF
        text  => 'Rosenfelder Straße Richtung Frankfurter Allee zwischen Skandinavische Straße und Frankfurter Allee Baustelle, Straße gesperrt, Dauer: 09.05.2005, 09.00 Uhr bis 09.06.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 17363,11972 17306,11866 17249,11802
+userdel	q4; 17363,11972 17306,11866 17240,11791
 EOF
      },
      { from  => 1116280800, # 2005-05-17 00:00
@@ -2983,8 +2983,8 @@ userdel	2 12041,7788 12055,7751
 userdel	2 12041,7788 12025,7852
 userdel	2 12001,7937 12025,7852
 userdel	2 12001,7937 11979,8014
-userdel	2 11979,8014 11960,8090
-userdel	2 11933,8198 11960,8090
+userdel	2 11979,8014 11963,8074
+userdel	2 11933,8198 11963,8074
 userdel	2 12055,7751 12075,7696
 EOF
      },
@@ -5723,7 +5723,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_83350',
        data  => <<EOF,
-userdel	q4::inwork; 12975,13266 12909,13231 12808,13181 12727,13159 12582,13128 12386,13085
+userdel	q4::inwork; 12976,13285 12878,13229 12786,13185 12685,13135 12585,13118 12386,13085
 EOF
      },
      { from  => 1158618023, # 2006-09-19 00:20
@@ -6153,7 +6153,7 @@ EOF
        text  => 'Ehrlichstraße zwischen Trautenauerstraße und Blockdammweg gesperrt. Dauer 07.10.2006 06:00 Uhr bis 20.10.2006 18:00 Uhr. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 17729,8850 17879,8773 18080,8626 18147,8583
+userdel	2::inwork 17729,8850 17879,8773 17929,8737 18005,8681 18080,8626 18147,8583
 EOF
      },
      { from  => 1160107200, # 2006-10-06 06:00
@@ -6700,7 +6700,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004587',
        data  => <<EOF,
-userdel	q4::inwork; 15361,12071 15294,11964 15248,11880 15209,11804 15101,11590
+userdel	q4::inwork; 15361,12071 15294,11964 15248,11880 15202,11789 15101,11590
 EOF
      },
      { from  => undef, # 
@@ -6965,7 +6965,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_006669',
        data  => <<EOF,
-userdel	q4::inwork 15209,11804 15248,11880
+userdel	q4::inwork 15202,11789 15248,11880
 EOF
      },
      { from  => 1170370800, # 2007-02-02 00:00
@@ -7131,7 +7131,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004793',
        data  => <<EOF,
-userdel	q4::inwork 5414,1304 5560,1278 5740,1227
+userdel	q4::inwork 5414,1304 5585,1275 5740,1227
 EOF
      },
      { from  => 1172646005, # 2007-02-28 08:00
@@ -8742,7 +8742,7 @@ EOF
        source_id => 'IM_005827',
        data  => <<EOF,
 userdel	2::inwork 297,6541 441,6435
-userdel	2::inwork 1535,5155 1506,5169 1399,5208 1361,5228 1212,5353 1086,5491 1051,5525 990,5581 910,5654 894,5829 884,5974 869,6085 736,6217
+userdel	2::inwork 1535,5155 1506,5169 1385,5214 1361,5228 1212,5353 1086,5491 1051,5525 990,5581 910,5654 894,5829 884,5974 869,6085 736,6217
 userdel	2::inwork 486,6404 605,6345
 userdel	2::inwork -130,6694 218,6571
 EOF
@@ -9168,7 +9168,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006151',
        data  => <<EOF,
-userdel	1::inwork 14988,11130 15051,11023 15085,10956 15113,10916
+userdel	1::inwork 14988,11130 15060,11006 15085,10956 15113,10916 15144,10905
 EOF
      },
      { from  => 1185055200, # 2007-07-22 00:00
@@ -9370,7 +9370,7 @@ EOF
        text  => 'der Fußweg von der Buchberger Str. zum S-Bahnhof Nöldnerplatz ist z.Zt. voll gesperrt (Bauzaun)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 15779,10970 15735,11201 15731,11270
+userdel	2::inwork 15805,10949 15752,11115 15708,11193 15731,11270
 EOF
      },
      { from  => 1186266363, # 2007-08-05 00:26
@@ -11744,11 +11744,11 @@ userdel auto	3 9183,12076 9164,12172 9373,12197
 userdel auto	3 6540,11754 6778,11742 7073,11798
 userdel auto	3 7281,10418 7245,10297 7215,10203
 userdel auto	3 9487,12263 9475,12365 9465,12460
-userdel auto	3 7534,10850 7820,10768 7976,10710
+userdel auto	3 7534,10850 7820,10768 7963,10716
 userdel auto	3 6681,10959 6824,10904 6918,10854
 userdel auto	3 6980,11583 6809,11570 6524,11583
 userdel auto	3 7215,10203 7245,10297 7281,10418
-userdel auto	3 7976,10710 7820,10768 7534,10850
+userdel auto	3 7963,10716 7820,10768 7534,10850
 userdel auto	3 7873,11142 8000,11137 8102,11099
 userdel auto	3 6732,11106 6873,11011 7002,11034
 userdel auto	3 6607,10801 6740,10755 6972,10665

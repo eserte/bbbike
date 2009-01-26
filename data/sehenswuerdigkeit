@@ -1,7 +1,7 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title.de: Sehenswürdigkeiten und andere wichtige Gebäude
 #: title.en: Sights and points of interest
-#: version: $Id: sehenswuerdigkeit-orig,v 4.109 2008/12/31 17:36:33 eserte Exp eserte $
+#: version: $Id: sehenswuerdigkeit-orig,v 4.110 2009/01/24 17:54:42 eserte Exp eserte $
 #:
 #: section: Berlin vvv
 Brandenburger Tor	IMG:sehenswuerdigkeit_img/brandenburger_tor|ANCHOR:s 8593,12243
@@ -128,13 +128,13 @@ Schloß Pfaueninsel	F:SW|IMG:sehenswuerdigkeit_img/schloss_pfaueninsel -8740,2450
 Meierei Pfaueninsel	SW -7926,3387
 Kavalierhaus Pfaueninsel	SW -8182,2836
 Forsthaus Nikolskoe	F:SW -8866,1633 -8843,1604 -8821,1621 -8844,1645
-Zitadelle	F:SW -2769,14809 -2779,14843 -2804,14842 -2839,14912 -2752,14910 -2743,14899 -2763,14891 -2756,14855 -2769,14848 -2763,14812
 Zitadelle	F:SW -2741,14877 -2737,14860 -2635,14884 -2640,14900
-Zitadelle	F:SW -2761,14840 -2745,14844 -2727,14791 -2745,14784
+Zitadelle	F:SW -2761,14840 -2745,14844 -2720,14760 -2736,14756
 Zitadelle	F:SW -2619,14886 -2604,14889 -2572,14785 -2583,14781
 Zitadelle	F:SW -2617,14839 -2601,14787 -2647,14776 -2652,14794 -2627,14801 -2633,14834
 Zitadelle	F:SW -2647,14758 -2643,14747 -2593,14760 -2596,14771
-Zitadelle	F:SW -2724,14725 -2720,14716 -2698,14731 -2702,14737
+Zitadelle (Kommandantenhaus)	F:SW -2660,14729 -2685,14723 -2710,14709 -2719,14705 -2729,14702 -2727,14693 -2657,14710 -2660,14729
+Zitadelle (Palas)	F:SW -2719,14705 -2728,14726 -2706,14742 -2696,14727 -2713,14713 -2710,14709 -2719,14705
 Juliusturm	SW -2732,14717
 Rathaus Spandau	F:SW -3525,14082 -3452,14171 -3413,14142 -3484,14055
 Villa Borsig	F:SW 477,19900 472,19885 443,19889 447,19906
@@ -351,7 +351,7 @@ Depothalle des Deutschen Technikmuseums (Schnelltriebwagen-Halle)	F:SW|IMG:museu
 Halle 1 (Deutsches Technikmuseum)	F:SW|IMG:museum 8324,8864 8302,8864 8302,8952 8323,8952
 Haltestelle Depot DTM	F:SW 8334,8910
 St.-Michael-Kirche	SW|IMG:church 11448,11285
-St.-Nikolai-Kirche (Spandau)	SW|IMG:church -3165,14523
+St.-Nikolai-Kirche (Spandau)	SW|IMG:church -3166,14495
 Ehem. Wasserturm am Fichtenberg	SW 4146,5758
 AEG-Montagehalle	F:SW 9046,14910 9095,14937 9008,15095 8954,15071
 AEG-Turbinenhalle	F:SW 4972,13482 4971,13627 4926,13625 4928,13482
@@ -543,20 +543,20 @@ Parkklinik Weißensee	F:SW|IMG:hospital 13523,16759 13575,16691 13502,16632 13449
 #: section: ^^^
 #: section: Potsdam vvv
 Schloß Babelsberg	F:SW -10482,-195 -10488,-242 -10515,-242 -10511,-193
-Neues Palais	SW -15737,-1011
+Neues Palais	SW -15723,-970
 Schloß Charlottenhof	SW -15039,-1590
 Römische Bäder	SW -14923,-1387
 #: alias: Chinesisches Teehaus
 Chinesisches Haus	IMG:sehenswuerdigkeit_img/chinesisches_haus -14650,-1071
-Communs (Universität Potsdam)	SW -15950,-1032
+Communs (Universität Potsdam)	SW -16009,-999
 Universität Potsdam	SW -8138,-1789
 Kaiserbahnhof	SW -15925,-1565
-Schloß Sanssouci	IMG:sehenswuerdigkeit_img/sanssouci -14221,-686
+Schloß Sanssouci	IMG:sehenswuerdigkeit_img/sanssouci -14202,-619
 Nikolaikirche (Potsdam)	SW|IMG:church -12650,-1489
 Schloß Cecilienhof	SW -12076,1047
 Ruinenberg (Potsdam)	SW -14203,-45
-Historische Mühle (Potsdam)	SW -14425,-643
-Orangerie (Sanssouci)	SW -14861,-580
+Historische Mühle (Potsdam)	SW -14389,-632
+Orangerie (Sanssouci)	SW -14793,-521
 Belvedere (Sanssouci)	SW -15549,-305
 Drachenhaus (Sanssouci)	SW -15398,-433
 Brandenburger Tor (Potsdam)	F:SW -13556,-1107
@@ -603,13 +603,13 @@ Landtag (Potsdam)	SW -12587,-2495
 Pumpwerk (Moschee)	SW -13793,-1540
 Hans-Otto-Theater	SW|IMG:theater -11695,-703
 Hans-Marchwitza-Haus	SW -12580,-1502
-Filmmuseum Potsdam	SW|IMG:museum -12775,-1618
+Filmmuseum Potsdam	SW|IMG:museum -12799,-1601
 #: alias: Villa am Erlenkamp
 Truman-Villa (Babelsberg)	SW -8490,-1403
 Biosphäre	SW -13484,1093
 Schloß Lindstedt	SW -16106,-16
 Friedrichskirche	SW|IMG:church -10296,-1673
-Erlöserkirche	SW|IMG:church -14357,-1535
+Erlöserkirche	SW|IMG:church -14351,-1557
 Stalin-Villa (Babelsberg)	SW -9392,-611
 Churchill-Villa (Babelsberg)	SW -8760,-1014
 Stern-Center	F:Shop -7704,-4330 -7638,-4330 -7599,-4364 -7566,-4330 -7502,-4328 -7504,-4262 -7466,-4224 -7505,-4186 -7511,-4124 -7572,-4122 -7611,-4092 -7647,-4129 -7699,-4127 -7699,-4183 -7736,-4229 -7702,-4267

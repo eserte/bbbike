@@ -146,6 +146,14 @@ foreach my $rec (@{ $plz->{Data} }) {
 		      |Flugplatz[ ]Gatow
 		      |Ruprecht
 		      |Triftweg
+		      |Straße[ ]1[ ]\(Wiesengrund\) # Karlshorst
+		      |Behelfsheimsiedlung # Name der Siedlung zwischen Waldowallee und Köpenicker Allee
+		      |Am[ ]Elektrizitätswerk # nirgendwo gefunden
+		      |Am[ ]Hochwald # nirgendwo gefunden
+		      |Erholung # nicht in Karlshorst gefunden
+		      |Gartenfreunde[ ]Bahnhof[ ]Wuhlheide # nirgendwo gefunden
+		      |Kleckersdorfer[ ]Weg # nirgendwo gefunden
+		      |Stallwiesen # nirgendwo gefunden
 		      )$}x; # decide later (non-strassen, e.g. brunnels or parks) XXX
     if (exists $seen_street_with_bezirk{$str}->{$bezirk}) {
     } elsif (exists $seen_street{$str}) {
