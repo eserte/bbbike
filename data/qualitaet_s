@@ -204,7 +204,7 @@ Revaler Str.: Kopfsteinpflaster, Straßenbahn	Q2 13588,11490 13473,11456
 Prenzlauer Berg: Asphalt	Q0 11723,13630 11538,13691 11257,13647
 Alte Jakobstr.: Kopfsteinpflaster	Q2 10244,11160 10436,11344
 Ackerstr.: Kopfsteinpflaster	Q2 9439,14368 9400,14400 9375,14419 9279,14495 9197,14562 9048,14681 8953,14758 8741,14928
-Ackerstr.: Kopfsteinpflaster	Q2 9737,14126 9627,14229
+Ackerstr.: Kopfsteinpflaster	Q2 9750,14132 9627,14229
 Gartenstr.: Kopfsteinpflaster	Q2 8870,14637 8686,14934 8570,15107
 Liesenstr.: Kopfsteinpflaster, OK	Q1 8686,14934 8562,14798
 Am Kupfergraben: teilweise schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3 9529,12925 9614,12893 9661,12876
@@ -548,7 +548,7 @@ Kleine Rosenthaler Str.: mäßiger, teilweise auch schlechter Asphalt	Q2 10310,136
 Magazinstr.: Kopfsteinpflaster, OK	Q1 11558,12588 11323,12484
 Saarbrücker Str.: Asphalt	Q0 10906,13950 10924,13940 10969,13914 11060,13865 11257,13647
 Heinrich-Roller-Str.: Kopfsteinpflaster	Q2 11435,14023 11616,13911
-Corinthstr.: Kopfsteinpflaster	Q2 14608,10409 14439,10496
+Corinthstr.: Kopfsteinpflaster	Q2 14608,10409 14447,10491
 (zum Mergenthalerring): holpriger Sandweg	Q2 14698,8371 14679,8349 14563,8243
 (zum Mergenthalerring): etwas sandig	Q2 14458,8456 14560,8528
 Nordufer Flughafensee: Waldweg, OK	Q1 3108,18083 2801,18126 2775,18160 2239,18225
@@ -983,7 +983,7 @@ Forster Str.: teilweise Kopfsteinpflaster, teilweise Asphalt	Q1 12286,9739 12398
 Liegnitzer Str.: Kopfsteinpflaster	Q2 12439,9660 12556,9862
 Dirschauer Str.: Kopfsteinpflaster	Q2 14032,11570 13970,11366
 Laskerstr.: mäßiger Asphalt	Q1 14675,10693 14541,10735
-Bödikerstr.: Kopfsteinpflaster	Q2 14541,10735 14490,10610 14439,10496 14396,10345
+Bödikerstr.: Kopfsteinpflaster	Q2 14541,10735 14490,10610 14447,10491 14405,10340
 Rudolfstr.: Kopfsteinpflaster	Q2 13520,11097 13713,11025 13793,10985 13886,10939 14026,10869
 Danneckerstr.: Kopfsteinpflaster	Q2 13779,10642 13854,10858 13886,10939
 Lehmbruckstr.: Kopfsteinpflaster	Q2 13690,10715 13755,10896 13793,10985
@@ -998,6 +998,8 @@ Feilnerstr.: teilweise gutes Kopfsteinpflaster	Q1 9973,11150 10163,11070
 Hobrechtstr.: Kopfsteinpflaster	Q2 11998,8872 12003,9105
 Hobrechtstr.: gutes Kopfsteinpflaster	Q1 12003,9105 11993,9211
 Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2 11993,9211 11954,9415 11934,9538 11918,9659 11897,9754
+Sanderstr.: Asphalt	Q0 11710,9628 11918,9659
+Sanderstr.: Asphalt mit einigen Schäden	Q0 11918,9659 12081,9680
 Biebricher Str.: mäßiges Kopfsteinpflaster	Q2 11884,8492 12057,8529
 Mainzer Str.: schlechtes bis mäßiges Kopfsteinpflaster (auch bergab nur 15 km/h)	Q3 12063,8826 12057,8529 12068,8409
 Mainzer Str.: mäßiges Kopfsteinpflaster (?)	Q2 12068,8409 12104,8299 12147,8117
@@ -1300,7 +1302,7 @@ Kollwitzplatz: Kopfsteinpflaster	Q2 11273,14495 11317,14564
 Ekhofplatz: Kopfsteinpflaster	Q2 23343,1454 23382,1429 23360,1390 23325,1418 23343,1454
 Ekhofstr.: Kopfsteinpflaster	Q2 23158,1379 23251,1401 23325,1418
 Ekhofstr.: Kopfsteinpflaster	Q2 23382,1429 23464,1449 23562,1470
-Pappelplatz (Mitte): alte Berliner Gehwegplatten	Q1 9737,14126 9663,14036
+Pappelplatz (Mitte): alte Berliner Gehwegplatten	Q1 9750,14132 9663,14036
 Am Krögel: kleinteiliges Kopfsteinpflaster	Q1 10766,12184 10772,12288
 Spinatweg: Betonstraße	Q1 20915,18601 20921,18479
 Schwarzwurzelstr.: Betonstraße	Q1 21009,18503 20921,18479 20814,18419 20759,18390 20654,18336 20544,18279 20452,18273 20407,18273 20289,18274 20186,18238
@@ -2500,7 +2502,7 @@ Güllweg: mäßiges Kopfsteinpflaster	Q2 10128,19110 10068,19276 10059,19304 10018,
 Buchholzer Str.: Asphalt	Q0 10930,15522 11055,15504 11183,15485
 Gneiststr.: Kopfsteinpflaster	Q2 11119,15385 11040,15398 10917,15418
 Anne-Frank-Str.: Asphalt	Q0 19510,549 19863,425
-Strelitzer Str.: Kopfsteinpflaster	Q2 9864,14181 9800,14306 9679,14511 9621,14624
+Strelitzer Str.: Kopfsteinpflaster	Q2 9856,14204 9800,14306 9679,14511 9621,14624
 Nimrodstr.: schlechtes Kopfsteinpflaster	Q3 4581,22106 4464,22014 4355,21967 4098,21809 3818,21603 3670,21496
 Neuchateller Str.: schlechter Sandweg	Q3 3898,4477 4013,4547
 Neuchateller Str.: Kopfsteinpflaster	Q2 4013,4547 4184,4651 4517,4853
@@ -5103,7 +5105,7 @@ Gasteiner Str.: grobes Kopfsteinpflaster	Q3 4920,9000 4715,8977
 Schrammstr.: grobes Kopfsteinpflaster	Q3 4960,8440 4958,8344
 Eislebender Str. (Wilmersdorf, Charlottenburg): Kopfsteinpflaster	Q2 5686,10468 5578,10529
 Los-Angeles-Platz: Kopfsteinpflaster	Q1 5681,10696 5822,10609
-Elisabethkirchstr.: neues Kopfsteinpflaster	Q1 9937,14080 9891,14194 9864,14181 9737,14126
+Elisabethkirchstr.: neues Kopfsteinpflaster	Q1 9937,14080 9901,14197 9856,14204 9769,14175 9750,14132
 Greifenhagener Str.: Kopfsteinpflaster	Q1 11140,15859 11162,15903
 Gethsemanestr.: Asphalt mit Löchern und Flicken	Q2 11192,15721 11229,15810 11140,15859
 Zehdenicker Str.: Kopfsteinpflaster	Q2 10599,13775 10480,13871
@@ -5365,7 +5367,7 @@ Kernhofer Str.: Kopfsteinpflaster	Q2 15424,11087 15369,10921
 Kernhofer Str.: glattes Pflaster	Q0 15369,10921 15353,10870
 Eichendorffstr.: Kopfsteinpflaster	Q2 9279,13710 9231,13865 9203,13953
 Novalisstr.: Kopfsteinpflaster	Q2 9340,13510 9279,13710
-Philippstr.: Asphalt	Q1 8894,13486 8804,13459
+Philippstr.: Asphalt	Q1 8894,13486 8828,13434
 Schlegelstr.: Asphalt	Q0 9303,13887 9231,13865 9020,13723
 Claire-Waldoff-Str.: Asphalt	Q0 9236,13228 9114,13217
 Am Zirkus: Asphalt	Q1 9118,13070 9145,13020
@@ -5376,7 +5378,7 @@ Am Zirkus: Asphalt	Q1 9089,13004 9145,13020 9192,13032 9226,12909
 (südliches Spreeufer - Spreebogenpark): wassergebundene Decke	Q1 8427,12871 8341,12911
 Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8110,13042
 (Otto-Bismark-Str. - Rahel-Hirsch-Str.): wassergebundene Decke	Q1 8120,12756 8124,12840 8116,12938
-(Parkplatz Charité): Asphalt, Schotter	Q1 8804,13459 8777,13414 8778,13368 8665,13353
+(Parkplatz Charité): Asphalt, Schotter	Q1 8828,13434 8808,13380 8778,13368 8665,13353
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8675,13580 8668,13645 8660,13707
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8668,13645 8626,13641
 Kleine Hamburger Str.: Asphalt mit Löchern und Ausbesserungen	Q2 9668,13629 9752,13575 9793,13549

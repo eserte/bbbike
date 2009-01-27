@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeOsmUtil.pm,v 1.14 2009/01/25 21:03:27 eserte Exp eserte $
+# $Id: BBBikeOsmUtil.pm,v 1.15 2009/01/27 19:11:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2008 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($osm_layer $osm_layer_area $osm_layer_landuse $osm_layer_cover
 	    %images @cover_grids %seen_grids $last_osm_file $defer_restacking
@@ -72,7 +72,7 @@ sub mirror_and_plot_visible_area {
 	    for my $file (@osm_files) {
 		$file_i++;
 		$main::progress->Update($file_i/@osm_files);
-		if (-M $file > 0.5) { # mirror at most every 12 hours once
+		if (do { local $^T = time; -M $file > 0.5 }) { # mirror at most every 12 hours once
 		    if ($file !~ $osm_download_file_qr) {
 			main::status_message("File '$file' does not have the expected pattern '$osm_download_file_qr'", "die");
 		    }
@@ -289,6 +289,8 @@ sub plot_osm_files {
 	    } elsif (exists $tag{'power'}) {
 		$item_args{'-dash'} = '.   ';
 		$item_args{'-width'} = 1;
+	    } elsif (exists $tag{'addr:interpolation'}) {
+		$item_args{'-dash'} = '. ';
 	    } elsif (exists $tag{'tunnel'}) {
 		$item_args{'-dash'} = [10,2];
 	    } elsif (exists $tag{'highway'} && $tag{'highway'} =~ m{^(footway|pedestrian|track|path|service|bridleway)$}) {
@@ -347,8 +349,14 @@ sub plot_osm_files {
 				      -tags => [$tag{landuse} ? $osm_layer_landuse : $osm_layer_area, @tags],
 				     );
 		} else {
+		    my $color = '#c05000';
+		    if ((exists $tag{'natural'} && $tag{'natural'} eq 'water') ||
+			(exists $tag{'waterway'})
+		       ) {
+			$color = '#6060a0';
+		    }
 		    $c->createLine(@coordlist,
-				   -fill => '#c05000',
+				   -fill => $color,
 				   -width => 2,
 				   %item_args,
 				   %line_item_args,

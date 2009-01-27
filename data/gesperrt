@@ -628,9 +628,9 @@ Cyclopstr. -> Oranienburger Str.: Mittelstreifen	3::igndisp 5297,21243 5357,2119
 Oranienburger Str. -> Cyclopstr.: Mittelstreifen	3::igndisp 5391,21003 5357,21199 5297,21243
 Betonblöcke	3nocross::ignrte 9777,10719 9805,10791 9935,11067
 Am Berlin Museum -> Lindenstr.: Betonblöcke	3::igndisp 10025,10755 9805,10791 9777,10719
-Am Berlin Museum -> Markgrafenstr.: Betonblöcke	3::igndisp 10025,10755 9805,10791 9780,10970
-Markgrafenstr. -> Am Berlin Museum: Betonblöcke	3::igndisp 9780,10970 9805,10791 10025,10755
-Markgrafenstr. -> Lindenstr.: Betonblöcke	3::igndisp 9780,10970 9805,10791 9935,11067
+Am Berlin Museum -> Markgrafenstr.: Betonblöcke	3::igndisp 10025,10755 9805,10791 9786,10971
+Markgrafenstr. -> Am Berlin Museum: Betonblöcke	3::igndisp 9786,10971 9805,10791 10025,10755
+Markgrafenstr. -> Lindenstr.: Betonblöcke	3::igndisp 9786,10971 9805,10791 9935,11067
 Lindenstr. -> Am Berlin Museum: Betonblöcke	3::igndisp 9935,11067 9805,10791 10025,10755
 Straßenbahnhaltestelle	3nocross::ignrte 9215,13392 9281,13374 9415,13315
 Oranienburger Str. -> Linienstr.: Straßenbahnhaltestelle	3::igndisp 9215,13392 9281,13374 9296,13397
@@ -1124,9 +1124,9 @@ Naglerstr. -> Stralauer Allee: unbequemes Abbiegen	3::igndisp 13575,10963 13483,
 unbequemes Abbiegen	3nocross::ignrte 13596,10722 13678,10685 13779,10642
 Lehmbruckstr. -> Stralauer Allee: unbequemes Abbiegen	3::igndisp 13690,10715 13678,10685 13779,10642
 Stralauer Allee -> Lehmbruckstr.: unbequemes Abbiegen	3::igndisp 13596,10722 13678,10685 13690,10715
-unbequem passierbare Straße	3nocross::ignrte 14210,10437 14396,10345 14558,10264
-Bödikerstr. -> Stralauer Allee: unbequem passierbare Straße	3::igndisp 14439,10496 14396,10345 14558,10264
-Stralauer Allee -> Bödikerstr.: unbequem passierbare Straße	3::igndisp 14210,10437 14396,10345 14439,10496
+unbequem passierbare Straße	3nocross::ignrte 14222,10430 14405,10340 14558,10264
+Bödikerstr. -> Stralauer Allee: unbequem passierbare Straße	3::igndisp 14447,10491 14405,10340 14558,10264
+Stralauer Allee -> Bödikerstr.: unbequem passierbare Straße	3::igndisp 14222,10430 14405,10340 14447,10491
 unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross::ignrte 12630,8722 12742,8635 12772,8612
 Sonnenallee -> Schönstedtstr.: unbequemes Passieren des Mittelstreifens (parkende Autos)	3::igndisp 12772,8612 12742,8635 12649,8535
 Schönstedtstr. -> Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3::igndisp 12649,8535 12742,8635 12630,8722

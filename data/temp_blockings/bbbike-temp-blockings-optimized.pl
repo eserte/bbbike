@@ -271,7 +271,15 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1246485599,
+         'text' => 'Bauarbeiten am nordwestlichen Bereich der Elsenbrücke bis Mitte 2009; kein Zugang zum Spreeufer. ',
+         'from' => 1199574000,
+         'id' => 1322,
+         'data' => 'userdel	2::inwork 14383,10036 14405,10027
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -676,6 +684,36 @@ push @temp_blocking,
          'data' => 'userdel	q4::inwork 26609,-7136 26700,-7334 26790,-7918 26749,-8475
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'source_id' => 'IM_009603',
+         'until' => 1252965600,
+         'text' => 'Königsallee (Wilmersdorf) stadtauswärts zwischen Schinkelstr. und Lynarstr. Baustelle, Fahrtrichtung gesperrt (aber der Radweg ist möglicherweise noch nutzbar) (Ende ca. Mitte 09.2009) ',
+         'from' => 1233001614,
+         'id' => 1560,
+         'data' => 'userdel	1::inwork 2186,9612 2122,9539 2046,9429 1932,9263
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_008991',
+         'until' => 1235861999,
+         'text' => 'Ruhlsdorfer Str. (Ruhlsdorf/Teltow) Zwischen Ruhlsdorfer Platz und Schenkendorfer Weg Fahrtrichtung gesperrt, Richtung: Süden (bis Ende 02.2009)',
+         'from' => 1233088186,
+         'id' => 1561,
+         'data' => 'userdel	1::inwork 1137,-1989 956,-2890
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1257030000,
+         'text' => 'B 273 Oranienb.-, Gartenstr., Lindenpl., Berl.Str. OD Nauen Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 05.01.2009-31.10.2009 ',
+         'from' => 1231023600,
+         'id' => 1562,
+         'data' => 'userdel	1::inwork -25441,21563 -25466,21523 -25542,21416
+',
+         'type' => 'gesperrt'
        }
      
 );

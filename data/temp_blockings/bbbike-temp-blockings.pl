@@ -727,7 +727,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1 9383,13978 9224,14169
-userdel	1 9400,14400 9439,14368 9627,14229 9737,14126 9810,14066
+userdel	1 9400,14400 9439,14368 9627,14229 9750,14132 9810,14066
 EOF
      },
      { from  => 1093928400, # 2004-08-31 07:00
@@ -4867,7 +4867,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_77040_COPY_1',
        data  => <<EOF,
-userdel	q4::inwork 14439,10496 14608,10409
+userdel	q4::inwork 14447,10491 14608,10409
 EOF
      },
      { from  => 1150754400, # 2006-06-20 00:00
@@ -11133,8 +11133,8 @@ userdel	2::inwork -27053,82717 -27141,82696 -27184,82772 -27346,82842
 EOF
      },
      { from  => 1199574000, # 2008-01-06 00:00
-       until => Time::Local::timelocal(reverse(2008-1900,10-1,31,23,59,59)), # 1222811999, # 2008-09-30 23:59
-       text  => 'Bauarbeiten am nordwestlichen Bereich der Elsenbrücke von 7. Januar 2008 bis Oktober 2008; kein Zugang zum Spreeufer. ',
+       until => Time::Local::timelocal(reverse(2009-1900,7-1,1,23,59,59)), # 1222811999, # 2008-09-30 23:59
+       text  => 'Bauarbeiten am nordwestlichen Bereich der Elsenbrücke bis Mitte 2009; kein Zugang zum Spreeufer. ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 14383,10036 14405,10027
@@ -13210,6 +13210,32 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 55431,69759 55318,70278
+EOF
+     },
+     { from  => 1233001614, # 2009-01-26 21:26
+       until => 1252965600, # 2009-09-15 00:00
+       text  => 'Königsallee (Wilmersdorf) stadtauswärts zwischen Schinkelstr. und Lynarstr. Baustelle, Fahrtrichtung gesperrt (aber der Radweg ist möglicherweise noch nutzbar) (Ende ca. Mitte 09.2009) ',
+       type  => 'gesperrt',
+       source_id => 'IM_009603',
+       data  => <<EOF,
+userdel	1::inwork 2186,9612 2122,9539 2046,9429 1932,9263
+EOF
+     },
+     { from  => 1233088186, # 2009-01-27 21:29
+       until => 1235861999, # 2009-02-28 23:59
+       text  => 'Ruhlsdorfer Str. (Ruhlsdorf/Teltow) Zwischen Ruhlsdorfer Platz und Schenkendorfer Weg Fahrtrichtung gesperrt, Richtung: Süden (bis Ende 02.2009)',
+       type  => 'gesperrt',
+       source_id => 'IM_008991',
+       data  => <<EOF,
+userdel	1::inwork 1137,-1989 956,-2890
+EOF
+     },
+     { from  => 1231023600, # 2009-01-04 00:00
+       until => 1257030000, # 2009-11-01 00:00
+       text  => 'B 273 Oranienb.-, Gartenstr., Lindenpl., Berl.Str. OD Nauen Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 05.01.2009-31.10.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork -25441,21563 -25466,21523 -25542,21416
 EOF
      },
     );
