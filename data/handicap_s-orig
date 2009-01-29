@@ -230,6 +230,7 @@ Barsekowstr.: Fuﬂg‰nger	q1 5344,4672 5417,4647 5476,4626 5589,4617
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5797,4846 5826,4819 5909,4798 5945,4828 6018,4850
 Dieffenbach.: Bodenschwellen	q1 11141,9732 11346,9655 11541,9576
 Schˆnleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
+Hoffmannstr.: Bodenschwellen	q1 14289,9870 14076,10011
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12212,10440 12172,10585
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12328,10442 12274,10612
 (Gr¸nanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Fuﬂg‰nger	q2 17678,18171 17703,17990
@@ -432,6 +433,8 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Aldi/Getr‰nke-Hoffmann-Parkplatz): Parkplatz	q1 13208,11658 13186,11692 13173,11788
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fuﬂg‰nger	q3 11236,11508 11170,11558
 (Entlang des Stadtbahnviadukts): Bordsteine, Fuﬂg‰nger	q2 11966,11832 12132,11788
+(Maybachufer - Weigandufer): Radfahren nicht erlaubt, ggfs. schieben	q3 12851,9309 12907,9073
+(Parkplatz CharitÈ): Fuﬂg‰nger, parkende Autos	q1 8828,13434 8808,13380 8778,13368 8665,13353
 ######################### User Contributions #################################
 #: by: Steini
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
@@ -699,10 +702,10 @@ Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11600,12857 11589,12768
 (Berolinastr.): Fuﬂg‰nger	q1 11844,12926 11885,12905 11952,12871
 (Berlolinastr.): Fuﬂg‰nger	q1 11844,12926 11885,12905 11906,12947 11921,12990 11983,12949
-(Berolinastr.): Fuﬂg‰nger	q1 11921,12990 11858,13029
+(Berolinastr.): Fuﬂg‰nger	q1 11921,12990 11865,13027
 (Berolinastr.): Fuﬂg‰nger	q1 11815,13045 11719,13088
-(Berolinastr.): Weg am Spielplatz vorbei	q2 11858,13029 11815,13045
-(Berolinastr. - Mollstr.): Fuﬂg‰nger	q1 11858,13029 11863,13053 11867,13076
+(Berolinastr.): Weg am Spielplatz vorbei	q2 11865,13027 11815,13045
+(Berolinastr. - Mollstr.): Fuﬂg‰nger	q1 11865,13027 11874,13048 11881,13072
 (Berolinastr. - Mollstr.): Fuﬂg‰nger	q1 11608,12985 11681,13161
 (Lichtenberger Str.): Fuﬂg‰nger	q1 12054,12903 12039,12675
 (Verbindungsweg): Fuﬂg‰nger	q1 11660,13457 11711,13416
@@ -760,8 +763,8 @@ Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5347,
 (Zufahrt zur Kolonie Hohenzollerndamm): Fuﬂg‰nger, Poller	q2 3775,8771 3868,8759
 Apeldorner Weg: Fuﬂg‰nger	q1 3848,8689 3868,8759 3932,8989
 M¸nstersche Str.: Fuﬂg‰nger	q2 3763,9642 3699,9613
-(Hoffmannstr. - Puschkinallee): Fuﬂg‰nger	q1 14058,10012 13976,9840
-(Hoffmannstr. - Uferweg an den Treptowers): Fuﬂg‰nger	q1 14058,10012 14111,10169
+(Hoffmannstr. - Puschkinallee): Fuﬂg‰nger	q1 14076,10011 13995,9834
+(Hoffmannstr. - Uferweg an den Treptowers): Fuﬂg‰nger	q1 14076,10011 14111,10169
 August-Lindemann-Str.: Fuﬂg‰nger	q3 14336,12758 14346,12790
 (Jagdschloﬂ Grunewald - Umgehungschaussee): Fuﬂg‰nger, Hundeauslaufgebiet	q2 905,6631 1149,7205
 (Uferweg am Grunewaldsee): Fuﬂg‰nger, Hundeauslaufgebiet	q2 1251,7429 1197,7457 1168,7473 1089,7496 1007,7334 928,7252 794,6958 762,6906 682,6865 574,6842 524,6795 478,6738 306,6582

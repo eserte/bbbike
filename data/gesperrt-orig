@@ -584,6 +584,7 @@ Südwestkorso	1 4206,6820 4125,6728
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
 Friedbergstr.	1 3012,10812 3204,10895
 Kleine Markusstr. - Krautstr.	1 12021,12066 11937,12127 11967,12042 12005,12018
+Schönstedtstr.	1 12540,8458 12649,8535
 ######################################################################
 #
 # Potsdam
@@ -1082,6 +1083,8 @@ tragen (Treppe)	0:30 20673,7260
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+#: note: Hier steht ein "Radfahren verboten"-Schild
+Schranke	BNP:3 8828,13434
 #: note: Luftbild
 Drängelgitter an der Straßenbahntrasse	BNP:6 14998,13623
 #: by: Eckart Seher:
@@ -1286,10 +1289,10 @@ Kleiststr.: schwierig zu querender Mittelstreifen	3nocross 6532,10529 6636,10492
 Bundesallee: Queren nicht möglich	3nocross 5360,8197 5359,8140 5357,8005
 (Los-Angeles-Platz)	1s:q3 5681,10696 5822,10609
 Bregenzer Str.	1 4278,10262 4227,10014
-Mollstr.: Straßenbahn	3nocross 11839,13083 11867,13076 11905,13069
-Mollstr.: Straßenbahn	3nocross 11867,13076 11839,13083 11739,13131 11723,13139
-(Berolinastr.): Tor zum Spielplatz	BNP:10 11858,13029
-(Berolinastr.): Tor zum Spielplatz	BNP:10 11863,13053
+Mollstr.: Straßenbahn	3nocross 11839,13083 11881,13072 11905,13069
+Mollstr.: Straßenbahn	3nocross 11881,13072 11839,13083 11739,13131 11723,13139
+(Berolinastr.): Tor zum Spielplatz	BNP:10 11865,13027
+(Berolinastr.): Tor zum Spielplatz	BNP:10 11874,13048
 (Berolinastr.): Tor zum Spielplatz	BNP:10 11815,13045
 #: temporary:
 (Parkweg Am Karlsbad): tragen (ca. 10 Stufen)	0:40 8190,10960

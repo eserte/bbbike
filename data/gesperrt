@@ -471,6 +471,7 @@ S¸dwestkorso	1 4084,6766 4206,6820
 S¸dwestkorso	1 4206,6820 4125,6728
 Friedbergstr.	1 3012,10812 3204,10895
 Kleine Markusstr. - Krautstr.	1 12021,12066 11937,12127 11967,12042 12005,12018
+Schˆnstedtstr.	1 12540,8458 12649,8535
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
 Leistikowstr.	1 -12512,810 -12302,718
 Hochstraﬂe	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -1351,6 +1352,7 @@ tragen (Treppe)	0:30:-118 -7418,181
 tragen (Treppe)	0:30:-64 -6933,14317
 tragen (Treppe)	0:30:2 -6934,14291
 tragen (Treppe)	0:30:-237 20673,7260
+Schranke	BNP:3:51 8828,13434
 Dr‰ngelgitter an der Straﬂenbahntrasse	BNP:6:-154 14998,13623
 Dr‰ngelgitter	BNP:3:-73 25909,11844
 Schranke	BNP:3:-90 -3646,15717
@@ -1508,17 +1510,17 @@ T¸binger Str. -> Mainzer Str.: Queren nicht mˆglich	3::igndisp 5420,8160 5359,81
 T¸binger Str. -> Bundesallee: Queren nicht mˆglich	3::igndisp 5420,8160 5359,8140 5357,8005
 (Los-Angeles-Platz)	1s 5681,10696 5822,10609
 Bregenzer Str.	1 4278,10262 4227,10014
-Straﬂenbahn	3nocross::ignrte 11839,13083 11867,13076 11905,13069
-Berolinastr. -> Mollstr.: Straﬂenbahn	3::igndisp 11863,13053 11867,13076 11839,13083
-Mollstr. -> Berolinastr.: Straﬂenbahn	3::igndisp 11905,13069 11867,13076 11863,13053
-Straﬂenbahn	3nocross::ignrte 11867,13076 11839,13083 11739,13131 11723,13139
+Straﬂenbahn	3nocross::ignrte 11839,13083 11881,13072 11905,13069
+Mollstr. -> Berolinastr.: Straﬂenbahn	3::igndisp 11905,13069 11881,13072 11874,13048
+Berolinastr. -> Mollstr.: Straﬂenbahn	3::igndisp 11874,13048 11881,13072 11839,13083
+Straﬂenbahn	3nocross::ignrte 11881,13072 11839,13083 11739,13131 11723,13139
 Mollstr. -> B¸schingstr.: Straﬂenbahn	3::igndisp 11739,13131 11839,13083 11879,13133
-B¸schingstr. -> Mollstr.: Straﬂenbahn	3::igndisp 11879,13133 11839,13083 11867,13076
+B¸schingstr. -> Mollstr.: Straﬂenbahn	3::igndisp 11879,13133 11839,13083 11881,13072
 Mollstr. -> Mollstr.: Straﬂenbahn	3::igndisp 11719,13088 11739,13131 11723,13139
 Mollstr. -> Mollstr.: Straﬂenbahn	3::igndisp 11839,13083 11739,13131 11719,13088
-(Berolinastr.): Tor zum Spielplatz	BNP:10:-238 11858,13029
-(Berolinastr.): Tor zum Spielplatz	BNP:10:-168 11863,13053
-(Berolinastr.): Tor zum Spielplatz	BNP:10:-249 11815,13045
+(Berolinastr.): Tor zum Spielplatz	BNP:10:-236 11865,13027
+(Berolinastr.): Tor zum Spielplatz	BNP:10:-156 11874,13048
+(Berolinastr.): Tor zum Spielplatz	BNP:10:-250 11815,13045
 (Parkweg Am Karlsbad): tragen (ca. 10 Stufen)	0:40:-140 8190,10960
 Matth‰ikirchplatz	1 7938,11276 7956,11340 7973,11354
 Matth‰ikirchplatz	1 7973,11354 7984,11334 7966,11267
