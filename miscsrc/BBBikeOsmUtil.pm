@@ -293,7 +293,7 @@ sub plot_osm_files {
 		$item_args{'-dash'} = '. ';
 	    } elsif (exists $tag{'tunnel'}) {
 		$item_args{'-dash'} = [10,2];
-	    } elsif (exists $tag{'highway'} && $tag{'highway'} =~ m{^(footway|pedestrian|track|path|service|bridleway)$}) {
+	    } elsif (exists $tag{'highway'} && $tag{'highway'} =~ m{^(footway|steps|pedestrian|track|path|service|bridleway)$}) {
 		$item_args{'-dash'} = '--'; # may be interesting, but distinguish it from "official" streets
 	    } elsif (exists $tag{'highway'} && $tag{'highway'} =~ m{^(planned|construction)$}) {
 		$item_args{'-dash'} = '.'; 

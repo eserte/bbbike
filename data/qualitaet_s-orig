@@ -49,7 +49,7 @@ Brockenstr.: Kopfsteinpflaster	Q2 13575,8593 13687,8734
 Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz mˆglich	Q2 13687,8734 13778,8846
 Sinsheimer Weg: Betonstraﬂe	Q0 13778,8846 13837,8932
 Donaustr.: schlechtes bis m‰ﬂiges Kopfsteinpflaster (15-20 km/h)	Q2 12150,8891 12202,8895 12394,8729 12549,8616 12649,8535
-Donaustr.: Kopfsteinpflaster	Q2 12852,8366 12918,8232
+Donaustr.: Kopfsteinpflaster	Q2 12865,8346 12918,8232
 Friesenstr.: m‰ﬂiges Kopfsteinpflaster	Q2 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
 Heimstr.: m‰ﬂiges Kopfsteinpflaster	Q2 9958,8966 9959,9050 9962,9151 9962,9237
 Lilienthalstr.: m‰ﬂiges Kopfsteinpflaster, m‰ﬂiger und enger Radweg	Q2+ 10705,9234 10709,9192 10748,9054 10675,8940
@@ -60,9 +60,9 @@ Golﬂener Str.: m‰ﬂiges Kopfsteinpflaster, m‰ﬂiger Radweg	Q2+; 10213,8665 10269,8
 Golﬂener Str.: m‰ﬂiges Kopfsteinpflaster	Q2; 10291,8811 10269,8770 10213,8665
 Golﬂener Str.: m‰ﬂiges Kopfsteinpflaster	Q2 10269,8770 10269,8809 10266,8946
 J¸terboger Str.: m‰ﬂiges Kopfsteinpflaster	Q2 10266,8946 9958,8966 9799,8962
-Methfesselstr.: sehr gutes Kopfsteinpflaster, 40 km/h	Q0 9211,9354 9163,9209 9144,9155 9106,9038
-Methfesselstr.: Kopfsteinpflaster	Q2 9106,9038 9057,8936 8982,8781
-Wilhelmshˆhe: Verbundsteinpflaster	Q1 9235,9111 9186,9107 9155,9029 9149,8961
+Methfesselstr.: sehr gutes Kopfsteinpflaster, 40 km/h	Q0 9211,9354 9170,9206 9150,9152 9111,9036
+Methfesselstr.: Kopfsteinpflaster	Q2 9111,9036 9063,8935 8982,8781
+Wilhelmshˆhe: Verbundsteinpflaster	Q1 9225,9111 9186,9107 9155,9029 9149,8961
 Priesterweg: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2 7231,7349 7230,7264 7222,6458 7217,6065 7216,5888 7175,5843
 Groﬂgˆrschenstr.: m‰ﬂiges Kopfsteinpflaster	Q2 8186,9380 8086,9418 8035,9437 7960,9466
 Waldemarstr.: Kopfsteinpflaster	Q2+ 11556,10869 11328,10957
@@ -416,7 +416,9 @@ Boddinstr.: teilweise Asphalt auf der Fahrbahn	Q1 12104,8299 12217,8320
 Boddinstr.: Kopfsteinpflaster	Q2 12217,8320 12368,8356 12582,8408
 Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12407,8177 12528,8205 12714,8249
-Falkstr.: Asphalt	Q0 12147,8117 12162,8055 12178,7985 12179,7979 12220,7822
+Falkstr.: Asphalt	Q0 12147,8117 12162,8055 12178,7985 12179,7979
+#: add_fragezeichen: Falkstr. zwischen Briesestr. und Kopfstr. asphaltiert oder gepflastert?
+Falkstr.: Kopfsteinpflaster	Q2 12179,7979 12220,7822
 Schillerpromenade: Kopfsteinpflaster	Q2 11665,8130 11695,8005
 Schillerpromenade: Kopfsteinpflaster	Q2 11717,7895 11738,7790 11755,7704 11779,7582 11797,7492
 S‰ntisstr.: Kopfsteinpflaster	Q2 8892,802 8743,681 8533,512
@@ -1067,7 +1069,7 @@ Bevernstr.: Kopfsteinpflaster	Q2 13015,10659 13077,10747
 Naunynstr.: Kopfsteinpflaster	Q2 11403,10782 11365,10791
 Lychener Str.: Kopfsteinpflaster	Q2 11056,15009 11236,15312 11268,15360 11418,15587 11499,15710
 Arndtstr.: Kopfsteinpflaster	Q2 9487,9209 9546,9198 9617,9185 9674,9179 9795,9162 9962,9151
-Fidicinstr.: Kopfsteinpflaster	Q2 9235,9051 9305,9044 9459,9019 9654,8991 9799,8962
+Fidicinstr.: Kopfsteinpflaster	Q2 9224,9053 9305,9044 9459,9019 9654,8991 9799,8962
 Kopischstr.: Kopfsteinpflaster	Q2 9459,9019 9477,9113
 Kloedenstr.: Kopfsteinpflaster	Q2 9654,8991 9669,9080
 Chamissoplatz: Kopfsteinpflaster	Q2 9526,9104 9546,9198
@@ -1197,7 +1199,7 @@ Schmollerplatz: Beton	Q1 13271,9516 13293,9468
 Wildenbruchplatz: schlechtes bis m‰ﬂiges Kopfsteinpflaster	Q3 13135,8766 13218,8693 13314,8624
 Finowstr. (Neukˆlln): Kopfsteinpflaster	Q2 13218,8693 13171,8621 13124,8562
 Kleine Innstr.: Asphalt	Q0 13171,8621 13262,8554
-Erlanger Str.: Kopfsteinpflaster	Q2 12309,8487 12181,8548
+Erlanger Str.: Kopfsteinpflaster	Q2 12293,8494 12181,8548
 Tellstr.: Kopfsteinpflaster	Q2 12320,8927 12402,9080
 Jansastr.: Kopfsteinpflaster	Q2 12438,8859 12531,9009
 Ossastr.: Kopfsteinpflaster	Q2 12615,9132 12681,9083
@@ -1214,7 +1216,6 @@ Heidelberger Str.: asphaltiert	Q0 13661,9069 13489,9199
 Lexisstr.: Beton	Q1 12983,9475 13059,9417 13130,9366
 Briesestr.: Kopfsteinpflaster	Q2 12001,7937 12179,7979
 Briesestr.: Kopfsteinpflaster	Q2 12446,8032 12668,8077 12794,8103
-Falkstr.: Kopfsteinpflaster	Q2 12179,7979 12220,7822
 Geygerstr.: Beton	Q1 13066,8153 13194,8276
 Bellevueufer: Parkweg	Q1 6690,12637 7039,12314
 Bettina-von-Arnim-Ufer: Parkweg, teilweise wellig	Q2 7437,12368 7529,12496 7670,12576
@@ -1317,7 +1318,7 @@ Nobelstr.: Betonstraﬂe	Q0 14133,6187 14398,6184 14784,6169 14961,6162 15146,6154
 (Karlsgartenstr. - Hasenheide): asphaltiert	Q0 11627,8485 11508,8491 11333,8582 11250,8585
 (Am Rixdorfer Teich): guter Parkweg	Q1 11250,8585 11104,8559 11020,8596 10957,8573 10911,8457
 Schmiedehof: Kopfsteinpflaster	Q2 8988,8990 8990,8915
-Sixtusgarten: Kopfsteinpflaster	Q2 8988,8990 9106,9038
+Sixtusgarten: Kopfsteinpflaster	Q2 8988,8990 9111,9036
 Ottomar-Geschke-Str.: Kopfsteinpflaster	Q2 21332,4655 21376,4748
 Ottomar-Geschke-Str.: Asphalt	Q0 21376,4748 21454,4928
 Ottomar-Geschke-Str.: Kopfsteinpflaster	Q2 21454,4928 21498,5023
