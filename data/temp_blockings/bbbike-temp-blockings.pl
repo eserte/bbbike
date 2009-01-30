@@ -7058,7 +7058,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004721',
        data  => <<EOF,
-userdel	2::inwork 23402,5483 23333,5731
+userdel	2::inwork 23402,5483 23333,5710
 EOF
      },
      { from  => 1171580400, # 2007-02-16 00:00
@@ -12039,7 +12039,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009421',
        data  => <<EOF,
-userdel	2::inwork 23402,5483 23333,5731
+userdel	2::inwork 23402,5483 23333,5710
 EOF
      },
      { from  => 1216461600, # 2008-07-19 12:00
@@ -12747,7 +12747,7 @@ EOF
        text  => 'L 025 Schmölln - LG - Penkun zw. Landesgrenze und Schmölln grundhafter Straßenbau Vollsperrung 29.09.2008-23.12.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 55984,100093 56268,99856 56856,99683 57516,99296
+userdel	2::inwork 55977,100103 56268,99856 56856,99683 57516,99296
 EOF
      },
      { from  => 1223416800, # 2008-10-08 00:00
