@@ -1252,6 +1252,10 @@ Holzmarktstr. -> Mehlbeerenweg: Mittelstreifen	3::igndisp 11768,12006 11919,1185
 Mittelstreifen	3nocross::ignrte -3014,14559 -2946,14533 -2829,14506
 Am Juliusturm -> Lindenufer: Mittelstreifen	3::igndisp -2829,14506 -2946,14533 -2964,14478
 Lindenufer -> Am Juliusturm: Mittelstreifen	3::igndisp -2964,14478 -2946,14533 -3014,14559
+Mittelstreifen	3nocross::ignrte 9334,9670 9387,9804 9444,9919
+Baruther Str. -> Mehringdamm: Mittelstreifen	3::igndisp 9588,9827 9387,9804 9334,9670
+Mehringdamm -> Baruther Str.: Mittelstreifen	3::igndisp 9444,9919 9387,9804 9588,9827
+Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3 8438,8676 8334,8655 8371,8543
 tragen (12 Stufen):	0:20:40 -2993,14568
 tragen (drei flache Stufen)	0:10:-137 -7445,-5002
 tragen (zwei Stufen)	0:10:-27 5970,20353
@@ -1529,7 +1533,7 @@ schwierig zu überqueren - besser Ampel benutzen	3nocross::ignrte 7912,10945 7968
 queren schlecht möglich	3nocross::ignrte 6709,9234 6863,9254 6923,9266
 Grunewaldstr. -> Klixstr.: queren schlecht möglich	3::igndisp 6923,9266 6863,9254 6885,9132
 Klixstr. -> Grunewaldstr.: queren schlecht möglich	3::igndisp 6885,9132 6863,9254 6709,9234
-Adolf-Scheidt-Platz	1 8730,8095 8759,8071 8770,8018 8760,7976 8731,7956
+Adolf-Scheidt-Platz	1 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
 Rumeyplan	1 8682,7714 8799,7741 8894,7783 8940,7835
 Rumeyplan	1 8967,7821 8902,7763 8815,7722 8684,7688
 Greifswalder Str.	3nocross::ignrte 12332,14526 12384,14600 12437,14680
