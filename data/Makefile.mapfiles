@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.40 2008/02/01 21:14:14 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.41 2009/02/01 14:13:06 eserte Exp $
 #
 
 .ifndef COMMENTS_PARTIAL
@@ -344,14 +344,17 @@ $(MAPFILES_DATA_DIR)/deutschland.shp:	deutschland
 $(MAPFILES_DATA_DIR)/radwege5.shp:	radwege_exact comments_cyclepath
 	cat $> | ${CONVERT_RADWEGE} -inmap Standard -delta 5 > /tmp/radwege5
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/radwege5 /tmp/radwege5
+	@rm -f /tmp/radwege5
 
 $(MAPFILES_DATA_DIR)/radwege10.shp:	radwege_exact comments_cyclepath
 	cat $> | ${CONVERT_RADWEGE} -inmap Standard -delta 10 > /tmp/radwege10
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/radwege10 /tmp/radwege10
+	@rm -f /tmp/radwege10
 
 $(MAPFILES_DATA_DIR)/radwege20.shp:	radwege_exact comments_cyclepath
 	cat $> | ${CONVERT_RADWEGE} -inmap Standard -delta 20 > /tmp/radwege20
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/radwege20 /tmp/radwege20
+	@rm -f /tmp/radwege20
 
 $(MAPFILES_DATA_DIR)/obst.shp:	obst
 	$(BBD2ESRI) -shapetype point -o $(MAPFILES_DATA_DIR)/obst obst
@@ -359,10 +362,12 @@ $(MAPFILES_DATA_DIR)/obst.shp:	obst
 $(MAPFILES_DATA_DIR)/comments.shp:	$(COMMENTS_PARTIAL)
 	cat $(COMMENTS_PARTIAL) > /tmp/comments
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/comments /tmp/comments
+	@rm -f /tmp/comments
 
 $(MAPFILES_DATA_DIR)/comments_without.shp:	$(COMMENTS_PARTIAL:Ncomments_route)
 	cat $(COMMENTS_PARTIAL:Ncomments_route) > /tmp/comments_without
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/comments_without /tmp/comments_without
+	@rm -f /tmp/comments_without
 
 $(MAPFILES_DATA_DIR)/comments_route.shp:	comments_route
 	$(BBD2ESRI) -city Berlin -country DE -o $(MAPFILES_DATA_DIR)/comments_route comments_route
@@ -420,7 +425,7 @@ $(MAPFILES_DATA_DIR)/gesperrt30.shp:	gesperrt
 ' > /tmp/gesperrt30
 	$(BBD2ESRI) -onewayhack \
 	     -o $(MAPFILES_DATA_DIR)/gesperrt30 /tmp/gesperrt30
-
+	@rm -f /tmp/gesperrt30
 
 $(MAPFILES_DATA_DIR)/sehenswuerdigkeit.shp:	sehenswuerdigkeit
 	$(BBD2ESRI) -imagetype png -shapetype auto \

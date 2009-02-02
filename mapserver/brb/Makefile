@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.64 2008/08/17 08:52:21 eserte Exp $
+# $Id: Makefile,v 1.65 2009/02/02 22:56:29 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -197,7 +197,7 @@ FONTS_LIST=		fonts-biokovo.list
 ######################################################################
 
 .if ${TARGET} != "devpc01"
-TPAGE?=			tpage --compile_ext=.ttc --compile_dir=/tmp
+TPAGE?=			tpage --compile_ext=.ttc --compile_dir=/tmp/bbbikettc
 .else
 TPAGE?=			tpage
 .endif

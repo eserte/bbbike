@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Cat.pm,v 1.17 2008/08/16 10:54:01 eserte Exp $
+# $Id: Cat.pm,v 1.17 2008/08/16 10:54:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -74,7 +74,7 @@ use vars qw(%filetype_to_cat %file_to_cat);
      "deutschland"		=> $filetype_to_cat{"borders"},
      "exits"			=> [qw(X)],
      "faehren"			=> [qw(Q QQ)], # XXX QQ may be removed again some day
-     "flaechen"			=> [qw(F:Ae F:Cemetery F:Forest F:Green
+     "flaechen"			=> [qw(F:Ae F:ex-Ae F:Cemetery F:Forest F:Green
 				       F:Industrial F:Orchard F:Mine
 				       F:P F:Pabove F:Sport)],
      "fragezeichen"		=> $filetype_to_cat{"fragezeichen"},

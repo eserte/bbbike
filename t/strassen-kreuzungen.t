@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-kreuzungen.t,v 1.2 2009/01/20 22:07:55 eserte Exp $
+# $Id: strassen-kreuzungen.t,v 1.3 2009/02/01 16:25:57 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -39,7 +39,7 @@ isa_ok($kr, "Kreuzungen");
 
 {
     my $at_point     = "9229,8785"; # Dudenstr./Mehringdamm
-    my $before_point = "9303,8781"; # Platz der Luftbrücke
+    my $before_point = "9272,8781"; # Platz der Luftbrücke
     my $after_point  = "9227,8890"; # Mehringdamm
 
     for ($at_point, $before_point, $after_point) {

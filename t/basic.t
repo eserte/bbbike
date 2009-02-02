@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: basic.t,v 1.21 2008/12/31 13:50:23 eserte Exp $
+# $Id: basic.t,v 1.22 2009/02/01 18:50:54 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -101,6 +101,8 @@ for my $f (@files) {
 	    if $f =~ m{^( Strassen/GPX.pm
 		        | GPS/GPX.pm
 		      )$}x && !eval { require XML::LibXML } && !eval { require XML::Twig };
+	myskip "$f needs XML::LibXML::Reader", $tests_per_file
+	    if $f eq 'GPS/GpsmanData/SportsTracker.pm' && !eval { require XML::LibXML::Reader };
 	myskip "$f needs XML::LibXSLT", $tests_per_file
 	    if $f eq 'Strassen/Touratech.pm' && !eval { require XML::LibXSLT };
 	myskip "$f needs Class::Accessor", $tests_per_file

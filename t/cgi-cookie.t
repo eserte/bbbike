@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-cookie.t,v 1.2 2005/07/02 15:23:28 eserte Exp $
+# $Id: cgi-cookie.t,v 1.3 2009/02/01 13:19:39 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -18,22 +18,27 @@ use BBBikeTest qw(set_user_agent $cgiurl $cgidir);
 
 BEGIN {
     if (!eval q{
-	use Test::More;
-	use LWP::UserAgent;
+	use File::Spec;
+	use File::Temp;
 	use HTTP::Cookies;
+	use LWP::UserAgent;
+	use Test::More;
 	use WWW::Mechanize;
 	1;
     }) {
-	print "1..0 # skip: no Test::More, LWP::UserAgent, and/or WWW::Mechanize modules\n";
+	print "1..0 # skip: no File::Temp, Test::More, LWP::UserAgent, and/or WWW::Mechanize modules\n";
 	exit;
     }
 }
 
 BEGIN { plan tests => 9 }
 
+my $cookie_jar_file = File::Temp::tempnam(File::Spec->tmpdir, "bbbike_cookies_");
+END { unlink $cookie_jar_file if defined $cookie_jar_file }
+
 my $ua = LWP::UserAgent->new;
 set_user_agent($ua);
-my $cookie_jar = HTTP::Cookies->new(file => "/tmp/bbbike-ua-cookies.txt",
+my $cookie_jar = HTTP::Cookies->new(file => $cookie_jar_file,
 				    autosave => 1);
 $cookie_jar->clear;
 $ua->cookie_jar($cookie_jar);

@@ -1237,10 +1237,10 @@ Am Schafgraben: Parkweg	Q1 -14500,-2012 -14536,-1943 -14571,-1881 -14612,-1809
 Gesundheitsweg: Parkweg	Q1 -14351,-1882 -14571,-1881
 Spindelstr.: Kopfsteinpflaster, OK	Q1 -10369,-1374 -10463,-1343 -10581,-1271
 Plantagenstr.: Asphalt	Q0 -9735,-1845 -9813,-1664 -9837,-1612
+Plantagenstr.: Asphalt	Q0 -9837,-1612 -9860,-1550 -9902,-1445
 Karl-Gruhl-Str.: Asphalt	Q0 -9837,-1612 -9905,-1627 -10102,-1522 -10119,-1515 -10369,-1374
 Oderstr.: Betonstraße	Q1 818,-298 595,-310
 Oderstr.: Asphalt	Q0 595,-310 -425,-935 -882,-1220
-Plantagenstr.: Kopfsteinpflaster	Q2 -9837,-1612 -9860,-1550 -9902,-1445
 Brandenburger Str.: grobes Pflaster	Q1 -12894,-977 -13005,-1002 -13173,-1039 -13289,-1071 -13410,-1101 -13556,-1140
 Brandenburger Str.: etwas besseres Kopfsteinpflaster	Q1 -12894,-977 -12784,-956
 Welsow - Bruchhagen: Asphalt	Q0 49075,74662 48437,74675 48262,74825
@@ -1723,6 +1723,34 @@ Zum Teich (Potsdam): guter Weg	Q0 -7418,-5167 -7499,-5168 -7570,-5186 -7672,-518
 Pierre-de-Gayette-Str. (Potsdam): Asphalt	Q0 -7393,-5164 -7418,-5167 -7415,-5237 -7411,-5348 -7405,-5449 -7403,-5549 -7398,-5650
 Anni-von-Gottberg-Str. (Potsdam): Asphalt	Q0 -7390,-5238 -7415,-5237 -7492,-5242
 Anni-von-Gottberg-Str. (Potsdam): Asphalt	Q0 -7568,-5269 -7491,-5264
+Karl-Liebknecht-Str.: Asphalt	Q0 -10559,-1901 -10535,-1809 -10499,-1717 -10449,-1588 -10369,-1374 -10341,-1293 -10332,-1266 -10322,-1248 -10297,-1186 -10278,-1140 -10154,-828
+Allee nach Glienicke: Asphalt	Q0 -10154,-828 -10051,-756 -9983,-621 -9977,-553 -10008,-332 -9956,-242 -9878,-137
+Lankestr.: Asphalt	Q0 -9878,-137 -9952,-109
+Karl-Marx-Str.: Asphalt	Q0 -9956,-242 -9656,-285 -9468,-450 -9426,-551
+Behringstr.: Asphalt	Q0 -9473,-762 -9586,-873 -9638,-930 -9692,-986 -9751,-1183 -9785,-1333 -9809,-1435
+Spitzweggasse: Asphalt	Q0 -9581,-602 -9561,-544 -9571,-474 -9610,-411 -9646,-379
+An der Sternwarte (Babelsberg): Asphalt	Q1 -9648,-524 -9721,-554 -9773,-601 -9816,-604 -9983,-621
+Rosa-Luxemburg-Str. (Potsdam): Asphalt	Q0 -9410,-815 -9473,-762 -9581,-602 -9648,-524
+Hermann-Maaß-Str.: Asphalt	Q0 -9762,-625 -9686,-703 -9666,-744 -9628,-810 -9586,-873 -9470,-1031
+Filchnerstr.: Kleinsteinpflaster aus den 30er Jahren in gutem Zustand	Q1 -9856,-1312 -9826,-1179 -9809,-1075 -9769,-950 -9695,-867 -9628,-810
+Bruno-H.-Bürgel-Str.: Asphalt	Q0 -9952,-1383 -9929,-1291
+Bruno-H.-Bürgel-Str.: Kleinsteinpflaster	Q1 -9929,-1291 -9903,-1171
+Bruno-H.-Bürgel-Str.: Asphalt	Q0 -9903,-1171 -9889,-1084 -9857,-972 -9824,-906
+Bruno-H.-Bürgel-Str.: Kleinsteinpflaster	Q1 -9824,-906 -9720,-793 -9666,-744
+Donarstr.: Asphalt	Q0 -9584,-1030 -9692,-986
+Donarstr.: Kleinsteinpflaster	Q1 -9692,-986 -9769,-950
+Donarstr.: Asphalt	Q0 -9769,-950 -9824,-906 -9866,-861
+Scheffelstr.: Asphalt	Q0 -9638,-1193 -9751,-1183
+Scheffelstr.: Kleinsteinpflaster	Q1 -9751,-1183 -9826,-1179 -9903,-1171 -9948,-1165
+Semmelweisstr.: Kopfsteinpflaster	Q2 -10297,-1186 -9976,-1276
+Semmelweisstr.: Asphalt	Q0 -9976,-1276 -9929,-1291 -9856,-1312 -9785,-1333
+Goetheplatz: Asphalt	Q0 -9922,-1395 -9902,-1445 -9809,-1435 -9922,-1395
+Turnstr.: Kopfsteinpflaster	Q2 -10341,-1293 -10055,-1453 -10035,-1465 -9874,-1551 -9860,-1550
+Müllerstr.: Kopfsteinpflaster	Q2 -10102,-1522 -10055,-1453
+Müllerstr.: Kopfsteinpflaster	Q2 -10035,-1465 -10004,-1365
+Wichgrafstr.: Kopfsteinpflaster	Q2 -10381,-1768 -10267,-1759 -9930,-1687
+Schornsteinfegergasse: Kopfsteinpflaster	Q2 -10535,-1809 -10440,-1836 -10425,-1773
+(An der Sternwarte - Hermann-Maaß-Str.): Sandweg	Q2 -9816,-604 -9762,-625
 Industriestr. (Dahlwitz-Hoppegarten): Asphalt	Q0 25938,11837 26042,11798 26222,11726 26555,11601 26794,11513 26880,11479
 Kiefernring (Potsdam): guter Beton	Q0 -10519,-5173 -10618,-4998 -10685,-5022 -10740,-5048 -10770,-5062 -10862,-5108 -10836,-5170 -10795,-5257 -10773,-5294
 Am Moosfenn: mäßiger Asphalt	Q1 -10249,-5048 -10331,-5085 -10388,-5112 -10519,-5173 -10649,-5236 -10773,-5294
@@ -1775,8 +1803,7 @@ An der Stammbahn: Asphalt	Q0 -1527,1375 -1689,1326 -2965,668 -3165,565
 Grenzweg zwischen Kleinmachnow/Düppel und Europarc Dreilinden: mäßiger Weg	Q2 -1544,1448 -3348,592 -3440,254 -3663,-91
 Zepernick: Asphalt	Q0 20472,28570 20017,28297 19475,27877 19364,27415
 Wulkow - Hermersdorf: grobes Kopfsteinpflaster und Sand	Q3 66523,19497 66171,19651 65424,19367 64570,19169 63456,18965 63286,18968
-An der Sternwarte (Babelsberg): mäßiger Asphalt	Q1 -9648,-524 -9721,-554 -9773,-601 -9816,-604 -9983,-621
-Rosa-Luxemburg-Str. (Potsdam): mäßiges Kopfsteinpflaster	Q2 -9090,-1293 -9176,-1188 -9207,-1144 -9306,-1000 -9410,-815 -9473,-762 -9581,-602 -9648,-524
+Rosa-Luxemburg-Str. (Potsdam): mäßiges Kopfsteinpflaster	Q2 -9090,-1293 -9176,-1188 -9207,-1144 -9306,-1000 -9410,-815
 Neuer Schwanenbecker Weg: Sandpiste	Q3 21303,19918 21058,20771 21102,21046 21360,21576 21340,21871 21192,22337 21137,22487
 Lindenberger Str. (Ahrensfelde): gut asphaltiert	Q0 21975,19068 21878,19226 21671,19482 21626,19542
 Mehrow - Hönow: mäßiger Asphalt	Q1 25170,18422 25654,17351 25803,17200 26107,16340
@@ -1987,7 +2014,7 @@ Elsterstr.: gute Qualität	Q0 20791,-105662 20749,-105434 20722,-105313 20670,-10
 Promenade: gute Qualität	Q0 20635,-105714 20791,-105662
 Münchehofer Weg: Asphalt	Q0 27817,10875 27825,10820 27884,10775 28335,10441 28745,10328 28827,10234
 Kastanienallee: sandiger Pferdeweg	Q3 29868,9084 29271,9562 28934,10184 28827,10234
-Kreuzstr. (Potsdam): mäßiges Kopfsteinpflaster	Q2 -10119,-1515 -10232,-1703 -10267,-1759
+Kreuzstr. (Potsdam): Kopfsteinpflaster	Q2 -10119,-1515 -10232,-1703 -10267,-1759
 Köpenicker Allee (Dahlewitz-Hoppegarten): Asphalt	Q0 26771,10496 26321,9868
 Dahlwitzer Str. (Waldesruh): Asphalt	Q0 26321,9868 25868,9225
 Köpenicker Allee (Waldesruh): Asphalt	Q0 25868,9225 25822,9163 25756,9073 25731,9038 25661,8942 25489,8699 25389,8558 25212,8313 25047,8086

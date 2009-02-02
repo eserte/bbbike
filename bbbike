@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.400 2009/01/24 22:06:50 eserte Exp $
+# $Id: bbbike,v 3.400 2009/01/24 22:06:50 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -9618,7 +9618,7 @@ sub plotstr {
     my $lazy = defined $args{-lazy} ? $args{-lazy} : $lazy_plot;
     if ($std && $lazy && $has_filename) {
 	status_message(Mfmt("Layer <%s> gezeichnet", exists $str_attrib{$abk} ? $str_attrib{$abk}->[ATTRIB_PLURAL] : $abk), "info");
-	return bbbikelazy_add_data("str", $abk, $str);
+	return bbbikelazy_add_data("str", $abk, $str, \%args);
     }
 
     my $complete_str = $str;

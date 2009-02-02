@@ -3343,6 +3343,7 @@ sub edit_gps_track {
 	    my $abk_s = main::plot_layer('str', "/tmp/streets.bbd");
 
 	    main::special_raise($abk_s);
+	    main::special_raise($abk);
 	    main::special_raise($abk."-fg");
 
 	    $recent_gps_street_layer = $abk_s;

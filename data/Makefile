@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.206 2009/01/06 22:07:38 eserte Exp eserte $
+# $Id: Makefile,v 2.207 2009/02/01 14:07:43 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -216,6 +216,7 @@ inaccessible_strassen: strassen gesperrt
 	@if [ -e /tmp/old_inaccessible_strassen ] ; then \
 	    diff -u /tmp/old_inaccessible_strassen $@; \
 	fi
+	@rm -f /tmp/old_inaccessible_strassen
 	-@$(READONLY) $@
 
 inaccessible_landstrassen: strassen landstrassen landstrassen2 gesperrt
@@ -228,6 +229,7 @@ inaccessible_landstrassen: strassen landstrassen landstrassen2 gesperrt
 	@if [ -e /tmp/old_inaccessible_landstrassen ] ; then \
 	    diff -u /tmp/old_inaccessible_landstrassen $@; \
 	fi
+	@rm -f /tmp/old_inaccessible_landstrassen
 	-@$(READONLY) $@
 
 ######################################################################
@@ -312,7 +314,7 @@ strassen_bab: strassen_bab-orig
 # perl -nle '/\t(\S+)/ && print $1' sbahn-orig | sort -u
 SBAHN_CATEGORIES=	SA SB SC S0 SBau
 
-sbahn: sbahn-orig $(CONVERT_ORIG_FILE)
+sbahn: sbahn-orig Makefile $(CONVERT_ORIG_FILE)
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) -strip-future-categories sbahn-orig > /tmp/sbahn
 .for cat in $(SBAHN_CATEGORIES)
@@ -320,6 +322,8 @@ sbahn: sbahn-orig $(CONVERT_ORIG_FILE)
 .endfor
 	cat $(SBAHN_CATEGORIES:S/^/\/tmp\/sbahn-/) > sbahn~
 	mv sbahn~ sbahn
+	@rm -f $(SBAHN_CATEGORIES:S/^/\/tmp\/sbahn-/)
+	@rm -f /tmp/sbahn
 	-@$(READONLY) $@
 
 sbahnhof:	sbahnhof-orig
@@ -344,6 +348,8 @@ rbahn: rbahn-orig Makefile $(CONVERT_ORIG_FILE)
 .endfor
 	cat $(RBAHN_CATEGORIES:S/^/\/tmp\/rbahn-/) > rbahn~
 	mv rbahn~ rbahn
+	@rm -f $(RBAHN_CATEGORIES:S/^/\/tmp\/rbahn-/)
+	@rm -f /tmp/rbahn
 	-@$(READONLY) $@
 
 rbahnhof:	rbahnhof-orig
@@ -906,6 +912,7 @@ ${PERSISTENTTMPDIR}/.fragezeichen-other-source:	${DATADIR}/qualitaet_s-orig ${DA
 			}\
 		    }' > /tmp/other-source-fragezeichen-orig
 	${CONVERT2HAFAS} -basefile ${DATADIR}/qualitaet_s-orig /tmp/other-source-fragezeichen-orig > $@
+	@rm -f /tmp/other-source-fragezeichen-orig
 
 PREFIXMAP=sperr=SP,kopfstein=KP,qualität=QU,mäßig.geeignet=QU,radweg=RW,benutzungspflich=RW,bau=BA,vorfahrt=VF,name=NA,bezeichn=NA,vorfahrt=VF,ampel=AM
 
@@ -1066,6 +1073,7 @@ check-disabled:	.check_label
 	    echo "$$duplicates"; \
 	    false; \
 	fi
+	@rm -f /tmp/strassen-names /tmp/plaetze-names
 	@touch $@
 
 .check_hoehe:	hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen
@@ -1138,6 +1146,7 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+)?)(:inw
 	    $(SED) -e 's/ *(.*)//' -e 's/S-Bhf //' -e 's/U-Bhf //' -e 's/|.*//' |\
 	    $(SORT_GERMAN_LOCALE) -u > /tmp/$(i)bahnhof2
 	diff /tmp/$(i)bahnhof1 /tmp/$(i)bahnhof2
+	@rm -f /tmp/$(i)bahnhof1 /tmp/$(i)bahnhof2
 	@touch $@
 .endfor
 
@@ -1258,6 +1267,7 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+)?)(:inw
 	$(CHECK_POINTS) /tmp/exits-first-last \
 		ubahnhof sbahnhof rbahnhof \
 		.strassen.tmp landstrassen landstrassen2
+	@rm -f /tmp/exits-first-last
 	@touch $@
 
 .check_temp_blockings:	temp_blockings/*.bbd $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd \
@@ -1267,7 +1277,7 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+)?)(:inw
 	$(CHECK_NEIGHBOUR) -type standard -data /tmp/all_temp_blockings.bbd \
 		-against strassen -against landstrassen -against landstrassen2 \
 		-against faehren
-	rm -f /tmp/all_temp_blockings.bbd
+	@rm -f /tmp/all_temp_blockings.bbd
 	@touch $@
 
 .check_grenzuebergaenge:	grenzuebergaenge .strassen.tmp landstrassen landstrassen2 fragezeichen deutschland

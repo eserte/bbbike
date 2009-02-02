@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.37 2008/05/18 16:00:47 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.38 2009/02/01 13:53:18 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -320,7 +320,7 @@ sub copy_orig {
 
 sub get_diff_orig_dir {
     # ignore $self
-    my $origdir = "$Strassen::Util::tmpdir/orig";
+    my $origdir = "$Strassen::Util::tmpdir/bbbike-orig";
     if (! -d $origdir) {
 	mkdir $origdir, 0700;
 	if (! -d $origdir) {

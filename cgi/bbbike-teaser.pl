@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.29 2008/08/28 22:37:24 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.30 2009/02/01 22:36:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005,2006,2008 Slaven Rezic. All rights reserved.
@@ -27,30 +27,33 @@ sub teaser {
 				#'teaser_dobli',
 			       ];
     $teasers_mandatory{"de"} = [
+				teaser_other_cities(),
 				#teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
 				#teaser_perltk_newrelease(),
 				teaser_perltk(),
 				teaser_beta(),
 				teaser_mapserver(),
-				teaser_fahrradstadt(),
+				#teaser_fahrradstadt(),
 				#teaser_collecting_tracks(),
 				#teaser_sternfahrt(),
 				#teaser_kreisfahrt(),
 				#teaser_sternfahrt_changes(),
 				#teaser_dobli(),
-				$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
+				#$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
 			       ];
     $teasers_optional{"en"} = [],
     $teasers_mandatory{"en"} = [
+				teaser_other_cities(),
 				#teaser_perltk_newrelease(),
 				teaser_perltk(),
+				#teaser_beta(), # XXX There's no beta version in English yet!
 				teaser_mapserver(),
 				#teaser_collecting_tracks(),
 				#teaser_sternfahrt(),
 				#teaser_kreisfahrt(),
 				#teaser_sternfahrt_changes(),
 				#teaser_dobli(),
-				$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
+				#$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
 			       ];
 
     my $use_lang = $lang eq 'en' ? "en" : "de";
@@ -189,9 +192,17 @@ EOF
 
 sub teaser_beta {
     if (!$is_beta) {
-	<<EOF;
+	if ($lang eq 'en') {
+	    return ();
+	    # XXX There's no beta version in English yet!
+	    <<EOF;
+<div class="teaser">What's new in the <a href="$bbbike_url?info=1#beta" style="font-weight:bold;">next version</a> of www.bbbike.de?</div>
+EOF
+	} else {
+	    <<EOF;
 <div class="teaser">Was gibt es in der <a href="$bbbike_url?info=1#beta" style="font-weight:bold;">nächsten Version</a> von www.bbbike.de?</div>
 EOF
+	}
     } else {
 	();
     }
@@ -210,6 +221,24 @@ BBBike: Auszeichnung "<b>FahrradStadtBerlin 2007</b>" für Verdienste um die Förd
 EOF
     } else {
 	();
+    }
+}
+
+sub teaser_other_cities {
+    my $is_new = $l[5]<2010 && $l[4]<5;
+    my $url = "http://www.elsif.de/bbbike/";
+    if ($lang eq 'en') {
+	<<EOF;
+<div class="teaser">
+  <b>@{[ $is_new ? "NEW and " : "" ]}BETA</b>: <a href="$url">BBBike for other cities</a>
+</div>
+EOF
+    } else {
+	<<EOF;
+<div class="teaser">
+  <b>@{[ $is_new ? "NEU und " : "" ]}BETA</b>: <a href="$url">BBBike für andere Städte</a>
+</div>
+EOF
     }
 }
 

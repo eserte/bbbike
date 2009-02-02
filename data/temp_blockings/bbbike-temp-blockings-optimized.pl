@@ -590,26 +590,8 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_010401',
-         'until' => 1233442799,
-         'text' => 'Köthener Str. (Kreuzberg) in beiden Richtungen zwischen Bernburger Str. und Hafenplatz Baustelle, Straße vollständig gesperrt ausgeschildert (bis Ende 1.2009)',
-         'from' => 1230474690,
-         'id' => 1525,
-         'data' => 'userdel	2::inwork 8483,10900 8536,11063
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_010408',
-         'until' => 1233442799,
-         'text' => 'Storkower Str. (Prenzlauer Berg) Richtung Wedding zwischen Kniprodestr. und Greifswalder Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 01.2009)',
-         'from' => 1226267628,
-         'id' => 1526,
-         'data' => 'userdel	1::inwork 13453,14678 13151,14855 13110,14879 12812,15053 12722,15105
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -637,26 +619,8 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_009727',
-         'until' => 1233442799,
-         'text' => 'Köpenicker Str. (Mitte) Richtung Kreuzberg zwischen Brückenstr. und Michaelkirchstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 01.2009)',
-         'from' => 1228340462,
-         'id' => 1546,
-         'data' => 'userdel	1::inwork 11242,11720 11324,11689 11574,11594
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_010255',
-         'until' => 1233442799,
-         'text' => 'Nöldnerstr. (Lichtenberg) Richtung Karlshorster Str. zwischen Lückstr. und Karlshorster Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 01.2009)',
-         'from' => 1228340492,
-         'id' => 1547,
-         'data' => 'userdel	1::inwork 16032,10842 15670,10800 15388,10758 15272,10790
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -672,19 +636,11 @@ push @temp_blocking,
          'text' => 'Blankenburger Str. (Pankow) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 2010)',
          'from' => 1231707292,
          'id' => 1557,
-         'data' => 'userdel	1::inwork 10742,19632 10393,19587 10249,19541
+         'data' => 'userdel	1::inwork 10742,19632 10377,19565 10249,19541
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1233442800,
-         'text' => 'L 401 Karl-Marx-Str., Friedrich-Engels-Str. OD Wildau, zw. Freiheitsstr. und Westkorso grundhafter Straßenneubau Wintersicherung 19.12.2008-31.01.2009 ',
-         'from' => 1229554800,
-         'id' => 1558,
-         'data' => 'userdel	q4::inwork 26609,-7136 26700,-7334 26790,-7918 26749,-8475
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_009603',

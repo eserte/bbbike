@@ -34,12 +34,13 @@ if (-e "$FindBin::RealBin/bbbike") {
 } else {
     $bbbike_rootdir = "$ENV{HOME}/src/bbbike";
 }
-my $streets_track               = "$bbbike_rootdir/tmp/streets.bbd";
-my $orig_streets_track          = "$bbbike_rootdir/tmp/streets.bbd-orig";
-my $acc_streets_track           = "$bbbike_rootdir/tmp/streets-accurate.bbd";
-my $acc_cat_streets_track       = "$bbbike_rootdir/tmp/streets-accurate-categorized.bbd";
-my $acc_cat_split_streets_track = "$bbbike_rootdir/tmp/streets-accurate-categorized-split.bbd";
-my $other_tracks                = "$bbbike_rootdir/tmp/other-tracks.bbd";
+my $streets_track                    = "$bbbike_rootdir/tmp/streets.bbd";
+my $orig_streets_track               = "$bbbike_rootdir/tmp/streets.bbd-orig";
+my $acc_streets_track                = "$bbbike_rootdir/tmp/streets-accurate.bbd";
+my $acc_cat_streets_track            = "$bbbike_rootdir/tmp/streets-accurate-categorized.bbd";
+my $acc_cat_split_streets_track      = "$bbbike_rootdir/tmp/streets-accurate-categorized-split.bbd";
+my $acc_cat_split_streets_2008_track = "$bbbike_rootdir/tmp/streets-accurate-categorized-split-since2008.bbd";
+my $other_tracks                     = "$bbbike_rootdir/tmp/other-tracks.bbd";
 
 use vars qw($hm_layer);
 
@@ -137,47 +138,38 @@ sub add_button {
 	      [Button => "Update tracks and matches.bbd",
 	       -command => sub { make_gps_target("tracks tracks-accurate tracks-accurate-categorized unique-matches") },
 	      ],
-	      [Button => "Add streets-accurate.bbd (all accurate GPS tracks)",
-	       -command => sub {
-		   my $f = $acc_streets_track;
-		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
-		   my $layer = add_new_layer("str", $f);
-		   set_layer_highlightning($layer);
-		   main::special_raise($layer, 0);
-	       }
-	      ],
-	      [Button => "Add streets-accurate-categorized.bbd",
-	       -command => sub {
-		   my $f = $acc_cat_streets_track;
-		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
-		   my $layer = add_new_layer("str", $f);
-		   set_layer_highlightning($layer);
-		   main::special_raise($layer, 0);
-	       }
-	      ],
 	      [Button => "Add streets-accurate-categorized-split.bbd",
 	       -command => sub {
-		   my $f = $acc_cat_split_streets_track;
-		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
-		   my $layer = add_new_layer("str", $f);
-		   set_layer_highlightning($layer);
-		   main::special_raise($layer, 0);
+		   add_any_streets_bbd($acc_cat_split_streets_track);
 	       }
+	      ],
+	      [Button => "Add streets-accurate-categorized-split-since2008.bbd",
+	       -command => sub {
+		   add_any_streets_bbd($acc_cat_split_streets_2008_track);
+	       },
+	      ],
+	      [Cascade => "Add other streets...bbd", -menuitems =>
+	       [
+		[Button => "Add streets.bbd (all GPS tracks)",
+		 -command => sub {
+		     add_any_streets_bbd($streets_track);
+		 }
+		],
+		[Button => "Add streets-accurate.bbd (all accurate GPS tracks)",
+		 -command => sub {
+		     add_any_streets_bbd($acc_streets_track);
+		 }
+		],
+		[Button => "Add streets-accurate-categorized.bbd",
+		 -command => sub {
+		     add_any_streets_bbd($acc_cat_streets_track);
+		 }
+		],
+	       ],
 	      ],
 	      [Button => "Add other-tracks.bbd (other people's GPS tracks)",
 	       -command => sub {
-		   my $f = $other_tracks;
-		   my $layer = add_new_layer("str", $f);
-		   set_layer_highlightning($layer);
-		   main::special_raise($layer, 0);
-	       }
-	      ],
-	      [Button => "Add streets.bbd (all GPS tracks)",
-	       -command => sub {
-		   my $f = $streets_track;
-		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
-		   my $layer = add_new_layer("str", $f);
-		   set_layer_highlightning($layer);
+		   add_any_streets_bbd($other_tracks);
 	       }
 	      ],
 	      [Button => "Add points-all.bbd (all GPS trackpoints)",
@@ -673,6 +665,14 @@ sub add_coords_data {
     my $f = "$bbbike_rootdir/tmp/$file";
     if ($main::coord_system ne 'standard') { $f .= "-orig" }
     add_new_layer("p", $f, NameDraw => $namedraw);
+}
+
+sub add_any_streets_bbd {
+    my $f = shift;
+    if ($main::coord_system ne 'standard') { $f .= "-orig" }
+    my $layer = add_new_layer("str", $f);
+    set_layer_highlightning($layer);
+    main::special_raise($layer, 0);
 }
 
 sub mark_layer_dialog {

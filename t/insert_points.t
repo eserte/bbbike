@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points.t,v 1.13 2009/01/20 21:50:15 eserte Exp $
+# $Id: insert_points.t,v 1.14 2009/02/01 17:25:03 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -41,7 +41,7 @@ my $dudenstr      = "9229,8785"; # ecke Mehringdamm
 my $dudenstr_orig = $dudenstr; # "8796,8817";
 
 BEGIN { $^W = 0 }
-my @methfesselstr = qw(8982,8781 9057,8936);
+my @methfesselstr = qw(8982,8781 9063,8935);
 BEGIN { $^W = 1 }
 
 for my $use_indexer (0, 1) {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.25 2008/08/28 21:04:31 eserte Exp $
+# $Id: Util.pm,v 1.25 2008/08/28 21:04:31 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -264,7 +264,7 @@ sub try_cache {
 	}) {
 	    # Prevent long filenames (very short on cygwin/MSWin32,
 	    # still short (< 256) on Unix systems)
-	    $filename = File::Basename::dirname($filename). "/" . Digest::MD5::md5_hex(File::Basename::basename($filename)) . ".cache";
+	    $filename = File::Basename::dirname($filename). "/bbbike_" . Digest::MD5::md5_hex(File::Basename::basename($filename)) . ".cache";
 	}
 
 	warn "Try $rw_text cache type $cache_type $rw_text_2 $filename ...\n"
@@ -383,7 +383,7 @@ sub valid_cache {
 sub get_cachefile {
     my($_cachefile) = @_;
     unless ($_cachefile =~ m|^/|) {
-	"$cachedir/${cacheprefix}_" . $< . "_" . $_cachefile;
+	"$cachedir/bbbike_${cacheprefix}_" . $< . "_" . $_cachefile;
     } else {
 	$_cachefile;
     }

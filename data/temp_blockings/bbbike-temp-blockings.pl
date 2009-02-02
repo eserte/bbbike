@@ -1609,7 +1609,7 @@ EOF
        text  => 'Die Stadthausstraße ist zwischen Türschmidtstraße und Archibaldweg gesperrt. Grund Bauarbeiten. Dauer: 14.03.05, 09.00 Uhr bis 18.03.05, 19.00 Uhr. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 15657,10846 15628,10915
+userdel	2 15674,10851 15649,10922
 EOF
      },
      { from  => 1112479200, # 2005-04-03 00:00
@@ -9321,7 +9321,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006236',
        data  => <<EOF,
-userdel	1::inwork 16032,10842 15670,10800 15388,10758 15272,10790
+userdel	1::inwork 16032,10842 15681,10801 15388,10758 15272,10790
 EOF
      },
      { from  => 1186081587, # 2007-08-02 21:06
@@ -12805,7 +12805,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010255',
        data  => <<EOF,
-userdel	1::inwork 16032,10842 15670,10800 15388,10758 15272,10790
+userdel	1::inwork 16032,10842 15681,10801 15388,10758 15272,10790
 EOF
      },
      { from  => 1223416800, # 2008-10-08 00:00
@@ -13104,7 +13104,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010255',
        data  => <<EOF,
-userdel	1::inwork 16032,10842 15670,10800 15388,10758 15272,10790
+userdel	1::inwork 16032,10842 15681,10801 15388,10758 15272,10790
 EOF
      },
      { from  => 1228431600, # 2008-12-05 00:00
@@ -13193,7 +13193,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_011081',
        data  => <<EOF,
-userdel	1::inwork 10742,19632 10393,19587 10249,19541
+userdel	1::inwork 10742,19632 10377,19565 10249,19541
 EOF
      },
      { from  => 1229554800, # 2008-12-18 00:00

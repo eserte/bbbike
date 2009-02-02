@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.31 2009/01/18 00:41:33 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.32 2009/02/02 22:56:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -22,8 +22,8 @@ package main;
 
 use Strassen;
 use strict;
-use vars qw(%lazy_str_drawn %lazy_str
-	    %lazy_p_drawn %lazy_p %lazy_p_subs
+use vars qw(%lazy_str_drawn %lazy_str %lazy_str_args
+	    %lazy_p_drawn %lazy_p %lazy_p_args %lazy_p_subs
 	    %lazy_known_grids $lazy_master);
 use vars qw($xadd_anchor $yadd_anchor @extra_tags $ignore);
 use BBBikeGlobalVars;
@@ -130,7 +130,7 @@ sub BBBikeLazy::bbbikelazy_empty_setup {
 # XXX for now "-orig" has to be specified unlike in other functions
 # like main::plotstr
 sub BBBikeLazy::bbbikelazy_add_data {
-    my($type, $abk, $file_or_object) = @_;
+    my($type, $abk, $file_or_object, $argsref) = @_;
     my $file;
     if (!UNIVERSAL::isa($file_or_object, "Strassen")) {
 	$file = $file_or_object;
@@ -166,6 +166,7 @@ sub BBBikeLazy::bbbikelazy_add_data {
 	if (!defined $lazy_master) {
 	    $lazy_master = $lazy_str{$abk};
 	}
+	$lazy_str_args{$abk} = { $argsref && exists $argsref->{Width} ? (Width => $argsref->{Width}) : () };
     } elsif ($type eq 'p') {
 	my $def = [$abk, $file];
 	push @defs_p, $def;
@@ -174,6 +175,7 @@ sub BBBikeLazy::bbbikelazy_add_data {
 	if (!defined $lazy_master) {
 	    $lazy_master = $lazy_p{$abk};
 	}
+	$lazy_p_args{$abk} = { $argsref && exists $argsref->{Width} ? (Width => $argsref->{Width}) : () };
     } else {
 	die "type has to be either str or p, not $type";
     }
@@ -448,7 +450,7 @@ sub BBBikeLazy::plotstr_on_demand {
 		$do_street_name_experiment = 1;
 	    }
 	    my %category_width;
-	    my $default_width = get_line_width($abk) || 4;
+	    my $default_width = $lazy_str_args{$abk}->{Width} || get_line_width($abk) || 4;
 	    #XXX skalieren...
 	    {
 		foreach (keys %line_width) {
@@ -511,7 +513,7 @@ sub BBBikeLazy::plotstr_on_demand {
 	    next if $abk eq 'o';
 	    next if !$lazy_p{$abk}; # XXX should not happen, but it happens
 # 	    my %category_width;
- 	    my $default_width = 4;
+ 	    my $default_width = $lazy_p_args{$abk}->{Width} || 4;
 # 	    #XXX skalieren...
 # 	    {
 # 		foreach (keys %line_width) {
