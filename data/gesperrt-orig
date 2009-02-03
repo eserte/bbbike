@@ -581,8 +581,6 @@ Jebensstr.	1 5587,11397 5459,11135
 Breitenbachplatz	1 4125,6728 4089,6668 3983,6599 3925,6604 3938,6651 4021,6729 4084,6766
 Südwestkorso	1 4084,6766 4206,6820
 Südwestkorso	1 4206,6820 4125,6728
-#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
-Friedbergstr.	1 3012,10812 3204,10895
 Kleine Markusstr. - Krautstr.	1 12021,12066 11937,12127 11967,12042 12005,12018
 Schönstedtstr.	1 12540,8458 12649,8535
 ######################################################################
@@ -746,6 +744,7 @@ Zeltinger Platz	1s:q3 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 248
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Berliner Allee: Straßenbahntrasse	3nocross 14619,16682 14608,16772 14559,16912
 #: note: Luftbild
 Gülzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22424,12183
 Oranienburger Str. (Wittenau): Mittelstreifen	3nocross 5350,21251 5357,21199 5391,21003
@@ -900,7 +899,7 @@ Märkische Allee: Linksabbiegen verboten	3nocross 20109,16305 20219,16523 20339,1
 #: XXX: wahrscheinlich (ich wurde durch einen anonymen Kommentar bestätigt)
 Märkische Allee: Linksabbiegen verboten	3nocross 20512,17101 20691,17463 20717,17516 20843,17745 20889,17838 20912,17872 21009,18055
 Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17703,17990 17843,18078
-Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13389,10808 13483,10769 13596,10722
+Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13389,10808 13496,10763 13596,10722
 Stralauer Allee: unbequemes Abbiegen	3nocross 13596,10722 13678,10685 13779,10642
 Stralauer Allee: unbequem passierbare Straße	3nocross 14222,10430 14405,10340 14558,10264
 Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 12630,8722 12742,8635 12772,8612
@@ -953,6 +952,7 @@ Holzmarktstr.: Mittelstreifen	3nocross 11963,11813 11919,11856 11768,12006
 Am Juliusturm/Havelbrücke: Mittelstreifen	3nocross -3014,14559 -2946,14533 -2829,14506
 Mehringdamm/Baruther: Mittelstreifen	3nocross 9334,9670 9387,9804 9444,9919
 Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3 8438,8676 8334,8655 8371,8543
+Mehringdamm/Wilhelmshöhe: Mittelstreifen	3nocross 9224,9053 9225,9111 9248,9350
 #
 ####################################################################
 #

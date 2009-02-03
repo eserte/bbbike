@@ -1846,7 +1846,6 @@ Neuwarper Pfad: Qualität?	? -1546,24143 -1437,24015 -1347,24096
 Labeser Weg: Qualität?	? -1224,24012 -1131,24107 -1059,24155
 Freester Weg: Qualität?	? -1165,23944 -1111,23987 -1059,24033 -998,24096
 Karwitzer Pfad: Qualität?	? -833,23935 -896,23872 -957,23810 -1009,23754
-Caseler Str.: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, nur für Autofahrer oder auch für Radfahrer? Kann die Berliner Allee in Höhe der Caseler Str. überquert werden?	? 14608,16772 14700,16790 14732,16770
 Bernkasteler Str.: Sind Teile der Straße eine Einbahnstraße? Wenn ja, nur für Autofahrer oder auch für Radfahrer?	? 14559,16912 14673,16895 14800,16887 14923,16914 14923,16901 15015,16908 15208,16939 15334,16961 15455,16984
 Wittlicher Str.: Qualität?	? 15178,17134 15188,17055 15208,16939 15235,16761
 Brodenbacher Weg: Qualität? Sind Teile der Straße eine Einbahnstraße? Wenn ja, nur für Autofahrer oder auch für Radfahrer? Können Radfahrer zur Piesporter Str. durchfahren?	? 14897,17093 15178,17134 15278,17152 15300,17165
@@ -2143,7 +2142,6 @@ Harfenweg: Qualität?	? 11787,20739 11738,20797 11679,20830 11633,20792
 Zitherstr.: Qualität?	? 11844,20787 11797,20838 11657,20915
 #: XXX unzureichender Eintrag von anonymous "Q1". Auf dem Luftbild sieht es eher nach Kopfsteinpflaster aus
 Stienitzseestr.: Qualität?	? 20329,3928 20522,4056 20694,4177
-Waldstr. (Adlershof): Qualität?	? 20834,4035 20790,4114 20694,4177 20623,4227 20540,4285
 #: XXX unklarer Eintrag von anonymous: guter Asphalt (sieht eher nach Beton aus), aber Bordsteinkanten?
 Martiusweg: Qualität?	? 9411,1406 9314,1451 9236,1484 9155,1519 9145,1527
 #: XXX anonymous meint nur "gut": vvv
@@ -2237,7 +2235,8 @@ Wittgensteiner Weg: Qualität?	? -4737,14862 -4729,14958 -4720,15087 -4713,15191 
 Steigerwaldstr.: Qualität?	? -4710,15530 -4701,15563 -4639,15726 -4655,15803 -4656,15839 -4653,15896 -4630,15978
 #: XXX: unklarer Eintrag von Kai Güschow: Q1, Asphalt, q2?
 Oelsnitzer Str.: Qualität?	? 23989,14307 24099,14355 24133,14444 24162,14487
-U-Bhf. Cottbusser Platz - Auerbacher Ring: Qualität?	? 23563,14473 23592,14469 23635,14475 23669,14461
+#: XXX laut uv.weber gute Qualität, aber ohne genauere Angabe:
+U-Bhf. Cottbusser Platz - Auerbacher Ring: Art des Wegbeschaffenheit (Beton, Asphalt, Feinsplitt, oder etwas anderes)?	? 23563,14473 23592,14469 23635,14475 23669,14461
 Maxie-Wander-Str. - Kastanienallee: Durchfahrt für Radfahrer möglich? Qualität?	? 23826,14292 23877,14315
 Sandbacher Weg: Qualität?	? 23504,-938 23407,-981 23073,-1119 22845,-1210 22720,-1255 22482,-1226 22322,-1207 22146,-1183 21930,-1159
 Wiesenstr.: Qualität?	? 22795,-1055 22973,-978 23356,-825 23502,-770
@@ -3411,3 +3410,6 @@ Simonring: Qualität?	? -945,14999 -896,14888 -836,14765
 Stöckelstr.: Qualität?	? -896,14888 -784,14940 -663,14996
 Kanalstr. (Spandau): Qualität?	? -735,15280 -593,15300
 Schwerter Weg: Qualität?	? -692,15487 -676,15370
+#: XXX laut uv.weber "Beton" oder "gewalzter Feinsplitt":
+Kastanienallee - U-Bhf. Hönow: genaue Wegführung (möglichst GPS-Track)? Qualität?	? 23723,14595 23743,14613 23931,14696 23994,14726 24263,14840 24357,14851 24542,14940 24725,14989 25035,15082 25312,15078 25334,15051 25499,15010 25742,14907 25866,14898 25932,14955 25991,14926
+Iselbergstr.: Qualität zwischen Baltenring und Peter-Huchel-Str.?	? 23658,13406 23536,13429 23460,13454
