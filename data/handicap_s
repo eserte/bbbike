@@ -29,8 +29,8 @@ Wilmersdorfer Str.: starker Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone), nachts und sonntag
 Am M¸ggelsee: Fuﬂg‰nger	q2 26006,2615 26151,2624 26339,2667 26457,2660 26627,2610 26868,2580 27135,2500 27173,2444 27267,2414 27372,2434 27517,2523 27565,2569 27743,2842 27822,2910 27945,3006 28292,3150 28496,3253
 Pestalozzistr.: Fuﬂg‰ngerzone	q3 3721,11230 3770,11231 3822,11224
 (Zufahrt am NKZ): Bordsteine, Fuﬂg‰nger/Lieferverkehr	q3 11291,10438 11311,10505 11343,10528
-Alexanderplatz: Fuﬂg‰ngerverkehr	q2 11139,13008 10960,12809 10923,12779
-Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10960,12809 10844,12935
+Alexanderplatz: Fuﬂg‰ngerverkehr	q2 11139,13008 10970,12822 10923,12779
+Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944
 Gontardstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10740,12960 10793,12906 10923,12779
 Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 15793,8984 15653,8989 15527,9096 15513,9144 15432,9322 15321,9448 15140,9566 14910,9643 14697,9726 14671,9759 14500,9856 14483,9843 14451,9927
 (S-Bahnhof - Treptower Hafen): Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14351,9757 14436,9784 14483,9843
@@ -620,8 +620,8 @@ Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5347,
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12403,13755 12436,13719 12482,13705 12594,13747 12658,13809
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12771,13603 12737,13593 12727,13571 12582,13519 12483,13418
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12483,13418 12605,13356
-(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12438,13387 12344,13320 12248,13254
-(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12382,13262 12344,13320 12290,13356 12176,13366 12148,13348
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12438,13387 12344,13320 12248,13254 12231,13233
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12382,13262 12344,13320 12281,13325 12166,13349 12148,13348
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12141,13609 12023,13598 12038,13685
 (Zufahrt Landsberger Allee): Fuﬂg‰nger	q2 13433,13346 13397,13426 13574,13505
 (Verl‰ngerte Wallenbergstr.): Fuﬂg‰nger, schmal	q3 4139,8485 4029,8482
@@ -1033,4 +1033,3 @@ Behrenstr./Bebelplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::ignd
 Halenseestr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 2277,9801 2167,10004 2121,10089 1988,10328 1957,10426
 Zeltinger Platz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
 (Los-Angeles-Platz): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 5681,10696 5822,10609
-Weidenweg (Friedrichshain): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 13678,12571 13608,12547

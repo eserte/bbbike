@@ -137,7 +137,7 @@ Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 12026,11348
 Pannierstr.	1 12202,8895 12242,8972
 Stolzenfelsstr.	1 19468,8168 19425,8140 19333,8165 19171,8280 18949,8437 18787,8540 18722,8582
 Dönhoffstr.	1 18726,8633 18609,8717 18514,8773 18447,8818 18372,8869 18296,8920 18201,8984 18124,9056
-Bersarinplatz	1 13742,12538 13698,12544 13678,12571 13686,12611 13710,12633 13747,12642 13767,12626 13776,12571 13742,12538
+Bersarinplatz	1 13742,12538 13698,12544 13678,12571 13686,12611 13701,12628 13747,12642 13767,12626 13776,12571 13742,12538
 Petersburger Platz	1 13467,12978 13558,12766
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
 #Anscheinend hier keine Einbahnstraße, vielleicht weiter nördlich auch nicht: Burgstr.	1 10171,12769 10132,12941
@@ -441,7 +441,7 @@ Heimat	1 1032,1325 994,1485 968,1479 941,1603
 Plonzstr.	1 16227,12280 16252,12411
 #: by: MIchael Wedel:
 Techowpromenade	1 5219,20467 5185,20358 5173,20275 5170,20182
-(Kastanienallee - Schönhauser Allee)	1 10895,14951 10838,14962
+(Kastanienallee - Schönhauser Allee)	1 10884,14952 10838,14962
 Lossebergplatz	1 16070,23566 16094,23554 16095,23539 16079,23535 16064,23547 16070,23566
 #: XXX Annahme, da Radweg am Dammfuß verläuft
 Spindlersfelder Str.	2 21316,3662 21127,4180 21121,4234 21080,4702 21075,4769 21065,4957
@@ -583,6 +583,7 @@ Südwestkorso	1 4084,6766 4206,6820
 Südwestkorso	1 4206,6820 4125,6728
 Kleine Markusstr. - Krautstr.	1 12021,12066 11937,12127 11967,12042 12005,12018
 Schönstedtstr.	1 12540,8458 12649,8535
+Eckertstr.	1 13608,12547 13522,12748
 ######################################################################
 #
 # Potsdam
@@ -748,7 +749,6 @@ Berliner Allee: Straßenbahntrasse	3nocross 14619,16682 14608,16772 14559,16912
 #: note: Luftbild
 Gülzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22424,12183
 Oranienburger Str. (Wittenau): Mittelstreifen	3nocross 5350,21251 5357,21199 5391,21003
-Lindenstr.: Betonblöcke	3nocross 9777,10719 9805,10791 9935,11067
 Oranienburger Str.: Straßenbahnhaltestelle	3nocross 9215,13392 9281,13374 9415,13315
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12046,16568
 Schnellerstr.: Mittelstreifen	3nocross 16713,6839 16674,6885 16568,7009
@@ -794,7 +794,7 @@ Schönholzer Str.: Straßenbahn auf der Fahrbahn	3nocross 10089,18180 10054,18210 
 Müggelheimer Str.: Straßenbahntrasse	3nocross 22686,4310 22812,4236 22965,4124
 #: note: Luftbild: vvv
 Prenzlauer Promenade.: Straßenbahntrasse	3nocross 12054,16517 12077,16380 12097,16263
-Petersburger Str.: Straßenbahntrasse	3nocross 13631,12799 13579,12904 13537,13003
+Petersburger Str.: Straßenbahntrasse	3nocross 13626,12797 13579,12904 13537,13003
 Petersburger Str.: Straßenbahntrasse	3nocross 13537,13003 13487,13115 13437,13228
 Petersburger Str.: Straßenbahntrasse	3nocross 13334,13459 13378,13353 13393,13326 13437,13228
 #: note: ^^^
@@ -835,7 +835,7 @@ Bornhomer Str.: Straßenbahntrasse	3nocross 10620,16497 10533,16505 10458,16509
 Bornhomer Str.: Straßenbahntrasse	3nocross 10458,16509 10370,16516 10282,16522 10197,16528
 Karl-Liebknecht-Str./Rosenstr.: Straßenbahntrasse	3nocross 10437,12703 10528,12785 10699,12929
 Martin-Luther-Str.: Mittelstreifen	3nocross 6502,9782 6512,9866 6514,9947
-Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 11013,16278 11003,16196 10994,16120
+Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 10997,16280 10990,16197 10982,16121
 Oberspreestr.: Straßenbahntrasse	3nocross 21579,4579 21726,4537 21796,4517
 Oberspreestr.: Straßenbahntrasse	3nocross 21332,4655 21389,4635 21494,4605
 Hermannstr.: Gitter auf Mittelstreifen	3nocross 11898,8362 11920,8252 11931,8206
@@ -852,9 +852,9 @@ Bundesallee: Straßentunnelrampe	3nocross 5505,8832 5510,8709 5513,8588
 Unter den Eichen: Straßentunnelrampe	3nocross 2817,4158 2944,4241 3048,4305
 Bundesallee: Absperrung auf dem Mittelstreifen	3nocross 5510,8709 5513,8588 5481,8506 5444,8406 5421,8337
 Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9213,5187 9185,5271 9182,5332 9171,5397 9147,5534
-Schönhauser Allee: U-Bahnviadukt	3nocross 10977,15944 10972,15895 10963,15789
-Schönhauser Allee: U-Bahnviadukt	3 10949,15674 10930,15522 11055,15504
-Berliner Str.: U-Bahnrampe	3nocross 10986,16897 10999,16830 11018,16730 11042,16605 11039,16553 11033,16464
+Schönhauser Allee: U-Bahnviadukt	3nocross 10971,15944 10964,15896 10953,15787
+Schönhauser Allee: U-Bahnviadukt	3 10938,15670 10917,15525 11055,15504
+Berliner Str.: U-Bahnrampe	3nocross 10986,16897 10999,16830 11018,16730 11026,16606 11027,16553 11019,16465
 Wisbyer Str.: Straßenbahn	3nocross 11688,16365 11727,16358 11807,16340 11828,16335 11887,16320
 #: note: laut Kristina Nazarek ist die Wisbyer Str. in Höhe Talstr. überquerbar
 Wisbyer Str.: Straßenbahn	3nocross 11887,16320 12026,16247 12091,16209
@@ -1330,8 +1330,6 @@ tragen (ca. 5 x 9 Stufen)	0:120 13858,13709
 Danziger Str.: Straßenbahnschienen	3nocross 12912,14084 12975,13990 13037,13897 13100,13803
 Danziger Str.: Straßenbahnschienen	3nocross 13100,13803 13166,13707 13225,13620 13228,13615
 Pintschstr.	1 13342,13185 13438,12965
-#: XXX Einbahnstraßenregelung genauer anschauen
-Weidenweg (Friedrichshain)	1s:q1 13678,12571 13608,12547
 Landsberger Allee	3nocross 12386,13085 12585,13118 12685,13135
 Landsberger Allee	3nocross 20525,15571 20641,15622 20796,15667
 Landsberger Allee: Straßenbahntrasse	3nocross 13640,13597 13708,13623 13862,13688

@@ -226,17 +226,17 @@ Händelallee	1 6082,12273 6130,12232 6280,12222 6265,12134 5998,12105 5961,12134
 Wundstr.	1 2252,11037 2272,11074 2346,11147
 Kühler Weg	1 841,9914 743,9772 616,9602
 Wilhelmstr.: vor der britischen Botschaft dauerhaft für Kfz gesperrt	2 8861,12125 8804,12280
-U-Bahnviadukt und Straßenbahn	3nocross::ignrte 11033,16464 11018,16358 11013,16278 11003,16196 10994,16120
-Schönhauser Allee -> Kuglerstr.: U-Bahnviadukt und Straßenbahn	3::igndisp 11033,16464 11018,16358 11253,16296
-Kuglerstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11253,16296 11018,16358 11013,16278
-Schönhauser Allee -> Erich-Weinert-Str.: U-Bahnviadukt und Straßenbahn	3::igndisp 11018,16358 11013,16278 11306,16194
-Schönhauser Allee -> Paul-Robeson-Str.: U-Bahnviadukt und Straßenbahn	3::igndisp 11003,16196 11013,16278 10754,16305
-Paul-Robeson-Str. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 10754,16305 11013,16278 11018,16358
-Paul-Robeson-Str. -> Erich-Weinert-Str.: U-Bahnviadukt und Straßenbahn	3::igndisp 10754,16305 11013,16278 11306,16194
-Erich-Weinert-Str. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11306,16194 11013,16278 11003,16196
-Erich-Weinert-Str. -> Paul-Robeson-Str.: U-Bahnviadukt und Straßenbahn	3::igndisp 11306,16194 11013,16278 10754,16305
-Rodenbergstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11268,16113 11003,16196 10994,16120
-Schönhauser Allee -> Rodenbergstr.: U-Bahnviadukt und Straßenbahn	3::igndisp 11013,16278 11003,16196 11268,16113
+U-Bahnviadukt und Straßenbahn	3nocross::ignrte 11019,16465 11004,16360 10997,16280 10990,16197 10982,16121
+Schönhauser Allee -> Kuglerstr.: U-Bahnviadukt und Straßenbahn	3::igndisp 11019,16465 11004,16360 11253,16296
+Kuglerstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11253,16296 11004,16360 10997,16280
+Schönhauser Allee -> Erich-Weinert-Str.: U-Bahnviadukt und Straßenbahn	3::igndisp 11004,16360 10997,16280 11295,16199
+Paul-Robeson-Str. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 10754,16305 10997,16280 11004,16360
+Paul-Robeson-Str. -> Erich-Weinert-Str.: U-Bahnviadukt und Straßenbahn	3::igndisp 10754,16305 10997,16280 11295,16199
+Schönhauser Allee -> Paul-Robeson-Str.: U-Bahnviadukt und Straßenbahn	3::igndisp 10990,16197 10997,16280 10754,16305
+Erich-Weinert-Str. -> Paul-Robeson-Str.: U-Bahnviadukt und Straßenbahn	3::igndisp 11295,16199 10997,16280 10754,16305
+Erich-Weinert-Str. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11295,16199 10997,16280 10990,16197
+Schönhauser Allee -> Rodenbergstr.: U-Bahnviadukt und Straßenbahn	3::igndisp 10997,16280 10990,16197 11253,16118
+Rodenbergstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11253,16118 10990,16197 10982,16121
 Straßenbahn	3nocross::ignrte 11860,15309 11882,15384 11891,15413
 Prenzlauer Allee -> Lilli-Henoch-Str.: Straßenbahn	3::igndisp 11891,15413 11882,15384 11952,15374
 Ahlbecker Str. -> Prenzlauer Allee: Straßenbahn	3::igndisp 11638,15522 11882,15384 11891,15413
@@ -260,12 +260,14 @@ Fritz-Riedel-Str. -> Landsberger Allee: Straßenbahn	3::igndisp 13517,13778 13640
 Straßenbahn	3nocross::ignrte 21398,15671 21475,15705 21694,15802
 Landsberger Allee -> Pöhlbergstr: Straßenbahn	3::igndisp 21694,15802 21475,15705 21491,15671
 Pöhlbergstr -> Landsberger Allee: Straßenbahn	3::igndisp 21491,15671 21475,15705 21398,15671
-Topsstr.	1 10607,15142 10896,15250
-Schönhauser Allee	3nocross::ignrte 10917,15418 10930,15522 10949,15674
-Buchholzer Str. -> Schönhauser Allee: Schönhauser Allee	3::igndisp 11055,15504 10930,15522 10917,15418
-Buchholzer Str. -> Milastr.: Schönhauser Allee	3::igndisp 11055,15504 10930,15522 10786,15544
-Milastr. -> Buchholzer Str.: Schönhauser Allee	3::igndisp 10786,15544 10930,15522 11055,15504
-Milastr. -> Schönhauser Allee: Schönhauser Allee	3::igndisp 10786,15544 10930,15522 10949,15674
+Topsstr.	1 10607,15142 10886,15251
+Schönhauser Allee	3nocross::ignrte 10902,15422 10917,15525 10938,15670
+Buchholzer Str. -> Schönhauser Allee: Schönhauser Allee	3::igndisp 11055,15504 10917,15525 10902,15422
+Buchholzer Str. -> Milastr.: Schönhauser Allee	3::igndisp 11055,15504 10917,15525 10786,15544
+Schönhauser Allee -> Buchholzer Str.: Schönhauser Allee	3::igndisp 10938,15670 10917,15525 11055,15504
+Schönhauser Allee -> Milastr.: Schönhauser Allee	3::igndisp 10902,15422 10917,15525 10786,15544
+Milastr. -> Buchholzer Str.: Schönhauser Allee	3::igndisp 10786,15544 10917,15525 11055,15504
+Milastr. -> Schönhauser Allee: Schönhauser Allee	3::igndisp 10786,15544 10917,15525 10938,15670
 Am Kupfergraben	1 9754,12775 9810,12712 9867,12651 9912,12623
 Uthmannstr.	1 13150,7845 12914,7785
 Herrnhuter Str.	1 12898,7832 13103,7889
@@ -348,7 +350,7 @@ Straßenbahntrasse	3nocross::ignrte 14621,16563 14619,16672 14619,16682 14608,167
 Berliner Allee -> Falkenberger Str.: Straßenbahntrasse	3::igndisp 14608,16772 14619,16682 14723,16691
 Falkenberger Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14723,16691 14619,16682 14619,16672
 Berliner Allee -> Caseler Str.: Straßenbahntrasse	3::igndisp 14559,16912 14608,16772 14700,16790
-Sredzkistr. (ab Parkhaus Kulturbrauerei)	1 11101,14768 10909,14710
+Sredzkistr. (ab Parkhaus Kulturbrauerei)	1 11101,14768 10893,14705
 Bahnübergang nur für Fußgänger/Radfahrer	3 20627,12162 20624,12133 20610,12050
 Bahnübergang nur für Fußgänger/Radfahrer	3 20610,12050 20624,12133 20627,12162
 Straßenbahntrasse	3nocross::ignrte 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
@@ -696,16 +698,10 @@ Mittelstreifen	3nocross::ignrte 12114,12546 12134,12540 12360,12505
 Krautstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12118,12462 12134,12540 12114,12546
 Karl-Marx-Allee -> Krautstr.: Mittelstreifen	3::igndisp 12360,12505 12134,12540 12118,12462
 Mittelstreifen	3nocross::ignrte 10240,11740 10213,11728 9981,11689
-Niederwallstr. -> Gertraudenstr.: Mittelstreifen	3::igndisp 10196,11788 10213,11728 10240,11740
-Niederwallstr. -> Beuthstr.: Mittelstreifen	3::igndisp 10196,11788 10213,11728 10229,11618
-Niederwallstr. -> Spittelmarkt: Mittelstreifen	3::igndisp 10196,11788 10213,11728 10153,11666
 Gertraudenstr. -> Beuthstr.: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10229,11618
 Gertraudenstr. -> Spittelmarkt: Mittelstreifen	3::igndisp 10240,11740 10213,11728 10153,11666
-Beuthstr. -> Niederwallstr.: Mittelstreifen	3::igndisp 10229,11618 10213,11728 10196,11788
 Beuthstr. -> Leipziger Str.: Mittelstreifen	3::igndisp 10229,11618 10213,11728 9981,11689
 Beuthstr. -> Spittelmarkt: Mittelstreifen	3::igndisp 10229,11618 10213,11728 10153,11666
-Leipziger Str. -> Niederwallstr.: Mittelstreifen	3::igndisp 9981,11689 10213,11728 10196,11788
-Spittelmarkt -> Niederwallstr.: Mittelstreifen	3::igndisp 10153,11666 10213,11728 10196,11788
 Spittelmarkt -> Leipziger Str.: Mittelstreifen	3::igndisp 10153,11666 10213,11728 9981,11689
 Kleineweg: nur für Anlieger	2:Anlieger 9126,8025 9119,7805 9140,7650 9145,7522 9097,7469
 Friedrich-Wilhelm-Str.: In die andere Richtung nur für Anlieger	1 8385,5907 8282,5909
@@ -729,9 +725,9 @@ Winterfeldtstr. -> Alvenslebenstr.: Mittelstreifen	3::igndisp 7369,10018 7539,99
 Winterfeldtstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 7369,10018 7539,9970 7579,10183
 Potsdamer Str. -> Winterfeldtstr.: Mittelstreifen	3::igndisp 7526,9791 7539,9970 7369,10018
 Potsdamer Str. -> Alvenslebenstr.: Mittelstreifen	3::igndisp 7579,10183 7539,9970 7648,9944
-Mittelstreifen	3nocross::ignrte 10793,13785 10832,13877 10906,13950
-Fehrbelliner Str. -> Schönhauser Allee: Mittelstreifen	3::igndisp 10695,13952 10832,13877 10906,13950
-Schönhauser Allee -> Fehrbelliner Str.: Mittelstreifen	3::igndisp 10793,13785 10832,13877 10695,13952
+Mittelstreifen	3nocross::ignrte 10779,13793 10832,13877 10895,13961
+Schönhauser Allee -> Fehrbelliner Str.: Mittelstreifen	3::igndisp 10779,13793 10832,13877 10695,13952
+Fehrbelliner Str. -> Schönhauser Allee: Mittelstreifen	3::igndisp 10695,13952 10832,13877 10895,13961
 Straßenbahntrasse	3nocross::ignrte 21796,4517 21775,4470 21773,4440
 Rudower Str. -> Grünauer Str.: Straßenbahntrasse	3::igndisp 21585,4459 21775,4470 21796,4517
 Grünauer Str. -> Rudower Str.: Straßenbahntrasse	3::igndisp 21773,4440 21775,4470 21585,4459
@@ -779,3 +775,10 @@ Loewenhardtdamm -> Loewenhardtdamm: Mittelstreifen	3::igndisp 8371,8543 8334,865
 Loewenhardtdamm -> Höhndorfstr.: Mittelstreifen	3::igndisp 8306,8722 8334,8655 8438,8676
 Friedbergstr.	1 3012,10812 3204,10895
 Caseler Str.	1 14732,16770 14700,16790 14608,16772
+Betonblöcke (aber für Radfahrer passierbar)	3nocross::ignrte 9777,10719 9805,10791 9935,11067
+Lindenstr. -> Markgrafenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9777,10719 9805,10791 9786,10971
+Am Berlin Museum -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 10025,10755 9805,10791 9777,10719
+Am Berlin Museum -> Markgrafenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 10025,10755 9805,10791 9786,10971
+Markgrafenstr. -> Am Berlin Museum: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9786,10971 9805,10791 10025,10755
+Markgrafenstr. -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9786,10971 9805,10791 9935,11067
+Lindenstr. -> Am Berlin Museum: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9935,11067 9805,10791 10025,10755

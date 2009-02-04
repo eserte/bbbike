@@ -1896,7 +1896,7 @@ EOF
        text  => 'Danziger Str. (Prenzlauer Berg) Richtung Osten zwischen Schönhauser Allee und Knaackstr. Baustelle Fahrtrichtung gesperrt, Umleitung: Schönhauser Allee - Sredzkistr. - Knaackstr. (bis Mitte 09.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 10889,15045 11056,15009
+userdel	q4; 10881,15047 11056,15009
 EOF
      },
      { from  => 1115535600, # 2005-05-08 09:00
@@ -2229,7 +2229,7 @@ EOF
        text  => 'Einfahrt in die Kastanienallee wegen Bauarbeiten gesperrt, 16.07.2005-17.07.2005',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 10889,15045 10838,14962 10723,14772
+userdel	q4; 10881,15047 10838,14962 10723,14772
 EOF
      },
      { from  => 1121732314, # 2005-07-19 02:18
@@ -2237,7 +2237,7 @@ EOF
        text  => 'Pappelallee (Prenzlauer Berg) in beiden Richtungen zwischen Raumerstr. und Schönhauser Allee Baustelle, Straße vollständig gesperrt (bis 07.08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 11119,15385 10889,15045
+userdel	q4 11119,15385 10881,15047
 EOF
      },
      { from  => 1120341600, # 2005-07-03 00:00
@@ -5908,7 +5908,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003670',
        data  => <<EOF,
-userdel	1::inwork 11301,15668 11192,15721 11093,15771
+userdel	1::inwork 11301,15668 11158,15739 11086,15772
 EOF
      },
      { from  => 1166569200, # 2006-12-20 00:00
@@ -8022,7 +8022,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005412',
        data  => <<EOF,
-userdel	1::inwork 10963,15789 10713,15746 10564,15721 10423,15698
+userdel	1::inwork 10953,15787 10713,15746 10564,15721 10423,15698
 EOF
      },
      { from  => 1178402400, # 2007-05-06 00:00
@@ -8702,7 +8702,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005800',
        data  => <<EOF,
-userdel	1::inwork 10534,14460 10723,14772 10838,14962 10889,15045
+userdel	1::inwork 10534,14460 10723,14772 10838,14962 10881,15047
 EOF
      },
      { from  => undef, # 
@@ -12878,7 +12878,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008229',
        data  => <<EOF,
-userdel	1::inwork 10351,14981 10516,15039 10618,15076 10889,15045
+userdel	1::inwork 10351,14981 10516,15039 10618,15076 10881,15047
 EOF
      },
      { from  => 1226267354, # 2008-11-09 22:49
