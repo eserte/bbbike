@@ -134,16 +134,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_006819',
-         'until' => 1242424799,
-         'text' => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Mohrenstr. und Leipziger Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 05.2009)',
-         'from' => 1231707121,
-         'id' => 1194,
-         'data' => 'userdel	1::inwork 9220,11781 9234,11683 9268,11590
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -620,7 +611,16 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_010255',
+         'until' => 1235861999,
+         'text' => 'Nöldnerstr. (Lichtenberg) Richtung Karlshorster Str. zwischen Lückstr. und Karlshorster Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 02.2009)',
+         'from' => 1233866284,
+         'id' => 1547,
+         'data' => 'userdel	1::inwork 16032,10842 15681,10801 15388,10758 15272,10790
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -668,6 +668,43 @@ push @temp_blocking,
          'from' => 1231023600,
          'id' => 1562,
          'data' => 'userdel	1::inwork -25441,21563 -25466,21523 -25542,21416
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
+         'from' => undef,
+         'id' => 1563,
+         'data' => 'userdel	1::inwork 12048,10097 12229,10014 12398,9938
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_009981',
+         'until' => 1246399199,
+         'text' => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Behrenstr. und Jägerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 06.2009)',
+         'from' => 1233866195,
+         'id' => 1564,
+         'data' => 'userdel	1::inwork 9164,12172 9183,12076 9201,11968
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1237244400,
+         'text' => 'K 6161 Friedenstr. Bahnübergang in Eichwalde Gleisbauarbeiten Vollsperrung 02.03.2009-16.03.2009 ',
+         'from' => 1235862000,
+         'id' => 1565,
+         'data' => 'userdel	2::inwork 25185,-3955 25212,-4025 25269,-4041 25320,-4049
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1235257200,
+         'text' => 'L 035 Saarower Chaussee/ Friedensstr. Autobahnbrücke Friedensstr. in Fürstenwalde Ri. Petersdorf Brückenabbruch 16.02.2009-21.02.2009 ',
+         'from' => 1234652400,
+         'id' => 1566,
+         'data' => 'userdel	1::inwork 56428,-6340 56416,-7090
 ',
          'type' => 'gesperrt'
        }

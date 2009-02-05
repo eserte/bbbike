@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassennetz.t,v 1.22 2009/01/24 09:11:38 eserte Exp $
+# $Id: strassennetz.t,v 1.23 2009/02/05 22:19:09 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -95,7 +95,7 @@ if ($do_xxx) {
 	no warnings qw(qw);
 	my $route = [ map { [ split /,/ ] }
 		      qw(
-			 11055,15504 10930,15522 10917,15418
+			 11055,15504 10917,15525 10902,15422
 			) ];
 	my $comment;
 	($comment) = $net->get_point_comment($route, 0, undef);

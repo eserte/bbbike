@@ -1422,7 +1422,7 @@ EOF
        text  => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzendorf, Kanal- und Straßenbau Vollsperrung 30.06.2005-30.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 25185,-3955 23463,-4466
+userdel	q4 25185,-3955 23397,-4525
 EOF
      },
      { from  => 1107475200, # 2005-02-04 01:00
@@ -6827,7 +6827,7 @@ EOF
        text  => 'K 6161 Friedensstr. Bahnübergang in der OD Eichwalde Gleisbauarbeiten Vollsperrung 15.12.2006-19.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 25185,-3955 25269,-4041 25368,-4182
+userdel	2::inwork 25185,-3955 25212,-4025 25269,-4041 25320,-4049
 EOF
      },
      { from  => 1166050800, # 2006-12-14 00:00
@@ -10069,7 +10069,7 @@ userdel	2::inwork -20021,54750 -20798,54347 -21553,54152 -22376,53427 -23839,527
 EOF
      },
      { from  => 1231707121, # 2009-01-11 21:52
-       until => 1242424799, # 2009-05-15 23:59
+       until => 1233866355, # 2009-05-15 23:59 1242424799
        text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Mohrenstr. und Leipziger Str. Baustelle, Fahrtrichtung gesperrt (bis Mitte 05.2009)',
        type  => 'gesperrt',
        source_id => 'IM_006819',
@@ -13098,9 +13098,9 @@ EOF
 userdel	1::inwork 11242,11720 11324,11689 11574,11594
 EOF
      },
-     { from  => 1228340492, # 2008-12-03 22:41
-       until => 1233442799, # 2009-01-31 23:59
-       text  => 'Nöldnerstr. (Lichtenberg) Richtung Karlshorster Str. zwischen Lückstr. und Karlshorster Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 01.2009)',
+     { from  => 1233866284, # 2009-02-05 21:38
+       until => 1235861999, # 2009-02-28 23:59
+       text  => 'Nöldnerstr. (Lichtenberg) Richtung Karlshorster Str. zwischen Lückstr. und Karlshorster Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 02.2009)',
        type  => 'gesperrt',
        source_id => 'IM_010255',
        data  => <<EOF,
@@ -13236,6 +13236,39 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1::inwork -25441,21563 -25466,21523 -25542,21416
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # 
+       text  => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 12048,10097 12229,10014 12398,9938
+EOF
+     },
+     { from  => 1233866195, # 2009-02-05 21:36
+       until => 1246399199, # 2009-06-30 23:59
+       text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Behrenstr. und Jägerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 06.2009)',
+       type  => 'gesperrt',
+       source_id => 'IM_009981',
+       data  => <<EOF,
+userdel	1::inwork 9164,12172 9183,12076 9201,11968
+EOF
+     },
+     { from  => 1235862000, # 2009-03-01 00:00
+       until => 1237244400, # 2009-03-17 00:00
+       text  => 'K 6161 Friedenstr. Bahnübergang in Eichwalde Gleisbauarbeiten Vollsperrung 02.03.2009-16.03.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 25185,-3955 25212,-4025 25269,-4041 25320,-4049
+EOF
+     },
+     { from  => 1234652400, # 2009-02-15 00:00
+       until => 1235257200, # 2009-02-22 00:00
+       text  => 'L 035 Saarower Chaussee/ Friedensstr. Autobahnbrücke Friedensstr. in Fürstenwalde Ri. Petersdorf Brückenabbruch 16.02.2009-21.02.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1::inwork 56428,-6340 56416,-7090
 EOF
      },
     );
