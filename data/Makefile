@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.207 2009/02/01 14:07:43 eserte Exp $
+# $Id: Makefile,v 2.209 2009/02/06 21:44:57 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -264,7 +264,7 @@ wasserstrassen-lowres:  wasserstrassen wasserumland wasserumland2 \
 	cat wasserstrassen wasserumland wasserumland2 |\
 	    $(GREPSTRASSEN) --catrx '^(W1|W2|F:W)$$' --minarea 3 >> $@~
 #	$(PERL) $(MISCSRCDIR)/simplify_streets -simplify-coefficient 0.04 $@~ > $@~~
-	$(PERL) $(MISCSRCDIR)/simplify_streets -tolerance 300 -algorithm 'douglas-peuker' $@~ > $@~~
+	$(PERL) $(MISCSRCDIR)/simplify_streets -tolerance 300 -algorithm 'douglas-peucker' $@~ > $@~~
 	rm $@~
 	mv -f $@~~ $@
 	-@$(READONLY) $@
@@ -967,7 +967,7 @@ ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd:	fragezeichen ${DATADIR}/strassen $
 # CHECKS
 
 # allow one error, and fail if the 2nd one is encountered
-FOREVER_TWO_ERRORS=	perl -e  '$$cmd=shift; while() { system($$cmd); exit 2 if $$? == 2; $$count = $$? == 0 ? 0 : $$count+1; exit 1 if $$count >= 2; sleep 30 }'
+FOREVER_TWO_ERRORS=	perl -MFcntl=:flock -e  'open LOCK, ">", ".check_forever.lck" or die $$!; flock LOCK, LOCK_EX|LOCK_NB or die $$!; $$cmd=shift; while() { system($$cmd); exit 2 if $$? == 2; $$count = $$? == 0 ? 0 : $$count+1; exit 1 if $$count >= 2; sleep 30 } END { unlink ".check_forever.lck" }'
 
 check-forever:
 	-nice ${FOREVER_TWO_ERRORS} make check all

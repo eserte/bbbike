@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: simplify_streets,v 1.7 2008/06/21 22:14:15 eserte Exp $
+# $Id: simplify_streets,v 1.8 2009/02/06 21:45:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -34,7 +34,7 @@ GetOptions("simplify-coefficient=f" => \$medium_scale,
 	   "v" => \$v,
 	  )
     or die <<EOF;
-usage: $0 [-algorithm naive|douglas-peuker]
+usage: $0 [-algorithm naive|douglas-peucker]
           [-simplify-coefficient coeff] [-tolerance m]
           [-v] bbdfile
 
@@ -43,7 +43,7 @@ only suitable (sort-of) for simplifying maps which
 should appear on a low-resolution map like overview maps.
 
 -simplify-coefficient is used for the naive algorithm
--tolerance is used for the Douglas-Peuker algorithm.
+-tolerance is used for the Douglas-Peucker algorithm.
 EOF
 
 my $s = Strassen->new($ARGV[0]); # XXX PreserveComments is sort of buggy, commented out # , PreserveComments => 1);
@@ -53,7 +53,7 @@ create_transpose_subs();
 
 if ($algorithm eq 'naive') {
     naive($s);
-} elsif ($algorithm eq 'douglas-peuker' || $algorithm eq 'dp') {
+} elsif ($algorithm eq 'douglas-peucker' || $algorithm eq 'dp') {
     if (!defined $tolerance) {
 	# 1px is ... meters in reality
 	my($x1,$y1) = anti_transpose_ls_medium(0,0);
@@ -64,7 +64,7 @@ if ($algorithm eq 'naive') {
     $s->simplify($tolerance);
     $s->write("-");
 } else {
-    die "Unhandled algorithm <$algorithm>, please try 'naive' or 'douglas-peuker'";
+    die "Unhandled algorithm <$algorithm>, please try 'naive' or 'douglas-peucker'";
 }
 
 sub naive {

@@ -987,6 +987,12 @@ for my $osm_file (@osm_files) {
 		if (exists $tag{'url'}) {
 		    push @{$out{$out_file}}, ["#: url: $tag{url}"];
 		}
+		if (exists $tag{'old_name'}) {
+		    push @{$out{$out_file}}, ["#: oldname: $tag{old_name}"];
+		}
+		if (exists $tag{'alt_name'}) {
+		    push @{$out{$out_file}}, ["#: alias: $tag{alt_name}"];
+		}
 		push @{$out{$out_file}}, [$name, [map { $node2ll{$_} } @nodes], $cat];
 	    }
 	}
