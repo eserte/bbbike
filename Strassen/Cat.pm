@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Cat.pm,v 1.17 2008/08/16 10:54:01 eserte Exp eserte $
+# $Id: Cat.pm,v 1.18 2009/02/07 19:52:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
 
 use File::Basename qw(basename);
 
@@ -54,6 +54,14 @@ use vars qw(%filetype_to_cat %file_to_cat);
      "ubahn"	      => [qw(U0 UA UB UC UBau)],
      "wasserstrassen" => [qw(F:I F:W F:W0 F:W1 F:W2 W W0 W1 W2)],
      "*bahnhof_bg"    => [qw(bg bf)],
+    );
+
+my %older_file_to_cat =
+    ('3.16' => {
+		"flaechen" => [qw(F:Ae F:Cemetery F:Forest F:Green
+			          F:Industrial F:Orchard F:Mine
+			          F:P F:Pabove F:Sport)],
+	       }
     );
 
 %file_to_cat =
@@ -135,12 +143,21 @@ sub _normalize_filename {
 }
 
 sub get_validity_checker {
-    my($filename) = @_;
+    my($filename, %args) = @_;
+    my $bbbike_version = delete $args{BBBikeVersion};
+    die "Unhandled arguments: " . join(" ", %args) if %args;
+
     $filename = _normalize_filename($filename);
-    if (exists $file_to_cat{$filename}) {
+    my $allowed_cats;
+    if (defined $bbbike_version && exists $older_file_to_cat{$bbbike_version}->{$filename}) {
+	$allowed_cats = $older_file_to_cat{$bbbike_version}->{$filename};
+    } elsif (exists $file_to_cat{$filename}) {
+	$allowed_cats = $file_to_cat{$filename};
+    }
+    if ($allowed_cats) {
 	my %cat;
 	my @code;
-	for my $elem (@{ $file_to_cat{$filename} }) {
+	for my $elem (@$allowed_cats) {
 	    if (ref $elem eq 'CODE') {
 		push @code, $elem;
 	    } else {
@@ -197,8 +214,11 @@ sub check_cat {
 }
 
 sub check_file {
-    my $f = shift;
-    my $checker = get_validity_checker($f);
+    my($f, %args) = @_;
+    my $bbbike_version = delete $args{BBBikeVersion};
+    die "Unhandled arguments: " . join(" ", %args) if %args;
+
+    my $checker = get_validity_checker($f, BBBikeVersion => $bbbike_version);
     if (!$checker) {
 	warn "Cannot get validity checker for $f";
 	return 0;
@@ -216,6 +236,9 @@ sub check_file {
 	if (!$check_ret) {
 	    $errors++;
 	    warn "Errors in line " . $s->pos . ", category <$cat>: @msg\n";
+	    if (defined $bbbike_version) {
+		warn "Note that checks were done for BBBike version $bbbike_version.\n";
+	    }
 	}
     }
 

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.41 2009/02/01 14:13:06 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.44 2009/02/07 20:36:53 eserte Exp $
 #
 
 .ifndef COMMENTS_PARTIAL
@@ -461,6 +461,7 @@ mapfiles-shptree-gmake:
 	)
 
 # XXX more needed
+# XXX hmm, should "mapfiles" be included in this target name? Or should this one supplement another rule with the same name?
 cleanup-tmp:
 	-rm -f $(MAPFILES_TEMP_PREFIX)strassen-sorted \
 	       $(MAPFILES_TEMP_PREFIX)landstrassen-sorted \
@@ -469,8 +470,6 @@ cleanup-tmp:
 	       $(MAPFILES_TEMP_PREFIX)orte2-reversed
 
 mapfiles-dist:	mapfiles-without-reference-maps do-mapfiles-dist
-
-TODAY_DATE!=	date +'%Y%m%d'
 
 do-mapfiles-dist:
 	rm -rf /tmp/bbbike-b_de-esri
@@ -483,7 +482,7 @@ do-mapfiles-dist:
 mapfiles-sf-release:	do-mapfiles-dist
 	@echo "Really upload bbbike-b_de-esri-$(TODAY_DATE).tar.gz to SourceForge?"
 	@cd /tmp && ls -l bbbike-b_de-esri-$(TODAY_DATE).tar.gz
-	@echo "Press CTRL-C to abort."
+	@echo "Press CTRL-C to abort. Return to continue release."
 	@read yn
 	cd /tmp && sf-upload -groupid 19142 -packageid 207826 -r $(TODAY_DATE) -f bbbike-b_de-esri-$(TODAY_DATE).tar.gz
 

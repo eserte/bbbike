@@ -239,7 +239,7 @@ Knorrpromenade	1 14417,11640 14362,11493
 Hoppestr.	1 8617,18310 8482,18284
 Herbststr.	1 8465,18365 8634,18401
 Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
-Alt-Reinickendorf	1 7003,18715 6734,18728 6567,18812 6766,18794 7003,18715
+Alt-Reinickendorf	1 7003,18715 6869,18721 6734,18728 6572,18793 6716,18788 6801,18761 6879,18737 7003,18715
 Lauterstr.	1 5817,7223 5810,7337
 # laut Dominik hier keine Einbahnstraße: Friedrich-Wilhelm-Platz	1 5361,7423 5318,7424
 Friedrich-Wilhelm-Platz	1 5318,7424 5310,7325 5324,7205
@@ -710,7 +710,7 @@ Jahnstr.	1s:q3 11493,9128 11509,9392
 Waldweg	1s 25496,2429 24981,2580
 Schulenburgring	1s:q3 9027,8431 9022,8581 9006,8602
 #: note: die Straßenbahn fährt hier auch lang
-Neue Schönhauser Str.	1s:q1 10528,13243 10441,13195 10305,13211
+Neue Schönhauser Str.	1s:q1 10527,13257 10423,13215 10310,13227
 Alte Schönhauser Str.	1s:q2 10718,13625 10746,13673
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13027,7368
 Niemannstr.	1s:q3 14252,11368 14211,11229
@@ -745,6 +745,7 @@ Zeltinger Platz	1s:q3 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 248
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Klemkestr.: Mittelstreifen	3nocross 7492,18699 7609,18707 7690,18716
 Berliner Allee: Straßenbahntrasse	3nocross 14619,16682 14608,16772 14559,16912
 #: note: Luftbild
 Gülzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22424,12183
@@ -887,7 +888,7 @@ Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 12076,16129 12030,1596
 #: note: Luftbild:
 Prenzlauer Allee: Straßenbahntrasse	3nocross 11941,15586 11967,15700 11997,15834
 Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 11712,14868 11610,14886 11545,14897
-Torstr.: Mittelstreifen mit Straßenbahn	3nocross 10746,13673 10640,13700 10569,13719 10471,13745 10463,13747
+Torstr.: Mittelstreifen mit Straßenbahn	3nocross 10746,13673 10640,13700 10569,13719 10471,13745
 Yorckstr.: Linksabbiegen verboten (und unbequem)	3nocross 8192,9619 8097,9650 7938,9694
 Lichtenberger Str.: Mittelstreifen	3nocross 12028,12519 12006,12464 11920,12266
 Sachsendamm: unbequem passierbarer Mittelstreifen	3nocross 7696,7562 7859,7486 7946,7411
@@ -915,10 +916,10 @@ Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8777 7642,8815 7563,8871
 #: by: Andreas Mühlhausen: vvv
 Heerstr.: schlecht passierbar	3nocross -4063,11805 -4009,11789 -3707,11693
 Thielallee: nicht passierbarer Mittelstreifens	3nocross 2560,5044 2587,4965 2615,4885
-Mollstr.: Straßenbahntrasse	3nocross 11446,13294 11300,13390 11275,13407
+Mollstr.: Straßenbahntrasse	3nocross 11446,13294 11406,13321 11300,13390 11275,13407
 Otto-Braun-Str.: Straßenbahntrasse	3nocross 11723,13630 11646,13546 11550,13427 11535,13411 11464,13321 11446,13294
+Otto-Braun-Str.: Straßenbahntrasse	3nocross 11446,13294 11368,13170 11298,13063
 Otto-Braun-Str.: Mittelstreifen	3nocross 11368,13170 11298,13063 11275,13026 11228,12951
-Otto-Braun-Str.: Mittelstreifen	3nocross 11446,13294 11464,13321 11535,13411 11550,13427 11646,13546 11723,13630
 #: by: ^^^
 Karl-Marx-Allee: Mittelstreifen	3nocross 11228,12951 11295,12915 11589,12768 11635,12745
 #XXX del: Sperrung wird aufgehoben, Fußgänger konnten schon immer passieren: Neustädtische Kirchstr.: An der US-Botschaft	3nocross 9108,12635 9112,12499 9126,12413 9141,12320
@@ -1506,7 +1507,7 @@ Straßenbahn	3nocross 16837,17440 16947,17506 17159,17631
 Rudolf-Reusch-Str. [Wohngebiet]	1 15732,12562 15657,12562 15657,12648 15732,12650
 Letteallee	1 8226,17479 8110,17470 8014,17475 7845,17460 7684,17435
 Mickestr.	1 8185,17352 8134,17398 8110,17470
-Kühleweinstr.	1 8014,17475 8043,17282 8085,17225
+Kühleweinstr.	1 8014,17475 8043,17282 8088,17218
 Seekorso	1 -8828,6418 -8776,6425 -8682,6435 -8578,6462 -8470,6515 -8376,6579 -8354,6590 -8301,6635 -8249,6680 -8199,6720 -8144,6762 -8087,6806 -8032,6852 -7975,6900 -7921,6946 -7871,6990
 Seekorso	1 -7913,6931 -7965,6888 -8023,6842 -8081,6792 -8133,6751 -8185,6707 -8240,6663 -8291,6620 -8339,6578 -8364,6562 -8459,6495 -8571,6443 -8678,6414 -8775,6403 -8825,6400
 Schöneicher Str. (Hohenschönhausen)	1 16694,15658 16658,15627 16628,15532 16584,15489

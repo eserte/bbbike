@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.209 2009/02/06 21:44:57 eserte Exp $
+# $Id: Makefile,v 2.212 2009/02/07 20:36:31 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -110,6 +110,8 @@ SORT_GERMAN_LOCALE=	env LANG=${GERMAN_LOCALE} LC_CTYPE=${GERMAN_LOCALE} LC_ALL=$
 ## This seems to generate better results:
 COORDS_DATA_SORT_OPTS=	-f -t "|" -k 1,3
 #COORDS_DATA_SORT_OPTS=
+
+TODAY_DATE!=	date +'%Y%m%d'
 
 ######################################################################
 # META TARGETS
@@ -1350,7 +1352,7 @@ check-categories:	.check_categories
 		print "  Skip $$ARGV[0]...\n";\
 		exit 0;\
 	    }\
-	    exit !Strassen::Cat::check_file($$ARGV[0]);\
+	    exit !Strassen::Cat::check_file($$ARGV[0], BBBikeVersion => "3.16");\
 	' ${target}
 .endfor
 	touch $@
@@ -1542,161 +1544,6 @@ $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd: temp_blockings/bbbike-temp-blocki
 	' $> > $@
 
 ######################################################################
-# CGPSMAPPER TARGETS
-
-.if exists(/usr/ports/distfiles/cgpsmapper/cgpsmapper0081static)
-CGPSMAPPER?=	/usr/ports/distfiles/cgpsmapper/cgpsmapper0081static
-.elif exists(/usr/ports/distfiles/from_vran/cgpsmapper/cgpsmapper0081static)
-CGPSMAPPER?=	/usr/ports/distfiles/from_vran/cgpsmapper/cgpsmapper0081static
-.else
-CGPSMAPPER?=	/usr/local/bin/cgpsmapper-static
-.endif
-
-.if exists(/usr/ports/distfiles/cgpsmapper/sendmap17Lstatic)
-SENDMAP?=	/usr/ports/distfiles/cgpsmapper/sendmap17Lstatic
-.elif exists(/usr/ports/distfiles/from_vran/cgpsmapper/sendmap17Lstatic)
-SENDMAP?=	/usr/ports/distfiles/from_vran/cgpsmapper/sendmap17Lstatic
-.else
-SENDMAP?=	/usr/local/bin/sendmap17Lstatic
-.endif
-
-.if ${HOSTNAME} == "devpc01.iconmobile.de"
-# for some reason 115200 does not work...
-SENDMAP_ARGS?=	-s57600
-.else
-# This seems to default to 9600 or so, and it does not seem to be changable
-# at all...
-SENDMAP_ARGS?=
-.endif
-
-# cuaa0 on *BSD, ttyS0 on Linux
-.if exists(/dev/cuaa0)
-GPSPORT?=	/dev/cuaa0
-.else
-GPSPORT?=	/dev/ttyS0
-.endif
-
-BBD2POLISH?=		${MISCSRCDIR}/bbd2polish
-
-## The old and unused multi images. Nowadays only one image may be
-## uploaded at one time (bbbikeall)
-#CGPSMAPPER_FILES=	bbbike brb wide fragezeichen
-CGPSMAPPER_FILES=	bbbikequal bbbikeall
-CGPSMAPPER_MP_FILES=	${CGPSMAPPER_FILES:S/$/.mp/:S/^/${PERSISTENTTMPDIR}\//}
-CGPSMAPPER_IMG_FILES=	${CGPSMAPPER_FILES:S/$/.img/:S/^/${PERSISTENTTMPDIR}\//}
-
-cgpsmapper-output:	${CGPSMAPPER_MP_FILES}
-
-cgpsmapper-images:	${CGPSMAPPER_IMG_FILES}
-
-cgpsmapper-upload:	cgpsmapper-images cgpsmapper-upload-instructions
-
-## Formerly:
-#cgpsmapper-upload:	${SENDMAP} cgpsmapper-images do-cgpsmapper-upload
-
-do-cgpsmapper-upload:
-	@echo "Approx. upload time: half an hour for 1,7 MB data"
-	@echo "                     35 minutes   for 1,94 MB data"
-	-${SENDMAP} ${GPSPORT} ${SENDMAP_ARGS} ${CGPSMAPPER_IMG_FILES}
-
-cgpsmapper-upload-instructions:
-	@echo "Please mount the garmin device e.g. to /mnt/garmin"
-	@echo "and then do:"
-	@echo ""
-	@echo "    cp ../tmp/bbbikeall.img /mnt/garmin/garmin/gmapsupp.img"
-	@echo ""
-	@echo "or currently:"
-	@echo ""
-	@echo "    sudo mount /mnt/garmin/"
-	@echo "    cp ../tmp/bbbikequal.img /mnt/garmin/garmin/"
-	@echo "    cp ../tmp/bbbikequal.img /mnt/garmin/garmin/gmapsupp.img"
-	@echo "    cp ../tmp/bbbikeall.img /mnt/garmin/garmin/"
-	@echo "    sudo umount /mnt/garmin/"
-	@echo ""
-
-${PERSISTENTTMPDIR}/bbbike.mp:	${BBD2POLISH} \
-				${PERSISTENTTMPDIR}/non-faked-strassen wasserstrassen flaechen sbahn ubahn berlin faehren fragezeichen
-	${PERL} ${BBD2POLISH} -mapset b > $@
-
-${PERSISTENTTMPDIR}/brb.mp:	${BBD2POLISH} \
-				orte landstrassen wasserumland rbahn potsdam
-	${PERL} ${BBD2POLISH} -mapset brb > $@
-
-${PERSISTENTTMPDIR}/wide.mp:	${BBD2POLISH} \
-				orte2 landstrassen2 wasserumland2 deutschland
-	${PERL} ${BBD2POLISH} -mapset wide > $@
-
-${PERSISTENTTMPDIR}/fragezeichen.mp:	${BBD2POLISH} \
-				fragezeichen
-	${PERL} ${BBD2POLISH} -mapset fragezeichen > $@
-
-BBB2POLISH_MAPSET_ALL_SOURCES=	${PERSISTENTTMPDIR}/non-faked-strassen wasserstrassen flaechen sbahn ubahn berlin \
-				faehren fragezeichen \
-				orte landstrassen wasserumland rbahn potsdam \
-				orte2 landstrassen2 wasserumland2 deutschland
-
-${PERSISTENTTMPDIR}/bbbikeall.mp:	${BBD2POLISH} ${BBB2POLISH_MAPSET_ALL_SOURCES}
-	${PERL} ${BBD2POLISH} -mapset all > $@
-
-${PERSISTENTTMPDIR}/bbbikequal.mp:	${BBD2POLISH} ${BBB2POLISH_MAPSET_ALL_SOURCES}
-	${PERL} ${BBD2POLISH} -mapset all -strcatqual > $@
-
-.for i in ${CGPSMAPPER_FILES}
-${PERSISTENTTMPDIR}/$i.img: ${CGPSMAPPER} ${PERSISTENTTMPDIR}/$i.mp
-	-${CGPSMAPPER} ${PERSISTENTTMPDIR}/$i.mp
-.endfor
-
-${SENDMAP}:
-	wget http://www.cgpsmapper.com/download/sendmap17Lstatic.gz -O /tmp/sendmap17Lstatic.gz
-	gunzip /tmp/sendmap17Lstatic.gz
-	sudo install /tmp/sendmap17Lstatic ${SENDMAP}
-
-${CGPSMAPPER}:
-	wget http://www.cgpsmapper.com/download/cgpsmapper-static.gz -O /tmp/cgpsmapper-static.gz
-	gunzip /tmp/cgpsmapper-static.gz
-	sudo install /tmp/cgpsmapper-static ${CGPSMAPPER}
-
-######################################################################
-# combined map with OSM and BBBike map data
-
-MKGMAP=	java -jar /usr/local/src/mkgmap-r590/mkgmap.jar
-MAPSOURCE_DE_IMG=$(HOME)/doc/map/mapsource_de.img
-
-combined-map:	${PERSISTENTTMPDIR}/gmapsupp.img
-	@echo "* Now do an upload:"
-	@echo "sudo mount /mnt/garmin"
-	@echo "cp ${PERSISTENTTMPDIR}/gmapsupp.img /mnt/garmin/garmin/"
-	@echo "sudo umount /mnt/garmin"
-
-GMAPSUPP_SRC=	${PERSISTENTTMPDIR}/bbbikequal.img \
-		${PERSISTENTTMPDIR}/berlin_osm.img \
-		${PERSISTENTTMPDIR}/leipzig_osm.img
-
-## XXX This would be nice. But I ran out of memory if
-## adding this one. Even with -Xmx1024m:
-#.if exists(${MAPSOURCE_DE_IMG})
-#GMAPSUPP_SRC+=	${MAPSOURCE_DE_IMG}
-#.endif
-
-
-${PERSISTENTTMPDIR}/gmapsupp.img:	${GMAPSUPP_SRC}
-	cd ${PERSISTENTTMPDIR} && \
-	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC}
-
-${PERSISTENTTMPDIR}/berlin_osm.img:
-	${COMBINE_OSM} ${MISCDIR}/download/osm/{berlin,koenigs_wusterhausen,teltow,uckermark,usedom} > ${PERSISTENTTMPDIR}/berlin_combined.osm
-	cd ${PERSISTENTTMPDIR} && ( \
-	    ${MKGMAP} --description="Berlin und Umgebung OSM" --mapname=63240011 berlin_combined.osm && \
-	    mv 63240011.img berlin_osm.img )
-
-${PERSISTENTTMPDIR}/leipzig_osm.img:
-	${COMBINE_OSM} ${MISCDIR}/download/osm/leipzig > ${PERSISTENTTMPDIR}/leipzig.osm
-	cd ${PERSISTENTTMPDIR} && ( \
-	    ${MKGMAP} --description="Leipzig und Umgebung OSM" --mapname=63240012 leipzig.osm && \
-	    mv 63240012.img leipzig_osm.img )
-
-
-######################################################################
 # This will be removed someday if convert_orig_to_bbd is good enough
 
 do-doublechecks:	.doublecheck_strassen.tmp \
@@ -1833,3 +1680,4 @@ do-doublechecks:	.doublecheck_strassen.tmp \
 ######################################################################
 
 .include "Makefile.mapfiles"
+.include "Makefile.garmin"

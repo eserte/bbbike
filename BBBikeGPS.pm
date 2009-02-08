@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.48 2008/12/27 23:54:01 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.49 2009/02/08 22:25:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2008 Slaven Rezic. All rights reserved.
@@ -95,10 +95,12 @@ sub BBBikeGPS::gps_interface {
 	     -gpsdevice   => $gps_device,
 	     %extra_args,
 	    );
-	$modobj->transfer(-file => $file,
-			  -res => $res,
-			  -test => $extra_args{-test},
-			  -top => $top);
+	if ($modobj->transfer_to_file()) {
+	    $modobj->transfer(-file => $file,
+			      -res => $res,
+			      -test => $extra_args{-test},
+			      -top => $top);
+	}
     };
     if ($@) {
 	status_message

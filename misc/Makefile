@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.21 2009/01/05 22:09:55 eserte Exp eserte $
+# $Id: Makefile,v 1.22 2009/02/07 20:54:15 eserte Exp $
 #
 
 PERL=			perl
@@ -61,3 +61,20 @@ sparkassen_osm.bbd:	../data_berlin_osm_bbbike/_unhandled
 
 citibank_osm.bbd:	../data_berlin_osm_bbbike/_unhandled
 	perl -nle '/citibank/i and do { s{\tX }{\tIMG:/home/e/eserte/images/icons/citibank.gif }; print }' ../data_berlin_osm_bbbike/_unhandled > citibank_osm.bbd
+
+######################################################################
+# OSM downloads
+
+OSM_DOWNLOAD_DIR=	download/osm
+GERMANY_STATES=		berlin brandenburg hessen
+GERMANY_STATES_RULES=	${GERMANY_STATES:S/^/download-/:S/$/.osm.bz2/}
+
+osm-download-all:	${GERMANY_STATES_RULES}
+
+.for land in ${GERMANY_STATES}
+download-${land}.osm.bz2:
+# cd just for checking:
+	cd ${OSM_DOWNLOAD_DIR}
+	wget --continue http://download.geofabrik.de/osm/europe/germany/${land}.osm.bz2 -O ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2~
+	mv ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2~ ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2
+.endfor

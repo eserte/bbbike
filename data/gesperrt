@@ -213,7 +213,7 @@ Knorrpromenade	1 14417,11640 14362,11493
 Hoppestr.	1 8617,18310 8482,18284
 Herbststr.	1 8465,18365 8634,18401
 Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
-Alt-Reinickendorf	1 7003,18715 6734,18728 6567,18812 6766,18794 7003,18715
+Alt-Reinickendorf	1 7003,18715 6869,18721 6734,18728 6572,18793 6716,18788 6801,18761 6879,18737 7003,18715
 Lauterstr.	1 5817,7223 5810,7337
 Friedrich-Wilhelm-Platz	1 5318,7424 5310,7325 5324,7205
 Stolbergstr.	1 8850,6421 8834,6639
@@ -598,7 +598,7 @@ Stallschreiberstr.	1s 10489,11405 10620,11244 10678,11172
 Jahnstr.	1s 11493,9128 11509,9392
 Waldweg	1s 25496,2429 24981,2580
 Schulenburgring	1s 9027,8431 9022,8581 9006,8602
-Neue Schönhauser Str.	1s 10528,13243 10441,13195 10305,13211
+Neue Schönhauser Str.	1s 10527,13257 10423,13215 10310,13227
 Alte Schönhauser Str.	1s 10718,13625 10746,13673
 Kirchhofstr.	1s 13188,7590 13117,7471 13027,7368
 Niemannstr.	1s 14252,11368 14211,11229
@@ -623,6 +623,9 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,125
 Behrenstr./Bebelplatz	1s 9801,12245 9743,12239 9700,12234 9626,12227
 Halenseestr.	1s 2277,9801 2167,10004 2121,10089 1988,10328 1957,10426
 Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
+Mittelstreifen	3nocross::ignrte 7492,18699 7609,18707 7690,18716
+Klemkestr. -> Armbrustweg: Mittelstreifen	3::igndisp 7690,18716 7609,18707 7626,18606
+Armbrustweg -> Klemkestr.: Mittelstreifen	3::igndisp 7626,18606 7609,18707 7492,18699
 Straßenbahntrasse	3nocross::ignrte 14619,16682 14608,16772 14559,16912
 Caseler Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14700,16790 14608,16772 14619,16682
 Berliner Allee -> Caseler Str.: Straßenbahntrasse	3::igndisp 14559,16912 14608,16772 14700,16790
@@ -1068,7 +1071,7 @@ Küselstr. -> Zelterstr.: Straßenbahntrasse	3::igndisp 12058,15621 11967,15700 11
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 11712,14868 11610,14886 11545,14897
 Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11526,14693 11610,14886 11545,14897
 Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3::igndisp 11712,14868 11610,14886 11526,14693
-Mittelstreifen mit Straßenbahn	3nocross::ignrte 10746,13673 10640,13700 10569,13719 10471,13745 10463,13747
+Mittelstreifen mit Straßenbahn	3nocross::ignrte 10746,13673 10640,13700 10569,13719 10471,13745
 Angermünder Str. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10703,13832 10640,13700 10746,13673
 Torstr. -> Angermünder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 10569,13719 10640,13700 10703,13832
 Christinenstr. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10599,13775 10569,13719 10640,13700
@@ -1164,9 +1167,11 @@ Heerstr. -> Südpark: schlecht passierbar	3::igndisp -4063,11805 -4009,11789 -400
 nicht passierbarer Mittelstreifens	3nocross::ignrte 2560,5044 2587,4965 2615,4885
 Thielallee -> Hittorfstr.: nicht passierbarer Mittelstreifens	3::igndisp 2615,4885 2587,4965 2516,4936
 Hittorfstr. -> Thielallee: nicht passierbarer Mittelstreifens	3::igndisp 2516,4936 2587,4965 2560,5044
-Straßenbahntrasse	3nocross::ignrte 11446,13294 11300,13390 11275,13407
+Straßenbahntrasse	3nocross::ignrte 11446,13294 11406,13321 11300,13390 11275,13407
+Wadzeckstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11326,13196 11406,13321 11300,13390
+Mollstr. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11446,13294 11406,13321 11326,13196
 Mollstr. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11275,13407 11300,13390 11322,13421
-Mendelssohnstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11322,13421 11300,13390 11446,13294
+Mendelssohnstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11322,13421 11300,13390 11406,13321
 Straßenbahntrasse	3nocross::ignrte 11723,13630 11646,13546 11550,13427 11535,13411 11464,13321 11446,13294
 Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11613,13570 11646,13546 11723,13630
 Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11550,13427 11646,13546 11613,13570
@@ -1176,20 +1181,14 @@ Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11511,13429 115
 Otto-Braun-Str. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11464,13321 11535,13411 11511,13429
 Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11444,13335 11464,13321 11535,13411
 Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11446,13294 11464,13321 11444,13335
+Straßenbahntrasse	3nocross::ignrte 11446,13294 11368,13170 11298,13063
+Wadzeckstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11326,13196 11368,13170 11446,13294
+Otto-Braun-Str. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11298,13063 11368,13170 11326,13196
 Mittelstreifen	3nocross::ignrte 11368,13170 11298,13063 11275,13026 11228,12951
 Otto-Braun-Str. -> Berolinastr.: Mittelstreifen	3::igndisp 11368,13170 11298,13063 11440,12976
 Berolinastr. -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11440,12976 11298,13063 11275,13026
 Otto-Braun-Str. -> Str.nbahntrasse: Mittelstreifen	3::igndisp 11228,12951 11275,13026 11191,13080
 Str.nbahntrasse -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11191,13080 11275,13026 11298,13063
-Mittelstreifen	3nocross::ignrte 11446,13294 11464,13321 11535,13411 11550,13427 11646,13546 11723,13630
-Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11444,13335 11464,13321 11535,13411
-Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Mittelstreifen	3::igndisp 11446,13294 11464,13321 11444,13335
-Mendelssohnstr. -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11511,13429 11535,13411 11550,13427
-Otto-Braun-Str. -> Mendelssohnstr.: Mittelstreifen	3::igndisp 11464,13321 11535,13411 11511,13429
-Barnimstr. -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11605,13387 11550,13427 11535,13411
-Otto-Braun-Str. -> Barnimstr.: Mittelstreifen	3::igndisp 11646,13546 11550,13427 11605,13387
-Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11613,13570 11646,13546 11723,13630
-Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Mittelstreifen	3::igndisp 11550,13427 11646,13546 11613,13570
 Mittelstreifen	3nocross::ignrte 11228,12951 11295,12915 11589,12768 11635,12745
 Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3::igndisp 11228,12951 11295,12915 11362,12964
 Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11362,12964 11295,12915 11589,12768
@@ -1826,7 +1825,7 @@ Straßenbahn	3nocross::ignrte 16837,17440 16947,17506 17159,17631
 Rudolf-Reusch-Str. [Wohngebiet]	1 15732,12562 15657,12562 15657,12648 15732,12650
 Letteallee	1 8226,17479 8110,17470 8014,17475 7845,17460 7684,17435
 Mickestr.	1 8185,17352 8134,17398 8110,17470
-Kühleweinstr.	1 8014,17475 8043,17282 8085,17225
+Kühleweinstr.	1 8014,17475 8043,17282 8088,17218
 Seekorso	1 -8828,6418 -8776,6425 -8682,6435 -8578,6462 -8470,6515 -8376,6579 -8354,6590 -8301,6635 -8249,6680 -8199,6720 -8144,6762 -8087,6806 -8032,6852 -7975,6900 -7921,6946 -7871,6990
 Seekorso	1 -7913,6931 -7965,6888 -8023,6842 -8081,6792 -8133,6751 -8185,6707 -8240,6663 -8291,6620 -8339,6578 -8364,6562 -8459,6495 -8571,6443 -8678,6414 -8775,6403 -8825,6400
 Schöneicher Str. (Hohenschönhausen)	1 16694,15658 16658,15627 16628,15532 16584,15489

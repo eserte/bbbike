@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.54 2008/12/31 16:36:45 eserte Exp $
+# $Id: PDF.pm,v 2.55 2009/02/07 17:54:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004,2008 Slaven Rezic. All rights reserved.
@@ -33,7 +33,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.54 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.55 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -241,8 +241,14 @@ sub draw_map {
 			  ($flaechen_pass == 2 && $cat ne 'Pabove'))
 			);
 		$im->set_line_width(1);
-		$im->set_stroke_color(@{ $color{$cat} || [0,0,0] });
-		$im->set_fill_color  (@{ $color{$cat} || [0,0,0] });
+		if (my($r,$g,$b) = $cat =~ m{^\#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$}i) {
+		    ($r,$g,$b) = (hex($r)/255,hex($g)/255,hex($b)/255);
+		    $im->set_stroke_color($r,$g,$b);
+		    $im->set_fill_color($r,$g,$b);
+		} else {
+		    $im->set_stroke_color(@{ $color{$cat} || [0,0,0] });
+		    $im->set_fill_color  (@{ $color{$cat} || [0,0,0] });
+		}
 		for my $xy (@{$ss}[1 .. $#$ss]) {
 		    $im->lineto(@$xy);
 		}

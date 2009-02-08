@@ -1262,7 +1262,7 @@ EOF
        text  => 'Sophienstraße, zwischen Große Hamburger Straße und Rosenthaler Straße, für den Fahrzeugverkehr gesperrt (9. Umwelt- und Weihnachtsmarkt). Dauer: 11.12.2004 06:00 Uhr bis 12.12.2004 24:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9982,13411 10312,13231
+userdel	2 9982,13411 10317,13248
 EOF
      },
      { from  => 1102050000, # 2004-12-03 06:00
@@ -3041,7 +3041,7 @@ EOF
        text  => 'Rosenthaler Straße zwischen Hackescher Markt und Neue Schönhauser Straße Baustelle, als Einbahnstraße eingerichtet in Richtung Rosenthaler Platz, Dauer: 11.10.2005, 20.00 Uhr bis 30.03.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 10305,13211 10264,13097
+userdel	q4; 10310,13227 10264,13097
 EOF
      },
      { from  => 1119996000, # 2005-06-29 00:00
@@ -4314,7 +4314,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002733',
        data  => <<EOF,
-userdel	1::inwork 10350,13376 10528,13243
+userdel	1::inwork 10350,13376 10527,13257
 EOF
      },
      { from  => 1147557600, # 2006-05-14 00:00
@@ -6786,7 +6786,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004277',
        data  => <<EOF,
-userdel	1::inwork 10305,13211 10264,13097
+userdel	1::inwork 10310,13227 10264,13097
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -6922,7 +6922,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004491',
        data  => <<EOF,
-userdel	1::inwork 10350,13376 10528,13243
+userdel	1::inwork 10350,13376 10527,13257
 EOF
      },
      { from  => 1169074800, # 2007-01-18 00:00
@@ -8849,7 +8849,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005922',
        data  => <<EOF,
-userdel	2::temp 9648,15027 9718,14888
+userdel	2::temp 9642,15038 9718,14888
 EOF
      },
      { from  => Time::Local::timelocal(reverse(2008-1900,6-1,29,0,0,0)), #
@@ -10966,7 +10966,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008076',
        data  => <<EOF,
-userdel	2::inwork 9982,13411 10312,13231
+userdel	2::inwork 9982,13411 10317,13248
 EOF
      },
      { from  => 1205622000, # 2008-03-16 00:00
@@ -11088,7 +11088,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008152',
        data  => <<EOF,
-userdel	2::inwork 9982,13411 10312,13231
+userdel	2::inwork 9982,13411 10317,13248
 EOF
      },
      { from  => 1206313200, # 2008-03-24 00:00
@@ -12589,7 +12589,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009483',
        data  => <<EOF,
-userdel	1::inwork 10350,13376 10528,13243
+userdel	1::inwork 10350,13376 10527,13257
 EOF
      },
      { from  => 1221686258, # 2008-09-17 23:17
@@ -13269,6 +13269,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1::inwork 56428,-6340 56416,-7090
+EOF
+     },
+     { from  => 1234122499, # 2009-02-08 20:48
+       until => 1235861999, # 2009-02-28 23:59
+       text  => 'Weinmeisterstr. (Mitte) in Richtung Alexanderplatz gesperrt (bis Ende 02.2009)',
+       type  => 'gesperrt',
+       source_id => 'IM_011184',
+       data  => <<EOF,
+userdel	1::inwork 10350,13376 10527,13257
 EOF
      },
     );

@@ -477,9 +477,34 @@ LAYER
     COLOR [% COLOR_WHITE %]
   END
   CLASS
+    EXPRESSION "F:ex-Ae"
+    NAME "ehemaliger Flughafen"
+    COLOR [% COLOR_WHITE %]
+  END
+  CLASS
     EXPRESSION "F:Industrial"
     NAME "Industriegebiete"
     COLOR [% COLOR_ROSE %]
+  END
+  CLASS
+    EXPRESSION "F:#ffffff"
+    COLOR [% COLOR_WHITE %]
+  END
+  CLASS
+    EXPRESSION "F:#000000"
+    COLOR [% COLOR_BLACK %]
+  END
+  CLASS
+    EXPRESSION "F:#ff0000"
+    COLOR [% COLOR_RED %]
+  END
+  CLASS
+    EXPRESSION "F:#00ff00"
+    COLOR [% COLOR_GREEN %]
+  END
+  CLASS
+    EXPRESSION "F:#0000ff"
+    COLOR [% COLOR_BLUE %]
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"

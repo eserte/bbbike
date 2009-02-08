@@ -246,7 +246,7 @@ Fritz-Schiff-Weg: Fuﬂg‰nger	q1 13465,12502 13484,12436 13472,12337
 (Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger	q1 17281,10598 17228,10860
 Verl. P¸cklerstr.: Fuﬂg‰nger, Hundeauslaufgebiet	q1 1558,6729 1364,6691 1170,6654 967,6620 905,6631 880,6645 832,6607 778,6603 698,6567 546,6583 369,6594 306,6582 218,6571
 Weimarer Str.: Fuﬂg‰nger	q1 4092,11338 4077,11226
-Norwegerstr. - Behmstr.: Rampe	q2 10022,16237 10068,16093 10078,16164
+Norwegerstr. - Behmstr.: Rampe	q2 10022,16237 10026,16165 10055,16104 10045,16157
 #: add_fragezeichen: Stimmt das?
 Marzahner Promenade - M¸hlenbecker Weg: Fuﬂg‰nger	q1 20222,15519 20181,15658 20150,15678
 Rosemeyerweg: Fuﬂg‰nger	q1 -3758,2678 -3956,2787 -4001,2858
@@ -435,6 +435,8 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Entlang des Stadtbahnviadukts): Bordsteine, Fuﬂg‰nger	q2 11966,11832 12132,11788
 (Maybachufer - Weigandufer): Radfahren nicht erlaubt, ggfs. schieben	q3 12851,9309 12907,9073
 (Parkplatz CharitÈ): Fuﬂg‰nger, parkende Autos	q1 8828,13434 8808,13380 8778,13368 8665,13353
+(Lasdehner Str. - Gubener Str.): Fuﬂg‰nger, Bordsteine	q2 13375,12062 13339,12029
+Straﬂenbahntrasse zum Alex: Bodenschwellen und Schienen	q1- 11139,13008 11191,13080
 ######################### User Contributions #################################
 #: by: Steini
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
@@ -475,7 +477,7 @@ Dusekestr.: sehr schmale Straﬂe	q1 10473,18113 10498,18014 10479,18007 10525,178
 #: note: beim Eintrag wurde "13 km/h" angegeben:
 Idastr.: schmale Fahrbahn durch parkende Fahrzeuge	q2 10697,19952 10829,19676
 #: by: Igor Smikalla:
-Freiheitsweg: relativ eng	q1 6558,18947 6715,18918 6753,18909 6829,18887 6910,18861 7157,18810
+Freiheitsweg: relativ eng	q1 6636,18934 6715,18918 6753,18909 6829,18887 6910,18861 7157,18810
 #: by: taztaz: 
 Engadiner Weg: enge Straﬂe, evtl. Gegenverkehr	q1 3700,2045 3814,2056 3851,2148 3805,2196
 #: by: Wolfram Zimmermann:
@@ -787,13 +789,13 @@ Leubnitzweg: Fuﬂg‰nger (Wohngebiet), Bordsteine	q3 -5385,12540 -5421,12450
 Enger Steig: Fuﬂg‰nger, Bordsteine	q1 -4263,11582 -4294,11673
 Enger Steig: Fuﬂg‰nger, Bordsteine	q1 -4298,11769 -4278,11873
 (Parkweg Swinem¸nder Str.): Fuﬂg‰nger	q1 10189,14649 10228,14564
-Lortzingstr.: Fuﬂg‰nger	q1 9900,15340 9859,15318 9818,15303
-Demminer Str. (Wedding): Fuﬂg‰nger	q1 9893,15139 9934,15167 9973,15182
+Lortzingstr.: Fuﬂg‰nger	q1 9898,15354 9853,15333 9814,15312
+Demminer Str. (Wedding): Fuﬂg‰nger	q1 9887,15153 9929,15174 9969,15191
 Strahlsunder Str.: Fuﬂg‰nger	q2 9918,14986 9843,14949 9718,14888
 Vineta Platz: Fuﬂg‰nger	q2 9942,14936 10029,14974 10111,15018
 Vineta Platz: Fuﬂg‰nger	q2 9904,15014 9988,15057 10071,15096
 Ruppiner Str.: Fuﬂg‰nger	q1 9904,15014 9918,14986 9942,14936
-Swinem¸nder Str.: Fuﬂg‰nger	q1 10085,14863 10029,14974 9988,15057 9934,15167 9859,15318 9734,15579
+Swinem¸nder Str.: Fuﬂg‰nger	q1 10085,14863 10029,14974 9988,15057 9929,15174 9853,15333 9734,15579
 (Unterf¸hrung Schloﬂbr¸cke): Fuﬂg‰nger, teilweise eng	q2 3383,12720 3326,12730 3263,12720
 Sesenheimer Str.: Fuﬂg‰nger, Bordsteine	q2 3866,11473 3874,11380
 (s¸dliches Spreeufer): Fuﬂg‰nger	q2 5186,12843 5173,12973 5128,13012 4973,13083 4837,13091 4733,13076 4711,13055 4644,13003 4627,12951 4599,12789 4759,12681
@@ -974,7 +976,7 @@ Seeweg (Weiﬂensee): Fuﬂg‰nnger	q1 14610,16522 14549,16538 14510,16549
 (Dinnendahlstr. - Schichauweg): kaum Fuﬂg‰nger	q1 9123,-1321 8953,-1184 8882,-1142 8873,-1118
 #: by: ^^^
 #: by: Oliver Brass [AM]
-K¸hleweinstr.: Autos und Schule	q1 8085,17225 8043,17282 8014,17475 7998,17564 7973,17732 7948,17895
+K¸hleweinstr.: Autos und Schule	q1 8088,17218 8043,17282 8014,17475 7998,17564 7973,17732 7948,17895
 #: by: Lydia Weitmann [AM] vvv
 (Blohmstr. - Diedersdorfer Str.): kaum Fuﬂg‰nger	q1 9093,-1670 8968,-1576 8845,-1521 8776,-1487 8492,-1376 8073,-1137
 (Dinnendahlstr. - Schichauweg): kaum Fuﬂg‰nger	q1 9123,-1321 8953,-1184 8882,-1142 8873,-1118
