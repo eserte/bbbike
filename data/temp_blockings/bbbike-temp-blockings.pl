@@ -2584,7 +2584,7 @@ EOF
        text  => 'Luckauer Str. (Kreuzberg) in beiden Richtungen zwischen Oranienstr. und Waldemarstr. Baustelle, Straße vollständig gesperrt (bis02.09.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 11145,11042 11105,10945
+userdel	2 11150,11030 11105,10945
 userdel	2 11105,10945 11039,10820
 EOF
      },
