@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.79 2009/01/25 17:40:58 eserte Exp eserte $
+# $Id: SRTShortcuts.pm,v 1.80 2009/02/11 20:54:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.79 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.80 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -283,6 +283,9 @@ sub add_button {
 	      ],
 	      [Button => "Street name experiment",
 	       -command => sub { street_name_experiment() },
+	      ],
+	      [Button => "New GPS simplification",
+	       -command => sub { new_gps_simplification() },
 	      ],
 	      [Button => "GPS data viewer",
 	       -command => sub { gps_data_viewer() },
@@ -1190,6 +1193,74 @@ sub _require_BBBikeOsmUtil {
     require Cwd; require File::Basename; local @INC = (@INC, Cwd::realpath(File::Basename::dirname(__FILE__)));
     require BBBikeOsmUtil;
     BBBikeOsmUtil::register();
+}
+
+use vars qw($gps_simplification_route_street_layer $gps_simplification_route_point_layer
+	    $gps_simplification_route_street_file  $gps_simplification_route_point_file
+	  );
+
+sub new_gps_simplification {
+    if ($gps_simplification_route_street_layer) {
+	main::delete_layer($gps_simplification_route_street_layer);
+	undef $gps_simplification_route_street_layer;
+    }
+    if ($gps_simplification_route_street_file &&
+	-f $gps_simplification_route_street_file) {
+	unlink $gps_simplification_route_street_file;
+    }
+    if ($gps_simplification_route_point_layer) {
+	main::delete_layer($gps_simplification_route_point_layer);
+	undef $gps_simplification_route_point_layer;
+    }
+    if ($gps_simplification_route_point_file &&
+	-f $gps_simplification_route_point_file) {
+	unlink $gps_simplification_route_point_file;
+    }
+
+    my $route = Route->new_from_realcoords(\@main::realcoords);
+    require Route::Simplify;
+    my($strobj) = $main::net->sourceobjects; # XXX is this correct for multistrassen?
+    my $res = $route->simplify_for_gps
+	(-streetobj => $strobj,
+	 -netobj => $main::net,
+	 -routetoname => [StrassenNetz::simplify_route_to_name
+			  ([$main::net->route_to_name([@main::realcoords],-startindex=>0,-combinestreet=>0)],
+			   -minangle => 5, -samestreet => 1)
+			 ],
+	 -showcrossings => 0,
+	 -waypointlength => 14, # XXX check if 15 are possible?
+	 -waypointcharset=>"latin1",
+	);
+    my @c;
+    my $p = Strassen->new;
+    for my $wpt (@{ $res->{wpt} }) {
+	my $xy = $wpt->{origlon}.",".$wpt->{origlat};
+	push @c, $xy;
+	$p->push([$wpt->{ident}, [$xy], "X"]);
+    }
+    push @c, map { $_->{origlon}.",".$_->{origlat} } $res->{wpt}->[-1];
+
+    my $s = Strassen->new;
+    $s->push(["", \@c, "X"]);
+
+    require File::Temp;
+    {
+	(my($tmpfh),$gps_simplification_route_point_file) = File::Temp::tempfile(UNLINK => 1, SUFFIX => "_p.bbd");
+	print $tmpfh $p->as_string
+	    or die $!;
+	close $tmpfh
+	    or die $!;
+	$gps_simplification_route_point_layer = main::plot_additional_layer("p", $gps_simplification_route_point_file, -namedraw => 1);
+    }
+
+    {
+	(my($tmpfh),$gps_simplification_route_street_file) = File::Temp::tempfile(UNLINK => 1, SUFFIX => "_s.bbd");
+	print $tmpfh $s->as_string
+	    or die $!;
+	close $tmpfh
+	    or die $!;
+	$gps_simplification_route_street_layer = main::plot_additional_layer("str", $gps_simplification_route_street_file);
+    }
 }
 
 1;

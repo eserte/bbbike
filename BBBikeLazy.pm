@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.32 2009/02/02 22:56:27 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.33 2009/02/12 00:52:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -175,7 +175,15 @@ sub BBBikeLazy::bbbikelazy_add_data {
 	if (!defined $lazy_master) {
 	    $lazy_master = $lazy_p{$abk};
 	}
-	$lazy_p_args{$abk} = { $argsref && exists $argsref->{Width} ? (Width => $argsref->{Width}) : () };
+
+	$lazy_p_args{$abk} = {};
+	if ($argsref && (exists $argsref->{Width} || exists $argsref->{NameDraw})) {
+	    for my $key (qw(Width NameDraw)) {
+		if (exists $argsref->{$key}) {
+		    $lazy_p_args{$abk} = $argsref->{$key};
+		}
+	    }
+	}
     } else {
 	die "type has to be either str or p, not $type";
     }
@@ -527,7 +535,7 @@ sub BBBikeLazy::plotstr_on_demand {
  	    my $i;
  	    my $restrict = undef; #XXX
  	    my $coordsys = $coord_system_obj->coordsys;
-	    my $name_draw = $p_name_draw{$abk};
+	    my $name_draw = $lazy_p_args{$abk}->{NameDraw} || $p_name_draw{$abk};
 	    # XXX Duplikate in plot_point: vvv
 	    my $name_draw_tag = "$abk-label";
 	    my $name_draw_other = ($name_draw_tag =~ /^[ubr]-label$/

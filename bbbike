@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.400 2009/01/24 22:06:50 eserte Exp eserte $
+# $Id: bbbike,v 3.401 2009/02/11 20:55:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -256,7 +256,7 @@ eval 'use BBBikeXS 0.09';
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.400 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.401 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -10704,7 +10704,7 @@ sub plot_point {
     my $lazy = defined $args{-lazy} ? $args{-lazy} : $lazy_plot;
     if ($lazy && !$args{FastUpdate}) {
 	status_message(Mfmt("Layer <%s> gezeichnet", exists $p_attrib{$abk} ? $p_attrib{$abk}->[ATTRIB_PLURAL] : $abk), "info");
-	return bbbikelazy_add_data("p", $abk, $filename);
+	return bbbikelazy_add_data("p", $abk, $filename, {exists $args{NameDraw} ? (NameDraw => $args{NameDraw}) : ()});
     }
 
     # XXX $ignore code fehlt noch...

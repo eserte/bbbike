@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.49 2009/02/08 22:25:56 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.50 2009/02/12 00:51:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2008 Slaven Rezic. All rights reserved.
@@ -92,6 +92,7 @@ sub BBBikeGPS::gps_interface {
 	     -waypointlength => $gps_waypointlength,
 	     -waypointsymbol => $gps_waypointsymbol,
 	     -waypointcharset => $gps_waypointcharset,
+	     -showcrossings => 0, # XXX yes? no?
 	     -gpsdevice   => $gps_device,
 	     %extra_args,
 	    );
@@ -1502,7 +1503,12 @@ sub tk_interface {
 	    $gpsman_wpt->Ident($wpt->{ident});
 	    $gpsman_wpt->Latitude($wpt->{lat});
 	    $gpsman_wpt->Longitude($wpt->{lon});
-	    $gpsman_wpt->Symbol(8246); # default: summit symbol
+	    # XXX void (null_2) und transient (null) wird vom etrex vista hcx nicht erkannt
+	    my $symbol = ($wpt->{importance} > 0 ? 'flag_pin_blue' : # XXX or summit?
+			  $wpt->{importance} < 0 ? 'small_city' :
+			  'small_city'
+			 );
+	    $gpsman_wpt->Symbol($symbol);
 	    $gd->push_waypoint($gpsman_wpt);
 	}
 	$gd->as_string;

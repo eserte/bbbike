@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.66 2009/01/13 22:06:33 eserte Exp $
+# $Id: GpsmanData.pm,v 1.67 2009/02/12 00:50:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005,2007 Slaven Rezic. All rights reserved.
@@ -45,7 +45,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.66 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.67 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -834,6 +834,7 @@ sub body_as_string {
 		       $wpt->Ident,
 		       (defined $wpt->Comment ? $wpt->Comment : ""),
 		       $wpt->DMS_output($self),
+		       (defined $wpt->Symbol ? "symbol=".$wpt->Symbol : ()),
 		      )
 		. "\n";
 	}

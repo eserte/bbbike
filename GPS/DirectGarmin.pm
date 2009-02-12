@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.39 2008/02/03 19:00:22 eserte Exp $
+# $Id: DirectGarmin.pm,v 1.41 2009/02/12 00:51:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -116,6 +116,15 @@ sub transfer {
 	if ($gps->{serial}) {
 	    # XXX Shouldn't be necessary, but it seems it is...
 	    $gps->{serial}->close;
+	}
+	# If we got here, then everything went OK, so waypoint cache
+	# may be updated
+	if ($self->{'used_idents'}) {
+	    while(my($key,$val) = %{ $self->{'used_idents'} }) {
+		$waypoints{$key}++;
+	    }
+	} else {
+	    warn "What? No used idents here?";
 	}
     }
 }
@@ -242,6 +251,7 @@ sub simplify_route {
     my $simplified_route = $route->simplify_for_gps(%args, waypointscache => \%waypoints);
 
     $self->{'origpath'} = $route->path;
+    $self->{'used_idents'} = $simplified_route->{'idents'};
 
     #use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->Dumpxs([\@d],[]); # XXX
 
@@ -252,9 +262,11 @@ sub convert_from_route {
     my($self, $route, %args) = @_;
 
     my $gps_device = $args{-gpsdevice} || "/dev/cuaa0";
-    my $waypointsymbol = $args{-waypointsymbol};
+    my $waypointsymbol = my $waypointsymbol_unimportant = my $waypointsymbol_important = $args{-waypointsymbol};
     if (!$waypointsymbol || $waypointsymbol !~ m{^\d+$}) {
 	$waypointsymbol = 8246; # default: summit symbol
+	$waypointsymbol_unimportant = 18; # waypoint dot XXX or 8198 (small city)?
+	$waypointsymbol_important = $waypointsymbol;
     }
 
     # Not yet in use...
@@ -284,7 +296,9 @@ sub convert_from_route {
 	}
     }
 
-    my $simplified_route = $self->simplify_route($route, %args);
+    my $simplified_route = $self->simplify_route($route,
+						 -showcrossings => 0,
+						 %args);
 
     $self->{'debugdata'} = []; # create always as additional return value
 
@@ -301,7 +315,11 @@ sub convert_from_route {
 	    if ($n > 0) {
 		push @d, [$gps->GRMN_RTE_LINK_DATA, $handler->pack_Rte_link_data];
 	    }
-	    my $wptdata = {lat => $wpt->{lat}, lon => $wpt->{lon}, ident => make_bytes($wpt->{ident}), smbl => $waypointsymbol};
+	    my $use_waypointsymbol = ($wpt->{importance} > 0 ? $waypointsymbol_important :
+				      $wpt->{importance} < 0 ? $waypointsymbol_unimportant :
+				      $waypointsymbol
+				     );
+	    my $wptdata = {lat => $wpt->{lat}, lon => $wpt->{lon}, ident => make_bytes($wpt->{ident}), smbl => $use_waypointsymbol};
 	    push @d, [$gps->GRMN_RTE_WPT_DATA, $handler->pack_Rte_wpt_data($wptdata)];
 	    push @{$self->{'debugdata'}}, $wpt;
 	}
