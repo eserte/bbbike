@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.41 2009/02/06 21:46:40 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.42 2009/02/12 23:38:56 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -164,6 +164,7 @@ sub agrep_file {
 	    $grep_type = 'perl';
 	}
     }
+    return () if !@data;
     my @def;
     if ($arg{ErrorDef}) {
 	@def = @{$arg{ErrorDef}};

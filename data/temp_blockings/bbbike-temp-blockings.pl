@@ -7861,11 +7861,11 @@ userdel	2::inwork 9670,5728 9457,5641 9357,5601 9147,5534
 EOF
      },
      { from  => undef, # 
-       until => 1214463306, # undef last-checked 2007-11-28 # war, ist nicht mehr: Abbiegen in Kleine Auguststr. und Joachimstr. nicht möglich;	3 10020,13669 10081,13673 10142,13556; 	3 10142,13556 10081,13673 10220,13691
+       until => 1214463306, # undef last-checked 2007-11-28 # war, ist nicht mehr: Abbiegen in Kleine Auguststr. und Joachimstr. nicht möglich;	3 9996,13678 10085,13684 10142,13556; 	3 10142,13556 10085,13684 10220,13691
        text  => 'Linienstr.: Baustelle zwischen Koppenplatz (östliche Straße) und Rosenthaler Str., Einbahnstraße',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 10220,13691 10081,13673 10020,13669 9964,13665
+userdel	1::inwork 10220,13691 10085,13684 9996,13678 9945,13669
 EOF
      },
      { from  => 1177625221, # 
@@ -10844,7 +10844,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_007850',
        data  => <<EOF,
-userdel	q4::inwork; 9281,13374 9215,13392
+userdel	q4::inwork; 9281,13374 9225,13389
 EOF
      },
      { from  => 1203202800, # 2008-02-17 00:00

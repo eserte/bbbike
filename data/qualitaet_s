@@ -255,7 +255,7 @@ Kiehlufer: Kopfsteinpflaster	Q2 13745,8448 13575,8593 13402,8741 13225,8880 1307
 Spreewaldplatz: Kopfsteinpflaster, OK	Q1 12243,10274 12292,10374 12274,10436
 Spreewaldplatz: Kopfsteinpflaster, OK	Q1 12341,10218 12292,10374
 Am Nordhafen: Kopfsteinpflaster	Q2 7741,14560 7527,14684
-Friedrich-Krause-Ufer: Kopfsteinpflaster	Q2 7373,14555 7167,14666
+Friedrich-Krause-Ufer: Fahrbahn Kopfsteinpflaster, Radwege Verbundsteinpflaster	Q1 7314,14599 7167,14666
 Schubertstr.: Asphalt	Q0 21806,6545 21833,6418 21978,6330
 Pablo-Neruda-Str: asphaltiert	Q0 22965,4124 23435,4179
 Flemingstr.: Kopfsteinpflaster	Q2 7317,12751 7129,12741
@@ -330,7 +330,7 @@ Pestalozzistr.: Kopfsteinpflaster	Q2 4173,11225 4077,11226 3981,11226
 Goethestr.: teilweise Kopfsteinpflaster, teilweise Verbundsteine	Q2 4312,11341 4092,11338 3986,11337
 Knesebeckstr.: Kopfsteinpflaster	Q2 4868,10934 4862,10881 4847,10677 4847,10589 4828,10356
 Mommsenstr.: Kopfsteinpflaster	Q2 4685,10689 4847,10677
-Linienstr.: Asphalt	Q0 10718,13625 10597,13647 10445,13675 10310,13692 10220,13691 10081,13673 10020,13669 9964,13665 9944,13665 9903,13646 9752,13575 9607,13507 9296,13397 9281,13374
+Linienstr.: Asphalt	Q0 10718,13625 10597,13647 10445,13675 10310,13692 10220,13691 10085,13684 9996,13678 9945,13669 9929,13660 9903,13646 9752,13575 9607,13507 9296,13397 9281,13374
 Linienstr.: mäßiger Asphalt	Q1 10777,13614 10878,13565 11059,13480 11104,13456
 Mulackstr.: mäßiger Asphalt	Q1 10640,13471 10535,13509 10406,13543 10304,13575
 Rückerstr.: mäßiger Asphalt	Q1 10597,13647 10535,13509
@@ -2929,7 +2929,7 @@ Geibelstr. (Lichtenrade): Verbundsteinpflaster	Q0 10034,-546 10018,-494 9991,-41
 Rosenheimer Str.: Asphalt	Q0 6851,9365 6717,9339 6446,9328 6357,9322 6239,9344
 Rosenheimer Str.: Asphalt	Q0 6239,9344 6164,9329
 Rosenheimer Str.: Asphalt	Q0 6164,9329 6070,9322
-Tieckstr.: asphaltiert	Q0 9081,13636 9279,13710 9394,13754 9510,13823
+Tieckstr.: asphaltiert	Q0 9094,13641 9275,13720 9376,13765 9510,13823
 Löptener Str.: sehr guter Asphalt	Q0 10993,-1919 10760,-1931
 Mellener Str.: Asphalt	Q0 10747,-2129 10760,-1931 10767,-1850 10779,-1751
 Mellener Str.: schlecht befahrbares Kopfsteinpflaster	Q3 10747,-2129 10763,-2276 10789,-2451
@@ -3020,7 +3020,7 @@ Schulstr. (Pankow): mäßiger Asphalt	Q1 10755,18231 10582,18159 10473,18113
 Trelleborger Str.: kaputter Asphalt, Schlaglöcher	Q1 11243,17421 11256,17291 11272,17139 11267,17017 11270,16890 11281,16743 11278,16609 11287,16515 11289,16423
 Saalower Str.: schlechtes Kopfsteinpflaster	Q3 10655,-3135 10735,-3142 10949,-3161 11144,-3179 11225,-3121
 Nahariyastr.: sehr guter Asphalt	Q0 11717,-1204 11739,-1384 11778,-1706 11784,-1809
-Borsigstr.: asphaltiert	Q0 9517,13571 9394,13754 9303,13887
+Borsigstr.: asphaltiert	Q0 9517,13571 9376,13765 9316,13870
 Newtonstr.: asphaltiert	Q0 19324,2939 19216,3052 19175,3095 19079,3190
 Staakener Str.: asphaltiert	Q0 -4741,14233 -4835,14223 -4891,14169 -5874,14242 -6398,14276
 Isländische Str.: sehr guter Asphalt	Q0 10022,16237 10030,16238 10281,16263
@@ -3226,7 +3226,7 @@ Marinesteig: Asphalt	Q0 -2726,3432 -2776,3512
 Marinesteig: Asphalt	Q0 -3053,3298 -2776,3512 -2699,3529
 Schollenweg: Asphalt	Q0 3280,21477 3236,21601 3211,21678 3156,21832 3081,22048
 Straße 56 (Blankenburg): Asphalt	Q0 14589,20988 14642,21162 14684,21284 14753,21487
-Büschingstr.: Asphalt mit Löchern	Q1 11839,13083 11879,13133 11903,13161 12017,13299 12085,13377
+Büschingstr.: Asphalt mit Löchern	Q1 11839,13083 11881,13147 11920,13181 12017,13299 12085,13377
 Berolinastr.: Betonplatten	Q0 11683,12725 11725,12809 11771,12909
 Heidebrinker Str.: mäßiger Asphalt	Q1 9216,16022 9215,16132 9268,16228
 Volmerstr.: Asphalt	Q0 19426,3024 19538,2899 19631,2802 19704,2726 19794,2629 19933,2474 19969,2434 19974,2381
@@ -5182,19 +5182,19 @@ Weydemeyerstr.: mäßiger Beton, Fugen	Q2 11725,12809 11824,12749 11933,12701 1196
 (Berolinastr. - Mollstr.): Beton / Verbundsteine	Q1 11608,12985 11681,13161
 (Lichtenberger Str.): Verbundsteine	Q1 12054,12903 12039,12675
 Barnimstr.: Beton	Q0 11550,13427 11605,13387 11654,13351 11793,13247
-Barnimstr.: Beton	Q0 11879,13133 11754,13199 11596,13279
+Barnimstr.: Beton	Q0 11881,13147 11758,13210 11596,13279
 (Erschließungstr./Parkplatz): Beton	Q0 11605,13387 11538,13309 11596,13279
 (Erschließungsstr.): Beton	Q0 11605,13387 11660,13457
 (Verbindungsweg): Kopfsteinpflaster	Q1 11660,13457 11711,13416
 Weinstr.: Asphalt stark verwurzelt	Q3 11793,13247 11909,13387
 Weinstr.: Asphalt	Q0 11909,13387 11953,13437
 Weinstr.: Gehwegplatten	Q0 11953,13437 11982,13471
-(Fußweg Büschingstr. - Mollstr.): Gehwegplatten	Q0 11879,13133 11905,13069
-(Friedenstr.): Beton	Q0 12131,13333 12138,13294 12097,13277 12069,13255
-Höchste Str.: Asphalt	Q0 11778,13498 11909,13387 12017,13299 12069,13255
-(Parkplatz): Beton	Q0 12069,13255 12082,13221 12080,13182 12058,13143 12032,13126 11994,13117 11955,13120 11903,13161
+(Fußweg Büschingstr. - Mollstr.): Gehwegplatten	Q0 11881,13147 11905,13069
+(Friedenstr.): Beton	Q0 12131,13333 12138,13294 12139,13262 12066,13237
+Höchste Str.: Asphalt	Q0 11778,13498 11909,13387 12017,13299 12066,13237
+(Parkplatz): Beton	Q0 12066,13237 12046,13150 12011,13136 11920,13181
 Georgenkirchstr.: Asphalt	Q0 11842,13576 11778,13498 11711,13416 11654,13351 11596,13279
-(Mollstr. - Barnimstr.): Verbundsteine	Q0 11723,13139 11754,13199
+(Mollstr. - Barnimstr.): Verbundsteine	Q0 11723,13139 11758,13210
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Gehwegplatten und Kopfsteinpflaster	Q0 12386,13085 12387,13107 12344,13157 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11772,13624
 Hinter der Katholischen Kirche: Kopfsteinpflaster	Q1 9801,12245 9795,12293 9780,12401
 Behrenstr.: Asphalt	Q0 9492,12214 9626,12227 9700,12234 9743,12239 9801,12245
@@ -5415,10 +5415,10 @@ Schulweg: Asphalt, teilweise verwurzelt	Q2 12594,12866 12483,12682
 (Friedhofsweg): wassergebundene Decke	Q1 12772,12682 13046,12956
 Kernhofer Str.: Kopfsteinpflaster	Q2 15424,11087 15369,10921
 Kernhofer Str.: glattes Pflaster	Q0 15369,10921 15353,10870
-Eichendorffstr.: Kopfsteinpflaster	Q2 9279,13710 9231,13865 9203,13953
-Novalisstr.: Kopfsteinpflaster	Q2 9340,13510 9279,13710
+Eichendorffstr.: Kopfsteinpflaster	Q2 9275,13720 9231,13843 9203,13953
+Novalisstr.: Kopfsteinpflaster	Q2 9340,13510 9275,13720
 Philippstr.: Asphalt	Q0 8894,13486 8828,13434
-Schlegelstr.: Asphalt	Q0 9303,13887 9231,13865 9020,13723
+Schlegelstr.: Asphalt	Q0 9316,13870 9231,13843 9042,13707
 Claire-Waldoff-Str.: Asphalt	Q0 9236,13228 9114,13217
 Am Zirkus: Asphalt	Q1 9118,13070 9145,13020
 Am Zirkus: Asphalt	Q1 9089,13004 9145,13020 9192,13032 9226,12909
@@ -5527,8 +5527,8 @@ Ingeborg-Drewitz-Allee: Asphalt	Q0 7538,12729 7539,12754
 Spenerstr.: Kopfsteinpflaster	Q2 6877,12607 6907,12777 6966,13075
 (Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7415,12590 7418,12725
 (Joachim-Karnatz-Allee - Spreeuferweg): Parkweg	Q1 7475,12590 7489,12540
-Spreeuferweg am Hauptbahnhof: Verbundsteinpflaster	Q1 7967,12860 8034,12964 8161,13006
-nördliches Spreeufer: Verbundsteinpflaster	Q1 8245,13016 8315,13005 8396,12968 8471,12904 8498,12870
+Spreeuferweg am Hauptbahnhof: Verbundsteinpflaster	Q1 7967,12860 8044,12989 8159,13032
+nördliches Spreeufer: Verbundsteinpflaster	Q1 8277,13032 8315,13005 8401,12973 8471,12904 8498,12870
 (südliches Spreeufer): wassergebundene Decke	Q1 5186,12843 5173,12973 5128,13012 4973,13083 4837,13091 4733,13076 4711,13055 4644,13003 4627,12951 4599,12789
 (südliches Spreeufer): grobes Kopfsteinpflaster, Gehwegplatten	Q3 4599,12789 4759,12681
 (Heisenbergstr. - südliches Spreeufer): wassergebundene Decke	Q1 5065,13010 5128,13012

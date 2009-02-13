@@ -205,7 +205,7 @@ Goltzstr. (Spandau)	1 -2838,16951 -2946,16869 -3031,16807
 Putlitzstr.	1 6267,14184 6264,13995 6226,13951
 Langhansstr. (außer Tram)	1 12046,16568 12189,16578 12409,16475
 Triftstr. (Buchholz)	1 12018,23040 12178,23034
-Joachimstr.	1 10142,13556 10081,13673
+Joachimstr.	1 10142,13556 10085,13684
 Wilhelmsaue	1 4778,8784 4918,8785 5165,8784
 Wilhelmsaue	1 5164,8740 4918,8740 4777,8731
 Friedrichsruher Str.	1 3196,9193 3333,9026
@@ -751,7 +751,7 @@ Berliner Allee: Straßenbahntrasse	3nocross 14619,16682 14608,16772 14559,16912
 #: note: Luftbild
 Gülzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22424,12183
 Oranienburger Str. (Wittenau): Mittelstreifen	3nocross 5350,21251 5357,21199 5391,21003
-Oranienburger Str.: Straßenbahnhaltestelle	3nocross 9215,13392 9281,13374 9415,13315
+Oranienburger Str.: Straßenbahnhaltestelle	3nocross 9225,13389 9281,13374 9415,13315
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12046,16568
 Schnellerstr.: Mittelstreifen	3nocross 16713,6839 16674,6885 16568,7009
 #: note: Luftbild vvv
@@ -1228,6 +1228,7 @@ Schranke (Thyssenstr. - Sittestr.)	BNP:3 5856,19204
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #
 Zur Boyenstr.: Bauarbeiten	2:inwork 7925,14442 7828,14405
+Brücke über Panke: zur Zeit Bauarbeiten, keine Durchfahrt möglich	2:inwork 7753,14528 7807,14441
 Kynaststraße: Abriss und Neubau bis ca. 2010-03-01	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505
 #: note: genaue Wegführung von Diethard Mager:
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01, dann als Fußgänger/Radweg konzipiert	2:inwork 8184,14052 8290,14119
@@ -1386,8 +1387,8 @@ Joachim-Karnatz-Allee	1 7175,12630 7187,12598
 Ingeborg-Drewitz-Allee	1 7365,12775 7388,12746 7539,12754 7538,12729 7418,12725 7367,12729 7343,12758
 tragen (Treppe)	0:30 5730,12264
 Altonaer Str.: Mittelstreifen schlecht zu queren	3nocross 6020,12492 6086,12446 6178,12387
-tragen (Treppe)	0:30 8160,13028
-tragen (Treppe)	0:30 8252,13033
+tragen (Treppe)	0:30 8159,13042
+tragen (Treppe)	0:30 8276,13041
 Hanseatenweg	1 6444,12536 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
 Heerstr.	3nocross -1269,11008 -1039,11034 -831,11060 -776,11067 -731,11073 -572,11092
 Heerstr.	3nocross -572,11092 -535,11096 -420,11110 -346,11121 -68,11156
