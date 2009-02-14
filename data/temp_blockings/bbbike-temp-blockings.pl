@@ -10009,7 +10009,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006795',
        data  => <<EOF,
-userdel	2::inwork 9213,5187 8934,5095 8813,5004
+userdel	2::inwork 9207,5185 8934,5095 8813,5004
 EOF
      },
      { from  => 1192312800, # 2007-10-14 00:00

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.80 2009/02/11 20:54:31 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.81 2009/02/13 23:32:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.80 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.81 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -126,11 +126,14 @@ sub add_button {
     BBBikePlugin::place_menu_button
 	    ($mmf,
 	     [
-	      [Button => "Default penalty (unique matches)",
-	       -command => \&default_penalty,
+	      [Button => "Set penalty: unique matches (alltime)",
+	       -command => sub { set_penalty() },
 	      ],
-	      [Button => "Default penalty (fragezeichen)",
-	       -command => \&default_penalty_fragezeichen,
+	      [Button => "Set penalty: unique matches (since 2008)",
+	       -command => sub { set_penalty_2008() },
+	      ],
+	      [Button => "Set penalty fragezeichen",
+	       -command => sub { set_penalty_fragezeichen() },
 	      ],
 	      [Button => "Tracks in region",
 	       -command => sub { tracks_in_region() },
@@ -286,6 +289,9 @@ sub add_button {
 	      ],
 	      [Button => "New GPS simplification",
 	       -command => sub { new_gps_simplification() },
+	      ],
+	      [Button => 'Real street widths',
+	       -command => sub { real_street_widths() },
 	      ],
 	      [Button => "GPS data viewer",
 	       -command => sub { gps_data_viewer() },
@@ -642,7 +648,7 @@ sub find_nearest_hoehe {
 	 });
 }
 
-sub default_penalty {
+sub set_penalty {
     require BBBikeEdit;
     $main::bbd_penalty = 1;
     $BBBikeEdit::bbd_penalty_invert = 0;
@@ -650,7 +656,15 @@ sub default_penalty {
     BBBikeEdit::build_bbd_penalty_for_search();
 }
 
-sub default_penalty_fragezeichen {
+sub set_penalty_2008 {
+    require BBBikeEdit;
+    $main::bbd_penalty = 1;
+    $BBBikeEdit::bbd_penalty_invert = 0;
+    $BBBikeEdit::bbd_penalty_file = "$bbbike_rootdir/tmp/unique-matches-since2008.bbd";
+    BBBikeEdit::build_bbd_penalty_for_search();
+}
+
+sub set_penalty_fragezeichen {
     $main::add_net{fz} = 1;
     main::change_net_type();
 
@@ -658,7 +672,6 @@ sub default_penalty_fragezeichen {
     $main::bbd_penalty = 1;
     $BBBikeEdit::bbd_penalty_invert = 1;
     $BBBikeEdit::bbd_penalty_file = "$main::datadir/fragezeichen";
-
     BBBikeEdit::build_bbd_penalty_for_search();
 }
 
@@ -1260,6 +1273,70 @@ sub new_gps_simplification {
 	close $tmpfh
 	    or die $!;
 	$gps_simplification_route_street_layer = main::plot_additional_layer("str", $gps_simplification_route_street_file);
+    }
+}
+
+use vars qw($real_street_widths_s %real_street_widths_pos_to_width);
+    
+sub real_street_widths {
+    use constant LANE_WIDTH => 3; # rough estimates
+    use constant PEDESTRIAN_PATHS_WIDTH => 2 * 2.5;
+    use constant MEDIAL_STRIP_WIDTH => 2;
+    my %cat_to_width = ('B'  => 6 * LANE_WIDTH + PEDESTRIAN_PATHS_WIDTH + MEDIAL_STRIP_WIDTH,
+			'HH' => 6 * LANE_WIDTH + PEDESTRIAN_PATHS_WIDTH + MEDIAL_STRIP_WIDTH,
+			'H'  => 6 * LANE_WIDTH + PEDESTRIAN_PATHS_WIDTH,
+			'N'  => 4 * LANE_WIDTH + PEDESTRIAN_PATHS_WIDTH,
+			'NN' => 2 * LANE_WIDTH,
+		       );
+    my $px_per_m = do {
+	my($x0) = main::transpose(0,0);
+	my($x1) = main::transpose(1,0);
+	abs($x1-$x0);
+    };
+    my $pos_to_width = \%real_street_widths_pos_to_width;
+    if (!$real_street_widths_s || !$real_street_widths_s->is_current) {
+	my $s = Strassen->new("strassen-orig", UseLocalDirectives => 1);
+	%real_street_widths_pos_to_width = ();
+	$s->init;
+	while(1) {
+	    my $r = $s->next;
+	    last if !@{ $r->[Strassen::COORDS()] };
+	    my $dir = $s->get_directives;
+	    my $w;
+	    my $street_width_dir = $dir->{street_width};
+	    if ($street_width_dir) {
+		if ($street_width_dir->[0] =~ m{^(\d+)m}) {
+		    $w = $1;
+		} elsif ($street_width_dir->[0] =~ m{(\d+)\s*lanes?}) {
+		    $w = $1 * LANE_WIDTH + PEDESTRIAN_PATHS_WIDTH;
+		    if ($street_width_dir->[0] =~ m{medial\s+strip}) {
+			$w += MEDIAL_STRIP_WIDTH;
+		    }
+		} else {
+		    warn "Cannot parse street_width directive <$street_width_dir->[0]>";
+		}
+	    } else {
+		my $carriageway_width_dir = $dir->{carriageway_width};
+		if ($carriageway_width_dir && $carriageway_width_dir->[0] =~ m{^(\d+)m}) {
+		    $w = $1 + PEDESTRIAN_PATHS_WIDTH;
+		}
+	    }
+	    if (!$w) {
+		$w = $cat_to_width{$r->[Strassen::CAT()]};
+	    }
+	    if ($w) {
+		$pos_to_width->{$s->pos} = $w;
+	    }
+	}
+	$real_street_widths_s = $s;
+    }
+    for my $item ($main::c->find(withtag => 's')) {
+	my(@tags) = $main::c->gettags($item);
+	my($index) = $tags[3] =~ m{^s-(\d+)};
+	next if !defined $index;
+	if (exists $pos_to_width->{$index}) {
+	    $main::c->itemconfigure($item, -width => $pos_to_width->{$index}*$px_per_m);
+	}
     }
 }
 

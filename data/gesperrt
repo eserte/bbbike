@@ -921,10 +921,10 @@ Bundesallee -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreifen	3::igndi
 Bundesallee -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreifen	3::igndisp 5513,8588 5481,8506 5533,8478
 Am Volkspark -> Bundesallee: Absperrung auf dem Mittelstreifen	3::igndisp 5320,8456 5444,8406 5481,8506
 Bundesallee -> Am Volkspark: Absperrung auf dem Mittelstreifen	3::igndisp 5481,8506 5444,8406 5669,8207
-unbequem passierbarer Mittelstreifen	3nocross::ignrte 9213,5187 9185,5271 9182,5332 9171,5397 9147,5534
-Am Teltowkanal, südl. Ufer -> Mariendorfer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9171,5264 9185,5271 9182,5332
+unbequem passierbarer Mittelstreifen	3nocross::ignrte 9207,5185 9191,5272 9182,5332 9171,5397 9147,5534
+Am Teltowkanal, südl. Ufer -> Mariendorfer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9171,5264 9191,5272 9182,5332
+Mariendorfer Damm -> Wulfila-Ufer: unbequem passierbarer Mittelstreifen	3::igndisp 9191,5272 9182,5332 9145,5323
 Wulfila-Ufer -> Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9145,5323 9182,5332 9171,5397
-Mariendorfer Damm -> Wulfila-Ufer: unbequem passierbarer Mittelstreifen	3::igndisp 9185,5271 9182,5332 9145,5323
 Viktoriastr. -> Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 8943,5428 9171,5397 9147,5534
 Tempelhofer Damm -> Viktoriastr.: unbequem passierbarer Mittelstreifen	3::igndisp 9182,5332 9171,5397 8943,5428
 U-Bahnviadukt	3nocross::ignrte 10971,15944 10964,15896 10953,15787
@@ -1792,7 +1792,7 @@ Orlamünder Weg	1 7035,1814 7119,1829 7174,1718 7195,1703 7214,1710 7242,1754 725
 Arnstädter Str.	1 6553,1409 6528,1207 6514,1100 6523,1076 6515,1010
 tragen (5 Stufen)	0:20:90 6501,1207
 Müncheberger Weg: Privatgelände	2 29978,8975 29868,9084
-Drängelgitter	BNP:10:63 9171,5264
+Drängelgitter	BNP:10:68 9171,5264
 Niederneuendorfer Allee (Wendeschleife)	1 -2906,17661 -2896,17853
 Zeiler Weg	1 11495,18129 11579,18184
 Zeiler Weg	1s 11835,18301 11914,18303
