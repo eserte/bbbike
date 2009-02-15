@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeCrosshairs.pm,v 1.9 2008/05/20 22:44:36 eserte Exp $
+# $Id: BBBikeCrosshairs.pm,v 1.9 2008/05/20 22:44:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -58,10 +58,10 @@ sub activate {
 
 	my $sw = $c->screenwidth > $c->screenheight ? $c->screenwidth : $c->screenheight;
 
-	my $ch1  = $c->createLine(0,0,0,0,-tags => ["crosshairs", "crosshairs1"]);
-	my $ch2  = $c->createLine(0,0,0,0,-tags => ["crosshairs", "crosshairs2"]);
-	my $chp  = $c->createLine(0,0,0,0,-tags => ["crosshairs", "crosshairs-parallel"], -dash => ".-");
-	my $chlp = $c->createLine(0,0,0,0,-tags => ["crosshairs", "crosshairs-lastpoint"], -dash => "..");
+	my $ch1  = $c->createLine(0,0,0,0,-state => 'disabled', -tags => ["crosshairs", "crosshairs1"]);
+	my $ch2  = $c->createLine(0,0,0,0,-state => 'disabled', -tags => ["crosshairs", "crosshairs2"]);
+	my $chp  = $c->createLine(0,0,0,0,-state => 'disabled', -tags => ["crosshairs", "crosshairs-parallel"], -dash => ".-");
+	my $chlp = $c->createLine(0,0,0,0,-state => 'disabled', -tags => ["crosshairs", "crosshairs-lastpoint"], -dash => "..");
 
 	my $change_coords = sub {
 	    my($x, $y) = @_;

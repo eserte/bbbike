@@ -16,7 +16,7 @@ Neue Promenade: Fußgängerzone, Radfahren erlaubt	q2 10294,13070 10185,12982 1013
 Pariser Platz/Brandenburger Tor: Fußgänger	q2 8804,12280 8610,12254 8515,12242
 Potsdamer Platz: Fußgänger	q3 8542,11502 8462,11538
 Blücherplatz: reger Fußgängerverkehr	q3 9579,10122 9599,10175
-Blücherplatz: Fußgängerverkehr	q3 9599,10175 9643,10140
+Blücherplatz: Fußgängerverkehr	q3 9599,10175 9631,10142
 Hallesches Tor: reger Fußgängerverkehr	q3; 9599,10175 9593,10238
 Hallesches Tor: reger Fußgängerverkehr	q3 9593,10238 9590,10262
 Mehringplatz: Fußgänger und Radfahrer teilen sich den Weg	q1 9590,10262 9508,10320 9509,10391 9580,10434 9644,10404 9662,10345 9646,10301 9590,10262
@@ -37,7 +37,7 @@ Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 15793,8984 1
 Treptower Park, am Rosengarten: Fußgänger	q2 14819,9462 14910,9643
 Treptower Park: Fußgänger	q1 14697,9726 14645,9710 14575,9648 14496,9705 14351,9757
 Görlitzer Park: Parkweg, Fußgänger	q2 12671,10042 12686,10045 12690,10062
-Görlitzer Park: Parkweg, Fußgänger	q2 12761,10195 12770,10210 12774,10222
+Görlitzer Park: Parkweg, Fußgänger	q2 12761,10195 12769,10211 12774,10222
 Görlitzer Park: Parkweg, Fußgänger	q2 13145,9920 12869,10071 12802,10097
 Görlitzer Park: Parkweg, Fußgänger	q2 12680,10168 12559,10220 12459,10256 12406,10368 12328,10442
 Görlitzer Park: Parkweg, Fußgänger	q2 12817,9964 12855,10035 12869,10071 12904,10141 12911,10156
@@ -74,7 +74,7 @@ Linienstr.: Gehweg	q2 11104,13456 11149,13442
 Böcklerpark: Fußgänger	q2 10885,10045 10723,10088 10521,10126
 Böcklerpark: enge Kurven, Fußgänger	q3 10967,10092 10885,10045
 Böcklerpark: enge Kurven, Fußgänger	q3 10923,10113 10885,10045
-Am Landwehrkanal: Parkweg	q1 10521,10126 10226,10145 10083,10192
+Am Landwehrkanal: Parkweg	q1 10521,10126 10362,10120 10226,10145 10083,10192
 vor dem Kanzleramt: Fußgänger, manchmal gesperrt	q1 8120,12756 8123,12615
 Am Stadtpark: Parkweg mit Fußgängern	q1 15395,12762 15433,12686 15454,12519
 Am Stichkanal: Parkweg	q1 22832,4491 22702,4592 22585,4634 22458,4565
@@ -172,7 +172,7 @@ Schneckenbrücke: Rampe	q3 2012,3356 1977,3414
 Radweg eng und bewachsen	q1 5071,14614 5264,14671 5440,14840
 Tunnel S-Bhf. Grunewald: Fußgänger	q2 693,9129 731,9103 884,8954
 enge Kurven	q2 33533,2761 33293,2768
-Kieler Str.: Bordsteine, Fußgänger	q3 5000,5816 5050,5785
+Kieler Str.: Bordsteine, Fußgänger	q3 5000,5816 5052,5788
 Fontanepromenade: enger Gehweg	q2 10775,9686 10760,9646
 Südstern: Fußgänger	q3 10747,9326 10710,9309 10647,9337
 Görlitzer Ufer: Bordsteine	q3 13276,10076 13293,10096
@@ -198,7 +198,7 @@ Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8836,8564 8756,8453 8711,8
 (Teltowkanal, Nordufer): Fußgänger (eigentlich für Radfahrer verboten)	q2 8750,5173 9118,5328 9145,5323 9182,5332
 (Kynaststr. - Uferwanderweg): Fußgänger	q1 14843,10621 14906,10587
 (Kynaststr. - Paul-und-Paula-Ufer): Fußgänger	q1 14795,10473 14864,10451
-Am Rummelsburger See: Fußgänger, kurvenreich	q1 15787,9321 15819,9430 15749,9558 15741,9590 15682,9597 15600,9695 15626,9710 15583,9779 15545,9818 15465,9860 15347,9922 15295,10022 15260,10048 15314,10121 15261,10167 15204,10201 15134,10243 15085,10272 15044,10297 14903,10403 14864,10451 14884,10508 14906,10587 14937,10598 14990,10581 15100,10637 15248,10562
+Am Rummelsburger See: Fußgänger, kurvenreich	q1 15787,9321 15819,9430 15749,9558 15741,9590 15682,9597 15600,9695 15626,9710 15583,9779 15545,9818 15465,9860 15347,9922 15295,10022 15260,10048 15314,10121 15261,10167 15204,10201 15134,10243 15085,10272 15044,10297 14892,10411 14864,10451 14884,10508 14906,10587 14937,10598 14990,10581 15100,10637 15248,10562
 Am Rummelsburger See: teilweise enge Kurven, Fußgänger an schönen Tagen	q2 15453,10415 15469,10329 15496,10277 15518,10234 15604,10204 15601,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15931,9846
 Unterführung unter Adlergestell und S-Bahn ist sehr eng, nicht für Anhänger geeignet	q3 20928,2412 20810,2398
 Vorfahrt Reichstagsgebäude: Fußgänger	q3 8400,12417 8399,12616
@@ -394,7 +394,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 Friedrichsbrücke: Fußgänger	q1 10086,12725 10171,12769
 (Hornbach-Parkplatz): Parkplatzbetrieb	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
 Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346
-(Blücherplatz - Waterlooufer): Fußgänger, Bordsteine	q2 9643,10140 9687,10180
+(Blücherplatz - Waterlooufer): Fußgänger, Bordsteine	q2 9631,10142 9687,10180
 Arenholzsteig: Bordsteine	q2 8481,6900 8496,6919
 Mergenthalerring: Asphaltschwellen, können umfahren werden	q1 14382,8058 14563,8243
 Grazer Platz: Fußgänger, Bordsteine	q2 6546,6720 6530,6786 6529,6798
@@ -1018,7 +1018,7 @@ Zionskirchstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 10
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 12119,9823 11946,9913 11735,10022 11512,10105
 Czeminskistr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 7604,8927 7563,8871
 Stallschreiberstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 10489,11405 10620,11244 10678,11172
-Jahnstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 11493,9128 11509,9392
+Jahnstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 11500,9116 11509,9392
 Schulenburgring: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9027,8431 9022,8581 9006,8602
 Neue Schönhauser Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 10527,13257 10423,13215 10310,13227
 Alte Schönhauser Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 10718,13625 10746,13673

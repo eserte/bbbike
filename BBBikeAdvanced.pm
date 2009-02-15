@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.208 2008/12/31 16:34:32 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.209 2009/02/14 13:41:08 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2008 Slaven Rezic. All rights reserved.
@@ -2273,7 +2273,7 @@ sub _insert_points_and_co ($) {
 # 			 ($coord_system_obj->coordsys eq 'B' || !defined $edit_mode || $edit_mode eq '' ? () : (-coordsys => $coord_system_obj->coordsys)),
 # 			);
 # 	}
-	warn "@args\n";
+	warn "@args\n" if $verbose;
 	my $modify_ret = BBBikeModify::process(@args);
 	$ret = $modify_ret == BBBikeModify::RET_MODIFIED();
 
@@ -2295,6 +2295,37 @@ sub grep_point    { _insert_points_and_co("grep")       }
 sub grep_line	  { _insert_points_and_co("grepline")   }
 sub delete_point  { _insert_points_and_co("delete")     }
 sub delete_lines  { _insert_points_and_co("deletelines") }
+sub smooth_line   {
+    if (@inslauf_selection != 3) {
+	status_message("Es müssen genau drei Punkte selektiert sein. Der mittlere Punkt ist der zu verschiebende Punkt für die Glättung.", "err");
+	return;
+    }
+    require VectorUtil;
+    require Strassen::Util;
+    my($x1,$y1,$p1,$p2,$x2,$y2) = map { split /,/, $_ } @inslauf_selection;
+    my($new_p1,$new_p2) = map { int_round($_) } VectorUtil::project_point_on_line($p1,$p2,$x1,$y1,$x2,$y2);
+    my($tx1,$ty1,$tx2,$ty2) = (transpose($p1,$p2), transpose($new_p1,$new_p2));
+    $c->createLine($tx1,$ty1,$tx2,$ty2,
+		   -arrow => 'last',
+		   -arrowshape => [3,5,3],
+		   -tags => 'smooth_line_movement',
+		  );
+    $c->createLine($tx2-3,$ty2-3,$tx2+3,$ty2+3,-tags => 'smooth_line_movement');
+    $c->createLine($tx2-3,$ty2+3,$tx2+3,$ty2-3,-tags => 'smooth_line_movement');
+    main::status_message("Mittleren Punkt um " . (sprintf "%.1f", Strassen::Util::strecke([$p1,$p2],[$new_p1,$new_p2])) . "m verschieben?", "info");
+    @inslauf_selection = ("$p1,$p2", "$new_p1,$new_p2");
+    my $done;
+    eval {
+	$done = change_points();
+    };
+    my $err = $@;
+    $c->delete('smooth_line_movement');
+    delete_route(); # to avoid confusion about change of @inslauf_selection
+    if ($err) {
+	status_message($err, 'die');
+    }
+    $done;
+}
 sub change_poly_points {
     # XXX NYI
 }

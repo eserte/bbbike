@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: small_berlinmap.pl,v 2.21 2007/04/01 20:02:17 eserte Exp $
+# $Id: small_berlinmap.pl,v 2.21 2007/04/01 20:02:17 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001 Slaven Rezic. All rights reserved.
@@ -21,12 +21,14 @@ small_berlinmap.pl - create a small overview map of Berlin
 
     ./small_berlinmap.pl [-width w] [-height h] [-normbg bgcolor]
                          [-includepotsdam] [-nogif] [-v [-v ...]]
+			 [-datadir directory]
 			 [-strfiles file,file,...]
 			 [-borderfiles file,file,...]
 			 [-bbox x,y,x,y]
 			 [-imagemagick] [-gif|-xpm]
 			 [-cgisettings] [-customplaces place;place;...]
 			 [-suffix suffix]
+			 [-o prefix]
 
 =head1 DESCRIPTION
 
@@ -111,13 +113,16 @@ it under the same terms as Perl itself.
 
 =cut
 
+use strict;
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib", "$FindBin::RealBin/../data");
+
+use File::Spec qw();
+use File::Temp qw(tempfile);
+use Getopt::Long;
+
 use BBBikeDraw;
 use BBBikeUtil qw(is_in_path);
-use Getopt::Long;
-use File::Temp qw(tempfile);
-use strict;
 
 my $img_w = 200;
 my $img_h = 200;
@@ -134,6 +139,8 @@ my $v = 0;
 my $use_cgi_settings;
 my $custom_places;
 my $suffix = "";
+my $datadir;
+my $o_prefix = "/tmp/berlin";
 
 my @orig_ARGV = @ARGV;
 if (!GetOptions("width=i" => \$img_w,
@@ -141,6 +148,7 @@ if (!GetOptions("width=i" => \$img_w,
 		"normbg=s" => \$normbg,
 		"geometry=s" => \$geometry,
 		"includepotsdam!" => \$includepotsdam,
+		"datadir=s" => \$datadir,
 		"strfiles=s" => sub { @strfiles = split /,/, $_[1] },
 		"borderfiles=s" => sub { @border = split /,/, $_[1] },
 		"bbox=s" => \$bbox,
@@ -151,8 +159,14 @@ if (!GetOptions("width=i" => \$img_w,
 		"cgisettings!" => \$use_cgi_settings,
 		"customplaces=s" => \$custom_places,
 		"suffix=s" => \$suffix,
+		"o=s" => \$o_prefix,
 	       )) {
     die "usage!";
+}
+
+if (defined $datadir) {
+    $datadir = File::Spec->rel2abs($datadir);
+    @Strassen::datadirs = ($datadir);
 }
 
 if ($use_cgi_settings) {
@@ -200,7 +214,7 @@ if (!@border) {
 }
 
 for my $type ('norm', 'hi') {
-    my $base = "/tmp/berlin_small" . ($type eq 'hi' ? '_hi' : '') . $suffix;
+    my $base = $o_prefix . "_small" . ($type eq 'hi' ? '_hi' : '') . $suffix;
     my $img     = "$base.png";
     my $img_gif = "$base.gif";
     my $img_xpm = "$base.xpm";
@@ -328,7 +342,8 @@ EOF
     if ($use_gif) {
 	if (1) {
 	    system("convert", $img, $img_gif) == 0
-		or die "Failed $img -> $img_gif conversion: $?";
+		or die "Failed $img -> $img_gif conversion: $?,\n" .
+		    "maybe ImageMagick is not installed?";
 	} else {
 	    # XXX old code using netpbm
 	    my($alphafh,$alphafile) = tempfile(SUFFIX => "_alpha.pbm",
@@ -372,7 +387,8 @@ EOF
 
     if ($use_xpm) {
 	system("convert", $img, $img_xpm) == 0
-	    or die "Failed $img -> $img_xpm conversion: $?";
+	    or die "Failed $img -> $img_xpm conversion: $?,\n" .
+		"maybe ImageMagick is not installed?";
 	chmod 0644, $img_xpm;
     }
 }

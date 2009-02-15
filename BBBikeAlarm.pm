@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAlarm.pm,v 1.42 2008/12/31 16:35:45 eserte Exp $
+# $Id: BBBikeAlarm.pm,v 1.43 2009/02/14 11:34:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000, 2006, 2008 Slaven Rezic. All rights reserved.
@@ -45,7 +45,7 @@ my $install_datebook_additions = 1;
 use File::Basename qw(basename);
 use Time::Local;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.42 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.43 $ =~ /(\d+)\.(\d+)/);
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?
@@ -290,6 +290,21 @@ sub enter_alarm {
 							   -sticky => "w");
 	} else {
 	    $use_ical = 0;
+	}
+
+	{
+	    $t->Button(-padx => 1, -pady => 1,
+		       -text => "emacs org-mode date",
+		       -command => sub {
+			   $get_end_zeit->();
+			   emacs_org_mode_date(-toplevel => $t,
+					       -text => $text,
+					       -dtstart => $ankunft_epoch,
+					       -alarmdelta => $pre_alarm_seconds,
+					      );
+		       },
+		      )->grid(-row => $row++, -column => 0, -columnspan => 2,
+			      -sticky => 'w');
 	}
 
 	my $f = $t->Frame->grid(-row => $row++, -column => 0,
@@ -881,6 +896,41 @@ EOF
 	or my_die "Can't print to $file: $!";
     close F
 	or my_die "While closing $file: $!";
+}
+
+sub emacs_org_mode_date {
+    my(%args) = @_;
+    my $toplevel      = delete $args{-toplevel};
+    my $text          = delete $args{-text};
+    my $dtstart_epoch = delete $args{-dtstart};
+    my $alarm_delta   = delete $args{-alarmdelta};
+    die "Unhandled arguments: " . join(" ", %args) if %args;
+    my $t = $toplevel->Toplevel(-title => "Emacs org-mode date");
+    $t->transient($toplevel) if $main::transient;
+    my $txt = $t->Scrolled("ROText",
+			   -scrollbars => 'osoe',
+			   -height => 2,
+			   -width => 60,
+			  )->pack(qw(-fill both -expand 1));
+    # XXX Taken from ical2org
+    my $alarm_delta_spec;
+    if ($alarm_delta % 3600 == 0) {
+	$alarm_delta_spec = ($alarm_delta/3600).'h';
+    } elsif ($alarm_delta % 60 == 0) {
+	$alarm_delta_spec .= ($alarm_delta/60).'min';
+    } else {
+	$alarm_delta_spec .= $alarm_delta.'s';
+    }
+
+    require POSIX;
+    my $org_date = POSIX::strftime("%Y-%m-%d %a %H:%M", localtime $dtstart_epoch) . " -" . $alarm_delta_spec;
+    $txt->insert("end", "** $text <$org_date>");
+    $txt->selectAll;
+    $t->Button(Name => "close",
+	       -text => M"Schließen",
+	       -command => sub {
+		   $t->destroy;
+	       })->pack(-side => "right", -fill => "x");
 }
 
 # called from outer world

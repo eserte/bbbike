@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.127 2009/02/11 20:55:43 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.128 2009/02/14 13:39:57 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2461,42 +2461,63 @@ EOF
 		   -command => \&main::grep_line, # never reload necessary
 		   -anchor => "w",
 		  )->grid(-column => 1, -row => $row, -sticky => "nesw");
-    }
-    {
-	my @files = ((!defined $main::edit_mode || $main::edit_mode eq '')
-		     && !$main::edit_normal_mode
-		     ? BBBikeEditUtil::get_generated_files()
-		     : BBBikeEditUtil::get_orig_files()
-		    );
-	if (!@files) {
-	    main::status_message(Mfmt("Keine Dateien in %s gefunden", $main::datadir), "err");
-	    return;
+	
+	$row++;
+
+	{
+	    my @files = ((!defined $main::edit_mode || $main::edit_mode eq '')
+			 && !$main::edit_normal_mode
+			 ? BBBikeEditUtil::get_generated_files()
+			 : BBBikeEditUtil::get_orig_files()
+			);
+	    if (!@files) {
+		main::status_message(Mfmt("Keine Dateien in %s gefunden", $main::datadir), "err");
+		return;
+	    }
+	    my $ff = $f->Frame->grid(-column => 0, -row => $row, -columnspan => 2, -sticky => 'nesw');
+	    $ff->Button(-text => M("Neu hinzufügen zu: "),
+			-command => sub {
+			    my $file = $sel_file;
+			    if ($file !~ m|^/|) { # XXX use file_name_is_absolute
+				$file = "$main::datadir/$file";
+			    }
+			    addnew($t, $file)
+			},
+		       )->pack(-side => "left");
+	    require Tk::BrowseEntry;
+	    my $be = $ff->BrowseEntry(#-state => "readonly",
+				      -textvariable => \$sel_file,
+				      ($Tk::VERSION >= 804
+				       ? (-autolistwidth => 1)
+				       : ()
+				      )
+				     )->pack(-side => "left");
+	    $be->Subwidget("slistbox")->configure(-exportselection => 0);
+	    $be->insert("end", @files);
 	}
-	my $f = $t->Frame->pack(-anchor => "w");
-	$f->Button(-text => M("Neu hinzufügen zu: "),
+
+	$row++;
+
+	$f->Button(-text => M("Punkt löschen"),
 		   -command => sub {
-		       my $file = $sel_file;
-		       if ($file !~ m|^/|) { # XXX use file_name_is_absolute
-			   $file = "$main::datadir/$file";
+		       if (main::delete_point() && $auto_reload) {
+			   main::reload_all();
 		       }
-		       addnew($t, $file)
 		   },
-		  )->pack(-side => "left");
-	require Tk::BrowseEntry;
-	my $be = $f->BrowseEntry(#-state => "readonly",
-				 -textvariable => \$sel_file,
-				 ($Tk::VERSION >= 804
-				  ? (-autolistwidth => 1)
-				  : ()
-				 )
-				)->pack(-side => "left");
-	$be->Subwidget("slistbox")->configure(-exportselection => 0);
-	$be->insert("end", @files);
+		   -anchor => "w",
+		  )->grid(-column => 0, -row => $row, -sticky => 'nesw');
+
+	$f->Button(-text => M("Linie glätten"),
+		   -command => sub {
+		       if (main::smooth_line() && $auto_reload) {
+			   main::reload_all();
+		       }
+		   },
+		   -anchor => 'w',
+		  )->grid(-column => 1, -row => $row, -sticky => 'nesw');
+
+	$row++;
     }
-    $t->Button(-text => M("Punkt löschen"),
-	       -command => \&main::delete_point,
-	       -anchor => "w",
-	      )->pack(-fill => "x");
 ##XXX not yet:
 #     $t->Button(-text => M("Linien löschen"),
 # 	       -command => \&main::delete_lines,
@@ -2505,6 +2526,13 @@ EOF
     $t->Label(-justify => "left",
 	      -text => M("F8 zum Editieren des Elements unter dem Mauszeiger.\nF2 zum Einfügen eines Punktes."),
 	     )->pack(-anchor => "w");
+    # XXX Sometimes it happens that the mouse is over the mainwindow,
+    # but the edit window still has the focus. For this case I have
+    # the Escape binding to fix things.
+    $t->bind("<Escape>" => sub {
+		 $main::top->focus;
+	     });
+
     $t->update;
     if (!$geometry) {
 	$t->Popup(-popover => $top,

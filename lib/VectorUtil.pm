@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: VectorUtil.pm,v 1.19 2009/01/17 21:25:42 eserte Exp $
+# $Id: VectorUtil.pm,v 1.20 2009/02/14 13:39:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001,2004,2008 Slaven Rezic. All rights reserved.
@@ -16,12 +16,13 @@ package VectorUtil;
 
 use strict;
 use vars qw($VERSION $VERBOSE @ISA @EXPORT_OK);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
 
 require Exporter;
 @ISA = 'Exporter';
 
-@EXPORT_OK = qw(vector_in_grid distance_point_line get_polygon_center
+@EXPORT_OK = qw(vector_in_grid project_point_on_line distance_point_line
+		get_polygon_center
 		point_in_grid point_in_polygon move_point_orthogonal
 		intersect_rectangles enclosed_rectangle normalize_rectangle
 	       );
@@ -118,6 +119,23 @@ sub vector_in_grid {
     }
 
     0;
+}
+
+# in: point ($px,$py)
+#     line ($s0x,$s0y) - ($s1x,$s1y)
+# out: point($x,$y) (projected point on the line)
+sub project_point_on_line {
+    my($px,$py,$s0x,$s0y,$s1x,$s1y) = @_;
+    my($sxd, $syd) = ($s1x-$s0x, $s1y-$s0y);
+    if ($sxd+$syd==0) { # line is really a point
+	return sqrt(sqr($px-$s0x)+sqr($py-$s0y));
+    }
+    my $tf = (($px-$s0x)*($s1x-$s0x) + ($py-$s0y)*($s1y-$s0y)) /
+	     ($sxd*$sxd + $syd*$syd);
+    # $nx/$ny: nearest point on line
+    my $nx = $s0x+$tf*$sxd;
+    my $ny = $s0y+$tf*$syd;
+    ($nx, $ny);
 }
 
 # in: point ($px,$py)

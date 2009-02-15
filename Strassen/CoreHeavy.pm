@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.42 2009/02/12 23:38:56 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.44 2009/02/15 20:49:18 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -97,30 +97,28 @@ sub new_with_removed_points {
     $new_s;
 }
 
-### AutoLoad Sub
-sub agrep {
-    my($self, $pattern, %arg) = @_;
-    agrep_file($pattern, $self->{File}, %arg);
-}
-
 # XXX make gzip-aware
 # XXX does not work for MultiStrassen
 # %arg:
 # NoDot: keine Ausgabe von "...", wenn zu viele Matches existieren
+# NoStringApprox: do not use String::Approx, even if available
 # ErrorDef: Angabe der Reihenfolge (match begin, match errors)
 # Agrep: maximale Anzahl von erlaubten Fehlern
 # Return value: Array with matched street names
 ### AutoLoad Sub
-sub agrep_file {
-    my($pattern, $file, %arg) = @_;
+sub agrep {
+    my($self, $pattern, %arg) = @_;
 
     my @paths;
     my @files;
+    my $file = $self->{File};
     if (ref $file eq 'ARRAY') {
 	@files = @$file;
     } else {
 	CORE::push(@files, $file);
     }
+
+    my $file_encoding = $self->get_global_directive("encoding");
 
     foreach my $file (@files) {
 	my $path;
@@ -145,16 +143,29 @@ sub agrep_file {
     my @data;
     if (!$OLD_AGREP && is_in_path('agrep')) {
 	$grep_type = 'agrep';
+	# agrep does not cope with utf-8, so convert to octets
+	if (defined $file_encoding) {
+	    eval {
+		require Encode;
+		$pattern = Encode::encode($file_encoding, $pattern);
+	    };
+	    warn $@ if $@;
+	}
 	$pattern =~ s/(.)/\\$1/g;
     } else {
 	foreach my $path (@paths) {
 	    open(F, $path) or die "Can't open $path: $!";
+	    if (defined $file_encoding) {
+		switch_encoding(\*F, $file_encoding);
+	    }
 	    my @file_data;
 	    chomp(@file_data = <F>);
 	    CORE::push(@data, @file_data);
 	    close F;
 	}
+	return () if !@data;
 	eval { local $SIG{'__DIE__'};
+	       die if $arg{NoStringApprox};
 	       require String::Approx;
 	       String::Approx->VERSION(2.7);
 	   };
@@ -164,7 +175,6 @@ sub agrep_file {
 	    $grep_type = 'perl';
 	}
     }
-    return () if !@data;
     my @def;
     if ($arg{ErrorDef}) {
 	@def = @{$arg{ErrorDef}};
@@ -193,6 +203,9 @@ sub agrep_file {
 	    open(AGREP, "-|") or
 	      exec 'agrep', @args, $grep_pattern, @paths or
 		die "Can't exec program: $!";
+	    if (defined $file_encoding) {
+		switch_encoding(\*AGREP, $file_encoding);
+	    }
 	    chomp(@this_res = <AGREP>);
 	    close AGREP;
 	} elsif ($grep_type eq 'approx' && $err) {

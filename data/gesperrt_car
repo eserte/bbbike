@@ -41,9 +41,9 @@ Hagelberger Str.	3 8648,9526 8773,9524 8777,9601
 Hagelberger Str.	3 8648,9526 8773,9524 9000,9509
 Hagelberger Str.	3 8648,9526 8773,9524 8769,9290
 Warschauer - Marchlewskistr. 	3 13476,11174 13493,11217 13541,11355 13496,11384
-Holtei von S - Boxhagener	3 14575,11407 14639,11512 14576,11582
-Boxhagener von W - Holtei	3 14576,11582 14639,11512 14705,11629
-Holtei von N - Boxhagener	3 14705,11629 14639,11512 14771,11345
+Holtei von S - Boxhagener	3 14575,11407 14639,11512 14577,11582
+Boxhagener von W - Holtei	3 14577,11582 14639,11512 14710,11626
+Holtei von N - Boxhagener	3 14710,11626 14639,11512 14771,11345
 Boxhagener von E - Holtei	3 14771,11345 14639,11512 14575,11407
 Bachstr. - 17. Juni (?)	3 5798,12021 5787,11966 5771,11887 5901,11902
 Fasanen - Hertzallee (nur für BVG frei)	3 5456,11742 5356,11500 5587,11397
@@ -468,9 +468,9 @@ Köpenicker Landstr. -> Trojanstr.: Mittelstreifen	3::igndisp 16428,7144 16353,72
 Straßenbahntrasse	3nocross::ignrte 14809,16525 15134,16499 15388,16502
 Sulzfelder Str. -> Buschallee: Straßenbahntrasse	3::igndisp 15120,16349 15134,16499 14809,16525
 Buschallee -> Sulzfelder Str.: Straßenbahntrasse	3::igndisp 15388,16502 15134,16499 15120,16349
-Mittelstreifen	3nocross::ignrte 24822,11275 24890,11268 25144,11228
-Alt-Mahlsdorf -> Theodorstr.: Mittelstreifen	3::igndisp 25144,11228 24890,11268 24907,11186
-Theodorstr. -> Alt-Mahlsdorf: Mittelstreifen	3::igndisp 24907,11186 24890,11268 24822,11275
+Mittelstreifen	3nocross::ignrte 24824,11256 24893,11252 25144,11215
+Alt-Mahlsdorf -> Theodorstr.: Mittelstreifen	3::igndisp 25144,11215 24893,11252 24907,11186
+Theodorstr. -> Alt-Mahlsdorf: Mittelstreifen	3::igndisp 24907,11186 24893,11252 24824,11256
 Mittelstreifen	3nocross::ignrte 1203,4047 1232,4129 1279,4265
 Clayallee -> Katharinenstr.: Mittelstreifen	3::igndisp 1203,4047 1232,4129 1180,4136
 Katharinenstr. -> Clayallee: Mittelstreifen	3::igndisp 1180,4136 1232,4129 1279,4265
@@ -612,12 +612,12 @@ Gieselerstr.	1 4606,9023 4619,9200
 Wiener Str., Görlitzer Ufer	1 12932,9900 13086,9825 13150,9900 13221,10005
 Mittelstreifen	3nocross::ignrte 15957,2330 15804,2512 15736,2593
 Freiertweg - Lichtenrader Damm	3 10827,467 10619,395 10660,293
-Glasbläserallee: Tore versperren die Durchfahrt, Radfahrer können passieren	2 14893,10359 14839,10271
+Glasbläserallee: Tore versperren die Durchfahrt, Radfahrer können passieren	2 14888,10385 14835,10272
 Hornstr.	1 8779,9851 8988,9783 8980,9751 8779,9812
-Hafenplatz	3 8698,10768 8628,10818 8659,10910
-Hafenplatz	3 8659,10910 8628,10818 8698,10768
-Hafenplatz	3 8483,10900 8628,10818 8698,10768
-Hafenplatz	3 8698,10768 8628,10818 8483,10900
+Hafenplatz	3 8700,10766 8628,10818 8659,10910
+Hafenplatz	3 8659,10910 8628,10818 8700,10766
+Hafenplatz	3 8483,10900 8628,10818 8700,10766
+Hafenplatz	3 8700,10766 8628,10818 8483,10900
 Askanischer Platz	1 8865,10974 8859,10939 8882,10905
 Straßenbahntrasse	3nocross::ignrte 11271,22328 11383,22369 11583,22442
 Schweizer Tal -> Schweizer Tal: Straßenbahntrasse	3::igndisp 11504,22277 11383,22369 11176,22526
@@ -751,7 +751,7 @@ Rheinsteinstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18868,8731 18734,86
 Rheinsteinstr. -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18868,8731 18734,8682 18843,8612
 Ehrenfelsstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18843,8612 18734,8682 18729,8650
 Lötzener Allee	1 452,10669 474,10869 503,11104
-keine Abbiegemöglichkeit	3nocross::ignrte 20053,3272 20001,3331 19892,3454
+keine Abbiegemöglichkeit	3nocross::ignrte 20064,3278 20010,3340 19904,3464
 Mittelstreifen	3nocross::ignrte 5542,11075 5459,11135 5268,11274
 Jebensstr. -> Hardenbergstr.: Mittelstreifen	3::igndisp 5587,11397 5459,11135 5542,11075
 Hardenbergstr. -> Jebensstr.: Mittelstreifen	3::igndisp 5268,11274 5459,11135 5587,11397
@@ -775,10 +775,8 @@ Loewenhardtdamm -> Loewenhardtdamm: Mittelstreifen	3::igndisp 8371,8543 8334,865
 Loewenhardtdamm -> Höhndorfstr.: Mittelstreifen	3::igndisp 8306,8722 8334,8655 8438,8676
 Friedbergstr.	1 3012,10812 3204,10895
 Caseler Str.	1 14732,16770 14700,16790 14608,16772
-Betonblöcke (aber für Radfahrer passierbar)	3nocross::ignrte 9777,10719 9805,10791 9935,11067
+Betonblöcke (aber für Radfahrer passierbar)	3nocross::ignrte 9777,10719 9805,10791 9829,10830 9935,11067
 Lindenstr. -> Markgrafenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9777,10719 9805,10791 9786,10971
-Am Berlin Museum -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 10025,10755 9805,10791 9777,10719
-Am Berlin Museum -> Markgrafenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 10025,10755 9805,10791 9786,10971
-Markgrafenstr. -> Am Berlin Museum: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9786,10971 9805,10791 10025,10755
-Markgrafenstr. -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9786,10971 9805,10791 9935,11067
-Lindenstr. -> Am Berlin Museum: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9935,11067 9805,10791 10025,10755
+Markgrafenstr. -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9786,10971 9805,10791 9829,10830
+Am Berlin Museum -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 10025,10755 9829,10830 9805,10791
+Lindenstr. -> Am Berlin Museum: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9935,11067 9829,10830 10025,10755

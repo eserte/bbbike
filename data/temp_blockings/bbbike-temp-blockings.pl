@@ -32,7 +32,7 @@ userdel	2 9521,10010 9448,10014
 userdel	2 9599,10175 9687,10180 9825,10206
 userdel	2 9416,10196 9599,10175
 userdel	2 9579,10122 9536,10064
-userdel	2 9579,10122 9643,10140 9689,10124
+userdel	2 9579,10122 9631,10142 9689,10124
 userdel	2 9837,10117 9827,10051
 userdel	2 9837,10117 9858,10199
 userdel auto	3 9593,10238 9599,10175 9579,10122
@@ -1601,7 +1601,7 @@ EOF
        text  => 'Kantstraße Richtung Spandau: Zwischen Kreuzung Hardenbergstraße und Kreuzung Joachimstaler Straße gesperrt, Dauer: 16.03.2005 06:00 Uhr bis 16:00 Uhr (Filmarbeiten) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 5652,11004 5613,10963 5505,10971
+userdel	1 5652,11004 5613,10963 5494,10973
 EOF
      },
      { from  => 1110700800, # 2005-03-13 09:00
@@ -2370,7 +2370,7 @@ EOF
        text  => 'Hönower Str. (Mahlsdorf) in Richtung Alt-Mahlsdorf zwischen Wilhelmsmühlenweg und Alt-Mahlsdorf Baustelle, Fahrtrichtung gesperrt (bis 12.08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 24623,11684 24591,11625 24603,11450 24658,11293
+userdel	q4; 24623,11684 24591,11587 24603,11450 24654,11265
 EOF
      },
      { from  => 1121724000, # 2005-07-19 00:00
@@ -2564,9 +2564,9 @@ userdel	2 5484,10810 5351,10760
 userdel auto	3 5829,10964 5782,10884 5681,10696
 userdel auto	3 5247,10992 5242,10918 5229,10716 5207,10399
 userdel auto	3 5207,10399 5229,10716 5242,10918 5247,10992
-userdel auto	3 5479,10719 5484,10810 5505,10971
+userdel auto	3 5479,10719 5484,10810 5494,10973
 userdel auto	3 5877,10486 6025,10746 6135,10982
-userdel auto	3 5505,10971 5484,10810 5479,10719
+userdel auto	3 5494,10973 5484,10810 5479,10719
 userdel auto	3 5681,10696 5782,10884 5829,10964
 userdel auto	3 6135,10982 6025,10746 5877,10486
 EOF
@@ -3599,7 +3599,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LMS_1138607956237',
        data  => <<EOF,
-userdel	2 23571,10990 24389,10836
+userdel	2 23575,10972 23792,10926
 EOF
      },
      { from  => 1150092737, # 2006-06-12 08:12
@@ -4567,7 +4567,7 @@ EOF
 userdel	2 9521,10010 9448,10014
 userdel	2 9827,10051 9521,10010 9536,10064 9579,10122 9599,10175 9687,10180 9825,10206 9865,10227
 userdel	2 9416,10196 9599,10175
-userdel	2 9579,10122 9643,10140 9689,10124
+userdel	2 9579,10122 9631,10142 9689,10124
 userdel	2 9827,10051 9837,10117 9858,10199 9865,10227
 EOF
      },
@@ -5899,7 +5899,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003672',
        data  => <<EOF,
-userdel	2::inwork 12844,9351 12764,9433 12569,9547
+userdel	2::inwork 12844,9351 12764,9433 12563,9536
 EOF
      },
      { from  => 1160172484, # 2006-10-07 00:08
@@ -6667,7 +6667,7 @@ EOF
        text  => 'Bauarbeiten am Maybachufer zwischen Pannierstr. und Weichselstr., Behinderungen möglich',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 12844,9351 12764,9433 12569,9547
+userdel	q4::inwork 12844,9351 12764,9433 12563,9536
 EOF
      },
      { from  => 1164322800, # 2006-11-24 00:00
@@ -6904,7 +6904,7 @@ EOF
        text  => 'Hultschiner Damm zwischen Alt-Mahlsdorf und Elsenstr. gesperrt, geplatzte Wasserleitung bis 19.01.2007 15:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 24637,10807 24735,11021 24658,11293
+userdel	2::inwork 24639,10766 24740,10992 24654,11265
 EOF
      },
      { from  => 1182281811, # 2007-06-19 21:36
@@ -6956,7 +6956,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004559',
        data  => <<EOF,
-userdel	q4::inwork; 24623,11684 24652,11794 24578,11928
+userdel	q4::inwork; 24623,11684 24657,11762 24652,11794 24578,11928
 EOF
      },
      { from  => 1190067630, # 2007-09-18 00:20
@@ -6991,7 +6991,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004452',
        data  => <<EOF,
-userdel	2::inwork 24637,10807 24735,11021 24658,11293
+userdel	2::inwork 24639,10766 24740,10992 24654,11265
 EOF
      },
      { from  => 1170098849, # 2007-01-29 20:27
@@ -7305,7 +7305,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_86548_COPY_1',
        data  => <<EOF,
-userdel	2::inwork 11461,11145 11421,11073
+userdel	2::inwork 11458,11136 11421,11073
 EOF
      },
      { from  => 1174172400, # 2007-03-18 00:00
@@ -8590,7 +8590,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005786',
        data  => <<EOF,
-userdel	2::inwork 20012,3532 19892,3454
+userdel	2::inwork 20012,3532 19904,3464
 EOF
      },
      { from  => 1181768486, # 2007-06-13 23:01
@@ -9101,7 +9101,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_006107',
        data  => <<EOF,
-userdel	q4::inwork 19892,3454 19732,3340
+userdel	q4::inwork 19904,3464 19732,3340
 EOF
      },
      { from  => 1185055200, # 2007-07-22 00:00
@@ -10835,7 +10835,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007852',
        data  => <<EOF,
-userdel	1::inwork 24658,11293 24735,11021 24637,10807
+userdel	1::inwork 24654,11265 24740,10992 24639,10766
 EOF
      },
      { from  => 1203374120, # 2008-02-18 23:35
@@ -11361,7 +11361,7 @@ EOF
        text  => 'Mohrenstr. zwischen Mauerstr. und Glinkastr. gesperrt ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 9220,11781 9173,11770
+userdel	q4::inwork 9220,11781 9171,11777
 EOF
      },
      { from  => 1209754154, # 2008-05-02 20:49
@@ -11439,7 +11439,7 @@ EOF
 userdel	2::temp 9521,10010 9448,10014
 userdel	2::temp 9858,10199 9837,10117 9827,10051 9521,10010 9536,10064 9579,10122 9599,10175 9687,10180 9825,10206 9865,10227
 userdel	2::temp 9416,10196 9599,10175
-userdel	2::temp 9579,10122 9643,10140 9689,10124 9827,10051
+userdel	2::temp 9579,10122 9631,10142 9689,10124 9827,10051
 EOF
      },
      { from  => undef, # 

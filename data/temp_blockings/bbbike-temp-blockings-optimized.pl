@@ -7,7 +7,7 @@ push @temp_blocking,
          'text' => 'Rudower Chaussee (Treptow - Köpenick) in beiden Richtungen Höhe S-Bahn Brücke Adlershof Baustelle, Straße vollständig gesperrt, als Fußgänger kann man passieren',
          'from' => undef,
          'id' => 1079,
-         'data' => 'userdel	q4::inwork 19892,3454 19732,3340
+         'data' => 'userdel	q4::inwork 19904,3464 19732,3340
 ',
          'type' => 'handicap'
        },

@@ -90,7 +90,7 @@ An der Wuhlheide => Alte Försterei: bereits an der Ampel Köpenicker Allee die St
 Wuhlewanderweg => Lindenstr.: zunächst linken Gehweg benutzen	CP; 21744,5804 21626,5667 21709,5543
 #: note: Die Lidl-Strecke ist eine Strecke, deshalb CS; statt CP2;:
 Zufahrt über Lidl-Parkplatz	CS; 21626,5667 21744,5804
-Mariendorfer Damm => Am Teltowkanal: bereits an der Ullsteinstr. auf den linken Gehweg wechseln	PI; 9207,5185 9191,5272 9171,5264 8881,5143
+Mariendorfer Damm => Am Teltowkanal: bereits an der Ullsteinstr. auf den linken Gehweg wechseln	PI; 9207,5185 9192,5272 9171,5263 8881,5143
 Jerusalemer => Leipziger Str.: zunächst linken Gehweg benutzen (schlecht passierbarer Mittelstreifen)	CP; 9892,11752 9898,11679 9981,11689
 hinter dem "Alten Zollhaus" halbrechts abbiegen	CP; 10313,10084 10168,10085 10069,10151
 Frankfurter Allee - Kreutzigerstr.: Einfahrt in Hausdurchgang	CP2; 14291,12220 14285,12190
@@ -115,7 +115,7 @@ zunächst auf dem linken Gehweg des Weißenseer Wegs bleiben, nächste Möglichkeit 
 Route nach Prenzlau ausgeschildert	CP2; 50420,96012 50188,95514
 Ausgeschildert mit Tafel "Windfeld Randowhöhe" und "Wolliner Weg"	CP2; 52527,98581 52471,98189
 #: note: längere Durchfahrt, deshalb ist CS; hier OK:
-zur Müggelstr. Hausdurchfahrt benutzen	CS; 14854,11735 14837,11706
+zur Müggelstr. Hausdurchfahrt benutzen	CS; 14855,11737 14837,11706
 #: note: längere Durchfahrt, deshalb ist CS; hier OK:
 zur Müggelstr. Hausdurchfahrt benutzen	CS; 14994,12121 14994,12064
 Ausgeschildert: Sportplatz	CP2; 13535,10184 13506,10146
@@ -294,8 +294,8 @@ Falkenseer Chaussee - Darbystr.: bereits am Bahnübergang die Straßenseite wechse
 Darbystr. - Falkenseer Chaussee: zunächst auf dem linken Gehweg bis zur Frankenwaldstr. vorfahren	CP; -5505,15859 -5526,15757 -5473,15742
 B1 - Ilsensteinweg: bereits an der Ampel Spanische Allee die Gehwegseite wechseln	PI; -1641,2419 -1622,2426 -1724,2743
 Ilsensteinweg - B1: ggfs. die Ampel an der Spanischen Allee zur rechten Hand zum Überqueren der Straße benutzen	CP; -1724,2743 -1622,2426 -1248,2574
-Theodorstr. - Alt-Mahlsdorf: ggfs. die nächste Ampel benutzen	CP; 24907,11186 24890,11268 24822,11275
-Alt-Mahlsdorf - Theodorstr.: frühzeitig auf den linken Gehweg wechseln	PI; 25144,11228 24890,11268 24907,11186
+Theodorstr. - Alt-Mahlsdorf: ggfs. die nächste Ampel benutzen	CP; 24907,11186 24893,11252 24824,11256
+Alt-Mahlsdorf - Theodorstr.: frühzeitig auf den linken Gehweg wechseln	PI; 25144,11215 24893,11252 24907,11186
 Daumstr. - Glindowseestr.: bereits an der Kreuzung Daumstr./An den Rohrbruchwiesen die Straßenseite wechseln	PI; -1655,16813 -1710,16735 -1553,16695
 Glindowseestr. - Daumstr.: zunächst auf der linken Gehwegseite fahren und dann die Straßenseite wechseln	CP; -1553,16695 -1710,16735 -1764,16633
 #: by: Andreas Titz vvv
@@ -337,9 +337,9 @@ Eichborndamm - Weg parallel zur S-Bahn: an der Ampel Miraustr. auf den linken Ge
 Prenzlauer Promenade - Brauhausstr.: bereits an der Ampel Thulestr./Am Steinberg auf den linken Gehweg wechseln	PI; 12010,16774 12017,16734 12211,16688
 Karl-Marx-Allee - Krautstr.: bereits an der Ampel Andreasstr. auf den linken Gehweg wechseln oder am Strausberger Platz die Karl-Marx-Allee überqueren und einige Meter zurückfahren	PI; 12360,12505 12134,12540 12118,12462
 Krautstr. - Karl-Marx-Allee: auf dem linken Gehweg bis zur Ampel am Strausberger Platz fahren und ggfs. die Straßenseite wechseln	CP; 12118,12462 12134,12540 12114,12546
-Blücherplatz - Waterlooufer: vor der Amerikagedenkbibliothek Richtung Waterlooufer abbiegen	CP2; 9643,10140 9687,10180
-Blücherplatz: an der Ampel Richtung Amerikagedenkbibliothek halten	CP2; 9599,10175 9643,10140
-Blücherplatz: Richtung Hochbahnhof Hallesches Tor halten	CP2; 9643,10140 9599,10175
+Blücherplatz - Waterlooufer: vor der Amerikagedenkbibliothek Richtung Waterlooufer abbiegen	CP2; 9631,10142 9687,10180
+Blücherplatz: an der Ampel Richtung Amerikagedenkbibliothek halten	CP2; 9599,10175 9631,10142
+Blücherplatz: Richtung Hochbahnhof Hallesches Tor halten	CP2; 9631,10142 9599,10175
 Ausgeschildert: Fangel	CP2; 54825,175505 54819,175345
 flache Rampe zum Umfahren der Treppen benutzen	CP 9404,6392
 Am Treptower Park - Hans-Thoma-Str.: frühzeitig auf den linken Gehweg wechseln	PI; 14529,9141 14443,9233 14327,9117

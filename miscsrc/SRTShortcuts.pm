@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.81 2009/02/13 23:32:47 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.82 2009/02/15 12:18:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.81 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.82 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -215,21 +215,24 @@ sub add_button {
 		     add_new_layer("str", "$bbbike_rootdir/misc/abdeckung.bbd");
 		 }
 		],
-		"-",
+	       ],
+	      ],
+	      [Cascade => 'OSM', -menuitems =>
+	       [
 		[Button => "Display (and refresh) downloaded OSM Berlin",
 		 -command => sub {
 		     _require_BBBikeOsmUtil();
 		     BBBikeOsmUtil::mirror_and_plot_visible_area();
 		 }],
-		[Button => "Download and display any OSM data",
-		 -command => sub {
-		     _require_BBBikeOsmUtil();
-		     BBBikeOsmUtil::download_and_plot_visible_area();
-		 }],
 		[Button => "Display (without refresh) downloaded OSM Berlin",
 		 -command => sub {
 		     _require_BBBikeOsmUtil();
 		     BBBikeOsmUtil::plot_visible_area();
+		 }],
+		[Button => "Download and display any OSM data",
+		 -command => sub {
+		     _require_BBBikeOsmUtil();
+		     BBBikeOsmUtil::download_and_plot_visible_area();
 		 }],
 		[Button => "Delete OSM layer",
 		 -command => sub {
@@ -1230,8 +1233,14 @@ sub new_gps_simplification {
 	unlink $gps_simplification_route_point_file;
     }
 
+    if (!@main::realcoords) {
+	main::status_message("No route available", "die");
+    }
     my $route = Route->new_from_realcoords(\@main::realcoords);
     require Route::Simplify;
+    if (!$main::net) {
+	main::make_net();
+    }
     my($strobj) = $main::net->sourceobjects; # XXX is this correct for multistrassen?
     my $res = $route->simplify_for_gps
 	(-streetobj => $strobj,
@@ -1305,7 +1314,7 @@ sub real_street_widths {
 	    my $w;
 	    my $street_width_dir = $dir->{street_width};
 	    if ($street_width_dir) {
-		if ($street_width_dir->[0] =~ m{^(\d+)m}) {
+		if ($street_width_dir->[0] =~ m{^([\d\.]+)m}) {
 		    $w = $1;
 		} elsif ($street_width_dir->[0] =~ m{(\d+)\s*lanes?}) {
 		    $w = $1 * LANE_WIDTH + PEDESTRIAN_PATHS_WIDTH;
@@ -1317,7 +1326,7 @@ sub real_street_widths {
 		}
 	    } else {
 		my $carriageway_width_dir = $dir->{carriageway_width};
-		if ($carriageway_width_dir && $carriageway_width_dir->[0] =~ m{^(\d+)m}) {
+		if ($carriageway_width_dir && $carriageway_width_dir->[0] =~ m{^([\d\.]+)m}) {
 		    $w = $1 + PEDESTRIAN_PATHS_WIDTH;
 		}
 	    }

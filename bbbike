@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.401 2009/02/11 20:55:18 eserte Exp $
+# $Id: bbbike,v 3.402 2009/02/14 13:40:56 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2008 Slaven Rezic. All rights reserved.
@@ -256,7 +256,7 @@ eval 'use BBBikeXS 0.09';
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.401 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.402 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -5995,7 +5995,7 @@ sub define_item_attribs {
     # normale Reihenfolge für das Übereinanderlegen bei restack()
     #XXX labels sollten grundsätzlich immer oben sein. Problematisch bei tag_groups
     @normal_stack_order =
-	(qw(map f w-out w i-out i f-Pabove crosshairs e e-img
+	(qw(map f w-out w i-out i f-Pabove e e-img
 	    gP gD z g gP gD gBO
 	    s-out l-out show gr rw s-NN s-N s-H s-HH s-B s-BAB sBAB sBAB-BAB sBAB-fg l v
 	    f-label-bg wr w-label-bg gBO-label-bg f-label w-label gBO-label
@@ -6006,6 +6006,7 @@ sub define_item_attribs {
 	    fz route comm),
 	 (map { "comm-$_" } @comments_types),
 	 qw(comm-route-label-bg comm-route-label qs hs ql hl mount nl delnet
+	    crosshairs
 	    O o p pl-fg vf-fg lsas lsa-bg lsa-fg lsas-t
 	    pp kn-bg kn-fg ki-bg ki-fg rest-bg rest-fg
 	    fz-label s-label-bg sBAB-label-bg s-label sBAB-label l-label-bg l-label
@@ -18474,7 +18475,16 @@ sub nearest_line_points_mouse {
     if (grep { /-label/ || $_ eq 'show' } @tags) { # ignore labels and show marker
 	(undef, @tags) = find_below_rx($c, [q{.}], undef, [q{current}, q{show}, q{-label}]);
     }
-    nearest_line_points($x, $y, @tags);
+    my($pos, @points);
+    eval {
+	($pos, @points) = nearest_line_points($x, $y, @tags);
+    };
+    if ($@) {
+	# 2nd try: restrict to just s and l types
+	(undef, @tags) = find_below($c, 's', 'l');
+	($pos, @points) = nearest_line_points($x, $y, @tags);
+    }
+    ($pos, @points);
 }
 
 # Input arguments:
