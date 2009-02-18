@@ -13,6 +13,7 @@ ScriptAlias <%=$cgiurl%>/browserinfo.cgi <%=$rootdir%>/lib/BrowserInfo.pm
 		      bbbike-data.cgi
 		      bbbikegooglemap.cgi
 		      bbbikegooglemap2.cgi
+		      bbbiketile.cgi
 		  )) { %>
 ScriptAlias <%=$cgiurl%>/<%=$script%> <%=$rootdir%>/cgi/<%=$script%>
 <% } %>

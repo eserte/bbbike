@@ -1,6 +1,6 @@
 CGI_SCRIPTS=		bbbike.cgi bbbikegooglemap.cgi mapserver_address.cgi \
 			mapserver_comment.cgi mapserver_setcoord.cgi \
-			wapbbbike.cgi
+			wapbbbike.cgi bbbiketile.cgi
 DEVEL_CGI_SCRIPTS=	bbbike2.cgi bbbikegooglemap2.cgi
 ROOT_URL?=		/bbbike
 # Set this to "cgi" or "Apache::Registry"

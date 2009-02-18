@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.27 2008/12/31 13:03:31 eserte Exp eserte $
+# $Id: bbbike.cgi,v 9.28 2009/02/17 20:44:11 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
@@ -730,7 +730,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 9.27 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 9.28 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1161,16 +1161,21 @@ if (defined $q->param('begin')) {
     for my $x (0 .. $xgridnr-1) {
 	for my $y (0 .. $ygridnr-1) {
 	    print "x=$x y=$y ...\n";
-	    draw_map('-x' => $x,
-		     '-y' => $y,
-		     '-quiet'    => 1,
-		     '-logging'  => 1,
-		     '-strlabel' => 1,
-		     '-force'    => 0,
-		    );
+	    create_map('-x' => $x,
+		       '-y' => $y,
+		       '-quiet'    => 1,
+		       '-logging'  => 1,
+		       '-strlabel' => 1,
+		       '-force'    => 0,
+		      );
 	}
     }
     my_exit(0);
+} elsif (defined $q->param('drawmap')) {
+    my($x,$y) = split /,/, $q->param('drawmap');
+    my %res = create_map('-x' => $x, '-y' => $y, -strlabel => 1, -force => 0);
+    print CGI->redirect(-uri => $res{imgurl});
+    exit 0;
 } elsif (defined $q->param('startchar')) {
     choose_ch_form($q->param('startchar'), 'start');
 } elsif (defined $q->param('viachar')) {
@@ -5121,8 +5126,9 @@ sub draw_route {
     $draw->flush;
 }
 
-sub draw_map {
+sub create_map {
     my(%args) = @_;
+
     my($part, @dim);
     my($x, $y);
     if (exists $args{'-x'} and exists $args{'-y'}) {
@@ -5133,8 +5139,6 @@ sub draw_map {
     } else {
 	die "No x/y set";
     }
-
-    http_header(@weak_cache) unless $args{-quiet};
 
     if (!@dim) { die "No dim set" }
 
@@ -5192,14 +5196,16 @@ sub draw_map {
 	}
     }
 
-    if ($create) {
-	$ext = $graphic_format;
-	$set_img_name->();
-    }
-
     if ($create || !-r $img_file || -z $img_file || !-r $map_file) {
 	eval {
 	    local $SIG{'__DIE__'};
+
+	    $ext = $q->param('imagetype') || $graphic_format;
+	    if ($ext eq 'gif' && !$can_gif) {
+		$ext = 'png';
+	    }
+	    $set_img_name->();
+
 	    require BBBikeDraw;
 	    open(IMG, "> $img_file~") or do {
 		print STDERR "Error code: $!\n";
@@ -5217,13 +5223,7 @@ sub draw_map {
 	    # XXX Argument sollte übergeben werden (wird sowieso noch nicht
 	    # verwendet, bis auf Überprüfung des boolschen Wertes)
 	    $q->param('strlabel', 'str:HH,H');#XXX if $args{-strlabel};
-	    if (!$q->param('imagetype')) {
-		if (!$can_gif) {
-		    $q->param('imagetype', 'png');
-		} else {
-		    $q->param('imagetype', 'gif');
-		}
-	    }
+	    $q->param('imagetype', $ext);
 	    if ($args{-module}) {
 		$q->param('module', $args{-module});
 	    } elsif ($detailmap_module) {
@@ -5264,85 +5264,97 @@ sub draw_map {
 	die __LINE__ . ": Warnung: $@<br>\n" if $@;
     }
 
-    unless ($args{-quiet}) {
+    (imgurl  => $img_url,
+     mapfile => $map_file,
+    );
+}
 
- 	my $type = $q->param('type') || '';
+sub draw_map {
+    my(%args) = @_;
+    http_header(@weak_cache);
 
-	my $script = <<EOF;
+    my %res = create_map(%args);
+    my($img_url, $map_file) = @res{qw(imgurl mapfile)};
+#require bbbikecgi_experiments;exit drawmap_with_open_layers(%args);#XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    my($x, $y) = ($args{'-x'}, $args{'-y'});
+
+    my $type = $q->param('type') || '';
+
+    my $script = <<EOF;
 function jump_to_map() {
     window.location.hash = "mapbegin";
 }
 EOF
 
-        # XXX jump_to_map macht Probleme mit Opera und ist nervig mit anderen
-        # Browsern.
-	header(#-script => $script,
-	       #-onLoad => 'jump_to_map()'
-	      );
-	if ($lang eq 'en') {
-	    print "Choose <b><a name='mapbegin'>" . M(ucfirst($type)) . "</a></b>:<br>\n";
-	} else {
-	    print "<b><a name='mapbegin'>" . ucfirst($type) . "-Kreuzung</a></b> ausw&auml;hlen:<br>\n";
-	}
-	print "<form action=\"$bbbike_script\">\n";
+    # XXX jump_to_map macht Probleme mit Opera und ist nervig mit anderen
+    # Browsern.
+    header(#-script => $script,
+	   #-onLoad => 'jump_to_map()'
+	  );
+    if ($lang eq 'en') {
+	print "Choose <b><a name='mapbegin'>" . M(ucfirst($type)) . "</a></b>:<br>\n";
+    } else {
+	print "<b><a name='mapbegin'>" . ucfirst($type) . "-Kreuzung</a></b> ausw&auml;hlen:<br>\n";
+    }
+    print "<form action=\"$bbbike_script\">\n";
 
-	foreach ($q->param) {
-	    unless ($_ eq 'type') {
-		print "<input type=hidden name=$_ value=\""
-		  . $q->param($_) . "\">\n";
-	    }
+    foreach ($q->param) {
+	unless ($_ eq 'type') {
+	    print "<input type=hidden name=$_ value=\""
+		. $q->param($_) . "\">\n";
 	}
-	print "<input type=hidden name=detailmapx value=\"$x\">\n";
-	print "<input type=hidden name=detailmapy value=\"$y\">\n";
-	print "<input type=hidden name=type value=\"$type\">\n";
-	print "<center><table class=\"detailmap\">";
+    }
+    print "<input type=hidden name=detailmapx value=\"$x\">\n";
+    print "<input type=hidden name=detailmapy value=\"$y\">\n";
+    print "<input type=hidden name=type value=\"$type\">\n";
+    print "<center><table class=\"detailmap\">";
 
-	# obere Zeile
-	if ($y > 0) {
-	    print "<tr><td align=right>";
-	    if ($x > 0) {
-		print qq{<input type=submit name=movemap_nw value="} . M("Nordwest") . qq{">};
-	    }
-	    print qq{</td><td align=center><input type=submit name=movemap_n value="} . M("Nord") . qq{"></td>\n};
-	    if ($x < $xgridnr-1) {
-		print qq{<td align=left><input type=submit name=movemap_ne value="} . M("Nordost") . qq{"></td>};
-	    }
-	    print "</tr>\n";
-	}
-
-	# mittlere Zeile
+    # obere Zeile
+    if ($y > 0) {
 	print "<tr><td align=right>";
 	if ($x > 0) {
-	    print qq{<input type=submit name=movemap_w value="} . M("West") . qq{">};
- 	}
-	print
-	  "</td><td><input type=image title='' name=detailmap ",
-	  "src=\"$img_url\" alt=\"\" border=0 ",
-	  ($use_imagemap ? "usemap=\"#map\" " : ""),
-	  "align=middle width=$detailwidth height=$detailheight>",
-	  "</td>\n";
+	    print qq{<input type=submit name=movemap_nw value="} . M("Nordwest") . qq{">};
+	}
+	print qq{</td><td align=center><input type=submit name=movemap_n value="} . M("Nord") . qq{"></td>\n};
 	if ($x < $xgridnr-1) {
-	    print qq{<td align=left><input type=submit name=movemap_e value="} . M("Ost") . qq{"></td>};
- 	}
+	    print qq{<td align=left><input type=submit name=movemap_ne value="} . M("Nordost") . qq{"></td>};
+	}
 	print "</tr>\n";
+    }
 
-	# untere Zeile
-	if ($y < $ygridnr-1) {
-	    print "<tr><td align=right>";
-	    if ($x > 0) {
-		print qq{<input type=submit name=movemap_sw value="} . M("Südwest") . qq{">};
-	    }
-	    print qq{</td><td align=center><input type=submit name=movemap_s value="} . M("Süd") . qq{"></td>};
-	    if ($x < $xgridnr-1) {
-		print qq{<td align=left><input type=submit name=movemap_se value="} . M("Südost") . qq{"></td>};
-	    }
-	    print "</tr>\n";
- 	}
-	print "</table>";
-	#print "<input type=submit name=Dummy value=\"&lt;&lt; Zur&uuml;ck\">";
-	print qq{<input type=button value="&lt;&lt; } . M("Zurück") . qq{" onclick="history.back(1);">};
-	print "</center>";
-	print <<EOF;
+    # mittlere Zeile
+    print "<tr><td align=right>";
+    if ($x > 0) {
+	print qq{<input type=submit name=movemap_w value="} . M("West") . qq{">};
+    }
+    print
+	"</td><td><input type=image title='' name=detailmap ",
+	"src=\"$img_url\" alt=\"\" border=0 ",
+	($use_imagemap ? "usemap=\"#map\" " : ""),
+	"align=middle width=$detailwidth height=$detailheight>",
+	"</td>\n";
+    if ($x < $xgridnr-1) {
+	print qq{<td align=left><input type=submit name=movemap_e value="} . M("Ost") . qq{"></td>};
+    }
+    print "</tr>\n";
+
+    # untere Zeile
+    if ($y < $ygridnr-1) {
+	print "<tr><td align=right>";
+	if ($x > 0) {
+	    print qq{<input type=submit name=movemap_sw value="} . M("Südwest") . qq{">};
+	}
+	print qq{</td><td align=center><input type=submit name=movemap_s value="} . M("Süd") . qq{"></td>};
+	if ($x < $xgridnr-1) {
+	    print qq{<td align=left><input type=submit name=movemap_se value="} . M("Südost") . qq{"></td>};
+	}
+	print "</tr>\n";
+    }
+    print "</table>";
+    #print "<input type=submit name=Dummy value=\"&lt;&lt; Zur&uuml;ck\">";
+    print qq{<input type=button value="&lt;&lt; } . M("Zurück") . qq{" onclick="history.back(1);">};
+    print "</center>";
+    print <<EOF;
 <script type="text/javascript">
 <!--
 function s(text) {
@@ -5352,18 +5364,17 @@ function s(text) {
 // -->
 </script>
 EOF
-	if ($use_imagemap) {
-	    open(MAP, $map_file)
-	      or confess "Fehler: Die Map $map_file konnte nicht geladen werden.\n<br>";
-	    while(<MAP>) {
-		print $_;
-	    }
-	    close MAP;
+    if ($use_imagemap) {
+	open(MAP, $map_file)
+	    or confess "Fehler: Die Map $map_file konnte nicht geladen werden.\n<br>";
+	while(<MAP>) {
+	    print $_;
 	}
-	footer();
-	print "</form>\n";
-	print $q->end_html;
+	close MAP;
     }
+    footer();
+    print "</form>\n";
+    print $q->end_html;
 }
 
 # Stellt für den x/y-Index der berlin_small-Karte die zugehörige
@@ -7067,7 +7078,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2008/12/31 13:03:31 $';
+    my $cgi_date = '$Date: 2009/02/17 20:44:11 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

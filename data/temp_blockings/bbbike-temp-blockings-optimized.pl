@@ -492,16 +492,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_009965',
-         'until' => 1234738799,
-         'text' => 'Parkstr. (Weißensee) Richtung Berliner Allee zwischen Charlottenburger Str. und Berliner Allee Baustelle, Fahrtrichtung gesperrt (bis Mitte 02.2009)',
-         'from' => 1229375516,
-         'id' => 1487,
-         'data' => 'userdel	1::inwork 13727,16085 13753,16000
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
