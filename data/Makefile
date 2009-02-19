@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.212 2009/02/07 20:36:31 eserte Exp $
+# $Id: Makefile,v 2.213 2009/02/18 22:53:47 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -91,7 +91,7 @@ XXX_TARGETS=	other ${XXX_NON_OTHER}
 
 ALL_STREETS=		strassen landstrassen landstrassen2
 
-TARGETS_DISABLED=	label relation_gps 
+TARGETS_DISABLED=	relation_gps 
 
 WRITEABLE=	chmod u+w,ugo+r
 READONLY=	chmod ugo+r,ugo-w
@@ -577,12 +577,6 @@ handicap_l:	handicap_l-orig berlin .gesperrt.tmp
 	mv handicap_l~ handicap_l
 	-@$(READONLY) $@
 
-label:	label-orig
-	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) label-orig > label~
-	mv label~ label
-	-@$(READONLY) $@
-
 vorfahrt:	vorfahrt-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) vorfahrt-orig > vorfahrt~
@@ -1034,7 +1028,8 @@ do-checks:	.check_empty_lines \
 .check_empty_lines:	*-orig
 	for i in *-orig; do $(PERL) -nle '$$_ eq q{} and die $$ARGV' $$i; done
 
-check-disabled:	.check_label
+# check disabled targets
+check-disabled:
 
 .check_targets:	${BBD_TARGETS}
 	for f in ${BBD_TARGETS}; do ${PERL} ${MISCSRCDIR}/check_bbd $$f; done
@@ -1182,10 +1177,6 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+)?)(:inw
 .check_handicap_l:	handicap_l landstrassen landstrassen2
 	$(CHECK_NEIGHBOUR) -type standard -data handicap_l \
 		-against landstrassen -against landstrassen2
-	@touch $@
-
-.check_label:	label .strassen.tmp landstrassen landstrassen2
-	$(CHECK_POINTS) label .strassen.tmp landstrassen landstrassen2
 	@touch $@
 
 .check_vorfahrt:	vorfahrt strassen landstrassen landstrassen2 fragezeichen

@@ -1,0 +1,28 @@
+=head1 NAME
+
+tkbabybike - small version of bbbike suitable for mobile devices
+
+=head1 SYNOPSIS
+
+    tkbabybike
+
+=head1 DESCRIPTION
+
+=head1 TODO
+
+ - tkbabybike: don't search modus schon in Tk::Babybike auswählen
+   können (checkbox?) => schnelleres starten ohne in den suchmodus zu gehen
+   im menue kann der suchmodus dann nachtraeglich eingeschaltet werden
+   bzw. mit klick auf die karte?
+
+=head1 AUTHOR
+
+Slaven Rezic <srezic@cpan.org>
+
+=head1 COPYRIGHT
+
+Copyright (c) 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
+This module is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=head1 SEE ALSO

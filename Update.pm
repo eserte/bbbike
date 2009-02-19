@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Update.pm,v 1.26 2007/08/08 19:59:41 eserte Exp $
+# $Id: Update.pm,v 1.27 2009/02/18 23:54:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2003,2005,2006,2007 Slaven Rezic. All rights reserved.
@@ -233,11 +233,11 @@ sub create_modified_devel {
 
     require Digest::MD5;
 
-    open(MOD, ">$datadir/.modified") or die $!;
+    open(MOD, ">$datadir/.modified~") or die "Can't write to .modified~: $!";
     if ($rsync_include) {
-	open(RSYNC, ">$datadir/.rsync_include") or die $!;
+	open(RSYNC, ">$datadir/.rsync_include") or die "Can't write to .rsync_include: $!";
     }
-    open(MANI, "$rootdir/MANIFEST") or die $!;
+    open(MANI, "$rootdir/MANIFEST") or die "Can't open MANIFEST: $!";
     while(<MANI>) {
 	if (m|^data/(.*)|) {
 	    my $file = $1;
@@ -256,8 +256,11 @@ sub create_modified_devel {
 	    }
 	}
     }
-    close MANI;
+    close MANI
+	or die "While writing to .modified~: $!";
     close MOD;
+    rename "$datadir/.modified~", "$datadir/.modified"
+	or die "Can't rename $datadir/.modified~ to $datadir/.modified: $!";
     if ($rsync_include) {
 	close RSYNC;
     }
@@ -292,7 +295,7 @@ sub create_modified {
 	warn "Can't write to $datadir/.modified: $@";
     } else {
 	rename "$datadir/.modified~", "$datadir/.modified"
-	    or warn "Cannot rename to $datadir/.modified: $!";
+	    or warn "Can't rename to $datadir/.modified: $!";
     }
 }
 

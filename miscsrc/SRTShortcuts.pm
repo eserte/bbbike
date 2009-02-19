@@ -296,6 +296,9 @@ sub add_button {
 	      [Button => 'Real street widths',
 	       -command => sub { real_street_widths() },
 	      ],
+	      [Button => 'Search while type',
+	       -command => sub { tk_suggest() },
+	      ],
 	      [Button => "GPS data viewer",
 	       -command => sub { gps_data_viewer() },
 	      ],
@@ -767,8 +770,19 @@ sub current_search_in_bbbike_cgi {
     WWWBrowser::start_browser($url);
 }
 
+# XXX BBBikeOsmUtil should probably behave like a plugin? or not?
+sub _require_BBBikeOsmUtil {
+    require Cwd; require File::Basename; local @INC = (@INC, Cwd::realpath(File::Basename::dirname(__FILE__)));
+    require BBBikeOsmUtil;
+    BBBikeOsmUtil::register();
+}
+
 ######################################################################
 # Experiments
+#
+
+######################################################################
+# Nice street labels
 #
 # currently only executable using
 #    SRTShortcuts::street_name_experiment()
@@ -1058,6 +1072,8 @@ sub street_name_experiment_one {
 }
 } # scope for street_name_experiment* functions
 
+######################################################################
+# GPS data viewer
 sub gps_data_viewer {
     require BBBikeEdit;
     require BBBikeUtil;
@@ -1204,12 +1220,8 @@ sub gps_data_viewer {
     }
 }
 
-# XXX BBBikeOsmUtil should probably behave like a plugin? or not?
-sub _require_BBBikeOsmUtil {
-    require Cwd; require File::Basename; local @INC = (@INC, Cwd::realpath(File::Basename::dirname(__FILE__)));
-    require BBBikeOsmUtil;
-    BBBikeOsmUtil::register();
-}
+######################################################################
+# New GPS simplification
 
 use vars qw($gps_simplification_route_street_layer $gps_simplification_route_point_layer
 	    $gps_simplification_route_street_file  $gps_simplification_route_point_file
@@ -1285,6 +1297,9 @@ sub new_gps_simplification {
     }
 }
 
+######################################################################
+# Real street widths
+
 use vars qw($real_street_widths_s %real_street_widths_pos_to_width);
     
 sub real_street_widths {
@@ -1347,6 +1362,74 @@ sub real_street_widths {
 	    $main::c->itemconfigure($item, -width => $pos_to_width->{$index}*$px_per_m);
 	}
     }
+}
+
+######################################################################
+# Search while typing feature
+
+sub build_suggest_list {
+    require File::Basename;
+    my @orig_files = grep {
+	!m{/(
+	      qualitaet_s
+	    | qualitaat_l
+	    | handicap_s
+	    | handicap_l
+	    | gesperrt
+	    | gesperrt_car
+	    | comments_[^/]*
+	    | ampelschaltung
+	    | relation_gps
+            )-orig$}x
+    } glob("$main::datadir/*-orig");
+    my %map;
+    for my $orig_file (@orig_files) {
+	my $s = eval { Strassen->new($orig_file) };
+	if ($s) {
+	    my $base = File::Basename::basename($orig_file);
+	    $s->init;
+	    while(1) {
+		my $r = $s->next;
+		last if !@{ $r->[Strassen::COORDS()] };
+		my $name = $r->[Strassen::NAME()];
+		next if $name =~ m{^(\s*|[\d\.]+)$};
+		$map{$name . " ($base)"} = $r->[Strassen::COORDS()][0];
+	    }
+	}
+    }
+    map { [$_, $map{$_}] } sort keys %map;
+}
+
+sub tk_suggest {
+    my @suggest_list = build_suggest_list();
+    my $t = $main::top->Toplevel(-title => "Search");
+    my $search;
+    my $k2l = $t->Scrolled("K2Listbox",
+			   -width => 40,
+			   -scrollbars => "osoe",
+			   -textvariable => \$search,
+			  )->pack(qw(-expand 1 -fill both));
+    $k2l->focus;
+    $k2l->autocomplete;
+    $k2l->insert("end", map { join("\t", @$_) } @suggest_list);
+    my $show_cb = sub {
+	my($name, $coord) = split /\t/, $search;
+	if (!$coord) {
+	    main::status_message("Please enter something!", "warn");
+	} else {
+	    main::mark_point(-coords => [[[ main::transpose(split /,/, $coord) ]]],
+			     -clever_center => 1,
+			     -inactive => 1,
+			    );
+	}
+    };
+    $t->Button(-text => "Show",
+	       -command => $show_cb,
+	      )->pack;
+    $t->bind("<Return>" => sub { # hack:
+		 $k2l->focusNext; # to trigger focusout
+		 $t->after(100, $show_cb);
+	     });
 }
 
 1;
