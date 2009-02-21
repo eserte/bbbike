@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.50 2009/02/12 00:51:24 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.51 2009/02/21 21:24:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2008 Slaven Rezic. All rights reserved.
@@ -632,6 +632,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	    my($x,$y) = map { int } $Karte::map{"polar"}->map2map($main::coord_system_obj, $wpt->Longitude, $wpt->Latitude);
 	    my($x0,$y0) = ($main::coord_system eq 'standard' ? ($x,$y) : map { int } $Karte::map{"polar"}->map2standard($wpt->Longitude, $wpt->Latitude));
 	    my $alt = $wpt->Altitude;
+	    $alt =~ s{^\?}{}; # XXX remove the "question mark" hack from altitudes, should really be done in GPS::GpsmanData!
 	    my $acc = $wpt->Accuracy;
 	    my $pointname;
 	    if ($draw_point_names) {
