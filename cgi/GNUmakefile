@@ -1,19 +1,29 @@
 .CURDIR?=	${CURDIR}
-CGI_SCRIPTS=	bbbike.cgi bbbikegooglemap.cgi mapserver_address.cgi mapserver_comment.cgi mapserver_setcoord.cgi wapbbbike.cgi
-ROOT_URL?=	/bbbike
+CGI_SCRIPTS=		bbbike.cgi bbbikegooglemap.cgi mapserver_address.cgi \
+			mapserver_comment.cgi mapserver_setcoord.cgi \
+			wapbbbike.cgi bbbiketile.cgi
+DEVEL_CGI_SCRIPTS=	bbbike2.cgi bbbikegooglemap2.cgi
+ROOT_URL?=		/bbbike
 # Set this to "cgi" or "Apache::Registry"
-CGI_TYPE?=	cgi
+CGI_TYPE?=		cgi
 ifndef ROOT_DIR
-ROOT_DIR=	$(shell perl -MFindBin='$$RealBin' -MCwd=realpath -le 'print realpath("$$RealBin/..")')
+ROOT_DIR=		$(shell perl -MFindBin='$$RealBin' -MCwd=realpath -le 'print realpath("$$RealBin/..")')
 endif
 
 all:	rights
 	@echo "You may run $(MAKE) httpd.conf to create a default apache configuration for inclusion"
 
+biokovo.conf:
+	$(MAKE) \
+		ROOT_DIR=/home/e/eserte/src/bbbike \
+		CGI_TYPE=Apache::Registry \
+	    httpd.conf
+
 httpd.conf: httpd.conf.tpl Makefile
 	tpage --define ROOT_URL=$(ROOT_URL) \
 	      --define ROOT_DIR=$(ROOT_DIR) \
 	      --define CGI_SCRIPTS="$(CGI_SCRIPTS)" \
+	      --define DEVEL_CGI_SCRIPTS="$(DEVEL_CGI_SCRIPTS)" \
 	      --define CGI_TYPE="$(CGI_TYPE)" \
 	      httpd.conf.tpl > httpd.conf~
 	chmod 644 httpd.conf~
