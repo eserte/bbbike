@@ -22,24 +22,6 @@ Legend:
 
 =over
 
-=item * (M3) (improvement)
-
-Get rid of Class::Struct. It's only advantage is: it's in the core,
-and it does use a 1:1 mapping between method name and hash key (unlike
-accessors.pm).
-
-Seek for an alternative, maybe self-written.
-
-=item * (H3) (improvement)
-
-Unification of plot streets and plot points. Eigentlich nicht so
-schwierig: alles, was einen Punkt hat, wird wie bei plot_point
-gezeichnet, und alles andere wie bei plot_street. Der Teufel steckt
-wohl im Detail: am Ende wird ein itemconfigure über alle neu
-gezeichneten Elemente gemacht, evtl. muss es hier Unterschiede geben.
-Vielleicht gibt es Konflikte bei den Kategorien. Vielleicht reicht es,
-wenn man den zu evaluierenden Code ein bisschen zusammenfasst.
-
 =item * (M3) (bug)
 
 Einen Workaround finden, damit die Comboboxen auch einen weißen
@@ -54,12 +36,6 @@ Erschwerend kommt hinzu, dass diese MyBrowseEntry *überall* verwendet
 werden müsste. Oder BrowseEntry::Populate wird direkt gepatcht? So:
 *oldPopulate = \&Tk::BrowseEntry::Populate;
 *Tk::BrowseEntry::Populate = sub { my $w = shift; oldPopulate($w, @_); $w->ConfigSpecs(-background=>['SELF'],...)};
-
-=item * (M3) (improvement)
-
-Da es unter Windows im Gegensatz zu Unix eigentlich keinen Grund
-gibt, eine editierbare Combobox für das GPS-Device anzubieten,
-sollte ich das in eine nicht editierbare umwandeln.
 
 =item * (M3) (improvement)
 
@@ -102,85 +78,12 @@ outer Berlin?
 
 Also here: use Tk::Getopt's custom widget functionality.
 
-=item * (M3) (feature)
-
-GPS-Dialog: show a pre-generated route name. And check if the route
-number is useful for something (GPX may handle this, but maybe it's
-not worth the hassle i.e. could overwrite existing routes). Currently
-the meaningless name E<quot>TRACBACKE<quot> is generated if the route
-name is left empty. -> Route::Simplify now generates a route name if
-not supplied. Though the created name could be better, and it is also
-not shown yet in the route dialog. Question: what about the old name?
-Store it for later reuse? Maybe only if the user entered his own name?
-
-=item * (M3) (feature)
-
-Introduce GPS device types for the GPS card in the option editor. This
-would set the waypoint number, name length and charset automatically.
-A E<quot>customE<quot> setting will still be available to set these
-values manually. How to get for the device types? Maybe something like
-etrex b/w series, etrex color series, gpsmap etc.
-
-Related: the charset for the etrex color series does not include some
-characters like <, > ...
-
 =item * (H3) (feature)
 
 Create a small toolbar in the footer bar which displays the
 current optimization settings in a few letter or with images. Also, a
 shortcut to change the optimization settings should be possible there,
 at least by showing the existing preferences window.
-
-=item * (H3) (improvement)
-
-balloon_info_from_all_tags should also deal with E<quot>pointE<quot>
-values (Haltestellen, Einbahnstraßen...). Then enterpoint could be
-replaced by an universal enterstr. Also, enterroute should be probably
-replaced by an extended enterstr.
-
-Related: do I then still need the distinction between Ort/Bahnhof and
-Straße/Strecke? But this is useful to quickly get to the chooser
-(although I think this is not known to the public, and I also do not
-use this functionality at all)
-
-=item * (M1) (feature)
-
-Mehrere Eingabemodi anbieten, z.B. E<quot>BBBike ClassicE<quot>,
-Google, GoYellow.
-
- BBBike Classic: <1> setzen von routenpunkten
-                 <Motion-2> scanning
-                 <3> popup-menu
-		 <cursor>: scrolling mit einer geschwindigkeit
-		 <pg up/down, pos1/end>: seitenweise scrollen
-		 <+>/<->: zooming
-
- Google:         <1> original: zusatzinformationen anzeigen (?), bei
-		     bbbike weiterhin routenpunkte setzen
-                 <Motion-1> dragging
-		 <2> unbelegt (Browser)
-		 <3> unbelegt
-		 <Cursor>: scrolling mit zwei geschwindigkeiten
-		 <pg up/down, pos1/end>: seitenweise scrollen
-		 <+>/<->: zooming
-		 <wheel up>: zoom in and keep pos under mouse
-		 <wheel down>: zoom out and keep pos under mouse
-		 <double-1>: zoom in and center
-		 <double-3>: zoom out
-
- GoYellow:	 <1> zoom in and center
-		 <3> zoom out and center
-	 	 <Shift-1> dito
-		 <motion-1> dragging
-		 <enter> zusatzinformationen
-		 <pg up>: zoom out, center kept
-		 <pg down>: zoom in, center kept
-		 <cursor>: scrolling mit einer geschwindigkeit
-
-
-Nachdem ich Motion-1 per default für Dragging eingestellt habe und es
-sich OK anfühlt, ist die Implementation der unterschiedlichen
-Eingabemodi nicht mehr so wichtig.
 
 =item * (H5)
 
@@ -214,47 +117,11 @@ selection (this needs the relatively slow -fixedfont option of
 FontDialog). Otherwise, if FontDialog is not available, the chosen
 fonts should be made immediately visible using set_fonts().
 
-=item * (H3)
-
-Im Edit-Mode auch Direktiven zu Strecken zeigen, soweit sie
-interessant sind. Evtl. könnte man einige Direktiven (Aliase) auch im
-Normal-Mode zeigen.
-
 =item * (M3)
 
 Aliase sollten suchbar sein: implementiert in search_anything für
 nicht-Similarity-Suchen und nicht-egrep-Suchen. Der Rest muss
 untersucht werden (brauche ich egrep überhaupt?)
-
-=item * (H2)
-
-category_* directives in bbd files have side effects: the global
-%category_... is set and not per-file variants. Should be fixed,
-probably in reset_free_layer in bbbike.
-
-=item * (H2)
-
-There's no (easy) way to draw only outlined polygons from custom bbd
-files. (Maybe it can be done with category_stipple.cat:
-Tk/trans_cur.xbm and some outline directive?) (Frage: wo wird so etwas
-benötigt?)
-
-=item * (H2)
-
-If E<quot>Namen zeichnenE<quot> is turned on in custom street draw and
-filled areas are drawn, then it's visible that the labels are not
-above the are layer. Will probably be fixed if all labels are drawn in
-an own layer (quite on the top), which will also get a nice label
-positioning algorithm.
-
-=item * (M2)
-
-Straßennummerierungsschilder (+ Font) werden nicht korrekt gezoomt.
-
-=item * (M4)
-
-Überlappende (gleiche) Straßennummern sollten gar nicht erst gezeichnet
-werden.
 
 =item * (H5)
 
@@ -274,15 +141,10 @@ Tests machen, ob bei beiden das gleiche herauskommt.
 qualitaet-Einstellungen sollten persistent aus dem Optimierungsdialog
 gemacht werden können
 
-=item * (M4)
+=item * (M1)
 
 Konverter vom E<quot>TouratechE<quot>-Format nach bbd schreiben. Beispieldatei:
 http://www.arur.de/fileadmin/reisenotizen/reisenotizen_roland/images/berlin-ffo/bl-ffo.xml
-
-=item * (M2)
-
-Create nice anti-aliased and alpha-using PNG images and use it if
-possible for icons/symbols etc.
 
 =item * (H5)
 
@@ -297,65 +159,15 @@ braucht keine Richtungsangabe erfolgen. Wenn an so einer Stelle eine
 Kreuzung ist, dann kann die Angabe E<quot>Hauptstraße folgenE<quot>
 zusätzlich angezeigt werden.
 
-=item * (H3)
-
-insert/delete etc. functionality: add an easy way to use custom layers
-
 =item * (M4)
 
 Show more fields in route list (just like in web interface)
-
-=item * (H3)
-
-Edit mode, coloring of pp points: use different coloring for
-E<quot>KurvenpunkteE<quot> and crossings, to easier detect errors in
-the street net.
-
-The beginnings are made (see pp_color, tags ppkvp and ppcrs etc.), but
-one thing is missing: I need a net like $net->{Net}, but without
-gesperrt/oneway modifications... It would also be good to have that
-net for *all* layers. A simple solution would bei not too hard to
-implement, but time- and memory-consuming.
-
-=item * (M4)
-
-Edit mode: if route searching is active and E<quot>insert pointE<quot>
-(or insert multiple points) is active, then it seems that the created
-middle point is broken (off by pixels, and in float). So warn the user
-in this situation to switch route searching off.
-
-(NB: Is this really the case? It does not seem to be the search mode,
-but another problem...)
 
 =item * (H5)
 
 Drucken: if the PDF backend is chosen, then Druckeinstellungen have no
 effect -> Remove them in this case! Maybe it would be nice to support
 at least some of them (legend, maybe b/w)
-
-=item * (H4)
-
-Overview-Map: always segfaults under Win98
-
-=item * (H1)
-
-Unterstützung für E<quot>Persönliche WegeE<quot> (oder
-user-defined layers). Zwei Typen: routingfähig (automatisch per
-E<quot>add...E<quot> in das Straßennetz eingebunden) oder
-nicht-routingfähig. Editiermöglichkeiten für diesen Layer
-(mit Verwendung von datachange.log). Möglichkeit der
-Veröffentlichung. -> Niedrige Prio, da theoretisch schon machbar,
-auch wenn nicht ganz komfortabel: edit-Funktion funktioniert für
-eigene Layer, add custom und custom existiert für das Suchnetz
-
-=item * (H3)
-
-Neue Symbole (basierend auf E<quot>>E<quot>) für Steigungen verwenden:
-
- > (gepunktet): 1-3%
- > (solid): 3-7%
- >>: über 7%
- > (grau): Steigung ohne Prozentangabe
 
 =item * (M4)
 
@@ -406,12 +218,6 @@ How to get CPU/hardware speed on other OSes: FreeBSD (sysctl?,
 E<quot>Optionen für langsame RechnerE<quot>: z.B. E<quot>Überlappungen
 vermeidenE<quot> etc.
 
-=item * (H1)
-
-Hausnummern. Für wichtige lange Straßen erfassen. In der
-Kreuzungsliste beim CGI dann neben den Straßennamen anzeigen. Wie in
-der Perl/Tk-Karte darstellen? Vielleicht nur bei kleinen Massstaeben?
-
 =item * (H2)
 
 Optimize SRTProgress: only hide canvas if first progress drawing is
@@ -432,20 +238,6 @@ solved for sure there should be no standard-user-visible -lazy option.
 
 -lazy does not work with bbd files using map:polar. I assume that the
 grid algorithm is broken wrt to map!=standard.
-
-=item * (H2)
-
-Dynamisches Zeichnen (weniger/mehr) von Kartenelementen anhand der
-Vergrößerung (wird teilweise schon gemacht, z.B. bei
-get_symbol oder Orte/Kategorien=Auto, was fehlt noch?).
-
-Beim Zeichnen von Orten muss das Problem des Abstand zwischen Punkt
-und Label geloest werden --- bislang wird der Abstand beim
-Vergroessern zu gross und beim Verkleinern zu klein. Ideal waere
-natuerlich ein eigener Canvastyp (Composite-Item)
-
-Mittlerweile ist das Problem Punkt-Label bei Orten gelöst für den
-Modus E<quot>überlappendE<quot>.
 
 =item * (M3)
 
@@ -475,47 +267,13 @@ Verfügung. Anfangen, die Datei orte_flaeche anzulegen (zwischen
 sicheren Punkten --- diejenigen, wo ich einen Waypoint am Ortsausgang
 gesetzt habe, und interpolierten Punkten unterscheiden)
 
+-> Ich sollte für orte_flaeche OSM-Daten verwenden.
+
 =item * (H2)
 
 Im Umland ist es vielleicht sinnvoller, eine Routenbeschreibung anhand
 von Punkten (Ortschaften) anstatt Strecken (Straßen) zu machen.
 Optional eins oder beides zusammen.
-
-=item * (H5)
-
-Implementiert, aber nicht getestet: Update-Prozess: data/.modified um
-eine weitere Spalte für einen MD5-Hash oder so erweitern. Die Prozedur
-sieht dann so aus: .modified wird bei jedem Update/Rsync geändert.
-Zuerst wird downgeloaded, dann mit Digest::MD5 überprüft (falls nicht
-installiert, gibt es eine Fehlermeldung) und die alte Datei ersetzt.
-Man könnte noch einen Sanity-Check auf das Format von .modified
-machen. Leider handelt es sich bei data/* um ein Sammelsurium von
-Dateien, nicht nur .bbd (auch .gif oder .coords.data oder ...)
-
-=item * (H5)
-
-Update-Prozess: falls unter /usr/* installiert, hat der normale User
-normalerweise keine Rechte auf das Installieren. Erkennen und
-hinweisen, z.B. BBBike als root starten (sudo/super) -> getan, aber
-noch nicht getestet. Nice to have: su/sudo/super für die Dauer der
-Installation verwenden. Oder in ein privates Verzeichnis installieren
-und dieses bevorzugt verwenden.
-
-=item * (H1)
-
-(Rsync und CVS hat Zeit...)
-
-Update über das Internet: rsync-Unterstützung und die
-Alternative CVS testen. rsync ist vielleicht nicht so gut, weil ein
-rsyncd irgendwo benötigt wird und rsyncd nicht das Sicherste der Welt
-ist. CVS wäre besser, noch besser, wenn es eine abgespeckte
-Client-Variante in Perl gäbe (VCS-LibCVS scheint auch brauchbar zu
-sein), die man ins Windows-distfile dazupacken könnte. CVS ist unter
-Unix meist vorhanden.
-
-Vielleicht besser: gibt es eine Apache-Option, um automatisch bei
-accept-encoding: gzip mit komprimierten statischen Dateien zu
-antworten? Update.pm braucht allerdings auch Unterstützung dafür...
 
 =item * (M1)
 
@@ -546,11 +304,6 @@ fortgesetzt werden.
 
 Maushilfe: B4/B5 dokumentieren (nur im Canvas, nicht auf den Buttons
 notwendig), Erklärung für B2 anpassen
-
-=item * (M2)
-
-Oben/normal/unten: Reihenfolge: RB oder S, dann RB-Bhf oder S-Bhf, und
-nicht RB, RB-Bhf, S, S-Bhf wie bislang.
 
 =item * (H1)
 
@@ -611,62 +364,6 @@ choose_ort, Orte: maybe have some other sorting possibilities, e.g. by
 category, or by state. In this case the A..Z bar has to be removed,
 probably.
 
-=item * (M2)
-
-Evtl für BBBike-Canvas und Übersichtskarte: Maus ziehen zum
-Einstellen eines Ausschnitts. Das Rechteck, das beim Ziehen erzeugt
-wird, muss natuerlich den Aspect des Hauptfensters beibehalten.
-
-<Motion> ist bei der Übersichtskarte schon belegt. Trotzdem
-umdefinieren? Oder nur die Ecken des Rechtecks zum Ziehen verwenden?
-
-=item * (M2)
-
-Beim Canvas: <B1-Motion> statt <B2-Motion> zum Pannen der Karte
-verwenden? Gibt es Nachteile, weil <B1> belegt ist und Fehler
-passieren können? Soll man es konfigurierbar machen?
-
-=item * (H4)
-
-Edit-Menu: Weiteren Punkt E<quot>bulk editE<quot> einführen. Damit
-kann ein Straße mit allen wichtigen Attributen gesetzt werden.
-Zusätzlich für E<quot>Add new toE<quot>-Dialog: Beschränkung der
-Kategorien auf die aktuell verwendbaren (also bei
-strassen auf HH .. NN, bei landstrassen zusätzlich B, bei qualitaet-*
-Q... etc.)
-
-=item * (H3)
-
-Edit-Menu: new feature: prolonge street. From the editing view: click
-2nd and 1st point of street and then a series of coordinates to be
-added.
-
-=item * (H3)
-
-Edit-Menu: new feature: split street. From the editing view: click
-three neighboring points on the street. The middle one is the split
-point.
-
-=item * (H2)
-
-Edit-Menu: new feature: combine streets. From the editing view: click
-three points from two streets, where the middle one belongs to both
-streets. Check if both streets have the same name and category,
-otherwise combining is not possible. But maybe combine nevertheless
-and give the user the possibility to choose the combined
-name/category.
-
-=item * (H3)
-
-Edit-Menu: new feature: Move multiple points. From the editing view:
-select a number of points (e.g. all points of a street or area; or by
-selection rectangle; or by clicking on a number of points). Select a
-delta by defining a line. Move all points by this delta.
-
-=item * (M2)
-
-Edit-Mode: DEL does not delete the coord list (but Backspace does).
-
 =item * (M3)
 
 search net custom: statt automatisch alle Layer zu verwenden sollte
@@ -685,40 +382,6 @@ beliebig viele (für multistrassen) auswählen
 Additional layers sollten auch in der Kommandozeile und im config-File
 spezifizierbar sein.
 
-=item * (H3)
-
-Replay datachange.log: alle Änderungen (am/bis einem bestimmten Datum)
-werden automatisch aufgenommen. Am besten mit einem Testmodus, der
-zuerst alle Dateien aus data/* nach /tmp kopiert und nur dort ändert.
-Dann könnte man bbbike mit -datadir aufrufen und testen, oder ein diff
--r machen.
-
-diff wortweise würde wahrscheinlich besser als zeilenweise
-funktionieren. Siehe textproc/docdiff oder textproc/dwdiff oder
-textproc/wdiff.
-
-=item * (H3)
-
-Straßennamen: Labels wie in richtigen Stadtplänen
-anordnen, also z.B. "Yorckstr.": am Anfang der Straße "Yorck-",
-am Ende der Straße "str.". Dadurch werden die Namen hoffentlich
-lesbarer sein.
-
-Der Code dazu existiert schon, ist aber langsam und buggy und wird nur
-bei bbbike.cgi verwendet.
-
-=item * (H3)
-
-Da das Zeichnen von Straßennamen so lange dauert: mit Hints
-arbeiten (z.B. für einige oft verwendete Zoomstufen Koordinaten
-und Transformationsmatrizen vorberechnen).
-
-=item * (H2)
-
-Beim Vergrößern könnte man ab einer bestimmten
-Stufe auch die Größe der Straßen/Ortslabel auch
-mitvergrößern.
-
 =item * (H1)
 
 Server-Mode und Client-Programm: austesten, insbesondere mit KDE, und
@@ -726,39 +389,19 @@ dann alle Starts auf bbbikeclient umschreiben. Gucken, wie man sowas
 mit Win32 machen könnte. Server-Beispielcode aus
 E<quot>Mastering Perl/TkE<quot> verwenden.
 
-=item * (H3)
-
-Rotierte Fonts: vielleicht ein Freetype-Modul schreiben, dafür
-eine Tk::Canvas-Erweiterung und diese in BBBike verwenden?
-
-Besser: man kann bereits jetzt rotierte TTF-Fonts verwenden:
-
-    perl -MTk -e 'tkinit->Label(-text => "hello, world!")->pack;MainLoop' -- -font 'serif:matrix=1 .1 0.2 1 122'
-
-=item * (M1)
-
-Vergrößerung der Schrift beim Zoomen
-
-=item * (M1)
-
-Beim pp-Symbol wird beim Zoomen vergrößert; beim Neuzeichnen wird aber
-die kleinste Vergrößerungsstufe wieder genommen.
-
 =item * (H1)
 
 Kurzhilfe: kann man feststellen, ob man eine 2/3-Tastenmaus hat? Und
 wenn es nur eine 2-Tasten-Maus ist, dann existiert vielleicht eine
 Emulation fuer die mittlere Taste?
 
-=item * (H1)
-
-Optimierung: Beim Ausschalten von Outline oder Straßennamen
-muß nicht alles neu gezeichnet werden.
-
 =item * (H2)
 
 Meta-Choose-Dialog, der alle Choose-Dialoge vereinigt. Vielleicht
-Tk::SmartListbox verwenden?
+(eine noch zu schreibende) Tk::SmartListbox verwenden?
+
+=> Existiert als experiment E<quot>Search while typeE<quot> in
+SRTShortcuts, mit normaler Listbox.
 
 =item * (M3)
 
@@ -835,14 +478,6 @@ Evtl. auch:
     * Tk::SRTProgress::*
     * Tk::UnderlineAll::*
 
-=item * (H1) (feature)
-
-3D-Darstellung von Berlin (z.B. vier versetzte Flächen, die
-oberste in der Hintergrundfarbe und die anderen in der Schattenfarbe).
-
-Z<>=> Wo verwenden: overview-Fenster, overview-Button oder im CanvasMap
-anstelle der normalen Grenzen?
-
 =item * (H2) (feature)
 
 Bike+Ride integrieren. Das würde in eine unterbrochene Route
@@ -861,6 +496,8 @@ ermitteln, und dann mit add_net den Lotpunkt neu erzeugen.
 
 =item * evtl. für pathologische Fälle Verknüpfungspunkte manuell
 erstellen
+
+=> Existiert bereits als Datei E<quot>exitsE<quot>.
 
 =item * make_net_cat für die Geschwindigkeit. Faustregel: RB 80-100
 km/h (?), U-/S-Bahn anhand von einigen Fahrplänen
@@ -885,38 +522,7 @@ wäre natürlich noch immer ein NetPBM-Modul.
 
 Photo-Zooming: -zoom x -subsample y == -zoom x/y oder umgekehrt
 
-=item * (H3)
-
-outline_text bei draw_text_intelligent verwenden (maybe already
-implemented? check!)
-
-=item * (M4)
-
-draw_text_intelligent should use the bbox of the central object
-if xaddanchor/yaddanchor is not defined
-
-=item * (H4)
-
-Beim intelligenten Zeichen von Ortsnamen bietet sich ein
-Scanline-Vorgang von rechts nach links an. Somit vermeidet man Sachen
-wie
-        Slubice *
-	      * Frankfurt
-
-Schwierig, wenn gleichzeitig das Ergebnis aus sortbycat beachtet
-werden soll (Multipass? Langsam! Wie macht es Mapserver? Kann ich das
-auch mit Geo::SpaceManager machen, siehe BBBikeDraw::PDF?)
-
-Vielleicht auch Andreas' Labeling-Algorithmus verwenden
-
-=item * (H3)
-
-Bei der Ausgabe der Straßennamen an der Route sollte ein aehnlich
-intelligentes Verfahren angewendet werden. Vielleicht kann bei Routen,
-die von W nach O verlaufen, die Strassennamen erstmal links vom Punkt
-eingezeichnet werden und umgekehrt.
-
-=item * (M3)
+=item * (M1)
 
 Bei -usbahnnetz sollte folgendes gehen: Routenbeschreibung mit Bahnhöfen
 statt Strecken (davon kann auch die Routenbeschreibung auf dem flachen
@@ -959,13 +565,6 @@ MDI-Interface entwickeln mit:
  * routenbeschreibung
 Siehe Tk::WindowManager =E<gt> entwickle ich nicht mehr weiter,
 dafür gibt es aber ein neues Tk::MDI-Widget. Aber: MDI is evil!
-
-=item * (M5)
-
-Tk::Icon (see L<http://www.schmuker.de/perl/modules/>) to optionally
-display the bbbike icon (avoid transparency problem!) (Windows only).
-
-Auf Windows bundlen und prüfen. Oder ist es nicht mehr notwendig?
 
 =back
 
@@ -1112,23 +711,11 @@ enter/leave überspringen, wenn in einem Block keine padsv (my)
 oder LVINTRO (local) vorkommen sowie der Block in einem void-Kontext
 steht.)
 
-=item BBBikeGPS
-
-Die Graphendarstellung verallgemeinern und verbessern:
-
-  * Es sollte möglich sein, die Graphen beliebig ein- und
-    auszuschalten (kein Redraw notwendig)
-
-  * Die Graphen könnten besser gelabelt sein, z.B. mit den
-    entsprechenden Straßennamen oder nahe gelegenen Orten/Plätzen.
-
-=item BBBikeEdit
-
-Teile nach BBBikeGPS etc. auslagern => schon gemacht, noch mehr?
-
 =item Vernünftige Koordinaten verwenden
 
-Wahrscheinlich ist GKK (für Deutschland) die beste Wahl.
+Wahrscheinlich ist GKK (für Deutschland) die beste Wahl. => Nein,
+polare Koordinaten mit Datum=WGS84, um mit der gesamten restlichen
+Welt kompatibel zu sein.
 
 Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
 
@@ -1181,6 +768,13 @@ Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
 
   * Was ist mit dem Koordinatensystem ETRS 89?
 
+=item *
+
+Falls ich auf WGS84 umsteige, sollte ich vielleicht auch
+Math::Trig::great_circle_distance als XS-Funktion umschreiben (obwohl,
+das sieht so einfach aus, da wird die C-Implementierung nicht viel
+schneller sein können).
+
 =item Niederschlagsprognosen:
 
   http://puma.dkrz.de/theomet/prognosen/
@@ -1204,46 +798,12 @@ wichtigere Straßen)
 
   Verzögerung durch Richtungsänderungen: geradeaus, rechts/links
 
-=item Splines verwenden?
-
-Z.B. in den Daten so markieren: x,y S x,y ... Falls ein Spline
-auftritt, wird der gesamte Linienzug mitsamt Outline als -smooth => 1
-markiert und für nicht spline-Abschnitte werden die Koordinaten
-gemaess der Tk::Canvas-Doku dupliziert. Kreuzungen müssen exakt sein
-(also darf ein Kreuzungspunkt nicht zwei S-Nachbarn haben! =>
-Konsistenzcheck möglich). Mögliches Problem: können alle Tools mit
-Extra-Daten zwischen den Koordinaten umgehen? Und: wie sieht die API
-dazu aus (z.B. $street->getattr($data_pos, $coord_pos) und
-$street->getallattr($data_pos)). Splines auch bei der Routensuche
-(strecke()) beachten?
-
-=item H1: Ausblenden von Strassentypen/Radwegtypen
-
-sollte besser -state => "hidden" verwenden, wenn moeglich (d.h. recent
-Tk). Waere aber eine Semantikaenderung, da zurzeit nicht eingeblendete
-strassen auch nicht in der routensuche verwendet werden. Was
-eigentlich Quatsch ist.
-
 =item ??? make some data controlled persistent
 
   * mapping full path => data structure
   * check modtime
   list: strassen, landstrassen, Berlin.coords.data,
         Potsdam.coords.data ???
-
-=item Ampelschaltung.pm und BBBikeEdit.pm erweitern
-
-So, dass die alte Form (misc/ampelschaltung-orig.txt) auch per GUI
-editierbar ist. Alternativ herauskriegen, wie ich mir die
-Punkt-Kreuzung-Liste zusammenklicken kann (wahrscheinlich einfacher).
-
-=item secure deployment to radzeit.de:
-
-  * cp on server: bbbike => bbbike~ etc.
-  * rsync to ~ version
-  * test ~ version (maybe name the test scripts bbbike~.cgi etc.)
-  * exch ~ and "" version
-  * test "" version
 
 =item dillo 0.7.x ist schon richtig gut
 
@@ -1342,10 +902,6 @@ auch nicht implementieren
 
 =over
 
-=item * (H2)
-
-Cycle paths are displaced when zooming. Correct this.
-
 =item * (M1)
 
 Remove SRT Algo (bbbike menu, StrassenNetz.pm ...)
@@ -1354,11 +910,6 @@ Remove SRT Algo (bbbike menu, StrassenNetz.pm ...)
 
 enter_opt_preferences, Straßenqualität: additional select box like in
 bbbike.cgi (Kopfsteinpflaster vermeiden, rennradtauglich, Custom).
-
-=item * (M1)
-
-Überprüfen, ob der Menüpunkt E<quot>GPS-Track bearbeitenE<quot> im
-Edit-Modus funktioniert.
 
 =item * (M2)
 
@@ -1371,28 +922,6 @@ PDF-Routenbeschreibung: zusichern, dass die Spaltenbreite nicht zu
 groß wird. Beispielsweise bei langen Dateinamen wie E<quot>Str. des
 17. Juni - Tiergarten, Philharmonie ...E<quot> kann es passieren, dass
 die Entfernungsspalte rechts herausrutscht.
-
-=item * (M3)
-
-Sehenswürdigkeiten: eine neue Kategorie für
-E<quot>flächigeE<quot> Sehenswürdigkeiten (z.B. Holländisches Viertel)
-einführen, um besseres Stacking zu machen (unterhalb von Straßen).
-
-=item * (H2)
-
-Sehenswürdigkeiten: mehrere Bilder für unterschiedliche Zoomstufen
-sollten bereitsgestellt werden können bzw. Zooming on-the-fly. Ich
-habe bereits bodemuseum.png und bodemuseum_klein.png.
-
-=item * (M2)
-
-Gewässer: vielleicht sollte kleinere Flüsse/Bäche/Seen immer ohne
-Outline dargestellt werden, damit sie nicht so sehr auffallen,
-jedenfalls bei großen Maßstäben? (Bei kleinen Seen scheint es nicht so
-schlimm zu sein wie bei langen Bächen) Ich sollte nochmal die
-Gewässerkategorisierung überarbeiten in punkto Empfehlungen für die
-Darstellung (wann wird ausgeblendet, wie werden E<quot>breitereE<quot>
-Flüsse gekennzeichnet).
 
 =item * (M4)
 
@@ -1422,10 +951,6 @@ the chained power values, which seems wrong.
 Support for the imview image viewer (imview.sf.net). Unfortunately
 every download seems to be corrupted?!
 
-=item * (M2)
-
-Einfärben der Route nach Steigungen.
-
 =item * (H1)
 
 Why is selecting one of the last characters in the streets chooser
@@ -1443,27 +968,6 @@ zeichnen. In der Zwischenzeit geht es manuell mit ptksh>
 Das gibt es schon (im Devel-Mode für Strecken), hat aber noch eine
 Defizite; in BBBikeAdvanced.pm bei draw_layer_in_overview()
 nachschauen.
-
-=item * (H3)
-
-Umbau der plot*-Funktionen, damit $str_draw{...} etc. nicht sowohl für
-den Status (ist der Layer an?) und auch den Wunsch (möchte man den
-Layer einschalten?) verwendet wird. Außerdem gibt es ein Problem bei
-normal canvas vs. $overview_canvas, aber nur einen Satz an
-$str_draw{...}-Variablen.
-
-=item * (H1)
-
-F8/F9 funktioniert bei fragezeichen im Edit-Mode (manchmal) nicht. Der
-Grund ist, dass fragezeichen hier kombiniert aus fragezeichen und
-XXX.bbd erzeugt wird. Wenn das Canvas-Item aus XXX.bbd oben liegt,
-kann keine entsprechende Datei von click_info in BBBikeEdit.pm
-gefunden werden.
-
-Theoretisch kann der Mechanismus intelligenter gemacht werden, indem
-der E<quot># sourceE<quot>-Mechanismus benutzt wird und vielleicht
-durch Zeilennummern ergänzt wird. Dann kann eindeutig auf die
-entsprechende Originaldatei verwiesen wird.
 
 =item * (H4)
 
@@ -1522,13 +1026,325 @@ welche per plotstr gezeichnet wird und nur kurze Pfeile enthält
 (line_shorten_end). Besser wäre es, wenn die Datei [usr]bahnhof_bg
 beides enthalten könnte.
 
-=item * (H5) (improvement)
+=item * (H4) (improvement)
 
-Rationalisierung der layer/category-Variablen
-(%layer_category_line_width etc.) fortsetzen. Es sollte nur eine Liste
-geben, die alle möglichen Variablen enthält. Das Ansprechen sollte
-immer gleich sein (layer/category vor layer vor category vor global).
-Die Direktiven für bbd-Dateien sollen laut Pod angepasst werden.
+plotstr/plotpoint: Should have $want_... variables which are
+associated with the checkboxes to turn layer on, and subs (e.g. called
+want_plot_....) which call plotstr/plotpoint in a
+E<quot>transactionalE<quot> way and reset the $want_... variable if
+something was not successful.
+
+(Was already in this TODO list with a different description:)
+
+Umbau der plot*-Funktionen, damit $str_draw{...} etc. nicht sowohl für
+den Status (ist der Layer an?) und auch den Wunsch (möchte man den
+Layer einschalten?) verwendet wird. Außerdem gibt es ein Problem bei
+normal canvas vs. $overview_canvas, aber nur einen Satz an
+$str_draw{...}-Variablen.
+
+=back
+
+=head2 Kartendarstellung
+
+=over
+
+=item * (H3) (improvement)
+
+balloon_info_from_all_tags should also deal with E<quot>pointE<quot>
+values (Haltestellen, Einbahnstraßen...). Then enterpoint could be
+replaced by an universal enterstr. Also, enterroute should be probably
+replaced by an extended enterstr.
+
+Related: do I then still need the distinction between Ort/Bahnhof and
+Straße/Strecke? But this is useful to quickly get to the chooser
+(although I think this is not known to the public, and I also do not
+use this functionality at all)
+
+=item * (M1) (feature)
+
+Mehrere Eingabemodi anbieten, z.B. E<quot>BBBike ClassicE<quot>,
+Google, GoYellow, Merkaartor.
+
+ BBBike Classic: <1> setzen von routenpunkten
+                 <Motion-2> scanning
+                 <3> popup-menu
+		 <cursor>: scrolling mit einer geschwindigkeit
+		 <pg up/down, pos1/end>: seitenweise scrollen
+		 <+>/<->: zooming
+
+ Google:         <1> original: zusatzinformationen anzeigen (?), bei
+		     bbbike weiterhin routenpunkte setzen
+                 <Motion-1> dragging
+		 <2> unbelegt (Browser)
+		 <3> unbelegt
+		 <Cursor>: scrolling mit zwei geschwindigkeiten
+		 <pg up/down, pos1/end>: seitenweise scrollen
+		 <+>/<->: zooming
+		 <wheel up>: zoom in and keep pos under mouse
+		 <wheel down>: zoom out and keep pos under mouse
+		 <double-1>: zoom in and center
+		 <double-3>: zoom out
+
+ GoYellow:	 <1> zoom in and center
+		 <3> zoom out and center
+	 	 <Shift-1> dito
+		 <motion-1> dragging
+		 <enter> zusatzinformationen
+		 <pg up>: zoom out, center kept
+		 <pg down>: zoom in, center kept
+		 <cursor>: scrolling mit einer geschwindigkeit
+
+ Merkaartor:     <wheel up>: zoom in and keep pos under mouse
+		 <wheel down>: zoom out and keep pos under mouse
+                 <1>: select object
+                 <Motion-2>: dragging
+                 <3>: select region for zooming
+ (or fix Merkaartor?)
+
+Nachdem ich Motion-1 per default für Dragging eingestellt habe und es
+sich OK anfühlt, ist die Implementation der unterschiedlichen
+Eingabemodi nicht mehr so wichtig.
+
+=item * (H2)
+
+There's no (easy) way to draw only outlined polygons from custom bbd
+files. (Maybe it can be done with category_stipple.cat:
+Tk/trans_cur.xbm and some outline directive?) (Frage: wo wird so etwas
+benötigt?)
+
+=item * (H2)
+
+If E<quot>Namen zeichnenE<quot> is turned on in custom street draw and
+filled areas are drawn, then it's visible that the labels are not
+above the are layer. Will probably be fixed if all labels are drawn in
+an own layer (quite on the top), which will also get a nice label
+positioning algorithm.
+
+=item * (M2)
+
+Straßennummerierungsschilder (+ Font) werden nicht korrekt gezoomt.
+
+=item * (M4)
+
+Überlappende (gleiche) Straßennummern sollten gar nicht erst gezeichnet
+werden.
+
+=item * (M2)
+
+Create nice anti-aliased and alpha-using PNG images and use it if
+possible for icons/symbols etc.
+
+=item * (H3)
+
+insert/delete etc. functionality: add an easy way to use custom layers
+
+=item * (H1)
+
+Unterstützung für E<quot>Persönliche WegeE<quot> (oder
+user-defined layers). Zwei Typen: routingfähig (automatisch per
+E<quot>add...E<quot> in das Straßennetz eingebunden) oder
+nicht-routingfähig. Editiermöglichkeiten für diesen Layer
+(mit Verwendung von datachange.log). Möglichkeit der
+Veröffentlichung. -> Niedrige Prio, da theoretisch schon machbar,
+auch wenn nicht ganz komfortabel: edit-Funktion funktioniert für
+eigene Layer, add custom und custom existiert für das Suchnetz
+
+=item * (H3)
+
+Neue Symbole (basierend auf E<quot>>E<quot>) für Steigungen verwenden:
+
+ > (gepunktet): 1-3%
+ > (solid): 3-7%
+ >>: über 7%
+ > (grau): Steigung ohne Prozentangabe
+
+=item * (M3)
+
+no_overlap feature: is it more efficient to implement this feature
+with the current mechanism (using Tk::Canvas' bounding box and
+overlapping methods) or do it without Tk?
+
+=item * (H1)
+
+Hausnummern. Für wichtige lange Straßen erfassen. In der
+Kreuzungsliste beim CGI dann neben den Straßennamen anzeigen. Wie in
+der Perl/Tk-Karte darstellen? Vielleicht nur bei kleinen Massstaeben?
+
+=> Ich sollte für die Hausnummern OSM-Daten verwenden.
+
+=item * (H2)
+
+Dynamisches Zeichnen (weniger/mehr) von Kartenelementen anhand der
+Vergrößerung (wird teilweise schon gemacht, z.B. bei
+get_symbol oder Orte/Kategorien=Auto, was fehlt noch?).
+
+Beim Zeichnen von Orten muss das Problem des Abstand zwischen Punkt
+und Label geloest werden --- bislang wird der Abstand beim
+Vergroessern zu gross und beim Verkleinern zu klein. Ideal waere
+natuerlich ein eigener Canvastyp (Composite-Item)
+
+Mittlerweile ist das Problem Punkt-Label bei Orten gelöst für den
+Modus E<quot>überlappendE<quot>.
+
+=item * (M2)
+
+Oben/normal/unten: Reihenfolge: RB oder S, dann RB-Bhf oder S-Bhf, und
+nicht RB, RB-Bhf, S, S-Bhf wie bislang.
+
+=item * (M2)
+
+Evtl für BBBike-Canvas und Übersichtskarte: Maus ziehen zum
+Einstellen eines Ausschnitts. Das Rechteck, das beim Ziehen erzeugt
+wird, muss natuerlich den Aspect des Hauptfensters beibehalten.
+
+<Motion> ist bei der Übersichtskarte schon belegt. Trotzdem
+umdefinieren? Oder nur die Ecken des Rechtecks zum Ziehen verwenden?
+
+=item * (H3)
+
+Straßennamen: Labels wie in richtigen Stadtplänen
+anordnen, also z.B. "Yorckstr.": am Anfang der Straße "Yorck-",
+am Ende der Straße "str.". Dadurch werden die Namen hoffentlich
+lesbarer sein.
+
+Der Code dazu existiert schon, ist aber langsam und buggy und wird nur
+bei bbbike.cgi verwendet.
+
+=item * (H3)
+
+Da das Zeichnen von Straßennamen so lange dauert: mit Hints
+arbeiten (z.B. für einige oft verwendete Zoomstufen Koordinaten
+und Transformationsmatrizen vorberechnen).
+
+=> not needed, drawing street labels in lazy mode should be fast
+enough, see the street name experiment in SRTShortcuts.
+
+=item * (H2)
+
+Beim Vergrößern könnte man ab einer bestimmten
+Stufe auch die Größe der Straßen/Ortslabel auch
+mitvergrößern.
+
+=> Für Straßen: bereits exemplarisch implementiert, siehe
+real_street_width-Experiment in SRTShortcuts.
+
+=item * (H3)
+
+Rotierte Fonts: vielleicht ein Freetype-Modul schreiben, dafür
+eine Tk::Canvas-Erweiterung und diese in BBBike verwenden?
+
+Besser: man kann bereits jetzt rotierte TTF-Fonts verwenden:
+
+    perl -MTk -e 'tkinit->Label(-text => "hello, world!")->pack;MainLoop' -- -font 'serif:matrix=1 .1 0.2 1 122'
+
+=> Wird bereits im street name experiment verwendet.
+
+=item * (M1)
+
+Vergrößerung der Schrift beim Zoomen
+
+=item * (M1)
+
+Beim pp-Symbol wird beim Zoomen vergrößert; beim Neuzeichnen wird aber
+die kleinste Vergrößerungsstufe wieder genommen.
+
+=item * (H1)
+
+Optimierung: Beim Ausschalten von Outline oder Straßennamen
+muß nicht alles neu gezeichnet werden.
+
+=item * (H1) (feature)
+
+3D-Darstellung von Berlin (z.B. vier versetzte Flächen, die
+oberste in der Hintergrundfarbe und die anderen in der Schattenfarbe).
+
+Z<>=> Wo verwenden: overview-Fenster, overview-Button oder im CanvasMap
+anstelle der normalen Grenzen?
+
+=item * (H3)
+
+outline_text bei draw_text_intelligent verwenden (maybe already
+implemented? check!)
+
+=item * (M4)
+
+draw_text_intelligent should use the bbox of the central object
+if xaddanchor/yaddanchor is not defined
+
+=item * (H4)
+
+Beim intelligenten Zeichen von Ortsnamen bietet sich ein
+Scanline-Vorgang von rechts nach links an. Somit vermeidet man Sachen
+wie
+        Slubice *
+	      * Frankfurt
+
+Schwierig, wenn gleichzeitig das Ergebnis aus sortbycat beachtet
+werden soll (Multipass? Langsam! Wie macht es Mapserver? Kann ich das
+auch mit Geo::SpaceManager machen, siehe BBBikeDraw::PDF?)
+
+Vielleicht auch Andreas' Labeling-Algorithmus verwenden
+
+=item * (H3)
+
+Bei der Ausgabe der Straßennamen an der Route sollte ein aehnlich
+intelligentes Verfahren angewendet werden. Vielleicht kann bei Routen,
+die von W nach O verlaufen, die Strassennamen erstmal links vom Punkt
+eingezeichnet werden und umgekehrt.
+
+=item *
+
+Splines verwenden?
+
+Z.B. in den Daten so markieren: x,y S x,y ... Falls ein Spline
+auftritt, wird der gesamte Linienzug mitsamt Outline als -smooth => 1
+markiert und für nicht spline-Abschnitte werden die Koordinaten
+gemaess der Tk::Canvas-Doku dupliziert. Kreuzungen müssen exakt sein
+(also darf ein Kreuzungspunkt nicht zwei S-Nachbarn haben! =>
+Konsistenzcheck möglich). Mögliches Problem: können alle Tools mit
+Extra-Daten zwischen den Koordinaten umgehen? Und: wie sieht die API
+dazu aus (z.B. $street->getattr($data_pos, $coord_pos) und
+$street->getallattr($data_pos)). Splines auch bei der Routensuche
+(strecke()) beachten?
+
+=item * (H1)
+
+Ausblenden von Strassentypen/Radwegtypen
+
+sollte besser -state => "hidden" verwenden, wenn moeglich (d.h. recent
+Tk). Waere aber eine Semantikaenderung, da zurzeit nicht eingeblendete
+strassen auch nicht in der routensuche verwendet werden. Was
+eigentlich Quatsch ist.
+
+=item * (H2)
+
+Cycle paths are displaced when zooming. Correct this.
+
+=item * (M3)
+
+Sehenswürdigkeiten: eine neue Kategorie für
+E<quot>flächigeE<quot> Sehenswürdigkeiten (z.B. Holländisches Viertel)
+einführen, um besseres Stacking zu machen (unterhalb von Straßen).
+
+=item * (H2)
+
+Sehenswürdigkeiten: mehrere Bilder für unterschiedliche Zoomstufen
+sollten bereitsgestellt werden können bzw. Zooming on-the-fly. Ich
+habe bereits bodemuseum.png und bodemuseum_klein.png.
+
+=item * (M2)
+
+Gewässer: vielleicht sollte kleinere Flüsse/Bäche/Seen immer ohne
+Outline dargestellt werden, damit sie nicht so sehr auffallen,
+jedenfalls bei großen Maßstäben? (Bei kleinen Seen scheint es nicht so
+schlimm zu sein wie bei langen Bächen) Ich sollte nochmal die
+Gewässerkategorisierung überarbeiten in punkto Empfehlungen für die
+Darstellung (wann wird ausgeblendet, wie werden E<quot>breitereE<quot>
+Flüsse gekennzeichnet).
+
+=item * (M2)
+
+Einfärben der Route nach Steigungen.
 
 =back
 
@@ -1575,6 +1391,129 @@ data are useful in conjunction with saved GPS tracks or geocoded
 photos, in which case we have a date to link to. Otherwise use some
 current date. Possible sources: wetteronline (web link possible),
 local archives.
+
+=back
+
+=head2 Editing
+
+=over
+
+=item * (H3)
+
+Im Edit-Mode auch Direktiven zu Strecken zeigen, soweit sie
+interessant sind. Evtl. könnte man einige Direktiven (Aliase) auch im
+Normal-Mode zeigen.
+
+=item * (H3)
+
+Edit mode, coloring of pp points: use different coloring for
+E<quot>KurvenpunkteE<quot> and crossings, to easier detect errors in
+the street net.
+
+The beginnings are made (see pp_color, tags ppkvp and ppcrs etc.), but
+one thing is missing: I need a net like $net->{Net}, but without
+gesperrt/oneway modifications... It would also be good to have that
+net for *all* layers. A simple solution would bei not too hard to
+implement, but time- and memory-consuming.
+
+=item * (M4)
+
+Edit mode: if route searching is active and E<quot>insert pointE<quot>
+(or insert multiple points) is active, then it seems that the created
+middle point is broken (off by pixels, and in float). So warn the user
+in this situation to switch route searching off.
+
+(NB: Is this really the case? It does not seem to be the search mode,
+but another problem...)
+
+=item * (H4)
+
+Edit-Menu: Weiteren Punkt E<quot>bulk editE<quot> einführen. Damit
+kann ein Straße mit allen wichtigen Attributen gesetzt werden.
+Zusätzlich für E<quot>Add new toE<quot>-Dialog: Beschränkung der
+Kategorien auf die aktuell verwendbaren (also bei
+strassen auf HH .. NN, bei landstrassen zusätzlich B, bei qualitaet-*
+Q... etc.)
+
+=item * (H3)
+
+Edit-Menu: new feature: prolonge street. From the editing view: click
+2nd and 1st point of street and then a series of coordinates to be
+added.
+
+-> This can be hacked using the following edit sequence:
+
+   * move line from the old end point to the new end point
+   * use "insert multiple" to add all points in between, including the
+     old end point
+
+=item * (H3)
+
+Edit-Menu: new feature: split street. From the editing view: click
+three neighboring points on the street. The middle one is the split
+point.
+
+=item * (H2)
+
+Edit-Menu: new feature: combine streets. From the editing view: click
+three points from two streets, where the middle one belongs to both
+streets. Check if both streets have the same name and category,
+otherwise combining is not possible. But maybe combine nevertheless
+and give the user the possibility to choose the combined
+name/category.
+
+=item * (H3)
+
+Edit-Menu: new feature: Move multiple points. From the editing view:
+select a number of points (e.g. all points of a street or area; or by
+selection rectangle; or by clicking on a number of points). Select a
+delta by defining a line. Move all points by this delta.
+
+=item * (M2)
+
+Edit-Mode: DEL does not delete the coord list (but Backspace does).
+
+=item * (H3)
+
+Replay datachange.log: alle Änderungen (am/bis einem bestimmten Datum)
+werden automatisch aufgenommen. Am besten mit einem Testmodus, der
+zuerst alle Dateien aus data/* nach /tmp kopiert und nur dort ändert.
+Dann könnte man bbbike mit -datadir aufrufen und testen, oder ein diff
+-r machen.
+
+diff wortweise würde wahrscheinlich besser als zeilenweise
+funktionieren. Siehe textproc/docdiff oder textproc/dwdiff oder
+textproc/wdiff.
+
+=item *
+
+BBBikeEdit: Teile nach BBBikeGPS etc. auslagern => schon gemacht, noch mehr?
+
+=item *
+
+Ampelschaltung.pm und BBBikeEdit.pm erweitern
+
+So, dass die alte Form (misc/ampelschaltung-orig.txt) auch per GUI
+editierbar ist. Alternativ herauskriegen, wie ich mir die
+Punkt-Kreuzung-Liste zusammenklicken kann (wahrscheinlich einfacher).
+
+=item * (M1)
+
+Überprüfen, ob der Menüpunkt E<quot>GPS-Track bearbeitenE<quot> im
+Edit-Modus funktioniert.
+
+=item * (H1)
+
+F8/F9 funktioniert bei fragezeichen im Edit-Mode (manchmal) nicht. Der
+Grund ist, dass fragezeichen hier kombiniert aus fragezeichen und
+XXX.bbd erzeugt wird. Wenn das Canvas-Item aus XXX.bbd oben liegt,
+kann keine entsprechende Datei von click_info in BBBikeEdit.pm
+gefunden werden.
+
+Theoretisch kann der Mechanismus intelligenter gemacht werden, indem
+der E<quot># sourceE<quot>-Mechanismus benutzt wird und vielleicht
+durch Zeilennummern ergänzt wird. Dann kann eindeutig auf die
+entsprechende Originaldatei verwiesen wird.
 
 =back
 
@@ -1756,9 +1695,157 @@ An example how to programmatically make a screenshot on Windows ---
 maybe this can be of use somewhere (using instead of xwd?):
 L<http://www.perlmonks.org/index.pl?node_id=355073>
 
+=item * (H4)
+
+Overview-Map: always segfaults under Win98
+
+=item * (M5)
+
+Tk::Icon (see L<http://www.schmuker.de/perl/modules/>) to optionally
+display the bbbike icon (avoid transparency problem!) (Windows only).
+
+Auf Windows bundlen und prüfen. Oder ist es nicht mehr notwendig?
+
+=back
+
+=head2 GPS
+
+=over
+
+=item * (M3) (improvement)
+
+Da es unter Windows im Gegensatz zu Unix eigentlich keinen Grund
+gibt, eine editierbare Combobox für das GPS-Device anzubieten,
+sollte ich das in eine nicht editierbare umwandeln.
+
+=item * (M3) (feature)
+
+GPS-Dialog: show a pre-generated route name. And check if the route
+number is useful for something (GPX may handle this, but maybe it's
+not worth the hassle i.e. could overwrite existing routes). Currently
+the meaningless name E<quot>TRACBACKE<quot> is generated if the route
+name is left empty. -> Route::Simplify now generates a route name if
+not supplied. Though the created name could be better, and it is also
+not shown yet in the route dialog. Question: what about the old name?
+Store it for later reuse? Maybe only if the user entered his own name?
+
+=item * (M3) (feature)
+
+Introduce GPS device types for the GPS card in the option editor. This
+would set the waypoint number, name length and charset automatically.
+A E<quot>customE<quot> setting will still be available to set these
+values manually. How to get for the device types? Maybe something like
+etrex b/w series, etrex color series, gpsmap etc.
+
+Related: the charset for the etrex color series does not include some
+characters like <, > ...
+
+=item *
+
+BBBikeGPS:
+
+Die Graphendarstellung verallgemeinern und verbessern:
+
+  * Es sollte möglich sein, die Graphen beliebig ein- und
+    auszuschalten (kein Redraw notwendig)
+
+  * Die Graphen könnten besser gelabelt sein, z.B. mit den
+    entsprechenden Straßennamen oder nahe gelegenen Orten/Plätzen.
+
+=back
+
+=head2 Updating
+
+=over
+
+=item * (H5)
+
+Implementiert, aber nicht getestet: Update-Prozess: data/.modified um
+eine weitere Spalte für einen MD5-Hash oder so erweitern. Die Prozedur
+sieht dann so aus: .modified wird bei jedem Update/Rsync geändert.
+Zuerst wird downgeloaded, dann mit Digest::MD5 überprüft (falls nicht
+installiert, gibt es eine Fehlermeldung) und die alte Datei ersetzt.
+Man könnte noch einen Sanity-Check auf das Format von .modified
+machen. Leider handelt es sich bei data/* um ein Sammelsurium von
+Dateien, nicht nur .bbd (auch .gif oder .coords.data oder ...)
+
+=item * (H5)
+
+Update-Prozess: falls unter /usr/* installiert, hat der normale User
+normalerweise keine Rechte auf das Installieren. Erkennen und
+hinweisen, z.B. BBBike als root starten (sudo/super) -> getan, aber
+noch nicht getestet. Nice to have: su/sudo/super für die Dauer der
+Installation verwenden. Oder in ein privates Verzeichnis installieren
+und dieses bevorzugt verwenden.
+
+=item * (H1)
+
+(Rsync und CVS hat Zeit...)
+
+Update über das Internet: rsync-Unterstützung und die
+Alternative CVS testen. rsync ist vielleicht nicht so gut, weil ein
+rsyncd irgendwo benötigt wird und rsyncd nicht das Sicherste der Welt
+ist. CVS wäre besser, noch besser, wenn es eine abgespeckte
+Client-Variante in Perl gäbe (VCS-LibCVS scheint auch brauchbar zu
+sein), die man ins Windows-distfile dazupacken könnte. CVS ist unter
+Unix meist vorhanden.
+
+Vielleicht besser: gibt es eine Apache-Option, um automatisch bei
+accept-encoding: gzip mit komprimierten statischen Dateien zu
+antworten? Update.pm braucht allerdings auch Unterstützung dafür...
+
+=back
+
+=head2 Internals
+
+=over
+
+=item * (H3) (improvement)
+
+Unification of plot streets and plot points. Eigentlich nicht so
+schwierig: alles, was einen Punkt hat, wird wie bei plot_point
+gezeichnet, und alles andere wie bei plot_street. Der Teufel steckt
+wohl im Detail: am Ende wird ein itemconfigure über alle neu
+gezeichneten Elemente gemacht, evtl. muss es hier Unterschiede geben.
+Vielleicht gibt es Konflikte bei den Kategorien. Vielleicht reicht es,
+wenn man den zu evaluierenden Code ein bisschen zusammenfasst.
+
+=item * (M3) (improvement)
+
+Get rid of Class::Struct. It's only advantage is: it's in the core,
+and it does use a 1:1 mapping between method name and hash key (unlike
+accessors.pm).
+
+Seek for an alternative, maybe self-written.
+
+=item * (H2)
+
+category_* directives in bbd files have side effects: the global
+%category_... is set and not per-file variants. Should be fixed,
+probably in reset_free_layer in bbbike.
+
+=item * (H5) (improvement)
+
+Rationalisierung der layer/category-Variablen
+(%layer_category_line_width etc.) fortsetzen. Es sollte nur eine Liste
+geben, die alle möglichen Variablen enthält. Das Ansprechen sollte
+immer gleich sein (layer/category vor layer vor category vor global).
+Die Direktiven für bbd-Dateien sollen laut Pod angepasst werden.
+
 =back
 
 =head1 Daten allgemein
+
+Achtung: bei Änderungen am Datenformat muss ich für Nutzer älterer
+BBBike-Softwareversionen weiterhin das alte Format für den Update über
+das Internet anbieten.
+
+Das gilt schon, wenn anderen Kategorien verwendet werden.
+
+Eine Strategie wäre, für das neue Datenformat die Dateinamen zu ändern
+(und langsam von deutsch auf englisch umzuschalten) und eine Zeit lang
+beide parallel anzubieten, wobei das alte Datenformat automatisch aus
+dem neuen erzeugt wird.
 
 =head2 Kategorien, Attribute
 
@@ -1907,6 +1994,11 @@ normal layer order would be something like (L0=below, L1=normal
 
 Have to find out where to put outlines, radwege, bahnhoefe and such
 into the layer stack.
+
+=> Maybe use better LVL instead of L, to avoid confusion with the
+naming of custom layers (which also use an L). Also, ground level
+should probably be 0, and -1 is below, and +1 is above (like in OSM
+data).
 
 =item * (H3) (feature)
 
@@ -2162,7 +2254,8 @@ nachzulesen.
 
  U-Bahn: Negativliste erstellen, alle Strecke, die nicht enthalten
  sind, sind automatisch als Tunnel markieren. U1 nach Krumme Lanke =
- tunnel.
+ tunnel. => DONE, wobei ich keine Negativliste verwendet habe, sondern
+ alle Tunnelstrecken aufgeführt habe.
 
  brunnels sollten bei sort_by_cat verwendet werden können,
  insbesondere für BBBikeDraw::GD und ::PDF
@@ -2408,6 +2501,27 @@ das erst einmal ignorieren, weil der gesperrt-Layer sowieso nur in
 bbbike Perl/Tk gezeichnet wird und spezielle gesperrt-Kategorien beim
 MapServer noch ignoriert werden?
 
+=> Sollte mit igndisp und ignrte (siehe data/gesperrt, siehe L<bbd>)
+implementiert sein.
+
+(related entry in the TODO list:)
+
+Idee: in bbd-Dateien die Möglichkeit erzeugen, Display-only- und
+Routing-only-Informationen ablegen zu können. Z.B.
+
+    #: routing-only vvv
+    Straße	q4; X1,Y1 X2,Y2
+    #: routing-only ^^^
+    #: display-only vvv
+    Straße	1 X1,Y1 X2,Y2
+    #: display-only ^^^
+
+In diesem Beispiel würde die Straße als Einbahnstraße dargestellt
+werden, aber im Routing als Schrittgeschwindigkeitstraße behandelt
+werden.
+
+=> Speziell dieses Beispiel wurde aber mit Kategorien gelöst: C<1s:q4>
+
 =item * (H5)
 
 Einbahnstraßen-Reorganisation: Die derzeitigen Typen von
@@ -2595,14 +2709,6 @@ Anzeige als auch für das Routing.
 
 Datenbeispiel: Am Volkspark/Bundesallee
 
-=item * (H3)
-
-rbahn-orig -> rbahn-orig + rbahnhof-orig. Oder gibt es noch einen
-Grund für das Extra-Handling? insert_points und co. sollten gut genug
-sein, um die beiden Dateien synchron zu halten...
-Dann brauche ich auch eine make-Regel, um rbahnhof gegen rbahn zu
-checken (wie bei der S-Bahn)
-
 =item * (M3)
 
 Introduce new bbd file E<quot>xxxE<quot> which contains all non-public
@@ -2738,6 +2844,10 @@ Straßennummern - wie?
 
 Images oder Prozess veröffentlichen
 
+=> Ja, images existieren bereits auf Sourceforge im
+bbbikedata-b_de-Package
+L<http://sourceforge.net/project/showfiles.php?group_id=19142&package_id=207826>
+
 =item * (M1)
 
 Eisenbahnen werden zurzeit nur bis 200m angezeigt. Für RB hochgehen
@@ -2814,6 +2924,8 @@ die jetzige Methode mit dem optimierten bbbike-temp-blockings?
 
 weblinks E<quot>offiziellE<quot> machen.
 
+=> Ja, gibt es bereits auf der Info-Seite.
+
 =item * (E1)
 
 Look at it:
@@ -2884,22 +2996,6 @@ umständlich zur Kreuzung Nachodstr., die Bundesallee überqueren, und
 dann wieder den Weg zur Pariser zurückfahren. Besser wäre es
 wahrscheinlich gewesen, gleich eine Route über die Nachodstr. zu
 wählen.
-
-=item * (H3)
-
-Idee: in bbd-Dateien die Möglichkeit erzeugen, Display-only- und
-Routing-only-Informationen ablegen zu können. Z.B.
-
-    #: routing-only vvv
-    Straße	q4; X1,Y1 X2,Y2
-    #: routing-only ^^^
-    #: display-only vvv
-    Straße	1 X1,Y1 X2,Y2
-    #: display-only ^^^
-
-In diesem Beispiel würde die Straße als Einbahnstraße dargestellt
-werden, aber im Routing als Schrittgeschwindigkeitstraße behandelt
-werden. Siehe auch nächstes Item.
 
 =item * (H5)
 
@@ -4248,6 +4344,16 @@ Abhängigkeit von HAVE_KDE angeben.
 Check if it would be feasible to create a BBBike Windows distribution
 using L<Perl::Dist>. Note that the current Perl::Dist (0.0.5) has many
 very serious problems (up to making the current perl unusable!).
+
+=item *
+
+Secure deployment to radzeit.de:
+
+  * cp on server: bbbike => bbbike~ etc.
+  * rsync to ~ version
+  * test ~ version (maybe name the test scripts bbbike~.cgi etc.)
+  * exch ~ and "" version
+  * test "" version
 
 =back
 

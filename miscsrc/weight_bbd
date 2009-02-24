@@ -1,0 +1,148 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: weight_bbd,v 1.9 2007/03/18 18:42:41 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib");
+use Strassen::Core;
+use Getopt::Long;
+
+my $out;
+my $force;
+my $do_scale_widths = 1;
+my $do_distinguish_dir = 0;
+my @scale_widths = (0.25, 0.5, 0.75, 1, 1.5, 2);
+my $logarithmic = undef;
+if (!GetOptions("logarithmic=f" => \$logarithmic,
+		"f" => \$force,
+		"o=s" => \$out,
+		"scalewidths!" => \$do_scale_widths,
+		"distinguish-dir!" => \$do_distinguish_dir,
+	       )) {
+    die "usage";
+}
+if (!defined $out) {
+    die "Specify out file with -o option!";
+}
+if ($out !~ /\.bbd$/) {
+    die "$out does not have .bbd extension!";
+}
+
+my $file = shift || "-";
+my $s = Strassen->new($file) or die "Strassen file?";
+if (-e $out && !$force) {
+    die "Will not overwrite existing file $out";
+}
+
+my %net;
+my %name;
+my %cat;
+
+$s->init;
+while(1) {
+    my $r = $s->next;
+    last if !@{ $r->[Strassen::COORDS()] };
+    for my $i (0 .. $#{ $r->[Strassen::COORDS()] }-1) {
+	my $c1 = join(";", @{$r->[Strassen::COORDS()]}[$i,$i+1]);
+	my $c2 = join(";", @{$r->[Strassen::COORDS()]}[$i+1,$i]);
+	if (!$do_distinguish_dir) {
+	    if (!exists $name{$c1}) {
+		if (!exists $name{$c2}) {
+		    $name{$c2} = $r->[Strassen::NAME()];
+		}
+		$net{$c2}++;
+	    } else {
+		$net{$c1}++;
+	    }
+	} else {
+	    if (!exists $name{$c1}) {
+		$name{$c1} = $r->[Strassen::NAME()];
+	    }
+	    $net{$c1}++;
+	}
+    }
+}
+
+open(OUT, ">$out") or die "Writing to $out: $!";
+while(my($k,$v) = each %net) {
+    my($c1,$c2) = split /;/, $k;
+    my $count = $v;
+    if (defined $logarithmic) {
+	$v = int(log($v)/log($logarithmic));
+	$v = 1 if ($v < 1);
+    }
+    print OUT "$count: $name{$k}" . "\t" . $v . " " . $c1 . " " . $c2 . "\n";
+    $cat{$v}++;
+}
+close OUT;
+
+my $abk = '$abk';
+
+(my $desc = $out) =~ s/\.bbd$/.desc/;
+open(DESC, ">$desc") or die "Writing to $desc: $!";
+while(my($k,$v) = each %cat) {
+    my $cat = "$abk-$k";
+    print DESC "\$line_width{\"$cat\"} = [";
+    if ($do_scale_widths) {
+	print DESC join(",", map { my $w = int($k*$scale_widths[$_]);
+				   $w == 0 ? 1 : $w;
+			       } (0..5));
+    } else {
+	print DESC join(",", map { $k } (0..5));
+    }
+    print DESC "];\n";
+}
+print DESC "\$str_color{\"\$abk\"} = '#000080';\n";
+close DESC;
+
+__END__
+
+=head1 NAME
+
+weight_bbd - create weighted bbd files
+
+=head1 DESCRIPTION
+
+=head2 OPTIONS
+
+  -logarithmic <real>: 1.5 seems a nice choise: 100 => 11, 500 => 15
+  -f: force overwriting existing file
+  -o outfile: bbd file for output
+  -[no]scalewidths: scale widths (default: true)
+  -[no]distinguish-dir: distinguish between both directions (default: false)
+
+=head2 Anwendungsbeispiele
+
+ Create a weighted plot from radzeit.de coordssessions:
+
+ cd ~/www/log/bbbike-sessions/
+ rsync -v -e "ssh -2 -p 5022" -a root@bbbike.radzeit.de:/tmp/coordssession/ coordssession/
+ ~/src/bbbike/miscsrc/coordssession2bbd > /tmp/a.bbd
+ ~/src/bbbike/miscsrc/weight_bbd -logarithmic=2.5 -f -o /tmp/radzeit_weighted_25.bbd /tmp/a.bbd
+
+ Old sample for creating a weighted plot from accesses to
+ www.radzeit.de (use the last 2 MB of the access_log):
+
+ ~/src/bbbike/miscsrc/bbbikecgi_log_routes.pl -logtype apache -seek -2000000 ~/www/log/radzeit.de-access_log > /tmp/radzeit.bbd
+ ~/src/bbbike/miscsrc/weight_bbd -logarithmic=1.5 -f -o /tmp/radzeit_weighted.bbd /tmp/radzeit.bbd
+
+=head1 TODO
+
+Convert script to not use .desc file anymore, but first the bbbike
+handle_global_directives code has to deal with the generated arrays
+for the line_width!
+
+=cut

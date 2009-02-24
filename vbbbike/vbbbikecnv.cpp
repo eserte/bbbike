@@ -3,6 +3,8 @@
 //	vbbbikecnv.cpp:	Source for vbbbikeCanvasPane class
 //=======================================================================
 
+#include <iostream>
+
 #include "vbbbikecnv.h"
 #include "vbbbikeapp.h"
 #include "transpose.h"
@@ -239,8 +241,8 @@ void vbbbikeCanvasPane::convertData() {
     if (!((vbbbikeApp*)theApp)->waitForGoal) {
       koordptr_t startPtr = koordptr_by_koord(nearest_x, nearest_y);
       if (startPtr == -1) {
-        cerr << "Can't find pointer for start "
-             << nearest_x << "/" << nearest_y << endl;
+        std::cerr << "Can't find pointer for start "
+                  << nearest_x << "/" << nearest_y << std::endl;
         return;
       }
 
@@ -258,8 +260,8 @@ void vbbbikeCanvasPane::convertData() {
     } else {
       koordptr_t goalPtr = koordptr_by_koord(nearest_x, nearest_y);
       if (goalPtr == -1) {
-        cerr << "Can't find pointer for goal "
-             << nearest_x  << "/" << nearest_y << endl;
+        std::cerr << "Can't find pointer for goal "
+                  << nearest_x  << "/" << nearest_y << std::endl;
         return;
       }
 

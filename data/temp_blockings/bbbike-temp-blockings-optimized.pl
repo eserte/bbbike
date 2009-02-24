@@ -690,15 +690,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1235257200,
-         'text' => 'L 035 Saarower Chaussee/ Friedensstr. Autobahnbrücke Friedensstr. in Fürstenwalde Ri. Petersdorf Brückenabbruch 16.02.2009-21.02.2009 ',
-         'from' => 1234652400,
-         'id' => 1566,
-         'data' => 'userdel	1::inwork 56428,-6340 56416,-7090
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_011184',
          'until' => 1235861999,

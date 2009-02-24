@@ -1,0 +1,142 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: unwind_bbd_for_diff,v 1.4 2009/02/22 19:55:48 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2005,2009 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+# Make bbd files friendlier to diff
+# XXX needs more work, i.e. instructions on how to use this (e.g.:
+# * checkout the original data
+# * call this script on the original data
+# * call this script on the changed data
+# * generate a diff between both datasets
+# and to apply the diff
+# * call this script on the other host' data
+# * apply patch on this directory
+# * call this script with -r
+# )
+
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+use Strassen::Core;
+use File::Compare qw(compare);
+use File::Temp qw(tempdir tempfile);
+use File::Basename;
+use Getopt::Long;
+
+my $operation = sub {
+    my($src, $dest) = @_;
+    unwind($src, $dest);
+    validate($src, $dest);
+};
+
+sub usage {
+    die "usage: $0 [-r] bbdfile ...\n";
+}
+
+if (!GetOptions("r!" => sub { $operation = \&wind })) {
+    usage;
+}
+
+if (!@ARGV) {
+    usage;
+}
+
+my $dir = tempdir(CLEANUP => 0);
+
+for my $f (@ARGV) {
+    $operation->($f, $dir);
+}
+
+print STDERR "Target files are in\n\t$dir\n";
+
+sub unwind {
+    my($src, $dest) = @_;
+    print STDERR "$src -> $dest...\n";
+    open my $fh, $src or die "Cannot open $src: $!";
+    my $ofilename = "$dest/" . basename($src);
+    $ofilename .= ".unwinded";
+    open my $ofh, "> $ofilename" or die "Cannot write to $ofilename: $!";
+    while(<$fh>) {
+	if (/^\#/) {
+	    print $ofh $_;
+	} else {
+	    my($rec) = Strassen::parse($_);
+	    print $ofh $rec->[Strassen::NAME], "\n";
+	    print $ofh $rec->[Strassen::CAT], "\n";
+	    for my $c (@{ $rec->[Strassen::COORDS] }) {
+		print $ofh $c, "\n";
+	    }
+	    print $ofh "\n";
+	}
+    }
+    close $ofh
+	or die "Can't write to $ofilename: $!";
+}
+
+sub validate {
+    my($src, $dest) = @_;
+    my $ofilename = "$dest/" . basename($src);
+    $ofilename .= ".unwinded";
+    my($tmpfh,$tmpfile) = tempfile(UNLINK => 1);
+    open my $fh, $ofilename
+	or die "Can't open $ofilename: $!";
+    wind_to_fh($fh, $tmpfh);
+    close $tmpfh
+	or die $!;
+    compare($src, $tmpfile) == 0
+	or die "Difference between original file $src and $ofilename";
+    print STDERR "Validation of $ofilename OK.\n";
+}
+
+sub wind_to_fh {
+    my($fh, $ofh) = @_;
+
+    my $stage = "any";
+    while(<$fh>) {
+	if ($stage eq 'any') {
+	    if (/^\#/) {
+		print $ofh $_;
+	    } else {
+		chomp;
+		print $ofh $_;
+		$stage = 'cat';
+	    }
+	} elsif ($stage eq 'cat') {
+	    chomp;
+	    print $ofh "\t$_";
+	    $stage = 'coords';
+	} elsif ($stage eq 'coords') {
+	    if (/^$/) {
+		print $ofh "\n";
+		$stage = 'any';
+	    } else {
+		chomp;
+		print $ofh " $_";
+	    }
+	}
+    }
+}
+
+sub wind {
+    my($src, $dest) = @_;
+    print STDERR "$src -> $dest...\n";
+    open my $fh, $src or die "Cannot open $src: $!";
+    my $ofilename = "$dest/" . basename($src);
+    $ofilename =~ s{\.unwinded$}{};
+    open my $ofh, "> $ofilename" or die "Cannot write to $ofilename: $!";
+    wind_to_fh($fh, $ofh);
+}
+
+__END__

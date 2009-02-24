@@ -1,6 +1,12 @@
 #
-# $Id: Makefile,v 2.6 2003/08/14 05:17:43 eserte Exp $
+# $Id: Makefile,v 2.7 2009/02/22 14:11:23 eserte Exp $
 #
+
+# XXX
+# Note that this does not work anymore for modern systems:
+# * -fwritable-support does not exist anymore in new gcc's, it seems
+# * probably completely broken for 64bit systems
+# Anyway this is of mainly historical interest.
 
 EXE=
 .if defined(PALM)

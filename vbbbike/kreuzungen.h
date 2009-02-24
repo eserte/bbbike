@@ -1,5 +1,5 @@
 /*
- * $Id: kreuzungen.h,v 1.1 2000/12/12 01:47:17 eserte Exp $
+ * $Id: kreuzungen.h,v 1.2 2009/02/22 14:12:14 eserte Exp $
  * Author: Slaven Rezic
  *
  * Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 #include <vector>
 
 class Kreuzungen {
-  vector<long long> Map;
+  std::vector<long long> Map;
 
  public:
   void add(int x, int y);

@@ -1511,7 +1511,9 @@ miscsrc/telefonbuch_strassen2001.pl
 miscsrc/tkzincbbbike
 miscsrc/trafficlightgraph.pl
 miscsrc/ttdump
+miscsrc/unwind_bbd_for_diff
 miscsrc/vmzrobot.pl
+miscsrc/weight_bbd
 miscsrc/winter_optimization.pl
 miscsrc/yaml2bbd
 port/MetaPort.pm
@@ -1607,6 +1609,11 @@ t/strassen-tie.t
 t/strassen.t
 t/strassennetz.t
 t/temp_blockings_dates.t
+t/vector-in-grid-tk.t
+t/vector-intersect-lines.t
+t/vector-intersect-rectangles.t
+t/vector-point-in-polygon.t
+t/vector-polygon-center.t
 t/vectorutil.t
 t/wapcgi.t
 t/way.t

@@ -148,7 +148,7 @@ private:		//--------------------------------------- private
   CanvasAreaItemList AreaItemList[MAXitem+1];
 
   void convertData();
-  inline int vbbbikeCanvasPane::getCategory(char* catStr);
+  inline int getCategory(char* catStr);
   void adjust(int& X, int& Y);
   void getDelta(int& dx, int& dy);
   void drawRoute();

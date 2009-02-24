@@ -1,6 +1,10 @@
 README for vbbbike
 ------------------
 
+XXX NOTE that this is currently unsupported and probably does not work
+(e.g. dumps core on 64 bit systems). Needs a build of *.o files in
+bbbike's c subdirectory.
+
 INSTALL
 
 You need the V toolkit. Get it here:
