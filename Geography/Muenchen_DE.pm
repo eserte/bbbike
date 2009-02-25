@@ -16,6 +16,8 @@ use strict;
 # private:
 use vars qw(%subcityparts %subcitypart_to_citypart %properties);
 
+use base qw(Geography::Base);
+
 ## Wie sieht's in München damit aus?
 #  %subcityparts =
 #      (

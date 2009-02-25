@@ -18,7 +18,7 @@ use strict;
 use vars qw($VERSION);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
-sub new { bless {}, shift }
+use base qw(Geography::Base);
 
 sub cityname { "Zürich" }
 

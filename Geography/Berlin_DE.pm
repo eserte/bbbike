@@ -21,6 +21,8 @@ use strict;
 # private:
 use vars qw(%subcityparts %cityparts %subcitypart_to_citypart %properties);
 
+use base qw(Geography::Base);
+
 ######################################################################
 # Der Superbezirk Lichtenberg wird voraussichtlich folgende Stadtteile
 # bekommen (siehe
@@ -121,11 +123,6 @@ while(my($cp,$scp) = each %subcityparts) {
      # XXX etc.: z.B. Icon-Namen, weitere Feinheiten wie
      # map-Names, Zonen, overview-Karte...
     );
-
-sub new {
-    my($class) = @_;
-    bless {}, $class;
-}
 
 # cityname in native or common language
 sub cityname { "Berlin" }

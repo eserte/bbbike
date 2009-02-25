@@ -18,6 +18,8 @@ package Geography::Brandenburg_DE;
 use strict;
 use vars qw(%parts %kfz);
 
+use base qw(Geography::Base);
+
 my $partdef =
     ['Barnim',
      ['Ahrensfelde',
@@ -203,11 +205,6 @@ my $partdef =
 	LOS => 'Landkreis Oder-Spree',
 	MOL => 'Märkisch Oderland',
        );
-
-sub new {
-    my($class) = @_;
-    bless {}, $class;
-}
 
 1;
 

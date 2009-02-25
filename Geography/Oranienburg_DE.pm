@@ -18,6 +18,8 @@ use strict;
 # private:
 use vars qw(%subcityparts %cityparts %subcitypart_to_citypart %properties);
 
+use base qw(Geography::Base);
+
 # XXX missing
 %cityparts =
     (
@@ -34,11 +36,6 @@ use vars qw(%subcityparts %cityparts %subcitypart_to_citypart %properties);
      # XXX etc.: z.B. Icon-Namen, weitere Feinheiten wie
      # map-Names, Zonen, overview-Karte...
     );
-
-sub new {
-    my($class) = @_;
-    bless {}, $class;
-}
 
 # cityname in native or common language
 sub cityname { "Oranienburg" }
