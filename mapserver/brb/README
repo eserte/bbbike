@@ -1,0 +1,44 @@
+README
+------
+
+Showing bbbike data within Mapserver.
+
+Rough installation procedure on a Debian system:
+
+   * Install the following packages:
+
+         sudo apt-get install pmake apache2 cgi-mapserver \
+                              mapserver-bin libclass-accessor-perl \
+                              libxbase-perl libtext-unidecode-perl \
+			      libwww-mechanize-formfiller-perl \
+			      ttf-bitstream-vera libtemplate-perl
+
+   * Prepare apache:
+
+         (cd ../cgi && pmake httpd.conf)
+
+     The resulting httpd.conf should be included into apache, e.g.
+
+         (cd /etc/apache2/conf.d && sudo ln -s .../bbbike/cgi/httpd.conf bbbike.conf)
+
+     Restart apache:
+
+         sudo /etc/init.d/apache2 restart
+
+   * Create a bbbike.cgi.config. The provided bbbike-debian.cgi.config
+     should be good enough:
+
+         (cd ../cgi && ln -s bbbike-debian.cgi.config bbbike.cgi.config)
+
+   * Create the mapserver data:
+
+         (cd ../data && pmake mapfiles)
+
+   * Create the mapserver templates and mapfiles:
+
+         touch -t 197001010000 Makefile.local.inc
+         pmake
+
+   * Point your browser to http://localhost/bbbike/cgi/bbbike.cgi
+     bbbike should appear. In the footer there's a link to the
+     mapserver.
