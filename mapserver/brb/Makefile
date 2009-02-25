@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.65 2009/02/02 22:56:29 eserte Exp $
+# $Id: Makefile,v 1.66 2009/02/25 23:40:57 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -52,7 +52,7 @@ TARGET=		radzeit.herceg.de
 
 LOCAL_BBBIKE_DIR=	${.CURDIR:H:H}
 # The hostname of the web server:
-LOCAL_HOST=		www						# ***
+LOCAL_HOST=		localhost						# ***
 RADZEIT_APACHE_DIR=	${BBBIKE_RADZEIT_APACHE_DIR}
 RADZEIT_HOST=		${BBBIKE_RADZEIT_HOST}
 
@@ -94,8 +94,8 @@ HOST=			$(LOCAL_HOST)
 MAPSERVER_DIR=		$(LOCAL_BBBIKE_DIR)/mapserver/brb
 # Relative URL to this directory and to the mapserv binary:
 .if ${TARGET} == "local"
-MAPSERVER_RELURL=	/~eserte/mapserver/brb				# ***
-MAPSERVER_PROG_RELURL?=	/~eserte/cgi/mapserv.cgi			# ***
+MAPSERVER_RELURL=	/bbbike/mapserver/brb				# ***
+MAPSERVER_PROG_RELURL?=	/cgi/mapserv.cgi				# ***
 .elif ${TARGET} == "devpc01"
 MAPSERVER_RELURL=	/bbbike/mapserver/brb				# ***
 MAPSERVER_PROG_RELURL?=	/mapserver/cgi/mapserv.cgi			# ***
@@ -108,9 +108,9 @@ MAPSERVER_PROG_FSPATH?=	/home/e/eserte/www/cgi/mapserv.cgi		# ***
 IMAGE_DIR=		$(LOCAL_BBBIKE_DIR)/images
 # Relative URL to the bbbike html and cgi directories:
 .if ${TARGET} == "local"
-BBBIKE_HTML_RELURL=	/~eserte/bbbike/html				# ***
-BBBIKE_CGI_RELURL=	/~eserte/bbbike/cgi				# ***
-BBBIKE_IMAGES_RELURL=	/~eserte/bbbike/images				# ***
+BBBIKE_HTML_RELURL=	/bbbike/html					# ***
+BBBIKE_CGI_RELURL=	/bbbike/cgi					# ***
+BBBIKE_IMAGES_RELURL=	/bbbike/images					# ***
 BBBIKECGI_CONFIG=	$(ABS_LOCAL_BBBIKE_DIR)/cgi/bbbike.cgi.config
 BBBIKECGI_CONFIG_LOCAL=	$(BBBIKECGI_CONFIG)
 .elif ${TARGET} == "devpc01"
@@ -122,8 +122,12 @@ BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
 # Which kind of images should be generated:
 IMAGE_SUFFIX=		gif # was: png					# ***
 # File with the font mapping for this host:
+.if exists(/etc/debian_version)
+FONTS_LIST?=		fonts-debian.list
+.else
 #FONTS_LIST?=		fonts-vran.list					# ***
 FONTS_LIST?=		fonts-biokovo.list					# ***
+.endif
 # The unix user of the webserver process:
 WWW_USER=		eserte						# ***
 TARGET_DIR=		${.CURDIR}
@@ -341,7 +345,7 @@ maps:	${MAPFILES} ${MAPFILES_EXTRA} ${IPAQ_MAPFILES} ${IPAQ_MAPFILES_EXTRA}
 
 html:	${HTMLFILES}
 
-misc:	permissions crontab check-crontab httpd.conf
+misc:	tmp-directory permissions crontab check-crontab httpd.conf
 
 Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile \
 			${ABS_LOCAL_BBBIKE_DIR}/BBBikeVar.pm \
@@ -560,8 +564,15 @@ radroute_body.html:	$(BBBIKE_DATA_DIR)/comments_route-orig \
 ######################################################################
 # misc
 
+tmp-directory:
+	mkdir -p tmp
+
 permissions:
 	chmod ugo+r brb.map-inc
+	chmod ugo+rx,ug+w tmp
+.if exists(/etc/debian_version)
+	[ "`stat --format=%U`" = "www-data" ] || sudo chgrp www-data tmp && true
+.endif
 
 crontab:	crontab.tpl Makefile Makefile.${TARGET}.inc
 	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
