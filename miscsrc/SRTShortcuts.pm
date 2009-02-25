@@ -1369,24 +1369,32 @@ sub real_street_widths {
 
 sub build_suggest_list {
     require File::Basename;
-    my @orig_files = grep {
-	!m{/(
-	      qualitaet_s
-	    | qualitaat_l
-	    | handicap_s
-	    | handicap_l
-	    | gesperrt
-	    | gesperrt_car
-	    | comments_[^/]*
-	    | ampelschaltung
-	    | relation_gps
-            )-orig$}x
-    } glob("$main::datadir/*-orig");
+    my $ignore_qr = qr{(?:
+			 qualitaet_s
+		       | qualitaat_l
+		       | handicap_s
+		       | handicap_l
+		       | gesperrt
+		       | gesperrt_car
+		       | comments_[^/]*
+		       | ampelschaltung
+		       | relation_gps
+		       )}x;
+    my @files = grep { !m{/${ignore_qr}-orig$}x } glob("$main::datadir/*-orig");
+    if (!@files) {
+	# Oh, no -orig files available. Assume an osm-converted
+	# directory or bbbike from a distribution package
+	@files = grep { !m{/${ignore_qr}$}x } grep { !m{/[^/]*\.[^/]*$} } glob("$main::datadir/*");
+    }
+    if (!@files) {
+	main::status_message("Can't use this feature, no suitable files found in $main::datadir.", "error");
+	return;
+    }
     my %map;
-    for my $orig_file (@orig_files) {
-	my $s = eval { Strassen->new($orig_file) };
+    for my $file (@files) {
+	my $s = eval { Strassen->new($file) };
 	if ($s) {
-	    my $base = File::Basename::basename($orig_file);
+	    my $base = File::Basename::basename($file);
 	    $s->init;
 	    while(1) {
 		my $r = $s->next;
