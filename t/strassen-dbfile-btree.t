@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-dbfile-btree.t,v 1.4 2008/02/02 22:41:38 eserte Exp $
+# $Id: strassen-dbfile-btree.t,v 1.5 2009/02/25 23:41:49 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -21,6 +21,16 @@ BEGIN {
 	1;
     }) {
 	print "1..0 # skip: no Test/DB_File/File::Temp modules\n";
+	exit;
+    }
+}
+
+BEGIN {
+    if (!eval q{
+	require Object::Iterate
+	1;
+    }) {
+	print "1..0 # skip: no Object::Iterate module, needed for convert() method\n";
 	exit;
     }
 }
