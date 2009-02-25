@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: FromMeta.pm,v 1.1 2009/02/25 23:44:23 eserte Exp $
+# $Id: FromMeta.pm,v 1.2 2009/02/25 23:44:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -35,6 +35,7 @@ sub load_meta {
 }
 
 # cityname in native or common language
+# XXX Note that osm2bbd currently does not set mapname
 sub cityname {
     my $self = shift;
     $self->{mapname};
