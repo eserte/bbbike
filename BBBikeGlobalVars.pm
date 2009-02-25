@@ -26,7 +26,7 @@ use vars
      $coords_ref $realcoords_ref $search_route_points_ref @realcoords
      $VERSION $PROG_REVISION $tmpdir %tmpfiles $progname
      $os $os_bsd $use_clipboard $verbose $advanced $devel_host $public_test
-     $datadir $no_original_datadir $city $country %datadir_meta
+     $datadir $no_original_datadir $city $country
      $top %toplevel %processes $transient $c $sx $sy $top_dpi $top_dpmm @want_extends %autouse_func
      $small_icons $is_handheld
      @scrollregion $normal_scrollregion $scrollre
