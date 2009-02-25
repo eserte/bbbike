@@ -1460,7 +1460,7 @@ To convert data for the San Francisco area:
 
 =item 2. convert *.osm files to bbbike data
 
-    ./miscsrc/osm2bbd -f -map bbbike -center -122.598,37.6829 -o data-sfo -d ../sfbike/sfo
+    ./miscsrc/osm2bbd -f -map bbbike -center -122.598,37.6829 -country us -o data-sfo -d ../sfbike/sfo
 
 =item 3. start sfbike, english version
 
