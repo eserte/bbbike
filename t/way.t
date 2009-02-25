@@ -2,11 +2,14 @@
 # -*- perl -*-
 
 #
-# $Id: way.t,v 1.2 2003/06/23 22:04:48 eserte Exp $
+# $Id: way.t,v 1.3 2009/02/25 23:41:16 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
+use FindBin;
+
+use lib "$FindBin::RealBin/..";
 
 use Way;
 use Way::Metric;
