@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.33 2009/02/12 00:52:47 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.34 2009/02/25 23:45:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -763,7 +763,7 @@ sub BBBikeLazy::plotstr_on_demand {
 
     sub plotplaces_pre2 {
 	if (exists $args{Canvas}) {
-	    $transpose = ($show_overview_mode eq 'brb'
+	    $transpose = ($show_overview_mode eq 'region'
 			  ? \&transpose_small
 			  : \&transpose_medium);
 	} else {

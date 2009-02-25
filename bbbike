@@ -390,7 +390,7 @@ $orte_label_size = 1;
 use constant MIN_ORT_CAT => 0;
 use constant MAX_ORT_CAT => 6;
 $str_far_away{'l'} = 0;
-$show_overview_mode = "b";
+$show_overview_mode = "city";
 $show_overview = $show_strlist = 0;
 $show_calories = 0;
 $use_hoehe = 1; # XXX kann im Programm nicht gesetzt werden
@@ -656,8 +656,7 @@ if (defined $city) {
     $city_obj = Geography->new($city, $country);
     if ($city_obj) {
 	set_datadir($city_obj->datadir, -clearold => 1);
-	%global_search_args = $city_obj->search_args
-	    if $city_obj->can("search_args");
+	%global_search_args = $city_obj->search_args;
 	if ($city eq "Berlin") {
 	    $no_original_datadir = 0; # XXX Was bedeutet das genau?
 	    $dataset_title = undef;
@@ -665,7 +664,7 @@ if (defined $city) {
 	    $no_original_datadir = 1; # XXX Was bedeutet das genau?
 	    $dataset_title = $city . " " . $country;
 	}
-	if ($city_obj->can("scrollregion") && $city_obj->scrollregion) {
+	if ($city_obj->scrollregion) {
 	    @scrollregion = $city_obj->scrollregion;
 	    $normal_scrollregion = $scrollregion[2]-$scrollregion[0];
 	    for (@scrollregion) { $_ *= $scale };
@@ -4384,7 +4383,7 @@ if ($top->{initial_iconic}) {
     $top->deiconify;
 }
 
-if ($city_obj && $city_obj->can('bbox') && $city_obj->bbox) {
+if ($city_obj && $city_obj->bbox) {
     require BBBikeAdvanced;
     enlarge_scrollregion(@{ $city_obj->bbox });
 }
@@ -9462,7 +9461,7 @@ sub plotstr {
     if (exists $args{Canvas}) {
 	$c = $args{Canvas};
 	$std = 0;
-	$transpose = ($show_overview_mode eq 'brb'
+	$transpose = ($show_overview_mode eq 'region'
 		      ? \&transpose_small
 		      : \&transpose_medium);
     }
@@ -9690,7 +9689,7 @@ sub plotstr {
     if (defined $args{Width}) { $default_width = $args{Width} }
     {
 	my $scale = (exists $args{Canvas}
-		     ? ($show_overview_mode eq 'brb'
+		     ? ($show_overview_mode eq 'region'
 			? $small_scale
 			: $medium_scale)
 		     : $scale);
@@ -12012,7 +12011,7 @@ sub plotorte {
     if (exists $args{Canvas}) {
 	$c = $args{Canvas};
 	$std = 0;
-	$transpose = ($show_overview_mode eq 'brb'
+	$transpose = ($show_overview_mode eq 'region'
 		      ? \&transpose_small
 		      : \&transpose_medium);
 	$is_overview_canvas = 1;
@@ -15390,7 +15389,7 @@ sub center_best {
 	    return;
 	}
     }
-    if ($city_obj && $city_obj->can("center")) {
+    if ($city_obj && $city_obj->center) {
 	$c->center_view(transpose(split /,/, $city_obj->center));
     } else {
 	$c->center_view;
@@ -15628,7 +15627,7 @@ sub show_overview_clean_and_populate {
 
 sub overview_draw_route {
     if (Tk::Exists($overview_canvas)) {
-	my $transpose = $show_overview_mode eq 'brb' ? \&transpose_small : \&transpose_medium;
+	my $transpose = $show_overview_mode eq 'region' ? \&transpose_small : \&transpose_medium;
 	$overview_canvas->delete("route");
 	return if !@realcoords;
 	my @coords = map { $transpose->(@$_) } @realcoords;
@@ -15648,13 +15647,13 @@ sub overview_del_route {
 
 sub _convert_transposed_to_overview_coord {
     my($tx,$ty) = @_;
-    my $transpose = $show_overview_mode eq 'brb' ? \&transpose_small : \&transpose_medium;
+    my $transpose = $show_overview_mode eq 'region' ? \&transpose_small : \&transpose_medium;
     $transpose->(anti_transpose($tx, $ty));
 }
 
 sub _convert_overview_to_transposed_coord {
     my($x,$y) = @_;
-    my $anti_transpose = $show_overview_mode eq 'brb' ? \&anti_transpose_small : \&anti_transpose_medium;
+    my $anti_transpose = $show_overview_mode eq 'region' ? \&anti_transpose_small : \&anti_transpose_medium;
     $anti_transpose->(transpose($x, $y));
 }
 
@@ -15689,7 +15688,7 @@ sub show_overview_populate {
     my($overview_width, $overview_height);
     if ($coord_system eq 'standard') {
 	$overview_width = $normal_scrollregion/DEFAULT_SCALE*
-	    ($show_overview_mode eq 'brb' ? $small_scale : $medium_scale);
+	    ($show_overview_mode eq 'region' ? $small_scale : $medium_scale);
 	$overview_height = $overview_width;
 	$overview_canvas->configure
 	    (-scrollregion => [-$overview_width, -$overview_width,
@@ -15716,7 +15715,7 @@ sub show_overview_populate {
     $sx->grid(-row => 1, -column => 0, -sticky => 'ew');
 
     my $center_coords;
-    if ($city_obj && $city_obj->can("center")) {
+    if ($city_obj && $city_obj->center) {
 	$center_coords = [ split /,/, $city_obj->center ];
     } else {
 	$center_coords = [8581,12243]; # Fallback: Brandenburger Tor
@@ -15736,7 +15735,7 @@ sub show_overview_populate {
 	    my($ix2,$iy2) = Geometry::get_intersection($ix1,$iy1,0,0,
 						       $cx1,$cy1,$cx2,$cy2);
 	    if (defined $ix2 and defined $iy2) {
-		my $anti_transpose = ($show_overview_mode eq 'brb'
+		my $anti_transpose = ($show_overview_mode eq 'region'
 				      ? \&anti_transpose_small
 				      : \&anti_transpose_medium);
 		# Distance to center (in Berlin: Brandenburger Tor)
@@ -15773,26 +15772,43 @@ sub show_overview_populate {
 				},
     );
 
-    # Mode button
-    my $mode_button = $overview_top->Button
-	(-font => $font{'small'},
-	 -padx => 0, -pady => 0,
-	 -highlightthickness => 0,
-	 -takefocus => 0,
-	 -command => sub {
-	     $show_overview_mode =
-		 ($show_overview_mode eq 'b' ? 'brb' : 'b');
-#	     $overview_top->after(10, sub { show_overview(1) });
-	     $overview_top->after(10, sub { show_overview_clean_and_populate($overview_top) });
-	 });
-    $mode_button->place("-x" => 2, "-y" => 2);
-    if ($show_overview_mode eq 'brb') {
-	$mode_button->configure(-text => "=> Berlin");
-    } else {
-	$mode_button->configure(-text => "=> Brandenburg");
+    # Mode buttons
+    my $button_x = 2;
+    {
+	my @mode_button;
+	my $set_disabled_buttons = sub {
+	    if ($show_overview_mode eq 'city') {
+		$mode_button[0]->configure(-state => 'disabled');
+		$mode_button[1]->configure(-state => 'normal');
+	    } else {
+		$mode_button[0]->configure(-state => 'normal');
+		$mode_button[1]->configure(-state => 'disabled');
+	    }
+	};
+	for my $def (['+', 'city'],
+		     ['-', 'region'],
+		    ) {
+	    my($label, $overview_mode_value) = @$def;
+	    push @mode_button, $overview_top->Button
+		(-text => $label,
+		 -font => $font{'reduced'},
+		 -padx => 0, -pady => 0,
+		 -highlightthickness => 0,
+		 -takefocus => 0,
+		 -command => sub {
+		     my $this_button = shift;
+		     $show_overview_mode = $overview_mode_value;
+		     $overview_top->after(10, sub { show_overview_clean_and_populate($overview_top) });
+		     $set_disabled_buttons->();
+		 },
+		);
+	    $mode_button[-1]->place("-x" => $button_x, "-y" => 2);
+	    $button_x += $mode_button[-1]->reqwidth+2;
+	}
+	$set_disabled_buttons->();
     }
 
-    my $ts = ($show_overview_mode eq 'brb'
+    my $ts = ($show_overview_mode eq 'region'
 	      ? \&transpose_small
 	      : \&transpose_medium);
     my($km100_pixel) = ($ts->(100000,0))[0] - ($ts->(0,0))[0];
@@ -15828,7 +15844,7 @@ sub show_overview_populate {
 		require FURadar;
 		$FURadar::progress = $progress;
 		$FURadar::VERBOSE = $verbose;
-		#	       $FURadar::use_map = ($show_overview_mode eq 'brb'
+		#	       $FURadar::use_map = ($show_overview_mode eq 'region'
 		#				    ? 'FURadar2' : 'FURadar');
 		$FURadar::use_map = 'FURadar2'; # the only left...
 		# XXXX use fetch and cache routine
@@ -15841,7 +15857,7 @@ sub show_overview_populate {
 			 -km100pixel => $km100_pixel);
 		    if (-r $imgfile) {
 			$radar_image = $overview_canvas->Photo(-file => $imgfile);
-			my($xoff,$yoff) = ($show_overview_mode eq 'brb'
+			my($xoff,$yoff) = ($show_overview_mode eq 'region'
 					   ? (3,20)
 					   : $ts->(0,0));
 			$overview_canvas->createImage
@@ -15863,7 +15879,7 @@ sub show_overview_populate {
 	    DecBusy($top);
 	};
 	$radar_button->configure(-selectcolor => $radar_button->cget(-background));
-	$radar_button->place("-x" => 2+2+$mode_button->reqwidth, "-y" => 2);
+	$radar_button->place("-x" => $button_x+2, "-y" => 2);
     }
 
     my @layer_errors;
@@ -15944,7 +15960,7 @@ sub show_overview_populate {
 		 NoOverlapLabel => 0,
 		);
 
-	if ($show_overview_mode eq 'b') {
+	if ($show_overview_mode eq 'city') {
 	    plotorte(Canvas        => $overview_canvas,
 		     PlaceCategory => 0,
 		     Shortname     => 1,
@@ -16113,7 +16129,7 @@ sub overview_update {
     my @a = $c->get_corners;
     my @c;
     my $i;
-    my $ts = ($show_overview_mode eq 'brb'
+    my $ts = ($show_overview_mode eq 'region'
 	      ? \&transpose_small
 	      : \&transpose_medium);
     for($i = 0; $i < $#a; $i+=2) {
