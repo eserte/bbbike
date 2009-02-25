@@ -1251,6 +1251,7 @@ sub output_meta {
 	@bbox[0,1] = split /,/, $conv->(@bbox_wgs84[0,1]);
 	@bbox[2,3] = split /,/, $conv->(@bbox_wgs84[2,3]);
 	$meta{bbox} = \@bbox;
+	$meta{bbox_wgs84} = \@bbox_wgs84;
     }
     $meta{center} = [split /,/, $center] if defined $center;
     #$meta{source} = \@osm_files; # XXX hmmm, too many?
