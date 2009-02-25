@@ -21,8 +21,6 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 use base qw(Tk::Frame);
 Construct Tk::Widget 'GpsmanData';
 
-use JSON::XS;
-
 use Tk::Balloon;
 use Tk::BrowseEntry;
 use Tk::HList;
@@ -220,6 +218,17 @@ sub _fill_data_view {
 
     my $velocity_per_vehicle = $w->cget('-velocity') eq 'per_vehicle';
 
+    my $dump_attrs = (eval { require JSON::XS; 1 }
+		      ? sub {
+			  encode_json(shift);
+		      }
+		      : do {
+			  require Data::Dumper;
+			  sub {
+			      Data::Dumper->new([shift],[])->Indent(0)->Dump;
+			  }
+		      }
+		     );
     my $i = -1;
     my $chunk_i = -1;
     my %bln_info;
@@ -233,7 +242,7 @@ sub _fill_data_view {
 	my $max_v_vehicle = $velocity_per_vehicle ? ($vehicle||'unknown') : 'total';
 	my $label = $vehicle ? $vehicle : "-----";
 	$dv->add(++$i, -text => $label, -data => {Chunk => $chunk_i});
-	$bln_info{$i} = "Type " . $chunk->Type . (!$supported ? " (unsupported, skipping)" : "") . ", Attrs: " . encode_json($chunk->TrackAttrs);
+	$bln_info{$i} = "Type " . $chunk->Type . (!$supported ? " (unsupported, skipping)" : "") . ", Attrs: " . $dump_attrs->($chunk->TrackAttrs);
 	push @chunk_to_i, [$chunk, $i] if $vehicle;
 	if (!$supported) {
 	    warn "Only type TRACK supported";
