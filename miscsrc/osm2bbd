@@ -1499,7 +1499,13 @@ replaced by F<radwege_exact>.
 everything.
 
 =item * Tunnel mound optimization needed! Problem visible in
-Nord-Süd-Tunnel.
+Nord-Süd-Tunnel. Possible implementation: remember the end points with
+the neighbor point (that is, for A B C D E remember A B and E D). This
+structure points to the data record and is indexed by the end points.
+Before doing the bbd output do another processing step: for every
+remembered item check whether there is another item with the same end
+point but another neighbor point. If such an item exists, then add the
+"_" (no mound) attribute to the Tu category on the right side.
 
 =item * It seems that "holes" in buildings are specified by just a
 closed <way> without any name and other tag. Implementation
