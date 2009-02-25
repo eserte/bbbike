@@ -122,7 +122,7 @@ sub convert {
 		$richtung =
 		    ($winkel <= 45 ? 'halb' : '') .
 			($richtung eq 'l' ? M('links') : M('rechts')) . ' ' .
-			    "($winkel°) " . ($lang eq 'en' ? "->" : Strasse::de_artikel($strname));
+			    "($winkel°) " . (($lang||'') eq 'en' ? "->" : Strasse::de_artikel($strname));
 	    }
 	    $ges_entf += $entf;
 	    $ges_entf_s = sprintf "%.1f km", $ges_entf/1000;
