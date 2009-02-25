@@ -17,6 +17,7 @@ use strict;
 use FindBin;
 use lib "$FindBin::RealBin/..";
 
+use Cwd qw(cwd);
 use Data::Dumper;
 use File::Basename qw(basename);
 use File::Spec qw();
@@ -73,6 +74,7 @@ EOF
 }
 
 my @commandline = ($^X, $0, @ARGV);
+my $cwd = cwd;
 
 GetOptions("o=s" => \$o,
 	   "f" => \$f,
@@ -1239,6 +1241,7 @@ sub output_meta {
     $meta{created} = epoch2isodate;
     $meta{created_by} = $ENV{EMAIL} || $ENV{REPLYTO} || $ENV{REPLY_TO} || (getpwuid($<))[0];
     $meta{commandline} = \@commandline;
+    $meta{creation_cwd} = $cwd;
     if (@bbox_wgs84) {
 	my @bbox;
 	@bbox[0,1] = split /,/, $conv->(@bbox_wgs84[0,1]);
