@@ -26,7 +26,7 @@ if ($city eq 'm') { # München
     $datadir = "$FindBin::RealBin/../projects/radlstadtplan_muenchen/data_Muenchen_DE";
     $streetlist = "$datadir/strassenliste";
     if (!defined $cgi) {
-	$cgi = 'http://www/%7Eeserte/radlstadtplan/cgi-bin/radlstadtplan.cgi';
+	$cgi = 'http://localhost/%7Eeserte/radlstadtplan/cgi-bin/radlstadtplan.cgi';
     }
     $imagetype = "ascii";
 } else { # $city eq 'b'
@@ -38,7 +38,7 @@ if ($city eq 'm') { # München
 	} elsif (defined $ENV{BBBIKE_TEST_CGIDIR}) {
 	    $cgi = $ENV{BBBIKE_TEST_CGIDIR} . "/bbbike.cgi";
 	} else {
-	    $cgi = 'http://www/bbbike/cgi/bbbike.cgi';
+	    $cgi = 'http://localhost/bbbike/cgi/bbbike.cgi';
 	}
     }
     require PLZ;

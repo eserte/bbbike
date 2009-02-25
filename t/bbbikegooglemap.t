@@ -22,7 +22,7 @@ BEGIN {
 }
 
 use Getopt::Long;
-my $cgi_dir = $ENV{BBBIKE_TEST_CGIDIR} || "http://localhost/~eserte/bbbike/cgi";
+my $cgi_dir = $ENV{BBBIKE_TEST_CGIDIR} || "http://localhost/bbbike/cgi";
 my $cgi_url = "http://www.bbbike.de/cgi-bin/bbbikegooglemap.cgi";
 
 if (!GetOptions("cgidir=s" => \$cgi_dir, # XXX not used

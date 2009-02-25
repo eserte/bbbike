@@ -34,7 +34,7 @@ plan tests => 30;
 
 my $htmldir = $ENV{BBBIKE_TEST_HTMLDIR};
 if (!$htmldir) {
-    $htmldir = "http://localhost/~eserte/bbbike";
+    $htmldir = "http://localhost/bbbike";
 }
 
 GetOptions("htmldir=s" => \$htmldir)

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.23 2008/02/20 23:06:36 eserte Exp $
+# $Id: wapcgi.t,v 1.24 2009/02/25 23:46:23 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -14,7 +14,7 @@ use File::Temp qw(tempfile);
 use URI;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!eval q{
@@ -56,7 +56,7 @@ if (!GetOptions(get_std_opts("display"),
 }
 
 if (!@wap_url) {
-    @wap_url = "http://www/bbbike/cgi/wapbbbike.cgi";
+    @wap_url = "http://localhost/bbbike/cgi/wapbbbike.cgi";
 }
 if (!@hdrs) {
     @hdrs = (["wbmp", Accept => "text/vnd.wap.wml"],

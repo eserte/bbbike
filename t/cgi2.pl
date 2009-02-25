@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi2.pl,v 1.9 2008/03/18 21:31:28 eserte Exp $
+# $Id: cgi2.pl,v 1.10 2009/02/25 23:46:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -31,8 +31,8 @@ my $sgml_catalog = "/usr/www/informatik/hypermedia/html/html4.0/sgml/CATALOG";
 my $sgml_check = is_in_path("nsgmls") && -r $sgml_catalog;
 $sgml_check = 0; # XXX don't turn on on default --- there are too many errors...
 my $errorfile = "/tmp/errors";
-#my $cgiurl = "http://www/~eserte/bbbike/cgi/bbbike.cgi";
-my $cgiurl = "http://www/bbbike/cgi/bbbike.cgi";
+#my $cgiurl = "http://localhost/~eserte/bbbike/cgi/bbbike.cgi";
+my $cgiurl = "http://localhost/bbbike/cgi/bbbike.cgi";
 #my $logfile = "$ENV{HOME}/www/AccessLog";
 my $logfile = "$ENV{HOME}/www/log/radzeit.combined_log";
 my $filter;
@@ -91,7 +91,7 @@ if      ($cgi_type eq 'slow') {
     $cgiurl =~ s/\.cgi$/-fast.cgi/;
 }
 
-my $cgiinfourl = "http://www/~eserte/bbbike/t/cgiinfo.cgi";
+my $cgiinfourl = "http://localhost/bbbike/t/cgiinfo.cgi";
 
 my $nextline;
 if ($backwards) {

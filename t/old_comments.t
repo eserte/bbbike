@@ -57,7 +57,7 @@ if (!GetOptions("cgiurl=s" => sub {
 }
 
 if (!@urls) {
-    @urls = "http://www/bbbike/cgi/bbbike.cgi";
+    @urls = "http://localhost/bbbike/cgi/bbbike.cgi";
 }
 
 my @tests = (

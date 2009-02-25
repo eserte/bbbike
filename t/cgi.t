@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.63 2009/02/25 23:41:32 eserte Exp $
+# $Id: cgi.t,v 1.64 2009/02/25 23:46:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -73,12 +73,14 @@ if (!GetOptions("cgiurl=s" => sub {
 }
 
 if (!@urls) {
-    unshift @urls, "http://www/bbbike/cgi/bbbike.cgi";
-    # XXX Do not test bbbike-fast anymore --- Apache::Registry is
-    # more supported and more stable.
-    #@urls = "http://www/~eserte/bbbike/cgi/bbbike-fast.cgi";
-    if (!$fast) {
-	unshift @urls, "http://www/~eserte/bbbike/cgi/bbbike.cgi";
+    unshift @urls, "http://localhost/bbbike/cgi/bbbike.cgi";
+    # If this URL exists, then it is using cgi-bin in contrast to mod-perl
+    my $url2 = "http://localhost/~eserte/bbbike/cgi/bbbike.cgi";
+    my $resp = $ua->head($url2);
+    if ($resp->is_success) {
+	push @urls, $url2;
+    } else {
+	diag "Skipping tests on $url2";
     }
 }
 

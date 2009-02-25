@@ -24,7 +24,7 @@ sgml:
 
 # l‰ﬂt nsgmls nur auf die Startseite laufen
 sgmlindex:
-	(echo '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">'; (lynx -source http://www/~eserte/bbbike/cgi/bbbike.cgi | tail +2)) > /tmp/bla.html
+	(echo '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">'; (lynx -source http://localhost/bbbike/cgi/bbbike.cgi | tail +2)) > /tmp/bla.html
 	nsgmls -m /usr/www/informatik/hypermedia/html/html4.0/sgml/CATALOG /tmp/bla.html 2>/tmp/errors >/dev/null
 
 ######################################################################

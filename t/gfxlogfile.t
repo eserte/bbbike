@@ -97,7 +97,7 @@ my $lastdate;
 	    next if (defined $only_type && $suffix ne $only_type);
 	    if (!defined $seek_i || $counter >= $seek_i) {
 		my $qs = $q->query_string;
-		my $url = "http://www/bbbike/cgi/bbbike.cgi?" . $qs;
+		my $url = "http://localhost/bbbike/cgi/bbbike.cgi?" . $qs;
 		#warn $url;
 		my $resp = $ua->get($url);
 		if (!$resp->is_success) {
