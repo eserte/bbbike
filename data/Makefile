@@ -106,6 +106,7 @@ GERMAN_LOCALE=de_DE.ISO8859-1
 GERMAN_LOCALE=de_DE.ISO-8859-1
 .endif
 SORT_GERMAN_LOCALE=	env LANG=${GERMAN_LOCALE} LC_CTYPE=${GERMAN_LOCALE} LC_ALL=${GERMAN_LOCALE} sort
+SORT_NO_LOCALE=		env LANG=C LC_CTYPE=C LC_ALL=C sort
 
 ## This seems to generate better results:
 COORDS_DATA_SORT_OPTS=	-f -t "|" -k 1,3
@@ -320,7 +321,7 @@ sbahn: sbahn-orig Makefile $(CONVERT_ORIG_FILE)
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) -strip-future-categories sbahn-orig > /tmp/sbahn
 .for cat in $(SBAHN_CATEGORIES)
-	$(GREPSTRASSEN) -catrx ^$(cat).* /tmp/sbahn | ${PERL} $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/sbahn-$(cat)
+	$(GREPSTRASSEN) -catrx ^$(cat).* /tmp/sbahn | ${PERL} $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | $(SORT_NO_LOCALE) > /tmp/sbahn-$(cat)
 .endfor
 	cat $(SBAHN_CATEGORIES:S/^/\/tmp\/sbahn-/) > sbahn~
 	mv sbahn~ sbahn
@@ -346,7 +347,7 @@ rbahn: rbahn-orig Makefile $(CONVERT_ORIG_FILE)
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) -strip-future-categories rbahn-orig > /tmp/rbahn
 .for cat in $(RBAHN_CATEGORIES)
-	$(GREPSTRASSEN) -catrx ^$(cat).* /tmp/rbahn | ${PERL} $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/rbahn-$(cat)
+	$(GREPSTRASSEN) -catrx ^$(cat).* /tmp/rbahn | ${PERL} $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | $(SORT_NO_LOCALE) > /tmp/rbahn-$(cat)
 .endfor
 	cat $(RBAHN_CATEGORIES:S/^/\/tmp\/rbahn-/) > rbahn~
 	mv rbahn~ rbahn
