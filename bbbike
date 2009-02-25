@@ -15686,7 +15686,7 @@ sub show_overview_populate {
 	 });
 
     my($overview_width, $overview_height);
-    if ($coord_system eq 'standard') {
+    if ($coord_system eq 'standard' && !($city_obj && $city_obj->bbox)) {
 	$overview_width = $normal_scrollregion/DEFAULT_SCALE*
 	    ($show_overview_mode eq 'region' ? $small_scale : $medium_scale);
 	$overview_height = $overview_width;
@@ -15695,10 +15695,17 @@ sub show_overview_populate {
 			       $overview_width,  $overview_width]
 	    );
     } else {
-	my @s = $coord_system_obj->scrollregion;
+	my @s;
+	if ($city_obj && $city_obj->bbox) {
+	    @s = @{ $city_obj->bbox };
+	} else {
+	    @s = $coord_system_obj->scrollregion;
+	}
 	# XXX show_overview_mode beachten
 	@s = (transpose_medium(@s[0, 1]),
 	      transpose_medium(@s[2, 3]));
+	@s[0,2] = @s[2,0] if $s[2] < $s[0];
+	@s[1,3] = @s[3,1] if $s[3] < $s[1];
 	$overview_width  = ($s[2]-$s[0])/2;
 	$overview_height = ($s[3]-$s[1])/2;
 	$overview_canvas->configure(-scrollregion => [@s]);
@@ -15772,24 +15779,24 @@ sub show_overview_populate {
 				},
     );
 
-    # Mode buttons
+    # Zoom buttons
     my $button_x = 2;
     {
-	my @mode_button;
+	my @zoom_button;
 	my $set_disabled_buttons = sub {
 	    if ($show_overview_mode eq 'city') {
-		$mode_button[0]->configure(-state => 'disabled');
-		$mode_button[1]->configure(-state => 'normal');
+		$zoom_button[0]->configure(-state => 'disabled');
+		$zoom_button[1]->configure(-state => 'normal');
 	    } else {
-		$mode_button[0]->configure(-state => 'normal');
-		$mode_button[1]->configure(-state => 'disabled');
+		$zoom_button[0]->configure(-state => 'normal');
+		$zoom_button[1]->configure(-state => 'disabled');
 	    }
 	};
 	for my $def (['+', 'city'],
 		     ['-', 'region'],
 		    ) {
 	    my($label, $overview_mode_value) = @$def;
-	    push @mode_button, $overview_top->Button
+	    push @zoom_button, $overview_top->Button
 		(-text => $label,
 		 -font => $font{'reduced'},
 		 -padx => 0, -pady => 0,
@@ -15802,8 +15809,8 @@ sub show_overview_populate {
 		     $set_disabled_buttons->();
 		 },
 		);
-	    $mode_button[-1]->place("-x" => $button_x, "-y" => 2);
-	    $button_x += $mode_button[-1]->reqwidth+2;
+	    $zoom_button[-1]->place("-x" => $button_x, "-y" => 2);
+	    $button_x += $zoom_button[-1]->reqwidth+2;
 	}
 	$set_disabled_buttons->();
     }
