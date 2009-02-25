@@ -689,7 +689,7 @@ make_misc:
 
 # create Storable versions of data files
 # handling of Storable files is slower, so it is not done by default
-storable:
+storable:	${TARGETS}
 	for i in $(TARGETS); do \
 	    $(PERL) -I.. -I../lib ../Strassen/Storable.pm -v -u -f $$i $$i.st; \
 	    $(READABLE) $$i.st; \
