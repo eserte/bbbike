@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd-postprocess,v 1.4 2009/02/27 22:45:14 eserte Exp $
+# $Id: osm2bbd-postprocess,v 1.5 2009/02/27 22:45:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -15,26 +15,46 @@
 
 use strict;
 use FindBin;
-use lib "$FindBin::RealBin/..";
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 
 use vars qw($VERSION);
 $VERSION = 0.10;
 
-use Cwd qw(realpath);
-use File::Temp qw(tempfile);
+use Cwd            qw(realpath);
+use File::Basename qw(dirname);
+use File::Temp     qw(tempfile);
 use Getopt::Long;
 
-my @targets = ('wasserstrassen_lowres');
+my @targets = ('wasserstrassen_lowres', 'largest_city_is_center');
 my %skip_target;
+my %only_target;
+
+sub usage (;$) {
+    my $msg = shift;
+    warn $msg, "\n" if $msg;
+    die "usage: $0 " . join(" ", map {
+	(my $optname = $_) =~ s{_}{-}g;
+	"[-skip-$_ | -only-$_]"
+    } @targets);
+}
 
 GetOptions((map {
     (my $optname = $_) =~ s{_}{-}g;
-    ("skip-$optname" => \$skip_target{$_});
+    ("skip-$optname" => \$skip_target{$_},
+     "only-$optname" => \$only_target{$_},
+    );
 } @targets))
-    or die "usage!";
+    or usage;
+
 my $miscsrcdir = realpath $FindBin::RealBin;
-my $datadir = shift or die "Please specify data directory";
+my $bbbikedir = dirname $miscsrcdir;
+my $datadir = shift or usage "Please specify data directory";
+$datadir = realpath $datadir;
 chdir $datadir or die "Can't chdir to $datadir: $!";
+
+if (%only_target) {
+    @targets = grep { $only_target{$_} } @targets;
+}
 
 for my $target (@targets) {
     if ($skip_target{$target}) {
@@ -68,4 +88,49 @@ chmod 644 wasserstrassen-lowres
 EOF
     system $cmd;
     die "The command $cmd failed: $?" if $? != 0;
+}
+
+sub target_largest_city_is_center {
+    if (!eval { require YAML::Syck; YAML::Syck->import(qw(LoadFile DumpFile)); 1 } &&
+	!eval { require YAML;       YAML      ->import(qw(LoadFile DumpFile)); 1 }
+       ) {
+	print STDERR "no YAML/YAML::Syck available, skipping";
+	return;
+    }
+    require Data::Dumper;
+    my $meta = eval { LoadFile("meta.yml") };
+    if (!$meta) {
+	print STDERR "cannot load meta.yml, skipping";
+	return;
+    }
+    if ($meta->{center}) {
+	print STDERR "center already set in meta.yml, do not overwrite, skipping";
+	return;
+    }
+    require Strassen::Core;
+    my $max = undef;
+    my $s = Strassen->new("$datadir/orte");
+    $s->init;
+    while() {
+	my $r = $s->next;
+	last if !@{ $r->[Strassen::COORDS()] };
+	if (!defined $max || $max->[Strassen::CAT()] < $r->[Strassen::CAT()]) {
+	    $max = $r;
+	}
+    }
+    if (defined $max) {
+	print STDERR "setting $max->[Strassen::NAME()] ($max->[Strassen::COORDS()][0]) as center ";
+	$meta->{center} = [ split /,/, $max->[Strassen::COORDS()][0] ];
+	DumpFile("meta.yml~", $meta);
+
+	open my $ofh, ">", "meta.dd~"
+	    or die "Cannot write to meta.dd~: $!";
+	print $ofh Data::Dumper->new([$meta],['meta'])->Sortkeys(1)->Useqq(1)->Dump;
+	close $ofh
+	    or die "While closing meta.dd~: $!";
+	rename "meta.dd~", "meta.dd"
+	    or die "While renaming meta.dd~ to meta.dd: $!";
+	rename "meta.yml~", "meta.yml"
+	    or die "While renaming meta.yml~ to meta.yml: $!";
+    }
 }
