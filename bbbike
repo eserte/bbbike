@@ -2152,14 +2152,16 @@ unless ($skip_features{"landstrassen"}) {
 			     pending(1, 'replot-str-l');
 			 },
 			);
-    $lstrcm->checkbutton(-label => M"Landstraßen jwd zeichnen",
-			 -variable => \$str_far_away{'l'},
-			 -command => sub {
-			     pending(1, 'replot-str-l');
-			 },
-			 -accelerator => 'Shift-L',
-			);
-    $land_jwd_check_index = $lstrcm->index('last');
+    unless ($skip_features{wideregion}) {
+	$lstrcm->checkbutton(-label => M"Landstraßen jwd zeichnen",
+			     -variable => \$str_far_away{'l'},
+			     -command => sub {
+				 pending(1, 'replot-str-l');
+			     },
+			     -accelerator => 'Shift-L',
+			    );
+	$land_jwd_check_index = $lstrcm->index('last');
+    }
     $lstrcm->checkbutton(-label => M"Straßennamen",
 			 -variable => \$str_name_draw{'l'},
 			 -command => sub {
@@ -2237,14 +2239,16 @@ unless ($skip_features{"orte"}) {
 			   );
 	}
     }
-    $ocm->checkbutton(-label => M"Orte jwd zeichnen",
-		      -variable => \$p_far_away{'o'},
-		      -command => sub {
-			  pending(1, 'replot-p-o');
-		      },
-		      -accelerator => 'Shift-O',
-		     );
-    $ort_jwd_check_index = $ocm->index('last');
+    unless ($skip_features{wideregion}) {
+	$ocm->checkbutton(-label => M"Orte jwd zeichnen",
+			  -variable => \$p_far_away{'o'},
+			  -command => sub {
+			      pending(1, 'replot-p-o');
+			  },
+			  -accelerator => 'Shift-O',
+			 );
+	$ort_jwd_check_index = $ocm->index('last');
+    }
     $ocm->separator;
     $ocm->cascade(-label => M"Schriftgröße");
     {
@@ -2509,12 +2513,14 @@ unless ($skip_features{"wasser"}) {
 			  -accelerator => 'Shift-W',
 			 );
 	$wasserumland_check_index = $wcm->index('last');
-	$wcm->checkbutton(-label => M"Gewässer jwd zeichnen",
-			  -variable => \$str_far_away{'w'},
-			  -command => sub {
-			      pending(1, 'replot-str-w');
-			  },
-			 );
+	unless ($skip_features{"wideregion"}) {
+	    $wcm->checkbutton(-label => M"Gewässer jwd zeichnen",
+			      -variable => \$str_far_away{'w'},
+			      -command => sub {
+				  pending(1, 'replot-str-w');
+			      },
+			     );
+	}
     }
     menu_entry_up_down($wcm, $tag_group{'str_w'});
     menuright($wasser_check, $wcm);
@@ -2618,16 +2624,20 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 		      BBBikePersonal::dialog();
 		  });
 
-    $knm->checkbutton(-label => M"Obst",
-		      -variable => \$p_draw{'obst'},
-		      -command => sub { plot('p','obst') });
+    unless ($skip_features{obst}) {
+	$knm->checkbutton(-label => M"Obst",
+			  -variable => \$p_draw{'obst'},
+			  -command => sub { plot('p','obst') });
+    }
 
     if ($advanced) {
 	$knm->separator;
-	$knm->command(-label => M("Nicht mehr gepflegt").":",
-		      -state => 'disabled',
-		      -font => $font{'bold'},
-		     );
+	if (($city_obj->{source}||'') ne 'osm') {
+	    $knm->command(-label => M("Nicht mehr gepflegt").":",
+			  -state => 'disabled',
+			  -font => $font{'bold'},
+			 );
+	}
 	my @kneipen_list = qw(kn rest ki);
 	foreach my $f (@kneipen_list) {
 	    if (-f "$FindBin::RealBin/data/$p_file{$f}") {
@@ -3743,8 +3753,10 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		      -command => \&city_settings);
 	$sbm->command(-label => M"näheres Umland",
 		      -command => \&region_settings);
-	$sbm->command(-label => M"jwd",
-		      -command => \&jwd_settings);
+	unless ($skip_features{wideregion}) {
+	    $sbm->command(-label => M"jwd",
+			  -command => \&jwd_settings);
+	}
     }
     $opbm->separator;
     if (defined $c_balloon) {
