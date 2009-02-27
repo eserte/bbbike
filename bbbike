@@ -669,9 +669,6 @@ if (defined $city) {
 	    $normal_scrollregion = $scrollregion[2]-$scrollregion[0];
 	    for (@scrollregion) { $_ *= $scale };
 	}
-	if ($city_obj->can("skip_features")) {
-	    %skip_features = map{($_,1)} $city_obj->skip_features;
-	}
     } else {
 	die Mfmt("Kann keine passende Datei für Stadt=%s und Land=%s finden",
 		 $city, (defined $country ? $country : M("(unbestimmt)")));
@@ -680,6 +677,16 @@ if (defined $city) {
     set_datadir($datadir, -clearold => 1);
     $no_original_datadir = 1;
     $dataset_title = basename($datadir);
+}
+
+if ($city_obj) {
+    if ($city_obj->can("skip_features")) {
+	%skip_features = map{($_,1)} $city_obj->skip_features;
+    }
+    # XXX nicer solution?
+    if (($city_obj->{source}||'') eq 'osm') {
+	$sBAB_two_track_width = 9999; # effectively turning off
+    }
 }
 
 # define_item_attribs should be called after determining the $city 
