@@ -3745,17 +3745,19 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 			       $replotsub->();
 			   });
     }
-    $opbm->cascade(-label => M('Scope').' ...');
-    {
-	my $sbm = $opbm->Menu(-title => M('Scope').' ...');
-	$opbm->entryconfigure('last', -menu => $sbm);
-	$sbm->command(-label => M"Stadt",
-		      -command => \&city_settings);
-	$sbm->command(-label => M"näheres Umland",
-		      -command => \&region_settings);
-	unless ($skip_features{wideregion}) {
-	    $sbm->command(-label => M"jwd",
-			  -command => \&jwd_settings);
+    if (($city_obj->{source}||'') ne 'osm') { # no scope with osm data
+	$opbm->cascade(-label => M('Scope').' ...');
+	{
+	    my $sbm = $opbm->Menu(-title => M('Scope').' ...');
+	    $opbm->entryconfigure('last', -menu => $sbm);
+	    $sbm->command(-label => M"Stadt",
+			  -command => \&city_settings);
+	    $sbm->command(-label => M"näheres Umland",
+			  -command => \&region_settings);
+	    unless ($skip_features{wideregion}) {
+		$sbm->command(-label => M"jwd",
+			      -command => \&jwd_settings);
+	    }
 	}
     }
     $opbm->separator;
