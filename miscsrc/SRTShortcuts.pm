@@ -244,8 +244,25 @@ sub add_button {
 		 -state => 'disabled',
 		 -font => $main::font{'bold'},
 		],
-		[Button => "building", -command => sub { add_new_data_layer("str", "_building") }],
-		[Button => "unhandled", -command => sub { add_new_data_layer("str", "_unhandled") }],
+		do {
+		    my @osm_layers = qw(building education motortraffic oepnv power unhandled);
+		    my @menu_items = map {
+			my $layer = $_;
+			[Button => $layer, -command => sub { add_new_data_layer("str", "_$layer") }];
+		    } @osm_layers;
+		    push @menu_items, [Button => 'all of above',
+				       -command => sub {
+					   my @errors;
+					   for my $layer (@osm_layers) {
+					       eval { add_new_data_layer("str", "_$layer") };
+					       push @errors, "$layer: $@" if $@;
+					   }
+					   if (@errors) {
+					       main::status_message(join("\n", @errors), "die");
+					   }
+				       }];
+		    @menu_items;
+		},
 	       ]
 	      ],
 	      [Cascade => 'Berlin/Potsdam coords', -menuitems =>
