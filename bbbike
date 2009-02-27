@@ -456,7 +456,7 @@ set_sans_serif_font_family();
 
 ### Images
 @image_type_order = ('png', # best quality
-		     'jpg', # 24bit, good quality
+		     'jpg', # 24bit, good quality XXX what about non-real world photo images?
 		     'xpm', # small memory size (8bit pixmaps)
 		     'gif',
 		    );
@@ -6156,7 +6156,13 @@ sub generate_plot_functions {
 		    if (defined $line_shorten_end_hin) { # XXX no $cat_rueck handling
 		        line_shorten_end(\@coordlist);
 		    }
-		} 
+		}
+
+	        if ($layer_category_image{$abk} && defined $layer_category_image{$abk}{$cat_hin}) {
+		    $cat_hin = "IMG:$layer_category_image{$abk}{$cat_hin}";
+	        } elsif (defined $category_image{$cat_hin}) {
+		    $cat_hin = "IMG:$category_image{$cat_hin}";
+	        }
 
 		my $sight_draw = sub {
 		    # speciality for sights: draw a star
@@ -6930,50 +6936,68 @@ sub maybe_expand_image_file {
     if (defined $abs_img && -r $abs_img) {
 	return $abs_img;
     }
-#XXX del:
-#     my $abs_img = Tk::findINC("$subdir/$imgfile");
-#     if ($abs_img) {
-# 	return $abs_img;
-#     }
     # relative to this file
     return try_image_suffix(dirname($datafile) . "/" . $imgfile);
 }
 
+# For an absolute image path without suffix try to find an existing
+# image which is supported by the current configuration. Returns undef
+# if nothing suitable could be found.
 sub try_image_suffix {
     my($imgfile_without_suffix) = @_;
-    return $imgfile_without_suffix if $imgfile_without_suffix =~ m{\.(png|jpg|xpm|gif)$};
+    return $imgfile_without_suffix if $imgfile_without_suffix =~ m{\.(png|jpg|xpm|gif|svg)$};
     for my $suffix (@image_type_order) {
-	if (!defined $can_handle_image{$suffix}) {
-	    if ($suffix eq 'png') {
-		if (eval {
-		    die "Probably corrupt in my SiePerl distribution" if $os eq 'win' && $Tk::VERSION < 804;
-		    require Tk::PNG;
-		    1;
-		}) {
-		    $can_handle_image{$suffix} = 1;
-		} else {
-		    $can_handle_image{$suffix} = 0;
-		}
-	    } elsif ($suffix eq 'jpg') {
-		if (eval {
-		    die "Probably corrupt in my SiePerl distribution" if $os eq 'win' && $Tk::VERSION < 804;
-		    require Tk::JPEG;
-		    1;
-		}) {
-		    $can_handle_image{$suffix} = 1;
-		} else {
-		    $can_handle_image{$suffix} = 0;
-		}
-	    } else {
-		$can_handle_image{$suffix} = 1;
-	    }
-	}
 	my $try_imgfile = $imgfile_without_suffix.".".$suffix;
-	if ($can_handle_image{$suffix} && -r $try_imgfile) {
+	if (can_handle_image_suffix($suffix) && -r $try_imgfile) {
 	    return $try_imgfile;
 	}
     }
     undef;
+}
+
+# Return true if the supplied image suffix ("jpg", "gif" etc.) can be
+# handled. The result is cached in the global %can_handle_image.
+sub can_handle_image_suffix {
+    my $suffix = shift;
+    if (!defined $can_handle_image{$suffix}) {
+	if ($suffix eq 'png') {
+	    if (eval {
+		die "Probably corrupt in my SiePerl distribution" if $os eq 'win' && $Tk::VERSION < 804;
+		require Tk::PNG;
+		1;
+	    }) {
+		$can_handle_image{$suffix} = 1;
+	    } else {
+		$can_handle_image{$suffix} = 0;
+	    }
+	} elsif ($suffix eq 'jpg') {
+	    if (eval {
+		die "Probably corrupt in my SiePerl distribution" if $os eq 'win' && $Tk::VERSION < 804;
+		require Tk::JPEG;
+		1;
+	    }) {
+		$can_handle_image{$suffix} = 1;
+	    } else {
+		$can_handle_image{$suffix} = 0;
+	    }
+	} elsif ($suffix eq 'svg') {
+	    # Assume that a postprocessor will be run to create the
+	    # real image
+	    if (can_handle_image_suffix('png') && eval {
+		require File::Temp;
+		is_in_path('convert');
+	    }) {
+		$can_handle_image{$suffix} = 1;
+	    } else {
+		$can_handle_image{$suffix} = 0;
+	    }
+	} elsif ($suffix =~ m{^(gif|xpm)$}) { # Tk builtins
+	    $can_handle_image{$suffix} = 1;
+	} else {
+	    die "Unhandled image suffix '$suffix'";
+	}
+    }
+    $can_handle_image{$suffix};
 }
 
 sub set_bindings {
@@ -20559,6 +20583,12 @@ sub get_image {
 
 sub get_image_for_p {
     my($base, $file, $abk) = @_;
+    get_image_for_any($base, $file, $abk, 'p');
+}
+
+sub get_image_for_any {
+    my($base, $file, $abk, $type) = @_;
+    
     my($realfile,$w,$h,$refscale,$doxxx);
     my $is_svg;
     if ($file =~ m{(.*\.svg)(?::(\d+)x(\d+)(?:=1:(\d+)(,xxx)?)?)?$}) {
@@ -20568,11 +20598,11 @@ sub get_image_for_p {
 	$realfile = $file;
     }
     my $images = ($top->{'MapImages'} ||= {});
-    my $key = $base." ".$realfile." ".(defined $w ? $w."x".$h." " : "").(defined $refscale ? "$mapscale " : "")."p ".$abk;
+    my $key = $base.' '.$realfile.' '.(defined $w ? $w.'x'.$h.' ' : '').(defined $refscale ? "$mapscale " : '').$type.' '.$abk;
     my $p = $images->{$key};
     if (!$p) {
 	eval {
-	    my $dir = dirname($p_file{$abk});
+	    my $dir = dirname($type eq 'p' ? $p_file{$abk} : $str_file{$abk});
 	    if ($is_svg) {
 		# XXX move svg stuff to some general-purpose function or module
 		if (!defined $w) {
