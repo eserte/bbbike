@@ -702,21 +702,25 @@ for my $osm_file (@osm_files) {
 	    my $quality_cat;
 	    my $quality_name;
 	    if (exists $tag{'surface'}) {
-		if ($tag{'surface'} eq 'paved') {
-		    $quality_cat = "Q0";
-		    $quality_name = "befestigt (betoniert, asphaltiert oder wassergebunden)";
-		} elsif ($tag{'surface'} eq 'cobblestone') {
-		    $quality_cat = "Q2";
-		    $quality_name = "Kopfsteinpflaster";
-		} elsif ($tag{'surface'} eq 'unpaved') {
-		    $quality_cat = "Q2";
-		    $quality_name = "unbefestigt";
-		} elsif ($tag{'surface'} eq 'sand') {
-		    $quality_cat = "Q3";
-		    $quality_name = "sandig";
-		} elsif ($tag{'surface'} eq 'wood') {
-		    $quality_cat = "Q1";
-		    $quality_name = "Holz";
+		my $surface = $tag{'surface'};
+		if      ($surface eq 'paved') {
+		    $quality_cat = 'Q0';
+		    $quality_name = 'befestigt (betoniert, asphaltiert oder wassergebunden)';
+		} elsif ($surface eq 'cobblestone') {
+		    $quality_cat = 'Q2';
+		    $quality_name = 'Kopfsteinpflaster';
+		} elsif ($surface eq 'unpaved') {
+		    $quality_cat = 'Q2';
+		    $quality_name = 'unbefestigt';
+		} elsif ($surface eq 'sand') {
+		    $quality_cat = 'Q3';
+		    $quality_name = 'sandig';
+		} elsif ($surface eq 'grass') {
+		    $quality_cat = 'Q3';
+		    $quality_name = 'Gras';
+		} elsif ($surface eq 'wood') {
+		    $quality_cat = 'Q1';
+		    $quality_name = 'Holz';
 		}
 	    }
 
@@ -919,7 +923,7 @@ for my $osm_file (@osm_files) {
 		}
 	    } elsif (exists $tag{'leisure'}) {
 		my $leisure = $tag{'leisure'};
-		if      ($leisure eq 'park') {
+		if      ($leisure =~ m{^(?:park|garden|recreation_ground)$}) {
 		    push @or, ["flaechen", "F:P"];
 		} elsif ($leisure eq 'stadium') {
 		    push @or, ["flaechen", "F:Sport"];
@@ -936,6 +940,10 @@ for my $osm_file (@osm_files) {
 		    push @or, ["flaechen", "F:Cemetery"];
 		} elsif ($landuse eq 'industrial') {
 		    push @or, ["flaechen", "F:Industrial"];
+		} elsif ($landuse eq 'railway') {
+		    push @or, ["flaechen", "F:Industrial"]; # XXX but maybe use Railway some day?
+		} elsif ($landuse eq 'commercial') {
+		    push @or, ["flaechen", "F:Industrial"]; # XXX but maybe use Commercial some day?
 		} elsif ($landuse eq 'allotments') {
 		    push @or, ["flaechen", "F:Orchard"];
 		} elsif ($landuse eq 'forest') { # see above: natural=wood
