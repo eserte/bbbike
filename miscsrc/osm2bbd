@@ -809,7 +809,7 @@ for my $osm_file (@osm_files) {
 		    }
 		    if ($oneway =~ m{^(?:yes|true)$}) {
 			if (exists $tag{'bicycle'} && $tag{'bicycle'} eq 'opposite') { # seen in Würzburg, Äußere Pleich, but no documentation/discussion for it
-			    push @or, ['gesperrt_cat', '1', reversed => $reversed];
+			    push @or, ['gesperrt_car', '1', reversed => $reversed];
 			} else {
 			    if ($highway_cat eq 'cycleway') {
 				# usually this generates to much clutter in
