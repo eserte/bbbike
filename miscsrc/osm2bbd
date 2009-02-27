@@ -1470,7 +1470,11 @@ To convert data for the San Francisco area:
 
     ./miscsrc/osm2bbd -f -map bbbike -center -122.598,37.6829 -country us -o data-sfo -d ../sfbike/sfo
 
-=item 3. start sfbike, english version
+=item 3. (optional) do some additional postprocessing
+
+    ./miscsrc/osm2bbd-postprocess -o data-sfo
+
+=item 4. start sfbike, english version
 
     env LANG=en_US.UTF-8 perl ./bbbike -datadir data-sfo
 
