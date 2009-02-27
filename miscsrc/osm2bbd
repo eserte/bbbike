@@ -140,6 +140,12 @@ my %global_directives;
     (
      "_building"     => ["layer_stack: above:i"],
      "_motortraffic" => ["category_image.Parking: ../misc/verkehrszeichen/Zeichen_314.svg:24x24=1:3000,xxx"],
+     "borders" => ["line_color: #000000", # per bbd.pod
+		   "str_color: #000000", # in reality
+		   # Z4: Landesgrenzen
+		   # Z5: gibt's in NRW
+		   (map { "line_dash.Z$_: 8,5,2,5" } (1 .. 10)),
+		  ],
     );
 
 my $do_amenity = sub {
@@ -1070,7 +1076,7 @@ if ($parsefor) {
 		     landstrassen landstrassen2
 		     ubahn ubahnhof sbahn sbahnhof rbahn rbahnhof
 		     gesperrt_u gesperrt_s gesperrt_r
-		     radwege radwege_exact fragezeichen
+		     radwege_exact fragezeichen
 		     Berlin.coords.data Potsdam.coords.data
 		     plaetze ampeln
 		    )) {
@@ -1078,6 +1084,13 @@ if ($parsefor) {
     }
     for (qw(cyclepath misc path route tram kfzverkehr scenic ferry)) {
 	touch "comments_$_";
+    }
+    # radwege will be used for plotting, radwege_exact for routing.
+    # New bbbike can use the same file for both, but for hysterical
+    # reasons still uses different files.
+    if (!-e "radwege" && -e "radwege_exact") {
+	symlink "radwege_exact", "radwege"
+	    or warn "Cannot create symlink radwege -> radwege_exact: $!";
     }
     if (!-d "temp_blockings") {
 	mkdir "temp_blockings";
@@ -1254,7 +1267,8 @@ sub output_meta {
 	$meta{bbox_wgs84} = \@bbox_wgs84;
     }
     $meta{center} = [split /,/, $center] if defined $center;
-    #$meta{source} = \@osm_files; # XXX hmmm, too many?
+    $meta{source} = 'osm';
+    #$meta{source_files} = \@osm_files; # XXX hmmm, too many?
 
     open my $ofh, ">", $meta_file_dd."~"
 	or die "Cannot write to $meta_file_dd~: $!";
