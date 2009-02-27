@@ -1269,6 +1269,14 @@ sub output_meta {
     $meta{center} = [split /,/, $center] if defined $center;
     $meta{source} = 'osm';
     #$meta{source_files} = \@osm_files; # XXX hmmm, too many?
+    $meta{skip_features} = {green        => 1,
+			    landstrassen => 1,
+			    nolighting   => 1,
+			    obst         => 1,
+			    vbb          => 1,
+			    wasserumland => 1,
+			    wideregion   => 1,
+			   };
 
     open my $ofh, ">", $meta_file_dd."~"
 	or die "Cannot write to $meta_file_dd~: $!";
