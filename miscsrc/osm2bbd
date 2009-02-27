@@ -181,8 +181,8 @@ my $do_amenity = sub {
 	push @or, ["kinos", $F."X"];
     } elsif ($amenity =~ m{^(?:kindergarten|school)$}) {
 	push @or, ["_education", $F."X"];
-    } elsif ($amenity =~ m{^(?:parking)$}) {
-	push @or, ["_motortraffic", $F."Parking"];
+    } elsif ($amenity =~ m{^(?:parking|car_rental)$}) {
+	push @or, ["_motortraffic", $F."#f0f0f0|IMG:Parking"];
     } else {
 	$unhandled{"amenity-$amenity"}++;
     }
@@ -944,6 +944,8 @@ for my $osm_file (@osm_files) {
 		    push @or, ["flaechen", "F:Industrial"]; # XXX but maybe use Railway some day?
 		} elsif ($landuse eq 'commercial') {
 		    push @or, ["flaechen", "F:Industrial"]; # XXX but maybe use Commercial some day?
+		} elsif ($landuse eq 'retail') {
+		    push @or, ["flaechen", "F:Industrial"]; # XXX but maybe use Retail some day?
 		} elsif ($landuse eq 'allotments') {
 		    push @or, ["flaechen", "F:Orchard"];
 		} elsif ($landuse eq 'forest') { # see above: natural=wood
@@ -1373,6 +1375,7 @@ sub open_osm {
 
 sub set_info_handler {
     my($osm_file, $dom, $reader) = @_;
+    no warnings 'signal'; # INFO is usually only available on BSD systems
     $SIG{INFO} = sub {
 	my $msg = "File $osm_file";
 	if ($reader) {
@@ -1498,11 +1501,11 @@ To convert data for the San Francisco area:
 
 =item 2. convert *.osm files to bbbike data
 
-    ./miscsrc/osm2bbd -f -map bbbike -center -122.598,37.6829 -country us -o data-sfo -d ../sfbike/sfo
+    ./miscsrc/osm2bbd -f -map bbbike -center -122.598,37.6829 -country us -o data-sfo ../sfbike/sfo
 
 =item 3. (optional) do some additional postprocessing
 
-    ./miscsrc/osm2bbd-postprocess -o data-sfo
+    ./miscsrc/osm2bbd-postprocess data-sfo
 
 =item 4. start sfbike, english version
 
