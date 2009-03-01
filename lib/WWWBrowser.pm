@@ -155,6 +155,7 @@ sub start_browser {
 	} elsif ($browser eq '_debian_browser') {
 	    if (-x "/usr/bin/sensible-browser") {
 		exec_bg("/usr/bin/sensible-browser", $url);
+		return 1;
 	    } else {
 		if ($ENV{DISPLAY}) {
 		    if (-x "/etc/alternatives/gnome-www-browser") { # usually firefox or mozilla
