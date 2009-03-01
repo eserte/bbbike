@@ -66,7 +66,7 @@ citibank_osm.bbd:	../data_berlin_osm_bbbike/_unhandled
 # OSM downloads
 
 OSM_DOWNLOAD_DIR=	download/osm
-GERMANY_STATES=		berlin brandenburg hessen
+GERMANY_STATES=		berlin brandenburg hessen sachsen sachsen-anhalt
 GERMANY_STATES_RULES=	${GERMANY_STATES:S/^/download-/:S/$/.osm.bz2/}
 
 osm-download-all:	${GERMANY_STATES_RULES}
