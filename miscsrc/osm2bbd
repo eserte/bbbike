@@ -67,7 +67,7 @@ usage: $0 [-v] [-f] [-encoding enc] [-center lon,lat] [-map bbbike [-centerdelta
 		 of the bounding box.
 -centerdelta lon,lat: If -map bbbike is used, then specify the 0,0 point.
 		 Defaults to standard Berlin setting.
--o directory:    A not-existing directory to output the bbd files.
+-o directory:    A non-existing directory to output the bbd files.
 -parsefor ...:   Parse only for the given key=value pair,
                  key as string and val as regexp
 -country ...:    Optimize output for given country
