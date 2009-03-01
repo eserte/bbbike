@@ -22,7 +22,6 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../data",
 	);
 use Strassen;
-use Object::Iterate qw(iterate);
 use Getopt::Long;
 use strict;
 
@@ -32,6 +31,7 @@ my $refpoint;
 my $quiet;
 my $usecache;
 my $v;
+my $shorter;
 
 my @s_files;
 my @blocked_files;
@@ -46,13 +46,15 @@ if (!GetOptions("street=s@"  => sub { push @s_files, split /,/, $_[1] },
 		"q" => \$quiet,
 		"cache" => \$usecache,
 		"v" => \$v,
+		"shorter" => \$shorter,
 	       )) {
     die <<EOF;
 usage: $0 [-street file] [-blocked file]
-       [-blockedtype type] [-refpoint x,y] [-q] [-v] [-cache]
+       [-blockedtype type] [-refpoint x,y] [-q] [-v] [-cache] [-shorter]
 -street and -blocked may be given multiple times or separated with commas
 -blockedtype may be given multiple times and should be one of
              @allowed_blocked_type
+-shorter: just ouput the first street name for a blocking series
 EOF
 }
 
@@ -189,14 +191,25 @@ sub flood_search {
     # Check against streets:
     my $s = $net->{Strassen};
     my %inaccessible;
-    iterate {
-	for my $c (@{ $_->[Strassen::COORDS] }) {
+    $s->init;
+    while() {
+	my $r = $s->next;
+	my @c = @{ $r->[Strassen::COORDS] };
+	last if !@c;
+	my $name_output = 0;
+	for my $c (@c) {
 	    if (!exists $CLOSED{$c}) {
-		push @{ $inaccessible{$_->[Strassen::NAME]} }, $c;
-		print "$_->[Strassen::NAME]\tX $c\n";
+		push @{ $inaccessible{$r->[Strassen::NAME]} }, $c;
+		if (!$shorter || !$name_output || length $r->[Strassen::NAME] <= 3) {
+		    print $r->[Strassen::NAME];
+		    $name_output = 1;
+		} else {
+		    print q{-"-};
+		}
+		print "\tX $c\n";
 	    }
 	}
-    } $s;
+    }
 
     if (!$quiet) {
 	require Text::Wrap;
