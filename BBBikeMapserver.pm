@@ -406,7 +406,8 @@ sub create_mapfile {
 	    my $tmpfile2;
 	    if ($externshape && -s $tmpfile1) {
 		# convert bbd file to esri file
-		$tmpfile2 = $self->{TmpDir} . "/bbbikems-${prefix}";
+		require File::Temp;
+		(undef, $tmpfile2) = File::Temp::tempfile(UNLINK => 1);
 		my @cmd = ($self->{BBD2ESRI_PROG},
 			   $tmpfile1, "-o", $tmpfile2);
 		warn "Cmd: @cmd" if $self->{DEBUG};
