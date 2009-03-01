@@ -220,7 +220,7 @@ sub _fill_data_view {
 
     my $dump_attrs = (eval { require JSON::XS; 1 }
 		      ? sub {
-			  encode_json(shift);
+			  JSON::XS::encode_json(shift);
 		      }
 		      : do {
 			  require Data::Dumper;
