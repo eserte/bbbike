@@ -89,8 +89,10 @@ GPS/Util.pm
 GPS/WaypointPlus.pm
 GPS/t/gpsmandata.t
 Geography.pm
+Geography/Base.pm
 Geography/Berlin_DE.pm
 Geography/Brandenburg_DE.pm
+Geography/FromMeta.pm
 Geography/Muenchen_DE.pm
 Geography/Oranienburg_DE.pm
 Geography/Zuerich_CH.pm
@@ -1490,6 +1492,7 @@ miscsrc/opengeodbgeocode
 miscsrc/opengeodbmysql2bbd
 miscsrc/opengeodborte2bbd
 miscsrc/osm2bbd
+miscsrc/osm2bbd-postprocess
 miscsrc/parse_mapbender_plz.pl
 miscsrc/polizei-faxabruf-diff.pl
 miscsrc/reduce_streets

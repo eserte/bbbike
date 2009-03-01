@@ -602,16 +602,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_010255',
-         'until' => 1235861999,
-         'text' => 'Nöldnerstr. (Lichtenberg) Richtung Karlshorster Str. zwischen Lückstr. und Karlshorster Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 02.2009)',
-         'from' => 1233866284,
-         'id' => 1547,
-         'data' => 'userdel	1::inwork 16032,10842 15681,10801 15388,10758 15272,10790
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -643,16 +634,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_008991',
-         'until' => 1235861999,
-         'text' => 'Ruhlsdorfer Str. (Ruhlsdorf/Teltow) Zwischen Ruhlsdorfer Platz und Schenkendorfer Weg Fahrtrichtung gesperrt, Richtung: Süden (bis Ende 02.2009)',
-         'from' => 1233088186,
-         'id' => 1561,
-         'data' => 'userdel	1::inwork 1137,-1989 956,-2890
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1257030000,
          'text' => 'B 273 Oranienb.-, Gartenstr., Lindenpl., Berl.Str. OD Nauen Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 05.01.2009-31.10.2009 ',
@@ -687,17 +669,6 @@ push @temp_blocking,
          'from' => 1235862000,
          'id' => 1565,
          'data' => 'userdel	2::inwork 25185,-3955 25212,-4025 25269,-4041 25320,-4049
-',
-         'type' => 'gesperrt'
-       },
-       undef,
-       {
-         'source_id' => 'IM_011184',
-         'until' => 1235861999,
-         'text' => 'Weinmeisterstr. (Mitte) in Richtung Alexanderplatz gesperrt (bis Ende 02.2009)',
-         'from' => 1234122499,
-         'id' => 1567,
-         'data' => 'userdel	1::inwork 10350,13376 10527,13257
 ',
          'type' => 'gesperrt'
        }
