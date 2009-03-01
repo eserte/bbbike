@@ -247,19 +247,24 @@ sub create_shape_file {
 				       $glob_max_x, $glob_max_y,
 				       0, 0, 0, 0],
 			    );
-    open(SHP, ">$outprefix.shp") or die $!;
+    open(SHP, "> $outprefix.shp")
+	or die "Cannot write to $outprefix.shp: $!";
     print SHP $header;
     print SHP $_ for @rec;
-    close SHP;
+    close SHP
+	or die "While writing to $outprefix.shp: $!";
 
     $shx_header = set_shp_header($header,
 				 -length => length($shx_header) + (scalar(@rec_offset)+scalar(@rec_length))*4,
 				);
-    open(SHX, ">$outprefix.shx") or die $!;
+    open(SHX, "> $outprefix.shx")
+	or die "Cannot write to $outprefix.shx: $!";
     print SHX $shx_header;
     for my $i (0 .. $#rec_offset) {
 	print SHX pack("N2", $rec_offset[$i]/2, $rec_length[$i]/2);
     }
+    close SHX
+	or die "While writing to $outprefix.shx: $!";
 
     my @max_length;
     my $fields = 6;
