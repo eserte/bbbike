@@ -341,8 +341,9 @@ sub custom_draw {
     }
     plot($linetype, $abk, %args);
 
+    # XXX The bindings should also be recycled if the layer is deleted!
     for (($linetype eq 'p' ? ("$abk-img", "$abk-fg") : ($abk))) {
-	$c->bind($_, "<ButtonPress-1>" => \&set_route_point);
+	$c->bind($_, "<ButtonRelease-1>" => \&set_route_point);
     }
 
     if (@BBBike::ExtFile::scrollregion) {

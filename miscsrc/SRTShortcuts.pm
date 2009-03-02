@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.82 2009/02/15 12:18:14 eserte Exp eserte $
+# $Id: SRTShortcuts.pm,v 1.83 2009/03/02 21:25:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2008 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.82 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.83 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -208,6 +208,14 @@ sub add_button {
 		[Button => "fragezeichen-nextcheck",
 		 -command => sub {
 		     add_new_layer("str", "$bbbike_rootdir/tmp/fragezeichen-nextcheck.bbd");
+		 }],
+		[Button => "Unique matches",
+		 -command => sub {
+		     add_new_layer("str", "$bbbike_rootdir/tmp/unique-matches.bbd");
+		 }],
+		[Button => "Unique matches since 2008",
+		 -command => sub {
+		     add_new_layer("str", "$bbbike_rootdir/tmp/unique-matches-since2008.bbd");
 		 }],
 		[Button => "Abdeckung",
 		 -command => sub {
