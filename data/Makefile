@@ -859,6 +859,10 @@ OPENGEODB_DIR=		${PERSISTENTTMPDIR}
 .endif
 OPENGEODB_D_ORTE_PATH=		${OPENGEODB_DIR}/${OPENGEODB_D_ORTE_FILE}
 
+OPENGEODB_D_PLZ_FILE=		PLZ.tab
+OPENGEODB_D_PLZ_DISTURL=	http://fa-technik.adfc.de/Codierung/opengeodb/PLZ.tab
+OPENGEODB_D_PLZ_PATH=		${OPENGEODB_DIR}/${OPENGEODB_D_PLZ_FILE}
+
 fetch-opengeodb:	${OPENGEODB_D_ORTE_PATH}
 
 # NOTE: This will only fetch one version. To fetch a newer one, remove
@@ -869,6 +873,13 @@ ${OPENGEODB_D_ORTE_PATH}:
 	@read yn && true
 	wget -O ${OPENGEODB_D_ORTE_PATH}~ ${OPENGEODB_D_ORTE_DISTURL}
 	mv ${OPENGEODB_D_ORTE_PATH}~ ${OPENGEODB_D_ORTE_PATH}
+
+${OPENGEODB_D_PLZ_PATH}:
+	@echo -n "Should I fetch ${OPENGEODB_D_PLZ_DISTURL} to ${OPENGEODB_D_PLZ_PATH}? (CTRL-C to abort) "
+# && true only for bugs in old pmake
+	@read yn && true
+	wget -O ${OPENGEODB_D_PLZ_PATH}~ ${OPENGEODB_D_PLZ_DISTURL}
+	mv ${OPENGEODB_D_PLZ_PATH}~ ${OPENGEODB_D_PLZ_PATH}
 
 persistent-tmp-from-opengeodb:	${PERSISTENTTMPDIR}/opengeodb-orte-DE.bbd
 
