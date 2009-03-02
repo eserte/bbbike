@@ -13608,6 +13608,7 @@ sub show_info {
 	    }
 	    if (defined $px && defined $py) {
 		$info_text->insert("end", M("Polar (DDD)") . ":\t$py\n\t$px\n");
+		$info_text->insert("end", M("Polar (DDD,DDD)") . "\t$px,$py\n"); # alternative
 	    }
 	    if (defined $gkk_zone_potsdam) {
 		$info_text->insert("end", "GKK (Potsdam):\t[$gkk_zone_potsdam] $gkk_easting_potsdam/$gkk_northing_potsdam\n");
