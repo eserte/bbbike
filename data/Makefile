@@ -859,7 +859,7 @@ OPENGEODB_DIR=		${PERSISTENTTMPDIR}
 .endif
 OPENGEODB_D_ORTE_PATH=		${OPENGEODB_DIR}/${OPENGEODB_D_ORTE_FILE}
 
-fetch-opengeodb:	${OPENGEODB_D_ORTE_FILE}
+fetch-opengeodb:	${OPENGEODB_D_ORTE_PATH}
 
 # NOTE: This will only fetch one version. To fetch a newer one, remove
 # the old first.
