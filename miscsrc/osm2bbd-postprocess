@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd-postprocess,v 1.11 2009/03/01 23:38:18 eserte Exp $
+# $Id: osm2bbd-postprocess,v 1.13 2009/03/03 22:17:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -87,8 +87,8 @@ set -e
 cat wasserstrassen | $miscsrcdir/grepstrassen --catrx '^(F:W1)\$' > $tmp1
 cat wasserstrassen | $miscsrcdir/grepstrassen --catrx '^(W1|W2|F:W)\$' --minarea 3 >> $tmp1
 $^X $miscsrcdir/simplify_streets -tolerance 300 -algorithm 'douglas-peucker' $tmp1 > $tmp2
-mv $tmp2 wasserstrassen-lowres
-chmod 644 wasserstrassen-lowres
+mv -f $tmp2 wasserstrassen-lowres
+chmod ugo-wx,ugo+r wasserstrassen-lowres
 EOF
     system $cmd;
     die "The command $cmd failed: $?" if $? != 0;
@@ -143,12 +143,22 @@ sub target_inaccessible_streets {
 	print STDERR "up-to-date";
 	return;
     }
+
+    # XXX This is a bug somewhere, maybe integer operation is used
+    # somewhere?
+    require Strassen::Core;
+    my $glob_dir = Strassen->get_global_directives("$datadir/strassen");
+    if ($glob_dir->{map} && $glob_dir->{map}[0] !~ m{^(bbbike|standard)$}) {
+	print STDERR "only map=bbbike currently supported, skipping";
+	return;
+    }
+
     my(undef, $tmp) = tempfile(UNLINK => 1, SUFFIX => "-inaccessible.bbd") or die $!;
     my $cmd = <<EOF;
 set -e
 $miscsrcdir/search_inaccessible_points -q -cache -shorter -street $datadir/strassen -blocked $datadir/gesperrt -blockedtype einbahn -blockedtype sperre > $tmp
-mv $tmp inaccessible_strassen
-chmod ugo-wx inaccessible_strassen
+mv -f $tmp inaccessible_strassen
+chmod ugo-wx,ugo+r inaccessible_strassen
 EOF
     system $cmd;
     die "The command $cmd failed: $?" if $? != 0;
@@ -170,7 +180,7 @@ sub _load_meta {
 	       code => 'NO_YAML',
 	     };
     }
-    my $meta = eval { LoadFile("XXXmeta.yml") };
+    my $meta = eval { LoadFile("meta.yml") };
     if (!$meta) {
 	die +{ msg => "cannot load meta.yml, skipping",
 	       code => 'INVALID_META',

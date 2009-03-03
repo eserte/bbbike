@@ -82,7 +82,7 @@ download-${land}.osm.bz2:
 
 # Use the already downloaded tiles
 data_berlin_osm_bbbike:
-	${MISCSRCDIR}/osm2bbd -v -f -o ../data_berlin_osm_bbbike download/osm/berlin/*.osm
+	${MISCSRCDIR}/osm2bbd -map bbbike -v -f -o ../data_berlin_osm_bbbike download/osm/berlin
 	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_osm_bbbike
 
 # Download the prepared osm from geofabrik
@@ -90,5 +90,5 @@ data_berlin_brandenburg_osm_bbbike:	download-berlin.osm.bz2 download-brandenburg
 					convert-data_berlin_brandenburg_osm_bbbike
 
 convert-data_berlin_brandenburg_osm_bbbike:
-	${MISCSRCDIR}/osm2bbd -v -f -o ../data_berlin_brandenburg_osm_bbbike download/osm/berlin.osm.bz2 download/osm/brandenburg.osm.bz2
+	${MISCSRCDIR}/osm2bbd -map bbbike -v -f -o ../data_berlin_brandenburg_osm_bbbike download/osm/berlin.osm.bz2 download/osm/brandenburg.osm.bz2
 	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_brandenburg_osm_bbbike

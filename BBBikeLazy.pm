@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.34 2009/02/25 23:45:13 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.35 2009/03/03 22:12:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -457,17 +457,8 @@ sub BBBikeLazy::plotstr_on_demand {
 	    }) {
 		$do_street_name_experiment = 1;
 	    }
-	    my %category_width;
 	    my $default_width = $lazy_str_args{$abk}->{Width} || get_line_width($abk) || 4;
-	    #XXX skalieren...
-	    {
-		foreach (keys %line_width) {
-		    if (/^$abk-(.*)/) {
-			my $cat = $1;
-			$category_width{$cat} = get_line_width($_, $scale);
-		    }
-		}
-	    }
+	    my %category_width = main::_set_category_width($abk);
 
 	    my $i;
 	    my $restrict = undef; #XXX
