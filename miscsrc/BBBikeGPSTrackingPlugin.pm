@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.2 2009/03/06 20:53:25 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.3 2009/03/06 20:53:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -242,9 +242,24 @@ sub set_position {
     my($sx,$sy) = $Karte::Polar::obj->map2standard($lon,$lat);
     my($x,$y) = main::transpose($sx,$sy);
     warn "Set position ($lon/$lat) -> ($x,$y)\n" if $DEBUG;
+
+    # Center
     if (!$dont_auto_center) {
-	main::mark_point(-x => $x, -y => $y);
+	main::mark_point(-x => $x, -y => $y, -dont_mark => 1);
     }
+
+    # Mark head
+    my $head_item = $main::c->find(withtag => 'gps_track_head');
+    if ($head_item) {
+	$main::c->coords($head_item, $x, $y, $x, $y);
+    } else {
+	$main::c->createLine($x,$y,$x,$y, -width => 5, -fill => 'red',
+			     -capstyle => $main::capstyle_round,
+			     -tags => ['gps_track', 'gps_track_head'],
+			    );
+    }
+
+    # Track
     if (!$dont_auto_track) {
 	if (!@gps_track || $gps_track[-1] ne "$sx,$sy") {
 	    if (@gps_track) {
