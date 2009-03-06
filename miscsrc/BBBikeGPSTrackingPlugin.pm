@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.1 2009/03/06 20:52:49 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.2 2009/03/06 20:53:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -20,15 +20,18 @@ use BBBikePlugin;
 push @ISA, "BBBikePlugin";
 
 use strict;
-use vars qw($VERSION);
+use vars qw($VERSION $DEBUG);
 $VERSION = 0.01;
+
+$DEBUG = 0;
 
 use GPS::NMEA 1.12;
 
 use Karte::Polar;
 use Karte::Standard;
 
-use vars qw($gps_track_mode $gps $gps_fh $replay_speed);
+use vars qw($gps_track_mode $gps $gps_fh $replay_speed_conf @gps_track $gpspipe_pid $dont_auto_center $dont_auto_track);
+$replay_speed_conf = 1 if !defined $replay_speed_conf;
 
 sub register { 
     my $pkg = __PACKAGE__;
@@ -56,8 +59,8 @@ sub add_button {
     my $mf  = $main::top->Subwidget("ModePluginFrame");
     my $mmf = $main::top->Subwidget("ModeMenuPluginFrame");
     return unless defined $mf;
-    my $Radiobutton = $main::Radiobutton;
-    my %radio_args =
+    my $Checkbutton = $main::Checkbutton;
+    my %check_args =
 	(-variable => \$gps_track_mode,
 	 -command  => sub {
 	     my $want_gps_track_mode = $gps_track_mode;
@@ -74,9 +77,9 @@ sub add_button {
 	     }
 	 },
 	);
-    my $b = $mf->$Radiobutton
+    my $b = $mf->$Checkbutton
 	(-text => "GPS",
-	 %radio_args,
+	 %check_args,
 	);
     BBBikePlugin::replace_plugin_widget($mf, $b, __PACKAGE__.'_on');
     $main::balloon->attach($b, -msg => "GPS Tracking")
@@ -85,7 +88,20 @@ sub add_button {
     BBBikePlugin::place_menu_button
 	    ($mmf,
 	     # XXX Msg.pm
-	     [[Button => "Satellite view",
+	     [
+	      [Button => "Delete track",
+	       -command => sub {
+		   @gps_track = ();
+		   $main::c->delete("gps_track");
+	       },
+	      ],
+	      [Checkbutton => "Do not autocenter",
+	       -variable => \$dont_auto_center,
+	      ],
+	      [Checkbutton => "Do not autotrack",
+	       -variable => \$dont_auto_track,
+	      ],
+	      [Button => "Satellite view",
 	       -command => sub { die "NYI" },
 	      ],
 	      [Button => "Replay NMEA file",
@@ -95,6 +111,17 @@ sub add_button {
 		   activate_dummy_tracking($file);
 		   $gps_track_mode = 1;
 	       },
+	      ],
+	      [Cascade => "Replay speed", -menuitems =>
+	       [
+		(map {
+		    [Radiobutton => "$_",
+		     -variable => \$replay_speed_conf,
+		     -value => $_
+		    ]
+		} (1,2,10,100)
+		)
+	       ]
 	      ],
 	      "-",
 	      [Button => "Dieses Menü löschen",
@@ -107,8 +134,8 @@ sub add_button {
 	     $b,
 	     __PACKAGE__."_menu",
 	     -title => "GPS Tracking",
-	     -topmenu => [Radiobutton => 'GPS Tracking',
-			  %radio_args,
+	     -topmenu => [Checkbutton => 'GPS Tracking',
+			  %check_args,
 			 ],
 	    );
 
@@ -116,10 +143,24 @@ sub add_button {
 }
 
 sub activate_tracking {
+    # XXX decide whether to use GPS::NMEA or gpsd
+    activate_gpsd_tracking();
+}
+
+sub activate_nmea_tracking {
     $gps = GPS::NMEA->new(Port => "/dev/ttyS0", Baud=>4800) # make configurable!!!
 	or main::status_message("Cannot open GPS device: $!", "die");
-    $replay_speed = undef;
     _setup_fileevent($gps);
+}
+
+sub activate_gpsd_tracking {
+    kill_gpspipe();
+    $gpspipe_pid = open my $fh, "-|", "gpspipe", "-r"
+	or die "Cannot execute gpspipe: $!";
+    # just a dummy, for parsing and so
+    $gps = GPS::NMEA->new(Port => "/dev/ttyS0", Baud=>4800, do_not_init => 1) # make configurable!!!
+	or main::status_message("Cannot create GPS::NMEA object: $!", "die");
+    _setup_fileevent($gps, $fh);
 }
 
 sub activate_dummy_tracking {
@@ -128,12 +169,11 @@ sub activate_dummy_tracking {
 	or main::status_message("Cannot create GPS::NMEA object: $!", "die");
     open my $fh, "<", $file
 	or main::status_message("Cannot open $file: $!", "die");
-    $replay_speed = 1; # XXX configurable
-    _setup_fileevent($gps, $fh);
+    _setup_fileevent($gps, $fh, $replay_speed_conf);
 }
 
 sub _setup_fileevent {
-    my($gps, $fh) = @_;
+    my($gps, $fh, $replay_speed) = @_;
     my $line;
     my $last_seconds;
     $fh = $gps->serial if !$fh;
@@ -141,35 +181,36 @@ sub _setup_fileevent {
     my $callback;
     $callback = sub {
 	if ($fh->eof) {
+	    warn "End of file.\n" if $DEBUG;
 	    deactivate_tracking();
 	    return;
 	}
 	$line .= $fh->getline;
 	if ($line =~ /\n/) {
 	    my $short_cmd = $gps->parse_line($line);
-	    if ($short_cmd eq "GPRMC") {
+	    if (defined $short_cmd && $short_cmd eq "GPRMC") {
 		my $d = $gps->{NMEADATA};
-		if ($d->{lat_ddmm} ne '') {
-		    my $lat = $gps->parse_ddmm_coords($d->{lat_ddmm});
-		    if ($d->{lat_NS} eq 'S') { $lat *= -1 }
-		    my $lon = $gps->parse_ddmm_coords($d->{lon_ddmm});
-		    if ($d->{lon_EW} eq 'W') { $lon *= -1 }
+		my($lon, $lat) = gpsnmea_data_to_ddd($d);
+		if (defined $lon) {
 		    if ($replay_speed) {
-			my($H,$M,$S) = $d->{time_utc} =~ m{^(\d\d)(\d\d)(\d\d)};
-			my $this_seconds = $S+$M*60+$H*3600;
-			if (defined $last_seconds) {
-			    if ($last_seconds > $this_seconds) {
-				# day rotation
-				$last_seconds -= 86400;
+			my($H,$M,$S) = $d->{time_utc} =~ m{^(\d\d):(\d\d):(\d\d)};
+			if (defined $H) {
+			    my $this_seconds = $S+$M*60+$H*3600;
+			    if (defined $last_seconds) {
+				if ($last_seconds > $this_seconds) {
+				    # day rotation
+				    $last_seconds -= 86400;
+				}
+				my $sleep_time = ($this_seconds - $last_seconds)/$replay_speed;
+				die "should never happen: $sleep_time" if $sleep_time < 0;
+				$main::top->fileevent($fh, 'readable', ''); # suspend
+				warn "Sleep for $sleep_time seconds...\n" if $DEBUG;
+				$main::top->after($sleep_time*1000, sub {
+						      set_position($lon, $lat);
+						      $main::top->fileevent($fh, 'readable', $callback);
+						  });
 			    }
-			    my $sleep_time = ($this_seconds - $last_seconds)/$replay_speed;
-			    die "should never happen: $sleep_time" if $sleep_time < 0;
 			    $last_seconds = $this_seconds;
-			    $main::top->fileevent($fh, 'readable', ''); # suspend
-			    $main::top->after($sleep_time, sub {
-						  set_position($lon, $lat);
-						  $main::top->fileevent($fh, 'readable', $callback);
-					      });
 			}
 		    } else {
 			set_position($lon, $lat);
@@ -178,14 +219,41 @@ sub _setup_fileevent {
 	    }
 	    $line = '';
 	}
-};
+    };
     $main::top->fileevent($fh, 'readable', $callback);
+}
+
+# Sigh...
+sub gpsnmea_data_to_ddd {
+    my($d) = @_;
+    return (undef, undef) if $d->{lat_ddmm} eq '';
+
+    my(@lat_dmm) = $d->{lat_ddmm} =~ m{^(\d\d)([\d\.]+)};
+    if ($d->{lat_NS} eq 'S') { $lat_dmm[0] *= -1 }
+
+    my(@lon_dmm) = $d->{lon_ddmm} =~ m{^(\d\d\d)([\d\.]+)};
+    if ($d->{lon_EW} eq 'W') { $lon_dmm[0] *= -1 }
+
+    (Karte::Polar::dmm2ddd(@lon_dmm), Karte::Polar::dmm2ddd(@lat_dmm));
 }
 
 sub set_position {
     my($lon, $lat) = @_;
-    my($x,$y) = main::transpose($Karte::Polar::obj->map2standard($lon,$lat));
-    main::mark_point(-x => $x, -y => $y);		     
+    my($sx,$sy) = $Karte::Polar::obj->map2standard($lon,$lat);
+    my($x,$y) = main::transpose($sx,$sy);
+    warn "Set position ($lon/$lat) -> ($x,$y)\n" if $DEBUG;
+    if (!$dont_auto_center) {
+	main::mark_point(-x => $x, -y => $y);
+    }
+    if (!$dont_auto_track) {
+	if (!@gps_track || $gps_track[-1] ne "$sx,$sy") {
+	    if (@gps_track) {
+		$main::c->createLine(main::transpose(split /,/, $gps_track[-1]), $x, $y,
+				     -tags => ['gps_track']);
+	    }
+	    push @gps_track, "$sx,$sy";
+	}
+    }
 }
 
 sub deactivate_tracking {
@@ -193,6 +261,14 @@ sub deactivate_tracking {
     $main::top->fileevent($gps_fh, 'readable', '');
     undef $gps_fh;
     $gps_track_mode = 0;
+    kill_gpspipe();
+}
+
+sub kill_gpspipe {
+    if ($gpspipe_pid && kill 0 => $gpspipe_pid) {
+	kill 9 => $gpspipe_pid;
+	undef $gpspipe_pid;
+    }
 }
 
 return 1 if caller;
