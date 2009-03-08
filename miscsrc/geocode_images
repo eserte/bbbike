@@ -9,7 +9,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.26 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
 
 use Cwd qw(realpath);
 use File::Spec;
@@ -132,6 +132,9 @@ for my $try_converter (@converter) {
 if (!$converter) {
     die "Can't use any converter from @converter";
 }
+if ($v) {
+    print STDERR "The converter '$converter' will be used.\n";
+}
 
 sub get_image_location {
     my $file = shift;
@@ -199,7 +202,7 @@ sub get_image_location {
 	# Nokia 7650 hack
 	my $info = image_info($file);
 	if (my $error = $info->{error}) {
-	    if ($file =~ m{(^|/)\.xvpics/}) {
+	    if ($file =~ m{(?:^|/)\.(?:xvpics|thumbs)/}) {
 		# expected error, be quiet
 	    } else {
 		warn "Can't parse image info from $file: $error\n";
@@ -376,7 +379,7 @@ for my $file (@images) {
 	$File::Find::prune = $File::Find::prune if 0; # cease -w
 	my @files;
 	File::Find::find(sub {
-			     if ($_ eq '.xvpics') {
+			     if ($_ eq '.xvpics' || $_ eq '.thumbs') {
 				 $File::Find::prune = 1;
 				 return;
 			     }
@@ -402,6 +405,7 @@ if ($ofh) {
 
 sub handle_file {
     my $file = shift;
+    print STDERR "Handling $file...\n" if $v;
     my $ret = get_image_location($file);
     if (defined $ret) {
 	my($lat, $long, $delta, $date) = @{$ret}{qw(Latitude Longitude Delta Date)};
@@ -419,9 +423,11 @@ sub handle_file {
 	}
 	my $thumb_file = create_thumbnail($file);
 	if ($relative_paths) {
-	    $thumb_file = File::Spec->abs2rel(realpath($thumb_file),
-					      (defined $out_file ? dirname($out_file) : ())
-					     );
+	    if (defined $thumb_file) {
+		$thumb_file = File::Spec->abs2rel(realpath($thumb_file),
+						  (defined $out_file ? dirname($out_file) : ())
+						 );
+	    }
 	}
 	if (defined $thumb_file) {
 	    my $delta_hm = s2hm($delta);
@@ -491,24 +497,33 @@ sub create_thumbnail_ImageMagick_exiftool {
     my($file, $dest) = @_;
     require File::Temp;
     my(undef,$smallfile) = File::Temp::tempfile(SUFFIX => "_geocode_images.jpg", UNLINK => 1);
-    my $cmd = "exiftool -ThumbnailImage -b '$file' > $smallfile";
-    warn "$cmd\n" if $v;
-    system($cmd);
-    if ($? != 0 || -z $smallfile) {
-	my $cmd = "exiftool -PreviewImage -b '$file' > $smallfile";
-	warn "$cmd\n" if $v;
-	system($cmd);
-	if ($? != 0 || -z $smallfile) {
-	    $smallfile = $file;
+    for my $cmd (["exiftool", "-ThumbnailImage", "-b", $file],
+		 ["exiftool", "-PreviewImage",   "-b", $file],
+		) {
+	my @cmd = @$cmd;
+	warn "@$cmd > $smallfile\n" if $v;
+	open my $fh, "-|", @cmd
+	    or die "Cannot execute @cmd: $!";
+	open my $ofh, ">", $smallfile
+	    or die "Cannot write to $smallfile: $!";
+	local $/ = \8192;
+	while(<$fh>) {
+	    print $ofh $_;
 	}
+	close $ofh;
+	close $fh;
+	last if (!-z $smallfile);
+    }
+    if (-z $smallfile) {
+	$smallfile = $file;
     }
     create_thumbnail_ImageMagick($smallfile, $dest);
-    # XXX TODO: remove EXIF from thumbnail, otherwise it's huge!
 }
 
 sub create_thumbnail_ImageMagick {
     my($file, $dest) = @_;
-    my @cmd = ("convert", "-quality", 70, "-resize", $thumbnail_size ."x". $thumbnail_size, $file, $dest);
+    # -strip: remove EXIF from thumbnail, otherwise it's huge!
+    my @cmd = ("convert", "-quality", 70, "-strip", "-resize", $thumbnail_size ."x". $thumbnail_size, $file, $dest);
     warn "@cmd\n" if $v;
     system @cmd;
     if ($? != 0 || -z $dest) {
