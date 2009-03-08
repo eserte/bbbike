@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.10 2009/03/08 11:52:55 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.11 2009/03/08 11:53:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -39,11 +39,11 @@ use constant GPS_GRABBER => 'gpsd';  # determine dynamically?
 use vars qw($gps_track_mode $gps $gps_fh $replay_speed_conf @gps_track $gpspipe_pid
 	    $dont_auto_center $dont_auto_track $do_link_to_nearest_street
 	    $do_navigate @current_search_route $do_speech
-	    %reported_point
+	    %reported_point $current_accuracy $current_accuracy_update_time
 	  );
 $replay_speed_conf = 1 if !defined $replay_speed_conf;
 
-use your qw($main::gps_device $main::capstyle_round %main::str_obj $main::Checkbutton);
+use your qw($main::gps_device $main::capstyle_round %main::str_obj $main::Checkbutton %main::font);
 
 sub register {
     my $pkg = __PACKAGE__;
@@ -241,33 +241,41 @@ sub _setup_fileevent {
 	$line .= $fh->getline;
 	if ($line =~ /\n/) {
 	    my $short_cmd = $gps->parse_line($line);
-	    if (defined $short_cmd && $short_cmd eq "GPRMC") {
+	    if (defined $short_cmd) {
 		my $d = $gps->{NMEADATA};
-		my($lon, $lat) = gpsnmea_data_to_ddd($d);
-		if (defined $lon) {
-		    if ($replay_speed) {
-			my($H,$M,$S) = $d->{time_utc} =~ m{^(\d\d):(\d\d):(\d\d)};
-			if (defined $H) {
-			    my $this_seconds = $S+$M*60+$H*3600;
-			    if (defined $last_seconds) {
-				if ($last_seconds > $this_seconds) {
-				    # day rotation
-				    $last_seconds -= 86400;
+		if ($short_cmd eq "GPRMC") {
+		    my($lon, $lat) = gpsnmea_data_to_ddd($d);
+		    if (defined $lon) {
+			if ($replay_speed) {
+			    my($H,$M,$S) = $d->{time_utc} =~ m{^(\d\d):(\d\d):(\d\d)};
+			    if (defined $H) {
+				my $this_seconds = $S+$M*60+$H*3600;
+				if (defined $last_seconds) {
+				    if ($last_seconds > $this_seconds) {
+					# day rotation
+					$last_seconds -= 86400;
+				    }
+				    my $sleep_time = ($this_seconds - $last_seconds)/$replay_speed;
+				    die "should never happen: $sleep_time" if $sleep_time < 0;
+				    $main::top->fileevent($fh, 'readable', ''); # suspend
+				    warn "Sleep for $sleep_time seconds...\n" if $DEBUG;
+				    $main::top->after($sleep_time*1000, sub {
+							  set_position($lon, $lat);
+							  $main::top->fileevent($fh, 'readable', $callback);
+						      });
 				}
-				my $sleep_time = ($this_seconds - $last_seconds)/$replay_speed;
-				die "should never happen: $sleep_time" if $sleep_time < 0;
-				$main::top->fileevent($fh, 'readable', ''); # suspend
-				warn "Sleep for $sleep_time seconds...\n" if $DEBUG;
-				$main::top->after($sleep_time*1000, sub {
-						      set_position($lon, $lat);
-						      $main::top->fileevent($fh, 'readable', $callback);
-						  });
+				$last_seconds = $this_seconds;
 			    }
-			    $last_seconds = $this_seconds;
+			} else {
+			    set_position($lon, $lat);
 			}
-		    } else {
-			set_position($lon, $lat);
 		    }
+		} elsif ($short_cmd eq 'PGRME') { # XXX Is this Garmin-specific
+		    chomp $line; # XXX why is this not in the NMEADATA record, but has to be parsed?
+		    $line=~s/\*..\r?$//;
+		    my(@l)=split/,/,$line;
+		    $current_accuracy = $l[1]; # XXX what's $l[3]? what about unit, always M?
+		    $current_accuracy_update_time = time;
 		}
 	    }
 	    $line = '';
@@ -313,7 +321,35 @@ sub set_position {
 			    );
     }
 
+    if (defined $current_accuracy) {
+	if ($current_accuracy_update_time + 60 < time) {
+	    undef $current_accuracy; # out-of-date
+	}
+    }
+    if (defined $current_accuracy) {
+	my(@coord) = (main::transpose($sx-$current_accuracy,$sy-$current_accuracy),
+		      main::transpose($sx+$current_accuracy,$sy+$current_accuracy));
+
+	my $acc_item = $main::c->find(withtag => 'gps_track_acc');
+	if ($acc_item) {
+	    $main::c->coords($acc_item, @coord);
+	} else {
+	    $main::c->createOval(@coord, -tags => ['gps_track', 'gps_track_acc']);
+	}
+
+	my $acc_text_item = $main::c->find(withtag => 'gps_track_acc_text');
+	if ($acc_text_item) {
+	    $main::c->coords($acc_text_item, @coord[2,3]);
+	} else {
+	    $acc_text_item = $main::c->createText(@coord[2,3], -font => $main::font{'tiny'}, -tags => ['gps_track', 'gps_track_acc_text']);
+	}
+	$main::c->itemconfigure($acc_text_item, -text => int($current_accuracy));
+    } else {
+	$main::c->delete('gps_track_acc', 'gps_track_acc_text');
+    }
+
     # Track
+    # XXX Zusätzlich könnte ein "Schlauch" mit der Genauigkeit gezeichnet werden.
     if (!$dont_auto_track) {
 	if (!@gps_track || $gps_track[-1] ne $sxy) {
 	    if (@gps_track) {
@@ -544,5 +580,10 @@ Speech check (using espeak, alternatively can use festival, but only
 with English voice):
 
     grep -v '^#' data/strassen|tail -n +20 |perl -nle 'm{^([^\t]+)} and print $1' |uniq|perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -nle 'BBBikeGPSTrackingPlugin::saystreet($_)'
+
+Some observations:
+
+the accuracy as returned from the PGRME NMEA command is twice of what
+the Garmin etrex Vista HCx is reporting.
 
 =cut
