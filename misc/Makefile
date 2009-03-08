@@ -86,6 +86,7 @@ data_berlin_osm_bbbike:
 	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_osm_bbbike
 
 # Download the prepared osm from geofabrik
+# XXX very problematic because streets between Berlin and Brandenburg are not connected!
 data_berlin_brandenburg_osm_bbbike:	download-berlin.osm.bz2 download-brandenburg.osm.bz2 \
 					convert-data_berlin_brandenburg_osm_bbbike
 
