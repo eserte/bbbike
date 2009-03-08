@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.4 2009/03/08 11:52:07 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.5 2009/03/08 11:52:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -31,7 +31,9 @@ use Karte::Polar;
 use Karte::Standard;
 
 use vars qw($gps_track_mode $gps $gps_fh $replay_speed_conf @gps_track $gpspipe_pid
-	    $dont_auto_center $dont_auto_track $do_link_to_nearest_street);
+	    $dont_auto_center $dont_auto_track $do_link_to_nearest_street
+	    $do_navigate @current_search_route
+	  );
 $replay_speed_conf = 1 if !defined $replay_speed_conf;
 
 sub register { 
@@ -104,6 +106,19 @@ sub add_button {
 	      ],
 	      [Checkbutton => "Link to nearest street",
 	       -variable => \$do_link_to_nearest_street,
+	      ],
+	      [Checkbutton => "Navigate",
+	       -variable => \$do_navigate,
+	       -command => sub {
+		   if ($do_navigate) {
+		       Hooks::get_hooks("new_route")->add
+			       (sub {
+				    @current_search_route = @{ main::get_act_search_route() };
+				}, __PACKAGE__);
+		   } else {
+		       Hooks::get_hooks("new_route")->del(__PACKAGE__);
+		   }
+	       },
 	      ],
 	      [Button => "Satellite view",
 	       -command => sub { die "NYI" },
@@ -296,6 +311,49 @@ sub set_position {
 				     -tags => ['gps_track', 'gps_track_link'],
 				    );
 	    }
+	    if ($do_navigate) {
+		match_position_with_route($ret->{Coords});
+	    }
+	}
+    }
+}
+
+sub match_position_with_route {
+    my($pos_coords) = @_;
+    return if !@main::realcoords;
+    $main::c->delete("XXX1");
+    for my $i (0 .. $#main::realcoords) {
+	if ($main::realcoords[$i][0] == $pos_coords->[0] &&
+	    $main::realcoords[$i][1] == $pos_coords->[1]) {
+	    $main::c->createLine(main::transpose($main::realcoords[$i][0], $main::realcoords[$i][1]),
+				 main::transpose($main::realcoords[$i][0], $main::realcoords[$i][1]),
+				 -fill => 'red',
+				 -width => 5,
+				 -capstyle => $main::capstyle_round,
+				 -tags => ['gps_track', 'XXX1']);
+	    if ($main::realcoords[$i+1][0] == $pos_coords->[2] &&
+		$main::realcoords[$i+1][1] == $pos_coords->[3]) {
+		$main::c->createLine(main::transpose($main::realcoords[$i+1][0], $main::realcoords[$i+1][1]),
+				     main::transpose($main::realcoords[$i+1][0], $main::realcoords[$i+1][1]),
+				     -fill => 'green',
+				     -width => 5,
+				     -capstyle => $main::capstyle_round,
+				     -tags => ['gps_track', 'XXX1']);
+		if (@current_search_route) {
+		    for my $j (0 .. $#current_search_route) {
+			if ($i+1 >= $current_search_route[$j]->[StrassenNetz::ROUTE_ARRAYINX()][0] &&
+			    $i+1 <= $current_search_route[$j]->[StrassenNetz::ROUTE_ARRAYINX()][1]) {
+			    my $next_street = $current_search_route[$j]->[StrassenNetz::ROUTE_NAME()];
+			    my $important = $current_search_route[$j-1]->[StrassenNetz::ROUTE_EXTRA()]->{ImportantAngle};
+			    my $direction = $current_search_route[$j-1]->[StrassenNetz::ROUTE_DIR()];
+			    my(@coord) = main::transpose(@{ $main::realcoords[$current_search_route[$j]->[StrassenNetz::ROUTE_ARRAYINX()][0]] });
+			    $main::c->createText(@coord, -text => "$next_street $direction", -tags => ['gps_track', 'XXX1']);
+			    last;
+			}
+		    }
+		}
+	    }
+	    last;
 	}
     }
 }
