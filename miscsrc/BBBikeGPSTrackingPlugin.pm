@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.8 2009/03/08 11:52:39 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.9 2009/03/08 11:52:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -297,7 +297,7 @@ sub set_position {
     }
 
     if ($do_link_to_nearest_street) {
-	my $s = $main::net && ($main::net->sourceobjects)[0];
+	my $s = $main::net && $main::net->{Strassen};
 	$s = $main::str_obj{s} if !$s;
 	if (!$s) {
 	    our $warn_str_obj_once;
@@ -361,9 +361,14 @@ sub match_position_with_route {
 			    $direction = '' if !$important;
 			    my $live_dist = int Strassen::Util::strecke($main::realcoords[$current_search_route[$j+1]->[StrassenNetz::ROUTE_ARRAYINX()][0]],
 									[split /,/, $sxy]);
-			    if ($do_speech && $live_dist <= 100 && !$reported_point{"$next_street $direction"}) {
-				saytext($next_street, $direction, $live_dist);
-				$reported_point{"$next_street $direction"} = 1;
+			    if ($live_dist <= 100 && !$reported_point{"$next_street $direction"}) {
+				my @saytext_args = ($next_street, $direction, $live_dist);
+				if ($do_speech) {
+				    saytext(@saytext_args);
+				    $reported_point{"$next_street $direction"} = 1;
+				} else {
+				    warn "Would say: " . saytext_for_german_espeak(@saytext_args) . "\n"; # XXX debug?
+				}
 			    }
 			    my(@coord) = main::transpose(@{ $main::realcoords[$current_search_route[$j+1]->[StrassenNetz::ROUTE_ARRAYINX()][0]] });
 			    $main::c->createText(@coord, -text => "$next_street $direction in $live_dist m", -tags => ['gps_track', 'XXX1']);
@@ -382,7 +387,16 @@ sub saytext {
     saytext_espeak(@_);
 }
 
+# optimized for German voice
 sub saytext_espeak {
+    my($next_street, $direction, $live_dist) = @_;
+    my $say = saytext_for_german_espeak($next_street, $direction, $live_dist);
+    warn "Will say '$say'\n";
+    require IPC::Run;
+    IPC::Run::run(["espeak", "-v", "de"], "<", \$say);
+}
+
+sub saytext_for_german_espeak {
     my($next_street, $direction, $live_dist) = @_;
     require Strassen::Strasse;
     $next_street = Strasse::strip_bezirk($next_street);
@@ -396,17 +410,24 @@ sub saytext_espeak {
 	$next_street = Strasse::get_last_part($next_street);
     }
     if ($direction) {
-	$say .= ($direction =~ /l/i ? "links" : "rechts") . " abbiegen"; 
+	$say .= ($direction =~ /l/i ? "links" : "rechts") . " abbiegen "; 
     }
     $praeposition = Strasse::de_artikel($next_street) if !$praeposition;
     $praeposition = "" if $praeposition eq '=>';
     $say .= "$praeposition $next_street";
-    warn "Will say '$say'\n";
-    require IPC::Run;
-    IPC::Run::run(["espeak", "-v", "de"], "<", \$say);
+    $say;
 }
 
+# optimized for English voice
 sub saytext_festival {
+    my($next_street, $direction, $live_dist) = @_;
+    my $say = saytext_for_english_festival($next_street, $direction, $live_dist);
+    require IPC::Run;
+    warn "Will say '$say'\n";
+    IPC::Run::run(["text2wave"], "<", \$say, "|", ["play", "-t", "wav", "-"]);
+}
+
+sub saytext_for_english_festival {
     my($next_street, $direction, $live_dist) = @_;
     require Strassen::Strasse;
     $next_street = Strasse::strip_bezirk($next_street);
@@ -436,9 +457,7 @@ sub saytext_festival {
     }
     $praeposition = "into" if !$praeposition;
     $say .= "$praeposition $next_street";
-    require IPC::Run;
-    warn "Will say '$say'\n";
-    IPC::Run::run(["text2wave"], "<", \$say, "|", ["play", "-t", "wav", "-"]);
+    $say;
 }
 
 sub deactivate_tracking {
