@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.21 2008/12/01 22:27:42 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.22 2009/03/08 21:47:56 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2007,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2007,2008,2009 Slaven Rezic. All rights reserved.
 #
 
 # Description (en): View images in bbd files
@@ -16,9 +16,9 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $geometry $viewer_menu);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
 
-use BBBikeUtil qw(file_name_is_absolute);
+use BBBikeUtil qw(file_name_is_absolute is_in_path);
 use File::Basename qw(dirname);
 
 my $iso_date_rx = qr{(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})};
@@ -104,6 +104,11 @@ sub add_button {
 	      ],
 	      ($^O eq 'MSWin32' ? () :
 	       (# xv is not surely not available ...
+		[Radiobutton => 'Bester externer Viewer',
+		 -variable => \$viewer,
+		 -value => '_external',
+		 -command => sub { viewer_change() },
+		],
 		[Radiobutton => "xv",
 	         -variable => \$viewer,
 		 -value => "xv",
@@ -113,6 +118,12 @@ sub add_button {
 	        [Radiobutton => "ImageMagick (display)",
 	         -variable => \$viewer,
 	         -value => "display",
+	         -command => sub { viewer_change() },
+	        ],
+		# also usually not available
+	        [Radiobutton => "xzgv",
+	         -variable => \$viewer,
+	         -value => "xzgv",
 	         -command => sub { viewer_change() },
 	        ],
 	       )
@@ -275,7 +286,12 @@ sub show_image_viewer {
 	    main::status_message("Kann die Datei $abs_file nicht finden", "die");
 	}
 
-	if ($viewer eq '_internal') {
+	my $use_viewer = $viewer;
+	if ($viewer eq '_external') {
+	    $use_viewer = find_best_external_viewer();
+	}
+
+	if ($use_viewer eq '_internal') {
 	    main::IncBusy($main::top);
 	    eval {
 		my($date) = $name =~ $iso_date_rx;
@@ -481,7 +497,7 @@ sub show_image_viewer {
 	    if ($err) {
 		main::status_message($err, "die");
 	    }
-	} elsif ($viewer eq 'xv') {
+	} elsif ($use_viewer eq 'xv') {
 	    my @xv_args;
 	    if ($geometry eq 'maxpect') {
 		push @xv_args, "-maxpect";
@@ -491,20 +507,30 @@ sub show_image_viewer {
 		push @xv_args, "-expand", 0.33;
 	    }
 	    viewer_xv(@xv_args, $abs_file);
-	} elsif ($viewer eq 'display') {
+	} elsif ($use_viewer eq 'display') {
 	    my @display_args;
 	    if ($geometry eq 'maxpect') {
-		# NYI
+		push @display_args, imagemagick_maxpect_args();
 	    } elsif ($geometry eq 'half') {
 		push @display_args, "-resize", "50%";
 	    } elsif ($geometry eq 'third') {
 		push @display_args, "-resize", "33%";
 	    }
 	    viewer_display(@display_args, $abs_file);
-	} elsif ($viewer eq '_wwwbrowser') {
+	} elsif ($use_viewer eq 'xzgv') {
+	    my @xzgv_args;
+	    if ($geometry eq 'maxpect') {
+		push @xzgv_args, '--zoom'; # --zoom-reduce-only not working as advertized
+	    } elsif ($geometry eq 'half') {
+		push @xzgv_args, '--zoom', '--geometry', '50%x50%';
+	    } elsif ($geometry eq 'third') {
+		push @xzgv_args, '--zoom', '--geometry', '33%x33%';
+	    }
+	    viewer_xzgv(@xzgv_args, $abs_file);
+	} elsif ($use_viewer eq '_wwwbrowser') {
 	    viewer_browser($abs_file);
 	} else {
-	    my $cmd = "$viewer $abs_file";
+	    my $cmd = "$use_viewer $abs_file";
 	    warn "Try $cmd...\n";
 	    system("$cmd&");
 	}
@@ -519,6 +545,19 @@ sub show_image_viewer {
 sub viewer_xv {
     my(@args) = @_;
     my @cmd = ("xv", @args);
+    main::status_message("@cmd", "info");
+    my $pid = fork;
+    die if !defined $pid;
+    if ($pid == 0) {
+	exec @cmd;
+	warn $!;
+	CORE::exit(1);
+    }
+}
+
+sub viewer_xzgv {
+    my(@args) = @_;
+    my @cmd = ("xzgv", @args);
     main::status_message("@cmd", "info");
     my $pid = fork;
     die if !defined $pid;
@@ -551,8 +590,26 @@ sub viewer_browser {
 sub orig_viewer {
     if ($^O eq 'MSWin32') {
 	viewer_browser(@_);
+    } elsif (is_in_path("xzgv")) {
+	viewer_xzgv("--zoom", @_);
     } else {
-	viewer_display(@_);
+	viewer_display(imagemagick_maxpect_args(), @_);
+    }
+}
+
+sub imagemagick_maxpect_args {
+    ("-resize", $main::top->screenwidth . "x" . $main::top->screenheight);
+}
+
+sub find_best_external_viewer {
+    if (is_in_path("xzgv")) { # faster than ImageMagick, free
+	"xzgv";
+    } elsif (is_in_path("xv")) { # also faster than ImageMagick
+	"xv";
+    } elsif (is_in_path("display")) {
+	"display";
+    } else {
+	"_internal";
     }
 }
 
