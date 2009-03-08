@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.5 2009/03/08 11:52:15 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.6 2009/03/08 11:52:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -32,7 +32,8 @@ use Karte::Standard;
 
 use vars qw($gps_track_mode $gps $gps_fh $replay_speed_conf @gps_track $gpspipe_pid
 	    $dont_auto_center $dont_auto_track $do_link_to_nearest_street
-	    $do_navigate @current_search_route
+	    $do_navigate @current_search_route $do_speech
+	    %reported_point
 	  );
 $replay_speed_conf = 1 if !defined $replay_speed_conf;
 
@@ -111,14 +112,19 @@ sub add_button {
 	       -variable => \$do_navigate,
 	       -command => sub {
 		   if ($do_navigate) {
-		       Hooks::get_hooks("new_route")->add
-			       (sub {
-				    @current_search_route = @{ main::get_act_search_route() };
-				}, __PACKAGE__);
+		       my $init = sub {
+			   @current_search_route = @{ main::get_act_search_route() };
+			   %reported_point = ();
+		       };
+		       Hooks::get_hooks("new_route")->add($init, __PACKAGE__);
+		       $init->();
 		   } else {
 		       Hooks::get_hooks("new_route")->del(__PACKAGE__);
 		   }
 	       },
+	      ],
+	      [Checkbutton => 'Speech',
+	       -variable => \$do_speech,
 	      ],
 	      [Button => "Satellite view",
 	       -command => sub { die "NYI" },
@@ -273,7 +279,7 @@ sub set_position {
     if ($head_item) {
 	$main::c->coords($head_item, $x, $y, $x, $y);
     } else {
-	$main::c->createLine($x,$y,$x,$y, -width => 5, -fill => 'red',
+	$main::c->createLine($x,$y,$x,$y, -width => 8, -fill => 'red',
 			     -capstyle => $main::capstyle_round,
 			     -tags => ['gps_track', 'gps_track_head'],
 			    );
@@ -312,50 +318,78 @@ sub set_position {
 				    );
 	    }
 	    if ($do_navigate) {
-		match_position_with_route($ret->{Coords});
+		match_position_with_route($ret->{Coords}, $sxy);
 	    }
 	}
     }
 }
 
 sub match_position_with_route {
-    my($pos_coords) = @_;
+    my($pos_coords, $sxy) = @_;
     return if !@main::realcoords;
     $main::c->delete("XXX1");
     for my $i (0 .. $#main::realcoords) {
 	if ($main::realcoords[$i][0] == $pos_coords->[0] &&
 	    $main::realcoords[$i][1] == $pos_coords->[1]) {
-	    $main::c->createLine(main::transpose($main::realcoords[$i][0], $main::realcoords[$i][1]),
-				 main::transpose($main::realcoords[$i][0], $main::realcoords[$i][1]),
-				 -fill => 'red',
-				 -width => 5,
-				 -capstyle => $main::capstyle_round,
-				 -tags => ['gps_track', 'XXX1']);
+	    my $from_index;
 	    if ($main::realcoords[$i+1][0] == $pos_coords->[2] &&
 		$main::realcoords[$i+1][1] == $pos_coords->[3]) {
-		$main::c->createLine(main::transpose($main::realcoords[$i+1][0], $main::realcoords[$i+1][1]),
-				     main::transpose($main::realcoords[$i+1][0], $main::realcoords[$i+1][1]),
-				     -fill => 'green',
+		$from_index = $i;
+	    } elsif ($main::realcoords[$i-1][0] == $pos_coords->[2] &&
+		     $main::realcoords[$i-1][1] == $pos_coords->[3]) {
+		$from_index = $i-1;
+	    }
+	    if (defined $from_index) {
+		my $to_index = $from_index+1;
+		my @coords_from = (main::transpose($main::realcoords[$from_index][0], $main::realcoords[$from_index][1]));
+		my @coords_to   = (main::transpose($main::realcoords[$to_index  ][0], $main::realcoords[$to_index  ][1]));
+		$main::c->createLine(@coords_from, @coords_to,
+				     -fill => 'red',
 				     -width => 5,
-				     -capstyle => $main::capstyle_round,
+				     -arrow => 'last',
 				     -tags => ['gps_track', 'XXX1']);
 		if (@current_search_route) {
 		    for my $j (0 .. $#current_search_route) {
-			if ($i+1 >= $current_search_route[$j]->[StrassenNetz::ROUTE_ARRAYINX()][0] &&
-			    $i+1 <= $current_search_route[$j]->[StrassenNetz::ROUTE_ARRAYINX()][1]) {
-			    my $next_street = $current_search_route[$j]->[StrassenNetz::ROUTE_NAME()];
-			    my $important = $current_search_route[$j-1]->[StrassenNetz::ROUTE_EXTRA()]->{ImportantAngle};
-			    my $direction = $current_search_route[$j-1]->[StrassenNetz::ROUTE_DIR()];
-			    my(@coord) = main::transpose(@{ $main::realcoords[$current_search_route[$j]->[StrassenNetz::ROUTE_ARRAYINX()][0]] });
-			    $main::c->createText(@coord, -text => "$next_street $direction", -tags => ['gps_track', 'XXX1']);
-			    last;
+			if ($to_index >= $current_search_route[$j]->[StrassenNetz::ROUTE_ARRAYINX()][0]+1 &&
+			    $to_index <= $current_search_route[$j]->[StrassenNetz::ROUTE_ARRAYINX()][1]+1) {
+			    my $next_street = $current_search_route[$j+1]->[StrassenNetz::ROUTE_NAME()];
+			    my $important = $current_search_route[$j]->[StrassenNetz::ROUTE_EXTRA()]->{ImportantAngle};
+			    my $direction = uc $current_search_route[$j]->[StrassenNetz::ROUTE_DIR()];
+			    $direction = '' if !$important;
+			    my $live_dist = int Strassen::Util::strecke($main::realcoords[$current_search_route[$j+1]->[StrassenNetz::ROUTE_ARRAYINX()][0]],
+									[split /,/, $sxy]);
+			    if ($do_speech && $live_dist <= 100 && !$reported_point{"$next_street $direction"}) {
+				saytext($next_street, $direction, $live_dist);
+				$reported_point{"$next_street $direction"} = 1;
+			    }
+			    my(@coord) = main::transpose(@{ $main::realcoords[$current_search_route[$j+1]->[StrassenNetz::ROUTE_ARRAYINX()][0]] });
+			    $main::c->createText(@coord, -text => "$next_street $direction in $live_dist m", -tags => ['gps_track', 'XXX1']);
+			    return;
 			}
 		    }
 		}
 	    }
-	    last;
+	    return;
 	}
     }
+    $main::c->createText(main::transpose(split /,/, $sxy), -text => "?", -tags => ['gps_track', 'XXX1']);
+}
+
+sub saytext {
+    my($next_street, $direction, $live_dist) = @_;
+    $next_street = Strasse::strip_bezirk($next_street);
+    $next_street =~ s{str\.$}{strasse};
+    $next_street =~ s{[äÄ]}{ae}g;
+    $next_street =~ s{[öÖ]}{oe}g;
+    $next_street =~ s{[üÜ]}{y}g;
+    $next_street =~ s{ß}{ss}g;
+    my $say;
+    if ($direction) {
+	$say .= "turn " . ($direction =~ /l/i ? "left" : "right") . " ";
+    }
+    $say .= "into $next_street";
+    require IPC::Run;
+    IPC::Run::run(["text2wave"], "<", \$say, "|", ["play", "-t", "wav", "-"]);
 }
 
 sub deactivate_tracking {
