@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.7 2009/03/08 11:52:31 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.8 2009/03/08 11:52:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -297,7 +297,8 @@ sub set_position {
     }
 
     if ($do_link_to_nearest_street) {
-	my $s = $main::str_obj{s};
+	my $s = $main::net && ($main::net->sourceobjects)[0];
+	$s = $main::str_obj{s} if !$s;
 	if (!$s) {
 	    our $warn_str_obj_once;
 	    if (!$warn_str_obj_once++) {
@@ -305,20 +306,22 @@ sub set_position {
 	    }
 	} else {
 	    my $ret = $s->nearest_point($sxy, FullReturn => 1);
-	    my @coords = (main::transpose($ret->{Coords}[0],$ret->{Coords}[1]),
-			  $x, $y,
-			  main::transpose($ret->{Coords}[2],$ret->{Coords}[3]),
-			 );
-	    my $link_item = $main::c->find(withtag => 'gps_track_link');
-	    if ($link_item) {
-		$main::c->coords($link_item, @coords);
-	    } else {
-		$main::c->createLine(@coords, -fill => 'red',
-				     -tags => ['gps_track', 'gps_track_link'],
-				    );
-	    }
-	    if ($do_navigate) {
-		match_position_with_route($ret->{Coords}, $sxy);
+	    if ($ret) {
+		my @coords = (main::transpose($ret->{Coords}[0],$ret->{Coords}[1]),
+			      $x, $y,
+			      main::transpose($ret->{Coords}[2],$ret->{Coords}[3]),
+			     );
+		my $link_item = $main::c->find(withtag => 'gps_track_link');
+		if ($link_item) {
+		    $main::c->coords($link_item, @coords);
+		} else {
+		    $main::c->createLine(@coords, -fill => 'red',
+					 -tags => ['gps_track', 'gps_track_link'],
+					);
+		}
+		if ($do_navigate) {
+		    match_position_with_route($ret->{Coords}, $sxy);
+		}
 	    }
 	}
     }
@@ -376,6 +379,34 @@ sub match_position_with_route {
 }
 
 sub saytext {
+    saytext_espeak(@_);
+}
+
+sub saytext_espeak {
+    my($next_street, $direction, $live_dist) = @_;
+    require Strassen::Strasse;
+    $next_street = Strasse::strip_bezirk($next_street);
+    $next_street =~ s{str\.}{straße}ig;
+    $next_street =~ s{\(}{}g;
+    $next_street =~ s{\)}{}g;
+    my $praeposition;
+    my $say;
+    if ($next_street =~ m{ - }) {
+	$praeposition = "in Richtung";
+	$next_street = Strasse::get_last_part($next_street);
+    }
+    if ($direction) {
+	$say .= ($direction =~ /l/i ? "links" : "rechts") . " abbiegen"; 
+    }
+    $praeposition = Strasse::de_artikel($next_street) if !$praeposition;
+    $praeposition = "" if $praeposition eq '=>';
+    $say .= "$praeposition $next_street";
+    warn "Will say '$say'\n";
+    require IPC::Run;
+    IPC::Run::run(["espeak", "-v", "de"], "<", \$say);
+}
+
+sub saytext_festival {
     my($next_street, $direction, $live_dist) = @_;
     require Strassen::Strasse;
     $next_street = Strasse::strip_bezirk($next_street);
@@ -441,11 +472,11 @@ __END__
 
 =pod
 
-TODO - does not work yet!
-
 Needs perl-GPS which is not yet on CPAN (because of GPS::NMEA changes)
+Needs gpsd installed and running.
 
-Festival check:
+Speech check (using espeak, alternatively can use festival, but only
+with English voice):
 
     grep -v '^#' data/strassen|tail -n +20 |perl -nle 'm{^([^\t]+)} and print $1' |uniq|perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -nle 'BBBikeGPSTrackingPlugin::saytext($_)'
 
