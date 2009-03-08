@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.6 2009/03/08 11:52:23 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.7 2009/03/08 11:52:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -377,18 +377,36 @@ sub match_position_with_route {
 
 sub saytext {
     my($next_street, $direction, $live_dist) = @_;
+    require Strassen::Strasse;
     $next_street = Strasse::strip_bezirk($next_street);
-    $next_street =~ s{str\.$}{strasse};
+    $next_street =~ s{str\.}{shtrasse}ig;
+    $next_street =~ s{allee\b}{ulleh}ig; # not nice
+    $next_street =~ s{ufer\b}{oofer}ig; # not nice
+    $next_street =~ s{w}{v}g;
+    $next_street =~ s{z}{ts}g;
+    $next_street =~ s{([blmnrvw])ein}{$1hein}g;
+    $next_street =~ s{bundes}{boondehs}g;
     $next_street =~ s{[äÄ]}{ae}g;
     $next_street =~ s{[öÖ]}{oe}g;
     $next_street =~ s{[üÜ]}{y}g;
+    $next_street =~ s{é}{e}g;
     $next_street =~ s{ß}{ss}g;
+    $next_street =~ s{sch}{sh}g;
+    $next_street =~ s{ch}{hh}g;
+    $next_street =~ s{e\b}{eh}g;
+    my $praeposition;
     my $say;
+    if ($next_street =~ m{ - }) {
+	$praeposition = "towards";
+	$next_street = Strasse::get_last_part($next_street);
+    }
     if ($direction) {
 	$say .= "turn " . ($direction =~ /l/i ? "left" : "right") . " ";
     }
-    $say .= "into $next_street";
+    $praeposition = "into" if !$praeposition;
+    $say .= "$praeposition $next_street";
     require IPC::Run;
+    warn "Will say '$say'\n";
     IPC::Run::run(["text2wave"], "<", \$say, "|", ["play", "-t", "wav", "-"]);
 }
 
@@ -426,5 +444,9 @@ __END__
 TODO - does not work yet!
 
 Needs perl-GPS which is not yet on CPAN (because of GPS::NMEA changes)
+
+Festival check:
+
+    grep -v '^#' data/strassen|tail -n +20 |perl -nle 'm{^([^\t]+)} and print $1' |uniq|perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -nle 'BBBikeGPSTrackingPlugin::saytext($_)'
 
 =cut
