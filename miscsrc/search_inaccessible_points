@@ -148,6 +148,7 @@ sub flood_search {
     if (!defined $act_coord) {
 	my $k = each %$net_net;
 	$act_coord = $k;
+	warn "Starting flood search at $act_coord.\n"; # Always show, for later analysis
     }
 
     my($start_x,$start_y) = split /,/, $act_coord;
