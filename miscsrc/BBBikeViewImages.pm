@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.22 2009/03/08 21:47:56 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.23 2009/03/08 21:49:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2007,2008,2009 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $geometry $viewer_menu);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(file_name_is_absolute is_in_path);
 use File::Basename qw(dirname);
@@ -479,6 +479,10 @@ sub show_image_viewer {
 		    $image_viewer_toplevel->bind("<End>" => \&Tk::NoOp);
 		}
 
+		# XXX It would be nice if we would show here not only
+		# the current image, but all files at this point, the
+		# current image being first in list. Unfortunately,
+		# look how complicated it is to get to $abs_file :-(
 		$image_viewer_toplevel->Subwidget("OrigButton")->configure(-command => [\&orig_viewer, $abs_file]);
 		$image_viewer_toplevel->bind("<o>" => sub { orig_viewer($abs_file) });
 
