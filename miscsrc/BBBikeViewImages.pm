@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.23 2009/03/08 21:49:14 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.24 2009/03/08 21:49:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2007,2008,2009 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $geometry $viewer_menu);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(file_name_is_absolute is_in_path);
 use File::Basename qw(dirname);
@@ -109,23 +109,32 @@ sub add_button {
 		 -value => '_external',
 		 -command => sub { viewer_change() },
 		],
-		[Radiobutton => "xv",
-	         -variable => \$viewer,
-		 -value => "xv",
-		 -command => sub { viewer_change() },
-	        ],
+		(is_in_path("xv")
+		 ? [Radiobutton => "xv",
+		    -variable => \$viewer,
+		    -value => "xv",
+		    -command => sub { viewer_change() },
+		   ]
+		 : ()
+		),
 		# ... display might be available, but forking (see below) does not work
-	        [Radiobutton => "ImageMagick (display)",
-	         -variable => \$viewer,
-	         -value => "display",
-	         -command => sub { viewer_change() },
-	        ],
-		# also usually not available
-	        [Radiobutton => "xzgv",
-	         -variable => \$viewer,
-	         -value => "xzgv",
-	         -command => sub { viewer_change() },
-	        ],
+		(is_in_path("display")
+		 ? [Radiobutton => "ImageMagick (display)",
+		    -variable => \$viewer,
+		    -value => "display",
+		    -command => sub { viewer_change() },
+		   ]
+		 : ()
+		),
+		# also usually not available on MSWin32
+		(is_in_path("xzgv")
+		 ? [Radiobutton => "xzgv",
+		    -variable => \$viewer,
+		    -value => "xzgv",
+		    -command => sub { viewer_change() },
+		   ]
+		 : ()
+		),
 	       )
 	      ),
 	      [Radiobutton => "WWW-Browser",
@@ -505,20 +514,20 @@ sub show_image_viewer {
 	    my @xv_args;
 	    if ($geometry eq 'maxpect') {
 		push @xv_args, "-maxpect";
-	    } elsif ($geometry eq 'half') {
+	    } elsif ($geometry eq 'half') { # XXX this is really image-half, need impl. for half!
 		push @xv_args, "-expand", 0.5;
-	    } elsif ($geometry eq 'third') {
+	    } elsif ($geometry eq 'third') { # XXX this is really image-third, need impl. for third!
 		push @xv_args, "-expand", 0.33;
-	    }
+	    } # XXX
 	    viewer_xv(@xv_args, $abs_file);
 	} elsif ($use_viewer eq 'display') {
 	    my @display_args;
 	    if ($geometry eq 'maxpect') {
 		push @display_args, imagemagick_maxpect_args();
 	    } elsif ($geometry eq 'half') {
-		push @display_args, "-resize", "50%";
+		push @display_args, "-resize", "50%"; # XXX is this half or image-half?
 	    } elsif ($geometry eq 'third') {
-		push @display_args, "-resize", "33%";
+		push @display_args, "-resize", "33%"; # XXX is this third or image-third?
 	    }
 	    viewer_display(@display_args, $abs_file);
 	} elsif ($use_viewer eq 'xzgv') {
@@ -529,7 +538,7 @@ sub show_image_viewer {
 		push @xzgv_args, '--zoom', '--geometry', '50%x50%';
 	    } elsif ($geometry eq 'third') {
 		push @xzgv_args, '--zoom', '--geometry', '33%x33%';
-	    }
+	    } # XXX need impl. for image-half and image-third
 	    viewer_xzgv(@xzgv_args, $abs_file);
 	} elsif ($use_viewer eq '_wwwbrowser') {
 	    viewer_browser($abs_file);
