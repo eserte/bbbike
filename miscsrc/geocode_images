@@ -9,7 +9,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.25 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.26 $ =~ /(\d+)\.(\d+)/);
 
 use Cwd qw(realpath);
 use File::Spec;
@@ -491,11 +491,11 @@ sub create_thumbnail_ImageMagick_exiftool {
     my($file, $dest) = @_;
     require File::Temp;
     my(undef,$smallfile) = File::Temp::tempfile(SUFFIX => "_geocode_images.jpg", UNLINK => 1);
-    my $cmd = "exiftool -ThumbnailImage -b $file > $smallfile";
+    my $cmd = "exiftool -ThumbnailImage -b '$file' > $smallfile";
     warn "$cmd\n" if $v;
     system($cmd);
     if ($? != 0 || -z $smallfile) {
-	my $cmd = "exiftool -PreviewImage -b $file > $smallfile";
+	my $cmd = "exiftool -PreviewImage -b '$file' > $smallfile";
 	warn "$cmd\n" if $v;
 	system($cmd);
 	if ($? != 0 || -z $smallfile) {
