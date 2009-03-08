@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.9 2009/03/08 11:52:47 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.10 2009/03/08 11:52:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -21,14 +21,20 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $DEBUG);
-$VERSION = 0.02;
+$VERSION = 0.03;
 
 $DEBUG = 0;
 
 use GPS::NMEA 1.12;
+use IPC::Run qw();
 
+use BBBikeUtil qw(is_in_path);
 use Karte::Polar;
 use Karte::Standard;
+use Strassen::Strasse;
+
+use constant SPEAK_PROG => 'espeak'; # determine dynamically?
+use constant GPS_GRABBER => 'gpsd';  # determine dynamically?
 
 use vars qw($gps_track_mode $gps $gps_fh $replay_speed_conf @gps_track $gpspipe_pid
 	    $dont_auto_center $dont_auto_track $do_link_to_nearest_street
@@ -37,7 +43,9 @@ use vars qw($gps_track_mode $gps $gps_fh $replay_speed_conf @gps_track $gpspipe_
 	  );
 $replay_speed_conf = 1 if !defined $replay_speed_conf;
 
-sub register { 
+use your qw($main::gps_device $main::capstyle_round %main::str_obj $main::Checkbutton);
+
+sub register {
     my $pkg = __PACKAGE__;
 
     $BBBikePlugin::plugins{$pkg} = $pkg;
@@ -125,9 +133,24 @@ sub add_button {
 	      ],
 	      [Checkbutton => 'Speech',
 	       -variable => \$do_speech,
+	       -command => sub {
+		   if ($do_speech) {
+		       saytext("Die Audio-Navigation ist eingeschaltet.");
+		   }
+	       },
 	      ],
 	      [Button => "Satellite view",
-	       -command => sub { die "NYI" },
+	       -command => sub {
+		   # the cheap solution
+		   if (!is_in_path("xgps")) {
+		       main::status_message("xgps is not available. It is usually part of the gpsd distribution.", "err");
+		       return;
+		   }
+		   system("xgps&");
+		   if ($? != 0) {
+		       main::status_message("Some problem while running xgps ($?)", "err");
+		   }
+	       },
 	      ],
 	      [Button => "Replay NMEA file",
 	       -command => sub {
@@ -169,11 +192,16 @@ sub add_button {
 
 sub activate_tracking {
     # XXX decide whether to use GPS::NMEA or gpsd
-    activate_gpsd_tracking();
+    if (GPS_GRABBER eq 'nmea') {
+	activate_nmea_tracking();
+    } else {
+	activate_gpsd_tracking();
+    }
 }
 
 sub activate_nmea_tracking {
-    $gps = GPS::NMEA->new(Port => "/dev/ttyS0", Baud=>4800) # make configurable!!!
+    $gps = GPS::NMEA->new(Port => $main::gps_device||"/dev/ttyS0",
+			  Baud=>4800)
 	or main::status_message("Cannot open GPS device: $!", "die");
     _setup_fileevent($gps);
 }
@@ -183,14 +211,14 @@ sub activate_gpsd_tracking {
     $gpspipe_pid = open my $fh, "-|", "gpspipe", "-r"
 	or die "Cannot execute gpspipe: $!";
     # just a dummy, for parsing and so
-    $gps = GPS::NMEA->new(Port => "/dev/ttyS0", Baud=>4800, do_not_init => 1) # make configurable!!!
+    $gps = GPS::NMEA->new(do_not_init => 1)
 	or main::status_message("Cannot create GPS::NMEA object: $!", "die");
     _setup_fileevent($gps, $fh);
 }
 
 sub activate_dummy_tracking {
     my $file = shift;
-    $gps = GPS::NMEA->new(Port => "/dev/ttyS0", Baud=>4800, do_not_init => 1) # make configurable!!!
+    $gps = GPS::NMEA->new(do_not_init => 1) # make configurable!!!
 	or main::status_message("Cannot create GPS::NMEA object: $!", "die");
     open my $fh, "<", $file
 	or main::status_message("Cannot open $file: $!", "die");
@@ -362,12 +390,12 @@ sub match_position_with_route {
 			    my $live_dist = int Strassen::Util::strecke($main::realcoords[$current_search_route[$j+1]->[StrassenNetz::ROUTE_ARRAYINX()][0]],
 									[split /,/, $sxy]);
 			    if ($live_dist <= 100 && !$reported_point{"$next_street $direction"}) {
-				my @saytext_args = ($next_street, $direction, $live_dist);
+				my @saystreet_args = ($next_street, $direction, $live_dist);
 				if ($do_speech) {
-				    saytext(@saytext_args);
+				    saystreet(@saystreet_args);
 				    $reported_point{"$next_street $direction"} = 1;
 				} else {
-				    warn "Would say: " . saytext_for_german_espeak(@saytext_args) . "\n"; # XXX debug?
+				    warn "Would say: " . saystreet_for_german_espeak(@saystreet_args) . "\n"; # XXX debug?
 				}
 			    }
 			    my(@coord) = main::transpose(@{ $main::realcoords[$current_search_route[$j+1]->[StrassenNetz::ROUTE_ARRAYINX()][0]] });
@@ -383,22 +411,37 @@ sub match_position_with_route {
     $main::c->createText(main::transpose(split /,/, $sxy), -text => "?", -tags => ['gps_track', 'XXX1']);
 }
 
+sub saystreet {
+    if (SPEAK_PROG eq 'festival') {
+	saystreet_festival(@_);
+    } else {
+	saystreet_espeak(@_);
+    }
+}
+
 sub saytext {
-    saytext_espeak(@_);
+    if (SPEAK_PROG eq 'festival') {
+	saytext_festival(@_);
+    } else {
+	saytext_espeak(@_);
+    }
+}
+
+sub saystreet_espeak {
+    my($next_street, $direction, $live_dist) = @_;
+    my $say = saystreet_for_german_espeak($next_street, $direction, $live_dist);
+    saytext_espeak($say);
 }
 
 # optimized for German voice
 sub saytext_espeak {
-    my($next_street, $direction, $live_dist) = @_;
-    my $say = saytext_for_german_espeak($next_street, $direction, $live_dist);
+    my($say) = @_;
     warn "Will say '$say'\n";
-    require IPC::Run;
     IPC::Run::run(["espeak", "-v", "de"], "<", \$say);
 }
 
-sub saytext_for_german_espeak {
+sub saystreet_for_german_espeak {
     my($next_street, $direction, $live_dist) = @_;
-    require Strassen::Strasse;
     $next_street = Strasse::strip_bezirk($next_street);
     $next_street =~ s{str\.}{straße}ig;
     $next_street =~ s{\(}{}g;
@@ -418,18 +461,21 @@ sub saytext_for_german_espeak {
     $say;
 }
 
+sub saystreet_festival {
+    my($next_street, $direction, $live_dist) = @_;
+    my $say = saystreet_for_english_festival($next_street, $direction, $live_dist);
+    saytext_festival($say);
+}
+
 # optimized for English voice
 sub saytext_festival {
-    my($next_street, $direction, $live_dist) = @_;
-    my $say = saytext_for_english_festival($next_street, $direction, $live_dist);
-    require IPC::Run;
+    my $say = shift;
     warn "Will say '$say'\n";
     IPC::Run::run(["text2wave"], "<", \$say, "|", ["play", "-t", "wav", "-"]);
 }
 
-sub saytext_for_english_festival {
+sub saystreet_for_english_festival {
     my($next_street, $direction, $live_dist) = @_;
-    require Strassen::Strasse;
     $next_street = Strasse::strip_bezirk($next_street);
     $next_street =~ s{str\.}{shtrasse}ig;
     $next_street =~ s{allee\b}{ulleh}ig; # not nice
@@ -497,6 +543,6 @@ Needs gpsd installed and running.
 Speech check (using espeak, alternatively can use festival, but only
 with English voice):
 
-    grep -v '^#' data/strassen|tail -n +20 |perl -nle 'm{^([^\t]+)} and print $1' |uniq|perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -nle 'BBBikeGPSTrackingPlugin::saytext($_)'
+    grep -v '^#' data/strassen|tail -n +20 |perl -nle 'm{^([^\t]+)} and print $1' |uniq|perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -nle 'BBBikeGPSTrackingPlugin::saystreet($_)'
 
 =cut
