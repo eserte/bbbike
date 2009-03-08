@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.3 2009/03/06 20:53:32 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.4 2009/03/08 11:52:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $DEBUG);
-$VERSION = 0.01;
+$VERSION = 0.02;
 
 $DEBUG = 0;
 
@@ -30,7 +30,8 @@ use GPS::NMEA 1.12;
 use Karte::Polar;
 use Karte::Standard;
 
-use vars qw($gps_track_mode $gps $gps_fh $replay_speed_conf @gps_track $gpspipe_pid $dont_auto_center $dont_auto_track);
+use vars qw($gps_track_mode $gps $gps_fh $replay_speed_conf @gps_track $gpspipe_pid
+	    $dont_auto_center $dont_auto_track $do_link_to_nearest_street);
 $replay_speed_conf = 1 if !defined $replay_speed_conf;
 
 sub register { 
@@ -100,6 +101,9 @@ sub add_button {
 	      ],
 	      [Checkbutton => "Do not autotrack",
 	       -variable => \$dont_auto_track,
+	      ],
+	      [Checkbutton => "Link to nearest street",
+	       -variable => \$do_link_to_nearest_street,
 	      ],
 	      [Button => "Satellite view",
 	       -command => sub { die "NYI" },
@@ -240,6 +244,7 @@ sub gpsnmea_data_to_ddd {
 sub set_position {
     my($lon, $lat) = @_;
     my($sx,$sy) = $Karte::Polar::obj->map2standard($lon,$lat);
+    my $sxy = "$sx,$sy";
     my($x,$y) = main::transpose($sx,$sy);
     warn "Set position ($lon/$lat) -> ($x,$y)\n" if $DEBUG;
 
@@ -261,12 +266,36 @@ sub set_position {
 
     # Track
     if (!$dont_auto_track) {
-	if (!@gps_track || $gps_track[-1] ne "$sx,$sy") {
+	if (!@gps_track || $gps_track[-1] ne $sxy) {
 	    if (@gps_track) {
 		$main::c->createLine(main::transpose(split /,/, $gps_track[-1]), $x, $y,
 				     -tags => ['gps_track']);
 	    }
-	    push @gps_track, "$sx,$sy";
+	    push @gps_track, $sxy;
+	}
+    }
+
+    if ($do_link_to_nearest_street) {
+	my $s = $main::str_obj{s};
+	if (!$s) {
+	    our $warn_str_obj_once;
+	    if (!$warn_str_obj_once++) {
+		main::status_message("Cannot get str_obj{s} object", "info");
+	    }
+	} else {
+	    my $ret = $s->nearest_point($sxy, FullReturn => 1);
+	    my @coords = (main::transpose($ret->{Coords}[0],$ret->{Coords}[1]),
+			  $x, $y,
+			  main::transpose($ret->{Coords}[2],$ret->{Coords}[3]),
+			 );
+	    my $link_item = $main::c->find(withtag => 'gps_track_link');
+	    if ($link_item) {
+		$main::c->coords($link_item, @coords);
+	    } else {
+		$main::c->createLine(@coords, -fill => 'red',
+				     -tags => ['gps_track', 'gps_track_link'],
+				    );
+	    }
 	}
     }
 }
