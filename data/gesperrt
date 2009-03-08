@@ -534,6 +534,7 @@ Puschkinallee	1 -13044,800 -12922,762 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
 Straßenbahntrasse, nur für Fußgänger bequem passierbar	3nocross::ignrte -12719,-1661 -12755,-1585 -12773,-1544 -12795,-1499 -12833,-1365
 Friedrich-Ebert-Str. -> Am Alten Markt: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3::igndisp -12795,-1499 -12773,-1544 -12583,-1552
+Am Alten Markt -> Friedrich-Ebert-Str.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3::igndisp -12583,-1552 -12773,-1544 -12755,-1585
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13733,-722 -13772,-623
 Brücke mittlerweile gesperrt	2 -19183,7299 -19150,7320
 Prof.-Dr.-Helmert-Str.: Schranke	BNP:3:-93 -7969,-1659
@@ -1452,8 +1453,7 @@ Brücke über Panke: zur Zeit Bauarbeiten, keine Durchfahrt möglich	2:inwork 7753,
 Kynaststraße: Abriss und Neubau bis ca. 2010-03-01	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01, dann als Fußgänger/Radweg konzipiert	2:inwork 8184,14052 8290,14119
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01	2:inwork 8290,14119 8246,14201 8138,14148
-Friedrich-Klausing-Str.: wegen Bauarbeiten gesperrt	2:inwork -12960,1684 -12961,1746 -13087,1746
-Rückbau der Fr.-Ebert-Str. zwischen Breiter Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	2:inwork -12719,-1661 -12755,-1585 -12773,-1544
+Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12719,-1661 -12755,-1585 -12773,-1544
 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12795,-1499
 Brücke über den Torfgraben/Phöben gesperrt, Neubau voraussichtlich bis 2006-12-31	2:inwork -25539,2641 -25453,2418
 Behlertstr.	1 -12370,-354 -12500,-339 -12621,-359 -12821,-417 -12865,-425

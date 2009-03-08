@@ -360,12 +360,17 @@ Am Pfingstberg (Potsdam): Kopfsteinpflaster, OK	Q1 -13089,1135 -12825,1284
 (B2 - Pfingstberg): Parkweg	Q1 -12865,1140 -12796,1037
 Am Waldessaum: Parkweg	Q1 -12825,1284 -12709,1106
 Vogelweide: schlechtes Kopfsteinpflaster	Q3 -12825,1284 -12861,1357 -12906,1446
-Vogelweide: Schotter	Q2 -12906,1446 -12925,1510 -12928,1646 -12928,1686 -12934,1813 -12845,1861 -12713,2000
+Vogelweide: Schotter	Q2 -12906,1446 -12925,1510 -12928,1646 -12928,1686
+Vogelweide: sandiger Weg	Q2 -12928,1686 -12934,1813 -12845,1861 -12766,1932 -12775,1956 -12713,2000
 Angermannstr.: schlechtes Kopfsteinpflaster	Q3 -13108,1278 -13161,1265 -13189,1249
 Angermannstr.: schlechtes Kopfsteinpflaster	Q3 -13161,1265 -13207,1347 -13148,1377 -13115,1379
 (zur Russisch-Orthodoxen Kirche): Asphalt	Q0 -13058,702 -12945,634
 Am Reiherbusch: Kopfsteinpflaster	Q2 -13113,1356 -13057,1384 -12906,1446
 Am Hang: Kopfsteinpflaster	Q2 -13108,1278 -12977,1299 -12861,1357
+Bertinistr.: Asphalt, einige Schlaglöcher	Q0 -12166,1384 -12149,1436 -12181,1526 -12184,1619 -12153,1787 -12164,1834 -12204,1869 -12232,1878
+Bertinistr.: schlechtes Kopfsteinpflaster	Q3 -12232,1878 -12266,1893 -12335,1928
+(Uferweg): Betonplatten mit Steigung/Gefälle	Q2 -12204,1869 -12223,1911
+(Uferweg): wassergebundene Decke	Q1 -12223,1911 -12330,1974 -12424,2034 -12462,2139 -12460,2288
 Gr. Weinmeisterstr (Potsdam): mäßiger Asphalt	Q1 -12511,920 -12510,866 -12512,810 -12514,623 -12520,551 -12618,296
 Gr. Weinmeisterstr (Potsdam): guter Asphalt	Q0 -12618,296 -12582,127 -12557,11
 (Große Weinmeisterstr. - Alleestr.): Asphalt	Q0 -12582,127 -12615,16 -12625,-4
@@ -1616,8 +1621,8 @@ Alte B101-Trasse: feiner Schotter	Q1 7098,-523 6959,-743
 (Postenweg): guter Beton	Q0 17234,-685 17806,-561 18177,-449
 Peter-Hund-Str.: Asphalt	Q0 -13257,1337 -13277,1490 -13294,1681
 Erich-Arendt-Str.: Asphalt	Q0 -13277,1490 -13125,1508
-Friedrich-Klausing-Str.: Asphalt	Q0 -13133,1698 -13087,1696
-Friedrich-Klausing-Str.: Kopfsteinpflaster	Q2 -13084,1679 -12960,1684
+Graf-von-Schwerin-Str.: Asphalt	Q0 -13133,1698 -13087,1696
+Friedrich-Klausing-Str.: Kopfsteinpflaster	Q1 -13084,1679 -12960,1684
 (Friedrich-Klausing-Str. - Vogelweide): Gehwegpflasterung	Q0 -12960,1684 -12928,1686
 (Bärteichpromenade - Goethestr.): unbefestigter Weg	Q2 -85723,-74649 -85668,-74729
 Friedhofstr. (Köthen): gutes Kopfsteinpflaster	Q1 -84798,-74803 -84931,-74887 -85210,-74925
@@ -1955,9 +1960,9 @@ Marquardt: Asphalt	Q0 -18184,4168 -18385,4346 -18371,4555
 (Pfad am Sacrow-Paretzer Kanal): wassergebundene Decke, teilweise nur Rasen	Q2 -15034,3150 -15047,3330 -15211,3351 -15330,3531 -15464,3624 -15775,3702 -16138,3692
 (Sacrow-Paretzer Kanal - Gutsgarten): zweispuriger Betonplattenweg	Q2 -16138,3692 -16279,3292
 Driftweg - entlang der Eisenbahnstrecke: wassergebundene Decke	Q1 -18908,5040 -18794,5024 -18743,4789 -18722,4681
-Graf-von-Schwerin-Str.: Kopfsteinpflaster	Q2 -13067,1506 -13084,1679 -13087,1696
+Graf-von-Schwerin-Str.: Kopfsteinpflaster	Q1 -13067,1506 -13084,1679 -13087,1696
 Graf-von-Schwerin-Str.: Asphalt	Q0 -13087,1696 -13087,1746 -13092,1930
-Friedrich-Klausing-Str.: Kopfsteinpflaster	Q2 -12960,1684 -12961,1746 -13087,1746
+Friedrich-Klausing-Str.: Kopfsteinpflaster	Q1 -12960,1684 -12961,1746 -13087,1746
 Fritz-von-der-Lancken-Str.: Asphalt	Q0 -13141,1933 -13092,1930 -13005,1933
 Viereckremise: Asphalt	Q0 -13337,1680 -13339,1762 -13347,1928 -13273,1924 -13205,1928 -13141,1933
 Am Golfplatz: Asphalt	Q0 -14382,3066 -13968,2568 -13918,2534 -13846,2489 -13563,2297 -13200,1980 -13205,1928 -13200,1758
