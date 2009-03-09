@@ -8080,6 +8080,11 @@ sub after_changed_power {
     updatekm();
 }
 
+sub get_reference_journey_time {
+    my $key = $active_speed_power{Type} eq 'power' ? 'PowerTimeSeconds' : 'TimeSeconds';
+    $act_value{$key}->[$active_speed_power{Index}];
+}
+
 # Erzeugt den String für den Label der Geschwindigkeit
 sub mk_speed_txt {
     my($i) = @_;
@@ -14685,13 +14690,13 @@ sub updatekm {
 	}
     }
 
-    my @time;
+    my @time_h;
     for(my $i = 0; $i <= $#speed; $i++) {
 	# XXX implement something similar for "power", too!
 	if ($kopfstein_count->{"speed"}[$i]) {
 	    make_handicap_net();
 	    make_qualitaet_net();
-	    $time[$i] = 0;
+	    $time_h[$i] = 0;
 	    if ($#realcoords > 0) {
 		for(my $ii=0; $ii<$#realcoords; $ii++) {
 		    my $s = Strassen::Util::strecke($realcoords[$ii],$realcoords[$ii+1]);
@@ -14704,11 +14709,11 @@ sub updatekm {
 			push @etappe_speeds, $handicap_s_speed{$cat}
 			    if defined $handicap_s_speed{$cat};
 		    }
-		    $time[$i] += ($s/1000)/min(@etappe_speeds);
+		    $time_h[$i] += ($s/1000)/min(@etappe_speeds);
 		}
 	    }
 	} else {
-	    $time[$i] = ($strecke / 1000) / $speed[$i];
+	    $time_h[$i] = ($strecke / 1000) / $speed[$i];
 	}
     }
     my $dir_strecke =
@@ -14731,21 +14736,21 @@ sub updatekm {
 			   }
 			   : "");
     for(my $i = 0; $i <= $#speed; $i++) {
-	my $time = $time[$i] +
+	my $time_h = $time_h[$i] +
 	  (defined $lost_time_s && $ampel_count->{"speed"}[$i]
 	   ? $lost_time_s/3600 : 0);
-	$time += ($lost_time_tragen_s+$lost_time_narrowpassage_s)/3600;
-	$act_value{Time}->[$i] = h2hm($time) . " h";
+	$time_h += ($lost_time_tragen_s+$lost_time_narrowpassage_s)/3600;
+	$act_value{TimeSeconds}->[$i] = $time_h*3600;
+	$act_value{Time}->[$i] = h2hm($time_h) . " h";
     }
 
     if ($bikepwr) {
 	for(my $i = 0; $i <= $#power; $i++) {
-	    my $h = int($bikepwr_time[$i]/3600);
-	    my $m = int(($bikepwr_time[$i] - $h*3600) / 60);
 	    my $time = $bikepwr_time[$i] +
 	      (defined $lost_time_s && $ampel_count->{"power"}[$i]
 	       ? $lost_time_s : 0);
 	    $time += ($lost_time_tragen_s+$lost_time_narrowpassage_s)/3600;
+	    $act_value{PowerTimeSeconds}->[$i] = $time;
 	    $act_value{PowerTime}->[$i] = s2hm($time) . " h";
 	    if (!$edit_mode && !$edit_normal_mode) {
 		$calories_power[$i] = float_prec($bikepwr_cal[$i], 1);
@@ -14773,6 +14778,7 @@ sub resetroute {
     $act_value{Km} = "";
     $act_value{Percent} = "";
     for(my $i = 0; $i <= $#speed; $i++) {
+	$act_value{TimeSeconds}->[$i] = undef;
 	$act_value{Time}->[$i] = "";
 	#XXX $bikepwr_cal_spd[$i] = 0;
     }
@@ -14783,6 +14789,7 @@ sub resetroute {
 	    @{$bikepwr_all_time[$i]} = ();
 	    $bikepwr_time[$i] = 0;
 	    $bikepwr_cal[$i] = 0;
+	    $act_value{PowerTimeSeconds}->[$i] = undef;
 	    $act_value{PowerTime}->[$i] = "";
 	}
     }
