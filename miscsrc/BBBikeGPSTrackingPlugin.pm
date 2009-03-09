@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.12 2009/03/09 23:44:41 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.13 2009/03/09 23:45:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -212,7 +212,7 @@ sub init_speech {
 				       ? ('Leistung', $main::power[$main::active_speed_power{Index}], 'Watt')
 				       : ('Geschwindigkeit', $main::speed[$main::active_speed_power{Index}], 'km pro Stunde')
 				      );
-	    saytext('Die voraussichtliche Fahrzeit beträgt ' . de_time_period($h,$m) . ' bei einer '
+	    sayssml('Die voraussichtliche Fahrzeit beträgt ' . de_time_period($h,$m) . ' bei <break/> einer '
 		    . $XXX . ' von ' . $value . ' ' . $unit . '.');
 	}
     };
@@ -463,23 +463,39 @@ sub match_position_with_route {
 		    for my $j (0 .. $#current_search_route) {
 			if ($to_index >= $current_search_route[$j]->[StrassenNetz::ROUTE_ARRAYINX()][0]+1 &&
 			    $to_index <= $current_search_route[$j]->[StrassenNetz::ROUTE_ARRAYINX()][1]+1) {
-			    my $next_street = $current_search_route[$j+1]->[StrassenNetz::ROUTE_NAME()];
-			    my $important = $current_search_route[$j]->[StrassenNetz::ROUTE_EXTRA()]->{ImportantAngle};
-			    my $direction = uc $current_search_route[$j]->[StrassenNetz::ROUTE_DIR()];
-			    $direction = '' if !$important;
-			    my $live_dist = int Strassen::Util::strecke($main::realcoords[$current_search_route[$j+1]->[StrassenNetz::ROUTE_ARRAYINX()][0]],
-									[split /,/, $sxy]);
-			    if ($live_dist <= 100 && !$reported_point{"$next_street $direction"}) {
-				my @saydirection_args = ($next_street, $direction, $live_dist);
-				if ($do_speech) {
-				    saydirection(@saydirection_args);
-				    $reported_point{"$next_street $direction"} = 1;
-				} else {
-				    warn "Would say: " . saydirection_for_german_espeak(@saydirection_args) . "\n"; # XXX debug?
+			    if ($j == $#current_search_route) {
+				my $live_dist = int Strassen::Util::strecke($main::realcoords[-1], [split /,/, $sxy]);
+				my $text = "In $live_dist Metern ist das Ziel erreicht."; # don't need singular, I think
+				if (#$live_dist <= 100 && # XXX The inability to do this condition is a bug!
+				    !$reported_point{"Ziel"}) {
+				    if ($do_speech) {
+					saytext($text);
+					$reported_point{"Ziel"} = 1;
+				    } else {
+					warn "Would say: $text\n"; # XXX debug?
+				    }
 				}
+				my(@coord) = main::transpose(@{ $main::realcoords[-1] });
+				$main::c->createText(@coord, -text => "Ziel in $live_dist m", -tags => ['gps_track', 'XXX1']);
+			    } else {
+				my $next_street = $current_search_route[$j+1]->[StrassenNetz::ROUTE_NAME()];
+				my $important = $current_search_route[$j]->[StrassenNetz::ROUTE_EXTRA()]->{ImportantAngle};
+				my $direction = uc $current_search_route[$j]->[StrassenNetz::ROUTE_DIR()];
+				$direction = '' if !$important;
+				my $live_dist = int Strassen::Util::strecke($main::realcoords[$current_search_route[$j+1]->[StrassenNetz::ROUTE_ARRAYINX()][0]],
+									    [split /,/, $sxy]);
+				if ($live_dist <= 100 && !$reported_point{"$next_street $direction"}) {
+				    my @saydirection_args = ($next_street, $direction, $live_dist);
+				    if ($do_speech) {
+					saydirection(@saydirection_args);
+					$reported_point{"$next_street $direction"} = 1;
+				    } else {
+					warn "Would say: " . saydirection_for_german_espeak(@saydirection_args) . "\n"; # XXX debug?
+				    }
+				}
+				my(@coord) = main::transpose(@{ $main::realcoords[$current_search_route[$j+1]->[StrassenNetz::ROUTE_ARRAYINX()][0]] });
+				$main::c->createText(@coord, -text => "$next_street $direction in $live_dist m", -tags => ['gps_track', 'XXX1']);
 			    }
-			    my(@coord) = main::transpose(@{ $main::realcoords[$current_search_route[$j+1]->[StrassenNetz::ROUTE_ARRAYINX()][0]] });
-			    $main::c->createText(@coord, -text => "$next_street $direction in $live_dist m", -tags => ['gps_track', 'XXX1']);
 			    return;
 			}
 		    }
@@ -507,6 +523,18 @@ sub saytext {
     }
 }
 
+sub sayssml {
+    if (SPEAK_PROG eq 'festival') {
+	# just strip XML tags
+	for (@_) {
+	    s{</?.*?>}{}g;
+	}
+	saytext_festival(@_);
+    } else {
+	sayssml_espeak(@_);
+    }
+}
+
 sub saydirection_espeak {
     my($next_street, $direction, $live_dist) = @_;
     my $say = saydirection_for_german_espeak($next_street, $direction, $live_dist);
@@ -518,6 +546,12 @@ sub saytext_espeak {
     my($say) = @_;
     warn "Will say '$say'\n";
     IPC::Run::run(["espeak", "-v", "de"], "<", \$say);
+}
+
+sub sayssml_espeak {
+    my($say) = @_;
+    warn "Will say '$say' (as SSML)\n";
+    IPC::Run::run(["espeak", "-m", "-v", "de"], "<", \$say);
 }
 
 sub saystreet_for_german_espeak {
@@ -713,5 +747,145 @@ More snippets:
     perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -e 'package BBBikeGPSTrackingPlugin; $current_accuracy = 9999; saytext(gps_info_text_de())'
 
     perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -e 'package BBBikeGPSTrackingPlugin; $current_accuracy = 12; saytext(gps_info_text_de())'
+
+=head2 TODO
+
+=head3 Navigation
+
+ * Die aktuelle Richtung muss unbedingt in die Berechnung der Position
+   und Richtung eingehen! Damit kann das Problem der kreuzenden
+   Nebenstraßen behoben werden.
+
+ * Je nachdem, wie genau der GPS-Empfang ist, sollte die Vorwarnung
+   früher oder später kommen.
+
+ * Vorwarnzeit sollte von der prognostizierten Zeit (bisherige
+   Geschwindigkeit, zukünftige Geschwindigkeit, Entfernung) statt nur
+   von der Entfernung abhängen.
+
+ * Je nachdem, wie kompliziert die Wegführung ist (ggfs. frühzeitiges
+   Einordnen!) sollte eine Vorwarnung früher oder später kommen. Z.B.
+   Linksabbiegen auf einer Hauptstraße sehr früh, Linksabbiegen auf
+   einer Nebenstraße etwas früher, Geradeausfahren oder
+   Rechtsabbiegen: etwas später.
+
+ * Die Information der Straßenbreiten in die Vorwarnungszeit mit
+   aufnehmen.
+
+ * Bug: manchmal wird "rechts" oder "links" nicht gesprochen,
+   wahrscheinlich, weil es kein "ImportantAngle" ist. Den Algorithmus
+   nochmals überprüfen!
+
+ * Bei Abweichen von der Route sollte es zwei Modi geben:
+
+   * Wenn nur ein Ziel angegeben wurde, dann sollte eine komplette
+     Neuberechnung bis zum Ziel erfolgen.
+
+   * Wenn eine Wunschroute angegeben wurde, dann sollte eine möglichst
+     direkte Strecke zurück zur Wunschroute gefunden werden, aber
+     möglichst ohne den Fahrer umdrehen zu lassen.
+
+ * Allgemeine Vias angeben (Briefkasten, Geldautomat ...)
+
+=head3 Speech
+
+ * An die Umgebungslautstärke anpassen. Das könnte einerseits mit
+   einem Mikrofon und der Analyse der Lautstärke passieren, oder man
+   arbeitet mit einer Heuristik: auf Hauptstraßen und
+   comments_kfz>0-Straßen wird lauter gesprochen, auf Nebenstraßen
+   leiser. Evtl. sehr leise, wenn NN+green.
+
+   Siehe auch "-a ..." (Amplitude) bei espeak. 100 ist normal, 200 ist
+   etwas lauter. Oder mit dem Mixer (amixer set Master ...) arbeiten.
+
+ * Das Programm soll per Audio warnen, wenn sich die GPS-Genauigkeit
+   verschlechtert oder gar der Fix verloren geht. Es sollte auch einen
+   Hinweis bei einer wieder aufgenommenen GPS-Verbindung geben, aber
+   es sollte auch Flapping erkannt werden.
+
+ * Falls kein GPS-Empfang mehr da ist, könnte das Programm trotzdem
+   noch weiterhelfen, indem es die bisherige Geschwindigkeit annimmt
+   und mit dieser Zeit weiter navigiert.
+
+ * Komplizierte Wegführungen zusammenfassen, z.B. wenn innerhalb von
+   wenigen Metern mehrfach abgebogen werden muss (Beispiel:
+   Kreuzberg-, Methfesselstr. )
+
+ * Verschiedene Quasselstufen: der Bereich fängt an bei den nur
+   wichtigsten Sachen (Abbiegevorgänge) bis hin zu der Kommentierung
+   jeder Kreuzung. Folgende Punkte könnten gesprochen werden:
+
+   * Abbiegevorgänge
+
+   * neuer Straßenname bei Geradeausfahrten
+
+   * Vorfahrtsregelung (rechts-vor-links, Vorfahrt gewähren, nicht der
+     abknickenden Vorfahrt folgen, bei höheren Quasselstufen auch
+     Ampel und Vorfahrt)
+
+   * Radwegeregelung (Benutzungspflicht, Radspur etc.)
+
+   * interessante Qualitätsänderungen (Kopfsteinpflaster...)
+
+   * interessante Handicapveränderungen
+
+   * ausgeschilderte Radrouten
+
+   * comments_danger
+
+   * Steigungen, Gefälle (unterschiedliche Quasselstufen ->
+     unterschiedliche Mindestprozentzahlen)
+
+   * jede Nebenstraße kommentieren
+
+   * bei langen Geradeausfahrten diese ankündigen (mit Zeit und
+     Entfernung)
+
+   * warnen, wenn die Batteriedauer nicht bis zur Ankunftszeit reichen
+     würde (aber auch hier Flapping entdecken!)
+
+   * Aktueller GPS-Status (falls lange nicht gesagt und schon lange
+     nichts anderes gesagt wurde) (kurz: "2D-Fix", "3D-Fix", oder: "n
+     Sateliten von m werden angezapft" ..., oder nur die horizontale
+     Genauigkeit)
+
+   * Aktueller Batterie-Status (falls lange nicht gesagt und schon
+     lange nichts anderes gesagt wurde)
+
+   * Aktuelle Geschwindigkeit und bisherige
+     Durchschnittsgeschwindigkeit, vielleicht auch eine Prognose?
+
+   * Ankunftszeit, relativ und absolut
+
+   * Entfernung bis zum Ziel
+
+   * "Sie haben Ihr Ziel erreicht"
+
+   * Evtl. Empfehlungen zur optimalen Geschwindigkeit, zum Beispiel
+     bei bekannten Ampelschaltungen und erkannter Wartezeit vor einer
+     roten Ampel. Zumindest kann die Dauer einer Rot/Grünphase
+     angesagt werden.
+
+   Es sollte darauf geachtet werden, dass wichtige Ansagen nicht von
+   unwichtigen überschattet werden. Vielleicht sollte man mit
+   Minimalpausen zwischen Texten arbeiten.
+
+   Sinnvoll ist wohl auch, die Wartezeit an roten Ampeln mit Angaben
+   zu nutzen. Dann ist man am wenigsten abgelenkt.
+
+ * Bessere Heursistik, um das Wiederholen von Straßennamen zu
+   vermeiden (besser als der derzeitige seen-Hash)
+
+ * saytext sollte nicht blockieren, sondern lieber einen Lock setzen.
+   Es gibt Prioritäten für gesprochenen Text: falls ein höher
+   priorisierter Text sofort gesprochen werden soll, dann kann er
+   einen niedriger priorisierten unterbrechen, vielleicht mit einem
+   Füllwort wie "sorry" oder so.
+
+=head3 Internationalization
+
+ * English texts
+
+ * Other customs?
 
 =cut
