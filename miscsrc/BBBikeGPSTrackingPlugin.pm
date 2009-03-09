@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.11 2009/03/08 11:53:14 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.12 2009/03/09 23:44:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -26,9 +26,10 @@ $VERSION = 0.03;
 $DEBUG = 0;
 
 use GPS::NMEA 1.12;
+use Hash::Util qw(lock_keys);
 use IPC::Run qw();
 
-use BBBikeUtil qw(is_in_path);
+use BBBikeUtil qw(is_in_path s2hm);
 use Karte::Polar;
 use Karte::Standard;
 use Strassen::Strasse;
@@ -43,7 +44,8 @@ use vars qw($gps_track_mode $gps $gps_fh $replay_speed_conf @gps_track $gpspipe_
 	  );
 $replay_speed_conf = 1 if !defined $replay_speed_conf;
 
-use your qw($main::gps_device $main::capstyle_round %main::str_obj $main::Checkbutton %main::font);
+use your qw($main::gps_device $main::capstyle_round %main::str_obj $main::Checkbutton %main::font
+	    @main::speed @main::power);
 
 sub register {
     my $pkg = __PACKAGE__;
@@ -124,10 +126,10 @@ sub add_button {
 			   @current_search_route = @{ main::get_act_search_route() };
 			   %reported_point = ();
 		       };
-		       Hooks::get_hooks("new_route")->add($init, __PACKAGE__);
+		       Hooks::get_hooks("new_route")->add($init, __PACKAGE__ . "_navigate");
 		       $init->();
 		   } else {
-		       Hooks::get_hooks("new_route")->del(__PACKAGE__);
+		       Hooks::get_hooks("new_route")->del(__PACKAGE__ . "_navigate");
 		   }
 	       },
 	      ],
@@ -135,7 +137,9 @@ sub add_button {
 	       -variable => \$do_speech,
 	       -command => sub {
 		   if ($do_speech) {
-		       saytext("Die Audio-Navigation ist eingeschaltet.");
+		       init_speech();
+		   } else {
+		       Hooks::get_hooks("new_route")->del(__PACKAGE__ . "_speech");
 		   }
 	       },
 	      ],
@@ -188,6 +192,32 @@ sub add_button {
 	    );
 
     $mmf->Subwidget(__PACKAGE__."_menu")->menu;
+}
+
+sub init_speech {
+    saytext("Die Audio-Navigation ist eingeschaltet.");
+    saytext({power_info()}->{msg_de});
+    saytext(gps_info_text_de());
+    my $say_route_info = sub {
+	# XXX unfortunately we cannot assume that
+	# @current_search_route is filled yet, hook execution order is
+	# undefined!
+	my @search_route = @{ main::get_act_search_route() };
+	if (!@search_route) {
+	    saytext("Es ist keine Route definiert.");
+	} else {
+	    saytext("Eine Route nach " . saystreet_for_german_espeak($search_route[-1][StrassenNetz::ROUTE_NAME()]) . " ist definiert.");
+	    my($h,$m) = split /:/, s2hm(main::get_reference_journey_time());
+	    my($XXX, $value, $unit) = ($main::active_speed_power{Type} eq 'power'
+				       ? ('Leistung', $main::power[$main::active_speed_power{Index}], 'Watt')
+				       : ('Geschwindigkeit', $main::speed[$main::active_speed_power{Index}], 'km pro Stunde')
+				      );
+	    saytext('Die voraussichtliche Fahrzeit betr‰gt ' . de_time_period($h,$m) . ' bei einer '
+		    . $XXX . ' von ' . $value . ' ' . $unit . '.');
+	}
+    };
+    Hooks::get_hooks("new_route")->add($say_route_info, __PACKAGE__ . "_speech");
+    $say_route_info->();
 }
 
 sub activate_tracking {
@@ -327,23 +357,37 @@ sub set_position {
 	}
     }
     if (defined $current_accuracy) {
-	my(@coord) = (main::transpose($sx-$current_accuracy,$sy-$current_accuracy),
-		      main::transpose($sx+$current_accuracy,$sy+$current_accuracy));
-
-	my $acc_item = $main::c->find(withtag => 'gps_track_acc');
-	if ($acc_item) {
-	    $main::c->coords($acc_item, @coord);
+	my $set_acc_text = sub {
+	    my($cx,$cy,$text,@args) = @_;
+	    my $acc_text_item = $main::c->find(withtag => 'gps_track_acc_text');
+	    if ($acc_text_item) {
+		$main::c->coords($acc_text_item, $cx, $cy);
+	    } else {
+		$acc_text_item = $main::c->createText($cx, $cy,
+						      -font => $main::font{'tiny'},
+						      -justify => 'left',
+						      -tags => ['gps_track', 'gps_track_acc_text'],
+						     );
+	    }
+	    $main::c->itemconfigure($acc_text_item, -text => $text, @args);
+	};
+	if ($current_accuracy > 1000) {
+	    my @coord = main::transpose($sx,$sy);
+	    $main::c->delete('gps_track_acc');
+	    $set_acc_text->(@coord, "???", -anchor => 's');
 	} else {
-	    $main::c->createOval(@coord, -tags => ['gps_track', 'gps_track_acc']);
-	}
+	    my @coord = (main::transpose($sx-$current_accuracy,$sy-$current_accuracy),
+			 main::transpose($sx+$current_accuracy,$sy+$current_accuracy));
 
-	my $acc_text_item = $main::c->find(withtag => 'gps_track_acc_text');
-	if ($acc_text_item) {
-	    $main::c->coords($acc_text_item, @coord[2,3]);
-	} else {
-	    $acc_text_item = $main::c->createText(@coord[2,3], -font => $main::font{'tiny'}, -tags => ['gps_track', 'gps_track_acc_text']);
+	    my $acc_item = $main::c->find(withtag => 'gps_track_acc');
+	    if ($acc_item) {
+		$main::c->coords($acc_item, @coord);
+	    } else {
+		$main::c->createOval(@coord, -tags => ['gps_track', 'gps_track_acc']);
+	    }
+
+	    $set_acc_text->(@coord[2,3], int($current_accuracy), -anchor => 'c');
 	}
-	$main::c->itemconfigure($acc_text_item, -text => int($current_accuracy));
     } else {
 	$main::c->delete('gps_track_acc', 'gps_track_acc_text');
     }
@@ -426,12 +470,12 @@ sub match_position_with_route {
 			    my $live_dist = int Strassen::Util::strecke($main::realcoords[$current_search_route[$j+1]->[StrassenNetz::ROUTE_ARRAYINX()][0]],
 									[split /,/, $sxy]);
 			    if ($live_dist <= 100 && !$reported_point{"$next_street $direction"}) {
-				my @saystreet_args = ($next_street, $direction, $live_dist);
+				my @saydirection_args = ($next_street, $direction, $live_dist);
 				if ($do_speech) {
-				    saystreet(@saystreet_args);
+				    saydirection(@saydirection_args);
 				    $reported_point{"$next_street $direction"} = 1;
 				} else {
-				    warn "Would say: " . saystreet_for_german_espeak(@saystreet_args) . "\n"; # XXX debug?
+				    warn "Would say: " . saydirection_for_german_espeak(@saydirection_args) . "\n"; # XXX debug?
 				}
 			    }
 			    my(@coord) = main::transpose(@{ $main::realcoords[$current_search_route[$j+1]->[StrassenNetz::ROUTE_ARRAYINX()][0]] });
@@ -447,11 +491,11 @@ sub match_position_with_route {
     $main::c->createText(main::transpose(split /,/, $sxy), -text => "?", -tags => ['gps_track', 'XXX1']);
 }
 
-sub saystreet {
+sub saydirection {
     if (SPEAK_PROG eq 'festival') {
-	saystreet_festival(@_);
+	saydirection_festival(@_);
     } else {
-	saystreet_espeak(@_);
+	saydirection_espeak(@_);
     }
 }
 
@@ -463,9 +507,9 @@ sub saytext {
     }
 }
 
-sub saystreet_espeak {
+sub saydirection_espeak {
     my($next_street, $direction, $live_dist) = @_;
-    my $say = saystreet_for_german_espeak($next_street, $direction, $live_dist);
+    my $say = saydirection_for_german_espeak($next_street, $direction, $live_dist);
     saytext_espeak($say);
 }
 
@@ -477,11 +521,17 @@ sub saytext_espeak {
 }
 
 sub saystreet_for_german_espeak {
+    my $street = shift;
+    $street = Strasse::strip_bezirk($street);
+    $street =~ s{str\.}{straﬂe}ig;
+    $street =~ s{\(}{}g;
+    $street =~ s{\)}{}g;
+    $street;
+}
+
+sub saydirection_for_german_espeak {
     my($next_street, $direction, $live_dist) = @_;
-    $next_street = Strasse::strip_bezirk($next_street);
-    $next_street =~ s{str\.}{straﬂe}ig;
-    $next_street =~ s{\(}{}g;
-    $next_street =~ s{\)}{}g;
+    $next_street = saystreet_for_german_espeak($next_street);
     my $praeposition;
     my $say;
     if ($next_street =~ m{ - }) {
@@ -497,9 +547,9 @@ sub saystreet_for_german_espeak {
     $say;
 }
 
-sub saystreet_festival {
+sub saydirection_festival {
     my($next_street, $direction, $live_dist) = @_;
-    my $say = saystreet_for_english_festival($next_street, $direction, $live_dist);
+    my $say = saydirection_for_english_festival($next_street, $direction, $live_dist);
     saytext_festival($say);
 }
 
@@ -510,7 +560,7 @@ sub saytext_festival {
     IPC::Run::run(["text2wave"], "<", \$say, "|", ["play", "-t", "wav", "-"]);
 }
 
-sub saystreet_for_english_festival {
+sub saydirection_for_english_festival {
     my($next_street, $direction, $live_dist) = @_;
     $next_street = Strasse::strip_bezirk($next_street);
     $next_street =~ s{str\.}{shtrasse}ig;
@@ -557,6 +607,76 @@ sub kill_gpspipe {
     }
 }
 
+sub power_info {
+    my %info = ( discharging_remaining => undef,
+		 charging_remaining => undef,
+		 state => "unknown",
+		 msg_de => "Der Batterystatus ist unbekannt."
+	       );
+    lock_keys %info;
+    if (is_in_path("acpi")) {
+	my $battery_acpi_info;
+	IPC::Run::run(["acpi", "-b"], ">", \$battery_acpi_info);
+	my @batteries = split /\n/, $battery_acpi_info;
+	# XXX How to calculate if there are multiple batteries?
+	if (my($percent, $H, $M, $S) = $batteries[0] =~ m{discharging,\s+(\d+)%,\s+(\d+):(\d+):(\d+)\s+remaining}i) {
+	    $info{state} = "discharging";
+	    $info{discharging_remaining} = $H*3600+$M*60+$S;
+	    $info{msg_de} = "Die Batterie h‰lt noch " . de_time_period($H,$M) . ".";
+	} elsif (($percent, $H, $M, $S) = $batteries[0] =~ m{\bcharging,\s+(\d+)%,\s+(\d+):(\d+):(\d+)\s+until charged}i) {
+	    $info{state} = "charging";
+	    $info{charging_remaining} = $H*3600+$M*60+$S;
+	    $info{msg_de} = "Die Batterie wird in " . de_time_period($H,$M) . " aufgeladen sein.";
+	} elsif ($batteries[0] =~ m{\bfull\b}i) {
+	    $info{state} = "full";
+	    $info{msg_de} = "Die Batterie ist voll aufgeladen.";
+	} else {
+	    $info{msg_de} = "Die ACPI-Ausgabe konnte nicht geparst werden. Die Ausabe lautet: $batteries[0].";
+	}
+    }
+    %info;
+}
+
+sub gps_info_text_de {
+    # assume current_accuracy etc. is already set
+    my $msg = "";
+    if ($current_accuracy > 1000) {
+	$msg .= "Es gibt zurzeit keinen GPS-Empfang. ";
+    } else {
+	my $int_acc = int $current_accuracy;
+	$msg .= "Die GPS-Genauigkeit betr‰gt " . ($int_acc == 1 ? "einen " : "$int_acc ") . "Meter.";
+    }
+    $msg;
+}
+
+sub de_time_period {
+    my($H,$M,$S) = @_;
+    $_+=0 for ($H,$M,$S); # avoid things like "02 Stunden"    
+    my $msg = ($H >= 2 ? "$H Stunden " :
+	       $H >= 1 ? "eine Stunde " :
+	       ""
+	      );
+    if ($msg && $M) {
+	$msg .= "und ";
+    }
+    $msg .= ($M >= 2 ? "$M Minuten " :
+	     $M >= 1 ? "eine Minute " :
+	     ""
+	    );
+    if ($msg && $S) {
+	$msg .= "und ";
+    }
+    $msg .= ($S >= 2 ? "$M Sekunden" :
+	     $S >= 1 ? "eine Sekunde" :
+	     ""
+	    );
+    $msg =~ s{\s+$}{};
+    if ($msg eq '') {
+	$msg = 'eine unbekannte Zeitdauer';
+    }
+    $msg;
+}
+
 return 1 if caller;
 
 # Just for quick testing with a sample NMEA file.
@@ -579,11 +699,19 @@ Needs gpsd installed and running.
 Speech check (using espeak, alternatively can use festival, but only
 with English voice):
 
-    grep -v '^#' data/strassen|tail -n +20 |perl -nle 'm{^([^\t]+)} and print $1' |uniq|perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -nle 'BBBikeGPSTrackingPlugin::saystreet($_)'
+    grep -v '^#' data/strassen|tail -n +20 |perl -nle 'm{^([^\t]+)} and print $1' |uniq|perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -nle 'BBBikeGPSTrackingPlugin::saydirection($_)'
 
 Some observations:
 
 the accuracy as returned from the PGRME NMEA command is twice of what
 the Garmin etrex Vista HCx is reporting.
+
+More snippets:
+
+    perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -e 'package BBBikeGPSTrackingPlugin; saytext({power_info()}->{msg_de})'
+
+    perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -e 'package BBBikeGPSTrackingPlugin; $current_accuracy = 9999; saytext(gps_info_text_de())'
+
+    perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -e 'package BBBikeGPSTrackingPlugin; $current_accuracy = 12; saytext(gps_info_text_de())'
 
 =cut
