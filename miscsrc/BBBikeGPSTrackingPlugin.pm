@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.16 2009/03/11 22:59:30 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.17 2009/03/11 22:59:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -48,7 +48,7 @@ $MBROLA_LANG_FILE = "$ENV{HOME}/Desktop/mbrola/de1/de1" if !defined $MBROLA_LANG
 use vars qw($gps_track_mode $gps $gps_fh $replay_speed_conf @gps_track $gpspipe_pid
 	    $dont_auto_center $dont_auto_track $do_link_to_nearest_street
 	    $do_navigate @current_search_route $do_speech
-	    %reported_point $current_accuracy $current_accuracy_update_time
+	    %reported_point $current_accuracy $current_accuracy2 $current_accuracy_update_time
 	    $gpsd_last_event_time $gpsd_checker $gpsd_state
 	  );
 $replay_speed_conf = 1 if !defined $replay_speed_conf;
@@ -230,6 +230,7 @@ sub init_speech {
 }
 
 sub activate_tracking {
+    undef $current_accuracy;
     # XXX decide whether to use GPS::NMEA or gpsd
     if (GPS_GRABBER eq 'nmea') {
 	activate_nmea_tracking();
@@ -315,12 +316,18 @@ sub _setup_fileevent {
 			}
 			$gpsd_last_event_time = time;
 		    }
-		} elsif ($short_cmd eq 'PGRME') { # XXX Is this Garmin-specific
+		} elsif ($short_cmd eq 'PGRME') { # XXX Is this Garmin-specific? I think so...
 		    chomp $line; # XXX why is this not in the NMEADATA record, but has to be parsed?
 		    $line=~s/\*..\r?$//;
 		    my(@l)=split/,/,$line;
 		    $current_accuracy = $l[1]; # XXX what's $l[3]? what about unit, always M?
 		    $current_accuracy_update_time = time;
+## XXX needs more experiments and reading documents...
+# 		} elsif ($short_cmd eq 'GPGGA') { # alternative accuracy, typically higher values than with PGRME
+# 		    chomp $line; # XXX is this in the NMEADATA record?
+# 		    $line=~s/\*..\r?$//;
+# 		    my(@l)=split/,/,$line;
+# 		    $current_accuracy2 = $l[8]; # XXX what about unit, always M? Ignore $l[10], which is vertical estimate
 		}
 	    }
 	    $line = '';
@@ -410,7 +417,7 @@ sub set_position {
 	};
 	if ($current_accuracy > 1000) {
 	    my @coord = main::transpose($sx,$sy);
-	    $main::c->delete('gps_track_acc');
+	    $main::c->delete('gps_track_acc', 'gps_track_acc2');
 	    $set_acc_text->(@coord, "???", -anchor => 's');
 	} else {
 	    my @coord = (main::transpose($sx-$current_accuracy,$sy-$current_accuracy),
@@ -424,6 +431,17 @@ sub set_position {
 	    }
 
 	    $set_acc_text->(@coord[2,3], int($current_accuracy), -anchor => 'c');
+
+	    if (defined $current_accuracy2) {
+		my @coord2 = (main::transpose($sx-$current_accuracy2,$sy-$current_accuracy2),
+			      main::transpose($sx+$current_accuracy2,$sy+$current_accuracy2));
+		my $acc2_item = $main::c->find(withtag => 'gps_track_acc2');
+		if ($acc2_item) {
+		    $main::c->coords($acc2_item, @coord2);
+		} else {
+		    $main::c->createOval(@coord2, -tags => ['gps_track', 'gps_track_acc2']);
+		}
+	    }
 	}
     } else {
 	$main::c->delete('gps_track_acc', 'gps_track_acc_text');
@@ -434,7 +452,16 @@ sub set_position {
     if (!$dont_auto_track) {
 	if (!@gps_track || $gps_track[-1] ne $sxy) {
 	    if (@gps_track) {
-		$main::c->createLine(main::transpose(split /,/, $gps_track[-1]), $x, $y,
+		my($lastsx,$lastsy) = split /,/, $gps_track[-1];
+		my $last_point_dist = Strassen::Util::strecke([$lastsx,$lastsy],[$sx,$sy]);
+		my($lastx,$lasty);
+		if ($last_point_dist < 100) {
+		    ($lastx,$lasty) = main::transpose($lastsx,$lastsy);
+		} else {
+		    # a jump, don't connect
+		    ($lastx,$lasty) = ($x,$y);
+		}
+		$main::c->createLine($lastx,$lasty, $x,$y,
 				     -tags => ['gps_track']);
 	    }
 	    push @gps_track, $sxy;
