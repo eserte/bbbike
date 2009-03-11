@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.13 2009/03/09 23:45:04 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.14 2009/03/11 22:59:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -34,13 +34,22 @@ use Karte::Polar;
 use Karte::Standard;
 use Strassen::Strasse;
 
-use constant SPEAK_PROG => 'espeak'; # determine dynamically?
 use constant GPS_GRABBER => 'gpsd';  # determine dynamically?
+
+use vars qw($SPEAK_PROG);
+$SPEAK_PROG = 'espeak' if !defined $SPEAK_PROG; # determine dynamically?
+
+use vars qw($MBROLA_LANG $MBROLA_BIN $MBROLA_LANG_FILE $mbrola_tmp);
+# de6 seems to be best
+$MBROLA_LANG = 'de6' if !defined $MBROLA_LANG;
+$MBROLA_BIN = "$ENV{HOME}/Desktop/mbrola/mbrola-linux-i386" if !defined $MBROLA_BIN;
+$MBROLA_LANG_FILE = "$ENV{HOME}/Desktop/mbrola/de1/de1" if !defined $MBROLA_LANG_FILE;
 
 use vars qw($gps_track_mode $gps $gps_fh $replay_speed_conf @gps_track $gpspipe_pid
 	    $dont_auto_center $dont_auto_track $do_link_to_nearest_street
 	    $do_navigate @current_search_route $do_speech
 	    %reported_point $current_accuracy $current_accuracy_update_time
+	    $gpsd_last_event_time $gpsd_checker $gpsd_state
 	  );
 $replay_speed_conf = 1 if !defined $replay_speed_conf;
 
@@ -206,7 +215,7 @@ sub init_speech {
 	if (!@search_route) {
 	    saytext("Es ist keine Route definiert.");
 	} else {
-	    saytext("Eine Route nach " . saystreet_for_german_espeak($search_route[-1][StrassenNetz::ROUTE_NAME()]) . " ist definiert.");
+	    saytext("Eine Route nach " . simplify_street($search_route[-1][StrassenNetz::ROUTE_NAME()]) . " ist definiert.");
 	    my($h,$m) = split /:/, s2hm(main::get_reference_journey_time());
 	    my($XXX, $value, $unit) = ($main::active_speed_power{Type} eq 'power'
 				       ? ('Leistung', $main::power[$main::active_speed_power{Index}], 'Watt')
@@ -299,6 +308,7 @@ sub _setup_fileevent {
 			} else {
 			    set_position($lon, $lat);
 			}
+			$gpsd_last_event_time = time;
 		    }
 		} elsif ($short_cmd eq 'PGRME') { # XXX Is this Garmin-specific
 		    chomp $line; # XXX why is this not in the NMEADATA record, but has to be parsed?
@@ -312,6 +322,28 @@ sub _setup_fileevent {
 	}
     };
     $main::top->fileevent($fh, 'readable', $callback);
+    if ($gpsd_checker) {
+	$gpsd_checker->cancel;
+	undef $gpsd_checker;
+    }
+    $gpsd_checker = $main::top->repeat(10*1000, sub {
+					   if ($gps_track_mode) {
+					       if ($gpsd_last_event_time - time >= 60) {
+						   if (!$gpsd_state || $gpsd_state eq 'alive') {
+						       $gpsd_state = 'dead';
+						       if ($do_speech) {
+							   saytext('Der GPS-Empfang ist unterbrochen.');
+							   $gpsd_state = 'dead_and_reported';
+						       }
+						   }
+					       } else {
+						   if ($gpsd_state && $gpsd_state eq 'dead_and_reported' && $do_speech) {
+						       saytext('Es gibt wieder GPS-Empfang.');
+						   }
+						   $gpsd_state = 'alive';
+					       }
+					   }
+				       });
 }
 
 # Sigh...
@@ -490,7 +522,7 @@ sub match_position_with_route {
 					saydirection(@saydirection_args);
 					$reported_point{"$next_street $direction"} = 1;
 				    } else {
-					warn "Would say: " . saydirection_for_german_espeak(@saydirection_args) . "\n"; # XXX debug?
+					warn "Would say: " . make_german_direction(@saydirection_args) . "\n"; # XXX debug?
 				    }
 				}
 				my(@coord) = main::transpose(@{ $main::realcoords[$current_search_route[$j+1]->[StrassenNetz::ROUTE_ARRAYINX()][0]] });
@@ -507,46 +539,55 @@ sub match_position_with_route {
     $main::c->createText(main::transpose(split /,/, $sxy), -text => "?", -tags => ['gps_track', 'XXX1']);
 }
 
+######################################################################
+# Speech
+
+# Say a direction ($next_street, $direction, $distance) with the
+# default program
 sub saydirection {
-    if (SPEAK_PROG eq 'festival') {
-	saydirection_festival(@_);
-    } else {
-	saydirection_espeak(@_);
-    }
+    my $sub = "saydirection_$SPEAK_PROG";
+    no strict 'refs';
+    &$sub;
 }
 
+# Say normal text ($text) with the default program
 sub saytext {
-    if (SPEAK_PROG eq 'festival') {
-	saytext_festival(@_);
-    } else {
-	saytext_espeak(@_);
-    }
+    my $sub = "saytext_$SPEAK_PROG";
+    no strict 'refs';
+    &$sub;
 }
 
+# Say text with SSML ($ssml) with the default program
 sub sayssml {
-    if (SPEAK_PROG eq 'festival') {
-	# just strip XML tags
-	for (@_) {
-	    s{</?.*?>}{}g;
-	}
-	saytext_festival(@_);
-    } else {
-	sayssml_espeak(@_);
+    my $sub = "sayssml_$SPEAK_PROG";
+    no strict 'refs';
+    &$sub;
+}
+
+######################################################################
+# saydirection_...
+#
+# Say a direction ($next_street, $direction, $distance) with a
+# specific program
+#
+sub saydirection_espeak   { saytext_espeak(make_german_direction(@_)) }
+sub saydirection_mbrola   { saytext_mbrola(make_german_direction(@_)) }
+sub saydirection_festival { saytext_festival(make_direction_for_english_festival(@_)) }
+
+######################################################################
+# sayssml_...
+#
+# Say text with SSML with a specific program
+#
+sub sayssml_festival {
+    # no SSML support, just strip XML tags
+    for (@_) {
+	s{</?.*?>}{}g;
     }
+    saytext_festival(@_);
 }
 
-sub saydirection_espeak {
-    my($next_street, $direction, $live_dist) = @_;
-    my $say = saydirection_for_german_espeak($next_street, $direction, $live_dist);
-    saytext_espeak($say);
-}
-
-# optimized for German voice
-sub saytext_espeak {
-    my($say) = @_;
-    warn "Will say '$say'\n";
-    IPC::Run::run(["espeak", "-v", "de"], "<", \$say);
-}
+sub sayssml_mbrola { _saytext_mbrola($_[0], ssml => 1) }
 
 sub sayssml_espeak {
     my($say) = @_;
@@ -554,7 +595,51 @@ sub sayssml_espeak {
     IPC::Run::run(["espeak", "-m", "-v", "de"], "<", \$say);
 }
 
-sub saystreet_for_german_espeak {
+######################################################################
+# saytext_...
+#
+# Say text with a specific program
+
+# festival: optimized for English voice
+sub saytext_festival {
+    my $say = shift;
+    warn "Will say '$say'\n";
+    IPC::Run::run(["text2wave"], "<", \$say, "|", ["play", "-t", "wav", "-"]);
+}
+
+# espeak: optimized for German voice
+sub saytext_espeak {
+    my($say) = @_;
+    warn "Will say '$say'\n";
+    IPC::Run::run(["espeak", "-v", "de"], "<", \$say);
+}
+
+# mbrola: optimized for German voice
+sub saytext_mbrola { _saytext_mbrola($_[0]) }
+
+# Helper to handle normal and SSML (ssml => 1) text with mbrola:
+sub _saytext_mbrola {
+    my($say, %args) = @_;
+    warn "Will say '$say'\n";
+    require File::Temp;
+    if (!$mbrola_tmp) {
+	(undef, $mbrola_tmp) = File::Temp::tempfile(UNLINK => 1, SUFFIX => "_bbbike_mbrola.wav");
+    }
+
+    # otherwise there's no "sch" in "straﬂe":
+    #$say =~ s{(?<![ -])(straﬂe)}{ $1}gi;
+    $say =~ s{(?<![ -])s(traﬂe)}{sch$1}gi;
+
+    IPC::Run::run(["espeak", "-v", ($args{ssml} ? "-m" : ()), "mb-$MBROLA_LANG"], "<", \$say, "|", [$MBROLA_BIN, "-e", $MBROLA_LANG_FILE, "-", $mbrola_tmp]);
+    IPC::Run::run(["play", $mbrola_tmp]);
+    unlink $mbrola_tmp;
+}
+
+
+######################################################################
+
+# Remove cityparts, expand "str." etc.
+sub simplify_street {
     my $street = shift;
     $street = Strasse::strip_bezirk($street);
     $street =~ s{str\.}{straﬂe}ig;
@@ -563,9 +648,9 @@ sub saystreet_for_german_espeak {
     $street;
 }
 
-sub saydirection_for_german_espeak {
+sub make_german_direction {
     my($next_street, $direction, $live_dist) = @_;
-    $next_street = saystreet_for_german_espeak($next_street);
+    $next_street = simplify_street($next_street);
     my $praeposition;
     my $say;
     if ($next_street =~ m{ - }) {
@@ -581,20 +666,10 @@ sub saydirection_for_german_espeak {
     $say;
 }
 
-sub saydirection_festival {
-    my($next_street, $direction, $live_dist) = @_;
-    my $say = saydirection_for_english_festival($next_street, $direction, $live_dist);
-    saytext_festival($say);
-}
-
-# optimized for English voice
-sub saytext_festival {
-    my $say = shift;
-    warn "Will say '$say'\n";
-    IPC::Run::run(["text2wave"], "<", \$say, "|", ["play", "-t", "wav", "-"]);
-}
-
-sub saydirection_for_english_festival {
+# This is a hack for festival with an English voice: say praepositions
+# etc. in English, and mangle the street names to be pronounced like
+# in German
+sub make_direction_for_english_festival {
     my($next_street, $direction, $live_dist) = @_;
     $next_street = Strasse::strip_bezirk($next_street);
     $next_street =~ s{str\.}{shtrasse}ig;
@@ -626,10 +701,14 @@ sub saydirection_for_english_festival {
     $say;
 }
 
+######################################################################
+# Cleanups
 sub deactivate_tracking {
     return if !$gps_fh;
     $main::top->fileevent($gps_fh, 'readable', '');
     undef $gps_fh;
+    $gpsd_checker->cancel if $gpsd_checker;
+    undef $gpsd_checker;
     $gps_track_mode = 0;
     kill_gpspipe();
 }
@@ -641,6 +720,8 @@ sub kill_gpspipe {
     }
 }
 
+######################################################################
+# Information to audible text
 sub power_info {
     my %info = ( discharging_remaining => undef,
 		 charging_remaining => undef,
@@ -713,6 +794,7 @@ sub de_time_period {
 
 return 1 if caller;
 
+######################################################################
 # Just for quick testing with a sample NMEA file.
 package main;
 require Tk;
@@ -733,7 +815,7 @@ Needs gpsd installed and running.
 Speech check (using espeak, alternatively can use festival, but only
 with English voice):
 
-    grep -v '^#' data/strassen|tail -n +20 |perl -nle 'm{^([^\t]+)} and print $1' |uniq|perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -nle 'BBBikeGPSTrackingPlugin::saydirection($_)'
+    grep -v '^#' data/strassen|tail -n +20 |perl -nle 'm{^([^\t]+)} and print $1' |uniq|perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -nle 'package BBBikeGPSTrackingPlugin; saydirection($_)'
 
 Some observations:
 
@@ -742,7 +824,15 @@ the Garmin etrex Vista HCx is reporting.
 
 More snippets:
 
+  Say the current power information:
+
     perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -e 'package BBBikeGPSTrackingPlugin; saytext({power_info()}->{msg_de})'
+
+  Say something using mbrola (see source code for exact setup!)
+
+    perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -e 'package BBBikeGPSTrackingPlugin; saytext_mbrola("@ARGV")' some text
+
+  Say the current (faked) GPS information:
 
     perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -e 'package BBBikeGPSTrackingPlugin; $current_accuracy = 9999; saytext(gps_info_text_de())'
 
