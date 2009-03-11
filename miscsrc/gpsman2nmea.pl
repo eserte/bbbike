@@ -17,7 +17,14 @@ use strict;
 use FindBin;
 use lib "$FindBin::RealBin/..";
 
+use Getopt::Long;
+
 use GPS::GpsmanData::Any;
+
+my $fake_accuracy;
+GetOptions("fake-accuracy!" => \$fake_accuracy)
+    or die "usage: $0 [-fake-accuracy] file";
+my $faked_acc = 20;
 
 my $gps = GPS::GpsmanData::Any->load(shift);
 for my $chunk (@{ $gps->Chunks }) {
@@ -38,10 +45,24 @@ for my $chunk (@{ $gps->Chunks }) {
 	$lat_m*=60;
 	my $lat_dmm = sprintf "%02d%07.4f", $lat_d, $lat_m;
 
-	my $nmea_line = '$GPRMC,000000,A,' . "$lat_dmm,$lat_sgn,$lon_dmm,$lon_sgn,0.0,0.0,010109,1.8,E,A";
-	$nmea_line .= '*'.checksum($nmea_line);
-	print $nmea_line, "\n";
+	print_nmea_line('$GPRMC,000000,A,' . "$lat_dmm,$lat_sgn,$lon_dmm,$lon_sgn,0.0,0.0,010109,1.8,E,A");
+	if ($fake_accuracy) {
+	    my $acc_delta = rand(3)-1.5;
+	    $faked_acc += $acc_delta;
+	    if ($faked_acc < 6) {
+		$faked_acc += abs($acc_delta)*2;
+	    } elsif ($faked_acc > 50) {
+		$faked_acc -= abs($acc_delta)*2;
+	    }
+	    print_nmea_line('$PGRME,'.sprintf("%.3f",$faked_acc).',M,'.sprintf("%.3f",$faked_acc).',M,'.sprintf("%.3f",$faked_acc).',M');
+	}
     }
+}
+
+sub print_nmea_line {
+    my $line = shift;
+    $line .= '*'.checksum($line);
+    print $line, "\n";
 }
 
 # from GPS::NMEA
