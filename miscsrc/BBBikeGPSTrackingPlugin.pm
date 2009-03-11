@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.14 2009/03/11 22:59:12 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.15 2009/03/11 22:59:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -630,7 +630,7 @@ sub _saytext_mbrola {
     #$say =~ s{(?<![ -])(straße)}{ $1}gi;
     $say =~ s{(?<![ -])s(traße)}{sch$1}gi;
 
-    IPC::Run::run(["espeak", "-v", ($args{ssml} ? "-m" : ()), "mb-$MBROLA_LANG"], "<", \$say, "|", [$MBROLA_BIN, "-e", $MBROLA_LANG_FILE, "-", $mbrola_tmp]);
+    IPC::Run::run(["espeak", ($args{ssml} ? "-m" : ()), "-v", "mb-$MBROLA_LANG"], "<", \$say, "|", [$MBROLA_BIN, "-e", $MBROLA_LANG_FILE, "-", $mbrola_tmp]);
     IPC::Run::run(["play", $mbrola_tmp]);
     unlink $mbrola_tmp;
 }
@@ -830,7 +830,11 @@ More snippets:
 
   Say something using mbrola (see source code for exact setup!)
 
-    perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -e 'package BBBikeGPSTrackingPlugin; saytext_mbrola("@ARGV")' some text
+    perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -e 'package BBBikeGPSTrackingPlugin; $SPEAK_PROG="mbrola"; saytext("@ARGV")' irgendein Text
+
+  Use female mbrola voice:
+
+    perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -e 'package BBBikeGPSTrackingPlugin; $SPEAK_PROG="mbrola"; $MBROLA_LANG = "de7"; saytext("@ARGV")' irgendein Text
 
   Say the current (faked) GPS information:
 
