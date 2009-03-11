@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.15 2009/03/11 22:59:23 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.16 2009/03/11 22:59:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -249,6 +249,11 @@ sub activate_gpsd_tracking {
     kill_gpspipe();
     $gpspipe_pid = open my $fh, "-|", "gpspipe", "-r"
 	or die "Cannot execute gpspipe: $!";
+    if ($fh->eof) {
+	main::status_message('gpsd not running?', 'error');
+	deactivate_tracking();
+	return;
+    }
     # just a dummy, for parsing and so
     $gps = GPS::NMEA->new(do_not_init => 1)
 	or main::status_message("Cannot create GPS::NMEA object: $!", "die");
@@ -757,6 +762,8 @@ sub gps_info_text_de {
     my $msg = "";
     if ($current_accuracy > 1000) {
 	$msg .= "Es gibt zurzeit keinen GPS-Empfang. ";
+    } elsif (!defined $current_accuracy) {
+	$msg .= "Die GPS-Genauigkeit kann noch nicht ermittelt werden.";
     } else {
 	my $int_acc = int $current_accuracy;
 	$msg .= "Die GPS-Genauigkeit beträgt " . ($int_acc == 1 ? "einen " : "$int_acc ") . "Meter.";
