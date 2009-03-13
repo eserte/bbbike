@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.17 2009/03/11 22:59:38 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.18 2009/03/13 00:04:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -50,6 +50,7 @@ use vars qw($gps_track_mode $gps $gps_fh $replay_speed_conf @gps_track $gpspipe_
 	    $do_navigate @current_search_route $do_speech
 	    %reported_point $current_accuracy $current_accuracy2 $current_accuracy_update_time
 	    $gpsd_last_event_time $gpsd_checker $gpsd_state
+	    $in_re_route
 	  );
 $replay_speed_conf = 1 if !defined $replay_speed_conf;
 
@@ -152,7 +153,10 @@ sub add_button {
 		   }
 	       },
 	      ],
-	      [Button => "Satellite view",
+	      [Button => 'Re-Search from current point',
+	       -command => sub { re_search_from_current_point() },
+	      ],
+	      [Button => 'Satellite view',
 	       -command => sub {
 		   # the cheap solution
 		   if (!is_in_path("xgps")) {
@@ -208,6 +212,7 @@ sub init_speech {
     saytext({power_info()}->{msg_de});
     saytext(gps_info_text_de());
     my $say_route_info = sub {
+	return if $in_re_route;
 	# XXX unfortunately we cannot assume that
 	# @current_search_route is filled yet, hook execution order is
 	# undefined!
@@ -469,33 +474,39 @@ sub set_position {
     }
 
     if ($do_link_to_nearest_street) {
-	my $s = $main::net && $main::net->{Strassen};
-	$s = $main::str_obj{s} if !$s;
-	if (!$s) {
-	    our $warn_str_obj_once;
-	    if (!$warn_str_obj_once++) {
-		main::status_message("Cannot get str_obj{s} object", "info");
+	my $ret = get_nearest_coords($sxy);
+	if ($ret) {
+	    my @coords = (main::transpose($ret->{Coords}[0],$ret->{Coords}[1]),
+			  $x, $y,
+			  main::transpose($ret->{Coords}[2],$ret->{Coords}[3]),
+			 );
+	    my $link_item = $main::c->find(withtag => 'gps_track_link');
+	    if ($link_item) {
+		$main::c->coords($link_item, @coords);
+	    } else {
+		$main::c->createLine(@coords, -fill => 'red',
+				     -tags => ['gps_track', 'gps_track_link'],
+				    );
 	    }
-	} else {
-	    my $ret = $s->nearest_point($sxy, FullReturn => 1);
-	    if ($ret) {
-		my @coords = (main::transpose($ret->{Coords}[0],$ret->{Coords}[1]),
-			      $x, $y,
-			      main::transpose($ret->{Coords}[2],$ret->{Coords}[3]),
-			     );
-		my $link_item = $main::c->find(withtag => 'gps_track_link');
-		if ($link_item) {
-		    $main::c->coords($link_item, @coords);
-		} else {
-		    $main::c->createLine(@coords, -fill => 'red',
-					 -tags => ['gps_track', 'gps_track_link'],
-					);
-		}
-		if ($do_navigate) {
-		    match_position_with_route($ret->{Coords}, $sxy);
-		}
+	    if ($do_navigate) {
+		match_position_with_route($ret->{Coords}, $sxy);
 	    }
 	}
+    }
+}
+
+sub get_nearest_coords {
+    my($sxy) = @_;
+    my $s = $main::net && $main::net->{Strassen};
+    $s = $main::str_obj{s} if !$s;
+    if (!$s) {
+	our $warn_str_obj_once;
+	if (!$warn_str_obj_once++) {
+	    main::status_message("Cannot get str_obj{s} object", "info");
+	}
+	undef;
+    } else {
+	$s->nearest_point($sxy, FullReturn => 1);
     }
 }
 
@@ -507,10 +518,12 @@ sub match_position_with_route {
 	if ($main::realcoords[$i][0] == $pos_coords->[0] &&
 	    $main::realcoords[$i][1] == $pos_coords->[1]) {
 	    my $from_index;
-	    if ($main::realcoords[$i+1][0] == $pos_coords->[2] &&
+	    if ($i+1 <= $#main::realcoords &&
+		$main::realcoords[$i+1][0] == $pos_coords->[2] &&
 		$main::realcoords[$i+1][1] == $pos_coords->[3]) {
 		$from_index = $i;
-	    } elsif ($main::realcoords[$i-1][0] == $pos_coords->[2] &&
+	    } elsif ($i-1 >= 0 &&
+		     $main::realcoords[$i-1][0] == $pos_coords->[2] &&
 		     $main::realcoords[$i-1][1] == $pos_coords->[3]) {
 		$from_index = $i-1;
 	    }
@@ -543,11 +556,18 @@ sub match_position_with_route {
 				$main::c->createText(@coord, -text => "Ziel in $live_dist m", -tags => ['gps_track', 'XXX1']);
 			    } else {
 				my $next_street = $current_search_route[$j+1]->[StrassenNetz::ROUTE_NAME()];
-				my $important = $current_search_route[$j]->[StrassenNetz::ROUTE_EXTRA()]->{ImportantAngle};
 				my $direction = uc $current_search_route[$j]->[StrassenNetz::ROUTE_DIR()];
-				$direction = '' if !$important;
-				my $live_dist = int Strassen::Util::strecke($main::realcoords[$current_search_route[$j+1]->[StrassenNetz::ROUTE_ARRAYINX()][0]],
-									    [split /,/, $sxy]);
+				if ($current_search_route[$j]->[StrassenNetz::ROUTE_ANGLE()] < 45) {
+				    my $important = $current_search_route[$j]->[StrassenNetz::ROUTE_EXTRA()]->{ImportantAngle};
+				    if (!$important) {
+					$direction = '';
+				    } else {
+					$direction = 'h' . $direction;
+				    }
+				}
+				my $live_dist = int Strassen::Util::strecke
+				    ($main::realcoords[$current_search_route[$j+1]->[StrassenNetz::ROUTE_ARRAYINX()][0]],
+				     [split /,/, $sxy]);
 				if ($live_dist <= 100 && !$reported_point{"$next_street $direction"}) {
 				    my @saydirection_args = ($next_street, $direction, $live_dist);
 				    if ($do_speech) {
@@ -569,6 +589,30 @@ sub match_position_with_route {
 	}
     }
     $main::c->createText(main::transpose(split /,/, $sxy), -text => "?", -tags => ['gps_track', 'XXX1']);
+}
+
+sub re_search_from_current_point {
+    if (!@main::search_route_points) {
+	main::status_message('No old route exist', 'error');
+	return;
+    }
+    my $ret = get_nearest_coords($gps_track[-1]);
+    if ($ret) {
+	my($sx,$sy) = split /,/, $gps_track[-1];
+	my $dist0 = Strassen::Util::strecke([$ret->{Coords}[0],$ret->{Coords}[1]],[$sx,$sy]);
+	my $dist1 = Strassen::Util::strecke([$ret->{Coords}[2],$ret->{Coords}[3]],[$sx,$sy]);
+	my $new_start_coord = ($dist0 < $dist1
+			       ? $ret->{Coords}[0].",".$ret->{Coords}[1]
+			       : $ret->{Coords}[2].",".$ret->{Coords}[3]
+			      );
+	if ($main::search_route_points[0][main::SRP_COORD()] eq $new_start_coord) {
+	    main::status_message('No re-routing necessary', 'info');
+	    return;
+	}
+	$main::search_route_points[0][main::SRP_COORD()] = $new_start_coord;
+	local $in_re_route = 1;
+	main::re_search();
+    }
 }
 
 ######################################################################
@@ -690,7 +734,7 @@ sub make_german_direction {
 	$next_street = Strasse::get_last_part($next_street);
     }
     if ($direction) {
-	$say .= ($direction =~ /l/i ? "links" : "rechts") . " abbiegen "; 
+	$say .= ($direction =~ /^h/ ? "halb" : "") . ($direction =~ /l$/i ? "links" : "rechts") . " abbiegen "; 
     }
     $praeposition = Strasse::de_artikel($next_street) if !$praeposition;
     $praeposition = "" if $praeposition eq '=>';
@@ -726,7 +770,7 @@ sub make_direction_for_english_festival {
 	$next_street = Strasse::get_last_part($next_street);
     }
     if ($direction) {
-	$say .= "turn " . ($direction =~ /l/i ? "left" : "right") . " ";
+	$say .= "turn " . ($direction =~ /^h/ ? "half " : "") . ($direction =~ /l/i ? "left" : "right") . " ";
     }
     $praeposition = "into" if !$praeposition;
     $say .= "$praeposition $next_street";
