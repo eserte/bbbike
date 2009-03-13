@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.18 2009/03/13 00:04:42 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.19 2009/03/13 00:04:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -50,7 +50,7 @@ use vars qw($gps_track_mode $gps $gps_fh $replay_speed_conf @gps_track $gpspipe_
 	    $do_navigate @current_search_route $do_speech
 	    %reported_point $current_accuracy $current_accuracy2 $current_accuracy_update_time
 	    $gpsd_last_event_time $gpsd_checker $gpsd_state
-	    $in_re_route
+	    $in_re_route $auto_re_route
 	  );
 $replay_speed_conf = 1 if !defined $replay_speed_conf;
 
@@ -153,8 +153,11 @@ sub add_button {
 		   }
 	       },
 	      ],
-	      [Button => 'Re-Search from current point',
-	       -command => sub { re_search_from_current_point() },
+	      [Button => 'Re-route from current point',
+	       -command => sub { re_route_from_current_point() },
+	      ],
+	      [Checkbutton => 'Auto re-route',
+	       -variable => \$auto_re_route,
 	      ],
 	      [Button => 'Satellite view',
 	       -command => sub {
@@ -488,6 +491,17 @@ sub set_position {
 				     -tags => ['gps_track', 'gps_track_link'],
 				    );
 	    }
+	    if ($auto_re_route) {
+		my $c1 = "$ret->{Coords}[0],$ret->{Coords}[1]";
+		my $c2 = "$ret->{Coords}[2],$ret->{Coords}[3]";
+	    SEARCH_IN_ROUTE: {
+		    for my $coord (@main::realcoords) {
+			my $coord_s = join(",",@$coord);
+			last SEARCH_IN_ROUTE if ($coord_s eq $c1 || $coord_s eq $c2);
+		    }
+		    re_route_from_current_point();
+		}
+	    }
 	    if ($do_navigate) {
 		match_position_with_route($ret->{Coords}, $sxy);
 	    }
@@ -591,7 +605,7 @@ sub match_position_with_route {
     $main::c->createText(main::transpose(split /,/, $sxy), -text => "?", -tags => ['gps_track', 'XXX1']);
 }
 
-sub re_search_from_current_point {
+sub re_route_from_current_point {
     if (!@main::search_route_points) {
 	main::status_message('No old route exist', 'error');
 	return;
@@ -946,12 +960,12 @@ More snippets:
 
  * Bug: manchmal wird "rechts" oder "links" nicht gesprochen,
    wahrscheinlich, weil es kein "ImportantAngle" ist. Den Algorithmus
-   nochmals überprüfen!
+   nochmals überprüfen! -> Hoffentlich gelöst!
 
  * Bei Abweichen von der Route sollte es zwei Modi geben:
 
    * Wenn nur ein Ziel angegeben wurde, dann sollte eine komplette
-     Neuberechnung bis zum Ziel erfolgen.
+     Neuberechnung bis zum Ziel erfolgen. -> Implementiert!
 
    * Wenn eine Wunschroute angegeben wurde, dann sollte eine möglichst
      direkte Strecke zurück zur Wunschroute gefunden werden, aber
