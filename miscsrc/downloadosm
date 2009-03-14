@@ -189,11 +189,11 @@ sub download_osm_tile {
 	    my @cmd;
 	    if ($ua) {
 	    } elsif (is_in_path("wget")) {
-		@cmd = ('wget');
+		@cmd = ('wget', '--timeout=600');
 		push @cmd, '--verbose' if $debug >= 2;
 		push @cmd, '-O', $dest, $url;
 	    } elsif (is_in_path("curl")) {
-		@cmd = ('curl', '-s', '-S', '-f'); 
+		@cmd = ('curl', '-s', '-S', '-f', '-m', '600'); 
 		push(@cmd, '--verbose') if $debug >= 2;
 		push(@cmd, ('-o', $dest, $url));
 	    } else {
