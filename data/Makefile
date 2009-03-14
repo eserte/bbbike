@@ -83,7 +83,7 @@ COMPUTED_TARGETS+=	kneipen
 COMPUTED_TARGETS+=	fragezeichen-cooked
 
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
-TARGETS+=	${SOURCE_TARGETS} ${COMPUTED_TARGETS} ${COOKED_TARGETS}
+TARGETS+=	${SOURCE_TARGETS} ${COOKED_TARGETS} ${COMPUTED_TARGETS}
 BBD_TARGETS=	${TARGETS:S/^ampelschaltung$//:S/^multi_bez_str$//:S/^temp_blockings\/bbbike-temp-blockings-optimized.pl//}
 
 XXX_NON_OTHER=	indoor outdoor prog checklater
@@ -170,11 +170,13 @@ really-slow-checks:	check-crossings-important \
 
 ######################################################################
 # STRASSEN UND PLÄTZE
-strassen:	.strassen.tmp plaetze
+strassen:	.strassen.tmp plaetze routing_helper-orig
 	-@$(WRITEABLE) $@
-	cat .strassen.tmp > $@
-	${GREPSTRASSEN} -v --namerx ' \(Potsdam\)' plaetze >> $@
-	#-rm -f strassen-cooked
+	cat .strassen.tmp > $@~
+	${GREPSTRASSEN} -v --namerx ' \(Potsdam\)' plaetze >> $@~
+	${GREPSTRASSEN} -ignoreglobaldirectives -catrx . routing_helper-orig |\
+	    ${REPLACESTRASSEN} -catexpr 's/.*/NN::igndisp/' >> $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 
 .strassen.tmp: strassen-orig
@@ -447,11 +449,13 @@ ampelschaltung:	ampelschaltung-orig
 	mv ampelschaltung~ ampelschaltung
 	-@$(READONLY) $@
 
-gesperrt .gesperrt.tmp:	gesperrt-orig strassen landstrassen landstrassen2 comments_path
+gesperrt .gesperrt.tmp:	gesperrt-orig strassen landstrassen landstrassen2 comments_path routing_helper-orig
 	-@$(WRITEABLE) gesperrt
 	$(CONVERT2HAFAS) -specsperre=strassen,landstrassen,landstrassen2 \
 	    -specsperre-exceptions=comments_path gesperrt-orig > .gesperrt.tmp
 	$(REPLACESTRASSEN) -catexpr 's/:q\d//' < .gesperrt.tmp > gesperrt~
+	${GREPSTRASSEN} -ignoreglobaldirectives -catrx ';$$' routing_helper-orig |\
+	    ${REPLACESTRASSEN} -catexpr 's/.*/1::igndisp/' -revcoords >> gesperrt~
 	mv gesperrt~ gesperrt
 	-@$(READONLY) gesperrt
 
@@ -554,7 +558,7 @@ qualitaet_l:	qualitaet_l-orig
 	mv qualitaet_l~ qualitaet_l
 	-@$(READONLY) $@
 
-handicap_s:	handicap_s-orig berlin .gesperrt.tmp
+handicap_s:	handicap_s-orig berlin .gesperrt.tmp routing_helper-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) -strip-tendencies handicap_s-orig > handicap_s~
 	$(GREPSTRASSEN) -catrx ':q\d' < .gesperrt.tmp |\
@@ -563,6 +567,8 @@ handicap_s:	handicap_s-orig berlin .gesperrt.tmp
 		-catexpr 's/.*:(q\d)/$$1::igndisp;/' \
 		-nameexpr 's/(.*)/$$1: gegen die Einbahnstraßenrichtung, ggfs. schieben/' \
 		>> handicap_s~
+	${GREPSTRASSEN} -ignoreglobaldirectives -catrx '^q\d+' routing_helper-orig |\
+	    ${REPLACESTRASSEN} -catexpr 's/;/::igndisp;/' >> handicap_s~
 	mv handicap_s~ handicap_s
 	-@$(READONLY) $@
 
@@ -1106,8 +1112,8 @@ check-disabled:
 # XXX Information duplicated in Strassen::Cat
 GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+)?)(:inwork)?(::(igndisp|ignrte))?$$'
 
-.check_gesperrt1:	gesperrt .strassen.tmp landstrassen landstrassen2 fragezeichen
-	$(CHECK_POINTS) -catrx $(GESPERRT_CATRX) gesperrt .strassen.tmp landstrassen landstrassen2 fragezeichen
+.check_gesperrt1:	gesperrt .strassen.tmp landstrassen landstrassen2 fragezeichen routing_helper-orig
+	$(CHECK_POINTS) -catrx $(GESPERRT_CATRX) gesperrt .strassen.tmp landstrassen landstrassen2 fragezeichen routing_helper-orig
 	@touch $@
 
 # Second check is necessary because of the 3nocross entries!

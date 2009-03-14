@@ -916,10 +916,12 @@ sub street_name_experiment {
 	    #$xxx++;last if $xxx > 100;
 		my $use_bold;
 		my $rec = $s->next;
+		my $cat = $rec->[Strassen::CAT()];
+		next if $cat =~ m{::igndisp};
 		my $c = $rec->[Strassen::COORDS()];
 		last if !@$c;
 		my $name = $rec->[Strassen::NAME()];
-		$use_bold = 1 if $rec->[Strassen::CAT()] =~ m{^(H|HH|B)$};
+		$use_bold = 1 if $cat =~ m{^(H|HH|B)$};
 		# The same street continued? Without interruptions?
 		while (1) {
 		    my $peek = $s->peek;

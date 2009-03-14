@@ -962,21 +962,22 @@ Robert-Uhrig-Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::i
 Alt-Friedrichsfelde -> Fuﬂg‰ngerbr¸cke: nicht passierbarer Mittelstreifen	3::igndisp 17497,11769 17746,11748 17757,11761
 Alt-Friedrichsfelde -> Robert-Uhrig-Str.: nicht passierbarer Mittelstreifen	3::igndisp 17966,11730 17746,11748 17745,11711
 nicht passierbarer Mittelstreifen	3nocross::ignrte 18853,11798 19005,11796 19283,11785 19693,11762 19904,11745 19985,11739 20115,11730 20368,11711
-Gensinger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19005,11705 19005,11796 18853,11798
-Gensinger Str. -> Gensinger Str.: nicht passierbarer Mittelstreifen	3::igndisp 19144,11859 19005,11796 19005,11705
+Gensinger Str. -> Gensinger Str.: nicht passierbarer Mittelstreifen	3::igndisp 19144,11859 19005,11796 19005,11767
 Gensinger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19144,11859 19005,11796 19283,11785
-Alt-Friedrichsfelde -> Gensinger Str.: nicht passierbarer Mittelstreifen	3::igndisp 19283,11785 19005,11796 19005,11705
+Gensinger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19005,11767 19005,11796 18853,11798
+Alt-Friedrichsfelde -> Gensinger Str.: nicht passierbarer Mittelstreifen	3::igndisp 19283,11785 19005,11796 19005,11767
 Alt-Friedrichsfelde -> Gensinger Str.: nicht passierbarer Mittelstreifen	3::igndisp 19005,11796 19283,11785 19144,11859
-Alt-Friedrichsfelde -> zur Weiﬂenhˆher Str.: nicht passierbarer Mittelstreifen	3::igndisp 19904,11745 19693,11762 19827,11686
+Alt-Friedrichsfelde -> zur Weiﬂenhˆher Str.: nicht passierbarer Mittelstreifen	3::igndisp 19904,11745 19693,11762 19750,11730
 M‰rkische Allee -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19802,11794 19693,11762 19904,11745
-M‰rkische Allee -> zur Weiﬂenhˆher Str.: nicht passierbarer Mittelstreifen	3::igndisp 19802,11794 19693,11762 19827,11686
+M‰rkische Allee -> zur Weiﬂenhˆher Str.: nicht passierbarer Mittelstreifen	3::igndisp 19802,11794 19693,11762 19750,11730
+zur Weiﬂenhˆher Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19750,11730 19693,11762 19283,11785
 Alt-Biesdorf -> M‰rkische Allee: nicht passierbarer Mittelstreifen	3::igndisp 20115,11730 19985,11739 20018,11698
 Alt-Biesdorf -> M‰rkische Allee: nicht passierbarer Mittelstreifen	3::igndisp 19985,11739 20115,11730 19988,11821
 M‰rkische Allee -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 20014,11651 20115,11730 19985,11739
 M‰rkische Allee -> M‰rkische Allee: nicht passierbarer Mittelstreifen	3::igndisp 20014,11651 20115,11730 19988,11821
 Straﬂentunnelrampe	3nocross::ignrte 18220,11710 18555,11724 18853,11798
-Charlottenstr. -> Alt-Friedrichsfelde: Straﬂentunnelrampe	3::igndisp 18558,11617 18555,11724 18220,11710
-Alt-Friedrichsfelde -> Charlottenstr.: Straﬂentunnelrampe	3::igndisp 18853,11798 18555,11724 18558,11617
+Alt-Friedrichsfelde -> Charlottenstr.: Straﬂentunnelrampe	3::igndisp 18853,11798 18555,11724 18556,11688
+Charlottenstr. -> Alt-Friedrichsfelde: Straﬂentunnelrampe	3::igndisp 18556,11688 18555,11724 18220,11710
 abgesperrter Mittelstreifen	3nocross::ignrte 3592,10869 3631,10784 3644,10759
 Lewishamstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3::igndisp 3644,10759 3631,10784 3587,10768
 Gervinusstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3::igndisp 3839,10904 3631,10784 3587,10768
@@ -1780,10 +1781,10 @@ Sonnenallee -> Krebsgang: Sonnenallee	3::igndisp 14617,7243 14693,7168 14792,719
 Straﬂenbahntrasse	3nocross::ignrte 18631,10167 18690,10016 18698,9996 18737,9901
 Treskowallee -> Ontarioseestr.: Straﬂenbahntrasse	3::igndisp 18698,9996 18690,10016 18577,10023
 Ontarioseestr. -> Am Tierpark: Straﬂenbahntrasse	3::igndisp 18577,10023 18690,10016 18631,10167
-Am Bahndamm -> Weg entlang der Bahnstrecke: Straﬂenbahntrasse	3::igndisp 18773,10028 18698,9996 18445,9887
+Am Bahndamm -> Weg entlang der Bahnstrecke: Straﬂenbahntrasse	3::igndisp 18715,10003 18698,9996 18445,9887
 Treskowallee -> Weg entlang der Bahnstrecke: Straﬂenbahntrasse	3::igndisp 18737,9901 18698,9996 18445,9887
-Treskowallee -> Am Bahndamm: Straﬂenbahntrasse	3::igndisp 18690,10016 18698,9996 18773,10028
-Weg entlang der Bahnstrecke -> Am Bahndamm: Straﬂenbahntrasse	3::igndisp 18445,9887 18698,9996 18773,10028
+Treskowallee -> Am Bahndamm: Straﬂenbahntrasse	3::igndisp 18690,10016 18698,9996 18715,10003
+Weg entlang der Bahnstrecke -> Am Bahndamm: Straﬂenbahntrasse	3::igndisp 18445,9887 18698,9996 18715,10003
 Weg entlang der Bahnstrecke -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18445,9887 18698,9996 18690,10016
 Straﬂenbahn	3nocross::ignrte 18872,9568 18857,9606 18816,9705
 Treskowallee -> Rheinpfalzallee: Straﬂenbahn	3::igndisp 18816,9705 18857,9606 18931,9629
@@ -1989,3 +1990,7 @@ Treppe mit 19 Stufen (Birkenwerder)	BNP:45:55 1112,32717
 Poller (Birkenwerder)	BNP:0:-168 1306,33008
 Poller (Birkenwerder)	BNP:0:0 1207,33025
 An den Kanalwiesen (Wendisch Rietz)	1 51857,-20420 51900,-20326 51916,-20240
+Kreuzung Sewanstr./Am Tierpark	1::igndisp 18647,10172 18631,10167
+#: XXX: darf hier offiziell gefahren werden (Zweirichtungsradweg?)
+Am Tierpark, linker Gehweg	1::igndisp 18715,10003 18647,10172
+Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18228,11656 18556,11688 18778,11742 19005,11767 19750,11730

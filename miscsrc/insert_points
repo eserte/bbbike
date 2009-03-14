@@ -362,6 +362,7 @@ sub process {
 		   sehenswuerdigkeit
 		   potsdam plz
 		   grenzuebergaenge
+		   routing_helper
 		  );
 	    if ($orig) {
 		push @{$check_files[T_NORMAL]}, "radwege";

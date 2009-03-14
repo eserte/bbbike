@@ -1009,7 +1009,6 @@ Leuenberger Zeile: eng	q1 2852,19546 2789,19600 2684,19765
 (Hoernlestr. - Gehsener Str.): Fuﬂg‰nger, zwei Rampen an Fuﬂg‰ngertreppe	q3 22351,6756 22391,6815
 Waldstr.: Bodenschwellen vor der Schule	q2 20540,4285 20623,4227
 Janitzkystr.: Siedlung, eng	q1 22763,6398 22889,6428 23002,6428 23027,6425 23131,6398 23192,6362 23242,6308
-#:
 Eichborndamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
 Revaler Str. (Straﬂenbahn): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13588,11490 13473,11456
 Erkelenzdamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11117,10326 11094,10261
@@ -1038,3 +1037,7 @@ Behrenstr./Bebelplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::ignd
 Halenseestr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 2277,9801 2167,10004 2121,10089 1988,10328 1957,10426
 Zeltinger Platz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
 (Los-Angeles-Platz): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 5681,10696 5822,10609
+Kreuzung Sewanstr./Am Tierpark	q1::igndisp; 18631,10167 18647,10172
+#: XXX: darf hier offiziell gefahren werden (Zweirichtungsradweg?)
+Am Tierpark, linker Gehweg	q1::igndisp; 18647,10172 18715,10003
+Alt-Friedrichsfelde, linker Gehweg	q2::igndisp; 19750,11730 19005,11767 18778,11742 18556,11688 18228,11656
