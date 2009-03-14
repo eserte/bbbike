@@ -20,6 +20,16 @@ use Config;
 use strict;
 use BBBikeGlobalVars;
 
+use your qw($BBBike::Menubar::option_menu
+	    $BBBike::check_bbbike_temp_blockings::temp_blockings_pl
+	    $BBBikeEdit::prefer_tracks
+	    $BBBikeEdit::bbd_penalty_multiply $BBBikeEdit::bbd_penalty_invert
+	    $BBBikeEdit::gps_penalty_multiply
+	    $Devel::Trace::TRACE
+	    $DB_File::DB_BTREE
+	    $Karte::Standard::obj $Karte::Polar::obj
+	  );
+
 BEGIN {
     if (!defined &M) {
 	eval 'sub M ($) { @_ }'; warn $@ if $@;
