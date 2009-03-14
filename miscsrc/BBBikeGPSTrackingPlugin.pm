@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.19 2009/03/13 00:04:50 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.20 2009/03/14 00:07:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -224,12 +224,13 @@ sub init_speech {
 	    saytext("Es ist keine Route definiert.");
 	} else {
 	    saytext("Eine Route nach " . simplify_street($search_route[-1][StrassenNetz::ROUTE_NAME()]) . " ist definiert.");
-	    my($h,$m) = split /:/, s2hm(main::get_reference_journey_time());
+	    my $journey_time = main::get_reference_journey_time();
+	    my($h,$m,$s) = ((split /:/, s2hm($journey_time)), $journey_time % 60);
 	    my($XXX, $value, $unit) = ($main::active_speed_power{Type} eq 'power'
 				       ? ('Leistung', $main::power[$main::active_speed_power{Index}], 'Watt')
 				       : ('Geschwindigkeit', $main::speed[$main::active_speed_power{Index}], 'km pro Stunde')
 				      );
-	    sayssml('Die voraussichtliche Fahrzeit beträgt ' . de_time_period($h,$m) . ' bei <break/> einer '
+	    sayssml('Die voraussichtliche Fahrzeit beträgt ' . de_time_period($h,$m,$s,maybe=>'seconds') . ' bei <break/> einer '
 		    . $XXX . ' von ' . $value . ' ' . $unit . '.');
 	}
     };
@@ -857,7 +858,7 @@ sub gps_info_text_de {
 }
 
 sub de_time_period {
-    my($H,$M,$S) = @_;
+    my($H,$M,$S,%args) = @_;
     $_+=0 for ($H,$M,$S); # avoid things like "02 Stunden"    
     my $msg = ($H >= 2 ? "$H Stunden " :
 	       $H >= 1 ? "eine Stunde " :
@@ -870,13 +871,17 @@ sub de_time_period {
 	     $M >= 1 ? "eine Minute " :
 	     ""
 	    );
-    if ($msg && $S) {
-	$msg .= "und ";
+    if ($S &&
+	($msg eq '' || ($args{maybe}||'') ne 'seconds')
+       ) {
+	if ($msg) {
+	    $msg .= "und ";
+	}
+	$msg .= ($S >= 2 ? "$S Sekunden" :
+		 $S >= 1 ? "eine Sekunde" :
+		 ""
+		);
     }
-    $msg .= ($S >= 2 ? "$M Sekunden" :
-	     $S >= 1 ? "eine Sekunde" :
-	     ""
-	    );
     $msg =~ s{\s+$}{};
     if ($msg eq '') {
 	$msg = 'eine unbekannte Zeitdauer';
