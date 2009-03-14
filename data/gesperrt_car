@@ -708,8 +708,6 @@ Friedrich-Wilhelm-Str.: In die andere Richtung nur für Anlieger	1 8385,5907 8282
 Parkstr.: Durchfahrt gesperrt	3 9143,6415 9184,6413 9250,6414
 Parkstr.: Durchfahrt gesperrt	3 9250,6414 9184,6413 9143,6415
 Mittelstreifen	3nocross::ignrte 13277,8211 13459,8072 13474,8060
-Treptower Str. -> Treptower Str.: Mittelstreifen	3::igndisp 13376,7970 13459,8072 13478,8095
-Treptower Str. -> Sonnenallee: Mittelstreifen	3::igndisp 13376,7970 13459,8072 13277,8211
 Sonnenallee -> Treptower Str.: Mittelstreifen	3::igndisp 13474,8060 13459,8072 13376,7970
 Treptower Str. -> Treptower Str.: Mittelstreifen	3::igndisp 13478,8095 13459,8072 13376,7970
 Treptower Str. -> Sonnenallee: Mittelstreifen	3::igndisp 13478,8095 13459,8072 13474,8060
@@ -780,3 +778,4 @@ Lindenstr. -> Markgrafenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::ign
 Markgrafenstr. -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9786,10971 9805,10791 9829,10830
 Am Berlin Museum -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 10025,10755 9829,10830 9805,10791
 Lindenstr. -> Am Berlin Museum: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9935,11067 9829,10830 10025,10755
+Treptower Str.	1 13376,7970 13459,8072

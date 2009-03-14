@@ -80,8 +80,8 @@ Alt-Blankenburg: Bau von Radwegen	?::inwork; 13592,20785 13576,20849 13915,20944
 #: next_check ^^^
 #: by ^^^
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20081118.1520.114696.html
-#: next_check: 2009-03-01
-Schwarzer Weg: Wiedereröffnung im Frühjahr 2009	?::inwork 13938,7938 13957,8209 13939,8228
+#: next_check: 2009-06-01
+Schwarzer Weg: Wiedereröffnung im Frühjahr 2009 (im März aber noch keine Anzeichen zu sehen)	?::inwork 13938,7938 13957,8209 13939,8228
 #XXX del An der Spandauer Brücke: neue Straßenführung	?::inwork 10309,12854 10398,12903 10427,12921 10371,13006
 #XXXdel : by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0802/nachricht2958.html;#: note: laut daniel.geraskov noch eine Baustelle;#: last_checked: 2008-06-23;Oranienburger Str.: Existiert in Richtung Hackescher Markt zwischen Friedrichstraße und Linienstraße eine Radspur?	?; 9215,13392 9281,13374
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0803/nachricht2984.html
@@ -100,9 +100,9 @@ Ampel in Planung, bis 2008-12-31	?::inwork 9183,12076
 #: next_check: 2009-05-31
 Bauarbeiten, danach neu asphaltiert, bis 2009-05-31	?::inwork 9220,11781 9208,11872 9201,11968 9183,12076
 #: by: ^^^
-#: next_check: 2009-03-15
-#: last_checked: 2009-01-28
-Columbiadamm: Bauarbeiten (neue Radwege)	?::inwork; 11632,8302 11512,8278 11416,8283 11271,8325 10911,8457 10796,8498
+#: next_check: 2009-04-15
+#: last_checked: 2009-03-13
+Columbiadamm: Bauarbeiten (neue Radwege)	?::inwork; 11632,8302 11512,8278 11416,8283 11271,8325 10911,8457
 Blankenfelde, Berliner Str. und Hauptstr: nach Bauarbeiten (bis 2009-04-01) vielleicht bessere Fahrbahnqualität?	?::inwork 9528,23240 9490,23531 9425,23693 9625,23781 9774,23936
 #: by: http://www.berliner-stadtplan.com/topic/bln/str/x_wgs/22.04/y_wgs/28.92/from/form.html
 #: by: http://www.morgenpost.de/content/2006/09/20/bezirke/855150.html
@@ -2212,7 +2212,6 @@ Rue Racine: Qualität?	? 4339,21600 4334,21540 4307,21506 4254,21495 4204,21536 4
 Schefferweg: Qualität?	? 7432,2400 7425,2461
 Uckermärkischer Radrundweg zwischen Parlow und Friedrichswalde: Qualität? Wegführung?	? 32943,67802 31564,68076 30583,68268
 Am Gutshof (Gramzow): Qualität nach den Bauarbeiten?	? 50278,90449 50262,90540
-Werrastr.: Qualität des Sackgassenabschnitts?	? 13697,8279 13648,8321
 Karlsberg - Lätzlow: existiert eine Verbindung? Qualität?	? 58814,91687 58801,91710 58782,91712 58717,91843 58572,92110 58472,92325 58458,92403 58372,92542 58288,92536 58080,92626 57691,92618 57555,92694 57449,92832 57428,92954 57332,93130 57245,93216 56841,93207 56264,93180 56036,93217 55651,93267 54983,93657 54828,93661 54701,93788 54535,93879 54129,94020 53783,94031 52726,94026 52611,94062 52500,93800 52350,93856
 Kerkow - Görlsdorf: nach den Bauarbeiten (2008-11-08) besserer Asphalt?	? 45864,72724 46253,72339 46555,72293 46770,72248 47266,71628 48092,70962 48147,70935 48237,70892 48672,70933
 #: XXX: by anonymous: guter Asphalt, Q0
@@ -3325,7 +3324,7 @@ Roedeliusplatz: Qualität?	? 16158,12191 16246,12177
 Normannenstr.: Wie ist die Straße zwischen Magdalenenstr. und Schottstr. ausgeschildert: Roedeliusplatz oder Normannenstr.?	? 16159,12301 16227,12280 16276,12273
 Landsberger Allee - Anton-Saefkow-Platz: Qualität?	? 14871,14087 14903,14003
 Thaerstr. - Wiesenweg: Qualität? Straßenname?	? 13761,12690 13786,12636
-Kopfstr.: existiert für Radfahrer eine Durchfahrtmöglichkeit zur Bornsdorfer Str.?	? 12602,7907 12709,7940
+#XXX del: nein! Kopfstr.: existiert für Radfahrer eine Durchfahrtmöglichkeit zur Bornsdorfer Str.?	? 12602,7907 12709,7940
 #: XXX gesehen bei OpenStreetMap
 Heinrich-Kleist-Str. (Potsdam): existiert eine Verbindung zur Walter-Klausch-Str.?	? -10142,-2540 -10158,-2591 -10080,-2632
 Kleewall (Potsdam): Qualität?	? -9806,-2861 -9693,-2899
