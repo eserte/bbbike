@@ -35,7 +35,6 @@ if (-e "$FindBin::RealBin/bbbike") {
     $bbbike_rootdir = "$ENV{HOME}/src/bbbike";
 }
 my $streets_track                    = "$bbbike_rootdir/tmp/streets.bbd";
-my $orig_streets_track               = "$bbbike_rootdir/tmp/streets.bbd-orig";
 my $acc_streets_track                = "$bbbike_rootdir/tmp/streets-accurate.bbd";
 my $acc_cat_streets_track            = "$bbbike_rootdir/tmp/streets-accurate-categorized.bbd";
 my $acc_cat_split_streets_track      = "$bbbike_rootdir/tmp/streets-accurate-categorized-split.bbd";
@@ -109,7 +108,7 @@ sub add_button {
 	       main::bbbikelazy_setup();
 	       
 	       main::bbbikelazy_init();
-	       add_new_layer("str", $orig_streets_track);
+	       add_new_layer("str", $streets_track);
 	       
 	       my $file = main::draw_gpsman_data($main::top);
 	       if (defined $file) {
@@ -178,7 +177,6 @@ sub add_button {
 	      [Button => "Add points-all.bbd (all GPS trackpoints)",
 	       -command => sub {
 		   my $f = "$bbbike_rootdir/tmp/points-all.bbd";
-		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
 		   my $points_layer = add_new_layer("p", $f, Width => 20);
 		   main::special_lower($points_layer . "-fg", 0);
 	       }
@@ -188,7 +186,6 @@ sub add_button {
 		[Button => "hm96.bbd (Höhenpunkte)",
 		 -command => sub {
 		     my $f = "$bbbike_rootdir/miscsrc/senat_b/hm96.bbd";
-		     if ($main::coord_system ne 'standard') { $f .= "-orig" }
 		     $hm_layer = add_new_layer("p", $f);
 		     $main::top->bind("<F12>"=> \&find_nearest_hoehe);
 		 }
@@ -199,7 +196,8 @@ sub add_button {
 		     add_new_nonlazy_layer("p", "$bbbike_rootdir/misc/zebrastreifen");
 		 }
 		],
-		[Button => "gesperrt_car", -command => sub { add_new_nonlazy_layer("sperre", "gesperrt_car") }],
+		[Button => "routing_helper", -command => sub { add_new_nonlazy_maybe_orig_layer("str", "routing_helper") }],
+		[Button => "gesperrt_car", -command => sub { add_new_nonlazy_maybe_orig_layer("sperre", "gesperrt_car") }],
 		[Button => "brunnels", -command => sub { add_new_data_layer("str", "brunnels") }],
 		[Button => "geocoded images",
 		 -command => sub {
@@ -479,7 +477,7 @@ sub make_gps_target {
 
 sub add_new_data_layer {
     my($type, $file, %args) = @_;
-    add_new_layer($type, "$main::datadir/$file" . ($main::coord_system ne 'standard' ? '-orig' : ''));
+    add_new_layer($type, _maybe_orig_file("$main::datadir/$file"));
 }
 
 # Width support for now only for p layers
@@ -502,6 +500,11 @@ sub add_new_layer {
     }
     Hooks::get_hooks("after_new_layer")->execute;
     $free_layer;
+}
+
+sub add_new_nonlazy_maybe_orig_layer {
+    my($type, $file, %args) = @_;
+    add_new_nonlazy_layer($type, _maybe_orig_file($file), %args);
 }
 
 sub add_new_nonlazy_layer {
@@ -709,15 +712,12 @@ sub set_penalty_fragezeichen {
 # XXX $namedraw does not work
 sub add_coords_data {
     my($file, $namedraw) = @_;
-    my $f = "$bbbike_rootdir/tmp/$file";
-    if ($main::coord_system ne 'standard') { $f .= "-orig" }
-    add_new_layer("p", $f, NameDraw => $namedraw);
+    add_new_layer("p", _maybe_orig_file("$bbbike_rootdir/tmp/$file"), NameDraw => $namedraw);
 }
 
 sub add_any_streets_bbd {
     my $f = shift;
-    if ($main::coord_system ne 'standard') { $f .= "-orig" }
-    my $layer = add_new_layer("str", $f);
+    my $layer = add_new_layer("str", _maybe_orig_file($f));
     set_layer_highlightning($layer);
     main::special_raise($layer, 0);
 }
@@ -800,6 +800,18 @@ sub _require_BBBikeOsmUtil {
     require Cwd; require File::Basename; local @INC = (@INC, Cwd::realpath(File::Basename::dirname(__FILE__)));
     require BBBikeOsmUtil;
     BBBikeOsmUtil::register();
+}
+
+sub _maybe_orig_file {
+    my $file = shift;
+    return $file if !$main::edit_normal_mode;
+    require File::Spec;
+    if (File::Spec->file_name_is_absolute($file)) {
+	return $file.'-orig' if -f $file.'-orig';
+    } else {
+	# assume it exists, without checking
+	return $file.'-orig';
+    }
 }
 
 ######################################################################
