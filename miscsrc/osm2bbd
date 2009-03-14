@@ -41,6 +41,7 @@ my $f;
 my $v;
 my $encoding = "utf-8";
 my $debug = 1; # 0: quiet, 1: normal, 2: verbose
+my $ignore_unhandled;
 
 my $map;
 my $center;
@@ -71,6 +72,7 @@ usage: $0 [-v] [-f] [-encoding enc] [-center lon,lat] [-map bbbike [-centerdelta
 -parsefor ...:   Parse only for the given key=value pair,
                  key as string and val as regexp
 -country ...:    Optimize output for given country
+-ignore-unhandled: do not create the _unhandled layer
 osmfile ...:     Files downloaded by downloadosm,
                  or directory containing .osm files
 EOF
@@ -92,6 +94,7 @@ GetOptions("o=s" => \$o,
 	   "country=s" => \$country,
 	   "splitlonglines!" => \$splitlonglines,
 	   "xmlparser=s" => \$xmlparser,
+	   "ignore-unhandled!" => \$ignore_unhandled,
 	  )
     or die usage;
 
@@ -511,7 +514,7 @@ for my $osm_file (@osm_files) {
 		#warn $name, $node2ll{$id}, "\n";
 	    }
 
-	    if (!@or) {
+	    if (!@or && !$ignore_unhandled) {
 		$do_unhandled->(\$name, \%tag);
 		if ($name ne "" && !exists $tag{'obsolete_boundary'}) {
 		    push @or, ["_unhandled", "X"];
@@ -1006,7 +1009,7 @@ for my $osm_file (@osm_files) {
 	    }
 
 
-	    if (!@or) {
+	    if (!@or && !$ignore_unhandled) {
 		$do_unhandled->(\$name, \%tag);
 		if ($name ne "") {
 		    push @or, ["_unhandled", "X"];
