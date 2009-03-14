@@ -19,11 +19,13 @@ package main;
 ## NOTE: This list is not maintained anymore.
 #perl2exe_include Tk/Checkbutton.pm
 
-# This works theoretically with 5.8.x, but there's a possible
-# endless loop which is solved in 5.10.0, see rt perl #41442
-if ($] >= 5.010 || $] >= 5.008009) {
-    eval q{ use open ':locale' }; if ($] >= 5.008 && $@) { warn $@ }
-}
+## This works theoretically with 5.8.x, but there's a possible
+## endless loop which is solved in 5.10.0, see rt perl #41442
+## XXX Nope: still an endless loop with debian's perl 5.10.0
+## To reproduce: start bbbike, and add landstraßen layer
+#if ($] >= 5.010 || $] >= 5.008009) {
+#    eval q{ use open ':locale' }; if ($] >= 5.008 && $@) { warn $@ }
+#}
 
 BEGIN {
     if ($Devel::Trace::TRACE) {
