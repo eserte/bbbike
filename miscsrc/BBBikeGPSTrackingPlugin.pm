@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.21 2009/03/14 00:08:02 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.22 2009/03/14 00:08:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -418,7 +418,7 @@ sub _setup_fileevent {
 
 sub gps_mode_change {
     my($new_mode) = @_;
-    if ($do_speech) {
+    if (0 && $do_speech) {# XXX not yet ... need a good approach when flapping
 	if ($new_mode eq '1') {
 	    saytext('Kein GPS-Fix.');
 	} elsif ($new_mode eq '2') {
@@ -760,10 +760,19 @@ sub saytext_festival {
     IPC::Run::run(["text2wave"], "<", \$say, "|", ["play", "-t", "wav", "-"]);
 }
 
+sub _fix_espeak {
+    my $say = shift;
+    $say =~ s{chaussee}{cho see}gi;
+    $say =~ s{\bbellevue}{belle vü}gi;
+    $say =~ s{ring\b}{rinngg}gi;
+    $say;
+}
+
 # espeak: optimized for German voice
 sub saytext_espeak {
     my($say) = @_;
     warn "Will say '$say'\n";
+    $say = _fix_espeak($say);
     IPC::Run::run(["espeak", "-v", "de"], "<", \$say);
 }
 
@@ -783,6 +792,8 @@ sub _saytext_mbrola {
     #$say =~ s{(?<![ -])(straße)}{ $1}gi;
     $say =~ s{(?<![ -])s(traße)}{sch$1}gi;
 
+    $say = _fix_espeak($say);
+
     IPC::Run::run(["espeak", ($args{ssml} ? "-m" : ()), "-v", "mb-$MBROLA_LANG"], "<", \$say, "|", [$MBROLA_BIN, "-e", $MBROLA_LANG_FILE, "-", $mbrola_tmp]);
     IPC::Run::run(["play", $mbrola_tmp]);
     unlink $mbrola_tmp;
@@ -791,14 +802,31 @@ sub _saytext_mbrola {
 
 ######################################################################
 
-# Remove cityparts, expand "str." etc.
+# Remove cityparts
 sub simplify_street {
     my $street = shift;
     $street = Strasse::strip_bezirk($street);
-    $street =~ s{str\.}{straße}ig;
+    $street = expand_de_abbrev($street);
     $street =~ s{\(}{}g;
     $street =~ s{\)}{}g;
     $street;
+}
+
+# expand "str." etc.
+sub expand_de_abbrev {
+    my $name = shift;
+    $name =~ s{str\.}{straße}ig;
+    $name =~ s{bhf\.}{bahnhof}ig;
+    $name =~ s{\bwestl\.}{westlich}ig;
+    $name =~ s{\böstl\.}{östlich}ig;
+    $name =~ s{\bnördl\.}{nördlich}ig;
+    $name =~ s{\bsüdl\.}{süddlich}ig;
+    $name =~ s{\bdr\.}{doktor}ig;
+    $name =~ s{\bst\.}{sankt}ig;
+    $name =~ s{(zu[rm]\s+ehem)\.}{$1aligen}ig;
+    $name =~ s{\behem\.}{ehemalig}ig;
+    $name =~ s{\bkol\.}{kolonie}ig;
+    $name;
 }
 
 sub make_german_direction {
