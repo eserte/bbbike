@@ -808,6 +808,7 @@ sub _maybe_orig_file {
     require File::Spec;
     if (File::Spec->file_name_is_absolute($file)) {
 	return $file.'-orig' if -f $file.'-orig';
+	return $file;
     } else {
 	# assume it exists, without checking
 	return $file.'-orig';
