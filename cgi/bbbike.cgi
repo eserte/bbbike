@@ -112,7 +112,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $newstreetform_encoding
 	    $use_region_image
 	    $include_outer_region @outer_berlin_places $outer_berlin_qr
-	    $warn_message
+	    $warn_message $use_utf8
 	   );
 # XXX This may be removed one day
 use vars qw($use_cooked_street_data);
@@ -632,6 +632,15 @@ more information on the file format.
 Array with temporary blocking elements. Each element is a hash with the
 following keys set:
 
+=item $use_utf8
+
+Set to a true value if the C<utf-8> encoding should be used on the
+generated HTML pages. Highly recommended for non-latin1 data.
+
+=cut
+
+$use_utf8 = 0;
+
 =over
 
 =item from
@@ -833,6 +842,7 @@ CGI->import('-no_xhtml');
 
 $q = new CGI;
 # XXX Hack for proxy_html problems on bbbike.radzeit.de
+# But this is also legally used with $use_utf8=1
 eval{BBBikeCGIUtil::encode_possible_utf8_params($q);};warn $@ if $@;
 
 undef $g_str; # XXX because it may already contain landstrassen etc.
@@ -5945,11 +5955,14 @@ sub etag {
 # Write a HTTP header (always with Etag and Vary) and maybe enabled compression
 sub http_header {
     my(@header_args) = @_;
-## utf-8 experiments
-#     my %header_args = @header_args;
-#     if (!$header_args{"-type"}) {
-# 	unshift @header_args, "-type" => "text/html;charset=utf-8";
-#     }
+    my $need_utf8_encoding;
+    if ($use_utf8) {
+	my %header_args = @header_args;
+	if (!$header_args{"-type"}) {
+	    unshift @header_args, ("-type" => "text/html; charset=utf-8");
+	    $need_utf8_encoding = 1;
+	}
+    }
     push @header_args, etag(), (-Vary => "User-Agent");
     if ($q->param("as_attachment")) {
 	push @header_args, -Content_Disposition => "attachment;file=" . $q->param("as_attachment");
@@ -5976,6 +5989,9 @@ sub http_header {
 	print $q->header(@header_args);
     }
     $header_written = 1;
+    if ($need_utf8_encoding) {
+	binmode STDOUT, ':utf8';
+    }
 }
 
 sub header {
