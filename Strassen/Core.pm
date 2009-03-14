@@ -516,7 +516,7 @@ sub as_string {
 	}
     }
     if (!$args{IgnoreDirectives} && $self->{Directives}) {
-	if ($maybe_need_directive_separator && $self->{Directives}[0]) {
+	if ($maybe_need_directive_separator && $self->{Directives}[0] && keys %{ $self->{Directives}[0] }) {
 	    $s .= "#:\n";
 	}
 	my %current_block_directives;
