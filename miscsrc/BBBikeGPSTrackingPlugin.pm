@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.22 2009/03/14 00:08:28 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.23 2009/03/14 23:14:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -896,6 +896,7 @@ sub deactivate_tracking {
 
 sub kill_gpspipe {
     if ($gpspipe_pid && kill 0 => $gpspipe_pid) {
+	local $SIG{CHLD} = 'IGNORE';
 	kill 9 => $gpspipe_pid;
 	undef $gpspipe_pid;
     }

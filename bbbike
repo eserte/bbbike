@@ -94,8 +94,8 @@ BEGIN {
     ## Does not play well with Tk::Stderr, so do not use it anymore
     #eval 'use sigtrap ("stack-trace", @SIGTRAP_SIGNALS)'; warn $@ if $@;
 
-    $SIG{CHLD} = 'IGNORE'; # seems to be necessary on Debian/Linux,
-                           # not on FreeBSD
+    ## Not a good idea: setting this means that $? is always -1
+    #$SIG{CHLD} = 'IGNORE';
 
     $booting = 1;
 }
