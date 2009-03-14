@@ -6085,7 +6085,9 @@ sub generate_plot_functions {
 # coord list. But nevertheless $ignore and $restrict won't work correctly.
 	    return if defined $ignore and $cat_hin =~ /$ignore/;
 	    return if defined $restrict and $cat_hin !~ /$restrict/;
-	    return if first { $_ eq "igndisp" } @addinfo_hin;
+	    if (!$edit_normal_mode) { # we want to see everything in edit mode
+	        return if first { $_ eq "igndisp" } @addinfo_hin;
+	    }
 	    my $this_color_hin = $cat_hin =~ /^\#/ ? $cat_hin :
 		($layer_category_color{$abk} && $layer_category_color{$abk}{$cat_hin})
 		|| $category_color{$cat_hin}
@@ -6724,7 +6726,9 @@ EOF
 	    my $ret = shift;
 	    my $category = $ret->[Strassen::CAT];
 	    return if defined $restrict and $category !~ /$restrict/;
-	    return if index($category, "::igndisp") >= 0;
+	    if (!$edit_normal_mode) { # we want to see everything in edit mode
+	        return if index($category, "::igndisp") >= 0;
+	    }
 	    my $pointname = $ret->[Strassen::NAME];
 	    my $koord = $ret->[Strassen::COORDS][0]; # erste Koordinate
             $koord = $conv->($koord) if $conv;
@@ -10106,7 +10110,9 @@ sub plot_sperre {
 	    my $sub_cat;
 	    my($cat,$addinfo) = $ret->[Strassen::CAT] =~ m{^(.*?)(?:::?(.*))?$};
 	    my @addinfo = $addinfo ? split(':', $addinfo): ();
-	    next if first { $_ eq "igndisp" } @addinfo;
+	    if (!$edit_normal_mode) { # we want to see everything in edit mode
+	        next if first { $_ eq "igndisp" } @addinfo;
+	    }
 	    if ($cat eq StrassenNetz::BLOCKED_CARRY) {
 		if ($width0) { # größer 0
 		    $sub_cat = 'sperre0';
