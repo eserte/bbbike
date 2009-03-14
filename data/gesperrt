@@ -699,7 +699,6 @@ Feuchtwangerweg -> Zwickauer Damm: Bahntrasse	3::igndisp 15788,1747 15835,1747 1
 Straﬂenbahntrasse	3nocross::ignrte 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
 Klausdorfer Str. -> Zossener Str.: Straﬂenbahntrasse	3::igndisp 23243,15820 23218,15671 23411,15632
 Zossener Str. -> Klausdorfer Str.: Straﬂenbahntrasse	3::igndisp 23080,15700 23218,15671 23243,15820
-Zossener Str. -> Mittenwalder Str.: Straﬂenbahntrasse	3::igndisp 23218,15671 23411,15632 23441,15780
 Teupitzer Str. -> Zossener Str.: Straﬂenbahntrasse	3::igndisp 23573,15627 23568,15603 23617,15594
 Zossener Str. -> Teupitzer Str.: Straﬂenbahntrasse	3::igndisp 23411,15632 23568,15603 23573,15627
 Mittelstreifen	3nocross::ignrte 4741,5309 4748,5357 4861,5581
@@ -865,7 +864,6 @@ Herkulesufer -> Schillstr.: unbequem passierbarer Mittelstreifen	3::igndisp 6920
 Klingelhˆferstr. -> Herkulesufer: unbequem passierbarer Mittelstreifen	3::igndisp 6880,11110 6882,11061 6920,11064
 L¸tzowpl. -> L¸tzowufer: unbequem passierbarer Mittelstreifen	3::igndisp 7002,11034 6873,11011 6732,11106
 L¸tzowpl. -> Schillstr.: unbequem passierbarer Mittelstreifen	3::igndisp 7002,11034 6873,11011 6824,10904
-Schillstr. -> L¸tzowpl.: unbequem passierbarer Mittelstreifen	3::igndisp 6882,11061 6873,11011 7002,11034
 L¸tzowufer -> L¸tzowpl.: unbequem passierbarer Mittelstreifen	3::igndisp 6732,11106 6873,11011 7002,11034
 Tunneleinfahrt Adenauerplatz	3nocross::ignrte 3852,10236 3874,10153 3906,10035 3930,9919
 Brandenburgische Str. -> Duisburger Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3852,10236 3874,10153 4183,10144
@@ -1185,7 +1183,6 @@ Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straﬂenbahntrasse	3::igndisp 11
 Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straﬂenbahntrasse	3::igndisp 11446,13294 11464,13321 11444,13335
 Straﬂenbahntrasse	3nocross::ignrte 11446,13294 11368,13170 11298,13063
 Wadzeckstr. -> Otto-Braun-Str.: Straﬂenbahntrasse	3::igndisp 11326,13196 11368,13170 11446,13294
-Otto-Braun-Str. -> Wadzeckstr.: Straﬂenbahntrasse	3::igndisp 11298,13063 11368,13170 11326,13196
 Mittelstreifen	3nocross::ignrte 11368,13170 11298,13063 11275,13026 11228,12951
 Otto-Braun-Str. -> Berolinastr.: Mittelstreifen	3::igndisp 11368,13170 11298,13063 11440,12976
 Berolinastr. -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11440,12976 11298,13063 11275,13026
@@ -1780,6 +1777,14 @@ Groscurthstr.	1 16369,25230 16458,25193 16428,25107
 Sonnenallee	3nocross::ignrte 14617,7243 14693,7168 14803,7056
 Krebsgang -> Sonnenallee: Sonnenallee	3::igndisp 14792,7192 14693,7168 14803,7056
 Sonnenallee -> Krebsgang: Sonnenallee	3::igndisp 14617,7243 14693,7168 14792,7192
+Straﬂenbahntrasse	3nocross::ignrte 18631,10167 18690,10016 18698,9996 18737,9901
+Treskowallee -> Ontarioseestr.: Straﬂenbahntrasse	3::igndisp 18698,9996 18690,10016 18577,10023
+Ontarioseestr. -> Am Tierpark: Straﬂenbahntrasse	3::igndisp 18577,10023 18690,10016 18631,10167
+Am Bahndamm -> Weg entlang der Bahnstrecke: Straﬂenbahntrasse	3::igndisp 18773,10028 18698,9996 18445,9887
+Treskowallee -> Weg entlang der Bahnstrecke: Straﬂenbahntrasse	3::igndisp 18737,9901 18698,9996 18445,9887
+Treskowallee -> Am Bahndamm: Straﬂenbahntrasse	3::igndisp 18690,10016 18698,9996 18773,10028
+Weg entlang der Bahnstrecke -> Am Bahndamm: Straﬂenbahntrasse	3::igndisp 18445,9887 18698,9996 18773,10028
+Weg entlang der Bahnstrecke -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18445,9887 18698,9996 18690,10016
 Straﬂenbahn	3nocross::ignrte 18872,9568 18857,9606 18816,9705
 Treskowallee -> Rheinpfalzallee: Straﬂenbahn	3::igndisp 18816,9705 18857,9606 18931,9629
 Rheinpfalzallee -> Treskowallee: Straﬂenbahn	3::igndisp 18931,9629 18857,9606 18872,9568

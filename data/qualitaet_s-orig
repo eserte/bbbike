@@ -123,7 +123,7 @@ Fischerstr.: Kopfsteinpflaster	Q2 15982,10765 16080,10743
 Wallensteinstr./Neuer Feldweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2 17378,9715 17360,9629 17456,9594 17549,9529 18037,9195 18120,9100 18124,9056
 Halker Zeile: schlechtes Kopfsteinpflaster	Q3 9940,559 10063,251 10156,13 10214,-142 10266,-284 10374,-552 10473,-799
 #: by: Jürgen Schulz-Brüssel
-(Am Bahndamm): sehr guter Asphalt	Q0 18698,9996 18773,10028 19116,10173 19675,10410 19711,10426
+(Am Bahndamm): sehr guter Asphalt	Q0 18698,9996 18715,10003 18773,10028 19116,10173 19675,10410 19711,10426
 Alemannenstr.: gutes Kopfsteinpflaster	Q1 -3360,2917 -3452,2868 -3509,2817 -3686,2579
 Alemannenstr.: mäßiges Kopfsteinpflaster	Q2 -3686,2579 -3692,2549 -3709,2517 -3725,2475
 Alemannenstr.: asphaltiert	Q0 -3725,2475 -3742,2287 -3753,2241 -3827,2109
@@ -2339,6 +2339,7 @@ Zitadelle: Kopfsteinpflaster	Q2- -2646,14525 -2668,14635 -2704,14748 -2735,14848
 Behnitz: Kopfsteinpflaster	Q2 -2951,14617 -2993,14568 -3014,14559
 ######################################################################
 #: by: anonymous vvv
+Jean-Calas-Weg: asphaltiert	Q0 11991,22885 11551,23221 11536,23231 11459,23295
 Ernst-Haeckel-Str.: guter Asphalt	Q0 24365,12712 24421,12887 24438,12929 24462,12975 24502,13049 24609,13219 24746,13384 24833,13484 24880,13539 24910,13590 24938,13688
 #: note: "leichtes" Kopfsteinpflaster
 Stubenrauchstr. (Zehlendorf): Kopfsteinpflaster	Q2 1368,1991 1333,2083 1209,2371 1121,2583 1036,2781
@@ -3474,7 +3475,7 @@ Melanchthonstr. (Spandau): grobes Kopfsteinpflaster	Q3 -4154,12379 -4167,12554
 (Weverstr. - Gatower Str.): asphaltiert	Q0 -4154,12379 -4340,12375
 (Südpark): wassergebundene Decke	Q1 -3707,11693 -3712,11714 -3732,11772 -3826,11901 -3883,12053 -3985,12056 -4040,12050
 (Südpark): wassergebundene Decke	Q1 -4009,11789 -4004,11814 -4070,12006 -4040,12050 -4085,12081 -4117,12199 -4154,12379
-(Heerstr. - Dorfstr.): fester Waldweg	Q2 -3202,11532 -3211,11564 -3112,12020 -3102,12061 -3004,12251 -2870,12425 -2821,12415
+(Heerstr. - Dorfstr.): fester Waldweg	Q2 -3202,11532 -3211,11564 -3112,12020 -3102,12061 -3024,12342 -2912,12459 -2821,12415
 (Glühwürmchenweg - Pionierstr.): rauher Asphalt	Q1 -6187,16296 -6162,16287 -6018,16250 -5960,16441
 #: XXX: Auch östlich des Goldkäferweges?
 Maikäferweg: asphaltiert	Q0 -6547,16704 -6855,16873 -6971,16889 -7102,16895 -7263,16939
@@ -7865,6 +7866,15 @@ Caseler Str.: guter Asphalt	Q0 14608,16772 14700,16790 14732,16770
 Goldbeckweg: sehr guter Asphalt	Q0 -1465,14914 -1489,15027 -1511,15127 -1532,15225 -1556,15319 -1547,15377
 #: by: Hartmut Schröder:
 Waldstr. (Adlershof): guter Beton	Q0 20834,4035 20790,4114 20694,4177 20623,4227 20540,4285
+#: by: katarina (zuckerbox):
+#: note: "insgesamt schlechte bedingungen für radfahrer auf der gesamten straße einschließlich fußweg auf beiden seiten"
+Albrecht-Dürer-Str.: schlechtes Kopfsteinpflaster	Q3 25701,12975 25601,13058 25551,13101 25470,13139 25426,13151 25309,13170 25208,13206
+#: by: Thomas Müller-Burdack:
+#: corrected_by: srt/policy (Q2 -> Q1)
+Janitzkystr.: mäßiger Asphalt	Q1 22763,6398 22889,6428 23002,6428 23027,6425 23131,6398 23192,6362 23242,6308
+#: by: J.F. (jofmoher):
+#: note: für Autos offen (Schrittgeschwindigkeit)
+(Weg entlang der Bahnstrecke): fester Sandweg	Q2 17456,9594 17474,9603 17694,9600 17866,9639 18157,9766 18278,9818 18445,9887 18698,9996
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
