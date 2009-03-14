@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.20 2009/03/14 00:07:36 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.21 2009/03/14 00:08:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -25,7 +25,6 @@ $VERSION = 0.03;
 
 $DEBUG = 0;
 
-use GPS::NMEA 1.12;
 use Hash::Util qw(lock_keys);
 use IPC::Run qw();
 
@@ -45,14 +44,18 @@ $MBROLA_LANG = 'de6' if !defined $MBROLA_LANG;
 $MBROLA_BIN = "$ENV{HOME}/Desktop/mbrola/mbrola-linux-i386" if !defined $MBROLA_BIN;
 $MBROLA_LANG_FILE = "$ENV{HOME}/Desktop/mbrola/de1/de1" if !defined $MBROLA_LANG_FILE;
 
-use vars qw($gps_track_mode $gps $gps_fh $replay_speed_conf @gps_track $gpspipe_pid
+use vars qw($gps_track_mode $gps_fh $replay_speed_conf @gps_track $gpspipe_pid
 	    $dont_auto_center $dont_auto_track $do_link_to_nearest_street
 	    $do_navigate @current_search_route $do_speech
-	    %reported_point $current_accuracy $current_accuracy2 $current_accuracy_update_time
+	    %reported_point
+	    $current_accuracy $current_accuracy_update_time
+	    $current_speed $current_gps_mode
 	    $gpsd_last_event_time $gpsd_checker $gpsd_state
 	    $in_re_route $auto_re_route
 	  );
 $replay_speed_conf = 1 if !defined $replay_speed_conf;
+
+use constant ACCURACY_NOTHING => 9999;
 
 use your qw($main::gps_device $main::capstyle_round %main::str_obj $main::Checkbutton %main::font
 	    @main::speed @main::power);
@@ -240,6 +243,8 @@ sub init_speech {
 
 sub activate_tracking {
     undef $current_accuracy;
+    undef $current_speed;
+    undef $current_gps_mode;
     # XXX decide whether to use GPS::NMEA or gpsd
     if (GPS_GRABBER eq 'nmea') {
 	activate_nmea_tracking();
@@ -249,49 +254,47 @@ sub activate_tracking {
 }
 
 sub activate_nmea_tracking {
-    $gps = GPS::NMEA->new(Port => $main::gps_device||"/dev/ttyS0",
-			  Baud=>4800)
+    require GPS::NMEA;
+    GPS::NMEA->VESION(1.12);
+    my $gps = GPS::NMEA->new(Port => $main::gps_device||"/dev/ttyS0",
+			     Baud=>4800)
 	or main::status_message("Cannot open GPS device: $!", "die");
-    _setup_fileevent($gps);
+    _setup_fileevent({gps => $gps}, undef, 'nmea');
 }
 
 sub activate_gpsd_tracking {
     kill_gpspipe();
-    $gpspipe_pid = open my $fh, "-|", "gpspipe", "-r"
+    $gpspipe_pid = open my $fh, "-|", "gpspipe", "-w"
 	or die "Cannot execute gpspipe: $!";
     if ($fh->eof) {
 	main::status_message('gpsd not running?', 'error');
 	deactivate_tracking();
 	return;
     }
-    # just a dummy, for parsing and so
-    $gps = GPS::NMEA->new(do_not_init => 1)
-	or main::status_message("Cannot create GPS::NMEA object: $!", "die");
-    _setup_fileevent($gps, $fh);
+    _setup_fileevent({fh => $fh}, undef, 'gpsd');
 }
 
 sub activate_dummy_tracking {
     my $file = shift;
-    $gps = GPS::NMEA->new(do_not_init => 1) # make configurable!!!
+    my $gps = GPS::NMEA->new(do_not_init => 1) # make configurable!!!
 	or main::status_message("Cannot create GPS::NMEA object: $!", "die");
     open my $fh, "<", $file
 	or main::status_message("Cannot open $file: $!", "die");
-    _setup_fileevent($gps, $fh, $replay_speed_conf);
+    _setup_fileevent({gps => $gps, fh => $fh}, $replay_speed_conf, 'nmea');
 }
 
 sub _setup_fileevent {
-    my($gps, $fh, $replay_speed) = @_;
+    my($info, $replay_speed, $prot) = @_;
     my $line;
     my $last_seconds;
+    my($gps, $fh) = @{$info}{qw(gps fh)};
     $fh = $gps->serial if !$fh;
     $gps_fh = $fh;
+
     my $callback;
-    $callback = sub {
-	if ($fh->eof) {
-	    warn "End of file.\n" if $DEBUG;
-	    deactivate_tracking();
-	    return;
-	}
+
+    my %parse;
+    $parse{nmea} = sub {
 	$line .= $fh->getline;
 	if ($line =~ /\n/) {
 	    my $short_cmd = $gps->parse_line($line);
@@ -331,16 +334,62 @@ sub _setup_fileevent {
 		    my(@l)=split/,/,$line;
 		    $current_accuracy = $l[1]; # XXX what's $l[3]? what about unit, always M?
 		    $current_accuracy_update_time = time;
-## XXX needs more experiments and reading documents...
-# 		} elsif ($short_cmd eq 'GPGGA') { # alternative accuracy, typically higher values than with PGRME
-# 		    chomp $line; # XXX is this in the NMEADATA record?
-# 		    $line=~s/\*..\r?$//;
-# 		    my(@l)=split/,/,$line;
-# 		    $current_accuracy2 = $l[8]; # XXX what about unit, always M? Ignore $l[10], which is vertical estimate
 		}
 	    }
 	    $line = '';
 	}
+    };
+
+    $parse{gpsd} = sub {
+	$line .= $fh->getline;
+	if ($line =~ /\n/) {
+	    if ($line =~ /^GPSD,O=\?/) {
+		# no info yet
+		$current_accuracy = ACCURACY_NOTHING;
+		$current_accuracy_update_time = time;
+	    } elsif ($line =~ /^GPSD,O=/) {
+		my(@l) = split /\s+/, $line;
+		my($this_seconds) = $l[1];
+		my($lon, $lat) = ($l[4], $l[3]);
+		if ($l[6] ne '?') {
+		    $current_accuracy = $l[6];
+		    $current_accuracy_update_time = time;
+		}
+		if ($l[9] ne '?') {
+		    $current_speed = $l[9];
+		}
+		if ($l[14] ne '?') {
+		    if (($current_gps_mode||'') ne $l[14]) {
+			gps_mode_change($l[14]);
+			$current_gps_mode = $l[14];
+		    }
+		}
+		set_position($lon, $lat);
+		$gpsd_last_event_time = time;
+	    } elsif ($line =~ /^GPSD,Y=/) {
+		my(@sat) = split /:/, $line;
+		shift @sat;
+		my $sat_used = 0;
+		for (@sat) {
+		    my(@l) = split /\s+/;
+		    if ($l[4]) { $sat_used++ }
+		}
+		warn "Satellites used: $sat_used\n";
+	    }
+	    $line = '';
+	}
+    };
+
+    $prot = 'nmea' if !$prot;
+    my $parse = $parse{$prot};
+
+    $callback = sub {
+	if ($fh->eof) {
+	    warn "End of file.\n" if $DEBUG;
+	    deactivate_tracking();
+	    return;
+	}
+	$parse->();
     };
     $main::top->fileevent($fh, 'readable', $callback);
     if ($gpsd_checker) {
@@ -365,6 +414,21 @@ sub _setup_fileevent {
 					       }
 					   }
 				       });
+}
+
+sub gps_mode_change {
+    my($new_mode) = @_;
+    if ($do_speech) {
+	if ($new_mode eq '1') {
+	    saytext('Kein GPS-Fix.');
+	} elsif ($new_mode eq '2') {
+	    saytext('Es gibt einen 2D-Fix.');
+	} elsif ($new_mode eq '3') {
+	    saytext('Es gibt einen 3D-Fix.');
+	} else {
+	    warn "Unexpected GPS mode $new_mode";
+	}
+    }
 }
 
 # Sigh...
@@ -411,23 +475,24 @@ sub set_position {
     }
     if (defined $current_accuracy) {
 	my $set_acc_text = sub {
-	    my($cx,$cy,$text,@args) = @_;
-	    my $acc_text_item = $main::c->find(withtag => 'gps_track_acc_text');
+	    my($cx,$cy,$text,%args) = @_;
+	    my $tag = delete $args{'-tag'};
+	    my $acc_text_item = $main::c->find(withtag => $tag);
 	    if ($acc_text_item) {
 		$main::c->coords($acc_text_item, $cx, $cy);
 	    } else {
 		$acc_text_item = $main::c->createText($cx, $cy,
 						      -font => $main::font{'tiny'},
 						      -justify => 'left',
-						      -tags => ['gps_track', 'gps_track_acc_text'],
+						      -tags => ['gps_track', $tag],
 						     );
 	    }
-	    $main::c->itemconfigure($acc_text_item, -text => $text, @args);
+	    $main::c->itemconfigure($acc_text_item, -text => $text, %args);
 	};
-	if ($current_accuracy > 1000) {
+	if ($current_accuracy == ACCURACY_NOTHING) {
 	    my @coord = main::transpose($sx,$sy);
-	    $main::c->delete('gps_track_acc', 'gps_track_acc2');
-	    $set_acc_text->(@coord, "???", -anchor => 's');
+	    $main::c->delete('gps_track_acc', 'gps_track_acc_fix');
+	    $set_acc_text->(@coord, "???", -anchor => 's', -tag => 'gps_track_acc_text'); # XXX use diameter for coord!
 	} else {
 	    my @coord = (main::transpose($sx-$current_accuracy,$sy-$current_accuracy),
 			 main::transpose($sx+$current_accuracy,$sy+$current_accuracy));
@@ -439,18 +504,15 @@ sub set_position {
 		$main::c->createOval(@coord, -tags => ['gps_track', 'gps_track_acc']);
 	    }
 
-	    $set_acc_text->(@coord[2,3], int($current_accuracy), -anchor => 'c');
-
-	    if (defined $current_accuracy2) {
-		my @coord2 = (main::transpose($sx-$current_accuracy2,$sy-$current_accuracy2),
-			      main::transpose($sx+$current_accuracy2,$sy+$current_accuracy2));
-		my $acc2_item = $main::c->find(withtag => 'gps_track_acc2');
-		if ($acc2_item) {
-		    $main::c->coords($acc2_item, @coord2);
-		} else {
-		    $main::c->createOval(@coord2, -tags => ['gps_track', 'gps_track_acc2']);
-		}
-	    }
+	    $set_acc_text->(@coord[2,3], int($current_accuracy), -anchor => 'c', -tag => 'gps_track_acc_text'); # XXX use diameter for coord!
+	    $set_acc_text->(@coord[2,1], ($current_gps_mode eq '3'
+					  ? '3D'
+					  : ($current_gps_mode eq '2'
+					     ? '2D'
+					     : 'no fix'
+					    )
+					 ), -anchor => 'c', -tag => 'gps_track_acc_fix'); # XXX use diameter for coord!
+	    
 	}
     } else {
 	$main::c->delete('gps_track_acc', 'gps_track_acc_text');
@@ -846,7 +908,7 @@ sub power_info {
 sub gps_info_text_de {
     # assume current_accuracy etc. is already set
     my $msg = "";
-    if ($current_accuracy > 1000) {
+    if ($current_accuracy == ACCURACY_NOTHING) { # XXX or check for gps mode?
 	$msg .= "Es gibt zurzeit keinen GPS-Empfang. ";
     } elsif (!defined $current_accuracy) {
 	$msg .= "Die GPS-Genauigkeit kann noch nicht ermittelt werden.";
@@ -906,8 +968,8 @@ __END__
 
 =pod
 
-Needs perl-GPS which is not yet on CPAN (because of GPS::NMEA changes)
-Needs gpsd installed and running.
+Needs gpsd installed and running, or altenatively perl-GPS which is
+not yet on CPAN (because of some GPS::NMEA changes)
 
 Speech check (using espeak, alternatively can use festival, but only
 with English voice):
