@@ -50,6 +50,7 @@ my $center_delta;
 
 my $parsefor;
 my $country = '';
+my $lang = '';
 use constant MAXLINELENGTH => 12288; # the limit of BBBikeXS
 my $splitlonglines = 1; # XXX this may change once BBBikeXS has no length restriction anymore
 my $xmlparser;
@@ -58,25 +59,28 @@ sub usage () {
     <<EOF;
 usage: $0 [-v] [-f] [-encoding enc] [-center lon,lat] [-map bbbike [-centerdelta lon,lat]] [-country country] -o directory osmfile ...
 
--v:              Show parser progress
--f:              Force overwriting existing output directory
--enc ...:        Specify different encoding, standard is utf-8
--map bbbike:     Use BBBike coordinates instead of WGS 84 coordinates in the
-                 output. Recommended until BBBike is able to fully handle
-                 WGS 84 coordinates.
--center lon,lat: Set the center of the map. If not set, then the plotting
-		 software decides on a center itself, usually the center
-		 of the bounding box.
--centerdelta lon,lat: If -map bbbike is used, then specify the 0,0 point.
-		 Defaults to standard Berlin setting.
--o directory:    A non-existing directory to output the bbd files.
--parsefor ...:   Parse only for the given key=value pair,
-                 key as string and val as regexp
--country ...:    Optimize output for given country
--ignore-unhandled: do not create the _unhandled layer
--ignore-underline: do not create any of the "_*" layers
-osmfile ...:     Files downloaded by downloadosm,
-                 or directory containing .osm files
+-v                Show parser progress
+-f                Force overwriting existing output directory
+-enc ...          Specify different encoding, standard is utf-8
+-map bbbike       Use BBBike coordinates instead of WGS 84 coordinates in the
+                  output. Recommended until BBBike is able to fully handle
+                  WGS 84 coordinates.
+-center lon,lat   Set the center of the map. If not set, then the plotting
+		  software decides on a center itself, usually the center
+		  of the bounding box.
+-centerdelta lon,lat If -map bbbike is used, then specify the 0,0 point.
+		     Defaults to standard Berlin setting.
+-o directory      A non-existing directory to output the bbd files.
+-parsefor ...     Parse only for the given key=value pair,
+                  key as string and val as regexp
+-country ...      Optimize output for given country (see documentation for
+                  supported countries)
+-lang ...         Optimize output for given language (see documentation for
+                  supported languages)
+-ignore-unhandled do not create the _unhandled layer
+-ignore-underline do not create any of the "_*" layers
+osmfile ...       Files downloaded by downloadosm,
+                  or directory containing .osm files
 EOF
 }
 
@@ -94,6 +98,7 @@ GetOptions("o=s" => \$o,
 	   "encoding=s" => \$encoding,
 	   "parsefor=s" => \$parsefor,
 	   "country=s" => \$country,
+	   "lang=s" => \$lang,
 	   "splitlonglines!" => \$splitlonglines,
 	   "xmlparser=s" => \$xmlparser,
 	   "ignore-unhandled!" => \$ignore_unhandled,
@@ -134,6 +139,17 @@ if (!$parsefor) {
     if (!$f && -e $o) {
 	die "Output directory <$o> must not exist (or specify -f to force overwrite).\n";
     }
+}
+
+# fallback
+sub M ($) { $_[0] }
+sub Mfmt  { sprintf(shift, @_) }
+
+if ($lang) {
+    $lang = '' if $lang eq 'de';
+}
+if ($lang) {
+    die "Language '$lang' is not supported, please specify either 'de' or 'en'" unless $lang eq 'en';
 }
 
 my %unhandled;
@@ -576,7 +592,7 @@ for my $osm_file (@osm_files) {
 		$reader->skipSiblings if $reader->depth == 2;
 		my $res = $reader->nextSiblingElement;
 		if (DO_ASSERTS) {
-		    ($reader->name =~ m{^(?:way|relation)} || $res == 0) or
+		    ($res == 0 || $reader->name =~ m{^(?:way|relation)}) or
 			parse_warning($reader, "after skipping a way");
 		}
 	    }
@@ -737,6 +753,9 @@ for my $osm_file (@osm_files) {
 		    $quality_cat = 'Q1';
 		    $quality_name = 'Holz';
 		}
+		if ($lang eq 'en') {
+		    $quality_name = $surface;
+		}
 	    }
 
 	    if (exists $tag{'highway'}) {
@@ -780,23 +799,23 @@ for my $osm_file (@osm_files) {
 		    push @or, ["strassen", "N".$addcat];
 		    if (!defined $quality_cat) {
 			$quality_cat = "Q2";
-			$quality_name = "unbefestigte Straße";
+			$quality_name = $lang eq 'en' ? $highway_cat : "unbefestigte Straße";
 		    }
 		} elsif ($highway_cat eq 'track') {
 		    push @or, ["strassen", "NN".$addcat];
 		    if (!defined $quality_cat) {
 			$quality_cat = "Q2";
-			$quality_name = "Pfad";
+			$quality_name = $lang eq 'en' ? $highway_cat : "Pfad";
 		    }
 		} elsif ($highway_cat eq 'footway') {
 		    push @or, ["strassen", "NN".$addcat];
-		    push @or, ["handicap_s", "q1", name => ($name ? "$name: " : "") . "Fußweg"];
+		    push @or, ["handicap_s", "q1", name => ($name ? "$name: " : "") . ($lang eq 'en' ? $highway_cat : 'Fußweg')];
 		} elsif ($highway_cat eq 'pedestrian') {
 		    push @or, ["strassen", "NN".$addcat];
-		    push @or, ["handicap_s", "q4", name => ($name ? "$name: " : "") . "Fußgängerzone"];
+		    push @or, ["handicap_s", "q4", name => ($name ? "$name: " : "") . ($lang eq 'en' ? 'pedestrian area' : 'Fußgängerzone')];
 		} elsif ($highway_cat eq 'living_street') {
 		    push @or, ["strassen", "N".$addcat];
-		    push @or, ["radwege_exact", "RW6;RW6", name => ($name ? "$name: " : "") . "verkehrsberuhigter Bereich"];
+		    push @or, ["radwege_exact", "RW6;RW6", name => ($name ? "$name: " : "") . ($lang eq 'en' ? 'living street' : 'verkehrsberuhigter Bereich')];
 		} elsif ($highway_cat =~ m{^(?:construction|planned)$}) {
 		    my $construction = $tag{'construction'} || "";
 		    if ($construction eq 'motorway') { # seen in Berlin, strange one
@@ -806,8 +825,8 @@ for my $osm_file (@osm_files) {
 		    }
 		} elsif ($highway_cat eq 'steps') {
 		    push @or, ["strassen", "NN".$addcat];
-		    push @or, ["gesperrt", "0:30", name => "Treppe"]; # XXX really should be only one point, or maybe better, change bbbike to handle line features for "Treppe"; lost time is guessed, maybe determine from length of feature? Also missing: precalculated angle.
-		} elsif ($highway_cat eq 'cycleroad') {
+		    push @or, ["gesperrt", "0:30", name => ($lang eq 'en' ? $highway_cat : 'Treppe')]; # XXX really should be only one point, or maybe better, change bbbike to handle line features for "Treppe"; lost time is guessed, maybe determine from length of feature? Also missing: precalculated angle.
+		} elsif ($highway_cat eq 'cycleroad') { # It seems that this tag is not anymore in use
 		    push @or, ["strassen", "N".$addcat];
 		    push @or, ["radwege_exact", "RW7;RW7"];
 		} else {
@@ -1474,6 +1493,10 @@ __END__
 
 osm2bbd - convert OpenStreetMap data for BBBike
 
+=head1 SYNOPSIS
+
+    ./downloadosm [options] -o /path/to/output lonmin latmin lonmax latmax
+
 =head1 HOWTO
 
 Create a directory where to download OSM data. It's best to use an
@@ -1542,6 +1565,17 @@ To convert data for the San Francisco area:
     env LANG=en_US.UTF-8 perl ./bbbike -datadir data-sfo
 
 =back
+
+=head1 SUPPORTED LANGUAGES
+
+If no language is specified, then output is optimized for German. The
+only other language currently supported is English (C<en>).
+
+=head1 SUPPORTED COUNTRIES
+
+Currently there's only special handling for C<de>: motorways get
+translated from "AI<number>" to "BABI<number>" to for handling with
+BBBike.
 
 =head1 IMPLEMENTATION NOTES
 
