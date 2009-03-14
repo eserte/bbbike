@@ -26,6 +26,7 @@ use Strassen::Stat;
 my($v, $cat, $catrx, $name, $namerx, $section, $sectionrx, @directive_def, @directive, @directiverx);
 my($minarea, $minlength);
 my $preserveglobaldirectives;
+my $ignoreglobaldirectives;
 my %special;
 my %special_init;
 my %special_end;
@@ -50,6 +51,7 @@ GetOptions("v" => \$v,
 	       init_directive_handler($type);
 	   },
 	   "preserveglobaldirectives!" => \$preserveglobaldirectives,
+	   "ignoreglobaldirectives!" => \$ignoreglobaldirectives,
 	   "minarea=f" => \$minarea,
 	   "minlength=f" => \$minlength,
 	   'inner=s@' => \@inner,
@@ -60,7 +62,7 @@ usage: $0 [-v] [-cat category] [-catrx regexp]
        [-section section] [-sectionrx regexp]
        [-directive key=val|key~val [-directive ...]]
        [-special name] [-minarea ...km²] [-minlength ...km]
-       [-preserveglobaldirectives]
+       [-preserveglobaldirectives] [-ignoreglobaldirectives]
        [-inner file [-inner ...]] [-outer file [-outer ...]]
 
 section is a region marked with the "section" directive in a bbd file.
@@ -206,7 +208,7 @@ if ($preserveglobaldirectives) {
 # 	}
 # 	print "#:\n"; # end
 #     }
-} else {
+} elsif (!$ignoreglobaldirectives) {
     # Only preserve some importing global directives:
     my $need_global_directive_separator;
     my $comment_directives = $s->get_global_directives->{'#'};
@@ -407,6 +409,13 @@ Voraussetzung:
 Alle S-Bahnhöfe finden, die nicht barrierefrei sind:
 
     ../miscsrc/grepstrassen -v -directive attributes~b sbahnhof-orig 
+
+=head1 NOTES
+
+Important global directives (e.g. "encoding") are preserved by
+default. To preserve all global directives, use the option
+C<-preserveglobaldirectives>. To ignore all global directives, use the
+option C<-ignoreglobaldirectives>.
 
 =head1 BUGS
 
