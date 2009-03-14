@@ -168,8 +168,9 @@ sub plugin_lister {
     }
 
     my $footer = $outer->Frame->pack(-fill => "x");
-    $footer->Button(Name => "close",
-		    -command => sub { $tl->destroy })->pack(-anchor => 'e', -side => "right");
+    my $cb = $footer->Button(Name => "close",
+			     -command => sub { $tl->destroy })->pack(-anchor => 'e', -side => "right");
+    $tl->bind('<Escape>' => sub { $cb->invoke });
     $footer->Button(-text => M"Plugins permanent machen",
 		    -command => sub {
 			eval {
