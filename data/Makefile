@@ -978,14 +978,14 @@ ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd:	fragezeichen ${DATADIR}/strassen $
 FOREVER_TWO_ERRORS=	perl -MFcntl=:flock -e  'open LOCK, ">", ".check_forever.lck" or die $$!; flock LOCK, LOCK_EX|LOCK_NB or die $$!; $$cmd=shift; while() { system($$cmd); exit 2 if $$? == 2; $$count = $$? == 0 ? 0 : $$count+1; exit 1 if $$count >= 2; sleep 30 } END { unlink ".check_forever.lck" }'
 
 check-forever:
-	-nice ${FOREVER_TWO_ERRORS} make check all
+	-nice ${FOREVER_TWO_ERRORS} ${MAKE} check all
 	@-alarm -nicedown
 	@-xterm-conf -deiconify -raise
 	xmessage "check-forever failed"
 
 # Like check-forever, but build first, then check (all calls the check target)
 all-forever:
-	-nice ${FOREVER_TWO_ERRORS} make all
+	-nice ${FOREVER_TWO_ERRORS} ${MAKE} all
 	@-alarm -nicedown
 	@-xterm-conf -deiconify -raise
 	xmessage "all-forever failed"
