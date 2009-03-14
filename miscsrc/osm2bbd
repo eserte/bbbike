@@ -42,6 +42,7 @@ my $v;
 my $encoding = "utf-8";
 my $debug = 1; # 0: quiet, 1: normal, 2: verbose
 my $ignore_unhandled;
+my $ignore_underline;
 
 my $map;
 my $center;
@@ -73,6 +74,7 @@ usage: $0 [-v] [-f] [-encoding enc] [-center lon,lat] [-map bbbike [-centerdelta
                  key as string and val as regexp
 -country ...:    Optimize output for given country
 -ignore-unhandled: do not create the _unhandled layer
+-ignore-underline: do not create any of the "_*" layers
 osmfile ...:     Files downloaded by downloadosm,
                  or directory containing .osm files
 EOF
@@ -95,6 +97,7 @@ GetOptions("o=s" => \$o,
 	   "splitlonglines!" => \$splitlonglines,
 	   "xmlparser=s" => \$xmlparser,
 	   "ignore-unhandled!" => \$ignore_unhandled,
+	   "ignore-underline!" => \$ignore_underline,
 	  )
     or die usage;
 
@@ -152,6 +155,12 @@ my %global_directives;
 		  ],
     );
 
+sub add_underline {
+    return if $ignore_underline;
+    my($or_ref, $name, $cat) = @_;
+    push @$or_ref, [$name, $cat];
+}
+
 my $do_amenity = sub {
     my($is_area, $amenity, $tagref) = @_;
     my @or;
@@ -184,9 +193,9 @@ my $do_amenity = sub {
     } elsif ($amenity eq 'cinema') {
 	push @or, ["kinos", $F."X"];
     } elsif ($amenity =~ m{^(?:kindergarten|school)$}) {
-	push @or, ["_education", $F."X"];
+	add_underline(\@or, "_education", $F."X");
     } elsif ($amenity =~ m{^(?:parking|car_rental)$}) {
-	push @or, ["_motortraffic", $F."#f0f0f0|IMG:Parking"];
+	add_underline(\@or, "_motortraffic", $F."#f0f0f0|IMG:Parking");
     } else {
 	$unhandled{"amenity-$amenity"}++;
     }
@@ -456,7 +465,7 @@ for my $osm_file (@osm_files) {
 		if ($highway_cat eq 'traffic_signals') {
 		    push @or, ["ampeln", "X"];
 		} elsif ($highway_cat eq 'bus_stop') {
-		    push @or, ["_oepnv", "Bus"];
+		    add_underline(\@or, "_oepnv", "Bus");
 		} else {
 		    $unhandled{"node-highway=$highway_cat"}++;
 		}
@@ -506,7 +515,7 @@ for my $osm_file (@osm_files) {
 	    } elsif (exists $tag{'tourism'}) {
 		push @or, $do_tourism->(0, $tag{'tourism'}, \%tag);
 	    } elsif (exists $tag{'power'}) {
-		push @or, ["_power", "X"];
+		add_underline(\@or, "_power", "X");
 	    }
 
 	    if (defined $height) {
@@ -514,7 +523,7 @@ for my $osm_file (@osm_files) {
 		#warn $name, $node2ll{$id}, "\n";
 	    }
 
-	    if (!@or && !$ignore_unhandled) {
+	    if (!@or && !$ignore_unhandled && !$ignore_underline) {
 		$do_unhandled->(\$name, \%tag);
 		if ($name ne "" && !exists $tag{'obsolete_boundary'}) {
 		    push @or, ["_unhandled", "X"];
@@ -960,7 +969,7 @@ for my $osm_file (@osm_files) {
 		    push @or, ["flaechen", "F:Green"]; # XXX not definitely clear
 		    #XXX ja? nein? } elsif ($landuse eq 'water') { push @or, ["wasserstrassen", "F:W"];
 		} elsif ($landuse eq 'residential') {
-		    push @or, ["_building", "F:#d0d0d0"];
+		    add_underline(\@or, "_building", "F:#d0d0d0");
 		} else {
 		    $unhandled{"landuse=$landuse"}++;
 		}
@@ -999,17 +1008,17 @@ for my $osm_file (@osm_files) {
 	    } elsif (exists $tag{'building'}) {
 		my $building = $tag{'building'};
 		if ($building =~ m{^(?:yes|true)$}) {
-		    push @or, ["_building", "F:#cccccc"];
+		    add_underline(\@or, "_building", "F:#cccccc");
 		}
 	    } elsif (exists $tag{'power'}) {
 		if (exists $tag{'operator'}) {
 		    $name = ($name ? $name.": " : "") . $tag{'operator'};
 		}
-		push @or, ["_power", "X"];
+		add_underline(\@or, "_power", "X");
 	    }
 
 
-	    if (!@or && !$ignore_unhandled) {
+	    if (!@or && !$ignore_unhandled && !$ignore_underline) {
 		$do_unhandled->(\$name, \%tag);
 		if ($name ne "") {
 		    push @or, ["_unhandled", "X"];
