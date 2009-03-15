@@ -79,8 +79,9 @@ sub output {
 
     $page->stringc($font, 24, $page_width/2, $y, "BBBike"); $y -= 24+3;
     if ($out->{Title}) {
+	my $title = _unidecode_string($out->{Title});
 	my $font_size = 18;
-	my @str = split / /, $out->{Title};
+	my @str = split / /, $title;
   	my $width = $page->my_string_width($font, join(" ", @str))*$font_size;
 	if ($width > $page_width-40) {
 	    $page->stringc($font, $font_size, $page_width/2, $y, join(" ", @str[0 .. $#str/2])); $y -= 18+3;
@@ -113,8 +114,10 @@ sub output {
     for my $line (@lines) {
 	my $x = $start_x;
 	my $col_i = 0;
-	for my $col (@$line) {
+	for my $col_i (0 .. $#$line) {
+	    my $col = $line->[$col_i];
 	    $col = "" if !defined $col;
+	    $col = _unidecode_string($col);
 	    my $font = ($col_i == 2 ? $bold_font : $font);
 	    my $width = $page->my_string_width($font, $col)*$font_size;
 	    if ($x + $width > $page_width-30) {
@@ -151,6 +154,26 @@ sub add_page_to_bbbikedraw {
 sub flush {
     my $self = shift;
     $self->{PDF}->close;
+}
+
+use vars qw($unidecode_warning);
+sub _unidecode_string {
+    my($str) = @_;
+    if (grep { ord($_) > 255 } split //, $str) {
+	if (!eval { require Text::Unidecode; 1 }) {
+	    if (!$unidecode_warning++) {
+		warn <<EOF;
+Unicode characters > 255 detected, but no Text::Unidecode module available,
+continuing with undefined results. This warning will be shown only once.
+EOF
+		$unidecode_warning = 1;
+	    }
+	} else {
+	    # XXX Should preserve at least the latin1 characters.
+	    return Text::Unidecode::unidecode($str);
+	}
+    }
+    $str;
 }
 
 1;
