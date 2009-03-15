@@ -1,8 +1,8 @@
 #!/usr/bin/perl -w
-# -*- perl -*-
+# -*- mode:cperl;coding:raw-text; -*-
 
 #
-# $Id: route-pdf.t,v 1.15 2009/03/15 15:57:38 eserte Exp $
+# $Id: route-pdf.t,v 1.16 2009/03/15 16:22:41 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -35,7 +35,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 2 }
+plan tests => 4;
 
 my $lang;
 if (!GetOptions("lang=s" => \$lang,
@@ -47,13 +47,7 @@ if (!GetOptions("lang=s" => \$lang,
 my(undef, $pdffile) = tempfile(SUFFIX => "_test.pdf",
 			       UNLINK => 1);
 
-my @arg;
-# if ($do_display && $pdf_prog eq 'gv') {
-#     open(GV, "|$pdf_prog -");
-#     @arg = (-fh => \*GV);
-# } else {
-    @arg = (-filename => $pdffile);
-# }
+my @arg = (-filename => $pdffile);
 
 my $s = Strassen->new("strassen");
 my $inacc = Strassen->new("inaccessible_strassen");
@@ -103,16 +97,51 @@ $rp->output(($lang ? (-lang => $lang) : ()),
 	   );
 $rp->{PDF}->close;
 
-if (fileno(GV)) {
-    close(GV);
-} elsif ($do_display) {
-    do_display($pdffile);
-    sleep 5; # for the displaying program to settle, otherwise the temporary file might be already deleted
+maybe_display($pdffile);
+trivial_pdf_test($pdffile);
+
+{
+    # testing with UTF-8 encoding --- currently does not work!
+    my(undef, $pdffile) = tempfile(SUFFIX => "_test.pdf",
+				   UNLINK => 1);
+    my $s = Strassen->new_from_data_string(<<EOF);
+#: encoding: utf-8
+#:
+Dudenstraße	X 100,100 200,200 300,300
+Trg bana Jelačića	X 300,300 400,400 500,500
+# Moskva, cyrillic:
+Москва	X 500,500 600,600
+EOF
+    my $start = $s->get(0)          ->[Strassen::COORDS()]->[0];
+    my $goal  = $s->get($s->count-1)->[Strassen::COORDS()]->[-1];
+
+    my $net = StrassenNetz->new($s);
+    $net->make_net;
+    my($route) = $net->search($start, $goal, AsObj => 1);
+    my $rp = Route::PDF->new(-filename => $pdffile);
+    $rp->output(($lang ? (-lang => $lang) : ()),
+		-net => $net,
+		-route => $route,
+	       );
+    $rp->{PDF}->close;
+    maybe_display($pdffile);
+    trivial_pdf_test($pdffile);
 }
 
-ok(-s $pdffile, "$pdffile is non-empty");
-open(PDF, $pdffile) or die $!;
-my $firstline = <PDF>;
-like($firstline, qr/^%PDF-1\.\d+/, "PDF magic");
+sub maybe_display {
+    my $pdffile = shift;
+    if ($do_display) {
+	do_display($pdffile);
+	sleep 5; # for the displaying program to settle, otherwise the temporary file might be already deleted
+    }
+}
+
+sub trivial_pdf_test {
+    my $pdffile = shift;
+    ok(-s $pdffile, "$pdffile is non-empty");
+    open(PDF, $pdffile) or die $!;
+    my $firstline = <PDF>;
+    like($firstline, qr/^%PDF-1\.\d+/, "PDF magic in $pdffile");
+}
 
 __END__
