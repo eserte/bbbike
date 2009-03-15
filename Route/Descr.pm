@@ -18,7 +18,8 @@ use strict;
 use vars qw($VERSION);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
-use FindBin;
+use Cwd qw(abs_path);
+use File::Basename qw(dirname);
 use Strassen::Strasse;
 
 my $VERBOSE = 1;
@@ -26,6 +27,8 @@ my $msg;
 
 #
 # poor man's msg framework
+#
+# Currently it is using the message file living under cgi/msg
 #
 sub M ($) {
     my $phrase = shift;
@@ -50,10 +53,24 @@ sub init_msg {
     undef $msg;
     return if !$lang;
 
-    $msg = eval { do "$FindBin::RealBin/msg/$lang" };
-    if ($msg && ref $msg ne 'HASH') {
-        undef $msg;
-    }    
+    my @candidates = (dirname(abs_path(__FILE__))."/../cgi/msg/$lang",
+		      do {
+			  # This only works if called from bbbike.cgi:
+			  require FindBin;
+			  "$FindBin::RealBin/msg/$lang"
+		      }
+		     );
+    for my $candidate (@candidates) {
+	if (-r $candidate && do {
+	    $msg = eval { do $candidate };
+	    if ($msg && ref $msg ne 'HASH') {
+		undef $msg;
+	    }
+	    $msg
+	}) {
+	    last;
+	}
+    }
 }
 
 sub convert {
@@ -93,7 +110,7 @@ sub convert {
 	push @str, $startname;
 	push @str, $starthnr if defined $starthnr;
 	if (defined $vianame) {
-	    push @str, M("&uuml;ber"), $vianame;
+	    push @str, M("über"), $vianame;
 	    push @str, $viahnr if defined $viahnr;
 	}
 	push @str, M("bis"), $zielname;
