@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: route-pdf.t,v 1.12 2008/02/02 22:41:38 eserte Exp $
+# $Id: route-pdf.t,v 1.13 2009/03/15 15:57:10 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -37,7 +37,6 @@ BEGIN {
 
 BEGIN { plan tests => 2 }
 
-$pdf_prog = "gv";
 if (!GetOptions(get_std_opts(qw(display pdfprog)))) {
     die "usage: $0 [-pdfprog pdfviewer] [-display]";
 }
