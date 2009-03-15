@@ -6,7 +6,7 @@
 # $Id: bbbike.cgi,v 9.29 2009/02/18 20:28:58 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2009 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -632,15 +632,6 @@ more information on the file format.
 Array with temporary blocking elements. Each element is a hash with the
 following keys set:
 
-=item $use_utf8
-
-Set to a true value if the C<utf-8> encoding should be used on the
-generated HTML pages. Highly recommended for non-latin1 data.
-
-=cut
-
-$use_utf8 = 0;
-
 =over
 
 =item from
@@ -660,6 +651,15 @@ bbd file for temporary blocking data or undef.
 Explanation text for temporary blockings.
 
 =back
+
+=item $use_utf8
+
+Set to a true value if the C<utf-8> encoding should be used on the
+generated HTML pages. Highly recommended for non-latin1 data.
+
+=cut
+
+$use_utf8 = 0;
 
 =back
 
@@ -6089,7 +6089,7 @@ sub header {
 	     -BGCOLOR => '#ffffff',
 	     ($use_background_image && !$printmode ? (-BACKGROUND => "$bbbike_images/bg.jpg") : ()),
 	     -meta=>{'keywords'=>'berlin fahrrad route bike karte suche cycling route routing routenplaner routenplanung fahrradroutenplaner radroutenplaner',
-		     'copyright'=>'(c) 1998-2008 Slaven Rezic',
+		     'copyright'=>'(c) 1998-2009 Slaven Rezic',
 		    },
 	     -author => $BBBike::EMAIL,
 	    );
@@ -7250,7 +7250,7 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (C) 1998-2008 Slaven Rezic. All rights reserved.
+Copyright (C) 1998-2009 Slaven Rezic. All rights reserved.
 This is free software; you can redistribute it and/or modify it under the
 terms of the GNU General Public License, see the file COPYING.
 
