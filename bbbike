@@ -7366,7 +7366,7 @@ sub focus_prev_toplevel { _focus_nextprev_toplevel(-1) }
 
 sub _focus_nextprev_toplevel {
     my($dir) = @_;
-    my @all_toplevels = grep { $_->state eq "normal" } ($top, values(%toplevel));
+    my @all_toplevels = grep { Tk::Exists($_) && $_->state eq "normal" } ($top, values(%toplevel));
     my $current_toplevel = $top->focusCurrent->toplevel;
     my $new_i;
     for(my $i=0; $i<=$#all_toplevels;$i++) {
