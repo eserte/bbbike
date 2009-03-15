@@ -1977,6 +1977,11 @@ route and a point and return information like:
   - is it a crossing or a roundabout or nothing of both
   - if a roundabout, which street use to leave
   - if a crossing, determine direction of turn (left, right, straight) and angle
+    -> algo: if start point equals end point, then assume wenden/umkehren/umdrehen
+             if angle is the smallest one of all at crossing, and smaller than HALF_ANGLE, then assume straight
+             if angle is not the smallest one, and smaller than HALF_ANGLE, then assume half-left/right
+             if angle is smaller than SHARP_ANGLE, then assume left/right
+             otherwise assume sharp-left/right
   - if in a crossing changing between higher-level street to lower-level, 
     then add extra information (show straights nevertheless)
   - maybe some "priority" of information: points without crossing are
