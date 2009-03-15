@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: route-pdf.t,v 1.13 2009/03/15 15:57:10 eserte Exp $
+# $Id: route-pdf.t,v 1.14 2009/03/15 15:57:17 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -101,6 +101,7 @@ if (fileno(GV)) {
     close(GV);
 } elsif ($do_display) {
     do_display($pdffile);
+    sleep 5; # for the displaying program to settle, otherwise the temporary file might be already deleted
 }
 
 ok(-s $pdffile, "$pdffile is non-empty");
