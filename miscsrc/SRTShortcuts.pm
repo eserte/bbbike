@@ -322,6 +322,9 @@ sub add_button {
 	      [Button => 'Search while type',
 	       -command => sub { tk_suggest() },
 	      ],
+	      [Button => 'Situation at point',
+	       -command => sub { show_situation_at_point() },
+	      ],
 	      [Button => "GPS data viewer",
 	       -command => sub { gps_data_viewer() },
 	      ],
@@ -1478,6 +1481,38 @@ sub tk_suggest {
 		 $k2l->focusNext; # to trigger focusout
 		 $t->after(100, $show_cb);
 	     });
+}
+
+######################################################################
+# Situation at point, debugging helper
+
+our $kreuzungen;
+sub show_situation_at_point {
+    if (!$kreuzungen) {
+	require Strassen::Kreuzungen;
+	$kreuzungen = Kreuzungen->new(Strassen => $main::str_obj{'s'},
+				      AllPoints => 1, # auch Kurvenpunkte
+				      WantPos => 1, # for get_records
+				     );
+    }
+    if (@main::realcoords != 3) {
+	main::status_message('Must be three coordinates in route!', 'error');
+	return;
+    }
+    require Data::Dumper;
+    my @p = map { join ",", @$_ } @main::realcoords[1,0,2];
+    my %result = $kreuzungen->situation_at_point(@p);
+    my $txt = $main::top->Subwidget('SituationAtPoint');
+    $txt = undef if !Tk::Exists($txt);
+    if (!$txt) {
+	my $tl = $main::top->Toplevel(-title => "Situation at point");
+	$txt = $tl->Scrolled("ROText", -scrollbars => "osoe")->pack(qw(-fill both -expand 1));
+	$main::top->Advertise('SituationAtPoint' => $txt);
+    }
+    $txt->delete('1.0','end');
+    $txt->insert('end', "For points @p\n");
+    $txt->insert('end', Data::Dumper->new([\%result],[qw()])->Indent(1)->Useqq(1)->Dump);
+    $txt->toplevel->raise;
 }
 
 1;
