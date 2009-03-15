@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: route-pdf.t,v 1.14 2009/03/15 15:57:17 eserte Exp $
+# $Id: route-pdf.t,v 1.15 2009/03/15 15:57:38 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -37,8 +37,11 @@ BEGIN {
 
 BEGIN { plan tests => 2 }
 
-if (!GetOptions(get_std_opts(qw(display pdfprog)))) {
-    die "usage: $0 [-pdfprog pdfviewer] [-display]";
+my $lang;
+if (!GetOptions("lang=s" => \$lang,
+		get_std_opts(qw(display pdfprog)),
+	       )) {
+    die "usage: $0 [-lang lang] [-pdfprog pdfviewer] [-display]";
 }
 
 my(undef, $pdffile) = tempfile(SUFFIX => "_test.pdf",
@@ -92,9 +95,12 @@ my $comments_net;
 }
 
 my $rp = Route::PDF->new(@arg);
-$rp->output(-vianame => $via_name,
+$rp->output(($lang ? (-lang => $lang) : ()),
+	    -vianame => $via_name,
 	    -commentsnet => $comments_net,
-	    -net => $net, -route => $route);
+	    -net => $net,
+	    -route => $route,
+	   );
 $rp->{PDF}->close;
 
 if (fileno(GV)) {
