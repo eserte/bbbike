@@ -625,6 +625,10 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,125
 Behrenstr./Bebelplatz	1s 9801,12245 9743,12239 9700,12234 9626,12227
 Halenseestr.	1s 2277,9801 2167,10004 2121,10089 1988,10328 1957,10426
 Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
+umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11323,12484 11333,12437 11343,12300
+Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11462,12384 11333,12437 11343,12300
+Mittelstreifen	3nocross::ignrte 8777,9601 8648,9526 8595,9495
+Yorckstr. -> Hagelberger Str.: Mittelstreifen	3::igndisp 8777,9601 8648,9526 8773,9524
 Mittelstreifen	3nocross::ignrte 7492,18699 7609,18707 7690,18716
 Klemkestr. -> Armbrustweg: Mittelstreifen	3::igndisp 7690,18716 7609,18707 7626,18606
 Armbrustweg -> Klemkestr.: Mittelstreifen	3::igndisp 7626,18606 7609,18707 7492,18699
@@ -783,7 +787,6 @@ Samländische Str. -> Berliner Str.: Straßenbahntrasse	3::igndisp 10706,17391 109
 Straßenbahntrasse	3nocross::ignrte 13753,16000 13826,16026 14014,16106
 Berliner Allee -> Herbert-Baum-Str.: Straßenbahntrasse	3::igndisp 14014,16106 13826,16026 13869,15912
 Herbert-Baum-Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13869,15912 13826,16026 13753,16000
-Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3 11462,12384 11333,12437 11343,12300
 Straßenbahntrasse	3nocross::ignrte 10920,13139 11015,13264 11087,13359 11149,13442
 Karl-Liebknecht-Str. -> Hirtenstr.: Straßenbahntrasse	3::igndisp 10920,13139 11015,13264 10923,13317
 Hirtenstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 10923,13317 11015,13264 11087,13359

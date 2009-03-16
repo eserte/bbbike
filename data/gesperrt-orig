@@ -746,6 +746,8 @@ Zeltinger Platz	1s:q3 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 248
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11323,12484 11333,12437 11343,12300
+Yorckstr.: Mittelstreifen	3nocross 8777,9601 8648,9526 8595,9495
 Klemkestr.: Mittelstreifen	3nocross 7492,18699 7609,18707 7690,18716
 Berliner Allee: Straßenbahntrasse	3nocross 14619,16682 14608,16772 14559,16912
 #: note: Luftbild
@@ -820,7 +822,6 @@ Königsberger Str.: Mittelstreifen nicht passierbar	3nocross 4251,2637 4212,2675 
 Berliner Str.: Straßenbahntrasse	3nocross 10911,17275 10906,17331 10900,17397 10894,17470 10892,17491
 #: note: Luftbild:
 Berliner Str.: Straßenbahntrasse	3nocross 13753,16000 13826,16026 14014,16106
-Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3 11462,12384 11333,12437 11343,12300
 Karl-Liebknecht-Str.: Straßenbahntrasse	3nocross 10920,13139 11015,13264 11087,13359 11149,13442
 Badstr.: Gitter auf Mittelstreifen	3nocross 8659,16327 8543,16364 8516,16393 8486,16425
 Riesaer Str.: Straßenbahntrasse	3nocross 24120,14526 24097,14575 24020,14737
