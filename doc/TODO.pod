@@ -1976,17 +1976,35 @@ route and a point and return information like:
 
   - is it a crossing or a roundabout or nothing of both
   - if a roundabout, which street use to leave
+    -> XXX need information about roundabouts, or can I determine this implicitely (closed street?)
   - if a crossing, determine direction of turn (left, right, straight) and angle
     -> algo: if start point equals end point, then assume wenden/umkehren/umdrehen
              if angle is the smallest one of all at crossing, and smaller than HALF_ANGLE, then assume straight
              if angle is not the smallest one, and smaller than HALF_ANGLE, then assume half-left/right
              if angle is smaller than SHARP_ANGLE, then assume left/right
              otherwise assume sharp-left/right
+    -> implemented, more checks
   - if in a crossing changing between higher-level street to lower-level, 
     then add extra information (show straights nevertheless)
   - maybe some "priority" of information: points without crossing are
     lowest, points where street name just changes next, crossing with
     straight direction next, turns highest (or so)
+
+  Vorfahrtdetection, algo:
+  - if there are only two in the neighbor array: nothing to do!
+  - in the neighbor array: if there are exactly two B, or two HH and no B, or two H and no B and no HH, then these constitute the right-of-way relation
+  - like above, but exactly one ...: very strange situation, should not happen!
+  - like above, but more than two: in Berlin: either an Ampel or Vorfahrt is missing here. Outside Berlin: we don't know it
+  - otherwise:
+  - if there is two N, then these constitutes the right-of-way relation (over an NN one)
+  - if there are more than two N, then links-vor-rechts rules
+  - only one N: strange situation, could maybe happen?
+  - what about pure NN crossings? tell anything about it?
+
+  Now map the vorfahrt situation to the driving direction:
+  - if before-street==vorfahrt street1/2 and after-street==vorfahrt street2/1 -> we have right of way
+  - if before-street==vorfahrt and after-street!=vorfahrt -> we are leaving the right-of-way relation (maybe only report if it's a bent one)
+  - if before-street!=vorfahrt, but there's some vorfahrt street in the crossing: we need to give way
 
 =item * (H4) (improvement)
 
