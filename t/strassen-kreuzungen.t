@@ -23,7 +23,7 @@ BEGIN {
     }
 }
 
-plan tests => 39;
+plan 'no_plan';
 
 use_ok "Strassen::Kreuzungen";
 
@@ -39,8 +39,10 @@ my $kr1 = Kreuzungen->new(@common_args);
 isa_ok($kr1, "Kreuzungen");
 
 my $ampeln = Strassen->new("$FindBin::RealBin/../data/ampeln");
+my $vf     = Strassen->new("$FindBin::RealBin/../data/vorfahrt");
 my $kr2 = Kreuzungen::MoreContext->new(@common_args,
 				       Ampeln => $ampeln->get_hashref_by_cat,
+				       Vf     => $vf,
 				      );
 isa_ok($kr2, "Kreuzungen");
 isa_ok($kr2, "Kreuzungen::MoreContext");
@@ -110,6 +112,34 @@ for my $kr ($kr1, $kr2) {
 	    is($situation{traffic_rule}, '', "Here's nothing else");
 	}
     }
+
+    # Bergmannstr., Fußgängerampel
+    {
+	my %situation = situation_at_point_inorder($kr, qw(9505,9306 9489,9309 9300,9341));
+	is($situation{action}, '', q{No crossing, no action"});
+	if ($kr == $kr2) {
+	    is($situation{traffic_rule}, 'traffic_light_pedestrian', "pedestrian's traffic light");
+	}
+    }
+
+    # Möckernstr.
+    {
+	my %situation = situation_at_point_inorder($kr, qw(8779,9851 8780,9968 8783,10166));
+	is($situation{action}, '', q{Moeckernstr.: straight"});
+	if ($kr == $kr2) {
+	    is($situation{traffic_rule}, 'right_of_way', "Moeckernstr.: right of way, straight");
+	}
+    }
+
+    # Rüdersdorfer/Wedekindstr
+    {
+	my %situation = situation_at_point_inorder($kr, qw(12891,12008 13066,11854 13217,11936));
+	is($situation{action}, 'left', "Ruedersdorfer/Wedekindstr");
+	if ($kr == $kr2) {
+	    is($situation{traffic_rule}, 'bent_right_of_way', "Ruedersdorfer/Wedekindstr.: bent right of way");
+	}
+    }
+
 }
 
 for my $kr ($kr1, $kr2) {

@@ -409,8 +409,21 @@ sub situation_at_point {
     sub new {
 	my($class, %args) = @_;
 	my $ampeln = delete $args{Ampeln}; # Hashref: x,y -> cat
+	my $vf     = delete $args{Vf}; # Strassen-Objekt vorfahrt
 	my $self = $class->SUPER::new(%args);
 	$self->{Ampeln} = $ampeln;
+	if ($vf) {
+	    my %vf_hash;
+	    $vf->init;
+	    while(1) {
+		my $r = $vf->next;
+		my $c = $r->[Strassen::COORDS()];
+		last if !@$c;
+		$vf_hash{join(" ", @$c)}++;
+		$vf_hash{join(" ", reverse @$c)}++;
+	    }
+	    $self->{Vf} = \%vf_hash;
+	}
 	$self;
     }
 
@@ -418,7 +431,7 @@ sub situation_at_point {
 	my($self, $coord, $before_coord, $after_coord) = @_;
 	my %ret = $self->SUPER::situation_at_point($coord, $before_coord, $after_coord);
 
-	my $traffic_rule = '';
+	my $traffic_rule;
 	if ($self->{Ampeln} && (my $ampel_cat = $self->{Ampeln}{$coord})) {
 	    if ($ampel_cat eq 'X') {
 		$traffic_rule = 'traffic_light';
@@ -427,6 +440,23 @@ sub situation_at_point {
 	    } elsif ($ampel_cat eq 'B') {
 		$traffic_rule = 'railway_crossing';
 	    } # ignore others
+	}
+	if (!defined $traffic_rule) {
+	    my $is_vorfahrt = $self->{Vf} && exists $self->{Vf}{join(" ", $before_coord, $coord, $after_coord)};
+	    if (!$is_vorfahrt) {
+		# XXX NYI: calculate implicite right of way/give right of way
+		# based on Strassen::CAT
+	    }
+	    if ($is_vorfahrt) {
+		if ($ret{action} eq '') {
+		    $traffic_rule = 'right_of_way';
+		} else {
+		    $traffic_rule = 'bent_right_of_way';
+		}
+	    }
+	}
+	if (!defined $traffic_rule) {
+	    $traffic_rule = '';
 	}
 
 	(%ret, traffic_rule => $traffic_rule);
