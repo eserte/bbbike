@@ -43,6 +43,8 @@ my $other_tracks                     = "$bbbike_rootdir/tmp/other-tracks.bbd";
 
 use vars qw($hm_layer);
 
+use vars qw($show_situation_at_point_for_route);
+
 sub register {
     my $pkg = __PACKAGE__;
     $BBBikePlugin::plugins{$pkg} = $pkg;
@@ -322,8 +324,16 @@ sub add_button {
 	      [Button => 'Search while type',
 	       -command => sub { tk_suggest() },
 	      ],
-	      [Button => 'Situation at point',
-	       -command => sub { show_situation_at_point() },
+	      [Cascade => 'Situation at point', -menuitems =>
+	       [
+		[Button => 'For three points',
+		 -command => sub { show_situation_at_point() },
+		],
+		[Checkbutton => 'When calculating routes',
+		 -command => sub { toggle_situation_at_point_for_route() },
+		 -variable => \$show_situation_at_point_for_route,
+		],
+	       ],
 	      ],
 	      [Button => "GPS data viewer",
 	       -command => sub { gps_data_viewer() },
@@ -1486,19 +1496,22 @@ sub tk_suggest {
 ######################################################################
 # Situation at point, debugging helper
 
-our $kreuzungen;
+sub _get_kreuzungen {
+    our $kreuzungen;
+    return $kreuzungen if $kreuzungen;
+    require Strassen::Kreuzungen;
+    my $ampeln = Strassen->new("$main::datadir/ampeln");
+    my $vf     = Strassen->new("$main::datadir/vorfahrt");
+    $kreuzungen = Kreuzungen::MoreContext->new(Strassen => $main::str_obj{'s'},
+					       AllPoints => 1, # auch Kurvenpunkte
+					       WantPos => 1, # for get_records
+					       Ampeln => $ampeln->get_hashref_by_cat,
+					       Vf     => $vf,
+					      );
+}
+
 sub show_situation_at_point {
-    if (!$kreuzungen) {
-	require Strassen::Kreuzungen;
-	my $ampeln = Strassen->new("$main::datadir/ampeln");
-	my $vf     = Strassen->new("$main::datadir/vorfahrt");
-	$kreuzungen = Kreuzungen::MoreContext->new(Strassen => $main::str_obj{'s'},
-						   AllPoints => 1, # auch Kurvenpunkte
-						   WantPos => 1, # for get_records
-						   Ampeln => $ampeln->get_hashref_by_cat,
-						   Vf     => $vf,
-						  );
-    }
+    my $kreuzungen = _get_kreuzungen();
     if (@main::realcoords != 3) {
 	main::status_message('Must be three coordinates in route!', 'error');
 	return;
@@ -1517,6 +1530,69 @@ sub show_situation_at_point {
     $txt->insert('end', "For points @p\n");
     $txt->insert('end', Data::Dumper->new([\%result],[qw()])->Indent(1)->Useqq(1)->Dump);
     $txt->toplevel->raise;
+}
+
+sub toggle_situation_at_point_for_route {
+    my $hookname_add = __PACKAGE__ . "_show_situation_at_point_for_route";
+    my $hookname_del = __PACKAGE__ . "_show_situation_at_point_for_route-delete";
+    if ($show_situation_at_point_for_route) {
+	Hooks::get_hooks("new_route")->add(\&show_situation_at_point_for_route, $hookname_add);
+	Hooks::get_hooks("del_route")->add(\&delete_situation_at_point_for_route, $hookname_del);
+	show_situation_at_point_for_route();
+    } else {
+	Hooks::get_hooks("new_route")->del($hookname_add);
+	Hooks::get_hooks("del_route")->del($hookname_del);
+	delete_situation_at_point_for_route();
+    }
+}
+
+sub show_situation_at_point_for_route {
+    my $kreuzungen = _get_kreuzungen();
+    if (!@main::realcoords) {
+	return;
+    }
+    my @search_route = @{ main::get_act_search_route() };
+    my %point_to_dir;
+    for my $i (0 .. $#search_route) {
+	my $coord = join(",", @{ $main::realcoords[$search_route[$i+1]->[StrassenNetz::ROUTE_ARRAYINX()][0]] });
+	my $direction = {'l' => 'left',
+			 'r' => 'right',
+			 '' => '',
+			}->{$search_route[$i]->[StrassenNetz::ROUTE_DIR()]};
+	my $angle = $search_route[$i]->[StrassenNetz::ROUTE_ANGLE()];
+	my $extra = $search_route[$i]->[StrassenNetz::ROUTE_EXTRA()];
+	my $important = $extra && $extra->{ImportantAngle};
+	# Heuristik from bbbike.cgi
+	if (!$angle) { $angle = 0 }
+	$angle = int($angle/10)*10;
+	if ($angle < 30 && !$important) {
+	    $direction = "";
+	} elsif ($angle <= 45) {
+	    $direction = 'half-' . $direction . " $angle°";
+	} else {
+	    $direction .= " $angle°";
+	}
+	if (exists $point_to_dir{$coord}) {
+	    $point_to_dir{$coord} .= "; $direction";
+	} else {
+	    $point_to_dir{$coord} = $direction;
+	}
+    }
+
+    delete_situation_at_point_for_route();
+    for my $i (1 .. $#main::realcoords-1) {
+	my @p = map { join ",", @$_ } @main::realcoords[$i,$i-1,$i+1];
+	my %result = $kreuzungen->situation_at_point(@p);
+	$main::c->createText(main::transpose(@{$main::realcoords[$i]}),
+			     -text => $result{action} . (exists $point_to_dir{$p[0]} ? " ($point_to_dir{$p[0]})" : ""),
+			     -anchor => 'w',
+			     -tags => ['situation_at_point'],
+			    );
+    }
+}
+
+sub delete_situation_at_point_for_route {
+    $main::c->delete('situation_at_point');
 }
 
 1;
