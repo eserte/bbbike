@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.24 2009/03/16 23:05:23 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.25 2009/03/16 23:05:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -49,7 +49,7 @@ use vars qw($gps_track_mode $gps_fh $replay_speed_conf @gps_track $gpspipe_pid
 	    $do_navigate @current_search_route $do_speech
 	    %reported_point
 	    $current_accuracy $current_accuracy_update_time
-	    $current_speed $current_gps_mode
+	    $current_speed $current_gps_mode $current_sat_used %seen_gps_mode
 	    $gpsd_last_event_time $gpsd_checker $gpsd_state
 	    $in_re_route $auto_re_route
 	  );
@@ -245,6 +245,7 @@ sub activate_tracking {
     undef $current_accuracy;
     undef $current_speed;
     undef $current_gps_mode;
+    undef %seen_gps_mode;
     # XXX decide whether to use GPS::NMEA or gpsd
     if (GPS_GRABBER eq 'nmea') {
 	activate_nmea_tracking();
@@ -374,7 +375,7 @@ sub _setup_fileevent {
 		    my(@l) = split /\s+/;
 		    if ($l[4]) { $sat_used++ }
 		}
-		warn "Satellites used: $sat_used\n";
+		$current_sat_used = $sat_used;
 	    }
 	    $line = '';
 	}
@@ -418,15 +419,32 @@ sub _setup_fileevent {
 
 sub gps_mode_change {
     my($new_mode) = @_;
-    if (0 && $do_speech) {# XXX not yet ... need a good approach when flapping
+    if ($do_speech) {# XXX need a better approach when flapping
+	return if $seen_gps_mode{$new_mode};
+
+	my $msg;
 	if ($new_mode eq '1') {
-	    saytext('Kein GPS-Fix.');
+	    $msg = 'Kein GPS-Fix.';
 	} elsif ($new_mode eq '2') {
-	    saytext('Es gibt einen 2D-Fix.');
+	    $msg = 'Es gibt einen 2D-Fix.';
 	} elsif ($new_mode eq '3') {
-	    saytext('Es gibt einen 3D-Fix.');
+	    $msg = 'Es gibt einen 3D-Fix.';
 	} else {
-	    warn "Unexpected GPS mode $new_mode";
+	    $msg = "Unerwarteter GPS-Modus $new_mode";
+	}
+
+	if ($new_mode >= 2) {
+	    if (defined $current_sat_used) {
+		$msg .= " Es wurden $current_sat_used Satelliten zum Ermitteln der Position verwendet.";
+	    }
+	    if (defined $current_accuracy) {
+		$msg .= " Die Genauigkeit beträgt $current_accuracy Meter.";
+	    }
+	}
+
+	if ($msg) {
+	    saytext($msg);
+	    $seen_gps_mode{$new_mode} = 1;
 	}
     }
 }
@@ -1034,6 +1052,10 @@ More snippets:
     perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -e 'package BBBikeGPSTrackingPlugin; $current_accuracy = 9999; saytext(gps_info_text_de())'
 
     perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -e 'package BBBikeGPSTrackingPlugin; $current_accuracy = 12; saytext(gps_info_text_de())'
+
+  A GPS mode change:
+
+    perl -Ilib -Imiscsrc -MBBBikeGPSTrackingPlugin -e 'package BBBikeGPSTrackingPlugin; $do_speech=1; $current_accuracy = 12; $current_sat_used = 2; gps_mode_change(shift)' 1
 
 =head2 TODO
 
