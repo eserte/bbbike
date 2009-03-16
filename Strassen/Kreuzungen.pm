@@ -408,8 +408,10 @@ sub situation_at_point {
 
     sub new {
 	my($class, %args) = @_;
-	my $ampeln = delete $args{Ampeln}; # Hashref: x,y -> cat
-	my $vf     = delete $args{Vf}; # Strassen-Objekt vorfahrt
+	my $ampeln    = delete $args{Ampeln}; # Hashref: x,y -> cat
+	my $vf        = delete $args{Vf}; # Strassen-Objekt vorfahrt
+	my $handicap  = delete $args{HandicapNet};
+	my $qualitaet = delete $args{QualitaetNet};
 	my $self = $class->SUPER::new(%args);
 	$self->{Ampeln} = $ampeln;
 	if ($vf) {
@@ -424,6 +426,8 @@ sub situation_at_point {
 	    }
 	    $self->{Vf} = \%vf_hash;
 	}
+	$self->{HandicapNet} = $handicap;
+	$self->{QualitaetNet} = $qualitaet;
 	$self;
     }
 
@@ -459,7 +463,29 @@ sub situation_at_point {
 	    $traffic_rule = '';
 	}
 
-	(%ret, traffic_rule => $traffic_rule);
+	my $new_quality_cat;
+	if ($self->{QualitaetNet}) {
+	    my $Q_before = ($self->{QualitaetNet}{Net}{$before_coord} && $self->{QualitaetNet}{Net}{$before_coord}{$coord}) || 'Q0';
+	    my $Q_after  = ($self->{QualitaetNet}{Net}{$coord}        && $self->{QualitaetNet}{Net}{$coord}{$after_coord}) || 'Q0';
+	    if ($Q_before ne $Q_after) {
+		$new_quality_cat = $Q_after;
+	    }
+	}
+
+	my $new_handicap_cat;
+	if ($self->{HandicapNet}) {
+	    my $q_before = ($self->{HandicapNet}{Net}{$before_coord} && $self->{HandicapNet}{Net}{$before_coord}{$coord}) || 'q0';
+	    my $q_after  = ($self->{HandicapNet}{Net}{$coord}        && $self->{HandicapNet}{Net}{$coord}{$after_coord}) || 'q0';
+	    if ($q_before ne $q_after) {
+		$new_handicap_cat = $q_after;
+	    }
+	}
+
+	(%ret,
+	 traffic_rule => $traffic_rule,
+	 quality_cat  => $new_quality_cat,
+	 handicap_cat => $new_handicap_cat,
+	);
     }
 }
 

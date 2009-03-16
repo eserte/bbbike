@@ -1507,6 +1507,8 @@ sub _get_kreuzungen {
 					       WantPos => 1, # for get_records
 					       Ampeln => $ampeln->get_hashref_by_cat,
 					       Vf     => $vf,
+					       HandicapNet => main::make_handicap_net(),
+					       QualitaetNet => main::make_qualitaet_net(),
 					      );
 }
 

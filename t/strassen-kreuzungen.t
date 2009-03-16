@@ -28,6 +28,7 @@ plan 'no_plan';
 use_ok "Strassen::Kreuzungen";
 
 use Strassen::Core;
+use Strassen::StrassenNetz;
 
 my $s = Strassen->new("$FindBin::RealBin/../data/strassen");
 my @common_args = (Strassen => $s,
@@ -40,9 +41,15 @@ isa_ok($kr1, "Kreuzungen");
 
 my $ampeln = Strassen->new("$FindBin::RealBin/../data/ampeln");
 my $vf     = Strassen->new("$FindBin::RealBin/../data/vorfahrt");
+my $handicap_net  = StrassenNetz->new(Strassen->new("$FindBin::RealBin/../data/handicap_s"));
+my $qualitaet_net = StrassenNetz->new(Strassen->new("$FindBin::RealBin/../data/qualitaet_s"));
+$handicap_net->make_net_cat;
+$qualitaet_net->make_net_cat;
 my $kr2 = Kreuzungen::MoreContext->new(@common_args,
 				       Ampeln => $ampeln->get_hashref_by_cat,
 				       Vf     => $vf,
+				       HandicapNet => $handicap_net,
+				       QualitaetNet => $qualitaet_net,
 				      );
 isa_ok($kr2, "Kreuzungen");
 isa_ok($kr2, "Kreuzungen::MoreContext");
@@ -146,6 +153,29 @@ for my $kr ($kr1, $kr2) {
 	}
     }
 
+    # Bergmannstr., Kopfsteinpflaster
+    if ($kr == $kr2) {
+	{
+	    my %situation = situation_at_point_inorder($kr, qw(10123,9233 10001,9234 9973,9232));
+	    is($situation{quality_cat}, 'Q2', 'Bergmannstr.: Q2 begins');
+	}
+	{
+	    my %situation = situation_at_point_inorder($kr, qw(9973,9232 10001,9234 10123,9233));
+	    is($situation{quality_cat}, 'Q0', 'Bergmannstr.: Q2 ends, Q0 begins');
+	}
+    }
+
+    # Südstern, Fußgänger
+    if ($kr == $kr2) {
+	{
+	    my %situation = situation_at_point_inorder($kr, qw(10903,9475 10747,9326 10710,9309));
+	    is($situation{handicap_cat}, 'q3', 'Suedstern: q3 begins');
+	}
+	{
+	    my %situation = situation_at_point_inorder($kr, qw(10710,9309 10747,9326 10903,9475));
+	    is($situation{handicap_cat}, 'q0', 'Suedstern: q3 ends, q0 begins');
+	}
+    }
 }
 
 for my $kr ($kr1, $kr2) {
