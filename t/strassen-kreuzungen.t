@@ -68,13 +68,40 @@ for my $kr ($kr1, $kr2) {
     my %situation = $kr->situation_at_point($at_point, $before_point, $after_point);
     is($situation{before_street}->[Strassen::NAME()], "Platz der Luftbrücke", "Street before");
     is($situation{after_street}->[Strassen::NAME()],  "Mehringdamm", "Street after");
-
-#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\%situation],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
-
 }
 
 for my $kr ($kr1, $kr2) {
     no warnings qw(qw);
+
+    # not at streets
+    {
+	my %situation = situation_at_point_inorder_unchecked($kr, qw(10009,10387 10044,10220 10256,10220));
+	is_deeply($situation{neighbors}, [], 'No streets, no neighbors');
+	is($situation{before_street}, undef, 'No street before');
+	is($situation{after_street}, undef, 'No street after');
+    }
+
+    # Luckauer Str.: constructed point in middle, but probably missing in nets
+    {
+	my %situation = situation_at_point_inorder_unchecked($kr, qw(11105,10945 11126,10985 11150,11030));
+	is_deeply($situation{neighbors}, [], 'Currently cannot resolve any neighbors'); # XXX Should this be fixed?
+	is($situation{action}, '', q{Constructed point in middle -> straight});
+    }
+
+    # Adalbertstr.: constructed point at the end, but probably missing in nets
+    {
+	my %situation = situation_at_point_inorder_unchecked($kr, qw(11505,10744 11556,10869 11593,10956));
+	is($situation{after_street}, undef, 'Currently cannot resolve after street'); # XXX Should this be fixed?
+	is($situation{action}, '', q{Constructed point at end -> straight});
+    }
+
+    # Adalbertstr.: constructed point at the begin, but probably missing in nets
+    {
+	my %situation = situation_at_point_inorder_unchecked($kr, qw(11484,10694 11505,10744 11556,10869));
+	is($situation{before_street}, undef, 'Currently cannot resolve before street'); # XXX Should this be fixed?
+	is($situation{action}, '', q{Constructed point at begin -> straight});
+    }
+
     # Wilhelmstr. -> Wilhelmstr.
     {
 	my %situation = situation_at_point_inorder($kr, qw(9404,10250 9388,10393 9378,10539));
@@ -196,7 +223,7 @@ for my $kr ($kr1, $kr2) {
 
     {
 	# Oberbaumstr./Falkensteinstr.
-	my %situation = situation_at_point_inorder($kr, qw(13206,10651 13178,10623 13015,10659));
+	my %situation = situation_at_point_inorder($kr, qw(13206,10651 13178,10623 13082,10634));
 	is($situation{action}, '', q{Should be "straight", because it's the main street});
     }
 
@@ -235,9 +262,24 @@ for my $kr ($kr1, $kr2) {
 	my %situation = situation_at_point_inorder($kr, qw(13066,11854 13173,11788 13295,11792));
 	is($situation{action}, '', q{Die Parkplatzeinfahrt sollte hier kein "links" verursachen.});
     }
+
+    {
+	# Nostitz/Arndtstr.
+	my %situation = situation_at_point_inorder($kr, qw(9505,9306 9487,9209 9546,9198));
+	is($situation{action}, 'left', q{Der Strassenname aendert sich, es sind 90 Grad --- sollte "links" ausgeben});
+    }
 }
 
 sub situation_at_point_inorder {
+    my($kr, $before_point, $at_point, $after_point) = @_;
+    my %situation = situation_at_point_inorder_unchecked($kr, $before_point, $at_point, $after_point);
+    local $TODO = ""; # these should always pass, regardless of the current $TODO setting
+    ok($situation{before_street}, "Got street before - $before_point $at_point");
+    ok($situation{after_street}, "Got street after - $at_point $after_point");
+    %situation;
+}
+
+sub situation_at_point_inorder_unchecked {
     my($kr, $before_point, $at_point, $after_point) = @_;
     $kr->situation_at_point($at_point, $before_point, $after_point);
 }

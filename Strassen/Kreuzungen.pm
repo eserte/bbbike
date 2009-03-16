@@ -370,7 +370,8 @@ sub situation_at_point {
 	}
     }
 
-    use constant SAP_HALF_ANGLE => BBBikeUtil::deg2rad(30);
+    use constant SAP_MIN_ANGLE   => BBBikeUtil::deg2rad(5);
+    use constant SAP_HALF_ANGLE  => BBBikeUtil::deg2rad(30);
     use constant SAP_SHARP_ANGLE => BBBikeUtil::deg2rad(130);
 
     my $l_or_r = sub { $dir eq 'l' ? 'left' : 'right' };
@@ -383,6 +384,8 @@ sub situation_at_point {
 	$action = 'sharp-' . $l_or_r->();
     } elsif ($angle >= SAP_HALF_ANGLE) {
 	$action = $l_or_r->();
+    } elsif ($angle <= SAP_MIN_ANGLE) {
+	$action = ''; # too small angle to distinguish from straight
     } else {
 	my $is_min_angle = BBBikeUtil::min(map { $_->[1] } @neighbors) == $angle;
 	if ($is_min_angle) {
