@@ -19,6 +19,8 @@ use strict;
 use vars qw($VERBOSE);
 #use AutoLoader 'AUTOLOAD';
 
+use BBBikeUtil qw();
+
 # Argumente: entweder "Hash" oder "Strassen"
 # "Hash" ist der Rückgabewert von Strassen::all_crossings (bei
 # Verwendung von "hash" oder "hashpos" als RetType). Array wird noch nicht
@@ -317,8 +319,6 @@ sub draw {
 sub situation_at_point {
     my($self, $coord, $before_coord, $after_coord) = @_;
 
-    require BBBikeUtil;
-
     my($before_coord_x, $before_coord_y) = split /,/, $before_coord;
     my($coord_x,        $coord_y)        = split /,/, $coord;
     my($angle, $dir) = BBBikeUtil::schnittwinkel($before_coord_x, $before_coord_y,
@@ -370,11 +370,34 @@ sub situation_at_point {
 	}
     }
 
+    use constant SAP_HALF_ANGLE => BBBikeUtil::deg2rad(30);
+    use constant SAP_SHARP_ANGLE => BBBikeUtil::deg2rad(130);
+
+    my $l_or_r = sub { $dir eq 'l' ? 'left' : 'right' };
+    my $action;
+    if (@neighbors == 2) {
+	$action = ''; # no crossings
+    } elsif ($after_coord eq $before_coord) {
+	$action = 'back';
+    } elsif ($angle >= SAP_SHARP_ANGLE) {
+	$action = 'sharp-' . $l_or_r->();
+    } elsif ($angle >= SAP_HALF_ANGLE) {
+	$action = $l_or_r->();
+    } else {
+	my $is_min_angle = BBBikeUtil::min(map { $_->[1] } @neighbors) == $angle;
+	if ($is_min_angle) {
+	    $action = ''; # straight
+	} else {
+	    $action = 'half-' . $l_or_r->();
+	}
+    }
+	
     (before_street => $before_street, # The street before the crossing
      after_street  => $after_street,  # The street after the crossing
      angle         => $angle,         # The angle in radians at point
      dir           => $dir,           # Direction: l or r
      neighbors     => \@neighbors,    # a list of [neighbors (Strassen records), angle and dir]
+     action        => $action,
     );
 }
 
