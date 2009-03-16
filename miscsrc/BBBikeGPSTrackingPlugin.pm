@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.23 2009/03/14 23:14:09 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.24 2009/03/16 23:05:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -886,18 +886,23 @@ sub make_direction_for_english_festival {
 # Cleanups
 sub deactivate_tracking {
     return if !$gps_fh;
+    # Strange: I have to first kill and the close the fh. Otherwise
+    # there's an implicite waitpid() call causing the process to hang
+    # (?) (seen with strace).
+    kill_gpspipe();
     $main::top->fileevent($gps_fh, 'readable', '');
     undef $gps_fh;
     $gpsd_checker->cancel if $gpsd_checker;
     undef $gpsd_checker;
     $gps_track_mode = 0;
-    kill_gpspipe();
 }
 
 sub kill_gpspipe {
-    if ($gpspipe_pid && kill 0 => $gpspipe_pid) {
-	local $SIG{CHLD} = 'IGNORE';
-	kill 9 => $gpspipe_pid;
+    if ($gpspipe_pid) {
+	if (kill 0 => $gpspipe_pid) {
+	    #local $SIG{CHLD} = 'IGNORE';
+	    kill 9 => $gpspipe_pid;
+	} # else already killed?
 	undef $gpspipe_pid;
     }
 }
