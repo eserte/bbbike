@@ -1490,10 +1490,14 @@ our $kreuzungen;
 sub show_situation_at_point {
     if (!$kreuzungen) {
 	require Strassen::Kreuzungen;
-	$kreuzungen = Kreuzungen->new(Strassen => $main::str_obj{'s'},
-				      AllPoints => 1, # auch Kurvenpunkte
-				      WantPos => 1, # for get_records
-				     );
+	my $ampeln = Strassen->new("$main::datadir/ampeln");
+	my $vf     = Strassen->new("$main::datadir/vorfahrt");
+	$kreuzungen = Kreuzungen::MoreContext->new(Strassen => $main::str_obj{'s'},
+						   AllPoints => 1, # auch Kurvenpunkte
+						   WantPos => 1, # for get_records
+						   Ampeln => $ampeln->get_hashref_by_cat,
+						   Vf     => $vf,
+						  );
     }
     if (@main::realcoords != 3) {
 	main::status_message('Must be three coordinates in route!', 'error');
