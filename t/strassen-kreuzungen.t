@@ -23,27 +23,35 @@ BEGIN {
     }
 }
 
-plan tests => 18;
+plan tests => 39;
 
 use_ok "Strassen::Kreuzungen";
 
 use Strassen::Core;
 
 my $s = Strassen->new("$FindBin::RealBin/../data/strassen");
-my $kr = Kreuzungen->new(Strassen => $s,
-			 WantPos => 1,
-			 Kurvenpunkte => 1,
-			 UseCache => 1,
-			);
-isa_ok($kr, "Kreuzungen");
+my @common_args = (Strassen => $s,
+		   WantPos => 1,
+		   Kurvenpunkte => 1,
+		   UseCache => 1,
+		  );
+my $kr1 = Kreuzungen->new(@common_args);
+isa_ok($kr1, "Kreuzungen");
 
-{
+my $ampeln = Strassen->new("$FindBin::RealBin/../data/ampeln");
+my $kr2 = Kreuzungen::MoreContext->new(@common_args,
+				       Ampeln => $ampeln->get_hashref_by_cat,
+				      );
+isa_ok($kr2, "Kreuzungen");
+isa_ok($kr2, "Kreuzungen::MoreContext");
+
+for my $kr ($kr1, $kr2) {
     my $at_point     = "9229,8785"; # Dudenstr./Mehringdamm
     my $before_point = "9272,8781"; # Platz der Luftbrücke
     my $after_point  = "9227,8890"; # Mehringdamm
 
     for ($at_point, $before_point, $after_point) {
-	ok($kr->get($_), "Got simple entry for point <$_>")
+	ok($kr->get($_), "Got simple entry for point <$_> (with @{[ ref $kr ]})")
 	    or diag("This may fail if data in <strassen> changed");
 	ok($kr->get_records($_), "Got complex entry for point <$_>"); 
     }
@@ -56,12 +64,15 @@ isa_ok($kr, "Kreuzungen");
 
 }
 
-{
+for my $kr ($kr1, $kr2) {
     no warnings qw(qw);
     # Wilhelmstr. -> Wilhelmstr.
     {
 	my %situation = situation_at_point_inorder($kr, qw(9404,10250 9388,10393 9378,10539));
-	is($situation{action}, '', q{It's "straight"});
+	is($situation{action}, '', q{It's "straight"} . " (with @{[ ref $kr ]})");
+	if ($kr == $kr2) {
+	    is($situation{traffic_rule}, 'traffic_light', "Here's a traffic light");
+	}
     }
 
     # Wilhelmstr. -> Stresemannstr.
@@ -80,6 +91,9 @@ isa_ok($kr, "Kreuzungen");
     {
 	my %situation = situation_at_point_inorder($kr, qw(9026,8916 9111,9036 9063,8935));
 	is($situation{action}, 'sharp-right', q{It's "sharp-right"});
+	if ($kr == $kr2) {
+	    is($situation{traffic_rule}, '', "Here's nothing else"); # XXX rechts-vor-links?
+	}
     }
 
     # Methfesselstr. -> Viktoria-Quartier
@@ -92,17 +106,20 @@ isa_ok($kr, "Kreuzungen");
     {
 	my %situation = situation_at_point_inorder($kr, qw(9186,9107 9155,9029 9149,8961));
 	is($situation{action}, '', q{No crossing, no action"});
+	if ($kr == $kr2) {
+	    is($situation{traffic_rule}, '', "Here's nothing else");
+	}
     }
 }
 
-{
+for my $kr ($kr1, $kr2) {
     local $TODO = "Suboptimal results";
     no warnings qw(qw);
 
     {
 	# Skalitzer/Schlesisches Tor
 	my %situation = situation_at_point_inorder($kr, qw(13015,10659 12985,10665 12899,10595));
-	is($situation{action}, '', q{Should be "straight", because it's the main street});
+	is($situation{action}, '', q{Should be "straight", because it's the main street} . " (with @{[ ref $kr ]})");
     }
 
     {

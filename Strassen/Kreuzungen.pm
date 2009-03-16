@@ -401,4 +401,36 @@ sub situation_at_point {
     );
 }
 
+{
+    package Kreuzungen::MoreContext;
+    use vars qw(@ISA);
+    @ISA = qw(Kreuzungen);
+
+    sub new {
+	my($class, %args) = @_;
+	my $ampeln = delete $args{Ampeln}; # Hashref: x,y -> cat
+	my $self = $class->SUPER::new(%args);
+	$self->{Ampeln} = $ampeln;
+	$self;
+    }
+
+    sub situation_at_point {
+	my($self, $coord, $before_coord, $after_coord) = @_;
+	my %ret = $self->SUPER::situation_at_point($coord, $before_coord, $after_coord);
+
+	my $traffic_rule = '';
+	if ($self->{Ampeln} && (my $ampel_cat = $self->{Ampeln}{$coord})) {
+	    if ($ampel_cat eq 'X') {
+		$traffic_rule = 'traffic_light';
+	    } elsif ($ampel_cat eq 'F') {
+		$traffic_rule = 'traffic_light_pedestrian';
+	    } elsif ($ampel_cat eq 'B') {
+		$traffic_rule = 'railway_crossing';
+	    } # ignore others
+	}
+
+	(%ret, traffic_rule => $traffic_rule);
+    }
+}
+
 1;
