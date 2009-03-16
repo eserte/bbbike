@@ -371,7 +371,7 @@ sub situation_at_point {
     }
 
     use constant SAP_MIN_ANGLE   => BBBikeUtil::deg2rad(5);
-    use constant SAP_HALF_ANGLE  => BBBikeUtil::deg2rad(30);
+    use constant SAP_HALF_ANGLE  => BBBikeUtil::deg2rad(45);
     use constant SAP_SHARP_ANGLE => BBBikeUtil::deg2rad(130);
 
     my $l_or_r = sub { $dir eq 'l' ? 'left' : 'right' };

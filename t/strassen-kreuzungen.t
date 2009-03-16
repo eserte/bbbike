@@ -203,6 +203,18 @@ for my $kr ($kr1, $kr2) {
 	    is($situation{handicap_cat}, 'q0', 'Suedstern: q3 ends, q0 begins');
 	}
     }
+
+    {
+	# Viktoriapark -> Großbeerenstr.
+	my %situation = situation_at_point_inorder($kr, qw(9007,9264 8969,9320 9000,9509));
+	is($situation{action}, '', q{This is not straight, not right}); # it would be right with HALF_ANGLE=30
+    }
+
+    {
+	# Rüdersdorfer Str./Parkplatz
+	my %situation = situation_at_point_inorder($kr, qw(13066,11854 13173,11788 13295,11792));
+	is($situation{action}, '', q{Die Parkplatzeinfahrt sollte hier kein "links" verursachen.}); # it does with HALF_ANGLE=30
+    }
 }
 
 for my $kr ($kr1, $kr2) {
@@ -246,21 +258,9 @@ for my $kr ($kr1, $kr2) {
     }
 
     {
-	# Viktoriapark -> Großbeerenstr.
-	my %situation = situation_at_point_inorder($kr, qw(9007,9264 8969,9320 9000,9509));
-	is($situation{action}, '', q{This is not right, but straight});
-    }
-
-    {
 	# Molkenmarkt
 	my %situation = situation_at_point_inorder($kr, qw(10723,12346 10738,12364 10831,12371));
 	is($situation{action}, 'half-right', q{Need some indication that it's not Stralauer Str. to the right, but the Platz});
-    }
-
-    {
-	# Rüdersdorfer Str./Parkplatz
-	my %situation = situation_at_point_inorder($kr, qw(13066,11854 13173,11788 13295,11792));
-	is($situation{action}, '', q{Die Parkplatzeinfahrt sollte hier kein "links" verursachen.});
     }
 
     {
