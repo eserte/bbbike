@@ -77,6 +77,12 @@ for my $kr ($kr1, $kr2) {
 	}
     }
 
+    # Wilhelmstr.: drive back
+    {
+	my %situation = situation_at_point_inorder($kr, qw(9404,10250 9388,10393 9404,10250));
+	is($situation{action}, 'back', q{Driving back"} . " (with @{[ ref $kr ]})");
+    }
+
     # Wilhelmstr. -> Stresemannstr.
     {
 	my %situation = situation_at_point_inorder($kr, qw(9404,10250 9388,10393 9250,10563));
@@ -154,8 +160,50 @@ for my $kr ($kr1, $kr2) {
 
     {
 	# Oberbaumstr.
+	my %situation = situation_at_point_inorder($kr, qw(13178,10623 13082,10634 13015,10659));
+	is($situation{action}, '', q{Should detect that the more straight street is an one-way street in the wrong direction});
+    }
+
+    {
+	# Oberbaumstr./Falkensteinstr.
 	my %situation = situation_at_point_inorder($kr, qw(13206,10651 13178,10623 13015,10659));
 	is($situation{action}, '', q{Should be "straight", because it's the main street});
+    }
+
+    {
+	# Körtestr./Südstern
+	my %situation = situation_at_point_inorder($kr, qw(10903,9475 10747,9326 10713,9260));
+	is($situation{action}, '', q{Should be "straight", because it's the main street});
+    }
+
+    {
+	# Fuldastr./Weichselpark
+	my %situation = situation_at_point_inorder($kr, qw(12836,8980 12907,9073 12851,9309));
+	is($situation{action}, 'half-left', q{Need some indication that it's not the Weigandufer to the left, but the Parkweg});
+    }
+
+    {
+	# Flughafenstr. -> Fuldastr.
+	my %situation = situation_at_point_inorder($kr, qw(12349,8464 12500,8504 12549,8616));
+	is($situation{action}, 'XXX', q{Komplizierte Wegfuehrung (zuerst links, dann rechts), benoetigt eine gesonderte Beschreibung});
+    }
+
+    {
+	# Viktoriapark -> Großbeerenstr.
+	my %situation = situation_at_point_inorder($kr, qw(9007,9264 8969,9320 9000,9509));
+	is($situation{action}, '', q{This is not right, but straight});
+    }
+
+    {
+	# Molkenmarkt
+	my %situation = situation_at_point_inorder($kr, qw(10723,12346 10738,12364 10831,12371));
+	is($situation{action}, 'half-right', q{Need some indication that it's not Stralauer Str. to the right, but the Platz});
+    }
+
+    {
+	# Rüdersdorfer Str./Parkplatz
+	my %situation = situation_at_point_inorder($kr, qw(13066,11854 13173,11788 13295,11792));
+	is($situation{action}, '', q{Die Parkplatzeinfahrt sollte hier kein "links" verursachen.});
     }
 }
 
