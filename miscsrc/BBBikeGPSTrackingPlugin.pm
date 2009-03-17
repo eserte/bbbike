@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.26 2009/03/17 22:50:11 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.27 2009/03/17 22:50:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -52,6 +52,7 @@ use vars qw($gps_track_mode $gps_fh $replay_speed_conf @gps_track $gpspipe_pid
 	    $current_speed $current_gps_mode $current_sat_used %seen_gps_mode
 	    $gpsd_last_event_time $gpsd_checker $gpsd_state
 	    $in_re_route $auto_re_route
+	    $off_road_counter
 	  );
 $replay_speed_conf = 1 if !defined $replay_speed_conf;
 
@@ -602,12 +603,45 @@ sub set_position {
 	    if ($auto_re_route) {
 		my $c1 = "$ret->{Coords}[0],$ret->{Coords}[1]";
 		my $c2 = "$ret->{Coords}[2],$ret->{Coords}[3]";
+		my $matched_coord_i;
 	    SEARCH_IN_ROUTE: {
-		    for my $coord (@main::realcoords) {
+		    for my $coord_i (0 .. $#main::realcoords) {
+			my $coord = $main::realcoords[$coord_i];
 			my $coord_s = join(",",@$coord);
-			last SEARCH_IN_ROUTE if ($coord_s eq $c1 || $coord_s eq $c2);
+			if ($coord_s eq $c1 || $coord_s eq $c2) {
+			    $matched_coord_i = $coord_i;
+			    last SEARCH_IN_ROUTE;
+			}
 		    }
 		    re_route_from_current_point();
+		}
+		# calculate and plot the "off-road angle"
+		# and if necessary, re-route
+		if (defined $matched_coord_i && $matched_coord_i < $#main::realcoords) {
+		    $main::c->delete('gps_track_angle');
+		    if (Strassen::Util::strecke([$sx,$sy],$main::realcoords[$matched_coord_i+1]) < 40) {
+			# near enough
+			$off_road_counter = 0;
+		    } else {
+			my($angle,$dir) = BBBikeUtil::schnittwinkel(@{$main::realcoords[$matched_coord_i+1]},
+								    @{$main::realcoords[$matched_coord_i]},
+								    $sx, $sy);
+			my $angle_deg = abs(180-BBBikeUtil::rad2deg($angle));
+			if ($angle_deg < 45) {
+			    $off_road_counter = 0;
+			} else {
+			    $off_road_counter++;
+			    if ($off_road_counter >= 3) {
+				$main::c->createText($x, $y,
+						     -text => "  ".int($angle_deg)."°",
+						     #-font => $main::font{'tiny'},
+						     -anchor => 'w',
+						     -tags => ['gps_track', 'gps_track_angle'],
+						    );
+				re_route_from_current_point();
+			    }
+			}
+		    }
 		}
 	    }
 	    if ($do_navigate) {
@@ -721,17 +755,49 @@ sub re_route_from_current_point {
     my $ret = get_nearest_coords($gps_track[-1]);
     if ($ret) {
 	my($sx,$sy) = split /,/, $gps_track[-1];
-	my $dist0 = Strassen::Util::strecke([$ret->{Coords}[0],$ret->{Coords}[1]],[$sx,$sy]);
-	my $dist1 = Strassen::Util::strecke([$ret->{Coords}[2],$ret->{Coords}[3]],[$sx,$sy]);
-	my $new_start_coord = ($dist0 < $dist1
-			       ? $ret->{Coords}[0].",".$ret->{Coords}[1]
-			       : $ret->{Coords}[2].",".$ret->{Coords}[3]
-			      );
+	my $new_start_coord;
+	my $new_via_coord;
+# 	if (@gps_track >= 2) {
+# 	    my($sx_before,$sy_before) = split /,/, $gps_track[-2];
+# 	    my($angle) = BBBikeUtil::schnittwinkel($sx_before,$sy_before,
+# 						   $sx,$sy,
+# 						   $ret->{Coords}[0],$ret->{Coords}[1]
+# 						  );
+# 	    if ($angle < BBBikeUtil::deg2rad(30)) {
+# 		$new_start_coord = $ret->{Coords}[2].",".$ret->{Coords}[3];
+# 		$new_via_coord   = $ret->{Coords}[0].",".$ret->{Coords}[1];
+# 	    } else {
+# 		my($angle) = BBBikeUtil::schnittwinkel($sx_before,$sy_before,
+# 						       $sx,$sy,
+# 						       $ret->{Coords}[2],$ret->{Coords}[3]
+# 						      );
+# 		if ($angle < BBBikeUtil::deg2rad(30)) {
+# 		    $new_start_coord = $ret->{Coords}[0].",".$ret->{Coords}[1];
+# 		    $new_via_coord   = $ret->{Coords}[2].",".$ret->{Coords}[3];
+# 		}
+# 	    }
+# 	}
+	if (!$new_start_coord) {
+	    my $dist0 = Strassen::Util::strecke([$ret->{Coords}[0],$ret->{Coords}[1]],[$sx,$sy]);
+	    my $dist1 = Strassen::Util::strecke([$ret->{Coords}[2],$ret->{Coords}[3]],[$sx,$sy]);
+	    $new_start_coord = ($dist0 < $dist1
+				? $ret->{Coords}[0].",".$ret->{Coords}[1]
+				: $ret->{Coords}[2].",".$ret->{Coords}[3]
+			       );
+	}
 	if ($main::search_route_points[0][main::SRP_COORD()] eq $new_start_coord) {
 	    main::status_message('No re-routing necessary', 'info');
 	    return;
 	}
 	$main::search_route_points[0][main::SRP_COORD()] = $new_start_coord;
+# 	if ($new_via_coord) {
+# 	    if (@main::search_route_points == 2) {
+# 		# XXX need to move goal
+# 		$main::search_route_points[2] = $main::search_route_points[1];
+# 	    }
+# 	    $main::search_route_points[1] = [];
+# 	    $main::search_route_points[1][main::SRP_COORD()] = $new_via_coord;
+# 	}
 	local $in_re_route = 1;
 	main::re_search();
     }
