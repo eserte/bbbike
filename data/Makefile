@@ -800,8 +800,13 @@ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragez
 .for i in indoor outdoor other
 	echo "############################################################" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
 	echo "# source: XXX-$(i)" >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
-	cat ${PERSISTENTTMPDIR}/XXX-$(i).bbd >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+	${GREPSTRASSEN} -directive last_checked~. -special nextcheck ${PERSISTENTTMPDIR}/XXX-$(i).bbd > /dev/null
+	cat /tmp/nextcheck.bbd >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+	${GREPSTRASSEN} -directive next_check~. -special nextcheck ${PERSISTENTTMPDIR}/XXX-$(i).bbd > /dev/null
+	cat /tmp/nextcheck.bbd >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+	${GREPSTRASSEN} -special nonextcheck ${PERSISTENTTMPDIR}/XXX-$(i).bbd >> ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
 .endfor
+	-rm -f /tmp/nextcheck.bbd
 	touch ${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd
 
 ${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd:	fragezeichen-orig
