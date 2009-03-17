@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.25 2009/03/16 23:05:30 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.26 2009/03/17 22:50:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -45,7 +45,7 @@ $MBROLA_BIN = "$ENV{HOME}/Desktop/mbrola/mbrola-linux-i386" if !defined $MBROLA_
 $MBROLA_LANG_FILE = "$ENV{HOME}/Desktop/mbrola/de1/de1" if !defined $MBROLA_LANG_FILE;
 
 use vars qw($gps_track_mode $gps_fh $replay_speed_conf @gps_track $gpspipe_pid
-	    $dont_auto_center $dont_auto_track $do_link_to_nearest_street
+	    $dont_auto_center $dont_auto_track $dont_link_to_nearest_street
 	    $do_navigate @current_search_route $do_speech
 	    %reported_point
 	    $current_accuracy $current_accuracy_update_time
@@ -87,22 +87,23 @@ sub add_button {
     my $mmf = $main::top->Subwidget("ModeMenuPluginFrame");
     return unless defined $mf;
     my $Checkbutton = $main::Checkbutton;
+    my $toggle_gps_track_mode = sub {
+	my $want_gps_track_mode = $gps_track_mode;
+	if ($want_gps_track_mode) {
+	    eval {
+		activate_tracking();
+	    };
+	    if ($@) {
+		main::status_message("Cannot activate tracking: $@", "err");
+		$gps_track_mode = 0;
+	    }
+	} else {
+	    deactivate_tracking();
+	}
+    };
     my %check_args =
 	(-variable => \$gps_track_mode,
-	 -command  => sub {
-	     my $want_gps_track_mode = $gps_track_mode;
-	     if ($want_gps_track_mode) {
-		 eval {
-		     activate_tracking();
-		 };
-		 if ($@) {
-		     main::status_message("Cannot activate tracking: $@", "err");
-		     $gps_track_mode = 0;
-		 }
-	     } else {
-		 deactivate_tracking();
-	     }
-	 },
+	 -command  => $toggle_gps_track_mode,
 	);
     my $b = $mf->$Checkbutton
 	(-text => "GPS",
@@ -116,25 +117,20 @@ sub add_button {
 	    ($mmf,
 	     # XXX Msg.pm
 	     [
-	      [Button => "Delete track",
-	       -command => sub {
-		   @gps_track = ();
-		   $main::c->delete("gps_track");
-	       },
-	      ],
-	      [Checkbutton => "Do not autocenter",
-	       -variable => \$dont_auto_center,
-	      ],
-	      [Checkbutton => "Do not autotrack",
-	       -variable => \$dont_auto_track,
-	      ],
-	      [Checkbutton => "Link to nearest street",
-	       -variable => \$do_link_to_nearest_street,
+	      [Checkbutton => 'GPS-Track-Modus',
+	       %check_args,
 	      ],
 	      [Checkbutton => "Navigate",
 	       -variable => \$do_navigate,
 	       -command => sub {
 		   if ($do_navigate) {
+		       if ($dont_link_to_nearest_street) {
+			   $dont_link_to_nearest_street = 0;
+		       }
+		       if (!$gps_track_mode) {
+			   $gps_track_mode = 1;
+			   $toggle_gps_track_mode->();
+		       }
 		       my $init = sub {
 			   @current_search_route = @{ main::get_act_search_route() };
 			   %reported_point = ();
@@ -156,12 +152,34 @@ sub add_button {
 		   }
 	       },
 	      ],
-	      [Button => 'Re-route from current point',
-	       -command => sub { re_route_from_current_point() },
-	      ],
 	      [Checkbutton => 'Auto re-route',
 	       -variable => \$auto_re_route,
 	      ],
+	      '-',
+	      [Button => "Delete track",
+	       -command => sub {
+		   @gps_track = ();
+		   $main::c->delete("gps_track");
+	       },
+	      ],
+	      [Checkbutton => "Do not autocenter",
+	       -variable => \$dont_auto_center,
+	      ],
+	      [Checkbutton => "Do not autotrack",
+	       -variable => \$dont_auto_track,
+	      ],
+	      [Checkbutton => "Do not link to nearest street",
+	       -variable => \$dont_link_to_nearest_street,
+	       -command => sub {
+		   if (!$dont_link_to_nearest_street) {
+		       $do_navigate = 0;
+		   }
+	       },
+	      ],
+	      [Button => 'Re-route from current point',
+	       -command => sub { re_route_from_current_point() },
+	      ],
+	      '-',
 	      [Button => 'Satellite view',
 	       -command => sub {
 		   # the cheap solution
@@ -175,6 +193,7 @@ sub add_button {
 		   }
 	       },
 	      ],
+	      '-',
 	      [Button => "Replay NMEA file",
 	       -command => sub {
 		   my $file = $main::top->getOpenFile;
@@ -214,6 +233,14 @@ sub add_button {
 }
 
 sub init_speech {
+    if (!$do_navigate) {
+	saytext("Die Navigation ist nicht eingeschaltet.");
+	return;
+    }
+    if (!$gps_track_mode) {
+	saytext("Das GPS-Tracking ist ausgeschaltet.");
+	return;
+    }
     saytext("Die Audio-Navigation ist eingeschaltet.");
     saytext({power_info()}->{msg_de});
     saytext(gps_info_text_de());
@@ -557,7 +584,7 @@ sub set_position {
 	}
     }
 
-    if ($do_link_to_nearest_street) {
+    if (!$dont_link_to_nearest_street) {
 	my $ret = get_nearest_coords($sxy);
 	if ($ret) {
 	    my @coords = (main::transpose($ret->{Coords}[0],$ret->{Coords}[1]),
@@ -688,7 +715,7 @@ sub match_position_with_route {
 
 sub re_route_from_current_point {
     if (!@main::search_route_points) {
-	main::status_message('No old route exist', 'error');
+	main::status_message('No old route exist', $auto_re_route ? 'info' : 'error');
 	return;
     }
     my $ret = get_nearest_coords($gps_track[-1]);
