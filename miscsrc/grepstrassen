@@ -246,6 +246,7 @@ sub init_directive_handler {
 sub special_directive_handler {
     my($type, $r, $dir) = @_;
     my $new_r = Storable::dclone($r);
+    my $new_dir = Storable::dclone($dir);
     if (exists $dir->{$type}) {
 	my $name = $r->[Strassen::NAME] . " (";
 	my @add_names = grep { !/^\s*$/ } @{ $dir->{$type} };
@@ -257,6 +258,8 @@ sub special_directive_handler {
 	$new_r->[Strassen::NAME] = $name;
 	$new_r->[Strassen::CAT] = "?";
 	$type_s{$type}->push($new_r);
+	delete $new_dir->{$type};
+	$type_s{$type}->set_directives_for_current($new_dir);
     }
     1;
 }
