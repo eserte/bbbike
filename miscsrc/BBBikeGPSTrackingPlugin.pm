@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.27 2009/03/17 22:50:19 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.28 2009/03/18 23:17:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -46,6 +46,7 @@ $MBROLA_LANG_FILE = "$ENV{HOME}/Desktop/mbrola/de1/de1" if !defined $MBROLA_LANG
 
 use vars qw($gps_track_mode $gps_fh $replay_speed_conf @gps_track $gpspipe_pid
 	    $dont_auto_center $dont_auto_track $dont_link_to_nearest_street
+	    $dont_auto_set_volume $dont_say_sat_info
 	    $do_navigate @current_search_route $do_speech
 	    %reported_point
 	    $current_accuracy $current_accuracy_update_time
@@ -53,6 +54,7 @@ use vars qw($gps_track_mode $gps_fh $replay_speed_conf @gps_track $gpspipe_pid
 	    $gpsd_last_event_time $gpsd_checker $gpsd_state
 	    $in_re_route $auto_re_route
 	    $off_road_counter
+	    $old_volume
 	  );
 $replay_speed_conf = 1 if !defined $replay_speed_conf;
 
@@ -181,6 +183,12 @@ sub add_button {
 	       -command => sub { re_route_from_current_point() },
 	      ],
 	      '-',
+	      [Checkbutton => "Do not automatically set volume",
+	       -variable => \$dont_auto_set_volume,
+	      ],
+	      [Checkbutton => "Do not say satellite info",
+	       -variable => \$dont_say_sat_info,
+	      ],
 	      [Button => 'Satellite view',
 	       -command => sub {
 		   # the cheap solution
@@ -447,7 +455,7 @@ sub _setup_fileevent {
 
 sub gps_mode_change {
     my($new_mode) = @_;
-    if ($do_speech) {# XXX need a better approach when flapping
+    if ($do_speech && !$dont_say_sat_info) {# XXX need a better approach when flapping
 	return if $seen_gps_mode{$new_mode};
 
 	my $msg;
@@ -645,7 +653,7 @@ sub set_position {
 		}
 	    }
 	    if ($do_navigate) {
-		match_position_with_route($ret->{Coords}, $sxy);
+		match_position_with_route($ret, $sxy);
 	    }
 	}
     }
@@ -667,8 +675,9 @@ sub get_nearest_coords {
 }
 
 sub match_position_with_route {
-    my($pos_coords, $sxy) = @_;
+    my($nearest_object, $sxy) = @_;
     return if !@main::realcoords;
+    my $pos_coords = $nearest_object->{Coords};
     $main::c->delete("XXX1");
     for my $i (0 .. $#main::realcoords) {
 	if ($main::realcoords[$i][0] == $pos_coords->[0] &&
@@ -702,6 +711,7 @@ sub match_position_with_route {
 				if (#$live_dist <= 100 && # XXX The inability to do this condition is a bug!
 				    !$reported_point{"Ziel"}) {
 				    if ($do_speech) {
+					set_volume_for_current_point($nearest_object);
 					saytext($text);
 					$reported_point{"Ziel"} = 1;
 				    } else {
@@ -727,6 +737,7 @@ sub match_position_with_route {
 				if ($live_dist <= 100 && !$reported_point{"$next_street $direction"}) {
 				    my @saydirection_args = ($next_street, $direction, $live_dist);
 				    if ($do_speech) {
+					set_volume_for_current_point($nearest_object);
 					saydirection(@saydirection_args);
 					$reported_point{"$next_street $direction"} = 1;
 				    } else {
@@ -826,6 +837,44 @@ sub sayssml {
     my $sub = "sayssml_$SPEAK_PROG";
     no strict 'refs';
     &$sub;
+}
+
+######################################################################
+# Auto-set volume
+#
+# An die Umgebungslautstärke anpassen. Das arbeitet zurzeit mit einer
+# Heuristik: auf Hauptstraßen wird lauter gesprochen, auf Nebenstraßen
+# leiser. XXX Die Heuristik könnte man verbessern, indem auch für
+# comments_kfz>0 lauter und für NN+green leiser gesprochen wird. XXX
+# Alternativ könnte eine Analyse der Umgebungslautstärke per Mikrofon
+# durchführen.
+
+sub set_volume_for_current_point {
+    return if $dont_auto_set_volume;
+    my $nearest_object = shift;
+    my $cat = $nearest_object->{StreetObj}[Strassen::CAT()];
+    if (defined $cat) {
+	if ($cat =~ m{^(B|HH|H)\b}) {
+	    set_volume('louder');
+	} else {
+	    set_volume('normal');
+	}
+    }
+}
+
+sub set_volume {
+    return if $dont_auto_set_volume;
+    my($value) = @_;
+    if ($value eq 'normal') {
+	$value = '65%';
+    } elsif ($value eq 'louder') {
+	$value = '85%';
+    }
+    return if (defined $old_volume && $value eq $old_volume); # no change
+    warn "Change volumne from " . ($old_volume||"<unknown>") . " to $value...\n";
+    system("amixer set Headphone $value on &");
+    system("amixer set Master $value on &");
+    $old_volume = $value;
 }
 
 ######################################################################
@@ -937,6 +986,7 @@ sub expand_de_abbrev {
     $name =~ s{(zu[rm]\s+ehem)\.}{$1aligen}ig;
     $name =~ s{\behem\.}{ehemalig}ig;
     $name =~ s{\bkol\.}{kolonie}ig;
+    $name =~ s{(\d+)-(\d+)}{$1 bis $2}ig;
     $name;
 }
 
@@ -1199,6 +1249,11 @@ More snippets:
 
    Siehe auch "-a ..." (Amplitude) bei espeak. 100 ist normal, 200 ist
    etwas lauter. Oder mit dem Mixer (amixer set Master ...) arbeiten.
+
+   amixer headphone 65%: reicht für Nebenstraßen, aber nicht für
+   Hauptstraßen.
+
+       amixer set Headphone 65% on
 
  * Das Programm soll per Audio warnen, wenn sich die GPS-Genauigkeit
    verschlechtert oder gar der Fix verloren geht. Es sollte auch einen
