@@ -474,6 +474,7 @@ Schönstedtstr.	1 12540,8458 12649,8535
 Eckertstr.	1 13608,12547 13522,12748
 Erkelenzdamm	1s 11117,10326 11094,10261
 Alt-Tempelhof	1 8776,6661 8722,6656
+Langkofelweg	1 6850,3408 6940,3498 7018,3572
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
 Leistikowstr.	1 -12512,810 -12302,718
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -626,6 +627,8 @@ Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,125
 Behrenstr./Bebelplatz	1s 9801,12245 9743,12239 9700,12234 9626,12227
 Halenseestr.	1s 2277,9801 2167,10004 2121,10089 1988,10328 1957,10426
 Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
+Mittelstreifen	3nocross::ignrte 7007,3747 6961,3687 6805,3481
+Langkofelweg -> Kaiser-Wilhelm-Str.: Mittelstreifen	3::igndisp 6998,3596 6961,3687 6805,3481
 umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11323,12484 11333,12437 11343,12300
 Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11462,12384 11333,12437 11343,12300
 Mittelstreifen	3nocross::ignrte 8777,9601 8648,9526 8595,9495

@@ -586,6 +586,8 @@ Schönstedtstr.	1 12540,8458 12649,8535
 Eckertstr.	1 13608,12547 13522,12748
 Erkelenzdamm	1s:q3 11117,10326 11094,10261
 Alt-Tempelhof	1 8776,6661 8722,6656
+#: by: Steini (immerlocker)
+Langkofelweg	1 6850,3408 6940,3498 7018,3572
 ######################################################################
 #
 # Potsdam
@@ -747,6 +749,7 @@ Zeltinger Platz	1s:q3 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 248
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 7007,3747 6961,3687 6805,3481
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11323,12484 11333,12437 11343,12300
 Yorckstr.: Mittelstreifen	3nocross 8777,9601 8648,9526 8595,9495
 Klemkestr.: Mittelstreifen	3nocross 7492,18699 7609,18707 7690,18716
