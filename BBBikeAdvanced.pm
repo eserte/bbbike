@@ -1322,6 +1322,17 @@ sub set_line_coord_interactive {
 		    }
 		    push @coords, [$x,$y];
 		}
+		while ($s =~ m{(\d+)°(\d+)'(\d+(?:\.\d+)?)"([NS]).*?(\d+)°(\d+)'(\d+(?:\.\d+)?)"([EW])}g) {
+		    # sigh, it seems that I have to use the ugly $1...$8 list :-(
+		    my($lat_deg,$lat_min,$lat_sec,$lat_sgn,
+		       $lon_deg,$lon_min,$lon_sec,$lon_sgn) = ($1,$2,$3,$4,$5,$6,$7,$8);
+		    my $lat = $lat_deg + $lat_min/60 + $lat_sec/3600;
+		    $lat *= -1 if $lat_sgn =~ m{s}i;
+		    my $lon = $lon_deg + $lon_min/60 + $lon_sec/3600;
+		    $lon *= -1 if $lon_sgn =~ m{w}i;
+		    my($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon,$lat));
+		    push @coords, [$x,$y];
+		}
 	    }
 	    last if (@coords); # otherwise try the other selection type
 	}
