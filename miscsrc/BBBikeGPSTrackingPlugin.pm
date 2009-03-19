@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.28 2009/03/18 23:17:32 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.29 2009/03/19 20:02:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -145,6 +145,9 @@ sub add_button {
 		   }
 	       },
 	      ],
+	      [Checkbutton => 'Auto re-route',
+	       -variable => \$auto_re_route,
+	      ],
 	      [Checkbutton => 'Speech',
 	       -variable => \$do_speech,
 	       -command => sub {
@@ -154,9 +157,6 @@ sub add_button {
 		       Hooks::get_hooks("new_route")->del(__PACKAGE__ . "_speech");
 		   }
 	       },
-	      ],
-	      [Checkbutton => 'Auto re-route',
-	       -variable => \$auto_re_route,
 	      ],
 	      '-',
 	      [Button => "Delete track",
