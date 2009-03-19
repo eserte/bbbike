@@ -541,8 +541,10 @@ radwege:	radwege-orig
 
 radwege_exact:	radwege-orig
 	-@$(WRITEABLE) $@
-	${PERL} ${MISCSRCDIR}/convert_radwege -exact < radwege-orig | \
-	    $(COMBINE_STREETS) - > $@~
+## XXX combine streets is buggy, see strassen-combine.t test!
+#	${PERL} ${MISCSRCDIR}/convert_radwege -exact < radwege-orig | \
+#	    $(COMBINE_STREETS) - > $@~
+	${PERL} ${MISCSRCDIR}/convert_radwege -exact < radwege-orig > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
