@@ -2216,6 +2216,9 @@ Schwarzkittelweg: Verbundsteinpflaster	Q1+ 3007,26462 3007,26462 3170,26502 3281
 Norwegerstr. - Behmstr.: Verbundsteinpflaster	Q0- 10022,16237 10026,16165 10055,16104 10045,16157
 (Holzmarktstraße, Wohngebiet): Beton	Q0- 11589,12296 11524,12314 11488,12225 11736,12097
 (Lichtenberger Str., Wohngebiet): Beton	Q0- 11736,12097 11845,12292
+Burchardstr.: Beton	Q0 8200,6668 8553,6665 8722,6656
+Podewilsstr.: Asphalt	Q0- 8707,6537 8551,6552
+Zastrowstr.: Beton	Q0 9979,6349 9860,6348
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -3924,8 +3927,8 @@ Torweg: asphaltiert	Q0 -8289,14664 -8126,14641 -8118,14649 -7952,14632
 Torweg: asphaltiert	Q0 -7413,14561 -7114,14579 -6913,14576 -6442,14535
 #: by: ^^^
 #: by: Jörg krummholz:
-#: XXX hmmm, das war eher Asphalt:
-Delbrückstr. (Neukölln): Beton	Q0 12468,6592 12743,6645
+#: corrected_by: srt (Beton -> Asphalt)
+Delbrückstr. (Neukölln): Asphalt	Q0 12468,6592 12743,6645
 #: by: Claas Ketelhut:
 Lübarser Str.: Asphalt	Q0 5320,21432 5589,21799
 #: by: Katrin Kroschk: vvv
@@ -4118,7 +4121,7 @@ Flinsberger Platz: Kopfsteinpflaster	Q2 2926,8527 2678,8571
 #: by: birgit (kleinatland):
 Markobrunner Str.: Asphalt	Q0 4374,7016 4462,7137 4593,7167
 #: by: Ingo Firlus:
-#: XXX vom Kranoldplatz aus sah es eher mäßig aus, nicht "Q1" wie von Ingo angegeben:
+#: corrected_by: srt (Q1 -> Q2)
 Kranoldstr.: Kopfsteinpflaster	Q2 12422,6715 12585,6747 12612,6727 12722,6748
 #: by: Roland (Nissen):
 Gerolsteiner Str.: Verbundsteinpflaster	Q1 4330,7497 4330,7375
@@ -5618,8 +5621,8 @@ Greulichstr.: gutes Kopfsteinpflaster	Q1 8163,1110 8203,1194 8283,1354 8381,1550
 #: by: petra (loewe) mehr Details:
 Greulichstr.: guter Asphalt	Q0 8471,1741 8522,1870
 #: by: Kowaliczek Larissa:
-#: XXX: der Eintrag war "sehr gutes Kopfsteinpflaster", aber das gibt's einfach nicht
-Fuhrmannstr.: gutes Kopfsteinpflaster	Q1 9512,6652 9511,6797
+#: corrected_by: srt (sehr gutes Kopfsteinpflaster/Q1 -> Beton/Q0-)
+Fuhrmannstr.: Beton	Q0- 9512,6652 9511,6797
 #: by: Marit Holzäpfel
 Hubertusstr. (Lichtenberg): gutes Kopfsteinpflaster	Q1 16556,12180 16583,12371
 Hubertusstr. (Lichtenberg): Asphalt	Q0 16514,11911 16541,12064

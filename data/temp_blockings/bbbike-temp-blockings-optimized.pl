@@ -662,15 +662,6 @@ push @temp_blocking,
          'data' => 'userdel	1::inwork 9164,12172 9183,12076 9201,11968
 ',
          'type' => 'gesperrt'
-       },
-       {
-         'until' => 1237244400,
-         'text' => 'K 6161 Friedenstr. Bahnübergang in Eichwalde Gleisbauarbeiten Vollsperrung 02.03.2009-16.03.2009 ',
-         'from' => 1235862000,
-         'id' => 1565,
-         'data' => 'userdel	2::inwork 25185,-3955 25212,-4025 25269,-4041 25320,-4049
-',
-         'type' => 'gesperrt'
        }
      
 );
