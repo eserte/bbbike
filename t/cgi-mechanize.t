@@ -389,11 +389,16 @@ for my $browser (@browsers) {
 
 	$agent->submit;
 
-	if (get_ct($agent) =~ /L.*?nge:.*([\d\.]+)\s*km/) {
-	    my $length = $1;
-	    cmp_ok($length, "<=", 1, "Short path ($length km)");
-	} else {
-	    fail("Cannot get length from content");
+	{
+	    my $content = get_ct($agent);
+	    if ($content =~ /L.*?nge:.*?([\d\.]+)\s*km/) {
+		my $length = $1;
+		cmp_ok($length, "<=", 1, "Short path (got $length km)")
+		    or diag $content;
+	    } else {
+		fail("Cannot get length from content");
+		diag $content;
+	    }
 	}
 
 	{
