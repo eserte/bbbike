@@ -1597,6 +1597,65 @@ sub delete_situation_at_point_for_route {
     $main::c->delete('situation_at_point');
 }
 
+######################################################################
+# Visualize nets (debugging helper)
+
+sub net_to_strassen {
+    my($net, $payload_is_name) = @_;
+    my $file = $main::top->getSaveFile;
+    return if !$file;
+    my $s = Strassen->new;
+    my %used_cat;
+    while(my($c1,$v) = each %{ $net->{Net} }) {
+	while(my($c2,$payload) = each %$v) {
+	    my($name, $cat) = $payload_is_name ? ($payload, "X") : ($payload, $payload);
+	    $used_cat{$cat}++;
+	    $s->push([$name, [$c1, $c2], "$cat;"]);
+	}
+    }
+
+    my $color_i = 0;
+    my @colors = (qw(green red blue orange black darkblue yellow), '#ffdead');
+    my %color;
+    for my $cat (sort { $used_cat{$b} <=> $used_cat{$a} } keys %used_cat) {
+	$color{$cat} = $colors[$color_i++];
+	last if $color_i > $#colors;
+    }
+    $s->set_global_directives({
+			       map { ("category_color.$_" => [$color{$_}]) } keys %color
+			      });
+    $s->write($file);
+}
+
+sub visualize_N_RW_net {
+    if (!$main::N_RW_net) {
+	main::status_message("\$N_RW_net does not exist --- please do one search with N_RW opt turned on first!", "error");
+	return;
+    }
+    my %cat_to_color = ( 'N' => 'green',
+			 'N_RW' => 'blue',
+			 'H_RW' => 'orange',
+			 'H' => 'red',
+		       );
+    main::IncBusy($main::top);
+    eval {
+	$main::c->delete('N_RW_net');
+	while(my($c1,$v) = each %{ $main::N_RW_net->{Net} }) {
+	    while(my($c2,$cat) = each %$v) {
+		$main::c->createLine(main::transpose(split /,/, $c1),
+				     main::transpose(split /,/, $c2),
+				     -width => 2,
+				     -fill => $cat_to_color{$cat} || 'black',
+				     -tags => 'N_RW_net',
+				);
+	    }
+	}
+    };
+    my $err = $@;
+    main::DecBusy($main::top);
+    main::status_message($err, "die") if $err;
+}
+
 1;
 
 __END__
