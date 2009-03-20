@@ -341,18 +341,24 @@ $(MAPFILES_DATA_DIR)/deutschland.shp:	deutschland
 #	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/radwege${delta} /tmp/radwege${delta}
 #.endfor
 
+RADWEGE_MAPFILES_HACK=	(perl -pe 's/(RW\d*)/\1;/' radwege_exact; cat comments_cyclepath)
+
 $(MAPFILES_DATA_DIR)/radwege5.shp:	radwege_exact comments_cyclepath
-	cat $> | ${CONVERT_RADWEGE} -inmap Standard -delta 5 > /tmp/radwege5
+	grep -s "RW[0-9];" radwege_exact && (echo "We have RW; in radwege_exact - please remove hack"; false) || true
+	$(RADWEGE_MAPFILES_HACK) | ${CONVERT_RADWEGE} -inmap Standard -delta 5 > /tmp/radwege5
+#	cat $> | ${CONVERT_RADWEGE} -inmap Standard -delta 5 > /tmp/radwege5
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/radwege5 /tmp/radwege5
 	@rm -f /tmp/radwege5
 
 $(MAPFILES_DATA_DIR)/radwege10.shp:	radwege_exact comments_cyclepath
-	cat $> | ${CONVERT_RADWEGE} -inmap Standard -delta 10 > /tmp/radwege10
+	$(RADWEGE_MAPFILES_HACK) | ${CONVERT_RADWEGE} -inmap Standard -delta 10 > /tmp/radwege10
+#	cat $> | ${CONVERT_RADWEGE} -inmap Standard -delta 10 > /tmp/radwege10
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/radwege10 /tmp/radwege10
 	@rm -f /tmp/radwege10
 
 $(MAPFILES_DATA_DIR)/radwege20.shp:	radwege_exact comments_cyclepath
-	cat $> | ${CONVERT_RADWEGE} -inmap Standard -delta 20 > /tmp/radwege20
+	$(RADWEGE_MAPFILES_HACK) | ${CONVERT_RADWEGE} -inmap Standard -delta 20 > /tmp/radwege20
+#	cat $> | ${CONVERT_RADWEGE} -inmap Standard -delta 20 > /tmp/radwege20
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/radwege20 /tmp/radwege20
 	@rm -f /tmp/radwege20
 
