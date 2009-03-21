@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.67 2009/03/21 01:02:37 eserte Exp $
+# $Id: Makefile,v 1.68 2009/03/21 01:03:22 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -64,7 +64,7 @@ IMAGECOLOR?=	225 225 225
 #####################################################################
 # Various destination system configurations
 
-RADZEIT_APACHE_DIR_LOCAL=	/home/e/eserte/src/bbbike/projects/www.radzeit.de
+RADZEIT_APACHE_DIR_LOCAL=	$(ABS_LOCAL_BBBIKE_DIR)/projects/www.radzeit.de
 
 .if ${TARGET} == "radzeit.herceg.de"
 
@@ -597,7 +597,7 @@ dist-any:	# build-all
 	    rm -rf $(RADZEIT_DIST_DIR)
 	mkdir $(RADZEIT_DIST_DIR)
 	chmod ugo+rx $(RADZEIT_DIST_DIR)
-	$(MAKE) $(MAKEFLAGS) TARGET=$(TARGET) Makefile.${TARGET}.inc
+	$(MAKE) $(MAKEFLAGS) TARGET=$(TARGET) ABS_LOCAL_BBBIKE_DIR=$(ABS_LOCAL_BBBIKE_DIR) Makefile.${TARGET}.inc
 	cp -pf $(DISTFILES) $(FONTS_LIST) $(RADZEIT_DIST_DIR)
 	-mkdir $(RADZEIT_DIST_DIR)/sternfahrt2007
 	chmod ugo+rx $(RADZEIT_DIST_DIR)/sternfahrt2007
@@ -607,7 +607,7 @@ dist-any:	# build-all
 	-mkdir $(RADZEIT_DIST_DIR)/tmp
 	chmod ugo+rx $(RADZEIT_DIST_DIR)/tmp
 	cd $(RADZEIT_DIST_DIR) && \
-	    $(MAKE) $(MAKEFLAGS) TARGET=$(TARGET) all sternfahrt2007
+	    $(MAKE) $(MAKEFLAGS) TARGET=$(TARGET) ABS_LOCAL_BBBIKE_DIR=$(ABS_LOCAL_BBBIKE_DIR) all sternfahrt2007
 
 #XXX obsolete
 dist-radzeit:	# build-all

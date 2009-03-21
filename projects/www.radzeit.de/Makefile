@@ -69,7 +69,6 @@ DEPLOY_TARGETS=			prepare-bbbike-data \
 				prepare-mapserver-data \
 				prepare-bbbike-dist \
 				prepare-mapserver-dist \
-				prepare-touren-dist \
 				rsync \
 				test \
 				create-all-maps
@@ -84,8 +83,7 @@ DEPLOY_DATA_TARGETS=		prepare-bbbike-data \
 DEPLOY_LOCAL_NO_TEST_TARGETS=	prepare-bbbike-data \
 				prepare-mapserver-data \
 				prepare-bbbike-dist \
-				prepare-mapserver-local-dist \
-				prepare-touren-dist
+				prepare-mapserver-local-dist
 
 DEPLOY_LOCAL_TARGETS=		${DEPLOY_LOCAL_NO_TEST_TARGETS} \
 				test-local
@@ -107,12 +105,22 @@ WWW_USER?=	www
 WWW_GROUP?=	www
 
 .if ${OSTYPE} == "linux" || ${OSTYPE} == "linux-gnu"
+OS_LINUX=	yes
+.else
+OS_LINUX=
+.endif
+
+.if ${OS_LINUX}
 XARGS_REPL?=	xargs --replace=%
 .else
 XARGS_REPL?=	xargs -J %
 .endif
 
+.if exists(/usr/lib/cgi-bin/mapserv)
+MAPSERVER_EXE?=	/usr/lib/cgi-bin/mapserv
+.else
 MAPSERVER_EXE?=	$(HOME)/www/cgi/mapserv.cgi
+.endif
 
 ## Prefer cp, so I may make changes in ~/src/bbbike and still have
 ## a copy on my disk similar to the radzeit contents.
@@ -415,7 +423,8 @@ prepare-bbbike-dist-prog-bbbike-cgi:
 	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/bbbike2.cgi.config
 	chmod ugo+r ${CURDIR}/BBBike/cgi/bbbike2.cgi.config
 # Fix permissions
-	chmod ugo+r ${CURDIR}/cgi-bin/*
+# Make sure that /usr/lib/cgi-bin/* isn't touched, otherwise make will fail
+	(cd ${CURDIR}/cgi-bin && chmod ugo+r `find . -maxdepth 1 | xargs -L1 readlink | grep -v /usr/lib/cgi-bin`)
 	@echo "Maybe create bbbike2.cgi and bbbike2.cgi.config"
 
 prepare-bbbike-dist-prog-bbbike-htdocs:
@@ -557,7 +566,10 @@ prepare-mapserver-dist-post:
 	@echo "XXX Check permissions of $(HTDOCS)/mapserver/brb and maybe WWWUSER in bbbike/mapserver/brb/Makefile"
 	[ -d ${CURDIR}/$(HTDOCS)/mapserver/brb/fonts ] || \
 	    mkdir ${CURDIR}/$(HTDOCS)/mapserver/brb/fonts
-.if ${HOST} == "vran.herceg.de"
+.if exists(/usr/share/fonts/truetype/ttf-xfree86-nonfree/luxisr.ttf)
+	cp -pf /usr/share/fonts/truetype/ttf-xfree86-nonfree/luxisr.ttf \
+	    ${CURDIR}/$(HTDOCS)/mapserver/brb/fonts
+.elif ${HOST} == "vran.herceg.de"
 	cp -pf /usr/X11R6/lib/X11/fonts/ttf/LucidaSansRegular.ttf \
 	    ${CURDIR}/$(HTDOCS)/mapserver/brb/fonts
 .else
@@ -565,6 +577,8 @@ prepare-mapserver-dist-post:
 	    ${CURDIR}/$(HTDOCS)/mapserver/brb/fonts
 .endif
 
+# Not run anymore per default --- what was the intention of this
+# directory, anyway?
 prepare-touren-dist:
 	[ -d ${CURDIR}/$(HTDOCS)/mapserver/touren ] || \
 	    mkdir -p ${CURDIR}/$(HTDOCS)/mapserver/touren
@@ -666,7 +680,11 @@ test-on-remote-and-send-mail:
 		${TESTS} | mail slaven@rezic.de ) & \
 	'
 
+.if exists($(HOME)/work/Test-Harness-Parallel/Test-Harness-Parallel.pm)
 test-local: test-local-parallel
+.else
+test-local: test-local-serial
+.endif
 
 test-local-serial:
 	cd ${.CURDIR}/BBBike/t && \
