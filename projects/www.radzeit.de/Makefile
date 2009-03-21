@@ -765,3 +765,9 @@ create-all-maps:
 #
 #rsync-ixls-de:
 #	make SSH_PROG_AND_ARGS="ssh -2 -p 5022" BBBIKE_RADZEIT_HOST=radzeit.ixls.de rsync
+
+# Auf mosor musste ich in .../mapserver/brb zuerst ein
+#
+#    cp /mnt/biokovo/home/e/eserte/src/bbbike/mapserver/brb/Makefile.radzeit.herceg.de.inc .
+#
+# machen. Sollte das nicht besser eingecheckt sein?
