@@ -106,7 +106,7 @@ RSYNC_SRCDEST?=	. ${RSYNC_DEST}
 WWW_USER?=	www
 WWW_GROUP?=	www
 
-.if ${OSTYPE} == "linux"
+.if ${OSTYPE} == "linux" || ${OSTYPE} == "linux-gnu"
 XARGS_REPL?=	xargs --replace=%
 .else
 XARGS_REPL?=	xargs -J %
