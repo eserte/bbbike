@@ -90,6 +90,12 @@ __END__
 
 =head1 EXAMPLES
 
+Dump the coordinates of a NMEA file:
+
     perl -w -MData::Dumper -MGPS::MyNMEA -e 'warn Dumper(GPS::MyNMEA->convert_to_route(shift))' nmeafile
+
+Convert a NMEA file into a bbd:
+
+    perl -MRoute -MRoute::Heavy -MGPS::MyNMEA -e 'print Route->new_from_realcoords([GPS::MyNMEA->convert_to_route(shift)])->as_strassen->as_string' /tmp/nmea
 
 =cut
