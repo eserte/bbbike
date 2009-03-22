@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.68 2009/03/21 01:03:22 eserte Exp $
+# $Id: Makefile,v 1.69 2009/03/22 21:25:41 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -191,6 +191,8 @@ TARGET_DIR=		${.CURDIR:H}/brb-radzeit.herceg.de
 FONTS_LIST=		fonts-radzeit-old.list
 .elif ${TARGET} == "radzeit"
 FONTS_LIST=		fonts-radzeit.list
+.elif ${TARGET} == "radzeit.herceg.de" && exists(/etc/debian_version)
+FONTS_LIST=		fonts-debian.list
 .elif ${TARGET} == "radzeit.herceg.de"
 #FONTS_LIST=		fonts-vran.list
 FONTS_LIST=		fonts-biokovo.list
