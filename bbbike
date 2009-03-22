@@ -266,6 +266,9 @@ $PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.403 $ =~ /(\d+)\.(\d+)/);
 
 # OS related
 $progname = basename($0);
+# Note that $ENV{HOST} is not generally available (or sometimes only
+# as a shell variable with the same name), especially in my non-tcsh
+# configurations.
 $devel_host = ($ENV{HOST} && $ENV{HOST} =~ /^(biokovo|biokovo-amd64|vran|cabulja|cvrsnica|spiff|mom|devpc01|devpc01-debian)(\.|$)/i);
 $os =   $^O eq 'MSWin32' || $^O eq 'os2' || $^O eq 'dos' ? 'win'
       : $^O eq 'MacOS'				    	 ? 'mac'
@@ -1150,6 +1153,22 @@ if ($devel_host && $set_toplevel_icon) {
 	    # setting icon may fail in other mainwindows
 	    $self->afterIdle(sub { $set_toplevel_icon->($self) });
     };
+}
+
+{
+    # experimental...
+    my $freedesktop_lib = "$ENV{HOME}/work/Tk-FreeDesktop-Wm/blib/lib";
+    if (-d $freedesktop_lib) {
+	if (!eval {
+	    local @INC = ($freedesktop_lib, @INC);
+	    require Tk::FreeDesktop::Wm;
+	    my $fd = Tk::FreeDesktop::Wm->new(mw => $top);
+	    $fd->set_wm_icon("$FindBin::RealBin/images/srtbike_mini.xpm");
+	    1;
+	}) {
+	    warn "Cannot load Tk::FreeDesktop::Wm ($@), no NET icon support...";
+	}
+    }
 }
 
 if ($splash_screen) {
