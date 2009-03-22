@@ -87,3 +87,9 @@ sub convert_to_route {
 1;
 
 __END__
+
+=head1 EXAMPLES
+
+    perl -w -MData::Dumper -MGPS::MyNMEA -e 'warn Dumper(GPS::MyNMEA->convert_to_route(shift))' nmeafile
+
+=cut
