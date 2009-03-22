@@ -97,7 +97,7 @@ if ($do_reload) {
 	die "Please specify .osm files to reload!";
     }
 } else {
-    if (@ARGV) {
+    if (!@ARGV) {
 	usage;
     }
 }
