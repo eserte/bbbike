@@ -4,7 +4,7 @@
 # $Id: MyNMEA.pm,v 1.8 2007/07/23 19:37:53 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2009 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,6 +15,8 @@
 package GPS::MyNMEA;
 require GPS;
 push @ISA, 'GPS';
+
+require Karte::Standard;
 
 use strict;
 
@@ -40,6 +42,8 @@ sub convert_to_route {
 	chomp;
 	if (m|^\$GPRMC|) {
 	    my(@l) = split(',', $_);
+	    my $XXX_A_or_V = $l[2];
+	    return if $XXX_A_or_V eq 'V';
 	    my $breite_raw = $l[3]; # N is positive
 	    my $ns         = $l[4];
 	    my $laenge_raw = $l[5]; # E is positive
