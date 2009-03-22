@@ -17,8 +17,7 @@
 # vgl. Sourcen von fish_applet: APPLET_(DE)ACTIVATE müsste irgendwie
 # implementiert werden
 
-use Gtk;
-use Gnome;
+use Gtk2;
 use Getopt::Long;
 use FindBin;
 use strict;
@@ -38,31 +37,32 @@ if (!GetOptions("applet!" => \$is_applet,
 #warn $goad_fd;
 
 if ($is_applet) {
+    require Gnome;
     Gnome::Panel::AppletWidget->init('BBBike applet');
     $mw = Gnome::Panel::AppletWidget->new('BBBike applet');
     realize $mw;
 } else {
-    Gtk->init;
-    $mw = Gtk::Window->new(-toplevel);
+    Gtk2->init;
+    $mw = Gtk2::Window->new(-toplevel);
 }
 
 $mw->set_title("BBBike applet");
 
-my $vbox = new Gtk::VBox(0,0);
+my $vbox = new Gtk2::VBox(0,0);
 $mw->add($vbox);
-my $hbox_start = new Gtk::HBox(0,0);
+my $hbox_start = new Gtk2::HBox(0,0);
 $vbox->pack_start($hbox_start, 1, 1, 0);
-my $hbox_ziel  = new Gtk::HBox(0,0);
+my $hbox_ziel  = new Gtk2::HBox(0,0);
 $vbox->pack_start($hbox_ziel, 1, 1, 0);
 
-my $sl = new Gtk::Label("Start:");
+my $sl = new Gtk2::Label("Start:");
 $hbox_start->pack_start($sl, 1, 1, 0);
-my $se = new Gtk::Entry;
+my $se = new Gtk2::Entry;
 $hbox_start->pack_start($se, 1, 1, 0);
 
-my $zl = new Gtk::Label("Ziel:");
+my $zl = new Gtk2::Label("Ziel:");
 $hbox_ziel->pack_start($zl, 1, 1, 0);
-my $ze = new Gtk::Entry;
+my $ze = new Gtk2::Entry;
 $hbox_ziel->pack_start($ze, 1, 1, 0);
 
 $se->signal_connect('activate', \&set_start);
@@ -74,7 +74,7 @@ $mw->show_all;
 if ($is_applet) {
     Gnome::Panel::AppletWidget->gtk_main;
 } else {
-    Gtk->main;
+    Gtk2->main;
 }
 
 sub set_start {
@@ -116,6 +116,6 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 SEE ALSO
 
-bbbike(1), Gtk(3), Gnome(3)
+bbbike(1), Gtk2(3), Gnome(3)
 
 =cut
