@@ -20,7 +20,7 @@ require Karte::Standard;
 
 use strict;
 
-sub magics { ('^\$(GPGSA|GPGSV|GPRMC|PGRMC|PGRME|PGRMI|PGRMO|PGRMT|PGRMV|GPGGA)') }
+sub magics { ('^\$(GPGSA|GPGSV|GPRMB|GPRMC|PGRMC|PGRME|PGRMI|PGRMO|PGRMT|PGRMV|GPGGA)') }
 
 sub convert_to_route {
     my($self, $file, %args) = @_;
