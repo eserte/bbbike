@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.29 2009/03/19 20:02:30 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.30 2009/03/22 21:26:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -188,6 +188,9 @@ sub add_button {
 	      ],
 	      [Checkbutton => "Do not say satellite info",
 	       -variable => \$dont_say_sat_info,
+	      ],
+	      [Button => 'Info window',
+	       -command => sub { info_window() },
 	      ],
 	      [Button => 'Satellite view',
 	       -command => sub {
@@ -812,6 +815,25 @@ sub re_route_from_current_point {
 	local $in_re_route = 1;
 	main::re_search();
     }
+}
+
+sub info_window {
+    my $t = $main::top->Toplevel(-title => "GPS Info");
+    Tk::grid($t->Label(-text => 'Speed (m/s?)'),
+	     $t->Label(-textvariable => \$current_speed)
+	    );
+    Tk::grid($t->Label(-text => 'Accuracy (m?)'),
+	     $t->Label(-textvariable => \$current_accuracy)
+	    );
+    Tk::grid($t->Label(-text => 'Time of accuracy update'),
+	     $t->Label(-textvariable => \$current_accuracy_update_time)
+	    );
+    Tk::grid($t->Label(-text => 'Satellites used'),
+	     $t->Label(-textvariable => \$current_sat_used)
+	    );
+    Tk::grid($t->Label(-text => 'GPS mode'),
+	     $t->Label(-textvariable => \$current_gps_mode)
+	    );
 }
 
 ######################################################################
