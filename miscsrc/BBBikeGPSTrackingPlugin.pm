@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.30 2009/03/22 21:26:39 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.31 2009/03/22 21:26:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -28,7 +28,7 @@ $DEBUG = 0;
 use Hash::Util qw(lock_keys);
 use IPC::Run qw();
 
-use BBBikeUtil qw(is_in_path s2hm);
+use BBBikeUtil qw(is_in_path s2hm ms2kmh);
 use Karte::Polar;
 use Karte::Standard;
 use Strassen::Strasse;
@@ -61,7 +61,7 @@ $replay_speed_conf = 1 if !defined $replay_speed_conf;
 use constant ACCURACY_NOTHING => 9999;
 
 use your qw($main::gps_device $main::capstyle_round %main::str_obj $main::Checkbutton %main::font
-	    @main::speed @main::power);
+	    @main::speed @main::power %main::toplevel);
 
 sub register {
     my $pkg = __PACKAGE__;
@@ -189,8 +189,8 @@ sub add_button {
 	      [Checkbutton => "Do not say satellite info",
 	       -variable => \$dont_say_sat_info,
 	      ],
-	      [Button => 'Info window',
-	       -command => sub { info_window() },
+	      [Button => 'Toggle Info window',
+	       -command => sub { toggle_info_window() },
 	      ],
 	      [Button => 'Satellite view',
 	       -command => sub {
@@ -817,11 +817,33 @@ sub re_route_from_current_point {
     }
 }
 
+sub toggle_info_window {
+    my $t = $main::toplevel{GPSInfoWindow};
+    if ($t && Tk::Exists($t)) {
+	$t->destroy;
+	delete $main::toplevel{GPSInfoWindow};
+    } else {
+	info_window();
+    }
+}
+
 sub info_window {
+    require Tk::Trace;
     my $t = $main::top->Toplevel(-title => "GPS Info");
-    Tk::grid($t->Label(-text => 'Speed (m/s?)'),
+    $main::toplevel{GPSInfoWindow} = $t;
+    Tk::grid($t->Label(-text => 'Speed (m/s)'),
 	     $t->Label(-textvariable => \$current_speed)
 	    );
+    my $kmh_w;
+    Tk::grid($t->Label(-text => 'Speed (km/h)'),
+	     $kmh_w = $t->Label
+	    );
+    $t->traceVariable(\$current_speed, 'w' => sub {
+			  my($index, $value, $op, @args) = @_;
+			  if ($op eq 'w') {
+			      $kmh_w->configure(-text => defined $current_speed ? ms2kmh($current_speed) : '');
+			  }
+		      });
     Tk::grid($t->Label(-text => 'Accuracy (m?)'),
 	     $t->Label(-textvariable => \$current_accuracy)
 	    );
