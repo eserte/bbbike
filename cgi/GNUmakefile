@@ -45,3 +45,4 @@ GNUmakefile:	Makefile ../miscsrc/b2gmake
 rights:
 	chmod ugo+rx *.cgi
 	chmod ugo+r,ugo-x *.cgi.config
+	[ ! -e ../tmp/www ] || chmod 777 ../tmp/www
