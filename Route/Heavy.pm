@@ -4,7 +4,7 @@
 # $Id: Heavy.pm,v 1.9 2006/09/25 22:52:28 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2009 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -26,21 +26,26 @@ use strict;
 # XXX Msg.pm
 
 sub as_strassen {
-    my($in_file, %args) = @_;
-
-    require Strassen;
+    my($self_or_file, %args) = @_;
 
     my $name = delete $args{name} || "Route";
     my $cat  = delete $args{cat}  || "#ff0000";
 
-    $args{'-fuzzy'} = delete $args{'fuzzy'};
+    require Strassen;
 
-    my $ret = Route::load($in_file, undef, %args);
-    if (!$ret) {
-	die "Die Datei <$in_file> enthält keine Route";
+    my $realcoords_ref;
+    if (ref $self_or_file && $self_or_file->isa('Route')) {
+	$realcoords_ref = $self_or_file->path;
+    } else {
+	my $in_file = $self_or_file;
+	$args{'-fuzzy'} = delete $args{'fuzzy'};
+	my $ret = Route::load($in_file, undef, %args);
+	if (!$ret) {
+	    die "Die Datei <$in_file> enthält keine Route";
+	}
+
+	$realcoords_ref = $ret->{RealCoords};
     }
-
-    my $realcoords_ref = $ret->{RealCoords};
 
     my $s = Strassen->new_from_data
 	(@$realcoords_ref
