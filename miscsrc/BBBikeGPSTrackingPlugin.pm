@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.31 2009/03/22 21:26:54 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.32 2009/03/24 23:11:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -54,11 +54,17 @@ use vars qw($gps_track_mode $gps_fh $replay_speed_conf @gps_track $gpspipe_pid
 	    $gpsd_last_event_time $gpsd_checker $gpsd_state
 	    $in_re_route $auto_re_route
 	    $off_road_counter
-	    $old_volume
+	    $old_volume $last_speech_time
+	    $do_say_something $say_something_repeat @say_something_phrases $say_something_phrase_i
 	  );
 $replay_speed_conf = 1 if !defined $replay_speed_conf;
 
 use constant ACCURACY_NOTHING => 9999;
+
+use constant SAY_SOMETHING_INTERVAL => 60;
+
+@say_something_phrases = (('gpsinfo')x3, 'journeyinfo', ('gpsinfo')x2, 'powerinfo');
+$say_something_phrase_i = 0;
 
 use your qw($main::gps_device $main::capstyle_round %main::str_obj $main::Checkbutton %main::font
 	    @main::speed @main::power %main::toplevel);
@@ -136,7 +142,6 @@ sub add_button {
 		       }
 		       my $init = sub {
 			   @current_search_route = @{ main::get_act_search_route() };
-			   %reported_point = ();
 		       };
 		       Hooks::get_hooks("new_route")->add($init, __PACKAGE__ . "_navigate");
 		       $init->();
@@ -188,6 +193,10 @@ sub add_button {
 	      ],
 	      [Checkbutton => "Do not say satellite info",
 	       -variable => \$dont_say_sat_info,
+	      ],
+	      [Checkbutton => 'Say something every minute',
+	       -variable => \$do_say_something,
+	       -command => sub { toggle_say_something() },
 	      ],
 	      [Button => 'Toggle Info window',
 	       -command => sub { toggle_info_window() },
@@ -266,25 +275,31 @@ sub init_speech {
 	    saytext("Es ist keine Route definiert.");
 	} else {
 	    saytext("Eine Route nach " . simplify_street($search_route[-1][StrassenNetz::ROUTE_NAME()]) . " ist definiert.");
-	    my $journey_time = main::get_reference_journey_time();
-	    my($h,$m,$s) = ((split /:/, s2hm($journey_time)), $journey_time % 60);
-	    my($XXX, $value, $unit) = ($main::active_speed_power{Type} eq 'power'
-				       ? ('Leistung', $main::power[$main::active_speed_power{Index}], 'Watt')
-				       : ('Geschwindigkeit', $main::speed[$main::active_speed_power{Index}], 'km pro Stunde')
-				      );
-	    sayssml('Die voraussichtliche Fahrzeit betr‰gt ' . de_time_period($h,$m,$s,maybe=>'seconds') . ' bei <break/> einer '
-		    . $XXX . ' von ' . $value . ' ' . $unit . '.');
+	    say_journey_info();
 	}
     };
     Hooks::get_hooks("new_route")->add($say_route_info, __PACKAGE__ . "_speech");
     $say_route_info->();
 }
 
+sub say_journey_info {
+    my $journey_time = main::get_reference_journey_time();
+    my($h,$m,$s) = ((split /:/, s2hm($journey_time)), $journey_time % 60);
+    my($XXX, $value, $unit) = ($main::active_speed_power{Type} eq 'power'
+			       ? ('Leistung', $main::power[$main::active_speed_power{Index}], 'Watt')
+			       : ('Geschwindigkeit', $main::speed[$main::active_speed_power{Index}], 'km pro Stunde')
+			      );
+    sayssml('Die voraussichtliche Fahrzeit betr‰gt ' . de_time_period($h,$m,$s,maybe=>'seconds') . ' bei <break/> einer '
+	    . $XXX . ' von ' . $value . ' ' . $unit . '.');
+}
+
 sub activate_tracking {
     undef $current_accuracy;
     undef $current_speed;
     undef $current_gps_mode;
-    undef %seen_gps_mode;
+    %seen_gps_mode = ();
+    %reported_point = (); # XXX should be smarter, delete elements
+                          # after some timeout
     # XXX decide whether to use GPS::NMEA or gpsd
     if (GPS_GRABBER eq 'nmea') {
 	activate_nmea_tracking();
@@ -477,7 +492,7 @@ sub gps_mode_change {
 		$msg .= " Es wurden $current_sat_used Satelliten zum Ermitteln der Position verwendet.";
 	    }
 	    if (defined $current_accuracy) {
-		$msg .= " Die Genauigkeit betr‰gt $current_accuracy Meter.";
+		$msg .= " Die Genauigkeit betr‰gt " . int($current_accuracy) . " Meter.";
 	    }
 	}
 
@@ -737,7 +752,17 @@ sub match_position_with_route {
 				my $live_dist = int Strassen::Util::strecke
 				    ($main::realcoords[$current_search_route[$j+1]->[StrassenNetz::ROUTE_ARRAYINX()][0]],
 				     [split /,/, $sxy]);
-				if ($live_dist <= 100 && !$reported_point{"$next_street $direction"}) {
+				if ($live_dist > 500 && !$reported_point{"LONG; THEN $next_street $direction"}) {
+				    my @saydirection_args = ($next_street, $direction, $live_dist);
+				    if ($do_speech) {
+					set_volume_for_current_point($nearest_object);
+					saytext("Dem Straﬂenverlauf noch $live_dist Meter folgen, dann");
+					saydirection(@saydirection_args);
+					$reported_point{"LONG; THEN $next_street $direction"} = 1;
+				    } else {
+					warn "Would say: Dem Straﬂenverlauf noch $live_dist Meter folgen, dann " . make_german_direction(@saydirection_args) . "\n"; # XXX debug?
+				    }
+				} elsif ($live_dist <= 100 && !$reported_point{"$next_street $direction"}) {
 				    my @saydirection_args = ($next_street, $direction, $live_dist);
 				    if ($do_speech) {
 					set_volume_for_current_point($nearest_object);
@@ -817,6 +842,52 @@ sub re_route_from_current_point {
     }
 }
 
+####################################################################### 
+##XXX does not work... blocking, why?
+## Log nmea
+#
+#use vars qw($nmea_log_pid);
+#
+#sub toggle_log_nmea {
+#    if (defined $nmea_log_pid) {
+#	kill KILL => $nmea_log_pid;
+#	undef $nmea_log_pid;
+#    } else {
+#	log_nmea();
+#    }
+#}
+#
+#sub log_nmea {
+#    require POSIX;
+#    my $now = POSIX::strftime("%Y%m%dT%H%M%S", localtime);
+#    my $logdir = "$ENV{HOME}/.bbbike/nmea";
+#    mkdir $logdir if !-d $logdir;
+#    my $logfile = "$logdir/$now.nmea.bz2";
+#    $nmea_log_pid = open my $fh, "-|", "gpspipe", "-r"
+#	or die "Cannot exectue gpspipe: $!";
+#warn $nmea_log_pid;
+#    if ($fh->eof) {
+#	undef $nmea_log_pid;
+#	main::status_message('gpsd not running?', 'error');
+#	return;
+#    }
+#warn 1;
+#    my $bzip2_pid = fork;
+#warn $bzip2_pid;
+#    if (!defined $bzip2_pid) {
+#	die "Cannot fork for bzip2: $!";
+#    } elsif ($bzip2_pid == 0) {
+#warn "bzipping";
+#	IPC::Run::run(["bzip2"], "<", $fh, ">", $logfile)
+#		or die "Cannot run bzip2";
+#	CORE::exit;
+#    }
+#warn "?";
+#}
+
+######################################################################
+# Info window
+
 sub toggle_info_window {
     my $t = $main::toplevel{GPSInfoWindow};
     if ($t && Tk::Exists($t)) {
@@ -830,6 +901,7 @@ sub toggle_info_window {
 sub info_window {
     require Tk::Trace;
     my $t = $main::top->Toplevel(-title => "GPS Info");
+    $t->attributes(-topmost => 1);
     $main::toplevel{GPSInfoWindow} = $t;
     Tk::grid($t->Label(-text => 'Speed (m/s)'),
 	     $t->Label(-textvariable => \$current_speed)
@@ -866,6 +938,7 @@ sub info_window {
 sub saydirection {
     my $sub = "saydirection_$SPEAK_PROG";
     no strict 'refs';
+    $last_speech_time = time;
     &$sub;
 }
 
@@ -873,6 +946,7 @@ sub saydirection {
 sub saytext {
     my $sub = "saytext_$SPEAK_PROG";
     no strict 'refs';
+    $last_speech_time = time;
     &$sub;
 }
 
@@ -880,7 +954,41 @@ sub saytext {
 sub sayssml {
     my $sub = "sayssml_$SPEAK_PROG";
     no strict 'refs';
+    $last_speech_time = time;
     &$sub;
+}
+
+######################################################################
+
+sub toggle_say_something {
+    if (!$do_speech || !$gps_track_mode || !$do_say_something) {
+	$do_say_something = 0;
+	if ($say_something_repeat) {
+	    $say_something_repeat->cancel;
+	    undef $say_something_repeat;
+	}
+	return;
+    }
+    $say_something_repeat = $main::top->repeat(SAY_SOMETHING_INTERVAL*1000, sub {
+						   saysomething();
+					       });
+}
+
+sub saysomething {
+    if (!defined $last_speech_time || time-$last_speech_time >= SAY_SOMETHING_INTERVAL) {
+	my $phrase = $say_something_phrases[$say_something_phrase_i];
+	if ($phrase eq 'gpsinfo') {
+	    saytext(gps_info_text_de());
+	} elsif ($phrase eq 'powerinfo') {
+	    saytext(power_info());
+	} elsif ($phrase eq 'journeyinfo') {
+	    say_journey_info();
+	} else {
+	    warn "Should not happen, unhandled phrase '$phrase'";
+	}
+	$say_something_phrase_i++;
+	$say_something_phrase_i = 0 if $say_something_phrase_i > $#say_something_phrases;
+    }
 }
 
 ######################################################################
