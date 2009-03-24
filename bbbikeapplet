@@ -17,6 +17,12 @@
 # vgl. Sourcen von fish_applet: APPLET_(DE)ACTIVATE müsste irgendwie
 # implementiert werden
 
+# I need to switch to Gnome2::PanelApplet. But the discussion here
+# http://mail.gnome.org/archives/gtk-perl-list/2007-February/msg00000.html
+# suggests that it does not work. But this was before release 0.02.
+# Now at least the sample applet works, but the nmea log trial, which
+# was basically copied from the sample, does not?!
+
 use Gtk2;
 use Getopt::Long;
 use FindBin;
