@@ -134,8 +134,22 @@ for my $file (@files) {
 		}
 	    }
 	} else {
-	    if (-f $file) {
-		my $s = run_gpsbabel($file,
+	    my $work_file = $file;
+
+	    if ($file =~ m{\.bz2$}) {
+		my($tmpfh,$tmpfile) = tempfile(UNLINK => 1);
+		open my $fh, "-|", "bzcat", $file
+		    or die "Can't run bzcat $file: $!";
+		local $/ = \8192;
+		while(<$fh>) {
+		    print $tmpfh $_;
+		}
+		close $tmpfh
+		    or die "Error while writing to temporary file $tmpfile: $!";
+		$work_file = $tmpfile;
+	    }
+	    if (-f $work_file) {
+		my $s = run_gpsbabel($work_file,
 				     title => routenamefmt($file),
 				     info => \%info,
 				     file_info => \%this_file_info,
