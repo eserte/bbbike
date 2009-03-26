@@ -137,7 +137,10 @@ for my $file (@files) {
 	    my $work_file = $file;
 
 	    if ($file =~ m{\.bz2$}) {
-		my($tmpfh,$tmpfile) = tempfile(UNLINK => 1);
+		my($suffix) = $file =~ m{\.([^.]+)\.bz2$};
+		my($tmpfh,$tmpfile) = tempfile(UNLINK => 1,
+					       (defined $suffix ? (SUFFIX => $suffix) : ()),
+					      );
 		open my $fh, "-|", "bzcat", $file
 		    or die "Can't run bzcat $file: $!";
 		local $/ = \8192;
@@ -158,8 +161,10 @@ for my $file (@files) {
 		    prepend_info($s, \%info);
 		    push @s, $s;
 		}
-	    } else {
+	    } elsif (-d $work_file) {
 		print STDERR "skipping directory\n";
+	    } else {
+		print STDERR "skipping non-existent file '$work_file'\n";
 	    }
 	}
     };
