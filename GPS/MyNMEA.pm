@@ -98,6 +98,41 @@ sub parse_GPRMC {
     return {lon=>$laenge, lat=>$breite, isodate=>$isodate};
 }
 
+sub convert_to_wpt_strassen {
+    my($self, $file, %args) = @_;
+
+    my($fh, $lines_ref) = $self->overread_trash($file, %args);
+    die "File $file does not match" unless $fh;
+
+    require Karte::GPS;
+    my $obj = $Karte::GPS::obj;
+    $Karte::GPS::obj = $Karte::GPS::obj if 0; # peacify -w
+    $Karte::Standard::obj = $Karte::Standard::obj if 0; # peacify -w
+
+    require Strassen::Core;
+    my $s = Strassen->new;
+
+    my $check = sub {
+	my $line = shift;
+	if ($line =~ m{^\$GPRMC}) {
+	    my $ret = parse_GPRMC($line);
+	    if ($ret) {
+		my($x,$y) = $Karte::Standard::obj->trim_accuracy($obj->map2standard($ret->{lon}, $ret->{lat}));
+		$s->push([$ret->{isodate}, ["$x,$y"], "X"]);
+	    }
+	}
+    };
+
+    $check->($_) foreach @$lines_ref;
+    while(<$fh>) {
+	$check->($_);
+    }
+
+    close $fh;
+
+    $s;
+}
+
 1;
 
 __END__
@@ -108,8 +143,12 @@ Dump the coordinates of a NMEA file:
 
     perl -w -MData::Dumper -MGPS::MyNMEA -e 'warn Dumper(GPS::MyNMEA->convert_to_route(shift))' nmeafile
 
-Convert a NMEA file into a bbd:
+Convert a NMEA file into a bbd (one route):
 
     perl -MRoute -MRoute::Heavy -MGPS::MyNMEA -e 'print Route->new_from_realcoords([GPS::MyNMEA->convert_to_route(shift)])->as_strassen->as_string' /tmp/nmea
+
+Convert a NMEA file into a bbd (single wpts):
+
+    perl -Ilib -MGPS::MyNMEA -e 'print GPS::MyNMEA->convert_to_wpt_strassen(shift)->as_string' /tmp/nmea
 
 =cut
