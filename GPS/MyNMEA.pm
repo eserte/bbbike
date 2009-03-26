@@ -39,37 +39,14 @@ sub convert_to_route {
     my @res;
     my $check = sub {
 	my $line = shift;
-	chomp;
-	if (m|^\$GPRMC|) {
-	    my(@l) = split(',', $_);
-	    my $XXX_A_or_V = $l[2];
-	    return if $XXX_A_or_V eq 'V';
-	    my $breite_raw = $l[3]; # N is positive
-	    my $ns         = $l[4];
-	    my $laenge_raw = $l[5]; # E is positive
-	    my $ew         = $l[6];
-	    $breite_raw *= -1 if ($ns eq 'S');
-	    $laenge_raw *= -1 if ($ew eq 'W');
-
-	    my($breite_min, $breite_dec) = split(/\./, $breite_raw);
-	    my($laenge_min, $laenge_dec) = split(/\./, $laenge_raw);
-	    my($breite, $laenge);
-	    $breite_min =~ /^(.*)(..)$/;
-	    ($breite, $breite_min) = ($1, $2);
-	    $laenge_min =~ /^(.*)(..)$/;
-	    ($laenge, $laenge_min) = ($1, $2);
-
-	    $breite_min = $breite_min/60;
-	    $laenge_min = $laenge_min/60;
-	    $breite_dec = ("0.".$breite_dec)/60;
-	    $laenge_dec = ("0.".$laenge_dec)/60;
-	    $breite += $breite_min + $breite_dec;
-	    $laenge += $laenge_min + $laenge_dec;
-
-	    my($x,$y) = $Karte::Standard::obj->trim_accuracy($obj->map2standard($laenge, $breite));
-	    if (!@res || ($x != $res[-1]->[0] ||
-			  $y != $res[-1]->[1])) {
-		push @res, [$x, $y];
+	if ($line =~ m{^\$GPRMC}) {
+	    my $ret = parse_GPRMC($line);
+	    if ($ret) {
+		my($x,$y) = $Karte::Standard::obj->trim_accuracy($obj->map2standard($ret->{lon}, $ret->{lat}));
+		if (!@res || ($x != $res[-1]->[0] ||
+			      $y != $res[-1]->[1])) {
+		    push @res, [$x, $y];
+		}
 	    }
 	}
     };
@@ -82,6 +59,43 @@ sub convert_to_route {
     close $fh;
 
     @res;
+}
+
+sub parse_GPRMC {
+    my $line = shift;
+    chomp;
+    my(@l) = split(',', $_);
+    my $XXX_A_or_V = $l[2];
+    return if $XXX_A_or_V eq 'V';
+    my $breite_raw = $l[3]; # N is positive
+    my $ns         = $l[4];
+    my $laenge_raw = $l[5]; # E is positive
+    my $ew         = $l[6];
+    $breite_raw *= -1 if ($ns eq 'S');
+    $laenge_raw *= -1 if ($ew eq 'W');
+
+    my($breite_min, $breite_dec) = split(/\./, $breite_raw);
+    my($laenge_min, $laenge_dec) = split(/\./, $laenge_raw);
+    my($breite, $laenge);
+    $breite_min =~ /^(.*)(..)$/;
+    ($breite, $breite_min) = ($1, $2);
+    $laenge_min =~ /^(.*)(..)$/;
+    ($laenge, $laenge_min) = ($1, $2);
+
+    $breite_min = $breite_min/60;
+    $laenge_min = $laenge_min/60;
+    $breite_dec = ("0.".$breite_dec)/60;
+    $laenge_dec = ("0.".$laenge_dec)/60;
+    $breite += $breite_min + $breite_dec;
+    $laenge += $laenge_min + $laenge_dec;
+
+    my $isodate = do {
+	my($H,$M,$S) = $l[1] =~ m{^(\d\d)(\d\d)(\d\d)$};
+	my($d,$m,$y) = $l[9] =~ m{^(\d\d)(\d\d)(\d\d)$};
+	$y+=2000; # no support before 2000
+	"$y$m$d".'T'."$H$M$S";
+    };
+    return {lon=>$laenge, lat=>$breite, isodate=>$isodate};
 }
 
 1;
