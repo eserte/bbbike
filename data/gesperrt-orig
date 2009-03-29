@@ -588,6 +588,10 @@ Erkelenzdamm	1s:q3 11117,10326 11094,10261
 Alt-Tempelhof	1 8776,6661 8722,6656
 #: by: Steini (immerlocker)
 Langkofelweg	1 6850,3408 6940,3498 7018,3572
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?
+Heinickeweg	1 2224,14825 2210,14696 2207,14576
+#: by: Cornelia (cvpapen...)
+Hallberger Zeile	1 16068,6216 15954,6297
 ######################################################################
 #
 # Potsdam
@@ -715,7 +719,6 @@ Waldweg	1s 25496,2429 24981,2580
 Schulenburgring	1s:q3 9027,8431 9022,8581 9006,8602
 #: note: die Straßenbahn fährt hier auch lang
 Neue Schönhauser Str.	1s:q1 10527,13257 10423,13215 10310,13227
-Alte Schönhauser Str.	1s:q2 10718,13625 10746,13673
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13027,7368
 Niemannstr.	1s:q3 14252,11368 14211,11229
 Björnsonstr	1s:q1 10209,16674 10197,16528
@@ -749,6 +752,7 @@ Zeltinger Platz	1s:q3 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 248
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+#: by: Steini (immerlocker)
 Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 7007,3747 6961,3687 6805,3481
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11323,12484 11333,12437 11343,12300
 Yorckstr.: Mittelstreifen	3nocross 8777,9601 8648,9526 8595,9495
@@ -1204,7 +1208,9 @@ Schranke (Rütlistr.)	BNP:5 12565,9200
 Schranke, meistens offen (Iranische Str.)	BNP:5 7875,16509
 Schranke, meistens offen (Iranische Str.)	BNP:5 7707,16543
 Barriere (Falkstr.)	BNP:10 12178,7985
-Drängelgitter (Rochstr.)	BNP:5 10535,13006
+# XXX nur für Fahrräder mit Anhänger relevant (90cm breit): vvvvvvvvvvvvvv
+#Drängelgitter (Rochstr.)	BNP:5 10535,13006
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Barriere (Seydelstr.)	BNP:5 10370,11593
 Drängelgitter (Gleditschstr. - Elßholzstr.)	BNP:10 7158,9509
 Drängelgitter (Glühwürmchenweg, Verlängerung)	BNP:5 -6162,16287

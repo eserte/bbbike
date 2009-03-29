@@ -163,7 +163,7 @@ Wismarplatz	1 14395,11753 14416,11815
 Wismarplatz	3 14449,11742 14416,11815 14395,11753
 Simon-Dach-Str.	1 13954,11647 13981,11746 14006,11843
 Simon-Dach-Str.	1 14045,11965 14006,11843
-Buchhorster Str.	1 7620,20635 7866,20556 7992,20515
+Buchhorster Str.	1 7620,20635 7793,20580 7866,20556 7992,20515
 Handjerystr.	1 5641,7189 5624,7113 5574,7018
 Leuthener Str.	1 7494,8364 7578,8358
 Leuthener Str.	1 7716,8356 7640,8359
@@ -678,6 +678,8 @@ Masurenstr. -> Berliner Str.: Straßenbahntrasse	3::igndisp 10670,17458 10894,174
 Berliner Str. -> Masurenstr.: Straßenbahntrasse	3::igndisp 10900,17397 10894,17470 10670,17458
 Mittelstreifen	3nocross::ignrte 6608,16180 6450,16325 6444,16331
 Mittelstreifen	3nocross::ignrte 7960,15801 7974,15634 7979,15569
+Weddingstr. -> Reinickendorfer Str.: Mittelstreifen	3::igndisp 8053,15598 7974,15634 7979,15569
+Reinickendorfer Str. -> Weddingstr.: Mittelstreifen	3::igndisp 7960,15801 7974,15634 8053,15598
 Zeisigweg	1 5178,1499 5153,1534 5148,1559 5145,1611 5132,1672 5087,1807
 Nollendorfplatz	1 7033,10328 6971,10346
 Mittelstreifen	3nocross::ignrte 5902,9083 5995,9098 6063,9106
@@ -778,3 +780,4 @@ Markgrafenstr. -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::ign
 Am Berlin Museum -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 10025,10755 9829,10830 9805,10791
 Lindenstr. -> Am Berlin Museum: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9935,11067 9829,10830 10025,10755
 Treptower Str.	1 13376,7970 13459,8072
+Alte Schönhauser Str.	1 10718,13625 10746,13673
