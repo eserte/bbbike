@@ -709,12 +709,17 @@ sub create_user_deletions_object {
     if (defined $args{-type}) {
 	if ($args{-type} eq 'handicap-q4') {
 	    $cat = "q4";
+	} elsif ($args{-type} eq 'handicap-q4-oneway') {
+	    $cat = "q4"; # direction correction follows below
 	} elsif ($args{-type} eq 'oneway') {
 	    $cat = "1"; # XXX but what about the direction?
 	}
     }
     if (defined $args{-addinfo}) {
 	$cat .= "::" . $args{-addinfo}; # XXX maybe this will change some day to ":"
+    }
+    if (defined $args{-type} && $args{-type} eq 'handicap-q4-oneway') {
+	$cat .= ";"; # direction correction 
     }
 
     my $s = Strassen->new;

@@ -3615,6 +3615,10 @@ sub temp_blockings_editor {
 			-value => "handicap-q4",
 			-variable => \$blocking_type,
 		       )->pack(-anchor => "w");
+	$f->Radiobutton(-text => M"handicap in einer Richtung (Richtung manuell korrigieren!)",
+			-value => "handicap-q4-oneway",
+			-variable => \$blocking_type,
+		       )->pack(-anchor => "w");
     }
 
     Tk::grid($t->Checkbutton(-text => M"Überqueren der gesperrten Straßen nicht möglich",
