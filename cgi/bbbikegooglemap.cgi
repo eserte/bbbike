@@ -964,7 +964,8 @@ EOF
     <colgroup><col width="0*" /><col width="1*" /><col width="0*" /></colgroup>
     <tr>
       <td>Adresse:</td>
-      <td><input style="width:100%;" name="geocodeAddress" /></td>
+<!-- first width is needed for firefox, 2nd for seamonkey -->
+      <td style="width:100%;"><input style="width:100%;" name="geocodeAddress" /></td>
       <td><button>Zeigen</button></td>
     </tr>
   </table>
