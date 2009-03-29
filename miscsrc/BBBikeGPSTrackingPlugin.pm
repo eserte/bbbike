@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.32 2009/03/24 23:11:27 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.33 2009/03/29 00:55:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -975,6 +975,7 @@ sub toggle_say_something {
 }
 
 sub saysomething {
+    return if !$do_speech;
     if (!defined $last_speech_time || time-$last_speech_time >= SAY_SOMETHING_INTERVAL) {
 	my $phrase = $say_something_phrases[$say_something_phrase_i];
 	if ($phrase eq 'gpsinfo') {
