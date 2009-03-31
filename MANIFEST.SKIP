@@ -9,7 +9,7 @@
 ^Makefile.PL$
 ~$
 (^|/)\.\#.*\d+\.\d+$
-^Attic/
+(^|/)Attic/
 \.gdbinit$
 \.class$
 \.old$
@@ -274,7 +274,6 @@ cgi/gridserv.cgi$
 # ignore whole hierarchy for now...
 ^mapserver/brb/
 ^mapserver/touren/
-^images/Attic/
 ^images/bbbike_splash_oo\.gif$
 ^images/bbbike_splash_tkbabybike.xpm$
 ^images/berlin_small.png$
