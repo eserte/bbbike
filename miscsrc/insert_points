@@ -362,10 +362,11 @@ sub process {
 		   sehenswuerdigkeit
 		   potsdam plz
 		   grenzuebergaenge
-		   routing_helper
 		  );
+	    # Specify files here which are only available as -orig or
+	    # non-orig version:
 	    if ($orig) {
-		push @{$check_files[T_NORMAL]}, "radwege";
+		push @{$check_files[T_NORMAL]}, "radwege", "routing_helper";
 	    } else {
 		push @{$check_files[T_NORMAL]}, "radwege_exact";
 	    }
