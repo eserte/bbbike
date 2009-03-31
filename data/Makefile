@@ -133,6 +133,9 @@ targets-clean:
 	-mkdir /tmp/old-data
 	mv -f ${TARGETS} /tmp/old-data/
 
+fix-permissions:
+	$(READABLE) $(TARGETS)
+
 # Useful checks, but normally too slow for a quick build
 # XXX merge with sort-Berlin.coords.data rule below?
 slow-checks:	check-categories \
