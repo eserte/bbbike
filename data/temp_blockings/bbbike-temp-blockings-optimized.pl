@@ -909,6 +909,16 @@ push @temp_blocking,
          'data' => 'userdel	q4::inwork 57976,-10623 57656,-10684 57418,-10618 56989,-10997
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
+         'from' => undef,
+         'id' => 1597,
+         'data' => 'userdel	q4::inwork; 14597,11069 14530,11137
+userdel	q4::inwork 14530,11137 14465,11195
+',
+         'type' => 'handicap'
        }
      
 );
