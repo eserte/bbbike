@@ -112,13 +112,21 @@ sub convert_to_wpt_strassen {
     require Strassen::Core;
     my $s = Strassen->new;
 
+    my $curr_acc;
+
     my $check = sub {
 	my $line = shift;
-	if ($line =~ m{^\$GPRMC}) {
+	if ($line =~ m{^\$PGRME,(.*?),}) {
+	    $curr_acc = $1;
+	    if ($curr_acc > 1000) {
+		$curr_acc = undef;
+	    }
+	} elsif ($line =~ m{^\$GPRMC}) {
 	    my $ret = parse_GPRMC($line);
 	    if ($ret) {
 		my($x,$y) = $Karte::Standard::obj->trim_accuracy($obj->map2standard($ret->{lon}, $ret->{lat}));
-		$s->push([$ret->{isodate}, ["$x,$y"], "X"]);
+		my $cat = accuracy_to_cat($curr_acc);
+		$s->push([$ret->{isodate}, ["$x,$y"], $cat]);
 	    }
 	}
     };
@@ -131,6 +139,17 @@ sub convert_to_wpt_strassen {
     close $fh;
 
     $s;
+}
+
+sub accuracy_to_cat {
+    my($acc) = @_;
+    (!defined $acc ? '#f0d0d0' :
+     $acc <= 8  ? '#800000' :
+     $acc <= 12 ? '#b00000' :
+     $acc <= 20 ? '#e00000' :
+     $acc <= 40 ? '#f08080' :
+                  '#f0c0c0'
+    );
 }
 
 1;
