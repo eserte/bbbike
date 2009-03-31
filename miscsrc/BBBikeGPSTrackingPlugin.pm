@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.33 2009/03/29 00:55:37 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.34 2009/03/31 20:36:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -427,7 +427,7 @@ sub _setup_fileevent {
 		my $sat_used = 0;
 		for (@sat) {
 		    my(@l) = split /\s+/;
-		    if ($l[4]) { $sat_used++ }
+		    if ($l[3] && $l[4]) { $sat_used++ }
 		}
 		$current_sat_used = $sat_used;
 	    }
@@ -981,7 +981,7 @@ sub saysomething {
 	if ($phrase eq 'gpsinfo') {
 	    saytext(gps_info_text_de());
 	} elsif ($phrase eq 'powerinfo') {
-	    saytext(power_info());
+	    saytext({power_info()}->{msg_de});
 	} elsif ($phrase eq 'journeyinfo') {
 	    say_journey_info();
 	} else {
@@ -1258,6 +1258,13 @@ sub gps_info_text_de {
     my $msg = "";
     if ($current_accuracy == ACCURACY_NOTHING) { # XXX or check for gps mode?
 	$msg .= "Es gibt zurzeit keinen GPS-Empfang. ";
+	if ($current_sat_used) {
+	    if ($current_sat_used == 1) {
+		$msg .= "Es ist ein Satellit sichtbar. ";
+	    } else {
+		$msg .= "Es sind $current_sat_used Satelliten sichtbar. ";
+	    }
+	}
     } elsif (!defined $current_accuracy) {
 	$msg .= "Die GPS-Genauigkeit kann noch nicht ermittelt werden.";
     } else {
