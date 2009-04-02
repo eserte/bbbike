@@ -31,30 +31,30 @@ $HOMEPAGE	   = 'http://www.rezic.de/eserte/';
 $BBBIKE_WWW	   = 'http://www.bbbike.de';
 # list of additional WWW mirrors
 @BBBIKE_WWW_MIRRORS = ('http://bbbike.sourceforge.net/cgi-bin/bbbike.cgi',
-		       'http://bbbike.radzeit.de/cgi-bin/bbbike.cgi',
+		       'http://bbbike.de/cgi-bin/bbbike.cgi',
 		       'http://www.rezic.de/cgi-bin/bbbike.cgi',
 		       'http://user.cs.tu-berlin.de/~eserte/bbbike/cgi/bbbike.cgi',
 		      );
 # WWW version, URL for direct access (sometimes www.bbbike.de does not work)
 #$BBBIKE_DIRECT_WWW = 'http://user.cs.tu-berlin.de/~eserte/bbbike/cgi/bbbike.cgi';
-$BBBIKE_DIRECT_WWW = 'http://bbbike.radzeit.de/cgi-bin/bbbike.cgi';
+$BBBIKE_DIRECT_WWW = 'http://bbbike.de/cgi-bin/bbbike.cgi';
 
 # Homepage on Sourceforge
 $BBBIKE_SF_WWW	   = 'http://bbbike.sourceforge.net';
 # URLs for data update
 #$BBBIKE_UPDATE_WWW = "http://bbbike.sourceforge.net/bbbike";
-$BBBIKE_UPDATE_DIRECT_WWW = "http://bbbike.radzeit.de/BBBike";
+$BBBIKE_UPDATE_DIRECT_WWW = "http://bbbike.de/BBBike";
 $BBBIKE_UPDATE_WWW = "http://www.bbbike.de/BBBike";
-$BBBIKE_UPDATE_DATA_DIRECT_CGI = "http://bbbike.radzeit.de/cgi-bin/bbbike-data.cgi";
+$BBBIKE_UPDATE_DATA_DIRECT_CGI = "http://bbbike.de/cgi-bin/bbbike-data.cgi";
 $BBBIKE_UPDATE_DATA_CGI = "http://www.bbbike.de/cgi-bin/bbbike-data.cgi";
-$BBBIKE_UPDATE_DIST_DIRECT_CGI = "http://bbbike.radzeit.de/cgi-bin/bbbike-snapshot.cgi";
+$BBBIKE_UPDATE_DIST_DIRECT_CGI = "http://bbbike.de/cgi-bin/bbbike-snapshot.cgi";
 $BBBIKE_UPDATE_DIST_CGI = "http://www.bbbike.de/cgi-bin/bbbike-snapshot.cgi";
 #$BBBIKE_UPDATE_RSYNC = 'rsync://www.radzeit.de/bbbike/'; # not yet XXX
 #$BBBIKE_UPDATE_DATA_RSYNC = 'rsync://www.radzeit.de/bbbike_data/'; # XXX not yet
 
 # WAP version
 $BBBIKE_WAP	   = 'http://bbbike.de/wap';
-$BBBIKE_DIRECT_WAP = 'http://bbbike.radzeit.de/cgi-bin/wapbbbike.cgi';
+$BBBIKE_DIRECT_WAP = 'http://bbbike.de/cgi-bin/wapbbbike.cgi';
 
 # Sourceforge IDs
 $SF_BBBIKE_GROUP_ID = 19142;
@@ -84,12 +84,12 @@ $DISTFILE_FREEBSD_ALL  = "http://portsmon.freebsd.org/portoverview.py?category=g
 $DIPLOM_URL        = 'http://user.cs.tu-berlin.de/~eserte/diplom/';
 
 # The URL of the mapserver CGI
-$BBBIKE_MAPSERVER_URL  = 'http://bbbike.radzeit.de/cgi-bin/mapserv';
+$BBBIKE_MAPSERVER_URL  = 'http://bbbike.de/cgi-bin/mapserv';
 # Address form for mapserver
-$BBBIKE_MAPSERVER_ADDRESS_DIRECT_URL = 'http://bbbike.radzeit.de/cgi-bin/mapserver_address.cgi';
+$BBBIKE_MAPSERVER_ADDRESS_DIRECT_URL = 'http://bbbike.de/cgi-bin/mapserver_address.cgi';
 $BBBIKE_MAPSERVER_ADDRESS_URL = 'http://www.bbbike.de/cgi-bin/mapserver_address.cgi';
 # The initial mapserver URL (direct)
-$BBBIKE_MAPSERVER_DIRECT = 'http://bbbike.radzeit.de/mapserver/brb/';
+$BBBIKE_MAPSERVER_DIRECT = 'http://bbbike.de/mapserver/brb/';
 # The initial mapserver URL (indirect, from www.bbbike.de)
 $BBBIKE_MAPSERVER_INDIRECT = "http://www.bbbike.de/mapserver/brb/";
 
