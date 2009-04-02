@@ -28,7 +28,7 @@ if (!defined $bbbike_googlemaps_url) {
 	# Unfortunately I cannot use $BBBIKE_GOOGLEMAP_URL from BBBikeVar.pm here,
 	# because it seems that POSTs content is not sent through the rewriting
 	# rules...
-	$bbbike_googlemaps_url = "http://bbbike.radzeit.de/cgi-bin/bbbikegooglemap.cgi";
+	$bbbike_googlemaps_url = "http://bbbike.de/cgi-bin/bbbikegooglemap.cgi";
     }
 }
 
