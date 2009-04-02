@@ -117,7 +117,7 @@ sub convert_to_wpt_strassen {
     my $check = sub {
 	my $line = shift;
 	if ($line =~ m{^\$PGRME,(.*?),}) {
-	    $curr_acc = $1;
+	    $curr_acc = int $1;
 	    if ($curr_acc > 1000) {
 		$curr_acc = undef;
 	    }
@@ -126,7 +126,7 @@ sub convert_to_wpt_strassen {
 	    if ($ret) {
 		my($x,$y) = $Karte::Standard::obj->trim_accuracy($obj->map2standard($ret->{lon}, $ret->{lat}));
 		my $cat = accuracy_to_cat($curr_acc);
-		$s->push([$ret->{isodate}, ["$x,$y"], $cat]);
+		$s->push(["$ret->{isodate} acc=" . (defined $curr_acc ? $curr_acc . 'm' : '?'), ["$x,$y"], $cat]);
 	    }
 	}
     };
