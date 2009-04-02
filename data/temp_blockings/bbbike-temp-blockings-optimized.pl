@@ -527,16 +527,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_010086',
-         'until' => 1238536799,
-         'text' => 'Ordensmeisterstr. (Tempelhof) Richtung Tempelhofer Damm zwischen Lorenzstr. und Tempelhofer Damm Baustelle, Fahrtrichtung gesperrt (bis Ende 03.2009)',
-         'from' => 1230474772,
-         'id' => 1522,
-         'data' => 'userdel	1::inwork 9357,5601 9147,5534
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_010519',
@@ -642,36 +633,9 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_011698',
-         'until' => 1238623199,
-         'text' => 'Eberswalder Str. (Prenzlauer Berg) Richtung Prenzlauer Allee zwischen Schwedter Str. und Danziger Str. Baustelle, Fahrtrichtung gesperrt ist eingerichtet (bis Anfang 04.2009)',
-         'from' => 1238347304,
-         'id' => 1568,
-         'data' => 'userdel	q4::inwork; 10351,14981 10516,15039 10618,15076 10881,15047
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_011938',
-         'until' => 1238623199,
-         'text' => 'Konrad-Wolf-Str. (Hohenschönhausen) Richtung Suermondtstr. in Höhe Altenhofer Str. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Anfang 04.2009)',
-         'from' => 1238347383,
-         'id' => 1569,
-         'data' => 'userdel	q4::inwork; 15052,14585 15272,14691 15383,14759
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_011669',
-         'until' => 1238536799,
-         'text' => 'Köpenicker Str. (Kreuzberg) Richtung Bethaniendamm zwischen Brückenstr. und Michaelkirchstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 03.2009)',
-         'from' => 1238347459,
-         'id' => 1570,
-         'data' => 'userdel	q4::inwork; 11242,11720 11324,11689 11574,11594
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
+       undef,
        {
          'source_id' => 'IM_011637',
          'until' => 1262300400,
@@ -702,16 +666,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_011933',
-         'until' => 1238536799,
-         'text' => 'Weddigenweg (Lichterfelde) Kreuzungsbereich Baseler Str. geplatzte Wasserleitung, Straße vollständig gesperrt (bis Ende 03.2009)',
-         'from' => 1238347688,
-         'id' => 1574,
-         'data' => 'userdel	q4::inwork 3318,3046 3174,3052 3026,3058
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1240610400,
          'text' => 'B 104 Pasewalk - Strasburg zw. Wilsickow und Louisfelde Dammsanierung Vollsperrung 16.03.2009-24.04.2009 ',
@@ -811,24 +766,8 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1238536800,
-         'text' => 'L 035 Kno. Friedensstr./ Saarower Chausse OL Fürstenwalde, Abzw. Friedensstr. Brückenabbruch A 12 Friedensstr. gesperrt 13.03.2009-31.03.2009 ',
-         'from' => 1236812400,
-         'id' => 1586,
-         'data' => 'userdel	2::inwork 56416,-7090 56428,-6340
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1238450400,
-         'text' => 'L 040 L23 Storkow - Friedersdorf Durchlass bei Kummersdorf Ersatzneubau Durchlass Vollsperrung 20.03.2009-30.03.2009 ',
-         'from' => 1237417200,
-         'id' => 1587,
-         'data' => 'userdel	2::inwork 44261,-14205 43456,-14384 42430,-14398
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1240178400,
          'text' => 'L 051 Cottbus - Burg Kreisel Briesen Ri. Burg Ausbauarbeiten Vollsperrung 30.03.2009-19.04.2009 ',
@@ -883,15 +822,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1238623200,
-         'text' => 'L 283 Parstein - B 2, Schmargendorf Bahnübergang OD Herzsprung Gleisbauarbeiten Vollsperrung 27.03.2009-01.04.2009 ',
-         'from' => 1238022000,
-         'id' => 1594,
-         'data' => 'userdel	2::inwork 49004,64047 48516,64085 48151,64245
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1251756000,
          'text' => 'L 402 Zeuthen - Dahlewitz Kreuzung zw. Zeuthen und Kiekebusch Neubau Kreisverkehr Vollsperrung 09.03.2009-31.08.2009 ',
