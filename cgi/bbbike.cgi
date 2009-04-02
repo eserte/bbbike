@@ -6172,9 +6172,10 @@ EOF
     } elsif (defined $mapserver_init_url) {
         $s .= "<td><a href=\"$mapserver_init_url\">Mapserver</a></td>";
     }
-    if ($ENV{SERVER_NAME} =~ /radzeit/i) {
-        $s .= "<td><a href=\"http://www.radzeit.de\">Radzeit.de</a></td>";
-    }
+## no sponsoring, no link
+#     if ($ENV{SERVER_NAME} =~ /radzeit/i) {
+#         $s .= "<td><a href=\"http://www.radzeit.de\">Radzeit.de</a></td>";
+#     }
     $s .= <<EOF;
 </tr>
 </table>
