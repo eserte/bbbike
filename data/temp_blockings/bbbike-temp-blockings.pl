@@ -13528,4 +13528,12 @@ userdel	q4::inwork; 14597,11069 14530,11137
 userdel	q4::inwork 14530,11137 14465,11195
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Jessnerstr. wegen Bauarbeiten in Richtung Süden nicht befahrbar',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 15080,11905 14977,11754 14941,11689
+EOF
+     },
     );
