@@ -850,6 +850,15 @@ push @temp_blocking,
 userdel	q4::inwork 14530,11137 14465,11195
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Jessnerstr. wegen Bauarbeiten in Richtung Süden nicht befahrbar',
+         'from' => undef,
+         'id' => 1598,
+         'data' => 'userdel	q4::inwork; 15080,11905 14977,11754 14941,11689
+',
+         'type' => 'handicap'
        }
      
 );
