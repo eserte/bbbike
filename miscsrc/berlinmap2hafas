@@ -724,7 +724,7 @@ sub get_specsperre_exceptions {
 	my $c = $r->[Strassen::COORDS()];
 	last if !@$c;
 	for my $i (0 .. $#$c - 1) {
-	    push @{ $specsperre_exceptions_hash->{$c->[0]} }, [@{$c}[$i+1 .. $#$c]];
+	    push @{ $specsperre_exceptions_hash->{$c->[$i]} }, [@{$c}[$i+1 .. $#$c]];
 	}
     }
     $specsperre_exceptions_hash;
@@ -739,6 +739,7 @@ sub match_specsperre_exception {
  EXCEPTION:
     for my $exception (@$exceptions) {
 	for my $i (1 .. $#$coords) {
+	    next EXCEPTION if $i-1 > $#$exception;
 	    next EXCEPTION if $coords->[$i] ne $exception->[$i-1];
 	}
 	warn "(exception match <@$coords> <$first @$exception>)\n"

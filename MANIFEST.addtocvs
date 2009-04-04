@@ -491,6 +491,8 @@ port/windows/patches/3.16/bbbike_0.config
 projects/www.radzeit.de/.last/.keep_me
 projects/www.radzeit.de/Makefile
 projects/www.radzeit.de/etc/httpd.conf
+projects/www.radzeit.de/etc/httpd-radzeit.conf
+projects/www.radzeit.de/t/bbbike_conf_check.t
 projects/www.radzeit.de/t/bbbikedraw_radzeit.t
 t/*.pl
 t/*.pm

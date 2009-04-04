@@ -78,6 +78,7 @@ GPS/GpsmanData/Analyzer.pm
 GPS/GpsmanData/Any.pm
 GPS/GpsmanData/DirectEdit.pm
 GPS/GpsmanData/SportsTracker.pm
+GPS/GpsmanData/Strassen.pm
 GPS/GpsmanData/Tk.pm
 GPS/KML.pm
 GPS/MPS.pm
@@ -1060,6 +1061,7 @@ cgi/bbbike-cs-umzug.html
 cgi/bbbike-cs.cgi.config
 cgi/bbbike-netbeat.cgi.config
 cgi/bbbike-radzeit.cgi.config
+cgi/bbbike2-radzeit.cgi.config
 cgi/bbbike-sourceforge.cgi.config
 cgi/bbbikesoapserver.cgi
 cgi/gridserv.cgi
@@ -1144,6 +1146,7 @@ data/qualitaet_s_add-orig
 data/radwege-orig
 data/rbahn-orig
 data/rbahnhof-orig
+data/routing_helper-orig
 data/sbahn-orig
 data/sbahnhof-orig
 data/sehenswuerdigkeit-orig
@@ -1545,6 +1548,8 @@ port/windows/patches/3.16/bbbike_0.config
 projects/www.radzeit.de/.last/.keep_me
 projects/www.radzeit.de/Makefile
 projects/www.radzeit.de/etc/httpd.conf
+projects/www.radzeit.de/etc/httpd-radzeit.conf
+projects/www.radzeit.de/t/bbbike_conf_check.t
 projects/www.radzeit.de/t/bbbikedraw_radzeit.t
 t/cgi-masstest.pl
 t/cgi2.pl
@@ -1597,6 +1602,7 @@ t/route-pdf.t
 t/strasse.t
 t/strassen-agrep.t
 t/strassen-build.t
+t/strassen-combine.t
 t/strassen-coreheavy.t
 t/strassen-dbfile-btree.t
 t/strassen-dbfile.t
