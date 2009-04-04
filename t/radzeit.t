@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: radzeit.t,v 1.6 2007/08/08 22:02:49 eserte Exp $
+# $Id: radzeit.t,v 1.7 2009/04/04 12:31:35 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -30,14 +30,16 @@ use Sys::Hostname;
 use Http;
 use Strassen::Core;
 
-my $bbbike_data_url       = "http://bbbike.radzeit.de/BBBike/data";
-my $bbbike_data_local_url = "http://radzeit/BBBike/data";
+my $bbbike_data_url          = "http://bbbike.de/BBBike/data";
+my $bbbike_data_fallback_url = "http://bbbike.radzeit.de/BBBike/data";
+my $bbbike_data_local_url    = "http://radzeit/BBBike/data";
 
 my @urls;
 if ($ENV{BBBIKE_TEST_HTMLDIR}) {
     push @urls, "$ENV{BBBIKE_TEST_HTMLDIR}/data";
 } else {
     push @urls, $bbbike_data_url;
+    push @urls, $bbbike_data_fallback_url;
     push @urls, $bbbike_data_local_url;
 }
 
@@ -56,9 +58,14 @@ $uagzip->default_headers->push_header('Accept-Encoding' => 'gzip');
 $Http::user_agent .= " (BBBike-Test/1.0)";
 
 for my $url (@urls) {
+    local $TODO;
  SKIP: {
 	skip("local URL works only on herceg.local", $tests_per_url)
 	    if $url eq $bbbike_data_local_url && hostname !~ m{\.herceg\.(de|local)};
+
+	if ($url eq $bbbike_data_fallback_url) {
+	    $TODO = "bbbike.radzeit.de is currently broken!!!";
+	}
 
 	{
 	    my $resp = $ua->get("$url/temp_blockings/bbbike-temp-blockings-optimized.pl");
@@ -101,7 +108,7 @@ sub do_content_checks {
     $s->init;
     while() {
 	my $r = $s->next;
-	last if !@{ $r->[Strassen::COORDS] };
+	last if !@{ $r->[Strassen::COORDS] || [] };
 	if ($r->[Strassen::NAME] =~ m{(?:Fußgänger|über|Spielstraße)}i) {
 	    $have_umlauts++;
 	}
