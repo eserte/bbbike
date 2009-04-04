@@ -254,7 +254,7 @@
   (interactive)
   (let ((coords (buffer-substring (region-beginning) (region-end))))
     (setq coords (replace-regexp-in-string " " "!" coords))
-    (browse-url (concat "http://bbbike.radzeit.de/cgi-bin/bbbikegooglemap.cgi?coords=" coords)))
+    (browse-url (concat "http://bbbike.de/cgi-bin/bbbikegooglemap.cgi?coords=" coords)))
   )
 
 (defun bbbike-now ()

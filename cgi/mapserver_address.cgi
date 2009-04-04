@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.33 2008/11/22 20:44:28 eserte Exp $
+# $Id: mapserver_address.cgi,v 1.34 2009/04/04 11:16:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -25,7 +25,7 @@ BEGIN { # XXX do not hardcode
 	@Strassen::datadirs = "$BBBIKE_ROOT/data";
     } elsif ($ENV{SERVER_NAME} eq 'vran.herceg.de') {
 	$BBBIKE_URL = "/~eserte/bbbike";
-    } elsif ($ENV{SERVER_NAME} =~ /radzeit/i) {
+    } elsif ($ENV{SERVER_NAME} =~ /(radzeit|bbbike\.de)/i) {
 	if (-d "/var/www/domains/radzeit.de/www/BBBike") {
 	    $BBBIKE_ROOT = "/var/www/domains/radzeit.de/www/BBBike";
 	} else {
@@ -418,7 +418,7 @@ sub redirect_to_googlemaps {
     my($coord, %args) = @_;
     my $q2 = CGI->new({wpt_or_trk => "!$coord"});
     # XXX do not hardcode
-    print redirect("http://bbbike.radzeit.de/cgi-bin/bbbikegooglemap.cgi?" . $q2->query_string);
+    print redirect("http://bbbike.de/cgi-bin/bbbikegooglemap.cgi?" . $q2->query_string);
     return;
 }
 
@@ -431,7 +431,7 @@ sub redirect_to_google2brb {
     my($lon, $lat) = $Karte::Polar::obj->standard2map($x, $y);
     my $q2 = CGI->new({center => "$lat,$lon"});
     # XXX do not hardcode
-    print redirect("http://bbbike.radzeit.de/BBBike/html/google2brb.html?" . $q2->query_string);
+    print redirect("http://bbbike.de/BBBike/html/google2brb.html?" . $q2->query_string);
     return;
 }
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 2.35 2008/08/24 08:02:04 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 2.36 2009/04/04 11:14:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006,2007,2008 Slaven Rezic. All rights reserved.
@@ -199,7 +199,7 @@ sub get_html {
 	 'bbbike.de'	      => 'ABQIAAAACNG-XP3VVgdpYda6EwQUyhRfQt6AwvKXAVZ7ZsvglWYeC-xX5BROlXoba_KenDFQUtSEB_RJPUVetw',
 	);
     my $full = URI->new(BBBikeCGIUtil::my_url(CGI->new, -full => 1));
-    my $fallback_host = "bbbike.radzeit.de";
+    my $fallback_host = "bbbike.de";
     my $host = eval { $full->host } || $fallback_host;
     my $google_api_key = $google_api_keys{$host} || $google_api_keys{$fallback_host};
     my $cgi_reldir = dirname($full->path);
@@ -217,7 +217,7 @@ sub get_html {
 	$bbbikeroot = "/bbbike";
 	$get_public_link = sub {
 	    my $link = BBBikeCGIUtil::my_url(CGI->new(), -full => 1);
-	    $link =~ s{localhost$bbbikeroot/cgi}{bbbike.radzeit.de/cgi-bin};
+	    $link =~ s{localhost$bbbikeroot/cgi}{bbbike.de/cgi-bin};
 	    $link;
 	};
     }
@@ -1147,4 +1147,4 @@ used.
 
 =cut
 
-# rsync -e "ssh -2 -p 5022" -a ~/src/bbbike/cgi/bbbikegooglemap.cgi root@bbbike.radzeit.de:/var/www/domains/radzeit.de/www/cgi-bin/bbbikegooglemap2.cgi
+# rsync -e "ssh -2 -p 5022" -a ~/src/bbbike/cgi/bbbikegooglemap.cgi root@bbbike.de:/var/www/domains/radzeit.de/www/cgi-bin/bbbikegooglemap2.cgi

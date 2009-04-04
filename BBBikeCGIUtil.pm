@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeCGIUtil.pm,v 1.9 2008/08/03 10:06:59 eserte Exp $
+# $Id: BBBikeCGIUtil.pm,v 1.10 2009/04/04 11:08:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeCGIUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
 sub encode_possible_utf8_params {
     my($q, $from, $to) = @_;
@@ -51,14 +51,19 @@ sub encode_possible_utf8_params {
     }
 }
 
-# Hack for ProxyPass on bbbike.radzeit.de:
+# Hack for old ProxyPass on bbbike.radzeit.de, not needed anymore:
 sub my_url {
     my($q, %args) = @_;
+    return $q->url(%args);
+
+    # Not used anymore:
     if ($args{"-absolute"}) {
 	$q->url(-absolute => 1);
-    } elsif ($q->server_name eq 'bbbike.radzeit.de') {
+    } elsif ($q->server_name eq 'bbbike.radzeit.de' ||
+	     $q->server_name eq 'bbbike.de' 
+	    ) {
 	my $url = $q->url(%args);
-	$url =~ s{^http://192\.168\.0\.2}{http://bbbike.radzeit.de};
+	$url =~ s{^http://192\.168\.0\.2}{http://bbbike.de};
 	$url;
     } else {
 	$q->url(%args);

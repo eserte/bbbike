@@ -23,7 +23,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $FreeBSD: doc/share/misc/docbook.css,v 1.12 2007/09/02 22:52:01 chinsan Exp $
+ * $FreeBSD: doc/share/misc/docbook.css,v 1.14 2008/11/21 07:28:34 keramida Exp $
  */
 
 BODY ADDRESS {
@@ -149,11 +149,55 @@ BODY P B.APPLICATION {
 	text-decoration: underline;
 } 
 
-.PROGRAMLISTING, .SCREEN {
-	background-color: #DEE3E7;
-	padding: 4px;
+.SCREEN {
+	padding: 1ex;
+}
+
+.PROGRAMLISTING {
+	padding: 1ex;
+	background-color: #eee;
+	border: 1px solid #ccc;
 }
 
 @media screen {  /* hide from IE3 */
 	a[href]:hover { background: #ffa }
+}
+
+BLOCKQUOTE.NOTE {
+	color: #222;
+	background: #eee;
+	border: 1px solid #ccc;
+	padding: 0.4em 0.4em;
+	width: 85%;
+}
+
+BLOCKQUOTE.TIP {
+	color: #004F00;
+	background: #d8ecd6;
+	border: 1px solid green;
+	padding: 0.2em 2em;
+	width: 85%;
+}
+
+BLOCKQUOTE.IMPORTANT {
+	font-style:italic;
+	border: 1px solid #a00;
+	border-left: 12px solid #c00;
+	padding: 0.1em 1em;
+}
+
+BLOCKQUOTE.WARNING {
+	color: #9F1313;
+	background: #f8e8e8;
+	border: 1px solid #e59595;
+	padding: 0.2em 2em;
+	width: 85%;
+}
+
+.EXAMPLE {
+	background: #fefde6;
+	border: 1px solid #f1bb16;
+	margin: 1em 0;
+	padding: 0.2em 2em;
+	width: 90%;
 }

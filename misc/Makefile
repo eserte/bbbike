@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.24 2009/02/15 11:36:06 eserte Exp eserte $
+# $Id: Makefile,v 1.25 2009/04/04 11:23:09 eserte Exp $
 #
 
 PERL=			perl
@@ -54,7 +54,7 @@ update-from-andreasm:
 	cd $(HOME)/src/bbbike/data && make check all
 
 rsync-uaprof:
-	rsync -avz root@bbbike.radzeit.de:/var/www/domains/radzeit.de/www/BBBike/tmp/uaprof/ ../tmp/uaprof/
+	rsync -avz root@bbbike.de:/var/www/domains/radzeit.de/www/BBBike/tmp/uaprof/ ../tmp/uaprof/
 
 sparkassen_osm.bbd:	../data_berlin_osm_bbbike/_unhandled
 	perl -nle '/(^Sparkasse|Berliner Sparkasse|operator:Sparkasse)/ and do { s{\tX }{\tIMG:/home/e/eserte/images/icons/sparkasse.gif }; print }' ../data_berlin_osm_bbbike/_unhandled > sparkassen_osm.bbd

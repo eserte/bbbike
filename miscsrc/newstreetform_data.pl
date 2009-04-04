@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: newstreetform_data.pl,v 1.29 2007/03/31 20:07:07 eserte Exp $
+# $Id: newstreetform_data.pl,v 1.30 2009/04/04 11:24:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -12,6 +12,9 @@
 # Mail: slaven@rezic.de
 # WWW:  http://www.rezic.de/eserte/
 #
+
+# NOTE! This script is not in use anymore. I found a shared imap
+# account more appropriate!
 
 # Process the newstreetform mails (from a mbox file or a
 # one-mail-per-message folder) and create HTML pages
@@ -309,7 +312,7 @@ EOF
 	my $references = qq{$header->{"message-id"}};
 	$extra_html .= <<EOF;
 <hr>Mail:<br>
-<form action="http://bbbike.radzeit.de/newstreetformdata/sendmail.cgi">
+<form action="http://bbbike.de/newstreetformdata/sendmail.cgi">
 <textarea rows="4" cols="80" name="emailheader">
 To: $reply_to
 Subject: $subject
@@ -485,11 +488,11 @@ Then direct your browser to:
 
 Or deploy to radzeit server:
 
-    rsync -avz -e "ssh -2 -p 5022" /var/tmp/newstreetformdata/ root@bbbike.radzeit.de:/var/www/domains/radzeit.de/www/public/newstreetformdata/
+    rsync -avz -e "ssh -2 -p 5022" /var/tmp/newstreetformdata/ root@bbbike.de:/var/www/domains/radzeit.de/www/public/newstreetformdata/
 
 And direct your browser to:
 
-    http://bbbike.radzeit.de/newstreetformdata/newstreetindex.html
+    http://bbbike.de/newstreetformdata/newstreetindex.html
 
 ----------------------------------------------------------------------
 

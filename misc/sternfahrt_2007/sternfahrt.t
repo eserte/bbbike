@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: sternfahrt.t,v 1.5 2007/05/20 20:58:57 eserte Exp $
+# $Id: sternfahrt.t,v 1.6 2009/04/04 11:23:27 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -29,7 +29,7 @@ GetOptions("live!" => \$use_live,
 	  )
     or die "usage: $0 [-live] [-year ....]";
 
-my $host = $use_live ? "bbbike.radzeit.de" : "radzeit.herceg.de";
+my $host = $use_live ? "bbbike.de" : "radzeit.herceg.de";
 
 plan tests => 7;
 

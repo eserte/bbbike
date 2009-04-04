@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.30 2009/02/01 22:36:52 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.31 2009/04/04 11:12:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005,2006,2008 Slaven Rezic. All rights reserved.
@@ -89,7 +89,7 @@ EOF
 
 sub teaser_sternfahrt {
     my $year = (localtime)[5]+1900;
-    my $url = "http://bbbike.radzeit.de/mapserver/brb/sternfahrt${year}_init.html";
+    my $url = "http://bbbike.de/mapserver/brb/sternfahrt${year}_init.html";
     <<EOF
 <div class="teaser"><a style="text-decoration:none;" href="$url"><img style="padding:3px 0px 3px 0px; border:0px;" src="$bbbike_images/stern${year}_titel.jpg" border="0"></a><br><a href="$url">Die Routen der Sternfahrt ${year}</a></div>
 EOF

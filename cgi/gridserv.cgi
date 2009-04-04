@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gridserv.cgi,v 1.6 2007/07/28 20:42:36 eserte Exp $
+# $Id: gridserv.cgi,v 1.7 2009/04/04 11:22:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -80,7 +80,7 @@ while (<$fh>) {
 
 =head1 SYNC
 
-   cd ~/src/bbbike && rsync -e "ssh -2 -p 5022" -a cgi/gridserv.cgi root@bbbike.radzeit.de:/var/www/domains/radzeit.de/www/cgi-bin/gridserv.cgi
-   cd ~/src/bbbike && rsync -e "ssh -2 -p 5022" -a html/google2brb.* root@bbbike.radzeit.de:/var/www/domains/radzeit.de/www/BBBike/html/
+   cd ~/src/bbbike && rsync -e "ssh -2 -p 5022" -a cgi/gridserv.cgi root@bbbike.de:/var/www/domains/radzeit.de/www/cgi-bin/gridserv.cgi
+   cd ~/src/bbbike && rsync -e "ssh -2 -p 5022" -a html/google2brb.* root@bbbike.de:/var/www/domains/radzeit.de/www/BBBike/html/
 
 =cut

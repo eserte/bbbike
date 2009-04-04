@@ -9,7 +9,7 @@
 
 ]>
 
-<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.17 2007/08/05 20:33:55 eserte Exp $ -->
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.18 2009/04/04 11:17:14 eserte Exp $ -->
 
 <article lang="de">
  <artheader>
@@ -27,7 +27,7 @@
    </author>
   </authorgroup>
 
-  <pubdate>$Date: 2007/08/05 20:33:55 $</pubdate>
+  <pubdate>$Date: 2009/04/04 11:17:14 $</pubdate>
 
   <copyright>
    <year>2005</year>
@@ -1150,7 +1150,7 @@ url="mailto:newstreet@bbbike.de">newstreet@bbbike.de</> aus.
 
 <para>
 Ein Formular zum Eintragen von Straßendaten findet man <ulink
-url="http://bbbike.radzeit.de/BBBike/html/newstreetform.html">hier</>.
+url="http://bbbike.de/BBBike/html/newstreetform.html">hier</>.
 </para>
 
 <sect2>
@@ -1158,7 +1158,7 @@ url="http://bbbike.radzeit.de/BBBike/html/newstreetform.html">hier</>.
 
 <para>
 Aus dem <ulink
-url="http://bbbike.radzeit.de/cgi-bin/bbbike.cgi?mapserver=1">Mapserver-Interface</>
+url="http://bbbike.de/cgi-bin/bbbike.cgi?mapserver=1">Mapserver-Interface</>
 heraus ist es möglich, Kommentare für einen bestimmten Punkt zu
 schreiben. Dazu den Radiobutton <guibutton>Details anzeigen</>
 auswählen und auf einen Punkt in der Karte klicken. Im aufpoppenden

@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 9.29 2009/02/18 20:28:58 eserte Exp $
+# $Id: bbbike.cgi,v 9.30 2009/04/04 11:13:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2009 Slaven Rezic. All rights reserved.
@@ -739,7 +739,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 9.29 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 9.30 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -841,8 +841,7 @@ use vars qw(%handicap_speed);
 CGI->import('-no_xhtml');
 
 $q = new CGI;
-# XXX Hack for proxy_html problems on bbbike.radzeit.de
-# But this is also legally used with $use_utf8=1
+# Used for $use_utf8=1
 eval{BBBikeCGIUtil::encode_possible_utf8_params($q);};warn $@ if $@;
 
 undef $g_str; # XXX because it may already contain landstrassen etc.
@@ -1162,7 +1161,7 @@ if (defined $q->param('begin')) {
     # gibt es zwar auch mysteriöse kills, aber es geht im Großen und
     # Ganzen.
     #
-    # Mit dem Apache auf bbbike.radzeit.de gibt es keine Probleme.
+    # Mit dem Apache auf bbbike.de gibt es keine Probleme.
     http_header(-type => 'text/plain',
 		@no_cache,
 	       );
@@ -7095,7 +7094,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2009/02/18 20:28:58 $';
+    my $cgi_date = '$Date: 2009/04/04 11:13:58 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     $cgi_date =~ s{/}{-}g;
     my $data_date;

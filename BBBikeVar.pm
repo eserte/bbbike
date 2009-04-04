@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.61 2008/08/28 22:35:52 eserte Exp $
+# $Id: BBBikeVar.pm,v 1.62 2009/04/04 11:30:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000-2008 Slaven Rezic. All rights reserved.
@@ -49,8 +49,8 @@ $BBBIKE_UPDATE_DATA_DIRECT_CGI = "http://bbbike.de/cgi-bin/bbbike-data.cgi";
 $BBBIKE_UPDATE_DATA_CGI = "http://www.bbbike.de/cgi-bin/bbbike-data.cgi";
 $BBBIKE_UPDATE_DIST_DIRECT_CGI = "http://bbbike.de/cgi-bin/bbbike-snapshot.cgi";
 $BBBIKE_UPDATE_DIST_CGI = "http://www.bbbike.de/cgi-bin/bbbike-snapshot.cgi";
-#$BBBIKE_UPDATE_RSYNC = 'rsync://www.radzeit.de/bbbike/'; # not yet XXX
-#$BBBIKE_UPDATE_DATA_RSYNC = 'rsync://www.radzeit.de/bbbike_data/'; # XXX not yet
+#$BBBIKE_UPDATE_RSYNC = 'rsync://bbbike.de/bbbike/'; # not yet XXX
+#$BBBIKE_UPDATE_DATA_RSYNC = 'rsync://bbbike.de/bbbike_data/'; # XXX not yet
 
 # WAP version
 $BBBIKE_WAP	   = 'http://bbbike.de/wap';

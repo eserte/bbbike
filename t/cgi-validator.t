@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-validator.t,v 1.11 2008/12/06 11:35:31 eserte Exp $
+# $Id: cgi-validator.t,v 1.12 2009/04/04 11:26:03 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -44,7 +44,7 @@ GetOptions(\%config, "verbose|v+", "rooturl=s")
     or die <<EOF;
 usage: $0 [-v [-v ...]] [-rooturl url]
 
-Use -rooturl http://bbbike.radzeit.de/cgi-bin for testing
+Use -rooturl http://bbbike.de/cgi-bin for testing
 real URL.
 EOF
 my $rooturl = delete $config{rooturl} || "http://bbbike.dyndns.org/bbbike/cgi";

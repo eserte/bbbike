@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.44 2008/11/29 16:13:28 eserte Exp $
+# $Id: MapServer.pm,v 1.45 2009/04/04 11:30:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003-2008 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.44 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -109,6 +109,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.44 $ =~ /(\d+)\.(\d+)/);
 	$self;
     }
 
+    # Also used for bbbike.de
     sub radzeit_default {
 	my $self = shift->new;
 	my $apache_root;
@@ -128,7 +129,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.44 $ =~ /(\d+)\.(\d+)/);
 	$self->MapserverMapDir("$apache_root/$htdocs/mapserver/brb");
 	$self->MapserverBinDir("$apache_root/cgi-bin");
 	$self->MapserverRelurl("/mapserver/brb");
-	$self->MapserverUrl("http://www.radzeit.de/mapserver/brb");
+	$self->MapserverUrl("http://bbbike.de/mapserver/brb");
 	$self->TemplateMap("brb.map-tpl");
 	$self->ImageSuffix("png");
         $self->FontsList($fontslist);
@@ -269,6 +270,9 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.44 $ =~ /(\d+)\.(\d+)/);
 		    $ENV{SERVER_NAME} =~ /radzeit\.de$/ &&
 		    $ENV{SERVER_NAME} !~ /bbbike2\.radzeit\.de$/ # not for debian-based install
 		   ) {
+		    $conf = BBBikeDraw::MapServer::Conf->radzeit_default;
+		} elsif (defined $ENV{SERVER_NAME} &&
+			 $ENV{SERVER_NAME} =~ /bbbike\.de$/) {
 		    $conf = BBBikeDraw::MapServer::Conf->radzeit_default;
 		} elsif (defined $ENV{SERVER_NAME} &&
 			 $ENV{SERVER_NAME} =~ /radzeit\.herceg\.(de|local)$/) {

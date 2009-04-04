@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: weight_bbd,v 1.9 2007/03/18 18:42:41 eserte Exp $
+# $Id: weight_bbd,v 1.10 2009/04/04 11:25:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -126,12 +126,12 @@ weight_bbd - create weighted bbd files
 
 =head2 Anwendungsbeispiele
 
- Create a weighted plot from radzeit.de coordssessions:
+ Create a weighted plot from bbbike.de coordssessions:
 
  cd ~/www/log/bbbike-sessions/
- rsync -v -e "ssh -2 -p 5022" -a root@bbbike.radzeit.de:/tmp/coordssession/ coordssession/
+ rsync -v -e "ssh -2 -p 5022" -a root@bbbike.de:/tmp/coordssession/ coordssession/
  ~/src/bbbike/miscsrc/coordssession2bbd > /tmp/a.bbd
- ~/src/bbbike/miscsrc/weight_bbd -logarithmic=2.5 -f -o /tmp/radzeit_weighted_25.bbd /tmp/a.bbd
+ ~/src/bbbike/miscsrc/weight_bbd -logarithmic=2.5 -f -o /tmp/bbbike_de_weighted_25.bbd /tmp/a.bbd
 
  Old sample for creating a weighted plot from accesses to
  www.radzeit.de (use the last 2 MB of the access_log):

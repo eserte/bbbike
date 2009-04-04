@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.51 2008/12/31 16:46:06 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.52 2009/04/04 11:16:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003-2008 Slaven Rezic. All rights reserved.
@@ -182,7 +182,7 @@ eval {
 				  });
 	    my $vars = { data => $data,
 			 extra_html => $extra_html,
-			 bbbikecss => "http://bbbike.radzeit.de/BBBike/html/bbbike.css",
+			 bbbikecss => "http://bbbike.de/BBBike/html/bbbike.css",
 			 # bbbikecss => "cid:bbbike.css", # XXX see below
 		       };
 	    $need_bbbike_css = 1;

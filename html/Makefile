@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.16 2006/12/08 21:15:35 eserte Exp $
+# $Id: Makefile,v 1.17 2009/04/04 11:44:59 eserte Exp $
 #
 
 # XXX don't duplicate, see ../Makefile.PL
@@ -23,7 +23,7 @@ bbbike_small.html bbbike_small.en.html: bbbike_small.html.spp
 	${STRPP} --dir=. bbbike_small.html.spp
 	chmod 644 bbbike_small.html bbbike_small.en.html
 
-bbbike_sidebar.html bbbike_sidebar.en.html: bbbike_sidebar.html.spp
+bbbike_sidebar.html bbbike_sidebar.en.html: bbbike_sidebar.html.spp ../BBBikeVar.pm
 	${STRPP} --dir=. bbbike_sidebar.html.spp
 	chmod 644 bbbike_sidebar.html bbbike_sidebar.en.html
 
