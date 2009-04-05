@@ -881,6 +881,69 @@ userdel	q4::inwork 14530,11137 14465,11195
          'data' => 'userdel	q4::inwork; 7378,14559 7180,14419 7132,14375 6992,14251 6807,14093 6730,14021 6649,13947 6493,13822 6366,13716 6230,13596
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1243634400,
+         'text' => 'B 002 Wittenberg - LG - Treuenbrietzen OD Marzahna Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 01.04.2009-29.05.2009 ',
+         'from' => 1238450400,
+         'id' => 1602,
+         'data' => 'userdel	q4::inwork; -32313,-49192 -31201,-45781
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1243202400,
+         'text' => 'B 102 Große Milower Str. OD Rathenow, zw. Wolzenstr. und Heidefeldstr. Neubau Kreisverkehr Vollsperrung 02.03.2009-24.05.2009 ',
+         'from' => 1235862000,
+         'id' => 1603,
+         'data' => 'userdel	q4::inwork -62269,19881 -62333,20390
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1244930400,
+         'text' => 'B 112 Forst - Guben OD Grießen Derny-Rennen Vollsperrung 13.06.2009-13.06.2009 ',
+         'from' => 1244757600,
+         'id' => 1604,
+         'data' => 'userdel	q4::inwork 92350,-60772 92627,-60499
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1240092000,
+         'text' => 'B 167 Bad Freienwalde - Eberswalde OD Falkenberg, Karl-Marx-Str. Straßenbauarbeiten Vollsperrung 14.04.2009-18.04.2009 ',
+         'from' => 1239573600,
+         'id' => 1605,
+         'data' => 'userdel	q4::inwork 47952,44559 47538,44649
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1241820000,
+         'text' => 'K 6304 Chaussee OD Priort, Bahnübergang Gleisbauarbeiten Vollsperrung 27.04.2009-08.05.2009 ',
+         'from' => 1240696800,
+         'id' => 1606,
+         'data' => 'userdel	2::inwork -19058,11636 -19029,11660 -18750,11919
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1243634400,
+         'text' => 'L 063 Finsterwalder Straße OD Lauchhammer, zw. Bockwitzer Str. u. Neue Schehlenstraße Kanalarbeiten Vollsperrung 14.04.2009-29.05.2009 ',
+         'from' => 1239573600,
+         'id' => 1607,
+         'data' => 'userdel	q4::inwork 35072,-102150 35379,-103141
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1240092000,
+         'text' => 'L 281 Neureetz-Altranft zw. Neureetz u. Croustellier Deckenerneuerung Vollsperrung 14.04.2009-18.04.2009 ',
+         'from' => 1239573600,
+         'id' => 1608,
+         'data' => 'userdel	2::inwork 59730,42362 58564,43539
+',
+         'type' => 'gesperrt'
        }
      
 );
