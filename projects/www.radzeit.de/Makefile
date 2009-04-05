@@ -422,6 +422,11 @@ prepare-bbbike-dist-prog-bbbike-cgi:
 	rm -f ${CURDIR}/cgi-bin/bbbike2.cgi.config
 	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/bbbike2.cgi.config
 	chmod ugo+r ${CURDIR}/BBBike/cgi/bbbike2.cgi.config
+# Create links for English version
+	rm -f ${CURDIR}/cgi-bin/bbbike.en.cgi
+	cd ${CURDIR}/cgi-bin && ln -s bbbike.cgi bbbike.en.cgi
+	rm -f ${CURDIR}/cgi-bin/bbbike2.en.cgi
+	cd ${CURDIR}/cgi-bin && ln -s bbbike.cgi bbbike2.en.cgi
 # Fix permissions
 # Make sure that /usr/lib/cgi-bin/* isn't touched, otherwise make will fail
 	(cd ${CURDIR}/cgi-bin && chmod ugo+r `find . -maxdepth 1 | xargs -L1 readlink | grep -v /usr/lib/cgi-bin`)
