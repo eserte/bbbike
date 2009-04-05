@@ -13246,13 +13246,13 @@ EOF
 userdel	1::inwork 12048,10097 12229,10014 12398,9938
 EOF
      },
-     { from  => 1233866195, # 2009-02-05 21:36
-       until => 1246399199, # 2009-06-30 23:59
-       text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Behrenstr. und Jägerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 06.2009)',
+     { from  => 1238954607, # 2009-04-05 20:03
+       until => 1257029999, # 2009-10-31 23:59
+       text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Französische Str. und Jägerstr. Baustelle, Fahrtrichtung gesperrt (bis 10.2009)',
        type  => 'gesperrt',
        source_id => 'IM_009981',
        data  => <<EOF,
-userdel	1::inwork 9164,12172 9183,12076 9201,11968
+userdel	1::inwork 9183,12076 9201,11968
 EOF
      },
      { from  => 1235862000, # 2009-03-01 00:00
@@ -13534,6 +13534,33 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork; 15080,11905 14977,11754 14941,11689
+EOF
+     },
+     { from  => 1238954738, # 2009-04-05 20:05
+       until => 1243807199, # 2009-05-31 23:59
+       text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Behrenstr. und Französische Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2009)',
+       type  => 'handicap',
+       source_id => 'IM_012052',
+       data  => <<EOF,
+userdel	q4::inwork; 9164,12172 9183,12076
+EOF
+     },
+     { from  => 1238954788, # 2009-04-05 20:06
+       until => 1241128799, # 2009-04-30 23:59
+       text  => 'Ordensmeisterstr. (Tempelhof) Richtung Tempelhofer Damm zwischen Lorenzweg und Tempelhofer Damm Baustelle, Fahrtrichtung gesperrt (bis Ende 04.2009)',
+       type  => 'handicap',
+       source_id => 'IM_012064',
+       data  => <<EOF,
+userdel	q4::inwork; 9457,5641 9357,5601 9147,5534
+EOF
+     },
+     { from  => 1238954845, # 2009-04-05 20:07
+       until => 1240164000, # 2009-04-19 20:00
+       text  => 'Perleberger Str. (Tiergarten) Richtung Stromstraße zwischen Heidestr. und Rathenower Str. Baustelle, Fahrtrichtung gesperrt, ebenso die Einmündungsbereiche Quitzowstr. und Lehrter Str. zur Perleberger Str. über Heidestr. (bis 19.04.2009, 20 Uhr)',
+       type  => 'handicap',
+       source_id => 'IM_012112',
+       data  => <<EOF,
+userdel	q4::inwork; 7378,14559 7180,14419 7132,14375 6992,14251 6807,14093 6730,14021 6649,13947 6493,13822 6366,13716 6230,13596
 EOF
      },
     );
