@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.69 2009/03/22 21:25:41 eserte Exp $
+# $Id: Makefile,v 1.70 2009/04/05 21:10:44 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -518,6 +518,7 @@ sternfahrt2007_init.html:	sternfahrt2007/sternfahrt2007_init.html
 # .../projects/www.radzeit.de/...
 .for i in sternfahrt2007.dbf sternfahrt2007.shp sternfahrt2007.shx treffpunkte2007.dbf treffpunkte2007.shp treffpunkte2007.shx
 data/$i:
+	[ -e $(ABS_LOCAL_BBBIKE_DIR)/misc/sternfahrt_2007/$i ] || (cd $(ABS_LOCAL_BBBIKE_DIR)/misc/sternfahrt_2007 && make)
 	cd data && \
 	    [ -L $i ] || ln -s $(ABS_LOCAL_BBBIKE_DIR)/misc/sternfahrt_2007/$i
 .endfor
