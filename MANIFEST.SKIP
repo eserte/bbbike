@@ -3,6 +3,8 @@
 \bCVS/Entries$
 \bCVS/Repository$
 \bCVS/Root$
+(^|/)\.svn/
+(^|/)\.git/
 \bChangeLog\b
 ^MANIFEST\.
 ^Makefile$
@@ -16,6 +18,7 @@
 \.xvpics/
 \.rcsignore(_rx)?$
 \.cvsignore$
+\.gitignore$
 ^blib/
 ^MakeMaker-\d
 \.tar\.gz$
