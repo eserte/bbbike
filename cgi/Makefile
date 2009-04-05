@@ -9,8 +9,12 @@ CGI_TYPE?=		cgi
 ROOT_DIR!=		perl -MFindBin='$$RealBin' -MCwd=realpath -le 'print realpath("$$RealBin/..")'
 .endif
 
-all:	rights
+all:	rights symlinks
 	@echo "You may run $(MAKE) httpd.conf to create a default apache configuration for inclusion"
+
+symlinks:
+	[ -e bbbike.en.cgi  ] || ln -s bbbike.cgi  bbbike.en.cgi
+	[ -e bbbike2.en.cgi ] || ln -s bbbike2.cgi bbbike2.en.cgi
 
 biokovo.conf:
 	$(MAKE) \
