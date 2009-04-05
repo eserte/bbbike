@@ -877,11 +877,11 @@ bbbike-rcs-to-cvs-repo:
 
 git-update-local:	bbbike-rcs-to-cvs-repo
 	[ -d ${.CURDIR}/../bbbike-gitlocal ]
-	cd ${.CURDIR}/../bbbike-gitlocal && env CVS_RSH=ssh git cvsimport -v -d ${.CURDIR}/../bbbike-cvs-rcs bbbike
+	cd ${.CURDIR}/../bbbike-gitlocal && env CVS_RSH=ssh git cvsimport -v -d ${.CURDIR}/../bbbike-cvs-rcs bbbike -a
 
 git-update-sf:
 	[ -d ${.CURDIR}/../bbbike-gitsf ]
-	cd ${.CURDIR}/../bbbike-gitsf && env CVS_RSH=ssh git cvsimport -v -d :ext:eserte@bbbike.cvs.sourceforge.net:/cvsroot/bbbike bbbike
+	cd ${.CURDIR}/../bbbike-gitsf && env CVS_RSH=ssh git cvsimport -v -d :ext:eserte@bbbike.cvs.sourceforge.net:/cvsroot/bbbike bbbike -a
 
 git-update: git-update-local git-update-sf
 
