@@ -777,15 +777,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1238882400,
-         'text' => 'L 052 Drebkau - Ogrosen zw. Abzw. Radensdorf u. Casel Straßenbauarbeiten Vollsperrung 04.04.2009-04.04.2009 ',
-         'from' => 1238709600,
-         'id' => 1589,
-         'data' => 'userdel	2::inwork 61785,-79030 61948,-79050 62310,-79192 62865,-79490 63443,-79906 63683,-79952 63870,-80117 64754,-80954
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1240178400,
          'text' => 'L 056 Klein Mehßow-Crinitz OD Fürstlich Drehna, zw. Driftweg u. Crinitzer Straße Motocross Meisterschaften Vollsperrung 17.04.2009-19.04.2009 ',
