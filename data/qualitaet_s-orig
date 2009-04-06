@@ -302,7 +302,7 @@ Wuhlheide: Waldweg	Q2 21365,5832 22012,6219
 (Hegemeisterweg - Modellpark Wuhlheide): Asphalt	Q0 18409,7776 19069,6928
 (Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2 19069,6928 19052,6823 18948,6578
 Mittelweg: Kopfsteinpflaster	Q2 12923,7611 12781,7691 12697,7689 12644,7688 12521,7701
-Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12335,7770
+Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
 Karl-Marx-Platz/Richardplatz: Kopfsteinpflaster	Q2 12980,7597 13100,7626 13177,7644 13297,7654
 Karl-Marx-Platz/Richardplatz: Kopfsteinpflaster, OK	Q1 13297,7654 13423,7707
 Karl-Marx-Platz: Kopfsteinpflaster	Q2 12991,7549 13100,7626
@@ -408,9 +408,9 @@ Glienicker Str.: schlechtes Kopfsteinpflaster	Q3 -7163,356 -7236,300 -7324,276 -
 Glienicker Str.: m‰ﬂiges Kopfsteinpflaster	Q2 -7587,312 -7639,312 -7710,313 -7732,313 -8013,255
 Sch‰ferstr.: Kopfsteinpflaster	Q2 -7232,445 -7365,371 -7449,348 -7474,341 -7587,312
 Karlsgartenstr.: Kopfsteinpflaster	Q2 11882,8527 11769,8515
-Fontanestr.: unebenes Kopfsteinpflaster	Q2 11632,8302 11645,8212 11665,8130
-Weisestr.: unebenes Kopfsteinpflaster	Q2 11767,8330 11770,8292 11773,8231 11786,8165 11823,7980 11859,7815 11879,7720 11903,7607 11923,7516
-Selchower Str.: unebenes Kopfsteinpflaster	Q2 11532,8104 11665,8130 11786,8165 11933,8198
+Fontanestr.: unebenes Kopfsteinpflaster	Q2- 11632,8302 11645,8212 11665,8130
+Weisestr.: unebenes Kopfsteinpflaster	Q2- 11767,8330 11770,8292 11773,8231 11786,8165 11823,7980 11859,7815 11879,7720 11903,7607 11923,7516
+Selchower Str.: unebenes Kopfsteinpflaster	Q2- 11532,8104 11665,8130 11786,8165 11933,8198
 Mahlower Str.: Kopfsteinpflaster	Q2 11523,8178 11645,8212 11773,8231 11920,8252
 Boddinstr.: Kopfsteinpflaster	Q2 11920,8252 12104,8299
 Boddinstr.: teilweise Asphalt auf der Fahrbahn	Q1 12104,8299 12216,8323
@@ -418,8 +418,8 @@ Boddinstr.: Kopfsteinpflaster	Q2 12216,8323 12368,8356 12582,8408
 Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12407,8177 12528,8205 12714,8249
 Falkstr.: Asphalt	Q0 12147,8117 12162,8055 12178,7985 12179,7979
-#: add_fragezeichen: Falkstr. zwischen Briesestr. und Kopfstr. asphaltiert oder gepflastert?
 Falkstr.: Kopfsteinpflaster	Q2 12179,7979 12220,7822
+(Falkstr. - Mittelweg): Verbundsteinpflaster	Q1 12220,7822 12224,7799
 Schillerpromenade: Kopfsteinpflaster	Q2 11665,8130 11695,8005
 Schillerpromenade: Kopfsteinpflaster	Q2 11717,7895 11738,7790 11755,7704 11779,7582 11797,7492
 S‰ntisstr.: Kopfsteinpflaster	Q2 8892,802 8743,681 8533,512
@@ -1238,9 +1238,9 @@ Warthestr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 11915,7140 12244,7205
 Wartheplatz: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 11818,7123 11823,7097 11920,7115 11915,7140 11910,7167 11814,7147 11818,7123
 Altenbraker Str.: Kopfsteinpflaster	Q2 12367,7429 12396,7312 12421,7197 12451,7100 12463,7037 12477,6975
 Selkestr.: Kopfsteinpflaster	Q2 12751,7109 12740,7162 12722,7261
-Wittmannsdorfer Str.: m‰ﬂiges bis gutes Kopfsteinpflaster	Q2 12908,7305 12878,7415
+Wittmannsdorfer Str.: m‰ﬂiges bis gutes Kopfsteinpflaster	Q2+ 12908,7305 12878,7415
 R¸belandstr.: Kopfsteinpflaster	Q2 12843,7290 12865,7192
-Bornsdorfer Str.: m‰ﬂiges bis gutes Kopfsteinpflaster	Q2 12697,7689 12775,7725 12726,7887 12709,7940 12692,7996 12668,8077
+Bornsdorfer Str.: m‰ﬂiges bis gutes Kopfsteinpflaster	Q2+ 12697,7689 12775,7725 12726,7887 12709,7940 12692,7996 12668,8077
 Saltykowstr.: gutes kleinteiliges Kopfsteinpflaster	Q1 12726,7887 12865,7923
 Uthmannstr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 12914,7785 13150,7845
 Herrnhuter Weg: Kopfsteinpflaster	Q2 12898,7832 13103,7889
@@ -2029,7 +2029,7 @@ Seidelbastweg: Beton	Q0 16281,3339 15793,3679 15574,3856
 Schwertlilienweg: Asphalt	Q0 15574,3856 15603,3905 15647,3977 15695,4051
 (Heidel‰uferweg - Stuthirtenweg): unbefestigt	Q2- 13109,1071 13109,1061
 (Niederwallstr. - Kurstr.): Asphalt	Q0 10183,11770 10227,11836
-Am Pl‰nterwald: etwas besseres Kopfsteinpflaster	Q2+ 15714,8633 15543,8525
+Am Pl‰nterwald: etwas besseres Kopfsteinpflaster	Q2+ 15714,8633 15543,8525 15499,8496 15443,8458 15303,8343
 G¸ldenhofer Ufer: Kopfsteinpflaster	Q2 16677,6892 16630,6800
 #: note: von der S-Bahn aus gesehen:
 G¸ldenhofer Ufer: Asphalt	Q0 16630,6800 16588,6724
@@ -2223,6 +2223,12 @@ Burchardstr.: Beton	Q0 8200,6668 8553,6665 8722,6656
 Podewilsstr.: Asphalt	Q0- 8707,6537 8551,6552
 Zastrowstr.: Beton	Q0 9979,6349 9860,6348
 Weidenweg: Asphalt	Q0 12891,12549 13046,12517 13357,12473 13465,12502 13540,12523 13608,12547 13678,12571
+Nernstweg: Verbundsteinpflaster	Q1 14652,7507 14658,7513 14782,7638 14798,7747 14796,7801 14766,7903 14777,7921
+Bergaustr.: Beton	Q0- 15348,7882 15464,7757 15576,7636 15696,7507
+Platanenweg: Asphalt	Q0 15968,7739 15840,7876 15717,8011 15787,8073
+(Platanenweg - Willi-S‰nger-Str.): wassergebundene Decke	Q1 15787,8073 15843,8125
+(Am Pl‰nterwald - Pappelallee): Verbundsteinpflaster	Q1 15499,8496 15488,8508 15473,8531
+Pappelallee (Treptow): Asphalt	Q0 15473,8531 15383,8662
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -5099,7 +5105,7 @@ Haﬂlingerweg: Asphalt	Q0 7644,17054 7893,17064 7924,17039
 #: note: qusor hat "part" f¸r den restlichen Abschnitt angegeben, und wahrscheinlich mir mit "Feldweg" recht gegeben:
 (Michelangelostr. - Straﬂe 106): Feldweg	Q2 14314,14841 14592,14682
 #: by: Annika Weidler:
-Willi-S‰nger-Str.: guter Beton	Q0 16003,8119 15904,8049 15798,8182
+Willi-S‰nger-Str.: guter Beton	Q0 16003,8119 15904,8049 15843,8125 15798,8182
 #: by: Andreas Mattern:
 Schneebergstr.: Asphalt	Q0 7573,3698 7710,3677 7768,3650 7778,3644 7827,3595 7879,3455 7916,3348
 #: by: Stefan Rˆnisch:
@@ -6934,7 +6940,8 @@ Lotzestr.: m‰ﬂiges Kopfsteinpflaster	Q2 2637,2973 2594,3009 2436,3180 2289,3331
 #: by: Anne Jordan:
 Am Kringel: gutes Verbundsteinpflaster	Q1 1316,24924 1309,24955 1309,24995 1323,25041 1370,25085
 #: by: Beata Jankowski:
-Orionstr.: m‰ﬂiges Kopfsteinpflaster	Q2 15758,8243 15543,8525
+#: corrected_by: srt (Q2 -> Q2+)
+Orionstr.: m‰ﬂiges Kopfsteinpflaster	Q2+ 15758,8243 15543,8525
 #: by: michael fenner:
 #: note: ein anonymer Kommentar war nicht ganz klar ("kein Autoverkehr?", guter Beton)
 Wilhelm-Gericke-Str.: zum Teil asphaltiert und mit Kopfsteinpflaster	Q2 5700,19510 5592,19888 5598,19912 5612,19929 5804,20047 5925,20118

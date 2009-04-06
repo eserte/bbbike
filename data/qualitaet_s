@@ -288,7 +288,7 @@ Wuhlheide: Waldweg	Q2 21365,5832 22012,6219
 (Hegemeisterweg - Modellpark Wuhlheide): Asphalt	Q0 18409,7776 19069,6928
 (Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2 19069,6928 19052,6823 18948,6578
 Mittelweg: Kopfsteinpflaster	Q2 12923,7611 12781,7691 12697,7689 12644,7688 12521,7701
-Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12335,7770
+Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
 Karl-Marx-Platz/Richardplatz: Kopfsteinpflaster	Q2 12980,7597 13100,7626 13177,7644 13297,7654
 Karl-Marx-Platz/Richardplatz: Kopfsteinpflaster, OK	Q1 13297,7654 13423,7707
 Karl-Marx-Platz: Kopfsteinpflaster	Q2 12991,7549 13100,7626
@@ -400,6 +400,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12407,8177 12528,8205 12714,8249
 Falkstr.: Asphalt	Q0 12147,8117 12162,8055 12178,7985 12179,7979
 Falkstr.: Kopfsteinpflaster	Q2 12179,7979 12220,7822
+(Falkstr. - Mittelweg): Verbundsteinpflaster	Q1 12220,7822 12224,7799
 Schillerpromenade: Kopfsteinpflaster	Q2 11665,8130 11695,8005
 Schillerpromenade: Kopfsteinpflaster	Q2 11717,7895 11738,7790 11755,7704 11779,7582 11797,7492
 S‰ntisstr.: Kopfsteinpflaster	Q2 8892,802 8743,681 8533,512
@@ -1820,7 +1821,7 @@ Seidelbastweg: Beton	Q0 16281,3339 15793,3679 15574,3856
 Schwertlilienweg: Asphalt	Q0 15574,3856 15603,3905 15647,3977 15695,4051
 (Heidel‰uferweg - Stuthirtenweg): unbefestigt	Q2 13109,1071 13109,1061
 (Niederwallstr. - Kurstr.): Asphalt	Q0 10183,11770 10227,11836
-Am Pl‰nterwald: etwas besseres Kopfsteinpflaster	Q2 15714,8633 15543,8525
+Am Pl‰nterwald: etwas besseres Kopfsteinpflaster	Q2 15714,8633 15543,8525 15499,8496 15443,8458 15303,8343
 G¸ldenhofer Ufer: Kopfsteinpflaster	Q2 16677,6892 16630,6800
 G¸ldenhofer Ufer: Asphalt	Q0 16630,6800 16588,6724
 Deulstr.: Kopfsteinpflaster	Q2 17860,6644 17763,6960
@@ -1991,6 +1992,12 @@ Burchardstr.: Beton	Q0 8200,6668 8553,6665 8722,6656
 Podewilsstr.: Asphalt	Q0 8707,6537 8551,6552
 Zastrowstr.: Beton	Q0 9979,6349 9860,6348
 Weidenweg: Asphalt	Q0 12891,12549 13046,12517 13357,12473 13465,12502 13540,12523 13608,12547 13678,12571
+Nernstweg: Verbundsteinpflaster	Q1 14652,7507 14658,7513 14782,7638 14798,7747 14796,7801 14766,7903 14777,7921
+Bergaustr.: Beton	Q0 15348,7882 15464,7757 15576,7636 15696,7507
+Platanenweg: Asphalt	Q0 15968,7739 15840,7876 15717,8011 15787,8073
+(Platanenweg - Willi-S‰nger-Str.): wassergebundene Decke	Q1 15787,8073 15843,8125
+(Am Pl‰nterwald - Pappelallee): Verbundsteinpflaster	Q1 15499,8496 15488,8508 15473,8531
+Pappelallee (Treptow): Asphalt	Q0 15473,8531 15383,8662
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: m‰ﬂiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 346,4833 294,4916 158,5103 103,5123
 P¸cklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2054,6840 1961,6820
@@ -3694,7 +3701,7 @@ Eichholzbahn: asphaltiert	Q0 -6576,14303 -6611,14302 -6933,14328 -6963,14331 -71
 Haﬂlingerweg: Asphalt	Q0 7644,17054 7893,17064 7924,17039
 (Michelangelostr. - Straﬂe 106): m‰ﬂiger Beton	Q1 13838,15113 14060,14986 14314,14841
 (Michelangelostr. - Straﬂe 106): Feldweg	Q2 14314,14841 14592,14682
-Willi-S‰nger-Str.: guter Beton	Q0 16003,8119 15904,8049 15798,8182
+Willi-S‰nger-Str.: guter Beton	Q0 16003,8119 15904,8049 15843,8125 15798,8182
 Schneebergstr.: Asphalt	Q0 7573,3698 7710,3677 7768,3650 7778,3644 7827,3595 7879,3455 7916,3348
 Straﬂe 231: Asphalt	Q0 15337,889 15316,888 15269,930 15187,1171 15120,1381 15117,1456
 Idunastr.: Asphalt	Q0 12918,18558 12794,18656 12623,18756 12522,18813 12190,19009
