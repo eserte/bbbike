@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.38 2008/06/20 23:01:52 eserte Exp $
+# $Id: plz.t,v 1.39 2009/04/06 22:21:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004,2006,2007 Slaven Rezic. All rights reserved.
@@ -61,8 +61,6 @@ my @approx_tests = (
 		    # Ku'damm => Kurfürstendamm, fails, maybe an extra rule?
 		   );
 		    
-plan tests => 162 + scalar(@approx_tests)*4;
-
 my $tmpdir = "$FindBin::RealBin/tmp/plz";
 my $create;
 my $test_file = 0;
@@ -82,6 +80,12 @@ if (!GetOptions("create!" => \$create,
 		"levenshtein!" => \$do_levenshtein,
 	       )) {
     die "Usage: $0 [-create] [-xxx] [-v] [-[no]extern] [-levenshtein]";
+}
+
+if ($create) {
+    plan 'no_plan';
+} else {
+    plan tests => 162 + scalar(@approx_tests)*4;
 }
 
 # XXX auch Test mit ! -small
