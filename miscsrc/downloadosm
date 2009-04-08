@@ -183,6 +183,14 @@ sub download_osm_tile {
 		my $resp = $ua->mirror($url, $dest);
 		if (!$resp->is_success) {
 		    die "No success while mirroring '$url' to '$dest': " . $resp->status_line;
+		} else {
+		    if ($resp->header('content-encoding') eq 'gzip' && $dest !~ m{\.gz$}) {
+			if ($debug >= 1) {
+			    warn "Rename $dest -> $dest.gz...\n";
+			}
+			rename $dest, "$dest.gz"
+			    or die "Cannot rename $dest to $dest.gz: $!";
+		    }
 		}
 	    }
 	} else {
