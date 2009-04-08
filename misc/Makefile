@@ -86,11 +86,6 @@ download-germany.osm.mz2:
 	wget http://download.geofabrik.de/osm/europe/germany.osm.bz2 -O ${OSM_DOWNLOAD_DIR}/germany.osm.bz2~
 	mv ${OSM_DOWNLOAD_DIR}/germany.osm.bz2~ ${OSM_DOWNLOAD_DIR}/germany.osm.bz2
 
-# Use the already downloaded tiles
-data_berlin_osm_bbbike:
-	${MISCSRCDIR}/osm2bbd -map bbbike -v -f -o ../data_berlin_osm_bbbike download/osm/berlin
-	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_osm_bbbike
-
 # Download the prepared osm from geofabrik
 # XXX very problematic because streets between Berlin and Brandenburg are not connected!
 #data_berlin_brandenburg_osm_bbbike:	download-berlin.osm.bz2 download-brandenburg.osm.bz2 \
@@ -110,3 +105,15 @@ convert-splitted-berlin-brandenburg:
 convert-data_berlin_brandenburg_osm_bbbike:
 	${MISCSRCDIR}/osm2bbd -country de -lang de -map bbbike -v -f -o ../data_berlin_brandenburg_osm_bbbike download/osm/berlin.osm.bz2 download/osm/brandenburg.osm.bz2
 	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_brandenburg_osm_bbbike
+
+# Alternative tiled Berlin data
+reload-tiled-berlin:
+	cd download/osm/berlin && ${MISCSRCDIR}/downloadosm -reload .
+
+download-tiled-berlin:
+	cd download/osm && mkdir -p berlin && cd berlin && \
+	    ${MISCSRCDIR}/downloadosm 13.08 52.41 13.77 52.45 -o .
+
+data_berlin_osm_bbbike:
+	${MISCSRCDIR}/osm2bbd -map bbbike -v -f -o ../data_berlin_osm_bbbike download/osm/berlin
+	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_osm_bbbike
