@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.34 2009/03/31 20:36:52 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.35 2009/04/08 19:34:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -52,10 +52,12 @@ use vars qw($gps_track_mode $gps_fh $replay_speed_conf @gps_track $gpspipe_pid
 	    $current_accuracy $current_accuracy_update_time
 	    $current_speed $current_gps_mode $current_sat_used %seen_gps_mode
 	    $gpsd_last_event_time $gpsd_checker $gpsd_state
+	    $wlan_pos_checker
 	    $in_re_route $auto_re_route
 	    $off_road_counter
 	    $old_volume $last_speech_time
 	    $do_say_something $say_something_repeat @say_something_phrases $say_something_phrase_i
+	    $speak_set
 	  );
 $replay_speed_conf = 1 if !defined $replay_speed_conf;
 
@@ -214,6 +216,33 @@ sub add_button {
 		   }
 	       },
 	      ],
+	      [Cascade => 'Voice', -menuitems =>
+	       [
+		[Radiobutton => "espeak de",
+		 -variable => \$speak_set,
+		 -value => 0,
+		 -command => sub {
+		     $SPEAK_PROG = 'espeak';
+		 },
+		],
+		[Radiobutton => "mbrola mas",
+		 -variable => \$speak_set,
+		 -value => 1,
+		 -command => sub {
+		     $SPEAK_PROG = 'mbrola';
+		     $MBROLA_LANG = 'de6';
+		 },
+		],
+		[Radiobutton => "mbrola fem",
+		 -variable => \$speak_set,
+		 -value => 2,
+		 -command => sub {
+		     $SPEAK_PROG = 'mbrola';
+		     $MBROLA_LANG = 'de7';
+		 },
+		],
+	       ],
+	      ],	       
 	      '-',
 	      [Button => "Replay NMEA file",
 	       -command => sub {
@@ -453,22 +482,44 @@ sub _setup_fileevent {
     }
     $gpsd_checker = $main::top->repeat(10*1000, sub {
 					   if ($gps_track_mode) {
-					       if ($gpsd_last_event_time - time >= 60) {
-						   if (!$gpsd_state || $gpsd_state eq 'alive') {
-						       $gpsd_state = 'dead';
-						       if ($do_speech) {
-							   saytext('Der GPS-Empfang ist unterbrochen.');
-							   $gpsd_state = 'dead_and_reported';
+					       if (defined $gpsd_last_event_time) {
+						   if ($gpsd_last_event_time - time >= 60) {
+						       if (!$gpsd_state || $gpsd_state eq 'alive') {
+							   $gpsd_state = 'dead';
+							   if ($do_speech) {
+							       saytext('Der GPS-Empfang ist unterbrochen.');
+							       $gpsd_state = 'dead_and_reported';
+							   }
 						       }
+						   } else {
+						       if ($gpsd_state && $gpsd_state eq 'dead_and_reported' && $do_speech) {
+							   saytext('Es gibt wieder GPS-Empfang.');
+						       }
+						       $gpsd_state = 'alive';
 						   }
-					       } else {
-						   if ($gpsd_state && $gpsd_state eq 'dead_and_reported' && $do_speech) {
-						       saytext('Es gibt wieder GPS-Empfang.');
-						   }
-						   $gpsd_state = 'alive';
 					       }
 					   }
 				       });
+    if ($wlan_pos_checker) {
+	$wlan_pos_checker->cancel;
+	undef $wlan_pos_checker;
+    }
+    $wlan_pos_checker = $main::top->repeat(5*1000, sub {
+					       if ($gps_track_mode && (!defined $current_accuracy || $current_accuracy == ACCURACY_NOTHING)) {
+						   my $wlanloc = "$ENV{HOME}/devel/wlanloc.pl";
+						   if (-x $wlanloc) {
+						       chomp(my $pos = `$wlanloc -once`);
+						       if (defined $pos && $pos ne '') {
+							   my($lon,$lat) = $Karte::Polar::obj->standard2map(split /,/, $pos);
+							   if (($current_gps_mode||'') ne 'wlan') {
+							       gps_mode_change('wlan');
+							       $current_gps_mode = 'wlan';
+							   }
+							   set_position($lon, $lat);
+						       }
+						   }
+					       }
+					   });
 }
 
 sub gps_mode_change {
@@ -483,6 +534,8 @@ sub gps_mode_change {
 	    $msg = 'Es gibt einen 2D-Fix.';
 	} elsif ($new_mode eq '3') {
 	    $msg = 'Es gibt einen 3D-Fix.';
+	} elsif ($new_mode eq 'wlan') {
+	    $msg = "Es gibt einen W-LAN-Positions-Fix.";
 	} else {
 	    $msg = "Unerwarteter GPS-Modus $new_mode";
 	}
@@ -581,7 +634,10 @@ sub set_position {
 					  ? '3D'
 					  : ($current_gps_mode eq '2'
 					     ? '2D'
-					     : 'no fix'
+					     : ($current_gps_mode eq 'wlan'
+						? 'WLAN'
+						: 'no fix'
+					       )
 					    )
 					 ), -anchor => 'c', -tag => 'gps_track_acc_fix'); # XXX use diameter for coord!
 	    
@@ -1107,7 +1163,7 @@ sub _saytext_mbrola {
 
     $say = _fix_espeak($say);
 
-    IPC::Run::run(["espeak", ($args{ssml} ? "-m" : ()), "-v", "mb-$MBROLA_LANG"], "<", \$say, "|", [$MBROLA_BIN, "-e", $MBROLA_LANG_FILE, "-", $mbrola_tmp]);
+    IPC::Run::run(["espeak", ($args{ssml} ? "-m" : ()), "-v", "mb-$MBROLA_LANG"], "<", \$say, "|", [$MBROLA_BIN, "-v", 2, "-e", $MBROLA_LANG_FILE, "-", $mbrola_tmp]);
     IPC::Run::run(["play", $mbrola_tmp]);
     unlink $mbrola_tmp;
 }
@@ -1208,6 +1264,8 @@ sub deactivate_tracking {
     undef $gps_fh;
     $gpsd_checker->cancel if $gpsd_checker;
     undef $gpsd_checker;
+    $wlan_pos_checker->cancel if $wlan_pos_checker;
+    undef $wlan_pos_checker;
     $gps_track_mode = 0;
 }
 
