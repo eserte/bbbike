@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPSTrackingPlugin.pm,v 1.35 2009/04/08 19:34:08 eserte Exp $
+# $Id: BBBikeGPSTrackingPlugin.pm,v 1.36 2009/04/10 09:38:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -509,13 +509,15 @@ sub _setup_fileevent {
 						   my $wlanloc = "$ENV{HOME}/devel/wlanloc.pl";
 						   if (-x $wlanloc) {
 						       chomp(my $pos = `$wlanloc -once`);
-						       if (defined $pos && $pos ne '') {
+						       if (defined $pos && $pos ne '' && $pos ne '?') {
 							   my($lon,$lat) = $Karte::Polar::obj->standard2map(split /,/, $pos);
-							   if (($current_gps_mode||'') ne 'wlan') {
-							       gps_mode_change('wlan');
-							       $current_gps_mode = 'wlan';
+							   if (defined $lon && defined $lat) {
+							       if (($current_gps_mode||'') ne 'wlan') {
+								   gps_mode_change('wlan');
+								   $current_gps_mode = 'wlan';
+							       }
+							       set_position($lon, $lat);
 							   }
-							   set_position($lon, $lat);
 						       }
 						   }
 					       }
