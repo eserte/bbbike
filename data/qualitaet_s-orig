@@ -186,7 +186,7 @@ Hussitenstr.: Kopfsteinpflaster, Radwege OK	Q1 8742,15298 8900,15146
 Hussitenstr.: Kopfsteinpflaster	Q2 8900,15146 9041,14896 9112,14771
 Grenzstr.: Kopfsteinpflaster, teilweise OK, über der S-Bahn-Brücke asphaltiert	Q2 8742,15298 8654,15201 8614,15156 8570,15107
 Grenzstr.: Kopfsteinpflaster	Q2 8570,15107 8412,14923
-Scheringstr.: Kopfsteinpflaster	Q2 8900,15146 8686,14934
+Scheringstr.: Kopfsteinpflaster	Q2 8900,15146 8700,14956
 Charlottenstr.: mäßiges Kopfsteinpflaster	Q2 9653,10950 9615,11225
 Böckhstr.: teilweise Kopfsteinpflaster, teilweise Asphalt	Q1 11200,9889 11411,9810 11640,9710
 Böckhstr.: Kopfsteinpflaster	Q2 11640,9710 11673,9720
@@ -214,8 +214,10 @@ Prenzlauer Berg: Asphalt	Q0 11723,13630 11538,13691 11257,13647
 Alte Jakobstr.: Kopfsteinpflaster	Q2 10244,11160 10436,11344
 Ackerstr.: Kopfsteinpflaster	Q2 9439,14368 9400,14400 9375,14419 9279,14495 9197,14562 9048,14681 8953,14758 8741,14928
 Ackerstr.: Kopfsteinpflaster	Q2 9750,14132 9627,14229
-Gartenstr.: Kopfsteinpflaster	Q2 8870,14637 8686,14934 8570,15107
-Liesenstr.: Kopfsteinpflaster, OK	Q1 8686,14934 8562,14798
+Gartenstr.: Asphalt	Q0 8692,14923 8870,14637 8953,14528 9081,14363 9118,14306 9224,14169 9383,13978 9510,13823 9531,13797 9668,13629
+Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8660,14929 8656,14947 8663,14960
+Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
+Liesenstr.: Kopfsteinpflaster, OK	Q1 8671,14919 8562,14798
 Am Kupfergraben: teilweise schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3 9529,12925 9614,12893 9661,12876
 Am Kupfergraben: Kopfsteinpflaster	Q2 9754,12775 9661,12876
 Geschwister-Scholl-Str.: Kopfsteinpflaster	Q2 9529,12925 9550,12760
@@ -494,7 +496,7 @@ Zillestr.: Kopfsteinpflaster	Q2 3268,11834 3117,11852
 Am Graben: Kopfsteinpflaster	Q2 -4755,7736 -4839,7791
 Imchenallee: holpriger Weg	Q1 -6879,4775 -6990,4531 -7102,4246 -7195,4194 -7263,4214 -7561,4191 -7650,4222 -7714,4279
 Tegeler Weg: Kopfsteinpflaster	Q2 7498,14658 7263,14873
-Tegeler Weg: Kopfsteinpflaster	Q0 7199,14978 7131,15109 7085,15226
+Tegeler Weg: Asphalt	Q0 7263,14873 7199,14978 7187,15000 7131,15109 7085,15226 7020,15314
 Lynarstr.: Kopfsteinpflaster	Q2 7152,14779 7263,14873 7436,14964 7629,15078 7754,15160
 Kiautschoustr.: Kopfsteinpflaster	Q2 7199,14978 7020,14897 6853,14854 6837,14848
 Henriette-Herz-Platz: Kopfsteinpflaster, OK	Q1 10132,12941 10255,12959 10371,13006
@@ -2618,6 +2620,7 @@ Gustav-Zahnke-Str.: Asphalt	Q0 14428,13596 14408,13513 14331,13537
 Wiesenstr. (Rahnsdorf): Asphalt	Q0 29593,4057 29632,3968 29917,3697
 Ruthnerweg: Asphalt	Q0 3640,1959 3577,2000 3465,2006 3430,1998 3286,2006 3240,2007
 Lüderitzstr.: Asphalt	Q0 6003,16521 6106,16433 6215,16340
+Lüderitzstr.: Kopfsteinpflaster	Q2 6503,16068 6681,15928
 Tollensestr.: guter Asphalt	Q0 22554,13011 22519,13139 22527,13232 22563,13340 22594,13408
 #: note: zwei anonyme Einträge mit "Q1"; einer hat "q0", der andere "q2" gekennzeichnet; insgesamt trotzdem Q2, vielleicht Q2+?
 Freienwalder Str. (Wedding): Kopfsteinpflaster	Q2 9331,16624 9435,16832 9503,16988
@@ -8262,7 +8265,8 @@ Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8110,13042
 (Parkplatz Charité): Schotter	Q1 8778,13368 8665,13353
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8675,13580 8668,13645 8659,13708
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8668,13645 8626,13641
-Kleine Hamburger Str.: Asphalt mit Löchern und Ausbesserungen	Q2 9668,13629 9752,13575 9793,13549
+#: corrected_by: srt (Q2 -> Q1)
+Kleine Hamburger Str.: Asphalt mit Löchern und Ausbesserungen	Q1 9668,13629 9752,13575 9793,13549
 Helga-Hahnemann-Str.: Schotter	Q2 9415,13315 9385,13174
 Blasewitzer Ring: Asphalt	Q0 -5421,12450 -5219,12374 -5119,12667 -5135,12700
 Gruberzeile: Beton	Q0 -6013,12009 -5881,11902 -5847,11876 -5789,11831 -5735,11793 -5674,11800 -5618,11884
@@ -8868,7 +8872,7 @@ Am Waldidyll: Beton	Q1 2390,22573 2384,22689 2418,22878
 #: by: Jean-Michael [AM]
 Pannwitzstr.: Asphalt mit vielen Schlaglöchern	Q2 4276,19086 4471,19124 4619,19267 4690,19446 4753,19728 4750,19881 4728,20003
 #: by: Ingo [AM] vvv
-Plantagenstr. (Wedding): schlechter Asphalt	Q2 7979,15569 7796,15590
+Plantagenstr. (Wedding): schlechter Asphalt	Q2 7979,15569 7877,15581 7796,15590
 Plantagenstr. (Wedding): Kopfsteinpflaster	Q2 7796,15590 7595,15596
 #: by: ^^^
 #: by: rene carmosin [AM] vvv
