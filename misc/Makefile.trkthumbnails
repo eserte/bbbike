@@ -1,0 +1,14 @@
+# Makefile suitable for inclusion
+
+BBBIKEDIR?=	$(HOME)/src/bbbike
+MISCSRCDIR?=	$(BBBIKEDIR)/miscsrc
+
+thumbnails:
+	mkdir -p .thumbnails
+	for i in *.{trk,gpx,bbr}; do \
+	    [ -e .thumbnails/$$i -a .thumbnails/$$i -nt $$i ] || (\
+		echo -n ".thumbnails/$$i ... "; \
+	        ${MISCSRCDIR}/bbbikedraw.pl -geometry 120x120 -outtype png -drawtypes all -o .thumbnails/$$i -scope wideregion -routefile $$i; \
+		echo "done" \
+	    ); \
+	done
