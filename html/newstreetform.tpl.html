@@ -203,6 +203,7 @@ function init() {
 [% INCLUDE radiocell cat="Q" type="cat" val="Q1" text="gut" %]
 [% INCLUDE radiocell cat="Q" type="cat" val="Q2" text="m‰ﬂig" %]
 [% INCLUDE radiocell cat="Q" type="cat" val="Q3" text="schlecht" %]
+[% INCLUDE radiocell cat="Q" type="cat" val=""   text="(keine Angabe/unbekannt)" %]
 
 [% INCLUDE colhead text="Beschreibung:" %]
 [% INCLUDE radiocell cat="Q" type="desc" val="Asphalt" %]
@@ -221,6 +222,7 @@ function init() {
         <input name="Qdescuserdef_1" [% INCLUDE text_default inputname="Qdescuserdef_1" %]/>
        </td>
       </tr>
+[% INCLUDE radiocell cat="Q" type="desc" val="" text="(keine Angabe/unbekannt)" %]
      </table>
     </td>
     [% PROCESS range cat="Q" %]
@@ -238,6 +240,7 @@ function init() {
 [% INCLUDE radiocell cat="qq" type="cat" val="q2" text="bis 18 km/h" %]
 [% INCLUDE radiocell cat="qq" type="cat" val="q3" text="bis 13 km/h" %]
 [% INCLUDE radiocell cat="qq" type="cat" val="q4" text="Schrittgeschwindigkeit" %]
+[% INCLUDE radiocell cat="qq" type="cat" val=""   text="(keine Angabe/unbekannt)" %]
 [% INCLUDE colhead text="Grund:" %]
 [% INCLUDE radiocell cat="qq" type="desc" val="keine Einschr‰nkung" %]
 [% INCLUDE radiocell cat="qq" type="desc" val="einige Fuﬂg‰nger" %]
@@ -255,6 +258,7 @@ function init() {
         <input name="qqdescuserdef_1" [% INCLUDE text_default inputname="qqdescuserdef_1" %]/>
        </td>
       </tr>
+[% INCLUDE radiocell cat="qq" type="desc" val="" text="(keine Angabe/unbekannt)" %]
      </table>
     </td>
     [% PROCESS range cat="qq" %]
@@ -280,6 +284,7 @@ function init() {
          [%- INCLUDE radio_checked inputname="RWcat_1" val="userdefined" %] /></td>
        <td><input name="RWdescuserdef_1" [% INCLUDE text_default inputname="RWdescuserdef_1" %] /></td>
       </tr>
+[% INCLUDE radiocell cat="RW" type="cat" val="" text="(keine Angabe/unbekannt)" %]
      </table>
     </td>
     [% PROCESS range cat="RW" %]
@@ -295,6 +300,7 @@ function init() {
 [% INCLUDE radiocell cat="sperre" type="cat" val="BNP" text="Dr‰ngelgitter/Schranke an der Kreuzung" entryname="sperre_BNP" helpurl="http://www.adfc-bergstrasse.de/radverkehrsplanung/umlaufsperren.htm" %]
 [% INCLUDE radiocell cat="sperre" type="cat" val="0" text="Treppe, Rad muss getragen werden" entryname="sperre_carry" %]
 [% INCLUDE radiocell cat="sperre" type="cat" val="2" text="Straﬂe vollkommen gesperrt f¸r Radfahrer" %]
+[% INCLUDE radiocell cat="sperre" type="cat" val="-" text="(keine Angabe/unbekannt)" %]
      </table>
     </td>
    </tr>
