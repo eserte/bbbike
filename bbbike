@@ -13212,6 +13212,7 @@ sub show_info {
 	# Longest text for first column:
 	$info_text->configure(-tabs => [$info_text->fontMeasure($font{normal}, "Sonnenuntergang: ")]);
 
+	my($yview) = $info_text->yview;
 	$info_text->delete("1.0", "end");
 	my $linkcount = 1;
 
@@ -13739,6 +13740,11 @@ EOF
 		 -lmargin2 => $bbox[0]-1-$info_text->cget(-bd)-$info_text->cget(-highlightthickness),
 		);
 	}
+
+	if (defined $yview) {
+	    $info_text->yviewMoveto($yview);
+	}
+
     };
 
     my @important_txt_and_tag;
