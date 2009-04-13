@@ -48,6 +48,7 @@ my $draw_scale_bar = 1;
 my $fontsizescale;
 my $background;
 my $custom_places;
+my $route_file;
 my $q;
 
 if (!GetOptions("w=i" => \$w,
@@ -74,6 +75,7 @@ if (!GetOptions("w=i" => \$w,
 		"fontsizescale=f" => \$fontsizescale,
 		"bg|background=s" => \$background,
 		"customplaces=s" => \$custom_places,
+		"routefile=s" => \$route_file,
 		"q|quiet!" => \$q,
 	       )) {
     usage();
@@ -152,6 +154,24 @@ if ($fontsizescale) {
 if (defined $background) {
     push @extra_args, Bg => $background;
 }
+if (defined $route_file) {
+    # XXX no magic defined for gpsman files, extra handling needed.
+    # Also, some other formats like gpx are better handled by the
+    # gpsman code.
+    if ($route_file =~ m{\.(trk|xml(.gz)?|gpx(.gz)?)$}) {
+	require GPS::GpsmanData::Any;
+	my $gpsman = GPS::GpsmanData::Any->load($route_file);
+	my @multicoords;
+	for my $chunk (@{ $gpsman->Chunks }) {
+	    push @multicoords, [ map { join(",", @$_) } $chunk->do_convert_to_route ];
+	}
+	push @extra_args, MultiCoords => \@multicoords;
+    } else {
+	require Route;
+	my $load = Route::load($route_file);
+	push @extra_args, Coords => [ map { join(",", @$_) } @{ $load->{RealCoords} } ];
+    }
+}
 
 my $draw = new BBBikeDraw
     NoInit   => 1,
@@ -166,6 +186,8 @@ if (defined $bbox) {
 	die "Bounding box must consist of four comma separated integers";
     }
     $draw->set_bbox(@bbox);
+} elsif (defined $route_file) {
+    # bbox automatically set in pre_draw, see below
 } else {
     $draw->set_bbox_max(new Strassen
 			(defined $scope && $scope eq 'region'
@@ -175,7 +197,11 @@ if (defined $bbox) {
 		       );
 }
 $draw->init;
-$draw->create_transpose(-asstring => 1);
+if ($route_file) {
+    $draw->pre_draw;
+} else {
+    $draw->create_transpose(-asstring => 1);
+}
 $draw->draw_map if $draw->can("draw_map");
 if (defined $custom_places) {
     if ($use_mapserver) {
@@ -183,6 +209,9 @@ if (defined $custom_places) {
     } else {
 	$draw->draw_custom_places($custom_places);
     }
+}
+if ($route_file) {
+    $draw->draw_route;
 }
 $draw->flush;
 close OUT;
@@ -208,6 +237,8 @@ usage: $0 [options]
 -bbox x1,y1,x2,y2          Use the specified bounding box from the source map
 -drawtypes type1,type2,... Draw the specified types. By default only streets
                            are drawn.
+-routefile file		   Draw the specified bbr file (some other GPS file
+			   formats are also supported)
 -restrict cat1,cat2,...    Restrict to the specified categories.
 -o outfile                 Use the specified file for the output. Otherwise
                            the output goes to stdout.
