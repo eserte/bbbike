@@ -47,6 +47,9 @@ sub pre_draw {
     $self->{PreDrawCalled}++;
 }
 
+# nop, automatically drawn if coordinates exist
+sub draw_route { }
+
 # Without the need to POST:
 sub flush_direct_redirect {
     my $self = shift;
