@@ -879,9 +879,14 @@ git-update-local:	bbbike-rcs-to-cvs-repo
 	[ -d ${.CURDIR}/../bbbike-gitlocal ]
 	cd ${.CURDIR}/../bbbike-gitlocal && env CVS_RSH=ssh git cvsimport -v -d ${.CURDIR}/../bbbike-cvs-rcs bbbike -a
 
-git-update-sf:
+git-update-sf:	do-git-update-sf data-sf-fix-permissions
+
+do-git-update-sf:
 	[ -d ${.CURDIR}/../bbbike-gitsf ]
 	cd ${.CURDIR}/../bbbike-gitsf && env CVS_RSH=ssh git cvsimport -v -d :ext:eserte@bbbike.cvs.sourceforge.net:/cvsroot/bbbike bbbike -a
+
+data-sf-fix-permissions:
+	cd ${.CURDIR}/../bbbike-gitsf/data && ${MAKE} fix-permissions
 
 git-update: git-update-local git-update-sf
 
