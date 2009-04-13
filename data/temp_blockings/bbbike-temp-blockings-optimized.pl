@@ -690,7 +690,7 @@ push @temp_blocking,
          'text' => 'B 198 Polßen - Gramzow OD Meichow grundhafter Straßenbau Vollsperrung 16.03.2009-24.06.2009 ',
          'from' => 1237071600,
          'id' => 1577,
-         'data' => 'userdel	q4::inwork 48307,87186 48468,87288 48624,87416
+         'data' => 'userdel	q4::inwork 48310,87199 48468,87288 48550,87381 48624,87416
 ',
          'type' => 'handicap'
        },

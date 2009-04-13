@@ -121,7 +121,7 @@ Vierraden	3 69901,77877
 Burg Stargard	3 1763,120930
 Altentreptow	3 -2694,142835
 Lassan	3 37090,171843
-Greiffenberg	3 46563,76471
+Greiffenberg	3 46564,76483
 Neustadt-Glewe	3 -115372,106534
 Mirow	3 -31370,95842
 Garz|(Rügen)	3 2384,212247
@@ -294,7 +294,7 @@ Warnitz	2 40971,86948
 Carmzow	2 52178,109771
 Grünberg	2 59125,106758
 Grünow	2 45189,101514
-Dedelow	2 35175,106764
+Dedelow	2 35287,106742
 Schönermark|(bei Prenzlau)	2 29110,103270
 Ducherow	2 32990,151593
 Ückeritz	2 50843,179488
@@ -480,7 +480,7 @@ Görlsdorf|bei Angermünde	1 45864,72724
 Steinhöfel|b. Angermünde	1 41291,77166
 Stegelitz	1 39303,80853
 Wilmersdorf|(Uckermark)	1 43151,79037
-Günterberg	1 47124,77624
+Günterberg	1 47091,77570
 Welsow	1 49734,74527
 Mürow	1 51978,72803
 Dobberzin	1 52316,69186
@@ -502,6 +502,7 @@ Großzerlang	1 -22148,86587
 Canow	1 -25192,87735
 Luhme	1 -29126,86083
 Weggun	1 20367,102950
+Parmen	1 20924,105178
 Arendsee	1 23320,103731
 Fürstenhagen	1 15430,103770
 Seelübbe	1 42432,96312
@@ -559,7 +560,7 @@ Petznick	1 23701,84425
 Klosterwalde	1 19685,85251
 Gollmitz	1 30482,99609
 Güstow	1 34589,102405
-Klinkow	1 35971,104165
+Klinkow	1 36033,104038
 Blindow	1 41165,106483
 Schönwerder	1 38586,108244
 Berkholz	1 26128,97916
@@ -741,12 +742,15 @@ Schernsdorf	1 83338,-22806
 Fahrenwalde	1 53293,115731
 Damerow	1 47087,115725
 Schönfeld|(Uckermark)	1 47894,112908
-Göritz	1 42854,112038
+Göritz	1 42829,112070
 Schenkenberg|(bei Prenzlau)	1 45454,107247
 Ludwigsburg	1 47587,106693
 Milow|(bei Strasburg)	1 36949,119322
 Groß Luckow	1 36980,126194
 Friedrichshagen	1 39582,137711
+Lübbenow	1 35529,116685
+Güterberg	1 32455,118645
+Wolfshagen	1 25151,115257
 Züsedom	1 49981,116048
 Nieden	1 43275,115703
 Nechlin	1 41224,116194
@@ -875,6 +879,9 @@ Smolecin	1 78828,107090
 Kolbaskowo	1 78909,104939
 Warnemünde	0 -83112,195145
 Ostseebad Heiligendamm	0 -99712,191131
+Krewitz	0 19582,99411
+Buchenhain	0 18152,100754
+Fürstenau	0 17020,103009
 Canzow	0 18200,117892
 Quadenschönfeld	0 4846,113002
 Warbende	0 1978,111942
@@ -1003,6 +1010,7 @@ Klaushagen	0 20852,91905
 Klein Sperrenwalde	0 30752,98302
 Groß Sperrenwalde	0 32592,96755
 Horst|bei Golmitz	0 32535,101203
+Basedow	0 34939,103999
 Rathsberge	0 37230,100007
 Ellingen	0 37437,105478
 Koldenhof	0 3988,102399
@@ -1071,7 +1079,8 @@ Blumenberg	0 -120964,-43699
 Gottsdorf	0 -11218,-31357
 Karlsruh|(bei Fahrenwalde)	0 54121,113714
 Caselow	0 57586,117220
-Tornow|(bei Schönfeld, Uckermark)	0 45810,110576
+Tornow|(bei Schönfeld, Uckermark)	0 45766,110618
+Karlshof|(bei Tornow)	0 47335,110888
 Malchow|(bei Göritz)	0 43561,113159
 Neuenfeld|(bei Schönfeld, Uckermark)	0 49887,113837
 Wittenhof	0 43199,105408
@@ -1082,8 +1091,12 @@ Brietzig	0 42221,119716
 Wilsickow	0 39437,120318
 Klein Luckow	0 37504,128254
 Trebenow	0 38662,115923
+Fahrenhorst	0 31773,117417
+Kleisthöhe	0 30172,116098
+Lemmersdorf	0 28320,116060
+Hildebrandshagen	0 22674,112533
 Bandelow	0 38762,112839
-Klockow	0 49578,110877
+Klockow	0 49504,110961
 Bröllin	0 51891,118057
 Schmarsow	0 44142,117823
 Kamp	0 37530,160248

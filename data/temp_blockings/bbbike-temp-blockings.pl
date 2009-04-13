@@ -1871,7 +1871,7 @@ EOF
        text  => 'B 198; (Schwedter Str.); OD Prenzlau, Kno. Uckermarkkaserne Ausbau Knotenpunkt Vollsperrung 30.04.2005-01.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 40682,100854 40507,100965
+userdel	q4 40691,100865 40507,100965
 EOF
      },
      { from  => 1114725600, # 2005-04-29 00:00
@@ -2709,7 +2709,7 @@ EOF
        text  => 'B 166 Zichow-Gramzow OD Gramzow Kanal- und Straßenbau Vollsperrung 26.11.2005-22.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 50109,89725 49930,89857
+userdel	q4 50107,89717 49930,89857
 EOF
      },
      { from  => 1126994400, # 2005-09-18 00:00
@@ -2734,7 +2734,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 46661,82722 46743,82844 47081,83093
-userdel	2 47081,83093 47137,83456
+userdel	2 47081,83093 47089,83300 47137,83456
 EOF
      },
      { from  => 1128808800, # 2005-10-09 00:00
@@ -6379,7 +6379,7 @@ EOF
        text  => 'B 198 Polßen-Gramzow zw. Neimeichow und B166 OL Gramzow grundhafter Ausbau Vollsperrung 23.10.2006-30.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 49525,88337 49743,88576 49932,88969 49930,89857
+userdel	2::inwork 49525,88337 49743,88576 49939,88985 49930,89857
 EOF
      },
      { from  => 1162249200, # 2006-10-31 00:00
@@ -6802,7 +6802,7 @@ EOF
        text  => 'L 285 Günterberg-Schönermark OD Günterberg Kanal- und Straßenbau Vollsperrung 21.07.2006-18.12.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 48203,79315 47124,77624
+userdel	q4::inwork 48203,79315 47091,77570
 EOF
      },
      { from  => 1165952495, # 2006-12-12 20:41
@@ -12540,7 +12540,7 @@ EOF
        text  => 'B 198 Angermünde - Greiffenberg zw. OA Kerkow und Abzw. Bruchhagen Deckschichterneuerung Vollsperrung 08.09.2008-01.10.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 46704,75833 46875,75023 47308,73565 47908,73136 48951,71593
+userdel	2::inwork 46704,75833 46875,75023 46875,75023 47223,73677 47297,73550 47297,73550 47908,73136 47908,73136 48164,72815 48951,71593 48951,71593
 EOF
      },
      { from  => 1221948000, # 2008-09-21 00:00
@@ -13364,7 +13364,7 @@ EOF
        text  => 'B 198 Polßen - Gramzow OD Meichow grundhafter Straßenbau Vollsperrung 16.03.2009-24.06.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 48307,87186 48468,87288 48624,87416
+userdel	q4::inwork 48310,87199 48468,87288 48550,87381 48624,87416
 EOF
      },
      { from  => 1240005600, # 2009-04-18 00:00
