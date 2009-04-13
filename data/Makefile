@@ -134,7 +134,7 @@ targets-clean:
 	mv -f ${TARGETS} /tmp/old-data/
 
 fix-permissions:
-	$(READABLE) $(TARGETS) temp_blockings/bbbike-temp-blockings.pl
+	$(READABLE) $(TARGETS) temp_blockings/bbbike-temp-blockings.pl temp_blockings/*.bbd
 
 # Useful checks, but normally too slow for a quick build
 # XXX merge with sort-Berlin.coords.data rule below?
