@@ -12651,7 +12651,7 @@ userdel	q4::inwork -53868,82504 -53648,82294 -53491,81954
 EOF
      },
      { from  => 1221948000, # 2008-09-21 00:00
-       until => 1241128800, # 2009-05-01 00:00
+       until => 1239657904, # 2009-05-01 00:00 1241128800
        text  => 'L 030 Fredersdorf - Altlandsberg - Bernau OD Altlandsberg, zw. OE und Strausberger Tor Straßenausbau Vollsperrung * 22.09.2008-30.04.2009 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -13308,7 +13308,7 @@ userdel	q4::inwork; 11242,11720 11324,11689 11574,11594
 EOF
      },
      { from  => 1238347506, # 2009-03-29 19:25
-       until => 1262300400, # 2010-01-01 00:00
+       until => 1239657424, # 2010-01-01 00:00 1262300400
        text  => 'Köthener Str. (Kreuzberg) in beiden Richtungen zwischen Bernburger Str. und Hafenplatz Baustelle, Straße vollständig gesperrt (bis Anfang 2010)',
        type  => 'handicap',
        source_id => 'IM_011637',
@@ -13617,6 +13617,71 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 59730,42362 58564,43539
+EOF
+     },
+     { from  => 1239657365, # 2009-04-13 23:16
+       until => 1241128799, # 2009-04-30 23:59
+       text  => 'Bernstorffstr. (Reinickendorf) Richtung Berliner Str. zwischen Buddestr. und Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 04.2009)',
+       type  => 'handicap',
+       source_id => 'IM_012136',
+       data  => <<EOF,
+userdel	q4::inwork; 2241,20487 2029,20331
+EOF
+     },
+     { from  => 1239660000, # 2009-04-14 00:00
+       until => 1243634400, # 2009-05-30 00:00
+       text  => 'B 102 Belziger Straße OD Treuenbrietzen, Kreisverkehr Ri. Belzig Sanierung Kreisverkehr Vollsperrung 15.04.2009-29.05.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -25627,-35335 -25322,-35457
+EOF
+     },
+     { from  => 1239573600, # 2009-04-13 00:00
+       until => 1247522400, # 2009-07-14 00:00
+       text  => 'B 158 Blumberg - Werneuchen zw. Blumberg u. Seefeld Deckenerneuerung Vollsperrung 14.04.2009-13.07.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 28531,24375 28323,24341 27608,23776 27283,23503 26936,23104 26764,23083 25641,22864 25295,22655 24951,22681 24735,22556
+EOF
+     },
+     { from  => 1239919200, # 2009-04-17 00:00
+       until => 1240092000, # 2009-04-19 00:00
+       text  => 'B 246 Lindenberg - Wendisch Rietz Bahnübergang OL Lindenberg Gleisbauarbeiten Vollsperrung 18.04.2009-18.04.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 59522,-22230 59293,-21524
+EOF
+     },
+     { from  => 1239919200, # 2009-04-17 00:00
+       until => 1240092000, # 2009-04-19 00:00
+       text  => 'B 273 Bernauer Straße OL Oranienburg, zw. Liebigstr. u. Lehnitzstr. Oranienburger Autofrühling Vollsperrung 18.04.2009-18.04.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -1032,38792 -1253,38715
+EOF
+     },
+     { from  => 1239573600, # 2009-04-13 00:00
+       until => 1240005600, # 2009-04-18 00:00
+       text  => 'K 6303 Brieselang - Bredow Autobahnbrücke zw. Brieselang und Bredow Brückenabbruch Vollsperrung 14.04.2009-17.04.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -20109,20341 -19128,19920
+EOF
+     },
+     { from  => 1240092000, # 2009-04-19 00:00
+       until => 1262300400, # 2010-01-01 00:00
+       text  => 'L 033 Gielsdorfer Str. / Prötzeler Chaussee OL Strausberg, Kreisverk. Abzw. Wriezener Str. Straßenausbau Wriezener Str. gesperrt 20.04.2009-31.12.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 43584,20871 43209,20665
+EOF
+     },
+     { from  => 1239573600, # 2009-04-13 00:00
+       until => 1243029600, # 2009-05-23 00:00
+       text  => 'L 161 bei Vehlefanz Straßen- u. Durchlassbau Vollsperrung 14.04.2009-22.05.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -11367,34034 -11282,34185 -10702,34336
 EOF
      },
     );

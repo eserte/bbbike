@@ -482,15 +482,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1241128800,
-         'text' => 'L 030 Fredersdorf - Altlandsberg - Bernau OD Altlandsberg, zw. OE und Strausberger Tor Straßenausbau Vollsperrung * 22.09.2008-30.04.2009 ',
-         'from' => 1221948000,
-         'id' => 1493,
-         'data' => 'userdel	q4::inwork 33051,18158 32513,18082 32293,18093
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1262300399,
@@ -636,16 +628,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_011637',
-         'until' => 1262300400,
-         'text' => 'Köthener Str. (Kreuzberg) in beiden Richtungen zwischen Bernburger Str. und Hafenplatz Baustelle, Straße vollständig gesperrt (bis Anfang 2010)',
-         'from' => 1238347506,
-         'id' => 1571,
-         'data' => 'userdel	q4::inwork 8536,11063 8483,10900
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_011767',
          'until' => undef,
@@ -942,6 +925,79 @@ userdel	q4::inwork 14530,11137 14465,11195
          'from' => 1239573600,
          'id' => 1608,
          'data' => 'userdel	2::inwork 59730,42362 58564,43539
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_012136',
+         'until' => 1241128799,
+         'text' => 'Bernstorffstr. (Reinickendorf) Richtung Berliner Str. zwischen Buddestr. und Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 04.2009)',
+         'from' => 1239657365,
+         'id' => 1609,
+         'data' => 'userdel	q4::inwork; 2241,20487 2029,20331
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1243634400,
+         'text' => 'B 102 Belziger Straße OD Treuenbrietzen, Kreisverkehr Ri. Belzig Sanierung Kreisverkehr Vollsperrung 15.04.2009-29.05.2009 ',
+         'from' => 1239660000,
+         'id' => 1610,
+         'data' => 'userdel	q4::inwork -25627,-35335 -25322,-35457
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1247522400,
+         'text' => 'B 158 Blumberg - Werneuchen zw. Blumberg u. Seefeld Deckenerneuerung Vollsperrung 14.04.2009-13.07.2009 ',
+         'from' => 1239573600,
+         'id' => 1611,
+         'data' => 'userdel	2::inwork 28531,24375 28323,24341 27608,23776 27283,23503 26936,23104 26764,23083 25641,22864 25295,22655 24951,22681 24735,22556
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1240092000,
+         'text' => 'B 246 Lindenberg - Wendisch Rietz Bahnübergang OL Lindenberg Gleisbauarbeiten Vollsperrung 18.04.2009-18.04.2009 ',
+         'from' => 1239919200,
+         'id' => 1612,
+         'data' => 'userdel	2::inwork 59522,-22230 59293,-21524
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1240092000,
+         'text' => 'B 273 Bernauer Straße OL Oranienburg, zw. Liebigstr. u. Lehnitzstr. Oranienburger Autofrühling Vollsperrung 18.04.2009-18.04.2009 ',
+         'from' => 1239919200,
+         'id' => 1613,
+         'data' => 'userdel	q4::inwork -1032,38792 -1253,38715
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1240005600,
+         'text' => 'K 6303 Brieselang - Bredow Autobahnbrücke zw. Brieselang und Bredow Brückenabbruch Vollsperrung 14.04.2009-17.04.2009 ',
+         'from' => 1239573600,
+         'id' => 1614,
+         'data' => 'userdel	2::inwork -20109,20341 -19128,19920
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1262300400,
+         'text' => 'L 033 Gielsdorfer Str. / Prötzeler Chaussee OL Strausberg, Kreisverk. Abzw. Wriezener Str. Straßenausbau Wriezener Str. gesperrt 20.04.2009-31.12.2009 ',
+         'from' => 1240092000,
+         'id' => 1615,
+         'data' => 'userdel	q4::inwork 43584,20871 43209,20665
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1243029600,
+         'text' => 'L 161 bei Vehlefanz Straßen- u. Durchlassbau Vollsperrung 14.04.2009-22.05.2009 ',
+         'from' => 1239573600,
+         'id' => 1616,
+         'data' => 'userdel	2::inwork -11367,34034 -11282,34185 -10702,34336
 ',
          'type' => 'gesperrt'
        }

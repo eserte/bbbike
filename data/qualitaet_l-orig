@@ -136,7 +136,7 @@ Wandlitz: Kopfsteinpflaster, OK	Q1 13556,37493 13938,38028 14437,38712 14498,388
 Altlandsberg: Kopfsteinpflaster	Q2 31887,17453 32100,18012 32115,18106 32224,18110 32293,18093 32513,18082
 Altlandsberg: Kopfsteinpflaster	Q2 32100,18012 32181,18009 32224,18110
 Altlandsberg: Kopfsteinpflaster	Q2 32293,18093 32325,18434
-Groﬂ-Glienicke: Kopfsteinpflaster, OK	Q1 -9215,7517 -9364,7189 -9449,7005
+Groﬂ-Glienicke: Kopfsteinpflaster, OK	Q1 -9249,7512 -9401,7175 -9462,7036
 Werder, Am Bahnhof: Kopfsteinpflaster	Q2 -21462,-2657 -21636,-2101 -22042,-2060
 Golm, Weinmeisterstr.: sandige Straﬂe	Q2 -19578,-674 -19044,-737 -18981,-566
 #: add_fragezeichen: welche Nummer des F-Wegs?
@@ -2310,7 +2310,7 @@ Pestalozzistr.: Asphalt	Q0 -9653,-2100 -9698,-2328 -9723,-2451
 #: by: rjoop: vvv
 Am Park: Asphalt	Q0 -9118,7286 -8968,7328
 #: note: laut "Berliner Umland" witterungsabh‰ngige Strecke
-Mauerweg am Groﬂ-Glienicker See: Asphalt	Q0 -9118,7286 -9168,7172 -9154,7073 -9175,7037 -9446,6860 -9490,6650 -9668,6171 -9622,5804 -9640,5723 -9747,5559 -9777,5489 -9766,5437
+Mauerweg am Groﬂ-Glienicker See: Asphalt	Q0 -9118,7286 -9168,7172 -9154,7073 -9175,7037 -9446,6860 -9490,6650 -9668,6171 -9622,5804 -9640,5723 -9763,5555
 Seeburger Chaussee: Asphalt	Q0 -8634,9626 -8595,9582 -8564,9423 -8634,8630 -8719,8161 -8878,8089 -9077,7923 -9150,7720
 Seeburger Chaussee: m‰ﬂiger Asphalt	Q1 -9150,7720 -9097,7649 -9088,7599
 Edisonstr.: Sand	Q3 -10696,15970 -10722,16134
@@ -2993,3 +2993,6 @@ Wockninstr. - ‹ckeritz, Strand: Waldweg	Q2+ 51557,179407 51660,179531 51738,1797
 #: by: kagrotte:
 #: XXX: aber Radweg???
 Karlsruher Str.: guter Asphalt	Q0 27016,14509 27073,14138
+#: by: Stefan Byczynski:
+#: note: "Straﬂe f¸hrt an einer Badestelle vorbei, im Bereich ist verst‰rkt mit Fuﬂg‰ngern und dicht parkenden Autos zu rechnen. Dann sehr eng. Linienbusverkehr."
+Seenpromenade (Groﬂ Glienicke): sehr guter Asphalt	Q0 -9642,6538 -9703,6278 -9728,6173 -9727,6035 -9730,5802 -9763,5555 -9777,5489 -9766,5437 -9654,5372

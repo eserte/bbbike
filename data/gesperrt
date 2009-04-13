@@ -48,10 +48,10 @@ Wilhelplatz	1 -7059,578 -7088,463 -7122,439 -7180,378
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf (Nord)	1 9731,3889 9934,3802
 Alt-Mariendorf (Süd)	1 9934,3802 9751,3769 9440,3665 9391,3651 9215,3599 9131,3571 8955,3521
-Knoten Märkische Allee	1 19693,11762 19802,11794 19882,11860 19918,11891
-Knoten Märkische Allee	1 19918,11891 19988,11821 20115,11730
-Knoten Märkische Allee	1 20115,11730 20014,11651
-Knoten Märkische Allee	1 20014,11651 20018,11698 19985,11739
+Knoten Märkische Allee	1 19799,11753 19849,11779 19890,11830 19918,11891
+Knoten Märkische Allee	1 19918,11891 19979,11774 20115,11730
+Knoten Märkische Allee	1 20115,11730 20026,11663
+Knoten Märkische Allee	1 20026,11663 20018,11698 19985,11739
 Gensinger Str./Alt-Friedrichsfelde	1 19005,11796 19144,11859 19283,11785
 Altstadt Köpenick	1 22377,4836 22381,4752
 Altstadt Köpenick	1 22445,4758 22439,4838
@@ -478,6 +478,7 @@ Langkofelweg	1 6850,3408 6940,3498 7018,3572
 Heinickeweg	1 2224,14825 2210,14696 2207,14576
 Hallberger Zeile	1 16068,6216 15954,6297
 Gartenstr.	1 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8660,14929 8656,14947 8663,14960
+Nipkowstr.	1 20499,3572 20352,3744
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
 Leistikowstr.	1 -12512,810 -12302,718
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -970,20 +971,19 @@ Robert-Uhrig-Str. -> Fußgängerbrücke: nicht passierbarer Mittelstreifen	3::igndi
 Robert-Uhrig-Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 17745,11711 17746,11748 17497,11769
 Alt-Friedrichsfelde -> Fußgängerbrücke: nicht passierbarer Mittelstreifen	3::igndisp 17497,11769 17746,11748 17757,11761
 Alt-Friedrichsfelde -> Robert-Uhrig-Str.: nicht passierbarer Mittelstreifen	3::igndisp 17966,11730 17746,11748 17745,11711
-nicht passierbarer Mittelstreifen	3nocross::ignrte 18853,11798 19005,11796 19283,11785 19693,11762 19904,11745 19985,11739 20115,11730 20368,11711
+nicht passierbarer Mittelstreifen	3nocross::ignrte 18853,11798 19005,11796 19283,11785 19657,11764 19693,11762 19799,11753 19904,11745 19985,11739 20115,11730 20160,11727 20368,11711
 Gensinger Str. -> Gensinger Str.: nicht passierbarer Mittelstreifen	3::igndisp 19144,11859 19005,11796 19005,11767
 Gensinger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19144,11859 19005,11796 19283,11785
 Gensinger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19005,11767 19005,11796 18853,11798
 Alt-Friedrichsfelde -> Gensinger Str.: nicht passierbarer Mittelstreifen	3::igndisp 19283,11785 19005,11796 19005,11767
 Alt-Friedrichsfelde -> Gensinger Str.: nicht passierbarer Mittelstreifen	3::igndisp 19005,11796 19283,11785 19144,11859
-Alt-Friedrichsfelde -> zur Weißenhöher Str.: nicht passierbarer Mittelstreifen	3::igndisp 19904,11745 19693,11762 19750,11730
-Märkische Allee -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19802,11794 19693,11762 19904,11745
-Märkische Allee -> zur Weißenhöher Str.: nicht passierbarer Mittelstreifen	3::igndisp 19802,11794 19693,11762 19750,11730
-zur Weißenhöher Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19750,11730 19693,11762 19283,11785
+zur Weißenhöher Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19750,11730 19693,11762 19657,11764
+Alt-Friedrichsfelde -> zur Weißenhöher Str.: nicht passierbarer Mittelstreifen	3::igndisp 19799,11753 19693,11762 19750,11730
+Märkische Allee -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19849,11779 19799,11753 19904,11745
 Alt-Biesdorf -> Märkische Allee: nicht passierbarer Mittelstreifen	3::igndisp 20115,11730 19985,11739 20018,11698
-Alt-Biesdorf -> Märkische Allee: nicht passierbarer Mittelstreifen	3::igndisp 19985,11739 20115,11730 19988,11821
-Märkische Allee -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 20014,11651 20115,11730 19985,11739
-Märkische Allee -> Märkische Allee: nicht passierbarer Mittelstreifen	3::igndisp 20014,11651 20115,11730 19988,11821
+Alt-Biesdorf -> Märkische Allee: nicht passierbarer Mittelstreifen	3::igndisp 19985,11739 20115,11730 19979,11774
+Märkische Allee -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 20026,11663 20115,11730 19985,11739
+Märkische Allee -> Märkische Allee: nicht passierbarer Mittelstreifen	3::igndisp 20026,11663 20115,11730 19979,11774
 Straßentunnelrampe	3nocross::ignrte 18220,11710 18555,11724 18853,11798
 Alt-Friedrichsfelde -> Charlottenstr.: Straßentunnelrampe	3::igndisp 18853,11798 18555,11724 18556,11688
 Charlottenstr. -> Alt-Friedrichsfelde: Straßentunnelrampe	3::igndisp 18556,11688 18555,11724 18220,11710
@@ -1454,6 +1454,10 @@ enges Drängelgitter	BNP:5:90 100,3
 Drosselbartweg: Drängelgitter	BNP:4:-242 13899,18833
 Drosselbartweg: Drängelgitter	BNP:3:71 14222,18666
 Schranke (Thyssenstr. - Sittestr.)	BNP:3:67 5856,19204
+Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251
+Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15823,10300 15753,10353 15688,10400
+Alice-und-Hella-Hirsch-Ring: noch in Bau, gesperrt	2:inwork 15788,10252 15823,10300
+Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
 Zur Boyenstr.: Bauarbeiten	2:inwork 7925,14442 7828,14405
 Brücke über Panke: zur Zeit Bauarbeiten, keine Durchfahrt möglich	2:inwork 7753,14528 7807,14441
 Kynaststraße: Abriss und Neubau bis ca. 2010-03-01	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505
