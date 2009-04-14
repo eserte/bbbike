@@ -13239,11 +13239,11 @@ userdel	1::inwork -25441,21563 -25466,21523 -25542,21416
 EOF
      },
      { from  => undef, # 
-       until => undef, # last-checked. 2009-03-02
+       until => undef, # last-checked. 2009-04-14
        text  => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 12048,10097 12229,10014 12398,9938
+userdel	1::inwork 12229,10014 12398,9938
 EOF
      },
      { from  => 1238954607, # 2009-04-05 20:03
@@ -13520,7 +13520,7 @@ userdel	q4::inwork 57976,-10623 57656,-10684 57418,-10618 56989,-10997
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => undef, # XXX last_checked: 2009-04-13
        text  => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
        type  => 'handicap',
        data  => <<EOF,
