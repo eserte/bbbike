@@ -37,11 +37,12 @@ sub new {
     my $self = bless {}, $class;
     my $directory = delete $args{-directory} || cwd;
     $self->{directory} = $directory;
+    $self->{raw_files} = [];
     my $t = $parent->Toplevel;
     $self->{toplevel} = $t;
 
     {
-	my $f = $t->Frame->pack(qw(-fill both));
+	my $f = $t->Frame->pack(qw(-fill both -expand 1));
 	my $lb = $f->Scrolled('Listbox', -scrollbars => 'osoe')->pack(qw(-fill both -expand 1 -side left));
 	$self->{list} = $lb->Subwidget('scrolled');
 	$self->{list}->bind('<Double-1>' => [sub { $self->select_item($_[0]->index($_[1])) }, Ev('@')]);
@@ -70,7 +71,7 @@ sub Show {
 	my $lb = $self->{list};
 	my($sel) = $lb->curselection;
 	if (defined $sel) {
-	    my $entry = $lb->get($sel);
+	    my $entry = $self->{raw_files}->[$sel];
 	    if (-f $entry) {
 		return $self->{directory} . "/" . $entry;
 	    }
@@ -104,20 +105,25 @@ sub update_directory {
 	} # ignore other filetypes
     }
 
+    my @raw_files;
+
     for my $dir (sort @dirs) {
+	push @raw_files, $dir;
 	$lb->insert('end', "$dir/");
     }
     for my $file (sort @files) {
+	push @raw_files, $file;
 	$lb->insert('end', $file);
     }
 
     $self->{directory} = cwd;
+    $self->{raw_files} = \@raw_files;
 }
 
 sub select_item {
     my($self, $inx) = @_;
     my $lb = $self->{list};
-    my $entry = $lb->get($inx);
+    my $entry = $self->{raw_files}->[$inx];
     if ($entry =~ s{/$}{}) {
 	$self->update_directory($entry);
     } else {
@@ -128,7 +134,7 @@ sub select_item {
 sub update_preview {
     my($self, $inx) = @_;
     my $lb = $self->{list};
-    my $entry = $lb->get($inx);
+    my $entry = $self->{raw_files}->[$inx];
     if ($entry !~ m{/$}) {
 	my $thumbnail = ".thumbnails/$entry";
 	if (!-r $thumbnail) {
@@ -141,8 +147,10 @@ sub update_preview {
 	}
 	if (-r $thumbnail) {
 	    $self->{preview}->read($thumbnail);
+	    return
 	}
     }
+    $self->{preview}->blank;
 }
 
 sub do_update_preview {
@@ -166,8 +174,32 @@ sub do_update_preview {
 
 __END__
 
+=head1 NAME
+
+BBBikeRouteLister - a file selector for routes with automatic preview
+
+=head1 SYNOPSIS
+
+    use BBBikeRouteLister;
+    $file = BBBikeRouteLister->new($mw, -directory => "...")->Show;
+
+=head1 DESCRIPTION
+
+B<BBBikeRouteLister> is a file selection widget which can be used to
+select BBBike route files (e.g. bbr, gpx and other file formats).
+Previews are generated and stored on the fly. The selected full
+filename is returned, or C<undef>.
+
 =head1 EXAMPLES
 
     perl -MTk -MBBBikeRouteLister -e '$mw=tkinit;$l=BBBikeRouteLister->new($mw,-directory=>".");warn $l->Show'
+
+=head1 TODO
+
+ * do updating in background, and display once the image is ready (and block other updates)
+
+ * update in advance
+
+ * maybe turn into a "real" Perl/Tk widget
 
 =cut
