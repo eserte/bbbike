@@ -26,8 +26,9 @@ use Tk::PNG;
 use constant WIDTH  => 120;
 use constant HEIGHT => 120;
 
-my $bbbike_root = realpath(dirname(realpath(dirname(__FILE__))));
-my $bbbikedraw_pl = "$bbbike_root/miscsrc/bbbikedraw.pl";
+use vars qw($bbbike_root $bbbikedraw_pl);
+$bbbike_root = realpath(dirname(realpath(dirname(__FILE__))));
+$bbbikedraw_pl = "$bbbike_root/miscsrc/bbbikedraw.pl";
 if (!-e $bbbikedraw_pl) {
     warn "$bbbikedraw_pl does not exist!";
 }
@@ -113,7 +114,7 @@ sub update_directory {
     my @raw_files;
 
     for my $dir (sort @dirs) {
-	push @raw_files, $dir;
+	push @raw_files, "$dir/";
 	$lb->insert('end', "$dir/");
     }
     for my $file (sort @files) {

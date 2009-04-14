@@ -335,6 +335,9 @@ sub add_button {
 		],
 	       ],
 	      ],
+	      [Button => "Load route",
+	       -command => sub { route_lister() },
+	      ],
 	      [Button => "GPS data viewer",
 	       -command => sub { gps_data_viewer() },
 	      ],
@@ -825,6 +828,14 @@ sub _maybe_orig_file {
     } else {
 	# assume it exists, without checking
 	return $file.'-orig';
+    }
+}
+
+sub route_lister {
+    require BBBikeRouteLister;
+    my $file = BBBikeRouteLister->new($main::top)->Show;
+    if (defined $file) {
+	main::load_save_route(0, $file);
     }
 }
 
