@@ -61,6 +61,11 @@ sub new {
     $self;
 }
 
+sub DESTROY {
+    my $self = shift;
+    $self->{preview}->delete if $self->{preview};
+}
+
 sub Show {
     my $self = shift;
     $self->{wait} = 0;
