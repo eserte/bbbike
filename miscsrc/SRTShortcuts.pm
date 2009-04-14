@@ -833,10 +833,16 @@ sub _maybe_orig_file {
 
 sub route_lister {
     require BBBikeRouteLister;
-    my $file = BBBikeRouteLister->new($main::top)->Show;
-    if (defined $file) {
-	main::load_save_route(0, $file);
-    }
+    my $show_route = sub {
+	my $file = shift;
+	if (defined $file) {
+	    local $main::zoom_loaded_route = 0; # not good for large routes
+	    local $main::center_loaded_route = 1; # but this is OK
+	    main::load_save_route(0, $file);
+	}
+    };
+    my $file = BBBikeRouteLister->new($main::top, -browse => sub { $show_route->(shift) })->Show;
+    $show_route->($file);
 }
 
 ######################################################################

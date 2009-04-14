@@ -38,6 +38,8 @@ sub new {
     my $self = bless {}, $class;
     my $directory = delete $args{-directory} || cwd;
     $self->{directory} = $directory;
+    my $browse = delete $args{-browse};
+    $self->{browse} = $browse;
     $self->{raw_files} = [];
     my $t = $parent->Toplevel;
     $self->{toplevel} = $t;
@@ -54,8 +56,18 @@ sub new {
     {
 	my $f = $t->Frame->pack(qw(-fill x));
 	my $okb     = $f->Button(-text => 'OK', -command => sub { $self->{wait} = +1 });
+	my $browseb;
+	if ($browse) { 
+	    $browseb = $f->Button(-text => 'Browse', -command => sub {
+				      my $file = $self->get_file;
+				      if (defined $file) {
+					  $browse->($file);
+				      }
+				  });
+	}
 	my $cancelb = $f->Button(-text => 'Cancel', -command => sub { $self->{wait} = -1 });
 	$cancelb->pack(-side => 'right');
+	$browseb->pack(-side => 'right') if $browseb;
 	$okb->pack(-side => 'right');
     }
 
@@ -72,18 +84,28 @@ sub Show {
     $self->{wait} = 0;
     $self->{preview}->blank;
     $self->update_directory($self->{directory});
-    $self->{toplevel}->waitVariable(\$self->{wait});
+    my $t = $self->{toplevel};
+    $t->waitVariable(\$self->{wait});
+    my $file;
     if ($self->{wait} == +1) {
-	my $lb = $self->{list};
-	my($sel) = $lb->curselection;
-	if (defined $sel) {
-	    my $entry = $self->{raw_files}->[$sel];
-	    if (-f $entry) {
-		return $self->{directory} . "/" . $entry;
-	    }
+	$file = $self->get_file;
+    }
+    $t->destroy;
+    $file;
+}
+
+sub get_file {
+    my $self = shift;
+    my $file;
+    my $lb = $self->{list};
+    my($sel) = $lb->curselection;
+    if (defined $sel) {
+	my $entry = $self->{raw_files}->[$sel];
+	if (-f $entry) {
+	    $file = $self->{directory} . "/" . $entry;
 	}
     }
-    return undef;
+    $file;
 }
 
 sub update_directory {
@@ -207,5 +229,7 @@ filename is returned, or C<undef>.
  * update in advance
 
  * maybe turn into a "real" Perl/Tk widget
+
+ * withdraw/deiconify or destroy?
 
 =cut
