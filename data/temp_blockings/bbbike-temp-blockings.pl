@@ -13684,4 +13684,12 @@ EOF
 userdel	2::inwork -11367,34034 -11282,34185 -10702,34336
 EOF
      },
+     { from  => 1239746400, # 2009-04-15 00:00
+       until => 1240264800, # 2009-04-21 00:00
+       text  => 'K 6425 Lindenallee OD Hoppegarten, zw. Kreisverkehr und An der Zoche Deckeneinbau Vollsperrung 16.04.2009-20.04.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 28510,12507 28287,12471
+EOF
+     },
     );

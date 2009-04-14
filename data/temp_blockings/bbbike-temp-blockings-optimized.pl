@@ -608,7 +608,7 @@ push @temp_blocking,
          'text' => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
          'from' => undef,
          'id' => 1563,
-         'data' => 'userdel	1::inwork 12048,10097 12229,10014 12398,9938
+         'data' => 'userdel	1::inwork 12229,10014 12398,9938
 ',
          'type' => 'gesperrt'
        },
@@ -1000,6 +1000,15 @@ userdel	q4::inwork 14530,11137 14465,11195
          'data' => 'userdel	2::inwork -11367,34034 -11282,34185 -10702,34336
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1240264800,
+         'text' => 'K 6425 Lindenallee OD Hoppegarten, zw. Kreisverkehr und An der Zoche Deckeneinbau Vollsperrung 16.04.2009-20.04.2009 ',
+         'from' => 1239746400,
+         'id' => 1617,
+         'data' => 'userdel	q4::inwork 28510,12507 28287,12471
+',
+         'type' => 'handicap'
        }
      
 );
