@@ -55,6 +55,9 @@ use constant MAXLINELENGTH => 12288; # the limit of BBBikeXS
 my $splitlonglines = 1; # XXX this may change once BBBikeXS has no length restriction anymore
 my $xmlparser;
 
+my %experiments;
+my %known_experiments = map {($_,1)} qw(add_postal_code);
+
 sub usage () {
     <<EOF;
 usage: $0 [-v] [-f] [-encoding enc] [-center lon,lat] [-map bbbike [-centerdelta lon,lat]] [-country country] -o directory osmfile ...
@@ -103,6 +106,16 @@ GetOptions("o=s" => \$o,
 	   "xmlparser=s" => \$xmlparser,
 	   "ignore-unhandled!" => \$ignore_unhandled,
 	   "ignore-underline!" => \$ignore_underline,
+	   'experiment=s@' => sub {
+	       my $exp = $_[1];
+	       if (!$known_experiments{$exp}) {
+		   die <<EOF;
+Unknown experiment '$exp'. Known experiments are:
+@{[ sort keys %known_experiments ]}
+EOF
+	       }
+	       $experiments{$exp}++;
+	   },
 	  )
     or die usage;
 
@@ -762,6 +775,10 @@ for my $osm_file (@osm_files) {
 		my $highway_cat = $tag{'highway'};
 		my $is_motorway = 0;
 		my $is_motorroad = exists $tag{'motorroad'} and $tag{'motorroad'} eq 'yes' ? 1 : 0; # Kraftfahrzeugstraße
+
+		if ($experiments{add_postal_code} && exists $tag{'postal_code'}) {
+		    $name .= " ($tag{'postal_code'})";
+		}
 
 		my $addcat = "";
 		if (exists $tag{'tunnel'} && $tag{'tunnel'} eq 'yes') {
