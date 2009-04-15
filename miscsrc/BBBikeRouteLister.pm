@@ -224,6 +224,9 @@ filename is returned, or C<undef>.
 
 =head1 TODO
 
+ * provide also other information like length, maybe start/via/goal
+   names, and time (in case of .trk/.gpx files), altitudes etc.
+
  * do updating in background, and display once the image is ready (and block other updates)
 
  * update in advance
