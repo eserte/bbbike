@@ -96,12 +96,10 @@ sub BBBikeGPS::gps_interface {
 	     -gpsdevice   => $gps_device,
 	     %extra_args,
 	    );
-	if ($modobj->transfer_to_file()) {
-	    $modobj->transfer(-file => $file,
-			      -res => $res,
-			      -test => $extra_args{-test},
-			      -top => $top);
-	}
+	$modobj->transfer(-file => $file,
+			  -res => $res,
+			  -test => $extra_args{-test},
+			  -top => $top);
     };
     if ($@) {
 	status_message

@@ -120,7 +120,7 @@ sub transfer {
 	# If we got here, then everything went OK, so waypoint cache
 	# may be updated
 	if ($self->{'used_idents'}) {
-	    while(my($key,$val) = %{ $self->{'used_idents'} }) {
+	    while(my($key,$val) = each %{ $self->{'used_idents'} }) {
 		$waypoints{$key}++;
 	    }
 	} else {
