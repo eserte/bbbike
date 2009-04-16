@@ -13692,4 +13692,63 @@ EOF
 userdel	q4::inwork 28510,12507 28287,12471
 EOF
      },
+     { from  => 1239912175, # 2009-04-16 22:02
+       until => 1240005600, # 2009-04-18 00:00
+       text  => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Lorenzweg und Tempelhofer Damm Baustelle, Straße vollständig gesperrt (bis 17.04.09 abends)',
+       type  => 'handicap',
+       source_id => 'IM_012244',
+       data  => <<EOF,
+userdel	q4::inwork 9457,5641 9357,5601 9147,5534
+EOF
+     },
+     { from  => 1239912224, # 2009-04-16 22:03
+       until => 1242424799, # 2009-05-15 23:59
+       text  => 'Schlichtallee (Lichtenberg) Richtung Nöldnerplatz zwischen beiden Einmündungen Fischerstr. Baustelle, gesperrt (Umfahrung über Fischerstr.) (bis Mitte 05.2009)',
+       type  => 'gesperrt',
+       source_id => 'IM_011757',
+       data  => <<EOF,
+userdel	1::inwork 15982,10765 16032,10842
+EOF
+     },
+     { from  => 1239912306, # 2009-04-16 22:05
+       until => 1240437600, # 2009-04-23 00:00
+       text  => 'Steglitzer Damm (Steglitz) Richtung Attilastr. zwischen Albrechtstr. und Presselstr. geplatzte Wasserleitung, gesperrt (bis ca. 22.04.09)',
+       type  => 'handicap',
+       source_id => 'IM_012235',
+       data  => <<EOF,
+userdel	q4::inwork; 6053,4942 6191,4923
+EOF
+     },
+     { from  => 1240092000, # 2009-04-19 00:00
+       until => 1247263200, # 2009-07-11 00:00
+       text  => 'L 015 Fürstenberger Straße OD Lychen, zw. Markt u. Fürstenberger Tor Kanal- u. Straßenbau Vollsperrung 20.04.2009-10.07.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -18726,-19242 -19026,-19156
+EOF
+     },
+     { from  => 1239660000, # 2009-04-14 00:00
+       until => 1251756000, # 2009-09-01 00:00
+       text  => 'L 022 Zehdenick - Gransee Brücke über den Welsegraben bei Badingen Brückenbauarbeiten Vollsperrung 15.04.2009-31.08.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -3207,65718 -3718,65788 -4295,65959
+EOF
+     },
+     { from  => 1239573600, # 2009-04-13 00:00
+       until => 1241128800, # 2009-05-01 00:00
+       text  => 'L 077 Saarmund - Güterfelde Bereich KVK Philippsthal Radwegbau Vollsperrung 14.04.2009-30.04.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -6043,-7395 -5575,-6838
+EOF
+     },
+     { from  => 1240005600, # 2009-04-18 00:00
+       until => 1240178400, # 2009-04-20 00:00
+       text  => 'L 085 Linthe - Brück zw. AS zur A 9 und Einmündg. Gewerbegebiet ADAC StartUp Day Vollsperrung 19.04.2009-19.04.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -32763,-26409 -31197,-28211
+EOF
+     },
     );

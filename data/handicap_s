@@ -69,10 +69,10 @@ Am Flutgraben: Parkweg	q1 13333,9929 13412,9935 13579,10146
 Kolonie Albrechtshˆhe: einige Fuﬂg‰nger	q1 10260,5953 9931,5985
 Am Landwehrkanal: Parkweg	q1 12724,9545 12919,9584 12981,9672 13086,9825
 Uferweg an den Treptowers: enger und kurviger Weg	q3 14500,9856 14464,9927 14509,9997 14432,10059 14373,10046
-Denewitzstr.: kombinierter Fuﬂ-und Radweg	q1 8061,10310 7906,10098
+Denewitzstr.: kombinierter Fuﬂ- und Radweg	q1 8061,10310 7906,10098
 Linienstr.: Gehweg	q2 11104,13456 11149,13442
-Bˆcklerpark: Fuﬂg‰nger	q2 10885,10045 10723,10088 10521,10126
-Bˆcklerpark: enge Kurven, Fuﬂg‰nger	q3 10967,10092 10885,10045
+Bˆcklerpark: gemeinsamer Fuﬂ- und Radweg	q2 10885,10045 10723,10088 10521,10126
+Bˆcklerpark: enge Kurven, manchmal Fuﬂg‰nger auf dem Radweg	q3 10967,10092 10885,10045
 Bˆcklerpark: enge Kurven, Fuﬂg‰nger	q3 10923,10113 10885,10045
 Am Landwehrkanal: Parkweg	q1 10521,10126 10362,10120 10226,10145 10083,10192
 vor dem Kanzleramt: Fuﬂg‰nger, manchmal gesperrt	q1 8120,12756 8123,12615
@@ -149,7 +149,7 @@ zur Sybelstr.: Bordsteine	q4 3712,10566 3739,10576
 Rosa-Luxemburg-Str.: Fuﬂg‰nger, Bordsteine	q4 10699,12929 10701,12969
 Damaschkestr.: Gehweg, Bordsteine	q4 3562,10264 3492,10307
 Br¸cke Schˆnflieﬂer Str.: Fuﬂg‰nger	q3 10593,16037 10581,15936
-(Kolonie Bornholm 1 und 2): Fuﬂg‰nger	q2 10209,16674 10198,16929
+(Kolonie Bornholm 1 und 2): Fuﬂg‰nger, enger Weg, Radfahren nicht erlaubt, ggfs. schieben	q3 10209,16674 10198,16929
 (zum Rolandufer): Gehweg	q2 11351,12221 11278,12185
 Rolandufer/Spreeufer: Gehweg, viele Fuﬂg‰nger, im Sommer Straﬂencafe 	q4 10837,12158 10660,12176 10583,12206 10492,12289 10423,12353 10422,12395
 Herthastr.: Gehweg, Bordsteine	q4 1935,9239 1932,9263
@@ -263,7 +263,6 @@ Heinrich-Lassen-Park: Fuﬂg‰nger (aber Radfahren ist erlaubt!)	q1 6664,8787 6740,
 (Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7498,14658
 An der Malche: teilweise eng und kurvig	q1 1127,20434 1060,20557 995,20590 921,20562 864,20646 673,20800
 Am Friedhof: recht enger Radweg	q1 6380,17836 6376,17687 6347,17381
-Kolonie: enger Weg	q1 10198,16929 10209,16674
 Gerlachsheimer Weg: Fuﬂg‰nger	q2 13151,7914 13251,7972
 Wanzlikpfad: eng und kurvig, Fuﬂg‰nger 	q3 13268,7801 13311,7915
 (Tunnelstr. - Uferweg): Fuﬂg‰nger	q1 15662,9501 15749,9558
@@ -422,6 +421,7 @@ Ida-Wolff-Platz: Fuﬂg‰nger	q2 9210,10614 9192,10528
 Falkstr.: Fuﬂg‰nger	q1 12179,7979 12220,7822
 (Falkstr. - Mittelweg): gemeinsamer Fuﬂ- und Radweg	q1 12220,7822 12224,7799
 (Platanenweg - Willi-S‰nger-Str.): Fuﬂg‰nger	q1 15787,8073 15843,8125
+Carl-Herz-Ufer: gemeinsamer Fuﬂ- und Radweg	q0 10066,10071 10168,10085
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe 	q1 10914,20065 11051,19789
 An der Heilandsweide: Fuﬂg‰nger	q1 8203,1194 8305,1148 8492,1050 8539,1025 8687,950
@@ -521,7 +521,7 @@ M¸hlenbecker Weg: Fuﬂg‰nger	q1 20150,15678 20334,16043
 Herschelstr.: enge Wohnstraﬂe	q1 3222,13252 3262,13406 3276,13481 3292,13622
 Togostr.: Radweg zwischen Fuﬂweg und Spielplatz	q1 6260,16081 6244,16096 6104,16223
 Konradinstr.: eng	q1 8575,5202 8557,5226 8674,5357 8865,5468 8870,5557
-(Livl‰ndische Str. - Schoelerpark): Fuﬂg‰nger	q1 5170,8449 5223,8611
+(Livl‰ndische Str. - Schoelerpark): Fuﬂg‰nger, f¸r Radfahrer freigegeben	q1 5170,8449 5212,8602
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fuﬂg‰nger	q1 821,2714 1017,2823 1126,2885 1262,2975
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fuﬂg‰nger	q1 1453,3085 1659,3226 1687,3244 1715,3257 1977,3414 2271,3571
 Uferpromenade: Absperrung am Restaurant, Fuﬂg‰nger	q3 -1694,17839 -1686,17918 -1660,18035
@@ -1015,6 +1015,8 @@ Waldstr.: Bodenschwellen vor der Schule	q2 20540,4285 20623,4227
 Janitzkystr.: Siedlung, eng	q1 22763,6398 22889,6428 23002,6428 23027,6425 23131,6398 23192,6362 23242,6308
 Kaiser-Wilhelm-Str. - Langkofelweg: Fuﬂg‰nger	q2 6961,3687 6998,3596
 (Uferweg im Wrˆhm‰nnerpark): Fuﬂg‰nger, f¸r Radfahrer nicht freigegeben, ggfs. schieben	q3 -3066,14718 -3006,14774 -2992,14850 -3008,14910 -3008,14992 -2965,15053 -2929,15082 -2955,15129
+Schoelerpark: Fuﬂg‰nger, f¸r Radfahrer nicht freigegeben, ggfs. schieben	q3 5228,8729 5228,8703 5241,8692 5240,8637 5219,8635 5185,8647 5188,8694 5204,8702 5206,8731
+Schoelerpark: Fuﬂg‰nger, f¸r Radfahrer nicht freigegeben, ggfs. schieben	q3 5219,8635 5212,8602
 Eichborndamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
 Revaler Str. (Straﬂenbahn): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13588,11490 13473,11456
 Erkelenzdamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11117,10326 11094,10261
