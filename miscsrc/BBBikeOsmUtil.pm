@@ -543,7 +543,7 @@ EOF
 sub _get_ua {
     require LWP::UserAgent;
     my $ua = LWP::UserAgent->new;
-    $ua->agent("BBBike/$main::VERSION (BBBikeOsmUtil/$VERSION LWP/$LWP::VERSION");
+    $ua->agent("BBBike/$main::VERSION BBBikeOsmUtil/$VERSION LWP/$LWP::VERSION");
     $ua->default_headers->push_header("Accept-Encoding" => "gzip");
     $ua;
 }
