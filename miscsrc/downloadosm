@@ -39,7 +39,8 @@ use constant TIMEOUT => 600;
 my $ua = eval {
     require LWP::UserAgent;
     my $ua = LWP::UserAgent->new;
-    $ua->agent("downloadosm/$VERSION LWP/$LWP::VERSION [part of BBBike]");
+    ## the download server seems to block this user agent --- use the LWP default
+    #$ua->agent("downloadosm/$VERSION LWP/$LWP::VERSION [part of BBBike]");
     $ua->default_headers->push_header("Accept-Encoding" => "gzip");
     $ua->timeout(TIMEOUT);
     $ua;
