@@ -309,7 +309,7 @@ if ($center) {
     my @new_osm_files;
     for my $osm_file (@osm_files) {
 	if (-d $osm_file) {
-	    push @new_osm_files, grep { -f $_ && -s $_ } glob(File::Spec->catfile($osm_file,"*.osm")); # XXX argh, grep duplicates functionality, see "recursive" suggestion above
+	    push @new_osm_files, grep { -f $_ && -s $_ } glob(File::Spec->catfile($osm_file,"*.{osm,osm.gz}")); # XXX argh, grep duplicates functionality, see "recursive" suggestion above
 	} elsif (-z $osm_file) {
 	    # May happen while loading data, so ignore this
 	    warn "Ignore empty file <$osm_file>...\n";
