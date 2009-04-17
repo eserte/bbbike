@@ -32,13 +32,16 @@ use BBBikeUtil qw(is_in_path);
 
 sub save_pwd (&);
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
+
+use constant TIMEOUT => 600;
 
 my $ua = eval {
     require LWP::UserAgent;
     my $ua = LWP::UserAgent->new;
     $ua->agent("downloadosm/$VERSION LWP/$LWP::VERSION [part of BBBike]");
     $ua->default_headers->push_header("Accept-Encoding" => "gzip");
+    $ua->timeout(TIMEOUT);
     $ua;
 };
 if ($@) {
@@ -178,7 +181,7 @@ sub download_osm_tile {
     my($x,$y,$xend,$yend, $reload) = @_;
     my $url = "http://www.openstreetmap.org/api/0.5/map?bbox=$x,$y,$xend,$yend";
     my $dest = "download_$x,$y,$xend,$yend.osm";
-    if (-s $dest && !$reload) {
+    if ((-s $dest || -s "$dest.gz") && !$reload) {
 	warn "$dest already exists, skipping...\n" if $debug;
     } else {
 	if ($ua) {
@@ -205,11 +208,11 @@ sub download_osm_tile {
 	    my @cmd;
 	    if ($ua) {
 	    } elsif (is_in_path("wget")) {
-		@cmd = ('wget', '--timeout=600');
+		@cmd = ('wget', '--timeout=' . TIMEOUT);
 		push @cmd, '--verbose' if $debug >= 2;
 		push @cmd, '-O', $dest, $url;
 	    } elsif (is_in_path("curl")) {
-		@cmd = ('curl', '-s', '-S', '-f', '-m', '600'); 
+		@cmd = ('curl', '-s', '-S', '-f', '-m', TIMEOUT); 
 		push(@cmd, '--verbose') if $debug >= 2;
 		push(@cmd, ('-o', $dest, $url));
 	    } else {
