@@ -121,7 +121,7 @@ sub check {
     my $check = 0;
     while(<F>) {
 	next if /^%/ || /^\s*$/;
-	if (/!Format: (DMS|DDD) (-?\d+(?:\.\d+)) (WGS 84)/) {
+	if (/!Format: (DMS|DDD) (-?\d+(?:\.\d+)?) (WGS 84)/) {
 	    if (ref $self) {
 		my($pos_format, $time_offset, $datum_format) = ($1, $2, $3);
 		$self->change_position_format($pos_format);
