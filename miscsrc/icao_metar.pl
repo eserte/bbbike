@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 # -*- perl -*-
 
 #
@@ -11,6 +11,7 @@
 #
 
 use strict;
+use warnings;
 use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
@@ -20,18 +21,26 @@ use Geo::METAR;
 use Getopt::Long;
 use LWP::UserAgent;
 use Strassen::Core;
+use Time::Local qw(timegm);
 
 my $metar_url = "http://weather.noaa.gov/cgi-bin/mgetmetar.pl?cccc=";
 
 sub usage () {
     die <<EOF;
-usage $0 [-sitecode ...] [datadirectory | icaofile]
+usage $0 [-sitecode ...] [-wettermeldung] [datadirectory | icaofile]
 EOF
 }
 
 my $wanted_site_code;
-GetOptions("sitecode=s" => \$wanted_site_code)
+my $wettermeldung_compatible;
+GetOptions("sitecode=s" => \$wanted_site_code,
+	   "wettermeldung!" => \$wettermeldung_compatible,
+	  )
     or usage;
+
+if ($wettermeldung_compatible && !$wanted_site_code) {
+    die "Please specify also -sitecode if you use -wettermeldung!\n";
+}
 
 my $data_dir_or_file = shift;
 usage if (!defined $data_dir_or_file);
@@ -53,6 +62,7 @@ while() {
     my $r = $s->next;
     last if !@{ $r->[Strassen::COORDS] };
     my($site_code) = $r->[Strassen::NAME] =~ m{^(\S+)};
+    next if ($site_code eq 'EDDI'); # Berlin-Tempelhof is closed, the data is outdated!
     next if (defined $wanted_site_code && $wanted_site_code ne $site_code);
     push @sites, { sitecode => $site_code, record => $r };
 }
@@ -82,5 +92,64 @@ for my $site_def (@sites) {
 
     my $m = Geo::METAR->new;
     $m->metar($metar);
-    warn "$site_code: " . $m->TEMP_C
+
+    if ($wettermeldung_compatible) {
+	print format_wettermeldung($m);
+    } else {
+	print "$site_code: " . $m->dump . "\n";
+    }
 }
+
+sub format_wettermeldung {
+    my $m = shift;
+
+    my @t = gmtime;
+    $t[4]++;
+    $t[5]+=1900;
+    if ($m->DATE > $t[3]) {
+	$t[4]--;
+	if ($t[4] < 1) {
+	    $t[4] = 12;
+	    $t[5]--;
+	}
+    }
+    $t[3] = $m->DATE;
+    my($H,$M) = $m->TIME =~ m{^(\d+):(\d+)};
+    $t[2] = $H;
+    $t[1] = $M;
+    $t[0] = 0;
+
+    $t[4]--;
+    $t[5]-=1900;
+    my $time = timegm(@t);
+
+    my @l = localtime $time;
+    $l[4]++;
+    $l[5]+=1900;
+
+    join('|',
+	 $l[3].".".$l[4].".".$l[5],
+	 $l[2].".".$l[1],
+	 $m->TEMP_C+0,
+	 $m->ALT_HP+0,
+	 $m->WIND_DIR_ABB,
+	 sprintf("%.1f", $m->WIND_MS), # XXX is this max or avg?
+	 "", # XXX humidity is missing, calculate from dew point?
+	 "", # XXX wind avg?
+	 "", # XXX precipitation HOURLY_PRECIP?
+	 join(", ", @{$m->WEATHER}, @{$m->SKY}),
+	);
+}
+
+__END__
+
+=head1 TODO
+
+Aufrufoptionen:
+
+ * datadir/icaobbd: return data for all in file
+ * datadir/icaobbd -near ...: return data for the nearest sitecode
+ * datadir/icaobbd -sitecode ...: file not used!
+ * -sitecode: return data fo this site
+
+=cut
