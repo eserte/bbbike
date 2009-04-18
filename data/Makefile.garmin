@@ -152,7 +152,13 @@ ${PERSISTENTTMPDIR}/gmapsupp.img:	${GMAPSUPP_SRC}
 	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC}
 
 ${PERSISTENTTMPDIR}/berlin_osm.img:
-	${COMBINE_OSM} ${MISCDIR}/download/osm/{berlin,koenigs_wusterhausen,teltow,uckermark,usedom} > ${PERSISTENTTMPDIR}/berlin_combined.osm
+	${COMBINE_OSM} \
+	    ${MISCDIR}/download/osm/berlin \
+	    ${MISCDIR}/download/osm/koenigs_wusterhausen \
+	    ${MISCDIR}/download/osm/teltow \
+	    ${MISCDIR}/download/osm/uckermark \
+	    ${MISCDIR}/download/osm/usedom \
+	        > ${PERSISTENTTMPDIR}/berlin_combined.osm
 	cd ${PERSISTENTTMPDIR} && ( \
 	    ${MKGMAP} --description="Berlin und Umgebung OSM" --mapname=63240011 berlin_combined.osm && \
 	    mv 63240011.img berlin_osm.img )
