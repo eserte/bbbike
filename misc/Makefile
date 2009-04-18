@@ -117,3 +117,7 @@ download-tiled-berlin:
 data_berlin_osm_bbbike:
 	${MISCSRCDIR}/osm2bbd -map bbbike -v -f -o ../data_berlin_osm_bbbike download/osm/berlin
 	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_osm_bbbike
+
+data_berlin_osm_bbbike_untiled:
+	${MISCSRCDIR}/osm2bbd -map bbbike -v -f -o ../data_berlin_osm_bbbike download/osm/berlin.osm.bz2
+	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_osm_bbbike
