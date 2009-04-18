@@ -62,13 +62,12 @@ BEGIN {
 	# XXX don't know whether this is a Tk400 or an old perl problem
 	eval {
 	    require Tk::ProgressSplash;
-	    my $splashtype = 'fast';
-	    if ($^O eq 'MSWin32') {
-		$splashtype = 'normal';
-	    }
+	    my $splashtype = 'normal';
+	    # $splashtype = 'fast'; not used anymore: too unstable,
+	    # fails with MSWin32, failures also seen on Linux x86_64
+	    # systems.
 	    $splash_screen = Tk::ProgressSplash->Show
 		(-splashtype => $splashtype,
-#		 "$FindBin::RealBin/misc/zuerich_splash.xpm",
 		 "$FindBin::RealBin/images/bbbike_splash.xpm",
 		 240, 90, "BBBike", 1);
 	}; warn $@ if $@;
