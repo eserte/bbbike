@@ -21,36 +21,59 @@ use lib ("$FindBin::RealBin/..",
 
 use Strassen::Core;
 
-my $file = shift || die "bbd file?";
-
-my $s = Strassen->new($file);
-$s->init;
-while(1) {
-    my $r = $s->next;
-    my @c = @{ $r->[Strassen::COORDS] };
-    if (!@c) {
-	if ($s->pos != @{ $s->data }) {
-	    die "$file: Mismatch in position " . $s->pos . " != " . @{ $s->data } . "\n";
-	} else {
-	    last;
-	}
-    }
-
-    my $coord_errors = 0;
-    for my $c (@c) {
-	if ($c !~ m{^[-+]?\d+(?:\.\d+)?,[-+]?\d+(?:\.\d+)?$}) {
-	    if ($coord_errors == 0) {
-		warn "$file: Error in coordinate $c, position " . $s->pos . "\n";
-	    } elsif ($coord_errors == 1) {
-		warn "$file: More than one coordinate error, do not report any more...\n";
-	    }
-	    $coord_errors++;
-	}
-    }
-
-    die "$file: Found $coord_errors coordinate error(s)\n" if $coord_errors;
+if (!@ARGV) {
+    die "usage: $0 bbdfile ...";
 }
 
-print "$file: bbd OK\n";
+my $errors = 0;
+FILE: for my $file (@ARGV) {
+    if (-d $file) {
+	print "$file: directory, ignoring...\n";
+	next;
+    }
+    my $s = Strassen->new($file);
+    $s->init;
+    while (1) {
+	my $r = $s->next;
+	if (ref $r->[Strassen::COORDS] ne 'ARRAY') {
+	    chomp(my $line = $s->{Data}[$s->{Pos}]);
+	    warn "$file: wrongly formatted line $s->{Pos}: '$line'\n";
+	    $errors++;
+	    next FILE;
+	}
+	my @c = @{ $r->[Strassen::COORDS] };
+	if (!@c) {
+	    if ($s->pos != @{ $s->data }) {
+		warn "$file: Mismatch in position " . $s->pos . " != " . @{ $s->data } . "\n";
+		$errors++;
+		next FILE;
+	    } else {
+		last;
+	    }
+	}
+
+	my $coord_errors = 0;
+	for my $c (@c) {
+	    if ($c !~ m{^[-+]?\d+(?:\.\d+)?,[-+]?\d+(?:\.\d+)?$}) {
+		if ($coord_errors == 0) {
+		    warn "$file: Error in coordinate $c, position " . $s->pos . "\n";
+		} elsif ($coord_errors == 1) {
+		    warn "$file: More than one coordinate error, do not report any more...\n";
+		}
+		$coord_errors++;
+	    }
+	}
+
+	if ($coord_errors) {
+	    warn "$file: Found $coord_errors coordinate error(s)\n";
+	    $errors++;
+	    next FILE;
+	}
+    }
+
+    print "$file: bbd OK\n";
+}
+
+exit $errors;
 
 __END__
