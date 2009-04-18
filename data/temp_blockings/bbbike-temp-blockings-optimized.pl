@@ -608,7 +608,7 @@ push @temp_blocking,
          'text' => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
          'from' => undef,
          'id' => 1563,
-         'data' => 'userdel	1::inwork 12229,10014 12398,9938
+         'data' => 'userdel	1::inwork 12229,10014 12398,9938 12556,9862
 ',
          'type' => 'gesperrt'
        },
@@ -966,15 +966,7 @@ userdel	q4::inwork 14530,11137 14465,11195
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1240005600,
-         'text' => 'K 6303 Brieselang - Bredow Autobahnbrücke zw. Brieselang und Bredow Brückenabbruch Vollsperrung 14.04.2009-17.04.2009 ',
-         'from' => 1239573600,
-         'id' => 1614,
-         'data' => 'userdel	2::inwork -20109,20341 -19128,19920
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1262300400,
          'text' => 'L 033 Gielsdorfer Str. / Prötzeler Chaussee OL Strausberg, Kreisverk. Abzw. Wriezener Str. Straßenausbau Wriezener Str. gesperrt 20.04.2009-31.12.2009 ',
@@ -1002,16 +994,7 @@ userdel	q4::inwork 14530,11137 14465,11195
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_012244',
-         'until' => 1240005600,
-         'text' => 'Ordensmeisterstr. (Tempelhof) in beiden Richtungen zwischen Lorenzweg und Tempelhofer Damm Baustelle, Straße vollständig gesperrt (bis 17.04.09 abends)',
-         'from' => 1239912175,
-         'id' => 1618,
-         'data' => 'userdel	q4::inwork 9457,5641 9357,5601 9147,5534
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_011757',
          'until' => 1242424799,
