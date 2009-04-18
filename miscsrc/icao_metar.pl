@@ -20,55 +20,84 @@ use lib ("$FindBin::RealBin/..",
 use Geo::METAR;
 use Getopt::Long;
 use LWP::UserAgent;
-use Strassen::Core;
 use Time::Local qw(timegm);
 
 my $metar_url = "http://weather.noaa.gov/cgi-bin/mgetmetar.pl?cccc=";
 
 sub usage () {
     die <<EOF;
-usage $0 [-sitecode ...] [-wettermeldung] [datadirectory | icaofile]
+usage: $0 [-wettermeldung] datadirectory | icaofile
+       $0 [-wettermeldung] -near lon,lat datadirectory | icaofile
+       $0 [-wettermeldung] -sitecode EDDT
 EOF
 }
 
 my $wanted_site_code;
 my $wettermeldung_compatible;
+my $near;
 GetOptions("sitecode=s" => \$wanted_site_code,
 	   "wettermeldung!" => \$wettermeldung_compatible,
+	   "near=s" => \$near,
 	  )
     or usage;
 
-if ($wettermeldung_compatible && !$wanted_site_code) {
-    die "Please specify also -sitecode if you use -wettermeldung!\n";
-}
-
-my $data_dir_or_file = shift;
-usage if (!defined $data_dir_or_file);
-
-my $file;
-if (-d $data_dir_or_file) {
-    $file = $data_dir_or_file . '/icao';
-} else {
-    $file = $data_dir_or_file;
-}
-
-my $s = Strassen->new($file);
 my $ua = LWP::UserAgent->new;
 
 my @sites;
+if ($wanted_site_code) {
+    @sites = ({ sitecode => $wanted_site_code });
+} else {
+    require Strassen::Core;
 
-$s->init;
-while() {
-    my $r = $s->next;
-    last if !@{ $r->[Strassen::COORDS] };
-    my($site_code) = $r->[Strassen::NAME] =~ m{^(\S+)};
-    next if ($site_code eq 'EDDI'); # Berlin-Tempelhof is closed, the data is outdated!
-    next if (defined $wanted_site_code && $wanted_site_code ne $site_code);
-    push @sites, { sitecode => $site_code, record => $r };
+    my $near_s;
+    if ($near) {
+	require Karte::Polar;
+	require Karte::Standard;
+	require Strassen::Util;
+
+	my($lon,$lat) = split /,/, $near;
+	if (!defined $lat) {
+	    usage;
+	}
+	no warnings 'once';
+	$near_s = join(",", $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon,$lat)));
+    }
+
+    my $data_dir_or_file = shift;
+    usage if (!defined $data_dir_or_file);
+
+    my $file;
+    if (-d $data_dir_or_file) {
+	$file = $data_dir_or_file . '/icao';
+    } else {
+	$file = $data_dir_or_file;
+    }
+
+    my $s = Strassen->new($file);
+
+    $s->init;
+    while() {
+	my $r = $s->next;
+	last if !@{ $r->[Strassen::COORDS()] };
+	my($site_code) = $r->[Strassen::NAME()] =~ m{^(\S+)};
+	next if ($site_code eq 'EDDI'); # Berlin-Tempelhof is closed, the data is outdated!
+	my $distance;
+	if ($near_s) {
+	    $distance = Strassen::Util::strecke_s($near_s, $r->[Strassen::COORDS()][0]);
+	}
+	push @sites, { sitecode => $site_code,
+		       record => $r,
+		       (defined $distance ? (distance => $distance) : ()),
+		     };
+    }
+
+    if ($near_s) {
+	@sites = (sort { $a->{distance} <=> $b->{distance} } @sites)[0];
+    }
 }
 
-if ($wanted_site_code && !@sites) {
-    die "Could not find '$wanted_site_code' in '$file'.\n";
+if (!@sites) {
+    die "Could not find any site.\n";
 }
 
 for my $site_def (@sites) {
@@ -77,7 +106,7 @@ for my $site_def (@sites) {
     my $url = $metar_url . $site_code;
     my $resp = $ua->get($url);
     if (!$resp) {
-	warn "Fetching for $r->[Strassen::NAME] failed: " . $resp->status_line;
+	warn "Fetching for $site_code failed: " . $resp->status_line;
 	next;
     }
 
@@ -86,7 +115,7 @@ for my $site_def (@sites) {
     $content =~ m/($site_code\s\d+Z.*?)</g;
     my $metar = $1;
     if (length $metar < 10) {
-	warn "METAR for $r->[Strassen::NAME] too short: '$metar'. Skipping...\n";
+	warn "METAR for $site_code too short: '$metar'. Skipping...\n";
 	next;
     }
 
@@ -95,6 +124,10 @@ for my $site_def (@sites) {
 
     if ($wettermeldung_compatible) {
 	print format_wettermeldung($m);
+	if (!$wanted_site_code) {
+	    print "|$site_code";
+	}
+	print "\n";
     } else {
 	print "$site_code: " . $m->dump . "\n";
     }
