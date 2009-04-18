@@ -548,8 +548,11 @@ for my $osm_file (@osm_files) {
 	    }
 
 	    if (defined $height && $height =~ m{^[+-]?\d+}) {
-		push @or, ["hoehe", "X", $height];
-		#warn $name, $node2ll{$id}, "\n";
+		push @or, ["hoehe", "X", name => $height];
+	    }
+
+	    if (exists $tag{'icao'}) {
+		push @or, ["icao", "X", name => $tag{icao} . (defined $name ? " ($name)" : '')];
 	    }
 
 	    if (!@or && !$ignore_unhandled && !$ignore_underline) {
@@ -560,15 +563,17 @@ for my $osm_file (@osm_files) {
 	    }
 
 	    for my $or (@or) {
-		my($out_file, $cat) = @$or;
+		my($out_file, $cat, %args) = @$or;
 
-		# do not store street name for height database
-		my $name_desc = $out_file eq 'hoehe' ? '' : $name;
+		my $name = $name;
+		if ($args{name}) {
+		    $name = $args{name};
+		}
 
 		if (exists $tag{'url'}) {
 		    push @{$out{$out_file}}, ["#: url: $tag{url}"];
 		}
-		push @{$out{$out_file}}, [$name_desc, [$node2ll{$id}], $cat];
+		push @{$out{$out_file}}, [$name, [$node2ll{$id}], $cat];
 	    }
 	}
     }
