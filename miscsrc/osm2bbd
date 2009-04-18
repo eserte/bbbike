@@ -501,7 +501,7 @@ for my $osm_file (@osm_files) {
 	    } elsif (exists $tag{'place'}) {
 		my $place = $tag{'place'};
 		my $population = exists $tag{'population'} ? $tag{'population'} : $tag{'openGeoDB:population'};
-		if ($population) {
+		if ($population && $place ne 'suburb') { # "Mahlsdorf" is a suburb, but with a population tag
 		    my $cat;
 		    if ($population >= 200000) {
 			$cat = 6;
