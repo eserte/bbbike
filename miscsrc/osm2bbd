@@ -547,8 +547,8 @@ for my $osm_file (@osm_files) {
 		add_underline(\@or, "_power", "X");
 	    }
 
-	    if (defined $height) {
-		push @or, ["hoehe", $height ."\t". "X"];
+	    if (defined $height && $height =~ m{^[+-]?\d+}) {
+		push @or, ["hoehe", "X", $height];
 		#warn $name, $node2ll{$id}, "\n";
 	    }
 
