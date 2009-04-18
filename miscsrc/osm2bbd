@@ -1439,7 +1439,13 @@ sub open_osm {
     }
 
     if (!$dom && !$reader) {
-	die "XML::LibXML has to be installed. Please fetch it from CPAN.\n";
+	if (!-e $osm_file) {
+	    die "The file '$osm_file' does not exist.\n";
+	} elsif (!-r $osm_file) {
+	    die "The file '$osm_file' is not readable.\n";
+	} else {
+	    die "XML::LibXML has to be installed. Please fetch it from CPAN.\n";
+	}
     }
     ($dom, $reader);
 }
