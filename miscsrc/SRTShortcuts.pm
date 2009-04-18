@@ -832,7 +832,7 @@ sub _maybe_orig_file {
 }
 
 sub route_lister {
-    require BBBikeRouteLister;
+    require "$bbbike_rootdir/miscsrc/BBBikeRouteLister.pm";
     my $show_route = sub {
 	my $file = shift;
 	if (defined $file) {
