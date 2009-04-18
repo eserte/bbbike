@@ -83,6 +83,12 @@ sub BBBikeWeather::update_weather {
 	    my %result = ParseWetterkarte::get_result();
 	    $act_line = ParseWetterkarte::formatline(\%result, windrichtung => "windrose");
 	    $act_station = $wetter_station;
+	} elsif ($wetter_station =~ m{metar-(\S+)}) {
+	    my $site_code = $1;
+	    # only needed for indexes (?)
+	    BBBikeWeather::require_wettermeldung();
+	    $act_line = `$FindBin::RealBin/miscsrc/icao_metar.pl -sitecode $site_code -wettermeldung`;
+	    $act_station = $wetter_station;
 	} else {
 	    if ($wetter_station eq 'uptodate') {
 		# Dahlem2 hat keine mittlere Windgeschwindigkeit

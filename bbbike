@@ -268,7 +268,7 @@ $progname = basename($0);
 # Note that $ENV{HOST} is not generally available (or sometimes only
 # as a shell variable with the same name), especially in my non-tcsh
 # configurations.
-$devel_host = ($ENV{HOST} && $ENV{HOST} =~ /^(biokovo|biokovo-amd64|vran|cabulja|cvrsnica|spiff|mom|devpc01|devpc01-debian)(\.|$)/i);
+$devel_host = ($ENV{HOST} && $ENV{HOST} =~ /^(biokovo|biokovo-amd64|mosor|vran|cabulja|cvrsnica|spiff|mom|devpc01|devpc01-debian)(\.|$)/i);
 $os =   $^O eq 'MSWin32' || $^O eq 'os2' || $^O eq 'dos' ? 'win'
       : $^O eq 'MacOS'				    	 ? 'mac'
       : 						   'unix';
@@ -1617,15 +1617,11 @@ $wbm->command(-label => M("Wetterstation").":",
 foreach (['uptodate' => M"aktuellste"],
 	 ['dahlem2'],
 	 ['dahlem1'],
-	 #['tempelhof'],
-	 ($advanced
-	  ? map { ["synop_$_" => "$_ (Synop)"] }
-	  qw(potsdam berlin_dahlem berlin_tegel
-	     berlin_tempelhof berlin_schoenefeld berlin_alexanderplatz)
-	  : ()
-	 ),
 	 ($devel_host && $advanced
-	  ? (['wetterkarte' => 'Wetterkarte Berlin-Dahlem'])
+	  ? (['wetterkarte' => 'Wetterkarte Berlin-Dahlem'],
+	     ['metar-EDDT' => 'METAR Tegel'],
+	     ['metar-EDDB' => 'METAR Schönefeld'],
+	    )
 	  : ()
 	 ),
 	) {
