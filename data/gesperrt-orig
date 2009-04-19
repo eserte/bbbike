@@ -348,8 +348,6 @@ Riastr.	1 18247,9158 18201,8984
 Karl-Bonhoeffer-Nervenklinik: für Unbefugte nicht befahrbar, Strafvollzug	2 5001,19832 5079,19635 5124,19634 5228,19320 5246,19244 5429,19165
 Schöneberger Südgelände: Radfahren verboten, Eintritt 1 Euro	2 7605,7109 7621,7105 7655,7096 7666,7093
 Schöneberger Südgelände: Radfahren verboten, Eintritt 1 Euro	2 7666,7093 7335,5807
-#: by: Karin Kühl:
-Sophie-Taeuber-Arp-Weg	1 3302,2471 3293,2218
 Prießnitzstr.	1 11549,19258 11407,19186 11351,19169
 Klaustaler Str.	1 11439,18890 11384,19067
 Paracelsusstr.	1 11599,19171 11549,19258 11543,19279 11575,19296 11613,19312 11671,19204
@@ -711,7 +709,10 @@ Köthen	1 -85091,-74261 -85089,-74420 -85057,-74512
 Askanischer Platz	1s:q2 8882,10905 8938,10872 8983,10846 9022,10857
 #: by: Ilona Lange (man fährt auf dem Gehweg, sowieso)
 Helbigstr.	1s:q3 20109,4087 20339,3779 20362,3750
-Sophie-Taeuber-Arp-Weg	1s 3302,2471 3293,2218
+#: by: Karin Kühl:
+Sophie-Taeuber-Arp-Weg	1s:q1 3302,2471 3293,2218
+#: by: Eva (philostrata):
+Johanna-Spyri-Weg	1s:q1 3211,2221 3221,2473
 Seelbuschring	1s 8485,4619 8432,4712 8242,4648
 #: note: die Straßenbahn fährt hier auch lang
 Zionskirchstr.	1s:q1 10389,14274 10426,14262
@@ -759,6 +760,8 @@ Zeltinger Platz	1s:q3 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 248
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+#: by: Sabine (schaeffler)
+Altstädter Ring: Mittelstreifen	3nocross -3481,14523 -3498,14413 -3506,14306
 #: by: Steini (immerlocker)
 Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 7007,3747 6961,3687 6805,3481
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11323,12484 11333,12437 11343,12300
