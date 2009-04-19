@@ -1061,7 +1061,7 @@ do-checks:	.check_empty_lines \
 check-disabled:
 
 .check_targets:	${BBD_TARGETS}
-	for f in ${BBD_TARGETS}; do ${PERL} ${MISCSRCDIR}/check_bbd $$f; done
+	${PERL} ${MISCSRCDIR}/check_bbd ${BBD_TARGETS}
 	@touch $@
 
 .check_strassen1:	.strassen.tmp add_str multi_bez_str-orig Berlin.coords.data
