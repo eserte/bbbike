@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd-postprocess,v 1.14 2009/03/22 21:28:03 eserte Exp $
+# $Id: osm2bbd-postprocess,v 1.15 2009/04/19 19:01:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -36,18 +36,22 @@ my %only_target;
 sub usage (;$) {
     my $msg = shift;
     warn $msg, "\n" if $msg;
-    die "usage: $0 " . join(" ", map {
+    die "usage: $0 [--debug=0..2] " . join(" ", map {
 	(my $optname = $_) =~ s{_}{-}g;
 	"[-skip-$optname | -only-$optname]"
-    } @targets);
+    } @targets) . "\n";
 }
 
-GetOptions((map {
+my $debug = 1;
+GetOptions(
+   (map {
     (my $optname = $_) =~ s{_}{-}g;
     ("skip-$optname" => \$skip_target{$_},
      "only-$optname" => \$only_target{$_},
     );
-} @targets))
+} @targets), 
+	"debug=i" => \$debug,
+)
     or usage;
 
 my $miscsrcdir = realpath $FindBin::RealBin;
@@ -70,9 +74,9 @@ for my $target (@targets) {
     if (!defined &{$target_sub}) {
 	die "No subroutine for $target exists";
     }
-    print STDERR "Running target $target ... ";
+    print STDERR "Running target $target ... " if $debug;
     &{$target_sub};
-    print STDERR "\n";
+    print STDERR "\n" if $debug;
 }
 
 sub target_wasserstrassen_lowres {
@@ -104,7 +108,7 @@ sub target_largest_city_is_center {
 	return;
     }
     if ($meta->{center}) {
-	print STDERR "center already set in meta.yml, do not overwrite, skipping";
+	print STDERR "center already set in meta.yml, do not overwrite, skipping" if $debug;
 	return;
     }
     require Data::Dumper;
