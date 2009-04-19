@@ -14,23 +14,58 @@
 #
 
 use strict;
+use warnings;
+
 use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
 
 use Strassen::Core;
+use Getopt::Long;
 
-if (!@ARGV) {
-    die "usage: $0 bbdfile ...";
+my @ignore_files = 
+  qw(Berlin.coords.data Potsdam.coords.data kneipen-info add_str
+	BASE meta\..* temp_blockings opensearch.streetnames 
+	GNUmakefile Makefile.* README .*\.yml
+	add_plaetze ampelschaltung ampelschaltung-orig comments_misc-orig
+	multi_bez_str multi_bez_str-orig plz-orig str_cont_ausnahme umsteigebhf
+	hoehe
+  );
+
+my $debug = 1;
+my $help;
+my $dir;
+
+sub usage () {
+    die <<EOF;
+usage: $0 [ --debug=0..2] [--help] bbdfiles ...
+EOF
 }
+
+GetOptions(
+           "debug=i" => \$debug,
+           "help" => \$help,
+           "dir=s" => \$dir,
+          )
+    or usage;
+
+push(@ARGV, glob("$dir/*")) if $dir;
+
+usage if ($help || !@ARGV);
 
 my $errors = 0;
 FILE: for my $file (@ARGV) {
     if (-d $file) {
-	print "$file: directory, ignoring...\n";
+	print "$file: directory, ignoring...\n" if $debug >= 2;
 	next;
     }
+
+    if (grep  { $file =~ $_ } @ignore_files) {
+	print "Ignore file $file\n" if $debug >= 2;
+	next;
+    }
+
     my $s = Strassen->new($file);
     $s->init;
     while (1) {
@@ -71,7 +106,7 @@ FILE: for my $file (@ARGV) {
 	}
     }
 
-    print "$file: bbd OK\n";
+    print "$file: bbd OK\n" if $debug;
 }
 
 exit $errors;
