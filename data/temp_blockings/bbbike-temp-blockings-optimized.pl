@@ -627,7 +627,16 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_011669',
+         'until' => 1241128799,
+         'text' => 'Köpenicker Str. (Kreuzberg) Richtung Bethaniendamm zwischen Brückenstr. und Michaelkirchstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 04.2009)',
+         'from' => 1238347459,
+         'id' => 1570,
+         'data' => 'userdel	q4::inwork; 11242,11720 11324,11689 11574,11594
+',
+         'type' => 'handicap'
+       },
        undef,
        {
          'source_id' => 'IM_011767',
@@ -686,15 +695,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1240092000,
-         'text' => 'K 6828 Altfriesack-Wuthenow zw. Seehof u. Karwe Straßenbauarbeiten Vollsperrung 08.04.2009-18.04.2009 ',
-         'from' => 1239055200,
-         'id' => 1579,
-         'data' => 'userdel	2::inwork -27196,50015 -27421,50349 -28001,50966 -28368,51517 -28736,52387
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1275256800,
          'text' => 'K 6910 Am Wasser OD Schwielowsee, zw. Baumgartenbrück u. OA Kanal- u. Straßenbau halbseitig gesperrt; Einbahnstraße 02.04.2009-30.05.2010 ',
@@ -847,16 +848,7 @@ userdel	q4::inwork 14530,11137 14465,11195
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_012112',
-         'until' => 1240164000,
-         'text' => 'Perleberger Str. (Tiergarten) Richtung Stromstraße zwischen Heidestr. und Rathenower Str. Baustelle, Fahrtrichtung gesperrt, ebenso die Einmündungsbereiche Quitzowstr. und Lehrter Str. zur Perleberger Str. über Heidestr. (bis 19.04.2009, 20 Uhr)',
-         'from' => 1238954845,
-         'id' => 1601,
-         'data' => 'userdel	q4::inwork; 7378,14559 7180,14419 7132,14375 6992,14251 6807,14093 6730,14021 6649,13947 6493,13822 6366,13716 6230,13596
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1243634400,
          'text' => 'B 002 Wittenberg - LG - Treuenbrietzen OD Marzahna Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 01.04.2009-29.05.2009 ',
@@ -884,15 +876,7 @@ userdel	q4::inwork 14530,11137 14465,11195
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1240092000,
-         'text' => 'B 167 Bad Freienwalde - Eberswalde OD Falkenberg, Karl-Marx-Str. Straßenbauarbeiten Vollsperrung 14.04.2009-18.04.2009 ',
-         'from' => 1239573600,
-         'id' => 1605,
-         'data' => 'userdel	q4::inwork 47952,44559 47538,44649
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1241820000,
          'text' => 'K 6304 Chaussee OD Priort, Bahnübergang Gleisbauarbeiten Vollsperrung 27.04.2009-08.05.2009 ',
@@ -911,15 +895,7 @@ userdel	q4::inwork 14530,11137 14465,11195
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1240092000,
-         'text' => 'L 281 Neureetz-Altranft zw. Neureetz u. Croustellier Deckenerneuerung Vollsperrung 14.04.2009-18.04.2009 ',
-         'from' => 1239573600,
-         'id' => 1608,
-         'data' => 'userdel	2::inwork 59730,42362 58564,43539
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_012136',
          'until' => 1241128799,
@@ -948,24 +924,8 @@ userdel	q4::inwork 14530,11137 14465,11195
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1240092000,
-         'text' => 'B 246 Lindenberg - Wendisch Rietz Bahnübergang OL Lindenberg Gleisbauarbeiten Vollsperrung 18.04.2009-18.04.2009 ',
-         'from' => 1239919200,
-         'id' => 1612,
-         'data' => 'userdel	2::inwork 59522,-22230 59293,-21524
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1240092000,
-         'text' => 'B 273 Bernauer Straße OL Oranienburg, zw. Liebigstr. u. Lehnitzstr. Oranienburger Autofrühling Vollsperrung 18.04.2009-18.04.2009 ',
-         'from' => 1239919200,
-         'id' => 1613,
-         'data' => 'userdel	q4::inwork -1032,38792 -1253,38715
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        {
          'until' => 1262300400,
