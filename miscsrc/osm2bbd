@@ -171,6 +171,7 @@ my %resolve_node_later;
 my %resolved;
 my @bbox_wgs84;
 my %global_directives;
+my %place_to_population;
 
 %global_directives =
     (
@@ -519,6 +520,7 @@ for my $osm_file (@osm_files) {
 			$cat = 1;
 		    }
 		    push @or, ["orte", $cat];
+		    $place_to_population{$node2ll{$id}} = $population;
 		} else {
 		    if ($place eq 'hamlet' || $place eq 'suburb' || $place eq 'locality') {
 			push @or, ["orte", 0];
@@ -1111,6 +1113,7 @@ for my $osm_file (@osm_files) {
 }
 
 resolve_node_fallback();
+sort_by_population();
 
 ######################################################################
 # OUTPUT
@@ -1258,6 +1261,16 @@ sub normalize_name_sbahnhof {
     my $name = shift;
     $name =~ s{^S(\s+|-Bhf)}{};
     $name;
+}
+
+sub sort_by_population {
+    @{$out{"orte"}} = map {
+	$_->[1]
+    } sort {
+	$b->[0] <=> $a->[0]
+    } map {
+	[$place_to_population{$_->[1][0]} || 0, $_]
+    } @{$out{"orte"}};
 }
 
 sub output_data {
