@@ -101,9 +101,11 @@ OSMOSIS_JAR=	/opt/osmosis-0.24.1-java5/osmosis.jar
 OSMOSIS_JAR=	/usr/local/src/osmosis-0.24.1-java5/osmosis.jar
 .endif
 
+# XXX maybe bzip2 (on the fly) the output?
 split-berlin-brandenburg-from-germany:	${OSM_DOWNLOAD_DIR}/germany.osm.bz2
 	java -jar ${OSMOSIS_JAR} --rx ${OSM_DOWNLOAD_DIR}/germany.osm.bz2 --bb top=53.42 bottom=51.44 left=11.6 right=14.8 --wx ${OSM_DOWNLOAD_DIR}/berlin-brandenburg-splitted.osm
 
+# This target takes about 25 minutes on a 1.7MHz machine (2009-04-20)
 convert-splitted-berlin-brandenburg:
 	${MISCSRCDIR}/osm2bbd -country de -lang de -map bbbike -v -f -o ../data_berlin_brandenburg_osm_bbbike ${OSM_DOWNLOAD_DIR}/berlin-brandenburg-splitted.osm
 	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_brandenburg_osm_bbbike
