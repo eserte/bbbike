@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.39 2009/04/06 22:21:08 eserte Exp $
+# $Id: plz.t,v 1.40 2009/04/22 19:53:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004,2006,2007 Slaven Rezic. All rights reserved.
@@ -40,6 +40,8 @@ use BBBikeTest qw(eq_or_diff);
 use strict;
 
 my @approx_tests = (
+		    ["Altstädter Ring" => "Altstädter Ring"], # exact match with umlaut
+		    ($] >= 5.008 ? [eval q{ substr("Altstädter Ring\x{20ac}",0,-1) }, "Altstädter Ring"] : ()), # forcing utf8
 		    #["anhalterbahnho", "Anhalter Bahnhof"], # fails, because "plaetze" is not in PLZ.pm object
 		    ["kreutzbergstr" => "Kreuzbergstr."],
 		    ["Karl-Herz-Ufer" => "Carl-Herz-Ufer"],
