@@ -686,15 +686,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1240178400,
-         'text' => 'K 6722 Bornow - Groß Rietz Bahnübergang bei Bornow Gleisbauarbeiten Vollsperrung 19.04.2009-19.04.2009 ',
-         'from' => 1240005600,
-         'id' => 1578,
-         'data' => 'userdel	2::inwork 64933,-24619 64924,-23029
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1275256800,
@@ -705,15 +697,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1240178400,
-         'text' => 'K 7126 B 169 Leuthen - Koschendorf Drebkau, OT Leuthen, Hauptstraße 75 Jahrfeier FFw Leuthen Vollsperrung 19.04.2009-19.04.2009 ',
-         'from' => 1240005600,
-         'id' => 1581,
-         'data' => 'userdel	q4::inwork 69846,-78006 69561,-77883 69446,-77826
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1242424800,
          'text' => 'K 7234 Goethestraße OD Dabendorf Kanalarbeiten halbseitig gesperrt; Einbahnstraße 14.03.2009-15.05.2009 ',
@@ -752,25 +736,9 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1240178400,
-         'text' => 'L 051 Cottbus - Burg Kreisel Briesen Ri. Burg Ausbauarbeiten Vollsperrung 30.03.2009-19.04.2009 ',
-         'from' => 1238277600,
-         'id' => 1588,
-         'data' => 'userdel	2::inwork 67790,-65471 69116,-65620 69513,-65962 70038,-66419 70748,-67199 71950,-68237 72284,-68499
-',
-         'type' => 'gesperrt'
-       },
        undef,
-       {
-         'until' => 1240178400,
-         'text' => 'L 056 Klein Mehßow-Crinitz OD Fürstlich Drehna, zw. Driftweg u. Crinitzer Straße Motocross Meisterschaften Vollsperrung 17.04.2009-19.04.2009 ',
-         'from' => 1239832800,
-         'id' => 1590,
-         'data' => 'userdel	2::inwork 39419,-72066 39608,-71896
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        {
          'until' => 1262300400,
@@ -1002,12 +970,13 @@ userdel	q4::inwork 14530,11137 14465,11195
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'until' => 1240178400,
-         'text' => 'L 085 Linthe - Brück zw. AS zur A 9 und Einmündg. Gewerbegebiet ADAC StartUp Day Vollsperrung 19.04.2009-19.04.2009 ',
-         'from' => 1240005600,
-         'id' => 1624,
-         'data' => 'userdel	2::inwork -32763,-26409 -31197,-28211
+         'until' => undef,
+         'text' => 'Anwohner haben den Uferweg versperrt',
+         'from' => undef,
+         'id' => 1625,
+         'data' => 'userdel	2::temp -8625,-1176 -8700,-997 -8813,-933 -8913,-813 -9103,-813 -9239,-739 -9337,-668 -9365,-610 -9454,-434 -9562,-325
 ',
          'type' => 'gesperrt'
        }

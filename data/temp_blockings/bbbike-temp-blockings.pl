@@ -577,7 +577,7 @@ EOF
        text  => 'B 96A; (Schönfließer Str.); OL Schildow; grundh. Straßenbau Vollsperrung; 16.08.2004-11.09.2004 ',
        type  => 'handicap',
       data  => <<EOF,
-userdel	q4 8194,25966 8182,25608
+userdel	q4 8187,25897 8182,25608
 EOF
      },
      { from  => 1092520800, # 2004-08-15 00:00
@@ -1165,7 +1165,7 @@ EOF
        text  => 'L 21; (Mühlenbecker Str.); OL Schildow grundh. Straßenbau Vollsperrung 16.08.2004-01.01.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 8231,26584 8194,25966
+userdel	q4 8230,26610 8243,26462 8187,25897
 EOF
      },
      { from  => 1099177200, # 2004-10-31 01:00
@@ -13749,6 +13749,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -32763,-26409 -31197,-28211
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Anwohner haben den Uferweg versperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp -8625,-1176 -8700,-997 -8813,-933 -8913,-813 -9103,-813 -9239,-739 -9337,-668 -9365,-610 -9454,-434 -9562,-325
 EOF
      },
     );
