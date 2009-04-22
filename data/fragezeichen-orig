@@ -11,12 +11,13 @@
 #: last_checked: 2008-06-21
 #: XXX: laut http://www.berlin.de/ba-pankow/presse/archiv/20081009.1220.111237.html sollten die Bauarbeiten nun beendet sein
 Wisbyer Str.: Radstreifen sind noch provisorisch	? 12091,16209 12026,16247 11887,16320 11828,16335 11807,16340 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 11448,16398 11397,16405 11289,16423 11019,16465
-#: last_checked: 2008-12-13
+#: last_checked: 2009-04-01
 Frankfurter Allee: Radstreifen ist noch provisorisch	?; 15361,12071 15117,12106
 # Hier scheint nichts mehr zu passieren: #: last_checked: 2008-04-08 Wilhelmstr. (Kreuzberg)	? 9376,10393 9378,10539 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286
 #: last_checked: 2008-10-11
 Alt-Moabit zwischen Kirch- und Paulstraße	? 7195,13046 6966,13075 6860,13093 6757,13112 6661,13130
 #: last_checked: 2009-03-16
+#: next_check: 2009-06-15
 #: XXX: die ersten Meter in der Breiten Str. sind noch Baustelle ohne Radspuren
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0709/nachricht2788.html
 Breite Str./Werderscher Markt	? 10267,12305 10170,12261 10109,12238 10084,12228 9972,12184
@@ -778,7 +779,7 @@ Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23297,14772 23288,14719 23298,
 Beilsteiner Str.: Qualität (laut ADFC-Karte im südlichen Abschnitt gut geeignet; zumindest in Höhe Allee der Kosmonauten asphaltiert)	? 18749,12413 18800,12838 18832,13099 18852,13269 18875,13473 18871,13796 18859,14048 18998,14089 19025,14037
 Bleicheroder Str. - Pasewalker Str.: existiert eine Verbindung für Radfahrer entlang der Tram-Trasse?	? 11805,19071 11937,19175
 #: XXX: ein anonymer Eintrag: eng schlechter straßenbelag, Q2
-Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11147,23778 10889,23381 10775,23253 10396,23128 9890,22932
+Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11101,23708 10889,23381 10775,23253 10396,23128 9890,22932
 Wriezener/Osloer Str.: ist das Abbiegen wegen der Straßenbahn möglich?	? 9210,16638
 Laut <cp6net$f0g$1@zeppelin.rz.uni-potsdam.de> ist die Eisenbahnbrücke für Fußgänger begehbar, laut <cn2fr0taoncnlu6s84inbhgpo8lq0u0bh2@4ax.com> sogar offizieller Bestandteil des Elbe-Radwegs	? -92087,-49506 -91387,-49350
 Weg entlang der Elbe: Qualität?	? -91387,-49350 -91150,-49775 -90062,-50750 -89709,-51230
@@ -1060,7 +1061,7 @@ Göttin - Neu-Töplitz: Qualität? Ausschilderung?	? -24098,4329 -23819,4206 -23597
 Göttin - Neu-Töplitz (längere Alternativstrecke): Qualität? Ausschilderung?	? -24098,4329 -23927,4682 -23439,4685 -22782,4597 -22836,4190 -22906,4136 -22909,4076
 Beelitz - Schlunkendorf - Kähnsdorf: Qualität? Nur für Radfahrer offen (von Schlunkendorf bis Kähnsdorf)?	? -15840,-19875 -15820,-18897 -15477,-18643 -15211,-18664 -15160,-18324 -15198,-18059 -14322,-17043 -14233,-16484 -14270,-15906
 Schildower Weg, Teil des Barnimer Dörferwegs: Qualität? (laut ADFC-Karte mäßig oder schlecht geeignet)	? 8415,24361 8212,24258 8198,24225 7956,24083 7887,24043 7874,24035
-Möllersfelder Weg - Schillingweg: Qualität (möglicherweise guter Feldweg)? Teil des Barnimer Dörferwegs?	? 10799,24194 11147,23778
+Möllersfelder Weg - Schillingweg: Qualität (möglicherweise guter Feldweg)? Teil des Barnimer Dörferwegs?	? 10799,24194 11101,23708
 (Am Schloss Schönhausen): Qualität, für Autofahrer befahrbar?	? 10390,19069 10322,19046 10278,19072 10249,19148 10223,19223 10243,19267 10308,19297
 Schloßallee - Blankenburger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10661,19307 10481,19344 10377,19565
 #: XXX: zumindestens für den südlichen Abschnitt bestätigt, aber auf dem Luftbild sieht es so aus, als ob ein kleiner Abschnitt asphaltiert sein könnte:
@@ -3507,3 +3508,4 @@ Azaleenstr.: Qualität? Qualität jenseits der Birkenstr.? Gibt es einen Zugang fü
 Am Tierpark: wo genau ist die neue Fußgängerampel?	? 18578,10293
 Jahnstr. (Hermsdorf): Qualität?	? 3707,22864 3689,23078
 Hibiskusweg - Romain-Rolland-Str.: existiert eine für Radfahrer befahrbare Verbindung? Qualität?	? 13247,17825 13214,17742
+Mönchmühlenstr.: laut osm ist die Straße teilweise für den Kfz-Verkehr gesperrt, stimmt das?	? 8780,26384 8684,26216 8570,26107 8302,25963

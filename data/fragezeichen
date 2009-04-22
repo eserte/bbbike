@@ -297,7 +297,7 @@ Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23297,14772 23288,14719 23298,14685 23379,14514
 Beilsteiner Str.: Qualität (laut ADFC-Karte im südlichen Abschnitt gut geeignet; zumindest in Höhe Allee der Kosmonauten asphaltiert)	? 18749,12413 18800,12838 18832,13099 18852,13269 18875,13473 18871,13796 18859,14048 18998,14089 19025,14037
 Bleicheroder Str. - Pasewalker Str.: existiert eine Verbindung für Radfahrer entlang der Tram-Trasse?	? 11805,19071 11937,19175
-Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11147,23778 10889,23381 10775,23253 10396,23128 9890,22932
+Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11101,23708 10889,23381 10775,23253 10396,23128 9890,22932
 Wriezener/Osloer Str.: ist das Abbiegen wegen der Straßenbahn möglich?	? 9210,16638
 Laut <cp6net$f0g$1@zeppelin.rz.uni-potsdam.de> ist die Eisenbahnbrücke für Fußgänger begehbar, laut <cn2fr0taoncnlu6s84inbhgpo8lq0u0bh2@4ax.com> sogar offizieller Bestandteil des Elbe-Radwegs	? -92087,-49506 -91387,-49350
 Weg entlang der Elbe: Qualität?	? -91387,-49350 -91150,-49775 -90062,-50750 -89709,-51230
@@ -518,7 +518,7 @@ Göttin - Neu-Töplitz: Qualität? Ausschilderung?	? -24098,4329 -23819,4206 -23597
 Göttin - Neu-Töplitz (längere Alternativstrecke): Qualität? Ausschilderung?	? -24098,4329 -23927,4682 -23439,4685 -22782,4597 -22836,4190 -22906,4136 -22909,4076
 Beelitz - Schlunkendorf - Kähnsdorf: Qualität? Nur für Radfahrer offen (von Schlunkendorf bis Kähnsdorf)?	? -15840,-19875 -15820,-18897 -15477,-18643 -15211,-18664 -15160,-18324 -15198,-18059 -14322,-17043 -14233,-16484 -14270,-15906
 Schildower Weg, Teil des Barnimer Dörferwegs: Qualität? (laut ADFC-Karte mäßig oder schlecht geeignet)	? 8415,24361 8212,24258 8198,24225 7956,24083 7887,24043 7874,24035
-Möllersfelder Weg - Schillingweg: Qualität (möglicherweise guter Feldweg)? Teil des Barnimer Dörferwegs?	? 10799,24194 11147,23778
+Möllersfelder Weg - Schillingweg: Qualität (möglicherweise guter Feldweg)? Teil des Barnimer Dörferwegs?	? 10799,24194 11101,23708
 (Am Schloss Schönhausen): Qualität, für Autofahrer befahrbar?	? 10390,19069 10322,19046 10278,19072 10249,19148 10223,19223 10243,19267 10308,19297
 Schloßallee - Blankenburger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10661,19307 10481,19344 10377,19565
 Blaubeerweg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 10932,22184 10979,21977 10993,21948 11000,21858 11060,21694
@@ -2642,6 +2642,7 @@ Azaleenstr.: Qualität? Qualität jenseits der Birkenstr.? Gibt es einen Zugang fü
 Am Tierpark: wo genau ist die neue Fußgängerampel?	? 18578,10293
 Jahnstr. (Hermsdorf): Qualität?	? 3707,22864 3689,23078
 Hibiskusweg - Romain-Rolland-Str.: existiert eine für Radfahrer befahrbare Verbindung? Qualität?	? 13247,17825 13214,17742
+Mönchmühlenstr.: laut osm ist die Straße teilweise für den Kfz-Verkehr gesperrt, stimmt das?	? 8780,26384 8684,26216 8570,26107 8302,25963
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
@@ -2757,7 +2758,7 @@ Rheinpfalzallee: geflickter Asphalt (bis 2007-10-15 wird der Asphaltbelag erneue
 Ortsdurchfahrt Buckow: schlechtes Kopfsteinpflaster (nach den Bauarbeiten (2006-12-31) vielleicht asphaltiert?)	? 55786,18881 55877,18248 55700,18101 55623,17923 55524,17754 55164,17565
 Jühnsdorf: Asphalt (existiert durch Jühnsdorf ein Radweg?)	? 9792,-12090 9345,-11425 9472,-11297 9578,-10891
 Dahlwitz - Neuenhagen: teilweise nur mäßiger Asphalt (nach den Bauarbeiten (2006-10-31) vielleicht besserer Asphalt?)	? 29093,13456 29743,14143
-Schildow: Asphalt (früher mäßiges Kopfsteinpflaster (bis Ortsgrenze Mühlenbeck), heute wahrscheinlich Asphalt?)	? 8194,25966 8231,26584 8209,26804 8189,26883 8103,27587
+Schildow: Asphalt (früher mäßiges Kopfsteinpflaster (bis Ortsgrenze Mühlenbeck), heute wahrscheinlich Asphalt?)	? 8187,25897 8243,26462 8230,26610 8209,26804 8189,26883 8103,27587
 Sputendorf: teil Kopfsteinpflaster, OK (Stimmt das? Oder ist das Stück in Sputendorf auch asphaltiert?)	? -1316,-7721 -1734,-7716 -2500,-7557
 Fahlhorst: schlechtes Kopfsteinpflaster (Stimmt das noch immer?)	? -5709,-10987 -5452,-11456
 Werder - Golm: relativ glatter Feldweg mit einigen Schlaglöchern (welche Nummer des F-Wegs?)	? -21063,-2021 -20933,-1960 -20719,-1956 -20528,-1962

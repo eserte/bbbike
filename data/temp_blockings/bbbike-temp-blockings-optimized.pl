@@ -913,15 +913,7 @@ userdel	q4::inwork 14530,11137 14465,11195
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1240264800,
-         'text' => 'K 6425 Lindenallee OD Hoppegarten, zw. Kreisverkehr und An der Zoche Deckeneinbau Vollsperrung 16.04.2009-20.04.2009 ',
-         'from' => 1239746400,
-         'id' => 1617,
-         'data' => 'userdel	q4::inwork 28510,12507 28287,12471
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_011757',
