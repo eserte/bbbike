@@ -32,6 +32,10 @@ $UNINTERESTING_TAGS = qr{^(name|created_by|source|url)$};
 
 my $osm_download_file_qr = qr{/download_(\d+\.\d+),(\d+\.\d+),(\d+\.\d+),(\d+\.\d+)\.osm$}; # XXX no support for south and west
 
+use vars qw($OSM_API_URL);
+#$OSM_API_URL = "http://www.openstreetmap.org/api/0.5";
+$OSM_API_URL = "http://www.openstreetmap.org/api/0.6";
+
 sub register {
     _create_images();
 }
@@ -77,7 +81,7 @@ sub mirror_and_plot_visible_area {
 			main::status_message("File '$file' does not have the expected pattern '$osm_download_file_qr'", "die");
 		    }
 		    my($this_x0,$this_y0,$this_x1,$this_y1) = ($1, $2, $3, $4);
-		    my $url = "http://www.openstreetmap.org/api/0.5/map?bbox=$this_x0,$this_y0,$this_x1,$this_y1";
+		    my $url = "$OSM_API_URL/map?bbox=$this_x0,$this_y0,$this_x1,$this_y1";
 		    main::status_message("Mirror $url ...", "info"); $main::top->update;
 		    main::IncBusy($main::top);
 		    eval {
@@ -113,7 +117,7 @@ sub download_and_plot_visible_area {
     my $ua = _get_ua();
     my(undef,$tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ".osm");
     local $defer_restacking = 1;
-    my $url = "http://www.openstreetmap.org/api/0.5/map?bbox=$x0,$y0,$x1,$y1";
+    my $url = "$OSM_API_URL/map?bbox=$x0,$y0,$x1,$y1";
     main::status_message("Download $url to $tmpfile...", "info");
     warn "Latest downloaded temporary .osm file is $tmpfile\n";
     main::IncBusy($main::top);
@@ -145,8 +149,8 @@ sub _get_visible_area {
     my(@corners) = $c->get_corners;
     require Karte::Polar;
     require Karte::Standard;
-    my($x0,$y0,$x1,$y1) = ($Karte::Polar::obj->standard2map(main::anti_transpose(@corners[0,1])), 
-			   $Karte::Polar::obj->standard2map(main::anti_transpose(@corners[2,3])));
+    my($x0,$y0,$x1,$y1) = ($Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(main::anti_transpose(@corners[0,1]))),
+			   $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(main::anti_transpose(@corners[2,3]))));
     normalize_rectangle($x0,$y0,$x1,$y1);
 }
 
@@ -543,7 +547,7 @@ EOF
 sub _get_ua {
     require LWP::UserAgent;
     my $ua = LWP::UserAgent->new;
-    $ua->agent("BBBike/$main::VERSION BBBikeOsmUtil/$VERSION LWP/$LWP::VERSION");
+    #$ua->agent($ua->agent . " BBBike/$main::VERSION BBBikeOsmUtil/$VERSION");
     $ua->default_headers->push_header("Accept-Encoding" => "gzip");
     $ua;
 }
