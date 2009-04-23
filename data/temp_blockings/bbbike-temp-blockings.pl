@@ -13247,7 +13247,7 @@ userdel	1::inwork 12229,10014 12398,9938 12556,9862
 EOF
      },
      { from  => 1238954607, # 2009-04-05 20:03
-       until => 1257029999, # 2009-10-31 23:59
+       until => 1240518023, # 2009-10-31 23:59 1257029999
        text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Französische Str. und Jägerstr. Baustelle, Fahrtrichtung gesperrt (bis 10.2009)',
        type  => 'gesperrt',
        source_id => 'IM_009981',
@@ -13316,9 +13316,9 @@ EOF
 userdel	q4::inwork 8536,11063 8483,10900
 EOF
      },
-     { from  => 1238261160, # 2009-03-28 18:26
-       until => undef, # XXX
-       text  => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt (bis auf weiteres)',
+     { from  => 1240517859, # 2009-04-23 22:17
+       until => 1242424799, # 2009-05-15 23:59
+       text  => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt (bis Mitte 05.09)',
        type  => 'handicap',
        source_id => 'IM_011767',
        data  => <<EOF,
@@ -13620,7 +13620,7 @@ userdel	2::inwork 59730,42362 58564,43539
 EOF
      },
      { from  => 1239657365, # 2009-04-13 23:16
-       until => 1241128799, # 2009-04-30 23:59
+       until => 1240517989, # 2009-04-30 23:59 1241128799
        text  => 'Bernstorffstr. (Reinickendorf) Richtung Berliner Str. zwischen Buddestr. und Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 04.2009)',
        type  => 'handicap',
        source_id => 'IM_012136',
@@ -13757,6 +13757,57 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp -8625,-1176 -8700,-997 -8813,-933 -8913,-813 -9103,-813 -9239,-739 -9337,-668 -9365,-610 -9454,-434 -9562,-325
+EOF
+     },
+     { from  => 1240517911, # 2009-04-23 22:18
+       until => 1240840800, # 2009-04-27 16:00
+       text  => 'Alt-Köpenick (Köpenick) in der Altstadt-Köpenick Veranstaltung, Sperrungen (bis 27.04.09, 16 Uhr)',
+       type  => 'handicap',
+       source_id => 'IM_012333',
+       data  => <<EOF,
+userdel	q4::temp 22196,4847 22161,4734 22138,4661 22111,4562 22093,4499
+EOF
+     },
+     { from  => 1240517963, # 2009-04-23 22:19
+       until => 1243807199, # 2009-05-31 23:59
+       text  => 'Rathausstr. (Mitte) Richtung Alexanderplatz zwischen Breitestr. und Spandauer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.09)',
+       type  => 'handicap',
+       source_id => 'IM_012342',
+       data  => <<EOF,
+userdel	q4::inwork; 10267,12305 10362,12351 10422,12395 10476,12432 10584,12507
+EOF
+     },
+     { from  => 1240518036, # 2009-04-23 22:20
+       until => 1241128799, # 2009-04-30 23:59
+       text  => 'Glinkastr. (Mitte) Kreuzungsbereich Behrenstr. Baustelle, gesperrt (bis Ende 04.09)',
+       type  => 'handicap',
+       source_id => 'IM_012301',
+       data  => <<EOF,
+userdel	q4::inwork 9183,12076 9164,12172
+EOF
+     },
+     { from  => 1240524000, # 2009-04-24 00:00
+       until => 1240783200, # 2009-04-27 00:00
+       text  => 'B 096 Straße der Jugend OL Zossen zw.York- und Mittenwalder-/Baruther Str. Deckschichteinbau Vollsperrung 25.04.2009-26.04.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 14604,-22009 14714,-22665
+EOF
+     },
+     { from  => 1241301600, # 2009-05-03 00:00
+       until => 1259881200, # 2009-12-04 00:00
+       text  => 'B 198 Neubrandenburger Straße OD Prenzlau, Brücke über die Ücker Brückenneubau Vollsperrung 04.05.2009-03.12.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 39239,101950 39066,102017
+EOF
+     },
+     { from  => 1240696800, # 2009-04-26 00:00
+       until => 1240869600, # 2009-04-28 00:00
+       text  => 'L 338 Hauptstraße OL Neuenhagen, vor Grundst. Nr. 32 Kranaufstellung Vollsperrung 27.04.2009-27.04.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 30179,13667 30795,13191
 EOF
      },
     );

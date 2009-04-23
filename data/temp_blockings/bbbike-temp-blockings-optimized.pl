@@ -612,16 +612,7 @@ push @temp_blocking,
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_009981',
-         'until' => 1257029999,
-         'text' => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Französische Str. und Jägerstr. Baustelle, Fahrtrichtung gesperrt (bis 10.2009)',
-         'from' => 1238954607,
-         'id' => 1564,
-         'data' => 'userdel	1::inwork 9183,12076 9201,11968
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -640,9 +631,9 @@ push @temp_blocking,
        undef,
        {
          'source_id' => 'IM_011767',
-         'until' => undef,
-         'text' => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt (bis auf weiteres)',
-         'from' => 1238261160,
+         'until' => 1242424799,
+         'text' => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt (bis Mitte 05.09)',
+         'from' => 1240517859,
          'id' => 1572,
          'data' => 'userdel	q4::inwork; 16153,10818 16032,10842
 ',
@@ -864,16 +855,7 @@ userdel	q4::inwork 14530,11137 14465,11195
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_012136',
-         'until' => 1241128799,
-         'text' => 'Bernstorffstr. (Reinickendorf) Richtung Berliner Str. zwischen Buddestr. und Berliner Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 04.2009)',
-         'from' => 1239657365,
-         'id' => 1609,
-         'data' => 'userdel	q4::inwork; 2241,20487 2029,20331
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1243634400,
          'text' => 'B 102 Belziger Straße OD Treuenbrietzen, Kreisverkehr Ri. Belzig Sanierung Kreisverkehr Vollsperrung 15.04.2009-29.05.2009 ',
@@ -925,16 +907,7 @@ userdel	q4::inwork 14530,11137 14465,11195
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_012235',
-         'until' => 1240437600,
-         'text' => 'Steglitzer Damm (Steglitz) Richtung Attilastr. zwischen Albrechtstr. und Presselstr. geplatzte Wasserleitung, gesperrt (bis ca. 22.04.09)',
-         'from' => 1239912306,
-         'id' => 1620,
-         'data' => 'userdel	q4::inwork; 6053,4942 6191,4923
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1247263200,
          'text' => 'L 015 Fürstenberger Straße OD Lychen, zw. Markt u. Fürstenberger Tor Kanal- u. Straßenbau Vollsperrung 20.04.2009-10.07.2009 ',
@@ -971,6 +944,63 @@ userdel	q4::inwork 14530,11137 14465,11195
          'data' => 'userdel	2::temp -8625,-1176 -8700,-997 -8813,-933 -8913,-813 -9103,-813 -9239,-739 -9337,-668 -9365,-610 -9454,-434 -9562,-325
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_012333',
+         'until' => 1240840800,
+         'text' => 'Alt-Köpenick (Köpenick) in der Altstadt-Köpenick Veranstaltung, Sperrungen (bis 27.04.09, 16 Uhr)',
+         'from' => 1240517911,
+         'id' => 1626,
+         'data' => 'userdel	q4::temp 22196,4847 22161,4734 22138,4661 22111,4562 22093,4499
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_012342',
+         'until' => 1243807199,
+         'text' => 'Rathausstr. (Mitte) Richtung Alexanderplatz zwischen Breitestr. und Spandauer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.09)',
+         'from' => 1240517963,
+         'id' => 1627,
+         'data' => 'userdel	q4::inwork; 10267,12305 10362,12351 10422,12395 10476,12432 10584,12507
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_012301',
+         'until' => 1241128799,
+         'text' => 'Glinkastr. (Mitte) Kreuzungsbereich Behrenstr. Baustelle, gesperrt (bis Ende 04.09)',
+         'from' => 1240518036,
+         'id' => 1628,
+         'data' => 'userdel	q4::inwork 9183,12076 9164,12172
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1240783200,
+         'text' => 'B 096 Straße der Jugend OL Zossen zw.York- und Mittenwalder-/Baruther Str. Deckschichteinbau Vollsperrung 25.04.2009-26.04.2009 ',
+         'from' => 1240524000,
+         'id' => 1629,
+         'data' => 'userdel	q4::inwork 14604,-22009 14714,-22665
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1259881200,
+         'text' => 'B 198 Neubrandenburger Straße OD Prenzlau, Brücke über die Ücker Brückenneubau Vollsperrung 04.05.2009-03.12.2009 ',
+         'from' => 1241301600,
+         'id' => 1630,
+         'data' => 'userdel	2::inwork 39239,101950 39066,102017
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1240869600,
+         'text' => 'L 338 Hauptstraße OL Neuenhagen, vor Grundst. Nr. 32 Kranaufstellung Vollsperrung 27.04.2009-27.04.2009 ',
+         'from' => 1240696800,
+         'id' => 1631,
+         'data' => 'userdel	q4::inwork 30179,13667 30795,13191
+',
+         'type' => 'handicap'
        }
      
 );
