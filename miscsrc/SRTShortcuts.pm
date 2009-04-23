@@ -546,18 +546,19 @@ sub set_layer_highlightning {
 # VMZ/LBVS
 
 # The "done" file which remembers what is already done.
-use vars qw($vmz_lbvs_done_file);
-$vmz_lbvs_done_file = "$ENV{HOME}/cache/misc/vmz_lbvs_done";
+use vars qw($vmz_lbvs_directory $vmz_lbvs_done_file);
+$vmz_lbvs_directory = "$ENV{HOME}/cache/misc";
+$vmz_lbvs_done_file = "$vmz_lbvs_directory/vmz_lbvs_done";
 
 sub show_vmz_lbvs_files {
     require File::Basename;
     my $t = $main::top->Toplevel(-title => "VMZ/LBVS files");
     my @files;
-    opendir my $DIRH, "$ENV{HOME}/cache/misc"
-	or die "Cannot open cache/misc directory: $!";
+    opendir my $DIRH, $vmz_lbvs_directory
+	or die "Cannot open $vmz_lbvs_directory directory: $!";
     while(defined(my $f = readdir $DIRH)) {
 	if ($f =~ m{^diff(lbvs|vmz)\.bbd(\.\d+)?$}) {
-	    push @files, "$ENV{HOME}/cache/misc/$f";
+	    push @files, "$vmz_lbvs_directory/$f";
 	}
     }
     my %files_undone = map {($_,1)} get_undone_files($vmz_lbvs_done_file, \@files);
@@ -591,7 +592,7 @@ sub _vmz_lbvs_columnwidths {
 sub show_vmz_diff {
     my($version) = @_;
     if (defined $version) { $version = ".$version" }
-    show_any_diff("$ENV{HOME}/cache/misc/diffvmz.bbd$version", "vmz");
+    show_any_diff("$vmz_lbvs_directory/diffvmz.bbd$version", "vmz");
 }
 
 sub show_lbvs_diff {
@@ -599,7 +600,7 @@ sub show_lbvs_diff {
     main::plot("str",'l', -draw => 1);
     main::make_net();
     if (defined $version) { $version = ".$version" }
-    show_any_diff("$ENV{HOME}/cache/misc/difflbvs.bbd$version", "lbvs");
+    show_any_diff("$vmz_lbvs_directory/difflbvs.bbd$version", "lbvs");
 }
 
 sub show_any_diff {
