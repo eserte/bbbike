@@ -6031,7 +6031,7 @@ sub header {
     push @$head, "<base target='_top'>"; # Can't use -target option here
     push @$head, cgilink({-rel  => "shortcut icon",
   			  -href => "$bbbike_images/srtbike.ico",
-  			  -type => "image/ico",
+  			  -type => "image/x-icon", # according to wikipedia official IANA type is image/vnd.microsoft.icon
 #			  -href => "$bbbike_images/srtbike16.gif",
 #			  -type => "image/gif",
 			 });
