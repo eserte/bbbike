@@ -138,6 +138,13 @@ sub parse_dates {
 
 	local $^W = 0; # $day_nat may be undef
 
+	if (length $year == 2) {
+	    $year = "20$year";
+	}
+	if (length $year != 4) {
+	    warn "Year '$year' looks fishy!";
+	}
+
 	my $day;
 	if ($day_nat =~ /anfang/i) {
 	    $day = 1;
@@ -168,7 +175,7 @@ sub parse_dates {
     my $isodaterx = qr/\b(20\d{2})-(\d{2})-(\d{2})\b/;
     my $eudaterx  = qr/\b([0123]?\d)\.([01]?\d)\.(\d{4})\b/;
     # XXX add ? after Anfang... group?
-    my $nat_de_rx = qr{(Anfang|Mitte|Ende|\d+(?:\.)?)?\s+($month_rx|\d|0\d|1[012])[./ ](20\d{2})}i;
+    my $nat_de_rx = qr{(Anfang|Mitte|Ende|\d+(?:\.)?)?\s+($month_rx|\d|0\d|1[012])[./ ]((?:20)?\d{2})}i;
     my $nat_de_year_rx = qr{(Anfang|Ende)\s+(20\d{2})\b};
 
     my $this_year = (localtime)[5] + 1900;
