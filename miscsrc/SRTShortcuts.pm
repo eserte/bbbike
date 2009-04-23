@@ -289,16 +289,19 @@ sub add_button {
 # 		],
 	       ]
 	      ],
-	      [Button => "Show VMZ diff",
-	       -command => sub { show_vmz_diff() },
+	      [Button => 'VMZ/LBVS lister',
+	       -command => sub { show_vmz_lbvs_files() },
 	      ],
-	      [Button => "Show LBVS diff",
-	       -command => sub { show_lbvs_diff() },
-	      ],
-	      [Cascade => "Archive", -menuitems =>
+	      [Cascade => "VMZ/LBVS Archive", -menuitems =>
 	       [
+		[Button => "Show recent VMZ diff",
+		 -command => sub { show_vmz_diff() },
+		],
 		(map { [Button => "VMZ version $_", -command => [sub { show_vmz_diff($_[0]) }, $_] ] } (0 .. 5)),
 		"-",
+		[Button => "Show recent LBVS diff",
+		 -command => sub { show_lbvs_diff() },
+		],
 		(map { [Button => "LBVS version $_", -command => [sub { show_lbvs_diff($_[0]) }, $_] ] } (0 .. 5)),
 	       ],
 	      ],
@@ -539,6 +542,36 @@ sub set_layer_highlightning {
 #     };
 }
 
+######################################################################
+# VMZ/LBVS
+
+# The "done" file which remembers what is already done.
+use vars qw($vmz_lbvs_done_file);
+$vmz_lbvs_done_file = "$ENV{HOME}/cache/misc/vmz_lbvs_done";
+
+sub show_vmz_lbvs_files {
+    require File::Basename;
+    my $t = $main::top->Toplevel(-title => "VMZ/LBVS files");
+    my @files;
+    opendir my $DIRH, "$ENV{HOME}/cache/misc"
+	or die "Cannot open cache/misc directory: $!";
+    while(defined(my $f = readdir $DIRH)) {
+	if ($f =~ m{^diff(lbvs|vmz)\.bbd(\.\d+)?$}) {
+	    push @files, "$ENV{HOME}/cache/misc/$f";
+	}
+    }
+    my %files_undone = map {($_,1)} get_undone_files($vmz_lbvs_done_file, \@files);
+    for my $file (sort @files) {
+	$t->Button(-text => File::Basename::basename($file) . " (" . ($files_undone{$file} ? "UNDONE" : "DONE") . ")",
+		   -foreground => $files_undone{$file} ? 'red' : 'DarkSeaGreen4',
+		   ($files_undone{$file} ? (-font => $main::font{'bold'}) : ()),
+		   -command => sub {
+		       show_any_diff($file, $file =~ m{lbvs} ? "lbvs" : "vmz");
+		   },
+		  )->pack(-fill => 'x', -anchor => 'w');
+    }
+}
+
 sub _vmz_lbvs_splitter {
     my($line) = @_;
     my($type, $content, $id);
@@ -594,22 +627,37 @@ sub show_any_diff {
     }
     my $f;
     my $hide_ignored;
-    $t->Checkbutton(-text => "Hide ignored and unchanged",
-		    -variable => \$hide_ignored,
+    {
+	my $ff = $t->Frame->pack(-fill => 'x');
+	$ff->Checkbutton(-text => "Hide ignored and unchanged",
+			 -variable => \$hide_ignored,
+			 -command => sub {
+			     my $hl = $f->Subwidget("Listbox");
+			     if ($hide_ignored) {
+				 for ($hl->info("children")) {
+				     if ($hl->entrycget($_, "-text") =~ /(ignore|unchanged)/i) {
+					 $hl->hide("entry", $_);
+				     }
+				 }
+			     } else {
+				 for ($hl->info("children")) {
+				     $hl->show("entry", $_);
+				 }
+			     }
+			 })->pack(-anchor => "w", -side => 'left');
+	$ff->Button(-text => "Mark done",
 		    -command => sub {
-			my $hl = $f->Subwidget("Listbox");
-			if ($hide_ignored) {
-			    for ($hl->info("children")) {
-				if ($hl->entrycget($_, "-text") =~ /(ignore|unchanged)/i) {
-				    $hl->hide("entry", $_);
-				}
-			    }
-			} else {
-			    for ($hl->info("children")) {
-				$hl->show("entry", $_);
-			    }
+			my $ans = $t->messageBox(-message => "Mark file " . File::Basename::basename($file) . " as done?",
+						 -type => "YesNo",
+						 -icon => 'question',
+						);
+			if ($ans =~ m{yes}i) {
+			    add_done_file($vmz_lbvs_done_file, $file);
+			    $t->messageBox(-message => "OK, done!",
+					   -icon => 'info');
 			}
-		    })->pack(-anchor => "w");
+		    })->pack(-anchor => 'e', -side => 'right');
+    }
     $f = $t->Frame->pack(-fill => "both", -expand => 1);
     main::choose_ort("str", $abk,
 		     -splitter => \&_vmz_lbvs_splitter,
@@ -647,6 +695,57 @@ sub _lbvs_info_callback {
     }
     $txt->insert("end", $text);
 }
+
+sub load_digest_file {
+    my $digest_file = shift;
+    my $digest_done;
+    if (-e $digest_file) {
+	require Safe;
+	my $c = Safe->new;
+	$digest_done = $c->rdo($digest_file) || {};
+    }
+    $digest_done;
+}
+
+sub get_undone_files {
+    my($digest_file, $files_ref) = @_;
+    require Digest::MD5;
+    my $digest_done = load_digest_file($digest_file);
+    my @files_undone;
+    for my $file (@$files_ref) {
+	my $ctx = Digest::MD5->new;
+	open my $fh, $file
+	     or die "Can't open $file: $!";
+	$ctx->addfile($fh);
+	my $digest = $ctx->hexdigest;
+	if (!exists $digest_done->{$digest}) {
+	    push @files_undone, $file;
+	}
+    }
+    @files_undone;
+}
+
+sub add_done_file {
+    my($digest_file, $file) = @_;
+    require Digest::MD5;
+    my $digest_done = load_digest_file($digest_file);
+    my $ctx = Digest::MD5->new;
+    open my $fh, $file
+	or die "Can't open $file: $!";
+    $ctx->addfile($fh);
+    my $digest = $ctx->hexdigest;
+    $digest_done->{$digest} = $file;
+    require Data::Dumper;
+    open my $ofh, ">", "$digest_file~"
+	or die "Can't write to $digest_file~: $!";
+    print $ofh Data::Dumper->new([$digest_done],[qw(digest_done)])->Indent(1)->Useqq(1)->Dump;
+    close $ofh
+	or die $!;
+    rename "$digest_file~", $digest_file
+	or die "Can't rename $digest_file~ to $digest_file: $!";
+}
+
+######################################################################
 
 sub define_subs {
     package main;
