@@ -56,6 +56,7 @@ use base qw(Geography::Base);
      'Hohenschönhausen'	 => [qw/Falkenberg Margaretenhöhe Wartenberg Malchow/,
 			     "Alt-Hohenschönhausen", "Neu-Hohenschönhausen"],
      'Kreuzberg'	 => [],
+     # XXX Karolinenhof ist eine Ortslage in Schmöckwitz (siehe http://de.wikipedia.org/wiki/Berlin-Schm%C3%B6ckwitz)
      'Köpenick'		 => [qw/Friedrichshagen Grünau Hessenwinkel
 			        Karolinenhof
 			        Müggelheim Oberschöneweide Rahnsdorf
