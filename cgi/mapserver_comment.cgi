@@ -65,8 +65,9 @@ eval {
     }
 
     $to = $BBBike::EMAIL;
-    #$cc = 'eserte@web.de'; # a fallback address to prevent mail problems
-    $cc = 'newstreet@bbbike.de';
+    #$cc = 'eserte@web.de'; 
+    #$cc = 'newstreet@bbbike.de'; # XXX not valid anymore
+    # no $cc needed by default, I have the logfile
     my $mscgi_remote = $BBBike::BBBIKE_MAPSERVER_URL;
     my $mscgi_local  = "http://www/~eserte/cgi/mapserv.cgi";
     my $msadrcgi_remote = dirname($BBBike::BBBIKE_MAPSERVER_URL) . "/mapserver_address.cgi";
