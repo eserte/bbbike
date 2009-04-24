@@ -13810,4 +13810,12 @@ EOF
 userdel	q4::inwork 30179,13667 30795,13191
 EOF
      },
+     { from  => 1240696800, # 2009-04-26 00:00
+       until => 1241820000, # 2009-05-09 00:00
+       text  => 'L 075 Mahlow - Großziethen zw. Kreuzg. B96A u. Kleinziethen Deckeninstandsetzung Vollsperrung 27.04.2009-08.05.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 13506,-2809 13348,-3283 13289,-4660
+EOF
+     },
     );

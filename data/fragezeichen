@@ -9,7 +9,7 @@ B5: existiert ein Radweg in Höhe Wusterhausen (wahrscheinlich ab 2006-09-29)?	? 
 B246: existiert ein Radweg bei Nächst Neuendorf (wahrscheinlich ab 2006-11-15)?	? 11412,-19943 11136,-20007
 Askanierring: an der Verbindung zwischen Fehrbelliner Tor und Streitstr. wird gearbeitet, zukünftig asphaltiert	? -3631,16224 -3040,16246
 Havelschanze: Qualität?	? -3040,16246 -2641,16222 -2560,16212
-Clémentweg/Dr.-Dorsch-Allee: Qualität (laut ADFC-Karte gut geeignet)?	? 11740,22770 10889,23381
+Clémentweg/Dr.-Dorsch-Allee: Qualität (laut ADFC-Karte gut geeignet)?	? 11740,22770 10855,23403
 Werdauer Weg: Qualität? (Am Sachsendamm-Ende anscheinend Beton)	? 7087,8066 6990,8040 6481,7345
 Ludwig-Renn-Str.: Einbahnstraße auch für Radfahrer?	? 20843,16829 21017,16737
 Stolper Weg: Qualität? Bis wo (vom Europarc aus) ist Autoverkehr vorhanden? Radwege? Genaue Straßennamen?	? -4709,-728 -4884,-907 -5335,-1090 -6147,-1125 -6411,-868
@@ -297,7 +297,7 @@ Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23297,14772 23288,14719 23298,14685 23379,14514
 Beilsteiner Str.: Qualität (laut ADFC-Karte im südlichen Abschnitt gut geeignet; zumindest in Höhe Allee der Kosmonauten asphaltiert)	? 18749,12413 18800,12838 18832,13099 18852,13269 18875,13473 18871,13796 18859,14048 18998,14089 19025,14037
 Bleicheroder Str. - Pasewalker Str.: existiert eine Verbindung für Radfahrer entlang der Tram-Trasse?	? 11805,19071 11937,19175
-Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11101,23708 10889,23381 10775,23253 10396,23128 9890,22932
+Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11101,23708 10855,23403 10717,23258 10700,23251 10396,23128 9890,22932
 Wriezener/Osloer Str.: ist das Abbiegen wegen der Straßenbahn möglich?	? 9210,16638
 Laut <cp6net$f0g$1@zeppelin.rz.uni-potsdam.de> ist die Eisenbahnbrücke für Fußgänger begehbar, laut <cn2fr0taoncnlu6s84inbhgpo8lq0u0bh2@4ax.com> sogar offizieller Bestandteil des Elbe-Radwegs	? -92087,-49506 -91387,-49350
 Weg entlang der Elbe: Qualität?	? -91387,-49350 -91150,-49775 -90062,-50750 -89709,-51230
@@ -649,7 +649,6 @@ Turmstr. (Potsdam): Qualität?	? -8294,-4022 -8404,-3824 -8451,-3728 -8510,-3616
 Neue Straße (Phöben): Qualität?	? -26488,2783 -26183,2902 -26070,2911 -25847,2835 -25664,2840
 Baumgartenbrück - B1: Rampe oder Treppe?	? -19189,-5754 -19181,-5732 -19201,-5714
 Fähre Ketzin - Paretz: Qualität des Radwegs? Nur für Radfahrer oder auch für Autofahrer befahrbar? Führt hier die Route F3 entlang?	? -26785,5851 -26526,5882 -26360,5950 -26214,5988 -26121,6011 -26141,6106 -26010,6122 -25973,6078 -25933,6081 -25921,6058 -25629,5996 -25569,6220 -25516,6282 -25444,6326
-Rohrwallallee: Qualität?	? 26190,-853 26230,-858 26346,-863 26389,-932 26445,-1037 26656,-1147 26719,-1354 26780,-1468 26707,-1726 26662,-1916
 Barnimer Dörferweg in Blankenfelde: Qualität?	? 7956,24083 8132,23896 8502,23877
 Barnimer Dörferweg in Blankenfelde: Qualität (laut ADFC-Karte schlecht geeignet)?	? 8535,23753 8984,24078 9344,24262 9555,23933 9828,24149
 Ingwäonenweg - Am Luchgraben, Teil des Barnimer Dörferwegs: Qualität (laut ADFC-Karte schlecht geeignet)?	? 16500,22465 16508,22215 16675,22168
@@ -1197,7 +1196,6 @@ Schönecker Weg: Qualität?	? 22330,6973 22358,7093
 Eitelsdorfer Str.: Qualität?	? 22869,7095 22810,7120 22690,7146 22501,7192 22272,7242
 Pflanzgartenplatz: Qualität?	? 22656,7412 22685,7480
 Dammheidestr.: Qualität?	? 22880,7351 22745,7388 22656,7412 22554,7437
-Hranitzkystr.: Qualität?	? 8686,1664 8661,1649 8578,1692 8471,1741 8342,1803 8311,1818 8286,1830 8217,1866 8128,1908 8048,1945 8009,1959 7960,1977
 Chrysanthemenstr.: Qualität? Kann man als Radfahrer zur Oderbruchstr. gelangen?	? 14137,13987 14241,13941 14262,13935
 Süderbrockweg: Qualität?	? 13933,14622 13940,14654 13990,14729 14051,14822 14080,14862 14103,14853
 Steengravenweg: Qualität?	? 13733,14813 13795,14876 13856,14944
@@ -1406,7 +1404,6 @@ Gerlachstr.: Qualität? Existieren hier (abschnittsweise?) Radwege?	? -8068,-4552
 Murellenweg: wie ist die Qualität zwischen Rominter Allee und Spandauer Damm?	? -472,12961 -435,12997 -426,13030 -421,13050
 Posaunenweg: Qualität?	? 11797,20601 11828,20625 11874,20656 11915,20686 11919,20745 11923,20781
 Oboensteig: Qualität?	? 11874,20656 11826,20722
-Akkordeonweg: Qualität?	? 11506,20507 11576,20565 11654,20627 11732,20693 11787,20739 11822,20769 11844,20787 11872,20809
 Straße 182: Qualität?	? 11684,20377 11630,20476 11576,20565 11521,20641 11435,20709 11370,20751
 Fagottstr.: Qualität?	? 11654,20627 11573,20715 11502,20781
 Harfenweg: Qualität?	? 11787,20739 11738,20797 11679,20830 11633,20792
@@ -1469,7 +1466,6 @@ Am Mönchberg: gesperrt (gesehen am 2008-10-25), scheint ein unbefestigter Weg zu
 Gartenallee: Qualität? (wahrscheinlich Kopfsteinpflaster)	? 1887,31658 2027,31518
 Erich-Mühsam-Str.: Qualität?	? 1762,31318 1787,31375 1851,31451 1878,31471 1916,31483 2027,31518 2082,31535
 (Eberswalde): Straßennamen, Qualität?	? 36020,48283 35838,47830 35428,47961
-Schwarzburger Str.: Qualität? Ist die Straße verkehrsberuhigt?	? 21719,17427 21709,17382 21677,17195 21665,17133 21488,17160
 Senftenberger Str. (Hellersdorf): Qualität? Hat die Straße einen Radweg?	? 23708,14989 23580,14970 23594,14886 23517,14873 23531,14781
 Ontarioweg: Qualität? Ist die Straße für Autos gesperrt?	? 19659,-168 19699,-41
 Derfflingerstr.: Qualität?	? 5836,2294 5889,2319 5964,2362 6065,2443 6273,2609
@@ -1520,7 +1516,6 @@ Hugo-Cassirer-Str. - Maselakepark: Qualität?	? -2391,16607 -2445,16610
 Erich-Thilo-Str.: Qualität? Kann man als Radfahrer die Rudower Chaussee in Höhe der Erich-Thilo-Str. überqueren?	? 19417,3015 19331,3098 19257,3172
 Rumplerzeile: Qualität? Ist die Straße für Autofahrer gesperrt?	? 19331,3098 19417,3184
 Katharina-Boll-Dornberger-Str.: Qualität?	? 19269,3183 19167,3287
-Godesberger Str.: Qualität?	? 18770,8898 18860,8886 18959,8870
 Bopparder Str.: Qualität?	? 18790,9018 18881,9002
 Lahnsteiner Str.: Qualität?	? 18877,8973 18968,8959
 Sinziger Str.: Qualität?	? 18886,9031 18978,9014
@@ -1576,7 +1571,6 @@ Mozartring: Qualität?	? 18577,872 18592,867 18659,850 18707,1039 18661,1057 1863
 Künnekeweg: Qualität?	? 18112,1235 18220,1278 18300,1306 18383,1334 18432,1352
 Zellerweg: Qualität?	? 18364,1129 18300,1306
 Ziehrerweg: Qualität?	? 18448,1159 18383,1334
-Pfarrsiedlung: Qualität?	? 18053,1317 18210,1371 18158,1503 17962,1437
 Am Berge (Hönow): Qualität?	? 25418,14538 25526,14429 25642,14343 25790,14277 25916,14241 25934,14238 26167,14221 26435,14223
 Am Berge (Hönow): Qualität?	? 26431,14258 26552,14272 26670,14286 26823,14309
 Birkenstr. (Hönow): Qualität?	? 26437,14199 26435,14223 26431,14258 26418,14337 26402,14453 26374,14618
@@ -1979,7 +1973,6 @@ Landshuter Str. (Lichtenrade): Qualität?	? 11696,-2272 11842,-2230 11877,-2211 1
 Füssener Str.: Qualität?	? 12110,-2023 12200,-2004
 Füssener Str.: Qualität?	? 12194,-1978 12200,-2004 12222,-2101
 Aschaffenburger Str. (Lichtenrade): Qualität?	? 12046,-1678 12050,-1715 12058,-1785 12082,-1908 12110,-2023 12154,-2202
-Siekeweg: Qualität?	? 12167,-1898 12133,-1707 12050,-1715
 Tietjenstr.: Qualität?	? 12046,-1678 11805,-1702 11778,-1706 11657,-1721
 Hanowsteig: Qualität?	? 11318,-1779 11341,-1755 11525,-1736 11509,-1602 11494,-1468
 Hanowsteig - Tietjenstr.: Besteht für Radfahrer eine Verbindung? Qualität?	? 11525,-1736 11581,-1731 11657,-1721
@@ -2643,6 +2636,7 @@ Am Tierpark: wo genau ist die neue Fußgängerampel?	? 18578,10293
 Jahnstr. (Hermsdorf): Qualität?	? 3707,22864 3689,23078
 Hibiskusweg - Romain-Rolland-Str.: existiert eine für Radfahrer befahrbare Verbindung? Qualität?	? 13247,17825 13214,17742
 Mönchmühlenstr.: laut osm ist die Straße teilweise für den Kfz-Verkehr gesperrt, stimmt das?	? 8780,26384 8684,26216 8570,26107 8302,25963
+Im Wolfsgartenfeld: Qualität?	? 5338,19843 5340,19895 5299,20104
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741

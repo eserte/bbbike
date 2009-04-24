@@ -1001,6 +1001,15 @@ userdel	q4::inwork 14530,11137 14465,11195
          'data' => 'userdel	q4::inwork 30179,13667 30795,13191
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1241820000,
+         'text' => 'L 075 Mahlow - Großziethen zw. Kreuzg. B96A u. Kleinziethen Deckeninstandsetzung Vollsperrung 27.04.2009-08.05.2009 ',
+         'from' => 1240696800,
+         'id' => 1632,
+         'data' => 'userdel	2::inwork 13506,-2809 13348,-3283 13289,-4660
+',
+         'type' => 'gesperrt'
        }
      
 );

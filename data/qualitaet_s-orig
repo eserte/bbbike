@@ -2355,6 +2355,8 @@ Zitadelle: Kopfsteinpflaster	Q2- -2646,14525 -2668,14635 -2704,14748 -2735,14848
 Behnitz: Kopfsteinpflaster	Q2 -2951,14617 -2993,14568 -3014,14559
 ######################################################################
 #: by: anonymous vvv
+Taubnesselweg: mäßiger fester Sandweg	Q2 20793,2247 20836,2150 20872,2112
+Harzburger Str. (Blankenburg): guter Asphalt	Q0 13709,21334 13817,21304 13910,21280 14005,21262 14096,21243 14134,21235
 #: note: "enge Straße", aber ohne Kategorisierung
 Holunderweg (Spandau): guter Asphalt	Q0 -3010,17885 -3064,17678 -3093,17647
 Lohnauer Steig: guter Asphalt	Q0 20790,4114 20852,4157 20829,4211 20770,4277 20614,4381
@@ -5437,6 +5439,7 @@ Bristolstr.: guter Asphalt	Q0 6704,16898 6547,17037 6476,17108 6407,17166
 #: by: Ralf Kraft:
 Edwin-C.-Diltz-Str.: guter Asphalt	Q0 -1377,2077 -1371,2268 -1401,2391
 #: by: Thomas (nawrot):
+#: confirmed_by: Sebastian (vitaminb...ne)
 Windsteiner Weg: guter Asphalt	Q0 914,598 856,546 790,527 712,517 635,511 585,505 501,501
 #: by: Philipp Schwendke:
 Schillerstr.: Kopfsteinpflaster	Q2 -1013,3804 -1086,3907 -1174,4029 -1230,4078 -1323,4111
@@ -7650,6 +7653,7 @@ Veilchenstr.: Kopfsteinpflaster	Q2 3501,4435 3597,4494
 Gundelfinger Str.: Kleinpflastersteine	Q2+ 18735,9421 18697,9153 18653,8922 18609,8717
 #: note: "enge Straße", aber q0
 #: by: Simone (bestofbest...):
+#: confirmed_by: Carmen (mdcvv...):
 Brauhausstr.: guter Asphalt	Q0 12211,16688 12017,16734
 #: by: Meike Fethke:
 Ilsensteinweg: Kopfsteinpflaster	Q2 -1885,3319 -1899,3298 -1825,3066 -1819,3042 -1814,3021 -1724,2743 -1622,2426
@@ -7684,6 +7688,7 @@ Wörther Str.: Kopfsteinpflaster	Q2 11582,14448 11446,14508 11317,14564
 #: note: Kathleen Kuminowski meint "guter Beton" und enge Straße, q0
 Bernkasteler Str.: guter Asphalt	Q0 14559,16912 14673,16895 14800,16887 14923,16914 14923,16901 15015,16908 15208,16939 15334,16961 15455,16984
 #: by: Diethelm Wohnhas:
+#: confirmed_by: Kurt Thiele
 Hranitzkystr.: guter Asphalt	Q0 8686,1664 8661,1649 8578,1692 8471,1741 8342,1803 8311,1818 8286,1830 8217,1866 8128,1908 8048,1945 8009,1959 7960,1977
 #: by: Nicola Kleine:
 Am Waidmannseck: Asphalt	Q0 4887,21944 4839,21964 4786,22010 4744,22065 4762,22092 4859,22142
@@ -8001,6 +8006,36 @@ Zinsweilerweg: Asphalt	Q0 -303,4086 -121,3859
 Martin-Riesenburger-Str.: guter Asphalt	Q0 24727,14518 24600,14497 24527,14520 24368,14570
 #: by: Markus (Graf):
 Homburgstr.: guter Asphalt	Q0 11077,-714 11106,-737 11278,-719 11477,-697 11666,-675 11808,-659
+#: by: Sylvie (ludig):
+Akkordeonweg: wassergebundene Decke, tiefe Schlaglöcher	Q3 11506,20507 11576,20565 11654,20627 11732,20693 11787,20739 11822,20769 11844,20787 11872,20809
+#: by: Alex (alex12055):
+#: note: unklarer Beitrag von anonymous meinte: schlechtes Verbundsteinpflaster Q3
+Rohrwallallee: schlechtes Kopfsteinpflaster	Q3 26190,-853 26230,-858 26346,-863 26389,-932 26445,-1037 26656,-1147 26719,-1354 26780,-1468 26707,-1726 26662,-1916
+#: by: Tamo (tamosch4...):
+Tichauer Str.: guter Asphalt	Q0 14251,22755 14334,22694 14406,22633 14608,22479 14796,22338
+#: by: Yami Yugi:
+#: corrected_by: srt/policy (ignored: "einige Fußgänger, q2")
+Schönburger Str.: guter Beton	Q0 24835,15088 24794,15270
+#: by: Oscar Wilde (mrgobby):
+#: corrected_by: srt/policy (ignored: "einige Fußgänger, q1")
+Siekeweg: gutes Verbundsteinpflaster	Q1 12167,-1898 12133,-1707 12050,-1715
+#: by: andre.skopp:
+Pfarrsiedlung: guter Asphalt	Q0 18053,1317 18210,1371 18158,1503 17962,1437
+#: by: Jochen.Gollbach:
+#: note: unklarer Eintrag von anonymous: Beton, Q1, aber Fußgängerzone, q1?
+Schwarzburger Str.: guter Asphalt	Q0 21719,17427 21709,17382 21677,17195 21665,17133 21488,17160
+#: by: Christian Liening:
+Lautentaler Str.: mäßiger Asphalt	Q1 13624,21057 13709,21334 13825,21730
+#: by: Wolfram Otto vvv
+Schwarzwaldstr.: schlechtes Kopfsteinpflaster	Q3 13478,21532 13622,21464
+#: note: hier viele parkende Autos
+Triftstr. (Blankenburg): asphaltiert	Q0 13524,21053 13573,21256
+Triftstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 13573,21256 13598,21360 13622,21464 13720,21761 13729,21779 13779,21920 13853,22006
+#: by: ^^^
+#: by: Ed (wittig):
+Klagenfurter Str.: fester Sandweg, Schlaglöcher, staubig	Q3 14698,20992 14734,21109 14771,21253 14818,21394
+#: by: Christian (cheml81):
+Godesberger Str.: guter Asphalt	Q0 18770,8898 18860,8886 18959,8870
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
