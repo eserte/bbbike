@@ -809,7 +809,7 @@ EOF
        text  => 'Lückstr. Richtung stadteinwärts zwischen Schlichtallee und Wönnichstr. Baustelle, Straße gesperrt (bis Mitte 10.2004) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 16666,10628 16588,10655 16460,10699 16316,10755 16153,10818 16032,10842
+userdel	1 16699,10611 16588,10655 16460,10699 16316,10755 16153,10818 16032,10842
 EOF
      },
      { from  => 1094627730, # 2004-09-08 09:15
@@ -8466,7 +8466,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004688',
        data  => <<EOF,
-userdel	1::inwork 23891,8780 24051,9156 24149,9387 24227,9574 24337,9835
+userdel	1::inwork 23891,8780 23946,8909 24001,9037 24051,9156 24149,9387 24227,9574 24337,9835
 EOF
      },
      { from  => 1182636000, # 2007-06-24 00:00
@@ -13318,11 +13318,12 @@ EOF
      },
      { from  => 1240517859, # 2009-04-23 22:17
        until => 1242424799, # 2009-05-15 23:59
-       text  => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt (bis Mitte 05.09)',
+       text  => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt; sowie Einbahnstraßenregelung in der Giselastr. (bis Mitte 05.09)',
        type  => 'handicap',
        source_id => 'IM_011767',
        data  => <<EOF,
 userdel	q4::inwork; 16153,10818 16032,10842
+userdel	q4::inwork; 16196,10911 16153,10818
 EOF
      },
      { from  => 1238347628, # 2009-03-29 19:27

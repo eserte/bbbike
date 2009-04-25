@@ -632,10 +632,11 @@ push @temp_blocking,
        {
          'source_id' => 'IM_011767',
          'until' => 1242424799,
-         'text' => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt (bis Mitte 05.09)',
+         'text' => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt; sowie Einbahnstraßenregelung in der Giselastr. (bis Mitte 05.09)',
          'from' => 1240517859,
          'id' => 1572,
          'data' => 'userdel	q4::inwork; 16153,10818 16032,10842
+userdel	q4::inwork; 16196,10911 16153,10818
 ',
          'type' => 'handicap'
        },
@@ -650,15 +651,7 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1240610400,
-         'text' => 'B 104 Pasewalk - Strasburg zw. Wilsickow und Louisfelde Dammsanierung Vollsperrung 16.03.2009-24.04.2009 ',
-         'from' => 1237071600,
-         'id' => 1575,
-         'data' => 'userdel	2::inwork 35808,121116 37210,121086 38889,120566 39344,120804
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1251756000,
          'text' => 'B 109 B167 - Zehdenick OD Falkenthal Straßenbauarbeiten Vollsperrung 25.03.2009-31.08.2009 ',

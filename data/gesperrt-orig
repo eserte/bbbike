@@ -62,11 +62,11 @@ Wilhelplatz	1 -7059,578 -7088,463 -7122,439 -7180,378
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf (Nord)	1 9731,3889 9934,3802
 Alt-Mariendorf (Süd)	1 9934,3802 9751,3769 9440,3665 9391,3651 9215,3599 9131,3571 8955,3521
-Knoten Märkische Allee	1 19799,11753 19849,11779 19890,11830 19918,11891
-Knoten Märkische Allee	1 19918,11891 19979,11774 20115,11730
+Knoten Märkische Allee	1 19726,11743 19785,11760 19849,11779 19890,11830 19918,11891
+Knoten Märkische Allee	1 19918,11891 19979,11774
 Knoten Märkische Allee	1 20115,11730 20026,11663
 Knoten Märkische Allee	1 20026,11663 20018,11698 19985,11739
-Gensinger Str./Alt-Friedrichsfelde	1 19005,11796 19144,11859 19283,11785
+Gensinger Str./Alt-Friedrichsfelde	1 18853,11780 19064,11805 19142,11804 19389,11761
 #Altstadt Köpenick	1 22740,4415 22542,4485 22495,4523 22458,4565 22426,4609 22395,4678 22383,4703
 #Altstadt Köpenick (2s gibt es als Kategorie noch nicht)	2s 22383,4703 22381,4752
 Altstadt Köpenick	1 22377,4836 22381,4752
@@ -597,6 +597,7 @@ Hallberger Zeile	1 16068,6216 15954,6297
 Gartenstr.	1 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8660,14929 8656,14947 8663,14960
 #: by: XBowe:
 Nipkowstr.	1 20499,3572 20352,3744
+Waldbacher Str.: Betriebsgelände	2 19706,12086 19909,12097
 ######################################################################
 #
 # Potsdam
@@ -881,9 +882,9 @@ Wisbyer Str.: Straßenbahn	3nocross 11688,16365 11727,16358 11807,16340 11828,163
 Wisbyer Str.: Straßenbahn	3nocross 11887,16320 12026,16247 12091,16209
 Wisbyer Str.: Straßenbahn	3nocross 11542,16384 11632,16373 11688,16365
 Wisbyer Str.: Straßenbahn	3nocross 11397,16405 11448,16398 11470,16393 11542,16384
-Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 17240,11791 17440,11774 17497,11769 17746,11748 17966,11730 18220,11710
-Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 18853,11798 19005,11796 19283,11785 19657,11764 19693,11762 19799,11753 19904,11745 19985,11739 20115,11730 20160,11727 20368,11711
-Alt-Friedrichsfelde: Straßentunnelrampe	3nocross 18220,11710 18555,11724 18853,11798
+Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 17240,11791 17440,11774 17497,11769 17746,11748 17966,11730 18098,11720 18220,11710
+Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 18626,11742 18853,11780 19004,11780 19389,11761 19661,11746 19726,11743 19904,11745 19985,11739 20115,11730 20160,11727 20368,11711
+Alt-Friedrichsfelde: Straßentunnelrampe	3nocross 18220,11710 18555,11724 18626,11742
 Lewishamstr.: abgesperrter Mittelstreifen	3nocross 3592,10869 3631,10784 3644,10759
 Lewishamstr: Straßentunnelrampe	3nocross 3644,10759 3739,10576 3771,10511 3813,10435
 Klingelhöferstr: unbequem passierbarer Mittelstreifen	3nocross 6825,11486 6851,11346 6880,11110
@@ -965,7 +966,7 @@ Klingelhöferstr.: Mittelstreifen	3 6880,11110 6851,11346 6692,11365
 Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21158,15885 21220,15741 21235,15641
 Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21626,15357 21647,15496
 #: note: Luftbild:
-Blumberger Damm: Mittelstreifen	3nocross 21152,11945 21143,11864 21106,11651
+Blumberger Damm: Mittelstreifen	3nocross 21150,11925 21135,11799 21106,11651
 Rudower Chaussee: Mittelstreifen	3nocross 19206,2848 19242,2876 19324,2939
 Adlergestell: Mittelstreifen	3nocross 20565,2754 20289,3033 20207,3115 20064,3278
 Sachsendamm: Mittelstreifen mit Geländer	3nocross 6935,8208 7005,8150 7087,8066
