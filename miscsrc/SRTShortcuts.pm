@@ -621,6 +621,10 @@ sub show_any_diff {
     system("$bbbike_rootdir/miscsrc/check_bbbike_temp_blockings >/dev/null 2>&1 &");
     require BBBikeAdvanced;
     require File::Basename;
+    # XXX note: still a race condition possible! Would be better to
+    # open a filehandle and pass this to both the md5 calculation and
+    # the plotting.
+    my $digest = md5_file($file);
     my $abk = main::plot_additional_layer("str", $file);
     my $token = "chooseort-" . File::Basename::basename($file) . "-str";
     my $t = main::redisplay_top($main::top, $token, -title => $file);
@@ -663,7 +667,7 @@ sub show_any_diff {
 						 -icon => 'question',
 						);
 			if ($ans =~ m{yes}i) {
-			    add_done_file($vmz_lbvs_done_file, $file);
+			    add_done_file($vmz_lbvs_done_file, $file, $digest);
 			    $t->messageBox(-message => "OK, done!",
 					   -icon => 'info');
 			}
@@ -732,9 +736,11 @@ sub get_undone_files {
 }
 
 sub add_done_file {
-    my($digest_file, $file) = @_;
+    my($digest_file, $file, $digest) = @_;
     my $digest_done = load_digest_file($digest_file);
-    my $digest = md5_file($file);
+    if (!defined $digest) {
+	$digest = md5_file($file);
+    }
     $digest_done->{$digest} = $file;
     require Data::Dumper;
     open my $ofh, ">", "$digest_file~"
