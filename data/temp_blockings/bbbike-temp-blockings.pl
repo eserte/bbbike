@@ -3699,7 +3699,7 @@ EOF
        text  => 'L 090 Phöbener Str. Bahnübergang in OL Werder Gleisbauarbeiten Vollsperrung; Umleitung 03.03.2006-06.03.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -22206,-1693 -22146,-1832 -22146,-1832 -22042,-2060 -22042,-2060
+userdel	2 -22206,-1693 -22146,-1832 -22042,-2060
 EOF
      },
      { from  => 1142118000, # 2006-03-12 00:00
@@ -12540,7 +12540,7 @@ EOF
        text  => 'B 198 Angermünde - Greiffenberg zw. OA Kerkow und Abzw. Bruchhagen Deckschichterneuerung Vollsperrung 08.09.2008-01.10.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 46704,75833 46875,75023 46875,75023 47223,73677 47297,73550 47297,73550 47908,73136 47908,73136 48164,72815 48951,71593 48951,71593
+userdel	2::inwork 46704,75833 46875,75023 47223,73677 47297,73550 47908,73136 48164,72815 48951,71593
 EOF
      },
      { from  => 1221948000, # 2008-09-21 00:00
@@ -13521,7 +13521,7 @@ userdel	q4::inwork 57976,-10623 57656,-10684 57418,-10618 56989,-10997
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX last_checked: 2009-04-13
+       until => undef, # XXX last_checked: 2009-04-26
        text  => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
        type  => 'handicap',
        data  => <<EOF,

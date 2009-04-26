@@ -4,8 +4,8 @@
 #: note: XXX_* categorization done 2008-01-26
 #:
 Hauptstr. (Friedrichshain-Kreuzberg) in beiden Richtungen zwischen Markgrafendamm und untere Kynaststr. Baustelle, Radfahrer kˆnnen nur langsam passieren bzw. m¸ssen schieben	q4::inwork 14906,10820 14794,10844 14717,10855
-Wuhlewanderweg: steiler Anstieg	q4; 21998,12204 21970,12153
-Wuhlewanderweg: steiles Gef‰lle	q4; 21970,12153 21998,12204
+Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
+Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
 Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
 Pappelplatz (Mitte): gemeinsamer Fuﬂ- und Radweg	q2 9750,14132 9663,14036
 (Frankfurter Allee - Liebigstr.): Fuﬂg‰nger	q2 13885,12279 13905,12374
@@ -90,15 +90,15 @@ Volkspark Friedrichshain: Fuﬂg‰nger	q1 12325,13148 12344,13157 12372,13198 12382
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12336,13646 12141,13609 12115,13540 12005,13481 11982,13471
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12141,13609 12161,13711
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12115,13540 12091,13449 12088,13403
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12386,13085 12387,13107 12344,13157 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11772,13624
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 11857,13596 11842,13576
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12194,13307 12177,13283
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12148,13348 12131,13333
 Luisenhain: Fuﬂg‰nger, Radfahren erlaubt	q1 22196,4847 22147,4831 22043,4562 22071,4501
-Uferweg am Schlachtensee: Fuﬂg‰nger	q2 -3348,3055 -3384,3212 -3353,3298 -3324,3382 -3087,3646 -2937,3740 -2813,3775 -2494,3758 -2347,3884 -2080,4228 -1935,4303 -1831,4300 -1663,4218
+(S-Bahnhof - Schlachtensee): Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q2 -2365,3582 -2403,3641 -2396,3652 -2396,3666
+Uferweg am Schlachtensee: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q2 -3348,3055 -3384,3212 -3353,3298 -3324,3382 -3087,3646 -2937,3740 -2813,3775 -2494,3758 -2347,3884 -2080,4228 -1935,4303 -1831,4300 -1663,4218
 Uferweg am Schlachtensee: Fuﬂg‰nger, Cafe mit Kellnerverkehr	q3 -1663,4218 -1503,4133
-Uferweg am Schlachtensee: Fuﬂg‰nger	q2 -1503,4133 -1391,4135 -1353,4205 -1278,4239
-s¸dlicher Uferweg am Schlachtensee: Fuﬂg‰nger	q2 -3384,3212 -3341,3122 -3273,3096 -3200,3145 -3136,3294 -3081,3377 -2947,3486 -2802,3570 -2599,3637 -2521,3637 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108 -1391,4135
+Uferweg am Schlachtensee: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q2 -1503,4133 -1391,4135 -1353,4205 -1278,4239
+s¸dlicher Uferweg am Schlachtensee: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q2 -3384,3212 -3341,3122 -3273,3096 -3200,3145 -3190,3167 -3136,3294 -3081,3377 -2947,3486 -2802,3570 -2761,3576 -2729,3593 -2599,3637 -2521,3637 -2396,3666 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108 -1391,4135
 s¸dlicher Uferweg an der Krummen Lanke: Fuﬂg‰nger	q2 -1274,4367 -1245,4414 -1185,4450 -1139,4575 -1134,4706 -971,4971 -724,5080 -604,5228 -593,5280 -579,5320
 nˆrdlicher/westlicher Uferweg an der Krummen Lanke: Fuﬂg‰nger	q2 -579,5320 -603,5317 -676,5323 -731,5291 -795,5233 -888,5172 -1098,5062 -1180,5020 -1243,4939 -1298,4815 -1298,4584 -1287,4486 -1272,4450 -1245,4414
 Krumme Lanke - Parkplatz am Fischerh¸ttenweg: Fuﬂg‰nger	q2 -1287,4486 -1304,4450 -1315,4393
@@ -160,6 +160,7 @@ Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3288,12700 3383,12720 3582,12704 3763,12624 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
 Spreeufer: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 10171,12769 10105,12855 9977,12912 9935,12939 9910,12938 9714,12995
 Spreeufer: Fuﬂg‰nger	q1 9707,12974 9557,12992 9533,12994 9508,12991 9271,12952
+Henriette-Herz-Platz: Straﬂenbahn	q2 10132,12941 10255,12959 10371,13006
 Monbijoupark - Henriette-Herz-Platz: Fuﬂg‰nger	q1 9977,12912 10132,12941
 Monbijoubr¸cke: Fuﬂg‰nger	q1 9707,12974 9680,12916 9661,12876
 Garnisonkirchplatz: Straﬂenbahn	q2 10309,12854 10255,12959
@@ -254,7 +255,7 @@ Gustav-Heinemann-Br¸cke: Fuﬂg‰nger, enge Br¸cke	q2 8116,12938 8110,13042
 Beruner Str.: Rampen, Fuﬂg‰nger, U-Bahn-Ausgang	q3 20143,10731 20215,10554
 (Parkweg Spreebogenpark): besonders an Wochenenden tags¸ber sehr viele Fuﬂg‰nger	q2 8017,12826 8021,12839 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8275,12936 8341,12911 8417,12846
 Spreeuferweg: besonders an Wochenenden tags¸ber viele Fuﬂg‰nger	q1 7915,12795 7967,12860 8044,12989 8159,13032
-Spreeuferweg: besonders an Wochenenden tags¸ber viele Fuﬂg‰nger	q1 8277,13032 8315,13005 8401,12973 8471,12904 8498,12870 8529,12757 8536,12758 8529,12757 8566,12661 8587,12642 8635,12629 8754,12622
+Spreeuferweg: besonders an Wochenenden tags¸ber viele Fuﬂg‰nger	q1 8277,13032 8315,13005 8401,12973 8471,12904 8498,12870 8529,12757 8566,12661 8587,12642 8635,12629 8754,12622
 Helenenhof: enge Tore, Fuﬂg‰nger	q3 14495,11261 14395,11356
 F‰rberstr. - Uferweg: sehr eng	q2 21675,4989 21665,5035 21684,5079
 Uferweg, Mentzelpark: Fuﬂg‰nger	q1 21487,5425 21600,5221 21684,5079 21735,5003 21821,4918 21845,4875
@@ -303,7 +304,7 @@ Egidysteg: eng, Fuﬂg‰nger	q3 3124,22198 3134,22153
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger, eng	q2 5860,24067 5693,24037 5645,23968
 (Schildower Weg): Fuﬂg‰nger	q1 7874,24035 7675,23968 7615,23884 7185,23749
 (Mehrower Allee, Unterf¸hrung zum S-Bahnhof): Rampe, Fuﬂg‰nger	q4 20547,17084 20522,17020 20428,17058 20443,17093
-Altvaterstr.: Fuﬂg‰nger, Bordsteine	q2 -3117,3107 -3223,3034
+Altvaterstr.: Fuﬂg‰nger, Bordsteine	q2 -3117,3107 -3170,3070 -3223,3034
 Im Gestell: Fuﬂg‰nger	q1 371,4453 261,4420
 Heinitzweg: Fuﬂg‰nger	q2 10329,1077 10363,1095
 Haewererweg: enge Durchfahrt, Bordstein	q1 12125,1282 12097,1243
@@ -339,7 +340,7 @@ S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20109,16264 20109,16305
 Wuhlewanderweg: Fuﬂg‰nger	q1 22771,16194 22717,16142 22670,16063 22623,15959 22554,15780 22539,15729 22515,15620 22518,15510 22518,15417 22516,15399 22507,15373 22400,15321 22393,15292 22396,15254 22413,15187 22449,15127
 Wuhlewanderweg: Fuﬂg‰nger	q1 22449,15127 22550,15087 22741,14761 22806,14631 22843,14497 22827,14356 22839,14149 22825,14109 22607,13890 22516,13799 22359,13599 22323,13533
 Wuhlewanderweg: enge Unterf¸hrung	q3 22359,13599 22259,13508
-Wuhlewanderweg: Fuﬂg‰nger	q1 22323,13533 22259,13508 22191,13414 22221,13027 22199,12955 22036,12367 21998,12204 21970,12153
+Wuhlewanderweg: Fuﬂg‰nger	q1 22323,13533 22259,13508 22191,13414 22221,13027 22199,12955 22036,12367 21998,12204
 Wuhlewanderweg: Fuﬂg‰nger	q1 22242,11269 22244,11311 22073,11581 22009,11636 21886,11843 21914,12019 21936,12022
 Wuhlewanderweg: Fuﬂg‰nger	q1 22244,11311 22280,11284
 Wuhlewanderweg: enge Unterf¸hrung	q3 22280,11284 22271,11218
@@ -429,6 +430,8 @@ Unterf¸hrung Wuhletal: Fuﬂg‰nger	q2 21970,12153 21984,12046 21936,12022
 Park Biesdorf: Fuﬂg‰nger	q1 21150,11925 21132,11943 21100,11960 20862,12027 20810,12031
 Albert-Brodersen-Allee: Fuﬂg‰nger	q1 20862,12027 20836,11768
 (Schulstr. - Braunsdorfstr.): sehr eng	q3 20413,11953 20396,11983
+(Am Schlachtensee - Altvaterstr., Unterf¸hrung): enge Unterf¸hrung	q3 -3192,3129 -3176,3081 -3170,3070
+(Altvaterstr. - Spanische Allee): eng	q1 -3223,3034 -3368,2942 -3378,2936
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe 	q1 10914,20065 11051,19789
 An der Heilandsweide: Fuﬂg‰nger	q1 8203,1194 8305,1148 8492,1050 8539,1025 8687,950
@@ -534,11 +537,10 @@ Konradinstr.: eng	q1 8575,5202 8557,5226 8674,5357 8865,5468 8870,5557
 Uferpromenade: Absperrung am Restaurant, Fuﬂg‰nger	q3 -1694,17839 -1686,17918 -1660,18035
 Bruno-Bauer-Str.: Bordsteine, Gehweg	q2 12893,6527 12902,6495 12921,6424
 Hessenallee: enge Straﬂe	q1 640,11676 640,11706 769,11770 881,11893
-Hechtgraben: eng, Fuﬂg‰nger	q3 3105,5594 3173,5493
 Pech¸ler Pfad: eng, Fuﬂg‰nger	q3 2793,6593 2875,6648
 Pech¸ler Pfad: Fuﬂg‰nger	q3 2854,6675 2953,6743
 Friedrichshaller Str.: Bodenschwellen	q2 2774,7655 2784,7711 3083,7587
-Hechtgraben: eng, Treppen oder Rampen	q3 3105,5594 3173,5493
+Hechtgraben: eng, Fuﬂg‰nger, Treppen oder Rampen	q3 3105,5594 3173,5493
 (Weg in d. Kolonie Norderney): Fuﬂg‰nger	q3 3596,6828 3607,6952 3582,6964
 Franz-Cornelsen-Weg: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt, schmaler Fuﬂweg am Spielplatz	q3 3593,7176 3597,7192 3612,7335 3639,7590
 Bjˆrnsonstr.: Fuﬂg‰nger, eng	q3 4271,6447 4320,6540
@@ -566,7 +568,7 @@ Retzdorffpromenade: Fuﬂg‰nger	q2 4893,6812 4993,6812
 Lothar-Bucher-Str.: enge Straﬂe	q1 5598,6136 5664,6082 5748,6051 5845,6049 6008,6067
 Albestr.: enge Straﬂe	q1 5422,7461 5448,7436 5640,7435 5811,7433
 Leuthener Str.: enge Straﬂe	q1 7411,8364 7494,8364 7578,8358 7640,8359 7716,8356
-s¸dliches Spreeufer: besonders an Wochenenden tags¸ber sehr viele Fuﬂg‰nger	q2 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8554,12593
+s¸dliches Spreeufer: besonders an Wochenenden tags¸ber sehr viele Fuﬂg‰nger	q2 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8554,12593
 Berchtesgadener Str.: Fuﬂg‰nger, Bordsteine	q2 6361,9175 6360,9194
 Waldstr.: enge Straﬂe	q1 9718,20498 9725,20260
 Kamminer Str.: un¸bersichtliche Kreuzungen, parkende PKWs	q1 3248,12954 3292,13123 3315,13231 3346,13342 3366,13432 3407,13599
@@ -574,14 +576,14 @@ Kamminer Str.: un¸bersichtliche Kreuzungen, parkende PKWs	q1 3248,12954 3292,131
 (Kolonieweg a. d. Forkenbeckstr.): Fuﬂg‰nger, teilweise eng 	q3 3218,8233 3230,8194 3635,8099 3709,8082 3753,8073 3779,8105
 Claire-Waldoff-Weg: Fuﬂg‰nger	q2 3635,8099 3596,7550
 Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
-(Volkspark Friedrichshain, parallel zur Friedenstr.):Fuﬂg‰nger	q1 12386,13085 12387,13107 12344,13157 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11772,13624
+(Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger	q1 12386,13085 12387,13107 12344,13157 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11772,13624
 (Weydemeyerstr.): Fuﬂg‰nger	q1 11900,12754 11837,12780 11824,12749
 (Weydemeyerstr.): Fuﬂg‰nger	q1 11933,12701 11971,12785 11926,12807
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11584,12863 11600,12857 11622,12850 11725,12809
-(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11419,12944 11362,12964 11295,12915
+(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11419,12944 11362,12964
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11600,12857 11589,12768
 (Berolinastr.): Fuﬂg‰nger	q1 11844,12926 11885,12905 11952,12871
-(Berlolinastr.): Fuﬂg‰nger	q1 11844,12926 11885,12905 11906,12947 11921,12990 11983,12949
+(Berlolinastr.): Fuﬂg‰nger	q1 11885,12905 11906,12947 11921,12990 11983,12949
 (Berolinastr.): Fuﬂg‰nger	q1 11921,12990 11865,13027
 (Berolinastr.): Fuﬂg‰nger	q1 11815,13045 11719,13088
 (Berolinastr.): Weg am Spielplatz vorbei	q2 11865,13027 11815,13045
@@ -682,7 +684,6 @@ Sesenheimer Str.: Fuﬂg‰nger, Bordsteine	q2 3866,11473 3874,11380
 Schleswiger Ufer: schmal, Fuﬂg‰nger	q2 5862,12385 5904,12438 5967,12525
 Cuxhavener Str.: Wohngebiet, Fuﬂg‰nger	q2 5904,12438 5931,12396
 Holsteiner Ufer: schmal, Fuﬂg‰nger	q2 6580,12775 6495,12854 6452,12828
-Uferweg an der Kongreﬂhalle: noch im Bau	q2::inwork 7782,12623 7745,12603 7710,12585 7670,12576
 (Zufahrt Parkpl‰tze Bartningallee): schmal, un¸bersichtlich, Fuﬂg‰nger	q3 6159,12505 6149,12454
 (Altonaer Str. - Flensburger Str.): Einkaufszentrum, Fuﬂg‰nger	q2 6178,12387 6149,12454 6137,12532 6160,12681
 (Cuxhavener Str. - Altonaer Str.): schmal, Fuﬂg‰nger	q2 5999,12280 6086,12446
@@ -725,7 +726,7 @@ Willenburger Pfad: Fuﬂg‰nger, schmal	q2 576,10729 673,10724
 (Zum Hubertussee): Fuﬂg‰nger, schmal	q3 1807,8893 1809,8916
 (Parkweg Reichsstr.): Fuﬂg‰nger	q2 -264,13009 -208,12938 -142,12850 -67,12779 23,12739
 (Machandelweg - Reichsstr.): Fuﬂg‰nger	q2 -185,12822 -166,12849 -142,12850 -112,12866
-(zur Karl-Marx-Allee): Bordstein	q2 11362,12964 11295,12915
+(zur Karl-Marx-Allee): Bordstein, Fuﬂg‰nger	q2 11362,12964 11295,12915
 Bˆrnicker Str. - S¸dpark): Fuﬂg‰nger	q2 -4095,11993 -4070,12006
 Graetschelsteig - S¸dpark): Fuﬂg‰nger	q2 -4195,12139 -4117,12199
 S¸dpark): Fuﬂg‰nger	q2 -4004,11814 -3890,11775 -3712,11714
@@ -822,8 +823,6 @@ Seeweg (Weiﬂensee): Fuﬂg‰nnger	q1 14610,16522 14549,16538 14510,16549
 (Blohmstr. - Diedersdorfer Str.): kaum Fuﬂg‰nger	q1 9093,-1670 8968,-1576 8845,-1521 8776,-1487 8492,-1376 8073,-1137
 (Dinnendahlstr. - Schichauweg): kaum Fuﬂg‰nger	q1 9123,-1321 8953,-1184 8882,-1142 8873,-1118
 K¸hleweinstr.: Autos und Schule	q1 8088,17218 8043,17282 8014,17475 7998,17564 7973,17732 7948,17895
-(Blohmstr. - Diedersdorfer Str.): kaum Fuﬂg‰nger	q1 9093,-1670 8968,-1576 8845,-1521 8776,-1487 8492,-1376 8073,-1137
-(Dinnendahlstr. - Schichauweg): kaum Fuﬂg‰nger	q1 9123,-1321 8953,-1184 8882,-1142 8873,-1118
 (Weg an der Markuskirche): viele Fuﬂg‰nger, Bordsteinkanten	q3 6342,4783 6288,4704
 Allee der Kosmonauten - Biesdorfer Promenade: Fuﬂg‰nger	q1 19821,13604 19826,13444 19835,13152 20076,13034
 Rathener Str.: enge Straﬂe	q1 24228,14644 24271,14576 24362,14542

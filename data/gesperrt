@@ -1270,6 +1270,10 @@ Mehringdamm -> Baruther Str.: Mittelstreifen	3::igndisp 9444,9919 9387,9804 9588
 Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3 8438,8676 8334,8655 8371,8543
 Mittelstreifen	3nocross::ignrte 9224,9053 9225,9111 9248,9350
 Wilhelmshöhe -> Mehringdamm: Mittelstreifen	3::igndisp 9186,9107 9225,9111 9248,9350
+tragen (ca. 40 Stufen)	0:30:-147 -2396,3652
+tragen (36 Stufen)	0:30:-2 -3189,3147
+tragen (6 Stufen)	0:15:-18 -3176,3081
+tragen (drei Stufen)	0:10:57 -3368,2942
 tragen (12 Stufen):	0:20:40 -2993,14568
 tragen (drei flache Stufen)	0:10:-137 -7445,-5002
 tragen (zwei Stufen)	0:10:-27 5970,20353
@@ -1452,7 +1456,7 @@ Barriere (Falkstr.)	BNP:10:-12 12178,7985
 Barriere (Seydelstr.)	BNP:5:-100 10370,11593
 Drängelgitter (Gleditschstr. - Elßholzstr.)	BNP:10:-84 7158,9509
 Drängelgitter (Glühwürmchenweg, Verlängerung)	BNP:5:-70 -6162,16287
-Drängelgitter	BNP:5 38562,100725
+Drängelgitter	BNP:5:-193 38562,100725
 Drängelgitter	BNP:5:3 38662,97200
 Schwingtor an der Luiseninsel	BNP:10:-142 7696,11621
 Schwingtor an der Luiseninsel	BNP:10:-131 7735,11656
