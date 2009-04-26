@@ -1049,9 +1049,9 @@ do-checks:	.check_empty_lines \
 	.check_qualitaet_s .check_qualitaet_l .check_qualitaet2 \
 	.check_handicap_s .check_handicap_l .check_handicap2 \
 	.check_vorfahrt \
-	.check_comments1 .check_comments2 .check_comments3
+	.check_comments1 .check_comments2 .check_comments3 \
 	.check_nolighting .check_nolighting2 \
-	.check_housenumbers .check_sehenswuerdigkeit
+	.check_housenumbers .check_sehenswuerdigkeit \
 	.check_green .check_green2 \
 	.check_brunnels .check_brunnels2 \
 	.check_comments_ferry \
