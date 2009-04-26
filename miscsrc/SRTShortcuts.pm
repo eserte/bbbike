@@ -550,6 +550,16 @@ use vars qw($vmz_lbvs_directory $vmz_lbvs_done_file);
 $vmz_lbvs_directory = "$ENV{HOME}/cache/misc";
 $vmz_lbvs_done_file = "$vmz_lbvs_directory/vmz_lbvs_done";
 
+sub md5_file {
+    my($file) = @_;
+    require Digest::MD5;
+    my $ctx = Digest::MD5->new;
+    open my $fh, $file
+	or die "Can't open $file: $!";
+    $ctx->addfile($fh);
+    my $digest = $ctx->hexdigest;
+}
+
 sub show_vmz_lbvs_files {
     require File::Basename;
     my $t = $main::top->Toplevel(-title => "VMZ/LBVS files");
@@ -710,15 +720,10 @@ sub load_digest_file {
 
 sub get_undone_files {
     my($digest_file, $files_ref) = @_;
-    require Digest::MD5;
     my $digest_done = load_digest_file($digest_file);
     my @files_undone;
     for my $file (@$files_ref) {
-	my $ctx = Digest::MD5->new;
-	open my $fh, $file
-	     or die "Can't open $file: $!";
-	$ctx->addfile($fh);
-	my $digest = $ctx->hexdigest;
+	my $digest = md5_file($file);
 	if (!exists $digest_done->{$digest}) {
 	    push @files_undone, $file;
 	}
@@ -728,13 +733,8 @@ sub get_undone_files {
 
 sub add_done_file {
     my($digest_file, $file) = @_;
-    require Digest::MD5;
     my $digest_done = load_digest_file($digest_file);
-    my $ctx = Digest::MD5->new;
-    open my $fh, $file
-	or die "Can't open $file: $!";
-    $ctx->addfile($fh);
-    my $digest = $ctx->hexdigest;
+    my $digest = md5_file($file);
     $digest_done->{$digest} = $file;
     require Data::Dumper;
     open my $ofh, ">", "$digest_file~"
