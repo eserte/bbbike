@@ -26,15 +26,17 @@ sub usage {
     warn $msg, "\n" if $msg;
     my $special_string = join(" | ", sort keys %known_specials);
     die <<EOF;
-usage: $0 -names | -linesegs [-special $special_string] file ...
+usage: $0 -names | -linesegs | -points [-special $special_string] file ...
 EOF
 }
 
 my %specials;
 my $do_names;
 my $do_linesegs;
-GetOptions("names!" => \$do_names,
-	   "linesegs!" => \$do_linesegs,
+my $do_points;
+GetOptions("names" => \$do_names,
+	   "linesegs" => \$do_linesegs,
+	   "points" => \$do_points,
 	   "special=s" => sub {
 	       my $special = $_[1];
 	       if (!exists $known_specials{$special}) {
@@ -45,7 +47,7 @@ GetOptions("names!" => \$do_names,
 	  )
     or usage;
 
-($do_names xor $do_linesegs) or usage "Please specify one of -names or -linesegs";
+($do_names xor $do_linesegs xor $do_points) or usage "Please specify one of -names, -points, or -linesegs";
 
 unshift(@Strassen::datadirs, "$FindBin::RealBin/../data");
 
@@ -83,6 +85,10 @@ while(1) {
 		}
 	    }
 	}
+    } elsif ($do_points) {
+	for my $point (@$c) {
+	    $h{$point}++;
+	}
     }
 }
 
@@ -102,12 +108,12 @@ __END__
 
 =head1 NAME
 
-check_double - make sure all names are unique
+check_double - make sure that things are unique
 
 =head1 SYNOPSIS
 
-    check_double -names strfile
-    check_double -linesegs strfile
+    check_double -names strfile ...
+    check_double -linesegs strfile ...
 
 =head1 DESCRIPTION
 
