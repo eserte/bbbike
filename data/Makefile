@@ -1035,21 +1035,26 @@ report-checks:
 	@echo Now doing checks...
 
 do-checks:	.check_empty_lines \
-	.check_strassen1 .check_strassen_cont \
+	.check_strassen1 .check_strassen2 .check_strassen_cont \
 	.check_plaetze1 .check_plaetze2 .check_strassen_plaetze_unique \
-	.check_hoehe \
-	.check_ampeln .check_gesperrt1 .check_gesperrt2 \
+	.check_hoehe .check_hoehe2 \
+	.check_ampeln .check_ampeln2 \
+	.check_gesperrt1 .check_gesperrt2 \
 	.check_gesperrt_u2 .check_gesperrt_s2 .check_gesperrt_r2 \
 	.check_gesperrt_car1 .check_gesperrt_car2 \
 	.check_ubahnhof .check_ubahnhof2 .check_sbahnhof .check_sbahnhof2 \
 	.check_rbahnhof .check_orte \
-	.check_radwege .check_ampelschaltung \
-	.check_qualitaet_s .check_qualitaet_l \
-	.check_handicap_s .check_handicap_l \
+	.check_radwege .check_radwege2 \
+	.check_ampelschaltung \
+	.check_qualitaet_s .check_qualitaet_l .check_qualitaet2 \
+	.check_handicap_s .check_handicap_l .check_handicap2 \
 	.check_vorfahrt \
-	.check_comments1 .check_comments2 .check_comments3 .check_nolighting \
-	.check_housenumbers .check_sehenswuerdigkeit .check_green \
-	.check_brunnels .check_comments_ferry \
+	.check_comments1 .check_comments2 .check_comments3
+	.check_nolighting .check_nolighting2 \
+	.check_housenumbers .check_sehenswuerdigkeit
+	.check_green .check_green2 \
+	.check_brunnels .check_brunnels2 \
+	.check_comments_ferry \
 	.check_exits \
 	.check_temp_blockings .check_grenzuebergaenge \
 	.check_berlin .check_potsdam
@@ -1066,6 +1071,10 @@ check-disabled:
 
 .check_strassen1:	.strassen.tmp add_str multi_bez_str-orig Berlin.coords.data
 	$(CHECK_STR_PLZ) -data .strassen.tmp
+	@touch $@
+
+.check_strassen2:	strassen landstrassen landstrassen2
+	$(CHECK_DOUBLE) -special strassen -linesegs strassen landstrassen landstrassen2
 	@touch $@
 
 # This rule is not called automatically, because
@@ -1106,8 +1115,16 @@ check-disabled:
 	$(CHECK_POINTS) -catrx '^(X|\?|\?\?\?)$$' -namerx '^\d+(\.\d+)?$$' hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen
 	@touch $@
 
+.check_hoehe2:	hoehe
+	$(CHECK_DOUBLE) -points hoehe
+	@touch $@
+
 .check_ampeln:	ampeln .strassen.tmp landstrassen landstrassen2 fragezeichen
 	$(CHECK_POINTS) -catrx '^(X|F|B|B0|Zbr|\?)(::inwork)?$$' ampeln .strassen.tmp landstrassen landstrassen2 fragezeichen
+	@touch $@
+
+.check_ampeln2:	ampeln
+	$(CHECK_DOUBLE) -points ampeln
 	@touch $@
 
 # XXX not executed by default
@@ -1181,11 +1198,18 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+)?)(:inw
 	@touch $@
 
 .check_orte: orte orte2 orte_city
-	$(CHECK_DOUBLE) orte orte2 orte_city
+	$(CHECK_DOUBLE) -names orte orte2 orte_city
 	@touch $@
 
 .check_radwege:	radwege_exact strassen
 	$(CHECK_NEIGHBOUR) -type standard -data radwege_exact
+	@touch $@
+
+.check_radwege2: radwege
+	$(CHECK_DOUBLE) -linesegs radwege || (\
+	    echo "Note: please check the generated radwege, not radwege-orig, but fix in radwege-orig!"; \
+	    exit 1 \
+	)
 	@touch $@
 
 .check_qualitaet_s:	qualitaet_s strassen fragezeichen ${PERSISTENTTMPDIR}/strassen_in_planung.bbd
@@ -1199,6 +1223,10 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+)?)(:inw
 		-against landstrassen -against landstrassen2
 	@touch $@
 
+.check_qualitaet2:	qualitaet_s qualitaet_l
+	$(CHECK_DOUBLE) -linesegs qualitaet_s qualitaet_l
+	@touch $@
+
 .check_handicap_s:	handicap_s strassen
 	$(CHECK_NEIGHBOUR) -type standard -data handicap_s
 	@touch $@
@@ -1206,6 +1234,10 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+)?)(:inw
 .check_handicap_l:	handicap_l landstrassen landstrassen2
 	$(CHECK_NEIGHBOUR) -type standard -data handicap_l \
 		-against landstrassen -against landstrassen2
+	@touch $@
+
+.check_handicap2:	handicap_s handicap_l
+	$(CHECK_DOUBLE) -linesegs handicap_s handicap_l
 	@touch $@
 
 .check_vorfahrt:	vorfahrt strassen landstrassen landstrassen2 fragezeichen
@@ -1254,6 +1286,10 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+)?)(:inw
 	$(CHECK_NEIGHBOUR) -type standard -against strassen -against landstrassen -data nolighting
 	@touch $@
 
+.check_nolighting2:	nolighting
+	$(CHECK_DOUBLE) -linesegs nolighting
+	@touch $@
+
 .check_housenumbers:	housenumbers-orig housenumbers .strassen.tmp
 	$(CHECK_HOUSENUMBERS) housenumbers-orig
 	$(CHECK_POINTS) -catrx '^HNR$$' -namerx '^(ALT|SINGLE|CONT) (\d+[a-z]?)?/(\d+[a-z]?)? (\d+[a-z]?)?/(\d+[a-z]?)?$$' housenumbers .strassen.tmp
@@ -1268,11 +1304,19 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+)?)(:inw
 		-against strassen -against landstrassen
 	@touch $@
 
+.check_green2:	green
+	$(CHECK_DOUBLE) -linesegs green
+	@touch $@
+
 .check_brunnels:	brunnels strassen landstrassen landstrassen2 wasserstrassen wasserumland wasserumland2 fragezeichen
 	$(CHECK_NEIGHBOUR) -type standard -data brunnels \
 	    -against strassen -against landstrassen -against landstrassen2 \
 	    -against wasserstrassen -against wasserumland -against wasserumland2 \
 	    -against fragezeichen
+	@touch $@
+
+.check_brunnels2:	brunnels
+	$(CHECK_DOUBLE) -linesegs brunnels
 	@touch $@
 
 .check_exits:	exits \
