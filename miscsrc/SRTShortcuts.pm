@@ -187,7 +187,7 @@ sub add_button {
 	       [
 		[Button => "hm96.bbd (Höhenpunkte)",
 		 -command => sub {
-		     my $f = "$bbbike_rootdir/miscsrc/senat_b/hm96.bbd";
+		     my $f = "$bbbike_rootdir/misc/senat_b/hm96.bbd";
 		     $hm_layer = add_new_layer("p", $f);
 		     $main::top->bind("<F12>"=> \&find_nearest_hoehe);
 		 }
