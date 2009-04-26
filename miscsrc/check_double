@@ -17,27 +17,73 @@ use strict;
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 use Strassen;
+use Getopt::Long;
+
+my %known_specials = map{($_,1)} qw(strassen);
+
+sub usage {
+    my $msg = shift;
+    warn $msg, "\n" if $msg;
+    my $special_string = join(" | ", sort keys %known_specials);
+    die <<EOF;
+usage: $0 -names | -linesegs [-special $special_string] file ...
+EOF
+}
+
+my %specials;
+my $do_names;
+my $do_linesegs;
+GetOptions("names!" => \$do_names,
+	   "linesegs!" => \$do_linesegs,
+	   "special=s" => sub {
+	       my $special = $_[1];
+	       if (!exists $known_specials{$special}) {
+		   usage "Unknown special '$special'";
+	       }
+	       $specials{$special}++;
+	   },
+	  )
+    or usage;
+
+($do_names xor $do_linesegs) or usage "Please specify one of -names or -linesegs";
 
 unshift(@Strassen::datadirs, "$FindBin::RealBin/../data");
 
 my @files = @ARGV;
-die "File?" if !@files;
+usage "File missing" if !@files;
 
 my @obj;
 foreach my $file (@files) {
-    my $obj = new Strassen $file;
+    my $obj = Strassen->new($file);
     die "Can't create obj for $file" if !$obj;
     push @obj, $obj;
 }
 
-my $o = new MultiStrassen @obj;
+my $o = MultiStrassen->new(@obj);
 
 my %h;
 $o->init;
 while(1) {
     my $r = $o->next;
-    last if !@{$r->[1]};
-    $h{$r->[0]}++;
+    my $c = $r->[Strassen::COORDS];
+    last if !@$c;
+    if ($do_names) {
+	$h{$r->[Strassen::NAME]}++;
+    } elsif ($do_linesegs) {
+	if (@$c) {
+	    my $cat = $r->[Strassen::CAT];
+	    if ($specials{'strassen'}) {
+		next if $cat eq 'Pl'; # legally may be doubled
+	    }
+	    my $bothdirs = $cat !~ m{;};
+	    for my $i (1 .. $#$c) {
+		$h{$c->[$i-1].' '.$c->[$i]}++;
+		if ($bothdirs) {
+		    $h{$c->[$i].' '.$c->[$i-1]}++;
+		}
+	    }
+	}
+    }
 }
 
 my @double;
@@ -51,3 +97,21 @@ if (@double) {
     print join("\n", map { "$_\t$h{$_}" } sort @double), "\n";
     exit 1;
 }
+
+__END__
+
+=head1 NAME
+
+check_double - make sure all names are unique
+
+=head1 SYNOPSIS
+
+    check_double -names strfile
+    check_double -linesegs strfile
+
+=head1 DESCRIPTION
+
+Checks if all names or line segments are unique. Exits with a non-zero
+value if not.
+
+=cut
