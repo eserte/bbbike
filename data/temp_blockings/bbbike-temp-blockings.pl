@@ -13189,11 +13189,12 @@ EOF
      },
      { from  => 1231707292, # 2009-01-11 21:54
        until => 1262300400, # 2010-01-01 00:00
-       text  => 'Blankenburger Str. (Pankow) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 2010)',
+       text  => 'Blankenburger Str. (Pankow) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. Baustelle, Fahrtrichtung gesperrt; ebenso ist die Siegfriedstr. als Einbahnstraße von Blankenburger Str. in Richtung Herthaplatz ausgewiesen (bis Anfang 2010)',
        type  => 'gesperrt',
        source_id => 'IM_011081',
        data  => <<EOF,
 userdel	1::inwork 10742,19632 10377,19565 10249,19541
+userdel	1::inwork 10614,19907 10742,19632
 EOF
      },
      { from  => 1229554800, # 2008-12-18 00:00
@@ -13817,6 +13818,22 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 13506,-2809 13348,-3283 13289,-4660
+EOF
+     },
+     { from  => 1240783200, # 2009-04-27 00:00
+       until => 1240956000, # 2009-04-29 00:00
+       text  => 'L 030 Gerichtsstr. (Puschkinstr.) OL Königs Wusterhausen, zw. Brückenstr. und Kirchplatz Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 28.04.2009-28.04.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 25859,-11559 26177,-11648
+EOF
+     },
+     { from  => 1240783200, # 2009-04-27 00:00
+       until => 1251756000, # 2009-09-01 00:00
+       text  => 'L 341 Steinbeck - Heckelberg OD Brunow, zw. Freudenberger Str. u. Tramper Weg Straßenausbau Vollsperrung 28.04.2009-31.08.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 41624,36648 41618,36515 41808,36267
 EOF
      },
     );

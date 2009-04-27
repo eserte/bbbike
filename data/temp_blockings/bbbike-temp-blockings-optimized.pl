@@ -574,10 +574,11 @@ push @temp_blocking,
        {
          'source_id' => 'IM_011081',
          'until' => 1262300400,
-         'text' => 'Blankenburger Str. (Pankow) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 2010)',
+         'text' => 'Blankenburger Str. (Pankow) Richtung Dietzgenstr. zwischen Siegfriedstr. und Dietzgenstr. Baustelle, Fahrtrichtung gesperrt; ebenso ist die Siegfriedstr. als Einbahnstraße von Blankenburger Str. in Richtung Herthaplatz ausgewiesen (bis Anfang 2010)',
          'from' => 1231707292,
          'id' => 1557,
          'data' => 'userdel	1::inwork 10742,19632 10377,19565 10249,19541
+userdel	1::inwork 10614,19907 10742,19632
 ',
          'type' => 'gesperrt'
        },
@@ -938,16 +939,7 @@ userdel	q4::inwork 14530,11137 14465,11195
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_012333',
-         'until' => 1240840800,
-         'text' => 'Alt-Köpenick (Köpenick) in der Altstadt-Köpenick Veranstaltung, Sperrungen (bis 27.04.09, 16 Uhr)',
-         'from' => 1240517911,
-         'id' => 1626,
-         'data' => 'userdel	q4::temp 22196,4847 22161,4734 22138,4661 22111,4562 22093,4499
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_012342',
          'until' => 1243807199,
@@ -968,15 +960,7 @@ userdel	q4::inwork 14530,11137 14465,11195
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1240783200,
-         'text' => 'B 096 Straße der Jugend OL Zossen zw.York- und Mittenwalder-/Baruther Str. Deckschichteinbau Vollsperrung 25.04.2009-26.04.2009 ',
-         'from' => 1240524000,
-         'id' => 1629,
-         'data' => 'userdel	q4::inwork 14604,-22009 14714,-22665
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1259881200,
          'text' => 'B 198 Neubrandenburger Straße OD Prenzlau, Brücke über die Ücker Brückenneubau Vollsperrung 04.05.2009-03.12.2009 ',
@@ -1003,6 +987,24 @@ userdel	q4::inwork 14530,11137 14465,11195
          'data' => 'userdel	2::inwork 13506,-2809 13348,-3283 13289,-4660
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1240956000,
+         'text' => 'L 030 Gerichtsstr. (Puschkinstr.) OL Königs Wusterhausen, zw. Brückenstr. und Kirchplatz Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 28.04.2009-28.04.2009 ',
+         'from' => 1240783200,
+         'id' => 1633,
+         'data' => 'userdel	q4::inwork 25859,-11559 26177,-11648
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1251756000,
+         'text' => 'L 341 Steinbeck - Heckelberg OD Brunow, zw. Freudenberger Str. u. Tramper Weg Straßenausbau Vollsperrung 28.04.2009-31.08.2009 ',
+         'from' => 1240783200,
+         'id' => 1634,
+         'data' => 'userdel	q4::inwork 41624,36648 41618,36515 41808,36267
+',
+         'type' => 'handicap'
        }
      
 );
