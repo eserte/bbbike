@@ -602,8 +602,12 @@ Schweiggerweg	1 2081,14570 2079,14704 2099,14852
 Jungfernheideweg	1 1465,14963 1423,14679 1361,14431
 Dihlmannstr.: Radweg existiert	1 651,15091 755,15123 851,15155 957,15189 976,15195 1065,15229
 Bahntrasse	3nocross::ignrte 16135,2135 16056,2034 16002,1964 15875,1796 15835,1747
+Theodor-Loos-Weg -> Schriftsetzerweg: Bahntrasse	3::igndisp 15818,1834 15875,1796 15967,1718
+Theodor-Loos-Weg -> Zwickauer Damm: Bahntrasse	3::igndisp 15818,1834 15875,1796 16002,1964
+Schriftsetzerweg -> Theodor-Loos-Weg: Bahntrasse	3::igndisp 15967,1718 15875,1796 15818,1834
 Schriftsetzerweg -> Zwickauer Damm: Bahntrasse	3::igndisp 15967,1718 15875,1796 15835,1747
 Zwickauer Damm -> Schriftsetzerweg: Bahntrasse	3::igndisp 16002,1964 15875,1796 15967,1718
+Zwickauer Damm -> Theodor-Loos-Weg: Bahntrasse	3::igndisp 15835,1747 15875,1796 15818,1834
 Mittelstreifen	3nocross::ignrte 13294,6386 13307,6359 13323,6322
 Bürgerstr. -> Buschkrugallee: Mittelstreifen	3::igndisp 13239,6344 13307,6359 13294,6386
 Buschkrugallee -> Bürgerstr.: Mittelstreifen	3::igndisp 13323,6322 13307,6359 13239,6344

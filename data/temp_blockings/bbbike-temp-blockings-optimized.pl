@@ -970,15 +970,7 @@ userdel	q4::inwork 14530,11137 14465,11195
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1240869600,
-         'text' => 'L 338 Hauptstraße OL Neuenhagen, vor Grundst. Nr. 32 Kranaufstellung Vollsperrung 27.04.2009-27.04.2009 ',
-         'from' => 1240696800,
-         'id' => 1631,
-         'data' => 'userdel	q4::inwork 30179,13667 30795,13191
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1241820000,
          'text' => 'L 075 Mahlow - Großziethen zw. Kreuzg. B96A u. Kleinziethen Deckeninstandsetzung Vollsperrung 27.04.2009-08.05.2009 ',
@@ -1003,6 +995,44 @@ userdel	q4::inwork 14530,11137 14465,11195
          'from' => 1240783200,
          'id' => 1634,
          'data' => 'userdel	q4::inwork 41624,36648 41618,36515 41808,36267
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_012427',
+         'until' => 1243807199,
+         'text' => 'Wilhelmstr. (Mitte) Richtung Luisenstr. zwischen Unter den Linden und Dorothenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2009)',
+         'from' => 1240953370,
+         'id' => 1635,
+         'data' => 'userdel	q4::inwork; 8804,12280 8775,12457
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1241820000,
+         'text' => 'B 087 zw. Abzw. Freiimfelde und Luckau Straßenbau Vollsperrung 04.05.2009-08.05.2009 ',
+         'from' => 1241301600,
+         'id' => 1636,
+         'data' => 'userdel	2::inwork 37549,-57430 36050,-58754
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1246053600,
+         'text' => 'K 6315 Nennhausen - Rhinsmühlen zw. Nennhausen und Kotzen Straßenbau Vollsperrung 04.05.2009-26.06.2009 ',
+         'from' => 1241301600,
+         'id' => 1637,
+         'data' => 'userdel	2::inwork -50010,23562 -50201,23411 -50255,22794 -50938,21256
+userdel	2::inwork -50149,24689 -50048,24475 -49883,24097
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1241906400,
+         'text' => 'L 023 Ringenwalde - Milmersdorf OD Götschendorf Deckeneinbau Vollsperrung 08.05.2009-09.05.2009 ',
+         'from' => 1241647200,
+         'id' => 1638,
+         'data' => 'userdel	q4::inwork 28003,76731 27309,76652 26735,76914
 ',
          'type' => 'handicap'
        }

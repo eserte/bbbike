@@ -2473,7 +2473,6 @@ Perlpilzstr.: guter Beton	Q0 21253,-1493 21303,-1345 21356,-1245 21459,-1086
 Marientaler Str.: gutes Kopfsteinpflaster	Q1 16273,6609 16351,6678 16416,6741
 #: XXX: "enge Straße q1" ignoriert, auf dem Luftbild scheinen zwei ausreichende Fahrspuren vorhanden zu sein
 Egellsstr.: guter Asphalt	Q0 2579,19345 2294,19328 2160,19320
-Irmgardstr.: guter Asphalt	Q0 974,4669 960,4660 881,4429 863,4363 865,4288 908,4175
 Leo-Slezak-Str.: Asphalt	Q0 15054,6526 15153,6526 15158,6313
 Kopernikusstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 3459,2944 3644,2937
 Windhuker Str.: mäßiges Kopfsteinpflaster	Q2 5426,16539 5228,16738
@@ -2915,9 +2914,9 @@ Zum Großen Windkanal: Asphalt	Q0 19175,3095 19257,3172 19269,3183 19348,3253
 Engelhardstr.: guter Asphalt	Q0 17774,4966 17792,4875 17826,4730 17881,4521
 #: by: ^^^
 #: by: Florian Dietze-Römkens:
-Elly-Heuss-Knapp-Str.: Asphalt	Q0 17489,-16 17599,-187 17736,-391
+Elly-Heuss-Knapp-Str.: Asphalt	Q0 17489,-16 17599,-187 17669,-290 17736,-391
 #: by: Christian von Gelieu:
-Friederike-Nadig-Str.: Asphalt	Q0 17250,-175 17359,-345 17426,-446
+Friederike-Nadig-Str.: Asphalt	Q0 17250,-175 17359,-345 17429,-453
 #: by: Torre:
 Mellenseestr.: Beton	Q0 17523,9886 17618,9887 17958,10012
 #: by: Benjamin Pauli:
@@ -3131,7 +3130,7 @@ Apostel-Paulus-Str.: Kopfsteinpflaster?	Q2 7044,9163 6945,9142 6885,9132 6735,91
 Waldstr. (Niederschönhausen): asphaltiert	Q0 10018,19429 9978,19512
 Waldstr. (Niederschönhausen): Kleinsteinpflaster	Q1 9978,19512 9878,19741 9864,19793 9840,19923
 #: confirmed_by: Uta Voigt:
-Waldstr. (Niederschönhausen): asphaltiert	Q0 9840,19923 9788,20035 9754,20134 9725,20260 9718,20498
+Waldstr. (Niederschönhausen): asphaltiert	Q0 9840,19923 9788,20035 9754,20134 9725,20260 9724,20291 9718,20498
 #: by: ^^^
 #: by: Raik:
 #: note: grundhafter Neubau der Fahrbahn, http://www.berlin.de/ba-pankow/presse/archiv/20080530.1030.101683.html
@@ -6561,13 +6560,13 @@ Welfenallee: schlechtes Kopfsteinpflaster	Q3 1908,24494 1806,24440 1776,24416
 Welfenallee: Kleinpflastersteine	Q2 1776,24416 1758,24389
 Welfenallee: schlechtes Kopfsteinpflaster	Q3 1758,24389 1736,24300
 Welfenallee: fester Sand, mäßig befahrbar	Q2 1736,24300 1730,24250
-#: note: correction of anonymous (was Q3)
+#: correction_of: anonymous (was Q3)
 Tannenstr.: Kleinpflastersteine	Q2 2222,24884 2167,24900 2122,24929 2094,24961 2056,25035 2044,25111
-#: note: correction of anonymous (was Q2)
+#: correction_of: anonymous (was Q2)
 Benediktinerstr.: Asphalt	Q0 968,24815 1041,24812 1112,24821 1211,24871
-#: note: correction of anonymous (was Q2)
+#: correction_of: anonymous (was Q2)
 Benediktinerstr.: gut befahrbare Verbundsteine	Q1 1211,24871 1316,24924 1414,24945 1495,24950 1633,24939
-#: note: also by anonymous:
+#: confirmed_by: anonymous
 Benediktinerstr.: mäßig befahrbare Kleinpflastersteine	Q2 1633,24939 1750,24942
 Benediktinerstr.: gut befahrbarer Beton	Q0 1750,24942 1943,24984 2056,25035
 Ludolfingerweg: Asphalt	Q0 2192,25083 2044,25111 1982,25108 1767,25098 1644,25092 1643,25102 1529,25097 1370,25085 1309,25090 1255,25113 1207,25156
@@ -7747,7 +7746,7 @@ Wörther Str.: Kopfsteinpflaster	Q2 11582,14448 11446,14508 11317,14564
 #: note: Kathleen Kuminowski meint "guter Beton" und enge Straße, q0
 Bernkasteler Str.: guter Asphalt	Q0 14559,16912 14673,16895 14800,16887 14923,16914 14923,16901 15015,16908 15208,16939 15334,16961 15455,16984
 #: by: Diethelm Wohnhas:
-#: confirmed_by: Kurt Thiele
+#: confirmed_by: Kurt Thiele and Detlef Liebe
 Hranitzkystr.: guter Asphalt	Q0 8686,1664 8661,1649 8578,1692 8471,1741 8342,1803 8311,1818 8286,1830 8217,1866 8128,1908 8048,1945 8009,1959 7960,1977
 #: by: Nicola Kleine:
 Am Waidmannseck: Asphalt	Q0 4887,21944 4839,21964 4786,22010 4744,22065 4762,22092 4859,22142
@@ -8095,6 +8094,29 @@ Triftstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 13573,21256 13598,21360
 Klagenfurter Str.: fester Sandweg, Schlaglöcher, staubig	Q3 14698,20992 14734,21109 14771,21253 14818,21394
 #: by: Christian (cheml81):
 Godesberger Str.: guter Asphalt	Q0 18770,8898 18860,8886 18959,8870
+#: by: die_annemi:
+Theodor-Loos-Weg: guter Asphalt	Q0 15325,1720 15460,1764 15620,1764 15671,1923 15781,1928 15818,1834 15875,1796
+#: by: laaser (katzenmusike):
+Benjamin-Vogelsdorff-Str.: Asphalt	Q0 10479,18007 10355,17963
+#: by: babette.bothe:
+Klausdorfer Weg: schlechtes Kopfsteinpflaster	Q3 10505,-2552 10648,-2547 10833,-2544 10989,-2543
+#: by: timm wille:
+#: correction_of: anonymous (guter Asphalt, Q0)
+Irmgardstr.: schlechtes Kopfsteinpflaster	Q3 974,4669 960,4660 881,4429 863,4363 865,4288 908,4175
+#: by: Rudolf Kionke
+Pfarrer-Lenzel-Str.: guter Beton	Q0 9724,20291 9565,20312
+#: by: Sigrid Kohn:
+Frank-L.-Howley-Weg: Asphalt	Q0 2408,1144 2233,1528
+#: by: Maike Fährmann:
+Hirschpfad: schlechtes Kopfsteinpflaster	Q3 22522,8506 22639,8565 22809,8633 22871,8582
+#: by: Michael-Marcel:
+Ketschendorfer Weg: mäßiger Asphalt	Q1 20361,14118 20461,14110 20620,14092 20856,14073 20938,14066 21074,14058 21272,14036
+#: by: Steffi (Stoppelhopser...)
+Am Hellespont: guter Beton	Q0 10879,4358 10869,4233
+#: by: Jacqueline Franz:
+Jeanette-Wolff-Str.: asphaltiert	Q0 17551,-373 17669,-290 17726,-251 17789,-211 17848,-173 17928,-120
+#: by: Claudia Schulz-Rosenbach:
+Helene-Nathan-Weg: guter Asphalt	Q0 17681,-178 17726,-251
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206

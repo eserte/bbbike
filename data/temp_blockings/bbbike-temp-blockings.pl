@@ -13836,4 +13836,38 @@ EOF
 userdel	q4::inwork 41624,36648 41618,36515 41808,36267
 EOF
      },
+     { from  => 1240953370, # 2009-04-28 23:16
+       until => 1243807199, # 2009-05-31 23:59
+       text  => 'Wilhelmstr. (Mitte) Richtung Luisenstr. zwischen Unter den Linden und Dorothenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2009)',
+       type  => 'handicap',
+       source_id => 'IM_012427',
+       data  => <<EOF,
+userdel	q4::inwork; 8804,12280 8775,12457
+EOF
+     },
+     { from  => 1241301600, # 2009-05-03 00:00
+       until => 1241820000, # 2009-05-09 00:00
+       text  => 'B 087 zw. Abzw. Freiimfelde und Luckau Straßenbau Vollsperrung 04.05.2009-08.05.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 37549,-57430 36050,-58754
+EOF
+     },
+     { from  => 1241301600, # 2009-05-03 00:00
+       until => 1246053600, # 2009-06-27 00:00
+       text  => 'K 6315 Nennhausen - Rhinsmühlen zw. Nennhausen und Kotzen Straßenbau Vollsperrung 04.05.2009-26.06.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -50010,23562 -50201,23411 -50255,22794 -50938,21256
+userdel	2::inwork -50149,24689 -50048,24475 -49883,24097
+EOF
+     },
+     { from  => 1241647200, # 2009-05-07 00:00
+       until => 1241906400, # 2009-05-10 00:00
+       text  => 'L 023 Ringenwalde - Milmersdorf OD Götschendorf Deckeneinbau Vollsperrung 08.05.2009-09.05.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 28003,76731 27309,76652 26735,76914
+EOF
+     },
     );

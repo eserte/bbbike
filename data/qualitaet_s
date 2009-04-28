@@ -2176,7 +2176,6 @@ Kolonie Bismarckruh: Verbundsteinpflaster	Q1 1301,13338 1311,13210 1336,12967 13
 Perlpilzstr.: guter Beton	Q0 21253,-1493 21303,-1345 21356,-1245 21459,-1086
 Marientaler Str.: gutes Kopfsteinpflaster	Q1 16273,6609 16351,6678 16416,6741
 Egellsstr.: guter Asphalt	Q0 2579,19345 2294,19328 2160,19320
-Irmgardstr.: guter Asphalt	Q0 974,4669 960,4660 881,4429 863,4363 865,4288 908,4175
 Leo-Slezak-Str.: Asphalt	Q0 15054,6526 15153,6526 15158,6313
 Kopernikusstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 3459,2944 3644,2937
 Windhuker Str.: mäßiges Kopfsteinpflaster	Q2 5426,16539 5228,16738
@@ -2536,8 +2535,8 @@ Dregerhoffstr.: Beton	Q0 22904,2675 23177,2742 23427,2812 23541,2841 23643,2860 
 Sprengelstr. (Wedding): Asphalt	Q0 6739,14969 6945,15045 7131,15109 7303,15173
 Zum Großen Windkanal: Asphalt	Q0 19175,3095 19257,3172 19269,3183 19348,3253
 Engelhardstr.: guter Asphalt	Q0 17774,4966 17792,4875 17826,4730 17881,4521
-Elly-Heuss-Knapp-Str.: Asphalt	Q0 17489,-16 17599,-187 17736,-391
-Friederike-Nadig-Str.: Asphalt	Q0 17250,-175 17359,-345 17426,-446
+Elly-Heuss-Knapp-Str.: Asphalt	Q0 17489,-16 17599,-187 17669,-290 17736,-391
+Friederike-Nadig-Str.: Asphalt	Q0 17250,-175 17359,-345 17429,-453
 Mellenseestr.: Beton	Q0 17523,9886 17618,9887 17958,10012
 Carnotstr.: Asphalt	Q0 4806,12902 4678,12938
 Pintschstr.: Kopfsteinpflaster	Q2 13438,12965 13342,13185
@@ -2651,7 +2650,7 @@ Lettestr.: Kopfsteinpflaster	Q2 11268,15360 11368,15301 11480,15229
 Apostel-Paulus-Str.: Kopfsteinpflaster?	Q2 7044,9163 6945,9142 6885,9132 6735,9103 6593,9074 6442,9044 6366,9033 6283,9022 6209,9012
 Waldstr. (Niederschönhausen): asphaltiert	Q0 10018,19429 9978,19512
 Waldstr. (Niederschönhausen): Kleinsteinpflaster	Q1 9978,19512 9878,19741 9864,19793 9840,19923
-Waldstr. (Niederschönhausen): asphaltiert	Q0 9840,19923 9788,20035 9754,20134 9725,20260 9718,20498
+Waldstr. (Niederschönhausen): asphaltiert	Q0 9840,19923 9788,20035 9754,20134 9725,20260 9724,20291 9718,20498
 Robert-Rössle-Str.: Beton	Q0 16521,24864 16682,24758 16719,24734
 Stubenrauchstr.: schlechtes Kopfsteinpflaster	Q3 3452,3717 3568,3784 3629,3715
 Korsörer Str.: mäßiges Kopfsteinpflaster	Q2 10101,15751 10398,15797
@@ -5257,6 +5256,17 @@ Triftstr. (Blankenburg): asphaltiert	Q0 13524,21053 13573,21256
 Triftstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 13573,21256 13598,21360 13622,21464 13720,21761 13729,21779 13779,21920 13853,22006
 Klagenfurter Str.: fester Sandweg, Schlaglöcher, staubig	Q3 14698,20992 14734,21109 14771,21253 14818,21394
 Godesberger Str.: guter Asphalt	Q0 18770,8898 18860,8886 18959,8870
+Theodor-Loos-Weg: guter Asphalt	Q0 15325,1720 15460,1764 15620,1764 15671,1923 15781,1928 15818,1834 15875,1796
+Benjamin-Vogelsdorff-Str.: Asphalt	Q0 10479,18007 10355,17963
+Klausdorfer Weg: schlechtes Kopfsteinpflaster	Q3 10505,-2552 10648,-2547 10833,-2544 10989,-2543
+Irmgardstr.: schlechtes Kopfsteinpflaster	Q3 974,4669 960,4660 881,4429 863,4363 865,4288 908,4175
+Pfarrer-Lenzel-Str.: guter Beton	Q0 9724,20291 9565,20312
+Frank-L.-Howley-Weg: Asphalt	Q0 2408,1144 2233,1528
+Hirschpfad: schlechtes Kopfsteinpflaster	Q3 22522,8506 22639,8565 22809,8633 22871,8582
+Ketschendorfer Weg: mäßiger Asphalt	Q1 20361,14118 20461,14110 20620,14092 20856,14073 20938,14066 21074,14058 21272,14036
+Am Hellespont: guter Beton	Q0 10879,4358 10869,4233
+Jeanette-Wolff-Str.: asphaltiert	Q0 17551,-373 17669,-290 17726,-251 17789,-211 17848,-173 17928,-120
+Helene-Nathan-Weg: guter Asphalt	Q0 17681,-178 17726,-251
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953
