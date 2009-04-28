@@ -12985,6 +12985,13 @@ sub show_below_route_str {
     }
 }
 
+use vars qw($show_info_url);
+sub handle_show_info_url {
+    my($offset,$maxbytes) = @_;
+    return undef if $offset > length($show_info_url);
+    substr($show_info_url, $offset, $maxbytes);
+}
+
 # Zeigt Informationen zum aktuellen Tag.
 ### AutoLoad Sub
 sub show_info {
@@ -13162,21 +13169,16 @@ sub show_info {
 	    $info_top = $toplevel{$tl_tag}
 	};
 	
-	my $current_link_url;
 	my $link_menu = $info_text->Menu(-title => M"Linkmenü",
 					 -tearoff => 0);
 
 	my $copy_link = sub {
 	    my($url) = @_;
-	    $url = $current_link_url if !defined $url;
+	    $show_info_url = $url if defined $url;
 
 	    # Primary selection (for emacs, only works 1st time for xterm/mozilla...)
 	    $info_top->SelectionOwn;
-	    $info_top->SelectionHandle(sub {
-					   my($offset,$maxbytes) = @_;
-					   return undef if $offset > length($url);
-					   substr($url, $offset, $maxbytes);
-				       });
+	    $info_top->SelectionHandle(\&handle_show_info_url);
 	};
 	$link_menu->command
 	    (-label => M"Link kopieren",
@@ -13198,7 +13200,7 @@ sub show_info {
 	    $info_text->tagBind
 		("link$linkcount", "<Button-3>" => sub {
 		     my $e = $_[0]->XEvent;
-		     $current_link_url = ref $url eq 'CODE' ? $url->() : $url;
+		     $show_info_url = ref $url eq 'CODE' ? $url->() : $url;
 		     $my_link_menu->Post($e->X, $e->Y);
 		     Tk->break;
 		 });
@@ -13441,16 +13443,16 @@ sub show_info {
 		$www_link_menu->command
 		    (-label => M"Link kopieren als Start",
 		     -command => sub {
-			 my $current_start_link_url = $current_link_url;
+			 my $current_start_link_url = $show_info_url;
 			 $current_start_link_url =~ s{ziel}{start}g;
 			 $copy_link->($current_start_link_url);
 		     });
 		$www_link_menu->command
 		    (-label => M"Link kopieren als Start und Ziel",
 		     -command => sub {
-			 my $current_start_link_url = $current_link_url;
+			 my $current_start_link_url = $show_info_url;
 			 $current_start_link_url =~ s{ziel}{start}g;
-			 my $complete_link_url = "$current_start_link_url\n$current_link_url";
+			 my $complete_link_url = "$current_start_link_url\n$show_info_url";
 			 $copy_link->($complete_link_url);
 		     });
 
@@ -13621,7 +13623,7 @@ sub show_info {
 		$info_text->tagBind
 		    ("link$linkcount", "<Button-3>" => sub {
 			 my $e = $_[0]->XEvent;
-			 $current_link_url = $plugin->{callback_3_std}->(@args);
+			 $show_info_url = $plugin->{callback_3_std}->(@args);
 			 $link_menu->Post($e->X, $e->Y);
 			 Tk->break;
 		     });
