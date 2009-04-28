@@ -563,6 +563,13 @@ sub md5_file {
 sub show_vmz_lbvs_files {
     require File::Basename;
     my $t = $main::top->Toplevel(-title => "VMZ/LBVS files");
+    fill_vmz_lbvs_files($t);
+}
+
+sub fill_vmz_lbvs_files {
+    my $t = shift;
+    return if !Tk::Exists($t);
+    $_->destroy for ($t->children);
     my @files;
     opendir my $DIRH, $vmz_lbvs_directory
 	or die "Cannot open $vmz_lbvs_directory directory: $!";
@@ -577,7 +584,7 @@ sub show_vmz_lbvs_files {
 		   -foreground => $files_undone{$file} ? 'red' : 'DarkSeaGreen4',
 		   ($files_undone{$file} ? (-font => $main::font{'bold'}) : ()),
 		   -command => sub {
-		       show_any_diff($file, $file =~ m{lbvs} ? "lbvs" : "vmz");
+		       show_any_diff($file, ($file =~ m{lbvs} ? "lbvs" : "vmz"), $t);
 		   },
 		  )->pack(-fill => 'x', -anchor => 'w');
     }
@@ -614,7 +621,7 @@ sub show_lbvs_diff {
 }
 
 sub show_any_diff {
-    my($file, $diff_type) = @_;
+    my($file, $diff_type, $listener) = @_;
     # To pre-generate cache:
     # XXX make sure that only ONE check_bbbike_temp_blockings process
     # runs at a time...
@@ -629,11 +636,13 @@ sub show_any_diff {
     my $token = "chooseort-" . File::Basename::basename($file) . "-str";
     my $t = main::redisplay_top($main::top, $token, -title => $file);
     if (!$t) {
+	# XXX delete_layer does not happen here. $abk is never recorded.
 	$t = $main::toplevel{$token};
 	$_->destroy for ($t->children);
     } else {
 	$t->geometry($t->screenwidth-20 . "x" . 260 . "+0-20");
     }
+    $t->OnDestroy(sub { main::delete_layer($abk) });
     {
 	local $^T = time;
 	$t->Label(-text => "Modtime: " . scalar(localtime((stat($file))[9])) .
@@ -668,8 +677,10 @@ sub show_any_diff {
 						);
 			if ($ans =~ m{yes}i) {
 			    add_done_file($vmz_lbvs_done_file, $file, $digest);
-			    $t->messageBox(-message => "OK, done!",
-					   -icon => 'info');
+			    if ($listener) {
+				fill_vmz_lbvs_files($listener);
+			    }
+			    $t->destroy;
 			}
 		    })->pack(-anchor => 'e', -side => 'right');
     }
