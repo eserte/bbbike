@@ -825,7 +825,7 @@ for my $osm_file (@osm_files) {
 			$quality_cat = "Q2";
 			$quality_name = $lang eq 'en' ? $highway_cat : "unbefestigte Straﬂe";
 		    }
-		} elsif ($highway_cat eq 'track') {
+		} elsif ($highway_cat =~ m{^(track|path)$}) {
 		    push @or, ["strassen", "NN".$addcat];
 		    if (!defined $quality_cat) {
 			$quality_cat = "Q2";
