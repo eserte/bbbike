@@ -247,6 +247,12 @@ sub add_button {
 		     _require_BBBikeOsmUtil();
 		     BBBikeOsmUtil::delete_osm_layer();
 		 }],
+		[Button => 'Show download URL',
+		 -command => sub {
+		     _require_BBBikeOsmUtil();
+		     my $url = BBBikeOsmUtil::get_download_url(BBBikeOsmUtil::get_visible_area());
+		     main::status_message("URL: $url", "infodlg");
+		 }],
 		"-",
 		[Button => 'OSM-converted layer',
 		 -state => 'disabled',
