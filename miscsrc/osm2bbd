@@ -26,6 +26,7 @@ use File::Basename qw(basename);
 use File::Spec qw();
 use Getopt::Long;
 use IO::File;
+use List::Util qw(max);
 
 sub epoch2isodate (;$);
 sub touch ($);
@@ -184,6 +185,14 @@ my %place_to_population;
 		   (map { "line_dash.Z$_: 8,5,2,5" } (1 .. 10)),
 		  ],
     );
+
+# see http://www.mail-archive.com/talk@openstreetmap.org/msg06041.html
+my %grade_to_Q = (1 => "Q0",
+		  2 => "Q1",
+		  3 => "Q2",
+		  4 => "Q3",
+		  5 => "Q3-",
+		 );
 
 sub add_underline {
     return if $ignore_underline;
@@ -825,10 +834,37 @@ for my $osm_file (@osm_files) {
 			$quality_cat = "Q2";
 			$quality_name = $lang eq 'en' ? $highway_cat : "unbefestigte Straﬂe";
 		    }
-		} elsif ($highway_cat =~ m{^(track|path)$}) {
-		    push @or, ["strassen", "NN".$addcat];
+		} elsif ($highway_cat eq 'track') {
+		    push @or, ["strassen", "N".$addcat];
+		    my $add_quality_name;
+		    if ($tag{tracktype}) { # may override $quality_cat
+			my @all_grades = grep { m{^grade\d+$} } split /\s*;\s*/, $tag{tracktype};
+			my @num_grades = map { m{grade(\d+)}; $1 } @all_grades;
+			if (@num_grades) {
+			    my $grade = max @num_grades;
+			    if (defined(my $q = $grade_to_Q{$grade})) {
+				$quality_cat = $q;
+			    }
+			    if (defined $quality_name) {
+				$quality_name .= " (" . join(", ", @all_grades) . ")";
+			    } else {
+				$add_quality_name = " (" . join(", ", @all_grades) . ")";
+			    }
+			}
+		    }
 		    if (!defined $quality_cat) {
 			$quality_cat = "Q2";
+		    }
+		    if (!defined $quality_name) {
+			$quality_name = $lang eq 'en' ? $highway_cat : "Fahrweg";
+		    }
+		    if ($add_quality_name) {
+			$quality_name .= $add_quality_name;
+		    }
+		} elsif ($highway_cat eq 'path') {
+		    push @or, ["strassen", "NN".$addcat];
+		    if (!defined $quality_cat) {
+			$quality_cat = "Q3";
 			$quality_name = $lang eq 'en' ? $highway_cat : "Pfad";
 		    }
 		} elsif ($highway_cat eq 'footway') {
