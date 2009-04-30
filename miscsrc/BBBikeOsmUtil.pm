@@ -48,7 +48,7 @@ sub register {
 }
 
 sub plot_visible_area {
-    my($x0,$y0,$x1,$y1) = _get_visible_area();
+    my($x0,$y0,$x1,$y1) = get_visible_area();
     my @osm_files = osm_files_in_grid($x0,$y0,$x1,$y1);
     if (@osm_files) {
 	_filter_seen_grids(\@osm_files);
@@ -65,7 +65,7 @@ sub plot_visible_area {
 }
 
 sub mirror_and_plot_visible_area {
-    my($x0,$y0,$x1,$y1) = _get_visible_area();
+    my($x0,$y0,$x1,$y1) = get_visible_area();
     my @osm_files = osm_files_in_grid($x0,$y0,$x1,$y1);
     if (@osm_files) {
 	_filter_seen_grids(\@osm_files);
@@ -111,13 +111,19 @@ sub mirror_and_plot_visible_area {
     }
 }
 
+sub get_download_url {
+    my($x0,$y0,$x1,$y1) = @_;
+    my $url = "$OSM_API_URL/map?bbox=$x0,$y0,$x1,$y1";
+    $url;
+}
+
 sub download_and_plot_visible_area {
-    my($x0,$y0,$x1,$y1) = _get_visible_area();
+    my($x0,$y0,$x1,$y1) = get_visible_area();
+    my $url = get_download_url($x0,$y0,$x1,$y1);
     require File::Temp;
     my $ua = _get_ua();
     my(undef,$tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ".osm");
     local $defer_restacking = 1;
-    my $url = "$OSM_API_URL/map?bbox=$x0,$y0,$x1,$y1";
     main::status_message("Download $url to $tmpfile...", "info");
     warn "Latest downloaded temporary .osm file is $tmpfile\n";
     main::IncBusy($main::top);
@@ -144,7 +150,7 @@ sub download_and_plot_visible_area {
     main::restack();
 }
 
-sub _get_visible_area {
+sub get_visible_area {
     my $c = $main::c;
     my(@corners) = $c->get_corners;
     require Karte::Polar;
