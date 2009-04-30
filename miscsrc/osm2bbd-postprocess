@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd-postprocess,v 1.16 2009/04/30 20:04:31 eserte Exp $
+# $Id: osm2bbd-postprocess,v 1.17 2009/04/30 20:04:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -33,10 +33,12 @@ my @targets = ('wasserstrassen_lowres',
 	      );
 # Targets run by default (exclude obscure ones here)
 my @run_targets =
-    grep { $_ ne m{^(
-		       mount
-		   )$}x }
+    grep { !m{^(
+		  mount
+	      )$}x
+	  }
     @targets;
+
 my %skip_target;
 my %only_target;
 
@@ -68,7 +70,7 @@ $datadir = realpath $datadir;
 chdir $datadir or die "Can't chdir to $datadir: $!";
 
 if (grep { $_ } values %only_target) {
-    @run_targets = grep { $only_target{$_} } @run_targets;
+    @run_targets = grep { $only_target{$_} } @targets;
 }
 
 for my $target (@run_targets) {

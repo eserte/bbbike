@@ -1278,7 +1278,7 @@ sub reachable {
     }
 }
 
-# Get the nearest point at a street for the given point.
+# Get the nearest point "$x,$y" at a street for the given point.
 # Further arguments:
 #   FullReturn: return all information instead only the returned point
 #   AllReturn:  return an array reference with the data for all nearest points,
@@ -1505,6 +1505,8 @@ Strassen::Core - the main Strassen object for bbd data
 =head1 DESCRIPTION
 
 See SYNOPSIS.
+
+Also see the comments in the source code.
 
 =head1 SEE ALSO
 
