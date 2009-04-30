@@ -126,7 +126,9 @@ ${CGPSMAPPER}:
 # see also osm-download-all rule in misc/Makefile
 
 # -Xmx1024m was needed for hessen.osm (maybe 512m would also be enough)
-MKGMAP=	java -Xmx1024m -jar /usr/local/src/mkgmap-r590/mkgmap.jar
+MKGMAP_VER=590
+#MKGMAP_VER=1011 # XXX builds berlin, but stops at leipzig, it seems
+MKGMAP=	java -Xmx1024m -jar /usr/local/src/mkgmap-r${MKGMAP_VER}/mkgmap.jar
 MAPSOURCE_DE_IMG=$(HOME)/doc/map/mapsource_de.img
 
 combined-map:	${PERSISTENTTMPDIR}/gmapsupp.img
@@ -160,20 +162,20 @@ ${PERSISTENTTMPDIR}/berlin_osm.img:
 	    ${MISCDIR}/download/osm/usedom \
 	        > ${PERSISTENTTMPDIR}/berlin_combined.osm
 	cd ${PERSISTENTTMPDIR} && ( \
-	    ${MKGMAP} --description="Berlin und Umgebung OSM" --mapname=63240011 berlin_combined.osm && \
-	    mv 63240011.img berlin_osm.img )
+	    ${MKGMAP} --description="Berlin und Umgebung OSM" --mapname=12117001 --country-name=Germany --country-abbr=DE --region-name=Berlin --region-abbr=BER --net --transparent berlin_combined.osm && \
+	    mv 12117001.img berlin_osm.img )
 
 ${PERSISTENTTMPDIR}/leipzig_osm.img:
 	${COMBINE_OSM} ${MISCDIR}/download/osm/leipzig > ${PERSISTENTTMPDIR}/leipzig.osm
 	cd ${PERSISTENTTMPDIR} && ( \
-	    ${MKGMAP} --description="Leipzig und Umgebung OSM" --mapname=63240012 leipzig.osm && \
-	    mv 63240012.img leipzig_osm.img )
+	    ${MKGMAP} --description="Leipzig und Umgebung OSM" --mapname=12117002 leipzig.osm && \
+	    mv 1211702.img leipzig_osm.img )
 
 ${PERSISTENTTMPDIR}/hessen_osm.img:
 	cd ${PERSISTENTTMPDIR} && ( \
 	    bzcat ${MISCDIR}/download/osm/hessen.osm.bz2 > hessen.osm && \
-	    ${MKGMAP} --description="Hessen OSM" --mapname=63240013 hessen.osm && \
-	    mv 63240013.img hessen_osm.img )
+	    ${MKGMAP} --description="Hessen OSM" --mapname=12117003 hessen.osm && \
+	    mv 12117003.img hessen_osm.img )
 	-rm -f ${PERSISTENTTMPDIR}/hessen.osm
 
 ######################################################################
