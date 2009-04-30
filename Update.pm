@@ -309,13 +309,19 @@ sub bbbike_data_update {
     my $my_warn = sub { warn $_[0]; main::status_message($_[0], 'info') };
 
     # sichergehen, dass nicht die Originaldateien überschrieben werden...
-    $my_die->("FATAL: original directory, do not overwrite")
+    $my_die->("FATAL: das ist ein Original-BBBike-Verzeichnis, welches nicht überschrieben werden kann.")
 	if (-e "$rootdir/data/.original" ||
 	    -e "$rootdir/data/.archive");
     $my_die->("FATAL: suspicious rootdir: $rootdir")
 	if ($rootdir =~ m|/home/e/eserte/src/bbbike|);
-    $my_die->("FATAL: RCS in datadir detected")
+    $my_die->("FATAL: Ein Verzeichnis RCS in $rootdir/data gefunden. Update nicht möglich.")
 	if (-e "$rootdir/data/RCS");
+    $my_die->("FATAL: Ein Verzeichnis CVS in $rootdir/data gefunden. Bitte benutze 'cvs update' in der Kommandozeile um die BBBike-Daten zu aktualisieren, oder entferne das Verzeichnis CVS.")
+	if (-e "$rootdir/data/RCS");
+    $my_die->("FATAL: Ein Verzeichnis .svn in $rootdir/data gefunden. Bitte benutze 'svn update' in der Kommandozeile um die BBBike-Daten zu aktualisieren, oder entferne das Verzeichnis .svn.")
+	if (-e "$rootdir/data/.svn"); # will probably never happen
+    $my_die->("FATAL: Ein Verzeichnis .git in $rootdir gefunden. Bitte benutze 'git pull' in der Kommandozeile um die BBBike-Daten zu aktualisieren, oder entferne das Verzeichnis .git.")
+	if (-e "$rootdir/.git"); # if somebody is using github, or local git
 
     if (!-w "$rootdir/data") {
 	main::status_message("Auf das Datenverzeichnis <$rootdir/data> darf nicht geschrieben werden.\n" .
