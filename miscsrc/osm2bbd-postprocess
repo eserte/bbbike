@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd-postprocess,v 1.15 2009/04/19 19:01:29 eserte Exp $
+# $Id: osm2bbd-postprocess,v 1.16 2009/04/30 20:04:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -29,17 +29,24 @@ my @targets = ('wasserstrassen_lowres',
 	       'largest_city_is_center',
 	       'inaccessible_streets',
 	       #'make_long_streets',
+	       'mount',
 	      );
+# Targets run by default (exclude obscure ones here)
+my @run_targets =
+    grep { $_ ne m{^(
+		       mount
+		   )$}x }
+    @targets;
 my %skip_target;
 my %only_target;
 
 sub usage (;$) {
     my $msg = shift;
     warn $msg, "\n" if $msg;
-    die "usage: $0 [--debug=0..2] " . join(" ", map {
+    die "usage: $0 [--debug=0..2]\n" . join(" ", map {
 	(my $optname = $_) =~ s{_}{-}g;
-	"[-skip-$optname | -only-$optname]"
-    } @targets) . "\n";
+	"\t[-skip-$optname | -only-$optname]\n"
+    } @targets) . "\tdatadir\n";
 }
 
 my $debug = 1;
@@ -61,10 +68,10 @@ $datadir = realpath $datadir;
 chdir $datadir or die "Can't chdir to $datadir: $!";
 
 if (grep { $_ } values %only_target) {
-    @targets = grep { $only_target{$_} } @targets;
+    @run_targets = grep { $only_target{$_} } @run_targets;
 }
 
-for my $target (@targets) {
+for my $target (@run_targets) {
     if ($skip_target{$target}) {
 	print STDERR "Skip target $target.\n";
 	next;
@@ -173,6 +180,33 @@ sub target_make_long_streets {
 NYI, Strassen::Combine still have bugs. Also there must be some "tag"
 in the generated file to prevent useless re-calculation of the file.
 EOF
+}
+
+sub target_mount {
+    if (-e "mount" && (-M "mount" <= -M "hoehe" &&
+		       -M "mount" <= -M "gesperrt" &&
+		       -M "mount" <= -M "strassen")
+       ) {
+	print STDERR "up-to-date";
+	return;
+    }
+    my @cmd = ("$FindBin::RealBin/steigung_stat",
+	       '-minmount', '1.0',
+	       '-commentscompatible',
+	       '-sperre', "$datadir/gesperrt",
+	       '-str', "$datadir/strassen",
+	       '-i', "$datadir/hoehe",
+	       '-o', "$datadir/mount~"
+	      );
+    if ($debug >= 2) {
+	print STDERR "Running '@cmd'...\n";
+    }
+    system @cmd;
+    if ($? != 0) {
+	die "The command '@cmd' failed: $?";
+    }
+    rename "$datadir/mount~", "$datadir/mount"
+	or die "Can't rename mount~ to mount in $datadir: $!";
 }
 
 sub _load_meta {
