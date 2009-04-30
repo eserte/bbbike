@@ -980,15 +980,7 @@ userdel	q4::inwork 14530,11137 14465,11195
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1240956000,
-         'text' => 'L 030 Gerichtsstr. (Puschkinstr.) OL Königs Wusterhausen, zw. Brückenstr. und Kirchplatz Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 28.04.2009-28.04.2009 ',
-         'from' => 1240783200,
-         'id' => 1633,
-         'data' => 'userdel	q4::inwork 25859,-11559 26177,-11648
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1251756000,
          'text' => 'L 341 Steinbeck - Heckelberg OD Brunow, zw. Freudenberger Str. u. Tramper Weg Straßenausbau Vollsperrung 28.04.2009-31.08.2009 ',
@@ -1001,10 +993,11 @@ userdel	q4::inwork 14530,11137 14465,11195
        {
          'source_id' => 'IM_012427',
          'until' => 1243807199,
-         'text' => 'Wilhelmstr. (Mitte) Richtung Luisenstr. zwischen Unter den Linden und Dorothenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2009)',
+         'text' => 'Schadowstr. Richtung Unter den Linden Fahrtrichtung gesperrt (bis Ende 05.2009)',
          'from' => 1240953370,
          'id' => 1635,
-         'data' => 'userdel	q4::inwork; 8804,12280 8775,12457
+         'data' => '#userdel	q4::inwork; 8804,12280 8775,12457
+userdel	q4::inwork; 9008,12485 9018,12400 9028,12307
 ',
          'type' => 'handicap'
        },

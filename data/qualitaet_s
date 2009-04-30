@@ -1751,8 +1751,8 @@ Wördenweg: unbefestigter, holpriger Weg	Q2 8513,21099 8482,21051 8251,20927 8107
 (Am Nordgraben): unbefestigter, holpriger Weg	Q2 8107,20859 7644,20744 7454,20671
 Friesenstr.: Beton	Q1 8765,19288 8623,19353 8496,19410 8304,19475
 Homeyerstr.: Asphalt mit Schäden	Q1 9475,18862 9613,18758 9920,18636
-(Bremer Weg): Parkweg	Q1 6828,12031 6857,11992 7460,12054 7827,12105 8018,12131 8048,12135 8107,12145
-(Bremer Weg): Asphalt mit Unebenheiten und Schäden	Q1 8107,12145 8215,12156 8490,12192 8515,12242
+(Bremer Weg): Parkweg	Q1 5901,11902 5923,11873 6296,11890 6342,11878 6409,11925 6573,11943 6642,12010
+(Bremer Weg): Asphalt	Q0 6828,12031 6857,11992 7460,12054 7827,12105 8018,12131 8048,12135 8107,12145 8215,12156 8490,12192 8515,12242
 nördliches Spreeufer: teils Kleinkopfsteinpflaster, teils Gehwegplatten	Q1 6603,12831 6531,12898 6526,12934 6271,12985 6218,12975 6180,12962
 Kirchstr. (Köpenick): Asphalt, gepflasterter Parkstreifen 	Q0 22312,4593 22284,4653 22243,4710 22234,4789 22196,4847
 Schwarzer Weg: Asphaltdecke	Q0 15731,11270 15708,11193 15752,11115 15805,10949 15756,10966
@@ -2060,6 +2060,7 @@ Burgunder Str. (Nikolassee): Kopfsteinpflaster	Q2 -3368,2747 -3617,2671
 An der Rehwiese: Kopfsteinpflaster	Q2 -3360,2917 -3368,2747
 An der Rehwiese: schlechtes Kopfsteinpflaster	Q3 -3368,2747 -3383,2603 -3368,2415
 An der Rehwiese: asphaltiert	Q0 -3368,2415 -3420,2224
+Am Kupfergraben: Kopfsteinpflaster	Q2 9867,12651 9912,12623
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 346,4833 294,4916 158,5103 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2054,6840 1961,6820
@@ -5349,8 +5350,9 @@ Georgenkirchstr.: Asphalt	Q0 11842,13576 11778,13498 11711,13416 11654,13351 115
 Hinter der Katholischen Kirche: Kopfsteinpflaster	Q1 9801,12245 9795,12293 9780,12401
 Behrenstr.: Asphalt	Q0 9492,12214 9626,12227 9700,12234 9743,12239 9801,12245
 Markgrafenstr. (Kreuzberg, Mitte): Asphalt	Q2 9626,12227 9636,12126
-Am Festungsgraben: Kopfsteinpflaster	Q1 9842,12506 9739,12489
-(Dorotheenstr. - Unter den Linden): Kopfsteinpflaster	Q1 9723,12594 9732,12536 9739,12489 9752,12398
+Am Festungsgraben: Kopfsteinpflaster	Q1 9842,12506 9764,12492
+(Dorotheenstr. - Unter den Linden): wassergebundene Decke	Q1 9744,12601 9764,12492
+(Dorotheenstr. - Unter den Linden): Kopfsteinpflaster	Q1 9764,12492 9771,12400
 (Eichhornstr. - Reichpietschufer): Kopfsteinplaster, Gehweg Ok	Q2 8232,11414 8205,11401 8184,11160
 Kuppenheimerstr.: Schotterweg	Q1 5823,8107 5824,8035
 (Herkulesufer - Von-der-Heydtstr.): Kleinpflaster	Q2 7140,11156 7118,11209
