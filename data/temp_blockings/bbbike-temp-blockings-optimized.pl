@@ -619,16 +619,7 @@ userdel	1::inwork 10614,19907 10742,19632
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_011669',
-         'until' => 1241128799,
-         'text' => 'Köpenicker Str. (Kreuzberg) Richtung Bethaniendamm zwischen Brückenstr. und Michaelkirchstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 04.2009)',
-         'from' => 1238347459,
-         'id' => 1570,
-         'data' => 'userdel	q4::inwork; 11242,11720 11324,11689 11574,11594
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_011767',
@@ -791,16 +782,7 @@ userdel	q4::inwork 14530,11137 14465,11195
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_012064',
-         'until' => 1241128799,
-         'text' => 'Ordensmeisterstr. (Tempelhof) Richtung Tempelhofer Damm zwischen Lorenzweg und Tempelhofer Damm Baustelle, Fahrtrichtung gesperrt (bis Ende 04.2009)',
-         'from' => 1238954788,
-         'id' => 1600,
-         'data' => 'userdel	q4::inwork; 9457,5641 9357,5601 9147,5534
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1243634400,
@@ -920,15 +902,7 @@ userdel	q4::inwork 14530,11137 14465,11195
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1241128800,
-         'text' => 'L 077 Saarmund - Güterfelde Bereich KVK Philippsthal Radwegbau Vollsperrung 14.04.2009-30.04.2009 ',
-         'from' => 1239573600,
-         'id' => 1623,
-         'data' => 'userdel	2::inwork -6043,-7395 -5575,-6838
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => undef,
@@ -950,16 +924,7 @@ userdel	q4::inwork 14530,11137 14465,11195
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_012301',
-         'until' => 1241128799,
-         'text' => 'Glinkastr. (Mitte) Kreuzungsbereich Behrenstr. Baustelle, gesperrt (bis Ende 04.09)',
-         'from' => 1240518036,
-         'id' => 1628,
-         'data' => 'userdel	q4::inwork 9183,12076 9164,12172
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1259881200,

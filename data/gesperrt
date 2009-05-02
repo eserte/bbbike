@@ -162,7 +162,7 @@ Anzengruberstr.	1 13042,8395 12865,8346 12689,8289
 Nalepastr. am Rundfunkgebäude	2 17076,8443 17042,7748
 Kirchstr.	1 22196,4847 22234,4789 22243,4710 22284,4653 22312,4593
 Kietzer Str.	1 22312,4593 22358,4521 22396,4464
-Ontarioseestr.	1 18577,10023 18408,10041 18339,10048
+Ontarioseestr.	1 18552,10135 18577,10023 18408,10041 18339,10048
 Degnerstr. (außer Tram)	1 16434,15580 16464,15665
 Henriette-Herz-Platz	1 10371,13006 10255,12959
 Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092 4880,11088 4926,11081 4921,11017
@@ -885,6 +885,8 @@ Düsseldorfer Str. -> Paderborner Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 4
 Paderborner Str. -> Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3720,9996 3906,10035 3874,10153
 Paderborner Str. -> Düsseldorfer Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3720,9996 3906,10035 4151,10026
 Straßenbahntrasse	3nocross::ignrte 18809,9133 18790,9018 18770,8898
+Bopparder Str. -> Treskowallee: Straßenbahntrasse	3::igndisp 18881,9002 18790,9018 18770,8898
+Treskowallee -> Bopparder Str.: Straßenbahntrasse	3::igndisp 18809,9133 18790,9018 18881,9002
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 5474,9961 5475,9914 5473,9869
 Bundesallee -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5474,9961 5475,9914 5541,9923
 Regensburger Str. -> Pariser Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5541,9923 5475,9914 5416,9928
