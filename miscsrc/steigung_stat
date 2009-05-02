@@ -41,6 +41,7 @@ my $gefaelle = 0;
 my $orig = 0;
 my $min_mount;
 my $sperre_file;
+my $tolerant;
 
 # -orig is obsolete!
 if (!GetOptions("i=s" => \$i,
@@ -51,10 +52,11 @@ if (!GetOptions("i=s" => \$i,
 		"orig!" => \$orig,
 		"minmount=f" => \$min_mount,
 		"sperre=s" => \$sperre_file,
+		"tolerant!" => \$tolerant,
 		"v+" => \$v,
 	       )) {
     die "usage: $0 [-str strassen.bbd [-str ...]] [-i hoehe.bbd] [-sperre gesperrt.bbd] [-o output.bbd]
-                   [-[no]commentscompatible] [-[no]gefaelle] [-[no]orig] [-v]
+                   [-[no]commentscompatible] [-[no]gefaelle] [-[no]orig] [-tolerant] [-v]
 
 Default for -str: $strfile_default
 Default for -i: $i
@@ -219,7 +221,13 @@ sub better_make_net_steigung {
 	    my $strecke1 = $dist_so_far;
 	    my $strecke2 = $calc_strecke->($from, $neighbor);
 	    if ($strecke2 == 0) {
-		die "Unexpected: Distance between $from and $neighbor is 0. Please fix data in " . join(" ", $sourcenet->sourcefiles);
+		my $msg = "Unexpected: Distance between $from and $neighbor is 0. Please fix data in " . join(" ", $sourcenet->sourcefiles);
+		if ($tolerant) {
+		    warn $msg . ". Ignore and skip.\n";
+		    next;
+		} else {
+		    die $msg;
+		}
 	    }
 	    my $strecke = $strecke1 + $strecke2;
 	    if (exists $hoehe->{$neighbor}) {

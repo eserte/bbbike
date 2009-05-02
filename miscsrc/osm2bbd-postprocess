@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd-postprocess,v 1.17 2009/04/30 20:04:39 eserte Exp $
+# $Id: osm2bbd-postprocess,v 1.18 2009/05/02 18:56:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -195,6 +195,7 @@ sub target_mount {
     my @cmd = ("$FindBin::RealBin/steigung_stat",
 	       '-minmount', '1.0',
 	       '-commentscompatible',
+	       '-tolerant', # do not croak on linesegs with length=0
 	       '-sperre', "$datadir/gesperrt",
 	       '-str', "$datadir/strassen",
 	       '-i', "$datadir/hoehe",
