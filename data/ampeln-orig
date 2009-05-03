@@ -176,7 +176,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6990,8685
 	X 6687,8385
 	X 7655,9188
-	X 7782,9115
+# aufgehoben (gesehen 2009-05)	X 7782,9115
 	X 7479,9357
 	X 7526,9791
 	X 7110,9024
@@ -348,6 +348,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3707,5758
 	X 4520,5793
 	X 4861,5581
+#: XXX_prog: man verliert hier viel Zeit
 	X 4741,5309
 	X 5165,6119
 	X 5137,6066
@@ -537,8 +538,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6977,870
 	X 7758,821
 	X 7729,691
-	X 10411,966
-	X 10055,1935
+	X 10425,971
+	X 10067,1939
 	X 12655,3882
 	X 12560,4290
 	X 12731,4841
@@ -606,11 +607,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -1986,11487
 	X -2419,13237
 	X -2706,13291
-	X -3171,13595
+	X -3189,13588
 	X -3227,14260
 	X -3009,17090
 	X -4591,15496
-	X -4093,15335
+	X -4110,15367
 	X -3552,14082
 	X -3721,14495
 	X -3605,13894
@@ -778,7 +779,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 1136,3878
 	X 458,3697
 	X -266,3648
-	X 14988,11130
+#: note: evtl. wird nach den Bauarbeiten auf der Kynaststr. die alte Situation wieder hergestellt
+	F 14994,11120
 	X 12349,8464
 	X 17427,10259
 	X 17605,10199
@@ -841,8 +843,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -4882,12061
 	X -2850,11423
 	X -2209,11222
-	X 9601,3146
-	X 9700,2879
+	X 9621,3155
+	X 9720,2887
 	X 10788,-172
 	X 10831,-808
 	X 10844,-1335
@@ -1094,8 +1096,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7318,759
 	X 8680,6322
 	X 11308,-2535
-	F 10599,445
-	X 10212,1504
+	F 10617,452
+	X 10226,1515
 	X 14222,10430
 	X 13596,10722
 	X 9789,5767
@@ -1231,7 +1233,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2316,8857
 	X 1585,5136
 	X 23451,4877
-	X -7739,8459
+	F -7787,8517
 	X -8797,7638
 	X 4501,1900
 	X 18271,-1506
@@ -1259,8 +1261,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # Ampel wurde ca. 2008-05-20 außer Betrieb genommen und abgebaut (by: Gordon Charles; http://www.berlin.de/ba-pankow/presse/archiv/20080508.0705.100069.html)	X 12693,16700
 	X 10620,16497
 	X 14266,12446
-	X 5272,4535
-	X 5678,3967
+	X 5271,4547
+	X 5671,3987
 	X 4807,5131
 	X 25512,4842
 	X 990,14062
@@ -1576,7 +1578,7 @@ nur Richtung O	X 8142,7221
 	F 10186,4178
 	X 8955,5549
 	X 8196,6775
-	X 5048,4798
+	F 5070,4770
 	X 5124,5750
 	X 6495,6301
 	X 6442,6788
@@ -1753,7 +1755,7 @@ Bahn kommt ca. 4-6x täglich	B 35295,47041
 Bahn kommt ca. halbstündlich	B 47729,123756
 Bahn kommt ca. halbstündlich	B 40222,103642
 	B 45701,72652
-	B -8428,-2886
+	B -8417,-2867
 	B -9996,-5596
 	B 26112,-23187
 	B 26706,-17867
@@ -1984,13 +1986,14 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8626,23432
 #: note: laut Luftbild:
 	X 23561,15975
 	B0 20722,6971
+	B0 14895,1842
+	B0 14985,1801
+	B0 15350,1636
+	B0 14621,1798
+	B0 13559,2205
 #: note: laut Luftbild: vvv
 	B0 14221,1921
-	B0 14621,1798
 	B0 14512,1818
-	B0 13559,2205
-	B0 14907,1832
-	B0 15350,1636
 #: XXX_prog: Gilt nur in Südwestrichtung!
 	B0 15799,1690
 #: note: ^^^
@@ -2037,9 +2040,9 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8626,23432
 	F 4984,5788
 	F 4900,5648
 	F 6333,7708
-#: note: Luftbild
+#: note: am Wochenende nicht eingeschaltet
 	X 8868,2061
-#: note: Luftbild
+#: note: am Wochenende nicht eingeschaltet
 	F 9034,1953
 	X 17017,16716
 	X 11323,12484
@@ -2417,6 +2420,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 20026,11759
 #: XXX_prog: Ampel nur in Richtung Westen
 	F 19785,11760
+	X 21308,3680
+	X -7484,13770
 ################################################################################
 # note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10044614/620526/
@@ -2493,7 +2498,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -8034,-3922
 	X -8032,-3710
 	X -7971,-3373
-	X -7873,-3094
+	X -7878,-3090
 	X -7060,-3124
 	X -5736,-3629
 	X -9462,-2540
@@ -2526,6 +2531,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -9872,-4694
 	F -13212,-1356
 	F -7214,-4362
+	X -13778,4492
 #: note: ^^^
 ################################################################################
 # note: Ampeln elsewhere vvv

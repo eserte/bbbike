@@ -2120,13 +2120,13 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 22138,4661 22111,4562
-userdel	2 22138,4661 22161,4734 22196,4847
+userdel	2 22138,4661 22175,4730 22196,4847
 userdel	2 22111,4562 22162,4546
 userdel	2 22111,4562 22093,4499
 userdel	2 22147,4831 22043,4562
 userdel	2 22383,4703 22355,4660 22312,4593
 userdel	2 22312,4593 22214,4548 22162,4546
-userdel	2 22043,4562 22071,4501
+userdel	2 22043,4562 22057,4531 22071,4501
 EOF
      },
      { from  => 1119391200, # 2005-06-22 00:00
@@ -2394,7 +2394,7 @@ EOF
        text  => 'Rudower Str. (Treptow) Richtung stadteinwärts zwischen Köpenicker Str. und Wegedornstr. Baustelle, Fahrtrichtung gesperrt, Einbahnstraße in Richtung Köpenicker Str. (bis 05.08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 19771,1793 19455,1870 19188,1980 18881,2062
+userdel	q4; 19771,1793 19564,1871 19266,1968 19055,2037 18881,2062
 EOF
      },
      { from  => 1122415200, # 2005-07-27 00:00
@@ -2634,7 +2634,7 @@ EOF
        text  => 'Glienicker Straße zwischen Grünauer Straße und Nipkowstraße Richtung Adlergestell wegen Bauarbeiten gesperrt bis 15.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 21823,4210 21679,4059 21496,3849 21489,3841 21434,3777 21316,3662 21227,3549 21198,3522 21153,3484 21055,3415 20967,3343 20818,3182
+userdel	q4; 21823,4210 21679,4059 21496,3849 21489,3841 21411,3760 21330,3697 21308,3680 21244,3571 21198,3522 21153,3484 21055,3415 20967,3343 20832,3170
 EOF
      },
      { from  => 1125351382, # 2005-08-29 23:36
@@ -4737,10 +4737,10 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002922',
        data  => <<EOF,
-userdel	q4 22439,4838 22445,4758 22381,4752 22377,4836 22196,4847 22161,4734 22138,4661 22111,4562 22162,4546 22214,4548 22312,4593 22358,4521
+userdel	q4 22439,4838 22445,4758 22381,4752 22377,4836 22196,4847 22175,4730 22138,4661 22111,4562 22162,4546 22214,4548 22312,4593 22358,4521
 userdel	q4 22111,4562 22093,4499
 userdel	q4 22445,4758 22452,4689 22395,4678 22383,4703 22355,4660 22312,4593 22284,4653 22243,4710 22234,4789
-userdel	q4 22147,4831 22043,4562 22071,4501
+userdel	q4 22147,4831 22043,4562 22057,4531 22071,4501
 userdel	q4 22381,4752 22383,4703
 EOF
      },
@@ -5059,7 +5059,7 @@ EOF
        text  => 'Luisenhain ist gesperrt, Umgestaltung bis 2007',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 22196,4847 22147,4831 22043,4562 22071,4501
+userdel	2::inwork 22196,4847 22147,4831 22043,4562 22057,4531 22071,4501
 EOF
      },
      { from  => 1152363677, # 2006-07-08 15:01
@@ -6433,7 +6433,7 @@ EOF
        text  => 'Lankestr. gesperrt bis 27.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -9952,-109 -9942,21
+userdel	2::inwork -9965,-105 -9942,21
 EOF
      },
      { from  => 1161712875, # 2006-10-24 20:01
@@ -7971,7 +7971,7 @@ EOF
        data  => <<EOF,
 userdel	2::temp 22284,4653 22212,4655 22138,4661 22111,4562 22162,4546 22214,4548 22312,4593
 userdel	2::temp 22093,4499 22111,4562
-userdel	2::temp 22196,4847 22161,4734 22138,4661
+userdel	2::temp 22196,4847 22175,4730 22138,4661
 EOF
      },
      { from  => 1178402400, # 2007-05-06 00:00
@@ -8292,11 +8292,12 @@ EOF
        text  => 'Sperrungen im Neuen Garten wegen des G8-Vorbereitungstreffens, bis 2007-05-30 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp -12166,1384 -12115,1331 -12081,1168 -12191,1196 -12182,816
+userdel	2::temp -12139,1325 -12094,1273 -12081,1168
+userdel	2::temp -12166,1384 -12141,1357 -12139,1325 -12144,1255 -12186,1118 -12182,816
 userdel	2::temp -11818,993 -11871,1087 -12081,1168
 userdel	2::temp -11887,837 -11856,950
 userdel	2::temp -11581,559 -11650,590 -11603,721 -11615,853 -11715,959
-userdel	2::temp -12000,1243 -11868,1193 -11568,1287 -11537,1206 -11575,1031 -11562,918 -11510,810 -11231,696
+userdel	2::temp -11990,1214 -11871,1185 -11568,1287 -11537,1206 -11575,1031 -11562,918 -11510,810 -11231,696
 EOF
      },
      { from  => 1180567260, # 2007-05-31 01:21
@@ -8525,7 +8526,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_005746',
        data  => <<EOF,
-userdel	q4::inwork; 20818,3182 20760,3059 20688,2947 20565,2754
+userdel	q4::inwork; 20832,3170 20779,3046 20704,2939 20565,2754
 EOF
      },
      { from  => 1181685600, # 2007-06-13 00:00
@@ -8693,7 +8694,7 @@ EOF
        data  => <<EOF,
 userdel	2::temp 22284,4653 22212,4655 22138,4661 22111,4562 22093,4499
 userdel	2::temp 22111,4562 22162,4546
-userdel	2::temp 22196,4847 22161,4734 22138,4661
+userdel	2::temp 22196,4847 22175,4730 22138,4661
 EOF
      },
      { from  => 1182000409, # 2007-06-16 15:26
@@ -8840,7 +8841,7 @@ EOF
        data  => <<EOF,
 userdel	2::temp 22284,4653 22212,4655 22138,4661 22111,4562 22093,4499
 userdel	2::temp 22312,4593 22214,4548 22162,4546 22111,4562
-userdel	2::temp 22196,4847 22161,4734 22138,4661
+userdel	2::temp 22196,4847 22175,4730 22138,4661
 EOF
      },
      { from  => 1183193708, # 2007-06-30 10:55
@@ -9168,7 +9169,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006151',
        data  => <<EOF,
-userdel	1::inwork 14988,11130 15060,11006 15085,10956 15113,10916 15144,10905
+userdel	1::inwork 14988,11130 14994,11120 15060,11006 15085,10956 15113,10916 15144,10905
 EOF
      },
      { from  => 1185055200, # 2007-07-22 00:00
@@ -11055,7 +11056,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008131',
        data  => <<EOF,
-userdel	2::inwork -3001,13877 -3049,13959 -3072,14040
+userdel	2::inwork -3001,13877 -3049,13959 -3068,14033
 EOF
      },
      { from  => 1205967600, # 2008-03-20 00:00
@@ -11414,7 +11415,7 @@ userdel	2::inwork 50732,-71705 51374,-71361 51440,-71337
 EOF
      },
      { from  => 1209852000, # 2008-05-04 00:00
-       until => undef, # XXX
+       until => 1241384472, # XXX undef (keine Referenzen mehr bei vmz)
        text  => 'Alt-Rudow: von Krokusstraße bis Köpenicker Straße Einbahnstraße in Richtung Neudecker Weg',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -12287,7 +12288,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009456',
        data  => <<EOF,
-userdel	2::inwork 21153,3484 21198,3522 21227,3549 21316,3662
+userdel	2::inwork 21153,3484 21198,3522 21244,3571 21308,3680
 EOF
      },
      { from  => 1219523390, # 2008-08-23 22:29
@@ -12359,7 +12360,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_009763',
        data  => <<EOF,
-userdel	q4::inwork 23451,4877 23363,4846 22893,4532 22862,4511 22832,4491 22740,4415
+userdel	q4::inwork 22740,4415 22686,4310
 EOF
      },
      { from  => 1219528800, # 2008-08-24 00:00
@@ -13299,11 +13300,11 @@ EOF
 userdel	q4::inwork; 15052,14585 15272,14691 15383,14759
 EOF
      },
-     { from  => 1238347459, # 2009-03-29 19:24
-       until => Time::Local::timelocal(reverse(2009-1900,4-1,30,23,59,59)), # was 1238536799 2009-03-31 23:59 # neues Ende geschätzt
-       text  => 'Köpenicker Str. (Kreuzberg) Richtung Bethaniendamm zwischen Brückenstr. und Michaelkirchstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 04.2009)',
+     { from  => 1241158705, # 2009-05-01 08:18
+       until => 1243807199, # 2009-05-31 23:59
+       text  => 'Köpenicker Str. (Kreuzberg) Richtung Engeldamm zwischen Heinrich-Heine-Str. und Michaelkirchstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2009)',
        type  => 'handicap',
-       source_id => 'IM_011669',
+       source_id => 'IM_012479',
        data  => <<EOF,
 userdel	q4::inwork; 11242,11720 11324,11689 11574,11594
 EOF
@@ -13319,21 +13320,22 @@ EOF
      },
      { from  => 1240517859, # 2009-04-23 22:17
        until => 1242424799, # 2009-05-15 23:59
-       text  => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt; sowie Einbahnstraßenregelung in der Giselastr. (bis Mitte 05.09)',
+       text  => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt; sowie Einbahnstraßenregelungen in der Giselastr. und Stadthausstr. (bis Mitte 05.09)',
        type  => 'handicap',
        source_id => 'IM_011767',
        data  => <<EOF,
 userdel	q4::inwork; 16153,10818 16032,10842
 userdel	q4::inwork; 16196,10911 16153,10818
+userdel	q4::inwork; 15681,10801 15674,10851
 EOF
      },
-     { from  => 1238347628, # 2009-03-29 19:27
-       until => 1251755999, # 2009-08-31 23:59
-       text  => 'Pappelallee (Prenzlauer Berg) in Richtung Schönhauser Allee zwischen Wichertstr. und Stargarder Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2009)',
+     { from  => 1241158590, # 2009-05-01 08:16
+       until => 1257029999, # 2009-10-31 23:59
+       text  => 'Pappelallee (Prenzlauer Berg) Richtung Wisbyer Str. zwischen Stargarder Str. und Wichertstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2009)',
        type  => 'handicap',
        source_id => 'IM_011726',
        data  => <<EOF,
-userdel	q4::inwork; 11455,15916 11393,15823 11373,15789 11301,15668
+userdel	q4::inwork; 11301,15668 11373,15789 11393,15823 11455,15916
 EOF
      },
      { from  => 1238347688, # 2009-03-29 19:28
@@ -13759,6 +13761,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp -8625,-1176 -8700,-997 -8813,-933 -8913,-813 -9103,-813 -9239,-739 -9337,-668 -9365,-610 -9454,-434 -9562,-325
+userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
 EOF
      },
      { from  => 1240517911, # 2009-04-23 22:18
@@ -13767,7 +13770,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012333',
        data  => <<EOF,
-userdel	q4::temp 22196,4847 22161,4734 22138,4661 22111,4562 22093,4499
+userdel	q4::temp 22196,4847 22175,4730 22138,4661 22111,4562 22093,4499
 EOF
      },
      { from  => 1240517963, # 2009-04-23 22:19
@@ -13869,6 +13872,23 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 28003,76731 27309,76652 26735,76914
+EOF
+     },
+     { from  => 1241158758, # 2009-05-01 08:19
+       until => 1241222400, # 2009-05-02 02:00
+       text  => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (bis 02.05.09, 02 Uhr)',
+       type  => 'handicap',
+       source_id => 'IM_012478',
+       data  => <<EOF,
+userdel	q4::temp 8055,12186 8089,12190 8214,12205 8515,12242
+EOF
+     },
+     { from  => 1242079200, # 2009-05-12 00:00
+       until => 1243634400, # 2009-05-30 00:00
+       text  => 'L 712 Kemlitz-Paplitz zw. B115 und Paplitz, bei Baruth Straßenbau Vollsperrung 13.05.2009-29.05.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 15938,-42195 16017,-39838 15876,-39330
 EOF
      },
     );

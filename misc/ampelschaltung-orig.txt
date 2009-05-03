@@ -273,7 +273,7 @@ Do, 29.10.1998
 13614,9333    Wildenbruchstr./Karl-Kunger-Str.   SW->NO     20:09:38
 14089,9610    Elsenstr./Am Treptower Park        S->N   85  20:11:44  20:11:57
 14558,10264   Stralauer Str./Markgrafendamm      S->N       20:15:20  20:14:40
-14988,11130   Kynaststr./Marktstr.               S->N       20:18:54
+14994,11120   Kynaststr./Marktstr.               S->N       20:18:54
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -579,7 +579,7 @@ So, 14.03.1999
 8616,8605     Boelckestr./Bayernring             O->W       14:36:30
 8594,8777     Dudenstr./Katzbachstr./Boelckestr  S->N       14:37:08
 8389,9087     Kreuzbergstr./Monumentenstr.       O->W       14:38:20
-7782,9115     Monumentenstr./Hohenfriedbergstr.  O->W       14:39:20  14:38:55
+# Ampel existiert nicht mehr: 7782,9115     Monumentenstr./Hohenfriedbergstr.  O->W       14:39:20  14:38:55
 7655,9188     Langenscheidtstr./Crellestr.       SO->NW     14:40:00  14:39:35
 7655,9188     Langenscheidtstr./Crellestr.       SW->NO     14:41:05  14:40:33
 7479,9357     Langenscheidtstr./Hauptstr. (Schö  SO->NW     14:41:23
@@ -744,7 +744,7 @@ Fr, 09.04.1999
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Sa, 10.04.1999
-14988,11130   Kynaststr./Marktstr./Hirschberger  NO->SW 80? 09:10:09  09:09:04
+14994,11120   Kynaststr./Marktstr./Hirschberger  NO->SW 80? 09:10:09  09:09:04
 14310,9692    Puschkinallee/Parkweg              N->S       09:14:55  09:15:10
 14193,9746    Elsenstr./An den Treptowers/Pusch  SO->NW     09:15:21
 14089,9610    Elsenstr./Am Treptower Park        NO->SW     09:15:55
@@ -776,7 +776,7 @@ Sa, 10.04.1999
 12229,10014   Reichenberger Str./Ohlauer Str.    S->N       20:41:34  20:41:46
 14193,9746    Elsenstr./An den Treptowers/Pusch  NO->SW     20:50:09  20:50:29
 14558,10264   Stralauer Allee/An den Treptowers  S->N       20:51:32
-14988,11130   Kynaststr./Marktstr./Hirschberger  S->NO      20:55:05  20:55:20
+14994,11120   Kynaststr./Marktstr./Hirschberger  S->NO      20:55:05  20:55:20
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -1119,7 +1119,7 @@ Do, 29.04.1999
 # ----------------------------------------------------------------------------
 Do, 29.04.1999
 # ca. 23:25
-14988,11130   Marktstr./Kynaststr.               S->N   60?
+14994,11120   Marktstr./Kynaststr.               S->N   60?
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -1185,7 +1185,7 @@ Di, 04.05.1999
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
 Mi, 05.05.1999
-14988,11130   Kynaststr./Marktstr./Hirschberger  N->S   70? 08:45:45  08:44:49
+14994,11120   Kynaststr./Marktstr./Hirschberger  N->S   70? 08:45:45  08:44:49
 14558,10264   Stralauer Allee/An den Tr (Auto)   O->W                 08:50:32
 14558,10264   Stralauer Allee/An den Tr (Rad)    O->W       08:51:40
 14222,10430   Stralauer Allee/Bossestr.          O->W       08:52:22

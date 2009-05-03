@@ -37,8 +37,9 @@ Humboldtbrücke: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflicht
 Nuthestr.: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2; -11549,-1169 -11613,-1125
 Nuthestr.: Radweg vorhanden und wegen Kfz-Straße zwingend benutzungspflichtig	RW2; -11613,-1125 -11549,-1169 -11463,-1232 -11356,-1317
 Alt Nowawes: asphaltierte Radwege	RW -10973,-1764 -10884,-1653 -10841,-1599 -10606,-1303 -10581,-1271 -10505,-1166 -10338,-950 -10154,-828
-B2: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW -10090,6868 -10206,6756 -10923,6318 -12181,5611 -12865,5567
-B2: teilweise Radweg, teilweise Radstreifen	RW2;RW2 -12865,5567 -13143,5587 -13287,5556 -13578,5396 -13690,5212 -13778,4492 -13784,3900 -13387,2987 -13375,2950
+B2: asphaltierter Zweirichtungsradweg auf der südöstlichen Seite	RW8;RW2 -10090,6868 -10206,6756 -10923,6318 -12181,5611 -12865,5567 -13143,5587 -13261,5566 -13578,5396 -13690,5212 -13778,4492
+B2: Radstreifen	RW4;RW4 -13778,4492 -13784,3900 -13567,3403
+B2: Gehweg für Radfahrer frei	RW1;RW1 -13567,3403 -13387,2987 -13375,2950
 B2: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW8;RW2 -13375,2950 -13152,2169 -13141,1933
 B2: gemeinsamer Rad- und Gehweg, asphaltiert	RW2;RW2 -13141,1933 -13134,1758 -13133,1698 -13125,1508 -13115,1379 -13113,1356 -13108,1278 -13089,1135 -13039,894 -13038,856 -13044,800 -13058,702 -13062,535 -13050,337 -13091,-8 -13111,-136
 B273: Radweg	RW2;RW2 -13556,-1182 -13556,-1140 -13560,-1106 -13576,-1026 -13625,-902 -13815,-749 -14034,-571 -14134,-468 -14409,-371 -14546,-121 -14587,80 -14650,201 -14737,300
@@ -74,7 +75,7 @@ Suggestivstreifen	RW -11507,-2130 -10995,-2108 -10772,-2153 -10673,-2128
 Radweg auf Gehweg	RW -12098,-2173 -11681,-2256 -11601,-2197 -11507,-2130
 Radstreifen (?)	RW -10673,-2128 -10634,-2159 -10528,-2196 -10426,-2231 -10327,-2262
 #: add_fragezeichen: genauer spezifizieren:
-Radwege unterschiedlicher Form und Qualtität	RW -9723,-2451 -9692,-2462 -9534,-2515 -9462,-2540 -9254,-2605 -9118,-2649 -9110,-2651 -9075,-2664 -8865,-2732 -8500,-2856 -8428,-2886 -8283,-2917 -7873,-3094 -7497,-3096 -7487,-3097 -7060,-3124 -6810,-3151
+Radwege unterschiedlicher Form und Qualtität	RW -9723,-2451 -9692,-2462 -9534,-2515 -9462,-2540 -9254,-2605 -9118,-2649 -9110,-2651 -9075,-2664 -8865,-2732 -8500,-2856 -8417,-2867 -8361,-2875 -8283,-2917 -8137,-2997 -8005,-3056 -7878,-3090 -7497,-3096 -7487,-3097 -7060,-3124 -6810,-3151
 Seitenstreifen, als Radstreifen benutzbar	RW -6277,-3348 -6553,-3235 -6810,-3151
 Güterfelde: Zweirichtungsradweg, Verbundsteinpflaster	RW -3368,-4430 -2534,-4606
 #: note: von rjoop bestätigt:
@@ -161,7 +162,10 @@ Am Neuen Palais: Radspuren	RW4;RW4 -15757,-1758 -15799,-1352
 Geschwister-Scholl-Str.: Gehweg für Radfahrer freigegeben	RW1; -14909,-1818 -15757,-1758
 Reiterweg: Radweg	RW2; -13068,-115 -13111,-136
 Reiterweg: Radspur	RW4; -13111,-136 -13068,-115
-August-Bebel-Str.: Radweg	RW1 -8417,-1975 -8415,-1928 -8429,-1805
+August-Bebel-Str.: Radweg	RW1;RW1 -8417,-1975 -8415,-1928 -8429,-1805
+Neuendorfer Str.: mäßig betonierte Radwege	RW2;RW1 -7878,-3090 -7971,-3373 -8030,-3538 -8032,-3710 -8034,-3922 -8038,-4093
+Zum Kirchsteigfeld: Radspur	RW4; -8038,-4093 -8040,-4148 -7976,-4476
+Zum Kirchsteigfeld: asphaltierter Radweg	RW2; -7976,-4476 -8040,-4148 -8038,-4093
 #: note: Dresden vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Radspur	RW 36175,-150268 36381,-150315 36531,-150343 36931,-150453
 Radweg	RW; 36665,-150800 36375,-150750 36243,-150771

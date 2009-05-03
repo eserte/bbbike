@@ -442,15 +442,15 @@ Mittelstreifen	3nocross::ignrte 4392,17777 4429,17763 4584,17704
 Engelmannweg -> Scharnweberstr.: Mittelstreifen	3::igndisp 4462,17892 4429,17763 4584,17704
 Scharnweberstr. -> Engelmannweg: Mittelstreifen	3::igndisp 4392,17777 4429,17763 4462,17892
 Kurt-Schumacher-Damm (Nord)	1 3643,16437 3676,16497
-Mittelstreifen	3nocross::ignrte 10212,1504 10222,1475 10259,1376 10315,1223 10363,1095
-Mariendorfer Damm -> Ifenpfad: Mittelstreifen	3::igndisp 10315,1223 10259,1376 10187,1345
-Ifenpfad -> Mariendorfer Damm: Mittelstreifen	3::igndisp 10187,1345 10259,1376 10222,1475
-Kettinger Str. -> Sandsteinweg: Mittelstreifen	3::igndisp 10228,1194 10315,1223 10440,1283
-Kettinger Str. -> Mariendorfer Damm: Mittelstreifen	3::igndisp 10228,1194 10315,1223 10259,1376
-Sandsteinweg -> Kettinger Str.: Mittelstreifen	3::igndisp 10440,1283 10315,1223 10228,1194
-Sandsteinweg -> Mariendorfer Damm: Mittelstreifen	3::igndisp 10440,1283 10315,1223 10363,1095
-Mariendorfer Damm -> Kettinger Str.: Mittelstreifen	3::igndisp 10363,1095 10315,1223 10228,1194
-Mariendorfer Damm -> Sandsteinweg: Mittelstreifen	3::igndisp 10259,1376 10315,1223 10440,1283
+Mittelstreifen	3nocross::ignrte 10226,1515 10239,1481 10276,1383 10329,1231 10379,1097
+Ifenpfad -> Mariendorfer Damm: Mittelstreifen	3::igndisp 10187,1345 10276,1383 10239,1481
+Mariendorfer Damm -> Ifenpfad: Mittelstreifen	3::igndisp 10329,1231 10276,1383 10187,1345
+Mariendorfer Damm -> Kettinger Str.: Mittelstreifen	3::igndisp 10379,1097 10329,1231 10228,1194
+Kettinger Str. -> Mariendorfer Damm: Mittelstreifen	3::igndisp 10228,1194 10329,1231 10276,1383
+Kettinger Str. -> Sandsteinweg: Mittelstreifen	3::igndisp 10228,1194 10329,1231 10440,1283
+Mariendorfer Damm -> Sandsteinweg: Mittelstreifen	3::igndisp 10276,1383 10329,1231 10440,1283
+Sandsteinweg -> Mariendorfer Damm: Mittelstreifen	3::igndisp 10440,1283 10329,1231 10379,1097
+Sandsteinweg -> Kettinger Str.: Mittelstreifen	3::igndisp 10440,1283 10329,1231 10228,1194
 Lilienthalstr.: Barriere für Autos	3 10598,8563 10627,8706 10653,8831
 Lilienthalstr.: Barriere für Autos	3 10653,8831 10627,8706 10598,8563
 Mittelstreifen	3nocross::ignrte 23021,13982 22969,13816 22966,13806 22925,13662
@@ -583,16 +583,16 @@ Streustr. -> Berliner Allee: Straßenbahn	3::igndisp 13269,15927 13432,15843 1354
 Berliner Allee -> Streustr.: Straßenbahn	3::igndisp 13401,15821 13432,15843 13269,15927
 Talsandweg: Einbahnstraße	1 3206,21179 3138,21372
 Mittelstreifen	3nocross::ignrte 10047,813 10187,872 10269,906
-Mittelstreifen	3nocross::ignrte 10471,802 10524,655 10573,519
-Lichtenrader Damm -> Reichnerweg: Mittelstreifen	3::igndisp 10471,802 10524,655 10726,739
-Reichnerweg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10726,739 10524,655 10573,519
-Mittelstreifen	3nocross::ignrte 10411,966 10471,802 10524,655
-Lichtenrader Damm -> Baldersheimer Weg: Mittelstreifen	3::igndisp 10411,966 10471,802 10674,882
-Baldersheimer Weg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10674,882 10471,802 10524,655
-Mittelstreifen	3nocross::ignrte 10524,655 10573,519 10599,445 10602,438
-Lichtenrader Damm -> Dielingsgrund: Mittelstreifen	3::igndisp 10524,655 10573,519 10782,587
-Dielingsgrund -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10782,587 10573,519 10599,445
-Mittelstreifen	3nocross::ignrte 10619,395 10660,293 10700,193 10725,129
+Mittelstreifen	3nocross::ignrte 10485,807 10539,662 10590,525
+Reichnerweg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10726,739 10539,662 10590,525
+Lichtenrader Damm -> Reichnerweg: Mittelstreifen	3::igndisp 10485,807 10539,662 10726,739
+Mittelstreifen	3nocross::ignrte 10425,971 10485,807 10539,662
+Lichtenrader Damm -> Baldersheimer Weg: Mittelstreifen	3::igndisp 10425,971 10485,807 10674,882
+Baldersheimer Weg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10674,882 10485,807 10539,662
+Mittelstreifen	3nocross::ignrte 10539,662 10590,525 10617,452 10620,445
+Dielingsgrund -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10782,587 10590,525 10617,452
+Lichtenrader Damm -> Dielingsgrund: Mittelstreifen	3::igndisp 10539,662 10590,525 10782,587
+Mittelstreifen	3nocross::ignrte 10638,403 10676,299 10713,197 10737,132
 Straßenbahntrasse	3nocross::ignrte 20281,14361 20269,14256 20241,14016
 Annenstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20376,14244 20269,14256 20241,14016
 Allee der Kosmonauten -> Annenstr.: Straßenbahntrasse	3::igndisp 20281,14361 20269,14256 20376,14244
@@ -602,6 +602,10 @@ Schweiggerweg	1 2081,14570 2079,14704 2099,14852
 Jungfernheideweg	1 1465,14963 1423,14679 1361,14431
 Dihlmannstr.: Radweg existiert	1 651,15091 755,15123 851,15155 957,15189 976,15195 1065,15229
 Bahntrasse	3nocross::ignrte 16135,2135 16056,2034 16002,1964 15875,1796 15835,1747
+Zwickauer Damm -> Sattlerstr.: Bahntrasse	3::igndisp 16135,2135 16056,2034 16177,1943
+Sattlerstr. -> Zwickauer Damm: Bahntrasse	3::igndisp 16177,1943 16056,2034 16002,1964
+Zwickauer Damm -> Gürtlerweg: Bahntrasse	3::igndisp 16056,2034 16002,1964 16106,1886
+Gürtlerweg -> Zwickauer Damm: Bahntrasse	3::igndisp 16106,1886 16002,1964 15875,1796
 Theodor-Loos-Weg -> Schriftsetzerweg: Bahntrasse	3::igndisp 15818,1834 15875,1796 15967,1718
 Theodor-Loos-Weg -> Zwickauer Damm: Bahntrasse	3::igndisp 15818,1834 15875,1796 16002,1964
 Schriftsetzerweg -> Theodor-Loos-Weg: Bahntrasse	3::igndisp 15967,1718 15875,1796 15818,1834
@@ -614,7 +618,7 @@ Buschkrugallee -> Bürgerstr.: Mittelstreifen	3::igndisp 13323,6322 13307,6359 13
 Gieselerstr.	1 4606,9023 4619,9200
 Wiener Str., Görlitzer Ufer	1 12932,9900 13086,9825 13150,9900 13221,10005
 Mittelstreifen	3nocross::ignrte 15957,2330 15804,2512 15736,2593
-Freiertweg - Lichtenrader Damm	3 10827,467 10619,395 10660,293
+Freiertweg - Lichtenrader Damm	3 10827,467 10638,403 10676,299
 Glasbläserallee: Tore versperren die Durchfahrt, Radfahrer können passieren	2 14888,10385 14835,10272
 Hornstr.	1 8779,9851 8988,9783 8980,9751 8779,9812
 Hafenplatz	3 8700,10766 8628,10818 8659,10910
@@ -755,7 +759,7 @@ Treskowallee -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18770,8898 18734,868
 Rheinsteinstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18868,8731 18734,8682 18729,8650
 Rheinsteinstr. -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18868,8731 18734,8682 18843,8612
 Ehrenfelsstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18843,8612 18734,8682 18729,8650
-Lötzener Allee	1 452,10669 474,10869 503,11104
+Lötzener Allee	1 574,10577 452,10669 474,10869 495,11090
 keine Abbiegemöglichkeit	3nocross::ignrte 20064,3278 20010,3340 19904,3464
 Mittelstreifen	3nocross::ignrte 5542,11075 5459,11135 5268,11274
 Jebensstr. -> Hardenbergstr.: Mittelstreifen	3::igndisp 5587,11397 5459,11135 5542,11075
@@ -788,3 +792,6 @@ Lindenstr. -> Am Berlin Museum: Betonblöcke (aber für Radfahrer passierbar)	3::i
 Treptower Str.	1 13376,7970 13459,8072
 Alte Schönhauser Str.	1 10718,13625 10746,13673
 Knoten Märkische Allee	1 19979,11774 20026,11759 20115,11730
+Hugo-Heimann-Str.	1 14120,1991 14165,2106 14229,2177 14453,2087 14587,2032
+Albulaweg	1 10541,1889 10486,1908
+Kätchenweg	2 -7020,-1275 -6975,-1250

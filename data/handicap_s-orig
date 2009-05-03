@@ -102,7 +102,7 @@ Volkspark Friedrichshain: Fuﬂg‰nger	q1 12115,13540 12091,13449 12088,13403
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 11857,13596 11842,13576
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12194,13307 12177,13283
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12148,13348 12131,13333
-Luisenhain: Fuﬂg‰nger, Radfahren erlaubt	q1 22196,4847 22147,4831 22043,4562 22071,4501
+Luisenhain: Fuﬂg‰nger, Radfahren erlaubt	q1 22196,4847 22147,4831 22043,4562 22057,4531 22071,4501
 (S-Bahnhof - Schlachtensee): Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q2 -2365,3582 -2403,3641 -2396,3652 -2396,3666
 Uferweg am Schlachtensee: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q2 -3348,3055 -3384,3212 -3353,3298 -3324,3382 -3087,3646 -2937,3740 -2813,3775 -2494,3758 -2347,3884 -2080,4228 -1935,4303 -1831,4300 -1663,4218
 Uferweg am Schlachtensee: Fuﬂg‰nger, Cafe mit Kellnerverkehr	q3 -1663,4218 -1503,4133
@@ -324,7 +324,7 @@ Egidysteg: eng, Fuﬂg‰nger	q3 3124,22198 3134,22153
 Altvaterstr.: Fuﬂg‰nger, Bordsteine	q2 -3117,3107 -3170,3070 -3223,3034
 #: note: laut Luftbild
 Im Gestell: Fuﬂg‰nger	q1 371,4453 261,4420
-Heinitzweg: Fuﬂg‰nger	q2 10329,1077 10363,1095
+Heinitzweg: Fuﬂg‰nger	q2 10329,1077 10379,1097
 Haewererweg: enge Durchfahrt, Bordstein	q1 12125,1282 12097,1243
 (Weichselstr. - Sasarsteig): Spielplatz	q3 12330,8636 12303,8605 12181,8548
 Kaiser-Wilhelm-Platz: Fuﬂg‰nger	q4 7201,8870 7320,8939
@@ -458,6 +458,13 @@ Albert-Brodersen-Allee: Fuﬂg‰nger	q1 20862,12027 20836,11768
 (Schulstr. - Braunsdorfstr.): sehr eng	q3 20413,11953 20396,11983
 (Am Schlachtensee - Altvaterstr., Unterf¸hrung): enge Unterf¸hrung	q3 -3192,3129 -3176,3081 -3170,3070
 (Altvaterstr. - Spanische Allee): eng	q1 -3223,3034 -3368,2942 -3378,2936
+Feuchtwangerweg: eng, Fuﬂg‰nger	q1 15835,1747 15788,1747
+Mondsteinpfad: Fuﬂg‰nger	q1 11181,1884 11182,1976
+(Falkenseer Chaussee - Spektelake): Fuﬂg‰nger	q1 -7094,16217 -7178,16066 -7208,15924
+(Radweg parallel zur Potsdamer Chaussee): eng und kurvenreich	q1 -7414,8970 -7530,8825 -7539,8788 -7597,8735 -7729,8553 -7783,8524
+K‰tchenweg: sehr eng	q2 -6975,-1250 -6914,-1218
+Grassoweg: Gehweg f¸r Radfahrer freigegeben	q1 -6193,1097 -6216,1192
+Nikolassteig: F¸r Radfahrer nicht freigegeben, ggfs. schieben	q3 -3931,1637 -3872,1716
 ######################### User Contributions #################################
 #: by: Steini
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
@@ -538,7 +545,7 @@ Hugo-Heimann-Str.: enge, leicht kurvige Straﬂe	q1 14120,1991 14165,2106 14229,21
 #: XXX check, maybe like the other paths "Radfahren auf befestigten Wegen erlaubt, Fuﬂg‰nger haben Vorrang"
 (Am Invalidenfriedhof - Scharnhorststr.): Radfahren verboten, Schieben	q4 8119,13912 8216,13987
 #: by: Christian Marwitz:
-Am Gemeindepark: enge Straﬂe	q1 7172,2343 7215,2442 7209,2528 7199,2559 7030,2582 6751,2708 6679,2701
+Am Gemeindepark: enge Straﬂe	q1 7172,2343 7215,2442 7208,2534 7199,2559 7165,2571 7043,2582 6751,2708 6679,2701
 #: by: Michael Meixner:
 Maurerweg: enge Straﬂe	q1 12864,2191 12835,2470 12825,2573 12810,2751 12807,2958
 #: by: Thomas Heuving
@@ -625,7 +632,7 @@ L¸nette: Fuﬂg‰nger	q1 -1342,15510 -1485,15463
 Maselakeweg: Fuﬂg‰nger	q3 -2450,16981 -2410,16931 -2391,16788 -2391,16607 -2340,16590
 #: by: ^^^
 #: by: Micha Bustian
-Gritznerstr.: enge Straﬂe	q1 4320,5885 4385,6045 4435,6154 4472,6242 4507,6320 4555,6403 4630,6534 4679,6620 4734,6716
+Gritznerstr.: enge Straﬂe	q1 4291,5895 4370,6052 4430,6165 4472,6242 4507,6320 4555,6403 4630,6534 4679,6620 4734,6716
 #: by: Angela
 Im Jagen: Fuﬂg‰nger, Hundeauslaufgebiet	q1 905,6631 909,6584 1057,6461 1375,6138
 #: by: Patrik Marschalik vvv
@@ -668,7 +675,7 @@ Hechtgraben: eng, Fuﬂg‰nger, Treppen oder Rampen	q3 3105,5594 3173,5493
 (Weg in d. Kolonie Norderney): Fuﬂg‰nger	q3 3596,6828 3607,6952 3582,6964
 #: note: s¸dlicher Teil von Ulrike Orlowski:
 Franz-Cornelsen-Weg: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt, schmaler Fuﬂweg am Spielplatz	q3 3593,7176 3597,7192 3612,7335 3639,7590
-Bjˆrnsonstr.: Fuﬂg‰nger, eng	q3 4271,6447 4320,6540
+Bjˆrnsonstr.: Fuﬂg‰nger, eng	q3 4290,6445 4320,6540
 R¸ckertstr.: Fuﬂweg durch Wohngebiet	q3 3878,6110 4028,6099
 Spinozastr.: eng u. un¸bersichtlich	q2 3926,6409 3930,6481 3974,6511 4050,6506
 (Parkweg): mit Stufen	q3 2210,4965 2262,4914
@@ -764,8 +771,8 @@ Ritterstr.: Fuﬂg‰nger	q1 9763,11148 9861,11103
 Elisenstr.: Fuﬂg‰nger	q2 5808,5332 5822,5388
 Mittelstr. (Steglitz): Fuﬂg‰nger	q2 5119,5332 5203,5278
 Goebenstr.: Fuﬂg‰nger	q1 5606,4726 5555,4743 5509,4773 5478,4792
-Johanna-Stegen-Str.: Fuﬂg‰nger	q2 5546,4534 5471,4571 5397,4611 5371,4609 5325,4633
-Vionvillestr.: Fuﬂg‰nger	q2 5546,4534 5589,4617
+Johanna-Stegen-Str.: Fuﬂg‰nger	q2 5557,4523 5479,4568 5397,4611 5371,4609 5325,4633
+Vionvillestr.: Fuﬂg‰nger	q2 5557,4523 5589,4617
 Rezonvillestr.: Fuﬂg‰nger	q2 5589,4617 5607,4610
 Am Stadtpark (Steglitz): Fuﬂg‰nger	q2 5656,4543 5751,4497 5838,4454
 (Stadtpark Steglitz): Fuﬂg‰nger	q2 5826,4819 5765,4693 5697,4545 5656,4543
@@ -794,7 +801,7 @@ August-Lindemann-Str.: Fuﬂg‰nger	q3 14336,12758 14346,12790
 Umgehungschaussee: Fuﬂg‰nger, Hundeauslaufgebiet	q2 1149,7205 1251,7429
 Umgehungschaussee: Fuﬂg‰nger, Hundeauslaufgebiet	q1 1251,7429 1263,7450 1252,7741 1215,7797 1043,7929 860,8052 834,8067
 (Auerbachstr. - Koenigsallee): Fuﬂg‰nger, schmal	q2 490,8716 445,8429 614,8006 761,7922
-(Verl‰ngerte Harbigstr.): Jogger etc.	q1 556,10122 328,9820
+(Verl‰ngerte Harbigstr.): Jogger etc.	q1 556,10122 461,9997 328,9820
 (Zur Hagenstr.): Fuﬂg‰nger, Bordsteine	q1 1111,8225 1181,8301
 Bernhard-Wieck-Promenade: Fuﬂg‰nger	q1 1363,7997 1372,8011 1381,8023 1446,8114
 Bernhard-Wieck-Promenade: Fuﬂg‰nger	q1 1381,8023 1366,8032 1348,8010
@@ -868,7 +875,7 @@ Willenburger Pfad: Fuﬂg‰nger, schmal	q2 576,10729 673,10724
 (Zum Hubertussee): Fuﬂg‰nger, schmal	q3 1834,8893 1807,8893
 (Zum Hubertussee): Fuﬂg‰nger, schmal	q3 1807,8893 1809,8916
 (Parkweg Reichsstr.): Fuﬂg‰nger	q2 -264,13009 -208,12938 -142,12850 -67,12779 23,12739
-(Machandelweg - Reichsstr.): Fuﬂg‰nger	q2 -185,12822 -166,12849 -142,12850 -112,12866
+(Machandelweg - Reichsstr.): Fuﬂg‰nger	q2 -185,12822 -166,12849 -142,12850 -103,12868
 (zur Karl-Marx-Allee): Bordstein, Fuﬂg‰nger	q2 11362,12964 11295,12915
 Bˆrnicker Str. - S¸dpark): Fuﬂg‰nger	q2 -4095,11993 -4070,12006
 Graetschelsteig - S¸dpark): Fuﬂg‰nger	q2 -4195,12139 -4117,12199
@@ -903,8 +910,7 @@ Else-Ury-Bogen: Fuﬂg‰nger	q3 4817,10943 4714,10950
 #: by: Freddy [AM] (Fuﬂg‰nger)
 #: by: rjoop [SRT] (eng, aber eigentlich nur das westliche St¸ck)
 Bootshausweg: Fuﬂg‰nger, eng	q2 -1073,16610 -1067,16635 -1092,16659 -1156,16689 -1190,16714 -1214,16745 -1229,16773 -1406,16907 -1465,16957 -1520,16989 -1564,17001 -1610,17007 -1664,17009 -1743,16990 -1723,16973 -1690,16971 -1676,16957 -1673,16939 -1725,16878 -1704,16870 -1684,16853 -1655,16813
-#: by: Karin Millonig:
-Rufacher Weg: enge Straﬂe	q2 12207,1704 12179,1758 12160,1817 12255,2058 12582,2129 12738,2162
+# XXX del: not confirmed by me : by: Karin Millonig: Rufacher Weg: enge Straﬂe	q2 12207,1704 12179,1758 12160,1817 12255,2058 12286,2065 12582,2129 12738,2162
 #: by: Benno Koch [AM]
 #: corrected_by: srt (q4 -> q2) (common sense!)
 Nelly-Sachs-Str.: Verkehrsberuhigter Bereich	q2 24061,14801 24115,14828 24191,14866 24253,14888 24349,14922
@@ -1420,7 +1426,9 @@ Schwarzburger Str.: enge Straﬂe	q1 21719,17427 21709,17382 21677,17195 21665,171
 #: corrected_by: srt/policy (q3 -> q2)
 Taubnesselweg: enge Straﬂe	q2 20793,2247 20836,2150 20872,2112
 #: by: die_annemi:
-Theodor-Loos-Weg: enge Straﬂe	q1 15325,1720 15460,1764 15620,1764 15671,1923 15781,1928 15818,1834 15875,1796
+Theodor-Loos-Weg: enge Straﬂe	q1 15325,1720 15460,1764 15634,1765 15671,1923 15781,1928 15818,1834 15875,1796
 #: by: timm wille:
 #: corrected_by: srt/policy (q2 -> q1)
 Irmgardstr.: enge Straﬂe	q1 974,4669 960,4660 881,4429 863,4363 865,4288 908,4175
+#: by: anonymous
+Erna-Sack-Str.: enge Straﬂe	q1 -7486,13321 -7496,13214

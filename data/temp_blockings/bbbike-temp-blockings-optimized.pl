@@ -304,15 +304,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Alt-Rudow: von Krokusstraße bis Köpenicker Straße Einbahnstraße in Richtung Neudecker Weg',
-         'from' => 1209852000,
-         'id' => 1356,
-         'data' => 'userdel	1::inwork 16849,1437 16805,1488 16610,1715
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -443,7 +435,7 @@ push @temp_blocking,
          'text' => 'Wendenschloßstr. (Köpenick) in beiden Richtungen zwischen Landjägerstr. und Müggelheimer Str. Baustelle, Straße vollständig gesperrt (bis Ende 2010)',
          'from' => 1238347043,
          'id' => 1457,
-         'data' => 'userdel	q4::inwork 23451,4877 23363,4846 22893,4532 22862,4511 22832,4491 22740,4415
+         'data' => 'userdel	q4::inwork 22740,4415 22686,4310
 ',
          'type' => 'handicap'
        },
@@ -619,26 +611,36 @@ userdel	1::inwork 10614,19907 10742,19632
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_012479',
+         'until' => 1243807199,
+         'text' => 'Köpenicker Str. (Kreuzberg) Richtung Engeldamm zwischen Heinrich-Heine-Str. und Michaelkirchstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2009)',
+         'from' => 1241158705,
+         'id' => 1570,
+         'data' => 'userdel	q4::inwork; 11242,11720 11324,11689 11574,11594
+',
+         'type' => 'handicap'
+       },
        undef,
        {
          'source_id' => 'IM_011767',
          'until' => 1242424799,
-         'text' => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt; sowie Einbahnstraßenregelung in der Giselastr. (bis Mitte 05.09)',
+         'text' => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt; sowie Einbahnstraßenregelungen in der Giselastr. und Stadthausstr. (bis Mitte 05.09)',
          'from' => 1240517859,
          'id' => 1572,
          'data' => 'userdel	q4::inwork; 16153,10818 16032,10842
 userdel	q4::inwork; 16196,10911 16153,10818
+userdel	q4::inwork; 15681,10801 15674,10851
 ',
          'type' => 'handicap'
        },
        {
          'source_id' => 'IM_011726',
-         'until' => 1251755999,
-         'text' => 'Pappelallee (Prenzlauer Berg) in Richtung Schönhauser Allee zwischen Wichertstr. und Stargarder Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2009)',
-         'from' => 1238347628,
+         'until' => 1257029999,
+         'text' => 'Pappelallee (Prenzlauer Berg) Richtung Wisbyer Str. zwischen Stargarder Str. und Wichertstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2009)',
+         'from' => 1241158590,
          'id' => 1573,
-         'data' => 'userdel	q4::inwork; 11455,15916 11393,15823 11373,15789 11301,15668
+         'data' => 'userdel	q4::inwork; 11301,15668 11373,15789 11393,15823 11455,15916
 ',
          'type' => 'handicap'
        },
@@ -910,6 +912,7 @@ userdel	q4::inwork 14530,11137 14465,11195
          'from' => undef,
          'id' => 1625,
          'data' => 'userdel	2::temp -8625,-1176 -8700,-997 -8813,-933 -8913,-813 -9103,-813 -9239,-739 -9337,-668 -9365,-610 -9454,-434 -9562,-325
+userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
 ',
          'type' => 'gesperrt'
        },
@@ -993,6 +996,16 @@ userdel	2::inwork -50149,24689 -50048,24475 -49883,24097
          'data' => 'userdel	q4::inwork 28003,76731 27309,76652 26735,76914
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => 1243634400,
+         'text' => 'L 712 Kemlitz-Paplitz zw. B115 und Paplitz, bei Baruth Straßenbau Vollsperrung 13.05.2009-29.05.2009 ',
+         'from' => 1242079200,
+         'id' => 1640,
+         'data' => 'userdel	2::inwork 15938,-42195 16017,-39838 15876,-39330
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -23,7 +23,7 @@ Hardenbergstr. - Schillerstr.: bereits an der Knesebeckstraße auf den linken Geh
 Torstr. => Weydemeyerstr.: bereits am Mollknoten die Straßenseite wechseln	PI; 11170,13475 11108,13513 11079,13492
 Zossener - Brachvogelstr.: bereits an der Fußgängerampel Waterlooufer Straßenseite wechseln	PI; 9865,10227 9858,10199 9884,10192
 Zossener - Brachvogelstr.: bereits an der Johanniterstr. vom Radstreifen auf den Gehweg wechseln	PI; 9837,10117 9858,10199 9884,10192
-Wendeschleife der Straßenbahn links umfahren	CP; 22965,4124 23368,3894 24101,3447
+Wendeschleife der Straßenbahn links umfahren	CP; 22965,4124 23368,3894 23684,3702 24101,3447
 Potsdamer Str. - Am Karlsbad: auf linken Gehweg wechseln	PI; 7980,11070 7968,11048 8011,11014
 Am Karlsbad - Potsdamer Str.: entweder Fußgängerampel am Schöneberger Ufer oder an der Lützowstr. benutzen	CP; 8011,11014 7968,11048 7912,10945
 Otto-Braun-Str. - Wadzeckstr.: bereits am Alexanderplatz die Straßenseite wechseln	PI; 11228,12951 11275,13026 11298,13063 11368,13170 11326,13196
@@ -108,7 +108,7 @@ Falkenwalde - Eickstedt: nicht den Eickstädter Weg nehmen, sondern erst den näch
 Ausgeschildert: Matheshöher Weg	CP2; 49488,96427 49056,96700
 Ausgeschildert: Britzer Str.	CP2; 33021,51828 33448,51826
 Ausgeschildert: Blütenberger Weg	CP2; 36885,54257 34819,54697
-Spreeufer: durch das Tor der Kleingartenkolonie	CP2; -288,13279 -278,13322
+Spreeufer: durch das Tor der Kleingartenkolonie	CP2; -307,13279 -278,13322
 Lefèvrestr. - Bundesallee: Fußgängerfurt benutzen	CP; 5215,6643 5372,6663 5372,6747
 Straßburger Str. - Torstr.: Fußgängerfurt (Drängelgitter) ca. 50m westlich der Kreuzung benutzen	CP; 11060,13865 10902,13604 11108,13513
 Torstr. - Straßburger Str.: Fußgängerfurt (Drängelgitter) ca. 50m westlich der Kreuzung benutzen	CP; 10746,13673 10902,13604 11060,13865
@@ -123,8 +123,8 @@ Kietz - Müggelheimer Str.: zum Überqueren der Straße Fußgängerampel links benutz
 Kietz - Amtsstr.: zum Überqueren der Straße Fußgängerampel links benutzen	CP; 22364,4429 22396,4464 22495,4523
 als "Neue Dorfstr." ausgeschildert	CS; 52490,75434 52181,75778
 als "Wiesenweg" ausgeschildert	CS; 52215,83681 52346,83150
-Lichtenrader Damm - Griembergweg: Überquerungsmöglichkeit nördlich der Kreuzung	PI; 10725,129 10740,82 10913,96
-Griembergweg - Lichtenrader Damm: Überquerungsmöglichkeit nördlich der Kreuzung	CP; 10913,96 10740,82 10780,-43
+Lichtenrader Damm - Griembergweg: Überquerungsmöglichkeit nördlich der Kreuzung	PI; 10737,132 10753,83 10913,96
+Griembergweg - Lichtenrader Damm: Überquerungsmöglichkeit nördlich der Kreuzung	CP; 10913,96 10753,83 10780,-43
 Richtung Bellevuestr. und Kemperplatz	CS; 8548,11552 8505,11544 8462,11538
 als "Leipziger Platz" ausgeschildert	CS; 8542,11502 8572,11506 8733,11524
 Einfahrt gegenüber Waldcafe	CP2; 30021,5322 27096,5828
@@ -196,8 +196,8 @@ Clayallee - Flanaganstr.: Fußweg vor dem McDrive nehmen	CP; 1746,5922 1736,5850 
 Flanaganstr. - Clayallee: Fußweg am McDrive nehmen, bis zur Ampel an der Königin-Luise-Str. den linken Gehweg benutzen	PI; 1596,5754 1736,5850 1746,5922
 Helmholtzstr. - Zeppelinstr.: zum Überqueren der Edisonstr. Fußgängerampel benutzen	CP; 17845,6986 17919,6968 18041,6924
 Zeppelinstr. - Helmholtzstr.: zum Überqueren der Edisonstr. Fußgängerampel benutzen	CP; 18041,6924 17919,6968 17845,6986
-Mariendorfer Damm - Heinitzweg: bereits an der Buckower Chaussee die Straßenseite wechseln	PI; 10411,966 10363,1095 10329,1077
-Heinitzweg - Mariendorfer Damm: zunächst auf dem linken Gehweg/Radweg vorfahren	CP; 10329,1077 10363,1095 10315,1223
+Mariendorfer Damm - Heinitzweg: bereits an der Buckower Chaussee die Straßenseite wechseln	PI; 10425,971 10379,1097 10329,1077
+Heinitzweg - Mariendorfer Damm: zunächst auf dem linken Gehweg/Radweg vorfahren	CP; 10329,1077 10379,1097 10329,1231
 Zum Naturpark Schöneberg: Weg zwischen den Parkhäusern nehmen	CP2; 7757,7682 7772,7610
 Hochspannungsweg - Buckower Damm: zunächst zur Fußgängerampel links vorfahren	CP; 12648,2494 12694,2514 12694,2544
 Hochspannungsweg: zur Überquerung des Buckower Damms Fußgängerampel links nehmen	CP; 12648,2494 12694,2514 12825,2573
@@ -304,3 +304,7 @@ Ausgeschildert: zum Bayernring	CP2; 8531,8404 8455,8567
 Mehringdamm - Wilhelmshöhe: bereits an der Fidicinstr. die Straßenseite wechseln	PI; 9224,9053 9225,9111 9186,9107
 Kaiser-Wilhelm-Str. - Langkofelweg: bereits an der Ampel Edenkobener Weg die Straßenseite wechseln	PI; 7007,3747 6961,3687 6998,3596
 Altentreptower Str. - Wuhlgartenweg: zum Linksabbiegen frühzeitig auf die Fahrbahn oder den linken Gehweg wechseln	PI; 21573,12140 21307,12132 21267,12109
+Heerstr. - Preußenallee: bereits an der Kreuzung Teufelsseestr./Heerstr. die Straßenseite wechseln	PI; 456,11233 585,11256 551,11462
+Preußenallee - Heerstr.: auf der linken Gehwegseite bis zur Ampel Länderallee vorfahren und dann die Straßenseite wechseln	CP; 551,11462 585,11256 704,11273
+Schorlemerallee - Gregor-Mendel-Str.: etwa 20 Meter vor der Kreuzung die Straßenseite wechseln	PI; 3459,6484 3664,6523 3650,6665
+Gregor-Mendel-Str. - Schorlemerallee: Überquerungsmöglichkeit ca. 20 Meter zur rechten Seite	CP; 3650,6665 3664,6523 3836,6550

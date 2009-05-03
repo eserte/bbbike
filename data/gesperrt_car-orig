@@ -296,7 +296,7 @@ Scharnweberstr.: Mittelstreifen	3nocross 4392,17777 4429,17763 4584,17704
 #: note: eigentlich auch für Radfahrer Einbahnstraße, aber der Umweg für die 60 Meter wäre zu groß!
 Kurt-Schumacher-Damm (Nord)	1 3643,16437 3676,16497
 #: note: Luftbild
-Mariendorfer Damm: Mittelstreifen	3nocross 10212,1504 10222,1475 10259,1376 10315,1223 10363,1095
+Mariendorfer Damm: Mittelstreifen	3nocross 10226,1515 10239,1481 10276,1383 10329,1231 10379,1097
 Lilienthalstr.: Barriere für Autos	3 10598,8563 10627,8706 10653,8831
 Lilienthalstr.: Barriere für Autos	3 10653,8831 10627,8706 10598,8563
 Hellersdorfer Str.: Mittelstreifen	3nocross 23021,13982 22969,13816 22966,13806 22925,13662
@@ -376,10 +376,10 @@ Berliner Allee: Straßenbahn	3nocross 13401,15821 13432,15843 13540,15928
 Talsandweg: Einbahnstraße	1 3206,21179 3138,21372
 #: note: Luftbild: vvv
 Buckower Chaussee: Mittelstreifen	3nocross 10047,813 10187,872 10269,906
-Lichtenrader Damm: Mittelstreifen	3nocross 10471,802 10524,655 10573,519
-Lichtenrader Damm: Mittelstreifen	3nocross 10411,966 10471,802 10524,655
-Lichtenrader Damm: Mittelstreifen	3nocross 10524,655 10573,519 10599,445 10602,438
-Lichtenrader Damm: Mittelstreifen	3nocross 10619,395 10660,293 10700,193 10725,129
+Lichtenrader Damm: Mittelstreifen	3nocross 10485,807 10539,662 10590,525
+Lichtenrader Damm: Mittelstreifen	3nocross 10425,971 10485,807 10539,662
+Lichtenrader Damm: Mittelstreifen	3nocross 10539,662 10590,525 10617,452 10620,445
+Lichtenrader Damm: Mittelstreifen	3nocross 10638,403 10676,299 10713,197 10737,132
 #: note: ^^^
 #: note: Luftbild: 
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20281,14361 20269,14256 20241,14016
@@ -402,7 +402,7 @@ Wiener Str., Görlitzer Ufer	1 12932,9900 13086,9825 13150,9900 13221,10005
 #: note: Luftbild:
 Rudower Chaussee: Mittelstreifen	3nocross 15957,2330 15804,2512 15736,2593
 #: by: Hans Lindner
-Freiertweg - Lichtenrader Damm	3 10827,467 10619,395 10660,293
+Freiertweg - Lichtenrader Damm	3 10827,467 10638,403 10676,299
 Glasbläserallee: Tore versperren die Durchfahrt, Radfahrer können passieren	2 14888,10385 14835,10272
 Hornstr.	1 8779,9851 8988,9783 8980,9751 8779,9812
 Hafenplatz	3 8700,10766 8628,10818 8659,10910
@@ -483,7 +483,8 @@ Streitstr./Chamissostr.: Mittelstreifen	3nocross -3009,17090 -3017,16984 -3018,1
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20081119.1415.114691.html
 Treskowallee/Rheinsteinstr.: Straßenbahntrasse	3nocross 18770,8898 18734,8682 18729,8650
 #: by: anonymous
-Lötzener Allee	1 452,10669 474,10869 503,11104
+#: confirmed_by: srt
+Lötzener Allee	1 574,10577 452,10669 474,10869 495,11090
 #: note: Luftbild:
 Adlergestell/Weerthstr.: keine Abbiegemöglichkeit	3nocross 20064,3278 20010,3340 19904,3464
 Hardenbergstr./Jebensstr.: Mittelstreifen	3nocross 5542,11075 5459,11135 5268,11274
@@ -507,3 +508,6 @@ Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3nocross 9777,10719 9805
 Treptower Str.	1 13376,7970 13459,8072
 Alte Schönhauser Str.	1 10718,13625 10746,13673
 Knoten Märkische Allee	1 19979,11774 20026,11759 20115,11730
+Hugo-Heimann-Str.	1 14120,1991 14165,2106 14229,2177 14453,2087 14587,2032
+Albulaweg	1 10541,1889 10486,1908
+Kätchenweg	2 -7020,-1275 -6975,-1250

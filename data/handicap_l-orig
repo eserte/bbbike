@@ -3,12 +3,10 @@
 #: version: $Id: handicap_l-orig,v 4.48 2008/12/31 17:36:28 eserte Exp $
 #:
 Brandenburger Str.: Fuﬂg‰ngerzone	q4 -12894,-977 -13005,-1002 -13173,-1039 -13289,-1071 -13410,-1101 -13556,-1140
-Neuer Garten: Schiebestrecke	q3 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12115,1331
+Neuer Garten: Schiebestrecke	q3 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12094,1273 -12139,1325
+Neuer Garten: Schiebestrecke	q3 -12166,1384 -12212,1201
 #: note: Seit 1. Januar 2008 keine Schiebestrecke mehr:
-Neuer Garten: Fuﬂg‰nger	q2 -12115,1331 -12166,1384
-Neuer Garten: Schiebestrecke	q3 -12081,1168 -12191,1196 -12212,1201
-#: note: Seit 1. Januar 2008 keine Schiebestrecke mehr:
-Neuer Garten: Fuﬂg‰nger	q1 -11510,810 -11562,918 -11575,1031 -11537,1206 -11568,1287 -11868,1193 -12000,1243 -12115,1331
+Neuer Garten: Fuﬂg‰nger	q1 -11510,810 -11562,918 -11575,1031 -11537,1206 -11568,1287 -11871,1185 -11990,1214 -12124,1359 -12141,1357
 Neuer Garten, Westufer des Heiligen Sees: Schiebestrecke	q3 -12265,-418 -12262,-362 -12328,-212 -12331,-131 -12321,9 -12278,134 -12156,193 -12103,315 -12143,353 -12115,409 -12068,384 -11990,790 -11950,781 -11887,837 -11856,950 -11818,993
 Neuer Garten: Schiebestrecke	q3 -12331,-131 -12412,-118 -12450,-34 -12557,11
 Neuer Garten: Schiebestrecke	q3 -11615,853 -11510,810
@@ -39,7 +37,7 @@ M¸tzlitz - Garlitz: Bauarbeiten	q3::inwork -50268,15901 -49478,16227
 #XXX del? B 169; OU Senftenberg; Bau Ortsumfahrung; Vollsperrung; 06.11.2003-30.05.2006	q4::inwork 55158,-95910 54884,-96292 54357,-96691
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: note: http://www.maerkischeallgemeine.de/cms/beitrag/10590495/60709/
-(Mauerweg am Griebnitzsee): besonders am Wochenende viele Fuﬂg‰nger	q3 -9656,-285 -9562,-325 -9454,-434 -9365,-610 -9337,-668 -9239,-739 -9103,-813 -8913,-813 -8813,-933 -8700,-997 -8625,-1176 -8503,-1278 -8413,-1398 -8397,-1422 -8306,-1454 -8151,-1470 -8087,-1453 -7984,-1415 -7805,-1260 -7618,-1140 -7518,-1175
+(Mauerweg am Griebnitzsee): besonders am Wochenende viele Fuﬂg‰nger	q3 -9655,-298 -9562,-325 -9454,-434 -9365,-610 -9337,-668 -9239,-739 -9103,-813 -8913,-813 -8813,-933 -8700,-997 -8625,-1176 -8503,-1278 -8413,-1398 -8397,-1422 -8306,-1454 -8151,-1470 -8087,-1453 -7984,-1415 -7805,-1260 -7618,-1140 -7518,-1175
 Eisenbahnbr¸cke - Wildpark West (F2.2): enger Feldweg, Fuﬂg‰nger	q2 -21063,-2021 -21062,-2042 -20700,-2020 -20677,-2058
 (Wallgasse - Stadtpark): Fuﬂg‰nger	q1 39789,101564 39884,101572
 Stadtpark Prenzlau: Fuﬂg‰nger	q1 39900,101931 39873,101780 39884,101572 39923,101339 39867,101104
@@ -61,7 +59,7 @@ Stormstr.: Spielstraﬂe	q3 -15239,-2728 -15300,-2670
 (÷konomieweg, Sanssouci): Fuﬂg‰nger haben Vorrang	q1 -14171,-1026 -14482,-1043 -14622,-1138 -14865,-1118 -15025,-1096 -15553,-1139 -15651,-1137 -15820,-1146
 (Lennestr. - ÷konomieweg, Sanssouci): Fuﬂg‰nger haben Vorrang	q1 -14614,-1342 -14856,-1223 -14865,-1118
 (Affengang, Sanssouci): Schiebestrecke	q3 -14129,-1258 -14131,-1181 -14153,-1135
-(÷konomieweg, Neuer Garten): Fuﬂg‰nger haben Vorrang	q1 -12557,11 -12479,97 -12467,215 -12373,288 -12182,816 -12191,1196
+(÷konomieweg, Neuer Garten): Fuﬂg‰nger haben Vorrang	q1 -12557,11 -12479,97 -12467,215 -12373,288 -12182,816 -12186,1118 -12144,1255 -12139,1325 -12141,1357 -12166,1384
 (Hans-Sachs-Str. - LennÈstr.): Fuﬂg‰nger, eng, Rampe	q2 -14612,-1415 -14596,-1409 -14614,-1342
 (Uferweg): Fuﬂg‰nger	q2 -14069,-2227 -14009,-2234 -13967,-2143 -13962,-2097 -13912,-2007 -13934,-1874 -13977,-1870
 (Am Burgfried): eng	q2 62821,117400 62723,117404 62635,117440 62650,117483
