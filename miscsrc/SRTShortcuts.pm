@@ -240,7 +240,7 @@ sub add_button {
 		[Button => "Download and display any OSM data",
 		 -command => sub {
 		     _require_BBBikeOsmUtil();
-		     BBBikeOsmUtil::download_and_plot_visible_area();
+		     BBBikeOsmUtil::download_and_plot_visible_area(withfallback => 1);
 		 }],
 		[Button => "Delete OSM layer",
 		 -command => sub {
@@ -250,8 +250,9 @@ sub add_button {
 		[Button => 'Show download URL',
 		 -command => sub {
 		     _require_BBBikeOsmUtil();
-		     my $url = BBBikeOsmUtil::get_download_url(BBBikeOsmUtil::get_visible_area());
-		     main::status_message("URL: $url", "infodlg");
+		     my $url  = BBBikeOsmUtil::get_download_url(BBBikeOsmUtil::get_visible_area());
+		     my $url2 =BBBikeOsmUtil::get_fallback_download_url(BBBikeOsmUtil::get_visible_area());
+		     main::status_message("Official URL: $url\nFallback URL: $url2", "infodlg");
 		 }],
 		"-",
 		[Button => 'OSM-converted layer',
