@@ -301,9 +301,8 @@ Kleistpark: im Sommer bis 21 Uhr geöffnet, im Winter bis 18 Uhr	? 7192,9508 7246
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
 #: section ignorieren vvv
-#: by: Frederike (pure shore):
-Geithainer Str.: Beton, Q0	? 25041,14016 25112,13991 25225,13956
 #: by: Katharina Kufen:
+#: note: h osberhaus meint: Asphalt Q2, holprich, enge Straße q2
 Zampastr.: mäßiger Asphalt, Q1, kaum befahrene Anliegerstraße	? 12338,17862 12387,18100
 #: by: Sylvette Schäfer:
 Weg A (Blankenfelde): mäßiger fester Sandweg, Q2	? 10700,23251 10549,23550
@@ -834,7 +833,7 @@ Lindenhagen - Beenz: Qualität?	? 32388,94460 31922,94902 31069,95292 30850,95280
 Teltow Richtung Süden: Qualität? Straßennamen?	? 3377,-366 3589,-673 3615,-757 3781,-889 3970,-918 3765,-1732 3750,-2087
 Teltow Richtung Süden (Bahnstr., Flugplatzstr.): Qualität? Wie geht es weiter?	? 3494,-1950 3417,-2460 3310,-3001 3092,-3093
 Rudower Höhe: Qualität?	? 18219,1680 18404,1376 18614,1453
-Mohnweg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 19471,448 19626,367 19728,364 19785,361 19821,358 19843,357 20035,348 20098,359 20214,375 20267,375
+Mohnweg (Altglienicke): Qualität (laut ADFC-Karte mäßig geeignet)?	? 19471,448 19626,367 19728,364 19785,361 19821,358 19843,357 20035,348 20098,359 20214,375 20267,375
 Bohnsdorfer Weg: Qualität? (laut ADFC-Karte mäßig geeignet)	? 20684,105 20668,112 20604,354 20589,403 20543,478 20510,530
 Calau - Werchow: Qualität?	? 48907,-72723 49300,-73237 49437,-74112 49539,-74585 49606,-74713 49618,-75018
 Werchow - Cabel: Qualität?	? 49618,-75018 49412,-75175 49075,-75387 48818,-75806 48692,-75633 48437,-75600 47821,-75451
@@ -1719,9 +1718,6 @@ Uhrmacherweg: Qualität?	? 16106,1886 16177,1943 16254,1999
 Dreherweg: Qualität?	? 16290,1678 16400,1770
 Sattlerstr.: Qualität?	? 16056,2034 16177,1943 16290,1678
 Gürtlerweg: Qualität?	? 16002,1964 16106,1886
-Straße zwischen Bildhauerweg und Buchbinderweg entlang der Clay-Oberschule: Durchfahrt für Radfahrer möglich? Qualität? Offizieller Straßenname?	? 16311,1581 16464,1194 16489,1185
-Buchbinderweg: Qualität?	? 16540,1509 16549,1480 16547,1439 16489,1185 16485,1162
-Buchbinderweg - Zittauer Str.: Durchfahrt für Radfahrer möglich? Qualität? Nachts beleuchtet?	? 16485,1162 16435,1063 16419,1048 16387,976 16342,959
 Seilerweg: Qualität?	? 16447,1483 16489,1453 16547,1439
 Seilerweg - Neuköllner Str.: Durchfahrt für Radfahrer möglich? Qualität? Nachts beleuchtet?	? 16547,1439 16605,1424 16643,1460
 Bäckerstr.: Qualität?	? 16726,1074 16700,1104 16657,1124
@@ -1826,13 +1822,10 @@ Rudower Str. - Girlitzweg: existiert eine Durchfahrt für Radfahrer? Qualität?	? 
 Girlitzweg: Qualität?	? 15273,3269 15321,3332 15373,3403
 Kernbeißerweg: Qualität?	? 15321,3332 15253,3383
 Rudower Str. - Angelikaweg: existiert eine Durchfahrt für Radfahrer? Qualität?	? 15459,2921 15537,3026
-Angelikaweg: Qualität?	? 15537,3026 15602,3099 15660,3177
-Windenweg: Qualität?	? 16306,2364 16106,2514 16012,2592 15923,2667 15870,2768 15785,2900 15751,2936 15602,3099
 Rudower Str. - Primelweg: existiert eine Durchfahrt für Radfahrer? Kann die Rudower Chaussee in Höhe des Primelwegs überquert werden? Qualität?	? 15804,2512 15862,2588
 Primelweg: Qualität?	? 15862,2588 15923,2667
 Levkoienweg: Qualität?	? 16012,2592 16093,2696 16164,2790
 Goldlackweg: Qualität?	? 16093,2696 15911,2821
-Mohnweg: Qualität?	? 16242,2279 16114,2377 16045,2434 15862,2588 15779,2649
 #: XXX NN
 Ampferweg: Qualität?	? 16114,2377 16042,2280
 #: XXX N
@@ -2067,7 +2060,7 @@ Obwaldener Zeile: Qualität? Für Autos gesperrt?	? 3653,2107 3655,2210
 Aarberger Str. - Obwaldener Zeile: Existiert eine Verbindung zwischen Aarberger Str. und Obwaldener Zeile? Wenn ja, wie ist die Qualität?	? 3581,2105 3653,2107
 #: XXX könnte die "Glamer Str." sein, aber keine Erwähnung in Google
 Theklastr. Verlängerung: Existiert eine Straße in Verlängerung der Theklastr.? Wie ist der Straßenname? Wie ist die Qualität?	? 3732,2455 3726,2209
-Bremer Str.: Qualität? Wie weit reicht die Bremer Str. Richtung Südwesten? Sind Abschnitte für den Autoverkehr gesperrt?	? 3983,2454 4012,2413 4024,2374 4046,2339 4035,2291 4018,2254 3974,2214 3923,2158 3906,2135
+Bremer Str. - Engadiner Weg: Qualität? 	? 4046,2339 4035,2291 4018,2254 3974,2214 3923,2158 3906,2135
 Rütliplatz: Qualität?	? 2951,2112 2995,2111
 Genfer Weg: Qualität? Für Autos gesperrt?	? 2995,2119 3150,2113
 Schwarzdornweg: Qualität?	? 2831,2390 3006,2384
@@ -2402,7 +2395,6 @@ Weerthstr.: Qualität?	? 20113,3408 20038,3357 20010,3340
 Thomas-Müntzer-Str.: Qualität?	? 20301,3432 20149,3617
 Pfingstberggasse: Qualität?	? 19954,3887 20075,3979 20112,3932 20145,3954
 Friedenstr. (Adlershof): Qualität?	? 20219,3661 20367,3479
-Süßer Grund: Qualität?	? 20304,3714 20451,3538 20597,3364
 Genossenschaftsstr.: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 19922,4251 19963,4198 20035,4099 20067,4054 20145,3954 20290,3756 20285,3739 20304,3714
 Hollstr.: Qualität?	? 20035,4099 19974,4050 19947,4087 19917,4168
 Nipkowstr.: Ist die Nipkowstr. zwischen Dörpfeldstr. und Büchnerweg eine Vorfahrtstraße? 	? 20352,3744 20499,3572 20644,3395 20717,3310
@@ -2673,6 +2665,7 @@ An der Fließwiese: Qualität?	? -998,12689 -1022,12743 -1020,12801 -962,12951 -95
 Biedermannweg: Qualität?	? -854,12963 -742,12924
 Emmy-Zehden-Weg: Qualität?	? 4903,15105 4810,15000
 Goethepark: Qualität? Kann die Kaiser-Friedrich-Str. in Höhe Goethepark überquert werden?	? 3467,11373 3594,11372
+#: XXX ein anonymer Eintrag meint "Asphalt Q1", aber "viele Fußgänger q2" und hat die Frage nicht beantwortet. osm meint, dass der westliche Abschnitt access=private ist.
 Hanns-Braun-Str.: Qualität? Ist der hintere (westliche) Abschnitt der Straße permanent zugänglich?	? -232,12380 -262,12373 -418,12448 -453,12446 -515,12407 -671,12311 -1015,12106
 Prinz-Friedrich-Karl-Weg: Qualität?	? -1100,12210 -1172,12336 -824,12557 -646,12658
 Rückertstr. (Charlottenburg): Qualität? Kann die Bismarckstr. in Höhe der Rückertstr. überquert werden?	? 3571,11451 3540,11610
@@ -2784,7 +2777,6 @@ Kochelseestr.: Qualität?	? 22462,1547 22364,1487 22247,1409 22163,1363
 Königsseestr.: Qualität?	? 22448,1824 22538,1878 22617,1925
 Laubnitzer Pfad: Qualität?	? 22995,745 23067,786
 Steinbindeweg: Qualität?	? 23237,508 23137,650 23067,786 23085,898
-Libboldallee: Qualität?	? 22577,1002 22821,1086
 Lummenweg: Qualität?	? 21879,2592 21919,2510 21936,2388
 Parksteig: Qualität? Ist der nördliche Teil des Weges für Autos gesperrt?	? 22577,1002 22521,1134 22453,1294
 Schilfsängersteig: Qualität?	? 21454,1976 21406,2005 21385,2031 21353,2061 21351,2079 21323,2105 21271,2131
@@ -2903,7 +2895,6 @@ Wickhofstr.: Qualität?	? 4021,23330 4030,23054
 Gisbertasteig: Qualität?	? 4304,24250 4448,24277
 Bertastr. (Hermsdorf): Qualität?	? 4617,24029 4510,24170 4448,24277 4444,24329 4457,24400
 Marthastr. (Hermsdorf): Qualität?	? 4546,23930 4489,23976 4458,24011 4425,24067
-Oggenhauser Str.: Qualität?	? 3476,23310 3463,23194
 Olafstr.: Qualität?	? 3947,23547 3698,23657 3605,23724 3561,23817 3512,24049 3483,24186 3457,24321 3425,24469
 Oswinsteig: Qualität?	? 3875,24405 3744,24378 3605,24351 3457,24321 3271,24283 3127,24253
 Silvesterweg: Qualität?	? 3559,24564 3575,24498 3605,24351 3632,24214 3661,24079 3702,23899 3715,23819 3751,23764 3791,23730
@@ -3432,7 +3423,6 @@ Christian-Henkel-Str.: Qualität?	? 12054,1044 12212,1108 12256,1111 12353,1077 1
 Azaleenstr.: Qualität? Qualität jenseits der Birkenstr.? Gibt es einen Zugang für Radfahrer zum Uferweg?	? 23443,4524 23544,4541 23634,4563 23701,4584 23798,4642 23869,4733 23874,4924 23858,4927 23796,4929
 Am Tierpark: wo genau ist die neue Fußgängerampel?	? 18578,10293
 Jahnstr. (Hermsdorf): Qualität?	? 3707,22864 3689,23078
-Hibiskusweg - Romain-Rolland-Str.: existiert eine für Radfahrer befahrbare Verbindung? Qualität?	? 13247,17825 13214,17742
 Mönchmühlenstr.: laut osm ist die Straße teilweise für den Kfz-Verkehr gesperrt, stimmt das?	? 8780,26384 8684,26216 8570,26107 8302,25963
 #: XXX ein anonymer Eintrag war nicht klar: "Asphalt Q3"
 Im Wolfsgartenfeld: Qualität?	? 5338,19843 5340,19895 5299,20104
@@ -3480,3 +3470,7 @@ Mozartstr. (Potsdam): Qualität?	? -8108,-2809 -8127,-2925 -8137,-2997
 Patrizierweg (Potsdam): Qualität östlich der Mendelssohn-Bartholdy-Str.?	? -7855,-2973 -7495,-3006 -7178,-3027
 Gluckstr. (Potsdam): Qualität?	? -7832,-2864 -7491,-2904
 R1: Wie ist die Wegführung der R1 im Bereich Altstadt Köpenick?	? 22196,4847 22147,4831 22043,4562 22057,4531 22071,4501
+#: XXX unklarer Eintrag von Oliver Haase, "Bordsteinkanten"
+Mottlaupfad: Schrittgeschwindigkeit, vielleicht weil Spielstraße?	? -1901,23554 -2070,23631
+Zitronenfalterweg: geht der Weg bis an die Grünanlage heran?	? 21677,11017 21578,10977
+Kemberger Str.: Gibt es einen Radweg in der Kemberger Straße? Ist dieser benutzungspflichtig?	? 22314,17916 22215,17784 22191,17751 22148,17687 22022,17519 22002,17492 21913,17376

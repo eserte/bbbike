@@ -749,6 +749,8 @@ Bahntrasse	3nocross::ignrte 16635,2796 16677,2856 16779,2993
 Stubenrauchstr. -> Krokusstr.: Bahntrasse	3::igndisp 16779,2993 16677,2856 16739,2736
 Krokusstr. -> Stubenrauchstr.: Bahntrasse	3::igndisp 16739,2736 16677,2856 16635,2796
 Bahntrasse	3nocross::ignrte 16182,2200 16242,2279 16306,2364
+Mohnweg -> Stubenrauchstr.: Bahntrasse	3::igndisp 16114,2377 16242,2279 16306,2364
+Stubenrauchstr. -> Mohnweg: Bahntrasse	3::igndisp 16182,2200 16242,2279 16114,2377
 Bahntrasse	3nocross::ignrte 16475,2586 16573,2715 16635,2796
 Stubenrauchstr. -> Fuchsienweg: Bahntrasse	3::igndisp 16475,2586 16573,2715 16376,2862
 Fuchsienweg -> Stubenrauchstr.: Bahntrasse	3::igndisp 16376,2862 16573,2715 16635,2796

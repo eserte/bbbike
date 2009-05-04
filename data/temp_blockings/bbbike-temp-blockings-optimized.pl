@@ -1006,6 +1006,15 @@ userdel	2::inwork -50149,24689 -50048,24475 -49883,24097
          'data' => 'userdel	2::inwork 15938,-42195 16017,-39838 15876,-39330
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1241647200,
+         'text' => 'L 021 Zehlendorf - Liebenwalde OD Zehlendorf Regenentwässerung Vollsperrung 04.05.2009-06.05.2009 ',
+         'from' => 1241301600,
+         'id' => 1641,
+         'data' => 'userdel	q4::inwork 9098,42254 9043,42165 9032,42153
+',
+         'type' => 'handicap'
        }
      
 );

@@ -2105,6 +2105,7 @@ An der Werderlake: Asphalt	Q0 18198,1814 18266,1715
 Prierosser Str.: Asphalt	Q0 16651,1962 16767,1831 16988,1571
 Prierosser Str.: Kopfsteinpflaster	Q2 16988,1571 17072,1467
 Buchbinderweg: Asphalt	Q0 16418,1657 16540,1509
+Buchbinderweg: Asphalt	Q0 16540,1509 16549,1480 16547,1439 16489,1185 16485,1162
 Sattlerstr.: Asphalt	Q0 16290,1678 16345,1605
 Gürtlerweg: Beton	Q0 16106,1886 16255,1538 16325,1462
 Schriftsetzerweg: Beton	Q0 15875,1796 15967,1718 16200,1499
@@ -2237,6 +2238,8 @@ Rügenwalder Weg: Asphalt	Q0 22424,12183 22439,12168 22720,12163 22752,12195
 An der Spreeschanze: asphaltiert	Q0 -2623,14396 -2600,14436 -2597,14532
 Zitadelle: Kopfsteinpflaster	Q2 -2646,14525 -2668,14635 -2704,14748 -2735,14848 -2622,14876 -2591,14783 -2704,14748
 Behnitz: Kopfsteinpflaster	Q2 -2951,14617 -2993,14568 -3014,14559
+Kulbeweg: Asphalt	Q0 -2666,17168 -2866,17207 -2886,17110
+Libboldallee: Asphalt	Q0 22577,1002 22821,1086
 Erna-Sack-Str.: sehr gutes Verbundsteinpflaster	Q0 -7486,13321 -7496,13214
 Taubnesselweg: mäßiger fester Sandweg	Q2 20793,2247 20836,2150 20872,2112
 Harzburger Str. (Blankenburg): guter Asphalt	Q0 13709,21334 13817,21304 13910,21280 14005,21262 14096,21243 14134,21235
@@ -5218,7 +5221,7 @@ Siriusstr.: guter Asphalt	Q0 14751,7007 14686,7070
 Kurstr. (Nikolassee): guter Asphalt	Q0 -2021,2271 -2049,2359 -2069,2429 -2160,2685
 Oranienburger Str. (Lichtenrade): Asphalt	Q0 11343,405 11381,574 11372,706
 Schweriner Ring: guter Beton	Q0 17440,18997 17450,19297 17552,19291 17549,19120 17610,19116 17608,19054 17600,18994
-Windenweg: guter Beton	Q0 16306,2364 16106,2514 16012,2592 15923,2667 15870,2768 15785,2900 15751,2936 15602,3099
+Windenweg: guter Beton, stellenweise leichte Aufwerfungen der Betonplatten	Q1 16306,2364 16106,2514 16012,2592 15923,2667 15870,2768 15785,2900 15751,2936 15602,3099
 Stadtheidestr.: mäßiger Asphalt	Q1 -3573,16006 -3684,15982
 Julius-Hart-Str.: guter Beton	Q0 26061,5467 26196,5477 26270,5563
 Freitaler Str.: mäßiges Verbundsteinpflaster	Q2 15579,745 15677,797 15776,850 15872,902 15970,954
@@ -5381,6 +5384,19 @@ Ketschendorfer Weg: mäßiger Asphalt	Q1 20361,14118 20461,14110 20620,14092 20856
 Am Hellespont: guter Beton	Q0 10879,4358 10869,4233
 Jeanette-Wolff-Str.: asphaltiert	Q0 17551,-373 17669,-290 17726,-251 17789,-211 17848,-173 17928,-120
 Helene-Nathan-Weg: guter Asphalt	Q0 17681,-178 17726,-251
+(Buchbinderweg - Zittauer Str.): fester Sandweg	Q1 16485,1162 16435,1063 16419,1048 16387,976 16342,959
+Mohnweg: Beton, stellenweise leichte Aufwerfungen der Betonplatten	Q1 16242,2279 16114,2377 16045,2434 15862,2588 15779,2649
+(Weg in der Gartenheimsiedlung "Am Bildhauerweg"): Verbundsteinpflaster	Q1 16311,1581 16464,1194 16489,1185
+Angelikaweg: Beton, stellenweise leichte Aufwerfungen der Betonplatten	Q1 15537,3026 15602,3099 15660,3177
+(Hibiskusweg - Romain-Rolland-Str.): Asphalt	Q0 13247,17825 13214,17742
+Süßer Grund: guter Asphalt	Q0 20304,3714 20451,3538 20597,3364
+Mottlaupfad: guter Beton	Q0 -1901,23554 -2070,23631
+Oggenhauser Str.: schlechtes Kopfsteinpflaster	Q3 3476,23310 3463,23194
+Leisniger Str.: guter Beton	Q0 25095,14171 25041,14016 25025,13974 25017,13948 24992,13870 24983,13843
+Geithainer Str.: Beton	Q0 25041,14016 25112,13991 25225,13956
+Heidefalterweg: Asphalt	Q0 21147,10777 21324,10859 21446,10915
+Segelfalterweg: Asphalt	Q0 21402,11009 21446,10915 21491,10815
+Bremer Str.: Asphalt	Q0 3983,2454 4012,2413 4024,2374 4046,2339
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14686,12873 14405,12953
