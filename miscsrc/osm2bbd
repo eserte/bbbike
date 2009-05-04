@@ -1183,7 +1183,7 @@ if ($parsefor) {
 		     gesperrt_u gesperrt_s gesperrt_r
 		     radwege_exact fragezeichen
 		     Berlin.coords.data Potsdam.coords.data
-		     plaetze ampeln
+		     plaetze ampeln green nolighting
 		    )) {
 	touch $file;
     }
