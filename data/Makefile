@@ -26,7 +26,7 @@ PERSISTENTTMPDIR=	$(BBBIKEDIR)/tmp
 PERL?=			perl
 # assume we have a modern perl (> 5.8.0, which has utf8 bugs) installed...
 PERL_UTF8?=		${PERL}
-SED?=			env LANG=C sed
+SED?=			env LANG=C LC_ALL=C sed
 
 HAFAS2HAFAS=		${PERL} ${MISCSRCDIR}/hafas2hafas -strict
 CONVERT2HAFAS=		${PERL} ${MISCSRCDIR}/convert2hafas -strict
