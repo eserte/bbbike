@@ -16,11 +16,17 @@ mapping:
         mapping:
           name:
             type: text
-            pattern: /^[\x20-\x7e\xa0-\xffffffff]*$/
+            pattern: /^[\x20-\x7e\xa0-\x{ffffff}]*$/
             required: yes
+          # The category is really more complicated. It is:
+          # {forward => [$category_forward, { $key => $value, ... }],
+          #  backward => [$category_backward, { $key => $value, ... }]}
+          # Usually forward and backward category is the same and combined.
+          # Unfortunately the space cannot occur anywhere there, which
+          # limits the category usage (why didn't I decide on the TAB here, too?)
           category:
             type: text
-            pattern: /^[\x21-\x7e\xa0-\xffffffff]+$/
+            pattern: /^[\x21-\x7e\xa0-\x{ffffff}]+$/
             required: yes
           coords:
             type: seq
