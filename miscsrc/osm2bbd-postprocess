@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd-postprocess,v 1.18 2009/05/02 18:56:11 eserte Exp $
+# $Id: osm2bbd-postprocess,v 1.19 2009/05/05 22:22:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -45,22 +45,24 @@ my %only_target;
 sub usage (;$) {
     my $msg = shift;
     warn $msg, "\n" if $msg;
-    die "usage: $0 [--debug=0..2]\n" . join(" ", map {
+    die "usage: $0 [--debug=0..2] [-force]\n" . join(" ", map {
 	(my $optname = $_) =~ s{_}{-}g;
 	"\t[-skip-$optname | -only-$optname]\n"
     } @targets) . "\tdatadir\n";
 }
 
 my $debug = 1;
+my $force;
 GetOptions(
-   (map {
-    (my $optname = $_) =~ s{_}{-}g;
-    ("skip-$optname" => \$skip_target{$_},
-     "only-$optname" => \$only_target{$_},
-    );
-} @targets), 
-	"debug=i" => \$debug,
-)
+	   (map {
+	       (my $optname = $_) =~ s{_}{-}g;
+	       ("skip-$optname" => \$skip_target{$_},
+		"only-$optname" => \$only_target{$_},
+	       );
+	   } @targets), 
+	   "debug=i" => \$debug,
+	   "force!" => \$force,
+	  )
     or usage;
 
 my $miscsrcdir = realpath $FindBin::RealBin;
@@ -89,7 +91,7 @@ for my $target (@run_targets) {
 }
 
 sub target_wasserstrassen_lowres {
-    if (-e "wasserstrassen-lowres" && -M "wasserstrassen-lowres" <= -M "wasserstrassen") {
+    if (!$force && -e "wasserstrassen-lowres" && -M "wasserstrassen-lowres" <= -M "wasserstrassen") {
 	print STDERR "up-to-date";
 	return;
     }
@@ -116,7 +118,7 @@ sub target_largest_city_is_center {
 	print STDERR $@->{msg};
 	return;
     }
-    if ($meta->{center}) {
+    if (!$force && $meta->{center}) {
 	print STDERR "center already set in meta.yml, do not overwrite, skipping" if $debug;
 	return;
     }
@@ -150,7 +152,8 @@ sub target_largest_city_is_center {
 }
 
 sub target_inaccessible_streets {
-    if (-e "inaccessible_strassen" &&
+    if (!$force &&
+	-e "inaccessible_strassen" &&
 	-M "inaccessible_strassen" <= -M "strassen" &&
 	-M "inaccessible_strassen" <= -M "gesperrt") {
 	print STDERR "up-to-date";
@@ -185,7 +188,8 @@ EOF
 }
 
 sub target_mount {
-    if (-e "mount" && (-M "mount" <= -M "hoehe" &&
+    if (!$force &&
+	-e "mount" && (-M "mount" <= -M "hoehe" &&
 		       -M "mount" <= -M "gesperrt" &&
 		       -M "mount" <= -M "strassen")
        ) {
