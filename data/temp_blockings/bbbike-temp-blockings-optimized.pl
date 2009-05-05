@@ -1015,6 +1015,25 @@ userdel	2::inwork -50149,24689 -50048,24475 -49883,24097
          'data' => 'userdel	q4::inwork 9098,42254 9043,42165 9032,42153
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_012511',
+         'until' => 1241528400,
+         'text' => 'Preußenallee (Charlottenburg) in beiden Richtungen zwischen Marathonallee und Badenallee Veranstaltung, Straße vollständig gesperrt (bis 15 Uhr)',
+         'from' => 1241414920,
+         'id' => 1642,
+         'data' => 'userdel	2::inwork 596,11951 585,11830 572,11698 563,11601
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1304200800,
+         'text' => 'Kantstr. zwischen Hardebergstr. und Joachimstaler Str. gesperrt (bis 2011)',
+         'from' => 1241501417,
+         'id' => 1643,
+         'data' => 'userdel	2::inwork 5652,11004 5613,10963 5494,10973
+',
+         'type' => 'gesperrt'
        }
      
 );
