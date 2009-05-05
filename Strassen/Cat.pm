@@ -98,6 +98,7 @@ my %older_file_to_cat =
      "handicap_s"		=> $filetype_to_cat{"handicap"},
      "hoehe"			=> [qw(X XXX ? ???)],
      "housenumbers"		=> [qw(HNR)],
+     "kneipen"			=> [qw(X)],
      "label"			=> [sub { /^(90)?([ns][ew]?|[ew])$/ }],
      "landstrassen"		=> $filetype_to_cat{"landstrassen"},
      "landstrassen-cooked"	=> $filetype_to_cat{"landstrassen"},

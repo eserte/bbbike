@@ -1407,15 +1407,11 @@ check-crossings-less-important:	${PERSISTENTTMPDIR}/crossings_gewaesser.bbd \
 
 check-categories:	.check_categories
 
-.check_categories:	${TARGETS}
+.check_categories:	${BBD_TARGETS}
 	@echo "Check categories..."
-.for target in ${TARGETS}
+.for target in ${BBD_TARGETS}
 	@echo " ${target}"
 	@$(PERL_UTF8) -I../lib -I.. -MStrassen::Cat -e '\
-	    if ($$ARGV[0] =~ m{^(ampelschaltung|multi_bez_str|.*/bbbike-temp-blockings-optimized.pl|kneipen)$$}) {\
-		print "  Skip $$ARGV[0]...\n";\
-		exit 0;\
-	    }\
 	    exit !Strassen::Cat::check_file($$ARGV[0], BBBikeVersion => "3.16");\
 	' ${target}
 .endfor
