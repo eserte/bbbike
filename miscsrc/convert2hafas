@@ -302,7 +302,9 @@ LINES: while(defined($_ = nextline())) {
 
     if ($keep_global_directives && $at_beginning && /^#:/) {
 	print W "$_\n";
-	next;
+	if (/^#:\s*\S/) { # the global/local directive separator
+	    next;
+	}
     }
 
     $at_beginning = 0;
