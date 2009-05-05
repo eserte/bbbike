@@ -1,0 +1,38 @@
+---
+type: map
+mapping:
+  global_directives: &directives_def
+    type: map
+    mapping:
+      =:
+        type: seq
+        sequence:
+          - type: text
+    required: no
+  data:
+    type: seq
+    sequence:
+      - type: map
+        mapping:
+          name:
+            type: text
+            pattern: /^[\x20-\x7e\xa0-\xffffffff]*$/
+            required: yes
+          category:
+            type: text
+            pattern: /^[\x21-\x7e\xa0-\xffffffff]+$/
+            required: yes
+          coords:
+            type: seq
+            sequence:
+              - type: map
+                mapping:
+                  x:
+                    type: number
+                    required: yes
+                  y:
+                    type: number
+                    required: yes
+            required: yes
+          directives: *directives_def
+    required: yes
