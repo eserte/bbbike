@@ -49,3 +49,12 @@ if ($schema) {
     require YAML::Syck;
     print YAML::Syck::Dump($res);
 }
+
+=pod
+
+Quick check of all bbd files in data directory:
+
+    cd data
+    for i in `pmake -VBBD_TARGETS`; do ../miscsrc/bbd2datamodel.pl -validate $i; done
+
+=cut
