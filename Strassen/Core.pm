@@ -189,6 +189,20 @@ sub new {
     $self;
 }
 
+sub new_stream {
+    my($class, $filename, %args) = @_;
+    $args{NoRead} = 1;
+    $class->new($filename, %args);
+}
+
+sub read_stream {
+    my($self, $callback, %args) = @_;
+    my $fh = $self->open_file(%args);
+    $args{Callback} = $callback;
+    $args{UseLocalDirectives} = 1 if !exists $args{UseLocalDirectives};
+    $self->read_from_fh($fh, %args);
+}
+
 sub open_file {
     my($self, %args) = @_;
 
@@ -222,6 +236,7 @@ sub read_from_fh {
 
     my $read_only_global_directives = $args{ReadOnlyGlobalDirectives};
     my $use_local_directives = $args{UseLocalDirectives};
+    my $callback = $args{Callback};
     my $has_tie_ixhash = eval {
 	require Tie::IxHash;
 	# See http://rt.cpan.org/Ticket/Display.html?id=39619
@@ -296,29 +311,44 @@ sub read_from_fh {
 	    next if m{^(\#|\s*$)};
 	}
 
-	push @data, $_;
-	if ($preserve_line_info) {
-	    $self->{LineInfo}[$#data] = $.;
-	}
+	my $data_pos = $#data + 1;
 
+	my $this_directives;
 	if (@block_directives || %line_directive) { # Note: %line_directive is a tied hash and slower to check!
-	    while(my($directive,$values) = each %line_directive) {
-		if ($has_tie_ixhash && !$directives[$#data]) {
-		    tie %{ $directives[$#data] }, 'Tie::IxHash';
+	    if (!$callback) {
+		if ($has_tie_ixhash && !$directives[$data_pos]) {
+		    tie %{ $directives[$data_pos] }, 'Tie::IxHash';
 		}
-		push @{ $directives[$#data]{$directive} }, @$values;
+		$this_directives = $directives[$data_pos];
+	    } else {
+		if ($has_tie_ixhash) {
+		    tie %$this_directives, 'Tie::IxHash';
+		} else {
+		    $this_directives = {};
+		}
+	    }
+
+	    while(my($directive,$values) = each %line_directive) {
+		push @{ $this_directives->{$directive} }, @$values;
 	    }
 	    for (@block_directives) {
 		my($directive, $value) = @$_;
-		if ($has_tie_ixhash && !$directives[$#data]) {
-		    tie %{ $directives[$#data] }, 'Tie::IxHash';
-		}
-		push @{ $directives[$#data]{$directive} }, $value;
+		push @{ $this_directives->{$directive} }, $value;
 	    }
 	    if (%line_directive) {
 		%line_directive = ();
 	    }
 	}
+
+	if (!$callback) {
+	    push @data, $_;
+	    if ($preserve_line_info) {
+		$self->{LineInfo}[$data_pos] = $.;
+	    }
+	} else {
+	    $callback->(parse($_), $this_directives, $.);
+	}
+
     }
     if (@block_directives) {
 	my $msg = "The following block directives were not closed:";
