@@ -314,7 +314,7 @@ sub read_from_fh {
 	my $data_pos = $#data + 1;
 
 	my $this_directives;
-	if (@block_directives || %line_directive) { # Note: %line_directive is a tied hash and slower to check!
+	if ($use_local_directives && (@block_directives || %line_directive)) { # Note: %line_directive is a tied hash and slower to check!
 	    if (!$callback) {
 		if ($has_tie_ixhash && !$directives[$data_pos]) {
 		    tie %{ $directives[$data_pos] }, 'Tie::IxHash';
