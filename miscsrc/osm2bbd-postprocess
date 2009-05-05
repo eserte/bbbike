@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd-postprocess,v 1.19 2009/05/05 22:22:35 eserte Exp $
+# $Id: osm2bbd-postprocess,v 1.20 2009/05/05 22:23:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -125,15 +125,13 @@ sub target_largest_city_is_center {
     require Data::Dumper;
     require Strassen::Core;
     my $max = undef;
-    my $s = Strassen->new("$datadir/orte");
-    $s->init;
-    while() {
-	my $r = $s->next;
-	last if !@{ $r->[Strassen::COORDS()] };
-	if (!defined $max || $max->[Strassen::CAT()] < $r->[Strassen::CAT()]) {
-	    $max = $r;
-	}
-    }
+    my $s = Strassen->new_stream("$datadir/orte");
+    $s->read_stream(sub {
+			my $r = shift;
+			if (!defined $max || $max->[Strassen::CAT()] < $r->[Strassen::CAT()]) {
+			    $max = $r;
+			}
+		    }, UseLocalDirectives => 0);
     if (defined $max) {
 	print STDERR "setting $max->[Strassen::NAME()] ($max->[Strassen::COORDS()][0]) as center ";
 	$meta->{center} = [ split /,/, $max->[Strassen::COORDS()][0] ];
