@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: GoogleMapsStatic.pm,v 1.1 2008/09/07 20:45:49 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2009 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -12,7 +11,7 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-# Example usage: ./miscsrc/bbbikedraw.pl -bbox 13.5,52.5,13.6,52.6 -module GoogleMapsStatic -imagetype png | xv -
+# Example usage: ./miscsrc/bbbikedraw.pl -bbox 8000,8000,12000,12000 -module GoogleMapsStatic -imagetype png | display -
 
 package BBBikeDraw::GoogleMapsStatic;
 
