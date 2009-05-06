@@ -11,7 +11,34 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-# Example usage: ./miscsrc/bbbikedraw.pl -bbox 8000,8000,12000,12000 -module GoogleMapsStatic -imagetype png | display -
+=head1 NAME
+
+BBBikeDraw::GoogleMapsStatic - draw maps via the Google Static Maps API
+
+=head1 SYNOPSIS
+
+From command line:
+
+    ./miscsrc/bbbikedraw.pl -bbox 8000,8000,12000,12000 -module GoogleMapsStatic -imagetype png | display -
+    ./miscsrc/bbbikedraw.pl -markerpoint 10000,1000 -routefile /path/to/track.trk -bbox 8000,8000,12000,12000 -module GoogleMapsStatic -imagetype png | display -
+
+For module usage see L<BBBikeDraw>.
+
+=head1 TODO
+
+The URI length of the API request is limited. I need to get the
+maximum length, and then use a simplification algorithm if there are
+too many points in the routefile.
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<BBBikeDraw>.
+
+=cut
 
 package BBBikeDraw::GoogleMapsStatic;
 
@@ -31,6 +58,8 @@ sub pre_draw {
     my $self = shift;
     $self->{PreDrawCalled}++;
 }
+
+sub draw_route { } # dummy, everything's done in flush()
 
 sub flush {
     my $self = shift;
