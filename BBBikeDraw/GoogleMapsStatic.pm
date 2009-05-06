@@ -68,6 +68,12 @@ sub flush {
 	$center = $cy.",".$cx;
     }
 
+    my $marker_c;
+    if ($self->{MarkerPoint}) {
+	my($x,$y) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $self->{MarkerPoint}));
+	$marker_c = "$y,$x";
+    }
+
     my $format = ($self->{ImageType} eq 'png' ? 'png32' :
 		  $self->{ImageType} eq 'jpeg' ? 'jpg' : 'gif');
 
@@ -86,6 +92,7 @@ sub flush {
     CGI->import('-oldstyle_urls');
     my $qs = CGI->new({size => $w."x".$h,
 		       maptype => "mobile", # XXX make settable
+		       ($marker_c ? (markers => "$marker_c,red") : ()),
 		       # markers=40.702147,-74.015794,blues%7C40.711614,-74.012318,greeng%7C40.718217,-73.998284,redc
 		       key => $my_api_key,
 		       format => $format,
