@@ -49,6 +49,7 @@ my $fontsizescale;
 my $background;
 my $custom_places;
 my $route_file;
+my $marker_point;
 my $q;
 
 if (!GetOptions("w=i" => \$w,
@@ -76,6 +77,7 @@ if (!GetOptions("w=i" => \$w,
 		"bg|background=s" => \$background,
 		"customplaces=s" => \$custom_places,
 		"routefile=s" => \$route_file,
+		"markerpoint=s" => \$marker_point,
 		"q|quiet!" => \$q,
 	       )) {
     usage();
@@ -172,6 +174,9 @@ if (defined $route_file) {
 	push @extra_args, Coords => [ map { join(",", @$_) } @{ $load->{RealCoords} } ];
     }
 }
+if (defined $marker_point) {
+    push @extra_args, MarkerPoint => $marker_point;
+}
 
 my $draw = new BBBikeDraw
     NoInit   => 1,
@@ -239,6 +244,7 @@ usage: $0 [options]
                            are drawn.
 -routefile file		   Draw the specified bbr file (some other GPS file
 			   formats are also supported)
+-markerpoint x,y           Draw a marker
 -restrict cat1,cat2,...    Restrict to the specified categories.
 -o outfile                 Use the specified file for the output. Otherwise
                            the output goes to stdout.
