@@ -192,7 +192,7 @@ RSYNC=rsync
 RSYNC_DATA_CMD=cd data && \
 	    $(RSYNC) --verbose --progress --compress --backup --perms --times \
 		--exclude "*~" --exclude "RCS/" --exclude "*.st" \
-		--exclude "*-orig" --exclude ".*" --exclude "Makefile*" \
+		--exclude "*-orig" --exclude "*.inx" --exclude ".*" --exclude "Makefile*" \
 		*
 RSYNC_RADZEIT_DATA=cd data_berlin_and_potsdam && $(RSYNC) -Pvzr . $(BBBIKE_RADZEIT_DEST)/data/
 RSYNC_RADZEIT_TEST_DATA=cd data_berlin_and_potsdam && $(RSYNC) -Pvzr . $(BBBIKE_RADZEIT_DEST2)/data/
