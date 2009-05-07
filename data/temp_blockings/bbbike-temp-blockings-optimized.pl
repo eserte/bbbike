@@ -1018,6 +1018,7 @@ userdel	2::inwork -50149,24689 -50048,24475 -49883,24097
        },
        undef,
        {
+         'source_id' => 'IM_012523',
          'until' => 1304200800,
          'text' => 'Kantstr. zwischen Hardebergstr. und Joachimstaler Str. gesperrt (bis 2011)',
          'from' => 1241501417,
@@ -1025,6 +1026,24 @@ userdel	2::inwork -50149,24689 -50048,24475 -49883,24097
          'data' => 'userdel	2::inwork 5652,11004 5613,10963 5494,10973
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Bauarbeiten in der Pasewalker Str., Marienstraße ist eine Sackgasse, aber Radfahrer können passieren',
+         'from' => undef,
+         'id' => 1644,
+         'data' => 'userdel	q2::inwork 12095,20832 11686,21058
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Bauarbeiten in der Pasewalker Str., eingeschränkter Zugang zur Eweststr., aber Radfahrer können passieren',
+         'from' => undef,
+         'id' => 1645,
+         'data' => 'userdel	q3::inwork 12121,20969 12189,20959
+',
+         'type' => 'handicap'
        }
      
 );

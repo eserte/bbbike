@@ -3473,7 +3473,7 @@ Viktoriastr.: Kopfsteinpflaster	Q2 9171,5397 8943,5428
 #: by: Sissy (Rabefranziska)
 #: by: Niels (makanamail) (später auf Q0/Asphalt korrigiert)
 Genovevastr.: Asphalt	Q0 23066,7355 23172,7236 23312,7078 23444,6980 23603,6906
-#: by: Johannes Krugel: vvv
+#: by: <E1DOjn8-0003Rg-JX@mail.zrz.tu-berlin.de> (Johannes ...) vvv
 Schmarjestr.: Asphalt	Q0 511,3532 641,3548 795,3545 971,3534
 Otto-von-Simson-Str.: Kopfsteinpflaster	Q2 2560,5044 2627,5095 2835,5410
 #: by: ^^^
@@ -3747,6 +3747,7 @@ Freizeitpark Lübars: befestigter Sandweg mittlerer Güte	Q1 7932,22562 8062,22631
 #: corrected_by: srt (Q2 -> Q1)
 Schillerstr.: Betonplatten	Q1 10063,20493 10178,20525 10309,20562 10409,20592 10537,20633 10635,20693 10705,20739 10743,20764
 #: note: die ADFC-Karte sagt hier "mäßig geeignet":
+#: XXX: laut Axel Schumacher sind Teile der Straße ausgebessert worden, welche genau?
 Beuthstr.: Asphalt mit Löchern	Q1 10843,20301 10786,20272 10653,20200 10534,20144 10435,20098 10309,20032 10137,19993
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2 14934,15860 14802,15857 14720,15905 14609,15921
 #: note: laut ADFC-Karte gut geeignet
@@ -8281,8 +8282,9 @@ Helene-Nathan-Weg: guter Asphalt	Q0 17681,-178 17726,-251
 #: by: Uwe Borgenhagen vvv
 (Buchbinderweg - Zittauer Str.): fester Sandweg	Q1 16485,1162 16435,1063 16419,1048 16387,976 16342,959
 Mohnweg: Beton, stellenweise leichte Aufwerfungen der Betonplatten	Q1 16242,2279 16114,2377 16045,2434 15862,2588 15779,2649
-#: note: an der Einmündung zum Buchbinderweg befindet sich eine halbseitige Schranke, die sich allerdings ohne Zeitverlust umfahren lässt.
-(Weg in der Gartenheimsiedlung "Am Bildhauerweg"): Verbundsteinpflaster	Q1 16311,1581 16464,1194 16489,1185
+#: note: an der Einmündung zum Buchbinderweg befindet sich eine halbseitige Schranke, die sich allerdings ohne Zeitverlust umfahren lässt (> 110 cm)
+#: note: Weg in der Gartenheimsiedlung "Am Bildhauerweg", der Name "Landhausweg" ist nicht offiziell
+Landhausweg: Asphalt	Q0 16311,1581 16464,1194 16489,1185
 Angelikaweg: Beton, stellenweise leichte Aufwerfungen der Betonplatten	Q1 15537,3026 15602,3099 15660,3177
 #: by: ^^^
 #: by: Dietmar Schulz:
@@ -8291,7 +8293,8 @@ Angelikaweg: Beton, stellenweise leichte Aufwerfungen der Betonplatten	Q1 15537,
 #: by: Alexander Lucas:
 Süßer Grund: guter Asphalt	Q0 20304,3714 20451,3538 20597,3364
 #: by: Oliver Haase:
-Mottlaupfad: guter Beton	Q0 -1901,23554 -2070,23631
+#: note: "sehr hohe Bordsteinkanten aus so alten Steinen; Wenn man da mit z.B. einem Rennrad drauffahren wollte, müsste man nachher die 8 aus dem Vorderrad entfernen."
+Mottlaupfad: Beton mit Kanten	Q1- -1901,23554 -2070,23631
 #: by: Siegfried Zimmermann:
 Oggenhauser Str.: schlechtes Kopfsteinpflaster	Q3 3476,23310 3463,23194
 #: by: Frederike (pure shore) vvv
@@ -8305,6 +8308,11 @@ Segelfalterweg: Asphalt	Q0 21402,11009 21446,10915 21491,10815
 #: by: Jutta Partey:
 #: XXX was ist mit "Bordsteinkanten, q3" gemeint?
 Bremer Str.: Asphalt	Q0 3983,2454 4012,2413 4024,2374 4046,2339
+#: by: Axel Schumacher:
+Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
+#: by: Klaus Blumberg:
+#: note: "Teerdecke, die mit groben Splitt durchsetzt ist":
+Kürenzer Str.: Teerdecke, einige Schlaglöcher, aber gut befahrbar	Q0- 19253,12376 19282,12597 19333,13037
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
