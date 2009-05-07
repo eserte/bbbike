@@ -71,6 +71,7 @@ sub doit {
     my($wrapper) = $top->wrapper;
     my $transbg = "\xd6\xd7\xd6";
     my $transbg2 = "\xd6\xda\xd6"; # requested canvas background is not equal to the visible!
+    my $transbg3 = "\xd7\xdb\xd7"; # slightly different color, seen with xorg on FreeBSD 7
     my $id = $c->id;
 
     if ($shape_pixmap) {
@@ -157,7 +158,7 @@ sub doit {
     my $y = 0;
     my @p;
     while(<$fh>) {
-	if ($_ ne $transbg && $_ ne $transbg2) {
+	if ($_ ne $transbg && $_ ne $transbg2 && $_ ne $transbg3) {
 	    push @p, $x+$c_x, $y+$c_y;
 	    if (scalar @p > 10000) {
 		$x11->PolyPoint($shape_pixmap, $gc, 'Origin', @p);
