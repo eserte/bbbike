@@ -1055,6 +1055,10 @@ do-checks:	.check_empty_lines \
 	.check_green .check_green2 \
 	.check_brunnels .check_brunnels2 \
 	.check_comments_ferry \
+	.check_comments_cyclepath_2 .check_comments_danger_2 \
+	.check_comments_ferry_2 .check_comments_mount_2 \
+	.check_comments_tram_2 .check_comments_kfzverkehr_2 \
+	.check_comments_scenic_2 \
 	.check_exits \
 	.check_temp_blockings .check_grenzuebergaenge \
 	.check_berlin .check_potsdam
@@ -1281,6 +1285,12 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+)?)(:inw
 .check_comments_ferry:	comments_ferry faehren
 	$(CHECK_NEIGHBOUR) -type standard -against faehren -data comments_ferry
 	@touch $@
+
+.for i in cyclepath danger ferry mount tram kfzverkehr scenic
+.check_comments_$(i)_2:	comments_$(i)
+	$(CHECK_DOUBLE) -linesegs comments_$(i)
+	@touch $@
+.endfor
 
 .check_nolighting:	nolighting strassen landstrassen
 	$(CHECK_NEIGHBOUR) -type standard -against strassen -against landstrassen -data nolighting
