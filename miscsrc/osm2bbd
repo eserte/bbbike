@@ -809,9 +809,9 @@ for my $osm_file (@osm_files) {
 		    }
 		    push @or, ["strassen_bab", "BAB".$addcat];
 		    $is_motorway = 1;
-		} elsif ($highway_cat =~ m{^(?:primary|primary_link|secondary)$}) {
+		} elsif ($highway_cat =~ m{^(?:primary|primary_link)$}) {
 		    push @or, ["strassen", "HH".$addcat];
-		} elsif ($highway_cat eq 'tertiary') {
+		} elsif ($highway_cat =~ m{^(?:secondary|tertiary)$}) {
 		    push @or, ["strassen", "H".$addcat];
 		} elsif ($highway_cat =~ m{^(?:residential|unclassified|service|minor)$}) {
 		    push @or, ["strassen", "N".$addcat];
