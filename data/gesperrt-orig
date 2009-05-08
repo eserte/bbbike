@@ -1115,7 +1115,9 @@ tragen (Treppe, ca. 6 Stufen)	0:15 15488,8508
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
-#
+# 
+Schwingtor	BNP:5 15054,10168
+Schwingtor	BNP:5 15097,10255
 #: XXX_prog: Fahrräder mit Anhänger sollten auf den parallelen Gehweg geführt werden
 Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5 14658,7513
 #: note: Hier steht ein "Radfahren verboten"-Schild
@@ -1262,7 +1264,9 @@ Schranke (Thyssenstr. - Sittestr.)	BNP:3 5856,19204
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-#
+# 
+#: last_checked: 2009-05-08:
+Dora-Benjamin-Park - Uferweg: Zugang ist noch gesperrt	2:inwork 14621,10062 14599,10039
 #: last_checked: 2009-04-13 vvv
 #: next_check: 2009-09-01 vvv
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251
@@ -1273,7 +1277,7 @@ Lina-Morgenstern-Str.: noch in Bau, gesperrt	2:inwork 15716,10303 15753,10353
 #: last_checked ^^^
 Zur Boyenstr.: Bauarbeiten	2:inwork 7925,14442 7828,14405
 Brücke über Panke: zur Zeit Bauarbeiten, keine Durchfahrt möglich	2:inwork 7753,14528 7807,14441
-Kynaststraße: Abriss und Neubau bis ca. 2010-03-01	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505
+Kynaststraße: Abriss und Neubau bis ca. 2010-03-01	2:inwork 14988,11130 14897,10935 14881,10864 14867,10802 14828,10628 14802,10505 14795,10473 14766,10372 14724,10297
 #: note: genaue Wegführung von Diethard Mager:
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01, dann als Fußgänger/Radweg konzipiert	2:inwork 8184,14052 8290,14119
 Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01	2:inwork 8290,14119 8246,14201 8138,14148

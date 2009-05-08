@@ -121,9 +121,6 @@ Wittenauer Str.: Ausbau zum verkehrsberuhigten Bereiche, außerdem Ersetzen des P
 #: last_checked: 2009-03-16
 Bauarbeiten, danach neu asphaltiert, bis 2009-05-31	?::inwork 9220,11781 9218,11793 9208,11872 9201,11968 9183,12076
 #: by: ^^^
-#: next_check: 2009-05-01
-#: last_checked: 2009-04-09
-Columbiadamm: Bauarbeiten (neue Radwege)	?::inwork; 11632,8302 11512,8278 11416,8283 11271,8325 10911,8457
 Blankenfelde, Berliner Str. und Hauptstr: nach Bauarbeiten (bis 2009-04-01) vielleicht bessere Fahrbahnqualität?	?::inwork 9528,23240 9490,23531 9425,23693 9625,23781 9774,23936
 #: by: http://www.berliner-stadtplan.com/topic/bln/str/x_wgs/22.04/y_wgs/28.92/from/form.html
 #: by: http://www.morgenpost.de/content/2006/09/20/bezirke/855150.html
@@ -187,6 +184,10 @@ Fritz-von-der-Lancken-Str - Höhenweg: Straße in Bau	?::inwork -12766,1932 -12511
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+#: last_checked: 2009-05-08: vvv
+Straße im Bau, Straßenname (auch Dora-Benjamin-Park?), auch Verbundsteinpflaster, auch verkehrsberuhigt?	?::inwork 14817,10031 14788,9976
+Dora-Benjamin-Park: zurzeit noch gesperrt	?::inwork 14705,10149 14621,10062
+#: last_checked ^^^
 #: XXX_prog:
 Gleichberechtigte Kreuzung (trotz H/N)	? -7191,-1023
 Schorlemerallee: Kandidat für "relativ wenig Kfz-Verkehr?"	? 3836,6550 3664,6523 3459,6484 3347,6460 3306,6453 3216,6393
@@ -3421,7 +3422,6 @@ Jahnstr. (Hermsdorf): Qualität?	? 3707,22864 3689,23078
 Mönchmühlenstr.: laut osm ist die Straße teilweise für den Kfz-Verkehr gesperrt, stimmt das?	? 8780,26384 8684,26216 8570,26107 8302,25963
 #: XXX ein anonymer Eintrag war nicht klar: "Asphalt Q3"
 Im Wolfsgartenfeld: Qualität?	? 5338,19843 5340,19895 5299,20104
-(Engelwiese): Qualität (wahrscheinlich wassergebundene Decke)?	? 14974,10018 15050,10160 15101,10263
 #: XXX anonymous meint "fester Sandweg", aber beiderseits der Birkenstr. asphaltiert! vvv
 Jägerstr. (Kaulsdorf): Qualität zwischen Eichenstr. und Dammheide?	? 22669,8498 22639,8565 22586,8686 22532,8807 22514,8848 22431,8912
 Jägerstr. (Kaulsdorf): Qualität zwischen Tieflandstr. und Waldstr?	? 22190,9043 22027,9131 21951,9157 21849,9145

@@ -10350,7 +10350,7 @@ EOF
        text  => 'Bauarbeiten am Ostkreuz, Verbindungsstraße könnte für die Durchfahrt gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14802,10505 14836,10524 14843,10621 14882,10732
+userdel	2::inwork 14724,10297 14764,10303 14794,10336 14821,10478 14836,10524 14843,10621 14882,10732
 EOF
      },
      { from  => undef, # 
@@ -11489,7 +11489,7 @@ EOF
        text  => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. bis zum 2.6.2008 gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14802,10505 14836,10524 14843,10621 14882,10732 14906,10820
+userdel	2::inwork 14724,10297 14764,10303 14794,10336 14821,10478 14836,10524 14843,10621 14882,10732 14906,10820
 EOF
      },
      { from  => undef, # 
