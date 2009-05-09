@@ -74,7 +74,7 @@ Hagelberger - Mehringdamm	3nocross::ignrte 9334,9670 9280,9476 9248,9350
 Mehringdamm -> Hagelberger Str.: Hagelberger - Mehringdamm	3::igndisp 9248,9350 9280,9476 9000,9509
 Hagelberger Str. -> Mehringdamm: Hagelberger - Mehringdamm	3::igndisp 9000,9509 9280,9476 9334,9670
 Fidicin - Mehringdamm	3 9305,9044 9224,9053 9225,9038 9227,8890
-Mangerstr. (Potsdam)	1 -12064,-284 -12265,-418
+Mangerstr. (Potsdam)	1 -12064,-284 -12108,-291 -12265,-418
 Rudolf-Breitscheid-Str.	1 -10446,-1947 -10360,-1934 -10235,-1916 -9986,-1882 -9735,-1845
 Bendastr.	1 12689,6905 12702,6846
 Bendastr.	1 12793,6407 12779,6478 12756,6578 12743,6645 12726,6727 12722,6748 12715,6775 12702,6846
@@ -324,8 +324,8 @@ Müggelheimer Str.	3nocross::ignrte 22686,4310 22556,4386 22451,4441 22419,4457 2
 Karlstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22458,4134 22556,4386 22451,4441
 Spitzerstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22425,4370 22451,4441 22419,4457
 Müggelheimer Str. -> Spitzerstr.: Müggelheimer Str.	3::igndisp 22556,4386 22451,4441 22425,4370
-Müggelheimer Str. -> Gartenstr.: Müggelheimer Str.	3::igndisp 22451,4441 22419,4457 22362,4331
-Gartenstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22362,4331 22419,4457 22396,4464
+Müggelheimer Str. -> Gartenstr.: Müggelheimer Str.	3::igndisp 22451,4441 22419,4457 22382,4361
+Gartenstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22382,4361 22419,4457 22396,4464
 Gropiusstr.	1 8543,16364 8389,16214
 Osloer Str.	3nocross::ignrte 8503,16716 8721,16689 8759,16684 8939,16668
 Osloer Str. -> Pankeweg: Osloer Str.	3::igndisp 8503,16716 8721,16689 8804,16881
@@ -740,7 +740,7 @@ Fehrbelliner Str. -> Schönhauser Allee: Mittelstreifen	3::igndisp 10695,13952 10
 Straßenbahntrasse	3nocross::ignrte 21796,4517 21775,4470 21773,4440
 Rudower Str. -> Grünauer Str.: Straßenbahntrasse	3::igndisp 21585,4459 21775,4470 21796,4517
 Grünauer Str. -> Rudower Str.: Straßenbahntrasse	3::igndisp 21773,4440 21775,4470 21585,4459
-Kietz	1 22273,4216 22292,4279 22339,4396 22364,4429 22396,4464
+Kietz	1 22273,4216 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22396,4464
 Mittelstreifen	3nocross::ignrte 5705,13359 5857,13342 5956,13330
 Bremer Str. -> Turmstr.: Mittelstreifen	3::igndisp 5868,13441 5857,13342 5956,13330
 Turmstr. -> Bremer Str.: Mittelstreifen	3::igndisp 5705,13359 5857,13342 5868,13441
@@ -795,3 +795,8 @@ Knoten Märkische Allee	1 19979,11774 20026,11759 20115,11730
 Hugo-Heimann-Str.	1 14120,1991 14165,2106 14229,2177 14453,2087 14587,2032
 Albulaweg	1 10541,1889 10486,1908
 Kätchenweg	2 -7020,-1275 -6975,-1250
+Mayschweg	1 22954,3584 22834,3571 22714,3558
+Finkeldeweg	1 22928,3057 22834,3571
+Mittelstreifen	3nocross::ignrte 19405,6276 19276,6359 19245,6379
+Verl. Rathenaustr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19407,6660 19276,6359 19405,6276
+An der Wuhlheide -> Verl. Rathenaustr.: Mittelstreifen	3::igndisp 19245,6379 19276,6359 19407,6660

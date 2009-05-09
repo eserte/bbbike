@@ -117,7 +117,7 @@ Moritzstr.: Fußgängerzone	q4 -3275,14407 -3350,14446 -3393,14470 -3410,14479 -34
 Mauerstr. (Spandau): Fußgängerzone	q4 -3316,14169 -3409,14241
 Eichgestell: bei schönem Wetter viele Fußgänger	q1 19052,6823 19407,6660 19590,6590 19751,6514 19986,6404 20106,6357 20200,6321 20293,6278
 Wuhlheide: bei schönem Wetter viele Fußgänger und Kinder	q2 20200,6321 20262,6493 20225,6631 20313,6841
-Wuhlheide/R1: Fußgänger	q2 20453,6211 20293,6278
+Wuhlheide/R1: Fußgänger	q2 20464,6237 20327,6287 20293,6278
 (am Schloß Schönhausen): Fußgänger	q2 10308,19297 10350,19182 10390,19069
 Blockdammweg (Brücke): eng, Fußgänger, ggfs. schieben	q2 17976,8964 18087,9035
 Markgrafenstr.: Gehweg	q2 9711,11543 9701,11656
@@ -442,6 +442,8 @@ Nikolassteig: für Radfahrer nicht freigegeben, ggfs. schieben	q3 -3931,1637 -387
 Engelwiese: für Radfahrer nicht freigegeben, ggfs. schieben	q3 14974,10018 15050,10160 15054,10168 15097,10255 15101,10263
 Dora-Benjamin-Park: Bordstein bei der Einfahrt	q1 14705,10149 14621,10062
 Dora-Benjamin-Park: Bordstein bei der Einfahrt	q1 14747,10108 14702,10020
+(Hoher Wallgraben - Hegemeisterweg): eng, Fußgänger	q2 18099,8048 18119,7996 18287,7815
+Kleine Hege: sehr eng	q3 22334,4383 22382,4361
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
 Straße 103 (Niederschönhausen): enge Straße 	q1 10914,20065 11051,19789
 An der Heilandsweide: Fußgänger	q1 8203,1194 8305,1148 8492,1050 8539,1025 8687,950
@@ -561,9 +563,9 @@ Spinozastr.: eng u. unübersichtlich	q2 3926,6409 3930,6481 3974,6511 4050,6506
 Koburger Str.: Gehweg	q3 6534,8467 6540,8421
 Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5070 2075,5075 2174,5081 2204,5081
 (Mauerweg Forst Spandau): kurvenreich, schmal, manchmal Fußgänger u. Skater	q1 -7263,16939 -7175,16968 -7151,17330 -6977,17655 -6977,17720 -6931,17864 -6837,18089 -6791,18328 -6780,18825 -6959,19306 -7016,19375 -8022,19052
-(Weverstr. - Gatower Str.): Fußgänger	q1 -4154,12379 -4340,12375
+(Weverstr. - Gatower Str.): Fußgänger	q1 -4169,12368 -4365,12358
 (Südpark): Fußgänger	q1 -3707,11693 -3712,11714 -3732,11772 -3826,11901 -3883,12053 -3985,12056 -4040,12050
-(Südpark): Fußgänger	q1 -4009,11789 -4004,11814 -4070,12006 -4040,12050 -4085,12081 -4117,12199 -4154,12379
+(Südpark): Fußgänger	q1 -4009,11789 -4004,11814 -4070,12006 -4040,12050 -4085,12081 -4117,12199 -4169,12368
 (Glühwürmchenweg - Pionierstr.): Wohngebiet	q1 -5960,16441 -6018,16250
 Schloßpark Charlottenburg: Fußgänger	q1 3288,12700 3263,12720 3127,12793 3055,12973 2997,13402 2950,13552
 Spreeweg: eng und unübersichtlich	q2 2950,13552 2922,13594 2859,13686 2777,13712 2568,13662 2260,13540
@@ -743,7 +745,7 @@ Graetschelsteig - Südpark): Fußgänger	q2 -4195,12139 -4117,12199
 Südpark): Fußgänger	q2 -4004,11814 -3890,11775 -3712,11714
 Südpark): Fußgänger	q2 -3712,11714 -3675,11702
 Südpark): Fußgänger	q2 -4070,12006 -3990,11912 -3890,11775
-Südpark): Fußgänger	q2 -3975,12229 -3968,12138 -3883,12053 -3786,11913
+Südpark): Fußgänger	q2 -3989,12223 -3968,12138 -3883,12053 -3786,11913
 (Südpark): Fußgänger	q2 -3968,12138 -3985,12056
 (Rosenstr. - Karl-Liebknecht-Str.): Fußgänger	q2 10476,12829 10528,12785
 Am Zwirngraben: Tische auf der Straße, Fußgänger	q4 10336,13037 10185,12982
@@ -758,12 +760,12 @@ Am Nußbaum: Touristen	q3 10644,12469 10626,12455 10611,12444 10597,12405 10611,1
 Kleine Gertraudenstr.: Fußgänger	q1 10332,11929 10364,11896 10391,11898
 Tharauer Allee: Bauarbeiten	q1::inwork -1483,11283 -1679,11336 -1818,11466 -1885,11392
 (Scottweg - Tharauer Allee): Fußgänger	q1 -1403,11279 -1483,11283
-Zimmerstr. (Spandau): Fußgänger	q1 -3962,12973 -3907,12958
-Brüderstr. (Spandau): Fußgänger	q1 -3999,12912 -3937,12898
+Zimmerstr. (Spandau): Fußgänger	q1 -3962,12973 -3942,12957
+Brüderstr. (Spandau): Fußgänger	q1 -3999,12912 -3967,12891
 Weißenburger Str.: Fußgänger	q1 -3984,12812 -4043,12833
-Sprengelstr. (Spandau): Fußgänger	q1 -4009,12735 -4099,12763
-Jägerstr. (Spandau): Fußgänger	q3 -3738,12572 -3729,12669
-Ziegelhof: Fußgänger	q3 -3774,13517 -3668,13502
+Sprengelstr. (Spandau): Fußgänger	q1 -4026,12720 -4099,12763
+Jägerstr. (Spandau): Fußgänger	q3 -3753,12563 -3729,12669
+Ziegelhof: Fußgänger	q3 -3789,13519 -3685,13504
 (Wachheimer Weg - Götelstr.): Fußgänger	q2 -3437,12258 -3350,12260 -3349,12213
 (Neuenburger Str. - Lindenstr.): Fußgänger	q2 9853,10543 9848,10526 9795,10512
 Fanny-Hensel-Weg: spielende Kinder, Pfähle	q3 8781,10827 8742,10868 8659,10910
@@ -925,7 +927,6 @@ Schwalbenweg: enge Straße	q1 20205,-548 20172,-533 19940,-610 19724,-703 19619,-
 Wetterseestr.: enge Straße	q1 11499,16883 11504,16746
 Kreuzritterstr.: enge Straße	q1 2252,24700 2297,24682 2359,24677 2402,24687 2471,24709 2531,24702 2586,24678 2621,24638 2640,24608
 Askaloner Weg: enge Straße	q1 2402,24687 2407,24657 2384,24603 2311,24546 2262,24505
-Pritstabelstr.: enge Straße	q1 22811,3037 22928,3057 23065,3089 23338,3173 23444,3217 23564,3283 23641,3342 23680,3371 23740,3418
 Juttastr.: enge Straße	q1 1072,4542 949,4366
 Herbert-Baum-Str.: enge Straße	q1 13826,16026 13869,15912 13904,15818 13943,15717 13964,15656 13989,15589
 Sendener Weg: enge Straße	q1 964,18321 1040,18283 1144,18237 1189,18246 1221,18327 1281,18487 1346,18662
@@ -1069,6 +1070,8 @@ Atzpodienstr. (Umgehung auf Gehweg möglich): gegen die Einbahnstraßenrichtung, g
 Behrenstr./Bebelplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9801,12245 9743,12239 9700,12234 9626,12227
 Halenseestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 2277,9801 2167,10004 2121,10089 1988,10328 1957,10426
 Zeltinger Platz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
+Sewanstr. - Balatonstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 17705,10232 17741,10386
+Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 (Los-Angeles-Platz): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5681,10696 5822,10609
 Kreuzung Sewanstr./Am Tierpark	q1::igndisp; 18631,10167 18647,10172
 #: XXX: darf hier offiziell gefahren werden (Zweirichtungsradweg?)

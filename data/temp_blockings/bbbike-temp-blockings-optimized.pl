@@ -964,15 +964,7 @@ userdel	2::inwork -50149,24689 -50048,24475 -49883,24097
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1241906400,
-         'text' => 'L 023 Ringenwalde - Milmersdorf OD Götschendorf Deckeneinbau Vollsperrung 08.05.2009-09.05.2009 ',
-         'from' => 1241647200,
-         'id' => 1638,
-         'data' => 'userdel	q4::inwork 28003,76731 27309,76652 26735,76914
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1243634400,

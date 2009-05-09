@@ -809,7 +809,7 @@ EOF
        text  => 'Lückstr. Richtung stadteinwärts zwischen Schlichtallee und Wönnichstr. Baustelle, Straße gesperrt (bis Mitte 10.2004) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 16699,10611 16588,10655 16460,10699 16316,10755 16153,10818 16032,10842
+userdel	1 16699,10611 16647,10632 16588,10655 16460,10699 16316,10755 16153,10818 16032,10842
 EOF
      },
      { from  => 1094627730, # 2004-09-08 09:15
@@ -1698,9 +1698,9 @@ EOF
        text  => 'Wilhelmstraße, Straße gesperrt bis 03.04.2005 23:00 Uhr (Frühlingsfest zwischen Pichelsdorfer Straße und Adamstraße). ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -3913,13054 -3886,13120 -3791,13357
+userdel	2 -3913,13054 -3886,13120 -3824,13350
 userdel	2 -3913,13054 -3962,12973 -3999,12912 -4043,12833
-userdel	2 -4043,12833 -4099,12763 -4163,12691
+userdel	2 -4043,12833 -4099,12763 -4174,12683
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -2278,8 +2278,8 @@ EOF
        text  => 'Pichelsdorfer Straße, zwischen Kreuzung Wilhelmstraße und Kreuzung Weißenburger Str. gesperrt bis 02.07.2006 (Sommerfest Wilhelmstadt) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -3650,12929 -3669,13015 -3764,13270 -3791,13357
-userdel	2 -3650,12929 -3641,12861 -3629,12781
+userdel	2 -3667,12919 -3693,13012 -3783,13261 -3824,13350
+userdel	2 -3667,12919 -3658,12854 -3650,12762
 EOF
      },
      { from  => 1121032800, # 2005-07-11 00:00
@@ -4161,10 +4161,10 @@ EOF
        source_id => 'IM_002648',
        data  => <<EOF,
 userdel	2 -4167,12554 -4239,12626
-userdel	2 -4167,12554 -4069,12558
-userdel	2 -3621,12575 -3738,12572
-userdel	2 -3738,12572 -3876,12567
-userdel	2 -3876,12567 -4069,12558
+userdel	2 -4167,12554 -4084,12557
+userdel	2 -3635,12572 -3753,12563
+userdel	2 -3753,12563 -3892,12560
+userdel	2 -3892,12560 -4084,12557
 EOF
      },
      { from  => 1145397600, # 2006-04-19 00:00
@@ -4367,7 +4367,7 @@ EOF
        text  => 'Wilhelmstraße Richtung Pichelsdorf zwischen Einmündung Pichelsdorfer Straße und Einmündung Gatower Straße Baustelle, gesperrt bis 08.05.2006 13:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 -3791,13357 -3886,13120 -3913,13054 -3962,12973 -3999,12912 -4043,12833 -4099,12763 -4163,12691 -4239,12626 -4300,12571 -4335,12465
+userdel	1 -3824,13350 -3886,13120 -3913,13054 -3962,12973 -3999,12912 -4043,12833 -4099,12763 -4174,12683 -4239,12626 -4300,12571 -4351,12460
 EOF
      },
      { from  => 1146801600, # 2006-05-05 06:00
@@ -5093,7 +5093,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_84075',
        data  => <<EOF,
-userdel	q4::inwork; 18191,6363 18343,6318 18423,6285 18473,6265 18574,6197 18670,6132 18766,6067 18853,6009
+userdel	q4::inwork; 18191,6363 18343,6318 18423,6285 18473,6265 18574,6197 18670,6132 18766,6067 18861,6000
 EOF
      },
      { from  => 1154642400, # 2006-08-04 00:00
@@ -5557,7 +5557,7 @@ EOF
        text  => 'Hegemeisterweg ist vom 7. August 2006 bis zum 30. November 2006 nicht benutzbar. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 17775,7874 17987,7973 18325,7778 18387,7742
+userdel	2::inwork 17775,7874 17987,7973 18287,7815 18325,7778 18378,7727
 EOF
      },
      { from  => 1156975200, # 2006-08-31 00:00
@@ -5615,7 +5615,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003370',
        data  => <<EOF,
-userdel	1::inwork 18853,6009 18766,6067 18670,6132 18574,6197 18473,6265 18423,6285 18343,6318 18191,6363 17992,6436
+userdel	1::inwork 18861,6000 18766,6067 18670,6132 18574,6197 18473,6265 18423,6285 18343,6318 18191,6363 17992,6436
 EOF
      },
      { from  => 1160949600, # 2006-10-16 00:00
@@ -6153,7 +6153,7 @@ EOF
        text  => 'Ehrlichstraße zwischen Trautenauerstraße und Blockdammweg gesperrt. Dauer 07.10.2006 06:00 Uhr bis 20.10.2006 18:00 Uhr. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 17729,8850 17879,8773 17929,8737 18005,8681 18080,8626 18147,8583
+userdel	2::inwork 17729,8850 17879,8773 17929,8737 17993,8689 18005,8681 18080,8626 18147,8583
 EOF
      },
      { from  => 1160107200, # 2006-10-06 06:00
@@ -8130,7 +8130,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005487',
        data  => <<EOF,
-userdel	1::inwork 18853,6009 19024,5830
+userdel	1::inwork 18861,6000 19024,5830
 EOF
      },
      { from  => 1178402400, # 2007-05-06 00:00
@@ -10166,7 +10166,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006856',
        data  => <<EOF,
-userdel	2::temp -3629,12781 -3641,12861 -3650,12929 -3669,13015 -3764,13270 -3791,13357
+userdel	2::temp -3650,12762 -3658,12854 -3667,12919 -3693,13012 -3783,13261 -3824,13350
 EOF
      },
      { from  => 1192310039, # 2007-10-13 23:13

@@ -369,7 +369,7 @@ Triniusstr.	1 18339,6660 18273,6606
 Franz-Stenzer-Str.	1 19876,15644 19974,15594 20044,15585 20111,15609 20181,15658 20399,15744 20508,15792 20586,15947 20610,15993 20636,16046
 Planetenstr.	1 15175,7221 15056,7198 14951,7163
 Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4750,14393
-Gartenstr. (Köpenick)	1 22419,4457 22362,4331 22302,4255 22273,4216
+Gartenstr. (Köpenick)	1 22419,4457 22382,4361 22362,4331 22302,4255 22273,4216
 Spitzerstr.	1 22319,4197 22358,4282 22425,4370 22451,4441
 Zitadellenweg/BMW-Betriebswerk	2 -1993,14594 -1768,14605 -1616,14527
 Tassostr.	1 13679,16286 13645,16192 13659,16151 13642,16118 13625,16054 13621,15990 13630,15956
@@ -479,6 +479,8 @@ Gartenstr.	1 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8
 Nipkowstr.	1 20499,3572 20352,3744
 Waldbacher Str.: Betriebsgelände	2 19706,12086 19909,12097
 Ettersburger Weg	1 12907,16432 12875,16350
+Ekhofplatz	1 23382,1429 23360,1390 23325,1418 23343,1454 23382,1429
+Müggelbergplatz	1 23293,1697 23321,1678 23303,1650 23278,1668 23293,1697
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
 Leistikowstr.	1 -12512,810 -12302,718
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -624,14 +626,18 @@ Jahnstr. (KW)	1s 26243,-12300 26028,-12312
 Seestr. (Potsdam)	1s -11581,559 -11584,452
 Tizianstr. (Potsdam)	1s -11424,542 -11480,621 -11581,559
 Spitzmühlenweg	1s 41728,17918 41668,17984 41556,18146
-Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -12265,-418
+Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -12108,-291 -12265,-418
 Stephanstr.	1s 6523,4491 6366,4500
 Am Poetensteig, Gramzow	1s 50043,90187 50107,89717
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
 Behrenstr./Bebelplatz	1s 9801,12245 9743,12239 9700,12234 9626,12227
 Halenseestr.	1s 2277,9801 2167,10004 2121,10089 1988,10328 1957,10426
 Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
-Mittelstreifen	3nocross::ignrte 19578,6165 19405,6276 19238,6383
+Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
+Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
+Mittelstreifen	3nocross::ignrte 19578,6165 19405,6276 19276,6359
+Treskowstr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19333,6165 19405,6276 19276,6359
+An der Wuhlheide -> Treskowstr.: Mittelstreifen	3::igndisp 19578,6165 19405,6276 19333,6165
 nicht überquerbar	3nocross::ignrte 456,11233 585,11256 704,11273
 Mittelstreifen	3nocross::ignrte -3481,14523 -3498,14413 -3506,14306
 Mittelstreifen	3nocross::ignrte 7007,3747 6961,3687 6805,3481
@@ -667,6 +673,8 @@ Mittelstreifen	3nocross::ignrte 7263,4281 7310,4308 7368,4342
 Ludwigsburger Weg -> Attilastr.: Mittelstreifen	3::igndisp 7254,4396 7310,4308 7368,4342
 Attilastr. -> Ludwigsburger Weg: Mittelstreifen	3::igndisp 7263,4281 7310,4308 7254,4396
 Straßenbahn	3nocross::ignrte 18003,7144 17934,7029 17919,6978
+Edisonstr. -> Fuststr.: Straßenbahn	3::igndisp 17919,6978 17934,7029 17823,7203
+Fuststr. -> Edisonstr.: Straßenbahn	3::igndisp 17823,7203 17934,7029 18003,7144
 Mittelstreifen	3nocross::ignrte -5039,15618 -5154,15651 -5473,15742
 Falkenseer Chaussee -> Remscheider Str.: Mittelstreifen	3::igndisp -5039,15618 -5154,15651 -5192,15517
 Remscheider Str. -> Falkenseer Chaussee: Mittelstreifen	3::igndisp -5192,15517 -5154,15651 -5473,15742
@@ -818,8 +826,11 @@ Riesaer Str. -> Heidenauer Str.: Straßenbahntrasse	3::igndisp 24020,14737 24097,
 Straßenbahntrasse	3nocross::ignrte 24198,14454 24162,14487 24120,14526
 Straßenbahntrasse	3nocross::ignrte 24721,14293 24870,14244 24930,14225 24983,14208 25095,14171
 wegen Überführung nicht überquerbar	3nocross::ignrte 17527,7812 17681,7589 17839,7365 18003,7144
-Wattstr. -> Rummelsburger Str.: wegen Überführung nicht überquerbar	3::igndisp 17647,7280 17681,7589 17527,7812
+Wattstr. -> Rummelsburger Landstr.: wegen Überführung nicht überquerbar	3::igndisp 17647,7280 17681,7589 17527,7812
+Wattstr. -> Grenzweg: wegen Überführung nicht überquerbar	3::igndisp 17647,7280 17681,7589 17295,7336
 Rummelsburger Str. -> Wattstr.: wegen Überführung nicht überquerbar	3::igndisp 17839,7365 17681,7589 17647,7280
+Rummelsburger Str. -> Grenzweg: wegen Überführung nicht überquerbar	3::igndisp 17839,7365 17681,7589 17295,7336
+Grenzweg -> Rummelsburger Landstr.: wegen Überführung nicht überquerbar	3::igndisp 17295,7336 17681,7589 17527,7812
 Mentelinstr. -> Rummelsburger Str.: wegen Überführung nicht überquerbar	3::igndisp 17743,7328 17839,7365 17681,7589
 Rummelsburger Str. -> Mentelinstr.: wegen Überführung nicht überquerbar	3::igndisp 18003,7144 17839,7365 17743,7328
 Mittelstreifen nicht passierbar	3nocross::ignrte 4469,8037 4659,7982 4793,7992
@@ -1276,6 +1287,9 @@ Mehringdamm -> Baruther Str.: Mittelstreifen	3::igndisp 9444,9919 9387,9804 9588
 Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3 8438,8676 8334,8655 8371,8543
 Mittelstreifen	3nocross::ignrte 9224,9053 9225,9111 9248,9350
 Wilhelmshöhe -> Mehringdamm: Mittelstreifen	3::igndisp 9186,9107 9225,9111 9248,9350
+Mittelstreifen, Tunnelrampe	3nocross::ignrte 3344,4488 3235,4421 3048,4305
+Reichensteiner Weg -> Unter den Eichen: Mittelstreifen, Tunnelrampe	3::igndisp 3203,4471 3235,4421 3344,4488
+Unter den Eichen -> Reichensteiner Weg: Mittelstreifen, Tunnelrampe	3::igndisp 3048,4305 3235,4421 3203,4471
 tragen (14 Stufen)	0:25:-197 -6972,1029
 tragen (Treppe)	0:30:-24 22057,4531
 tragen (ca. 40 Stufen)	0:30:-147 -2396,3652
