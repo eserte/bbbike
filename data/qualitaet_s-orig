@@ -1316,7 +1316,7 @@ Nalepastr.: fester enger Sandweg	Q2 17043,7512 17043,7617
 #: add_fragezeichen: stimmt das?
 Nalepastr.: Betonstr., Eisenbahnschienen	Q1 17043,7512 17211,7265
 Nalepastr.: sehr guter Asphalt	Q0 17211,7265 17296,7156 17352,7051 17459,6854 17514,6754 17555,6680 17614,6571
-Ernst-Grube-Str.: guter bis mäßiger Asphalt	Q1+ 21364,5426 21362,5289 21345,5157 21325,4998
+Ernst-Grube-Str.: guter bis mäßiger Asphalt	Q1+ 21364,5426 21363,5336 21362,5289 21345,5157 21325,4998
 Ernst-Grube-Str.: Kopfsteinpflaster	Q2 21325,4998 21300,4837 21264,4809 21332,4655
 Eiselenweg: Asphalt	Q0 21206,5420 21364,5426 21443,5406
 Ahornallee: asphaltiert	Q0 21325,4998 21454,4928 21509,4900
@@ -1326,10 +1326,9 @@ Charlottenstr.: Kopfsteinpflaster, OK	Q1 23041,3919 22855,3902 22675,3885
 Charlottenstr.: Asphalt	Q0 22675,3885 22467,3889
 Karlstr.: Beton	Q0 22467,3889 22458,4134 22556,4386
 Gartenstr.: Asphalt	Q0 22467,3889 22275,4032 22246,4106 22273,4216
-Kietz: sehr schlechtes Kopfsteinpflaster	Q3 22273,4216 22292,4279
-Kietz: mäßiges Kopfsteinpflaster	Q2 22292,4279 22339,4396 22364,4429 22396,4464
-Gartenstr.: schlechtes Kopfsteinpflaster	Q3 22273,4216 22302,4255
-Gartenstr.: mäßiges Verbundsteinpflaster	Q2+ 22302,4255 22362,4331 22419,4457
+Kietz: mäßiges Kopfsteinpflaster	Q2 22273,4216 22292,4279 22339,4396 22364,4429 22396,4464
+Gartenstr.: Kopfsteinpflaster	Q2 22273,4216 22302,4255
+Gartenstr.: Verbundsteinpflaster	Q1- 22302,4255 22362,4331 22419,4457
 Spitzerstr.: Beton	Q0 22319,4197 22358,4282 22425,4370 22451,4441
 Grünstr.: Kopfsteinpflaster	Q2 22111,4562 22162,4546 22214,4548 22312,4593
 Böttcherstr.: Kopfsteinpflaster	Q2 22214,4548 22212,4655
@@ -1486,8 +1485,8 @@ Wattstr. (Oberschöneweide): sehr schlechtes Kopfsteinpflaster	Q3 17620,7260 1764
 Karl-Elsasser-Str.: Asphalt	Q0 11943,5825 12063,5927 12160,5997 12270,6025
 Andreasberger Str.: Kopfsteinpflaster	Q2 12053,6185 12053,6042 12063,5927
 Ellricher Str.: Kopfsteinpflaster	Q2 12246,6227 12128,6201 12053,6185
-#: corrected_by: srt (Asphalt, mit einigen schadhaften Stellen -> Richtung Südwesten Kopfsteinpflaster)
-Sangeallee: Kopfsteinpflaster	Q2; 18457,9343 18319,9218 18247,9158 18124,9056
+#: corrected_by: srt (Asphalt, mit einigen schadhaften Stellen -> Richtung Südwesten unangenehmes Kopfsteinpflaster)
+Sangeallee: Kopfsteinpflaster	Q3; 18457,9343 18319,9218 18247,9158 18124,9056
 Sangeallee: Asphalt	Q0; 18124,9056 18247,9158 18319,9218 18457,9343
 #: by: Dave Wilke
 #: corrected_by: srt (war "gutes Kopfsteinpflaster")
@@ -1615,8 +1614,8 @@ Gelnitzstr.: schlechtes Kopfsteinpflaster	Q3 22897,5740 22882,5834
 Mayschweg: gut geeignet	Q0 23368,3894 23316,3778 23227,3724
 #: by: Johannes (behrens)
 #: corrected_by: srt (Q1 -> Q0)
-Köpenzeile: Beton	Q0 23174,3791 23227,3724 23319,3528 23444,3217 23481,3107 23541,2841 23567,2739 23552,2512 23513,2326
-Feldblumenweg: gut geeignet	Q0 23513,2326 23485,2271 23535,2111
+Köpenzeile: Beton	Q0 23174,3791 23227,3724 23319,3528 23444,3217 23481,3107 23541,2841 23567,2739 23552,2512
+Feldblumenweg: gut geeignet	Q0 23552,2512 23484,2360 23485,2271 23535,2111
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20060801.0810.44858.html
 Dörbeckweg: asphaltiert	Q0 -6250,13396 -6425,13347
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20051025.0840.31524.html
@@ -7561,7 +7560,8 @@ Bat-Yam-Platz: Verbundsteinpflaster	Q1 14511,2205 14633,2145
 #: by: Marcus Kuhn:
 Saalmannsteig: guter Beton	Q0 5410,19050 5284,19043 5181,19037
 #: by: Stefan Dietrich:
-Jägerstr. (Köpenick): schlechtes Kopfsteinpflaster	Q3 22383,4703 22355,4660 22312,4593
+#: corrected_by: srt ("schlechtes" entfernt, Q3 -> Q2)
+Jägerstr. (Köpenick): Kopfsteinpflaster	Q2 22383,4703 22355,4660 22312,4593
 #: by: Roger Menge:
 #: note: In der Kolonie Wege mit größtenteils Verbundsteinpflaster, einige Strecken als fester Sandweg, Übergänge in den Rehbergepark, grün, keine Beleuchtung
 (Swakopmunder Str. - Charles-Corcelle-Ring): gutes Verbundsteinpflaster	Q1 5223,16783 5141,16799 5091,16810 5035,16819 5000,16826
@@ -7986,6 +7986,7 @@ Elsenpfuhlstr.: Asphalt	Q0 5422,19829 5428,19896 5405,20072
 #: add_fragezeichen: Ist der Klausenburger Pfad eine Spielstraße (verkehrsberuhigter Bereich)?
 Klausenburger Pfad: guter Asphalt	Q0 7199,-418 7110,-363 7030,-313 6985,-282 6885,-169 6867,-126
 #: by: Harald Seel:
+#: XXX überprüfen, das sah mir eher nach normalen welligen Kleinsteinpflaster aus, also Q2
 Steffelbauerstr.: schlechtes Kopfsteinpflaster	Q3 19403,5885 19495,6029 19521,6071 19561,6136 19578,6165
 #: by: svea faber:
 #: note: "enge Straße", aber ohne weitere Kategorisierung -> ignore

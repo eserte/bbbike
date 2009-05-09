@@ -814,15 +814,7 @@ userdel	q4::inwork 14530,11137 14465,11195
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1241820000,
-         'text' => 'K 6304 Chaussee OD Priort, Bahnübergang Gleisbauarbeiten Vollsperrung 27.04.2009-08.05.2009 ',
-         'from' => 1240696800,
-         'id' => 1606,
-         'data' => 'userdel	2::inwork -19058,11636 -19029,11660 -18750,11919
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1243634400,
          'text' => 'L 063 Finsterwalder Straße OD Lauchhammer, zw. Bockwitzer Str. u. Neue Schehlenstraße Kanalarbeiten Vollsperrung 14.04.2009-29.05.2009 ',
@@ -939,15 +931,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1241820000,
-         'text' => 'L 075 Mahlow - Großziethen zw. Kreuzg. B96A u. Kleinziethen Deckeninstandsetzung Vollsperrung 27.04.2009-08.05.2009 ',
-         'from' => 1240696800,
-         'id' => 1632,
-         'data' => 'userdel	2::inwork 13506,-2809 13348,-3283 13289,-4660
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1251756000,
@@ -969,15 +953,7 @@ userdel	q4::inwork; 9008,12485 9018,12400 9028,12307
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1241820000,
-         'text' => 'B 087 zw. Abzw. Freiimfelde und Luckau Straßenbau Vollsperrung 04.05.2009-08.05.2009 ',
-         'from' => 1241301600,
-         'id' => 1636,
-         'data' => 'userdel	2::inwork 37549,-57430 36050,-58754
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1246053600,
          'text' => 'K 6315 Nennhausen - Rhinsmühlen zw. Nennhausen und Kotzen Straßenbau Vollsperrung 04.05.2009-26.06.2009 ',
@@ -1034,6 +1010,16 @@ userdel	2::inwork -50149,24689 -50048,24475 -49883,24097
          'from' => undef,
          'id' => 1645,
          'data' => 'userdel	q3::inwork 12121,20969 12189,20959
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Bauarbeiten in der Wühlischstraße (Einbahnstraße Richtung Osten) und Holteistraße (Kreuzungsbereich zur Wühlischstraße ist gesperrt).',
+         'from' => undef,
+         'id' => 1646,
+         'data' => 'userdel	q4::inwork 14639,11512 14575,11407
+userdel	q4::inwork; 14759,11339 14674,11370 14575,11407
 ',
          'type' => 'handicap'
        }

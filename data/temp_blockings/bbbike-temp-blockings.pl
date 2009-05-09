@@ -13933,4 +13933,13 @@ EOF
 userdel	q3::inwork 12121,20969 12189,20959
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX last_checked: 2009-05-09
+       text  => 'Bauarbeiten in der Wühlischstraße (Einbahnstraße Richtung Osten) und Holteistraße (Kreuzungsbereich zur Wühlischstraße ist gesperrt).',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 14639,11512 14575,11407
+userdel	q4::inwork; 14759,11339 14674,11370 14575,11407
+EOF
+     },
     );
