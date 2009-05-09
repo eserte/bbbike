@@ -992,7 +992,8 @@ ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd:	fragezeichen ${DATADIR}/strassen $
 # CHECKS
 
 # allow one error, and fail if the 2nd one is encountered
-FOREVER_TWO_ERRORS=	perl -MFcntl=:flock -e  'open LOCK, ">", ".check_forever.lck" or die $$!; flock LOCK, LOCK_EX|LOCK_NB or die $$!; $$cmd=shift; while() { system($$cmd); exit 2 if $$? == 2; $$count = $$? == 0 ? 0 : $$count+1; exit 1 if $$count >= 2; sleep 30 } END { unlink ".check_forever.lck" }'
+FOREVER_INTERVAL?=	30
+FOREVER_TWO_ERRORS=	perl -MFcntl=:flock -e  'open LOCK, ">", ".check_forever.lck" or die $$!; flock LOCK, LOCK_EX|LOCK_NB or die $$!; $$cmd=shift; while() { system($$cmd); exit 2 if $$? == 2; $$count = $$? == 0 ? 0 : $$count+1; exit 1 if $$count >= 2; sleep $(FOREVER_INTERVAL) } END { unlink ".check_forever.lck" }'
 
 check-forever:
 	-nice ${FOREVER_TWO_ERRORS} ${MAKE} check all
