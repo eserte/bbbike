@@ -1580,13 +1580,16 @@ sort-$(city).coords.data:
 ######################################################################
 # TEMPORARY BLOCKINGS LAYER
 
-temp_blockings/bbbike-temp-blockings.yml: temp_blockings/bbbike-temp-blockings.pl
+TEMP_BLOCKINGS_PL_TO_YML=\
 	$(PERL) -MYAML -e '\
 	    $$YAML::UseBlock = 1;\
 	    do $$ARGV[0];\
 	    die 1 if not @temp_blocking;\
 	    YAML::DumpFile($$ARGV[1], \@temp_blocking);\
-	' $> $@~
+	'
+
+temp_blockings/bbbike-temp-blockings.yml: temp_blockings/bbbike-temp-blockings.pl
+	$(TEMP_BLOCKINGS_PL_TO_YML) $> $@~
 	$(PERL) -MData::Compare -MData::Dumper -MYAML -e '\
 	    do $$ARGV[0];\
 	    $$y = YAML::LoadFile($$ARGV[1]);\
@@ -1601,18 +1604,29 @@ temp_blockings/bbbike-temp-blockings.yml: temp_blockings/bbbike-temp-blockings.p
 	mv -f $@~ $@
 	@$(READABLE) $@
 
-$(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd: temp_blockings/bbbike-temp-blockings.yml
+$(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.yml: temp_blockings/bbbike-temp-blockings-optimized.pl
+	$(TEMP_BLOCKINGS_PL_TO_YML) $> $@~
+	mv -f $@~ $@
+	@$(READABLE) $@
+
+TEMP_BLOCKINGS_YML_TO_BBD=\
 	$(PERL) -MYAML -e '\
-		$$x = YAML::LoadFile($$ARGV[0]);\
-		for (@$$x) {\
-		    $$d = $$_->{data};\
-		    next if not $$d;\
-		    $$t = $$_->{text};\
-		    $$t =~ s/[\n\t]/ /g;\
-		    $$d =~ s/^/$$t /gm;\
-		    print $$d;\
-		}\
-	' $> > $@
+	    $$x = YAML::LoadFile($$ARGV[0]);\
+	    for (@$$x) {\
+	        $$d = $$_->{data};\
+	        next if not $$d;\
+	        $$t = $$_->{text};\
+	        $$t =~ s/[\n\t]/ /g;\
+	        $$d =~ s/^(?!\#)/$$t /gm;\
+	        print $$d;\
+	    }\
+	    '
+
+$(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd: temp_blockings/bbbike-temp-blockings.yml
+	$(TEMP_BLOCKINGS_YML_TO_BBD) $> > $@
+
+$(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd: $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.yml
+	$(TEMP_BLOCKINGS_YML_TO_BBD) $> > $@
 
 ######################################################################
 # This will be removed someday if convert_orig_to_bbd is good enough
