@@ -601,7 +601,8 @@ userdel	1::inwork 10614,19907 10742,19632
          'text' => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
          'from' => undef,
          'id' => 1563,
-         'data' => 'userdel	1::inwork 12229,10014 12398,9938 12556,9862
+         'data' => '#: last_checked: 2009-04-15
+userdel	1::inwork 12229,10014 12398,9938 12556,9862
 ',
          'type' => 'gesperrt'
        },
@@ -760,8 +761,10 @@ userdel	q4::inwork; 15681,10801 15674,10851
          'text' => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
          'from' => undef,
          'id' => 1597,
-         'data' => 'userdel	q4::inwork; 14597,11069 14530,11137
+         'data' => '#: last_checked: 2009-05-08 vvv
+userdel	q4::inwork; 14597,11069 14530,11137
 userdel	q4::inwork 14530,11137 14465,11195
+#: last_checked ^^^
 ',
          'type' => 'handicap'
        },
@@ -770,7 +773,8 @@ userdel	q4::inwork 14530,11137 14465,11195
          'text' => 'Jessnerstr. wegen Bauarbeiten in Richtung Süden nicht befahrbar',
          'from' => undef,
          'id' => 1598,
-         'data' => 'userdel	q4::inwork; 15080,11905 14977,11754 14941,11689
+         'data' => '#: last_checked: 2009-04-25
+userdel	q4::inwork; 15080,11905 14977,11754 14941,11689
 ',
          'type' => 'handicap'
        },
@@ -1000,26 +1004,22 @@ userdel	2::inwork -50149,24689 -50048,24475 -49883,24097
          'text' => 'Bauarbeiten in der Pasewalker Str., Marienstraße ist eine Sackgasse, aber Radfahrer können passieren',
          'from' => undef,
          'id' => 1644,
-         'data' => 'userdel	q2::inwork 12095,20832 11686,21058
+         'data' => '#: by: Axel Schumacher:
+#: last_checked: 2009-05
+userdel	q2::inwork 12095,20832 11686,21058
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => undef,
-         'text' => 'Bauarbeiten in der Pasewalker Str., eingeschränkter Zugang zur Eweststr., aber Radfahrer können passieren',
-         'from' => undef,
-         'id' => 1645,
-         'data' => 'userdel	q3::inwork 12121,20969 12189,20959
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Bauarbeiten in der Wühlischstraße (Einbahnstraße Richtung Osten) und Holteistraße (Kreuzungsbereich zur Wühlischstraße ist gesperrt).',
          'from' => undef,
          'id' => 1646,
-         'data' => 'userdel	q4::inwork 14639,11512 14575,11407
+         'data' => '#: last_checked: 2009-05-09 vvv
+userdel	q4::inwork 14639,11512 14575,11407
 userdel	q4::inwork; 14759,11339 14674,11370 14575,11407
+#: last_checked: ^^^
 ',
          'type' => 'handicap'
        },

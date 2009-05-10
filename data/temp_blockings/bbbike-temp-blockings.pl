@@ -2201,7 +2201,7 @@ userdel auto	3 7039,12314 7383,12095 7460,12054 7663,11946
 EOF
      },
      { from  => undef, # 
-       until => 1148937435, # XXX zuletzt gesehen: 2006-03-19, laut http://archiv.tagesspiegel.de/archiv/29.05.2006/2555791.asp vorbei?
+       until => 1148937435, # 
        text  => 'Rosa-Luxemburg-Str. Richtung Schönhauser Tor wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -7861,7 +7861,7 @@ userdel	2::inwork 9670,5728 9457,5641 9357,5601 9147,5534
 EOF
      },
      { from  => undef, # 
-       until => 1214463306, # undef last-checked 2007-11-28 # war, ist nicht mehr: Abbiegen in Kleine Auguststr. und Joachimstr. nicht möglich;	3 9996,13678 10085,13684 10142,13556; 	3 10142,13556 10085,13684 10220,13691
+       until => 1214463306, # undef # war, ist nicht mehr: Abbiegen in Kleine Auguststr. und Joachimstr. nicht möglich;	3 9996,13678 10085,13684 10142,13556; 	3 10142,13556 10085,13684 10220,13691
        text  => 'Linienstr.: Baustelle zwischen Koppenplatz (östliche Straße) und Rosenthaler Str., Einbahnstraße',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -8411,7 +8411,7 @@ userdel	1::inwork 9000,11727 8837,11676 8553,11638
 EOF
      },
      { from  => 1195515804, #  undef
-       until => 1195515809, # XXX last_checked: 2007-08-04
+       until => 1195515809, #
        text  => 'Simon-Dach-Str./Wühlischstr.: Bauarbeiten, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
@@ -8513,7 +8513,7 @@ userdel	2::temp 14500,9856 14483,9843
 EOF
      },
      { from  => 1189968907, # 
-       until => 1189968910, # XXX last_checked: 2007-08-05
+       until => 1189968910, #
        text  => 'Holteistraße: Bauarbeiten, Fahrbahn ist nicht benutzbar',
        type  => 'handicap',
        data  => <<EOF,
@@ -10671,7 +10671,7 @@ userdel	2::inwork 10023,-8859 10115,-8276
 EOF
      },
      { from  => 1197233736, # 
-       until => 1199903161, # XXX last_checked: 2007-12-09 XXX nach den Bauarbeiten asphaltiert?
+       until => 1199903161, # XXX
        text  => 'Holteistraße: Bauarbeiten zwischen Sonntagstr. und Wühlischstr., Fahrbahn ist nicht benutzbar',
        type  => 'handicap',
        data  => <<EOF,
@@ -13241,10 +13241,11 @@ userdel	1::inwork -25441,21563 -25466,21523 -25542,21416
 EOF
      },
      { from  => undef, # 
-       until => undef, # last-checked. 2009-04-15
+       until => undef, #
        text  => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
        type  => 'gesperrt',
        data  => <<EOF,
+#: last_checked: 2009-04-15
 userdel	1::inwork 12229,10014 12398,9938 12556,9862
 EOF
      },
@@ -13524,12 +13525,14 @@ userdel	q4::inwork 57976,-10623 57656,-10684 57418,-10618 56989,-10997
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX last_checked: 2009-04-26
+       until => undef, # XXX
        text  => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
        type  => 'handicap',
        data  => <<EOF,
+#: last_checked: 2009-05-08 vvv
 userdel	q4::inwork; 14597,11069 14530,11137
 userdel	q4::inwork 14530,11137 14465,11195
+#: last_checked ^^^
 EOF
      },
      { from  => undef, # 
@@ -13537,6 +13540,7 @@ EOF
        text  => 'Jessnerstr. wegen Bauarbeiten in Richtung Süden nicht befahrbar',
        type  => 'handicap',
        data  => <<EOF,
+#: last_checked: 2009-04-25
 userdel	q4::inwork; 15080,11905 14977,11754 14941,11689
 EOF
      },
@@ -13922,11 +13926,13 @@ EOF
        text  => 'Bauarbeiten in der Pasewalker Str., Marienstraße ist eine Sackgasse, aber Radfahrer können passieren',
        type  => 'handicap',
        data  => <<EOF,
+#: by: Axel Schumacher:
+#: last_checked: 2009-05
 userdel	q2::inwork 12095,20832 11686,21058
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1241972889, #  undef
+       until => 1241972895, # undef -> Axel meint, dass hier kein Problem wäre
        text  => 'Bauarbeiten in der Pasewalker Str., eingeschränkter Zugang zur Eweststr., aber Radfahrer können passieren',
        type  => 'handicap',
        data  => <<EOF,
@@ -13934,12 +13940,14 @@ userdel	q3::inwork 12121,20969 12189,20959
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX last_checked: 2009-05-09
+       until => undef, #
        text  => 'Bauarbeiten in der Wühlischstraße (Einbahnstraße Richtung Osten) und Holteistraße (Kreuzungsbereich zur Wühlischstraße ist gesperrt).',
        type  => 'handicap',
        data  => <<EOF,
+#: last_checked: 2009-05-09 vvv
 userdel	q4::inwork 14639,11512 14575,11407
 userdel	q4::inwork; 14759,11339 14674,11370 14575,11407
+#: last_checked: ^^^
 EOF
      },
      { from  => 1241647200, # 2009-05-07 00:00
