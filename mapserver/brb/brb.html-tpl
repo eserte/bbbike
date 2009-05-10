@@ -131,7 +131,7 @@
       <p>
       <b>Bei Klick in die Karte:</b><br>
 [% IF style == "new" %]
-      <input type="hidden" name="mode" />
+      <input type="hidden" name="mode" value="browse" />
       <input type="hidden" name="zoomdir" />
       <label><input type="radio" name="mode_or_zoomdir" value="0" [% t('zoomdir_0_check') %] onclick="change_mode_or_zoomdir()">&nbsp;Karte bewegen</label>
         <small><a href="[% HELP %]#query" onclick="return help('move')">(Hilfe)</a></small>
