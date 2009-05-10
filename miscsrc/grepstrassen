@@ -127,7 +127,7 @@ LOOP_STREETS: while(1) {
     # Match NAME
     if (defined $name) { if ($r->[0] eq $name) { next if $v } else { next unless $v } }
     if (defined $namerx) { if ($r->[0] =~ $namerx) { next if $v } else { next unless $v } }
-    # Match CATEGORIY
+    # Match CATEGORY
     if (defined $cat) { if ($r->[2] eq $cat) { next if $v } else { next unless $v } }
     if (defined $catrx) { if ($r->[2] =~ $catrx) { next if $v } else { next unless $v } }
     my $dir = $s->get_directive;
