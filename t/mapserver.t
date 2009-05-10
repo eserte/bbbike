@@ -10,18 +10,18 @@ use strict;
 
 BEGIN {
     if (!eval q{
-	use WWW::Mechanize;
+	use WWW::Mechanize 1.54;
 	use WWW::Mechanize::FormFiller;
 	use Test::More;
 	use Sys::Hostname qw(hostname);
 	1;
     }) {
-	print "1..0 # skip: no WWW::Mechanize, WWW::Mechanize::FormFiller and/or Test::More modules\n";
+	print "1..0 # skip: no WWW::Mechanize (1.54), WWW::Mechanize::FormFiller and/or Test::More modules\n";
 	exit;
     }
 }
 
-if (hostname !~ m{^(biokovo|vran)\.herceg\.de} && hostname !~ /radzeit/i) {
+if (hostname !~ m{^(biokovo|biokovo-amd64|vran)\.herceg\.de} && hostname !~ /radzeit/i) {
     print "1..0 # skip: works only on vran/biokovo\n";
     exit;
 }
@@ -74,10 +74,12 @@ sub get_agent {
 
 sub is_on_mapserver_page {
     my($agent, $for) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
     like($agent->response->request->uri, qr{/mapserv}, "Show mapserver output for $for");
 
     my(@images) = $agent->find_all_images;
-    is(scalar(@images), 4, "Expected 4 images: map, ref, legend, scalebar");
+    is(scalar(@images), 4, "Expected 4 images: map, ref, legend, scalebar")
+	or diag($agent->content);
     for my $image (@images) {
 	my $image_url = $image->url;
 	$agent->get($image_url);
@@ -130,7 +132,7 @@ my $ms = get_config();
 	is_on_mapserver_page($agent, "...");
 
 	for my $layer (@layers) {
-	    $agent->form(1) if $agent->forms and scalar @{$agent->forms};
+	    $agent->form_number(1) if $agent->forms and scalar @{$agent->forms};
 	    { local $^W; for ($layer) { $agent->tick('layer', $_); };}
 	    $agent->submit;
 	    is_on_mapserver_page($agent, "Layer $layer ticked");
