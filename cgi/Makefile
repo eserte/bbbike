@@ -14,6 +14,7 @@ all:	rights symlinks
 
 symlinks:
 	[ -e bbbike.en.cgi  ] || ln -s bbbike.cgi  bbbike.en.cgi
+	[ -e bbbike2.cgi    ] || ln -s bbbike.cgi  bbbike2.cgi
 	[ -e bbbike2.en.cgi ] || ln -s bbbike2.cgi bbbike2.en.cgi
 
 biokovo.conf:
