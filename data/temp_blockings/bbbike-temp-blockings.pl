@@ -962,7 +962,7 @@ EOF
        text  => 'L 78; (Potsdamer Str.); OD Saarmund, Eisenbahnbrücke Brückensanierung Vollsperrung 04.10.2004-15.10.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -9626,-6603 -9301,-7466 -8492,-9628 -8331,-9887
+userdel	2 -9626,-6603 -9500,-6933 -9301,-7466 -8492,-9628 -8331,-9887
 EOF
      },
      { from  => 1096754400, # 2004-10-03 00:00
@@ -3266,7 +3266,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_77722',
        data  => <<EOF,
-userdel	1 12693,16700 12874,16631 13131,16525
+userdel	1 12693,16700 12857,16627 13104,16522
 EOF
      },
      { from  => 1138319651, # 2006-01-27 00:54
@@ -4062,7 +4062,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002598',
        data  => <<EOF,
-userdel	2 13131,16525 13045,16368
+userdel	2 13104,16522 13033,16387
 EOF
      },
      { from  => 1144339200, # 2006-04-06 18:00
@@ -4978,7 +4978,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004456',
        data  => <<EOF,
-userdel	q4::inwork; 13131,16525 13331,16424
+userdel	q4::inwork; 13104,16522 13331,16424
 EOF
      },
      { from  => 1153000800, # 2006-07-16 00:00
@@ -5665,7 +5665,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_77722',
        data  => <<EOF,
-userdel	1::inwork 12693,16700 12874,16631 13131,16525
+userdel	1::inwork 12693,16700 12857,16627 13104,16522
 EOF
      },
      { from  => 1156976256, # 2006-08-31 00:17
@@ -7188,7 +7188,7 @@ EOF
        text  => 'K 6905 Langerwisch-B 2 Potsdam Bahnübergang in der OD Wilhelmshorst Markierungsarbeiten Vollsperrung 08.03.2007-09.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -12451,-9641 -12751,-8997 -12835,-8819
+userdel	2::inwork -12401,-9721 -12751,-8997 -12835,-8819
 EOF
      },
      { from  => 1173567600, # 2007-03-11 00:00
@@ -13816,8 +13816,8 @@ userdel	q4::inwork 30179,13667 30795,13191
 EOF
      },
      { from  => 1240696800, # 2009-04-26 00:00
-       until => 1241820000, # 2009-05-09 00:00
-       text  => 'L 075 Mahlow - Großziethen zw. Kreuzg. B96A u. Kleinziethen Deckeninstandsetzung Vollsperrung 27.04.2009-08.05.2009 ',
+       until => 1242424800, # 2009-05-16 00:00
+       text  => 'L 075 Mahlow - Großziethen zw. Kreuzg. B96A u. Kleinziethen Deckeninstandsetzung Vollsperrung 27.04.2009-15.05.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 13506,-2809 13348,-3283 13289,-4660
@@ -13940,6 +13940,54 @@ EOF
        data  => <<EOF,
 userdel	q4::inwork 14639,11512 14575,11407
 userdel	q4::inwork; 14759,11339 14674,11370 14575,11407
+EOF
+     },
+     { from  => 1241647200, # 2009-05-07 00:00
+       until => 1241992800, # 2009-05-11 00:00
+       text  => 'B 112 Guben - Neuzelle zw. Abzw. Streichwitz u. Abzw. Wellmitz Arbeiten a. d. Erdgasleitung Vollsperrung 08.05.2009-10.05.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 97032,-36743 97016,-36424 96951,-34887
+EOF
+     },
+     { from  => 1242338400, # 2009-05-15 00:00
+       until => 1242597600, # 2009-05-18 00:00
+       text  => 'L 743 Motzen - Bestensee OL Motzen, Töpchiner Str. Straßenbau Vollsperrung 16.05.2009-17.05.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 23485,-22730 23239,-23484
+EOF
+     },
+     { from  => 1244066400, # 2009-06-04 00:00
+       until => 1244498400, # 2009-06-09 00:00
+       text  => 'B 087 Beeskow - Lübben zw. Birkenhainichen u. Biebersdorf Deckschichteinbau Vollsperrung 05.06.2009-08.06.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 52695,-45345 53268,-45117 55628,-43569
+EOF
+     },
+     { from  => 1241906400, # 2009-05-10 00:00
+       until => 1248300000, # 2009-07-23 00:00
+       text  => 'B 102 Wildberg - Neustadt-Dosse zw. Bückwitz u. Neustadt-Dosse Straßenbau Vollsperrung 11.05.2009-22.07.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -53139,50022 -54295,49682 -54769,49740 -54942,49716
+EOF
+     },
+     { from  => 1241906400, # 2009-05-10 00:00
+       until => 1242424800, # 2009-05-16 00:00
+       text  => 'K 7312 Passow - Fredersdorf zw. Passow u. Briest, Höhe Briester Weg Bau eines Durchlasses Vollsperrung 11.05.2009-15.05.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 55392,83218 55901,83313
+EOF
+     },
+     { from  => 1241906400, # 2009-05-10 00:00
+       until => 1253916000, # 2009-09-26 00:00
+       text  => 'L 029 E.-Thälmann-Straße OL Liepe, Erneuerung Stützmauer Vollsperrung 11.05.2009-25.09.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 48662,51337 49039,51453
 EOF
      },
     );

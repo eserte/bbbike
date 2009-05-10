@@ -301,6 +301,8 @@ Kleistpark: im Sommer bis 21 Uhr geöffnet, im Winter bis 18 Uhr	? 7192,9508 7246
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
 #: section ignorieren vvv
+#: by: Aniko Timar:
+Röbeler Weg: Kopfsteinpflaster, Q2	? 24831,10711 24826,10597 24759,10507
 #: by: Elisa (eli d):
 Str. 160: fester Sandweg, Schlaglöcher, Q2	? 12695,21336 12547,21372
 #: by: Katharina Kufen:
@@ -624,7 +626,8 @@ Am Park: Qualität zwischen Mauerweg und B2?	? -9413,7175 -9118,7286
 #: by: Tagesspiegel vom 2007-05-12:
 Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsabhängige Strecke; am Luisenberg laut Tagesspiegel asphaltiert	? -9560,4615 -9138,4086 -8868,3875 -8799,3778
 Mauerweg am Griebnitzsee: Qualität - vermutlich Asphalt?	? -9655,-298 -9562,-325 -9454,-434 -9365,-610
-Rehbrücke - Langerwisch: Qualität? genaue Wegführung?	? -9626,-6603 -9541,-6955 -9753,-7192 -9953,-7604 -10067,-8165 -10302,-8515 -10364,-8839 -10726,-9726 -11737,-10275 -12382,-10517
+#: XXX: Kommentar von Gunnar Pötzsch: "Radweg R1, Asphalt, Kopfsteinpflaster schlechter Qualität, teils Waldweg"
+Rehbrücke - Langerwisch: Qualität? genaue Wegführung?	? -9500,-6933 -9541,-6955 -9753,-7192 -9812,-7544 -9953,-7604 -10080,-8117 -10302,-8515 -10335,-8711 -10399,-8747 -10414,-8865 -10725,-9639 -11703,-10255 -11914,-10266 -12312,-10337
 Blankensee - Stangenhagen: laut "Berliner Umland" witterungsabhängige Strecke	? -6860,-20736 -7519,-21034 -8005,-21334 -9578,-21920 -9710,-22155
 Stangenhagen - Hennickendorf: Qualität? genaue Wegführung?	? -9710,-22155 -9815,-22769 -9453,-23518 -9291,-23955 -9853,-25278 -9403,-26688 -9375,-27159
 Kammerode - Elisabethhöhe: laut "Berliner Umland" witterungsabhängige Strecke	? -24174,-8751 -24541,-7940
@@ -1617,7 +1620,6 @@ Gessepfad: Qualität?	? 10955,501 10987,306
 Küstriner Str.: Qualität?	? 11232,309 11343,405 11488,531
 #: XXX möglicherweise Asphalt Q0 (J. Brehme, nicht ganz klar):
 Gaudacher Str.: Qualität?	? 11372,706 11419,789
-Ringelnatzstr.: Qualität?	? 10971,-499 10868,-539 10955,-769
 Happestr.: Qualität?	? 10955,-769 10953,-812 10968,-987 10976,-1070
 Schumpeterstr.: Qualität?	? 10979,-1093 10993,-1256 11003,-1303
 Happestr. - Schumpeterstr.: Gibt es für Radfahrer eine Verbindung?	? 10976,-1070 10979,-1093
@@ -1857,9 +1859,6 @@ Otto-Brahm-Str.: Qualität? Ist die Straße in Richtung Chopinstr. eine Einbahnstr
 Solonplatz: Qualität?	? 14286,15962 14252,16048
 Mahlerstr.: Qualität? Ist der mittlere Abschnitt für Autos gesperrt?	? 13623,15954 13667,15836 13701,15744 13739,15643 13776,15546
 Cohnstr.: Qualität?	? 13229,15692 13197,15734 13143,15764 13108,15798 13065,15825
-Goyastr.: Qualität? Einbahnstraße, auch für Radfahrer?	? 12859,16255 12900,16341
-Scharnweberstr. (Weißensee): Qualität? Einbahnstraße, auch für Radfahrer?	? 12797,16285 12841,16366
-Eilveser Str.: Qualität? Einbahnstraße, auch für Radfahrer?	? 12900,16341 12875,16350 12841,16366
 Gäblerstr.: Qualität?	? 13347,16447 13315,16548 13272,16672
 Hedwigstr. (Weißensee): Qualität?	? 13315,16548 13376,16600
 Herbert-Bayer-Str.: Qualität?	? 12923,16873 12898,16898 12846,16971 12911,17021
@@ -3230,7 +3229,6 @@ Martin-Albertz-Weg: Qualität?	? -3535,14408 -3587,14389
 Altstädter Ring - Münsingerstr./Martin-Albertz-Weg: Qualität?	? -3498,14413 -3535,14408
 Kurze Str. (Spandau): Qualität?	? -3582,15244 -3555,15377
 Kleine Mittelstr.: Qualität?	? -3536,15450 -3414,15460
-Schützenstr. (Spandau): Qualität?	? -2869,15782 -2859,15785 -2821,15850 -2638,16026 -2624,16049
 #: XXX: Eintrag aus plaetze-orig dann entfernen
 Roedeliusplatz: Qualität?	? 16158,12191 16246,12177
 Normannenstr.: Wie ist die Straße zwischen Magdalenenstr. und Schottstr. ausgeschildert: Roedeliusplatz oder Normannenstr.?	? 16159,12301 16227,12280 16276,12273
@@ -3472,3 +3470,18 @@ Barbenweg: Qualität?	? 23734,3255 23991,2941
 Asternplatz: Ist der nördliche Teil Richtung Limonenstr. auch als Asternplatz ausgeschildert? Qualität dieses Teils des Asternplatzes (Asphalt oder Kopfsteinpflaster)?	? 3754,4755 3740,4766 3716,4764 3707,4752 3710,4728
 Sacrower Allee (Groß Glienicke): Qualität im südlichen Abschnitt?	? -10036,5795 -10049,5467
 Richard-Wagner-Str. (Groß Glienicke): Qualität im westlichen Abschnitt?	? -10036,5795 -10142,5793 -10186,5791 -10234,5803 -10350,5878 -10469,5951
+#: XXX benötigt einen Eintrag in str_cont_ausnahme:
+Silzer Weg: Qualität?	? 5688,312 5795,371 5867,412 5925,417
+Silzer Weg: Qualität?	? 5929,389 6130,449
+Lechtaler Weg: Qualität?	? 6448,579 6439,783 6358,795
+Heiterwanger Weg: Qualität?	? 5893,617 5985,630 6089,643 6186,652 6280,662 6383,667
+Pertisauer Weg: Qualität?	? 6199,1104 6176,1023 6167,933 6163,822 6186,652
+Fügener Weg: Qualität?	? 6294,1078 6265,906 6259,835 6280,662
+Tuxer Steig: Qualität?	? 5878,729 5853,729 5742,671
+Sarntaler Weg: Qualität?	? 5836,509 5742,671 5710,726 5781,770 5781,800
+Verl. Georgenstr.: Qualität? Ist der für Autos gesperrte Abschnitt für Radfahrer befahrbar? Ist diese Abschnitt nachts unbeleuchtet?	? 6032,1348 5934,1310 5905,1294 5887,1270 5865,1190
+Pößnecker Str.: Qualität?	? 5934,1310 5863,1453 5785,1423 5706,1393
+Wallendorfer Weg: Qualität?	? 5785,1423 5825,1322 5848,1286 5887,1270
+Rühmkorffstr.: Qualität?	? 5697,1098 5620,1153 5573,1211
+Steinheilpfad: Qualität?	? 5585,1275 5573,1211 5455,1150
+Lichterfelder Ring - Mauerweg: existiert ein Radweg hier? Qualität? Nachts beleuchtet?	? 6585,591 6598,536 6600,150 6582,122 6498,71

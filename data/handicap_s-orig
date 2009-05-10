@@ -293,7 +293,7 @@ Wanzlikpfad: eng und kurvig, Fußgänger 	q3 13268,7801 13311,7915
 Hildburghauser Str.: Bahnunterführung für Fußgänger und Radfahrer	q1 4595,1387 4514,1402
 (zur Pfaueninselfähre): an schönen Tagen viele Fußgänger	q3 -8540,2209 -8561,2236 -8564,2276
 (Unterführung am S-Bhf. Kaulsdorf): Fußgänger	q4 22836,11994 22842,12070
-(Bürgipfad - Jenbacher Weg): Fußgänger	q2 5591,240 5671,118 5702,51
+(Bürgipfad - Jenbacher Weg): Fußgänger	q2 5591,240 5671,118 5703,74
 Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14454 19818,14064
 (Kolonie Friedrichsfelde Nord, entlang der Fernwärmeleitung): Fußgänger	q1 17774,12244 18129,12245 18180,12262 18216,12262
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16553,11921 16514,11911
@@ -1413,8 +1413,11 @@ Waldstr.: Bodenschwellen vor der Schule	q2 20540,4285 20623,4227
 #: corrected_by: srt/policy (q2 -> q1)
 Janitzkystr.: Siedlung, eng	q1 22763,6398 22889,6428 23002,6428 23027,6425 23131,6398 23192,6362 23242,6308
 Kaiser-Wilhelm-Str. - Langkofelweg: Fußgänger	q2 6961,3687 6998,3596
-#: by: Franziska (ushuaia):
+#: by: Franziska (ushuaia): vvv
 (Uferweg im Wröhmännerpark): Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q3 -3066,14718 -3006,14774 -2992,14850 -3008,14910 -3008,14992 -2965,15053 -2929,15082 -2955,15129
+#: note: "ruhige Wohnstraße, mehr oder weniger einspurig"
+Schützenstr. (Spandau): enge Straße	q1 -2869,15782 -2859,15785 -2821,15850 -2638,16026 -2624,16049
+#: by: ^^^
 #: by: Holger Gaul: vvv
 #: note: wird vom Ordnungsamt kontrolliert
 Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q3- 5228,8729 5228,8703 5241,8692 5240,8637 5219,8635 5185,8647 5188,8694 5204,8702 5206,8731
@@ -1441,3 +1444,5 @@ Erna-Sack-Str.: enge Straße	q1 -7486,13321 -7496,13214
 (Hibiskusweg - Romain-Rolland-Str.): gemeinsamer Rad/Fußweg	q1 13247,17825 13214,17742
 #: by: Beate Leibe:
 Treutelstr.: enge Straße	q1 5422,19725 5345,19734 5318,19723
+#: by: Franz Puder:
+Jenbacher Weg: enge Straße	q1 6402,578 6411,533 6180,376 5987,256 5800,138 5703,74 5671,52

@@ -931,7 +931,15 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
          'type' => 'gesperrt'
        },
        undef,
-       undef,
+       {
+         'until' => 1242424800,
+         'text' => 'L 075 Mahlow - Großziethen zw. Kreuzg. B96A u. Kleinziethen Deckeninstandsetzung Vollsperrung 27.04.2009-15.05.2009 ',
+         'from' => 1240696800,
+         'id' => 1632,
+         'data' => 'userdel	2::inwork 13506,-2809 13348,-3283 13289,-4660
+',
+         'type' => 'gesperrt'
+       },
        undef,
        {
          'until' => 1251756000,
@@ -1014,6 +1022,60 @@ userdel	2::inwork -50149,24689 -50048,24475 -49883,24097
 userdel	q4::inwork; 14759,11339 14674,11370 14575,11407
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1241992800,
+         'text' => 'B 112 Guben - Neuzelle zw. Abzw. Streichwitz u. Abzw. Wellmitz Arbeiten a. d. Erdgasleitung Vollsperrung 08.05.2009-10.05.2009 ',
+         'from' => 1241647200,
+         'id' => 1647,
+         'data' => 'userdel	2::inwork 97032,-36743 97016,-36424 96951,-34887
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1242597600,
+         'text' => 'L 743 Motzen - Bestensee OL Motzen, Töpchiner Str. Straßenbau Vollsperrung 16.05.2009-17.05.2009 ',
+         'from' => 1242338400,
+         'id' => 1648,
+         'data' => 'userdel	q4::inwork 23485,-22730 23239,-23484
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1244498400,
+         'text' => 'B 087 Beeskow - Lübben zw. Birkenhainichen u. Biebersdorf Deckschichteinbau Vollsperrung 05.06.2009-08.06.2009 ',
+         'from' => 1244066400,
+         'id' => 1649,
+         'data' => 'userdel	2::inwork 52695,-45345 53268,-45117 55628,-43569
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1248300000,
+         'text' => 'B 102 Wildberg - Neustadt-Dosse zw. Bückwitz u. Neustadt-Dosse Straßenbau Vollsperrung 11.05.2009-22.07.2009 ',
+         'from' => 1241906400,
+         'id' => 1650,
+         'data' => 'userdel	2::inwork -53139,50022 -54295,49682 -54769,49740 -54942,49716
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1242424800,
+         'text' => 'K 7312 Passow - Fredersdorf zw. Passow u. Briest, Höhe Briester Weg Bau eines Durchlasses Vollsperrung 11.05.2009-15.05.2009 ',
+         'from' => 1241906400,
+         'id' => 1651,
+         'data' => 'userdel	2::inwork 55392,83218 55901,83313
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1253916000,
+         'text' => 'L 029 E.-Thälmann-Straße OL Liepe, Erneuerung Stützmauer Vollsperrung 11.05.2009-25.09.2009 ',
+         'from' => 1241906400,
+         'id' => 1652,
+         'data' => 'userdel	2::inwork 48662,51337 49039,51453
+',
+         'type' => 'gesperrt'
        }
      
 );
