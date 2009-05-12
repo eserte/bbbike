@@ -783,6 +783,7 @@ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragez
 		qualitaet_l-orig \
 		handicap_s-orig \
 		handicap_l-orig \
+		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd \
 		${PERSISTENTTMPDIR}/XXX-indoor.bbd \
 		${PERSISTENTTMPDIR}/XXX-outdoor.bbd \
 		${PERSISTENTTMPDIR}/XXX-other.bbd
