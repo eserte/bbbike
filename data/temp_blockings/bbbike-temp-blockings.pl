@@ -8978,7 +8978,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006015',
        data  => <<EOF,
-userdel	2::temp 6442,22240 6492,22113 6485,21955 6420,21828 6337,21774 6093,21648 5934,21513
+userdel	2::temp 6442,22240 6492,22113 6485,21955 6373,21810 6320,21777 6093,21648 5934,21513
 EOF
      },
      { from  => 1184018400, # 2007-07-10 00:00
@@ -13245,7 +13245,8 @@ EOF
        text  => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2009-04-15
+#: last_checked: 2009-05-11
+#: check_frequency: 14d
 userdel	1::inwork 12229,10014 12398,9938 12556,9862
 EOF
      },
@@ -13529,7 +13530,7 @@ EOF
        text  => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-05-08 vvv
+#: last_checked: 2009-05-12 vvv
 userdel	q4::inwork; 14597,11069 14530,11137
 userdel	q4::inwork 14530,11137 14465,11195
 #: last_checked ^^^
@@ -13572,8 +13573,8 @@ userdel	q4::inwork; 7378,14559 7180,14419 7132,14375 6992,14251 6807,14093 6730,
 EOF
      },
      { from  => 1238450400, # 2009-03-31 00:00
-       until => 1243634400, # 2009-05-30 00:00
-       text  => 'B 002 Wittenberg - LG - Treuenbrietzen OD Marzahna Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 01.04.2009-29.05.2009 ',
+       until => 1254348000, # 2009-10-01 00:00
+       text  => 'B 002 Wittenberg - LG - Treuenbrietzen OD Marzahna Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 01.04.2009-30.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork; -32313,-49192 -31201,-45781
@@ -13645,7 +13646,7 @@ userdel	q4::inwork -25627,-35335 -25322,-35457
 EOF
      },
      { from  => 1239573600, # 2009-04-13 00:00
-       until => 1247522400, # 2009-07-14 00:00
+       until => 1242160146, # 2009-07-14 00:00 1247522400
        text  => 'B 158 Blumberg - Werneuchen zw. Blumberg u. Seefeld Deckenerneuerung Vollsperrung 14.04.2009-13.07.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -13975,7 +13976,7 @@ userdel	2::inwork 52695,-45345 53268,-45117 55628,-43569
 EOF
      },
      { from  => 1241906400, # 2009-05-10 00:00
-       until => 1248300000, # 2009-07-23 00:00
+       until => 1242160096, # 2009-07-23 00:00 1248300000
        text  => 'B 102 Wildberg - Neustadt-Dosse zw. Bückwitz u. Neustadt-Dosse Straßenbau Vollsperrung 11.05.2009-22.07.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -13992,10 +13993,26 @@ EOF
      },
      { from  => 1241906400, # 2009-05-10 00:00
        until => 1253916000, # 2009-09-26 00:00
-       text  => 'L 029 E.-Thälmann-Straße OL Liepe, Erneuerung Stützmauer Vollsperrung 11.05.2009-25.09.2009 ',
+       text  => 'L 029 Oderberg - Niederfinow OD Liepe, E.-Thälmann-Straße Erneuerung Stützmauer Vollsperrung 11.05.2009-25.09.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 48662,51337 49039,51453
+EOF
+     },
+     { from  => 1243807200, # 2009-06-01 00:00
+       until => 1248300000, # 2009-07-23 00:00
+       text  => 'B 102 Wildberg - Neustadt-Dosse Kreuzungsber. B 5 bei Bückwitz Kreiselneubau Vollsperrung 02.06.2009-22.07.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -53139,50022 -52854,50094
+EOF
+     },
+     { from  => 1241906400, # 2009-05-10 00:00
+       until => 1244930400, # 2009-06-14 00:00
+       text  => 'B 158 Blumberg - Werneuchen zw. Seefeld und Werneuchen Deckenerneuerung Vollsperrung 11.05.2009-13.06.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 29103,24437 29528,24348 29791,24336 31905,25433 32229,25382
 EOF
      },
     );

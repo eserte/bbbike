@@ -16,7 +16,7 @@
 # PI;  : path instruction (genauere Wegbeschreibung)
 # P0;  : dieser Weg ist gesperrt (z.B. Abbiegen nicht möglich), aber eine
 #        Umfahrung ist möglich ... siehe auch Kategorie "3" in gesperrt-orig
-#
+# 
 Rasthof Avus: zweite Möglichkeit nach rechts	CS; 1957,10426 1894,10390
 bereits an der Ampel am Ringcenter die Straßenseite wechseln	PI; 15361,12071 15294,11964 15317,11953
 bereits an der Ampel "Am Containerbahnhof" die Straßenseite wechseln	PI; 15420,12178 15443,12222 15350,12270
@@ -367,3 +367,9 @@ Heerstr. - Preußenallee: bereits an der Kreuzung Teufelsseestr./Heerstr. die Str
 Preußenallee - Heerstr.: auf der linken Gehwegseite bis zur Ampel Länderallee vorfahren und dann die Straßenseite wechseln	CP; 551,11462 585,11256 704,11273
 Schorlemerallee - Gregor-Mendel-Str.: etwa 20 Meter vor der Kreuzung die Straßenseite wechseln	PI; 3459,6484 3664,6523 3650,6665
 Gregor-Mendel-Str. - Schorlemerallee: Überquerungsmöglichkeit ca. 20 Meter zur rechten Seite	CP; 3650,6665 3664,6523 3836,6550
+#: by: norbert winkelmann: vvv
+Welzower Steig: links des Grabens halten	CP; 6529,21620 6508,21646 6478,21652
+Welzower Steig: links des Grabens halten	CP; 6223,21952 6257,22005 6111,22155
+Welzower Steig: rechts des Grabens halten	CP; 6111,22155 6257,22005 6223,21952
+Welzower Steig: rechts des Grabens halten	CP; 6478,21652 6508,21646 6529,21620
+#: by: ^^^
