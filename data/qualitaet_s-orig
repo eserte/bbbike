@@ -1763,7 +1763,10 @@ Mozartstr. (Köpenick): sandige Straße	Q2- 21774,6880 21864,6928
 Bachstr. (Köpenick): asphaltiert	Q0 21861,6719 21785,6703 21700,6700
 #: by: ^^^
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20061025.0935.49340.html
+#: confirmed_by: Alexander Lucas:
 Wassermannstr.: asphaltiert	Q0 20776,3753 20637,3919 20583,3983 20522,4056 20467,4122 20410,4192
+#: by: Alexander Lucas:
+Wassermannstr.: asphaltiert	Q0 20924,3577 20776,3753
 Köbisstr.: glatte Gehwegplatten	Q0 7160,11225 6851,11346
 Hiroshimasteg: unebene Holzbohlen	Q1 7251,11202 7251,11181 7248,11143
 Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0- 11921,11185 11950,11157
@@ -3803,9 +3806,12 @@ Freizeitpark Lübars: befestigter Sandweg mittlerer Güte	Q1 7932,22562 8062,22631
 #: note: die ADFC-Karte sagt hier "mäßig geeignet":
 #: corrected_by: srt (Q2 -> Q1)
 Schillerstr.: Betonplatten	Q1 10063,20493 10178,20525 10309,20562 10409,20592 10537,20633 10635,20693 10705,20739 10743,20764
-#: note: die ADFC-Karte sagt hier "mäßig geeignet":
-#: XXX: laut Axel Schumacher sind Teile der Straße ausgebessert worden, welche genau?
-Beuthstr.: Asphalt mit Löchern	Q1 10843,20301 10786,20272 10653,20200 10534,20144 10435,20098 10309,20032 10137,19993
+#: by: Axel Schumacher: vvv
+#: note: die ADFC-Karte sagt hier "mäßig geeignet": vvv
+Beuthstr.: Asphalt	Q0 10843,20301 10786,20272
+Beuthstr.: Asphalt mit Löchern	Q1 10786,20272 10653,20200 10534,20144 10435,20098 10309,20032 10137,19993
+#: note ^^^
+#: by: ^^^
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2 14934,15860 14802,15857 14720,15905 14609,15921
 #: note: laut ADFC-Karte gut geeignet
 Friedhofstr.: sehr guter Asphalt	Q0 15534,15675 15598,15793
@@ -4022,6 +4028,7 @@ Kühlebornweg: Asphalt	Q0 5004,4709 5075,4600 5161,4664
 #: by: Reinhard (roesel):
 #: note: laut anonymen Eintrag ebenfalls asphaltiert
 #: confirmed_by: srt (zumindest westliche Seite):
+#: confirmed_by: Alexander Lucas:
 Radickestr.: Asphalt	Q0 20064,3278 20166,3344 20238,3390 20264,3406 20301,3432 20367,3479 20451,3538 20499,3572 20592,3633 20683,3693 20776,3753 20857,3817
 #: by: Andi Walther:
 #: XXX mit "schlechtes Kopfsteinpflaster" und "18km/h" notiert
@@ -4383,6 +4390,7 @@ Klopstockstr.: Kopfsteinpflaster	Q1 -1710,3676 -1683,3723 -1629,3761 -1509,3740 
 #: by: Andreas (ansh...):
 Lüdenscheider Weg: Beton	Q1 -1037,15482 -1389,15285
 #: by: Claudia (loest):
+#: confirmed_by: Alexander Lucas:
 Zinsgutstr.: Asphalt	Q0 20692,3951 20857,3817 21049,3657 21119,3572 21153,3484
 #: by: dennis:
 #: note: "Felgenkiller"
@@ -8241,6 +8249,7 @@ Ravenweg: guter Asphalt	Q0 -1097,2546 -1006,2269 -982,2192
 #: by: XBowe:
 #: note: "enge Straße", aber ohne schlechtere Kategorisierung
 #: confirmed_by: srt (ab Büchnerweg Richtung S)
+#: confirmed_by: Alexander Lucas:
 Nipkowstr.: guter Asphalt	Q0 20352,3744 20499,3572 20644,3395 20717,3310 20772,3244 20832,3170
 #: by: Miriam (miri.cat):
 Nienkemperstr.: guter Beton	Q0 1658,1852 1640,1922 1709,2186 1812,2594
@@ -8353,8 +8362,12 @@ Angelikaweg: Beton, stellenweise leichte Aufwerfungen der Betonplatten	Q1 15537,
 #: by: Dietmar Schulz:
 #: note: frühere Baustraße
 (Hibiskusweg - Romain-Rolland-Str.): Asphalt	Q0 13247,17825 13214,17742
-#: by: Alexander Lucas:
+#: by: Alexander Lucas: vvv
 Süßer Grund: guter Asphalt	Q0 20304,3714 20451,3538 20597,3364
+Gellertstr.: Asphalt	Q0 20082,3578 20148,3490 20238,3390
+Anna-Seghers-Str.: Asphalt	Q0 20315,3181 20388,3100
+Moissistr.: Asphalt	Q0 20405,3235 20478,3156
+#: by: ^^^
 #: by: Oliver Haase:
 #: note: "sehr hohe Bordsteinkanten aus so alten Steinen; Wenn man da mit z.B. einem Rennrad drauffahren wollte, müsste man nachher die 8 aus dem Vorderrad entfernen."
 Mottlaupfad: Beton mit Kanten	Q1- -1901,23554 -2070,23631

@@ -1023,15 +1023,7 @@ userdel	q4::inwork; 14759,11339 14674,11370 14575,11407
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1241992800,
-         'text' => 'B 112 Guben - Neuzelle zw. Abzw. Streichwitz u. Abzw. Wellmitz Arbeiten a. d. Erdgasleitung Vollsperrung 08.05.2009-10.05.2009 ',
-         'from' => 1241647200,
-         'id' => 1647,
-         'data' => 'userdel	2::inwork 97032,-36743 97016,-36424 96951,-34887
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1242597600,
          'text' => 'L 743 Motzen - Bestensee OL Motzen, Töpchiner Str. Straßenbau Vollsperrung 16.05.2009-17.05.2009 ',
