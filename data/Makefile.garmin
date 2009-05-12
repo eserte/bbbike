@@ -127,8 +127,9 @@ ${CGPSMAPPER}:
 
 # -Xmx1024m was needed for hessen.osm (maybe 512m would also be enough)
 MKGMAP_VER=590
-#MKGMAP_VER=1011 # XXX builds berlin, but stops at leipzig, it seems
+MKGMAP_ROUTABLE_VER=1034 # XXX builds berlin, but stops at leipzig, it seems
 MKGMAP=	java -Xmx1024m -jar /usr/local/src/mkgmap-r${MKGMAP_VER}/mkgmap.jar
+MKGMAP_ROUTABLE=	java -Xmx1024m -jar /usr/local/src/mkgmap-r${MKGMAP_ROUTABLE_VER}/mkgmap.jar
 MAPSOURCE_DE_IMG=$(HOME)/doc/map/mapsource_de.img
 
 combined-map:	${PERSISTENTTMPDIR}/gmapsupp.img
@@ -139,6 +140,7 @@ combined-map:	${PERSISTENTTMPDIR}/gmapsupp.img
 
 GMAPSUPP_SRC=	${PERSISTENTTMPDIR}/bbbikequal.img \
 		${PERSISTENTTMPDIR}/berlin_osm.img \
+		${PERSISTENTTMPDIR}/berlin_ring_osm_routable.img \
 		${PERSISTENTTMPDIR}/leipzig_osm.img \
 		${PERSISTENTTMPDIR}/hessen_osm.img
 
@@ -153,17 +155,36 @@ ${PERSISTENTTMPDIR}/gmapsupp.img:	${GMAPSUPP_SRC}
 	cd ${PERSISTENTTMPDIR} && \
 	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC}
 
-${PERSISTENTTMPDIR}/berlin_osm.img:
+${PERSISTENTTMPDIR}/berlin_combined.osm:    ${MISCDIR}/download/osm/berlin/*.osm		\
+					    ${MISCDIR}/download/osm/koenigs_wusterhausen/*.osm	\
+					    ${MISCDIR}/download/osm/teltow/*.osm		\
+					    ${MISCDIR}/download/osm/uckermark/*.osm		\
+					    ${MISCDIR}/download/osm/usedom/*.osm
 	${COMBINE_OSM} \
-	    ${MISCDIR}/download/osm/berlin \
-	    ${MISCDIR}/download/osm/koenigs_wusterhausen \
-	    ${MISCDIR}/download/osm/teltow \
-	    ${MISCDIR}/download/osm/uckermark \
-	    ${MISCDIR}/download/osm/usedom \
-	        > ${PERSISTENTTMPDIR}/berlin_combined.osm
+		${MISCDIR}/download/osm/berlin			\
+		${MISCDIR}/download/osm/koenigs_wusterhausen	\
+		${MISCDIR}/download/osm/teltow			\
+		${MISCDIR}/download/osm/uckermark		\
+		${MISCDIR}/download/osm/usedom			\
+	    > $@~
+	mv $@~ $@
+
+BERLIN_RING_OSM_FILES!=	tcsh -c 'echo ${MISCDIR}/download/osm/berlin/download_13.{2,3,4,5}*,52.{4,5}*'
+${PERSISTENTTMPDIR}/berlin_ring_osm.osm:
+	${COMBINE_OSM} ${BERLIN_RING_OSM_FILES} > $@~
+	mv $@~ $@
+
+${PERSISTENTTMPDIR}/berlin_osm.img:	${PERSISTENTTMPDIR}/berlin_combined.osm
 	cd ${PERSISTENTTMPDIR} && ( \
 	    ${MKGMAP} --description="Berlin und Umgebung OSM" --mapname=12117001 --country-name=Germany --country-abbr=DE --region-name=Berlin --region-abbr=BER --net --transparent berlin_combined.osm && \
 	    mv 12117001.img berlin_osm.img )
+
+# mkgmap 1034 crashes on my FreeBSD system with the berlin.osm.bz2 data
+# But it works for a subset of Berlin
+${PERSISTENTTMPDIR}/berlin_ring_osm_routable.img:	${PERSISTENTTMPDIR}/berlin_ring_osm.osm
+	cd ${PERSISTENTTMPDIR} && ( \
+	    ${MKGMAP_ROUTABLE} --description="Berlin Ring Routable OSM" --mapname=12117004 --country-name=Germany --country-abbr=DE --region-name=Berlin --region-abbr=BER --net --route --transparent berlin_ring_osm.osm && \
+	    mv 12117004.img berlin_ring_osm_routable.img )
 
 ${PERSISTENTTMPDIR}/leipzig_osm.img:
 	${COMBINE_OSM} ${MISCDIR}/download/osm/leipzig > ${PERSISTENTTMPDIR}/leipzig.osm
