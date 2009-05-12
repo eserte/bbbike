@@ -137,19 +137,19 @@ if ($do_xxx) {
     }
 
     {
-	pass("-- CS;-Kommentar Wuhlewanderweg/Lidl-Parkplatz --");
+	pass("-- CS;-Kommentar Hausdurchfahrt Müggelstr. --");
 
 	no warnings qw(qw);
 	my $route = [ map { [ split /,/ ] }
 		      qw(
-			 21709,5543 21626,5667 21744,5804 21846,5856
+			 14794,11770 14855,11737 14837,11706 14764,11591
 			) ];
 	my $comment;
 	($comment) = $net->get_point_comment($route, 0, undef);
 	is($comment, undef, "No CS; comment for first point in route")
 	    or diag $comment;
 	($comment) = $net->get_point_comment($route, 1, undef);
-	like($comment, qr{zufahrt}i, "CS; comment for beginning point in feature")
+	like($comment, qr{hausdurchfahrt}i, "CS; comment for beginning point in feature")
 	    or diag $comment;
 	($comment) = $net->get_point_comment($route, 2, undef);
 	is($comment, undef, "No CS; comment for end point in feature")
