@@ -35,6 +35,8 @@ my $next_node_id = 1;
 my $next_way_id = 1;
 my %node_id;
 
+my %gesperrt;
+
 my %cat_to_highway = ('B' => 'primary',
 		      'HH' => 'primary',
 		      'H' => 'secondary',
@@ -42,20 +44,37 @@ my %cat_to_highway = ('B' => 'primary',
 		      'NN' => 'cycleway', # XXX
 		     );
 
+my $gesperrt = Strassen->new_stream("$datadir/gesperrt");
+$gesperrt->read_stream
+    (sub {
+	 my($r, $dir) = @_;
+	 my($cat) = $r->[Strassen::CAT] =~ m{^([^:]+)};
+	 my @node_ids = map {
+	     my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_));
+	     my $pxy = $px.','.$py;
+	     my $node_id = maybe_add_node($pxy);
+	     $node_id;
+	 } @{ $r->[Strassen::COORDS] };
+	 for my $node_id_i (1 .. $#node_ids) {
+	     if ($cat eq '1' || $cat eq '2') {
+		 $gesperrt{$node_ids[$node_id_i-1].' '.$node_ids[$node_id_i]} = $cat;
+	     }
+	 }
+     });
+
 my $s = Strassen->new_stream("$datadir/strassen");
 $s->read_stream
     (sub {
 	 my($r, $dir) = @_;
 
+	 # XXX split street according to oneway tag
+	 # XXX reverse street coords if needed
+
 	 my @node_ids;
 	 for my $sxy (@{ $r->[Strassen::COORDS] }) {
 	     my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $sxy));
 	     my $pxy = $px.','.$py;
-	     my $this_node_id = $node_id{$pxy};
-	     if (!defined $this_node_id) {
-		 $this_node_id = $node_id{$pxy} = $next_node_id++;
-		 print $nodefh qq{<node id="$this_node_id" lat="$py" lon="$px" user="eserte" visible="true" />\n};
-	     }
+	     my $this_node_id = maybe_add_node($pxy);
 	     push @node_ids, $this_node_id;
 	 }
 
@@ -85,5 +104,15 @@ while(<$wayfh>) {
     print $_;
 }
 print qq{</osm>\n};
+
+sub maybe_add_node {
+    my($pxy) = @_;
+    my $this_node_id = $node_id{$pxy};
+    if (!defined $this_node_id) {
+	$this_node_id = $node_id{$pxy} = $next_node_id++;
+	print $nodefh qq{<node id="$this_node_id" lat="$py" lon="$px" user="eserte" visible="true" />\n};
+    }
+    $this_node_id;
+}
 
 __END__
