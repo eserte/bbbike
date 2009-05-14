@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.72 2009/05/10 21:00:35 eserte Exp $
+# $Id: Makefile,v 1.73 2009/05/14 07:02:40 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -575,8 +575,12 @@ permissions:
 	chmod ugo+rx,ug+w tmp
 .if exists(/etc/debian_version)
 	[ "`stat --format=%G tmp`" = "www-data" ] || sudo chgrp www-data tmp && true
-.elif ${.FreeBSD} == true
-	echo "do something"
+.endif
+
+# XXX not used by default, because it disturbs the normal deployment
+# process
+permissions-FreeBSD:
+.if ${.FreeBSD} == true
 	[ "`stat -f %Sg tmp`" = "www" ] || sudo chgrp www tmp && true
 .endif
 
