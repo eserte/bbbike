@@ -24,6 +24,52 @@ BEGIN {
     }
 }
 
+if ($WWW::Mechanize::VERSION == 1.54) {
+    package WWW::Mechanize;
+    *_update_page = sub {
+# kept original WWW::Mechanize indentation:
+    my ($self, $request, $res) = @_;
+
+    $self->{req} = $request;
+    $self->{redirected_uri} = $request->uri->as_string;
+
+    $self->{res} = $res;
+
+    $self->{status}  = $res->code;
+    $self->{base}    = $res->base;
+    $self->{ct}      = $res->content_type || '';
+
+    if ( $res->is_success ) {
+        $self->{uri} = $self->{redirected_uri};
+        $self->{last_uri} = $self->{uri};
+    }
+
+    if ( $res->is_error ) {
+        if ( $self->{autocheck} ) {
+            $self->die( 'Error ', $request->method, 'ing ', $request->uri, ': ', $res->message );
+        }
+    }
+
+    $self->_reset_page;
+
+    # Try to decode the content. Undef will be returned if there's nothing to decompress.
+    # See docs in HTTP::Message for details. Do we need to expose the options there?
+    my $content = $res->decoded_content(charset => 'none');
+    $content = $res->content if (not defined $content);
+
+    $content .= _taintedness();
+
+    if ($self->is_html) {
+        $self->update_html($content);
+    }
+    else {
+        $self->{content} = $content;
+    }
+
+    return $res;
+} # _update_page
+} # monkey-patch end
+
 use FindBin;
 use lib ("$FindBin::RealBin",
 	 "$FindBin::RealBin/..",
