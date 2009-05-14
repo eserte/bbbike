@@ -42,6 +42,7 @@ my %cat_to_highway = ('B' => 'primary',
 		      'H' => 'secondary',
 		      'N' => 'residential',
 		      'NN' => 'cycleway', # XXX
+		      '?' => 'trunk', # cheating
 		     );
 
 my $gesperrt = Strassen->new_stream("$datadir/gesperrt");
@@ -51,8 +52,7 @@ $gesperrt->read_stream
 	 my($cat) = $r->[Strassen::CAT] =~ m{^([^:]+)};
 	 my @node_ids = map {
 	     my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_));
-	     my $pxy = $px.','.$py;
-	     my $node_id = maybe_add_node($pxy);
+	     my $node_id = maybe_add_node($px,$py);
 	     $node_id;
 	 } @{ $r->[Strassen::COORDS] };
 	 for my $node_id_i (1 .. $#node_ids) {
@@ -62,33 +62,38 @@ $gesperrt->read_stream
 	 }
      });
 
-my $s = Strassen->new_stream("$datadir/strassen");
-$s->read_stream
-    (sub {
-	 my($r, $dir) = @_;
+Strassen->new_stream("$datadir/strassen")->read_stream(\&handle_strassen_like);
+Strassen->new_stream("$datadir/landstrassen")->read_stream(\&handle_strassen_like);
+Strassen->new_stream("$datadir/landstrassen2")->read_stream(\&handle_strassen_like);
+Strassen->new_stream("$datadir/../tmp/fragezeichen-nextcheck.bbd")->read_stream(\&handle_strassen_like);
 
-	 # XXX split street according to oneway tag
-	 # XXX reverse street coords if needed
+sub handle_strassen_like {
+    my($r, $dir) = @_;
 
-	 my @node_ids;
-	 for my $sxy (@{ $r->[Strassen::COORDS] }) {
-	     my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $sxy));
-	     my $pxy = $px.','.$py;
-	     my $this_node_id = maybe_add_node($pxy);
-	     push @node_ids, $this_node_id;
-	 }
+    # XXX split street according to oneway tag
+    # XXX reverse street coords if needed
 
-	 if (@node_ids) {
-	     print $wayfh qq{<way id="$next_way_id" visible="true">\n};
-	     for my $node_id (@node_ids) {
-		 print $wayfh qq{  <nd ref="$node_id"/>\n};
-	     }
-	     print $wayfh qq{  <tag k="name" v="$r->[Strassen::NAME]" />\n};
-	     print $wayfh qq{  <tag k="highway" v="$cat_to_highway{$r->[Strassen::CAT]}" />\n};
-	     print $wayfh qq{</way>\n};
-	     $next_way_id++;
-	 }
-     });
+    my @node_ids;
+    for my $sxy (@{ $r->[Strassen::COORDS] }) {
+	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $sxy));
+	my $this_node_id = maybe_add_node($px, $py);
+	push @node_ids, $this_node_id;
+    }
+
+    if (@node_ids) {
+	print $wayfh qq{<way id="$next_way_id" visible="true">\n};
+	for my $node_id (@node_ids) {
+	    print $wayfh qq{  <nd ref="$node_id"/>\n};
+	}
+	(my $name = $r->[Strassen::NAME]) =~ s{"}{&#34;}g; # XXX hack
+	$name =~ s{<}{&#60;}g;
+	$name =~ s{>}{&#62;}g;
+	print $wayfh qq{  <tag k="name" v="$name" />\n};
+	print $wayfh qq{  <tag k="highway" v="$cat_to_highway{$r->[Strassen::CAT]}" />\n};
+	print $wayfh qq{</way>\n};
+	$next_way_id++;
+    }
+}
 
 seek $nodefh, 0, SEEK_SET
     or die $!;
@@ -106,7 +111,8 @@ while(<$wayfh>) {
 print qq{</osm>\n};
 
 sub maybe_add_node {
-    my($pxy) = @_;
+    my($px, $py) = @_;
+    my $pxy = $px.','.$py;
     my $this_node_id = $node_id{$pxy};
     if (!defined $this_node_id) {
 	$this_node_id = $node_id{$pxy} = $next_node_id++;
