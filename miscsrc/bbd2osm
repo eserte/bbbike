@@ -1,0 +1,89 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+
+use Fcntl qw(SEEK_SET);
+use File::Temp qw(tempfile);
+use Karte::Polar;
+use Karte::Standard;
+use Strassen::Core;
+
+my $datadir = shift || "$FindBin::RealBin/../data";
+
+my($nodefh, $nodefile) = tempfile(UNLINK => 1, SUFFIX => "_node.xml");
+binmode $nodefh, ':utf8';
+my($wayfh, $wayfile) = tempfile(UNLINK => 1, SUFFIX => "_way.xml");
+binmode $wayfh, ':utf8';
+
+my $next_node_id = 1;
+my $next_way_id = 1;
+my %node_id;
+
+my %cat_to_highway = ('B' => 'primary',
+		      'HH' => 'primary',
+		      'H' => 'secondary',
+		      'N' => 'residential',
+		      'NN' => 'cycleway', # XXX
+		     );
+
+my $s = Strassen->new_stream("$datadir/strassen");
+$s->read_stream
+    (sub {
+	 my($r, $dir) = @_;
+
+	 my @node_ids;
+	 for my $sxy (@{ $r->[Strassen::COORDS] }) {
+	     my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $sxy));
+	     my $pxy = $px.','.$py;
+	     my $this_node_id = $node_id{$pxy};
+	     if (!defined $this_node_id) {
+		 $this_node_id = $node_id{$pxy} = $next_node_id++;
+		 print $nodefh qq{<node id="$this_node_id" lat="$py" lon="$px" user="eserte" visible="true" />\n};
+	     }
+	     push @node_ids, $this_node_id;
+	 }
+
+	 if (@node_ids) {
+	     print $wayfh qq{<way id="$next_way_id" visible="true">\n};
+	     for my $node_id (@node_ids) {
+		 print $wayfh qq{  <nd ref="$node_id"/>\n};
+	     }
+	     print $wayfh qq{  <tag k="name" v="$r->[Strassen::NAME]" />\n};
+	     print $wayfh qq{  <tag k="highway" v="$cat_to_highway{$r->[Strassen::CAT]}" />\n};
+	     print $wayfh qq{</way>\n};
+	     $next_way_id++;
+	 }
+     });
+
+seek $nodefh, 0, SEEK_SET
+    or die $!;
+seek $wayfh, 0, SEEK_SET
+    or die $!;
+
+binmode STDOUT, ':utf8';
+print qq{<osm version="0.6" generator="bbd2osm">\n};
+while(<$nodefh>) {
+    print $_;
+}
+while(<$wayfh>) {
+    print $_;
+}
+print qq{</osm>\n};
+
+__END__
