@@ -42,6 +42,7 @@ GPSPORT?=	/dev/ttyS0
 .endif
 
 BBD2POLISH?=		${MISCSRCDIR}/bbd2polish
+BBD2OSM?=		${MISCSRCDIR}/bbd2osm
 
 ## The old and unused multi images. Nowadays only one image may be
 ## uploaded at one time (bbbikeall)
@@ -138,9 +139,9 @@ combined-map:	${PERSISTENTTMPDIR}/gmapsupp.img
 	@echo "cp ${PERSISTENTTMPDIR}/gmapsupp.img /mnt/garmin/garmin/"
 	@echo "sudo umount /mnt/garmin"
 
-GMAPSUPP_SRC=	${PERSISTENTTMPDIR}/bbbikequal.img \
+GMAPSUPP_SRC=	${PERSISTENTTMPDIR}/bbbike_routable.img \
+		${PERSISTENTTMPDIR}/bbbikequal.img \
 		${PERSISTENTTMPDIR}/berlin_osm.img \
-		${PERSISTENTTMPDIR}/berlin_ring_osm_routable.img \
 		${PERSISTENTTMPDIR}/leipzig_osm.img \
 		${PERSISTENTTMPDIR}/hessen_osm.img
 
@@ -198,6 +199,21 @@ ${PERSISTENTTMPDIR}/hessen_osm.img:
 	    ${MKGMAP} --description="Hessen OSM" --mapname=12117003 hessen.osm && \
 	    mv 12117003.img hessen_osm.img )
 	-rm -f ${PERSISTENTTMPDIR}/hessen.osm
+
+######################################################################
+# bbd2osm stuff
+
+BBD2OSM_MAPSET_ALL_SOURCES=	strassen landstrassen landstrassen2 \
+				gesperrt ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
+
+${PERSISTENTTMPDIR}/bbbike_routable.osm:	${BBD2OSM} ${BBD2OSM_MAPSET_ALL_SOURCES}
+	${BBD2OSM} > ${PERSISTENTTMPDIR}/bbbike_routable.osm~
+	mv ${PERSISTENTTMPDIR}/bbbike_routable.osm~ ${PERSISTENTTMPDIR}/bbbike_routable.osm
+
+${PERSISTENTTMPDIR}/bbbike_routable.img:	${PERSISTENTTMPDIR}/bbbike_routable.osm
+	cd ${PERSISTENTTMPDIR} && ( \
+	    ${MKGMAP_ROUTABLE} --description="BBBike Routable" --mapname=12117006 --country-name=Germany --country-abbr=DE --region-name=Berlin --region-abbr=BER --net --route ${PERSISTENTTMPDIR}/bbbike_routable.osm && \
+	    mv 12117006.img bbbike_routable.img )
 
 ######################################################################
 # Sourceforge release targets
