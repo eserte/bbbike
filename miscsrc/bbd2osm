@@ -93,6 +93,8 @@ Strassen->new_stream("$datadir/wasserstrassen")->read_stream(\&handle_waterway_l
 Strassen->new_stream("$datadir/wasserumland")->read_stream(\&handle_waterway_like);
 Strassen->new_stream("$datadir/wasserumland2")->read_stream(\&handle_waterway_like);
 
+Strassen->new_stream("$datadir/faehren")->read_stream(\&handle_ferry_like);
+
 Strassen->new_stream("$datadir/strassen")->read_stream(\&handle_highway_like);
 Strassen->new_stream("$datadir/landstrassen")->read_stream(\&handle_highway_like);
 Strassen->new_stream("$datadir/landstrassen2")->read_stream(\&handle_highway_like);
@@ -116,90 +118,82 @@ sub handle_highway_like {
 	return;
     }
 
-    my @node_ids;
-    for my $sxy (@{ $r->[Strassen::COORDS] }) {
-	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $sxy));
-	my $this_node_id = maybe_add_node($px, $py);
-	push @node_ids, $this_node_id;
-    }
+    my @node_ids = get_node_ids($r);
 
-    if (@node_ids) {
-
-	# split streets
-	my @segments;
-	my $last_tags;
-	my @last_tags;
-	my $begin_split_index = 0;
-	for my $node_idx (1 .. $#node_ids) {
-	    my $forward_spec = $node_ids[$node_idx-1].' '.$node_ids[$node_idx];
-	    my $backward_spec = $node_ids[$node_idx].' '.$node_ids[$node_idx-1];
-	    my @this_tags = (
-			     ($oneway{$forward_spec}||''),
-			     ($oneway{$backward_spec}||''),
-			     ($no_access{$forward_spec}||''),
-			    );
-	    my $this_tags = join(" ", @this_tags);
-	    if (defined $last_tags) {
-		if ($last_tags ne $this_tags) {
-		    # we need to split
-		    push @segments, [[@node_ids[$begin_split_index..$node_idx-1]], [@last_tags]];
-		    $begin_split_index = $node_idx-1;
-		    $last_tags = $this_tags;
-		    @last_tags = @this_tags;
-		}
-	    } else {
+    # split streets
+    my @segments;
+    my $last_tags;
+    my @last_tags;
+    my $begin_split_index = 0;
+    for my $node_idx (1 .. $#node_ids) {
+	my $forward_spec = $node_ids[$node_idx-1].' '.$node_ids[$node_idx];
+	my $backward_spec = $node_ids[$node_idx].' '.$node_ids[$node_idx-1];
+	my @this_tags = (
+			 ($oneway{$forward_spec}||''),
+			 ($oneway{$backward_spec}||''),
+			 ($no_access{$forward_spec}||''),
+			);
+	my $this_tags = join(" ", @this_tags);
+	if (defined $last_tags) {
+	    if ($last_tags ne $this_tags) {
+		# we need to split
+		push @segments, [[@node_ids[$begin_split_index..$node_idx-1]], [@last_tags]];
+		$begin_split_index = $node_idx-1;
 		$last_tags = $this_tags;
 		@last_tags = @this_tags;
 	    }
+	} else {
+	    $last_tags = $this_tags;
+	    @last_tags = @this_tags;
 	}
-	push @segments, [[@node_ids[$begin_split_index..$#node_ids]], [@last_tags]];
+    }
+    push @segments, [[@node_ids[$begin_split_index..$#node_ids]], [@last_tags]];
 
-	my($name, @cityparts) = Strasse::split_street_citypart($r->[Strassen::NAME]);
-	_xmlify($name);
+    my($name, @cityparts) = Strasse::split_street_citypart($r->[Strassen::NAME]);
+    _xmlify($name);
 
-	for my $segment (@segments) {
-	    my @node_ids = @{$segment->[0]};
-	    my($oneway, $oneway_reversed, $no_access) = @{$segment->[1]};
+    for my $segment (@segments) {
+	my @node_ids = @{$segment->[0]};
+	my($oneway, $oneway_reversed, $no_access) = @{$segment->[1]};
 
-	    if ($oneway_reversed) {
-		@node_ids = reverse @node_ids;
-		$oneway = 1;
-	    }
+	if ($oneway_reversed) {
+	    @node_ids = reverse @node_ids;
+	    $oneway = 1;
+	}
 	    
-	    print $wayfh qq{<way id="$next_way_id" visible="true">\n};
-	    for my $node_id (@node_ids) {
-		print $wayfh qq{  <nd ref="$node_id"/>\n};
-	    }
-	    print $wayfh qq{  <tag k="name" v="$name" />\n};
-	    print $wayfh qq{  <tag k="highway" v="$highway_tag" />\n};
-	    if ($oneway) {
-		print $wayfh qq{  <tag k="oneway" v="yes" />\n};
-	    }
-	    if ($no_access) {
-		print $wayfh qq{  <tag k="access" v="no" />\n};
-	    }
+	print $wayfh qq{<way id="$next_way_id" visible="true">\n};
+	for my $node_id (@node_ids) {
+	    print $wayfh qq{  <nd ref="$node_id"/>\n};
+	}
+	print $wayfh qq{  <tag k="name" v="$name" />\n};
+	print $wayfh qq{  <tag k="highway" v="$highway_tag" />\n};
+	if ($oneway) {
+	    print $wayfh qq{  <tag k="oneway" v="yes" />\n};
+	}
+	if ($no_access) {
+	    print $wayfh qq{  <tag k="access" v="no" />\n};
+	}
 
-	    if (0) {
-		print $wayfh qq{  <tag k="addr:street" v="$name" />\n};
-		print $wayfh qq{  <tag k="addr:housenumber" v="0" />\n}; # XXX pure faked
-		print $wayfh qq{  <tag k="addr:country" v="DE" />\n};
+	if (0) {
+	    print $wayfh qq{  <tag k="addr:street" v="$name" />\n};
+	    print $wayfh qq{  <tag k="addr:housenumber" v="0" />\n}; # XXX pure faked
+	    print $wayfh qq{  <tag k="addr:country" v="DE" />\n};
+	    if (@cityparts) {
+		# parse street numbers out
+		@cityparts = grep {
+		    my($type, $nr) = Strasse::parse_street_type_nr($_);
+		    !defined $type;
+		} @cityparts;
 		if (@cityparts) {
-		    # parse street numbers out
-		    @cityparts = grep {
-			my($type, $nr) = Strasse::parse_street_type_nr($_);
-			!defined $type;
-		    } @cityparts;
-		    if (@cityparts) {
-			_xmlify($cityparts[0]);
-			# XXX hack: use only first
-			print $wayfh qq{  <tag k="addr:city" v="$cityparts[0]" />\n};
-		    }
+		    _xmlify($cityparts[0]);
+		    # XXX hack: use only first
+		    print $wayfh qq{  <tag k="addr:city" v="$cityparts[0]" />\n};
 		}
 	    }
-
-	    print $wayfh qq{</way>\n};
-	    $next_way_id++;
 	}
+
+	print $wayfh qq{</way>\n};
+	$next_way_id++;
     }
 }
 
@@ -211,12 +205,7 @@ sub handle_railway_like {
     my $railway_cat = $cat_to_railway{$1};
     return if !defined $cat;
 
-    my @node_ids;
-    for my $sxy (@{ $r->[Strassen::COORDS] }) {
-	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $sxy));
-	my $this_node_id = maybe_add_node($px, $py);
-	push @node_ids, $this_node_id;
-    }
+    my @node_ids = get_node_ids($r);
 
     my $name = $r->[Strassen::NAME];
     _xmlify($name);
@@ -243,12 +232,7 @@ sub handle_waterway_like {
     }
     # XXX handling W0,W1 etc. missing
 
-    my @node_ids;
-    for my $sxy (@{ $r->[Strassen::COORDS] }) {
-	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $sxy));
-	my $this_node_id = maybe_add_node($px, $py);
-	push @node_ids, $this_node_id;
-    }
+    my @node_ids = get_node_ids($r);
 
     my $name = $r->[Strassen::NAME];
     _xmlify($name);
@@ -263,6 +247,25 @@ sub handle_waterway_like {
     } else {
 	print $wayfh qq{  <tag k="waterway" v="river" />\n};
     }
+    print $wayfh qq{</way>\n};
+    $next_way_id++;
+}
+
+sub handle_ferry_like {
+    my($r, $dir) = @_;
+
+    my @node_ids = get_node_ids($r);
+
+    my $name = $r->[Strassen::NAME];
+    _xmlify($name);
+
+    print $wayfh qq{<way id="$next_way_id" visible="true">\n};
+    for my $node_id (@node_ids) {
+	print $wayfh qq{  <nd ref="$node_id"/>\n};
+    }
+    print $wayfh qq{  <tag k="name" v="$name" />\n} if defined $name && length $name;
+    print $wayfh qq{  <tag k="route" v="ferry" />\n};
+    # XXX description from comments_ferry missing
     print $wayfh qq{</way>\n};
     $next_way_id++;
 }
@@ -284,12 +287,7 @@ sub handle_area_like {
 	}
     }
 
-    my @node_ids;
-    for my $sxy (@{ $r->[Strassen::COORDS] }) {
-	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $sxy));
-	my $this_node_id = maybe_add_node($px, $py);
-	push @node_ids, $this_node_id;
-    }
+    my @node_ids = get_node_ids($r);
 
     my $name = $r->[Strassen::NAME];
     _xmlify($name);
@@ -323,6 +321,17 @@ while(<$wayfh>) {
     print $_;
 }
 print qq{</osm>\n};
+
+sub get_node_ids {
+    my $r = shift;
+    my @node_ids;
+    for my $sxy (@{ $r->[Strassen::COORDS] }) {
+	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $sxy));
+	my $this_node_id = maybe_add_node($px, $py);
+	push @node_ids, $this_node_id;
+    }
+    @node_ids;
+}
 
 sub maybe_add_node {
     my($px, $py) = @_;
