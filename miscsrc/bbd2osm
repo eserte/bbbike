@@ -53,6 +53,18 @@ my %cat_to_railway = ('U' => 'subway',
 		      'R' => 'rail',
 		     );
 
+my %cat_to_area_landuse = ('Forest'     => 'forest',
+			   'Cemetery'   => 'cemetery',
+			   'Industrial' => 'industrial',
+			   # 'Ae' => 'airport', # does not exist
+			   'Orchard'    => 'allotments',
+			   'Sport'      => 'sports',
+			   'Green'      => 'village_green',
+			  );
+my %cat_to_area_leisure = ('P'          => 'park',
+			   'Pabove'     => 'park',
+			  );
+
 my($min_lat, $max_lat, $min_lon, $max_lon);
 
 my $gesperrt = Strassen->new_stream("$datadir/gesperrt");
@@ -74,6 +86,8 @@ $gesperrt->read_stream
 	     }
 	 }
      });
+
+Strassen->new_stream("$datadir/flaechen")->read_stream(\&handle_area_like);
 
 Strassen->new_stream("$datadir/wasserstrassen")->read_stream(\&handle_waterway_like);
 Strassen->new_stream("$datadir/wasserumland")->read_stream(\&handle_waterway_like);
@@ -248,6 +262,47 @@ sub handle_waterway_like {
 	print $wayfh qq{  <tag k="natural" v="water" />\n};
     } else {
 	print $wayfh qq{  <tag k="waterway" v="river" />\n};
+    }
+    print $wayfh qq{</way>\n};
+    $next_way_id++;
+}
+
+sub handle_area_like {
+    my($r, $dir) = @_;
+
+    if ($r->[Strassen::CAT] !~ m{^F:([^:]+)}) {
+	return; # should never happen
+    }
+    my $cat = $1;
+    my($landuse, $leisure);
+    $landuse = $cat_to_area_landuse{$cat};
+    if (!defined $landuse) {
+	$leisure = $cat_to_area_leisure{$cat};
+	if (!defined $leisure) {
+	    #warn "Ignoring $cat...\n";
+	    return;
+	}
+    }
+
+    my @node_ids;
+    for my $sxy (@{ $r->[Strassen::COORDS] }) {
+	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $sxy));
+	my $this_node_id = maybe_add_node($px, $py);
+	push @node_ids, $this_node_id;
+    }
+
+    my $name = $r->[Strassen::NAME];
+    _xmlify($name);
+
+    print $wayfh qq{<way id="$next_way_id" visible="true">\n};
+    for my $node_id (@node_ids) {
+	print $wayfh qq{  <nd ref="$node_id"/>\n};
+    }
+    print $wayfh qq{  <tag k="name" v="$name" />\n} if defined $name && length $name;
+    if (defined $landuse) {
+	print $wayfh qq{  <tag k="landuse" v="$landuse" />\n};
+    } else {
+	print $wayfh qq{  <tag k="leisure" v="$leisure" />\n};
     }
     print $wayfh qq{</way>\n};
     $next_way_id++;
