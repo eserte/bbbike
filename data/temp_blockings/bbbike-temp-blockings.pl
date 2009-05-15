@@ -13331,11 +13331,11 @@ userdel	q4::inwork; 16196,10911 16153,10818
 userdel	q4::inwork; 15681,10801 15674,10851
 EOF
      },
-     { from  => 1241158590, # 2009-05-01 08:16
+     { from  => 1242281854, # 2009-05-14 08:17
        until => 1257029999, # 2009-10-31 23:59
        text  => 'Pappelallee (Prenzlauer Berg) Richtung Wisbyer Str. zwischen Stargarder Str. und Wichertstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2009)',
        type  => 'handicap',
-       source_id => 'IM_011726',
+       source_id => 'IM_012654',
        data  => <<EOF,
 userdel	q4::inwork; 11301,15668 11373,15789 11393,15823 11455,15916
 EOF
@@ -14013,6 +14013,24 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 29103,24437 29528,24348 29791,24336 31905,25433 32229,25382
+EOF
+     },
+     { from  => 1242281874, # 2009-05-14 08:17
+       until => 1243807199, # 2009-05-31 23:59
+       text  => 'Pappelallee (Prenzlauer Berg) in Richtung Schönhauser Allee zwischen Gneiststr. und Schönhauser Alllee Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2009)',
+       type  => 'handicap',
+       source_id => 'IM_012659',
+       data  => <<EOF,
+userdel	q4::inwork; 11119,15385 10881,15047
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Straße der Pariser Kommune (Friedrichshain) in beiden Richtungen zwischen Karl-Marx-Allee und Rüdersdorfer Str. geplatzte Wasserleitung, gesperrt',
+       type  => 'handicap',
+       source_id => 'IM_012636',
+       data  => <<EOF,
+userdel	q4::inwork 12822,12067 12852,12306 12869,12425
 EOF
      },
     );
