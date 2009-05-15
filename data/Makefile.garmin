@@ -212,7 +212,7 @@ ${PERSISTENTTMPDIR}/bbbike_routable.osm:	${BBD2OSM} ${BBD2OSM_MAPSET_ALL_SOURCES
 
 ${PERSISTENTTMPDIR}/bbbike_routable.img:	${PERSISTENTTMPDIR}/bbbike_routable.osm
 	cd ${PERSISTENTTMPDIR} && ( \
-	    ${MKGMAP_ROUTABLE} --description="BBBike Routable" --mapname=12117006 --country-name=Germany --country-abbr=DE --region-name=Berlin --region-abbr=BER --net --route ${PERSISTENTTMPDIR}/bbbike_routable.osm && \
+	    ${MKGMAP_ROUTABLE} --description="BBBike Routable" --mapname=12117006 --country-name=Germany --country-abbr=DE --region-name=Berlin --region-abbr=BER --latin1 --lower-case --net --route --draw-priority=5 ${PERSISTENTTMPDIR}/bbbike_routable.osm && \
 	    mv 12117006.img bbbike_routable.img )
 
 ######################################################################
