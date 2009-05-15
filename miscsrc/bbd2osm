@@ -48,6 +48,8 @@ my %cat_to_highway = ('B' => 'primary',
 		      '??' => 'motorway', # cheating
 		     );
 
+my($min_lat, $max_lat, $min_lon, $max_lon);
+
 my $gesperrt = Strassen->new_stream("$datadir/gesperrt");
 $gesperrt->read_stream
     (sub {
@@ -139,7 +141,8 @@ sub handle_strassen_like {
 		print $wayfh qq{  <nd ref="$node_id"/>\n};
 	    }
 	    my $name = Strasse::strip_bezirk($r->[Strassen::NAME]);
-	    $name =~ s{"}{&#34;}g; # XXX hack to xml-ify
+	    $name =~ s{&}{&#38;}g; # XXX hack to xml-ify
+	    $name =~ s{"}{&#34;}g;
 	    $name =~ s{<}{&#60;}g;
 	    $name =~ s{>}{&#62;}g;
 	    print $wayfh qq{  <tag k="name" v="$name" />\n};
@@ -163,6 +166,7 @@ seek $wayfh, 0, SEEK_SET
 
 binmode STDOUT, ':utf8';
 print qq{<osm version="0.6" generator="bbd2osm">\n};
+print qq{<bound box="$min_lat,$min_lon,$max_lat,$max_lon" origin="http://www.bbbike.de" />\n};
 while(<$nodefh>) {
     print $_;
 }
@@ -178,6 +182,12 @@ sub maybe_add_node {
     if (!defined $this_node_id) {
 	$this_node_id = $node_id{$pxy} = $next_node_id++;
 	print $nodefh qq{<node id="$this_node_id" lat="$py" lon="$px" user="eserte" visible="true" />\n};
+
+	$min_lon = $px if !defined $min_lon || $min_lon > $px;
+	$max_lon = $px if !defined $max_lon || $max_lon < $px;
+	$min_lat = $py if !defined $min_lat || $min_lat > $py;
+	$max_lat = $py if !defined $max_lat || $max_lat < $py;
+
     }
     $this_node_id;
 }
