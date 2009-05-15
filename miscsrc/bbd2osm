@@ -39,13 +39,18 @@ my %node_id;
 my %oneway;
 my %no_access;
 
-my %cat_to_highway = ('B' => 'primary',
+my %cat_to_highway = ('B'  => 'primary',
 		      'HH' => 'primary',
-		      'H' => 'secondary',
-		      'N' => 'residential',
+		      'H'  => 'secondary',
+		      'N'  => 'residential',
 		      'NN' => 'cycleway', # XXX
-		      '?' => 'motorway', # cheating
+		      '?'  => 'motorway', # cheating
 		      '??' => 'motorway', # cheating
+		     );
+
+my %cat_to_railway = ('U' => 'subway',
+		      'S' => 'light_rail',
+		      'R' => 'rail',
 		     );
 
 my($min_lat, $max_lat, $min_lon, $max_lon);
@@ -70,12 +75,16 @@ $gesperrt->read_stream
 	 }
      });
 
-Strassen->new_stream("$datadir/strassen")->read_stream(\&handle_strassen_like);
-Strassen->new_stream("$datadir/landstrassen")->read_stream(\&handle_strassen_like);
-Strassen->new_stream("$datadir/landstrassen2")->read_stream(\&handle_strassen_like);
-Strassen->new_stream("$datadir/../tmp/fragezeichen-nextcheck.bbd")->read_stream(\&handle_strassen_like);
+Strassen->new_stream("$datadir/strassen")->read_stream(\&handle_highway_like);
+Strassen->new_stream("$datadir/landstrassen")->read_stream(\&handle_highway_like);
+Strassen->new_stream("$datadir/landstrassen2")->read_stream(\&handle_highway_like);
+Strassen->new_stream("$datadir/../tmp/fragezeichen-nextcheck.bbd")->read_stream(\&handle_highway_like);
 
-sub handle_strassen_like {
+Strassen->new_stream("$datadir/ubahn")->read_stream(\&handle_railway_like);
+Strassen->new_stream("$datadir/sbahn")->read_stream(\&handle_railway_like);
+Strassen->new_stream("$datadir/rbahn")->read_stream(\&handle_railway_like);
+
+sub handle_highway_like {
     my($r, $dir) = @_;
 
     my($cat) = $r->[Strassen::CAT] =~ m{^([^:]+)};
@@ -174,6 +183,34 @@ sub handle_strassen_like {
 	    $next_way_id++;
 	}
     }
+}
+
+sub handle_railway_like {
+    my($r, $dir) = @_;
+
+    my($cat) = $r->[Strassen::CAT] =~ m{^([^:]+)};
+    return if $cat !~ m{^([USR])[ABC]?$};
+    my $railway_cat = $cat_to_railway{$1};
+    return if !defined $cat;
+
+    my @node_ids;
+    for my $sxy (@{ $r->[Strassen::COORDS] }) {
+	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $sxy));
+	my $this_node_id = maybe_add_node($px, $py);
+	push @node_ids, $this_node_id;
+    }
+
+    my $name = $r->[Strassen::NAME];
+    _xmlify($name);
+
+    print $wayfh qq{<way id="$next_way_id" visible="true">\n};
+    for my $node_id (@node_ids) {
+	print $wayfh qq{  <nd ref="$node_id"/>\n};
+    }
+    print $wayfh qq{  <tag k="name" v="$name" />\n} if defined $name && length $name;
+    print $wayfh qq{  <tag k="railway" v="$railway_cat" />\n};
+    print $wayfh qq{</way>\n};
+    $next_way_id++;
 }
 
 seek $nodefh, 0, SEEK_SET
