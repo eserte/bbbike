@@ -127,6 +127,9 @@ sub handle_strassen_like {
 	}
 	push @segments, [[@node_ids[$begin_split_index..$#node_ids]], [@last_tags]];
 
+	my($name, @cityparts) = Strasse::split_street_citypart($r->[Strassen::NAME]);
+	_xmlify($name);
+
 	for my $segment (@segments) {
 	    my @node_ids = @{$segment->[0]};
 	    my($oneway, $oneway_reversed, $no_access) = @{$segment->[1]};
@@ -140,11 +143,6 @@ sub handle_strassen_like {
 	    for my $node_id (@node_ids) {
 		print $wayfh qq{  <nd ref="$node_id"/>\n};
 	    }
-	    my $name = Strasse::strip_bezirk($r->[Strassen::NAME]);
-	    $name =~ s{&}{&#38;}g; # XXX hack to xml-ify
-	    $name =~ s{"}{&#34;}g;
-	    $name =~ s{<}{&#60;}g;
-	    $name =~ s{>}{&#62;}g;
 	    print $wayfh qq{  <tag k="name" v="$name" />\n};
 	    print $wayfh qq{  <tag k="highway" v="$highway_tag" />\n};
 	    if ($oneway) {
@@ -153,6 +151,25 @@ sub handle_strassen_like {
 	    if ($no_access) {
 		print $wayfh qq{  <tag k="access" v="no" />\n};
 	    }
+
+	    if (0) {
+		print $wayfh qq{  <tag k="addr:street" v="$name" />\n};
+		print $wayfh qq{  <tag k="addr:housenumber" v="0" />\n}; # XXX pure faked
+		print $wayfh qq{  <tag k="addr:country" v="DE" />\n};
+		if (@cityparts) {
+		    # parse street numbers out
+		    @cityparts = grep {
+			my($type, $nr) = Strasse::parse_street_type_nr($_);
+			!defined $type;
+		    } @cityparts;
+		    if (@cityparts) {
+			_xmlify($cityparts[0]);
+			# XXX hack: use only first
+			print $wayfh qq{  <tag k="addr:city" v="$cityparts[0]" />\n};
+		    }
+		}
+	    }
+
 	    print $wayfh qq{</way>\n};
 	    $next_way_id++;
 	}
@@ -190,6 +207,13 @@ sub maybe_add_node {
 
     }
     $this_node_id;
+}
+
+sub _xmlify {
+    $_[0] =~ s{&}{&#38;}g; # XXX hack to xml-ify
+    $_[0] =~ s{"}{&#34;}g;
+    $_[0] =~ s{<}{&#60;}g;
+    $_[0] =~ s{>}{&#62;}g;
 }
 
 __END__
