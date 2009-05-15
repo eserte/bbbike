@@ -75,6 +75,10 @@ $gesperrt->read_stream
 	 }
      });
 
+Strassen->new_stream("$datadir/wasserstrassen")->read_stream(\&handle_waterway_like);
+Strassen->new_stream("$datadir/wasserumland")->read_stream(\&handle_waterway_like);
+Strassen->new_stream("$datadir/wasserumland2")->read_stream(\&handle_waterway_like);
+
 Strassen->new_stream("$datadir/strassen")->read_stream(\&handle_highway_like);
 Strassen->new_stream("$datadir/landstrassen")->read_stream(\&handle_highway_like);
 Strassen->new_stream("$datadir/landstrassen2")->read_stream(\&handle_highway_like);
@@ -209,6 +213,42 @@ sub handle_railway_like {
     }
     print $wayfh qq{  <tag k="name" v="$name" />\n} if defined $name && length $name;
     print $wayfh qq{  <tag k="railway" v="$railway_cat" />\n};
+    print $wayfh qq{</way>\n};
+    $next_way_id++;
+}
+
+sub handle_waterway_like {
+    my($r, $dir) = @_;
+
+    my($is_area, $cat);
+    if ($r->[Strassen::CAT] =~ m{^F:([^:]+)}) {
+	$is_area = 1;
+	$cat = $1;
+    } else {
+	$cat = $r->[Strassen::CAT] =~ m{^([^:]+)};
+    }
+    # XXX handling W0,W1 etc. missing
+
+    my @node_ids;
+    for my $sxy (@{ $r->[Strassen::COORDS] }) {
+	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $sxy));
+	my $this_node_id = maybe_add_node($px, $py);
+	push @node_ids, $this_node_id;
+    }
+
+    my $name = $r->[Strassen::NAME];
+    _xmlify($name);
+
+    print $wayfh qq{<way id="$next_way_id" visible="true">\n};
+    for my $node_id (@node_ids) {
+	print $wayfh qq{  <nd ref="$node_id"/>\n};
+    }
+    print $wayfh qq{  <tag k="name" v="$name" />\n} if defined $name && length $name;
+    if ($is_area) {
+	print $wayfh qq{  <tag k="natural" v="water" />\n};
+    } else {
+	print $wayfh qq{  <tag k="waterway" v="river" />\n};
+    }
     print $wayfh qq{</way>\n};
     $next_way_id++;
 }
