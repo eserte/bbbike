@@ -1088,7 +1088,8 @@ userdel	q4::inwork; 14759,11339 14674,11370 14575,11407
          'text' => 'Straße der Pariser Kommune (Friedrichshain) in beiden Richtungen zwischen Karl-Marx-Allee und Rüdersdorfer Str. geplatzte Wasserleitung, gesperrt',
          'from' => undef,
          'id' => 1656,
-         'data' => 'userdel	q4::inwork 12822,12067 12852,12306 12869,12425
+         'data' => '#: last_checked: 2009-05-15
+userdel	q4::inwork 12822,12067 12852,12306 12869,12425
 ',
          'type' => 'handicap'
        }

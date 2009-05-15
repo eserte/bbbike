@@ -221,7 +221,7 @@ Liesenstr.: Kopfsteinpflaster, OK	Q1 8671,14919 8562,14798
 Am Kupfergraben: teilweise schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3 9529,12925 9614,12893 9661,12876
 Am Kupfergraben: Kopfsteinpflaster	Q2 9754,12775 9661,12876
 Geschwister-Scholl-Str.: Kopfsteinpflaster	Q2 9529,12925 9550,12760
-Marchlewskistr.: Kopfsteinpflaster	Q2 13217,11936 13275,11830 13295,11792
+Marchlewskistr.: Kopfsteinpflaster	Q2 13217,11936 13275,11830
 Pillauer Str.: Kopfsteinpflaster	Q2 13366,11651 13270,11581
 Wriezener Karree: Asphalt	Q0 12726,11851 12959,11631
 #: by: Roland Maier vvv
@@ -818,7 +818,8 @@ Maxstr.: Asphalt	Q0 7673,15897 7622,15946
 Maxstr.: mäßiges Kopfsteinpflaster	Q2 7622,15946 7543,16016 7491,16072
 #: XXX_indoor korrekte Bezeichnung?
 Nazarethkirchstr.: einige Straßenwellen	Q0 7543,16016 7441,15909 7354,15817 7198,15656
-Genter Str.: mäßiges Kopfsteinpflaster	Q2 7270,15307 7148,15447 7012,15571 6926,15675 6809,15798 6681,15928
+Genter Str.: Asphalt	Q0 7270,15307 7148,15447 7012,15571
+Genter Str.: mäßiges Kopfsteinpflaster	Q2 7012,15571 6926,15675 6809,15798 6681,15928
 Am Walde: Asphalt	Q0 17775,7874 17678,7850 17590,7828 17527,7812
 Prager Platz: gutes Kopfsteinpflaster	Q1 5661,9630 5657,9600 5630,9592 5602,9606 5595,9626
 Normannenstr.: Kopfsteinpflaster	Q2 16159,12301 16227,12280 16276,12273
@@ -974,7 +975,7 @@ Schwerinstr.: Kopfsteinpflaster, OK, in der Mitte Asphalt	Q1 7384,10127 7201,101
 Damaschkestr.: Kopfsteinpflaster	Q2 3132,10499 3013,10553
 Mierendorffstr.: Kopfsteinpflaster, Radwege mäßig bis OK	Q1 3337,12855 3542,13063 3559,13177
 Albrecht-Achilles-Str.: wechselnd Asphalt und gutes Kopfsteinpflaster	Q1 3618,10283 3597,9907
-(Stresemannstr. - Wilhelmstr.): Parkweg, etwas holprig	Q1 9210,10614 9367,10641
+(Stresemannstr. - Wilhelmstr.): Parkweg, etwas holprig	Q2+ 9210,10614 9367,10641
 (Stresemannstr. - Wilhelmstr.): Parkweg	Q1 9250,10563 9370,10615
 #: by Olaf Schulz vvv
 Fröbelstr.: guter Asphalt	Q0 11776,15060 11870,15004 11968,14950 12089,14891
@@ -8499,7 +8500,7 @@ Höchste Str.: Asphalt	Q0 11778,13498 11909,13387 12017,13299 12066,13237
 (Parkplatz): Beton	Q0 12066,13237 12046,13150 12011,13136 11920,13181
 Georgenkirchstr.: Asphalt	Q0 11842,13576 11778,13498 11711,13416 11654,13351 11596,13279
 (Mollstr. - Barnimstr.): Verbundsteine	Q0 11723,13139 11758,13210
-(Volkspark Friedrichshain, parallel zur Friedenstr.): Gehwegplatten und Kopfsteinpflaster	Q0 12386,13085 12387,13107 12344,13157 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11772,13624
+(Volkspark Friedrichshain, parallel zur Friedenstr.): Gehwegplatten und Kopfsteinpflaster	Q0 12386,13085 12387,13107 12344,13157 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11785,13625
 Hinter der Katholischen Kirche: Kopfsteinpflaster	Q1 9801,12245 9795,12293 9780,12401
 Behrenstr.: Asphalt	Q0 9492,12214 9626,12227 9700,12234 9743,12239 9801,12245
 Markgrafenstr. (Kreuzberg, Mitte): Asphalt	Q2 9626,12227 9636,12126

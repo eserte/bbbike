@@ -83,8 +83,12 @@ Streitstr. (werden die vorhandenen Bordsteinradwege ersetzt)?	? -3040,16246 -305
 #
 #: section ignorieren vvv
 #: section Straßen in Planung vvv
-#: XXX und nicht vergessen: Eintrag in gesperrt dann entfernen! Und es existiert keine besondere Vorfahrtsregelung mehr. Evtl. auch Straßenkategorisierung bzw. comments_kfzverkehr anpassen.
+#: last_checked: 2009-05-15
+Palisadenstr./Friedenstr.: Kreuzungsbereich wird umgebaut	?::inwork 12635,12629 12891,12549
+#: last_checked: 2009-05-14
+Wilhelmstr./Zimmerstr.: Ampel wird gebaut	?::inwork 9162,11286
 #: next_check: 2009-12-01:
+#: XXX und nicht vergessen: Eintrag in gesperrt dann entfernen! Und es existiert keine besondere Vorfahrtsregelung mehr. Evtl. auch Straßenkategorisierung bzw. comments_kfzverkehr anpassen.
 Französische Str.: Verlängerung wird 2009-12 eröffnet. Es wird eine Ampel an der Kreuzung Wilhelmstr. geben.	?::inwork 8901,12008 9076,12054
 #: next_check: 2009-12-31:
 Boitzenburg - Hardenbeck: straßenbegleitender Radweg in Vorbereitung, Realisierung bis Ende 2009	?::inwork 22233,95712 21160,95892 20914,96092 20696,96135 20064,95650 19314,95228 19032,95142
@@ -1019,6 +1023,7 @@ Heinrich-Zille-Weg: Qualität?	? 815,12653 1070,13309
 Tharauer Allee: Bauarbeiten erledigt?	? -1483,11283 -1679,11336 -1818,11466 -1885,11392
 wohin führt hier der Parkweg, derzeit im Bau?	? 4449,12985 4490,12990 4533,12990
 #: XXX: unklarer Beitrag von anonymous (guter Asphalt, kurvenreich?), Einbahnstraßenfrage ist nicht beantwortet
+#: XXX: confirmed: Einbahnstraße auch für Radfahrer
 Pasewalker Str. (Wedding): Qualität (wahrscheinlich Asphalt)? Einbahnstraße auch für Radfahrer?	? 7891,15417 7877,15581
 Verbindung Stülpnagelstr. - Knobelsdorffstr. vorh.?	? 2185,11701 2154,11762
 Greifswalder Str./Lilli-Henoch-Str.: gibt es hier eine Überquerungsmöglichkeit über die Straßenbahntrasse?	? 12614,14941
@@ -1512,9 +1517,14 @@ Havelländer Ring: Qualität?	? 23369,15443 23284,15436 23258,15412 23265,15351 23
 Darwinbogen (Königs Wusterhausen): Qualität (betoniert?)? Mit Radweg oder Radspur? Wie weit richtung Westen ist die Straßen schon gebaut?	? 24381,-11212 24289,-11236 24131,-11318 23982,-11328
 #: by: Ditmar Grote:
 Selchow - Rotberg, am Bauzaun des Großflughafens entlang: unbefestigter Weg, genaue Wegführung?	? 16190,-6406 18301,-6019
-#: XXX: anonymer Eintrag meint "Asphalt":
-#: XXX Melanie und Alice bergfeld meinen: guter Asphalt, Q0
-Limburger Str.: Qualität (möglicherweise Asphalt)? Gibt es Abschnitte, die für den Autoverkehr gesperrt sind (möglicherweise an der TFH und vor der Müllerstr.)? Gibt es andere Einschränkungen, z.B. Schranken?	? 6562,15177 6727,15319 6803,15386 6835,15412 6884,15456 6950,15514 7012,15571 7129,15717
+#: XXX: anonymer Eintrag meint "Asphalt": vvv
+#: XXX Melanie und Alice bergfeld meinen: guter Asphalt, Q0 vvv
+Limburger Str.: Qualität (möglicherweise Asphalt)? Gibt es Abschnitte, die für den Autoverkehr gesperrt sind (möglicherweise an der TFH und vor der Müllerstr.)? Gibt es andere Einschränkungen, z.B. Schranken?	? 6562,15177 6727,15319 6803,15386 6835,15412 6884,15456
+#: XXX Dieser Abschnitt ist definitiv Kopfsteinpflaster:
+Limburger Str.: Qualität (möglicherweise Asphalt)? Gibt es Abschnitte, die für den Autoverkehr gesperrt sind (möglicherweise an der TFH und vor der Müllerstr.)? Gibt es andere Einschränkungen, z.B. Schranken?	? 6884,15456 6950,15514
+Limburger Str.: Qualität (möglicherweise Asphalt)? Gibt es Abschnitte, die für den Autoverkehr gesperrt sind (möglicherweise an der TFH und vor der Müllerstr.)? Gibt es andere Einschränkungen, z.B. Schranken?	? 6950,15514 7012,15571 7129,15717
+#: XXX ^^^
+#: XXX ^^^
 Bergstr. (Wannsee): Qualität zwischen Hermannstr. und Lindenstr., möglicherweise Asphalt?	? -6084,1715 -6119,1684 -6159,1672 -6202,1684 -6214,1709 -6249,1832
 (Heuweg): Qualität (wahrscheinlich Waldweg)	? -6021,2068 -6357,2274 -6587,2295
 Mauerweg in Kladow: Qualität?	? -9395,5025 -9367,5246 -9390,5298 -9415,5322
