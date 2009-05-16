@@ -702,7 +702,7 @@ Pankeweg: asphaltiert 	Q0 12563,20753 12377,20636
 Pankeweg: asphaltiert	Q0 12377,20636 12207,20351 12122,20307 11995,19759
 #: note: laut http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0511/nachricht2116.html mit neuem Belag versehen:
 Schloßallee: Asphalt	Q0 11883,19739 11730,19684 11472,19593 11312,19537 11273,19521
-Schloßallee: Parkweg, OK	Q1 11273,19521 10857,19379 10661,19307 10525,19255
+Schloßallee: Parkweg, OK	Q1 11273,19521 11081,19456 10857,19379 10661,19307 10525,19255
 #: by: rjoop
 Pankeweg, Schloßpark Schönhausen: Asphalt	Q0 10661,19307 10592,19249 10509,18981 10496,18704
 Pankeweg, Bürgerpark: Parkweg, OK	Q1 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9424,18276 9304,18165 9310,18108
@@ -2983,7 +2983,7 @@ Fritz-Kirsch-Zeile: schlechtes Kopfsteinpflaster	Q3 17644,7219 17684,7233 17845,
 Aspenweg: Asphalt	Q0 -3288,17831 -3244,17883 -3224,17943 -3203,18014 -3168,18051 -3111,18105 -3050,18164 -3020,18188 -3000,18192 -2956,18203 -2900,18214
 #: by: anonymous [AM]
 #: corrected_by: srt (Q1 -> Q0)
-Dillgesstr.: Asphalt	Q0 6218,3302 6308,3204 6407,3101 6451,3034 6482,3004 6593,2831
+Dillgesstr.: Asphalt	Q0 6218,3302 6308,3204 6407,3101 6451,3034 6482,3004 6511,2959 6593,2831
 #: by: Gerhard M.
 Habsburgerstr.: Asphalt	Q0 6920,9838 6914,9916 6905,10049
 Kyffhäuserstr.: Asphalt	Q0 6862,9542 6891,9678 6920,9838
@@ -3812,6 +3812,7 @@ Schillerstr.: Betonplatten	Q1 10063,20493 10178,20525 10309,20562 10409,20592 10
 Beuthstr.: Asphalt	Q0 10843,20301 10786,20272
 Beuthstr.: Asphalt mit Löchern	Q1 10786,20272 10653,20200 10534,20144 10435,20098 10309,20032 10137,19993
 #: note ^^^
+Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: ^^^
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2 14934,15860 14802,15857 14720,15905 14609,15921
 #: note: laut ADFC-Karte gut geeignet
@@ -4650,7 +4651,7 @@ Suttnerstr.: Asphalt	Q0 7659,5735 7667,5813 7728,5866 7730,5921 7730,5958
 #: by: Isa:
 Wunsiedeler Weg: Asphalt	Q0 7589,4008 7582,3885 7576,3774 7573,3698 7501,3432
 #: by: Ulf Sawallisch:
-Charlottenstr.: Asphalt	Q0 5774,2785 5929,2982 6044,3110 6129,3203 6218,3302 6538,3491
+Charlottenstr.: Asphalt	Q0 5774,2785 5929,2982 6044,3110 6129,3203 6218,3302 6426,3425 6529,3480
 #: by: Sandra (sspp):
 Magdalenenstr.: Kopfsteinpflaster	Q2 16129,11961 16158,12191 16159,12301
 #: by: Sebastian Scheller: vvv
@@ -4691,7 +4692,7 @@ Nicolaistr.: Kopfsteinpflaster	Q2 6171,3400 6139,3473 6110,3538 6042,3689 5959,3
 (Nicolaistr. - Dillgesstr.): Verbundsteinpflaster	Q0- 6171,3400 6218,3302
 #: by: ^^^
 #: by: Marco Schmidt
-Barbarastr.: Asphalt	Q0 6325,2904 6451,3034
+Barbarastr.: Asphalt	Q0 6374,2844 6357,2863 6320,2909 6371,2955 6451,3034
 #: by: Thede:
 Heiligenberger Str.: schlechtes Kopfsteinpflaster	Q3 18269,8161 18328,8187 18351,8222 18461,8377 18557,8525
 #: by: Rasmus (pries):
@@ -5734,7 +5735,7 @@ Am Großen Rohrpfuhl: sehr gutes Verbundsteinpflaster	Q0 16779,775 16704,805 1668
 Herrenhausstr.: Kopfsteinpflaster	Q2 17671,4533 17612,4460 17565,4402
 #: by: Sven Schmidt: vvv
 Thaliaweg: guter Asphalt	Q0 6638,3138 6482,3004
-Möwenweg (Buckow): Asphalt	Q0 14281,3901 14398,4000 14588,4154
+Möwenweg (Buckow): Asphalt	Q0 14281,3901 14324,3938 14398,4000 14588,4154
 #: confirmed_by: srt
 Lenbachstr. (Steglitz): Kopfsteinpflaster	Q2 5888,6520 6070,6570
 #: by: ^^^
@@ -8241,6 +8242,7 @@ Melsunger Str.: mäßiger Asphalt	Q1 -4666,8841 -4786,8847 -5071,8864 -5382,8880
 #: by: Franziska (ushuaia): vvv
 (Uferweg im Wröhmännerpark): fester Sandweg, gut befahrbar	Q1 -3066,14718 -3006,14774 -2992,14850 -3008,14910 -3008,14992 -2965,15053 -2929,15082 -2955,15129
 Schützenstr. (Spandau): guter Asphalt	Q0 -2869,15782 -2859,15785 -2821,15850 -2638,16026 -2624,16049
+Fliegerhorstsiedlung: guter Asphalt	Q0 -7330,7878 -7305,7838 -7266,7775 -7168,7825 -7099,7851 -7096,7881 -7114,7900 -7146,7905 -7305,7838
 #: by: ^^^
 #: by: Uwe (upvlh): vvv
 Kramstaweg: guter Asphalt	Q0 -1174,2516 -1141,2413 -1146,2269 -1006,2269
@@ -8386,8 +8388,6 @@ Segelfalterweg: Asphalt	Q0 21402,11009 21446,10915 21491,10815
 #: by: Jutta Partey:
 #: XXX was ist mit "Bordsteinkanten, q3" gemeint?
 Bremer Str.: Asphalt	Q0 3983,2454 4012,2413 4024,2374 4046,2339
-#: by: Axel Schumacher:
-Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: Klaus Blumberg:
 #: note: "Teerdecke, die mit groben Splitt durchsetzt ist":
 Kürenzer Str.: Teerdecke, einige Schlaglöcher, aber gut befahrbar	Q0- 19253,12376 19282,12597 19333,13037
@@ -8418,6 +8418,22 @@ Treutelstr.: mäßiger Asphalt	Q1 5422,19725 5345,19734 5318,19723
 Hafersteig: guter Asphalt	Q0 21150,13493 21113,13142 21078,12824 21064,12769 20975,12620 20862,12420 20853,12388 20839,12209
 #: by: Franz Puder:
 Jenbacher Weg: Verbundsteinpflaster	Q1 6402,578 6411,533 6180,376 5987,256 5800,138 5703,74 5671,52
+#: by: tipiak:
+#: note: "enge Straße", aber q0
+Krischanweg: guter Asphalt	Q0 13853,4356 13964,4333 14012,4184
+#: by: Aydin (murat):
+#: note: "enge Straße" ohne Kategorisierung
+#: note: anonymous schrieb Q2 ohne weitere Angaben
+#: corrected_by: srt/policy (Q2 -> Q1-)
+Pirmasenser Str. (Spandau): mäßiger Asphalt	Q1- -4442,15675 -4568,15708 -4639,15726
+#: by: diana (no email):
+#: note: "enge Straße", aber q0
+Lössauer Str.: guter Asphalt	Q0 16816,15092 17230,15083
+#: by: Jessica (prusseit):
+Ingridpfad: guter Asphalt	Q0 6182,2727 6304,2825 6357,2863
+#: Andrea (andbeh):
+#: corrected_by: srt/policy (Q2 -> Q1-)
+Klothildestr.: mäßiger Asphalt	Q1- 10812,20011 10948,19737 11018,19597 11048,19531 11068,19494
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
@@ -9904,4 +9920,4 @@ Löwenstammstr.: Asphalt	Q1 -7965,15546 -7865,15867
 #: by: Jan [AM]
 Leopoldstr. (Lichtenberg): Kopfsteinpflaster	Q1 15950,10987 16196,10911 16349,10860 16425,10839
 #: by: Hildegund Beulmann-Karl [AM]
-Ibisweg: Asphalt	Q0 14806,4125 14573,3843
+Ibisweg: Asphalt	Q0 14854,4078 14573,3843
