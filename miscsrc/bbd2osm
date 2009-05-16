@@ -172,6 +172,7 @@ sub handle_highway_like {
 	}
 	if ($no_access) {
 	    print $wayfh qq{  <tag k="access" v="no" />\n};
+	    print $wayfh qq{  <tag k="bicycle" v="no" />\n}; # access=no is not enough
 	}
 
 	if (0) {
