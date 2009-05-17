@@ -46,8 +46,8 @@ Stuttgarter Str.: mäßiger Asphalt	Q1 13663,8011 13510,8138 13331,8283
 Stuttgarter Str.: Kopfsteinpflaster	Q2 13331,8283 13166,8423
 Drübecker Weg: Kopfsteinpflaster	Q2 13909,8471 13808,8533
 Brockenstr.: Kopfsteinpflaster	Q2 13575,8593 13687,8734
-Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz möglich	Q2 13687,8734 13778,8846
-Sinsheimer Weg: Betonstraße	Q0 13778,8846 13837,8932
+Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz möglich	Q2 13687,8734 13774,8849
+Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster (15-20 km/h)	Q2 12150,8891 12202,8895 12394,8729 12549,8616 12649,8535
 Donaustr.: Kopfsteinpflaster	Q2 12865,8346 12918,8232
 Friesenstr.: mäßiges Kopfsteinpflaster	Q2 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
@@ -88,7 +88,7 @@ Am Landwehrkanal: Parkweg, Schotterstellen, bei Regen große Pfützen	Q1 12897,936
 Am Landwehrkanal: Asphalt	Q0 13109,9743 13225,9897
 Am Landwehrkanal: Parkweg	Q1 13225,9897 13333,9929
 Innstr.: Kopfsteinpflaster (mäßig bis schlecht)	Q2 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
-Elsenstr.: Asphalt	Q0 13402,8741 13458,8807 13507,8872 13661,9069 13760,9188
+Elsenstr.: Asphalt	Q0 13402,8741 13456,8809 13507,8872 13661,9069 13760,9188
 Herrfurthstr.: mäßiges Kopfsteinpflaster	Q2 11979,8014 11823,7980 11757,7965
 Herrfurthstr.: mäßiges Kopfsteinpflaster	Q2 11647,7940 11573,7924 11472,7899
 Herrfurthplatz: mäßiges Kopfsteinpflaster	Q2 11647,7940 11670,7911 11717,7895 11753,7930 11757,7965 11732,8001 11695,8005 11659,7982 11647,7940
@@ -1216,7 +1216,7 @@ Allerstr.: Kopfsteinpflaster	Q2 11515,7654 11628,7674 11755,7704 11879,7720 1205
 Okerstr.: Kopfsteinpflaster	Q2 11536,7533 11654,7559 11779,7582 11903,7607 12090,7651
 Lasdehner Str.: Kopfsteinpflaster	Q2 13520,12264 13470,12190 13375,12062
 Erich-Steinfurth-Str.: Kopfsteinpflaster	Q2 12596,11696 12453,11790 12366,11808
-Rütlistr.: Kopfsteinpflaster	Q2 12480,9037 12496,9053 12565,9200 12620,9293
+Rütlistr.: Kopfsteinpflaster	Q2 12480,9037 12490,9056 12565,9200 12620,9293
 (Am Flutgraben): Verbundsteinpflaster	Q1 13333,9929 13371,9974 13506,10146
 (Am Flutgraben): Kopfsteinpflaster	Q2 13506,10146 13535,10184
 Schleusenufer: Kopfsteinpflaster	Q2 13487,10227 13628,10396
@@ -1229,7 +1229,7 @@ Tellstr.: Kopfsteinpflaster	Q2 12320,8927 12402,9080
 Jansastr.: Kopfsteinpflaster	Q2 12438,8859 12531,9009
 Ossastr.: Kopfsteinpflaster	Q2 12615,9132 12681,9083
 Ossastr.: gutes Kopfsteinpflaster	Q1 12836,8980 12910,8929
-Hüttenroder Weg: gutes Kopfsteinpflaster	Q1 13274,8945 13458,8807
+Hüttenroder Weg: gutes Kopfsteinpflaster	Q1 13274,8945 13456,8809
 Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14157,9345
 Matthesstr.: Kopfsteinpflaster	Q2 14157,9345 14179,9515
 Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2 12772,8612 12822,8675 12881,8750 12954,8840 13048,8956
@@ -4901,6 +4901,7 @@ Rapstedter Weg: Beton	Q0 9578,-92 9573,-3 9652,196 9732,379 9787,503 9861,671 98
 #: by: Oliver Hauf:
 Symeonstr.: Asphalt	Q0 7630,1297 7501,1246
 #: by: Hans Müller (aol):
+#: confirmed_by: srt (und bei der Einfahrt ein kurzes Stück Verbundsteinpflaster)
 Illstr.: Asphalt	Q0 5674,6834 5654,6941
 #: by: Viviane Klee:
 Lauterberger Str.: Kopfsteinpflaster	Q2 12177,5746 12168,5855 12160,5997 12154,6063 12128,6201

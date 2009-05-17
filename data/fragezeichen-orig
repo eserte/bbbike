@@ -188,6 +188,13 @@ Fritz-von-der-Lancken-Str - Höhenweg: Straße in Bau	?::inwork -12766,1932 -12511
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+#: XXX_prog:
+Potsdamer Str. oder Hauptstr.: Richtung Norden Hauptstr., Richtung Süden Potsdamer Str.	? 7479,9357 7517,9454
+Zur Eisackstr.: ist sogar ausgeschildert, sollte vielleicht aufgenommen werden	? 6409,8026 6429,7876
+#: XXX_prog: vvv
+Rheinstr.: beginnt bereits hier, aber nur in Richtung Süden	? 5928,7370 5902,7334
+Hauptstr.: beginnt bereits hier, aber nur in Richtung Norden	? 5855,7272 5902,7334
+#: XXX_prog: ^^^
 #: last_checked: 2009-05-08: vvv
 Straße im Bau, Straßenname (auch Dora-Benjamin-Park?), auch Verbundsteinpflaster, auch verkehrsberuhigt?	?::inwork 14817,10031 14788,9976
 Dora-Benjamin-Park: zurzeit noch gesperrt	?::inwork 14705,10149 14621,10062
@@ -279,7 +286,6 @@ Eichhorster Str.: Radweg? Laut Eintrag von housemeister ja, laut Luftbild fragli
 #XXX del: nördlicher Radweg auf der Bulgarischen Str.: siehe Message-ID: <1kl0p5nkwlmb1.dlg@tebe.my-fqdn.de>	? 15166,8489 15383,8662 15580,8839
 Route Lychen - Feldberg: wie sieht der Routenverlauf aus? Qualität?	? 627,89430 551,89619
 Route Lychen - Templin: wie sieht der Routenverlauf aus? Qualität?	? 2480,89399 2468,89293
-Potsdamer Str. oder Hauptstr.: anscheinend gehören die Häuser auf der westlichen Straßenseite ersterer, auf der östlichen Seite letzterer Straße. Wie ist ausgeschildert?	? 7479,9357 7517,9454
 #: by: Lutz Moser
 Runebergweg/Sibeliusweg: Runebergweg hat starkes Gefälle und Sibeliusweg hat leichtes Gefälle, aber laut hm96.dat sieht es andersrum aus --- da muss ich mit Höhenmesser langfahren	? -6904,5175 -6747,5169 -6787,5076
 #: XXX_prog: Drängelgitter auch auf dem Mittelstreifen Sonnenallee. Kann zurzeit nicht dargestellt werden.
