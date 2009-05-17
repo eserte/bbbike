@@ -32,8 +32,8 @@ Gorkistr.: reger Fußgängerverkehr (Fußgängerzone)	q3 2049,20292 2116,20314 2295,
 Breitscheidplatz: starker Fußgängerverkehr, oft Veranstaltungen	q4 5656,10876 5652,11004
 Breitscheidplatz: starker Fußgängerverkehr, oft Veranstaltungen	q4 5782,10884 5829,10964
 Wilmersdorfer Str.: starker Fußgängerverkehr (Fußgängerzone), nachts und sonntags Radfahren erlaubt	q4 3723,11457 3751,11334 3770,11231 3795,11098 3827,10980
-(An der Müggelspree): fester Waldweg, aber Fußgänger	q2 23451,4877 23441,4956 23468,5075 23620,5096 23776,5040 23982,5030 24233,4878 24398,4842 24834,4541 25023,4441 25102,4408 25427,4482 25479,4540 25565,4549
-Am Müggelsee: Fußgänger	q2 26006,2615 26151,2624 26339,2667 26457,2660 26627,2610 26868,2580 27135,2500 27173,2444 27267,2414 27372,2434 27517,2523 27565,2569 27743,2842 27822,2910 27945,3006 28292,3150 28496,3253
+(An der Müggelspree): Fußgänger	q2 23451,4877 23441,4956 23468,5075 23620,5096 23776,5040 23982,5030 24233,4878 24398,4842 24834,4541 25023,4441 25102,4408 25427,4482 25479,4540 25565,4549
+Am Müggelsee: Fußgänger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26151,2624 26339,2667 26457,2660 26627,2610 26868,2580 27135,2500 27173,2444 27267,2414 27372,2434 27517,2523 27565,2569 27743,2842 27822,2910 27945,3006 28292,3150 28496,3253
 Pestalozzistr.: Fußgängerzone	q3 3721,11230 3770,11231 3822,11224
 (Zufahrt am NKZ): Bordsteine, Fußgänger/Lieferverkehr	q3 11291,10438 11311,10505 11343,10528
 Alexanderplatz: Fußgängerverkehr	q2 11139,13008 10970,12822 10923,12779
@@ -469,6 +469,8 @@ Dora-Benjamin-Park: Bordstein bei der Einfahrt	q1 14705,10149 14621,10062
 Dora-Benjamin-Park: Bordstein bei der Einfahrt	q1 14747,10108 14702,10020
 (Hoher Wallgraben - Hegemeisterweg): eng, Fußgänger	q2 18099,8048 18119,7996 18287,7815
 Kleine Hege: sehr eng	q3- 22334,4383 22382,4361
+Schmaler Weg: eng, Fußgängerweg nicht für Radfahrer freigegeben, ggfs. schieben	q3 25571,5829 25442,5813 25294,5761
+(Bölschestr. - Scharnweberstr.): eng, Fußgängerweg nicht für Radfahrer freigegeben, ggfs. schieben	q3 25524,5011 25729,5002
 ######################### User Contributions #################################
 #: by: Steini
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
@@ -920,7 +922,7 @@ Bootshausweg: Fußgänger, eng	q2 -1073,16610 -1067,16635 -1092,16659 -1156,16689 
 #: corrected_by: srt (q4 -> q2) (common sense!)
 Nelly-Sachs-Str.: Verkehrsberuhigter Bereich	q2 24061,14801 24115,14828 24191,14866 24253,14888 24349,14922
 #: by: torsten albrecht [AM]
-Karl-Pokern-Str.: spielende Kinder	q1 26079,5057 26034,5056 25984,5070 25860,5067 25732,5065
+Karl-Pokern-Str.: spielende Kinder	q1 26079,5057 26034,5056 25984,5070 25941,5069 25860,5067 25732,5065
 #: by: ingo [AM]
 (Plantagenstr. - Ruheplatzstr.): Gehweg, Fußgänger	q4 7595,15596 7540,15566
 #XXX duplicate: Goerdelersteg: steile Fußgängerwendel zur Autobahnbrücke	q3 3619,14183 3601,14284 3595,14277
