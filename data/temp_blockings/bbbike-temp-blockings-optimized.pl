@@ -1051,6 +1051,24 @@ userdel	q4::inwork 12822,12067 12852,12306 12869,12425
 userdel	q4::inwork 8389,11378 8374,11479
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1244325600,
+         'text' => 'B 096 Luckau - Baruth zw. Gießmannsdorf und Rüdingsdorf Straßenbauarbeiten Vollsperrung 05.06.2009-06.06.2009 ',
+         'from' => 1244066400,
+         'id' => 1658,
+         'data' => 'userdel	2::inwork 31525,-58272 31401,-57829 31077,-57151 30859,-56304
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1249077600,
+         'text' => 'L 025 Prenzlau - Fürstenwerder zw. OA Schönermark u. OE Kraatz Straßenbauarbeiten Vollsperrung 25.05.2009-31.07.2009 ',
+         'from' => 1243116000,
+         'id' => 1659,
+         'data' => 'userdel	2::inwork 28511,103728 28338,104176 27732,105878 27213,107158 25934,109206 25606,109314
+',
+         'type' => 'gesperrt'
        }
      
 );

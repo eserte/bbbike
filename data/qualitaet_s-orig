@@ -2600,6 +2600,7 @@ Zitadelle: Kopfsteinpflaster	Q2- -2646,14525 -2668,14635 -2704,14748 -2735,14848
 Behnitz: Kopfsteinpflaster	Q2 -2951,14617 -2993,14568 -3014,14559
 ######################################################################
 #: by: anonymous vvv
+Gronauer Weg: guter Asphalt	Q0 3922,111 3916,-54
 Osianderweg: guter Asphalt	Q0 3123,21360 3058,21530 2953,21777 2868,21945
 Lagerweg: mäßiger Beton	Q1- -1392,14527 -1404,14441 -1354,14424
 Kulbeweg: Asphalt	Q0 -2666,17168 -2866,17207 -2886,17110
@@ -8448,9 +8449,28 @@ Pirmasenser Str. (Spandau): mäßiger Asphalt	Q1- -4442,15675 -4568,15708 -4639,15
 Lössauer Str.: guter Asphalt	Q0 16816,15092 17230,15083
 #: by: Jessica (prusseit):
 Ingridpfad: guter Asphalt	Q0 6182,2727 6304,2825 6357,2863
-#: Andrea (andbeh):
+#: by: Andrea (andbeh):
 #: corrected_by: srt/policy (Q2 -> Q1-)
 Klothildestr.: mäßiger Asphalt	Q1- 10812,20011 10948,19737 11018,19597 11048,19531 11068,19494
+#: by: Joachim Fock:
+#: note: Tempo-30-Zone
+Glarner Str.: Asphalt	Q0 3732,2455 3726,2209
+#: by: Dennis Lucke-Schenk: vvv
+#: note: "Die Strasse ist befestigt und betoniert( kein befestigter Bürgersteig)  mit einigen Schlaglöchern und Ausbesserungen, aber für jeden Typ von Fahrrad geeignet. Die Schlaglöcher sind nur für die Autos bedeutsam."
+Braunfelsstr.: betoniert	Q0 11668,-171 11633,-64 11564,195 11560,253
+#: note: "Betonierte Strasse. Gut für alle Fahrradtypen. Wenn Trocken Sand auf der Strasse."
+Kambergstr.: betoniert	Q0 11330,-91 11427,-87 11530,-75 11633,-64 11677,-58
+#: note: "Wald Weg geht über in Sand Pfad und endet auf dem Sandweg der hier als Mauerweg bezeichnet wird, es ist nicht betoniert ca. 15 Meter Achtung scharfkantige Metall Teil das aus der Erde schaut Reifenpanne droht oder schlimmeres."
+Kambergstr. - Mauerweg: fester Sandweg	Q3 11677,-58 11746,-62
+#: by: ^^^
+#: by: M.Laufmann: vvv
+#: confirmed_by: srt (zumindest von der Allee der Kosmonauten aus)
+(Charlottenstr. - Allee der Kosmonauten/Fußgängerampel): guter Asphalt	Q0 20474,14442 20505,14350
+#: note: ignored "einige Fußgänger"
+#: note: Zone 30, Einfamilienhausgegend
+Charlottenstr.: guter bis mäßiger Asphalt	Q1+ 20505,14350 20647,14341 20900,14318
+Charlottenstr.: gutes bis mäßiges Verbundsteinpflaster	Q1- 20900,14318 21099,14300
+#: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
