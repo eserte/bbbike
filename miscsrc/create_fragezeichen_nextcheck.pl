@@ -24,6 +24,7 @@ use POSIX qw(strftime);
 use Strassen::Core;
 
 my $fragezeichen_mode = 0;
+my $door_mode = 'out';
 
 for my $arg (@ARGV) {
     if ($arg =~ m{^--?(.*)$}) {
@@ -32,6 +33,10 @@ for my $arg (@ARGV) {
 	    $fragezeichen_mode = 1;
 	} elsif ($arg eq 'no-fragezeichen-mode') {
 	    $fragezeichen_mode = 0;
+	} elsif ($arg eq 'indoor-mode') {
+	    $door_mode = 'in';
+	} elsif ($arg eq 'outdoor-mode') {
+	    $door_mode = 'out';
 	} else {
 	    die "Unknown argument -$arg";
 	}
@@ -106,17 +111,33 @@ sub handle_file {
 	     }
 
 	     return if defined $check_now && !$check_now;
-	     return if $fragezeichen_mode && (exists $dir->{XXX_prog} || exists $dir->{XXX_indoor});
-	     if (!$fragezeichen_mode) {
-		 return if (!$check_now &&
-			    !exists $dir->{add_fragezeichen} &&
-			    !exists $dir->{XXX} &&
-			    !exists $dir->{XXX_outdoor} &&
-			    !exists $dir->{temporary}
+
+	     if ($door_mode eq 'out') {
+		 return if $fragezeichen_mode && (exists $dir->{XXX_prog} || exists $dir->{XXX_indoor});
+		 if (!$fragezeichen_mode) {
+		     return if (!$check_now &&
+				!exists $dir->{add_fragezeichen} &&
+				!exists $dir->{XXX} &&
+				!exists $dir->{XXX_outdoor} &&
+				!exists $dir->{temporary}
+			       );
+		     my $more_add_name = join(", ", grep { defined } 
+					      $dir->{add_fragezeichen}[0],
+					      $dir->{XXX}[0],
+					      $dir->{XXX_outdoor}[0]
+					     );
+		     if (length $more_add_name) {
+			 if (defined $add_name && length $add_name) { $add_name .= " " }
+			 $add_name .= "($more_add_name)";
+		     }
+		 }
+	     } else {
+		 return if (!exists $dir->{XXX_prog} &&
+			    !exists $dir->{XXX_indoor}
 			   );
+		 return if defined $check_now && !$check_now;
 		 my $more_add_name = join(", ", grep { defined } 
-					  $dir->{add_fragezeichen}[0],
-					  $dir->{XXX}[0],
+					  $dir->{XXX_prog}[0],
 					  $dir->{XXX_outdoor}[0]
 					 );
 		 if (length $more_add_name) {
