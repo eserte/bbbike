@@ -154,8 +154,9 @@ sub allocate_colors {
     $lightblue   = [0.73,0.84,0.97];
     $middlegreen = [0,0.78,0];
     $lightgreen  = [200/256,1,200/256];
-    $rose        = [map { $_/256} 215, 184, 200];
+    $rose        = [map { $_/256 } 215, 184, 200];
     $black       = [0,0,0];
+    $darkgrey    = [map { $_/256 } 63, 63, 63];
 }
 
 sub allocate_fonts {
@@ -605,39 +606,31 @@ sub draw_route {
 	}
     }
 
-##XXX gestrichelte Route
-#      my $brush; # should be *outside* the next block!!!
-#      my $line_style;
-#      if ($self->{RouteWidth}) {
-#  	# fette Routen für die WAP-Ausgabe (B/W)
-#  	$brush = GD::Image->new($self->{RouteWidth}, $self->{RouteWidth});
-#  	$brush->colorAllocate($im->rgb($black));
-#  	$im->setBrush($brush);
-#  	$line_style = GD::gdBrushed();
-#      } elsif ($brush{Route}) {
-#  	$im->setBrush($brush{Route});
-#  	$line_style = GD::gdBrushed();
-#      } else {
-#  	# Vorschlag von Rainer Scheunemann: die Route in blau zu zeichnen,
-#  	# damit Rot-Grün-Blinde sie auch erkennen können. Vielleicht noch
-#  	# besser: rot-grün-gestrichelt
-#  	$im->setStyle($darkblue, $darkblue, $darkblue, $red, $red, $red);
-#  	$line_style = GD::gdStyled();
-#      }
-
-    $im->set_stroke_color(@$red);
-    $im->set_line_width(4);
+    $im->set_line_width(6);
 
     # Route
     if (@multi_c1) {
 	for my $c1 (@multi_c1) {
 	    my @c1 = @$c1;
 	    if (@c1) {
-		$im->moveto(map { sprintf "%.2f", $_ } $transpose->(@{ $c1[0] }));
-		for(my $i = 1; $i <= $#c1; $i++) {
-		    $im->lineto(map { sprintf "%.2f", $_ } $transpose->(@{ $c1[$i] }));
+		for my $def (
+			     # Prepared to use alternate colors, but I
+			     # did not found a good pair so far. Use
+			     # darker red, to not conflicht with $red
+			     # used in Bundesstraßen.
+			     [[0.4, 0, 0], 0],
+			     [[0.4, 0, 0], 7],
+			    ) {
+		    my($color, $phase) = @$def;
+		    $im->set_stroke_color(@$color);
+		    $im->set_dash_pattern([4, 10], $phase) if $im->can('set_dash_pattern');
+		    $im->moveto(map { sprintf "%.2f", $_ } $transpose->(@{ $c1[0] }));
+		    for(my $i = 1; $i <= $#c1; $i++) {
+			$im->lineto(map { sprintf "%.2f", $_ } $transpose->(@{ $c1[$i] }));
+		    }
+		    $im->stroke;
 		}
-		$im->stroke;
+		$im->set_dash_pattern([],0) if $im->can('set_dash_pattern');
 	    }
 	}
     }
