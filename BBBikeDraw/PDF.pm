@@ -208,12 +208,21 @@ sub draw_map {
 		    last if !@{$s->[1]};
 		    my $cat = $s->[2];
 		    $cat =~ s{::.*}{};
+		    my $is_area = 0;
+		    if ($cat =~ /^F:(.*)/) {
+			$cat = $1;
+			$is_area = 1;
+		    }
 		    next if $restrict && !$restrict->{$cat};
 
 		    my($ss, $bbox) = transpose_all($s->[1], $transpose);
 		    next if (!bbox_in_region($bbox, $self->{PageBBox}));
 
-		    $im->set_line_width(($width{$cat}||1)*1+2);
+		    if ($is_area) {
+			$im->set_line_width(2);
+		    } else {
+			$im->set_line_width(($width{$cat}||1)*1+2);
+		    }
 		    $im->set_stroke_color(@{ $outline_color{$cat} || [0,0,0] });
 
 		    $im->moveto(@{ $ss->[0] });
@@ -221,7 +230,7 @@ sub draw_map {
 			$im->lineto(@$xy);
 		    }
 		    # close polygon
-		    if ($cat =~ m{^F:} && "@{ $ss->[0] }" ne "@{ $ss->[-1] }") {
+		    if ($is_area && "@{ $ss->[0] }" ne "@{ $ss->[-1] }") {
 			$im->lineto(@{ $ss->[0] });
 		    }
 		    $im->stroke;
