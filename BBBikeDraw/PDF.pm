@@ -182,9 +182,10 @@ sub draw_map {
     $self->_get_nets;
     $self->{FlaechenPass} = 1;
 
-    my @netz = @{ $self->{_Net} };
-    my @outline_netz = @{ $self->{_OutlineNet} };
-    my @netz_name = @{ $self->{_NetName} };
+    # XXX del:
+    #my @netz = @{ $self->{_Net} };
+    #my @outline_netz = @{ $self->{_OutlineNet} };
+    #my @netz_name = @{ $self->{_NetName} };
     my %str_draw = %{ $self->{_StrDraw} };
     my %p_draw = %{ $self->{_PDraw} };
     my $title_draw = $self->{_TitleDraw};
@@ -196,77 +197,81 @@ sub draw_map {
 	$restrict = { map { ($_ => 1) } @{ $self->{Restrict} } };
     }
 
-    if ($self->{Outline}) {
-	foreach my $strecke (@outline_netz) {
-	    $strecke->init;
-	    while(1) {
-		my $s = $strecke->next;
-		last if !@{$s->[1]};
-		my $cat = $s->[2];
-		$cat =~ s{::.*}{};
-		next if $restrict && !$restrict->{$cat};
+    for my $layer_def (@{ $self->{_Layers} }) {
+	my($strecke, $strecke_name, $is_outline) = @$layer_def;
 
-		my($ss, $bbox) = transpose_all($s->[1], $transpose);
+	if ($is_outline) {
+	    if ($self->{Outline}) {
+		$strecke->init;
+		while(1) {
+		    my $s = $strecke->next;
+		    last if !@{$s->[1]};
+		    my $cat = $s->[2];
+		    $cat =~ s{::.*}{};
+		    next if $restrict && !$restrict->{$cat};
+
+		    my($ss, $bbox) = transpose_all($s->[1], $transpose);
+		    next if (!bbox_in_region($bbox, $self->{PageBBox}));
+
+		    $im->set_line_width(($width{$cat}||1)*1+2);
+		    $im->set_stroke_color(@{ $outline_color{$cat} || [0,0,0] });
+
+		    $im->moveto(@{ $ss->[0] });
+		    for my $xy (@{$ss}[1 .. $#$ss]) {
+			$im->lineto(@$xy);
+		    }
+		    # close polygon
+		    if ($cat =~ m{^F:} && "@{ $ss->[0] }" ne "@{ $ss->[-1] }") {
+			$im->lineto(@{ $ss->[0] });
+		    }
+		    $im->stroke;
+		}
+	    }
+	} else {
+	    my $flaechen_pass = $self->{FlaechenPass};
+	    for my $s ($self->get_street_records_in_bbox($strecke)) {
+		my $cat = $s->[Strassen::CAT];
+
+		my($ss, $bbox) = transpose_all($s->[Strassen::COORDS], $transpose);
 		next if (!bbox_in_region($bbox, $self->{PageBBox}));
+		next if ($cat =~ $BBBikeDraw::bahn_bau_rx); # Ausnahmen: in Bau
 
-		$im->set_line_width(($width{$cat}||1)*1+2);
-		$im->set_stroke_color(@{ $outline_color{$cat} || [0,0,0] });
-
+		# move to first point
 		$im->moveto(@{ $ss->[0] });
-		for my $xy (@{$ss}[1 .. $#$ss]) {
-		    $im->lineto(@$xy);
-		}
-		$im->stroke;
-	    }
-	}
-    }
 
-    foreach my $strecke_i (0 .. $#netz) {
-	my $strecke = $netz[$strecke_i];
-	my $strecke_name = $netz_name[$strecke_i];
-	my $flaechen_pass = $self->{FlaechenPass};
-	for my $s ($self->get_street_records_in_bbox($strecke)) {
-	    my $cat = $s->[Strassen::CAT];
-
-	    my($ss, $bbox) = transpose_all($s->[Strassen::COORDS], $transpose);
-	    next if (!bbox_in_region($bbox, $self->{PageBBox}));
-	    next if ($cat =~ $BBBikeDraw::bahn_bau_rx); # Ausnahmen: in Bau
-
-	    # move to first point
-	    $im->moveto(@{ $ss->[0] });
-
-	    if ($cat =~ /^F:(.*)/) {
-		my $cat = $1;
-		next if ($strecke_name eq 'flaechen' &&
-			 (($flaechen_pass == 1 && $cat eq 'Pabove') ||
-			  ($flaechen_pass == 2 && $cat ne 'Pabove'))
-			);
-		$im->set_line_width(1);
-		if (my($r,$g,$b) = $cat =~ m{^\#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$}i) {
-		    ($r,$g,$b) = (hex($r)/255,hex($g)/255,hex($b)/255);
-		    $im->set_stroke_color($r,$g,$b);
-		    $im->set_fill_color($r,$g,$b);
+		if ($cat =~ /^F:(.*)/) {
+		    my $cat = $1;
+		    next if ($strecke_name eq 'flaechen' &&
+			     (($flaechen_pass == 1 && $cat eq 'Pabove') ||
+			      ($flaechen_pass == 2 && $cat ne 'Pabove'))
+			    );
+		    $im->set_line_width(1);
+		    if (my($r,$g,$b) = $cat =~ m{^\#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$}i) {
+			($r,$g,$b) = (hex($r)/255,hex($g)/255,hex($b)/255);
+			$im->set_stroke_color($r,$g,$b);
+			$im->set_fill_color($r,$g,$b);
+		    } else {
+			$im->set_stroke_color(@{ $color{$cat} || [0,0,0] });
+			$im->set_fill_color  (@{ $color{$cat} || [0,0,0] });
+		    }
+		    for my $xy (@{$ss}[1 .. $#$ss]) {
+			$im->lineto(@$xy);
+		    }
+		    $im->fill;
 		} else {
+		    $cat =~ s{::.*}{};
+		    next if $restrict && !$restrict->{$cat};
+		    $im->set_line_width(($width{$cat} || 1) * 1);
 		    $im->set_stroke_color(@{ $color{$cat} || [0,0,0] });
-		    $im->set_fill_color  (@{ $color{$cat} || [0,0,0] });
+		    for my $xy (@{$ss}[1 .. $#$ss]) {
+			$im->lineto(@$xy);
+		    }
+		    $im->stroke;
 		}
-		for my $xy (@{$ss}[1 .. $#$ss]) {
-		    $im->lineto(@$xy);
-		}
-		$im->fill;
-	    } else {
-		$cat =~ s{::.*}{};
-		next if $restrict && !$restrict->{$cat};
-		$im->set_line_width(($width{$cat} || 1) * 1);
-		$im->set_stroke_color(@{ $color{$cat} || [0,0,0] });
-		for my $xy (@{$ss}[1 .. $#$ss]) {
-		    $im->lineto(@$xy);
-		}
-		$im->stroke;
 	    }
-	}
-	if ($strecke_name eq 'flaechen') {
-	    $self->{FlaechenPass}++;
+	    if ($strecke_name eq 'flaechen') {
+		$self->{FlaechenPass}++;
+	    }
 	}
     }
 

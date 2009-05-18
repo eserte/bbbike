@@ -667,10 +667,14 @@ sub set_draw_elements {
 sub _get_nets {
     my($self) = @_;
 
-    # Netze zeichnen
+    # Draw nets
+    # Old style, will be removed some day:
     my @netz;
     my @netz_name;
     my @outline_netz;
+    # New style:
+    my @layers; # array elements: [Strassen object, net name, is_outline]
+
     my(%str_draw, $title_draw, %p_draw);
 
     foreach (@{$self->{Draw}}) {
@@ -690,8 +694,10 @@ sub _get_nets {
     # data files with absolute paths (user supplied)
     foreach my $f (@{$self->{Draw}}) {
 	if ($f =~ m|^/|) {
-	    push @netz, new Strassen $f;
+	    my $s = Strassen->new($f);
+	    push @netz, $s,
 	    push @netz_name, $f;
+	    push @layers, [$s, $f, 0];
 	}
     }
 
@@ -705,32 +711,41 @@ sub _get_nets {
 	     ['flaechen',         'flaechen'],
 	    ) {
 	if ($str_draw{$def->[1]}) {
-	    push @netz, new Strassen $def->[0];
+	    my $s = Strassen->new($def->[0]);
+	    push @netz, $s;
 	    push @netz_name, $def->[1];
+	    push @layers, [$s, $def->[1], 0];
 	}
     }
     if ($str_draw{'wasser'}) {
 	my $wasser = $self->_get_gewaesser(Strdraw => \%str_draw);
 	push @netz, $wasser;
-	push @netz_name, "wasser";
+	push @netz_name, 'wasser';
+	push @layers, [$wasser, 'wasser', 1];
+	push @layers, [$wasser, 'wasser', 0];
 #XXX not yet, siehe auch comment bei PDF.pm
 #	push @outline_netz, $wasser;
 	if ($self->can_multiple_passes("flaechen") && $str_draw{"flaechen"}) {
-	    push @netz, new Strassen "flaechen";
-	    push @netz_name, "flaechen";
+	    my $s = Strassen->new("flaechen");
+	    push @netz, $s;
+	    push @netz_name, 'flaechen';
+	    push @layers, [$s, 'flaechen', 0];
 	}
     }
     my $multistr = $self->_get_strassen(Strdraw => \%str_draw);
     if ($str_draw{'str'}) {
 	push @netz, $multistr;
 	push @outline_netz, $multistr;
-	push @netz_name, "str";
+	push @netz_name, 'str';
+	push @layers, [$multistr, 'str', 1];
+	push @layers, [$multistr, 'str', 0];
     }
     if ($str_draw{'fragezeichen'}) {
 	eval {
 	    my $s = Strassen->new("fragezeichen");
 	    push @netz, $s;
-	    push @netz_name, "fragezeichen";
+	    push @netz_name, 'fragezeichen';
+	    push @layers, [$s, 'fragezeichen', 0];
 	};
 	warn $@ if $@;
     }
@@ -741,14 +756,17 @@ sub _get_nets {
 	    ) {
 	my($file, $type) = @$def;
 	if ($str_draw{$type}) {
-	    push @netz, new Strassen $file;
+	    my $s = Strassen->new($file);
+	    push @netz, $s;
 	    push @netz_name, $type;
+	    push @layers, [$s, $type, 0];
 	}
     }
 
     $self->{_Net} = \@netz;
     $self->{_OutlineNet} = \@outline_netz;
     $self->{_NetName} = \@netz_name;
+    $self->{_Layers} = \@layers;
     $self->{_StrDraw} = \%str_draw;
     $self->{_PDraw} = \%p_draw;
     $self->{_TitleDraw} = $title_draw;
