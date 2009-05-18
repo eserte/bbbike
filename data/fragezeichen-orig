@@ -83,9 +83,14 @@ Streitstr. (werden die vorhandenen Bordsteinradwege ersetzt)?	? -3040,16246 -305
 #
 #: section ignorieren vvv
 #: section Straßen in Planung vvv
+#: last_checked: 2009-05-18
+Friedrichsbrücke Richtung Bodestraße: ein Schild "verkehrsberuhigt" hängt hier, aber wo ist das Ende?	? 10086,12725 10050,12705
+#: last_checked: 2009-05-18
+#: next_check: 2009-05-31
+Jägerstr.: nach den Bauarbeiten in der Glinkastraße evtl. hier auch guter Asphalt	?::inwork 9108,11961 9201,11968 9394,11996
 #: last_checked: 2009-05-15
 Palisadenstr./Friedenstr.: Kreuzungsbereich wird umgebaut	?::inwork 12635,12629 12891,12549
-#: last_checked: 2009-05-14
+#: last_checked: 2009-05-18
 Wilhelmstr./Zimmerstr.: Ampel wird gebaut	?::inwork 9162,11286
 #: next_check: 2009-12-01:
 #: XXX und nicht vergessen: Eintrag in gesperrt dann entfernen! Und es existiert keine besondere Vorfahrtsregelung mehr. Evtl. auch Straßenkategorisierung bzw. comments_kfzverkehr anpassen.
@@ -120,11 +125,6 @@ B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstre
 Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420 20582,18468 20624,18485 20915,18601 21143,18704 21278,18786 21332,18819
 #: by: http://www.reinickendorf.de/index_8368_de.html
 Wittenauer Str.: Ausbau zum verkehrsberuhigten Bereiche, außerdem Ersetzen des Pflasters durch eine Betonpflasterfahrbahn (Verbundsteinpflaster?), bis 2009-03-01 (Frühjahr 2009)	? 6666,22988 6651,23020 6644,23036 6634,23076 6712,23252 6727,23287 6770,23417
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0710/nachricht2827.html vvv
-#: next_check: 2009-05-31
-#: last_checked: 2009-03-16
-Bauarbeiten, danach neu asphaltiert, bis 2009-05-31	?::inwork 9220,11781 9218,11793 9208,11872 9201,11968 9183,12076
-#: by: ^^^
 Blankenfelde, Berliner Str. und Hauptstr: nach Bauarbeiten (bis 2009-04-01) vielleicht bessere Fahrbahnqualität?	?::inwork 9528,23240 9490,23531 9425,23693 9625,23781 9774,23936
 #: by: http://www.berliner-stadtplan.com/topic/bln/str/x_wgs/22.04/y_wgs/28.92/from/form.html
 #: by: http://www.morgenpost.de/content/2006/09/20/bezirke/855150.html
@@ -265,7 +265,6 @@ Waldweg	? 14699,27471 15097,27852 15108,27979 15757,28054
 Feldweg	? 15757,28054 16058,28106 16094,28419 16107,28551
 Waldweg?	? 24522,50570 24472,50937 24689,51352 24768,52171
 Alternative	? 24081,50440 24472,50937
-	? 32558,62481 32276,63124 32315,63437
 #: by ^^^
 Popitzweg: Fußgängerzone?	? 1361,14431 1881,14425
 #: last_checked: 2009-05-09
@@ -1250,8 +1249,6 @@ Langhansstr.: Qualität?	? -12276,831 -12411,881 -12325,1145 -12408,1176
 Hessestr.: Qualität?	? -12655,385 -12649,472 -12744,573 -12781,663
 Graf-von-Schwerin-Str.: Qualität zwischen Erich-Arendt-Str. und Bruno-Taut-Str.?	? -13125,1508 -13067,1506
 Wilhelm-Staab-Str./Yorckstr.: Überqueren des Kanals möglich?	? -13001,-1329
-#: XXX unklarer Eintrag in strum2005.pdf (Museumstr. -> Bodestr.)
-Museumstr.: zur "Bodestr." umbenannt?	? 9943,12642 9884,12712
 # XXX: unklare Angaben von Nils Fiedler, leider keine Rückfrage möglich: Q1 (Asphalt); q2 (Fußgängerzone); RW1 (Radweg); Gefälle "5°"? #Mühlenfeldstr.: Steigung, wenn ja, wo genau?	? 3707,22864 3739,22693 3743,22642 3753,22534 3728,22507 3601,22484 3531,22440 3353,22348 3243,22311 3134,22292 3046,22292 2757,22310 2587,22332
 #Dorfstr. (Malchow): seit November 2005 Bauarbeiten für neuen Radweg, bereits fertig?	? 15606,19839 15656,19946 15686,20100 15778,20350 15900,20531 16025,20631
 #: XXX: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0506/nachricht1941.html

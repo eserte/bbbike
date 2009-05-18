@@ -9873,10 +9873,13 @@ EOF
      { from  => 1231707233, # 2009-01-11 21:53
        until => 1243807199, # 2009-05-31 23:59
        text  => 'Glinkastr. (Mitte) in beiden Richtungen zwischen Jägerstr. und Taubenstr. Baustelle, Straße vollständig gesperrt (bis Ende 05.2009)',
-       type  => 'gesperrt',
+       type  => 'handicap',
        source_id => 'IM_009496',
        data  => <<EOF,
-userdel	2::inwork 9208,11872 9201,11968
+#: last_checked: 2009-05-18
+userdel	q4::inwork 9208,11872 9201,11968
+userdel	q4::inwork; 9208,11872 9218,11793
+userdel	q4::inwork; 9183,12076 9201,11968
 EOF
      },
      { from  => 1190237300, # 2007-09-19 23:28
@@ -10793,7 +10796,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007651',
        data  => <<EOF,
-userdel	1::inwork 10309,12854 10171,12769
+userdel	1::inwork 10309,12854 10264,12826 10171,12769
 EOF
      },
      { from  => 1198018800, # 2007-12-19 00:00
@@ -13547,11 +13550,12 @@ EOF
      },
      { from  => 1238954738, # 2009-04-05 20:05
        until => 1243807199, # 2009-05-31 23:59
-       text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Behrenstr. und Französische Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2009)',
+       text  => 'Glinkastr. (Mitte) Baustelle, Fahrbahn gesperrt (bis Ende 05.2009)',
        type  => 'handicap',
        source_id => 'IM_012052',
        data  => <<EOF,
-userdel	q4::inwork; 9164,12172 9183,12076
+#: last_checked: 2009-05-18
+userdel	q4::inwork 9164,12172 9183,12076
 EOF
      },
      { from  => 1238954788, # 2009-04-05 20:06
@@ -14030,7 +14034,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012636',
        data  => <<EOF,
-#: last_checked: 2009-05-15
+#: last_checked: 2009-05-18
 #: check_frequency: 7d
 userdel	q4::inwork 12822,12067 12852,12306 12869,12425
 EOF
