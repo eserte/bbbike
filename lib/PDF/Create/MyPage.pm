@@ -61,6 +61,16 @@ if (!defined &set_line_width) {
     };
 }
 
+if (!defined &set_dash_pattern) {
+    *set_dash_pattern = sub {
+	my($page, $array, $phase) = @_;
+	$phase = 0 if !defined $phase;
+	my $pdf = $page->{'pdf'};
+	$pdf->page_stream($page);
+	$pdf->add("[@$array] $phase d");
+    };
+}
+
 if (!defined &circle) {
     *circle = sub {
 	my($page, $x, $y, $r) = @_;
