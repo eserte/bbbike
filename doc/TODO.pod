@@ -3696,7 +3696,7 @@ erst einmal einen TTF-Font mit passendem Glyph finden...
 
 Routenbrush: kann man transparente Pixel einfügen, also rot -
 transparent - blau - transparent? (Versucht, scheint aber mit gd2.0.33
-nicht so schön zu klappen) Ebenfalls zu übelegen bei BBBikeDraw::PDF.
+nicht so schön zu klappen)
 
 =item * (E2)
 
@@ -3785,9 +3785,11 @@ Draw street labels.
 
 =over
 
-=item * (M3)
+=item * (M5)
 
-Show more fields in route list (just like in web interface)
+Show more fields in route list (just like in web interface). The
+comments column for comments_path and maybe comments_misc is
+especially important.
 
 =item * (H3) (feature)
 
@@ -3854,24 +3856,6 @@ E<quot>(A -) BE<quot> zu E<quot>-> BE<quot> optimieren (mit leftarrow)
 But: it seems that PDF does not know anything about Unicode
 characters; and the PDF::Create documentation states that the ZingBats
 and Symbol fonts are not useable.
-
-=item * (H5) (fixed?)
-
-Acrobat Reader often shows an error message for
-BBBikeDraw/PDF.pm-created files. No problems with xpdf and other
-viewers.
-
-Reproducible with:
-
-    perl t/bbbikedraw.t -only PDF -save -bbox 8985,9344,14677,11721 -drawtypes title,ampel,berlin,wasser,faehren,flaechen,ubahn,sbahn,str,ort,wind,rbahn
-
-Error vanishes if E<quot>rbahnE<quot> is left from the drawtypes.
-
-Maybe it has something to do with drawing stuff outside of the page
-area. Use devel/pdftotk.pl to see what's really drawn.
-
--> Believed to be fixed! Maybe do some mass testing with a lot of
-auto-generated PDFs.
 
 =item * (H3)
 
@@ -3978,6 +3962,11 @@ Implement street labeling.
 
 Draw street outlines above areas. Siehe
 Viktoria-Park/Kreuzbergstr./Katzbachstr.
+
+=item * (M1) (feature)
+
+Verwendung von $self->{_Layers} wie bei BBBikeDraw::PDF, damit das
+Layer Stacking insbesondere bei Outlines richtig ist.
 
 =back
 
