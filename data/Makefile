@@ -125,7 +125,9 @@ all:	targets data-images check .modified .rsync_include make_misc
 	@$(PERL) -e 'for (@ARGV) { do { unlink($$_) and warn "Removed $$_\n" } if (-M $$_ >= 1) }' \
 		.check_bbbike-temp-blockings-optimized \
 		.check_dates \
-		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd
+		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd \
+		${PERSISTENTTMPDIR}/.check_fragezeichen-indoor-nextcheck.bbd \
+		${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor-nextcheck.bbd
 
 targets:	${TARGETS}
 
@@ -147,6 +149,8 @@ slow-checks:	check-categories \
 
 persistent-tmp:	${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd \
+		${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor-nextcheck.bbd \
+		${PERSISTENTTMPDIR}/.check_fragezeichen-indoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/strassen_in_planung.bbd \
 		${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt \
@@ -772,6 +776,25 @@ ${XXX_TARGETS:C/^/${PERSISTENTTMPDIR}\/.XXX-/:C/$/-$(i)/}:	$(i)-orig
 .for xxxtype in ${XXX_NON_OTHER}
 	cp -f /tmp/XXX_${xxxtype}_$(i)-orig.bbd ${PERSISTENTTMPDIR}/.XXX-${xxxtype}-$(i)
 .endfor
+.endfor
+
+.for doormode in indoor outdoor
+${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-${doormode}-nextcheck.bbd:	\
+		Makefile \
+		${SOURCE_TARGETS:S|$|-orig|} \
+		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
+	echo -n > ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~
+	echo "#: line_dash: 8, 5" >> ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~
+	echo "#: line_width: 5" >> ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~
+	echo "#:" >> ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~
+	${MISCSRCDIR}/create_fragezeichen_nextcheck.pl --${doormode}-mode \
+	    --fragezeichen-mode fragezeichen-orig \
+	    --no-fragezeichen-mode \
+	    ${SOURCE_TARGETS:S|fragezeichen||:S|$|-orig|} \
+	    ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd \
+		>> ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~
+	mv -f ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~ ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd
+	touch ${PERSISTENTTMPDIR}/.check_fragezeichen-${doormode}-nextcheck.bbd
 .endfor
 
 ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd:	\

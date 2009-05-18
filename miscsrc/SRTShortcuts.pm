@@ -205,6 +205,14 @@ sub add_button {
 		 -command => sub {
 		     add_new_layer("str", "$ENV{HOME}/.bbbike/geocoded_images.bbd");
 		 }],
+		[Button => "fragezeichen-outdoor-nextcheck",
+		 -command => sub {
+		     add_new_layer("str", "$bbbike_rootdir/tmp/fragezeichen-outdoor-nextcheck.bbd");
+		 }],
+		[Button => "fragezeichen-indoor-nextcheck",
+		 -command => sub {
+		     add_new_layer("str", "$bbbike_rootdir/tmp/fragezeichen-indoor-nextcheck.bbd");
+		 }],
 		[Button => "fragezeichen-nextcheck",
 		 -command => sub {
 		     add_new_layer("str", "$bbbike_rootdir/tmp/fragezeichen-nextcheck.bbd");
