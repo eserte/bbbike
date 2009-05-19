@@ -1,0 +1,144 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use FindBin;
+use lib "$FindBin::RealBin/..";
+
+use vars qw($VERSION);
+$VERSION = 0.01;
+
+use open OUT => ':locale';
+my $codeset;
+eval {
+    require I18N::Langinfo;
+    I18N::Langinfo->import(qw(langinfo CODESET));
+    $codeset = langinfo(CODESET());
+};
+if ($@) {
+    warn "langinfo and/or CODESET probably not available, assuming iso-8859-1.\n";
+    $codeset = 'iso-8859-1';
+}    
+
+use DB_File;
+use Encode qw(decode);
+use Getopt::Long;
+use XML::LibXML;
+
+use constant CONTEXT_LINES => 30; # to be on the safe side...
+
+sub usage {
+    die "usage: $0 searchterm osmfile ...\n";
+}
+
+sub grep_osm_fh {
+    my($search_term, $osm_file) = @_;
+    my @common_opts = (-A => CONTEXT_LINES, -B => CONTEXT_LINES);
+    my @cmd;
+    if ($osm_file =~ m{\.bz2$}) {
+	@cmd = ('bzegrep', @common_opts, $search_term, $osm_file);
+    } elsif ($osm_file =~ m{\.gz$}) {
+	@cmd = ('zegrep', @common_opts, $search_term, $osm_file);
+    } else {
+	@cmd = ('egrep', @common_opts, $search_term, $osm_file);
+    }
+    local $ENV{LANG}   = 'C';
+    local $ENV{LC_ALL} = 'C';
+    # assume all XML files are utf8
+    open my $fh, '-|:encoding(utf-8)', @cmd
+	or die "Can't run '@cmd': $!";
+    $fh;
+}
+
+sub set_info_handler {
+    my($osm_file) = @_;
+    no warnings 'signal'; # INFO is usually only available on BSD systems
+    $SIG{INFO} = sub {
+	my $msg = "File $osm_file";
+	print STDERR $msg, "\n";
+	require Carp; Carp::carp('Currently');
+    };
+}
+
+GetOptions() or usage;
+
+my $index_dir = "$ENV{HOME}/.bbbike/cache";
+if (!-d $index_dir) {
+    die "Please create directory '$index_dir' manually";
+}
+my $index_file = $index_dir . '/osm_nodes_lonlat.db' . ($DB_File::db_version eq '' || $DB_File::db_version <= 1 ? '' : int($DB_File::db_version));
+
+tie my %nodes_lonlat, 'DB_File', $index_file, O_RDONLY, 0644
+    or die "Cannot tie '$index_file': $!";
+
+my $search_term = shift @ARGV;
+usage if !defined $search_term;
+$search_term = decode $codeset, $search_term;
+
+my @osm_files = @ARGV;
+
+my $p = XML::LibXML->new;
+
+my $osm_file_i = 0;
+for my $osm_file (@osm_files) {
+    my $fh = grep_osm_fh($search_term, $osm_file);
+    set_info_handler($osm_file);
+
+    my $buf = "";
+    local $/ = 4096;
+    while(<$fh>) {
+	$buf .= $_;
+    }
+
+    while ($buf =~ m{(<(?:way|node) .*?</(?:way|node)>)}gs) {
+	my $xml_frag = $1;
+	if ($xml_frag =~ m{$search_term}) {
+	    my $frag = $p->parse_balanced_chunk($xml_frag);
+	    my @coords;
+	    for my $nd_ref (map { $_->getAttribute('ref') } $frag->findnodes('//nd')) {
+		my $lonlat = $nodes_lonlat{$nd_ref};
+		if (defined $lonlat) {
+		    push @coords, $lonlat;
+		}
+	    }
+	    if (!@coords) {
+		warn "No coords found in $xml_frag";
+		next;
+	    }
+
+	    my @tags;
+	    for my $tag ($frag->findnodes('//tag')) {
+		my $k = $tag->getAttribute('k');
+		my $v = $tag->getAttribute('v');
+		s{[\t\n]}{ }g for $k, $v;
+		push @tags, "$k=$v";
+	    }
+	    # re-sort, name= first
+	    @tags = map { $_->[1] } sort { $a->[0] <=> $b->[0] } map { [m{^name=} ? 0 : 1, $_] } @tags;
+	    print join(" ", @tags) . "\tX " . join(" ", @coords), "\n";
+	}
+    }
+}
+__END__
+
+=head1 NAME
+
+grep_osm - find nodes and ways in osm data by name
+
+=head1 SYNOPSIS
+
+    ./grep_osm searchregexp osmfile ...
+
+=cut
+
