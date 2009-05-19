@@ -44,7 +44,7 @@ sub usage {
 
 sub grep_osm_fh {
     my($search_term, $osm_file) = @_;
-    my @common_opts = (-A => CONTEXT_LINES, -B => CONTEXT_LINES);
+    my @common_opts = ('-i', -A => CONTEXT_LINES, -B => CONTEXT_LINES);
     my @cmd;
     if ($osm_file =~ m{\.bz2$}) {
 	@cmd = ('bzegrep', @common_opts, $search_term, $osm_file);
@@ -103,14 +103,19 @@ for my $osm_file (@osm_files) {
 
     while ($buf =~ m{(<(?:way|node) .*?</(?:way|node)>)}gs) {
 	my $xml_frag = $1;
-	if ($xml_frag =~ m{$search_term}) {
-	    my $frag = $p->parse_balanced_chunk($xml_frag);
+	if ($xml_frag =~ m{$search_term}i) {
+	    my $frag = $p->parse_string($xml_frag);
+	    $frag = $frag->documentElement;
 	    my @coords;
-	    for my $nd_ref (map { $_->getAttribute('ref') } $frag->findnodes('//nd')) {
-		my $lonlat = $nodes_lonlat{$nd_ref};
-		if (defined $lonlat) {
-		    push @coords, $lonlat;
+	    if ($frag->nodeName eq 'way') {
+		for my $nd_ref (map { $_->getAttribute('ref') } $frag->findnodes('//nd')) {
+		    my $lonlat = $nodes_lonlat{$nd_ref};
+		    if (defined $lonlat) {
+			push @coords, $lonlat;
+		    }
 		}
+	    } else { # node
+		push @coords, join ',', $frag->getAttribute('lon'), $frag->getAttribute('lat');
 	    }
 	    if (!@coords) {
 		warn "No coords found in $xml_frag";
@@ -124,8 +129,16 @@ for my $osm_file (@osm_files) {
 		s{[\t\n]}{ }g for $k, $v;
 		push @tags, "$k=$v";
 	    }
-	    # re-sort, name= first
-	    @tags = map { $_->[1] } sort { $a->[0] <=> $b->[0] } map { [m{^name=} ? 0 : 1, $_] } @tags;
+	    for my $k (qw(user timestamp id)) {
+		my $v = $frag->getAttribute($k);
+		if (defined $v) {
+		    s{[\t\n]}{ }g for $v;
+		    push @tags, "$k=$v";
+		}
+	    }
+
+	    # re-sort, name= first, created_by last
+	    @tags = map { $_->[1] } sort { $a->[0] <=> $b->[0] } map { [m{^name=} ? 0 : m{^created_by=} ? 2 : 1, $_] } @tags;
 	    print join(" ", @tags) . "\tX " . join(" ", @coords), "\n";
 	}
     }
