@@ -692,8 +692,9 @@ sub show_any_diff {
 						);
 			if ($ans =~ m{yes}i) {
 			    add_done_file($vmz_lbvs_done_file, $file, $digest);
-			    if ($listener) {
+			    if ($listener && Tk::Exists($listener)) {
 				fill_vmz_lbvs_files($listener);
+				$listener->raise;
 			    }
 			    $t->destroy;
 			}
