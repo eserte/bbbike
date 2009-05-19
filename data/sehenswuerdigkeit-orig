@@ -81,7 +81,7 @@ Friedrichstadtpalast	F:SW 9275,13134 9282,13072 9381,13080 9368,13141
 Kalkscheune	SW 9424,13140
 Tacheles	SW 9332,13319
 Kanzleramt	F:SW 8094,12632 7826,12632 7933,12727 8093,12727
-#: XXX: Problem: das Dach überdeckt die Straße!
+#: XXX_prog: Problem: das Dach überdeckt die Straße!
 #Paul-Löbe-Haus	F:SW 8295,12727 8467,12728 8467,12611 8295,12611
 Paul-Löbe-Haus	F:SW 8467,12728 8323,12727 8323,12610 8467,12611
 Reichstag	F:SW|IMG:sehenswuerdigkeit_img/reichstag 8454,12561 8452,12428 8535,12429 8532,12563
@@ -119,7 +119,7 @@ Kaiser-Wilhelm-Gedächtniskirche	IMG:sehenswuerdigkeit_img/gedaechtniskirche|ANCH
 #: XXX_prog: Reihenfolge Europa-Center -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
 #: alias: i-Punkt
 Europa-Center	F:Shop 5868,10875 5992,10809 6020,10864 6021,10930 5984,10937 5941,10921 5882,10925
-# XXX: warum ist das hier im KaDeWe???? Touristeninformation Berlin im Europa-Center	SW|IMG:touristinfo 6137,10595
+# XXX del: warum ist das hier im KaDeWe???? Touristeninformation Berlin im Europa-Center	SW|IMG:touristinfo 6137,10595
 Aquarium	F:SW 6177,11089 6187,11062 6105,11026 6085,11053 6148,11074
 Elefantentor (Zoologischer Garten)	SW 6046,11028
 Theater des Westens	F:SW|IMG:theater 5304,11072 5298,11008 5341,11000 5344,11072
