@@ -13324,8 +13324,8 @@ userdel	q4::inwork 8536,11063 8483,10900
 EOF
      },
      { from  => 1240517859, # 2009-04-23 22:17
-       until => 1242424799, # 2009-05-15 23:59
-       text  => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt; sowie Einbahnstraßenregelungen in der Giselastr. und Stadthausstr. (bis Mitte 05.09)',
+       until => 1243807199, # 2009-05-31 23:59
+       text  => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt; sowie Einbahnstraßenregelungen in der Giselastr. und Stadthausstr. (bis Ende 05.09)',
        type  => 'handicap',
        source_id => 'IM_011767',
        data  => <<EOF,
@@ -14062,6 +14062,50 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 28511,103728 28338,104176 27732,105878 27213,107158 25934,109206 25606,109314
+EOF
+     },
+     { from  => 1242712036, # 2009-05-19 07:47
+       until => 1243288800, # 2009-05-26 00:00
+       text  => 'Ebertstr. (Tiergarten) in beiden Richtungen zwischen Behrenstr. und Scheidemannstr. Veranstaltung, Straße vollständig gesperrt (bis 25.05.2009) ',
+       type  => 'gesperrt',
+       source_id => 'IM_012693',
+       data  => <<EOF,
+userdel	2::temp 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
+EOF
+     },
+     { from  => 1242712062, # 2009-05-19 07:47
+       until => 1245103199, # 2009-06-15 23:59
+       text  => 'Gartenstr. (Mitte) Richtung Torstr. vor der Einmündung in die Torstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 06.2009)',
+       type  => 'handicap',
+       source_id => 'IM_012706',
+       data  => <<EOF,
+userdel	q4::inwork; 9531,13797 9668,13629
+EOF
+     },
+     { from  => 1242712177, # 2009-05-19 07:49
+       until => 1243288800, # 2009-05-26 00:00
+       text  => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Großer Stern und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (bis 25.05.2009)',
+       type  => 'gesperrt',
+       source_id => 'IM_012692',
+       data  => <<EOF,
+userdel	2::temp 8515,12242 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 6828,12031
+EOF
+     },
+     { from  => 1242712208, # 2009-05-19 07:50
+       until => 1243288800, # 2009-05-26 00:00
+       text  => 'Yitzhak-Rabin-Str. (Tiergarten) in beiden Richtungen zwischen Scheidemannstr. und Str. des 17. Juni Veranstaltung, Straße vollständig gesperrt (bis 25.05.2009)',
+       type  => 'gesperrt',
+       source_id => 'IM_012694',
+       data  => <<EOF,
+userdel	2::temp 8055,12186 8119,12414
+EOF
+     },
+     { from  => 1242770400, # 2009-05-20 00:00
+       until => 1242943200, # 2009-05-22 00:00
+       text  => 'B 112 Frankfurter-, Bahnhofstraße OD Neuzelle 16. Bibulibustag Vollsperrung 21.05.2009-21.05.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::temp 96017,-33547 96014,-33803
 EOF
      },
     );
