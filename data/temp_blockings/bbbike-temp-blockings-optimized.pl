@@ -887,11 +887,11 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        {
          'source_id' => 'IM_012342',
-         'until' => 1243807199,
-         'text' => 'Rathausstr. (Mitte) Richtung Alexanderplatz zwischen Breitestr. und Spandauer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.09)',
-         'from' => 1240517963,
+         'until' => 1301608800,
+         'text' => 'Rathausstr. (Mitte) Richtung Alexanderplatz zwischen Breitestr. und Spandauer Str. Baustelle, Straße vollständig gesperrt (bis März 2011)',
+         'from' => 1242770815,
          'id' => 1627,
-         'data' => 'userdel	q4::inwork; 10267,12305 10362,12351 10422,12395 10476,12432 10584,12507
+         'data' => 'userdel	q4::inwork 10267,12305 10362,12351 10422,12395 10476,12432 10584,12507
 ',
          'type' => 'handicap'
        },
@@ -1123,6 +1123,42 @@ userdel	q4::inwork 8389,11378 8374,11479
          'from' => 1242770400,
          'id' => 1664,
          'data' => 'userdel	q4::temp 96017,-33547 96014,-33803
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1254348000,
+         'text' => 'B 087 Luckau - Herzberg OD Schlieben Deckenerneuerung Vollsperrung 25.05.2009-30.09.2009 ',
+         'from' => 1243116000,
+         'id' => 1665,
+         'data' => 'userdel	q4::inwork 10533,-76130 10891,-76066
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1253311200,
+         'text' => 'L 014 Kyritz - Wittstock OD Herzsprung grundhafter Straßenausbau Vollsperrung 20.07.2009-18.09.2009 ',
+         'from' => 1247954400,
+         'id' => 1666,
+         'data' => 'userdel	q4::inwork -54249,73343 -54091,72917 -54034,72687
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1248127200,
+         'text' => 'L 014 Kyritz - Wittstock OD Herzsprung grundhafter Straßenausbau Vollsperrung 25.05.2009-20.07.2009 ',
+         'from' => 1243116000,
+         'id' => 1667,
+         'data' => 'userdel	q4::inwork -54338,71670 -54116,72465
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1245362400,
+         'text' => 'L 144 Herzsprung - Blumenthal OD Herzsprung grundhafter Straßenausbau Vollsperrung 10.06.2009-18.06.2009 ',
+         'from' => 1244498400,
+         'id' => 1668,
+         'data' => 'userdel	q4::inwork -54665,72030 -54116,72465
 ',
          'type' => 'handicap'
        }
