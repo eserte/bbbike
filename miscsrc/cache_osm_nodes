@@ -1,0 +1,121 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use FindBin;
+use lib "$FindBin::RealBin/..";
+
+use vars qw($VERSION);
+$VERSION = 0.01;
+
+use DB_File;
+use Getopt::Long;
+use XML::LibXML::Reader;
+
+sub usage {
+    die "usage: $0 osmfile ...\n";
+}
+
+sub open_osm {
+    my $osm_file = shift;
+    my $fh;
+    if ($osm_file =~ m{\.gz$}) {
+	if (!eval { require PerlIO::gzip; 1 }) {
+	    die "No support for gzipped osm files, PerlIO::gzip is missing.\n";
+	}
+	open $fh, "<:gzip", $osm_file
+	    or die "Can't open file $osm_file: $!";
+    } elsif ($osm_file =~ m{\.bz2$}) {
+## See https://rt.cpan.org/Ticket/Display.html?id=42241
+# 	if (!eval { require PerlIO::via::Bzip2; 1 }) {
+# 	    die "No support for bzip2-compressed osm files, PerlIO::via::Bzip2 is missing.\n";
+# 	}
+# 	open $fh, "<:via(Bzip2)", $osm_file
+# 	    or die "Can't open file $osm_file: $!";
+	open $fh, "-|", "bunzip2", "--stdout", $osm_file
+	    or die "Can't run bunzip2 on $osm_file: $!";
+    }
+
+    my $reader;
+    if ($fh) {
+	$reader = XML::LibXML::Reader->new(IO => $fh);
+    } else {
+	$reader = XML::LibXML::Reader->new(location => $osm_file);
+    }
+
+    if (!$reader) {
+	if (!-e $osm_file) {
+	    die "The file '$osm_file' does not exist.\n";
+	} elsif (!-r $osm_file) {
+	    die "The file '$osm_file' is not readable.\n";
+	} else {
+	    die "Another error occured while parsing '$osm_file'.\n";
+	}
+    }
+    $reader;
+}
+
+sub set_info_handler {
+    my($osm_file, $reader) = @_;
+    no warnings 'signal'; # INFO is usually only available on BSD systems
+    $SIG{INFO} = sub {
+	my $msg = "File $osm_file";
+	if ($reader) {
+	    no warnings 'uninitialized';
+	    $msg .= sprintf ", bytes consumed %d, line %d, current node name '%s', id=%s", $reader->byteConsumed, $reader->lineNumber, $reader->name, $reader->getAttribute('id');
+	}
+	print STDERR $msg, "\n";
+	require Carp; Carp::carp('Currently');
+    };
+}
+
+GetOptions() or usage;
+
+my $index_dir = "$ENV{HOME}/.bbbike/cache";
+if (!-d $index_dir) {
+    die "Please create directory '$index_dir' manually";
+}
+my $index_file = $index_dir . '/osm_nodes_lonlat.db' . ($DB_File::db_version eq '' || $DB_File::db_version <= 1 ? '' : int($DB_File::db_version));
+
+tie my %nodes_lonlat, 'DB_File', $index_file, O_RDWR|O_CREAT, 0644
+    or die "Cannot tie '$index_file': $!";
+
+my @osm_files = @ARGV;
+
+my $osm_file_i = 0;
+for my $osm_file (@osm_files) {
+    my $reader = open_osm($osm_file);
+    set_info_handler($osm_file, $reader);
+
+    while($reader->nextElement > 0) {
+	if ($reader->name eq 'node') {
+	    my $id  = $reader->getAttribute('id');
+	    my $lat = $reader->getAttribute('lat');
+	    my $lon = $reader->getAttribute('lon');
+	    $nodes_lonlat{$id} = $lon.','.$lat;
+	}
+    }
+}
+__END__
+
+=head1 NAME
+
+cache_osm_nodes - create a node id to lon/lat cache from osm data
+
+=head1 SYNOPSIS
+
+    ./cache_osm_nodes osmfile ...
+
+=cut
+
