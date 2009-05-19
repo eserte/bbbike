@@ -4,7 +4,7 @@
 # $Id: MyPage.pm,v 1.5 2008/10/06 22:02:59 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2009 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -12,7 +12,7 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-package PDF::Create::Page;
+package PDF::Create::MyPage;
 
 use strict;
 use vars qw($VERSION);
