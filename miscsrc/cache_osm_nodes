@@ -117,5 +117,9 @@ cache_osm_nodes - create a node id to lon/lat cache from osm data
 
     ./cache_osm_nodes osmfile ...
 
+=head1 SEE ALSO
+
+L<grep_osm>.
+
 =cut
 
