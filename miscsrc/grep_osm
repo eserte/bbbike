@@ -32,11 +32,12 @@ if ($@) {
 }    
 
 use DB_File;
-use Encode qw(decode);
+use Encode qw(decode encode);
 use Getopt::Long;
 use XML::LibXML;
 
 use constant CONTEXT_LINES => 30; # to be on the safe side...
+use constant OSM_FILE_ENCODING => 'utf-8'; # assume all XML files are utf8
 
 sub usage {
     die "usage: $0 searchterm osmfile ...\n";
@@ -45,6 +46,7 @@ sub usage {
 sub grep_osm_fh {
     my($search_term, $osm_file) = @_;
     my @common_opts = ('-i', -A => CONTEXT_LINES, -B => CONTEXT_LINES);
+    $search_term = encode OSM_FILE_ENCODING, $search_term;
     my @cmd;
     if ($osm_file =~ m{\.bz2$}) {
 	@cmd = ('bzegrep', @common_opts, $search_term, $osm_file);
@@ -55,8 +57,7 @@ sub grep_osm_fh {
     }
     local $ENV{LANG}   = 'C';
     local $ENV{LC_ALL} = 'C';
-    # assume all XML files are utf8
-    open my $fh, '-|:encoding(utf-8)', @cmd
+    open my $fh, '-|:encoding('.OSM_FILE_ENCODING.')', @cmd
 	or die "Can't run '@cmd': $!";
     $fh;
 }
@@ -101,10 +102,16 @@ for my $osm_file (@osm_files) {
 	$buf .= $_;
     }
 
-    while ($buf =~ m{(<(?:way|node) .*?</(?:way|node)>)}gs) {
+    # Hack to find way and node elements in XML. Ignores
+    # empty-elements (because they cannot have "name" tags, anyway).
+    while ($buf =~ m{(<(?:way|node) [^>]+(?<!/)>.*?</(?:way|node)>)}gs) {
 	my $xml_frag = $1;
 	if ($xml_frag =~ m{$search_term}i) {
-	    my $frag = $p->parse_string($xml_frag);
+	    my $frag = eval { $p->parse_string($xml_frag) };
+	    if ($@) {
+		warn "Cannot parse\n$xml_frag\n$@";
+		next;
+	    }
 	    $frag = $frag->documentElement;
 	    my @coords;
 	    if ($frag->nodeName eq 'way') {
@@ -152,6 +159,29 @@ grep_osm - find nodes and ways in osm data by name
 =head1 SYNOPSIS
 
     ./grep_osm searchregexp osmfile ...
+
+=head1 DESCRIPTION
+
+Search one or more osmfiles for the specified search regexp. The
+search regexp will be treated case-insensitive (but see L</BUGS>). The
+extended regular expression syntax is used (like in L<egrep(1)>).
+
+Before using the program the osm files should be indexed using
+L<cache_osm_nodes>, otherwise no coordinate mapping is possible.
+
+Output is in a bbd-like format, which can be loaded into L<bbbike>.
+
+=head1 BUGS
+
+Search is case-insensitive, but only for ASCII characters.
+
+The search regexp is internally used by C<egrep> and C<perl>. Try to
+use only regular expression constructs which are compatible with both
+programs.
+
+=head1 SEE ALSO
+
+L<cache_osm_nodes>.
 
 =cut
 
