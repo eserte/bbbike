@@ -13249,7 +13249,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: last_checked: 2009-05-11
-#: check_frequency: 14d
+#: check_frequency: 7d
 userdel	1::inwork 12229,10014 12398,9938 12556,9862
 EOF
      },
@@ -13533,7 +13533,7 @@ EOF
        text  => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-05-12 vvv
+#: last_checked: 2009-05-18 vvv
 userdel	q4::inwork; 14597,11069 14530,11137
 userdel	q4::inwork 14530,11137 14465,11195
 #: last_checked ^^^
@@ -13949,10 +13949,12 @@ EOF
        text  => 'Bauarbeiten in der Wühlischstraße (Einbahnstraße Richtung Osten) und Holteistraße (Kreuzungsbereich zur Wühlischstraße ist gesperrt).',
        type  => 'handicap',
        data  => <<EOF,
+#: check_frequency: 7d vvv
 #: last_checked: 2009-05-09 vvv
 userdel	q4::inwork 14639,11512 14575,11407
 userdel	q4::inwork; 14759,11339 14674,11370 14575,11407
 #: last_checked: ^^^
+#: check_frequency ^^^
 EOF
      },
      { from  => 1241647200, # 2009-05-07 00:00
