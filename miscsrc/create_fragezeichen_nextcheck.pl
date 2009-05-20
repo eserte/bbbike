@@ -90,6 +90,10 @@ sub handle_file {
 		 if (!$y) {
 		     warn "*** WARN: Malformed last_checked directive '$dir->{next_check}[0]' in '$file', ignoring...\n";
 		 } else {
+		     my $check_frequency_days = $check_frequency_days;
+		     if (exists $dir->{check_frequency}) {
+			 ($check_frequency_days) = $dir->{check_frequency}[0] =~ m{(\d+)}; # XXX duplicated, see above
+		     }
 		     my $last_checked_date = sprintf "%04d-%02d-%02d", $y,$m,$d;
 		     ($y,$m,$d) = Add_Delta_Days($y,$m,$d, $check_frequency_days);
 		     my $date = sprintf "%04d-%02d-%02d", $y,$m,$d;
