@@ -11,6 +11,7 @@ BBBikeDraw.pm
 BBBikeDraw/BBBikeGoogleMaps.pm
 BBBikeDraw/GD.pm
 BBBikeDraw/GDHeavy.pm
+BBBikeDraw/GoogleMapsStatic.pm
 BBBikeDraw/ImageMagick.pm
 BBBikeDraw/Imager.pm
 BBBikeDraw/MapServer.pm
@@ -1616,6 +1617,7 @@ t/strassen-kml.t
 t/strassen-kreuzungen.t
 t/strassen-lazy.t
 t/strassen-storable.t
+t/strassen-stream.t
 t/strassen-tie.t
 t/strassen.t
 t/strassennetz.t
