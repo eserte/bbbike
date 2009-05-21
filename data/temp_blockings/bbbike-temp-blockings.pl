@@ -14142,4 +14142,22 @@ EOF
 userdel	q4::inwork -54665,72030 -54116,72465
 EOF
      },
+     { from  => 1242851109, # 2009-05-20 22:25
+       until => 1243256400, # 2009-05-25 15:00
+       text  => 'Oberfeldstr. (Marzahn) in beiden Richtungen zwischen Schulstr. und Nordpromenade Veranstaltung, gesperrt. Ebenso ist die Nordpromenade gesperrt. (bis 25.05.09, 15 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_012746',
+       data  => <<EOF,
+userdel	2::temp 20599,11938 20610,12050
+EOF
+     },
+     { from  => 1242851164, # 2009-05-20 22:26
+       until => 1243202400, # 2009-05-25 00:00
+       text  => 'Scheidemannstr. (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Ebertstr. Veranstaltung, Straße vollständig gesperrt (bis 24.05.09 nachts)',
+       type  => 'gesperrt',
+       source_id => 'IM_012708',
+       data  => <<EOF,
+userdel	2::temp 8540,12420 8400,12417 8374,12416 8119,12414
+EOF
+     },
     );

@@ -1150,6 +1150,26 @@ userdel	q4::inwork 8389,11378 8374,11479
          'data' => 'userdel	q4::inwork -54665,72030 -54116,72465
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_012746',
+         'until' => 1243256400,
+         'text' => 'Oberfeldstr. (Marzahn) in beiden Richtungen zwischen Schulstr. und Nordpromenade Veranstaltung, gesperrt. Ebenso ist die Nordpromenade gesperrt. (bis 25.05.09, 15 Uhr)',
+         'from' => 1242851109,
+         'id' => 1669,
+         'data' => 'userdel	2::temp 20599,11938 20610,12050
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_012708',
+         'until' => 1243202400,
+         'text' => 'Scheidemannstr. (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Ebertstr. Veranstaltung, Straße vollständig gesperrt (bis 24.05.09 nachts)',
+         'from' => 1242851164,
+         'id' => 1670,
+         'data' => 'userdel	2::temp 8540,12420 8400,12417 8374,12416 8119,12414
+',
+         'type' => 'gesperrt'
        }
      
 );
