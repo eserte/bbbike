@@ -13248,7 +13248,7 @@ EOF
        text  => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2009-05-11
+#: last_checked: 2009-05-20
 #: check_frequency: 7d
 userdel	1::inwork 12229,10014 12398,9938 12556,9862
 EOF
@@ -13944,8 +13944,8 @@ EOF
 userdel	q3::inwork 12121,20969 12189,20959
 EOF
      },
-     { from  => undef, # 
-       until => undef, #
+     { from  => 1242840466, # 
+       until => 1242840469, #
        text  => 'Bauarbeiten in der Wühlischstraße (Einbahnstraße Richtung Osten) und Holteistraße (Kreuzungsbereich zur Wühlischstraße ist gesperrt).',
        type  => 'handicap',
        data  => <<EOF,

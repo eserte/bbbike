@@ -604,8 +604,8 @@ userdel	1::inwork 10614,19907 10742,19632
          'text' => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
          'from' => undef,
          'id' => 1563,
-         'data' => '#: last_checked: 2009-05-11
-#: check_frequency: 14d
+         'data' => '#: last_checked: 2009-05-20
+#: check_frequency: 7d
 userdel	1::inwork 12229,10014 12398,9938 12556,9862
 ',
          'type' => 'gesperrt'
@@ -749,7 +749,7 @@ userdel	q4::inwork; 15681,10801 15674,10851
          'text' => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
          'from' => undef,
          'id' => 1597,
-         'data' => '#: last_checked: 2009-05-12 vvv
+         'data' => '#: last_checked: 2009-05-18 vvv
 userdel	q4::inwork; 14597,11069 14530,11137
 userdel	q4::inwork 14530,11137 14465,11195
 #: last_checked ^^^
@@ -975,18 +975,7 @@ userdel	q2::inwork 12095,20832 11686,21058
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => undef,
-         'text' => 'Bauarbeiten in der Wühlischstraße (Einbahnstraße Richtung Osten) und Holteistraße (Kreuzungsbereich zur Wühlischstraße ist gesperrt).',
-         'from' => undef,
-         'id' => 1646,
-         'data' => '#: last_checked: 2009-05-09 vvv
-userdel	q4::inwork 14639,11512 14575,11407
-userdel	q4::inwork; 14759,11339 14674,11370 14575,11407
-#: last_checked: ^^^
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
