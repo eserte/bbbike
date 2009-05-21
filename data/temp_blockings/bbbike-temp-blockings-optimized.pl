@@ -1048,15 +1048,7 @@ userdel	q4::inwork 8389,11378 8374,11479
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1244325600,
-         'text' => 'B 096 Luckau - Baruth zw. Gießmannsdorf und Rüdingsdorf Straßenbauarbeiten Vollsperrung 05.06.2009-06.06.2009 ',
-         'from' => 1244066400,
-         'id' => 1658,
-         'data' => 'userdel	2::inwork 31525,-58272 31401,-57829 31077,-57151 30859,-56304
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1249077600,
          'text' => 'L 025 Prenzlau - Fürstenwerder zw. OA Schönermark u. OE Kraatz Straßenbauarbeiten Vollsperrung 25.05.2009-31.07.2009 ',
@@ -1170,6 +1162,51 @@ userdel	q4::inwork 8389,11378 8374,11479
          'data' => 'userdel	2::temp 8540,12420 8400,12417 8374,12416 8119,12414
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1245621600,
+         'text' => 'B 103 Kyritz - Pritzwalk zw. Kyritz u. Gantikow, Bahnübergang Erneuerung Bahnübergang Vollsperrung 25.05.2009-21.06.2009 ',
+         'from' => 1243116000,
+         'id' => 1671,
+         'data' => 'userdel	2::inwork -60072,61047 -61764,62280
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1243807200,
+         'text' => 'L 014 Rosa-Luxemburg-Straße OL Wittstock, Kreuzungsberereich Bohnekampweg Bau Kreisverkehr Vollsperrung 25.05.2009-31.05.2009 ',
+         'from' => 1243116000,
+         'id' => 1672,
+         'data' => 'userdel	q4::inwork -53648,82294 -53491,81954 -53248,81574
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1245448800,
+         'text' => 'L 015 Menz - Rheinsberg OD Menz Straßenbau Vollsperrung 25.05.2009-19.06.2009 ',
+         'from' => 1243116000,
+         'id' => 1673,
+         'data' => 'userdel	q4::inwork -15379,77129 -17592,77812
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1248127200,
+         'text' => 'L 015 Menz - Rheinsberg zw. Menz u. Rheinsberg Straßenbau Vollsperrung 09.06.2009-20.07.2009 ',
+         'from' => 1244412000,
+         'id' => 1674,
+         'data' => 'userdel	2::inwork -24815,76635 -23305,77059 -22937,77020 -22504,76981 -21965,77030 -21728,77161 -21621,77313 -20227,77714 -19875,77881 -19494,78080 -19300,78146 -18544,78020 -17592,77812
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1249682400,
+         'text' => 'L 141 B5 - Neustadt OD Dreetz Straßenbauarbeiten Vollsperrung 27.07.2009-07.08.2009 ',
+         'from' => 1248559200,
+         'id' => 1675,
+         'data' => 'userdel	q4::inwork -54456,42981 -53872,42916
+',
+         'type' => 'handicap'
        }
      
 );
