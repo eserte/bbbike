@@ -91,6 +91,8 @@ my @osm_files = @ARGV;
 
 my $p = XML::LibXML->new;
 
+my $needs_header = 1;
+
 my $osm_file_i = 0;
 for my $osm_file (@osm_files) {
     my $fh = grep_osm_fh($search_term, $osm_file);
@@ -146,6 +148,18 @@ for my $osm_file (@osm_files) {
 
 	    # re-sort, name= first, created_by last
 	    @tags = map { $_->[1] } sort { $a->[0] <=> $b->[0] } map { [m{^name=} ? 0 : m{^created_by=} ? 2 : 1, $_] } @tags;
+
+	    if ($needs_header) {
+		print <<EOF;
+#: #: -*- coding: $codeset -*-
+#: encoding: $codeset
+#: map: polar
+#: note: filtered '$search_term' in '@osm_files'
+#:
+EOF
+		$needs_header = 0;
+	    }
+
 	    print join(" ", @tags) . "\tX " . join(" ", @coords), "\n";
 	}
     }
