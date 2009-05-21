@@ -149,7 +149,9 @@ slow-checks:	check-categories \
 
 persistent-tmp:	${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor-nextcheck.bbd \
+		${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-indoor-nextcheck.bbd \
+		${PERSISTENTTMPDIR}/fragezeichen-indoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/strassen_in_planung.bbd \
