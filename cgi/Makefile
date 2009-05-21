@@ -49,4 +49,7 @@ GNUmakefile:	Makefile ../miscsrc/b2gmake
 rights:
 	chmod ugo+rx *.cgi
 	chmod ugo+r,ugo-x *.cgi.config
+# The next line is silly, but unfortunately the file is checked into
+# the sf CVS without x bit, and this causes problems when using git-cvs
+	chmod ugo-x bbbikesoapserver.cgi
 	[ ! -e ../tmp/www ] || chmod 777 ../tmp/www
