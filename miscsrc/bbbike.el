@@ -260,9 +260,11 @@
 (defun bbbike-now ()
   "Insert the current date in bbbike-temp-blockings.pl"
   (interactive)
-  (shell-command "date +%s" t)
-  (forward-word 1)
-  (delete-char 1)
-  )
+  (let ((now (format "%s" (float-time))))
+    (if (not (string-match "^\\([0-9]+\\)" now) )
+	(error (concat "cannot match " now)))
+    (setq now (substring now (match-beginning 1) (match-end 1)))
+    (insert now)
+    ))
 
 (provide 'bbbike-mode)
