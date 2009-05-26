@@ -836,7 +836,8 @@ permission:
 # --inplace should be safe enough; data on the stick are not precious
 # in this stage.
 USB_STICK_NUMBER=0
-copy-cvs-to-stick:	copy-to-cvs
+copy-cvs-to-stick:
+	@echo 'Assume that CVS is up-to-date...'
 	@[ ! -d /mnt/stick ] && ( \
 	    echo -n "Create the mount directory /mnt/stick? (CTRL-C to abort)"; \
 	    read yn; \
