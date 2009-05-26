@@ -1352,7 +1352,7 @@ Gartenufer: Parkweg	Q1 5780,11622 6239,11399 6342,11353 6346,11326
 (südliches Spreeufer): teils gutes Kopfsteinpflaster, teils Parkweg, teils Asphalt	Q1 5579,12231 5737,12281 5804,12362 5962,12553 6029,12693 6078,12848 6123,12887 6182,12900
 Elisabeth-Abegg-Str.: Kopfsteinpflaster mit großen Fugen	Q3 7936,12906 7806,12759
 Spreeuferweg: glatte Gehwegplatten und fester Sandweg an den Seiten	Q0 7064,12419 7217,12383 7360,12430 7489,12540 7541,12582
-Spreeuferweg: fester Sandweg	Q1 7541,12582 7791,12706 7915,12795 7967,12860
+Spreeuferweg: fester Sandweg	Q1 7541,12582 7791,12706 7904,12803 7945,12878
 Delbrückstr. (Neukölln): Kopfsteinpflaster	Q2 12743,6645 12860,6667 12981,6689 13125,6717
 Rungiusstr.: sehr guter Asphalt	Q0 13158,5490 13136,5593 13116,5689 13105,5748 13077,5893 13064,5953 13027,6168
 #: by: andreas voigt:
@@ -2477,6 +2477,8 @@ Radweg am Müggelsee: sehr guter Asphalt	Q0+ 25396,4417 25347,4320 25373,4266 253
 Am Müggelsee: Asphalt	Q0 25474,2848 25667,2787 25857,2654 26006,2615
 Bölschestr.: Kopfsteinpflaster	Q2 25539,5237 25544,5326
 Myliusgarten: schlechtes Kopfsteinpflaster	Q3 25548,5398 25466,5408 25272,5417
+Agnes-von-Zahn-Harnack-Str.: Kopfsteinpflaster	Q2 7795,13093 7867,13127 7938,13150
+Katharina-Paulus-Str.: Katharina-Paulus-Str	Q2 7867,13106 7867,13127
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -8803,7 +8805,7 @@ Schlegelstr.: Asphalt	Q0 9316,13870 9231,13843 9042,13707
 Claire-Waldoff-Str.: Asphalt	Q0 9236,13228 9114,13217
 Am Zirkus: Asphalt	Q1 9118,13070 9145,13020
 Am Zirkus: Asphalt	Q1 9089,13004 9145,13020 9192,13032 9226,12909
-(Parkweg Spreebogenpark): wassergebundene Decke	Q1 8017,12826 8021,12839 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8275,12936 8341,12911 8417,12846
+(Parkweg Spreebogenpark): Asphalt	Q0 8017,12826 8021,12839 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8275,12936 8341,12911 8417,12846
 (Parkweg Spreebogenpark): wassergebundene Decke	Q1 8275,12758 8275,12936
 (südliches Spreeufer - Gustav-Heinemann-Brücke): wassergebundene Decke	Q1 8032,12889 8053,12871 8116,12938
 (südliches Spreeufer - Spreebogenpark): wassergebundene Decke	Q1 8427,12871 8341,12911
@@ -8897,9 +8899,9 @@ Sesenheimer Str.: Asphalt	Q0 3844,11649 3866,11473
 Sesenheimer Str.: Asphalt	Q0 3866,11473 3874,11380
 Sesenheimer Str.: Kopfsteinpflaster	Q2 3874,11380 3877,11337
 Herderstr. (Charlottenburg): Asphalt	Q0 4451,11558 4435,11343
-Clara-Jaschke-Str.: Asphalt	Q0 7764,13236 7768,13175 7779,13012
-Berta-Benz-Str.: Asphalt	Q0 7779,13012 7866,13009
-Katharina-Paulus-Str.: Asphalt	Q0 7866,13009 7863,12927
+Clara-Jaschke-Str.: Asphalt	Q0 7764,13236 7789,13186 7795,13093 7799,13019
+Berta-Benz-Str.: Asphalt	Q0 7799,13019 7866,13009 7941,13014
+Katharina-Paulus-Str.: Asphalt	Q0 7867,13106 7866,13009 7863,12927
 Flemingstr.: Verbundsteine	Q1 7317,12751 7322,12735
 Joachim-Karnatz-Allee: Asphalt	Q0 7095,12571 7142,12584 7187,12598 7415,12590 7475,12590
 Joachim-Karnatz-Allee: Asphalt	Q0 7142,12584 7131,12615
@@ -8914,8 +8916,11 @@ Ingeborg-Drewitz-Allee: Asphalt	Q0 7538,12729 7539,12754
 Spenerstr.: Kopfsteinpflaster	Q2 6877,12607 6907,12777 6966,13075
 (Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7415,12590 7418,12725
 (Joachim-Karnatz-Allee - Spreeuferweg): Parkweg	Q1 7475,12590 7489,12540
-Spreeuferweg am Hauptbahnhof: Verbundsteinpflaster	Q1+ 7967,12860 8044,12989 8159,13032
-nördliches Spreeufer: Verbundsteinpflaster	Q1+ 8277,13032 8315,13005 8401,12973 8471,12904 8498,12870
+Spreeuferweg am Hauptbahnhof: Kopfsteinpflaster	Q2 7945,12878 7966,12913
+#: note: etwas grobe Pflasterung:
+Spreeuferweg am Hauptbahnhof: Verbundsteinpflaster	Q1+ 7966,12913 8044,12989 8159,13032
+Rampe: glatt gepflastert	Q0 8044,12989 8110,13042
+nördliches Spreeufer: Verbundsteinpflaster	Q1+ 8277,13032 8315,13005 8401,12973 8464,12919 8498,12870
 (südliches Spreeufer): wassergebundene Decke	Q1 5186,12843 5173,12973 5128,13012 4973,13083 4837,13091 4733,13076 4711,13055 4644,13003 4627,12951 4599,12789
 (südliches Spreeufer): grobes Kopfsteinpflaster, Gehwegplatten	Q3 4599,12789 4759,12681
 (Heisenbergstr. - südliches Spreeufer): wassergebundene Decke	Q1 5065,13010 5128,13012
@@ -9696,7 +9701,7 @@ Memlingstr.: sehr schlechtes Kopfsteinpflaster	Q3 4134,3825 4265,3661
 #: by: Chantal [AM] vvv
 Rettigweg: schlechtes Kopfsteinpflaster	Q2 9828,17659 9760,17612 9706,17570
 Pradelstr.: mäßiger Asphalt	Q2 9760,17612 9663,17734
-Friedrich-List-Ufer: sehr guter Asphalt	Q0 8110,13042 8107,13146 8102,13304 8098,13419
+Friedrich-List-Ufer: sehr guter Asphalt	Q0 8110,13042 8106,13130 8102,13304 8098,13419
 #: by: ^^^
 #: by: anonymous [AM]
 Reinbeckstr.: Kopfsteinpflaster	Q2 18343,6318 18310,6223

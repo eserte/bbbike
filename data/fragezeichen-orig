@@ -218,7 +218,6 @@ Uferweg am Jungfernsee: geht der Uferweg bis Nedlitz weiter? Für Radfahrer befah
 #: XXX_prog: verbessern, wenn der entsprechende Routingtext besser aussehen würde (also z.B. "nach rechts und sofort wieder nach links")
 Kleineweg: ist hier leicht versetzt	? 9130,7804 9131,7652 9120,7600
 Fußweg Mollstr. - Büschingstr.: existiert dieser tatsächlich?	? 11905,13069 11881,13147
-Spreeuferweg: genauer einzeichnen, genaue Führung an der Elisabeth-Abegg-Str. (Treppen alle richtig?)	? 7936,12906 7942,12879 7948,12863 7957,12864 7967,12860 8044,12989
 Reinickendorfer Route 5, wo geht es weiter?	? 6558,18947 6442,18839
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20080728.1510.105902.html
 Oberspreestr.: südliche Nebenfahrbahn hat einen mittigen Asphaltbelag, Europaradweg wird hier entlanggeführt, genauer anschauen	? 19534,5242 19715,5185 19737,5176 20689,4862
@@ -585,7 +584,7 @@ Stern - Nudow: Durchfahrt möglich? Qualität (laut "Berliner Umland" witterungsab
 F3 nach Marquardt: genaue Wegführung? Qualität?	? -19309,4359 -19403,4631 -18701,4578
 #XXX del: F3 nach Marquardt: genaue Wegführung? Laut "mobil-potsdam.de" Kopfsteinpflaster	? -18701,4574 -18722,4681 -18743,4789 -18811,4782
 Joachimsthal - Altkünkendorf: Qualität?	? 35512,66695 38125,66800 39287,67537 39575,67262 39875,66425
-Schwedt - Gartz: Qualität?	? 69331,73165 69850,73437 69872,73500 69887,73650 70225,73562 70752,73805 71090,74113 71255,74433 71362,74950 71262,74987 71450,75037 71512,75737 72587,78862 72700,79387 72925,81275 73241,81946 72483,82148 73000,84300 73074,84238 73190,84219 73637,84225 73762,84750 74177,85231 74271,85435 74300,85700 74225,86237 74362,86887 74425,87450 74625,87850 74787,89037 74800,89500 74929,89762 75125,89937 75525,90125 75335,90277 75329,90359
+Schwedt - Gartz: Qualität?	? 72681,79349 72925,81275 73241,81946 72483,82148 73000,84300 73074,84238 73190,84219 73637,84225 73762,84750 74177,85231 74271,85435 74300,85700 74225,86237 74362,86887 74425,87450 74625,87850 74787,89037 74800,89500 74929,89762 75125,89937 75525,90125 75335,90277 75329,90359
 Gartz - B113: Qualität?	? 75502,90490 75637,90262 76023,90222 76100,90212 76450,90525 76846,91410 76925,92050 77330,92723 77262,93150 77362,93337 77350,93537 77912,93762 78137,93950 78104,94070 78220,94287 78250,94612 78412,94812 78537,94775 78587,94887 78641,95024 78662,95275 78787,95425 78812,95825 78921,96072
 B2 - entlang der polnischen Grenze: Qualität?	? 76848,101276 76087,101337 75912,101137 75359,101224 74448,102157 73976,102559 74112,103100 74475,103750 74825,104062 74887,104275 75125,104387 75237,104637 75412,104775 75425,105250 75775,105512 76187,106212 75525,106650 75716,107215 75837,108375 75780,109058 75400,110350 74579,111943 74225,112737 74237,113462 73987,113512 74125,113863 72925,113675 72801,113578
 zur B158: Qualität?	? 56450,48250 56587,48550 57272,48978
@@ -614,12 +613,11 @@ Biesenbrow - Briest: Qualität (vom Osten her Plattenweg)?	? 52512,82471 53263,82
 #: note: vom Zug aus gesehen:
 Mürow - Henriettenhof: Qualität? im Bereich von Mürow asphaltiert	? 51971,72800 52072,72613 52361,72080
 Mürow - Henriettenhof: Qualität? südlich des Dorfes sah es wie ein Feldweg oder Kopfsteinpflaster aus (Q2 oder schlechter)	? 52361,72080 53612,69769 54031,69280
-Frauenhagen - Grünow: Qualität? laut "Regio-Cart" gut geeignet, der Anfang im Süden sah gut aus (asphaltiert)	? 52490,75434 54887,78437 54850,78692 54850,78769 54868,79271 54850,79357 54213,80545
-Biesenbrow - Schönermark: Qualität? (höchstwahrscheinlich asphaltiert)	? 51812,78462 52611,79156 52663,79186 53647,78765 53692,78714 53765,78628 53872,78613 53982,78634 54113,78631 54146,78628 54283,78677 54366,78714 54542,78720 54850,78692
-Schönermark - Biesenbrow: Qualität?	? 54850,78769 54542,78720
-Biesenbrow - Grünow: laut "Regio-Cart" gut geeignet	? 52611,79156 52632,79235 52720,79323 52830,79396 53973,80374 54000,80457 54061,80499 54119,80499 54213,80545
-Grünow - Passow: laut "Regio-Cart" gut geeignet	? 54213,80545 55200,80962 56459,82285 56977,82763
-Pinnow - Frauenhagen: laut "Regio-Cart" gut geeignet, das westliche Ende sah gut aus (asphaltiert), das südliche bei Pinnow ebenso	? 55703,74309 55612,74354 55164,74111 54952,74078 54562,74365 53687,74900 52490,75434
+Frauenhagen - Schönermark: Qualität? laut "Regio-Cart" gut geeignet, der Anfang im Süden sah gut aus (asphaltiert)	? 52490,75434 53312,76587 53555,77037 53868,77304 54146,77628 54332,77932
+Biesenbrow - Schönermark: Qualität? (höchstwahrscheinlich asphaltiert)	? 51812,78462 52611,79156 52663,79186 53647,78765 53692,78714 53765,78628 53872,78613 53982,78634 54113,78631 54146,78628 54283,78677 54366,78714 54542,78720
+Biesenbrow - Grünow: laut "Regio-Cart" gut geeignet	? 52611,79156 52632,79235 52720,79323 52830,79396 53973,80374 54000,80457 54061,80499 54119,80499
+Pinnow - Frauenhagen: laut "Regio-Cart" gut geeignet, das westliche Ende sah gut aus (asphaltiert)	? 54952,74078 54562,74365 53687,74900 52490,75434
+Passow, Mittelstr.: Qualität?	? 56975,82627 57185,82724 57426,82901
 Jamikow - Woltersdorf: Qualität? (wahrscheinlich nur ein Feldweg?)	? 61361,85231 61398,85335 61465,85414 61678,85560 62757,86072 63202,86383 63391,86474 63574,86547 63805,86748 64018,86876 64137,87068
 Altkünkendorf - Wolletz: laut "Regio-Cart" gut geeignet	? 41260,67587 41437,68012 40775,68125 40750,69175 40999,69391
 Wolletz Richtung Norden: laut "Regio-Cart" gut geeignet (zumindest in Wolletz Verbundsteinpflaster)	? 43101,69564 43250,71500 42941,72180
@@ -741,11 +739,9 @@ Boosen - Rosengarten: Qualität?	? 83441,-2496 83327,-2679 83327,-2778 83167,-278
 Frankfurt - Schlaubehammer: Qualität?	? 87379,-9565 87181,-9984 86831,-11347 86694,-11500 86458,-11941 86351,-12208 86442,-12444 86404,-12566 85391,-12772 84241,-13122 84104,-13419 83990,-13808 83929,-14623 83845,-14714 84051,-15392 84013,-16047 83914,-16184 83919,-16506
 Brieskow-Finkenheerd: Qualität?	? 90109,-16411 90175,-16367 90129,-16123 90183,-15925 90183,-15636 90259,-15331 90464,-15324 90632,-15087 91013,-15004
 Oder-Neiße-Radweg: Qualität?	? 90929,-14801 91203,-14745 91249,-14508 91340,-13206 91516,-13092 91767,-13412 92072,-13564 92856,-13747 93344,-13747 93664,-13838 94083,-14044 94821,-14569 95362,-14676 95949,-14592 96840,-14798 98188,-15598 99262,-16710 99316,-17441 99544,-18104 99734,-18363 99567,-19361 99232,-19841 98759,-20930 98112,-21608 98097,-22385 98417,-23177 99270,-24076 99468,-24601 99437,-25066 99117,-25531 98851,-25706 97647,-27138 97632,-27290 97343,-27595 97487,-27778 97609,-28204 97617,-28318 98066,-29720 98082,-29979 97952,-30634 97990,-31045 98866,-32386 98813,-32554 98950,-32820 99681,-33224 100214,-33399 101075,-33391 101227,-33460 102614,-34801 102614,-35204 102934,-35639 103063,-35692 103101,-35913 102347,-37010 102530,-37398 102690,-37924 102629,-38404 102896,-38746 102896,-39059 102698,-39455 102583,-39897 102720,-39958 102667,-40072 102400,-40140 102286,-40376 102309,-40826 102172,-41070 101677,-41572 101418,-41466 101159,-41473 100847,-41329 100458,-41915 99727,-42662 99300,-43225 99453,-43477 99565,-43453 99811,-43385 99933,-44147 99719,-44475 99674,-44764 99573,-44905
-Criewen - Schwedt: Qualität (vermutlich gut?)?	? 65206,68107 66470,69836 67262,71187 68312,72287 68281,72757
 Falkenberg - Liepe: Qualität (vermutlich nur mäßig?)?	? 48475,46175 48425,46625 48662,47600 49237,48087 49400,48437 49750,48625 49918,48858
 Crossiw - Gellmersdorf: Qualität?	? 55045,66286 54925,64862 54700,64125 54787,63762 54700,63500
 Gellmersdorf - Lüderitz: Qualität?	? 54874,63371 54975,63187 54712,63012 54662,62850 55100,61175 55462,60387 55443,60071
-Pinnow - Schönermark: Qualität? (das südliche Ende bei Pinnow sah gut aus, asphaltiert) 	? 55164,74111 55006,74618 54837,75112 54975,75812 54875,76587 54887,78437
 Grillenweg: Qualität? Stimmt der Straßen/Wegname? Ausschilderung vorhanden? nachts beleuchtet?	? 24236,5594 24225,5619 24216,5748 24197,5791 24150,5854 24126,5874 24111,5922 24122,6007
 #: note: Siehe auch http://www.pds-fraktion-treptow-koepenick.de/drucksache-5-908.html. Jupiterstr./Altglienicke aus der Datenbank herausnehmen.
 #: XXX Oder heißt sie weiterhin Jupiterstr.? Unklarer Eintrag von isabell komoll: mäßiger Asphalt, Fußgängerzone???
@@ -753,9 +749,8 @@ Str. 125a in "Kleine Usedomstr." umbenannt?	? 19497,1035 19541,1135
 Usedomstr.: Qualität?	? 19541,1135 19575,1239 19610,1349 19638,1436
 #: note: Siehe http://www.pds-fraktion-treptow-koepenick.de/drucksache-5-871.html
 Umbenenunng zu "Zu den Gosener Bergen"?	? 30640,-2803 30721,-2321
-Casekow - Luckow: Qualität? (Anfang in Casekow war gut asphaltiert)	? 63299,90673 63450,90852 63568,91321 63257,92335 63479,93319 63755,93760 63812,93867
 #: note: Straßenbau bis 13.6.2009 (mit Vollsperrung), evtl. danach gut geeignet?
-Luckow - Petershagen: Qualität?	? 63755,93760 65689,93950 66328,94287
+Luckow - Petershagen: Qualität?	? 63733,93765 65689,93950 66328,94287
 Hohenreinkendorf - Petershagen: Qualität?	? 71721,92864 70825,92985 70679,92967 70499,92989 69963,93144 69622,93126 69451,93153 69003,93257 68845,93278 66541,93799 66499,93857 66310,94244 66328,94287
 Tantow - Hohenreinkendorf: Qualität?	? 73031,97443 72935,97227 72879,97158 72847,96864 72865,96745 72897,96631 72941,96540 72995,96477 73135,96358 73130,96307 72969,96183 72879,96107 72839,96045 72460,95382 72425,95307 72017,93861 71928,93552 71851,93385 71805,93237 71755,93139 71721,92864
 Gartz - Casekow: Qualität? (wahrscheinlich asphaltiert)	? 74463,90856 73567,91014 72684,91075 72251,91014 71270,90630 71179,90588 70313,90240 70149,89844 69850,89844 69411,89801 69046,89808 68948,89838 68583,89899 68491,89868 68363,89887 67772,89948 67705,89923 65048,90027 63848,90368 63555,90551 63491,90572
@@ -766,8 +761,7 @@ Radekow - Pomellen: Qualität? (wahrscheinlich asphaltiert)	? 73101,100563 73110,
 Petershagen - Penkun: Qualität? (möglicherweise Platten- und/oder unbefestigter Fahrweg)	? 66328,94287 66395,94433 66312,94862 66250,95800 65112,98837
 Petershagen - Penkun: Qualität?	? 65112,98837 65149,99482
 Petershagen - Schönfeld: Qualität?	? 66328,94287 66438,94341 66703,94518 67038,94677 67087,94741 67132,94835 67193,94859 67379,94926 67928,95210 68674,95847 68729,95981 68735,96087 68750,96276 68735,96398 68756,96471 69031,96974 69049,97087 69003,97550 68964,97629 68954,97815
-Luckow - Penkun: Qualität?	? 63812,93867 63948,94326 64062,94762 64262,96387 65112,98837
-Luckow - Sommersdorf: Qualität?	? 63812,93867 63662,93989 62800,96175 62912,96800 62324,97382
+Luckow - Penkun: Qualität?	? 63948,94326 64062,94762 64262,96387 65112,98837
 Storkow - Büssow: Qualität? zumindest die östliche Ende asphaltiert	? 68928,100165 68714,99911 68107,99606 67815,99673
 Büssow - Penkun: Qualität? Feldweg!	? 68107,99606  67712,99425 66026,99515
 Büssow - Penkun: Qualität? (zumindest das westliche Ende wahrscheinlich asphaltiert)	? 67815,99673 67833,99771 67413,100429 66654,100131 66523,99936 66096,99655 66026,99515 65831,99460 65115,99600
@@ -788,7 +782,7 @@ Falkenthal - Bergsdorf: Kopfsteinpflaster, mindestens von Falkenthal her	? 2034,
 Jan-Petersen-Str.: Gibt es hier Radwege?	? 21030,16206 21196,16119 21108,15955 21086,15910
 # 2007-06-03: nix ist passiert: herausnehmen! Alter Markt: laut Message-ID: <2scvijF1io77eU1@uni-berlin.de> soll hier asphaltiert werden	?::inwork 22458,4565 22426,4609 22395,4678 22383,4703
 #XXX del done: Berlin-Usedom am Werbellinsee: laut Tsp vom 2004-10-04 wird hier 2005 ein Radweg gebaut, laut anderen Informationen bis 2006-12-15	?::inwork 30960,61370 30784,60950 30781,60566 30778,60221 30671,59984 30706,59802 30625,59562 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27359,56787 27137,56650 26792,56558 26404,56518 26145,56499 26037,56412 26028,56303
-Zichow-Lindenwegsiedlung: Qualität? Am westlichen Ende als "Lindenweg" ausgeschildert	? 54500,87934 51978,87962
+Zichow-Lindenwegsiedlung: Qualität?	? 54500,87934 52642,87955
 Prötzeler Ring: Qualität laut ADFC-Karte gut	? 21951,15918 21980,15857 22055,15698 22092,15610
 Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23297,14772 23288,14719 23298,14685 23379,14514
@@ -853,9 +847,9 @@ Bohnsdorfer Weg: Qualität? (laut ADFC-Karte mäßig geeignet)	? 20684,105 20668,11
 Calau - Werchow: Qualität?	? 48907,-72723 49300,-73237 49437,-74112 49539,-74585 49606,-74713 49618,-75018
 Werchow - Cabel: Qualität?	? 49618,-75018 49412,-75175 49075,-75387 48818,-75806 48692,-75633 48437,-75600 47821,-75451
 Potzlow - Strehlow: hier ist der Uckerseeweg und BU ausgeschildert, wie ist die genaue Route? (von Süden aus: Betonplatten)	? 39375,90456 39434,91129 39068,91189 39083,91639 38612,91950
-Carmzow - Hedwigshof: im weiteren Verlauf ebenfalls asphaltiert?	? 52635,109881 53437,109825 54050,109712 54450,109425
-Hedwigshof - Moor: existiert eine fahrbare Verbindung?	? 54450,109425 55250,109500 55293,109705
-Moor - Brüssow: Qualität?	? 55293,109705 56287,110437 57250,110862 57522,110764
+#: XXX Wo geht's zu den Hünengräbern?
+Moor - Hammelstall: Qualität? (zumindest bei Moor Feldweg)	? 55317,109697 55688,109310 55926,109158 56216,109210 56268,109118 56481,108972 56651,108989 56821,109071
+Hedwigshof - Wallmow: Qualität (zumindest bei Hedwigshof schlechtes Kopfsteinpflaster)?	? 54382,109426 54381,108819 53872,108642
 #: unverified_by: Tagesspiegel-Beilage zu Gransee
 #: note: laut email@spathnagel.de asphaltiert, warte noch auf die letzte Bestätigung:
 Gransee - Meseberg: Qualität (wahrscheinlich asphaltiert)? Reiner Radweg oder sind auch Autos zugelassen?	? -7696,66033 -8112,65637 -8762,65250 -9437,65037 -9912,64300 -10287,64175 -10675,63237 -11088,62914
@@ -973,7 +967,7 @@ Umfahrung Altlandsberg: noch in Bau? Nach der Fertigstellung für Radfahrer benut
 (Volkspark Anton Saefkow): Wie ist die genaue Wegführung?	? 12995,14616 13189,14462 13243,14470
 #: XXX: laut "Berliner Umland" bis auf ein kurzes Stück in Weesow gut geeignet , laut "Aktiv Regional" besonders gut geeignet
 Börnicke - Wessow: Qualität?	? 26164,28631 26635,28895 26930,28875 31155,27270 31824,27575
-Neue B2 zwischen Angermünde und Schwedt: für Radfahrer befahrbar?	? 54969,71959 54231,73193 54137,73562 54215,73962 54530,74354 55030,74628 55493,74881 55918,75087 56231,75134 56661,75123 57665,74740 57921,74778 58496,75012 59234,75181 60253,75275 60718,75431 61156,75803 61521,76262 61793,76362 62062,76375 63253,76165 64634,75906 65018,76081 65312,76500
+Neue B2 zwischen Angermünde und Schwedt: für Radfahrer befahrbar?	? 54969,71959 54231,73193 54142,73542 54135,73581 54215,73962 54530,74354 55030,74628 55493,74881 55918,75087 56231,75134 56661,75123 57665,74740 57921,74778 58496,75012 59234,75181 60253,75275 60718,75431 61156,75803 61521,76262 61793,76362 62062,76375 63253,76165 64634,75906 65018,76081 65312,76500
 #: XXX: laut "Berliner Umland" ist der Abschnitt von Tempelfelde bis Abzweig Schönfeld mäßig geeignet (Autoverkehr?)
 Tempelfelde - Beiersdorf: Qualität?	? 31377,34072 31650,33862 33156,33418 35475,32761
 #: XXX: laut "Berliner Umland" gut geeignet
@@ -1479,7 +1473,7 @@ Dubrowplatz: Qualität (wahrscheinlich schlechtes Kopfsteinpflaster)?	? -1945,297
 Dubrowplatz: Qualität?	? -1825,3066 -1961,3021
 McNair-Promenade: Wie ist die Qualität, die ADFC-Karte meint "schlecht geeignet"?	? 2163,1499 2077,1460 1975,1413 1882,1376 1785,1338
 Hobrechtsfelde - Gorinsee: Qualität (wahrscheinlich fester Sandweg)?	? 16301,29192 15621,29290
-#XXX del? nicht mehr sichtbar: note: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0704/nachricht2630.html - Einbahnstraße offen Richtung Süden. Die Regelung bleibt offenbar nicht permanent? Abschluss bis 2007-08-31 Clara-Jaschke-Str. - Berta-Benz-Str. - Katharina-Paulus-Str.: Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	?; 7863,12927 7866,13009 7779,13012 7768,13175 7764,13236
+#XXX del? nicht mehr sichtbar: note: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0704/nachricht2630.html - Einbahnstraße offen Richtung Süden. Die Regelung bleibt offenbar nicht permanent? Abschluss bis 2007-08-31 Clara-Jaschke-Str. - Berta-Benz-Str. - Katharina-Paulus-Str.: Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	?; 7863,12927 7866,13009 7799,13019 7768,13175 7764,13236
 B110, Umgehung Anklam: westlicher Teil der Umgehung schon fertig?	? 26264,159478 25880,159605 25185,160127 24733,160839 24722,161235
 Demnitz - L28: nördlicher Teil asphaltiert, Rest auch?	? 34171,142029 34186,141681 34232,141608
 B109 - Gneventhin: Asphalt oder Kopfsteinpflaster?	? 38188,163465 38133,163017 38283,162634
@@ -1489,7 +1483,7 @@ Neurochlitz - Tantow	? 76788,98470 76584,98476 76578,98839 75682,98897 74948,988
 Gartz: Name der Straße?	? 75956,90435 75975,90313 76008,90307 76023,90222
 Schwedt: Name der Straße?	? 69061,73583 69085,73549 69238,73315
 Oder - Vierraden: Name der Straße? Qualität?	? 71262,74987 70164,75201
-Casekow, Blumberger Weg: Qualität?	? 63296,90222 63266,90262 63034,90338 62867,90399 63156,90694
+Casekow, Blumberger Weg: Qualität? (zumindest südliches Ende asphaltiert)	? 63296,90222 63266,90262 63034,90338 62867,90399 63156,90694
 Blankensee - Bismarck: Qualität?	? 70132,119360 70251,118039
 Plöwen - Hohenfelde: Qualität?	? 70132,119360 70856,119606
 Hintersee: Qualität, womöglich auch schlechtes Kopfsteinpflaster?	? 66282,136950 66135,136956 66204,136743 66330,136564
@@ -2026,7 +2020,7 @@ Irmfriedstr.: Qualität?	? 21737,13844 21758,13934 21764,13981 21766,13995 21794,
 Mettlacher Str.: Qualität?	? 21794,14229 21918,14219 22007,14209 22050,14212
 #: XXX: anonymous meinte Asphalt, Q0, aber mir war so, als ob da Kopfsteinpflaster war?!
 Hippelstr.: Qualität	? 12965,5653 12986,5564
-Mündeseerundweg: Qualität? Wie geht's weiter Richtung Südosten?	? 50403,70708 50497,70796 50594,70755 50678,70738 50758,70752 50871,70761 50974,70635 51004,70617 51078,70609 51223,70542 51343,70458 51421,70384 51551,70236 51732,69987
+Mündeseerundweg: Qualität? Wie geht's weiter Richtung Südosten?	? 50871,70761 50974,70635 51004,70617 51078,70609 51223,70542 51343,70458 51421,70384 51551,70236 51732,69987
 Deitmerstr.: Können Radfahrer den Mittelstreifen an der Schloßstr. überqueren?	? 5048,5904
 Hermesweg: Qualität?	? 6116,4707 6072,4606
 Gurlittstr.: Qualität?	? 7213,5062 6949,5096
@@ -3381,9 +3375,7 @@ Hildebrandshagen - Wolfshagen: Qualität?	? 22674,112533 22785,112612 22909,11276
 Nieden - Göritz: Qualität?	? 43753,115606 43904,115305 43730,115229 42427,113348 42135,112936 42236,112780 42179,112609 42078,112581 42030,112375 42163,112359 42674,112178 42829,112070 43007,111999
 Göritz - Tornow: Qualität?	? 43007,111999 43070,112007 43476,111826 43822,111442 44872,110944 45766,110618
 Karlshorst - Klockow: Qualität?	? 47335,110888 48560,110342 48678,110373 49007,110760 49176,110846 49375,110881
-Klockow - Carmzow: Qualität?	? 49504,110961 49632,111046 49784,110602 49946,110487 50378,110259 50590,110075 50764,110031 50955,110066 51082,110034 51139,109983 51948,109454
-(Brüssow): Qualität? Straßennamen?	? 57250,110862 57238,110909 57244,111033 57111,111176 57168,111388 57201,111535
-Rudolf-Breitscheid-Str. (Brüssow): Qualität (wahrscheinlich Asphalt)?	? 57559,111267 57590,111356 57628,111439 57565,111511
+Klockow - Carmzow: Qualität? (am Carmzower Ende asphaltiert)	? 49504,110961 49632,111046 49784,110602 49946,110487 50378,110259 50590,110075 50764,110031 50955,110066 51082,110034 51139,109983 51948,109454
 #: XXX offiziell nur für Fußgänger
 Schulstr. - Waldbacher Str.: Qualität der Verbindung? Muss getragen werden? Nachts beleuchtet?	? 20368,11937 20338,11973 20338,11991 20387,12021 20382,12052 20388,12060 20404,12055
 Waldbacher Weg: Qualität?	? 20404,12055 20610,12050
@@ -3528,3 +3520,9 @@ Am Unterholz: Qualität?	? -996,22416 -974,22517
 Andornsteig: Qualität? Ist der letzte Abschnitt zur Schulzendorfer Str. für Autos gesperrt, aber für Radfahrer offen?	? -934,23209 -816,23083 -739,23004 -728,22990
 Warnauer Pfad: Qualität?	? -1864,23642 -2047,23708
 Bölkauer Pfad: Qualität?	? -1832,23746 -2019,23781
+Wollin: Qualität?	? 53952,97760 54300,97955 54395,97957 54710,98149 54851,98181
+Wollin: Qualität?	? 53747,97620 53467,97569
+Grünz - Radewitz: Qualität?	? 59477,99336 59588,99540 59496,99728 59670,99855
+Kummerow - Woltersdorf: Qualität (an der östlichen Seite: Feldweg)?	? 63468,83897 63719,84166 63909,84187 65384,85315
+Kummerow - Kunow: Qualität?	? 63202,83842 63468,83897 63701,83897 64030,83689 64199,83388 64560,83095 65187,82762 65732,81931 65968,82128 66459,82296 66731,82468 66943,82495
+Kummerow - Jamikow: Qualität?	? 63202,83842 62902,83983 61889,84194 61022,84291

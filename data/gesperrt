@@ -581,6 +581,9 @@ Fürstenberg	1 -8893,85743 -9024,85862
 Fürstenberg	1 -9024,85862 -8775,85947
 Markt (Neustrelitz)	1 -14823,106096 -14782,106096 -14747,106096 -14745,106058 -14745,106011 -14780,106011 -14821,106013 -14824,106060 -14823,106096
 Rochowstr. (Brandenburg)	1 -47685,-2385 -47938,-2184
+Schönermark	1 54542,78720 54850,78769 55047,78740 54850,78692 54542,78720
+Lindenweg (Brüssow)	1 57244,111033 57557,110975
+Marktplatz (Brüssow)	1 57445,111340 57477,111392
 Mittelstreifen nicht überquerbar	3nocross::ignrte -974,128015 -724,127995 6,127935 298,127911
 B104: Neubrandenburg -> Feldstr.: Mittelstreifen nicht überquerbar	3::igndisp -974,128015 -724,127995 -719,128043
 Feldstr. -> Pasewalk: Mittelstreifen nicht überquerbar	3::igndisp -719,128043 -724,127995 6,127935
@@ -1339,7 +1342,7 @@ tragen (Treppe)	0:30:90 14335,5425
 tragen (ca. 35 Stufen)	0:30:-108 18180,12262
 tragen (S-Bhf. Marzahn)	0:30:-195 19571,15417
 tragen (S-Bhf. Marzahn)	0:30:-155 19638,15431
-tragen (12 Stufen)	0:30:-200 7942,12879
+tragen (13 Stufen)	0:30:-180 7923,12876
 tragen (zwei Mal, je fünf Stufen)	0:30:-149 5017,6387
 tragen (Treppen zur U-Bahnbrücke, je drei Stufen)	0:20:-40 2301,4917
 tragen (Treppen zur U-Bahnbrücke, je drei Stufen)	0:20:-32 2181,4835
@@ -1700,8 +1703,8 @@ Am Zirkus	1 9226,12909 9192,13032 9145,13020 9118,13070
 Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12748
 Virchowweg: schmale Toreinfahrt, Fußgänger und Bordstein	0:10:86 8548,13577
 tragen (ca. 20 Stufen)	0:45:-98 8536,12758
-tragen (ca. 20 Stufen)	0:45:-108 8507,12873
-tragen (ca. 20 Stufen)	0:45:-119 8480,12909
+tragen (35 Stufen)	0:45:-108 8507,12873
+tragen (35 Stufen)	0:45:-57 8480,12909
 Hufelandweg	1s 8631,13159 8618,13306 8582,13355
 Fröhner Str.	1 -4294,11673 -4413,11628 -4573,11545
 Bocksfeldstr.	1 -4300,11720 -4090,11707
@@ -1719,7 +1722,7 @@ Theodor-Heuss-Weg	1s 9197,14562 9081,14363
 tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:40:-150 9223,14608
 Tor	BNP:5:-260 3326,12730
 Herderstr. (Charlottenburg)	1 4451,11558 4435,11343
-tragen (Treppe)	0:30:-248 7957,12864
+tragen (Treppe, 14 Stufen)	0:30:81 7931,12876
 Joachim-Karnatz-Allee	1 7142,12584 7131,12615
 Joachim-Karnatz-Allee	1 7175,12630 7187,12598
 Ingeborg-Drewitz-Allee	1 7365,12775 7388,12746 7539,12754 7538,12729 7418,12725 7367,12729 7343,12758

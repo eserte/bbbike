@@ -5002,7 +5002,7 @@ EOF
        text  => 'L 029 Bahnhofstr. Bahnübergang in Biesenthal Umbau Bahnübergang Vollsperrung 12.07.2006-30.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 28993,38709 28248,39107 26237,40190
+userdel	2::inwork 28993,38709 28199,39134 26237,40190
 EOF
      },
      { from  => 1152223200, # 2006-07-07 00:00
@@ -8038,7 +8038,7 @@ EOF
        text  => 'L 029 Grüntal-B 2 Biesenthal OD Biesenthal Deckenerneuerung mit Entwäss. Vollsperrung 10.04.2007-30.09.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 28993,38709 28248,39107 26237,40190
+userdel	2::inwork 28993,38709 28199,39134 26237,40190
 EOF
      },
      { from  => 1178402400, # 2007-05-06 00:00
@@ -8275,7 +8275,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005623',
        data  => <<EOF,
-userdel	2::temp 8098,13419 8102,13304 8107,13146 8110,13042
+userdel	2::temp 8098,13419 8102,13304 8106,13130 8110,13042
 EOF
      },
      { from  => undef, # 

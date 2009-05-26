@@ -1749,7 +1749,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?)	B 40248,14503
 Bahn kommt ca. halbstündlich	B 43081,77252
 Bahn kommt ca. halbstündlich	B 41387,91306
-Bahn kommt ca. halbstündlich oder öfter	B 27154,37315
+Bahn kommt ca. halbstündlich oder öfter	B 27139,37340
 Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 42128,79453
 Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 41323,96820
 Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 41197,98927
@@ -1797,7 +1797,7 @@ UBB, halbstündlich	B 51270,179246
 	X 21823,4210
 	X 16861,5935
 	B 29553,41441
-	B 28248,39107
+	B 28199,39134
 	B 26666,36512
 	B 23549,31301
 	B 43581,57725
@@ -2427,6 +2427,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -7484,13770
 	F 17993,8689
 	F 8337,13541
+	B 56315,83428
 ################################################################################
 # note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10044614/620526/
@@ -2541,7 +2542,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 ################################################################################
 # note: Ampeln elsewhere vvv
 Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
-	X 56459,82285
+	X 56461,82273
 #: note: ^^^
 ################################################################################
 #: by: Andreas Titz vvv
