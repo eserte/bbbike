@@ -9879,7 +9879,6 @@ EOF
 #: last_checked: 2009-05-18
 userdel	q4::inwork 9208,11872 9201,11968
 userdel	q4::inwork; 9208,11872 9218,11793
-userdel	q4::inwork; 9183,12076 9201,11968
 EOF
      },
      { from  => 1190237300, # 2007-09-19 23:28
@@ -11529,8 +11528,8 @@ userdel	2::inwork 39721,13668 40248,14503 40266,14531
 EOF
      },
      { from  => 1238277600, # 2009-03-28 23:00
-       until => 1243548000, # 2009-05-29 00:00
-       text  => 'B 246 R.-Breitscheid-, E.-Thälmann-, Schauener Str. OD Storkow Deckenerneuerung Vollsperrung 30.03.2009-28.05.2009 ',
+       until => 1243288800, # 2009-05-26 00:00
+       text  => 'B 246 R.-Breitscheid-, E.-Thälmann-, Schauener Str. OD Storkow Deckenerneuerung Vollsperrung 30.03.2009-25.05.2009 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 46518,-16240 46409,-16251 46004,-16440
@@ -13248,7 +13247,7 @@ EOF
        text  => 'Reichenberger Str., Einbahnstraße Richtung Kottbusser Tor',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2009-05-20
+#: last_checked: 2009-05-26
 #: check_frequency: 7d
 userdel	1::inwork 12229,10014 12398,9938 12556,9862
 EOF
@@ -13533,7 +13532,7 @@ EOF
        text  => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-05-18 vvv
+#: last_checked: 2009-05-24 vvv
 userdel	q4::inwork; 14597,11069 14530,11137
 userdel	q4::inwork 14530,11137 14465,11195
 #: last_checked ^^^
@@ -13544,8 +13543,8 @@ EOF
        text  => 'Jessnerstr. wegen Bauarbeiten in Richtung Süden nicht befahrbar',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-04-25
-userdel	q4::inwork; 15080,11905 14977,11754 14941,11689
+#: last_checked: 2009-05-26
+userdel	q4::inwork; 15080,11905 14977,11754 14941,11689 14849,11539
 EOF
      },
      { from  => 1238954738, # 2009-04-05 20:05
@@ -13714,9 +13713,9 @@ EOF
 userdel	q4::inwork 9457,5641 9357,5601 9147,5534
 EOF
      },
-     { from  => 1239912224, # 2009-04-16 22:03
-       until => 1242424799, # 2009-05-15 23:59
-       text  => 'Schlichtallee (Lichtenberg) Richtung Nöldnerplatz zwischen beiden Einmündungen Fischerstr. Baustelle, gesperrt (Umfahrung über Fischerstr.) (bis Mitte 05.2009)',
+     { from  => 1243371742, # 2009-05-26 23:02
+       until => 1243807199, # 2009-05-31 23:59
+       text  => 'Schlichtallee (Lichtenberg) Richtung Nöldnerplatz zwischen beiden Einmündungen Fischerstr. Baustelle, gesperrt (Umfahrung über Fischerstr.) (bis Ende 05.09)',
        type  => 'gesperrt',
        source_id => 'IM_011757',
        data  => <<EOF,
@@ -14207,6 +14206,49 @@ EOF
        data  => <<EOF,
 #: last_checked: 2009-05-21
 userdel	q4::inwork 9126,12413 9345,12443
+EOF
+     },
+     { from  => 1243370925, # 2009-05-26 22:48
+       until => 1262300399, # 2009-12-31 23:59
+       text  => 'Blockdammweg (Lichtenberg) Richtung Karlshorst zwischen Hönower Wiesenweg und Ehrlichstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 12/2009)',
+       type  => 'handicap',
+       source_id => 'IM_012809',
+       data  => <<EOF,
+userdel	q4::inwork; 17375,8847 17729,8850
+EOF
+     },
+     { from  => 1243371263, # 2009-05-26 22:54
+       until => 1370037599, # 2013-05-31 23:59
+       text  => 'Glienicker Weg/Glienicker Str. (Treptow) Richtung Köpenick zwischen Adlergestell und Spindlersfelder Str. (DB-Brücke) Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2013)',
+       type  => 'handicap',
+       source_id => 'IM_012799',
+       data  => <<EOF,
+userdel	q4::inwork; 21244,3571 21308,3680
+EOF
+     },
+     { from  => 1243371714, # 2009-05-26 23:01
+       until => 1254347999, # 2009-09-30 23:59
+       text  => 'Glinkastr. (Mitte) Richtung Leipziger Str. zwischen Französische Str. und Jägerstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2009)',
+       type  => 'handicap',
+       source_id => 'IM_012764',
+       data  => <<EOF,
+userdel	q4::inwork; 9183,12076 9201,11968
+EOF
+     },
+     { from  => 1243116000, # 2009-05-24 00:00
+       until => 1246831200, # 2009-07-06 00:00
+       text  => 'L 171 Kurt-Tucholsky-Straße Ol Hohen Neuendorf, zw. Höhe E.-Toller-Str. u. OA Neubau Straßenbordanlage halbseitig gesperrt; Einbahnstraße 25.05.2009-05.07.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 1366,29416 1304,29256 1234,29120 1124,28923 1078,28830 1020,28712 1009,28662 1007,28446
+EOF
+     },
+     { from  => 1243116000, # 2009-05-24 00:00
+       until => 1244239200, # 2009-06-06 00:00
+       text  => 'L 303 Umgehungsstraße OD Eggersdorf, Krz. E.-Thälmann-Str. Deckenerneuerung Vollsperrung 25.05.2009-05.06.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 38771,14926 38637,14790
 EOF
      },
     );
