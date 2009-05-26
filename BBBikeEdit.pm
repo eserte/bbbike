@@ -3757,7 +3757,7 @@ sub temp_blockings_editor {
 		      $t->messageBox(-message => "Beschreibender Text fehlt");
 		      return;
 		  }
-		  if ($blocking_text =~ m{[\x{0100}-\x{fffd}]}) {
+		  if ($blocking_text =~ m{[^\x00-\xff]}) {
 		      my $ans = $t->messageBox(-type => 'OkCancel', -icon => 'question', -message => "Unicode-Zeichen oberhalb des Codespoints 255 enthalten. Diese Zeichen können zurzeit nicht verwendet werden. Automatisch konvertieren? Achtung: Informationsverlust kann auftreten!");
 		      if ($ans !~ /ok/i) {
 			  return;
