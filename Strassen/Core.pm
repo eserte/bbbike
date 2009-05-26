@@ -1494,7 +1494,9 @@ sub switch_encoding {
 	binmode($fh, ":encoding($value)")
     };
     if ($@) {
-	warn "Cannot execute encoding <$value> directive: $@";
+	if ($value ne 'iso-8859-1') { # this is perl's default, so do not warn
+	    warn "Cannot execute encoding <$value> directive: $@";
+	}
     }
 }
 
