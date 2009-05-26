@@ -12528,7 +12528,7 @@ EOF
        text  => 'B 158 Neuenhagen - B158 A Kreuzung B158/ B158A Altglietzen/ L 28 Gabow Straßenbauarb., Radweg, LSA Vollsperrung 30.09.2008-09.10.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 54877,47645 54012,46907
+userdel	2::inwork 54862,47561 54012,46907
 EOF
      },
      { from  => 1221775200, # 2008-09-19 00:00
@@ -12552,7 +12552,7 @@ EOF
        text  => 'L 028 Neureetz - B158 Kreuzung bei Gabow/ B158/B158A Straßenbauarb., Radweg, LSA Vollsperrung 22.09.2008-30.09.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 54877,47645 55048,47057
+userdel	2::inwork 54862,47561 55048,47057
 EOF
      },
      { from  => 1221343200, # 2008-09-14 00:00

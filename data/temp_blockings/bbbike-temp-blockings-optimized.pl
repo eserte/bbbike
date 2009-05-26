@@ -1032,16 +1032,7 @@ userdel	q4::inwork 8389,11378 8374,11479
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_012693',
-         'until' => 1243288800,
-         'text' => 'Ebertstr. (Tiergarten) in beiden Richtungen zwischen Behrenstr. und Scheidemannstr. Veranstaltung, Straße vollständig gesperrt (bis 25.05.2009) ',
-         'from' => 1242712036,
-         'id' => 1660,
-         'data' => 'userdel	2::temp 8595,12066 8600,12165 8515,12242 8539,12286 8560,12326 8540,12420
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_012706',
          'until' => 1245103199,
@@ -1052,26 +1043,8 @@ userdel	q4::inwork 8389,11378 8374,11479
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_012692',
-         'until' => 1243288800,
-         'text' => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Großer Stern und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (bis 25.05.2009)',
-         'from' => 1242712177,
-         'id' => 1662,
-         'data' => 'userdel	2::temp 8515,12242 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 6828,12031
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_012694',
-         'until' => 1243288800,
-         'text' => 'Yitzhak-Rabin-Str. (Tiergarten) in beiden Richtungen zwischen Scheidemannstr. und Str. des 17. Juni Veranstaltung, Straße vollständig gesperrt (bis 25.05.2009)',
-         'from' => 1242712208,
-         'id' => 1663,
-         'data' => 'userdel	2::temp 8055,12186 8119,12414
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        {
          'until' => 1254348000,
