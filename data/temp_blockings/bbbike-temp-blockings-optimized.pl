@@ -788,15 +788,7 @@ userdel	q4::inwork 9164,12172 9183,12076
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1243202400,
-         'text' => 'B 102 Große Milower Str. OD Rathenow, zw. Wolzenstr. und Heidefeldstr. Neubau Kreisverkehr Vollsperrung 02.03.2009-24.05.2009 ',
-         'from' => 1235862000,
-         'id' => 1603,
-         'data' => 'userdel	q4::inwork -62269,19881 -62333,20390
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1244930400,
          'text' => 'B 112 Forst - Guben OD Grießen Derny-Rennen Vollsperrung 13.06.2009-13.06.2009 ',
@@ -841,15 +833,7 @@ userdel	q4::inwork 9164,12172 9183,12076
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1243029600,
-         'text' => 'L 161 bei Vehlefanz Straßen- u. Durchlassbau Vollsperrung 14.04.2009-22.05.2009 ',
-         'from' => 1239573600,
-         'id' => 1616,
-         'data' => 'userdel	2::inwork -11367,34034 -11282,34185 -10702,34336
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -888,10 +872,10 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        {
          'source_id' => 'IM_012342',
          'until' => 1301608800,
-         'text' => 'Rathausstr. (Mitte) Richtung Alexanderplatz zwischen Breitestr. und Spandauer Str. Baustelle, Straße vollständig gesperrt (bis März 2011)',
+         'text' => 'Rathausstr. (Mitte) Richtung Alexanderplatz zwischen Breitestr. und Poststr. Baustelle, Straße vollständig gesperrt (bis März 2011)',
          'from' => 1242770815,
          'id' => 1627,
-         'data' => 'userdel	q4::inwork 10267,12305 10362,12351 10422,12395 10476,12432 10584,12507
+         'data' => 'userdel	q4::inwork 10267,12305 10362,12351 10422,12395 10476,12432
 ',
          'type' => 'handicap'
        },
@@ -925,7 +909,8 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
          'from' => 1240953370,
          'id' => 1635,
          'data' => '#userdel	q4::inwork; 8804,12280 8775,12457
-userdel	q4::inwork; 9008,12485 9018,12400 9028,12307
+#: last_checked: 2009-05-21
+userdel	q4::inwork; 9018,12400 9028,12307
 ',
          'type' => 'handicap'
        },
@@ -1026,18 +1011,7 @@ userdel	q2::inwork 12095,20832 11686,21058
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_012636',
-         'until' => undef,
-         'text' => 'Straße der Pariser Kommune (Friedrichshain) in beiden Richtungen zwischen Karl-Marx-Allee und Rüdersdorfer Str. geplatzte Wasserleitung, gesperrt',
-         'from' => undef,
-         'id' => 1656,
-         'data' => '#: last_checked: 2009-05-18
-#: check_frequency: 7d
-userdel	q4::inwork 12822,12067 12852,12306 12869,12425
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Varian-Fry-Str.: Baustelle, Fahrbahn gesperrt',
@@ -1098,15 +1072,7 @@ userdel	q4::inwork 8389,11378 8374,11479
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1242943200,
-         'text' => 'B 112 Frankfurter-, Bahnhofstraße OD Neuzelle 16. Bibulibustag Vollsperrung 21.05.2009-21.05.2009 ',
-         'from' => 1242770400,
-         'id' => 1664,
-         'data' => 'userdel	q4::temp 96017,-33547 96014,-33803
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1254348000,
          'text' => 'B 087 Luckau - Herzberg OD Schlieben Deckenerneuerung Vollsperrung 25.05.2009-30.09.2009 ',
@@ -1143,26 +1109,8 @@ userdel	q4::inwork 8389,11378 8374,11479
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_012746',
-         'until' => 1243256400,
-         'text' => 'Oberfeldstr. (Marzahn) in beiden Richtungen zwischen Schulstr. und Nordpromenade Veranstaltung, gesperrt. Ebenso ist die Nordpromenade gesperrt. (bis 25.05.09, 15 Uhr)',
-         'from' => 1242851109,
-         'id' => 1669,
-         'data' => 'userdel	2::temp 20599,11938 20610,12050
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_012708',
-         'until' => 1243202400,
-         'text' => 'Scheidemannstr. (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Ebertstr. Veranstaltung, Straße vollständig gesperrt (bis 24.05.09 nachts)',
-         'from' => 1242851164,
-         'id' => 1670,
-         'data' => 'userdel	2::temp 8540,12420 8400,12417 8374,12416 8119,12414
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1245621600,
          'text' => 'B 103 Kyritz - Pritzwalk zw. Kyritz u. Gantikow, Bahnübergang Erneuerung Bahnübergang Vollsperrung 25.05.2009-21.06.2009 ',
@@ -1205,6 +1153,16 @@ userdel	q4::inwork 8389,11378 8374,11479
          'from' => 1248559200,
          'id' => 1675,
          'data' => 'userdel	q4::inwork -54456,42981 -53872,42916
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Mittelstr. zwischen Friedrichstraße und Neustädtische Kirchstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg offen',
+         'from' => undef,
+         'id' => 1676,
+         'data' => '#: last_checked: 2009-05-21
+userdel	q4::inwork 9126,12413 9345,12443
 ',
          'type' => 'handicap'
        }
