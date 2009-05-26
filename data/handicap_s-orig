@@ -166,7 +166,8 @@ Brücke Schönfließer Str.: Fußgänger	q3 10593,16037 10581,15936
 #: corrected_by: Sven Reimann ("Radfahren nicht erlaubt")
 (Kolonie Bornholm 1 und 2): Fußgänger, enger Weg, Radfahren nicht erlaubt, ggfs. schieben	q3+ 10209,16674 10198,16929
 (zum Rolandufer): Gehweg	q2 11351,12221 11278,12185
-Rolandufer/Spreeufer: Gehweg, viele Fußgänger, im Sommer Straßencafe 	q4 10837,12158 10660,12176 10583,12206 10492,12289 10423,12353 10422,12395
+Rolandufer: Gehweg, viele Fußgänger 	q3 10837,12158 10660,12176 10583,12206
+Spreeufer: Gehweg, viele Fußgänger, im Sommer Straßencafe 	q4 10583,12206 10492,12289 10423,12353 10422,12395
 Herthastr.: Gehweg, Bordsteine	q4 1935,9239 1932,9263
 Fuggerstr.: Gehweg	q2 6128,10319 6020,10351
 Pfalzburger Str.: Gehweg	q2 4905,10069 4909,10119
@@ -272,8 +273,10 @@ Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22111,4562 22093,
 Torstr. - Weydingerstr.: Bordsteine	q2 11079,13492 11108,13513
 Gustav-Heinemann-Brücke: Fußgänger, enge Brücke	q2 8116,12938 8110,13042
 Beruner Str.: Rampen, Fußgänger, U-Bahn-Ausgang	q3 20143,10731 20215,10554
+#: note: "Radfahren auf befestigten Wegen erlaubt, Fußgänger haben Vorrang"
 (Parkweg Spreebogenpark): besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 8017,12826 8021,12839 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8275,12936 8341,12911 8417,12846
 Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 7915,12795 7967,12860 8044,12989 8159,13032
+#: note: Radfahren erlaubt:
 Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 8277,13032 8315,13005 8401,12973 8471,12904 8498,12870 8529,12757 8566,12661 8587,12642 8635,12629 8754,12622
 Helenenhof: enge Tore, Fußgänger	q3 14495,11261 14395,11356
 Färberstr. - Uferweg: sehr eng	q2 21675,4989 21665,5035 21684,5079

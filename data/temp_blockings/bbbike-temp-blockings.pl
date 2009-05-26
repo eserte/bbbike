@@ -13784,11 +13784,11 @@ EOF
      },
      { from  => 1242770815, # 2009-05-20 00:06
        until => 1301608800, # 2011-04-01 00:00
-       text  => 'Rathausstr. (Mitte) Richtung Alexanderplatz zwischen Breitestr. und Spandauer Str. Baustelle, Straße vollständig gesperrt (bis März 2011)',
+       text  => 'Rathausstr. (Mitte) Richtung Alexanderplatz zwischen Breitestr. und Poststr. Baustelle, Straße vollständig gesperrt (bis März 2011)',
        type  => 'handicap',
        source_id => 'IM_012342',
        data  => <<EOF,
-userdel	q4::inwork 10267,12305 10362,12351 10422,12395 10476,12432 10584,12507
+userdel	q4::inwork 10267,12305 10362,12351 10422,12395 10476,12432
 EOF
      },
      { from  => 1240518036, # 2009-04-23 22:20
@@ -13855,7 +13855,8 @@ EOF
        source_id => 'IM_012427',
        data  => <<EOF,
 #userdel	q4::inwork; 8804,12280 8775,12457
-userdel	q4::inwork; 9008,12485 9018,12400 9028,12307
+#: last_checked: 2009-05-21
+userdel	q4::inwork; 9018,12400 9028,12307
 EOF
      },
      { from  => 1241301600, # 2009-05-03 00:00
@@ -14030,14 +14031,13 @@ EOF
 userdel	q4::inwork; 11119,15385 10881,15047
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1242982031, # 
+       until => 1242982046, # XXX
        text  => 'Straße der Pariser Kommune (Friedrichshain) in beiden Richtungen zwischen Karl-Marx-Allee und Rüdersdorfer Str. geplatzte Wasserleitung, gesperrt',
        type  => 'handicap',
        source_id => 'IM_012636',
        data  => <<EOF,
-#: last_checked: 2009-05-18
-#: check_frequency: 7d
+#: last_checked: 2009-05-21
 userdel	q4::inwork 12822,12067 12852,12306 12869,12425
 EOF
      },
@@ -14198,6 +14198,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork -54456,42981 -53872,42916
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Mittelstr. zwischen Friedrichstraße und Neustädtische Kirchstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg offen',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2009-05-21
+userdel	q4::inwork 9126,12413 9345,12443
 EOF
      },
     );
