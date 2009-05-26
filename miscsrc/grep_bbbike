@@ -2,8 +2,13 @@
 # greppt in den BBBike-Dateien
 use strict;
 use FindBin;
+use lib "$FindBin::RealBin/..";
+
 use File::Glob qw(bsd_glob);
 use Getopt::Long;
+
+use BBBikeUtil qw(is_in_path);
+
 chdir "$FindBin::RealBin/.." or die "Can't chdir to bbbike directory: $!";
 my $use_ack;
 GetOptions("ack!" => \$use_ack)
@@ -19,7 +24,31 @@ if (!$use_ack) {
 	my($file) = split /\s+/, $_;
 	push @files, $file;
     }
-    system("grep", @ARGV, @files); # use xargs?
+    if (is_in_path("grep")) {
+	system("grep", @ARGV, @files); # use xargs?
+    } else {
+	$| = 1;
+	my $iflag = $ARGV[0] eq '-i';
+	if ($iflag) { shift @ARGV }
+	my $regexp = $ARGV[0]; # assume no other options
+	if ($iflag) {
+	    $regexp = qr{$regexp}i;
+	} else {
+	    $regexp = qr{$regexp};
+	}
+	for my $file (@files) {
+	    open my $fh, $file
+		or do {
+		    warn "Cannot open $file ($!), skipping...\n";
+		    next;
+		};
+	    while(<$fh>) {
+		if (m{$regexp}) {
+		    print "$file: $_";
+		}
+	    }
+	}
+    }
 } else {
     warn <<EOF;
 **********************************************************************
