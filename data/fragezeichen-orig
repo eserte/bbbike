@@ -49,6 +49,7 @@ Müllerstr.	? 7754,15160 7611,15286 7474,15408 7414,15463 7277,15586 7198,15656 7
 #: last_checked: 2009-04-28
 Annenstr.	? 11249,11268 11091,11379 10915,11535 10819,11664
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
+#: last_checked: 2009-05-27
 Chausseestr.	? 9212,13471 9094,13641 9042,13707 8935,13844 8879,13913 8831,13973 8735,14093 8654,14194 8607,14253 8527,14352 8442,14456 8346,14576 8286,14635 8246,14675 8153,14769
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 Kniprodestr.	? 13838,15113 13749,15013 13649,14899 13453,14678
@@ -88,17 +89,15 @@ Friedrichsbrücke Richtung Bodestraße: ein Schild "verkehrsberuhigt" hängt hier, 
 #: last_checked: 2009-05-18
 #: next_check: 2009-05-31
 Jägerstr.: nach den Bauarbeiten in der Glinkastraße evtl. hier auch guter Asphalt	?::inwork 9108,11961 9201,11968 9394,11996
-#: last_checked: 2009-05-15
+#: last_checked: 2009-05-28
 Palisadenstr./Friedenstr.: Kreuzungsbereich wird umgebaut	?::inwork 12635,12629 12891,12549
-#: last_checked: 2009-05-18
-Wilhelmstr./Zimmerstr.: Ampel wird gebaut	?::inwork 9162,11286
 #: next_check: 2009-12-01:
 #: XXX und nicht vergessen: Eintrag in gesperrt dann entfernen! Und es existiert keine besondere Vorfahrtsregelung mehr. Evtl. auch Straßenkategorisierung bzw. comments_kfzverkehr anpassen.
 Französische Str.: Verlängerung wird 2009-12 eröffnet. Es wird eine Ampel an der Kreuzung Wilhelmstr. geben.	?::inwork 8901,12008 9076,12054
 #: next_check: 2009-12-31:
 Boitzenburg - Hardenbeck: straßenbegleitender Radweg in Vorbereitung, Realisierung bis Ende 2009	?::inwork 22233,95712 21160,95892 20914,96092 20696,96135 20064,95650 19314,95228 19032,95142
 Laut Uckermark-Kurier: 2.7km Radweg auf ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck (Radweg "Spur der Steine", Templin - Fürstenwerder), Baubeginn Anfang 2009, Asphalt ca. 3m breit; wo genau???	?::inwork 16377,90072 15782,90862 15738,90942 15410,92053 15661,93732 15688,93829 15748,93928 15841,94009 16435,94298 17677,94900 17796,95008 17912,95192 18001,95435 18507,96268 18676,96867 18954,97944 19022,98128 19442,99078 19582,99411
-#: last_checked: 2009-02-08:
+#: last_checked: 2009-05-28:
 Choriner Str.: die Choriner Str. soll eine Fahrradstraße werden	? 10480,13871 10489,13942 10502,14070 10558,14176 10629,14299 10870,14689 10893,14705
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20081110.1105.113814.html
 Eisengutweg: Radwege entstehen im Zuge der Bauarbeiten bis 2011-09-30	?::inwork 17894,2783 17741,2824 17525,3029 17274,3267 17142,3393
@@ -217,7 +216,6 @@ Prinzregentenstr.: Ist die Prinzregentenstr. mittlerweile eine Fahrradstraße? We
 Uferweg am Jungfernsee: geht der Uferweg bis Nedlitz weiter? Für Radfahrer befahrbar, Qualität?	? -12460,2288 -12713,2470 -12904,2669 -13387,2987
 #: XXX_prog: verbessern, wenn der entsprechende Routingtext besser aussehen würde (also z.B. "nach rechts und sofort wieder nach links")
 Kleineweg: ist hier leicht versetzt	? 9130,7804 9131,7652 9120,7600
-Fußweg Mollstr. - Büschingstr.: existiert dieser tatsächlich?	? 11905,13069 11881,13147
 Reinickendorfer Route 5, wo geht es weiter?	? 6558,18947 6442,18839
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20080728.1510.105902.html
 Oberspreestr.: südliche Nebenfahrbahn hat einen mittigen Asphaltbelag, Europaradweg wird hier entlanggeführt, genauer anschauen	? 19534,5242 19715,5185 19737,5176 20689,4862

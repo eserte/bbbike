@@ -1570,14 +1570,17 @@ T¸binger Str. -> Mainzer Str.: Queren nicht mˆglich	3::igndisp 5420,8160 5359,81
 T¸binger Str. -> Bundesallee: Queren nicht mˆglich	3::igndisp 5420,8160 5359,8140 5357,8005
 (Los-Angeles-Platz)	1s 5681,10696 5822,10609
 Bregenzer Str.	1 4278,10262 4227,10014
-Straﬂenbahn	3nocross::ignrte 11839,13083 11881,13072 11905,13069
-Mollstr. -> Berolinastr.: Straﬂenbahn	3::igndisp 11905,13069 11881,13072 11874,13048
-Berolinastr. -> Mollstr.: Straﬂenbahn	3::igndisp 11874,13048 11881,13072 11839,13083
-Straﬂenbahn	3nocross::ignrte 11881,13072 11839,13083 11739,13131 11723,13139
-Mollstr. -> B¸schingstr.: Straﬂenbahn	3::igndisp 11739,13131 11839,13083 11881,13147
-B¸schingstr. -> Mollstr.: Straﬂenbahn	3::igndisp 11881,13147 11839,13083 11881,13072
-Mollstr. -> Mollstr.: Straﬂenbahn	3::igndisp 11719,13088 11739,13131 11723,13139
-Mollstr. -> Mollstr.: Straﬂenbahn	3::igndisp 11839,13083 11739,13131 11719,13088
+Straﬂenbahntrasse	3nocross::ignrte 11905,13069 11881,13072 11839,13083 11739,13131 11723,13139
+Mollstr. -> Berolinastr.: Straﬂenbahntrasse	3::igndisp 11905,13069 11881,13072 11874,13048
+Berolinastr. -> Mollstr.: Straﬂenbahntrasse	3::igndisp 11874,13048 11881,13072 11839,13083
+Mollstr. -> B¸schingstr.: Straﬂenbahntrasse	3::igndisp 11739,13131 11839,13083 11881,13147
+B¸schingstr. -> Mollstr.: Straﬂenbahntrasse	3::igndisp 11881,13147 11839,13083 11881,13072
+Mollstr. -> Mollstr.: Straﬂenbahntrasse	3::igndisp 11719,13088 11739,13131 11723,13139
+Mollstr. -> Mollstr.: Straﬂenbahntrasse	3::igndisp 11839,13083 11739,13131 11719,13088
+Straﬂenbahntrasse	3nocross::ignrte 11881,13072 11905,13069 11966,13074 11985,13075
+Pl. der Vereinten Nationen -> Mollstr.: Straﬂenbahntrasse	3::igndisp 11910,13055 11905,13069 11881,13072
+Pl. der Vereinten Nationen -> Plus-Parkpl.: Straﬂenbahntrasse	3::igndisp 11905,13069 11966,13074 11881,13147
+Plus-Parkpl. -> Pl. der Vereinten Nationen: Straﬂenbahntrasse	3::igndisp 11881,13147 11966,13074 11985,13075
 (Berolinastr.): Tor zum Spielplatz	BNP:10:-236 11865,13027
 (Berolinastr.): Tor zum Spielplatz	BNP:10:-156 11874,13048
 (Berolinastr.): Tor zum Spielplatz	BNP:10:-250 11815,13045

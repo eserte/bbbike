@@ -4475,7 +4475,8 @@ Schollenweg: Asphalt	Q0 3280,21477 3236,21601 3211,21678 3156,21832 3081,22048
 Straße 56 (Blankenburg): Asphalt	Q0 14589,20988 14642,21162 14684,21284 14753,21487
 #: by: ^^^
 #: by: sven draband: vvv
-Büschingstr.: Asphalt mit Löchern	Q1 11839,13083 11881,13147 11920,13181 12017,13299 12085,13377
+#: corrected_by: srt ("mit Löchern" deleted)
+Büschingstr.: Asphalt	Q0 11839,13083 11881,13147 11920,13181 12017,13299 12085,13377
 #: note: merged with Andreas M. entry (Q1) (Sven said "Q0")
 Berolinastr.: Betonplatten	Q0- 11683,12725 11725,12809 11771,12909
 #: by: ^^^
@@ -8554,9 +8555,8 @@ Barnimstr.: Beton	Q0 11881,13147 11758,13210 11596,13279
 (Erschließungsstr.): Beton	Q0 11605,13387 11660,13457
 (Verbindungsweg): Kopfsteinpflaster	Q1 11660,13457 11711,13416
 Weinstr.: Asphalt stark verwurzelt	Q3 11793,13247 11909,13387
-Weinstr.: Asphalt	Q0 11909,13387 11953,13437
-Weinstr.: Gehwegplatten	Q0 11953,13437 11982,13471
-(Fußweg Büschingstr. - Mollstr.): Gehwegplatten	Q0 11881,13147 11905,13069
+Weinstr.: Asphalt	Q0+ 11909,13387 11982,13471
+(Plus-Parkplatz): Verbundsteinpflaster	Q0- 11881,13147 11966,13074
 (Friedenstr.): Beton	Q0 12131,13333 12138,13294 12139,13262 12066,13237
 Höchste Str.: Asphalt	Q0 11778,13498 11909,13387 12017,13299 12066,13237
 (Parkplatz): Beton	Q0 12066,13237 12046,13150 12011,13136 11920,13181

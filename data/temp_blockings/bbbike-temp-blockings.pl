@@ -7340,13 +7340,13 @@ EOF
 userdel	2::inwork 38475,90762 38637,91275 38612,91950
 EOF
      },
-     { from  => 1174068849, # 2007-03-16 19:14
-       until => 1222812000, # 2008-10-01 00:00
-       text  => 'Reichstagufer (Mitte) in beiden Richtungen Baustelle, Straße vollständig gesperrt, Fußgänger können passieren (bis 30.09.2008)',
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Reichstagufer (Mitte) in beiden Richtungen Baustelle, Straße vollständig gesperrt, Fußgänger können passieren',
        type  => 'handicap',
-       source_id => 'IM_004994',
        data  => <<EOF,
-userdel	q4::inwork 9098,12687 9209,12795 9283,12856
+#: last_checked: 2009-05-27
+userdel	q4::inwork 9209,12795 9283,12856
 EOF
      },
      { from  => 1174068872, # 2007-03-16 19:14
@@ -9876,8 +9876,8 @@ EOF
        type  => 'handicap',
        source_id => 'IM_009496',
        data  => <<EOF,
-#: last_checked: 2009-05-18
-userdel	q4::inwork 9208,11872 9201,11968
+#: last_checked: 2009-05-27
+userdel	q4::inwork; 9201,11968 9208,11872
 userdel	q4::inwork; 9208,11872 9218,11793
 EOF
      },
@@ -13553,8 +13553,8 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012052',
        data  => <<EOF,
-#: last_checked: 2009-05-18
-userdel	q4::inwork 9164,12172 9183,12076
+#: last_checked: 2009-05-27
+userdel	q4::inwork; 9164,12172 9183,12076
 EOF
      },
      { from  => 1238954788, # 2009-04-05 20:06
@@ -14076,11 +14076,12 @@ EOF
      },
      { from  => 1242712062, # 2009-05-19 07:47
        until => 1245103199, # 2009-06-15 23:59
-       text  => 'Gartenstr. (Mitte) Richtung Torstr. vor der Einmündung in die Torstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 06.2009)',
+       text  => 'Gartenstr. (Mitte) vor der Einmündung in die Torstr. Baustelle, Fahrbahn gesperrt (bis Mitte 06.2009)',
        type  => 'handicap',
        source_id => 'IM_012706',
        data  => <<EOF,
-userdel	q4::inwork; 9531,13797 9668,13629
+#: last_checked: 2009-05-28
+userdel	q4::inwork 9531,13797 9668,13629
 EOF
      },
      { from  => 1242712177, # 2009-05-19 07:49
