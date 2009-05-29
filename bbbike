@@ -768,6 +768,9 @@ reset_wind();
 #mymstat("before update_weather");
 ## DEBUG_END
 update_weather(1) if $want_wind;
+## DEBUG_BEGIN
+#mymstat("after update_weather");
+## DEBUG_END
 $wetter_route_update = 1;
 
 # Always use Bikepower (e.g. mandatory for Steigungsoptimierung)
@@ -9893,7 +9896,7 @@ sub plotstr {
 # XXX Yes: If a bbd file contains a half-valid line (with name and cat, but without coords)
 if ($str->pos != scalar @{$str->{Data}}) { status_message("warning: " . $str->pos . " != " . scalar(@{$str->{Data}}) . "!", "dialog", "err") }
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-	warn sprintf "Plotting streets took %.3fs\n", Tk::Time_So_Far()-$bench
+	warn sprintf "Plotting streets '$abk' took %.3fs\n", Tk::Time_So_Far()-$bench
 	    if $verbose;
 
       PLOTSTR_CONT:
