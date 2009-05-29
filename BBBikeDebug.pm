@@ -73,20 +73,20 @@ package main;
 use Config;
 
 $BBBikeDebug::start = time;
-if ($Config{'optimize'} =~ /PERL_DEBUGGING_MSTATS/ &&
-    eval { require Devel::Peek; 1 }) {
-    *mymstat = sub {
-	my $time = defined &Tk::timeofday ? Tk::timeofday() : time;
-	printf STDERR "%-30s: %.2f  %.2f\n", "@_", $time-$BBBikeDebug::start, (defined $BBBikeDebug::last ? $time-$BBBikeDebug::last : 0);
-	Devel::Peek::mstat();
-	$BBBikeDebug::last = $time;
-    }
-} elsif ($ENV{BBBIKE_DEBUG} =~ /devel::size/i &&
+if ($ENV{BBBIKE_DEBUG} =~ /devel::size/i &&
 	 eval { require Devel::Size; 1 }) {
     *mymstat = sub {
 	my $time = defined &Tk::timeofday ? Tk::timeofday() : time;
 	printf STDERR "%-30s: %.2f  %.2f\n", "@_", $time-$BBBikeDebug::start, (defined $BBBikeDebug::last ? $time-$BBBikeDebug::last : 0);
 	print "size=".Devel::Size::total_size(\%main::) . " (@_)\n";
+	$BBBikeDebug::last = $time;
+    }
+} elsif ($Config{'optimize'} =~ /PERL_DEBUGGING_MSTATS/ &&
+    eval { require Devel::Peek; 1 }) {
+    *mymstat = sub {
+	my $time = defined &Tk::timeofday ? Tk::timeofday() : time;
+	printf STDERR "%-30s: %.2f  %.2f\n", "@_", $time-$BBBikeDebug::start, (defined $BBBikeDebug::last ? $time-$BBBikeDebug::last : 0);
+	Devel::Peek::mstat();
 	$BBBikeDebug::last = $time;
     }
 } else { 
