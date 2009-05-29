@@ -487,6 +487,7 @@ Ekhofplatz	1 23382,1429 23360,1390 23325,1418 23343,1454 23382,1429
 Müggelbergplatz	1 23293,1697 23321,1678 23303,1650 23278,1668 23293,1697
 Ingridpfad	1 6357,2863 6304,2825 6182,2727
 Georgenstr.	1 9313,12662 9108,12635
+Schulstr. (Tegel)	1 1953,20149 1794,20110
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
 Leistikowstr.	1 -12512,810 -12302,718
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -656,9 +657,9 @@ umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11323,12484 11333,12437
 Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11462,12384 11333,12437 11343,12300
 Mittelstreifen	3nocross::ignrte 8777,9601 8648,9526 8595,9495
 Yorckstr. -> Hagelberger Str.: Mittelstreifen	3::igndisp 8777,9601 8648,9526 8773,9524
-Mittelstreifen	3nocross::ignrte 7492,18699 7609,18707 7690,18716
+Mittelstreifen	3nocross::ignrte 7492,18699 7520,18701 7609,18707 7690,18716
 Klemkestr. -> Armbrustweg: Mittelstreifen	3::igndisp 7690,18716 7609,18707 7626,18606
-Armbrustweg -> Klemkestr.: Mittelstreifen	3::igndisp 7626,18606 7609,18707 7492,18699
+Armbrustweg -> Klemkestr.: Mittelstreifen	3::igndisp 7626,18606 7609,18707 7520,18701
 Straßenbahntrasse	3nocross::ignrte 14619,16682 14608,16772 14559,16912
 Caseler Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14700,16790 14608,16772 14619,16682
 Berliner Allee -> Caseler Str.: Straßenbahntrasse	3::igndisp 14559,16912 14608,16772 14700,16790

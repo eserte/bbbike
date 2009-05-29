@@ -865,7 +865,7 @@ Sittestr.: Qualität der Straße?	? 5810,19244 5787,19326 5751,19443 5730,19519
 TODO: Uferweg mit Verbundsteinpflasterradweg (by: wosch)	? 8389,16214 8543,16364
 Heckenweg: Qualität? verkehrsberuhigt?	? 24553,-3281 24506,-3205
 Bollestr.: Qualität südlich der Gorkistr.?	? 2974,20483 2995,20386
-Ötztaler Str.: Qualität?	? 10690,17420 10630,17421 10629,17450 10609,17460 10545,17458 10543,17421 10502,17419
+Ötztaler Str. - Brixener Str.: gibt es eine Verbindung zwischen Ötztaler Str. und Brixener Str.? Hat diese Verbindung einen Namen?	? 10630,17421 10629,17450 10609,17460 10545,17458 10543,17421 10502,17419
 Wiesenweg - Heerstr.: existiert eine Verbindung für Radfahrer zwischen Wiesenweg und Heerstr.? Qualität?	? -7592,13107 -7600,12934
 Roedernstr. (Hermsdorf): Qualität?	? 3860,23767 3839,23817 3831,23945 3799,24105 3771,24241 3744,24378 3713,24522
 Schwalbenweg: Einbahnstraße Richtung Westen?	? 19619,-746 19550,-775 19366,-845 19309,-885
@@ -1199,7 +1199,6 @@ Letmather Weg: Qualität?	? 1524,18221 1546,18317 1557,18421
 Werdohler Weg: Qualität?	? 1309,18288 1390,18256 1457,18237 1524,18221 1596,18214 1672,18205 1760,18200 1848,18199 1936,18209 2022,18225
 Bottroper Weg: Qualität?	? 2133,18885 2015,18854 1864,18856
 Emstaler Platz: Qualität? Für Autos gesperrt?	? 1864,18856 1632,18855 1631,18958
-Schulstr.: Qualität? Einbahnstraßenregelung auch für Radfahrer gültig?	? 1794,20110 1953,20149
 Kirchgasse (Tegel): Qualität? Für Autos gesperrt?	? 1630,20097 1669,19982
 Dacheroedenstr.: Qualität?	? 1407,20563 1387,20621 1377,20737
 Wachstr.: Qualität?	? 1326,20600 1295,20732
@@ -1838,7 +1837,7 @@ Steinträgerweg: Qualität? Können Autofahrer den Hochspannungsweg überqueren?	? 1
 Straße 245: Existiert diese Straße? Qualität?	? 11851,3980 11819,4102
 Teterower Str.: Qualität? Ist die Straße (teilweise) eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer? Kann die Buschkrugallee in Höhe Teterower Str. überquert werden?	? 13820,5203 13717,5175 13626,5153
 Wesenberger Ring: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 13162,3576 13206,3674 13238,3794 13229,3836 13206,3854 13165,3850 13129,3809 13030,3664
-Zimmererweg: Qualität? Können Autofahrer den Hochspannungsweg überqueren?	? 12687,3319 12754,3318 12805,3231 13133,2711 13173,2593 13180,2514 13196,2369
+Zimmererweg: Qualität und Fahrbahnbeschaffenheit?	? 12687,3319 12754,3318 12805,3231 13133,2711 13173,2593 13180,2514 13196,2369
 An der Fließwiese: Qualität?	? -998,12689 -1022,12743 -1020,12801 -962,12951 -950,13091 -912,13106 -815,13067
 Biedermannweg: Qualität?	? -854,12963 -742,12924
 Emmy-Zehden-Weg: Qualität?	? 4903,15105 4810,15000
@@ -2008,7 +2007,6 @@ Auber Steig: Qualität?	? 2931,24751 3030,24857
 Walporzheimer Str.: Qualität?	? 2909,24989 2910,24953 2938,24894 2980,24868 3030,24857 3099,24850 3186,24812 3234,24774
 Hambacher Weg: Qualität?	? 3186,24812 3239,24892 3267,24964
 Barthstr.: Qualität?	? 2110,26268 2155,26274 2158,26408
-Dinkelsbühler Steig: Qualität?	? 2616,25218 2649,25170 2694,25132 2775,25092 2823,25038
 Rüdesheimer Str. (Frohnau): Qualität?	? 2818,25022 2823,25038 2910,25064 3111,25170 3174,25213 3232,25234 3314,25243
 Enkircher Str.: Qualität?	? 3490,24887 3542,24953 3556,24994 3550,25046 3518,25086 3485,25112 3460,25132 3314,25243 3274,25287 3225,25374 3185,25437 3171,25495
 Hohenheimer Str.: Qualität?	? 2694,25132 2834,25175 2995,25252 3075,25288 3177,25299 3262,25281 3274,25287
@@ -2059,7 +2057,6 @@ Bertastr. (Hermsdorf): Qualität?	? 4617,24029 4510,24170 4448,24277 4444,24329 4
 Marthastr. (Hermsdorf): Qualität?	? 4546,23930 4489,23976 4458,24011 4425,24067
 Olafstr.: Qualität?	? 3947,23547 3698,23657 3605,23724 3561,23817 3512,24049 3483,24186 3457,24321 3425,24469
 Oswinsteig: Qualität?	? 3875,24405 3744,24378 3605,24351 3457,24321 3271,24283 3127,24253
-Silvesterweg: Qualität?	? 3559,24564 3575,24498 3605,24351 3632,24214 3661,24079 3702,23899 3715,23819 3751,23764 3791,23730
 Roswithastr.: Qualität?	? 3799,24105 3661,24079 3512,24049 3308,24009
 Seeblickstr.: Qualität?	? 4233,24459 4183,24326
 Triniusstr. (Hermsdorf): Qualität?	? 3866,24451 3901,24453 4073,24393
@@ -2421,7 +2418,6 @@ Stieglitzweg (Karlshorst): Qualität? Ist der Straßenname offiziell?	? 20058,8355
 Feldweg (Karlshorst): Qualität? Ist der Straßenname offiziell?	? 20096,8077 20206,8090 20222,8091 20339,8102
 Am Sandberg (Karlshorst): Qualität? Ist der Straßenname offiziell?	? 20206,8090 20194,8278
 Wiesenweg (Karlshorst): Qualität? Ist der Straßenname offiziell?	? 20222,8091 20379,7848
-Kiesweg (Karlshorst): Qualität? Ist der Straßenname offiziell?	? 20342,7748 20379,7848 20429,7977
 Am Graben (Karlshorst): Qualität? Ist der Straßenname offiziell?	? 20429,7977 20339,8102
 Marthastr. (Niederschönhausen): Qualität?	? 10486,19955 10383,19911
 Marthastr. - Dietzgenstr. (durch den Brosepark): Qualität des Parkwegs? Für Radfahrer freigegeben? Nachts beleuchtet?	? 10383,19911 10167,19797
@@ -2531,7 +2527,6 @@ Westhafenstr.: Ist die Westhafenstr. durchgängig bis zur Beusselstr. befahrbar? 
 Erwin-Bock-Str.: Qualität?	? 23745,3806 23749,3868 23749,3883 23753,4218
 Dorothea-Viehmann-Str.: Qualität der Straße südlich "Zum alten Windmühlenberg"?	? 19206,1809 19164,1708 19132,1628 19061,1457
 Prierosser Str.: Qualität im nördlichen Abschnitt?	? 16570,2113 16568,2088 16651,1962
-Friedrich-Kayßler-Weg: Qualität?	? 15312,2010 15144,2015 15010,2032
 Sollmannweg: Qualität?	? 15010,2032 14993,2025 14865,1952 14846,1940 14627,1902 14549,1922
 (Matthäusweg - Friedrich-Kayßler-Weg): Qualität?	? 14996,1564 14962,1667 14982,1714 14985,1801 14986,1820
 (Matthäusweg - Friedrich-Kayßler-Weg): Qualität?	? 14993,2025 14994,2069
@@ -2627,7 +2622,6 @@ Zeisgendorfer Weg: Qualität?	? -1440,23163 -1557,23193 -1660,23225 -1764,23260 -
 Osterwicker Steig: Qualität?	? -1633,22950 -1557,23193
 Bilsenkrautstr.: Qualität?	? -1251,22853 -1281,22990 -1333,23191
 Helmkrautstr.: Qualität?	? -816,23083 -900,23082 -958,23089 -1333,23191 -1425,23222
-Am Hirschwechsel: Qualität?	? -1192,22576 -974,22517 -897,22495 -682,22442
 Wisentweg: Qualität?	? -719,22569 -668,22695 -585,22807
 Bisonweg: Qualität?	? -760,22980 -698,22918 -647,22866 -585,22807 -532,22758
 Mümmelmannweg: Qualität?	? -698,22918 -740,22886 -861,22836 -891,22827 -996,22806 -1047,22796 -1132,22792
@@ -2642,6 +2636,31 @@ Grünz - Radewitz: Qualität?	? 59477,99336 59588,99540 59496,99728 59670,99855
 Kummerow - Woltersdorf: Qualität (an der östlichen Seite: Feldweg)?	? 63468,83897 63719,84166 63909,84187 65384,85315
 Kummerow - Kunow: Qualität?	? 63202,83842 63468,83897 63701,83897 64030,83689 64199,83388 64560,83095 65187,82762 65732,81931 65968,82128 66459,82296 66731,82468 66943,82495
 Kummerow - Jamikow: Qualität?	? 63202,83842 62902,83983 61889,84194 61022,84291
+Huttwiler Weg: Qualität? Ist die Straße eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 7071,18232 7120,18295 7098,18383 7035,18413 6961,18453 6913,18460
+Ragazer Str.: Qualität? Kann die Lindauer Allee in Höhe der Ragazer Str. überquert werden?	? 6971,18299 7035,18413 7119,18582
+Walliser Str.: Qualität? Ist die Durchfahrt zur Lindauer Allee für Autofahrer gesperrt?	? 6887,18330 6913,18460 6924,18599
+Breitkopfstr.: Qualität? Ist der Abschnitt südlich der Mittelbruchzeile für Autos gesperrt?	? 7828,17550 7809,17708 7789,17853 7772,17915 7736,18005 7680,18106 7510,18364 7460,18465 7420,18455 7391,18472 7377,18498 7375,18539 7399,18569 7445,18581 7434,18695
+Gamsbartweg: Qualität?	? 7599,18421 7551,18515
+Lampesteig: Qualität?	? 7534,18588 7520,18701
+Waldenburger Str.: Qualität?	? 22307,9762 22387,9873 22535,10023 22687,10210 22905,10488
+Kaulsdorfer Gärten: Qualität?	? 21859,9822 21893,9902
+Adolf-Menzel-Str.: Qualität? Kann man als Radfahrer zur Chemnitzer Str. durchfahren?	? 21988,9766 22013,9919 22026,10016 22077,10080 22096,10090
+Adolf-Menzel-Str.: Qualität?	? 22077,10080 22022,10102 22032,10150 22055,10213 22125,10451
+Elsenborner Weg: Qualität?	? 21897,9972 21939,10179
+Norastr.: Qualität?	? 22140,9830 22231,9817 22307,9762
+Miltschiner Str.: Qualität?	? 22586,9996 22535,10023 22405,10098 22306,10144 22183,10179 22055,10213
+Hirsinger Str.: Qualität?	? 22013,9919 21897,9972 21858,9988 21782,10007 21718,10013
+Striegauer Str.: Qualität?	? 22160,10020 22218,10013 22293,10038 22405,10098 22498,10201 22574,10300 22652,10392 22732,10492 22783,10548 22808,10591
+Lassallestr.: Qualität?	? 22306,10144 22343,10289 22365,10386 22403,10523 22440,10658
+Graubündener Str.: Qualität?	? 22498,10201 22429,10255 22343,10289
+Strehlener Str.: Qualität?	? 22652,10392 22538,10477 22403,10523
+Lenbachstr. (Kaulsdorf): Qualität?	? 22327,10685 22251,10700 21979,10686 21938,10664 21717,10371 21683,10291 21679,10186 21718,10013
+Holbeinstr.: Qualität?	? 21868,10202 21830,10342 21907,10455
+Rogauer Weg: Qualität?	? 22732,10492 22627,10575 22635,10625
+Windthorststr.: Qualität?	? 22424,10662 22490,10868 22552,11029
+Penkuner Weg: Qualität?	? 22738,10605 22785,10781 22865,11007
+Eichhornstr. (Kaulsdorf): Qualität?	? 22458,9532 22501,9369
+Fichtenstr.: Qualität?	? 22212,9508 22200,9430 22154,9237
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
@@ -2661,6 +2680,7 @@ Jugendplatz (Qualität?)	? 1191,14513 1262,14510
 Charlottenstr. (Biesdorf) (Qualität zwischen Allee der Kosmonauten und dem anderen Teil der Charlottenstr?)	? 20657,14446 20647,14341
 Fuchsbau (Karlshorst) (Einbahnstraße?)	? 17651,7973 17590,7828
 Blaurackenweg (Einbahnstraße?)	? 17613,7989 17647,8071 17532,8125
+Kiesweg (Karlshorst) (geht der Kiesweg bis zum Wiesenweg oder noch darüber hinaus?)	? 20280,7749 20342,7748 20379,7848 20429,7977
 (Weg zur Krampenburg) (ist das ein offizieller Name mit Ausschilderung?)	? 27609,305 27571,262 27171,155 27273,-106 27407,-401 27552,-741 27559,-1365 27357,-1545 27323,-1671
 Steilpfad (In welche Richtung verläuft die Steigung? Gibt es hier eine Einbahnstraße? Wenn ja, auch für Radfahrer, oder nur für Autos?)	? 3280,21477 3376,21224
 Schönfließer Str. (Frohnau) (Qualität?)	? 3145,26256 3347,26272 3360,26275 3490,26306 3638,26357

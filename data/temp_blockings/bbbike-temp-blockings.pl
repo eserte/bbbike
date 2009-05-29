@@ -1294,7 +1294,7 @@ EOF
        text  => 'Emmentaler Str. (Reinickendorf) Richtung Westen zwischen Residenzstr. und Gamsbartweg Baustelle, Straße Richtung Westen gesperrt, Einbahnstraßenregelung Richtung Osten (bis 17.12.2004)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	q4; 7693,18481 7350,18262
+userdel	q4; 7693,18481 7599,18421 7510,18364 7350,18262
 EOF
      },
      { from  => 1101934006, # 2004-12-01 21:46
@@ -3962,7 +3962,7 @@ EOF
      },
      { from  => 1144176662, # 2006-04-04 20:51
        until => 1144263062, # 2006-04-05 20:51
-       text  => ' ',
+       text  => '<leer>', # intentionally not empty string, because the check_bbbike_temp_blockings script does not like it
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 16407,-29400 16379,-29446
@@ -6743,7 +6743,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004242',
        data  => <<EOF,
-userdel	1::inwork 8211,17585 8095,17574 7998,17564 7915,17557 7841,17551 7675,17538 7587,17532
+userdel	1::inwork 8211,17585 8095,17574 7998,17564 7915,17557 7841,17551 7828,17550 7675,17538 7587,17532
 EOF
      },
      { from  => 1165266184, # 2006-12-04 22:03
@@ -8910,7 +8910,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004242',
        data  => <<EOF,
-userdel	1::inwork 8211,17585 8095,17574 7998,17564 7915,17557 7841,17551 7675,17538 7587,17532
+userdel	1::inwork 8211,17585 8095,17574 7998,17564 7915,17557 7841,17551 7828,17550 7675,17538 7587,17532
 EOF
      },
      { from  => undef, # 

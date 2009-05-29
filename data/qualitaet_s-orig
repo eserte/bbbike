@@ -676,7 +676,7 @@ Rheinsteinstr.: Kopfsteinpflaster	Q2 18998,8784 19078,8817 19120,8835
 Rheinsteinstr.: asphaltiert	Q0 19120,8835 19173,8857
 Rheinsteinstr.: Kopfsteinpflaster	Q2 19173,8857 19316,8933 19510,9035
 Zwieseler Str.: Kopfsteinpflaster	Q2 19510,9035 19629,9094
-Köpenicker Allee: wechselnd: holpriger Fahrweg, mäßiger Asphalt	Q2 19898,8410 19998,8241 20096,8077 20226,7846 20280,7757
+Köpenicker Allee: wechselnd: holpriger Fahrweg, mäßiger Asphalt	Q2 19898,8410 19998,8241 20096,8077 20226,7846 20280,7749
 #: by: Roy Fischer [AM]
 #: confirmed_by: srt
 Vulkanstr.: Asphalt	Q0 15912,13153 15897,13512 15896,13547 15896,13594 15897,13942 15871,14106 15838,14319
@@ -2602,6 +2602,9 @@ Zitadelle: Kopfsteinpflaster	Q2- -2646,14525 -2668,14635 -2704,14748 -2735,14848
 Behnitz: Kopfsteinpflaster	Q2 -2951,14617 -2993,14568 -3014,14559
 ######################################################################
 #: by: anonymous vvv
+Friedrich-Kayßler-Weg: guter Beton	Q0- 15312,2010 15144,2015 15010,2032
+#: note: "Q1", weil in der Umgebung auch Q1 für "guter Beton" vergeben wurde:
+Silvesterweg: guter Beton	Q1 3559,24564 3575,24498 3605,24351 3632,24214 3661,24079 3702,23899 3715,23819 3751,23764 3791,23730
 Gronauer Weg: guter Asphalt	Q0 3922,111 3916,-54
 Osianderweg: guter Asphalt	Q0 3123,21360 3058,21530 2953,21777 2868,21945
 Lagerweg: mäßiger Beton	Q1- -1392,14527 -1404,14441 -1354,14424
@@ -2845,7 +2848,7 @@ Mannheimer Str. (Mahlsdorf): guter Asphalt	Q0 24149,9387 23895,9462 23717,9509 2
 Grenzstr. (Mahlsdorf): Asphalt	Q0 23188,9593 23166,9549 23120,9443 23072,9341 23018,9226
 Eschenstr.: sehr guter Asphalt	Q0+ 23031,9209 23018,9226 22947,9277 22830,9361 22718,9442 22666,9479 22548,9523 22458,9532 22427,9536 22402,9551 22366,9571
 Heerstr.: Beton mit Schäden/Asphalt	Q0- 22366,9571 22129,9702
-Heerstr.: Beton	Q0- 22129,9702 21988,9766 21842,9829 21749,9856 21686,9876 21611,9893
+Heerstr.: Beton	Q0- 22129,9702 21988,9766 21859,9822 21842,9829 21749,9856 21686,9876 21611,9893
 Heesestr.: Asphalt	Q0- 21611,9893 21534,9901 21371,9923 21164,9960
 Parchimer Str.: guter Beton	Q1 22310,12637 22271,12623 22253,12570 22256,12489 22212,12422 22212,12349 22228,12274 22292,12198 22304,12157
 Arberstr.: mäßiger Beton	Q1 19400,9110 19407,9232 19424,9502 19437,9653 19450,9728
@@ -4128,7 +4131,7 @@ Philippistr.: Kopfsteinpflaster	Q2 2583,11613 2512,11602
 #: note: beides wird durch die ADFC-Karte bestätigt:
 Ernststr.: Kopfsteinpflaster	Q2 2497,19503 2700,19527
 Ernststr.: Asphalt	Q0 3645,19921 3504,19849 3429,19786 3343,19727 3252,19658 3167,19597 3010,19572 2852,19546
-Thurgauer Str.: kleinteiliges Kopfsteinpflaster	Q1 7147,18149 7108,18199 7071,18232 7026,18267 6971,18299 6887,18330 6694,18351
+Thurgauer Str.: kleinteiliges Kopfsteinpflaster	Q1 7227,18010 7147,18149 7108,18199 7071,18232 7026,18267 6971,18299 6887,18330 6694,18351
 #: by: ^^^
 #: by: Claudia Skowronnek: vvv
 #: XXX: laut Claudia "vermutlich Beton":
@@ -4604,7 +4607,7 @@ Woermannkehre: Asphalt	Q0 13608,6263 13732,6314
 #: by: peter (pr@...):
 Behringstr.: gutes Kopfsteinpflaster	Q1 16262,6913 16416,6741 16474,6675
 #: by: Stephan Schmauder: vvv
-Achardstr.: Asphalt	Q0 22327,10685 22519,10639 22635,10625 22808,10591
+Achardstr.: Asphalt	Q0 22327,10685 22424,10662 22440,10658 22519,10639 22635,10625 22738,10605 22808,10591
 Lassaner Str.: Betonplatten, gut verfugt	Q1 22808,10591 22876,10760 22947,10998
 #: by: ^^^
 #: by: Daniel Backmann:
@@ -8481,6 +8484,18 @@ Charlottenstr. (Biesdorf): guter Asphalt	Q0- 21099,14300 21302,14282
 Rudi-Dutschke-Weg: gutes Kopfsteinpflaster	Q1 2627,5095 2913,5294
 #: by: Petra Knitsch:
 Langenauer Weg: guter Asphalt	Q0 -1719,23372 -1617,23624
+#: by: olli (liet):
+Dinkelsbühler Steig: guter Asphalt	Q0 2616,25218 2649,25170 2694,25132 2775,25092 2823,25038
+#: by: Isabel Kramer:
+#: note: "Wohngebiet, q1" ignoriert:
+Am Hirschwechsel: gutes Verbundsteinpflaster	Q1 -1192,22576 -974,22517 -897,22495 -682,22442
+#: by: Thomas Ahlers:
+Kiesweg (Karlshorst): mäßiger fester Sandweg, Schlaglöcher	Q2- 20280,7749 20342,7748 20379,7848 20429,7977
+#: by: gregor (kijora):
+#: confirmed_by: anonymous ("Kopfsteinpflaster")
+Ötztaler Str.: schlechtes Kopfsteinpflaster	Q3 10690,17420 10630,17421
+#: by: Uwe Majewski
+Schulstr. (Tegel): schlechtes Kopfsteinpflaster	Q3 1794,20110 1953,20149
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
