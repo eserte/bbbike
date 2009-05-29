@@ -690,7 +690,7 @@ userdel	q4 33101,-85749 33060,-85292
 EOF
      },
      { from  => 1096840800, # 2004-10-04 00:00
-       until => 1099520857, # XXX siehe unten
+       until => 1099520857, # siehe unten
        text  => 'B 167; zw. Bad Freienw. u. Falkenberg, Höhe Papierfabrik Neubau von Durchlässen Vollsperrung 04.10.2004-unbekannt ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -869,7 +869,7 @@ userdel	q4 8370,25539 8182,25608
 EOF
      },
      { from  => 1105830000, # 2005-01-16 00:00
-       until => 1116363037, # aufgehoben XXX 2005-05-28 00:00
+       until => 1116363037, # aufgehoben 2005-05-28 00:00
        text  => 'K 6413; (Wriezener Straße); OL Buckow, zw. Weinbergsweg u. Ringstr. Kanal- u. Straßenbau Vollsperrung 17.01.2005-27.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -1298,7 +1298,7 @@ userdel	q4; 7693,18481 7350,18262
 EOF
      },
      { from  => 1101934006, # 2004-12-01 21:46
-       until => 1114976619, # aufgehoben XXX 1117576800 2005-06-01 00:00
+       until => 1114976619, # aufgehoben 1117576800 2005-06-01 00:00
        text  => 'Akeleiweg, Tiefbauarbeiten, Straße von Eisenhutweg in Richtung Stubenrauchstraße gesperrt, Dauer: bis 31.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -1314,7 +1314,7 @@ userdel	2 4151,10026 3906,10035
 EOF
      },
      { from  => undef, # 
-       until => 1122058621, # nicht mehr XXX
+       until => 1122058621, # nicht mehr
        text  => 'Johannisthaler Chaussee Zwischen Rudower Straße und Königsheideweg beidseitig Brückenarbeiten, gesperrt ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -1458,7 +1458,7 @@ userdel	2 22501,-102573 22382,-102254
 EOF
      },
      { from  => 1108249200, # 2005-02-13 00:00
-       until => 1110145553, # XXX not anymore, was 1114898400 2005-05-01 00:00
+       until => 1110145553, # not anymore, was 1114898400 2005-05-01 00:00
        text  => 'Im Zeitraum vom 14.02.2005 bis 30.04.2005 besteht für die L 73 zwischen Langerwisch und Wildenbruch Vollsperrung auf Grund von Bauarbeiten. ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -1506,7 +1506,7 @@ EOF
      },
      { from  => 1109545200, # 2005-02-28 00:00
        until => 1128117600, # 2005-10-01 00:00
-       text  => 'B 179; (Berliner Str.); OL Königs Wusterhausen, zw. Schloßplatz u. Funkerberg Kanalarbeiten halbseitig gesperrt (XXX welche Richtung?); Einbahnstraße 01.03.2005-30.09.2005 ',
+       text  => 'B 179; (Berliner Str.); OL Königs Wusterhausen, zw. Schloßplatz u. Funkerberg Kanalarbeiten halbseitig gesperrt (welche Richtung?); Einbahnstraße 01.03.2005-30.09.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4; 25859,-11559 25640,-11357
@@ -1563,7 +1563,7 @@ userdel	1 17518,4644 17471,4570 17428,4503
 EOF
      },
      { from  => 1110235074, # 2005-03-07 23:37
-       until => 1110317384, # XXX from 2005-12-09 marked as removed, check!
+       until => 1110317384, # from 2005-12-09 marked as removed, check!
        text  => 'Unter den Linden (Mitte) Richtung Westen zwischen Schadowstr. und Wilhelmstr. Baustelle, Straße vollständig gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -1810,7 +1810,7 @@ userdel	q4 9569,11631 9701,11656
 EOF
      },
      { from  => 1113870146, # 2005-04-19 02:22
-       until => 1114553274, # XXX ich konnte aus der S-Bahn heraus nichts erkennen 2005-12-31 23:59
+       until => 1114553274, # ich konnte aus der S-Bahn heraus nichts erkennen 2005-12-31 23:59
        text  => 'Rosa-Luxemburg-Str. (Mitte) Richtung stadtauswärts, zwischen Memhardstr. und Torstr. Baustelle, Straße vollständig gesperrt (bis Ende 2005) Umleitung über Karl-Liebknecht-Straße - Torstraße',
        type  => 'handicap',
        data  => <<EOF,
@@ -2098,8 +2098,8 @@ userdel auto	3 3358,12258 3217,12239 3072,12222 2899,12200 2895,12217
 userdel auto	3 2895,12217 2899,12200 3072,12222 3217,12239 3358,12258
 EOF
      },
-     { from  => 1120180333, # undef XXX 2005-07-07 00:00
-       until => 1120180333, # undef XXX 2005-07-10 00:00
+     { from  => 1120180333, # undef 2005-07-07 00:00
+       until => 1120180333, # undef 2005-07-10 00:00
        text  => 'L 30; (Woltersdorfer Landstr.); OD Erkner Grundhafter Straßenbau Vollsperrung 08.07.2005-09.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -3551,7 +3551,7 @@ userdel	q4 -34063,-10552 -34488,-10578
 EOF
      },
      { from  => undef, # 
-       until => 1152221087, # XXX undef
+       until => 1152221087, # undef
        text  => 'Pistoriusstr. (Weißensee) in Richtung Mirbachplatz zwischen Berliner Allee und Parkstr. Baustelle, Fahrtrichtung gesperrt',
        type  => 'handicap',
        source_id => 'IM_002437',
@@ -3594,7 +3594,7 @@ userdel	2 91858,-18170 90698,-16886
 EOF
      },
      { from  => undef, # 
-       until => 1139428054, # XXX
+       until => 1139428054, #
        text  => 'Elsenstr. (Kaulsdorf) in beiden Richtungen zwischen Kressenweg und Hornungsweg Wasser auf der Fahrbahn, Straße vollständig gesperrt ',
        type  => 'gesperrt',
        source_id => 'LMS_1138607956237',
@@ -3612,7 +3612,7 @@ userdel	q4; 15639,10469 15758,10578 15982,10765 16032,10842
 EOF
      },
      { from  => undef, # 
-       until => 1139470769, # XXX
+       until => 1139470769, #
        text  => 'Berlin-Lübars: Am Freibad in beiden Richtungen Wasser auf der Fahrbahn, gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -3620,7 +3620,7 @@ userdel	2 5727,23485 5297,23633
 EOF
      },
      { from  => undef, # 
-       until => 1140727101, # XXX
+       until => 1140727101, #
        text  => 'Tempelhofer Weg (Tempelhof) von Gottlieb-Dunkel-Str. bis Hattenheimer Str. Baustelle, Fahrtrichtung gesperrt',
        type  => 'handicap',
        source_id => 'IM_002431',
@@ -3654,7 +3654,7 @@ userdel	q4 25859,-11559 25640,-11357
 EOF
      },
      { from  => undef, # 
-       until => 1140120150, # XXX
+       until => 1140120150, #
        text  => 'Säntisstraße zwischen Daimlerstraße und Albanstraße Störung am Bahnübergang, Straße gesperrt ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -3784,7 +3784,7 @@ userdel	q4 64853,-30986 65386,-29479
 EOF
      },
      { from  => undef, # 
-       until => 1148166908, # XXX nur noch Fahrstreifeneinschränkung...
+       until => 1148166908, # nur noch Fahrstreifeneinschränkung...
        text  => 'Bötzowstr. (Prenzlauer Berg) in beiden Richtungen, zwischen Danziger Str. und Hufelandstr. Baustelle, Straße vollständig gesperrt',
        type  => 'handicap',
        source_id => 'IM_002530',
@@ -3885,7 +3885,7 @@ userdel	q4 10846,13362 10923,13317
 EOF
      },
      { from  => undef, # 
-       until => 1144438933, # XXX
+       until => 1144438933, #
        text  => 'Zoppoter Str. (Wilmersdorf) in beiden Richtungen zwischen Heiligendammer Str. und Breitestr. Tiefbauarbeiten, Straße vollständig gesperrt',
        type  => 'handicap',
        source_id => 'IM_002552',
@@ -3962,7 +3962,7 @@ EOF
      },
      { from  => 1144176662, # 2006-04-04 20:51
        until => 1144263062, # 2006-04-05 20:51
-       text  => 'XXX',
+       text  => ' ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 16407,-29400 16379,-29446
@@ -4258,8 +4258,8 @@ EOF
 userdel	2 8987,-92875 9450,-92307
 EOF
      },
-     { from  => 1146251142, # XXX 2006-05-01 00:00
-       until => 1146251563, # XXX 2006-07-29 00:00
+     { from  => 1146251142, # 2006-05-01 00:00
+       until => 1146251563, # 2006-07-29 00:00
        text  => 'B 168 Fürstenwalde-Müncheberg zw. Beerfelde und Schönfelde Straßenbauarbeiten Vollsperrung 02.05.2006-28.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -4326,7 +4326,7 @@ userdel	q4::inwork 74092,475 74246,584
 EOF
      },
      { from  => undef, # 
-       until => 1147121258, # XXX
+       until => 1147121258, #
        text  => 'Mühlenstr. (Pankow) in Richtung Norden zwischen Florastr und Dolomitenstr. Einbahnstraße in Richtung Süden',
        type  => 'gesperrt',
        source_id => 'IM_002743',
@@ -4335,7 +4335,7 @@ userdel	1 10572,17573 10510,17649 10459,17754
 EOF
      },
      { from  => undef, # 
-       until => 1147067585, # XXX
+       until => 1147067585, #
        text  => 'Reichstagufer (Mitte) zwischen Neustädter Kirchstr. und Friedrichsstr. Gefahr durch Uferunterspühlung, Straße gesperrt.',
        type  => 'gesperrt',
        source_id => 'LMS_1146113785841',
@@ -4384,7 +4384,7 @@ userdel	2 12242,8972 12320,8927
 EOF
      },
      { from  => undef, # 
-       until => 1148166862, # XXX tritt nirgendwo mehr auf
+       until => 1148166862, # tritt nirgendwo mehr auf
        text  => 'Riemenschneiderweg zwischen Vorarlberger Damm und Grazer Platz, Baustelle, in beiden Richtungen gesperrt.',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -4706,7 +4706,7 @@ userdel	2::temp 8595,12066 8581,11896 8571,11846
 EOF
      },
      { from  => undef, # 
-       until => 1149833870, # XXX undef
+       until => 1149833870, # undef
        text  => 'Veitstr. (Tegel) in beiden Richtungen zwischen Medebacher Weg und Treskowstr. Wasserrohrbruch, Baustelle, Straße vollständig gesperrt (Dauer: mehrere Tage)',
        type  => 'gesperrt',
        source_id => 'IM_002880',
@@ -5266,7 +5266,7 @@ userdel	2::temp 5370,6486 5424,6584 5533,6753 5654,6941
 EOF
      },
      { from  => 1154203576, # 2006-07-29 22:06
-       until => Time::Local::timelocal(reverse(2007-1900,5-1,13,0,0,0)), # 1183240800, # 2007-07-01 00:00 # XXX nicht mehr in VMZ vorhanden!
+       until => Time::Local::timelocal(reverse(2007-1900,5-1,13,0,0,0)), # 1183240800, # 2007-07-01 00:00 # nicht mehr in VMZ vorhanden!
        text  => 'Karl-Liebknecht-Str. (Mitte) in Richtung Spandauer Str., zwischen Memhardstr.. und Dircksenstr. Baustelle, Straße vollständig gesperrt. Ebenfalls Einbahnstraße: Teile der Dircksenstr. Die Ausfahrt aus der Memhardstraße in Richtung Ost (Alexanderstraße) ist nicht möglich. (bis 2007-05-13) ',
        type  => 'gesperrt',
        source_id => 'IM_003157',
@@ -5277,7 +5277,7 @@ userdel	3::inwork 10755,13152 10920,13139 11139,13008
 EOF
      },
      { from  => 1154203576, # 2006-07-29 22:06
-       until => Time::Local::timelocal(reverse(2006-1900,9-1,23,23,59,59)), # XXX nicht mehr in VMZ vorhanden!
+       until => Time::Local::timelocal(reverse(2006-1900,9-1,23,23,59,59)), # nicht mehr in VMZ vorhanden!
        text  => 'Memhardstr. ist Einbahnstraße Richtung Westen (bis 23. September 2006) ',
        type  => 'gesperrt',
        source_id => 'IM_003157',
@@ -5395,7 +5395,7 @@ userdel	q4::inwork 20205,-548 20354,-569 20362,-511
 EOF
      },
      { from  => undef, # 
-       until => 1157843821, # XXX undef
+       until => 1157843821, # undef
        text  => 'Havemannstr. (Marzahn) in beiden Richtungen zwischen Märkische Allee und Borkheider Str. Baustelle, Straße vollständig gesperrt',
        type  => 'handicap',
        source_id => 'IM_003255',
@@ -7102,7 +7102,7 @@ userdel	2::inwork -612,38051 -234,37510
 EOF
      },
      { from  => undef, # 
-       until => 1183500687, # XXX aufgehoben von steini
+       until => 1183500687, # aufgehoben von steini
        text  => 'Paul-Schwarz-Promenade zwischen Krahmerstr. und Klinikum bis auf weiteres wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -7200,7 +7200,7 @@ userdel	2::inwork 30491,-65399 30577,-65764
 EOF
      },
      { from  => 1176488048, # undef
-       until => 1176488053, # XXX undef
+       until => 1176488053, # undef
        text  => 'Kietzer Str. (Köpenick) in beiden Richtungen, zwischen Grünstr. und Rosenstr. geplatzte Wasserleitung',
        type  => 'gesperrt',
        source_id => 'IM_004874',
@@ -7300,7 +7300,7 @@ userdel	2::inwork 15836,11840 15863,11992
 EOF
      },
      { from  => undef, # 
-       until => 1174068889, # XXX
+       until => 1174068889, #
        text  => 'Bethaniendamm (Mitte) Kreuzung Leuschnerdamm Baustelle, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'INKO_86548_COPY_1',
@@ -7869,7 +7869,7 @@ userdel	1::inwork 10220,13691 10085,13684 9996,13678 9945,13669
 EOF
      },
      { from  => 1177625221, # 
-       until => 1177625224, # XXX
+       until => 1177625224, #
        text  => 'Wittestraße (Reinickendorf) in beiden Richtungen, zwischen Otisstraße und Antonienstraße Arbeiten an Gasleitungen, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005307',
@@ -7955,7 +7955,7 @@ userdel	2::inwork 2951,24389 2849,24530 2779,24628 2690,24751 2542,24945 2438,25
 EOF
      },
      { from  => undef, # 
-       until => 1178221293, # XXX undef
+       until => 1178221293, # undef
        text  => 'Tiergartenstr. - H. v. Karajan-Str- (Tiergarten) in beiden Richtungen zwischen Stauffenbergstr. und Kemperplatz Veranstaltung Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005359',
@@ -8261,7 +8261,7 @@ userdel	2::temp 34443,1951 34250,2546
 EOF
      },
      { from  => undef, # 
-       until => 1181428648, # XXX undef
+       until => 1181428648, # undef
        text  => 'Friedrichstr. (Kreuzberg) zwischen Kochstr. und Zimmerstr. Baustelle, Radfahrer können aber langsam passieren',
        type  => 'handicap',
        source_id => 'IM_005616',
@@ -8279,7 +8279,7 @@ userdel	2::temp 8098,13419 8102,13304 8106,13130 8110,13042
 EOF
      },
      { from  => undef, # 
-       until => 1180730929, # XXX undef
+       until => 1180730929, # undef
        text  => 'Lückstr. (Lichtenberg) in beiden Richtungen zwischen Weitlingstr. und Emanuelstr. Einsturzgefahr eines Hauses, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005633',
@@ -8310,7 +8310,7 @@ userdel	2::inwork 6365,13879 6227,13938
 EOF
      },
      { from  => 1181672436, # 
-       until => 1181672441, # XXX
+       until => 1181672441, #
        text  => 'Blankenfelder Chaussee in beiden Richtungen, zwischen Alt-Lübars und Bahnhofstraße Baustelle, Straße vollständig gesperrt ',
        type  => 'gesperrt',
        source_id => 'IM_005637',
@@ -8383,7 +8383,7 @@ userdel	2::inwork 44261,-14205 43456,-14384 42430,-14398
 EOF
      },
      { from  => undef, # 
-       until => 1180901636, # XXX undef
+       until => 1180901636, # undef
        text  => 'Alt-Müggelheim (Köpenick) in beiden Richtungen Veranstaltung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005660',
@@ -8428,7 +8428,7 @@ userdel	1::inwork 2029,20331 2241,20487
 EOF
      },
      { from  => 1181165074, # undef
-       until => 1181165075, # XXX undef (nur noch "Verkehrsstörung erwartet)
+       until => 1181165075, # undef (nur noch "Verkehrsstörung erwartet)
        text  => 'Budapester Str. (Tiergarten) in beiden Richtungen zwischen Lützowufer und Kurfürstenstr. Straße vollständig gesperrt, Staatsbesuch',
        type  => 'gesperrt',
        source_id => 'IM_005699',
@@ -8495,7 +8495,7 @@ userdel	q4::inwork 61140,11287 61156,11478
 EOF
      },
      { from  => 1181587527, # 
-       until => 1181587530, # XXX
+       until => 1181587530, #
        text  => 'Hosemannstr. (Prenzlauer Berg) in beiden Richtungen, zwischen Grellstr. und Ostseeplatz Baustelle, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005738',
@@ -8521,7 +8521,7 @@ userdel	q4::inwork 14535,11327 14495,11261 14465,11195
 EOF
      },
      { from  => 1181768521, # 
-       until => 1181768526, # XXX
+       until => 1181768526, #
        text  => 'Glienicker Weg (Adlershof) Richtung Adlergestell zwischen Nipkowstr. und Adlergestell Fahrbahnunterspülung, Fahrtrichtung gesperrt',
        type  => 'handicap',
        source_id => 'IM_005746',
@@ -8671,7 +8671,7 @@ userdel	2::inwork 38357,51575 38111,51856
 EOF
      },
      { from  => 1186170676, # 
-       until => 1215120478, # XXX (reported by: thuki@...) (Haus wird gebaut, kann eine Weile dauern) (Die Baustelle ist jetzt aufgehoben!)
+       until => 1215120478, # (reported by: thuki@...) (Haus wird gebaut, kann eine Weile dauern) (Die Baustelle ist jetzt aufgehoben!)
        text  => 'Homburger Str.: Einbahnstraße wegen Baustelle zw. Ahrweiler Str. und Assmannshauser Str., Durchfahrt Richtung Osten möglich',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -8679,7 +8679,7 @@ userdel	1::inwork 4599,7474 4403,7498
 EOF
      },
      { from  => undef, # 
-       until => 1186170465, # XXX (reported by: thuki@...), auch die Aufhebung
+       until => 1186170465, # (reported by: thuki@...), auch die Aufhebung
        text  => 'Sarrazinstr.: zurzeit Einbahnstraße (Elsastr. bis Bundesallee; Durchfahrt in dieser Richtung) wegen Baustelle',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -8707,7 +8707,7 @@ userdel	1::inwork 10534,14460 10723,14772 10838,14962 10881,15047
 EOF
      },
      { from  => undef, # 
-       until => 1185227622, # XXX undef
+       until => 1185227622, # undef
        text  => 'Drakestr. (Lichterfelde) in beiden Richtungen, zwischen Curtiusstr. und Unter den Eichen Fahrbahnunterspülung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005823',
@@ -8716,7 +8716,7 @@ userdel	2::inwork 3048,4305 3142,4173 3151,4160 3214,4066 3228,4046 3259,4002
 EOF
      },
      { from  => undef, # 
-       until => 1183280362, # XXX undef
+       until => 1183280362, # undef
        text  => 'Fürstenbrunner Weg (Charlottenburg) in beiden Richtungen, zwischen Spandauer Damm und Rohrdamm Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005810',
@@ -8728,7 +8728,7 @@ userdel	2::inwork 1159,13541 1175,13513 1193,13485 1488,13454
 EOF
      },
      { from  => undef, # 
-       until => 1182281918, # XXX undef
+       until => 1182281918, # undef
        text  => 'Hauptstr. (Blankenfelde) in beiden Richtungen, zwischen Berliner Str. und Möllersfelder Weg Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005809',
@@ -8737,7 +8737,7 @@ userdel	2::inwork 9812,23983 9774,23936 9625,23781 9425,23693 9228,23643
 EOF
      },
      { from  => undef, # 
-       until => 1182281931, # XXX undef
+       until => 1182281931, # undef
        text  => 'Hüttenweg (Zehlendorf) in beiden Richtungen zwischen Clayallee und Onkel-Tom-Str. Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_005827',
@@ -8914,7 +8914,7 @@ userdel	1::inwork 8211,17585 8095,17574 7998,17564 7915,17557 7841,17551 7675,17
 EOF
      },
      { from  => undef, # 
-       until => 1183798449, # XXX undef
+       until => 1183798449, # undef
        text  => 'Hauptstr. (Wilhelmsruh) in beiden Richtungen zwischen Schillerstr. und Edelweißstr. Baustelle, Straße vollständig gesperrt (bis auf weiteres)',
        type  => 'handicap',
        source_id => 'IM_005953',
@@ -9023,7 +9023,7 @@ userdel	2::temp 8515,12242 8214,12205 8089,12190
 EOF
      },
      { from  => undef, # 
-       until => 1184610940, # XXX
+       until => 1184610940, #
        text  => 'Str. nach Fichtenau (Köpenick) in beiden Richtungen bei S Rahnsdorf geplatzte Wasserleitung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_006066',
@@ -9164,7 +9164,7 @@ userdel	q4::temp -19882,29552 -19833,29510 -19798,29399
 EOF
      },
      { from  => undef, # 
-       until => 1185577821, # XXX
+       until => 1185577821, #
        text  => 'Marktstr. (Lichtenberg) Richtung Karlshorster Str. zwischen Kynaststr. und Schreiberhauer Str. geplatzte Wasserleitung, Fahrtrichtung gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_006151',
@@ -9367,7 +9367,7 @@ userdel	2::inwork -60904,38644 -60907,38811
 EOF
      },
      { from  => 1188246966, # 
-       until => 1188246970, # XXX laut Cord nur bis 2007-08-17
+       until => 1188246970, # laut Cord nur bis 2007-08-17
        text  => 'der Fußweg von der Buchberger Str. zum S-Bahnhof Nöldnerplatz ist z.Zt. voll gesperrt (Bauzaun)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -9468,7 +9468,7 @@ userdel	q4::inwork; 10363,10303 10605,10312
 EOF
      },
      { from  => 1188059338, # 
-       until => 1188059341, # XXX
+       until => 1188059341, #
        text  => 'Alt-Moabit (Tiergarten) Kreuzung Thomasiusstraße Fahrbahnabsenkung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_006429',
@@ -9504,7 +9504,7 @@ userdel	2::temp 8581,11896 8595,12066 8600,12165 8515,12242 8539,12286 8560,1232
 EOF
      },
      { from  => 1188059356, # 
-       until => 1188059359, # XXX
+       until => 1188059359, #
        text  => 'Falkenhagener Str. (Spandau) zwischen Bismarckplatz und Elisabethstr. Fahrbahnabsenkung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_006400',
@@ -9513,7 +9513,7 @@ userdel	2::inwork -3507,15341 -3492,15331 -3349,15229 -3241,15118
 EOF
      },
      { from  => 1189353413, # undef
-       until => 1189353419, # XXX undef
+       until => 1189353419, # undef
        text  => 'Oranienburger Str. (Reinickendorf) stadtauswärts, zwischen Lübarser Str. und WIttenauer Str. Baustelle, Fahrtrichtung gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_006352',
@@ -9522,7 +9522,7 @@ userdel	1::inwork 5320,21432 5311,21495 5136,21738
 EOF
      },
      { from  => 1188240671, # 
-       until => 1188240674, # XXX
+       until => 1188240674, #
        text  => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Brandenburger Tor und Yitzhak-Rabin-Str. Veranstaltung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_006364',
@@ -9871,7 +9871,7 @@ userdel	2::inwork -579,33145 -529,33240 -503,33339 -454,33489 -440,33503 -406,33
 EOF
      },
      { from  => 1231707233, # 2009-01-11 21:53
-       until => Time::Local::timelocal(reverse(2009-1900,6-1,15,0,0,0)), # XXX 1243807199 2009-05-31 23:59
+       until => Time::Local::timelocal(reverse(2009-1900,6-1,15,0,0,0)), # 1243807199 2009-05-31 23:59
        text  => 'Glinkastr. (Mitte) in beiden Richtungen zwischen Jägerstr. und Taubenstr. Baustelle, Straße vollständig gesperrt (bis Mitte 06.2009)',
        type  => 'handicap',
        source_id => 'IM_009496',
@@ -10442,7 +10442,7 @@ userdel	1::inwork 16316,10755 16153,10818 16032,10842
 EOF
      },
      { from  => 1195308223, # 
-       until => 1195308227, # XXX
+       until => 1195308227, #
        text  => 'Siegfriedstr. (Lichtenberg) in beiden Richtungen zwischen Josef-Orlopp-Str. und Herzbergstr. Beeinträchtigung durch Sicherungsmaßnahmen, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_007154',
@@ -10673,7 +10673,7 @@ userdel	2::inwork 10023,-8859 10115,-8276
 EOF
      },
      { from  => 1197233736, # 
-       until => 1199903161, # XXX
+       until => 1199903161, #
        text  => 'Holteistraße: Bauarbeiten zwischen Sonntagstr. und Wühlischstr., Fahrbahn ist nicht benutzbar',
        type  => 'handicap',
        data  => <<EOF,
@@ -10964,7 +10964,7 @@ userdel	q4::inwork 10969,13914 10924,13940
 EOF
      },
      { from  => undef, # 
-       until => 1205673255, # XXX
+       until => 1205673255, #
        text  => 'Sophienstr. (Mitte) in beiden Richtungen zwischen Große Hamburger Str. und Rosenthaler Str. Bauarbeiten, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_008076',
@@ -11360,7 +11360,7 @@ userdel	2::inwork 49836,-67419 50143,-67035 50318,-65825
 EOF
      },
      { from  => 1209754023, # 2008-05-02 20:47
-       until => 1230764399, # 2008-12-31 23:59 XXX Ende geraten
+       until => 1230764399, # 2008-12-31 23:59 Ende geraten
        text  => 'Mohrenstr. zwischen Mauerstr. und Glinkastr. gesperrt ',
        type  => 'handicap',
        data  => <<EOF,
@@ -11368,7 +11368,7 @@ userdel	q4::inwork 9220,11781 9171,11777
 EOF
      },
      { from  => 1209754154, # 2008-05-02 20:49
-       until => 1230764399, # 2008-12-31 23:59 XXX Ende geraten
+       until => 1230764399, # 2008-12-31 23:59 Ende geraten
        text  => 'Oberwallstr. Einbahnstraße zum Hausvogteiplatz',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -11376,7 +11376,7 @@ userdel	1::inwork 9925,11947 9913,12068
 EOF
      },
      { from  => 1209667815, # 2008-05-01 20:50
-       until => 1230764399, # 2008-12-31 23:59 XXX Ende geraten
+       until => 1230764399, # 2008-12-31 23:59 Ende geraten
        text  => 'Mohrenstr. am Gendarmenmarkt: Einbahnstraße Richtung Osten',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -11384,7 +11384,7 @@ userdel	1::inwork 9672,11833 9538,11818
 EOF
      },
      { from  => 1209754240, # 2008-05-02 20:50
-       until => 1230764399, # 2008-12-31 23:59 XXX Ende geraten
+       until => 1230764399, # 2008-12-31 23:59 Ende geraten
        text  => 'Markgrafenstr. am Gendarmenmarkt: Einbahnstraße Richtung Norden',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -11417,7 +11417,7 @@ userdel	2::inwork 50732,-71705 51374,-71361 51440,-71337
 EOF
      },
      { from  => 1209852000, # 2008-05-04 00:00
-       until => 1241384472, # XXX undef (keine Referenzen mehr bei vmz)
+       until => 1241384472, # undef (keine Referenzen mehr bei vmz)
        text  => 'Alt-Rudow: von Krokusstraße bis Köpenicker Straße Einbahnstraße in Richtung Neudecker Weg',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -11434,7 +11434,7 @@ userdel	q4::inwork 1867,-10228 2629,-10301
 EOF
      },
      { from  => 1243578210, # 2009-05-29 08:23
-       until => Time::Local::timelocal(reverse(2009-1900,6-1,2,5,0,0)), # XXX 1180753200, # 2007-06-02 05:00
+       until => Time::Local::timelocal(reverse(2009-1900,6-1,2,5,0,0)), # 1180753200, # 2007-06-02 05:00
        text  => 'Straßen um den Blücherplatz Kreuzberg Blücherplatz, Waterlooufer: Mehringdamm - Zossener Str., Blücherstr.: Mehringdamm - Zossener Str., Zossener Str.: Waterlooufer-Blücherstr. gesperrt (bis 02.06.07, 05 Uhr)',
        type  => 'gesperrt',
        source_id => 'IM_012868',
@@ -11446,7 +11446,7 @@ userdel	2::temp 9579,10122 9631,10142 9689,10124 9827,10051
 EOF
      },
      { from  => undef, # 
-       until => 1210484837, # XXX undef
+       until => 1210484837, # undef
        text  => 'Voßstr. (Mitte) in beiden Richtungen zwischen Wilhelmstr. und Gertrud-Kolmar-Str. Fahrbahnunterspülung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_008707',
@@ -11487,7 +11487,7 @@ userdel	2::inwork -31201,-45781 -32661,-44144 -33582,-43378 -33576,-43159
 EOF
      },
      { from  => undef, # 
-       until => 1213716727, # XXX undef -> offen
+       until => 1213716727, # undef -> offen
        text  => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. bis zum 2.6.2008 gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -11495,7 +11495,7 @@ userdel	2::inwork 14724,10297 14764,10303 14794,10336 14821,10478 14836,10524 14
 EOF
      },
      { from  => undef, # 
-       until => Time::Local::timelocal(reverse(2008-1900,5-1,14+2,0,0,0)), # XXX endtime guessed
+       until => Time::Local::timelocal(reverse(2008-1900,5-1,14+2,0,0,0)), # endtime guessed
        text  => 'Papierlager brennt, Köpenicker Str. ist zwischen Manteuffelstr. und Engeldamm gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -11503,7 +11503,7 @@ userdel	2::inwork 12055,11331 12304,11163
 EOF
      },
      { from  => 1211828060, # 
-       until => 1211828064, # XXX
+       until => 1211828064, #
        text  => 'Gersdorfstraße (Tempelhof) Richtung Lichtenrade zwischen Kaiserstraße und Ringstraße Baustelle, Fahrtrichtung gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_008845',
@@ -11512,7 +11512,7 @@ userdel	1::inwork 8496,4331 8618,4187 8605,4138
 EOF
      },
      { from  => 1212098400, # 2008-05-30 00:00
-       until => 1213716709, # XXX undef -> nach gesperrt-orig gewandert
+       until => 1213716709, # undef -> nach gesperrt-orig gewandert
        text  => 'Kynaststraße wird ab 2.6.2008 gesperrt. Unter Umständen wird dann die Untere Kynaststraße befahrbar sein.',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -11554,7 +11554,7 @@ userdel	2::inwork 33475,10842 32900,10962 31871,10926 30678,10923
 EOF
      },
      { from  => 1215030350, # 
-       until => 1215030354, # XXX
+       until => 1215030354, #
        text  => 'Gersdorfstr. (Tempelhof) in beiden Richtungen zwischen Kurfürstenstr. und Kaiserstr. Baustelle, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_009134',
@@ -11563,7 +11563,7 @@ userdel	2::inwork 8318,4558 8418,4432 8496,4331
 EOF
      },
      { from  => 1215452791, # 
-       until => 1215452799, # XXX -> now in gesperrt-orig
+       until => 1215452799, # -> now in gesperrt-orig
        text  => 'Hauptstr. (Friedrichshain-Kreuzberg) in beiden Richtungen zwischen Markgrafendamm und untere Kynaststr. Baustelle, Straße vollständig gesperrt, Radfahrer können schiebend passieren',
        type  => 'handicap',
        source_id => 'IM_009127',
@@ -11732,7 +11732,7 @@ userdel auto	3 8610,12254 8515,12242 8539,12286
 userdel auto	3 8610,12254 8515,12242 8600,12165
 EOF
      },
-     { from  => 1214517600, # 2008-06-27 00:00 # XXX DO NOT REUSE DATA!
+     { from  => 1214517600, # 2008-06-27 00:00 # DO NOT REUSE DATA!
        until => 1214690399, # 2008-06-28 23:59
        text  => 'CSD am 28.6.2008',
        type  => 'gesperrt',
@@ -11811,7 +11811,7 @@ userdel	1::inwork 10294,13070 10336,13037 10371,13006 10418,12922 10398,12903 10
 EOF
      },
      { from  => 1215112739, # 
-       until => 1215112742, # XXX
+       until => 1215112742, #
        text  => 'Tempelhofer Damm (Tempelhof) stadtauswärts zwischen AS Tempelhofer Damm und Ringbahnstr. Straßenschäden, Fahrtrichtung gesperrt, Radfahrer können unter Umständen passieren',
        type  => 'handicap',
        source_id => 'IM_009276',
@@ -11951,7 +11951,7 @@ userdel	1::inwork 19658,24589 19565,24028 19393,23690
 EOF
      },
      { from  => 1216321760, # 
-       until => 1216321765, # XXX
+       until => 1216321765, #
        text  => 'Bereich Mecklenburgische Str. (Wilmersdorf) Rund um den Volkspark Bombenfund, Bereich vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_009394',
@@ -11962,7 +11962,7 @@ userdel	2::inwork 4473,8351 4457,8372 4457,8484
 EOF
      },
      { from  => 1218739579, # 
-       until => 1218739581, # XXX
+       until => 1218739581, #
        text  => 'Swinemünder Brücke (Wedding) in beiden Richtungen Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_009388',
@@ -12004,7 +12004,7 @@ userdel	2::inwork -2854,-32632 -2701,-32785
 EOF
      },
      { from  => 1219879480, # undef
-       until => 1219879485, # XXX undef
+       until => 1219879485, # undef
        text  => 'Stendaler Str. (Hellersdorf) stadteinwärts zwischen Janusz-Korczak-Str. und Hellersdorfer Str. Veranstaltung, Fahrtrichtung gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_009398',
@@ -12311,8 +12311,8 @@ EOF
 userdel	2::temp 7333,11179 7435,11514
 EOF
      },
-     { from  => 1219879749, #  undef
-       until => 1219879753, # XXX undef
+     { from  => 1219879749, # undef
+       until => 1219879753, # undef
        text  => 'Johannisstr. (Mitte) in beiden Richtungen zwischen Friedrichstr. und Kalkscheunenstr. Veranstaltung, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_009757',
@@ -13127,7 +13127,7 @@ userdel	2::inwork 30734,103253 29305,103289
 EOF
      },
      { from  => 1229377525, # 
-       until => 1229377528, # XXX
+       until => 1229377528, #
        text  => 'Köpenicker Str. (Alt-Glienicke) in beiden Richtungen zwischen Semmelweisstr. und Grünauer Str. Straßenschäden, Straße vollständig gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_010810',
@@ -13532,7 +13532,7 @@ EOF
        text  => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-05-24 vvv
+#: last_checked: 2009-05-28 vvv
 userdel	q4::inwork; 14597,11069 14530,11137
 userdel	q4::inwork 14530,11137 14465,11195
 #: last_checked ^^^
@@ -14031,7 +14031,7 @@ userdel	q4::inwork; 11119,15385 10881,15047
 EOF
      },
      { from  => 1242982031, # 
-       until => 1242982046, # XXX
+       until => 1242982046, #
        text  => 'Straße der Pariser Kommune (Friedrichshain) in beiden Richtungen zwischen Karl-Marx-Allee und Rüdersdorfer Str. geplatzte Wasserleitung, gesperrt',
        type  => 'handicap',
        source_id => 'IM_012636',
