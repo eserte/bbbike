@@ -9871,8 +9871,8 @@ userdel	2::inwork -579,33145 -529,33240 -503,33339 -454,33489 -440,33503 -406,33
 EOF
      },
      { from  => 1231707233, # 2009-01-11 21:53
-       until => 1243807199, # 2009-05-31 23:59
-       text  => 'Glinkastr. (Mitte) in beiden Richtungen zwischen Jägerstr. und Taubenstr. Baustelle, Straße vollständig gesperrt (bis Ende 05.2009)',
+       until => Time::Local::timelocal(reverse(2009-1900,6-1,15,0,0,0)), # XXX 1243807199 2009-05-31 23:59
+       text  => 'Glinkastr. (Mitte) in beiden Richtungen zwischen Jägerstr. und Taubenstr. Baustelle, Straße vollständig gesperrt (bis Mitte 06.2009)',
        type  => 'handicap',
        source_id => 'IM_009496',
        data  => <<EOF,
@@ -11433,11 +11433,11 @@ userdel	q4::inwork 3257,-10374 2629,-10301 2580,-11069
 userdel	q4::inwork 1867,-10228 2629,-10301
 EOF
      },
-     { from  => 1210313171, # 2008-05-09 08:06
-       until => 1210629600, # 2008-05-13 00:00
-       text  => 'Straßen um den Blücherplatz Kreuzberg Blücherplatz, Waterlooufer: Mehringdamm - Zossener Str., Blücherstr.: Mehringdamm - Zossener Str., Zossener Str.: Waterlooufer-Blücherstr. gesperrt (bis 12.05.08, 24:00 Uhr)',
+     { from  => 1243578210, # 2009-05-29 08:23
+       until => Time::Local::timelocal(reverse(2009-1900,6-1,2,5,0,0)), # XXX 1180753200, # 2007-06-02 05:00
+       text  => 'Straßen um den Blücherplatz Kreuzberg Blücherplatz, Waterlooufer: Mehringdamm - Zossener Str., Blücherstr.: Mehringdamm - Zossener Str., Zossener Str.: Waterlooufer-Blücherstr. gesperrt (bis 02.06.07, 05 Uhr)',
        type  => 'gesperrt',
-       source_id => 'IM_008714',
+       source_id => 'IM_012868',
        data  => <<EOF,
 userdel	2::temp 9521,10010 9448,10014
 userdel	2::temp 9858,10199 9837,10117 9827,10051 9521,10010 9536,10064 9579,10122 9599,10175 9687,10180 9825,10206 9865,10227
@@ -13323,8 +13323,8 @@ userdel	q4::inwork 8536,11063 8483,10900
 EOF
      },
      { from  => 1240517859, # 2009-04-23 22:17
-       until => 1243807199, # 2009-05-31 23:59
-       text  => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt; sowie Einbahnstraßenregelungen in der Giselastr. und Stadthausstr. (bis Ende 05.09)',
+       until => 1243893599, # 2009-06-01 23:59
+       text  => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt; sowie Einbahnstraßenregelungen in der Giselastr. und Stadthausstr. (bis Anfang 06.09)',
        type  => 'handicap',
        source_id => 'IM_011767',
        data  => <<EOF,
@@ -14022,7 +14022,7 @@ userdel	2::inwork 29103,24437 29528,24348 29791,24336 31905,25433 32229,25382
 EOF
      },
      { from  => 1242281874, # 2009-05-14 08:17
-       until => 1243807199, # 2009-05-31 23:59
+       until => 1243578967, # 2009-05-31 23:59 1243807199
        text  => 'Pappelallee (Prenzlauer Berg) in Richtung Schönhauser Allee zwischen Gneiststr. und Schönhauser Alllee Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2009)',
        type  => 'handicap',
        source_id => 'IM_012659',
@@ -14250,6 +14250,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 38771,14926 38637,14790
+EOF
+     },
+     { from  => 1243578195, # 2009-05-29 08:23
+       until => 1243893600, # 2009-06-02 00:00
+       text  => 'Stendaler Str. (Hellersdorf) Richtung Riesaer Str. zwischen Janusz-Korczak-Str. und Hellersdorfer Str. Veranstaltung, gesperrt (bis 01.06.09 nachts)',
+       type  => 'handicap',
+       source_id => 'IM_012806',
+       data  => <<EOF,
+userdel	q4::inwork; 23960,15021 23993,14797
 EOF
      },
     );
