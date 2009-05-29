@@ -4,7 +4,7 @@
 # $Id: BBBikeAlarm.pm,v 1.43 2009/02/14 11:34:40 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000, 2006, 2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000, 2006, 2008, 2009 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,10 +13,6 @@
 #
 
 package BBBikeAlarm;
-
-# XXX sollte ich evtl. verwenden für die Liste der Alarme:
-# XXX http://reefknot.sourceforge.net/
-# XXX Date::ICal, Net::ICal
 
 use FindBin;
 use vars qw($VERSION
@@ -1478,3 +1474,45 @@ $main::tmpdir = $main::tmpdir if 0;
 $main::top = $main::top if 0;
 
 __END__
+
+=head1 NAME
+
+BBBikeAlarm - setting alarms
+
+=head1 SYNOPSIS
+
+From cmdline:
+
+    perl BBBikeAlarm.pm [-tk [-ask]] [-time hh:mm] [-text message]
+		  [-interactive | -interactive-small]
+                  [-showall|-list] [-restart]
+
+From script:
+
+    use BBBikeAlarm;
+    use Tk;
+    BBBikeAlarm::enter_alarm_small_dialog(MainWindow->new)
+
+=head1 BUGS
+
+The pid list of running alarm processes is maintained in a Berkeley DB
+file F<~/.bbbikealarm.pids>, if L<DB_File> is available. Berkeley DB
+is a highly instable format. It is possible that updates to the
+underlying library makes the old db file unreadable (often seen on
+Debian systems). In this case, just remove the mentioned file.
+
+=head1 TODO
+
+    sollte ich evtl. verwenden für die Liste der Alarme:
+    http://reefknot.sourceforge.net/
+    Date::ICal, Net::ICal
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<DB_File>, L<Astro::Sunrise>, L<BBBikePalm>.
+
+=cut
