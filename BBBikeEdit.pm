@@ -4,7 +4,7 @@
 # $Id: BBBikeEdit.pm,v 1.128 2009/02/14 13:39:57 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2009 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -3836,8 +3836,12 @@ EOF
 		      if ($as_data) {
 			  my $s = Strassen->new($file);
 			  if ($s->count == 0) {
-			      $t->messageBox(-message => "Keine Blockierungen ausgewählt");
-			      return;
+			      if ($meta_data_handling eq '') {
+				  # don't warn if it's only written to STDERR
+			      } else {
+				  $t->messageBox(-message => "Keine Blockierungen ausgewählt");
+				  return;
+			      }
 			  }
 			  $pl_entry .= "       data  => <<EOF,\n" . $s->as_string . "EOF\n";
 		      } else {
