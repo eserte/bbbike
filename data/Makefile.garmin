@@ -135,7 +135,8 @@ MAPSOURCE_DE_IMG=$(HOME)/doc/map/mapsource_de.img
 
 combined-map:	${PERSISTENTTMPDIR}/gmapsupp.img
 	@echo "* Now do an upload:"
-	@echo "sudo mount /mnt/garmin"
+#	@echo "sudo mount /mnt/garmin"
+	@echo "sudo mount -t msdosfs -o -u=`id -u -n` /dev/da2 /mnt/garmin"
 	@echo "cp ${PERSISTENTTMPDIR}/gmapsupp.img /mnt/garmin/garmin/"
 	@echo "sudo umount /mnt/garmin"
 
@@ -205,7 +206,7 @@ ${PERSISTENTTMPDIR}/hessen_osm.img:
 ${PERSISTENTTMPDIR}/croatia_osm.img:
 	cd ${PERSISTENTTMPDIR} && ( \
 	    bzcat ${MISCDIR}/download/osm/croatia.osm.bz2 > croatia.osm && \
-	    ${MKGMAP_ROUTABLE} --description="Croatia Routable OSM" --mapname=12117005 --country-name=Croatia --country-abbr=HR --net --route --transparent croatia.osm && \
+	    ${MKGMAP_ROUTABLE} --description="Croatia Routable OSM" --mapname=12117005 --country-name=Croatia --country-abbr=HR --net --route croatia.osm && \
 	    mv 12117005.img croatia_osm.img )
 	-rm -f ${PERSISTENTTMPDIR}/croatia.osm
 
