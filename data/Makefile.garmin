@@ -143,7 +143,8 @@ GMAPSUPP_SRC=	${PERSISTENTTMPDIR}/bbbike_routable.img \
 		${PERSISTENTTMPDIR}/bbbikequal.img \
 		${PERSISTENTTMPDIR}/berlin_osm.img \
 		${PERSISTENTTMPDIR}/leipzig_osm.img \
-		${PERSISTENTTMPDIR}/hessen_osm.img
+		${PERSISTENTTMPDIR}/hessen_osm.img \
+		${PERSISTENTTMPDIR}/croatia_osm.img
 
 ## XXX This would be nice. But I ran out of memory if
 ## adding this one. Even with -Xmx1024m:
@@ -199,6 +200,14 @@ ${PERSISTENTTMPDIR}/hessen_osm.img:
 	    ${MKGMAP} --description="Hessen OSM" --mapname=12117003 hessen.osm && \
 	    mv 12117003.img hessen_osm.img )
 	-rm -f ${PERSISTENTTMPDIR}/hessen.osm
+
+# routable
+${PERSISTENTTMPDIR}/croatia_osm.img:
+	cd ${PERSISTENTTMPDIR} && ( \
+	    bzcat ${MISCDIR}/download/osm/croatia.osm.bz2 > croatia.osm && \
+	    ${MKGMAP_ROUTABLE} --description="Croatia Routable OSM" --mapname=12117005 --country-name=Croatia --country-abbr=HR --net --route --transparent croatia.osm && \
+	    mv 12117005.img croatia_osm.img )
+	-rm -f ${PERSISTENTTMPDIR}/croatia.osm
 
 ######################################################################
 # bbd2osm stuff
