@@ -184,6 +184,7 @@ my %place_to_population;
 		   # Z5: gibt's in NRW
 		   (map { "line_dash.Z$_: 8,5,2,5" } (1 .. 10)),
 		  ],
+     'zebrastreifen' => ['category_image.Zs: ../misc/verkehrszeichen/Zeichen_350.svg:24x24=1:12000,xxx'],
     );
 
 # see http://www.mail-archive.com/talk@openstreetmap.org/msg06041.html
@@ -505,6 +506,11 @@ for my $osm_file (@osm_files) {
 		    push @or, ["ampeln", "X"];
 		} elsif ($highway_cat eq 'bus_stop') {
 		    add_underline(\@or, "_oepnv", "Bus");
+		} elsif ($highway_cat eq 'crossing' &&
+			 ((exists $tag{crossing} && ($tag{crossing} eq 'uncontrolled' || $tag{crossing} eq 'zebra')) ||
+			  (exists $tag{crossing_ref} && $tag{crossing_ref} eq 'zebra'))
+			) {
+		    push @or, ["zebrastreifen", "Zs"];
 		} else {
 		    $unhandled{"node-highway=$highway_cat"}++;
 		}
