@@ -834,16 +834,7 @@ userdel	1::inwork 12229,10014 12398,9938 12556,9862
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_012479',
-         'until' => 1243807199,
-         'text' => 'Köpenicker Str. (Kreuzberg) Richtung Engeldamm zwischen Heinrich-Heine-Str. und Michaelkirchstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2009)',
-         'from' => 1241158705,
-         'id' => 1570,
-         'data' => 'userdel	q4::inwork; 11242,11720 11324,11689 11574,11594
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_011767',
@@ -918,15 +909,7 @@ userdel	q4::inwork; 15681,10801 15674,10851
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1246399200,
-         'text' => 'L 016 Flatow - Fehrbellin zw. Tarmow und Hakenberg Deckenerneuerung Vollsperrung 23.03.2009-30.06.2009 ',
-         'from' => 1237676400,
-         'id' => 1585,
-         'data' => 'userdel	2::inwork -29100,40590 -29745,41348 -30926,42438
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1391,6 +1374,33 @@ userdel	q4::inwork 9126,12413 9345,12443
          'data' => 'userdel	q4::inwork; 23960,15021 23993,14797
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1245103200,
+         'text' => 'B 096 Baruth - Wünsdorf OL Neuhof, Bahnübergang Reperaturarb. am Bahnübergang halbseitig gesperrt; Einbahnstraße 12.06.2009-15.06.2009 ',
+         'from' => 1244671200,
+         'id' => 1683,
+         'data' => 'userdel	q4::inwork 16360,-29489 16379,-29446
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1264978800,
+         'text' => 'L 076 Mahlow - Teltow zw. Abzw. Birkholz und Abzw. Großbeeren Straßenbau Vollsperrung 02.06.2009-31.01.2010 ',
+         'from' => 1243807200,
+         'id' => 1684,
+         'data' => 'userdel	2::inwork 7955,-4250 7790,-3985 6012,-3393 5394,-3053
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1245103200,
+         'text' => 'K 6304 Priort - B5, Elstal OL Priort, Bahnübergang Gleisbauarbeiten Vollsperrung 02.06.2009-15.06.2009 ',
+         'from' => 1243807200,
+         'id' => 1685,
+         'data' => 'userdel	2::inwork -19058,11636 -19029,11660 -18750,11919
+',
+         'type' => 'gesperrt'
        }
      
 );
