@@ -7156,7 +7156,7 @@ EOF
     print <<EOF;
 Verwendete Software:
 <ul>
-<li><a href="$perl_url">perl $]</a><a href="$perl_url"><img border=0 align=right src="http://www.perlfoundation.org//data/workspaces/perlfoundation/attachments/perl_trademark:20061112062117-1-29352/files/perl_powered-1.png" alt="Perl"></a>
+<li><a href="$perl_url">perl $]</a><a href="$perl_url"><img border=0 align=right src="http://www.perlfoundation.org/attachment/perl_trademark/perl_powered-1.png" alt="Perl"></a>
 <li>perl-Module:<a href="$cpan"><img border=0 align=right src="http://theoryx5.uwinnipeg.ca/images/cpan.jpg" alt="CPAN"></a>
 <ul>
 <li><a href="${scpan}CGI">CGI $CGI::VERSION</a>
