@@ -200,6 +200,7 @@ sub download_osm_tile {
 		if (!$resp->is_success) {
 		    die "No success while mirroring '$url' to '$dest': " . $resp->status_line;
 		} else {
+		    no warnings 'uninitialized'; # content-encoding header may be missing
 		    if ($resp->header('content-encoding') eq 'gzip' && $dest !~ m{\.gz$}) {
 			if ($debug >= 1) {
 			    warn "Rename $dest -> $dest.gz...\n";
