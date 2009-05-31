@@ -1407,6 +1407,18 @@ sub output_meta {
 			    wasserumland => 1,
 			    wideregion   => 1,
 			   };
+    for my $def (['u-bahn', ['ubahn', 'ubahnhof']],
+		 ['s-bahn', ['sbahn', 'sbahnhof']],
+		 ['r-bahn', ['rbahn', 'rbahnhof']],
+		) {
+	my($feature_name, $layers) = @$def;
+    CHECK_EMPTY_LAYER: {
+	    for my $layer (@$layers) {
+		last CHECK_EMPTY_LAYER if -s $layer;
+	    }
+	    $meta{skip_features}->{$feature_name} = 1;
+	}
+    }
 
     open my $ofh, ">", $meta_file_dd."~"
 	or die "Cannot write to $meta_file_dd~: $!";
