@@ -195,7 +195,13 @@ sub add_button {
 		[Button => "Zebrastreifen",
 		 -command => sub {
 		     local $main::lazy_plot = 0; # lazy mode does not support bbd images yet
-		     add_new_nonlazy_layer("p", "$bbbike_rootdir/misc/zebrastreifen");
+		     if (-e "$main::datadir/zebrastreifen") {
+			 # osm2bbd generated directories have it here:
+			 add_new_nonlazy_layer("p", "$main::datadir/zebrastreifen");
+		     } else {
+			 # the original Berlin data has it here:
+			 add_new_nonlazy_layer("p", "$bbbike_rootdir/misc/zebrastreifen");
+		     }
 		 }
 		],
 		[Button => "routing_helper", -command => sub { add_new_nonlazy_maybe_orig_layer("str", "routing_helper") }],
