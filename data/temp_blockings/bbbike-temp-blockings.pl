@@ -22,19 +22,19 @@ require Time::Local;
        text  => "Gesperrte Straßen am 28.5. zwischen 14 Und 24 Uhr während des Kirchentages (im Bereich Pariser Platz - Unter den Linden - Friedrichstr. - Gendarmenmarkt)",
        type  => "handicap",
      },
-     { from  => 1180032943, # 2007-05-24 20:55
+     { from  => 1180032943, # 2007-05-24 20:55 PERIODISCH!
        until => 1180389600, # 2007-05-29 00:00
        text  => 'Straßenfest rund um den Blücherplatz, 25.05.2007, 0.00 Uhr bis 29.05.2007, 0.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9521,10010 9827,10051
-userdel	2 9521,10010 9448,10014
-userdel	2 9599,10175 9687,10180 9825,10206
-userdel	2 9416,10196 9599,10175
-userdel	2 9579,10122 9536,10064
-userdel	2 9579,10122 9631,10142 9689,10124
-userdel	2 9837,10117 9827,10051
-userdel	2 9837,10117 9858,10199
+userdel	2::temp 9521,10010 9827,10051
+userdel	2::temp 9521,10010 9448,10014
+userdel	2::temp 9599,10175 9687,10180 9825,10206
+userdel	2::temp 9416,10196 9599,10175
+userdel	2::temp 9579,10122 9536,10064
+userdel	2::temp 9579,10122 9631,10142 9689,10124
+userdel	2::temp 9837,10117 9827,10051
+userdel	2::temp 9837,10117 9858,10199
 userdel auto	3 9593,10238 9599,10175 9579,10122
 userdel auto	3 10006,9942 9827,10051 9837,9856
 userdel auto	3 10006,9942 9827,10051 9689,10124
@@ -45,9 +45,9 @@ userdel auto	3 9689,10124 9827,10051 9837,9856
 userdel auto	3 9579,10122 9599,10175 9593,10238
 EOF
      },
-     { from  => 1180175400, # 2007-05-26 12:30
-       until => 1180294200, # 2007-05-27 21:30
-       text  => 'Karneval der Kulturen, 27.05.2007, 12.30 Uhr bis 21.30 Uhr ',
+     { from  => 1243679400, # 2009-05-30 12:30 PERIODISCH!
+       until => 1243798200, # 2009-05-31 21:30
+       text  => 'Karneval der Kulturen, 31.05.2009, 12.30 Uhr bis 21.30 Uhr ',
        type  => 'gesperrt',
        file  => "karneval-der-kulturen.bbd",
      },
@@ -5471,7 +5471,7 @@ EOF
      },
      { from  => 1155836502, # 2006-08-17 19:41
        until => 1156129200, # 2006-08-21 05:00
-       text  => 'Kurfürstendamm/ Tauentzienstr. (Charlottenburg) in beiden Richtungen zwischen Uhlandstr. und Passauer Str. Straßenfest (Global City), Straße gesperrt (bis 21.08.2006, 5:00 Uhr) (18:00) ',
+       text  => 'Kurfürstendamm/Tauentzienstr. (Charlottenburg) in beiden Richtungen zwischen Uhlandstr. und Passauer Str. Straßenfest (Global City), Straße gesperrt (bis 21.08.2006, 5:00 Uhr) (18:00) ',
        type  => 'gesperrt',
        source_id => 'IM_003267',
        data  => <<EOF,
@@ -8503,9 +8503,9 @@ EOF
 userdel	2::inwork 12731,15824 12642,15668 12559,15524 12472,15356 12428,15275
 EOF
      },
-     { from  => 1181373108, # 2007-06-09 09:11
-       until => 1181512800, # 2007-06-11 00:00
-       text  => 'Treptower Festtage bis zum 10.06.2007',
+     { from  => 1244066400, # 2009-06-04 00:00 PERIODISCH!
+       until => 1244411999, # 2009-06-07 23:59
+       text  => 'Treptower Festtage 5. Juni 2009 - 7. Juni 2009',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 14464,9927 14500,9856 14671,9759 14697,9726 14910,9643
@@ -9374,9 +9374,9 @@ EOF
 userdel	2::inwork 15805,10949 15752,11115 15708,11193 15731,11270
 EOF
      },
-     { from  => 1186266363, # 2007-08-05 00:26
-       until => 1186955999, # 2007-08-12 23:59
-       text  => '17. Berliner Gauklerfest, 3. bis 12. August 2007, einige Straßen am Opernpalais sind vollständig gesperrt ',
+     { from  => 1248386400, # 2009-07-24 00:00 PERIODISCH!
+       until => 1249250399, # 2009-08-02 23:59
+       text  => 'Berliner Gauklerfest vom 24. Juli 2009 bis 2. August 2009, einige Straßen am Opernpalais sind vollständig gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 9890,12161 9869,12297 9795,12293 9780,12401

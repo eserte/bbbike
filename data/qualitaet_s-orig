@@ -63,7 +63,9 @@ Jüterboger Str.: mäßiges Kopfsteinpflaster	Q2 10266,8946 9958,8966 9799,8962
 Methfesselstr.: sehr gutes Kopfsteinpflaster, 40 km/h	Q0 9211,9354 9170,9206 9150,9152 9115,9046
 Methfesselstr.: Kopfsteinpflaster	Q2 9115,9046 9111,9036 9063,8935 8982,8781
 Wilhelmshöhe: Verbundsteinpflaster	Q1 9225,9111 9186,9107 9155,9029 9149,8961
-Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7231,7349 7230,7264 7222,6458 7217,6065 7216,5888 7175,5843
+Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7231,7349 7230,7264 7222,6458 7217,6065 7216,5888
+Priesterweg: Asphalt	Q0 7216,5888 7175,5843
+Hans-Baluschek-Park, Zugang: Verbundsteinpflaster	Q0- 7370,6451 7222,6458
 Großgörschenstr.: mäßiges Kopfsteinpflaster	Q2 8186,9380 8086,9418 8035,9437 7960,9466
 Waldemarstr.: Kopfsteinpflaster	Q2+ 11556,10869 11328,10957
 Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972
@@ -340,7 +342,7 @@ Kurfürstenstr.: Kopfsteinpflaster	Q2 7633,10394 7744,10372 7850,10351 8061,10310
 Jahnstr: Kopfsteinpflaster	Q2 11509,9392 11500,9116
 Mauerweg: teilweise nur mäßiger Asphalt	Q1 7725,21247 7289,20618 7083,20584 6601,20542 6487,20512 6436,20477 6365,20452
 An der Nordbahn: mäßiges Pflaster (?)	Q1 6669,20129 6365,20402 6289,20468
-An der Nordbahn: Verbundsteinpflaster	Q1+ 8665,18570 8597,18554 8558,18597 8562,18642
+An der Nordbahn: Verbundsteinpflaster	Q1+ 8647,18567 8597,18554 8558,18597 8562,18642
 An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q1 8562,18642 8476,18773
 An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q2 8369,18769 8237,18880 7528,19469
 An der Nordbahn: mäßiger Asphalt	Q1 7520,19448 6694,20164 6389,20412 6364,20431 6365,20452
@@ -8494,8 +8496,12 @@ Kiesweg (Karlshorst): mäßiger fester Sandweg, Schlaglöcher	Q2- 20280,7749 20342,
 #: by: gregor (kijora):
 #: confirmed_by: anonymous ("Kopfsteinpflaster")
 Ötztaler Str.: schlechtes Kopfsteinpflaster	Q3 10690,17420 10630,17421
-#: by: Uwe Majewski
+#: by: Uwe Majewski:
 Schulstr. (Tegel): schlechtes Kopfsteinpflaster	Q3 1794,20110 1953,20149
+#: by: Frank Jahr:
+Hoevelstr.: guter Beton	Q0- 17290,4308 17173,4392 17111,4414 17025,4462 16954,4501
+#: by: Zweizopftina:
+Heiligenstadter Str.: guter Asphalt	Q0 16738,14695 16835,14676
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
