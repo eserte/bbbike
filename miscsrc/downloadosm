@@ -125,7 +125,7 @@ if (@reload) {
     }
     for my $reload (@reload) {
 	my $ltlnqr = qr{[-+]?\d+\.\d+};
-	if ($reload !~ m{($ltlnqr),($ltlnqr),($ltlnqr),($ltlnqr)\.osm$}) {
+	if ($reload !~ m{($ltlnqr),($ltlnqr),($ltlnqr),($ltlnqr)\.osm(?:\.gz)?$}) {
 	    die "The file name <$reload> does not look correct, i.e. created by this tool.\n";
 	}
 	my($x,$y,$xend,$yend) = ($1,$2,$3,$4);
