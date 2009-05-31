@@ -13305,7 +13305,7 @@ userdel	q4::inwork; 15052,14585 15272,14691 15383,14759
 EOF
      },
      { from  => 1241158705, # 2009-05-01 08:18
-       until => 1243807199, # 2009-05-31 23:59
+       until => 1243636837, # 2009-05-31 23:59 1243807199
        text  => 'Köpenicker Str. (Kreuzberg) Richtung Engeldamm zwischen Heinrich-Heine-Str. und Michaelkirchstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2009)',
        type  => 'handicap',
        source_id => 'IM_012479',
@@ -13432,7 +13432,7 @@ userdel	2::inwork -9850,84800 -10085,84390 -10054,84256 -10109,84134 -10281,8389
 EOF
      },
      { from  => 1237676400, # 2009-03-22 00:00
-       until => 1246399200, # 2009-07-01 00:00
+       until => 1243637028, # 2009-07-01 00:00 1246399200
        text  => 'L 016 Flatow - Fehrbellin zw. Tarmow und Hakenberg Deckenerneuerung Vollsperrung 23.03.2009-30.06.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -14259,6 +14259,30 @@ EOF
        source_id => 'IM_012806',
        data  => <<EOF,
 userdel	q4::inwork; 23960,15021 23993,14797
+EOF
+     },
+     { from  => 1244671200, # 2009-06-11 00:00
+       until => 1245103200, # 2009-06-16 00:00
+       text  => 'B 096 Baruth - Wünsdorf OL Neuhof, Bahnübergang Reperaturarb. am Bahnübergang halbseitig gesperrt; Einbahnstraße 12.06.2009-15.06.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 16360,-29489 16379,-29446
+EOF
+     },
+     { from  => 1243807200, # 2009-06-01 00:00
+       until => 1264978800, # 2010-02-01 00:00
+       text  => 'L 076 Mahlow - Teltow zw. Abzw. Birkholz und Abzw. Großbeeren Straßenbau Vollsperrung 02.06.2009-31.01.2010 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 7955,-4250 7790,-3985 6012,-3393 5394,-3053
+EOF
+     },
+     { from  => 1243807200, # 2009-06-01 00:00
+       until => 1245103200, # 2009-06-16 00:00
+       text  => 'K 6304 Priort - B5, Elstal OL Priort, Bahnübergang Gleisbauarbeiten Vollsperrung 02.06.2009-15.06.2009 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -19058,11636 -19029,11660 -18750,11919
 EOF
      },
     );
