@@ -68,8 +68,10 @@ citibank_osm.bbd:	../data_berlin_osm_bbbike/_unhandled
 OSM_DOWNLOAD_DIR=	download/osm
 GERMANY_STATES=		berlin brandenburg hessen sachsen sachsen-anhalt
 GERMANY_STATES_RULES=	${GERMANY_STATES:S/^/download-/:S/$/.osm.bz2/}
+EUROPE_COUNTRIES=	germany croatia
+EUROPE_COUNTRIES_RULES=	${EUROPE_COUNTRIES:S/^/download-/:S/$/.osm.bz2/}
 
-osm-download-all:	${GERMANY_STATES_RULES}
+osm-download-all:	${GERMANY_STATES_RULES} ${EUROPE_COUNTRIES_RULES}
 
 .for land in ${GERMANY_STATES}
 download-${land}.osm.bz2:
@@ -80,11 +82,14 @@ download-${land}.osm.bz2:
 	mv ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2~ ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2
 .endfor
 
-download-germany.osm.mz2:
+.for land in ${EUROPE_COUNTRIES}
+download-${land}.osm.bz2:
+# cd just for checking:
 	mkdir -p ${OSM_DOWNLOAD_DIR}
 	cd ${OSM_DOWNLOAD_DIR} && true
-	wget http://download.geofabrik.de/osm/europe/germany.osm.bz2 -O ${OSM_DOWNLOAD_DIR}/germany.osm.bz2~
-	mv ${OSM_DOWNLOAD_DIR}/germany.osm.bz2~ ${OSM_DOWNLOAD_DIR}/germany.osm.bz2
+	wget http://download.geofabrik.de/osm/europe/${land}.osm.bz2 -O ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2~
+	mv ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2~ ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2
+.endfor
 
 # Download the prepared osm from geofabrik
 # XXX very problematic because streets between Berlin and Brandenburg are not connected!
