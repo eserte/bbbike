@@ -1301,7 +1301,9 @@ sub _outer_berlin_hack {
     $normalized_bezirk = lc $normalized_bezirk;
     my $outer_berlin_file = "$tmp_dir/" . $Strassen::Util::cacheprefix . "_" . $< . "_" . $normalized_bezirk . "_strassen";
     my $outer_berlin_str = eval { Strassen->new($outer_berlin_file) };
-    if (!$outer_berlin_str) {
+    my $landstr0 = Strassen->new("landstrassen", NoRead => 1);
+    my $plaetze0 = Strassen->new("plaetze", NoRead => 1);
+    if (!$outer_berlin_str || -M $outer_berlin_file > -M $landstr0->file || -M $outer_berlin_file > -M $plaetze0->file) {
 	$outer_berlin_str = Strassen->new;
 	my $landstr = MultiStrassen->new("landstrassen", "plaetze");
 	$landstr->init;
