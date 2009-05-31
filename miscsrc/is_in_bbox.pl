@@ -60,6 +60,12 @@ gpsman tracks and waypoint files and gpx files.
 Uses a simple-minded algorithm: only exact point matches are checked,
 not lines between points.
 
+=head1 EXAMPLES
+
+A bbox to match Croatia:
+
+    ./is_in_bbox.pl 13.3813 46.3090 19.7040 42.4437 ...
+
 =head1 AUTHOR
 
 Slaven Rezic
