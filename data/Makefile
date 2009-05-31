@@ -237,7 +237,7 @@ inaccessible_landstrassen: strassen landstrassen landstrassen2 gesperrt
 	-@$(WRITEABLE) $@
 	-cp -f $@ /tmp/old_inaccessible_landstrassen
 	${SEARCH_INACCESSIBLE} -street strassen -street landstrassen \
-	    -street landstrassen2 -blocked gesperrt \
+	    -street landstrassen2 -street faehren -blocked gesperrt \
 	    -blockedtype einbahn -blockedtype sperre \
 	    > inaccessible_landstrassen~ && mv inaccessible_landstrassen~ inaccessible_landstrassen
 	@if [ -e /tmp/old_inaccessible_landstrassen ] ; then \
