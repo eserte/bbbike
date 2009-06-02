@@ -64,24 +64,13 @@ sub make_net_slow_<%=$type%> {
         return if $self->net_read_cache_<%=$type%>;
     }
 
-    $self->{strecke_sub} = \&Strassen::Util::strecke;
+    $self->{strecke_sub}   = \&Strassen::Util::strecke;
     $self->{strecke_s_sub} = \&Strassen::Util::strecke_s;
-    $self->{to_koord_sub} = \&Strassen::to_koord;
+    $self->{to_koord_sub}  = \&Strassen::to_koord;
     if ($self->{Strassen}{GlobalDirectives} && $self->{Strassen}{GlobalDirectives}{map} && $self->{Strassen}{GlobalDirectives}{map}[0] eq 'polar') {
-	require Math::Trig;
-        $self->{strecke_sub} = sub {
-            my($s1,$s2) = @_;
-            my $lon0 = Math::Trig::deg2rad($s1->[0]);
-	    my $lat0 = Math::Trig::deg2rad(90 - $s1->[1]);
-            my $lon1 = Math::Trig::deg2rad($s2->[0]);
-	    my $lat1 = Math::Trig::deg2rad(90 - $s2->[1]);
-            Math::Trig::great_circle_distance($lon0, $lat0,
-                                              $lon1, $lat1, 6372795);
-        };
-	$self->{strecke_s_sub} = sub {
-        $self->{strecke_sub}->([split /,/, $_[0]], [split /,/, $_[1]]);
-        };
-        $self->{to_koord_sub} = \&Strassen::to_koord_f;
+        $self->{strecke_sub}   = \&Strassen::Util::strecke_polar;
+	$self->{strecke_s_sub} = \&Strassen::Util::strecke_s_polar;
+        $self->{to_koord_sub}  = \&Strassen::to_koord_f;
     }
     local *strecke = $self->{strecke_sub};
     local *to_koord = $self->{to_koord_sub};

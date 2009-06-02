@@ -101,6 +101,30 @@ sub strecke_s {
 #    my($x2, $y2) = split(/,/, $_[1]);
 #    CORE::sqrt(sqr($x1-$x2) + sqr($y1-$y2));
 
+BEGIN {
+    if (eval { require Geo::Distance::XS; 1 }) {
+	my $geo = Geo::Distance->new;
+	*strecke_polar = sub {
+	    my($s1,$s2) = @_;
+	    $geo->distance('meter', $s1->[0], $s1->[1], $s2->[0], $s2->[1]);
+	};
+    } elsif (eval { require Math::Trig; 1 }) {
+	*strecke_polar = sub {
+	    my($s1,$s2) = @_;
+	    my $lon0 = Math::Trig::deg2rad($s1->[0]);
+	    my $lat0 = Math::Trig::deg2rad(90 - $s1->[1]);
+	    my $lon1 = Math::Trig::deg2rad($s2->[0]);
+	    my $lat1 = Math::Trig::deg2rad(90 - $s2->[1]);
+	    Math::Trig::great_circle_distance($lon0, $lat0,
+					      $lon1, $lat1, 6372795);
+	};
+    } else {
+	warn "Math::Trig not available, cannot deal with polar data!\n";
+    }
+    *strecke_s_polar = sub {
+	strecke_polar([split /,/, $_[0]], [split /,/, $_[1]]);
+    };
+}
 
 # Argumente: Indices
 sub strecke_i {
