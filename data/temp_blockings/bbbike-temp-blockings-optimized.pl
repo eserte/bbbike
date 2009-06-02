@@ -710,7 +710,7 @@ userdel	q4::inwork; 9208,11872 9218,11793
          'text' => 'Unterführung unter Adlergestell und Bahn wegen Brückenerneuerung gesperrt',
          'from' => undef,
          'id' => 1495,
-         'data' => 'userdel	2::inwork 20810,2398 20928,2412
+         'data' => 'userdel	2::inwork 20810,2398 20939,2413
 ',
          'type' => 'gesperrt'
        },

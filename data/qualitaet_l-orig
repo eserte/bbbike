@@ -123,8 +123,8 @@ Heinersdorf: Kopfsteinpflaster	Q2 5943,-2117 5773,-2075
 Heinersdorf: rauher Asphalt	Q1 5773,-2075 5559,-2032
 Heinersdorf: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK	Q3 5559,-2032 4985,-2373 4283,-2370
 Iserstr.: Kopfsteinpflaster	Q2 -282,-1184 -150,-1457
-#: add_fragezeichen: Stimmt das? Oder ist das Stück in Sputendorf auch asphaltiert?
-Sputendorf: teil Kopfsteinpflaster, OK	Q1 -1316,-7721 -1734,-7716 -2500,-7557
+#: add_fragezeichen: Stimmt das oder ist das Stück in Sputendorf auch asphaltiert?
+Sputendorf: teilweise Kopfsteinpflaster, OK	Q1 -1316,-7721 -1734,-7716 -2500,-7557
 #: add_fragezeichen: Stimmt das noch immer?
 Fahlhorst: schlechtes Kopfsteinpflaster	Q3 -5709,-10987 -5452,-11456
 #XXX del: inzwischen ausgebaut	Berliner Str (Borgsdorf): sandig	Q3 1051,32796 1123,33294
@@ -2529,6 +2529,7 @@ Löcknitz - Hintersee: Asphalt	Q0 64515,128729 64524,128826 64887,129552 64783,12
 Glashütte: schlechtes Kopfsteinpflaster	Q3 65265,131968 65283,132355
 Glashütte - Hintersee: Asphalt	Q0 65283,132355 65329,132574 65560,133122 65582,133468 65706,133604 65976,133649 66236,133947 66414,134436 66598,134671 67379,135216 67525,135724 67385,135946 67330,136163 67217,136483 67109,136572 66874,136670 66712,136767
 Hintersee: Kopfsteinpflaster mit Banketten	Q3 66712,136767 66525,136949 66282,136950
+Asphalt	Q0 -6763,61808 -6547,61759
 ######################################################################
 #: by: Andreas Titz vvv
 #: append_comment Oranienburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv

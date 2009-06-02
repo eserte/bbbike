@@ -12675,7 +12675,7 @@ EOF
        text  => 'Unterführung unter Adlergestell und Bahn wegen Brückenerneuerung gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 20810,2398 20928,2412
+userdel	2::inwork 20810,2398 20939,2413
 EOF
      },
      { from  => 1223320498, # 2008-10-06 21:14
