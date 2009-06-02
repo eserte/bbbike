@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: FromMeta.pm,v 1.4 2009/06/02 05:32:49 eserte Exp $
+# $Id: FromMeta.pm,v 1.5 2009/06/02 05:33:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -59,6 +59,8 @@ sub center {
 
 sub bbox { shift->{bbox} }
 sub skip_features { %{ shift->{skip_features} || {} } }
+
+sub is_osm_source { (shift->{source}||'') eq 'osm' }
 
 sub _bbox_standard_coordsys {
     my $self = shift;

@@ -691,7 +691,7 @@ if ($city_obj) {
 	%skip_features = map{($_,1)} $city_obj->skip_features;
     }
     # XXX nicer solution?
-    if (($city_obj->{source}||'') eq 'osm') {
+    if ($city_obj->is_osm_source) {
 	$sBAB_two_track_width = 9999; # effectively turning off
     }
 }
@@ -2656,7 +2656,7 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 
     if ($advanced) {
 	$knm->separator;
-	if (($city_obj->{source}||'') ne 'osm') {
+	if (!$city_obj->is_osm_source) {
 	    $knm->command(-label => M("Nicht mehr gepflegt").":",
 			  -state => 'disabled',
 			  -font => $font{'bold'},
@@ -3769,7 +3769,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 			       $replotsub->();
 			   });
     }
-    if (($city_obj->{source}||'') ne 'osm') { # no scope with osm data
+    if (!$city_obj->is_osm_source) { # no scope with osm data
 	$opbm->cascade(-label => M('Scope').' ...');
 	{
 	    my $sbm = $opbm->Menu(-title => M('Scope').' ...');
