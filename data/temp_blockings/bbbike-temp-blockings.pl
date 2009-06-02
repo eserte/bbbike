@@ -13532,7 +13532,7 @@ EOF
        text  => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2009-05-28 vvv
+#: last_checked: 2009-06-01 vvv
 userdel	q4::inwork; 14597,11069 14530,11137
 userdel	q4::inwork 14530,11137 14465,11195
 #: last_checked ^^^

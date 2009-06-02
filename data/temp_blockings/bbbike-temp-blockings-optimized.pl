@@ -953,7 +953,7 @@ userdel	q4::inwork; 15681,10801 15674,10851
          'text' => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
          'from' => undef,
          'id' => 1597,
-         'data' => '#: last_checked: 2009-05-28 vvv
+         'data' => '#: last_checked: 2009-06-01 vvv
 userdel	q4::inwork; 14597,11069 14530,11137
 userdel	q4::inwork 14530,11137 14465,11195
 #: last_checked ^^^
