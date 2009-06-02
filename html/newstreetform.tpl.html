@@ -165,13 +165,25 @@ function init() {
      Kommentar zu:
     </td>
     <td>
+[% IF fragezeichen.title -%]
+     <span style="font-style:italic;">[% fragezeichen.title | html %]</span>
+[% ELSE -%]
      <span id="fragezeichen_text" style="font-style:italic;">[% data.supplied_strname %]</span>
+[% END -%]
     </td>
    </tr>
    <tr>
     <td></td>
     <td>
+[% IF fragezeichen.questions -%]
+[%   FOR question = fragezeichen.questions -%]
+     <span style="font-style:italic;">[% question | html_entity %]</span>
+     <input type="hidden" name="question[% question.index() %]" value="[% question | html_entity %]" />
+     <input name="answer[% question.index() %]" size="40"><br/>
+[%   END -%]
+[% ELSE -%]
      <textarea cols="40" rows="5" name="comments">[% IF data.comments.defined %][% data.comments | html %][% END %]</textarea>
+[% END -%]
     </td>
    </tr>
 
