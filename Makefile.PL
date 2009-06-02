@@ -200,6 +200,8 @@ my @req_table =
    'für GPS-Upload'],
   [qw/Geo::SpaceManager 0.91	all	2	base/,
    'Intelligentere Labelplatzierung, bei der PDF-Ausgabe verwendet'],
+  [qw/Geo::Distance::XS	0	all	0	base/,
+   'Berechnung von Entfernungen für polare Koordinaten, möglicherweise schneller als Math::Trig'],
   [qw/Tk::ExecuteCommand	0	all	1	base/,
    'Bessere Fehlerberichte im temp_blockings-Editor'],
   [qw/Algorithm::Diff	0	all	1	base/,
