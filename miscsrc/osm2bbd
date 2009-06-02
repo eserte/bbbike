@@ -1413,6 +1413,7 @@ sub output_meta {
 			    wasserumland => 1,
 			    wideregion   => 1,
 			   };
+    $meta{coordsys} = $map ? $map : 'wgs84';
     for my $def (['u-bahn', ['ubahn', 'ubahnhof']],
 		 ['s-bahn', ['sbahn', 'sbahnhof']],
 		 ['r-bahn', ['rbahn', 'rbahnhof']],
