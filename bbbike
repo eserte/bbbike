@@ -1884,8 +1884,12 @@ unless($skip_features{"strassen"}) {
 	 -accelerator => 'S',
 	 -strchooseortargs =>
 	 {'-markstartifactive' => 1,
-	  -completelistbutton => sub { choose_from_plz(-interactive => 1) },
-	  -completelistbuttonlabel => M"Alle Straﬂen",
+	  (!$city_obj || !$city_obj->is_osm_source
+	   ? (-completelistbutton => sub { choose_from_plz(-interactive => 1) },
+	      -completelistbuttonlabel => M"Alle Straﬂen"
+	     )
+	   : ()
+	  ),
 	 },
 	 -strextrachoosemenuaction =>
 	 sub {
@@ -11549,8 +11553,12 @@ sub choose_ort {
 sub choose_streets {
     choose_ort(qw(s s),
 	       -markstartifactive => 1,
-	       -completelistbutton => sub { choose_from_plz(-interactive => 1) },
-	       -completelistbuttonlabel => "Alle Straﬂen",
+	       (!$city_obj || !$city_obj->is_osm_source
+		? (-completelistbutton => sub { choose_from_plz(-interactive => 1) },
+		   -completelistbuttonlabel => "Alle Straﬂen"
+		  )
+		: ()
+	       )
 	      );
 }
 
