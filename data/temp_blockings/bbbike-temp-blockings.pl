@@ -12911,13 +12911,13 @@ EOF
 userdel	2::inwork 22172,194 22168,-71 22177,-137
 EOF
      },
-     { from  => 1231707258, # 2009-01-11 21:54
-       until => 1243807199, # 2009-05-31 23:59
-       text  => 'Gubitzstr. (Prenzlauer Berg) in beiden Richtungen zwischen Küselstr. und Scheritzstr. Bauarbeiten, Straße vollständig gesperrt (bis Ende 05.2009)',
-       type  => 'gesperrt',
+     { from  => 1243972540, # 2009-06-02 21:55
+       until => 1245103199, # 2009-06-15 23:59
+       text  => 'Gubitzstr. (Prenzlauer Berg) in beiden Richtungen zwischen Küselstr. und Scheritzstr. Bauarbeiten, Straße vollständig gesperrt (bis Mitte 06.2009)',
+       type  => 'handicap',
        source_id => 'IM_010519',
        data  => <<EOF,
-userdel	2::inwork 12463,15774 12384,15618 12299,15463
+userdel	q4::inwork 12463,15774 12384,15618 12299,15463
 EOF
      },
      { from  => 1230474690, # 2008-12-28 15:31
@@ -14283,6 +14283,24 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -19058,11636 -19029,11660 -18750,11919
+EOF
+     },
+     { from  => 1243886249, # 2009-06-01 21:57
+       until => 1298934000, # 2011-03-01 00:00
+       text  => 'Pasewalker Str. (Pankow) stadteinwärts zwischen Marienstr. und Anschlussstelle A114 Baustelle, Fahrtrichtung gesperrt ist eingerichtet (bis Frühjahr 2011)',
+       type  => 'handicap',
+       source_id => 'IM_012907',
+       data  => <<EOF,
+userdel	q4::inwork; 12095,20832 12030,20490 12008,20368 11963,20136 11931,19965 11907,19838 11907,19749
+EOF
+     },
+     { from  => 1243972705, # 2009-06-02 21:58
+       until => 1245103199, # 2009-06-15 23:59
+       text  => 'Sakrower Landstr. (Kladow) in beiden Richtungen zwischen Krampnitzer Weg und Kindlebenstr. Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Mitte 06.2009)',
+       type  => 'handicap',
+       source_id => 'IM_012896',
+       data  => <<EOF,
+userdel	q3::inwork -7710,4771 -7519,4843
 EOF
      },
     );

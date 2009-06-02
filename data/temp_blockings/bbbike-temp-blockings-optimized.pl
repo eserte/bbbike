@@ -543,19 +543,7 @@ userdel	q4::inwork; 9208,11872 9218,11793
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_012868',
-         'until' => 1243911600,
-         'text' => 'Straßen um den Blücherplatz Kreuzberg Blücherplatz, Waterlooufer: Mehringdamm - Zossener Str., Blücherstr.: Mehringdamm - Zossener Str., Zossener Str.: Waterlooufer-Blücherstr. gesperrt (bis 02.06.07, 05 Uhr)',
-         'from' => 1243578210,
-         'id' => 1358,
-         'data' => 'userdel	2::temp 9521,10010 9448,10014
-userdel	2::temp 9858,10199 9837,10117 9827,10051 9521,10010 9536,10064 9579,10122 9599,10175 9687,10180 9825,10206 9865,10227
-userdel	2::temp 9416,10196 9599,10175
-userdel	2::temp 9579,10122 9631,10142 9689,10124 9827,10051
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -754,7 +742,16 @@ userdel	2::temp 9579,10122 9631,10142 9689,10124 9827,10051
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_010519',
+         'until' => 1245103199,
+         'text' => 'Gubitzstr. (Prenzlauer Berg) in beiden Richtungen zwischen Küselstr. und Scheritzstr. Bauarbeiten, Straße vollständig gesperrt (bis Mitte 06.2009)',
+         'from' => 1243972540,
+         'id' => 1524,
+         'data' => 'userdel	q4::inwork 12463,15774 12384,15618 12299,15463
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -847,18 +844,7 @@ userdel	1::inwork 12229,10014 12398,9938 12556,9862
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_011767',
-         'until' => 1243893599,
-         'text' => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt; sowie Einbahnstraßenregelungen in der Giselastr. und Stadthausstr. (bis Anfang 06.09)',
-         'from' => 1240517859,
-         'id' => 1572,
-         'data' => 'userdel	q4::inwork; 16153,10818 16032,10842
-userdel	q4::inwork; 16196,10911 16153,10818
-userdel	q4::inwork; 15681,10801 15674,10851
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_012654',
          'until' => 1257029999,
@@ -1330,16 +1316,7 @@ userdel	q4::inwork 9126,12413 9345,12443
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_012806',
-         'until' => 1243893600,
-         'text' => 'Stendaler Str. (Hellersdorf) Richtung Riesaer Str. zwischen Janusz-Korczak-Str. und Hellersdorfer Str. Veranstaltung, gesperrt (bis 01.06.09 nachts)',
-         'from' => 1243578195,
-         'id' => 1682,
-         'data' => 'userdel	q4::inwork; 23960,15021 23993,14797
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1245103200,
          'text' => 'B 096 Baruth - Wünsdorf OL Neuhof, Bahnübergang Reperaturarb. am Bahnübergang halbseitig gesperrt; Einbahnstraße 12.06.2009-15.06.2009 ',
@@ -1366,6 +1343,26 @@ userdel	q4::inwork 9126,12413 9345,12443
          'data' => 'userdel	2::inwork -19058,11636 -19029,11660 -18750,11919
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_012907',
+         'until' => 1298934000,
+         'text' => 'Pasewalker Str. (Pankow) stadteinwärts zwischen Marienstr. und Anschlussstelle A114 Baustelle, Fahrtrichtung gesperrt ist eingerichtet (bis Frühjahr 2011)',
+         'from' => 1243886249,
+         'id' => 1686,
+         'data' => 'userdel	q4::inwork; 12095,20832 12030,20490 12008,20368 11963,20136 11931,19965 11907,19838 11907,19749
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_012896',
+         'until' => 1245103199,
+         'text' => 'Sakrower Landstr. (Kladow) in beiden Richtungen zwischen Krampnitzer Weg und Kindlebenstr. Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei (bis Mitte 06.2009)',
+         'from' => 1243972705,
+         'id' => 1687,
+         'data' => 'userdel	q3::inwork -7710,4771 -7519,4843
+',
+         'type' => 'handicap'
        }
      
 );
