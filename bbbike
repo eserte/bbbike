@@ -15482,17 +15482,7 @@ sub scale_maps {
 sub scrollregion_best {
     if ($city_obj && $city_obj->bbox) {
 	require BBBikeAdvanced;
-	if (($city_obj->{source}||'') eq 'osm' &&
-	    ($city_obj->{coordsys}||'') eq 'wgs84') {
-	    # special case for modern osm data
-	    my($x1,$y1,$x2,$y2) = @{ $city_obj->bbox }; # wgs84 coords here
-	    require Karte::Polar;
-	    ($x1,$y1) = $Karte::Polar::obj->map2standard($x1,$y1);
-	    ($x2,$y2) = $Karte::Polar::obj->map2standard($x2,$y2);
-	    set_scrollregion($x1,$y1,$x2,$y2); # don't want to enlarge
-	} else {
-	    enlarge_scrollregion(@{ $city_obj->bbox }); # enlarge or set? XXX probably set is better???
-	}
+	set_scrollregion(@{ $city_obj->_bbox_standard_coordsys });
     }
 }
 
@@ -15509,7 +15499,9 @@ sub center_best {
 	    return;
 	}
     }
-    if ($city_obj && $city_obj->center) {
+    if ($city_obj && $city_obj->_center_standard_coordsys) {
+	$c->center_view(transpose(split /,/, $city_obj->_center_standard_coordsys));
+    } elsif ($city_obj && $city_obj->center) {
 	$c->center_view(transpose(split /,/, $city_obj->center));
     } else {
 	$c->center_view;
