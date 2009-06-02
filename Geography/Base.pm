@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Base.pm,v 1.2 2009/06/02 05:33:12 eserte Exp $
+# $Id: Base.pm,v 1.3 2009/06/02 05:34:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Geography::Base;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 sub new                  { bless {}, shift }
 sub cityname             { undef }
@@ -25,6 +25,8 @@ sub bbox                 { undef } # array ref
 sub search_args          { () }
 sub scrollregion         { () }
 sub is_osm_source        { undef }
+sub coord_to_standard    { ($_[1], $_[2]) }
+sub coord_s_to_standard  { $_[1] }
 sub _bbox_standard_coordsys { }
 sub _center_standard_coordsys { }
 
