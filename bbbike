@@ -2522,13 +2522,13 @@ unless ($skip_features{"wasser"}) {
 			  pending(1, 'replot-str-w');
 		      },
 		     );
-    $wcm->checkbutton(-label => M"Gewässer in der Stadt zeichnen",
-		      -variable => \$wasserstadt,
-		      -command => sub {
-			  pending(1, 'replot-str-w');
-		      },
-		     );
     unless ($skip_features{"wasserumland"}) {
+	$wcm->checkbutton(-label => M"Gewässer in der Stadt zeichnen",
+			  -variable => \$wasserstadt,
+			  -command => sub {
+			      pending(1, 'replot-str-w');
+			  },
+			 );
 	$wcm->checkbutton(-label => M"Gewässer im Umland zeichnen",
 			  -variable => \$wasserumland,
 			  -command => sub {
