@@ -6534,7 +6534,7 @@ sub generate_plot_functions {
 			       -tags      => ["$abk-out",
 					      "$abk-$cat_hin-out"],
                                ($line_dash_hin ? (-dash => $line_dash_hin) : ()),
-			       ($line_dash_rueck ? (-capstyle => $line_dash_rueck) : ()),
+			       ($line_capstyle_hin ? (-capstyle => $line_capstyle_hin) : ()),
 			       ($stipple ? (-stipple => $stipple) : ()),
 			       (exists $layer_category_line_arrow{$abk} && exists $layer_category_line_arrow{$abk}{$cat_hin} ? (-arrow => $layer_category_line_arrow{$abk}{$cat_hin})
 				: exists $layer_line_arrow{$abk} ? (-arrow => $layer_line_arrow{$abk})
