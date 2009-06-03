@@ -13304,9 +13304,9 @@ EOF
 userdel	q4::inwork; 15052,14585 15272,14691 15383,14759
 EOF
      },
-     { from  => 1241158705, # 2009-05-01 08:18
-       until => 1243636837, # 2009-05-31 23:59 1243807199
-       text  => 'Köpenicker Str. (Kreuzberg) Richtung Engeldamm zwischen Heinrich-Heine-Str. und Michaelkirchstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2009)',
+     { from  => 1244065297, # 2009-06-03 23:41
+       until => 1245103199, # 2009-06-15 23:59
+       text  => 'Köpenicker Str. (Kreuzberg) Richtung Engeldamm zwischen Heinrich-Heine-Str. und Michaelkirchstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 06.2009)',
        type  => 'handicap',
        source_id => 'IM_012479',
        data  => <<EOF,
@@ -13322,9 +13322,9 @@ EOF
 userdel	q4::inwork 8536,11063 8483,10900
 EOF
      },
-     { from  => 1240517859, # 2009-04-23 22:17
-       until => 1243893599, # 2009-06-01 23:59
-       text  => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt; sowie Einbahnstraßenregelungen in der Giselastr. und Stadthausstr. (bis Anfang 06.09)',
+     { from  => 1244065177, # 2009-06-03 23:39
+       until => 1246399199, # 2009-06-30 23:59
+       text  => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt; sowie Einbahnstraßenregelungen in der Giselastr. und Stadthausstr. (bis Ende 06.2009)',
        type  => 'handicap',
        source_id => 'IM_011767',
        data  => <<EOF,
@@ -14301,6 +14301,24 @@ EOF
        source_id => 'IM_012896',
        data  => <<EOF,
 userdel	q3::inwork -7710,4771 -7519,4843
+EOF
+     },
+     { from  => 1244065266, # 2009-06-03 23:41
+       until => 1246485599, # 2009-07-01 23:59
+       text  => 'Bahnhofstr. (Pankow) in beiden Richtungen zwischen Mönchmühler Str. und Bahnübergang Baustelle, Straße vollständig gesperrt (bis Anfang 07.2009)',
+       type  => 'handicap',
+       source_id => 'IM_012890',
+       data  => <<EOF,
+userdel	q4::inwork 8626,23432 8803,23478 8909,23506
+EOF
+     },
+     { from  => 1244065335, # 2009-06-03 23:42
+       until => 1249077599, # 2009-07-31 23:59
+       text  => 'Durchfahrt Bayreuther Str. gesperrt (bis Ende 07.2009)',
+       type  => 'handicap',
+       source_id => 'IM_009958',
+       data  => <<EOF,
+userdel	q4::inwork 6380,10704 6353,10583
 EOF
      },
     );

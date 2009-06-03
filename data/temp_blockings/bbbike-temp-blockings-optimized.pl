@@ -842,9 +842,29 @@ userdel	1::inwork 12229,10014 12398,9938 12556,9862
        undef,
        undef,
        undef,
+       {
+         'source_id' => 'IM_012479',
+         'until' => 1245103199,
+         'text' => 'Köpenicker Str. (Kreuzberg) Richtung Engeldamm zwischen Heinrich-Heine-Str. und Michaelkirchstr. Baustelle, Fahrtrichtung gesperrt (bis Mitte 06.2009)',
+         'from' => 1244065297,
+         'id' => 1570,
+         'data' => 'userdel	q4::inwork; 11242,11720 11324,11689 11574,11594
+',
+         'type' => 'handicap'
+       },
        undef,
-       undef,
-       undef,
+       {
+         'source_id' => 'IM_011767',
+         'until' => 1246399199,
+         'text' => 'Lückstr. (Lichtenberg) Richtung Nöldnerstr. zwischen Giselastr. und Nöldnerplatz Baustelle, Fahrtrichtung gesperrt; sowie Einbahnstraßenregelungen in der Giselastr. und Stadthausstr. (bis Ende 06.2009)',
+         'from' => 1244065177,
+         'id' => 1572,
+         'data' => 'userdel	q4::inwork; 16153,10818 16032,10842
+userdel	q4::inwork; 16196,10911 16153,10818
+userdel	q4::inwork; 15681,10801 15674,10851
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'IM_012654',
          'until' => 1257029999,
@@ -1361,6 +1381,26 @@ userdel	q4::inwork 9126,12413 9345,12443
          'from' => 1243972705,
          'id' => 1687,
          'data' => 'userdel	q3::inwork -7710,4771 -7519,4843
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_012890',
+         'until' => 1246485599,
+         'text' => 'Bahnhofstr. (Pankow) in beiden Richtungen zwischen Mönchmühler Str. und Bahnübergang Baustelle, Straße vollständig gesperrt (bis Anfang 07.2009)',
+         'from' => 1244065266,
+         'id' => 1688,
+         'data' => 'userdel	q4::inwork 8626,23432 8803,23478 8909,23506
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_009958',
+         'until' => 1249077599,
+         'text' => 'Durchfahrt Bayreuther Str. gesperrt (bis Ende 07.2009)',
+         'from' => 1244065335,
+         'id' => 1689,
+         'data' => 'userdel	q4::inwork 6380,10704 6353,10583
 ',
          'type' => 'handicap'
        }
