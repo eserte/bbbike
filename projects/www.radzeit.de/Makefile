@@ -46,6 +46,7 @@ EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html \
 CGI_FILES=		bbbike.cgi \
 			bbbike-data.cgi \
 			bbbike-snapshot.cgi \
+			bbbike-test.cgi \
 			bbbikegooglemap.cgi \
 			wapbbbike.cgi \
 			mapserver_address.cgi \
@@ -56,6 +57,7 @@ TESTS_ON_REMOTE?=	basic.t \
 TESTS_FROM_LOCAL=	cgihead.t \
 			cgi-mechanize.t \
 			cgi.t \
+			cgi-test.t \
 			radzeit.t \
 			wapcgi.t \
 			wwwdata.t
