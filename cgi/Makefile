@@ -13,9 +13,10 @@ all:	rights symlinks
 	@echo "You may run $(MAKE) httpd.conf to create a default apache configuration for inclusion"
 
 symlinks:
-	[ -e bbbike.en.cgi  ] || ln -s bbbike.cgi  bbbike.en.cgi
-	[ -e bbbike2.cgi    ] || ln -s bbbike.cgi  bbbike2.cgi
-	[ -e bbbike2.en.cgi ] || ln -s bbbike2.cgi bbbike2.en.cgi
+	[ -e bbbike.en.cgi   ] || ln -s bbbike.cgi  bbbike.en.cgi
+	[ -e bbbike2.cgi     ] || ln -s bbbike.cgi  bbbike2.cgi
+	[ -e bbbike2.en.cgi  ] || ln -s bbbike2.cgi bbbike2.en.cgi
+	[ -e bbbike-test.cgi ] || ln -s bbbike.cgi  bbbike-test.cgi
 
 biokovo.conf:
 	$(MAKE) \

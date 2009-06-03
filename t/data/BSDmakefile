@@ -1,0 +1,14 @@
+EMPTY_FILES=	Potsdam.coords.data gesperrt handicap_s
+
+all:	Berlin.coords.data ${EMPTY_FILES}
+
+Berlin.coords.data:	strassen
+	perl -I../.. -I../../lib -MStrassen::Core -e 'Strassen->new_stream(shift)->read_stream(sub { my $$r = shift; print "$$r->[0]|||$$r->[1][0]\n" })' ${.CURDIR}/strassen > Berlin.coords.data~
+	chmod 644 Berlin.coords.data~
+	mv Berlin.coords.data~ Berlin.coords.data
+
+.for f in ${EMPTY_FILES}
+$f:
+	touch $f
+	chmod 644 $f
+.endfor
