@@ -964,6 +964,14 @@ foreach my $type (qw(start via ziel)) {
 	$q->param($type . "char", $ch);
 	$q->delete($type . "charimg.x");
 	$q->delete($type . "charimg.y");
+    } elsif (defined $q->param($type . 'c_wgs84') and
+	     $q->param($type . 'c_wgs84') ne '') {
+	require Karte;
+	Karte::preload('Standard', 'Polar');
+	$Karte::Standard::obj = $Karte::Standard::obj if 0; # cease -w
+	my($x, $y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard(split /,/, $q->param($type . 'c_wgs84')));
+	$q->param($type . 'c', "$x,$y");
+	$q->delete($type . 'c_wgs84');
     }
 }
 
