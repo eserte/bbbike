@@ -781,6 +781,7 @@ ${XXX_TARGETS:C/^/${PERSISTENTTMPDIR}\/.XXX-/:C/$/-$(i)/}:	$(i)-orig
 .endfor
 
 .for doormode in indoor outdoor
+.ORDER: ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-${doormode}-nextcheck.bbd
 ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-${doormode}-nextcheck.bbd:	\
 		Makefile \
 		${SOURCE_TARGETS:S|$|-orig|} \
@@ -799,6 +800,7 @@ ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd ${PERSISTENTTMPDIR}/.
 	touch ${PERSISTENTTMPDIR}/.check_fragezeichen-${doormode}-nextcheck.bbd
 .endfor
 
+.ORDER: ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd
 ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd:	\
 		Makefile \
 		ampeln-orig \
