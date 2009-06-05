@@ -28,7 +28,7 @@ require Exporter;
 	     cp850_iso iso_cp850 nil
 	     kmh2ms
 	     STAT_MODTIME);
-@EXPORT_OK = qw(min max first sum ms2kmh clone);
+@EXPORT_OK = qw(min max first sum ms2kmh clone bbbike_root);
 
 use constant STAT_MODTIME => 9;
 
@@ -229,6 +229,18 @@ sub iso_cp850 {
 
 # keine Zeichensatz-Konvertierung
 sub nil { $_[0] }
+
+{
+    my $BBBIKE_ROOT;
+    sub bbbike_root {
+	if (!defined $BBBIKE_ROOT) {
+	    require File::Basename;
+	    require Cwd;
+	    $BBBIKE_ROOT = Cwd::realpath(File::Basename::dirname(__FILE__));
+	}
+	$BBBIKE_ROOT;
+    }
+}
 
 BEGIN {
     if (eval { require List::Util; 1 }) {
