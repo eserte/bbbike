@@ -35,7 +35,7 @@ if (!GetOptions(get_std_opts("cgidir"),
 
 {
     my $make = $^O =~ m{bsd}i ? "make" : "pmake";
-    system("cd data && $make");
+    system("cd $FindBin::RealBin/data && $make");
 }
 
 my $testcgi = "$cgidir/bbbike-test.cgi";
