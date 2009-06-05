@@ -46,7 +46,6 @@ EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html \
 CGI_FILES=		bbbike.cgi \
 			bbbike-data.cgi \
 			bbbike-snapshot.cgi \
-			bbbike-test.cgi \
 			bbbikegooglemap.cgi \
 			wapbbbike.cgi \
 			mapserver_address.cgi \
@@ -424,6 +423,13 @@ prepare-bbbike-dist-prog-bbbike-cgi:
 	rm -f ${CURDIR}/cgi-bin/bbbike2.cgi.config
 	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/bbbike2.cgi.config
 	chmod ugo+r ${CURDIR}/BBBike/cgi/bbbike2.cgi.config
+# Create bbbike-test.cgi link
+	rm -f ${CURDIR}/cgi-bin/bbbike-test.cgi
+	cd ${CURDIR}/cgi-bin && ln -s bbbike.cgi bbbike-test.cgi
+# Create bbbike-test.cgi configuration
+	rm -f ${CURDIR}/cgi-bin/bbbike-test.cgi.config
+	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/bbbike-test.cgi.config
+	chmod ugo+r ${CURDIR}/BBBike/cgi/bbbike-test.cgi.config
 # Create links for English version
 	rm -f ${CURDIR}/cgi-bin/bbbike.en.cgi
 	cd ${CURDIR}/cgi-bin && ln -s bbbike.cgi bbbike.en.cgi
@@ -480,6 +486,7 @@ prepare-bbbike-dist-prog-bbbike-t:
 	    cp -pf ${BBBIKE_ROOT_DIR}/t/$f ${CURDIR}/BBBike/t/$f; \
 	fi
 .endfor
+	rsync -av --cvs-exclude ${BBBIKE_ROOT_DIR}/t/data/ ${CURDIR}/BBBike/t/data/
 .for f in ${TESTS_RADZEIT_ON_REMOTE}
 	if [ ! -e ${CURDIR}/BBBike/t/$f -o ${CURDIR}/t/$f -nt ${CURDIR}/BBBike/t/$f ] ; then \
 	    cp -pf ${CURDIR}/t/$f ${CURDIR}/BBBike/t/$f; \
