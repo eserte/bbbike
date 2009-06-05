@@ -945,15 +945,7 @@ userdel	q4::inwork; 15681,10801 15674,10851
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1262300400,
-         'text' => 'L 412 Bad Saarow - Alt Golm OD Neu Golm Kanal- und Straßenbau Vollsperrung 26.03.2009-31.12.2009 ',
-         'from' => 1237935600,
-         'id' => 1596,
-         'data' => 'userdel	q4::inwork 57976,-10623 57656,-10684 57418,-10618 56989,-10997
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
@@ -1401,6 +1393,51 @@ userdel	q4::inwork 9126,12413 9345,12443
          'from' => 1244065335,
          'id' => 1689,
          'data' => 'userdel	q4::inwork 6380,10704 6353,10583
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1245362400,
+         'text' => 'B 096 Löwenberg - Gransee OD Löwenberg Deckeneinbau Vollsperrung 16.06.2009-18.06.2009 ',
+         'from' => 1245016800,
+         'id' => 1690,
+         'data' => 'userdel	q4::inwork -7387,54453 -7352,54661
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1245103200,
+         'text' => 'B 096 Nassenheide - Löwenberg OD Löwenberg Deckeneinbau Vollsperrung 11.06.2009-15.06.2009 ',
+         'from' => 1244584800,
+         'id' => 1691,
+         'data' => 'userdel	q4::inwork -7665,54237 -6983,52753
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1245103200,
+         'text' => 'B 096 Nassenheide - Löwenberg OD Löwenberg, Friedrich-Ebert-Str. Deckeneinbau Vollsperrung 11.06.2009-15.06.2009 ',
+         'from' => 1244584800,
+         'id' => 1692,
+         'data' => 'userdel	q4::inwork -7665,54237 -7387,54453
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1244671200,
+         'text' => 'B 167 Liebenberg - Löwenberg OD Löwenberg Deckeneinbau Vollsperrung 08.06.2009-10.06.2009 ',
+         'from' => 1244325600,
+         'id' => 1693,
+         'data' => 'userdel	q4::inwork -7114,54591 -7387,54453
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1244325600,
+         'text' => 'B 167 Löwenberg - Grieben OD Löwenberg Deckeneinbau Vollsperrung 06.06.2009-06.06.2009 ',
+         'from' => 1244152800,
+         'id' => 1694,
+         'data' => 'userdel	q4::inwork -7665,54237 -7918,54138 -8307,53883
 ',
          'type' => 'handicap'
        }

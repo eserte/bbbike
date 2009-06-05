@@ -927,7 +927,6 @@ Popitzweg - Halemweg: ist der Weg über der U-Bahn auch für Radfahrer befahrbar? 
 Haeftenzeile - Weg über der U-Bahn: Durchfahrt für Radfahrer möglich? Qualität?	? 2134,14440 2126,14392
 Mäckeritzstr.: Qualität?	? 1361,14431 1320,14440 1262,14510 1244,14558 1235,14609
 Schuckertplatz: Qualität?	? 1343,14972 1351,15057
-Natalissteig: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 1226,14714 1223,14824 1202,14935
 Jungfernsteig: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 862,14463 938,14457
 Kapellensteig: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 937,14391 938,14457 942,14517
 Wattstr.: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 999,14390 998,14516
@@ -1825,7 +1824,6 @@ Korlinweg: Qualität? Kann die Buschkrugallee in Höhe Korlinweg mit dem Rad überq
 Moosrosenstr.: Qualität? Kann die Gradestr. in Höhe Moosrosenstr. überquert werden?	? 12727,5244 12726,5147
 Moosrosenstr.: Qualität? Kann der Tempelhofer Weg in Höhe Moosrosenstr. überquert werden?	? 12724,5051 12715,5033 12636,4999
 Polierweg: Qualität? Ist die Straße (teilweise) eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?	? 13048,3134 13100,3159 13483,3064 13596,3039 13650,3025
-Schlierbacher Weg: Qualität?	? 10734,1178 10685,1159 10450,1202 10453,1242 10440,1283
 Steinträgerweg: Qualität? Können Autofahrer den Hochspannungsweg überqueren?	? 12971,2297 12948,2484 12937,2575 12924,2617 12907,2660 12849,2751 12810,2751 12693,2746
 Straße 245: Existiert diese Straße? Qualität?	? 11851,3980 11819,4102
 Teterower Str.: Qualität? Ist die Straße (teilweise) eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer? Kann die Buschkrugallee in Höhe Teterower Str. überquert werden?	? 13820,5203 13717,5175 13626,5153
@@ -1970,8 +1968,6 @@ Rue Georges Vallerey: Qualität?	? 4650,21466 4741,21523 4775,21522
 Rue Lamartine: Qualität?	? 4437,21775 4497,21694
 Straße 199 (Waidmannslust): Qualität?	? 4837,22180 4924,22223 4999,22199
 Straße 167 (Waidmannslust): Qualität?	? 4999,22199 4971,22138
-Treiberpfad: Qualität?	? 3970,22215 3896,22307 3860,22358
-Treiberpfad: Qualität?	? 3896,22307 3810,22231 3766,22165
 Waldhornstr.: Qualität?	? 3674,21792 3753,21686 3818,21603
 Waldshuter Zeile: Qualität?	? 5484,22564 5595,22626
 Wolfacher Pfad: Qualität?	? 4724,22780 4682,22858 4730,22883 4837,22884 4884,22806
@@ -2654,6 +2650,11 @@ Eichhornstr. (Kaulsdorf): Qualität?	? 22458,9532 22501,9369
 Fichtenstr.: Qualität?	? 22212,9508 22200,9430 22154,9237
 Tuchmacherweg: Qualität?	? 8473,18979 8616,19065
 Pankower Str.: Qualität? Ist die Durchfahrt zur Pasewalker Str. für Autos gesperrt?	? 11627,19907 11814,19991 11839,19982 11910,19968 11931,19965
+Grünlandweg: Qualität?	? 4026,20428 3956,20457 3887,20526 3861,20575
+Fetschowzeile: Qualität?	? 4349,20231 4249,20312
+Am Grüngürtel: Qualität? Kann man als Radfahrer weiter in Richtung Weg Triftstr.-Eichborndamm fahren?	? 4526,20362 4597,20508
+Bad-Steben-Str.: Qualität?	? 4808,20159 4733,20203 4719,20237 4738,20252 4744,20288 4718,20341
+Taldorfer Weg: Qualität?	? 5506,20197 5170,20182 5093,20192 4950,20299 4899,20301
 # added from ampeln-orig
 #: add_fragezeichen: Existiert die Ampel Nordufer/Torfstr. noch?
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
@@ -2736,7 +2737,7 @@ Barthels Pfuhl (oder Barth*o*ls Pfuhl?)	? -23662,80950 -23775,80837 -23675,80725
  (Existiert die Ampel Nordufer/Torfstr. noch?)	? 6849,14831
 Müncheberg, Turm (genaue Bezeichnung?)	? 60803,11559
 Müncheberg, Turm (genaue Bezeichnung?)	? 60306,11906
- (wo fängt der Radweg in der Oranienburger Str. Richtung Süden genau an?)	? 5481,20379 5517,20120
+ (wo fängt der Radweg in der Oranienburger Str. Richtung Süden genau an?)	? 5481,20379 5506,20197 5517,20120
 Straße 59: fester Sandweg, sehr uneben (Ist die Straße 59 mittlerweile asphaltiert?)	? 12459,21010 12524,20863
 Kleine Lindenstr.: holpriger Fahrweg (Ist die Kleine Lindenstr. mittlerweile asphaltiert?)	? 21531,-1140 21459,-1086 21306,-975
 Haydnstr.: Kopfsteinpflaster (wie ist die Qualität der Haydnstr.?)	? 4521,4484 4613,4515 4681,4537 4785,4557 4870,4609 5004,4709
@@ -2845,6 +2846,7 @@ Neufahrwasserweg (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur fü
 Baumgartensteg (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? -2882,13474 -2937,13399
 Malchiner Str. (Gilt die Einbahnstraßenregelung zwischen Onkel-Herse-Str. und Parchimer Allee auch für Radfahrer oder nur für Autofahrer?)	? 13866,4481 13869,4626 13836,4759
 Heinickeweg (Gilt die Einbahnstraßenregelung auch für Radfahrer oder nur für Autofahrer?)	? 2224,14825 2210,14696 2207,14576
+Natalissteig (Ist der Natalissteig eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?)	? 1202,14935 1223,14824 1226,14714
 Leistikowstr. (Ist die Leistikowstr. für Radfahrer in entgegengesetzter Richtung geöffnet?)	? -12512,810 -12302,718
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position ist vielleicht nicht ganz genau)	? -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9046,22376
 Radwege unterschiedlicher Form und Qualtität (genauer spezifizieren)	? -9723,-2451 -9692,-2462 -9534,-2515 -9462,-2540 -9254,-2605 -9118,-2649 -9110,-2651 -9075,-2664 -8865,-2732 -8500,-2856 -8417,-2867 -8361,-2875 -8283,-2917 -8137,-2997 -8005,-3056 -7878,-3090 -7497,-3096 -7487,-3097 -7060,-3124 -6810,-3151

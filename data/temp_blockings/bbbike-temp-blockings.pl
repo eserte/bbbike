@@ -13520,7 +13520,7 @@ userdel	2::inwork 22467,-7066 21783,-6875 21527,-6853
 EOF
      },
      { from  => 1237935600, # 2009-03-25 00:00
-       until => 1262300400, # 2010-01-01 00:00
+       until => 1244150009, # 2010-01-01 00:00 1262300400
        text  => 'L 412 Bad Saarow - Alt Golm OD Neu Golm Kanal- und Straßenbau Vollsperrung 26.03.2009-31.12.2009 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -14319,6 +14319,46 @@ EOF
        source_id => 'IM_009958',
        data  => <<EOF,
 userdel	q4::inwork 6380,10704 6353,10583
+EOF
+     },
+     { from  => 1245016800, # 2009-06-15 00:00
+       until => 1245362400, # 2009-06-19 00:00
+       text  => 'B 096 Löwenberg - Gransee OD Löwenberg Deckeneinbau Vollsperrung 16.06.2009-18.06.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -7387,54453 -7352,54661
+EOF
+     },
+     { from  => 1244584800, # 2009-06-10 00:00
+       until => 1245103200, # 2009-06-16 00:00
+       text  => 'B 096 Nassenheide - Löwenberg OD Löwenberg Deckeneinbau Vollsperrung 11.06.2009-15.06.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -7665,54237 -6983,52753
+EOF
+     },
+     { from  => 1244584800, # 2009-06-10 00:00
+       until => 1245103200, # 2009-06-16 00:00
+       text  => 'B 096 Nassenheide - Löwenberg OD Löwenberg, Friedrich-Ebert-Str. Deckeneinbau Vollsperrung 11.06.2009-15.06.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -7665,54237 -7387,54453
+EOF
+     },
+     { from  => 1244325600, # 2009-06-07 00:00
+       until => 1244671200, # 2009-06-11 00:00
+       text  => 'B 167 Liebenberg - Löwenberg OD Löwenberg Deckeneinbau Vollsperrung 08.06.2009-10.06.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -7114,54591 -7387,54453
+EOF
+     },
+     { from  => 1244152800, # 2009-06-05 00:00
+       until => 1244325600, # 2009-06-07 00:00
+       text  => 'B 167 Löwenberg - Grieben OD Löwenberg Deckeneinbau Vollsperrung 06.06.2009-06.06.2009 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork -7665,54237 -7918,54138 -8307,53883
 EOF
      },
     );

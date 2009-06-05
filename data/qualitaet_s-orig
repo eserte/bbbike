@@ -2604,6 +2604,9 @@ Zitadelle: Kopfsteinpflaster	Q2- -2646,14525 -2668,14635 -2704,14748 -2735,14848
 Behnitz: Kopfsteinpflaster	Q2 -2951,14617 -2993,14568 -3014,14559
 ######################################################################
 #: by: anonymous vvv
+Natalissteig: guter Asphalt	Q0 1226,14714 1223,14824 1202,14935
+Sangestr.: guter Beton	Q0 3954,20574 4147,20642 4259,20673
+Schlierbacher Weg: mäßiger Beton	Q1- 10734,1178 10685,1159 10450,1202 10453,1242 10440,1283
 Friedrich-Kayßler-Weg: guter Beton	Q0- 15312,2010 15144,2015 15010,2032
 #: note: "Q1", weil in der Umgebung auch Q1 für "guter Beton" vergeben wurde:
 Silvesterweg: guter Beton	Q1 3559,24564 3575,24498 3605,24351 3632,24214 3661,24079 3702,23899 3715,23819 3751,23764 3791,23730
@@ -5123,8 +5126,8 @@ Gimpelsteig: guter Asphalt	Q0 243,1820 266,1815 379,1846 530,1893 565,1903 662,1
 #: by: Detlef Hüttemann: vvv
 Spandauer Str.: Kopfsteinpflaster	Q2 -6442,14186 -6261,14213
 Spandauer Str.: Asphalt	Q0 -6483,14175 -6659,14142
-Spandauer Str.: glattes Pflaster	Q0 -6659,14142 -6902,14093
-Spandauer Str.: Asphalt	Q0 -6902,14093 -7280,14029 -7457,13957
+Spandauer Str.: glattes Pflaster	Q0 -6659,14142 -6906,14092
+Spandauer Str.: Asphalt	Q0 -6906,14092 -6945,14085 -7280,14029 -7457,13957
 #: by: ^^^
 #: by: andrea (1972):
 Swakopmunder Str.: guter Asphalt	Q1 5498,17101 5444,17093 5423,17076 5376,17017 5315,16936 5236,16831 5223,16783 5228,16738
@@ -5566,7 +5569,7 @@ Nieritzweg: gut geteerte Fahrbahn	Q0 1207,1051 1088,1031 1075,1029 958,1009 932,
 #: by: ^^^
 #: by: Klaus (peters):
 #: confirmed_by: Uschi (papermoon) (but ignored her "viele Fußgänger, q3" again):
-Oldesloer Weg: Beton	Q0 -6413,14010 -6517,13977 -6622,13945 -6928,13913 -7046,13918
+Oldesloer Weg: Beton	Q0 -6413,14010 -6517,13977 -6622,13945 -6899,13916 -6928,13913 -7046,13918
 #: by: ralf (without @):
 Albert-Schweitzer-Str.: guter Asphalt	Q0 25479,5753 25475,5635 25466,5408
 #: by: Thomas Kruel:
@@ -7606,7 +7609,7 @@ Altglienicker Grund: guter Beton	Q0 18941,452 19076,420 19225,384 19429,337
 #: by: Wegner (ilonka):
 Rehborner Str.: guter Asphalt	Q0 28904,1781 28640,2015
 #: by: Manfred Dinzel-Graef:
-Bei den Wörden: mäßiger Asphalt	Q1 4391,20297 4274,20425 4210,20504 4147,20642 4048,20744
+Bei den Wörden: mäßiger Asphalt	Q1 4391,20297 4274,20425 4210,20504 4147,20642 4047,20748
 #: by: Manon Pfaff:
 #: confirmed_by: srt:
 Breestpromenade: mäßiges Kopfsteinpflaster	Q2 25761,5613 26059,5631 26199,5643
@@ -8505,6 +8508,11 @@ Schulstr. (Tegel): schlechtes Kopfsteinpflaster	Q3 1794,20110 1953,20149
 Hoevelstr.: guter Beton	Q0- 17290,4308 17173,4392 17111,4414 17025,4462 16954,4501
 #: by: Zweizopftina:
 Heiligenstadter Str.: guter Asphalt	Q0 16738,14695 16835,14676
+#: by: Karin Krüger vvv
+#: note: q1 ohne weitere Angaben ignoriert
+Treiberpfad: guter Beton	Q0 3970,22215 3896,22307 3860,22358
+Treiberpfad: guter Beton	Q0 3896,22307 3810,22231 3766,22165
+#: by: ^^^
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 14006,13272 14132,13234 14224,13206
