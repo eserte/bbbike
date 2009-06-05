@@ -34,6 +34,7 @@ if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
     push @datadirs, split /$Config::Config{'path_sep'}/o, $ENV{BBBIKE_DATADIR};
 } else {
+    # XXX use BBBikeUtil::bbbike_root().'/data'!
     push @datadirs, ("$FindBin::RealBin/data", './data')
 	if defined $FindBin::RealBin;
     foreach (@INC) {

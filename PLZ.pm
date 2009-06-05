@@ -36,6 +36,7 @@ use constant AGREP_LONGEST_RX => 29;
 
 $PLZ_BASE_FILE = "Berlin.coords.data" if !defined $PLZ_BASE_FILE;
 
+# XXX use BBBikeUtil::bbbike_root().'/data'!!!
 @plzfile =
   ((map { "$_/$PLZ_BASE_FILE" } @Strassen::datadirs),
    (map { ("$_/$PLZ_BASE_FILE", "$_/data/$PLZ_BASE_FILE") } @INC),
