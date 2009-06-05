@@ -6917,6 +6917,7 @@ sub show_info {
    <li><a href="#gpsupload">GPS-Upload</a>
    <li><a href="#opensearch">Suchplugin für Firefox und IE</a>
 @{[ $can_palmdoc ? qq{<li><a href="#palmexport">Palm-Export</a>} : qq{} ]}
+   <li><a href="#googlemaps">BBBike auf Google Maps</a>
   </ul>
  <li><a href="@{[ $bbbike_html ]}/presse.html">Die Presse über BBBike</a>
  <li><a href="http://bbbike.sourceforge.net/bbbike/doc/links.html">Links</a>
@@ -7069,6 +7070,11 @@ Für eine komplette Liste kompatibler Viewer siehe auch
 <a href="http://www.freewarepalm.com/docs/docs_software.shtml">hier</a>.
 EOF
     }
+    print <<EOF;
+<h4 id="googlemaps">BBBike auf Google Maps</h4>
+Noch in Entwicklung: 
+BBBike-Routen auf <a href="bbbikegooglemap.cgi?mapmode=search;maptype=hybrid">Google Maps</a> suchen
+EOF
     print "<hr><p>\n";
 
     print "<h3 id='hardsoftware'>Hard- und Software</h3>\n";
