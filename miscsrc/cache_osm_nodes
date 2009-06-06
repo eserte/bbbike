@@ -32,10 +32,11 @@ sub open_osm {
     my $fh;
     if ($osm_file =~ m{\.gz$}) {
 	if (!eval { require PerlIO::gzip; 1 }) {
-	    die "No support for gzipped osm files, PerlIO::gzip is missing.\n";
+	    open $fh, "-|", "zcat", $osm_file;
+	} else {
+	    open $fh, "<:gzip", $osm_file
+		or die "Can't open file $osm_file: $!";
 	}
-	open $fh, "<:gzip", $osm_file
-	    or die "Can't open file $osm_file: $!";
     } elsif ($osm_file =~ m{\.bz2$}) {
 ## See https://rt.cpan.org/Ticket/Display.html?id=42241
 # 	if (!eval { require PerlIO::via::Bzip2; 1 }) {
