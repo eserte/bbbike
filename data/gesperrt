@@ -559,8 +559,9 @@ Prof.-Dr.-Helmert-Str.: Schranke	BNP:3:-93 -7969,-1659
 Mittelstreifen	3nocross::ignrte -13450,-1595 -13374,-1709 -13328,-1790
 Kiezstr. -> Wall am Kiez: Mittelstreifen	3::igndisp -13328,-1790 -13374,-1709 -13397,-1729
 Eisenhartstr.	1 -12625,-4 -12772,-295 -12821,-417
-Ruinenbergstr.	1 -13781,174 -13918,-164
+Ruinenbergstr.	1 -13795,176 -13918,-164
 Brandenburger Str.	1s -12784,-956 -12894,-977
+Nietnerstr.	2 -13855,1673 -13843,1668
 Straße gesperrt - Baustelle Großflughafen Schönefeld, Durchfahrt nicht möglich	2 18301,-6019 18411,-5428
 Straße gesperrt - Baustelle Großflughafen Schönefeld, Durchfahrt nicht möglich	2 15490,-4709 15539,-4658 15685,-4645 15964,-4817 16261,-4683 17742,-5179 18411,-5428 18764,-5531
 Dallgower Str.	1 -10799,15946 -10853,16230
@@ -1411,6 +1412,7 @@ tragen (Treppe, ca. 50 Stufen)	0:50:-64 -6933,14317
 tragen (Treppe, ca. 50 Stufen)	0:50:2 -6934,14291
 tragen (Treppe)	0:30:-237 20673,7260
 tragen (Treppe, ca. 6 Stufen)	0:15:-222 15488,8508
+tragen (Treppe, 50 Stufen)	0:50:-151 -12328,1941
 Drängelgitter, für Anhänger nicht passierbar	BNP:5:-206 2009,3362
 Drängelgitter, für Anhänger nicht passierbar	BNP:5:-211 1980,3409
 Schwingtor	BNP:5:-153 15054,10168
@@ -1506,6 +1508,7 @@ enges Drängelgitter	BNP:5:90 100,3
 Drosselbartweg: Drängelgitter	BNP:4:-242 13899,18833
 Drosselbartweg: Drängelgitter	BNP:3:71 14222,18666
 Schranke (Thyssenstr. - Sittestr.)	BNP:3:67 5856,19204
+Schranke, kann leicht umfahren wergen	BNP:1:-160 -13937,240
 Dora-Benjamin-Park - Uferweg: Zugang ist noch gesperrt	2:inwork 14621,10062 14599,10039
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15823,10300 15753,10353 15688,10400

@@ -164,16 +164,15 @@ Havelfähre - Brandenburg: Planung des Havelradwegs, genaue Strecke, Realisierung
 #: last_checked: 2006-10-14
 Lichterfeld - Besucherbergwerk F60: Radweg in Bau	? 37870,-89814 37883,-89858 37885,-89996 37960,-90233 38002,-90351 38101,-90412
 # XXX del by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20061103.1420.49764.html #: last_checked: 2007-12-22 Frankfurter Allee am S-Bhf. Richtung Westen: Radstreifen soll Radweg ablösen (zurzeit ist bereits ein provisorischer Radstreifen angelegt)	?; 15361,12071 15117,12106
-#: last_checked: 2007-08
-Bertiniweg: hier soll demnächst die Mauerweg-Alternative verlaufen	? -12335,1928 -12436,2015 -12484,2024 -12515,2067 -12527,2134 -12585,2143 -12676,2088 -12713,2000
+# XXX del das wird hier wohl nicht hier passieren: #: last_checked: 2009-06-06 Bertiniweg: hier soll demnächst die Mauerweg-Alternative verlaufen	? -12335,1928 -12436,2015 -12484,2024 -12515,2067 -12527,2134 -12585,2143 -12676,2088 -12713,2000
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1957
 Radweg von Penkow nach Malchow: beidseitig, asphaltiert, 2,25m breit, 2008-08-01 fertiggestellt	? -54521,116188 -55301,116578 -57151,117294 -57614,117523 -57683,117755 -58208,117685
 Bergstr. (Wildau): Tunnel statt Bahnübergang in Bau	?::inwork 26381,-9962 26308,-9995 25700,-9502
 Fußgängerbrücke über den Nordhafen in Planung	?::inwork -2560,16212 -2548,16305 -2542,16384 -2620,16380
-#: last_checked: 2009-03-07
+#: last_checked: 2009-06-06
 Fritz-von-der-Lancken-Str.: Verlängerung in Bau	?::inwork -13005,1933 -12775,1956
-#: last_checked: 2009-03-07
-Fritz-von-der-Lancken-Str - Höhenweg: Straße in Bau	?::inwork -12766,1932 -12511,1680
+#: last_checked: 2009-06-06
+Fritz-von-der-Lancken-Str - Höhenweg: Straße in Bau	?::inwork -12766,1932 -12636,1804 -12511,1680
 #: section ^^^
 #: section ^^^
 #
@@ -216,7 +215,6 @@ Rägeliner Str.: evtl. wird die Straße neu gewalzt?	?::inwork 19959,10443 20025,1
 #: last_checked: 2009-05-02 (by srt, nur südlicher Abschnitt)
 #: next_check: 2009-08-01
 Prinzregentenstr.: Ist die Prinzregentenstr. mittlerweile eine Fahrradstraße? Wenn ja, gilt die Fahrradstraßenregelung für die gesamte Straße oder nur einen Teilabschnitt?	? 5630,7875 5634,8004 5641,8137 5669,8207 5666,8345 5660,8591 5655,8828 5647,9022 5633,9263 5628,9353 5630,9592
-Uferweg am Jungfernsee: geht der Uferweg bis Nedlitz weiter? Für Radfahrer befahrbar, Qualität?	? -12460,2288 -12713,2470 -12904,2669 -13387,2987
 #: XXX_prog: verbessern, wenn der entsprechende Routingtext besser aussehen würde (also z.B. "nach rechts und sofort wieder nach links")
 Kleineweg: ist hier leicht versetzt	? 9130,7804 9131,7652 9120,7600
 Reinickendorfer Route 5, wo geht es weiter?	? 6558,18947 6442,18839
@@ -483,7 +481,7 @@ Gamengrund: genauere Wegführung fehlt (GPS-Track gesucht!)? Qualität (teilweise 
 Brunow - Gamengrund: Qualität?	? 41624,36648 43362,37337 43825,37262 43922,36623 43637,36362 42975,36212 42748,35962
 Martin-Luther-Str. (Falkensee) - Radelandstr.: durchgängige Verbindung vorhanden? Qualität?	? -6977,17720 -7060,17637 -7306,17291 -7424,17303
 Am Oder-Spree-Kanal, Schwarzer Weg nach Schmöckwitz: Qualität?	? 30533,-3124 29375,-2846 28803,-2932 28549,-3084 28212,-3120 28000,-3147 27898,-3171
-Straßenführung und Straßennamen im Wohnpark an der Buga?	? -13820,1095 -13907,1223 -13801,1414 -14016,1563
+Straßenführung und Straßennamen im Wohnpark an der Buga?	? -13804,1088 -13914,1218 -13893,1255 -13795,1420 -13838,1445 -13879,1469 -13923,1499 -14016,1563
 Sacrower See - Försterei Zedlitz: Qualität (wahrscheinlich Waldweg, Q2)?	? -10783,3792 -10912,3738 -10955,3723
 #: XXX Straße weiter Richtung Dauer einzeichnen:
 Schenkenberg - Dauer: Qualität (zumindest in Schenkenberg noch asphaltiert)?	? 45454,107247 44745,108948
@@ -568,7 +566,6 @@ Waldbühne - Havelchaussee: Qualität (wahrscheinlich Waldwege, Q2 bis Q3)? noch i
 Fährweg - Niederneuendorfer Allee (Kleingartenanlage): Qualität?	? -1864,17785 -1854,17805 -1871,17842 -1914,17899 -2011,17986 -2039,18049 -2066,18097 -2105,18119 -2143,18153 -2166,18199 -2177,18279 -2197,18307 -2229,18312 -2750,18333
 Steinhöfel - Poratz - Ringenwalde: Qualität?	? 37482,74476 37025,74400 36800,74137 36612,74162 35775,73750 35469,73594 35125,73487 33687,73037 33075,72750 32750,72787 32600,73062 31862,73112 30712,72625 30244,72598
 Am Neuen Garten: Qualität zwischen Glumestr. und Cecilienhof?	? -12302,718 -12276,831 -12212,1201
-Grenzallee Potsdam: Qualität?	? -13854,2025 -14315,2135
 Verlängerte Amtsstr.: Qualität? 	? -15251,1200 -15161,1780
 Lindenallee: Qualität? laut "Berliner Umland" witterungsabhängige Strecke; laut "mobil-potsdam.de" teils eine "Promenade", teils betoniert 	? -15161,1780 -15132,1992 -15290,2665 -15459,2946
 zur Kohlhasenbrücker Str.: Durchfahrt möglich?	? -6998,-1320 -6946,-1418 -6879,-1504
@@ -1241,8 +1238,7 @@ Neuhardenberg - Letschin: Qualität?	? 68139,21885 68350,22134 68604,23658 69163,
 Bestensee - Hintersiedlung: Qualität?	? 26437,-18650 26650,-18912 26987,-19262 26562,-20162 26037,-20825
 Kolonieweg (Kleingärten am Pfingstberg): Qualität (wahrscheinlich unbefestiger Weg?)?	? -12633,1484 -12629,1630
 Langhansstr.: Qualität (zumindest das westliche Ende ist asphaltiert)? Ist die gesamte Straße eine Spielstraße?	? -12276,831 -12411,881 -12325,1145 -12408,1176
-Hessestr.: Qualität?	? -12655,385 -12649,472 -12744,573 -12781,663
-Graf-von-Schwerin-Str.: Qualität zwischen Erich-Arendt-Str. und Bruno-Taut-Str.?	? -13125,1508 -13067,1506
+Hessestr.: Qualität?	? -12664,399 -12651,453 -12741,585 -12815,554
 Wilhelm-Staab-Str./Yorckstr.: Überqueren des Kanals möglich?	? -13001,-1329
 # XXX: unklare Angaben von Nils Fiedler, leider keine Rückfrage möglich: Q1 (Asphalt); q2 (Fußgängerzone); RW1 (Radweg); Gefälle "5°"? #Mühlenfeldstr.: Steigung, wenn ja, wo genau?	? 3707,22864 3739,22693 3743,22642 3753,22534 3728,22507 3601,22484 3531,22440 3353,22348 3243,22311 3134,22292 3046,22292 2757,22310 2587,22332
 #Dorfstr. (Malchow): seit November 2005 Bauarbeiten für neuen Radweg, bereits fertig?	? 15606,19839 15656,19946 15686,20100 15778,20350 15900,20531 16025,20631
@@ -1696,7 +1692,6 @@ Annemariestr.: Qualität?	? 16046,16134 16075,16249 16095,16331
 Hertastr.: Qualität?	? 16119,16113 16154,16227
 Klarastr.: Qualität?	? 16208,16087 16211,16131 16234,16203 16260,16282
 Elfriedestr.: Qualität? Heißt der Abzweig zur Klarastr. auch Elfriedestr?	? 16211,16131 16293,16109 16316,16173
-Pappelallee: hier auch Radwege?	? -13561,117 -13781,174 -13811,182 -14223,286 -14437,348 -14659,412
 Johannes-Lepsius-Str.: Route blau?	? -13240,32 -13240,32 -13240,32 -13225,179 -13209,260 -13244,281 -13203,434
 Berntweg: Qualität?	? 13161,1991 13181,1645
 Großcreutzweg: Qualität?	? 13514,1823 13502,1797 13507,1659
@@ -2132,7 +2127,7 @@ Alte Strandstraße: Qualität? Gibt es hier einen Radweg?	? 40952,186220 40853,186
 #: XXX: beide Enden sehen gut aus:
 Strecke zwischen Usedom und Abzweig Welzin: Qualität?	? 44868,163300 43477,164369 43370,164591
 #: XXX Im ADAC-Plan gefunden:
-Am Jägertor: Qualität? Ist der Straßenname offiziell? 	? -13221,-718 -13330,-725 -13375,-632
+Am Jägertor: Qualität? Ist der Straßenname offiziell? 	? -13221,-718 -13330,-725 -13371,-639
 Laehrstr. - Heinrich-Laehr-Park: existiert eine Durchfahrt zum Heinrich-Laehr-Park?	? 1142,1350 1274,1376 1312,1383
 Hoffbauerpfad: Qualität zwischen Sachtlebenstr. und Hans-Böhm-Zeile?	? 214,969 333,1104
 Hoffbauerpfad: Qualität zwischen Klistostr. und Urbanstr.? Für Autos geöffnet?	? 464,1246 550,1358
@@ -3550,3 +3545,5 @@ Fetschowzeile: Qualität?	? 4349,20231 4249,20312
 Am Grüngürtel: Qualität? Kann man als Radfahrer weiter in Richtung Weg Triftstr.-Eichborndamm fahren?	? 4526,20362 4597,20508
 Bad-Steben-Str.: Qualität?	? 4808,20159 4733,20203 4719,20237 4738,20252 4744,20288 4718,20341
 Taldorfer Weg: Qualität?	? 5506,20197 5170,20182 5093,20192 4950,20299 4899,20301
+#: XXX Qualität ist wassergebundene Decke, zweispurig
+Feldflur: wie geht es hier weiter?	? -14305,2184 -14785,2819

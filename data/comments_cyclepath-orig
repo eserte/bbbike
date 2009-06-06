@@ -41,7 +41,7 @@ B2: asphaltierter Zweirichtungsradweg auf der südöstlichen Seite	RW8;RW2 -10090,
 B2: Radstreifen	RW4;RW4 -13778,4492 -13784,3900 -13567,3403
 B2: Gehweg für Radfahrer frei	RW1;RW1 -13567,3403 -13387,2987 -13375,2950
 B2: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW8;RW2 -13375,2950 -13152,2169 -13141,1933
-B2: gemeinsamer Rad- und Gehweg, asphaltiert	RW2;RW2 -13141,1933 -13134,1758 -13133,1698 -13125,1508 -13115,1379 -13113,1356 -13108,1278 -13089,1135 -13039,894 -13038,856 -13044,800 -13058,702 -13062,535 -13036,342 -13091,-8 -13111,-136
+B2: gemeinsamer Rad- und Gehweg, asphaltiert	RW2;RW2 -13141,1933 -13134,1758 -13133,1698 -13125,1508 -13115,1379 -13113,1356 -13108,1278 -13089,1135 -13039,894 -13038,856 -13042,807 -13058,702 -13062,535 -13036,342 -13091,-8 -13111,-136
 B273: Radweg	RW2;RW2 -13556,-1182 -13556,-1140 -13560,-1106 -13576,-1026 -13625,-902 -13815,-749 -14034,-571 -14134,-468 -14409,-371 -14546,-121 -14587,80 -14650,201 -14737,300
 B273: Radweg	RW -18731,5799 -18804,5992 -18962,6183 -19576,6450 -19787,6551 -20023,6826
 Berliner Str., Erkner: Radweg	RW 33593,2893 33894,2825 34142,2742
@@ -210,8 +210,10 @@ Rathenow: überwiegend Suggestivstreifen	RW -62839,21218 -62285,21020 -61627,2078
 Päwesin - Brandenburg: benutzungspflichtiger asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW -36502,10426 -36630,10198 -37029,9856 -37071,9625 -37035,9143 -37495,8583 -37541,7333
 Gutenpaaren - Zachow: teilweise mit Radwegen (Gehweg bzw. Radstreifen)	RW -33196,7156 -32754,7349 -31846,7839 -31583,7939 -31328,7955
 Brückenkopf: benutzungspflichtiger asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW -30706,8406 -29594,8467 -28778,8193 -28216,8171 -27406,8069
-Pappelallee: benutzungspflichtiger Zweirichtungsradweg auf der nördlichen Seite	RW2;RW8 -13091,-8 -13240,32 -13367,66 -13436,84 -13561,117
-Brentanoweg: verkehrsberuhigt	RW6 -13406,-396 -13581,-307
+Pappelallee: benutzungspflichtiger Zweirichtungsradweg auf der nördlichen Seite	RW2;RW8 -13091,-8 -13240,32 -13367,66 -13436,84 -13561,117 -13795,176 -13811,182 -13945,217 -14238,293 -14437,348 -14659,412
+Brentanoweg: verkehrsberuhigt	RW6 -13406,-396 -13452,-358 -13581,-307
+Ulanenweg (Potsdam): verkehrsberuhigt	RW6 -13155,-379 -13285,-360 -13311,-365 -13415,-350 -13452,-358
+Bruno-Taut-Str.: verkehrsberuhigt	RW6 -13067,1506 -12939,1493
 Voltaireweg	RW2;RW4 -13111,-136 -13206,-139
 Voltaireweg	RW4;RW4 -13206,-139 -13450,-211 -13645,-266
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1324
@@ -257,8 +259,8 @@ Bargischow - Anklam: Radweg, teilweise als Zweirichtungsradweg	RW 28473,161345 2
 #: note: vom Zug aus gesehen
 #: add_fragezeichen: wie weit geht der Radweg in Dahlewitz?
 Dahlewitz: Zweirichtungsradweg auf Gehweg, südlichen Seite	RW 11875,-8728 11555,-8625
-Jägerallee: Radspur	RW4; -13111,-136 -13132,-256 -13137,-278 -13182,-515
-Jägerallee: Gehweg für Radfahrer freigegeben	RW1; -13182,-515 -13137,-278 -13132,-256 -13111,-136
+Jägerallee: Radspur	RW4; -13111,-136 -13132,-256 -13137,-278 -13155,-379 -13182,-515
+Jägerallee: Gehweg für Radfahrer freigegeben	RW1; -13182,-515 -13155,-379 -13137,-278 -13132,-256 -13111,-136
 Jägerallee: Gehweg für Radfahrer freigegeben	RW1;RW1 -13182,-515 -13221,-718 -13231,-763
 Geltow: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW -18025,-6370 -18014,-6027 -18144,-5817
 B1: kombinierte Geh- und Radwege auf beiden Straßenseiten, Verbundsteinpflasterradweg	RW -19002,-5271 -18515,-5282 -17806,-5251 -17682,-5054
@@ -270,7 +272,7 @@ Wetzlarer Str.: gemeinsamer Geh- und Zweirichtungsradweg auf der westlichen Seit
 Bahnstr. (Michendorf): gemeinsamer Geh- und Zweirichtungsradweg auf der westlichen Seite	RW -14705,-10543 -14831,-10652 -15012,-10820 -15137,-10935 -15182,-10981
 Borkheide - Borkwalde: Zweirichtungsradweg auf der westlichen Seite	RW -26258,-20094 -26809,-18383
 Am Neuen Markt: verkehrsberuhigt	RW6 -12795,-1499 -12870,-1493 -12865,-1462 -12913,-1451 -12975,-1363 -12976,-1356
-Kiepenheuerallee/Am Schragen: Radspuren	RW3;RW3 -13456,500 -13203,434 -13157,394 -13094,347 -13036,342
+Kiepenheuerallee/Am Schragen: Radspuren	RW3;RW3 -13456,500 -13311,462 -13203,434 -13157,394 -13094,347 -13036,342
 Friedrich-Ebert-Str. (Köthen): Radweg	RW2;RW2 -84506,-74450 -84172,-74293
 Fasanerieallee (Köthen): Radweg	RW8;RW2 -86035,-74311 -85944,-74280 -85824,-74269 -85712,-74262
 Güterseeweg (Köthen): Radweg	RW2;RW -84885,-72975 -85881,-73268
@@ -319,6 +321,7 @@ Asphaltiert	RW2;RW8 69990,78244 70010,78347
 Asphaltiert	RW1;RW9 70010,78347 70001,78510
 	RW; -11822,-1874 -12110,-1862 -12247,-1858 -12420,-1853
 	RW2; -12420,-1853 -12493,-1896
+Mäßiger Asphalt	RW2; -13375,2950 -13929,2548
 ######################### User Contributions #################################
 #: by: Eckart Seher:
 Industriestr. (Dahlwitz-Hoppegarten): gegenläufiger Radweg, rotes Betonpflaster	RW 25938,11837 26042,11798 26222,11726 26555,11601 26794,11513 26880,11479

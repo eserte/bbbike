@@ -663,7 +663,7 @@ Rudolf-Breitscheid-Str.	2 -11056,-1726 -11142,-1675
 Geschwister-Scholl-Str.	1 -14330,-1762 -14215,-1687 -14151,-1656 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13876,-1226
 Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
-Puschkinallee	1 -13044,800 -12922,762 -12811,533
+Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Geschwister-Scholl-Str.	1 -14215,-1687 -14151,-1656 -14115,-1678
 Friedrich-Ebert-Str.: Straßenbahntrasse, nur für Fußgänger bequem passierbar	3nocross -12719,-1661 -12755,-1585 -12773,-1544 -12795,-1499 -12833,-1365
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13733,-722 -13772,-623
@@ -672,9 +672,10 @@ Brücke mittlerweile gesperrt	2 -19183,7299 -19150,7320
 Prof.-Dr.-Helmert-Str.: Schranke	BNP:3 -7969,-1659
 (Kiezstr. - Wall am Kiez)	1 -13397,-1729 -13374,-1709
 Kiezstr.: Mittelstreifen	3nocross -13450,-1595 -13374,-1709 -13328,-1790
-Eisenhartstr.	1 -12625,-4 -12772,-295 -12821,-417
-Ruinenbergstr.	1 -13781,174 -13918,-164
+Eisenhartstr.	1 -12637,-8 -12779,-294 -12821,-417
+Ruinenbergstr.	1 -13795,176 -13918,-164
 Brandenburger Str.	1s:q3 -12784,-956 -12894,-977
+Nietnerstr.	2 -13855,1673 -13843,1668
 ###################################################################### 
 # elsewhere in Brandenburg
 #: by: grote energus: vvv
@@ -1143,6 +1144,7 @@ tragen (Treppe, ca. 50 Stufen)	0:50 -6934,14291
 #: note ^^^
 tragen (Treppe)	0:30 20673,7260
 tragen (Treppe, ca. 6 Stufen)	0:15 15488,8508
+tragen (Treppe, 50 Stufen)	0:50 -12328,1941
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
@@ -1293,6 +1295,7 @@ Drosselbartweg: Drängelgitter	BNP:3 14222,18666
 #: by: ^^^
 #: by: Naira (hgoerzig):
 Schranke (Thyssenstr. - Sittestr.)	BNP:3 5856,19204
+Schranke, kann leicht umfahren wergen	BNP:1 -13937,240
 #
 ############################################################################
 #
