@@ -810,3 +810,9 @@ An der Wuhlheide -> Verl. Rathenaustr.: Mittelstreifen	3::igndisp 19245,6379 192
 Kiautschoustr.	1 7020,14897 7199,14978
 Rochstr.: Barriere	3 10418,12922 10535,13006 10571,13034
 Rochstr.: Barriere	3 10571,13034 10535,13006 10418,12922
+verboten	3nocross::ignrte -12666,-1311 -12549,-1277 -12552,-1233
+Französische Str. -> Joliot-Curie-Str.: verboten	3::igndisp -12552,-1233 -12549,-1277 -12542,-1305
+Französische Str. -> Am Kanal: verboten	3::igndisp -12552,-1233 -12549,-1277 -12317,-1212
+Joliot-Curie-Str. -> Am Kanal: verboten	3::igndisp -12542,-1305 -12549,-1277 -12666,-1311
+Am Kanal -> Joliot-Curie-Str.: verboten	3::igndisp -12317,-1212 -12549,-1277 -12542,-1305
+Am Kanal -> Am Kanal: verboten	3::igndisp -12317,-1212 -12549,-1277 -12666,-1311

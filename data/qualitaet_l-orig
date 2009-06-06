@@ -409,10 +409,13 @@ Bertinistr.: Asphalt, einige Schlaglöcher	Q0- -12166,1384 -12149,1436 -12181,152
 Bertinistr.: schlechtes Kopfsteinpflaster	Q3+ -12232,1878 -12266,1893 -12335,1928
 (Uferweg): Betonplatten mit Steigung/Gefälle	Q2 -12204,1869 -12223,1911
 (Uferweg): wassergebundene Decke	Q1 -12223,1911 -12330,1974 -12424,2034 -12462,2139 -12460,2288
-Gr. Weinmeisterstr (Potsdam): mäßiger Asphalt	Q1 -12511,920 -12510,866 -12512,810 -12514,623 -12520,551 -12618,296
+Gr. Weinmeisterstr (Potsdam): etwas unebener Asphalt	Q0- -12511,920 -12510,866 -12512,810 -12514,623 -12520,551 -12618,296
 Gr. Weinmeisterstr (Potsdam): guter Asphalt	Q0 -12618,296 -12582,127 -12557,11
 (Große Weinmeisterstr. - Alleestr.): Asphalt	Q0 -12582,127 -12615,16 -12625,-4
 (Große Weinmeisterstr. - Pfingstberg): Parkweg	Q2 -12510,866 -12572,885 -12624,830 -12698,798 -12813,909 -12798,958 -12830,1011 -12796,1037
+Höhenweg: unebenes Kopfsteinpflaster	Q2- -12334,1324 -12365,1427
+Höhenweg: kleinteiliges Kopfsteinpflaster, OK	Q1 -12365,1427 -12421,1601
+Höhenweg: unbefestigte, teils sandige Fahrstraße	Q2- -12421,1601 -12432,1679
 Am Kanal (Potsdam): Kopfsteinpflaster, nördliche Fahrbahn bevorzugt nutzen	Q2 -12317,-1212 -12070,-1153 -12040,-1169
 Große Fischerstr. (Potsdam): Kopfsteinpflaster	Q2 -12040,-1169 -12011,-1273 -11981,-1390
 Kleine Fischerstr.: Kopfsteinpflaster	Q2 -12070,-1269 -12011,-1273
@@ -1201,7 +1204,11 @@ Schlaatzstr. - Horstweg: asphaltiert	Q0 -11487,-2373 -11425,-2384 -11431,-2425 -
 Horstweg - Stern: Parkweg	Q2 -10553,-2859 -10071,-3321 -9756,-3648 -9521,-3888 -9425,-3990
 Horstweg - Stern: meist mäßiger Asphalt	Q2 -9425,-3990 -9375,-4159 -9306,-4259
 Nuthe - Wetzlarer Str.: Asphalt	Q1 -9306,-4259 -9267,-4231 -9234,-4190 -9088,-3962
-Am Pfingstberg: mäßiges Kopfsteinpflaster (Bankette etwas besser)	Q2 -12334,1324 -12513,1400
+Am Pfingstberg: mäßiges Kopfsteinpflaster (Bankette etwas besser)	Q2;Q2- -12334,1324 -12513,1400
+#: note: von der S-Bahn aus gesehen
+Johannsenstr.: Asphalt	Q0 -11155,-2006 -11035,-2053
+#: note: von der S-Bahn aus gesehen
+Johannsenstr.: schlechtes Kopfsteinpflaster	Q3 -11035,-2053 -10737,-2011
 #: unverified_by: Thomas
 Stücken: Kopfsteinpflaster, teilweise Ausweichen auf Gehweg möglich	Q2 -11025,-18450 -11050,-18262 -11190,-18168
 #: by: Dominik vvv
@@ -1547,7 +1554,8 @@ Parkring (Paretz): mäßiges Kopfsteinpflaster, Sandbanketten	Q2 -25213,6477 -2534
 Menzelstr.: asphaltiert	Q0 -11246,665 -11018,348
 Bertha-von-Suttner-Str.: schlechtes Kopfsteinpflaster	Q3 -12435,-222 -12637,-292 -12772,-295
 Hebbelstr.: schlechtes Kopfsteinpflaster	Q3 -12637,-292 -12511,-75
-Hebbelstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ -12571,-581 -12621,-359 -12637,-292
+Hebbelstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ -12571,-581 -12621,-359
+Hebbelstr.: schlechtes Kopfsteinpflaster	Q3 -12621,-359 -12637,-292
 Eisenhartstr.: asphaltiert	Q0 -12821,-417 -12772,-295 -12625,-4
 Puschkinallee: glatte Pflasterung	Q1 -12812,371 -12812,271 -12862,-27
 Russische Kolonie: Asphalt	Q0 -13036,342 -12947,106 -12862,-27
@@ -1731,7 +1739,7 @@ Am Hinzenberg: Beton	Q0 -12708,-1928 -12894,-2111 -12946,-2119
 Am Hinzenberg: gute Pflasterung	Q0 -12708,-1928 -12678,-1812 -12669,-1768
 #: add_fragezeichen: die Rampe wird in Zukunft vielleicht durch eine Treppe ersetzt
 (Uferweg - Alter Markt): provisorische sandige Rampe	Q3 -12608,-1715 -12643,-1694
-Am Alten Markt: gepflastert	Q2 -12583,-1552 -12773,-1544
+Am Alten Markt: gepflastert	Q2+ -12583,-1552 -12773,-1544
 Schwertfegerstr.: teils schlechtes Kopfsteinpflaster	Q3 -12795,-1499 -12870,-1493
 Am Neuen Markt: mäßiges bis schlechtes Kopfsteinpflaster	Q2- -12882,-1565 -12870,-1493
 Am Neuen Markt: teils schlechtes Kopfsteinpflaster	Q3 -12870,-1493 -12865,-1462 -12913,-1451
@@ -1951,6 +1959,7 @@ Schwedt - Stolpe: Verbundsteinpflaster	Q0- 68439,72535 68391,72501 68269,72641 6
 Schwedt - Stolpe: Asphalt	Q0 68265,72438 68349,72340 68067,72125 67313,71155 66442,69849 65606,68549 65275,68170
 Lunow - Oderdeich: Asphalt	Q0 58669,58446 58735,58339 58961,58373 59242,58346 59649,58144
 Hohenwutzen - Hohensaaten [Radweg]: Asphalt	Q0 58512,49889 58517,50014 58572,50191 58630,50290 58682,50481 58918,50940 59296,51430 59613,51844 59631,51912 59684,51971 59735,51986
+(Im Französischen Quartier): glatt gepflastert	Q1 -12552,-1096 -12601,-1108
 ######################### User Contributions #################################
 #: by: Aimo Raasch: vvv
 Karl-Liebknecht-Str.: Asphalt	Q0 -10559,-1901 -10535,-1809 -10499,-1717 -10449,-1588 -10369,-1374 -10341,-1293 -10332,-1266 -10322,-1248 -10297,-1186 -10278,-1140 -10154,-828
@@ -2201,7 +2210,7 @@ Johann-Strauß-Platz: Asphalt	Q0 -9410,-815 -9318,-714
 Stubenrauchstr.: Asphalt	Q0 -7518,-1175 -7895,-1464
 Rudolf-Breitscheid-Str. [Bahnhofsvorfahrt]: Asphalt	Q0 -8112,-1512 -8100,-1575 -8023,-1565 -8038,-1495
 Baumgartenbrück (Geltow): rauer Asphalt mit Löchern 	Q2 -18025,-6370 -18410,-6286 -18966,-5945
-Kolonieweg: unbefestiger holpriger Weg	Q3 -12603,1443 -12633,1484 -12928,1646
+Kolonieweg: unbefestiger holpriger Weg	Q2- -12603,1443 -12633,1484 -12928,1646
 Buch - Schwanebeck: sehr guter Asphalt	Q0 17915,25251 17967,25231 18562,24975 19395,24634 19658,24589
 Pinnow: asphaltiert	Q0 56231,75134 55703,74309 55594,74156 55501,73991
 Bahnhofstr.: Betonstraße	Q0 69402,74134 69378,74082 69376,73996 69369,73845 69236,73732 69085,73607 69061,73583

@@ -143,6 +143,7 @@ Thomas-Müntzer-Damm: Radweg (Verbundsteinpflaster)	RW -840,-185 -551,-731 -502,-
 Am Kanal: Radspur	RW4;RW4 -12317,-1212 -12549,-1277 -12666,-1311
 Am Kanal: Radspur	RW4; -12666,-1311 -12718,-1327
 Am Kanal: Radweg	RW2; -12718,-1327 -12839,-1342
+Am Kanal: Radweg	RW; -12833,-1365 -12718,-1327
 #: unverified_by: http://www.ruppin.de/rheinsberg/freizeit/sport/radwege.html vvv
 Radweg zwischen Rheinsberg und Menz (mit Umweg am Roofensee)	RW -24815,76635 -23305,77059 -22937,77020 -22504,76981 -21965,77030 -21728,77161 -21621,77313 -20227,77714 -19875,77881 -19494,78080 -19300,78146 -18544,78020 -17592,77812 -16837,78312 -15379,77129
 Radweg zwischen Zechlinerhütte und Prebelow	RW -27053,82717 -26912,83088 -26693,83080 -26520,83231 -26098,84240 -26120,84667 -26316,84900
@@ -316,6 +317,8 @@ Radspur	RW3;RW3 -13199,1691 -13133,1698
 Brüssow - Wollschow: asphaltierter Zweirichtungsradweg auf der südlichen Seite	RW2;RW8 58357,111700 60639,112544 61502,112547 61648,112574
 Asphaltiert	RW2;RW8 69990,78244 70010,78347
 Asphaltiert	RW1;RW9 70010,78347 70001,78510
+	RW; -11822,-1874 -12110,-1862 -12247,-1858 -12420,-1853
+	RW2; -12420,-1853 -12493,-1896
 ######################### User Contributions #################################
 #: by: Eckart Seher:
 Industriestr. (Dahlwitz-Hoppegarten): gegenläufiger Radweg, rotes Betonpflaster	RW 25938,11837 26042,11798 26222,11726 26555,11601 26794,11513 26880,11479
