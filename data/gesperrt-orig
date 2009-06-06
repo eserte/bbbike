@@ -47,8 +47,8 @@ Halenseestr.	1 2112,10488 2069,10330 2268,9976 2300,9883 2410,9777
 # südöstlicher Teil
 Halenseestr.	1 2382,9722 2340,9758 2277,9801
 # nordwestlicher Teil
-Halenseestr.	1 1957,10426 1919,10568 1928,10728
-Rasthof Avus	1 1894,10390 1904,10353 1866,10315 1736,10293 1716,10324 1842,10413 1878,10409 1894,10390
+Halenseestr.	1 1951,10435 1901,10566 1928,10728
+Rasthof Avus	1 1876,10397 1882,10356 1847,10323 1723,10289 1700,10339 1803,10419 1849,10418 1876,10397
 Breitenbachplatz (Westseite)	1 4292,6558 4218,6583 4111,6651 4089,6668 4021,6729 3947,6814
 Breitenbachplatz (Ostseite)	1 4000,6852 4084,6766 4125,6728 4153,6703 4250,6625 4292,6558
 Inselstr. Schwanenwerder	1 -5310,4216 -5393,4211 -5453,4274 -5471,4412 -5442,4526 -5386,4539 -5341,4511 -5358,4404 -5356,4296 -5310,4216
@@ -647,7 +647,6 @@ Benkertstr.	1 -12693,-827 -12712,-734 -12730,-627
 Hans-Thoma-Str.	1 -12219,-726 -12262,-612 -12306,-496
 Behlertstr.	1 -12265,-418 -12194,-463 -12106,-699 -12045,-757
 Hebbelstr.	1 -12621,-359 -12571,-581
-Platz der Einheit	1 -12755,-1131 -12718,-1327
 Potsdamer Damm	2 -5736,-3629 -6119,-3907 -6426,-4014
 Nuthestr.	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10321,-2800 -10547,-2606 -10898,-2375 -11070,-2123 -11142,-1675 -11226,-1445 -11356,-1317
 Rudolf-Moos-Str. - Nuthestr.	2 -10281,-2690 -10321,-2800
@@ -778,7 +777,7 @@ Am Poetensteig, Gramzow	1s:q1 50043,90187 50107,89717
 #: by: Juliane Bölker:
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,12513
 Behrenstr./Bebelplatz	1s:q3 9801,12245 9743,12239 9700,12234 9626,12227
-Halenseestr.	1s:q2 2277,9801 2167,10004 2121,10089 1988,10328 1957,10426
+Halenseestr.	1s:q2 2277,9801 2167,10004 2121,10089 1988,10328 1951,10435
 Zeltinger Platz	1s:q3 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
 Sewanstr. - Balatonstr.	1s:q3 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s:q2 18377,9366 18490,9387
@@ -1322,9 +1321,9 @@ Am Pankepark: z.Zt. noch Baustraße, Fertigstellung um 2011-01-01	2:inwork 8290,1
 #
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-#: last_checked: 2009-03-07
+#: last_checked: 2009-06-05
 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12719,-1661 -12755,-1585 -12773,-1544
-#: last_checked: 2009-03-07
+#: last_checked: 2009-06-05
 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12795,-1499
 #: by: http://www.maerkischeallgemeine.de/cms/beitrag/10670763/60889/, auch Tagesspiegel - Märkische Schlösser - Tour 1
 Brücke über den Torfgraben/Phöben gesperrt, Neubau voraussichtlich bis 2006-12-31	2:inwork -25539,2641 -25453,2418
