@@ -81,7 +81,7 @@ if (!-d $index_dir) {
 my $index_file = $index_dir . '/osm_nodes_lonlat.db' . ($DB_File::db_version eq '' || $DB_File::db_version <= 1 ? '' : int($DB_File::db_version));
 
 tie my %nodes_lonlat, 'DB_File', $index_file, O_RDONLY, 0644
-    or die "Cannot tie '$index_file': $!";
+    or die "Cannot tie '$index_file' ($!), maybe you need to run cache_osm_nodes first?\n";
 
 my $search_term = shift @ARGV;
 usage if !defined $search_term;
