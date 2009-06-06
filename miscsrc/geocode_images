@@ -9,7 +9,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
 
 use Cwd qw(realpath);
 use File::Spec;
@@ -33,6 +33,7 @@ my $gps_data_dir = "$FindBin::RealBin/../misc/gps_data";
 my $thumbnail_dir = "/tmp/thumbnails";
 my $clock_gps;
 my $clock_camera;
+my $clock_adjust_file;
 my $anchor;
 my $thumbnail_size = 50;
 my $converter = "best";
@@ -40,9 +41,13 @@ my $recreate_thumbnails;
 my $date_index_file;
 my $date_db;
 my $v;
+my $debug;
 my $relative_paths;
 my $out_file;
 my $max_delta = 180;
+
+my $lax_iso_date_qr = qr{^(\d{4})\D*(\d{2})\D*(\d{2})T(\d{2})\D(\d{2})\D(\d{2})};
+my $clock_qr        = qr{^\d{1,2}:\d{2}(:\d{2})?};
 
 sub usage (;$) {
     my $msg = shift;
@@ -50,11 +55,11 @@ sub usage (;$) {
     die <<EOF;
 usage: $0
           [-gpsdatadir directory] [-thumbnaildir directory]
-          [-clockgps HH:MM:SS -clockcamera HH:MM:SS]
+	  [-clockadjustfile file | -clockgps HH:MM:SS -clockcamera HH:MM:SS]
 	  [-anchor nw|n|ne|e|se|s|sw] [-thumbnailsize pixels]
           [-converter Image::GD::Thumbnail|ImageMagick|ImageMagick+exiftool|best|fast]
 	  [-recreatethumbnails] [-rel|-relativepaths] [-o file]
-          [-v] image ...
+          [-v] [-debug] image ...
 EOF
 }
 
@@ -63,6 +68,7 @@ GetOptions("gpsdatadir=s" => \$gps_data_dir,
 	   "thumbnaildir=s" => \$thumbnail_dir,
 	   "clockgps=s" => \$clock_gps,
 	   "clockcamera=s" => \$clock_camera,
+	   "clockadjustfile=s" => \$clock_adjust_file,
 	   "anchor=s" => \$anchor,
 	   "thumbnailsize=i" => \$thumbnail_size,
 	   "converter=s" => \$converter,
@@ -70,6 +76,7 @@ GetOptions("gpsdatadir=s" => \$gps_data_dir,
 	   "rel|relativepaths!" => \$relative_paths,
 	   "o=s" => \$out_file,
 	   "v!" => \$v,
+	   "debug" => \$debug,
 	  ) or usage;
 
 my @images = @ARGV;
@@ -82,21 +89,42 @@ if (!-d $thumbnail_dir) {
     die "Cannot create thumbnail directory <$thumbnail_dir>: $!";
 }
 
+my @cam_delta_mapping;
+if ($clock_adjust_file) {
+    undef $clock_gps;
+    undef $clock_camera;
+    open my $fh, $clock_adjust_file
+	or die "Can't open file $clock_adjust_file: $!";
+    while(<$fh>) {
+	chomp;
+	next if m{^\s*\#};
+	next if m{^\s*$};
+	my($from, $to, $gps, $camera) = split /\s+/;
+	my $from_epoch = do {
+	    my($Y,$M,$D,$h,$m,$s) = $from =~ $lax_iso_date_qr
+		or die "Cannot parse date '$from' as ISO date";
+	    timelocal($s,$m,$h,$D,$M-1,$Y-1900);
+	};
+	my $to_epoch = do {
+	    my($Y,$M,$D,$h,$m,$s) = $to   =~ $lax_iso_date_qr
+		or die "Cannot parse date '$to' as ISO date";
+	    timelocal($s,$m,$h,$D,$M-1,$Y-1900);
+	};
+	push @cam_delta_mapping, [$from_epoch, $to_epoch, get_cam_delta($gps, $camera)];
+    }
+}
+
 my $cam_delta = 0;
 if ($clock_gps || $clock_camera) {
     for my $check ([\$clock_gps,    "-clockgps"],
 		   [\$clock_camera, "-clockcamera"],
 		  ) {
 	my($varref, $opt) = @$check;
-	if ($$varref !~ m{^\d{1,2}:\d{2}(:\d{2})?}) {
+	if ($$varref !~ $clock_qr) {
 	    die "$opt must be in format HH:MM or HH:MM:SS";
 	}
     }
-    my($gps_H, $gps_M, $gps_S) = split /:/, $clock_gps;
-    my($cam_H, $cam_M, $cam_S) = split /:/, $clock_camera;
-    my $gps_seconds = $gps_H*60*60 + $gps_M*60 + ($gps_S||0);
-    my $cam_seconds = $cam_H*60*60 + $cam_M*60 + ($cam_S||0);
-    $cam_delta = $cam_seconds - $gps_seconds;
+    $cam_delta = get_cam_delta($clock_gps, $clock_camera);
 }
 
 my @converter;
@@ -238,7 +266,8 @@ sub get_image_location {
     }
 
     my $epoch = timelocal($S,$M,$H,$d,$m-1,$y-1900);
-    $epoch -= $cam_delta;
+    my $this_cam_delta = get_matching_cam_delta($epoch) || $cam_delta;
+    $epoch -= $this_cam_delta;
     my @l = localtime $epoch;
     ($S,$M,$H,$d,$m,$y) = @l;
     $y+=1900;
@@ -532,6 +561,31 @@ sub create_thumbnail_ImageMagick {
     } else {
 	return $dest;
     }
+}
+
+sub get_cam_delta {
+    my($clock_gps, $clock_camera) = @_;
+
+    my($gps_H, $gps_M, $gps_S) = split /:/, $clock_gps;
+    my($cam_H, $cam_M, $cam_S) = split /:/, $clock_camera;
+    my $gps_seconds = $gps_H*60*60 + $gps_M*60 + ($gps_S||0);
+    my $cam_seconds = $cam_H*60*60 + $cam_M*60 + ($cam_S||0);
+    $cam_delta = $cam_seconds - $gps_seconds;
+    
+    $cam_delta;
+}
+
+sub get_matching_cam_delta {
+    my($epoch) = @_;
+    for my $def (@cam_delta_mapping) {
+	my($from_epoch, $to_epoch, $this_cam_delta) = @$def;
+	if ($from_epoch <= $epoch && $epoch <= $to_epoch) {
+	    warn "Get cam delta=$this_cam_delta for $epoch...\n" if $debug;
+	    return $this_cam_delta;
+	}
+    }
+    warn "Found NO matching cam delta for $epoch...\n" if $debug;
+    undef;
 }
 
 # REPO BEGIN
