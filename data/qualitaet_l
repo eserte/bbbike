@@ -380,8 +380,10 @@ Bertinistr.: schlechtes Kopfsteinpflaster	Q3 -12232,1878 -12266,1893 -12335,1928
 (Uferweg): wassergebundene Decke	Q1 -12223,1911 -12330,1974 -12424,2034 -12462,2139 -12460,2288
 Gr. Weinmeisterstr (Potsdam): etwas unebener Asphalt	Q0 -12511,920 -12510,866 -12512,810 -12514,623 -12520,551 -12618,296
 Gr. Weinmeisterstr (Potsdam): guter Asphalt	Q0 -12618,296 -12582,127 -12557,11
-(Große Weinmeisterstr. - Alleestr.): Asphalt	Q0 -12582,127 -12615,16 -12625,-4
+(Große Weinmeisterstr. - Alleestr.): Asphalt	Q0 -12582,127 -12620,18 -12637,-8
 (Große Weinmeisterstr. - Pfingstberg): Parkweg	Q2 -12510,866 -12572,885 -12624,830 -12698,798 -12813,909 -12798,958 -12830,1011 -12796,1037
+Puschkinallee: schlechtes Kopfsteinpflaster	Q3 -12815,554 -12827,629 -12868,738 -12912,783
+Puschkinallee: Asphalt	Q0 -12912,783 -13042,807
 Höhenweg: unebenes Kopfsteinpflaster	Q2 -12334,1324 -12365,1427
 Höhenweg: kleinteiliges Kopfsteinpflaster, OK	Q1 -12365,1427 -12421,1601
 Höhenweg: unbefestigte, teils sandige Fahrstraße	Q2 -12421,1601 -12432,1679
@@ -398,26 +400,28 @@ Mangerstr. (Potsdam): schlechtes Kopfsteinpflaster, aber mit besseren Banketten	
 Wilhelm-Leuschner-Str.: schlechtes Kopfsteinpflaster (Potsdam)	Q3 -10059,374 -10097,200
 Gutenbergstr. (Potsdam): schlechtes Kopfsteinpflaster	Q3 -12886,-869 -13025,-901 -13158,-930 -13264,-952 -13433,-991
 Gutenbergstr. (Potsdam): mäßiger Beton	Q1 -13433,-991 -13553,-1020 -13576,-1026
-Jägerstr. (Potsdam): mäßiges Kopfsteinpflaster, südlich der Brandenburger Str. eher schlechter	Q2 -13067,-706 -13062,-725 -13025,-901 -13005,-1002 -12984,-1110
+Jägerstr. (Potsdam): mäßiges Kopfsteinpflaster, südlich der Brandenburger Str. eher schlechter	Q2 -13067,-706 -13058,-740 -13025,-901 -13005,-1002 -12984,-1110
 Dortustr. (Potsdam): Kopfsteinpflaster	Q2 -13187,-1150 -13173,-1039 -13158,-930 -13140,-766 -13137,-728
 Bäckerstr. (Potsdam): Asphalt	Q0 -13314,-1226 -13287,-1231 -13203,-1246
 Lindenstr. (Potsdam): Kopfsteinpflaster	Q2 -13231,-763 -13236,-797 -13264,-952 -13289,-1071 -13305,-1176 -13314,-1226 -13350,-1403
 Lindenstr. (Potsdam): Asphalt	Q0 -13350,-1403 -13366,-1499
 Lindenstr. (Potsdam): Gehwegpflaster	Q0 -13366,-1499 -13375,-1546
 Spornstr. (Potsdam): Kopfsteinpflaster	Q2 -13350,-1403 -13220,-1416
-Birkenstr. (Potsdam): mäßiger Asphalt	Q1 -12615,16 -12723,80
+Birkenstr. (Potsdam): mäßiger Asphalt	Q1 -12620,18 -12723,80
 Reiterweg (Potsdam): Gehwegplatten	Q1 -12961,-136 -12846,-164
 Schlegelstr. (Potsdam): Asphalt	Q0 -13662,-324 -13645,-266 -13601,-164 -13564,-111 -13520,-28 -13436,84
-Ruinenbergstr. (Potsdam): Kopfsteinpflaster	Q2 -13795,176 -13918,-164 -13881,-185
+Ruinenbergstr. (Potsdam): Kopfsteinpflaster	Q2 -13794,178 -13918,-164 -13881,-185
 An der Einsiedelei (Potsdam): Asphalt	Q0 -13645,-266 -13715,-214 -13807,-208 -13881,-185
 Kurt-v.-Plettenberg-Str. (Potsdam): Asphalt, an den Kreuzungen kurze Kopfsteinpflasterabschnitte	Q0 -13520,-28 -13581,-10 -13662,12 -13744,35
+(Jägerallee): Beton	Q1 -13221,-718 -13330,-725 -13371,-639
+Hessestr.: Asphalt mit Unebenheiten	Q1 -12664,399 -12651,453 -12741,585 -12815,554
 Schmiedegasse: Asphalt	Q0 -13601,-164 -13627,-150 -13581,-10
 Reitbahnstr.: Asphalt	Q0 -13662,12 -13680,-77
 Sattlerstr.: Asphalt	Q0 -13744,35 -13807,-208
 Johann-Goercke-Allee: Asphalt	Q0 -13601,-164 -13475,-141 -13343,-97
 Moritz-von-Egidy-Str.: gutes Kopfsteinpflaster	Q1 -13450,-211 -13475,-141 -13499,-85
 An den Gärten: Asphalt	Q0 -13499,-85 -13432,1
-Brentanoweg: Asphalt	Q0 -13406,-396 -13581,-307 -13645,-266
+Brentanoweg: Asphalt	Q0 -13406,-396 -13452,-358 -13581,-307 -13645,-266
 Parkstr.: Asphalt	Q0 -13948,-564 -13880,-431 -13662,-324
 (?) (Werder): Kopfsteinpflaster	Q2 -22206,-1693 -21937,-1808 -21679,-1995
 Wildpark (F2.2): Waldweg	Q1 -18097,-2054 -17915,-2094 -16966,-2096 -16603,-2116 -16562,-2010 -16022,-1729
@@ -433,9 +437,10 @@ Griebnitzstr. (Potsdam): Waldweg	Q1 -9432,-57 -9399,-139
 Albert-Einstein-Str. (Potsdam): Kopfsteinpflaster	Q2 -12362,-2280 -12327,-2277
 Albert-Einstein-Str. (Potsdam): asphaltiert, im Wohngebiet teils mäßige Stellen, im Wald sehr gut	Q0 -12327,-2277 -12335,-2571 -12317,-2637 -12219,-2760 -12222,-2932
 Schloßstr. (Potsdam): Kopfsteinpflaster	Q2 -12923,-1558 -12882,-1565 -12755,-1585
-Johannes-Lepsius-Str.: Asphalt	Q0 -13240,32 -13225,179 -13209,260 -13244,281
-Johannes-Lepsius-Str.: Kleinkopfsteinpflaster	Q1 -13244,281 -13203,434
-Eduard-Engel-Str.: gutes Kopfsteinpflaster	Q1 -13367,66 -13345,170
+Johannes-Lepsius-Str.: Asphalt	Q0 -13240,32 -13225,179 -13209,260
+Johannes-Lepsius-Str.: Verbundsteinpflaster	Q0 -13209,260 -13244,281
+(Johannes-Lepsius-Str. - Kiepenheuerallee): Asphalt	Q0 -13244,281 -13203,434
+Eduard-Engel-Str.: gutes Kopfsteinpflaster	Q1 -13367,66 -13344,160 -13322,259
 Betonplatten	Q2 -27127,5270 -26196,4769 -25787,3228 -25669,2939 -25664,2840 -25662,2746
 Feldweg	Q2 -25662,2746 -25539,2641 -25453,2418 -25110,2303
 am Havellandkanal: Feldweg, Wurzeln	Q3 -24240,6075 -24325,6138 -23186,7432
@@ -780,11 +785,36 @@ Kopfsteinpflaster	Q2 -19190,7296 -19187,6709 -19514,6643
 	Q0 1346,-762 1276,-1268 1222,-1732 1137,-1989 956,-2890 1006,-3203 1053,-3343 1132,-3612
 Ruhlsdorf - Güterfelde: mäßiger/schlechter Feldweg	Q2 1132,-3612 -256,-3961 -1812,-4210 -2493,-4385 -2534,-4606
 	Q0 2471,-6025 2031,-5468 1663,-5427 296,-5328 -1809,-4792 -2534,-4606 -3368,-4430 -3418,-4525 -3446,-4709 -3596,-4687 -3796,-4612 -3871,-4437 -4457,-4197 -4661,-4172 -4819,-4154 -5736,-3629 -6277,-3348 -6553,-3235 -6810,-3151 -7060,-3124 -7487,-3097 -7497,-3096 -7878,-3090 -8005,-3056 -8137,-2997 -8283,-2917 -8361,-2875 -8417,-2867 -8500,-2856
-	Q0 -13036,342 -13062,535 -13058,702 -13044,800 -13038,856 -13039,894 -13089,1135 -13108,1278 -13113,1356 -13115,1379 -13125,1508 -13133,1698 -13134,1758 -13141,1933 -13152,2169 -13375,2950 -13387,2987 -13567,3403 -13784,3900 -13778,4492 -13690,5212 -13578,5396 -13261,5566 -13143,5587 -12865,5567 -12181,5611 -10923,6318 -10206,6756 -10090,6868 -9996,7037 -9928,7459 -8634,9626 -8628,9803 -8677,10083 -8697,10653 -8906,11139 -9262,11890 -9524,12215
-	Q0 -13561,117 -13486,385 -13456,500 -14046,684
-	Q0 -14238,293 -14046,684 -13961,836 -13903,941 -13853,1018 -13804,1088
-	Q0 -13804,1088 -13907,1223 -13890,1251 -13801,1414 -13840,1443 -13879,1469 -13923,1499 -14016,1563
-Kirschallee: Asphalt	Q0 -14659,412 -14607,607 -14542,710 -14450,858 -14363,1008 -14305,1107 -14224,1240 -14016,1563 -13962,1711 -13944,1764 -13854,2025 -13846,2489
+	Q0 -13036,342 -13062,535 -13058,702 -13042,807 -13038,856 -13039,894 -13089,1135 -13108,1278 -13113,1356 -13115,1379 -13125,1508 -13133,1698 -13134,1758 -13141,1933 -13152,2169 -13375,2950 -13387,2987 -13567,3403 -13784,3900 -13778,4492 -13690,5212 -13578,5396 -13261,5566 -13143,5587 -12865,5567 -12181,5611 -10923,6318 -10206,6756 -10090,6868 -9996,7037 -9928,7459 -8634,9626 -8628,9803 -8677,10083 -8697,10653 -8906,11139 -9262,11890 -9524,12215
+	Q0 -13561,117 -13529,226 -13507,308 -13486,385 -13456,500 -13546,527 -14053,677
+Erich-Mendelsohn-Allee: Asphalt	Q0 -14235,298 -14216,372 -14198,449 -14174,486 -14053,677 -13994,773 -13995,773 -13961,836 -13903,941 -13853,1018 -13804,1088 -13772,1139 -13695,1276
+Hermann-Mattern-Promenade: Asphalt	Q0 -14216,721 -14131,858 -14094,917 -14053,985 -13985,1096 -13914,1218 -13893,1255 -13841,1341 -13795,1420
+(Hermann-Mattern-Promenade - David-Gilly-Str.): Verbundsteinpflaster	Q0 -14216,721 -14311,571
+Herta-Hammerbacher-Str.: Asphalt	Q0 -13853,1018 -13985,1096 -14054,1137 -14115,1174
+Herta-Hammerbacher-Str.: Verbundsteinpflaster	Q0 -14115,1174 -14224,1240
+Paul-Engelhard-Str.: Asphalt	Q0 -13967,1282 -14054,1137 -14134,1008 -14197,902 -14287,741
+Fritz-Encke-Str.: Asphalt	Q0 -13766,1402 -13795,1420 -13838,1445 -13879,1469 -13923,1499 -14016,1563
+Fritz-Encke-Str.: wassergebundene Decke	Q1 -13766,1402 -13655,1339
+Walter-Funcke-Str.: Verbundsteinpflaster	Q0 -14199,1033 -14134,1008 -14053,985 -13903,941
+Hermann-Göritz-Str.: Verbundsteinpflaster	Q0 -13961,836 -14094,917
+Salzmannweg: Verbundsteinpflaster	Q0 -13766,1402 -13770,1381 -13740,1339 -13695,1276
+Max-Wundel-Str.: Verbundsteinpflaster	Q0 -13740,1339 -13807,1295 -13774,1230 -13832,1195
+Heinrich-Zeininger-Str.: Verbundsteinpflaster	Q0 -13772,1139 -13832,1195 -13893,1255 -14003,1363
+Hermann-Mächtig-Str.: Asphalt	Q0 -14094,1440 -14014,1343 -13967,1282 -13914,1218 -13804,1088
+Melchior-Bauer-Str.: Verbundsteinpflaster	Q0 -14363,1008 -14259,937
+Melchior-Bauer-Str.: Asphalt	Q0 -14259,937 -14197,902 -14131,858 -14065,818 -13995,773
+Erwin-Barth-Str.: Asphalt	Q0 -14053,677 -14135,699 -14216,721 -14287,741 -14365,763 -14483,796
+Kirschallee: Asphalt	Q0 -14676,418 -14607,607 -14542,710 -14483,796 -14363,1008 -14305,1107 -14224,1240 -14135,1375 -14094,1440 -14016,1563 -13962,1711 -13944,1764 -13854,2025 -13846,2489
+David-Gilly-Str.: Asphalt	Q0 -14311,571 -14374,458 -14435,357
+Alexander-Klein-Str.: Asphalt	Q0 -14174,486 -14311,571 -14435,643 -14542,710
+Dennis-Gabor-Str.: kleinteiliges Kopfsteinpflaster	Q1 -14435,643 -14497,537 -14539,458
+(Dennis-Gabor-Str. - Pappelallee): kleinteiliges Kopfsteinpflaster	Q1 -14539,458 -14534,434 -14547,388
+Ludwig-Boltzmann-Str.: kleinteiliges Kopfsteinpflaster	Q1 -14607,607 -14497,537 -14374,458
+August-Bonnes-Str.: Asphalt	Q0 -13794,178 -13763,285 -13741,368 -13719,452
+August-Bonnes-Str.: Verbundsteinpflaster	Q0 -13719,452 -13707,506
+Jakob-von-Gundling-Str.: Asphalt	Q0 -13763,285 -13529,226
+Bartholomäus-Neumann-Str.: Asphalt	Q0 -13741,368 -13507,308
+Carl-Christian-Horvath-Str.: Asphalt	Q0 -13719,452 -13486,385
 Nietnerstr.: unbefestigter Weg	Q2 -13962,1711 -13855,1673
 Nietnerstr.: Verbundsteinpflaster	Q0 -13843,1668 -13796,1652 -13748,1636
 	Q0 -13929,2548 -13375,2950
@@ -1311,7 +1341,7 @@ Grillparzerstr.: Kopfsteinpflaster	Q2 -14128,-1955 -14120,-2109
 Hermann-Elflein-Str.: Kopfsteinpflaster	Q2 -13468,-847 -13461,-870 -13433,-991 -13410,-1101 -13392,-1196
 Benkertstr.: Kopfsteinpflaster	Q2 -12730,-627 -12712,-734 -12693,-827
 Hegelallee (Nebenfahrbahn): Kopfsteinpflaster	Q2 -13590,-912 -13461,-870 -13236,-797
-Hegelallee (Nebenfahrbahn): schlechtes Kopfsteinpflaster	Q3 -13236,-797 -13140,-766 -13062,-725 -12911,-696
+Hegelallee (Nebenfahrbahn): schlechtes Kopfsteinpflaster	Q3 -13236,-797 -13140,-766 -13058,-740 -12911,-696
 Am Templiner See: Asphalt	Q0 -14359,-2142 -14411,-2180
 Schafgrabenbrücke und Zufahrt: Holzbohlen	Q1 -14411,-2180 -14400,-2221 -14416,-2231
 Am Templiner See: wassergebundene Decke	Q1 -14416,-2231 -14585,-2338
@@ -1429,11 +1459,11 @@ Mützlitz: gutes Kopfsteinpflaster	Q1 -50578,15920 -50493,15837 -50268,15901
 Barnewitz - Gortz: rauher Asphalt	Q0 -43321,16508 -42279,15770 -41751,14811 -41852,14012 -41998,13287 -41718,12885 -41584,12251 -41416,12081 -41419,11950 -41285,11322
 Parkring (Paretz): mäßiges Kopfsteinpflaster, Sandbanketten	Q2 -25213,6477 -25341,6386 -25444,6326 -25470,6372 -25482,6505 -25537,6616
 Menzelstr.: asphaltiert	Q0 -11246,665 -11018,348
-Bertha-von-Suttner-Str.: schlechtes Kopfsteinpflaster	Q3 -12435,-222 -12637,-292 -12772,-295
+Bertha-von-Suttner-Str.: schlechtes Kopfsteinpflaster	Q3 -12435,-222 -12637,-292 -12779,-294
 Hebbelstr.: schlechtes Kopfsteinpflaster	Q3 -12637,-292 -12511,-75
 Hebbelstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 -12571,-581 -12621,-359
 Hebbelstr.: schlechtes Kopfsteinpflaster	Q3 -12621,-359 -12637,-292
-Eisenhartstr.: asphaltiert	Q0 -12821,-417 -12772,-295 -12625,-4
+Eisenhartstr.: asphaltiert	Q0 -12821,-417 -12779,-294 -12637,-8
 Puschkinallee: glatte Pflasterung	Q1 -12812,371 -12812,271 -12862,-27
 Russische Kolonie: Asphalt	Q0 -13036,342 -12947,106 -12862,-27
 Russische Kolonie: kleinteiliges Kopfsteinpflaster	Q1 -13091,-8 -13068,-115
@@ -1540,10 +1570,12 @@ Neuhof - Sommersdorf: querliegende Betonplatten, an den Rändern Längsplatten	Q1 
 Weinbergstr. (Potsdam): Asphalt	Q0 -13815,-749 -13733,-722 -13519,-625 -13257,-512
 Mühlenbergweg (Potsdam): Pflaster	Q2 -13733,-722 -13772,-623 -13784,-537
 Gregor-Mendel-Str. (Potsdam): Kopfsteinpflaster, OK	Q1 -14034,-571 -13948,-564 -13784,-537 -13693,-528
-Gregor-Mendel-Str. (Potsdam): Asphalt	Q0 -13693,-528 -13596,-508 -13415,-506 -13257,-512 -13182,-515
+Gregor-Mendel-Str. (Potsdam): Asphalt, leicht uneben	Q0 -13693,-528 -13596,-508 -13415,-506 -13257,-512
+Gregor-Mendel-Str. (Potsdam): Asphalt	Q0 -13257,-512 -13182,-515
 Schlegelstr. (Potsdam): Asphalt	Q0 -13693,-528 -13662,-324
 Tieckstr. (Potsdam): Asphalt	Q0 -13596,-508 -13581,-307
 Brentanoweg (Potsdam): Asphalt	Q0 -13415,-506 -13406,-396
+Ulanenweg (Potsdam): Asphalt	Q0 -13155,-379 -13285,-360 -13311,-365 -13415,-350 -13452,-358
 (Schillerstr. - Fähre): Pfad	Q2 -14236,-2125 -14202,-2232 -14107,-2278
 (Auf dem Kiewitt - Fähre): wassergebundene Decke	Q1 -14069,-2227 -14107,-2278
 Haußmannstr.: Kopfsteinpflaster	Q2 47711,123382 47955,123488
@@ -1695,7 +1727,7 @@ Pudagla - Ückeritz: Deichweg, Schotter, einige leicht sandige Stellen	Q2 50855,1
 Bendastr.: Kopfsteinpflaster	Q2 -10235,-1916 -10267,-1759
 Ferdinandshof: Kopfsteinpflaster	Q2 40377,139911 40345,140009 40522,140522 40551,140642 40624,140770
 Beyerstr.: asphaltiert	Q0 -12812,271 -12618,296
-Kleine Weinmeisterstr.: Kopfsteinpflaster	Q2 -12618,296 -12655,385 -12717,440 -12807,441
+Kleine Weinmeisterstr.: Kopfsteinpflaster	Q2 -12618,296 -12664,399 -12717,440 -12807,441
 Persiusstr.: asphaltiert	Q0 -12520,551 -12673,613
 Glumestr.: glattes Kopfsteinpflaster, einige Unebenheiten	Q1 -12514,623 -12392,612 -12332,585
 Leistikowstr.: Asphalt	Q0 -12512,810 -12302,718
@@ -2061,7 +2093,7 @@ Marquardt: Asphalt	Q0 -18184,4168 -18385,4346 -18371,4555
 (Pfad am Sacrow-Paretzer Kanal): wassergebundene Decke, teilweise nur Rasen	Q2 -15034,3150 -15047,3330 -15211,3351 -15330,3531 -15464,3624 -15775,3702 -16138,3692
 (Sacrow-Paretzer Kanal - Gutsgarten): zweispuriger Betonplattenweg	Q2 -16138,3692 -16279,3292
 Driftweg - entlang der Eisenbahnstrecke: wassergebundene Decke	Q1 -18908,5040 -18794,5024 -18743,4789 -18722,4681
-Graf-von-Schwerin-Str.: Kopfsteinpflaster	Q1 -13067,1506 -13084,1679 -13087,1696
+Graf-von-Schwerin-Str.: Kopfsteinpflaster	Q1 -13125,1508 -13067,1506 -13084,1679 -13087,1696
 Graf-von-Schwerin-Str.: Asphalt	Q0 -13087,1696 -13087,1746 -13092,1930
 Friedrich-Klausing-Str.: Kopfsteinpflaster	Q1 -12960,1684 -12961,1746 -13087,1746
 Fritz-von-der-Lancken-Str.: Asphalt	Q0 -13141,1933 -13092,1930 -13005,1933
@@ -2259,6 +2291,11 @@ Asphalt	Q0 -6763,61808 -6547,61759
 Grenzallee: wassergebundene Decke	Q1 -13854,2025 -14044,2122
 (Grenzallee - Feldflur): wassergebundene Decke	Q1 -14044,2122 -14100,2144 -14305,2184
 Stechlinweg: Verbundsteinpflaster	Q0 -13945,217 -13937,240 -13899,388
+Orville-Wright-Str.: Asphalt	Q0 -13843,1668 -13879,1577 -13923,1499 -13971,1415 -14003,1363 -14014,1343 -14115,1174 -14199,1033 -14259,937 -14365,763
+Friedrich-Kunert-Weg: Verbundsteinpflaster	Q0 -13781,1772 -13760,1765 -13714,1747
+Theodor-Echtermeyer-Str.: Verbundsteinpflaster	Q0 -13760,1765 -13796,1652 -13824,1561 -13879,1469
+Fintelmannstr.: Verbundsteinpflaster	Q0 -13714,1747 -13748,1636 -13779,1544 -13838,1445
+Gustav-Meyer-Str.: Verbundsteinpflaster	Q0 -13879,1577 -13824,1561 -13779,1544
 Am Kanal: Sandweg (Oranienburg)	Q3 -2287,37260 -2189,37248 -2173,37226 -2151,37206
 Am Kanal: Sandweg (Oranienburg)	Q3 -2318,37181 -2218,37179 -2173,37226
 Birkenallee: Betonstr. (Oranienburg)	Q1 -760,35601 -854,35612 -876,35614 -1075,35546 -1196,35510

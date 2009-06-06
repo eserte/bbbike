@@ -1319,15 +1319,7 @@ userdel	q4::inwork 9126,12413 9345,12443
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1244239200,
-         'text' => 'L 303 Umgehungsstraße OD Eggersdorf, Krz. E.-Thälmann-Str. Deckenerneuerung Vollsperrung 25.05.2009-05.06.2009 ',
-         'from' => 1243116000,
-         'id' => 1681,
-         'data' => 'userdel	q4::inwork 38771,14926 38637,14790
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1245103200,
