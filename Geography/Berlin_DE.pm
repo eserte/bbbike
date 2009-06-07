@@ -246,6 +246,9 @@ sub parse_street_type_nr {
 	$type = "Haff";
     } elsif ($strname =~ /ostsee.*radweg/i) {
 	$type = "Ostsee";
+    } elsif ($strname =~ /berlin.*barnim.*oderbruch/i) {
+	$type = 'BBO';
+	$image = 'BBO.gif';
     }
     if (defined $type) {
 	$do_round = 1;
