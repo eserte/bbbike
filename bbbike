@@ -6761,98 +6761,100 @@ EOF
 	    } elsif (defined $category_image{$category}) {
 		$category = "IMG:$category_image{$category}";
 	    }
-	    if ($category =~ $complex_IMG_qr) {
-		my $photo = $1;
-		my $anchor = ($2 ? $2 : "c");
-		my($base) = ($photo =~ m|/| ? $photo =~ /([^\/]+)$/ : $photo);
-		$base = "p_$base";
-		my $p = get_image_for_p($base, $photo, $abk);
-		if ($p) {
-		    $c->createImage($x, $y, -image => $p,
-				    -anchor => $anchor,
-				    -tags => ["$abk-img", "$xx,$yy", $pointname, ($abk =~ /^L\d+$/ ? ("L-fg") : ())],
-				   );
-		    #return; # XXX why was this here? do we have image items which should not have a label, even if NameDraw=1 is specified?
-		}
-		warn "Can't find image $photo (3)";
-	    }
-
-	    if ($XXX_use_old_R_symbol && $abk eq 'r') {
-		my $length = $category =~ m{^(RP)$} ? $rbahn_length/2 : $rbahn_length;
-		$c->createLine($x-$length, $y, $x+$length, $y,
-			       -tags => ["$abk-bg", "$xx,$yy", $pointname, "$abk-" . $category . "-bg"]);
-		if ($category !~ m{^(RP)$}) {
-		    $c->createText($x, $y,
-			           -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $category . "-fg"]);
-		}
-	    } elsif ($abk =~ /^[ubr]$/) {
-		$c->createImage($x, $y, -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $category . "-fg"]);
-	    } elsif ($abk eq 'lsa') {
-		# keine Verwendung von _coord_as_string
-		$c->createImage
-		  ($x, $y,
-		   -image => ($category =~ m{^(B|B0)$}
-			      ? $andreaskr_photo
-			      : $category eq 'Zbr'
-				? $zugbruecke_photo
-				: $category eq 'F'
-				  ? $ampelf_photo
-			          : $ampel_photo
-			     ),
-		   -tags => ["$abk-fg", "$xx,$yy", $pointname,
-			     "$abk-" . $category . "-fg",
-			     $abk."-".$i],
-		  );
-		$ampeln{"$xx,$yy"} = $category;
-	    } elsif ($abk eq 'pl') {
-		$c->createLine($x, $y, $x, $y,
-			       -tags => ["$abk-fg", "$xx,$yy", $pointname],
-			      );
-	    } elsif ($abk eq 'vf') {
-		$c->createImage(transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][1])}),
-				-tags => "$abk-fg");
-		my($x1,$y1,$x2,$y2,$x3,$y3) =
-		  (transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][0])}),
-		   transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][1])}),
-		   transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][2])}));
-		my $len1 = Strassen::Util::strecke([$x1,$y1], [$x2,$y2]);
-		my $whole_len1 = $len1 > 20 ? 20 : $len1;
-		my $len2 = Strassen::Util::strecke([$x2,$y2], [$x3,$y3]);
-		my $whole_len2 = $len2 > 20 ? 20 : $len2;
-		my($cx1,$cy1,$cx2,$cy2,$cx3,$cy3)
-		  = (($x1-$x2)/$len1*$whole_len1+$x2,
-		     ($y1-$y2)/$len1*$whole_len1+$y2,
-		     $x2,$y2,
-		     ($x3-$x2)/$len2*$whole_len2+$x2,
-		     ($y3-$y2)/$len2*$whole_len2+$y2,
-		    );
-		$c->createLine($cx1,$cy1,$cx2,$cy2,$cx3,$cy3,
-			       -tags => "$abk-bg");
-	    } elsif ($abk =~ /^L(\d+)/) {
-		my $color = $category =~ /^\#/ ? $category : exists $layer_category_color{$abk} && exists $layer_category_color{$abk}{$category} ? $layer_category_color{$abk}{$category} : exists $category_color{$category} ? $category_color{$category} : undef;
-		my $width = ($layer_category_line_width{$abk} && $layer_category_line_width{$abk}{$category}) || $category_width{$category} || $p_width{$abk} || $default_width || 6;
-		$c->createLine($x, $y, $x, $y,
-			       (defined $color ? (-fill => $color) : ()),
-			       -width => $width,
-			       -tags => ["$abk-fg", "$xx,$yy", $pointname, "p-" . $i, "L-fg"]);
-	    } elsif ($abk =~ /^(kn|ki|rest)$/) {
-		$c->createImage($x, $y,
-				-tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $i]);
-	    } elsif ($abk =~ /^label/) {
-		# $category should contain font, anchor etc.
-		$c->createText($x, $y, -text => $pointname,
-			       -font => $font{'large'}, # XXX
-			       -anchor => "w", # XXX
-			       -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $i]);
-	    } else {
-		# Else draw a generic point (broad, color from cat)
-		my $color = $category_color{$category} || ($category =~ /^\#/ ? $category : 'red');
-		my $width = $category_width{$category} || $p_width{$abk} || $default_width || 6;
-		$c->createLine($x, $y, $x, $y,
-			       -fill => $color, -capstyle => $capstyle_round,
-			       -width => $width,
-			       -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $i]);
-	    }
+	DRAW_ITEM: {
+	        if ($category =~ $complex_IMG_qr) {
+		    my $photo = $1;
+		    my $anchor = ($2 ? $2 : "c");
+		    my($base) = ($photo =~ m|/| ? $photo =~ /([^\/]+)$/ : $photo);
+		    $base = "p_$base";
+		    my $p = get_image_for_p($base, $photo, $abk);
+		    if ($p) {
+		        $c->createImage($x, $y, -image => $p,
+				        -anchor => $anchor,
+				        -tags => ["$abk-img", "$xx,$yy", $pointname, ($abk =~ /^L\d+$/ ? ("L-fg") : ())],
+				       );
+		        last; # we're done, only label drawing missing
+		    }
+		    warn "Can't find image $photo (3)";
+	        }
+    
+	        if ($XXX_use_old_R_symbol && $abk eq 'r') {
+		    my $length = $category =~ m{^(RP)$} ? $rbahn_length/2 : $rbahn_length;
+		    $c->createLine($x-$length, $y, $x+$length, $y,
+			           -tags => ["$abk-bg", "$xx,$yy", $pointname, "$abk-" . $category . "-bg"]);
+		    if ($category !~ m{^(RP)$}) {
+		        $c->createText($x, $y,
+			               -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $category . "-fg"]);
+		    }
+	        } elsif ($abk =~ /^[ubr]$/) {
+		    $c->createImage($x, $y, -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $category . "-fg"]);
+	        } elsif ($abk eq 'lsa') {
+		    # keine Verwendung von _coord_as_string
+		    $c->createImage
+		      ($x, $y,
+		       -image => ($category =~ m{^(B|B0)$}
+			          ? $andreaskr_photo
+			          : $category eq 'Zbr'
+				    ? $zugbruecke_photo
+				    : $category eq 'F'
+				      ? $ampelf_photo
+			              : $ampel_photo
+			         ),
+		       -tags => ["$abk-fg", "$xx,$yy", $pointname,
+			         "$abk-" . $category . "-fg",
+			         $abk."-".$i],
+		      );
+		    $ampeln{"$xx,$yy"} = $category;
+	        } elsif ($abk eq 'pl') {
+		    $c->createLine($x, $y, $x, $y,
+			           -tags => ["$abk-fg", "$xx,$yy", $pointname],
+			          );
+	        } elsif ($abk eq 'vf') {
+		    $c->createImage(transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][1])}),
+				    -tags => "$abk-fg");
+		    my($x1,$y1,$x2,$y2,$x3,$y3) =
+		      (transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][0])}),
+		       transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][1])}),
+		       transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][2])}));
+		    my $len1 = Strassen::Util::strecke([$x1,$y1], [$x2,$y2]);
+		    my $whole_len1 = $len1 > 20 ? 20 : $len1;
+		    my $len2 = Strassen::Util::strecke([$x2,$y2], [$x3,$y3]);
+		    my $whole_len2 = $len2 > 20 ? 20 : $len2;
+		    my($cx1,$cy1,$cx2,$cy2,$cx3,$cy3)
+		      = (($x1-$x2)/$len1*$whole_len1+$x2,
+		         ($y1-$y2)/$len1*$whole_len1+$y2,
+		         $x2,$y2,
+		         ($x3-$x2)/$len2*$whole_len2+$x2,
+		         ($y3-$y2)/$len2*$whole_len2+$y2,
+		        );
+		    $c->createLine($cx1,$cy1,$cx2,$cy2,$cx3,$cy3,
+			           -tags => "$abk-bg");
+	        } elsif ($abk =~ /^L(\d+)/) {
+		    my $color = $category =~ /^\#/ ? $category : exists $layer_category_color{$abk} && exists $layer_category_color{$abk}{$category} ? $layer_category_color{$abk}{$category} : exists $category_color{$category} ? $category_color{$category} : undef;
+		    my $width = ($layer_category_line_width{$abk} && $layer_category_line_width{$abk}{$category}) || $category_width{$category} || $p_width{$abk} || $default_width || 6;
+		    $c->createLine($x, $y, $x, $y,
+			           (defined $color ? (-fill => $color) : ()),
+			           -width => $width,
+			           -tags => ["$abk-fg", "$xx,$yy", $pointname, "p-" . $i, "L-fg"]);
+	        } elsif ($abk =~ /^(kn|ki|rest)$/) {
+		    $c->createImage($x, $y,
+				    -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $i]);
+	        } elsif ($abk =~ /^label/) {
+		    # $category should contain font, anchor etc.
+		    $c->createText($x, $y, -text => $pointname,
+			           -font => $font{'large'}, # XXX
+			           -anchor => "w", # XXX
+			           -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $i]);
+	        } else {
+		    # Else draw a generic point (broad, color from cat)
+		    my $color = $category_color{$category} || ($category =~ /^\#/ ? $category : 'red');
+		    my $width = $category_width{$category} || $p_width{$abk} || $default_width || 6;
+		    $c->createLine($x, $y, $x, $y,
+			           -fill => $color, -capstyle => $capstyle_round,
+			           -width => $width,
+			           -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $i]);
+	        }
+	    } # DRAW_ITEM
 	    if ($name_draw) {
 		my %args = ((exists $category_font_color{$category} ? (-fill => $category_font_color{$category}) : ()),
 			    (exists $category_font{$category} ? (-font => $category_font{$category}) : ()),
