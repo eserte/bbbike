@@ -9,7 +9,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
 
 use Cwd qw(realpath);
 use File::Spec;
@@ -99,7 +99,26 @@ if ($clock_adjust_file) {
 	chomp;
 	next if m{^\s*\#};
 	next if m{^\s*$};
-	my($from, $to, $gps, $camera) = split /\s+/;
+	my(@fields) = split /\s+/;
+	if (@fields != 3 && @fields != 4) {
+	    die <<EOF;
+Cannot parse line '$_' in $clock_adjust_file, must be either
+
+    isodate gpstime cameratime
+
+or
+
+    isodatetimefrom isodatetimeto gpstime cameratime
+EOF
+	}
+	my($from, $to, $gps, $camera);
+	if (@fields == 3) {
+	    $from = $fields[0] . 'T00:00:00';
+	    $to   = $fields[0] . 'T23:59:59';
+	    ($gps, $camera) = @fields[1,2];
+	} else {
+	    ($from, $to, $gps, $camera) = @fields;
+	}
 	my $from_epoch = do {
 	    my($Y,$M,$D,$h,$m,$s) = $from =~ $lax_iso_date_qr
 		or die "Cannot parse date '$from' as ISO date";
@@ -652,6 +671,36 @@ through the date.
 For now, it is assumed that the GPS track database is just a directory
 with GPSMAN track files, where filenames are named I<YYYYMMDD.trk> or
 I<YYYY-MM-DD.trk>.
+
+=head2 Adjusting clocks
+
+For successful geocoding it is necessary to have synchronized clocks
+in the GPS receiver and the camera. The GPS clock is very accurate,
+but the camera clock usually is not. A nice technique is too make a
+photo of the GPS device while displaying the time (including
+seconds!), later determine the camera clock of this photo, and use
+this for the -clock* options:
+
+    geocode_images -clockgps HH:MM:SS -clockcamera HH:MM:SS ...
+
+where the -clockgps value is what is visible on the photo and the
+-clockcamera value is what is visible in the EXIF data of the photo.
+
+It is also possible to maintain a database of such clock adjustments
+in a file. This is just a text file with whitespace-separated fields,
+either:
+
+   ISO_date_time_from	ISO_date_time_to	gps_time	camera_time
+
+or
+
+   ISO_date	gps_time	camera_time
+
+(ISO date time is here YYYYMMDDTHHMMSS, with possible separators, and
+ISO date is YYYYMMDD, with possible separators).
+
+The first field or first two fields denote the validity time of the
+adjustment.
 
 =head1 EXAMPLES
 
