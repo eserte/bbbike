@@ -489,8 +489,9 @@ sub tracks_in_region {
 	      });
     {
 	my $f = $t->Frame->pack(qw(-fill x));
-	$f->Button(Name => "close",
-		   -command => sub { $t->destroy })->pack(qw(-side left));
+	my $cb = $f->Button(Name => "close",
+			    -command => sub { $t->destroy })->pack(qw(-side left));
+	$t->bind('<Escape>' => sub { $cb->invoke });
 	$f->Button(-text => M("Liste speichern"),
 		   -command => sub {
 		       my $outfile = $t->getSaveFile;
