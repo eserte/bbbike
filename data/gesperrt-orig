@@ -616,6 +616,7 @@ Georgenstr.	1 9313,12662 9108,12635
 Schulstr. (Tegel)	1 1953,20149 1794,20110
 #: add_fragezeichen: Ist der Natalissteig eine Einbahnstraße? Wenn ja, gilt die Einbahnstraßenregelung nur für Autofahrer oder auch für Radfahrer?
 Natalissteig	1 1202,14935 1223,14824 1226,14714
+Straße 12 (Neukölln): gesperrt für Fahrzeuge aller Art (außer BAB-Versorgung)	2 13883,6682 13881,6634 13915,6592
 ######################################################################
 #
 # Potsdam
@@ -886,6 +887,7 @@ Bornhomer Str.: Straßenbahntrasse	3nocross 10620,16497 10533,16505 10458,16509
 Bornhomer Str.: Straßenbahntrasse	3nocross 10458,16509 10370,16516 10282,16522 10197,16528
 Karl-Liebknecht-Str./Rosenstr.: Straßenbahntrasse	3nocross 10437,12703 10528,12785 10699,12929
 Martin-Luther-Str.: Mittelstreifen	3nocross 6502,9782 6512,9866 6514,9947
+Martin-Luther-Str.: Mittelstreifen	3nocross 6502,9782 6447,9661 6445,9538
 Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 10997,16280 10990,16197 10982,16121
 Oberspreestr.: Straßenbahntrasse	3nocross 21579,4579 21726,4537 21796,4517
 Oberspreestr.: Straßenbahntrasse	3nocross 21332,4655 21389,4635 21494,4605
@@ -1296,6 +1298,14 @@ Drosselbartweg: Drängelgitter	BNP:3 14222,18666
 #: by: Naira (hgoerzig):
 Schranke (Thyssenstr. - Sittestr.)	BNP:3 5856,19204
 Schranke, kann leicht umfahren wergen	BNP:1 -13937,240
+Drängelgitter	BNP:3 60332,36475
+Drängelgitter	BNP:3 61521,38712
+Drängelgitter	BNP:3 61507,38685
+Drängelgitter	BNP:3 62699,40901
+Drängelgitter	BNP:3 62686,40877
+Drängelgitter	BNP:3 63740,42840
+Drängelgitter	BNP:3 63721,42792
+Schranke, kann auch mit Anhänger umfahren werden	BNP:1 49137,24422
 #
 ############################################################################
 #

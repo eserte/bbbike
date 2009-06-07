@@ -485,7 +485,8 @@ Ahornsteig: kleinteiliges Pflaster und wassergebundene Decke	Q1 8016,11770 8156,
 Tiergarten: wassergebundene Decke	Q1 8223,11796 8156,11863 8091,11992 8089,12041 8107,12145
 Tiergarten: Parkweg	Q1 8021,11636 8016,11770 8022,12016
 Tiergarten: Parkweg	Q1 8034,12093 8057,12059 8048,12033 8022,12016 7999,12049 8006,12074 8034,12093 8048,12135 8055,12186
-Tiergarten: Parkweg	Q1 8214,12205 8215,12156 8222,11881 8223,11796 8223,11700
+Tiergarten: Asphalt	Q0 8214,12205 8215,12156
+Tiergarten: Parkweg	Q1 8215,12156 8222,11881 8223,11796 8223,11700
 Tiergarten: Parkweg	Q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
 Parkweg: teils sehr gutes Kopfsteinpflaster	Q1 14310,9692 14351,9757 14451,9927 14558,10082 14597,10129 14626,10162 14652,10201
 Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q0 14373,10046 14192,10145 14111,10169 13903,10237
@@ -2481,6 +2482,8 @@ Bölschestr.: Kopfsteinpflaster	Q2 25539,5237 25544,5326
 Myliusgarten: schlechtes Kopfsteinpflaster	Q3 25548,5398 25466,5408 25272,5417
 Agnes-von-Zahn-Harnack-Str.: Kopfsteinpflaster	Q2 7795,13093 7867,13127 7938,13150
 Katharina-Paulus-Str.: Katharina-Paulus-Str	Q2 7867,13106 7867,13127
+Priesterweg (Britz): sehr schlechtes Kopfsteinpflaster	Q3- 13227,6209 13220,6237 13239,6344
+Mackenroder Weg: schlechtes Kopfsteinpflaster, mit einigen Asphaltflicken	Q3 12805,6248 12833,6127
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
@@ -3326,7 +3329,8 @@ Fregestr.: guter Asphalt	Q0 5897,6799 5957,6889 5957,6970 5958,7220 5955,7406
 #: by: ^^^
 #: by: Andrea Beu: vvv
 Lettestr.: Kopfsteinpflaster	Q2 11268,15360 11368,15301 11480,15229
-Apostel-Paulus-Str.: Kopfsteinpflaster?	Q2 7044,9163 6945,9142 6885,9132 6735,9103 6593,9074 6442,9044 6366,9033 6283,9022 6209,9012
+#: XXX Ist tatäschlich die gesamte Straße gepflastert?
+Apostel-Paulus-Str.: Kopfsteinpflaster	Q2 7044,9163 6945,9142 6885,9132 6735,9103 6593,9074 6442,9044 6366,9033 6283,9022 6209,9012
 #: by: ^^^
 #: by: Rudolf C. vvv
 #not anymore: Heerstr.: Kopfsteinpflaster auf den Parallelstraßen	Q2 456,11233 439,11228 232,11190 232,11190 21,11167 -68,11156 -346,11121 -420,11110 -535,11096 -572,11092 -731,11073 -776,11067 -831,11060 -1039,11034 -1269,11008 -1499,10990 -2209,11222
@@ -8597,7 +8601,7 @@ Georgenkirchstr.: Asphalt	Q0 11842,13576 11778,13498 11711,13416 11654,13351 115
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Gehwegplatten und Kopfsteinpflaster	Q0 12386,13085 12387,13107 12344,13157 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11785,13625
 Hinter der Katholischen Kirche: Kopfsteinpflaster	Q1 9801,12245 9795,12293 9780,12401
 Behrenstr.: Asphalt	Q0 9492,12214 9626,12227 9700,12234 9743,12239 9801,12245
-Markgrafenstr. (Kreuzberg, Mitte): Asphalt	Q2 9626,12227 9636,12126
+Markgrafenstr. (Kreuzberg, Mitte): Asphalt mit Schlaglöchern	Q2 9626,12227 9636,12126
 #: corrected_by: srt (Q1 -> Q2)
 Am Festungsgraben: Kopfsteinpflaster	Q2 9842,12506 9764,12492
 #: corrected_by: srt (Kopfsteinpflaster -> wassergebundene Decke)

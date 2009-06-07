@@ -6023,7 +6023,7 @@ EOF
        text  => 'B 002 Stettiner Str. OD Gartz, Knotenpunkt Stettiner-/Scheunenstraße Ausbau Knotenpunkt Vollsperrung 30.09.2006-16.10.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 76131,90452 76075,90647 76078,90752
+userdel	q4::inwork 76131,90452 76075,90647 76243,92954
 EOF
      },
      { from  => 1159826400, # 2006-10-03 00:00
@@ -6458,7 +6458,7 @@ EOF
        text  => 'L 033 Odervorstadt Bahnübergang in der OD Wriezen Fahrbahninstandsetzung Vollsperrung 13.10.2006-10.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 60086,36267 59990,36267 59876,36115
+userdel	2::inwork 60086,36267 60053,36267 59990,36267 59937,36197 59876,36115
 EOF
      },
      { from  => 1156024800, # 2006-08-20 00:00
@@ -9036,7 +9036,7 @@ EOF
        text  => 'B 002 Stettiner Str. OD Gartz, Knotenpunkt Stettiner-/Scheunenstraße Ausbau Knotenpunkt Vollsperrung 16.07.2007-15.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 76078,90752 76075,90647
+userdel	q4::inwork 76243,92954 76075,90647
 EOF
      },
      { from  => 1184450400, # 2007-07-15 00:00
@@ -11136,7 +11136,7 @@ userdel	2::inwork -27053,82717 -27141,82696 -27184,82772 -27346,82842
 EOF
      },
      { from  => 1199574000, # 2008-01-06 00:00
-       until => Time::Local::timelocal(reverse(2009-1900,7-1,1,23,59,59)), # 1222811999, # 2008-09-30 23:59
+       until => 1244381355, # Time::Local::timelocal(reverse(2009-1900,7-1,1,23,59,59)), # 1222811999, # 2008-09-30 23:59
        text  => 'Bauarbeiten am nordwestlichen Bereich der Elsenbrücke bis Mitte 2009; kein Zugang zum Spreeufer. ',
        type  => 'gesperrt',
        data  => <<EOF,

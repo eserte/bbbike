@@ -260,7 +260,8 @@ Lychen: Radweg auf Gehweg	RW 2745,89716 2797,89387
 Lychen - Fürstenberg: Verbundsteinpflasterradweg auf Gehweg	RW 2797,89387 2480,89399 2111,89378 1907,89597 1544,89701 1090,89570
 Lychen - Fürstenberg: asphaltierter Zweirichtungsradweg auf der nördlichen Seite	RW 1090,89570 627,89430 234,89271
 Fürstenberg: Verbundsteinpflasterradweg auf Gehweg, teilweise sehr eng	RW -8777,85887 -8775,85947 -8738,86096 -8726,86224 -8711,86273 -8641,86541
-Tassow - Schönfeld: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 72583,97595 72309,97699 72151,97918 72038,98101 71684,98650 71282,98881
+Tassow - Schönfeld: Verbundsteinpflaster-Zweirichtungsradweg auf der westlichen Seite	RW 72960,97477 72583,97595 72309,97699 72151,97918
+Tassow - Schönfeld: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 72151,97918 72038,98101 71684,98650 71282,98881
 Kamp - Anklam: Zweirichtungsradweg auf der westlichen Seite	RW 28842,161837 28567,161564 28473,161345
 Bargischow - Anklam: Radweg, teilweise als Zweirichtungsradweg	RW 28473,161345 28139,161441 27778,161482 27589,161496
 #: note: vom Zug aus gesehen
@@ -331,6 +332,11 @@ Asphaltiert	RW1;RW9 70010,78347 70001,78510
 	RW; -11822,-1874 -12110,-1862 -12247,-1858 -12420,-1853
 	RW2; -12420,-1853 -12493,-1896
 Mäßiger Asphalt	RW2; -13375,2950 -13929,2548
+	RW2 60053,36267 59990,36267 59937,36197 59876,36115 59806,35893
+	RW2 59462,34809 59485,34268
+asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW8;RW2 59747,33516 59814,33354 59941,33004
+Verbundsteinpflaster-Zweirichtungsradweg auf der östlichen Seite	RW8;RW2 59941,33004 60123,32505 60213,32415
+	RW2 44536,20408 44686,20822 44692,20886 44631,21051 44661,21139 44596,21287
 ######################### User Contributions #################################
 #: by: Eckart Seher:
 Industriestr. (Dahlwitz-Hoppegarten): gegenläufiger Radweg, rotes Betonpflaster	RW 25938,11837 26042,11798 26222,11726 26555,11601 26794,11513 26880,11479

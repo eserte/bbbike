@@ -489,6 +489,7 @@ Ingridpfad	1 6357,2863 6304,2825 6182,2727
 Georgenstr.	1 9313,12662 9108,12635
 Schulstr. (Tegel)	1 1953,20149 1794,20110
 Natalissteig	1 1202,14935 1223,14824 1226,14714
+Straße 12 (Neukölln): gesperrt für Fahrzeuge aller Art (außer BAB-Versorgung)	2 13883,6682 13881,6634 13915,6592
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718 -12323,635 -12332,585 -12582,127
 Leistikowstr.	1 -12512,810 -12302,718
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -877,6 +878,13 @@ Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6463,9862 6512,986
 Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6611,9879 6512,9866 6502,9782
 Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen	3::igndisp 6514,9947 6512,9866 6611,9879
 Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen	3::igndisp 6502,9782 6512,9866 6463,9862
+Mittelstreifen	3nocross::ignrte 6502,9782 6447,9661 6445,9538
+Speyerer Str. -> Traunsteiner Str.: Mittelstreifen	3::igndisp 6348,9535 6447,9661 6553,9600
+Speyerer Str. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6348,9535 6447,9661 6502,9782
+Traunsteiner Str. -> Speyerer Str.: Mittelstreifen	3::igndisp 6553,9600 6447,9661 6348,9535
+Traunsteiner Str. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6553,9600 6447,9661 6445,9538
+Martin-Luther-Str. -> Speyerer Str.: Mittelstreifen	3::igndisp 6445,9538 6447,9661 6348,9535
+Martin-Luther-Str. -> Traunsteiner Str.: Mittelstreifen	3::igndisp 6502,9782 6447,9661 6553,9600
 U-Bahnviadukt und Straßenbahn	3nocross::ignrte 10997,16280 10990,16197 10982,16121
 Schönhauser Allee -> Rodenbergstr.: U-Bahnviadukt und Straßenbahn	3::igndisp 10997,16280 10990,16197 11253,16118
 Rodenbergstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11253,16118 10990,16197 10982,16121
@@ -1509,6 +1517,14 @@ Drosselbartweg: Drängelgitter	BNP:4:-242 13899,18833
 Drosselbartweg: Drängelgitter	BNP:3:71 14222,18666
 Schranke (Thyssenstr. - Sittestr.)	BNP:3:67 5856,19204
 Schranke, kann leicht umfahren wergen	BNP:1:-160 -13937,240
+Drängelgitter	BNP:3:-153 60332,36475
+Drängelgitter	BNP:3:-153 61521,38712
+Drängelgitter	BNP:3:-151 61507,38685
+Drängelgitter	BNP:3:-150 62699,40901
+Drängelgitter	BNP:3:-151 62686,40877
+Drängelgitter	BNP:3:-158 63740,42840
+Drängelgitter	BNP:3:-157 63721,42792
+Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-170 49137,24422
 Dora-Benjamin-Park - Uferweg: Zugang ist noch gesperrt	2:inwork 14621,10062 14599,10039
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15990,10185 15894,10251
 Vicki-Baum-Str.: noch in Bau, gesperrt	2:inwork 15823,10300 15753,10353 15688,10400

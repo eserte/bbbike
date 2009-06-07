@@ -499,15 +499,7 @@ userdel	q4::inwork; 9208,11872 9218,11793
        undef,
        undef,
        undef,
-       {
-         'until' => 1246485599,
-         'text' => 'Bauarbeiten am nordwestlichen Bereich der Elsenbrücke bis Mitte 2009; kein Zugang zum Spreeufer. ',
-         'from' => 1199574000,
-         'id' => 1322,
-         'data' => 'userdel	2::inwork 14383,10036 14405,10027
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1421,15 +1413,6 @@ userdel	q4::inwork 9126,12413 9345,12443
          'from' => 1244325600,
          'id' => 1693,
          'data' => 'userdel	q4::inwork -7114,54591 -7387,54453
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1244325600,
-         'text' => 'B 167 Löwenberg - Grieben OD Löwenberg Deckeneinbau Vollsperrung 06.06.2009-06.06.2009 ',
-         'from' => 1244152800,
-         'id' => 1694,
-         'data' => 'userdel	q4::inwork -7665,54237 -7918,54138 -8307,53883
 ',
          'type' => 'handicap'
        }
