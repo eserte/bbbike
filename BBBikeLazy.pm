@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.36 2009/03/14 23:17:18 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.37 2009/06/07 21:07:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -180,7 +180,7 @@ sub BBBikeLazy::bbbikelazy_add_data {
 	if ($argsref && (exists $argsref->{Width} || exists $argsref->{NameDraw})) {
 	    for my $key (qw(Width NameDraw)) {
 		if (exists $argsref->{$key}) {
-		    $lazy_p_args{$abk} = $argsref->{$key};
+		    $lazy_p_args{$abk}->{$key} = $argsref->{$key};
 		}
 	    }
 	}
