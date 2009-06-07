@@ -6772,7 +6772,7 @@ EOF
 				    -anchor => $anchor,
 				    -tags => ["$abk-img", "$xx,$yy", $pointname, ($abk =~ /^L\d+$/ ? ("L-fg") : ())],
 				   );
-		    return;
+		    #return; # XXX why was this here? do we have image items which should not have a label, even if NameDraw=1 is specified?
 		}
 		warn "Can't find image $photo (3)";
 	    }
@@ -20677,6 +20677,10 @@ sub get_image_for_any {
     my $p = $images->{$key};
     if (!$p) {
 	eval {
+	    # XXX Es ist nicht zugesichert, dass eine Datei für ein
+	    # p/str-Objekt existiert. Somit kann $p/str_file{$abk}
+	    # leer sein und der dirname-Aufruf meckern (fileparse()
+	    # need a valid pathname)
 	    my $dir = dirname($type eq 'p' ? $p_file{$abk} : $str_file{$abk});
 	    if ($is_svg) {
 		# XXX move svg stuff to some general-purpose function or module
@@ -20708,7 +20712,7 @@ sub get_image_for_any {
 	    }
 	};
 	if ($@) {
-	    warn $@ if $@;
+	    warn "Warning: $@ (supplid args: ($base, $file, $abk, $type)" if $@;
 	    $p = $c->Photo(-file => "$FindBin::RealBin/images/px_1t.gif"); # XXX cache this one!
 	}
 	if ($p) {
