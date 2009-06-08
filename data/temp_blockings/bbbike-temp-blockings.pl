@@ -1246,7 +1246,7 @@ EOF
        text  => 'B 167; (Zerpenschleuse-Liebenwalde); zw. OA Liebenwalde und Abzw. Hammer Erneuerung Durchlass Vollsperrung 26.11.2004-06.12.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 11228,52175 9686,52037
+userdel	2 11228,52175 10103,52074 9686,52037
 EOF
      },
      { from  => 1085263200, # 2004-05-23 00:00
@@ -1863,7 +1863,7 @@ EOF
        text  => 'B 179; (Cottbuser-/ Fichtestr.); OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsp * 01.08.2005-14.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 26313,-13049 26028,-12312
+userdel	2 26313,-13049 26205,-12769 26028,-12312
 EOF
      },
      { from  => 1114725600, # 2005-04-29 00:00
@@ -2528,7 +2528,7 @@ EOF
        text  => 'B 179; (Spreewaldstr.); OD Zeesen, Kno. Karl-Liebknecht-Str. Straßenausbau Vollsperrung 15.08.2005-30.09.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 26583,-15677 26612,-15094
+userdel	2 26583,-15677 26572,-15618 26612,-15094
 EOF
      },
      { from  => 1122760800, # 2005-07-31 00:00
@@ -2601,7 +2601,7 @@ EOF
        text  => 'K 7237; (L 40 Klein Kienitz-Rangsdorf); zw. Südringcenter Rangsdorf u. Klein Kienitz Straßenbauarbeiten Vollsperrung 22.08.2005-04.09.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 26583,-15677 26612,-15094
+userdel	2 26583,-15677 26572,-15618 26612,-15094
 userdel	2 14327,-11767 15962,-10958
 EOF
      },
@@ -3514,7 +3514,7 @@ EOF
        text  => 'B 179 Cottbuser-/ Fichtestr. OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsperrung 02.01.2006-23.01.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 26313,-13049 26028,-12312
+userdel	2 26313,-13049 26205,-12769 26028,-12312
 EOF
      },
      { from  => 1134860400, # 2005-12-18 00:00
@@ -3753,7 +3753,7 @@ EOF
 userdel	2 22476,-19219 22338,-19081
 userdel	2 22476,-19219 22599,-19785
 userdel	2 22324,-18950 22338,-19081
-userdel	2 23356,-20982 22599,-19785
+userdel	2 23356,-20982 22928,-20347 22599,-19785
 EOF
      },
      { from  => 1161627812, # 2006-10-23 20:23
@@ -5483,7 +5483,7 @@ EOF
        text  => 'L 401 Königs Wusterhausen-Wildau OL Königs Wusterhausen, Höhe Neue Ziegelei Deckeneinbau Vollsperrung 31.08.2006-01.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 26437,-10393 26418,-10758 26407,-10986
+userdel	2::inwork 26434,-10443 26418,-10758 26407,-10986
 EOF
      },
      { from  => 1156024800, # 2006-08-20 00:00
@@ -6548,7 +6548,7 @@ EOF
        text  => 'L 745 Motzener Str. OD Gallun Deckenerneuerung Vollsperrung 04.11.2006-05.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 21970,-18337 22324,-18950
+userdel	q4::inwork 21970,-18337 22226,-18793 22324,-18950
 EOF
      },
      { from  => 1162443600, # 2006-11-02 06:00
@@ -9002,7 +9002,7 @@ EOF
        text  => 'L 033 zw. Kreuz. Hönow und Krz. Landsberger Ch./ Stendaler Str. Deckeninstandsetzung Vollsperrung 06.08.2007-17.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 25457,15594 25955,15531 26117,15452
+userdel	2::inwork 25506,15585 25955,15531 26117,15452
 EOF
      },
      { from  => 1184709600, # 2007-07-18 00:00
@@ -9118,7 +9118,7 @@ EOF
        text  => 'L 033 zw. Kreuz. Hönow und Krz. Landsberger Ch./ Stendaler Str. Deckeninstandsetzung Vollsperrung 06.08.2007-17.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 26328,15462 26232,15444 26117,15452 25955,15531 25457,15594 25342,15609 25007,15650 23893,15893
+userdel	2::inwork 26328,15462 26232,15444 26117,15452 25955,15531 25506,15585 25342,15609 25007,15650 23893,15893
 EOF
      },
      { from  => 1186092000, # 2007-08-03 00:00
@@ -10119,7 +10119,7 @@ EOF
        text  => 'B 096 Brücke zw. Großräschen und Freienhufen Brückenabbruch Vollsperrung 13.10.2007-14.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 50965,-90836 52580,-90602
+userdel	2::inwork 50965,-90836 51084,-90818 52531,-90608 52580,-90602
 EOF
      },
      { from  => 1192312800, # 2007-10-14 00:00
@@ -11017,7 +11017,7 @@ EOF
        text  => 'L 075 Tollkrug - Selchow - Waßmannsdorf OD Selchow Straßenbauarbeiten Vollsperrung 25.03.2008-01.07.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 15355,-5280 15568,-5323 15771,-5575 15987,-6248 16190,-6406
+userdel	q4::inwork 15355,-5280 15568,-5323 15771,-5575 15867,-5823 15987,-6248 16190,-6406
 EOF
      },
      { from  => 1205017200, # 2008-03-09 00:00
@@ -12273,7 +12273,7 @@ EOF
        text  => 'L 033 Strausberg - Berlin zw. AS Berlin-Marzahn und Hönow, Mahlsdorfer Str. Deckenerneuerung Vollsperrung 18.08.2008-26.08.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 27328,15740 26908,15630 26328,15462
+userdel	2::inwork 27328,15740 26908,15630 26538,15523 26328,15462
 EOF
      },
      { from  => 1219183200, # 2008-08-20 00:00
@@ -12492,7 +12492,7 @@ EOF
        text  => 'L 220 AS Finowfurt - Joachimsthal zw. der B167 und der OL Eichhorst Deckenerneuerung Vollsperrung 04.09.2008-11.09.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 25488,54151 25400,53591 25347,53338 25368,53125 25393,52762 25556,52375 26375,50681 26256,50418
+userdel	2::inwork 25488,54151 25395,53549 25347,53338 25368,53125 25393,52762 25556,52375 26375,50681 26256,50418
 EOF
      },
      { from  => 1221084000, # 2008-09-11 00:00
@@ -12658,7 +12658,7 @@ EOF
        text  => 'L 030 Fredersdorf - Altlandsberg - Bernau OD Altlandsberg, zw. OE und Strausberger Tor Straßenausbau Vollsperrung * 22.09.2008-30.04.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 33051,18158 32513,18082 32293,18093
+userdel	q4::inwork 33133,18131 32941,18121 32690,18122 32513,18082 32293,18093
 EOF
      },
      { from  => 1221948000, # 2008-09-21 00:00
@@ -12666,7 +12666,7 @@ EOF
        text  => 'L 212 Groß Schönebeck - Hammer - B167 zw. Groß Schönebeck und Böhmerheide Deckenerneuerung Vollsperrung 22.09.2008-26.09.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 15301,53802 17031,55218 17733,55423
+userdel	2::inwork 15301,53802 15886,54280 17031,55218 17658,55401 17733,55423
 EOF
      },
      { from  => undef, # 
@@ -12840,7 +12840,7 @@ EOF
        text  => 'L 030 Mittenwalde - Königs Wusterhausen zw. Schenkendorf und Königs Wusterhausen Straßenbauarbeiten Vollsperrung 22.10.2008-23.10.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 24843,-13725 25203,-13334
+userdel	2::inwork 24843,-13725 25148,-13393 25203,-13334
 EOF
      },
      { from  => 1224367200, # 2008-10-19 00:00
@@ -13205,7 +13205,7 @@ EOF
        text  => 'L 401 Karl-Marx-Str., Friedrich-Engels-Str. OD Wildau, zw. Freiheitsstr. und Westkorso grundhafter Straßenneubau Wintersicherung 19.12.2008-31.01.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 26609,-7136 26700,-7334 26790,-7918 26749,-8475
+userdel	q4::inwork 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26749,-8475
 EOF
      },
      { from  => 1231196400, # 2009-01-06 00:00
@@ -13994,7 +13994,7 @@ EOF
        text  => 'K 7312 Passow - Fredersdorf zw. Passow u. Briest, Höhe Briester Weg Bau eines Durchlasses Vollsperrung 11.05.2009-15.05.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 55392,83218 55901,83313
+userdel	2::inwork 55392,83218 55808,83296 55901,83313
 EOF
      },
      { from  => 1241906400, # 2009-05-10 00:00

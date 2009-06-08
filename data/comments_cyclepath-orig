@@ -61,9 +61,9 @@ B109, Prenzlau: Radweg	RW 39682,101543 39536,101514 39392,101477 39290,101451 39
 Gramzow: Radweg	RW 49779,90206 49640,90243 48924,90469
 Eiche: Zweirichtungsradweg (westliche Seite)	RW 22771,16194 22828,16257 22889,16350
 Landsberger Chaussee: Radwege (Betonplatten)	RW 22771,16194 22974,16139 23159,16086 23561,15975 23893,15893
-B1: Zweirichtungsradweg auf der nördlichen Seite	RW 25659,11125 26596,10921
-Zweirichtungsradweg auf der östlichen Seite	RW 31456,17231 31212,16278 31027,15926 30768,15431
-Altlandsberg: Radweg	RW 30118,16565 30837,16843 31456,17231
+B1: Zweirichtungsradweg auf der nördlichen Seite	RW 25659,11125 26449,10953 26596,10921
+Zweirichtungsradweg auf der östlichen Seite	RW 31456,17231 31212,16278 31053,15975 31027,15926 30768,15431
+Altlandsberg: Radweg	RW 30118,16565 30335,16649 30837,16843 31456,17231
 Asphaltierter Zweirichtungsradweg auf der SE-Seite	RW -926,27132 -1941,26218 -2118,26060 -2446,25386
 Asphaltierter Radweg	RW -4642,25672 -4929,25719 -5890,25875 -6593,25703 -6943,25831
 Fahrradstraße	RW -6943,25831 -7187,25859 -7225,25509 -7260,25515
@@ -252,7 +252,7 @@ Finsterwalde: Radweg	RW 33185,-86787 33158,-86308 33115,-86029
 Annahütte: Radweg	RW 45872,-93461 45277,-93455
 Großräschen: Radweg auf Gehweg	RW 53560,-90265 53147,-90403 53144,-90435
 B96: Radweg auf Gehweg	RW 53510,-90531 53144,-90435 53039,-90432 52580,-90602
-B96: Verbundsteinpflaster-Zweirichtungsradweg auf der südlichen Seite	RW 52580,-90602 50965,-90836 50434,-90824 50146,-90787
+B96: Verbundsteinpflaster-Zweirichtungsradweg auf der südlichen Seite	RW 52580,-90602 52531,-90608 51084,-90818 50965,-90836 50434,-90824 50146,-90787
 Zehlendorfer Damm: Verbundsteinpflasterradwege	RW -4,1133 -371,715 -475,568 -625,189 -749,-74 -797,-138 -840,-185 -927,-280 -1436,-887
 Ernst-Thälmann-Str.: Radweg auf Gehweg	RW -371,715 -521,821 -818,789 -1196,724 -1427,684 -1642,659 -1709,653
 Stahnsdorfer Damm: Radweg auf Gehweg	RW -2743,-934 -2941,-805 -3112,-655 -3412,-291 -3574,-163 -3663,-91 -3875,88
@@ -315,8 +315,8 @@ Werbellinsee: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 3096
 Werbellinsee: Verbundsteinpflaster-Zweirichtungsradweg auf der westlichen Seite	RW 30784,60950 30781,60566
 Werbellinsee: asphaltierter Zweirichtungsradweg auf der nordwestlichen Seite	RW 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27359,56787 27137,56650 26792,56558
 Eichhorst: asphaltierter Zweirichtungsradweg auf der südöstlichen Seite	RW 25512,54174 25488,54151
-Eichhorst - Finowfurt: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW 25488,54151 25400,53591
-Eichhorst - Finowfurt: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 25400,53591 25347,53338
+Eichhorst - Finowfurt: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW 25488,54151 25395,53549
+Eichhorst - Finowfurt: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 25395,53549 25347,53338
 Breitscheidstr. (Bernau): Suggestivstreifen	RW 23024,30523 22907,30433 22868,30412
 Am Bahnhof Bernau: Suggestivstreifen	RW 22868,30412 22904,30359
 	RW 2246,31162 2219,31171 2173,31187 2126,31207 2042,31236 1931,31275 1918,31279 1762,31318 1737,31303
@@ -348,7 +348,7 @@ Industriestr. (Dahlwitz-Hoppegarten): gegenläufiger Radweg, rotes Betonpflaster	
 #: by: rjoop: vvv
 #XXX removed by Andreas Titz B96: asphaltierter Zweirichtungsradweg auf der südwestlichen Seite	RW  81,33971 470,33540 728,33253 746,33231 831,33128 929,32980 1051,32796 1184,32554 1254,32428 1365,31576 1429,31501
 Schildow - Wensickendorf: asphaltierter Zweirichtungsradweg auf der östlichen Seite	RW 8071,30398 8100,30308 8281,29788 8327,29494 8315,29159
-Marienwerder - B167: Radweg	RW 22912,48759 22862,49031 23597,49573 23748,49682 23783,49745 23759,49971
+Marienwerder - B167: Radweg	RW 22912,48759 22862,49031 23597,49573 23660,49619 23748,49682 23783,49745 23759,49971
 #: add_fragezeichen: fängt der Radweg bereits in Großbeeren an?
 Großbeeren - Diedersdorf: asphaltierter Zweirichtungsradweg auf der nördlichen Seite	RW 5654,-6424 6432,-6715
 Mahlow - Jühnsdorf: asphaltierter Zweirichtungsradweg auf der westlichen Seite	RW 9854,-9480 9598,-10356 9578,-10891
@@ -429,8 +429,8 @@ Birkenwerder - Oranienburg: asphaltierte Radwege auf beiden Seiten	RW2 1051,3279
 #: by: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Großziethen: gemeinsamer Geh- und Radweg auf beiden Seiten	RW2 12984,1011 13090,205
 #: by: René (refan): vvv
-KW - Zeuthen: Gemeinsamer Geh- und Radweg	RW 26437,-10393 26418,-10758 26407,-10986 26281,-11160 26243,-11296 26265,-11528 26177,-11648
-KW - Zeuthen: Radweg	RW 26437,-10393 26450,-10134
+KW - Zeuthen: Gemeinsamer Geh- und Radweg	RW 26434,-10443 26418,-10758 26407,-10986 26281,-11160 26243,-11296 26265,-11528 26177,-11648
+KW - Zeuthen: Radweg	RW 26434,-10443 26450,-10134
 KW - Zeuthen: Gemeinsamer Geh- und Radweg	RW 26645,-8944 26727,-8668 26749,-8475
 KW - Zeuthen: westlicher Gehweg für Radfahrer freigegeben	RW 26609,-7136 26146,-6218
 #: by: ^^^

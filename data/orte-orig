@@ -557,12 +557,14 @@ Neudorf	0 17394,43597
 Stolzenhagen|b. Wandlitz	1 12212,41512
 Zehlendorf	1 8696,42028
 Hammer|b. Liebenwalde	1 12018,52781
+Kreuzbruch	0 9925,47831
 Böhmerheide	0 14396,53646
 Zerpenschleuse	2 16526,50265
 Klandorf	1 20503,52217
 Groß Schönebeck	2 18156,55883
 Marienwerder	2 22912,48759
 Eichhorst	1 25465,54223
+Wildau|b. Eichhorst	0 26159,55831
 Rosenbeck	0 24390,52287
 Werbellin	0 29858,54346
 Lichterfelde	2 33021,51828
@@ -576,7 +578,10 @@ Vietmannsdorf	2 17761,71916
 Bebersee	0 21905,68583
 Friedrichswalde	1 29831,69617
 Reiersdorf	0 25875,71662
-Parlow-Glambeck	1 33657,69333
+#: XXX_prog: Teil von Parlow-Glambeck:
+#: alias: Parlow-Glambeck
+Parlow	1 33657,69333
+#: XXX_prog: Teil von Parlow-Glambeck:
 Glambeck	0 37292,68602
 Wolletz	1 43089,69480
 Altkünkendorf	1 41260,67587
@@ -786,7 +791,8 @@ Großmachnow	1 15088,-14222
 Schönefeld	2 17647,-1890
 # oldposition: -2006 18598,-4119
 Diepensee	1 23141,-11550
-Kienberg|(Diepensee)	0 20056,-2896
+Kienberg|(bei Waltersdorf)	0 20056,-2896
+Hubertussiedlung	0 21071,-2228
 Rotberg	1 18005,-6959
 Tollkrug	0 17278,-7925
 Karlshof	0 20255,-7591
@@ -808,6 +814,7 @@ Senzig	1 28816,-12940
 Neu Zittau	2 33628,-1509
 Burig	0 35164,-1870
 Wernsdorf	2 30900,-3682
+Ziegenhals	0 29555,-4881
 Dannenreich	1 34366,-9747
 Kablow Ziegelei	0 32241,-9372
 Zernsdorf	2 30668,-11608

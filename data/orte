@@ -516,7 +516,8 @@ Eichhorst	1 25465,54223
 Liebenthal	1 13370,56440
 Kappe	1 11547,62335
 Friedrichswalde	1 29831,69617
-Parlow-Glambeck	1 33657,69333
+#: alias: Parlow-Glambeck
+Parlow	1 33657,69333
 Wolletz	1 43089,69480
 Altkünkendorf	1 41260,67587
 Neugrimnitz	1 38327,63933
@@ -976,7 +977,9 @@ Waldfrieden|(Bernau)	0 19491,33101
 Ützdorf	0 18621,39109
 Bogensee	0 18019,41416
 Neudorf	0 17394,43597
+Kreuzbruch	0 9925,47831
 Böhmerheide	0 14396,53646
+Wildau|b. Eichhorst	0 26159,55831
 Rosenbeck	0 24390,52287
 Werbellin	0 29858,54346
 Schluft	0 14037,60081
@@ -1023,7 +1026,8 @@ Mützlitz	0 -50268,15901
 Garz|b. Warnau	0 -71888,37145
 Glasow	0 12873,-6928
 Kleinziethen	0 13506,-2809
-Kienberg|(Diepensee)	0 20056,-2896
+Kienberg|(bei Waltersdorf)	0 20056,-2896
+Hubertussiedlung	0 21071,-2228
 Tollkrug	0 17278,-7925
 Karlshof	0 20255,-7591
 Boddinsfelde	0 17514,-11471
@@ -1033,6 +1037,7 @@ Deutsch Wusterhausen	0 23272,-12123
 Krummensee|b. Bestensee	0 24721,-15837
 Miersdorfer Werder	0 28059,-7381
 Burig	0 35164,-1870
+Ziegenhals	0 29555,-4881
 Kablow Ziegelei	0 32241,-9372
 Friedrichshof	0 35679,-9355
 Steinfurth	0 36120,-2902
