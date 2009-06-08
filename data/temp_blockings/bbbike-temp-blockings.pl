@@ -1141,7 +1141,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 38264,50086 38035,49183
-userdel	q4 38264,50086 38845,51258
+userdel	q4 38264,50086 38476,50514 38845,51258
 EOF
      },
      { from  => 1196895600, # 2007-12-06 00:00
@@ -4172,7 +4172,7 @@ EOF
        text  => 'L 010 Havelberger Str. OD Bad Wilsnack, vom OE bis An der Trift Kanal- und Straßenbau Vollsperrung 20.04.2006-31.05.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -89647,59213 -89549,58784
+userdel	q4 -89568,59293 -89549,58784
 EOF
      },
      { from  => 1145224800, # 2006-04-17 00:00
@@ -4463,7 +4463,7 @@ EOF
        text  => 'L 011 Perleberger Chaussee zw. Weisen, Walhausstr. u. Wittenberge, Kyritzer Str. Straßenausbau Vollsperrung 22.05.2006-30.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -102390,65175 -102434,66177
+userdel	2 -102339,65009 -102432,65890
 EOF
      },
      { from  => 1131836400, # 2005-11-13 00:00
@@ -4815,7 +4815,7 @@ EOF
        text  => 'L 010 Havelberger Str. OD Bad Wilsnack, vom OE bis An der Trift Kanal- und Straßenbau Vollsperrung 01.06.2006-31.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -89549,58784 -89647,59213
+userdel	q4::inwork -89549,58784 -89568,59293
 EOF
      },
      { from  => 1150754400, # 2006-06-20 00:00
@@ -4823,7 +4823,7 @@ EOF
        text  => 'L 011 Große Str. OD Bad Wilsnack, Einmünd. zur Havelberger Str. Kanal- und Straßenbau Vollsperrung 21.06.2006-31.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -89647,59213 -89606,59341
+userdel	q4::inwork -89568,59293
 EOF
      },
      { from  => 1151013248, # 2006-06-22 23:54
@@ -5748,7 +5748,7 @@ EOF
        text  => 'L 010 Havelberger Str. OD Bad Wilsnack Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 04.09.2006-29.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork -89549,58784 -89647,59213
+userdel	1::inwork -89549,58784 -89568,59293
 EOF
      },
      { from  => 1157234400, # 2006-09-03 00:00
@@ -5847,7 +5847,7 @@ EOF
        text  => 'B 002 Eberswalde-Angermünde zw. Abzw. Britz und BÜ Chorin Deckenerneuerung Vollsperrung 04.10.2006-08.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 38845,51258 41075,53327 41587,53787 41654,53939 41847,54619 42231,54671 42595,54932 42742,54938 42749,55043 42452,55538 42981,57104 43462,57600 43581,57725
+userdel	2::inwork 38845,51258 39131,51605 39815,52159 40945,53204 41075,53327 41587,53787 41654,53939 41706,54055 41777,54435 41847,54619 42231,54671 42595,54932 42742,54938 42749,55043 42452,55538 42451,55679 42981,57104 43462,57600 43581,57725
 EOF
      },
      { from  => 1136674800, # 2006-01-08 00:00
@@ -6217,7 +6217,7 @@ EOF
        text  => 'L 011 Wittenberger Str. OD Bad Wilsnack, zw. Karthanebrücke u. Wedenstr. Kanal- und Straßenbau Vollsperrung 11.10.2006-22.12.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -91328,59520 -89647,59213
+userdel	q4::inwork -91452,59580 -89568,59293
 EOF
      },
      { from  => 1160517600, # 2006-10-11 00:00

@@ -66,9 +66,12 @@ Kutzow	0 56782,165441
 Bossin	0 54686,164527
 Suckow	0 44942,168115
 Usedom	3 42397,163738
-Seebad Ahlbeck	2 60383,171530
-Seebad Heringsdorf	2 58620,173512
-Seebad Bansin	2 57031,174737
+#: alias: Seebad Ahlbeck
+Ahlbeck	2 60383,171530
+#: alias: Seebad Heringsdorf
+Heringsdorf	2 58620,173512
+#: alias: Seebad Bansin
+Bansin	2 57031,174737
 Bansin Dorf	0 56493,173943
 Zirchow	2 57330,166095
 Benz	2 52675,171473
@@ -164,6 +167,7 @@ Kietz Modderort|(bei Seelübbe)	0 42049,95965
 Brüssow	3 57405,111424
 Moor|(Brüssow)	0 55319,109799
 Hammelstall|(Brüssow)	0 56821,109071
+Frauenhagen|(bei Brüssow)	0 59020,109268
 Woddow	1 61054,109046
 Bagemühl	1 62612,106709
 Damme|(Uckermark)	1 49971,99565
@@ -387,7 +391,7 @@ Glinde	3 -209252,122140
 Reinbek	4 -206074,119025
 Bergedorf	0 -209464,116390
 Lenzen	3 -122199,74069
-Penkun	3 65441,100173
+Penkun	3 64957,100289
 Storkow|(bei Penkun)	1 68140,101615
 Büssow	0 67815,99673
 Wollin|(Penkun)	1 64241,102111
@@ -501,7 +505,7 @@ Puttgarden	0 -140707,228954
 Landkirchen|a. Fehmarn	3 -145249,223995
 Großenbrode	2 -149473,215268
 Oldenburg|i. Holstein	3 -164504,205797
-Schönberg (Holstein)	3 -199259,218123
+Schönberg|(Holstein)	3 -199259,218123
 Heiligenhafen	3 -158722,214977
 Lütjenburg	3 -185716,205664
 Mustin	1 -163452,139247
@@ -533,15 +537,15 @@ Dresden	6 36012,-150175
 Prettin	3 -20307,-83384
 Strehla	3 838,-117208
 Nienburg	3 -99329,-65133
-Bernburg| (Saale)	4 -100606,-69760
+Bernburg|(Saale)	4 -100606,-69760
 Aschersleben	4 -120131,-74464
 Ermsleben	3 -128061,-77502
 Köthen	4 -85143,-74737
 Quellendorf	2 -74525,-74893
 Prosigk	2 -79460,-80066
 Libbesdorf	1 -75991,-72165
-Kochstedt (Dessau)	0 -71143,-69262
-Mosigkau (Dessau)	0 -73018,-68393
+Kochstedt|(Dessau)	0 -71143,-69262
+Mosigkau|(Dessau)	0 -73018,-68393
 Reupzig	1 -78953,-76175
 Scheuder	1 -78219,-72693
 Lausigk	0 -77648,-73754
@@ -551,10 +555,10 @@ Reppichau	1 -77937,-67763
 Grossbadegast	1 -81506,-76736
 Chorau	1 -75093,-67200
 Osternienburg	2 -81406,-69725
-Elsdorf (Köthen)	0 -84651,-71297
+Elsdorf|(Köthen)	0 -84651,-71297
 Micheln	1 -85307,-68008
 Klietzen	0 -85381,-69741
-Porst (Köthen)	0 -83331,-72431
+Porst|(Köthen)	0 -83331,-72431
 Dohndorf	1 -92206,-77781
 Biendorf	1 -93381,-74606
 Preußlitz	1 -96035,-76870
@@ -602,6 +606,12 @@ Drebkau	3 68184,-82563
 Casel	1 61438,-79059
 Ogrosen	1 55401,-76161
 Annaburg	3 -12151,-75427
+Groß Naundorf	1 -15300,-79584
+Löben	1 -10176,-71616
+Labrun	0 -17601,-82194
+Seydewitz	1 -2221,-109797
+Schirmenitz	1 -1950,-113206
+Neuseußlitz	1 14450,-128440
 Falkenberg|(Elster)	3 1142,-91254
 Uebigau	3 5358,-90502
 Herzberg|(Elster)	3 717,-79591
@@ -788,7 +798,7 @@ Hoym	3 -130310,-71988
 Güsten	3 -110187,-70353
 Hecklingen	3 -115298,-64647
 Stassfurt	4 -111971,-63365
-Osterburg	3 -101651,40695
+Osterburg	3 -102482,40713
 Gommern	3 -95650,-38950
 Möckern	3 -87458,-31318
 Ziesar	3 -64739,-16816
@@ -802,14 +812,14 @@ Magdeburg	6 -109192,-32688
 Pechau	1 -103431,-37806
 Calenberge	1 -101621,-39969
 Elbenau	2 -100015,-42075
-Plotzky	2 -97377,-41357
+Plötzky	2 -97377,-41357
 Pretzien	1 -95892,-41945
 Dornburg	1 -92077,-43102
-Prödel	1 -89299,-42835
+Prödel	1 -89513,-42858
 Lübs	1 -87870,-44640
 Gehrden	1 -86670,-45979
 Güterglück	1 -84237,-48234
-Trebnitz (bei Zerbst)	0 -82189,-49677
+Trebnitz|(bei Zerbst)	0 -82189,-49677
 Wolmirstedt	3 -108659,-19330
 Schönebeck	4 -101869,-44835
 Burg|bei Magdeburg	4 -94732,-16773
@@ -872,7 +882,7 @@ Osterweddingen	1 -112727,-43035
 Gröningen	3 -136910,-54468
 Kroppenstedt	3 -130834,-54265
 Harsleben	2 -144837,-62705
-Tangermünde	4 -86172,13797
+Tangermünde	4 -86896,13725
 Tangerhütte	3 -97328,1281
 Stendal	4 -94596,20606
 Jerichow	3 -83453,8828
@@ -977,6 +987,7 @@ Loddin	2 47917,180585
 Kölpinsee	0 49060,182334
 Stubbenfelde	0 49675,181384
 Pudagla	1 52336,174618
+Neu Pudagla	0 51558,178115
 Stoben	0 52203,172708
 Labömitz	0 52937,169481
 Stolpe|auf Usedom	1 47071,163315
@@ -1093,7 +1104,7 @@ Sommersdorf	1 61351,98696
 Neuhof|bei Sommersdorf	0 62324,97382
 Grünz	1 58202,98423
 Radewitz	0 59670,99855
-Celle	5 -215735,20890
+Celle	5 -215501,20762
 Groß Rietz	1 65774,-20483
 Bornow	1 64929,-25152
 Birkholz|bei Beeskow	0 65076,-22519

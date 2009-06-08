@@ -25,7 +25,7 @@ Salzgitter	5 -195609,-37318
 Hildesheim	5 -223011,-31743
 Görlitz	5 121442,-138202
 Dessau	5 -66987,-65347
-Celle	5 -215735,20890
+Celle	5 -215501,20762
 Wolfenbüttel	5 -182823,-30057
 Lüneburg	5 -195495,90242
 Norderstedt	5 -222580,139825
@@ -60,7 +60,7 @@ Ahrensburg	4 -207119,137428
 Burg|a. Fehmarn	4 -141926,222560
 Eckernförde	4 -236318,224563
 Schkeuditz	4 -67500,-113991
-Bernburg| (Saale)	4 -100606,-69760
+Bernburg|(Saale)	4 -100606,-69760
 Aschersleben	4 -120131,-74464
 Köthen	4 -85143,-74737
 Weißenfels	4 -84670,-135807
@@ -94,7 +94,7 @@ Schönebeck	4 -101869,-44835
 Burg|bei Magdeburg	4 -94732,-16773
 Haldensleben	4 -122840,-14896
 Genthin	4 -74279,-1506
-Tangermünde	4 -86172,13797
+Tangermünde	4 -86896,13725
 Stendal	4 -94596,20606
 Wernigerode	4 -166324,-67061
 Calbe	4 -99042,-57415
@@ -141,7 +141,7 @@ Plau|am See	3 -69253,115567
 Schwarzenbek	3 -190739,118747
 Glinde	3 -209252,122140
 Lenzen	3 -122199,74069
-Penkun	3 65441,100173
+Penkun	3 64957,100289
 Loitz	3 -11407,173953
 Reuterstadt Stavenhagen	3 -26102,142842
 Bad Salzdetfurth	3 -219641,-42329
@@ -165,7 +165,7 @@ Dassow	3 -157242,164522
 Neustadt|i. Holstein	3 -168532,185715
 Landkirchen|a. Fehmarn	3 -145249,223995
 Oldenburg|i. Holstein	3 -164504,205797
-Schönberg (Holstein)	3 -199259,218123
+Schönberg|(Holstein)	3 -199259,218123
 Heiligenhafen	3 -158722,214977
 Lütjenburg	3 -185716,205664
 Ratzeburg	3 -171209,140734
@@ -240,7 +240,7 @@ Derenburg	3 -157657,-62566
 Hoym	3 -130310,-71988
 Güsten	3 -110187,-70353
 Hecklingen	3 -115298,-64647
-Osterburg	3 -101651,40695
+Osterburg	3 -102482,40713
 Gommern	3 -95650,-38950
 Möckern	3 -87458,-31318
 Ziesar	3 -64739,-16816
@@ -274,9 +274,12 @@ Dorf Mecklenburg	2 -124041,157272
 Boitzenburg	2 22507,95722
 Fürstenwerder	2 20631,109980
 Groß Miltzow	2 21339,125641
-Seebad Ahlbeck	2 60383,171530
-Seebad Heringsdorf	2 58620,173512
-Seebad Bansin	2 57031,174737
+#: alias: Seebad Ahlbeck
+Ahlbeck	2 60383,171530
+#: alias: Seebad Heringsdorf
+Heringsdorf	2 58620,173512
+#: alias: Seebad Bansin
+Bansin	2 57031,174737
 Zirchow	2 57330,166095
 Benz	2 52675,171473
 Züssow	2 16895,174913
@@ -391,7 +394,7 @@ Tucheim	2 -72304,-14275
 Görzke	2 -58799,-27258
 Leitzkau	2 -87426,-40487
 Elbenau	2 -100015,-42075
-Plotzky	2 -97377,-41357
+Plötzky	2 -97377,-41357
 Möser	2 -98297,-23053
 Parey	2 -85686,-4539
 Wiesenburg	2 -53191,-33648
@@ -654,6 +657,11 @@ Zinnitz	1 42398,-67679
 Werchow	1 49612,-75012
 Casel	1 61438,-79059
 Ogrosen	1 55401,-76161
+Groß Naundorf	1 -15300,-79584
+Löben	1 -10176,-71616
+Seydewitz	1 -2221,-109797
+Schirmenitz	1 -1950,-113206
+Neuseußlitz	1 14450,-128440
 Rückersdorf	1 23409,-92184
 Lichterfeld	1 37906,-89609
 Schacksdorf	1 36830,-87509
@@ -717,7 +725,7 @@ Pechau	1 -103431,-37806
 Calenberge	1 -101621,-39969
 Pretzien	1 -95892,-41945
 Dornburg	1 -92077,-43102
-Prödel	1 -89299,-42835
+Prödel	1 -89513,-42858
 Lübs	1 -87870,-44640
 Gehrden	1 -86670,-45979
 Güterglück	1 -84237,-48234
@@ -950,6 +958,7 @@ Wollenthin	0 43200,102737
 Kietz Modderort|(bei Seelübbe)	0 42049,95965
 Moor|(Brüssow)	0 55319,109799
 Hammelstall|(Brüssow)	0 56821,109071
+Frauenhagen|(bei Brüssow)	0 59020,109268
 Neuhof|(Warnitz)	0 42210,88596
 Quast|(Warnitz)	0 41821,89709
 Strehlow|(Potzlow)	0 38612,91950
@@ -1042,13 +1051,14 @@ Puttgarden	0 -140707,228954
 Warenthin	0 -27976,78040
 Pelzkuhl	0 -19245,86846
 Strasen	0 -19086,88767
-Kochstedt (Dessau)	0 -71143,-69262
-Mosigkau (Dessau)	0 -73018,-68393
+Kochstedt|(Dessau)	0 -71143,-69262
+Mosigkau|(Dessau)	0 -73018,-68393
 Lausigk	0 -77648,-73754
-Elsdorf (Köthen)	0 -84651,-71297
+Elsdorf|(Köthen)	0 -84651,-71297
 Klietzen	0 -85381,-69741
-Porst (Köthen)	0 -83331,-72431
+Porst|(Köthen)	0 -83331,-72431
 Cabel	0 48812,-75800
+Labrun	0 -17601,-82194
 Goltewitz	0 -54728,-69555
 Klitzschena	0 -44462,-66619
 Kienberge	0 -40897,-63250
@@ -1071,7 +1081,7 @@ Prossen|(Porschdorf)	0 62265,-163203
 Weißig|(Struppen)	0 59369,-161587
 Pratzschwitz	0 47620,-159283
 Mocherwitz	0 -54471,-104040
-Trebnitz (bei Zerbst)	0 -82189,-49677
+Trebnitz|(bei Zerbst)	0 -82189,-49677
 Torfhaus	0 -182998,-70896
 Mennewitz	0 -84563,-64090
 Mahlenzien	0 -54749,-9973
@@ -1120,6 +1130,7 @@ Bannemin	0 37278,185225
 Neuendorf|(Usedom)	0 39922,181505
 Kölpinsee	0 49060,182334
 Stubbenfelde	0 49675,181384
+Neu Pudagla	0 51558,178115
 Stoben	0 52203,172708
 Labömitz	0 52937,169481
 Welzin|(bei Stolpe)	0 45028,161679
