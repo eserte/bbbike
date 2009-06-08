@@ -1182,8 +1182,12 @@ check-disabled:
 	@touch $@
 
 .check_ortsschilder2:	orte orte2 ortsschilder
-	perl -MData::Dumper -I.. -I../lib -MStrassen::MultiStrassen -MStrassen::Core -e 'for $$o (qw(orte orte2)) { Strassen->new_stream($$o)->read_stream(sub { $$seen{$$_[0]->[0]}++ }) }; Strassen->new_stream("ortsschilder")->read_stream(sub { $$seen{$$_[0]->[0]}++ or $$error{$$_[0]->[0]}++ }); if (%error) { die Dumper(\%error) }' 
+	perl -MData::Dumper -I.. -I../lib -MStrassen::Core -e 'for $$o (qw(orte orte2)) { Strassen->new_stream($$o)->read_stream(sub { $$seen{$$_[0]->[0]}++ }) }; Strassen->new_stream("ortsschilder")->read_stream(sub { $$seen{$$_[0]->[0]}++ or $$error{$$_[0]->[0]}++ }); if (%error) { die Dumper(\%error) }' 
 	@touch $@
+
+# Interactive test
+.check_ortsschilder_dist:	orte orte2 ortsschilder
+	perl -Mopen=:locale  -MData::Dumper -I.. -I../lib -MStrassen::Util -MStrassen::Core -e 'for $$o (qw(orte orte2)) { Strassen->new_stream($$o)->read_stream(sub { $$pos{$$_[0]->[0]} = $$_[0]->[1][0]; $$cat{$$_[0]->[0]} = $$_[0]->[2] }) }; Strassen->new_stream("ortsschilder")->read_stream(sub { $$pos = $$_[0]->[1][0]; print int(Strassen::Util::strecke_s($$pos, $$pos{$$_[0]->[0]})) . " " . $$cat{$$_[0]->[0]} . " " . $$_[0]->[0] . "\n" }) ' | sort -nr | less
 
 # XXX Information duplicated in Strassen::Cat
 GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+)?)(:inwork)?(::(igndisp|ignrte))?$$'
