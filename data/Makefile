@@ -1097,7 +1097,7 @@ do-checks:	.check_empty_lines \
 	.check_exits \
 	.check_temp_blockings .check_grenzuebergaenge \
 	.check_berlin .check_potsdam \
-	.check_ortsschilder
+	.check_ortsschilder .check_ortsschilder2
 
 .check_empty_lines:	*-orig
 	for i in *-orig; do $(PERL) -nle '$$_ eq q{} and die $$ARGV' $$i; done
@@ -1179,6 +1179,10 @@ check-disabled:
 
 .check_ortsschilder:	ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen
 	$(CHECK_POINTS) -catrx '^OS$$' ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen
+	@touch $@
+
+.check_ortsschilder2:	orte orte2 ortsschilder
+	perl -MData::Dumper -I.. -I../lib -MStrassen::MultiStrassen -MStrassen::Core -e 'for $$o (qw(orte orte2)) { Strassen->new_stream($$o)->read_stream(sub { $$seen{$$_[0]->[0]}++ }) }; Strassen->new_stream("ortsschilder")->read_stream(sub { $$seen{$$_[0]->[0]}++ or $$error{$$_[0]->[0]}++ }); if (%error) { die Dumper(\%error) }' 
 	@touch $@
 
 # XXX Information duplicated in Strassen::Cat
