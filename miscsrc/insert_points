@@ -1059,12 +1059,15 @@ sub get_indexer {
 		require POSIX;
 		if (fork == 0) {
 		    POSIX::nice(+20);
-		    warn "Create index for $file/$type in background...\n"
-			if $verbose;
-		    $indexer->create_index;
-		    warn "Creation of index for $file/$type completed!\n"
-			if $verbose;
-		    $indexer->close_index; # for flushing
+		    eval {
+			warn "Create index for $file/$type in background...\n"
+			    if $verbose;
+			$indexer->create_index;
+			warn "Creation of index for $file/$type completed!\n"
+			    if $verbose;
+			$indexer->close_index; # for flushing
+		    };
+		    warn $@ if $@;
 		    POSIX::_exit(0); # use this instead of CORE::exit to prevent from swapping everything in
 		}
 		return undef;
