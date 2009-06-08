@@ -204,6 +204,12 @@ sub add_button {
 		     }
 		 }
 		],
+		[Button => "Ortsschilder",
+		 -command => sub {
+		     local $main::lazy_plot = 0; # lazy mode does not support bbd images yet
+		     add_new_nonlazy_layer("p", "$main::datadir/ortsschilder-orig");
+		 }
+		],
 		[Button => "routing_helper", -command => sub { add_new_nonlazy_maybe_orig_layer("str", "routing_helper") }],
 		[Button => "gesperrt_car", -command => sub { add_new_nonlazy_maybe_orig_layer("sperre", "gesperrt_car") }],
 		[Button => "brunnels", -command => sub { add_new_data_layer("str", "brunnels") }],

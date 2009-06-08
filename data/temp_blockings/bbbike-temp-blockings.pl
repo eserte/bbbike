@@ -3017,7 +3017,7 @@ EOF
        text  => 'L 15; (B109-Boitzenburg); zw. Abzw. Klein Sperrenwalde u. OL Gollmitz, Prenzlauer Str. Straßenbauarbeiten Vollsperrung 16.10.2005-19.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 31946,98379 30743,99403
+userdel	2 31946,98379 30789,99365
 EOF
      },
      { from  => 1128981600, # 2005-10-11 00:00
@@ -3163,7 +3163,7 @@ EOF
        text  => 'L 15; (B109 südl. Prenzlau-Boitzenburg); OD Gollmitz Leitungsverlegung Vollsperrung 27.10.2005-16.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 30743,99403 30482,99609
+userdel	q4 30789,99365 30482,99609
 EOF
      },
      { from  => 1130450400, # 2005-10-28 00:00
@@ -5220,7 +5220,7 @@ EOF
        text  => 'L 015 B109 südl. Prenzlau-Boitzenburg OD Gollmitz Einbau Deckschicht Vollsperrung 31.07.2006-11.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 30743,99403 30482,99609
+userdel	2::inwork 30789,99365 30482,99609
 EOF
      },
      { from  => 1163442022, # 2006-11-13 19:20
@@ -5714,7 +5714,7 @@ EOF
        text  => 'L 015 B109 südl. Prenzlau-Boitzenburg OD Gollmitz Einbau Deckschicht Vollsperrung 01.09.2006-03.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 30743,99403 30482,99609
+userdel	2::inwork 30789,99365 30482,99609
 EOF
      },
      { from  => 1157138648, # 2006-09-01 21:24
@@ -6347,7 +6347,7 @@ EOF
        text  => 'L 272 Vierraden-Woltersdorf OD Blumenhagen Kanalbau Vollsperrung 16.10.2006-31.10.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 69341,80383 69442,80070 69400,79825
+userdel	q4::inwork 69341,80383 69356,80336 69442,80070 69400,79825
 EOF
      },
      { from  => 1161036000, # 2006-10-17 00:00
@@ -6371,7 +6371,7 @@ EOF
        text  => 'B 198 Polßen-Gramzow zw. Meichow und Neumeichow Straßeninstandsetzung Vollsperrung 16.10.2006-20.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 48624,87416 48856,87456 49112,87743 49525,88337
+userdel	2::inwork 48624,87416 48772,87442 48856,87456 49112,87743 49525,88337
 EOF
      },
      { from  => 1161468000, # 2006-10-22 00:00
@@ -6379,7 +6379,7 @@ EOF
        text  => 'B 198 Polßen-Gramzow zw. Neimeichow und B166 OL Gramzow grundhafter Ausbau Vollsperrung 23.10.2006-30.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 49525,88337 49743,88576 49939,88985 49930,89857
+userdel	2::inwork 49525,88337 49743,88576 49939,88985 49935,89343 49930,89857
 EOF
      },
      { from  => 1162249200, # 2006-10-31 00:00

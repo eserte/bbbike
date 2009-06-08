@@ -147,16 +147,7 @@ userdel	q4::inwork 9209,12795 9283,12856
        undef,
        undef,
        undef,
-       {
-         'until' => 1244411999,
-         'text' => 'Treptower Festtage 5. Juni 2009 - 7. Juni 2009',
-         'from' => 1244066400,
-         'id' => 1010,
-         'data' => 'userdel	2::temp 14464,9927 14500,9856 14671,9759 14697,9726 14910,9643
-userdel	2::temp 14500,9856 14483,9843
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

@@ -446,6 +446,12 @@ orte_city: orte_city-orig
 	mv orte_city~ orte_city
 	-@$(READONLY) $@
 
+ortsschilder: ortsschilder-orig
+	-@$(WRITEABLE) $@
+	$(CONVERT_ORIG) -unutf8ify ortsschilder-orig > ortsschilder~
+	mv ortsschilder~ ortsschilder
+	-@$(READONLY) $@
+
 ampeln:	ampeln-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) ampeln-orig > ampeln~
@@ -1090,7 +1096,8 @@ do-checks:	.check_empty_lines \
 	.check_comments_scenic_2 \
 	.check_exits \
 	.check_temp_blockings .check_grenzuebergaenge \
-	.check_berlin .check_potsdam
+	.check_berlin .check_potsdam \
+	.check_ortsschilder
 
 .check_empty_lines:	*-orig
 	for i in *-orig; do $(PERL) -nle '$$_ eq q{} and die $$ARGV' $$i; done
@@ -1168,6 +1175,10 @@ check-disabled:
 
 .check_ampelschaltung:	ampelschaltung-orig ampeln-orig
 	$(CHECK_POINTS) -ampelschaltung ampelschaltung-orig ampeln-orig
+	@touch $@
+
+.check_ortsschilder:	ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) -catrx '^OS$$' ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen
 	@touch $@
 
 # XXX Information duplicated in Strassen::Cat
