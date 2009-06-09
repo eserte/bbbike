@@ -1103,15 +1103,7 @@ userdel	q2::inwork 12095,20832 11686,21058
        undef,
        undef,
        undef,
-       {
-         'until' => 1244498400,
-         'text' => 'B 087 Beeskow - Lübben zw. Birkenhainichen u. Biebersdorf Deckschichteinbau Vollsperrung 05.06.2009-08.06.2009 ',
-         'from' => 1244066400,
-         'id' => 1649,
-         'data' => 'userdel	2::inwork 52695,-45345 53268,-45117 55628,-43569
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
