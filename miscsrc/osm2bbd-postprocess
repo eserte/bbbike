@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd-postprocess,v 1.21 2009/05/31 22:43:20 eserte Exp $
+# $Id: osm2bbd-postprocess,v 1.22 2009/06/09 20:10:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -27,6 +27,7 @@ use Getopt::Long;
 
 my @targets = ('wasserstrassen_lowres',
 	       'largest_city_is_center',
+	       'guess_title_for_dataset',
 	       'inaccessible_streets',
 	       #'make_long_streets',
 	       'mount',
@@ -110,8 +111,8 @@ EOF
 }
 
 # Note: this is not perfect. It just picks the first of the cities
-# with largest category. Should probably dump more information (e.g.
-# population) in osm2bbd process and use this for better sorting.
+# with largest category. This relies on osm2bbd to sort the cities
+# by population (which it currently does).
 sub target_largest_city_is_center {
     my $meta = eval { _load_meta() };
     if ($@) {
@@ -122,30 +123,29 @@ sub target_largest_city_is_center {
 	print STDERR "center already set in meta.yml, do not overwrite, skipping" if $debug;
 	return;
     }
-    require Data::Dumper;
-    require Strassen::Core;
-    my $max = undef;
-    my $s = Strassen->new_stream("$datadir/orte");
-    $s->read_stream(sub {
-			my $r = shift;
-			if (!defined $max || $max->[Strassen::CAT()] < $r->[Strassen::CAT()]) {
-			    $max = $r;
-			}
-		    }, UseLocalDirectives => 0);
+    my $max = _get_largest_city();
     if (defined $max) {
 	print STDERR "setting $max->[Strassen::NAME()] ($max->[Strassen::COORDS()][0]) as center ";
 	$meta->{center} = [ split /,/, $max->[Strassen::COORDS()][0] ];
-	DumpFile("meta.yml~", $meta);
+	_write_meta($meta);
+    }
+}
 
-	open my $ofh, ">", "meta.dd~"
-	    or die "Cannot write to meta.dd~: $!";
-	print $ofh Data::Dumper->new([$meta],['meta'])->Sortkeys(1)->Useqq(1)->Dump;
-	close $ofh
-	    or die "While closing meta.dd~: $!";
-	rename "meta.dd~", "meta.dd"
-	    or die "While renaming meta.dd~ to meta.dd: $!";
-	rename "meta.yml~", "meta.yml"
-	    or die "While renaming meta.yml~ to meta.yml: $!";
+sub target_guess_title_for_dataset {
+    my $meta = eval { _load_meta() };
+    if ($@) {
+	print STDERR $@->{msg};
+	return;
+    }
+    if (!$force && $meta->{dataset_title}) {
+	print STDERR "dataset_title already set in meta.yml, do not overwrite, skipping" if $debug;
+	return;
+    }
+    my $max = _get_largest_city();
+    if (defined $max) {
+	print STDERR "setting $max->[Strassen::NAME()] as title for dataset ";
+	$meta->{dataset_title} = $max->[Strassen::NAME()];
+	_write_meta($meta);
     }
 }
 
@@ -230,4 +230,36 @@ sub _load_meta {
 	     };
     }
     $meta;
+}
+
+sub _write_meta {
+    my $meta = shift;
+
+    require Data::Dumper;
+
+    DumpFile("meta.yml~", $meta);
+
+    open my $ofh, ">", "meta.dd~"
+	or die "Cannot write to meta.dd~: $!";
+    print $ofh Data::Dumper->new([$meta],['meta'])->Sortkeys(1)->Useqq(1)->Dump;
+    close $ofh
+	or die "While closing meta.dd~: $!";
+    rename "meta.dd~", "meta.dd"
+	or die "While renaming meta.dd~ to meta.dd: $!";
+    rename "meta.yml~", "meta.yml"
+	or die "While renaming meta.yml~ to meta.yml: $!";
+}
+
+# Returns a 'Strassen' record
+sub _get_largest_city {
+    my $max = undef;
+    require Strassen::Core;
+    my $s = Strassen->new_stream("$datadir/orte");
+    $s->read_stream(sub {
+			my $r = shift;
+			if (!defined $max || $max->[Strassen::CAT()] < $r->[Strassen::CAT()]) {
+			    $max = $r;
+			}
+		    }, UseLocalDirectives => 0);
+    $max;
 }
