@@ -79,6 +79,20 @@ my $xb = $mw->Button(-text => 'Exit',
 		    )->pack(-side => 'bottom');
 $mw->bind('<Escape>' => sub { $xb->invoke });
 
+my %opt;
+$mw->Menubutton(-text => 'Options',
+		-menuitems => [[Checkbutton => 'Lazy drawing (experimental, faster startup)',
+				-variable => \$opt{'-lazy'},
+			       ],
+			       [Checkbutton => 'Warnings in a window',
+				-variable => \$opt{'-stderrwindow'},
+			       ],
+			       [Checkbutton => 'Advanced mode',
+				-variable => \$opt{'-advanced'},
+			       ],
+			      ]
+	       )->pack(-side => 'bottom', -anchor => 'e');
+
 my $bln = $mw->Balloon;
 $mw->Label(-text => 'Choose your city/region:')->pack;
 my $p = $mw->Scrolled("Pane", -sticky => 'nw', -scrollbars => 'ose')->pack(qw(-fill both));
@@ -88,7 +102,9 @@ for my $bbbike_datadir (sort { $a->{dataset_title} cmp $b->{dataset_title} } @bb
     Tk::grid(my $b = $p->Button(-text => $dataset_title,
 				-anchor => 'w',
 				-command => sub {
-				    my @cmd = ($^X, File::Spec->catfile($this_rootdir, 'bbbike'), '-datadir', $datadir);
+				    my @cmd = ($^X, File::Spec->catfile($this_rootdir, 'bbbike'), '-datadir', $datadir,
+					       (grep { $opt{$_} } keys %opt),
+					      );
 				    if (fork == 0) {
 					exec @cmd;
 					warn "Cannot start @cmd: $!";
@@ -127,3 +143,16 @@ EOF
 }
 
 __END__
+
+=head2 TODO
+
+ * german localization
+ * store list of lru items into a config file
+ * store options into a config file
+ * get path to config file (~/.bbbike/bbbike_chooser_options) from a yet-to-written BBBikeUtil function
+ * reorder the list to display the list of lru items at the top, with a separator to the other items
+ * get a list of further directories from a Web address
+ * download and unpack from Web
+ * update data from Web
+
+=cut
