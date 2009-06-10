@@ -506,9 +506,10 @@ Emdenzeile: Qualität?	? -3720,15717 -3646,15717 -3637,15717 -3514,15726
 Golmer Str.: Qualität?	? -3720,15717 -3866,15775 -3995,15832
 Marschallstr.: Qualität?	? -3708,15831 -3542,15871
 Rudow - Kleinziethen: Qualität?	? 15118,-970 15100,-1008 14652,-1410 14341,-1751 14119,-2010 13912,-2428 13857,-2452 13732,-2659 13540,-2681
-Mauerweg Rudow: Wege werden zurzeit noch gebaut, nur ein enger Trampelpfad kann befahren werden	? 18256,-309 18321,-195 18314,-138 18336,-103
-Mauerweg Rudow: Qualität (laut "Berliner Umland" gut geeigneter Radweg)?	? 18609,375 18724,1053 18610,1077
-Mauerweg Rudow: Existiert hier ein Verbindung vom Niederschlemaer Weg aus? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 18677,1249 18614,1453 18584,1575 18447,1727
+# XXX del: Mauerweg Rudow: Wege werden zurzeit noch gebaut, nur ein enger Trampelpfad kann befahren werden	? 18256,-309 18321,-195 18314,-138 18336,-103
+Mozartweg - Radweg: Qualität der Verbindung?	? 18659,850 18735,832
+# XXX del it's elsewhere: Mauerweg Rudow: Qualität (laut "Berliner Umland" gut geeigneter Radweg)?	? 18609,375 18724,1053 18610,1077
+# XXX del it's elsewhere: Mauerweg Rudow: Existiert hier ein Verbindung vom Niederschlemaer Weg aus? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 18677,1249 18614,1453 18584,1575 18447,1727
 # hier ist wirklich kein Weg, aber bald etwas parallel zur Autobahn: Mauerweg Rudow: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 18365,1914 18378,2246
 Grüner Weg in Marienfelde: Qualität? laut ADFC-Karte gut befahrbar	? 7781,-182 7540,18 7501,83 7231,236 7032,533 7023,694 7058,844
 # ansonsten gleiche Wegbeschaffenheit wie der kreuzende Weg:
@@ -834,7 +835,7 @@ Beenz - Kröchlendorff: Qualität (zumindest die Kröchlendorffer Seite ist asphalt
 Lindenhagen - Beenz: Qualität?	? 32388,94460 31922,94902 31069,95292 30850,95280 30510,95193 30216,94987
 Teltow Richtung Süden: Qualität? Straßennamen?	? 3377,-366 3589,-673 3615,-757 3781,-889 3970,-918 3765,-1732 3750,-2087
 Teltow Richtung Süden (Bahnstr., Flugplatzstr.): Qualität? Wie geht es weiter?	? 3494,-1950 3417,-2460 3310,-3001 3092,-3093
-Rudower Höhe: Qualität?	? 18219,1680 18404,1376 18614,1453
+#XXX del??? Rudower Höhe: Qualität?	? 18219,1680 18404,1376 18614,1453
 Mohnweg (Altglienicke): Qualität (laut ADFC-Karte mäßig geeignet)?	? 19471,448 19626,367 19728,364 19785,361 19821,358 19843,357 20035,348 20098,359 20214,375 20267,375
 Bohnsdorfer Weg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 20684,105 20668,112 20604,354 20589,403 20543,478 20510,530
 Calau - Werchow: Qualität?	? 48907,-72723 49300,-73237 49437,-74112 49539,-74585 49606,-74713 49618,-75018

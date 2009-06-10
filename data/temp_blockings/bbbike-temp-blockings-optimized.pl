@@ -1063,16 +1063,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        },
        undef,
        undef,
-       {
-         'until' => 1246053600,
-         'text' => 'K 6315 Nennhausen - Rhinsmühlen zw. Nennhausen und Kotzen Straßenbau Vollsperrung 04.05.2009-26.06.2009 ',
-         'from' => 1241301600,
-         'id' => 1637,
-         'data' => 'userdel	2::inwork -50010,23562 -50201,23411 -50255,22794 -50938,21256
-userdel	2::inwork -50149,24689 -50048,24475 -49883,24097
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1088,17 +1079,7 @@ userdel	2::inwork -50149,24689 -50048,24475 -49883,24097
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => undef,
-         'text' => 'Bauarbeiten in der Pasewalker Str., Marienstraße ist eine Sackgasse, aber Radfahrer können passieren',
-         'from' => undef,
-         'id' => 1644,
-         'data' => '#: by: Axel Schumacher:
-#: last_checked: 2009-05
-userdel	q2::inwork 12095,20832 11686,21058
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1294,7 +1275,15 @@ userdel	q4::inwork 9126,12413 9345,12443
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'until' => 1244844000,
+         'text' => 'L 303 Umgehungsstraße OD Eggersdorf, Krz. E.-Thälmann-Str. Deckenerneuerung Vollsperrung 25.05.2009-12.06.2009 ',
+         'from' => 1243116000,
+         'id' => 1681,
+         'data' => 'userdel	q4::inwork 38771,14926 38637,14790
+',
+         'type' => 'handicap'
+       },
        undef,
        {
          'until' => 1245103200,
@@ -1398,6 +1387,72 @@ userdel	q4::inwork 9126,12413 9345,12443
          'data' => 'userdel	q4::inwork -7114,54591 -7387,54453
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'source_id' => 'IM_012983',
+         'until' => 1245103199,
+         'text' => 'Charlottenstr. (Mitte) in beiden Richtungen zwischen Französische Str. und Jägerstr. Baustelle, Straße vollständig gesperrt (bis Mitte 06.2009)',
+         'from' => 1244584599,
+         'id' => 1695,
+         'data' => 'userdel	q4::inwork 9516,12010 9504,12108
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_012990',
+         'until' => 1244865600,
+         'text' => 'John-Foster-Dulles-Allee (Tiergarten) in beiden Richtungen zwischen Große Querallee und Yitzhak-Rabin-Str. Veranstaltung, Straße vollständig gesperrt (bis 13.06.2009, ca. 6 Uhr)',
+         'from' => 1244584654,
+         'id' => 1696,
+         'data' => 'userdel	2::temp 8119,12414 8070,12409 8017,12359 7875,12363
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1254348000,
+         'text' => 'B 102 Treuenbrietzener Str. OD Jüterbog, zw. Parkstr. und Bülowstr. Straßenausbau Vollsperrung 15.06.2009-30.09.2009 ',
+         'from' => 1244930400,
+         'id' => 1697,
+         'data' => 'userdel	q4::inwork -13089,-46170 -12581,-46124
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1257030000,
+         'text' => 'K 6153 L 39 Wenzlow - Königs Wusterhausen OD Friedrichshof Straßenneubau Vollsperrung 15.06.2009-31.10.2009 ',
+         'from' => 1244930400,
+         'id' => 1698,
+         'data' => 'userdel	q4::inwork 35981,-9481 35666,-9320 35315,-9216
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1262300400,
+         'text' => 'K 6828 Altfriesack - Wuthenow OD Karwe, Lange Straße Kanal- u. Straßenbau Vollsperrung 08.06.2009-31.12.2009 ',
+         'from' => 1244325600,
+         'id' => 1699,
+         'data' => 'userdel	q4::inwork -28001,50966 -27421,50349 -27196,50015
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1261350000,
+         'text' => 'K 6938 Görzke - Hohenlobbese OD Görzke, zw. B107 und. Reppinicher Str., 2 Bauabschn. Kanalarbeiten Vollsperrung 08.06.2009-20.12.2009 ',
+         'from' => 1244325600,
+         'id' => 1700,
+         'data' => 'userdel	q4::inwork -59599,-27568 -59265,-27286 -58799,-27258
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1244757600,
+         'text' => 'L 402 Zeuthen - Schulzendorf Bahnübergang Forstweg in Zeuthen Gleisbauarbeiten Vollsperrung 10.06.2009-11.06.2009 ',
+         'from' => 1244498400,
+         'id' => 1701,
+         'data' => 'userdel	2::inwork 26001,-6257 26057,-6241 26146,-6218
+',
+         'type' => 'gesperrt'
        }
      
 );
