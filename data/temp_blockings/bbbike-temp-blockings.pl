@@ -2329,7 +2329,7 @@ EOF
        text  => 'B 87; zw. Hohenwalde und Müllrose Munitionsbergung Vollsperrung 29.07.2005-06.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 81786,-12568 81278,-13886
+userdel	2 81697,-12826 81362,-13667 81278,-13886
 EOF
      },
      { from  => 1121896800, # 2005-07-21 00:00
@@ -2610,7 +2610,7 @@ EOF
        text  => 'B 167; (Frankfurter Str.); OD Seelow, zw. Breite Str. u. Berliner Str. Stadtfest Vollsperrung 03.09.2005-03.09.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 76771,15413 77081,14637
+userdel	q4 76771,15413 76986,14860
 EOF
      },
      { from  => 1125698400, # 2005-09-03 00:00
@@ -5366,7 +5366,7 @@ EOF
        text  => 'B 167 Frankfurter Str. OL Seelow, zw. breite Str. u. Küstriner Str. Stadtfest Vollsperrung 01.09.2006-03.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::temp 76771,15413 77081,14637
+userdel	q4::temp 76771,15413 76986,14860
 EOF
      },
      { from  => 1155765600, # 2006-08-17 00:00
@@ -6835,7 +6835,7 @@ EOF
        text  => 'B 168 Frankfurter Chaussee Bahnübergang Bahnhof Oegeln Gleisbauarbeiten Vollsperrung 15.12.2006-18.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 70984,-23637 70075,-24862
+userdel	2::inwork 70924,-23663 70065,-24817
 EOF
      },
      { from  => 1166310000, # 2006-12-17 00:00
@@ -7032,7 +7032,7 @@ EOF
        text  => 'B 112 Bereich Kunersdorfer Grund Errichtung Radwegbrücke Vollsperrung 08.02.2007-09.02.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 86769,1414 87351,3652
+userdel	2::inwork 86769,1414 87344,3693
 EOF
      },
      { from  => 1173515301, # 2007-03-10 09:28
@@ -7832,7 +7832,7 @@ EOF
        text  => 'B 167 zw. Dolgelin und Friedersdorf Inbetriebnahme OU Vollsperrung 23.04.2007-15.07.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 78805,11331 78753,11368 78194,11798 77991,12506 77759,12767
+userdel	2::inwork 78805,11331 78637,11458 78240,11748 77991,12506 77759,12767
 EOF
      },
      { from  => 1177538400, # 2007-04-26 00:00
@@ -8475,7 +8475,7 @@ EOF
        text  => 'B 168 zw. Fürstenwalde und Trebus Grundhafter Straßenbau Vollsperrung 25.06.2007-31.08.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 54195,309 54279,10 54341,-331 54657,-1293
+userdel	2::inwork 54195,309 54279,10 54341,-331 54632,-1291
 EOF
      },
      { from  => 1181167200, # 2007-06-07 00:00
@@ -9438,7 +9438,7 @@ EOF
        text  => 'B 167 Lebus-Seelow OD Dolgelin Kanal-,Straßen- u. Radwegbau Vollsperrung 27.09.2007-30.11.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 78194,11798 78753,11368 78805,11331
+userdel	q4::inwork 78240,11748 78637,11458 78805,11331
 EOF
      },
      { from  => 1186610400, # 2007-08-09 00:00
@@ -9567,7 +9567,7 @@ EOF
        text  => 'B 168 zw. Friedland und Beeskow Straßenbauarbeiten Vollsperrung 10.09.2007-31.12.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 69461,-27572 69160,-25724
+userdel	2::inwork 69461,-27572 69234,-26113 69227,-25669
 EOF
      },
      { from  => 1187560800, # 2007-08-20 00:00
@@ -9575,7 +9575,7 @@ EOF
        text  => 'K 6402 Ernst-Thälmann-Str. OD Dolgelin, Krz. Hauptstr. Kanal-,Straßen- u. Radwegbau Vollsperrung 21.08.2007-20.09.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 78753,11368 78711,11343 78598,11099
+userdel	q4::inwork 78637,11458
 EOF
      },
      { from  => 1187474400, # 2007-08-19 00:00
@@ -9742,7 +9742,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 74920,-18929 76631,-18359
-userdel	2::inwork 71815,-22343 73222,-20567 74707,-18991
+userdel	2::inwork 71815,-22343 72808,-20985 73222,-20567 74707,-18991
 EOF
      },
      { from  => 1189714564, # 2007-09-16 00:00 FALSCH!
@@ -10693,7 +10693,7 @@ EOF
        text  => 'B 168 zw. Friedland und Beeskow Straßenbauarbeiten Vollsperrung 28.08.2007-20.12.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 69461,-27572 69160,-25724
+userdel	2::inwork 69461,-27572 69234,-26113 69227,-25669
 EOF
      },
      { from  => 1197327600, # 2007-12-11 00:00
@@ -10871,7 +10871,7 @@ EOF
        text  => 'B 168 Prötzel - Tiefensee zw. Prötzel und Abzw. Gielsdorf Deckenerneuerung Vollsperrung 05.03.2008-13.05.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 48953,26802 48260,27132 46629,27232 44331,27632 44074,27889 41563,28973
+userdel	2::inwork 48953,26802 48260,27132 46629,27232 44331,27632 44164,27738 44003,27939 41532,28941
 EOF
      },
      { from  => 1203462000, # 2008-02-20 00:00
@@ -10920,7 +10920,7 @@ EOF
        text  => 'B 168 zw. Abzw. Zeust und Beeskow Straßenbauarbeiten Vollsperrung 03.03.2008-04.07.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 69461,-27572 69160,-25724
+userdel	2::inwork 69461,-27572 69234,-26113 69227,-25669
 EOF
      },
      { from  => 1205622000, # 2008-03-16 00:00
@@ -11324,7 +11324,7 @@ EOF
        text  => 'B 168 Prötzel - Tiefensee zw. Prötzel, Stadtstelle und KG, Höhe Gamensee Deckenerneuerung Vollsperrung 13.05.2008-31.07.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 41326,28975 40337,28961 40135,28824 39921,28733 39155,29093
+userdel	2::inwork 41299,28974 40339,28934 40135,28824 39921,28733 39155,29093
 EOF
      },
      { from  => 1209852000, # 2008-05-04 00:00
@@ -11475,7 +11475,7 @@ EOF
        text  => 'L 023 Strausberg - B168 - Eberswalde Abzw. Tiefensee-Prötzel aus Ri. Gielsdorf Deckenerneuerung Vollsperrung 13.05.2008-31.07.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 41300,28061 41326,28975
+userdel	2::inwork 41274,28075 41299,28974
 EOF
      },
      { from  => 1210543200, # 2008-05-12 00:00
@@ -11594,7 +11594,7 @@ EOF
        text  => 'B 112 Lebus - Manschnow OD Rathstock Erneuerung Durchlass Vollsperrung 16.06.2008-30.06.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 87843,13999 87889,14339
+userdel	2::inwork 87942,14273
 EOF
      },
      { from  => 1213480800, # 2008-06-15 00:00
@@ -12734,7 +12734,7 @@ EOF
        text  => 'K 6435 Ernst-Thälmann-Str. OD Seelow, zw. R.-Koch-Str. und Werbiger Str. Straßeninstandsetzung Vollsperrung 29.09.2008-19.10.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 76771,15413 76567,16056
+userdel	q4::inwork 76771,15413 76589,15970
 EOF
      },
      { from  => 1221948000, # 2008-09-21 00:00
@@ -13274,7 +13274,7 @@ EOF
        text  => 'L 035 Saarower Chaussee/ Friedensstr. Autobahnbrücke Friedensstr. in Fürstenwalde Ri. Petersdorf Brückenabbruch 16.02.2009-21.02.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 56428,-6340 56416,-7090
+userdel	1::inwork 56358,-6276 56333,-6677 56312,-6895 56416,-7090
 EOF
      },
      { from  => 1234122499, # 2009-02-08 20:48
@@ -13444,7 +13444,7 @@ EOF
        text  => 'L 035 Kno. Friedensstr./ Saarower Chausse OL Fürstenwalde, Abzw. Friedensstr. Brückenabbruch A 12 Friedensstr. gesperrt 13.03.2009-31.03.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 56416,-7090 56428,-6340
+userdel	2::inwork 56416,-7090 56312,-6895 56333,-6677 56358,-6276
 EOF
      },
      { from  => 1237417200, # 2009-03-19 00:00
