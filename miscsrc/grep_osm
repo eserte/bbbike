@@ -36,16 +36,18 @@ use Encode qw(decode encode);
 use Getopt::Long;
 use XML::LibXML;
 
-use constant CONTEXT_LINES => 30; # to be on the safe side...
+use constant DEFAULT_CONTEXT_LINES => 30; # to be on the safe side...
 use constant OSM_FILE_ENCODING => 'utf-8'; # assume all XML files are utf8
 
+my $context_lines = DEFAULT_CONTEXT_LINES;
+
 sub usage {
-    die "usage: $0 searchterm osmfile ...\n";
+    die "usage: $0 [-coordsys bbbike] [-context nr_of_lines] searchterm osmfile ...\n";
 }
 
 sub grep_osm_fh {
     my($search_term, $osm_file) = @_;
-    my @common_opts = ('-i', -A => CONTEXT_LINES, -B => CONTEXT_LINES);
+    my @common_opts = ('-i', -A => $context_lines, -B => $context_lines);
     $search_term = encode OSM_FILE_ENCODING, $search_term;
     my @cmd;
     if ($osm_file =~ m{\.bz2$}) {
@@ -72,7 +74,24 @@ sub set_info_handler {
     };
 }
 
-GetOptions() or usage;
+my $coordsys;
+GetOptions("coordsys=s" => \$coordsys,
+	   "context=i" => \$context_lines,
+	  ) or usage;
+
+my $out_conv;
+my $coordsys_map = 'polar';
+if ($coordsys) {
+    if ($coordsys eq 'bbbike') {
+	require Karte::Polar;
+	require Karte::Standard;
+	no warnings 'once';
+	$out_conv = sub { join ",", $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard(split /,/, $_[0])) };
+	$coordsys_map = 'standard'; # XXX can I use 'bbbike' instead?
+    } else {
+	die "Only -coordsys bbbike allowed";
+    }
+}
 
 my $index_dir = "$ENV{HOME}/.bbbike/cache";
 if (!-d $index_dir) {
@@ -121,6 +140,8 @@ for my $osm_file (@osm_files) {
 		    my $lonlat = $nodes_lonlat{$nd_ref};
 		    if (defined $lonlat) {
 			push @coords, $lonlat;
+		    } else {
+			warn "WARN: Node $nd_ref cannot be resolved.\n";
 		    }
 		}
 	    } else { # node
@@ -153,14 +174,14 @@ for my $osm_file (@osm_files) {
 		print <<EOF;
 #: #: -*- coding: $codeset -*-
 #: encoding: $codeset
-#: map: polar
+#: map: $coordsys_map
 #: note: filtered '$search_term' in '@osm_files'
 #:
 EOF
 		$needs_header = 0;
 	    }
 
-	    print join(" ", @tags) . "\tX " . join(" ", @coords), "\n";
+	    print join(" ", @tags) . "\tX " . ($out_conv ? join(' ', map { $out_conv->($_) } @coords) : join(' ', @coords)), "\n";
 	}
     }
 }
@@ -172,7 +193,7 @@ grep_osm - find nodes and ways in osm data by name
 
 =head1 SYNOPSIS
 
-    ./grep_osm searchregexp osmfile ...
+    ./grep_osm [-coordsys bbbike] [-context lines] searchregexp osmfile ...
 
 =head1 DESCRIPTION
 
@@ -185,6 +206,14 @@ L<cache_osm_nodes>, otherwise no coordinate mapping is possible.
 
 Output is in a bbd-like format, which can be loaded into L<bbbike>.
 
+By default the coordinates are in WGS84 format (lon, lat), but by
+specifying C<-coordsys bbbike> the old BBBike standard coordinates may
+be returned.
+
+If the feature is large, then the default number of context lines for
+the internal 'grep' (default is 30) is not large enough. With the
+C<-context> switch the number of context lines may be increased.
+
 =head1 BUGS
 
 Search is case-insensitive, but only for ASCII characters.
@@ -192,6 +221,9 @@ Search is case-insensitive, but only for ASCII characters.
 The search regexp is internally used by C<egrep> and C<perl>. Try to
 use only regular expression constructs which are compatible with both
 programs.
+
+The usage of context lines is a hack. Especially for large features it
+is necessary to use a larger C<-context> value.
 
 =head1 SEE ALSO
 
