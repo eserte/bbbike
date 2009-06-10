@@ -29,7 +29,8 @@ eval {
 if ($@) {
     warn "langinfo and/or CODESET probably not available, assuming iso-8859-1.\n";
     $codeset = 'iso-8859-1';
-}    
+}
+$codeset = lc $codeset; # 'UTF-8' is not recognized by emacs, but 'utf-8' is
 
 use DB_File;
 use Encode qw(decode encode);
@@ -125,63 +126,66 @@ for my $osm_file (@osm_files) {
 
     # Hack to find way and node elements in XML. Ignores
     # empty-elements (because they cannot have "name" tags, anyway).
-    while ($buf =~ m{(<(?:way|node) [^>]+(?<!/)>.*?</(?:way|node)>)}gs) {
-	my $xml_frag = $1;
-	if ($xml_frag =~ m{$search_term}i) {
-	    my $frag = eval { $p->parse_string($xml_frag) };
-	    if ($@) {
-		warn "Cannot parse\n$xml_frag\n$@";
-		next;
-	    }
-	    $frag = $frag->documentElement;
-	    my @coords;
-	    if ($frag->nodeName eq 'way') {
-		for my $nd_ref (map { $_->getAttribute('ref') } $frag->findnodes('//nd')) {
-		    my $lonlat = $nodes_lonlat{$nd_ref};
-		    if (defined $lonlat) {
-			push @coords, $lonlat;
-		    } else {
-			warn "WARN: Node $nd_ref cannot be resolved.\n";
-		    }
+    my @bufs = split /^--$/m, $buf;
+    for my $buf (@bufs) {
+	while ($buf =~ m{(<(?:way|node) [^>]+(?<!/)>.*?</(?:way|node)>)}gs) {
+	    my $xml_frag = $1;
+	    if ($xml_frag =~ m{$search_term}i) {
+		my $frag = eval { $p->parse_string($xml_frag) };
+		if ($@) {
+		    warn "Cannot parse\n$xml_frag\n$@";
+		    next;
 		}
-	    } else { # node
-		push @coords, join ',', $frag->getAttribute('lon'), $frag->getAttribute('lat');
-	    }
-	    if (!@coords) {
-		warn "No coords found in $xml_frag";
-		next;
-	    }
+		$frag = $frag->documentElement;
+		my @coords;
+		if ($frag->nodeName eq 'way') {
+		    for my $nd_ref (map { $_->getAttribute('ref') } $frag->findnodes('//nd')) {
+			my $lonlat = $nodes_lonlat{$nd_ref};
+			if (defined $lonlat) {
+			    push @coords, $lonlat;
+			} else {
+			    warn "WARN: Node $nd_ref cannot be resolved.\n";
+			}
+		    }
+		} else {	# node
+		    push @coords, join ',', $frag->getAttribute('lon'), $frag->getAttribute('lat');
+		}
+		if (!@coords) {
+		    warn "No coords found in $xml_frag";
+		    next;
+		}
 
-	    my @tags;
-	    for my $tag ($frag->findnodes('//tag')) {
-		my $k = $tag->getAttribute('k');
-		my $v = $tag->getAttribute('v');
-		s{[\t\n]}{ }g for $k, $v;
-		push @tags, "$k=$v";
-	    }
-	    for my $k (qw(user timestamp id)) {
-		my $v = $frag->getAttribute($k);
-		if (defined $v) {
-		    s{[\t\n]}{ }g for $v;
+		my @tags;
+		for my $tag ($frag->findnodes('//tag')) {
+		    my $k = $tag->getAttribute('k');
+		    my $v = $tag->getAttribute('v');
+		    s{[\t\n]}{ }g for $k, $v;
 		    push @tags, "$k=$v";
 		}
-	    }
+		for my $k (qw(user timestamp id)) {
+		    my $v = $frag->getAttribute($k);
+		    if (defined $v) {
+			s{[\t\n]}{ }g for $v;
+			push @tags, "$k=$v";
+		    }
+		}
 
-	    # re-sort, name= first, created_by last
-	    @tags = map { $_->[1] } sort { $a->[0] <=> $b->[0] } map { [m{^name=} ? 0 : m{^created_by=} ? 2 : 1, $_] } @tags;
+		# re-sort, name= first, created_by last
+		@tags = map { $_->[1] } sort { $a->[0] <=> $b->[0] } map { [m{^name=} ? 0 : m{^created_by=} ? 2 : 1, $_] } @tags;
 
-	    if ($needs_header) {
-		print <<EOF;
+		if ($needs_header) {
+		    print <<EOF;
 #: #: -*- coding: $codeset -*-
 #: encoding: $codeset
 #: map: $coordsys_map
 #: note: filtered '$search_term' in '@osm_files'
 #:
 EOF
-		$needs_header = 0;
-	    }
+		    $needs_header = 0;
+		}
 
-	    print join(" ", @tags) . "\tX " . ($out_conv ? join(' ', map { $out_conv->($_) } @coords) : join(' ', @coords)), "\n";
+		print join(" ", @tags) . "\tX " . ($out_conv ? join(' ', map { $out_conv->($_) } @coords) : join(' ', @coords)), "\n";
+	    }
 	}
     }
 }
