@@ -10,6 +10,7 @@
 #: section projektierte Radstreifen der Verkehrsverwaltung vvv
 #: last_checked: 2008-06-21
 #: XXX: laut http://www.berlin.de/ba-pankow/presse/archiv/20081009.1220.111237.html sollten die Bauarbeiten nun beendet sein
+#: XXX: in osm ist schon cyclepath=lane komplett eingetragen, aber waren hier schon die provisorischen gemeint?
 Wisbyer Str.: Radstreifen sind noch provisorisch	? 12091,16209 12026,16247 11887,16320 11828,16335 11807,16340 11727,16358 11688,16365 11632,16373 11542,16384 11470,16393 11448,16398 11397,16405 11289,16423 11019,16465
 #: last_checked: 2009-05-26
 Frankfurter Allee: Radstreifen ist noch provisorisch	?; 15361,12071 15117,12106
@@ -26,17 +27,12 @@ Breite Str./Werderscher Markt	? 10267,12305 10170,12261 10109,12238 10084,12228 
 #: XXX: zumindest zwischen Danziger Str. und Berliner Allee gibt es auf der östlichen Seite eine Radspur, kurz unterbrochen unter der S-Bahnbrücke, teilweise mit, teilweise ohne Benutzungspflicht, vor einer Kreuzung (Michelangelostr.?) kurz auf dem Gehweg geführt
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 Greifswalder Str.	? 12332,14526 12384,14600 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941 12628,14962 12722,15105 12743,15138 12880,15335 12966,15478 13098,15592 13229,15692 13316,15758
-#: last_checked: 2007-09-07
-Vulkanstraße	? 15912,13153 15897,13512 15896,13547
 # XXX laut Luftbild fertig: last_checked: 2006-06-16 (von Corinna):Gorkistr.	? 2998,20487 2974,20483 2615,20421
 # XXX del: Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 18098,11720 17966,11730 17746,11748 17497,11769 17440,11774 17240,11791
 #: last_checked: 2007-07-15
 Löhleinstraße	? 2717,5578 2499,5144 2454,5067 2288,4932
-#: last_checked: 2007-07-15
+#: last_checked: 2009-05-02
 Saargemünder Straße	? 2027,4792 1884,4811 1747,4829 1479,4853
-#: last_checked: 2007-09-15
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20061113.1305.50310.html (Termin abgelaufen)
-Pacelliallee	? 2659,6499 2711,6698 2714,6857 2723,7029
 #: by ^^^
 # XXX del: hier passiert bestimmt nichts mehr: by Berliner Kurier: vvv Max-Beer-Str.: Fahrradstraße geplant (2005, aber noch nichts passiert)	? 10632,13199 10703,13467 10740,13621
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
@@ -123,7 +119,7 @@ B96a: Neubau der Radwege (gemeinsam mit Gehweg); wahrscheinlich wird der Radstre
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20080327.1225.97044.html
 Ahrensfelder Chaussee: Radstreifen in Bau, bis 2008-10	? 20160,18301 20460,18420 20582,18468 20624,18485 20915,18601 21143,18704 21278,18786 21332,18819
 #: by: http://www.reinickendorf.de/index_8368_de.html
-Wittenauer Str.: Ausbau zum verkehrsberuhigten Bereiche, außerdem Ersetzen des Pflasters durch eine Betonpflasterfahrbahn (Verbundsteinpflaster?), bis 2009-03-01 (Frühjahr 2009)	? 6666,22988 6651,23020 6644,23036 6634,23076 6712,23252 6727,23287 6770,23417
+Wittenauer Str.: Ausbau zum verkehrsberuhigten Bereich, außerdem Ersetzen des Pflasters durch eine Betonpflasterfahrbahn (Verbundsteinpflaster?), bis 2009-03-01 (Frühjahr 2009)	? 6666,22988 6651,23020 6644,23036 6634,23076 6712,23252 6727,23287 6770,23417
 Blankenfelde, Berliner Str. und Hauptstr: nach Bauarbeiten (bis 2009-04-01) vielleicht bessere Fahrbahnqualität?	?::inwork 9528,23240 9490,23531 9425,23693 9625,23781 9774,23936
 #: by: http://www.berliner-stadtplan.com/topic/bln/str/x_wgs/22.04/y_wgs/28.92/from/form.html
 #: by: http://www.morgenpost.de/content/2006/09/20/bezirke/855150.html
@@ -138,7 +134,7 @@ Verbindung zwischen Leuthener Platz und General-Pape-Str. (evtl. mit Verlängerun
 #: last_checked (by steffi silvermidi): 2008-03
 Blanckertzweg: Radwege in Planung (ebenso östlicher Teil der Hildburghauser Str.)	? 4806,1360 4634,1245 4542,1188
 Aalemannkanal: laut ADFC-Karte/neu Brücke geplant	? -2053,18375 -2156,18310
-Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	? 29192,-10630 29088,-10386 28918,-10301 28723,-10326 28485,-10143
+Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	? 29192,-10630 29088,-10386 29021,-10333 28918,-10301 28723,-10326 28656,-10329 28539,-10255 28499,-10164
 # : by: http://www.eyth16.de/weblog/2005/11/04/145/
 # : last_checked: 2006-03-29
 # : note: schien beim letzten Check noch offen
@@ -147,27 +143,26 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	? 29192,-10630 29088,
 Mauerweg am Nordbahnhof: wo genau?	?::inwork 9221,13992 8907,14398
 #: by: berliner-stadtplan.com
 #: by: http://www.berlinonline.de/berliner-kurier/archiv/.bin/dump.fcgi/2005/1110/berlin/0033/index.html
-#: next_check: 2009-01-01
+#: next_check: 2009-08-01
 Grenzweg: Brücke über die Spree bzw. Straßenverbindung zwischen Rummelsburger Landstraße und Schnellerstr. soll 2009 fertig werden	?::inwork 17082,7189 16954,7096
 # XXX del laut http://www.berlin.lsvd.de/cms/index.php?option=com_content&task=view&id=184&Itemid=175 nicht mehr in Planung, keine weiteren Treffer im Web! Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
-#: next_check: 2005-11-25
 # XXX del Gramzow: nach Abschluss der Bauarbeiten kein Kopfsteinpflaster mehr?	? 50109,89725 49930,89857
 # XXX del next_check: 2005-11-30 Großziethen: Kopfsteinpflaster nur Richtung Süden, nach den Arbeiten kein Kopfsteinpflaster mehr?	?; 12984,1011 13090,205 13225,-681 13309,-1268
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1370
 #: note: Havelradweg
 Werder - Phöben: Radweg in Planung, Realisierung bis 2007-12-31	? -22206,-1693 -22672,-1511 -23124,-1235 -23199,-903 -23175,-350 -23411,15 -23896,653 -24509,1607 -24680,1670 -24894,1733
-Reiterhof, Phöben - Havelfähre: Radweg in Planung auf dem Deich, Realisierung bis 2007-12-31	? -25669,2939 -25524,2957 -25503,3012 -25503,3013 -25523,3122 -25530,3223 -25511,3313 -25425,3364 -25345,3389 -25282,3433 -25191,3442 -25198,3540 -25262,3561 -25373,3653 -25460,3795 -25563,3940 -25592,3985 -25578,4203 -25471,4332 -25506,4488 -25723,4736 -25725,4734 -25726,4734 -25855,4868 -25942,5010 -26073,5175 -26215,5272 -26647,5444 -26755,5459 -26918,5525
-Havelfähre - Trebelberg: Radweg in Planung, teilweise auf dem Deich, Realisierung bis 2007-12-31	? -26918,5525 -27169,5667 -27239,5694 -27344,5769 -27537,5873 -27679,5929 -27873,6033 -28007,6147 -28158,6227 -28398,6324 -28418,6351 -28778,6516 -28755,6544 -28757,6542 -29169,6718 -29225,6532 -29272,6453 -29279,6367 -29507,6251 -29501,6153 -29526,6093 -29580,6051 -29618,5962 -29969,5876 -30861,5444 -30916,4354
-Trebelberg - Götz: Radweg in Planung, teilweise auf dem Deich, Realisierung bis 2007-12-31	? -30916,4354 -31989,4610 -32269,4847 -32525,4957 -32836,4701 -32854,4530 -32897,4268 -33031,4079 -33335,3994 -34204,3223 -35063,1837 -35855,561
+Reiterhof, Phöben - Havelfähre: Radweg in Planung auf dem Deich, Realisierung bis 2007-12-31	? -25787,3228 -25765,3246 -25530,3223 -25511,3313 -25425,3364 -25345,3389 -25282,3433 -25191,3442 -25198,3540 -25262,3561 -25373,3653 -25460,3795 -25563,3940 -25592,3985 -25578,4203 -25471,4332 -25506,4488 -25723,4736 -25725,4734 -25726,4734 -25855,4868 -25942,5010 -26073,5175 -26215,5272 -26647,5444 -26755,5459 -26918,5525
+#: XXX mit Streckenführung in osm vergleichen
+Havelfähre - Trebelberg: Radweg in Planung, teilweise auf dem Deich, Realisierung bis 2007-12-31	? -26918,5525 -27169,5667 -27239,5694 -27344,5769 -27537,5873 -27679,5929 -27873,6033 -28007,6147 -28158,6227 -28398,6324 -28418,6351 -28778,6516 -28755,6544 -28757,6542 -29169,6718 -29225,6532 -29272,6453 -29279,6367 -29507,6251 -29501,6153 -29526,6093 -29580,6051 -29618,5962 -29969,5876 -29960,5808 -29883,5747 -29792,5636 -30714,5328 -30571,4759 -30814,4732 -30785,4243
+#: XXX mit Streckenführung in osm vergleichen
+Trebelberg - Götz: Radweg in Planung, teilweise auf dem Deich, Realisierung bis 2007-12-31	? -30785,4243 -31154,4222 -32084,4555 -31797,4911 -31914,4963 -31987,4900 -32261,4875 -32525,4957 -32836,4701 -32854,4530 -32897,4268 -33031,4079 -33335,3994 -33545,3812 -33724,3833 -33810,3769 -33846,3529 -34021,3446 -34198,3561 -34399,3482 -34754,3547 -34644,3235 -34804,3090 -35063,1837 -35855,561
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1370
+#: XXX mit Streckenführung in osm vergleichen
 Havelfähre - Brandenburg: Planung des Havelradwegs, genaue Strecke, Realisierung bis 2007-12-31?	? -35855,561 -40569,935
 #: last_checked: 2006-10-14
 Lichterfeld - Besucherbergwerk F60: Radweg in Bau	? 37870,-89814 37883,-89858 37885,-89996 37960,-90233 38002,-90351 38101,-90412
-# XXX del by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20061103.1420.49764.html #: last_checked: 2007-12-22 Frankfurter Allee am S-Bhf. Richtung Westen: Radstreifen soll Radweg ablösen (zurzeit ist bereits ein provisorischer Radstreifen angelegt)	?; 15361,12071 15117,12106
-# XXX del das wird hier wohl nicht hier passieren: #: last_checked: 2009-06-06 Bertiniweg: hier soll demnächst die Mauerweg-Alternative verlaufen	? -12335,1928 -12436,2015 -12484,2024 -12515,2067 -12527,2134 -12585,2143 -12676,2088 -12713,2000
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1957
 Radweg von Penkow nach Malchow: beidseitig, asphaltiert, 2,25m breit, 2008-08-01 fertiggestellt	? -54521,116188 -55301,116578 -57151,117294 -57614,117523 -57683,117755 -58208,117685
-Bergstr. (Wildau): Tunnel statt Bahnübergang in Bau	?::inwork 26381,-9962 26308,-9995 25700,-9502
 Fußgängerbrücke über den Nordhafen in Planung	?::inwork -2560,16212 -2548,16305 -2542,16384 -2620,16380
 #: last_checked: 2009-06-06
 Fritz-von-der-Lancken-Str.: Verlängerung in Bau	?::inwork -13005,1933 -12775,1956
@@ -186,8 +181,13 @@ Fritz-von-der-Lancken-Str - Höhenweg: Straße in Bau	?::inwork -12766,1932 -12636
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 # 
+#: XXX_indoor:
+eigentlich ein Knoten	? -9586,13296
+#: XXX_indoor:
+eigentlich ein Knoten	? -11250,13690
 #: XXX_prog:
 Potsdamer Str. oder Hauptstr.: Richtung Norden Hauptstr., Richtung Süden Potsdamer Str.	? 7479,9357 7517,9454
+#: XXX_indoor:
 Zur Eisackstr.: ist sogar ausgeschildert, sollte vielleicht aufgenommen werden	? 6409,8026 6429,7876
 #: XXX_prog: vvv
 Rheinstr.: beginnt bereits hier, aber nur in Richtung Süden	? 5928,7370 5902,7334
@@ -246,7 +246,7 @@ Französische Str.: Vorfahrt (kann ich das so ausdrücken, mit zwei Punkten?)	? 91
 #: XXX laut Detlef Hoge:
 auf der östlichen Seite der B101n: wo genau ist der Radweg hier?	? 6173,-2344 5957,-2575 5627,-2671
 #: XXX laut holger, hd, sav:
-Drängelgitter/Schranke	? 8810,14373
+Drängelgitter/Schranke	? 8825,14401
 #: by: Message-ID: <Xns96A387773A8B04usenet@krickstadt.de>:
 #: by: http://archiv.tagesspiegel.de/archiv/30.07.2005/1962466.asp:
 Spree: ist dieser Spreearm wiederhergestellt worden?	? 43394,-2017 43296,-2181 43357,-2501 43220,-2544 43129,-2437 43162,-2242 43053,-2114
@@ -454,11 +454,10 @@ Helmut-Just-Str. (Hohen Neuendorf): Asphalt Q1	? 4054,29959 4132,29954 4487,2999
 ######################################################################
 #
 #  ÖFFENTLICHE FRAGEZEICHEN
-#
-Neuenhagen, Richtung Schöneiche: existiert hier ein Radweg (wahrscheinlich ab 2006-12-31)?	? 31146,12747 31059,12471 31037,12174
+# 
+Neuenhagen, Richtung Schöneiche: existiert hier ein Radweg (wahrscheinlich ab 2006-12-31)?	? 31148,12804 31043,12392 31021,12174
 Buch - Schwanebeck: existiert hier ein Radweg (wahrscheinlich ab 2006-09-30)?	? 18562,24975 19395,24634
-Bis zum Güterfelder Eck: existiert hier ein Radweg (wahrscheinlich ab 2006-09-26)?	? -6277,-3348 -5736,-3629
-Biegen - Müllrose: existiert hier ein Radweg (wahrscheinlich ab 2006-10-31)	? 79811,-15315 78364,-14355
+Biegen - Müllrose: existiert hier ein Radweg (wahrscheinlich ab 2006-10-31)	? 79768,-15263 78364,-14355
 Werderscher Damm: existiert hier ein Radweg in Höhe Kaserne (wahrscheinlich ab 2006-11-30)?	? -18542,-2568 -18733,-2697 -19640,-3173
 B5: existiert ein Radweg in Höhe Wusterhausen (wahrscheinlich ab 2006-09-29)?	? -54140,51565 -54518,51910 -54926,52781
 B246: existiert ein Radweg bei Nächst Neuendorf (wahrscheinlich ab 2006-11-15)?	? 11412,-19943 11136,-20007
@@ -541,13 +540,6 @@ B101 bis Großbeeren: hier auch ein Radweg?	? 5394,-3053 5068,-3719 4842,-4182 45
 Potsdamer Str., Wilhelm-Külz-Str., Bäkedamm, Potsdamer Allee: wo gibt es überall Radwege?	? -2477,-1717 -2276,-1621 -2073,-1525 -1668,-1709 -1453,-1715 -1303,-1758 -1143,-1759 -705,-1564 -282,-1184 -71,-1037 348,-743 465,-662 741,-584 925,-684 1212,-706 1346,-762
 B273: hier auch Radweg?	? -14737,300 -14859,421 -15158,589 -15527,795
 Basdorf - Bernauer Heide: Ist der Weg wegen der Bahnstrecke überhaupt passierbar? Qualität? Dürfen hier Autos fahren?	? 12887,36543 13723,36178
-Zugbrücke/Schleuse?	? 35066,4548
-Zugbrücke?	? 32737,183789
-eigentlich ein Knoten	? -9586,13296
-eigentlich ein Knoten	? -11250,13690
-B109n bei Großbeeren: ist diese Streckenführung temporär?	? 2715,-6365 2890,-6178 3131,-6334
-bei Großbeeren: zurzeit wird die Hauptstraße noch weiter nördlich geführt, aber die künftige (?) Trasse ist bereits befahrbar	? 3242,-6330 3653,-6050
-Ernst-Thälmann-Str. in Fürstenwalde umbenannt in Eisenbahnstr.?	? 55447,-4247 55374,-3621
 Ist eine Verbindung nach Seeberg vorhanden (westliche Seite des Ortes)?	? 28569,16324 28775,16193 29459,16348
 An der Wetzlarer Bahn (Potsdam): unbefestigter Weg, bei Regen große Pfützen. Ist der Weg durchgängig befahrbar oder gesperrt?	? -9306,-4259 -9642,-4916 -9996,-5596
 #: XXX Vielleicht (teilweise) als "Siedlung Daheim" ausgeschildert?
@@ -591,11 +583,11 @@ zur B158: Qualität?	? 56450,48250 56587,48550 57328,48981
 Neue Trasse der B167: für Radfahrer benutzbar? Alte Trasse nicht mehr Bundesstraße, sondern K6436?	? 58206,37275 58206,37675 58225,37959 58087,38231 57734,38743 57612,39937 57403,40340 56862,40818 56659,41179 56381,41675 56087,41956 55506,42350 54895,43268 54515,43803 53987,44157 53425,44300 53187,44262 52341,43207
 Wendisch-Rietz - Radlow: Qualität?	? 54370,-20977 55509,-18644
 Lianenweg: Qualität? Durchfahrt möglich?	? 19686,1542 19955,1509
-Freiheitstr., Wildau: Qualität?	? 25187,-8934 25875,-8746 26563,-8522 26749,-8475
+Freiheitstr., Wildau: Qualität?	? 25187,-8934 25916,-8709 26563,-8522 26749,-8475
 Str. der Freiheit, Zeuthen: Qualität?	? 25281,-6921 25981,-7196
 #: XXX von der Bahn aus gesehen: westl. des Bahnübergangs Kopfsteinpflaster
 Westkorso, Zeuthen: Qualität?	? 25981,-7196 26244,-7147 26609,-7136
-Jahnstr. (Wildau): Qualität?	? 25875,-8746 25700,-9502
+Jahnstr. (Wildau): Qualität?	? 25916,-8709 25937,-8824 25805,-9553
 Forstallee, Miersdorf: Qualität?	? 24528,-7126 24743,-6606 25624,-6363
 #: XXX laut osm sieht es so aus, als ob 20580,-4985 20532,-4674 tatsächlich unterbrochen ist
 Waltersdorf - Karlshof: laut "Berliner Umland" witterungsabhängige Strecke; Schlenker um See notwendig? Möglicherweise wegen der neuen A113 unterbrochen?	? 21084,-4728 20532,-4674 20580,-4985 20075,-5417 19866,-5382 19809,-5557 19945,-5661 19915,-6315 19907,-6772 19951,-6902 19817,-7484
@@ -736,8 +728,8 @@ Oderdeich: Qualität (vermutlich gut?)?	? 65286,46173 65691,45496 66331,44512 673
 #: XXX laut Aktiv Regional zwischen Schönfließ und Boosen mäßig starker Verkehr
 Lebus - Boosen: Qualität (wahrscheinlich asphaltiert)?	? 87151,3688 86366,3391 85940,3299 84607,3437 84089,3284 83274,3292 83070,3014 83457,2462 83335,1616 83476,155 83137,-401 83022,-798 83038,-965 83319,-1506 83327,-1933 83175,-2268 83182,-2420
 Boosen - Rosengarten: Qualität?	? 83441,-2496 83327,-2679 83327,-2778 83167,-2786 83175,-3136 83457,-4180 83464,-5040
-Frankfurt - Schlaubehammer: Qualität?	? 87379,-9565 87181,-9984 86831,-11347 86694,-11500 86458,-11941 86351,-12208 86442,-12444 86404,-12566 85391,-12772 84241,-13122 84104,-13419 83990,-13808 83929,-14623 83845,-14714 84051,-15392 84013,-16047 83914,-16184 83919,-16506
-Brieskow-Finkenheerd: Qualität?	? 90109,-16411 90175,-16367 90129,-16123 90183,-15925 90183,-15636 90259,-15331 90464,-15324 90632,-15087 91013,-15004
+Frankfurt - Schlaubehammer: Qualität?	? 87379,-9565 87181,-9984 86831,-11347 86694,-11500 86458,-11941 86351,-12208 86442,-12444 86390,-12552 85391,-12772 84241,-13122 84104,-13419 83990,-13808 83929,-14623 83845,-14714 84051,-15392 84013,-16047 83914,-16184 83901,-16522
+Brieskow-Finkenheerd: Qualität?	? 90164,-16382 90129,-16123 90183,-15925 90183,-15636 90259,-15331 90464,-15324 90632,-15087 91013,-15004
 Oder-Neiße-Radweg: Qualität?	? 90929,-14801 91203,-14745 91249,-14508 91340,-13206 91516,-13092 91767,-13412 92072,-13564 92856,-13747 93344,-13747 93664,-13838 94083,-14044 94821,-14569 95362,-14676 95949,-14592 96840,-14798 98188,-15598 99262,-16710 99316,-17441 99544,-18104 99734,-18363 99567,-19361 99232,-19841 98759,-20930 98112,-21608 98097,-22385 98417,-23177 99270,-24076 99468,-24601 99437,-25066 99117,-25531 98851,-25706 97647,-27138 97632,-27290 97343,-27595 97487,-27778 97609,-28204 97617,-28318 98066,-29720 98082,-29979 97952,-30634 97990,-31045 98866,-32386 98813,-32554 98950,-32820 99681,-33224 100214,-33399 101075,-33391 101227,-33460 102614,-34801 102614,-35204 102934,-35639 103063,-35692 103101,-35913 102347,-37010 102530,-37398 102690,-37924 102629,-38404 102896,-38746 102896,-39059 102698,-39455 102583,-39897 102720,-39958 102667,-40072 102400,-40140 102286,-40376 102309,-40826 102172,-41070 101677,-41572 101418,-41466 101159,-41473 100847,-41329 100458,-41915 99727,-42662 99300,-43225 99453,-43477 99565,-43453 99811,-43385 99933,-44147 99719,-44475 99674,-44764 99573,-44905
 Falkenberg - Liepe: Qualität (vermutlich nur mäßig?)?	? 48475,46175 48425,46625 48662,47600 49237,48087 49400,48437 49750,48625 49918,48858
 Crossiw - Gellmersdorf: Qualität?	? 55045,66286 54925,64862 54700,64125 54787,63762 54700,63500
@@ -1242,11 +1234,11 @@ Wilhelm-Staab-Str./Yorckstr.: Überqueren des Kanals möglich?	? -13001,-1329
 #Dorfstr. (Malchow): seit November 2005 Bauarbeiten für neuen Radweg, bereits fertig?	? 15606,19839 15656,19946 15686,20100 15778,20350 15900,20531 16025,20631
 #: XXX: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0506/nachricht1941.html
 Rad- und Fußwegverbindung zwischen Wuhle und Hönow durch Hellersdorf: genauer Verlauf? Qualität? bereits komplett fertiggestellt?	? 22579,15416 22743,15414 23057,15458 23240,15472 23368,15469 23484,15485 23629,15498 23643,15389 23895,15450 23941,15458 24076,15481 24169,15497 24303,15766 25003,15617 25984,15415 25936,15335 25990,15301 25985,15080 26014,15039
-Niederlehme Anschlussstelle - Niederlehme: Qualität (wahrscheinlich Asphalt)? Radweg?	? 28485,-10143 28272,-10277 28168,-10289 27949,-10283 27906,-10191 27827,-10082 27535,-10033
+Niederlehme Anschlussstelle - Niederlehme: Qualität (wahrscheinlich Asphalt)? Radweg?	? 28499,-10164 28272,-10277 28168,-10289 27949,-10283 27906,-10191 27827,-10082 27535,-10033
 Fürstenwalder Str. (Zernsdorf): Qualität?	? 27966,-11585 28150,-11380 28235,-11227 28388,-11093 28839,-10831 29192,-10630
 Am Möllenberg (Zernsdorf): Qualität?	? 27949,-10283 28016,-10429 28241,-10904 28388,-11093
 #: note: siehe auch http://home.arcor.de/peter.gerwien/gps/wp0082.html
-Wildau - Zernsdorf/Niederlehme: anscheinend ist hier ein Gehweg/Radweg mit Brücke vorhanden, Qualität (wahrscheinlich asphaltiert)?	? 26434,-10443 27031,-10349 27205,-10338 27469,-10314
+Wildau - Zernsdorf/Niederlehme: anscheinend ist hier ein Gehweg/Radweg mit Brücke vorhanden, Qualität (wahrscheinlich asphaltiert)?	? 26446,-10394 27031,-10349 27205,-10338 27469,-10314
 #: XXX womöglich Blaubasalt-Pflaster, siehe Message-ID: <dkbt24tr9up3nvj06698a8e9dses6vqfa3@4ax.com>
 Hempelsteig: Qualität?	? -787,13147 -525,13034 -472,12961
 Am Hain: Qualität?	? -1337,13354 -1380,13126
@@ -1304,7 +1296,7 @@ Boitzenburg - Rummelpforter Mühle: Qualität (wahrscheinlich Feld/Waldwege)?	? 22
 Rummelpforter Mühle - Wichmannsdorf: Qualität (wahrscheinlich Feld/Waldwege, für das südliche Ende Feldweg bestätigt)?	? 25012,95414 25403,94606
 Klein Sperrenwalde: Qualität (zumindest am nordöstlichen Ende ist schlechtes Kopfsteinpflaster, das westliche Ende ist asphaltiert)?	? 29238,97789 29960,97778 30545,97656 30752,98302 30935,98315 31301,98168 31520,98339 31764,98266 31946,98379
 Klein Sperrenwalde - Gollmitz: Qualität (zumindest das Gollmitzer Ende ist asphaltiert)?	? 30752,98302 30630,98619 30225,98927 29850,99017
-Ellingen - Uckerfeld: Qualität (wahrscheinlich asphaltiert?)?	? 37437,105478 38034,105319
+Ellingen - Uckerfeld: Qualität (wahrscheinlich asphaltiert?)?	? 37521,105452 37934,105127
 Britzer Park - Weg entlang der U-Bahn-Betriebswerkstatt: Qualität (laut ADFC-Karte gut geeignet)?	? 13350,3518 13356,3467
 Johannisthaler Chaussee - Lipschitzallee: Qualität (laut ADFC-Karte gut geeignet)?	? 13931,2579 13988,2614 14087,2494 14224,2368 14324,2298 14511,2205
 Wublitzbrücke - Töplitz: Qualität (wahrscheinlich Feld- oder Waldweg)?	? -21681,702 -22045,765 -22525,1230 -22911,1634 -23105,2016 -23207,2284
@@ -3551,3 +3543,12 @@ Mescherin - Geesow: Qualität? Für Autos gesperrt?	? 78252,94587 78148,94601 7755
 #: XXX bei osm als "cycleway" gekennzeichnet
 Geesow - Tantow: Qualität? Für Autos gesperrt?	? 75591,95547 75140,95540 73772,95260 73406,95808 73163,95966 72969,96202
 Georgenthal - Falkenhagen: Qualität?	? 71337,1315 72556,1910
+#: XXX laut osm: track=grade4
+Straße/Pfad zum Katjasee: Qualität?	? 88467,-17029 88021,-16776 88241,-16078 88343,-15850 88356,-15738 88001,-15562 87978,-15465 87870,-15394 87808,-15310 87826,-15270
+#: XXX laut osm: footpath
+Weg am Katja- und Helenesee: Qualität? Für Radfahrer befahrbar?	? 87826,-15270 87897,-15267 87976,-15172 87990,-15080 87962,-15016 88012,-14894 87980,-14878 88006,-14724 87906,-14350 87245,-14049 86583,-13872 86495,-13798 86508,-13567 86415,-13453
+#: XXX laut osm: service, no access
+Strandpromenade Helenesee: Qualität? Für Radfahrer befahrbar?	? 86415,-13453 86176,-13290 85840,-13209 85104,-13068 84826,-13073 84649,-13036 84554,-13055 84474,-13238 84363,-13390
+#: XXX laut osm: service/unclassified
+Helensee - Frankfurt: Qualität?	? 85840,-13209 86390,-12552
+Jakobshagen - Warthe: Qualität?	? 19350,88924 19321,88931 19185,88853 18934,88885 18462,89075 18218,89121 17978,89265 17842,89823 16743,90110 16377,90072

@@ -1379,15 +1379,7 @@ userdel	q4::inwork 9126,12413 9345,12443
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1244671200,
-         'text' => 'B 167 Liebenberg - Löwenberg OD Löwenberg Deckeneinbau Vollsperrung 08.06.2009-10.06.2009 ',
-         'from' => 1244325600,
-         'id' => 1693,
-         'data' => 'userdel	q4::inwork -7114,54591 -7387,54453
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_012983',

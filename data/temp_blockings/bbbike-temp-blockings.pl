@@ -899,7 +899,7 @@ EOF
        text  => 'L 40; (Großbeeren-Güterfelde); zw. Großbeeren u. Neubeeren Neubau Bauwerk Vollsperrung 24.09.2004-31.05.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 2443,-6309 2715,-6365
+userdel	2 2423,-6303 2715,-6365
 EOF
      },
      { from  => 1096754400, # 2004-10-03 00:00
@@ -2329,7 +2329,7 @@ EOF
        text  => 'B 87; zw. Hohenwalde und Müllrose Munitionsbergung Vollsperrung 29.07.2005-06.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 81697,-12826 81362,-13667 81278,-13886
+userdel	2 81697,-12826 81362,-13667 81274,-13843
 EOF
      },
      { from  => 1121896800, # 2005-07-21 00:00
@@ -3590,7 +3590,7 @@ EOF
        text  => 'B 112 Guben-Frankfurt (O) Kreuz. L 45/B 112/K6702 in Steinsdorf Bau der Kreuzung Vollsperrung 04.04.2006-18.06.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	2 91858,-18170 90698,-16886
+userdel	2 91858,-18170 90615,-16871
 EOF
      },
      { from  => undef, # 
@@ -3691,7 +3691,7 @@ EOF
        text  => 'L 401 Richard-Sorge-Str./ Bergstr. OL Wildau, Bahnübergang Bergstr. Gleisbauarbeiten Einmünd. gesp. 05.03.2006-10.03.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 26381,-9962 26339,-9943 25700,-9502
+userdel	2 26432,-10043 26285,-10054 26262,-10015 26262,-9880 26174,-9760 26093,-9701 25991,-9671 25805,-9553
 EOF
      },
      { from  => 1141254000, # 2006-03-02 00:00
@@ -4026,7 +4026,7 @@ EOF
        text  => 'B 112 Ziltendorf-Brieskow Finkenheerd OD Wiesenau Straßenbauarbeiten Vollsperrung; Umleitung 07.04.2006-09.04.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 91858,-18170 90698,-16886
+userdel	q4 91858,-18170 90615,-16871
 EOF
      },
      { from  => 1145743200, # 2006-04-23 00:00
@@ -4219,8 +4219,8 @@ EOF
        data  => <<EOF,
 userdel	2 9383,13978 9203,13953
 userdel	2 9151,13941 9203,13953
-userdel	2 9151,13941 9076,13915
-userdel	2 9076,13915 8935,13844
+userdel	2 9151,13941 9085,13919
+userdel	2 9085,13919 8935,13844
 EOF
      },
      { from  => 1145430358, # 2006-04-19 09:05
@@ -4359,7 +4359,7 @@ EOF
        text  => 'L 401 R.-Sorge-/ Bergstr. Bahnübergang Bergstraße Gleisbauarbeiten Zufahrt gesperrt 07.05.2006-12.05.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 26381,-9962 26339,-9943 25700,-9502
+userdel	2 26432,-10043 26285,-10054 26262,-10015 26262,-9880 26174,-9760 26093,-9701 25991,-9671 25805,-9553
 EOF
      },
      { from  => 1146897090, # 2006-05-06 08:31
@@ -4455,7 +4455,7 @@ EOF
        text  => 'Straße am Nordbahnhof zwischen Invalidenstraße und Zinnowitzer Veranstaltung, Straße gesperrt. Dauer: 18.05.2006, 06:00 Uhr bis 21.05.2006 12:00 Uhr. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9076,13915 9006,14005
+userdel	2 9085,13919 9015,14014
 EOF
      },
      { from  => 1148162400, # 2006-05-21 00:00
@@ -5483,7 +5483,7 @@ EOF
        text  => 'L 401 Königs Wusterhausen-Wildau OL Königs Wusterhausen, Höhe Neue Ziegelei Deckeneinbau Vollsperrung 31.08.2006-01.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 26434,-10443 26418,-10758 26407,-10986
+userdel	2::inwork 26446,-10394 26418,-10758 26407,-10986
 EOF
      },
      { from  => 1156024800, # 2006-08-20 00:00
@@ -5756,7 +5756,7 @@ EOF
        text  => 'L 401 R.-Sorge-Str./ Bergstr. Bahnübergang Bergstr. in OL Wildau Arbeiten am BÜ Vollsperrung; Umleitung 04.09.2006-06.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 26381,-9962 26339,-9943 25700,-9502
+userdel	2::inwork 26432,-10043 26285,-10054 26262,-10015 26262,-9880 26174,-9760 26093,-9701 25991,-9671 25805,-9553
 EOF
      },
      { from  => 1157576473, # 2006-09-06 23:01
@@ -6119,7 +6119,7 @@ EOF
        text  => 'L 037 Frankfurter Straße Brücke, Oder-Spree-Kanal Brückensanierungsarbeiten Vollsperrung 05.10.2006-14.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 80143,-15900 79825,-16575
+userdel	2::inwork 80122,-15845 80061,-15988 79932,-16207 79861,-16543
 EOF
      },
      { from  => 1164916572, # 2006-11-30 20:56
@@ -6659,7 +6659,7 @@ EOF
        text  => 'L 338 Rosa-Luxemburg-Damm/ Hauptstr. Bahnübergang in der OL Neuenhagen Erneu. Gleisanlagen Vollsperrung 18.11.2006-21.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 30179,13667 30795,13191 30815,13170 30975,12918
+userdel	2::inwork 30179,13667 30795,13191 30815,13170 30910,13101 30982,12947
 EOF
      },
      { from  => undef, # 
@@ -9077,7 +9077,7 @@ EOF
        text  => 'L 338 R.-Luxemburg-Damm, Hauptstr. Bahnübergang in der OL Neuenhagen Erneuerung Bahnübergang halbseitig gesperrt; Einbahnstraße 16.07.2007-31.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 30795,13191 30815,13170 30975,12918
+userdel	2::inwork 30795,13191 30815,13170 30910,13101 30982,12947
 EOF
      },
      { from  => 1185055200, # 2007-07-22 00:00
@@ -10151,7 +10151,7 @@ EOF
        text  => 'L 037 zw. Schernsdorf und Müllrose Straßensanierungsarbeiten Vollsperrung 15.10.2007-16.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 80237,-17646 80679,-17994 82000,-19505
+userdel	2::inwork 80307,-17691 80679,-17994 82000,-19505
 EOF
      },
      { from  => 1192399200, # 2007-10-15 00:00
@@ -12394,7 +12394,7 @@ EOF
        text  => 'L 373 B112 - Müllrose OL Bri.-Finkenheerd ab KP Bhf-/Sonnenburgstr., 500m Ri. OA Kanal- und Straßenbau Vollsperrung 29.09.2008-30.11.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 89098,-16962 90109,-16411
+userdel	2::inwork 89098,-16962 89237,-16878 89435,-16834 90073,-16502 90164,-16382
 EOF
      },
      { from  => 1220035590, # 2008-08-29 20:46
@@ -13032,7 +13032,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010718',
        data  => <<EOF,
-userdel	2::inwork 9076,13915 8935,13844
+userdel	2::inwork 9085,13919 8935,13844
 EOF
      },
      { from  => 1227353511, # 2008-11-22 12:31

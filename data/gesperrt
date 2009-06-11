@@ -240,9 +240,9 @@ Zionskirchplatz	1 10306,14247 10277,14350 10315,14386 10365,14372 10389,14274
 Ohmstr.	1 11324,11689 11378,11856
 Anton-Saefkow-Str.	1 13202,14388 13084,14472 13013,14523 12885,14616 12782,14676 12723,14714 12536,14827
 Spilstr.	1 3865,6758 3826,6656 3836,6550
-Wöhlertstr.	1 8442,14456 8662,14567
-Pflugstr.	1 8662,14567 8781,14357
-Schwartzkopffstr.	1 8781,14357 8607,14253
+Wöhlertstr.	1 8442,14456 8669,14550
+Pflugstr.	1 8669,14550 8776,14364
+Schwartzkopffstr.	1 8776,14364 8607,14253
 Strausberger Str.	1 12416,13045 12368,13031
 Große Präsidentenstr.	1 10097,12997 10220,13098
 Naumannstr.	1 7709,8777 7707,8915
@@ -1138,6 +1138,9 @@ Torstr. -> Christinenstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10471,13745
 Linksabbiegen verboten (und unbequem)	3nocross::ignrte 8192,9619 8097,9650 7938,9694
 Katzlerstr. -> Yorckstr.: Linksabbiegen verboten (und unbequem)	3::igndisp 8035,9437 8097,9650 7938,9694
 Yorckstr. -> Katzlerstr.: Linksabbiegen verboten (und unbequem)	3::igndisp 8192,9619 8097,9650 8035,9437
+unbequemes Überqueren, stark befahrene Straße	3nocross::ignrte 14501,10169 14405,10027 14289,9870
+Treppe zum Allianz-Gebäude -> Elsenbrücke: unbequemes Überqueren, stark befahrene Straße	3::igndisp 14383,10036 14405,10027 14501,10169
+An den Treptowers -> Treppe zum Allianz-Gebäude: unbequemes Überqueren, stark befahrene Straße	3::igndisp 14289,9870 14405,10027 14383,10036
 Mittelstreifen	3nocross::ignrte 12028,12519 12006,12464 11920,12266
 Neue Blumenstr. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 12118,12462 12006,12464 11709,12601
 Neue Blumenstr. -> Lichtenberger Str.: Mittelstreifen	3::igndisp 12118,12462 12006,12464 11920,12266
