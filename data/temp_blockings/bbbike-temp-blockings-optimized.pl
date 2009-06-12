@@ -725,16 +725,7 @@ userdel	q4::inwork; 9208,11872 9218,11793
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_010519',
-         'until' => 1245103199,
-         'text' => 'Gubitzstr. (Prenzlauer Berg) in beiden Richtungen zwischen Küselstr. und Scheritzstr. Bauarbeiten, Straße vollständig gesperrt (bis Mitte 06.2009)',
-         'from' => 1243972540,
-         'id' => 1524,
-         'data' => 'userdel	q4::inwork 12463,15774 12384,15618 12299,15463
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -955,8 +946,8 @@ userdel	q4::inwork; 15080,11905 14977,11754 14941,11689 14849,11539
        undef,
        undef,
        {
-         'until' => 1254348000,
-         'text' => 'B 002 Wittenberg - LG - Treuenbrietzen OD Marzahna Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 01.04.2009-30.09.2009 ',
+         'until' => 1261177200,
+         'text' => 'B 002 Wittenberg - LG - Treuenbrietzen OD Marzahna Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 01.04.2009-18.12.2009 ',
          'from' => 1238450400,
          'id' => 1602,
          'data' => 'userdel	q4::inwork; -32313,-49192 -31201,-45781
@@ -1394,10 +1385,10 @@ userdel	q4::inwork 9126,12413 9345,12443
        {
          'source_id' => 'IM_012990',
          'until' => 1244865600,
-         'text' => 'John-Foster-Dulles-Allee (Tiergarten) in beiden Richtungen zwischen Große Querallee und Yitzhak-Rabin-Str. Veranstaltung, Straße vollständig gesperrt (bis 13.06.2009, ca. 6 Uhr)',
-         'from' => 1244584654,
+         'text' => 'John-Foster-Dulles-Allee (Tiergarten) in beiden Richtungen zwischen Spreeweg und Yitzhak-Rabin-Str. Veranstaltung, Straße vollständig gesperrt (bis 13.06.2009, ca. 6 Uhr)',
+         'from' => 1244785956,
          'id' => 1696,
-         'data' => 'userdel	2::temp 8119,12414 8070,12409 8017,12359 7875,12363
+         'data' => 'userdel	2::temp 7039,12314 7215,12295 7437,12368 7514,12387 7875,12363 8017,12359 8070,12409 8119,12414
 ',
          'type' => 'gesperrt'
        },
@@ -1437,12 +1428,70 @@ userdel	q4::inwork 9126,12413 9345,12443
 ',
          'type' => 'handicap'
        },
+       undef,
        {
-         'until' => 1244757600,
-         'text' => 'L 402 Zeuthen - Schulzendorf Bahnübergang Forstweg in Zeuthen Gleisbauarbeiten Vollsperrung 10.06.2009-11.06.2009 ',
-         'from' => 1244498400,
-         'id' => 1701,
-         'data' => 'userdel	2::inwork 26001,-6257 26057,-6241 26146,-6218
+         'source_id' => 'IM_013024',
+         'until' => 1245103200,
+         'text' => 'Altstadt Köpenick Köpenick Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Grünstr. - Jägerstr. - Schüßlerplatz, Schlossinsel und Luisenhain (bis 15.06.2009 abends)',
+         'from' => 1244786065,
+         'id' => 1702,
+         'data' => 'userdel	2::temp 22111,4562 22093,4499 22076,4422
+userdel	2::temp 22071,4501 22057,4531 22043,4562 22147,4831 22196,4847 22175,4730 22138,4661 22111,4562 22162,4546 22214,4548 22312,4593 22355,4660 22383,4703
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_013029',
+         'until' => 1245880800,
+         'text' => 'Damerowstr./Breite Str. (Pankow) Richtung Schönholzer Str. nach Mendelstr. Baustelle, Fahrtrichtung gesperrt (bis ca. 24.06.2009)',
+         'from' => 1244786167,
+         'id' => 1703,
+         'data' => 'userdel	q4::inwork; 11357,18598 11204,18545 11025,18531
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1272664800,
+         'text' => 'K 6422 Eggersdorfer Str. OL Petershagen, zw. Gravenhainstr. u. Johannesstr. Straßenausbau Vollsperrung 15.06.2009-30.04.2010 ',
+         'from' => 1244930400,
+         'id' => 1704,
+         'data' => 'userdel	q4::inwork 36654,13977 35900,13643
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1244930400,
+         'text' => 'K 6905 Langerwisch - Wilhelmshorst - B 2 OD Langerwisch, Abzw. Wilhelmshorst Straßenbau Vollsperrung 13.06.2009-13.06.2009 ',
+         'from' => 1244757600,
+         'id' => 1705,
+         'data' => 'userdel	q4::inwork -12312,-10337 -12337,-10735
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1270072800,
+         'text' => 'L 077 Langerwisch - Saarmund OD Langerwisch Straßenbau Vollsperrung 17.06.2009-31.03.2010 ',
+         'from' => 1245103200,
+         'id' => 1706,
+         'data' => 'userdel	q4::inwork -12915,-10753 -12337,-10735
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1246658400,
+         'text' => 'L 082 Zeudener Str. OD Marzahna Kanal- und Straßenbau Vollsperrung 11.06.2009-03.07.2009 ',
+         'from' => 1244584800,
+         'id' => 1707,
+         'data' => 'userdel	q4::inwork -33582,-43378 -32661,-44144
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1245016800,
+         'text' => 'L 513 Bahnhofstraße OL Burg, zw. Hauptstraße u. Am Bahndamm Intern. Folklorelawine Vollsperrung 14.06.2009-14.06.2009 ',
+         'from' => 1244844000,
+         'id' => 1708,
+         'data' => 'userdel	2::temp 62010,-62330 62522,-62647
 ',
          'type' => 'gesperrt'
        }
