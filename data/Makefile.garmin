@@ -145,7 +145,8 @@ GMAPSUPP_SRC=	${PERSISTENTTMPDIR}/bbbike_routable.img \
 		${PERSISTENTTMPDIR}/berlin_osm.img \
 		${PERSISTENTTMPDIR}/leipzig_osm.img \
 		${PERSISTENTTMPDIR}/hessen_osm.img \
-		${PERSISTENTTMPDIR}/croatia_osm.img
+		${PERSISTENTTMPDIR}/croatia_osm.img \
+		${PERSISTENTTMPDIR}/dalmatia_osm.img
 
 ## XXX This would be nice. But I ran out of memory if
 ## adding this one. Even with -Xmx1024m:
@@ -155,6 +156,13 @@ GMAPSUPP_SRC=	${PERSISTENTTMPDIR}/bbbike_routable.img \
 
 
 ${PERSISTENTTMPDIR}/gmapsupp.img:	${GMAPSUPP_SRC}
+	cd ${PERSISTENTTMPDIR} && \
+	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC}
+
+gmapsupp-without-rebuild:
+.for f in ${GMAPSUPP_SRC}
+	[ -e ${PERSISTENTTMPDIR}/$f ]
+.endfor
 	cd ${PERSISTENTTMPDIR} && \
 	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC}
 
@@ -209,6 +217,14 @@ ${PERSISTENTTMPDIR}/croatia_osm.img:
 	    ${MKGMAP_ROUTABLE} --description="Croatia Routable OSM" --mapname=12117005 --country-name=Croatia --country-abbr=HR --net --route croatia.osm && \
 	    mv 12117005.img croatia_osm.img )
 	-rm -f ${PERSISTENTTMPDIR}/croatia.osm
+
+# routable
+${PERSISTENTTMPDIR}/dalmatia_osm.img:
+	${COMBINE_OSM} ${MISCDIR}/download/osm/dalmatien/download*.osm.gz > ${PERSISTENTTMPDIR}/dalmatia.osm
+	cd ${PERSISTENTTMPDIR} && ( \
+	    ${MKGMAP_ROUTABLE} --description="Dalmatia Routable OSM" --mapname=12117007 --country-name=Croatia --country-abbr=HR --net --route dalmatia.osm && \
+	    mv 12117007.img dalmatia_osm.img )
+	-rm -f ${PERSISTENTTMPDIR}/dalmatia.osm
 
 ######################################################################
 # bbd2osm stuff
