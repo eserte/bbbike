@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd-postprocess,v 1.25 2009/06/27 15:33:34 eserte Exp $
+# $Id: osm2bbd-postprocess,v 1.26 2009/06/27 15:34:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -27,7 +27,7 @@ use Getopt::Long;
 
 my @targets = ('wasserstrassen_lowres',
 	       'largest_city_is_center',
-	       'guess_title_for_dataset',
+	       'title_for_dataset',
 	       'inaccessible_streets',
 	       #'make_long_streets',
 	       'mount',
@@ -36,8 +36,8 @@ my @targets = ('wasserstrassen_lowres',
 # Targets run by default (exclude obscure ones here)
 my @run_targets =
     grep { !m{^(
-		  mount
-	      |   coastline_hack
+		  mount                 # lohnt sich nicht, zu wenige Höhenpunkte
+	      |   coastline_hack        # it's a hack
 	      )$}x
 	  }
     @targets;
@@ -54,6 +54,7 @@ sub usage (;$) {
     } @targets) . "\tdatadir\n";
 }
 
+my $set_dataset_title;
 # XXX should be generalized, or not be necessary
 my $coastline_hack_anchor;
 
@@ -68,6 +69,8 @@ GetOptions(
 	   } @targets),
 	   "debug=i" => \$debug,
 	   "force!" => \$force,
+	   # targets with additional arguments
+	   "dataset-title=s" => \$set_dataset_title,
 	   # XXX
 	   "coastline-hack-anchor=s" => \$coastline_hack_anchor,
 	  )
@@ -121,8 +124,8 @@ EOF
 }
 
 # Note: this is not perfect. It just picks the first of the cities
-# with largest category. This relies on osm2bbd to sort the cities
-# by population (which it currently does).
+# with largest category. This relies on osm2bbd to sort the cities by
+# population (which it currently does). This also sets "center_name".
 sub target_largest_city_is_center {
     my $meta = eval { _load_meta() };
     if ($@) {
@@ -137,11 +140,16 @@ sub target_largest_city_is_center {
     if (defined $max) {
 	print STDERR "setting $max->[Strassen::NAME()] ($max->[Strassen::COORDS()][0]) as center ";
 	$meta->{center} = [ split /,/, $max->[Strassen::COORDS()][0] ];
+	$meta->{center_name} = $max->[Strassen::NAME()];
 	_write_meta($meta);
     }
 }
 
-sub target_guess_title_for_dataset {
+# By default "dataset_title" is the name of the largest city, which is
+# the same as "center_name". If you need another dataset_title,
+# especially if the coverage is not a city but a region, then use the
+# --dataset-title option
+sub target_title_for_dataset {
     my $meta = eval { _load_meta() };
     if ($@) {
 	print STDERR $@->{msg};
@@ -151,12 +159,18 @@ sub target_guess_title_for_dataset {
 	print STDERR "dataset_title already set in meta.yml, do not overwrite, skipping" if $debug;
 	return;
     }
-    my $max = _get_largest_city();
-    if (defined $max) {
-	print STDERR "setting $max->[Strassen::NAME()] as title for dataset ";
-	$meta->{dataset_title} = $max->[Strassen::NAME()];
-	_write_meta($meta);
+    if (!defined $set_dataset_title) {
+	my $max = _get_largest_city();
+	if (defined $max) {
+	    $set_dataset_title = $max->[Strassen::NAME()];
+	} else {
+	    print STDERR "Cannot guess dataset title, no largest city found.\n";
+	    return;
+	}
     }
+    print STDERR "setting $set_dataset_title as title for dataset ";
+    $meta->{dataset_title} = $set_dataset_title;
+    _write_meta($meta);
 }
 
 sub target_inaccessible_streets {

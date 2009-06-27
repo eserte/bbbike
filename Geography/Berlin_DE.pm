@@ -129,6 +129,7 @@ while(my($cp,$scp) = each %subcityparts) {
 sub cityname { "Berlin" }
 
 sub center { "8581,12243" } # Brandenburger Tor
+sub center_name { "Berlin" }
 
 sub supercityparts { sort keys %cityparts }
 sub cityparts      { sort keys %subcityparts }

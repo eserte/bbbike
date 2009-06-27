@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: FromMeta.pm,v 1.6 2009/06/02 05:34:04 eserte Exp $
+# $Id: FromMeta.pm,v 1.7 2009/06/27 15:34:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -56,6 +56,8 @@ sub center {
 	undef;
     }
 }
+
+sub center_name { shift->{center_name} }
 
 sub bbox { shift->{bbox} }
 sub skip_features { %{ shift->{skip_features} || {} } }

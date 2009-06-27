@@ -15807,11 +15807,12 @@ sub show_overview_populate {
 	     }
 	 });
 
+    my $ov_transpose      = $show_overview_mode eq 'region' ? \&transpose_small : \&transpose_medium;
+    my $ov_anti_transpose = $show_overview_mode eq 'region' ? \&anti_transpose_small : \&anti_transpose_medium;
     {
 	my($x0,$y0,$x1,$y1) = @scrollregion;
-	my $transpose = $show_overview_mode eq 'region' ? \&transpose_small : \&transpose_medium;
-	($x0,$y0) = $transpose->(anti_transpose($x0,$y0));
-	($x1,$y1) = $transpose->(anti_transpose($x1,$y1));
+	($x0,$y0) = $ov_transpose->(anti_transpose($x0,$y0));
+	($x1,$y1) = $ov_transpose->(anti_transpose($x1,$y1));
 	my @s = ($x0,$y0,$x1,$y1);
 	$overview_canvas->configure(-scrollregion => [@s]);
     }
@@ -15833,44 +15834,52 @@ sub show_overview_populate {
 	$center_coords = [8581,12243]; # Fallback: Brandenburger Tor
     }
 
-    my $arrow_update = sub {
-	$overview_canvas->delete('berlinarrow');
-	require Geometry;
-	my($cx1,$cy1,$cx2,$cy2) = $overview_canvas->get_corners;
-	# Ersten Schnittpunkt (inneres Rechteck) ermitteln
-	# Die Mitte ist (0,0) (ca. Berlin-Moabit).
-	my($ix1,$iy1) = Geometry::get_intersection
-	    ($cx1+($cx2-$cx1)/2, $cy1+($cy2-$cy1)/2, 0,0,
-	     $cx1+15,$cy1+15,$cx2-15,$cy2-15);
-	if (defined $ix1 and defined $iy1) {
-	    # zweiten Schnittpunkt ermitteln (aktuelle Canvasgrenze)
-	    my($ix2,$iy2) = Geometry::get_intersection($ix1,$iy1,0,0,
-						       $cx1,$cy1,$cx2,$cy2);
-	    if (defined $ix2 and defined $iy2) {
-		my $anti_transpose = ($show_overview_mode eq 'region'
-				      ? \&anti_transpose_small
-				      : \&anti_transpose_medium);
-		# Distance to center (in Berlin: Brandenburger Tor)
-		my $entf = Strassen::Util::strecke
-		    ([$anti_transpose->($ix1,$iy1)],
-		     $center_coords);
-		$overview_canvas->createLine
-		    ($ix1,$iy1,$ix2,$iy2,
-		     -arrow => "last",
-		     -width => 2,
-		     -fill => "red",
-		     -tags => 'berlinarrow');
-		$overview_canvas->createText
-		    ($ix1, $iy1,
-		     -anchor => BBBikeCalc::opposite_direction(BBBikeCalc::line_to_canvas_direction
-							       ($ix1,$iy1,$ix2,$iy2)),
-		     -text => "Berlin\n".sprintf("%d km", $entf/1000),
-		     -fill => "red",
-		     -font => $font{'small'},
-		     -tags => ['berlinarrow','berlinarrowlabel']);
+    my($ov_center_x,$ov_center_y) = $ov_transpose->(@$center_coords);
+
+    my $center_name;
+    if ($city_obj && $city_obj->center_name) {
+	$center_name = $city_obj->center_name;
+    }
+
+    my $arrow_update;
+    if ($center_name) {
+	$arrow_update = sub {
+	    $overview_canvas->delete('berlinarrow');
+	    require Geometry;
+	    my($cx1,$cy1,$cx2,$cy2) = $overview_canvas->get_corners;
+	    # Ersten Schnittpunkt (inneres Rechteck) ermitteln
+	    my($ix1,$iy1) = Geometry::get_intersection
+		($cx1+($cx2-$cx1)/2, $cy1+($cy2-$cy1)/2, $ov_center_x,$ov_center_y,
+		 $cx1+15,$cy1+15,$cx2-15,$cy2-15);
+	    if (defined $ix1 and defined $iy1) {
+		# zweiten Schnittpunkt ermitteln (aktuelle Canvasgrenze)
+		my($ix2,$iy2) = Geometry::get_intersection($ix1,$iy1,$ov_center_x,$ov_center_y,
+							   $cx1,$cy1,$cx2,$cy2);
+		if (defined $ix2 and defined $iy2) {
+		    # Distance to center (in Berlin: Brandenburger Tor)
+		    my $entf = Strassen::Util::strecke
+			([$ov_anti_transpose->($ix1,$iy1)],
+			 $center_coords);
+		    $overview_canvas->createLine
+			($ix1,$iy1,$ix2,$iy2,
+			 -arrow => "last",
+			 -width => 2,
+			 -fill => "red",
+			 -tags => 'berlinarrow');
+		    $overview_canvas->createText
+			($ix1, $iy1,
+			 -anchor => BBBikeCalc::opposite_direction(BBBikeCalc::line_to_canvas_direction
+								   ($ix1,$iy1,$ix2,$iy2)),
+			 -text => "$center_name\n".sprintf("%d km", $entf/1000),
+			 -fill => "red",
+			 -font => $font{'small'},
+			 -tags => ['berlinarrow','berlinarrowlabel']);
+		}
 	    }
-	}
-    };
+	};
+    } else {
+	$arrow_update = sub {};
+    }
 
     $overview_canvas->configure(-yscrollcommand =>
 				sub {
@@ -15920,10 +15929,7 @@ sub show_overview_populate {
 	$set_disabled_buttons->();
     }
 
-    my $ts = ($show_overview_mode eq 'region'
-	      ? \&transpose_small
-	      : \&transpose_medium);
-    my($km100_pixel) = ($ts->(100000,0))[0] - ($ts->(0,0))[0];
+    my($km100_pixel) = ($ov_transpose->(100000,0))[0] - ($ov_transpose->(0,0))[0];
 
     # Radar button
     if ($advanced && $devel_host) {
@@ -15971,7 +15977,7 @@ sub show_overview_populate {
 			$radar_image = $overview_canvas->Photo(-file => $imgfile);
 			my($xoff,$yoff) = ($show_overview_mode eq 'region'
 					   ? (3,20)
-					   : $ts->(0,0));
+					   : $ov_transpose->(0,0));
 			$overview_canvas->createImage
 			    ($xoff, $yoff,
 			     -image => $radar_image,
