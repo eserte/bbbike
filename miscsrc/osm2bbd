@@ -62,7 +62,7 @@ my $splitlonglines = 1; # XXX this may change once BBBikeXS has no length restri
 my $xmlparser;
 
 my %experiments;
-my %known_experiments = map {($_,1)} qw(add_postal_code coastline_hack);
+my %known_experiments = map {($_,1)} qw(add_postal_code coastline_hack polar_coord_hack);
 
 sub usage () {
     <<EOF;
@@ -306,13 +306,86 @@ my $do_unhandled = sub {
     }
 };
 
+{
+    # expand directories
+    # XXX Should be really a recursive function, probably
+    my @new_osm_files;
+    for my $osm_file (@osm_files) {
+	if (-d $osm_file) {
+	    push @new_osm_files, grep { -f $_ && -s $_ } glob(File::Spec->catfile($osm_file,"*.{osm,osm.gz,osm.bz2}")); # XXX argh, grep duplicates functionality, see "recursive" suggestion above
+	} elsif (-z $osm_file) {
+	    # May happen while loading data, so ignore this
+	    warn "Ignore empty file <$osm_file>...\n";
+	} else {
+	    push @new_osm_files, $osm_file;
+	}
+    }
+    @osm_files = @new_osm_files;
+}
+
+# Conversion function
 my $conv = sub {
     my($lon,$lat) = @_;
     "$lon,$lat";
 };
+if (!$experiments{'polar_coord_hack'}) {
+    die "Should never happen: -o is missing?" if !$o;
+    if (-e "$o/Karte/Polar.pm") {
+	unlink "$o/Karte/Polar.pm"
+	    or die "Cannot remove $o/Karte/Polar.pm: $!";
+    }
+}
 if ($map) {
     if ($map ne 'bbbike') {
 	die "Only -map bbbike is supported.\n";
+    }
+    if ($experiments{'polar_coord_hack'}) {
+	require Math::Trig;
+	my $lat;
+	if ($center) {
+	    (undef, $lat) = split /,/, $center;
+	} else {
+	    my($min_lat, $max_lat);
+	    # XXX taken from BBBikeOsmUtil.pm
+	    my $osm_download_file_qr = qr{/download_(\d+\.\d+),(\d+\.\d+),(\d+\.\d+),(\d+\.\d+)\.osm(?:\.gz|\.bz2)?$}; # XXX no support for south and west
+	    # XXX it would be better to read the bboxes of all XML files
+	    for my $osm_file (@osm_files) {
+		if ($osm_file =~ $osm_download_file_qr) {
+		    if (!defined $min_lat || $2 < $min_lat) {
+			$min_lat = $2;
+		    }
+		    if (!defined $max_lat || $4 > $max_lat) {
+			$max_lat = $4;
+		    }
+		}
+	    }
+	    if (defined $min_lat && defined $max_lat) {
+		$lat = ($max_lat - $min_lat)/2 + $min_lat;
+	    }
+	}
+	if (!defined $lat) {
+	    die "Cannot apply polar_coord_hack experiment, because the center could not be determined";
+	    # XXX should read the bboxes of all files
+	}
+	my $newx1 = cos(Math::Trig::deg2rad($lat))*111_000; # XXX 111km is rough for one degree
+
+	mkdir $o if !-d $o; # does not exist yet, see below the OUTPUT section
+	mkdir "$o/Karte" if !-d "$o/Karte";
+	open my $ifh, "<", "$FindBin::RealBin/../Karte/Polar.pm"
+	    or die "Cannot open $FindBin::RealBin/../Karte/Polar.pm: $!";
+	open my $ofh, ">", "$o/Karte/Polar.pm~"
+	    or die "Cannot write to $o/Karte/Polar.pm~: $!";
+	print $ofh q{warn "Using corrected Karte::Polar for latitude } . $lat . q{...\n";} . "\n";
+	while(<$ifh>) {
+	    s{^(\s*X1\s*=>\s*)[0-9.-]+}{$1$newx1};
+	    print $ofh $_;
+	}
+	close $ofh
+	    or die "Error while writing to Polar.pm~: $!";
+	rename "$o/Karte/Polar.pm~", "$o/Karte/Polar.pm"
+	    or die "Error while renaming Polar.pm~: $!";
+
+	lib->import($o); # so the hacked Karte::Polar is in front of @INC
     }
     require Karte::Polar;
     require Karte::Standard;
@@ -332,23 +405,6 @@ if ($map) {
 
 if ($center) {
     $center = $conv->(split /,/, $center);
-}
-
-{
-    # expand directories
-    # XXX Should be really a recursive function, probably
-    my @new_osm_files;
-    for my $osm_file (@osm_files) {
-	if (-d $osm_file) {
-	    push @new_osm_files, grep { -f $_ && -s $_ } glob(File::Spec->catfile($osm_file,"*.{osm,osm.gz,osm.bz2}")); # XXX argh, grep duplicates functionality, see "recursive" suggestion above
-	} elsif (-z $osm_file) {
-	    # May happen while loading data, so ignore this
-	    warn "Ignore empty file <$osm_file>...\n";
-	} else {
-	    push @new_osm_files, $osm_file;
-	}
-    }
-    @osm_files = @new_osm_files;
 }
 
 my $tp;

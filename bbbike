@@ -7913,6 +7913,11 @@ sub set_datadir {
 	require Geography::FromMeta;
 	$city_obj = Geography::FromMeta->load_meta($metafile);
     }
+
+    # XXX The polar_coord_hack for osm2bbd
+    if (-e "$datadir/Karte/Polar.pm") {
+	lib->import($datadir);
+    }
 }
 
 # Beendet die Anwendung. Bei Bedarf werden Konfigurationsdateien gesichert.
