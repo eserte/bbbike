@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd-postprocess,v 1.31 2009/06/27 15:41:22 eserte Exp $
+# $Id: osm2bbd-postprocess,v 1.32 2009/06/27 15:41:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -33,6 +33,7 @@ my @targets = ('wasserstrassen_lowres',
 	       'mount',
 	       'coastline_hack',
 	       'check_crossings',
+	       'check_nearest',
 	      );
 # Targets run by default (exclude obscure ones here)
 my @run_targets =
@@ -40,6 +41,7 @@ my @run_targets =
 		  mount                 # lohnt sich nicht, zu wenige Höhenpunkte
 	      |   coastline_hack        # it's a hack
 	      |   check_crossings	# slow
+	      |   check_nearest		# slow
 	      )$}x
 	  }
     @targets;
@@ -368,6 +370,41 @@ sub target_check_crossings {
     }
     system @cmd;
     die "The command @cmd failed: $?" if $? != 0;
+}
+
+sub target_check_nearest {
+    if (!$force && -e "check_nearest.bbd" &&
+	-M "check_nearest.bbd" <= -M "strassen" &&
+	-M "check_nearest.bbd" <= -M "strassen_bab" &&
+	-M "check_nearest.bbd" <= -M "fragezeichen" &&
+	-M "check_nearest.bbd" <= -M "faehren"
+       ) {
+	print STDERR "up-to-date";
+	return;
+    }
+
+    my @cmd = ($^X, "$FindBin::RealBin/check_nearest",
+	       "-asbbd",
+	       "-strfile", "$datadir/strassen",
+	       "-strfile", "$datadir/strassen_bab",
+	       "-strfile", "$datadir/fragezeichen",
+	       "-strfile", "$datadir/faehren",
+	       "-maxdist", "20",
+	      );
+    if ($debug >= 2) {
+	print STDERR "Running '@cmd', writing to check_nearest.bbd...\n";
+    }
+    open my $fh, '-|', @cmd
+	or die "While running @cmd: $!";
+    open my $ofh, ">", "check_nearest.bbd~"
+	or die "Cannot write to check_nearest.bbd~: $!";
+    while(<$fh>) {
+	print $ofh $_;
+    }
+    close $ofh
+	or die "Error while writing to check_nearest.bbd~: $!";
+    rename "check_nearest.bbd~", "check_nearest.bbd"
+	or die "Error while renaming to check_nearest.bbd: $!";
 }
 
 ######################################################################
