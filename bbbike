@@ -6072,7 +6072,7 @@ sub define_item_attribs {
 	(qw(map f w-out w i-out i f-Pabove e e-img
 	    gP gD z g gP gD gBO
 	    s-out l-out show gr rw s-NN s-N s-H s-HH s-B s-BAB sBAB sBAB-BAB sBAB-fg l v
-	    f-label-bg wr w-label-bg gBO-label-bg f-label w-label gBO-label
+	    f-label-bg wr w-label-bg gBO-label-bg f-label w-label i-label gBO-label
 	    u sperre_u u-bg u-fg u_bg-img r sperre_r b sperre_b
 	    r-bg r-fg r_bg-img b-bg b-fg b_bg-img GU-img
 	    u-label r-label b-label
