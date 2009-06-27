@@ -246,10 +246,11 @@ Note that the single bzip2ed file need more time for decompression,
 but also wins time because every node exists exactly once, unlike in
 the tiled data sets.
 
+Resultung file sizes are compared below.
+
 =head2 DB_HASH
 
-First run for the dalmatia set, the resulting cache file is about
-10MB:
+First run for the dalmatia set:
 
     $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache ~/src/bbbike/misc/download/osm/dalmatien 
     ./miscsrc/cache_osm_nodes -o /tmp/testcache   18.34s user 1.79s system 90% cpu 22.271 total
@@ -260,13 +261,12 @@ Rerun the same command on the existing cache, twice:
     ./miscsrc/cache_osm_nodes -o /tmp/testcache   18.10s user 1.68s system 94% cpu 20.906 total
     ./miscsrc/cache_osm_nodes -o /tmp/testcache   17.84s user 1.98s system 94% cpu 21.031 total
 
-Now the berlin set, the resulting cache file being about 39MB:
+Now the berlin set:
 
     $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache2 ~/src/bbbike/misc/download/osm/berlin  
     ./miscsrc/cache_osm_nodes -o /tmp/testcache2   60.08s user 6.17s system 89% cpu 1:13.98 total
 
-And at last the brandenburg set. The resulting cache file is about
-85MB:
+And at last the brandenburg set:
 
     $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache3 ~/src/bbbike/misc/download/osm/brandenburg.osm.bz2 
     ./miscsrc/cache_osm_nodes -o /tmp/testcache3   95.73s user 13.57s system 95% cpu 1:54.25 total
@@ -290,9 +290,7 @@ Now the same tests with $DB_BTREE:
     ./miscsrc/cache_osm_nodes -o /tmp/testcache6 -dbfiletype DB_BTREE   91.11s user 2.45s system 97% cpu 1:36.38 total
 
 Surprisingly, DB_BTREE seems to be somewhat better. File size is
-sometimes better, sometimes worse (first HASH, second BTREE, resp.):
-10.1 MB vs. 9.1 MB, 39 MB vs. 31 MB, 85 MB vs. 138 MB. Note the
-latter, where BTREE is much larger than HASH.
+better for the smaller sets and much worse for the larger set.
 
 =head2 GDBM_File
 
@@ -316,8 +314,7 @@ slightly better, but still not good enough:
 
 C<GDBM_File> seems to be between the C<DB_HASH> and C<DB_BTREE> times
 for the smaller sets and began to trash (mainly disk wait time) for
-the larger set. The file sizes, compared to DB_HASH: 10.1 MB vs. 11.6
-MB, 39 MB vs. 42.5 MB, 85 MB vs. 146 MB.
+the larger set.
 
 About memory consumption: seems to be low and constant, all the time,
 even during the trashing period.
@@ -357,11 +354,20 @@ type).
      $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache3 -dbfiletype SQLite ~/src/bbbike/misc/download/osm/brandenburg.osm.bz2 
      ./miscsrc/cache_osm_nodes -o /tmp/testcache3 -dbfiletype SQLite   192.15s user 2.49s system 98% cpu 3:17.71 total
 
-File sizes are significantly better, expect for the largest file;
-numbers compared to DB_HASH: 10.1 MB vs. 7.1 MB, 39 MB vs. 26.4 MB, 85
-MB vs. 93.6 MB.
+File sizes are significantly better, expect for the largest file.
 
 RAM consumption is constant, about 40 MB.
+
+=head2 FILE SIZES
+
+ |           | dalmatia | berlin | brandenburg |
+ +-----------+----------+--------+-------------+
+ | nodes     |   118211 | 428870 |     1565392 |
+ +-----------+----------+--------+-------------+
+ | DB_HASH   |     10.1 |     39 |          85 |
+ | DB_BTREE  |      9.1 |     31 |         138 |
+ | GDBM_File |     11.6 |   42.5 |         146 |
+ | SQLite    |      7.1 |   26.4 |        93.6 |
 
 =head2 BENCHMARK HINT
 
