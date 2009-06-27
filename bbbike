@@ -2658,7 +2658,7 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 			  -command => sub { plot('p','obst') });
     }
 
-    if ($advanced) {
+    if ($advanced || ($city_obj && $city_obj->is_osm_source)) {
 	$knm->separator;
 	if (!$city_obj || !$city_obj->is_osm_source) {
 	    $knm->command(-label => M("Nicht mehr gepflegt").":",
@@ -2668,7 +2668,7 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 	}
 	my @kneipen_list = qw(kn rest ki);
 	foreach my $f (@kneipen_list) {
-	    if (-f "$FindBin::RealBin/data/$p_file{$f}") {
+	    if (-f "$datadir/$p_file{$f}") {
 		$knm->checkbutton(-label => $p_attrib{$f}->[ATTRIB_PLURAL],
 				  -variable => \$p_draw{$f},
 				  -command => sub { plot('p',$f) });
