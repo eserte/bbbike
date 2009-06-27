@@ -4089,9 +4089,6 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 					  -class => "BBBike Changes",
 					 );
 				 });
-## XXX del: Ist schon seit Aenon nicht mehr notwendig
-#    $hpbm->command(-label => M"Busy-Zeiger zurücksetzen",
-#		   -command => sub { ResetBusy($top) });
     menuright($help_button, $hpbm);
     menuarrow($hpbmb, $hpbm, $col++, -menulabel => M"~Hilfe");
 
@@ -8370,7 +8367,6 @@ sub enter_wind {
 
     $e[-1]->bind('<Return>' => sub { $okb->invoke });
     $t->bind('<<CloseWin>>' => sub { $cb->invoke });
-    #XXX del: $t->idletasks; # XXX help popup to display on the right location
     my_popup($t);
 }
 
@@ -10111,9 +10107,7 @@ sub plot_sperre {
 	my $str = $gesperrt;
 	my $complete_str = $str;
 	my $indexmap;
-	#XXX Abfrage auf $edit_mode notwendig?
-	if (#XXX del: ($edit_mode || $edit_normal_mode) &&
-	    $args{FastUpdate}) {
+	if ($args{FastUpdate}) {
 	    my($new_str, $todelref);
 	    ($new_str, $todelref, $indexmap) = $str->diff_orig(-clonefile => 1);
 	    if (!defined $new_str) {
@@ -12208,11 +12202,6 @@ sub plotorte {
 	}
 
 	my @orte_coords_labeling;
-#XXX del:
-#  	foreach ($orte->file) {
-#  	    $old_mtime{$_} = (stat($_))[STAT_MODTIME];
-#  	    $mtime_file_type{$_} = ['p', $type];
-#  	}
 
 	my $next_meth;
 	my $i;
@@ -15730,38 +15719,13 @@ sub show_overview {
     $toplevel{"overview"} = $overview_top;
     set_as_toolwindow($overview_top);
     $overview_top->{CoordSystem} = $coord_system;
-    # Try to set the overview to the right bottom corner of the main
-    # window:
-    my($w,$h) = (int($top->width/3), int($top->height/3));
-    if (1) {
+    {
+	# Try to set the overview to the right bottom corner of the main
+	# window:
+	my($w,$h) = (int($top->width/3), int($top->height/3));
 	my($x,$y) = ($sy->rootx - $w - 4*2, $sx->rooty - $h - 20 - 4);
 	geometry($overview_top,$x,$y,$w,$h);
-    } else { # XXX del
-    if (!@max_extends) {
-	warn "Should not happen: no defined max_extends";
-	$overview_top->geometry("${w}x$h-0-0");
-    } else {
-	my(@want_extends) = ($top->x+$top->width, $top->y+$top->height,
-			     $w, $h);
-
-	crop_geometry(\@want_extends, \@max_extends);
-	if ($want_extends[GEOMETRY_HEIGHT] < $h) {
-	    $want_extends[GEOMETRY_HEIGHT] = $h;
-	    $want_extends[GEOMETRY_Y]      = "-0";
-	} else {
-	    $want_extends[GEOMETRY_Y] =~ s/^/+/;
-	}
-	if ($want_extends[GEOMETRY_WIDTH] < $w) {
-	    $want_extends[GEOMETRY_WIDTH] = $w;
-	    $want_extends[GEOMETRY_X]     = "-0";
-	} else {
-	    $want_extends[GEOMETRY_X] =~ s/^/+/;
-	}
-	my $geom = "$want_extends[GEOMETRY_WIDTH]x$want_extends[GEOMETRY_HEIGHT]" . "$want_extends[GEOMETRY_X]$want_extends[GEOMETRY_Y]";
-	$overview_top->geometry($geom);
     }
-    } ##XXX <--- delete until here
-
     show_overview_populate($overview_top);
 }
 
@@ -19760,10 +19724,6 @@ sub set_fonts {
 			    -underline => 0,
 			    -overstrike => 0);
 	if ($pt >= 8) {
-#XXX may be deleted
-#	    my $pt = $pt < 0 ? -$pt : $pt;
-#	    $font{'fixed'}
-#		= sprintf("-*-$fixed_font_family-medium-r-normal--%d-*-*-*-m-*-iso8859-1", $pt);
 	    $top->fontConfigure($font{fixed}, -family => $fixed_font_family);
 	} else {
 	    $font{'fixed'} = "5x7"; # XXX really necessary?
