@@ -30,6 +30,8 @@ use Msg; # This call has to be in bbbike!
     }
 }
 
+use BBBikeUtil qw();
+
 sub BBBikeGPS::gps_interface {
     my($mod, %args) = @_;
 
@@ -154,13 +156,13 @@ sub get_route_simplification_mapping {
 
 use vars qw($gpsman_last_dir $gpsman_data_dir);
 if (!defined $gpsman_data_dir) {
-    if (!-d "$FindBin::RealBin/misc/gps_data" &&
-	-d "$FindBin::RealBin/misc/gps_data_local") {
+    if (!-d BBBikeUtil::bbbike_root()."/misc/gps_data" &&
+	-d BBBikeUtil::bbbike_root()."/misc/gps_data_local") {
 	# convention for laptop usage
-	$gpsman_data_dir = "$FindBin::RealBin/misc/gps_data_local";
+	$gpsman_data_dir = BBBikeUtil::bbbike_root()."/misc/gps_data_local";
     } else {
 	# regardless whether it exists or not
-	$gpsman_data_dir = "$FindBin::RealBin/misc/gps_data"
+	$gpsman_data_dir = BBBikeUtil::bbbike_root()."/misc/gps_data"
     }
 }    
 
@@ -527,6 +529,7 @@ use vars qw($symbol_to_img);
 use File::Glob qw();
 use File::Temp qw();
 
+# the "ugly" interface, setting the global $symbol_to_img hash ref
 sub BBBikeGPS::make_symbol_to_img {
     my $must_recreate = 1;
     if ($symbol_to_img) {
@@ -540,7 +543,12 @@ sub BBBikeGPS::make_symbol_to_img {
     }
     return if !$must_recreate;
 
-    $symbol_to_img = {};
+    $symbol_to_img = BBBikeGPS::get_symbol_to_img();
+}
+
+# the "clean" interface for make_symbol_to_img, returns a hash ref
+sub BBBikeGPS::get_symbol_to_img {
+    my $symbol_to_img = {};
     # Try to find a gpsman gmicons directory for "official" Garmin
     # symbols
     {
@@ -566,7 +574,7 @@ sub BBBikeGPS::make_symbol_to_img {
     }
     # Now the user-defined symbols. Here's room for different "userdef
     # symbol sets", which may be per-vehicle, per-user, per-year etc.
-    my $userdef_symbol_dir = "$FindBin::RealBin/misc/garmin_userdef_symbols/bike2008";
+    my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2008";
     if (!-d $userdef_symbol_dir) {
 	warn "NOTE: directory <$userdef_symbol_dir> with userdefined garmin symbols not found.\n";
     } else {
@@ -589,6 +597,7 @@ sub BBBikeGPS::make_symbol_to_img {
 	    $symbol_to_img->{$iconname} = $f;
 	}
     }
+    $symbol_to_img;
 }
 
 use vars qw($global_draw_gpsman_data_s $global_draw_gpsman_data_p);
