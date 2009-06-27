@@ -253,6 +253,11 @@ The next benchmarks are with L<GDBM_File> (option C<-dbfiletype GDBM>):
     $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache3 -dbfiletype GDBM ~/src/bbbike/misc/download/osm/brandenburg.osm.bz2 
     ./miscsrc/cache_osm_nodes -o /tmp/testcache3 -dbfiletype GDBM   87.86s user 25.14s system 34% cpu 5:28.30 total
 
+The last benchmark looks quite bad, so I did another run, which was
+slightly better, but still not good enough:
+
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache3 -dbfiletype GDBM   85.98s user 24.43s system 38% cpu 4:46.94 total
+
 C<GDBM_File> seems to be between the C<DB_HASH> and C<DB_BTREE> times
 for the smaller sets and began to trash (mainly disk wait time) for
 the larger set. The file sizes, compared to DB_HASH: 10.1 MB vs. 11.6
