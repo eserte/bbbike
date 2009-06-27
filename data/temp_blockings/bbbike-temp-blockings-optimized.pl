@@ -955,15 +955,7 @@ userdel	q4::inwork; 15080,11905 14977,11754 14941,11689 14849,11539
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1244930400,
-         'text' => 'B 112 Forst - Guben OD Grieﬂen Derny-Rennen Vollsperrung 13.06.2009-13.06.2009 ',
-         'from' => 1244757600,
-         'id' => 1604,
-         'data' => 'userdel	q4::inwork 92350,-60772 92627,-60499
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1096,15 +1088,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1244930400,
-         'text' => 'B 158 Blumberg - Werneuchen zw. Seefeld und Werneuchen Deckenerneuerung Vollsperrung 11.05.2009-13.06.2009 ',
-         'from' => 1241906400,
-         'id' => 1654,
-         'data' => 'userdel	2::inwork 29103,24437 29528,24348 29791,24336 31905,25433 32229,25382
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1266,15 +1250,7 @@ userdel	q4::inwork 9126,12413 9345,12443
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1244844000,
-         'text' => 'L 303 Umgehungsstraﬂe OD Eggersdorf, Krz. E.-Th‰lmann-Str. Deckenerneuerung Vollsperrung 25.05.2009-12.06.2009 ',
-         'from' => 1243116000,
-         'id' => 1681,
-         'data' => 'userdel	q4::inwork 38771,14926 38637,14790
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1245103200,
@@ -1382,16 +1358,7 @@ userdel	q4::inwork 9126,12413 9345,12443
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_012990',
-         'until' => 1244865600,
-         'text' => 'John-Foster-Dulles-Allee (Tiergarten) in beiden Richtungen zwischen Spreeweg und Yitzhak-Rabin-Str. Veranstaltung, Straﬂe vollst‰ndig gesperrt (bis 13.06.2009, ca. 6 Uhr)',
-         'from' => 1244785956,
-         'id' => 1696,
-         'data' => 'userdel	2::temp 7039,12314 7215,12295 7437,12368 7514,12387 7875,12363 8017,12359 8070,12409 8119,12414
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1254348000,
          'text' => 'B 102 Treuenbrietzener Str. OD J¸terbog, zw. Parkstr. und B¸lowstr. Straﬂenausbau Vollsperrung 15.06.2009-30.09.2009 ',
@@ -1459,15 +1426,7 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22147,4831 22196,4847 22175,473
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1244930400,
-         'text' => 'K 6905 Langerwisch - Wilhelmshorst - B 2 OD Langerwisch, Abzw. Wilhelmshorst Straﬂenbau Vollsperrung 13.06.2009-13.06.2009 ',
-         'from' => 1244757600,
-         'id' => 1705,
-         'data' => 'userdel	q4::inwork -12312,-10337 -12337,-10735
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1270072800,
          'text' => 'L 077 Langerwisch - Saarmund OD Langerwisch Straﬂenbau Vollsperrung 17.06.2009-31.03.2010 ',
