@@ -189,6 +189,7 @@ my %place_to_population;
     );
 
 # see http://www.mail-archive.com/talk@openstreetmap.org/msg06041.html
+# XXX does not match very well with the tracks around Baska Voda --- maybe grade1 should match Q1 at most?
 my %grade_to_Q = (1 => "Q0",
 		  2 => "Q1",
 		  3 => "Q2",
@@ -822,7 +823,7 @@ for my $osm_file (@osm_files) {
 		    push @or, ["strassen", "HH".$addcat];
 		} elsif ($highway_cat =~ m{^(?:secondary|tertiary)$}) {
 		    push @or, ["strassen", "H".$addcat];
-		} elsif ($highway_cat =~ m{^(?:residential|unclassified|service|minor)$}) {
+		} elsif ($highway_cat =~ m{^(?:residential|unclassified|road|service|minor)$}) {
 		    push @or, ["strassen", "N".$addcat];
 		} elsif ($highway_cat eq 'cycleway') {
 		    push @or, ["strassen", "NN".$addcat];
