@@ -541,24 +541,53 @@ sub BBBikeGPS::make_symbol_to_img {
     return if !$must_recreate;
 
     $symbol_to_img = {};
-    # XXX Here's room for different "userdef symbol sets", which may
-    # be per-vehicle, per-user, per-year etc.
+    # Try to find a gpsman gmicons directory for "official" Garmin
+    # symbols
+    {
+	my @gmicons;
+	for my $candidate ("/usr/share/gpsman/gmicons", # Debian default
+			   "/usr/local/share/gpsman/gmicons", # XXX check the FreeBSD location
+			  ) {
+	    if (-d $candidate) {
+		@gmicons = File::Glob::bsd_glob("$candidate/*15x15.gif");
+		last if @gmicons;
+	    }
+	}
+	if (!@gmicons) {
+	    warn "NOTE: no gpsman/gmicons directory found, no support for Garmin symbols.\n";
+	} else {
+	    require File::Basename;
+	    for my $gmicon (@gmicons) {
+		my $iconname = File::Basename::basename($gmicon);
+		$iconname =~ s{15x15.gif$}{};
+		$symbol_to_img->{$iconname} = $gmicon;
+	    }
+	}
+    }
+    # Now the user-defined symbols. Here's room for different "userdef
+    # symbol sets", which may be per-vehicle, per-user, per-year etc.
     my $userdef_symbol_dir = "$FindBin::RealBin/misc/garmin_userdef_symbols/bike2008";
     if (!-d $userdef_symbol_dir) {
 	warn "NOTE: directory <$userdef_symbol_dir> with userdefined garmin symbols not found.\n";
-	return;
+    } else {
+	for my $f (File::Glob::bsd_glob("$userdef_symbol_dir/*.bmp")) {
+	    my($inx) = $f =~ m{(\d+)\.bmp$};
+	    next if !defined $inx; # non parsable bmp filename
+	    $symbol_to_img->{"user:" . (7680 + $inx)} = $f;
+	}
     }
-    for my $f (File::Glob::bsd_glob("$userdef_symbol_dir/*.bmp")) {
-	my($inx) = $f =~ m{(\d+)\.bmp$};
-	next if !defined $inx; # non parsable bmp filename
+
+    # bbd: IMG:... syntax cannot handle whitespace, so create symlinks
+    # without whitespace if necessary (may happen on Windows systems)
+    for my $iconname (keys %$symbol_to_img) {
+	my $f = $symbol_to_img->{$iconname};
 	if ($f =~ m{\s}) {
-	    # bbd: IMG:... syntax cannot handle whitespace, so create a symlink
 	    my($tmpnam) = File::Temp::tmpnam() . ".bmp";
 	    symlink $f, $tmpnam
 		or die "Can't create symlink $tmpnam -> $f: $!";
 	    $f = $tmpnam;
+	    $symbol_to_img->{$iconname} = $f;
 	}
-	$symbol_to_img->{"user:" . (7680 + $inx)} = $f;
     }
 }
 
