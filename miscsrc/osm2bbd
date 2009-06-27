@@ -1134,7 +1134,15 @@ for my $osm_file (@osm_files) {
 	    if (!@or && !$ignore_unhandled && !$ignore_underline) {
 		$do_unhandled->(\$name, \%tag);
 		if ($name ne "") {
-		    push @or, ["_unhandled", "X"];
+		    my $cat;
+		    if (exists $tag{'landuse'} &&
+			$tag{'landuse'} =~ m{^(farm|farmland)$}
+		       ) {
+			$cat = 'F:#ffdead';
+		    } else {
+			$cat = 'X';
+		    }
+		    push @or, ["_unhandled", $cat];
 		}
 	    }
 
