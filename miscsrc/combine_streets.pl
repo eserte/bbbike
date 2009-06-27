@@ -45,11 +45,13 @@ use Getopt::Long;
 
 my $make_closed_polygon;
 my $combine_same_streets;
+my $encoding;
 if (!GetOptions("closedpolygon!" => \$make_closed_polygon,
 		"samestreets!" => \$combine_same_streets,
+		"encoding=s" => \$encoding,
 	       )) {
     die <<EOF;
-    usage: $0 [-closedpolygon] [-samestreets] bbdfile
+    usage: $0 [-closedpolygon] [-samestreets] [-encoding encoding] bbdfile
 EOF
 }
 
@@ -75,8 +77,9 @@ sub make_long_streets {
 	$strfile = $tmpfile;
     }
 
-    my $s = new Strassen $strfile;
+    my $s = Strassen->new($strfile);
     my $out = $s->make_long_streets;
+    $out->set_global_directives({ encoding => [$encoding] }) if $encoding;
     $out->write("-");
 }
 
