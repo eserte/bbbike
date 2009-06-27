@@ -106,6 +106,9 @@ if ($dbfiletype eq 'DB_BTREE') {
     require GDBM_File;
     import GDBM_File;
     @tie_args = ('GDBM_File', $index_file."_gdbm", &GDBM_WRCREAT, 0644);
+} elsif ($dbfiletype eq 'StdHash') {
+    require Tie::Hash;
+    @tie_args = ('Tie::StdHash');
 } else {
     die "Unhandled -dbfiletype $dbfiletype";
 }
@@ -265,6 +268,25 @@ MB, 39 MB vs. 42.5 MB, 85 MB vs. 146 MB.
 
 About memory consumption: seems to be low and constant, all the time,
 even during the trashing period.
+
+=head2 Tie::StdHash
+
+The C<StdHash> dbfiletype just uses C<Tie::StdHash> (see L<Tie::Hash>)
+as the tie backend, effectively benchmarking just the XML reading
+overhead and the overhead of a minimal (pure-perl) tie implementation.
+This is near the minimum times which can be expected here:
+
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache -dbfiletype StdHash ~/src/bbbike/misc/download/osm/dalmatien
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache -dbfiletype StdHash   14.63s user 0.08s system 98% cpu 14.965 total
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache -dbfiletype StdHash ~/src/bbbike/misc/download/osm/dalmatien
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache -dbfiletype StdHash   14.38s user 0.04s system 97% cpu 14.788 total
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache2 -dbfiletype StdHash ~/src/bbbike/misc/download/osm/berlin  
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache2 -dbfiletype StdHash   48.21s user 0.18s system 96% cpu 50.111 total
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache3 -dbfiletype StdHash ~/src/bbbike/misc/download/osm/brandenburg.osm.bz2 
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache3 -dbfiletype StdHash   79.78s user 1.08s system 98% cpu 1:22.33 total
+
+Note that memory grows here, because C<Tie::StdHash> works with
+in-memory hashes. No file sizes here, for obvious reasons.
 
 =head2 BENCHMARK HINT
 
