@@ -153,8 +153,16 @@ sub get_route_simplification_mapping {
 }
 
 use vars qw($gpsman_last_dir $gpsman_data_dir);
-$gpsman_data_dir = "$FindBin::RealBin/misc/gps_data"
-    if !defined $gpsman_data_dir;
+if (!defined $gpsman_data_dir) {
+    if (!-d "$FindBin::RealBin/misc/gps_data" &&
+	-d "$FindBin::RealBin/misc/gps_data_local") {
+	# convention for laptop usage
+	$gpsman_data_dir = "$FindBin::RealBin/misc/gps_data_local";
+    } else {
+	# regardless whether it exists or not
+	$gpsman_data_dir = "$FindBin::RealBin/misc/gps_data"
+    }
+}    
 
 use vars qw($cfc_mapping);
 
