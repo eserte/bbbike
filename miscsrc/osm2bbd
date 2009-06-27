@@ -245,6 +245,12 @@ my $do_amenity = sub {
 	add_underline(\@or, "_motortraffic", $F."#f0f0f0|IMG:Parking");
     } elsif ($amenity eq 'border_control') {
 	push @or, ['grenzuebergaenge', 'GU'];
+    } elsif ($amenity eq 'grave_yard') {
+	if ($is_area) {
+	    push @or, ['sehenswuerdigkeit', 'F:Cemetery'];
+	} else {
+	    push @or, ['sehenswuerdigkeit', 'SW'];
+	}
     } else {
 	$unhandled{"amenity-$amenity"}++;
     }
