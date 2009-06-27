@@ -31,8 +31,10 @@ my $v;
 my $v_if_interactive;
 my @ignore_rx;
 my $autoflush;
+my $included_brunnels;
 if (!GetOptions("o=s" => \$outfile,
 		"against=s" => \$against,
+		"included-brunnels!" => \$included_brunnels,
 		"v" => \$v,
 		"v-if-interactive" => \$v_if_interactive,
 		"ignore=s" => sub {
@@ -48,7 +50,7 @@ if (!GetOptions("o=s" => \$outfile,
     die <<EOF;
 usage: $0 [-v | -v-if-interactive] [-autoflush] [-o outfile]
 	[-ignore name,name,...] [-ignorerx namerx,namerx,...]
-	-against file strassen ...
+	[-against file | -included-brunnels] strassen ...
 EOF
 }
 
@@ -75,10 +77,24 @@ if (@files == 1) {
 }
 $s->make_grid(Exact => 1, UseCache => 1);
 
-my $brunnelfile = $against || "brunnels";
-my $brunnel = Strassen->new($brunnelfile);
+my $brunnel;
+if ($included_brunnels) {
+    $brunnel = Strassen->new;
+    $s->init;
+    while() {
+	my $r = $s->next;
+	last if !@{ $r->[Strassen::COORDS] };
+	if ($r->[Strassen::CAT] =~ m{::(Br|Tu)}) {
+	    $brunnel->push([$r->[Strassen::NAME], $r->[Strassen::COORDS], $1]);
+	}
+    }
+} else {
+    my $brunnelfile = $against || "brunnels";
+    $brunnel = Strassen->new($brunnelfile);
+}
 my $brunnelcr = $brunnel->all_crossings(RetType => "hashpos", UseCache => 1,
 					Kurvenpunkte => 1);
+
 my %seen;
 
 my $outfh;
