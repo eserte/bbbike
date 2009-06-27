@@ -1034,13 +1034,16 @@ sub all_crossings {
     if ($rettype !~ /^(array|hash)(pos)?$/) {
 	die "Wrong RetType $rettype";
     }
-    my $basename = $self->id;
-    my $cachefile = "all_crossings_${basename}_$rettype";
-    if ($all_points) {
-	$cachefile .= "_kurvenp";
-    }
-    if ($self->{Inaccessible}) {
-	$cachefile .= "_inacc";
+    my $cachefile;
+    if ($use_cache) {
+	my $basename = $self->id;
+	$cachefile = "all_crossings_${basename}_$rettype";
+	if ($all_points) {
+	    $cachefile .= "_kurvenp";
+	}
+	if ($self->{Inaccessible}) {
+	    $cachefile .= "_inacc";
+	}
     }
     if ($use_cache && $rettype =~ /^hash/) {
 	require Strassen::Util;
