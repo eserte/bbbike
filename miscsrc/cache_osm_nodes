@@ -92,7 +92,15 @@ my $index_file = $index_dir . '/osm_nodes_lonlat.db' . ($DB_File::db_version eq 
 tie my %nodes_lonlat, 'DB_File', $index_file, O_RDWR|O_CREAT, 0644
     or die "Cannot tie '$index_file': $!";
 
-my @osm_files = @ARGV;
+my @orig_osm_files = @ARGV;
+my @osm_files;
+for my $osm_file (@orig_osm_files) {
+    if (-d $osm_file) {
+	push @osm_files, grep { -f $_ && -s $_ } glob(File::Spec->catfile($osm_file,"*.{osm,osm.gz,osm.bz2}")); # XXX argh, duplicated functionality, see grep_osm
+    } else {
+	push @osm_files, $osm_file;
+    }
+}
 
 my $osm_file_i = 0;
 for my $osm_file (@osm_files) {

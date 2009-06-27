@@ -34,6 +34,7 @@ $codeset = lc $codeset; # 'UTF-8' is not recognized by emacs, but 'utf-8' is
 
 use DB_File;
 use Encode qw(decode encode);
+use File::Spec;
 use Getopt::Long;
 use XML::LibXML;
 
@@ -41,6 +42,8 @@ use constant DEFAULT_CONTEXT_LINES => 30; # to be on the safe side...
 use constant OSM_FILE_ENCODING => 'utf-8'; # assume all XML files are utf8
 
 my $context_lines = DEFAULT_CONTEXT_LINES;
+
+my $need_cache_osm_nodes_hint;
 
 sub usage {
     die "usage: $0 [-coordsys bbbike] [-context nr_of_lines] searchterm osmfile ...\n";
@@ -100,14 +103,26 @@ if (!-d $index_dir) {
 }
 my $index_file = $index_dir . '/osm_nodes_lonlat.db' . ($DB_File::db_version eq '' || $DB_File::db_version <= 1 ? '' : int($DB_File::db_version));
 
-tie my %nodes_lonlat, 'DB_File', $index_file, O_RDONLY, 0644
-    or die "Cannot tie '$index_file' ($!), maybe you need to run cache_osm_nodes first?\n";
-
 my $search_term = shift @ARGV;
 usage if !defined $search_term;
 $search_term = decode $codeset, $search_term;
 
-my @osm_files = @ARGV;
+my @orig_osm_files = @ARGV;
+my @osm_files;
+for my $osm_file (@orig_osm_files) {
+    if (-d $osm_file) {
+	push @osm_files, grep { -f $_ && -s $_ } glob(File::Spec->catfile($osm_file,"*.{osm,osm.gz,osm.bz2}")); # XXX argh, duplicated functionality, see osm2bbd
+    } else {
+	push @osm_files, $osm_file;
+    }
+}
+
+# do it after populating @orig_osm_files
+tie my %nodes_lonlat, 'DB_File', $index_file, O_RDONLY, 0644
+    or do {
+	$need_cache_osm_nodes_hint = 1;
+	die "Cannot tie '$index_file' ($!)\n";
+    };
 
 my $p = XML::LibXML->new;
 
@@ -145,6 +160,7 @@ for my $osm_file (@osm_files) {
 			    push @coords, $lonlat;
 			} else {
 			    warn "WARN: Node $nd_ref cannot be resolved.\n";
+			    $need_cache_osm_nodes_hint = 1;
 			}
 		    }
 		} else {	# node
@@ -178,7 +194,7 @@ for my $osm_file (@osm_files) {
 #: #: -*- coding: $codeset -*-
 #: encoding: $codeset
 #: map: $coordsys_map
-#: note: filtered '$search_term' in '@osm_files'
+#: note: filtered '$search_term' in '@orig_osm_files'
 #:
 EOF
 		    $needs_header = 0;
@@ -189,6 +205,20 @@ EOF
 	}
     }
 }
+
+END {
+    run_cache_osm_nodes_hint() if $need_cache_osm_nodes_hint;
+}
+
+sub run_cache_osm_nodes_hint {
+    print STDERR <<EOF;
+Maybe you need to run cache_osm_nodes first? Try:
+
+    $^X $FindBin::RealBin/cache_osm_nodes @orig_osm_files
+
+EOF
+}
+
 __END__
 
 =head1 NAME
