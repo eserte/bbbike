@@ -564,6 +564,8 @@ for my $osm_file (@osm_files) {
 		push @or, $do_historic->(0, $tag{'historic'}, \%tag);
 	    } elsif (exists $tag{'tourism'}) {
 		push @or, $do_tourism->(0, $tag{'tourism'}, \%tag);
+	    } elsif (exists $tag{'aeroway'} && $tag{'aeroway'} eq 'aerodrome') {
+		push @or, ['sehenswuerdigkeit', 'SW|IMG:airport'];
 	    } elsif (exists $tag{'power'}) {
 		add_underline(\@or, "_power", "X");
 	    }
@@ -1016,7 +1018,7 @@ for my $osm_file (@osm_files) {
 		    }
 		} else {
 		    $unhandled{"boundary=$boundary"}++;
-		}   
+		}
 	    } elsif ($place) {
 		if      ($place eq 'airport') {
 		    push @or, ["flaechen", "F:Ae"];
