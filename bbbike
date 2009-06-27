@@ -661,39 +661,41 @@ if (!defined $city && !defined $datadir) {
 if (defined $city) {
     require Geography;
     $city_obj = Geography->new($city, $country);
-    if ($city_obj) {
-	set_datadir($city_obj->datadir, -clearold => 1);
-	%global_search_args = $city_obj->search_args;
-	if ($city eq "Berlin") {
-	    $no_original_datadir = 0; # XXX Was bedeutet das genau?
-	    $dataset_title = undef;
-	} else {
-	    $no_original_datadir = 1; # XXX Was bedeutet das genau?
-	    $dataset_title = $city . " " . $country;
-	}
-	if ($city_obj->scrollregion) {
-	    @scrollregion = $city_obj->scrollregion;
-	    $normal_scrollregion = $scrollregion[2]-$scrollregion[0];
-	    for (@scrollregion) { $_ *= $scale };
-	}
-    } else {
+    if (!$city_obj) {
 	die Mfmt("Kann keine passende Datei für Stadt=%s und Land=%s finden",
 		 $city, (defined $country ? $country : M("(unbestimmt)")));
+    }
+    set_datadir($city_obj->datadir, -clearold => 1);
+    %global_search_args = $city_obj->search_args;
+    if ($city eq "Berlin") {
+	$no_original_datadir = 0; # XXX Was bedeutet das genau?
+	$dataset_title = undef;
+    } else {
+	$no_original_datadir = 1; # XXX Was bedeutet das genau?
+	$dataset_title = $city . " " . $country;
+    }
+    if ($city_obj->scrollregion) {
+	@scrollregion = $city_obj->scrollregion;
+	$normal_scrollregion = $scrollregion[2]-$scrollregion[0];
+	for (@scrollregion) { $_ *= $scale };
     }
 } elsif ($datadir) {
     set_datadir($datadir, -clearold => 1);
     $no_original_datadir = 1;
     $dataset_title = $city_obj && $city_obj->{dataset_title} ? $city_obj->{dataset_title} : basename($datadir);
 }
+if (!$city_obj) {
+    require Geography::Base;
+    $city_obj = Geography::Base->new;
+    warn "Fallback to unspecified city object...\n";
+}
 
-if ($city_obj) {
-    if ($city_obj->can("skip_features")) {
-	%skip_features = map{($_,1)} $city_obj->skip_features;
-    }
-    # XXX nicer solution?
-    if ($city_obj->is_osm_source) {
-	$sBAB_two_track_width = 9999; # effectively turning off
-    }
+if ($city_obj->can("skip_features")) {
+    %skip_features = map{($_,1)} $city_obj->skip_features;
+}
+# XXX nicer solution?
+if ($city_obj->is_osm_source) {
+    $sBAB_two_track_width = 9999; # effectively turning off
 }
 
 # define_item_attribs should be called after determining the $city 
@@ -1620,7 +1622,7 @@ $wbm->command(-label => M("Wetterstation").":",
 
 {
     my @weather_src;
-    if (!$city_obj || !$city_obj->is_osm_source) {
+    if (!$city_obj->is_osm_source) {
 	@weather_src = (['uptodate' => M"aktuellste"],
 			['dahlem2'],
 			['dahlem1'],
@@ -1907,7 +1909,7 @@ unless($skip_features{"strassen"}) {
 	 -accelerator => 'S',
 	 -strchooseortargs =>
 	 {'-markstartifactive' => 1,
-	  (!$city_obj || !$city_obj->is_osm_source
+	  (!$city_obj->is_osm_source
 	   ? (-completelistbutton => sub { choose_from_plz(-interactive => 1) },
 	      -completelistbuttonlabel => M"Alle Straßen"
 	     )
@@ -2681,30 +2683,31 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 			  -command => sub { plot('p','obst') });
     }
 
-    if ($advanced || ($city_obj && $city_obj->is_osm_source)) {
-	$knm->separator;
-	if (!$city_obj || !$city_obj->is_osm_source) {
-	    $knm->command(-label => M("Nicht mehr gepflegt").":",
-			  -state => 'disabled',
-			  -font => $font{'bold'},
-			 );
-	}
-	my @kneipen_list = qw(kn rest ki);
-	foreach my $f (@kneipen_list) {
+    if ($advanced || $city_obj->is_osm_source) {
+	my @try_kneipen_list = qw(kn rest ki);
+	my @kneipen_list;
+	foreach my $f (@try_kneipen_list) {
 	    if (-f "$datadir/$p_file{$f}") {
-		$knm->checkbutton(-label => $p_attrib{$f}->[ATTRIB_PLURAL],
-				  -variable => \$p_draw{$f},
-				  -command => sub { plot('p',$f) });
-		$knm->command(-label => Mfmt("%s auswählen", $p_attrib{$f}->[ATTRIB_SINGULAR]),
-			      -command => sub { choose_ort('p', $f) });
+		push @kneipen_list, $f;
 	    }
 	}
-	if (0) { # XXX Wird gar nicht mehr gepflegt...
-	    $knm->command(-label => M"Film auswählen",
-			  -command => sub {
-			      require BBBikeAdvanced;
-			      search_movie();
-			  });
+	if (@kneipen_list) {
+	    $knm->separator;
+	    if (!$city_obj->is_osm_source) {
+		$knm->command(-label => M("Nicht mehr gepflegt").":",
+			      -state => 'disabled',
+			      -font => $font{'bold'},
+			     );
+	    }
+	    foreach my $f (@kneipen_list) {
+		if (-f "$datadir/$p_file{$f}") {
+		    $knm->checkbutton(-label => $p_attrib{$f}->[ATTRIB_PLURAL],
+				      -variable => \$p_draw{$f},
+				      -command => sub { plot('p',$f) });
+		    $knm->command(-label => Mfmt("%s auswählen", $p_attrib{$f}->[ATTRIB_SINGULAR]),
+				  -command => sub { choose_ort('p', $f) });
+		}
+	    }
 	}
     }
 
@@ -3796,7 +3799,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 			       $replotsub->();
 			   });
     }
-    if (!$city_obj || !$city_obj->is_osm_source) { # no scope with osm data
+    if (!$city_obj->is_osm_source) { # no scope with osm data
 	$opbm->cascade(-label => M('Scope').' ...');
 	{
 	    my $sbm = $opbm->Menu(-title => M('Scope').' ...');
@@ -7727,7 +7730,7 @@ sub draw_street_numbers {
     # XXX handling of multiple street numbers? e.g. "F1, R1" or "B2/B5"?
     my($type,$nr) = Strasse::parse_street_type_nr($strname);
     # Extra routes in and outer Berlin:
-    if (!defined $type && $city_obj && $city_obj->can("parse_street_type_nr")) {
+    if (!defined $type && $city_obj->can("parse_street_type_nr")) {
 	($type, $nr, $do_round, $image) = $city_obj->parse_street_type_nr($strname);
     }
     if (defined $type) {
@@ -11578,7 +11581,7 @@ sub choose_ort {
 sub choose_streets {
     choose_ort(qw(s s),
 	       -markstartifactive => 1,
-	       (!$city_obj || !$city_obj->is_osm_source
+	       (!$city_obj->is_osm_source
 		? (-completelistbutton => sub { choose_from_plz(-interactive => 1) },
 		   -completelistbuttonlabel => "Alle Straßen"
 		  )
@@ -13105,7 +13108,7 @@ sub show_info {
     require Karte::ETRS89;
     my($sx,$sy) = $Karte::Standard::obj->trim_accuracy(anti_transpose($coords[0], $coords[1]));
     my($px,$py);
-    if ($city_obj && $city_obj->can("standard_to_polar")) {
+    if ($city_obj->can("standard_to_polar")) {
 	($px,$py) = $city_obj->standard_to_polar($sx,$sy);
     } else {
 	($px,$py) = $Karte::Polar::obj->trim_accuracy($coord_system_obj->map2map($Karte::Polar::obj, $sx, $sy));
@@ -15513,7 +15516,7 @@ sub scale_maps {
 }
 
 sub scrollregion_best {
-    if ($city_obj && $city_obj->bbox) {
+    if ($city_obj->bbox) {
 	require BBBikeAdvanced;
 	set_scrollregion(@{ $city_obj->_bbox_standard_coordsys });
     }
@@ -15532,9 +15535,9 @@ sub center_best {
 	    return;
 	}
     }
-    if ($city_obj && $city_obj->_center_standard_coordsys) {
+    if ($city_obj->_center_standard_coordsys) {
 	$c->center_view(transpose(split /,/, $city_obj->_center_standard_coordsys));
-    } elsif ($city_obj && $city_obj->center) {
+    } elsif ($city_obj->center) {
 	$c->center_view(transpose(split /,/, $city_obj->center));
     } else {
 	$c->center_view;
@@ -15851,7 +15854,7 @@ sub show_overview_populate {
     $sx->grid(-row => 1, -column => 0, -sticky => 'ew');
 
     my $center_coords;
-    if ($city_obj && $city_obj->center) {
+    if ($city_obj->center) {
 	$center_coords = [ split /,/, $city_obj->center ];
     } else {
 	$center_coords = [8581,12243]; # Fallback: Brandenburger Tor
@@ -15860,7 +15863,7 @@ sub show_overview_populate {
     my($ov_center_x,$ov_center_y) = $ov_transpose->(@$center_coords);
 
     my $center_name;
-    if ($city_obj && $city_obj->center_name) {
+    if ($city_obj->center_name) {
 	$center_name = $city_obj->center_name;
     }
 
