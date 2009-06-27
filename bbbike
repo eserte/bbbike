@@ -683,7 +683,7 @@ if (defined $city) {
 } elsif ($datadir) {
     set_datadir($datadir, -clearold => 1);
     $no_original_datadir = 1;
-    $dataset_title = basename($datadir);
+    $dataset_title = $city_obj && $city_obj->{dataset_title} ? $city_obj->{dataset_title} : basename($datadir);
 }
 
 if ($city_obj) {
