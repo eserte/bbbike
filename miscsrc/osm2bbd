@@ -185,6 +185,7 @@ my %place_to_population;
 		   (map { "line_dash.Z$_: 8,5,2,5" } (1 .. 10)),
 		  ],
      'zebrastreifen' => ['category_image.Zs: ../misc/verkehrszeichen/Zeichen_350.svg:24x24=1:12000,xxx'],
+     'grenzuebergaenge' => ['category_image.GU: grenzuebergang_16'],
     );
 
 # see http://www.mail-archive.com/talk@openstreetmap.org/msg06041.html
@@ -236,6 +237,8 @@ my $do_amenity = sub {
 	add_underline(\@or, "_education", $F."X");
     } elsif ($amenity =~ m{^(?:parking|car_rental)$}) {
 	add_underline(\@or, "_motortraffic", $F."#f0f0f0|IMG:Parking");
+    } elsif ($amenity eq 'border_control') {
+	push @or, ['grenzuebergaenge', 'GU'];
     } else {
 	$unhandled{"amenity-$amenity"}++;
     }
