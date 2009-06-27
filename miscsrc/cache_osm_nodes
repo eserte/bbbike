@@ -102,6 +102,10 @@ if ($dbfiletype eq 'DB_BTREE') {
     @tie_args = ('DB_File', $index_file."_btree", O_RDWR|O_CREAT, 0644, $DB_BTREE);
 } elsif ($dbfiletype eq 'DB_HASH') {
     @tie_args = ('DB_File', $index_file, O_RDWR|O_CREAT, 0644, $DB_BTREE);
+} elsif ($dbfiletype eq 'GDBM') {
+    require GDBM_File;
+    import GDBM_File;
+    @tie_args = ('GDBM_File', $index_file."_gdbm", &GDBM_WRCREAT, 0644);
 } else {
     die "Unhandled -dbfiletype $dbfiletype";
 }
@@ -176,6 +180,7 @@ nodes, the resulting cache file is about 10MB:
 
 Rerun the same command on the existing cache, twice:
 
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache ~/src/bbbike/misc/download/osm/dalmatien 
     ./miscsrc/cache_osm_nodes -o /tmp/testcache   18.10s user 1.68s system 94% cpu 20.906 total
     ./miscsrc/cache_osm_nodes -o /tmp/testcache   17.84s user 1.98s system 94% cpu 21.031 total
 
@@ -195,18 +200,52 @@ exactly once). The resulting cache file is about 85MB:
 
 Now the same tests with $DB_BTREE:
 
-    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache4 -dbfiletype DB_BTREE ~/src/bbbike/misc/download/osm/dalmatien
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache -dbfiletype DB_BTREE ~/src/bbbike/misc/download/osm/dalmatien
     ./miscsrc/cache_osm_nodes -o /tmp/testcache4 -dbfiletype DB_BTREE   17.56s user 0.31s system 93% cpu 19.052 total
-    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache4 -dbfiletype DB_BTREE ~/src/bbbike/misc/download/osm/dalmatien
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache -dbfiletype DB_BTREE ~/src/bbbike/misc/download/osm/dalmatien
     ./miscsrc/cache_osm_nodes -o /tmp/testcache4 -dbfiletype DB_BTREE   17.23s user 0.39s system 94% cpu 18.653 total
 
-    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache5 -dbfiletype DB_BTREE ~/src/bbbike/misc/download/osm/berlin  
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache2 -dbfiletype DB_BTREE ~/src/bbbike/misc/download/osm/berlin  
     ./miscsrc/cache_osm_nodes -o /tmp/testcache5 -dbfiletype DB_BTREE   56.33s user 1.46s system 91% cpu 1:03.12 total
 
-    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache6 -dbfiletype DB_BTREE ~/src/bbbike/misc/download/osm/brandenburg.osm.bz2 
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache3 -dbfiletype DB_BTREE ~/src/bbbike/misc/download/osm/brandenburg.osm.bz2 
     ./miscsrc/cache_osm_nodes -o /tmp/testcache6 -dbfiletype DB_BTREE   91.11s user 2.45s system 97% cpu 1:36.38 total
 
-Surprisingly, DB_BTREE seems to be somewhat better.
+Surprisingly, DB_BTREE seems to be somewhat better. File size is
+sometimes better, sometimes worse (first HASH, second BTREE, resp.):
+10.1 MB vs. 9.1 MB, 39 MB vs. 31 MB, 85 MB vs. 138 MB. Note the
+latter, where BTREE is much larger than HASH.
+
+The next benchmarks are with L<GDBM_File> (option C<-dbfiletype GDBM>):
+
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache -dbfiletype GDBM ~/src/bbbike/misc/download/osm/dalmatien
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache -dbfiletype GDBM   15.68s user 2.85s system 92% cpu 20.138 total
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache -dbfiletype GDBM ~/src/bbbike/misc/download/osm/dalmatien
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache -dbfiletype GDBM   15.95s user 2.86s system 92% cpu 20.319 total
+
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache2 -dbfiletype GDBM ~/src/bbbike/misc/download/osm/berlin  
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache2 -dbfiletype GDBM   51.77s user 8.74s system 87% cpu 1:08.92 total
+
+    $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache3 -dbfiletype GDBM ~/src/bbbike/misc/download/osm/brandenburg.osm.bz2 
+    ./miscsrc/cache_osm_nodes -o /tmp/testcache3 -dbfiletype GDBM   87.86s user 25.14s system 34% cpu 5:28.30 total
+
+C<GDBM_File> seems to be between the C<DB_HASH> and C<DB_BTREE> times
+for the smaller sets and began to trash (mainly disk wait time) for
+the larger set. The file sizes, compared to DB_HASH: 10.1 MB vs. 11.6
+MB, 39 MB vs. 42.5 MB, 85 MB vs. 146 MB.
+
+=head2 HINT
+
+To rerun the benchmarks, just filter out the commands out of this Pod:
+
+    cd ..../src/bbbike
+    perl -nle 'm{^    \$ (time .*)} and print $1' ./miscsrc/cache_osm_nodes  
+
+Check the output, and then rerun the one-liner and pipe to shell (and
+before that, delete any existing test caches):
+
+    rm /tmp/testcache*
+    perl -nle 'm{^    \$ (time .*)} and print $1' ./miscsrc/cache_osm_nodes | sh -x -
 
 =head1 SEE ALSO
 
