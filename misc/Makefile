@@ -57,10 +57,12 @@ rsync-uaprof:
 	rsync -avz root@bbbike.de:/var/www/domains/radzeit.de/www/BBBike/tmp/uaprof/ ../tmp/uaprof/
 
 sparkassen_osm.bbd:	../data_berlin_osm_bbbike/_unhandled
-	perl -nle '/(^Sparkasse|Berliner Sparkasse|operator:Sparkasse)/ and do { s{\tX }{\tIMG:/home/e/eserte/images/icons/sparkasse.gif }; print }' ../data_berlin_osm_bbbike/_unhandled > sparkassen_osm.bbd
+	perl -nle '/(^Sparkasse|Berliner Sparkasse|operator:Sparkasse)/ and do { s{\tX }{\tIMG:/home/e/eserte/images/icons/sparkasse.gif }; print }' ../data_berlin_osm_bbbike/_unhandled > sparkassen_osm.bbd~
+	mv sparkassen_osm.bbd~ sparkassen_osm.bbd
 
 citibank_osm.bbd:	../data_berlin_osm_bbbike/_unhandled
-	perl -nle '/citibank/i and do { s{\tX }{\tIMG:/home/e/eserte/images/icons/citibank.gif }; print }' ../data_berlin_osm_bbbike/_unhandled > citibank_osm.bbd
+	perl -nle '/citibank/i and do { s{\tX }{\tIMG:/home/e/eserte/images/icons/citibank.gif }; print }' ../data_berlin_osm_bbbike/_unhandled > citibank_osm.bbd~
+	mv citibank_osm.bbd~ citibank_osm.bbd
 
 ######################################################################
 # OSM downloads
