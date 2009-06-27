@@ -82,6 +82,7 @@ sub search_args {
 }
 
 sub center { "1831,768" } # Marienplatz
+sub center_name { "München" }
 
 1;
 

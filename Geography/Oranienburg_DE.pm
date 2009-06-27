@@ -41,6 +41,7 @@ use base qw(Geography::Base);
 sub cityname { "Oranienburg" }
 
 sub center { "-1547,38500" }
+sub center_name { "Oranienburg" }
 
 sub supercityparts { () }
 sub cityparts      { sort keys %subcityparts }

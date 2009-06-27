@@ -25,6 +25,7 @@ sub cityname { "Zürich" }
 sub center { "0,0" } # Grossmünster
 #sub center { "-308200,-565917" } # N 47°22'13.8" E 8°32'39.7", Grossmünster
 #sub scrollregion { (-358200,-605917,-258200,-505917) }
+sub center_name { "Zürich" }
 
 sub datadir {
     require File::Basename;
