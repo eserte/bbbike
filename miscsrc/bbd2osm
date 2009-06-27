@@ -394,3 +394,39 @@ sub _xmlify {
 }
 
 __END__
+
+=head1 NAME
+
+bbd2osm - generate osm files out of bbd files
+
+=head1 SYNOPSIS
+
+Convert a whole bbbike data directory. For the default data directory
+use
+
+    bbd2osm > out.osm
+
+For a specified data directory use
+
+    bbd2osm /path/to/datadir > out.osm
+
+For a single bbd file use
+
+    bbd2osm -single in.bbd -type ... > out.osm
+
+Refer to the usage for allowed types.
+
+=head1 TODO
+
+Currently the way and node ids start at 1 and increment by one. This
+means clashes are possible if these data and "real" osm is mixed.
+Maybe I should check if the various osm tools can handle negative or
+non-numeric ids, or if there's a private id range documented.
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=cut
+
+
