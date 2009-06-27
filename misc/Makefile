@@ -149,7 +149,7 @@ dalmatia-test-osm2bbd-postprocess1:
 	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_dalmatien -dataset-title Dalmatia
 
 dalmatia-test-osm2bbd-postprocess2:
-	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_dalmatien -only-coastline-hack -coastline-hack-anchor sw
+	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_dalmatien -only-coastline-hack -coastline-hack-anchor sw -f
 
 dalmatia-test-osm2bbd-postprocess3:
 	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_dalmatien -only-wasserstrassen-lowres
