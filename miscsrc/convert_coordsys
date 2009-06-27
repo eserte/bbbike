@@ -47,6 +47,10 @@ if (@ARGV == 2) {
 
 while(<STDIN>) {
     chomp;
+    if ($_ =~ m{^#}) {
+	print $_, "\n";
+	next;
+    }
     my $l = Strassen::parse($_);
     my @new_s;
     foreach my $xy (@{$l->[1]}) {
