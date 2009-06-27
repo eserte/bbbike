@@ -1617,29 +1617,52 @@ $wbm->command(-label => M("Wetterstation").":",
 	      -state => 'disabled',
 	      -font => $font{'bold'},
 	     );
-foreach (['uptodate' => M"aktuellste"],
-	 ['dahlem2'],
-	 ['dahlem1'],
-	 ($devel_host && $advanced
-	  ? (['wetterkarte' => 'Wetterkarte Berlin-Dahlem'],
-	     ['metar-EDDT' => 'METAR Tegel'],
-	     ['metar-EDDB' => 'METAR Schönefeld'],
-	    )
-	  : ()
-	 ),
-	) {
-    my $name = $_->[1];
-    if (!defined $name) {
-	$name = $wetter_name{$_->[0]}
+
+{
+    my @weather_src;
+    if (!$city_obj || !$city_obj->is_osm_source) {
+	@weather_src = (['uptodate' => M"aktuellste"],
+			['dahlem2'],
+			['dahlem1'],
+			($devel_host && $advanced
+			 ? (['wetterkarte' => 'Wetterkarte Berlin-Dahlem'],
+			    ['metar-EDDT' => 'METAR Tegel'],
+			    ['metar-EDDB' => 'METAR Schönefeld'],
+			   )
+			 : ()
+			),
+		       );
+    } elsif (-r "$datadir/icao") {
+	eval {
+	    my $icao_s = Strassen->new_stream("$datadir/icao");
+	    $icao_s->read_stream(sub {
+				     my($r, undef, $line) = @_;
+				     if (my($icao, $fullname) = $r->[Strassen::NAME] =~ m{^(\S+)\s+\((.*)\)}) {
+					 push @weather_src, ["metar-$icao" => "METAR $fullname"];
+				     } else {
+					 warn "Cannot parse '$r->[Strassen::NAME]' at line $line in $datadir/icao\n";
+				     }
+				 });
+	};
+	warn $@ if $@;
     }
-    $wbm->radiobutton
-      (-label    => $name,
-       -variable => \$wetter_station,
-       -value    => $_->[0],
-       -command  => sub { update_weather($wetter_force_update) },
-      );
+
+    foreach (@weather_src) {
+	my $name = $_->[1];
+	if (!defined $name) {
+	    $name = $wetter_name{$_->[0]}
+	}
+	$wbm->radiobutton
+	    (-label    => $name,
+	     -variable => \$wetter_station,
+	     -value    => $_->[0],
+	     -command  => sub { update_weather($wetter_force_update) },
+	    );
+    }
+    if (@weather_src) {
+	$wbm->separator;
+    }
 }
-$wbm->separator;
 
 $wbm->command(-label => M('Quelle').':',
 	      -state => 'disabled',
