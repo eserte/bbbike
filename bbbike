@@ -16016,7 +16016,7 @@ sub show_overview_populate {
 		    if ($ws_low) {
 			$args{-object} = $ws_low;
 		    } else {
-			for my $cat (qw(W1 W2 F:W)) {
+			for my $cat (qw(W1 W2 F:W F:I)) {
 			    $str_restrict{$abk}->{$cat} = 1;
 			}
 			for my $cat (qw(W0 W)) {
@@ -16035,6 +16035,11 @@ sub show_overview_populate {
 		     Width  => 1,
 		     %args,
 		    );
+
+		if ($abk eq 'w') {
+		    # Hack: need to display islands over water
+		    $overview_canvas->raise('i-I');
+		}
 	    }
 	};
 	if ($@) {
