@@ -5471,6 +5471,7 @@ sub define_item_attribs {
 # diese Farbe nach Weiß umgewandelt.
 # white wird überall dort verwendet, wo eine andere Hintergrundfarbe an der
 # Stelle definiert ist, z.B. beim U-Bahn-Symbol oder in der Legende
+    my @area_cats = qw(P W I Ae ex-Ae Forest Cemetery Orchard Green Sport Industrial Mine);
     %category_color =
 	('N'  => 'grey98',
 	 'NN' => '#bdffbd',
@@ -5530,9 +5531,7 @@ sub define_item_attribs {
 	 'W'  => '#bad5f7', 	# Gewässer
 	 'WR' => '#404080',	# Wasserrouten
 	 'P'  => '#76c48b', 	# Parks
-	 'Pabove'  => '#76c48b', 	# same, but for higher stacking
 	 'Forest'  => '#66b47b', 	# Wälder
-	 'Forestabove'  => '#66b47b', 	# same, but for higher stacking
 	 'Cemetery'  => '#70c085', 	# Friedhöfe
 	 'Green' => '#76c48b', 	# sonstige Grünanlagen
 	 'Orchard' => '#e8f8c8', 	# Kleingärten (was #80ca94)
@@ -5631,8 +5630,21 @@ sub define_item_attribs {
 	 'Ae' => "$sans_serif_font_family %d",
 	 'ex-Ae' => "$sans_serif_font_family %d",
 	);
-    for (qw(Forest Forestabove Pabove Cemetery Orchard Green Sport Industrial Mine)) { 
-	$category_font{$_} = $category_font{'P'};
+    # all other area categories:
+    for my $cat (@area_cats) {
+	if (!exists $category_font{$cat}) {
+	    $category_font{$cat} = $category_font{'P'};
+	}
+    }
+    # 'above' categories share the same attributes like the non-'above' ones:
+    for my $cat (@area_cats) {
+	my $cat_above = $cat . 'above';
+	if (!exists $category_color{$cat_above} && exists $category_color{$cat}) {
+	    $category_color{$cat_above} = $category_color{$cat};
+	}
+	if (!exists $category_font{$cat_above} && exists $category_font{$cat}) {
+	    $category_font{$cat_above} = $category_font{$cat};
+	}
     }
 
     #$pp_color = '#008000'; # bad contrast with rbahn, not good with Bundesstraße, but better with fragezeichen
@@ -5931,9 +5943,7 @@ sub define_item_attribs {
 	 'Pl' => [M"Platz", M"Plätze", undef],
 	 'BAB'=> [M"Autobahn", M"Autobahnen", undef],
 	 'P'  => [M"Park", M"Parks", undef],
-	 'Pabove' => [M"Park", M"Parks", undef],
 	 'Forest' => [M"Wald", M"Wälder", undef],
-	 'Forestabove' => [M"Wald", M"Wälder", undef],
 	 'Cemetery' => [M"Friedhof", M"Friedhöfe", undef],
 	 'Green' => [M"Grünanlage", M"Grünanlagen", undef],
 	 'Orchard' => [M"Kleingärten", M"Kleingärten", undef],
@@ -5996,6 +6006,12 @@ sub define_item_attribs {
 	 'WR' => [M"Wasserroute", M"Wasserrouten", undef],
 	 'radroute' => [M"Radroute", M"Radrouten", undef],
 	);
+    foreach my $cat (@area_cats) {
+	my $cat_above = $cat . 'above';
+	if (exists $category_attrib{$cat} && !exists $category_attrib{$cat_above}) {
+	    $category_attrib{$cat_above} = $category_attrib{$cat};
+	}
+    }
     foreach (@Radwege::category_order) {
 	if (defined $Radwege::category_code{$_}) {
 	    $category_attrib{$Radwege::category_code{$_}} =
