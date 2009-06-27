@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd-postprocess,v 1.24 2009/06/27 15:32:48 eserte Exp $
+# $Id: osm2bbd-postprocess,v 1.25 2009/06/27 15:33:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -111,7 +111,7 @@ sub target_wasserstrassen_lowres {
     my $cmd = <<EOF;
 set -e
 cat wasserstrassen | $miscsrcdir/grepstrassen --catrx '^(F:W1)\$' > $tmp1
-cat wasserstrassen | $miscsrcdir/grepstrassen --catrx '^(W1|W2|F:W)\$' --minarea 3 >> $tmp1
+cat wasserstrassen | $miscsrcdir/grepstrassen --catrx '^(W1|W2|F:W|F:I)\$' --minarea 3 >> $tmp1
 $^X $miscsrcdir/simplify_streets -tolerance 300 -algorithm 'douglas-peucker' $tmp1 > $tmp2
 mv -f $tmp2 wasserstrassen-lowres
 chmod ugo-wx,ugo+r wasserstrassen-lowres

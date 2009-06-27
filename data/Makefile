@@ -276,7 +276,7 @@ wasserstrassen-lowres:  wasserstrassen wasserumland wasserumland2 \
 	cat wasserstrassen wasserumland wasserumland2 |\
 	    $(GREPSTRASSEN) --catrx '^(F:W1)$$' > $@~
 	cat wasserstrassen wasserumland wasserumland2 |\
-	    $(GREPSTRASSEN) --catrx '^(W1|W2|F:W)$$' --minarea 3 >> $@~
+	    $(GREPSTRASSEN) --catrx '^(W1|W2|F:W|F:I)$$' --minarea 3 >> $@~
 #	$(PERL) $(MISCSRCDIR)/simplify_streets -simplify-coefficient 0.04 $@~ > $@~~
 	$(PERL) $(MISCSRCDIR)/simplify_streets -tolerance 300 -algorithm 'douglas-peucker' $@~ > $@~~
 	rm $@~
