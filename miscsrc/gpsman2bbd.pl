@@ -51,6 +51,7 @@ sub gpsman2bbd {
     my $breakmin = 5;
     my $breakdist = 0;
     my $breakinfrequent;
+    my $use_symcat;
     my @pcat  = (qw(GPSp GPSp~ GPSp~~ GPSp?));
     my @scat  = (qw(GPSs GPSs~ GPSs~~ GPSs?));
     my $destmaptoken = "standard";
@@ -69,6 +70,7 @@ sub gpsman2bbd {
 		    "breakdist=i" => \$breakdist,
 		    "breakinfrequent!" => \$breakinfrequent,
 		    "pcat=s" => \$pcat[0],
+		    "symcat!" => \$use_symcat,
 		    "scat=s" => \$scat[0],
 		    "scat1=s" => \$scat[1],
 		    "scat2=s" => \$scat[2],
@@ -85,7 +87,7 @@ sub gpsman2bbd {
 Usage: $0 [-destdir directory] [-deststreets basename.bbd]
           [-destpoints basename.bbd] [-breakmin minutes]
           [-breakdist meters] [-breakinfrequent]
-	  [-destmap maptoken] [-addprefix]
+	  [-destmap maptoken] [-addprefix] [-symcat]
           [-pcat cat] [-scat cat] [-scat1 cat] [-scat2 cat]
 	  [-forcepoints] [-update] [-[no]fail]
 	  [-filter expr [-filter ...]]
@@ -97,6 +99,7 @@ Usage: $0 [-destdir directory] [-deststreets basename.bbd]
 -breakmin:    break lines if gap greater than (by default) $breakmin minutes
 -breakdist:   break lines if gap greater than ... meters (by default: disabled)
 -breakinfrequent: break lines if frequency is low (>500m) and vehicle is not a plane
+-symcat:      use symbol images for the category field (experimental!)
 -pcat:        category (or color #rrggbb) for points
 -scat:        category (or color #rrggbb) for streets
 -scat1:       category for inaccurate streets (-scat2 for more inaccuracy)
@@ -182,6 +185,15 @@ EOF
     if ($update && (!-e $deststreetspath || !-e $destpointspath)) {
 	$update = 0;
 	warn "Turning off -update\n" unless $q;
+    }
+
+    my $symbol_to_img;
+    if ($use_symcat) {
+	require BBBikeGPS;
+	$symbol_to_img = BBBikeGPS::get_symbol_to_img();
+	if (!$symbol_to_img || !%$symbol_to_img) {
+	    warn "WARN: the symbol to image mapping is empty!\n";
+	}
     }
 
     foreach my $f (@ARGV) {
@@ -311,9 +323,14 @@ EOF
 		}
 		my $alt = $wpt->Altitude;
 		my $inaccurate = $wpt->Accuracy;
+		my $symbol = $wpt->Symbol;
 
+		my $cat = ($symbol_to_img && $symbol && exists $symbol_to_img->{$symbol}
+			   ? "IMG:$symbol_to_img->{$symbol}"
+			   : $pcat[0]
+			  );
 		if ($curr_s eq $p) {
-		    my $l = [$base . "/" . $wpt->Ident . "/" . $wpt->Comment . (defined $alt ? " alt=".sprintf("%.1fm",$alt) : ""), ["$prefix$x,$y"], $pcat[0]];
+		    my $l = [$base . "/" . $wpt->Ident . "/" . $wpt->Comment . (defined $alt ? " alt=".sprintf("%.1fm",$alt) : ""), ["$prefix$x,$y"], $cat];
 		    $p->push($l);
 	        } elsif ($force_points) {
 		    my $ident = $wpt->Ident;
@@ -324,7 +341,7 @@ EOF
 			    $ident = $wpt->Comment;
 			}
 		    }
-		    my $l = [$base . "/" . $ident, ["$prefix$x,$y"], $pcat[0]];
+		    my $l = [$base . "/" . $ident, ["$prefix$x,$y"], $cat];
 		    $p->push($l);
 		}
 
