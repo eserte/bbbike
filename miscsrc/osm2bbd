@@ -1136,6 +1136,19 @@ for my $osm_file (@osm_files) {
 		if (exists $tag{'url'}) {
 		    push @{$out{$out_file}}, ["#: url: $tag{url}"];
 		}
+##XXX check first how it's meant. I find in the Berlin data:
+## wikipedia:de=yes and wikipedia:de=basename_of_page and wikipedia:de="basename of page"
+## And sometimes it's duplicated: there's url=... and wikipedia:..=....
+## Maybe I have to filter duplicates out here?
+## Also, it's not lear how to handle all the possible languages. Now
+## the compromise is to use the english entry and the language specified
+## while doing the conversion. Not ideal.
+# 		if (exists $tag{'wikipedia:en'}) {
+# 		    push @{$out{$out_file}}, ["#: url: http://en.wikipedia.org/wiki/" . $tag{"wikipedia:en"}];
+# 		}
+# 		if ($lang ne 'en' && exists $tag{"wikipedia:$lang"}) {
+# 		    push @{$out{$out_file}}, ["#: url: http://$lang.wikipedia.org/wiki/" . $tag{"wikipedia:$lang"}];
+# 		}
 		if (exists $tag{'old_name'}) {
 		    push @{$out{$out_file}}, ["#: oldname: $tag{old_name}"];
 		}
