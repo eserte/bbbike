@@ -215,6 +215,9 @@ And at last the brandenburg set. The resulting cache file is about
     $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache3 ~/src/bbbike/misc/download/osm/brandenburg.osm.bz2 
     ./miscsrc/cache_osm_nodes -o /tmp/testcache3   95.73s user 13.57s system 95% cpu 1:54.25 total
 
+About memory consumption: seems to be low, about 11MB throughout all
+the time.
+
 =head2 DB_BTREE
 
 Now the same tests with $DB_BTREE:
@@ -254,6 +257,9 @@ C<GDBM_File> seems to be between the C<DB_HASH> and C<DB_BTREE> times
 for the smaller sets and began to trash (mainly disk wait time) for
 the larger set. The file sizes, compared to DB_HASH: 10.1 MB vs. 11.6
 MB, 39 MB vs. 42.5 MB, 85 MB vs. 146 MB.
+
+About memory consumption: seems to be low and constant, all the time,
+even during the trashing period.
 
 =head2 BENCHMARK HINT
 
