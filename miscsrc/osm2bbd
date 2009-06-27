@@ -905,8 +905,11 @@ for my $osm_file (@osm_files) {
 		    push @or, ["strassen", "HH".$addcat];
 		} elsif ($highway_cat =~ m{^(?:secondary|tertiary)$}) {
 		    push @or, ["strassen", "H".$addcat];
-		} elsif ($highway_cat =~ m{^(?:residential|unclassified|road|service|minor)$}) {
+		} elsif ($highway_cat =~ m{^(?:residential|unclassified|service|minor)$}) {
 		    push @or, ["strassen", "N".$addcat];
+		} elsif ($highway_cat eq 'road') {
+		    push @or, ['strassen', "N".$addcat];
+		    push @or, ['fragezeichen', '?', name => 'road category missing'];
 		} elsif ($highway_cat eq 'cycleway') {
 		    push @or, ["strassen", "NN".$addcat];
 		CYCLEWAY_KEY: {
@@ -977,7 +980,18 @@ for my $osm_file (@osm_files) {
 		    }
 		} elsif ($highway_cat eq 'steps') {
 		    push @or, ["strassen", "NN".$addcat];
-		    push @or, ["gesperrt", "0:30", name => ($lang eq 'en' ? $highway_cat : 'Treppe')]; # XXX really should be only one point, or maybe better, change bbbike to handle line features for "Treppe"; lost time is guessed, maybe determine from length of feature? Also missing: precalculated angle.
+		    my $name       = $lang eq 'en' ? 'steps' : 'Treppe';
+		    my $lost_time  = 30; # an average if a step_count is missing
+		    my $step_count = $tag{'step_count'};
+		    if (defined $step_count) {
+			if ($lang eq 'en') {
+			    $name = $step_count . ' steps'; # XXX singular case? yes, it can happen!
+			} else {
+			    $name .= " ($step_count Stufen)"; # XXX singular?
+			}
+			$lost_time = int($step_count * 0.7); # XXX need more scientific background for the coefficient
+		    }
+		    push @or, ["gesperrt", "0:$lost_time", name => $name]; # XXX really should be only one point, or maybe better, change bbbike to handle line features for "Treppe"; Also missing: precalculated angle. In case of a line feature I need to think something else...
 		} elsif ($highway_cat eq 'cycleroad') { # It seems that this tag is not anymore in use
 		    push @or, ["strassen", "N".$addcat];
 		    push @or, ["radwege_exact", "RW7;RW7"];
