@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: osm2bbd-postprocess,v 1.27 2009/06/27 15:35:23 eserte Exp $
+# $Id: osm2bbd-postprocess,v 1.28 2009/06/27 15:39:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2009 Slaven Rezic. All rights reserved.
@@ -194,7 +194,7 @@ sub target_inaccessible_streets {
     my(undef, $tmp) = tempfile(UNLINK => 1, SUFFIX => "-inaccessible.bbd") or die $!;
     my $cmd = <<EOF;
 set -e
-$miscsrcdir/search_inaccessible_points -q -cache -shorter -street $datadir/strassen -street $datadir/faehren -blocked $datadir/gesperrt -blockedtype einbahn -blockedtype sperre > $tmp
+$miscsrcdir/search_inaccessible_points -encoding utf-8 -q -cache -shorter -street $datadir/strassen -street $datadir/faehren -blocked $datadir/gesperrt -blockedtype einbahn -blockedtype sperre > $tmp
 mv -f $tmp inaccessible_strassen
 chmod ugo-wx,ugo+r inaccessible_strassen
 EOF
