@@ -12285,7 +12285,7 @@ sub plotorte {
 					       -tags => \@tags,
 					       -abk  => $label_tag,
 					      )) {
-			if ($cat <= $place_category+1) {
+			if ($cat <= $place_category+1 || $no_overlap_label eq 'drop_non_fitting') {
 			    $c->delete($point_item);
 			} else {
 			    my $anchor = 'w';
@@ -16067,20 +16067,30 @@ sub show_overview_populate {
 	$no_overlap_label{'o'} = 1; # XXX Kein Effekt - warum?
 	my $orte_label_size_orig = $orte_label_size;
 	$orte_label_size = 1;
-	plotorte(Canvas        => $overview_canvas,
-		 PlaceCategory => 4,
-		 Shortname     => 1,
-		 NoOverlapLabel => 0,
-		);
-
-	if ($show_overview_mode eq 'city') {
-	    plotorte(Canvas        => $overview_canvas,
-		     PlaceCategory => 0,
-		     Shortname     => 1,
-		     NameDraw      => 1,
-		     -municipality => 1,
-		     -type         => 'oo'
+	if ($city_obj->is_osm_source) {
+	    # The PlaceCategory=2/3 limit works good for Dalmatia,
+	    # but is a little bit slow and to dense for Hessen and Sachsen
+	    plotorte(Canvas => $overview_canvas,
+		     PlaceCategory => $show_overview_mode eq 'city' ? 2 : 3,
+		     Shortname => 1,
+		     NoOverlapLabel => 'drop_non_fitting',
 		    );
+	} else {
+	    # the old procedure for Berlin data
+	    plotorte(Canvas        => $overview_canvas,
+		     PlaceCategory => 4,
+		     Shortname     => 1,
+		     NoOverlapLabel => 0,
+		    );
+	    if ($show_overview_mode eq 'city') {
+		plotorte(Canvas        => $overview_canvas,
+			 PlaceCategory => 0,
+			 Shortname     => 1,
+			 NameDraw      => 1,
+			 -municipality => 1,
+			 -type         => 'oo'
+		    );
+	    }
 	}
 
 	$p_far_away{'o'} = $orte_far_away_orig;
