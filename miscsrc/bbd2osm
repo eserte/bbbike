@@ -20,12 +20,36 @@ use lib ("$FindBin::RealBin/..",
 
 use Fcntl qw(SEEK_SET);
 use File::Temp qw(tempfile);
+use Getopt::Long;
 use Karte::Polar;
 use Karte::Standard;
 use Strassen::Core;
 use Strassen::Strasse;
 
-my $datadir = shift || "$FindBin::RealBin/../data";
+sub usage () {
+    die <<EOF;
+usage: $0 [datadir]
+       $0 [-type area|waterway|highway|railway|ferry] -single bbdfile
+
+Either convert a whole bbbike data directory, or convert a single bbd
+file.
+EOF
+}
+
+my $single_file;
+my $single_file_type;
+GetOptions("single=s" => \$single_file,
+	   "type=s" => \$single_file_type,
+	  )
+    or usage;
+
+my $datadir;
+if (!$single_file) {
+    $single_file_type and usage;
+    $datadir = shift || "$FindBin::RealBin/../data";
+} else {
+    @ARGV and usage;
+}
 
 my($nodefh, $nodefile) = tempfile(UNLINK => 1, SUFFIX => "_node.xml");
 binmode $nodefh, ':utf8';
@@ -67,42 +91,53 @@ my %cat_to_area_leisure = ('P'          => 'park',
 
 my($min_lat, $max_lat, $min_lon, $max_lon);
 
-my $gesperrt = Strassen->new_stream("$datadir/gesperrt");
-$gesperrt->read_stream
-    (sub {
-	 my($r, $dir) = @_;
-	 my($cat) = $r->[Strassen::CAT] =~ m{^([^:]+)};
-	 my @node_ids = map {
-	     my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_));
-	     my $node_id = maybe_add_node($px,$py);
-	     $node_id;
-	 } @{ $r->[Strassen::COORDS] };
-	 for my $node_id_i (1 .. $#node_ids) {
-	     if ($cat eq '1') {
-		 $oneway{$node_ids[$node_id_i].' '.$node_ids[$node_id_i-1]} = 1; # in osm oneway is the open direction, not the closed
-	     } elsif ($cat eq '2') {
-		 $no_access{$node_ids[$node_id_i-1].' '.$node_ids[$node_id_i]} = 1;
-		 $no_access{$node_ids[$node_id_i].' '.$node_ids[$node_id_i-1]} = 1;
-	     }
-	 }
-     });
+if ($single_file) {
+    $single_file_type ||= 'highway';
+    my $subname = 'handle_' . $single_file_type . '_like';
+    no strict 'refs';
+    if (!defined &{$subname}) {
+	die "Invalid type $single_file_type, no callback function exists for that.\n";
+    }
+    my $sub = \&{$subname};
+    Strassen->new_stream($single_file)->read_stream($sub);
+} else {
+    Strassen->new_stream("$datadir/gesperrt")->read_stream(\&handle_blocked_like);
 
-Strassen->new_stream("$datadir/flaechen")->read_stream(\&handle_area_like);
+    Strassen->new_stream("$datadir/flaechen")->read_stream(\&handle_area_like);
 
-Strassen->new_stream("$datadir/wasserstrassen")->read_stream(\&handle_waterway_like);
-Strassen->new_stream("$datadir/wasserumland")->read_stream(\&handle_waterway_like);
-Strassen->new_stream("$datadir/wasserumland2")->read_stream(\&handle_waterway_like);
+    Strassen->new_stream("$datadir/wasserstrassen")->read_stream(\&handle_waterway_like);
+    Strassen->new_stream("$datadir/wasserumland")->read_stream(\&handle_waterway_like);
+    Strassen->new_stream("$datadir/wasserumland2")->read_stream(\&handle_waterway_like);
 
-Strassen->new_stream("$datadir/faehren")->read_stream(\&handle_ferry_like);
+    Strassen->new_stream("$datadir/faehren")->read_stream(\&handle_ferry_like);
 
-Strassen->new_stream("$datadir/strassen")->read_stream(\&handle_highway_like);
-Strassen->new_stream("$datadir/landstrassen")->read_stream(\&handle_highway_like);
-Strassen->new_stream("$datadir/landstrassen2")->read_stream(\&handle_highway_like);
-Strassen->new_stream("$datadir/../tmp/fragezeichen-nextcheck.bbd")->read_stream(\&handle_highway_like);
+    Strassen->new_stream("$datadir/strassen")->read_stream(\&handle_highway_like);
+    Strassen->new_stream("$datadir/landstrassen")->read_stream(\&handle_highway_like);
+    Strassen->new_stream("$datadir/landstrassen2")->read_stream(\&handle_highway_like);
+    Strassen->new_stream("$datadir/../tmp/fragezeichen-nextcheck.bbd")->read_stream(\&handle_highway_like);
 
-Strassen->new_stream("$datadir/ubahn")->read_stream(\&handle_railway_like);
-Strassen->new_stream("$datadir/sbahn")->read_stream(\&handle_railway_like);
-Strassen->new_stream("$datadir/rbahn")->read_stream(\&handle_railway_like);
+    Strassen->new_stream("$datadir/ubahn")->read_stream(\&handle_railway_like);
+    Strassen->new_stream("$datadir/sbahn")->read_stream(\&handle_railway_like);
+    Strassen->new_stream("$datadir/rbahn")->read_stream(\&handle_railway_like);
+}
+
+sub handle_blocked_like {
+    my($r, $dir) = @_;
+    my($cat) = $r->[Strassen::CAT] =~ m{^([^:]+)};
+    my @node_ids = map {
+	my($px,$py) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $_));
+	my $node_id = maybe_add_node($px,$py);
+	$node_id;
+    } @{ $r->[Strassen::COORDS] };
+    for my $node_id_i (1 .. $#node_ids) {
+	if ($cat eq '1') {
+	    $oneway{$node_ids[$node_id_i].' '.$node_ids[$node_id_i-1]} = 1; # in osm oneway is the open direction, not the closed
+	} elsif ($cat eq '2') {
+	    $no_access{$node_ids[$node_id_i-1].' '.$node_ids[$node_id_i]} = 1;
+	    $no_access{$node_ids[$node_id_i].' '.$node_ids[$node_id_i-1]} = 1;
+	}
+    }
+}
 
 sub handle_highway_like {
     my($r, $dir) = @_;
