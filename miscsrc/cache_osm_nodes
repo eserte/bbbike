@@ -161,7 +161,7 @@ files. This command can be run multiple times; the cached mapping will
 grow larger or replace existing node ids, if necessary. Note that
 there's no means to delete outdated node ids.
 
-Normally, the cache file is created in the F<.bbbike/cache>
+By default the cache file is created in the F<.bbbike/cache>
 subdirectory of the user's home directory. This subdirectory needs to
 be created manually, if it does not exist already. An alternative
 location for the cache file may be specified with the C<-o> option.
@@ -172,8 +172,28 @@ on the berkeley db version and the db file type used.
 
 The following are benchmarks on a 1.73 GHz Pentium system running
 Debian/lenny (perl 5.10.0, DB_File 1.816_1, libdb4.7, default db file
-type is $DB_HASH). The test osm files for dalmatia contain 118211
-nodes, the resulting cache file is about 10MB:
+type is $DB_HASH). The three osm data sets are:
+
+=over
+
+=item dalmatia: tiled files (gzipped) with 118211 nodes
+
+=item berlin: tiled files (gzipped) with 428870 nodes
+
+=item brandenburg: single bzip2ed osm file with 1565392 nodes
+
+=back
+
+Every set has its own cache file.
+
+Note that the single bzip2ed file need more time for decompression,
+but also wins time because every node exists exactly once, unlike in
+the tiled data sets.
+
+=head2 DB_HASH
+
+First run for the dalmatia set, the resulting cache file is about
+10MB:
 
     $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache ~/src/bbbike/misc/download/osm/dalmatien 
     ./miscsrc/cache_osm_nodes -o /tmp/testcache   18.34s user 1.79s system 90% cpu 22.271 total
@@ -184,19 +204,18 @@ Rerun the same command on the existing cache, twice:
     ./miscsrc/cache_osm_nodes -o /tmp/testcache   18.10s user 1.68s system 94% cpu 20.906 total
     ./miscsrc/cache_osm_nodes -o /tmp/testcache   17.84s user 1.98s system 94% cpu 21.031 total
 
-Now a larger set of osm files in a separate cache: berlin, containing
-428870 nodes, the resulting cache file being about 39MB:
+Now the berlin set, the resulting cache file being about 39MB:
 
     $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache2 ~/src/bbbike/misc/download/osm/berlin  
     ./miscsrc/cache_osm_nodes -o /tmp/testcache2   60.08s user 6.17s system 89% cpu 1:13.98 total
 
-And a even larger set (brandenburg, 1565392 nodes), now from a
-bzipped2 osm file instead of multiple tiles (which costs time because
-of the decompression, but also wins time because every node exists
-exactly once). The resulting cache file is about 85MB:
+And at last the brandenburg set. The resulting cache file is about
+85MB:
 
     $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache3 ~/src/bbbike/misc/download/osm/brandenburg.osm.bz2 
     ./miscsrc/cache_osm_nodes -o /tmp/testcache3   95.73s user 13.57s system 95% cpu 1:54.25 total
+
+=head2 DB_BTREE
 
 Now the same tests with $DB_BTREE:
 
@@ -216,6 +235,8 @@ sometimes better, sometimes worse (first HASH, second BTREE, resp.):
 10.1 MB vs. 9.1 MB, 39 MB vs. 31 MB, 85 MB vs. 138 MB. Note the
 latter, where BTREE is much larger than HASH.
 
+=head2 GDBM_File
+
 The next benchmarks are with L<GDBM_File> (option C<-dbfiletype GDBM>):
 
     $ time ./miscsrc/cache_osm_nodes -o /tmp/testcache -dbfiletype GDBM ~/src/bbbike/misc/download/osm/dalmatien
@@ -234,7 +255,7 @@ for the smaller sets and began to trash (mainly disk wait time) for
 the larger set. The file sizes, compared to DB_HASH: 10.1 MB vs. 11.6
 MB, 39 MB vs. 42.5 MB, 85 MB vs. 146 MB.
 
-=head2 HINT
+=head2 BENCHMARK HINT
 
 To rerun the benchmarks, just filter out the commands out of this Pod:
 
