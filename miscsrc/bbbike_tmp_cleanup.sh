@@ -6,11 +6,14 @@
 # Run only on development machines, not on live www machines, because
 # precious session data would be deleted.
 
-if [ "`hostname`" != "biokovo-amd64.herceg.de" ] 
-then
-    echo "Should only run on biokovo"
-    exit 1
-fi
+case "`hostname`" in
+    biokovo-amd64.herceg.de | biokovo-amd64.rezic.de | mosor)
+        ;;
+    *)
+        echo "Should only run on biokovo or mosor"
+	exit 1
+	;;
+esac
 
 # Used for various cache files if no cache directory is provided (as
 # seems to be the case in some test scripts, in data/Makefile etc.,
